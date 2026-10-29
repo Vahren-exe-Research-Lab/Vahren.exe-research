@@ -378,16 +378,21 @@ def main():
         for v in sorted(allsym):
             nm = allsym[v]["name"]
             f.write(f'lbl Vahren.exe+{rva(v):X}, "{nm}"\n')
+    # x32dbg's cmt command replaces an earlier comment at the same VA.
+    # Merge curated and legacy evidence into one safe command per address.
+    cmt_by_va = collections.defaultdict(list)
+    for v in sorted(allsym):
+        s = allsym[v]
+        if s["origin"] == "curated":
+            cmt_by_va[v].append(f"{s['summary']}［{s['conf']}］")
+    for v, cm in lcomments:
+        cmt_by_va[v].append(cm)
     with open(gen / "x32dbg_comments.txt", "w", encoding="utf-8", newline="\r\n") as f:
-        f.write("// x32dbg 用（UTF-8）。手書きの事典の説明をコメントとして付ける。\n")
-        for v in sorted(allsym):
-            s = allsym[v]
-            if s["origin"] == "curated":
-                cm = f"{s['summary']}［{s['conf']}］".replace('"', "'")
-                f.write(f'cmt Vahren.exe+{rva(v):X}, "{cm[:250]}"\n')
-        for v, c in lcomments:
-            c2 = c[:250].replace('"', "'")
-            f.write(f'cmt Vahren.exe+{rva(v):X}, "{c2}"\n')
+        f.write("// x32dbg 用（UTF-8）。同じVAの説明は結合して重複上書きを防止。\n")
+        for v, parts in sorted(cmt_by_va.items()):
+            joined = " | ".join(dict.fromkeys(p for p in parts if p))
+            safe = joined.replace('"', "'").replace("{", "\\{")
+            f.write(f'cmt Vahren.exe+{rva(v):X}, "{safe[:250]}"\n')
 
     # ---- Ghidra 用の入力 ----
     ment_by = collections.defaultdict(list)
@@ -474,6 +479,10 @@ def main():
     if research_index.main([]) != 0:
         print("研究全文索引の生成に失敗")
         return 1
+    import rank_candidates
+    ranked = rank_candidates.rank()
+    rank_candidates.write_tsv(ranked)
+    print("未登録VA優先順位:", len(ranked), "件（検証前の候補）")
     # Successful builds establish the next provenance/confidence comparison baseline.
     source = KB / "symbols.tsv"
     if sha256(source) != symbol_sha_before:

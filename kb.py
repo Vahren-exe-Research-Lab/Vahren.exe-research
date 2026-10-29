@@ -13,7 +13,7 @@
 
 アドレスは 0x 付きの VA（0x400000 基準）。x32dbg の Vahren.exe+15D8F6 のような形も受け付ける。
 """
-import argparse, re, sqlite3, sys
+import argparse, csv, re, sqlite3, sys
 from pathlib import Path
 
 KB = Path(__file__).resolve().parent
@@ -203,6 +203,27 @@ def cmd_pending(a):
     print(f"（未検証の登録候補 {count}件を表示。symbols.tsvには自動追加しません）")
 
 
+def cmd_candidates(a):
+    path = KB / "generated/candidate_priorities.tsv"
+    if not path.is_file():
+        sys.exit("候補順位表がありません。python -B knowledge/tools/rank_candidates.py を実行してください")
+    count=0
+    with path.open("r",encoding="utf-8",newline="") as f:
+        for row in csv.DictReader(f,delimiter="\t"):
+            domains=row["domains"].split(",") if row["domains"] else []
+            if a.domain and a.domain not in domains:continue
+            if a.tier and a.tier!=row["tier"]:continue
+            if a.kind and a.kind!=row["kind"]:continue
+            print(f"#{row['rank']} {row['va']} [{row['tier']}:{row['score']}点] "
+                  f"{row['kind']} | 資料{row['report_count']} 系統{row['source_families']} "
+                  f"nativeCALL検証{row['verified_native_calls']} | {row['domains']}")
+            print(f"  例 {row['example_path']}:{row['example_line']}"
+                  "（未検証。自動辞書登録なし）")
+            count+=1
+            if count>=a.limit:break
+    print(f"候補 {count} 件表示。高得点は意味や動作の確定ではありません。")
+
+
 def cmd_addr(a):
     va = parse_addr(a.target)
     print(f"x32dbg: Vahren.exe+{va - 0x400000:X}")
@@ -321,6 +342,11 @@ def main():
     p.add_argument("--kind"); p.add_argument("--limit", type=int, default=30)
     p.add_argument("--recent", action="store_true", help="直近に更新された資料だけの候補")
     p.set_defaults(f=cmd_pending)
+    p = sp.add_parser("candidates", help="独立出典とネイティブ証拠から候補の調査優先度を表示")
+    p.add_argument("--domain", choices=["戦闘","技能","AI","経験値","戦略","画面UI","セーブ","イベント"])
+    p.add_argument("--tier", choices=["P0","P1","P2","P3"])
+    p.add_argument("--kind", choices=["func","code_candidate","data"])
+    p.add_argument("--limit",type=int,default=25);p.set_defaults(f=cmd_candidates)
     a = ap.parse_args()
     a.f(a)
 

@@ -49,6 +49,7 @@ def paths():
     for p in [ROOT / "MASTER_LEDGER.md", *KB.glob("*.md")]:
         if p.is_file() and not p.is_symlink() and p.name not in {
             "REF_ADDRESSES.md", "REF_STRUCTS.md", "CATALOG.md",
+            "CANDIDATE_RANKING_20261030.md",
         } and p.stat().st_size <= MAX_SIZE:
             yield p
 
@@ -125,15 +126,39 @@ def connect():
         CREATE INDEX IF NOT EXISTS idx_mentions_owner ON mentions(owner_va);
         CREATE INDEX IF NOT EXISTS idx_mentions_path ON mentions(path);
     """)
+    mode = "none"
     try:
-        c.execute("CREATE VIRTUAL TABLE IF NOT EXISTS doc_fts USING fts5(text, tokenize='trigram')")
-        has_fts = True
+        existing = c.execute("SELECT sql FROM sqlite_master WHERE name='doc_fts'").fetchone()
+        if existing is None:
+            c.execute("""CREATE VIRTUAL TABLE doc_fts USING fts5(
+                text,content='doc_lines',content_rowid='id',
+                tokenize='trigram',columnsize=0)""")
+            mode = "external"
+        elif "content='doc_lines'" in existing[0].replace(" ", ""):
+            mode = "external"
+        else:
+            mode = "legacy"
     except sqlite3.OperationalError:
-        has_fts = False
-    return c, has_fts
+        mode = "none"
+    if mode == "external":
+        # External-content FTS avoids storing duplicate source text.
+        # These triggers replace legacy manual FTS insert/deletes.
+        c.executescript("""
+            CREATE TRIGGER IF NOT EXISTS doc_lines_fts_ai AFTER INSERT ON doc_lines BEGIN
+              INSERT INTO doc_fts(rowid,text) VALUES(new.id,new.text);
+            END;
+            CREATE TRIGGER IF NOT EXISTS doc_lines_fts_ad AFTER DELETE ON doc_lines BEGIN
+              INSERT INTO doc_fts(doc_fts,rowid,text) VALUES('delete',old.id,old.text);
+            END;
+            CREATE TRIGGER IF NOT EXISTS doc_lines_fts_au AFTER UPDATE ON doc_lines BEGIN
+              INSERT INTO doc_fts(doc_fts,rowid,text) VALUES('delete',old.id,old.text);
+              INSERT INTO doc_fts(rowid,text) VALUES(new.id,new.text);
+            END;
+        """)
+    return c, mode
 
 def forget(c, path, fts):
-    if fts:
+    if fts == "legacy":
         c.execute("""DELETE FROM doc_fts WHERE rowid IN
                      (SELECT id FROM doc_lines WHERE path=?)""", (path,))
     c.execute("DELETE FROM mentions WHERE path=?", (path,))
@@ -158,7 +183,7 @@ def index_file(c, p, raw, ranges, starts, fts):
                      VALUES(?,?,?,?,?,?,?)""",
                   ((ids[n], rel, n, va, norm, owner, kind)
                    for n, va, norm, owner, kind in refs))
-    if fts:
+    if fts == "legacy":
         c.executemany("INSERT INTO doc_fts(rowid,text) VALUES(?,?)",
                       ((ids[n], t) for n, h, t in lines))
     return True
@@ -285,7 +310,7 @@ def main(argv=None):
     finally:
         c.close()
     print(f"研究索引: {counts[0]}資料、{counts[1]}行、{counts[2]}VA言及 "
-          f"（更新{changed}/未変更{skipped}/削除{removed}、FTS5={'有' if fts else '無'}）")
+          f"（更新{changed}/未変更{skipped}/削除{removed}、FTS5={fts}）")
     print(f"追加候補: {n}行出力（未登録正規化VAの総数は{total}以下）、{CANDIDATES}")
     if recent is not None:
         print(f"今回変更された資料由来の候補: {recent}件 → {RECENT_CANDIDATES}")

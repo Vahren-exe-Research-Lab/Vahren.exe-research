@@ -22,10 +22,15 @@ FILES = (
     ".gitignore", ".gitattributes", "README.md", "kb.py",
     "symbols.tsv", "structs.tsv", "REF_DAT_BEHAVIOR.md", "REF_UI_SYSTEM.md",
     "SYNC_PROTOCOL.md", "SYNC_STATUS.md", "KB_SYNC_BLOCKED_20261029.md",
+    "CANDIDATE_RANKING_20261030.md", "DB_OPTIMIZATION_REPORT_20261030.md",
+    "GHIDRA_X32DBG_VERIFICATION_20261030.md",
     "KB_WORKFLOW_125_REPORT_20261029.md", "SYMBOLS_EXPANSION_REPORT_20261029.md",
-    "tools/ApplyKnowledge.java", "tools/build_catalog.bat",
+    "tools/ApplyKnowledge.java", "tools/VerifyKnowledge.java", "tools/build_catalog.bat",
     "tools/build_catalog.py", "tools/build_kb.py", "tools/check_symbols.py",
-    "tools/research_index.py", "tools/test_kb_workflow.py",
+    "tools/research_index.py", "tools/optimize_research_db.py",
+    "tools/rank_candidates.py", "tools/test_rank_candidates.py",
+    "tools/verify_debugger_exports.py", "tools/test_debugger_exports.py",
+    "tools/test_kb_workflow.py",
     "tools/sync_knowledge.py", "tools/test_sync_knowledge.py",
     "sources/legacy_comments_20261011.tsv",
     "sources/legacy_symbols_20261011.tsv",
@@ -220,7 +225,7 @@ def checkpoint(task):
         basefile = KB/".git/kb-sync-base.json"
         if not basefile.is_file():
             raise Blocked("作業開始のベースSHA記録がない")
-        base = json.loads(basefile.read_text(encoding="utf-8"))
+        base = json.loads(basefile.read_text(encoding="utf-8-sig"))
         if base.get("branch") != b:
             raise Blocked("開始時のブランチ情報不一致")
         if git("diff","--cached","--name-only")[0]:
@@ -250,7 +255,7 @@ def publish():
         basefile=KB/".git/kb-sync-base.json"
         if not basefile.is_file():
             raise Blocked("作業開始SHAがない")
-        base=json.loads(basefile.read_text(encoding="utf-8"))
+        base=json.loads(basefile.read_text(encoding="utf-8-sig"))
         if base.get("branch")!=b:
             raise Blocked("作業ブランチと基準SHAが異なる")
         git("fetch","origin",MAIN)
