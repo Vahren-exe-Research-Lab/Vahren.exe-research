@@ -72,8 +72,8 @@ python -B tools/build_kb.py --check
 - バックアップをgenerated/research_backup_legacy_20261030.sqlite にバイト単位で複製し、SHAを再検証してから本体のみを単一ファイル置換。
 - 旧DBバックアップは506,351,616 bytes・SHA256 C4D0CD162B9150EC46BC445D3774E287DB3C8AE73211D3B86C3B6DCF91A45518。削除禁止。
 - 切替処理の機械可読ログ: dev_lab/_work/kb_ghidra_validation_20261030/DB_MIGRATION_LOG_20261030.json。
-- 切替後に新build_kb.pyで全再生成・増分索引更新を実施。現在のDBは422,760,448 bytes（旧比約16.5%削減）、SHA256 209720F7C635B5C38AAAE40329E5B6EF14EC81BF138D299D25BDF9881F6A11BA。
-- 切替後：研究資料1675件、本文行1081290件、VA言及138324件。research_index.py --check は変更待ち0件・削除待ち0件。
+- 切替直後の検証スナップショットは422,760,448 bytes（旧比約16.5%削減）、SHA256 209720F7C635B5C38AAAE40329E5B6EF14EC81BF138D299D25BDF9881F6A11BA。**以後の研究報告の増分更新で現行DBのSHAは変わる**。最新値はその都度 Get-FileHash generated/research.sqlite で取得する。
+- 切替後の検証スナップショット：研究資料1675件、本文行1081290件、VA言及138324件。research_index.py --check はその時点で変更待ち0件・削除待ち0件。件数は継続的に増減する。
 - x32dbg用単独インポートDBは980ラベル/562コメント、オフライン出力・読戻し・構文検査PASS。ゲーム実機への一括インポートは保留（ゲームの継続稼働を優先）。
 - Gitのdevelopは生成ファイルを追跡しないので、ファイルの再生成はGit作業ツリーに影響しない。
 - 他AIが同じ資料を更新し続ける場合は --check の変更待ちを自然な差分として扱う。安全拒否・衝突を迂回しない。

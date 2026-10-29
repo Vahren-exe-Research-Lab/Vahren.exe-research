@@ -28,10 +28,10 @@
 
 - 作業ID KB-DB-PRODUCTION-20261030。knowledgeのGit作業ツリーをdevelopへff-onlyで更新し、旧ブランチ work/kb-location-name-20261030 のコミットは保存した。
 - `symbols.tsv` 365件、source SHA256 C01924149029DC7AB062A3056E8C7DF00968B126ACE32059E67DE871F456A704。
-- 新形式DBを普段使う generated/research.sqlite に導入。現在422,760,448 bytes、SHA256 209720F7C635B5C38AAAE40329E5B6EF14EC81BF138D299D25BDF9881F6A11BA。
+- 新形式DBを普段使う generated/research.sqlite に導入。**導入直後の検証スナップショット**は422,760,448 bytes、SHA256 209720F7C635B5C38AAAE40329E5B6EF14EC81BF138D299D25BDF9881F6A11BA。本文更新により現行DBのハッシュは変わるため、確認時に Get-FileHash で再計算する。
 - 元の旧DBは generated/research_backup_legacy_20261030.sqlite に506,351,616 bytes・SHA256 C4D0CD162B9150EC46BC445D3774E287DB3C8AE73211D3B86C3B6DCF91A45518 として保存済み。
 - 機械可読記録は dev_lab/_work/kb_ghidra_validation_20261030/DB_MIGRATION_LOG_20261030.json。復旧手順は DB_OPTIMIZATION_REPORT_20261030.md。
-- 全文索引は1675資料、1081290行、138324アドレス参照。変更待ち0の時点を検証。
+- 正式切替直後の全文索引は1675資料、1081290行、138324アドレス参照。変更待ち0の時点を検証済み。以降は資料更新に従って増分更新される。
 - Ghidra複製で領地名2件、その他7関数、戦闘終端を検証。x32dbgは隔離Notepadで1ラベルと1コメントの保存成功。
 - Vahren.exeのライブデバッグへの全件インポートは未実行。ユーザーのゲーム実行を保護し、自動dbloadしない。
 - GitHubのprivate developが唯一のソース正本。DBとゲーム原作の実体はGitHubには無い。
