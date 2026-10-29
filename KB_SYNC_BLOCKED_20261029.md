@@ -24,3 +24,11 @@
 - `.gitignore` の残りと追跡対象の限定、`tools/sync_knowledge.py`、回帰テスト7件、SHA-256原本台帳の作成が正常に終了。
 - 初回PowerShellテスト実行ラッパーのエラー表示はstderrを停止扱いしたもので、テスト自体の失敗ではなかった。通常設定で再実行し全件成功。
 - 同期の実際の最終結果は `SYNC_STATUS.md` とGitHubのコミットSHAで確認する。過去の安全拒否を取り消し・無かったことにはしない。
+
+## 初回同期と競合防止の検証完了（同日）
+
+- 過去の安全拒否を記録したまま、新しい実行で `.gitignore` ・ `tools/sync_knowledge.py` を完成。秘密・SHA・許可リストの監査を通過。
+- PRIVATE GitHubリポジトリが正常に作成され、develop初回SHA `abfe21490b4bbadcaafe74501d033605c5a34146` で一致。
+- work/kb-KB-SYNC-01-VERIFY で `start`・`checkpoint`・`publish` を実機検証し、SHA `abcc6a177b01c36d5be766e915a0d47854344c3f` で一致。
+- 作業ブランチからdevelopへの移行は `git merge --ff-only` のみ。リモートdevelopのSHAが一致し、ローカルがクリーンなことを確認。
+- 残余: 将来のGitHub権限拒否・各AI同時編集の実地事象は未発生。発生時は `SYNC_PROTOCOL.md` の停止・復旧手順を適用。
