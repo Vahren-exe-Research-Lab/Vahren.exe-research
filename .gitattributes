@@ -1,0 +1,3 @@
+# Preserve source bytes exactly for the SHA-256 source manifest.
+# No automatic CRLF/LF rewriting of original research text.
+* -text

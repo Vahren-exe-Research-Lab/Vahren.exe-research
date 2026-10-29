@@ -1,0 +1,379 @@
+# va	kind	name	summary	confidence	source
+# kind: func=関数 / code=関数内の位置 / global=グローバル変数 / object=グローバルのオブジェクト / string=文字列定数
+# confidence: 実機確認 / 静的確認 / テストのみ / 推定
+# ---- 基盤・スクリプトVM ----
+0x8BE2F0	object	g_GameManager	GameManager の唯一の実体（G）。スクリプトVMの文脈。DLL 側ではこのアドレスを基準 G と呼ぶ	静的確認	F§82, W(work_dat_ui_context.h), 自動(vtable 書込み 0x553ACB)
+0x8BE7F4	global	g_Engine	スクリプトエンジン E = G+0x504	静的確認	F§82
+0xAAD434	global	g_GameManager_sceneId	現在の場面番号（G+0x1EF144）。0=タイトル、4=シナリオ選択 など	静的確認	W(dat_ui_selector_plugin.c)
+0x87983C	global	g_loadingFlag	起動時ローダー実行中の印。0x555D69 で 1、0x555E15 で 0（クリティカルセクション 0x879628 の中）	実機確認	W(dat_ui_selector_plugin.c), F§86/§90
+0x879628	global	g_loadingLock	g_loadingFlag を守るクリティカルセクション	静的確認	W(dat_ui_selector_plugin.c)
+0x8797FC	global	g_mainHwnd	ゲームのメインウィンドウの HWND	実機確認	W(work_selector_hover_*.h)
+0x879822	global	g_WindowActiveForInput	WM_ACTIVATE によって更新されるウィンドウのアクティブ値。非アクティブ時は GameMouse の buffered poll を抑制する。	静的確認	T015§Win32/D3D window mode, W(dat_ui_selector_plugin.c)
+0x65BEEC	global	g_screenWidth	D3D バックバッファの幅として参照される設定値。高さ 0x65BEF0 とともに D3DPRESENT_PARAMETERS に渡される。	静的確認	T015§Win32/D3D window mode, W(test_dat_ui_v4_runtime.c)
+0x555AD0	func	Startup_LoaderThread	起動時のデータ読込スレッド（a_system/xp.txt がある場合は同期で実行）	静的確認	W(dat_ui_selector_plugin.c), F§83
+0x555D69	code	Startup_SetLoadingFlag	g_loadingFlag=1 にする位置	静的確認	W
+0x555E15	code	Startup_ClearLoadingFlag	ローダー終了後に g_loadingFlag=0 にする位置	静的確認	W
+0x555F19	code	Main_MessageLoop	メインスレッドのメッセージループ	静的確認	W, F§83
+0x48AD30	func	Title_Handler	場面 0（タイトル）の処理。'title_name' を使う	静的確認	W(dat_ui_selector_plugin.c)
+0x4B9AD0	code	Title_Continue	タイトルの「続きから」側の分岐（DLL のタイトル判定で使用）	テストのみ	W(dat_ui_selector_runtime.h)
+0x4B9B73	code	Title_Return	タイトルへ戻る側の分岐	テストのみ	W(dat_ui_selector_runtime.h)
+0x5023E0	func	Bgm_StreamThread	BGM ストリーム再生のスレッド	静的確認	F§84, W
+0x5DA930	func	Vorbis_CodebookDecode	Vorbis のコードブック復号（ビット検索）。原因不明のクラッシュ 0x5DA9F8 はこの中	静的確認	F§84, Codex handoff 2026-10-27
+0x5DA9F8	code	Crash_5DA9F8	汎用UI 試験中に 1 回起きたアクセス違反の位置。原因未特定	実機確認	Codex handoff 2026-10-27
+0x4338D0	func	Script_RunPass	スクリプトの主インタプリタ（1 パス分を実行）	静的確認	F§1.1
+0x4A1250	func	Script_DispatchCommand	GENERAL 命令の分岐（79 命令）	静的確認	F§8.3
+0x4A7A90	func	Script_DispatchWorldCommand	WORLD 命令の分岐（52 命令）	静的確認	F§8.3
+0x4AE0F0	func	Script_DispatchVarCommand	VARIABLE 命令の分岐	静的確認	F§8.5
+0x432EE0	func	Script_FireGameHook	ゲーム側からイベントを起動する仕組み（world/fight/politics フック）	静的確認	F§18
+0x4A17D8	code	Script_Op_Wait	wait 命令（op9）	静的確認	F§1.4
+0x502DD0	func	Lexer_NextToken	スクリプトの字句解析	静的確認	F§13
+0x50B220	func	Script_Loader	スクリプト読込器	静的確認	F§15
+# ---- DAT の値・プロパティ ----
+0x464290	func	Prop_LookupBase	プロパティの有無を調べる（has_key）	静的確認	F§22, 旧symbols
+0x4647D0	func	Prop_LookupString	プロパティの文字列を引く（lookup）	静的確認	F§22, 旧symbols
+0x585AD0	func	UnitDef_GetField	ユニット定義の DAT プロパティ（"level"、"noremove_unit" など）を、ユニット ID とクラスをたどって引く	静的確認	F§22, C(§93)
+0x42F860	func	StdString_NotEqualsCStr	std::string と C 文字列を比べ、**違えば真**を返す	静的確認	F§49
+0x40ED80	func	Rng_RangeInclusive	lo + ftol(rand/32768*(hi-lo))。rand を 1 回使う	静的確認	F§33
+0x5B6E99	func	srand	CRT の srand	静的確認	F§25
+0x5B6EAB	func	rand	CRT の rand	静的確認	旧symbols
+0x5B6BBB	func	operator_delete	CRT の operator delete（DLL から解放に使う）	静的確認	W(work_selector_native_detail.h)
+0x5D1B80	func	ftol	x87 の浮動小数点→整数変換	静的確認	F付録A
+# ---- ユニット定義 ----
+0x582D90	func	UnitDef_Create	ユニット定義（def）の生成	静的確認	F§22, §25
+0x58B7F0	func	UnitDef_ComputeStats	def に能力値（基本値＋成長×(Lv-1)、上限あり）を書く	静的確認	F§22.3
+0x573BD0	func	Unit_CopyStatsFromDef	def の能力値を Unit オブジェクト（+0x90..）へ展開し、*_max を作る	静的確認	F§22.4
+0x466F60	func	UnitDef_CreateMember	member（配下）の def を再帰的に生成	静的確認	F§25.1
+0x58C0E0	func	UnitDef_BuildSkillList	def の技能リスト（def+0xEC）を作る	静的確認	F§24.2
+0x58DA40	func	UnitDef_SkillListPostProcess	技能リストの後処理	静的確認	F§24.3
+0x58AFA0	func	UnitDef_ApplyClassSkills	class 変更・learn・delskill2 の技能処理	静的確認	F§24.5
+0x586320	func	UnitDef_GetFriendSet	friend 集合の遅延生成（def+0x158）	静的確認	F§30
+0x479A30	func	Native_VectorShuffle	std::random_shuffle（0x1C 文字列）	静的確認	F§30
+0x58A540	func	UnitDef_ExpTotal	経験値の累計計算（符号付き）	静的確認	F§31
+0x58A400	func	UnitDef_ExpNext	次のレベルに必要な経験値の計算（符号なし）	静的確認	F§31
+0x58A650	func	UnitDef_LevelUpLoop	def 単体のレベルアップのループ	静的確認	F§31
+0x575110	func	Unit_LevelUpLoop	Unit 版のレベルアップ	静的確認	F§31
+0x551E50	func	Hit_LinkedAward	戦闘中の経験値の付与	静的確認	F§35, 旧symbols
+0x584970	func	UnitDef_GetChipName	キャラチップ名を決める（image / sub_image / tkool を考慮）。thiscall: ECX=def、引数 (std::string* out, flag=1)、ret 8	実機確認	F§92, W(dat_ui_v4_visuals.h)
+0x5846A0	func	UnitDef_GetDisplayName	表示名を作る。ECX=def、EDX=std::string* out	実機確認	W(work_selector_native_detail.h), F§91
+0x583CF0	func	UnitDef_GetAffiliation	ユニットがいる場所を返す。放浪中（+0x94≠0）なら放浪先 +0x84 を 0x467E90 で引き、そうでなければ ctx+0x2F0 の一覧から探す（後半は疑似コードからの推定）。同じ勢力でもユニットごとに値が違った	実機確認	C(§93)
+0x583DC0	func	UnitDef_FindLeaderOfVassal	ユニット定義の一覧をたどり、陪臣の主の人材を探す（推定）	推定	C(§93)
+0x583A80	func	UnitDef_Predicate_583A80	放浪先の選定などで使う def の判定（意味は未確定）	推定	F§49, §52
+0x460E90	func	UnitDef_SetRoaming	ユニットを放浪させる（def+0x84 に放浪先、ctx+0x32C の集合へ追加）	静的確認	F§26
+0x460F10	func	UnitDef_ClearRoaming	放浪を解除する	静的確認	F§26
+0x461DA0	func	World_MonthlyRoamMove	月次の放浪移動	静的確認	F§52
+0x467F40	func	Spot_FindByName	スポット（領地）を名前で引く（推定）	推定	F§49
+0x5AAEC0	func	Spot_Search	スポットの探索	静的確認	F§51
+0x597B00	func	Affiliation_GetPower	所属先から勢力オブジェクトを返す。返り値の +0x1D がプレイヤー勢力の印	実機確認	C(§93)
+# ---- 戦略・ターン ----
+0x45B850	func	Game_Start	ゲーム開始	静的確認	F§63.4
+0x45BE10	func	Scenario_InitialPlacement	シナリオ開始時の配置	静的確認	F§33, §58
+0x4716C0	func	Turn_Init	ターンの初期化	静的確認	F§63.4
+0x471E80	func	Turn_Process	ターン処理（人材の行動・出奔・外交の拒否など）	静的確認	F§59, §64
+0x474F10	func	GameCtrl::vf01	ターンの全体を回す処理（GameCtrl の仮想関数）	静的確認	F§64.1, 旧symbols
+0x47C280	func	Turn_Phase_47C280	ターン構造の一部（§64.1 参照）	推定	F§64.1
+0x593890	func	Power_Personality	勢力の性格	静的確認	F§66
+0x47E3A0	func	PowerAI_SelectTarget	勢力 AI の目標選定	静的確認	F§66
+0x481260	func	PowerAI_Diplomacy	勢力 AI の外交	静的確認	F§69
+0x47A1A0	func	PowerAI_Reassign	勢力 AI の配置換え	静的確認	F§70
+0x476D60	func	PowerAI_Hire	勢力 AI の雇用	静的確認	F§71
+0x47D770	func	Talent_WarStartAndDesert	人材の戦争開始と出奔	静的確認	F§75
+0x475C60	func	EmployHero_Answer	employ_hero の回答処理	静的確認	F§77
+0x48F9E0	func	War_Start	戦争開始	静的確認	F§68
+0x4922A0	func	Battle_Begin	戦闘の開始（簡易戦闘の後に fight）。通常は 0x4922A0(GM, skip) から	静的確認	F§18, §73
+0x492890	func	BattleEvent_InstallBattleBlock	ScriptBattle の処理	静的確認	F§1.1, 旧symbols
+0x493630	func	Battle_End	戦闘終了（勝敗の反映・戦略への復帰）	静的確認	F§67
+0x40D0A0	func	BattleStatusWnd_Open	戦況ウィンドウを開く処理	静的確認	F§82
+0x514C80	func	Battle_SideRemains	残っているユニットの判定	静的確認	F§67
+# ---- UI：選択肢・詳細パネル ----
+0x68B568	global	g_StatusBtnRect_Dismiss	詳細パネルの「解雇」ボタンの矩形（RECT、全パネル共通）	静的確認	F§95
+0x68B578	global	g_StatusBtnRect_HireExtract	詳細パネルの「雇用」「召上げ」ボタンの矩形	静的確認	F§95
+0x68B588	global	g_StatusBtnRect_Item	詳細パネルの「アイテム」ボタンの矩形。幅 0 ならアイテムボタンを出さない	静的確認	F§95
+0x65BEA8	global	g_StatusBtnRectTable	上の 3 つの矩形へのポインタ表（番号 0=雇用/召上げ、1=解雇、2=アイテム）。押下の当たり判定で使う	静的確認	F§95
+0x639CD4	global	vt_TempStatusWnd	TempStatusWnd の仮想関数表。+0x3C=押下 0x560650、+0x40=離す 0x560CA0、+0x44=説明表示（空の関数 0x406E20）	静的確認	F§95
+0x639C5C	global	vt_StatusWnd	StatusWnd の仮想関数表。+0x44=説明表示 0x561120	静的確認	F§95
+0x8BB6D8	object	g_ChoiceWnd	ゲーム本来の選択肢ウィンドウ（ChoiceWnd）。ラベルは index 49 まで（0x8BC11C で終わる）	実機確認	W(work_dat_ui_choice.h), 自動(vtable)
+0x8BA538	object	g_WarWnd	'war' という名前の画面（WarWnd）。出撃するユニットを選ぶ間に表示される	実機確認	C(§93), 自動(vtable)
+0x8BA5BC	global	g_WarWnd_shown	WarWnd+0x84。表示中は 0 以外。この間、詳細パネルにボタンを作らず、約 30 か所の処理が止まる	実機確認	C(§93)
+0x8BA5DC	global	g_WarWnd_state	WarWnd+0xA4。通常時から 0x80000008	実機確認	C(§93)
+0x5A4100	func	WarWnd_StaticInit	WarWnd の起動時の初期化（名前 'war' を設定）	静的確認	C(§93)
+0x67E978	object	g_StatusWnd	ゲーム本来のユニット詳細パネル（StatusWnd、ボタンあり）	静的確認	F§92, 自動(vtable)
+0x67EB30	global	g_StatusWnd_target	g_StatusWnd が表示するユニット	静的確認	本セッション
+0x8BCD48	object	g_TempStatusWnd	一時表示用の詳細パネル（TempStatusWnd）。DLL のステータスパネル表示に使う	実機確認	F§92, W(work_selector_native_detail.h)
+0x8BCDCC	global	g_TempStatusWnd_visible	TempStatusWnd+0x84。表示中の印	テストのみ	W(work_detail_cleanup.h)
+0x8BCDE0	global	g_TempStatusWnd_owner	TempStatusWnd の所有者	テストのみ	W(work_selector_detail_hover.h)
+0x8BCF00	global	g_TempStatusWnd_target	TempStatusWnd が表示するユニット	テストのみ	W(work_detail_cleanup.h)
+0x8BCF10	global	g_TempStatusWnd_rects	技能アイコンなどの矩形の配列（16 バイトずつ）	テストのみ	W(work_selector_skill_hover.h)
+0x8BE040	global	g_TempStatusWnd_hoverCount	説明表示の対象の数	テストのみ	W(work_selector_skill_hover.h)
+0x55BAB0	func	TempStatusWnd_OpenForUnit	一時の詳細パネルをユニットで開く（表示状態 0x80000008 を渡す）	実機確認	F§92, W(work_selector_native_detail.h)
+0x55B590	func	StatusWnd_Hide	詳細パネルを閉じる（StatusWnd 系の仮想関数 vf04）	実機確認	F§92, 旧symbols
+0x55B5B0	func	StatusWnd_OpenForUnit	詳細パネル（ボタンあり）をユニットで開く	実機確認	本セッション(x32dbg)
+0x55BC60	func	StatusWnd_Layout	詳細パネルの組み立て（thiscall、引数 char）。表示中に何度も呼ばれる。自勢力でも引数は 0	実機確認	C(§93)
+0x55D712	code	StatusWnd_Layout_ButtonsA	ボタン作成の 1 組目（実機では通らなかった）	実機確認	C(§93)
+0x55D7FF	code	StatusWnd_Layout_ButtonsB	ボタン作成の 2 組目の始まり。noremove_unit など 3 つの設定を引く	静的確認	C(§93)
+0x55D8F6	code	StatusWnd_Layout_ButtonGate	ボタンを作るかどうかの判定の入口（所属先・プレイヤー勢力・出撃準備中）	実機確認	C(§93)
+0x55D93A	code	StatusWnd_Layout_MakeHire	「雇用」ボタンを作る（+0x1C4 を 1 に）	実機確認	C(§93)
+0x55D95F	code	StatusWnd_Layout_MakeExtract	「召上げ」ボタンを作る（陪臣のとき、+0x1C5 を 1 に）	実機確認	C(§93)
+0x55D99C	code	StatusWnd_Layout_MakeDismiss	「解雇」ボタンを作る（+0x1C6 を 1 に）	実機確認	C(§93)
+0x55D9DD	code	StatusWnd_Layout_MakeItem	「アイテム」ボタンを作る（+0x1C7 を 1 に）	静的確認	C(§93)
+0x55D9FC	code	StatusWnd_Layout_ButtonsEnd	ボタン処理の終わり	実機確認	C(§93)
+0x455520	func	FrameWnd_DrawButtonText	ボタンの枠と文字をウィンドウの画像に描く（BitBlt/AlphaBlend と DrawText）。EAX=ウィンドウ、ESI=矩形、引数 (描画先, 文字)、ret 8。ボタンの当たり判定はしない	静的確認	F§95
+0x436870	func	Text_Prepare_436870	ボタンの文字などを用意する（推定）	推定	C(§93)
+0x560650	func	StatusWnd::vf15_shared2	マウス押下。+0x1BC がなし（0x80000008）で WarWnd 非表示のとき、印 +0x1C4〜+0x1C7 のどれかが立っていれば 3 つの矩形を当たり判定し、その番号の印が立っていれば +0x1BC に番号を入れる。印が全部 0 なら何もせず 0 を返す	静的確認	F§95
+0x560CA0	func	StatusWnd::vf16_shared2	マウスを離したときの処理。+0x1BC（押下中の番号）が 0x80000008（なし）なら何もしない。それ以外は、印を確認し直さずにその番号の動作（解雇など）を実行する。押下（vf15）は印を確認してから +0x1BC を設定するので、押す前に印を 0 にし +0x1BC を戻せば動作しない	静的確認	Codex handoff 2026-10-29, F§95
+0x5606A2	code	StatusWnd_PressWarWndCheck	ボタン押下の処理（vf15）の中で、出撃準備中（WarWnd 表示中）なら押下を受け付けない判定。§93.2 の「ホバー処理」は誤りで、正しくは押下処理	静的確認	C(§93), V9 function_range
+0x561120	func	StatusWnd::vf17	詳細パネルの説明表示（マウスを重ねるとスキル説明を出す）	静的確認	本セッション, 旧symbols
+0x562140	func	StatusWnd::vf18_shared2	説明表示を消す	静的確認	本セッション, 旧symbols
+0x455CF0	func	FrameWnd::vf12_shared43	ウィンドウ共通のマウス移動処理。TempStatusWnd では説明表示に届かない（+0x44 が空の関数）	静的確認	本セッション, 旧symbols
+0x406E20	func	Nop_406E20	何もしない関数（TempStatusWnd の vtable +0x44）	静的確認	本セッション
+0x43B5A0	func	ExpresElement_IsString_False	常に偽を返す関数（TempStatusWnd の vtable +0x1C にも使われる）	静的確認	本セッション, 旧symbols
+0x455D90	func	FrameWnd_ScreenToLocal	画面座標をウィンドウ内の座標へ変換（推定）	推定	W(work_selector_skill_hover.h)
+0x521A00	func	Player::b144_vf01	プレイヤーの毎フレーム処理（+144 にある Actionable 側の仮想関数表の 1 番。2026-10-11 の名前 Player::vf01 は主表と区別していなかった）	静的確認	本セッション, RTTI
+0x521560	func	Player_DispatchHover	説明表示の振り分け。イベント実行中は vfunc+0x1C が真のウィンドウにだけ渡す	静的確認	本セッション
+0x521AF0	code	Player_HoverCallSite	0x521560 を呼ぶ位置（Work の CALL 差し替えの候補）	静的確認	W(work_selector_hover_integration.h)
+# ---- 戦闘：ユニット更新・簡易戦闘 ----
+0x544290	func	Battle_CreateSimpleUnit	SimpleUnit の戦闘用オブジェクトを生成する入口。初期化で Unit+0x8C/0x8D を通常型として設定する。	静的確認	T013§primary/fallback poolのRTTI同定, T011§14
+0x545740	func	Unit_UpdateSimpleFrame	SimpleUnit 側の戦闘更新経路。探索カウンタ Unit+0x1E534 を増やし、ノックバック判定より前に行動処理を進める。	静的確認	T012§11, T013§target search cadence
+0x57AA00	func	Unit_UpdateBattleFrame	もう一方の Unit 戦闘更新経路。探索カウンタを加算し、0x57ABB2 付近でノックバック状態を判定する。	静的確認	T012§11, T013§target search cadence
+0x57EB40	func	Unit_DispatchBattleAction	探索更新後の行動候補を処理し、戻り値 AL の成功・失敗で上位側が分岐する。呼び出し側には mode 0 と mode 1 の経路がある。	静的確認	T012§61, T013§B-20261011-0211-01
+0x57E1D0	func	Unit_ExecuteActionRoute	Unit の戦闘行動処理経路の一つ。ダメージ計算 0x550E70 への呼び出し元を含む。	静的確認	T012§16, T013§2026-10-12 19:16
+0x57E4E0	func	Unit_RefreshActionSearch	Unit+0x1E534 を探索閾値にして 0x57B870 を呼び、ターゲット再探索を強制する経路を持つ。	静的確認	T013§target search cadence, T012§61
+0x40E220	func	SimpleBattle_CommitResult	簡略戦闘の結果コードを調べ、非ゼロの決着では 0x493630 に結果を反映してから 0x40F000 などで後片付けする。	静的確認	EXP_SIMPLEBATTLE_LIFECYCLE§CP04, T010§battle finish resultFlag
+0x40E2F0	func	SimpleBattle_RunBoundedRounds	簡略戦闘の反復処理。局所カウンタの上限は500で、上限到達時の戻り値0は勝敗確定を意味しない。	静的確認	EXP_SIMPLEBATTLE_LIFECYCLE§CP05
+0x40F000	func	SimpleBattle_ReleaseSides	簡略戦闘の結果反映後に両陣営の virtual +0x10 を呼び、戦闘用ユニットを破棄する処理へ進む。	静的確認	EXP_SIMPLEBATTLE_LIFECYCLE§CP01/CP04
+0x40F320	func	SimpleBattle_BuildUnitRoster	簡略戦闘用 SimpleUnit を生成し、更新対象の配列へ登録する経路を含む。	静的確認	EXP_SIMPLEBATTLE_LIFECYCLE§CP02
+0x514AA0	func	Battle_ReleaseSideUnitVectors	陣営オブジェクトの +0x48・+0x58・+0x38 の3配列をたどり、非NULLユニットの仮想デストラクタに flag=1 を渡す。	静的確認	EXP_SIMPLEBATTLE_LIFECYCLE§CP01
+0x5769B0	func	Unit_ProcessKnockbackMotion	ノックバック関連の Unit+0x18688 などを更新する関数。押し戻し移動と状態値の複数分岐を含む。	静的確認	T012§92, T015§通常戦闘GUI
+0x4E4C70	func	Unit_ApplyKnockMovementHelper	ノックバック時の位置移動補助として 0x57AC5C 以降から使われる。移動可能残量の分岐の後で呼ばれる。	推定	T012§66
+0x4E53B0	func	Unit_RefreshTargetLatch	Unit+0xC の参照元と本人を入力に取り、戻り値を Unit+0x1E570 に保存する処理で使われる。値の厳密な論理名は未確定。	静的確認	T012§39
+0x5501A0	func	Rush_UpdateFrame	Rush の vtable +0x04 に登録された更新処理。GameTask 側の仮想更新ゲートから呼ばれる。	静的確認	T012§B-20261027-17H, T013§B-20261027-08H
+0x527EA0	func	Troop_CleanupCandidateUnits	Troop に関連する選択対象の後処理経路。生存数や Unit+0x8C/+0x1F8 に応じて呼ばれる。	静的確認	T024§B-20261025-2008
+0x527ED0	func	Unit_ResetEmptySelectionState	Unit の候補集合が空の場合に +0x45D を0へ戻し、条件付きで +0x20C も消して後処理を呼ぶ。	静的確認	T024§B-20261025-1910
+0x48D6A0	func	Battle_ConstructScene	通常戦闘のscene2構築関数。GameEvent 相当を受けてUnit/Map・乱数・Task・VMの初期化へ進み、実際の通常復帰RETは0x48EA5Aにある（旧Ghidraの0x48EA38終端説は誤り）。	静的確認	BRIDGE Stage16§C, BATTLE_SCENE_BUILDER_EXTENDED_EPILOGUE_PE
+# ---- 戦闘：技能・ダメージ・回復・状態 ----
+0x545CC0	func	Skill_DispatchUnitAbility	Unit の技能種別から行動系統を振り分ける。func の 1=sword、2=missile、3=heal、4=summon を主分岐とする。	静的確認	T012§21, EXP_KIND4_DISPATCH_PRODUCERS
+0x546F70	func	Skill_ExecuteMissile	missile 技能の処理本体。Skill+0x44 の allfunc が有効なら 0x547DB0 側へ分岐する。	静的確認	T012§21, T011§18
+0x547DB0	func	Skill_ExecuteMissileAllTargets	missile + allfunc の対象処理経路。従来の未確定扱いは T012§21 で解消された。	静的確認	T012§21
+0x547AF0	func	Skill_ExecuteHealAllTargets	heal + allfunc の支援候補を距離・確率などで判定し、対象ごとに 0x551490 を実行する。	静的確認	T012§22, T013§support-skill secondary candidate pipeline
+0x551490	func	Skill_ApplyHealStatus	回復・状態変更の共通処理。Skill+0x158 の add2 由来リストを参照する経路を持つ。	静的確認	T012§23, T011§14
+0x550E70	func	Damage_ComputeAttackDefense	攻撃と防御に別々の乱数を掛けて差を求め、耐性・距離・最低値の特殊分岐を処理する中核。耐性10はゼロ、耐性0は特殊な大値となる。	静的確認	T012§3/§4, F§35
+0x550D80	func	Damage_ComputeSkillStrength	Skill+0x27C の str mode 1〜5を解釈し、Unit能力値と +0x280/+0x288 の係数から攻撃基礎値を作る。	静的確認	T012§3 str helper
+0x578B70	func	Status_ApplyGaugeReduction	状態異常ゲージを減算し、unit_status_min を下限として制限する。EXP吸収分岐もこの関数内にある。	静的確認	T012§6, EXP_ENDTRANSFER_AND_SUMMON_GATES§CP06
+0x57DF90	func	Status_ApplyNaturalRecovery	行動カウントに連動して HP/MP と7つの状態ゲージを回復し、unit_status_hp をゲージ上限にする。	静的確認	T012§6/§26
+0x57F570	func	Skill_EvaluateSupportCandidate	支援技能の候補キャッシュを参照し、空なら失敗を返す。MPと射程による後段フィルタに接続する。	静的確認	T013§support-skill secondary candidate pipeline
+0x57FC90	func	Skill_EvaluateSupportAlternative	支援候補キャッシュを用いる別の技能実行経路。候補が空なら早期失敗し、射程・MPなどを再評価する。	静的確認	T013§support-skill secondary candidate pipeline
+0x57FFD0	func	Skill_ExecuteAllfuncKind2	kind2 技能で allfunc が指定された場合の候補ループと乱数・MP境界を扱う。通常AIの直接技能選択とは別段階。	静的確認	T013§B-20261013-0959-01, T011§B-20261013-1055
+0x580280	func	Skill_ExecuteLinkedEffect	技能リストのリンク先を処理し、Skill+0x74 と +0xF4 に応じて別実行経路を選ぶ。MP消費判定を含む。	静的確認	T012§B-20261013-0959, T013§B-20261011-0408
+0x54ADA0	func	Skill_BuildSupportCandidateList	支援技能の一時候補リストを作る。Skill+0xA1C による後続除外フィルタより前に呼ばれる。	静的確認	T012§37, T013§support候補除外filter
+0x54A170	func	Skill_FilterSupportCandidates	Skill+0xA1C が指定されると支援候補に追加適用される除外フィルタ。フィルタの厳密な条件は未同定。	推定	T012§49, T013§support候補除外filter
+0x54A1C0	func	Skill_PrepareLargeCandidateSet	Skill+0xA18 と候補数を受ける補助。4件境界の前処理に関わるが、最終的な順序・件数の意味は未確定。	推定	T012§52, T013§Skill+A18実引数
+0x54A660	func	Skill_RankCandidateCallback	24バイト単位の候補集合と Skill+0xA18 由来の第4引数を受ける。候補の選択・整列処理の詳細は未検証。	推定	T013§B-20261011-2213-02
+0x54A7B0	func	Skill_PrepareHealCandidateGroup	通常 heal 系の候補前処理で4件を超える場合の補助として使われる。選択結果の意味は未確定。	推定	T013§補助候補の通常heal
+0x54B280	func	Skill_CompareSupportCandidates	Skill+0xA18 の候補比較時に使われる二要素 callback として記録されている。実際の技能結果への到達は未検証。	静的確認	T013§B-20261011-2314-01
+0x54E0B0	func	Skill_ExecuteSupportEffect	支援技能の実行側が参照する補助処理。対象座標から作る方位値を Unit+0x18688 へ書く経路に接続する。	推定	T013§B-20261011-0311-02
+0x4E7ED0	func	Skill_CheckMissileRangeGate	通常 missile のMP消費より前の対象・射程判定補助。探索窓と有効半径の参照値が分岐で変わる。	静的確認	T012§55/§69
+0x54E420	func	Skill_UpdateEffectObject	効果オブジェクトの仮想関数表 +0x04 に置かれる更新処理。生成レコードと GameTask 更新系に接続する。	静的確認	T013§B-20261027-08H
+0x5510E5	code	Damage_ZeroOnFullResistance	ダメージ計算中に耐性index10で最終値をゼロにし、通常の最低ダメージ補正を通さない分岐。	静的確認	T012§4
+0x551574	code	Skill_ReadAdd2RuntimeVector	回復・状態処理が Skill+0x158 の add2 リストを読み始める位置。	静的確認	T012§23
+0x545EC5	code	Skill_DispatchKindJumpTable	func の種別を4要素の分岐表へ振り分ける位置。5/6はその分岐表の範囲外。	静的確認	T012§21
+0x5470FF	code	Skill_UpdateMissileStateField	通常missile処理で Unit+0x18688 を更新し、Skill+0x2D0==7 の場合だけ旧値に戻す箇所。	静的確認	T011§18
+0x65BF18	global	g_DamageResistanceTable	damage_consti の11要素doubleテーブル。耐性値0〜10の基本倍率を保持し、context の非ゼロ設定が上書きする。	静的確認	T012§2
+0x63B070	global	g_PercentToRatioFactor	整数パーセントを倍率にする定数double 0.01。damage_consti 読込時などに使われる。	静的確認	T012§46, T009§Runtime typed-consumer
+0x65BCFC	global	g_UnitStatusHpLimit	unit_status_hp の実効値。初期値100で、状態ゲージ回復の上限に使用する。	静的確認	T012§6
+0x65BD4C	global	g_UnitStatusMinValue	unit_status_min の実効値。初期値-500で、状態ゲージ減少時の下限となる。	静的確認	T012§6
+0x65BD58	global	g_UnitStatusRecovery	unit_status_rec の実効値。初期値10で、自然回復時に状態ゲージへ加算される。	静的確認	T012§6
+0x65BD5C	global	g_UnitStatusDeathThreshold	unit_status_death の実効値。初期値100で、context 設定0なら unit_status_hp をコピーする。	静的確認	T012§6
+# ---- AI：目標探索・支援・操作 ----
+0x57B870	func	Ai_SearchTargetCadence	探索閾値に届かない間は既存ターゲットを使い、到達後は候補探索してカウンタを約±10%の乱数付きで再設定する。	静的確認	T013§target search cadence
+0x514D60	func	Ai_SelectNearestTarget	SimpleUnit と SimpleStaticUnit の二系統候補を距離で調べる。通常型の候補には Unit+0x1C0 の stealth% に応じた確率的除外がある。	静的確認	T013§full target selection, §stealth, §primary/fallback pool
+0x514F10	func	Ai_BuildSupportTargets	生存する SimpleUnit 候補を列挙し、距離付き24バイトレコードを作る。通常分岐では candidate+0x1D0==0 を除外する。	静的確認	T013§support-skill secondary candidate pipeline
+0x57CFA0	func	Ai_CopySupportTargetCache	支援対象の候補レコードを Unit 側キャッシュにコピーする補助。候補の優先順位そのものを決める本体ではない。	静的確認	T013§support-skill secondary candidate pipeline
+0x57CFD0	func	Ai_MergeSupportTargetCache	支援技能の候補ベクトルを Unit 側へ結合する補助。最終技能選択とは区別する。	静的確認	T013§support-skill secondary candidate pipeline
+0x5154F0	func	Ai_AppendCandidateRecord	24バイト候補レコードの追加・コピーに使われるベクトル補助。目標の評価順位付け本体ではない。	静的確認	T013§full target selection, §support-skill secondary candidate pipeline
+0x515060	func	Ai_SumSupportUnitValues	SimpleUnit 配列を走査し、特定の Unit+0x1D0 条件によって値を集計する補助。集計値の厳密な名称は未確定。	推定	T013§B-20261011-0610-01
+0x515150	func	Ai_ReadSupportUnitIndex	候補 Unit+0x1D8 を別配列の添字として使い、関連する値を取り出す処理を含む。配列の論理名は未同定。	推定	T011§21 B-20261011-0610-02
+0x5151D0	func	Ai_RebuildLiveUnitScoreMap	容器の +0x28/+0x2C にある探索木を初期化し、生存する SimpleUnit の一覧を走査してスコア類を登録する。	静的確認	T013§B-20261011-0816-01
+0x5158A0	func	Ai_CopySupportFallbackRecords	支援候補レコードのコピーに関与する補助。探索コアの分岐によっては呼ばれない経路がある。	推定	T013§B-20261011-0115-01
+0x57C9B0	func	Ai_CheckFacingSelection	行動対象の方位差に関係する検査を含み、Unit+0x186C8 が番兵値のとき一部の方位判定を回避する。	推定	T013§B-20261010-1716-02
+0x57D1D0	func	Ai_UpdateSpatialTargetLink	Unit+0x1E594 にある別 Unit 参照が有効なら、両者の +0x220/+0x224 座標差を計算する処理に進む。	静的確認	T013§Unit+0x1E594の生成後config writer
+0x57D8B0	func	Ai_AdjustSearchTargetCoordinates	目標探索の後段で現在時刻や戦場境界を参照して座標候補を補正する関数。補正の全条件は未確認。	推定	T013§B-20261021-1914-01
+0x571A40	func	Ai_CheckOrientationGate	AI の方位差判定に先行して戻り値 AL が使用される補助。AL の詳しい意味は未確定。	推定	T013§B-20261010-1716-02
+0x41EF50	func	Ai_SelectFourwayBattleMode	四方向選択に使うグローバル 0x65EB64 をまず1へし、所有者の状態や条件により0へ切り替える。	静的確認	T024§B-20261026-0115
+0x4C7040	func	Ai_ApplyFourwayPairState	四方向用の +0x48/+0x4A/+0x4C/+0x4E の各ペアを番号0〜3で処理する。実際のゲーム効果の意味は未確定。	静的確認	T024§B-20261025-2313
+0x44CF80	func	Ai_DispatchMode1UnitGroup	mode1 の経路から Unit 群の仮想関数表 +0x68 を引数1で呼び出す。対象クラスとゲーム上の意味は未確定。	静的確認	T013§B-20261029-1613
+0x49E8B0	func	Ai_CollectAliveUnitsFromTree	木構造のユニット参照を走査し、Unit+0x1867C!=0 の死亡扱いを除外して生存ユニットを配列に集める。	静的確認	T013§B-20261024-0110
+0x49CD60	func	Ai_UpdateKeyedUnitVector	キー付きベクトルを検索・消去・挿入する関数群の入口。書換えで使われる値の名称と全分岐は未確定。	推定	T013§B-20261024-0616
+0x49F7D0	func	Ai_InsertKeyedVectorRecord	キー付きベクトルを格納する木への挿入処理を担当する。record+0x1C の3ポインタの引継ぎを含む。	静的確認	T013§B-20261024-0616
+0x5E3B70	func	Ai_ComputeCandidateDistance	候補選定で座標差の平方和を受ける平方根相当の距離計算補助として呼ばれる。	推定	T013§同距離target候補のtie-break
+0x4F93A0	func	Ai_ComputeBattleAreaTargetPoint	戦闘領域の境界値と Unit 座標から候補座標を生成する補助。探索キャッシュの後段補正で呼ばれる。	推定	T013§B-20261021-1914-01
+0x65BCAC	global	g_UnitSearchThreshold	unit_search_bdr の現在値。初期値100で、Unit+0x1E534 にある探索カウンタと比較される。	静的確認	T013§target search cadence
+0x87984F	global	g_SupportPresenceGateOverride	支援候補の Unit+0x1D0 存在検査を切り替える条件として参照される1バイト値。具体的なゲームモードは未特定。	静的確認	T013§support-skill secondary candidate pipeline
+0x65EB64	global	g_FourwayBattleModeFlag	複数の戦闘経路で0と1に更新される四方向選択用状態値。用途の正式名称は未確認。	推定	T024§B-20261026-0115
+0x63A4BC	object	vt_SimpleUnit	SimpleUnit の仮想関数表。コンストラクタが Unit+0x8C に0x0001を書き、通常ユニット種別となる。	静的確認	T013§primary/fallback poolのRTTI同定, EXP_SIMPLEBATTLE_LIFECYCLE§CP01
+0x63A8E4	object	vt_SimpleStaticUnit	SimpleStaticUnit の仮想関数表。コンストラクタが Unit+0x8C に0x0101を書き、静的ユニット候補群へ登録する。	静的確認	T013§primary/fallback poolのRTTI同定
+# ---- 経験値・召喚・ユニット記録 ----
+0x54E7B0	func	Summon_SpawnFromSkill	技能・発動元を受けて召喚処理を進める大規模関数。呼出元に Missile/RushMissile などがあり、Unit+0xC の holder 参照を生成先へ渡す。	静的確認	T011§召喚caller, EXP_KIND4_DISPATCH_PRODUCERS, EXP_CACHE_STRING_KEY_RECORD_ABI§4
+0x547490	func	Summon_ProcessSkillKind4	Skill+0x40==4 の召喚系 producer の一つ。UnitData の一時コピーと記録挿入に 0x466BA0→0x577310 を用いる。	静的確認	EXP_KIND4_DISPATCH_PRODUCERS, EXP_CACHE_STRING_KEY_RECORD_ABI§4
+0x553390	func	Summon_ProcessAlternativeKind4	もう一方の召喚処理 producer。Skill+0x74 の繰り返しや零値fallbackを含み、0x577310 に記録を渡す。	静的確認	EXP_KIND4_DISPATCH_PRODUCERS, EXP_COLLAB_STATUS
+0x552EF0	func	Summon_DispatchAlternativeSkill	0x553390 を呼ぶ種別4の上流分岐。技能種別と後続召喚経路を結ぶ。	静的確認	EXP_KIND4_DISPATCH_PRODUCERS, EXP_COLLAB_STATUS
+0x577260	func	UnitData_FindSummonRecord	BattleUnit 所有の文字列キーの木から記録 R を検索し、見つからなければ0を返す。呼出規約は ECX=owner、スタックの28バイトキー引数を関数側で回収する。	静的確認	EXP_CACHE_STRING_KEY_RECORD_ABI§4
+0x577310	func	UnitData_InsertSummonRecord	BattleUnit の記録木へ大きな値引数を挿入する。呼出前には約0x1D4バイトの引数領域を作り、戻り値はRへのポインタ。	静的確認	EXP_CACHE_STRING_KEY_RECORD_ABI§4
+0x57A6E0	func	UnitData_CreateRecordNode	記録木で512バイトのノードを確保し、node+0x28 に UnitData 相当の記録本体を構築する。	静的確認	EXP_CACHE_STRING_KEY_RECORD_ABI§3, EXP_SAVE_TREE_POINTER_VS_INLINE
+0x543E00	func	Unit_DestroyBattleUnit	BattleUnit の破棄処理。Unit+0x1E4B8 にある召喚記録用の木を解放する経路を持つ。	静的確認	EXP_CACHED_RECORD_LIFETIME§機械的に追える配置
+0x5450C0	func	UnitData_ReleaseRecordTree	BattleUnit の記録木を後処理する破棄補助。0x543E00 側から呼ばれ、0x5454D0 に接続する。	静的確認	EXP_CACHED_RECORD_LIFETIME§機械的に追える配置
+0x5454D0	func	UnitData_ReleaseRecordNode	記録木の要素を解放する補助。後段で UnitData の文字列・vector 破棄 0x4591F0 へつながる。	静的確認	EXP_CACHED_RECORD_LIFETIME, EXP_SUMMON_DESTRUCTOR_NORMAL_VTABLE
+0x466BA0	func	UnitData_CopyRecordPayload	UnitData 相当の値オブジェクトをコピーして召喚記録の引数や木ノードに構築する。	静的確認	EXP_CACHE_STRING_KEY_RECORD_ABI§3/§4
+0x55A000	func	Unit_DestroyStaticVariant	静的ユニット系の破棄処理。共通 BattleUnit 破棄関数 0x543E00 を呼び出す。	静的確認	EXP_CACHED_RECORD_LIFETIME§機械的に追える配置
+0x55B010	func	Unit_DeleteStaticVariant	静的ユニット系の deleting destructor 相当。flag の bit0 が立つ場合にオブジェクト本体も解放する。	静的確認	EXP_CACHED_RECORD_LIFETIME§機械的に追える配置
+0x570C90	func	Unit_DeleteNormalVariant	通常 Unit の vtable 先頭に置かれる破棄関数。0x543E00 から記録木の解放へ進む。	静的確認	EXP_SUMMON_DESTRUCTOR_NORMAL_VTABLE, EXP_SIMPLEBATTLE_LIFECYCLE§CP01
+0x4591F0	func	UnitData_DestroyPayload	UnitData 相当の記録内にある複数の文字列・vector を解放する。ノード自体の free より前に実行される。	静的確認	EXP_CACHED_RECORD_LIFETIME§機械的に追える配置
+0x467DE0	func	UnitData_FindPersistentRecord	永続化側の context+0x300 の木を検索し、node+0x28 に格納された UnitData* を返す。	静的確認	EXP_SIMPLEBATTLE_LIFECYCLE§CP03
+0x4E70E0	func	Summon_ProcessSharedQueue	召喚処理と代替移動処理で共用される2DWORDの待ち行列を使う。末尾投入・先頭取得・先頭進行・件数減算を含む。	静的確認	T011§B-20261026-15H
+0x56F6F0	func	Unit_InitializeRuntimeHolder	Unit の生成時に渡された所有者文脈を Unit+0xC に設定する補助。召喚元 Unit+0xC からの継承経路で使用される。	静的確認	T011§B-20261027-13H
+0x56F880	func	Unit_ConstructSummonedRuntime	召喚時にも使用される通常 Unit オブジェクトの生成処理。owner/holder 引数を 0x56F6F0 へ渡し、vtable 0x63A9E4 を設定する。	静的確認	T011§B-20261027-13H, EXP_SUMMON_DESTRUCTOR_NORMAL_VTABLE
+0x571B70	func	Unit_InitializeBattleInstance	キャンペーン側の参照 Unit から戦闘インスタンスへ状態を引き継ぐ際に呼ばれる。技能の種別別能力フラグ再構築とも関連する。	推定	T011§13/§15, T013§stealth
+0x587CC0	func	Unit_ResetLinkedRuntimeFlags	戦闘 SimpleUnit 生成時などに参照元オブジェクトの状態を変更する補助。複数の状態 setter からも呼ばれるため、生成専用ではない。	静的確認	T011§15/§16
+0x579940	func	UnitData_CompareRecordKeys	記録木の文字列キーを短文字列とヒープ文字列の双方から読み、辞書順に比較する処理を含む。	静的確認	EXP_CACHE_STRING_KEY_RECORD_ABI§1
+0x588470	func	UnitData_ResolveTypedDefinition	Unit/クラス等の名前・種別の階層検索に関わる補助。参照先型に応じたプロパティ取得を含む。	推定	T011§B-20261013-1102
+0x402C40	func	UnitData_CompareRawStringKeys	UnitData のキー比較で呼び出す生バイトの文字列比較。共通先頭が一致しても長さが異なれば別キーとなる。	静的確認	EXP_CACHE_STRING_KEY_RECORD_ABI§1
+0x63A9E4	object	vt_UnitRuntime	通常型 Unit の仮想関数表。0x56F880 の生成時に vptr へ書き込まれる。	静的確認	EXP_SUMMON_DESTRUCTOR_NORMAL_VTABLE
+0x54ED95	code	Summon_SaveSourceUnitOnFlash	召喚処理で source Unit-like オブジェクトを SummonFlash+0x7C に記録する位置。	静的確認	T011§B-20261027-1514
+0x54F074	code	Summon_ReadInheritedHolder	召喚元の Unit+0xC にある holder を読み、生成 Unit に渡す引数を準備する位置。	静的確認	T011§B-20261027-13H
+0x577405	code	UnitData_ReturnInsertedRecord	召喚記録の挿入関数が EAX に記録 R のポインタを返す位置。	静的確認	EXP_CACHE_STRING_KEY_RECORD_ABI§4
+0x57A764	code	UnitData_AdvanceToPayload	記録ノードのキー文字列領域を0x1Cバイト進め、record本体のコピー先を準備する位置。	静的確認	EXP_CACHE_STRING_KEY_RECORD_ABI§3
+0x56F720	code	Unit_SetHolderField	Unit の生成側でコンストラクタ引数を Unit+0xC に書き込む命令位置。	静的確認	T011§B-20261027-13H
+# ---- セーブ・永続変数 ----
+0x45E7F0	func	Save_LoadFullState	通常セーブの復元経路。ファイルを復号した後、既存の数値変数の木を解放し、保存グループを再構築する。	静的確認	T014§2026-10-08 A14, §normal save reader
+0x45EAC0	func	Save_LoadStoredGroups	通常ロード中の保存グループを解析する処理。script数値変数の木を含む複数のコンテナを読み直す。	静的確認	T014§2026-10-08 A14, §2026-10-12 A57
+0x45E1E0	func	Save_LoadReaderCore	通常 .sav のロード時に Unit・Spot などの一時領域を初期化し、保存データを読む共通経路。	静的確認	T014§2026-10-13 A78, §normal save tail
+0x460000	func	Save_WriteFullState	通常 .sav のエンジン状態をグループ順に直列化し、0x427040 の共通エンベロープで暗号化して書き込む。OPEN_ALWAYS のため末尾切詰め命令は確認されていない。	静的確認	T014§通常 .sav writer, §file rewrite behavior
+0x45F960	func	Save_PrepareFullMetadata	通常保存用のメタデータと状態を組み立て、0x460000 の writer に渡す。	静的確認	T014§通常 .sav writer
+0x428710	func	Save_WriteGlobalVariables	global.sav の既存レコードを読み、キーの値を upsert して全体を再直列化する。ゼロ値を書いてもキー削除とはならない。	静的確認	T014§gwrite logical semantics, §file rewrite behavior
+0x428010	func	Save_ReadGlobalVariables	global.sav を開いてバイト列を読み、復号・record 木への展開 0x429C60 に渡す。gread 命令から使われる。	静的確認	T014§global.sav load model, §command -> native core
+0x427040	func	Save_EncodeAdditiveEnvelope	先頭4バイトのマジックと28バイト鍵を付け、32バイト目以降へ繰返し加算する共通エンコーダ。鍵生成で CRT rand を28回消費する。	静的確認	T014§binary format / envelope, T031§20
+0x4270F0	func	Save_DecodeAdditiveEnvelope	01 02 03 04 のマジックを検査し、28バイト鍵でデータを減算復号した後に32バイトヘッダを除去する。	静的確認	T014§binary format / envelope, §通常 .sav writer
+0x429C60	func	Save_DecodeGlobalRecords	global.sav 読込後のデータを復号・解析し、キーと補助文字列とint32値の記録木に展開する補助。	推定	T014§global.sav load model
+0x4637A0	func	Variable_WriteNumericMap	スクリプトの永続数値変数を engine+0x30C/+0x310 のmapへ書き込む。pushRand などの命令からも呼ばれる。	静的確認	T014§通常save groupの意味同定, T031§18
+0x463CA0	func	Variable_GetOrCreateNumeric	スクリプト数値変数を名前で検索し、存在しなければ値+0x1Cを0にした新レコードを作る。	静的確認	T014§2026-10-08 A5, T032§7.1
+0x41EBE0	func	Variable_ModifyNumericDirect	数値変数の参照を 0x463CA0 で取得した後、record+0x1C を直接更新する分岐を含む。	静的確認	T014§2026-10-08 A9
+0x463610	func	Variable_WriteScenarioName	起動時の @scenario 用に呼ばれる別の変数 writer。@gamemode の数値変数経路とは異なる。	静的確認	T014§2026-10-08 A12
+0x58F7E0	func	Variable_EraseOldMappedValue	数値変数の既存record更新時の一部条件で呼ばれる、旧値処理の補助。厳密な破棄条件は未確認。	推定	T014§2026-10-08 A13, T011§B-20261025-1513
+0x4C1200	func	Variable_FindTreeKey	汎用木のキー検索に用いられる関数。文字列比較を通じて候補nodeと番兵を判別する。	静的確認	T012§57, T014§2026-10-08 A13
+0x470830	func	Save_WritePrintableString	0x20〜0x7F の文字を検査してNUL終端の文字列を保存ストリームへ出す。	静的確認	T014§binary format / envelope
+0x4705F0	func	Save_ReadPrintableString	保存ストリームからNUL終端の印字可能文字列を読み取る。数値mapのキー・補助文字列にも使われる。	静的確認	T014§binary format, §normal save reader group order
+0x470700	func	Save_ReadInt32Value	通常セーブの数値map復元時に32bit値を読むヘルパー。文字列2本の直後に呼ばれる。	静的確認	T014§normal save reader group order
+0x471AF0	func	Save_ReadDiplomacyState	通常セーブの後段で世界側+0x1EF4B4にある状態を読む。0x471D20 の書込経路に対応する。	推定	T014§normal save tail: diplomacy state + spot graph/path state
+0x471D20	func	Save_WriteDiplomacyState	通常セーブの後段で世界側+0x1EF4B4の状態をストリームへ出力する。0x471AF0 と対の処理。	推定	T014§normal save tail: diplomacy state + spot graph/path state
+0x435550	func	Save_ReadWorldGraphState	通常ロードの後半に世界側+0x504の状態を復元する。0x435C10 の書込経路と対応する。	静的確認	T014§normal save tail: diplomacy state + spot graph/path state
+0x435C10	func	Save_WriteWorldGraphState	通常セーブで世界側+0x504の状態を出力する。Spot経路等の保存グループに関係する。	静的確認	T014§normal save tail: diplomacy state + spot graph/path state
+0x5B0400	func	Save_ReadSpotPathPayload	SpotPath と SpotEscapePath が共用する仮想slot +0x5C の保存データ読込関数。	静的確認	T014§SpotPath / SpotEscapePath shared payload
+0x5B0600	func	Save_WriteSpotPathPayload	SpotPath と SpotEscapePath が共用する仮想slot +0x60 の保存データ書込関数。	静的確認	T014§SpotPath / SpotEscapePath shared payload
+0x596AA0	func	Save_WritePowerGroupRecord	通常セーブの engine+0x2E0 グループの値を直列化する補助。保存グループの正式な型名は未確定。	推定	T014§通常save plaintext state groups
+0x598CE0	func	Save_WriteSpotGroupRecord	通常セーブの engine+0x2F0 グループの値を直列化する補助。保存グループの正式な型名は未確定。	推定	T014§通常save plaintext state groups
+0x58EFD0	func	Save_WriteUnitDataRecord	通常セーブの UnitData の各数値フィールドを個別に出力するシリアライザ。engine+0x300 グループから参照される。	静的確認	T011§20, T014§通常save plaintext state groups, EXP_SAVE_TREE_POINTER_VS_INLINE
+0x65CD28	global	g_SaveEmptyStringSeparator	通常 .sav の複数グループの境界に出力される空の std::string オブジェクト。	静的確認	T014§通常save plaintext state groups
+0x4A5F53	code	Variable_DispatchGread	スクリプト gread（opcode0x4C）から global.sav の読込 0x428010 を呼ぶ分岐位置。	静的確認	T014§command -> native core
+0x4A60D1	code	Variable_DispatchGwrite	スクリプト gwrite（opcode0x4D）から global.sav 更新 0x428710 を呼ぶ分岐位置。	静的確認	T014§command -> native core
+0x4A17C8	code	Save_DispatchCommand	スクリプト save（opcode7）の処理入口で 0x45F960 へ状態を渡す。	静的確認	T014§通常 .sav writer
+0x45FF4B	code	Save_WriteAutosaveSlot	auto.sav を作る保存経路で通常 writer 0x460000 にファイル名を渡す位置。	静的確認	T014§通常 .sav writer
+0x46065C	code	Save_EncryptStreamBeforeWrite	通常セーブのファイル書込み直前に共通エンコーダ 0x427040 を呼ぶ位置。	静的確認	T014§通常 .sav writer
+0x428F84	code	Save_WriteGlobalFileBytes	global.sav 更新後に WriteFile を呼び出し、再構築したストリームをディスクへ出力する箇所。	静的確認	T014§file rewrite behavior
+# ---- イベント・式・乱数 ----
+0x44F470	func	Event_EvaluatePhasePredicate	イベントのフェーズ条件やターン条件を評価する処理領域。個別の opcode 分岐があり、各条件の入力には現在の実行モードが影響する。	推定	T010§battle clock native semantics, T031§2026-10-13 phase predicates
+0x4C1FC0	func	Random_InitializeMapSeed	マップの乱数初期化の経路。内部から CRT srand を呼び、別のマップ初期化ステップにも接続する。	静的確認	T031§17 Native reseed boundaries
+0x4C2240	func	Random_ContinueMapSeedSetup	シーンの乱数リセット後に呼び出される補助。フェーズ5/6などの設定に応じた乱数経路の一部。	推定	T031§2026-10-12 A51, §17
+0x48C880	func	Event_RunWorldPhase	World の場面更新を行う入口の一つ。GameManager の場面切替から呼ばれ、world phase dispatchへ進む。	静的確認	T010§phase frameInstallMode=0 caller分類
+0x48B4A0	func	Scene_RunRngResetBranch	場面更新の途中で0x48B658から共通の乱数リセットを呼ぶ分岐を含む。場面番号による実際の用途は未確認。	推定	T031§17 Native reseed boundaries
+0x48BF60	func	Scene_RunPhase5SeedSetup	実行フェーズ5を設定した後、0x48BFECで共通リセット0x4C1FC0を呼び、0x48BFF8で後続補助0x4C2240を呼ぶ。旧ロード一般処理という説明は過大だった。	静的確認	T031§2026-10-12 A51
+0x4335E0	func	Event_RunExecutionMode	スクリプト実行の現在モード engine+0x1EEC3C によって mode1/2/6 などを分岐する実行経路。	静的確認	T010§phase executionMode / frame-install contract
+0x44DCE0	func	Expression_EvaluateLogicalShortCircuit	式の論理積（AND）と論理和（OR）を認識し、左辺の評価結果によって右辺の評価を省略する。	静的確認	T010§2026-10-10 A35
+0x5001B0	func	Random_SetMapGenerationSeed	マップ初期化に関わる乱数 seed 生成経路。0x49B191 から呼ばれ、CRT srand を実行する。	静的確認	T031§17 Native reseed boundaries
+0x44E3F0	func	Expression_RegisterConditionNames	isWorld、isNewTurn、isComTurn などの条件式名と opcode の登録を行う領域の入口。	静的確認	T010§condition registry
+0x4365F0	func	Event_InsertFrameKindZero	スクリプト実行フレームの構築時に引数0を配列の先頭へ挿入する補助。フレーム種類と命令位置の扱いに関係する。	静的確認	T010§phase executionMode / frame-install contract, §frameInstallMode vector transform
+0x436080	func	Event_TransformScriptFrame	実行フレームを構築する補助関数の一つ。frameInstallMode=0 と通常実行の分岐に使われる。	推定	T010§frameInstallMode vector transform
+0x4930C0	func	Event_EvaluateBattleIfRoots	戦闘に登録された if/rif のroot条件を評価する。真の通常ifは実行後に集合から除去し、rifは残す。	静的確認	T010§if / rif lifecycle
+0x492D80	func	Event_ProcessBattleTick	戦闘の進行に合わせた処理経路。自然終了判定と ScriptVM の再開に関連する入口として参照される。	推定	T010§2026-10-12 A69, BATTLE_TAKEOVER_OBSERVABILITY_CONTRACT
+0x48BC70	func	Scene_RunPhase6SeedSetup	実行フェーズ6を設定し、0x48BCB9で乱数リセット補助を呼ぶ。フェーズ5側とは別の分岐。	静的確認	T031§2026-10-12 A51
+0x479740	func	Random_ShuffleStringVector	スクリプト shuffle の文字列ベクトルを並べ替える補助。0x479A30 を呼び、28バイト要素の Fisher-Yates 処理に接続する。	静的確認	T031§16 Native RNG / shuffle contract
+0x433E80	func	Event_ExecuteMode6Branch	実行モード6で通常のスクリプト実行ループから tail-jump される処理。	静的確認	T010§2026-10-12 A69
+0x492710	func	Event_InitializeBattleClock	戦闘開始時に engine+0x1EED60（resetTime対象）と +0x1EED64（interval基準）を両方0へ戻す。	静的確認	T010§resettable time vs absolute interval clock
+0x565700	func	Event_UpdateBattleLimit	戦闘時間制限の現在カウンタを更新する補助。番兵値のとき増加し、それ以外では正値を減らす。	静的確認	T010§battle clock native semantics
+0x565730	func	Event_GetBattleLimit	戦闘時間制限の現在値を返す。state[0x67B938] が番兵なら 0x7FFFFFFF を返す。	静的確認	T010§battle clock native semantics
+0x565750	func	Event_GetElapsedLimitTime	時間制限ありなら初期値から現在値を差し引き、番兵状態では現在値を返す。	静的確認	T010§battle clock native semantics
+0x4A18B1	code	Event_DispatchBattleEvent	スクリプト battleEvent（opcode10）でrootを列挙し、ScriptIF のみを active list に登録する位置。	静的確認	T010§battleEvent root scheduler
+0x4518FA	code	Expression_GetBattleTime	getTime 条件（opcode0x25A）で engine+0x1EED60 を返す分岐位置。	静的確認	T010§battle clock native semantics
+0x45190B	code	Expression_GetBattleLimit	getLimit 条件（opcode0x25B）で 0x565730 を呼び現在の時間制限を取得する。	静的確認	T010§battle clock native semantics
+0x451915	code	Expression_TestBattleInterval	isInterval（opcode0x25C）で正の指定値を10の倍数に切り上げ、engine+0x1EED64 の割り切れ判定に使う。	静的確認	T010§battle clock native semantics
+0x4B47FC	code	Event_ResetBattleClock	resetTime 命令の処理位置。engine+0x1EED60 だけを0にし、interval時計+0x1EED64は変更しない。	静的確認	T010§resettable time vs absolute interval clock
+0x4AEDDA	code	Random_DispatchPushRand	pushRand（opcode14）で0〜99の乱数を生成し、スクリプト数値変数へ書き込む命令入口。	静的確認	T031§18 pushRand出力のnative永続map
+0x4B044F	code	Random_DispatchShuffle	shuffle（opcode40）で文字列ベクトルの存在を確認し、0x479740 から並び替えを実行する位置。	静的確認	T031§16 Native RNG / shuffle contract
+0x67B938	global	g_BattleLimitMode	戦闘時間制限の番兵を持つ状態。0x80000008 なら無制限扱いの戻り値に変わる。	静的確認	T010§battle clock native semantics
+0x67B93C	global	g_BattleLimitRemaining	戦闘時間制限の現在値。無制限のときの経過カウンタにも使われる。	静的確認	T010§battle clock native semantics
+0x63B080	global	g_RandomUnitScale	CRT rand の整数を0〜1相当へ換算するdouble 1/32768。stealth確率と鍵生成などに使われる。	静的確認	T013§stealth, T014§binary format
+0x63B058	global	g_IntervalQuantum	isInterval が指定間隔を切り上げる際の定数double 10.0。	静的確認	T010§battle clock native semantics
+0x63B060	global	g_RandomPercentScale	候補のstealth判定で0〜99の乱数を作る際に掛けるdouble 100.0。	静的確認	T013§stealthによるprimary target除外
+0x63B100	global	g_SaveKeyRandomSpan	保存エンベロープの鍵バイト生成で使うdouble 112.0。rand換算後に8を加える。	静的確認	T014§binary format / envelope
+# ---- 戦略・場面・領地 ----
+0x5B47B0	func	World_RebuildSpotSkinCache	worldskin 命令の再構築本体。world-base+0x2F0 の Spot 集合を走査して領地の派生表示・空間データを作り直す。	静的確認	T015§worldskin / showSpot / hideSpot
+0x5985C0	func	World_RebuildSingleSpotSkin	worldskin 再構築で個々の Spot に対して呼ばれる補助。結果が派生グリッド・描画キャッシュの再生成に使われる。	推定	T015§worldskin / showSpot / hideSpot
+0x5B5010	func	World_RefreshDerivedSkin	領地集合を基にした worldskin 再生成の後段で呼ばれる処理。正確な表示キャッシュの項目名は未確認。	推定	T015§worldskin / showSpot / hideSpot
+0x5A8740	func	Spot_ShowRuntimeObject	Spot の vtable+0x54 にある表示処理。Spot+0x88 を1にし、世界画面の表示用オブジェクトを再登録する。	静的確認	T015§Spot表示objectのshow/hide契約
+0x5A89A0	func	Spot_HideRuntimeObject	Spot の vtable+0x58 にある非表示処理。Spot+0x88 を0にし、描画用オブジェクトを登録集合から外す。	静的確認	T015§Spot表示objectのshow/hide契約
+0x5972E0	func	Spot_LoadRuntimeCapacity	Spot の capacity を読み、未指定0なら scenario のspot_capacityを代用し、最終値を最大24に制限する。	静的確認	T009§Capacity / range normalization correction
+0x4B9930	func	Scene_DispatchGameMode	GameManager が場面番号 +0x1EF144 の0〜7に応じて処理を分岐する経路。World 側は 0x48C880 へつながる。	静的確認	T010§phase frameInstallMode=0 caller分類
+0x4A6E40	func	World_RegisterPowerCommands	World 側の勢力操作コマンド用の名前・関数登録領域。unionPower と addPower が同じ engine+0x1EEF60 の登録集合へ入る。	推定	T025§13 World War 併合APIの登録
+0x6385BC	object	vt_SpotDisplayObject	Spot 表示用クラスの仮想関数表。+0x54 が 0x5A8740、+0x58 が 0x5A89A0 に対応する。	静的確認	T015§Spot表示objectのshow/hide契約
+0x4A2793	code	World_DispatchSkinRebuild	スクリプト worldskin（opcode24）の処理位置。derived world skin を作り直す 0x5B47B0 を呼ぶ。	静的確認	T015§worldskin / showSpot / hideSpot
+0x4A2ED6	code	Spot_DispatchShowSpot	スクリプト showSpot（opcode42）の処理位置。Spot 表示オブジェクトを取得または生成して表示する。	静的確認	T015§worldskin / showSpot / hideSpot
+0x4A304A	code	Spot_DispatchHideSpot	スクリプト hideSpot（opcode43）の処理位置。既存Spotの表示オブジェクトの非表示処理を呼ぶ。	静的確認	T015§worldskin / showSpot / hideSpot
+0x4A71AA	code	Power_RegisterUnionPower	World の builtin 登録領域で unionPower コマンドの名前を登録する命令位置。	静的確認	T025§13 World War 併合APIの登録
+0x4A6FE1	code	Power_RegisterAddPower	同じ World builtin 登録領域で addPower コマンドの名前を登録する命令位置。	静的確認	T025§13 World War 併合APIの登録
+0x5973AF	code	Spot_ApplyCapacityFallback	Spot 読込時に固有 capacity が0なら scenario 側の容量値を採用する分岐。	静的確認	T009§Capacity / range normalization correction
+0x597412	code	Spot_ClampCapacityTo24	Spot 容量の最終値を最大24へ制限する付近の位置。	静的確認	T009§Capacity / range normalization correction
+# ---- 画面・入力・音 ----
+0x5559B0	func	Window_HandleWin32Messages	Win32 WndProc。WM_ACTIVATE の状態に応じて 0x879822/0x879823 を切替え、非アクティブ時は入力バッファ処理へ進む。	静的確認	T015§Win32/D3D window mode and buffered input
+0x4BCF70	func	Input_PollGameMouse	GameMouse の DirectInput バッファ入力を取得する。0x879822==0 の非アクティブ時はedge状態を消してpollを省く。	静的確認	T015§Win32/D3D window mode, §879822入力poll
+0x4BD170	func	Input_FlushInactiveDevices	非アクティブ遷移で2つの buffered DirectInput デバイスをフラッシュする。両デバイスの仮想関数表+0x28を呼ぶ。	静的確認	T015§非アクティブ遷移のDirectInput buffer flush
+0x4EE110	func	Input_ResetNewGameMouse	NewGameMouse のマウス状態 +0x18〜+0x38 と14個のキーボードword +0x3C〜+0x57 を0へ戻し、デバイス再取得を呼ぶ。	静的確認	T015§Esc/Space専用入力経路
+0x4EE170	func	Input_ClearKeyEdgesBeforePoll	キーボードwordの上位edge byteを消し、下位heldを維持してから入力pollへ渡す。	静的確認	T015§NewGameMouse共有修飾キー
+0x4EE1B0	func	Input_ProcessBufferedKeys	NewGameMouse のキー状態を更新し、共有修飾キーword+0x50の押下・解放状態を処理する。	静的確認	T015§NewGameMouse共有修飾キー
+0x4BE220	func	Audio_AdvancePlaylistOnEnd	BGMの再生状態を調べ、再生完了や停止の際に0x4BF2B0でリセットし、次の曲を0x4BDE40で開く。1曲だけのloopでも再オープンが生じる。	静的確認	T015§BGM volume 0 / transport-loop interaction
+0x4BDE40	func	Audio_StartBgmTrack	BGM の直接再生コア。ECX にファイル名を受け、スタック6引数を処理する（ret 0x18）。	静的確認	T015§BGM playback ABI / volume attenuation
+0x4BE820	func	Audio_PrepareBgmPlayback	BGM再生開始中の曲選択・既存再生状態に関する補助。既存曲・空曲で遷移が分かれる。	推定	T015§D-20261014-1841-01
+0x4BF410	func	Audio_ProcessFadeOutCompletion	BGMのフェードがゼロへ到達した後、停止・リセット・保存済み曲の再オープンへ分岐する。	静的確認	T015§BGM volume 0 / transport-loop interaction
+0x4BF2B0	func	Audio_StopResetCurrentTrack	BGMプレイヤーの停止・リセット処理。プレイリスト切替時に呼び出される。	静的確認	T015§BGM volume 0 / transport-loop interaction
+0x4BF780	func	Audio_TransitionPlaylistAfterEof	プレイリストの再生終了判定側で呼ばれ、次曲へ移行する処理に接続する。codecごとの条件がある。	推定	T015§Codec backend / EOF exact contract
+0x4BF630	func	Audio_ApplyAttenuationToBackend	現在の音声バックエンドへ音量減衰値を設定する。ここ自体は曲を停止・再オープンしない。	静的確認	T015§BGM volume 0 / transport-loop interaction
+0x4BF6A0	func	Audio_TestTrackTransitionGate	再生完了や停止条件でプレイリスト遷移を許すか検査する補助。正確な codec ごとの条件は未検証。	推定	T015§loopBGM ordered playlist state
+0x4BE340	func	Audio_UpdateMasterVolumeSlider	UIのマスター音量から減衰値を作る。ゼロ指定は内部で -10000 として扱い、その後有効下限 -9600 に収める。	静的確認	T015§BGM volume 0 / transport-loop interaction
+0x4BE3E0	func	Audio_ApplyScriptVolume	スクリプト volume の値を変換する。正値は百分率、ゼロ以下は生減衰値として扱い、最終値を -9600〜0 に制限する。	静的確認	T015§BGM playback ABI / volume attenuation
+0x4BD2A0	func	Audio_RefreshMasterVolumeState	マスター音量用の基準値キャッシュの更新に関係する補助。実際の音量適用順序は複数の経路に分かれる。	推定	T015§D-20261015-0937-01
+0x4BE480	func	Audio_OpenCodecBackend	MP3等の再生バックエンドを初期化し、必要な内部バッファとDirectShow等のインターフェースを用意する。	静的確認	T015§Codec backend / EOF exact contract, §D-20261015-0337
+0x4B9AA0	func	Input_HandleEscapeExit	Esc の押下とアクティブ状態を検査し、ウィンドウ表示モードに応じた終了・確認処理へ進む。	静的確認	T015§Esc入力consumer・表示mode別のexit
+0x4BBAE0	func	Input_DestroyMouseHost	GameMouseのホスト終了側で関連デバイス・参照を解放する。global hostのvtableとの関連を持つ。	静的確認	T015§D-20261013-2234-01
+0x4BF520	func	Audio_SetFadeTransitionState	BGMのフェード入力を設定する補助。player+0x20 の符号と停止・再開条件を区別する。	推定	T015§D-20261013-1952-02
+0x4BF570	func	Audio_ResumeBgmTransition	再生コアの既存曲・空曲条件に応じた後続遷移を処理する。開始音量の経路は条件付き。	推定	T015§D-20261014-1841-01
+0x4BF720	func	Audio_ResolveTransportBranch	BGMの状態下位5bitとフェード・EOF判定で次の処理を選ぶ。	推定	T015§D-20261013-0241-02
+0x4C24B0	func	Window_PumpGameLoop	ゲームのメインループの一部。非アクティブ時は10msの Sleep を挟み、BGM更新にも接続する。	静的確認	T015§879822入力pollと879823別フレーム処理
+0x4B9E50	func	Input_CreateNewGameMouseHost	NewGameMouse を確保・初期化してプレイヤーの入力参照に設定する経路を含む。	静的確認	T015§D-20261013-2038-01
+0x4BCF20	func	Input_ReleaseGameMouseResource	GameMouse の RTTI 仮想関数表に登録された先頭メソッド。詳細な解放対象は未確認。	推定	T015§D-20261013-1834-01
+0x4EE0C0	func	Input_ConstructNewGameMouse	NewGameMouse の生成時に呼ばれる初期化関数。生成した実体は Player の入力参照へ配置される。	静的確認	T015§D-20261013-2038-01
+0x48F080	func	Audio_SelectBattleEventBgm	戦闘イベントの bgm プロパティを調べ、空でなければ custom BGM 名として 0x4BDE40 に渡す。none の特別扱いはない。	静的確認	T015§Battle/event/spot BGM property consumer
+0x48EEE0	func	Audio_StartWorldPlaylist	World 側の BGM 候補を作成し、world-music flagが立っていれば二重開始を避ける。	静的確認	T015§Audio playback / world-music flag, T010§frameInstallMode=0
+0x526510	func	Input_HandleBattlePauseRequest	戦闘画面の Space または中央操作による pause要求を処理する。選択対象処理より先に呼ばれる。	静的確認	T015§D-20261013-0943-01
+0x526A40	func	Input_HandleBattleSpeedShortcut	戦闘操作中にZキーのheld/edgeを調べ、関連する速度状態に応じて入力を処理する。	静的確認	T015§D-20261013-0943-02, T024§B-20261025-1712
+0x526E50	func	Input_ProcessSelectedUnitCommand	プレイヤーの選択部隊が存在する場合に優先される命令処理の一つ。World座標への変換経路へつながる。	推定	T015§D-20261013-0943-01
+0x527710	func	Input_CheckBattleUiPriority	戦闘画面で選択・攻撃命令へ進む前に調べるUI優先ゲートの一つ。成立時には他の入力処理が短絡される。	推定	T015§D-20261013-0943-01, T024§B-20261025-1712
+0x5271A0	func	Input_ResolveBattleWorldPoint	ユニットへの命令操作で画面座標からワールド座標へ変換する後段経路を含む。厳密な算術は未解明。	推定	T015§D-20261013-0943-01
+0x527F60	func	Input_FilterSelectableUnits	Player の選択対象を巡回し、Unit+0x1867C/+0x8C/+0x1F8 などで選択可否を判定する。	静的確認	T015§D-20261013-0943-01
+0x528320	func	Input_ClearUnitSelection	Player の既存選択リンクリスト +0x348 と件数 +0x34C を消去する。	静的確認	T015§D-20261013-0943-01
+0x65BEE4	global	g_WindowDisplayMode	ウィンドウの表示方式の分岐値。0なら WS_POPUP/topmost のフルスクリーン風、非ゼロはウィンドウ枠付きで生成する。	静的確認	T015§Win32/D3D window mode and buffered input
+0x879823	global	g_ActiveFrameGate	WndProcのWM_ACTIVATEで切り替えられるフレーム更新用のアクティブ値。入力poll側の0x879822とは別の条件を持つ。	静的確認	T015§879822入力pollと879823別フレーム処理
+0x879821	global	g_ForceWindowedPresent	D3D のWindowedフラグを強制的に1にする表示上書き値。Win32側のpopup指定とは独立している。	静的確認	T015§Win32/D3D window mode and buffered input
+0x65BEF0	global	g_ScreenHeight	描画バックバッファの高さとして参照される値。幅 0x65BEEC と合わせて D3DPRESENT_PARAMETERS に渡す。	静的確認	T015§Win32/D3D window mode and buffered input
+0x65BD9F	global	g_NoactiveWindowOption	起動パラメータ noactive の処理から0にされる状態値。非アクティブ時の入力処理分岐で参照される。	静的確認	T015§noactive起動オプションとinactive時
+0x879820	global	g_TestmapStartupFlag	testmap オプションで設定される状態値。Esc からの直接終了と一部の起動モード分岐に使われる。	静的確認	T015§testmap起動フラグとEsc
+0x87981D	global	g_MusicOffStartupFlag	musicoff 起動オプションで1になる値。BGMマネージャーの生成を省略・無効化する分岐で参照される。	静的確認	T015§BGM volume 0 / transport-loop interaction
+0x8BE388	global	g_NewGameMousePtr	ゲーム側で保持する NewGameMouse オブジェクトへの参照。起動時の初期化でNULLにされる。	静的確認	T015§WM_ACTIVATE失焦時の部分入力クリア, §D-20261013-2234
+0x8BE3A0	global	g_StartupVolumeMask	起動時の音量設定計算に用いられるDWORD。musicoff状態とのAND演算で後続呼出しに渡される。	推定	T015§D-20261015-2040-01
+0x65BED8	global	g_AudioBackendEntryCount	音声プレイヤーの内部エントリー数。バックエンド生成時に4倍してポインタ配列を確保する。	推定	T015§D-20261015-2340-01
+0x879610	global	g_D3dPresentWindowedFlag	D3DPRESENT_PARAMETERS の Windowed 項目。通常は0x65BEE4に合わせて設定される。	静的確認	T015§Win32/D3D window mode and buffered input
