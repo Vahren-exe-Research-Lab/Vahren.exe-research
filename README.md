@@ -111,7 +111,7 @@ Ghidraとx32dbgへのラベル反映は従来どおり明示操作を必要と�
 - 正本: `ButaMonky/Hakushin067-Research-Knowledge`（**非公開**）の `develop`。作業ブランチは `work/kb-<TASK_ID>`。
 - 作業前に `python -B tools/sync_knowledge.py status` と `audit` を実行。`start TASK_ID` → 編集と既存テスト → `checkpoint TASK_ID` → `publish` の順に利用する。
 - `SOURCE_MANIFEST.tsv` で原本ごとのSHA-256を検査し、AI同士の同時編集はロックとブランチ分離で防止する。
-- `generated/`（約475MiBの研究全文検索DBを含む）やゲーム原作はGitへ送らない。復元は認可済みの研究PCから生成ツールを実行する。
+- `generated/`（現行の全文索引DB約422.8MBと旧DBバックアップ約506.4MBを含む）やゲーム原作はGitへ送らない。復元は認可済みの研究PCから生成ツールを実行する。
 - 失敗・未同期は `SYNC_STATUS.md`、`SYNC_PROTOCOL.md`、過去の `KB_SYNC_BLOCKED_20261029.md` を確認する。GitHubのprivate検証なしにpushしない。
 
 
@@ -120,7 +120,7 @@ Ghidraとx32dbgへのラベル反映は従来どおり明示操作を必要と�
 - Ghidraの独立した解析用複製にApplyKnowledge.javaを適用し、エラー0件で反映。VerifyKnowledge.javaで戦闘入口を含む7件と領地名描画コード、関数終端を検証済み。詳細は GHIDRA_X32DBG_VERIFICATION_20261030.md。
 - x32dbgの生成ファイルは **980ラベル・562コメント・構文エラー0**。重複を結合し、`generated/x32dbg_knowledge_import.dd32` をオフライン生成できる。隔離Notepadで1ラベル/1コメントの登録保存は実機確認。ただしゲームへの一括インポートは未確認で、稼働中のゲームを無断操作しない。
 - 未登録VAの優先順位は既存の全文研究索引とGhidra V9の呼び出し証拠から機械的に算出する。上位100件がP0、次の400件がP1。意味や動作を自動確定しない。
-- DB最適化コードは tools/optimize_research_db.py。複製を506MBから416MBへ縮小。元の研究PCの既存DBは他作業との競合を避けて未置換。詳細は DB_OPTIMIZATION_REPORT_20261030.md。
+- DB最適化コードは tools/optimize_research_db.py。**普段使うknowledgeのDBもバックアップ付きで正式切替済み**（初期506.4MB→415.8MB、更新後422.8MB）。詳細は DB_OPTIMIZATION_REPORT_20261030.md。
 
 ```powershell
 python -B knowledge\tools\verify_debugger_exports.py
@@ -132,7 +132,7 @@ python -B knowledge\tools\rank_candidates.py --report knowledge\CANDIDATE_RANKIN
 python -B knowledge\tools\research_index.py --check
 ```
 
-既存の全文検索DBを直接置き換える前に、この実装のブランチ統合、別の研究の停止、バックアップとハッシュ検証が必要。Gitへ大容量のDB本体を登録しない。
+2026-10-30に既存DBのバックアップを保管し、改修済み全文検索DBへ置換・再生成・検索確認を実施した。今後もGitへ大容量のDB本体を登録しない。
 ### x32dbg単独インポートDB（ゲームを起動しない）
 
 - `python -B tools/export_x32dbg_database.py` で `generated/x32dbg_knowledge_import.dd32` を再生成、`--check` で整合性確認。
