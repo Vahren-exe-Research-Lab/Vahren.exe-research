@@ -13,3 +13,13 @@
 - 同期確認: `git status --short --branch`、`git rev-parse HEAD`、`git ls-remote --heads origin refs/heads/develop`、`gh repo view ButaMonky/Hakushin067-Research-Knowledge --json visibility`。
 - 失敗/再開: `KB_SYNC_BLOCKED_20261029.md`、`SYNC_PROTOCOL.md`、ローカル `.git/kb-sync-journal.jsonl`。
 - 生成DBの復元: 原作を扱う許可済PC上の研究ROOTにて `python -B knowledge/tools/build_kb.py`。GitHubには原作・V9実DBのバックアップはない。
+
+## 新規クローンからの復元確認（2026-10-29）
+
+- 検証対象のprivate developコミット: `96c9fce5a0645e0ee6c15f6a8ff2d240a0a9f322`。
+- 新規Git cloneのHEADがGitHub・作業PCと一致。
+- `SOURCE_MANIFEST.tsv` 記載の原本24ファイルのSHA-256およびバイト数が**24/24一致**。
+- クローン内 `tools/sync_knowledge.py audit` PASS。
+- 同期ガード単体試験 **8/8 PASS**、研究辞書・索引の単体試験 **5/5 PASS**。
+- クローンのGit作業ツリーはクリーン。検証に使った一時クローンは処理後に削除を試行。
+- 本文研究検索DBや原作EXE/V9等はGitHubに無い。完全な解析環境の再現には認可済み研究PCの別途保存データが必要。
