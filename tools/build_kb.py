@@ -394,6 +394,11 @@ def main():
             safe = joined.replace('"', "'").replace("{", "\\{")
             f.write(f'cmt Vahren.exe+{rva(v):X}, "{safe[:250]}"\n')
 
+    # ---- x32dbg standalone database (no debugger startup/import) ----
+    import export_x32dbg_database
+    db_labels, db_comments = export_x32dbg_database.export(KB)
+    print(f"x32dbg 安全な単独インポートDB: {db_labels} ラベル、{db_comments} コメント")
+
     # ---- Ghidra 用の入力 ----
     ment_by = collections.defaultdict(list)
     for va, fn, doc, ln, hd in mentions:

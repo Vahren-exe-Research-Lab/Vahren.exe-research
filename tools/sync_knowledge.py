@@ -30,6 +30,7 @@ FILES = (
     "tools/research_index.py", "tools/optimize_research_db.py",
     "tools/rank_candidates.py", "tools/test_rank_candidates.py",
     "tools/verify_debugger_exports.py", "tools/test_debugger_exports.py",
+    "tools/export_x32dbg_database.py", "tools/test_x32dbg_database.py",
     "tools/test_kb_workflow.py",
     "tools/sync_knowledge.py", "tools/test_sync_knowledge.py",
     "sources/legacy_comments_20261011.tsv",

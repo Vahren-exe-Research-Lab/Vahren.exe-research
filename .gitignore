@@ -30,6 +30,8 @@
 !/tools/test_rank_candidates.py
 !/tools/verify_debugger_exports.py
 !/tools/test_debugger_exports.py
+!/tools/export_x32dbg_database.py
+!/tools/test_x32dbg_database.py
 !/tools/research_index.py
 !/tools/test_kb_workflow.py
 !/tools/sync_knowledge.py

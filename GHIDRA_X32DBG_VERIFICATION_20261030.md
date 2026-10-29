@@ -52,3 +52,25 @@
 - 未完了範囲: 当該checkpointコミットとGitHubへのpush。失敗時点でソースはステージ前・pushなし。原作と既存研究正本に変更なし。
 - 修正: sync_knowledge.pyのメタデータ読取をutf-8-sigにし、BOM有無双方を許容する。強制Git操作や別経路での拒否迂回なし。
 - 再開位置: 安全性の再監査、単体テスト、checkpoint実行、private GitHubの作業ブランチSHA照合。
+## 2026-10-30追試：領地名2件と隔離x32dbgの最小動作
+
+- 作業ID KB-INT-REMAINDER-20261030。別AIのローカルcommit 4f74996e...から、0x419938 SpotName_DrawTextReady と0x597960 Spot_GetDisplayName を統合用ブランチに追加。元の作業ブランチは無変更。
+- symbols.tsv は365件（旧363＋2）。V9関数先頭・コード所有・重複・確度・出典の検査でエラー0／警告0。
+- Ghidraの解析コピーへ再適用：関数名更新0、ラベル159、コメント1678、短いコメント209、構造体7、失敗0。
+- VerifyKnowledge.javaで0x597960の関数名とKBコメント、0x419938のラベルとKB pre-commentを確認。7関数/7件すべて合格。
+- 0x48D6A0の終端0x48EA5AにRET/C3、UnitDef構造体を再確認。原本Ghidraプロジェクトは未変更。
+
+### x32dbgの独立した最小動作検証
+
+- 旧ゲームコピーのQAが途中終了していたため、実際に稼働中のゲームを操作しない方針を維持。
+- Windows 32bit Notepadコピーを専用 -userdir のx32dbgへ渡し、lbl・cmt・dbsave の3命令を検証。
+- x32dbg自身が作成した .dd32 JSONから、ラベル1件・コメント1件を正確に保存できたことを確認。
+- 証拠：dev_lab/_work/kb_x32dbg_smoke_20261030/smoke.dd32、SHA256 7CCD7E09306CA7906DB69763CCFDDACFB26C92626108C22CD340EDEF0EDB9307。
+- テスト用x32dbgは指定27秒で終了しなかったため、そのテスト用プロセスのみを停止。既存のゲームや他のデバッガに終了命令を送っていない。
+- 直後にゲーム終了を疑ったが再確認により同一PID 4496・同じ起動時刻で継続稼働していた。暫定報告「ゲームが終了した」は訂正する。
+- 既存x32dbgユーザーDBは変更していない。元データはx32dbgの圧縮形式であることを確認。
+- tools/export_x32dbg_database.py はx32dbg実機のサンプル形式に合わせて generated/x32dbg_knowledge_import.dd32 を作る。980ラベル、562コメント。重複・JSON readback検査PASS。
+- DBには個別ゲームのMurmurHashを含めていない。実機Vahren.exeへの980件の反映は未検証。
+- 既存の手動ラベルやコメントを上書きする可能性があるため、自動的にdbloadを実行しない。ユーザーDBのバックアップを作ってから手動でインポートする。
+- 未完了：実際のVahren.exeをx32dbgで開いた状態での全件表示とユーザーDBの衝突検証。ライブゲームが動作している間は実施しない。
+- x32dbgのDB仕様根拠：https://github.com/x64dbg/x64dbg/blob/development/src/dbg/database.cpp

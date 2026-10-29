@@ -117,8 +117,8 @@ Ghidraとx32dbgへのラベル反映は従来どおり明示操作を必要と�
 
 ## Ghidra / x32dbg反映検証・未登録VA優先順位・検索DB最適化（2026-10-30）
 
-- Ghidraの独立した解析用複製にApplyKnowledge.javaを適用し、エラー0件で反映。VerifyKnowledge.javaで戦闘入口を含む6件と関数終端を検証済み。詳細は GHIDRA_X32DBG_VERIFICATION_20261030.md。
-- x32dbgの生成ファイルは 978ラベル・560コメント・構文エラー0。コメントVAの重複を結合する生成修正済み。GUIの自動読み込みは未確認（独立QAプロセス終了）なので、元のデバッグセッションを無断操作しない。
+- Ghidraの独立した解析用複製にApplyKnowledge.javaを適用し、エラー0件で反映。VerifyKnowledge.javaで戦闘入口を含む7件と領地名描画コード、関数終端を検証済み。詳細は GHIDRA_X32DBG_VERIFICATION_20261030.md。
+- x32dbgの生成ファイルは **980ラベル・562コメント・構文エラー0**。重複を結合し、`generated/x32dbg_knowledge_import.dd32` をオフライン生成できる。隔離Notepadで1ラベル/1コメントの登録保存は実機確認。ただしゲームへの一括インポートは未確認で、稼働中のゲームを無断操作しない。
 - 未登録VAの優先順位は既存の全文研究索引とGhidra V9の呼び出し証拠から機械的に算出する。上位100件がP0、次の400件がP1。意味や動作を自動確定しない。
 - DB最適化コードは tools/optimize_research_db.py。複製を506MBから416MBへ縮小。元の研究PCの既存DBは他作業との競合を避けて未置換。詳細は DB_OPTIMIZATION_REPORT_20261030.md。
 
@@ -133,3 +133,9 @@ python -B knowledge\tools\research_index.py --check
 ```
 
 既存の全文検索DBを直接置き換える前に、この実装のブランチ統合、別の研究の停止、バックアップとハッシュ検証が必要。Gitへ大容量のDB本体を登録しない。
+### x32dbg単独インポートDB（ゲームを起動しない）
+
+- `python -B tools/export_x32dbg_database.py` で `generated/x32dbg_knowledge_import.dd32` を再生成、`--check` で整合性確認。
+- デバッガ実機が出力した独立NotepadのDBと同じラベル/コメントJSON構造を採用するが、Vahren.exeへの全件表示成功までは確認していない。
+- 既存のユーザーデータベースを先にバックアップし、ゲームが動作していないときだけ手動でインポートする。手動ラベルとの衝突に注意。
+- 自動でdbloadやゲーム起動はしない。`python -B tools/test_x32dbg_database.py` は隔離したオフラインテスト。

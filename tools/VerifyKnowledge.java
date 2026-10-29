@@ -9,7 +9,7 @@ import ghidra.program.model.data.DataType;
 public class VerifyKnowledge extends GhidraScript {
     @Override public void run() throws Exception {
         long[] addresses = {0x0048D6A0L, 0x00550E70L, 0x0054E7B0L,
-            0x0057B870L, 0x00460000L, 0x005559B0L};
+            0x0057B870L, 0x00460000L, 0x005559B0L, 0x00597960L};
         int found = 0;
         for (long value : addresses) {
             Address a=toAddr(value);
@@ -22,6 +22,13 @@ public class VerifyKnowledge extends GhidraScript {
                value,name,end,kb));
             if (f!=null && kb) found++;
         }
+        Address code=toAddr(0x00419938L);
+        ghidra.program.model.symbol.Symbol codeSymbol =
+            currentProgram.getSymbolTable().getPrimarySymbol(code);
+        String codeComment=getPreComment(code);
+        println("KB_VERIFY code_419938_label="+
+            (codeSymbol==null?"MISSING":codeSymbol.getName())+
+            " comment="+(codeComment!=null && codeComment.contains("【KB】")));
         Address ret=toAddr(0x0048EA5AL);
         int opcode=currentProgram.getMemory().getByte(ret) & 0xff;
         println(String.format("KB_VERIFY battle_ret_opcode=0x%02X expected_C3=%s",

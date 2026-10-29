@@ -52,3 +52,12 @@ python -B tools/test_kb_workflow.py
 python -B tools/build_kb.py --check
 
 CURRENT: この報告は元の研究PCの生成DBを勝手に差し替えたという意味ではない。
+## 2026-10-30追記：新形式DBの独立運用
+
+- knowledge_validation_20261030 は非公開developからの独立Gitクローンで、外部コンテンツFTS5形式の generated/research.sqlite を利用している。
+- 2026-10-30再生成後のDB容量は423,120,896 bytes（403.5MiB）。旧DBは506,351,616 bytes（482.9MiB）。更新後も約16.4%の容量削減。
+- 最新の辞書は365件。候補順位と全文索引が新形式DB上で動作し、検索コマンドと回帰テストを通過した。
+- 研究ROOTの dev_lab/docs を他のAIが更新しているため、索引 --check が変更待ちを返す場合は異常と決めつけず、変更された報告の差分を確認する。
+- 元の knowledge は別AIが独立作業ブランチを使っているため、そこにある旧DBは上書きしていない。
+- 元DBを切り替える場合は、現在作業ブランチの調整、更新済み研究インデクサの反映、旧DBのバックアップとSHA照合、再生成後の整合性確認が前提。
+- GitHubには約400～500MiBのDB本体や原作EXE・DAT・セーブを追加しない。
