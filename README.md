@@ -149,3 +149,15 @@ python -B knowledge\tools\research_index.py --check
 - **確認済みの研究横断入口**: [REF_UNIT_EXP_SUMMON.md](REF_UNIT_EXP_SUMMON.md) と [REF_BATTLE_AI_MORALE.md](REF_BATTLE_AI_MORALE.md)。各項目に元の研究報告を明示し、STATIC/VERIFYとGolden0を保持。
 - PCで全文検索索引を更新した後、研究ROOTで `python -B knowledge/tools/audit_research.py --root . --out knowledge` を実行してメタデータを再生成する。GitHubへは機密・サイズ・所有者・重複を監査した軽量成果だけを同期する。
 - **注意**: GitHub上のTSVは原始本文のバックアップではない。PCオフライン時は参照先未取得を明示し、実機検証なしに確度を上げない。
+
+## Ghidra統合V9との全関数クロスウォーク（2026-10-31）
+
+既存研究の全文検索だけでは未言及の内部関数が見つからないため、統合V9の全関数・ネイティブE8直接CALL・参照・未解決制御フローを研究索引と照合する。
+- 監査レポート：[GHIDRA_V9_COVERAGE_REPORT.md](GHIDRA_V9_COVERAGE_REPORT.md)。資料数と未登録関数数を分けて表示。
+- [GHIDRA_V9_GAPS_TOP500.tsv](GHIDRA_V9_GAPS_TOP500.tsv)：未登録関数の優先調査候補。点数は確度ではなく調査順序。
+- [GHIDRA_V9_UNSTUDIED_CALLED_TOP200.tsv](GHIDRA_V9_UNSTUDIED_CALLED_TOP200.tsv)：研究報告に未言及かつ検証済みCALL元を持つ候補。
+- [GHIDRA_V9_B_REVIEW_TOP150.tsv](GHIDRA_V9_B_REVIEW_TOP150.tsv)：T011/T012/T013/T024/T028の資料に関連する候補。担当Bの正式READYではない。
+- PCローカルの全関数クロスウォーク：knowledge/generated/V9_FUNCTION_CROSSWALK.tsv（Git非追跡、再生成可能）。
+- 実行例（研究ROOTが参照できる専用knowledge worktreeから）：python -B tools/v9_coverage.py --root <研究ROOT> --out <同knowledge worktree> --export
+- 任意アドレスの原作CALL元・CALL先・命令バイトを確かめる：python -B tools/v9_coverage.py --root <研究ROOT> --inspect 0x004496C4
+- 既存V9 SQLiteと元ゲームファイルは一切Gitに含めない。保護アドレス・拒否済み解析の迂回なし。原作Golden PASS/strict MATCHは実機証拠がない限り0。

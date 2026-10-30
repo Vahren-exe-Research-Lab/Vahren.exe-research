@@ -34,3 +34,13 @@ Purpose: give AI a small, trustworthy map without destroying or blindly copying 
 - The old B Library 54-byte-difference set, safety holds and missing 10/25 text remain separate recovery issues; no automatic acceptance.
 - New/edited source files require a fresh read-only index --check and an authorized incremental index run on the PC.
 - A snapshot is not proof of the original game matching a replacement engine; original gameplay Golden remains independently measured.
+
+## Ghidra V9 graph-first workflow (2026-10-31)
+- A-E/REAは研究開始時に既存のsymbols.tsv、V9の関数range・E8 CALL site・Ghidra参照とowner HANDOFFを調査し、同関数の重複研究を避ける。
+- 研究報告で直接触れていない関数も tools/v9_coverage.py で調査対象にする。read-only V9 SQLite・既存research.sqliteから再計算し、元Ghidraプロジェクトを再解析しない。
+- --inspect VA は関数入口でなくても function_range から所有関数を返し、native E8 CALL siteと元命令バイトを8件以内で示す。これはABIの確定やGolden PASSを意味しない。
+- GitHubのGHIDRA_V9_GAPS_TOP500.tsvと分野別TSVは軽量な候補キュー。完全版V9_FUNCTION_CROSSWALK.tsvは研究PCのgenerated/にのみ保存する。
+- 検証を終えた新規関数だけ、元ASM/DATの出典・VA・研究ID・確度・ownerを揃え、symbols.tsvとREF_*へ正式に登録する。自動候補からの無確認昇格を禁止。
+- 収録されない資料を調べる際はGHIDRA_V9_COVERAGE_REPORT.mdの検索対象外理由を確認する。サブディレクトリ、コード形式、3MB超過、バイナリは本文全文索引と別に扱う。
+- 現行Ghidra V9はV8と後発関数を合成したSTATIC索引であり、同名の単一Ghidraプロジェクト全体が完全統合済みという意味ではない。
+- 証拠・辞書・作業ブランチの衝突を優先して中断し、拒否済み範囲の別手段取得は行わない。

@@ -14,6 +14,11 @@
 !/RESEARCH_SOURCE_CATALOG.tsv
 !/RESEARCH_DUPLICATE_CANDIDATES.tsv
 !/RESEARCH_INTEGRATION_SNAPSHOT.md
+!/GHIDRA_V9_COVERAGE_REPORT.md
+!/GHIDRA_V9_AUDIT_RUN_20261031.md
+!/GHIDRA_V9_GAPS_TOP500.tsv
+!/GHIDRA_V9_UNSTUDIED_CALLED_TOP200.tsv
+!/GHIDRA_V9_B_REVIEW_TOP150.tsv
 !/KB_WORKFLOW_125_REPORT_20261029.md
 !/SYMBOLS_EXPANSION_REPORT_20261029.md
 !/SYNC_PROTOCOL.md
@@ -32,6 +37,8 @@
 !/tools/build_kb.py
 !/tools/audit_research.py
 !/tools/test_research_inventory.py
+!/tools/v9_coverage.py
+!/tools/test_v9_coverage.py
 !/tools/check_symbols.py
 !/tools/optimize_research_db.py
 !/tools/rank_candidates.py
