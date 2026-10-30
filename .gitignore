@@ -8,6 +8,12 @@
 !/kb.py
 !/REF_DAT_BEHAVIOR.md
 !/REF_UI_SYSTEM.md
+!/REF_UNIT_EXP_SUMMON.md
+!/REF_BATTLE_AI_MORALE.md
+!/KNOWLEDGE_CURATION_PROTOCOL.md
+!/RESEARCH_SOURCE_CATALOG.tsv
+!/RESEARCH_DUPLICATE_CANDIDATES.tsv
+!/RESEARCH_INTEGRATION_SNAPSHOT.md
 !/KB_WORKFLOW_125_REPORT_20261029.md
 !/SYMBOLS_EXPANSION_REPORT_20261029.md
 !/SYNC_PROTOCOL.md
@@ -24,6 +30,8 @@
 !/tools/build_catalog.bat
 !/tools/build_catalog.py
 !/tools/build_kb.py
+!/tools/audit_research.py
+!/tools/test_research_inventory.py
 !/tools/check_symbols.py
 !/tools/optimize_research_db.py
 !/tools/rank_candidates.py
