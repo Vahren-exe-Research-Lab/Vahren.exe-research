@@ -383,3 +383,6 @@
 
 # ---- 2026-10-31 T011 訓練回数の原作x86 producer（STATICのみ） ----
 0x595320	func	Training_GetEffectiveUpCount	Power+0xD8が非零ならそれを用い、零ならscenario.training_upを参照する訓練基礎回数取得。x86の零→1・負→0正規化を含む。0x472081から呼ばれる。実機結果は未照合。	静的確認	B-20261031-06H-T011-TRAINING-COUNT-PROVENANCE-01; dev_lab/docs/PEER_SCRIPT01_FINDINGS_20261011.md §61/§62.1
+
+# ---- 2026-10-31 REA/T015 Vorbis type3 static mapping (no gameplay Golden) ----
+0x5D4030	func	VorbisComment_Type3_Parse	Ogg/Vorbis type3コメントヘッダのvendor文字列とコメント配列を確保・読取する経路。原作x86ではcalloc後のNULL未検査書込候補があり、OOM実機挙動と上位エラー伝播は未検証。	静的確認	REA-LOCAL-20261031-05H-P0-VORBIS-CALLOC-NULL-GATE-STATIC-01; rea_lab/decomp_task/REA_20261031_05H_P0_VORBIS_CALLOC_NULL_GUARD_STATIC.md
