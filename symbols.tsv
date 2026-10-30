@@ -380,3 +380,6 @@
 # ---- 2026-10-30 領地名取得・表示：保存済み実機根拠 ----
 0x419938	code	SpotName_DrawTextReady	0x597960呼出後の地名描画直前。EAXが文字列先頭、EBPが領地パネル、[EBP+0x1B8]が領地。天竜川上流域と実機一致。	実機確認	dev_lab/_work/v4_hover_20261029/location_name_actual_20261030.json
 0x597960	func	Spot_GetDisplayName	領地と出力文字列をスタックで受け取りret 8。現在の文脈のspot/nameを取得。原作呼出側で天竜川上流域と一致。改名・DLLからの呼出は未確認。	実機確認	dev_lab/docs/DAT_UI_V4_STATUS_PANEL.md 2026-10-30 所在地名の取得経路を実機照合
+
+# ---- 2026-10-31 T011 訓練回数の原作x86 producer（STATICのみ） ----
+0x595320	func	Training_GetEffectiveUpCount	Power+0xD8が非零ならそれを用い、零ならscenario.training_upを参照する訓練基礎回数取得。x86の零→1・負→0正規化を含む。0x472081から呼ばれる。実機結果は未照合。	静的確認	B-20261031-06H-T011-TRAINING-COUNT-PROVENANCE-01; dev_lab/docs/PEER_SCRIPT01_FINDINGS_20261011.md §61/§62.1

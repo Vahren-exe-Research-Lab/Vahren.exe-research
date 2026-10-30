@@ -3,23 +3,23 @@
 This is a metadata inventory, NOT a validation of all research findings.
 GitHub does not contain original game files or the generated search database.
 
-- Indexed research documents: 1787
-- Indexed lines: 1,112,776
-- Indexed VA mentions: 141,508
-- Catalog source receipts: 1787; missing: 0; stale SHA/size: 0; redacted path entries: 0
+- Indexed research documents: 1798
+- Indexed lines: 1,137,517
+- Indexed VA mentions: 141,783
+- Catalog source receipts: 1798; missing: 0; stale SHA/size: 0; redacted path entries: 0
 - Exact-byte duplicate groups: 18, total referenced files: 38
-- Shared-primary-ID candidate groups: 135 (NOT automatically duplicates)
+- Shared-primary-ID candidate groups: 138 (NOT automatically duplicates)
 
 ## Automatic tentative classification
 
 | Category | Indexed sources |
 |---|---:|
 | GOLDEN_QA | 282 |
-| AI_TARGET | 278 |
+| AI_TARGET | 281 |
 | BATTLE_DAMAGE | 233 |
 | SCRIPT_VM | 216 |
 | GHIDRA_INDEX | 179 |
-| UNIT_SKILL_EXP | 163 |
+| UNIT_SKILL_EXP | 171 |
 | MORALE_RETREAT | 98 |
 | UNCLASSIFIED | 89 |
 | STRATEGY | 62 |
