@@ -104,6 +104,9 @@ class CoverageTests(unittest.TestCase):
         self.assertEqual(cv.clean("line\twith\nspaces"), "line with spaces")
         self.assertIsNone(cv.number("Stack[0x4]"))
         self.assertIsNone(cv.number("undefined8"))
+        self.assertEqual(cv.nested_reason(Path("rea_lab/_history_20261029/a.md")),"NESTED_HISTORY_ARCHIVE")
+        self.assertEqual(cv.nested_reason(Path("data/recruit_sort_v4/tests/a.json")),"NESTED_PLUGIN_WORKTREE")
+        self.assertEqual(cv.nested_reason(Path("rea_lab/P0_TAKEOVER_20261024_01/runtime/a.json")),"NESTED_RUNTIME_LOGS")
         self.assertIsNone(cv.number(""))
 
 if __name__=="__main__":

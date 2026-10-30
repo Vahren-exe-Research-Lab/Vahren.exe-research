@@ -175,6 +175,20 @@ def write_tsv(path, fields, rows):
         w.writeheader()
         w.writerows(rows)
 
+def nested_reason(path):
+    parts = path.parts
+    if any("_history_" in segment for segment in parts):
+        return "NESTED_HISTORY_ARCHIVE"
+    if "runtime" in parts or "runs" in parts:
+        return "NESTED_RUNTIME_LOGS"
+    if "P0_TAKEOVER_20261024_01" in parts:
+        return "NESTED_TAKEOVER_RESEARCH"
+    if "normalized" in parts or "source_snapshot" in parts:
+        return "NESTED_SOURCE_SNAPSHOT"
+    if "recruit_sort_v4" in parts:
+        return "NESTED_PLUGIN_WORKTREE"
+    return "NESTED_MANUAL_REVIEW"
+
 def corpus_inventory(root, indexed):
     groups = []
     reasons = Counter()
@@ -206,7 +220,7 @@ def corpus_inventory(root, indexed):
                     elif size > INDEX_MAX:
                         reasons["LARGE_FILE_LIMIT"] += 1
                     elif rel != "tests" and p.parent != start:
-                        reasons["NESTED_OUTSIDE_SEARCH_SCOPE"] += 1
+                        reasons[nested_reason(p)] += 1
                     elif "_history_" in p.parts:
                         reasons["EXCLUDED_HISTORY"] += 1
                     else:
@@ -301,6 +315,7 @@ def emit(root, out, data, rows, candidates):
                "- The research index can include additional root/knowledge documents beyond these folders.",
                "- Many Ghidra files are generated data, not individually useful findings.",
                "- Unindexed does not necessarily mean missing: source-code and large-file exclusions are intentional.",
+               "- Nested files are classified without copying them; archive, original snapshot, runtime traces, and plugin work require independent review before any full-text inclusion.",
                "", "### Search-index scope audit", "",
                "| Reason | Files |", "|---|---:|"]
     report += [f"| {key} | {count:,} |" for key,count in sorted(reasons.items())]

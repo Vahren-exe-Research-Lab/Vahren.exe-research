@@ -44,3 +44,4 @@ Purpose: give AI a small, trustworthy map without destroying or blindly copying 
 - 収録されない資料を調べる際はGHIDRA_V9_COVERAGE_REPORT.mdの検索対象外理由を確認する。サブディレクトリ、コード形式、3MB超過、バイナリは本文全文索引と別に扱う。
 - 現行Ghidra V9はV8と後発関数を合成したSTATIC索引であり、同名の単一Ghidraプロジェクト全体が完全統合済みという意味ではない。
 - 証拠・辞書・作業ブランチの衝突を優先して中断し、拒否済み範囲の別手段取得は行わない。
+- Nested 799-file metadata audit (2026-10-31): archives 206, plugin work 321, takeover research 180, snapshots 52, runtime 31, manual review 9. Preserve shallow indexing by default; review the nine individually and eligible takeover summaries before opting into any recursive search. Never bulk-import original snapshots/runtime logs or overwrite owner data.

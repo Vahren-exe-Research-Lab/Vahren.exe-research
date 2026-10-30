@@ -47,6 +47,7 @@ the analysis does NOT hash or copy all binary Ghidra outputs.
 - The research index can include additional root/knowledge documents beyond these folders.
 - Many Ghidra files are generated data, not individually useful findings.
 - Unindexed does not necessarily mean missing: source-code and large-file exclusions are intentional.
+- Nested files are classified without copying them; archive, original snapshot, runtime traces, and plugin work require independent review before any full-text inclusion.
 
 ### Search-index scope audit
 
@@ -55,7 +56,12 @@ the analysis does NOT hash or copy all binary Ghidra outputs.
 | CODE_OR_UNSUPPORTED_EXTENSION | 1,234 |
 | INDEXED | 1,779 |
 | LARGE_FILE_LIMIT | 5 |
-| NESTED_OUTSIDE_SEARCH_SCOPE | 799 |
+| NESTED_HISTORY_ARCHIVE | 206 |
+| NESTED_MANUAL_REVIEW | 9 |
+| NESTED_PLUGIN_WORKTREE | 321 |
+| NESTED_RUNTIME_LOGS | 31 |
+| NESTED_SOURCE_SNAPSHOT | 52 |
+| NESTED_TAKEOVER_RESEARCH | 180 |
 
 ## Important unregistered V9 candidates (metadata only)
 
