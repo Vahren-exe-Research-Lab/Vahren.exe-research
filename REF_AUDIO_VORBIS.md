@@ -3,6 +3,19 @@
 Scope: original ver0.67 PE SHA256 `E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187`; composite V9 SHA256 `2629CB2F03ECEC9927E89892C77F847E4CDBA381AB718825C1CA8CFEEEF00EDE`.
 All findings below are bounded original-x86 **STATIC**. Branch reachability under real allocation failure, ABI, crash behavior, recovery, and observed gameplay remain **VERIFY**. Original-game Golden PASS **0**, strict MATCH **0**; owner READY **0**.
 
+## Vorbis native ownership map (quick reference; static only)
+
+| Area / native route | Owner evidence | Scope boundary |
+|---|---|---|
+| Header type and errors: `0x5D44C0`, parent `0x5CF010` | REA 02H–05H | Error codes depend on which parent path |
+| Header setup / wrapper `0x5D57C0 -> 0x5D5BD0 -> 0x5D4D20` | REA 12H–16H | Post-init -1 is discarded in this wrapper; its real reachability is VERIFY |
+| Slot allocation: `0x5D4900 -> 0x5E6C70` | REA 16H–17H | 15 slots: embedded index7, heap slots14; OOM untested |
+| Buffer growth: `0x5D4980`; caller `0x5E06C0` | REA 20H–21H | Aligned capacity and conditional pointer use, ABI/invariants UNKNOWN |
+| Saved-buffer list / realloc: `0x5D49F0`; teardown `0x5D4A60 -> 0x5E6CA0` | REA 18H–19H | Conditional leak / invalid-read prerequisites are not measured faults |
+
+Never collapse the different conditional allocation findings into one proven crash chain. The 16H final auxiliary hash/list/lock SAFETY_REFUSAL remains blocked; its earlier valid independent readback is distinct. The original game has not been run for a Golden result.
+
+
 ## 1. Parent header-error mapping (04H, not another router discovery)
 - `0x005CF010` calls header router `0x005D44C0` at `0x005CF167` and `0x005CF279`. The first call's nonzero result goes through `0x005CF1E9` (`EDI=-133`) and cleanup, masking the specific router error; the second preserves its return value in `EDI` and returns it through `0x005CF206`. Do not assume all Ogg header errors retain their original code.
 - Both branches converge on native cleanup calls `0x005CF1F2 -> 0x005D3DE0`, `0x005CF1FB -> 0x005D3D00`, with state `outer+0x58=2` at `0x005CF20A`. Separate packet-I/O error paths must not be attributed to router behavior.
@@ -113,3 +126,17 @@ All findings below are bounded original-x86 **STATIC**. Branch reachability unde
 
 ## 20. Independent bounded-source curation receipt / unresolved acceptance
 - Bounded original PE full SHA and 24/24 REA 13H–18H SHA windows matched independently; relevant direct E8 sites were also cross-checked. All six REA research IDs remain **STATIC / INFERRED / VERIFY / NOT READY** and original-game Golden PASS **0**, strict MATCH **0**, formal new 5-method completion **0**. Predecessor 00H–12H findings above remain independent but are not recounted. The shallow full-text search excludes `rea_lab/decomp_task/` by design; links to owner reports provide provenance, not recursive ingestion of native assets or local logs. Recheck parent/slot lifetime, error paths and the 16H refusal under authorized owner conditions; never treat a missing NULL check as proof of an observed crash.
+
+## 21. Side-list maintenance: independent realloc owner-loss condition (REA 19H)
+- ID `REA-LOCAL-20261031-19H-P0-VORBIS-REALLOC-OWNER-LOSS-STATIC-01` (REA/T015), source `rea_lab/decomp_task/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATIC.md` and its EVIDENCE.json. Original x86 `0x5D49F0..0x5D4A52` frees a saved linked list, clears `outer+0x54/+0x48`, and calls CRT realloc `0x5C30BE` at `0x5D4A34` **only when** `outer+0x50 != 0`. Then `0x5D4A39` overwrites `outer+0x44` with returned EAX **without checking it**. Teardown `0x5D4A60` checks only this updated pointer before further free.
+- Under the simultaneous assumptions of a positive requested realloc size, previous nonNULL unique owner pointer, final realloc failure, and no retained alias, this static overwrite can lose the old allocation owner. **Size-zero realloc is different:** the native CRT can free the prior pointer and return NULL normally. Original game allocation failure, real leak/crash and security effects were not reproduced. The 18H slot-destructor findings are not recounted. Independent source PE windows **3/3**; owner audit **47/47**, readback **43/43** (static).
+
+## 22. Growth producer: aligned requests, saved old-use count, pointer guards (REA 20H)
+- ID `REA-LOCAL-20261031-20H-P0-VORBIS-GROWTH-NODE-GATE-STATIC-01`, source `rea_lab/decomp_task/REA_20261031_20H_P0_VORBIS_GROWTH_NODE_GATE_STATIC.md` with EVIDENCE.json. Function `0x5D4980` aligns request `(size+7)&~7` and uses a **signed JLE** check on `outer+0x48 + alignedSize` versus capacity `outer+0x4C`. When growth is needed and old `outer+0x44` is nonNULL, `0x5D49A5` calls malloc(8) for a list node and `0x5D49B3/0x5D49B9` write through the result without a local NULL guard.
+- In this growth branch, `outer+0x50` accumulates the **previous used-byte count** (not capacity), feeding the 19H realloc/cleanup condition. `0x5D49C2` allocates the new aligned buffer, `0x5D49CA` stores its result to `outer+0x44` without local NULL test, and `outer+0x48` resets to zero. Actual ultimate malloc failure, signed overflow, branch/input feasibility and exact ABI remain VERIFY; no measured game fault. Original PE source windows **2/2** (one predecessor window already known); owner audit **49/49**, formal REA five-method new complete **0**.
+
+## 23. Caller contract: growth return held before conditional write (REA 21H)
+- ID `REA-LOCAL-20261031-21H-P0-VORBIS-GROWTH-CALLER-DEREFERENCE-STATIC-01`, source `rea_lab/decomp_task/REA_20261031_21H_P0_VORBIS_ALLOC_CALLER_STATIC.md` and EVIDENCE.json. All **21 native direct E8 call sites** to `0x5D4980` were independently matched: these represent call sites, **not 21 newly discovered independent semantics**. For example, `0x5E06C0` calls growth at `0x5E072A` under count/param gates, saves EAX to a stack-array slot at `0x5E072F` without a local NULL test, and only later after other bounds/sentinel gates may write through this saved pointer at `0x5E079C/0x5E07A2`. Separate `0x5D45E0` writes the results of `0x5D471B/0x5D4739` growth calls into pointer slots; callers' complete constraints are unknown.
+- The two `idiv` operations in `0x5E06C0` did not have a locally observed denominator-zero check. This is only a **VERIFY lead**, not an assertion that zero is reachable. Input invariants, allocator handler final outcomes, error propagation, actual dereference, game crash and exploitability are not established. Original PE windows **5/5** and owner static audit **86/86**, formal new READY **0**.
+- **Cross-REA chain / correction control**: `0x5D4980` (grow and move old buffer to temporary list) -> `0x5D49F0` (list cleanup and optional realloc) -> `0x5D4A60` (teardown including 15 slots), with caller `0x5E06C0` receiving grow's returned pointer. The 19H owner-loss, 20H failed node allocation, 21H later consumer, and 17–18H null-slot teardown are **different conditional questions**, not one demonstrated crash chain. All results remain STATIC/INFERRED/VERIFY/NOT READY and original-game Golden PASS **0**, strict MATCH **0**.
+- **Independent curator receipt**: original unmodified PE full SHA matched, REA 19–21H 10/10 bounded byte-window SHA matched, and the examined native direct E8 sites matched (21 REA21 caller sites included). The older 16H extra PowerShell hash/list/lock SAFETY_REFUSAL remains BLOCKED and was not retried, while earlier valid 16H evidence remains unchanged. No source EXE, DAT, save, ZIP, large Ghidra DB, or original owner file is copied into GitHub.

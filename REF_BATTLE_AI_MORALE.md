@@ -4,6 +4,19 @@ Target: ver0.67 original PE SHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C057
 All native statements are STATIC; simulation and original-game behavior remain VERIFY until independently observed.
 Original gameplay Golden PASS=0, strict MATCH=0. No B result below is newly promoted to READY.
 
+## AI rapid source map (B12–21 crosswalk; NOT end-to-end target proof)
+
+| Verified native part | Addresses / fields | Curated provenance | Do not infer |
+|---|---|---|---|
+| Script-owned candidate list register/remove | `0x4A7A90 -> 0x574D70/0x574E30`, `Unit+0x18650/+0x18654` | B20 | Actual DAT command or complete alias/writer coverage |
+| Candidate category and score/rank | `0x449500`, `0x448E90`, mode2 `+0xA0C` / others `+0xA10` | B04, B12, B13 erratum | Adjacent-tie model; B13 uses fixed ANCHOR |
+| Per-candidate RNG penalty/bonus | `0x57A7D0` writes `candidate+0xA14` | B19 | B18's `record+0x28` is a DIFFERENT field |
+| Record creation and merge | `0x5A3DF0 -> 0x579EB0 -> 0x57A830 -> 0x5A3EA0`, splice `0x4C5800` | B15–18 | Final selected target, ABI, original-game timing |
+| Head-to-sentinel or two-value output | `0x57DD10`, `Unit+0x186C8/CC`; adjacent `0x577600` | B21 | Coordinates/attack destination meaning or completed movement |
+
+**Evidence rule:** a direct E8 site is an ASM relationship, not execution proof. `0x57DED8 -> 0x543DE0` is an **E9 tail JMP**. STATIC ≠ READY; unmodified-game Golden PASS0 / strict MATCH0. B20 corrects unsigned `(0x3FFFFFFE-count)>=1` in place of the abbreviated V9 equality description. Follow the dated owner IDs in the detailed sections below, and preserve old B HOLD21 and 10/25 gaps.
+
+
 ## T012 Damage and healing context
 - Native context loader treats raw damage_max, damage_min, damage_max2, damage_min2 == 0 as a sentinel preserving compiled effective defaults, not as literal zero-percent damage.
 - Listed PE defaults: damage_max=1.2, damage_min=0.8, damage_max2=1.0, damage_min2=0.6.
@@ -94,3 +107,18 @@ Original gameplay Golden PASS=0, strict MATCH=0. No B result below is newly prom
 - Research ID `B-20261031-19H-T013-CANDIDATE-A14-PER-NODE-RNG-01` (owner B/T013), original report `data/T013_CANDIDATE_A14_PER_NODE_RANDOM_SCORE_NATIVE_20261031_19H.md` and source-specific probe. Native `0x577AA7/0x577D47 -> 0x57A7D0` traverses nonempty linked candidate list; for each node `0x57A7E3 -> 0x5B6EAB` draws RNG, `0x57A7FC -> 0x5D1B80` converts after multiplying original constants `1/32768` and `-8.0`, then `0x57A808` writes candidate `+0xA14 = -4 - ftol(rand * -8/32768)`. Under a normal truncation-toward-zero 0..32767 rand path this implies -4..+3; actual FP control and distribution are **INFERRED/VERIFY**. The loop skips draws when source list is empty.
 - **Correction of possible overgeneralization**: B18 established only that `context/record+0x28` is not **directly read** by the `0x5A3EA0` comparator. B19 proves a *different* RNG-derived candidate field, `+0xA14`, is directly added when the candidate's mode-dependent base score exceeds signed sentinel `0x80000065`. Thus RNG can influence comparator ordering under those conditions; it is incorrect to conclude the sort is RNG-independent. Whether changed scores change actual selected enemy, result/tick or visible gameplay remains VERIFY. Prior B16 comparator `+0xA14` mention and B15 producer `record+0x28` are not recounted as new findings.
 - Independent original PE proof: B19 has 4/4 bounded end-exclusive SHA windows and 4/4 direct E8 targets matched, full original PE hash matched. This extends the B15–18 receipt (24/24 windows with the B16 inclusive-end correction) to **B15–19 24/24 bounded windows**, with **18/18 matched examined direct E8 sites**. Original gameplay Golden PASS 0, strict MATCH 0, B READY 0. Remaining critical gaps are the actual `Unit+0x18654` writer, priority sentinel edge behavior, per-node RNG draw order and final target consumer.
+
+## T013 candidate-list lifecycle: script registration/removal and head consumers (B 20H–21H)
+
+### B20: list count writer and unlink, not a proven attack command
+- Source: B/T013 ID `B-20261031-20H-T013-UNIT18654-LIST-WRITER-REMOVE-01`, `data/T013_UNIT18654_LIST_WRITER_ERASE_NATIVE_20261031_20H.md`, file SHA256 `29E577D5E43D9AD047B211F42AAD20BB80ED813C69BC8B4177CD2072AE1FE05B`. The original PE SHA at this REF's top matched independently; native windows for `0x574D70` (187B) and `0x574E30` (186B) matched **2/2**.
+- The World script dispatcher `0x4A7A90` directly calls `0x574D70` at `0x4AB946` and `0x574E30` at `0x4ABF81`, original direct E8 **2/2 matched**. `0x574D70` increments `Unit+0x18654` and connects a list node; `0x574E30` unlinks a matching element and decrements `Unit+0x18654` at `0x574EAC`. The existing `0x56F880` initializes the related count/head; the previously curated `0x579EB0` consumes the list.
+- **ASM-versus-V9 precision**: the insert gate at `0x574DDD..0x574DE0` is unsigned `(0x3FFFFFFE-count) >= 1`, not merely a universal equality check. Under the ordinary valid-list invariant it blocks a full list; for an already-invalid count above the cap, unsigned wrap may pass. No proof of reachable corruption, guaranteed overflow safety, a concrete DAT command or a game-specific Unit cap.
+- Independent E/T020 source crosscheck `E-AUDIT-20261031-20H-T020-T013-SCRIPT-LIST-COUNTER-GATE-01` models 704 synthetic operation sequences; **704/704 are conditional synthetic**, not original-game or new B READY. The 19H candidate+0xA14 RNG discovery and B15–18 merge/readers are antecedents, not new discoveries.
+
+### B21: first candidate head to sentinel/coordinate branch, NOT a final target
+- Source: B/T013 ID `B-20261031-21H-T013-FIRST-NODE-SENTINEL-TO-COORD-01`, `data/T013_FIRST_HEAD_SENTINEL_COORD_BRANCH_NATIVE_20261031_21H.md`, file SHA256 `28B10830EDA389B377A9FFCEBEB28A21C87297A2382CCCF2E8ACB85B0DA89D29`. Independently matched original-PE windows `0x57DD10` 461B and `0x577600` 1043B (**2/2**).
+- In `0x57DD10`, `Unit+0x18654 == 0` returns locally. With a nonempty list, the head node's candidate is inspected. Candidate `+0x40==1` **or** byte `+0x26D!=0` enters a branch writing sentinel `0x80000008` to both `Unit+0x186CC` and `Unit+0x186C8`. Another branch after `0x57DE95 -> 0x4C1860` with true AL writes the current ESI/EBP pair to `+0x186C8/+0x186CC`, invokes `0x576660`, and tail-jumps `0x543DE0` at `0x57DED8`. ESI/EBP source meaning, reachable branch combinations and final target remain VERIFY.
+- The adjacent `0x577600` reader has count-zero and nonzero local paths, including `0x5779CD -> 0x576450` and conditional `Unit+0x18638/+0x1863C` updates. B20 already identified it as a count reader; B21's new delta is the deeper branch-and-write structure. The older `Unit+0x186D4` sentinel must not be confused with `Unit+0x186C8/+0x186CC` just because both may contain `0x80000008`.
+- Independently checked E8: `0x545C6E/0x57B339 -> 0x57DD10`, `0x57DE95 -> 0x4C1860`, `0x57DECB -> 0x576660`, `0x5779CD -> 0x576450`, and native **E9 JMP** `0x57DED8 -> 0x543DE0`; never count the E9 as CALL. Independent E/T020 `E-AUDIT-20261031-21H-T020-T013-HEAD-SENTINEL-COORD-GATE-01` has **192/192 synthetic branch fixtures**, not game Golden.
+- **Status and next**: local x86 source bytes and specified control branches are STATIC; names for the two values, downstream state lifetime, script command discrimination, list alias/indirect writers and actual target selection are INFERRED/VERIFY. Original-game Golden PASS **0**, strict MATCH **0**, DYNAMIC **0**, B READY **0**. Check `0x4AB946/0x4ABF81` command discriminator, `0x577600/0x57DD10` downstream consumers and legal same-run unmodified-original gameplay; keep HOLD21, prior refusals and forbidden VA outside analysis.

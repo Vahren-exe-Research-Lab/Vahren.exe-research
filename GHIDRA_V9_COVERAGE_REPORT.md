@@ -17,14 +17,14 @@ V9 SHA256 (local readback): 2629CB2F03ECEC9927E89892C77F847E4CDBA381AB718825C1CA
 - Unresolved control-flow site records: **5,145**
 - V9 internal functions: **11,762**
 - Internal functions with protected-range overlap, excluded: **1**
-- Entries with a curated symbols.tsv address: **296**
-- Function entries cited in indexed reports: **2,752**
-- Function entries linked to focused source reports: **2,602**
-- Internal entries without an indexed report: **9,009**
+- Entries with a curated symbols.tsv address: **303**
+- Function entries cited in indexed reports: **2,754**
+- Function entries linked to focused source reports: **2,604**
+- Internal entries without an indexed report: **9,007**
 - Functions owning unresolved control-flow records: **995**
-- Unregistered + called + not cited in reports: **1,204**
+- Unregistered + called + not cited in reports: **1,201**
 - Unregistered runtime-helper hints excluded from priority queue: **405**
-- Unregistered gap priority entries: **11,060**
+- Unregistered gap priority entries: **11,053**
 
 ## Corpus size and search-index gap
 
@@ -33,17 +33,17 @@ the analysis does NOT hash or copy all binary Ghidra outputs.
 
 | Folder | Files | Text-like | Indexed text | Stored bytes |
 |---|---:|---:|---:|---:|
-| data | 5,094 | 1,015 | 558 | 1,340,997,192 |
+| data | 5,099 | 1,019 | 560 | 1,341,020,059 |
 | exe | 842 | 842 | 419 | 14,411,898 |
-| evidence | 172 | 159 | 117 | 13,761,143 |
+| evidence | 172 | 159 | 117 | 13,770,074 |
 | exp_research_20261021 | 68 | 66 | 39 | 1,348,265 |
-| tests | 565 | 565 | 392 | 5,014,266 |
+| tests | 576 | 576 | 400 | 5,873,378 |
 | wiki | 149 | 148 | 67 | 13,008,437 |
 | rea_lab/headless_analysis/search_index | 15,620 | 1,045 | 194 | 4,341,486,839 |
-| dev_lab/docs | 53 | 53 | 50 | 2,665,508 |
+| dev_lab/docs | 53 | 53 | 50 | 2,666,786 |
 
-- Listed corpus files: 22,563; total bytes: 5,732,693,548.
-- Text-like files: 3,893; present in research index: 1,836.
+- Listed corpus files: 22,579; total bytes: 5,733,585,736.
+- Text-like files: 3,908; present in research index: 1,846.
 - The research index can include additional root/knowledge documents beyond these folders.
 - Many Ghidra files are generated data, not individually useful findings.
 - Unindexed does not necessarily mean missing: source-code and large-file exclusions are intentional.
@@ -53,8 +53,8 @@ the analysis does NOT hash or copy all binary Ghidra outputs.
 
 | Reason | Files |
 |---|---:|
-| CODE_OR_UNSUPPORTED_EXTENSION | 1,253 |
-| INDEXED | 1,836 |
+| CODE_OR_UNSUPPORTED_EXTENSION | 1,258 |
+| INDEXED | 1,846 |
 | LARGE_FILE_LIMIT | 5 |
 | NESTED_HISTORY_ARCHIVE | 206 |
 | NESTED_MANUAL_REVIEW | 9 |

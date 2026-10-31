@@ -2,6 +2,21 @@
 
 迫真戦記 ver0.67 の解析で**分かったこと**を、作業日誌とは別に、引ける形でまとめたもの。2026-10-29 Claude が作成。
 
+## AI向け最短導線（新旧レーンの重複研究防止）
+
+最初に `KNOWLEDGE_CURATION_PROTOCOL.md` と `SYNC_STATUS.md`、最新のGitHub PRIVATE `develop` を確認し、**他の作業ブランチを切り替えない**。原作を伴う確認は認可済み研究PCの `MASTER_LEDGER.md`・各レーンHANDOFF・原作実SHAへ戻る。
+
+| 知りたいこと | 最初の入口 | 追加検証 |
+|---|---|---|
+| VA/機能/構造体 | `symbols.tsv`, `structs.tsv`, `kb.py addr/struct/docs` | `REF_*.md`の研究ID・訂正履歴・owner・原本SHA |
+| 戦闘AIの候補生成→ソート→ヘッド分岐 | `REF_BATTLE_AI_MORALE.md` 冒頭の source map | B/T013 12〜21H：`+0xA14` と `record+0x28` を混同しない |
+| Vorbisの初期化・成長・解放 | `REF_AUDIO_VORBIS.md` 冒頭の ownership map | REA/T015の各元ASM窓、OOM/脆弱性/Golden未検証を維持 |
+| 未登録・未言及のV9関数 | `GHIDRA_V9_COVERAGE_REPORT.md` と軽量候補TSV | `tools/v9_coverage.py --root <研究ROOT> --inspect VA` は読取専用 |
+| 最新研究資料の所在と重複 | `RESEARCH_SOURCE_CATALOG.tsv`, `RESEARCH_DUPLICATE_CANDIDATES.tsv` | 元本文・SHA・研究IDを再照合。metadataを発見やREADYに換算しない |
+
+**数値はスナップショット**です。調査時には現物の `research_index.py --check`、`audit_research.py`、隔離した `v9_coverage.py` で再計算する。A〜E/REAは所有範囲内のみ編集し、共有KBの新規辞書反映は専任統合担当だけが許可された隔離worktreeで実行。原本/生成DBはGitHubに入れず、HOLD・禁止VA・拒否済み操作を回避しない。Golden PASS/strict MATCHは実原作実機の対照が無ければ0。
+
+
 ## 読むもの
 
 | ファイル | 中身 |
