@@ -386,3 +386,9 @@
 
 # ---- 2026-10-31 REA/T015 Vorbis type3 static mapping (no gameplay Golden) ----
 0x5D4030	func	VorbisComment_Type3_Parse	Ogg/Vorbis type3コメントヘッダのvendor文字列とコメント配列を確保・読取する経路。原作x86ではcalloc後のNULL未検査書込候補があり、OOM実機挙動と上位エラー伝播は未検証。	静的確認	REA-LOCAL-20261031-05H-P0-VORBIS-CALLOC-NULL-GATE-STATIC-01; rea_lab/decomp_task/REA_20261031_05H_P0_VORBIS_CALLOC_NULL_GUARD_STATIC.md
+
+# ---- 2026-10-31 B/T011,T013 and REA/T015 verified bounded x86; no gameplay Golden ----
+0x4DEF40	func	TreeRangeErase_FullOrPartial	全区間条件なら0x4ED030 bulk erase、それ以外は0x4DEC70 partial node eraseへ分岐する汎用tree helper。T011訓練メモから呼ばれるが他用途や例外ABIは未確証。	静的確認	B-20261031-09H-T011-TRAINING-CACHE-BULK-ERASE-NATIVE-01; data/T011_TRAINING_CACHE_FULL_RANGE_ERASE_NATIVE_20261031_09H.md
+0x448E90	func	T013_ModeScoreRankPass	mode2ならcandidate+0xA0C、それ以外は+0xA10を比較子に渡し順位値を更新する原作x86。最終targetやsort ABIは未確認。	静的確認	B-20261031-12H-T013-DUAL-SCORE-COMPARATORS-01; data/T013_DUAL_SCORE_RANK_FIELD_NATIVE_20261031_12H.md
+0x5D3DE0	func	Vorbis_InnerStateCleanup	Vorbis内部状態のcodebookとlook保有領域を順に解放して親slotをゼロ化。alias・異常系での安全性は未証明。	静的確認	REA-LOCAL-20261031-10H-P0-VORBIS-CODEBOOK-OWNERSHIP-TEARDOWN-STATIC-01; rea_lab/decomp_task/REA_20261031_10H_P0_VORBIS_CODEBOOK_OWNER_STATIC.md
+0x5DA070	func	VorbisLookRecord_Convert	0x38-byte lookレコードを初期化しcodebookから変換する。初回確保NULL gateと後続4確保の非対称を持つが実到達・ABIは未確定。	静的確認	REA-LOCAL-20261031-11H-P0-VORBIS-LOOK-CONVERSION-ALLOCATION-GATES-STATIC-01; rea_lab/decomp_task/REA_20261031_11H_P0_VORBIS_LOOK_CONVERSION_STATIC.md

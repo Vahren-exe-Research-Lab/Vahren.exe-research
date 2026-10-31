@@ -147,7 +147,7 @@ python -B knowledge\tools\research_index.py --check
 - **全研究のメタデータ一覧**: [RESEARCH_SOURCE_CATALOG.tsv](RESEARCH_SOURCE_CATALOG.tsv)。PC研究本文から生成した相対パス・SHA256・タスク/分野の仮分類。原始証拠の移動や削除は行わない。
 - **重複・矛盾の検査入口**: [RESEARCH_DUPLICATE_CANDIDATES.tsv](RESEARCH_DUPLICATE_CANDIDATES.tsv)。SHA完全一致と研究ID共有は分離し、根拠がない限り統合・削除しない。
 - **分類別の規模・未検証範囲**: [RESEARCH_INTEGRATION_SNAPSHOT.md](RESEARCH_INTEGRATION_SNAPSHOT.md)。分類はHEURISTICであり正式のOWNER/READYに昇格しない。
-- **確認済みの研究横断入口**: [REF_UNIT_EXP_SUMMON.md](REF_UNIT_EXP_SUMMON.md) と [REF_BATTLE_AI_MORALE.md](REF_BATTLE_AI_MORALE.md)。各項目に元の研究報告を明示し、STATIC/VERIFYとGolden0を保持。
+- **分野別の研究横断入口**: [REF_UNIT_EXP_SUMMON.md](REF_UNIT_EXP_SUMMON.md)（ユニット・EXP・訓練）、[REF_BATTLE_AI_MORALE.md](REF_BATTLE_AI_MORALE.md)（戦闘・AI・士気）、[REF_AUDIO_VORBIS.md](REF_AUDIO_VORBIS.md)（Ogg/Vorbis構造・メモリ所有権）。各項目は元の研究ID・原作根拠を示し、STATIC/INFERRED/VERIFYとGolden0を区別。
 - PCで全文検索索引を更新した後、研究ROOTで `python -B knowledge/tools/audit_research.py --root . --out knowledge` を実行してメタデータを再生成する。GitHubへは機密・サイズ・所有者・重複を監査した軽量成果だけを同期する。
 - **注意**: GitHub上のTSVは原始本文のバックアップではない。PCオフライン時は参照先未取得を明示し、実機検証なしに確度を上げない。
 
@@ -159,6 +159,6 @@ python -B knowledge\tools\research_index.py --check
 - [GHIDRA_V9_UNSTUDIED_CALLED_TOP200.tsv](GHIDRA_V9_UNSTUDIED_CALLED_TOP200.tsv)：研究報告に未言及かつ検証済みCALL元を持つ候補。
 - [GHIDRA_V9_B_REVIEW_TOP150.tsv](GHIDRA_V9_B_REVIEW_TOP150.tsv)：T011/T012/T013/T024/T028の資料に関連する候補。担当Bの正式READYではない。
 - PCローカルの全関数クロスウォーク：knowledge/generated/V9_FUNCTION_CROSSWALK.tsv（Git非追跡、再生成可能）。
-- 実行例（研究ROOTが参照できる専用knowledge worktreeから）：python -B tools/v9_coverage.py --root <研究ROOT> --out <同knowledge worktree> --export
+- 実行例（研究ROOTが参照できる専用knowledge worktreeから）：python -B tools/v9_coverage.py --root <研究ROOT> --out <同knowledge worktree> --symbols <隔離worktree>/symbols.tsv --export。`--symbols` は最新の隔離KB辞書を読むため、他者が作業中の研究ROOT直下knowledge/symbols.tsvに依存せず、V9候補の重複を再計算する。省略時は従来の研究ROOTを読む。
 - 任意アドレスの原作CALL元・CALL先・命令バイトを確かめる：python -B tools/v9_coverage.py --root <研究ROOT> --inspect 0x004496C4
 - 既存V9 SQLiteと元ゲームファイルは一切Gitに含めない。保護アドレス・拒否済み解析の迂回なし。原作Golden PASS/strict MATCHは実機証拠がない限り0。

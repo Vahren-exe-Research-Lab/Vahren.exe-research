@@ -58,7 +58,7 @@ def protected_members(c):
             denied.add(number(owner))
     return denied
 
-def load(root):
+def load(root, symbols_path=None):
     root = Path(root)
     c = ro(root/V9_REL)
     functions = {}
@@ -117,7 +117,7 @@ def load(root):
         docinfo[number(va)] = (int(n_docs), int(mentions), clean(sample), int(focused))
     indexed_paths = {r[0] for r in d.execute("SELECT path FROM docs")}
     d.close()
-    named = known_symbols(root/"knowledge/symbols.tsv")
+    named = known_symbols(Path(symbols_path) if symbols_path else root/"knowledge/symbols.tsv")
     digest = hashlib.sha256()
     with (root/V9_REL).open("rb") as source:
         for block in iter(lambda: source.read(4*1024*1024),b""):
@@ -417,11 +417,12 @@ def main(argv=None):
     a.add_argument("--out", type=Path)
     a.add_argument("--export", action="store_true")
     a.add_argument("--inspect")
+    a.add_argument("--symbols", type=Path, help="isolated KB symbols.tsv (default: research root)")
     args = a.parse_args(argv)
     if args.export == bool(args.inspect):
         a.error("Use exactly one of --export or --inspect")
     root = args.root.resolve()
-    data = load(root)
+    data = load(root, args.symbols)
     if args.inspect:
         return inspect(data, args.inspect)
     if not args.out:

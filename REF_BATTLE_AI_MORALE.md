@@ -42,3 +42,15 @@ Original gameplay Golden PASS=0, strict MATCH=0. No B result below is newly prom
 - Require same-run original EXE/DAT/SAVE/MAP/input/RNG and observed target, HP/status, Unit fields, tactics and next tick before marking Golden PASS.
 - Keep failed/safety-refused evidence and unresolved 10/25 research recovery separate from verified conclusions.
 - Work from the original referenced reports and index if any later correction contradicts this summary.
+
+## T013 mode3の入力元とcategory分岐（B 05H）
+- 原作x86 0x44C72BでEBX=3を設定しmanager+0x20へ保存。0x44C76C..0x44C76Eで同値を引数候補として0x449500に渡す。前段の仮想呼出がEBXを保持する前提と実行中の到達・効果はVERIFY。
+- 0x449500ではUnit配列空なら更新なし。非空でmanager+0x98が10以下ならcategory 3→6、更にgroup flag等の条件で6→7となる。push/advance/evenは既知ラベルで最終的な移動・攻撃先を意味しない。
+- Owner/source: B/T013、B-20261031-05H-T013-EBX3-INPUT-01、data/T013_MODE3_EBX_CATEGORY_PRODUCER_NATIVE_20261031_05H.md。旧04Hのcategory表やwriter経路は重複計上しない。STATIC/INFERRED/VERIFY/NOT READY。
+
+## T013 候補scoreの2欄・signed比較と順位値（B 12H）
+- V9 function 0x448E90はmode==2でcandidate+0xA0C、それ以外でcandidate+0xA10を選び、0x448FBFで選択スコア欄を0にする。candidate+0x40==3なら後続score枝をskip。型とmode正式名はVERIFY。
+- 0x448F84/0x44926Eはそれぞれ原作の直接命令列0x447240/0x447260をcallbackとしてpushし、0x449276→0x47BB50へ渡す。両callbackは対応するscore欄をsigned CMP→SETGしてRET。2入口はV9独立function一覧にないが原作bytesは存在する。0x47BB50のsort・callback ABIはVERIFY。
+- 0x449280以降は順位基準10000、スコア変化時の減算、signed低閾値以下の書戻しskip。これだけで最終targetや安定sortを確定しない。
+- Owner/source: B/T013、B-20261031-12H-T013-DUAL-SCORE-COMPARATORS-01、data/T013_DUAL_SCORE_RANK_FIELD_NATIVE_20261031_12H.md。原作PE-window SHA256: 比較子0x447240..0x44727A = A69CBAFBFE589DA7988FB807B026B8CACC7D30E9FA9FF007DC1B10B9FF72F331; score reset0x448FA6..0x448FC9 = 9FDB45530E09C4595B54A6DC37083283B4EE812C1B97866B7E6A4D91C6892EDF。
+- native ASM/bytesはSTATIC、候補順位・target意味はINFERRED/VERIFY、DYNAMICなし。原作Gameplay Golden PASS=0、strict MATCH=0、B READY増分0。旧category研究やT011 treeを新発見として再計上しない。

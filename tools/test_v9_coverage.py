@@ -54,6 +54,20 @@ def fixture(root):
         "0x0046F4C0\tfunc\tConfig_Get\tGetter\t静的確認\tT013\n",encoding="utf-8")
 
 class CoverageTests(unittest.TestCase):
+    def test_isolated_symbols_override(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            fixture(root)
+            external = root/"isolated_symbols.tsv"
+            external.write_text(
+                "0x00449500\tfunc\tT013_New\tEvidence\t静的確認\tT013\n",
+                encoding="utf-8")
+            old = cv.load(root)
+            isolated = cv.load(root, external)
+            self.assertNotIn(0x449500, old["named"])
+            self.assertIn(0x449500, isolated["named"])
+            self.assertNotIn(0x46F4C0, isolated["named"])
+
     def test_symbolic_reference_and_protected_range(self):
         self.assertIsNone(cv.number("Stack[0x4]"))
         self.assertIsNone(cv.number("Register"))
