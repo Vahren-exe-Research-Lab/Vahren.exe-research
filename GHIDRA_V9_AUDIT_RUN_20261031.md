@@ -57,3 +57,33 @@
 
 - Final local index snapshot: research_index.py --check found 3 new/changed owner documents; authorized incremental refresh moved 1816 -> 1819 indexed and postcheck pending=0. audit_research.py exported 1819/1819 SHA receipts, missing=0/stale=0/redacted=0, exact-SHA groups=18, shared-primary-ID groups=143. These 3 source updates were indexed by existing shallow scope, not auto-promoted to discoveries.
 - Latest V9 crosswalk with isolated 377-row symbols: 11950 total functions / 11762 internal; 273 function-entry VAs registered in symbols, 2750 functions mentioned, 9011 not mentioned, 1218 unregistered-called-unmentioned, 44846 native E8 verified outside protected scope. In 22524 selected corpus files, 3854 are text-like and 1808 indexed among the designated eight folders; full crosswalk stays PC generated-only. No Ghidra rerun, original game, or Golden observation.
+
+## 2026-10-31 Batch03: scoped audio/AI curation and takeover summaries
+- Private develop base cfd42d9fe35ab00be19479ad3c3aa38243e4d70a; independent isolated worktree, owner repositories and raw originals unchanged.
+- Newly curated local report IDs: REA 00H/01H/02H/03H/07H/08H/12H (7) and B/T013 00H/01H (2), each source-linked in existing REF_AUDIO_VORBIS.md or REF_BATTLE_AI_MORALE.md. Distinct native deltas only; reused ancestors in older REA 04H-11H are NOT recounted.
+- Four bounded audio function addresses 0x5E6CD0/0x5E6E10/0x5E6F10/0x5DA550 and five router/callback entries 0x5D16C0/0x5D4160/0x5D4420/0x5D44C0/0x5D3F60 were independently verified V9 internal entries and added as STATIC only. Symbols 377 -> 386; V9 function entries registered 273 -> 282, not 282 proved behaviors.
+- Independent original-PE evidence: REA07 36/36 opcode+12/12 E8, REA08 34/34 opcode+11/11 E8, REA12 21/21 opcode+7/7 E8 and 5/5 window SHA. REA00-03 11/11 selected E8 and 22 targeted native instructions. Takeover 11/11 direct E8 matched original source. No original runtime test.
+- B00 four bounded SHA windows each match the source ONLY with inclusive high-end notation (+1 byte to exclusive end). B01 two of three bounded windows matched. The 0x5D1BB6+0xB0 owner hash discrepancy remains VERIFY, although original ftol and rand key instructions and coefficient floats were independently checked; no full-function ABI promotion.
+- Takeover corpus: eight selected high-value summary documents individually inspected; all refer to the SAME P0_TAKEOVER_20261024_01 ID, not eight independent READY findings. A prior curator also reviewed the parent HANDOFF. The remaining nested candidate sources are NOT bulk scanned; no runtime logs, source snapshots, save bytes, raw PE or ZIP imported.
+- Native takeover results remain bounded NOOP/transport observational only, G4 external result settlement NO-GO, later partial return/negative recovery VERIFY. IPC ACK != COMMITTED. Neither original gameplay Golden PASS nor strict MATCH is supported; both 0.
+- Audit baseline at curation time: 1819/1819 indexed source receipts matched, 0 missing/stale/redacted, 18 exact-byte duplicate groups, 143 shared-primary-ID review groups. Composite V9 11950 total/11762 internal, 44846 confirmed E8, protected native refs excluded 44, 2750 functions mentioned in reports, 9011 not mentioned, unregistered-called-unmentioned 1213.
+- Followup: owner review the B01 ftol source SHA disagreement, keep refused HOLD/missing 10/25 outside curation, continue staged takeover synopsis review and Golden evidence acquisition without bypassing safety refusals.
+
+### Approved relative-path source hash receipts (metadata only)
+| Relative source | SHA256 | Bytes |
+|---|---|---:|
+| rea_lab/decomp_task/REA_20261031_00H_P0_CALLBACK_ORIGIN_STATIC.md | EA930F80902B71609FC34EC78FFBA13CF1AD15915F94DBF3AF15D696050DB9B4 | 3977 |
+| rea_lab/decomp_task/REA_20261031_01H_P0_TAG_WRITER_BOUNDS_STATIC.md | 172FDF7A38AB48A03C9DFDFE203A2DB0ED4B8B2AFC057F5605E1A0C1326AA9D1 | 4003 |
+| rea_lab/decomp_task/REA_20261031_02H_P0_VORBIS_HEADER_ROUTER_STATIC.md | 84EC7C0FE4010BB67E3C12F4BFF1FEB60BFAA42B552EFDC47E6BCFB749A15A4D | 3830 |
+| rea_lab/decomp_task/REA_20261031_03H_P0_VORBIS_HEADER_TRANSITION_STATIC.md | F8CDBD6580066ED2209AB310E6916444A0CF13D9DF2558A65F4FD3BC0A21AF82 | 4249 |
+| rea_lab/decomp_task/REA_20261031_07H_P0_VORBIS_BITREADER_EOF_BOUNDS_STATIC.md | 10744BD16D112D46E931BA24E1D163754A93B5276129B1D74C4EB293B8EDEBD3 | 6963 |
+| rea_lab/decomp_task/REA_20261031_08H_P0_VORBIS_CODEBOOK_WIDTH_GUARD_STATIC.md | 6D61690D840A9528A0F26E2E0421F5685DF4360E0FE3AB731FB5503A00E406CE | 5582 |
+| rea_lab/decomp_task/REA_20261031_12H_P0_VORBIS_LOOK_ARRAY_CALLOC_STATIC.md | 0B7D70FFE41C52F6F1AF09EEB46DEEB75A6032D00B3CCFB72C2F44A719E87C95 | 6293 |
+| rea_lab/headless_analysis/search_index/P0_TAKEOVER_20261024_01/entry/ENTRY_FINDINGS.md | D382FA4550842A2F294B00EA7DDF5AAEFF9E0BF07E5CD04D6C3CC3822C9D3039 | 10385 |
+| rea_lab/headless_analysis/search_index/P0_TAKEOVER_20261024_01/exit/EXTERNAL_NOOP_SETTLEMENT_FEASIBILITY.md | 88F0591B6B58791D4BFF139726FF993631D131CBD3649827937494CBFC20E7B5 | 13347 |
+| rea_lab/headless_analysis/search_index/P0_TAKEOVER_20261024_01/exit/SETTLEMENT_CONTINUATION_OPTIONS.md | 2941B749B4113C173EC16378742C067F3077FD320D49E782C28F862AE8BBBDBA | 11922 |
+| rea_lab/headless_analysis/search_index/P0_TAKEOVER_20261024_01/scheduler/DE_SCHEDULER_FINDINGS.md | 87B9BFD8B4BB0B851D1CD78511D4283D963CDFCE9E86D0F8D4B9FE62F9B431DE | 12790 |
+| rea_lab/headless_analysis/search_index/P0_TAKEOVER_20261024_01/BRIDGE_CONTRACT_DRAFT.md | 53F5190449DDE6C9A0AB95F361695CFA2C29F4156F9E0A988A2724FE1223F265 | 11691 |
+| rea_lab/headless_analysis/search_index/P0_TAKEOVER_20261024_01/review/INTEGRATION_REVIEW.md | FE474AE11BC3C6C542FF40CF2CC08AD3501916AE7E2C7BA75949CA8AF05E4986 | 3764 |
+| rea_lab/headless_analysis/search_index/P0_TAKEOVER_20261024_01/review/SAVE_ROUNDTRIP_SEMANTIC_DIFF.md | D6CA6989D2B135A17E1D3F65EDE792F63CDE6A088C6FB2B8EFDDED13AF15FBA4 | 3874 |
+| rea_lab/headless_analysis/search_index/P0_TAKEOVER_20261024_01/ipc/G6_FAILURE_CONTRACT.md | F044F80A186499A059349B21551F5856394B2479B19587DF8F7F742D52B45FFC | 7139 |
