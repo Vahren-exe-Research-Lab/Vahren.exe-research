@@ -17,14 +17,14 @@ V9 SHA256 (local readback): 2629CB2F03ECEC9927E89892C77F847E4CDBA381AB718825C1CA
 - Unresolved control-flow site records: **5,145**
 - V9 internal functions: **11,762**
 - Internal functions with protected-range overlap, excluded: **1**
-- Entries with a curated symbols.tsv address: **271**
+- Entries with a curated symbols.tsv address: **273**
 - Function entries cited in indexed reports: **2,750**
 - Function entries linked to focused source reports: **2,600**
 - Internal entries without an indexed report: **9,011**
 - Functions owning unresolved control-flow records: **995**
-- Unregistered + called + not cited in reports: **1,220**
+- Unregistered + called + not cited in reports: **1,218**
 - Unregistered runtime-helper hints excluded from priority queue: **405**
-- Unregistered gap priority entries: **11,085**
+- Unregistered gap priority entries: **11,083**
 
 ## Corpus size and search-index gap
 
@@ -37,13 +37,13 @@ the analysis does NOT hash or copy all binary Ghidra outputs.
 | exe | 842 | 842 | 419 | 14,411,898 |
 | evidence | 172 | 159 | 117 | 13,727,790 |
 | exp_research_20261021 | 68 | 66 | 39 | 1,348,265 |
-| tests | 537 | 537 | 371 | 4,215,836 |
+| tests | 541 | 541 | 374 | 4,288,922 |
 | wiki | 149 | 148 | 67 | 13,008,437 |
 | rea_lab/headless_analysis/search_index | 15,620 | 1,045 | 194 | 4,341,486,839 |
 | dev_lab/docs | 53 | 53 | 50 | 2,663,198 |
 
-- Listed corpus files: 22,520; total bytes: 5,731,747,050.
-- Text-like files: 3,850; present in research index: 1,805.
+- Listed corpus files: 22,524; total bytes: 5,731,820,136.
+- Text-like files: 3,854; present in research index: 1,808.
 - The research index can include additional root/knowledge documents beyond these folders.
 - Many Ghidra files are generated data, not individually useful findings.
 - Unindexed does not necessarily mean missing: source-code and large-file exclusions are intentional.
@@ -53,8 +53,8 @@ the analysis does NOT hash or copy all binary Ghidra outputs.
 
 | Reason | Files |
 |---|---:|
-| CODE_OR_UNSUPPORTED_EXTENSION | 1,241 |
-| INDEXED | 1,805 |
+| CODE_OR_UNSUPPORTED_EXTENSION | 1,242 |
+| INDEXED | 1,808 |
 | LARGE_FILE_LIMIT | 5 |
 | NESTED_HISTORY_ARCHIVE | 206 |
 | NESTED_MANUAL_REVIEW | 9 |

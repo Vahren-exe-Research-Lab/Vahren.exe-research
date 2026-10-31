@@ -400,3 +400,7 @@
 # ---- 2026-10-31 REA/T015 Vorbis look ownership (original x86 STATIC) ----
 0x5D9F40	func	VorbisLook_InitBorrowedCodebook	0x38-byte look recordの+0x0Cに元codebook参照を保存する初期化経路。所有権は局所命令から推定。	静的確認	REA-LOCAL-20261031-10H-P0-VORBIS-CODEBOOK-OWNERSHIP-TEARDOWN-STATIC-01; REF_AUDIO_VORBIS.md
 0x5DA070	func	VorbisLook_ConvertRecord	look recordをmemset(0x38)で初期化して変換する経路。初期確保にNULL検査、後続4確保の局所guardは未確認。実機の失敗挙動は未測定。	静的確認	REA-LOCAL-20261031-11H-P0-VORBIS-LOOK-CONVERSION-ALLOCATION-GATES-STATIC-01; REF_AUDIO_VORBIS.md
+
+# ---- 2026-10-31 REA/T015 additional bounded comment/codebook cleanup ----
+0x5D3D00	func	VorbisComment_FreeAndReset	コメント配列の非NULL要素をsigned countまで解放し、配列/vendor解放後に4つの管理fieldをゼロ化する。部分構築や二重呼出の異常系は未検証。	静的確認	REA-LOCAL-20261031-06H-P0-VORBIS-COMMENT-SENTINEL-TEARDOWN-STATIC-01; rea_lab/decomp_task/REA_20261031_06H_P0_VORBIS_COMMENT_SENTINEL_TEARDOWN_STATIC.md
+0x5D9E70	func	VorbisCodebook_FreeOwnedFields	codebook marker+0x24の分岐で+0x20/+0x08の非NULL所有領域を解放し管理fieldと本体を解放する。割当失敗時の書込保護や別名の安全性は未検証。	静的確認	REA-LOCAL-20261031-09H-P0-VORBIS-CODEBOOK-MALLOC-CLEANUP-STATIC-01; rea_lab/decomp_task/REA_20261031_09H_P0_VORBIS_CODEBOOK_MALLOC_CLEANUP_STATIC.md
