@@ -22,7 +22,8 @@ class KnowledgeSecurityTests(unittest.TestCase):
     def test_curated_domain_guides_are_allowlisted_and_discoverable(self):
         guides = ("REF_SAVE_PERSISTENCE.md", "REF_RANDOM_EVENTS.md",
                   "REF_RTS_SCENARIO.md", "REF_SCRIPT_VM_CONTEXT.md",
-                  "REF_SCENARIO_COMPAT.md", "REF_STRATEGY_ECONOMY.md")
+                  "REF_SCENARIO_COMPAT.md", "REF_STRATEGY_ECONOMY.md",
+                  "RESEARCH_DUPLICATE_TRIAGE.md")
         readme = (sync.KB / "README.md").read_text(encoding="utf-8")
         gitignore = (sync.KB / ".gitignore").read_text(encoding="utf-8")
         self.assertEqual(len(set(sync.FILES)), len(sync.FILES))

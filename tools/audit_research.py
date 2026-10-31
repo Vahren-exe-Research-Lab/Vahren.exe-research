@@ -93,9 +93,11 @@ def main():
     (out/"RESEARCH_SOURCE_CATALOG.tsv").write_text(header+"".join("\t".join(map(str,x))+"\n" for x in rows),encoding="utf-8",newline="\n")
     dup_header="type\tkey\tcount\tpaths\n"
     dup_lines=[
-        "\t".join((kind,scrub(key),str(len(paths)),scrub(" | ".join(paths[:8]))))
+        "\t".join((kind,scrub(key),str(len(paths)),
+                   scrub(" | ".join(paths[:8]) +
+                         (f" | [OMITTED_{len(paths)-8}_PATHS]" if len(paths)>8 else ""))))
         for kind,groups in (("EXACT_SHA256",exact),("SHARED_ID_REVIEW",shared))
-        for key,paths in sorted(groups.items()) if kind=="EXACT_SHA256" or len(paths)<=8
+        for key,paths in sorted(groups.items())
     ]
     (out/"RESEARCH_DUPLICATE_CANDIDATES.tsv").write_text(dup_header+"\n".join(dup_lines)+"\n",encoding="utf-8",newline="\n")
     lines=[
