@@ -3,10 +3,10 @@
 This is a metadata inventory, NOT a validation of all research findings.
 GitHub does not contain original game files or the generated search database.
 
-- Indexed research documents: 1819
-- Indexed lines: 1,157,832
-- Indexed VA mentions: 142,320
-- Catalog source receipts: 1819; missing: 0; stale SHA/size: 0; redacted path entries: 0
+- Indexed research documents: 1820
+- Indexed lines: 1,157,871
+- Indexed VA mentions: 142,420
+- Catalog source receipts: 1820; missing: 0; stale SHA/size: 0; redacted path entries: 0
 - Exact-byte duplicate groups: 18, total referenced files: 38
 - Shared-primary-ID candidate groups: 143 (NOT automatically duplicates)
 
@@ -14,7 +14,7 @@ GitHub does not contain original game files or the generated search database.
 
 | Category | Indexed sources |
 |---|---:|
-| AI_TARGET | 285 |
+| AI_TARGET | 286 |
 | GOLDEN_QA | 282 |
 | BATTLE_DAMAGE | 233 |
 | SCRIPT_VM | 216 |

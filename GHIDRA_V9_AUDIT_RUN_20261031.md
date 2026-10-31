@@ -87,3 +87,31 @@
 | rea_lab/headless_analysis/search_index/P0_TAKEOVER_20261024_01/review/INTEGRATION_REVIEW.md | FE474AE11BC3C6C542FF40CF2CC08AD3501916AE7E2C7BA75949CA8AF05E4986 | 3764 |
 | rea_lab/headless_analysis/search_index/P0_TAKEOVER_20261024_01/review/SAVE_ROUNDTRIP_SEMANTIC_DIFF.md | D6CA6989D2B135A17E1D3F65EDE792F63CDE6A088C6FB2B8EFDDED13AF15FBA4 | 3874 |
 | rea_lab/headless_analysis/search_index/P0_TAKEOVER_20261024_01/ipc/G6_FAILURE_CONTRACT.md | F044F80A186499A059349B21551F5856394B2479B19587DF8F7F742D52B45FFC | 7139 |
+
+## Batch04 2026-10-31 ? owner C original World DAT crosswalk
+- Five distinct owner-C research IDs (not five new native functions): C-20261016-0023-01, C-20261016-0122-01, C-20261015-1722-01, C-20261015-1823-01, C-20261015-2124-01. Source-literal statements curated in REF_DAT_BEHAVIOR.md; original game execution and save comparison absent.
+- Scopes: two six-event groups and child addUnit destinations; free World saved player/Power slots versus later COM diplomacy; randomset periodic block versus sabo/happy tail; all-Power vs selected-player scope and Dream lack of direct routine call; castleturn vs siegeturn distinct counter and initial-latch placement.
+- Evidence only SCRIPT STATIC; native VM event()/routine() scheduling, result or bug interpretation, original gameplay Golden PASS and strict MATCH remain VERIFY, actual PASS=0/MATCH=0. Owner C-script READY not promoted to E-MASTER or gameplay READY.
+- No game EXE, unmodified DAT/ZIP, SAVE or generated DB uploaded; only relative source paths, SHA256, byte sizes and curated interpretation. Owner sources, MASTER, other worktrees read-only.
+- Scope check: first audit assertion mistakenly treated a research ID used in both section header and provenance line as duplicate; corrected to distinguish unique research content from repeated ID references (OTHER/RESOLVED, no source mutation).
+
+### C-owner and original-script SHA receipts
+| Relative source | SHA256 | Bytes |
+|---|---|---:|
+| evidence/T025_WORLD_ENTRY_SNAPSHOT_COM_DIPLO_QUEUE_JOIN_20261016.md | A23214CCFA5A3E6C4C5413D3F41597B688594346D12B9D3AE62F8F4508C4A1E9 | 4397 |
+| evidence/T025_MZ_ROAMER_DUAL_RELOCATION_EVENT_ROUTES_20261016.md | B018AD973151D307E3765FB68AEB70867351FBA5C967F517400B2B70A7A93B9E | 3888 |
+| evidence/T025_RANDOMSET_TAIL_SABO_HAPPY_UNGUARDED_WORLD_20261015.md | 59CD88E2A76B17BEDF4C9729B65A1682BF12CF99C85088DBC339AC473B949D07 | 3979 |
+| evidence/T025_RANDOMSET_TARGET_SCOPE_DREAM_CONTRAST_20261015.md | 8840707C24B559B45B1FA34B6A4EA0EC100C1188FA754588AFB281693558F500 | 3920 |
+| evidence/T029_CASTLE_VS_SIEGE_COUNTER_PHASE_CROSSWALK_20261015.md | 3BF7BF029EAB482D9F54AA1D8FE38094416D5CC73C5DDF4A2627E81B4730E749 | 4254 |
+| data/normalized/hakushin067_core/a_default/script/event_world.dat | 523B389E2E985D3924D83246E076343F8AA1EA2C610044B1739E6792EB7E7D9A | 60055 |
+| data/normalized/hakushin067_core/a_default/script/7000_その他シナリオ/free_ev_world.dat | 65FC28C64F95CAB0ECED9522D2AC0C98D65BC1BE0B4968A56D78BA190492DD08 | 31176 |
+| data/normalized/hakushin067_core/a_default/script/100_イベント汎用/event_00_共通イベント.dat | 44ECF64B2979D3FBB09EBD62D70602CB9B064348F9CC9526F9C3CECEBBC64110 | 41403 |
+| data/normalized/hakushin067_core/a_default/script/102_ランダムイベント/randomset.dat | 12276C86F1E09733BA97122CCA524BD30C72B06131A7EE7FC81385D9B55017D1 | 16961 |
+| data/normalized/hakushin067_core/a_default/script/3000_淫ドリームマッチ/ev_dream.dat | A574E15A843D9BC7432D8667A2F26AEFD7956613B71E6D39AAE3670859BDBEDD | 21201 |
+| data/normalized/hakushin067_core/a_default/script/5000_ランダムシナリオ/ev_rnd.dat | 7D767302A5C32950847788180D8FDD721F7C3131CA4BC50DD63EEE2E495AF64C | 51034 |
+| data/normalized/hakushin067_core/a_default/script/100_イベント汎用/event_castleset.dat | 9796862137A83BF006FE909D2E60AC45384B41995835A820F6FE3ACCB90EC450 | 1434 |
+| data/normalized/hakushin067_core/a_default/script/45_内政_防衛兵器/siege_politic.dat | 362CB8553ACDB36F10E5939EDE977A3739AE24FDBF23501E209ED87A4FD255E5 | 31290 |
+
+- Concurrent owner-B index recovery (OTHER, not a safety refusal): initial research_index --check identified 3 changed/new sources and audit showed stale data/T013_AI.md / evidence/LANE_B_HANDOFF.md; authorized incremental refresh changed indexed 1819 -> 1820 documents (3 refreshed, 0 removed) and postcheck pending=0. No B owner source was edited by curator.
+- Final source inventory: 1820/1820 SHA/size receipts, missing=0/stale=0/redacted=0, exact-byte duplicate groups=18, shared-primary-ID review groups=143. The newly indexed B report has not been semantically curated in this C-script batch and is NOT new B READY or original Golden.
+- Final V9 STATIC: 11950 all / 11762 internal function entries, 44846 independently verified E8 sites outside protected scope, 282 registered V9 entry addresses, 2751 entries mentioned in reports, 9010 without report, 1212 unregistered-called-not-mentioned candidates; 22525 selected corpus files, 3855 text-like, 1809 indexed within eight folders. No original game execution, Ghidra full reanalysis or forbidden-range access.
