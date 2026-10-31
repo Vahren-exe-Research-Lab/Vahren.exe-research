@@ -19,6 +19,18 @@ class KnowledgeSecurityTests(unittest.TestCase):
             "/*\n/tools/*\n/sources/*\n/generated/\n"
             "!/symbols.tsv\n!/structs.tsv\n",encoding="utf-8")
 
+    def test_curated_domain_guides_are_allowlisted_and_discoverable(self):
+        guides = ("REF_SAVE_PERSISTENCE.md", "REF_RANDOM_EVENTS.md",
+                  "REF_RTS_SCENARIO.md")
+        readme = (sync.KB / "README.md").read_text(encoding="utf-8")
+        gitignore = (sync.KB / ".gitignore").read_text(encoding="utf-8")
+        self.assertEqual(len(set(sync.FILES)), len(sync.FILES))
+        for name in guides:
+            self.assertIn(name, sync.FILES)
+            self.assertIn(name, readme)
+            self.assertIn("!/" + name, gitignore.splitlines())
+            self.assertTrue((sync.KB / name).is_file())
+
     def test_basic_audit_and_manifest_roundtrip(self):
         with tempfile.TemporaryDirectory() as td:
             root=Path(td)

@@ -12,6 +12,9 @@
 | `REF_UI_SYSTEM.md` | 画面部品（ウィンドウ）・詳細パネル・説明表示の仕組み |
 | `REF_AUDIO_VORBIS.md` | 原作音声系（Vorbisヘッダ解析）についてREAの原作x86根拠と未検証の境界をまとめたもの |
 | `REF_BATTLE_TAKEOVER.md` | 戦闘乗っ取り・外部結果統合の入口、Task/VM・原作終了処理・IPC・セーブの境界と未検証課題 |
+| `REF_SAVE_PERSISTENCE.md` | A/T014：global.sav、通常save、共有envelope、イベント実行履歴、未検証境界 |
+| `REF_RANDOM_EVENTS.md` | C/T031–T034：ランダムイベント周期・抽選・効果、茶会の特殊処理と未検証境界 |
+| `REF_RTS_SCENARIO.md` | D/T030：RTS専用シナリオ、wave、勝敗、資源、native未確証の境界 |
 | `CATALOG.md` | **研究資料ファイルの目録**。evidence・exe・data・wiki・tests などの各ファイルが何か（見出し・ID・状態から自動で 1 行）を、作業番号（T0xx）ごとに並べたもの |
 
 確かさは 4 段階: **実機確認**（ゲームで確かめた）／**静的確認**（機械語で確かめた）／**テストのみ**（合成テストだけ）／**推定**。
@@ -148,7 +151,7 @@ python -B knowledge\tools\research_index.py --check
 - **全研究のメタデータ一覧**: [RESEARCH_SOURCE_CATALOG.tsv](RESEARCH_SOURCE_CATALOG.tsv)。PC研究本文から生成した相対パス・SHA256・タスク/分野の仮分類。原始証拠の移動や削除は行わない。
 - **重複・矛盾の検査入口**: [RESEARCH_DUPLICATE_CANDIDATES.tsv](RESEARCH_DUPLICATE_CANDIDATES.tsv)。SHA完全一致と研究ID共有は分離し、根拠がない限り統合・削除しない。
 - **分類別の規模・未検証範囲**: [RESEARCH_INTEGRATION_SNAPSHOT.md](RESEARCH_INTEGRATION_SNAPSHOT.md)。分類はHEURISTICであり正式のOWNER/READYに昇格しない。
-- **分野別の研究横断入口**: [REF_UNIT_EXP_SUMMON.md](REF_UNIT_EXP_SUMMON.md)（ユニット・EXP・訓練）、[REF_BATTLE_AI_MORALE.md](REF_BATTLE_AI_MORALE.md)（戦闘・AI・士気）、[REF_AUDIO_VORBIS.md](REF_AUDIO_VORBIS.md)（Vorbis・音声解析）。各項目は元の研究ID・出典を示し、STATIC/INFERRED/VERIFYとGolden0を保持。
+- **分野別の研究横断入口**: [REF_UNIT_EXP_SUMMON.md](REF_UNIT_EXP_SUMMON.md)（ユニット・EXP・訓練）、[REF_BATTLE_AI_MORALE.md](REF_BATTLE_AI_MORALE.md)（戦闘・AI・士気）、[REF_AUDIO_VORBIS.md](REF_AUDIO_VORBIS.md)（音声解析）、[REF_SAVE_PERSISTENCE.md](REF_SAVE_PERSISTENCE.md)（セーブ）、[REF_RANDOM_EVENTS.md](REF_RANDOM_EVENTS.md)（乱数イベント）、[REF_RTS_SCENARIO.md](REF_RTS_SCENARIO.md)（RTS）。原作の出典とSTATIC/INFERRED/VERIFY・Golden0を区別。
 - PCで全文検索索引を更新した後、研究ROOTで `python -B knowledge/tools/audit_research.py --root . --out knowledge` を実行してメタデータを再生成する。GitHubへは機密・サイズ・所有者・重複を監査した軽量成果だけを同期する。
 - **注意**: GitHub上のTSVは原始本文のバックアップではない。PCオフライン時は参照先未取得を明示し、実機検証なしに確度を上げない。
 
