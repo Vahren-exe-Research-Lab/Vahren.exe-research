@@ -18,3 +18,16 @@ All findings below are bounded original-x86 **STATIC**. Branch reachability unde
 - REA research under `rea_lab/decomp_task/` is **outside** the intentionally shallow `research_index.py` corpus; neither the 04H nor the 05H original text was silently bulk-indexed. These explicit source links are curated read-only references, not full-text inclusion.
 - Confirm real input states, allocator/new-handler lifetime and parent handling in separately authorized tests; do not equate native potential null dereference with demonstrated exploitability, reproduction or safe failure. Owner's synchronized 5-method completeness and E-MASTER READY counts remain unchanged.
 - Preserve earlier 04H index-path ENOENT and 05H PowerShell CLI argument encoding error as **OTHER/VERIFY**, not as missing findings or a safety refusal. Do not reroute blocked evidence through another tool or path.
+
+
+## 4. Codebook/look-record ownership and teardown (REA 10H)
+- REA-LOCAL-20261031-10H-P0-VORBIS-CODEBOOK-OWNERSHIP-TEARDOWN-STATIC-01 (REA/T015), source rea_lab/decomp_task/REA_20261031_10H_P0_VORBIS_CODEBOOK_OWNER_STATIC.md and matching EVIDENCE.json.
+- Original 0x5D5922 calls 0x5D9F40: 0x5D9F55 stores a source codebook pointer at look record+0x0C. Owner slots are in inner+0x720; 0x38-byte look records in inner+0xB20 hold an inferred borrowed pointer without a locally observed refcount operation.
+- After successful 0x5D5B51 -> 0x5DA070 conversion, 0x5D5B60 frees the source and 0x5D5B6C zeroes its owner slot. Failure cleanup revisits only remaining non-null owner slots. 0x5D9ED0 frees owned look+0x10/+0x14/+0x18/+0x1C/+0x20 fields, then zeroes the look record, but does not separately free +0x0C.
+- 0x5D3DE0 tears down source codebooks, look records and the parent. Normal unique-pointer sequential behavior is narrower than a proof against aliasing, exceptions, incomplete initialization or asynchronous access.
+
+## 5. Conversion clears borrowed field and has conditional allocation gates (REA 11H)
+- REA-LOCAL-20261031-11H-P0-VORBIS-LOOK-CONVERSION-ALLOCATION-GATES-STATIC-01 (REA/T015), source rea_lab/decomp_task/REA_20261031_11H_P0_VORBIS_LOOK_CONVERSION_STATIC.md and matching EVIDENCE.json, corrects a possible 10H overinterpretation: 0x5DA070 starts with memset(look,0,0x38) at 0x5DA07C..82, clearing the former +0x0C borrowed field before normal source free.
+- The first allocator result has an explicit 0x5DA0E9/EB NULL check and error -1. Four later allocations (0x5DA1A7/0x5DA224/0x5DA255/0x5DA2D4) lack immediate local NULL checks; subsequent writes are input-conditional, while zero-entry cases skip those steps. Crash/exploitability is NOT proven.
+- All 7 recorded 10H and 8 recorded 11H source PE windows independently matched SHA256 in read-only verification. Historical one-shot owner audits recorded 46/46 and 52/52; when evidence already exists their uniqueness gates cause 45/46 and 51/52 on rerun without any original ASM mismatch or evidence overwrite.
+- Both research IDs remain STATIC with INFERRED/VERIFY failure semantics; ABI, aliasing, true allocation-failure reachability and gameplay effects are unverified. Golden PASS=0, strict MATCH=0, owner READY unchanged. The source reports are intentionally outside shallow text indexing and explicitly linked.

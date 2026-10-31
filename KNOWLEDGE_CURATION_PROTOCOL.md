@@ -45,3 +45,8 @@ Purpose: give AI a small, trustworthy map without destroying or blindly copying 
 - 現行Ghidra V9はV8と後発関数を合成したSTATIC索引であり、同名の単一Ghidraプロジェクト全体が完全統合済みという意味ではない。
 - 証拠・辞書・作業ブランチの衝突を優先して中断し、拒否済み範囲の別手段取得は行わない。
 - Nested 799-file metadata audit (2026-10-31): archives 206, plugin work 321, takeover research 180, snapshots 52, runtime 31, manual review 9. Preserve shallow indexing by default; review the nine individually and eligible takeover summaries before opting into any recursive search. Never bulk-import original snapshots/runtime logs or overwrite owner data.
+
+## Isolated-worktree V9 symbol source (2026-10-31)
+- When a curator edits symbols.tsv in a dedicated worktree, invoke that worktree's tools/v9_coverage.py with `--root <research-root> --out <isolated-kb> --symbols <isolated-kb>/symbols.tsv --export`. This keeps the indexed original PE/V9 and research.sqlite under the authorized read-only research root while using the curated symbol dictionary from the isolated worktree.
+- Without --symbols, the backward-compatible default reads <research-root>/knowledge/symbols.tsv, which may be an unrelated user checkout. Never equate that older dictionary with the isolated candidate version.
+- The full V9 function crosswalk remains in the local research root's knowledge/generated directory; GitHub receives only lightweight report and priority TSVs. Candidate counts are descriptive STATIC metadata, not proof or READY.

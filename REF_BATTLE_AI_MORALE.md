@@ -42,3 +42,16 @@ Original gameplay Golden PASS=0, strict MATCH=0. No B result below is newly prom
 - Require same-run original EXE/DAT/SAVE/MAP/input/RNG and observed target, HP/status, Unit fields, tactics and next tick before marking Golden PASS.
 - Keep failed/safety-refused evidence and unresolved 10/25 research recovery separate from verified conclusions.
 - Work from the original referenced reports and index if any later correction contradicts this summary.
+
+
+## T013 category-3 input producer (05H)
+- B-20261031-05H-T013-EBX3-INPUT-01 (data/T013_MODE3_EBX_CATEGORY_PRODUCER_NATIVE_20261031_05H.md): 0x44C72B MOV EBX,3 to 0x44C76C PUSH EBX / 0x44C76E CALL 0x449500. The nested indirect-call path leaves the complete ABI unproven; category=3 at entry requires ordinary register preservation.
+- With eligible Units, the category-3 branch can select 'push' if manager+0x98>10, 'advance' (category 6) otherwise, and 'even' (category 7) under an additional group/manager condition. This adds origin evidence, not another count of the 04H category loop; downstream behavior stays VERIFY.
+
+## T013 dual mode-dependent score fields (12H)
+- B-20261031-12H-T013-DUAL-SCORE-COMPARATORS-01 (data/T013_DUAL_SCORE_RANK_FIELD_NATIVE_20261031_12H.md) maps 0x448E90 and native E8 callers 0x449792/0x449959/0x449F96/0x48E61D. No proven final attack target follows solely from these callers.
+- At 0x448FA6..0x448FBF, mode==2 selects candidate +0xA0C; other modes use +0xA10 for score reset. At 0x448F84/0x44926E, comparison routines 0x447240/0x447260 are passed to 0x47BB50, both comparing the corresponding field with signed-greater SETG.
+- At 0x449280..0x4492C8, a rank counter starts at 10000 and decreases on changed values, with a low-sentinel exclusion. Comparator contract in 0x47BB50, stability on ties, semantic type, RNG effects and final Unit targeting remain VERIFY.
+- Independent source PE SHA256 (exclusive end): 0x447240..0x44727A = A69CBAFBFE589DA7988FB807B026B8CACC7D30E9FA9FF007DC1B10B9FF72F331; 0x448FA6..0x448FC9 = 9FDB45530E09C4595B54A6DC37083283B4EE812C1B97866B7E6A4D91C6892EDF.
+- Correction to B 04H provenance: the expected SHA E94D6BC79B299C67E444DDBCDB4B80C6B289279502F17EA1BB44BF5756A8291C for '0x4495C3..0x4496F2' matches 0x4495C3..0x4496F3 as an end-exclusive range (304 bytes), NOT the 303-byte exclusive end. This is a one-byte endpoint notation correction, not a new finding.
+- Both IDs remain STATIC/INFERRED/VERIFY/NOT READY, with original gameplay Golden PASS=0 and strict MATCH=0; two comparator codelets are absent from current V9 function entries, not absent from original PE.

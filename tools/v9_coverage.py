@@ -58,7 +58,7 @@ def protected_members(c):
             denied.add(number(owner))
     return denied
 
-def load(root):
+def load(root, symbols_path=None):
     root = Path(root)
     c = ro(root/V9_REL)
     functions = {}
@@ -117,7 +117,7 @@ def load(root):
         docinfo[number(va)] = (int(n_docs), int(mentions), clean(sample), int(focused))
     indexed_paths = {r[0] for r in d.execute("SELECT path FROM docs")}
     d.close()
-    named = known_symbols(root/"knowledge/symbols.tsv")
+    named = known_symbols(Path(symbols_path) if symbols_path is not None else root/"knowledge/symbols.tsv")
     digest = hashlib.sha256()
     with (root/V9_REL).open("rb") as source:
         for block in iter(lambda: source.read(4*1024*1024),b""):
@@ -329,6 +329,8 @@ def emit(root, out, data, rows, candidates):
                "",
                "    python -B knowledge/tools/v9_coverage.py --root . --out knowledge --export",
                "    python -B knowledge/tools/v9_coverage.py --root . --inspect 0x00449500",
+               "For a separate curated worktree, pass --symbols <isolated-kb>/symbols.tsv",
+               "to avoid scoring against the unrelated user checkout; never modify its branch.",
                "",
                "Use GHIDRA_V9_GAPS_TOP500.tsv for candidates, NOT for automatically",
                "renaming functions or claiming a behavior. The full per-function crosswalk",
@@ -415,13 +417,14 @@ def main(argv=None):
     a = argparse.ArgumentParser()
     a.add_argument("--root", type=Path, required=True)
     a.add_argument("--out", type=Path)
+    a.add_argument("--symbols", type=Path, help="Explicit curated symbols.tsv (read-only; useful for isolated worktree)")
     a.add_argument("--export", action="store_true")
     a.add_argument("--inspect")
     args = a.parse_args(argv)
     if args.export == bool(args.inspect):
         a.error("Use exactly one of --export or --inspect")
     root = args.root.resolve()
-    data = load(root)
+    data = load(root, symbols_path=args.symbols)
     if args.inspect:
         return inspect(data, args.inspect)
     if not args.out:

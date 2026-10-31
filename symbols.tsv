@@ -386,3 +386,17 @@
 
 # ---- 2026-10-31 REA/T015 Vorbis type3 static mapping (no gameplay Golden) ----
 0x5D4030	func	VorbisComment_Type3_Parse	Ogg/Vorbis type3コメントヘッダのvendor文字列とコメント配列を確保・読取する経路。原作x86ではcalloc後のNULL未検査書込候補があり、OOM実機挙動と上位エラー伝播は未検証。	静的確認	REA-LOCAL-20261031-05H-P0-VORBIS-CALLOC-NULL-GATE-STATIC-01; rea_lab/decomp_task/REA_20261031_05H_P0_VORBIS_CALLOC_NULL_GUARD_STATIC.md
+
+# ---- 2026-10-31 T011 training-tree helpers (original x86 STATIC; runtime VERIFY) ----
+0x49ED90	func	TreeHeader_InitSentinel	訓練bonus局所mapのheader初期化呼出先。24-byte sentinelを自己リンクしcount=0。汎用treeの型と失敗時処理は未確定。	静的確認	B-20261031-08H-T011-TRAINING-CACHE-LIFECYCLE-01; data/T011_TRAINING_CACHE_INIT_ERASE_DUPLICATE_NATIVE_20261031_08H.md
+0x4DEF40	func	Tree_EraseRange	先頭と終端を受ける範囲消去。全区間では0x4ED030、部分区間では0x4DEC70へ分岐。一般的なABIと異常系は未検証。	静的確認	B-20261031-09H-T011-TRAINING-CACHE-BULK-ERASE-NATIVE-01; B-20261031-11H-T011-PARTIAL-RANGE-SUCCESSOR-PRESERVE-01
+0x4ED030	func	Tree_ClearAllNodes	全区間tree消去の下位処理。0x49F6A0のsubtree解放とsentinel自己リンク復元、count=0を含む。	静的確認	B-20261031-09H-T011-TRAINING-CACHE-BULK-ERASE-NATIVE-01; data/T011_TRAINING_CACHE_FULL_RANGE_ERASE_NATIVE_20261031_09H.md
+0x4DEC70	func	Tree_EraseIteratorNode	部分範囲消去側の単一node削除下位処理。node+0x15のiterator検査、freeとcount条件減算。通常の訓練全消去では必達でない。	静的確認	B-20261031-10H-T011-TRAINING-PARTIAL-ERASE-NATIVE-01; data/T011_TRAINING_PARTIAL_ERASE_NATIVE_20261031_10H.md
+
+# ---- 2026-10-31 T013 category and score routing (original x86 STATIC) ----
+0x449500	func	BattleCategory_UpdateUnitCandidates	カテゴリlabel・係数とeligible Unit配列の反復writer呼出し。category3入力のABIと実行後行動は未確定。	静的確認	B-20261031-04H-T013-CATEGORY-LABEL-WEIGHT-FANOUT-01; B-20261031-05H-T013-EBX3-INPUT-01; REF_BATTLE_AI_MORALE.md
+0x448E90	func	ModeScoreRank_Process	mode==2の候補+0xA0Cと他modeの+0xA10を比較子0x447240/0x447260へ分け、候補順位を更新する経路。最終targetは未証明。	静的確認	B-20261031-12H-T013-DUAL-SCORE-COMPARATORS-01; data/T013_DUAL_SCORE_RANK_FIELD_NATIVE_20261031_12H.md
+
+# ---- 2026-10-31 REA/T015 Vorbis look ownership (original x86 STATIC) ----
+0x5D9F40	func	VorbisLook_InitBorrowedCodebook	0x38-byte look recordの+0x0Cに元codebook参照を保存する初期化経路。所有権は局所命令から推定。	静的確認	REA-LOCAL-20261031-10H-P0-VORBIS-CODEBOOK-OWNERSHIP-TEARDOWN-STATIC-01; REF_AUDIO_VORBIS.md
+0x5DA070	func	VorbisLook_ConvertRecord	look recordをmemset(0x38)で初期化して変換する経路。初期確保にNULL検査、後続4確保の局所guardは未確認。実機の失敗挙動は未測定。	静的確認	REA-LOCAL-20261031-11H-P0-VORBIS-LOOK-CONVERSION-ALLOCATION-GATES-STATIC-01; REF_AUDIO_VORBIS.md

@@ -100,6 +100,22 @@ class CoverageTests(unittest.TestCase):
             self.assertIn("without an indexed report: **1**",report)
             self.assertNotIn("0x005710A0", (out/"GHIDRA_V9_GAPS_TOP500.tsv").read_text(encoding="utf-8"))
 
+    def test_separate_worktree_symbols_override(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            fixture(root)
+            original = (root/"knowledge/symbols.tsv").read_bytes()
+            isolated = root/"isolated_symbols.tsv"
+            isolated.write_text(
+                "0x0046F4C0\tfunc\tConfig_Get\tGetter\t静的確認\tT013\n"
+                "0x00449500\tfunc\tCategory\tCandidate\t静的確認\tT013\n",
+                encoding="utf-8")
+            data = cv.load(root, symbols_path=isolated)
+            self.assertIn(0x449500, data["named"])
+            rows, candidates = cv.make_rows(data)
+            self.assertEqual(len(candidates), 0)
+            self.assertEqual((root/"knowledge/symbols.tsv").read_bytes(), original)
+
     def test_no_false_semantics_for_symbolic_pointers(self):
         self.assertEqual(cv.clean("line\twith\nspaces"), "line with spaces")
         self.assertIsNone(cv.number("Stack[0x4]"))
