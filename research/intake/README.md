@@ -2,6 +2,18 @@
 
 This is the **searchable owner-source intake**; a source ID, file or owner unit test is not verified original gameplay. `PUBLISHED_INTAKE / VERIFY / NOT_CURATED` until curator examines original bytes and correction lineage. Original Golden PASS=0, strict MATCH=0, newly accepted READY=0. Official semantic knowledge remains in `REF_*.md` and `symbols.tsv` / `structs.tsv` only after independent review.
 
+## Curator-reviewed B 20H-22H native scope (2026-11-02)
+
+This specific section overrides the global NOT_CURATED default **only for the bounded static facts** described in [REF_BATTLE_AI_MORALE.md](../../REF_BATTLE_AI_MORALE.md). Authorized PC source report SHA256 3/3, original PE SHA256 1/1, native windows 4/4, E8 destinations 5/5 and selected x86 opcodes 10/10 independently matched. **Golden PASS=0, strict MATCH=0, newly READY=0**.
+
+| Owner research ID | Original source PR/head | Existing intake text (unique ID; old mirror not recounted) | Curator result |
+|---|---|---|---|
+| `B-20261101-20H-T013-T024-528E86-ONEC-DISPATCH-GATE-01` | [B #7](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/7) `7798d943fe95` | [B 20H](B/T013_T024_528E86_GROUP1C_GATE_DISPATCH_NATIVE_20261101_20H.md) | **CURATED_STATIC** one callsite's +0x1C gate and three E8 edges |
+| `B-20261101-21H-T013-T024-MODE0-DISPATCH-FOUR-GATE-01` | [B #7](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/7) `7798d943fe95` | [B 21H](B/T013_T024_MODE0_DISPATCH_UPSTREAM_GATES_NATIVE_20261101_21H.md) | **CURATED_STATIC** enclosing branch conditions and loop advance |
+| `B-20261101-22H-T024-DUAL-CALLER-FACTOR-PROVENANCE-CROSSJOIN-01` | [B #9](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/9) `86def35f58fa` | [B 22H](B/T024_DUAL_CALLER_FACTOR_PROVENANCE_STATIC_20261101_22H.md) | **PARTIAL_CURATED/VERIFY** two E8 edges only; float source / ABI not independently proven |
+
+Correction links and original report SHA256 are in REF. Older B-20261023 T013 target route, B 18/19H coordinates, B 20H filter reiterated in 21H, and B 10/25 T024 callers were **not** recounted as new independent discoveries. Missing historical B 03H / 07H / 10-25 and safety HOLD21 remain unresolved and excluded. Next cursor: review independently bounded native load/producer for B 22H, then older 10-19H ID backlog without duplicate reintegration.
+
 ## 2026-11-02 B + REA original-source snapshot
 
 Earlier branch provenance started from PRIVATE develop dad68c4fedf8a56e430af1ec8a7993e725ce610d. PC Local Compact was unavailable during initial staging, but this review checked original PC report SHA256 for B17 and REA00 (2/2 matched). Other owner source SHA assertions have NOT all been independently rehashed by the curator; maintain VERIFY. Seven B plus seventeen REA original IDs formed that previous snapshot. All remain PUBLISHED_INTAKE / NOT_CURATED, regardless of publication of this intake index.
