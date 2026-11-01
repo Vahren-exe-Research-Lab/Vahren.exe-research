@@ -324,3 +324,19 @@ Older 8 research IDs linked; no new formal static five-method VERIFIED or gamepl
 | `REA-20261015-1238-TICK-EXPIRY-EARLY-RETURN-GATES-01` | [historical owner summary+SHA](REA_20261015_LEGACY_OWNER_RESEARCH_A.md) | SOURCE_PUBLISHED_INTAKE / STATIC_QC / VERIFY |
 
 Prior refusal history only as BLOCKED metadata; no direct adoption in protected REF/dictionaries, original Golden PASS/READY 0.
+
+## REA 20261015 B legacy owner audit/source records
+
+| Historical owner research ID | Evidence | Stage |
+| --- | --- | --- |
+| `REA-20261015-1340-TICK-EXPIRY-MAP-INSERT-XREF-01` | [historical report SHA / safe STATIC scope](REA_20261015_B_OWNER_LEGACY_SOURCE.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-20261015-1440-TICK-EXPIRY-TREE-ERASE-VS-ADVANCE-01` | [historical report SHA / safe STATIC scope](REA_20261015_B_OWNER_LEGACY_SOURCE.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-20261015-1537-TICK-DEC32-FLAGS-01` | [historical report SHA / safe STATIC scope](REA_20261015_B_OWNER_LEGACY_SOURCE.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-20261015-1640-LETHAL-POST-DISABLE-BRANCH-01` | [historical report SHA / safe STATIC scope](REA_20261015_B_OWNER_LEGACY_SOURCE.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-20261015-1734-POSTLETHAL-STRING-EQUALITY-01` | [historical report SHA / safe STATIC scope](REA_20261015_B_OWNER_LEGACY_SOURCE.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-20261015-1945-STATUS-GATE-01` | [historical report SHA / safe STATIC scope](REA_20261015_B_OWNER_LEGACY_SOURCE.md) | OWNER_STATUS / BLOCKED_METADATA |
+| `REA-20261015-2137-POSTLETHAL-STACK-STRING-EPILOGUE-01` | [historical report SHA / safe STATIC scope](REA_20261015_B_OWNER_LEGACY_SOURCE.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-20261015-2240-POSTLETHAL-EVENT-FLAG-ABI-01` | [historical report SHA / safe STATIC scope](REA_20261015_B_OWNER_LEGACY_SOURCE.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-20261015-COUNT-LITERAL-ALIAS-CORRECTION-01` | [historical report SHA / safe STATIC scope](REA_20261015_B_OWNER_LEGACY_SOURCE.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+
+No new formal verified functions, original Golden PASS 0, READY 0; current source/curator semantic review remains separate.
