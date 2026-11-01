@@ -177,3 +177,22 @@ Ten previously existing source IDs, rehashed owner reports + 7 adjacent EVIDENCE
 | `REA-LOCAL-20261025-0836-P0-SPOT-ALLOC-NEWH-THROW-STATIC-01` | `ArmyChip manager/Spot cache/EH allocator` | [2026-10-24–25 historical old owner source and evidence SHA](REA_20261024_20H_20261025_08H_ARMYCHIP_SPOT_HISTORICAL_RECOVERY_STATIC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
 
 Fourteen existing owner source IDs, not 14 new native functions. Particularly, 2026-10-25 08H's bad_alloc/new-handler path corrects earlier 03H/04H/06H normal NULL/retry inference. Existing 10/24 21H refused CLI remains blocked; only safe original owner source metadata and semantic claims have been published. No new formal VERIFIED, Golden/READY, or develop curation. Next known old cursor: 2026-10-25 10H; verify 09H non-study files separately.
+
+## 2026-11-02 historical 2026-10-25 10H–23H CRT/Ogg old-source recovery
+
+| Owner research ID | Functional key | Intake source | Ingestion stage |
+| --- | --- | --- | --- |
+| `REA-LOCAL-20261025-1040-P0-CRT-NEWMODE-INIT-STATIC-01` | `CRT/allocator/ABI` | [old owner report plus source/evidence SHA](REA_20261025_10H_23H_CRT_OGG_THREAD_SOURCE_RECOVERY_STATIC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-LOCAL-20261025-1137-P0-CRT-GLOBAL-XREF-STATIC-01` | `CRT/allocator/ABI` | [old owner report plus source/evidence SHA](REA_20261025_10H_23H_CRT_OGG_THREAD_SOURCE_RECOVERY_STATIC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-LOCAL-20261025-1236-P0-REALLOC-OVERFLOW-ERRNO-STATIC-01` | `CRT/allocator/ABI` | [old owner report plus source/evidence SHA](REA_20261025_10H_23H_CRT_OGG_THREAD_SOURCE_RECOVERY_STATIC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-LOCAL-20261025-1537-P0-PARSE-COUNT-BOUND-STATIC-01` | `parser/FILE/Ogg/worker` | [old owner report plus source/evidence SHA](REA_20261025_10H_23H_CRT_OGG_THREAD_SOURCE_RECOVERY_STATIC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-LOCAL-20261025-1636-P0-PARSE-ERROR-FREE-CALLBACK-GATE-STATIC-01` | `parser/FILE/Ogg/worker` | [old owner report plus source/evidence SHA](REA_20261025_10H_23H_CRT_OGG_THREAD_SOURCE_RECOVERY_STATIC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-LOCAL-20261025-1736-P0-FILE-CLOSE-CALLBACK-BRIDGE-STATIC-01` | `parser/FILE/Ogg/worker` | [old owner report plus source/evidence SHA](REA_20261025_10H_23H_CRT_OGG_THREAD_SOURCE_RECOVERY_STATIC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-LOCAL-20261025-1836-P0-OGG-VSLOT10-RELOAD-LIFETIME-STATIC-01` | `parser/FILE/Ogg/worker` | [old owner report plus source/evidence SHA](REA_20261025_10H_23H_CRT_OGG_THREAD_SOURCE_RECOVERY_STATIC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-LOCAL-20261025-1934-P0-OGG-STREAM-GATE-STATIC-01` | `parser/FILE/Ogg/worker` | [old owner report plus source/evidence SHA](REA_20261025_10H_23H_CRT_OGG_THREAD_SOURCE_RECOVERY_STATIC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-LOCAL-20261025-2034-P0-OGG-TEARDOWN-THREAD-WAIT-STATIC-01` | `parser/FILE/Ogg/worker` | [old owner report plus source/evidence SHA](REA_20261025_10H_23H_CRT_OGG_THREAD_SOURCE_RECOVERY_STATIC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-LOCAL-20261025-2134-P0-CRT-THREAD-HANDLE-CLOSE-RACE-STATIC-01` | `CRT/allocator/ABI` | [old owner report plus source/evidence SHA](REA_20261025_10H_23H_CRT_OGG_THREAD_SOURCE_RECOVERY_STATIC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-LOCAL-20261025-2234-P0-CRT-START-FAILURE-OWNERSHIP-STATIC-01` | `CRT/allocator/ABI` | [old owner report plus source/evidence SHA](REA_20261025_10H_23H_CRT_OGG_THREAD_SOURCE_RECOVERY_STATIC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-LOCAL-20261025-2334-P0-FLS-RETURN-ABI-REFUSAL-STATIC-01` | `CRT/allocator/ABI` | [old owner report plus source/evidence SHA](REA_20261025_10H_23H_CRT_OGG_THREAD_SOURCE_RECOVERY_STATIC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+
+Twelve historic REA source IDs, same owner Draft PR, no new native functions claimed. CRT malloc-vs-operator-new failure differences; parser shared cleanup and Ogg FILE ownership; normal vs error worker HANDLE cleanup are distinguished. 23H denied FLS query remains **BLOCKED**, and only earlier allowed static evidence is kept. No new formal VERIFIED/Golden/READY/CURATED. Next old source cursor: 2026-10-26 00H.
