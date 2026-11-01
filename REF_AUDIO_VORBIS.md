@@ -152,3 +152,19 @@ Never collapse the different conditional allocation findings into one proven cra
 **旧索引の訂正**：13H/14Hの「0x005B797Cは関数未認識」は旧V3固有で、現行V9では2026-10-23時点で91-byte関数入口に修復済み。17Hや本節の新規関数発見として二重計上しない。16Hに既知の `0x005B79C9→0x005B79D7` 直接CALLも新規加算しない。18Hの追加証拠JSONは安全拒否された不完全HOLDのまま、別経路取得・書込・採用をしない。
 
 **状態境界**：STATIC = 原本PEの対象命令・限定制御フロー。INFERRED/VERIFY = 実例外配送、異常系・生存時間・NULL/Watson実動作、DLL ABI。正式REA新規5点証拠完備0・新規VERIFIED0、原作ゲーム Golden PASS0 / strict MATCH0 / READY0。関連元資料のSHAと個別研究リンクは上記INDEX、検索可能な識別アドレスは `symbols.tsv` に3行だけ追加した。
+
+
+## Historical REA callback / serial-array / prefill source recovery (2026-10-25 to 2026-10-30)
+
+### Callback predecessor: DUPLICATE_LINKED, not another native discovery
+- `REA-LOCAL-20261025-1736-P0-FILE-CLOSE-CALLBACK-BRIDGE-STATIC-01`, PC-only `rea_lab/decomp_task/REA_20261025_17H_P0_FILE_CLOSE_CALLBACK_STATIC.md`, actual report SHA256 `55C51334154EBF49CA50EF3B8C18F727ED6AAEF7C0ADC1EAC7C7AC45573E5ACC`. This is a historical predecessor of the **already curated** `REA-LOCAL-20261031-00H-P0-OGG-FILE-CLOSE-CALLBACK-STATIC-01` in the callback/ownership section above: `0x5D16C0 -> 0x5D1630 -> 0x5D1490` supplies CRT close candidate `0x5B7A4E` at context+0x2C8 and `0x5CFEEE` can call it conditionally. Earlier 10/25 remarks about `0x5B797C` missing from a historical index are **not** a current-V9 missing-function finding (later 2026-11-01 17H correction). No additional symbol or second CURATED count was created.
+
+### Optional serial-collection pointer and upper return states: CURATED_STATIC / VERIFY
+- `REA-LOCAL-20261029-00H-P0-OGG-NULL-SERIAL-RETURN-GATE-STATIC-01`, PC-only `rea_lab/decomp_task/REA_20261029_00H_P0_OGG_NULL_SERIAL_RETURN_STATIC.md`, actual report SHA256 `B439FCC410B1AE5E2BDC4940D46BBB5814B73C1D82798B79DCA344FB8DD862E3`. This is separate from the 10/31 header-router error mapping above.
+- At `0x005CF094 TEST EAX,EAX; 0x005CF096 JE 0x005CF116`, a null optional serial-array argument skips the table-update block. `0x005CFC2F` is a caller with two zero arguments; `0x005D1572` supplies live addresses. This skip does **not** disable packet parsing or other error paths. In `0x005D1630`, an immediately nonzero initialization result returns unchanged; on success, state `+0x58 != 1` selects `-131`, while later state/decoder paths can reach state3 or cleanup. Do not collapse `-131` into a generic OOM error or claim full exceptional unwinding.
+- Curator independently decoded selected original PE gates, callers and error-return instructions against the original matching PE SHA. Optional table contents, exception reachability, failure propagation and runtime behavior remain VERIFY; Golden and strict MATCH stay zero.
+
+### Initial PCM prefill and worker launch: CURATED_STATIC / VERIFY
+- `REA-LOCAL-20261030-00H-P0-OGG-PREFILL-ERROR-START-CROSSWALK-STATIC-01`, PC-only `rea_lab/decomp_task/REA_20261030_00H_P0_OGG_PREFILL_ERROR_START_STATIC.md`, actual report SHA256 `539DA296831810DACDD0F3EE141602423388CA3671124578B2B762BA3E98CAD7`. Earlier 10/26 fill, 10/29 lower decoder `-3` and EOF/worker findings are predecessors; they are **not** counted again.
+- At `0x005022E9` the caller invokes prefill `0x00502330`, checks only AL at `0x005022EE`, then can call a thread starter `0x005B7D14` at `0x00502300` and store its handle at `stream+0x48`. Inside prefill, the Lock result has a signed-negative branch; after successful Lock the decoder callback `0x005023A0` returns without a local AL test, Unlock `0x005023BF` is followed by unconditional `MOV AL,1` at `0x005023C2`. `stream+0x44` can consequently be set despite a lower error, **conditional on valid pointers and Lock success**.
+- Curator independently decoded those original-PE branch/CALL/AL sites. Actual `-3` simultaneously reaching this path, playback silence, thread-start failure handling, Unlock failures and worker recovery are VERIFY, not an observed audio defect. Golden PASS=0, strict MATCH=0, new READY=0.
