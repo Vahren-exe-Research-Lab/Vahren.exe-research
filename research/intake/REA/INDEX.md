@@ -303,3 +303,7 @@ Original-game Golden PASS 0, new formal five-method/VERIFIED 0, curator-only dev
 | `REA-LOCAL-20261028-23H-P0-OGG-INIT-ALLOC-CLEANUP-STATIC-01` | [SHA and native-source excerpt](REA_20261028_LATE_OLD_OWNER_INTK_STATIC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
 
 Older 8 research IDs linked; no new formal static five-method VERIFIED or gameplay Golden. The three original 2026-11-01 17/19/20H records and 2026-10-31 22 source IDs already referenced in develop are not duplicated.
+
+## Legacy no-ID T014 research source archive (not part of source-ID count)
+
+- [16 original 2026-10-21/22 `T014` static owner documents, source SHA and substantive native excerpts](REA_20261021_22_T014_UNKEYED_LEGACY_STATIC_SOURCE_ARCHIVE.md) — SOURCE_PRESERVED_UNKEYED / DUPLICATE_REVIEW / NOT CURATED. These do **not** add 16 research IDs or VERIFIED functions. The full source remains PC-only; curator to reconcile against T014/ref saving evidence before formal adoption.
