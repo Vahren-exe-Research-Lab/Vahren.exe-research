@@ -44,7 +44,7 @@ Owner independent REA; PRIVATE owner intake, STATIC/INFERRED/VERIFY and NOT CURA
 
 ### REA-LOCAL-20261023-1942-P0-PERSON-STATE4-WRITER-STATIC-01
 
-- Original source: `rea_lab/decomp_task/REA_20261023_1942_P0_PERSON_STATE4_WRITER_STATIC.md` / SHA256 `CBF0FCF42CFFAADBB9F931C4DE5AAB8F29E6E25FEB4E7EFAB68D348B76E03DE9` (rehash 2026-11-02 JST). Original owner `rea_lab/decomp_task/REA_20261023_1942_P0_PERSON_STATE4_WRITER_EVIDENCE.json` SHA256 `71E39036CCE46D9C08DC68F09A0FF2D23FE8CA71484ED539BDECC9D35B4911C`; JSON not uploaded.
+- Original source: `rea_lab/decomp_task/REA_20261023_1942_P0_PERSON_STATE4_WRITER_STATIC.md` / SHA256 `CBF0FCF42CFFAADBB9F931C4DE5AAB8F29E6E25FEB4E7EFAB68D348B76E03DE9` (rehash 2026-11-02 JST). Original owner `rea_lab/decomp_task/REA_20261023_1942_P0_PERSON_STATE4_WRITER_EVIDENCE.json` SHA256 `71E39036CCE46D9C08DC68D1BB11742775138536E39EA2B85320F432AF30EC0F`; JSON not uploaded.
 - VA/CALL/offset search anchors: 0x44CF80, 0x44CF8E, 0x44B7B0, 0x44B5EA.
 - Source-backed, limited interpretation: 0x44CF80 has a +0xA5==0 gate; at 0x44CF8E it sets owner+0x20=4 regardless of +0x18, while +0x18 controls an additional 0x49D1B0 CALL. Other direct writers to +0x20 assign 1,2,3; 0x44CF8E is inside 0x44CF80, not a function entry.
 - Correction / unresolved / next validation: A specific DemoPerson runtime instance reaching this writer and any higher-level game semantics still need original-game corroboration.
