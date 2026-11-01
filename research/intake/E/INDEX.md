@@ -22,6 +22,12 @@ This is the entrypoint for E-owned PRIVATE intake material. **PUBLISHED_INTAKE /
 
 Each section begins with the exact E research ID and gives the PC-relative original report, current source-file SHA256 and selected provenance-linked findings, labeled with the original line numbers. **Not all supporting synthetic Python/JSON fixtures are copied to GitHub**. Consult PC originals and the full fixture SHA receipts before executing or adopting any result.
 
+## Curator-ready evidence search and integrity gates (2026-11-02)
+
+- [Combined C-NB02 real-original Golden G0–G4 evidence acceptance playbook](E-CNB02-GOLDEN-EVIDENCE-ACCEPTANCE-PLAYBOOK-20261102.md): keeps static, synthetic, original limited transitions and old/new strict parity separate.
+- [VA source-mention search index](E-VA-MENTION-INDEX-20261102.tsv): 804 limited mentions, 549 distinct VAs in 89 E owner source reports, all labeled VERIFY/MENTION_ONLY; not an original native symbol dictionary.
+- [361 historical source-line checks, correction triage, develop branch-overlap audit](E-PR17-CITATION-AND-CURATOR-RECONCILIATION-20261102.md): includes 17 same-blob develop/PR records and 170 historical IDs awaiting curator-only adoption.
+
 ## Existing E intake work — link without duplicate publication
 
 - [Draft PR #8](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/8): 6 verified 2026-11-01 offline E IDs (05/10/13–16H).
