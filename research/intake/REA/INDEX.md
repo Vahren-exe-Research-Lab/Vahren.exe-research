@@ -464,3 +464,7 @@ Historical 8 IDs, not new Verified functions; curator-only knowledge adoption. G
 | `REA-20261021-0133-T014-255BYTE-CROSSCALL-01` | [owner historical report SHA](REA_20261010_31_LEGACY_UNKEYED_AND_CORRECTION_A.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
 | `REA-20261021-02H-T014-SPOT-PREFIX255-CASCADE-STATIC-01` | [owner historical report SHA](REA_20261010_31_LEGACY_UNKEYED_AND_CORRECTION_A.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
 | `REA-LOCAL-20261031-09H-P0-VORBIS-CODEBOOK-MALLOC-CLEANUP-STATIC-01` | [owner historical report SHA](REA_20261010_31_LEGACY_UNKEYED_AND_CORRECTION_A.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+
+## 2026-11-02 pre-ID owner archives B
+
+- [13 original legacy T013/T014/unit/event/ABI and safety checkpoint files; source SHA, allowed static findings and errata](REA_20261010_31_LEGACY_UNKEYED_AND_CORRECTION_B.md) — ID-less documents remain `PRESERVED_UNKEYED_SOURCE / DUPLICATE_REVIEW` and do NOT inflate the researched native function count. Existing-ID errata link to the same original ID, not a new ID. Safety holds are metadata-only.
