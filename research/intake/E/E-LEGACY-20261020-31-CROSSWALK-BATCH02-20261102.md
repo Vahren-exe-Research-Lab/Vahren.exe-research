@@ -34,7 +34,11 @@ Curation: reconcile superseding corrections and source ownership with original E
 
 **E source:** `tests/T020_CNB02_G2_ROSTER_ROLE_COVERAGE_REGRESSION_20261026_09H.md`; **SHA256:** `759606ba516928c21a623fe3c2a3f8ceb9da73a8ccd872c417c89bbb6a4dad91`; **size:** 4786 bytes. **Title:** E-AUDIT-20261026-09H-T018-T020-G2-ROSTER-PRESENCE-REGRESSION-01. **Golden:** not established; **new READY:** none.
 
-_No safely extractable standalone claim; owner original remains required for curation._
+Additional source-grounded E excerpts (original file lines):
+- L6: 11H source tests/t020_cnb02_g2_semantic_review_20261025_11H.py PC actual SHA A76D5499B1751443705649B02687DEA5D6FCBDEBDA5323A209695DC9F5736E66; explicitly flags NO_DEFENSE_ROSTER_RECEIPT if no defense row.
+- L7: 08H source tests/t020_cnb02_g2_roster_shape_diagnostic_20261026_08H.py PC actual SHA 36F12B3B71C249A8FD56F7F65E13D3A513333F3F4538AB5BC95C82291E30A032; its test baseline contains only one attack roster row while attack and defense side lists are nonempty, and the baseline returns issues=[].
+- L8: **Regression in diagnostics, not a native game defect:** 08H dropped the 11H absence-of-defender-roster warning. Neither 08H nor 11H produces Golden PASS; 08H verdict remained VERIFY_NOT_GOLDEN. This is not actual roster loss or an assertion that side lists equal deployed Unit IDs.
+- L9: Parent receipt source unchanged, actual SHA 34BC469C50471A1BCE58D2815D6E5D9A4CF45D6CD2232898312FDE69A15E349D. Original target EXE reference SHA E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187 is from historical manifest, not rehashed or executed here.
 
 Curation: reconcile superseding corrections and source ownership with original E report and applicable native owner evidence before promoting interpretation.
 
@@ -42,7 +46,11 @@ Curation: reconcile superseding corrections and source ownership with original E
 
 **E source:** `tests/T020_CNB02_G2_ROSTER_SEMANTIC_GAP_READONLY_20261025_10H.md`; **SHA256:** `39dbe2d6f9688f93253d59e31ec28ae5c3f654e7f62f5c9ccec0105d39185602`; **size:** 4714 bytes. **Title:** E-AUDIT-20261025-10H-T018-T020-G2-ROSTER-SEMANTIC-CHECK-01. **Golden:** not established; **new READY:** none.
 
-_No safely extractable standalone claim; owner original remains required for curation._
+Additional source-grounded E excerpts (original file lines):
+- L4: Read-only inspected E-owned tests/t020_cnb02_receipt_provenance_gate_20261021_2345.py SHA256 34BC469C50471A1BCE58D2815D6E5D9A4CF45D6CD2232898312FDE69A15E349D; existing G1 timing policy T020_G1_ATTACK_PHASE_RECEIPT_POLICY_RECONCILIATION_20261024_2053.md SHA C7FDA98DD1E77EFDA506374167029DE06B587DF24E806BCF94BB122788322F11.
+- L5: Existing gate checks g2.map_id truthy, sides keys exactly attack/defense/support and each value list, roster nonempty list and every record's side/unit_visible/troop_visible truthy. It does NOT check roster.side domain or association with side lists, actual deployed identity, element type, unique identity, or match to MAP file. E-owned byte-binding gate is separa
+- L10: Exact roster duplicate = SYNTHETIC_SCHEMA_ONLY; map_id='STATIC_UNCONFIRMED_MAP' = SYNTHETIC_SCHEMA_ONLY; troop_visible=42 = SYNTHETIC_SCHEMA_ONLY; missing support key = VERIFY (positive negative-control).
+- L11: SYNTHETIC false with pre-filled placeholder 64hex hashes/old_observed=true: baseline = ELIGIBLE_FOR_REVIEW_NOT_MATCH; roster.side='neutral' = same; empty attack+defense = same; unit_visible=17 = same.
 
 Curation: reconcile superseding corrections and source ownership with original E report and applicable native owner evidence before promoting interpretation.
 
@@ -50,7 +58,11 @@ Curation: reconcile superseding corrections and source ownership with original E
 
 **E source:** `tests/T020_CNB02_G2_ROSTER_SHAPE_NEGATIVE_EXEC_20261026_08H.md`; **SHA256:** `cd5459c17ff88735d62518326fe7a36d1168b9e023ed2786ecb89e8bb0a64bf4`; **size:** 4386 bytes. **Title:** E-AUDIT-20261026-08H-T018-T020-G2-ROSTER-SHAPE-NEGATIVE-EXEC-01. **Golden:** not established; **new READY:** none.
 
-_No safely extractable standalone claim; owner original remains required for curation._
+Additional source-grounded E excerpts (original file lines):
+- L10: 2026-10-25 10H E review designed S01-S07 but did not implement maintained executable cases. New independent E-owned tests/t020_cnb02_g2_roster_shape_diagnostic_20261026_08H.py implements these as a **non-authoritative, shape-only diagnostic**; it does not edit or replace the old provenance gate.
+- L11: Cases S01 unknown role, S02 numeric role, S03 empty attack+defense, S04 duplicate roster reference (VERIFY, not native-invalid), S05 unverified MAP placeholder, S06 numeric Unit and Troop, S07 missing support array; separate cases ensure support=[] is valid shape and bool/nonobject/empty roster are flagged.
+- L12: 14 new synthetic unittest cases: 14/14 PASS, failures=0. PC source SHA256=36F12B3B71C249A8FD56F7F65E13D3A513333F3F4538AB5BC95C82291E30A032.
+- L13: Positive synthetic shape can yield issues=[] but the only returned verdict is VERIFY_NOT_GOLDEN. The test also confirms fake 64hex hashes and old_observed=True do not promote verdict. This runner NEVER inspects native MAP bytes, side-role proof, deployment-time atomicity, or G0/G1 identity.
 
 Curation: reconcile superseding corrections and source ownership with original E report and applicable native owner evidence before promoting interpretation.
 
@@ -95,7 +107,11 @@ Curation: reconcile superseding corrections and source ownership with original E
 
 **E source:** `tests/T020_CNB02_MODE2_PREACTIVE_PHASE_BOUNDARY_20261025_18H.md`; **SHA256:** `5d8de36ca113fb8948c9ce669f90bdbe3f69e73206cfad643a20e189352e3c20`; **size:** 4473 bytes. **Title:** E-AUDIT-20261025-18H-T018-T020-MODE2-PREACTIVE-PHASE-BOUNDARY-01. **Golden:** not established; **new READY:** none.
 
-_No safely extractable standalone claim; owner original remains required for curation._
+Additional source-grounded E excerpts (original file lines):
+- L3: ## Source and independently bounded original observation
+- L5: Primary stored watch source: rea_lab/headless_analysis/search_index/BATTLE_ORIGINAL_WATCH_23272_20261021T142710802580Z.jsonl. Its existing byte SHA256 independently reconfirmed this run by Get-FileHash: 9DF9A0D8C7D15958F4711478ED6DFF1F912E49313D6FC5BA5DCBC5B089E262A7.
+- L6: Primary saved watch interpretation: search_index/BATTLE_G0_ORIGINAL_BATTLE_TRACE_REVIEW_20261021.json, corroborated by BATTLE_G0_LEGAL_ORIGINAL_NATIVE_RUN_CONFIRMED.json (no newly run original battle).
+- L9: The existing 16H gate emits G2_PRE_ACTIVE for any candidate G2 capture before ACTIVE=1; 17H overlay similarly admits only ACTIVE window for active G2 review.
 
 Curation: reconcile superseding corrections and source ownership with original E report and applicable native owner evidence before promoting interpretation.
 
@@ -130,7 +146,11 @@ Curation: reconcile superseding corrections and source ownership with original E
 
 **E source:** `tests/T020_CNB02_POSTBATTLE_WAR_TREE_VS_DEPLOYED_G2_PHASE_GATE_20261025_12H.md`; **SHA256:** `d06023527e6d9cc4d3055c8d86e3d22e97b96af9e98e642db92dc9338710acb9`; **size:** 4472 bytes. **Title:** E-AUDIT-20261025-12H-T018-T020-POSTBATTLE-WARTREE-PHASE-GATE-01. **Golden:** not established; **new READY:** none.
 
-_No safely extractable standalone claim; owner original remains required for curation._
+Additional source-grounded E excerpts (original file lines):
+- L2: Owner: E / T018,T020; 2026-10-25 12H JST. SAVED ORIGINAL OBSERVATION AUDIT + NEW SYNTHETIC/ARCHIVE REGRESSION / VERIFY / NOT READY. No native game execution.
+- L4: 2026-10-21 original PID23272 postbattle war-tree witness and both original watch windows were crosschecked as distinct stages. Shared PID/EXE and 12 definition pointers CANNOT establish deployed roster G2.
+- L6: Postbattle decode BATTLE_ORIGINAL_WAR_TREE_DECODE_V5_23272_20261021T144551063564Z.json: SHA256 05641C668BCA02EE12DDDB1136548D451D7875A775F00B6D4DA77BF8EE88DF29; source_kind ACTUAL_ORIGINAL_GAME_POSTBATTLE_MEMORY_NOT_ATOMIC, attack definition pointers 12, help_count=0, native_battle_start_packet_proven=false and native_result_writeback_proven=false.
+- L7: First original watch JSONL SHA256 9DF9A0D8C7D15958F4711478ED6DFF1F912E49313D6FC5BA5DCBC5B089E262A7: 234 lines; last WATCH_TIMEOUT captures_saved=0/attempted_capture=28, existing active battle 14:31..14:33Z.
 
 Curation: reconcile superseding corrections and source ownership with original E report and applicable native owner evidence before promoting interpretation.
 
@@ -164,7 +184,11 @@ Curation: reconcile superseding corrections and source ownership with original E
 
 **E source:** `tests/T020_CNB02_RECEIPT_PROVENANCE_GATE_20261021_2345.md`; **SHA256:** `87ae9409834fa7fd0cc48477bd2062bd73643e7616a58cbeb204bfa61d06feb8`; **size:** 2449 bytes. **Title:** T018/T020｜C-NB02 出典・時相・出撃名簿証拠ゲート. **Golden:** not established; **new READY:** none.
 
-_No safely extractable standalone claim; owner original remains required for curation._
+Additional source-grounded E excerpts (original file lines):
+- L6: 既存 tests/t020_battle_return_commit_gate_20261021_2147.py は old_hashes/captures に "present" を入れても型上は合格し得る。これは合成shape設計用でバグ確定ではないが、実測Goldへ昇格させる場合の証拠ゲートとして不十分。
+- L8: 全source hash・stage capture hashは64桁hex、EXE SHAは許可されたv0.67に一致が必要。文字列"present"やSTATICのみの観測を拒否。
+- L9: G0 UI entrance、G1 戦闘直前SAVE+入力は厳密な相互順序を固定しない（入口確認とSAVE採取は前後し得る）。ただし両者はG2実配置より前、G2=G3戦闘終了直前G4戦略復帰の順序が必要。
+- L10: 全G0-G4は同一run IDと別stage capture証拠を保持し、G2には可視MAPと攻防支援3side（支援無しは空配列）・順序付きUnit/Troop識別を要求。
 
 Curation: reconcile superseding corrections and source ownership with original E report and applicable native owner evidence before promoting interpretation.
 
@@ -200,7 +224,11 @@ Curation: reconcile superseding corrections and source ownership with original E
 
 **E source:** `tests/T020_CNB02_WATCH1_OBSERVATION_BRACKET_EXEC_20261025_20H.md`; **SHA256:** `92bf7265ef6fcf571f8b9ee4bb3b59a377d7a77d214c58cb0b0f8e44657156ad`; **size:** 4069 bytes. **Title:** E-AUDIT-20261025-20H-T018-T020-WATCH1-OBSERVATION-BRACKET-EXEC-01. **Golden:** not established; **new READY:** none.
 
-_No safely extractable standalone claim; owner original remains required for curation._
+Additional source-grounded E excerpts (original file lines):
+- L5: Local read-only Get-FileHash current source SHA256=9DF9A0D8C7D15958F4711478ED6DFF1F912E49313D6FC5BA5DCBC5B089E262A7; matches prior 19H receipt.
+- L11: First run: 6 test methods, B05 subcase FAIL: naive mode-return uncertainty classifier emitted PHASE_BOUNDARY_VERIFY for 14:33:35 UTC, while 19H expected NOT_DEPLOYED_G2.
+- L12: Independent logic check: 14:33:34.325867 UTC already confirms ACTIVE=0 in saved watcher; MODE2-MODE1 is bracketed through 14:33:35.933687. Subject to single-edge/no-hidden-toggle and common observer clock, deployed-active G2 is excluded in this interval despite uncertainty about return-to-mode1 time.
+- L13: Corrected only this new E file: B05 status NOT_DEPLOYED_G2 plus independent mode_return_uncertain=true. No change to archived source/19H fixture. The initial failure is a new regression-model bug, not a native-game bug or safety refusal.
 
 Curation: reconcile superseding corrections and source ownership with original E report and applicable native owner evidence before promoting interpretation.
 
@@ -208,7 +236,11 @@ Curation: reconcile superseding corrections and source ownership with original E
 
 **E source:** `tests/T020_CNB02_WATCH1_SAMPLING_BOUNDS_20261025_19H.md`; **SHA256:** `b4e7bdedb3a42170f74d0000cc685ba51fd2db816a9729614406f50e923b68fb`; **size:** 3800 bytes. **Title:** E-AUDIT-20261025-19H-T018-T020-WATCH1-SAMPLING-BOUNDS-01. **Golden:** not established; **new READY:** none.
 
-_No safely extractable standalone claim; owner original remains required for curation._
+Additional source-grounded E excerpts (original file lines):
+- L5: Source SHA256 independently rechecked: 9DF9A0D8C7D15958F4711478ED6DFF1F912E49313D6FC5BA5DCBC5B089E262A7. 234 JSONL records, 204 state/initial observations in this read, PID23272 per prior source report.
+- L15: B02 capture between first observed MODE2 and last observed ACTIVE=0 is PREACTIVE_REVIEW_ONLY, never final deployed roster without same-run atomic G2 evidence.
+- L16: B03 capture inside ACTIVE-enter bracket is PHASE_BOUNDARY_VERIFY, not automatically ACTIVE_G2_ELIGIBLE.
+- L17: B04 capture inside ACTIVE-exit bracket is PHASE_BOUNDARY_VERIFY, not automatically ACTIVE_G2_ELIGIBLE.
 
 Curation: reconcile superseding corrections and source ownership with original E report and applicable native owner evidence before promoting interpretation.
 
