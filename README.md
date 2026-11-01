@@ -28,6 +28,7 @@
 | `REF_AUDIO_VORBIS.md` | 原作音声系（Vorbisヘッダ解析）についてREAの原作x86根拠と未検証の境界をまとめたもの |
 | `REF_BATTLE_TAKEOVER.md` | 戦闘乗っ取り・外部結果統合の入口、Task/VM・原作終了処理・IPC・セーブの境界と未検証課題 |
 | `REF_SAVE_PERSISTENCE.md` | A/T014：global.sav、通常save、共有envelope、イベント実行履歴、未検証境界 |
+| `REF_SAVE_FORMAT.md` | 通常セーブ（.sav）のバイト形式と、Unit・Spot・Power・ターン進行の各項目の意味（書出し順・オフセット・確かさ）。古い残り（切り詰めない上書き）の実測と、既存研究の誤り一覧 |
 | `REF_RANDOM_EVENTS.md` | C/T031–T034：ランダムイベント周期・抽選・効果、茶会の特殊処理と未検証境界 |
 | `REF_RTS_SCENARIO.md` | D/T030：RTS専用シナリオ、wave、勝敗、資源、native未確証の境界 |
 | `REF_SCRIPT_VM_CONTEXT.md` | A/T005–T010：旧VM文法、API、context原作差分・優先順位・時計 |
@@ -169,7 +170,7 @@ python -B knowledge\tools\research_index.py --check
 - **全研究のメタデータ一覧**: [RESEARCH_SOURCE_CATALOG.tsv](RESEARCH_SOURCE_CATALOG.tsv)。PC研究本文から生成した相対パス・SHA256・タスク/分野の仮分類。原始証拠の移動や削除は行わない。
 - **重複・矛盾の検査入口**: [RESEARCH_DUPLICATE_CANDIDATES.tsv](RESEARCH_DUPLICATE_CANDIDATES.tsv) と [RESEARCH_DUPLICATE_TRIAGE.md](RESEARCH_DUPLICATE_TRIAGE.md)。完全一致と研究ID共有は区別。9件以上を含むID群も一覧に明示し、元資料の削除・意味の統合は自動では行わない。
 - **分類別の規模・未検証範囲**: [RESEARCH_INTEGRATION_SNAPSHOT.md](RESEARCH_INTEGRATION_SNAPSHOT.md)。分類はHEURISTICであり正式のOWNER/READYに昇格しない。
-- **分野別の研究横断入口**: [REF_UNIT_EXP_SUMMON.md](REF_UNIT_EXP_SUMMON.md)（ユニット・EXP・訓練）、[REF_BATTLE_AI_MORALE.md](REF_BATTLE_AI_MORALE.md)（戦闘・AI・士気）、[REF_AUDIO_VORBIS.md](REF_AUDIO_VORBIS.md)（音声解析）、[REF_SAVE_PERSISTENCE.md](REF_SAVE_PERSISTENCE.md)（セーブ）、[REF_RANDOM_EVENTS.md](REF_RANDOM_EVENTS.md)（乱数イベント）、[REF_RTS_SCENARIO.md](REF_RTS_SCENARIO.md)（RTS）、[REF_SCRIPT_VM_CONTEXT.md](REF_SCRIPT_VM_CONTEXT.md)（VM・設定・時計）、[REF_SCENARIO_COMPAT.md](REF_SCENARIO_COMPAT.md)（旧シナリオ）、[REF_STRATEGY_ECONOMY.md](REF_STRATEGY_ECONOMY.md)（戦略・内政・教育・商人・防衛）。原作の出典とSTATIC/INFERRED/VERIFY・Golden0を区別。
+- **分野別の研究横断入口**: [REF_UNIT_EXP_SUMMON.md](REF_UNIT_EXP_SUMMON.md)（ユニット・EXP・訓練）、[REF_BATTLE_AI_MORALE.md](REF_BATTLE_AI_MORALE.md)（戦闘・AI・士気）、[REF_AUDIO_VORBIS.md](REF_AUDIO_VORBIS.md)（音声解析）、[REF_SAVE_PERSISTENCE.md](REF_SAVE_PERSISTENCE.md)（セーブ）、[REF_SAVE_FORMAT.md](REF_SAVE_FORMAT.md)（通常セーブの形式と項目）、[REF_RANDOM_EVENTS.md](REF_RANDOM_EVENTS.md)（乱数イベント）、[REF_RTS_SCENARIO.md](REF_RTS_SCENARIO.md)（RTS）、[REF_SCRIPT_VM_CONTEXT.md](REF_SCRIPT_VM_CONTEXT.md)（VM・設定・時計）、[REF_SCENARIO_COMPAT.md](REF_SCENARIO_COMPAT.md)（旧シナリオ）、[REF_STRATEGY_ECONOMY.md](REF_STRATEGY_ECONOMY.md)（戦略・内政・教育・商人・防衛）。原作の出典とSTATIC/INFERRED/VERIFY・Golden0を区別。
 - PCで全文検索索引を更新した後、研究ROOTで `python -B knowledge/tools/audit_research.py --root . --out knowledge` を実行してメタデータを再生成する。GitHubへは機密・サイズ・所有者・重複を監査した軽量成果だけを同期する。
 - **注意**: GitHub上のTSVは原始本文のバックアップではない。PCオフライン時は参照先未取得を明示し、実機検証なしに確度を上げない。
 

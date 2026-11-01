@@ -14,6 +14,13 @@
 - 失敗/再開: `KB_SYNC_BLOCKED_20261029.md`、`SYNC_PROTOCOL.md`、ローカル `.git/kb-sync-journal.jsonl`。
 - 生成DBの復元: 原作を扱う許可済PC上の研究ROOTにて `python -B knowledge/tools/build_kb.py`。GitHubには原作・V9実DBのバックアップはない。
 
+## 2026-11-01 KB-DATUI / KB-SAVE（Claude）
+
+- develop 0225b2e を基準に隔離 worktree で作業。develop は統合用 worktree が使用中のため `sync_knowledge.py start/checkpoint/publish` は使えず、同じ検査（`.git/kb-sync.lock` の排他、PRIVATE 確認、origin/develop が基準と一致、作業ツリー clean、push 後の ls-remote 一致）を手作業で行った。
+- `work/kb-KB-DATUI-20261101`（5ba36b7）: 汎用一覧 v4 の調査（R1101）と、未送信だった selector-cancel（68e0546）の取消契約節。
+- `work/kb-KB-SAVE-20261101`: DATUI の上に重ねた。通常セーブ形式 `REF_SAVE_FORMAT.md` を新設し許可リストへ追加、symbols/structs の追加と既存の誤り修正。統合は DATUI → SAVE の順に ff-only。
+- 確かさの引上げ（ユーザー承認 2026-11-01）: 0x8BCF00・0x521560 → 実機確認（R1101）、0x598CE0・0x596AA0・0x471AF0・0x471D20 → 静的確認（T014 監査15〜19 と実セーブ byte 一致）。生成時は `build_kb.py --accept-confidence-change` が要る。
+
 ## 新規クローンからの復元確認（2026-10-29）
 
 - 検証対象のprivate developコミット: `96c9fce5a0645e0ee6c15f6a8ff2d240a0a9f322`。

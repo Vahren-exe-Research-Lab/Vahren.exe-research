@@ -20,7 +20,7 @@ class KnowledgeSecurityTests(unittest.TestCase):
             "!/symbols.tsv\n!/structs.tsv\n",encoding="utf-8")
 
     def test_curated_domain_guides_are_allowlisted_and_discoverable(self):
-        guides = ("REF_SAVE_PERSISTENCE.md", "REF_RANDOM_EVENTS.md",
+        guides = ("REF_SAVE_PERSISTENCE.md", "REF_SAVE_FORMAT.md", "REF_RANDOM_EVENTS.md",
                   "REF_RTS_SCENARIO.md", "REF_SCRIPT_VM_CONTEXT.md",
                   "REF_SCENARIO_COMPAT.md", "REF_STRATEGY_ECONOMY.md",
                   "RESEARCH_DUPLICATE_TRIAGE.md")
