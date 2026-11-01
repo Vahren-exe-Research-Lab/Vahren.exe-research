@@ -1,0 +1,19 @@
+# B/T011/T013: group+0x34 weighted aggregation and AL=1 registration gates (2026-11-01 09H)
+research_id: B-OFFLINE-20261101-09H-T011-T013-GROUP34-WEIGHTED-SQRT-01
+owner: B; tasks: T011,T013; T028 / morale linkage unproven. Observed 2026-11-01 09H JST offline; actual PC source rehash 2026-11-02 01H JST.
+status: PUBLISHED_INTAKE / GITHUB_STAGED / NOT_CURATED; evidence_kind: STATIC_NATIVE / INFERRED / VERIFY; Golden PASS=0; strict MATCH=0; DYNAMIC=0; new READY=0.
+source_relative: data/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md lines 1–46; actual PC report SHA256=196375A50098E099512A9DD7F6EFC62E02DC80CB308A87B3771F0C876EF34F3B.
+original PE SHA256=E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187; original native function VA 0x569280 (222 bytes) SHA256=B3E227C031A013EC693F1AC2DBF6CF729DAE4F77FDDDD78CE352CA14BE6FA7FA. Ghidra pseudo-C functions/0056/00569280.c SHA256=196E85C4BF1DDC4A4D10EFF87BCEFB422AD49B6E7E1262F9B3CFAFBEE6C50D74.
+## Reusable conditional calculation
+0x56928C writes group+0x34=0; iterates group member pointer range (+0xC..+0x10), treating Unit+0x1867C==0 as live, with count n. For each eligible member the contribution is either 0 if Unit+0xB0==0 AND Unit+0xA8==0 AND Unit+0x1E530 < global[0x65BC5C], or 2*signed32(Unit+0x228) otherwise (native LEA at 0x5692ED).
+n==0 leaves group+0x34 zero. n>0: 0x56930D native signed IDIV n produces A = trunc_toward_zero(sum/n) for ordinary representable inputs; signed overflow edge cases VERIFY.
+If group+0x30==1, branch 0x56930F with signed comparison 0x56931A/JGE 0x56931C yields group+0x34 = A*min(n,group+0x38) in ordinary nonnegative range. If group+0x30!=1, 0x56933A E8→0x5E3B70 (sqrt), 0x569345 E8→0x5B6ED0 (ceil-family), 0x56934D E8→0x5D1B80 (FP->integer) before 0x569352 multiply and 0x569355 store. For positive finite n, group+0x34 approximately A*ceil(sqrt(n)); exact rounding and overflow INFERRED/VERIFY.
+The group+0x34 field's actual gameplay meaning is UNKNOWN; do not label it morale, HP, or attack power.
+0x568FB6 tests group+0x1D; zero skips the member follow-up and the call to 0x569280, while nonzero proceeds through unit updates and 0x56902C E8→0x569280. This prior 08H route is a crosslink and NOT an independent additional finding.
+AL=1 caller 0x5282C0: group+0x1C==0 at 0x5282C5 and first Unit+0x1FA==0 at 0x5282DA, group lookup excludes already registered group, then 0x528304 E8→0x5299E0; 0x52830C AL=1 CALL→0x5695B0; 0x528312→0x529B60. Potential empty-group dereference remains VERIFY, not an observed crash.
+AL=1 caller 0x5284A0 requires non-NULL Unit; Unit+0x8C==0/+0x1F8!=0/+0x1867C==0/+0x1D0!=0/+0x1867E==0/+0x1FA==0; 0x5284E2 E8→0x568710 then 0x5284EA E8→0x5695B0 with AL=1. 08H enumeration of four AL=1 direct sites is not recounted as a new 09H discovery.
+## Provenance and next validation
+Local owner read-only verifier data/B_20261101_09H_GROUP34_WEIGHTED_SQRT_NATIVE_READONLY_VERIFY.py produced evidence data/B_OFFLINE_20261101_09H_GROUP34_WEIGHTED_SQRT_EVIDENCE.json (historical synthetic/static checks 58/58; NOT original gameplay or rerun now). No original EXE or DB uploaded.
+KB_CANDIDATE: VA 0x569280/0x568FB0/0x5282C0/0x5284A0; direct E8 0x56902C/0x56933A/0x569345/0x56934D/0x52830C/0x5284EA; offsets group+0x1C/+0x1D/+0x1E/+0x30/+0x34/+0x38; Unit+0x228/0x1867C and conditional fields. STATIC/INFERRED/VERIFY.
+Golden needed: live n 0–5, group mode and cap, per-Unit field conditions, initial +0x34, same EXE/DAT/SAVE/MAP/seed/inputs/tick, observed next-step Unit behavior. No original-game PASS, strict MATCH or READY.
+next_validation: inspect group+0x34 consumers, +0x1D writers and caller empty-vector invariant in unblocked native source; continue T011 summon EXP / T012 damage / T013 final target / T024 AI / T028 retreat, without bypassing old denials.
