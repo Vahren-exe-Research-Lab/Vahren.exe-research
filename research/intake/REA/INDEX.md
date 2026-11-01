@@ -454,3 +454,13 @@ Not formal new VERIFIED or gameplay Golden; dedicated curator only for develop.
 | `REA-20261020-2335-T014-DIPLO-MODE0-ZEROCOPY-01` | [old report SHA and safe native source](REA_20261020_LEGACY_OWNER_QC_RECOVERY.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
 
 Historical 8 IDs, not new Verified functions; curator-only knowledge adoption. Golden PASS/READY 0.
+
+## 2026-11-02 pre-ID owner archives A
+
+- [13 original legacy T013/T014/unit/event/ABI and safety checkpoint files; source SHA, allowed static findings and errata](REA_20261010_31_LEGACY_UNKEYED_AND_CORRECTION_A.md) — ID-less documents remain `PRESERVED_UNKEYED_SOURCE / DUPLICATE_REVIEW` and do NOT inflate the researched native function count. Existing-ID errata link to the same original ID, not a new ID. Safety holds are metadata-only.
+
+| Existing owner research ID newly linked | Source | Stage |
+| --- | --- | --- |
+| `REA-20261021-0133-T014-255BYTE-CROSSCALL-01` | [owner historical report SHA](REA_20261010_31_LEGACY_UNKEYED_AND_CORRECTION_A.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-20261021-02H-T014-SPOT-PREFIX255-CASCADE-STATIC-01` | [owner historical report SHA](REA_20261010_31_LEGACY_UNKEYED_AND_CORRECTION_A.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-LOCAL-20261031-09H-P0-VORBIS-CODEBOOK-MALLOC-CLEANUP-STATIC-01` | [owner historical report SHA](REA_20261010_31_LEGACY_UNKEYED_AND_CORRECTION_A.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
