@@ -146,3 +146,16 @@ This batch reconciles **four older owner reports** with current private develop 
 Historical REA filename inventory (184 dated static reports, 2026-10-23 through 2026-11-02) is a **candidate inventory, not 184 distinct findings**. After this batch, the remaining historical reports require ID/VA/source-hash/meaning deduplication against prior REF and owner corrections. Revisit by **research-ID cursor**, not filenames or all-file hashes; do not start banned historical runs or attempt the 18H safety-held JSON. Existing B/E backlog and PRs remain separately pending.
 
 Read-only PC `research_index.py --check` cursor on this batch: 1,941 indexed source files, **12 modified pending, 0 removed** (exit code 1 because updates are pending). This does not mean 12 new discoveries. The generated research DB was left unchanged; refresh only after owner/lock-safe incremental review.
+
+
+## Curator B13–15 distance comparator backlog cursor (2026-11-02 04H)
+
+Owner canonical intake already existed on `develop` and is **not republished or counted as newly staged**. Curator checked three original PC report SHA256 values and the unmodified original PE, then decoded selected bounded native x86 sites. Only the static subclaims in [REF_BATTLE_AI_MORALE.md](../../REF_BATTLE_AI_MORALE.md#historical-bt011-t024-distance-list-evidence-13h15h-curated-2026-11-02) are **CURATED_STATIC**. B15 remains **VERIFY/SYNTHETIC_ONLY**. Golden=0, strict MATCH=0, new READY=0.
+
+| Research ID | Original PC source SHA256 | Intake → curated state |
+| --- | --- | --- |
+| `B-OFFLINE-20261101-13H-T011-T024-DISTANCE-SORT-MODE-GATE-01` | `data/T011_T024_NONMODE3_DISTANCE_ORDER_AND_MODE3_MEMBER_GRID_NATIVE_20261101_13H.md` / `91C075A695E87CA039EE4DCE07281F56C0C893A4F6903AB83A02195C227E46B6` | [source](B/B-OFFLINE-20261101-13H-T011-T024-DISTANCE-SORT-MODE-GATE-01.md); **CURATED_STATIC** (two native list calls, 26-bucket merge, bounded mode3 Unit expansion). Predecessors B11/B12 not re-counted. |
+| `B-OFFLINE-20261101-14H-T011-T024-DISTANCE-COMPARE-BOUNDARY-01` | `data/T011_T024_DISTANCE_COMPARATOR_BOUNDARY_CROSS_GATES_OFFLINE_20261101_14H.md` / `2A6F516810D29B5B6E08AF683892CA8AD32300C7BDBF52C336E3D423064DAF63` | [source](B/B-OFFLINE-20261101-14H-T011-T024-DISTANCE-COMPARE-BOUNDARY-01.md); **CURATED_STATIC** x86 integer/x87/flag gates, modeled overflow **VERIFY/SYNTHETIC**. Not an independently new sorter. |
+| `B-OFFLINE-20261101-15H-T011-T024-NAN-COMPARATOR-TRANSITIVITY-01` | `data/T011_T024_DISTANCE_NAN_COMPARATOR_NONTRANSITIVE_OFFLINE_20261101_15H.md` / `F8709B82172978E67A3DE07AA5E994D8D4269BAAF294C5C43296F1764B90E952` | [source](B/B-OFFLINE-20261101-15H-T011-T024-NAN-COMPARATOR-TRANSITIVITY-01.md); **VERIFY / SYNTHETIC_ONLY**, linked to B13/B14 but NOT_CURATED as observed native gameplay. |
+
+Cursor: B 16–19H owner SHA + native/corrections, unreviewed older B/E/REA/A/C/D IDs and the 12 dirty research-index entries. Do not invoke the known prohibited XREF or other refused evidence, and do not count 13–15H reports as three new native discoveries.
