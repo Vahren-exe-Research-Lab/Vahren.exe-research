@@ -36,6 +36,12 @@ Each section begins with the exact E research ID and gives the PC-relative origi
 - [This draft PR #17](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/17): 15 previously staged E source IDs (10/31 17–23H and 11/1 03/04/06–09/11/12H), plus the 193 historical original-source research IDs now indexed here. These are **208 distinct source IDs on this draft branch**, not 208 different original-game discoveries.
 - Existing private develop [E G0–G2 source entry](E-PC-20261101-GOLDEN-G012-AND-KB-BACKLOG.md) summarizes E 11/1 17–20H receipts. The 6 local E 17–20H report/receipt paths in the develop source catalog are metadata-linked; this intake does not duplicate them.
 
+## Historical E reproducibility asset locator (metadata only)
+
+- [E/T020 reproducibility assets: 337 safe local Python/JSON byte-SHA receipts](E-T020-REPRO-ASSET-RECEIPTS-20261102.tsv): PC-only code/data, 168 Python + 169 JSON; 3 withheld by name/scope, not executable or Golden proof.
+
+The named PC-only research tools are not supplied as executable source by this GitHub index. Review their owner/source license, data safety and source-hash against the approved PC copy before choosing a specific tool to reproduce a synthetic negative. Do not claim all 337 files implement independent results or all run successfully.
+
 ## Unpublished, excluded or unresolved evidence
 
 - The full `tests/T018_GOLDEN_CORPUS.md` table and `MASTER_LEDGER.md` stay on authorized research PC; earlier table-boundary safety refusal remains **BLOCKED**, and these were **not copied**, even partially through an alternate path. E research before 2026-10-20 in the legacy ledger is not newly claimed as fully archived.
