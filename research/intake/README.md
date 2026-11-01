@@ -2,6 +2,17 @@
 
 This is the **searchable owner-source intake**; a source ID, file or owner unit test is not verified original gameplay. `PUBLISHED_INTAKE / VERIFY / NOT_CURATED` until curator examines original bytes and correction lineage. Original Golden PASS=0, strict MATCH=0, newly accepted READY=0. Official semantic knowledge remains in `REF_*.md` and `symbols.tsv` / `structs.tsv` only after independent review.
 
+## Curator-admitted B17/B18 source meaning (2026-11-02, bounded native only)
+
+These two owner sources were **already PUBLISHED_INTAKE in develop** (intake increment **0**). PC source report hashes 2/2 and original PE SHA256 were independently rechecked; 2/2 original 41-byte B18 windows and 13/13 selected native instruction bytes matched. Both are now `CURATED_STATIC` **only** for their native branch/direct-call and shared-global-store facts in [REF_BATTLE_AI_MORALE.md](../../REF_BATTLE_AI_MORALE.md). Do not infer global stable sorting, actual coordinate identity, final movement or original gameplay; Golden PASS=0, strict MATCH=0, READY=0.
+
+| Owner ID | Pinned prior source and dedup | Curated boundary |
+| --- | --- | --- |
+| `B-20261101-17H-T024-52AD00-MERGE-TIE-LOCAL-STABILITY-01` | [B17 source](B/B-20261101-17H-T024-52AD00-MERGE-TIE-LOCAL-STABILITY-01.md); [owner PR #15](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/15) head `8167e8401a21` | Original E8 comparison, AL zero branch, two list splice calls, three caller sites; equal-distance left preference **INFERRED/VERIFY**. |
+| `B-20261101-18H-T024-DUAL-REFERENCE-COORD-AND-PC-RESTORE-01` | [B18 source](B/B-20261101-18H-T024-DUAL-REFERENCE-COORD-AND-PC-RESTORE-01.md); same owner PR/head | Two bounded sequences: different EDI/ESI input and stack references, common stores `0x8BE048/4C`, two `0x529DC0` E8. Coordinate semantics and caller ABI **VERIFY**. |
+
+**DUPLICATE_LINKED, not newly discovered:** B13 already reported both `0x529DC0` callers; B17 repeats earlier B13 upper `0x52AD00` edges while adding a bounded AL/branch review. B15 comparator and B16 midpoint studies are distinct prior IDs and remain separately queued. Next cursor: B19H reference/ftol/Y-flip and the older B, E and REA unreviewed owner IDs by research-ID/SHA/errata, with each stage counted separately.
+
 ## Curator-reviewed B 10H-12H source-recovery scope (2026-11-02)
 
 The following **existing** B report IDs were originally preserved via [owner PR #9](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/9) head `86def35f58fa`. Current PC original reports matched SHA256 3/3; original PE SHA256 matched and 36 bounded instruction sites independently decoded/checked. Only the narrowly described x86 facts in [REF_BATTLE_AI_MORALE.md](../../REF_BATTLE_AI_MORALE.md) are CURATED_STATIC. Original behavioral interpretations remain VERIFY; Golden PASS=0, strict MATCH=0, new READY=0.
