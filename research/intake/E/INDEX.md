@@ -28,7 +28,7 @@ Each section begins with the exact E research ID and gives the PC-relative origi
 - [Draft PR #11](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/11): 6 E source IDs (10/31 06–08H, 11/1 00–02H).
 - [Draft PR #14](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/14): 8 E source IDs (10/31 09–16H).
 - [This draft PR #17](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/17): 15 previously staged E source IDs (10/31 17–23H and 11/1 03/04/06–09/11/12H), plus the 193 historical original-source research IDs now indexed here. These are **208 distinct source IDs on this draft branch**, not 208 different original-game discoveries.
-- Existing private develop [E G0–G2 source entry](../../E/E-PC-20261101-GOLDEN-G012-AND-KB-BACKLOG.md) summarizes E 11/1 17–20H receipts. The 6 local E 17–20H report/receipt paths in the develop source catalog are metadata-linked; this intake does not duplicate them.
+- Existing private develop [E G0–G2 source entry](E-PC-20261101-GOLDEN-G012-AND-KB-BACKLOG.md) summarizes E 11/1 17–20H receipts. The 6 local E 17–20H report/receipt paths in the develop source catalog are metadata-linked; this intake does not duplicate them.
 
 ## Unpublished, excluded or unresolved evidence
 
