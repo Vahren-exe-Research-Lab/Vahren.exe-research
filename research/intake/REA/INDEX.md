@@ -367,3 +367,17 @@ No new formal verified functions, original Golden PASS 0, READY 0; current sourc
 | `REA-20261017-1440-V80-OPTIONAL-ARG-PATH-01` | [owner report digest and native excerpts](REA_20261017_A_LEGACY_QC_SOURCE_PRESERVATION.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
 
 New formally VERIFIED 0, original Golden PASS/READY 0. Unverified facts require curator review.
+
+## 20261017 legacy REA owner B sources
+
+| Historical owner ID | Recovery source | State |
+| --- | --- | --- |
+| `REA-20261017-1635-CP170-COUNT-QC-01` | [owner report digest and native excerpts](REA_20261017_B_LEGACY_QC_SOURCE_PRESERVATION.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-20261017-1936-W6-DEATH-TREE-01` | [owner report digest and native excerpts](REA_20261017_B_LEGACY_QC_SOURCE_PRESERVATION.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-20261017-2033-TASK-UNREGISTER-NOOP-RECEIPT-01` | [owner report digest and native excerpts](REA_20261017_B_LEGACY_QC_SOURCE_PRESERVATION.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-20261017-22H-DEATH-WORLD-RECAPTURE-01` | [owner report digest and native excerpts](REA_20261017_B_LEGACY_QC_SOURCE_PRESERVATION.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-20261017-2335-CP176-COUNT-AND-PREFLIGHT-01` | [owner report digest and native excerpts](REA_20261017_B_LEGACY_QC_SOURCE_PRESERVATION.md) | STATUS_ONLY / BLOCKED metadata |
+| `REA-20261017-18H-T014-470700-EAX-OUTPUT-01` | [owner report digest and native excerpts](REA_20261017_B_LEGACY_QC_SOURCE_PRESERVATION.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-20261017-W6-P0-REFUSAL-FIREWALL-01` | [owner report digest and native excerpts](REA_20261017_B_LEGACY_QC_SOURCE_PRESERVATION.md) | STATUS_ONLY / BLOCKED metadata |
+
+New formally VERIFIED 0, original Golden PASS/READY 0. Unverified facts require curator review.
