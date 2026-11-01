@@ -22,6 +22,16 @@ This is the entrypoint for E-owned PRIVATE intake material. **PUBLISHED_INTAKE /
 
 Each section begins with the exact E research ID and gives the PC-relative original report, current source-file SHA256 and selected provenance-linked findings, labeled with the original line numbers. **Not all supporting synthetic Python/JSON fixtures are copied to GitHub**. Consult PC originals and the full fixture SHA receipts before executing or adopting any result.
 
+## Three original-source detail preservations (2026-11-02, existing IDs; NOT new discoveries)
+
+The following three E historical IDs are included in the 193-row source index and abbreviated in crosswalk batches; each now has an independently rehashed PC source-report receipt and a fuller **sanitized, qualified interpretation** suitable for substantive curator review. **These are not +3 research IDs, fresh synthetic runs, original-game Golden results, or CURATED facts.**
+
+- [24 Oct DAT installation-versus-archive membership drift](E-SOURCE-DETAIL-DAT-DRIFT-20261024-22H.md): 590 archived DAT versus an installed-only research scenario; file membership, loaded-source epoch and archive authenticity must stay distinct (T018/T019/T020).
+- [25 Oct G0 UI / G1 prebattle SAVE chronology contract discrepancy](E-SOURCE-DETAIL-G1-CLICK-SAVE-ORDER-20261025-15H.md): historical offline counterexample; the exact legal original chronological order remains VERIFY (T018/T020).
+- [26 Oct G2 placeholder Unit/Troop/side labels](E-SOURCE-DETAIL-G2-PLACEHOLDER-IDENTITY-20261026-13H.md): preserve source-model false-positive guard without inventing an original native identity rule (T018/T020).
+
+All three reports' current PC SHA256 matched their indexed values. Earlier archived test counts or ZIP bytes are labeled **historical, not rerun/rehashed this pass**. Curator should review the three ID/errata/source witnesses against the latest `develop` and original reports, not merge a diverged PR wholesale.
+
 ## Curator-ready evidence search and integrity gates (2026-11-02)
 
 - [Combined C-NB02 real-original Golden G0–G4 evidence acceptance playbook](E-CNB02-GOLDEN-EVIDENCE-ACCEPTANCE-PLAYBOOK-20261102.md): keeps static, synthetic, original limited transitions and old/new strict parity separate.
