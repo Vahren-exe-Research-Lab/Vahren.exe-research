@@ -2,6 +2,18 @@
 
 This is the **searchable owner-source intake**; a source ID, file or owner unit test is not verified original gameplay. `PUBLISHED_INTAKE / VERIFY / NOT_CURATED` until curator examines original bytes and correction lineage. Original Golden PASS=0, strict MATCH=0, newly accepted READY=0. Official semantic knowledge remains in `REF_*.md` and `symbols.tsv` / `structs.tsv` only after independent review.
 
+## Curator-reviewed B 10H-12H source-recovery scope (2026-11-02)
+
+The following **existing** B report IDs were originally preserved via [owner PR #9](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/9) head `86def35f58fa`. Current PC original reports matched SHA256 3/3; original PE SHA256 matched and 36 bounded instruction sites independently decoded/checked. Only the narrowly described x86 facts in [REF_BATTLE_AI_MORALE.md](../../REF_BATTLE_AI_MORALE.md) are CURATED_STATIC. Original behavioral interpretations remain VERIFY; Golden PASS=0, strict MATCH=0, new READY=0.
+
+| Owner research ID | Published source body | Curated link / scope |
+|---|---|---|
+| `B-OFFLINE-20261101-10H-T011-T024-GROUP34-PROXIMITY-GATE-01` | [B 10H](B/T011_T024_GROUP34_PROXIMITY_RATIO_100TICK_NATIVE_20261101_10H.md) | CURATED_STATIC Unit byte tests, group loads, E8 targets, initialization |
+| `B-OFFLINE-20261101-11H-T011-T024-GROUP34-DUAL-BUCKET-GATE-01` | [B 11H](B/T011_T024_GROUP34_DUAL_BUCKET_ELIGIBILITY_NATIVE_20261101_11H.md) | CURATED_STATIC extra Unit filters, separate +0x34 accumulators, E8 targets |
+| `B-OFFLINE-20261101-12H-T011-T024-DUAL-LIST-MODE3-VECTOR-01` | [B 12H](B/T011_T024_DUAL_LIST_MODE3_VECTOR_NATIVE_20261101_12H.md) | CURATED_STATIC mode3 and two helper CALLs, unsigned bound correction |
+
+De-dup: B09H already concerned group+0x34 calculations. B10H/11H proximity and buckets are not independent re-discoveries of that earlier calculation; B12H follows the two buckets, not three unrelated native features. Next B review cursor: 13-19H owner source SHA and native proof, then E/REA candidate-to-REF link backlog without re-admitting old mirrors.
+
 ## Curator-reviewed B 20H-22H native scope (2026-11-02)
 
 This specific section overrides the global NOT_CURATED default **only for the bounded static facts** described in [REF_BATTLE_AI_MORALE.md](../../REF_BATTLE_AI_MORALE.md). Authorized PC source report SHA256 3/3, original PE SHA256 1/1, native windows 4/4, E8 destinations 5/5 and selected x86 opcodes 10/10 independently matched. **Golden PASS=0, strict MATCH=0, newly READY=0**.
