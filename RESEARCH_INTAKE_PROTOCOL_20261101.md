@@ -28,3 +28,7 @@
 - Bの正規入庫先は`research/intake/B/`、旧`research/lane_b/`は読取専用ミラー。ownerの旧PR・新PR・旧standalone historyを研究IDと内容SHA・訂正関係で照合し、余計なPRを新設しない。
 - 非線形PRに対してowner rebase/merge/forceを要求しない。curatorが現行develop起点の隔離ブランチに精査済みsanitized blobsを採り、元PR/head SHAを記録する。部分採用PRは未収録IDを残して開いたままにする。
 - `PUBLISHED_INTAKE`は原文保全の事実であり`CURATED`・`READY`・原作Goldenを意味しない。独立元ASM/DAT・SHA・先行解釈・訂正まで相互検証できたものだけREF/辞書へ採録する。PC不通/ロック状態不明/単体テスト不能ならGitHub隔離ブランチの未同期チェックポイントで止め、develop到達を宣言しない。
+
+## Fixed owner SHA and source-versus-semantic status (2026-11-02)
+
+Pin the exact owner commit SHA for each curator intake batch even if the owner continues pushing to the same open PR. Count original study IDs separately as PUBLISHED_INTAKE, reviewer-supported CURATED_POLICY, CURATED_SOURCE_PROVENANCE or CURATED_STATIC, DUPLICATE_LINKED, SOURCE_MISSING and SAFETY_HOLD. A historical ID can have both a preserved source and an independently checked correction link without becoming a new native discovery. An owner PR is not a verified develop update: only private ff-only develop commit and readback establishes completed curation. See [E source and status index](research/intake/E/INDEX.md).

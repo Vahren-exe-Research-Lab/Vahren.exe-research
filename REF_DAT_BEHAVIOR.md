@@ -100,3 +100,9 @@ DAT（イベントスクリプト）について、実際に確かめた挙動�
 | 専門学校送り（randomev11-20.dat）の `student_chara_choice` は取消で `yappa_yameru2=1`。原作はこれを見ずに先へ進み、送り出す人が空のまま進んでいた（v1.0 で前の 3 択へ戻すよう修正） | 実機確認 | R1101§5 |
 
 R1101 = dev_lab/docs/DAT_UI_V4_RESEARCH_20261101.md
+
+## E/T019 archive versus installed DAT set provenance (historical source review, 2026-11-02)
+
+- **CURATED_SOURCE_PROVENANCE, not native loader behavior**: existing E ID E-AUDIT-20261024-22H-ARCHIVE-DAT-SOURCE-DRIFT-01, original tests/T020_ARCHIVE_DAT_EXTRA_SCENARIO_PROVENANCE_20261024_22H.md, independently checked source-report SHA256 2AAB084BA4CFBB9AFF9C4471F8A9F5ADE827005272D19AB34B2608CD72ADFD48. Detailed [sanitized E finding](research/intake/E/E-SOURCE-DETAIL-DAT-DRIFT-20261024-22H.md), owner [E source index](research/intake/E/INDEX.md), pinned PR #17 owner head 31ec45291badc2b5678cbdad056362bd2e4f0413.
+- Historical original-report evidence described 590 DAT members in a local *candidate* original archive, all 590 matching installed DAT file hashes. The pre-modification installed manifest had **591** DAT files including a research-only extra scenario absent from that archive (2,100 bytes; original owner reported SHA256 64E1796E9FD8BC04C67A5B21A3BD79B58EBAF70E9D3858E41868755AD6807228). Equality of 590 shared hashes does not establish equal directory *membership*. A 591/591 restore against the old *installed* manifest also fails to prove archive-only provenance.
+- Local candidate archive publisher authenticity, runtime DAT loader behavior, loaded-source epoch and impact of the extra scenario remain VERIFY; **the original archive/DAT bytes were not rehashed in this curator run**. No original runtime bug or newly confirmed Wiki/DAT/EXE contradiction is claimed. Strict prebattle provenance needs path membership plus per-file byte SHA and the actual loaded-file epoch before original Golden comparison. Never reinterpret this installed-only research scenario as native release behavior.
