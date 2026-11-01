@@ -198,3 +198,8 @@ python -B knowledge\tools\research_index.py --check
 - 実行例（研究ROOTが参照できる専用knowledge worktreeから）：python -B tools/v9_coverage.py --root <研究ROOT> --out <同knowledge worktree> --export
 - 任意アドレスの原作CALL元・CALL先・命令バイトを確かめる：python -B tools/v9_coverage.py --root <研究ROOT> --inspect 0x004496C4
 - 既存V9 SQLiteと元ゲームファイルは一切Gitに含めない。保護アドレス・拒否済み解析の迂回なし。原作Golden PASS/strict MATCHは実機証拠がない限り0。
+
+## 研究成果の二段階GitHub入庫規約（2026-11-01）
+- [新しい研究保全・GitHub収録ルール](RESEARCH_INTAKE_PROTOCOL_20261101.md): 未検証成果も状態付きでPRIVATEに保管、専任curatorだけが確定知識を正式採録。
+- [未整理研究・回収キュー](research/intake/README.md): E/REA/Bを含む資料の未収録・重複・保全状況を検索する入口。
+- [EレーンのGolden G0–G2・T019/T020の根拠付き要約](research/intake/E/E-PC-20261101-GOLDEN-G012-AND-KB-BACKLOG.md): 元研究ID/相対source path/SHA・未検証事項。現物SHAのないものを確定扱いにしない。
