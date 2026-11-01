@@ -20,6 +20,7 @@
 !/REF_SCENARIO_COMPAT.md
 !/REF_STRATEGY_ECONOMY.md
 !/KNOWLEDGE_CURATION_PROTOCOL.md
+!/RESEARCH_INTAKE_PROTOCOL_20261101.md
 !/RESEARCH_SOURCE_CATALOG.tsv
 !/RESEARCH_DUPLICATE_CANDIDATES.tsv
 !/RESEARCH_DUPLICATE_TRIAGE.md
@@ -47,6 +48,12 @@
 !/research/rea/REA_20261101_17H_P0_FTELL_FRAME_STATIC.md
 !/research/rea/REA_20261101_19H_P0_FTELL_SEH4_SCOPE_STATIC.md
 !/research/rea/REA_20261101_20H_P0_EH4_DISPATCH_PHASE_STATIC.md
+!/research/intake/
+/research/intake/*
+!/research/intake/README.md
+!/research/intake/E/
+/research/intake/E/*
+!/research/intake/E/E-PC-20261101-GOLDEN-G012-AND-KB-BACKLOG.md
 !/research/save_analysis_20261101/
 /research/save_analysis_20261101/*
 !/research/save_analysis_20261101/README.md
