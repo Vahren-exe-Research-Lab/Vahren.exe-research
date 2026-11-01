@@ -13,6 +13,18 @@ These two owner sources were **already PUBLISHED_INTAKE in develop** (intake inc
 
 **DUPLICATE_LINKED, not newly discovered:** B13 already reported both `0x529DC0` callers; B17 repeats earlier B13 upper `0x52AD00` edges while adding a bounded AL/branch review. B15 comparator and B16 midpoint studies are distinct prior IDs and remain separately queued. Next cursor: B19H reference/ftol/Y-flip and the older B, E and REA unreviewed owner IDs by research-ID/SHA/errata, with each stage counted separately.
 
+## Curator-admitted B09/B16/B19 bounded ASM meaning (2026-11-02)
+
+Three further **historical owner IDs** have been independently matched with current authorized-PC report SHA256 and original PE native windows. They were **already PUBLISHED_INTAKE on develop** (new intake 0); only the precise x86 instructions/branches in [REF_BATTLE_AI_MORALE.md](../../REF_BATTLE_AI_MORALE.md) are now **CURATED_STATIC**. Derived gameplay semantics, external target selection, complete fp/overflow boundary and original-game Golden are VERIFY (PASS0, strict MATCH0, new READY0).
+
+| Owner ID | Original GitHub intake source / independently verified scope | Corrections / state |
+| --- | --- | --- |
+| `B-OFFLINE-20261101-09H-T011-T013-GROUP34-WEIGHTED-SQRT-01` | [B09](B/B-OFFLINE-20261101-09H-T011-T013-GROUP34-WEIGHTED-SQRT-01.md); PE function `0x569280` SHA and 12 selected sites including signed IDIV, group+0x34 store and three direct math E8 calls | Prior B08 group setter and B10/11 group+0x34 users remain links, not extra discoveries. Group meaning and branch input conditions VERIFY. |
+| `B-OFFLINE-20261101-16H-T011-T024-MIDPOINT-SAR-ROUNDING-OVERFLOW-01` | [B16](B/B-OFFLINE-20261101-16H-T011-T024-MIDPOINT-SAR-ROUNDING-OVERFLOW-01.md); six original machine instructions `0x526074..0x526081` directly redecoded | Signed-SAR midpoint model admitted only from these bytes; historical synthetic 263169 tests not rerun, real input domain VERIFY; do not double count earlier B13 comparator source. |
+| `B-20261101-19H-T024-GROUP-REF-FTOL-YFLIP-CROSSJOIN-01` | [B19](B/T024_GROUP_REF_FTOL_YFLIP_NATIVE_20261101_19H.md); two 67-byte native producer windows, 28-byte ftol window, D3DX IAT and x87 FCHS/calls | Prior B18 shared global stores/callers dedup-linked, signed 2-path ftol rounding and true game coordinate semantics VERIFY. |
+
+**DUPLICATE_LINKED:** B08 `0x56902C -> 0x569280`; B10/11 group+0x34 usage; B13 native `0x526030` position path; B18 shared globals and the two `0x529DC0` calls. Next B cursor: the B08 25 native E8 plus AL category partition (source first, original-PE proof next), then B15 comparator/remaining B historical reports, alongside E/REA owner-stage backlog; do not re-intake identical source IDs.
+
 ## Curator-reviewed B 10H-12H source-recovery scope (2026-11-02)
 
 The following **existing** B report IDs were originally preserved via [owner PR #9](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/9) head `86def35f58fa`. Current PC original reports matched SHA256 3/3; original PE SHA256 matched and 36 bounded instruction sites independently decoded/checked. Only the narrowly described x86 facts in [REF_BATTLE_AI_MORALE.md](../../REF_BATTLE_AI_MORALE.md) are CURATED_STATIC. Original behavioral interpretations remain VERIFY; Golden PASS=0, strict MATCH=0, new READY=0.
