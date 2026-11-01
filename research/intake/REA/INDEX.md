@@ -472,3 +472,7 @@ Historical 8 IDs, not new Verified functions; curator-only knowledge adoption. G
 ## 2026-11-02 REA old pre-ID source archive C
 
 - [13 old REA owner research/QC/Wave reports with source hashes, safe bounded static observations and correction/safety flags](REA_20261010_31_LEGACY_UNKEYED_AND_CORRECTION_C.md) — UNKEYED_SOURCE or existing-ID ERRATUM/BLOCKED. Do not add document count as native VERIFIED count or claim original Golden PASS.
+
+## 2026-11-02 REA old pre-ID source archive D
+
+- [14 old REA owner research/QC/Wave reports with source hashes, safe bounded static observations and correction/safety flags](REA_20261010_31_LEGACY_UNKEYED_AND_CORRECTION_D.md) — UNKEYED_SOURCE or existing-ID ERRATUM/BLOCKED. Do not add document count as native VERIFIED count or claim original Golden PASS.
