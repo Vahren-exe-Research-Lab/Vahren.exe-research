@@ -340,3 +340,16 @@ Prior refusal history only as BLOCKED metadata; no direct adoption in protected 
 | `REA-20261015-COUNT-LITERAL-ALIAS-CORRECTION-01` | [historical report SHA / safe STATIC scope](REA_20261015_B_OWNER_LEGACY_SOURCE.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
 
 No new formal verified functions, original Golden PASS 0, READY 0; current source/curator semantic review remains separate.
+
+## REA 20261016 ALL legacy owner audit/source records
+
+| Historical owner research ID | Evidence | Stage |
+| --- | --- | --- |
+| `REA-20261016-0040-PREV58-AUX-GATE-CROSSCALL-01` | [historical report SHA / safe STATIC scope](REA_20261016_ALL_OWNER_LEGACY_SOURCE.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-20261016-1034-REPEAT-ARITY-01` | [historical report SHA / safe STATIC scope](REA_20261016_ALL_OWNER_LEGACY_SOURCE.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-20261016-1138-DEFERRED-STACK-ARGS-01` | [historical report SHA / safe STATIC scope](REA_20261016_ALL_OWNER_LEGACY_SOURCE.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-20261016-1240-ABI-W6-REFUSAL-01` | [historical report SHA / safe STATIC scope](REA_20261016_ALL_OWNER_LEGACY_SOURCE.md) | OWNER_STATUS / BLOCKED_METADATA |
+| `REA-20261016-1430-AUX-POSTLOOP-STATUS-01` | [historical report SHA / safe STATIC scope](REA_20261016_ALL_OWNER_LEGACY_SOURCE.md) | OWNER_STATUS / BLOCKED_METADATA |
+| `REA-20261016-1537-AUX-VIRTUAL80-BRIDGE-01` | [historical report SHA / safe STATIC scope](REA_20261016_ALL_OWNER_LEGACY_SOURCE.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+
+No new formal verified functions, original Golden PASS 0, READY 0; current source/curator semantic review remains separate.
