@@ -25,6 +25,18 @@ Three further **historical owner IDs** have been independently matched with curr
 
 **DUPLICATE_LINKED:** B08 `0x56902C -> 0x569280`; B10/11 group+0x34 usage; B13 native `0x526030` position path; B18 shared globals and the two `0x529DC0` calls. Next B cursor: the B08 25 native E8 plus AL category partition (source first, original-PE proof next), then B15 comparator/remaining B historical reports, alongside E/REA owner-stage backlog; do not re-intake identical source IDs.
 
+## B08 and REA CRT FILE pair: already ingested, bounded curation (2026-11-02)
+
+Three existing source IDs received independent PC report SHA, original PE and native byte/branch validation. **No new PUBLISHED_INTAKE ID** was added. Only the exact scope in [REF_BATTLE_AI_MORALE.md](../../REF_BATTLE_AI_MORALE.md) and [REF_AUDIO_VORBIS.md](../../REF_AUDIO_VORBIS.md) is **CURATED_STATIC**; full ABI/lifetime/gameplay stays VERIFY, Golden PASS=0, strict MATCH=0, READY=0.
+
+| Research ID | Existing source and admitted scope |
+| --- | --- |
+| `B-OFFLINE-20261101-08H-T011-T013-GROUP1E-CALLSITES-AL-POSTCALL-01` | [B08](B/B-OFFLINE-20261101-08H-T011-T013-GROUP1E-CALLSITES-AL-POSTCALL-01.md): 25 owner-listed direct E8/AL byte pairs and 18+3+1+3 immediate continuation classes; B07 setter and B09 aggregate duplicate links, no global completeness claim. |
+| `REA-LOCAL-20261101-23H-P0-GETSTREAM-LOCK-OWNERSHIP-STATIC-01` | [REA23](REA/REA_20261101_23H_GETSTREAM_LOCK_OWNERSHIP_STATIC.md): 295/9-byte original windows, bounded table/per-FILE lock operations and return sites; 22H __fsopen caller not recounted. |
+| `REA-LOCAL-20261102-00H-P0-CRT-FILE2-LOCK-INDEX-VS-POINTER-STATIC-01` | [REA00](REA/REA_20261102_00H_CRT_FILE2_LOCK_INDEX_POINTER_STATIC.md): four original window SHAs and index20/pointer-range lock split, IAT names. 23H lock callee relationship is linked, not new. |
+
+**ERRATUM_LINKED:** the REA00 report windows end inclusively; accepted lengths **50/47/60/10** (not half-open 49/46/59/9). The previously reported owner-wide 49/49 and 41/41 test suites have not been rerun. Next cursor: existing PR #16 and older REA 2026-10-23..31 metadata and original reports, plus remaining B, E and A/C/D evidence by ID and correction, not blanket CURATED promotion.
+
 ## Curator-reviewed B 10H-12H source-recovery scope (2026-11-02)
 
 The following **existing** B report IDs were originally preserved via [owner PR #9](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/9) head `86def35f58fa`. Current PC original reports matched SHA256 3/3; original PE SHA256 matched and 36 bounded instruction sites independently decoded/checked. Only the narrowly described x86 facts in [REF_BATTLE_AI_MORALE.md](../../REF_BATTLE_AI_MORALE.md) are CURATED_STATIC. Original behavioral interpretations remain VERIFY; Golden PASS=0, strict MATCH=0, new READY=0.
