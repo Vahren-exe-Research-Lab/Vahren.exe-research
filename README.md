@@ -21,8 +21,8 @@
 
 | ファイル | 中身 |
 |---|---|
-| `REF_ADDRESSES.md` | アドレス事典。関数・位置・グローバル変数の名前、意味、確かさ、出典、どの資料で話題になっているか |
-| `REF_STRUCTS.md` | 構造体事典。ユニット定義・勢力・詳細パネル・プレイヤーなどのオフセット |
+| `REF_ADDRESSES.md` | **PC専用の自動生成物（GitHubには存在しない）**。アドレス事典。GitHubでは `symbols.tsv` と `REF_*.md` を参照 |
+| `REF_STRUCTS.md` | **PC専用の自動生成物（GitHubには存在しない）**。構造体事典。GitHubでは `structs.tsv` を参照 |
 | `REF_DAT_BEHAVIOR.md` | DAT（イベントスクリプト）の挙動 |
 | `REF_UI_SYSTEM.md` | 画面部品（ウィンドウ）・詳細パネル・説明表示の仕組み |
 | `REF_AUDIO_VORBIS.md` | 原作音声系（Vorbisヘッダ解析）についてREAの原作x86根拠と未検証の境界をまとめたもの |
@@ -34,7 +34,7 @@
 | `REF_SCRIPT_VM_CONTEXT.md` | A/T005–T010：旧VM文法、API、context原作差分・優先順位・時計 |
 | `REF_SCENARIO_COMPAT.md` | C/T033：旧シナリオID、継承・セーブロード到達性と未確証境界 |
 | `REF_STRATEGY_ECONOMY.md` | C/T025–T029：戦略・内政、教育、商人、城壁・防衛研究を横断整理 |
-| `CATALOG.md` | **研究資料ファイルの目録**。evidence・exe・data・wiki・tests などの各ファイルが何か（見出し・ID・状態から自動で 1 行）を、作業番号（T0xx）ごとに並べたもの |
+| `CATALOG.md` | **PC専用の自動生成物（GitHubには存在しない）**。研究本文目録。GitHub上の軽量資料には `RESEARCH_SOURCE_CATALOG.tsv` を参照 |
 
 確かさは 4 段階: **実機確認**（ゲームで確かめた）／**静的確認**（機械語で確かめた）／**テストのみ**（合成テストだけ）／**推定**。
 
@@ -175,6 +175,7 @@ python -B knowledge\tools\research_index.py --check
 | パス | 中身 |
 |---|---|
 | `research/DAT_UI_V4_RESEARCH_20261101.md` | 汎用一覧 v4 完成時の調査（出典 R1101）。メインループ、一時の詳細パネル、画像キャッシュ、説明表示と全画面、入力保護、DAT で分かったこと |
+| [`research/rea/INDEX.md`](research/rea/INDEX.md) | REA 2026-11-01 のnative `ftell`・SEH4 研究3IDを出典SHA・VA・訂正・原作実測の境界とともに追跡。元報告3本もGitHub上で閲覧可 |
 | `research/save_analysis_20261101/` | 通常セーブ解析の道具（出典 S1101 = `REF_SAVE_FORMAT.md`）。本体と古い残りを分けて読むパーサーと、区間分け・項目照合のスクリプト。使い方は同フォルダの README |
 
 ## 研究全体の分類・重複照合・担当間の統合（2026-10-31）

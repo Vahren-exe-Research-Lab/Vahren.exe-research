@@ -468,3 +468,8 @@
 0x58E870	func	Save_ReadUnitDataRecord	通常ロードで Unit レコード 1 件を読む。書出し 0x58EFD0 と対	静的確認	T014§normal save reader group order
 0x598980	func	Save_ReadSpotGroupRecord	通常ロードで Spot レコード 1 件を読む。書出し 0x598CE0 と対	静的確認	T014§normal save reader group order
 0x5964C0	func	Save_ReadPowerGroupRecord	通常ロードで Power レコード 1 件を読む。書出し 0x596AA0 と対	静的確認	T014§normal save reader group order
+
+# ---- REA/T015 CRT Ogg FILE* callback / 2026-11-01 17H–20H (原作x86; Golden未実測) ----
+0x5B797C	func	CRT_ftell_SEH4_entry	Ogg標準FILEのtellに登録される91 byteのMSVC SEH4付きftell入口。NULL FILE*ではerrno=22とinvalid-parameter handler経路、正常FILE*ではlock→__ftell_nolock→unlock。例外時動作/独立DLL ABIは未検証	静的確認	REA-LOCAL-20261101-17H-P0-CRT-FTELL-FRAME-CROSSWALK-STATIC-01, REA-LOCAL-20261101-19H-P0-FTELL-SEH4-SCOPE-STATIC-01; research/rea/INDEX.md
+0x5B79D7	func	CRT_ftell_shared_EBP_unlock_helper	0x5B79C9から呼ばれる10 byteのunlock補助。親ftellのEBP+8を読むため独立hook呼出ABIを想定しない。0x641260のSEH4 cleanup handler候補にも登録	静的確認	REA-LOCAL-20261101-17H-P0-CRT-FTELL-FRAME-CROSSWALK-STATIC-01, REA-LOCAL-20261101-19H-P0-FTELL-SEH4-SCOPE-STATIC-01; research/rea/INDEX.md
+0x5BB6E0	func	CRT_except_handler4_search_unwind	MSVC __except_handler4。exception flagsでsearchとunwindを分け、filter=0のscopeは検索時にfilter呼出を飛ばす。実ランタイムの対象ftell例外配送とunlock実行保証は未実測	静的確認	REA-LOCAL-20261101-20H-P0-EH4-DISPATCH-PHASE-STATIC-01; research/rea/INDEX.md

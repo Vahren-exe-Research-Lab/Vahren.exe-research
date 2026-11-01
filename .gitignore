@@ -41,6 +41,12 @@
 !/research/
 /research/*
 !/research/DAT_UI_V4_RESEARCH_20261101.md
+!/research/rea/
+/research/rea/*
+!/research/rea/INDEX.md
+!/research/rea/REA_20261101_17H_P0_FTELL_FRAME_STATIC.md
+!/research/rea/REA_20261101_19H_P0_FTELL_SEH4_SCOPE_STATIC.md
+!/research/rea/REA_20261101_20H_P0_EH4_DISPATCH_PHASE_STATIC.md
 !/research/save_analysis_20261101/
 /research/save_analysis_20261101/*
 !/research/save_analysis_20261101/README.md
