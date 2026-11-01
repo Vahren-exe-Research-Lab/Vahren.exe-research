@@ -6,7 +6,11 @@ Source attestation: 2026-11-02 Japan time; 23 E-owner source Markdown documents 
 
 **Source:** `tests/T018_AUDIT_REPORT_BINDING_20261020.md` — SHA256 `9ca1b2a06c90fdeee530f8f56549ed71dffd552158af71e2208be475dd744f27` (3310 bytes). **Title:** T018｜原票と監査出力の投影整合性（2026-10-20 16:51 JST）. **Owner/task:** E/T018-T020; **state:** historical STATIC/SYNTHETIC/VERIFY, not native Golden, not READY.
 
-_Automated extraction found no safely publishable standalone passage; refer to the owner source before deciding meaning._
+Additional source-grounded E report excerpts (original lines):
+- L4: 【問題】独立CLI e_cli_verdict_guard.py は「records=[{status:REVIEW_READY}], review_ready=1」だけでmetadata REVIEW_ONLYを返す。原票未照合の要約でもメタデータだけを誤受入し得る。原作ゲームのバグではない。
+- L5: 【オフライン修正】t018_audit_binding.py をChatGPT作業環境の独立コピーへ追加。旧golden_preflight.inspectとt018_timeline_audit.inspectをraw JSONから再計算し、claimed auditの全フィールドをnested型を含めて比較する。余分/欠落/改変のある監査をVERIFYとする。
+- L6: 【重要な残余リスク】旧監査出力にはrawのバイトSHAが入っていないため、同一監査投影を生む別の原票でも再計算一致する。今回のCLIは現在読み取ったraw/監査JSONのバイトSHAを結果へ出すが、「監査当時のrawと同一」は未証明。recomputed_report_equalは真正性・動作一致の証明ではない。
+- L7: 【検証】既存525+追加28=553 Python unittest合成PASS/0 FAIL。差し替えJSONで旧ガードREVIEW_ONLY→新検査VERIFYを再現。現行NOT_RUN原票の再計算結果NOT_RUN、CLI終了コード1を検証。
 
 **Curation gate:** Check source-original SHA, native proof owner, superseding errata, G0/G1/G2 same-run eligibility, and latest implementation before adopting as REF/dictionary/MASTER evidence.
 
@@ -14,7 +18,11 @@ _Automated extraction found no safely publishable standalone passage; refer to t
 
 **Source:** `tests/T018_CNB02_BRIDGE_STAGE_CROSSWALK_20261021_1953.md` — SHA256 `503770dbdec8ba3288d43e6b9a79830b99a0c5268e2eec3f01ebd9322fead034` (3592 bytes). **Title:** E T018/T020 C-NB02｜Golden段階の名称衝突と入口/配置区別（2026-10-21 19:53 JST）. **Owner/task:** E/T018-T020; **state:** historical STATIC/SYNTHETIC/VERIFY, not native Golden, not READY.
 
-_Automated extraction found no safely publishable standalone passage; refer to the owner source before deciding meaning._
+Additional source-grounded E report excerpts (original lines):
+- L6: 参照: tests/T018_CNB02_G0G1G2_CHRONOLOGY_20261021_0050.md、tests/T018_CNB02_G0_UI_ROUTE_TRIAGE_20261020_2348.md。
+- L9: E_G0_UI: 旧原作の合法な通常侵攻操作が成立・戦闘へ進む可視入口。battle_id/run_id、シナリオ/攻撃元/対象、旧UI画面と入力証拠。
+- L10: E_G1_PRE_SAVE_INPUT: 同一run戦闘直前SAVEの実bytes/SHAと、SAVE/攻撃/開始の入力順・時刻・TZ・input capture SHA。旧原作保存以前に宣言した戦闘IDの流用禁止。
+- L11: E_G2_VISIBLE_DEPLOY: 実際に開いたMAPのID/SHAと、攻撃/防衛/支援の可視3side、順序付き出撃Troop/Unit、画面/動画SHA。保存Spot.memberやscript参照を代用しない。
 
 **Curation gate:** Check source-original SHA, native proof owner, superseding errata, G0/G1/G2 same-run eligibility, and latest implementation before adopting as REF/dictionary/MASTER evidence.
 
@@ -22,7 +30,11 @@ _Automated extraction found no safely publishable standalone passage; refer to t
 
 **Source:** `tests/T018_CNB02_EVIDENCE_CLASS_BOUNDARY_20261020_2244.md` — SHA256 `0b6637393e1408ce83403c85973d7bb485a001e2a9616b62bc346c9690bab123` (3162 bytes). **Title:** T018 C-NB02｜NOT_RUN条件値混入の独立監査（2026-10-20 22時台）. **Owner/task:** E/T018-T020; **state:** historical STATIC/SYNTHETIC/VERIFY, not native Golden, not READY.
 
-_Automated extraction found no safely publishable standalone passage; refer to the owner source before deciding meaning._
+Additional source-grounded E report excerpts (original lines):
+- L5: 分類: STATIC SOURCE RECHECK / SYNTHETIC REPRODUCED / NATIVE VERIFY / GAMEPLAY NOT RUN。
+- L6: 【新規差分】前回E独立cnb02_temporal_scope_gate.pyのNOT_RUN入力が、未観測にもかかわらずVS_toono条件をtrueで埋めるとSOURCE_COMPATIBLE_ONLYと出すケースを再現。
+- L7: 旧ツール自体も実機PASS=0を維持するので「誤Gameplay PASS」ではない。問題はNOT_RUNとsynthetic条件値が混在し、下流レビューを誤誘導し得ること。
+- L8: 独立追加gate cnb02_evidence_class_gate.py: NOT_RUNなら各read-site条件は未入力/nullのみ許可。true/falseを入れる計画はSYNTHETICへ分類し、ゲーム実観測扱いしない。
 
 **Curation gate:** Check source-original SHA, native proof owner, superseding errata, G0/G1/G2 same-run eligibility, and latest implementation before adopting as REF/dictionary/MASTER evidence.
 
@@ -51,7 +63,11 @@ Selected E report statements (L=original report line, not freshly rerun):
 
 **Source:** `tests/T018_CNB02_SOURCE_GATE_20261020_2044.md` — SHA256 `92b78b26bd6060f87afe901c64fdc4cbbe41f5f2d123895da74a431121102abd` (3010 bytes). **Title:** E-CNB02-SOURCE-GATE-20261020-2044｜独立3値静的受入・死亡フック分離. **Owner/task:** E/T018-T020; **state:** historical STATIC/SYNTHETIC/VERIFY, not native Golden, not READY.
 
-_Automated extraction found no safely publishable standalone passage; refer to the owner source before deciding meaning._
+Additional source-grounded E report excerpts (original lines):
+- L2: 作業ID: E-OFFLINE-UNSYNCED-20261020-2044-CNB02-SOURCE-ELIGIBILITY-GATE-01。研究E/T018,T019,T020/DEVLAB-006。分類STATIC SCRIPT+SYNTHETIC TESTED/NATIVE VERIFY/GAMEPLAY NOT RUN。
+- L4: 一次資料1: 正規化2000_勢力ストーリー/po2_battle.dat全166行をE直接read-only確認。VS_toono/VS_inyume/yaju_VS_tonの3分岐と死後inyume_dead→VS_inyume_winの5条件を字句照合。
+- L6: 一次資料3: 正規化10_ユニット/94_放浪_ホモガキ・養殖.dat L388-447でunit u_inyume:base1/class=c_inyume/dead_event=inyume_demoralization、class c_inyume:inyume。
+- L7: 一次資料4: 正規化50_その他新システム/siki.dat L2366-2373でevent inyume_demoralization→条件付きdialog→routine(base_demoralization)を確認。
 
 **Curation gate:** Check source-original SHA, native proof owner, superseding errata, G0/G1/G2 same-run eligibility, and latest implementation before adopting as REF/dictionary/MASTER evidence.
 
@@ -59,7 +75,11 @@ _Automated extraction found no safely publishable standalone passage; refer to t
 
 **Source:** `tests/T018_CNB02_TEMPORAL_SCOPE_20261020_2153.md` — SHA256 `ad5afcb9cd1d48fe70be0c0a607d9069423b80f90bbddbbd82841292ef37129c` (2604 bytes). **Title:** T018 C-NB02 読取時点別 SOURCE gate｜2026-10-20 21時台. **Owner/task:** E/T018-T020; **state:** historical STATIC/SYNTHETIC/VERIFY, not native Golden, not READY.
 
-_Automated extraction found no safely publishable standalone passage; refer to the owner source before deciding meaning._
+Additional source-grounded E report excerpts (original lines):
+- L3: 状態: STATIC SOURCE RECHECK / SYNTHETIC TESTED / NATIVE VERIFY / GAMEPLAY NOT RUN
+- L6: 原文: storeBattleSpot(@aaa)→storePowerOfSpot(sp16,@bbb)→VS_toono条件/set(battleevent,1)/routine→storePowerOfSpot(sp16,@bbb)再取得→VS_inyume条件/set/routine→clear(@aaa/@bbb)→yaju_VS_ton条件。
+- L7: 独立増分: 20:44版のSOURCE gateは battleevent_is_zero、battleSpot_is_sp16、sp16_power_is_unowned を複数siteで共用でき、条件評価時点の出典が曖昧。
+- L8: 今回: 4 read-site(VS_toono/VS_inyume/yaju_VS_ton/inyume_dead_to_win)を分離した合成検証器と24 unittestを作成。値の他stage転記は不可。
 
 **Curation gate:** Check source-original SHA, native proof owner, superseding errata, G0/G1/G2 same-run eligibility, and latest implementation before adopting as REF/dictionary/MASTER evidence.
 
@@ -67,7 +87,11 @@ _Automated extraction found no safely publishable standalone passage; refer to t
 
 **Source:** `tests/T018_INDEPENDENT_DIGEST_PIN_20261020.md` — SHA256 `6a5c5330f264a64732c53fb1fab0fd68de7c8b6928d09235809417d628290684` (2991 bytes). **Title:** T018｜監査原票の独立バイトSHA固定照合（2026-10-20 17:44 JST）. **Owner/task:** E/T018-T020; **state:** historical STATIC/SYNTHETIC/VERIFY, not native Golden, not READY.
 
-_Automated extraction found no safely publishable standalone passage; refer to the owner source before deciding meaning._
+Additional source-grounded E report excerpts (original lines):
+- L6: 【検証】前回553+新19=572合成unittest PASS/FAIL0。zip展開後の独立全件再実行も572 PASS。原作EXEは実行していない。
+- L7: 【実装所在】E_OFFLINE_20261020_1744_T018_INDEPENDENT_PIN_DELTA_572.zip（ChatGPT作業環境）。基盤525＋先行差分553に重ねる。Python実装とテストはPC未同期。
+- L8: 【成功範囲】0=メタデータREVIEW_ONLYかつraw/audit/code固定SHAが一致、1=VERIFY/NOT_RUN、2=不正入力。どの終了値もGameplay PASSではない。
+- L9: 【重要制限】PINの独立した履歴保全、出典・合法旧UI観測、原作実EXE/DAT/SAVE/map/input/capture bytes、同run関連、旧新同条件および可視traceは未認証。pin/資料を一括改変できればこの検査単独では無力。
 
 **Curation gate:** Check source-original SHA, native proof owner, superseding errata, G0/G1/G2 same-run eligibility, and latest implementation before adopting as REF/dictionary/MASTER evidence.
 
@@ -97,7 +121,11 @@ Selected E report statements (L=original report line, not freshly rerun):
 
 **Source:** `tests/T020_AUTO_SAVE_BYTE_IDENTITY_CROSSWALK_20261022_0450.md` — SHA256 `05cb31a1819dcdb2876a9bdb4bf43e34dbc5de6402c86a8792db54477902e9de` (2978 bytes). **Title:** T020｜auto.sav同名・同サイズ・異SHAの保存資料照合（2026-10-22 04時台）. **Owner/task:** E/T018-T020; **state:** historical STATIC/SYNTHETIC/VERIFY, not native Golden, not READY.
 
-_Automated extraction found no safely publishable standalone passage; refer to the owner source before deciding meaning._
+Additional source-grounded E report excerpts (original lines):
+- L2: 研究ID: E-AUDIT-20261022-0450-AUTOSAVE-BYTE-IDENTITY-01
+- L3: 状態: SOURCE-DOCUMENT STATIC / VERIFY / DESIGNED_NOT_RUN / 非READY。原本SAVEのバイト再計算・原作Gameplay起動は行っていない。
+- L6: A: rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_CURRENT_ORIGINAL_SAVES_20261021.json（作成UTC 2026-10-21T12:20:48.244Z）。
+- L7: A.auto.sav: encoded_bytes=5953848, reported SHA256=C09C098CDDED45CE71D5F032E4FCB1DD4177878F21A7AEF86BF68196F4B6B29F, save mtime UTC=2026-10-21T12:18:00.767970Z。
 
 **Curation gate:** Check source-original SHA, native proof owner, superseding errata, G0/G1/G2 same-run eligibility, and latest implementation before adopting as REF/dictionary/MASTER evidence.
 
@@ -105,7 +133,11 @@ _Automated extraction found no safely publishable standalone passage; refer to t
 
 **Source:** `tests/T020_BATTLE_REQUEST_ACTIVATION_PHASE_SPLIT_20261023_15H.md` — SHA256 `5646b8941b6ecc4763715401bb0161a510b23e0ac9db1e212d39566a08a1dee9` (3703 bytes). **Title:** E T018/T020｜戦闘要求と初期化・ScriptBattle実行・active化の混同防止（2026-10-23 15時台）. **Owner/task:** E/T018-T020; **state:** historical STATIC/SYNTHETIC/VERIFY, not native Golden, not READY.
 
-_Automated extraction found no safely publishable standalone passage; refer to the owner source before deciding meaning._
+Additional source-grounded E report excerpts (original lines):
+- L3: 分類: STATIC CROSSWALK / VERIFY / DESIGNED_NOT_RUN / NOT READY。原作Gameplay新規実行0。
+- L4: SOURCE: 現行V3 search_current.py read-only function/callers/flow-callers(0x004922A0,0x00492890,0x004338D0,0x0048D6A0)、BATTLE_STAGE17_ACTIVATION_BOUNDARY_20261022.json、E既存T020 Stage17/14時台クロスウォーク。
+- L5: EXE識別SHA: E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187（索引のsource値、今回EXE実バイト再ハッシュ無し）。
+- L8: 要求/準備候補: 0x00491870内0x004921CD、0x00521D90内0x00522297/0x005222AAの計3 E8 → 0x004922A0。関数は+0x1EED43へparam_2格納、+0x1EEDBCを0へresetし、@battlefield/@battledefense/@battleattack公開処理候補を含む。
 
 **Curation gate:** Check source-original SHA, native proof owner, superseding errata, G0/G1/G2 same-run eligibility, and latest implementation before adopting as REF/dictionary/MASTER evidence.
 
@@ -113,7 +145,11 @@ _Automated extraction found no safely publishable standalone passage; refer to t
 
 **Source:** `tests/T020_BATTLE_RETURN_COMMIT_GATE_20261021_2147.md` — SHA256 `2417e9bdeb47c7bf8b5602a41cde8bb214724528e34cc5e5b46be3b0e3ca24f3` (4063 bytes). **Title:** E T018/T020｜C-NB02 戦闘終了→戦略復帰の証拠・二重反映防止ゲート. **Owner/task:** E/T018-T020; **state:** historical STATIC/SYNTHETIC/VERIFY, not native Golden, not READY.
 
-_Automated extraction found no safely publishable standalone passage; refer to the owner source before deciding meaning._
+Additional source-grounded E report excerpts (original lines):
+- L7: 1. E_G0（合法UI入口）→E_G1（同run実SAVE+入力）→E_G2（実MAP/ordered deployed名簿）を必須前提に、E_G3（実際の終了直前の可視戦況）とE_G4（戦略画面復帰後の可視世界状態）を別receiptとして追加。B_G3..G6/H2..H4を同名で代入しない。
+- L8: 2. 終了原因は自然時間経過、BattleWnd操作、DATコマンドの候補を区別。既存B資料では0x493630の入口が複数で、0x492D80だけのhookで全終了を捕捉できる証拠は無い。合法原作でどのrouteに到達したか未観測ならunknown。
+- L9: 3. A静的証拠のGameEvent Task virtual+4→0x4335E0→0x492D80→active再判定→同呼出内0x4338D0 VM runnerを、戦闘終了後の観測境界として独立保持。同TASK_PASS内のWorld/VM再入を「必ず次tick」と補間禁止。
+- L10: 4. B静的証拠の0x493630は通常結果の副作用・scene解除・スクリプト3key再公開を含む。E+0x1EED28==0時に通常処理前で別終端となる候補を記録。raw resultFlagを単独の世界状態確定証拠としない。
 
 **Curation gate:** Check source-original SHA, native proof owner, superseding errata, G0/G1/G2 same-run eligibility, and latest implementation before adopting as REF/dictionary/MASTER evidence.
 
@@ -144,7 +180,11 @@ Selected E report statements (L=original report line, not freshly rerun):
 
 **Source:** `tests/T020_CNB02_DAT_BASELINE_RESTORATION_AUDIT_20261024_21H.md` — SHA256 `654f179d726aceb1591ce178a4fe62a76ac62aee02292b704fea61c1ce1fbce1` (3447 bytes). **Title:** E-AUDIT-20261024-21H-T018-T020-DAT-RESTORE-LINEAGE-01. **Owner/task:** E/T018-T020; **state:** historical STATIC/SYNTHETIC/VERIFY, not native Golden, not READY.
 
-_Automated extraction found no safely publishable standalone passage; refer to the owner source before deciding meaning._
+Additional source-grounded E report excerpts (original lines):
+- L5: Manifest byte SHA256 verified with Get-FileHash: 85B418A60F9D2873CADE38E05574C70A0D969E3B3E274842111087BE9F2FC412. Manifest is the saved pre-X20 baseline reference, not an independent original archive fingerprint.
+- L12: CONFIRMED: live disk .dat collection equals pre-X20 snapshot as of this audit. NOT CONFIRMED: snapshot equals official release archive, other non-DAT inputs or EXE/DLL purity at gameplay, loaded in-memory script of an already-running process, or SAVE-specific provenance. Runtime/replay Golden remains VERIFY.
+- L13: Earlier 2026-10-21 watch records precede 2026-10-22 X20 application, so *that later X20 operation* cannot be their source; unrelated earlier mods remain unexcluded.
+- L14: Do NOT reject a new Golden solely because an obsolete ACTIVE warning once existed. Conversely do NOT promote to strict old-original solely because RESTORED or 591/591: bind source EXE/DAT baseline, effective process startup/reload, SAVE, UI input, actual G0/G1/G2 receipts per epoch.
 
 **Curation gate:** Check source-original SHA, native proof owner, superseding errata, G0/G1/G2 same-run eligibility, and latest implementation before adopting as REF/dictionary/MASTER evidence.
 
@@ -193,7 +233,11 @@ Selected E report statements (L=original report line, not freshly rerun):
 
 **Source:** `tests/T020_CNB02_G1_CLICK_SAVE_ORDER_RECONCILIATION_20261025_15H.md` — SHA256 `36cf7421b927ab785160c9bc3bb3402e7a550b5530145ba62819adcb0b845b86` (4875 bytes). **Title:** E-AUDIT-20261025-15H-T018-T020-G1-CLICK-SAVE-ORDER-RECONCILIATION-01. **Owner/task:** E/T018-T020; **state:** historical STATIC/SYNTHETIC/VERIFY, not native Golden, not READY.
 
-_Automated extraction found no safely publishable standalone passage; refer to the owner source before deciding meaning._
+Additional source-grounded E report excerpts (original lines):
+- L2: Owner E / T018,T020 (T019 reference); 2026-10-25 15H JST. PC-SAVED / STATIC CONTRACT CONFLICT / SYNTHETIC EXECUTED / VERIFY / NOT READY / GAME NOT RUN.
+- L5: PC E source tests/T020_CNB02_RECEIPT_PROVENANCE_GATE_20261021_2345.md explicitly says G0 UI entry and G1 preceding-battle SAVE/input **do not have a mandatory mutual order**; both must precede G2. Actual source SHA256=87AE9409834FA7FD0CC48477BD2062BD73643E7616A58CBEB204BFA61D06FEB8 (PC Get-FileHash).
+- L7: 13:48 source t020_cnb02_packet_coherence_gate_20261025_1348.py SHA256=076712AC865F8E95907B978B308333CB1574EE8BDEC7740F75989D3FFBE7411C (sandbox uploaded artifact, NOT PC file). Its gate requires SAVE commit  UI click = battle active start.
+- L8: 14:48 dependent source t020_cnb02_packet_identity_payload_gate_20261025_1448.py SHA256=220EFF64AA65D0B72B43AC5B821767169AEBEC45EA6FAA8DA04DDD7918A69DE1 (sandbox uploaded artifact, NOT PC file); inherits the 13:48 verdict.
 
 **Curation gate:** Check source-original SHA, native proof owner, superseding errata, G0/G1/G2 same-run eligibility, and latest implementation before adopting as REF/dictionary/MASTER evidence.
 
@@ -201,7 +245,11 @@ _Automated extraction found no safely publishable standalone passage; refer to t
 
 **Source:** `tests/T020_CNB02_G1_PHASE_CONTRACT_EXECUTABLE_REGRESSION_20261025_16H.md` — SHA256 `230d52901e317bfd0ab08e20027cec26750658578c7ea29467852004f81f66df` (4303 bytes). **Title:** E-AUDIT-20261025-16H-T018-T020-G1-PHASE-CONTRACT-EXEC-01. **Owner/task:** E/T018-T020; **state:** historical STATIC/SYNTHETIC/VERIFY, not native Golden, not READY.
 
-_Automated extraction found no safely publishable standalone passage; refer to the owner source before deciding meaning._
+Additional source-grounded E report excerpts (original lines):
+- L2: Owner E / T018,T020 (T019 reference). 2026-10-25 16H JST. PC-SAVED / SYNTHETIC EXECUTED / STATIC POLICY / VERIFY / NOT READY / ORIGINAL GAME NOT RUN.
+- L5: Primary contract: tests/T020_CNB02_RECEIPT_PROVENANCE_GATE_20261021_2345.md (source hash from prior PC confirmation 87AE9409834FA7FD0CC48477BD2062BD73643E7616A58CBEB204BFA61D06FEB8; NOT rehashed now).
+- L6: Cross-check: tests/T018_CNB02_G0G1G2_CHRONOLOGY_20261021_0050.md; tests/T020_G1_ATTACK_PHASE_RECEIPT_POLICY_RECONCILIATION_20261024_2053.md (P01-P08 designed before this run); tests/T020_CNB02_G1_CLICK_SAVE_ORDER_RECONCILIATION_20261025_15H.md.
+- L7: Old 13:48/14:48 OFFLINE-UNSYNCED validators are NOT activated, copied, patched or re-executed here. Older G1 order contradiction is already known, NOT counted as a new finding.
 
 **Curation gate:** Check source-original SHA, native proof owner, superseding errata, G0/G1/G2 same-run eligibility, and latest implementation before adopting as REF/dictionary/MASTER evidence.
 
@@ -209,7 +257,11 @@ _Automated extraction found no safely publishable standalone passage; refer to t
 
 **Source:** `tests/T020_CNB02_G2_ACTIVE_WINDOW_SCHEMA_REVIEW_20261025_17H.md` — SHA256 `6b23bcc7b934baaff834c40b7919337cb062f6a20fa26b6c3237b834026d301c` (4987 bytes). **Title:** E-AUDIT-20261025-17H-T018-T020-G2-ACTIVE-WINDOW-OVERLAY-01. **Owner/task:** E/T018-T020; **state:** historical STATIC/SYNTHETIC/VERIFY, not native Golden, not READY.
 
-_Automated extraction found no safely publishable standalone passage; refer to the owner source before deciding meaning._
+Additional source-grounded E report excerpts (original lines):
+- L2: Owner E / T018,T020; T019 cross-reference. 2026-10-25 17H JST. PC-SAVED / SYNTHETIC EXECUTED / STATIC REVIEW / VERIFY / NOT READY / NATIVE GAME NOT RUN.
+- L5: Direct E prior code: tests/t020_cnb02_g1_phase_contract_matrix_20261025_16H.py and its 16H report, 15H G1 chronology reconciliation, 2026-10-21 23:45 E receipt contract and 2026-10-25 12H postbattle E phase gate.
+- L6: EXE reference manifest SHA256: E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187; original EXE/SAVE/DAT not rehashed, modified, or executed.
+- L8: The 16H assess() only flags G2 captured BEFORE active_enter. It does NOT accept or inspect active_exit.
 
 **Curation gate:** Check source-original SHA, native proof owner, superseding errata, G0/G1/G2 same-run eligibility, and latest implementation before adopting as REF/dictionary/MASTER evidence.
 
