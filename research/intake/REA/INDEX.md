@@ -396,3 +396,18 @@ New formally VERIFIED 0, original Golden PASS/READY 0. Unverified facts require 
 | `REA-20261018-0936-DEATH-MANAGER-PREBIND-GATE-01` | [rehashed owner source and safe excerpts](REA_20261018_A_HISTORIC_REA_OWNER_QC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
 
 Curator-only formal adoption, new Verified 0, actual original Golden PASS 0, READY 0.
+
+## Legacy REA 20261018 B source integration queue
+
+| Owner research ID | Source | Stage |
+| --- | --- | --- |
+| `REA-20261018-1335-DEATH-UNITFLASH8-REGISTRY-COVERAGE-01` | [rehashed owner source and safe excerpts](REA_20261018_B_HISTORIC_REA_OWNER_QC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-20261018-14H-DEATH-DETACH-CALLSITE-PC-01` | [rehashed owner source and safe excerpts](REA_20261018_B_HISTORIC_REA_OWNER_QC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-20261018-1530-DEATH-DETACH-NOHIT-SCOPE-01` | [rehashed owner source and safe excerpts](REA_20261018_B_HISTORIC_REA_OWNER_QC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-20261018-1833-TROOP-UI-PHASE-DEADEND-01` | [rehashed owner source and safe excerpts](REA_20261018_B_HISTORIC_REA_OWNER_QC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-20261018-1935-TROOP-SELECTION-SINGLE-BINDING-01` | [rehashed owner source and safe excerpts](REA_20261018_B_HISTORIC_REA_OWNER_QC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-20261018-2034-TROOP-HEAD-FLAG-SECOND-UPDATE-01` | [rehashed owner source and safe excerpts](REA_20261018_B_HISTORIC_REA_OWNER_QC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-20261018-21H-TROOP-MODE2-AFTER-SELECTION-01` | [rehashed owner source and safe excerpts](REA_20261018_B_HISTORIC_REA_OWNER_QC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-20261018-2340-DEATH-SELECTION-PREFIX-CROSSCHECK-01` | [rehashed owner source and safe excerpts](REA_20261018_B_HISTORIC_REA_OWNER_QC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+
+Curator-only formal adoption, new Verified 0, actual original Golden PASS 0, READY 0.
