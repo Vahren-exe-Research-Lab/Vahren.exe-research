@@ -196,3 +196,20 @@ Fourteen existing owner source IDs, not 14 new native functions. Particularly, 2
 | `REA-LOCAL-20261025-2334-P0-FLS-RETURN-ABI-REFUSAL-STATIC-01` | `CRT/allocator/ABI` | [old owner report plus source/evidence SHA](REA_20261025_10H_23H_CRT_OGG_THREAD_SOURCE_RECOVERY_STATIC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
 
 Twelve historic REA source IDs, same owner Draft PR, no new native functions claimed. CRT malloc-vs-operator-new failure differences; parser shared cleanup and Ogg FILE ownership; normal vs error worker HANDLE cleanup are distinguished. 23H denied FLS query remains **BLOCKED**, and only earlier allowed static evidence is kept. No new formal VERIFIED/Golden/READY/CURATED. Next old source cursor: 2026-10-26 00H.
+
+## 2026-11-02 archival recovery | 2026-10-26 00–09H audio
+
+| Owner research ID | Native-domain key | Intake source | State |
+| --- | --- | --- | --- |
+| `REA-LOCAL-20261026-0036-P0-OGG-QI-HRESULT-NULL-GATE-STATIC-01` | `20261026_00H` | [original source SHA and bounded static excerpts](REA_20261026_00H_09H_AUDIO_STATIC_SOURCE_RECOVERY.md) | PUBLISHED_INTAKE / VERIFY |
+| `REA-LOCAL-20261026-0136-P0-DS8-SHUTDOWN-REFILL-DOUBLE-CLEANUP-STATIC-01` | `20261026_01H` | [original source SHA and bounded static excerpts](REA_20261026_00H_09H_AUDIO_STATIC_SOURCE_RECOVERY.md) | PUBLISHED_INTAKE / VERIFY |
+| `REA-LOCAL-20261026-0238-P0-DS8-UNLOCK-RETURN-IDEMPOTENCE-STATIC-01` | `20261026_02H` | [original source SHA and bounded static excerpts](REA_20261026_00H_09H_AUDIO_STATIC_SOURCE_RECOVERY.md) | PUBLISHED_INTAKE / VERIFY |
+| `REA-LOCAL-20261026-0334-P0-OGG-LOCK-DECODER-ONE-SEGMENT-ABI-STATIC-01` | `20261026_03H` | [original source SHA and bounded static excerpts](REA_20261026_00H_09H_AUDIO_STATIC_SOURCE_RECOVERY.md) | PUBLISHED_INTAKE / VERIFY |
+| `REA-LOCAL-20261026-0431-P0-OGG-WORKER-PINGPONG-EOF-STATIC-01` | `20261026_04H` | [original source SHA and bounded static excerpts](REA_20261026_00H_09H_AUDIO_STATIC_SOURCE_RECOVERY.md) | PUBLISHED_INTAKE / VERIFY |
+| `REA-LOCAL-20261026-0535-P0-OGG-EOF-LATCH-CONSUMER-STATIC-01` | `20261026_05H` | [original source SHA and bounded static excerpts](REA_20261026_00H_09H_AUDIO_STATIC_SOURCE_RECOVERY.md) | PUBLISHED_INTAKE / VERIFY |
+| `REA-LOCAL-20261026-0635-P0-AUDIO-TICK32-MULTIGATE-STATIC-01` | `20261026_06H` | [original source SHA and bounded static excerpts](REA_20261026_00H_09H_AUDIO_STATIC_SOURCE_RECOVERY.md) | PUBLISHED_INTAKE / VERIFY |
+| `REA-LOCAL-20261026-0738-P0-DSHOW-EVENT-LOOP-STATIC-01` | `20261026_07H` | [original source SHA and bounded static excerpts](REA_20261026_00H_09H_AUDIO_STATIC_SOURCE_RECOVERY.md) | PUBLISHED_INTAKE / VERIFY |
+| `REA-LOCAL-20261026-08H-P0-DSHOW-IID-CHAIN-STATIC-01` | `20261026_08H` | [original source SHA and bounded static excerpts](REA_20261026_00H_09H_AUDIO_STATIC_SOURCE_RECOVERY.md) | PUBLISHED_INTAKE / VERIFY |
+| `REA-LOCAL-20261026-09H-P0-FADE-20PCT-15TICK-TAILJMP-STATIC-01` | `20261026_09H` | [original source SHA and bounded static excerpts](REA_20261026_00H_09H_AUDIO_STATIC_SOURCE_RECOVERY.md) | PUBLISHED_INTAKE / VERIFY |
+
+10 historical source-ID links; new formal VERIFIED 0, original Golden PASS 0, READY 0. Continue 2026-10-26 10H.
