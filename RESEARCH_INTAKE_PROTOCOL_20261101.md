@@ -5,7 +5,7 @@
 ## 方針: 研究成果を埋もれさせない
 - **保存した研究を検索不能なローカル/Libraryだけに残さない**。担当は研究終了時、既収録研究ID・出典SHA・版・訂正関係を調べ、PRIVATE GitHubへの収録、担当固有 intake branchへの保全、または BLOCKED/OFFLINE-UNSYNCEDを記録する。新研究より過去の未同期回収を優先してよい。
 - **二段階に分ける**。①`research/intake/<owner>/` は安全確認済み研究の出典・仮説・未検証も状態を明記して保全する（発見可能性）。②`REF_*.md`/`symbols.tsv`/`structs.tsv` は専任curatorが原本を検証・既存訂正と照合した確定事項のみ採用する（知識の信頼性）。①への保管はREADYや実機Goldenの証明ではない。
-- Owner A-E/REAは**自分の研究成果・同意済み出典だけ**をPRIVATE GitHubの`intake/<owner>-<date>-<ID>`等の固有隔離ブランチに`research/intake/<owner>/`配下の安全な要約/manifestとして保存してよい（本ユーザー指示に基づく新規許可）。他owner本文、`develop`、共有辞書/REF/生成DBは依然変更不可。curatorだけが吟味して `develop` に ff-only で反映する。READMEや規約の今回の変更はユーザー明示の特例。
+- Owner A-E/REAは**自分の研究成果・同意済み出典だけ**をPRIVATE GitHubの既存owner別隔離ブランチとPRを可能な限り再利用し、唯一の正規`research/intake/<owner>/`に安全な要約/manifestとして保存してよい（本ユーザー指示に基づく新規許可）。他owner本文、`develop`、共有辞書/REF/生成DBは依然変更不可。curatorだけが吟味して `develop` に ff-only で反映する。READMEや規約の今回の変更はユーザー明示の特例。
 - PCオフラインでGitHubだけ使えるときも、現物確認した内容だけを`OFFLINE-UNSYNCED`として隔離branchに保全できる。未確認SHA/原作挙動/PC同期を捏造しない。ブランチ保存も不能ならE担当文書/会話に理由と再開位置を明記する。
 
 ## 研究1件の必須記録
@@ -23,3 +23,8 @@
 
 ## 旧運用との関係
 従来`KNOWLEDGE_CURATION_PROTOCOL.md`の「A-E/REAは共有KBへ直接書かない」は**共有辞書・REF・develop正本に限って継続**。`research/intake/<owner>`をprivate隔離branchに保管する行為を新たに許可する。READYのMASTER正式統合は従来通りEのみ。旧スケジュールの有効/停止・頻度は変更しない。Workも自動利用しない。
+
+## 2026-11-02 新旧PRの統合・状態台帳（旧branch例に優先）
+- Bの正規入庫先は`research/intake/B/`、旧`research/lane_b/`は読取専用ミラー。ownerの旧PR・新PR・旧standalone historyを研究IDと内容SHA・訂正関係で照合し、余計なPRを新設しない。
+- 非線形PRに対してowner rebase/merge/forceを要求しない。curatorが現行develop起点の隔離ブランチに精査済みsanitized blobsを採り、元PR/head SHAを記録する。部分採用PRは未収録IDを残して開いたままにする。
+- `PUBLISHED_INTAKE`は原文保全の事実であり`CURATED`・`READY`・原作Goldenを意味しない。独立元ASM/DAT・SHA・先行解釈・訂正まで相互検証できたものだけREF/辞書へ採録する。PC不通/ロック状態不明/単体テスト不能ならGitHub隔離ブランチの未同期チェックポイントで止め、develop到達を宣言しない。

@@ -1,15 +1,44 @@
-# Private research intake index
-このディレクトリは**研究成果の保全と発見性**の入口であり、実機確認や正式READYの認定ではありません。
+# Private research intake — owner ID/source links
 
-- [収録規約と担当・curatorの権限](../../RESEARCH_INTAKE_PROTOCOL_20261101.md)
-- [E/T018-T020: C-NB02 G0/G1/G2と未同期回収候補](E/E-PC-20261101-GOLDEN-G012-AND-KB-BACKLOG.md)
+This is the **searchable owner-source intake**; a source ID, file or owner unit test is not verified original gameplay. `PUBLISHED_INTAKE / VERIFY / NOT_CURATED` until curator examines original bytes and correction lineage. Original Golden PASS=0, strict MATCH=0, newly accepted READY=0. Official semantic knowledge remains in `REF_*.md` and `symbols.tsv` / `structs.tsv` only after independent review.
 
-## 保全状態
-| 対象 | 今回の確認 | 次の処理 |
-|---|---|---|
-| E 11/1 17–20H | GitHub元目録に6 entries（原文本文は別） | source SHAと要約を分野別REFに照合 |
-| E 11/1 03–16H | 研究ID未収録、旧07–16H 39ファイルの過去検証記録 | PC/Library元実体をowner照合後に順次保全 |
-| REA 11/1 03–16H | 以前の監査でLibrary67ファイル、今回再棚卸し無し | 専任curatorがID/SHA/拒否を仕分け |
-| B未回収・10/25欠落 | HOLD/未回収が存在（内容はこの索引に未掲載） | 許可済み出典のみ扱い拒否を迂回しない |
+## 2026-11-02 B + REA isolation checkpoint
 
-新規研究の収録時は本表に owner/研究ID/source SHA/収録先/状態/次のカーソルを追加し、既存IDを別発見として再計数しない。
+Baseline PRIVATE `develop` SHA `dad68c4fedf8a56e430af1ec8a7993e725ce610d`. **Seven B IDs / seventeen REA IDs** are copied byte-for-byte from owner GitHub PR heads, not newly reverse engineered. B historical `research/lane_b/` mirrors are not copied. Research PC Local Compact returned `Session terminated`; source-owner SHA claims in the files were not independently rehashed this run. PC master/HANDOFF/active.lock and Python tests are pending. Until ff-only develop advancement is verified, these files are **isolated-branch staged, not present in develop**.
+
+Owner PRs: B [#15](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/15) head `8167e8401a2125e815ed5db846ad63b423b62d77`, B [#18](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18) head `ed67ddcea4c1f1d6b876c41c152f2393f8409b80`; REA [#16](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/16) head `9ae53c82eac731b04b1c6594af3b58b038d6a7ed` includes cumulative history from #10/#13; repeated IDs are not independent discoveries.
+
+| Research ID | PR/head source | Intake text | Evidence state/target |
+|---|---|---|---|
+| `B-20261101-17H-T024-52AD00-MERGE-TIE-LOCAL-STABILITY-01` | [#15](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/15) `8167e8401a21` | [owner source](B/B-20261101-17H-T024-52AD00-MERGE-TIE-LOCAL-STABILITY-01.md) | STATIC/VERIFY; REF_BATTLE_AI_MORALE, REF_UNIT_EXP_SUMMON candidate only |
+| `B-20261101-18H-T024-DUAL-REFERENCE-COORD-AND-PC-RESTORE-01` | [#15](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/15) `8167e8401a21` | [owner source](B/B-20261101-18H-T024-DUAL-REFERENCE-COORD-AND-PC-RESTORE-01.md) | STATIC/VERIFY; REF_BATTLE_AI_MORALE, REF_UNIT_EXP_SUMMON candidate only |
+| `B-20261102-00H-T024-542280-NATIVE-ATAN2-SENTINEL-ERRATUM-01` | [#15](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/15) `8167e8401a21` | [owner source](B/B-20261102-00H-T024-542280-NATIVE-ATAN2-SENTINEL-ERRATUM-01.md) | STATIC/VERIFY; REF_BATTLE_AI_MORALE, REF_UNIT_EXP_SUMMON candidate only |
+| `B-20261102-01H-T024-5421D0-8DIST-SENTINEL-WRITER-01` | [#18](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18) `ed67ddcea4c1` | [owner source](B/B-20261102-01H-T024-5421D0-8DIST-SENTINEL-WRITER-01.md) | STATIC/VERIFY; REF_BATTLE_AI_MORALE, REF_UNIT_EXP_SUMMON candidate only |
+| `B-OFFLINE-20261101-08H-T011-T013-GROUP1E-CALLSITES-AL-POSTCALL-01` | [#18](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18) `ed67ddcea4c1` | [owner source](B/B-OFFLINE-20261101-08H-T011-T013-GROUP1E-CALLSITES-AL-POSTCALL-01.md) | STATIC/VERIFY; REF_BATTLE_AI_MORALE, REF_UNIT_EXP_SUMMON candidate only |
+| `B-OFFLINE-20261101-09H-T011-T013-GROUP34-WEIGHTED-SQRT-01` | [#18](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18) `ed67ddcea4c1` | [owner source](B/B-OFFLINE-20261101-09H-T011-T013-GROUP34-WEIGHTED-SQRT-01.md) | STATIC/VERIFY; REF_BATTLE_AI_MORALE, REF_UNIT_EXP_SUMMON candidate only |
+| `B-OFFLINE-20261101-16H-T011-T024-MIDPOINT-SAR-ROUNDING-OVERFLOW-01` | [#15](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/15) `8167e8401a21` | [owner source](B/B-OFFLINE-20261101-16H-T011-T024-MIDPOINT-SAR-ROUNDING-OVERFLOW-01.md) | STATIC/VERIFY; REF_BATTLE_AI_MORALE, REF_UNIT_EXP_SUMMON candidate only |
+| `REA-LOCAL-20261031-22H-P0-VORBIS-GROWTH-CALLER-PAIR-STATIC-01` | [#16](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/16) `9ae53c82eac7` | [owner source](REA/REA_20261031_22H_23H_20261101_00H_GROW_CALLBACKS.md) | STATIC/INFERRED/VERIFY; REF_AUDIO_VORBIS candidate only |
+| `REA-LOCAL-20261031-23H-P0-VORBIS-GROWTH-TAIL-BOUNDARY-STATIC-01` | [#16](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/16) `9ae53c82eac7` | [owner source](REA/REA_20261031_22H_23H_20261101_00H_GROW_CALLBACKS.md) | STATIC/INFERRED/VERIFY; REF_AUDIO_VORBIS candidate only |
+| `REA-LOCAL-20261101-00H-P0-VORBIS-INDIRECT-CALLBACK-DISPATCH-STATIC-01` | [#16](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/16) `9ae53c82eac7` | [owner source](REA/REA_20261031_22H_23H_20261101_00H_GROW_CALLBACKS.md) | STATIC/INFERRED/VERIFY; REF_AUDIO_VORBIS candidate only |
+| `REA-LOCAL-20261101-21H-P0-UNWIND-FOUR-CALLERS-NLG-STATIC-01` | [#16](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/16) `9ae53c82eac7` | [owner source](REA/REA_20261101_21H_22H_FSOPEN_UNWIND_STATIC.md) | STATIC/INFERRED/VERIFY; REF_AUDIO_VORBIS candidate only |
+| `REA-LOCAL-20261101-22H-P0-FSOPEN-EMPTY-NAME-UNWIND-STATIC-01` | [#16](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/16) `9ae53c82eac7` | [owner source](REA/REA_20261101_21H_22H_FSOPEN_UNWIND_STATIC.md) | STATIC/INFERRED/VERIFY; REF_AUDIO_VORBIS candidate only |
+| `REA-LOCAL-20261101-01H-P0-VORBIS-RESIDUE-TYPE2-PARSER-GATE-STATIC-01` | [#16](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/16) `9ae53c82eac7` | [owner source](REA/REA_20261101_01H_02H_RESIDUE_TYPE2_AND_DIVISORS_STATIC.md) | STATIC/INFERRED/VERIFY; REF_AUDIO_VORBIS candidate only |
+| `REA-LOCAL-20261101-02H-P0-VORBIS-RESIDUE-FIRST-DIVISOR-PARSER-ERROR-LATCH-STATIC-01` | [#16](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/16) `9ae53c82eac7` | [owner source](REA/REA_20261101_01H_02H_RESIDUE_TYPE2_AND_DIVISORS_STATIC.md) | STATIC/INFERRED/VERIFY; REF_AUDIO_VORBIS candidate only |
+| `REA-LOCAL-20261101-02H-P0-VORBIS-RESIDUE-COMPILED-BOOK-DIVISOR-STATIC-02` | [#16](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/16) `9ae53c82eac7` | [owner source](REA/REA_20261101_01H_02H_RESIDUE_TYPE2_AND_DIVISORS_STATIC.md) | STATIC/INFERRED/VERIFY; REF_AUDIO_VORBIS candidate only |
+| `REA-LOCAL-20261101-23H-P0-GETSTREAM-LOCK-OWNERSHIP-STATIC-01` | [#16](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/16) `9ae53c82eac7` | [owner source](REA/REA_20261101_23H_GETSTREAM_LOCK_OWNERSHIP_STATIC.md) | STATIC/INFERRED/VERIFY; REF_AUDIO_VORBIS candidate only |
+| `REA-LOCAL-20261102-00H-P0-CRT-FILE2-LOCK-INDEX-VS-POINTER-STATIC-01` | [#16](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/16) `9ae53c82eac7` | [owner source](REA/REA_20261102_00H_CRT_FILE2_LOCK_INDEX_POINTER_STATIC.md) | STATIC/INFERRED/VERIFY; REF_AUDIO_VORBIS candidate only |
+| `REA-OFFLINE-20261101-03H-P0-VORBIS-CODEBOOK-DIMENSION-DUAL-BUILDER-PROVENANCE-STATIC-01` | [#16](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/16) `9ae53c82eac7` | [owner source](REA/REA_20261101_03H_05H_OFFLINE_RESIDUE_CORRECTED_STATIC.md) | STATIC/INFERRED/VERIFY; REF_AUDIO_VORBIS candidate only |
+| `REA-OFFLINE-20261101-04H-P0-VORBIS-RESIDUE-POWER-BOUND-CORRECTION-STATIC-01` | [#16](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/16) `9ae53c82eac7` | [owner source](REA/REA_20261101_03H_05H_OFFLINE_RESIDUE_CORRECTED_STATIC.md) | STATIC/INFERRED/VERIFY; REF_AUDIO_VORBIS candidate only |
+| `REA-OFFLINE-20261101-05H-P0-VORBIS-RESIDUE-EOF-LATCH-PARSER-INIT-GATE-STATIC-01` | [#16](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/16) `9ae53c82eac7` | [owner source](REA/REA_20261101_03H_05H_OFFLINE_RESIDUE_CORRECTED_STATIC.md) | STATIC/INFERRED/VERIFY; REF_AUDIO_VORBIS candidate only |
+| `REA-OFFLINE-20261101-06H-P0-VORBIS-MODE-ALLOC-LIFECYCLE-STATIC-01` | [#16](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/16) `9ae53c82eac7` | [owner source](REA/REA_20261101_06H_08H_MODE_CACHE_RECOVERY_STATIC.md) | STATIC/INFERRED/VERIFY; REF_AUDIO_VORBIS candidate only |
+| `REA-OFFLINE-20261101-07H-P0-VORBIS-MODE-ZEROED-SLOT-CLEANUP-BOUND-STATIC-01` | [#16](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/16) `9ae53c82eac7` | [owner source](REA/REA_20261101_06H_08H_MODE_CACHE_RECOVERY_STATIC.md) | STATIC/INFERRED/VERIFY; REF_AUDIO_VORBIS candidate only |
+| `REA-OFFLINE-20261101-08H-P0-VORBIS-CACHED-STREAM-STATE3-REENTRY-STATIC-01` | [#16](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/16) `9ae53c82eac7` | [owner source](REA/REA_20261101_06H_08H_MODE_CACHE_RECOVERY_STATIC.md) | STATIC/INFERRED/VERIFY; REF_AUDIO_VORBIS candidate only |
+| `REA-LOCAL-20261102-01H-P0-OGG-STATE3-DUAL-ENTRY-ESI-ABI-STATIC-01` | [#16](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/16) `9ae53c82eac7` | [owner source](REA/REA_20261102_01H_DUAL_ENTRY_ESI_ABI_STATIC.md) | STATIC/INFERRED/VERIFY; REF_AUDIO_VORBIS candidate only |
+
+[REA owner 17-ID index](REA/INDEX.md) contains the VA/call/offset and correction map, with original source SHA in the owner text. B 23H optional-angle pseudo was corrected by [00H native 2-axis atan2 sentinel](B/B-20261102-00H-T024-542280-NATIVE-ATAN2-SENTINEL-ERRATUM-01.md), whose separate [01H >8.0 sentinel writer](B/B-20261102-01H-T024-5421D0-8DIST-SENTINEL-WRITER-01.md) adds a different finding. REA 04H corrects 03H's overbroad residue overflow inference; REA 01H next-day early `0x5D0B8A` is distinct from the 08H cached `0x5D0D67` site. Preserve both before semantic promotion.
+
+## Remaining backlog / next cursor
+
+- REA 09H–16H offline 8 distinct IDs in [Issue #3](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/3). REA 18H partially refused JSON remains SAFETY_HOLD, not sourced. B 03H UNKNOWN, 07H 4 missing, 10/25 54-byte conflict, old HOLD21 unchanged.
+- Older and partial open owner PRs B #7/#9/#12 and E #8/#11/#14/#17 remain for SHA+ID dedup and semantic review, not automatically merged or closed. E's previously preserved [G0–G2 candidate](E/E-PC-20261101-GOLDEN-G012-AND-KB-BACKLOG.md) remains without Golden approval.
+- Next legal gate: PC reconnect → read-only MASTER/owner HANDOFF/worktree/active.lock; `research_index.py --check` and isolated `audit_research.py --root`; local `sync_knowledge.py audit` (allowlist+manifest+privacy) and unit tests; compare GitHub PRIVATE develop and remote SHA; only then curator ff-only. **Current stage does not mean develop integration, independent native re-verification, CURATED=24 or Golden.**
