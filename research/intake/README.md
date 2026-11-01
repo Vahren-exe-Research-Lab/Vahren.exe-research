@@ -159,3 +159,18 @@ Owner canonical intake already existed on `develop` and is **not republished or 
 | `B-OFFLINE-20261101-15H-T011-T024-NAN-COMPARATOR-TRANSITIVITY-01` | `data/T011_T024_DISTANCE_NAN_COMPARATOR_NONTRANSITIVE_OFFLINE_20261101_15H.md` / `F8709B82172978E67A3DE07AA5E994D8D4269BAAF294C5C43296F1764B90E952` | [source](B/B-OFFLINE-20261101-15H-T011-T024-NAN-COMPARATOR-TRANSITIVITY-01.md); **VERIFY / SYNTHETIC_ONLY**, linked to B13/B14 but NOT_CURATED as observed native gameplay. |
 
 Cursor: B 16–19H owner SHA + native/corrections, unreviewed older B/E/REA/A/C/D IDs and the 12 dirty research-index entries. Do not invoke the known prohibited XREF or other refused evidence, and do not count 13–15H reports as three new native discoveries.
+
+
+## Curator-reviewed B/T024 00H–01H writer/reader (2026-11-02)
+Both source IDs were already **PUBLISHED_INTAKE**; they are not new 05H research or new PRs. The authorized PC source reports matched the recorded SHA256, and read-only original PE/Capstone checks reproduced both function byte hashes and the bounded x87/coordinate instructions. The [semantic REF](../../REF_BATTLE_AI_MORALE.md) and `symbols.tsv` now carry **CURATED_STATIC** only; writer threshold interpretation, runtime ABI, NaN/overflow and actual gameplay remain VERIFY. Original-game Golden PASS=0, strict MATCH=0, new READY=0.
+
+| Research ID | Source PR and canonical intake | Curated meaning and correction |
+|---|---|---|
+| `B-20261102-00H-T024-542280-NATIVE-ATAN2-SENTINEL-ERRATUM-01` | [#15](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/15) `8167e8401a21` / [reader](B/B-20261102-00H-T024-542280-NATIVE-ATAN2-SENTINEL-ERRATUM-01.md) | **CURATED_STATIC:** exact 10000.0 sentinel check, two-axis FILD/atan2 + float-rounded pi. Supersedes 23H one-axis pseudocode inference, not earlier T028 atan2 discovery. |
+| `B-20261102-01H-T024-5421D0-8DIST-SENTINEL-WRITER-01` | [#18](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18) `51202745e471` / [writer](B/B-20261102-01H-T024-5421D0-8DIST-SENTINEL-WRITER-01.md) | **CURATED_STATIC:** source coordinate pairs, x87 8.0 gate, conditional +0x50=10000.0, finite/nonoverflow interpretation only. Not a final-target or complete ABI proof. |
+
+
+## Curator-reviewed REA/T015 01H dual-entry (2026-11-02)
+| Research ID | Canonical intake and owner PR | Formal curator scope |
+|---|---|---|
+| `REA-LOCAL-20261102-01H-P0-OGG-STATE3-DUAL-ENTRY-ESI-ABI-STATIC-01` | [REA source](REA/REA_20261102_01H_DUAL_ENTRY_ESI_ABI_STATIC.md) / [#16](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/16) `857d1f95e56d` | **CURATED_STATIC** newly distinct early `0x5D0B8A -> 0x5CF970` E8 path and ESI+0x58 state3 gate, [REF_AUDIO_VORBIS.md](../../REF_AUDIO_VORBIS.md). Existing cached `0x5D0D67` edge is duplicate-linked, not another new ID; error/lifetime/ABI/Golden remain VERIFY/0. |
