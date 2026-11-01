@@ -139,3 +139,20 @@ Nine older owner research IDs above are now source-SHA/evidence-SHA backed on th
 
 ## 2026-11-02 05H JST | additional old 2026-10-30 18H–23H preservation
 Six historical REA reports and 7 original evidence JSONs rehashed read-only, **7 existing REA research IDs**, all corrections crosslinked. [Source owner report/evidence SHA256 and native bounds](REA_20261030_18H_23H_SEEK_CLEANUP_HISTORICAL_RECOVERY_STATIC.md). Previous owner index **78** + 7 = **85 distinct PUBLISHED_INTAKE IDs**, not new discoveries and not CURATED. 18H corrects the seek shift-helper role; 19H and 20H restrict negative length under stable state; 21H/22H narrow indirect calls to cleanup destructor tables, while 23H retains a separate final callback as VERIFY. No new PE/V9 hash or Ghidra/REA run, new formal 5-method/VERIFIED 0, original Golden PASS/strict MATCH/READY 0, no change to shared develop/REF/dictionary. **Next historical cursor** `rea_lab/decomp_task/REA_20261031_00H_*.md`. The separate 2026-11-01 18H refused evidence remains SAFETY-HOLD.
+
+## 2026-10-23 historical battle/fastsim old-source recovery (owner-only)
+
+| Owner research ID | Functional key | Intake source | Ingestion stage |
+| --- | --- | --- | --- |
+| `REA-LOCAL-20261023-1435-P0-BTL-AUTO-GATE-STATIC-01` | `0x5656A0 to 0x526140 btl_auto gate` | [read-only source+SHA report](REA_20261023_14H_23H_BATTLEWND_FASTSIM_DEMOPERSON_RECOVERY_STATIC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-LOCAL-20261023-1537-P0-BTL-TIMER-MODE-SPLIT-STATIC-01` | `0x492D80 flag-dependent clock calls` | [read-only source+SHA report](REA_20261023_14H_23H_BATTLEWND_FASTSIM_DEMOPERSON_RECOVERY_STATIC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-LOCAL-20261023-1638-P0-FASTSIM-500TICK-RESULT-STATIC-01` | `0x40E2F0 500 tick, 0/1/2 result` | [read-only source+SHA report](REA_20261023_14H_23H_BATTLEWND_FASTSIM_DEMOPERSON_RECOVERY_STATIC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-LOCAL-20261023-17H-P0-BATTLEWND-SECONDARY-VPTR-STATIC-01` | `0x6380CC secondary slot+4 fastsim ABI` | [read-only source+SHA report](REA_20261023_14H_23H_BATTLEWND_FASTSIM_DEMOPERSON_RECOVERY_STATIC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-LOCAL-20261023-1833-P0-DEMOPERSON-VSLOT18-STATE4-STATIC-01` | `0x5146E0 primary vtable +0x18 state getter` | [read-only source+SHA report](REA_20261023_14H_23H_BATTLEWND_FASTSIM_DEMOPERSON_RECOVERY_STATIC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-LOCAL-20261023-1942-P0-PERSON-STATE4-WRITER-STATIC-01` | `0x44CF80 state4 writer and +0xA5 gate` | [read-only source+SHA report](REA_20261023_14H_23H_BATTLEWND_FASTSIM_DEMOPERSON_RECOVERY_STATIC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-LOCAL-20261023-2033-P0-DEMOPERSON-STATE4-VIRTUAL-REACH-STATIC-01` | `0x449730 -0x90 secondary vptr state4 path` | [read-only source+SHA report](REA_20261023_14H_23H_BATTLEWND_FASTSIM_DEMOPERSON_RECOVERY_STATIC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-LOCAL-20261023-21H-P0-DEMOPERSON-A5-RTTI-GATE-STATIC-01` | `0x447810 RTTI +0xA5 gated state4` | [read-only source+SHA report](REA_20261023_14H_23H_BATTLEWND_FASTSIM_DEMOPERSON_RECOVERY_STATIC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-LOCAL-20261023-2236-P0-FASTSIM-DUAL-DEMO-VCALL-STATIC-01` | `0x40E42E and 0x40E445 dual virtual update` | [read-only source+SHA report](REA_20261023_14H_23H_BATTLEWND_FASTSIM_DEMOPERSON_RECOVERY_STATIC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-LOCAL-20261023-23H-P0-BATTLEWND-DEMO-FIELD-IDENTITY-STATIC-01` | `0x8B8C90 BattleWnd +0x1C8/+0x1CC owner fields` | [read-only source+SHA report](REA_20261023_14H_23H_BATTLEWND_FASTSIM_DEMOPERSON_RECOVERY_STATIC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+
+Ten previously existing source IDs, rehashed owner reports + 7 adjacent EVIDENCE JSONs, no new analyses. Distinct native claims are interdependent; no duplicate native function counts. Currator must check original V9/current REF and source correction chain before any curated promotion. New formal REA 5-method VERIFIED 0, original Golden PASS 0, READY 0. Independent 10/24 00H–09H batch already listed elsewhere; next older not-yet-published 10/24 20H onward.
