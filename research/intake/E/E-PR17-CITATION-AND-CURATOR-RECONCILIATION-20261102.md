@@ -35,3 +35,12 @@ Required before CURATED/REF: owner and relative source path; actual SHA and orig
 Current E original-game DYNAMIC OBSERVED **0** / actual Golden PASS **0** / strict MATCH **0**. New E formal MASTER READY **0**; last authoritative checkpoint196/READY596 and 34 Task classification 9/21/4 are historical, not recomputed this run. Explicit denied operations and protected source remain BLOCKED; other owners, original assets, Work and task schedules unchanged.
 
 Next legal action: curator reviews 170 unique old source IDs / eight crosswalks against primary owner reports and newer develop, and E collects authenticated legal G0–G2 evidence only when available. This document does not substitute for curator approval.
+
+
+## 5. Reproducibility asset metadata: PC-only test/source locator
+
+- A separate authorized-PC E source inventory enumerated 340 candidate `tests/t020_*` or `tests/T020_*`/`tests/T018_*` files of Python/JSON type (170 Python, 170 JSON), approximately 4.7 MB. Excluded three filename/scope-sensitive items (two LIVE capture/receipt files and one prior stage15-related script) without copying their content or claiming they are newly proven safe.
+- [E-T020-REPRO-ASSET-RECEIPTS-20261102.tsv](E-T020-REPRO-ASSET-RECEIPTS-20261102.tsv) retains metadata for **337 PC-only files** (168 Python, 169 JSON; combined byte size 4,711,598), each actual file SHA-256 and PC-relative path. GitHub file content readback was **337/337 rows**, five fields per row.
+- These assets have NOT been copied to GitHub as code/data; listing a name and hash is not a successful executable regression, an authorized test input, original-game metadata or a native source proof. A dedicated follow-up must map each permitted asset to its E owner research ID and identify dependencies before any curated reproducibility claim.
+- The corrected VA index of **804 rows** was independently joined against the 193-source master index by exact `research_id`, source SHA-256 and summary path. **804/804 cross-index SHA + route matches**. These are cited VA occurrences, not newly authenticated x86 call sites.
+- Per current PC HANDOFF tails, B's latest 2026-11-02 candidate evidence is PUBLISHED_INTAKE/NOT_CURATED, new B READY=0; A/C/D latest referenced READYs predate MASTER checkpoint196 and are not independently re-added. E formal MASTER update still 0.
