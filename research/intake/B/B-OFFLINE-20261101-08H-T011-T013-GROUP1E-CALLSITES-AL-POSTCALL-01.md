@@ -1,0 +1,17 @@
+# B/T011/T013: 25 direct calls to group+0x1E setter and three downstream routes (2026-11-01 08H)
+research_id: B-OFFLINE-20261101-08H-T011-T013-GROUP1E-CALLSITES-AL-POSTCALL-01
+owner: B; tasks: T011, T013; T028 semantic relation VERIFY. Source observation: 2026-11-01 08H JST (original offline); PC source readback/hash checked 2026-11-02 01H JST.
+status: PUBLISHED_INTAKE / GITHUB_STAGED / NOT_CURATED; evidence_kind: STATIC_NATIVE / STATIC_GHIDRA / INFERRED / VERIFY; Golden PASS=0; strict MATCH=0; DYNAMIC=0; new READY=0.
+source_relative: data/T011_T013_GROUP1E_ALL25_CALLER_AL_POSTCALL_NATIVE_20261101_08H.md (lines 1–67); actual PC report SHA256=59384BB44C1A45A83223FE55FC399FCCB6372D1ECEE2DEC483B0361CDF8127F2.
+original PE SHA256=E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187. Source pseudoc original SHA256: functions/0056/005695B0.c=E77606970E7A7CFD3A614DE73111383A632C7C52773251301AD044D2DE613D96; 00568FB0.c=D7BAF26F8AAD7FA6E86AECACD45197400EE7F5484D9141C3FCAD25C0102AFD79; 00568460.c=927E3DCB39A67DF02A3BAA5A10F572D5957B720DC619CEC113E2A2EE3BA12CFB.
+## Reusable static result
+Original native E8 byte-relative destinations: 25 calls into 0x5695B0 from 14 distinct caller functions, and immediately preceding two native bytes give explicit input AL for ALL 25: 21 sites XOR AL,AL (AL=0) and 4 sites MOV AL,1. This does NOT prove indirect callers or the complete ABI.
+AL=0: 18 sites immediately call 0x568FB0. At 0x568FB6 CMP BYTE [group+0x1D],0 followed by 0x568FBC JE 0x569031, a zero gate skips member handling. Otherwise live-unit processing clears Unit+0x1867D at relevant sites, checks Unit+0x1867C, adjusts member vector end 0x569027, and 0x56902C E8 CALL 0x569280 recomputes a group aggregate.
+AL=0: 3 different sites (0x420269,0x528356,0x528416) route immediately to 0x568460, with writes at 0x568487 and 0x56848D setting Unit+0x186A4 and +0x186A8 to 0x80000008. This branch must NOT be collapsed into 0x568FB0's +0x1867D clearing.
+AL=1: four explicit sites 0x527BAD,0x5280C9,0x52830C,0x5284EA do not immediately route through either earlier helper. 0x52830C follows with 0x529B60. These are input categories, NOT proof that all conditions run in a game session.
+Native setter already known from prior 07H: 0x5695B6 MOV [group+0x1E],AL and 0x5695E3 E8→0x576F70. It is a prior link, not a second original discovery. Do not merge group+0x1C (different field),+0x1D (gate),+0x1E (setter byte).
+## Reproduction and limits
+Local owner verifier: data/B_20261101_08H_GROUP1E_CALLSITE_READONLY_VERIFY.py; evidence data/B_OFFLINE_20261101_08H_GROUP1E_CALLSITE_EVIDENCE.json (PC-only). The 25 native direct CALL rel32 and AL pairs, post-call categories, nine native sites were source checked in original study. This intake does not rerun original test and does not publish raw PE/SQLite/ZIP.
+KB_CANDIDATE: 0x5695B0 / 0x568FB0 / 0x568460 / 0x569280, CALL 0x56902C, group+0x1D/+0x1E, Unit+0x1867C/+0x1867D/+0x186A4/+0x186A8; owner B/T011,T013.
+VERIFY: precise +0x1D gate meaning/writers, 0x569280 aggregate semantics, all AL=1 eligibility, actual Unit state, vtables, runtime reach, safe golden. No original-game Golden and no new READY.
+next_validation: read-only group+0x1D writers and caller condition graph outside old denied regions, then legal original unmodified EXE/DAT/SAVE/MAP/input/RNG/tick capture for AL0/1 and member-count cases. Missing 03H/07H core/10-25 and HOLD21 are separate recovery cases; do not bypass denied VA/operations.
