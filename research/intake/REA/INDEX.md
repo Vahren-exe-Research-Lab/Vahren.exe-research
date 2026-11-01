@@ -307,3 +307,20 @@ Older 8 research IDs linked; no new formal static five-method VERIFIED or gamepl
 ## Legacy no-ID T014 research source archive (not part of source-ID count)
 
 - [16 original 2026-10-21/22 `T014` static owner documents, source SHA and substantive native excerpts](REA_20261021_22_T014_UNKEYED_LEGACY_STATIC_SOURCE_ARCHIVE.md) — SOURCE_PRESERVED_UNKEYED / DUPLICATE_REVIEW / NOT CURATED. These do **not** add 16 research IDs or VERIFIED functions. The full source remains PC-only; curator to reconcile against T014/ref saving evidence before formal adoption.
+
+## Legacy REA 2026-10-15 A owner studies
+
+| Owner source research ID | Source | Stage |
+| --- | --- | --- |
+| `REA-20261015-0034-UNIT-DISABLED-TASK-LIFETIME-01` | [historical owner summary+SHA](REA_20261015_LEGACY_OWNER_RESEARCH_A.md) | SOURCE_PUBLISHED_INTAKE / STATIC_QC / VERIFY |
+| `REA-20261015-0240-UNIT-REGEN-V70-ABI-01` | [historical owner summary+SHA](REA_20261015_LEGACY_OWNER_RESEARCH_A.md) | SOURCE_PUBLISHED_INTAKE / STATIC_QC / VERIFY |
+| `REA-20261015-0345-REGEN-V70-NORMALVT-BRIDGE-01` | [historical owner summary+SHA](REA_20261015_LEGACY_OWNER_RESEARCH_A.md) | SOURCE_PUBLISHED_INTAKE / STATIC_QC / VERIFY |
+| `REA-20261015-0435-REGEN-SENTINEL-INT32-EDGE-01` | [historical owner summary+SHA](REA_20261015_LEGACY_OWNER_RESEARCH_A.md) | SOURCE_PUBLISHED_INTAKE / STATIC_QC / VERIFY |
+| `REA-20261015-0540-REGEN-SENTINEL-AUX-GATE-01` | [historical owner summary+SHA](REA_20261015_LEGACY_OWNER_RESEARCH_A.md) | SOURCE_PUBLISHED_INTAKE / STATIC_QC / VERIFY |
+| `REA-20261015-0732-AUX-TIMER-STICKY-ZERO-01` | [historical owner summary+SHA](REA_20261015_LEGACY_OWNER_RESEARCH_A.md) | SOURCE_PUBLISHED_INTAKE / STATIC_QC / VERIFY |
+| `REA-20261015-0940-UNIT-TICK-CALLBACK-ORDER-01` | [historical owner summary+SHA](REA_20261015_LEGACY_OWNER_RESEARCH_A.md) | SOURCE_PUBLISHED_INTAKE / STATIC_QC / VERIFY |
+| `REA-20261015-1040-TICK-POSTCALL-TIMER-ORDER-01` | [historical owner summary+SHA](REA_20261015_LEGACY_OWNER_RESEARCH_A.md) | SOURCE_PUBLISHED_INTAKE / STATIC_QC / VERIFY |
+| `REA-20261015-1140-TICK-EXPIRY-XREF-CONTRACT-01` | [historical owner summary+SHA](REA_20261015_LEGACY_OWNER_RESEARCH_A.md) | SOURCE_PUBLISHED_INTAKE / STATIC_QC / VERIFY |
+| `REA-20261015-1238-TICK-EXPIRY-EARLY-RETURN-GATES-01` | [historical owner summary+SHA](REA_20261015_LEGACY_OWNER_RESEARCH_A.md) | SOURCE_PUBLISHED_INTAKE / STATIC_QC / VERIFY |
+
+Prior refusal history only as BLOCKED metadata; no direct adoption in protected REF/dictionaries, original Golden PASS/READY 0.
