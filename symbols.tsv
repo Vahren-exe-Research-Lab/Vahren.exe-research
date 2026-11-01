@@ -101,13 +101,13 @@
 0x8BCD48	object	g_TempStatusWnd	一時表示用の詳細パネル（TempStatusWnd）。DLL のステータスパネル表示に使う	実機確認	F§92, W(work_selector_native_detail.h)
 0x8BCDCC	global	g_TempStatusWnd_visible	TempStatusWnd+0x84。表示中の印	テストのみ	W(work_detail_cleanup.h)
 0x8BCDE0	global	g_TempStatusWnd_owner	TempStatusWnd の所有者	テストのみ	W(work_selector_detail_hover.h)
-0x8BCF00	global	g_TempStatusWnd_target	TempStatusWnd が表示するユニット	テストのみ	W(work_detail_cleanup.h)
+0x8BCF00	global	g_TempStatusWnd_target	TempStatusWnd が表示するユニット（TempStatusWnd+0x1B8）。0x55BAB0が設定し、組立て0x55BC60が顔の取得に渡す	実機確認	W(work_detail_cleanup.h), R1101§2
 0x8BCF10	global	g_TempStatusWnd_rects	技能アイコンなどの矩形の配列（16 バイトずつ）	テストのみ	W(work_selector_skill_hover.h)
 0x8BE040	global	g_TempStatusWnd_hoverCount	説明表示の対象の数	テストのみ	W(work_selector_skill_hover.h)
-0x55BAB0	func	TempStatusWnd_OpenForUnit	一時の詳細パネルをユニットで開く（表示状態 0x80000008 を渡す）	実機確認	F§92, W(work_selector_native_detail.h)
+0x55BAB0	func	TempStatusWnd_OpenForUnit	一時の詳細パネルをユニットで開く（表示状態 0x80000008 を渡す）。先に閉じる→0x8BCF00設定→組立て0x55BC60を1回→表示。所要は初回のユニット52〜435ms（中央値128）、2回目以降24〜90ms（中央値44）	実機確認	F§92, W(work_selector_native_detail.h), R1101§2
 0x55B590	func	StatusWnd_Hide	詳細パネルを閉じる（StatusWnd 系の仮想関数 vf04）	実機確認	F§92, 旧symbols
 0x55B5B0	func	StatusWnd_OpenForUnit	詳細パネル（ボタンあり）をユニットで開く	実機確認	本セッション(x32dbg)
-0x55BC60	func	StatusWnd_Layout	詳細パネルの組み立て（thiscall、引数 char）。表示中に何度も呼ばれる。自勢力でも引数は 0	実機確認	C(§93)
+0x55BC60	func	StatusWnd_Layout	詳細パネルの組み立て（thiscall、引数 char）。表示中に何度も呼ばれる。自勢力でも引数は 0。画像はチップ0x424C80(0x55BD4B)・矩形0x423D70(0x55BDD5)・0x424630(0x55BED9)・顔0x584830(0x55BF3F)	実機確認	C(§93), R1101§2
 0x55D712	code	StatusWnd_Layout_ButtonsA	ボタン作成の 1 組目（実機では通らなかった）	実機確認	C(§93)
 0x55D7FF	code	StatusWnd_Layout_ButtonsB	ボタン作成の 2 組目の始まり。noremove_unit など 3 つの設定を引く	静的確認	C(§93)
 0x55D8F6	code	StatusWnd_Layout_ButtonGate	ボタンを作るかどうかの判定の入口（所属先・プレイヤー勢力・出撃準備中）	実機確認	C(§93)
@@ -128,7 +128,7 @@
 0x43B5A0	func	ExpresElement_IsString_False	常に偽を返す関数（TempStatusWnd の vtable +0x1C にも使われる）	静的確認	本セッション, 旧symbols
 0x455D90	func	FrameWnd_ScreenToLocal	画面座標をウィンドウ内の座標へ変換（推定）	推定	W(work_selector_skill_hover.h)
 0x521A00	func	Player::b144_vf01	プレイヤーの毎フレーム処理（+144 にある Actionable 側の仮想関数表の 1 番。2026-10-11 の名前 Player::vf01 は主表と区別していなかった）	静的確認	本セッション, RTTI
-0x521560	func	Player_DispatchHover	説明表示の振り分け。イベント実行中は vfunc+0x1C が真のウィンドウにだけ渡す	静的確認	本セッション
+0x521560	func	Player_DispatchHover	説明表示の振り分け。イベント実行中は vfunc+0x1C が真のウィンドウにだけ渡す。マウス位置は Player+0x324/+0x328（ゲーム座標）でウィンドウ矩形と比べる	実機確認	本セッション, R1101§3
 0x521AF0	code	Player_HoverCallSite	0x521560 を呼ぶ位置（Work の CALL 差し替えの候補）	静的確認	W(work_selector_hover_integration.h)
 # ---- 戦闘：ユニット更新・簡易戦闘 ----
 0x544290	func	Battle_CreateSimpleUnit	SimpleUnit の戦闘用オブジェクトを生成する入口。初期化で Unit+0x8C/0x8D を通常型として設定する。	静的確認	T013§primary/fallback poolのRTTI同定, T011§14
@@ -353,7 +353,7 @@
 0x4BF520	func	Audio_SetFadeTransitionState	BGMのフェード入力を設定する補助。player+0x20 の符号と停止・再開条件を区別する。	推定	T015§D-20261013-1952-02
 0x4BF570	func	Audio_ResumeBgmTransition	再生コアの既存曲・空曲条件に応じた後続遷移を処理する。開始音量の経路は条件付き。	推定	T015§D-20261014-1841-01
 0x4BF720	func	Audio_ResolveTransportBranch	BGMの状態下位5bitとフェード・EOF判定で次の処理を選ぶ。	推定	T015§D-20261013-0241-02
-0x4C24B0	func	Window_PumpGameLoop	ゲームのメインループの一部。非アクティブ時は10msの Sleep を挟み、BGM更新にも接続する。	静的確認	T015§879822入力pollと879823別フレーム処理
+0x4C24B0	func	Window_PumpGameLoop	ゲームのメインループ。未処理メッセージを全部処理してから1コマ進める。1コマ：timeGetTime→GameTask+0x78との差だけSleep→0xAC0918へ時刻→更新→描画0x4C3EB0→Present。非アクティブ時は10msのSleepだけ	静的確認	T015§879822入力pollと879823別フレーム処理, R1101§1
 0x4B9E50	func	Input_CreateNewGameMouseHost	NewGameMouse を確保・初期化してプレイヤーの入力参照に設定する経路を含む。	静的確認	T015§D-20261013-2038-01
 0x4BCF20	func	Input_ReleaseGameMouseResource	GameMouse の RTTI 仮想関数表に登録された先頭メソッド。詳細な解放対象は未確認。	推定	T015§D-20261013-1834-01
 0x4EE0C0	func	Input_ConstructNewGameMouse	NewGameMouse の生成時に呼ばれる初期化関数。生成した実体は Player の入力参照へ配置される。	静的確認	T015§D-20261013-2038-01
@@ -444,3 +444,19 @@
 0x5D49F0	func	VorbisGrow_FreeListAndOptionalRealloc	outer+0x54の旧buffer退避listを解放し、+0x50非零のときrealloc結果を+0x44へ未検査上書きする。正の要求での失敗時の参照喪失は条件付きで実機未検証。	静的確認	REA-LOCAL-20261031-19H-P0-VORBIS-REALLOC-OWNER-LOSS-STATIC-01; rea_lab/decomp_task/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATIC.md
 0x5D4980	func	VorbisGrow_AlignAndAllocateBuffer	8byte整列要求をsigned容量条件で判定し、必要なら旧使用量+0x50を蓄積してmalloc退避nodeと新bufferを確保。失敗時の実際の到達性はVERIFY。	静的確認	REA-LOCAL-20261031-20H-P0-VORBIS-GROWTH-NODE-GATE-STATIC-01; rea_lab/decomp_task/REA_20261031_20H_P0_VORBIS_GROWTH_NODE_GATE_STATIC.md
 0x5E06C0	func	VorbisGrowCaller_ConditionalBufferWriter	0x5E072Aで0x5D4980に確保を依頼し戻り値をstackに保持、別の数値条件を通るとポインタ加算後に書く。allocator失敗と零除算の実到達性は未検証。	静的確認	REA-LOCAL-20261031-21H-P0-VORBIS-GROWTH-CALLER-DEREFERENCE-STATIC-01; rea_lab/decomp_task/REA_20261031_21H_P0_VORBIS_ALLOC_CALLER_STATIC.md
+
+# ---- 2026-11-01 汎用一覧v4 完成時の調査（R1101 = dev_lab/docs/DAT_UI_V4_RESEARCH_20261101.md） ----
+0x4C21F0	func	GameTask_SetFps	thiscall、引数 fps。GameTask+0x74=fps、+0x78=round(1000/fps)。0x48AA00は25、0x513C60・0x526A40は25と100を切り替え	静的確認	R1101§1
+0xAC0918	global	g_FrameStartTime	1コマの開始時刻（timeGetTime、Sleep前）。起動直後0で、メインループ0x4C24B0だけが書く。0以外なら本ループが回っている	実機確認	R1101§1, W(dat_ui_selector_plugin.c)
+0xAC0914	global	g_LastPresentResult	直前の Present の戻り値。D3DERR_DEVICELOST(0x88760868)なら0x4C24B0が復帰処理（TestCooperativeLevel→Reset）に入る	静的確認	R1101§1
+0x87980C	global	g_D3DDevice	IDirect3DDevice9。+0xC TestCooperativeLevel、+0x40 Reset（引数0x8795F0）、+0x44 Present、+0xAC Clear を0x4C24B0が呼ぶ	静的確認	R1101§1
+0x8795F0	global	g_D3DPresentParams	Reset に渡す D3DPRESENT_PARAMETERS	推定	R1101§1
+0x584830	func	UnitDef_GetFaceBitmap	thiscall ECX=ユニット定義、引数なし、素のret、EAX=HBITMAPか0。"face"を0x585AD0で引き0x4243C0へ。無ければ兵種のface。1回約5ms	実機確認	R1101§2
+0x4243C0	func	Image_GetFaceCached	cdecl 引数1（char* 画像名）、EAX=HBITMAP。キャッシュ0x879E48を引き、無ければ0x427270で読み込んで登録	静的確認	R1101§2
+0x879E48	global	g_FaceImageCache	顔画像のキャッシュ（std::map、名前→HBITMAP）。0x4243C0が登録	静的確認	R1101§2
+0x424C80	func	Image_GetChipSprite	ECX=char* チップ名、EAX=HGDIOBJ。キャッシュ0x87A1B8、無ければ0x879E68の矩形から切り出してDIBを作り登録。表に無い名前は0	静的確認	R1101§2
+0x87A1B8	global	g_ChipSpriteCache	チップ画像のキャッシュ（std::map）。0x424C80が登録	静的確認	R1101§2
+0x879E68	global	g_ChipAtlasMap	読込み済みチップの表（std::map、要素+0x28〜+0x34が矩形）。0x424C80・0x423D70が引く	静的確認	R1101§2
+0x423D70	func	Image_GetChipRect	ECX=char* チップ名、ESI=出力RECT。0x879E68の要素+0x28〜+0x34を写す（無ければ0x8BE2E0〜の既定値）	静的確認	R1101§2
+0x4BE388	global	g_InputReceiver	入力pollの受け手。vtable 0x6394A0、vtable+4 が0x4EE170、+8 がDirectInputの消費側。DLLの入力保護がこの呼出しの後で動く	実機確認	R1101§4, W(dat_ui_input_provider.h)
+0x626D5C	string	str_face	"face"。0x584830が顔画像名の取得に使う	静的確認	R1101§2

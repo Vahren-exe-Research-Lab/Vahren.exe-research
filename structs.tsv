@@ -37,6 +37,9 @@ StatusWnd	0x1C6	u8	btnDismiss	「解雇」ボタンを作った印	実機確認	
 StatusWnd	0x1C7	u8	btnItem	「アイテム」ボタンを作った印	静的確認	C(§93)
 StatusWnd	0x1C8	rect[]	hoverRects	説明表示の対象の矩形（16 バイトずつ）	テストのみ	W(work_selector_skill_hover.h)
 StatusWnd	0x12F8	u32	hoverCount	説明表示の対象の数	テストのみ	W(work_selector_skill_hover.h)
-Player	0x324	i32	cursorX	マウスの X	静的確認	本セッション
-Player	0x328	i32	cursorY	マウスの Y	静的確認	本セッション
+Player	0x324	i32	cursorX	マウスの X（ゲーム座標。全画面でもウィンドウの画素ではなくこの値で判定する）	実機確認	本セッション, R1101§3
+Player	0x328	i32	cursorY	マウスの Y（ゲーム座標）	実機確認	本セッション, R1101§3
 Player	0x42C	ptr	hoverOwner	説明表示を受け持つウィンドウ	静的確認	本セッション
+GameTask	0x40	u32	frameTime	1コマ開始時のtimeGetTime（0xAC0918へ写す）	静的確認	R1101§1
+GameTask	0x74	i32	fps	1秒あたりのコマ数（25、戦闘の速度で100）	静的確認	R1101§1
+GameTask	0x78	u32	frameMs	1コマのミリ秒（round(1000/fps)）。これに満たない分だけSleep	静的確認	R1101§1

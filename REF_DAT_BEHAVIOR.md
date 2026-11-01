@@ -44,10 +44,17 @@ DAT（イベントスクリプト）について、実際に確かめた挙動�
 
 ## DLL との組み合わせで分かったこと
 
+### choiceUnitFromList の取消互換（2026-10-30）
+- テストのみ（原作DATの読取照合、実機取消比較は未実施）：`43_内政_教育/lecture.dat:1065–1067` は取消時に `yappa_yameru=1` を立て、`@eranda_chara` を保持する。選択結果の置換は成功側1078–1080だけ。
+- 互換接続では `clear(@eranda_chara)` を成功分岐内に置く。汎用APIの `@hk_ui_selected` を取消時に空にする契約とは区別する。
+- `102_ランダムイベント/randomev51-60.dat:671–676,729–734` は取消判定前に結果を表情処理へ渡す。全呼出元で結果を消して安全とは扱わない。
+- 「お前クビや」は共通選択経由だが、「配下一括雇用・実行」は `50_その他新システム/restructuring .dat:664` 以降の全隊長走査と実行確認であり、共通一覧の差替えだけでは対応しない。
+- 出典：`dev_lab/docs/DAT_UI_INTEGRATION_ACCEPTANCE.md` の「2026-10-30 完全導入生成と取消互換」。生成物と回帰試験は `_work/dat_ui_profiles_20261030/`。教育・アイテムの実機通し成功を意味しない。
+
 | 挙動 | 確かさ | 出典 |
 |---|---|---|
 | ゲームは DirectInput でマウスを読むので、ゲーム窓を無効にしても、上に重ねた窓のクリックが下のゲームの選択肢にも届く | 実機確認 | FINDINGS §91 |
-| 起動時のデータ読込中は 0x87983C が 1。読込後に DLL を有効にする（自動 arm）。読込中を一度も見なかったときは、タイトル画面が 10 秒続いたら有効にする | 実機確認 | FINDINGS §86、§90 |
+| 起動時のデータ読込中は 0x87983C が 1。読込後に DLL を有効にする（自動 arm）。2026-10-31 からは、印が 0・タイトル画面・0xAC0918（コマの時刻）が 0 以外なら読込み済みとみなし、タイトル 0.5 秒で有効にする（読めないときだけ従来の 10 秒） | 実機確認 | FINDINGS §86、§90、R1101§1 |
 | イベント中は、ゲーム本来のステータスパネルの説明表示（マウスを重ねるとスキル説明）が出ない。教育などのイベント中はパネル自体を見られない | 実機確認（ユーザー） | FINDINGS §93.4 |
 
 ## Worldイベント：原作ver0.67 SCRIPT限定の横断照合（C/T025,T016）
@@ -82,3 +89,14 @@ DAT（イベントスクリプト）について、実際に確かめた挙動�
 - event_castlesetの初回NewTurn/turn1では周期条件が初期flagの書込より先にあり、その同一呼出はcastleturn加算を飛ばし得る。別story siege_startの初期化/周期評価順は違い、合法に両方起動した場合の初回offset差候補がある。mode3の数値上同じ5回は、旧VMで両方が同時発火する証明にはならない。
 - Verified normalized-script SHA256: event_castleset.dat=9796862137A83BF006FE909D2E60AC45384B41995835A820F6FE3ACCB90EC450、siege_politic.dat=362CB8553ACDB36F10E5939EDE977A3739AE24FDBF23501E209ED87A4FD255E5。
 - Owner C/T029,T025,T016: C-20261015-2124-01、evidence/T029_CASTLE_VS_SIEGE_COUNTER_PHASE_CROSSWALK_20261015.md。個別thresholdは先行T029で既知、今回は同phaseでの初回flag順の交差照合のみ。story/world/VMの実適格呼出回数、原作Gameplay Golden PASS、strict MATCHは未検証（0）。
+
+### 教育・解雇・ランダムイベント（2026-11-01 Claude）
+
+| 挙動 | 確かさ | 出典 |
+|---|---|---|
+| 教育の成功値は `poli_lecture_<id>_main1`（基本 50＋講師・生徒・勢力や領地などの補正）と `main2`（能力差の補正）で `lecture_success` に作る。乱数は茶会の追加分だけ。生徒を選ぶ前に main1・main2 を呼ぶと、本番と同じ値を一覧に出せる（汎用一覧の「補正合計」） | 静的確認（一覧の表示は実機確認） | R1101§5 |
+| 解雇の対象は部隊員のうち `isTalent(@u)==0` のもの（poli_vassal_delete）。`storeMemberOfUnit(@隊長,@list)`・`count(@list)`・`subv(@a,@b)`・`dialog()` はこの用途どおり動く | 実機確認 | R1101§5 |
+| `delete_chara_choice` は `@chara_list` を消さずに積み増す。繰り返し呼ぶなら先に `clear(@chara_list)` | 実機確認 | R1101§5 |
+| 専門学校送り（randomev11-20.dat）の `student_chara_choice` は取消で `yappa_yameru2=1`。原作はこれを見ずに先へ進み、送り出す人が空のまま進んでいた（v1.0 で前の 3 択へ戻すよう修正） | 実機確認 | R1101§5 |
+
+R1101 = dev_lab/docs/DAT_UI_V4_RESEARCH_20261101.md
