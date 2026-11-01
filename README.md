@@ -164,6 +164,15 @@ python -B knowledge\tools\research_index.py --check
 - 既存のユーザーデータベースを先にバックアップし、ゲームが動作していないときだけ手動でインポートする。手動ラベルとの衝突に注意。
 - 自動でdbloadやゲーム起動はしない。`python -B tools/test_x32dbg_database.py` は隔離したオフラインテスト。
 
+## 研究資料（research/）
+
+知識ベースの出典になっている研究文書と、その再現用の道具。ゲームの素材・セーブ・復号した平文・個人のパスは入れない。
+
+| パス | 中身 |
+|---|---|
+| `research/DAT_UI_V4_RESEARCH_20261101.md` | 汎用一覧 v4 完成時の調査（出典 R1101）。メインループ、一時の詳細パネル、画像キャッシュ、説明表示と全画面、入力保護、DAT で分かったこと |
+| `research/save_analysis_20261101/` | 通常セーブ解析の道具（出典 S1101 = `REF_SAVE_FORMAT.md`）。本体と古い残りを分けて読むパーサーと、区間分け・項目照合のスクリプト。使い方は同フォルダの README |
+
 ## 研究全体の分類・重複照合・担当間の統合（2026-10-31）
 
 - **研究の統合入口**: [KNOWLEDGE_CURATION_PROTOCOL.md](KNOWLEDGE_CURATION_PROTOCOL.md)。研究A-E/REA各担当はまず既存辞書と出典を参照し、担当所有のHANDOFFにKB_CANDIDATEを残す。

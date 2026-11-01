@@ -3,31 +3,31 @@
 This is a metadata inventory, NOT a validation of all research findings.
 GitHub does not contain original game files or the generated search database.
 
-- Indexed research documents: 1857
-- Indexed lines: 1,198,947
-- Indexed VA mentions: 143,758
-- Catalog source receipts: 1857; missing: 0; stale SHA/size: 0; redacted path entries: 0
-- Exact-byte duplicate groups: 18, total referenced files: 38
-- Shared-primary-ID candidate groups: 152 (NOT automatically duplicates)
+- Indexed research documents: 1937
+- Indexed lines: 1,232,535
+- Indexed VA mentions: 146,874
+- Catalog source receipts: 1937; missing: 0; stale SHA/size: 0; redacted path entries: 0
+- Exact-byte duplicate groups: 19, total referenced files: 40
+- Shared-primary-ID candidate groups: 170 (NOT automatically duplicates)
 
 ## Automatic tentative classification
 
 | Category | Indexed sources |
 |---|---:|
-| AI_TARGET | 320 |
-| GOLDEN_QA | 282 |
-| BATTLE_DAMAGE | 233 |
-| SCRIPT_VM | 216 |
-| UNIT_SKILL_EXP | 191 |
+| AI_TARGET | 348 |
+| GOLDEN_QA | 287 |
+| BATTLE_DAMAGE | 234 |
+| SCRIPT_VM | 219 |
+| UNIT_SKILL_EXP | 218 |
 | GHIDRA_INDEX | 179 |
 | MORALE_RETREAT | 98 |
-| UNCLASSIFIED | 89 |
-| STRATEGY | 62 |
-| SAVE | 46 |
-| RTS_UI | 34 |
-| IMPLEMENTATION | 29 |
-| COORDINATION | 24 |
-| RNG | 20 |
+| UNCLASSIFIED | 97 |
+| STRATEGY | 63 |
+| SAVE | 49 |
+| RTS_UI | 35 |
+| IMPLEMENTATION | 30 |
+| COORDINATION | 25 |
+| RNG | 21 |
 | EVENT | 15 |
 | OTHER_TASK | 13 |
 | ENGINE | 6 |
