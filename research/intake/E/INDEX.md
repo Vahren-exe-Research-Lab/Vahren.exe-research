@@ -26,7 +26,7 @@ Each section begins with the exact E research ID and gives the PC-relative origi
 
 - [Combined C-NB02 real-original Golden G0–G4 evidence acceptance playbook](E-CNB02-GOLDEN-EVIDENCE-ACCEPTANCE-PLAYBOOK-20261102.md): keeps static, synthetic, original limited transitions and old/new strict parity separate.
 - [VA source-mention search index](E-VA-MENTION-INDEX-20261102.tsv): 804 limited mentions, 549 distinct VAs in 89 E owner source reports, all labeled VERIFY/MENTION_ONLY; not an original native symbol dictionary.
-- [361 historical source-line checks, correction triage, develop branch-overlap audit](E-PR17-CITATION-AND-CURATOR-RECONCILIATION-20261102.md): includes 17 same-blob develop/PR records and 170 historical IDs awaiting curator-only adoption.
+- [795/795 historical source-line checks, correction triage, develop branch-overlap audit](E-PR17-CITATION-AND-CURATOR-RECONCILIATION-20261102.md): includes 17 same-blob develop/PR records and 170 historical IDs awaiting curator-only adoption.
 
 ## Existing E intake work — link without duplicate publication
 
