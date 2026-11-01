@@ -1,0 +1,103 @@
+# REA historical 2026-10-24 00H–09H: source-preserving battle-filter ABI recovery
+
+Owner: REA / T010,T015/T031-related static research. **PRIVATE owner intake / NOT CURATED / NOT READY.** Nine distinct older REA report IDs, no newly discovered native functions, no new runner or Golden tests. The 02H source ID `REA-LOCAL-20261024-02H-P0-F720-MAP-FILTER-ABI-STATIC-01` already appears in develop `REF_BATTLE_TAKEOVER.md` with exact matching report SHA256 `E8D60E3A7EABB1E6D8844BFED22E4E2D1C94070F6559CA2101B1EF7699014907`; **linked as curated predecessor, not re-published or re-counted here**.
+
+All nine owner reports and nine corresponding small EVIDENCE JSON files exist on the authorized research PC. Both sets were independently SHA256 hashed by read-only file operations on 2026-11-02 JST. The report's own static instruction/E8 tests are historical; we did **not** rerun 9 native instruction audits, V9 search, REA 5-method acquisition or original gameplay. Target PC PE historic SHA256 `E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187`, unified V9 archived SHA256 `2629CB2F03ECEC9927E89892C77F847E4CDBA381AB718825C1CA8CFEEEF00EDE`. Early reports sometimes used V3; never promote its uncorrected inference above V9/original x86. Original PE and V9 were **not independently rehashed in this recovery**. All EVIDENCE JSON, binaries, user-local paths and generated databases remain on the PC only.
+
+## Evidence and normalized owner-source records
+
+### REA-LOCAL-20261024-0043-P0-DEMOPERSON-PAIR-INIT-ABI-STATIC-01
+
+- **Owner/time/state:** REA independent / 2026-10-24 0043 JST / STATIC (limited native-source instruction history), INFERRED where stated, VERIFY; Golden PASS 0, READY 0.
+- **Owner source:** `rea_lab/decomp_task/REA_20261024_0043_P0_DEMOPERSON_PAIR_INIT_ABI_STATIC.md` / SHA256 `EC0E1D91966008B19C977DF2459B6702AB210DED412C8609FDA0D011370EB493` (read-only file hash this recovery).
+- **Original evidence:** `rea_lab/decomp_task/REA_20261024_0043_P0_DEMOPERSON_PAIR_INIT_ABI_EVIDENCE.json` / SHA256 `58402D4D09069111BAA4156883DC896C1EE9A00AD82A04CBFEAFDB2E991CD505` (not copied to GitHub).
+- **VA and CALL/offset anchors:** 0x514A80, 0x40F3D6, 0x40F3F3.
+- **Principal source-backed meaning:** Main DemoPerson vtable 0x638030 slot +8 points to 0x514A80: ECX=this, three stack arguments, RET 12. The two source objects receive cross-links at +0x1C, side bytes 0/1 at +0x18 and +0x20 initialized to 100. Indirect virtual calls cannot be counted through direct-E8 caller inventory.
+- **Limitations and next validation:** Runtime object type, source lifetime, early-return behavior and equivalence to battle roster have not been proven.
+- **Correction chain:** earlier owner hours are antecedent, not repeated evidence; 02H F720 ABI is already curated in develop, 03H–09H narrow its caller/generator assumptions. No formal REA five-method VERIFIED promotion.
+
+### REA-LOCAL-20261024-0137-P0-DEMO-VSLOT0C-SOURCE-TAIL-STATIC-01
+
+- **Owner/time/state:** REA independent / 2026-10-24 0137 JST / STATIC (limited native-source instruction history), INFERRED where stated, VERIFY; Golden PASS 0, READY 0.
+- **Owner source:** `rea_lab/decomp_task/REA_20261024_0137_P0_DEMO_VSLOT0C_SOURCE_TAIL_STATIC.md` / SHA256 `842397FAEFFFD3860FDE70A46CC024D608FA5AA69B4C4442146727889BE48ED0` (read-only file hash this recovery).
+- **Original evidence:** `rea_lab/decomp_task/REA_20261024_0137_P0_DEMO_VSLOT0C_SOURCE_TAIL_EVIDENCE.json` / SHA256 `A797B683BF88311189F9041D54ABC0AEB7006413549AE3FA0F7171435296D686` (not copied to GitHub).
+- **VA and CALL/offset anchors:** 0x583CE6, 0x597B00, 0x4103D5, 0x4103E2, 0x447810.
+- **Principal source-backed meaning:** Corrects 0x583CE6 to E9 tail-JMP, not E8 CALL; +0x0C virtual calls at 0x4103D5 and 0x4103E2 occur after +0x08 initialization with intervening work. Main vtable+0x0C=0x447810; source pointer+0x14 conditionally affects +0xA5 via RTTI.
+- **Limitations and next validation:** No proof that all runtime dynamic types have that exact vtable or that mid-sequence exits cannot occur.
+- **Correction chain:** earlier owner hours are antecedent, not repeated evidence; 02H F720 ABI is already curated in develop, 03H–09H narrow its caller/generator assumptions. No formal REA five-method VERIFIED promotion.
+
+### REA-LOCAL-20261024-03H-P0-F720-NULLABLE-CALLER-CONTRAST-STATIC-01
+
+- **Owner/time/state:** REA independent / 2026-10-24 03H JST / STATIC (limited native-source instruction history), INFERRED where stated, VERIFY; Golden PASS 0, READY 0.
+- **Owner source:** `rea_lab/decomp_task/REA_20261024_03H_P0_F720_CALLER_NULL_CONTRACT_STATIC.md` / SHA256 `DABA032A4DB9821DEE5DE5BA92E9BB3BE7BAE87EEC888B264FB02A0438153EA3` (read-only file hash this recovery).
+- **Original evidence:** `rea_lab/decomp_task/REA_20261024_03H_P0_F720_CALLER_NULL_CONTRACT_EVIDENCE.json` / SHA256 `78F8B1FCA145FD33552AD68F09A0FF2D23FE8CA71484ED539BDECC9D35B4911C` (not copied to GitHub).
+- **VA and CALL/offset anchors:** 0x48F720, 0x4901C1, 0x40F393, 0x48FBD9, 0x4F66ED.
+- **Principal source-backed meaning:** After nullable 0x48F720, caller 0x4901C1 does check EAX against zero before +0x94 access; 0x40F393 -> 0x583C70, 0x48FBD9 -> 0x583C70 and 0x4F66ED -> 0x583C70 have no equivalent local guard. All seven original rel32 E8 callers were compared by the source owner.
+- **Limitations and next validation:** A possible unguarded dereference is conditional; valid-game reachability and upstream non-null invariants remain VERIFY. Supersedes any global claim that all callers lack null guards.
+- **Correction chain:** earlier owner hours are antecedent, not repeated evidence; 02H F720 ABI is already curated in develop, 03H–09H narrow its caller/generator assumptions. No formal REA five-method VERIFIED promotion.
+
+### REA-LOCAL-20261024-04H-P0-F720-OWNER-PROVENANCE-STATIC-01
+
+- **Owner/time/state:** REA independent / 2026-10-24 04H JST / STATIC (limited native-source instruction history), INFERRED where stated, VERIFY; Golden PASS 0, READY 0.
+- **Owner source:** `rea_lab/decomp_task/REA_20261024_04H_P0_F720_OWNER_PROVENANCE_STATIC.md` / SHA256 `6FE0B7F3068BE34E4AB547B8C46F1270F4658A8D8BAD682B43BA7226EFFDDEE2` (read-only file hash this recovery).
+- **Original evidence:** `rea_lab/decomp_task/REA_20261024_04H_P0_F720_OWNER_PROVENANCE_EVIDENCE.json` / SHA256 `78A87FEFA52A1136FE8AF14CF0FD62A8810899459D227B948E3ACCB3A483CBB1` (not copied to GitHub).
+- **VA and CALL/offset anchors:** 0x40D0B4, 0x40F38D, 0x48F723, 0x49AF10.
+- **Principal source-backed meaning:** The 0x40D0A0 owner sets global [0x8B8E4C] from context+0x1EED20 before 0x40F320 reads it; selection-list and comparison-tree context are distinct. 0x49AF10 has a clearing/self-linked sentinel initialization of a related list, but not a demonstrated empty list at the later 0x40F393 call.
+- **Limitations and next validation:** Do not interpret potential empty state as a proven original-game crash; trace intervening list population/owner changes.
+- **Correction chain:** earlier owner hours are antecedent, not repeated evidence; 02H F720 ABI is already curated in develop, 03H–09H narrow its caller/generator assumptions. No formal REA five-method VERIFIED promotion.
+
+### REA-LOCAL-20261024-0541-P0-RESET-REBUILD-F720-STATIC-01
+
+- **Owner/time/state:** REA independent / 2026-10-24 0541 JST / STATIC (limited native-source instruction history), INFERRED where stated, VERIFY; Golden PASS 0, READY 0.
+- **Owner source:** `rea_lab/decomp_task/REA_20261024_0541_P0_LIST_REBUILD_F720_STATIC.md` / SHA256 `9D3E9BC4387B36DD9F8AE3AD3DE3C4EC545C94DBA18177A29BA10814B9DBB4BA` (read-only file hash this recovery).
+- **Original evidence:** `rea_lab/decomp_task/REA_20261024_0541_P0_LIST_REBUILD_F720_EVIDENCE.json` / SHA256 `770DAF331D49EE2697B9904F10A2050237B41230E0CA56B6B21E12FB8FE0CDA4` (not copied to GitHub).
+- **VA and CALL/offset anchors:** 0x48FBB9, 0x48FBD1, 0x48FBD9, 0x498E60, 0x498F90, 0x476830.
+- **Principal source-backed meaning:** The 0x48F9E0 list is cleared/reset, but its 0x48FBD1 call to 0x498E60 rebuilds from input before the 0x48FBD9 call to nullable 0x48F720. 0x498F90 -> 0x476830 connects normal first insertion/count increase.
+- **Limitations and next validation:** Corrects overbroad empty-after-clear inference; whether source input is empty at runtime and allocation/exception failures remain unverified.
+- **Correction chain:** earlier owner hours are antecedent, not repeated evidence; 02H F720 ABI is already curated in develop, 03H–09H narrow its caller/generator assumptions. No formal REA five-method VERIFIED promotion.
+
+### REA-LOCAL-20261024-06H-P0-F9E0-SOURCE-ABI-STATIC-01
+
+- **Owner/time/state:** REA independent / 2026-10-24 06H JST / STATIC (limited native-source instruction history), INFERRED where stated, VERIFY; Golden PASS 0, READY 0.
+- **Owner source:** `rea_lab/decomp_task/REA_20261024_06H_P0_F9E0_SOURCE_ABI_STATIC.md` / SHA256 `946CC0AC3BB7BCE6D62B91AC91F6FE36E48D9C8DF0A4E8F111E5610E3FCB6DCA` (read-only file hash this recovery).
+- **Original evidence:** `rea_lab/decomp_task/REA_20261024_06H_P0_F9E0_SOURCE_ABI_EVIDENCE.json` / SHA256 `79107E1B43CE877B59B7541FAEA89395599A47E8CAF329C3C32B84C691770C24` (not copied to GitHub).
+- **VA and CALL/offset anchors:** 0x48F9E0, 0x48FA12, 0x48FBB5, 0x48FBCA, 0x490174.
+- **Principal source-backed meaning:** 0x48F9E0 uses ECX plus two distinct 4-byte stack parameters and RET 8. The input container is the second stack argument; 0x498E60 rebuilds from that input. Distinguish destination cleared before rebuild from input possibly empty at 0x498E65.
+- **Limitations and next validation:** All five higher-level callers need complete upstream nonempty/exception analysis before treating the rebuilt output as invariant.
+- **Correction chain:** earlier owner hours are antecedent, not repeated evidence; 02H F720 ABI is already curated in develop, 03H–09H narrow its caller/generator assumptions. No formal REA five-method VERIFIED promotion.
+
+### REA-LOCAL-20261024-07H-P0-B136-FIRST-INSERT-INVARIANT-STATIC-01
+
+- **Owner/time/state:** REA independent / 2026-10-24 07H JST / STATIC (limited native-source instruction history), INFERRED where stated, VERIFY; Golden PASS 0, READY 0.
+- **Owner source:** `rea_lab/decomp_task/REA_20261024_07H_P0_B136_FIRST_INSERT_STATIC.md` / SHA256 `83FD188C6B7D4D421DBC53BE354733F9BA90B40275071BC5D48D257FB491EDAC` (read-only file hash this recovery).
+- **Original evidence:** `rea_lab/decomp_task/REA_20261024_07H_P0_B136_FIRST_INSERT_EVIDENCE.json` / SHA256 `9312BBA16BC6B8A01073663487A62F740833614D2309BBD817C6DA7E6E4A06A6` (not copied to GitHub).
+- **VA and CALL/offset anchors:** 0x47D770, 0x47D932, 0x47D942, 0x476720, 0x47D9B6.
+- **Principal source-backed meaning:** 0x47D770 initializes B136A8 header/sentinel and attempts at least one insertion via 0x476A50 and 0x476720 before passing it to 0x48F9E0 at 0x47D9B6. Normal successful insertion increments count at 0x4768AE/AF.
+- **Limitations and next validation:** Narrows earlier empty-input concern for this caller only; allocation failure, exception, reentry, other caller routes not ruled out.
+- **Correction chain:** earlier owner hours are antecedent, not repeated evidence; 02H F720 ABI is already curated in develop, 03H–09H narrow its caller/generator assumptions. No formal REA five-method VERIFIED promotion.
+
+### REA-LOCAL-20261024-08H-P0-NESTED-MAP-NONEMPTY-TRANSFER-STATIC-01
+
+- **Owner/time/state:** REA independent / 2026-10-24 08H JST / STATIC (limited native-source instruction history), INFERRED where stated, VERIFY; Golden PASS 0, READY 0.
+- **Owner source:** `rea_lab/decomp_task/REA_20261024_08H_P0_NESTED_MAP_COUNT_TRANSFER_STATIC.md` / SHA256 `AB0097FB066881AC46BD829D2DA131E14CCB2A5E734A127CD995DC325EF185CF` (read-only file hash this recovery).
+- **Original evidence:** `rea_lab/decomp_task/REA_20261024_08H_P0_NESTED_MAP_COUNT_TRANSFER_EVIDENCE.json` / SHA256 `3EF92D00DF08A75C5E106D553485D92BF6855D28712409444295AA5968161CC4` (not copied to GitHub).
+- **VA and CALL/offset anchors:** 0x47D908, 0x5158E0, 0x476700, 0x476B39, 0x476CCF.
+- **Principal source-backed meaning:** The transient inner tree in 0x47D770 is initially empty then receives an insertion via 0x5158E0; count copying at 0x476B39/3F and 0x476CC9/CF transfers the inner count into the outer node +0x18. This supplies the earlier 0x48F720 nonzero-filter candidate in the successful path.
+- **Limitations and next validation:** The inner-count==1 inference requires allocation/insert success and no exceptions; a live battle-run invariant has not been measured.
+- **Correction chain:** earlier owner hours are antecedent, not repeated evidence; 02H F720 ABI is already curated in develop, 03H–09H narrow its caller/generator assumptions. No formal REA five-method VERIFIED promotion.
+
+### REA-LOCAL-20261024-09H-P0-THREE-RBTREE-UNSIGNED-KEYZERO-STATIC-01
+
+- **Owner/time/state:** REA independent / 2026-10-24 09H JST / STATIC (limited native-source instruction history), INFERRED where stated, VERIFY; Golden PASS 0, READY 0.
+- **Owner source:** `rea_lab/decomp_task/REA_20261024_09H_P0_THREE_TREE_PREDICATE_STATIC.md` / SHA256 `08CF585E54B45C6B917E41DA4BFD44BB6DF98474312F90803C5DC50714114F7D` (read-only file hash this recovery).
+- **Original evidence:** `rea_lab/decomp_task/REA_20261024_09H_P0_THREE_TREE_PREDICATE_EVIDENCE.json` / SHA256 `4B38228C2BDCA4E382126DCD71D34217A1DFF5562DC135EB0CC19CC4F3F3A8BD` (not copied to GitHub).
+- **VA and CALL/offset anchors:** 0x48F720, 0x48F752, 0x48F773, 0x5657AF, 0x5158E0.
+- **Principal source-backed meaning:** Three different RB-tree node/sentinel layouts must not be collapsed into one generic layout. 0x48F720 compares exclusion keys as unsigned 32-bit values; a successful lookup may still return numeric zero if a stored node payload is zero, distinct from 'no candidate' zero.
+- **Limitations and next validation:** The real producer for zero payload and valid gameplay reachability are VERIFY; avoid promoting a new unconditional crash claim.
+- **Correction chain:** earlier owner hours are antecedent, not repeated evidence; 02H F720 ABI is already curated in develop, 03H–09H narrow its caller/generator assumptions. No formal REA five-method VERIFIED promotion.
+
+## Safe search/curation gates
+
+- **Duplicate policy:** All nine are historical source IDs, not nine unrelated native functions. Compare by ID, VA, source SHA and exact alternative assertions before adopting any into `REF_BATTLE_TAKEOVER.md` or `symbols.tsv`. Do not duplicate the already-curated 02H source. Historical 00H/01H source extends previous 10/23 DemoPerson research; 03–09H sources are a progression from 02H nullable-return discovery to upstream constraints and zero-payload ambiguity.
+- **Status:** owner source preservation only (PUBLISHED_INTAKE upon verified GitHub readback). CURATED is reserved for dedicated KB curator; no direct develop/REF/dictionary change. Formal five-method new bundles 0, VERIFIED delta 0, old Wave1–5 64/64 historical only, original Golden PASS 0 / strict MATCH 0 / READY 0. Revisit remaining October 23/24 20–23H reports by oldest-first source-ID comparison, subject to ownership/privacy/safety.
+- **Safety:** No denied Wave6/11-01 18H materials, protected 0x5710C0–0x571500 targets, original game data, raw local paths or credentials. No source files, PC master/queue, Ghidra DB, other owner worktrees or original EXE were modified.
