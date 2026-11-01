@@ -41,3 +41,24 @@ Run order is not an implied acceptance priority. Dependency chain: receipt prove
 - Original EXE/DAT/MAP/SAVE/ZIP, personal logs and prohibited VA/operations were not accessed or uploaded by this code-preservation action; earlier safety blocks remain in effect.
 
 **Next E cursor:** source-check additional allowed G2 12:53 support and 13H placeholder-ID overlays for genuinely missing behavior (dedup first), then gather lawful atomic original G0–G2 receipts when obtainable. No synthetic PASS implies Golden qualification.
+
+## 2026-11-02 follow-on: 12:53 support relation + 13:50 placeholder guards (existing IDs)
+
+These are **two already indexed E owner studies**, not two new research IDs or native discoveries. The full research reports remain PC-only; their 193-ID index entries and batch02 crosswalk already preserve their provenance. This follow-on preserves their previously missing **runnable E-owned source code** in the same open PR. All measurements below were taken from the authorized PC in this recovery run (not extrapolated from earlier tests).
+
+| Existing E research ID / owner | Original report (PC-relative path; SHA-256 rehashed) | Original Python source (PC-relative path; SHA-256 rehashed) | Current synthetic tests |
+| --- | --- | --- | --- |
+| `E-AUDIT-20261026-1253-T018-T020-SUPPORT-PRESENCE-DEPL-REVIEW-01` / E T018,T020 | `tests/T020_CNB02_G2_SUPPORT_PARTICIPATION_DEPLOYMENT_REVIEW_20261026_1253.md`; `34df7d4731a184ee4e2bfd9d9962c0810a36d178c7b501b00a20a960ccdfdd3c` | `tests/t020_cnb02_g2_support_presence_deployment_review_20261026_1253.py`; `0320a180906cbff14ec943011fb24bda1835d2c53669ef7c99724513a01f1f4a` | 12 |
+| `E-AUDIT-20261026-1350-T018-T020-G2-PLACEHOLDER-IDENTITY-01` / E T018,T020 | `tests/T020_CNB02_G2_PLACEHOLDER_IDENTITY_REVIEW_20261026_13H.md`; `23f1c78f6bba3b705d695522f57771b8b252d2258f4c010818018bd6dc90ffc4` | `tests/t020_cnb02_g2_placeholder_identity_review_20261026_13H.py`; `3a1b5f0a10a5f29657fb2ca93d5a4f5ecc755bae5b35a207a1087d30b5db92b4` | 13 |
+
+**Source-grounded semantic difference (T020 SYNTHETIC/VERIFY, VA/CALL/offset: null):** the 12:53 guard adds review flags for disagreement between declared support participants and visible support-deployed roster rows, without claiming that each participant necessarily deploys a troop. The 13:50 guard identifies exact placeholder strings in visible Unit/Troop/Power labels while not rejecting a legitimate compound name merely containing such a word. Source evidence: the two owner reports above, respectively lines 3–12 and 3–12; later overlay code is not a native witness. Correction lineage is 08H shape → 09H defense coverage → 10H parity → 11H unhashable fail-closed → 11:58 cross-role alias → **12:53 support** → **13:50 placeholder**. Both additions extend earlier synthetic reviews; do not overwrite the prior study records or infer native engine bugs from their diagnostics.
+
+From `research/intake/E/repro/`, run:
+
+```sh
+python -B -m unittest -q t020_cnb02_g2_support_presence_deployment_review_20261026_1253 t020_cnb02_g2_placeholder_identity_review_20261026_13H
+```
+
+**PC execution this run:** 25/25 synthetic cases PASS, process exit 0; both PC source-report digests and both PC Python digests verified; GitHub newly published Python texts independently fetched and matched submitted content after LF normalization (2/2). Historical 89/89 or 102/102 aggregates from older reports were **not rerun as aggregate here**. Published files: `repro/t020_cnb02_g2_support_presence_deployment_review_20261026_1253.py` and `repro/t020_cnb02_g2_placeholder_identity_review_20261026_13H.py`. GitHub text readback is not a replay against the original game.
+
+**State and acceptance:** `PUBLISHED_INTAKE / NOT_CURATED / SYNTHETIC / VERIFY / NOT_READY`. These diagnostics have no actual original-game Golden evidence or VA proof; original gameplay Golden PASS 0, old/new strict MATCH 0, new formal READY 0, and confirmed new T019 contradiction 0. This owner recovery changes no MASTER, `develop`, curated REF, dictionary, game file, or other owner research. **Next cursor:** curator should inspect 12:53/13:50 report conditions and this exact code against prior errata; the original old-game same-run G0 lawful UI/Spot, G1 immediate SAVE+input and G2 real MAP/three sides/ordered deployed Unit/Troop remain unqualified and must be independently observed before Golden or READY.
