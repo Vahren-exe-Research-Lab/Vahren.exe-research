@@ -381,3 +381,18 @@ New formally VERIFIED 0, original Golden PASS/READY 0. Unverified facts require 
 | `REA-20261017-W6-P0-REFUSAL-FIREWALL-01` | [owner report digest and native excerpts](REA_20261017_B_LEGACY_QC_SOURCE_PRESERVATION.md) | STATUS_ONLY / BLOCKED metadata |
 
 New formally VERIFIED 0, original Golden PASS/READY 0. Unverified facts require curator review.
+
+## Legacy REA 20261018 A source integration queue
+
+| Owner research ID | Source | Stage |
+| --- | --- | --- |
+| `REA-20261018-0035-DEATH-GRAPH-REENTRY-GATE-01` | [rehashed owner source and safe excerpts](REA_20261018_A_HISTORIC_REA_OWNER_QC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-20261018-0135-RUNNER-REFUSAL-GATE-AND-GRAPH-STATE-01` | [rehashed owner source and safe excerpts](REA_20261018_A_HISTORIC_REA_OWNER_QC.md) | STATUS_ONLY / BLOCKED_METADATA |
+| `REA-20261018-0236-DOT54-OWNER-RETURN-GATE-01` | [rehashed owner source and safe excerpts](REA_20261018_A_HISTORIC_REA_OWNER_QC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-20261018-0536-T014-OPEN-FAIL-ASYMMETRY-01` | [rehashed owner source and safe excerpts](REA_20261018_A_HISTORIC_REA_OWNER_QC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-20261018-0638-T014-GWRITE-OPENFAIL-VM-CONTINUE-01` | [rehashed owner source and safe excerpts](REA_20261018_A_HISTORIC_REA_OWNER_QC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-20261018-0730-POSTLETHAL-PROBE-RECOVERY-01` | [rehashed owner source and safe excerpts](REA_20261018_A_HISTORIC_REA_OWNER_QC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-20261018-0833-DEATH-GRAPH-PHASE-CROSSAPI-01` | [rehashed owner source and safe excerpts](REA_20261018_A_HISTORIC_REA_OWNER_QC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-20261018-0936-DEATH-MANAGER-PREBIND-GATE-01` | [rehashed owner source and safe excerpts](REA_20261018_A_HISTORIC_REA_OWNER_QC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+
+Curator-only formal adoption, new Verified 0, actual original Golden PASS 0, READY 0.
