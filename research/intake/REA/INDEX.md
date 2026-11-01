@@ -353,3 +353,17 @@ No new formal verified functions, original Golden PASS 0, READY 0; current sourc
 | `REA-20261016-1537-AUX-VIRTUAL80-BRIDGE-01` | [historical report SHA / safe STATIC scope](REA_20261016_ALL_OWNER_LEGACY_SOURCE.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
 
 No new formal verified functions, original Golden PASS 0, READY 0; current source/curator semantic review remains separate.
+
+## 20261017 legacy REA owner A sources
+
+| Historical owner ID | Recovery source | State |
+| --- | --- | --- |
+| `REA-20261017-0837-V80-SCALE-0P9-01` | [owner report digest and native excerpts](REA_20261017_A_LEGACY_QC_SOURCE_PRESERVATION.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-20261017-0939-AUX-POINT-REBASE-01` | [owner report digest and native excerpts](REA_20261017_A_LEGACY_QC_SOURCE_PRESERVATION.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-20261017-1031-SCRATCH-POINT-BOUNDARY-01` | [owner report digest and native excerpts](REA_20261017_A_LEGACY_QC_SOURCE_PRESERVATION.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-20261017-1133-AUX-POINT-447150-QWORD-01` | [owner report digest and native excerpts](REA_20261017_A_LEGACY_QC_SOURCE_PRESERVATION.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-20261017-1238-DIRECT-POINT-ORIGIN-01` | [owner report digest and native excerpts](REA_20261017_A_LEGACY_QC_SOURCE_PRESERVATION.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-20261017-1340-447150-STACK-REUSE-01` | [owner report digest and native excerpts](REA_20261017_A_LEGACY_QC_SOURCE_PRESERVATION.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+| `REA-20261017-1440-V80-OPTIONAL-ARG-PATH-01` | [owner report digest and native excerpts](REA_20261017_A_LEGACY_QC_SOURCE_PRESERVATION.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
+
+New formally VERIFIED 0, original Golden PASS/READY 0. Unverified facts require curator review.
