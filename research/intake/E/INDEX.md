@@ -46,6 +46,11 @@ All three reports' current PC SHA256 matched their indexed values. Earlier archi
 - [This draft PR #17](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/17): 15 previously staged E source IDs (10/31 17–23H and 11/1 03/04/06–09/11/12H), plus the 193 historical original-source research IDs now indexed here. These are **208 distinct source IDs on this draft branch**, not 208 different original-game discoveries.
 - Existing private develop [E G0–G2 source entry](E-PC-20261101-GOLDEN-G012-AND-KB-BACKLOG.md) summarizes E 11/1 17–20H receipts. The 6 local E 17–20H report/receipt paths in the develop source catalog are metadata-linked; this intake does not duplicate them.
 
+## G2 diagnostic code recovery: executable chain, NOT Golden (2026-11-02)
+
+- [G2 seven-module synthetic reproduction and errata chain](E-G2-SYNTHETIC-REPRO-20261102.md): five previously PC-only E-owned Python helpers now preserved as runnable text in `repro/`, alongside two pre-existing E helpers. Current authorized-PC **94/94 synthetic unittest PASS** (exit 0), five script PC SHA-256 checked, five GitHub fetched texts matched after LF normalization. Earlier 08H missing-defense-row, 10H list/dict `side` TypeError, and cross-role visible identity alias are preserved as distinct **diagnostic regressions, not native bugs**.
+- These files belong to existing E source IDs (plus an 11H helper with no new standalone research ID); **no new study ID, actual Golden PASS, strict MATCH, READY, or MASTER formal change**. Import solely via E-owner intake; the curator alone decides the canonical diagnostic REF.
+
 ## Historical E reproducibility asset locator (metadata only)
 
 - [E/T020 reproducibility assets: 337 safe local Python/JSON byte-SHA receipts](E-T020-REPRO-ASSET-RECEIPTS-20261102.tsv): PC-only code/data, 168 Python + 169 JSON; 3 withheld by name/scope, not executable or Golden proof.
