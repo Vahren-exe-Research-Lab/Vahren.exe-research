@@ -1,0 +1,535 @@
+{
+  "research_id": "E-AUDIT-20261030-13H-T020-T013-DUAL-SCHEDULER-STATIC-GATE-01",
+  "classification": "SYNTHETIC_NOT_GAMEPLAY",
+  "case_count": 56,
+  "cases": [
+    {
+      "id": "C001",
+      "kind": "synthetic",
+      "scheduler": "A",
+      "mode": -1,
+      "flag": 0,
+      "nonzero_remainder": 0,
+      "expected_route": "SKIP_CALLS",
+      "expected_effective_mode": -1
+    },
+    {
+      "id": "C002",
+      "kind": "synthetic",
+      "scheduler": "B",
+      "mode": -1,
+      "flag": 0,
+      "nonzero_remainder": 0,
+      "expected_route": "DEFAULT",
+      "expected_effective_mode": -1
+    },
+    {
+      "id": "C003",
+      "kind": "synthetic",
+      "scheduler": "A",
+      "mode": -1,
+      "flag": 0,
+      "nonzero_remainder": 1,
+      "expected_route": "EARLY_TICK_RET",
+      "expected_effective_mode": -1
+    },
+    {
+      "id": "C004",
+      "kind": "synthetic",
+      "scheduler": "B",
+      "mode": -1,
+      "flag": 0,
+      "nonzero_remainder": 1,
+      "expected_route": "EARLY_RET",
+      "expected_effective_mode": -1
+    },
+    {
+      "id": "C005",
+      "kind": "synthetic",
+      "scheduler": "A",
+      "mode": -1,
+      "flag": 1,
+      "nonzero_remainder": 0,
+      "expected_route": "SKIP_CALLS",
+      "expected_effective_mode": -1
+    },
+    {
+      "id": "C006",
+      "kind": "synthetic",
+      "scheduler": "B",
+      "mode": -1,
+      "flag": 1,
+      "nonzero_remainder": 0,
+      "expected_route": "DEFAULT",
+      "expected_effective_mode": -1
+    },
+    {
+      "id": "C007",
+      "kind": "synthetic",
+      "scheduler": "A",
+      "mode": -1,
+      "flag": 1,
+      "nonzero_remainder": 1,
+      "expected_route": "EARLY_TICK_RET",
+      "expected_effective_mode": -1
+    },
+    {
+      "id": "C008",
+      "kind": "synthetic",
+      "scheduler": "B",
+      "mode": -1,
+      "flag": 1,
+      "nonzero_remainder": 1,
+      "expected_route": "DEFAULT",
+      "expected_effective_mode": -1
+    },
+    {
+      "id": "C009",
+      "kind": "synthetic",
+      "scheduler": "A",
+      "mode": 0,
+      "flag": 0,
+      "nonzero_remainder": 0,
+      "expected_route": "CALL_44AE70",
+      "expected_effective_mode": 0
+    },
+    {
+      "id": "C010",
+      "kind": "synthetic",
+      "scheduler": "B",
+      "mode": 0,
+      "flag": 0,
+      "nonzero_remainder": 0,
+      "expected_route": "MODE0_OPTIONAL_B240",
+      "expected_effective_mode": 0
+    },
+    {
+      "id": "C011",
+      "kind": "synthetic",
+      "scheduler": "A",
+      "mode": 0,
+      "flag": 0,
+      "nonzero_remainder": 1,
+      "expected_route": "EARLY_TICK_RET",
+      "expected_effective_mode": 0
+    },
+    {
+      "id": "C012",
+      "kind": "synthetic",
+      "scheduler": "B",
+      "mode": 0,
+      "flag": 0,
+      "nonzero_remainder": 1,
+      "expected_route": "EARLY_RET",
+      "expected_effective_mode": 0
+    },
+    {
+      "id": "C013",
+      "kind": "synthetic",
+      "scheduler": "A",
+      "mode": 0,
+      "flag": 1,
+      "nonzero_remainder": 0,
+      "expected_route": "CALL_44AE70",
+      "expected_effective_mode": 0
+    },
+    {
+      "id": "C014",
+      "kind": "synthetic",
+      "scheduler": "B",
+      "mode": 0,
+      "flag": 1,
+      "nonzero_remainder": 0,
+      "expected_route": "MODE0_OPTIONAL_B240",
+      "expected_effective_mode": 0
+    },
+    {
+      "id": "C015",
+      "kind": "synthetic",
+      "scheduler": "A",
+      "mode": 0,
+      "flag": 1,
+      "nonzero_remainder": 1,
+      "expected_route": "EARLY_TICK_RET",
+      "expected_effective_mode": 0
+    },
+    {
+      "id": "C016",
+      "kind": "synthetic",
+      "scheduler": "B",
+      "mode": 0,
+      "flag": 1,
+      "nonzero_remainder": 1,
+      "expected_route": "MODE0_OPTIONAL_B240",
+      "expected_effective_mode": 0
+    },
+    {
+      "id": "C017",
+      "kind": "synthetic",
+      "scheduler": "A",
+      "mode": 1,
+      "flag": 0,
+      "nonzero_remainder": 0,
+      "expected_route": "CALL_44CD70",
+      "expected_effective_mode": 1
+    },
+    {
+      "id": "C018",
+      "kind": "synthetic",
+      "scheduler": "B",
+      "mode": 1,
+      "flag": 0,
+      "nonzero_remainder": 0,
+      "expected_route": "MODE1_GATED_B240",
+      "expected_effective_mode": 1
+    },
+    {
+      "id": "C019",
+      "kind": "synthetic",
+      "scheduler": "A",
+      "mode": 1,
+      "flag": 0,
+      "nonzero_remainder": 1,
+      "expected_route": "EARLY_TICK_RET",
+      "expected_effective_mode": 1
+    },
+    {
+      "id": "C020",
+      "kind": "synthetic",
+      "scheduler": "B",
+      "mode": 1,
+      "flag": 0,
+      "nonzero_remainder": 1,
+      "expected_route": "EARLY_RET",
+      "expected_effective_mode": 1
+    },
+    {
+      "id": "C021",
+      "kind": "synthetic",
+      "scheduler": "A",
+      "mode": 1,
+      "flag": 1,
+      "nonzero_remainder": 0,
+      "expected_route": "CALL_44CD70",
+      "expected_effective_mode": 1
+    },
+    {
+      "id": "C022",
+      "kind": "synthetic",
+      "scheduler": "B",
+      "mode": 1,
+      "flag": 1,
+      "nonzero_remainder": 0,
+      "expected_route": "MODE2_BBB0",
+      "expected_effective_mode": 2
+    },
+    {
+      "id": "C023",
+      "kind": "synthetic",
+      "scheduler": "A",
+      "mode": 1,
+      "flag": 1,
+      "nonzero_remainder": 1,
+      "expected_route": "EARLY_TICK_RET",
+      "expected_effective_mode": 1
+    },
+    {
+      "id": "C024",
+      "kind": "synthetic",
+      "scheduler": "B",
+      "mode": 1,
+      "flag": 1,
+      "nonzero_remainder": 1,
+      "expected_route": "MODE2_BBB0",
+      "expected_effective_mode": 2
+    },
+    {
+      "id": "C025",
+      "kind": "synthetic",
+      "scheduler": "A",
+      "mode": 2,
+      "flag": 0,
+      "nonzero_remainder": 0,
+      "expected_route": "CALL_44CD70",
+      "expected_effective_mode": 2
+    },
+    {
+      "id": "C026",
+      "kind": "synthetic",
+      "scheduler": "B",
+      "mode": 2,
+      "flag": 0,
+      "nonzero_remainder": 0,
+      "expected_route": "MODE2_BBB0",
+      "expected_effective_mode": 2
+    },
+    {
+      "id": "C027",
+      "kind": "synthetic",
+      "scheduler": "A",
+      "mode": 2,
+      "flag": 0,
+      "nonzero_remainder": 1,
+      "expected_route": "EARLY_TICK_RET",
+      "expected_effective_mode": 2
+    },
+    {
+      "id": "C028",
+      "kind": "synthetic",
+      "scheduler": "B",
+      "mode": 2,
+      "flag": 0,
+      "nonzero_remainder": 1,
+      "expected_route": "EARLY_RET",
+      "expected_effective_mode": 2
+    },
+    {
+      "id": "C029",
+      "kind": "synthetic",
+      "scheduler": "A",
+      "mode": 2,
+      "flag": 1,
+      "nonzero_remainder": 0,
+      "expected_route": "CALL_44CD70",
+      "expected_effective_mode": 2
+    },
+    {
+      "id": "C030",
+      "kind": "synthetic",
+      "scheduler": "B",
+      "mode": 2,
+      "flag": 1,
+      "nonzero_remainder": 0,
+      "expected_route": "MODE2_BBB0",
+      "expected_effective_mode": 2
+    },
+    {
+      "id": "C031",
+      "kind": "synthetic",
+      "scheduler": "A",
+      "mode": 2,
+      "flag": 1,
+      "nonzero_remainder": 1,
+      "expected_route": "EARLY_TICK_RET",
+      "expected_effective_mode": 2
+    },
+    {
+      "id": "C032",
+      "kind": "synthetic",
+      "scheduler": "B",
+      "mode": 2,
+      "flag": 1,
+      "nonzero_remainder": 1,
+      "expected_route": "MODE2_BBB0",
+      "expected_effective_mode": 2
+    },
+    {
+      "id": "C033",
+      "kind": "synthetic",
+      "scheduler": "A",
+      "mode": 3,
+      "flag": 0,
+      "nonzero_remainder": 0,
+      "expected_route": "CALL_44CD70",
+      "expected_effective_mode": 3
+    },
+    {
+      "id": "C034",
+      "kind": "synthetic",
+      "scheduler": "B",
+      "mode": 3,
+      "flag": 0,
+      "nonzero_remainder": 0,
+      "expected_route": "MODE3_CD70",
+      "expected_effective_mode": 3
+    },
+    {
+      "id": "C035",
+      "kind": "synthetic",
+      "scheduler": "A",
+      "mode": 3,
+      "flag": 0,
+      "nonzero_remainder": 1,
+      "expected_route": "EARLY_TICK_RET",
+      "expected_effective_mode": 3
+    },
+    {
+      "id": "C036",
+      "kind": "synthetic",
+      "scheduler": "B",
+      "mode": 3,
+      "flag": 0,
+      "nonzero_remainder": 1,
+      "expected_route": "EARLY_RET",
+      "expected_effective_mode": 3
+    },
+    {
+      "id": "C037",
+      "kind": "synthetic",
+      "scheduler": "A",
+      "mode": 3,
+      "flag": 1,
+      "nonzero_remainder": 0,
+      "expected_route": "CALL_44CD70",
+      "expected_effective_mode": 3
+    },
+    {
+      "id": "C038",
+      "kind": "synthetic",
+      "scheduler": "B",
+      "mode": 3,
+      "flag": 1,
+      "nonzero_remainder": 0,
+      "expected_route": "MODE3_CD70",
+      "expected_effective_mode": 3
+    },
+    {
+      "id": "C039",
+      "kind": "synthetic",
+      "scheduler": "A",
+      "mode": 3,
+      "flag": 1,
+      "nonzero_remainder": 1,
+      "expected_route": "EARLY_TICK_RET",
+      "expected_effective_mode": 3
+    },
+    {
+      "id": "C040",
+      "kind": "synthetic",
+      "scheduler": "B",
+      "mode": 3,
+      "flag": 1,
+      "nonzero_remainder": 1,
+      "expected_route": "MODE3_CD70",
+      "expected_effective_mode": 3
+    },
+    {
+      "id": "C041",
+      "kind": "synthetic",
+      "scheduler": "A",
+      "mode": 4,
+      "flag": 0,
+      "nonzero_remainder": 0,
+      "expected_route": "SKIP_CALLS",
+      "expected_effective_mode": 4
+    },
+    {
+      "id": "C042",
+      "kind": "synthetic",
+      "scheduler": "B",
+      "mode": 4,
+      "flag": 0,
+      "nonzero_remainder": 0,
+      "expected_route": "DEFAULT",
+      "expected_effective_mode": 4
+    },
+    {
+      "id": "C043",
+      "kind": "synthetic",
+      "scheduler": "A",
+      "mode": 4,
+      "flag": 0,
+      "nonzero_remainder": 1,
+      "expected_route": "EARLY_TICK_RET",
+      "expected_effective_mode": 4
+    },
+    {
+      "id": "C044",
+      "kind": "synthetic",
+      "scheduler": "B",
+      "mode": 4,
+      "flag": 0,
+      "nonzero_remainder": 1,
+      "expected_route": "EARLY_RET",
+      "expected_effective_mode": 4
+    },
+    {
+      "id": "C045",
+      "kind": "synthetic",
+      "scheduler": "A",
+      "mode": 4,
+      "flag": 1,
+      "nonzero_remainder": 0,
+      "expected_route": "SKIP_CALLS",
+      "expected_effective_mode": 4
+    },
+    {
+      "id": "C046",
+      "kind": "synthetic",
+      "scheduler": "B",
+      "mode": 4,
+      "flag": 1,
+      "nonzero_remainder": 0,
+      "expected_route": "DEFAULT",
+      "expected_effective_mode": 4
+    },
+    {
+      "id": "C047",
+      "kind": "synthetic",
+      "scheduler": "A",
+      "mode": 4,
+      "flag": 1,
+      "nonzero_remainder": 1,
+      "expected_route": "EARLY_TICK_RET",
+      "expected_effective_mode": 4
+    },
+    {
+      "id": "C048",
+      "kind": "synthetic",
+      "scheduler": "B",
+      "mode": 4,
+      "flag": 1,
+      "nonzero_remainder": 1,
+      "expected_route": "DEFAULT",
+      "expected_effective_mode": 4
+    },
+    {
+      "id": "N049",
+      "kind": "negative",
+      "claim": "scheduler_paths_are_equivalent",
+      "must_reject": true
+    },
+    {
+      "id": "N050",
+      "kind": "negative",
+      "claim": "negative_mode_is_mode0",
+      "must_reject": true
+    },
+    {
+      "id": "N051",
+      "kind": "negative",
+      "claim": "mode1_never_changes",
+      "must_reject": true
+    },
+    {
+      "id": "N052",
+      "kind": "negative",
+      "claim": "flag_always_changes_mode",
+      "must_reject": true
+    },
+    {
+      "id": "N053",
+      "kind": "negative",
+      "claim": "mode0_always_calls_b240",
+      "must_reject": true
+    },
+    {
+      "id": "N054",
+      "kind": "negative",
+      "claim": "all_targets_observed",
+      "must_reject": true
+    },
+    {
+      "id": "N055",
+      "kind": "negative",
+      "claim": "producer_consumer_same_object",
+      "must_reject": true
+    },
+    {
+      "id": "N056",
+      "kind": "negative",
+      "claim": "synthetic_pass_is_golden",
+      "must_reject": true
+    }
+  ]
+}
