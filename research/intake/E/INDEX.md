@@ -1,5 +1,36 @@
 # E/T018–T020 source preservation and review index (2026-11-02)
 
+## 2026-11-03 02H — source-preflight-only hold cursor (no intake promotion)
+
+Read-only **authorized-PC local preflight** found conservative protected-scope markers in the 20 *distinct, previously unchecked historical E report candidates* below. The result is **CONTENT_GUARD_HOLD / METADATA_ONLY**, not a new OpenAI refusal, not a semantic verification, not a new research ID, and emphatically **not PUBLISHED_INTAKE**. Source bytes were **not sent to GitHub**, and the reports were **not copied, converted, sanitized for submission, or executed**. The SHA-256 values identify only the local source files at preflight time; they are not GitHub file attestations. Do not reattempt these held reports by alternate tool/path/repo/archive. A held report does not automatically block unrelated source material whose safety and provenance are independently verified.
+
+| Previously unchecked E report (research-PC relative) | PC SHA-256 | Status |
+|---|---|---|
+| `tests/T020_CNB02_G0_ATTACK_COUNT_NONIDENTITY_AUDIT_20261027_05H.md` | `F81C5C9D6E83FD71A89DB1B17138ACD93127027EC96DD1E5685B3BB4EE149537` | `CONTENT_GUARD_HOLD` |
+| `tests/T020_CNB02_G0_SAVED_PRESTATE_CLOCK_AND_B04_CACHE_RECEIPTS_20261027_04H.md` | `DA230F14006CB4B545CA1AD4F1DA1AFEEB4248393DB7226D94F0B261AB0F2A2C` | `CONTENT_GUARD_HOLD` |
+| `tests/T020_CNB02_G2_ACTIVE_WINDOW_SCHEMA_REVIEW_20261025_17H.md` | `6B23BCC7B934BAAFF834C40B7919337CB062F6A20FA26B6C3237B834026D301C` | `CONTENT_GUARD_HOLD` |
+| `tests/T020_CNB02_G2_PLACEHOLDER_IDENTITY_REVIEW_20261026_13H.md` | `23F1C78F6BBA3B705D695522F57771B8B252D2258F4C010818018BD6DC90FFC4` | `CONTENT_GUARD_HOLD` |
+| `tests/T020_E_DAT_SNAPSHOT_CHRONOLOGY_AUDIT_20261029_11H.md` | `DE1312A0F4998DE89B4AACFBB003E739796D900F3B68DC0E9BDBCF65E70C63DF` | `CONTENT_GUARD_HOLD` |
+| `tests/E_OFFLINE_SYNC_20261029/T020_T028_DIALOG_ROUTE_PROVENANCE_20261028_1645.md` | `A1FE3562B386C52E490ECF4343998DC834F930315BBBBF0E76A8BEF93E9F726C` | `CONTENT_GUARD_HOLD` |
+| `tests/E_OFFLINE_SYNC_20261029/T020_DIALOG_REGISTRY_FALLBACK_BRANCH_AUDIT_20261028_1745.md` | `34051DA502F9B430B02A74874EBC9992441850513944E5903B9EBCD7AAA987CB` | `CONTENT_GUARD_HOLD` |
+| `tests/T020_E_T013_PAIRWISE_DISTANCE_ACCEPTANCE_20261030_16H.md` | `3ED00094157D7F72EB88F1015BEC64E5AFBABEDF7BD2FC9FA0BA740FF098EE81` | `CONTENT_GUARD_HOLD` |
+| `tests/T020_E_T013_TWO_STAGE_SHUFFLE_ACCEPTANCE_20261030_17H.md` | `DBF66247380C48F776542049DCD5F41B600B1A1E5492295801E2B39EB65124AB` | `CONTENT_GUARD_HOLD` |
+| `tests/T020_E_T013_POSTREFILL_ACCEPTANCE_20261030_21H.md` | `28D720FAA88D2C452854F0E8B16952561851A9318FF07ED6E0B24B595D66E9B1` | `CONTENT_GUARD_HOLD` |
+| `tests/T020_E_T013_SUM88_BRANCH_ACCEPTANCE_20261030_22H.md` | `D38F606DA03F65099478B4FA978E0F6B69300B724AA004B7FFED1CEB6DB6FA70` | `CONTENT_GUARD_HOLD` |
+| `tests/T020_E_T013_RNG_CONTEXT_TRANSFER_ACCEPTANCE_20261031_18H.md` | `64284126FCF35988CF0969BDA8F89C29864440201C3C641701FA5B90E952B2AF` | `CONTENT_GUARD_HOLD` |
+| `tests/T020_E_T013_UNIT18654_SCRIPT_COUNT_ACCEPTANCE_20261031_20H.md` | `728237C261D6A096BF8A8DAAF0BA05920C37BB1D31DF83D16853425571EC1D2B` | `CONTENT_GUARD_HOLD` |
+| `tests/T020_E_T013_RECT_BOOL_WINAPI_ACCEPTANCE_20261031_23H.md` | `31385B25564A61D9DDD4F80E83DD9473E6A643599A5FDB9413E187F71BA1DD19` | `CONTENT_GUARD_HOLD` |
+| `tests/T020_E_T028_VECTOR_HELPER_MODE_ACCEPTANCE_20261030_00H.md` | `C39E7A54F8B4DA3E2519CF4CBE51FA671922FFCD0E7FA89D839B936BD76A13F6` | `CONTENT_GUARD_HOLD` |
+| `tests/T020_E_T028_FULL_TREE_CLEAR_ACCEPTANCE_20261030_03H.md` | `B35B7C60AD5F280A0B51DB14C9A486AB481E1A6D2EAC184FC16A3DE57DF56849` | `CONTENT_GUARD_HOLD` |
+| `tests/T020_E_T028_SENTINEL_RNG_ACCEPTANCE_20261030_11H.md` | `81BA9A46B1FBC02E6AACF60E9AF1AE9673B5275A146292DC017A6DB529000422` | `CONTENT_GUARD_HOLD` |
+| `tests/T020_CNB02_WORLD_RESET_VS_FIGHT_EVENT_EPOCH_20261025_05H.md` | `A731FB485D6F4138BAA23A0285985C2EF1EC3D81182BCCE0359FFC9AEB287B89` | `CONTENT_GUARD_HOLD` |
+| `tests/T020_CNB02_PREPARED_POINTER_FALSE_POSITIVE_REPLAY_20261026_15H.md` | `F7EF035FC8F616B135136975D4AE024F5F3081176DAE6571D535A373F666C376` | `CONTENT_GUARD_HOLD` |
+| `tests/T020_CNB02_POINTER_IDENTITY_EPOCH_OVERLAP_20261026_1755.md` | `259A5C0D4D48DDBEDA80092E96138C7C969388FFE59C575E2CFE67CE5E191D34` | `CONTENT_GUARD_HOLD` |
+
+**Unchanged acceptance:** original-game Golden PASS 0; strict old/new MATCH 0; newly formal READY 0; new verified T019 game contradiction 0; MASTER formal delta 0. No original EXE/DAT/MAP/SAVE/ZIP, other-owner files, curated refs, dictionary or `develop` edits.
+
+**Next safe-only cursor:** dedup remaining *not-held* E owner research report/repro candidates by existing ID + actual source SHA + errata versus the existing PR and current private `develop`; prioritize full meaning/source for old T018/T019/T020 IDs. Dedicated KB curator alone may selectively adopt published meaning; divergent owner PR must not be wholesale merged or rebased by E.
+
 ## 2026-11-03 01H — two historical T018/T020 E owner source-body gaps recovered (existing IDs only)
 
 **2 existing research IDs, 2 additional E-only sanitized full-meaning research reports, 0 new study IDs, 0 new PRs.** Original E-owner `tests/` report bytes independently SHA-256 rehashed on authorized research PC 2026-11-03 JST. The two IDs had no full-body path on the current E PR or discoverable private develop code-search snapshot. Safe preflight found no protected-range references in these two specific source reports. Other sources with protected markers were **excluded/HOLD** without content publication. The original game, SAVE bytes, archive/test runner and synthetic suites were not executed or uploaded.
