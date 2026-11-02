@@ -1,0 +1,67 @@
+{
+  "id": "E-AUDIT-20261031-02H-T020-T013-BTLLIMIT-CLOCK-GATE-01",
+  "owner": "E/T020",
+  "status": "STATIC_NATIVE_BYTE_AND_CONDITIONAL_SYNTHETIC_VERIFY_NOT_READY",
+  "source_time": "2026-10-31 02H JST",
+  "source_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "source_b02_sha256": "0A125BC3A4E287E4DFFC2F5BA38AD2D2F43F3157DD98E41E9C3971C84598177D",
+  "verified_native_window": {
+    "va": "0x449500",
+    "length_bytes": 325,
+    "sha256": "49602214428E8C54FB6015266D3FDDD35E1D83F1568A9FEC91B50D6C296AB9F4"
+  },
+  "native_calls_match": 2,
+  "cases_new_first_pass": 224,
+  "cases_new_rerun_pass": 224,
+  "prior_01H_cases_rerun_pass": 22,
+  "run_total_distinct_fixtures": 246,
+  "first_failed_attempt": "E script source-length typo 0x145B vs 0x145; corrected before fixture generation; OTHER_RECOVERED",
+  "artifacts": [
+    {
+      "name": "t020_e_t013_btl_limit_clock_gate_20261031_02H.py",
+      "size": 5112,
+      "sha256": "C8C2313AF3EB507E281D974DA351CE65762D3CF10080B34033FB0C6DAAE6343E"
+    },
+    {
+      "name": "T020_E_T013_BTLLIMIT_CLOCK_CASES_20261031_02H.json",
+      "size": 90834,
+      "sha256": "F02ED7E550A0014277B326BEF6C5A0D5F2620746B64B3439FA0D15DBE663697D"
+    },
+    {
+      "name": "T020_E_T013_BTLLIMIT_CLOCK_ACCEPTANCE_20261031_02H.md",
+      "size": 5025,
+      "sha256": "6E124BD57819DAC1CC6677839D67367B85980A461A8B023C375B87C9F982C655"
+    }
+  ],
+  "master_sha256": "E7329C9C6368E67BE191A4ABF45156319E32826FF039FB2B9E226DEDDAC6B6B3",
+  "master_final_checkpoint_last_checked": 196,
+  "master_ready_last_checked": {
+    "total": 596,
+    "A": 115,
+    "B": 229,
+    "C": 136,
+    "D": 116
+  },
+  "task_queue_recount": {
+    "total": 34,
+    "DONE": 9,
+    "IN_PROGRESS": 21,
+    "VERIFY": 4
+  },
+  "ready_new_integration": 0,
+  "golden": {
+    "dynamic_observed": 0,
+    "actual_golden_pass": 0,
+    "strict_match": 0
+  },
+  "t019": {
+    "new_confirmed_original_bug": 0,
+    "b01_source_hash_mismatch_still_open": true,
+    "gameclear_scope": "RESOLVED",
+    "script2_phase_txt_gwrite": "VERIFY"
+  },
+  "historical_refusals": "BLOCKED_UNTOUCHED",
+  "offline_unsynced": "NOT_FULLY_RECONCILED",
+  "readback": "OWNER_REPORT_AND_CODE_READ; SHA_AND_SCRIPT_VERIFY_RUN_PENDING_RECEIPT",
+  "writes": "E-owned test script, fixture, report, receipt only; MASTER and other owners unchanged"
+}
