@@ -1,5 +1,21 @@
 # E/T018–T020 source preservation and review index (2026-11-02)
 
+## 2026-11-03 00H — seven older E T018 evidence-body recoveries (existing IDs, no new IDs)
+
+**7 existing E studies, 7 newly preserved sanitized full-meaning source-report files, 0 new research IDs, 0 new PRs.** Original PC source hashes independently checked 7/7 and GitHub published-copy text fetched and matched 7/7. Prior safety/refusal routing metadata lines excluded. Old excerpt/crosswalk indexes are not new independent native findings. No Python/JSON fixtures recovered in this batch.
+
+- [E-OFFLINE-UNSYNCED-20261020-1651-T018-AUDIT-PROJECTION-01](legacy/E-OFFLINE-UNSYNCED-20261020-1651-T018-AUDIT-PROJECTION-01.md) — original PC `tests/T018_AUDIT_REPORT_BINDING_20261020.md`, SHA-256 `9CA1B2A06C90FDEEE530F8F56549ED71DFFD552158AF71E2208BE475DD744F27` (2026-11-03 JST); E-only sanitized source, NOT_CURATED.
+- [E-OFFLINE-UNSYNCED-20261020-2044-CNB02-SOURCE-ELIGIBILITY-GATE-01](legacy/E-OFFLINE-UNSYNCED-20261020-2044-CNB02-SOURCE-ELIGIBILITY-GATE-01.md) — original PC `tests/T018_CNB02_SOURCE_GATE_20261020_2044.md`, SHA-256 `92B78B26BD6060F87AFE901C64FDC4CBBE41F5F2D123895DA74A431121102ABD` (2026-11-03 JST); E-only sanitized source, NOT_CURATED.
+- [E-OFFLINE-UNSYNCED-20261020-2153-CNB02-TEMPORAL-SCOPE-01](legacy/E-OFFLINE-UNSYNCED-20261020-2153-CNB02-TEMPORAL-SCOPE-01.md) — original PC `tests/T018_CNB02_TEMPORAL_SCOPE_20261020_2153.md`, SHA-256 `AD5AFCB9CD1D48FE70BE0C0A607D9069423B80F90BBD82841292EF37129C` (2026-11-03 JST); E-only sanitized source, NOT_CURATED.
+- [E-OFFLINE-UNSYNCED-20261020-2244-CNB02-EVIDENCE-CLASS-01](legacy/E-OFFLINE-UNSYNCED-20261020-2244-CNB02-EVIDENCE-CLASS-01.md) — original PC `tests/T018_CNB02_EVIDENCE_CLASS_BOUNDARY_20261020_2244.md`, SHA-256 `0B6637393E1408CE83403C85973D7BB485A001E2A9616B62BC346C9690BAB123` (2026-11-03 JST); E-only sanitized source, NOT_CURATED.
+- [E-OFFLINE-UNSYNCED-20261020-2348-G0-TRIAGE-01](legacy/E-OFFLINE-UNSYNCED-20261020-2348-G0-TRIAGE-01.md) — original PC `tests/T018_CNB02_G0_UI_ROUTE_TRIAGE_20261020_2348.md`, SHA-256 `9B7F07C743B5C1BC3B37E57521DE5190324ADF41089A102E4FEB63F74EC82783` (2026-11-03 JST); E-only sanitized source, NOT_CURATED.
+- [E-OFFLINE-UNSYNCED-20261021-0050-CNB02-CHAIN-01](legacy/E-OFFLINE-UNSYNCED-20261021-0050-CNB02-CHAIN-01.md) — original PC `tests/T018_CNB02_G0G1G2_CHRONOLOGY_20261021_0050.md`, SHA-256 `B0D464FD2C3C142B241E3C0F12228EDC77DEA9EF8E3E218E48C5414911FC4DE1` (2026-11-03 JST); E-only sanitized source, NOT_CURATED.
+- [E-AUDIT-20261021-1953-CNB02-BRIDGE-STAGE-CROSSWALK-01](legacy/E-AUDIT-20261021-1953-CNB02-BRIDGE-STAGE-CROSSWALK-01.md) — original PC `tests/T018_CNB02_BRIDGE_STAGE_CROSSWALK_20261021_1953.md`, SHA-256 `503770DBDEC8BA3288D43E6B9A79830B99A0C5268E2EEC3F01EBD9322FEAD034` (2026-11-03 JST); E-only sanitized source, NOT_CURATED.
+
+**Meaning/corrections:** metadata-only verdict does not prove original raw bytes; synthetic conditions cannot be declared actual native observations. Separate event read-site epochs, source-class NOT_RUN versus SYNTHETIC, legal G0 UI selectability, same-run G1 SAVE/input chronology, and G2 actual deployed roster. E G0/G1/G2 are not B G0/G1/G2 or H0/H1. Historical tests not rerun. No same-run complete original-game Golden; actual Golden PASS 0, strict MATCH 0, newly formal READY 0, formal MASTER changes 0, newly proven original-game T019 contradictions 0. **PUBLISHED_INTAKE / NOT_CURATED.**
+
+**Next safe cursor:** other historical E-owner T018/T019/T020 source bodies / separate reproducibility artifacts not yet preserved on owner PR or develop, checked by actual source SHA, research ID, errata and privacy. `wiki/T019_CONTRADICTIONS.md` contains a protected-range marker, so its full-body GitHub ingestion remains HOLD; only its existence/hash metadata was checked, no protected material published. Curator alone selectively validates/adopts into develop. No shared dictionary, original game, other-owner or develop changes.
+
 This is the entrypoint for E-owned PRIVATE intake material. **PUBLISHED_INTAKE / NOT_CURATED**: neither original-game Golden nor confirmed compatibility. A provenance crosswalk is a condensed source map, not a replacement for full authorized original-owner reports or native byte witnesses.
 
 ## 2026-11-02 E old 2026-10-27 11H–14H Golden-helper correction chain (existing IDs; NOT CURATED)
