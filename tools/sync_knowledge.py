@@ -48,7 +48,7 @@ FILES = (
     "research/rea/REA_20261101_19H_P0_FTELL_SEH4_SCOPE_STATIC.md",
     "research/rea/REA_20261101_20H_P0_EH4_DISPATCH_PHASE_STATIC.md",
     "research/intake/README.md",
-    "research/intake/B/B-20261013-1110-01.md", "research/intake/B/B-20261013-1141-01.md",
+    "research/intake/B/B-20261013-1110-01.md", "research/intake/B/B-20261013-1134-01.md", "research/intake/B/B-20261013-1141-01.md", "research/intake/B/B-20261013-1146-01.md",
     "research/intake/B/B-20261101-17H-T024-52AD00-MERGE-TIE-LOCAL-STABILITY-01.md",
     "research/intake/B/B-20261101-18H-T024-DUAL-REFERENCE-COORD-AND-PC-RESTORE-01.md",
     "research/intake/B/B-20261102-00H-T024-542280-NATIVE-ATAN2-SENTINEL-ERRATUM-01.md",

@@ -213,7 +213,7 @@
 # ---- 技能後処理・待機管理（原作x86限定） ----
 0x57BE30	func	Skill_PostActionUpdate	ECXに技能参照・stackにUnit参照を受け、技能後段でUnit待機フィールド・キー付き管理値・条件付き通知ラッチを更新する局所処理。正常末尾0x57C170はret4。下位関数の作用と実機挙動は未検証。	静的確認	B-20261013-1110-01, REF_SKILL_POST_ACTION.md
 # ---- 経験値・召喚・ユニット記録 ----
-0x54E7B0	func	Summon_SpawnFromSkill	技能・発動元を受けて召喚処理を進める大規模関数。呼出元に Missile/RushMissile などがあり、Unit+0xC の holder 参照を生成先へ渡す。	静的確認	T011§召喚caller, EXP_KIND4_DISPATCH_PRODUCERS, EXP_CACHE_STRING_KEY_RECORD_ABI§4
+0x54E7B0	func	Summon_SpawnFromSkill	技能・発動元を受けて召喚処理を進める大規模関数。呼出元に Missile/RushMissile などがあり、Unit+0xC の holder 参照を生成先へ渡す。	静的確認	T011§召喚caller, EXP_KIND4_DISPATCH_PRODUCERS, EXP_CACHE_STRING_KEY_RECORD_ABI§4, B-20261013-1134-01, REF_UNIT_EXP_SUMMON.md
 0x547490	func	Summon_ProcessSkillKind4	Skill+0x40==4 の召喚系 producer の一つ。UnitData の一時コピーと記録挿入に 0x466BA0→0x577310 を用いる。	静的確認	EXP_KIND4_DISPATCH_PRODUCERS, EXP_CACHE_STRING_KEY_RECORD_ABI§4
 0x553390	func	Summon_ProcessAlternativeKind4	もう一方の召喚処理 producer。Skill+0x74 の繰り返しや零値fallbackを含み、0x577310 に記録を渡す。	静的確認	EXP_KIND4_DISPATCH_PRODUCERS, EXP_COLLAB_STATUS
 0x552EF0	func	Summon_DispatchAlternativeSkill	0x553390 を呼ぶ種別4の上流分岐。技能種別と後続召喚経路を結ぶ。	静的確認	EXP_KIND4_DISPATCH_PRODUCERS, EXP_COLLAB_STATUS
@@ -231,7 +231,7 @@
 0x467DE0	func	UnitData_FindPersistentRecord	永続化側の context+0x300 の木を検索し、node+0x28 に格納された UnitData* を返す。	静的確認	EXP_SIMPLEBATTLE_LIFECYCLE§CP03
 0x4E70E0	func	Summon_ProcessSharedQueue	召喚処理と代替移動処理で共用される2DWORDの待ち行列を使う。末尾投入・先頭取得・先頭進行・件数減算を含む。	静的確認	T011§B-20261026-15H
 0x56F6F0	func	Unit_InitializeRuntimeHolder	Unit の生成時に渡された所有者文脈を Unit+0xC に設定する補助。召喚元 Unit+0xC からの継承経路で使用される。	静的確認	T011§B-20261027-13H
-0x56F880	func	Unit_ConstructSummonedRuntime	召喚時にも使用される通常 Unit オブジェクトの生成処理。owner/holder 引数を 0x56F6F0 へ渡し、vtable 0x63A9E4 を設定する。	静的確認	T011§B-20261027-13H, EXP_SUMMON_DESTRUCTOR_NORMAL_VTABLE
+0x56F880	func	Unit_ConstructSummonedRuntime	召喚時にも使用される通常 Unit オブジェクトの生成処理。owner/holder 引数を 0x56F6F0 へ渡し、vtable 0x63A9E4 を設定する。	静的確認	T011§B-20261027-13H, EXP_SUMMON_DESTRUCTOR_NORMAL_VTABLE, B-20261013-1146-01, REF_UNIT_EXP_SUMMON.md
 0x571B70	func	Unit_InitializeBattleInstance	キャンペーン側の参照 Unit から戦闘インスタンスへ状態を引き継ぐ際に呼ばれる。技能の種別別能力フラグ再構築とも関連する。	推定	T011§13/§15, T013§stealth
 0x587CC0	func	Unit_ResetLinkedRuntimeFlags	戦闘 SimpleUnit 生成時などに参照元オブジェクトの状態を変更する補助。複数の状態 setter からも呼ばれるため、生成専用ではない。	静的確認	T011§15/§16
 0x579940	func	UnitData_CompareRecordKeys	記録木の文字列キーを短文字列とヒープ文字列の双方から読み、辞書順に比較する処理を含む。	静的確認	EXP_CACHE_STRING_KEY_RECORD_ABI§1
