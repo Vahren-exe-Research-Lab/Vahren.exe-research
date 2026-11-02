@@ -508,3 +508,8 @@
 
 0x46453F	code	ScriptData_SuperParentLookupPresenceSite	Original x86/V9 E8 to 0x4C1200 after local optional-parent name checks; all caller and inheritance meaning VERIFY.	静的確認	B-20261024-21H-T012-SUPER-EMPTY-GATE-STRRATIO-PARENT-01; REF_DAT_BEHAVIOR.md
 0x5050EE	code	ScriptData_SuperEntryInsertCallSite	Original x86/V9 E8 to 0x463280 within conditional super ScriptData producer; duplicate keys and gameplay VERIFY.	静的確認	B-20261024-22H-T011-T012-SUPER-PARSER-PRODUCER-01; REF_DAT_BEHAVIOR.md
+# ---- 2026-11-03 召喚の親子関係・経験値の加算位置（Claude F§96、原作x86 STATIC、実機未確認） ----
+0x5774A0	func	Unit_AppendSummonChild	親 BattleUnit の子一覧 +0x178/+0x17C/+0x180 に子を追加する（stdcall(parent, child) ret 8）。子の +0x1E594 が 0 でなければ親に書き換える。呼出しは召喚生成直後の 0x54F245/0x5479F0/0x5537BF の3か所のみ。一覧から外す処理はない。	静的確認	F§96, ON-STAND-010
+0x575A60	func	Unit_OnDefeated	通常型 BattleUnit の vtable+0x58。最初の1回だけ +0x1867C を立て、生きている子のうち element_lost の子を子の vtable+0x58 で消す。陣営 +0x48 の一覧からは外さない。	静的確認	F§96, ON-STAND-010
+0x5445E0	func	SimpleUnit_OnDefeated	簡易戦闘型 BattleUnit の vtable+0x58。+0x1867C と UnitData+0x1B1 を立て、HP+0x90=0、element_lost の子を消す。	静的確認	F§96, EXP_ENDTRANSFER CP04, ON-STAND-010
+0x551FB2	code	Hit_LinkedAward_AddExp	0x551E50 内の経験値加算 add [edi+0x16C],edx（6バイト）。EDI=加算先 UnitData、EDX=量、ESI=context（[esi]=actor）。DLL のフック候補。	静的確認	F§96, EXP_ENDTRANSFER CP17
