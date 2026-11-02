@@ -1,0 +1,57 @@
+{
+  "research_id": "E-AUDIT-20261030-04H-T020-T028-NOTIFY-GATE-DECOUPLING-01",
+  "owner": "E",
+  "run_window_jst": "2026-10-30 04H",
+  "status": "STATIC_SOURCE_PINNED_SYNTHETIC_EXECUTED_VERIFY_NOT_READY",
+  "source_owner": "B",
+  "source_owner_status": "VERIFY_NOT_READY",
+  "source_file": "data/T028_RETREAT_NOTIFICATION_POSTRELEASE_FLAG_GATE_NATIVE_20261030_04H.md",
+  "source_sha256": "7A56916D8FA5540426BB178F5272295DAE5F353F826C8AD2ADA8F45410190774",
+  "file_hashes": {
+    "tests/t020_e_t028_postrelease_notify_gate_20261030_04H.py": "F3193BB62091FA399F1157057BAD143C6DA46848547F2400C7D3A47AC571002D",
+    "tests/T020_E_T028_POSTRELEASE_NOTIFY_CASES_20261030_04H.json": "F8753A9A72AC4F1A0262E2B8F829E6362B45798E7012DA3E5555D50A3F03350A",
+    "tests/T020_E_T028_POSTRELEASE_NOTIFY_ACCEPTANCE_20261030_04H.md": "919AC3760F4FF56896CED88825029975928B9510F64620AF48E9FDA2F8F68DA9"
+  },
+  "file_sizes_bytes": {
+    "py": 5591,
+    "fixture": 13879,
+    "report": 4365
+  },
+  "independent_file_readback": "3/3",
+  "hash_check": "3/3",
+  "new_synthetic_cases": {
+    "passed": 46,
+    "total": 46
+  },
+  "previous_synthetic_cases": {
+    "passed": 145,
+    "total": 145
+  },
+  "suite_synthetic_cases": {
+    "passed": 191,
+    "total": 191
+  },
+  "runner_exit_codes": {
+    "passed": 8,
+    "total": 8
+  },
+  "gameplay": {
+    "dynamic_observed": 0,
+    "actual_golden_pass": 0,
+    "strict_match": 0
+  },
+  "master": {
+    "last_official_checkpoint": 196,
+    "last_official_ready_total": 596,
+    "new_ready_integrated": 0
+  },
+  "task_queue": {
+    "rows_recounted": 34,
+    "done": 9,
+    "in_progress": 21,
+    "verify": 4
+  },
+  "offline_unsynced": "OPEN",
+  "blocked_old_refusals": "MAINTAIN",
+  "next": "B04H flag producers/sink ABI plus G0-G1-G2 legally bound original-game observations"
+}
