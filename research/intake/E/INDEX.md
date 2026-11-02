@@ -57,6 +57,10 @@ All three reports' current PC SHA256 matched their indexed values. Earlier archi
 
 The named PC-only research tools are not supplied as executable source by this GitHub index. Review their owner/source license, data safety and source-hash against the approved PC copy before choosing a specific tool to reproduce a synthetic negative. Do not claim all 337 files implement independent results or all run successfully.
 
+### Existing G3/G4 owner-source recovery (2026-11-02; NOT Golden)
+
+- [T020 battle-return single-commit schema + byte-binding companion](E-T020-G34-BATTLE-RETURN-BYTE-RECEIPT-REPRO-20261102.md) recovers two previously PC-only E-owned Python helpers under [repro/](repro/). Original source SHA256 rechecked 2/2, existing source-report SHA256 checked 2/2; GitHub full-text readback 2/2. Existing study ID `E-AUDIT-20261021-2147-BATTLE-RETURN-COMMIT-GATE-01`, with the 22 Oct SAVE-identity study linked for context; **new study IDs 0**. E/T020 synthetic-only replay: 8/8 and 12 pass + 1 Windows symlink skip (13 discovered), exit 0. A placeholder-only schema result or independent byte-bound receipt is never an actual original-game Golden, strict parity, G4 World commit, READY or curator admission. Next owner-source cursor: 2026-10-29 08H–09H evidence-boundary/join-preflight helpers require source/ownership/privacy/errata review; do not access prohibited native scope.
+
 ## Unpublished, excluded or unresolved evidence
 
 - The full `tests/T018_GOLDEN_CORPUS.md` table and `MASTER_LEDGER.md` stay on authorized research PC; earlier table-boundary safety refusal remains **BLOCKED**, and these were **not copied**, even partially through an alternate path. E research before 2026-10-20 in the legacy ledger is not newly claimed as fully archived.
