@@ -1,0 +1,13 @@
+[
+  {"id":"W01","trace":true,"attest":true,"ui":false,"save":false,"input":false,"map":false,"sides":false,"roster":false,"same":false,"expect":"NATIVE_G0_OBSERVED_E_PENDING"},
+  {"id":"W02","trace":true,"attest":true,"ui":false,"save":true,"input":true,"map":true,"sides":true,"roster":true,"same":true,"expect":"NATIVE_G0_OBSERVED_E_PENDING"},
+  {"id":"W03","trace":true,"attest":true,"ui":true,"save":false,"input":true,"map":true,"sides":true,"roster":true,"same":true,"expect":"NATIVE_G0_OBSERVED_E_PENDING"},
+  {"id":"W04","trace":true,"attest":true,"ui":true,"save":true,"input":false,"map":true,"sides":true,"roster":true,"same":true,"expect":"NATIVE_G0_OBSERVED_E_PENDING"},
+  {"id":"W05","trace":true,"attest":true,"ui":true,"save":true,"input":true,"map":false,"sides":true,"roster":true,"same":true,"expect":"NATIVE_G0_OBSERVED_E_PENDING"},
+  {"id":"W06","trace":true,"attest":true,"ui":true,"save":true,"input":true,"map":true,"sides":false,"roster":true,"same":true,"expect":"NATIVE_G0_OBSERVED_E_PENDING"},
+  {"id":"W07","trace":true,"attest":true,"ui":true,"save":true,"input":true,"map":true,"sides":true,"roster":false,"same":true,"expect":"NATIVE_G0_OBSERVED_E_PENDING"},
+  {"id":"W08","trace":true,"attest":true,"ui":true,"save":true,"input":true,"map":true,"sides":true,"roster":true,"same":false,"expect":"NATIVE_G0_OBSERVED_E_PENDING"},
+  {"id":"W09","trace":false,"attest":true,"ui":true,"save":true,"input":true,"map":true,"sides":true,"roster":true,"same":true,"expect":"NO_NATIVE_G0"},
+  {"id":"W10","trace":true,"attest":false,"ui":true,"save":true,"input":true,"map":true,"sides":true,"roster":true,"same":true,"expect":"NATIVE_TRACE_UNATTESTED"},
+  {"id":"W11","trace":true,"attest":true,"ui":true,"save":true,"input":true,"map":true,"sides":true,"roster":true,"same":true,"expect":"E_REVIEW_ONLY_NOT_GOLDEN"}
+]
