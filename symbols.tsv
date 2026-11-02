@@ -137,7 +137,7 @@
 0x57EB40	func	Unit_DispatchBattleAction	探索更新後の行動候補を処理し、戻り値 AL の成功・失敗で上位側が分岐する。呼び出し側には mode 0 と mode 1 の経路がある。	静的確認	T012§61, T013§B-20261011-0211-01
 0x57E1D0	func	Unit_ExecuteActionRoute	Unit の戦闘行動処理経路の一つ。ダメージ計算 0x550E70 への呼び出し元を含む。	静的確認	T012§16, T013§2026-10-12 19:16
 0x57E4E0	func	Unit_RefreshActionSearch	Unit+0x1E534 を探索閾値にして 0x57B870 を呼び、ターゲット再探索を強制する経路を持つ。	静的確認	T013§target search cadence, T012§61
-0x40E220	func	SimpleBattle_CommitResult	簡略戦闘の結果コードを調べ、非ゼロの決着では 0x493630 に結果を反映してから 0x40F000 などで後片付けする。	静的確認	EXP_SIMPLEBATTLE_LIFECYCLE§CP04, T010§battle finish resultFlag
+0x40E220	func	SimpleBattle_CommitResult	原作x86のモード・候補分岐後、0x40E2F0の戻り値が非ゼロなら0x493630/0x40F000/0x48ABF0を呼ぶ。G4外部結果反映・実機勝敗の成立は未検証。	静的確認	EXP_SIMPLEBATTLE_LIFECYCLE§CP04, T010§battle finish resultFlag
 0x40E2F0	func	SimpleBattle_RunBoundedRounds	簡略戦闘の反復処理。局所カウンタの上限は500で、上限到達時の戻り値0は勝敗確定を意味しない。	静的確認	EXP_SIMPLEBATTLE_LIFECYCLE§CP05
 0x40F000	func	SimpleBattle_ReleaseSides	簡略戦闘の結果反映後に両陣営の virtual +0x10 を呼び、戦闘用ユニットを破棄する処理へ進む。	静的確認	EXP_SIMPLEBATTLE_LIFECYCLE§CP01/CP04
 0x40F320	func	SimpleBattle_BuildUnitRoster	簡略戦闘用 SimpleUnit を生成し、更新対象の配列へ登録する経路を含む。	静的確認	EXP_SIMPLEBATTLE_LIFECYCLE§CP02
@@ -493,3 +493,6 @@
 0x569530	func	Mode30_WriteAndConditionalDispatch	Original x86 writes incoming EAX at owner+0x30 then, for a nonempty member vector, conditionally invokes 0x569730 for the first local +0x1867C==0 member; three verified E8 callers. ABI/gameplay effect VERIFY.	静的確認	B-20261023-22H-T013-TROOP-FORM-MODE-SETTER-01; B-20261023-2317-T013-TROOP-MODE-SOURCE-CASE8-01; REF_BATTLE_AI_MORALE.md
 0x5D3DA0	func	VorbisSetup_InitInnerState	Original 50-byte helper clears selected outer fields and stores calloc(1,0xE50) result at outer+0x1C; parser null gate is separate and full ABI VERIFY.	静的確認	REA-OFFLINE-20261101-07H-P0-VORBIS-MODE-ZEROED-SLOT-CLEANUP-BOUND-STATIC-01; REF_AUDIO_VORBIS.md
 0x420900	func	TrigCosNegSinToTwoInts	Original x86 70-byte trig helper: adds stored pi/2, calls cos and sin and integer converter, writes signed two-DWORD outputs to implicit ESI and ESI+4; conversion exceptions and gameplay role remain VERIFY	静的確認	B-20261021-2117-01; B-20261029-1410-T013-TRIG1000-OUTPUT-ALIAS-NATIVE-01; REF_BATTLE_AI_MORALE.md
+
+0x431FB0	func	FastSim_PreselectorRangeGate	Original x86 checks two index/begin/end ranges and 0x80000008 sentinels through implicit EAX; caller 0x40E25E branches on AL. Full ABI, field meaning and runtime reachability VERIFY.	静的確認	E-AUDIT-20261023-1952-T020-FASTSIM-SELECTOR-PRIORITY-01; REF_BATTLE_TAKEOVER.md
+0x452D90	func	BattleWnd_PrimaryDrawEligibilityVCall	Original primary vtable+0x0C gate: with nonzero byte arg and ECX+0xA4!=0x80000008 returns AL=0, otherwise returns byte [ECX+0x84] (RET4); actual draw/runtime vptr VERIFY.	静的確認	E-AUDIT-20261023-1850-T020-FASTSIM-DRAW-VSLOT-01; REF_BATTLE_TAKEOVER.md

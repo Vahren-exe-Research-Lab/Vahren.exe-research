@@ -253,3 +253,15 @@ Three existing owner IDs were ingested byte-for-byte from [B PR #18](https://git
 | `B-20261023-2317-T013-TROOP-MODE-SOURCE-CASE8-01` | [later producer crosswalk](B/B-20261023-2317-T013-TROOP-MODE-SOURCE-CASE8-01.md) | `0x4B5976/7E/81` signed `>2` exclusion and local candidate/identity gate before setter call `0x4B5A00`; all possible runtime modes VERIFY. |
 
 **Dedup and next cursor:** earlier 18H/19:15/21H B reports describe precursor/successor machinery and are NOT three extra CURATED discoveries. The 23:17 ID adds source provenance, not a new setter function. Remaining B/T013 source IDs, B/T024 and legacy REA/E are queued by ID+SHA+correction; protected VA, denied payloads and original-game assets stay untouched. No real-game Golden PASS or strict MATCH was run.
+
+## Curator-reviewed E/T020 FastSim original-ASM gates (2026-11-03)
+
+Three **existing E owner IDs** on [Draft PR #17](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/17) at pinned head `c0b34c6ea3e855c46fafb129acba13ea6b0bd70a` have raw original-PC report SHA256 **3/3** matched and bounded ver0.67 original-PE bytes independently redecoded. Only original static gate, native CALL, local offset and corrected pointer-alias facts are now **CURATED_STATIC** in [REF_BATTLE_TAKEOVER.md](../../REF_BATTLE_TAKEOVER.md), not original gameplay/G3 or G4. Original owner markdown remains PUBLISHED_INTAKE on the divergent PR (not duplicated under develop intake paths).
+
+| Existing E ID | Scope and correction |
+| --- | --- |
+| `E-AUDIT-20261023-1850-T020-FASTSIM-DRAW-VSLOT-01` | primary `+0x0C→0x452D90` conditional AL gate, secondary `+0x04→0x40E220`; source SHA256 `281078EED8C9FBD7A2F298A2468EB25A68ED8452FC3462B774B63B54ED15D01D` |
+| `E-AUDIT-20261023-1952-T020-FASTSIM-SELECTOR-PRIORITY-01` | mode+0x78/+0x7C, byte+0x19C, `0x431FB0` early gate before simulation; SHA256 `5E5455326BE70F5A7128A39794731FAB8DA5B0B07B71F36AF2CE70BB2E575E4C` |
+| `E-AUDIT-20261023-2052-T020-FASTSIM-RET-DOMAIN-TAIL-01` | ret!=0 finish sequence and conditional post `0x48EEE0`, base+`0x1EF175` equals local EBX+`0x1EEC71` after +0x504; SHA256 `13B9B35DC5CD684FF3E723DF5BDF9BF0FB5F139942F3C2618E650ADCBF890974` |
+
+**DUPLICATE_LINKED:** prior `E-AUDIT-20261023-1651-T018-T020-FASTSIM-EXIT-PROOF-SPLIT-01` describes the same broad route, not a fourth new curated ID. Parent nonzero branch exists even if unexpected child return codes remain unobserved; 19:52's earlier interpretation is corrected by 20:52. No actual Golden/strict MATCH or G4-result commit. Next E cursor: uncurated chronological G1/G2 primary evidence and E corrections by source ID/SHA, alongside B/REA historical backlog. New PUBLISHED_INTAKE **0** (no owner source files copied).
