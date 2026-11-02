@@ -1,0 +1,34 @@
+{
+  "research_id": "E-AUDIT-20261029-13H-T018-T020-WATCH-READY-ID-ALIAS-01",
+  "owner": "E/T018/T020",
+  "status": "SAVED_READBACK_STATIC_VERIFY_NOT_READY",
+  "source": "Windows Desktop Commander Local Compact read-only",
+  "source_sha256": {
+    "ready1": "0CCBCDD514B025DBB387BDA2E789525E35087014F72FF42120844253CB4BA63C",
+    "ready2": "936FBBA2961A46128CD4D4DFD4E93134A8663B127E1625A3C3F721ACD4ABC71B",
+    "trace1": "9DF9A0D8C7D15958F4711478ED6DFF1F912E49313D6FC5BA5DCBC5B089E262A7",
+    "trace2": "1D60CC8CDC6D3B9F020FB52238C3A714F069EA4A4B489F874D90F41FEEE74B46",
+    "g0_limited": "87ADE831D38F199697F905DAD1A8C964E01F0593D1E1C0BE9780EA6FBD998C2C"
+  },
+  "artifact_sha256": {
+    "audit": "99F122650332151B6365AB412AE9FDA64243D523153991EC8F645C21D7A74E47",
+    "fixture": "F0A9F836D896CE71529BCD11D801A8681DC8DF45DC8B4961C73BF51B1ABF2B33"
+  },
+  "actual_new_static_source_checks": 8,
+  "legacy_unittest_reexecuted": {
+    "count": 8,
+    "pass": 8,
+    "fail": 0,
+    "seconds": 0.032
+  },
+  "new_negative_fixture_cases": {
+    "count": 6,
+    "executed": false
+  },
+  "ready_integrations": 0,
+  "original_gameplay_dynamic_observed": 0,
+  "original_gameplay_actual_golden_pass": 0,
+  "strict_match": 0,
+  "source_exe_rehashed_this_run": false,
+  "note": "The READBACK receipt is independent E-owned record; original gameplay G0/G1/G2 same-run remains unproven."
+}
