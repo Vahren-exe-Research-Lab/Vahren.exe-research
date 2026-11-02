@@ -1,5 +1,9 @@
 # E/T018–T020 source preservation and review index (2026-11-02)
 
+### Additional old E T020 author-regression source preserved (2026-11-03)
+
+- [2026-10-08 E owner regression source with dated 2026-10-13 correction](legacy/T020_CHANGELOG_REGRESSION_TRIAGE_20261008.md) — historical E-CHG-01/02/03/04A/04B/05 fixture IDs; source `evidence/T020_CHANGELOG_REGRESSION_TRIAGE.md`, original SHA-256 `C2636E6B154F80DF60609B95D2EC4A3E4BE7C36E4C6D16B65F85E3ABE9C97F07` checked on authorized PC on 2026-11-03. GitHub sanitized full-meaning report readback matched; 5 old refusal-routing metadata lines omitted. **A dated correction:** old October 8 five-series fixture-gap claim was superseded by the October 13 confirmation that 6 design entries existed. Their original gameplay outcomes are STILL NOT RUN. This is an additional *existing E-owned source report*, not a newly invented study ID, Golden test or CURATED fact. No original DAT/ZIP/SAVE/EXE included. Commit `ff8960a4e125c40c6b0a545ad8be7a465549f78a`.
+
 ## 2026-11-03 00H — seven older E T018 evidence-body recoveries (existing IDs, no new IDs)
 
 **7 existing E studies, 7 newly preserved sanitized full-meaning source-report files, 0 new research IDs, 0 new PRs.** Original PC source hashes independently checked 7/7 and GitHub published-copy text fetched and matched 7/7. Prior safety/refusal routing metadata lines excluded. Old excerpt/crosswalk indexes are not new independent native findings. No Python/JSON fixtures recovered in this batch.
