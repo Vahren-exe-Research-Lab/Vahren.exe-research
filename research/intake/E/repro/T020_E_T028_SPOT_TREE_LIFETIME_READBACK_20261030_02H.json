@@ -1,0 +1,38 @@
+{
+  "research_id": "E-AUDIT-20261030-02H-T020-T028-SPOT-TREE-LIFETIME-PROVENANCE-01",
+  "status": "STATIC/SYNTHETIC_EXECUTED/VERIFY/NOT_READY",
+  "storage": "PC_E_OWNED_TESTS",
+  "source_owner": "B",
+  "source_status": "VERIFY_NOT_READY",
+  "source_sha256": "1C95D49A632F3C27B800C774E6CA738A4CF58116D96709587FDC8823225F5AAF",
+  "files": [
+    {
+      "name": "t020_e_t028_spot_tree_lifetime_gate_20261030_02H.py",
+      "sha256": "14478DB07EA0E650EAED6C5F3CC365DD20F4B117E9CA136E9837B74E9DD94745",
+      "bytes": 3026
+    },
+    {
+      "name": "T020_E_T028_SPOT_TREE_LIFETIME_CASES_20261030_02H.json",
+      "sha256": "B416AC5974B27EF835681BD8432E9BB87F8DCC78048E13CCB6D3A270A340DAF0",
+      "bytes": 3105
+    },
+    {
+      "name": "T020_E_T028_SPOT_TREE_LIFETIME_ACCEPTANCE_20261030_02H.md",
+      "sha256": "0CE6C6345AB622559BCA2B522D8570598E2E1994D75B8D920F2E21AEC3526919",
+      "bytes": 4191
+    }
+  ],
+  "readback": "Local Compact independent read_file / Local PowerShell Get-FileHash",
+  "source_pin_pass": 1,
+  "synthetic_new_pass": 28,
+  "synthetic_existing_pass": 79,
+  "old_gameplay_dynamic_observed": 0,
+  "actual_golden_pass": 0,
+  "strict_match": 0,
+  "master_cp_last_confirmed": 196,
+  "master_ready_last_confirmed": 596,
+  "master_changed": false,
+  "unresolved": "G1/G2 original same-run packets; T028 native reachability; OFFLINE-UNSYNCED dedup",
+  "new_safety_refusal": 0,
+  "connection_failure": 0
+}
