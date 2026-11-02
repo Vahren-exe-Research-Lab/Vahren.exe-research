@@ -77,3 +77,7 @@ Source identity: unmodified research PE SHA256 `E8DAC301050C8E630D7E0CE93AEEFD95
 - The known `0x551E50` EXP-related consumer and earlier generic exp_per parser sources are antecedents, not newly validated full gameplay. Child collision, actual EXP, legal hit, next RNG and battle settlement remain VERIFY.
 
 **Curation boundary and search:** The new curated meaning is two source-backed compiler/field facts and the observed root/child raw declaration difference. Do not count prior `0x54E7B0` selector, the child graph or generic exp_per helper again. New symbol anchors `0x59C3B5`/`0x59C418` are code sites, **not new function entrypoints**. Search `kb.py addr 0x59C3B5`, `addr 0x59C418`, `docs 0x59BE05`, `find next_order`, and `files --task T011/T012`, then follow the original report SHA and pinned owner source links above. No original-game Golden PASS, strict MATCH, new READY or G4 external-result commit.
+
+### Related source: Skill super-parent ScriptData compiler
+
+For the original x86 bounded super-parent producer/getter and brace-return corrections, see [REF_DAT_BEHAVIOR.md](REF_DAT_BEHAVIOR.md), ScriptData super ancestry section. Six B 2026-10-24/25 IDs are source-linked there. This does not establish effective runtime inheritance of a child Skill, any EXP transfer or external G4 settlement.

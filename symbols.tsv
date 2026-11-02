@@ -505,3 +505,6 @@
 
 0x59C3B5	code	Skill_StoreNextOrderParsedFlag	Original x86 writes boolean AL for raw next_order==on to compiled Skill +0x270. Full runtime selection and RNG VERIFY.	静的確認	B-20261013-1951-01; REF_UNIT_EXP_SUMMON.md section 8
 0x59C418	code	Skill_StoreNextIntervalParsedValue	Original x86 writes property getter integer [EAX+0x20] for next_interval to compiled Skill +0x274. Time unit and runtime consumers VERIFY.	静的確認	B-20261013-1951-01; REF_UNIT_EXP_SUMMON.md section 8
+
+0x46453F	code	ScriptData_SuperParentLookupPresenceSite	Original x86/V9 E8 to 0x4C1200 after local optional-parent name checks; all caller and inheritance meaning VERIFY.	静的確認	B-20261024-21H-T012-SUPER-EMPTY-GATE-STRRATIO-PARENT-01; REF_DAT_BEHAVIOR.md
+0x5050EE	code	ScriptData_SuperEntryInsertCallSite	Original x86/V9 E8 to 0x463280 within conditional super ScriptData producer; duplicate keys and gameplay VERIFY.	静的確認	B-20261024-22H-T011-T012-SUPER-PARSER-PRODUCER-01; REF_DAT_BEHAVIOR.md
