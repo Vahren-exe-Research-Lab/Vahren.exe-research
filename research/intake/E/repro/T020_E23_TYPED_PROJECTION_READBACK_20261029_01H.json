@@ -1,0 +1,46 @@
+{
+  "research_id": "E-AUDIT-20261029-01H-T018-T020-TYPED-PROJECTION-JSON-CONFORMANCE-01",
+  "owner": "E",
+  "tasks": [
+    "T018",
+    "T020"
+  ],
+  "source_kind": "PC_LOCAL_SYNTHETIC_STATIC",
+  "state": "VERIFY_NOT_READY",
+  "script": {
+    "name": "t020_e23_typed_projection_gate_20261029_01H.py",
+    "sha256": "73182ABD6C920B37BA7FD5F522657633C949ABD0F83FD37A57CECFC2D90909A8",
+    "readback": "SUCCESS_165_LINES"
+  },
+  "report": {
+    "name": "T020_E23_TYPED_PROJECTION_JSON_CONFORMANCE_AUDIT_20261029_01H.md",
+    "sha256": "3B7F2E63FB67BDCE349E8BB4C92FF723EDBAC935C93A961C08066D5F453674B0",
+    "readback": "SUCCESS_31_LINES"
+  },
+  "tests": {
+    "new": {
+      "passed": 28,
+      "total": 28
+    },
+    "cross_run": {
+      "passed": 92,
+      "total": 92
+    },
+    "includes": [
+      "01H new28",
+      "00H20",
+      "23H20",
+      "22H24"
+    ],
+    "native_gameplay_executed": false
+  },
+  "actual_golden_pass": 0,
+  "strict_match": 0,
+  "dynamic_observed": 0,
+  "ready_integrated_ids": [],
+  "master_checkpoint_last_verified": 196,
+  "master_checkpoint_is_current": false,
+  "offline_unsynced": true,
+  "safety_refusal_new": 0,
+  "next": "Legally captured G0/G1/G2; E21 source bytes available on PC for type-strict projection; verify current MASTER and dedup before integration."
+}
