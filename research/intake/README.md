@@ -230,3 +230,15 @@ Reviewed source: [REA Draft PR #16](https://github.com/ButaMonky/Hakushin067-Res
 | `REA-LOCAL-20261024-0541-P0-RESET-REBUILD-F720-STATIC-01` | `9D3E9BC4387B36DD9F8AE3AD3DE3C4EC545C94DBA18177A29BA10814B9DBB4BA` | `0x48F9E0` reset, `0x498E60/0x498F90/0x476830` rebuilding and `0x48F720` after rebuild; 06H input-range and 09H key-zero limits remain VERIFY. |
 
 Source-PE SHA256 `E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187`; original native byte checks 49/49, 05H E8 13/13 plus 03H seven direct calls 7/7, selected Capstone decode. 02H predecessor remains existing CURATED_STATIC (not recounted). No original-game Golden run, strict MATCH, G4 external-result commit, READY, or new REA five-method VERIFIED. Next cursor: **04H provenance -> 06H input ABI -> 09H key-zero correction**, then remaining older REA owner IDs, without replaying protected/safety-held work.
+
+## 2026-11-02 B/T013 historical comparator, mode setter and later producer (curator)
+
+Three existing owner IDs were ingested byte-for-byte from [B PR #18](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18), source head `4fdd9901b1413972d201716bcd44d77b031e7b6d`, after original PC source report SHA **3/3** and unchanged ver0.67 PE/native-window checks. The independently reviewed x86 subsets below are [CURATED_STATIC in REF_BATTLE_AI_MORALE.md](../../REF_BATTLE_AI_MORALE.md); owner intake texts themselves do not assert Golden or READY.
+
+| Existing B owner ID | Develop intake source | CURATED_STATIC native scope / remaining VERIFY |
+| --- | --- | --- |
+| `B-20261023-20H-T013-TROOP-SORT-1BC-NATIVE-01` | [signed comparator](B/B-20261023-20H-T013-TROOP-SORT-1BC-NATIVE-01.md) | `0x567EC0` signed `+0x1BC` SETL and two callback sort E8 sites; object meaning/ties/full ordering VERIFY. |
+| `B-20261023-22H-T013-TROOP-FORM-MODE-SETTER-01` | [mode setter](B/B-20261023-22H-T013-TROOP-FORM-MODE-SETTER-01.md) | `0x569530` writes `+0x30`, empty-member return, first qualifying `+0x1867C==0` path to `0x569730`; actual game movement VERIFY. |
+| `B-20261023-2317-T013-TROOP-MODE-SOURCE-CASE8-01` | [later producer crosswalk](B/B-20261023-2317-T013-TROOP-MODE-SOURCE-CASE8-01.md) | `0x4B5976/7E/81` signed `>2` exclusion and local candidate/identity gate before setter call `0x4B5A00`; all possible runtime modes VERIFY. |
+
+**Dedup and next cursor:** earlier 18H/19:15/21H B reports describe precursor/successor machinery and are NOT three extra CURATED discoveries. The 23:17 ID adds source provenance, not a new setter function. Remaining B/T013 source IDs, B/T024 and legacy REA/E are queued by ID+SHA+correction; protected VA, denied payloads and original-game assets stay untouched. No real-game Golden PASS or strict MATCH was run.
