@@ -1,0 +1,55 @@
+{
+  "research_id": "E-AUDIT-20261030-14H-T020-T013-MODE2-PRIMARY-GATE-01",
+  "owner": "E",
+  "task": "T020",
+  "state": "STATIC / SYNTHETIC EXECUTED / VERIFY / NOT READY",
+  "source": "B-20261030-14H-T013-MODE2-PRIMARY-UNIT-MODE3-GATE-01",
+  "original_gameplay": "NOT_RUN",
+  "synthetic_cases": {
+    "total": 42,
+    "model": 32,
+    "negative": 10,
+    "passed": 42,
+    "independent_rerun": "PASS"
+  },
+  "native": {
+    "pe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+    "window_sha_pass": 2,
+    "direct_e8_call_pass": 1
+  },
+  "artifacts": [
+    {
+      "filename": "t020_e_t013_mode2_primary_gate_20261030_14H.py",
+      "bytes": 4770,
+      "sha256": "00043E516DFA388E8D38EA5F2932060D604C13909FD7681DCCD82242C9AFADC4"
+    },
+    {
+      "filename": "T020_E_T013_MODE2_PRIMARY_CASES_20261030_14H.json",
+      "bytes": 9571,
+      "sha256": "BB678931E47371D439E352742E0B0382AEA8FF89013BF2FA69E146B8543E6E3C"
+    },
+    {
+      "filename": "T020_E_T013_MODE2_PRIMARY_ACCEPTANCE_20261030_14H.md",
+      "bytes": 3849,
+      "sha256": "FE975A5849A0121192F4FDABE7482B29C7F1234EBF14A2B4EE9F25DB61E5C87B"
+    }
+  ],
+  "master": {
+    "official_checkpoint_last_confirmed": 196,
+    "ready_last_confirmed": 596,
+    "ready_added": 0,
+    "task_state_previous": {
+      "done": 9,
+      "in_progress": 21,
+      "verify": 4
+    }
+  },
+  "golden": {
+    "dynamic_observed": 0,
+    "actual_pass": 0,
+    "strict_match": 0
+  },
+  "unsynced": "legacy OFFLINE-UNSYNCED complete reconciliation NOT DONE",
+  "blocked": "Prior safety refusals unchanged; zero retries or bypasses",
+  "next": "Validate mode2 scratch-nonzero 0x44BEC5; old legal same-run G0/G1/G2"
+}
