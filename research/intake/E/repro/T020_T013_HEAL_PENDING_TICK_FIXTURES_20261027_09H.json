@@ -1,0 +1,15 @@
+{
+  "source_id": "B-20261027-09H-T013-HEAL-DEFERRED-TICK-DISPATCH-01",
+  "exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "status": "STATIC_SYNTHETIC_VERIFY_NOT_READY_NOT_GAMEPLAY",
+  "cases": [
+    {"id":"A0_active_unblocked","active":["heal:a"],"pending":[],"task_plus8":0,"task_plus14":0,"expected_heal_candidates":["heal:a"]},
+    {"id":"A1_flag8_blocked","active":["heal:a"],"pending":[],"task_plus8":1,"task_plus14":0,"expected_heal_candidates":[]},
+    {"id":"A2_flag14_blocked","active":["heal:a"],"pending":[],"task_plus8":0,"task_plus14":1,"expected_heal_candidates":[]},
+    {"id":"A3_both_blocked","active":["heal:a"],"pending":[],"task_plus8":1,"task_plus14":1,"expected_heal_candidates":[]},
+    {"id":"P1_pending_only","active":[],"pending":["heal:deferred"],"task_plus8":0,"task_plus14":0,"expected_heal_candidates":[]},
+    {"id":"P2_active_and_pending","active":["heal:existing"],"pending":["heal:new"],"task_plus8":0,"task_plus14":0,"expected_heal_candidates":["heal:existing"]},
+    {"id":"N1_null_slot","active":[null,"heal:a"],"pending":[],"task_plus8":0,"task_plus14":0,"expected_heal_candidates":["heal:a"]},
+    {"id":"N2_other_object","active":["other:unresolved"],"pending":[],"task_plus8":0,"task_plus14":0,"expected_heal_candidates":[]}
+  ]
+}
