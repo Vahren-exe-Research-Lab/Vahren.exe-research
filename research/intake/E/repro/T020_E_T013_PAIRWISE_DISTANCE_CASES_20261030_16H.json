@@ -1,0 +1,691 @@
+{
+  "research_id": "E-AUDIT-20261030-16H-T020-T013-PAIRWISE-DISTANCE-01",
+  "source_kind": "STATIC_SYNTHETIC",
+  "original_game": "NOT_RUN",
+  "cases": [
+    {
+      "id": "D00-0",
+      "kind": "prehelper",
+      "a": [
+        0,
+        0
+      ],
+      "b": [
+        3,
+        4
+      ],
+      "expect_signed_i32": 25
+    },
+    {
+      "id": "D00-1",
+      "kind": "prehelper",
+      "a": [
+        3,
+        4
+      ],
+      "b": [
+        0,
+        0
+      ],
+      "expect_signed_i32": 25
+    },
+    {
+      "id": "D01-0",
+      "kind": "prehelper",
+      "a": [
+        3,
+        4
+      ],
+      "b": [
+        0,
+        0
+      ],
+      "expect_signed_i32": 25
+    },
+    {
+      "id": "D01-1",
+      "kind": "prehelper",
+      "a": [
+        0,
+        0
+      ],
+      "b": [
+        3,
+        4
+      ],
+      "expect_signed_i32": 25
+    },
+    {
+      "id": "D02-0",
+      "kind": "prehelper",
+      "a": [
+        0,
+        0
+      ],
+      "b": [
+        0,
+        5
+      ],
+      "expect_signed_i32": 25
+    },
+    {
+      "id": "D02-1",
+      "kind": "prehelper",
+      "a": [
+        0,
+        5
+      ],
+      "b": [
+        0,
+        0
+      ],
+      "expect_signed_i32": 25
+    },
+    {
+      "id": "D03-0",
+      "kind": "prehelper",
+      "a": [
+        1,
+        1
+      ],
+      "b": [
+        -1,
+        -1
+      ],
+      "expect_signed_i32": 8
+    },
+    {
+      "id": "D03-1",
+      "kind": "prehelper",
+      "a": [
+        -1,
+        -1
+      ],
+      "b": [
+        1,
+        1
+      ],
+      "expect_signed_i32": 8
+    },
+    {
+      "id": "D04-0",
+      "kind": "prehelper",
+      "a": [
+        0,
+        0
+      ],
+      "b": [
+        46340,
+        0
+      ],
+      "expect_signed_i32": 2147395600
+    },
+    {
+      "id": "D04-1",
+      "kind": "prehelper",
+      "a": [
+        46340,
+        0
+      ],
+      "b": [
+        0,
+        0
+      ],
+      "expect_signed_i32": 2147395600
+    },
+    {
+      "id": "D05-0",
+      "kind": "prehelper",
+      "a": [
+        0,
+        0
+      ],
+      "b": [
+        46341,
+        0
+      ],
+      "expect_signed_i32": -2147479015
+    },
+    {
+      "id": "D05-1",
+      "kind": "prehelper",
+      "a": [
+        46341,
+        0
+      ],
+      "b": [
+        0,
+        0
+      ],
+      "expect_signed_i32": -2147479015
+    },
+    {
+      "id": "D06-0",
+      "kind": "prehelper",
+      "a": [
+        0,
+        0
+      ],
+      "b": [
+        65535,
+        0
+      ],
+      "expect_signed_i32": -131071
+    },
+    {
+      "id": "D06-1",
+      "kind": "prehelper",
+      "a": [
+        65535,
+        0
+      ],
+      "b": [
+        0,
+        0
+      ],
+      "expect_signed_i32": -131071
+    },
+    {
+      "id": "D07-0",
+      "kind": "prehelper",
+      "a": [
+        0,
+        0
+      ],
+      "b": [
+        65536,
+        0
+      ],
+      "expect_signed_i32": 0
+    },
+    {
+      "id": "D07-1",
+      "kind": "prehelper",
+      "a": [
+        65536,
+        0
+      ],
+      "b": [
+        0,
+        0
+      ],
+      "expect_signed_i32": 0
+    },
+    {
+      "id": "D08-0",
+      "kind": "prehelper",
+      "a": [
+        0,
+        0
+      ],
+      "b": [
+        -65536,
+        0
+      ],
+      "expect_signed_i32": 0
+    },
+    {
+      "id": "D08-1",
+      "kind": "prehelper",
+      "a": [
+        -65536,
+        0
+      ],
+      "b": [
+        0,
+        0
+      ],
+      "expect_signed_i32": 0
+    },
+    {
+      "id": "D09-0",
+      "kind": "prehelper",
+      "a": [
+        -2147483648,
+        0
+      ],
+      "b": [
+        2147483647,
+        0
+      ],
+      "expect_signed_i32": 1
+    },
+    {
+      "id": "D09-1",
+      "kind": "prehelper",
+      "a": [
+        2147483647,
+        0
+      ],
+      "b": [
+        -2147483648,
+        0
+      ],
+      "expect_signed_i32": 1
+    },
+    {
+      "id": "D10-0",
+      "kind": "prehelper",
+      "a": [
+        2147483647,
+        2147483647
+      ],
+      "b": [
+        -2147483648,
+        -2147483648
+      ],
+      "expect_signed_i32": 2
+    },
+    {
+      "id": "D10-1",
+      "kind": "prehelper",
+      "a": [
+        -2147483648,
+        -2147483648
+      ],
+      "b": [
+        2147483647,
+        2147483647
+      ],
+      "expect_signed_i32": 2
+    },
+    {
+      "id": "D11-0",
+      "kind": "prehelper",
+      "a": [
+        0,
+        0
+      ],
+      "b": [
+        100000,
+        100000
+      ],
+      "expect_signed_i32": -1474836480
+    },
+    {
+      "id": "D11-1",
+      "kind": "prehelper",
+      "a": [
+        100000,
+        100000
+      ],
+      "b": [
+        0,
+        0
+      ],
+      "expect_signed_i32": -1474836480
+    },
+    {
+      "id": "G000",
+      "kind": "reverse_gate",
+      "manager_a7": 0,
+      "first_1a4": 0,
+      "second_1a4": 0,
+      "expected": false
+    },
+    {
+      "id": "G001",
+      "kind": "reverse_gate",
+      "manager_a7": 0,
+      "first_1a4": 0,
+      "second_1a4": 1,
+      "expected": false
+    },
+    {
+      "id": "G002",
+      "kind": "reverse_gate",
+      "manager_a7": 0,
+      "first_1a4": 0,
+      "second_1a4": 2,
+      "expected": false
+    },
+    {
+      "id": "G010",
+      "kind": "reverse_gate",
+      "manager_a7": 0,
+      "first_1a4": 1,
+      "second_1a4": 0,
+      "expected": false
+    },
+    {
+      "id": "G011",
+      "kind": "reverse_gate",
+      "manager_a7": 0,
+      "first_1a4": 1,
+      "second_1a4": 1,
+      "expected": false
+    },
+    {
+      "id": "G012",
+      "kind": "reverse_gate",
+      "manager_a7": 0,
+      "first_1a4": 1,
+      "second_1a4": 2,
+      "expected": false
+    },
+    {
+      "id": "G020",
+      "kind": "reverse_gate",
+      "manager_a7": 0,
+      "first_1a4": 2,
+      "second_1a4": 0,
+      "expected": false
+    },
+    {
+      "id": "G021",
+      "kind": "reverse_gate",
+      "manager_a7": 0,
+      "first_1a4": 2,
+      "second_1a4": 1,
+      "expected": false
+    },
+    {
+      "id": "G022",
+      "kind": "reverse_gate",
+      "manager_a7": 0,
+      "first_1a4": 2,
+      "second_1a4": 2,
+      "expected": false
+    },
+    {
+      "id": "G100",
+      "kind": "reverse_gate",
+      "manager_a7": 1,
+      "first_1a4": 0,
+      "second_1a4": 0,
+      "expected": false
+    },
+    {
+      "id": "G101",
+      "kind": "reverse_gate",
+      "manager_a7": 1,
+      "first_1a4": 0,
+      "second_1a4": 1,
+      "expected": false
+    },
+    {
+      "id": "G102",
+      "kind": "reverse_gate",
+      "manager_a7": 1,
+      "first_1a4": 0,
+      "second_1a4": 2,
+      "expected": true
+    },
+    {
+      "id": "G110",
+      "kind": "reverse_gate",
+      "manager_a7": 1,
+      "first_1a4": 1,
+      "second_1a4": 0,
+      "expected": false
+    },
+    {
+      "id": "G111",
+      "kind": "reverse_gate",
+      "manager_a7": 1,
+      "first_1a4": 1,
+      "second_1a4": 1,
+      "expected": false
+    },
+    {
+      "id": "G112",
+      "kind": "reverse_gate",
+      "manager_a7": 1,
+      "first_1a4": 1,
+      "second_1a4": 2,
+      "expected": false
+    },
+    {
+      "id": "G120",
+      "kind": "reverse_gate",
+      "manager_a7": 1,
+      "first_1a4": 2,
+      "second_1a4": 0,
+      "expected": false
+    },
+    {
+      "id": "G121",
+      "kind": "reverse_gate",
+      "manager_a7": 1,
+      "first_1a4": 2,
+      "second_1a4": 1,
+      "expected": false
+    },
+    {
+      "id": "G122",
+      "kind": "reverse_gate",
+      "manager_a7": 1,
+      "first_1a4": 2,
+      "second_1a4": 2,
+      "expected": false
+    },
+    {
+      "id": "C00",
+      "kind": "same_prehelper_key",
+      "a": [
+        0,
+        0
+      ],
+      "b": [
+        3,
+        4
+      ],
+      "c": [
+        0,
+        0
+      ],
+      "d": [
+        0,
+        5
+      ],
+      "expected_collision_potential": true
+    },
+    {
+      "id": "C01",
+      "kind": "same_prehelper_key",
+      "a": [
+        0,
+        0
+      ],
+      "b": [
+        5,
+        0
+      ],
+      "c": [
+        0,
+        0
+      ],
+      "d": [
+        0,
+        -5
+      ],
+      "expected_collision_potential": true
+    },
+    {
+      "id": "C02",
+      "kind": "same_prehelper_key",
+      "a": [
+        0,
+        0
+      ],
+      "b": [
+        1,
+        1
+      ],
+      "c": [
+        0,
+        0
+      ],
+      "d": [
+        -1,
+        -1
+      ],
+      "expected_collision_potential": true
+    },
+    {
+      "id": "C03",
+      "kind": "same_prehelper_key",
+      "a": [
+        0,
+        0
+      ],
+      "b": [
+        65536,
+        0
+      ],
+      "c": [
+        0,
+        0
+      ],
+      "d": [
+        0,
+        0
+      ],
+      "expected_collision_potential": true
+    },
+    {
+      "id": "C04",
+      "kind": "same_prehelper_key",
+      "a": [
+        0,
+        0
+      ],
+      "b": [
+        -65536,
+        0
+      ],
+      "c": [
+        0,
+        0
+      ],
+      "d": [
+        0,
+        0
+      ],
+      "expected_collision_potential": true
+    },
+    {
+      "id": "C05",
+      "kind": "same_prehelper_key",
+      "a": [
+        0,
+        0
+      ],
+      "b": [
+        3,
+        -4
+      ],
+      "c": [
+        0,
+        0
+      ],
+      "d": [
+        -3,
+        4
+      ],
+      "expected_collision_potential": true
+    },
+    {
+      "id": "C06",
+      "kind": "same_prehelper_key",
+      "a": [
+        1,
+        1
+      ],
+      "b": [
+        4,
+        5
+      ],
+      "c": [
+        1,
+        1
+      ],
+      "d": [
+        1,
+        6
+      ],
+      "expected_collision_potential": true
+    },
+    {
+      "id": "C07",
+      "kind": "same_prehelper_key",
+      "a": [
+        0,
+        0
+      ],
+      "b": [
+        0,
+        0
+      ],
+      "c": [
+        1,
+        1
+      ],
+      "d": [
+        1,
+        1
+      ],
+      "expected_collision_potential": true
+    },
+    {
+      "id": "N00",
+      "kind": "unsupported_claim",
+      "claim": "square_root_proven",
+      "must_reject": true
+    },
+    {
+      "id": "N01",
+      "kind": "unsupported_claim",
+      "claim": "distance_is_unbounded_python_int",
+      "must_reject": true
+    },
+    {
+      "id": "N02",
+      "kind": "unsupported_claim",
+      "claim": "same_key_always_retains_both_nodes",
+      "must_reject": true
+    },
+    {
+      "id": "N03",
+      "kind": "unsupported_claim",
+      "claim": "inverse_payload_always_inserted",
+      "must_reject": true
+    },
+    {
+      "id": "N04",
+      "kind": "unsupported_claim",
+      "claim": "the_two_temporary_trees_have_proven_roles",
+      "must_reject": true
+    },
+    {
+      "id": "N05",
+      "kind": "unsupported_claim",
+      "claim": "source_and_target_interchangeable",
+      "must_reject": true
+    },
+    {
+      "id": "N06",
+      "kind": "unsupported_claim",
+      "claim": "manager_a7_gameplay_meaning_known",
+      "must_reject": true
+    },
+    {
+      "id": "N07",
+      "kind": "unsupported_claim",
+      "claim": "final_target_fixed_at_44C2D3",
+      "must_reject": true
+    },
+    {
+      "id": "N08",
+      "kind": "unsupported_claim",
+      "claim": "original_gameplay_pass_from_static",
+      "must_reject": true
+    },
+    {
+      "id": "N09",
+      "kind": "unsupported_claim",
+      "claim": "strict_golden_without_unmodified_SAVE_SHA",
+      "must_reject": true
+    }
+  ]
+}
