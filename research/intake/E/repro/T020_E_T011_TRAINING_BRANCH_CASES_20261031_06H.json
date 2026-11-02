@@ -1,0 +1,2815 @@
+{
+  "research_id": "E-AUDIT-20261031-06H-T020-T011-TRAINING-COUNT-GATE-01",
+  "status": "SYNTHETIC/VERIFY/NOT_READY",
+  "source_id": "B-20261031-06H-T011-TRAINING-COUNT-PROVENANCE-01",
+  "cases": [
+    {
+      "power": -3,
+      "scenario": -3,
+      "path": "NONE",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": -3,
+      "scenario": -3,
+      "path": "NONE",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": 0,
+        "positive": false
+      }
+    },
+    {
+      "power": -3,
+      "scenario": -3,
+      "path": "NONE",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": -3,
+      "scenario": -3,
+      "path": "NONE",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": 0,
+        "positive": false
+      }
+    },
+    {
+      "power": -3,
+      "scenario": -3,
+      "path": "NONE",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": -3,
+      "scenario": -3,
+      "path": "NONE",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": 0,
+        "positive": false
+      }
+    },
+    {
+      "power": -3,
+      "scenario": -3,
+      "path": "DIRECT",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": -3,
+      "scenario": -3,
+      "path": "DIRECT",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": -3,
+        "positive": false
+      }
+    },
+    {
+      "power": -3,
+      "scenario": -3,
+      "path": "DIRECT",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": -3,
+      "scenario": -3,
+      "path": "DIRECT",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": 0,
+        "positive": false
+      }
+    },
+    {
+      "power": -3,
+      "scenario": -3,
+      "path": "DIRECT",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": -3,
+      "scenario": -3,
+      "path": "DIRECT",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": 4,
+        "positive": true
+      }
+    },
+    {
+      "power": -3,
+      "scenario": -3,
+      "path": "TRAINING",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": -3,
+      "scenario": -3,
+      "path": "TRAINING",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": -3,
+        "positive": false
+      }
+    },
+    {
+      "power": -3,
+      "scenario": -3,
+      "path": "TRAINING",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": -3,
+      "scenario": -3,
+      "path": "TRAINING",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": 0,
+        "positive": false
+      }
+    },
+    {
+      "power": -3,
+      "scenario": -3,
+      "path": "TRAINING",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": -3,
+      "scenario": -3,
+      "path": "TRAINING",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": 4,
+        "positive": true
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 0,
+      "path": "NONE",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 0,
+      "path": "NONE",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": 0,
+        "positive": false
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 0,
+      "path": "NONE",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 0,
+      "path": "NONE",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": 0,
+        "positive": false
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 0,
+      "path": "NONE",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 0,
+      "path": "NONE",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": 0,
+        "positive": false
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 0,
+      "path": "DIRECT",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 0,
+      "path": "DIRECT",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": -3,
+        "positive": false
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 0,
+      "path": "DIRECT",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 0,
+      "path": "DIRECT",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": 0,
+        "positive": false
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 0,
+      "path": "DIRECT",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 0,
+      "path": "DIRECT",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": 4,
+        "positive": true
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 0,
+      "path": "TRAINING",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 0,
+      "path": "TRAINING",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": -3,
+        "positive": false
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 0,
+      "path": "TRAINING",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 0,
+      "path": "TRAINING",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": 0,
+        "positive": false
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 0,
+      "path": "TRAINING",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 0,
+      "path": "TRAINING",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": 4,
+        "positive": true
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 2,
+      "path": "NONE",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 2,
+      "path": "NONE",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": 0,
+        "positive": false
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 2,
+      "path": "NONE",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 2,
+      "path": "NONE",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": 0,
+        "positive": false
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 2,
+      "path": "NONE",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 2,
+      "path": "NONE",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": 0,
+        "positive": false
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 2,
+      "path": "DIRECT",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 2,
+      "path": "DIRECT",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": -3,
+        "positive": false
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 2,
+      "path": "DIRECT",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 2,
+      "path": "DIRECT",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": 0,
+        "positive": false
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 2,
+      "path": "DIRECT",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 2,
+      "path": "DIRECT",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": 4,
+        "positive": true
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 2,
+      "path": "TRAINING",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 2,
+      "path": "TRAINING",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": -3,
+        "positive": false
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 2,
+      "path": "TRAINING",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 2,
+      "path": "TRAINING",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": 0,
+        "positive": false
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 2,
+      "path": "TRAINING",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": -3,
+      "scenario": 2,
+      "path": "TRAINING",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": 4,
+        "positive": true
+      }
+    },
+    {
+      "power": 0,
+      "scenario": -3,
+      "path": "NONE",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 0,
+      "scenario": -3,
+      "path": "NONE",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": 0,
+        "positive": false
+      }
+    },
+    {
+      "power": 0,
+      "scenario": -3,
+      "path": "NONE",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 0,
+      "scenario": -3,
+      "path": "NONE",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": 0,
+        "positive": false
+      }
+    },
+    {
+      "power": 0,
+      "scenario": -3,
+      "path": "NONE",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 0,
+      "scenario": -3,
+      "path": "NONE",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": 0,
+        "positive": false
+      }
+    },
+    {
+      "power": 0,
+      "scenario": -3,
+      "path": "DIRECT",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 0,
+      "scenario": -3,
+      "path": "DIRECT",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": -3,
+        "positive": false
+      }
+    },
+    {
+      "power": 0,
+      "scenario": -3,
+      "path": "DIRECT",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 0,
+      "scenario": -3,
+      "path": "DIRECT",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": 0,
+        "positive": false
+      }
+    },
+    {
+      "power": 0,
+      "scenario": -3,
+      "path": "DIRECT",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 0,
+      "scenario": -3,
+      "path": "DIRECT",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": 4,
+        "positive": true
+      }
+    },
+    {
+      "power": 0,
+      "scenario": -3,
+      "path": "TRAINING",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 0,
+      "scenario": -3,
+      "path": "TRAINING",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": -3,
+        "positive": false
+      }
+    },
+    {
+      "power": 0,
+      "scenario": -3,
+      "path": "TRAINING",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 0,
+      "scenario": -3,
+      "path": "TRAINING",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": 0,
+        "positive": false
+      }
+    },
+    {
+      "power": 0,
+      "scenario": -3,
+      "path": "TRAINING",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 0,
+      "scenario": -3,
+      "path": "TRAINING",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 0,
+        "count": 4,
+        "positive": true
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 0,
+      "path": "NONE",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 0,
+      "path": "NONE",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": 1,
+        "positive": true
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 0,
+      "path": "NONE",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 0,
+      "path": "NONE",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": 1,
+        "positive": true
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 0,
+      "path": "NONE",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 0,
+      "path": "NONE",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": 1,
+        "positive": true
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 0,
+      "path": "DIRECT",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 0,
+      "path": "DIRECT",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": -2,
+        "positive": false
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 0,
+      "path": "DIRECT",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 0,
+      "path": "DIRECT",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": 1,
+        "positive": true
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 0,
+      "path": "DIRECT",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 0,
+      "path": "DIRECT",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": 5,
+        "positive": true
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 0,
+      "path": "TRAINING",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 0,
+      "path": "TRAINING",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": -2,
+        "positive": false
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 0,
+      "path": "TRAINING",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 0,
+      "path": "TRAINING",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": 1,
+        "positive": true
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 0,
+      "path": "TRAINING",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 0,
+      "path": "TRAINING",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": 5,
+        "positive": true
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 2,
+      "path": "NONE",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 2,
+      "path": "NONE",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": 2,
+        "positive": true
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 2,
+      "path": "NONE",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 2,
+      "path": "NONE",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": 2,
+        "positive": true
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 2,
+      "path": "NONE",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 2,
+      "path": "NONE",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": 2,
+        "positive": true
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 2,
+      "path": "DIRECT",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 2,
+      "path": "DIRECT",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": -1,
+        "positive": false
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 2,
+      "path": "DIRECT",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 2,
+      "path": "DIRECT",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": 2,
+        "positive": true
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 2,
+      "path": "DIRECT",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 2,
+      "path": "DIRECT",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": 6,
+        "positive": true
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 2,
+      "path": "TRAINING",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 2,
+      "path": "TRAINING",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": -1,
+        "positive": false
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 2,
+      "path": "TRAINING",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 2,
+      "path": "TRAINING",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": 2,
+        "positive": true
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 2,
+      "path": "TRAINING",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 0,
+      "scenario": 2,
+      "path": "TRAINING",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": 6,
+        "positive": true
+      }
+    },
+    {
+      "power": 1,
+      "scenario": -3,
+      "path": "NONE",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 1,
+      "scenario": -3,
+      "path": "NONE",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": 1,
+        "positive": true
+      }
+    },
+    {
+      "power": 1,
+      "scenario": -3,
+      "path": "NONE",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 1,
+      "scenario": -3,
+      "path": "NONE",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": 1,
+        "positive": true
+      }
+    },
+    {
+      "power": 1,
+      "scenario": -3,
+      "path": "NONE",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 1,
+      "scenario": -3,
+      "path": "NONE",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": 1,
+        "positive": true
+      }
+    },
+    {
+      "power": 1,
+      "scenario": -3,
+      "path": "DIRECT",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 1,
+      "scenario": -3,
+      "path": "DIRECT",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": -2,
+        "positive": false
+      }
+    },
+    {
+      "power": 1,
+      "scenario": -3,
+      "path": "DIRECT",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 1,
+      "scenario": -3,
+      "path": "DIRECT",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": 1,
+        "positive": true
+      }
+    },
+    {
+      "power": 1,
+      "scenario": -3,
+      "path": "DIRECT",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 1,
+      "scenario": -3,
+      "path": "DIRECT",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": 5,
+        "positive": true
+      }
+    },
+    {
+      "power": 1,
+      "scenario": -3,
+      "path": "TRAINING",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 1,
+      "scenario": -3,
+      "path": "TRAINING",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": -2,
+        "positive": false
+      }
+    },
+    {
+      "power": 1,
+      "scenario": -3,
+      "path": "TRAINING",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 1,
+      "scenario": -3,
+      "path": "TRAINING",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": 1,
+        "positive": true
+      }
+    },
+    {
+      "power": 1,
+      "scenario": -3,
+      "path": "TRAINING",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 1,
+      "scenario": -3,
+      "path": "TRAINING",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": 5,
+        "positive": true
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 0,
+      "path": "NONE",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 0,
+      "path": "NONE",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": 1,
+        "positive": true
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 0,
+      "path": "NONE",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 0,
+      "path": "NONE",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": 1,
+        "positive": true
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 0,
+      "path": "NONE",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 0,
+      "path": "NONE",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": 1,
+        "positive": true
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 0,
+      "path": "DIRECT",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 0,
+      "path": "DIRECT",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": -2,
+        "positive": false
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 0,
+      "path": "DIRECT",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 0,
+      "path": "DIRECT",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": 1,
+        "positive": true
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 0,
+      "path": "DIRECT",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 0,
+      "path": "DIRECT",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": 5,
+        "positive": true
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 0,
+      "path": "TRAINING",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 0,
+      "path": "TRAINING",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": -2,
+        "positive": false
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 0,
+      "path": "TRAINING",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 0,
+      "path": "TRAINING",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": 1,
+        "positive": true
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 0,
+      "path": "TRAINING",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 0,
+      "path": "TRAINING",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": 5,
+        "positive": true
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 2,
+      "path": "NONE",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 2,
+      "path": "NONE",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": 1,
+        "positive": true
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 2,
+      "path": "NONE",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 2,
+      "path": "NONE",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": 1,
+        "positive": true
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 2,
+      "path": "NONE",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 2,
+      "path": "NONE",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": 1,
+        "positive": true
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 2,
+      "path": "DIRECT",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 2,
+      "path": "DIRECT",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": -2,
+        "positive": false
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 2,
+      "path": "DIRECT",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 2,
+      "path": "DIRECT",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": 1,
+        "positive": true
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 2,
+      "path": "DIRECT",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 2,
+      "path": "DIRECT",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": 5,
+        "positive": true
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 2,
+      "path": "TRAINING",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 2,
+      "path": "TRAINING",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": -2,
+        "positive": false
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 2,
+      "path": "TRAINING",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 2,
+      "path": "TRAINING",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": 1,
+        "positive": true
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 2,
+      "path": "TRAINING",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 1,
+      "scenario": 2,
+      "path": "TRAINING",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 1,
+        "count": 5,
+        "positive": true
+      }
+    },
+    {
+      "power": 2,
+      "scenario": -3,
+      "path": "NONE",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 2,
+      "scenario": -3,
+      "path": "NONE",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": 2,
+        "positive": true
+      }
+    },
+    {
+      "power": 2,
+      "scenario": -3,
+      "path": "NONE",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 2,
+      "scenario": -3,
+      "path": "NONE",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": 2,
+        "positive": true
+      }
+    },
+    {
+      "power": 2,
+      "scenario": -3,
+      "path": "NONE",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 2,
+      "scenario": -3,
+      "path": "NONE",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": 2,
+        "positive": true
+      }
+    },
+    {
+      "power": 2,
+      "scenario": -3,
+      "path": "DIRECT",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 2,
+      "scenario": -3,
+      "path": "DIRECT",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": -1,
+        "positive": false
+      }
+    },
+    {
+      "power": 2,
+      "scenario": -3,
+      "path": "DIRECT",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 2,
+      "scenario": -3,
+      "path": "DIRECT",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": 2,
+        "positive": true
+      }
+    },
+    {
+      "power": 2,
+      "scenario": -3,
+      "path": "DIRECT",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 2,
+      "scenario": -3,
+      "path": "DIRECT",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": 6,
+        "positive": true
+      }
+    },
+    {
+      "power": 2,
+      "scenario": -3,
+      "path": "TRAINING",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 2,
+      "scenario": -3,
+      "path": "TRAINING",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": -1,
+        "positive": false
+      }
+    },
+    {
+      "power": 2,
+      "scenario": -3,
+      "path": "TRAINING",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 2,
+      "scenario": -3,
+      "path": "TRAINING",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": 2,
+        "positive": true
+      }
+    },
+    {
+      "power": 2,
+      "scenario": -3,
+      "path": "TRAINING",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 2,
+      "scenario": -3,
+      "path": "TRAINING",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": 6,
+        "positive": true
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 0,
+      "path": "NONE",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 0,
+      "path": "NONE",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": 2,
+        "positive": true
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 0,
+      "path": "NONE",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 0,
+      "path": "NONE",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": 2,
+        "positive": true
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 0,
+      "path": "NONE",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 0,
+      "path": "NONE",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": 2,
+        "positive": true
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 0,
+      "path": "DIRECT",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 0,
+      "path": "DIRECT",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": -1,
+        "positive": false
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 0,
+      "path": "DIRECT",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 0,
+      "path": "DIRECT",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": 2,
+        "positive": true
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 0,
+      "path": "DIRECT",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 0,
+      "path": "DIRECT",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": 6,
+        "positive": true
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 0,
+      "path": "TRAINING",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 0,
+      "path": "TRAINING",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": -1,
+        "positive": false
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 0,
+      "path": "TRAINING",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 0,
+      "path": "TRAINING",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": 2,
+        "positive": true
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 0,
+      "path": "TRAINING",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 0,
+      "path": "TRAINING",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": 6,
+        "positive": true
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 2,
+      "path": "NONE",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 2,
+      "path": "NONE",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": 2,
+        "positive": true
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 2,
+      "path": "NONE",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 2,
+      "path": "NONE",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": 2,
+        "positive": true
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 2,
+      "path": "NONE",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 2,
+      "path": "NONE",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": 2,
+        "positive": true
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 2,
+      "path": "DIRECT",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 2,
+      "path": "DIRECT",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": -1,
+        "positive": false
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 2,
+      "path": "DIRECT",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 2,
+      "path": "DIRECT",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": 2,
+        "positive": true
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 2,
+      "path": "DIRECT",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 2,
+      "path": "DIRECT",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": 6,
+        "positive": true
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 2,
+      "path": "TRAINING",
+      "modifier": -3,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 2,
+      "path": "TRAINING",
+      "modifier": -3,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": -1,
+        "positive": false
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 2,
+      "path": "TRAINING",
+      "modifier": 0,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 2,
+      "path": "TRAINING",
+      "modifier": 0,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": 2,
+        "positive": true
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 2,
+      "path": "TRAINING",
+      "modifier": 4,
+      "eligible": false,
+      "expected": {
+        "state": "EARLY_SKIP",
+        "base": null,
+        "count": null,
+        "positive": null
+      }
+    },
+    {
+      "power": 2,
+      "scenario": 2,
+      "path": "TRAINING",
+      "modifier": 4,
+      "eligible": true,
+      "expected": {
+        "state": "COUNT_REACHED",
+        "base": 2,
+        "count": 6,
+        "positive": true
+      }
+    }
+  ]
+}
