@@ -1,0 +1,98 @@
+{
+  "research_id": "E-AUDIT-20261029-16H-T020-ARCHIVED-CAPTURE-PROVENANCE-01",
+  "classification": "STATIC_ARCHIVED_BYTE_AUDIT_NOT_NATIVE_GOLDEN",
+  "records": [
+    {
+      "summary": "BATTLE_USER_20261021T153712415645Z_b9a0e3d6_SUMMARY.json",
+      "summary_sha256": "5F25014F8F14608013C07978ED68CD569138E4C73063E1A46076A8CFF2F61922",
+      "origin": "SYNTHETIC_CHILD_WIN32_READONLY",
+      "class_label": "SYNTHETIC_SELFTEST",
+      "raw_count": 1,
+      "failure_count": 0,
+      "listed_receipts": 1,
+      "event_log": "BATTLE_USER_20261021T153712415645Z_b9a0e3d6_EVENTS.jsonl",
+      "event_log_sha256": "6A2097B7C9A1508B105EE9AAC6F7BDE70D77B2336DAA5B200B9F255FE039D00A",
+      "full_g1_proven": false
+    },
+    {
+      "summary": "BATTLE_USER_20261021T154713970636Z_1e19867b_SUMMARY.json",
+      "summary_sha256": "C57FA886369FDD0EC99D5C69D963D2C31AD7A9F9036B29DAF326F6A22118112C",
+      "origin": "LIVE_ORIGINAL_READONLY",
+      "class_label": "LIVE_SOURCE_CLAIM",
+      "raw_count": 0,
+      "failure_count": 3,
+      "listed_receipts": 4,
+      "event_log": "BATTLE_USER_20261021T154713970636Z_1e19867b_EVENTS.jsonl",
+      "event_log_sha256": "DE2324FE19288DED824D5EF36362072557067F00F57DE392D6619B84871107F2",
+      "full_g1_proven": false
+    },
+    {
+      "summary": "BATTLE_USER_20261021T155737652304Z_853418a3_SUMMARY.json",
+      "summary_sha256": "E9C012F939A5AB74518D963828B917DFD83841355B0FA1ED9C15BFEB1C733AD1",
+      "origin": "SYNTHETIC_TASK_HOLES_CHILD_WIN32",
+      "class_label": "SYNTHETIC_SELFTEST",
+      "raw_count": 1,
+      "failure_count": 0,
+      "listed_receipts": 1,
+      "event_log": "BATTLE_USER_20261021T155737652304Z_853418a3_EVENTS.jsonl",
+      "event_log_sha256": "0B0DF236DC4BEDD4694FE688FBE93CAE0596102734DD72C3C082EC302FB6F3D1",
+      "full_g1_proven": false
+    },
+    {
+      "summary": "BATTLE_USER_20261021T155738116005Z_f31a10dd_SUMMARY.json",
+      "summary_sha256": "FE9D5646C5DB0142FBCCF7961675A091C1D3024EA8D24209371129B8BBCC7170",
+      "origin": "SYNTHETIC_TASK_HOLES_CHILD_WIN32",
+      "class_label": "SYNTHETIC_SELFTEST",
+      "raw_count": 1,
+      "failure_count": 0,
+      "listed_receipts": 1,
+      "event_log": "BATTLE_USER_20261021T155738116005Z_f31a10dd_EVENTS.jsonl",
+      "event_log_sha256": "231D08FDFAE7E58E3B4ED3D5E97B0A7E0A1CD5F27208C9A9A93F777236D22EDF",
+      "full_g1_proven": false
+    },
+    {
+      "summary": "BATTLE_USER_20261021T155738559198Z_26d34a1f_SUMMARY.json",
+      "summary_sha256": "FB4F8B33DE38519A3F4DCA7FCFB62E78FC1812B41930D8352CAF5E067A2575E4",
+      "origin": "SYNTHETIC_TASK_HOLES_CHILD_WIN32",
+      "class_label": "SYNTHETIC_SELFTEST",
+      "raw_count": 1,
+      "failure_count": 0,
+      "listed_receipts": 1,
+      "event_log": "BATTLE_USER_20261021T155738559198Z_26d34a1f_EVENTS.jsonl",
+      "event_log_sha256": "3EEA6E7D04E85573C71DB59B0795323A9A27B52DA25B2E636BE0F920C769A1F6",
+      "full_g1_proven": false
+    },
+    {
+      "summary": "BATTLE_USER_20261021T163100686424Z_9cddfc86_SUMMARY.json",
+      "summary_sha256": "51B05D0C964897B875F5F81B282CBEBB2DC46E674BA2EC0294E8017C0658CF7D",
+      "origin": "LIVE_ORIGINAL_READONLY",
+      "class_label": "LIVE_SOURCE_CLAIM",
+      "raw_count": 4,
+      "failure_count": 1,
+      "listed_receipts": 6,
+      "event_log": "BATTLE_USER_20261021T163100686424Z_9cddfc86_EVENTS.jsonl",
+      "event_log_sha256": "BDF3F4757D4E22C712432B788AF7FD7110736AF9A4E7E0F9521A7E0782A0DD26",
+      "full_g1_proven": false
+    },
+    {
+      "summary": "BATTLE_USER_20261021T164622798833Z_b8419f5d_SUMMARY.json",
+      "summary_sha256": "9E0FEC62DE5604E9BA991E155A629BDB2CE2969D293CBBA75A187AB3CF90568F",
+      "origin": "LIVE_ORIGINAL_READONLY",
+      "class_label": "LIVE_SOURCE_CLAIM",
+      "raw_count": 4,
+      "failure_count": 1,
+      "listed_receipts": 6,
+      "event_log": "BATTLE_USER_20261021T164622798833Z_b8419f5d_EVENTS.jsonl",
+      "event_log_sha256": "5B61ECAC3477EA762F951D8ADD74D751517402DA98D683BDFAE5CDDB801D62B9",
+      "full_g1_proven": false
+    }
+  ],
+  "errors": [],
+  "golden": {
+    "dynamic_observed": 0,
+    "actual_pass": 0,
+    "strict_match": 0
+  },
+  "ready_integrations": 0,
+  "note": "Archived summary claims plus source bytes; no new native observation or same-run G1/G2 proof."
+}
