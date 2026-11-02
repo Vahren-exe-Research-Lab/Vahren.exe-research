@@ -1,0 +1,110 @@
+{
+  "schema": "E_KB_CURATOR_DELTA_v1",
+  "research_id": "E-PC-20261101-2110-T018-T019-T020-KB-CURATOR-DELTA-01",
+  "owner": "E",
+  "tasks": [
+    "T018",
+    "T019",
+    "T020"
+  ],
+  "time_jst": "2026-11-01T21:10:00+09:00",
+  "classification": [
+    "STATIC_SOURCE_AUDIT",
+    "VERIFY",
+    "KB_CANDIDATE",
+    "NOT_READY"
+  ],
+  "github": {
+    "repository": "ButaMonky/Hakushin067-Research-Knowledge",
+    "visibility": "private",
+    "branch": "develop",
+    "observed_head": "66ba7dc2f96c6490221d5dd5aa3226d5b70c049a",
+    "catalog_blob_sha": "a8035045163df6daf71e824becb9bf0f013a3846",
+    "catalog_records": 1937,
+    "nov1_e_pc_catalog_records_17to20h": 6,
+    "nov1_e_offline_03to16h_catalog_records": 0,
+    "remote_pc_head_equal": "NOT_CHECKED"
+  },
+  "local_source_sha256": {
+    "MASTER_LEDGER.md": "E7329C9C6368E67BE191A4ABF45156319E32826FF039FB2B9E226DEDDAC6B6B3",
+    "tests/T018_GOLDEN_CORPUS.md": "CD79030E92A2091B0043E40B9C50473A92ACD3DF7FD4B3FA65CD52077DD9E120",
+    "wiki/T019_CONTRADICTIONS.md": "102AFAB94359902D5E74E4B8C55D06CD46269B85DB1B7D0A426FCDE2ED6FC25B",
+    "tests/T020_E_G012_OFFLINE_RECONCILIATION_20261101_17H.md": "F3014188EC9729B8786569CC1CD8A03585E601C46B3A14F9B594976E4A9637CA",
+    "tests/T020_E_OFFLINE_39_ADMISSION_TRIAGE_20261101_18H.md": "D7A4498270737DC4E756638758BCAB1B9FD0E1EBF68592614D85F08FE66B7245",
+    "tests/T020_E_KB_FINDABILITY_CROSSWALK_20261101_19H.md": "11FF3B1318C85E3748D811BB36EF83962CCF51AA9FAFEE697444150C96F0CF95",
+    "tests/T020_E_KB_CANDIDATE_HANDOFF_20261101_19H.json": "9B8D894C25219BB428C41FF827812A2E2BF33196EC49504A2324CC33407F44D8",
+    "tests/T020_E_G0_SAVE_RUN_SOURCE_SCOPE_CROSSWALK_20261101_20H.md": "21AD936F1A013F88E10E1FE05D51880708247DD1DADAEDB63FD1721DBA4D466F",
+    "tests/T020_E_G0_SAVE_RUN_SOURCE_SCOPE_RECEIPT_20261101_20H.json": "577CBDF041F32257C23D7182130F73CB3D447BE9CDF2D3BDE0917857966C9E2C"
+  },
+  "candidates": [
+    {
+      "id": "E21-KB-G012",
+      "owner": "E",
+      "tasks": [
+        "T018",
+        "T020"
+      ],
+      "source_ids": [
+        "E-PC-20261101-19H-T018-T019-T020-KB-FINDABILITY-CROSSWALK-01",
+        "E-PC-20261101-20H-T018-T019-T020-G012-SOURCE-ROLE-AUDIT-01"
+      ],
+      "proposed_entry": "E Golden G0-G2 provenance/acceptance source map",
+      "evidence": "STATIC/DESIGN/VERIFY",
+      "golden_pass": 0,
+      "ready": false
+    },
+    {
+      "id": "E21-KB-T019",
+      "owner": "E",
+      "tasks": [
+        "T019"
+      ],
+      "source_ids": [
+        "wiki/T019_CONTRADICTIONS.md"
+      ],
+      "proposed_entry": "GameClear corrected source-scope and unresolved runtime loader precedence",
+      "evidence": "STATIC/VERIFY",
+      "golden_pass": 0,
+      "ready": false
+    },
+    {
+      "id": "E21-KB-DISCOVERY",
+      "owner": "E",
+      "tasks": [
+        "T020"
+      ],
+      "source_ids": [
+        "E-PC-20261101-18H-T018-T019-T020-OFFLINE39-ADMISSION-TRIAGE-01"
+      ],
+      "proposed_entry": "Review OFFLINE-UNSYNCED 03-16H and dedupe prior 39-file 07-16H manifest before curated entry",
+      "evidence": "METADATA_ONLY/VERIFY",
+      "golden_pass": 0,
+      "ready": false
+    }
+  ],
+  "last_verified_master": {
+    "checkpoint": 196,
+    "ready": 596,
+    "task_counts": {
+      "DONE": 9,
+      "IN_PROGRESS": 21,
+      "VERIFY": 4
+    },
+    "new_ready_ids": []
+  },
+  "runtime": {
+    "e_dynamic_observed": 0,
+    "actual_golden_pass": 0,
+    "strict_match": 0,
+    "synthetic_new_executed": 0
+  },
+  "protected": {
+    "previous_refusals_retained": true,
+    "prohibited_va_revisited": false,
+    "other_owner_modified": false,
+    "shared_kb_modified": false,
+    "git_modified": false,
+    "schedule_modified": false
+  },
+  "next": "Dedicated knowledge curator compares private develop HEAD/local version/source ownership/IDs; E prioritizes lawful original same-battle G0/G1/G2 primary observation."
+}
