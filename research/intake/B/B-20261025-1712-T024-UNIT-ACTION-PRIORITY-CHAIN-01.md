@@ -1,0 +1,10 @@
+# B-20261025-1712-T024-UNIT-ACTION-PRIORITY-CHAIN-01 — B/T024 Unit update AL-short-circuit order
+Owner B/T024. Source data/T024_UNIT_ACTION_PRIORITY_CHAIN_NATIVE_20261025_17H.md; actual PC source SHA256 EE29A389EC1F526BD337E5D6ABB3ABEB23BB402BE4EF17D0C6810DA4F0F99FBF, 4642 bytes (read-only hash 2026-11-02). Analytical original PE SHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187.
+Status OWNER_PRIOR_NATIVE_STATIC / INFERRED / VERIFY, PUBLISHED_INTAKE after GitHub readback, NOT_CURATED; original gameplay Golden PASS=0, strict MATCH=0, formal READY newly 0. Historical source used old V3 but this run performed current V9 --inspect only: function 0x5263E0 has 1 native direct E8 caller and 11 native direct outgoing E8 sites; 0x527710 has 5 direct callers. Native ASM windows and action semantics NOT redecoded in this run.
+
+## Prior owner control flow (source section 0x005263E0)
+Optional 0x526401->0x4498E0, then 0x526406->0x527710 with AL nonzero short-circuit. Other conditional 0x526414->0x5205B0 path; downstream if eligible and candidate vector nonempty, 0x5264E1->0x5276C0, then if AL=0, 0x5264EB->0x526E50, then if AL=0, 0x5264F5->0x5271A0; failing all reaches 0x5264FF->0x526A40. Owner source describes region gate stride 0xB4 with length 0x10E0 (~24 items); an indirect PtInRect invocation must not be counted as native direct E8.
+Owner source 0x527710 describes Unit+0x430 sentinel, Unit+0x45D and state flag pair gates, followed by conditional coordinate/sentinel writes. These are static dataflow candidates and not guaranteed battle attack, move, firing or target selection; AL branch return and ABI/type remain VERIFY.
+
+## Prior/corrections/next
+Related B-20261022-0815-T024-T028-DUAL-CLOCK-01 covers the older time/entry chain; related follow-up B-20261025-1811-T024-AL0-STATE45D-SELECTOR-01 refines local gates. Do not double-count identical call chain. Validate permitted native branch sites and the conditional AL paths, then actual legal original-game visible next-tick action changes. No proof of death, EXP, external battle G4 commit or rollback. No denied VA/content or operations accessed.
