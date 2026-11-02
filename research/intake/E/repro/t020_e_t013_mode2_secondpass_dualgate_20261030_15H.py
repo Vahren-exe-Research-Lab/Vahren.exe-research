@@ -138,3 +138,4 @@ def run():
         checks=len(rows),groups=cnt,native=proof,fixture_sha256=digest(FIX.read_bytes()),
         dynamic_observed=0,actual_golden_pass=0,strict_match=0,new_ready=0),ensure_ascii=False))
 if __name__=="__main__": run()
+
