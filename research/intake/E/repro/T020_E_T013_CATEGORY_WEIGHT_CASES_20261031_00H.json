@@ -1,0 +1,701 @@
+{
+  "research_id": "E-AUDIT-20261031-00H-T020-T013-WEIGHT-RNG-ABSTRACT-01",
+  "owner": "E",
+  "task": "T020",
+  "status": "STATIC_SYNTHETIC_VERIFY_NOT_READY",
+  "source_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "source_b_note_sha256": "419771CB57F66152D8BD7AF92E69F0A40CDDFEF59F473F6290032D9499102CAA",
+  "native_sha_windows": 4,
+  "native_e8_calls": 12,
+  "gameplay_dynamic_observed": 0,
+  "actual_golden_pass": 0,
+  "strict_match": 0,
+  "cases": [
+    {
+      "id": "COEF-0",
+      "kind": "coefficient",
+      "category": 0,
+      "want": 120
+    },
+    {
+      "id": "COEF-1",
+      "kind": "coefficient",
+      "category": 1,
+      "want": 160
+    },
+    {
+      "id": "COEF-2",
+      "kind": "coefficient",
+      "category": 2,
+      "want": 160
+    },
+    {
+      "id": "COEF-3",
+      "kind": "coefficient",
+      "category": 3,
+      "want": 160
+    },
+    {
+      "id": "COEF-4",
+      "kind": "coefficient",
+      "category": 4,
+      "want": 160
+    },
+    {
+      "id": "COEF-5",
+      "kind": "coefficient",
+      "category": 5,
+      "want": 160
+    },
+    {
+      "id": "COEF-6",
+      "kind": "coefficient",
+      "category": 6,
+      "want": 60
+    },
+    {
+      "id": "COEF-7",
+      "kind": "coefficient",
+      "category": 7,
+      "want": 160
+    },
+    {
+      "id": "COEF-8",
+      "kind": "coefficient",
+      "category": 8,
+      "want": 160
+    },
+    {
+      "id": "RNG-0-0-0",
+      "kind": "math",
+      "score": 120,
+      "roll": 0,
+      "want": 1
+    },
+    {
+      "id": "RNG-0-0-1",
+      "kind": "math",
+      "score": 120,
+      "roll": 1,
+      "want": 1
+    },
+    {
+      "id": "RNG-0-0-16384",
+      "kind": "math",
+      "score": 120,
+      "roll": 16384,
+      "want": 60
+    },
+    {
+      "id": "RNG-0-0-32767",
+      "kind": "math",
+      "score": 120,
+      "roll": 32767,
+      "want": 119
+    },
+    {
+      "id": "RNG-0-1-0",
+      "kind": "math",
+      "score": 121,
+      "roll": 0,
+      "want": 1
+    },
+    {
+      "id": "RNG-0-1-1",
+      "kind": "math",
+      "score": 121,
+      "roll": 1,
+      "want": 1
+    },
+    {
+      "id": "RNG-0-1-16384",
+      "kind": "math",
+      "score": 121,
+      "roll": 16384,
+      "want": 61
+    },
+    {
+      "id": "RNG-0-1-32767",
+      "kind": "math",
+      "score": 121,
+      "roll": 32767,
+      "want": 120
+    },
+    {
+      "id": "RNG-0-10-0",
+      "kind": "math",
+      "score": 130,
+      "roll": 0,
+      "want": 1
+    },
+    {
+      "id": "RNG-0-10-1",
+      "kind": "math",
+      "score": 130,
+      "roll": 1,
+      "want": 1
+    },
+    {
+      "id": "RNG-0-10-16384",
+      "kind": "math",
+      "score": 130,
+      "roll": 16384,
+      "want": 65
+    },
+    {
+      "id": "RNG-0-10-32767",
+      "kind": "math",
+      "score": 130,
+      "roll": 32767,
+      "want": 129
+    },
+    {
+      "id": "RNG-0-100-0",
+      "kind": "math",
+      "score": 220,
+      "roll": 0,
+      "want": 1
+    },
+    {
+      "id": "RNG-0-100-1",
+      "kind": "math",
+      "score": 220,
+      "roll": 1,
+      "want": 1
+    },
+    {
+      "id": "RNG-0-100-16384",
+      "kind": "math",
+      "score": 220,
+      "roll": 16384,
+      "want": 110
+    },
+    {
+      "id": "RNG-0-100-32767",
+      "kind": "math",
+      "score": 220,
+      "roll": 32767,
+      "want": 219
+    },
+    {
+      "id": "RNG-6-0-0",
+      "kind": "math",
+      "score": 60,
+      "roll": 0,
+      "want": 1
+    },
+    {
+      "id": "RNG-6-0-1",
+      "kind": "math",
+      "score": 60,
+      "roll": 1,
+      "want": 1
+    },
+    {
+      "id": "RNG-6-0-16384",
+      "kind": "math",
+      "score": 60,
+      "roll": 16384,
+      "want": 30
+    },
+    {
+      "id": "RNG-6-0-32767",
+      "kind": "math",
+      "score": 60,
+      "roll": 32767,
+      "want": 59
+    },
+    {
+      "id": "RNG-6-1-0",
+      "kind": "math",
+      "score": 61,
+      "roll": 0,
+      "want": 1
+    },
+    {
+      "id": "RNG-6-1-1",
+      "kind": "math",
+      "score": 61,
+      "roll": 1,
+      "want": 1
+    },
+    {
+      "id": "RNG-6-1-16384",
+      "kind": "math",
+      "score": 61,
+      "roll": 16384,
+      "want": 31
+    },
+    {
+      "id": "RNG-6-1-32767",
+      "kind": "math",
+      "score": 61,
+      "roll": 32767,
+      "want": 60
+    },
+    {
+      "id": "RNG-6-10-0",
+      "kind": "math",
+      "score": 70,
+      "roll": 0,
+      "want": 1
+    },
+    {
+      "id": "RNG-6-10-1",
+      "kind": "math",
+      "score": 70,
+      "roll": 1,
+      "want": 1
+    },
+    {
+      "id": "RNG-6-10-16384",
+      "kind": "math",
+      "score": 70,
+      "roll": 16384,
+      "want": 35
+    },
+    {
+      "id": "RNG-6-10-32767",
+      "kind": "math",
+      "score": 70,
+      "roll": 32767,
+      "want": 69
+    },
+    {
+      "id": "RNG-6-100-0",
+      "kind": "math",
+      "score": 160,
+      "roll": 0,
+      "want": 1
+    },
+    {
+      "id": "RNG-6-100-1",
+      "kind": "math",
+      "score": 160,
+      "roll": 1,
+      "want": 1
+    },
+    {
+      "id": "RNG-6-100-16384",
+      "kind": "math",
+      "score": 160,
+      "roll": 16384,
+      "want": 80
+    },
+    {
+      "id": "RNG-6-100-32767",
+      "kind": "math",
+      "score": 160,
+      "roll": 32767,
+      "want": 159
+    },
+    {
+      "id": "RNG-2-0-0",
+      "kind": "math",
+      "score": 160,
+      "roll": 0,
+      "want": 1
+    },
+    {
+      "id": "RNG-2-0-1",
+      "kind": "math",
+      "score": 160,
+      "roll": 1,
+      "want": 1
+    },
+    {
+      "id": "RNG-2-0-16384",
+      "kind": "math",
+      "score": 160,
+      "roll": 16384,
+      "want": 80
+    },
+    {
+      "id": "RNG-2-0-32767",
+      "kind": "math",
+      "score": 160,
+      "roll": 32767,
+      "want": 159
+    },
+    {
+      "id": "RNG-2-1-0",
+      "kind": "math",
+      "score": 161,
+      "roll": 0,
+      "want": 1
+    },
+    {
+      "id": "RNG-2-1-1",
+      "kind": "math",
+      "score": 161,
+      "roll": 1,
+      "want": 1
+    },
+    {
+      "id": "RNG-2-1-16384",
+      "kind": "math",
+      "score": 161,
+      "roll": 16384,
+      "want": 81
+    },
+    {
+      "id": "RNG-2-1-32767",
+      "kind": "math",
+      "score": 161,
+      "roll": 32767,
+      "want": 160
+    },
+    {
+      "id": "RNG-2-10-0",
+      "kind": "math",
+      "score": 170,
+      "roll": 0,
+      "want": 1
+    },
+    {
+      "id": "RNG-2-10-1",
+      "kind": "math",
+      "score": 170,
+      "roll": 1,
+      "want": 1
+    },
+    {
+      "id": "RNG-2-10-16384",
+      "kind": "math",
+      "score": 170,
+      "roll": 16384,
+      "want": 85
+    },
+    {
+      "id": "RNG-2-10-32767",
+      "kind": "math",
+      "score": 170,
+      "roll": 32767,
+      "want": 169
+    },
+    {
+      "id": "RNG-2-100-0",
+      "kind": "math",
+      "score": 260,
+      "roll": 0,
+      "want": 1
+    },
+    {
+      "id": "RNG-2-100-1",
+      "kind": "math",
+      "score": 260,
+      "roll": 1,
+      "want": 1
+    },
+    {
+      "id": "RNG-2-100-16384",
+      "kind": "math",
+      "score": 260,
+      "roll": 16384,
+      "want": 130
+    },
+    {
+      "id": "RNG-2-100-32767",
+      "kind": "math",
+      "score": 260,
+      "roll": 32767,
+      "want": 259
+    },
+    {
+      "id": "RNG-7-0-0",
+      "kind": "math",
+      "score": 160,
+      "roll": 0,
+      "want": 1
+    },
+    {
+      "id": "RNG-7-0-1",
+      "kind": "math",
+      "score": 160,
+      "roll": 1,
+      "want": 1
+    },
+    {
+      "id": "RNG-7-0-16384",
+      "kind": "math",
+      "score": 160,
+      "roll": 16384,
+      "want": 80
+    },
+    {
+      "id": "RNG-7-0-32767",
+      "kind": "math",
+      "score": 160,
+      "roll": 32767,
+      "want": 159
+    },
+    {
+      "id": "RNG-7-1-0",
+      "kind": "math",
+      "score": 161,
+      "roll": 0,
+      "want": 1
+    },
+    {
+      "id": "RNG-7-1-1",
+      "kind": "math",
+      "score": 161,
+      "roll": 1,
+      "want": 1
+    },
+    {
+      "id": "RNG-7-1-16384",
+      "kind": "math",
+      "score": 161,
+      "roll": 16384,
+      "want": 81
+    },
+    {
+      "id": "RNG-7-1-32767",
+      "kind": "math",
+      "score": 161,
+      "roll": 32767,
+      "want": 160
+    },
+    {
+      "id": "RNG-7-10-0",
+      "kind": "math",
+      "score": 170,
+      "roll": 0,
+      "want": 1
+    },
+    {
+      "id": "RNG-7-10-1",
+      "kind": "math",
+      "score": 170,
+      "roll": 1,
+      "want": 1
+    },
+    {
+      "id": "RNG-7-10-16384",
+      "kind": "math",
+      "score": 170,
+      "roll": 16384,
+      "want": 85
+    },
+    {
+      "id": "RNG-7-10-32767",
+      "kind": "math",
+      "score": 170,
+      "roll": 32767,
+      "want": 169
+    },
+    {
+      "id": "RNG-7-100-0",
+      "kind": "math",
+      "score": 260,
+      "roll": 0,
+      "want": 1
+    },
+    {
+      "id": "RNG-7-100-1",
+      "kind": "math",
+      "score": 260,
+      "roll": 1,
+      "want": 1
+    },
+    {
+      "id": "RNG-7-100-16384",
+      "kind": "math",
+      "score": 260,
+      "roll": 16384,
+      "want": 130
+    },
+    {
+      "id": "RNG-7-100-32767",
+      "kind": "math",
+      "score": 260,
+      "roll": 32767,
+      "want": 259
+    },
+    {
+      "id": "EDGE-1-0",
+      "kind": "math",
+      "score": 1,
+      "roll": 0,
+      "want": 1
+    },
+    {
+      "id": "EDGE-1-1",
+      "kind": "math",
+      "score": 1,
+      "roll": 1,
+      "want": 1
+    },
+    {
+      "id": "EDGE-1-16384",
+      "kind": "math",
+      "score": 1,
+      "roll": 16384,
+      "want": 1
+    },
+    {
+      "id": "EDGE-1-32767",
+      "kind": "math",
+      "score": 1,
+      "roll": 32767,
+      "want": 1
+    },
+    {
+      "id": "EDGE-2-0",
+      "kind": "math",
+      "score": 2,
+      "roll": 0,
+      "want": 1
+    },
+    {
+      "id": "EDGE-2-1",
+      "kind": "math",
+      "score": 2,
+      "roll": 1,
+      "want": 1
+    },
+    {
+      "id": "EDGE-2-16384",
+      "kind": "math",
+      "score": 2,
+      "roll": 16384,
+      "want": 1
+    },
+    {
+      "id": "EDGE-2-32767",
+      "kind": "math",
+      "score": 2,
+      "roll": 32767,
+      "want": 1
+    },
+    {
+      "id": "EDGE-32767-0",
+      "kind": "math",
+      "score": 32767,
+      "roll": 0,
+      "want": 1
+    },
+    {
+      "id": "EDGE-32767-1",
+      "kind": "math",
+      "score": 32767,
+      "roll": 1,
+      "want": 1
+    },
+    {
+      "id": "EDGE-32767-16384",
+      "kind": "math",
+      "score": 32767,
+      "roll": 16384,
+      "want": 16384
+    },
+    {
+      "id": "EDGE-32767-32767",
+      "kind": "math",
+      "score": 32767,
+      "roll": 32767,
+      "want": 32766
+    },
+    {
+      "id": "EDGE-32768-0",
+      "kind": "math",
+      "score": 32768,
+      "roll": 0,
+      "want": 1
+    },
+    {
+      "id": "EDGE-32768-1",
+      "kind": "math",
+      "score": 32768,
+      "roll": 1,
+      "want": 1
+    },
+    {
+      "id": "EDGE-32768-16384",
+      "kind": "math",
+      "score": 32768,
+      "roll": 16384,
+      "want": 16384
+    },
+    {
+      "id": "EDGE-32768-32767",
+      "kind": "math",
+      "score": 32768,
+      "roll": 32767,
+      "want": 32767
+    },
+    {
+      "id": "UNKNOWN-x87_prior_value",
+      "kind": "noninference",
+      "key": "x87_prior_value",
+      "want": "UNPROVEN"
+    },
+    {
+      "id": "UNKNOWN-rounding_mode",
+      "kind": "noninference",
+      "key": "rounding_mode",
+      "want": "UNPROVEN"
+    },
+    {
+      "id": "UNKNOWN-nan_inf",
+      "kind": "noninference",
+      "key": "nan_inf",
+      "want": "UNPROVEN"
+    },
+    {
+      "id": "UNKNOWN-negative_score",
+      "kind": "noninference",
+      "key": "negative_score",
+      "want": "UNPROVEN"
+    },
+    {
+      "id": "UNKNOWN-convert_overflow",
+      "kind": "noninference",
+      "key": "convert_overflow",
+      "want": "UNPROVEN"
+    },
+    {
+      "id": "UNKNOWN-rng_seed",
+      "kind": "noninference",
+      "key": "rng_seed",
+      "want": "UNPROVEN"
+    },
+    {
+      "id": "UNKNOWN-rng_total_consumption",
+      "kind": "noninference",
+      "key": "rng_total_consumption",
+      "want": "UNPROVEN"
+    },
+    {
+      "id": "UNKNOWN-final_target",
+      "kind": "noninference",
+      "key": "final_target",
+      "want": "UNPROVEN"
+    },
+    {
+      "id": "UNKNOWN-real_category_reachability",
+      "kind": "noninference",
+      "key": "real_category_reachability",
+      "want": "UNPROVEN"
+    },
+    {
+      "id": "UNKNOWN-original_gameplay",
+      "kind": "noninference",
+      "key": "original_gameplay",
+      "want": "UNPROVEN"
+    },
+    {
+      "id": "UNKNOWN-dynamic_golden",
+      "kind": "noninference",
+      "key": "dynamic_golden",
+      "want": "UNPROVEN"
+    },
+    {
+      "id": "UNKNOWN-strict_match",
+      "kind": "noninference",
+      "key": "strict_match",
+      "want": "UNPROVEN"
+    }
+  ]
+}
