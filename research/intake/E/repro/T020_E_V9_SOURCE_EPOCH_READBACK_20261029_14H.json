@@ -1,0 +1,38 @@
+{
+  "research_id": "E-AUDIT-20261029-14H-T019-T020-V9-CANONICAL-PROVENANCE-GATE-01",
+  "owner": "E/T019/T020",
+  "source": "PC_LOCAL_READONLY",
+  "status": "STATIC_BYTE_VERIFIED_SYNTHETIC_EXECUTED_VERIFY_NOT_READY",
+  "pointer_root_sha256": "3A1326C310A9A28CD3303136F90B1F6716E9B578BBEBAD7D4900CAB19D90718D",
+  "v9_manifest_sha256": "598C5EA6A16E61231B0AF53AE6034F52E8D0684FC6050F5A1D57D854BBB93A5E",
+  "v9_db_sha256": "2629CB2F03ECEC9927E89892C77F847E4CDBA381AB718825C1CA8CFEEEF00EDE",
+  "v9_cli_sha256": "6B3333571CD3E2E97BB6E6DBFD85D751EA869903998C93E49E70FB3461547896",
+  "test_code_sha256": "82B95363D2226AA488CADE0064A5C2CCE8F91132520ACEE8C3495E82BEC8577A",
+  "report_sha256": "6B600B99293C0E9D478308C556B400039F439414C72AEB6FF216AF2F14252FD2",
+  "tests": {
+    "executed": 10,
+    "passed": 10,
+    "failed": 0,
+    "category": "SOURCE_EPOCH_ONLY_NOT_GAMEPLAY"
+  },
+  "readback": {
+    "code": "READ_FILE_AND_SHA256_MATCH",
+    "report": "READ_FILE_AND_SHA256_MATCH"
+  },
+  "master": {
+    "checkpoint_last_known": 196,
+    "ready_last_known": 596,
+    "task_state_last_known": {
+      "done": 9,
+      "in_progress": 21,
+      "verify": 4
+    },
+    "new_ready_integrated": 0
+  },
+  "original_dynamic_observed": 0,
+  "actual_golden_pass": 0,
+  "strict_match": 0,
+  "known_refusals": "UNCHANGED_BLOCKED_NOT_RETRIED",
+  "offline_unsynced": "MEANING_DEDUP_PENDING",
+  "writes": "ONLY_NEW_E_OWNED_TEST_AND_REPORT_AND_THIS_RECEIPT"
+}
