@@ -4,6 +4,8 @@
 
 **Original target source SHA256** (2026-11-01 local readback): `E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187`; current V9 composite SHA256 `2629CB2F03ECEC9927E89892C77F847E4CDBA381AB718825C1CA8CFEEEF00EDE`. V9 quick_check=ok. Static archive/metadata; no gameplay was executed.
 
+**2026-11-03 02H same-ID source addendum (NOT a new ID):** [bounded DL=1 entry gates and E8 upstream](REA_20261103_02H_P0_F720_DL1_ENTRY_GATES_UPSTREAM_STATIC.md) extends `REA-LOCAL-20261024-09H-P0-THREE-RBTREE-UNSIGNED-KEYZERO-STATIC-01`. Authorized PC report SHA256 `60CA5C29DED2220D357EDC6AA074C332782C39915C86A0B475B16C1BD69CA483`; source PE/V9 SHA recorded in report. Distinct native branch conditions: prior count **1→0**, empty-list direct branch, candidate-pointer conditions; optional `0x52CE50` is not a mandatory entry gate. Five upstream/direct E8 receipts match indexed bytes; known BattleWnd/request edges are deduplicated against develop. STATIC/INFERRED; setup ordering, indirect entry, NULL and callback effects remain VERIFY. **PUBLISHED_INTAKE / NOT CURATED**, formal new VERIFIED 0, Golden 0, READY 0. Next cursor: permitted `0x5B0A50/0x521D90` caller preconditions versus virtual `0x51E6F0` setup; no forbidden targets.
+
 | Owner research ID | Functional key | Intake source | Ingestion stage |
 | --- | --- | --- | --- |
 | `REA-LOCAL-20261030-18H-P0-OGG-SEEK-FALLBACK-HELPER-AND-RETURN-STATIC-01` | `0x005D48E0 shift getter, NOT reset` | [2026-10-30 18H–23H source correction map](REA_20261030_18H_23H_SEEK_CLEANUP_HISTORICAL_RECOVERY_STATIC.md) | PUBLISHED_INTAKE / STATIC / VERIFY |
