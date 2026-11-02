@@ -1,0 +1,9 @@
+# E-SUPP-20261030-15H-T020-T013-TWO-CALLER-01
+Owner E/T020; STATIC / VERIFY / NOT READY; read-only V9 + PE attestation, original game NOT RUN.
+V9 source index: rea_lab/headless_analysis/search_index/00_START_HERE_UNIFIED_V9_20261023.md, UNIFIED_V9_INTEGRITY_20261023.json, search_unified_v9_20261023.py; V9 SQLite declared SHA256 2629CB2F03ECEC9927E89892C77F847E4CDBA381AB718825C1CA8CFEEEF00EDE (independently rehashing whole DB NOT RUN).
+Read-only query: python -B search_unified_v9_20261023.py function 0x44BBB0 --max-chars 1500; returned 4454 B, four ranges, 26444-char Ghidra pseudo-C tagged ORIGINAL_20261020_GHIDRA_PSEUDOC_UNCORRECTED; verified_abi=0 and ABI_UNVERIFIED warning. No original C++ or valid hooking prototype inferred.
+Read-only query: callers 0x44BBB0 --limit 12 returned two E8 direct callers (a) 0x44A100, caller function 0x4498E0; (b) 0x44B079, caller function 0x44AE70. These are distinct entry contexts.
+Original research PE (SHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187) independent byte/relative-displacement check: 0x44A100 raw e8ab1a0000 -> 0x44BBB0; 0x44B079 raw e8320b0000 -> 0x44BBB0. Both E8_DIRECT_CALL and identical destination.
+T020 E-AUDIT-20261030-15H-T020-T013-MODE2-DUALGATE-01 tests model the 0x44A100 mode2 dispatch context as supplied by B14/B15; do NOT generalize every 0x44BBB0 call to mode2 or assume 0x44B079 caller conditions and side effects are identical.
+Strict Golden eligibility still requires G0 legal old UI, G1 exact same-run SAVE + input receipt, G2 actual MAP + three sides + ordered deployed roster; G3/G4 absent. Gameplay DYNAMIC OBSERVED=0, actual Golden PASS=0, strict MATCH=0.
+B14/B15 remain VERIFY/NOT READY, no new formal READY ID; MASTER checkpoint196/READY596 and task34 (9/21/4) unchanged. No changes outside E tests, no prohibited safety-refusal retrials. Next: read-only 0x44B079 caller gate and reconcile it with both 0x44BBB0 selector paths before expanding fixtures.
