@@ -1,0 +1,77 @@
+{
+  "research_id": "E-AUDIT-20261029-21H-T020-T028-RETREAT-NO-DESTINATION-SOURCE-VISIBILITY-01",
+  "origin": "SYNTHETIC_FAMILIES_NOT_GAMEPLAY",
+  "owner": "E",
+  "tasks": [
+    "T018",
+    "T020"
+  ],
+  "b_owner_id": "B-20261029-2112-T028-RETREAT-NO-SPOT-EARLY-FAIL-01",
+  "b_status": "VERIFY_NOT_READY",
+  "cases": [
+    {
+      "id": "R01",
+      "search_entered": false,
+      "unit_vector_nonempty": true,
+      "callee_result": null,
+      "expected": "NO_SEARCH",
+      "note": "upstream branch excludes this local search; no failure assertion"
+    },
+    {
+      "id": "R02",
+      "search_entered": true,
+      "unit_vector_nonempty": false,
+      "callee_result": null,
+      "expected": "EMPTY_VECTOR_UNPROVEN",
+      "note": "potential invalid firstUnit access; do not infer engine bug"
+    },
+    {
+      "id": "R03",
+      "search_entered": true,
+      "unit_vector_nonempty": true,
+      "callee_result": 0,
+      "expected": "NATIVE_FAILURE_STRING_PATH_ONLY",
+      "note": "source return string, NOT proven UI"
+    },
+    {
+      "id": "R04",
+      "search_entered": true,
+      "unit_vector_nonempty": true,
+      "callee_result": 1,
+      "expected": "NATIVE_LINK_PATH_ONLY",
+      "note": "link/reference changes conditional; no retreat outcome claim"
+    },
+    {
+      "id": "R05",
+      "search_entered": true,
+      "unit_vector_nonempty": true,
+      "callee_result": null,
+      "expected": "INDETERMINATE",
+      "note": "callee result unavailable"
+    },
+    {
+      "id": "R06",
+      "search_entered": null,
+      "unit_vector_nonempty": true,
+      "callee_result": 0,
+      "expected": "INDETERMINATE",
+      "note": "unknown search precondition"
+    },
+    {
+      "id": "R07",
+      "search_entered": true,
+      "unit_vector_nonempty": true,
+      "callee_result": 0,
+      "expected": "NATIVE_FAILURE_STRING_PATH_ONLY",
+      "note": "hypothetical independent UI screenshot cannot prove cause"
+    },
+    {
+      "id": "R08",
+      "search_entered": true,
+      "unit_vector_nonempty": true,
+      "callee_result": 1,
+      "expected": "NATIVE_LINK_PATH_ONLY",
+      "note": "fully populated synthetic receipt does not establish actual Golden"
+    }
+  ]
+}

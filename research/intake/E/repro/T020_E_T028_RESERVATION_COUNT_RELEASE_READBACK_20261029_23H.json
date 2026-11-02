@@ -1,0 +1,41 @@
+{
+  "research_id": "E-AUDIT-20261029-23H-T020-T028-RESERVATION-COUNT-RELEASE-01",
+  "owner": "E",
+  "checked_at_local": "2026-10-29 23H JST",
+  "source": "Local Compact read_file + Get-FileHash SHA256 + python -B",
+  "classification": "STATIC/SOURCE_PINNED/SYNTHETIC_EXECUTED/VERIFY/NOT_READY",
+  "files": [
+    {
+      "name": "T020_E_T028_RESERVATION_COUNT_RELEASE_CASES_20261029_23H.json",
+      "sha256": "9EE333405F3BF9C6087C6C2516828E1B8CFB887D4642481639466EBA13DB577B"
+    },
+    {
+      "name": "t020_e_t028_reservation_count_release_gate_20261029_23H.py",
+      "sha256": "BB1E4F17986D6065D1AE0E39A621E7302734AFE6A20DB476B8BB4AB46ABE34A4"
+    },
+    {
+      "name": "T020_E_T028_RESERVATION_COUNT_RELEASE_AUDIT_20261029_23H.md",
+      "sha256": "288C22BEE709475C9470BA145159795BDAC0FD18B437772CCCECD5F159CDFC8F"
+    }
+  ],
+  "tests": {
+    "new_synthetic": "21/21 PASS",
+    "new_source_pins": "3/3 PASS",
+    "previous_synthetic_rerun": "18/18 PASS",
+    "previous_source_pins": "3/3 PASS",
+    "original_gameplay": "NOT RUN",
+    "actual_golden_pass": 0,
+    "strict_match": 0
+  },
+  "master": {
+    "official_checkpoint": 196,
+    "ready": 596,
+    "task_counts": "old known 9/21/4 - not recounted",
+    "new_integrations": 0
+  },
+  "safety": {
+    "new_refusal": 0,
+    "old_refusals": "BLOCKED",
+    "offline_unsynced": "OPEN"
+  }
+}

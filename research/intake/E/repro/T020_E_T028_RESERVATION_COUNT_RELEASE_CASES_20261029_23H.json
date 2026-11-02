@@ -1,0 +1,29 @@
+{
+  "research_id": "E-AUDIT-20261029-23H-T020-T028-RESERVATION-COUNT-RELEASE-01",
+  "owner": "E", "origin": "SYNTHETIC_STATIC_BRANCH_ONLY",
+  "b_owner_id": "B-20261029-2315-T028-RETREAT-SPOT-RESERVATION-RELEASE-01",
+  "b_status": "VERIFY_NOT_READY", "actual_golden_pass": 0, "strict_match": 0,
+  "cases": [
+    {"id":"C01","kind":"count","input":{"entries":[]},"expected":"COUNT_0"},
+    {"id":"C02","kind":"count","input":{"entries":[null]},"expected":"COUNT_0"},
+    {"id":"C03","kind":"count","input":{"entries":[0]},"expected":"COUNT_0"},
+    {"id":"C04","kind":"count","input":{"entries":[1]},"expected":"COUNT_1"},
+    {"id":"C05","kind":"count","input":{"entries":[1,0,null,2]},"expected":"COUNT_2"},
+    {"id":"C06","kind":"count","input":{"entries":[null,0,0]},"expected":"COUNT_0"},
+    {"id":"C07","kind":"count","input":{"entries":[1,1,1]},"expected":"COUNT_3"},
+    {"id":"C08","kind":"count","input":{"entries":["UNKNOWN"]},"expected":"INSUFFICIENT_INPUT"},
+    {"id":"C09","kind":"count","input":{"entries":[-1]},"expected":"INVALID_SCHEMA"},
+    {"id":"C10","kind":"count","input":{"entries":[256]},"expected":"INVALID_SCHEMA"},
+    {"id":"C11","kind":"count","input":{"entries":[true]},"expected":"INVALID_SCHEMA"},
+    {"id":"R01","kind":"release","input":{"at_cmp":true,"ebx":"A","linked_now":"A"},"expected":"DEC_SITE_ONLY"},
+    {"id":"R02","kind":"release","input":{"at_cmp":true,"ebx":"A","linked_now":"B"},"expected":"SKIP_DEC_SITE"},
+    {"id":"R03","kind":"release","input":{"at_cmp":false,"ebx":"A","linked_now":"A"},"expected":"OUTSIDE_SITE"},
+    {"id":"R04","kind":"release","input":{"at_cmp":null,"ebx":"A","linked_now":"A"},"expected":"INSUFFICIENT_INPUT"},
+    {"id":"R05","kind":"release","input":{"at_cmp":true,"ebx":null,"linked_now":"A"},"expected":"INVALID_PRECONDITION"},
+    {"id":"R06","kind":"release","input":{"at_cmp":true,"ebx":"A","linked_now":null},"expected":"INSUFFICIENT_INPUT"},
+    {"id":"R07","kind":"release","input":{"at_cmp":true,"ebx":"A","linked_now":"A","b8_before":0},"expected":"DEC_ZERO_VERIFY"},
+    {"id":"R08","kind":"release","input":{"at_cmp":true,"ebx":"A","linked_now":"A","b8_before":1},"expected":"DEC_SITE_ONLY"},
+    {"id":"R09","kind":"release","input":{"at_cmp":true,"ebx":"A","linked_now":"A","b8_before":-2147483648},"expected":"DEC_INTMIN_VERIFY"},
+    {"id":"R10","kind":"release","input":{"at_cmp":true,"ebx":"A","linked_now":"A","b8_before":"bad"},"expected":"INVALID_SCHEMA"}
+  ]
+}

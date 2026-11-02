@@ -1,0 +1,154 @@
+{
+  "research_id": "E-AUDIT-20261029-22H-T020-T028-STRICT-CAPACITY-BOUNDARY-01",
+  "origin": "SYNTHETIC_STATIC_BRANCH_ONLY",
+  "owner": "E",
+  "b_owner_id": "B-20261029-2213-T028-RETREAT-SPOT-CAPACITY-STRICT-GATE-01",
+  "b_status": "VERIFY_NOT_READY",
+  "actual_golden_pass": 0,
+  "strict_match": 0,
+  "base": {
+    "candidate_present": true,
+    "same_as_arg1": false,
+    "rtti_match": true,
+    "arg2_match": true,
+    "arg3": 0,
+    "linked_count": 2,
+    "reserved_count": 1,
+    "capacity": 4
+  },
+  "cases": [
+    {
+      "id": "CAP01",
+      "override": {},
+      "expected": "LOCAL_ACCEPT"
+    },
+    {
+      "id": "CAP02",
+      "override": {
+        "capacity": 3
+      },
+      "expected": "LOCAL_REJECT_CONTINUE"
+    },
+    {
+      "id": "CAP03",
+      "override": {
+        "capacity": 2
+      },
+      "expected": "LOCAL_REJECT_CONTINUE"
+    },
+    {
+      "id": "CAP04",
+      "override": {
+        "same_as_arg1": true
+      },
+      "expected": "FILTER_CANDIDATE"
+    },
+    {
+      "id": "CAP05",
+      "override": {
+        "candidate_present": false
+      },
+      "expected": "FILTER_CANDIDATE"
+    },
+    {
+      "id": "CAP06",
+      "override": {
+        "rtti_match": false
+      },
+      "expected": "FILTER_CANDIDATE"
+    },
+    {
+      "id": "CAP07",
+      "override": {
+        "arg2_match": false
+      },
+      "expected": "CONTINUE_OTHER_CANDIDATES"
+    },
+    {
+      "id": "CAP08",
+      "override": {
+        "arg3": 1
+      },
+      "expected": "OUTSIDE_RETREAT_CALLSITE"
+    },
+    {
+      "id": "CAP09",
+      "override": {
+        "linked_count": null
+      },
+      "expected": "INSUFFICIENT_INPUT"
+    },
+    {
+      "id": "CAP10",
+      "override": {
+        "linked_count": 2147483647,
+        "reserved_count": 1
+      },
+      "expected": "OVERFLOW_VERIFY"
+    },
+    {
+      "id": "CAP11",
+      "override": {
+        "linked_count": 0,
+        "reserved_count": 0,
+        "capacity": 0
+      },
+      "expected": "LOCAL_REJECT_CONTINUE"
+    },
+    {
+      "id": "CAP12",
+      "override": {
+        "linked_count": 0,
+        "reserved_count": 0,
+        "capacity": 1
+      },
+      "expected": "LOCAL_ACCEPT"
+    },
+    {
+      "id": "CAP13",
+      "override": {
+        "linked_count": 5,
+        "reserved_count": 0,
+        "capacity": 5
+      },
+      "expected": "LOCAL_REJECT_CONTINUE"
+    },
+    {
+      "id": "CAP14",
+      "override": {
+        "linked_count": 1,
+        "reserved_count": 1,
+        "capacity": 3
+      },
+      "expected": "LOCAL_ACCEPT"
+    },
+    {
+      "id": "CAP15",
+      "override": {
+        "rtti_match": null
+      },
+      "expected": "INSUFFICIENT_INPUT"
+    },
+    {
+      "id": "CAP16",
+      "override": {
+        "arg2_match": null
+      },
+      "expected": "INSUFFICIENT_INPUT"
+    },
+    {
+      "id": "CAP17",
+      "override": {
+        "reserved_count": "1"
+      },
+      "expected": "INVALID_SCHEMA"
+    },
+    {
+      "id": "CAP18",
+      "override": {
+        "linked_count": true
+      },
+      "expected": "INVALID_SCHEMA"
+    }
+  ]
+}
