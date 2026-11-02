@@ -2,6 +2,14 @@
 
 This is the **searchable owner-source intake**; a source ID, file or owner unit test is not verified original gameplay. `PUBLISHED_INTAKE / VERIFY / NOT_CURATED` until curator examines original bytes and correction lineage. Original Golden PASS=0, strict MATCH=0, newly accepted READY=0. Official semantic knowledge remains in `REF_*.md` and `symbols.tsv` / `structs.tsv` only after independent review.
 
+
+## Curator B/T028 spatial unregister and cache thresholds (2026-11-03)
+
+Two existing B owner IDs are newly CURATED_STATIC only for bounded independently verified original x86 in [REF_BATTLE_AI_MORALE.md](../../REF_BATTLE_AI_MORALE.md). The source remains in [private Draft PR #18](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18) pinned head fbf539e528a172e8b8d5c74ecf93d0b886e7873d. Source reports SHA256 2/2, original PE SHA256, native windows 6/6 and 15 direct E8 sites matched. No new owner intake files/IDs, no original game execution, Golden PASS0, strict MATCH0 or new READY.
+
+- [B-20261026-09H-T028-SPATIAL-GRID-DUAL-ERASE-01](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/fbf539e528a172e8b8d5c74ecf93d0b886e7873d/research/intake/B/B-20261026-09H-T028-SPATIAL-GRID-DUAL-ERASE-01.md); original report SHA256 BF211A3DFE9B0DC90024C6D3685C07ED193D0A21A8D625C11329065C17862010; native identity-gated scalar/vector removal. Predecessor tree-delete ID dedup-linked; no G4 claim.
+- [B-20261027-01H-T028-ROUTE-CACHE-BOUNDED-PROMOTION-01](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/fbf539e528a172e8b8d5c74ecf93d0b886e7873d/research/intake/B/B-20261027-01H-T028-ROUTE-CACHE-BOUNDED-PROMOTION-01.md); original report SHA256 948B343D87621DEB9960E119A827DBBAA515ABD0F4BC67B05B415972FA5F8E36; native conditional recency >8000 and eviction >=8192, not unconditional LRU. Predecessor range ABI correction dedup-linked.
+
 ## Curator-reviewed historical B/T013 trig helper and eligibility (2026-11-03)
 
 Two existing B owner IDs were selectively recovered from [Draft PR #18](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18) HEAD `8d65bd51a7ab12dfc4f7565062541a82b3547aad`; original PC report SHA256 **2/2**, original PE identity **1/1**, local original-x86 window SHA256 **2/2**, bounded E8 destination decoding **7/7**. Their unique owner IDs are *not* new discoveries; both retain pinned private owner-PR source entries (new develop intake files are outside the current source allowlist) and have a meaning/errata route through [REF_BATTLE_AI_MORALE.md](../../REF_BATTLE_AI_MORALE.md).
