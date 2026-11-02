@@ -1,0 +1,2017 @@
+{
+  "research_id": "E-OFFLINE-20261028-1949-T020-DIALOG-WRAPPER-FINGERPRINT-AND-GOLDEN-LINEAGE-01",
+  "source_zip_sha256": "911E5E37A3F9BD5B36F929AF94B0D1E2CD1CD5CF34E3E2F16C8FC800ABF5F7C2",
+  "index_sha256": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF",
+  "source_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "wrappers": [
+    {
+      "va": "0x0052CCF0",
+      "code_sha256": "E75AC6337DBC3CF37FB2987162F7CC5F47C0888F57763A9E2086B75B25F0E78E",
+      "edges": [
+        [
+          "0x0052CD1F",
+          "0x0052AD90"
+        ],
+        [
+          "0x0052CD47",
+          "0x00402710"
+        ],
+        [
+          "0x0052CD68",
+          "0x00402800"
+        ],
+        [
+          "0x0052CD8E",
+          "0x00402710"
+        ],
+        [
+          "0x0052CDCA",
+          "0x00402710"
+        ],
+        [
+          "0x0052CDDE",
+          "0x0043F470"
+        ],
+        [
+          "0x0052CDEF",
+          "0x005B6BBB"
+        ],
+        [
+          "0x0052CE0F",
+          "0x005B6BBB"
+        ],
+        [
+          "0x0052CE32",
+          "0x005B6BBB"
+        ]
+      ],
+      "counts": {
+        "0x0052AD90": 1,
+        "0x00402710": 3,
+        "0x00402800": 1,
+        "0x0043F470": 1,
+        "0x005B6BBB": 3
+      }
+    },
+    {
+      "va": "0x0052CE50",
+      "code_sha256": "C7D577F3694C32BD04E3C73616AB3D38F6D1718FD31C481CB141BC934DCEC2A2",
+      "edges": [
+        [
+          "0x0052CE7D",
+          "0x0052AD90"
+        ],
+        [
+          "0x0052CE9E",
+          "0x00402800"
+        ],
+        [
+          "0x0052CEBF",
+          "0x00402800"
+        ],
+        [
+          "0x0052CEE5",
+          "0x00402710"
+        ],
+        [
+          "0x0052CF10",
+          "0x00402800"
+        ],
+        [
+          "0x0052CF23",
+          "0x0043F470"
+        ],
+        [
+          "0x0052CF34",
+          "0x005B6BBB"
+        ]
+      ],
+      "counts": {
+        "0x0052AD90": 1,
+        "0x00402710": 1,
+        "0x00402800": 3,
+        "0x0043F470": 1,
+        "0x005B6BBB": 1
+      }
+    },
+    {
+      "va": "0x0052CF50",
+      "code_sha256": "48C20B956C4ECEA1E89E12615D34C2EFD25B6EBEA8BC342EE739F00F1EEF3BC7",
+      "edges": [
+        [
+          "0x0052CF80",
+          "0x0052AD90"
+        ],
+        [
+          "0x0052CFA8",
+          "0x00402710"
+        ],
+        [
+          "0x0052CFCE",
+          "0x00402710"
+        ],
+        [
+          "0x0052CFF7",
+          "0x00402710"
+        ],
+        [
+          "0x0052D033",
+          "0x00402710"
+        ],
+        [
+          "0x0052D047",
+          "0x0043F470"
+        ],
+        [
+          "0x0052D05C",
+          "0x005B6BBB"
+        ],
+        [
+          "0x0052D07B",
+          "0x005B6BBB"
+        ],
+        [
+          "0x0052D09D",
+          "0x005B6BBB"
+        ],
+        [
+          "0x0052D0C8",
+          "0x005B6BBB"
+        ]
+      ],
+      "counts": {
+        "0x0052AD90": 1,
+        "0x00402710": 4,
+        "0x00402800": 0,
+        "0x0043F470": 1,
+        "0x005B6BBB": 4
+      }
+    },
+    {
+      "va": "0x0052D2E0",
+      "code_sha256": "C9D52E8C8626999B440AE2DBEBE5A0BD5E4AADD4888A49FE4933A17B609FEB52",
+      "edges": [
+        [
+          "0x0052D307",
+          "0x0052AD90"
+        ],
+        [
+          "0x0052D32A",
+          "0x00402800"
+        ],
+        [
+          "0x0052D34A",
+          "0x00402800"
+        ],
+        [
+          "0x0052D36C",
+          "0x00402800"
+        ],
+        [
+          "0x0052D39D",
+          "0x00402800"
+        ],
+        [
+          "0x0052D3B4",
+          "0x0043F470"
+        ]
+      ],
+      "counts": {
+        "0x0052AD90": 1,
+        "0x00402710": 0,
+        "0x00402800": 4,
+        "0x0043F470": 1,
+        "0x005B6BBB": 0
+      }
+    },
+    {
+      "va": "0x0052D3D0",
+      "code_sha256": "D073653A09EF70D9E62F470E0242892856E2A284E5941CF7C04743769731B3FD",
+      "edges": [
+        [
+          "0x0052D3FF",
+          "0x0052AD90"
+        ],
+        [
+          "0x0052D43B",
+          "0x00402800"
+        ],
+        [
+          "0x0052D45C",
+          "0x00402800"
+        ],
+        [
+          "0x0052D480",
+          "0x00402800"
+        ],
+        [
+          "0x0052D4B0",
+          "0x00402710"
+        ],
+        [
+          "0x0052D4C3",
+          "0x0043F470"
+        ],
+        [
+          "0x0052D4D4",
+          "0x005B6BBB"
+        ]
+      ],
+      "counts": {
+        "0x0052AD90": 1,
+        "0x00402710": 1,
+        "0x00402800": 3,
+        "0x0043F470": 1,
+        "0x005B6BBB": 1
+      }
+    }
+  ],
+  "sso_function": "0x0052D3D0",
+  "synthetic_cases": [
+    {
+      "case": "schema_ready_but_synthetic",
+      "record": {
+        "capture_source": "SYNTHETIC",
+        "g0": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 200,
+          "ui_legal": true,
+          "started": true,
+          "capture_sha": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+        },
+        "g1": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 190,
+          "unmodified_save": true,
+          "save_sha": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+          "input_sha": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "capture_sha": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "g2": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 201,
+          "map_sha": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "capture_sha": "2222222222222222222222222222222222222222222222222222222222222222",
+          "sides": [
+            {
+              "role": "attack",
+              "id": "A"
+            },
+            {
+              "role": "defend",
+              "id": "D"
+            },
+            {
+              "role": "support",
+              "id": "S"
+            }
+          ],
+          "deployed": [
+            {
+              "order": 0,
+              "side_id": "A",
+              "troop": "t1",
+              "unit": "u1",
+              "x": 10,
+              "y": 20
+            },
+            {
+              "order": 1,
+              "side_id": "S",
+              "troop": "t3",
+              "unit": "u5",
+              "x": 12,
+              "y": 30
+            }
+          ]
+        },
+        "native_receipt_verified": false
+      },
+      "structure_expected": true,
+      "actual_expected": false
+    },
+    {
+      "case": "g0_run_empty",
+      "record": {
+        "capture_source": "SYNTHETIC",
+        "g0": {
+          "run_id": "",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 200,
+          "ui_legal": true,
+          "started": true,
+          "capture_sha": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+        },
+        "g1": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 190,
+          "unmodified_save": true,
+          "save_sha": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+          "input_sha": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "capture_sha": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "g2": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 201,
+          "map_sha": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "capture_sha": "2222222222222222222222222222222222222222222222222222222222222222",
+          "sides": [
+            {
+              "role": "attack",
+              "id": "A"
+            },
+            {
+              "role": "defend",
+              "id": "D"
+            },
+            {
+              "role": "support",
+              "id": "S"
+            }
+          ],
+          "deployed": [
+            {
+              "order": 0,
+              "side_id": "A",
+              "troop": "t1",
+              "unit": "u1",
+              "x": 10,
+              "y": 20
+            },
+            {
+              "order": 1,
+              "side_id": "S",
+              "troop": "t3",
+              "unit": "u5",
+              "x": 12,
+              "y": 30
+            }
+          ]
+        },
+        "native_receipt_verified": false
+      },
+      "structure_expected": false,
+      "actual_expected": false
+    },
+    {
+      "case": "g1_other_run",
+      "record": {
+        "capture_source": "SYNTHETIC",
+        "g0": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 200,
+          "ui_legal": true,
+          "started": true,
+          "capture_sha": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+        },
+        "g1": {
+          "run_id": "rZ",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 190,
+          "unmodified_save": true,
+          "save_sha": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+          "input_sha": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "capture_sha": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "g2": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 201,
+          "map_sha": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "capture_sha": "2222222222222222222222222222222222222222222222222222222222222222",
+          "sides": [
+            {
+              "role": "attack",
+              "id": "A"
+            },
+            {
+              "role": "defend",
+              "id": "D"
+            },
+            {
+              "role": "support",
+              "id": "S"
+            }
+          ],
+          "deployed": [
+            {
+              "order": 0,
+              "side_id": "A",
+              "troop": "t1",
+              "unit": "u1",
+              "x": 10,
+              "y": 20
+            },
+            {
+              "order": 1,
+              "side_id": "S",
+              "troop": "t3",
+              "unit": "u5",
+              "x": 12,
+              "y": 30
+            }
+          ]
+        },
+        "native_receipt_verified": false
+      },
+      "structure_expected": false,
+      "actual_expected": false
+    },
+    {
+      "case": "g2_other_run",
+      "record": {
+        "capture_source": "SYNTHETIC",
+        "g0": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 200,
+          "ui_legal": true,
+          "started": true,
+          "capture_sha": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+        },
+        "g1": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 190,
+          "unmodified_save": true,
+          "save_sha": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+          "input_sha": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "capture_sha": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "g2": {
+          "run_id": "rZ",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 201,
+          "map_sha": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "capture_sha": "2222222222222222222222222222222222222222222222222222222222222222",
+          "sides": [
+            {
+              "role": "attack",
+              "id": "A"
+            },
+            {
+              "role": "defend",
+              "id": "D"
+            },
+            {
+              "role": "support",
+              "id": "S"
+            }
+          ],
+          "deployed": [
+            {
+              "order": 0,
+              "side_id": "A",
+              "troop": "t1",
+              "unit": "u1",
+              "x": 10,
+              "y": 20
+            },
+            {
+              "order": 1,
+              "side_id": "S",
+              "troop": "t3",
+              "unit": "u5",
+              "x": 12,
+              "y": 30
+            }
+          ]
+        },
+        "native_receipt_verified": false
+      },
+      "structure_expected": false,
+      "actual_expected": false
+    },
+    {
+      "case": "g1_exe_mismatch",
+      "record": {
+        "capture_source": "SYNTHETIC",
+        "g0": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 200,
+          "ui_legal": true,
+          "started": true,
+          "capture_sha": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+        },
+        "g1": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "3333333333333333333333333333333333333333333333333333333333333333",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 190,
+          "unmodified_save": true,
+          "save_sha": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+          "input_sha": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "capture_sha": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "g2": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 201,
+          "map_sha": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "capture_sha": "2222222222222222222222222222222222222222222222222222222222222222",
+          "sides": [
+            {
+              "role": "attack",
+              "id": "A"
+            },
+            {
+              "role": "defend",
+              "id": "D"
+            },
+            {
+              "role": "support",
+              "id": "S"
+            }
+          ],
+          "deployed": [
+            {
+              "order": 0,
+              "side_id": "A",
+              "troop": "t1",
+              "unit": "u1",
+              "x": 10,
+              "y": 20
+            },
+            {
+              "order": 1,
+              "side_id": "S",
+              "troop": "t3",
+              "unit": "u5",
+              "x": 12,
+              "y": 30
+            }
+          ]
+        },
+        "native_receipt_verified": false
+      },
+      "structure_expected": false,
+      "actual_expected": false
+    },
+    {
+      "case": "g2_dat_mismatch",
+      "record": {
+        "capture_source": "SYNTHETIC",
+        "g0": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 200,
+          "ui_legal": true,
+          "started": true,
+          "capture_sha": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+        },
+        "g1": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 190,
+          "unmodified_save": true,
+          "save_sha": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+          "input_sha": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "capture_sha": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "g2": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "4444444444444444444444444444444444444444444444444444444444444444",
+          "at": 201,
+          "map_sha": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "capture_sha": "2222222222222222222222222222222222222222222222222222222222222222",
+          "sides": [
+            {
+              "role": "attack",
+              "id": "A"
+            },
+            {
+              "role": "defend",
+              "id": "D"
+            },
+            {
+              "role": "support",
+              "id": "S"
+            }
+          ],
+          "deployed": [
+            {
+              "order": 0,
+              "side_id": "A",
+              "troop": "t1",
+              "unit": "u1",
+              "x": 10,
+              "y": 20
+            },
+            {
+              "order": 1,
+              "side_id": "S",
+              "troop": "t3",
+              "unit": "u5",
+              "x": 12,
+              "y": 30
+            }
+          ]
+        },
+        "native_receipt_verified": false
+      },
+      "structure_expected": false,
+      "actual_expected": false
+    },
+    {
+      "case": "g2_scenario_mismatch",
+      "record": {
+        "capture_source": "SYNTHETIC",
+        "g0": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 200,
+          "ui_legal": true,
+          "started": true,
+          "capture_sha": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+        },
+        "g1": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 190,
+          "unmodified_save": true,
+          "save_sha": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+          "input_sha": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "capture_sha": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "g2": {
+          "run_id": "rA-001",
+          "scenario": "sci2",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 201,
+          "map_sha": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "capture_sha": "2222222222222222222222222222222222222222222222222222222222222222",
+          "sides": [
+            {
+              "role": "attack",
+              "id": "A"
+            },
+            {
+              "role": "defend",
+              "id": "D"
+            },
+            {
+              "role": "support",
+              "id": "S"
+            }
+          ],
+          "deployed": [
+            {
+              "order": 0,
+              "side_id": "A",
+              "troop": "t1",
+              "unit": "u1",
+              "x": 10,
+              "y": 20
+            },
+            {
+              "order": 1,
+              "side_id": "S",
+              "troop": "t3",
+              "unit": "u5",
+              "x": 12,
+              "y": 30
+            }
+          ]
+        },
+        "native_receipt_verified": false
+      },
+      "structure_expected": false,
+      "actual_expected": false
+    },
+    {
+      "case": "save_after_start",
+      "record": {
+        "capture_source": "SYNTHETIC",
+        "g0": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 200,
+          "ui_legal": true,
+          "started": true,
+          "capture_sha": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+        },
+        "g1": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 201,
+          "unmodified_save": true,
+          "save_sha": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+          "input_sha": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "capture_sha": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "g2": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 201,
+          "map_sha": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "capture_sha": "2222222222222222222222222222222222222222222222222222222222222222",
+          "sides": [
+            {
+              "role": "attack",
+              "id": "A"
+            },
+            {
+              "role": "defend",
+              "id": "D"
+            },
+            {
+              "role": "support",
+              "id": "S"
+            }
+          ],
+          "deployed": [
+            {
+              "order": 0,
+              "side_id": "A",
+              "troop": "t1",
+              "unit": "u1",
+              "x": 10,
+              "y": 20
+            },
+            {
+              "order": 1,
+              "side_id": "S",
+              "troop": "t3",
+              "unit": "u5",
+              "x": 12,
+              "y": 30
+            }
+          ]
+        },
+        "native_receipt_verified": false
+      },
+      "structure_expected": false,
+      "actual_expected": false
+    },
+    {
+      "case": "map_before_start",
+      "record": {
+        "capture_source": "SYNTHETIC",
+        "g0": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 200,
+          "ui_legal": true,
+          "started": true,
+          "capture_sha": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+        },
+        "g1": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 190,
+          "unmodified_save": true,
+          "save_sha": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+          "input_sha": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "capture_sha": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "g2": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 199,
+          "map_sha": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "capture_sha": "2222222222222222222222222222222222222222222222222222222222222222",
+          "sides": [
+            {
+              "role": "attack",
+              "id": "A"
+            },
+            {
+              "role": "defend",
+              "id": "D"
+            },
+            {
+              "role": "support",
+              "id": "S"
+            }
+          ],
+          "deployed": [
+            {
+              "order": 0,
+              "side_id": "A",
+              "troop": "t1",
+              "unit": "u1",
+              "x": 10,
+              "y": 20
+            },
+            {
+              "order": 1,
+              "side_id": "S",
+              "troop": "t3",
+              "unit": "u5",
+              "x": 12,
+              "y": 30
+            }
+          ]
+        },
+        "native_receipt_verified": false
+      },
+      "structure_expected": false,
+      "actual_expected": false
+    },
+    {
+      "case": "map_sha_short",
+      "record": {
+        "capture_source": "SYNTHETIC",
+        "g0": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 200,
+          "ui_legal": true,
+          "started": true,
+          "capture_sha": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+        },
+        "g1": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 190,
+          "unmodified_save": true,
+          "save_sha": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+          "input_sha": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "capture_sha": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "g2": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 201,
+          "map_sha": "1234",
+          "capture_sha": "2222222222222222222222222222222222222222222222222222222222222222",
+          "sides": [
+            {
+              "role": "attack",
+              "id": "A"
+            },
+            {
+              "role": "defend",
+              "id": "D"
+            },
+            {
+              "role": "support",
+              "id": "S"
+            }
+          ],
+          "deployed": [
+            {
+              "order": 0,
+              "side_id": "A",
+              "troop": "t1",
+              "unit": "u1",
+              "x": 10,
+              "y": 20
+            },
+            {
+              "order": 1,
+              "side_id": "S",
+              "troop": "t3",
+              "unit": "u5",
+              "x": 12,
+              "y": 30
+            }
+          ]
+        },
+        "native_receipt_verified": false
+      },
+      "structure_expected": false,
+      "actual_expected": false
+    },
+    {
+      "case": "duplicate_side",
+      "record": {
+        "capture_source": "SYNTHETIC",
+        "g0": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 200,
+          "ui_legal": true,
+          "started": true,
+          "capture_sha": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+        },
+        "g1": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 190,
+          "unmodified_save": true,
+          "save_sha": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+          "input_sha": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "capture_sha": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "g2": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 201,
+          "map_sha": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "capture_sha": "2222222222222222222222222222222222222222222222222222222222222222",
+          "sides": [
+            {
+              "role": "attack",
+              "id": "A"
+            },
+            {
+              "role": "defend",
+              "id": "D"
+            },
+            {
+              "role": "support",
+              "id": "D"
+            }
+          ],
+          "deployed": [
+            {
+              "order": 0,
+              "side_id": "A",
+              "troop": "t1",
+              "unit": "u1",
+              "x": 10,
+              "y": 20
+            },
+            {
+              "order": 1,
+              "side_id": "S",
+              "troop": "t3",
+              "unit": "u5",
+              "x": 12,
+              "y": 30
+            }
+          ]
+        },
+        "native_receipt_verified": false
+      },
+      "structure_expected": false,
+      "actual_expected": false
+    },
+    {
+      "case": "missing_roster",
+      "record": {
+        "capture_source": "SYNTHETIC",
+        "g0": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 200,
+          "ui_legal": true,
+          "started": true,
+          "capture_sha": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+        },
+        "g1": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 190,
+          "unmodified_save": true,
+          "save_sha": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+          "input_sha": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "capture_sha": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "g2": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 201,
+          "map_sha": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "capture_sha": "2222222222222222222222222222222222222222222222222222222222222222",
+          "sides": [
+            {
+              "role": "attack",
+              "id": "A"
+            },
+            {
+              "role": "defend",
+              "id": "D"
+            },
+            {
+              "role": "support",
+              "id": "S"
+            }
+          ],
+          "deployed": []
+        },
+        "native_receipt_verified": false
+      },
+      "structure_expected": false,
+      "actual_expected": false
+    },
+    {
+      "case": "modified_save",
+      "record": {
+        "capture_source": "SYNTHETIC",
+        "g0": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 200,
+          "ui_legal": true,
+          "started": true,
+          "capture_sha": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+        },
+        "g1": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 190,
+          "unmodified_save": false,
+          "save_sha": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+          "input_sha": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "capture_sha": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "g2": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 201,
+          "map_sha": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "capture_sha": "2222222222222222222222222222222222222222222222222222222222222222",
+          "sides": [
+            {
+              "role": "attack",
+              "id": "A"
+            },
+            {
+              "role": "defend",
+              "id": "D"
+            },
+            {
+              "role": "support",
+              "id": "S"
+            }
+          ],
+          "deployed": [
+            {
+              "order": 0,
+              "side_id": "A",
+              "troop": "t1",
+              "unit": "u1",
+              "x": 10,
+              "y": 20
+            },
+            {
+              "order": 1,
+              "side_id": "S",
+              "troop": "t3",
+              "unit": "u5",
+              "x": 12,
+              "y": 30
+            }
+          ]
+        },
+        "native_receipt_verified": false
+      },
+      "structure_expected": false,
+      "actual_expected": false
+    },
+    {
+      "case": "input_missing",
+      "record": {
+        "capture_source": "SYNTHETIC",
+        "g0": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 200,
+          "ui_legal": true,
+          "started": true,
+          "capture_sha": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+        },
+        "g1": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 190,
+          "unmodified_save": true,
+          "save_sha": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+          "input_sha": null,
+          "capture_sha": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "g2": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 201,
+          "map_sha": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "capture_sha": "2222222222222222222222222222222222222222222222222222222222222222",
+          "sides": [
+            {
+              "role": "attack",
+              "id": "A"
+            },
+            {
+              "role": "defend",
+              "id": "D"
+            },
+            {
+              "role": "support",
+              "id": "S"
+            }
+          ],
+          "deployed": [
+            {
+              "order": 0,
+              "side_id": "A",
+              "troop": "t1",
+              "unit": "u1",
+              "x": 10,
+              "y": 20
+            },
+            {
+              "order": 1,
+              "side_id": "S",
+              "troop": "t3",
+              "unit": "u5",
+              "x": 12,
+              "y": 30
+            }
+          ]
+        },
+        "native_receipt_verified": false
+      },
+      "structure_expected": false,
+      "actual_expected": false
+    },
+    {
+      "case": "ui_not_legal",
+      "record": {
+        "capture_source": "SYNTHETIC",
+        "g0": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 200,
+          "ui_legal": false,
+          "started": true,
+          "capture_sha": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+        },
+        "g1": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 190,
+          "unmodified_save": true,
+          "save_sha": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+          "input_sha": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "capture_sha": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "g2": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 201,
+          "map_sha": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "capture_sha": "2222222222222222222222222222222222222222222222222222222222222222",
+          "sides": [
+            {
+              "role": "attack",
+              "id": "A"
+            },
+            {
+              "role": "defend",
+              "id": "D"
+            },
+            {
+              "role": "support",
+              "id": "S"
+            }
+          ],
+          "deployed": [
+            {
+              "order": 0,
+              "side_id": "A",
+              "troop": "t1",
+              "unit": "u1",
+              "x": 10,
+              "y": 20
+            },
+            {
+              "order": 1,
+              "side_id": "S",
+              "troop": "t3",
+              "unit": "u5",
+              "x": 12,
+              "y": 30
+            }
+          ]
+        },
+        "native_receipt_verified": false
+      },
+      "structure_expected": false,
+      "actual_expected": false
+    },
+    {
+      "case": "start_not_observed",
+      "record": {
+        "capture_source": "SYNTHETIC",
+        "g0": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 200,
+          "ui_legal": true,
+          "started": false,
+          "capture_sha": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+        },
+        "g1": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 190,
+          "unmodified_save": true,
+          "save_sha": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+          "input_sha": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "capture_sha": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "g2": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 201,
+          "map_sha": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "capture_sha": "2222222222222222222222222222222222222222222222222222222222222222",
+          "sides": [
+            {
+              "role": "attack",
+              "id": "A"
+            },
+            {
+              "role": "defend",
+              "id": "D"
+            },
+            {
+              "role": "support",
+              "id": "S"
+            }
+          ],
+          "deployed": [
+            {
+              "order": 0,
+              "side_id": "A",
+              "troop": "t1",
+              "unit": "u1",
+              "x": 10,
+              "y": 20
+            },
+            {
+              "order": 1,
+              "side_id": "S",
+              "troop": "t3",
+              "unit": "u5",
+              "x": 12,
+              "y": 30
+            }
+          ]
+        },
+        "native_receipt_verified": false
+      },
+      "structure_expected": false,
+      "actual_expected": false
+    },
+    {
+      "case": "not_original_source",
+      "record": {
+        "capture_source": "MODDED",
+        "g0": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 200,
+          "ui_legal": true,
+          "started": true,
+          "capture_sha": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+        },
+        "g1": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 190,
+          "unmodified_save": true,
+          "save_sha": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+          "input_sha": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "capture_sha": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "g2": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 201,
+          "map_sha": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "capture_sha": "2222222222222222222222222222222222222222222222222222222222222222",
+          "sides": [
+            {
+              "role": "attack",
+              "id": "A"
+            },
+            {
+              "role": "defend",
+              "id": "D"
+            },
+            {
+              "role": "support",
+              "id": "S"
+            }
+          ],
+          "deployed": [
+            {
+              "order": 0,
+              "side_id": "A",
+              "troop": "t1",
+              "unit": "u1",
+              "x": 10,
+              "y": 20
+            },
+            {
+              "order": 1,
+              "side_id": "S",
+              "troop": "t3",
+              "unit": "u5",
+              "x": 12,
+              "y": 30
+            }
+          ]
+        },
+        "native_receipt_verified": false
+      },
+      "structure_expected": false,
+      "actual_expected": false
+    },
+    {
+      "case": "native_receipt_without_native_source",
+      "record": {
+        "capture_source": "SYNTHETIC",
+        "g0": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 200,
+          "ui_legal": true,
+          "started": true,
+          "capture_sha": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+        },
+        "g1": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 190,
+          "unmodified_save": true,
+          "save_sha": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+          "input_sha": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "capture_sha": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "g2": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 201,
+          "map_sha": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "capture_sha": "2222222222222222222222222222222222222222222222222222222222222222",
+          "sides": [
+            {
+              "role": "attack",
+              "id": "A"
+            },
+            {
+              "role": "defend",
+              "id": "D"
+            },
+            {
+              "role": "support",
+              "id": "S"
+            }
+          ],
+          "deployed": [
+            {
+              "order": 0,
+              "side_id": "A",
+              "troop": "t1",
+              "unit": "u1",
+              "x": 10,
+              "y": 20
+            },
+            {
+              "order": 1,
+              "side_id": "S",
+              "troop": "t3",
+              "unit": "u5",
+              "x": 12,
+              "y": 30
+            }
+          ]
+        },
+        "native_receipt_verified": true
+      },
+      "structure_expected": true,
+      "actual_expected": false
+    },
+    {
+      "case": "roster_missing_xy",
+      "record": {
+        "capture_source": "SYNTHETIC",
+        "g0": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 200,
+          "ui_legal": true,
+          "started": true,
+          "capture_sha": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+        },
+        "g1": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 190,
+          "unmodified_save": true,
+          "save_sha": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+          "input_sha": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "capture_sha": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "g2": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 201,
+          "map_sha": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "capture_sha": "2222222222222222222222222222222222222222222222222222222222222222",
+          "sides": [
+            {
+              "role": "attack",
+              "id": "A"
+            },
+            {
+              "role": "defend",
+              "id": "D"
+            },
+            {
+              "role": "support",
+              "id": "S"
+            }
+          ],
+          "deployed": [
+            {
+              "order": 0,
+              "side_id": "A",
+              "troop": "t1",
+              "unit": "u1",
+              "y": 20
+            },
+            {
+              "order": 1,
+              "side_id": "S",
+              "troop": "t3",
+              "unit": "u5",
+              "x": 12,
+              "y": 30
+            }
+          ]
+        },
+        "native_receipt_verified": false
+      },
+      "structure_expected": false,
+      "actual_expected": false
+    },
+    {
+      "case": "sso_value_0",
+      "sso_value": 0,
+      "sso_expected": "inline_address"
+    },
+    {
+      "case": "sso_value_15",
+      "sso_value": 15,
+      "sso_expected": "inline_address"
+    },
+    {
+      "case": "sso_value_16",
+      "sso_value": 16,
+      "sso_expected": "external_pointer"
+    },
+    {
+      "case": "sso_value_31",
+      "sso_value": 31,
+      "sso_expected": "external_pointer"
+    },
+    {
+      "case": "roster_order_gap",
+      "record": {
+        "capture_source": "SYNTHETIC",
+        "g0": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 200,
+          "ui_legal": true,
+          "started": true,
+          "capture_sha": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+        },
+        "g1": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 190,
+          "unmodified_save": true,
+          "save_sha": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+          "input_sha": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "capture_sha": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "g2": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 201,
+          "map_sha": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "capture_sha": "2222222222222222222222222222222222222222222222222222222222222222",
+          "sides": [
+            {
+              "role": "attack",
+              "id": "A"
+            },
+            {
+              "role": "defend",
+              "id": "D"
+            },
+            {
+              "role": "support",
+              "id": "S"
+            }
+          ],
+          "deployed": [
+            {
+              "order": 0,
+              "side_id": "A",
+              "troop": "t1",
+              "unit": "u1",
+              "x": 10,
+              "y": 20
+            },
+            {
+              "order": 3,
+              "side_id": "S",
+              "troop": "t3",
+              "unit": "u5",
+              "x": 12,
+              "y": 30
+            }
+          ]
+        },
+        "native_receipt_verified": false
+      },
+      "structure_expected": false,
+      "actual_expected": false
+    },
+    {
+      "case": "roster_order_duplicate",
+      "record": {
+        "capture_source": "SYNTHETIC",
+        "g0": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 200,
+          "ui_legal": true,
+          "started": true,
+          "capture_sha": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+        },
+        "g1": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 190,
+          "unmodified_save": true,
+          "save_sha": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+          "input_sha": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "capture_sha": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "g2": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 201,
+          "map_sha": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "capture_sha": "2222222222222222222222222222222222222222222222222222222222222222",
+          "sides": [
+            {
+              "role": "attack",
+              "id": "A"
+            },
+            {
+              "role": "defend",
+              "id": "D"
+            },
+            {
+              "role": "support",
+              "id": "S"
+            }
+          ],
+          "deployed": [
+            {
+              "order": 0,
+              "side_id": "A",
+              "troop": "t1",
+              "unit": "u1",
+              "x": 10,
+              "y": 20
+            },
+            {
+              "order": 0,
+              "side_id": "S",
+              "troop": "t3",
+              "unit": "u5",
+              "x": 12,
+              "y": 30
+            }
+          ]
+        },
+        "native_receipt_verified": false
+      },
+      "structure_expected": false,
+      "actual_expected": false
+    },
+    {
+      "case": "roster_unknown_side_id",
+      "record": {
+        "capture_source": "SYNTHETIC",
+        "g0": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 200,
+          "ui_legal": true,
+          "started": true,
+          "capture_sha": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+        },
+        "g1": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 190,
+          "unmodified_save": true,
+          "save_sha": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+          "input_sha": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "capture_sha": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "g2": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 201,
+          "map_sha": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "capture_sha": "2222222222222222222222222222222222222222222222222222222222222222",
+          "sides": [
+            {
+              "role": "attack",
+              "id": "A"
+            },
+            {
+              "role": "defend",
+              "id": "D"
+            },
+            {
+              "role": "support",
+              "id": "S"
+            }
+          ],
+          "deployed": [
+            {
+              "order": 0,
+              "side_id": "A",
+              "troop": "t1",
+              "unit": "u1",
+              "x": 10,
+              "y": 20
+            },
+            {
+              "order": 1,
+              "side_id": "U",
+              "troop": "t3",
+              "unit": "u5",
+              "x": 12,
+              "y": 30
+            }
+          ]
+        },
+        "native_receipt_verified": false
+      },
+      "structure_expected": false,
+      "actual_expected": false
+    },
+    {
+      "case": "duplicated_role",
+      "record": {
+        "capture_source": "SYNTHETIC",
+        "g0": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 200,
+          "ui_legal": true,
+          "started": true,
+          "capture_sha": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+        },
+        "g1": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 190,
+          "unmodified_save": true,
+          "save_sha": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+          "input_sha": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "capture_sha": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "g2": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 201,
+          "map_sha": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "capture_sha": "2222222222222222222222222222222222222222222222222222222222222222",
+          "sides": [
+            {
+              "role": "attack",
+              "id": "A"
+            },
+            {
+              "role": "defend",
+              "id": "D"
+            },
+            {
+              "role": "defend",
+              "id": "S"
+            }
+          ],
+          "deployed": [
+            {
+              "order": 0,
+              "side_id": "A",
+              "troop": "t1",
+              "unit": "u1",
+              "x": 10,
+              "y": 20
+            },
+            {
+              "order": 1,
+              "side_id": "S",
+              "troop": "t3",
+              "unit": "u5",
+              "x": 12,
+              "y": 30
+            }
+          ]
+        },
+        "native_receipt_verified": false
+      },
+      "structure_expected": false,
+      "actual_expected": false
+    },
+    {
+      "case": "missing_support_role",
+      "record": {
+        "capture_source": "SYNTHETIC",
+        "g0": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 200,
+          "ui_legal": true,
+          "started": true,
+          "capture_sha": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+        },
+        "g1": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 190,
+          "unmodified_save": true,
+          "save_sha": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+          "input_sha": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "capture_sha": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "g2": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 201,
+          "map_sha": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "capture_sha": "2222222222222222222222222222222222222222222222222222222222222222",
+          "sides": [
+            {
+              "role": "attack",
+              "id": "A"
+            },
+            {
+              "role": "defend",
+              "id": "D"
+            },
+            {
+              "role": "reserve",
+              "id": "S"
+            }
+          ],
+          "deployed": [
+            {
+              "order": 0,
+              "side_id": "A",
+              "troop": "t1",
+              "unit": "u1",
+              "x": 10,
+              "y": 20
+            },
+            {
+              "order": 1,
+              "side_id": "S",
+              "troop": "t3",
+              "unit": "u5",
+              "x": 12,
+              "y": 30
+            }
+          ]
+        },
+        "native_receipt_verified": false
+      },
+      "structure_expected": false,
+      "actual_expected": false
+    },
+    {
+      "case": "missing_side_id",
+      "record": {
+        "capture_source": "SYNTHETIC",
+        "g0": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 200,
+          "ui_legal": true,
+          "started": true,
+          "capture_sha": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+        },
+        "g1": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 190,
+          "unmodified_save": true,
+          "save_sha": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+          "input_sha": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+          "capture_sha": "1111111111111111111111111111111111111111111111111111111111111111"
+        },
+        "g2": {
+          "run_id": "rA-001",
+          "scenario": "sci1",
+          "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "at": 201,
+          "map_sha": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+          "capture_sha": "2222222222222222222222222222222222222222222222222222222222222222",
+          "sides": [
+            {
+              "role": "attack",
+              "id": ""
+            },
+            {
+              "role": "defend",
+              "id": "D"
+            },
+            {
+              "role": "support",
+              "id": "S"
+            }
+          ],
+          "deployed": [
+            {
+              "order": 0,
+              "side_id": "A",
+              "troop": "t1",
+              "unit": "u1",
+              "x": 10,
+              "y": 20
+            },
+            {
+              "order": 1,
+              "side_id": "S",
+              "troop": "t3",
+              "unit": "u5",
+              "x": 12,
+              "y": 30
+            }
+          ]
+        },
+        "native_receipt_verified": false
+      },
+      "structure_expected": false,
+      "actual_expected": false
+    }
+  ],
+  "claimed_native_observed": 0,
+  "claimed_actual_golden_pass": 0,
+  "claimed_strict_match": 0,
+  "statuses": {
+    "classification": "OFFLINE-UNSYNCED / STATIC INDEX / SYNTHETIC EXECUTED / VERIFY / NOT READY",
+    "PC_MASTER": "NOT READ",
+    "old_game": "NOT RUN"
+  }
+}
