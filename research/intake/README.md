@@ -2,6 +2,17 @@
 
 This is the **searchable owner-source intake**; a source ID, file or owner unit test is not verified original gameplay. `PUBLISHED_INTAKE / VERIFY / NOT_CURATED` until curator examines original bytes and correction lineage. Original Golden PASS=0, strict MATCH=0, newly accepted READY=0. Official semantic knowledge remains in `REF_*.md` and `symbols.tsv` / `structs.tsv` only after independent review.
 
+## Curator-reviewed historical B/T013 trig helper and eligibility (2026-11-03)
+
+Two existing B owner IDs were selectively recovered from [Draft PR #18](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18) HEAD `8d65bd51a7ab12dfc4f7565062541a82b3547aad`; original PC report SHA256 **2/2**, original PE identity **1/1**, local original-x86 window SHA256 **2/2**, bounded E8 destination decoding **7/7**. Their unique owner IDs are *not* new discoveries; both retain pinned private owner-PR source entries (new develop intake files are outside the current source allowlist) and have a meaning/errata route through [REF_BATTLE_AI_MORALE.md](../../REF_BATTLE_AI_MORALE.md).
+
+| Existing ID / B source | Admitted limited fact | Status |
+| --- | --- | --- |
+| [`B-20261021-2117-01`](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/8d65bd51a7ab12dfc4f7565062541a82b3547aad/research/intake/B/B-20261021-2117-01.md) | Signed two-field early eligibility branches; `0x57DA93` and `0x57DB75` native caller relations, conditional `+0xE4` byte branch | CURATED_STATIC only for checked gates and native E8; other semantics VERIFY |
+| [`B-20261029-1410-T013-TRIG1000-OUTPUT-ALIAS-NATIVE-01`](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/8d65bd51a7ab12dfc4f7565062541a82b3547aad/research/intake/B/B-20261029-1410-T013-TRIG1000-OUTPUT-ALIAS-NATIVE-01.md) | 70-byte `0x420900` implicit `ESI` two-DWORD writes, conversion/helper calls and 1000-valued local branch correction | CURATED_STATIC within native windows; FPU/gameplay/other callers VERIFY |
+
+**DEDUP/ERRATUM:** 10/29 native receipt refines the older 10/21 high-level helper explanation, especially output alias and sign; 10/21 19H clock report remains a prior separate source. No new READY, original-game Golden PASS=0, strict MATCH=0 or G4 settlement demonstration. Next B backlog cursor follows B/T011/T012/T013/T024/T028 owner IDs still NOT CURATED after this pair; do not infer completion from the owner catalog.
+
 ## Curator-admitted B17/B18 source meaning (2026-11-02, bounded native only)
 
 These two owner sources were **already PUBLISHED_INTAKE in develop** (intake increment **0**). PC source report hashes 2/2 and original PE SHA256 were independently rechecked; 2/2 original 41-byte B18 windows and 13/13 selected native instruction bytes matched. Both are now `CURATED_STATIC` **only** for their native branch/direct-call and shared-global-store facts in [REF_BATTLE_AI_MORALE.md](../../REF_BATTLE_AI_MORALE.md). Do not infer global stable sorting, actual coordinate identity, final movement or original gameplay; Golden PASS=0, strict MATCH=0, READY=0.
