@@ -1,0 +1,48 @@
+{
+  "research_id": "E-AUDIT-20261030-12H-T020-T013-T028-D0-SORT-IDENTITY-01",
+  "date_jst": "2026-10-30 12H",
+  "classification": "STATIC_SYNTHETIC_VERIFY_NOT_READY",
+  "result": "PASS_48_OF_48",
+  "source_b_sha256": "552F1ED1E478C0CBFC803DA5FA4A7F6EF2856F30E03FD7A7D6D6AA3D2B2674FD",
+  "files": [
+    {
+      "name": "t020_e_t013_t028_d0_sort_identity_gate_20261030_12H.py",
+      "bytes": 4894,
+      "sha256": "90AAAFC56105CE0A7BD0535C6F9D91003B1C204B12393CCD952812427CBB6A44"
+    },
+    {
+      "name": "T020_E_T013_T028_D0_SORT_IDENTITY_CASES_20261030_12H.json",
+      "bytes": 10289,
+      "sha256": "121124FFB00294044E64CD984FA065120460447D3A8E88F21B1F1B1EC90F8611"
+    },
+    {
+      "name": "T020_E_T013_T028_D0_SORT_IDENTITY_ACCEPTANCE_20261030_12H.md",
+      "bytes": 2838,
+      "sha256": "49F714B4F5D993A72F92CB7906531626150558F4BD38B60FC6189F745B25D250"
+    }
+  ],
+  "native": {
+    "pe_sha_windows": 3,
+    "e8_direct_calls": 2
+  },
+  "tests": {
+    "model": 32,
+    "signed_edge": 8,
+    "negative": 8,
+    "total": 48
+  },
+  "master_precheck": {
+    "sha256": "E7329C9C6368E67BE191A4ABF45156319E32826FF039FB2B9E226DEDDAC6B6B3",
+    "checkpoint": 196,
+    "ready": 596,
+    "task_done": 9,
+    "task_in_progress": 21,
+    "task_verify": 4
+  },
+  "golden": {
+    "dynamic_observed": 0,
+    "actual_pass": 0,
+    "strict_match": 0
+  },
+  "notes": "Files re-read through local read_file (report, fixture header, code tail); independent Get-FileHash + File.Length performed. Master unchanged; no READY integration. B11H refusal remains blocked."
+}
