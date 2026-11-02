@@ -1,0 +1,54 @@
+{
+  "research_id": "E-AUDIT-20261028-22H-T018-T020-E21-PC-G2-CONTRACT-CROSSWALK-01",
+  "source_research_id": "E-OFFLINE-20261028-2149-T018-T020-SEMANTIC-CAPTURE-BINDING-01",
+  "source_e21_fixture_sha256": "7D574FF25175C4BAB3BF1C2CCDE6744482C05142717DAA8CC82E06F55F04CCAA",
+  "source_provenance": "ChatGPT conversation artifact E_20261028_2149 (not independently materialized on PC)",
+  "source_class": "SYNTHETIC",
+  "original_game_exe_sha_manifest": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "capture": {
+    "capture_source": "SYNTHETIC",
+    "native_receipt_verified": false,
+    "run_id": "rA-001",
+    "g2": {
+      "map_sha": "E1920B8FC15DC44AC4D8C5F92724BB455C0F8576358EEF9086DAF1CCB18C19F5",
+      "sides": [
+        {
+          "role": "attack",
+          "id": "A"
+        },
+        {
+          "role": "defend",
+          "id": "D"
+        },
+        {
+          "role": "support",
+          "id": "S"
+        }
+      ],
+      "deployed": [
+        {
+          "order": 0,
+          "side_id": "A",
+          "troop": "t1",
+          "unit": "u1",
+          "x": 10,
+          "y": 20
+        },
+        {
+          "order": 1,
+          "side_id": "S",
+          "troop": "t3",
+          "unit": "u5",
+          "x": 12,
+          "y": 30
+        }
+      ]
+    }
+  },
+  "limits": [
+    "No map_id in E21 capture",
+    "No defense deployment row in E21 base",
+    "No independent active-enter/exit bracket",
+    "Not a gameplay observation"
+  ]
+}
