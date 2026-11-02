@@ -1,0 +1,835 @@
+{
+  "id": "E-AUDIT-20261030-23H-T020-T013-CATEGORY-LABEL-WRITER-01",
+  "owner": "E",
+  "task": "T020",
+  "status": "STATIC_NATIVE_AND_SYNTHETIC_VERIFY_NOT_READY",
+  "source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "native_windows": 6,
+  "native_E8_calls": 4,
+  "gameplay_golden_pass": 0,
+  "strict_match": 0,
+  "cases": [
+    {
+      "id": "TABLE-449704-0",
+      "kind": "native_table",
+      "table": 4495108,
+      "index": 0,
+      "want": "hold"
+    },
+    {
+      "id": "TABLE-449704-1",
+      "kind": "native_table",
+      "table": 4495108,
+      "index": 1,
+      "want": "even"
+    },
+    {
+      "id": "TABLE-449704-2",
+      "kind": "native_table",
+      "table": 4495108,
+      "index": 2,
+      "want": "even"
+    },
+    {
+      "id": "TABLE-449704-3",
+      "kind": "native_table",
+      "table": 4495108,
+      "index": 3,
+      "want": "push"
+    },
+    {
+      "id": "TABLE-449704-4",
+      "kind": "native_table",
+      "table": 4495108,
+      "index": 4,
+      "want": "hold"
+    },
+    {
+      "id": "TABLE-449704-5",
+      "kind": "native_table",
+      "table": 4495108,
+      "index": 5,
+      "want": "hold"
+    },
+    {
+      "id": "TABLE-449704-6",
+      "kind": "native_table",
+      "table": 4495108,
+      "index": 6,
+      "want": "advance"
+    },
+    {
+      "id": "TABLE-449704-7",
+      "kind": "native_table",
+      "table": 4495108,
+      "index": 7,
+      "want": "even"
+    },
+    {
+      "id": "TABLE-449704-8",
+      "kind": "native_table",
+      "table": 4495108,
+      "index": 8,
+      "want": "back"
+    },
+    {
+      "id": "TABLE-44CD4C-0",
+      "kind": "native_table",
+      "table": 4509004,
+      "index": 0,
+      "want": "hold"
+    },
+    {
+      "id": "TABLE-44CD4C-1",
+      "kind": "native_table",
+      "table": 4509004,
+      "index": 1,
+      "want": "even"
+    },
+    {
+      "id": "TABLE-44CD4C-2",
+      "kind": "native_table",
+      "table": 4509004,
+      "index": 2,
+      "want": "even"
+    },
+    {
+      "id": "TABLE-44CD4C-3",
+      "kind": "native_table",
+      "table": 4509004,
+      "index": 3,
+      "want": "push"
+    },
+    {
+      "id": "TABLE-44CD4C-4",
+      "kind": "native_table",
+      "table": 4509004,
+      "index": 4,
+      "want": "hold"
+    },
+    {
+      "id": "TABLE-44CD4C-5",
+      "kind": "native_table",
+      "table": 4509004,
+      "index": 5,
+      "want": "hold"
+    },
+    {
+      "id": "TABLE-44CD4C-6",
+      "kind": "native_table",
+      "table": 4509004,
+      "index": 6,
+      "want": "advance"
+    },
+    {
+      "id": "TABLE-44CD4C-7",
+      "kind": "native_table",
+      "table": 4509004,
+      "index": 7,
+      "want": "even"
+    },
+    {
+      "id": "TABLE-44CD4C-8",
+      "kind": "native_table",
+      "table": 4509004,
+      "index": 8,
+      "want": "back"
+    },
+    {
+      "id": "A-0-9-0-0",
+      "kind": "branch_a",
+      "empty": false,
+      "count": 9,
+      "flag": false,
+      "mode18": false,
+      "want": 6
+    },
+    {
+      "id": "A-0-9-0-1",
+      "kind": "branch_a",
+      "empty": false,
+      "count": 9,
+      "flag": false,
+      "mode18": true,
+      "want": 6
+    },
+    {
+      "id": "A-0-9-1-0",
+      "kind": "branch_a",
+      "empty": false,
+      "count": 9,
+      "flag": true,
+      "mode18": false,
+      "want": 7
+    },
+    {
+      "id": "A-0-9-1-1",
+      "kind": "branch_a",
+      "empty": false,
+      "count": 9,
+      "flag": true,
+      "mode18": true,
+      "want": 6
+    },
+    {
+      "id": "A-0-10-0-0",
+      "kind": "branch_a",
+      "empty": false,
+      "count": 10,
+      "flag": false,
+      "mode18": false,
+      "want": 6
+    },
+    {
+      "id": "A-0-10-0-1",
+      "kind": "branch_a",
+      "empty": false,
+      "count": 10,
+      "flag": false,
+      "mode18": true,
+      "want": 6
+    },
+    {
+      "id": "A-0-10-1-0",
+      "kind": "branch_a",
+      "empty": false,
+      "count": 10,
+      "flag": true,
+      "mode18": false,
+      "want": 7
+    },
+    {
+      "id": "A-0-10-1-1",
+      "kind": "branch_a",
+      "empty": false,
+      "count": 10,
+      "flag": true,
+      "mode18": true,
+      "want": 6
+    },
+    {
+      "id": "A-0-11-0-0",
+      "kind": "branch_a",
+      "empty": false,
+      "count": 11,
+      "flag": false,
+      "mode18": false,
+      "want": 2
+    },
+    {
+      "id": "A-0-11-0-1",
+      "kind": "branch_a",
+      "empty": false,
+      "count": 11,
+      "flag": false,
+      "mode18": true,
+      "want": 2
+    },
+    {
+      "id": "A-0-11-1-0",
+      "kind": "branch_a",
+      "empty": false,
+      "count": 11,
+      "flag": true,
+      "mode18": false,
+      "want": 2
+    },
+    {
+      "id": "A-0-11-1-1",
+      "kind": "branch_a",
+      "empty": false,
+      "count": 11,
+      "flag": true,
+      "mode18": true,
+      "want": 2
+    },
+    {
+      "id": "A-1-9-0-0",
+      "kind": "branch_a",
+      "empty": true,
+      "count": 9,
+      "flag": false,
+      "mode18": false,
+      "want": null
+    },
+    {
+      "id": "A-1-9-0-1",
+      "kind": "branch_a",
+      "empty": true,
+      "count": 9,
+      "flag": false,
+      "mode18": true,
+      "want": null
+    },
+    {
+      "id": "A-1-9-1-0",
+      "kind": "branch_a",
+      "empty": true,
+      "count": 9,
+      "flag": true,
+      "mode18": false,
+      "want": null
+    },
+    {
+      "id": "A-1-9-1-1",
+      "kind": "branch_a",
+      "empty": true,
+      "count": 9,
+      "flag": true,
+      "mode18": true,
+      "want": null
+    },
+    {
+      "id": "A-1-10-0-0",
+      "kind": "branch_a",
+      "empty": true,
+      "count": 10,
+      "flag": false,
+      "mode18": false,
+      "want": null
+    },
+    {
+      "id": "A-1-10-0-1",
+      "kind": "branch_a",
+      "empty": true,
+      "count": 10,
+      "flag": false,
+      "mode18": true,
+      "want": null
+    },
+    {
+      "id": "A-1-10-1-0",
+      "kind": "branch_a",
+      "empty": true,
+      "count": 10,
+      "flag": true,
+      "mode18": false,
+      "want": null
+    },
+    {
+      "id": "A-1-10-1-1",
+      "kind": "branch_a",
+      "empty": true,
+      "count": 10,
+      "flag": true,
+      "mode18": true,
+      "want": null
+    },
+    {
+      "id": "A-1-11-0-0",
+      "kind": "branch_a",
+      "empty": true,
+      "count": 11,
+      "flag": false,
+      "mode18": false,
+      "want": null
+    },
+    {
+      "id": "A-1-11-0-1",
+      "kind": "branch_a",
+      "empty": true,
+      "count": 11,
+      "flag": false,
+      "mode18": true,
+      "want": null
+    },
+    {
+      "id": "A-1-11-1-0",
+      "kind": "branch_a",
+      "empty": true,
+      "count": 11,
+      "flag": true,
+      "mode18": false,
+      "want": null
+    },
+    {
+      "id": "A-1-11-1-1",
+      "kind": "branch_a",
+      "empty": true,
+      "count": 11,
+      "flag": true,
+      "mode18": true,
+      "want": null
+    },
+    {
+      "id": "B-0-10-0-0-0",
+      "kind": "branch_b",
+      "empty": false,
+      "count": 10,
+      "roll_below": false,
+      "flag": false,
+      "mode18": false,
+      "want": 6
+    },
+    {
+      "id": "B-0-10-0-0-1",
+      "kind": "branch_b",
+      "empty": false,
+      "count": 10,
+      "roll_below": false,
+      "flag": false,
+      "mode18": true,
+      "want": 6
+    },
+    {
+      "id": "B-0-10-0-1-0",
+      "kind": "branch_b",
+      "empty": false,
+      "count": 10,
+      "roll_below": false,
+      "flag": true,
+      "mode18": false,
+      "want": 7
+    },
+    {
+      "id": "B-0-10-0-1-1",
+      "kind": "branch_b",
+      "empty": false,
+      "count": 10,
+      "roll_below": false,
+      "flag": true,
+      "mode18": true,
+      "want": 6
+    },
+    {
+      "id": "B-0-10-1-0-0",
+      "kind": "branch_b",
+      "empty": false,
+      "count": 10,
+      "roll_below": true,
+      "flag": false,
+      "mode18": false,
+      "want": 6
+    },
+    {
+      "id": "B-0-10-1-0-1",
+      "kind": "branch_b",
+      "empty": false,
+      "count": 10,
+      "roll_below": true,
+      "flag": false,
+      "mode18": true,
+      "want": 6
+    },
+    {
+      "id": "B-0-10-1-1-0",
+      "kind": "branch_b",
+      "empty": false,
+      "count": 10,
+      "roll_below": true,
+      "flag": true,
+      "mode18": false,
+      "want": 7
+    },
+    {
+      "id": "B-0-10-1-1-1",
+      "kind": "branch_b",
+      "empty": false,
+      "count": 10,
+      "roll_below": true,
+      "flag": true,
+      "mode18": true,
+      "want": 6
+    },
+    {
+      "id": "B-0-11-0-0-0",
+      "kind": "branch_b",
+      "empty": false,
+      "count": 11,
+      "roll_below": false,
+      "flag": false,
+      "mode18": false,
+      "want": 7
+    },
+    {
+      "id": "B-0-11-0-0-1",
+      "kind": "branch_b",
+      "empty": false,
+      "count": 11,
+      "roll_below": false,
+      "flag": false,
+      "mode18": true,
+      "want": 7
+    },
+    {
+      "id": "B-0-11-0-1-0",
+      "kind": "branch_b",
+      "empty": false,
+      "count": 11,
+      "roll_below": false,
+      "flag": true,
+      "mode18": false,
+      "want": 7
+    },
+    {
+      "id": "B-0-11-0-1-1",
+      "kind": "branch_b",
+      "empty": false,
+      "count": 11,
+      "roll_below": false,
+      "flag": true,
+      "mode18": true,
+      "want": 7
+    },
+    {
+      "id": "B-0-11-1-0-0",
+      "kind": "branch_b",
+      "empty": false,
+      "count": 11,
+      "roll_below": true,
+      "flag": false,
+      "mode18": false,
+      "want": 6
+    },
+    {
+      "id": "B-0-11-1-0-1",
+      "kind": "branch_b",
+      "empty": false,
+      "count": 11,
+      "roll_below": true,
+      "flag": false,
+      "mode18": true,
+      "want": 6
+    },
+    {
+      "id": "B-0-11-1-1-0",
+      "kind": "branch_b",
+      "empty": false,
+      "count": 11,
+      "roll_below": true,
+      "flag": true,
+      "mode18": false,
+      "want": 7
+    },
+    {
+      "id": "B-0-11-1-1-1",
+      "kind": "branch_b",
+      "empty": false,
+      "count": 11,
+      "roll_below": true,
+      "flag": true,
+      "mode18": true,
+      "want": 6
+    },
+    {
+      "id": "B-1-10-0-0-0",
+      "kind": "branch_b",
+      "empty": true,
+      "count": 10,
+      "roll_below": false,
+      "flag": false,
+      "mode18": false,
+      "want": null
+    },
+    {
+      "id": "B-1-10-0-0-1",
+      "kind": "branch_b",
+      "empty": true,
+      "count": 10,
+      "roll_below": false,
+      "flag": false,
+      "mode18": true,
+      "want": null
+    },
+    {
+      "id": "B-1-10-0-1-0",
+      "kind": "branch_b",
+      "empty": true,
+      "count": 10,
+      "roll_below": false,
+      "flag": true,
+      "mode18": false,
+      "want": null
+    },
+    {
+      "id": "B-1-10-0-1-1",
+      "kind": "branch_b",
+      "empty": true,
+      "count": 10,
+      "roll_below": false,
+      "flag": true,
+      "mode18": true,
+      "want": null
+    },
+    {
+      "id": "B-1-10-1-0-0",
+      "kind": "branch_b",
+      "empty": true,
+      "count": 10,
+      "roll_below": true,
+      "flag": false,
+      "mode18": false,
+      "want": null
+    },
+    {
+      "id": "B-1-10-1-0-1",
+      "kind": "branch_b",
+      "empty": true,
+      "count": 10,
+      "roll_below": true,
+      "flag": false,
+      "mode18": true,
+      "want": null
+    },
+    {
+      "id": "B-1-10-1-1-0",
+      "kind": "branch_b",
+      "empty": true,
+      "count": 10,
+      "roll_below": true,
+      "flag": true,
+      "mode18": false,
+      "want": null
+    },
+    {
+      "id": "B-1-10-1-1-1",
+      "kind": "branch_b",
+      "empty": true,
+      "count": 10,
+      "roll_below": true,
+      "flag": true,
+      "mode18": true,
+      "want": null
+    },
+    {
+      "id": "B-1-11-0-0-0",
+      "kind": "branch_b",
+      "empty": true,
+      "count": 11,
+      "roll_below": false,
+      "flag": false,
+      "mode18": false,
+      "want": null
+    },
+    {
+      "id": "B-1-11-0-0-1",
+      "kind": "branch_b",
+      "empty": true,
+      "count": 11,
+      "roll_below": false,
+      "flag": false,
+      "mode18": true,
+      "want": null
+    },
+    {
+      "id": "B-1-11-0-1-0",
+      "kind": "branch_b",
+      "empty": true,
+      "count": 11,
+      "roll_below": false,
+      "flag": true,
+      "mode18": false,
+      "want": null
+    },
+    {
+      "id": "B-1-11-0-1-1",
+      "kind": "branch_b",
+      "empty": true,
+      "count": 11,
+      "roll_below": false,
+      "flag": true,
+      "mode18": true,
+      "want": null
+    },
+    {
+      "id": "B-1-11-1-0-0",
+      "kind": "branch_b",
+      "empty": true,
+      "count": 11,
+      "roll_below": true,
+      "flag": false,
+      "mode18": false,
+      "want": null
+    },
+    {
+      "id": "B-1-11-1-0-1",
+      "kind": "branch_b",
+      "empty": true,
+      "count": 11,
+      "roll_below": true,
+      "flag": false,
+      "mode18": true,
+      "want": null
+    },
+    {
+      "id": "B-1-11-1-1-0",
+      "kind": "branch_b",
+      "empty": true,
+      "count": 11,
+      "roll_below": true,
+      "flag": true,
+      "mode18": false,
+      "want": null
+    },
+    {
+      "id": "B-1-11-1-1-1",
+      "kind": "branch_b",
+      "empty": true,
+      "count": 11,
+      "roll_below": true,
+      "flag": true,
+      "mode18": true,
+      "want": null
+    },
+    {
+      "id": "MAX--2147483648--2147483648",
+      "kind": "signed_max",
+      "a": -2147483648,
+      "b": -2147483648,
+      "want": -2147483648
+    },
+    {
+      "id": "MAX--2147483648--1",
+      "kind": "signed_max",
+      "a": -2147483648,
+      "b": -1,
+      "want": -1
+    },
+    {
+      "id": "MAX--2147483648-0",
+      "kind": "signed_max",
+      "a": -2147483648,
+      "b": 0,
+      "want": 0
+    },
+    {
+      "id": "MAX--2147483648-2147483647",
+      "kind": "signed_max",
+      "a": -2147483648,
+      "b": 2147483647,
+      "want": 2147483647
+    },
+    {
+      "id": "MAX--1--2147483648",
+      "kind": "signed_max",
+      "a": -1,
+      "b": -2147483648,
+      "want": -1
+    },
+    {
+      "id": "MAX--1--1",
+      "kind": "signed_max",
+      "a": -1,
+      "b": -1,
+      "want": -1
+    },
+    {
+      "id": "MAX--1-0",
+      "kind": "signed_max",
+      "a": -1,
+      "b": 0,
+      "want": 0
+    },
+    {
+      "id": "MAX--1-2147483647",
+      "kind": "signed_max",
+      "a": -1,
+      "b": 2147483647,
+      "want": 2147483647
+    },
+    {
+      "id": "MAX-0--2147483648",
+      "kind": "signed_max",
+      "a": 0,
+      "b": -2147483648,
+      "want": 0
+    },
+    {
+      "id": "MAX-0--1",
+      "kind": "signed_max",
+      "a": 0,
+      "b": -1,
+      "want": 0
+    },
+    {
+      "id": "MAX-0-0",
+      "kind": "signed_max",
+      "a": 0,
+      "b": 0,
+      "want": 0
+    },
+    {
+      "id": "MAX-0-2147483647",
+      "kind": "signed_max",
+      "a": 0,
+      "b": 2147483647,
+      "want": 2147483647
+    },
+    {
+      "id": "MAX-2147483647--2147483648",
+      "kind": "signed_max",
+      "a": 2147483647,
+      "b": -2147483648,
+      "want": 2147483647
+    },
+    {
+      "id": "MAX-2147483647--1",
+      "kind": "signed_max",
+      "a": 2147483647,
+      "b": -1,
+      "want": 2147483647
+    },
+    {
+      "id": "MAX-2147483647-0",
+      "kind": "signed_max",
+      "a": 2147483647,
+      "b": 0,
+      "want": 2147483647
+    },
+    {
+      "id": "MAX-2147483647-2147483647",
+      "kind": "signed_max",
+      "a": 2147483647,
+      "b": 2147483647,
+      "want": 2147483647
+    },
+    {
+      "id": "UNKNOWN-original_gameplay",
+      "kind": "noninference",
+      "key": "original_gameplay",
+      "want": "UNPROVEN"
+    },
+    {
+      "id": "UNKNOWN-target_after_tick",
+      "kind": "noninference",
+      "key": "target_after_tick",
+      "want": "UNPROVEN"
+    },
+    {
+      "id": "UNKNOWN-rng_consumption",
+      "kind": "noninference",
+      "key": "rng_consumption",
+      "want": "UNPROVEN"
+    },
+    {
+      "id": "UNKNOWN-manager_mode_write",
+      "kind": "noninference",
+      "key": "manager_mode_write",
+      "want": "UNPROVEN"
+    },
+    {
+      "id": "UNKNOWN-hook_abi",
+      "kind": "noninference",
+      "key": "hook_abi",
+      "want": "UNPROVEN"
+    },
+    {
+      "id": "UNKNOWN-exact_action",
+      "kind": "noninference",
+      "key": "exact_action",
+      "want": "UNPROVEN"
+    },
+    {
+      "id": "UNKNOWN-unit_ownership",
+      "kind": "noninference",
+      "key": "unit_ownership",
+      "want": "UNPROVEN"
+    },
+    {
+      "id": "UNKNOWN-real_3side",
+      "kind": "noninference",
+      "key": "real_3side",
+      "want": "UNPROVEN"
+    }
+  ]
+}
