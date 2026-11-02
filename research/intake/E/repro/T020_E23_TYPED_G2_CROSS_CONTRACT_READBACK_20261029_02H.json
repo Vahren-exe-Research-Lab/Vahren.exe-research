@@ -1,0 +1,56 @@
+{
+  "research_id": "E-AUDIT-20261029-02H-T018-T020-TYPED-G2-CROSS-CONTRACT-01",
+  "owner": "E",
+  "state": "STATIC_SYNTHETIC_EXECUTED_VERIFY_NOT_READY",
+  "local_date": "2026-10-29 02H JST",
+  "original_exe_sha256_from_20261021_manifest": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "original_exe_rehashed": false,
+  "source_e21_fixture_rehashed_on_pc": false,
+  "new_tests": {
+    "passed": 25,
+    "failed": 0
+  },
+  "same_run_old_tests": {
+    "passed": 92,
+    "failed": 0
+  },
+  "same_run_total": {
+    "passed": 117,
+    "failed": 0
+  },
+  "files": [
+    {
+      "name": "t020_e23_typed_g2_cross_contract_20261029_02H.py",
+      "size": 7024,
+      "sha256": "1E7F28E49BDE27C7E8B371D8824321F1A41D0A2560D8CA042FA00A9D5AF4FB90"
+    },
+    {
+      "name": "T020_E23_TYPED_G2_CROSS_CONTRACT_AUDIT_20261029_02H.md",
+      "size": 4618,
+      "sha256": "0674BDEEFA3F9669FEDE7906F538DAFC1943354FB118A4023E7A803579E02AF4"
+    }
+  ],
+  "source_integrity": "PC actual bytes hashed, PC read_file of report and code tail",
+  "master": {
+    "latest_official_checkpoint_read": 196,
+    "last_known_ready": 596,
+    "last_known_task_states": {
+      "done": 9,
+      "in_progress": 21,
+      "verify": 4
+    },
+    "full_recount_performed": false,
+    "new_ready_integrated": 0
+  },
+  "original_dynamic_observed": 0,
+  "actual_golden_pass": 0,
+  "strict_match": 0,
+  "new_safety_refusals": 0,
+  "new_connection_failures": 0,
+  "pending": [
+    "E21 raw fixture PC byte-level attestation",
+    "G0/G1/G2 genuine native same-run receipts",
+    "cross-owner/offline dedup"
+  ],
+  "note": "Synthetic G2 diagnostic only; no old gameplay test or native provenance proof."
+}
