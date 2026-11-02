@@ -1,3 +1,4 @@
+# CHECKED_2026-11-02_15H: 2799 unique numeric VA x research ID pairs, 7 columns, zero duplicate normalized pairs, zero orphan IDs/blocked metadata VA/known prohibited-range VA. Older # source_snapshot_head counts below are historical, not current. VA mentions indicate source lookup only, not confirmed ABI or new original-game behavior.
 # 2026-11-02 14H B owner +8 historical safe source IDs: +57 address-study mentions only; not new ABI/Golden/READY.
 # source_snapshot_head=20261102_13H_B9_SAFE_INCREMENTAL; 2716 distinct VA x ID pairs (+52 from this run); no automated ABI/curation claims.
 # 2026-11-02 QA erratum: removed duplicate leading-zero VA alias 0x005263E0/0x5263E0 for same study; normalized final 6-column TSV row by adding explicit empty develop_ref_mentions. Search metadata repair ONLY, no native discovery.
