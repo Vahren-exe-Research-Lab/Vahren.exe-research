@@ -1,0 +1,47 @@
+{
+  "research_id": "E-AUDIT-20261031-14H-T020-T013-POSTRANK-UNIT8-GATE-01",
+  "owner": "E/T020",
+  "run": "2026-10-31 14H JST",
+  "original_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "b_source_relative_path": "data/T013_RANK_CLEANUP_TO_PERUNIT_EVENT_CALLCHAIN_NATIVE_20261031_14H.md",
+  "b_source_sha256": "F2CB56A3BE2401B93A6A62A21F8F942A27CE710C34A9860EBAECF03A2EC30E19",
+  "reference_master_sha256": "E7329C9C6368E67BE191A4ABF45156319E32826FF039FB2B9E226DEDDAC6B6B3",
+  "files": [
+    {
+      "name": "t020_e_t013_postrank_unit8_gate_20261031_14H.py",
+      "bytes": 5157,
+      "sha256": "EB81F30F0AB5F7BA76A8F27C25E03C5938705CA497345A2362F81260A0BD281E"
+    },
+    {
+      "name": "T020_E_T013_POSTRANK_UNIT8_CASES_20261031_14H.json",
+      "bytes": 40941,
+      "sha256": "F3EB34452C557C901C7BB6A5CFA9545ABAEC1BB48A778DA965800B8D05B1593D"
+    },
+    {
+      "name": "T020_E_T013_POSTRANK_UNIT8_ACCEPTANCE_20261031_14H.md",
+      "bytes": 5025,
+      "sha256": "7247DE5F9A2C5AB7347FDFEB67FC151D8EB8E703F15BD9B6E68E59AF0937DB1A"
+    }
+  ],
+  "test": {
+    "first_exit": 0,
+    "repeated_exit": 0,
+    "pe_window_pass": 4,
+    "pe_window_total": 4,
+    "direct_e8_pass": 11,
+    "direct_e8_total": 11,
+    "synthetic_pass": 128,
+    "synthetic_total": 128
+  },
+  "state": "STATIC/CONDITIONAL_SYNTHETIC/VERIFY/NOT_READY",
+  "golden": {
+    "dynamic_observed": 0,
+    "actual_pass": 0,
+    "strict_match": 0
+  },
+  "new_formal_ready": 0,
+  "github_kb_develop_checked": "36a840dc9c05be8b64ac9165926cfa47a8b5ff34",
+  "protected_refusals": "UNCHANGED_BLOCKED",
+  "readback_method": "independent PowerShell Get-FileHash + byte length; JSON reread required",
+  "next": "C-NB02 legal G0/G1/G2 original-game receipts; Unit8 actual next-tick effect and final target remain VERIFY"
+}
