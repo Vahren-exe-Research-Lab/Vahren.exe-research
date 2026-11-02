@@ -1,0 +1,101 @@
+{
+  "schema": "E_T020_DEMO_VTABLE_GATE_SYNTHETIC_V1",
+  "status": "DESIGNED_SYNTHETIC_ONLY",
+  "cases": [
+    {
+      "id": "NS-01",
+      "override": {
+        "slot_identity": "battlewnd_primary_0x0c"
+      },
+      "expected": "REJECT_VTABLE_NAMESPACE"
+    },
+    {
+      "id": "NS-02",
+      "override": {
+        "slot_identity": "battlewnd_secondary_0x04"
+      },
+      "expected": "REJECT_VTABLE_NAMESPACE"
+    },
+    {
+      "id": "RUN-01",
+      "override": {
+        "runtime_same_run": false
+      },
+      "expected": "REJECT_CROSS_RUN"
+    },
+    {
+      "id": "THIS-01",
+      "override": {
+        "edi": "unknown"
+      },
+      "expected": "VERIFY_THIS_IDENTITY"
+    },
+    {
+      "id": "THIS-02",
+      "override": {
+        "edi": "0x008B8C94"
+      },
+      "expected": "VERIFY_THIS_IDENTITY"
+    },
+    {
+      "id": "PTR-01",
+      "override": {
+        "globals_rechecked": false
+      },
+      "expected": "VERIFY_POINTER_LIFETIME"
+    },
+    {
+      "id": "VT-01",
+      "override": {
+        "demo_vptr": "unknown"
+      },
+      "expected": "VERIFY_RUNTIME_VPTR"
+    },
+    {
+      "id": "VT-02",
+      "override": {
+        "demo_vptr": "0x006380CC"
+      },
+      "expected": "VERIFY_RUNTIME_VPTR"
+    },
+    {
+      "id": "CNT-01",
+      "override": {
+        "counter": "unknown"
+      },
+      "expected": "VERIFY_COUNTER_BRANCH"
+    },
+    {
+      "id": "CNT-02",
+      "override": {
+        "counter": "nonpositive"
+      },
+      "expected": "OTHER_LOOP_BRANCH"
+    },
+    {
+      "id": "CALL-01",
+      "override": {
+        "vcall_sites": [
+          "0x0040E42E"
+        ]
+      },
+      "expected": "VERIFY_DUAL_DISPATCH"
+    },
+    {
+      "id": "CALL-02",
+      "override": {
+        "vcall_sites": [
+          "0x0040E445",
+          "0x0040E42E"
+        ]
+      },
+      "expected": "VERIFY_DUAL_DISPATCH"
+    },
+    {
+      "id": "POS-01",
+      "override": {},
+      "expected": "SYNTHETIC_INTERNAL_ONLY"
+    }
+  ]
+}
+
