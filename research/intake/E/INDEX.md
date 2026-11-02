@@ -2,6 +2,12 @@
 
 This is the entrypoint for E-owned PRIVATE intake material. **PUBLISHED_INTAKE / NOT_CURATED**: neither original-game Golden nor confirmed compatibility. A provenance crosswalk is a condensed source map, not a replacement for full authorized original-owner reports or native byte witnesses.
 
+## Curator selective-adoption handoff — pinned Draft PR #17 (2026-11-02)
+
+- [Machine-readable 77-path owner/develop comparison and curator action queue](E-PR17-CURATOR-SELECTIVE-ADOPTION-20261102.tsv): PRIVATE E-only PR head `3f8f49e8d044eafcbf9c2fab2ff1a85b8a25d6f9` vs observed `develop` `780427ca8e29a3578633a47b12e1a7fd97f0b624`. **9 same-blob skip, 13 branch-only candidates, 2 different-blob manual conflict reviews, 53 not yet compared.** This is a bounded file comparison, not 77 source study IDs or a completed semantic review.
+- Recheck *live* develop and owner head before cherry-picking any source. Use exact file/ID/SHA/errata, review missing and conflicting blobs, stage selected safe material in the curator's own current-develop-based isolated branch, and integrate only after approved checks and ff-only. **Do not merge PR #17 wholesale** or rewrite its diverged history.
+- Previously refused contents/operations remain **BLOCKED**, even if a PR is available: retain refusal metadata and lawful resume point only, not alternate retrieval/publishing. Source/fixture intake never proves original-game Golden, strict MATCH or formal READY; owner E cannot update `REF_*`/dictionaries/`develop`.
+
 ## Verified historic PC research batch
 
 - **193 E report research IDs**, independent source-file SHA256 193/193 matched to actual authorized-PC copies in the 2026-11-02 audit. Duplicated research IDs inside this selected set: **0**.
