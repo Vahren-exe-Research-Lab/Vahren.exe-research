@@ -1,0 +1,57 @@
+{
+  "research_id": "E-AUDIT-20261030-20H-T020-T013-EMPTY-REPOPULATE-GATE-01",
+  "status": "STATIC_NATIVE_PE_VERIFIED_SYNTHETIC_PASS_VERIFY_NOT_READY",
+  "owner": "E/T020",
+  "input_source": {
+    "b_owner_id": "B-20261030-20H-T013-MODE2-EMPTY-RANGE-REPOPULATE-01",
+    "b_source_sha256": "CEF83DB32B3F4812CB6E8F195D35E9F33DE4342BCDF211078C37E865DB08539F",
+    "pe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187"
+  },
+  "saved_files": [
+    {
+      "name": "t020_e_t013_empty_repopulate_gate_20261030_20H.py",
+      "bytes": 2929,
+      "sha256": "21EFEF852ED594F313DE311CB22B1A636870D4419D04EEC82AD2DC6E50B54EB1"
+    },
+    {
+      "name": "T020_E_T013_EMPTY_REPOPULATE_CASES_20261030_20H.json",
+      "bytes": 13974,
+      "sha256": "3C45B9815AE46D529A3951D35144163D2F0B185DD85DFB4B806D1BC82A021159"
+    },
+    {
+      "name": "T020_E_T013_EMPTY_REPOPULATE_ACCEPTANCE_20261030_20H.md",
+      "bytes": 4458,
+      "sha256": "2DBB1D8C69F0B54BA068485217C2D499B949A2C98DFF4F39A870B0030997E0D5"
+    }
+  ],
+  "proof": {
+    "pe_windows": 3,
+    "e8_calls": 4,
+    "branch_bytes": 2
+  },
+  "synthetic": {
+    "new_gate_cases": 48,
+    "new_negative_cases": 12,
+    "executed_pass": 60,
+    "executed_fail": 0
+  },
+  "original_gameplay": {
+    "dynamic_observed": 0,
+    "golden_pass": 0,
+    "strict_match": 0
+  },
+  "master": {
+    "sha256": "E7329C9C6368E67BE191A4ABF45156319E32826FF039FB2B9E226DEDDAC6B6B3",
+    "checkpoint": 196,
+    "ready": 596,
+    "new_ready_integrated": 0,
+    "task_states": {
+      "done": 9,
+      "in_progress": 21,
+      "verify": 4
+    },
+    "task_states_basis": "prior_19H_count_plus_unchanged_master_hash"
+  },
+  "blocked": "old owner-specific safety refusals and OFFLINE-UNSYNCED remain open; no retries; new safety refusal 0",
+  "next": "T020 inspect 0x44C588 and 0x44D2A0, T018 same-run lawful G0/G1/G2"
+}
