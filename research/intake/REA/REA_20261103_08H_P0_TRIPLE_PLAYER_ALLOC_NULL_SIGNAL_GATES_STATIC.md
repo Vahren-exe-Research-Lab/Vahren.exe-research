@@ -16,6 +16,9 @@
 - Request-side mode-1 window `0x48CA53 mov ecx,[ebp+0x1E8630]; 0x48CA59 mov edx,[ecx]; 0x48CA5B mov eax,[edx+4]; 0x48CA5E call eax` dereferences the first slot before `0x48CA66 cmp eax,ebx` (which follows the indirect call). This is a **local unchecked dereference pattern**, not proof a NULL actually reaches it or that any original-game crash occurs.
 - **Bounded conclusion:** allocation failure is encoded explicitly as nullable engine pointer fields; neither the immediate `0x4B79D6` callsite nor the worker's normal success code establishes their validity. The mode-1 dereference path therefore still needs independent reachability/dominance and error-path evidence.
 
+- **Second bounded control-flow check (same 08H, no new ID):** In the established mode-1 callee `0x48C880`, alternate path `0x48C9CC jmp 0x48CA1E` and the `0x48CA18` fallthrough converge at `0x48CA1E`. On normal helper return, the following native block `0x48CA1E..0x48CA5E` contains no local conditional branch guarding the first slot's `0x48CA53/59/5B/5E` indirect dereference. The `0x48CA66` NULL comparison is after the indirect CALL. **Upstream caller checks, allocation guarantees and helper exceptions remain unproven**; this is not dynamic NULL reachability.
+- **Extra original read-only receipts:** `0x48C9CC+0x06` SHA256 `DF481AD86D80A60D42EB9CF64B9E9AF4259B22C02B57FC0B7CBE38C67F3569C6`; `0x48CA1E+0x54` `99C1541753F2172B8DC2691E31DE8493A707769FC4F8768EE71BB79467954467`; caller `0x4B99B9+0x0C` `1667CC3EB5A8078D8906B08AA56081498CEE2142771B7958D4852E85620A3D3F`. Native/V9 direct E8 **2/2**: `0x4B99C0 -> 0x48C880`, `0x48CA24 -> 0x4C5B70` (not two formal verified bundles).
+
 ## Reproducible read-only receipts
 - Native byte SHA256 `0x48A91B+0xC0`: `61530BB439C0B3D41B1DE831BC61334C2925CEB3F72D6FFF20FA9E16EDB75445`.
 - Native byte SHA256 `0x48CA53+0x20`: `BECCBFCAEB023C60A2C96063D5C2C6F67313DE1A3C576CC147FE95989391A0A9`.
