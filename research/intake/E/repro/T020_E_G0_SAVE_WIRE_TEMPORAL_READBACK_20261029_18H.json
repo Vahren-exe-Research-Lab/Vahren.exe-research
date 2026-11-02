@@ -1,0 +1,17 @@
+{
+  "research_id": "E-AUDIT-20261029-18H-T018-T020-G0-SAVE-WIRE-TEMPORAL-GATE-01",
+  "source": "PC-local E tests",
+  "status": "STATIC_VERIFY_NOT_READY",
+  "report_file": "T020_E_G0_SAVE_WIRE_TEMPORAL_PROVENANCE_AUDIT_20261029_18H.md",
+  "report_sha256": "ED9CDCA91DE17FBCC995075917FA972AB2FCF35D658C681DB24843321E273AE1",
+  "report_bytes": 4191,
+  "report_readback_lines": 28,
+  "source_reports_sha256_verified": 8,
+  "new_negative_cases": "4 DESIGNED / NOT RUN",
+  "native_game_executions": 0,
+  "new_ready_master_integrations": 0,
+  "golden_actual_pass": 0,
+  "strict_match": 0,
+  "master_checkpoint_prior_verified": 196,
+  "save_semantics": "No same-run G1/G2 attestation; mtime and candidate saved-wire only."
+}
