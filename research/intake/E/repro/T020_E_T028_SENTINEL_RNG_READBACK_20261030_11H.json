@@ -1,0 +1,74 @@
+{
+  "research_id": "E-AUDIT-20261030-11H-T020-T028-SENTINEL-BRANCH-RNG-01",
+  "created_on": "2026-10-30 11H JST",
+  "classification": "STATIC_SYNTHETIC_VERIFY_NOT_READY",
+  "test_run": {
+    "new_model_pass": 30,
+    "new_anti_overclaim_pass": 10,
+    "new_total_pass": 40,
+    "validator_initial_exit_code": 0,
+    "validator_repeat_json_verdict": "PASS_STATIC_SYNTHETIC",
+    "native_window_sha_pass": 2,
+    "native_rng_e8_call_pass": 2,
+    "native_double_pass": 2,
+    "dynamic_observed": 0,
+    "actual_golden_pass": 0,
+    "strict_match": 0
+  },
+  "master": {
+    "checkpoint_last_formal": 196,
+    "ready_last_formal_total": 596,
+    "by_owner": {
+      "A": 115,
+      "B": 229,
+      "C": 136,
+      "D": 116
+    },
+    "task_queue": {
+      "DONE": 9,
+      "IN_PROGRESS": 21,
+      "VERIFY": 4,
+      "total": 34
+    },
+    "sha256_before_after": "E7329C9C6368E67BE191A4ABF45156319E32826FF039FB2B9E226DEDDAC6B6B3",
+    "new_ready_integrated": 0
+  },
+  "hashes_on_authorized_windows_pc": {
+    "tests/t020_e_t028_sentinel_rng_gate_20261030_11H.py": {
+      "sha256": "8F7A0430A4066F7F1F898E09CC5DE31D3C4D7AA32DEC233D9A2156F62F45AD3D",
+      "bytes": 5561
+    },
+    "tests/T020_E_T028_SENTINEL_RNG_CASES_20261030_11H.json": {
+      "sha256": "F08AB6DFEE042F6F74880C753790575789EC7FA36D7BA1F1BCF71D69B9150A82",
+      "bytes": 14924
+    },
+    "tests/T020_E_T028_SENTINEL_RNG_ACCEPTANCE_20261030_11H.md": {
+      "sha256": "81BA9A46B1FBC02E6AACF60E9AF1AE9673B5275A146292DC017A6DB529000422",
+      "bytes": 3463
+    },
+    "data/T028_T013_SELECTOR_D0_SENTINEL_RNG_GATE_NATIVE_20261030_11H.md": {
+      "sha256": "6A6AE20A74A4CB05E8139CDD285CEECA7C61F2364AD8844CE0660D8923AB3385",
+      "bytes": 4201
+    }
+  },
+  "refusal_integrity": {
+    "prior_B_11h_id": "B-RC-20261030-1115-T028-T013-APPEND-SAFETY-01",
+    "prior_B_summary_appends_saved": "0/3",
+    "prior_B_detail_saved": true,
+    "prior_refusal_retried": false,
+    "prior_refusal_rewritten_in_E": false,
+    "new_refusals": 0
+  },
+  "operation_recovery": {
+    "id": "E-OTHER-20261030-11H-INDEX-OLDPATH-ENOENT-01",
+    "kind": "OTHER/RECOVERED",
+    "failed": "Read archived search_index/BUILD_MANIFEST.json",
+    "reason": "ENOENT (replaced by V9 current research state)",
+    "next": "Read-only CURRENT_ACTIVE_RESEARCH_STATE_LATEST.json and V9 manifest; no old-path replay",
+    "file_mutation_from_failure": false
+  },
+  "offline_unsynced": "OPEN",
+  "original_gameplay": "NOT_RUN",
+  "next": "Review independent B evidence for +0xD0 producer/consumer identity; same-run legal G0-G1-G2 evidence and old DAT epoch; only then strict comparison",
+  "verification_method": "Windows Get-FileHash SHA256 and separate direct read_file; file bytes pinned before receipt creation"
+}
