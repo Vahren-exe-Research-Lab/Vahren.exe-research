@@ -500,3 +500,5 @@
 # ---- T028 independently verified grid/cache functions (2026-11-03) ----
 0x4E4F60	func	SpatialCell_RemoveMatchingPointer	Native branch on +0x3C selects identity-gated scalar clear or matching-pointer vector removal; death/move direct callers; gameplay and ownership VERIFY	静的確認	B-20261026-09H-T028-SPATIAL-GRID-DUAL-ERASE-01; original ver0.67 PE SHA256 E8DAC301; REF_BATTLE_AI_MORALE.md
 0x4EC1E0	func	RouteCache_ConditionalHitPromotion	Native hit recency relink only above 8000 records, eviction branch on count>=8192; key ownership and runtime outcomes VERIFY	静的確認	B-20261027-01H-T028-ROUTE-CACHE-BOUNDED-PROMOTION-01; original ver0.67 PE SHA256 E8DAC301; REF_BATTLE_AI_MORALE.md
+
+0x576F10	func	SkillFlash_PostDamage_GatedRingDispatch	Bounded original x86: Unit+0x1867C/+0x8D gates, 8-slot R ring Unit+0x928+idx*0x264, conditional direct 0x4DFBB0 call, normal ret 4; lower effect/RNG unverified	静的確認	B-20261013-1440-01; B-20261013-1614-01; REF_SKILL_POST_ACTION.md
