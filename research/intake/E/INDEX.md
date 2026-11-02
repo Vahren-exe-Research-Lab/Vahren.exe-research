@@ -55,7 +55,7 @@ All three reports' current PC SHA256 matched their indexed values. Earlier archi
 
 - [E/T020 reproducibility assets: 337 safe local Python/JSON byte-SHA receipts](E-T020-REPRO-ASSET-RECEIPTS-20261102.tsv): PC-only code/data, 168 Python + 169 JSON; 3 withheld by name/scope, not executable or Golden proof.
 
-The named PC-only research tools are not supplied as executable source by this GitHub index. Review their owner/source license, data safety and source-hash against the approved PC copy before choosing a specific tool to reproduce a synthetic negative. Do not claim all 337 files implement independent results or all run successfully.
+The 337-row table is a **metadata index**. As of this owner PR's 2026-11-02 source-preservation pass, **37 distinct basename-matching Python/JSON asset files** have separately preserved contents under `research/intake/E/repro/`, while **300 indexed assets are not present as same-named repro blobs on this PR** (this does not rule out other PRs/develop or duplicate variants). Some older `PC_SOURCE_METADATA_ONLY` review-state cells lag the source files already preserved; check actual current PR paths and their SHA rather than treating a row flag as authoritative. Many GitHub copies require separate authorized PC inputs or a DEV source tree and are not standalone. Review owner, source SHA, permissions, errata, and safety for each remaining asset. Do not claim all 337 implement independent results or all run successfully; none is proof of original Golden or READY.
 
 ### Existing G3/G4 owner-source recovery (2026-11-02; NOT Golden)
 
