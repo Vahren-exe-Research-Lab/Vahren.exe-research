@@ -1,0 +1,68 @@
+{
+  "research_id": "E-AUDIT-20261031-04H-T020-T013-LABEL-WEIGHT-FANOUT-01",
+  "owner": "E/T020",
+  "date": "2026-10-31 04H JST",
+  "state": "STATIC_NATIVE_BYTE_PINNED_CONDITIONAL_SYNTHETIC_VERIFY_NOT_READY",
+  "source_sha256": {
+    "original_research_pe": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+    "b_04h_owner_note": "04FBCBB5EDA02856FD7B9C7E711C141E53E40EED2897EDDD560959F256FAE31C",
+    "master_unchanged": "E7329C9C6368E67BE191A4ABF45156319E32826FF039FB2B9E226DEDDAC6B6B3"
+  },
+  "files": [
+    {
+      "name": "t020_e_t013_label_weight_vector_fanout_gate_20261031_04H.py",
+      "bytes": 3943,
+      "sha256": "B6AF23586AB3E09C28A9BD293382B2F2FFB9E8E1B50EBDDC8C0199EA434D6E5C"
+    },
+    {
+      "name": "T020_E_T013_LABEL_WEIGHT_FANOUT_CASES_20261031_04H.json",
+      "bytes": 82713,
+      "sha256": "B05D90ED1CF80B66E66E825DFB97BE34DC6804BBEE9875220E5F138FD9D50B7C"
+    },
+    {
+      "name": "T020_E_T013_LABEL_WEIGHT_FANOUT_ACCEPTANCE_20261031_04H.md",
+      "bytes": 4829,
+      "sha256": "71AD742211E1387CBE0C43A090DFF7684E5C248B1EC7EA9A43433C4A6B2CE8E5"
+    }
+  ],
+  "tests": {
+    "new_first_pass": 288,
+    "new_replay_pass": 288,
+    "prior_03h_replay": 144,
+    "prior_02h_replay": 224,
+    "current_distinct_executed": 656,
+    "exit_code_each": 0,
+    "original_game_executions": 0
+  },
+  "master": {
+    "last_formal_checkpoint": 196,
+    "ready": 596,
+    "a": 115,
+    "b": 229,
+    "c": 136,
+    "d": 116,
+    "task_counts_old_confirmed": {
+      "done": 9,
+      "in_progress": 21,
+      "verify": 4
+    },
+    "new_integrations": 0
+  },
+  "golden": {
+    "dynamic_observed": 0,
+    "actual_pass": 0,
+    "strict_match": 0
+  },
+  "t019": {
+    "new_confirmed_original_contradictions": 0,
+    "sha_errata_b19": "OPEN",
+    "sha_errata_b01": "OPEN",
+    "gameclear_source_scope": "RESOLVED"
+  },
+  "safety": {
+    "new_refusals": 0,
+    "previous_refusals": "BLOCKED_NOT_RETRIED",
+    "offline_unsynced": "OPEN"
+  },
+  "next": "Original legal same-run G0/G1/G2 receipts, DAT byte restoration, dynamic caller/Unit writer independent checks."
+}
