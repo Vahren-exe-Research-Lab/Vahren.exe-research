@@ -23,6 +23,7 @@ All points below are STATIC or INFERRED unless stated otherwise. Original gamepl
 - Child membership through 0x568710 and the source pointer used by callers are separate relationships.
 - Four summon-related caller contexts include 0x54DF4B, 0x550219, 0x57F484 and 0x57F492.
 - References: data/T011_SUMMONFLASH_HOLDER_CHAIN_NATIVE_20261027_14H.md; data/T011_SUMMON_CALLER_GROUP_PROVENANCE_NATIVE_20261027_15H.md; data/T011_SUMMON_CALLER_SOURCE_TRIAD_SENTINEL_NATIVE_20261027_16H.md.
+- **Provenance / DUPLICATE_LINKED, not a newly curated x86 finding:** B/T013 source `B-20261013-1141-01` ([canonical sanitized intake](research/intake/B/B-20261013-1141-01.md), historical [owner PR #18](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18) head `48821779f639013a4cc371ddc91e1b3064bc3647`) independently matched original report SHA256 `7F2DAAA59F640A34387E95F569A2D6C734A319D64C61FA46D5D4F2B4AEE1E529`. Its `0x577260` lookup/null/`node+0x28`/`ret 0x1C` interpretation is **already** represented by the existing `UnitData_FindSummonRecord` symbol and `EXP_CACHE_STRING_KEY_RECORD_ABI` evidence. The subsequent owner `B-20261013-1436-01` refines helper cursor interpretation; helper internals and runtime summon success remain VERIFY. This new link is historical source preservation and correction lineage, **not** a new semantic CURATED fact, Golden PASS or READY.
 
 ## 4. P0 remaining, no inferred READY
 - Verify whether an inline summon EXP store is transferred to persistent UnitData before battle result cleanup.

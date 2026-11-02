@@ -25,6 +25,7 @@
 | `REF_STRUCTS.md` | **PC専用の自動生成物（GitHubには存在しない）**。構造体事典。GitHubでは `structs.tsv` を参照 |
 | `REF_DAT_BEHAVIOR.md` | DAT（イベントスクリプト）の挙動 |
 | `REF_UI_SYSTEM.md` | 画面部品（ウィンドウ）・詳細パネル・説明表示の仕組み |
+| `REF_SKILL_POST_ACTION.md` | B/T012・T013の技能発動後処理 `0x57BE30`：待機値・キー付き管理・リンク先メッセージの限定原作x86確証、下位作用とGolden未検証 |
 | `REF_AUDIO_VORBIS.md` | 原作音声系（Vorbisヘッダ解析）についてREAの原作x86根拠と未検証の境界をまとめたもの |
 | `REF_BATTLE_TAKEOVER.md` | 戦闘乗っ取り・外部結果統合の入口、Task/VM・原作終了処理・IPC・セーブの境界と未検証課題 |
 | `REF_SAVE_PERSISTENCE.md` | A/T014：global.sav、通常save、共有envelope、イベント実行履歴、未検証境界 |

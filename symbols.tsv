@@ -210,6 +210,8 @@
 0x65EB64	global	g_FourwayBattleModeFlag	複数の戦闘経路で0と1に更新される四方向選択用状態値。用途の正式名称は未確認。	推定	T024§B-20261026-0115
 0x63A4BC	object	vt_SimpleUnit	SimpleUnit の仮想関数表。コンストラクタが Unit+0x8C に0x0001を書き、通常ユニット種別となる。	静的確認	T013§primary/fallback poolのRTTI同定, EXP_SIMPLEBATTLE_LIFECYCLE§CP01
 0x63A8E4	object	vt_SimpleStaticUnit	SimpleStaticUnit の仮想関数表。コンストラクタが Unit+0x8C に0x0101を書き、静的ユニット候補群へ登録する。	静的確認	T013§primary/fallback poolのRTTI同定
+# ---- 技能後処理・待機管理（原作x86限定） ----
+0x57BE30	func	Skill_PostActionUpdate	ECXに技能参照・stackにUnit参照を受け、技能後段でUnit待機フィールド・キー付き管理値・条件付き通知ラッチを更新する局所処理。正常末尾0x57C170はret4。下位関数の作用と実機挙動は未検証。	静的確認	B-20261013-1110-01, REF_SKILL_POST_ACTION.md
 # ---- 経験値・召喚・ユニット記録 ----
 0x54E7B0	func	Summon_SpawnFromSkill	技能・発動元を受けて召喚処理を進める大規模関数。呼出元に Missile/RushMissile などがあり、Unit+0xC の holder 参照を生成先へ渡す。	静的確認	T011§召喚caller, EXP_KIND4_DISPATCH_PRODUCERS, EXP_CACHE_STRING_KEY_RECORD_ABI§4
 0x547490	func	Summon_ProcessSkillKind4	Skill+0x40==4 の召喚系 producer の一つ。UnitData の一時コピーと記録挿入に 0x466BA0→0x577310 を用いる。	静的確認	EXP_KIND4_DISPATCH_PRODUCERS, EXP_CACHE_STRING_KEY_RECORD_ABI§4
