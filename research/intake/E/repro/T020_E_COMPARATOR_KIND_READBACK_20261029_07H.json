@@ -1,0 +1,50 @@
+{
+  "research_id": "E-AUDIT-20261029-07H-T018-T020-COMPARATOR-KIND-BOUNDARY-01",
+  "owner": "E/T018/T020",
+  "category": "STATIC_SYNTHETIC_VERIFY_NOT_READY",
+  "code": {
+    "file": "t020_e_comparator_kind_boundary_20261029_07H.py",
+    "size": 6881,
+    "sha256": "CB94301BFC4DC4588041230707518653AACE1FA8787FDF3EF3AFC11C49B35B10",
+    "status": "PC_EXECUTED_READABLE"
+  },
+  "audit": {
+    "file": "T020_E_COMPARATOR_KIND_BOUNDARY_AUDIT_20261029_07H.md",
+    "sha256": "AAC90BEE83E6CDFA35B29391CF1247A3DBE592B88D8CE23C86959786C87179D4",
+    "status": "PC_READBACK"
+  },
+  "inputs": {
+    "source_pin_sha256": "CF0ADB6FF53BF5A10B56EAA1CE947ED6ED382946DA03CE4915C80FBD5B54B277",
+    "visual_module_sha256": "CBB6ED0B6D8ABA896A9746B08C09AAB00838BDD3388415ED7AC439148A694221",
+    "visual_test_sha256": "78C030E05BD3A3A33684801AFA0BC8977A3508B6CAC6DB69B729459621352E63"
+  },
+  "tests": {
+    "new": 15,
+    "source_pin_rerun": 8,
+    "g2_cross_contract_rerun": 25,
+    "total": 48,
+    "passed": 48,
+    "failed": 0,
+    "old_gameplay": "NOT_RUN",
+    "denied_cases": "NOT_RUN"
+  },
+  "golden": {
+    "dynamic_observed": 0,
+    "actual_pass": 0,
+    "strict_match": 0
+  },
+  "master": {
+    "last_confirmed_checkpoint": 196,
+    "ready_total": 596,
+    "task_counts_last_known": {
+      "done": 9,
+      "in_progress": 21,
+      "verify": 4
+    },
+    "new_ready_integration": 0
+  },
+  "protection": {
+    "prior_safety_refusals": "BLOCKED_NO_RETRY",
+    "other_owners_changed": false
+  }
+}
