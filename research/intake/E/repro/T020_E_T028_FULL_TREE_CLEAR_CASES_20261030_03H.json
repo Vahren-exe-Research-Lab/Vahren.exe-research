@@ -1,0 +1,669 @@
+{
+  "research_id": "E-AUDIT-20261030-03H-T020-T028-FULLTREE-CLEAR-SPLIT-01",
+  "owner": "E",
+  "source_owner": "B",
+  "source_id": "B-20261030-0308-T028-FULL-TREE-CLEAR-POSTORDER-01",
+  "source_status": "VERIFY_NOT_READY",
+  "origin": "SYNTHETIC_STATIC_CALL_PATH",
+  "golden": [
+    0,
+    0,
+    0
+  ],
+  "scope": "Calls are modeled, not effects of real deallocator or actual gameplay. branch8/branch0 are neutral names, not semantic child labels.",
+  "cases": [
+    {
+      "id": "F00_EMPTY",
+      "input": {
+        "full_range": true,
+        "nodes": {},
+        "root": null,
+        "count": 0
+      },
+      "expected": [
+        "STATIC_FULL_RESET",
+        0,
+        0,
+        []
+      ]
+    },
+    {
+      "id": "F01_INLINE_ZERO",
+      "input": {
+        "full_range": true,
+        "nodes": {
+          "r": {
+            "capacity": 0
+          }
+        },
+        "root": "r",
+        "count": 1
+      },
+      "expected": [
+        "STATIC_FULL_RESET",
+        0,
+        1,
+        [
+          "r"
+        ]
+      ]
+    },
+    {
+      "id": "F02_INLINE_15",
+      "input": {
+        "full_range": true,
+        "nodes": {
+          "r": {
+            "capacity": 15
+          }
+        },
+        "root": "r",
+        "count": 1
+      },
+      "expected": [
+        "STATIC_FULL_RESET",
+        0,
+        1,
+        [
+          "r"
+        ]
+      ]
+    },
+    {
+      "id": "F03_HEAP_16",
+      "input": {
+        "full_range": true,
+        "nodes": {
+          "r": {
+            "capacity": 16
+          }
+        },
+        "root": "r",
+        "count": 1
+      },
+      "expected": [
+        "STATIC_FULL_RESET",
+        1,
+        1,
+        [
+          "r"
+        ]
+      ]
+    },
+    {
+      "id": "F04_HEAP_17",
+      "input": {
+        "full_range": true,
+        "nodes": {
+          "r": {
+            "capacity": 17
+          }
+        },
+        "root": "r",
+        "count": 1
+      },
+      "expected": [
+        "STATIC_FULL_RESET",
+        1,
+        1,
+        [
+          "r"
+        ]
+      ]
+    },
+    {
+      "id": "F05_HEAP_128",
+      "input": {
+        "full_range": true,
+        "nodes": {
+          "r": {
+            "capacity": 128
+          }
+        },
+        "root": "r",
+        "count": 1
+      },
+      "expected": [
+        "STATIC_FULL_RESET",
+        1,
+        1,
+        [
+          "r"
+        ]
+      ]
+    },
+    {
+      "id": "F06_BRANCH8_RECURSIVE",
+      "input": {
+        "full_range": true,
+        "nodes": {
+          "r": {
+            "capacity": 15,
+            "branch8": "a"
+          },
+          "a": {
+            "capacity": 16
+          }
+        },
+        "root": "r",
+        "count": 2
+      },
+      "expected": [
+        "STATIC_FULL_RESET",
+        1,
+        2,
+        [
+          "a",
+          "r"
+        ]
+      ]
+    },
+    {
+      "id": "F07_BRANCH0_LOOP",
+      "input": {
+        "full_range": true,
+        "nodes": {
+          "r": {
+            "capacity": 16,
+            "branch0": "a"
+          },
+          "a": {
+            "capacity": 15
+          }
+        },
+        "root": "r",
+        "count": 2
+      },
+      "expected": [
+        "STATIC_FULL_RESET",
+        1,
+        2,
+        [
+          "r",
+          "a"
+        ]
+      ]
+    },
+    {
+      "id": "F08_FORK3",
+      "input": {
+        "full_range": true,
+        "nodes": {
+          "r": {
+            "capacity": 16,
+            "branch8": "a",
+            "branch0": "b"
+          },
+          "a": {
+            "capacity": 15
+          },
+          "b": {
+            "capacity": 17
+          }
+        },
+        "root": "r",
+        "count": 3
+      },
+      "expected": [
+        "STATIC_FULL_RESET",
+        2,
+        3,
+        [
+          "a",
+          "r",
+          "b"
+        ]
+      ]
+    },
+    {
+      "id": "F09_BRANCH8_CHAIN",
+      "input": {
+        "full_range": true,
+        "nodes": {
+          "r": {
+            "capacity": 15,
+            "branch8": "a"
+          },
+          "a": {
+            "capacity": 16,
+            "branch8": "b"
+          },
+          "b": {
+            "capacity": 17
+          }
+        },
+        "root": "r",
+        "count": 3
+      },
+      "expected": [
+        "STATIC_FULL_RESET",
+        2,
+        3,
+        [
+          "b",
+          "a",
+          "r"
+        ]
+      ]
+    },
+    {
+      "id": "F10_BRANCH0_CHAIN",
+      "input": {
+        "full_range": true,
+        "nodes": {
+          "r": {
+            "capacity": 16,
+            "branch0": "a"
+          },
+          "a": {
+            "capacity": 15,
+            "branch0": "b"
+          },
+          "b": {
+            "capacity": 17
+          }
+        },
+        "root": "r",
+        "count": 3
+      },
+      "expected": [
+        "STATIC_FULL_RESET",
+        2,
+        3,
+        [
+          "r",
+          "a",
+          "b"
+        ]
+      ]
+    },
+    {
+      "id": "F11_MIXED_FOUR",
+      "input": {
+        "full_range": true,
+        "nodes": {
+          "r": {
+            "capacity": 15,
+            "branch8": "a",
+            "branch0": "b"
+          },
+          "a": {
+            "capacity": 16,
+            "branch0": "c"
+          },
+          "b": {
+            "capacity": 17
+          },
+          "c": {
+            "capacity": 15
+          }
+        },
+        "root": "r",
+        "count": 4
+      },
+      "expected": [
+        "STATIC_FULL_RESET",
+        2,
+        4,
+        [
+          "a",
+          "c",
+          "r",
+          "b"
+        ]
+      ]
+    },
+    {
+      "id": "N12_PARTIAL_RANGE",
+      "input": {
+        "full_range": false,
+        "nodes": {
+          "r": {
+            "capacity": 16
+          }
+        },
+        "root": "r",
+        "count": 1
+      },
+      "expected": [
+        "PARTIAL_RANGE_UNMODELED",
+        0,
+        0,
+        []
+      ]
+    },
+    {
+      "id": "N13_UNKNOWN_RANGE",
+      "input": {
+        "nodes": {
+          "r": {
+            "capacity": 16
+          }
+        },
+        "root": "r",
+        "count": 1
+      },
+      "expected": [
+        "PARTIAL_RANGE_UNMODELED",
+        0,
+        0,
+        []
+      ]
+    },
+    {
+      "id": "N14_LOW_COUNT",
+      "input": {
+        "full_range": true,
+        "nodes": {
+          "r": {
+            "capacity": 15
+          }
+        },
+        "root": "r",
+        "count": 0
+      },
+      "expected": [
+        "REJECT_COUNT",
+        0,
+        0,
+        []
+      ]
+    },
+    {
+      "id": "N15_HIGH_COUNT",
+      "input": {
+        "full_range": true,
+        "nodes": {
+          "r": {
+            "capacity": 15
+          }
+        },
+        "root": "r",
+        "count": 2
+      },
+      "expected": [
+        "REJECT_COUNT",
+        0,
+        0,
+        []
+      ]
+    },
+    {
+      "id": "N16_NEGATIVE_COUNT",
+      "input": {
+        "full_range": true,
+        "nodes": {
+          "r": {
+            "capacity": 15
+          }
+        },
+        "root": "r",
+        "count": -1
+      },
+      "expected": [
+        "REJECT_COUNT",
+        0,
+        0,
+        []
+      ]
+    },
+    {
+      "id": "N17_BOOL_COUNT",
+      "input": {
+        "full_range": true,
+        "nodes": {
+          "r": {
+            "capacity": 15
+          }
+        },
+        "root": "r",
+        "count": true
+      },
+      "expected": [
+        "REJECT_COUNT",
+        0,
+        0,
+        []
+      ]
+    },
+    {
+      "id": "N18_NEGATIVE_CAP",
+      "input": {
+        "full_range": true,
+        "nodes": {
+          "r": {
+            "capacity": -1
+          }
+        },
+        "root": "r",
+        "count": 1
+      },
+      "expected": [
+        "REJECT_STRUCTURE",
+        0,
+        0,
+        []
+      ]
+    },
+    {
+      "id": "N19_FLOAT_CAP",
+      "input": {
+        "full_range": true,
+        "nodes": {
+          "r": {
+            "capacity": 15.5
+          }
+        },
+        "root": "r",
+        "count": 1
+      },
+      "expected": [
+        "REJECT_STRUCTURE",
+        0,
+        0,
+        []
+      ]
+    },
+    {
+      "id": "N20_BOOL_CAP",
+      "input": {
+        "full_range": true,
+        "nodes": {
+          "r": {
+            "capacity": true
+          }
+        },
+        "root": "r",
+        "count": 1
+      },
+      "expected": [
+        "REJECT_STRUCTURE",
+        0,
+        0,
+        []
+      ]
+    },
+    {
+      "id": "N21_UNKNOWN_CAP",
+      "input": {
+        "full_range": true,
+        "nodes": {
+          "r": {}
+        },
+        "root": "r",
+        "count": 1
+      },
+      "expected": [
+        "REJECT_STRUCTURE",
+        0,
+        0,
+        []
+      ]
+    },
+    {
+      "id": "N22_SHARED_ALIAS",
+      "input": {
+        "full_range": true,
+        "nodes": {
+          "r": {
+            "capacity": 15,
+            "branch8": "a",
+            "branch0": "a"
+          },
+          "a": {
+            "capacity": 16
+          }
+        },
+        "root": "r",
+        "count": 2
+      },
+      "expected": [
+        "REJECT_STRUCTURE",
+        0,
+        0,
+        []
+      ]
+    },
+    {
+      "id": "N23_CYCLE",
+      "input": {
+        "full_range": true,
+        "nodes": {
+          "r": {
+            "capacity": 15,
+            "branch8": "a"
+          },
+          "a": {
+            "capacity": 16,
+            "branch0": "r"
+          }
+        },
+        "root": "r",
+        "count": 2
+      },
+      "expected": [
+        "REJECT_STRUCTURE",
+        0,
+        0,
+        []
+      ]
+    },
+    {
+      "id": "N24_MISSING_CHILD",
+      "input": {
+        "full_range": true,
+        "nodes": {
+          "r": {
+            "capacity": 15,
+            "branch8": "absent"
+          }
+        },
+        "root": "r",
+        "count": 1
+      },
+      "expected": [
+        "REJECT_STRUCTURE",
+        0,
+        0,
+        []
+      ]
+    },
+    {
+      "id": "N25_ORPHAN",
+      "input": {
+        "full_range": true,
+        "nodes": {
+          "r": {
+            "capacity": 15
+          },
+          "a": {
+            "capacity": 16
+          }
+        },
+        "root": "r",
+        "count": 2
+      },
+      "expected": [
+        "REJECT_STRUCTURE",
+        0,
+        0,
+        []
+      ]
+    },
+    {
+      "id": "N26_NIL_MARKER_AS_NODE",
+      "input": {
+        "full_range": true,
+        "nodes": {
+          "r": {
+            "capacity": 15,
+            "nil_flag": 1
+          }
+        },
+        "root": "r",
+        "count": 1
+      },
+      "expected": [
+        "REJECT_STRUCTURE",
+        0,
+        0,
+        []
+      ]
+    },
+    {
+      "id": "N27_INVALID_ROOT",
+      "input": {
+        "full_range": true,
+        "nodes": {
+          "r": {
+            "capacity": 15
+          }
+        },
+        "root": "missing",
+        "count": 1
+      },
+      "expected": [
+        "REJECT_STRUCTURE",
+        0,
+        0,
+        []
+      ]
+    },
+    {
+      "id": "N28_BAD_BRANCH_VALUE",
+      "input": {
+        "full_range": true,
+        "nodes": {
+          "r": {
+            "capacity": 15,
+            "branch0": 23
+          }
+        },
+        "root": "r",
+        "count": 1
+      },
+      "expected": [
+        "REJECT_STRUCTURE",
+        0,
+        0,
+        []
+      ]
+    },
+    {
+      "id": "N29_GOLDEN_CLAIM",
+      "input": {
+        "claim": "actual_golden",
+        "full_range": true,
+        "nodes": {},
+        "root": null,
+        "count": 0
+      },
+      "expected": [
+        "NOT_GAMEPLAY_PROOF",
+        0,
+        0,
+        []
+      ]
+    }
+  ]
+}
