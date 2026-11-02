@@ -1,0 +1,3592 @@
+{
+  "research_id": "E-AUDIT-20261031-21H-T020-T013-HEAD-SENTINEL-COORD-GATE-01",
+  "source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "b_source_sha256": "28B10830EDA389B377A9FFCEBEB28A21C87297A2382CCCF2E8ACB85B0DA89D29",
+  "status": "STATIC_BRANCH_FIXTURE_VERIFY_NOT_READY",
+  "windows": [
+    {
+      "va": "0x57dd10",
+      "length": 461,
+      "sha256": "3F9E3471A20A15F05EE3EF54E0699D787C14A9F6976E6786F60C4B8CB5E56B43"
+    },
+    {
+      "va": "0x577600",
+      "length": 1043,
+      "sha256": "CE32076D927618972832B76FCAC923E0C451C3F12B7B69C6A69531CEE15FCE44"
+    }
+  ],
+  "e8_calls": [
+    {
+      "site": "0x545c6e",
+      "target": "0x57dd10",
+      "raw": "e89d800300"
+    },
+    {
+      "site": "0x57b339",
+      "target": "0x57dd10",
+      "raw": "e8d2290000"
+    },
+    {
+      "site": "0x57de95",
+      "target": "0x4c1860",
+      "raw": "e8c639f4ff"
+    },
+    {
+      "site": "0x57decb",
+      "target": "0x576660",
+      "raw": "e89087ffff"
+    },
+    {
+      "site": "0x5779cd",
+      "target": "0x576450",
+      "raw": "e87eeaffff"
+    }
+  ],
+  "e9_tail": {
+    "site": "0x57ded8",
+    "target": "0x543de0",
+    "raw": "e9035ffcff"
+  },
+  "native_instruction_checks": 17,
+  "fixture_count": 192,
+  "uncertainty": "Alternate AL branch and primary outer gates modeled separately; full ABI, C8/CC consumer and final target UNKNOWN",
+  "native_gameplay_observed": 0,
+  "golden_pass": 0,
+  "strict_match": 0,
+  "cases": [
+    {
+      "id": "primary_00000_101",
+      "mode": "primary",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_00000_777",
+      "mode": "primary",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_00001_101",
+      "mode": "primary",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_00001_777",
+      "mode": "primary",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_00010_101",
+      "mode": "primary",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_00010_777",
+      "mode": "primary",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_00011_101",
+      "mode": "primary",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_00011_777",
+      "mode": "primary",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_00100_101",
+      "mode": "primary",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_00100_777",
+      "mode": "primary",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_00101_101",
+      "mode": "primary",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_00101_777",
+      "mode": "primary",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_00110_101",
+      "mode": "primary",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_00110_777",
+      "mode": "primary",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_00111_101",
+      "mode": "primary",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_00111_777",
+      "mode": "primary",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_01000_101",
+      "mode": "primary",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_01000_777",
+      "mode": "primary",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_01001_101",
+      "mode": "primary",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_01001_777",
+      "mode": "primary",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_01010_101",
+      "mode": "primary",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_01010_777",
+      "mode": "primary",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_01011_101",
+      "mode": "primary",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_01011_777",
+      "mode": "primary",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_01100_101",
+      "mode": "primary",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_01100_777",
+      "mode": "primary",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_01101_101",
+      "mode": "primary",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_01101_777",
+      "mode": "primary",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_01110_101",
+      "mode": "primary",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_01110_777",
+      "mode": "primary",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_01111_101",
+      "mode": "primary",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_01111_777",
+      "mode": "primary",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_10000_101",
+      "mode": "primary",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_10000_777",
+      "mode": "primary",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_10001_101",
+      "mode": "primary",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_10001_777",
+      "mode": "primary",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_10010_101",
+      "mode": "primary",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_10010_777",
+      "mode": "primary",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_10011_101",
+      "mode": "primary",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_10011_777",
+      "mode": "primary",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_10100_101",
+      "mode": "primary",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_10100_777",
+      "mode": "primary",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_10101_101",
+      "mode": "primary",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_10101_777",
+      "mode": "primary",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_10110_101",
+      "mode": "primary",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_10110_777",
+      "mode": "primary",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_10111_101",
+      "mode": "primary",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_10111_777",
+      "mode": "primary",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EARLY_GATE",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_11000_101",
+      "mode": "primary",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_11000_777",
+      "mode": "primary",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_11001_101",
+      "mode": "primary",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_11001_777",
+      "mode": "primary",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_11010_101",
+      "mode": "primary",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_11010_777",
+      "mode": "primary",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_11011_101",
+      "mode": "primary",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_11011_777",
+      "mode": "primary",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_11100_101",
+      "mode": "primary",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "FILTER_REJECT",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_11100_777",
+      "mode": "primary",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "FILTER_REJECT",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_11101_101",
+      "mode": "primary",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DUAL_SENTINEL",
+      "writes": [
+        [
+          "0x186cc",
+          2147483656
+        ],
+        [
+          "0x186c8",
+          2147483656
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_11101_777",
+      "mode": "primary",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DUAL_SENTINEL",
+      "writes": [
+        [
+          "0x186cc",
+          2147483656
+        ],
+        [
+          "0x186c8",
+          2147483656
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_11110_101",
+      "mode": "primary",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DUAL_SENTINEL",
+      "writes": [
+        [
+          "0x186cc",
+          2147483656
+        ],
+        [
+          "0x186c8",
+          2147483656
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_11110_777",
+      "mode": "primary",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DUAL_SENTINEL",
+      "writes": [
+        [
+          "0x186cc",
+          2147483656
+        ],
+        [
+          "0x186c8",
+          2147483656
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_11111_101",
+      "mode": "primary",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DUAL_SENTINEL",
+      "writes": [
+        [
+          "0x186cc",
+          2147483656
+        ],
+        [
+          "0x186c8",
+          2147483656
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "primary_11111_777",
+      "mode": "primary",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DUAL_SENTINEL",
+      "writes": [
+        [
+          "0x186cc",
+          2147483656
+        ],
+        [
+          "0x186c8",
+          2147483656
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_00000_101",
+      "mode": "alt_false",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_00000_777",
+      "mode": "alt_false",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_00001_101",
+      "mode": "alt_false",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_00001_777",
+      "mode": "alt_false",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_00010_101",
+      "mode": "alt_false",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_00010_777",
+      "mode": "alt_false",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_00011_101",
+      "mode": "alt_false",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_00011_777",
+      "mode": "alt_false",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_00100_101",
+      "mode": "alt_false",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "FILTER_REJECT",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_00100_777",
+      "mode": "alt_false",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "FILTER_REJECT",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_00101_101",
+      "mode": "alt_false",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DUAL_SENTINEL",
+      "writes": [
+        [
+          "0x186cc",
+          2147483656
+        ],
+        [
+          "0x186c8",
+          2147483656
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_00101_777",
+      "mode": "alt_false",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DUAL_SENTINEL",
+      "writes": [
+        [
+          "0x186cc",
+          2147483656
+        ],
+        [
+          "0x186c8",
+          2147483656
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_00110_101",
+      "mode": "alt_false",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DUAL_SENTINEL",
+      "writes": [
+        [
+          "0x186cc",
+          2147483656
+        ],
+        [
+          "0x186c8",
+          2147483656
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_00110_777",
+      "mode": "alt_false",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DUAL_SENTINEL",
+      "writes": [
+        [
+          "0x186cc",
+          2147483656
+        ],
+        [
+          "0x186c8",
+          2147483656
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_00111_101",
+      "mode": "alt_false",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DUAL_SENTINEL",
+      "writes": [
+        [
+          "0x186cc",
+          2147483656
+        ],
+        [
+          "0x186c8",
+          2147483656
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_00111_777",
+      "mode": "alt_false",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DUAL_SENTINEL",
+      "writes": [
+        [
+          "0x186cc",
+          2147483656
+        ],
+        [
+          "0x186c8",
+          2147483656
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_01000_101",
+      "mode": "alt_false",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_01000_777",
+      "mode": "alt_false",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_01001_101",
+      "mode": "alt_false",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_01001_777",
+      "mode": "alt_false",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_01010_101",
+      "mode": "alt_false",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_01010_777",
+      "mode": "alt_false",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_01011_101",
+      "mode": "alt_false",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_01011_777",
+      "mode": "alt_false",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_01100_101",
+      "mode": "alt_false",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "FILTER_REJECT",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_01100_777",
+      "mode": "alt_false",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "FILTER_REJECT",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_01101_101",
+      "mode": "alt_false",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DUAL_SENTINEL",
+      "writes": [
+        [
+          "0x186cc",
+          2147483656
+        ],
+        [
+          "0x186c8",
+          2147483656
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_01101_777",
+      "mode": "alt_false",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DUAL_SENTINEL",
+      "writes": [
+        [
+          "0x186cc",
+          2147483656
+        ],
+        [
+          "0x186c8",
+          2147483656
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_01110_101",
+      "mode": "alt_false",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DUAL_SENTINEL",
+      "writes": [
+        [
+          "0x186cc",
+          2147483656
+        ],
+        [
+          "0x186c8",
+          2147483656
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_01110_777",
+      "mode": "alt_false",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DUAL_SENTINEL",
+      "writes": [
+        [
+          "0x186cc",
+          2147483656
+        ],
+        [
+          "0x186c8",
+          2147483656
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_01111_101",
+      "mode": "alt_false",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DUAL_SENTINEL",
+      "writes": [
+        [
+          "0x186cc",
+          2147483656
+        ],
+        [
+          "0x186c8",
+          2147483656
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_01111_777",
+      "mode": "alt_false",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DUAL_SENTINEL",
+      "writes": [
+        [
+          "0x186cc",
+          2147483656
+        ],
+        [
+          "0x186c8",
+          2147483656
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_10000_101",
+      "mode": "alt_false",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_10000_777",
+      "mode": "alt_false",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_10001_101",
+      "mode": "alt_false",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_10001_777",
+      "mode": "alt_false",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_10010_101",
+      "mode": "alt_false",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_10010_777",
+      "mode": "alt_false",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_10011_101",
+      "mode": "alt_false",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_10011_777",
+      "mode": "alt_false",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_10100_101",
+      "mode": "alt_false",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "FILTER_REJECT",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_10100_777",
+      "mode": "alt_false",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "FILTER_REJECT",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_10101_101",
+      "mode": "alt_false",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DUAL_SENTINEL",
+      "writes": [
+        [
+          "0x186cc",
+          2147483656
+        ],
+        [
+          "0x186c8",
+          2147483656
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_10101_777",
+      "mode": "alt_false",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DUAL_SENTINEL",
+      "writes": [
+        [
+          "0x186cc",
+          2147483656
+        ],
+        [
+          "0x186c8",
+          2147483656
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_10110_101",
+      "mode": "alt_false",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DUAL_SENTINEL",
+      "writes": [
+        [
+          "0x186cc",
+          2147483656
+        ],
+        [
+          "0x186c8",
+          2147483656
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_10110_777",
+      "mode": "alt_false",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DUAL_SENTINEL",
+      "writes": [
+        [
+          "0x186cc",
+          2147483656
+        ],
+        [
+          "0x186c8",
+          2147483656
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_10111_101",
+      "mode": "alt_false",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DUAL_SENTINEL",
+      "writes": [
+        [
+          "0x186cc",
+          2147483656
+        ],
+        [
+          "0x186c8",
+          2147483656
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_10111_777",
+      "mode": "alt_false",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DUAL_SENTINEL",
+      "writes": [
+        [
+          "0x186cc",
+          2147483656
+        ],
+        [
+          "0x186c8",
+          2147483656
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_11000_101",
+      "mode": "alt_false",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_11000_777",
+      "mode": "alt_false",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_11001_101",
+      "mode": "alt_false",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_11001_777",
+      "mode": "alt_false",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_11010_101",
+      "mode": "alt_false",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_11010_777",
+      "mode": "alt_false",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_11011_101",
+      "mode": "alt_false",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_11011_777",
+      "mode": "alt_false",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "EMPTY_LIST",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_11100_101",
+      "mode": "alt_false",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "FILTER_REJECT",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_11100_777",
+      "mode": "alt_false",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "FILTER_REJECT",
+      "writes": [],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_11101_101",
+      "mode": "alt_false",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DUAL_SENTINEL",
+      "writes": [
+        [
+          "0x186cc",
+          2147483656
+        ],
+        [
+          "0x186c8",
+          2147483656
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_11101_777",
+      "mode": "alt_false",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DUAL_SENTINEL",
+      "writes": [
+        [
+          "0x186cc",
+          2147483656
+        ],
+        [
+          "0x186c8",
+          2147483656
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_11110_101",
+      "mode": "alt_false",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DUAL_SENTINEL",
+      "writes": [
+        [
+          "0x186cc",
+          2147483656
+        ],
+        [
+          "0x186c8",
+          2147483656
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_11110_777",
+      "mode": "alt_false",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DUAL_SENTINEL",
+      "writes": [
+        [
+          "0x186cc",
+          2147483656
+        ],
+        [
+          "0x186c8",
+          2147483656
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_11111_101",
+      "mode": "alt_false",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DUAL_SENTINEL",
+      "writes": [
+        [
+          "0x186cc",
+          2147483656
+        ],
+        [
+          "0x186c8",
+          2147483656
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_false_11111_777",
+      "mode": "alt_false",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DUAL_SENTINEL",
+      "writes": [
+        [
+          "0x186cc",
+          2147483656
+        ],
+        [
+          "0x186c8",
+          2147483656
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_00000_101",
+      "mode": "alt_true",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_00000_777",
+      "mode": "alt_true",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          1911
+        ],
+        [
+          "0x186cc",
+          2184
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_00001_101",
+      "mode": "alt_true",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_00001_777",
+      "mode": "alt_true",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          1911
+        ],
+        [
+          "0x186cc",
+          2184
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_00010_101",
+      "mode": "alt_true",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_00010_777",
+      "mode": "alt_true",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          1911
+        ],
+        [
+          "0x186cc",
+          2184
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_00011_101",
+      "mode": "alt_true",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_00011_777",
+      "mode": "alt_true",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          1911
+        ],
+        [
+          "0x186cc",
+          2184
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_00100_101",
+      "mode": "alt_true",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_00100_777",
+      "mode": "alt_true",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          1911
+        ],
+        [
+          "0x186cc",
+          2184
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_00101_101",
+      "mode": "alt_true",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_00101_777",
+      "mode": "alt_true",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          1911
+        ],
+        [
+          "0x186cc",
+          2184
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_00110_101",
+      "mode": "alt_true",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_00110_777",
+      "mode": "alt_true",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          1911
+        ],
+        [
+          "0x186cc",
+          2184
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_00111_101",
+      "mode": "alt_true",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_00111_777",
+      "mode": "alt_true",
+      "gate198": false,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          1911
+        ],
+        [
+          "0x186cc",
+          2184
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_01000_101",
+      "mode": "alt_true",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_01000_777",
+      "mode": "alt_true",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          1911
+        ],
+        [
+          "0x186cc",
+          2184
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_01001_101",
+      "mode": "alt_true",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_01001_777",
+      "mode": "alt_true",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          1911
+        ],
+        [
+          "0x186cc",
+          2184
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_01010_101",
+      "mode": "alt_true",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_01010_777",
+      "mode": "alt_true",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          1911
+        ],
+        [
+          "0x186cc",
+          2184
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_01011_101",
+      "mode": "alt_true",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_01011_777",
+      "mode": "alt_true",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          1911
+        ],
+        [
+          "0x186cc",
+          2184
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_01100_101",
+      "mode": "alt_true",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_01100_777",
+      "mode": "alt_true",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          1911
+        ],
+        [
+          "0x186cc",
+          2184
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_01101_101",
+      "mode": "alt_true",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_01101_777",
+      "mode": "alt_true",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          1911
+        ],
+        [
+          "0x186cc",
+          2184
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_01110_101",
+      "mode": "alt_true",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_01110_777",
+      "mode": "alt_true",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          1911
+        ],
+        [
+          "0x186cc",
+          2184
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_01111_101",
+      "mode": "alt_true",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_01111_777",
+      "mode": "alt_true",
+      "gate198": false,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          1911
+        ],
+        [
+          "0x186cc",
+          2184
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_10000_101",
+      "mode": "alt_true",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_10000_777",
+      "mode": "alt_true",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          1911
+        ],
+        [
+          "0x186cc",
+          2184
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_10001_101",
+      "mode": "alt_true",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_10001_777",
+      "mode": "alt_true",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          1911
+        ],
+        [
+          "0x186cc",
+          2184
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_10010_101",
+      "mode": "alt_true",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_10010_777",
+      "mode": "alt_true",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          1911
+        ],
+        [
+          "0x186cc",
+          2184
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_10011_101",
+      "mode": "alt_true",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_10011_777",
+      "mode": "alt_true",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          1911
+        ],
+        [
+          "0x186cc",
+          2184
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_10100_101",
+      "mode": "alt_true",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_10100_777",
+      "mode": "alt_true",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          1911
+        ],
+        [
+          "0x186cc",
+          2184
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_10101_101",
+      "mode": "alt_true",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_10101_777",
+      "mode": "alt_true",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          1911
+        ],
+        [
+          "0x186cc",
+          2184
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_10110_101",
+      "mode": "alt_true",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_10110_777",
+      "mode": "alt_true",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          1911
+        ],
+        [
+          "0x186cc",
+          2184
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_10111_101",
+      "mode": "alt_true",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_10111_777",
+      "mode": "alt_true",
+      "gate198": true,
+      "gate1e580": false,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          1911
+        ],
+        [
+          "0x186cc",
+          2184
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_11000_101",
+      "mode": "alt_true",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_11000_777",
+      "mode": "alt_true",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          1911
+        ],
+        [
+          "0x186cc",
+          2184
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_11001_101",
+      "mode": "alt_true",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_11001_777",
+      "mode": "alt_true",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          1911
+        ],
+        [
+          "0x186cc",
+          2184
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_11010_101",
+      "mode": "alt_true",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_11010_777",
+      "mode": "alt_true",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          1911
+        ],
+        [
+          "0x186cc",
+          2184
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_11011_101",
+      "mode": "alt_true",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_11011_777",
+      "mode": "alt_true",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": false,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          1911
+        ],
+        [
+          "0x186cc",
+          2184
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_11100_101",
+      "mode": "alt_true",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_11100_777",
+      "mode": "alt_true",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          1911
+        ],
+        [
+          "0x186cc",
+          2184
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_11101_101",
+      "mode": "alt_true",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_11101_777",
+      "mode": "alt_true",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": false,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          1911
+        ],
+        [
+          "0x186cc",
+          2184
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_11110_101",
+      "mode": "alt_true",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_11110_777",
+      "mode": "alt_true",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": false,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          1911
+        ],
+        [
+          "0x186cc",
+          2184
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_11111_101",
+      "mode": "alt_true",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 257,
+      "input_ebp": 514,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    },
+    {
+      "id": "alt_true_11111_777",
+      "mode": "alt_true",
+      "gate198": true,
+      "gate1e580": true,
+      "count_nonzero": true,
+      "kind_is_one": true,
+      "flag26d_nonzero": true,
+      "input_esi": 1911,
+      "input_ebp": 2184,
+      "expected_branch": "DIRECT_COORD_WRITE",
+      "writes": [
+        [
+          "0x186c8",
+          1911
+        ],
+        [
+          "0x186cc",
+          2184
+        ]
+      ],
+      "proof": "ISOLATED_BRANCH_SYNTHETIC_NOT_GAMEPLAY"
+    }
+  ]
+}
