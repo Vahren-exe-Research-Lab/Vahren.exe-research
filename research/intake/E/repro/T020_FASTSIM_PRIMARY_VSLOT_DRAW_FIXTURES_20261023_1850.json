@@ -1,0 +1,26 @@
+{
+  "schema": "T020_FASTSIM_PRIMARY_VSLOT_DRAW_ELIGIBILITY_V1",
+  "research_id": "E-AUDIT-20261023-1850-T020-FASTSIM-DRAW-VSLOT-01",
+  "source_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "tier": "STATIC_SYNTHETIC_NOT_NATIVE_GOLDEN",
+  "cases": [
+    {"id":"G01","arg2":1,"vptr":"0x00638074","mode":"0x80000008","flag84":1,"expected":"STATIC_BODY_ELIGIBLE"},
+    {"id":"G02","arg2":1,"vptr":"0x00638074","mode":"0x80000008","flag84":0,"expected":"STATIC_BODY_SUPPRESSED"},
+    {"id":"G03","arg2":1,"vptr":"0x00638074","mode":"0x80000008","flag84":255,"expected":"STATIC_BODY_ELIGIBLE"},
+    {"id":"G04","arg2":1,"vptr":"0x00638074","mode":"0x00000000","flag84":1,"expected":"STATIC_BODY_SUPPRESSED"},
+    {"id":"G05","arg2":1,"vptr":"0x00638074","mode":"0x00000000","flag84":0,"expected":"STATIC_BODY_SUPPRESSED"},
+    {"id":"G06","arg2":1,"vptr":"0x00638074","mode":null,"flag84":1,"expected":"VERIFY_MODE"},
+    {"id":"G07","arg2":1,"vptr":"0x00638074","mode":"0x80000008","flag84":null,"expected":"VERIFY_FLAG"},
+    {"id":"G08","arg2":1,"vptr":"0x006380CC","mode":"0x80000008","flag84":1,"expected":"VERIFY_VPTR"},
+    {"id":"G09","arg2":1,"vptr":null,"mode":"0x80000008","flag84":1,"expected":"VERIFY_VPTR"},
+    {"id":"G10","arg2":0,"vptr":null,"mode":null,"flag84":null,"expected":"STATIC_BODY_ELIGIBLE"},
+    {"id":"G11","arg2":0,"vptr":"0x006380CC","mode":"0x00000000","flag84":0,"expected":"STATIC_BODY_ELIGIBLE"},
+    {"id":"G12","arg2":2,"vptr":"0x00638074","mode":"0x80000008","flag84":1,"expected":"STATIC_BODY_ELIGIBLE"},
+    {"id":"G13","arg2":255,"vptr":"0x00638074","mode":"0x00000000","flag84":1,"expected":"STATIC_BODY_SUPPRESSED"},
+    {"id":"G14","arg2":null,"vptr":"0x00638074","mode":"0x80000008","flag84":1,"expected":"VERIFY_ARG"},
+    {"id":"G15","arg2":1,"vptr":"0x00638074","mode":"0x80000008","flag84":2,"expected":"STATIC_BODY_ELIGIBLE"},
+    {"id":"G16","arg2":1,"vptr":"0x00638074","mode":"0x80000007","flag84":255,"expected":"STATIC_BODY_SUPPRESSED"},
+    {"id":"G17","arg2":1,"vptr":"0x00638074","entry_mode":"0x80000008","mode":null,"flag84":1,"expected":"VERIFY_MODE"},
+    {"id":"G18","arg2":1,"vptr":"0x00638074","entry_mode":"0x80000008","mode":"0x00000000","flag84":1,"expected":"STATIC_BODY_SUPPRESSED"}
+  ]
+}
