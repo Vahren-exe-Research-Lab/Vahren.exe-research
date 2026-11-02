@@ -1,0 +1,68 @@
+{
+  "research_id": "E-AUDIT-20261029-11H-T018-T020-DAT-SNAPSHOT-CHRONOLOGY-01",
+  "owner": "E/T018/T020",
+  "evidence_class": "STATIC_RECEIPT_CHRONOLOGY_DESIGNED_NOT_RUN",
+  "actual_original_dynamic_observed": 0,
+  "actual_golden_pass": 0,
+  "strict_match": 0,
+  "sources": {
+    "pre_x20_manifest": {
+      "path": "data/KARATE_X20_20261022/manifest.json",
+      "sha256": "85B418A60F9D2873CADE38E05574C70A0D969E3B3E274842111087BE9F2FC412",
+      "created_utc_file": "2026-10-21T17:49:40.601Z",
+      "created_local_declared": "2026-10-22T02:49:40.102405+09:00",
+      "registered_dat": 591
+    },
+    "current_epoch_receipt": {
+      "path": "tests/T020_E_DAT_EPOCH_BASELINE_READBACK_20261029_10H.json",
+      "sha256": "363A660795172DC61D4A3006D9AE7255E55DE0CF29763889FB601B5BD80D03FF",
+      "current_dat": 590,
+      "missing": "6000_スキルテスト/work_observation.dat",
+      "matched": 590
+    },
+    "live_g0": {
+      "path": "rea_lab/headless_analysis/search_index/BATTLE_G0_LEGAL_ORIGINAL_NATIVE_RUN_CONFIRMED.json",
+      "sha256": "87ADE831D38F199697F905DAD1A8C964E01F0593D1E1C0BE9780EA6FBD998C2C",
+      "first_active_utc": "2026-10-21T14:31:37.765392+00:00",
+      "g1_complete": false
+    },
+    "original_user_summary_last": {
+      "path": "rea_lab/headless_analysis/search_index/BATTLE_USER_20261021T164622798833Z_b8419f5d_SUMMARY.json",
+      "sha256": "9E0FEC62DE5604E9BA991E155A629BDB2CE2969D293CBBA75A187AB3CF90568F",
+      "receipt_utc": "2026-10-21T16:47:33.709049+00:00",
+      "full_G1_proven": false
+    }
+  },
+  "cases": [
+    {
+      "id": "snapshot_after_battle_not_process_load_proof",
+      "expect": "VERIFY_NOT_EPOCH_ATTESTED"
+    },
+    {
+      "id": "pre_x20_snapshot_contains_research_extra",
+      "expect": "EXTRA_EXISTED_AT_SNAPSHOT_ONLY",
+      "relative_path": "6000_スキルテスト/work_observation.dat",
+      "sha256": "64E1796E9FD8BC04C67A5B21A3BD79B58EBAF70E9D3858E41868755AD6807228"
+    },
+    {
+      "id": "oct25_documentation_not_creation_time",
+      "expect": "CREATION_DATE_UNPROVEN"
+    },
+    {
+      "id": "later_x20_cannot_cause_earlier_20261021_captures",
+      "expect": "NOT_CAUSED_BY_LATER_X20",
+      "caveat": "other_prior_source_changes_unexcluded"
+    },
+    {
+      "id": "20261029_590_matches_subset_not_20261022_591",
+      "expect": "SOURCE_SET_NOT_IDENTICAL_AS_WHOLE"
+    },
+    {
+      "id": "actual_battle_summary_without_same_run_g1_g2",
+      "expect": "STRUCTURAL_NATIVE_NOT_GOLDEN"
+    }
+  ],
+  "status": "STATIC/VERIFY/NOT READY",
+  "execution_status": "NOT RUN",
+  "notes": "Evidence class / preexisting safety refusals retained. No original game, Ghidra, declined session join code, or refused tests executed."
+}
