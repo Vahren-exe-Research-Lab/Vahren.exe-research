@@ -1,0 +1,19 @@
+{
+  "schema": "E-T020-BACKLINK-NONUNIQUE-v1",
+  "exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "b12_source_id": "B-20261027-12H-T013-GAMEMANAGER-BACKLINKS-01",
+  "base": {"source_sha":"E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187","holder_kind":"Hwin","holder_ptr":9167736,"phase":"POST_INIT","backlink":9167600,"register_manager":9167612,"tick_manager":9167612,"unit_holder_link":null,"synthetic":true,"source_kind":"STATIC_ASM","runtime_receipt_sha":null},
+  "cases": [
+    {"id":"HWIN_BACKLINK_NOT_BINDING","override":{},"expected":"UNIT_HOLDER_UNPROVEN"},
+    {"id":"HSCENE_BACKLINK_NOT_BINDING","override":{"holder_kind":"Hscene","holder_ptr":9168884},"expected":"UNIT_HOLDER_UNPROVEN"},
+    {"id":"HAUX_BACKLINK_NOT_BINDING","override":{"holder_kind":"Haux","holder_ptr":11196324},"expected":"UNIT_HOLDER_UNPROVEN"},
+    {"id":"HWIN_PREINIT","override":{"phase":"PRE_INIT"},"expected":"INITIALIZATION_PHASE_UNPROVEN"},
+    {"id":"HSCENE_BAD_BACKLINK","override":{"holder_kind":"Hscene","holder_ptr":9168884,"backlink":0},"expected":"BACKLINK_MISMATCH"},
+    {"id":"HAUX_BAD_ADDRESS","override":{"holder_kind":"Haux","holder_ptr":0},"expected":"HOLDER_ADDRESS_MISMATCH"},
+    {"id":"BAD_MANAGER_OFFSET","override":{"register_manager":9167613},"expected":"MANAGER_DERIVATION_MISMATCH"},
+    {"id":"UNKNOWN_HOLDER","override":{"holder_kind":"UNKNOWN"},"expected":"UNKNOWN_HOLDER"},
+    {"id":"SYNTHETIC_CLAIMED_BINDING","override":{"unit_holder_link":true},"expected":"SYNTHETIC_NOT_OBSERVED"},
+    {"id":"FOREIGN_EXE","override":{"source_sha":"FOREIGN"},"expected":"SOURCE_MISMATCH"},
+    {"id":"RUNTIME_WITHOUT_RECEIPT","override":{"unit_holder_link":true,"synthetic":false,"source_kind":"ORIGINAL_RUNTIME"},"expected":"RUNTIME_RECEIPT_MISSING"}
+  ]
+}
