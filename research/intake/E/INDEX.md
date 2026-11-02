@@ -9,6 +9,16 @@
 
 Both new sanitized reports were **fetched from PRIVATE GitHub and matched their published text exactly** after normal owner-branch commits `81b53965fa089d41ae9f9c1636aed88fe3e22c1a` and `b7c72e92c6b2b28a0d0c6f79efcbc538633ccddf`. Their content blobs are `e1aa0b6c5fc0b648786fe3028a72b64e708f4982` and `f0f092ef645016a614425745c8aa30ba0a1b161f`. These originals are source-body preservation, not new independently demonstrated engine findings. **PUBLISHED_INTAKE / NOT_CURATED**; actual original-game Golden PASS **0**, strict MATCH **0**, new formal READY **0**, MASTER formal changes **0**, proven original-game T019 contradiction **0**.
 
+**Additional metadata-only preflight exclusions (2026-11-03 JST):** the following other E-owned historical report paths contained a conservative protected-range marker in authorized-PC *local preflight* and were **not read into this intake, copied, reconstructed, or published**. This preflight finding is not a new external safety-service refusal or a native research contradiction. Their exact original-file SHA-256 hashes are metadata only, not GitHub content attestations. Do not retry these sources through another tool, shell, path, archive or service:
+
+| Excluded source relative to research root | Source SHA-256 (PC only) |
+|---|---|
+| `tests/T020_BATTLE_RETURN_COMMIT_GATE_20261021_2147.md` | `2417E9BDEB47C7BF8B5602A41CDE8BB214724528E34CC5E5B46BE3B0E3CA24F3` |
+| `tests/T020_ARCHIVE_DAT_EXTRA_SCENARIO_PROVENANCE_20261024_22H.md` | `2AAB084BA4CFBB9AFF9C4471F8A9F5ADE827005272D19AB34B2608CD72ADFD48` |
+| `tests/T020_CNB02_G1_CLICK_SAVE_ORDER_RECONCILIATION_20261025_15H.md` | `36CF7421B927AB785160C9BC3BB3402E7A550B5530145BA62819ADCB0B845B86` |
+| `tests/T020_CNB02_G1_PHASE_CONTRACT_EXECUTABLE_REGRESSION_20261025_16H.md` | `230D52901E317BFD0AB08E20027CEC26750658578C7EA29467852004F81F66DF` |
+| `tests/T020_CNB02_G2_ROSTER_SEMANTIC_GAP_READONLY_20261025_10H.md` | `39DBE2D6F9688F93253D59E31EC28AE5C3F654E7F62F5C9CCEC0105D39185602` |
+
 **Next safe cursor:** old E-owner T018/T020 source-body gaps beyond these two, deduped by ID+original SHA+errata against owner PR/develop; curator's separate selective adoption of E synthetic admission rules. Maintain all protected/refused sources on HOLD without alternative-route retry. Never merge divergent E PR wholesale or write shared REF/dictionaries/develop.
 
 ### Additional old E T020 author-regression source preserved (2026-11-03)
