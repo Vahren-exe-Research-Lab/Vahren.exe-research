@@ -1,5 +1,5 @@
 # E/T018-T020 reproducibility asset locator — authorized PC read-only SHA audit, 2026-11-02 JST.
-# This is metadata only: source code and JSON fixtures are NOT included in GitHub; this table does not certify safe runtime execution, fixture PASS, original-game Golden or new READY. Refused or live/original capture filenames omitted.
+# This TSV is metadata only; some separately vetted asset sources/fixtures are now included as distinct files under research/intake/E/repro/ on this same PRIVATE owner PR. A PC_SOURCE_METADATA_ONLY row can lag later recovery: verify the PR path and source SHA before concluding it is missing. A GitHub source file does not certify safe runtime execution, fixture PASS, original-game Golden or new READY. Refused or live/original capture filenames omitted.
 pc_relative_path	type	bytes	source_sha256	review_state
 tests/T020_BATTLE_REQUEST_ACTIVATION_NEGATIVES_20261023_15H.json	json_data	1507	DAB700AF4E0248136DB32E44ADAC6FC0C3555DA35EE15FF2D5F3CE2BCE26903D	PC_SOURCE_METADATA_ONLY_NOT_REVIEWED
 tests/t020_battle_return_commit_gate_20261021_2147.py	python_source	2841	9A12BA734B89E4FCB2D8DB86A0C2485D6F41208256B413F24F55BE95334F79B8	PUBLISHED_INTAKE_CODE_READBACK_20261102_SYNTHETIC_8PASS_NOT_CURATED
