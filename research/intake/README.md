@@ -308,3 +308,13 @@ Six existing source IDs from open [B owner Draft PR #18](https://github.com/Buta
 | [B-20261025-0210-T011-SUPER-BRACE-RETURN-ABI-01](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/2daa76fc4178116fb8edae7107554bbfc086a37e/research/intake/B/B-20261025-0210-T011-SUPER-BRACE-RETURN-ABI-01.md) | `F427DA40BC490C0DDA1076C31CA8CCAD959E20AA9AD3728A7F11218C141A2100` | Corrects 01H: native error-path `0x5051E0 MOV EAX,EDI` then common `0x505200 RET`; upper parser `0x50BA65 MOV EBP,EAX / CMP EBP,EBX` and `0x50BA69 JNE 0x50BB40` show conditional nonzero return; runtime VERIFY |
 
 **Next cursor:** B-20261025-0312-T011-TOKEN-POSTBRACE-AT-DISPATCH-01; B-20261025-0411-T012-GETTER-RETURN-ABI-01. All earlier refusal/safety holds, original game, and other curator dirty worktrees remain untouched.
+
+
+## Curator B/T028 result-queue two-ID native crosswalk (2026-11-03)
+
+Two **existing** B owner IDs from [Draft PR #18](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18), source HEAD `41ee1f0650cd2736e5ef86792fb1734d39765471`, are **CURATED_STATIC for bounded original x86 only** in [REF_BATTLE_TAKEOVER.md](../../REF_BATTLE_TAKEOVER.md). The original reports are still PUBLISHED_INTAKE on that open owner PR; no new original study or owner intake file was created.
+
+- [B 2026-10-28 23H result vector five-element consumer](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/41ee1f0650cd2736e5ef86792fb1734d39765471/research/intake/B/B-20261028-2315-T028-RESULT-QUEUE-PHASE1-FLUSH-01.md) source SHA256 `A95FC92FFF9E6C3766CF3737C65A20667106C65D5CFFD5988D5320BFD97F3654`; `0x48C880` bounded native iteration by five 0x1C-byte entries and two distinct output helper calls.
+- [B 2026-10-29 00H five-append producer correction](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/41ee1f0650cd2736e5ef86792fb1734d39765471/research/intake/B/B-20261029-0015-T028-FIVE-ELEMENT-RECORD-PRODUCER-CORRECTION-01.md) source SHA256 `960ED4610D1A340855528A6C131AC07DECBC7A44BA3525ED6A619E98EDBEFCDF`; `0x434B10` has **five**, not merely two, append-helper sites (corrects predecessor B 2026-10-28 22H; earlier 21H caller study is DUPLICATE_LINKED, not a third promotion).
+
+**Independent receipts:** PC original report SHA256 2/2, isolated original PE SHA256 1/1, two function-window SHA256 2/2, 12 rel32 E8 targets 12/12, seven selected x86-32 Capstone instructions 7/7. No new Golden, strict MATCH, formal READY or G4 external result: **0/0/0, G4 NO-GO**. Exact game-visible tuple meaning, manager identity and save/runtime propagation VERIFY. **Next uncurated B cursor:** `B-20261029-0113-T028-RESULT-18CALLER-INDEX3-NULL-SINK-01`; E/REA source-only backlog remains open. No previously refused content was repeated.
