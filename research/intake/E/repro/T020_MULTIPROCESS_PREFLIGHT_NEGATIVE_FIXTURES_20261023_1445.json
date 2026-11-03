@@ -1,0 +1,69 @@
+{
+  "schema": "E-T020-multiprocess-preflight-negative-fixture-v1",
+  "research_id": "E-AUDIT-20261023-1445-T020-MULTIPROCESS-PREFLIGHT-IDENTITY-01",
+  "execution": "DESIGNED_NOT_RUN",
+  "source_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "source_receipts": {
+    "a": {
+      "pid": 28432,
+      "raw_sha256": "7C0A7BD05FFAB908A90BBBEC0863FCE040A99A33A17E75520C9CC19094565332",
+      "game_manager_base": "0x0072E2F0",
+      "game_event_base": "0x0072E7F4",
+      "task_active_start_ptr": "0x16DC7028",
+      "preflight": {
+        "mode": 1,
+        "active": 0,
+        "attack_count": 0,
+        "battlefield_ptr": "0x00000000"
+      },
+      "atomic": false
+    },
+    "b": {
+      "pid": 32468,
+      "raw_sha256": "9DE328DA5FBFF98151ED2A26133FC123EABE6972DF1C6588F0DC4AB26098A034",
+      "game_manager_base": "0x0072E2F0",
+      "game_event_base": "0x0072E7F4",
+      "task_active_start_ptr": "0x1E60E020",
+      "preflight": {
+        "mode": 1,
+        "active": 0,
+        "attack_count": 0,
+        "battlefield_ptr": "0x00000000"
+      },
+      "atomic": false
+    },
+    "stage17_sha256": "18165D01E2A87F3188EA44AB5C890AFDBF6E822B14D07839E6416C45313F8F7A",
+    "limited_g0_pid": 23272
+  },
+  "cases": [
+    {
+      "id": "MP-01",
+      "predicate": "same_exe_and_fixed_game_manager_pointer_implies_same_run",
+      "expected": "REJECT_CROSS_PROCESS_JOIN"
+    },
+    {
+      "id": "MP-02",
+      "predicate": "same_fixed_game_event_pointer_implies_same_unit_or_task",
+      "expected": "REJECT_POINTER_IDENTITY"
+    },
+    {
+      "id": "MP-03",
+      "predicate": "preflight_mode1_active0_attack0_map0_is_G2_capture",
+      "expected": "VERIFY_PREFLIGHT_ONLY"
+    },
+    {
+      "id": "MP-04",
+      "predicate": "non_atomic_later_capture_is_first_native_task_pass",
+      "expected": "VERIFY_UNPROVEN_TIMING"
+    },
+    {
+      "id": "MP-05",
+      "predicate": "limited_g0_pid23272_plus_pid28432_or32468_is_same_battle",
+      "expected": "REJECT_CROSS_PROCESS_JOIN"
+    }
+  ],
+  "new_gameplay_dynamic_observed": 0,
+  "actual_golden_pass": 0,
+  "strict_match": 0,
+  "formal_ready_new": 0
+}
