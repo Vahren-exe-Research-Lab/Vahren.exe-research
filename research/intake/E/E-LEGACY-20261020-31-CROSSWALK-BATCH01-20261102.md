@@ -26,6 +26,21 @@ Additional source-grounded E report excerpts (original lines):
 - L10: E_G1_PRE_SAVE_INPUT: 同一run戦闘直前SAVEの実bytes/SHAと、SAVE/攻撃/開始の入力順・時刻・TZ・input capture SHA。旧原作保存以前に宣言した戦闘IDの流用禁止。
 - L11: E_G2_VISIBLE_DEPLOY: 実際に開いたMAPのID/SHAと、攻撃/防衛/支援の可視3side、順序付き出撃Troop/Unit、画面/動画SHA。保存Spot.memberやscript参照を代用しない。
 
+
+**2026-11-04 owner E incremental namespace/acceptance clarification (same historical ID, GitHub-only review, NOT_CURATED):** Reconciled the preserved source L9–L11 with current PRIVATE `develop` [battle takeover reference](../../REF_BATTLE_TAKEOVER.md) §6A and the existing [E Golden playbook](E-CNB02-GOLDEN-EVIDENCE-ACCEPTANCE-PLAYBOOK-20261102.md), rather than asserting any new native experiment. The **same token `G1`/`G2` names two *different* contracts**:
+
+| Evidence offered | Correct owner/meaning | Eligibility for **original-game E Golden** |
+| --- | --- | --- |
+| `E_G0_UI` (E report L9) | E/T018: lawful original attack UI, actual attacker/target, battle/run identity and input receipt | Needed for E G0; static source route alone cannot qualify |
+| `E_G1_PRE_SAVE_INPUT` (L10) | E/T018: **same battle's** pre-commit SAVE bytes/SHA plus input/clock chronology | Needed for E G1, independent of bridge implementation state capture |
+| `E_G2_VISIBLE_DEPLOY` (L11) | E/T018: actual loaded MAP bytes/SHA, three combat roles and ordered deployed Unit/Troop identities from **original run** | Needed for E G2; saved roster/script/side labels are inadequate |
+| `P0 G1` in current `develop` §6A | Separate bridge owner: sampled **start-state capture**, still PARTIAL; no full MAP/VM/RNG/identity contract | **Not** an E G1 SAVE/input receipt or E G0 lawful UI proof |
+| `P0 G2` in current `develop` §6A | Separate bridge owner: bounded **hold/resume**, still PARTIAL | **Not** an E G2 deployed-roster packet |
+
+**Negative acceptance rule (proposed CURATED_POLICY only):** Reject cross-namespace promotion when a file says `G1_PASS`/`G2_PASS` without `gate_namespace`, `owner`, `source_kind`, `battle/run identifier` and source-specific evidence. A `P0 G1` capture or `P0 G2` hold cannot be relabeled `E_G1_PRE_SAVE_INPUT` or `E_G2_VISIBLE_DEPLOY`, even if both share the same PID/battle label. Conversely, **E** Golden receipts do not establish bridge P0 start-state or pause safety. This is a deterministic **review rule/design**, not newly executed code, native gameplay or a verified field in the original DAT. Source status stays historical `STATIC/SYNTHETIC/VERIFY`, `PUBLISHED_INTAKE / NOT_CURATED`; owner original report byte SHA remains **historical** `503770dbdec8ba3288d43e6b9a79830b99a0c5268e2eec3f01ebd9322fead034` (3,592 bytes), *not* rehashed this run.
+
+**Blocked evidence and next distinct cursor:** Authorized PC Local returned transient `UNAVAILABLE / SSE probe 429` on `00_START_HERE.md`, MASTER tail and this original E report. No PC source-byte verification, original native V9, original Golden or synthetic test was run here. This transport obstacle is independent of prior protected/refused source HOLD; no alternate path/connector was used. When PC Local recovers, perform **original report SHA + non-HOLD guard** on this already indexed source and investigate an independent, not-yet-curated **G1 chronology** ID, e.g. `E-AUDIT-20261024-2053-T018-T019-T020-G1-ATTACK-PHASE-RECONCILE-01` (`tests/T020_G1_ATTACK_PHASE_RECEIPT_POLICY_RECONCILIATION_20261024_2053.md`) only after original ID/SHA, refusal list, current `develop`, E PR dedup and confidentiality preflight. Until then stay on permitted private-GitHub-only E review. The protected-range and earlier refused payloads remain blocked. **New research IDs 0; new curated IDs 0; actual original Golden PASS 0; strict MATCH 0; new formal READY 0; MASTER delta 0.**
+
 **Curation gate:** Check source-original SHA, native proof owner, superseding errata, G0/G1/G2 same-run eligibility, and latest implementation before adopting as REF/dictionary/MASTER evidence.
 
 ## E-OFFLINE-UNSYNCED-20261020-2244-CNB02-EVIDENCE-CLASS-01
