@@ -195,7 +195,7 @@
 0x5158A0	func	Ai_CopySupportFallbackRecords	支援候補レコードのコピーに関与する補助。探索コアの分岐によっては呼ばれない経路がある。	推定	T013§B-20261011-0115-01
 0x57C9B0	func	Ai_CheckFacingSelection	行動対象の方位差に関係する検査を含み、Unit+0x186C8 が番兵値のとき一部の方位判定を回避する。	推定	T013§B-20261010-1716-02
 0x57D1D0	func	Ai_UpdateSpatialTargetLink	Unit+0x1E594 にある別 Unit 参照が有効なら、両者の +0x220/+0x224 座標差を計算する処理に進む。	静的確認	T013§Unit+0x1E594の生成後config writer
-0x57D8B0	func	Ai_AdjustSearchTargetCoordinates	目標探索の後段で現在時刻や戦場境界を参照して座標候補を補正する関数。補正の全条件は未確認。	推定	T013§B-20261021-1914-01
+0x57D8B0	func	Ai_AdjustSearchTargetCoordinates	目標探索の後段で現在時刻や戦場境界を参照して座標候補を補正する関数。補正の全条件は未確認。	推定	T013§B-20261021-1914-01; B-20261029-1310-T013-POSTSELECT-DUAL-DISTANCE-FPU-GATE-01
 0x571A40	func	Ai_CheckOrientationGate	AI の方位差判定に先行して戻り値 AL が使用される補助。AL の詳しい意味は未確定。	推定	T013§B-20261010-1716-02
 0x41EF50	func	Ai_SelectFourwayBattleMode	四方向選択に使うグローバル 0x65EB64 をまず1へし、所有者の状態や条件により0へ切り替える。	静的確認	T024§B-20261026-0115
 0x4C7040	func	Ai_ApplyFourwayPairState	四方向用の +0x48/+0x4A/+0x4C/+0x4E の各ペアを番号0〜3で処理する。実際のゲーム効果の意味は未確定。	静的確認	T024§B-20261025-2313
@@ -204,7 +204,7 @@
 0x49CD60	func	Ai_UpdateKeyedUnitVector	キー付きベクトルを検索・消去・挿入する関数群の入口。書換えで使われる値の名称と全分岐は未確定。	推定	T013§B-20261024-0616
 0x49F7D0	func	Ai_InsertKeyedVectorRecord	キー付きベクトルを格納する木への挿入処理を担当する。record+0x1C の3ポインタの引継ぎを含む。	静的確認	T013§B-20261024-0616
 0x5E3B70	func	Ai_ComputeCandidateDistance	候補選定で座標差の平方和を受ける平方根相当の距離計算補助として呼ばれる。	推定	T013§同距離target候補のtie-break
-0x4F93A0	func	Ai_ComputeBattleAreaTargetPoint	戦闘領域の境界値と Unit 座標から候補座標を生成する補助。探索キャッシュの後段補正で呼ばれる。	推定	T013§B-20261021-1914-01
+0x4F93A0	func	Ai_ComputeBattleAreaTargetPoint	戦闘領域の境界値と Unit 座標から候補座標を生成する補助。探索キャッシュの後段補正で呼ばれる。	推定	T013§B-20261021-1914-01; B-20261029-1112-T013-ANGLE-QUADRANT-CORRECTION-NATIVE-01; B-20261029-1216-T013-POSTSELECT-ATAN2-FLOOR-ABI-JOIN-01
 0x65BCAC	global	g_UnitSearchThreshold	unit_search_bdr の現在値。初期値100で、Unit+0x1E534 にある探索カウンタと比較される。	静的確認	T013§target search cadence
 0x87984F	global	g_SupportPresenceGateOverride	支援候補の Unit+0x1D0 存在検査を切り替える条件として参照される1バイト値。具体的なゲームモードは未特定。	静的確認	T013§support-skill secondary candidate pipeline
 0x65EB64	global	g_FourwayBattleModeFlag	複数の戦闘経路で0と1に更新される四方向選択用状態値。用途の正式名称は未確認。	推定	T024§B-20261026-0115
