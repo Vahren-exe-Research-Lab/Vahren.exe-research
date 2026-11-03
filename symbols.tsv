@@ -514,6 +514,10 @@
 0x5445E0	func	SimpleUnit_OnDefeated	簡易戦闘型 BattleUnit の vtable+0x58。+0x1867C と UnitData+0x1B1 を立て、HP+0x90=0、element_lost の子を消す。	静的確認	F§96, EXP_ENDTRANSFER CP04, ON-STAND-010
 0x551FB2	code	Hit_LinkedAward_AddExp	0x551E50 内の経験値加算 add [edi+0x16C],edx（6バイト）。EDI=加算先 UnitData、EDX=量、ESI=context（[esi]=actor）。DLL のフック候補。	静的確認	F§96, EXP_ENDTRANSFER CP17
 
+# ---- T028 original-x86 bounded flag helper (2026-11-03) ----
+0x5AA6E0	func	ResultFlag_StoreAndConditionalPrecall	Bounded original x86 stores AL in receiver+0x8C and conditionally calls 0x5A9CC0 when AL nonzero; gameplay purpose and receiver type VERIFY	静的確認	B-20261029-0415-T028-ALTVECTOR-FIRE-REGISTRATION-JOIN-01; B-20261029-0515-T028-ALFLAG-ONE-SHOT-DRAIN-01; REF_BATTLE_AI_MORALE.md
+0x431BE0	func	ResultFlag_GatedStackALWrapper	Bounded original x86 tests vtable+0x64 predicate then reloads AL from stack argument, passes receiver+0x260 to 0x5AA6E0; dynamic result VERIFY	静的確認	B-20261029-08H-T028-EFFECT-ALFLAG-CALLSITE-SENTINEL-MATRIX-01; REF_BATTLE_AI_MORALE.md
+
 # ---- T012 verified bounded effect record initializer (2026-11-03) ----
 0x4DFBB0	func	SkillEffectRingRecord_InitializeAndDelegate	Original bounded x86: conditional old R record call, reset/copy 24-byte input records, linked vtable+0x28 and 0x41E060 calls, ret 0xC; child effects and arbitrary count safety VERIFY	静的確認	B-20261013-1356-01; B-20261013-1415-01 R/P/L correction; REF_SKILL_POST_ACTION.md
 

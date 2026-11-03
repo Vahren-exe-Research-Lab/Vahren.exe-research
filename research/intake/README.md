@@ -3,6 +3,15 @@
 This is the **searchable owner-source intake**; a source ID, file or owner unit test is not verified original gameplay. `PUBLISHED_INTAKE / VERIFY / NOT_CURATED` until curator examines original bytes and correction lineage. Original Golden PASS=0, strict MATCH=0, newly accepted READY=0. Official semantic knowledge remains in `REF_*.md` and `symbols.tsv` / `structs.tsv` only after independent review.
 
 
+## Curator T028 04H/05H/08H native flag and callback adoption (2026-11-03)
+
+Three **pre-existing** B IDs have new **CURATED_STATIC** meaning in [REF_BATTLE_AI_MORALE.md](../../REF_BATTLE_AI_MORALE.md), after independently checking PC source SHA256 3/3, original ver0.67 PE SHA256, four bounded original x86 windows, and selected direct E8 calls. Existing owner [Draft PR #18](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18) head `41ee1f0650cd2736e5ef86792fb1734d39765471` remains the sanitized intake source; this curation does **not** mirror the reports, add owner IDs or advance owner READY.
+- `B-20261029-0415-T028-ALTVECTOR-FIRE-REGISTRATION-JOIN-01`: two source vectors/caller pairs; link to owner [source](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/41ee1f0650cd2736e5ef86792fb1734d39765471/research/intake/B/B-20261029-0415-T028-ALTVECTOR-FIRE-REGISTRATION-JOIN-01.md).
+- `B-20261029-0515-T028-ALFLAG-ONE-SHOT-DRAIN-01`: AL=1 vs AL=0 and normal-path cleanup CALL/write sites; link to owner [source](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/41ee1f0650cd2736e5ef86792fb1734d39765471/research/intake/B/B-20261029-0515-T028-ALFLAG-ONE-SHOT-DRAIN-01.md).
+- `B-20261029-08H-T028-EFFECT-ALFLAG-CALLSITE-SENTINEL-MATRIX-01`: eight direct callee sites (4 literal1 / 3 literal0 / 1 stack) and three wrapper sites; link to owner [source](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/41ee1f0650cd2736e5ef86792fb1734d39765471/research/intake/B/B-20261029-08H-T028-EFFECT-ALFLAG-CALLSITE-SENTINEL-MATRIX-01.md). 08H **corrects** the possible 05H two-callers-only reading.
+
+**Run delta:** new PUBLISHED_INTAKE 0, new CURATED_STATIC 3 existing IDs, duplicate/correction linked 05H -> 08H, new research IDs 0. All actual gameplay, full effect ABI, exceptions and G4 settlement VERIFY/NOT PASSED. Golden PASS0, strict MATCH0, new READY0. **Next cursor:** `B-20261029-0608-T028-AL1-PREREG-DETACH-GEOMETRY-01`, then `B-20261029-0910-T028-SIGNED-MODE-TWO-EFFECT-SUBOBJECTS-01`, plus REA/E backlog; preserve existing safety holds and owner dirty.
+
 ## Curator B/T028 spatial unregister and cache thresholds (2026-11-03)
 
 Two existing B owner IDs are newly CURATED_STATIC only for bounded independently verified original x86 in [REF_BATTLE_AI_MORALE.md](../../REF_BATTLE_AI_MORALE.md). The source remains in [private Draft PR #18](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18) pinned head fbf539e528a172e8b8d5c74ecf93d0b886e7873d. Source reports SHA256 2/2, original PE SHA256, native windows 6/6 and 15 direct E8 sites matched. No new owner intake files/IDs, no original game execution, Golden PASS0, strict MATCH0 or new READY.
