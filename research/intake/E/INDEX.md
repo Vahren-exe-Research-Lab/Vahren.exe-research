@@ -16,7 +16,11 @@
 - **Remote verification**: 新規 owner 本文をPRIVATE GitHubで作成したコミット `c3b93b593ec2754e8473a4987dbd298eacc91fe0`、Git blob `a968173f077ac26a902c7594e3abceb16a75fceb`、本文のGitHub再取得による1/1完全一致。状態は `PUBLISHED_INTAKE / STATIC_CROSS_LANE_READONLY / SYNTHETIC_DESIGN / VERIFY / NOT_CURATED`。A/B/C出典はread-only引用のみ。ref/辞書/develop変更なし。
 - **Meaning preserved**: E G3終了直前とG4戦略復帰後を分離し、raw resultFlag・route名・出撃人数・二重commitだけでは原作結果を確定しない。合成EXIT-01～07は受入設計であり、今回新たなテストPASSや原作実行はない。
 - **Formal state**: 合法原作Golden PASS **0**、strict MATCH **0**、新規正式READY **0**、MASTER正式変更 **0**。既存拒否・原本ゲーム・他owner・保留30資料は不変更。
-- **Next cursor**: `tests/T020_CNB02_DAT_BASELINE_RESTORATION_AUDIT_20261024_21H.md`等の未収録E所有報告を、まず既存develop/PR重複・保護範囲・出典SHAの**許可された事前検査**から独立に判断。既存HOLDと他ownerの出典本文は取扱わず、同一run合法G0/G1/G2/G3/G4の新一次receiptが無い限りGolden/READYに昇格しない。
+- **Independent preflight disposition (3 existing E source candidates, NO publication):** 次の三資料はPCでファイル存在・バイト数・実測SHAと、禁止領域への**参照マーカーの有無のみ**を検査。いずれも保護対象マーカーが存在したため、**本文の入庫・意味採録・テスト実行はせず `PREFLIGHT_HOLD / UNSYNCED / NOT_CURATED`** に分類した。既存の安全拒否対象を別経路で照合したものではなく、新規の安全許可も得ていない。
+  - `tests/T020_CNB02_DAT_BASELINE_RESTORATION_AUDIT_20261024_21H.md`: 3,447 B / original PC SHA256 `654F179D726ACEB1591CE178A4FE62A76AC62AEE02292B704FEA61C1CE1FBCE1`。
+  - `tests/T020_WORK_OBS_DECLARATION_ISOLATION_20261024_23H.md`: 3,958 B / original PC SHA256 `A1A05D819C3635B63A92F68228ACDC19E96D999E7E7D80953C7229CD28A0F1A0`。
+  - `tests/T020_ARCHIVE_DAT_EXTRA_SCENARIO_PROVENANCE_20261024_22H.md`: 4,451 B / original PC SHA256 `2AAB084BA4CFBB9AFF9C4471F8A9F5ADE827005272D19AB34B2608CD72ADFD48`。パス類の機微候補も検出。原資料をGitHubへコピーしない。
+- **Revised next safe cursor (supersedes immediate prior cursor):** この3件は除外し、既存E資料のうち保護マーカー・既存SAFETY_HOLDの無い**別ID**から、先にPRIVATE develop/PRの重複・出典SHA・改訂関係を調べる。特に既存E/T018同一run G0-G4原作証拠の安全なsource-ID所在とT019の非保護・非重複訂正をread-only照合。上記3件の再開条件は、保護対象に触れずに独立した正当な許可とサニタイズ済みE owner sourceが確立した場合のみ。Golden/READYの繰上げ禁止。
 
 ---
 
