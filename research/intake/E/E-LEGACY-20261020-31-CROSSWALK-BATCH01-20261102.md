@@ -87,7 +87,7 @@ Additional source-grounded E report excerpts (original lines):
 
 **Curation gate:** Check source-original SHA, native proof owner, superseding errata, G0/G1/G2 same-run eligibility, and latest implementation before adopting as REF/dictionary/MASTER evidence.
 
-**2026-11-04 remote-only incremental semantic review (same existing 21:53 research ID; no new PC attest, NOT_CURATED).** Private PR owner crosswalk and current `develop` G0/G1 curator policy were compared, without modifying or reopening the original E report. Previously recorded PC source 2,604 bytes / SHA256 `AD5AFCB9CD1D48FE70BE0C0A607D9069423B80F90BBDDABBDD82841292EF37129C` remains **historical attestation only**; PC Local session returned `Session terminated` on both read attempts this run. Source rehash/test execution **NOT_RUN_THIS_CHECK**; avoid falsely upgrading historic 24 unittest PASS.
+**2026-11-04 remote-only incremental semantic review (same existing 21:53 research ID; no new PC attest, NOT_CURATED).** Private PR owner crosswalk and current `develop` G0/G1 curator policy were compared, without modifying or reopening the original E report. Previously recorded PC source 2,604 bytes / SHA256 `AD5AFCB9CD1D48FE70BE0C0A607D9069423B80F90BBDDBBD82841292EF37129C` remains **historical attestation only**; PC Local session returned `Session terminated` on both read attempts this run. Source rehash/test execution **NOT_RUN_THIS_CHECK**; avoid falsely upgrading historic 24 unittest PASS.
  
 **Distinct read-site contract (candidate CURATED_POLICY, not observed original-game semantics):**
 - **VS_toono entry:** `storeBattleSpot(@aaa)` and the initial `storePowerOfSpot(sp16,@bbb)` precede its conditional check. Values here are site-1 observations, not general battle/session invariants.
