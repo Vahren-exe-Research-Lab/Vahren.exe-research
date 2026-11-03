@@ -10,6 +10,12 @@ import t020_cnb02_receipt_provenance_gate_20261021_2345 as legacy
 import t020_cnb02_g2_roster_role_coverage_overlay_20261026_09H as roles
 import t020_cnb02_g2_placeholder_identity_review_20261026_13H as identity
 
+# Preserve explicit legacy rejection/not-run/comparison-lacking states; no overlay may erase them.
+HARD_STATES = frozenset({
+    "INELIGIBLE", "DESIGNED_NOT_RUN", "REJECT_SOURCE", "REJECT_EVIDENCE",
+    "VERIFY", "REJECT_DOUBLE_COMMIT", "NO_STRICT_COMPARISON",
+})
+
 
 def review_receipt(receipt):
     """Apply post-2026-10-21 G2 diagnostics; never promote a legacy schema gate."""
@@ -18,8 +24,9 @@ def review_receipt(receipt):
     g2 = g2 if isinstance(g2, dict) else {}
     issues = sorted(set(roles.review(g2)["issues"]) |
                     set(identity.review(g2)["issues"]))
-    return {"legacy_verdict": old, "g2_issues": issues,
-            "status": "G2_REVIEW_REQUIRED" if issues else "SCHEMA_ONLY_NOT_GOLDEN",
+    status = (old if old in HARD_STATES else
+              "G2_REVIEW_REQUIRED" if issues else "SCHEMA_ONLY_NOT_GOLDEN")
+    return {"legacy_verdict": old, "g2_issues": issues, "status": status,
             "actual_golden_pass": False, "strict_match": False,
             "new_formal_ready": False}
 
@@ -73,6 +80,7 @@ class ReceiptG2ErratumTests(unittest.TestCase):
         r["commit_paths"] = ["native", "new_api"]
         out = review_receipt(r)
         self.assertEqual(out["legacy_verdict"], "REJECT_DOUBLE_COMMIT")
+        self.assertEqual(out["status"], "REJECT_DOUBLE_COMMIT")
         self.assertFalse(out["new_formal_ready"])
 
     def test_not_observed_not_promoted(self):
@@ -80,7 +88,16 @@ class ReceiptG2ErratumTests(unittest.TestCase):
         r["old_observed"] = False
         out = review_receipt(r)
         self.assertEqual(out["legacy_verdict"], "DESIGNED_NOT_RUN")
+        self.assertEqual(out["status"], "DESIGNED_NOT_RUN")
         self.assertFalse(out["actual_golden_pass"])
+
+    def test_missing_new_capture_retains_comparison_block(self):
+        r = self.base()
+        r["new_capture_sha"] = None
+        out = review_receipt(r)
+        self.assertEqual(out["legacy_verdict"], "NO_STRICT_COMPARISON")
+        self.assertEqual(out["status"], "NO_STRICT_COMPARISON")
+        self.assertFalse(out["strict_match"])
 
     def test_does_not_mutate_receipt(self):
         r = self.base()
