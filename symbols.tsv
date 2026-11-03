@@ -530,3 +530,4 @@
 0x433B62	code	Script_ExecEntry_Field	命令の実行本体 0x4A1250 への CALL。戦闘外の DAT 命令はここを通る（汎用一覧の入口）。	実機確認	REF_UNIT_EXP_SUMMON §10
 0x49356A	code	Script_ExecEntry_Battle	0x4A1250 への CALL。戦闘中の battleEvent と dead_event の命令はここを通る。dead_event は倒れたその場で実行。	実機確認	REF_UNIT_EXP_SUMMON §10
 0x433754	code	Script_ExecEntry_Other	0x4A1250 への 3 つ目の CALL。2026-11-03 の記録では通らなかった。	静的確認	REF_UNIT_EXP_SUMMON §10
+0x54F245	code	Summon_LinkChildCall	通常戦闘の召喚 0x54E7B0 内の 0x5774A0(parent, child) 呼び出し。このとき召喚に使ったスキルが呼び出し元の [esp+0x44]（呼ばれた側の [esp+0x50]）にある。スキルのデータの先頭 +0x00 はキー名の std::string。	実機確認	REF_UNIT_EXP_SUMMON §10
