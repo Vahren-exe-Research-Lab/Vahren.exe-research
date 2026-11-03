@@ -1,3 +1,26 @@
+# E-20261103-1351-EIGHT-CODE-SOURCE-READBACK
+
+## 2026-11-03 13H JST - E/T020 original-byte safe-source recovery (28 Oct 05H-12H)
+
+Eight E-owned Python **source files** already indexed in this E owner original-PC receipt TSV were recovered on the SAME private existing E Draft PR #17; no new PR or research ID was minted. Each source is standalone from its corresponding guarded report body. Each of the eight original-PC source files passed SHA-256, scoped VA/privacy preflight, Python AST syntax validation (8/8), byte-for-byte local Git hash-object and remote GitHub fetched Git-blob SHA readback (8/8). Code files were NOT executed; any original native inputs or B-owned references remain unavailable for independent reproduction in GitHub. Original-byte 10H code carries one harmless existing trailing blank line; preserved rather than normalized.
+
+| Original PC-relative Python path | E historical study ID (or explicit pending owner metadata) | PC SHA256 (2026-11-03 JST) | GitHub blob SHA |
+| --- | --- | --- | --- |
+| `tests/t020_t028_first_set_exclusion_backlink_gate_20261028_05H.py` | `E-AUDIT-20261028-05H-T020-T028-FIRST-SET-EXCLUSION-BACKLINK-GATE-01` | `5B978A85CC4650763269D1BCC612066953EDED8C21D1BA35832E032B44A45099` | `9eb1da511c678e792711b953e6dc09754bebc5da` |
+| `tests/t020_t028_loyal_down_pointer_scope_gate_20261028_06H.py` | `E-AUDIT-20261028-0645-T020-T028-POINTER-TYPED-LOYAL-GATE-01` | `8D3F2563AEF2AAFDF35FF9699B69E5A55C7B222D5FC53A7D0535101B42816D25` | `c475cea8ef3119edf51219b2e04736e2a847d9ef` |
+| `tests/t020_t028_self_seed_sentinel_edi_gate_20261028_07H.py` | `E-AUDIT-20261028-0754-T020-T028-SELF-SEED-SENTINEL-EDI-GATE-01` | `C35D5AC0DFDB9D6DC3DCD8A038235660E80D6AFFA65FD0F0098D0B8CFD4620B5` | `c3d855afab06cae72a483e0139c36a01943b3782` |
+| `tests/t020_t028_fallback_c4_edi_lifetime_gate_20261028_08H.py` | `E-AUDIT-20261028-0852-T020-T028-FALLBACK-C4-EDI-LIFETIME-SCOPE-01` | `22E34A581AD3058B25796D50FC597D77D224195CB291522D0EE085FC452BC6EA` | `5c1a7ea4bf6a16962439c570a28f9629db2f4436` |
+| `tests/t020_t028_fallback_roster_rebind_gate_20261028_09H.py` | `PENDING_REPORT_HOLD_ORIGINAL_ID_UNVERIFIED` | `35B59AE6645C4DCA431D4FB82DAACC5AEAADF3EC3CF20E7751E6D7ADD53AA7CD` | `a351f92cc03b382bc9955ffdb68567b00d10726c` |
+| `tests/t020_t028_roster_vector_dual_set_producer_gate_20261028_10H.py` | `PENDING_REPORT_HOLD_ORIGINAL_ID_UNVERIFIED` | `E1FE6F9AA6CE64193BD3EBAFF5C3F2C2F44BB12C3C245FB37E14CFE4226D393F` | `c5fb46f92a5bd30b4a9b964b3b164f2ee4949358` |
+| `tests/t020_t028_stack_slot_vector_vs_rb_gate_20261028_11H.py` | `E-AUDIT-20261028-11H-T020-T028-STACK-SLOT-VECTOR-VS-RB-01` | `A5476B07415F52CEA7BA3CBE75E7A094DAAAF37F401FE704E280A220566E1868` | `c0b218fd5824a276c3889b41c4fbb83fa3d77c9f` |
+| `tests/t020_t028_null_vector_candidate_cleanup_gate_20261028_12H.py` | `E-AUDIT-20261028-12H-T020-T028-NULL-VECTOR-OWNER-CLEANUP-01` | `F996015AD9DB989B7CE060AB46B4F1D9970F346A4110DEE8FAB7CFC7DFF5CAA6` | `607b0c829d3e082c9d3947da7e07d74d875b43e0` |
+
+**Provenance/owner boundary:** E/T020 cross-checking T028 only; original B/T028 owner research not adopted, rewritten or attributed to E. The matching original E Markdown reports contain a protected-scope preflight marker and remain CONTENT_GUARD_HOLD / METADATA_ONLY, with no alternative-path copy/readback of their bodies. 09H/10H original-report identifiers were intentionally NOT asserted from held text; their code-only artifact identity is anchored by path, measured SHA and this receipt, and the historical ID requires authorized independent metadata confirmation. 05H-08H/11H/12H IDs above are preflight metadata IDs, not new research results. This record does not promote held original reports or their semantic claims. Evidence: original-byte source/STATIC + VERIFY, NOT original-game DYNAMIC.
+**Publication:** code-only PUBLISHED_INTAKE / NOT_CURATED, exact fetched Git blob matches listed above. Historical source tests were NOT RUN. Golden PASS 0, strict MATCH 0, new READY 0, new formally proven native T019 contradiction 0, MASTER formal change 0. No game/EXE/DAT/MAP/SAVE/ZIP, raw logs, owner-B body, curated REF/dictionaries or develop touched.
+**Next independent cursor:** E/T020 2026-10-28 13H-15H JSON/Python historical regression assets (first verify against existing owner PR/develop; screen separately for prior refusals and protected markers). Keep all existing refusal IDs, protected VA 0x5710C0-0x571500, and guarded report bodies out of recovery. Lawful same-run UI + immediate SAVE/input + active MAP/3-side ordered Unit/Troop evidence remains absent, so no native G0-G2 Golden promotion.
+
+---
+
 ## 2026-11-03 10H continuation — 2026-10-24 V9 flow-kind provenance negative-cases
 
 Two independently safe, **original-byte E/T018–T020** 2026-10-24 09H source assets tied to the **same already established study ID** `E-AUDIT-20261024-09H-T018-T020-INDEX-V9-FLOW-TYPE-01` were checked against private develop, existing owner PR17, the local research PC source SHA and narrow privacy/protected preflight; no pre-existing identical source asset in those two GitHub locations was found. New study IDs **0**, new PRs **0**. GitHub fetched Git blobs **2/2 byte-identical** with local `git hash-object --no-filters`:
