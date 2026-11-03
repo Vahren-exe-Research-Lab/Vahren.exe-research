@@ -533,3 +533,4 @@
 0x54F245	code	Summon_LinkChildCall	通常戦闘の召喚 0x54E7B0 内の 0x5774A0(parent, child) 呼び出し。このとき召喚に使ったスキルが呼び出し元の [esp+0x44]（呼ばれた側の [esp+0x50]）にある。スキルのデータの先頭 +0x00 はキー名の std::string。	実機確認	REF_UNIT_EXP_SUMMON §10
 0x5A9CC0	func	T028_PreReg_ThreeHelperDispatch	Original PE 178B function directly E8-calls 0x4C22B0, 0x4C3E40, 0x4BC9C0; full object/geometry meanings VERIFY	静的確認	B-20261029-0608-T028-AL1-PREREG-DETACH-GEOMETRY-01; REF_BATTLE_AI_MORALE.md
 0x4189B0	func	T028_ModeNonnegative_GatedSubobjectCall	Original PE 37B wrapper indirect vtable+0x64 gate, then ESI+0x1E0 and E8 0x5AA130; full ABI and gameplay VERIFY	静的確認	B-20261029-0910-T028-SIGNED-MODE-TWO-EFFECT-SUBOBJECTS-01; REF_BATTLE_AI_MORALE.md
+0x5AA130	func	T028_ModeTable_RegistrationGate	Original x86 has mode0..11 indirect switch, initial +0x5C/+0x7C/+0x78 stores, +0x74 conditional registration guard; effect gameplay VERIFY	静的確認	B-20261029-1016-T028-EFFECT-MODE-MATRIX-ONCE-REGISTER-01; REF_BATTLE_AI_MORALE.md
