@@ -195,11 +195,11 @@
 0x5158A0	func	Ai_CopySupportFallbackRecords	支援候補レコードのコピーに関与する補助。探索コアの分岐によっては呼ばれない経路がある。	推定	T013§B-20261011-0115-01
 0x57C9B0	func	Ai_CheckFacingSelection	行動対象の方位差に関係する検査を含み、Unit+0x186C8 が番兵値のとき一部の方位判定を回避する。	推定	T013§B-20261010-1716-02
 0x57D1D0	func	Ai_UpdateSpatialTargetLink	Unit+0x1E594 にある別 Unit 参照が有効なら、両者の +0x220/+0x224 座標差を計算する処理に進む。	静的確認	T013§Unit+0x1E594の生成後config writer
-0x57D8B0	func	Ai_AdjustSearchTargetCoordinates	目標探索の後段で現在時刻や戦場境界を参照して座標候補を補正する関数。補正の全条件は未確認。	推定	T013§B-20261021-1914-01; B-20261029-1310-T013-POSTSELECT-DUAL-DISTANCE-FPU-GATE-01
+0x57D8B0	func	Ai_AdjustSearchTargetCoordinates	目標探索の後段で現在時刻や戦場境界を参照して座標候補を補正する関数。補正の全条件は未確認。	推定	T013§B-20261021-1914-01; B-20261029-1310-T013-POSTSELECT-DUAL-DISTANCE-FPU-GATE-01; B-20261029-15H-T013-CALLER-MODE-ENTRY-NATIVE-01
 0x571A40	func	Ai_CheckOrientationGate	AI の方位差判定に先行して戻り値 AL が使用される補助。AL の詳しい意味は未確定。	推定	T013§B-20261010-1716-02
 0x41EF50	func	Ai_SelectFourwayBattleMode	四方向選択に使うグローバル 0x65EB64 をまず1へし、所有者の状態や条件により0へ切り替える。	静的確認	T024§B-20261026-0115
 0x4C7040	func	Ai_ApplyFourwayPairState	四方向用の +0x48/+0x4A/+0x4C/+0x4E の各ペアを番号0〜3で処理する。実際のゲーム効果の意味は未確定。	静的確認	T024§B-20261025-2313
-0x44CF80	func	Ai_DispatchMode1UnitGroup	mode1 の経路から Unit 群の仮想関数表 +0x68 を引数1で呼び出す。対象クラスとゲーム上の意味は未確定。	静的確認	T013§B-20261029-1613
+0x44CF80	func	Ai_DispatchMode1UnitGroup	mode1 の経路から Unit 群の仮想関数表 +0x68 を引数1で呼び出す。対象クラスとゲーム上の意味は未確定。	静的確認	T013§B-20261029-1613; B-20261029-1613-T013-MODE1-VTABLE68-CLASS-DISPATCH-01; B-20261029-1713-T013-UPSTREAM-FOUR-CALL-GROUP-FILTER-01
 0x49E8B0	func	Ai_CollectAliveUnitsFromTree	木構造のユニット参照を走査し、Unit+0x1867C!=0 の死亡扱いを除外して生存ユニットを配列に集める。	静的確認	T013§B-20261024-0110
 0x49CD60	func	Ai_UpdateKeyedUnitVector	キー付きベクトルを検索・消去・挿入する関数群の入口。書換えで使われる値の名称と全分岐は未確定。	推定	T013§B-20261024-0616
 0x49F7D0	func	Ai_InsertKeyedVectorRecord	キー付きベクトルを格納する木への挿入処理を担当する。record+0x1C の3ポインタの引継ぎを含む。	静的確認	T013§B-20261024-0616
@@ -534,3 +534,4 @@
 0x5A9CC0	func	T028_PreReg_ThreeHelperDispatch	Original PE 178B function directly E8-calls 0x4C22B0, 0x4C3E40, 0x4BC9C0; full object/geometry meanings VERIFY	静的確認	B-20261029-0608-T028-AL1-PREREG-DETACH-GEOMETRY-01; REF_BATTLE_AI_MORALE.md
 0x4189B0	func	T028_ModeNonnegative_GatedSubobjectCall	Original PE 37B wrapper indirect vtable+0x64 gate, then ESI+0x1E0 and E8 0x5AA130; full ABI and gameplay VERIFY	静的確認	B-20261029-0910-T028-SIGNED-MODE-TWO-EFFECT-SUBOBJECTS-01; REF_BATTLE_AI_MORALE.md
 0x5AA130	func	T028_ModeTable_RegistrationGate	Original x86 has mode0..11 indirect switch, initial +0x5C/+0x7C/+0x78 stores, +0x74 conditional registration guard; effect gameplay VERIFY	静的確認	B-20261029-1016-T028-EFFECT-MODE-MATRIX-ONCE-REGISTER-01; REF_BATTLE_AI_MORALE.md
+0x49D1B0	func	Ai_Mode1PrepassVectorDrain	Native 163B prepass vector iteration through virtual +0x58, conditional +0x24 notification and logical end reset; other callers, ABI and runtime outcomes VERIFY	静的確認	B-20261029-1813-T013-PREPASS-CALLBACK-BREAK-DRAIN-01; B-20261029-1713-T013-UPSTREAM-FOUR-CALL-GROUP-FILTER-01; REF_BATTLE_AI_MORALE.md
