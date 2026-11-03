@@ -513,3 +513,6 @@
 0x575A60	func	Unit_OnDefeated	通常型 BattleUnit の vtable+0x58。最初の1回だけ +0x1867C を立て、生きている子のうち element_lost の子を子の vtable+0x58 で消す。陣営 +0x48 の一覧からは外さない。	静的確認	F§96, ON-STAND-010
 0x5445E0	func	SimpleUnit_OnDefeated	簡易戦闘型 BattleUnit の vtable+0x58。+0x1867C と UnitData+0x1B1 を立て、HP+0x90=0、element_lost の子を消す。	静的確認	F§96, EXP_ENDTRANSFER CP04, ON-STAND-010
 0x551FB2	code	Hit_LinkedAward_AddExp	0x551E50 内の経験値加算 add [edi+0x16C],edx（6バイト）。EDI=加算先 UnitData、EDX=量、ESI=context（[esi]=actor）。DLL のフック候補。	静的確認	F§96, EXP_ENDTRANSFER CP17
+
+# ---- T012 verified bounded effect record initializer (2026-11-03) ----
+0x4DFBB0	func	SkillEffectRingRecord_InitializeAndDelegate	Original bounded x86: conditional old R record call, reset/copy 24-byte input records, linked vtable+0x28 and 0x41E060 calls, ret 0xC; child effects and arbitrary count safety VERIFY	静的確認	B-20261013-1356-01; B-20261013-1415-01 R/P/L correction; REF_SKILL_POST_ACTION.md
