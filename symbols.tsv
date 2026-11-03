@@ -524,7 +524,7 @@
 # ---- T012 bounded original HP-tier/post-update (2026-11-03 curator) ----
 0x577100	func	Unit_PostHpTierRegister	Original x86 288B/85 instructions: Unit flag guards; mode0 0x41E160 unlink and timer clear; enabled HP/HPmax/0.05 integerized tier clamp 0..20 to +0x738; conditional 0x41E060 registration; +0x185F4=150. Rounding, rendering and Golden VERIFY.	静的確認	B-20261013-1850-01; REF_SKILL_POST_ACTION.md
 # ---- 2026-11-03 battle-time DAT bridge (Claude F§96, REF_UNIT_EXP_SUMMON §10) ----
-0x49E780	func	Battle_FindUnitByName	__fastcall(ECX=名前, EDX=評価器=context+0x504)。評価器+0x1EEBEC の multimap(名前→BattleUnit)を引き、生存(+0x1867C=0)を優先、なければ最初の倒れたユニットを返す。isDead/getDistance/getLife/skillTroop など19か所が使う。	静的確認・実機確認	REF_UNIT_EXP_SUMMON §10
+0x49E780	func	Battle_FindUnitByName	__fastcall(ECX=名前, EDX=評価器=context+0x504)。評価器+0x1EEBEC の multimap(名前→BattleUnit)を引き、生存(+0x1867C=0)を優先、なければ最初の倒れたユニットを返す。isDead/getDistance/getLife/skillTroop など19か所が使う。	実機確認	REF_UNIT_EXP_SUMMON §10
 0x49E560	func	Battle_RegisterUnitName	BattleUnit を評価器+0x1EEBEC(名前)と+0x1EEBDC(UnitData)の表に登録。通常型 0x56F880・簡易型 0x544290 の両コンストラクタから。召喚獣も登録される。	静的確認	REF_UNIT_EXP_SUMMON §10
 0x48ABF0	func	Battle_ClearUnitTables	評価器の +0x1EEBE0/+0x1EEBF0 の木を空にする（戦闘の後片付けと推定）。	静的確認	REF_UNIT_EXP_SUMMON §10
 0x433B62	code	Script_ExecEntry_Field	命令の実行本体 0x4A1250 への CALL。戦闘外の DAT 命令はここを通る（汎用一覧の入口）。	実機確認	REF_UNIT_EXP_SUMMON §10
