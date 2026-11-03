@@ -20,10 +20,22 @@
 
 Result **10/10 exact site + target + 5-byte opcode** against V9 `native_callsite` with independent native PE decoding. This is a STATIC receipt, **not** formal five-method REA VERIFIED and not original-game Golden.
 
+## 05H same-run addendum: CRT record +0x90 writer provenance
+
+The next safe cursor was resolved with targeted V9 FTS `_ProcessingThrow` and independent original PE x86 windows (not a full re-decompilation). V9 proposes that `0x5B9EDB` tests `_ptiddata::_ProcessingThrow`, but the exact C struct name is **INFERRED**, not directly encoded by machine instructions. Original PE confirms a shared field at `[EAX+0x90]` immediately after calls to `0x5BC6A9`:
+
+- `0x5B9D3C` (`___FrameUnwindToState` in V9): `0x5B9D63 CALL 0x5BC6A9; 0x5B9D68 INC DWORD [EAX+0x90]`. Bounded original window `0x5B9D3C+188` SHA256 `5D8558F6799A9C6A963EBA3FE2F3A3F1044D8FCBD3D1AE7A3337C8ADDFD346AF`.
+- `0x5B9CED` (`___FrameUnwindFilter` in V9): `0x5B9D0E CALL 0x5BC6A9; 0x5B9D13 AND DWORD [EAX+0x90],0` clears the field along its checked branch. Another path checks `0x5B9D24 CMP [EAX+0x90],0; 0x5B9D2B JLE`, then `0x5B9D2D CALL 0x5BC6A9; 0x5B9D32 DEC DWORD [EAX+0x90]`. Window `0x5B9CED+79` SHA256 `35FFC0FE440A269B542C37D182E52DDBAFFBCC3948C1F931E751066D89785E38`.
+- `0x5B9DFE`: `0x5B9DFE CALL 0x5BC6A9; 0x5B9E03 CMP [EAX+0x90],0; JLE`, then `0x5B9E0C CALL 0x5BC6A9; 0x5B9E11 DEC [EAX+0x90]`. Window `0x5B9DFE+26` SHA256 `8B3EA35C7ACD1D2C2EB4CD90D863BA2FCF62B98BA11561AAAF8CEE1C8BC3CC83`.
+- Reader `0x5B9EDB` compares the same field against zero and uses `SETNE` at `0x5B9EE8`. This tests **nonzero**, whereas both checked decrement branches require **positive**; do not equate predicates or infer all exceptional paths. Reader window `0x5B9EDB+17` SHA256 `85F652A6E42FF85E3A1CC5AEE6C238C6966A85C54FCEBE087EAEFA2920E23A4A`.
+- Six **new** native direct E8/V9 site+target+opcode matches to `0x5BC6A9`: `0x5B9D0E e896290000`, `0x5B9D1F e885290000`, `0x5B9D2D e877290000`, `0x5B9D63 e841290000`, `0x5B9DFE e8a6280000`, `0x5B9E0C e898280000`. **6/6** new; prior `0x5B9EDB -> 0x5BC6A9` rechecked 1/1 but excluded as earlier receipt. Total **16/16 distinct newly selected E8** in this 05H report (10 io-state + 6 CRT writer); formal five-method VERIFIED still 0.
+
+**STATIC**: +0x90 nonzero reader, guarded decrement, increment, zero-clear in these exact original windows. **INFERRED**: V9 CRT `_ProcessingThrow` naming and unwind-counter intent. **VERIFY**: runtime counter lifetime, exceptional balances, exact CRT ABI and specific gameplay EH arrival. This adds lawful evidence without resolving the cross-domain historical research-ID collision or claiming Golden.
+
 ## Status / corrections / curator acceptance gate
 
-- **STATIC**: native field writes, intersection, control-flow, three literal strings, 10 direct E8 receipts and `RET 4`. **INFERRED**: iostream error-state semantics from strings plus library labels. **VERIFY**: live EAX/ECX/stack argument ABI beyond this caller, exact exception-mask meaning, throw/handler runtime, lock balance, record+0x90 writer/source and downstream effects.
+- **STATIC**: native field writes, intersection, control-flow, three literal strings, 10 direct E8 receipts and `RET 4`. **INFERRED**: iostream error-state semantics from strings plus library labels. **VERIFY**: live EAX/ECX/stack argument ABI beyond this caller, exact exception-mask meaning, throw/handler runtime, lock balance, record+0x90 runtime counter meaning and downstream effects.
 - **HOLD_FOR_ID_RECONCILIATION**: earlier streambuf reports reused historical `REA-LOCAL-20261024-09H-P0-THREE-RBTREE-UNSIGNED-KEYZERO-STATIC-01`, which current develop already CURATED for unrelated `0x48F720` tree semantics. This 05H work receipt is NOT a second use of that historical ID; curator must reconcile the cross-domain series using source SHA and distinct work receipts before selective adoption.
 - **PUBLISHED_INTAKE only after exact private GitHub source and INDEX readback; NOT CURATED**. Historical owner 266-ID snapshot not reclassified; semantic uncured total unknown. New formal five-method VERIFIED 0; original Golden PASS 0 / strict MATCH 0 / READY 0. Prior Wave6 / 18H / protected safety holds unchanged and untouched; no new refusal.
 - Curator next: rehash this exact native window, compare 04H `0x42AAF9` caller and the 03H exception/lock notes; assign correct semantic grouping, then adopt only distinct STATIC under curator ownership. No REA edit of develop/REF/symbols/structs.
-- Next safe owner cursor: lawful V9 + native analysis of CRT/TLS record `+0x90` **writer provenance**, or narrow actual callsite-specific flag-mask path. No refused evidence access.
+- Next safe owner cursor: caller-specific exception-mask path from `0x42AAF9`, possible counter cleanup/exception state convergence, and curator cross-domain ID reconciliation. No refused evidence access.
