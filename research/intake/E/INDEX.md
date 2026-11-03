@@ -1,3 +1,15 @@
+# E-20261103-21H-V9-FIXTURE-ERRATUM
+
+## 2026-11-03 21H JST — existing T020/V9 truncated runner: separate safe synthetic-classifier correction
+
+- **Same existing study ID, no new research ID or PR:** `E-AUDIT-20261024-09H-T018-T020-INDEX-V9-FLOW-TYPE-01` (owner E, T018/T020 cross-check). Historical 25-line original `tests/t020_v9_static_provenance_gate_20261024_09H.py` is kept **unchanged / SYNTAX_INVALID**, PC source SHA256 `088AA560CFC075AC7B2786C297CF983D9558C9B2C39EEE20A71870F934B50DC6`, original GitHub blob `f9dc1a75781147f5e1303825ab052c4dc227a86f`. Historical fixture `tests/T020_V9_STATIC_PROVENANCE_NEGATIVES_20261024_09H.json` remains unchanged; original PC source SHA256 `E56A75421EC8F8FD3547763A3DB1026939E01F6C92980C641BC62167E3B3C297`, GitHub fixture blob `b8df27c47f9e55d83c62f074dd4ba917dad8d063`.
+- **New, separate E-only repair artifact:** [standalone synthetic fixture classifier](repro/t020_v9_provenance_fixture_classifier_erratum_20261103.py), published content SHA256 `CC2667C7AC583312986FF5B35C7832EB7EE8B3909BF26B8C99826BE2406D7782`, GitHub Git blob `9b1347cfb006438f2c666330a99d5ca7bad66e60`, PRIVATE same Draft PR #17. This tests ONLY synthetic labels from the already archived 11-case JSON; it **does not** repair or silently reinterpret the original byte archive, read the real V9/PE/DB, or claim any native E8/ABI fact. Test scope: source `STATIC/SYNTHETIC/VERIFY`, original native Golden **NOT_TESTED**, formal READY **NOT_PROMOTED**.
+- **Verification (authorized PC, this run):** source Python SHA256+AST parse, reference original script/fixture PC SHA256 recheck, then execute the **GitHub-readback published exact script bytes** against original source-matched fixture: **11/11 expected synthetic classifications**, exit 0. A matching synthetic label is NOT original-game Golden PASS or independent machine-code verification. Remote blob/content re-fetched after publish; no protected VA/safety hold touched.
+- **Status:** `PUBLISHED_INTAKE / SYNTHETIC / NOT_CURATED`. This is an erratum/additional runnable synthetic demonstration tied to existing ID, not a new native study. Original game Golden PASS 0; strict MATCH 0; new formal READY 0; MASTER formal delta 0. Curator may selectively review source and behavior; no `develop` or formal KB edits by E.
+- **Next safe cursor:** after excluding the 30 previously enumerated HOLD / refused / gitignored dependent Python/JSON asset rows (all remain UNSYNCED), review *distinct non-HOLD* E-owned report provenance and correction links beyond this now-closed 2026-10-24 09H synthetic gap. Independently sourced same-run legal G0 UI + immediate G1 SAVE/input + loaded G2 MAP/three-side ordered Unit/Troop evidence is still absent; do not retry protected T018/T019 evidence.
+
+---
+
 # E-20261103-1351-EIGHT-CODE-SOURCE-READBACK
 
 ## 2026-11-03 20H JST — E/T020 existing V9 provenance runner reproducibility erratum (NO new study)
