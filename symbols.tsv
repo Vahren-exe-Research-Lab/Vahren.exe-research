@@ -541,3 +541,8 @@
 0x49D1B0	func	Ai_Mode1PrepassVectorDrain	Native 163B prepass vector iteration through virtual +0x58, conditional +0x24 notification and logical end reset; other callers, ABI and runtime outcomes VERIFY	静的確認	B-20261029-1813-T013-PREPASS-CALLBACK-BREAK-DRAIN-01; B-20261029-1713-T013-UPSTREAM-FOUR-CALL-GROUP-FILTER-01; REF_BATTLE_AI_MORALE.md
 0x416220	func	Tree_EraseRangePartialNode	Original x86 partial-range tree-node erase: invalid iterator gate; capacity>=16 heap string release, node free, nonzero count decrement. Full-tree cleanup/owner/game effects VERIFY	静的確認	B-20261030-0215-T028-SPOT-TREE-ERASE-STRING-RELEASE-01; REF_BATTLE_AI_MORALE.md
 0x416870	func	Tree_ClearFullRangeNodes	Original x86 full-tree recursive/iterative node destructor with nil guard and conditional heap string free. Caller 0x415CF0 resets header links and count=0; ownership/Spot+0xB8/game effects VERIFY	静的確認	B-20261030-0308-T028-FULL-TREE-CLEAR-POSTORDER-01; REF_BATTLE_AI_MORALE.md
+# ---- 2026-11-04 attack/status events, simple-battle links (Claude REF_UNIT_EXP_SUMMON §11) ----
+0x551167	code	Damage_ExpAwardCall	ダメージ処理 0x550E70 内の 0x551E50(victim, damage, victim最大HP) 呼び出し。攻撃した側は [ctx]、スキルは [ctx+8]。1 ヒットごとに必ず通る（exp_per=off でも）。	実機確認	REF_UNIT_EXP_SUMMON §11
+0x551C6A	code	StatusSkill_ExpAwardCall	0x551490 内の 0x551E50(receiver, amount, …) 呼び出し。補助スキルが 1 体に効くごとに通る。	実機確認	REF_UNIT_EXP_SUMMON §11
+0x5479F0	code	Summon_LinkChildCall_Simple	簡易戦闘の召喚 0x547490（ECX=スキル）内の 0x5774A0 呼び出し。スキルは呼び出し元 [esp+0x18]（呼ばれた側 [esp+0x24]）。	実機確認	REF_UNIT_EXP_SUMMON §11
+0x5537BF	code	Summon_LinkChildCall_Missile	簡易戦闘のミサイル経由の召喚 0x553390（ECX=スキル、親=ミサイル+0x78）内の 0x5774A0 呼び出し。スキルは呼び出し元 [esp+0x2c]（呼ばれた側 [esp+0x38]）。	実機確認	REF_UNIT_EXP_SUMMON §11
