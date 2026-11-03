@@ -11,6 +11,7 @@
 2. When the non-null slot's `[child+0x14]!=0`, `0x563F23..0x563F58` allocates a list node via `0x4C52D0`, checks unsigned `0x3ffffffe-[0xAADD08]` and branches to `0x563FC8 -> 0x5B5B6D` on `jb`. Only the ordinary path `0x563F4C/52/58` increments count and relinks list; `0x563FCD` raises the same capacity C++ exception already identified in 15H, not a new exception type. Input count range, allocation/exception unwind and real list health are unproven.
 3. The grid reset is downstream: `0x563F88..0x563FA7` zeros EDI `+0x1400/+04/+08/+0C`; `0x563FAD/0x563FB9` call `0x5BE400` twice to clear blocks of `0x1000` bytes at EDI+0x400 and `0x400` bytes at EDI. A capacity throw at `0x563FCD` bypasses this **normal-flow cleanup**, but alternate exception unwind/handlers have **not** been checked. Do not assert a leak or stale grid on actual gameplay.
 4. Existing A/T014 owner report records normal-load tail `0x45F5F9 -> 0x563ED0` (A-20261012-1612-01, `evidence/LANE_A_HANDOFF.md`). The original direct `E8` at `0x45F5F9` has bytes `e8d2481000` and matches V9 `native_callsite`. An independent `0x48C050 -> 0x563ED0` is also confirmed (`e87b7e0d00`); these are **caller edges**, not proof a particular error branch runs on load.
+5. Targeted next-cursor check (same run): native `0x45F5DB+90` SHA256 `B44A3BBC072E090697C8720B73A2941F50CCC8EE4CB61467B1527207696D83E0` proves that, on the **normal return path** after `0x45F5F9`, `0x45F606` writes BL to `[owner+0x1EEE18]` before later cleanup. A nonlocal throw can bypass this straight-line write, but we did **not** verify exception dispatch, unwind, or resulting value. V9 assigns `0x45F5F9` to owner `0x45EAC0` with discontinuous `function_range` segments (`0x45EAC0..0x45EAFB`, `0x45ED20..0x45F932`), so that label alone **does not independently prove native function entry/handler ownership**.
 
 ## Verification, correction and curation gate
 
@@ -21,4 +22,4 @@
 
 ## Next authorized cursor
 
-- Trace bounded *upstream* caller `0x45EAC0` normal-load EH/catch/wind-back after `0x45F5F9`; separately trace lawful producers of zero-flag object vptr+8. Confirm whether any exception handler reaches grid reset. Do not revisit blocked Wave6/18H/protected evidence, run REA, change another owner's materials, or claim Golden.
+- Trace the actual enclosing native function and EH/catch/wind-back for normal-load callsite `0x45F5F9` (V9 fragment-owner label `0x45EAC0` is not accepted as proven handler entry), including whether post-call `0x45F606` can be skipped by error propagation; separately trace lawful producers of zero-flag object vptr+8. Do not revisit blocked Wave6/18H/protected evidence, run REA, change another owner's materials, or claim Golden.
