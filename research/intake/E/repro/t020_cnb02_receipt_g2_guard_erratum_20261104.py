@@ -5,6 +5,7 @@ This is historical synthetic validation, NOT native Golden, MATCH or READY.
 Legacy source and original PC reports stay unchanged.
 """
 import copy
+import math
 import unittest
 import t020_cnb02_receipt_provenance_gate_20261021_2345 as legacy
 import t020_cnb02_g2_roster_role_coverage_overlay_20261026_09H as roles
@@ -17,16 +18,43 @@ HARD_STATES = frozenset({
 })
 
 
+def receipt_clock_issues(receipt):
+    """Shape/finite-time diagnostics only: not proof of clock continuity."""
+    if not isinstance(receipt, dict):
+        return ["RECEIPT_NOT_OBJECT"]
+    stages = receipt.get("stages")
+    if not isinstance(stages, dict):
+        return ["STAGES_NOT_OBJECT"]
+    issues = set()
+    for key in legacy.STAGES:
+        if key not in stages:
+            continue  # The historical gate already reports missing stages.
+        stage = stages[key]
+        if not isinstance(stage, dict):
+            issues.add("STAGE_NOT_OBJECT")
+        elif isinstance(stage.get("t_ms"), float) and not math.isfinite(stage["t_ms"]):
+            issues.add("NONFINITE_STAGE_CLOCK")
+    return sorted(issues)
+
+
 def review_receipt(receipt):
-    """Apply post-2026-10-21 G2 diagnostics; never promote a legacy schema gate."""
-    old = legacy.gate(receipt)
-    g2 = receipt.get("stages", {}).get("g2")
+    """Add G2 and clock diagnostics without promoting historic schema receipts."""
+    clocks = receipt_clock_issues(receipt)
+    try:
+        old = legacy.gate(receipt)
+    except (AttributeError, KeyError, TypeError):
+        # Malformed imported receipts must not crash a later Golden intake.
+        old = "REJECT_EVIDENCE"
+    stages = receipt.get("stages") if isinstance(receipt, dict) else None
+    g2 = stages.get("g2") if isinstance(stages, dict) else {}
     g2 = g2 if isinstance(g2, dict) else {}
     issues = sorted(set(roles.review(g2)["issues"]) |
                     set(identity.review(g2)["issues"]))
     status = (old if old in HARD_STATES else
+              "REJECT_EVIDENCE" if clocks else
               "G2_REVIEW_REQUIRED" if issues else "SCHEMA_ONLY_NOT_GOLDEN")
-    return {"legacy_verdict": old, "g2_issues": issues, "status": status,
+    return {"legacy_verdict": old, "g2_issues": issues,
+            "source_issues": clocks, "status": status,
             "actual_golden_pass": False, "strict_match": False,
             "new_formal_ready": False}
 
@@ -98,6 +126,58 @@ class ReceiptG2ErratumTests(unittest.TestCase):
         self.assertEqual(out["legacy_verdict"], "NO_STRICT_COMPARISON")
         self.assertEqual(out["status"], "NO_STRICT_COMPARISON")
         self.assertFalse(out["strict_match"])
+
+    def test_nonfinite_g4_clock_rejected_despite_legacy_pass(self):
+        r = self.base()
+        r["stages"]["g4"]["t_ms"] = float("inf")
+        self.assertEqual(legacy.gate(r), "SYNTHETIC_SCHEMA_ONLY")
+        out = review_receipt(r)
+        self.assertIn("NONFINITE_STAGE_CLOCK", out["source_issues"])
+        self.assertEqual(out["status"], "REJECT_EVIDENCE")
+        self.assertFalse(out["actual_golden_pass"])
+
+    def test_nonfinite_g2_clock_not_hidden_by_legacy_rejection(self):
+        r = self.base()
+        r["stages"]["g2"]["t_ms"] = float("nan")
+        out = review_receipt(r)
+        self.assertIn("NONFINITE_STAGE_CLOCK", out["source_issues"])
+        self.assertEqual(out["status"], "REJECT_EVIDENCE")
+
+    def test_malformed_g4_stage_rejected_not_crash(self):
+        r = self.base()
+        r["stages"]["g4"] = None
+        out = review_receipt(r)
+        self.assertEqual(out["legacy_verdict"], "REJECT_EVIDENCE")
+        self.assertIn("STAGE_NOT_OBJECT", out["source_issues"])
+        self.assertEqual(out["status"], "REJECT_EVIDENCE")
+
+    def test_malformed_stages_rejected_not_crash(self):
+        r = self.base()
+        r["stages"] = None
+        out = review_receipt(r)
+        self.assertIn("STAGES_NOT_OBJECT", out["source_issues"])
+        self.assertEqual(out["status"], "REJECT_EVIDENCE")
+
+    def test_missing_whole_receipt_rejected_not_crash(self):
+        out = review_receipt(None)
+        self.assertIn("RECEIPT_NOT_OBJECT", out["source_issues"])
+        self.assertEqual(out["status"], "REJECT_EVIDENCE")
+
+    def test_double_commit_keeps_primary_rejection_with_bad_clock(self):
+        r = self.base()
+        r["stages"]["g4"]["t_ms"] = float("inf")
+        r["commit_paths"] = ["native", "new_api"]
+        out = review_receipt(r)
+        self.assertEqual(out["legacy_verdict"], "REJECT_DOUBLE_COMMIT")
+        self.assertEqual(out["status"], "REJECT_DOUBLE_COMMIT")
+        self.assertIn("NONFINITE_STAGE_CLOCK", out["source_issues"])
+
+    def test_valid_clock_sequence_unaffected(self):
+        r = self.base()
+        r["stages"]["g1"]["t_ms"] = 5
+        out = review_receipt(r)
+        self.assertEqual(out["source_issues"], [])
+        self.assertEqual(out["status"], "G2_REVIEW_REQUIRED")
 
     def test_does_not_mutate_receipt(self):
         r = self.base()
