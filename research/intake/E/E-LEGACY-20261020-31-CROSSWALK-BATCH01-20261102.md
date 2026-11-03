@@ -56,7 +56,7 @@ Selected E report statements (L=original report line, not freshly rerun):
 **Source:** `tests/T018_CNB02_G0_UI_ROUTE_TRIAGE_20261020_2348.md` — SHA256 `9b7f07c743b5c1bc3b37e57521de5190324adf41089a102e4feb63f74ec82783` (4141 bytes). **Title:** E T018 C-NB02 G0通常UI入口の独立トリアージ（2026-10-20 23時台）. **Owner/task:** E/T018-T020; **state:** historical STATIC/SYNTHETIC/VERIFY, not native Golden, not READY.
 
 Selected E report statements (L=original report line, not freshly rerun):
-- L5: [SOURCE] 原作正規化po2_battle.dat L1-29をLocal read-only再読。VS_toono→VS_inyume→yaju_VS_tonの局所条件順。前二つはsp16のSpot/Power条件を持ち、VS_inyumeにはturn5条件あり。原作実発火は未観測。
+- L5: [SOURCE] 原作正規化po2_battle.dat L1-29をLocal read-only再読。VS_toono→VS_inyume→yaju_VS_tonの局所条件順。前二つはsp16のSpot/Power条件を持ち、VS_inyumeには`turn<5`条件あり（旧要約の`turn5`は比較演算子が欠落した表記誤り）。原作実発火は未観測。
 - L7: [NEW DELTA] G0合法UIをNOT_RUN/ATTACK_SELECTABLE/ATTACK_UNAVAILABLE/UNDETERMINEDで区別。UIで攻撃操作が無効でもそのsnapshotだけの事実とし、C-NB02が全局面で到達不能とは断定しない。run ID・TZ付時刻・original EXE SHA・capture SHA・UI入力SHAがない実観測主張はVERIFY。
 
 **Curation gate:** Check source-original SHA, native proof owner, superseding errata, G0/G1/G2 same-run eligibility, and latest implementation before adopting as REF/dictionary/MASTER evidence.
@@ -86,6 +86,18 @@ Additional source-grounded E report excerpts (original lines):
 - L8: 今回: 4 read-site(VS_toono/VS_inyume/yaju_VS_ton/inyume_dead_to_win)を分離した合成検証器と24 unittestを作成。値の他stage転記は不可。
 
 **Curation gate:** Check source-original SHA, native proof owner, superseding errata, G0/G1/G2 same-run eligibility, and latest implementation before adopting as REF/dictionary/MASTER evidence.
+
+**2026-11-04 remote-only incremental semantic review (same existing 21:53 research ID; no new PC attest, NOT_CURATED).** Private PR owner crosswalk and current `develop` G0/G1 curator policy were compared, without modifying or reopening the original E report. Previously recorded PC source 2,604 bytes / SHA256 `AD5AFCB9CD1D48FE70BE0C0A607D9069423B80F90BBDDABBDD82841292EF37129C` remains **historical attestation only**; PC Local session returned `Session terminated` on both read attempts this run. Source rehash/test execution **NOT_RUN_THIS_CHECK**; avoid falsely upgrading historic 24 unittest PASS.
+ 
+**Distinct read-site contract (candidate CURATED_POLICY, not observed original-game semantics):**
+- **VS_toono entry:** `storeBattleSpot(@aaa)` and the initial `storePowerOfSpot(sp16,@bbb)` precede its conditional check. Values here are site-1 observations, not general battle/session invariants.
+- **VS_inyume entry:** the DAT order explicitly reissues `storePowerOfSpot(sp16,@bbb)` after the earlier VS_toono condition/routine; do not substitute the original `@bbb` value for this second read, even if synthetic tests happen to use equal values. `turn<5` is cited for VS_inyume, not a blanket condition for all branches.
+- **yaju_VS_ton entry:** the historical source lists `clear(@aaa/@bbb)` before the next condition. Neither earlier cached Spot/Power value nor the absence of an explicit textual `sp16` predicate establishes later runtime battle-selection or faction reachability.
+- **inyume_dead_to_win entry:** this is the separate death-event read epoch; do not reuse earlier UI `select` or battle-event state without independent same-run evidence. Distinct class-vs-unit death-event hook declarations and native routine dispatch remain VERIFY.
+
+**Minimal independent curator negative-review matrix:** (a) initial and second `sp16` Power read differ, (b) `battleevent` or `select` changes after an earlier routine, (c) `@aaa/@bbb` were cleared before a later branch, (d) a death hook is shown without prior UI selection causality, (e) `turn<5` is incorrectly applied to all branches. Each must block cross-site value projection or remain `SOURCE_UNRESOLVED`, not infer actual engine mutation. These are **counterexample designs**, not new native captures, and require separate source/chronology review before any formal curation. This site-specific temporal scope **extends** the previous 20:44 three-valued source gate and precedes the 23:48 G0 legal-UI gate plus 00:50 G0/G1/G2 same-run chain; it does not supersede their evidence limits. PUBLISHED_INTAKE existing ID only; native Golden=0, strict MATCH=0, newly READY=0.
+
+**Next independent E cursor:** re-establish authorized PC session before fresh original-report SHA/current native checks; meanwhile compare another *independent non-HOLD* existing E source with latest private PR/develop, preferring G1 SAVE/input timeline or G2 runtime roster provenance. No protected VA payload, refused notes or previously ignored assets may be reprocessed via a different connector.
 
 ## E-OFFLINE-UNSYNCED-20261020-1744-T018-INDEPENDENT-SNAPSHOT-PIN-01
 
