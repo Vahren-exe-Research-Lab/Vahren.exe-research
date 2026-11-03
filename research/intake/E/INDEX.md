@@ -1,3 +1,55 @@
+## 2026-11-04 00H JST — incremental E/T018-T020 five-ID evidence handoff + corrected HOLD metadata
+
+**Scope and state:** owner E, existing private Draft PR #17 (`intake/E-20261102-0049-t020-17h23h`). Five DIFFERENT historical research IDs, not new IDs; original source report bytes SHA-256 re-measured on authorized PC on 2026-11-04 00H JST **5/5**, original sizes **5/5**, against existing `E-SOURCE-RECEIPT-INDEX-193-20261102.tsv` **5/5 exact**. Selected reports had no protected-address reference/private-path/credential marker under the corrected metadata check. Each owner report body was reviewed only after that independent preflight. All five IDs already have sanitized historical legacy crosswalk/archive records: **PUBLISHED_INTAKE_EXISTING / NOT_CURATED; newly archived full original reports 0; newly curated 0**. Develop `REF_BATTLE_TAKEOVER.md`, `REF_DAT_BEHAVIOR.md` and intake README contained **0/5 exact research-ID mentions** at this snapshot; this is a narrow entrypoint check, not a repository-wide claim of missing substantive coverage. No original-game byte source or other-owner recorder payload was republished or modified.
+
+| Existing E study ID | Verified original E report, proof scope | Evidence kind | Curator-reviewable semantic boundary and next comparison gate |
+| --- | --- | --- | --- |
+| 1. `E-AUDIT-20261022-0450-AUTOSAVE-BYTE-IDENTITY-01` | `tests/T020_AUTO_SAVE_BYTE_IDENTITY_CROSSWALK_20261022_0450.md`; 2978 B; SHA-256 `05CB31A1819DCDB2876A9BDB4BF43E34DBC5DE6402C86A8792DB54477902E9DE`; L4–17 | SOURCE_STATIC / VERIFY | Two saved source receipts report the same auto.sav name and 5,953,848-byte length but different SHA; C repeats A only. Do not join/save-substitute either into the later native battle solely by name/size/time. No rehash of original SAVE this run. **Acceptance:** G1 requires original SAVE bytes+independent SHA and an authenticated same-battle input/commit timeline; IDENTITY_CONFLICT otherwise. |
+| 2. `E-AUDIT-20261022-0550-SAMEPID-DUAL-BATTLE-WINDOW-01` | `tests/T020_SAME_PID_DUAL_BATTLE_WINDOW_CROSSWALK_20261022_0550.md`; 3768 B; SHA-256 `D1AA0A62670FA4D5FECFD59B0CAE19E0B583C2698B31ACBBCBFC99A9C5A68346`; L5–18 | SAVED_WATCH_RECEIPT_REVIEW / LIMITED_DERIVED_DYNAMIC / VERIFY | Historical Watch-1 and Watch-2 share PID 23272 but record DISTINCT 2026-10-21 UTC mode2/active windows (14:31–14:33 vs 15:14–15:17). The watches have 28+28 unsuccessful complete-packet capture attempts; same PID cannot serve as one battle/run key. **Acceptance:** Use watcher filename+file hash, PID, unique battle-window sequence and start/end UTC; do not cross-join missing G1/G2 from two battles. |
+| 3. `E-AUDIT-20261022-0646-NATIVE-PREPOST-TRANSIENT-GATE-01` | `tests/T020_NATIVE_PREBATTLE_AND_EXIT_TRANSIENT_GATE_20261022_0646.md`; 4616 B; SHA-256 `3553E4C46AC9A66A134A8026A0460B59765F78496390983CCF292473048773A6`; L6–23 | SAVED_WATCH_STRUCTURAL / LIMITED_DERIVED_DYNAMIC / VERIFY | Watch-2 logged attack_count changing before mode2/active1, a non-null battlefield pointer outside ACTIVE, and transient return-to-strategy modes. Six pre-existing FP-01..06 classification cases are DESIGNED_NOT_RUN, not new passing tests. **Acceptance:** Non-null pointer, count increment, mode2/active0 or mode1 return alone cannot prove lawful G0, immediate SAVE G1, actual roster G2, G3 result or G4 settlement. |
+| 4. `E-AUDIT-20261022-0150-LIVE-STRUCTURAL-NON-GOLDEN-01` | `tests/T020_LIVE_BATTLE_STRUCTURAL_CROSSWALK_20261022_0150.md`; 3438 B; SHA-256 `CB48AACA8D09E66AC0045AEE6BDB7D0CFB53C2C64CB6891042D50E06B5A564ED`; L5–23 | SAVED_REA_B_READONLY_RAW_RECEIPT / LIMITED_STRUCTURAL_DYNAMIC / VERIFY | Two distinct 2026-10-21 original-game recorder sessions (PIDs 28432 and 32468) each produced 4 non-atomic RAW snapshots and 1 failed capture. The 8 RAW records lack selected-map hash and atomic roster provenance; three side slots are NOT three verified participating powers. These are not the Watch-1/2 56 failed attempts. **Acceptance:** Captured structure and return-to-mode1 are not original Golden G0–G4. B/REA recorded bytes are cross-owner READ-ONLY; do not reattribute source discovery to E. |
+| 5. `E-AUDIT-20261021-2048-LOADER-SCRIPT2-DIR-GATE-01` | `tests/T020_SCRIPT2_DIRECTORY_GATE_ACCEPTANCE_20261021_2048.md`; 2329 B; SHA-256 `3D874FF261F61B278BCA540410BD1FE5E82EB58876DC03FF491D2C65A68B2073`; L4–16 | T019 STATIC-DESIGN / SYNTHETIC_NOT_RUN / VERIFY | Five historic DIR-01..05 acceptance designs distinguish missing script2 root, non-directory script2, empty data candidates and two-root same-name cases. Source notes propose script2-first then script; no independently rerun ASM, original-game priority/winner, exception or loaded-file proof here. **Acceptance:** Keep later 22:50 phase corrections and earlier loader/encode errata attached; original script2 outcome, precedence and runtime behavior VERIFY. Earlier rejected separate JSON remains BLOCKED and was not accessed. |
+
+**Dedup and correction chain:** `2026-10-22 01:50` saved non-atomic RAW scope → `04:50` contradictory source SAVE identity → `05:50` same-PID/different-battle-window → `06:46` transient states. These are four complementary E review IDs; independent B/REA observations and underlying logs remain *read-only B/REA provenance* and are not new E captures. The distinct `2026-10-21 20:48` T019 script2 directory-negative matrix follows the historical loader-vs-encode correction and is constrained by later first-path and two-phase errata. `VA/CALL/offset` for this handoff = **not independently examined for source/native instruction truth; no new static symbol proposed**. Golden gate remains original UI G0 + same-run pre-battle SAVE/input G1 + loaded MAP, three identified sides and ordered deployed Unit/Troop G2; no new native Golden `PASS`, strict `MATCH`, formal `READY` or E MASTER delta.
+
+**PRECHECK_HOLD without whole-task stop:** Metadata-only screening of **35 separate historical candidate report files** this run, of which **5 were eligible above; 30 flagged a protected-address reference in the text, so their body-level review was skipped**. This is a conservative *reference-marker preflight*, NOT a new OpenAI safety refusal or proof that every sentence is restricted. A prior expression requiring a trailing regex word-boundary undercounted a marker followed immediately by a Japanese character; the corrected expression detects both explicit hexadecimal and historical `VA` notation without that word-boundary. `tests/T020_STAGE13_SIDEPAIR_ROLE_RESULT_SEPARATION_20261026_06H.md` was the misclassified earlier 0-marker sample: a subsequent corrected metadata-only check reported 1 reference; it is **excluded from this new semantic handoff**, with no body content republished. All other 29 in the following batch were screened as metadata only. This affects *this run's proposed additional body review*, not the status of any previously lawful, already-published crosswalk excerpt. No denied operation was retried.
+
+**Exactly 30 pending candidate relative paths** (original hashes and existing research IDs are already in the 193-ID receipt index; do NOT rewrite or fetch their bodies):
+- `tests/T020_CNB02_G2_ROSTER_ROLE_COVERAGE_REGRESSION_20261026_09H.md`
+- `tests/T020_CNB02_G2_CROSS_ROLE_VISIBLE_ALIAS_DIAGNOSTIC_20261026_1158.md`
+- `tests/T020_CNB02_G2_SUPPORT_PARTICIPATION_DEPLOYMENT_REVIEW_20261026_1253.md`
+- `tests/T020_STAGE13_SIDEPAIR_ROLE_RESULT_SEPARATION_20261026_06H.md`
+- `tests/T020_CNB02_G1_PHASE_CONTRACT_EXECUTABLE_REGRESSION_20261025_16H.md`
+- `tests/T020_CNB02_G2_ROSTER_SEMANTIC_GAP_READONLY_20261025_10H.md`
+- `tests/T020_CNB02_G2_ROSTER_SHAPE_NEGATIVE_EXEC_20261026_08H.md`
+- `tests/T020_CNB02_G0_ATTACK_COUNT_NONIDENTITY_AUDIT_20261027_05H.md`
+- `tests/T020_CNB02_G2_ACTIVE_WINDOW_SCHEMA_REVIEW_20261025_17H.md`
+- `tests/T020_CNB02_PO2_OPTIONAL_EVENT_CANCEL_AUDIO_VISUAL_GATE_20261025_06H.md`
+- `tests/T020_CNB02_POSTBATTLE_WAR_TREE_VS_DEPLOYED_G2_PHASE_GATE_20261025_12H.md`
+- `tests/T020_CNB02_SPOT_POWER_EVENT_GATE_CROSSWALK_20261025_04H.md`
+- `tests/T020_CNB02_WORLD_RESET_VS_FIGHT_EVENT_EPOCH_20261025_05H.md`
+- `tests/T020_DEMOPERSON_PAIR_INIT_VS_G2_THREE_SIDE_CROSSWALK_20261024_00H.md`
+- `tests/T020_FASTSIM_CLEANUP_CFG_AUDIT_20261023_2252.md`
+- `tests/T020_FASTSIM_RETURN0_UI_BRANCH_AUDIT_20261023_1745.md`
+- `tests/T020_FASTSIM_TAIL_MULTIENTRY_CROSSWALK_20261023_2153.md`
+- `tests/T020_G0_RECEIPT_EPOCH_GATE_20261024_06H.md`
+- `tests/T020_G0_USER_LABEL_TO_SOURCE_SPOT_CROSSWALK_20261025_03H.md`
+- `tests/T020_G1_SAVED_CANDIDATE_WATCH_WINDOW_PREFLIGHT_20261025_02H.md`
+- `tests/T020_GOLDEN_WEAK_HELPER_CONSUMER_SCOPE_20261027_14H.md`
+- `tests/T020_SECOND_SOURCE_NULL_RETURN_PRECONDITION_CROSSWALK_20261024_0247.md`
+- `tests/T020_E_G2_TEMPORAL_SIDE_RECEIPT_BOUNDARY_20261029_20H.md`
+- `tests/T020_CNB02_STAGE13_WATCH_CROSSRUN_PROVENANCE_GATE_20261026_2044.md`
+- `tests/T020_POSTBATTLE_WARTREE_EVIDENCE_NAMESPACE_AUDIT_20261025_01H.md`
+- `tests/T020_STAGE12_ATTACKMAP_HELPMAP_NONEXCLUSIVE_ROLE_20261026_02H.md`
+- `tests/T020_STAGE12_PARTICIPATION_COVERAGE_LOWER_BOUND_20261026_03H.md`
+- `tests/T020_STAGE13_POWER_ROLE_COVERAGE_BRIDGE_20261026_05H.md`
+- `tests/T020_STAGE13_V7_TASK_SLOT_OCCUPANCY_AUDIT_20261026_2355.md`
+- `tests/T020_CNB02_G0_SAVED_PRESTATE_CLOCK_AND_B04_CACHE_RECEIPTS_20261027_04H.md`
+
+**Status/continuation:** these 30 are `PREFLIGHT_HOLD_FOR_NEW_BODY_REVIEW / NO_NEW_PUBLICATION / NOT_CURATED`; record reason=protected-reference-marker, original SHA/ID from existing receipt index and restart condition=**separate lawful source revision with independently verified safe provenance and clearance of the original applicable restriction**. Do not repeat an unchanged body preflight or use an alternate path/tool/PR. The five independently safe review entries above were completed instead. Curator cursor: source-ID/SHA/errata check of these five existing archive entries against current REF content, and selective `CURATED_POLICY` or limited receipt-provenance adoption only if genuinely missing; no automatic G0–G4 promotion. E owner next cursor: other **not yet handoff-reviewed and non-HOLD** T018/T019/T020 IDs with fresh source SHA, no 193/339 all-source rescan; new same-run legal G0/G1/G2 capture only if genuine independent original evidence becomes available. Historical checkpoint196/READY596 and task 9/21/4 are dated old snapshots, not newly re-enumerated. No changes to `develop`, REF, dictionaries, MASTER, original game, other owners, worktrees or schedules.
+
+---
+
 ## 2026-11-03 JST — E 2026-11-01 five-report metadata preflight HOLD (no payload recovery)
 
 - **Scope:** independently selected five historical E-owned T018/T019/T020 report **files** outside the just-validated six-source group; attempted *metadata-only* preflight on the authorized PC. Existence, byte lengths and file SHA-256 were measured **5/5**, with no new code/test/native observation. No report body read or publication followed.
