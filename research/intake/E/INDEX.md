@@ -1,5 +1,19 @@
 # E-20261103-1351-EIGHT-CODE-SOURCE-READBACK
 
+## E-20261103-29OCT-04-07H-RECEIPT-CORRECTION - already-published E owner originals, NOT new files  Seven historical 2026-10-29 04H/05H/07H E-owned source/fixture assets were **already present** on the existing private E PR17, but their local receipt TSV misleadingly said PC_SOURCE_METADATA_ONLY_NOT_REVIEWED. We performed an independent safe-only original-PC source SHA256 recheck, AST syntax validation 4/4, JSON parse 3/3, exact local Git hash-object comparison and private GitHub fetched Git-blob comparison **7/7**. They are **DUPLICATE_LINKED / PUBLISHED_INTAKE_EXISTING / NOT_CURATED**, not seven new assets or IDs. They were NOT reexecuted, and no original-game run took place.  | Original PC path | Existing E study ID | PC SHA-256 | GitHub blob SHA | | --- | --- | --- | --- |
+| `tests/t020_e_library_snapshot_reconcile_20261029_04H.py` | `E-AUDIT-20261029-04H-T020-LIBRARY-BYTE-RECOVERY-01` | `FA219F62A32E323BDDBB8BC4E488AFB7FC3BAAB25FAD8DD45A491BE8D5F68DBE` | `2bc76585649edfb03b5ba61a131d97fa67f699c7` |
+| `tests/T020_E_LIBRARY_SOURCE_READBACK_RECEIPT_20261029_04H.json` | `E-AUDIT-20261029-04H-T020-LIBRARY-BYTE-RECOVERY-01` | `77DEA034B6457DB47405DDE4EAF74E9F36C742F7EAB074F61978FCF164729CF3` | `0265b1ed9eadcb44a03d5c93cf569eca48e18d0a` |
+| `tests/t020_e_20261025_27_inventory_20261029_05H.py` | `E-AUDIT-20261029-05H-T020-PC-SOURCE-INVENTORY-01` | `A6758EE97D3EAD74DA95334EBE2F812F7084B3BC45D32C40E81960376A4E7301` | `b3329e4063d09298506b01b92b014ae08354e433` |
+| `tests/t020_e_archive_inventory_regression_20261029_05H.py` | `E-AUDIT-20261029-05H-T020-PC-SOURCE-INVENTORY-01` | `F835835770972BCB8A23EA300F119FCB5A8E20E5824CDF0A89566A80DDB91A49` | `9243725f8fd929a416703780121f89e1c55191ef` |
+| `tests/T020_E_PC_20261025_27_BYTE_INVENTORY_20261029_05H.json` | `E-AUDIT-20261029-05H-T020-PC-SOURCE-INVENTORY-01` | `29DF7E435A3C63C0A33F7A2F38D83C2EA604E1791F669BAED5A38CF8BDC0DFE1` | `1a3771996039e6fc5107e5f26e63ca68b00a16ba` |
+| `tests/t020_e_comparator_kind_boundary_20261029_07H.py` | `E-AUDIT-20261029-07H-T018-T020-COMPARATOR-KIND-BOUNDARY-01` | `CB94301BFC4DC4588041230707518653AACE1FA8787FDF3EF3AFC11C49B35B10` | `7b90c92839f49a2753cee8ca813bf49480dd23d0` |
+| `tests/T020_E_COMPARATOR_KIND_READBACK_20261029_07H.json` | `E-AUDIT-20261029-07H-T018-T020-COMPARATOR-KIND-BOUNDARY-01` | `D52FDEAC9FBCED90034B1CDB411A2A08B441AD5716BA556231518A189D2CE324` | `a4b6a2a698930afa07c77973ba27c7a3c853b745` |
+
+Evidence stays original-source STATIC/SYNTHETIC/VERIFY; the 05H inventory is an historical local source digest snapshot, not proof that its referenced reports can be read or that every recovery has completed. No new E/T019 native contradiction, actual original Golden PASS 0, strict MATCH 0, new READY 0 or MASTER formal change. Blocked original reports and all previous refusal scopes excluded.
+Next distinct safe-only cursor: inspect 2026-10-29 08H onward E/T018-T020 receipt TSV rows against existing owner PR/develop by ID + source SHA + previous HOLD, treating remaining metadata-only rows as **untriaged**, not automatically missing. Continue E 29 Oct without re-archiving these seven.
+
+---
+
 ## E-20261103-13H-15H-FIVE-REPRO-ASSETS - additional 2026-10-28 source backfill
 
 Five independent original-byte E/T020 source/fixture assets were preserved to the existing private E owner Draft PR #17, commit dbfbdc85e2a274ad4f278bc93c4d7dd37529f6f6. This is **three historical time-window groups, two source code files and three JSON data fixtures**; no new research IDs or PRs. Authorized PC raw SHA-256 and unfiltered local Git blob hashes equal GitHub independently fetched Git blob SHAs for **5/5** assets; Python AST **2/2** and JSON parse **3/3** succeeded. Historical code was NOT executed, native original game was NOT run.
