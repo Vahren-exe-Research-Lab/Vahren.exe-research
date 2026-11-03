@@ -1,0 +1,116 @@
+{
+  "id": "E-T020-20261021-1749-GAMECLEAR-DIRECTIVE-RECEIPTS-01",
+  "type": "STATIC_NORMALIZED_SOURCE_ONLY",
+  "source_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "parser_limit": "Only leading //, /+, /* and matching */; not engine lexer/execution proof",
+  "receipts": [
+    {
+      "path": "event_world.dat",
+      "line": 292,
+      "kind": "CODE_CANDIDATE",
+      "text": "setGameClear()",
+      "source_sha256": "523B389E2E985D3924D83246E076343F8AA1EA2C610044B1739E6792EB7E7D9A"
+    },
+    {
+      "path": "event_world.dat",
+      "line": 305,
+      "kind": "CODE_CANDIDATE",
+      "text": "setGameClear()",
+      "source_sha256": "523B389E2E985D3924D83246E076343F8AA1EA2C610044B1739E6792EB7E7D9A"
+    },
+    {
+      "path": "7000_���̑��V�i���I/free_ev_world.dat",
+      "line": 126,
+      "kind": "CODE_CANDIDATE",
+      "text": "setGameClear()",
+      "source_sha256": "65FC28C64F95CAB0ECED9522D2AC0C98D65BC1BE0B4968A56D78BA190492DD08"
+    },
+    {
+      "path": "7000_���̑��V�i���I/free_ev_world.dat",
+      "line": 139,
+      "kind": "CODE_CANDIDATE",
+      "text": "setGameClear()",
+      "source_sha256": "65FC28C64F95CAB0ECED9522D2AC0C98D65BC1BE0B4968A56D78BA190492DD08"
+    },
+    {
+      "path": "5000_�����_���V�i���I/ev_rnd.dat",
+      "line": 574,
+      "kind": "CODE_CANDIDATE",
+      "text": "setGameClear()",
+      "source_sha256": "7D767302A5C32950847788180D8FDD721F7C3131CA4BC50DD63EEE2E495AF64C"
+    },
+    {
+      "path": "5000_�����_���V�i���I/ev_rnd.dat",
+      "line": 601,
+      "kind": "CODE_CANDIDATE",
+      "text": "setGameClear()",
+      "source_sha256": "7D767302A5C32950847788180D8FDD721F7C3131CA4BC50DD63EEE2E495AF64C"
+    },
+    {
+      "path": "3000_���h���[���}�b�`/ev_dream.dat",
+      "line": 624,
+      "kind": "CODE_CANDIDATE",
+      "text": "setGameClear()",
+      "source_sha256": "A574E15A843D9BC7432D8667A2F26AEFD7956613B71E6D39AAE3670859BDBEDD"
+    },
+    {
+      "path": "3000_���h���[���}�b�`/ev_dream.dat",
+      "line": 651,
+      "kind": "CODE_CANDIDATE",
+      "text": "setGameClear()",
+      "source_sha256": "A574E15A843D9BC7432D8667A2F26AEFD7956613B71E6D39AAE3670859BDBEDD"
+    },
+    {
+      "path": "2000_���̓X�g�[���[/po25_event.dat",
+      "line": 11158,
+      "kind": "CODE_CANDIDATE",
+      "text": "setGameClear()",
+      "source_sha256": "C7DF08505ACF2562E0AE3CEBE6D8CECC1B5850ADF12885CFFBBA242F6DDD9A71"
+    },
+    {
+      "path": "2023_�C�x���g_�����[�W�R�m�c/po23_event_12_ED_A.dat",
+      "line": 96,
+      "kind": "CODE_CANDIDATE",
+      "text": "setGameClear()",
+      "source_sha256": "164FD35BC4C13356DC6DC10794A9E7EBFE08934951DCFC23A2E6C812184BFA8C"
+    },
+    {
+      "path": "2023_�C�x���g_�����[�W�R�m�c/po23_event_12_ED_B_B.dat",
+      "line": 49,
+      "kind": "CODE_CANDIDATE",
+      "text": "setGameClear()",
+      "source_sha256": "66D1F37B7A481D4F12DB5142323086DAFE6D08B79C14DF5A0CE9243204198240"
+    },
+    {
+      "path": "2023_�C�x���g_�����[�W�R�m�c/po23_event_12_ED_B_S.dat",
+      "line": 49,
+      "kind": "CODE_CANDIDATE",
+      "text": "setGameClear()",
+      "source_sha256": "BEC52DE204163108984C64AB714F07DF50C1B3EB509F8EFA34DB785812294164"
+    },
+    {
+      "path": "2023_�C�x���g_�����[�W�R�m�c/po23_event_19_ED_C.dat",
+      "line": 101,
+      "kind": "CODE_CANDIDATE",
+      "text": "setGameClear()",
+      "source_sha256": "E3DCBB44483D07A351D1D369F4A25F8BFEF66BACBD22C340006063F20CE8AE4D"
+    },
+    {
+      "path": "7000_���̑��V�i���I/����؂�t���邽�߂̔�.txt",
+      "line": 175,
+      "kind": "CODE_CANDIDATE",
+      "text": "setGameClear()",
+      "source_sha256": "5B3A5213B65509852F4FA5F56A0A84E1AAA143569EF80483570C9A96313E1B4E"
+    },
+    {
+      "path": "7000_���̑��V�i���I/����؂�t���邽�߂̔�.txt",
+      "line": 188,
+      "kind": "CODE_CANDIDATE",
+      "text": "setGameClear()",
+      "source_sha256": "5B3A5213B65509852F4FA5F56A0A84E1AAA143569EF80483570C9A96313E1B4E"
+    }
+  ],
+  "gameplay": "NOT_RUN",
+  "actual_golden_pass": 0,
+  "strict_match": 0
+}
