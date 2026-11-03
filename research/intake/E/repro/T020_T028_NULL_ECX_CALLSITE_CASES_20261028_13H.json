@@ -1,0 +1,23 @@
+{
+  "fixture_id": "E-AUDIT-20261028-13H-T020-T028-NULL-ECX-CALLSITE-PROVENANCE-01",
+  "status": "STATIC_SYNTHETIC_DESIGNED_NOT_RUN",
+  "source": {"b_detail_id":"B-20261028-13H-T028-NULL-ECX-CALLSITE-MATRIX-01","b_detail_sha256_claim_from_B_receipt":"D82737D1E2413D29521BBF73A24810AA140779B1B5F636211988863C93177979","source_exe_sha256_claim":"E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187"},
+  "callsite_arrivals_are_hypothetical": true,
+  "cases": [
+    {"id":"zero_basic","site":"0x494233","flag75":0,"flag77":0,"expected":"LOCAL_CLEANUP_CALL","actual_gameplay_observed":false,"effects_confirmed":null},
+    {"id":"zero_flag75","site":"0x494233","flag75":1,"flag77":0,"expected":"FLAGGED_ALTERNATE","actual_gameplay_observed":false,"effects_confirmed":null},
+    {"id":"vector_basic","site":"0x494618","flag75":0,"flag77":0,"expected":"LOCAL_VECTOR_APPEND","actual_gameplay_observed":false,"effects_confirmed":null},
+    {"id":"vector_flag77","site":"0x494618","flag75":0,"flag77":1,"expected":"FLAGGED_ALTERNATE","actual_gameplay_observed":false,"effects_confirmed":null},
+    {"id":"resolver_miss","site":"0x495120","flag75":0,"flag77":0,"resolver_hit":false,"expected":"SKIP_AT_CALLER","actual_gameplay_observed":false,"effects_confirmed":null},
+    {"id":"resolver_hit","site":"0x495120","flag75":0,"flag77":0,"resolver_hit":true,"expected":"LOCAL_CLEANUP_CALL","actual_gameplay_observed":false,"effects_confirmed":null},
+    {"id":"resolver_unknown","site":"0x495120","flag75":0,"flag77":0,"resolver_hit":null,"expected":"INDETERMINATE_CALLER","actual_gameplay_observed":false,"effects_confirmed":null},
+    {"id":"vector_second","site":"0x49516A","flag75":0,"flag77":0,"expected":"LOCAL_VECTOR_APPEND","actual_gameplay_observed":false,"effects_confirmed":null},
+    {"id":"candidate_7a_nonzero","site":"0x497781","flag75":0,"flag77":0,"flag7a":1,"expected":"SKIP_AT_CALLER","actual_gameplay_observed":false,"effects_confirmed":null},
+    {"id":"candidate_7a_zero","site":"0x497781","flag75":0,"flag77":0,"flag7a":0,"expected":"LOCAL_CLEANUP_CALL","actual_gameplay_observed":false,"effects_confirmed":null},
+    {"id":"prewrite_does_not_prove_cleanup","site":"0x497781","flag75":1,"flag77":0,"flag7a":0,"expected":"FLAGGED_ALTERNATE","actual_gameplay_observed":false,"effects_confirmed":null},
+    {"id":"candidate_7a_unknown","site":"0x497781","flag75":0,"flag77":0,"flag7a":null,"expected":"INDETERMINATE_CALLER","actual_gameplay_observed":false,"effects_confirmed":null},
+    {"id":"upper_cleanup_basic","site":"0x49BCF6","flag75":0,"flag77":0,"expected":"LOCAL_CLEANUP_CALL","actual_gameplay_observed":false,"effects_confirmed":null},
+    {"id":"upper_cleanup_flag77","site":"0x49BCF6","flag75":0,"flag77":1,"expected":"FLAGGED_ALTERNATE","actual_gameplay_observed":false,"effects_confirmed":null}
+  ],
+  "golden": {"G0":false,"G1":false,"G2":false,"G3":false,"G4":false,"dynamic_observed":0,"actual_pass":0,"strict_match":0}
+}
