@@ -1,0 +1,45 @@
+{
+  "research_id": "E-AUDIT-20261023-2252-FASTSIM-CLEANUP-CFG-01",
+  "status": "STATIC_VERIFY_NOT_RUN",
+  "source_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "fixtures": [
+    {
+      "id": "CL-01",
+      "claim": "Ghidra removes block at 0x48F016; original code cannot reach 0x48F01C",
+      "verdict": "REJECT"
+    },
+    {
+      "id": "CL-02",
+      "claim": "Presence of E8 0x48F01C proves native execution in a battle",
+      "verdict": "REJECT"
+    },
+    {
+      "id": "CL-03",
+      "claim": "0x48F00B sets +0x1EEC71=1; therefore cleanup and RET have completed",
+      "verdict": "REJECT"
+    },
+    {
+      "id": "CL-04",
+      "claim": "0x415A60 uses 28-byte entries; they are deployed Unit/Troop records",
+      "verdict": "REJECT"
+    },
+    {
+      "id": "CL-05",
+      "claim": "0x415A60 and 0x5B6BBB cleanup proves G3/G4 world result committed",
+      "verdict": "REJECT"
+    },
+    {
+      "id": "CL-06",
+      "claim": "ESI !=0 path can execute CALL 0x415A60 in native CFG",
+      "verdict": "STATIC_POSSIBLE_DYNAMIC_VERIFY"
+    },
+    {
+      "id": "CL-07",
+      "claim": "CALL 0x48EEE0 from any of its four owners identifies the same C-NB02 battle",
+      "verdict": "REJECT"
+    }
+  ],
+  "gameplay_not_run": true,
+  "actual_golden_pass": 0,
+  "strict_match": 0
+}
