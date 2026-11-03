@@ -1,3 +1,13 @@
+## 2026-11-03 22H JST — E intake-to-curator divergence verification (metadata checkpoint, no new research ID)
+
+- Source of truth at this check: PRIVATE existing E-owner Draft PR #17, owner HEAD `158b8b974b7eb705757d530a1a9a05d9ddb245dc`; PRIVATE `develop` HEAD `d3d6732231925f621596f6c3700b999ed4c07500`, Git merge base `dad68c4fedf8a56e430af1ec8a7993e725ce610d`. GitHub compare `develop...intake/E-20261102-0049-t020-17h23h` returned **diverged / owner ahead 579 commits / owner behind 46 commits**. These are commit-graph counts, not outstanding scientific IDs. No direct ff-only merge is established; E must NOT reset/rebase/force/merge `develop`.
+- Curator handoff: pinned E source HEAD `158b8b974b7eb705757d530a1a9a05d9ddb245dc`; curator alone may independently validate provenance, confidentiality, errata and semantic evidence, then selectively adopt authorized sanitized `research/intake/E/` content into a clean latest-`develop` isolated worktree. This owner checkpoint neither submits a curator patch nor treats PR files as CURATED.
+- Prior **339-file source-locator** snapshot was **309 PR-basename matches / 30 not matched** at its recorded receipt/branch snapshot, NOT 30 independent missing IDs and NOT a fresh per-byte rehash in this check. Pre-existing 30 HOLD / gitignore / unverified receipt states stay unchanged; refused material is not inspected or republished. No extra report, new ID, new PR or source rescan from this checkpoint.
+- Golden/READY gate unchanged by this comparison: no independently legal **same-run G0 UI, immediate G1 SAVE/input, G2 MAP/three-side ordered Unit/Troop** proof has been obtained; original Golden PASS **0**, strict MATCH **0**, newly formal READY **0**, E formal MASTER change **0**. A synthetic or static receipt never satisfies this gate.
+- **Next E owner cursor:** check only genuinely new, independently lawful E-owned evidence/source revisions by study ID, PC source SHA, current PR/`develop` dedup, HOLD and owner checks; otherwise mark capture-dependent G0–G2 as not executable from historical files. **Separate curator cursor:** selective semantic intake from pinned PR #17 HEAD above. The existing refused/gitignored 30-source queue requires its original authorized resumption conditions, not a new upload route.
+
+---
+
 <!-- E-RECOVERY-20261103-22H-SAFE-2147-SOURCE -->
 ## 2026-11-03 22H JST — 既存E/T018・T020戦闘終了受入研究の未保存本文を安全に回収
 
