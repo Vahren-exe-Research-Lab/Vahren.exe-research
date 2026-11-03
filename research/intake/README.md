@@ -3,6 +3,12 @@
 This is the **searchable owner-source intake**; a source ID, file or owner unit test is not verified original gameplay. `PUBLISHED_INTAKE / VERIFY / NOT_CURATED` until curator examines original bytes and correction lineage. Original Golden PASS=0, strict MATCH=0, newly accepted READY=0. Official semantic knowledge remains in `REF_*.md` and `symbols.tsv` / `structs.tsv` only after independent review.
 
 
+## Curator T028 06H/09H native routing ? 2026-11-04
+
+The historical B IDs B-20261029-0608-T028-AL1-PREREG-DETACH-GEOMETRY-01 and B-20261029-0910-T028-SIGNED-MODE-TWO-EFFECT-SUBOBJECTS-01 are **CURATED_STATIC** in [REF_BATTLE_AI_MORALE.md](../../REF_BATTLE_AI_MORALE.md). Private [owner Draft PR #18](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18) pinned head a39554656b1591334f2f1f4942afd10ed29e2066; underlying safe sources remain owner-owned, without wholesale merge. Original PC source SHA256 2/2; original PE identity checked; 16/16 bounded E8 edges and selected branch instructions matched. 04H/05H/08H precedents dedup-linked, 07H inner-vs-outer correction and 10H palette correction remain VERIFY outside this subset.
+
+**Delta:** PUBLISHED_INTAKE +0, new CURATED_STATIC +2 existing IDs, new research IDs 0, no new formal READY or gameplay Golden, G4 NOT PASSED. Next cursor: B-20261029-0716-T028-INNER-POINT-OUTER-CENTER-NATIVE-01 then B-20261029-1016-T028-EFFECT-MODE-MATRIX-ONCE-REGISTER-01; REA/E uncurated source IDs stay queued. Historic next-cursor snapshots below are retained for provenance.
+
 ## Curator T028 04H/05H/08H native flag and callback adoption (2026-11-03)
 
 Three **pre-existing** B IDs have new **CURATED_STATIC** meaning in [REF_BATTLE_AI_MORALE.md](../../REF_BATTLE_AI_MORALE.md), after independently checking PC source SHA256 3/3, original ver0.67 PE SHA256, four bounded original x86 windows, and selected direct E8 calls. Existing owner [Draft PR #18](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18) head `41ee1f0650cd2736e5ef86792fb1734d39765471` remains the sanitized intake source; this curation does **not** mirror the reports, add owner IDs or advance owner READY.
