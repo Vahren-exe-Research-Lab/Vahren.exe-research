@@ -1,5 +1,22 @@
 # E-20261103-1351-EIGHT-CODE-SOURCE-READBACK
 
+## E-20261103-13H-15H-FIVE-REPRO-ASSETS - additional 2026-10-28 source backfill
+
+Five independent original-byte E/T020 source/fixture assets were preserved to the existing private E owner Draft PR #17, commit dbfbdc85e2a274ad4f278bc93c4d7dd37529f6f6. This is **three historical time-window groups, two source code files and three JSON data fixtures**; no new research IDs or PRs. Authorized PC raw SHA-256 and unfiltered local Git blob hashes equal GitHub independently fetched Git blob SHAs for **5/5** assets; Python AST **2/2** and JSON parse **3/3** succeeded. Historical code was NOT executed, native original game was NOT run.
+
+| PC relative source | E prior study ID or explicit metadata gap | SHA-256 original PC bytes | Verified GitHub Git blob |
+| --- | --- | --- | --- |
+| `tests/T020_T028_NULL_ECX_CALLSITE_CASES_20261028_13H.json` | `UNRESOLVED_EXISTING_E_T020_13H_ID` | `8B2BC684CD380C9BE195783506DBBCE50A032A12AD0821F2622F97DE97A37029` | `569afc1fab36f8b1fecdb65697bd0a8b502f1fb6` |
+| `tests/T020_T028_DECIDE_SELECTOR_CALLSITE_CASES_20261028_14H.json` | `E-AUDIT-20261028-14H-T020-T028-DECIDE-BRANCH-CROSSWALK-01` | `932A47439503DA00D16789BBD724C07DA1DBF9D17D18127DB1427B919122EBEB` | `966f572489502d983828c77914d3345e059f741a` |
+| `tests/t020_t028_decide_selector_callsite_gate_20261028_14H.py` | `E-AUDIT-20261028-14H-T020-T028-DECIDE-BRANCH-CROSSWALK-01` | `BAD87AC7CB2896FF779507FADDEC1BFCC9F46250894E6E4F93E3A981D35403DF` | `a128aa86b9d11621fbf89cdd9ff6d449f6cfd743` |
+| `tests/T020_T028_WANDER_MERCENARY_TEMPLATE_CASES_20261028_15H.json` | `E-AUDIT-20261028-15H-T020-T028-WANDER-MERCENARY-TEMPLATE-BOUNDARY-01` | `46B2DA462025A129781F1F5FE95797BB53433C6797E5E8F79DF18B3E443CA9DF` | `6066c1152228b03984378c788982e91d884cd6e0` |
+| `tests/t020_t028_wander_mercenary_template_gate_20261028_15H.py` | `E-AUDIT-20261028-15H-T020-T028-WANDER-MERCENARY-TEMPLATE-BOUNDARY-01` | `0BD630C6649201C0D61074BF1D980B5264963E70FE0E4C6AFD194D81CDF6E7C9` | `868675914d3bf927599ea2652115573edac9340b` |
+
+The 13H standalone JSON has no research_id field; **do not invent an ID** or count it as an independent historical discovery. Its prior report ID needs separate authorized safe metadata confirmation. 14H and 15H JSON provide existing owner IDs above. This entry preserves code/data only, not E historical report bodies nor B/T028 source meaning. STATIC/SYNTHETIC/VERIFY and PUBLISHED_INTAKE_CODE_FIXTURE_ONLY / NOT_CURATED. Original Golden PASS 0, strict MATCH 0, new READY 0, new verified T019 contradiction 0, MASTER formal delta 0. Refused/preflight-held sources, protected address scope, native EXE/DAT/MAP/SAVE/ZIP, other owner dirty and develop remain untouched.
+Next independent safe-only cursor: audit remaining E-owned T018/T019/T020 original-byte source gaps from 2026-10-29 and earlier using the existing receipt TSV and owner PR/develop dedup; avoid the previously held 28 Oct 09H/10H reports, all previously refused 25/30/31 Oct evidence and protected scope. Do not promote native G0-G2 until same-run legal UI/immediate SAVE+inputs/MAP+three side ordered Unit/Troop are available.
+
+---
+
 ## 2026-11-03 13H JST - E/T020 original-byte safe-source recovery (28 Oct 05H-12H)
 
 Eight E-owned Python **source files** already indexed in this E owner original-PC receipt TSV were recovered on the SAME private existing E Draft PR #17; no new PR or research ID was minted. Each source is standalone from its corresponding guarded report body. Each of the eight original-PC source files passed SHA-256, scoped VA/privacy preflight, Python AST syntax validation (8/8), byte-for-byte local Git hash-object and remote GitHub fetched Git-blob SHA readback (8/8). Code files were NOT executed; any original native inputs or B-owned references remain unavailable for independent reproduction in GitHub. Original-byte 10H code carries one harmless existing trailing blank line; preserved rather than normalized.
