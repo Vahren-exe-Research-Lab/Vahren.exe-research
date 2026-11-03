@@ -1,3 +1,15 @@
+<!-- E-RECOVERY-20261103-22H-SAFE-2147-SOURCE -->
+## 2026-11-03 22H JST — 既存E/T018・T020戦闘終了受入研究の未保存本文を安全に回収
+
+- **Existing research ID**: `E-AUDIT-20261021-2147-BATTLE-RETURN-COMMIT-GATE-01`。新研究ID・新PRは作成せず、既存 PRIVATE Draft PR #17 に E owner 原報告の**サニタイズ済み意味本文1件**を追加。[報告](legacy/E-AUDIT-20261021-2147-BATTLE-RETURN-COMMIT-GATE-01.md)、既存[合成runner](repro/t020_battle_return_commit_gate_20261021_2147.py) と同一研究ID。二重研究として数えない。
+- **Original source**: 研究PC `tests/T020_BATTLE_RETURN_COMMIT_GATE_20261021_2147.md`、4,063 bytes、実測SHA-256 `2417E9BDEB47C7BF8B5602A41CDE8BB214724528E34CC5E5B46BE3B0E3CA24F3`（2026-11-03 JST）。出版用本文には禁止対象を含む旧保留の言及を除外し、原本とバイト非一致であることを明記。
+- **Remote verification**: 新規 owner 本文をPRIVATE GitHubで作成したコミット `c3b93b593ec2754e8473a4987dbd298eacc91fe0`、Git blob `a968173f077ac26a902c7594e3abceb16a75fceb`、本文のGitHub再取得による1/1完全一致。状態は `PUBLISHED_INTAKE / STATIC_CROSS_LANE_READONLY / SYNTHETIC_DESIGN / VERIFY / NOT_CURATED`。A/B/C出典はread-only引用のみ。ref/辞書/develop変更なし。
+- **Meaning preserved**: E G3終了直前とG4戦略復帰後を分離し、raw resultFlag・route名・出撃人数・二重commitだけでは原作結果を確定しない。合成EXIT-01～07は受入設計であり、今回新たなテストPASSや原作実行はない。
+- **Formal state**: 合法原作Golden PASS **0**、strict MATCH **0**、新規正式READY **0**、MASTER正式変更 **0**。既存拒否・原本ゲーム・他owner・保留30資料は不変更。
+- **Next cursor**: `tests/T020_CNB02_DAT_BASELINE_RESTORATION_AUDIT_20261024_21H.md`等の未収録E所有報告を、まず既存develop/PR重複・保護範囲・出典SHAの**許可された事前検査**から独立に判断。既存HOLDと他ownerの出典本文は取扱わず、同一run合法G0/G1/G2/G3/G4の新一次receiptが無い限りGolden/READYに昇格しない。
+
+---
+
 # E-20261103-21H-V9-FIXTURE-ERRATUM
 
 ## 2026-11-03 21H JST — existing T020/V9 truncated runner: separate safe synthetic-classifier correction
