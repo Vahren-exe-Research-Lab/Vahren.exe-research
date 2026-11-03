@@ -1,0 +1,27 @@
+# REA 2026-11-04 03H | EH3 state-1 streambuf gate and indirect cleanup (bounded original x86/V9 STATIC)
+
+Work ID: REA-20261104-03H-P0-STREAMBUF-STATE1-GATE-STATIC. Owner REA; existing historical ID REA-LOCAL-20261024-09H-P0-THREE-RBTREE-UNSIGNED-KEYZERO-STATIC-01; new independent IDs 0. Direct predecessor: rea_lab/decomp_task/REA_20261104_02H_P0_STREAMBUF_EH3_UNWIND_LOCK_STATIC.md, freshly verified SHA256 7DEDCA06440BA0FADCE193D138D39CF148446367BF28C703323CF889D2CE2DFC. This addendum does not supersede the predecessor.
+
+Observed 2026-11-04 03H JST on authorized research PC. Read-only source PE rea_lab/targets/hakushin067_Vahren.exe: SHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187, 2910720 bytes. Unified V9 rea_lab/headless_analysis/search_index/HAKUSHIN067_UNIFIED_V9_20261023.sqlite: SHA256 2629CB2F03ECEC9927E89892C77F847E4CDBA381AB718825C1CA8CFEEEF00EDE, 141033472 bytes; SQLite quick_check ok. Method: bounded original PE32/Capstone decode and read-only V9 native_callsite/function_range. No formal REA rerun, gameplay or original file changes.
+
+## Specific STATIC additions
+1. The prior EH3 state-1 action at 0x5EB988 executes lea eax,[ebp-0x1C]; push eax; call 0x42AA00; ret. It passes the ADDRESS of its local saved pointer, not a demonstrated owned allocation. Function 0x42AA00 reads the argument into ESI from [esp+0x1C] after the prologue, dereferences [ESI] downstream, establishes/restores an SEH registration and ends with ret 4. This is static call-frame provenance, not runtime unwind evidence.
+2. 0x42AA2E calls 0x5B61F2; original 0x5B61F2 jumps via E9 to 0x5B9EDB. At 0x5B9EDB, a call to 0x5BC6A9 is followed by cmp dword [eax+0x90],0 and setne al. If AL is nonzero, 0x42AA35 branches over 0x42AA80; if zero, 0x42AA39 invokes 0x42AA80 with ECX=[ESI]. The semantic identity of the queried object/state is UNKNOWN; no claim of lock state, thread identity or normal runtime frequency. V9 native_callsite has NO E9 row for 0x5B61F2 (verified absence); count it as original-PE STATIC only, never a V9-matched edge.
+3. At 0x42AA80 (V9 function 0x42AA80..0x42AB0F), a virtual-adjusted receiver flag +0x14 bit 2 gates a subpath. If the adjusted +0x0C flags masked by 6 are zero, indirect nested vptr slot +0x34 is called at 0x42AAD2. Return -1 sets ESI=4; the gated path can call 0x426E00 at 0x42AAF9 with an explicit pushed zero after building error-like flags. ABI and actual state mutation of this callee are unproven; do not identify its semantics as guaranteed flush or failure.
+4. After the optional 0x42AA80 call, 0x42AA00 writes its local EH state -1, reads the adjusted receiver's +0x38 pointer, and if non-null invokes its nested vptr slot +8 at 0x42AA5C. The earlier 01H/21H conditional 0x63848C -> 0x429760 -> LeaveCriticalSection candidate requires live vptr and alias preservation; neither exceptional activation, live callee, lock balance nor exception safety is verified.
+
+## Native PE / V9 exact selected-call checks
+Five *newly selected* direct E8 sites match V9 native_callsite site/opcode/target (5/5):
+- 0x5EB98C -> 0x42AA00: e86ff0e3ff
+- 0x42AA2E -> 0x5B61F2: e8bfb71800
+- 0x42AA39 -> 0x42AA80: e842000000
+- 0x42AAF9 -> 0x426E00: e802c3ffff
+- 0x5B9EDB -> 0x5BC6A9: e8c9270000
+These are callsite cross-checks, NOT a formal five-method VERIFIED bundle.
+
+Original-PE SHA256 window receipts (VA + byte length): 0x5EB980+24 4C8AC50B7823719CD7CD1821DE60363552B2A15289409C4BFAF53EEA75298B69; 0x42AA00+111 1AEB379FFFD76B9999E257AA4A4A249FD014C5A06F2F227E984C8F52ED744D00; 0x42AA80+144 890DC9073C1F69ED2713EDEA1BC7573C97F8E3F50D7BE31321C320D6CCE7BF72; 0x5B61F2+5 2559FD6DF1C2D84F88F913D15DD317B7E34BD43D64C0C9C4C2DD0930A47ADF4E; 0x5B9EDB+112 8FAC3AC43160A8B96B93025AC62E34FB6CF2F70D589C9847B078E608ED121E9C.
+
+## Curation and limits
+Evidence: STATIC for instructions, selected edges, byte receipts; INFERRED/VERIFY for dynamic vptr identity, exceptional execution, AL predicate semantics, nested slot +0x34/+8 effects, ABI, ownership, critical-section lifetime and lock balance. Current develop code search provided no useful indexed matches; that does NOT demonstrate semantic novelty. Cross-compare prior owner 01H, 02H, 21H, 22H, A/T014 and develop REF/TSV before curated selective adoption. PUBLISHED_INTAKE only AFTER remote exact readback; not CURATED. Historic 266 ID snapshot (258 previously published/8 held) is not a fresh full semantic backlog count. New unique ID 0; new formal REA five-method VERIFIED 0 (historical archived 64 not rerun); original Golden PASS 0, strict MATCH 0, READY 0. No refused evidence (Wave6, held 18H, protected VA) accessed/published, no new hold. No original EXE/DB, player installation, other owner, shared develop/REF/symbol/struct or user branch modifications.
+
+Next lawful owner cursor: bounded 0x5BC6A9 return-origin and 0x42AA80 nested slot +0x34 receiver/return effects, or separate curator dedup crosswalk, only when independently supported and not a refused target. QUEUE.json is stale, not the live run cursor.
