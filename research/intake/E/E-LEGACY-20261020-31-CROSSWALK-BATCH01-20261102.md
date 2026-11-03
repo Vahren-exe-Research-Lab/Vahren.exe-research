@@ -12,6 +12,8 @@ Additional source-grounded E report excerpts (original lines):
 - L6: 【重要な残余リスク】旧監査出力にはrawのバイトSHAが入っていないため、同一監査投影を生む別の原票でも再計算一致する。今回のCLIは現在読み取ったraw/監査JSONのバイトSHAを結果へ出すが、「監査当時のrawと同一」は未証明。recomputed_report_equalは真正性・動作一致の証明ではない。
 - L7: 【検証】既存525+追加28=553 Python unittest合成PASS/0 FAIL。差し替えJSONで旧ガードREVIEW_ONLY→新検査VERIFYを再現。現行NOT_RUN原票の再計算結果NOT_RUN、CLI終了コード1を検証。
 
+**2026-11-04 E-owner source-byte reconfirmation / semantic gap closure (existing ID, NOT_CURATED):** The 14-line original PC E report still matches its recorded **3310-byte SHA256 `9CA1B2A06C90FDEEE530F8F56549ED71DFFD552158AF71E2208BE475DD744F27`**. Its original L6 distinguishes *recomputed audit-projection equality* from *historically bound raw source bytes*: the output SHA of whatever raw file is read now cannot prove it was the same raw used when the earlier audit was generated. The historical 553 synthetic PASS is a reported earlier test count, not rerun here. **Curator implication:** require a separately attested old raw-byte digest and original capture provenance before treating this E/DEVLAB acceptance design as evidence. No source EXE/DAT/SAVE was tested or copied.
+
 **Curation gate:** Check source-original SHA, native proof owner, superseding errata, G0/G1/G2 same-run eligibility, and latest implementation before adopting as REF/dictionary/MASTER evidence.
 
 ## E-AUDIT-20261021-1953-CNB02-BRIDGE-STAGE-CROSSWALK-01
@@ -69,6 +71,8 @@ Additional source-grounded E report excerpts (original lines):
 - L6: 一次資料3: 正規化10_ユニット/94_放浪_ホモガキ・養殖.dat L388-447でunit u_inyume:base1/class=c_inyume/dead_event=inyume_demoralization、class c_inyume:inyume。
 - L7: 一次資料4: 正規化50_その他新システム/siki.dat L2366-2373でevent inyume_demoralization→条件付きdialog→routine(base_demoralization)を確認。
 
+**2026-11-04 E-owner source-byte reconfirmation / missing temporal semantics (existing ID `E-OFFLINE-UNSYNCED-20261020-2044-CNB02-SOURCE-ELIGIBILITY-GATE-01`, NOT_CURATED):** The 18-line E report still matches **3010-byte SHA256 `92B78B26BD6060F87AFE901C64FDC4CBBE41F5F2D123895DA74A431121102ABD`**. Original L8-L10 states that `VS_inyume` has a `turn<5` and location/faction gate, whereas `yaju_VS_ton` lacks an explicit `sp16` textual gate; those are **reported DAT lexical predicates, not the actual game's reachable UI/branch proof**. The class `inyumeb` reported `dead_event=inyume_dead`, while unit `u_inyume` reported `dead_event=inyume_demoralization` (L5-L7); two declaration hooks must not be conflated with one proven runtime death callback. A `select` value at the death event is **not** inherited from the earlier UI selection epoch. Simultaneous truth of two event candidates proves neither native setter precedence nor Yield/resume ordering. Source-only three-valued classifier remains SOURCE_COMPATIBLE_ONLY/SOURCE_BLOCKED/SOURCE_UNRESOLVED, never Golden. Original DAT content was not independently reread or rehashed in this 2026-11-04 report.
+
 **Curation gate:** Check source-original SHA, native proof owner, superseding errata, G0/G1/G2 same-run eligibility, and latest implementation before adopting as REF/dictionary/MASTER evidence.
 
 ## E-OFFLINE-UNSYNCED-20261020-2153-CNB02-TEMPORAL-SCOPE-01
@@ -92,6 +96,8 @@ Additional source-grounded E report excerpts (original lines):
 - L7: 【実装所在】E_OFFLINE_20261020_1744_T018_INDEPENDENT_PIN_DELTA_572.zip（ChatGPT作業環境）。基盤525＋先行差分553に重ねる。Python実装とテストはPC未同期。
 - L8: 【成功範囲】0=メタデータREVIEW_ONLYかつraw/audit/code固定SHAが一致、1=VERIFY/NOT_RUN、2=不正入力。どの終了値もGameplay PASSではない。
 - L9: 【重要制限】PINの独立した履歴保全、出典・合法旧UI観測、原作実EXE/DAT/SAVE/map/input/capture bytes、同run関連、旧新同条件および可視traceは未認証。pin/資料を一括改変できればこの検査単独では無力。
+
+**2026-11-04 E-owner source-byte reconfirmation / correction link (existing ID, NOT_CURATED):** The 16-line original PC E report still matches **2991-byte SHA256 `6A5C5330F264A64732C53FB1FAB0FD68DE7C8B6928D09235809417D628290684`**. Its L3-L5 extends the earlier projection report: a **pre-existing independent** pin must cover actual raw/audit/timeline byte hashes *and* verifier-code hash. A pin newly computed alongside untrusted files only proves internal consistency of the submitted package, not independently established historic identity. The original implementation ZIP and extra test files were recorded as **not PC-synced**; no executable was recovered or rerun here. Related/supersedes the limitation in `E-OFFLINE-UNSYNCED-20261020-1651-T018-AUDIT-PROJECTION-01`; source classification STATIC DESIGN / historical SYNTHETIC / VERIFY.
 
 **Curation gate:** Check source-original SHA, native proof owner, superseding errata, G0/G1/G2 same-run eligibility, and latest implementation before adopting as REF/dictionary/MASTER evidence.
 
