@@ -516,3 +516,6 @@
 
 # ---- T012 verified bounded effect record initializer (2026-11-03) ----
 0x4DFBB0	func	SkillEffectRingRecord_InitializeAndDelegate	Original bounded x86: conditional old R record call, reset/copy 24-byte input records, linked vtable+0x28 and 0x41E060 calls, ret 0xC; child effects and arbitrary count safety VERIFY	静的確認	B-20261013-1356-01; B-20261013-1415-01 R/P/L correction; REF_SKILL_POST_ACTION.md
+
+# ---- T012 bounded original HP-tier/post-update (2026-11-03 curator) ----
+0x577100	func	Unit_PostHpTierRegister	Original x86 288B/85 instructions: Unit flag guards; mode0 0x41E160 unlink and timer clear; enabled HP/HPmax/0.05 integerized tier clamp 0..20 to +0x738; conditional 0x41E060 registration; +0x185F4=150. Rounding, rendering and Golden VERIFY.	静的確認	B-20261013-1850-01; REF_SKILL_POST_ACTION.md
