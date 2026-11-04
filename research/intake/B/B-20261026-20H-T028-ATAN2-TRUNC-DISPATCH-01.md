@@ -1,0 +1,12 @@
+# B-20261026-20H-T028-ATAN2-TRUNC-DISPATCH-01 — atan2 dispatch / SSE2-versus-x87 integer conversion boundary
+
+- **Owner/tasks:** B / T028,T012; historical study, not newly discovered in this run.
+- **Source:** `data/T028_ATAN2_DISPATCH_TRUNCATION_NATIVE_20261026_20H.md`; **actual local source-report SHA-256 (read-only 2026-11-02 JST):** `F233A2E53C634F94F9681EED0A0E127FE6D58988BD6951249FB2DD8E68E2C942`.
+- **Analysis target:** ver0.67 isolated PE SHA256 `E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187`; composite Ghidra V9 SQLite SHA256 `2629CB2F03ECEC9927E89892C77F847E4CDBA381AB718825C1CA8CFEEEF00EDE`. Both whole-file hashes were independently rechecked read-only in this run. Identity is not proof of semantics.
+- **Mentioned VA/CALL/offset (not automatically ABI):** 0x63B400, 0x5E4F10, 0x5E4F2B, 0x5D1B80, 0x5D1B95, 0x5D1BB6; CPU flag0xB14A40, no proven Unit ABI.
+- **Evidence:** historical STATIC_PRIOR / INFERRED / VERIFY; stage **PUBLISHED_INTAKE upon exact GitHub readback**, not automatically CURATED, no newly formal READY; original-game Golden PASS=0, strict MATCH=0, G4 result commit NOT PROVEN.
+- **Limited source finding:** Historical bounded native owner report identifies CRT atan2 descriptor and one SSE2 CVTTSD2SI path; it also reports code beyond a short Ghidra function boundary for a separate x87 fallback path. Treat function-size and actual executable path coverage separately.
+- **Prior/overlap/possible correction:** B-20261026-22H-T028-ATAN2-FXAM-AXIS-ORDER-01; a shared VA or prior finding is not a new independent discovery. Existing develop REF and dictionary meanings take precedence pending curator verification.
+- **Boundary:** Source report SHA matched; no fresh native decode. The intended equivalence of fallback to truncation for NaN/overflow, control word, sign and all game states is NOT established. This is direction math, not proven unit morale/retreat or battle settlement behavior.
+- **Safe independent validation:** Independently verify permitted bounded original instruction/branch regions and existing V9 CALL sites, then test legal original-game angle/signed-edge scenarios.
+- **Curator handoff:** verify exact original report SHA, bounded permitted original ASM/CALL or cited DAT lines, overlap/errata in current develop, and assertion-level confidence. Only curator may select proven facts for REF/symbols/structs on an authorized isolated branch. Do not bulk-merge diverged owner intake; retain prior safety HOLD/missing/refused work without recreating it.
