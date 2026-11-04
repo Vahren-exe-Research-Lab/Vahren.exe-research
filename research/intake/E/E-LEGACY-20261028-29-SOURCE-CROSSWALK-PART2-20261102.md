@@ -199,6 +199,16 @@ Source-grounded findings (E report line references; shortened):
 - L8: - Active V3 search guard executed read-only: PASS_ACTIVE_V3_STATIC, 14 input hashes verified, 44,889 E8 CALL / 6,324 E9/EB JMP, gameplay NOT_RUN. V3 function 0x467DE0 pseudoc independently confirms 0x4C1200 lookup, [node+0x28]+0x1A4=param_1 on hit, return object or 0 on miss. ABI remains UNVERIFIED; pseudoc does not prove same-run runtime
 - L10: - B native ASM: first set (03H/04H sources) consulted at 0x494917, 0x495015, 0x49526C, 0x4958A7, 0x495A1D via CALL 0x44D070; matching iterator != first-set header branches to skip downstream at 0x494922, 0x495020, 0x495277, 0x4958B2, 0x495A28. Five name resolver CALL sites precede these; B original E8 11/11, E did not re-disassemble PE.
 
+### 05H modeled pre-lookup short-circuit scope (2026-11-04; existing E ID)
+
+Read-only comparison of the already archived [E 05H synthetic source](repro/t020_t028_first_set_exclusion_backlink_gate_20261028_05H.py) (Git blob `9eb1da511c678e792711b953e6dc09754bebc5da`) against the previously indexed B05/E04 source pins and 03H–04H local model. No native original or original PC byte hash was fetched or remeasured. Existing 05H research ID and B source ownership unchanged.
+
+**Five callsite tuples do not share a proven reachability contract.** The E model enumerates five resolver/first-set-lookup/skip triads; only first lookup `0x494917` has a **modeled** resolver-miss short-circuit, while the other four return `VERIFY_OTHER_SITE_CONTROL_FLOW` even when supplied `resolved=False`. For a reached, initialized model N>=1, `resolved=False` returns `SYNTHETIC_RESOLVER_MISS / SKIP_BEFORE_LOOKUP`; `resolved=True` models a potential backlink before membership, and either a member skip or nonmember fallthrough *candidate*. This is not proof the real backlink write completed, a native entity was selected or a game effect happened.
+
+**Fail-closed modeling limitation (not a native contradiction):** the script calls E04 `synthetic_gate` and requires `SYNTHETIC_MEMBERSHIP_ONLY` with `N>=1` *before* it interprets `resolved`. Thus even with `resolved=False`, a model input `exact=False` produces `VERIFY_FIRST_SET_INITIALIZATION`, and an invalid source produces `VERIFY_SOURCE_KEY_VECTOR`; neither demonstrates that the actual native resolver-miss path reaches any first-set lookup or needs initialized membership. Missing/unknown resolver is separately `VERIFY_RESOLVER_RETURN`. Do not invert a fail-closed test guard into a native precondition or treat all five sites as an executed G2 combat event.
+
+The old E report's B05 handoff string length anomaly (65 hex vs a separate previously measured 64-hex source pin) remains **metadata/provenance VERIFY**, not a newly established original-game T019 contradiction. All five site flows and backlink identity need approved PC original-byte/V9 evidence + lawful same-run manager/epoch/G0–G2 before admission. `PUBLISHED_INTAKE_CODE_ONLY / STATIC+historical_SYNTHETIC / VERIFY / NOT_CURATED`; new Golden PASS, READY and formal MASTER changes `0`.
+
 Next: review any superseding errata, original proof ownership, and runtime G0–G2 before curator/MASTER decisions.
 
 ## E-AUDIT-20261028-12H-T020-T028-NULL-VECTOR-OWNER-CLEANUP-01
