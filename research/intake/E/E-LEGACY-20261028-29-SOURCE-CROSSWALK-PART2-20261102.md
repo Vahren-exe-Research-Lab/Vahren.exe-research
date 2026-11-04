@@ -309,6 +309,20 @@ Source-grounded findings (E report line references; shortened):
 - L8: [NEW GATE] 0x490688 AL=F54。F54非0は+0x1EED44/48←+0x1E8630/34、mode=!player_battle。F54=0,F55非0は←+0x1E8634/30、mode=!player_battle。両0は←+0x1E8634/38、mode=!enemy_battle。F56は確認した選択局所には含まれず別レジスタ扱い、ゲーム上の意味はVERIFY。
 - L9: [MODEL] tests/t020_t028_triflag_side_mode_provenance_gate_20261028_01H.py SHA256 D4518B5DF3CF256A8F8F5863439CFC8A7459F7FC88B12B0D194DA29DF0798C83。B01/B00/B23 SHA pin、3分岐のside-slot順、F54優先、F55未定の拒否、config未指定のデフォルト/明示0、F56独立、mode0/非0候補、manager/run世代差、静的推定からGoldenへ誤昇格しない条件を実行。
 
+### Four existing E models: producer-vs-consumer non-join (2026-11-04; 01H–04H existing IDs only)
+
+Reviewed already staged E [01H flag/side script](repro/t020_t028_triflag_side_mode_provenance_gate_20261028_01H.py) (Git blob `7daefa1624dbe474aa2c08179350cedbe76f93b8`), [02H local writer](repro/t020_t028_tree_flag_aggregation_gate_20261028_02H.py) (`56e726e42ca134122fd75f5ad0416c4d79a21bdd`), [03H tree-local caller](repro/t020_t028_tree_dual_container_local_gate_20261028_03H.py) (`cb5cb08b30dbced121f6555400d13faea108f2d0`), and [04H synthetic temporary set](repro/t020_t028_temp_uint32_set_membership_gate_20261028_04H.py) (`e27334ebb453fe8f1e19189891edda0a91140de1`). They are **four already indexed owner E research IDs and pre-existing source files**, not four new discoveries. The B/T028 primary sources remain B-owned; original E reports/native PC SHA were not rehashed and synthetic tests were **not** rerun in this pass.
+
+| Separate model and evidence source | Condition it actually models | Narrow local candidate | Invalid shortcut to reject |
+| --- | --- | --- | --- |
+| E01 three-way flag route | `F54 != 0`; else `F55 != 0`; else both zero | ordered side-slots `(+0x1E8630,+0x1E8634)` / `(+0x1E8634,+0x1E8630)` / `(+0x1E8634,+0x1E8638)`, respectively | same computed mode is **not** same ordered sides, manager instance or combat |
+| E01 config branch | first two paths choose model player default `1`; both-zero path chooses enemy default `0`; F56 independent | model mode `0` on missing player, mode `1` on missing enemy | F56 unknown/present cannot be substituted for F54/F55; fade/event are candidates only |
+| E02 secondary-tree/local flag writer | `INDEX` reached, exact-key match and node byte (or definitive miss); distinct `DIRECT` gate | `F54` candidate for nonzero node flag; `F55` candidate for zero or indexed miss | `DIRECT` gate zero is `VERIFY_OTHER_PATH`, not a proven E02 indexed miss or F55 manager-final state |
+| E03 *different* tree-local conditional calls | exact miss / hit nonzero-byte / hit zero-byte | 0 / 1 / 2 local callsites (`0x493AD1`, `0x493AF4`), not success count | E02 exact miss gives F55 local writer candidate, **not** proof E03 has the same node, owner or final mode |
+| E04 *modeled* uint32 membership | E03 local N=1 or N=2 and valid key vectors | two distinct synthetic stack slots; each models its own deduplicated membership | duplicate key collapse is not native insert success, same container, morale/XP/death effects or G2 roster |
+
+**Join and fail-closed gates:** `F54 != 0` means E01 does **not** require an observed F55, while `F54=0` with unknown F55 returns `VERIFY_F55`; unknown/invalid F54 returns `VERIFY_F54`. E01 source model also validates **both** config raws, including the unselected raw; as in E00 this is its conservative synthetic rule, not proof native execution reads the unselected field. E03 `compare_b02_local_only` intentionally returns `VERIFY_OWNER_INSTANCE` even when the E02 and E03 *modeled* flag values agree. E04's two sites are still only proposed call sites, not two successful inserts or events. Independent same-run manager identity, native function reachability, ordered Unit/Troop and actual G0/G1/G2 are needed before an original Golden or READY admission. All four remain `PUBLISHED_INTAKE_CODE_ONLY / STATIC+historical_SYNTHETIC+VERIFY / NOT_CURATED`; **new Golden, READY and MASTER delta 0**.
+
 Next: review any superseding errata, original proof ownership, and runtime G0–G2 before curator/MASTER decisions.
 
 ## E-AUDIT-20261028-15H-T020-T028-WANDER-MERCENARY-TEMPLATE-BOUNDARY-01
