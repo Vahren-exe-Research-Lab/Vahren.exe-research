@@ -43,3 +43,7 @@ RUN_RESULTには研究本文パスや研究IDのフィールドがなく、metho
 0x471AF0/0x471D20の旧タイトル「外交」は、現在のREF_SAVE_FORMAT第7節・第9節のターン進行状態という訂正を参照する。旧runのタイトルを現在の意味へ無条件に昇格させない。
 
 キュー本体のVERIFIED16・TODO48と、同期ログのSTALE_RENAME_DENIEDを履歴として保持した。更新に失敗した状態をそのまま現在の未研究件数に使わない。参照されるtmpやinfo.jsonの原作出力本体は取得していない。
+
+## GitHub取得コピーの検証
+
+[収録コミットdd55d1d](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/dd55d1d4113f5d71d1aab30147f09347aa92845a)を別クローンへ取得。779項目のマニフェスト、回収台帳62行の保存版SHA、うち原本一致56行の内容、21run・67記録、673フィールド表記の検索を確認した。初回VERIFYと後続VERIFIEDを両方保持し、キュー64件＝RUN_RESULT62種類＋既存2件の集合関係も入力SHAとともに再照合した。[PR #24](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/24)に変更範囲を記録する。原作出力本体や意味・動作の新規検証は継続課題。
