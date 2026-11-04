@@ -1,5 +1,39 @@
 # REA owner intake | research recoverability and curation cursor
 
+<!-- REA-20261105-01H-1025-OWNER-ERRATA-CROSSWALK -->
+## 2026-11-05 01H | 10/25 00–08H and permitted 10–22H pre-existing owner ID review — 20 historical studies
+
+**Read-only sources:** prior owner [10/24 20H–10/25 08H ArmyChip/Spot](REA_20261024_20H_20261025_08H_ARMYCHIP_SPOT_HISTORICAL_RECOVERY_STATIC.md) Git blob `fe0ad7cf93ae0113fae538ec0b0c117705ec3e2b`; [10/25 10H–22H CRT/Ogg/thread sections](REA_20261025_10H_23H_CRT_OGG_THREAD_SOURCE_RECOVERY_STATIC.md) Git blob `d26ef8c460f6e8263e1edaf3cbd5398f7b6d1255`. These contain **per-ID original relative path, historical owner-source SHA256, addresses and narrowed STATIC/VERIFY**, already PUBLISHED_INTAKE. First archive includes nine 10/25 00–08H IDs; second has eleven **permitted** 10–22H IDs. **The separate 10/25 23H denied FLS investigation was not inspected or retried; it is excluded from 20.** 10/25 09H is not an archived owner ID; not counted. No new PC/PE/V9 report hashing, no new function evidence.
+
+**09 older ArmyChip/Spot source IDs, cross-ID corrections:**
+| Pre-existing hours | Distinct native contract and curator-only gate |
+| --- | --- |
+| 00H | Child vptr+8 AL1 can queue active-manager removal and vptr+0x44 AL0 child deferred destructor; 0x4C2825 indirect destructor requires the live ArmyChip vptr. Parent delayed queue is separate; **two queues are not proof of double-free**. Original broader 55/56 check replaced by narrowed 35/35, not a new test here. |
+| 01H | Builder+0x24 owner X supplies conditional manager expression `[[X+0x0C]+4]+0x0C`; transition waiting `+0x64/68` to active `+0x2C`, exit-gated removal. 02H **corrects** assumed universal X equality. |
+| 02H | Two native x86 caller sites take `0x597BA0` return **EAX** as potentially different owner arguments for `0x5B0680`. V9 old pseudo-`void` must not override consumed EAX. This separates constructor's stack owner+0x24 from ECX object+0x28. |
+| 03H | Spot resolver `0x49E490` may return EAX=NULL on tree miss; `0x597BA0` uses lookup, global cache or fallback allocation. **08H supersedes** old interpretation that normal allocator failure yields a nullable Spot and next-call retry. |
+| 04H | atexit `0x608C20` releases helper global `0xB0B008`, not necessarily the separate Spot cache `0xAC0990`; owner/alias equality remains VERIFY. |
+| 05–07H | C++ EH state0 guard-bit cleanup and state1 pointer-free are distinct. 06H's tentative `[EBP-0x10]` identity is **refined by 07H** stack registration/frame walk (`EBP=node+0x0C=S` for normal state1 unwind). Conditional normal EH unwind only: no injected exception, live alias or double-free proof. |
+| 08H | Stock `0x5B6C2B` operator-new wrapper on normal return has EAX non-NULL, otherwise handler/retry or `bad_alloc`. This **corrects 03–04H/06H older normal-NULL-return inference**, while preserving a syntactic NULL check and allowing distinct non-stock hook paths as untested. Links to 10/25 10H CRT initial newmode and 10/26 14H new tail-JMP. |
+
+**11 permitted older CRT/Ogg/thread IDs, correction and no-double-count gates:**
+| Pre-existing hours | Independent native provenance and restrictions |
+| --- | --- |
+| 10H | CRT zero-initialized new-mode and encoded new-handler; ordinary initial state mode0/handler NULL, not guaranteed after indirect writes or hooks. **08H** already proved stock C++ allocation behavior; 10/26 14H applies it to DirectMusic allocation, not a new allocator rule. |
+| 11–12H | Direct-xref-limited `malloc/calloc/realloc` handler/new-mode uses; `realloc` `0x5C30BE/311C` treats NULL and size0 differently, high unsigned size bound and errno12/new-handler branches. This cannot be reduced to universal C++ `new` throwing or a measured OOM effect. |
+| 15–16H | Ogg parse `0x5CF010` token count and `(count+2)*4` allocation: upper bound unproven, possible size hazard **not** demonstrated. 16H native `0x5D1614` array-free shared epilogue refines old Ghidra unreachable-label inference; context[0]=0 can disable later FILE close callback. Distinct from packet-hole EOF behavior. |
+| 17H | `0x5D16C0/1701` fopen callback table and `0x5CFEEE` FILE close path distinguish failure-wrapper close vs success-decoder ownership; later 10/29 02H `0x5CFEEE` caller stack cleanup and 10/31 00H curated standard-file provenance overlap. **Link, do not double-curate** these already-identified calls; lifetime across error paths remains VERIFY. |
+| 18H | OggDecoder vptr+0x10 resolves to `0x501EB0` old-file cleanup before reopen when live vptr unchanged, **not** the PCMDecoder +0x10 method. 10/28 09H and later Ogg REF refine the same reset lifecycle; a constructor returning this is not successful load. |
+| 19H | Stream checks state `+0x44`, not decoder constructor EAX; `__beginthread` handle can be -1 yet flag set. 21–22H supply CRT ownership correction; no confirmed thread-start failure reproduction. |
+| 20H | Ogg teardown waits before COM/decoder destruction, `WaitForSingleObject(handle,100)` **100 ms per retry**, not a total 100ms guarantee; stale handle and races need live scheduling. Slot+0x10 close is related to 18H, not new. |
+| 21H | Normal CRT `__endthread` path closes thread handle, **narrowing old unconditional handle leak** theory from 19–20H. Do not extrapolate normal exit to every error route. |
+| 22H | ResumeThread/FLS-startup failure paths may bypass ordinary CRT cleanup or leave ownership ambiguous. No proof of a real OS handle leak/crash, and the separate refused 23H study is neither a necessary dependency for these permitted older observations nor a reason to re-open denied FLS evidence. |
+
+**Current KB sampling and adoption boundary:** private `develop` at `11d53cd71545752751058828570c290b5c0fc885`; `REF_BATTLE_TAKEOVER.md` Git blob `2ac2633f43acfcb191a2f01a41df85bc493c85b9` contains no exact sampled 00–08H owner identifiers/VA keywords; this **does not prove that nothing was CURATED elsewhere**. `REF_AUDIO_VORBIS.md` blob `8ec0fb6be86d3998f50c7cf3b197d66ba258d4b9` covers the standard FILE close route and Ogg reset context; **subclaims/exception paths still require semantic review**, no automatic duplicate curation. Do not reinterpret V9 or older pseudo-C indexing as original native verification. Source SHA above is historical PC measurement in the linked archives, *not remeasured this run*. This crosswalk **NOT_CURATED / 20 existing PUBLISHED_INTAKE IDs**, new IDs 0, formal five-kind VERIFIED +0, original Golden PASS/strict MATCH/READY 0/0/0; owner branch only.
+
+**Curator next checks:** original permitted source SHA and x86 EAX/ECX/stack caller mapping, manager X and Spot cache alias/exception state, Ogg FILE callback cleanup and original thread handle abnormal path; review history for later corrections before selective KB adoption. **PC-UNSYNCED** (QUEUE/PROGRESS, original PE, V9, active.lock not read), no safety-denied material or original game accessed. **Next safe historical cursor:** existing 2026-10-24 20–23H ArmyChip vector/dtor predecessors, then earlier 10/24 owner IDs not already reviewed; no reprocessing these 20 or the 23-ID 10/26 batch.
+
+
 <!-- REA-20261105-01H-1026-HISTORICAL-SEMANTIC-TRIAGE -->
 ## 2026-11-05 01H | 10/26 historical 23 owner IDs — error/ownership/ABI chronological curation scope (NO new ID)
 
