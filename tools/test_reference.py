@@ -109,6 +109,35 @@ class ReferenceTests(unittest.TestCase):
         self.assertIn("辞書の確度　実機確認", page)
         self.assertIn("意味・動作の検証なし", page)
 
+    def test_obsolete_hypothesis_keeps_ledger_correction_in_json_and_page(self):
+        report, ledger = self.add_recovery_ledger()
+        report.write_text("# Historical hypothesis\n0x55BC60 always grants EXP.\n", encoding="utf-8")
+        digest = hashlib.sha256(report.read_bytes()).hexdigest()
+        limitation = "旧仮説は後日の研究で撤回。経験値付与の根拠として使わない。"
+        ledger.write_text(
+            "destination\tdestination_sha256\tcoverage_state\tprior_coverage\tlimitations\n"
+            f"research/recovered/native.md\t{digest}\tRECOVERED_HISTORICAL\tLOCAL_ONLY\t{limitation}\n",
+            encoding="utf-8")
+        tool = Path(__file__).with_name("reference.py")
+        result = subprocess.run(
+            [sys.executable, "-B", str(tool), "--root", str(self.root), "search", "0x55BC60", "--json"],
+            capture_output=True, text=True, encoding="utf-8")
+        self.assertEqual(result.returncode, 0, result.stderr)
+        mention = next(row for row in json.loads(result.stdout) if row.get("kind") == "source_mention")
+        self.assertEqual(mention["summary"], "0x55BC60 always grants EXP.")
+        self.assertEqual(mention["recovery"]["limitations"], limitation)
+        self.assertEqual(mention["recovery"]["coverage_state"], "RECOVERED_HISTORICAL")
+        self.assertEqual(mention["recovery"]["prior_coverage"], "LOCAL_ONLY")
+        plain = subprocess.run(
+            [sys.executable, "-B", str(tool), "--root", str(self.root), "search", "0x55BC60"],
+            capture_output=True, text=True, encoding="utf-8")
+        self.assertEqual(plain.returncode, 0, plain.stderr)
+        self.assertIn(limitation, plain.stdout)
+        page = reference.render(self.root, reference.load(self.root))["reference/symbols/0055BC60.md"]
+        self.assertIn(limitation, page)
+        self.assertIn("RECOVERY_LEDGER.tsv?plain=1#L2-L2", page)
+        self.assertIn("always grants EXP", page)
+
     def test_recovered_ledger_rejects_stale_missing_and_escaping_sources(self):
         report, ledger = self.add_recovery_ledger()
         report.write_text("changed", encoding="utf-8")

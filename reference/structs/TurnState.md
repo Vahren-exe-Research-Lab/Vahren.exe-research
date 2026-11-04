@@ -15,7 +15,8 @@
 - 辞書の出典表記　wiki/T019, F§79.2
 - [元の辞書行](../../structs.tsv#L105)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteTurnState](../symbols/00471D20.md) → `reads` → [TurnState + 0x09 endFlag09](../structs/TurnState.md#field-9)。通常セーブへの書出し対象。メモリ上の状態を保存形式へ変換する。 （静的確認（既存研究の整理。今回の原作再検証なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L169-L175) · `SAVE-TURN-WRITE-9`
+- [Save_ReadTurnState](../symbols/00471AF0.md) → `writes` → [TurnState + 0x09 endFlag09](../structs/TurnState.md#field-9)。通常セーブからターン進行状態を復元する。勢力列は名前から再解決する。 （静的確認（既存研究の整理。今回の原作再検証なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L169-L175) · `SAVE-TURN-READ-9`
 
 <a id="field-a"></a>
 ## 0x0A gameClear
@@ -27,7 +28,8 @@
 - 辞書の出典表記　wiki/T019, F§78
 - [元の辞書行](../../structs.tsv#L106)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteTurnState](../symbols/00471D20.md) → `reads` → [TurnState + 0x0A gameClear](../structs/TurnState.md#field-a)。通常セーブへの書出し対象。メモリ上の状態を保存形式へ変換する。 （静的確認（既存研究の整理。今回の原作再検証なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L169-L176) · `SAVE-TURN-WRITE-A`
+- [Save_ReadTurnState](../symbols/00471AF0.md) → `writes` → [TurnState + 0x0A gameClear](../structs/TurnState.md#field-a)。通常セーブからターン進行状態を復元する。勢力列は名前から再解決する。 （静的確認（既存研究の整理。今回の原作再検証なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L169-L176) · `SAVE-TURN-READ-A`
 
 <a id="field-14"></a>
 ## 0x14 turn
@@ -39,7 +41,8 @@
 - 辞書の出典表記　F§62.1, S1101§2
 - [元の辞書行](../../structs.tsv#L107)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteTurnState](../symbols/00471D20.md) → `reads` → [TurnState + 0x14 turn](../structs/TurnState.md#field-14)。通常セーブへの書出し対象。メモリ上の状態を保存形式へ変換する。 （静的確認（既存研究の整理。今回の原作再検証なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L169-L177) · `SAVE-TURN-WRITE-14`
+- [Save_ReadTurnState](../symbols/00471AF0.md) → `writes` → [TurnState + 0x14 turn](../structs/TurnState.md#field-14)。通常セーブからターン進行状態を復元する。勢力列は名前から再解決する。 （静的確認（既存研究の整理。今回の原作再検証なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L169-L177) · `SAVE-TURN-READ-14`
 
 <a id="field-18"></a>
 ## 0x18 order
@@ -51,7 +54,8 @@
 - 辞書の出典表記　F§59, T014§normal save tail
 - [元の辞書行](../../structs.tsv#L108)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteTurnState](../symbols/00471D20.md) → `reads` → [TurnState + 0x18 order](../structs/TurnState.md#field-18)。通常セーブへの書出し対象。メモリ上の状態を保存形式へ変換する。 （静的確認（既存研究の整理。今回の原作再検証なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L169-L179) · `SAVE-TURN-WRITE-18`
+- [Save_ReadTurnState](../symbols/00471AF0.md) → `writes` → [TurnState + 0x18 order](../structs/TurnState.md#field-18)。通常セーブからターン進行状態を復元する。勢力列は名前から再解決する。 （静的確認（既存研究の整理。今回の原作再検証なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L169-L179) · `SAVE-TURN-READ-18`
 
 <a id="field-38"></a>
 ## 0x38 phase
@@ -63,6 +67,7 @@
 - 辞書の出典表記　F§59, §69.2, §76.2
 - [元の辞書行](../../structs.tsv#L109)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteTurnState](../symbols/00471D20.md) → `reads` → [TurnState + 0x38 phase](../structs/TurnState.md#field-38)。通常セーブへの書出し対象。メモリ上の状態を保存形式へ変換する。 （静的確認（既存研究の整理。今回の原作再検証なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L169-L178) · `SAVE-TURN-WRITE-38`
+- [Save_ReadTurnState](../symbols/00471AF0.md) → `writes` → [TurnState + 0x38 phase](../structs/TurnState.md#field-38)。通常セーブからターン進行状態を復元する。勢力列は名前から再解決する。 （静的確認（既存研究の整理。今回の原作再検証なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L169-L178) · `SAVE-TURN-READ-38`
 
 [事典の入口](../README.md)

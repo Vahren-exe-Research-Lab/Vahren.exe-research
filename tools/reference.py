@@ -49,7 +49,11 @@ def load_mentions(root):
     seen_sources = set()
     pattern = re.compile(r"0x([0-9a-f]{6,8})(?![0-9a-f])", re.I)
     with ledger.open(encoding="utf-8-sig", newline="") as stream:
-        for row in csv.DictReader(stream, delimiter="\t"):
+        reader = csv.DictReader(stream, delimiter="\t")
+        previous_line = 1
+        for row in reader:
+            ledger_start = previous_line + 1
+            previous_line = reader.line_num
             relative = Path(row["destination"])
             source = (root / relative).resolve()
             if relative.is_absolute() or not source.is_relative_to(root):
@@ -64,6 +68,9 @@ def load_mentions(root):
                 continue
             seen_sources.add(source)
             path = source.relative_to(root).as_posix()
+            recovery = {key: row.get(key, "") for key in ("coverage_state", "prior_coverage", "limitations")}
+            recovery["ledger"] = {"path": ledger.relative_to(root).as_posix(),
+                                  "start_line": ledger_start, "end_line": reader.line_num}
             for line, content in enumerate(payload.decode("utf-8-sig").splitlines(), 1):
                 for va in sorted({int(match[1], 16) for match in pattern.finditer(content)}):
                     mentions.append({
@@ -72,6 +79,7 @@ def load_mentions(root):
                         "subject": f"va:0x{va:08X}", "name": f"{path}:{line}",
                         "summary": content.strip(),
                         "confidence": "文書内の言及（意味・動作の検証なし）",
+                        "recovery": recovery,
                         "source": {"path": path, "sha256": digest,
                                    "start_line": line, "end_line": line}})
     return mentions
@@ -220,8 +228,19 @@ def render(root, data):
         if mentions:
             lines += ["", "## 研究文書での言及", "",
                       "以下は文書内の言及（意味・動作の検証なし）です。文書の限界や訂正も併せて確認してください。", ""]
+            context_sources = set()
             for mention in mentions:
                 source = mention["source"]
+                if source["path"] not in context_sources:
+                    recovery = mention["recovery"]
+                    ledger = recovery["ledger"]
+                    ledger_link = "../../" + quote(ledger["path"], safe="/")
+                    ledger_link += f"?plain=1#L{ledger['start_line']}-L{ledger['end_line']}"
+                    lines.append(f"- [回収台帳]({ledger_link}) — {text(source['path'])}。"
+                                 f"収録状態 {text(recovery['coverage_state'])}。"
+                                 f"以前の収録状況 {text(recovery['prior_coverage'])}。"
+                                 f"制約・訂正 {text(recovery['limitations'])}")
+                    context_sources.add(source["path"])
                 link = "../../" + quote(source["path"], safe="/")
                 link += f"?plain=1#L{source['start_line']}-L{source['end_line']}"
                 lines.append(f"- [{text(mention['name'])}]({link}) — {text(mention['summary'])}")
@@ -269,6 +288,10 @@ def main():
             else:
                 for row in matches:
                     print(f"{row['id']}  {row.get('name', row.get('predicate'))}  {row['summary']}  [{row['confidence']}]")
+                    if "recovery" in row:
+                        recovery = row["recovery"]
+                        print(f"  回収状態 {recovery['coverage_state']} / 以前の収録状況 {recovery['prior_coverage']}")
+                        print(f"  制約・訂正 {recovery['limitations']}")
             return 0
         files = render(args.root, data)
         stale = []
