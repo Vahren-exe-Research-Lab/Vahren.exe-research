@@ -1,0 +1,269 @@
+{
+  "snapshot_date": "2026-11-05",
+  "base_commit": "c8b9686",
+  "source_thread_id": "6acd8339-6790-83ee-a957-99c517a150af",
+  "source_chat_title": "迫真戦記 新A｜EXE・VM",
+  "source_turn_id": "548c83bb-6cbc-44ba-ac83-2f66bc4a4283",
+  "request": {
+    "turnLimit": 1,
+    "includeOutputs": false,
+    "maxOutputCharsPerItem": 6000
+  },
+  "source_hash_definition": "SHA-256 of selected Unicode agentMessage text encoded UTF-8, not service database bytes; no header, newline normalization, BOM, or added newline",
+  "messages_returned": 10,
+  "selected_earlier_messages": 9,
+  "full_reviewed": 9,
+  "research_reports": 5,
+  "operational_reports": 4,
+  "research_ids_reported": 9,
+  "exact_capture_count": 9,
+  "privacy_derivative_count": 0,
+  "deferred_count": 0,
+  "same_sha_baseline_alias_count": 0,
+  "excluded_latest_message": "7f3589df-b35d-433f-bf4f-5e0b8c1786d0",
+  "excluded_latest_reason": "Already captured under chat_finals; not in this ledger",
+  "scope": "Selected message texts and repo metadata only; no attachments, tool outputs, original PC payloads, native/link targets or schedules accessed",
+  "metadata_inputs": [
+    "SOURCE_MANIFEST.tsv",
+    "RESEARCH_SOURCE_CATALOG.tsv",
+    "research/recovered/RECOVERY_LEDGER.tsv",
+    "research/recovered/GITHUB_SOURCE_CATALOG.tsv",
+    "research/recovered/GITHUB_EXACT_BODY_LINKS.tsv"
+  ],
+  "local_connector_error": "Local Compact read_file returned MCP SSE probe 429; authorized builtin execution fallback; no Remote",
+  "records": [
+    {
+      "source_path": "chatgpt://6acd8339-6790-83ee-a957-99c517a150af/messages/548c83bb-6cbc-44ba-ac83-2f66bc4a4283",
+      "message_id": "548c83bb-6cbc-44ba-ac83-2f66bc4a4283",
+      "kind": "research_report",
+      "unicode_codepoints": 3131,
+      "utf16_code_units": 3131,
+      "bytes": 6109,
+      "source_sha256": "7fb8cd4ea75e37a489d69e0eb1048b1c2fa021192c11ac068550cbb0fcc79eec",
+      "destination": "research/recovered/chat_a_history/CHAT_A_20261014_00H_FINAL.md",
+      "destination_sha256": "7fb8cd4ea75e37a489d69e0eb1048b1c2fa021192c11ac068550cbb0fcc79eec",
+      "same_sha_baseline_aliases": [],
+      "transforms": [],
+      "eligible": true,
+      "privacy_review": "PASS; project-relative references retained; no personal absolute paths or sensitive tokens",
+      "held_payload_review": "PASS; no specified held/refused substantive payload reproduced; historical refusal metadata retained",
+      "reported_research_ids": [
+        "A-20261014-0000-01",
+        "A-20261014-0000-02"
+      ]
+    },
+    {
+      "source_path": "chatgpt://6acd8339-6790-83ee-a957-99c517a150af/messages/acf367d8-147e-42d9-87eb-acdde63d2576",
+      "message_id": "acf367d8-147e-42d9-87eb-acdde63d2576",
+      "kind": "research_report",
+      "unicode_codepoints": 2355,
+      "utf16_code_units": 2355,
+      "bytes": 4821,
+      "source_sha256": "80c5882b6b0b368f3f1ca8546e22cd59117f3f5065ab336afab055d5de02fb0a",
+      "destination": "research/recovered/chat_a_history/CHAT_A_20261014_01H_FINAL.md",
+      "destination_sha256": "80c5882b6b0b368f3f1ca8546e22cd59117f3f5065ab336afab055d5de02fb0a",
+      "same_sha_baseline_aliases": [],
+      "transforms": [],
+      "eligible": true,
+      "privacy_review": "PASS; project-relative references retained; no personal absolute paths or sensitive tokens",
+      "held_payload_review": "PASS; no specified held/refused substantive payload reproduced; historical refusal metadata retained",
+      "reported_research_ids": [
+        "A-20261014-0132-01"
+      ]
+    },
+    {
+      "source_path": "chatgpt://6acd8339-6790-83ee-a957-99c517a150af/messages/84dac4ef-8930-4148-a359-4c8420ba37fc",
+      "message_id": "84dac4ef-8930-4148-a359-4c8420ba37fc",
+      "kind": "research_report",
+      "unicode_codepoints": 3444,
+      "utf16_code_units": 3444,
+      "bytes": 6952,
+      "source_sha256": "91998c698b6c4289cd95499aa64401af37f3f08da128278c5d108a564c62dfcf",
+      "destination": "research/recovered/chat_a_history/CHAT_A_20261014_02H_FINAL.md",
+      "destination_sha256": "91998c698b6c4289cd95499aa64401af37f3f08da128278c5d108a564c62dfcf",
+      "same_sha_baseline_aliases": [],
+      "transforms": [],
+      "eligible": true,
+      "privacy_review": "PASS; project-relative references retained; no personal absolute paths or sensitive tokens",
+      "held_payload_review": "PASS; no specified held/refused substantive payload reproduced; historical refusal metadata retained",
+      "reported_research_ids": [
+        "A-20261014-0211-01",
+        "A-20261014-0211-02",
+        "A-20261014-0211-03"
+      ]
+    },
+    {
+      "source_path": "chatgpt://6acd8339-6790-83ee-a957-99c517a150af/messages/dd534803-35e8-4a67-a28f-a7ddf8ddf1ae",
+      "message_id": "dd534803-35e8-4a67-a28f-a7ddf8ddf1ae",
+      "kind": "research_report",
+      "unicode_codepoints": 4081,
+      "utf16_code_units": 4081,
+      "bytes": 8513,
+      "source_sha256": "27c5dbe14aebc24f8c4cc3ca448619501eba449d7e2effd6e28c65092d0cd41e",
+      "destination": "research/recovered/chat_a_history/CHAT_A_20261014_03H_FINAL.md",
+      "destination_sha256": "27c5dbe14aebc24f8c4cc3ca448619501eba449d7e2effd6e28c65092d0cd41e",
+      "same_sha_baseline_aliases": [],
+      "transforms": [],
+      "eligible": true,
+      "privacy_review": "PASS; project-relative references retained; no personal absolute paths or sensitive tokens",
+      "held_payload_review": "PASS; no specified held/refused substantive payload reproduced; historical refusal metadata retained",
+      "reported_research_ids": [
+        "A-20261014-0302-01",
+        "A-20261014-0302-02"
+      ]
+    },
+    {
+      "source_path": "chatgpt://6acd8339-6790-83ee-a957-99c517a150af/messages/ad5479c0-6396-490d-8010-85324958064f",
+      "message_id": "ad5479c0-6396-490d-8010-85324958064f",
+      "kind": "research_report",
+      "unicode_codepoints": 2803,
+      "utf16_code_units": 2803,
+      "bytes": 5649,
+      "source_sha256": "9ae08dea8fdc0dc03fa8297c36d9710f69d8f5fa690b202c5eeac882ed956774",
+      "destination": "research/recovered/chat_a_history/CHAT_A_20261014_04H_FINAL.md",
+      "destination_sha256": "9ae08dea8fdc0dc03fa8297c36d9710f69d8f5fa690b202c5eeac882ed956774",
+      "same_sha_baseline_aliases": [],
+      "transforms": [],
+      "eligible": true,
+      "privacy_review": "PASS; project-relative references retained; no personal absolute paths or sensitive tokens",
+      "held_payload_review": "PASS; no specified held/refused substantive payload reproduced; historical refusal metadata retained",
+      "reported_research_ids": [
+        "A-20261014-0404-01"
+      ]
+    },
+    {
+      "source_path": "chatgpt://6acd8339-6790-83ee-a957-99c517a150af/messages/d92f0d82-c5ca-4607-acb6-d22f182f4ffd",
+      "message_id": "d92f0d82-c5ca-4607-acb6-d22f182f4ffd",
+      "kind": "operational_error_report",
+      "unicode_codepoints": 1266,
+      "utf16_code_units": 1266,
+      "bytes": 2596,
+      "source_sha256": "28e8ce8d0d396e8ef9944438f313d12910f49de0bdf2513fe7997f6240f6eaa7",
+      "destination": "research/recovered/chat_a_history/CHAT_A_20261014_0457_OPERATIONAL.md",
+      "destination_sha256": "28e8ce8d0d396e8ef9944438f313d12910f49de0bdf2513fe7997f6240f6eaa7",
+      "same_sha_baseline_aliases": [],
+      "transforms": [],
+      "eligible": true,
+      "privacy_review": "PASS; project-relative references retained; no personal absolute paths or sensitive tokens",
+      "held_payload_review": "PASS; no specified held/refused substantive payload reproduced; historical refusal metadata retained",
+      "reported_research_ids": []
+    },
+    {
+      "source_path": "chatgpt://6acd8339-6790-83ee-a957-99c517a150af/messages/b23b59ac-5ecb-4f20-bfc6-5347dbaad0dd",
+      "message_id": "b23b59ac-5ecb-4f20-bfc6-5347dbaad0dd",
+      "kind": "operational_error_report",
+      "unicode_codepoints": 1019,
+      "utf16_code_units": 1019,
+      "bytes": 1841,
+      "source_sha256": "b028cae356a3bf930a8cbe075ff40e73aa46c2bd394d409892bdff2df61e0fa7",
+      "destination": "research/recovered/chat_a_history/CHAT_A_20261014_0557_OPERATIONAL.md",
+      "destination_sha256": "b028cae356a3bf930a8cbe075ff40e73aa46c2bd394d409892bdff2df61e0fa7",
+      "same_sha_baseline_aliases": [],
+      "transforms": [],
+      "eligible": true,
+      "privacy_review": "PASS; project-relative references retained; no personal absolute paths or sensitive tokens",
+      "held_payload_review": "PASS; no specified held/refused substantive payload reproduced; historical refusal metadata retained",
+      "reported_research_ids": [
+        "A-20261014-0404-01"
+      ]
+    },
+    {
+      "source_path": "chatgpt://6acd8339-6790-83ee-a957-99c517a150af/messages/aa80f17a-bce8-45e0-9298-6141254a2e0c",
+      "message_id": "aa80f17a-bce8-45e0-9298-6141254a2e0c",
+      "kind": "operational_error_report",
+      "unicode_codepoints": 880,
+      "utf16_code_units": 880,
+      "bytes": 1812,
+      "source_sha256": "7d0366e418750bff972d6770fda9e2df3cd4e5d4402c57fc501055c293a2f61d",
+      "destination": "research/recovered/chat_a_history/CHAT_A_20261014_0700_OPERATIONAL.md",
+      "destination_sha256": "7d0366e418750bff972d6770fda9e2df3cd4e5d4402c57fc501055c293a2f61d",
+      "same_sha_baseline_aliases": [],
+      "transforms": [],
+      "eligible": true,
+      "privacy_review": "PASS; project-relative references retained; no personal absolute paths or sensitive tokens",
+      "held_payload_review": "PASS; no specified held/refused substantive payload reproduced; historical refusal metadata retained",
+      "reported_research_ids": [
+        "A-20261014-0404-01"
+      ]
+    },
+    {
+      "source_path": "chatgpt://6acd8339-6790-83ee-a957-99c517a150af/messages/742d9135-53fc-4739-8953-cb0904d89e50",
+      "message_id": "742d9135-53fc-4739-8953-cb0904d89e50",
+      "kind": "operational_error_report",
+      "unicode_codepoints": 1014,
+      "utf16_code_units": 1014,
+      "bytes": 1996,
+      "source_sha256": "39a9f0072a55ef387f62e6464b7399506e8e8784d41cfa24fa2c49ebc4dfadda",
+      "destination": "research/recovered/chat_a_history/CHAT_A_20261014_SESSION_TERMINATED_OPERATIONAL.md",
+      "destination_sha256": "39a9f0072a55ef387f62e6464b7399506e8e8784d41cfa24fa2c49ebc4dfadda",
+      "same_sha_baseline_aliases": [],
+      "transforms": [],
+      "eligible": true,
+      "privacy_review": "PASS; project-relative references retained; no personal absolute paths or sensitive tokens",
+      "held_payload_review": "PASS; no specified held/refused substantive payload reproduced; historical refusal metadata retained",
+      "reported_research_ids": []
+    }
+  ],
+  "research_id_message_occurrences": 11,
+  "verification": {
+    "all_selected_full_text_reviewed": true,
+    "all_files_reread_sha256_match": true,
+    "all_files_byte_lengths_match": true,
+    "ledger_columns": 9,
+    "ledger_rows": 9,
+    "no_selected_message_at_or_above_limit": true,
+    "source_codepoint_lengths": [
+      3131,
+      2355,
+      3444,
+      4081,
+      2803,
+      1266,
+      1019,
+      880,
+      1014
+    ]
+  },
+  "parent_verification": {
+    "selected_messages": 9,
+    "utf8_byte_equality": "PASS",
+    "sha256": "PASS",
+    "correlation_records": 40,
+    "immutable_metadata_rows_and_no_matches": "PASS"
+  },
+  "metadata_input_versions": [
+    {
+      "path": "SOURCE_MANIFEST.tsv",
+      "git_commit": "c8b9686a136763b678495afafb4cd13b9b9fde8a",
+      "sha256": "13006bde7008c851e82bb021720f89c53db6484cea54fb4c32b8c741dd881918"
+    },
+    {
+      "path": "RESEARCH_SOURCE_CATALOG.tsv",
+      "git_commit": "c8b9686a136763b678495afafb4cd13b9b9fde8a",
+      "sha256": "f14e3bd401a836039f678e9238c6490e2200385efb0fbb602e62f626ec679cf4"
+    },
+    {
+      "path": "research/recovered/RECOVERY_LEDGER.tsv",
+      "git_commit": "c8b9686a136763b678495afafb4cd13b9b9fde8a",
+      "sha256": "4b2dbddfacb4c88d9cd29dd9d083b87869895c7d4e0bbf99c92653ff601a4750"
+    },
+    {
+      "path": "research/recovered/GITHUB_SOURCE_CATALOG.tsv",
+      "git_commit": "c8b9686a136763b678495afafb4cd13b9b9fde8a",
+      "sha256": "9dac0b6b075bf0e1d205bfe3d2b1d81ed34119caa6e5704dfc961ab7f13143dd"
+    },
+    {
+      "path": "research/recovered/GITHUB_EXACT_BODY_LINKS.tsv",
+      "git_commit": "c8b9686a136763b678495afafb4cd13b9b9fde8a",
+      "sha256": "42ed3395e1f656e3b5035ebdcc9b430fc6e20f9e53695709a3c3851d9b8d87c6"
+    }
+  ],
+  "parent_body_id_followup": {
+    "baseline_commit": "c8b9686a136763b678495afafb4cd13b9b9fde8a",
+    "reported_research_ids": 9,
+    "literal_id_mentions": 16,
+    "ids_with_mentions": 9,
+    "receipt": "BODY_ID_MENTIONS.tsv",
+    "meaning": "Scoped literal mentions only; no original native validation or semantic-equivalence claim"
+  }
+}

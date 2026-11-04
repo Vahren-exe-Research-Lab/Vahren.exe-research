@@ -1,0 +1,11 @@
+subject	state	approved_body_dependency	handling	source_path
+5710C0..571500	METADATA_ONLY_HELD_SCOPE	NONE_SUBSTANTIVE_FOUND	Do not open/recover/reconstruct helper body; independent caller sites and opaque historical refusal/no-retry metadata do not authorize retry	
+58021E..580340	METADATA_ONLY_HELD_SCOPE	NONE_SUBSTANTIVE_FOUND	Do not open/recover/reconstruct helper body; independent caller sites and opaque historical refusal/no-retry metadata do not authorize retry	
+5769B0	METADATA_ONLY_HELD_SCOPE	NONE_SUBSTANTIVE_FOUND	Do not open/recover/reconstruct helper body; independent caller sites and opaque historical refusal/no-retry metadata do not authorize retry	
+downstream 5767B0	METADATA_ONLY_HELD_SCOPE	NONE_SUBSTANTIVE_FOUND	Do not open/recover/reconstruct helper body; independent caller sites and opaque historical refusal/no-retry metadata do not authorize retry	
+whole FUN00580280 including later offsets	METADATA_ONLY_HELD_SCOPE	NONE_SUBSTANTIVE_FOUND	Do not open/recover/reconstruct helper body; independent caller sites and opaque historical refusal/no-retry metadata do not authorize retry	
+refused rsc3/rsc4 tables	METADATA_ONLY_HELD_SCOPE	NONE_SUBSTANTIVE_FOUND	Do not open/recover/reconstruct helper body; independent caller sites and opaque historical refusal/no-retry metadata do not authorize retry	
+T029 postbattle castle	METADATA_ONLY_HELD_SCOPE	NONE_SUBSTANTIVE_FOUND	Do not open/recover/reconstruct helper body; independent caller sites and opaque historical refusal/no-retry metadata do not authorize retry	
+prior refused helper 5BC860	METADATA_ONLY_HELD_SCOPE	NONE_SUBSTANTIVE_FOUND	Do not open/recover/reconstruct helper body; independent caller sites and opaque historical refusal/no-retry metadata do not authorize retry	
+refused helper 004BC9C0	METADATA_ONLY_HELD_SCOPE	NONE_SUBSTANTIVE_FOUND	Do not open/recover/reconstruct helper body; independent caller sites and opaque historical refusal/no-retry metadata do not authorize retry	
+other prior-refused helper bodies/dependencies	METADATA_ONLY_HELD_SCOPE	NONE_SUBSTANTIVE_FOUND	Do not open/recover/reconstruct helper body; independent caller sites and opaque historical refusal/no-retry metadata do not authorize retry	

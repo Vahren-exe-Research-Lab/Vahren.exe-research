@@ -1,0 +1,12 @@
+# B-20261013-1141-01｜WRQ-B-SKILL 0x577260登録木検索と返却ポインタ（T013/T012）
+[DATE/TASK/STATUS] 2026-10-13 11:41 JST、T013 primary/T012 cross-reference、READY-STATIC-BODY。正常retとNULL/record pointer routeのみCONFIRMED、Unit+1E4B4 tree contents/read outcomeのgame意味・callee総副作用はVERIFY。原作Gameplay Golden actual PASS0／new strict MATCH0、Task DONE+0。
+[EXE/HASH] B-owned exe/T013_SUMMON_LOOKUP_577260_NATIVE_20261013.txt / isolated copy SHA256 e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187、VA0x577260..0x577304 exclusive 164bytes/51 x86 instr window SHA256 99d250cf61f23072b9cbb80e706c8f1212a287e211207ed5c89bfcb740ed949c。原本EXE/ZIP未実行・未変更、REA/Ghidra新規起動0。
+[ENTRY] ECXは対象Unit-like pointer、0x577283 ESI=ECX、0x57728Aで&Unit+0x1E4B4をEAX、0x577294 EDI=local key object、0x57729C call0x579940、戻EAX（tree cursor/record）を[ESP+0xC]へ格納。0x579940本体の探索比較・alloc・場合による副作用は別VERIFY。
+[FOUND] 0x5772A5 compares returned node pointer to Unit+0x1E4B8 sentinel。non-equal routeなら0x5772B2 LEA ESI,[EAX+0x28]、local string capacity>=16なら0x5772BC 0x5B6BBBでcleanup後、0x5772C4 MOV EAX,ESI→0x5772D7 RET 0x1C。EAXはnode内+0x28への**アドレス**、node+28値そのものではない。
+[MISSING] returned node==Unit+1E4B8 sentinel時は0x5772DA..0x5772EEでlocal string cleanupのみ、0x5772EE XOR EAX,EAX→0x577301 RET 0x1C。よって0x577260の正常returnはfound pointer / absent NULLの二状態、AL 1/0の抽象成功boolと置換しない。いずれもstack0x1Cをcalleeが消費し、上位のstack offsetずれを避ける。
+[CALLER JOIN] 前B-20261013-1134-01 0x54E7B0大型Skill生成では0x54EE7F MOV ECX,[EBX+0x7C]→0x54EE82 call577260→0x54EE8B test EAX,EAX；nonnullは0x54EF8Aへ、NULLは0x54EE93..0x54EF7Dで追加補助生成。戻りEAXをnumeric summon result0/1/2/3と呼んではならない；上位0x54EF94のmode比較は別local値[ESP+0x20]を読む。
+[RNG/RETURN] 51命令内直接CRT rand 0、CALL0x579940とcleanup0x5B6BBBのみ。正常return 0x5772D7 ret0x1Cと0x577301 ret0x1C、直後0x577304 int3。下位callの乱数や有効parent treeの内容はUNKNOWN。実Unit spawnに必要な検索属性名・本編合法到達はVERIFY。
+[DELTA/WORK] B-1134では577260が何を返すか不明のままpoststageを分岐していた。本IDでその意味を**Unit tree field+1E4B4検索→record+28 pointer or null**へ限定して接続。返NULLなら元のUnit treeを破壊したと推測せず、上位の後段補助ルートのcalleeが完走するまで召喚成功としない。Workへのreceiptはcaller raw pointers/localKey/return EAX/retPC/stack consumed28/child RNG/追加処理の到達を分離。
+[GOLDEN-DESIGNED/NOT RUN] 原作で合法Unit+1E4B4登録有/無の技能・同Skill親/variant/リスト候補・下位召喚エフェクト・MP/HP/RNGを同条件で比較。内部tree pointerしか観測できない条件はINELIGIBLE、原作旧実機PASS0/new strict MATCH0。
+[VERIFY/NEXT] 0x579940 comparator/cursor、Unit+1E4B4/+1E4B8 producer、local key生成元、record+0x28 type/consumer、0x54EE93以降/0x54EF8A以降での実Unit出現、子0x56F880/0x567EE0を未解明のまま維持。拒否0x5710C0..571500/0x415460/0x58021E..580340再解析やRemote別道具迂回は行わない。
+[STATUS] READY（tree pointer返却範囲のみ）

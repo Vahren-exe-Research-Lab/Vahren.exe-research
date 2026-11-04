@@ -1,38 +1,38 @@
 # GitHub受付・所在メタデータの照合
 
-取得完了: **2026-11-04 20:02:24 UTC（2026-11-05 05:02:24 JST）**。GitHubの`develop`とローカル比較基準はいずれも`14b3cbc83c2188680a29eb7fcae8d859072c62ba`。固定HEADを順次検査したスナップショットであり、その後の更新を含まない。
+取得完了: **2026-11-04 22:25:34 UTC（2026-11-05 07:25:34 JST）**。GitHubの`develop`とローカル比較基準は`c8b9686a136763b678495afafb4cd13b9b9fde8a`。固定コミットの順次検査であり、その後の更新や今回の追加回収を含む将来の先端は自動的に反映しない。
 
-これは発見用の所在目録である。GitHubでの保存、正本とのバイト一致、研究知見としての選択採用は別々に扱う。PRタイトル・パス名・件数から意味や妥当性を判定しない。
+これは所在・保存版同一性の目録である。GitHubでの保存、正本とのバイト一致、研究知識としての採録は区別する。題名・パス・件数から意味の妥当性や公開可否を判定しない。
 
-- [受付一覧](GITHUB_QUEUE.tsv): open PR **13件（#7–#19）**、open Issue **6件**。番号・タイトル・状態・更新時刻・URL・PR固定HEADのみ取得した。既存の`body_sha256`列は保持し、今回の値は`NOT_FETCHED_METADATA_ONLY`とした。これはハッシュではなく未取得状態の明示値である。本文を取得していないため、過去の本文ハッシュを現在の値として再利用しない。以前の値はGit履歴にある。
-- [PR研究ファイル目録](GITHUB_SOURCE_CATALOG.tsv): 各固定HEADの`research/`配下 **1,682 blob所在レコード／1,132種類のblob SHA1**。同一内容が複数PRにある場合も所在ごとに保持する。PRの全研究ツリーであり、そのPRが追加したファイルだけではない。
-- [回収済み原本との完全一致](GITHUB_EXACT_BODY_LINKS.tsv): **21対応**。回収台帳の保存先をローカル固定コミットのGit object IDに結び、PRのblob SHA1と一致する所在を記録した。原本・回収本文は開いていない。対応数は新しい発見数ではない。
-- [developとの差分・発見キュー](GITHUB_DISCOVERY_DIFF.tsv): 上記1,682所在を`develop`全ツリーと比較する。完全一致の既存所在、同名の別内容、PRにのみあるバイト列を分け、ローカル固定コミット・回収台帳・原本目録へのメタデータ対応を併記する。
+- [受付一覧](GITHUB_QUEUE.tsv): open PR **13件（#7–#19）**とopen Issue **6件**。番号・題名・状態・更新時刻・URL・PR固定HEADだけを取得した。本文は取得せず、`body_sha256` は `NOT_FETCHED_METADATA_ONLY` のままとする。これはハッシュではない。
+- [PR研究ファイル目録](GITHUB_SOURCE_CATALOG.tsv): 固定HEADの`research/`配下 **1,693 blob所在／1,143種類のblob SHA1**。PRの研究ツリー全体であり、各PRが追加した差分だけではない。同じバイト列の複数所在も保持する。
+- [回収保存版とのGit blob一致](GITHUB_EXACT_BODY_LINKS.tsv): **96対応**。基準コミットの回収台帳899行にある保存先とPR内blob SHA1を結ぶ。原本全文との一致は、別途[回収台帳](RECOVERY_LEDGER.tsv)の原本SHA・保存版SHA・回収状態で確認する。部分回収や個人情報整形版が原本全文と同じとは扱わない。
+- [正本との差分・発見キュー](GITHUB_DISCOVERY_DIFF.tsv): 全1,693所在を基準developの全ツリーと比較し、同一blobの別名・同名の別内容・PRだけの所在を区別する。元カタログと回収台帳への対応も、文字通りのパス一致と本文同一性を分ける。
 
-| 発見状態 | PR内の所在数 | 意味 |
+| 状態 | PR内の所在数 | 意味 |
 |---|---:|---|
-| `EXACT_ALREADY_DEVELOP` | 667 | 同じblob SHA1がdevelopのいずれかのパスに存在する。別名も照合した。 |
-| `SAME_PATH_CHANGED` | 35 | 同じパスがdevelopにあるがSHA1が異なり、同一blobはdevelopの他パスにも見つからない。 |
-| `AVAILABLE_QUEUE_ONLY` | 980 | 同じパスも同一blobもdevelopに見つからない。GitHub内で所在が確認できる候補である。 |
+| `EXACT_ALREADY_DEVELOP` | 706 | 同じGit blob SHA1が正本のいずれかのパスにある。意味の採録済みとは限らない。 |
+| `SAME_PATH_CHANGED` | 35 | 同じパスがあるが内容は異なり、同一blobも正本の他パスにない。 |
+| `AVAILABLE_QUEUE_ONLY` | 952 | 同じパスも同一blobも正本に見つからない。追加確認の候補であり、新発見・採用可能の判定ではない。 |
 
-同じblobの複数所在を含む。`EXACT_ALREADY_DEVELOP`は意味の検証済み・キュレーション済みを意味しない。残る1,015所在も新規知見・採用可能・公開許可の判定ではない。原本目録との文字通りのパス一致は`catalog_same_literal_path`で区別し、完全一致とは扱わない。
+## 前回の所在目録からの変化
 
-## 前回目録からの更新
+前回の比較基準は`14b3cbc83c2188680a29eb7fcae8d859072c62ba`、1,682所在。今回1,693所在となり、同じPR番号・同じパスをキーに追加11、blob変更11、同一1,671、削除0。正本との比較とは異なる。PR HEADの変更は次の3件。
 
 | PR | 前回HEAD | 今回HEAD |
 |---|---|---|
-| [#16](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/16) | `4dff901123c35df0d5c164cf57e23e8f52306571` | `897d2ae43be06512820536c212c9de29a7f77843` |
-| [#17](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/17) | `86781bc5c83558706c3c6504b7fa563f303b2cff` | `a2ae9a28386bcf6bec03c55cd06aa31ab5994057` |
-| [#18](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18) | `938532ae3b345d5a3612bfadbc65ce5938fb6cb4` | `6acb3d7277df30b4d380fe473b93007d2a33c95d` |
+| [#16](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/16) | `897d2ae43be06512820536c212c9de29a7f77843` | `35dfcb14b70940ded4a5dcfeca8347ae009694a1` |
+| [#17](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/17) | `a2ae9a28386bcf6bec03c55cd06aa31ab5994057` | `c6abc1e0c065280125d7122659a7ee7a4360c12a` |
+| [#18](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18) | `6acb3d7277df30b4d380fe473b93007d2a33c95d` | `144f93f6ebe1adc1c0706d31ac20300fad0b8cbe` |
 
-研究所在は前回1,680件から1,682件へ増加。同じPR・同じパスをキーに、追加2、SHA1変更6、同一1,674、削除0。各行の`previous_pr_blob_sha1`と`change_since_previous_catalog`で確認できる。ここでの変更は前回PR目録との比較であり、developとの差分とは異なる。
+各所在行の`previous_pr_blob_sha1`と`change_since_previous_catalog`で追跡できる。追加されたパスも本文は取得していない。古い目録はGit履歴に残り、受付の現在値と混同しない。
 
-新規パスはPR16の`research/intake/REA/REA_20261105_04H_T013_T014_OLD_OWNER_SEMANTIC_CURATION_CROSSWALK.md`とPR17の`research/intake/E/repro/t020_e_t028_retreat_strict_type_admission_20261105.py`。名前の所在のみを記録し、内容の検査・実行・意味の採用はしていない。
+## 取得方法と検証の境界
 
-## 検査方法と境界
+GitHub接続ツールには返却本文の項目選択がないため、GitHub CLI経由のGraphQLで必要なメタデータだけ要求した。open PR/Issueとも`hasNextPage=false`を確認し、repository PRIVATEとdefault branch developのSHAを照合した。取得中のPR HEADは受付表へ固定する。
 
-GitHub CLI `gh 2.100.0`からGraphQLでopen PR/Issueの必要なメタデータ項目だけを取得し、両接続の`hasNextPage=false`を確認した。本文フィールドは要求していない。REST `GET /repos/ButaMonky/Hakushin067-Research-Knowledge/git/trees/{固定SHA}?recursive=1`でdevelopおよび13 PRの完全ツリーを取得し、全14応答の`truncated=false`を確認した。各PRのHEADは受付一覧と各所在行に記録する。
+変更されたPR16/17/18だけRESTの`git/trees/{固定SHA}?recursive=1`で更新し、3応答すべて`truncated=false`。残る10件は固定HEADが前回と同じなので、前回完全取得した不変Git treeのメタデータを再利用した。キャッシュ再利用を今回の再ダウンロードとは数えない。source/raw/blob本文API、添付・コード・ログの取得や実行はしていない。
 
-ローカルでは`git ls-tree -r --full-tree 14b3cbc83c2188680a29eb7fcae8d859072c62ba`によるパス・object IDと、[回収台帳](RECOVERY_LEDGER.tsv)、[原本目録](../../RESEARCH_SOURCE_CATALOG.tsv)のメタデータのみを使った。Git blob SHA1同士で完全一致を判定し、原本の`source_sha256`をGit blob SHA1と比較していない。GitHub blob/raw/download APIは使用していない。PR/Issue本文、ローカル原本、ゲームファイル、保留証拠、コード・再現物の本文は表示・保存・内容検査・実行していない。初期HEAD確認の1回だけRESTのPR一覧をghの--jqで番号・HEAD・タイトルに絞った。このREST応答は本文欄を含み得るため、本文フィールドの非受信までは主張しない。実際の目録更新は本文欄を要求しないGraphQLへ切り替えた。
+正本は同じ固定SHAの`git ls-tree -r --long`全ツリーを使用し、Git blob SHA1同士で比較した。原本SHA256をGit SHA1と比較しない。原本カタログと回収台帳も基準コミットの版を読み、未コミットの新回収を比較へ混ぜていない。Issue本文・PR本文・ローカル原本・ゲーム・保留対象本文はこの所在照合では開いていない。
 
-この目録は保留解除や新たな本文閲覧を認めない。[既存のE受入スコープ監査](e_reports/SCOPE_AUDIT.md)を含む従来の除外・保留条件は維持する。今回の所在名の列挙は、その資料の内容や結論を採用する根拠ではない。採用済みの説明は[回収本文の入口](README.md)と[受付統合履歴](../intake/README.md)で確認する。
+この一覧は保留解除・未採用本文の自動取得・削除を認めない。従来の[スコープ監査](e_reports/SCOPE_AUDIT.md)や個別DEFERREDの境界を維持する。現在採録した関数・メモリは[事典](../../reference/README.md)、保存本文と制約は[回収の入口](README.md)、既存の採録判断は[受付統合履歴](../intake/README.md)を参照する。

@@ -13,6 +13,9 @@
 - [research/recovered/b_batch3/T013_GAMEMANAGER_GLOBAL_BACKLINKS_NATIVE_20261027_12H.md 行 14](../../research/recovered/b_batch3/T013_GAMEMANAGER_GLOBAL_BACKLINKS_NATIVE_20261027_12H.md?plain=1#L14-L14) — [GOLDEN DESIGNED_NOT_RUN] 無改変同梱EXE/20倍変更前DAT、同一SAVE/MAP/input/RNG。合法Heal発動を同一runで Unit+0xC、[H+4]、effect+0xC、pending append時 EAX、tick時 ECX/EBP、対象Unit、MP/HP/statu
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+- [research/recovered/b_batch9/data/T013_SUPPORT_POSTCORE_PHASE_4C3140_CONTRACT_20261013.md 行 4](../../research/recovered/b_batch9/data/T013_SUPPORT_POSTCORE_PHASE_4C3140_CONTRACT_20261013.md?plain=1#L4-L4) — [PARENT GATES/ABI] B saved exe/T013_SUPPORT_EFFECT_54E0B0_NATIVE_20261013.txt: 54E317 CALL551490 heal core→optional 54E32F CALL4B9F70 when Skill+30/34 nonempty
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 - [research/recovered/b_reports/T013_HEAL_FINISH_UNREGISTER_POOL_REUSE_NATIVE_20261027_10H.md 行 6](../../research/recovered/b_reports/T013_HEAL_FINISH_UNREGISTER_POOL_REUSE_NATIVE_20261027_10H.md?plain=1#L6-L6) — [OWNER REGISTRATION] 0x54E11A/0x54E11E→0x550980 factory。factory 0x550C53 virtual+0x18→0x455FA0、0x455FAB MOV [object+0xC],holder。0x54E2CC holder=[effect+0xC]、0x5
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
@@ -33,6 +36,12 @@
 
 - [research/recovered/b_batch5/data/T011_SUMMON_CALLER_SOURCE_TRIAD_SENTINEL_NATIVE_20261027_16H.md 行 11](../../research/recovered/b_batch5/data/T011_SUMMON_CALLER_SOURCE_TRIAD_SENTINEL_NATIVE_20261027_16H.md?plain=1#L11-L11) — [REIMPLEMENT] 召喚要求のproducer_kind、source_unit_like参照S、holder H、effect+0x7C、Group、座標様ECX、子Unitを独立fieldで保持し、別S候補を推測で同一親へ正規化しない。召喚EXP還元先・真parent pointer・AI最終target・
   制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
+<a id="field-88"></a>
+## effect + 0x88
+
+- [research/recovered/b_batch9/data/T013_EFFECT_VTABLE_TICK_JOIN_NATIVE_20261027_08H.md 行 7](../../research/recovered/b_batch9/data/T013_EFFECT_VTABLE_TICK_JOIN_NATIVE_20261027_08H.md?plain=1#L7-L7) — [CONSISTENCY / NOT NEW BODY] +0x04関数0x54E420はSkill[effect+0x88]の+0x48分岐後、+0x9C正の系統は0x54E522以降で正値を消費して0x4C60F0へ進み、当call中0x551490へ非到達。+0x9C非正かつ対象Unit+0x1867C==0の系
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
 <a id="field-9c"></a>
 ## effect + 0x9C

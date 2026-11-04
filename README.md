@@ -15,7 +15,7 @@
 | 研究ID・題名・本文 | [回収済み全文書](reference/DOCUMENTS.md)。本文と回収制約を確認する。手元のコピーでは下の検索も使える |
 | 呼び出し元・呼び出し先 | 各関数ページの静的CALL一覧。収録済みのV9直接CALLが対象で、間接CALLや全関数の網羅ではない |
 | 未回収・保留・原本との対応 | [回収状況](research/recovered/README.md)、[現在のローカル所在](research/recovered/current_inventory/README.md)、[元の目録と収録の照合](research/recovered/COVERAGE.md) |
-| PR・Issue・研究チャットに残る成果 | [GitHub上の所在](research/recovered/GITHUB_SOURCES.md)、[定期研究チャットの照合](research/recovered/SCHEDULE_CHAT_CHECK.md)、[旧チャットの回答保全](research/recovered/chat_finals/README.md)。いずれも取得時点の記録 |
+| PR・Issue・研究チャットに残る成果 | [GitHub上の所在](research/recovered/GITHUB_SOURCES.md)、[定期研究チャットの照合](research/recovered/SCHEDULE_CHAT_CHECK.md)、[旧チャットの回答保全](research/recovered/chat_finals/README.md)、[旧Aの研究報告と参照照合](research/recovered/chat_a_history/README.md)。いずれも取得時点の記録 |
 
 GitHubだけでページと収録本文を読めます。通常の事典検索にも、元PCの大容量DBやゲーム本体は必要ありません。件数は更新されるため、現在値は[生成された事典](reference/README.md)と[本文一覧](reference/DOCUMENTS.md)を参照してください。
 

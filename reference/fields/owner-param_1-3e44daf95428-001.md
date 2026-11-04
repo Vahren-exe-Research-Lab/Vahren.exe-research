@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-c"></a>
+## param_1 + 0xC
+
+- [research/recovered/b_batch9/data/T013_GROUP_SPACING_569360_CALLBACK_GATE_V3_20261023_1618.md 行 7](../../research/recovered/b_batch9/data/T013_GROUP_SPACING_569360_CALLBACK_GATE_V3_20261023_1618.md?plain=1#L7-L7) — 今回増分1: 0x00569360 は同一Group候補 param_1+0x0C/+0x10 の構成員vectorを走査し、param_1+0x34（0x569280算出値）を実際に読み取る後段consumer。
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 <a id="field-10"></a>
 ## param_1 + 0x10
 
@@ -21,6 +27,12 @@
 
 - [research/recovered/b_batch6/data/T011_VALUE_POINTER_NODE_ERASE_20261025_15H.md 行 16](../../research/recovered/b_batch6/data/T011_VALUE_POINTER_NODE_ERASE_20261025_15H.md?plain=1#L16-L16) — - Ghidra既存擬似C crosscheck: FUN_00436680の(pcVar1+0x28)=*(param_1+0x1c)、FUN_00510030とFUN_00463070のfreeはkey文字列とnodeに限定。戻り値/レジスタ推定はASM優先（STATIC-GHIDRAは補助）。
   制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
+
+<a id="field-34"></a>
+## param_1 + 0x34
+
+- [research/recovered/b_batch9/data/T013_GROUP_SPACING_569360_CALLBACK_GATE_V3_20261023_1618.md 行 7](../../research/recovered/b_batch9/data/T013_GROUP_SPACING_569360_CALLBACK_GATE_V3_20261023_1618.md?plain=1#L7-L7) — 今回増分1: 0x00569360 は同一Group候補 param_1+0x0C/+0x10 の構成員vectorを走査し、param_1+0x34（0x569280算出値）を実際に読み取る後段consumer。
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
 <a id="field-48"></a>
 ## param_1 + 0x48

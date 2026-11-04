@@ -1,0 +1,10 @@
+# B-20261013-1158-01｜WRQ-B-SKILL 54FD50 Rush状態コピー全本体（T013/T012）
+[DATE/TASK/STATUS] 2026-10-13 11:58 JST、T013 primary/T012 secondary、READY-STATIC-BODY。原作Gameplay PASS0、新strict MATCH0、Task DONE+0。x86保存命令の状態転送/正常returnだけCONFIRMED、child内部・ゲームUI・pointer所有はVERIFY。
+[PRIMARY] B exe/T013_RUSH_COPY_54FD50_NATIVE_20261013.txt、isolate SHA256 e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187。VA 0x54FD50..0x5500DF exclusive、911bytes/159 x86 instructions/window SHA256 3c1e442488ac427383d2f015066524da8af579a3e817b85363b08acb7ca0a394。CALL direct 1、CRT直接rand0、正常RET0x5500DE plain 1件。原本EXE/ZIP未実行未変更、REA/Ghidra新規起動0。
+[ABI/CHILD] EDI=source record, ESI=destination record（先行B-1154の54F990 callerに接続）。54FD50 MOV ECX,EDI/54FD52 MOV EAX,ESI→54FD54 CALL5500E0 を先に実行する。child5500E0のprefix/owner/vtable効果は本区画外VERIFY、そのreturnが完了する前に後半フィールド書込を先取りしない。
+[FIELDWISE COPY] 54FD59..5500D6でEDI→ESIの同offsetへbyte+6C/+6D、DWORD+70..B4、x87 double+B8/+C0、DWORD+C8..E4、double+E8/+F0、byte+F8、double+100/+108、DWORD+110、double+118、byte+120、DWORD+124..150、double+158、DWORD+160..16C、double+170/+178、DWORD+180、byte+184、double+188、DWORD+190..198、byte+19C..19F、DWORD+1A0..1AC、byte+1B0、DWORD+1B4..1C0、byte+1C4などを明示コピー。x87 FLD/FSTPはraw byte memcpyと同義ではないため非finite/FPU exceptionはWRQ-B-NUMERIC VERIFY。
+[RETURN] 0x5500DC mov EAX,ESI → 0x5500DE ret plain。返値はdestination pointerとして読み得るが通常Skill/投射の成功ALと同義ではない。直後の54F990処理がactor+1C4かlinked+1A8由来のbyteをrecord+210に設定する別stageが存在。深いコピー・浅いalias/所有権を当関数だけで決めない。
+[DELTA/WORK] B-1154の54F990にあった54F9E2 helper callを初めて保存native全本体に接続。Work read-only native_rush_missile.pyはこのchild pendingを扱うがcalleeのfieldwise処理が全部実装済みとは証明されていない。callerのESI/EDI、record identity、pending5500E0、returnPC、MP既減算、RNG cursorを保持して中断。
+[GOLDEN-DESIGNED/NOT RUN] Legit actor+65=0/1、異なるSkillとUnit+6C/+210、方向・効果表示・投射・HP/MP/RNGの同seed比較。内部値のみならINELIGIBLE、旧Gameplay actual PASS0、新strict MATCH0。
+[VERIFY/NEXT] 5500E0 prefix copy、+6C flag/+210 consumer、x87 and pointer lifetime、54F720→54F990 pool registration。過去拒否済0x5710C0..571500、0x415460、0x58021E..580340に手を付けない。MASTER/T018/REA/dev_lab/Work/queue/Git/settings/scheduleは無変更。
+[STATUS] READY（局所copy/returnに限定）

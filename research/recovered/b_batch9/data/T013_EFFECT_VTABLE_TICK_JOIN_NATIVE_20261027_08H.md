@@ -1,0 +1,14 @@
+# B-20261027-08H-T013-EFFECT-VTABLE-TICK-JOIN-01｜T013/T012 効果オブジェクトのvtable登録と遅延更新処理の接続
+[OWNER/STATE] 2026-10-27 08時台 JST、B T013主/T012参照。STATIC-ORIGINAL-PE-ASM + STATIC-RDATA / INFERRED / VERIFY / NOT READY。旧原作Gameplay Golden PASS0、strict MATCH0、新規B正式READY0。
+[PRECHECK] Local CompactでMASTER(E正式cp196/READY596は最後の既存値)、ANALYSIS_LANES_PROTOCOL、B5 owners、HANDOFF、安全拒否と未同期回収索引、search_index README/BUILD_MANIFESTを確認。2026-10-25 14H旧OFFLINE全文・他laneの完全意味重複照合はVERIFY。既拒否site/operationへの再試行・迂回なし。
+[IDENTITY] 無改変原作ゲーム直下Vahren.exeをread-only取得し実バイトSHA256=E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187一致。旧search.sqlite実SHA256=0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF、V9統合DB実SHA256=2629CB2F03ECEC9927E89892C77F847E4CDBA381AB718825C1CA8CFEEEF00EDE、両readonly immutable quick_check=ok。
+[NEW NATIVE TABLE] 既存Bが所有した0x550980効果poolの新規レコード生成2経路、元PE 0x550B3B および 0x550C29 の「MOV DWORD PTR [ESI],0x63A604」が同じvtable基点をセットすることを局所read-only ASMで再照合。生成・再利用とpool所有権は旧成果、今回は新規計数しない。
+[NEW SLOT JOIN] 元PE .rdata DWORD[0x63A608]=0x0054E420（vtable 0x63A604の+0x04 slot）、DWORD[0x63A628]=0x0054E3F0（同+0x24 slot）を実バイトから独立取得。表0x63A604..0x63A653の80バイトSHA256=DB55B9F0991DA21C7914F4E196FAC413BB9929FC7F7A3AE736A75D4DE6484C2B。
+[CONSISTENCY / NOT NEW BODY] +0x04関数0x54E420はSkill[effect+0x88]の+0x48分岐後、+0x9C正の系統は0x54E522以降で正値を消費して0x4C60F0へ進み、当call中0x551490へ非到達。+0x9C非正かつ対象Unit+0x1867C==0の系統は0x54E493/0x54E4A3を経て0x551490へ進む。+0x48=0側はeffect+0xA0の閾値0xB4を経て0x54E595から同coreへ進む場合がある。分岐本文は先行B-20261019-0814-01/0910-01で既知、今回はvtable slotとの結合だけ新差分。
+[HELPER SLOT] +0x24関数0x54E3F0は既B-20261019-1811-01のSkill+0x3E8/+0x3ECおよびeffect+0xA4に依存する項目選択helper。今回は「vtable+0x24からこの既知helperを参照する」と静的結合。既数式・parser cap32/fallback4は再計数0。
+[DIRECT CALL EVIDENCE] 元PE opcode E8 rel32を直接再計算しsite0x54E4A3→0x551490、site0x54E595→0x551490の2/2一致。Ghidra旧既存0x54E420/0x54E3F0を参照、Ghidra全解析・REA再実行なし。
+[CRITICAL VERIFY] vtable pointerが存在することと、ゲーム中にengineが必ずslot+0x04を呼ぶことは別。仮想callsite、tick/event順、vtable variant、effect record再利用時の上書き、core成功・MP・対象HP/状態・RNGは未証明。静的スロット対応を動的実行保証として昇格させない。
+[DEDUP] B所有data/exeのT011/T012/T013/T024/T028 461件とHANDOFF等を新VA照合。以前の0x54E420本文、0x54E3F0 helper、0x550980 pool/vtable base0x63A604は先行成果。今回差分はPE .rdataの0x63A608/+0x04および0x63A628/+0x24の具体的関数対応・pool writer結合。未同期資料との完全意味非重複はVERIFY。
+[GOLDEN] 無改変EXE・20倍強化前DAT・同一SAVE/MAP/入力/RNGでSkill+0x48系別、+0x9C>0→0、+0xA0>=180、target alive/dead、可視効果・HP/MP・次tick/PRNGを比較する必要あり。DESIGNED_NOT_RUN / original Gameplay PASS0 / strict MATCH0。
+[NEXT] 元vtable+0x04への合法な間接dispatch callerを既検索索引と許可済み元PE近傍で追跡し、現実に発動までつながる条件を限定する。0x54E0B0即coreと0x54E420遅延coreの双方を同一functionとして誤統合しない。
+[SAFETY/OWNER] B-owned詳細/T013_AI/T012_BATTLE_CALC/LANE_B_HANDOFFだけ追加を予定。MASTER/E・他owner・REA/dev_lab・原本EXE/DAT/SAVE/ZIP・Git・Work・設定・スケジュール変更なし。新安全拒否0、既拒否操作の迂回0。

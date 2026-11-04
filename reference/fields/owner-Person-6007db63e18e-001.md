@@ -10,4 +10,10 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1237](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1237-L1237) — - 次の解析対象: Unit 破棄の実際の呼出位置（シーン切替・Person の Unit ベクタ解放）、Troop 構造体の HP 保持有無、Person+0x14 の書込元、0x461DA0 の移植。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+<a id="field-48"></a>
+## Person + 0x48
+
+- [research/recovered/b_batch9/data/T013_GROUP_AGGREGATE_LIFECYCLE_V3_20261023_1519.md 行 14](../../research/recovered/b_batch9/data/T013_GROUP_AGGREGATE_LIFECYCLE_V3_20261023_1519.md?plain=1#L14-L14) — Never unify Group+0x34 derived recalculation with Person+0x48 candidate vector or Group+0x1D prune gate; object/register identity and +0x34 consumer meaning are
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

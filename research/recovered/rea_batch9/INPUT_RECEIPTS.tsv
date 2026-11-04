@@ -1,0 +1,5 @@
+role	input_path	sha256	bytes	interpretation
+approved_selection	hakushin-rea-batch9-approved.tsv	A5B7DC40DC4F2BA2DAE14688F87E6BF9FA16A38A3D51F91C37D38DC94B0CF083	4675	Read-only input snapshot; approved selection has byte counts but no approved hashes
+source_manifest	SOURCE_MANIFEST.tsv	13006BDE7008C851E82BB021720F89C53DB6484CEA54FB4C32B8C741DD881918	285273	Read-only input snapshot; approved selection has byte counts but no approved hashes
+source_catalog	RESEARCH_SOURCE_CATALOG.tsv	F14E3BD401A836039F678E9238C6490E2200385EFB0FBB602E62F626EC679CF4	350283	Read-only input snapshot; approved selection has byte counts but no approved hashes
+recovery_ledger	research/recovered/RECOVERY_LEDGER.tsv	4B2DBDDFACB4C88D9CD29DD9D083B87869895C7D4E0BBF99C92653FF601A4750	646835	Read-only input snapshot; approved selection has byte counts but no approved hashes

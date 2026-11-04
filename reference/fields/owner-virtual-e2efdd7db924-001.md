@@ -13,6 +13,9 @@
 <a id="field-18"></a>
 ## virtual + 0x18
 
+- [research/recovered/b_batch9/data/T013_OWNER_CANDIDATES_NUMERIC_CONTRACT_20261013_0031.md 行 119](../../research/recovered/b_batch9/data/T013_OWNER_CANDIDATES_NUMERIC_CONTRACT_20261013_0031.md?plain=1#L119-L119) — [OPEN-VA] 0x5E3B70→0x5E4A75/0x5E4AFE/0x5E4B0Bの非平方/例外とruntime x87 profile、0x5D1B80のB14A40==0側0x5D1BB6、0x5B6ED0のSSE/alternate（0x5B6F10・0x5BCF71）、0x577100の毒後の副作用、o
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 - [research/recovered/b_reports/T013_HEAL_FINISH_UNREGISTER_POOL_REUSE_NATIVE_20261027_10H.md 行 6](../../research/recovered/b_reports/T013_HEAL_FINISH_UNREGISTER_POOL_REUSE_NATIVE_20261027_10H.md?plain=1#L6-L6) — [OWNER REGISTRATION] 0x54E11A/0x54E11E→0x550980 factory。factory 0x550C53 virtual+0x18→0x455FA0、0x455FAB MOV [object+0xC],holder。0x54E2CC holder=[effect+0xC]、0x5
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 

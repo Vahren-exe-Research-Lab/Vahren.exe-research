@@ -1,0 +1,11 @@
+check	result	status
+approved_selection_count	45	PASS
+source_approved_and_catalog_identity	45/45	PASS
+export_exact_identity	41/41	PASS
+privacy_variants	0	PASS
+content_variants	0	PASS
+exact_aliases	0	PASS
+metadata_only_deferred	4	PASS
+held_destinations_absent	4/4	PASS
+baseline_inputs_unchanged	4/4	PASS
+artifact_private_path_scan	all batch artifacts	PASS

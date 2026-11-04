@@ -94,6 +94,9 @@
 - [research/recovered/b_batch2/T013_GLOBAL65BD9E_QUOTA_QUARTER_WRITERS_NATIVE_20261101_01H.md 行 13](../../research/recovered/b_batch2/T013_GLOBAL65BD9E_QUOTA_QUARTER_WRITERS_NATIVE_20261101_01H.md?plain=1#L13-L13) — [GOLDEN REQUIRED] 原作無改変EXE、変更前DAT、同SAVE/MAP/input/seed/RNG/tick、quota_viewとquarter_viewの組合せ、context+0xE4=0/1、global flag0/1、matrix identity/nonidentity、画面点と境界ma
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 
+- [research/recovered/b_batch9/data/T013_COORD_TRANSFORM_GATE_OUTPUT_ABI_NATIVE_20261101_00H.md 行 14](../../research/recovered/b_batch9/data/T013_COORD_TRANSFORM_GATE_OUTPUT_ABI_NATIVE_20261101_00H.md?plain=1#L14-L14) — [KB_CANDIDATE] 本ID B/T013、VA 0x4C1690/0x4C16A4/0x4C16B5/0x4C1700/0x4C1735/0x4C1755、CALL 0x4C1880→0x4C1690 / 0x4C1714・0x4C1725→0x5D1B80、offset context+0xE4/+0xDC
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 - [research/recovered/e_reports/T020_E_T013_COORD_GATE_RECT_ACCEPTANCE_20261101_00H.md 行 7](../../research/recovered/e_reports/T020_E_T013_COORD_GATE_RECT_ACCEPTANCE_20261101_00H.md?plain=1#L7-L7) — [NEW E T020 FIXTURE] 2 global[0x65BD9E] states × 2 context+0xE4 states × 4 native caller margin values(100,200,400,600) × 10 synthetic signed points = 160 uniqu
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
 
@@ -187,6 +190,9 @@
 - [research/recovered/rea_batch2/reports/REA_20261102_22H_P0_F720_ROSTER_EXIT_VTABLE_CANDIDATE_STATIC.md 行 29](../../research/recovered/rea_batch2/reports/REA_20261102_22H_P0_F720_ROSTER_EXIT_VTABLE_CANDIDATE_STATIC.md?plain=1#L29-L29) — - **Next lawful cursor:** compare existing B/T028 `0x447810` producer/selector evidence against *this* two-callsite finalization crosswalk and any vptr reassign
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
 
+- [research/recovered/rea_batch9/reports/REA_20261024_09H_P0_THREE_TREE_PREDICATE_STATIC.md 行 14](../../research/recovered/rea_batch9/reports/REA_20261024_09H_P0_THREE_TREE_PREDICATE_STATIC.md?plain=1#L14-L14) — \| 除外対象tree（context+0x1EED30、headは+0x1EED34） \| node+0x19 \| node+0x0C \| 0x48F73C / 0x48F747 / 0x48F760 \|
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; held bodies not recovered
+
 <a id="field-1eed34"></a>
 ## context + 0x1EED34
 
@@ -195,6 +201,12 @@
 
 - [research/recovered/rea_batch2/reports/REA_20261102_16H_P0_F720_TREE_HEADER_READER_CROSSWALK_STATIC.md 行 17](../../research/recovered/rea_batch2/reports/REA_20261102_16H_P0_F720_TREE_HEADER_READER_CROSSWALK_STATIC.md?plain=1#L17-L17) — - **Correction to search plan, not to previously verified meaning:** direct `context+0x1EED34` field mentions in these four functions are reader/comparator evid
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
+
+- [research/recovered/rea_batch9/reports/REA_20261024_08H_P0_NESTED_MAP_COUNT_TRANSFER_STATIC.md 行 42](../../research/recovered/rea_batch9/reports/REA_20261024_08H_P0_NESTED_MAP_COUNT_TRANSFER_STATIC.md?plain=1#L42-L42) — - 0x48F720で使用する比較tree（context+0x1EED34）の要素と、0x47D770で構築した外側keyの対応を追い、正常到達で候補が除外されない条件を特定。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; held bodies not recovered
+
+- [research/recovered/rea_batch9/reports/REA_20261024_09H_P0_THREE_TREE_PREDICATE_READBACK.md 行 15](../../research/recovered/rea_batch9/reports/REA_20261024_09H_P0_THREE_TREE_PREDICATE_READBACK.md?plain=1#L15-L15) — - 次のP0: 0x47D770の0x47D8EBで渡す[ESP+0xE0]実値生成元、比較tree(context+0x1EED34)の更新元、0x521D90の別経路を検証。0x48F720戻り値0は不採択か選択key=0かの二義性を区別する実機前提が必要。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; held bodies not recovered
 
 <a id="field-1eed38"></a>
 ## context + 0x1EED38
