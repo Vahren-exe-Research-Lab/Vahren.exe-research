@@ -12,9 +12,66 @@ import re
 import sys
 from urllib.parse import quote
 
+import export_static_calls as static_index
+
 ROOT = Path(__file__).resolve().parent.parent
 SYMBOL_COLUMNS = ("va", "kind", "name", "summary", "confidence", "source")
 FIELD_COLUMNS = ("struct", "offset", "type", "name", "summary", "confidence", "source")
+
+
+def load_static_calls(root, symbols):
+    path = root / "reference/static_calls.tsv"
+    meta = root / "reference/static_calls_source.json"
+    if not path.exists() and not meta.exists():
+        return [], None
+    if not path.is_file() or not meta.is_file():
+        raise ValueError("Incomplete static call index")
+    receipt = json.loads(meta.read_text(encoding="utf-8-sig"))
+    payload = path.read_bytes()
+    digest = hashlib.sha256(payload).hexdigest()
+    if digest.casefold() != receipt["static_calls_sha256"].casefold():
+        raise ValueError("Static call index checksum mismatch")
+    if (receipt["format_version"] != 1 or receipt["source_state"] != static_index.SOURCE_STATE
+            or receipt["source_pe_sha256"].upper() != static_index.SOURCE_PE_SHA256
+            or not re.fullmatch(r"[0-9a-fA-F]{64}", receipt["source_db_sha256"])):
+        raise ValueError("Invalid static call source receipt")
+    captured = {address(value) for value in receipt["selection"]["eligible_endpoint_vas"]}
+    if len(captured) != receipt["counts"]["eligible_endpoints"]:
+        raise ValueError("Static call endpoint count mismatch")
+    functions = {row["id"]: row for row in symbols if row["kind"] == "func"}
+    rows = []
+    seen = set()
+    with path.open(encoding="utf-8-sig", newline="") as stream:
+        reader = csv.DictReader(stream, delimiter="\t")
+        if tuple(reader.fieldnames or ()) != static_index.COLUMNS:
+            raise ValueError("Invalid static call columns")
+        for item in reader:
+            caller, callee = address(item["caller_va"]), address(item["callee_va"])
+            values = [static_index.number(item[key]) for key in ("caller_va", "callee_va", "site_va")]
+            if (any(value is None or static_index.in_ranges(value, static_index.EXCLUDED_RANGES) for value in values)
+                    or caller not in captured or callee not in captured
+                    or caller not in functions or callee not in functions):
+                raise ValueError("Unknown or excluded static call endpoint/site")
+            if (item["source_state"] != receipt["source_state"]
+                    or item["source_db_sha256"].casefold() != receipt["source_db_sha256"].casefold()
+                    or values[2] in seen):
+                raise ValueError("Inconsistent or duplicate static call site")
+            seen.add(values[2])
+            site = static_index.va(values[2])
+            rows.append({"id": f"static-call:{site}", "kind": "static_callsite",
+                         "subject": caller, "object": callee, "predicate": "calls_in_static_index",
+                         "site_va": site, "source_record_id": item["source_record_id"],
+                         "name": f"{functions[caller]['name']} → {functions[callee]['name']}",
+                         "summary": "登録関数間の直接CALL・V9静的索引",
+                         "confidence": "静的索引（当時の照合フラグ。今回の独立検証なし）",
+                         "source_db_sha256": receipt["source_db_sha256"],
+                         "source_pe_sha256": receipt["source_pe_sha256"],
+                         "source": {"path": "reference/static_calls.tsv", "sha256": digest,
+                                    "start_line": reader.line_num, "end_line": reader.line_num,
+                                    "receipt_path": "reference/static_calls_source.json"}})
+    if len(rows) != receipt["counts"]["exported_calls"]:
+        raise ValueError("Static call row count mismatch")
+    return rows, receipt
 
 
 def address(value):
@@ -288,10 +345,11 @@ def load(root):
         relations.append(item)
         relation_ids.add(item["id"])
     source_mentions = load_mentions(root)
+    static_calls, static_receipt = load_static_calls(root, symbols)
     return {"symbols": symbols, "fields": fields, "relations": relations,
             "mentions": [row for row in source_mentions if row["kind"] != "field_mention"],
             "field_mentions": [row for row in source_mentions if row["kind"] == "field_mention"],
-            "aliases": aliases}
+            "aliases": aliases, "static_calls": static_calls, "static_calls_receipt": static_receipt}
 
 
 def search(data, query):
@@ -316,7 +374,20 @@ def search(data, query):
     else:
         field_mentions = [row for row in data["field_mentions"]
                           if needle in json.dumps(row, ensure_ascii=False).casefold()]
-    return matched + related + mentions + field_mentions
+    indexed_calls = [row for row in data["static_calls"]
+                     if row["subject"] in ids or row["object"] in ids
+                     or needle in json.dumps(row, ensure_ascii=False).casefold()]
+    return matched + related + mentions + field_mentions + indexed_calls
+
+
+def call_edges(data, query, incoming):
+    target = address(query)
+    for symbol in data["symbols"]:
+        if symbol["name"].casefold() == query.casefold():
+            target = symbol["id"]
+            break
+    endpoint = "object" if incoming else "subject"
+    return [row for row in data["static_calls"] if row[endpoint] == target]
 
 
 def text(value):
@@ -366,6 +437,32 @@ def relation_lines(relations, identifier, labels):
     return lines
 
 
+def static_call_lines(data, identifier, labels):
+    receipt = data["static_calls_receipt"]
+    if not receipt or identifier not in {address(value) for value in receipt["selection"]["eligible_endpoint_vas"]}:
+        return []
+    lines = ["", "## 登録関数間の直接CALL・V9静的索引", "",
+             "当時の索引にある採録範囲を表示しています。仮想関数表などの間接呼出しは別の根拠と併せて確認してください。", "",
+             "[採録条件・元DB/対象EXEのSHA](../static_calls_source.json)", ""]
+    for incoming, title in ((True, "呼び出し元"), (False, "呼び出し先")):
+        lines += [f"### {title}", ""]
+        grouped = {}
+        for row in call_edges(data, identifier, incoming):
+            peer = row["subject"] if incoming else row["object"]
+            grouped.setdefault(peer, []).append(row)
+        if not grouped:
+            lines += ["この採録範囲の記録は0件です。", ""]
+        for peer, records in sorted(grouped.items()):
+            first = min(row["source"]["start_line"] for row in records)
+            last = max(row["source"]["end_line"] for row in records)
+            proof = f"../static_calls.tsv?plain=1#L{first}-L{last}"
+            sites = ", ".join(f"`{row['site_va']}`" for row in records)
+            lines += [f"- {endpoint_link(peer, labels)} — {len(records)}箇所。[索引行]({proof})",
+                      f"  呼出site　{sites}"]
+        lines.append("")
+    return lines
+
+
 def render(root, data):
     files = {}
     labels = {row["id"]: row["name"] for row in data["symbols"]}
@@ -388,6 +485,7 @@ def render(root, data):
         lines += [f"- [元の辞書行](../../symbols.tsv#L{row['dictionary_line']})", "",
                   "## 関数・メモリとの関係", ""]
         lines += relation_lines(data["relations"], row["id"], labels) or ["関係の個別採録は未実施です。"]
+        lines += static_call_lines(data, row["id"], labels)
         mentions = [item for item in data["mentions"] if item["subject"] == row["id"]]
         if mentions:
             lines += ["", "## 研究文書での言及", "",
@@ -440,6 +538,9 @@ def render(root, data):
         index.append(f"- [{text(name)}](structs/{quote(filename, safe='')})")
     index += ["", f"辞書項目 {len(data['symbols'])} 件、フィールド {len(data['fields'])} 件、根拠付き関係 {len(data['relations'])} 件。", ""]
     index += [f"回収済み文書のVA言及・取得記録 {len(data['mentions'])} 件を検索対象に含みます。辞書未登録のVAも検索できます。", ""]
+    if data["static_calls_receipt"]:
+        index += [f"[登録関数間の直接CALL採録条件](static_calls_source.json) — {len(data['static_calls'])}箇所。"
+                  "各関数ページで呼び出し元・先を参照でき、`callers VA --json` / `callees VA --json` でも検索できます。", ""]
     files["reference/README.md"] = "\n".join(index)
     files.update(render_field_pages(data["field_mentions"]))
     return files
@@ -502,13 +603,18 @@ def main():
     query = commands.add_parser("search")
     query.add_argument("query")
     query.add_argument("--json", action="store_true")
+    for name in ("callers", "callees"):
+        query = commands.add_parser(name, help="登録関数間の静的直接CALLを検索")
+        query.add_argument("query")
+        query.add_argument("--json", action="store_true")
     commands.add_parser("build")
     commands.add_parser("check")
     args = parser.parse_args()
     try:
         data = load(args.root)
-        if args.command == "search":
-            matches = search(data, args.query)
+        if args.command in ("search", "callers", "callees"):
+            matches = (search(data, args.query) if args.command == "search"
+                       else call_edges(data, args.query, incoming=args.command == "callers"))
             if args.json:
                 print(json.dumps(matches, ensure_ascii=False, indent=2))
             else:

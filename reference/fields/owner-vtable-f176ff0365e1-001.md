@@ -10,6 +10,9 @@
 - [research/recovered/b_batch2/T012_RUSH_GAMETASK_VIRTUAL_STATUS_GATE_NATIVE_20261027_17H.md 行 13](../../research/recovered/b_batch2/T012_RUSH_GAMETASK_VIRTUAL_STATUS_GATE_NATIVE_20261027_17H.md?plain=1#L13-L13) — [RUSH GETTER ASM] Rush vtable +0x0C と +0x10 は両方0x54E0A0。元PE 0x54E0A0 MOV AL,BYTE PTR[ECX+0x210]; 0x54E0A6 RET。Rush+0x210は既存0x54F990 initializer内0x54F9C5 / 0x54F
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 
+- [research/recovered/b_batch3/T013_HEAL_DEFERRED_TICK_DISPATCH_NATIVE_20261027_09H.md 行 11](../../research/recovered/b_batch3/T013_HEAL_DEFERRED_TICK_DISPATCH_NATIVE_20261027_09H.md?plain=1#L11-L11) — [SLOT GATES] 0x4C290B CMP BYTE[ESI+8],0。非0時0x4C2911/13は[EBX.vtable+0x0C]、0時task+0x14非0なら0x4C291F/21で+0x10を呼び0x4C2928 TEST AL→0なら0x4C2935 skip。0且つtask+0x14==0ならp
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 <a id="field-24"></a>
 ## vtable + 0x24
 
@@ -30,6 +33,9 @@
 
 <a id="field-5c"></a>
 ## vtable + 0x5C
+
+- [research/recovered/b_batch3/T013_RECT_INSET_BOOLEAN_NATIVE_20261031_23H.md 行 10](../../research/recovered/b_batch3/T013_RECT_INSET_BOOLEAN_NATIVE_20261031_23H.md?plain=1#L10-L10) — [OTHER CALLER OUTCOME] 0x57D99B真→0x57D9B7、偽かつ0x57D99D ESI==0→0x57D9A9 vtable+0x5C CALL→0x57D9AB AL=1。異なるmarginの具体的UI/gameplay単位と仮想CALL副作用はVERIFY。
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 - [research/recovered/b_reports/T013_VIEW_OFF_COMPARE_VSLOT5C_NATIVE_20261101_02H.md 行 14](../../research/recovered/b_reports/T013_VIEW_OFF_COMPARE_VSLOT5C_NATIVE_20261101_02H.md?plain=1#L14-L14) — [KB_CANDIDATE] owner B/T013、本ID。VA 0x45A240/0x45A253/0x45A26F/0x45A274/0x45A296/0x45A2C6/0x45A2D0/0x42F860/0x42F889/0x57D994/0x57D99B/0x57D99F/0x57D9A9。offset g
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
@@ -64,6 +70,9 @@
 <a id="field-70"></a>
 ## vtable + 0x70
 
+- [research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md 行 65](../../research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md?plain=1#L65-L65) — 1. **T013/T012最優先**：`0x00550E70` の `candidate.vtable+0x70` の派生先、`0x00551E50` の結果反映（候補のHP/回復/状態、死亡判定）の実経路。以前拒否されたVAやコマンドに立ち入らず、許可済み証拠からのみ絞る。
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 - [research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md 行 41](../../research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md?plain=1#L41-L41) — - `0x5510E5: cmp edx,10`。等しい場合 `0x5510EA: xor edi,edi`、`0x5510EC: jmp 0x551156`。この経路は通常のtarget `vtable+0x70`（`0x551154: call edx`）をskipする。
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
@@ -72,5 +81,11 @@
 
 - [research/recovered/b_reports/B_T012_T028_STATIC_RETPOINTER_BRANCH_ABI_OFFLINE_20261024_1209.md 行 10](../../research/recovered/b_reports/B_T012_T028_STATIC_RETPOINTER_BRANCH_ABI_OFFLINE_20261024_1209.md?plain=1#L10-L10) — StaticUnitの vtable+0x70 = `0x0055ABA0` の死亡・文字列非空経路では、`0x0055AC35 SUB ESP,0x1C` で28バイトの一時文字列用領域を確保。`0x0055AC54 CALL 0x00402710`で`Unit+0x1E7F8`から文字列を複製し、`0x0055AC
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail; historical refused-query incident is author disclosure only; report excludes that query output; no refused payload read
+
+<a id="field-80"></a>
+## vtable + 0x80
+
+- [research/recovered/b_batch3/T012_UNIT_VIRTUAL80_579290_CONTRACT_20261013.md 行 1](../../research/recovered/b_batch3/T012_UNIT_VIRTUAL80_579290_CONTRACT_20261013.md?plain=1#L1-L1) — # B-20261013-1253-01｜WRQ-B-SKILL：Unit vtable+0x80 →0x579290軌道座標列設定関数（T012/T013）
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

@@ -10,6 +10,9 @@
 - [research/intake/B/B-OFFLINE-20261101-13H-T011-T024-DISTANCE-SORT-MODE-GATE-01.md 行 14](../../research/intake/B/B-OFFLINE-20261101-13H-T011-T024-DISTANCE-SORT-MODE-GATE-01.md?plain=1#L14-L14) — KB_CANDIDATE: VA 0x529DC0,0x52AD00,0x526030,0x569730; calls 0x5296A8/0x529868/0x52AD35/0x529750/0x529921; group+0xC/+0x10, Unit+0x40/+0x48/+0x4C/+0x1867C, manag
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation; canonical B intake already preserves original source SHA and reusable bounded facts; raw original not duplicated
 
+- [research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md 行 17](../../research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md?plain=1#L17-L17) — - `0x56928C`で`group+0x34=0`に初期化し、メンバーポインタ配列 `group+0xC..+0x10` を巡回する。`Unit+0x1867C!=0`を除外し、生存扱いのUnit数を`n`とする。
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 - [research/recovered/b_reports/T011_T024_GROUP34_DUAL_BUCKET_ELIGIBILITY_NATIVE_20261101_11H.md 行 17](../../research/recovered/b_reports/T011_T024_GROUP34_DUAL_BUCKET_ELIGIBILITY_NATIVE_20261101_11H.md?plain=1#L17-L17) — Ghidra原文 `functions/0056/00569610.c`（SHA256 `80F9A75DC7C6C2121A5FB6CCD8C6667BF35E703B96B01CDBC4A305E06C318CFE`；該当擬似C 24〜39行付近）と原作x86命令を照合。入口 `0x569610` は `group
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
@@ -18,6 +21,12 @@
 
 <a id="field-1c"></a>
 ## group + 0x1C
+
+- [research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md 行 27](../../research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md?plain=1#L27-L27) — `0x568FB6`は`group+0x1D`を検査。0の場合は主要メンバー後処理と`0x569280`の呼び出しを迂回する。非ゼロの経路では各メンバー `Unit+0x1867D` を0にし、生存Unitの再評価を通した後、`0x569027`でグループ内ポインタ配列のendをbeginに合わせ、`0x56902C`
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md 行 31](../../research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md?plain=1#L31-L31) — - `0x5282C0`では`group+0x1C==0` (`0x5282C5`) と先頭Unit `+0x1FA==0` (`0x5282DA`) が条件。`manager+0x348`のリンク集合で同一グループの既登録を避け、`0x528304→0x5299E0`の後 `0x52830A mov al,1`、`0
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 - [research/recovered/b_reports/T011_T013_GROUP1E_ALL25_CALLER_AL_POSTCALL_NATIVE_20261101_08H.md 行 59](../../research/recovered/b_reports/T011_T013_GROUP1E_ALL25_CALLER_AL_POSTCALL_NATIVE_20261101_08H.md?plain=1#L59-L59) — - **KB_CANDIDATE**：`0x5695B0`の明示的AL=0/1分布（旧索引内25 direct sites）、`0x568FB0`の`group+0x1D` gateと`Unit+0x1867D=0`、`0x568460`の`Unit+0x186A4/A8` sentinel clear、AL=1の条件
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
@@ -36,6 +45,15 @@
 
 <a id="field-1d"></a>
 ## group + 0x1D
+
+- [research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md 行 27](../../research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md?plain=1#L27-L27) — `0x568FB6`は`group+0x1D`を検査。0の場合は主要メンバー後処理と`0x569280`の呼び出しを迂回する。非ゼロの経路では各メンバー `Unit+0x1867D` を0にし、生存Unitの再評価を通した後、`0x569027`でグループ内ポインタ配列のendをbeginに合わせ、`0x56902C`
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md 行 38](../../research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md?plain=1#L38-L38) — Goldenには同一原作EXE/DAT/SAVE/MAP/入力/RNGから実ゲームで`n=0,1,2,3,4,5`、`group+0x30`が1/非1、`group+0x38`がn未満/同値/超過、Unitフィールド`+0xA8/+0xB0/+0x1E530/+0x228`の分岐、`group+0x1D`の0/非0、A
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md 行 46](../../research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md?plain=1#L46-L46) — (1) PC復帰時、03H研究詳細の存在/SHAと04～09Hの未同期成果・最新MASTER/owner/重複/READYを先に確認し、承認されたBファイルへ一度だけ反映する。(2) `group+0x34`を読む消費側の関数を検索しゲーム意味を絞る。(3) `group+0x1D`の実所有書き込み元の特定（単純テキス
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 - [research/recovered/b_reports/T011_T013_GROUP1E_ALL25_CALLER_AL_POSTCALL_NATIVE_20261101_08H.md 行 19](../../research/recovered/b_reports/T011_T013_GROUP1E_ALL25_CALLER_AL_POSTCALL_NATIVE_20261101_08H.md?plain=1#L19-L19) — - **AL=0の18件**：`CALL 0x5695B0` の直後に `push esi; E8 -> 0x568FB0`。このヘルパーは `0x568FB6: cmp byte ptr [group+0x1D],0`、`0x568FBC: je 0x569031` により **group+0x1D==0ならヘルパー
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
@@ -70,11 +88,38 @@
 <a id="field-30"></a>
 ## group + 0x30
 
+- [research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md 行 20](../../research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md?plain=1#L20-L20) — - `group+0x30==1` (`0x56930F`) の枝では、`group+0x38`を読み込み、`0x56931A`の符号付き比較と`0x56931C`のJGEで、**通常の非負数範囲では** `group+0x34=A×min(n,group+0x38)` とする。
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md 行 21](../../research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md?plain=1#L21-L21) — - `group+0x30!=1`では、E8 `0x56933A→0x5E3B70`（内部 `0x5E3BAC` FSQRT）、E8 `0x569345→0x5B6ED0`（Ghidra擬似Cではceil系列）、E8 `0x56934D→0x5D1B80`（浮動小数→整数）を経て`0x569352`で積、`0x5693
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md 行 38](../../research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md?plain=1#L38-L38) — Goldenには同一原作EXE/DAT/SAVE/MAP/入力/RNGから実ゲームで`n=0,1,2,3,4,5`、`group+0x30`が1/非1、`group+0x38`がn未満/同値/超過、Unitフィールド`+0xA8/+0xB0/+0x1E530/+0x228`の分岐、`group+0x1D`の0/非0、A
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 - [research/recovered/b_reports/T011_T024_GROUP34_PROXIMITY_RATIO_100TICK_NATIVE_20261101_10H.sanitized.md 行 37](../../research/recovered/b_reports/T011_T024_GROUP34_PROXIMITY_RATIO_100TICK_NATIVE_20261101_10H.sanitized.md?plain=1#L37-L37) — 初期化関数 `0x568080`（Ghidra `functions/0056/00568080.c`、SHA-256 `CB626F94AD9C0DC6226D9D08E0624ACB4E74082397FED7EA6C9C71FE945DFFA7`）の `0x5680BE` は機械語 `C7 46 1C 00 01
   制約・訂正　Privacy derivative: one personal research-root prefix replaced with <research-root> plus explicit recovery annotation; full technical content retained; reversible byte reconstruction matches source SHA; historical STATIC/INFERRED/VERIFY only; no linked payload read or Golden/READY promotion
 
 <a id="field-34"></a>
 ## group + 0x34
+
+- [research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md 行 17](../../research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md?plain=1#L17-L17) — - `0x56928C`で`group+0x34=0`に初期化し、メンバーポインタ配列 `group+0xC..+0x10` を巡回する。`Unit+0x1867C!=0`を除外し、生存扱いのUnit数を`n`とする。
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md 行 19](../../research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md?plain=1#L19-L19) — - `n>0`では `0x56930D`の符号付き `IDIV n` によって合計を整数除算した `A=trunc(Σ寄与/n)` を得る。`n=0`なら`group+0x34=0`のまま戻る。整数オーバーフロー・不正な配列、負値の全ケースは未検証。
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md 行 20](../../research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md?plain=1#L20-L20) — - `group+0x30==1` (`0x56930F`) の枝では、`group+0x38`を読み込み、`0x56931A`の符号付き比較と`0x56931C`のJGEで、**通常の非負数範囲では** `group+0x34=A×min(n,group+0x38)` とする。
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md 行 21](../../research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md?plain=1#L21-L21) — - `group+0x30!=1`では、E8 `0x56933A→0x5E3B70`（内部 `0x5E3BAC` FSQRT）、E8 `0x569345→0x5B6ED0`（Ghidra擬似Cではceil系列）、E8 `0x56934D→0x5D1B80`（浮動小数→整数）を経て`0x569352`で積、`0x5693
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md 行 27](../../research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md?plain=1#L27-L27) — `0x568FB6`は`group+0x1D`を検査。0の場合は主要メンバー後処理と`0x569280`の呼び出しを迂回する。非ゼロの経路では各メンバー `Unit+0x1867D` を0にし、生存Unitの再評価を通した後、`0x569027`でグループ内ポインタ配列のendをbeginに合わせ、`0x56902C`
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md 行 46](../../research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md?plain=1#L46-L46) — (1) PC復帰時、03H研究詳細の存在/SHAと04～09Hの未同期成果・最新MASTER/owner/重複/READYを先に確認し、承認されたBファイルへ一度だけ反映する。(2) `group+0x34`を読む消費側の関数を検索しゲーム意味を絞る。(3) `group+0x1D`の実所有書き込み元の特定（単純テキス
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 - [research/recovered/b_reports/T011_T024_DUAL_LIST_MODE3_VECTOR_NATIVE_20261101_12H.md 行 48](../../research/recovered/b_reports/T011_T024_DUAL_LIST_MODE3_VECTOR_NATIVE_20261101_12H.md?plain=1#L48-L48) — 原作ver0.67の同一EXE/DAT/MAP/SAVE、同じ戦闘シナリオ・グループ、Unit群、RNG、0/1/複数のA/B分類、`manager+0x474` が3／非3、`group+0x34`の正負境界、前後のlinked-list順序とvector要素順、各Unit+0x1867C、Record+0x28の変
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
@@ -103,6 +148,15 @@
 - [research/recovered/b_reports/T011_T024_GROUP34_PROXIMITY_RATIO_100TICK_NATIVE_20261101_10H.sanitized.md 行 43](../../research/recovered/b_reports/T011_T024_GROUP34_PROXIMITY_RATIO_100TICK_NATIVE_20261101_10H.sanitized.md?plain=1#L43-L43) — 誤用を避けるため、前回09Hの `group+0x34` を「士気」「攻撃力」と断定しない。今回は**近接比率の距離閾値として使う**根拠を得たが、+0x228や+0x34のゲーム内名称はまだ未承認。グループ `+0x1C/+0x1D/+0x1E/+0x30/+0x34/+0x3C/+0x44` を別フィールドとして扱
   制約・訂正　Privacy derivative: one personal research-root prefix replaced with <research-root> plus explicit recovery annotation; full technical content retained; reversible byte reconstruction matches source SHA; historical STATIC/INFERRED/VERIFY only; no linked payload read or Golden/READY promotion
 
+<a id="field-38"></a>
+## group + 0x38
+
+- [research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md 行 20](../../research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md?plain=1#L20-L20) — - `group+0x30==1` (`0x56930F`) の枝では、`group+0x38`を読み込み、`0x56931A`の符号付き比較と`0x56931C`のJGEで、**通常の非負数範囲では** `group+0x34=A×min(n,group+0x38)` とする。
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md 行 38](../../research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md?plain=1#L38-L38) — Goldenには同一原作EXE/DAT/SAVE/MAP/入力/RNGから実ゲームで`n=0,1,2,3,4,5`、`group+0x30`が1/非1、`group+0x38`がn未満/同値/超過、Unitフィールド`+0xA8/+0xB0/+0x1E530/+0x228`の分岐、`group+0x1D`の0/非0、A
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 <a id="field-3c"></a>
 ## group + 0x3C
 
@@ -121,17 +175,44 @@
 <a id="field-4c"></a>
 ## group + 0x4C
 
+- [research/recovered/b_batch3/T013_MODE2_ALT_DUALFLAG_AND_MODE3_NATIVE_20261030_15H.md 行 15](../../research/recovered/b_batch3/T013_MODE2_ALT_DUALFLAG_AND_MODE3_NATIVE_20261030_15H.md?plain=1#L15-L15) — Otherwise 0x44C00A group+0x70==0 sets local [ESP+0x27]=1 at 0x44C010; for group+0x70!=0, 0x44C017 group+0x4C==0x80000008 gates calls 0x44C030 -> 0x565780 and 0x
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 - [research/recovered/e_reports/T020_E_T013_MODE2_DUALGATE_ACCEPTANCE_20261030_15H.md 行 9](../../research/recovered/e_reports/T020_E_T013_MODE2_DUALGATE_ACCEPTANCE_20261030_15H.md?plain=1#L9-L9) — - Second-phase nonnull group+0xB8 selection does not prove the selected pointer is the group's first Unit; +0x8C/+0x1F8/+0x1F9 tests use the first group Unit an
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
 
 <a id="field-70"></a>
 ## group + 0x70
 
+- [research/recovered/b_batch3/T013_MODE2_ALT_DUALFLAG_AND_MODE3_NATIVE_20261030_15H.md 行 15](../../research/recovered/b_batch3/T013_MODE2_ALT_DUALFLAG_AND_MODE3_NATIVE_20261030_15H.md?plain=1#L15-L15) — Otherwise 0x44C00A group+0x70==0 sets local [ESP+0x27]=1 at 0x44C010; for group+0x70!=0, 0x44C017 group+0x4C==0x80000008 gates calls 0x44C030 -> 0x565780 and 0x
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 - [research/recovered/e_reports/T020_E_T013_MODE2_DUALGATE_ACCEPTANCE_20261030_15H.md 行 9](../../research/recovered/e_reports/T020_E_T013_MODE2_DUALGATE_ACCEPTANCE_20261030_15H.md?plain=1#L9-L9) — - Second-phase nonnull group+0xB8 selection does not prove the selected pointer is the group's first Unit; +0x8C/+0x1F8/+0x1F9 tests use the first group Unit an
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
 
+<a id="field-88"></a>
+## group + 0x88
+
+- [research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md 行 15](../../research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md?plain=1#L15-L15) — - 0x44C6E1..F0 FILD manager+0x88(正規化済) / FILD group+0x88 / FDIV ST(1) / FILD group+0x8C / FDIVRP ST(2)。二つの集計比を作り、0x44C6F2 FLD [manager+0xD0]→0x44C6F8 FCOMP ST(2
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+<a id="field-8c"></a>
+## group + 0x8C
+
+- [research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md 行 15](../../research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md?plain=1#L15-L15) — - 0x44C6E1..F0 FILD manager+0x88(正規化済) / FILD group+0x88 / FDIV ST(1) / FILD group+0x8C / FDIVRP ST(2)。二つの集計比を作り、0x44C6F2 FLD [manager+0xD0]→0x44C6F8 FCOMP ST(2
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 <a id="field-b8"></a>
 ## group + 0xB8
+
+- [research/recovered/b_batch3/T013_MODE2_ALT_DUALFLAG_AND_MODE3_NATIVE_20261030_15H.md 行 13](../../research/recovered/b_batch3/T013_MODE2_ALT_DUALFLAG_AND_MODE3_NATIVE_20261030_15H.md?plain=1#L13-L13) — 0x44BFA1 CMP BYTE [Unit+0x1867C],0 / 0x44BFAA CMP BYTE [Unit+0x1867E],0: both zero needed to take 0x44BFB1 JE 0x44BFCA. At 0x44BFCA selected pointer (or EAX=0 a
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch3/T013_MODE2_ALT_DUALFLAG_AND_MODE3_NATIVE_20261030_15H.md 行 14](../../research/recovered/b_batch3/T013_MODE2_ALT_DUALFLAG_AND_MODE3_NATIVE_20261030_15H.md?plain=1#L14-L14) — For nonnull selected group+0xB8, the first group Unit pointer receives 0x44BFE2 Unit+0x8C, 0x44BFEB Unit+0x1F8, 0x44C001 Unit+0x1F9 tests. The all-pass pattern
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch3/T013_MODE2_ALT_DUALFLAG_AND_MODE3_NATIVE_20261030_15H.md 行 21](../../research/recovered/b_batch3/T013_MODE2_ALT_DUALFLAG_AND_MODE3_NATIVE_20261030_15H.md?plain=1#L21-L21) — Golden DESIGNED_NOT_RUN: original unmodified EXE+pre-x20 DAT, same SAVE/MAP/input/RNG; vary mode2 scratch, group Unit flags, +0x70/+0x4C sentinel, local accumul
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 - [research/recovered/e_reports/T020_E_T013_MODE2_DUALGATE_ACCEPTANCE_20261030_15H.md 行 6](../../research/recovered/e_reports/T020_E_T013_MODE2_DUALGATE_ACCEPTANCE_20261030_15H.md?plain=1#L6-L6) — - Independent Capstone x86 decoding matched 14/14 exact instruction + operand pairs, including 0x44BDEC JNE 0x44BEC5, 0x44BED1 CALL 0x56F130, 0x44BFA1/AA dual-b
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged

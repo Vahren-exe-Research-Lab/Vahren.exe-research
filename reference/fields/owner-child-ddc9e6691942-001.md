@@ -4,10 +4,25 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-c"></a>
+## child + 0xC
+
+- [research/recovered/b_batch3/T011_SUMMON_CALLER_GROUP_PROVENANCE_NATIVE_20261027_15H.md 行 13](../../research/recovered/b_batch3/T011_SUMMON_CALLER_GROUP_PROVENANCE_NATIVE_20261027_15H.md?plain=1#L13-L13) — [GOLDEN] 無改変ver0.67 EXE・KARATE_X20改変前DAT・同一SAVE/MAP/input/RNGを固定。4 caller系の召喚条件別にS/H/effect+0x7C、child+0xC、selector、group EDI、child+0x1D0、group list、可視出現・EXP帰属を
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 <a id="field-1c8"></a>
 ## child + 0x1C8
 
 - [research/recovered/b_reports/T011_T012_EXP_TRAINING_DEATH_CROSSWALK_NATIVE_20261029.md 行 34](../../research/recovered/b_reports/T011_T012_EXP_TRAINING_DEATH_CROSSWALK_NATIVE_20261029.md?plain=1#L34-L34) — [SUMMON] 0x54EE82→0x577260 parent+0x1E4B4 cache、miss 0x54EF3E→0x58B7F0および0x54EF69→0x577310、0x54F07A→0x56F880 child+0x1C8=cache R。子RへのEXPと発動者EXPは別。
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail; DAT491 is direct source-line distribution, not491 effective units; training_up caller linkage remains VERIFY
+
+<a id="field-1d0"></a>
+## child + 0x1D0
+
+- [research/recovered/b_batch3/T011_SUMMON_CALLER_GROUP_PROVENANCE_NATIVE_20261027_15H.md 行 9](../../research/recovered/b_batch3/T011_SUMMON_CALLER_GROUP_PROVENANCE_NATIVE_20261027_15H.md?plain=1#L9-L9) — [GROUP APPLY] 0x54F07A CALL0x56F880でnew childを構築した後、0x54F08F TEST EDI、非NULLなら0x54F093 PUSH EDI/0x54F094 MOV ECX,EAX(new child)/0x54F096 CALL0x568710。0x568752 CM
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch3/T011_SUMMON_CALLER_GROUP_PROVENANCE_NATIVE_20261027_15H.md 行 13](../../research/recovered/b_batch3/T011_SUMMON_CALLER_GROUP_PROVENANCE_NATIVE_20261027_15H.md?plain=1#L13-L13) — [GOLDEN] 無改変ver0.67 EXE・KARATE_X20改変前DAT・同一SAVE/MAP/input/RNGを固定。4 caller系の召喚条件別にS/H/effect+0x7C、child+0xC、selector、group EDI、child+0x1D0、group list、可視出現・EXP帰属を
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

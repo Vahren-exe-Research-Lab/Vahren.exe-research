@@ -13,8 +13,47 @@
 <a id="field-94"></a>
 ## actor + 0x94
 
+- [research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md 行 33](../../research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md?plain=1#L33-L33) — - `0x00547DEF..0x00547DF9`：`controller+0x278!=0` のとき、`actor+0x94 < controller+0x278` なら戻る。
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md 行 55](../../research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md?plain=1#L55-L55) — - どの候補にも配送できなければコストを消費しない。少なくとも1件配送すれば、**ループ終了後に1回だけ** `0x00547F96: sub [actor+0x94],[controller+0x278]` を実行し、成功フラグを返す。各候補ごとに引く実装と取り違えない。
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md 行 71](../../research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md?plain=1#L71-L71) — **Golden必要条件**：同一SHA EXE・DAT・SAVE・MAP・入力・RNG/tickを揃え、`controller+0x278`=0/正数、`actor+0xC0/C4/C8/CC`正負、A/B vectorが空/1/2候補、距離帯の内外・境界、`candidate+0x1867C`、2回の確率分岐、各候
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 - [research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md 行 54](../../research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md?plain=1#L54-L54) — 以上により、候補Aでヘルパーが`context+C=1`を設定しても、候補Bの配送準備 `0x547F4E`で同じ場所を0へ**再初期化**する。条件を満たす複数候補に対してlinked+`0x16C`加算を複数回実行できる**静的経路**がある。一方`actor+0x94`の減算は配送全体で一回のみで、かつ`0x54
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
+
+<a id="field-c0"></a>
+## actor + 0xC0
+
+- [research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md 行 31](../../research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md?plain=1#L31-L31) — - `0x00547DB8`：`actor+0xC0<0` かつ `controller+0x278==0` なら `0x00547DCC`へ戻る。
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md 行 71](../../research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md?plain=1#L71-L71) — **Golden必要条件**：同一SHA EXE・DAT・SAVE・MAP・入力・RNG/tickを揃え、`controller+0x278`=0/正数、`actor+0xC0/C4/C8/CC`正負、A/B vectorが空/1/2候補、距離帯の内外・境界、`candidate+0x1867C`、2回の確率分岐、各候
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+<a id="field-c4"></a>
+## actor + 0xC4
+
+- [research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md 行 32](../../research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md?plain=1#L32-L32) — - `0x00547DD7`：`actor+0xC4<0` かつ `controller+0x278!=0` なら戻る。
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+<a id="field-c8"></a>
+## actor + 0xC8
+
+- [research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md 行 38](../../research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md?plain=1#L38-L38) — `0x00547E38` は `actor+0xC8` を検査する。この値が非負なら `0x00547E81` へ移行し **B系列** を使用する。負なら `0x00547E4C → 0x005B6EAB` と `0x00547E65 → 0x005D1B80` の数値生成・変換経路を経て、`0x00547E6A`で
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md 行 66](../../research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md?plain=1#L66-L66) — 2. **T013**：`0x00546F70` を呼ぶさらに上位の動作ゲート、2系列vectorのwriter、`actor+0xC8/+0xCC`を設定するDAT/ゲーム実体、`controller+0x278`の意味と `+0x290/+0x298`の単位を検証。
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+<a id="field-cc"></a>
+## actor + 0xCC
+
+- [research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md 行 52](../../research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md?plain=1#L52-L52) — - `0x00547F10`：`actor+0xCC<0` では候補ごとに再度 `0x005B6EAB`、`0x005D1B80` を呼び `DAT_0065BD60` と比較。入力によって候補がスキップされる。RNG実装・消費回数の全容はVERIFY。
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 <a id="field-1c8"></a>
 ## actor + 0x1C8
@@ -34,6 +73,15 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 4175](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L4175-L4175) — - 0x551E50 が加算しない条件（先頭）: 技能の exp_per=off（Skill+0x2A8 が −123456.0）、actor+0x1D0（部隊）＝0、actor+0x18614≠0、context+0xC≠0（同じ攻撃で加算済み）。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+<a id="field-1d4"></a>
+## actor + 0x1D4
+
+- [research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md 行 41](../../research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md?plain=1#L41-L41) — A系列: actor+0x1D4 → manager, vector [manager+0x48, manager+0x4C)
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md 行 42](../../research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md?plain=1#L42-L42) — B系列: actor+0x1D4 → manager → [manager+0x1C] → context,
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 <a id="field-18614"></a>
 ## actor + 0x18614
 
@@ -42,5 +90,11 @@
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 4175](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L4175-L4175) — - 0x551E50 が加算しない条件（先頭）: 技能の exp_per=off（Skill+0x2A8 が −123456.0）、actor+0x1D0（部隊）＝0、actor+0x18614≠0、context+0xC≠0（同じ攻撃で加算済み）。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+<a id="field-1e570"></a>
+## actor + 0x1E570
+
+- [research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md 行 26](../../research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md?plain=1#L26-L26) — - `0x00546F93 cmp byte ptr [EBX+0x44],0` が非ゼロの場合、`0x00547DB0`に分岐する入口がある。より外側の条件 `0x00546F79 [actor+0x1E570]` と `0x00546F86 [controller+0x298]` も存在する。
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

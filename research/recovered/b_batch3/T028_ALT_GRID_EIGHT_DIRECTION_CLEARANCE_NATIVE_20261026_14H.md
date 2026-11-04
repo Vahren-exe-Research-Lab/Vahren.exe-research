@@ -1,0 +1,20 @@
+# B-20261026-1417-T028-ALTGRID-CELLGATE-EIGHTDIR-01｜T028 代替座標探索：単一セル空判定と8方向候補
+- Task/owner: B/T028（T012移動判定・T013対象探索との接点はVERIFY）。2026-10-26 14時台。STATIC-ORIGINAL-PE-ASM / STATIC-GHIDRA / INFERRED / VERIFY / NOT READY。
+- PRECHECK: Desktop Commander Local Compact PC接続、MASTER cp196/READY596は既正式値。規約、B5担当資料、B HANDOFF、未同期・既安全拒否索引、旧search_index README/BUILD_MANIFEST参照。10/25 14H OFFLINE全文の完全統合は未完。
+- SOURCE: rea_lab/targets/hakushin067_Vahren.exe 現物SHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187。旧search.sqlite SHA256 0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF、SQLite mode=ro quick_check=ok。
+- ASM ORIGINAL: 0x4E5040 native 876B SHA256 D02C4C19A23D9ADA2BAC0A530AB277132FB486990D16B0081CAE2122DA0B4FD5。Capstone全269命令、終端0x4E53AC一致。
+- NEW-1 [STATIC]: 0x4E504A manager+0x3C ==0 -> 0x4E50A4（多対象の評価経路）。非0側0x4E5051..0x4E507Cは座標を32単位のセルへ変換して有界検査、範囲外は0x4E5098 XOR EAX,EAX -> RET0x14。
+- NEW-2 [STATIC]: 非0側0x4E507E/5081/5084のgrid+0x48からセルを取得、0x4E5086 CMP DWORD PTR [EAX+ECX*4],0 -> 0x4E5089 SETE DL -> 0x4E508C EAX=EDX。範囲内かつ空セルなら1、非空又は範囲外なら0。これは条件付き単一セル空判定であり汎用距離尺度ではない。
+- NEW-3 [STATIC]: mode0の0x4E5141 CALL 0x4C1920が評価初期値を生成、0x4E514Cでしきい値を検査。周辺Unitループ0x4E5210以降、0x4E5327 SUB ESI,EAX、0x4E5329 CMP / 0x4E532F更新で最大値を保持し、0x4E5337..3Bでしきい値以上なら早期終了。0x4E5392/539Eが値を返す。具体的なゲーム内単位・衝突意味はVERIFY。
+- ASM ORIGINAL: 0x4E7770 native 1879B SHA256 A35BDC3DE8F666D5C1FC5E4D40BB01B544D32D91277AEBF9B9B7355736207E98。Capstone全493命令、終端0x4E7EBD一致。
+- NEW-4 [STATIC]: manager+0x3C!=0側0x4E77C1..0x4E7806は初期位置を32単位格子に変換しx/y範囲を検査、不適格は0x4E7A1C NULL。0x4E7875→0x4E8C10で候補を取り出し、0x4E78B9..BFで単一セルポインタ==0なら0x4E78C2 JE 0x4E7A48。
+- NEW-5 [STATIC]: 空セル採用時0x4E7A48/4B各セル座標を5bit左シフト、0x4E7A4E/51で双方+0x10。つまり返却される座標は (cell_x*32+16, cell_y*32+16) のセル中心。格納先0xB0411C/20とEAXポインタは前13H既知につき再計上0。
+- NEW-6 [STATIC]: 元PE.dataテーブル0x62DD20..0x62DD5Fの8組signed int32は順に(0,-1),(-1,-1),(-1,0),(-1,1),(0,1),(1,1),(1,0),(1,-1)。0x4E78D7..0x4E78FF と 0x4E7CBC..0x4E7CDC は引数由来の回転開始indexから8近傍候補を生成。各modeの座標倍率（セル±1 / raw座標±16）は異なる。
+- NEW-7 [STATIC/VERIFY]: manager+0x3C==0の代替探索は0x4E7C93 CALL 0x4E5040→0x4E7C98 CMP EAX,EBX / 0x4E7C9A JL 0x4E7E09（候補採用）を使用。非0側は0x4E78BFの直接空セル確認。どちらも候補集合を探索するが、容器0x4E8C10/0x42A590の順序・最短優先・RNG・同点の厳密仕様は未確定。
+- ABBREVIATED ABI: 0x4E5040 RET0x14（stack引数5本の契約）、0x4E7770 RET0x10（stack引数4本）をnativeで確認。旧Ghidra 0x4E7770 voidは誤判定、EAX成功ポインタ/NULLは13H既知。
+- DEDUP: 13H既知の0x579831呼出・NULL・二系統global格納・Unit移動更新、09–12H既知の格子constructorとinsert/erase、T012既知0x62DD20方向テーブル存在は新規計数0。新規増分は0x4E5040非0モード真理値・0x4E7770空セル条件とセル中心式・候補8方向テーブル正確値・mode0しきい値ループ。
+- LITERAL CHECK: B5 owner資料＋LANE_B_HANDOFFで0x4E5086/0x4E78BF/0x4E7A48/0x4E7C98事前出現0。0x62DD20出現2（旧T012とHANDOFF）なので再発見扱いせず正確値の追補。未同期14H本文と他lane/Library全文の意味重複はVERIFY。
+- GOLDEN REQUIRED: 無改変原作ver0.67 EXE、20倍変更前DAT、同一SAVE/MAP/input/RNG、manager mode0/1、境界内外、空/占有セル、候補複数・方位開始値、しきい値等号前後、NULL/成功と翌tick位置・空間登録を比較。DESIGNED_NOT_RUN。
+- SAFETY: 原本ゲーム/EXE/DAT/SAVEを実行・変更せず、Ghidra全体再解析とREA重複処理なし。既安全拒否VA0x5710C0..0x571500や拒否済操作への迂回/再試行0。MASTER/他lane/REA/dev_lab/Git/Work/設定/スケジュール変更0。
+- RECOVERY: 初回T011_UNIT_CLASS_SKILL.md誤パスENOENT。列挙で現行data/T011_DATA_MODEL.mdを特定し読み戻し成功、OTHER/RECOVERED。新規詳細パスは保存前確認でENOENT（未作成の予期どおり）、安全拒否ではない。
+- STATE: 正式新B READY0 / E MASTER統合0 / Task DONE0 / 原作Gameplay Golden PASS0 / strict MATCH0。OFFLINE 2026-10-25 14H全文未完全同期。次は0x4E8C10・0x42A590の候補容器pop順序と0x4E5040 mode0単位、T013 grid索敵consumer。

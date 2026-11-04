@@ -10,4 +10,10 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 2814](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L2814-L2814) — - word +0x78 = 1、+0x7A = 0、+0xBC = 0、**+0xC0 = 100**（AI の 0x4771F0 では aff）、+0x80 = 0。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+<a id="field-84"></a>
+## word + 0x84
+
+- [research/recovered/b_batch3/T013_SUPPORT_EFFECT_54E0B0_CONTRACT_20261013.md 行 5](../../research/recovered/b_batch3/T013_SUPPORT_EFFECT_54E0B0_CONTRACT_20261013.md?plain=1#L5-L5) — [EFFECT OBJECT] 0x54E11E call0x550980（先行push5DWORDのgeometry/container引数）からEAXをEDIに受取り、0x54E128以降 EDI+0x5C/+0x58/+0x64/+0x88/+0x60 と位置+0x8C/+0x90、関連owner+0x98等を直
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

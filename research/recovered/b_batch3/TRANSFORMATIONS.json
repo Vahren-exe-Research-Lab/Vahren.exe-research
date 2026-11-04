@@ -1,0 +1,28 @@
+{
+  "classification": "PRIVACY_ONLY_DERIVATIVE_RECEIPTS",
+  "transformations": [
+    {
+      "source_path": "data/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md",
+      "source_sha256": "6f7f7db100b5ae21827dfd12408d7d4f8801fe9f5b0f6392b28d2470b17e229d",
+      "catalog_sha256": "6f7f7db100b5ae21827dfd12408d7d4f8801fe9f5b0f6392b28d2470b17e229d",
+      "destination_sha256": "26c0655146ef0bad6821ffe42cb56cc10d738ec13af33f6239f807c7d873a61d",
+      "source_bytes": 9172,
+      "destination_bytes": 9373,
+      "operations": [
+        {
+          "source_byte_offset": 766,
+          "source_byte_length": 54,
+          "replacement_utf8": "<research-root>/",
+          "purpose": "personal absolute path prefix privacy redaction"
+        },
+        {
+          "destination_append_offset": 9134,
+          "append_byte_length": 239,
+          "purpose": "privacy annotation"
+        }
+      ],
+      "inverse": "Remove the appended annotation at destination_append_offset; replace replacement_utf8 at source_byte_offset using the withheld original byte span from the locally retained source. Original private bytes are not published.",
+      "round_trip_original_sha256_verified": true
+    }
+  ]
+}

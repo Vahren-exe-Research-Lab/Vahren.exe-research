@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-b4"></a>
+## offset + 0xB4
+
+- [research/recovered/b_batch3/T013_RECT_INSET_BOOLEAN_NATIVE_20261031_23H.md 行 14](../../research/recovered/b_batch3/T013_RECT_INSET_BOOLEAN_NATIVE_20261031_23H.md?plain=1#L14-L14) — [KB_CANDIDATE] ID B-20261031-23H-T013-RECT-INSET-BOOL-ABI-01、owner B/T013、VA 0x4C1860/0x4E34E0/0x4C1690/0x57D8B0/0x57DD10、CALL0x57D994/0x57DE95/0x4C1899、offset
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 <a id="field-18654"></a>
 ## offset + 0x18654
 

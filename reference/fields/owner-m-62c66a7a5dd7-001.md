@@ -25,4 +25,10 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 2708](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L2708-L2708) — - x = chop(0x587CC0(m,1) × (m+0xC0 / thr) + 0.5)（FIDIV のあと FMULP）。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+<a id="field-1d4"></a>
+## m + 0x1D4
+
+- [research/recovered/b_batch3/B_T012_T013_COLLISION_CLEANUP_OWNER_OFFLINE_20261023_0009.md 行 30](../../research/recovered/b_batch3/B_T012_T013_COLLISION_CLEANUP_OWNER_OFFLINE_20261023_0009.md?plain=1#L30-L30) — manager = *(m + 0x1D4)                // 管理者候補
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

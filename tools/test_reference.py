@@ -371,6 +371,63 @@ class ReferenceTests(unittest.TestCase):
         self.assertEqual(len(paths), 2)
         self.assertEqual(len({name.casefold() for name in paths}), 2)
 
+    def add_static_calls(self):
+        with (self.root / "symbols.tsv").open("a", encoding="utf-8") as stream:
+            stream.write("0x560650\tfunc\tStatusWnd_Down\t押下\t静的確認\tF§95\n")
+        payload = ("caller_va\tcallee_va\tsite_va\tsource_record_id\tsource_db_sha256\tsource_state\n"
+                   + "".join(f"0x0055BC60\t0x00560650\t{site}\t{i}\t{'a' * 64}\tV9_STATIC_INDEX\n"
+                             for i, site in enumerate(("0x0055BD00", "0x0055BD10"), 1)))
+        path = self.root / "reference/static_calls.tsv"
+        path.write_text(payload, encoding="utf-8", newline="\n")
+        receipt = {"format_version": 1, "source_state": "V9_STATIC_INDEX",
+                   "source_db_sha256": "a" * 64,
+                   "source_pe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+                   "static_calls_sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+                   "selection": {"eligible_endpoint_vas": ["0x0055BC60", "0x00560650"]},
+                   "counts": {"eligible_endpoints": 2, "exported_calls": 2}}
+        meta = self.root / "reference/static_calls_source.json"
+        meta.write_text(json.dumps(receipt), encoding="utf-8")
+        return path, meta, receipt
+
+    def test_static_call_index_links_both_directions_without_semantic_promotion(self):
+        self.add_static_calls()
+        data = reference.load(self.root)
+        self.assertEqual(len(reference.call_edges(data, "StatusWnd_Layout", incoming=False)), 2)
+        callers = reference.call_edges(data, "0x560650", incoming=True)
+        self.assertEqual(len(callers), 2)
+        self.assertTrue(all(row["confidence"].startswith("静的索引") for row in callers))
+        self.assertEqual(data["symbols"][0]["confidence"], "実機確認")
+        self.assertTrue(any(row["kind"] == "static_callsite" for row in reference.search(data, "0x560650")))
+        pages = reference.render(self.root, data)
+        self.assertIn("00560650.md", pages["reference/symbols/0055BC60.md"])
+        self.assertIn("0055BC60.md", pages["reference/symbols/00560650.md"])
+        self.assertIn("0x0055BD10", pages["reference/symbols/00560650.md"])
+
+    def test_static_call_index_rejects_tampering_unknown_endpoints_and_exclusions(self):
+        path, meta, receipt = self.add_static_calls()
+        original = path.read_text(encoding="utf-8")
+        path.write_text(original + "changed", encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "checksum"):
+            reference.load(self.root)
+        for replacement in ("0x005710C0", "0x00580280", "0x005769B0", "0x00400000"):
+            path.write_text(original.replace("0x00560650", replacement), encoding="utf-8", newline="\n")
+            receipt["static_calls_sha256"] = hashlib.sha256(path.read_bytes()).hexdigest()
+            meta.write_text(json.dumps(receipt), encoding="utf-8")
+            with self.assertRaises(ValueError):
+                reference.load(self.root)
+
+    def test_static_call_index_supports_fresh_clone_cli_and_new_dictionary_entries(self):
+        self.add_static_calls()
+        with (self.root / "symbols.tsv").open("a", encoding="utf-8") as stream:
+            stream.write("0x401000\tfunc\tNewFinding\t新しい発見\t推定\tfixture\n")
+        data = reference.load(self.root)
+        self.assertEqual(len(reference.call_edges(data, "0x560650", incoming=True)), 2)
+        command = [sys.executable, str(Path(reference.__file__)), "--root", str(self.root),
+                   "callers", "0x560650", "--json"]
+        result = subprocess.run(command, capture_output=True, text=True, encoding="utf-8")
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual(len(json.loads(result.stdout)), 2)
+
     def add_layout_alias(self, aliases):
         with (self.root / "symbols.tsv").open("a", encoding="utf-8") as stream:
             stream.write("0x8BCD48\tobject\tg_TempStatusWnd\t一時パネル\t静的確認\tF§95\n")

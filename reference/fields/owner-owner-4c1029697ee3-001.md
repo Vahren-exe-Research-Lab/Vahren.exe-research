@@ -16,6 +16,12 @@
 - [research/recovered/b_reports/T024_FALLBACK_FLAG_LATCH_FOURWAY_NATIVE_20261025_23H.md 行 8](../../research/recovered/b_reports/T024_FALLBACK_FLAG_LATCH_FOURWAY_NATIVE_20261025_23H.md?plain=1#L8-L8) — - +0x3C/3D（0x526AE8/0x526AF3）も消費して分岐。成立時はglobal 0x67B313等による別条件処理、0x526B59→0x4C21F0等へ。0のとき0x526B79 owner+0x14==0なら0x526B7E AL0→return（後続pair群未消費）。
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail; source addendum limits missing-call claim to legacy20261021 DB, not V3
 
+<a id="field-2f0"></a>
+## owner + 0x2F0
+
+- [research/recovered/b_batch3/T012_ENTRY_CONTEXT_FALLBACK_SUPPORT_AND_RESET_20261021.md 行 16](../../research/recovered/b_batch3/T012_ENTRY_CONTEXT_FALLBACK_SUPPORT_AND_RESET_20261021.md?plain=1#L16-L16) — 4. 0x583C70のGhidra擬似Cは in_EAX+0x94==0のときのみ in_EAX+0x1A4のowner候補を使い、owner+0x2F0 treeのcandidate+0x20を比較。条件成立で0x597B00の結果へ進み、それ以外はowner+0x58のpointer式を返す。無候補=単純NULL
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 <a id="field-2fc"></a>
 ## owner + 0x2FC
 

@@ -1,0 +1,19 @@
+# B-20261027-18H-T012-RUSH-SKILL-INTERVAL-FIRST-TICK-01｜RushMissileの初回更新時刻と0間隔バースト（2026-10-27 18H）
+[OWNER/STATUS] 研究B T012主、T013参照。STATIC-ORIGINAL-PE-ASM / STATIC-GHIDRA / INFERRED / VERIFY / NOT READY。新規READY0、E MASTER統合0、Task DONE0、原作Gameplay Golden PASS0、strict MATCH0。
+[PRECHECK] Desktop Commander Local Compact接続。MASTER最終正式checkpoint196/READY596（Eの既知値）、ANALYSIS_LANES_PROTOCOL、B5担当owner、LANE_B_HANDOFFの17Hまで/未同期・拒否復旧、検索README/BUILD_MANIFEST、RECOVERY_HUBを読取。2026-10-25 14H OFFLINE研究全文と他ownerの完全意味的重複照合はVERIFY。
+[SOURCE] 原作対象の派生read-only PE rea_lab/targets/hakushin067_Vahren.exe: 2910720B, 現物SHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187。旧search.sqlite: 53927936B、SHA256 0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF、immutable read-only quick_check=ok。旧DBは歴史的索引で、新V9正本と混同しない。
+[NEW ASM/SEED] 0x54F990 の record=EBP / Skill=EAX。0x54F9AC MOV [EBP+0x1D4],EAX、0x54F9D1 MOV EDX,[EAX+0x78]、0x54F9D4 MOV [EBP+0x1F4],EDX。したがって初期record.counterは0でなくSkill+0x78値である。0x54F9BF record+0x1F0=0も確認。
+[NEW ASM/TICK] 0x5501AC ESI=Rush、0x5501AE INC DWORD[Rush+0x1F4]、0x5501BB EDI=[Rush+0x1D4]=Skill、0x5501C1 CMP EAX,[EDI+0x78]、0x5501C4 JL 0x550405（未達ならこの回はreturn）。到達時0x5501CA Rush+0x1F4=0に戻して発動処理へ。
+[NEW ASM/REPEAT] 0x5503BE INC DWORD[Rush+0x1F0]、0x5503D0 CMP EAX,[Skill+0x74]、0x5503D3 JGE 0x5503E7（上限到達なら解除）。上限未満なら0x5503D5 CMP DWORD[Skill+0x78],0→0x5503D9 JE 0x5501D4で、間隔0の場合は同じ更新関数の発動処理へ直帰；非0なら0x5503DF以降でreturn。
+[NEW ASM/FINISH] 0x5503F9 CALL 0x4C22B0（Task解除）、0x5503FE MOV BYTE[Rush+0x1D0],0（再利用可能フラグ）。回復効果の終了経路は旧10H既存、RushのこのSkill+0x74上限分岐と0間隔loopを新たに結合。
+[CONDITIONAL CONSEQUENCE 1] Skill+0x78が通常の非負・overflowなし値Nなら初期counter=Nにより最初の許可された0x5501A0呼出でN+1>=Nとなり直ちに発動。次回からはcounter=0へ戻るのでN>0時は原則N回の許可された更新呼出で次の発動に到達（途中の外部writer/manager停止はVERIFY）。
+[CONDITIONAL CONSEQUENCE 2] Skill+0x78==0、Skill+0x74が正の整数K、Skill定義がループ中不変かつ効果側が正常復帰する場合、最初の許可された更新呼出で最大K回の連続発動後に解除へ到達し得る。『1フレームに1回』との一律実装は不適切。K<=0や整数overflow・例外・他のearly returnは境界VERIFY。
+[CONDITIONAL CONSEQUENCE 3] Skill+0x78!=0ならSkill+0x74未達で0x5503DF returnするので同一0x5501A0呼出での無条件burstは成立しない。intervalはsigned比較、可視フレームとの等価性はまだ未確認。
+[JOIN PREVIOUS] 17H B-20261027-17H-T012-RUSH-GAMETASK-VIRTUAL-GATE-JOIN-01のGameTask 0x4C2933は更新が許可される場合のみ0x5501A0へ到達する。そのため上記『初回』は生成時刻ではなく最初の許可更新呼出を意味する。14～16H召喚source・S三分岐は再計数0、0x550219→0x54E7B0は既知。
+[DEDUPE] B主owner5点+HANDOFFの新しい命令位置 0x54F9D4/0x5501AE/0x5501C4/0x5503D5/0x5503D9 のprior literal各0。旧B-20261021-1714-01の+0x210 actor snapshot分岐、17Hのgetter gate、16Hの召喚sourceは既知で再計上0。2026-10-25 14H未同期全文・他レーン意味照合はVERIFY。
+[ORIGINAL ASM BYTE WINDOWS] 0x54F990..0x54FA27 SHA256 C809726B588758A3D6915BD66BD8EE2CBA552561D813622CA68A3CA5B63C5F3D。0x5501A0..0x5501DF SHA256 6C9FF24E5297BA47863C248C95493177765F2AFA82997DC7EB355FF8159DD524。0x550375..0x55040F SHA256 AB399B4FCC0B1E1F39EB0F44CD92F61F2CB0C456A7D4DD893E77BD84D63CE57F（後者は任意バイト窓、先頭は命令途中のため範囲先頭命令扱いしない）。
+[E8 VALIDATION] 元PE直接rel32 0x550219→0x54E7B0、0x5503F9→0x4C22B0、0x54F7DD→0x54F990 の3/3一致。既知CALL位置の存在自体は新規件数に加算しない。0x4C2933間接CALLはE8照合件数に含めない。
+[VERIFY] Skill+0x74/+0x78のDAT実値・符号/0値到達性、Skill更新による途中変更、最終生成Unit回数、Skill+0x40分岐（召喚/別効果）、Manager M+8/+0x14 gate、status+0x210の事後writer、RNG/MP/EXP・可視tickは未証明。0x58021E..0x580340の既拒否範囲を再調査しない。
+[GOLDEN PLAN] 無改変原作ver0.67 EXE・KARATE_X20前DAT・同一SAVE/MAP/input/RNGでinterval=0/1/3、count上限1/2/3、Mゲート許可/不許可、初回・2回目・4回目許可tick、現れた子数/行動・HP/MP/EXP・次RNGを同runで比較。DESIGNED_NOT_RUN、Gameplay Golden PASS0、strict MATCH0。
+[RECOVERY] B-RC-20261027-18H-DB-URI-OTHER-01: 初回readonly SQLite quick_check用Python URI connectのuri=True指定忘れでsqlite3.OperationalError 'unable to open database file'。同じ許可済Local・read-only経路でuri=Trueを指定してSQLite実SHAとquick_check=okを検証。OTHER/RECOVERED、SAFETY_REFUSALではない。元DB変更0、初回エラー時のB成果書込0。
+[SAFETY/NEXT] 既拒否0x5710C0..0x571500、0x58021E..0x580340、過去の間接SQL・文書作成拒否は別tool/shell/path/Remote/ZIP迂回なし。全Ghidra/REA/原作ゲーム実行0、他owner/MASTER/rea_lab/dev_lab/原本/Work/Git/設定/schedule変更なし。次はRush interval/totalが実DATで0を取り得るか、source+0x210後続writerと実Manager、T013最終対象・T024戦闘AI・T028士気敗走。

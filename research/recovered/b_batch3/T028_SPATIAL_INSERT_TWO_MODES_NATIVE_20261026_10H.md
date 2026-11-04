@@ -1,0 +1,24 @@
+# B-20261026-1015-T028-SPATIAL-INSERT-TWO-MODES-01
+- owner: B/T028; 2026-10-26 10時台 JST。STATIC-ORIGINAL-PE-ASM / STATIC-V9-PSEUDOC / INFERRED / VERIFY / NOT READY。
+- 目的: 09Hの登録解除0x4E4F60に対する登録側0x4E4EA0、配列挿入0x4C1290と成長0x4C12F0の差分調査。旧09Hの既知CALL存在を新規扱いしない。
+- 先読: MASTER正式cp196/READY596（過去のE正式値）、ANALYSIS_LANES_PROTOCOL、LANE_B_HANDOFF、B5 owner、旧安全拒否・14H未同期索引、search_index README/BUILD_MANIFEST、V9入口。
+- 証拠: 同梱原作EXEの現物SHA256=E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187。原本はread-only、実行なし。
+- 旧search.sqlite: SHA256=0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF / URI ro quick_check=ok。
+- 新規検索は別名V9 CLI（PC既定のV3へ昇格していない）。V9 DB SHA256=2629CB2F03ECEC9927E89892C77F847E4CDBA381AB718825C1CA8CFEEEF00EDE / URI ro quick_check=ok。
+- [ASM] 0x4E4EA0（182B/67命令/末尾0x4E4F56）SHA256=3C4DDE470CE57F5F01D8F72E83AF717F6F8DBE6CEB7FD9A29680808873E8A80C。
+- [ASM] 0x4E4EA0 CMP BYTE [ESI+0x3C],0 → 0x4E4EAA JE 0x4E4EF7。ESI=管理オブジェクト、EBX=対象Unit。x/yはstack引数、実型はVERIFY。
+- [MODE !=0] 0x4E4EB0..0x4E4EC4 x/yを負値補正付き32除算でセル座標にする。0x4E4EC7..0x4E4EDBは0<=x<manager+0x40、0<=y<manager+0x44。範囲外→0x4E4F51 RET8、Unit+0x220/+0x224も未更新。
+- [MODE !=0] 0x4E4EDD..0x4E4EE3: manager+0x48の行ポインタから[cell]へEBXを無条件STORE。既存cell pointerとの一致/空き検査はこの関数にはない。0x4E4EE6/0x4E4EEDでUnit座標を更新。セル衝突の合法到達はVERIFY。
+- [MODE ==0] 0x4E4F00..0x4E4F18 x/y負値を0へマスクし、manager+0x5Cシフト量で除算。0x4E4F1C..0x4E4F2Aではmanager+0x50以上の座標をmax-1へclamp。max>0等の生成時保証はVERIFY。
+- [MODE ==0] 0x4E4F2D..0x4E4F38: manager+0x4C行配列とセル16B header、0x4E4F07でstackにEBXを保存、0x4E4F3C E8 CALL0x4C1290（原作Opcode E84FC3FDFF）。0x4E4F41/4BでUnit座標を更新。単一ポインタmodeと違い範囲外skipがない。
+- [ASM] 0x4C1290（82B/35命令/end0x4C12E2）SHA256=00DFAC7A9FC8DC120CBE86410CE94A01ED1E1EB441CC29B6EB6A188486D2ECD1。
+- [VECTOR] 0x4C1293..0x4C12C4: sourceポインタがvector内部要素ならinsert前にindexを計算、成長後に更新されたbeginから再取得。0x4C12C5..0x4C12DC: 外部sourceならDWORD値を末尾へ格納。vectorヘッダbegin/end/capはEDI+0/+4/+8。今回の0x4E4F3C callerはstack上EBX sourceなので後者に該当。
+- [GROW] 0x4C12AC/0x4C12CCでcapacity不足時0x4C12F0（80B/34命令/end0x4C1340）へ。新容量は少なくともsize+1、容量+floor(capacity/2)を候補、上限境界で別分岐。0x4C1339→0x501A40は別関数擬似Cでメモリ再確保・先行要素copy/freeと整合、例外とallocator副作用はVERIFY。
+- [ABI] 0x4E4EA0はRET 8、0x4C1290と0x4C12F0はRET。Ghidraのunaff_レジスタ・void擬似Cを正規の呼出ABIと断定しない。
+- [CALL] V9 direct E8 0x4E4C95/0x5445CA/0x575062→0x4E4EA0の3件、0x4E4F3C→0x4C1290の1件、0x4C12AC/CC→0x4C12F0の2件を限定照合。0x4C1290は全direct caller147件だが個別全件解析しない。
+- [DEDUP] B5主資料とHANDOFFで0x4E4EE3/0x4E4F3C/0x4C12B8先行literal 0件。0x4E4EA0/0x4C1290は09HのNEXTでのみ既知。旧10/25 14H OFFLINE全文と他lane/Library全意味照合は未完、正式READY加算0。
+- [VERIFY] 同セル上書き、負座標clamp、mode=0の格子最大値<=0、格子未登録時Unit座標更新有無、移動0x4E4C70側呼出前の合法不変条件、木0x49D9F0との整合は未解決。ゲームの確定BUGとは認定しない。
+- [GOLDEN DESIGNED_NOT_RUN] 無改変原作EXE+20倍強化前DAT+同一SAVE/MAP/input/RNGで両mode、境界外/負値、同セル複数Unit、移動・死亡を比較。cell登録・Unit座標・次tickの可視行動と戦略復帰まで観測する。旧原作Gameplay Golden PASS0、strict MATCH0。
+- [SAFETY] 過去の拒否VA 0x5710C0..0x571500などには非介入。原本ZIP/EXE/DAT/SAVE、他lane/MASTER/REA/dev_lab/Git/Work/設定/スケジュール書込0。
+- [NEXT] manager+0x3C writerと初期化、+0x50/+0x5Cの合法値、0x575C43の一般死亡経路、同セル衝突と空配列保証を既存静的検索から追跡。原作実機実行はしない。
+- [SAVE] B-owned detail/T028_MORALE/HANDOFFのみ対象。readback receiptは保存後に独立照合する。
