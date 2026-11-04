@@ -1,0 +1,59 @@
+{
+  "research_id": "E-AUDIT-20261031-09H-T020-T011-BULK-ERASE-BOUNDARY-01",
+  "owner": "E",
+  "task": "T020",
+  "local_hour": "2026-10-31 09H JST",
+  "status": "STATIC BYTE VERIFIED / CONDITIONAL SYNTHETIC EXECUTED / VERIFY / NOT READY",
+  "original_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "native_windows_pass": "4/4",
+  "native_e8_pass": "6/6",
+  "synthetic_fixtures_pass": "72/72",
+  "bulk_cases": 24,
+  "partial_guard_cases": 48,
+  "process_exit_code": 0,
+  "original_game_runs": 0,
+  "actual_golden_pass": 0,
+  "strict_match": 0,
+  "checkpoint_prior_confirmed": 196,
+  "ready_prior_confirmed": 596,
+  "task_recount": {
+    "DONE": 9,
+    "IN_PROGRESS": 21,
+    "VERIFY": 4
+  },
+  "new_ready_ids": [],
+  "github_develop_readonly": "10e608e7bbb7b4ec1beda7184fa0157c5216007c",
+  "local_git_head_unverified": true,
+  "file_receipts": [
+    {
+      "file": "tests/t020_e_t011_training_cache_full_erase_20261031_09H.py",
+      "bytes": 5582,
+      "sha256": "0D8137A1E974ECD706DE0DD881F543EBE0A3FA85BA17C8F4B5FF71F49A4933D8"
+    },
+    {
+      "file": "tests/T020_E_T011_TRAINING_ERASE_CASES_20261031_09H.json",
+      "bytes": 28743,
+      "sha256": "89021E2D232DB0579E0FE4BAF417542BC4F47CF66A7B26468CE68C093F1952D8"
+    },
+    {
+      "file": "tests/T020_E_T011_BULK_ERASE_ACCEPTANCE_20261031_09H.md",
+      "bytes": 5846,
+      "sha256": "97C6FF82814759FE26980B65B88144BAB27D5CA1001B5137F484E618D7DD7DCC"
+    },
+    {
+      "file": "data/T011_TRAINING_CACHE_FULL_RANGE_ERASE_NATIVE_20261031_09H.md",
+      "bytes": 5331,
+      "sha256": "C54054A10AE7834D10DAA45129B80100048CD98CDAE286324C91E9F784DF24AC"
+    },
+    {
+      "file": "MASTER_LEDGER.md",
+      "bytes": 1096469,
+      "sha256": "E7329C9C6368E67BE191A4ABF45156319E32826FF039FB2B9E226DEDDAC6B6B3"
+    }
+  ],
+  "recovery": "OTHER/RECOVERED: initial prewrite LF-string SHA display differed from Windows on-disk CRLF SHA; fixed runner to hash F.read_bytes(), rerun EXIT 0",
+  "new_safety_refusals": 0,
+  "prior_safety_holds_unchanged": true,
+  "offline_unsynced_unmerged": true,
+  "next": "E-owned legal G0/G1/G2 primary evidence prerequisites; B-owned partial erase ABI awaits owner evidence"
+}
