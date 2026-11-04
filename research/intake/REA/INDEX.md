@@ -1,3 +1,10 @@
+<!-- REA-20261105-04H-OLD-T013-T014-CURATOR-CROSSWALK -->
+## 2026-11-05 04H | 10/20→10/19 old-owner T013/T014 selective curator delta (8 existing IDs, 0 new)
+
+**Owner-safe meaning/correction handoff:** [full eight-ID study crosswalk](REA_20261105_04H_T013_T014_OLD_OWNER_SEMANTIC_CURATION_CROSSWALK.md), Git blob `4f4aa9073caf7031a55d3109ebb7699808a16b4c`; six permitted 10/20 existing source IDs + two 10/19 permitted T014 IDs, original report paths and previously measured SHA256 listed individually (not rehashed today). Historical archives: 10/20 blob `a15ef0c2`, 10/19 A blob `a7e41d5b`. Current `develop` comparison was `d12075db52290a1bfc70e95ee537f8af034fb3dc`: `REF_BATTLE_AI_MORALE` already covers T013 cadence and general RNG, **not full selector draw/stealth/tie semantics**; `REF_SAVE_FORMAT` §7 corrects old `0x471D20/0x471AF0` “Diplomacy” name to **turnproc**. Historical evidence additionally separates 10/20 22H writer live count, 23H mode0 length-zero logical clear (not deep copy), 10/19 parent scalar commit after stream gate, and direct Power D0/D4 vs wrapper D8/DC reads. **Synthetic-only** 32768-value integer enumeration checked the bounded stealth count; original FPU/gameplay remains VERIFY. Pre-existing owner study IDs = PUBLISHED_INTAKE; this crosswalk **NOT_CURATED**, no REA five-kind VERIFIED added, original Golden/strict MATCH/READY 0/0/0. PC original/V9/locks/QUEUE/PROGRESS **UNSYNCED**, denied scope untouched. No develop/REF/TSV edits or new study IDs.
+
+**Next legal cursor:** `REA-20261019-0738-T014-POWER-GENERIC-NUMERIC-DC-SENTINEL-01`, then `REA-20261019-0834-T014-POWER-HOMESPOT-DUAL-END-01`, then remaining 10/19 B and 10/18 permitted IDs. Skip already archived/deduped status-only holdings.
+
 <!-- REA-20261105-03H-T014-PREFIX255-SOURCE-CROSSWALK -->
 ## 2026-11-05 03H follow-on | old REA/T014 255-byte reader boundary and Spot cascade (2 existing IDs)
 
