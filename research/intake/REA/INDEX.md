@@ -1,3 +1,14 @@
+<!-- REA-20261105-06H-UNIT-TICK-EXPIRY-CURSOR -->
+## 2026-11-05 06H | 10/15 permitted tick/expiry old-source meaning review (9 EXISTING IDs; 0 new)
+
+**Curator handoff:** [9 distinct previously PUBLISHED REA IDs: old Unit Task lifetime; 7 tick/expiry contracts; later literal-correction dependency](REA_20261105_06H_LEGACY_UNIT_TICK_EXPIRY_CURATOR_CROSSWALK.md), document Git blob `932dd331b0cda739b910ec1a2c61404976b61b00`. Historical original-report SHA256 & relative paths are preserved per ID; source archive blobs `f504bc1d02c2e8952fbe9db5c0b198bd803ad4bf` (A), `9833e3eec616ac4c9c2b28bcd250a0e0c4ef823e` (B). Previously verified 41 old IDs in 05H unchanged; no source imported or re-IDed. Actual owner PR #16 head before update `a2c318206ca6d2233f50b902c7e887b4007adf74`; current source `PUBLISHED_INTAKE` vs new meaning crosswalk `NOT_CURATED`.
+
+**Bounded correction:** `0x57AA00` tick already named in develop symbols; new 09:40→15:37 curator source map keeps `0x57AAF8→0x57E180` normal return at `0x57AAFD`, conditional `0x57AB22→0x57B380` and later `0x57AB63→0x41E160`, conditional tree insertion/decrement/erase-vs-advance. Missing `0x57B7F4..FF` predicate, `0x57B380` body, normal downstream effects are **VERIFY**. 21:37 prior unknown literal equality was narrowed by an already published later correction; do not double count. Sampled develop refs did not reveal exact nine IDs; **not proof of globally uncurated records**.
+
+**Status:** PC HTTP429, V9/original/active.lock/QUEUE/PROGRESS UNCHECKED/UNSYNCED. Fresh formal REA five-kind VERIFIED **0**; original Golden PASS / strict MATCH / READY **0/0/0**. No denied evidence/operation reattempted or shared develop/REF/TSV edited.
+
+**Next cursor:** eligible `2026-10-14` older REA owner sources if verifiable in indexed legal archive; otherwise earliest remaining permitted legacy source/duplication review. Skip these 9, the prior 05H 41, status-only/held records. Curator only selects validated intake claims for develop adoption.
+
 <!-- REA-20261105-05H-OLD-TROOP-DEATH-GWRITE-CROSSWALK -->
 ## 2026-11-05 05H | 10/19–10/15 permitted owner source semantic crosswalk (41 EXISTING IDs; 0 new)
 
