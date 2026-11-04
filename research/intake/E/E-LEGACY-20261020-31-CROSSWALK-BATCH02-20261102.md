@@ -125,7 +125,7 @@ Curation: reconcile superseding corrections and source ownership with original E
 | Footage of `VS_inyume_win` with no same-run prompt/choice record (07H L15) | `CHOICE_ORIGIN_UNPROVEN`; cannot infer the input or retroactively qualify G0/G1. |
 | `yet(VS_inyume)==0` only in a later SAVE or another battle window (07H L17) | `EVENT_EPOCH_UNPROVEN`; cannot attach event to G3/G4 or to a different battle. |
 
-**Review gate:** two distinct study IDs linked, not merged or duplicated. Same-run original UI/input, immediate SAVE, actual MAP/three-side ordered Unit/Troop, branch/callback receipts and World before/after diff all remain missing. `PUBLISHED_INTAKE_EXCERPT / NOT_CURATED / STATIC+VERIFY`; new original Golden PASS 0, strict MATCH 0, new formal READY 0, new MASTER delta 0. No synthetic or native test was run; curator independently validates before adopting any policy. Protected/refused sources stay excluded.
+**Review gate:** two distinct study IDs linked, not merged or duplicated. Same-run original UI/input, immediate SAVE, actual MAP/three-side ordered Unit/Troop, branch/callback receipts and World before/after diff all remain missing. `INDEXED_EXCERPT / NOT_CURATED / STATIC+VERIFY`; new original Golden PASS 0, strict MATCH 0, new formal READY 0, new MASTER delta 0. No synthetic or native test was run; curator independently validates before adopting any policy. Protected/refused sources stay excluded.
 
 ## E-AUDIT-20261025-18H-T018-T020-MODE2-PREACTIVE-PHASE-BOUNDARY-01
 
