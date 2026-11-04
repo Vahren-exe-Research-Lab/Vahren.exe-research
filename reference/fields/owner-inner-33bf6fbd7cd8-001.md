@@ -25,6 +25,9 @@
 - [research/recovered/rea_batch3/reports/REA_20261031_10H_P0_VORBIS_CODEBOOK_OWNER_STATIC.md 行 36](../../research/recovered/rea_batch3/reports/REA_20261031_10H_P0_VORBIS_CODEBOOK_OWNER_STATIC.md?plain=1#L36-L36) — - owner REA/T015、差分IDは本書冒頭。元codebookポインタは `inner+0x720` のスロットが所有。look `inner+0xB20` の各0x38-byteレコードは、`0x005D9F55` で `+0x0C` に元codebookポインタを借用保存。変換成功/失敗時の所有者スロット
   制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
 
+- [research/recovered/rea_batch4/reports/REA_20261031_01H_P0_TAG_WRITER_BOUNDS_STATIC.md 行 8](../../research/recovered/rea_batch4/reports/REA_20261031_01H_P0_TAG_WRITER_BOUNDS_STATIC.md?plain=1#L8-L8) — - `0x005D4201 / 0x005D4274 / 0x005D42E7` の6bit countは +1 され **1..64**、各tag配列とpointer配列は `0x100/4=64` 要素。先頭 `0x005D417D` の8bit countは +1 され **1..256**、`inner+0x7
+  制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
 <a id="field-b20"></a>
 ## inner + 0xB20
 

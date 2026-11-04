@@ -16,6 +16,12 @@
 - [research/recovered/b_reports/T024_FALLBACK_FLAG_LATCH_FOURWAY_NATIVE_20261025_23H.md 行 7](../../research/recovered/b_reports/T024_FALLBACK_FLAG_LATCH_FOURWAY_NATIVE_20261025_23H.md?plain=1#L7-L7) — - consume-first：0x526A92/+0x526A9D は state+0x52/53 非0検査後WORD=0、成立時0x526AAE→0x520920。続く0x526ABE/+0x526AC9 は+0x54/55同様、成立時0x526AD8→0x520920。
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail; source addendum limits missing-call claim to legacy20261021 DB, not V3
 
+<a id="field-54"></a>
+## state + 0x54
+
+- [research/recovered/rea_batch4/reports/REA_20261030_08H_P0_OGG_FIXED16_PRODUCER_STATIC.md 行 32](../../research/recovered/rea_batch4/reports/REA_20261030_08H_P0_OGG_FIXED16_PRODUCER_STATIC.md?plain=1#L32-L32) — 独立Golden試験案：11,025Hz mono16/stereo16の有効Oggと44,100Hz stereo16対照を用意し、Lock HRESULT/返却領域サイズ、OvRead返却byte数、Unlock成否、PCM境界、state+0x54/+0x58、停止時刻を採取する。今回実ゲーム観測は0件。
+  制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
 <a id="field-1ef144"></a>
 ## state + 0x1EF144
 

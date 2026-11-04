@@ -223,3 +223,5 @@ python -B knowledge\tools\research_index.py --check
 **題名・研究ID・本文の検索（2026-11-05）:** [回収済み研究文書](reference/DOCUMENTS.md)は、アドレスを含まない報告も検索できる。本文の一致を確定知識と区別し、出典行と回収制約を付けて表示する。追加92件の本文も収録し、REAの研究ID重複は出典ごとの保留として保持した。
 
 **VMの型付きメモリと追加回収（2026-11-05）:** [ScriptEngine事典](reference/structs/ScriptEngine.md)に6項目・18関係を採録。型が不明な時計は未登録のまま区別した。[E/REAの追加回収](research/recovered/README.md)は新しい本文82件と別名対応8件を記録した。
+
+**時間制限の読み書きと追加回収（2026-11-05）:** [時間制限のメモリ関係](research/recovered/BATTLE_LIMIT_MEMORY_REVIEW.md)に6関係を採録。取得ヘルパーが読む値と、更新ヘルパーが書く値を辿れる。E・REAの研究本文90件も全文回収した。

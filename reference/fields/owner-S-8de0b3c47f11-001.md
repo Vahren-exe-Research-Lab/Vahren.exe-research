@@ -4,17 +4,53 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-8"></a>
+## S + 0x8
+
+- [research/recovered/rea_batch4/reports/REA_20261030_04H_P0_DSLOCK_PAIR_FIRSTREGION_STATIC.md 行 11](../../research/recovered/rea_batch4/reports/REA_20261030_04H_P0_DSLOCK_PAIR_FIRSTREGION_STATIC.md?plain=1#L11-L11) — `0x0050235B..0x00502387` のpushとLEA（pushによるESP変位を考慮）よりLock引数は `(stream+8, offset=0, bytes=0, &ptr1[S+0x0C], &bytes1[S+0x08], &ptr2[S+0x14], &bytes2[S+0x10], flag
+  制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
 <a id="field-c"></a>
 ## S + 0xC
 
 - [research/recovered/b_batch2/T028_RETREAT_OK_QUEUE_DRAIN_ELIGIBILITY_NATIVE_20261029_19H.md 行 11](../../research/recovered/b_batch2/T028_RETREAT_OK_QUEUE_DRAIN_ELIGIBILITY_NATIVE_20261029_19H.md?plain=1#L11-L11) — - 0x49D030原PEではDL=0時、参照S=[EBP+0x194], C=[S+0x0C]について [C+0x54]==0、[C+0x50]!=0、[[S+0x10]+0x38]!=0、[S+0x1EED54]!=0、[[C+0x50]+0x79]!=0 が揃ってAL=1の枝（0x49D030/33/39/43/
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 
+- [research/recovered/rea_batch4/reports/REA_20261030_04H_P0_DSLOCK_PAIR_FIRSTREGION_STATIC.md 行 11](../../research/recovered/rea_batch4/reports/REA_20261030_04H_P0_DSLOCK_PAIR_FIRSTREGION_STATIC.md?plain=1#L11-L11) — `0x0050235B..0x00502387` のpushとLEA（pushによるESP変位を考慮）よりLock引数は `(stream+8, offset=0, bytes=0, &ptr1[S+0x0C], &bytes1[S+0x08], &ptr2[S+0x14], &bytes2[S+0x10], flag
+  制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
 <a id="field-10"></a>
 ## S + 0x10
 
 - [research/recovered/b_batch2/T028_RETREAT_OK_QUEUE_DRAIN_ELIGIBILITY_NATIVE_20261029_19H.md 行 11](../../research/recovered/b_batch2/T028_RETREAT_OK_QUEUE_DRAIN_ELIGIBILITY_NATIVE_20261029_19H.md?plain=1#L11-L11) — - 0x49D030原PEではDL=0時、参照S=[EBP+0x194], C=[S+0x0C]について [C+0x54]==0、[C+0x50]!=0、[[S+0x10]+0x38]!=0、[S+0x1EED54]!=0、[[C+0x50]+0x79]!=0 が揃ってAL=1の枝（0x49D030/33/39/43/
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+- [research/recovered/rea_batch4/reports/REA_20261030_04H_P0_DSLOCK_PAIR_FIRSTREGION_STATIC.md 行 11](../../research/recovered/rea_batch4/reports/REA_20261030_04H_P0_DSLOCK_PAIR_FIRSTREGION_STATIC.md?plain=1#L11-L11) — `0x0050235B..0x00502387` のpushとLEA（pushによるESP変位を考慮）よりLock引数は `(stream+8, offset=0, bytes=0, &ptr1[S+0x0C], &bytes1[S+0x08], &ptr2[S+0x14], &bytes2[S+0x10], flag
+  制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md 行 15](../../research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md?plain=1#L15-L15) — workerの `S` を0x005023EFでPUSH EDI完了時のESPと定義。出力localは `[S+0x14]=ptr1, [S+0x10]=bytes1, [S+0x1C]=ptr2, [S+0x18]=bytes2`。
+  制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+<a id="field-14"></a>
+## S + 0x14
+
+- [research/recovered/rea_batch4/reports/REA_20261030_04H_P0_DSLOCK_PAIR_FIRSTREGION_STATIC.md 行 11](../../research/recovered/rea_batch4/reports/REA_20261030_04H_P0_DSLOCK_PAIR_FIRSTREGION_STATIC.md?plain=1#L11-L11) — `0x0050235B..0x00502387` のpushとLEA（pushによるESP変位を考慮）よりLock引数は `(stream+8, offset=0, bytes=0, &ptr1[S+0x0C], &bytes1[S+0x08], &ptr2[S+0x14], &bytes2[S+0x10], flag
+  制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md 行 15](../../research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md?plain=1#L15-L15) — workerの `S` を0x005023EFでPUSH EDI完了時のESPと定義。出力localは `[S+0x14]=ptr1, [S+0x10]=bytes1, [S+0x1C]=ptr2, [S+0x18]=bytes2`。
+  制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+<a id="field-18"></a>
+## S + 0x18
+
+- [research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md 行 15](../../research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md?plain=1#L15-L15) — workerの `S` を0x005023EFでPUSH EDI完了時のESPと定義。出力localは `[S+0x14]=ptr1, [S+0x10]=bytes1, [S+0x1C]=ptr2, [S+0x18]=bytes2`。
+  制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+<a id="field-1c"></a>
+## S + 0x1C
+
+- [research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md 行 15](../../research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md?plain=1#L15-L15) — workerの `S` を0x005023EFでPUSH EDI完了時のESPと定義。出力localは `[S+0x14]=ptr1, [S+0x10]=bytes1, [S+0x1C]=ptr2, [S+0x18]=bytes2`。
+  制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
 
 <a id="field-300"></a>
 ## S + 0x300

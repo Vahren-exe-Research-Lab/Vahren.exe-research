@@ -10,4 +10,10 @@
 - [research/recovered/exp/EXP_KIND4_DISPATCH_PRODUCERS_20261021.md 行 7](../../research/recovered/exp/EXP_KIND4_DISPATCH_PRODUCERS_20261021.md?plain=1#L7-L7) — - `0x545CC0` の保存擬似Cは `switch(*(undefined4 *)(iVar4 + 0x40))` を持ち、`case 4:`で `FUN_00547490()` を呼ぶ。
   制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md
 
+<a id="field-220"></a>
+## iVar4 + 0x220
+
+- [research/recovered/rea_batch4/reports/REA_20261029_16H_P0_OGG_NULLSLOT_LOOP_STATIC.md 行 11](../../research/recovered/rea_batch4/reports/REA_20261029_16H_P0_OGG_NULLSLOT_LOOP_STATIC.md?plain=1#L11-L11) — - 関数 `0x005DEDF0` の `0x005DEE78 MOV EAX,[EDX+ECX*4+0x220]` はresidue側の処理用ポインタを取得し、`0x005DEE82 MOV [EBP-8],EAX` に保存する。Ghidra擬似Cでは `piVar7=*(int **)(iVar4+0x220+iV
+  制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

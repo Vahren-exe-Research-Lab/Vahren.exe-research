@@ -1283,4 +1283,274 @@
 - [迫真戦記 REA｜2026-10-31 02H｜Vorbisヘッダ種別ルータとセットアップ入口（P0）](../research/recovered/rea_batch3/reports/REA_20261031_02H_P0_VORBIS_HEADER_ROUTER_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261031_02H_P0_VORBIS_HEADER_ROUTER_STATIC.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L460-L460)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
 
+- [E-AUDIT-20261026-15H-T018-T020-PREPARED-PTR-FALSEPOS-01](../research/recovered/e_batch3/T020_CNB02_PREPARED_POINTER_FALSE_POSITIVE_REPLAY_20261026_15H.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_CNB02_PREPARED_POINTER_FALSE_POSITIVE_REPLAY_20261026_15H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L461-L461)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [E-AUDIT-20261026-17H-T018-T020-POSTACTIVE-PTR-RETENTION-01](../research/recovered/e_batch3/T020_CNB02_PREPOST_ACTIVE_POINTER_RETENTION_AUDIT_20261026_17H.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_CNB02_PREPOST_ACTIVE_POINTER_RETENTION_AUDIT_20261026_17H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L462-L462)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [T018/T020｜C-NB02 出典・時相・出撃名簿証拠ゲート](../research/recovered/e_batch3/T020_CNB02_RECEIPT_PROVENANCE_GATE_20261021_2345.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_CNB02_RECEIPT_PROVENANCE_GATE_20261021_2345.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L463-L463)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [E-AUDIT-20261025-04H-T018-T019-T020-CNB02-SCENARIO-POWER-EVENT-CROSSWALK-01](../research/recovered/e_batch3/T020_CNB02_SPOT_POWER_EVENT_GATE_CROSSWALK_20261025_04H.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_CNB02_SPOT_POWER_EVENT_GATE_CROSSWALK_20261025_04H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L464-L464)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [E-AUDIT-20261026-2044-T018-T020-STAGE13-WATCH-CROSSRUN-GATE-01](../research/recovered/e_batch3/T020_CNB02_STAGE13_WATCH_CROSSRUN_PROVENANCE_GATE_20261026_2044.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_CNB02_STAGE13_WATCH_CROSSRUN_PROVENANCE_GATE_20261026_2044.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L465-L465)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [E-AUDIT-20261025-20H-T018-T020-WATCH1-OBSERVATION-BRACKET-EXEC-01](../research/recovered/e_batch3/T020_CNB02_WATCH1_OBSERVATION_BRACKET_EXEC_20261025_20H.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_CNB02_WATCH1_OBSERVATION_BRACKET_EXEC_20261025_20H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L466-L466)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [E-AUDIT-20261025-19H-T018-T020-WATCH1-SAMPLING-BOUNDS-01](../research/recovered/e_batch3/T020_CNB02_WATCH1_SAMPLING_BOUNDS_20261025_19H.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_CNB02_WATCH1_SAMPLING_BOUNDS_20261025_19H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L467-L467)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [E-AUDIT-20261025-05H-T018-T019-T020-WORLD-FIGHT-FLAG-EPOCH-01](../research/recovered/e_batch3/T020_CNB02_WORLD_RESET_VS_FIGHT_EVENT_EPOCH_20261025_05H.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_CNB02_WORLD_RESET_VS_FIGHT_EVENT_EPOCH_20261025_05H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L468-L468)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [E-AUDIT-20261024-08H-T018-T020-DAT-MUTATION-EPOCH-01｜X20試験DATの時相と原作Golden適格性](../research/recovered/e_batch3/T020_DAT_RESTORE_EPOCH_PROVENANCE_20261024_08H.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_DAT_RESTORE_EPOCH_PROVENANCE_20261024_08H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L469-L469)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [研究E｜T018/T020 DemoPerson 2側初期化とC-NB02 G2三陣営の証拠境界](../research/recovered/e_batch3/T020_DEMOPERSON_PAIR_INIT_VS_G2_THREE_SIDE_CROSSWALK_20261024_00H.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_DEMOPERSON_PAIR_INIT_VS_G2_THREE_SIDE_CROSSWALK_20261024_00H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L470-L470)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [研究E｜T018/T020 DemoPersonソース選択・後段仮想CALLの時相別証拠ゲート](../research/recovered/e_batch3/T020_DEMO_SOURCE_TAIL_PHASE_CROSSWALK_20261024_0153.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_DEMO_SOURCE_TAIL_PHASE_CROSSWALK_20261024_0153.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L471-L471)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [E-AUDIT-20261024-0951-T018-T020-DUAL-WATCH-FAILURE-EPOCH-01｜原作2戦闘window取得失敗の型・時相の独立監査](../research/recovered/e_batch3/T020_DUAL_WATCH_FAILURE_EPOCH_AUDIT_20261024_0951.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_DUAL_WATCH_FAILURE_EPOCH_AUDIT_20261024_0951.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L472-L472)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [E23 互換監査：E21合成artifact byte pinと原作Golden証拠の非同一性](../research/recovered/e_batch3/T020_E21_ARTIFACT_BYTE_ATTESTATION_AUDIT_20261028_23H.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_E21_ARTIFACT_BYTE_ATTESTATION_AUDIT_20261028_23H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L473-L473)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [迫真戦記 新E｜E21合成G2とPC既存G2診断契約の差分（22時台）](../research/recovered/e_batch3/T020_E21_G2_SCHEMA_BRIDGE_AUDIT_20261028_22H.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_E21_G2_SCHEMA_BRIDGE_AUDIT_20261028_22H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L474-L474)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [E T018/T020｜E23 source byte pin と E22 投影receipt の結合監査（2026-10-29 00H）](../research/recovered/e_batch3/T020_E23_SOURCE_PROJECTION_BINDING_AUDIT_20261029_00H.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_E23_SOURCE_PROJECTION_BINDING_AUDIT_20261029_00H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L475-L475)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [迫真戦記 新E｜型厳密G2投影と三陣営・出撃対応の合成クロスゲート（2026-10-29 02H）](../research/recovered/e_batch3/T020_E23_TYPED_G2_CROSS_CONTRACT_AUDIT_20261029_02H.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_E23_TYPED_G2_CROSS_CONTRACT_AUDIT_20261029_02H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L476-L476)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [迫真戦記 新E｜E23投影の型一致・非標準JSON境界（2026-10-29 01H）](../research/recovered/e_batch3/T020_E23_TYPED_PROJECTION_JSON_CONFORMANCE_AUDIT_20261029_01H.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_E23_TYPED_PROJECTION_JSON_CONFORMANCE_AUDIT_20261029_01H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L477-L477)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [迫真戦記 E / T018・T020｜原作戦闘採取SUMMARY全件の出典・合成混入防止（2026-10-29 16H）](../research/recovered/e_batch3/T020_E_ARCHIVED_CAPTURE_PROVENANCE_AUDIT_20261029_16H.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_E_ARCHIVED_CAPTURE_PROVENANCE_AUDIT_20261029_16H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L478-L478)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [迫真戦記 E｜実機構造採取5失敗のV6/V7原因分類とGolden不昇格ゲート（2026-10-29 12H）](../research/recovered/e_batch3/T020_E_CAPTURE_FAILURE_TAXONOMY_AUDIT_20261029_12H.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_E_CAPTURE_FAILURE_TAXONOMY_AUDIT_20261029_12H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L479-L479)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [E/T018・T020 比較器の証拠種別混同防止（2026-10-29 07H JST）](../research/recovered/e_batch3/T020_E_COMPARATOR_KIND_BOUNDARY_AUDIT_20261029_07H.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_E_COMPARATOR_KIND_BOUNDARY_AUDIT_20261029_07H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L480-L480)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [迫真戦記 新E｜原作DATの現行source epochと過去590セットを独立バイト照合（2026-10-29 10H）](../research/recovered/e_batch3/T020_E_DAT_EPOCH_SOURCE_SET_RECONCILIATION_20261029_10H.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_E_DAT_EPOCH_SOURCE_SET_RECONCILIATION_20261029_10H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L481-L481)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [迫真戦記 E｜旧原作観測とpre-X20 DAT snapshotの時相・研究用追加DATの初期存在監査（2026-10-29 11H）](../research/recovered/e_batch3/T020_E_DAT_SNAPSHOT_CHRONOLOGY_AUDIT_20261029_11H.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_E_DAT_SNAPSHOT_CHRONOLOGY_AUDIT_20261029_11H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L482-L482)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [研究E｜C-NB02 G0-G2旧証拠と11/1オフライン差分のPC復帰照合（2026-11-01 17H JST）](../research/recovered/e_batch3/T020_E_G012_OFFLINE_RECONCILIATION_20261101_17H.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_E_G012_OFFLINE_RECONCILIATION_20261101_17H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L483-L483)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [E/T018・T020｜G0 watchと後続war-treeのattack_count時相非同一性（2026-10-29 19H）](../research/recovered/e_batch3/T020_E_G0_POSTBATTLE_ATTACK_COUNT_EPOCH_AUDIT_20261029_19H.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_E_G0_POSTBATTLE_ATTACK_COUNT_EPOCH_AUDIT_20261029_19H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L484-L484)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [研究E｜C-NB02 G0実機・保存SAVE・別run G2の出典結合適格性監査（2026-11-01 20H JST）](../research/recovered/e_batch3/T020_E_G0_SAVE_RUN_SOURCE_SCOPE_CROSSWALK_20261101_20H.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_E_G0_SAVE_RUN_SOURCE_SCOPE_CROSSWALK_20261101_20H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L485-L485)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [E/T018・T020｜G0戦闘と旧SAVE-wireの時間・出典非結合監査（2026-10-29 18H）](../research/recovered/e_batch3/T020_E_G0_SAVE_WIRE_TEMPORAL_PROVENANCE_AUDIT_20261029_18H.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_E_G0_SAVE_WIRE_TEMPORAL_PROVENANCE_AUDIT_20261029_18H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L486-L486)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [E/T018・T020｜G0確認済watchと後続LIVE構造採取3セッションの非結合監査（2026-10-29 17H）](../research/recovered/e_batch3/T020_E_G0_WATCH_VS_LIVE_CAPTURE_SOURCE_SEPARATION_20261029_17H.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_E_G0_WATCH_VS_LIVE_CAPTURE_SOURCE_SEPARATION_20261029_17H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L487-L487)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [E/T018・T020｜G0前後のside資料をG2へ誤昇格しない時相境界（2026-10-29 20H）](../research/recovered/e_batch3/T020_E_G2_TEMPORAL_SIDE_RECEIPT_BOUNDARY_20261029_20H.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_E_G2_TEMPORAL_SIDE_RECEIPT_BOUNDARY_20261029_20H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L488-L488)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [研究E｜G0-G2/T019研究成果のKB発見性監査・専任curator引継ぎ（2026-11-01 19H JST）](../research/recovered/e_batch3/T020_E_KB_FINDABILITY_CROSSWALK_20261101_19H.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_E_KB_FINDABILITY_CROSSWALK_20261101_19H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L489-L489)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [迫真戦記 新E｜C-NB02 GoldenとDEV resolved runtimeの一対一入力・出力結合監査（2026-10-29 09H）](../research/recovered/e_batch3/T020_E_NATIVE_CNB02_JOIN_PREFLIGHT_20261029_09H.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_E_NATIVE_CNB02_JOIN_PREFLIGHT_20261029_09H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L490-L490)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [迫真戦記 研究E｜native_battle_runnerと原作Goldenの資格境界（2026-10-29 08H JST）](../research/recovered/e_batch3/T020_E_NATIVE_RUNNER_EVIDENCE_BOUNDARY_20261029_08H.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_E_NATIVE_RUNNER_EVIDENCE_BOUNDARY_20261029_08H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L491-L491)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [研究E｜07〜16Hオフライン39証拠のPC復帰・受入前監査（2026-11-01 18H JST）](../research/recovered/e_batch3/T020_E_OFFLINE_39_ADMISSION_TRIAGE_20261101_18H.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_E_OFFLINE_39_ADMISSION_TRIAGE_20261101_18H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L492-L492)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [迫真戦記・E/T018/T020｜未同期Library一次バイト照合とGolden fixture復元（2026-10-29 04時台 JST）](../research/recovered/e_batch3/T020_E_OFFLINE_LIBRARY_BYTE_RECONCILIATION_20261029_04H.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_E_OFFLINE_LIBRARY_BYTE_RECONCILIATION_20261029_04H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L493-L493)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [E/T018・T020｜10月25～27日研究資料のPC現物SHA台帳・Golden受入境界](../research/recovered/e_batch3/T020_E_PC_SOURCE_INVENTORY_GOLDEN_BOUNDARY_20261029_05H.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_E_PC_SOURCE_INVENTORY_GOLDEN_BOUNDARY_20261029_05H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L494-L494)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [E/T018・T020｜原本SHA連動の静的資料受入ゲート（2026-10-29 06H JST）](../research/recovered/e_batch3/T020_E_SOURCE_PIN_ADMISSION_AUDIT_20261029_06H.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_E_SOURCE_PIN_ADMISSION_AUDIT_20261029_06H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L495-L495)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [E未保存・未実行資料の保全台帳｜2026-10-29 02:55 JST](../research/recovered/e_batch3/T020_E_UNSAVED_NOTRUN_RECOVERY_REGISTER_20261029_0255.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_E_UNSAVED_NOTRUN_RECOVERY_REGISTER_20261029_0255.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L496-L496)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [E/T020｜V9 SOURCE PINのパス参照先と実ハッシュ計算先の結合監査（2026-10-29 15H）](../research/recovered/e_batch3/T020_E_V9_POINTER_LITERAL_BINDING_AUDIT_20261029_15H.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_E_V9_POINTER_LITERAL_BINDING_AUDIT_20261029_15H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L497-L497)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [研究E｜V9解析索引への正式切替に伴うT019/T020 source-epochゲート（2026-10-29 14H）](../research/recovered/e_batch3/T020_E_V9_SOURCE_EPOCH_ACCEPTANCE_20261029_14H.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_E_V9_SOURCE_EPOCH_ACCEPTANCE_20261029_14H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L498-L498)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [迫真戦記 新E｜同名READY receipt IDに異なる原作watchが紐付く問題（2026-10-29 13H）](../research/recovered/e_batch3/T020_E_WATCH_READY_ID_ALIAS_AUDIT_20261029_13H.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_E_WATCH_READY_ID_ALIAS_AUDIT_20261029_13H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L499-L499)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [研究E｜F720戻値NULL契約：呼出元ガード非対称とGolden非昇格](../research/recovered/e_batch3/T020_F720_CALLER_NULL_CONTRACT_CROSSWALK_20261024_0344.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_F720_CALLER_NULL_CONTRACT_CROSSWALK_20261024_0344.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L500-L500)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [研究E｜F720候補コンテナ所有元・比較木の分離とG2誤昇格防止](../research/recovered/e_batch3/T020_F720_OWNER_CONTAINER_PROVENANCE_CROSSWALK_20261024_0447.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_F720_OWNER_CONTAINER_PROVENANCE_CROSSWALK_20261024_0447.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L501-L501)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [E/T018・T020｜F720前のreset→rebuild→選択の時相受入ゲート](../research/recovered/e_batch3/T020_F720_REBUILD_PHASE_CROSSWALK_20261024_05H.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_F720_REBUILD_PHASE_CROSSWALK_20261024_05H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L502-L502)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [T020｜簡略戦闘後段の欠落CALLと正常復帰前cleanup境界（22:52）](../research/recovered/e_batch3/T020_FASTSIM_CLEANUP_CFG_AUDIT_20261023_2252.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_FASTSIM_CLEANUP_CFG_AUDIT_20261023_2252.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L503-L503)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [E T018/T020｜簡略戦闘 nonzero 戻り値と条件付き後処理の未照合分岐](../research/recovered/e_batch3/T020_FASTSIM_NONZERO_RETURN_TAIL_CROSSWALK_20261023_2052.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_FASTSIM_NONZERO_RETURN_TAIL_CROSSWALK_20261023_2052.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L504-L504)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [E T018/T020｜簡略戦闘の計算前selector・早期分岐を分離（STATIC）](../research/recovered/e_batch3/T020_FASTSIM_PRESELECTOR_BRANCH_GATE_20261023_1952.md?plain=1#L1-L1) — `research/recovered/e_batch3/T020_FASTSIM_PRESELECTOR_BRANCH_GATE_20261023_1952.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY_NO_EXACT_BASELINE_OR_ROOT_LEDGER_SHA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L505-L505)。制約・訂正 Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+- [迫真戦記 REA｜2026-10-31 01H｜Vorbis setup tag writer/配列境界ガード（P0）](../research/recovered/rea_batch4/reports/REA_20261031_01H_P0_TAG_WRITER_BOUNDS_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261031_01H_P0_TAG_WRITER_BOUNDS_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L506-L506)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 REA｜2026-10-31 00H｜Ogg最終cleanup callbackの設定元とclose責任（P0）](../research/recovered/rea_batch4/reports/REA_20261031_00H_P0_CALLBACK_ORIGIN_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261031_00H_P0_CALLBACK_ORIGIN_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L507-L507)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 REA｜2026-10-30 23H｜Ogg cleanupバッファ所有権と最終callback（P0）](../research/recovered/rea_batch4/reports/REA_20261030_23H_P0_OGG_CLEANUP_POINTER_OWNER_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261030_23H_P0_OGG_CLEANUP_POINTER_OWNER_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L508-L508)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 REA｜2026-10-30 22H｜Ogg cleanup 3箇所の間接CALL先を限定（P0）](../research/recovered/rea_batch4/reports/REA_20261030_22H_P0_OGG_CLEANUP_DISPATCH_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261030_22H_P0_OGG_CLEANUP_DISPATCH_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L509-L509)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 REA｜2026-10-30 21H｜Oggページ更新の呼出先副作用とcleanup間接CALL（P0）](../research/recovered/rea_batch4/reports/REA_20261030_21H_P0_TRANSITIVE_CLEANUP_ABI_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261030_21H_P0_TRANSITIVE_CLEANUP_ABI_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L510-L510)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 REA｜2026-10-30 20H｜Oggページ更新の状態遷移（P0）](../research/recovered/rea_batch4/reports/REA_20261030_20H_P0_PAGE_STATE_MUTATION_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261030_20H_P0_PAGE_STATE_MUTATION_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L511-L511)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 REA｜2026-10-30 19H｜Oggシークの総長getter(-1)と先行guard](../research/recovered/rea_batch4/reports/REA_20261030_19H_P0_SEEK_TOTALLEN_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261030_19H_P0_SEEK_TOTALLEN_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L512-L512)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 REA｜2026-10-30 18H｜Oggシーク代替経路のhelper実体と戻り値](../research/recovered/rea_batch4/reports/REA_20261030_18H_P0_SEEK_FALLBACK_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261030_18H_P0_SEEK_FALLBACK_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L513-L513)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 REA｜2026-10-30 17H｜Oggページreadのシーク/ヘッダ多段エラー契約](../research/recovered/rea_batch4/reports/REA_20261030_17H_P0_SEEK_HEADER_ERROR_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261030_17H_P0_SEEK_HEADER_ERROR_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L514-L514)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [REA 17H 読み戻しの一時失敗・復旧記録](../research/recovered/rea_batch4/reports/REA_20261030_17H_P0_SEEK_HEADER_ERROR_READBACK_RECOVERY.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261030_17H_P0_SEEK_HEADER_ERROR_READBACK_RECOVERY.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L515-L515)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 REA｜2026-10-30 16H｜Ogg読み込みエラーのEOF正規化](../research/recovered/rea_batch4/reports/REA_20261030_16H_P0_PAGE_READER_ERROR_COLLAPSE_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261030_16H_P0_PAGE_READER_ERROR_COLLAPSE_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L516-L516)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 REA｜2026-10-30 15H｜Vorbisページ更新ステータスとseek入口ガード](../research/recovered/rea_batch4/reports/REA_20261030_15H_P0_VORBIS_PAGE_STATUS_SEEK_GATE_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261030_15H_P0_VORBIS_PAGE_STATUS_SEEK_GATE_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L517-L517)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [REA 15H｜検証スクリプトの初回失敗と修復記録](../research/recovered/rea_batch4/reports/REA_20261030_15H_P0_READBACK_RECOVERY_NOTE.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261030_15H_P0_READBACK_RECOVERY_NOTE.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L518-L518)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 REA｜2026-10-30 14H｜Vorbis seek フォールバックと32bitシフト監査](../research/recovered/rea_batch4/reports/REA_20261030_14H_P0_VORBIS_SEEK_ROLLBACK_SHIFT_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261030_14H_P0_VORBIS_SEEK_ROLLBACK_SHIFT_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L519-L519)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 REA｜2026-10-30 13H｜Vorbisシーク系の第2フレーム消費経路](../research/recovered/rea_batch4/reports/REA_20261030_13H_P0_VORBIS_SEEK_SECOND_COMMIT_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261030_13H_P0_VORBIS_SEEK_SECOND_COMMIT_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L520-L520)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 REA｜2026-10-30 12H P0 Vorbisフレーム消費の到達性・戻り値ABI](../research/recovered/rea_batch4/reports/REA_20261030_12H_P0_VORBIS_COMMIT_REACHABILITY_AND_EAX_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261030_12H_P0_VORBIS_COMMIT_REACHABILITY_AND_EAX_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L521-L521)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 ver0.67｜REA 2026-10-30 11H P0：奇数HzでのPCM余剰消費とフレーム非整列の静的条件](../research/recovered/rea_batch4/reports/REA_20261030_11H_P0_ODDRATE_EXTRA_PCM_ADVANCE_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261030_11H_P0_ODDRATE_EXTRA_PCM_ADVANCE_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L522-L522)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 REA｜2026-10-30 11H P0 追加検証：Vorbisのフレーム消費commitガード](../research/recovered/rea_batch4/reports/REA_20261030_11H_P0_FRAMECOMMIT_GUARD_ADDENDUM.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261030_11H_P0_FRAMECOMMIT_GUARD_ADDENDUM.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L523-L523)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 ver0.67｜REA P0：奇数Hz半周LockとVorbis復号サイズ不足の交差検証（2026-10-30 10H）](../research/recovered/rea_batch4/reports/REA_20261030_10H_P0_ODD_RATE_SUBFRAME_REWIND_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261030_10H_P0_ODD_RATE_SUBFRAME_REWIND_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L524-L524)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 ver0.67｜REA P0 Ogg Vorbis identification header gate（2026-10-30 09H）](../research/recovered/rea_batch4/reports/REA_20261030_09H_VORBIS_IDENT_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261030_09H_VORBIS_IDENT_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L525-L525)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 ver0.67 REA｜2026-10-30 08H：Ogg入力からWAVEFORMATEXへの固定16bit制約と半周PCMフレーム境界](../research/recovered/rea_batch4/reports/REA_20261030_08H_P0_OGG_FIXED16_PRODUCER_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261030_08H_P0_OGG_FIXED16_PRODUCER_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L526-L526)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 REA｜2026-10-30 07H：Ogg PCM形式の16bit切詰めと32bit積の境界](../research/recovered/rea_batch4/reports/REA_20261030_07H_P0_OGG_PCM_FORMAT_TRUNCATION_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261030_07H_P0_OGG_PCM_FORMAT_TRUNCATION_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L527-L527)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 REA｜2026-10-30 06H：Oggの実バッファ長と半周Lock境界](../research/recovered/rea_batch4/reports/REA_20261030_06H_P0_OGG_BUFFER_DURATION_EOF_EDGE_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261030_06H_P0_OGG_BUFFER_DURATION_EOF_EDGE_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L528-L528)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 REA｜2026-10-30 05H：DirectSound workerの半周Lockと第2領域の受渡し](../research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L529-L529)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 REA｜2026-10-30 04H：DirectSound Lock/Unlock二領域ABI・実書込側の独立照合](../research/recovered/rea_batch4/reports/REA_20261030_04H_P0_DSLOCK_PAIR_FIRSTREGION_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261030_04H_P0_DSLOCK_PAIR_FIRSTREGION_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L530-L530)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 REA｜2026-10-30 03H：Ogg DirectSoundBuffer8の実IID・共有COM所有先・再充填時カーソルリセット](../research/recovered/rea_batch4/reports/REA_20261030_03H_P0_DSBUFFER_ALIAS_CURSOR_IID_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261030_03H_P0_DSBUFFER_ALIAS_CURSOR_IID_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L531-L531)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 REA｜2026-10-30 02H：DirectSound Play引数の分岐越しPUSH再利用](../research/recovered/rea_batch4/reports/REA_20261030_02H_P0_DSPLAY_STACK_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261030_02H_P0_DSPLAY_STACK_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L532-L532)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 REA｜2026-10-30 01H：スレッド生成失敗→上位再生状態→解放経路の接続](../research/recovered/rea_batch4/reports/REA_20261030_01H_P0_OGG_THREADFAIL_PLAY_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261030_01H_P0_OGG_THREADFAIL_PLAY_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L533-L533)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 REA｜2026-10-30 00H Ogg初期PCM充填→worker起動の復号負値伝播境界](../research/recovered/rea_batch4/reports/REA_20261030_00H_P0_OGG_PREFILL_ERROR_START_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261030_00H_P0_OGG_PREFILL_ERROR_START_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L534-L534)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 REA｜2026-10-29 23H OggDecoder仮想Readの到達・復号負値とEOFゲート](../research/recovered/rea_batch4/reports/REA_20261029_23H_P0_OGG_VCALL_ERROR_GATE_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261029_23H_P0_OGG_VCALL_ERROR_GATE_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L535-L535)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 REA｜2026-10-29 22H Ogg復号負値→PCM転送量の型境界](../research/recovered/rea_batch4/reports/REA_20261029_22H_P0_OGG_NEGATIVE_PCM_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261029_22H_P0_OGG_NEGATIVE_PCM_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L536-L536)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 REA｜2026-10-29 21H Oggパケット欠損・上位復号の終了値変換](../research/recovered/rea_batch4/reports/REA_20261029_21H_P0_OGG_PACKET_HOLE_EOF_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261029_21H_P0_OGG_PACKET_HOLE_EOF_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L537-L537)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 REA｜2026-10-29 20H Ogg wrapperの非0戻り値とresidue復号の失敗扱い](../research/recovered/rea_batch4/reports/REA_20261029_20H_P0_OGG_UPPER_ERROR_ROUTE_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261029_20H_P0_OGG_UPPER_ERROR_ROUTE_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L538-L538)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 REA｜2026-10-29 19H Ogg inverse の戻り値・エラー伝播境界](../research/recovered/rea_batch4/reports/REA_20261029_19H_P0_OGG_INVERSE_RETURN_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261029_19H_P0_OGG_INVERSE_RETURN_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L539-L539)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 REA｜2026-10-29 18H Ogg mapping forward / inverse スロット再分類](../research/recovered/rea_batch4/reports/REA_20261029_18H_P0_OGG_FORWARD_VS_INVERSE_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261029_18H_P0_OGG_FORWARD_VS_INVERSE_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L540-L540)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 REA｜2026-10-29 17H Ogg mappingコンストラクタと正のcountの静的条件](../research/recovered/rea_batch4/reports/REA_20261029_17H_P0_OGG_MAPPING_COUNT_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261029_17H_P0_OGG_MAPPING_COUNT_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L541-L541)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [REA 2026-10-29 17H｜独立読み戻し記録](../research/recovered/rea_batch4/reports/REA_20261029_17H_P0_OGG_MAPPING_COUNT_READBACK.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261029_17H_P0_OGG_MAPPING_COUNT_READBACK.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L542-L542)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 REA｜2026-10-29 16H Ogg mapping0x0C 経路のNULLスロット到達条件](../research/recovered/rea_batch4/reports/REA_20261029_16H_P0_OGG_NULLSLOT_LOOP_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261029_16H_P0_OGG_NULLSLOT_LOOP_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L543-L543)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 REA｜2026-10-29 15H Ogg mapping二経路と失敗後クリーンアップ](../research/recovered/rea_batch4/reports/REA_20261029_15H_P0_OGG_MODE_DISPATCH_CLEANUP_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261029_15H_P0_OGG_MODE_DISPATCH_CLEANUP_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L544-L544)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [REA 2026-10-29 15H 独立読み戻し・保存照合](../research/recovered/rea_batch4/reports/REA_20261029_15H_P0_OGG_MODE_DISPATCH_CLEANUP_READBACK.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261029_15H_P0_OGG_MODE_DISPATCH_CLEANUP_READBACK.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L545-L545)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 REA｜2026-10-29 14H Oggモード0 NULLコールバックとmapping間接到達性](../research/recovered/rea_batch4/reports/REA_20261029_14H_P0_OGG_MAPPING_SLOT_REACH_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261029_14H_P0_OGG_MAPPING_SLOT_REACH_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L546-L546)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [REA 2026-10-29 14H 独立読み戻し](../research/recovered/rea_batch4/reports/REA_20261029_14H_P0_OGG_MAPPING_SLOT_REACH_READBACK.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261029_14H_P0_OGG_MAPPING_SLOT_REACH_READBACK.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L547-L547)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 REA｜2026-10-29 13H Oggモード別静的関数表と間接CALL確定](../research/recovered/rea_batch4/reports/REA_20261029_13H_P0_OGG_RESIDUE_MODE_DISPATCH_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261029_13H_P0_OGG_RESIDUE_MODE_DISPATCH_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L548-L548)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [REA 2026-10-29 13H 保存・独立読み戻し](../research/recovered/rea_batch4/reports/REA_20261029_13H_P0_OGG_RESIDUE_MODE_DISPATCH_READBACK.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261029_13H_P0_OGG_RESIDUE_MODE_DISPATCH_READBACK.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L549-L549)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [迫真戦記 REA｜2026-10-29 12H Ogg codebook復号コールバックの間接CALL候補を解決](../research/recovered/rea_batch4/reports/REA_20261029_12H_P0_OGG_CALLBACK_DISPATCH_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch4/reports/REA_20261029_12H_P0_OGG_CALLBACK_DISPATCH_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L550-L550)。制約・訂正 HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
 [事典の入口](README.md)

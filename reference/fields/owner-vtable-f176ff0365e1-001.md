@@ -13,6 +13,15 @@
 - [research/recovered/b_batch3/T013_HEAL_DEFERRED_TICK_DISPATCH_NATIVE_20261027_09H.md 行 11](../../research/recovered/b_batch3/T013_HEAL_DEFERRED_TICK_DISPATCH_NATIVE_20261027_09H.md?plain=1#L11-L11) — [SLOT GATES] 0x4C290B CMP BYTE[ESI+8],0。非0時0x4C2911/13は[EBX.vtable+0x0C]、0時task+0x14非0なら0x4C291F/21で+0x10を呼び0x4C2928 TEST AL→0なら0x4C2935 skip。0且つtask+0x14==0ならp
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+- [research/recovered/e_batch3/T020_FASTSIM_PRESELECTOR_BRANCH_GATE_20261023_1952.md 行 19](../../research/recovered/e_batch3/T020_FASTSIM_PRESELECTOR_BRANCH_GATE_20261023_1952.md?plain=1#L19-L19) — 前18:50版のprimary vtable +0x0C/0x452D90、+0xA4/+0x84判定は既知として加算せず、今回追加したのはそれ以前の3段階ゲート（mode・+19C・0x431FB0）である。
+  制約・訂正　Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
+<a id="field-10"></a>
+## vtable + 0x10
+
+- [research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md 行 10](../../research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md?plain=1#L10-L10) — `h=[stream+0x28]>>1`（0x005023EC/0x005023F0）。workerは `0x00502445` でGetCurrentPosition（vtable+0x10）を呼ぶ。
+  制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
 <a id="field-1c"></a>
 ## vtable + 0x1C
 
@@ -31,17 +40,44 @@
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 424](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L424-L424) — [VERIFY] vtable+0x28 concrete target、mask0x6の各bitの意味/branch reachability、fallback globalのbuffer境界と0x42A340の入出力、WriteFile error/short writeの実効。ゲーム側の正常saveで各経路が起こ
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
 
+<a id="field-2c"></a>
+## vtable + 0x2C
+
+- [research/recovered/rea_batch4/reports/REA_20261030_03H_P0_DSBUFFER_ALIAS_CURSOR_IID_STATIC.md 行 13](../../research/recovered/rea_batch4/reports/REA_20261030_03H_P0_DSBUFFER_ALIAS_CURSOR_IID_STATIC.md?plain=1#L13-L13) — cleanupの `0x004BF318` Stop後、`0x004BF31C CALL 0x00502330` に入る。再充填関数で `0x00502339 XOR EDI,EDI` → `0x00502352 PUSH EDI` → `0x00502354 CALL EDX` は vtable+0x34 の **S
+  制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [research/recovered/rea_batch4/reports/REA_20261030_04H_P0_DSLOCK_PAIR_FIRSTREGION_STATIC.md 行 12](../../research/recovered/rea_batch4/reports/REA_20261030_04H_P0_DSLOCK_PAIR_FIRSTREGION_STATIC.md?plain=1#L12-L12) — `0x00502370/74/78/7C` は4つの出力localを呼出前に0初期化。COM vtable+0x2C Lockは0x00502387、`TEST EAX,EAX; JS 0x005023C9` のため負のHRESULTでは後片付けへ進む。
+  制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md 行 11](../../research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md?plain=1#L11-L11) — `0x00502479` のLock（vtable+0x2C）はカーソル `>=h` の場合、`offset=0, dwBytes=h, flags=0`。
+  制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+<a id="field-30"></a>
+## vtable + 0x30
+
+- [research/recovered/rea_batch4/reports/REA_20261030_03H_P0_DSBUFFER_ALIAS_CURSOR_IID_STATIC.md 行 13](../../research/recovered/rea_batch4/reports/REA_20261030_03H_P0_DSBUFFER_ALIAS_CURSOR_IID_STATIC.md?plain=1#L13-L13) — cleanupの `0x004BF318` Stop後、`0x004BF31C CALL 0x00502330` に入る。再充填関数で `0x00502339 XOR EDI,EDI` → `0x00502352 PUSH EDI` → `0x00502354 CALL EDX` は vtable+0x34 の **S
+  制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
 <a id="field-34"></a>
 ## vtable + 0x34
 
 - [research/recovered/b_reports/T013_HEAL_FINISH_UNREGISTER_POOL_REUSE_NATIVE_20261027_10H.md 行 7](../../research/recovered/b_reports/T013_HEAL_FINISH_UNREGISTER_POOL_REUSE_NATIVE_20261027_10H.md?plain=1#L7-L7) — [FINISH A] 0x54E4A8..0x54E4F8：vtable+0x34→0x4BBBD0、vtable+8真で0x54E4C1 EAX=[holder+4]→0x54E4C6 ADD EAX,0xC→0x54E4C4 PUSH EBX(=0) / 0x54E4C5 PUSH ESI(effect*)→0x5
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
+- [research/recovered/rea_batch4/reports/REA_20261030_03H_P0_DSBUFFER_ALIAS_CURSOR_IID_STATIC.md 行 13](../../research/recovered/rea_batch4/reports/REA_20261030_03H_P0_DSBUFFER_ALIAS_CURSOR_IID_STATIC.md?plain=1#L13-L13) — cleanupの `0x004BF318` Stop後、`0x004BF31C CALL 0x00502330` に入る。再充填関数で `0x00502339 XOR EDI,EDI` → `0x00502352 PUSH EDI` → `0x00502354 CALL EDX` は vtable+0x34 の **S
+  制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
 <a id="field-48"></a>
 ## vtable + 0x48
 
 - [research/recovered/b_reports/T012_SUMMON_CORE_54E7B0_CONTRACT_20261013.md 行 11](../../research/recovered/b_reports/T012_SUMMON_CORE_54E7B0_CONTRACT_20261013.md?plain=1#L11-L11) — [POST EFFECT] 0x54F2D7 effect vtable+8→条件付き0x4C2240、vtable+0x48→0x4C3DC0、0x54F305 call0x4BC920。特定EAX==3/flag成立なら0x41EF50→0x41F850。Skill+0x30/+0x34が非空時0x54F364 c
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail; historical READY-STATIC-BODY label is not a new current READY admission
+
+<a id="field-4c"></a>
+## vtable + 0x4C
+
+- [research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md 行 17](../../research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md?plain=1#L17-L17) — `0x005024BD` / `0x0050254D` はDirectSound vtable+0x4C（Unlock）へ `(COM,ptr1,bytes1,ptr2,bytes2)` の全組をスタック経由で渡す。Ghidraのunaff_EBX/EBP/ESI/EDIは推定不正確。
+  制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
 
 <a id="field-5c"></a>
 ## vtable + 0x5C

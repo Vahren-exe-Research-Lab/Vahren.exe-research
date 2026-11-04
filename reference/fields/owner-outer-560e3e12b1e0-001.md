@@ -85,6 +85,12 @@
 - [research/recovered/rea_batch3/reports/REA_20261031_20H_P0_VORBIS_GROWTH_NODE_GATE_STATIC.md 行 12](../../research/recovered/rea_batch3/reports/REA_20261031_20H_P0_VORBIS_GROWTH_NODE_GATE_STATIC.md?plain=1#L12-L12) — - `0x5D4988` は `outer+0x48` の旧使用バイト数をEBXへ取得。`0x5D498F/92` は要求を `(size+7)&~7` で8byte整列。`0x5D4995/98/9B` は旧使用量と整列サイズの加算値を `outer+0x4C` 容量と**signed JLE**比較し、収まれば再確
   制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
 
+- [research/recovered/rea_batch4/reports/REA_20261030_23H_P0_OGG_CLEANUP_POINTER_OWNER_STATIC.md 行 7](../../research/recovered/rea_batch4/reports/REA_20261030_23H_P0_OGG_CLEANUP_POINTER_OWNER_STATIC.md?plain=1#L7-L7) — - `0x005CFA10` はlink mode=0時に `0x005CFBAB/0x005CFBB4` から `outer+0x48/+0x4C` に保持された**ポインタ値**を `0x005D3DE0/0x005D3D00` へ渡す。リンク再初期化は `0x005CFC2F→0x005CF010`。
+  制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [research/recovered/rea_batch4/reports/REA_20261030_23H_P0_OGG_CLEANUP_POINTER_OWNER_STATIC.md 行 11](../../research/recovered/rea_batch4/reports/REA_20261030_23H_P0_OGG_CLEANUP_POINTER_OWNER_STATIC.md?plain=1#L11-L11) — - malloc/callocが成功し通常heap契約が保たれる限り、`outer+0x48/+0x4C` の2つの生存heapブロックとouter自身は別allocationであり、直接のフィールド別名参照は生じない。一方NULL返却、破損ポインタ、サイズ・リンク数不整合、free後使用、再入による状態変化は否定でき
+  制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
 <a id="field-4c"></a>
 ## outer + 0x4C
 
@@ -175,6 +181,12 @@
 - [research/recovered/rea_batch3/reports/REA_20261031_18H_P0_VORBIS_BITBUFFER_TEARDOWN_STATIC.md 行 12](../../research/recovered/rea_batch3/reports/REA_20261031_18H_P0_VORBIS_BITBUFFER_TEARDOWN_STATIC.md?plain=1#L12-L12) — - `0x5D4A68`で管理構造体 `outer+0x68` をEBXへ読込み、`0x5D4A6C`にてリスト後処理 `0x5D49F0` を実行。`0x5D4A77/79`で `outer+0x44` が非NULLならfreeする。`0x5D4A84/86`では**配列親EBXのみ**NULL判定し、NULLなら全
   制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
 
+<a id="field-80"></a>
+## outer + 0x80
+
+- [research/recovered/rea_batch4/reports/REA_20261030_21H_P0_TRANSITIVE_CLEANUP_ABI_STATIC.md 行 9](../../research/recovered/rea_batch4/reports/REA_20261030_21H_P0_TRANSITIVE_CLEANUP_ABI_STATIC.md?plain=1#L9-L9) — - 呼出元 `0x005CF11D` は `[EDI+0x78]`、`0x005CFC07` は `[ESI+0x78]` を渡す。従って通常の同一オブジェクトベースを前提にした直接書込先は `outer+0x80～+0x1DC` に限られ、状態ガード `outer+4/+0x34/+0x58` を直接変更しない。
+  制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
 <a id="field-88"></a>
 ## outer + 0x88
 
@@ -189,5 +201,14 @@
 
 - [research/recovered/rea_batch3/reports/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATIC.md 行 21](../../research/recovered/rea_batch3/reports/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATIC.md?plain=1#L21-L21) — - `0x5CF9E0` は `outer+0x1E0/+0x250` の解放と状態2への変更を行うが、Ghidraの `unaff_ESI` はABI未確定。通常ゲーム経路が条件付きリーク前提を満たすかは未証明。
   制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+<a id="field-2c8"></a>
+## outer + 0x2C8
+
+- [research/recovered/rea_batch4/reports/REA_20261030_23H_P0_OGG_CLEANUP_POINTER_OWNER_STATIC.md 行 9](../../research/recovered/rea_batch4/reports/REA_20261030_23H_P0_OGG_CLEANUP_POINTER_OWNER_STATIC.md?plain=1#L9-L9) — - **新規の例外境界**：`0x005CFE00` は `0x005CFEE3` で `outer+0x2C8` の関数ポインタを読み、`outer[0]!=0` かつ関数ポインタ非NULLなら `0x005CFEEE call eax` を実行する。これは22Hに解決した内部descriptor型デストラクタ3箇所
+  制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [research/recovered/rea_batch4/reports/REA_20261031_00H_P0_CALLBACK_ORIGIN_STATIC.md 行 7](../../research/recovered/rea_batch4/reports/REA_20261031_00H_P0_CALLBACK_ORIGIN_STATIC.md?plain=1#L7-L7) — - `0x005D1490` の `0x005D14D7 mov ecx,[ebp+0x18]` → `0x005D14EE mov [esi+0x2C8],ecx` でclose callbackをオブジェクトに保存。これにより前回23Hの未同定 `outer+0x2C8` 設定元を標準ファイル読込経路に限り解決した
+  制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)
