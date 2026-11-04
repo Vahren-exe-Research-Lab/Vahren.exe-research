@@ -139,6 +139,19 @@ Additional source-grounded E excerpts (original file lines):
 
 Curation: reconcile superseding corrections and source ownership with original E report and applicable native owner evidence before promoting interpretation.
 
+**2026-11-04 E-owner 18H/19H/20H archive phase admission correction (existing IDs only)**
+
+The source for this 18H E study (historical report SHA256 `5D8DE36CA113FB8948C9CE669F90BDBE3F69E73206CFAD643A20E189352E3C20`, source L5–L9) and the existing **19H** `E-AUDIT-20261025-19H-T018-T020-WATCH1-SAMPLING-BOUNDS-01` (historical report SHA256 `B4E7BDEDB3A42170F74D0000CC685BA51FD2DB816A9729614406F50E923B68FB`, L5/L15–L17) both classify *the same already archived Watch1*, not two independent new live battles. The **20H** `E-AUDIT-20261025-20H-T018-T020-WATCH1-OBSERVATION-BRACKET-EXEC-01` (historical report SHA256 `92BF7265EF6FCF571F8B9EE4BB3B59A377D7A77D214C58CB0B0F8E44657156AD`, L11–L13) is a later **synthetic classifier correction**, not an additional original-game witness. All cite an archived Watch1 source whose historical PC SHA256 was `9DF9A0D8C7D15958F4711478ED6DFF1F912E49313D6FC5BA5DCBC5B089E262A7`; **no original bytes or SHA were rechecked in this GitHub-only review**.
+
+| Already reported bracket / correction | Admissible review interpretation | Explicitly not established |
+| --- | --- | --- |
+| 18H `MODE2` observed before `ACTIVE=1`; prior 16H `G2_PRE_ACTIVE` gate, 17H active-window overlay | `PREACTIVE_REVIEW_ONLY` even when a mode field suggests battle preparation | Atomic deployed G2, actual MAP/three-side Unit+Troop ordering |
+| 19H B03/B04 within sampled `ACTIVE` enter/exit edge brackets (source L16–L17) | `PHASE_BOUNDARY_VERIFY` until legal same-run atomic phase receipt exists | Inferring `ACTIVE_G2_ELIGIBLE` from MODE2 or a nearby sample alone |
+| 20H B05: `14:33:34.325867Z` observed `ACTIVE=0`; `14:33:35Z` sample falls before the bounded return-to-mode1 end `14:33:35.933687Z` | Corrected 20H modeled verdict `NOT_DEPLOYED_G2` **conditional on common clock and no hidden ACTIVE re-toggle**; retain `mode_return_uncertain=true` independently | Treating uncertainty about the mode-return edge as permission to restore an active deployed roster; claiming a native-game defect from the model's initial failed test |
+
+**Review-only reconciliation:** These are existing E study IDs, linked by shared archival source SHA and timestamp brackets. The 20H correction supersedes its own initial B05 *model classification only*, not the 18H source or the 19H observation. A WATCH_TIMEOUT/zero successful capture packet cannot be upgraded to native atomic G2. Current status `INDEXED_EXCERPT / STATIC+historical_SYNTHETIC / VERIFY / NOT_CURATED`; native Golden PASS=0, strict MATCH=0, newly formal READY=0. To advance legally requires independently verified same-battle UI G0, immediate SAVE+input G1, and real loaded MAP/attack+defense+support ordered deployed Unit/Troop G2. B/REA observation sources remain read-only owner material; original source/clock hashes need revalidation when authorized PC transport is available. No denied content or protected VA was accessed.
+
+
 ## E-AUDIT-20261025-06H-T018-T020-PO2-CANCEL-AUDIO-VISUAL-GATE-01
 
 **E source:** `tests/T020_CNB02_PO2_OPTIONAL_EVENT_CANCEL_AUDIO_VISUAL_GATE_20261025_06H.md`; **SHA256:** `e027b09afe0773c5e91a06c0b234635c5829699a675699d31a8be420afe929b5`; **size:** 5444 bytes. **Title:** E-AUDIT-20261025-06H-T018-T020-PO2-CANCEL-AUDIO-VISUAL-GATE-01. **Golden:** not established; **new READY:** none.
