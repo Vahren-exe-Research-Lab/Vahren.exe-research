@@ -38,3 +38,7 @@
 セーブ2報告のDiplomacy（外交）という呼び方は、[現在のセーブ形式第7節・第9節](../../REF_SAVE_FORMAT.md) の訂正を併読する。0x471AF0/0x471D20はターン進行状態（G+0x1EF4B4）として整理されている。同第3節の古い保存内容の残留も、古い3ファイルの全バイト一致という観測の適用範囲を限定する。原文を歴史資料として保存し、古い説明を現在の辞書へ無条件に移さない。
 
 REAのQUEUE/PROGRESSは保存失敗で古い場合がある。次回はRUN_RESULTと根拠レシート、progress_syncログを照合し、受付状態だけから研究の保存・同期完了を判断しない。
+
+## GitHubからの読み戻し確認
+
+2026年11月5日、[収録コミット8bde990](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/8bde99062f0ff497f1b1b9dd387f7ea8282c68d3)を新規クローンへ取得。8文書すべてが研究PC原本とバイト一致、マニフェスト709項目一致、生成493ページ一致、検索回帰14件成功を確認した。TempStatusWnd + 0x1C6 と未登録VA 0x5739E4から根拠本文へ到達した。対応する[PR #21](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/21)で変更範囲を追跡できる。全研究文書の回収は継続中。
