@@ -1,0 +1,26 @@
+source_path	reason	review_scope
+data/B_T028_ALTERNATE_MESSAGE_VECTOR_SINK_VERIFY_20261028_22H.py	SAFETY_HOLD21_METADATA_EXCLUSION	Name read only from metadata allowlist; original and same-stem related bodies not opened
+data/B_T028_ARBEIT_RNG_GATE_VERIFY_20261028_20H.py	SAFETY_HOLD21_METADATA_EXCLUSION	Name read only from metadata allowlist; original and same-stem related bodies not opened
+data/B_T028_ARBEIT_RNG_GATE_EVIDENCE_20261028_20H.json	SAFETY_HOLD21_METADATA_EXCLUSION	Name read only from metadata allowlist; original and same-stem related bodies not opened
+data/B_T028_ARBEIT_RNG_GATE_OFFLINE_20261028_20H.md	SAFETY_HOLD21_METADATA_EXCLUSION	Name read only from metadata allowlist; original and same-stem related bodies not opened
+data/B_T028_TYPE2_FIELD_LIFECYCLE_READBACK_RECEIPT_20261028_19H.json	SAFETY_HOLD21_METADATA_EXCLUSION	Name read only from metadata allowlist; original and same-stem related bodies not opened
+data/B_T028_TYPE2_FIELD_LIFECYCLE_CONTRACT_OFFLINE_20261028_19H.md	SAFETY_HOLD21_METADATA_EXCLUSION	Name read only from metadata allowlist; original and same-stem related bodies not opened
+data/B_T028_TYPE2_FIELD_LIFECYCLE_CONTRACT_VERIFY_20261028_19H.py	SAFETY_HOLD21_METADATA_EXCLUSION	Name read only from metadata allowlist; original and same-stem related bodies not opened
+data/B_T028_TYPE2_FIELD_LIFECYCLE_CONTRACT_EVIDENCE_20261028_19H.json	SAFETY_HOLD21_METADATA_EXCLUSION	Name read only from metadata allowlist; original and same-stem related bodies not opened
+data/B_T028_TYPE2_NESTED_POINTER_CONTRACT_EVIDENCE_20261028_18H.json	SAFETY_HOLD21_METADATA_EXCLUSION	Name read only from metadata allowlist; original and same-stem related bodies not opened
+data/B_T028_TYPE2_NESTED_POINTER_CONTRACT_OFFLINE_20261028_18H.md	SAFETY_HOLD21_METADATA_EXCLUSION	Name read only from metadata allowlist; original and same-stem related bodies not opened
+data/B_T028_MERCENARY_ELIGIBILITY_VERIFY_20261028_17H.py	SAFETY_HOLD21_METADATA_EXCLUSION	Name read only from metadata allowlist; original and same-stem related bodies not opened
+data/B_T028_MERCENARY_ELIGIBILITY_BOOL_EVIDENCE_20261028_17H.json	SAFETY_HOLD21_METADATA_EXCLUSION	Name read only from metadata allowlist; original and same-stem related bodies not opened
+data/B_T028_MERCENARY_ELIGIBILITY_BOOL_OFFLINE_20261028_17H.md	SAFETY_HOLD21_METADATA_EXCLUSION	Name read only from metadata allowlist; original and same-stem related bodies not opened
+data/T011_T012_T013_T024_T028_OFFLINE_CANDIDATE_STATUS_20261020_1515.json	SAFETY_HOLD21_METADATA_EXCLUSION	Name read only from metadata allowlist; original and same-stem related bodies not opened
+data/test_T013_SAVED_REA_COVERAGE_GAP_20261020.py	SAFETY_HOLD21_METADATA_EXCLUSION	Name read only from metadata allowlist; original and same-stem related bodies not opened
+data/T013_SAVED_REA_ARCHIVE_COVERAGE_GAP_OFFLINE_20261020_1408.md	SAFETY_HOLD21_METADATA_EXCLUSION	Name read only from metadata allowlist; original and same-stem related bodies not opened
+data/T011_T012_T013_T024_T028_OFFLINE_RECOVERY_INDEX_20261020_1117.md	SAFETY_HOLD21_METADATA_EXCLUSION	Name read only from metadata allowlist; original and same-stem related bodies not opened
+data/test_T013_514D60_57DA1F_nullness_crossjoin_20261019.py	SAFETY_HOLD21_METADATA_EXCLUSION	Name read only from metadata allowlist; original and same-stem related bodies not opened
+data/T013_514D60_57DA1F_AUX_NULLNESS_CROSSJOIN_OFFLINE_20261019.md	SAFETY_HOLD21_METADATA_EXCLUSION	Name read only from metadata allowlist; original and same-stem related bodies not opened
+data/test_T013_57DA1F_gate_synthetic.py	SAFETY_HOLD21_METADATA_EXCLUSION	Name read only from metadata allowlist; original and same-stem related bodies not opened
+data/T013_57DA1F_AUX_NULL_REACQUIRE_GUARD_20261019.md	SAFETY_HOLD21_METADATA_EXCLUSION	Name read only from metadata allowlist; original and same-stem related bodies not opened
+data/B_T012_T013_BATTLEWND_ACTIVE_TREE_INSERT_OFFLINE_20261023_0417.md	PRIVACY_RESOLVED_SANITIZED_DERIVATIVE	Full text reviewed; personal path prefix replaced once with <research-root>; explicit annotation; see SANITIZATION_RECEIPTS.tsv; original unchanged
+data/T011_T024_GROUP34_PROXIMITY_RATIO_100TICK_NATIVE_20261101_10H.md	PRIVACY_RESOLVED_SANITIZED_DERIVATIVE	Full text reviewed; personal path prefix replaced once with <research-root>; explicit annotation; see SANITIZATION_RECEIPTS.tsv; original unchanged
+data/B_T011_T012_MISSILE_VTABLE_SLOT38_OFFLINE_20261022_1813.md	PRIVACY_RESOLVED_SANITIZED_DERIVATIVE	Full text reviewed; personal path prefix replaced once with <research-root>; explicit annotation; see SANITIZATION_RECEIPTS.tsv; original unchanged
+data/B_T011_T012_T013_OFFSET_ATTR_GATE_OFFLINE_20261022_2245.md	PRIVACY_RESOLVED_SANITIZED_DERIVATIVE	Full text reviewed; personal path prefix replaced once with <research-root>; explicit annotation; see SANITIZATION_RECEIPTS.tsv; original unchanged
