@@ -108,10 +108,19 @@ class ProjectionBindingTests(unittest.TestCase):
         c["g2"]["deployed"][0]["unit"] = "forged"
         self.assertEqual(self.result(receipt=c)["status"], "SOURCE_RECEIPT_UNBOUND")
 
-    def test_reordered_roster_rejected(self):
+    def test_added_roster_row_rejected(self):
         c = json.loads(json.dumps(self.capture))
         c["g2"]["deployed"].append({"order": 1, "side_id": "D", "unit": "u2", "troop": "t2"})
         self.assertEqual(self.result(receipt=c)["status"], "SOURCE_RECEIPT_UNBOUND")
+
+    def test_roster_order_swap_rejected(self):
+        c = json.loads(json.dumps(self.capture))
+        c["g2"]["deployed"].append({"order": 1, "side_id": "D", "unit": "u2", "troop": "t2"})
+        raw = json.dumps({"capture": c}, sort_keys=True).encode("utf-8")
+        swapped = json.loads(json.dumps(c))
+        swapped["g2"]["deployed"].reverse()
+        r = check_projection(raw, hashlib.sha256(raw).hexdigest(), swapped)
+        self.assertEqual(r["status"], "SOURCE_RECEIPT_UNBOUND")
 
     def test_boolean_int_alias_rejected(self):
         c = json.loads(json.dumps(self.capture))
