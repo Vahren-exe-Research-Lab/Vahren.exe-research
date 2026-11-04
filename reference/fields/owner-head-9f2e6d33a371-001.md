@@ -10,6 +10,12 @@
 - [research/recovered/symbol_sources/T011_TRAINING_CACHE_FULL_RANGE_ERASE_NATIVE_20261031_09H.md 行 14](../../research/recovered/symbol_sources/T011_TRAINING_CACHE_FULL_RANGE_ERASE_NATIVE_20261031_09H.md?plain=1#L14-L14) — [KB_CANDIDATE] 本見出しID; owner B/T011; VA 0x4726C1/0x4DEF40/0x4DEF57/0x4ED030/0x4ED046/0x49F6A0/0x4DEFCF/0x4DEC70; node sentinel byte +0x15, tree head +0x4, count
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation; full-range bulk erase and partial node erase distinct; partial helper not required in normal full cleanup
 
+<a id="field-28"></a>
+## head + 0x28
+
+- [research/recovered/b_batch4/data/B_T012_T013_COLLISION_ATTRMAP_ORDER_OFFLINE_20261022_2113.md 行 16](../../research/recovered/b_batch4/data/B_T012_T013_COLLISION_ATTRMAP_ORDER_OFFLINE_20261022_2113.md?plain=1#L16-L16) — `0x00599600` 擬似Cで大きなSkill候補レコードの `+0x134=0` を初期化し、`+0x130` には0x2Cバイト確保したtree head/sentinelを格納する。head+0/4/8を自分へ接続し `head+0x28/+0x29=1` とする。これは旧MSVC treeのhead初期化レ
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
 <a id="field-330"></a>
 ## head + 0x330
 

@@ -76,6 +76,18 @@
 - [research/recovered/b_batch3/T012_RUSH_SKILL_INTERVAL_FIRST_TICK_BURST_NATIVE_20261027_18H.md 行 11](../../research/recovered/b_batch3/T012_RUSH_SKILL_INTERVAL_FIRST_TICK_BURST_NATIVE_20261027_18H.md?plain=1#L11-L11) — [CONDITIONAL CONSEQUENCE 3] Skill+0x78!=0ならSkill+0x74未達で0x5503DF returnするので同一0x5501A0呼出での無条件burstは成立しない。intervalはsigned比較、可視フレームとの等価性はまだ未確認。
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+<a id="field-80"></a>
+## Skill + 0x80
+
+- [research/recovered/b_batch4/data/T011_KARATE_JOINT_ANGLE_TIMING_20261014.md 行 6](../../research/recovered/b_batch4/data/T011_KARATE_JOINT_ANGLE_TIMING_20261014.md?plain=1#L6-L6) — [SAVED EXE VA/XREF] 既存B-20261013-1930-01のexe/T011_STRUCTURE_DISPATCH_PROBE.txt：0x59C7C8→0x59C7F5でraw rush_random_degree→compiled Skill+0x80、0x59C733→0x59C747 ru
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+<a id="field-110"></a>
+## Skill + 0x110
+
+- [research/recovered/b_batch4/data/B_T012_T013_COLLISION_ATTRMAP_ORDER_OFFLINE_20261022_2113.md 行 36](../../research/recovered/b_batch4/data/B_T012_T013_COLLISION_ATTRMAP_ORDER_OFFLINE_20261022_2113.md?plain=1#L36-L36) — `0x00415460 → 0x00415E20` はtreeの候補位置を検索し、`0x004154A4 → 0x00402C40` で文字列バイト列と長さを比較する。未登録ならend/headを返す経路がある。従来既知の `0x0059A57A` 付近はDATの **`attr`** 属性（PE `.rdata` `
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
 <a id="field-12c"></a>
 ## Skill + 0x12C
 
@@ -93,6 +105,15 @@
 
 - [research/recovered/b_batch3/B_T012_T013_COLLISION_CLEANUP_OWNER_OFFLINE_20261023_0009.md 行 79](../../research/recovered/b_batch3/B_T012_T013_COLLISION_CLEANUP_OWNER_OFFLINE_20261023_0009.md?plain=1#L79-L79) — `0x515477`は`Skill+0x134 == 0`なら局所候補検索を終了する一方、`0x51542D`と`0x55204E`は`Skill+0x1FD != 0`を**清掃実行条件**とする。前日確認した`offset=on`単独の正規化では`+0x134=0`、`+0x1FD=1`が同時に成立可能。よって、*
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch4/data/B_T012_T013_COLLISION_ATTRMAP_ORDER_OFFLINE_20261022_2113.md 行 14](../../research/recovered/b_batch4/data/B_T012_T013_COLLISION_ATTRMAP_ORDER_OFFLINE_20261022_2113.md?plain=1#L14-L14) — ## 1. 発見A：`Skill+0x134` は候補属性mapの要素数と整合
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+- [research/recovered/b_batch4/data/B_T012_T013_COLLISION_ATTRMAP_ORDER_OFFLINE_20261022_2113.md 行 18](../../research/recovered/b_batch4/data/B_T012_T013_COLLISION_ATTRMAP_ORDER_OFFLINE_20261022_2113.md?plain=1#L18-L18) — `0x00515470` のASM `0x00515477` は `[Skill+0x134]==0` なら `0x00515480 xor eax,eax` → return0。そうでなければ **`0x00515489 → 0x004E6D10`**。このため、20時台に「Skill+0x134≠0で衝突探索許可」
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+- [research/recovered/b_batch4/data/B_T012_T013_RENDER_COLLISION_BOUNDARY_OFFLINE_20261023_0808.md 行 41](../../research/recovered/b_batch4/data/B_T012_T013_RENDER_COLLISION_BOUNDARY_OFFLINE_20261023_0808.md?plain=1#L41-L41) — 一方、以前からのミサイル接触候補探索 `0x00515470 → 0x004E6D10` は `0x00515477` で `Skill+0x134` を検査し、`0x00515489` で `0x004E6D10` を呼び出す**別の入口**。SQLite直接CALLでは `0x004BC4F0` の直接caller
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
 
 - [research/recovered/b_reports/B_T011_T012_T013_OFFSET_ATTR_GATE_OFFLINE_20261022_2245.sanitized.md 行 44](../../research/recovered/b_reports/B_T011_T012_T013_OFFSET_ATTR_GATE_OFFLINE_20261022_2245.sanitized.md?plain=1#L44-L44) — さらに `offset` の集合構築後、`0x0059CA61` は `[Skill+0x134]` を検査し、0でないとき `0x0059CA6A` で **`[Skill+0x1FD]=1`** に設定する。これは前段の `offset_on` 値とは別の有効化条件である。`+0x1FD` と `+0x134` を
   制約・訂正　Privacy derivative: one personal research-root prefix replaced with <research-root> plus explicit recovery annotation; full technical content retained; reversible byte reconstruction matches source SHA; historical STATIC/INFERRED/VERIFY only; no linked payload read or Golden/READY promotion
@@ -223,11 +244,35 @@
 - [research/recovered/DEVLAB_NATIVE_SKILL_CAPABILITY_20261011.md 行 10](../../research/recovered/DEVLAB_NATIVE_SKILL_CAPABILITY_20261011.md?plain=1#L10-L10) — - kind2 → Skill+0x278==0ならUnit+0x135=1、非zeroならUnit+0x136=1（VA0x5739FC..0x573A1C）。
   制約・訂正　Historical author claims preserved; source hash verified; no new native or runtime validation; referenced local evidence not included
 
+<a id="field-280"></a>
+## Skill + 0x280
+
+- [research/recovered/b_batch4/data/B_T012_DAMAGE_X87_AH44_GATE_OFFLINE_20261024_13H.md 行 17](../../research/recovered/b_batch4/data/B_T012_DAMAGE_X87_AH44_GATE_OFFLINE_20261024_13H.md?plain=1#L17-L17) — \| 0 vs Skill+0x280 \| C3 \| C2 \| AH&0x44 \| JP \| 当該ゲートの出口 \|
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+- [research/recovered/b_batch4/data/B_T012_DAMAGE_X87_AH44_GATE_OFFLINE_20261024_13H.md 行 32](../../research/recovered/b_batch4/data/B_T012_DAMAGE_X87_AH44_GATE_OFFLINE_20261024_13H.md?plain=1#L32-L32) — Goldenには同一の無改変原作EXE/DAT/SAVE/MAP/入力/RNGを揃え、`Skill+0x280`の実effective倍率が正／負／ゼロになる合法DATとresistance=0/1..9/10、mode6/non6、最低ダメージ分岐および被弾側のHP・死亡イベントを比較する。NaN/±∞は合法DAT生
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+- [research/recovered/b_batch4/data/B_T012_SCALE_INIT_PARSER_COPY_OFFLINE_20261024_14H.md 行 27](../../research/recovered/b_batch4/data/B_T012_SCALE_INIT_PARSER_COPY_OFFLINE_20261024_14H.md?plain=1#L27-L27) — 既存T012 §32では、`0x00599BD0`関数内、VA `0x0059CDA3`付近の `FILD [ESP+0x320]` → 0.01倍 → `0x0059CDBC`で `Skill+0x280` 格納まで確認済み（**この旧証拠そのものは再計上しない**）。今回、Ghidraの完全擬似Cで次を独立照合。
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+- [research/recovered/b_batch4/data/B_T012_STR_STACK_ALIAS_LOOKUP_OFFLINE_20261024_15H.md 行 32](../../research/recovered/b_batch4/data/B_T012_STR_STACK_ALIAS_LOOKUP_OFFLINE_20261024_15H.md?plain=1#L32-L32) — 既存14時台の `0x0046FB00` → `0x0046FCE0`（`0x0046FC13`）→ `0x00599BD0`（`0x0046FC3E`）のコピー→解析順と接続すると、**コピー済みの`Skill+0x280`も、パーサ内の無条件STOREで再設定される**。有効プロパティが未解決なら0×係数になる。親
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
 <a id="field-288"></a>
 ## Skill + 0x288
 
 - [research/recovered/b_batch3/T011_T012_SUPER_SCRIPT_PARSER_PRODUCER_NATIVE_20261024_22H.md 行 25](../../research/recovered/b_batch3/T011_T012_SUPER_SCRIPT_PARSER_PRODUCER_NATIVE_20261024_22H.md?plain=1#L25-L25) — Golden: 無改変EXEと20倍強化前DAT・同一SAVE/MAP/入力/RNGでu_diplo_nt2およびnt3～nt6の親名ScriptData格納、compiled Skill+0x288、対象/HP/MP/状態/次tickを旧新比較。DESIGNED_NOT_RUN。原作Gameplay PASS0、st
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch4/data/B_T012_PRESENCE_TAIL_CFG_OFFLINE_20261024_18H.md 行 38](../../research/recovered/b_batch4/data/B_T012_PRESENCE_TAIL_CFG_OFFLINE_20261024_18H.md?plain=1#L38-L38) — 次は`0x004644BC`前後の検索結果のnil判定と`0x004645A0`への到達条件を同じフィールド形式でまとめ、Ghidra関数ボディの範囲を検証する。合法DATにおける親・子・欠損・明示0、階層境界の**到達条件はVERIFY**。Goldenには原作無改造PE・原DAT・同一SAVE/MAP/seed/i
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+- [research/recovered/b_batch4/data/B_T012_STR_NATIVE_ABI_SUPER50_OFFLINE_20261024_16H.md 行 59](../../research/recovered/b_batch4/data/B_T012_STR_NATIVE_ABI_SUPER50_OFFLINE_20261024_16H.md?plain=1#L59-L59) — `0x0059CDC2 FLD1`→`0x0059CDC4 FSTP [Skill+0x288]`でdefault **1.0**。`0x0059CDCA CALL 0x00464290`の存在チェック成立時だけ`0x0059CDE8 CALL 0x004647D0`→`0x0059CDED FILD [EAX+0x2
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+- [research/recovered/b_batch4/data/B_T012_STR_RATIO_PRESENCE_RET50_OFFLINE_20261024_17H.md 行 24](../../research/recovered/b_batch4/data/B_T012_STR_RATIO_PRESENCE_RET50_OFFLINE_20261024_17H.md?plain=1#L24-L24) — `0x0059CDC2 FLD1`→`0x0059CDC4 FSTP [Skill+0x288]`で初期値1.0。`0x0059CDCA`の存在判定がAL=0のとき`0x0059CDD1 JE 0x0059CE3A`が値取得処理を飛ばすため、**この経路では1.0が維持**される。一方AL=1なら`0x0059CDE8
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
 
 <a id="field-290"></a>
 ## Skill + 0x290

@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-4"></a>
+## object + 0x4
+
+- [research/recovered/b_batch4/data/B_T012_T013_RENDER_COLLISION_BOUNDARY_OFFLINE_20261023_0808.md 行 31](../../research/recovered/b_batch4/data/B_T012_T013_RENDER_COLLISION_BOUNDARY_OFFLINE_20261023_0808.md?plain=1#L31-L31) — \| `0x004BC691..0x004BC6A6` \| 戻り値0の特別分岐では仮想スロット `+0x38/+0x3C` の値を `object+0x04/+0x08` に保存 \| ASM \|
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
 <a id="field-c"></a>
 ## object + 0xC
 
@@ -39,6 +45,9 @@
 
 - [research/recovered/b_batch2/B_T012_T013_SPATIAL_CELL_MIGRATION_OFFLINE_20261023_0716.md 行 70](../../research/recovered/b_batch2/B_T012_T013_SPATIAL_CELL_MIGRATION_OFFLINE_20261023_0716.md?plain=1#L70-L70) — - **P0次回**：`0x004BC4F0` の空間セル列挙から、`0x004E6D10` など実際のミサイル接触候補探索との接続を限定的に調査する。`grid+0x28`の初期化と `object+0x54` readerを調べ、セル順序が本当に最終対象へ作用するかVERIFY。T024/T028はP0維持。0x5
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+- [research/recovered/b_batch4/data/B_T012_T013_RENDER_COLLISION_BOUNDARY_OFFLINE_20261023_0808.md 行 64](../../research/recovered/b_batch4/data/B_T012_T013_RENDER_COLLISION_BOUNDARY_OFFLINE_20261023_0808.md?plain=1#L64-L64) — 3. **T011**：`object+0x54` stampのreader群と `grid+0x28`マスク初期化、Skill `+0x134/+0x1FD`のwriter範囲。
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
 
 <a id="field-6c"></a>
 ## object + 0x6C

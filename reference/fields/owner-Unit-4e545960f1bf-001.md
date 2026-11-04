@@ -208,6 +208,9 @@
 <a id="field-c0"></a>
 ## Unit + 0xC0
 
+- [research/recovered/b_batch4/data/B_T012_T024_VOICE_EXPIRY_ROUTING_OFFLINE_20261022_1210.md 行 15](../../research/recovered/b_batch4/data/B_T012_T024_VOICE_EXPIRY_ROUTING_OFFLINE_20261022_1210.md?plain=1#L15-L15) — 3. `FUN_0057B380` の外側の入場条件は単純な無条件実行ではない。少なくとも `Unit+0x1867E == 0`、32-bit符号付き `Unit+0xC0 >=0`、`Unit+0xD0 >=0` が必要で、さらに `+0x8C!=0`、`+0x1F8==0`、`+0x1F9!=0`、`+0x186
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
 - [research/recovered/b_reports/T011_T024_GROUP34_DUAL_BUCKET_ELIGIBILITY_NATIVE_20261101_11H.md 行 23](../../research/recovered/b_reports/T011_T024_GROUP34_DUAL_BUCKET_ELIGIBILITY_NATIVE_20261101_11H.md?plain=1#L23-L23) — \| Unit+0xC0 \| `0x56963C` \| signed dword >= 0 \|
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
@@ -237,6 +240,9 @@
 
 <a id="field-d0"></a>
 ## Unit + 0xD0
+
+- [research/recovered/b_batch4/data/B_T012_T024_VOICE_EXPIRY_ROUTING_OFFLINE_20261022_1210.md 行 15](../../research/recovered/b_batch4/data/B_T012_T024_VOICE_EXPIRY_ROUTING_OFFLINE_20261022_1210.md?plain=1#L15-L15) — 3. `FUN_0057B380` の外側の入場条件は単純な無条件実行ではない。少なくとも `Unit+0x1867E == 0`、32-bit符号付き `Unit+0xC0 >=0`、`Unit+0xD0 >=0` が必要で、さらに `+0x8C!=0`、`+0x1F8==0`、`+0x1F9!=0`、`+0x186
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
 
 - [research/recovered/b_reports/T011_T024_GROUP34_DUAL_BUCKET_ELIGIBILITY_NATIVE_20261101_11H.md 行 22](../../research/recovered/b_reports/T011_T024_GROUP34_DUAL_BUCKET_ELIGIBILITY_NATIVE_20261101_11H.md?plain=1#L22-L22) — \| Unit+0xD0 \| `0x569633` \| signed dword >= 0 \|
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
@@ -388,6 +394,9 @@
 - [research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md 行 10](../../research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md?plain=1#L10-L10) — - 通過したUnitについて 0x5150BB..C7 が UnitData=[Unit+0x1C8] の +0x1C4 DWORDをobj+0x88へ加算。さらに Unit+0x1D0 !=0 のときだけ0x5150A9..B5で同じ値をobj+0x8Cへ加算。意味名/符号/overflow/合法NULLはVERIF
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+- [research/recovered/b_batch4/data/B_T012_T024_VOICE_EXPIRY_ROUTING_OFFLINE_20261022_1210.md 行 15](../../research/recovered/b_batch4/data/B_T012_T024_VOICE_EXPIRY_ROUTING_OFFLINE_20261022_1210.md?plain=1#L15-L15) — 3. `FUN_0057B380` の外側の入場条件は単純な無条件実行ではない。少なくとも `Unit+0x1867E == 0`、32-bit符号付き `Unit+0xC0 >=0`、`Unit+0xD0 >=0` が必要で、さらに `+0x8C!=0`、`+0x1F8==0`、`+0x1F9!=0`、`+0x186
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
 - [research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md 行 72](../../research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md?plain=1#L72-L72) — 同一原作EXE SHA / 同一DAT / SAVE / MAP / 入力 / RNG seed と状態で、合法な `allfunc` ミサイル技能を採り、候補vectorが0/1/2/3件の場合と、2件中1件不適格・index10/非10・Skill+0x2A8 sentinel/zero・Unit+0x1D0 nu
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
@@ -402,20 +411,5 @@
 
 - [research/recovered/b_batch3/T028_DEADEVENT_COUNT_COLOR_QUEUE_NATIVE_20261027_21H.md 行 15](../../research/recovered/b_batch3/T028_DEADEVENT_COUNT_COLOR_QUEUE_NATIVE_20261027_21H.md?plain=1#L15-L15) — [VERIFY] [Unit+0x1D4] object型・flagのgameplay意味、+0x1EEFA0容器の意味とconsumer・owner生存期間、合法DATでのdead_event=count使用、同一戦闘での具体表示/スコア/副作用。これを通常の士気debuffイベントと同一視しない。
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/symbol_sources/T013_KIND8_RANDOM_PAYLOAD_QUEUE_NATIVE_20261031_15H.md 行 8](../../research/recovered/symbol_sources/T013_KIND8_RANDOM_PAYLOAD_QUEUE_NATIVE_20261031_15H.md?plain=1#L8-L8) — [RECORD PRODUCER] 0x5A3E33 MOV [ESI],EAX=Unit*、0x5A3E35..0x5A3E41 MOV [ESI+4],[[Unit+0x1D4]+0xC]、0x5A3E44..0x5A3E4D MOV [ESI+8],別の入力、0x5A3E50 CALL0x402710で付属文字列
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation
-
-<a id="field-1dc"></a>
-## Unit + 0x1DC
-
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3543](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3543-L3543) — \| **E = engine = G+0x504** \| VA 0x8BE7F4 \| 戦闘・戦略の資料にある「GM / engine + 0x1EEC3C、+0x1EEC44、+0x1E8630 …」の全部 \| 静的初期化 `0x553F60(&0x8BE7F4)`。Unit 初期化で `Unit+0x1E0 = G+
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
-
-<a id="field-1e0"></a>
-## Unit + 0x1E0
-
-- [research/recovered/b_batch2/T028_COUNT_QUEUE_MODE_BRANCH_NATIVE_20261027_23H.md 行 16](../../research/recovered/b_batch2/T028_COUNT_QUEUE_MODE_BRANCH_NATIVE_20261027_23H.md?plain=1#L16-L16) — - このjoinは「どちらのmodeでもキュー初期化後に分岐する」ことを示すのみ。実際のゲーム中の到達・[Unit+0x1E0]とcallee managerの同一性・消去タイミング・読出consumer・red/blueの用途/士気への影響はVERIFY。
-  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

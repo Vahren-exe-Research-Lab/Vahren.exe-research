@@ -79,6 +79,12 @@
 - [research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md 行 65](../../research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md?plain=1#L65-L65) — 1. **T013/T012最優先**：`0x00550E70` の `candidate.vtable+0x70` の派生先、`0x00551E50` の結果反映（候補のHP/回復/状態、死亡判定）の実経路。以前拒否されたVAやコマンドに立ち入らず、許可済み証拠からのみ絞る。
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+- [research/recovered/b_batch4/data/B_T012_T028_VSLOT70_ABI_SENTINEL_20261024_1016.md 行 11](../../research/recovered/b_batch4/data/B_T012_T028_VSLOT70_ABI_SENTINEL_20261024_1016.md?plain=1#L11-L11) — ### 1. `vtable+0x70` の3 CALL siteは *同じ4スタック引数* を異なる文脈から渡す（PE+SQLite照合）
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+- [research/recovered/b_batch4/data/B_T012_T028_VSLOT70_ABI_SENTINEL_20261024_1016.md 行 19](../../research/recovered/b_batch4/data/B_T012_T028_VSLOT70_ABI_SENTINEL_20261024_1016.md?plain=1#L19-L19) — 3 siteとも`FF D2`（CALL EDX）の実バイトを確認。各直前にreceiverのvtableから`[vtable+0x70]`をロードする。関数群の署名は少なくとも`this=ECX + 4 stack args`と整合するが、各引数の厳密なゲーム意味/所有権はVERIFY。3 siteは旧研究に登場済み
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
 - [research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md 行 41](../../research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md?plain=1#L41-L41) — - `0x5510E5: cmp edx,10`。等しい場合 `0x5510EA: xor edi,edi`、`0x5510EC: jmp 0x551156`。この経路は通常のtarget `vtable+0x70`（`0x551154: call edx`）をskipする。
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 

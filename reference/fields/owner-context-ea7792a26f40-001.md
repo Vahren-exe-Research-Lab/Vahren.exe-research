@@ -34,6 +34,12 @@
 - [research/recovered/dev_reports/DEVLAB_HANDOFF_20261011_PARALLEL_STATUS.md 行 13](../../research/recovered/dev_reports/DEVLAB_HANDOFF_20261011_PARALLEL_STATUS.md?plain=1#L13-L13) — - 0x55116E context+0xE & Skill+0x248>0なら0x576F10補助call→0x55119B Unit+0x8D suppress早期ret。補助callは早期retより先に到達し得る。callee副作用は不明。
   制約・訂正　Historical STATIC/INFERRED/VERIFY and synthetic-test claims; no new native/runtime verification; referenced raw assets/probes/archives not recovered; no Golden/READY promotion; historical ZIP SHA later changed as recorded in STATUS_DEXT; no archive opened
 
+<a id="field-18"></a>
+## context + 0x18
+
+- [research/recovered/b_batch4/data/B_T024_TIMER_ACTION_GATE_OFFLINE_20261022_1010.md 行 15](../../research/recovered/b_batch4/data/B_T024_TIMER_ACTION_GATE_OFFLINE_20261022_1010.md?plain=1#L15-L15) — 3. 同じ`0x449500`は、`(game+0x1EF244)!=0 && (context+0x18)==0 && mode==6`ならmodeを7に切り替える。**時間だけで最終modeを決められず、戦闘側フラグによる追加書換えがある**。
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
 <a id="field-1c"></a>
 ## context + 0x1C
 
@@ -58,6 +64,24 @@
 - [research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md 行 43](../../research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md?plain=1#L43-L43) — vector [context+0x48, context+0x4C)
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+<a id="field-78"></a>
+## context + 0x78
+
+- [research/recovered/b_batch4/data/B_T024_TIMER_ACTION_GATE_OFFLINE_20261022_1010.md 行 14](../../research/recovered/b_batch4/data/B_T024_TIMER_ACTION_GATE_OFFLINE_20261022_1010.md?plain=1#L14-L14) — 2. `0x449500`は、まず`context+0x78 == context+0x7C`なら早期return（候補ポインタ範囲が空の場合と整合）。状態 `context+0x98 < 11` なら、引数モードが0以外の場合に6へ切り替える経路がある。`context+0x98 >= 11` では引数モード1または
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+<a id="field-7c"></a>
+## context + 0x7C
+
+- [research/recovered/b_batch4/data/B_T024_TIMER_ACTION_GATE_OFFLINE_20261022_1010.md 行 14](../../research/recovered/b_batch4/data/B_T024_TIMER_ACTION_GATE_OFFLINE_20261022_1010.md?plain=1#L14-L14) — 2. `0x449500`は、まず`context+0x78 == context+0x7C`なら早期return（候補ポインタ範囲が空の場合と整合）。状態 `context+0x98 < 11` なら、引数モードが0以外の場合に6へ切り替える経路がある。`context+0x98 >= 11` では引数モード1または
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+<a id="field-98"></a>
+## context + 0x98
+
+- [research/recovered/b_batch4/data/B_T024_TIMER_ACTION_GATE_OFFLINE_20261022_1010.md 行 14](../../research/recovered/b_batch4/data/B_T024_TIMER_ACTION_GATE_OFFLINE_20261022_1010.md?plain=1#L14-L14) — 2. `0x449500`は、まず`context+0x78 == context+0x7C`なら早期return（候補ポインタ範囲が空の場合と整合）。状態 `context+0x98 < 11` なら、引数モードが0以外の場合に6へ切り替える経路がある。`context+0x98 >= 11` では引数モード1または
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
 <a id="field-e4"></a>
 ## context + 0xE4
 
@@ -72,5 +96,26 @@
 
 - [research/recovered/e_reports/T020_E_T013_OFF_EXACT_VSLOT_ACCEPTANCE_20261101_02H.md 行 13](../../research/recovered/e_reports/T020_E_T013_OFF_EXACT_VSLOT_ACCEPTANCE_20261101_02H.md?plain=1#L13-L13) — [KB_CANDIDATE] E/T020 this ID crosschecks B/T013 source with original PE SHA; VA 0x45A26F/0x45A296/0x45A2C6/0x42F860/0x57D994/0x57D99B/0x57D99F/0x57D9A9; global
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
+
+<a id="field-2f0"></a>
+## context + 0x2F0
+
+- [research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md 行 14](../../research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md?plain=1#L14-L14) — \| `0x00467E90` \| `context+0x2F0` \| 結果node != headで`node+0x28`のrecordを返却、missでは0 \| **`record+0xB0 = context`** \| `0x004C1200`（site `0x00467ECC`） \|
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+- [research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md 行 21](../../research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md?plain=1#L21-L21) — - 擬似C入口の条件：`*(int*)(in_EAX+0x94)==0`のとき、`context=*(int*)(in_EAX+0x1A4)`、`head=*(int*)(context+0x2F0)`としてheadを起点に走査。ループの対象recordは`node+0x28`、そこから`record+0x20`を参照
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+- [research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md 行 30](../../research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md?plain=1#L30-L30) — - **実装影響（INFERRED）:** `+0x1A4` と `+0xB0` の2つの検索由来参照、および`context+0x2F0`と`context+0x300`の異なるindexを区別し、`0x583CF0`の早期return・フォールバック失敗0・lookup成功の境界を保持する。いずれも原作の可視目的、
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+<a id="field-300"></a>
+## context + 0x300
+
+- [research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md 行 13](../../research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md?plain=1#L13-L13) — \| `0x00467DE0` \| `context+0x300` \| 結果node != headで`node+0x28`のrecordを返却、missでは0 \| `record+0x1A4 = context` \| `0x004C1200`（site `0x00467E1C`） \|
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+- [research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md 行 30](../../research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md?plain=1#L30-L30) — - **実装影響（INFERRED）:** `+0x1A4` と `+0xB0` の2つの検索由来参照、および`context+0x2F0`と`context+0x300`の異なるindexを区別し、`0x583CF0`の早期return・フォールバック失敗0・lookup成功の境界を保持する。いずれも原作の可視目的、
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

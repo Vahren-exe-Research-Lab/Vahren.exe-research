@@ -19,6 +19,12 @@
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 434](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L434-L434) — [REIMPLEMENT] record+0x1C numeric access、save buffer acquisition、ExplicitNull literalを別の仕様軸として扱う。set/add永続化・battle/RTS再入場でのclear・stream vtable具体targetを推測で埋めない。
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
 
+<a id="field-20"></a>
+## record + 0x20
+
+- [research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md 行 21](../../research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md?plain=1#L21-L21) — - 擬似C入口の条件：`*(int*)(in_EAX+0x94)==0`のとき、`context=*(int*)(in_EAX+0x1A4)`、`head=*(int*)(context+0x2F0)`としてheadを起点に走査。ループの対象recordは`node+0x28`、そこから`record+0x20`を参照
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
 <a id="field-28"></a>
 ## record + 0x28
 
@@ -75,6 +81,24 @@
 
 - [research/recovered/b_batch2/T028_NULL_VECTOR_CANDIDATE_DESTRUCTION_NATIVE_20261028_12H.md 行 11](../../research/recovered/b_batch2/T028_NULL_VECTOR_CANDIDATE_DESTRUCTION_NATIVE_20261028_12H.md?plain=1#L11-L11) — 同一key該当時、0x461038のowner+0x32Cを使って0x46103E CALL0x510C20（木ノードerase）を実行し、0x46104E [record+0x94]=0、0x461055 heap/inline分岐、0x46105C [record+0x84]=0でstringを空にする。非該当は次
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+<a id="field-b0"></a>
+## record + 0xB0
+
+- [research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md 行 14](../../research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md?plain=1#L14-L14) — \| `0x00467E90` \| `context+0x2F0` \| 結果node != headで`node+0x28`のrecordを返却、missでは0 \| **`record+0xB0 = context`** \| `0x004C1200`（site `0x00467ECC`） \|
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+- [research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md 行 17](../../research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md?plain=1#L17-L17) — - **今回の増分:** 前回 `B-OFFLINE-20261021-0716-01`で既知の`0x467DE0`→`record+0x1A4`に加え、今回新たに`0x467E90`→`record+0xB0`という**第二のbacklink書込み**を確認。`+0x1A4`と`+0xB0`を同一フィールドに潰さない
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+<a id="field-1a4"></a>
+## record + 0x1A4
+
+- [research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md 行 13](../../research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md?plain=1#L13-L13) — \| `0x00467DE0` \| `context+0x300` \| 結果node != headで`node+0x28`のrecordを返却、missでは0 \| `record+0x1A4 = context` \| `0x004C1200`（site `0x00467E1C`） \|
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+- [research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md 行 17](../../research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md?plain=1#L17-L17) — - **今回の増分:** 前回 `B-OFFLINE-20261021-0716-01`で既知の`0x467DE0`→`record+0x1A4`に加え、今回新たに`0x467E90`→`record+0xB0`という**第二のbacklink書込み**を確認。`+0x1A4`と`+0xB0`を同一フィールドに潰さない
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
 
 <a id="field-1f0"></a>
 ## record + 0x1F0

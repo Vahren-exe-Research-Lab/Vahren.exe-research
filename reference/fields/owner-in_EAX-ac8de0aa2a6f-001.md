@@ -10,10 +10,34 @@
 - [research/recovered/b_batch3/T012_ENTRY_CONTEXT_FALLBACK_SUPPORT_AND_RESET_20261021.md 行 16](../../research/recovered/b_batch3/T012_ENTRY_CONTEXT_FALLBACK_SUPPORT_AND_RESET_20261021.md?plain=1#L16-L16) — 4. 0x583C70のGhidra擬似Cは in_EAX+0x94==0のときのみ in_EAX+0x1A4のowner候補を使い、owner+0x2F0 treeのcandidate+0x20を比較。条件成立で0x597B00の結果へ進み、それ以外はowner+0x58のpointer式を返す。無候補=単純NULL
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+- [research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md 行 21](../../research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md?plain=1#L21-L21) — - 擬似C入口の条件：`*(int*)(in_EAX+0x94)==0`のとき、`context=*(int*)(in_EAX+0x1A4)`、`head=*(int*)(context+0x2F0)`としてheadを起点に走査。ループの対象recordは`node+0x28`、そこから`record+0x20`を参照
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
 <a id="field-b0"></a>
 ## in_EAX + 0xB0
 
 - [research/recovered/b_batch3/T012_ENTRY_CONTEXT_FALLBACK_SUPPORT_AND_RESET_20261021.md 行 15](../../research/recovered/b_batch3/T012_ENTRY_CONTEXT_FALLBACK_SUPPORT_AND_RESET_20261021.md?plain=1#L15-L15) — 3. 0x597B00のGhidra擬似Cは in_EAX+0xB0 の参照元を取り、その+0x2E0 treeを走査する。node[10]候補の+0x68と0x415460関連結果を比較、条件が成立すれば候補のpointerを返す。該当候補が無ければ参照元+0x58というpointer式を返す。ゲーム上のPower・
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+<a id="field-194"></a>
+## in_EAX + 0x194
+
+- [research/recovered/b_batch4/data/B_T012_T024_VOICE_MESSAGE_SLOT_POLICY_OFFLINE_20261022_1310.md 行 33](../../research/recovered/b_batch4/data/B_T012_T024_VOICE_MESSAGE_SLOT_POLICY_OFFLINE_20261022_1310.md?plain=1#L33-L33) — - `0x005263E0` のGhidra擬似Cは `in_EAX+0x194` が指す対象の `+0x1ED1CC`、stride `0xB4`、24件（offset loop `<0x10E0`）を参照する。
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+- [research/recovered/b_batch4/data/B_T012_T024_VOICE_MESSAGE_SLOT_POLICY_OFFLINE_20261022_1310.md 行 36](../../research/recovered/b_batch4/data/B_T012_T024_VOICE_MESSAGE_SLOT_POLICY_OFFLINE_20261022_1310.md?plain=1#L36-L36) — - `0x00521CDF → 0x005263E0` の旧CALL登録は存在するが、`0x57B380` の `Unit+0x1E0` と `0x5263E0` の `in_EAX+0x194` が実行時に同一表示管理オブジェクトを指すことは **未証明**。共有オフセット・strideであることはSTATIC、同一
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+<a id="field-1a4"></a>
+## in_EAX + 0x1A4
+
+- [research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md 行 21](../../research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md?plain=1#L21-L21) — - 擬似C入口の条件：`*(int*)(in_EAX+0x94)==0`のとき、`context=*(int*)(in_EAX+0x1A4)`、`head=*(int*)(context+0x2F0)`としてheadを起点に走査。ループの対象recordは`node+0x28`、そこから`record+0x20`を参照
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+<a id="field-32c"></a>
+## in_EAX + 0x32C
+
+- [research/recovered/b_batch4/data/B_T012_T024_VOICE_MESSAGE_SLOT_POLICY_OFFLINE_20261022_1310.md 行 34](../../research/recovered/b_batch4/data/B_T012_T024_VOICE_MESSAGE_SLOT_POLICY_OFFLINE_20261022_1310.md?plain=1#L34-L34) — - 各枠の `slot+0x78` が非0の場合、カーソル相当の `in_EAX+0x32C/+0x330` から、枠の `slot+0x40/+0x44` を引いて `POINT` を作り、`PtInRect((RECT *)(slot+0x94), pt)` を実行する。TRUEなら `0x005264BE → 0
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

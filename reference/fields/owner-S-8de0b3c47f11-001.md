@@ -16,6 +16,18 @@
 - [research/recovered/b_batch2/T028_RETREAT_OK_QUEUE_DRAIN_ELIGIBILITY_NATIVE_20261029_19H.md 行 11](../../research/recovered/b_batch2/T028_RETREAT_OK_QUEUE_DRAIN_ELIGIBILITY_NATIVE_20261029_19H.md?plain=1#L11-L11) — - 0x49D030原PEではDL=0時、参照S=[EBP+0x194], C=[S+0x0C]について [C+0x54]==0、[C+0x50]!=0、[[S+0x10]+0x38]!=0、[S+0x1EED54]!=0、[[C+0x50]+0x79]!=0 が揃ってAL=1の枝（0x49D030/33/39/43/
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 
+<a id="field-300"></a>
+## S + 0x300
+
+- [research/recovered/b_batch4/data/B_T012_STR_NATIVE_ABI_SUPER50_OFFLINE_20261024_16H.md 行 31](../../research/recovered/b_batch4/data/B_T012_STR_NATIVE_ABI_SUPER50_OFFLINE_20261024_16H.md?plain=1#L31-L31) — 前のPUSHで変わったESPを戻して計算する。`S`を`0x59CC95`直前のESPとすると、出力先は`S+0x300`（PUSH 1回済みで`ESP+0x304`）、getterの`RET 0x0C`で3スタック引数が復元された後のFILD参照先は`S+0x320`。**差は正確に`+0x20`**。`iStack
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+<a id="field-320"></a>
+## S + 0x320
+
+- [research/recovered/b_batch4/data/B_T012_STR_NATIVE_ABI_SUPER50_OFFLINE_20261024_16H.md 行 31](../../research/recovered/b_batch4/data/B_T012_STR_NATIVE_ABI_SUPER50_OFFLINE_20261024_16H.md?plain=1#L31-L31) — 前のPUSHで変わったESPを戻して計算する。`S`を`0x59CC95`直前のESPとすると、出力先は`S+0x300`（PUSH 1回済みで`ESP+0x304`）、getterの`RET 0x0C`で3スタック引数が復元された後のFILD参照先は`S+0x320`。**差は正確に`+0x20`**。`iStack
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
 <a id="field-1eed54"></a>
 ## S + 0x1EED54
 
