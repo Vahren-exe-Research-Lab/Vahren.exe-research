@@ -1,0 +1,13 @@
+# B-20261017-2217-01｜ZNMブーメラン爆発子2技能のattr/str差と共通time/exp_per（T012主／T011参照）
+[DATE/OWNER/STATE] 2026-10-17 22時台JST、B/T012主・T011原文データ型参照。STATIC ORIGINAL SCRIPT LEXICAL限定。旧原作Gameplay Golden PASS0、新旧strict MATCH0、Task DONE+0。B資料/HANDOFF読戻し前はCANDIDATE／NOT READY。
+[PROVENANCE] 読取専用正規化原作 data/normalized/hakushin067_core/a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat、1-based L5132-5155。原本ZIP/EXEの起動・改変なし。比較対象同梱EXEの既記録SHA256=e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187（本run再hashせず）。
+[SOURCE A] skill znm_boom_bomb1（独立ヘッダ、L5132-5145）はexp_per=40/attr=sw/str=attack*85/bom=on/time=19、image=m_air、anime=7、anime_interval=3、a=200、w=48、h=48を明記。
+[SOURCE B] skill znm_boom_bomb2（独立ヘッダ、L5146-5155）はexp_per=40/attr=msw/str=magic*10/bom=on/time=19、w=48、h=48を明記。自身のimage/anime/a再宣言はこのblockにない。
+[CHAIN REFERENCE ONLY] 既B-20261017-2017-01/2114-01で原作znm_boom_nt2 と znm_boom_nt4 のnext3が両子名を列挙することは既統合済み。本IDの増分は参照先2子技能の具体的な異属性・異系統str原文と共通bom/time/exp_perおよび演出指定差のみ。既root→heal、next_last、next_intervalを再計上しない。
+[SAVED NATIVE REFERENCE] 既存B-owned data/T011_DATA_MODEL.md §10：str parserのcompiled Skill+0x27C modeはattack=1、magic=2、fix=6。既存T012_BATTLE_CALC.md：通常damage系でmode0はdamage core VA0x550E70をskipする経路がある。今回2技能のraw strが実効Skillとしてmode1/2へ解決されること、またnormal damage coreへ到達することは別のVERIFY。新規EXE逆解析や拒否範囲への再アクセスなし。
+[CONFIRMED VS VERIFY] 確定は各raw宣言・文字列値と二つの子名への既知raw next3参照だけ。parent未指定ヘッダを根拠にeffective Skill全設定、bomの実体、time=19の単位、exp_perの実EXP、実弾数・命中・HP/MP結果、演出差、合法Unit発火を断定しない。attr=swとmswを同属性へ潰さない。attack*85/magic*10を固定85/10ダメージと誤認しない。
+[REIMPLEMENT] {childSkillID, rawAttr, rawStrMode, rawStrCoefficient, rawBom, rawTime, rawExpPer, image/anime各直接宣言有無, rawNext3Parent}を別フィールド。compiled Skill/候補/射出/当たり/HP変化/経験値/次tickを段階別receiptに分離。描画差は戦闘計算・命中成功の代理証拠としない。
+[GOLDEN DESIGNED/NOT RUN] 正規原作でznmの出撃・root保有・両子の発火が可視判別できる場合に限定。旧EXE/DAT/SAVE/input/captureと新buildのSHA・seedと位置/時刻を固定し、属性相性が異なる対照Unitに対して子ごとの可視弾/爆発・HP差・MP・次tickを比較。子branch特定不能はINELIGIBLE、old実測不足はDESIGNED_NOT_RUN。Gameplay PASS0、strict MATCH0。
+[P0 OPEN/NEXT] T012 0x580280真の弾/HP作用、0x4E7ED0候補存在と結果、Unit+1E560ラッチ/Unit+18688方向、MP fallback、T013 final target priority、T011実効継承は未解決。既保存nativeの許可済み資料と合法原作観測条件を優先。過去拒否済0x5710C0..0x571500、0x58021E..0x580340等を別tool/shell/path/Remoteで迂回しない。
+[OWNER/SAFETY] 書込はB-owned detail/T012/T011/LANE_B_HANDOFFのみ。MASTER/T018/他lane/REA/dev_lab/Work/WRQ/Git/push/設定/automation/原本ZIP EXE SAVEは非変更。PC低負荷未測定につき重解析・旧原作実行なし。
+[READY GATE] このdetail＋data/T012_BATTLE_CALC.md＋data/T011_DATA_MODEL.md＋evidence/LANE_B_HANDOFF.mdの4点個別読戻し後だけB限定STATIC ORIGINAL SOURCE READY。MASTER正式統合はEのみ。

@@ -1,0 +1,12 @@
+# B-20261018-0717-01｜cook_heal説明文とraw計算種別・明示ratioの限定crosscheck
+[DATE/TASK/OWNER] 2026-10-18 07時台JST。T012 primary/T011 crossref。旧原作Gameplay Golden PASS0、新旧strict MATCH0、Task DONE+0。
+[ORIGINAL] normalized hakushin067_core/a_default/script/30_スキル/F13_heal_support.dat L90-99。skill cook_heal:m_heal、help L93「技術×3000％」、raw L96 str=magic_dext*1500、L97 str_ratio=0、L94 mp=0、L95 gun_delay=b_heal*3、L98 slow_per=35。
+[SOURCE CONTRAST] 同F13 L81-88のb_heal:m_healはhelp「魔力×150％」とraw str=magic*150を別々に宣言。cook_healはhelpの3000とrawの1500だけでなく計算種別もmagic_dextで異なるため、数値差を単純な1/2ダメージや作者BUGと判定しない。
+[PRE-SAVED NATIVE] B所有data/T011_DATA_MODEL.md §10 saved parser str mode→Skill+0x27C はmagic=2、magic_dext=5。B所有data/T012_BATTLE_CALC.md §32 と exe/T012_SKILL_PARSER_FIELD_DUMP.txt：0x59CC95..0x59CDA3 str mode、0x59CDA3..0x59CDBC str scale×0.01→Skill+0x280、0x59CDC2..0x59CDFB optional ratio initial1.0→存在時ratio×0.01→Skill+0x288。これらは既存STATICであり今回新たなEXE逆解析ではない。
+[CONDITIONAL] その正規化rawが同一パーサ経路で有效Skillに格納されるなら、cook_heal mode5、scale=15.0、明示ratio=0.0の組。原文help3000％は別UI文字列で、これをscale=30.0へ自動転写しない。親m_healからのその他のfield継承と実効値・ratioの下流算術はVERIFY。
+[DEDUP] B-20261017-1313-01はb_heal/cook_heal/dango1のraw strと共通gun_delay、B-20261017-1413-01はUnit/Class取得辺、T011§10/T012§32はnative単体を既記録。本IDの新規部分はcook_heal表示文「技術×3000％」を既raw+既native mode/scale/explicit-ratioに限定接続する一点のみ。
+[REIMPLEMENT] {rawSkillId,parent,helpText,rawStrMode,rawStrCoef,rawRatioPresent,rawRatioValue,compiledMode,compiledScale,compiledRatio,MP,gunDelayKey}を個別provenanceで維持し、runtime heal/target/HP差分を静的入力値から捏造しない。
+[VERIFY/GOLDEN] 合法原作Unit nynkrn等のcook_heal保有・通常戦闘出場を先に実機確認後、表示help/発動/実HP回復・MP・待機・target・次tickを旧EXE/DAT/SAVE/実MAP/input/capture SHA/可能ならseed固定でnew buildと比較。b_heal対照も合法保有が確認された場合のみ採用。現状DESIGNED_NOT_RUN、内部compiled値のみはINELIGIBLE。
+[OPEN/NEXT] raw→effective Skill・special/status/HP core 0x550E70接続、magic_dextの下流演算、ratio=0の実作用、最終target優先、Skill+A18/A1C、T012 0x4E7ED0/0x580280/Unit+1E560/+18688/MP fallback。原作Gameplay PASS0、strict MATCH0。
+[SAFETY/CAPACITY] Local read_fileのみで根拠調査。先行session PID23860 input待ちへ非介入、process CPU n/a・低負荷断定不可。禁止VA 0x5710C0..0x571500や0x58021E..0x580340の新逆解析/迂回なし。旧B-RC-20261018-0121/0230/0515およびEのB0316拒否は別BLOCKED・NOT READY。
+[OWNER/STORAGE] 本detail、data/T012_BATTLE_CALC.md、data/T011_DATA_MODEL.md、evidence/LANE_B_HANDOFF.mdの4/4独立readback合格時にのみB限定SOURCE×SAVED-PARSER CONDITIONAL READY 1件。EのみMASTER正式統合。原本ZIP/EXE/SAVE、MASTER/T018/他lane/REA/dev_lab/Git/push/設定/automation変更なし。

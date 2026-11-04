@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-4"></a>
+## vslot + 0x4
+
+- [research/recovered/rea_batch8/reports/REA_20261026_02H_DS8_UNLOCK_CLEANUP_READBACK.md 行 16](../../research/recovered/rea_batch8/reports/REA_20261026_02H_DS8_UNLOCK_CLEANUP_READBACK.md?plain=1#L16-L16) — 再開：decoder vslot+0x04／Unlock二領域引数のABI、およびLock成否／Unlock成否／decoder戻値の独立Golden条件設計。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
 <a id="field-1c"></a>
 ## vslot + 0x1C
 

@@ -1,0 +1,12 @@
+# B-20261018-0010-01｜T012/T011 Skill二系統ベクター・optionalの初期ゼロと後段consumer接続
+[DATE/OWNER/CLASS] 2026-10-18 00時台 JST。T012 primary／T011 data-model参照、静的EXE局所書込×既保存caller接続のみ。旧原作Gameplay PASS0、新旧strict MATCH0、Task DONE+0。
+[IDENTITY] ユーザー提供したread-only Vahren(1).exe（/mnt/data 内コピー、原本ではない）は2910720 bytes、SHA256=e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187で従前の保存済み原作解析EXEのSHAと一致。旧原本ZIP/EXEの起動・変更0。
+[NEW PRIMARY VA] PE32-x86 .text VA0x599626 MOV ESI,[ESP+40]；0x59962A XOR EBX,EBX；0x59963D MOV [ESI+30],EBX、0x599640 [+34]=EBX、0x599643 [+38]=EBX。さらに0x59969D [+F4]=EBX、0x5996A9 [+100]=EBX、0x5996AF [+104]=EBX、0x5996B5 [+108]=EBX。対象レジスタESIのこの初期化経路では各fieldへ0を直接書くことを確認。
+[SAVED CROSSCHECK] B既存exe/T012_ATTR_ADD_PARSER_PROBE.txtのVA59969D/5996A9/5996AF/5996B5命令と今回の非実行バイナリ照合一致。先行B-20261016-1515-01のVA57E887..57E89A（Skill+30/+34、非空なら4B9F70）、先行B-20261015-0611-01/0709-01のVA57EFA9..57F0A0（Skill+100/+104から28B子要素反復、Skill+F4 optional末尾）を再読で接続。
+[STATIC CONDITIONAL] ある実効Skill instanceが上記初期化経路の後、対応するconsumerへ到達する場合、consumer前に別writerが無ければ+30 begin/end及び+100 begin/endは0/0、+F4=0の初期状態。これは初期値だけの結論。後続parser/継承/子登録で非空になり得る。
+[DISTINCTION] 先行B-20261016-1515-01は+30 consumerとRNG stage、B-20261015-0709-01は+100の再読ループ、B-20261015-0611-01はpostdebitのroot/child/optionalで既正式。今回の独立増分はVA59963D/640/643/69D/A9/AF/B5のゼロ初期化writerと上記既consumerを『初期化→後段利用』として結ぶ点。既callee本体や通常hit/MP/factoryを再READY採番しない。
+[VERIFY] この関数の全callers・完全正常returnと実際のinstance対応、raw DAT next/next3→どのcompiled fieldへのsetter、親子継承・child有効count、factory/0x580280実作用、HP/MP/RNG・射撃・targetはUNKNOWN。0/0のまま最終ゲームに入る・next3が+100と同値・実戦で子不発などは断定しない。
+[REIMPLEMENT] Skill raw parent/next/next3の宣言、native initialize（二つのvector+30と+100・+F4）、parser/継承/登録writer、post-illusion optional random（+30）、normal kind2 child loop（+100）、optional（+F4）、可視結果を別ステージreceipt化。オブジェクト初期化が存在することと、戦闘中に空であることを区別。
+[GOLDEN DESIGNED NOT RUN] 合法旧原作戦闘で子を持たない/1/複数と+F4の取得可能な技能を特定し、未変更old EXE/DAT/SAVE/Input/Capture SHA、seed可視性、同配置で可視子発射/時間/効果/HP/MP/次tickをnew build比較。pointerとfieldゼロのみはINELIGIBLE。実機旧Gameplay actual PASS0、strict MATCH0。
+[PRIORITY/NEXT] 既許可された保存済writer資料で+30/+100/+F4を非ゼロにする正規経路を同定、合法Skill rootとの結合。P0の0x4E7ED0最終効果・Unit+1E560/+18688・MP fallback・T013 target優先は未解決。以前拒否の0x5710C0..0x571500、0x58021E..0x580340等は解析しない。
+[SAFETY/READY] B-owned detail/T012 owner/T011 xref/evidence LANE_B_HANDOFFの独立4点readback一致後だけB LIMITED STATIC INITIALIZER CROSSJOIN READY 1件。EのみMASTER正式統合。拒否済安全操作の別tool/path/shell/Remote迂回0、重いREA/Ghidra0、Git・他owner・原本・設定・automation変更0。

@@ -1,0 +1,12 @@
+check	count	result
+selection_rows	45	PASS
+ledger_nine_columns	45	PASS
+approved_current_catalog_identity	45	PASS
+complete_authored_bodies	41	PASS
+exact_byte_copies	40	PASS
+complete_privacy_only_variant	1	PASS
+exact_alias_no_duplicate_body	0	PASS
+content_variants	0	PASS
+deferred_no_export	4	PASS
+privacy_replacement_proof	1	PASS
+output_private_absolute_path_scan	41	PASS

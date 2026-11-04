@@ -1,0 +1,14 @@
+# B-20261017-2017-01｜ZNMブーメランの子Skill分岐とMP回復宣言（限定ORIGINAL SOURCE）
+[OWNER/TASK/DATE] B/T012主・T011取得/継承・T013候補処理参照。2026-10-17 20時台JST。新規根拠は正規化原作DATの宣言グラフのみ。実効Runtime/旧Gameplay PASS0/strict0。
+[ORIGINAL UNIT] data/normalized/hakushin067_core/a_default/script/10_ユニット/05_ヴォイス・ドラマ革命企画.dat：unit znm:base1、class=c_znm、level=5、mprec=0、skill項にznm_boomを直接列挙（around one-based L171-198）。実出撃/有効技能保有はVERIFY。
+[ORIGINAL ROOT] 同script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat around L5040-5133。skill znm_boom:sk_msはcheck=600/attr=sw/joint_skill=on/mp=100/next3=znm_boom_nt1,znm_boom_nt2。helpは戻ったブーメラン受取時MP回復100を説明するが、これは作者文章であり動的実証でない。
+[DECLARED CHAIN A] znm_boom_nt1:sk_ms は next3=znm_boom_nt1_b,znm_boom_nt2_b。znm_boom_nt1_b:znm_boom_nt1 は next3=znm_boom_nt3,znm_boom_nt4。znm_boom_nt3:znm_boom_nt1 は next=znm_boom_heal と next3=@ を明示。
+[DECLARED CHAIN B] znm_boom_nt2:znm_boom_nt1 は next3=znm_boom_bomb1,znm_boom_bomb2。znm_boom_nt2_b:znm_boom_nt2 は range=50。znm_boom_nt4:znm_boom_nt3 は next=@ と next3=znm_boom_bomb1,znm_boom_bomb2 を自分で指定。nt3のnext=healをnt4へ無条件コピーしない。
+[HEAL DECLARATION] skill znm_boom_heal は独立Skillヘッダで、attr=mp/func=heal/range=0/height=0/speed=500/movetype=drop/str=fix*100/exp_per=offを明示。Unit znmはheal名を直接skillへ列挙せずrootを持つ。rootのmp=100と子healのfix*100を差引相殺と断定しない。
+[OTHER ACQUISITION] 40_内政/CC_chara_create.dat の skillset chara_skill_magic にznm_boomのliteral。skillsetから合法取得できるかは別VERIFY。
+[VA/XREF ALREADY SAVED] B既存exe/T013_A18_A1C_CALLBACK_MAP_20261012.txt：VA59FA40..59FAE3 attr=mp のcompiled Skill+A18=0x599060 / +A1C=0x599360は条件付き参照のみ。既B保存0x57E999/0x57EA9Dの子選択、0x580280/0x54F720、0x57BE30も参考のみ。raw next/next3/@ がこれらnative fieldへどうロードされ、heal実行/対象選択/MP変化へ到達するかは未確定。
+[NEW/DEDUP] B HANDOFF/T011/T012/T013/T024の保存記録にznm_boom/znm_boom_heal literal 0件をLocal read-only照合。本件新規性は、直接Unit取得rootから分岐子nt3のMP heal宣言へつながるraw graphと、姉妹nt4の明示next=@/爆発next3による枝別宣言差。既mp_heal/b_mp原文・既MP callback本体は再採番0。
+[IMPLEMENTATION] parent edge、root.next3、child.next、child.next3、ExplicitNull(@)、func/attr/mp/str、Unit直付け、Unit.mprecを別フィールドで保持。nt3/nt4のraw overrideを統合しない。自己MP100実回復・nt4での全MP効果なし・MP費用相殺・獲得順/実射出数はUNKNOWN。
+[GOLDEN DESIGNED NOT RUN] 原作でznmが合法出撃しroot技能を実際に持つことをG0観測、同SAVE/EXE/DAT SHA・seed・UI入力でroot使用・戻り/命中/不発とMP初期値/発動時/戻り後/次tick、HP/target/演出/後続行動をold/new比較。nt3とnt4どちらの実到達か未観測なら分岐strict比較はINELIGIBLE。原作Gameplay actual PASS0、新旧strict MATCH0。
+[VERIFY/NEXT] raw継承のeffective next/null順序、next3関数の実行段数とRNG、元Unitの参加可能scenario・実取得、return/collision/heal target、MP fallback/Unit+1E560/+18688/0x4E7ED0の戦闘効果、T013候補優先。原本実行/変更、REA/Ghidra再解析禁止境界越えはしない。
+[STATUS] B OWNER DOCUMENT SAVED待ち／各所有資料＋HANDOFF独立READBACK成功後のみLIMITED STATIC ORIGINAL SOURCE READY、E公式統合は別。

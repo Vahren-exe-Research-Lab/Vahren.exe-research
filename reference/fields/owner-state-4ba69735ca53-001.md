@@ -10,6 +10,12 @@
 - [research/recovered/rea_batch3/reports/REA_20261031_23H_P0_VORBIS_GROWTH_TAIL_BOUNDARY_STATIC.md 行 15](../../research/recovered/rea_batch3/reports/REA_20261031_23H_P0_VORBIS_GROWTH_TAIL_BOUNDARY_STATIC.md?plain=1#L15-L15) — - `0x5E0CF0`: `state+0x24` を符号付き半分にして入力数 `[EBP+0x1C]` と掛け、4バイト単位の要求を `0x5E0D1A -> 0x5D4980` に渡す。入力数>0の検査 `0x5E0D25/27` は**growの後**。
   制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
 
+<a id="field-44"></a>
+## state + 0x44
+
+- [research/recovered/rea_batch8/reports/REA_20261025_19H_P0_OGG_STREAM_GATE_STATIC.md 行 36](../../research/recovered/rea_batch8/reports/REA_20261025_19H_P0_OGG_STREAM_GATE_STATIC.md?plain=1#L36-L36) — 4. ワーカースレッド生成失敗：戻値・state+0x44・thread handle+0x48を比較（実機未実行）。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
 <a id="field-52"></a>
 ## state + 0x52
 

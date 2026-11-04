@@ -10,4 +10,16 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1047](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1047-L1047) — - 乱数共有: CRT rand は単一状態（スレッド毎 ptd+0x14）。雇用・中立生成・放浪・friend・skill2 は全て同じ列を消費（T031 lane A の `LegacyRng` を読取専用で使用、変更なし）。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+<a id="field-54"></a>
+## ptd + 0x54
+
+- [research/recovered/rea_batch8/reports/REA_20261025_21H_THREAD_HANDLE_STATIC.md 行 23](../../research/recovered/rea_batch8/reports/REA_20261025_21H_THREAD_HANDLE_STATIC.md?plain=1#L23-L23) — - 0x005B7D72で[ptd+0x54]=worker開始関数、0x005B7D77で[ptd+0x58]=引数を設定（Ghidra型復元と原作ASM一致）。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+<a id="field-58"></a>
+## ptd + 0x58
+
+- [research/recovered/rea_batch8/reports/REA_20261025_21H_THREAD_HANDLE_STATIC.md 行 23](../../research/recovered/rea_batch8/reports/REA_20261025_21H_THREAD_HANDLE_STATIC.md?plain=1#L23-L23) — - 0x005B7D72で[ptd+0x54]=worker開始関数、0x005B7D77で[ptd+0x58]=引数を設定（Ghidra型復元と原作ASM一致）。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

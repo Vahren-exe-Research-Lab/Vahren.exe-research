@@ -1,0 +1,57 @@
+{
+  "S01": {
+    "path": "structs.tsv",
+    "sha256": "cb35d021344a4b7f367728ba13c1d589cba14a1a307fd58b74ba82fa5a1a0467",
+    "lines": 115
+  },
+  "S02": {
+    "path": "symbols.tsv",
+    "sha256": "bdd62a6b4720666d19b55ce6525ca0208c03d2057cfbce2053f80592f23bf1b5",
+    "lines": 552
+  },
+  "S03": {
+    "path": "REF_SKILL_POST_ACTION.md",
+    "sha256": "4ce80d1398ab3b428b96026ae194e066e7311f1e8a6e06a1e59b4d9d4ed2492a",
+    "lines": 76
+  },
+  "S04": {
+    "path": "REF_UNIT_EXP_SUMMON.md",
+    "sha256": "a7f4d4ca196ed68b59d57e51692cb51c966c62ff0fba78c37b35e4b3da30d797",
+    "lines": 131
+  },
+  "S05": {
+    "path": "research/recovered/HP_POST_RELATION_REVIEW.md",
+    "sha256": "ce70657fb1fcd033eb1c24b6b6ac24b7597911786b05aa7bead39675ee673979",
+    "lines": 16
+  },
+  "S06": {
+    "path": "research/recovered/b_batch7/data/T012_HEAL_HP_POST_577100_CONTRACT_20261013.md",
+    "sha256": "aaf010aa4e1e4bb979f8cb8f11b5339a4a87bb79e011f76a0ece84d39b7eef51",
+    "lines": 12
+  },
+  "S07": {
+    "path": "research/recovered/b_batch7/data/T012_HP_LIFEBAR_TIMER_CROSSCALL_20261013.md",
+    "sha256": "77583c8a875c3260b85b8a9d8a8376222eb820384daefc767f2fa28d0fc918fd",
+    "lines": 12
+  },
+  "S08": {
+    "path": "research/recovered/b_batch7/data/T012_MODE0_KIND2_POSTDEBIT_CHILD_AL_BOUNDARY_20261015.md",
+    "sha256": "f82bd3878a98f0a9ccb872586efeaf4786dc5db8af7927b689b2dd0cfda3960a",
+    "lines": 14
+  },
+  "S09": {
+    "path": "research/recovered/b_batch5/data/T011_SUMMON_RUNTIME_UNIT_56F880_CONTRACT_20261013.md",
+    "sha256": "e97d9a38fd704f7799790cafdc1c1ee685e310a59cbf887ae81611dc4c30ee0a",
+    "lines": 13
+  },
+  "S10": {
+    "path": "research/recovered/exp/EXP_SUMMON_DESTRUCTOR_NORMAL_VTABLE_20261022.md",
+    "sha256": "41559bf2b3a978309b0df0ed90e6d78e90480da3f5405643bf15ed3bb38a6c46",
+    "lines": 24
+  },
+  "S11": {
+    "path": "reference/relations.jsonl",
+    "sha256": "d449e0bea89d40f30649684003745557c81cf90ec7090c0ea2f7a19605b3ccd0",
+    "lines": 140
+  }
+}

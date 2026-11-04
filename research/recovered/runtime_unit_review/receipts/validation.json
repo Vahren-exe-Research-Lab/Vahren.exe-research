@@ -1,0 +1,34 @@
+{
+  "result": "PASS",
+  "field_rows": 4,
+  "columns_per_row": 7,
+  "unknown_width_fields": 4,
+  "proposed_relations": 5,
+  "registered_function_subjects": [
+    "va:0x00577100"
+  ],
+  "existing_relations_count": 140,
+  "existing_relations_sha256": "d449e0bea89d40f30649684003745557c81cf90ec7090c0ea2f7a19605b3ccd0",
+  "input_hash_checks": [
+    "S01 source hash unchanged",
+    "S02 source hash unchanged",
+    "S03 source hash unchanged",
+    "S04 source hash unchanged",
+    "S05 source hash unchanged",
+    "S06 source hash unchanged",
+    "S07 source hash unchanged",
+    "S08 source hash unchanged",
+    "S09 source hash unchanged",
+    "S10 source hash unchanged",
+    "S11 source hash unchanged"
+  ],
+  "extra_report_bodies": [
+    "S09",
+    "S10"
+  ],
+  "no_original_or_native_access": true,
+  "field_confidence_enum_check": "PASS",
+  "field_confidence_value": "静的確認",
+  "field_summary_uncertainties_preserved": true,
+  "confidence_normalization_reason": "dictionary enum schema compatibility only; no confidence promotion; recovered-text-only, unknown width and concrete class identity retained in every summary"
+}

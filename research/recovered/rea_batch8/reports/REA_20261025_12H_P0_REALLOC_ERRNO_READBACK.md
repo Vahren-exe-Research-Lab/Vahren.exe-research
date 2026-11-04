@@ -1,0 +1,13 @@
+# REA 2026-10-25 12H｜独立保存読み戻し
+研究ID：REA-LOCAL-20261025-1236-P0-REALLOC-OVERFLOW-ERRNO-STATIC-01
+PC-SAVED / STATIC / VERIFY / NOT READY。3資料は既存衝突なしでREA所有ディレクトリへ新規保存。
+- REA_20261025_12H_P0_REALLOC_ERRNO_AUDIT.py SHA256=2868F3D9384F467BAAC843D16AD3F58EBCF4D3BC767B21A9A742A6C1C84D86D3
+- REA_20261025_12H_P0_REALLOC_ERRNO_EVIDENCE.json SHA256=376B32C95B158E66D81691934CA64FC4C732E46DB5C81CC3392B067F5746CE6C
+- REA_20261025_12H_P0_REALLOC_ERRNO_STATIC.md SHA256=48D828A41A6CAA6FAAD8DC82ED3C289EC52A41B3D55FF929E506777B14420239
+- 独立PowerShell JSON読み戻し：ID一致、証拠の申告監査40/40。別プロセスでPython監査再実行：40/40 PASS（0.531秒）。初回成功1.039秒。
+- source PE/初期DB/V9 SHA256とも既知固定値と一致。初期DBのSQLite quick_check ok。旧progress_sync validated64一致（再計上0）。
+- 初回監査実行失敗（JSONDecodeError）：研究コードread_textのWindowsロケール依存。utf-8明示で修正。障害ID REA-LOCAL-20261025-12H-AUDIT-ENCODING-01（OTHER、解決）。既存原本に変更なし。
+- レポート書込の最初のツール呼出しはJavaScriptのバッククォート文字列構文エラー（書込前）となり、報告文の文字を変えて別の正常呼出しで新規保存（対象安全拒否と無関係）。障害ID REA-LOCAL-20261025-12H-DOC-QUOTE-SYNTAX-01（OTHER、解決）。
+- 過去09時台安全拒否済み未完成ファイルは触れていない。新規REA実行・Ghidra再抽出・ゲーム実行=0。
+- 旧RUN_RESULT実在とsource SHA一致確認、64/64は過去syncの保存済み値。今回の正式五種証拠新規完備0、VERIFIED追加0、Golden PASS0。
+- 研究全体の時間とCPU使用率は未測定、空きRAM約14GiB。既存スケジュール/Work/共有所有ファイル変更なし。

@@ -9,7 +9,7 @@
 | 調べたいこと | 入口と読み方 |
 |---|---|
 | 関数・アドレス・グローバル値 | [関数・メモリ事典](reference/README.md)で名前やVAを探し、個別ページの意味・確度・根拠を読む |
-| 構造体とメモリの位置 | 同じ事典の[構造体一覧](reference/README.md#構造体フィールド)から型を選ぶ。例：[ScriptEngine](reference/structs/ScriptEngine.md)。フィールドの説明、読み書き関数、根拠へ進む |
+| 構造体とメモリの位置 | 同じ事典の[構造体一覧](reference/README.md#構造体フィールド)から型を選ぶ。例：[ScriptEngine](reference/structs/ScriptEngine.md)、[実行時ユニットのHP関連](reference/structs/UnitRuntime.md)。フィールドの説明、読み書き関数、根拠へ進む |
 | 研究本文だけにあるオフセット | [所有者＋オフセット索引](reference/FIELD_MENTIONS.md)。`0x`付きの局所表記が対象。正式な型・幅・意味の確定とは区別する |
 | 訂正された説明 | [訂正一覧](reference/CORRECTIONS.md)で旧解釈・現在の解釈・根拠を比較する。各関数・フィールドからも辿れる |
 | 研究ID・題名・本文 | [回収済み全文書](reference/DOCUMENTS.md)。本文と回収制約を確認する。手元のコピーでは下の検索も使える |
@@ -73,7 +73,7 @@ python -B tools/reference.py callees 0x0055BC60 --json
 
 ## AI・統合担当へ
 
-まずこの入口、対象の事典ページ、現在のREF、訂正と出典を確認してください。機械処理には `tools/reference.py ... --json` を使えます。本文の取得状態・局所的な所有者名・研究ID共有だけから、型や確度を自動確定しないでください。
+まずこの入口、対象の事典ページ、現在のREF、訂正と出典を確認してください。機械処理には `tools/reference.py ... --json` を使えます。本文の取得状態・局所的な所有者名・研究ID共有だけから、型や確度を自動確定しないでください。`UnitRuntime` のような研究用部分レイアウトは具体的なC++クラス同一性を保証せず、型 `unknown` は幅も未確定です。
 
 書き込む場合は[同期状態](SYNC_STATUS.md)と[同期手順](SYNC_PROTOCOL.md)に従い、最新 `develop` と作業開始SHAを照合し、専用の作業ブランチで編集します。他担当のブランチ・原本は変更しません。元の解析を追加する場合は、認可済み研究PCの最新MASTER/HANDOFF・対象原本SHA・既存の保留範囲を確認します。
 

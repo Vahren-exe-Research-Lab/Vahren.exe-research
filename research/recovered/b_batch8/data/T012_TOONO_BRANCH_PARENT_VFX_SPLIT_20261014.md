@@ -1,0 +1,13 @@
+# B-20261014-1717-01｜T012/T011：デストーノ2系列の子Skill parent型とpair演出値の差
+[STATUS/OWNER] B T012 primary、T011/T013参照。原作ver0.67 normalized DATの局所静的宣言のみCONFIRMED-SOURCE、実Skill継承・弾・命中・HP/MP/状態異常はVERIFY。旧原作Gameplay actual PASS0／新旧strict MATCH0／Task DONE+0。
+[ORIGINAL G] data/normalized/hakushin067_core/a_default/script/30_スキル/C_必殺_クラス専用.dat 1-based L1219-1416。root skill toono_death:sk_ms L1254 next3=toono_death_joi,toono_death_so,toono_death_nt01,toono_death_nt02,toono_death_nt03、L1255 pair_next=toono_death_pr0。
+[ORIGINAL S] data/normalized/hakushin067_core/a_default/script/32_ボススキル/B_2_クレイジーサイコホモ.dat 1-based L63-256。senyo root L98同構造の5名別prefix next3、L99 pair_next=toono_death_senyo_pr0。
+[CHILD TYPING] G L1320/L1337/L1354のnt01/nt02/nt03は各skill NAME:sk_ms、すべて直接damage=-3。S L160/L177/L194のsenyo対応3節も同じ親指定・同raw damage値。一方joint2 G L1385/S L225から分岐するnt1（G L1388/S L228）とnt2（G L1402/S L242）は各skill NAMEで直接parent記号なし。nt1にはstr/add2/add_per、nt2は直接damage=-3/image=m_air等。親rootがsk_msであってもこれら子節に親を自動推定・コピーしない。
+[PAIR VISUAL DELTA] pair_next経由pr0→pr1→pr3：G toono_death_pr3 L1299-1316はw=24,h=24,resize_x=3,resize_y=3、S toono_death_senyo_pr3 L143-156はw=48,h=48,resize_x=6,resize_y=6。双方m_cloud/time16等の類似宣言だがrawサイズと拡大量が異なる。画面上の実描画サイズや発火は未実証。
+[AUTHOR HELP] 両rootのhelpには15/80が状態異常判定を行う確率であって直接即死率ではない趣旨の作者説明を原文確認。これは既B-20261014-1611-01の実死亡率と同一視禁止を補強するだけで新規の成功確率式は主張しない。
+[EXE XREF PRIOR ONLY] 0x59BBFC→Skill+0x230 add_per writer、0x5511C5/0x5511E6 postdamage chance比較、0x546FE2..0x546FF8 normal missile MP前段、0x5470BC..0x5470ED late fallbackは全て既保存B証拠。今回新native VA抽出0、当該Skillの本経路へ実到達は未証明。+A18/+A1C、Unit+1E560/+18688、4E7ED0、AL/攻撃結果はVERIFY。
+[DELTA/DEDUP] 既B-20261014-1611-01はgeneric/senyo nt1の係数magic25/add_per15 vs magic30/add_per80、root→joint宣言。今回は未登録のnt0x親3枝 vs parentless nt1/nt2の別parent型とpr3の異なるサイズ/拡大量のみ限定増分。攻撃段数5/即死率/実EXE挙動を新規READY計上しない。
+[REIMPLEMENT] 識別子でroot・next3・jointのnext3・pair_nextを別辺として保持。各子節のparent有無、damage raw、VFX w/h/resizeを個別保持し、Skill継承/Status/RNG/MP・発火時刻/target/HP/AL receiptを段階別に残す。視覚用と断定せず、5つのroot next3参照を5命中とみなさない。
+[GOLDEN DESIGNED NOT RUN] 合法generic取得者とtoono senyo所持者を確認後、同一旧SAVE/SHA・seed・入力・位置・MP299/300/301で子名別の実画面弾数/位置/幅高/拡大・HP/MP/恐慌/死亡・次tickを旧新比較。目視だけで区別不能な内部propertyはINELIGIBLE。未改変原作Gameplay PASS0/strict MATCH0。
+[READY GATE] B-owner detail＋data/T012_BATTLE_CALC.md＋evidence/LANE_B_HANDOFF.mdの3/3保存・再読後に限定STATIC SOURCE READY。EだけMASTER/T018正式統合。既拒否B-20261013-2217-01、B-20261014-0317-01等はNOT READY据置。
+[NEXT/SAFETY] P0はなおMP fallback/Unit latch(+1E560/+18688)/4E7ED0最終作用・Skill+A18/A1C・target優先。原本ZIP/EXE/SAV実行・変更0、REA/Ghidra/Remoteや安全拒否迂回0。MASTER/T018/他lane/rea_lab/dev_lab/Work/WRQ/Git/push/設定/automation変更0。CPU実使用率n/a、既存terminal PID21336入力待ち・重処理起動0。

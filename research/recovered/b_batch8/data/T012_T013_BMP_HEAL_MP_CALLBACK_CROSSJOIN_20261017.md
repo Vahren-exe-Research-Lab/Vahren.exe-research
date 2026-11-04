@@ -1,0 +1,13 @@
+# B-20261017-1813-01｜T012/T013 MP回復Skillの属性登録とMP満量除外・比率選別の原文×保存native接続
+[OWNER/CLASS] 2026-10-17 18時台JST。T012 primary/T013 target補助/T011原文参照。限定STATIC ORIGINAL SCRIPT×PRE-SAVED NATIVE CROSSJOIN。旧Gameplay actual PASS0、新旧strict MATCH0、Task DONE+0。
+[ORIGINAL RAW] UTF-8正規化迫真0.67の30_スキル/F13_heal_support.dat：skill b_mp(L176-199) と skill s_mp(L279-302) は別IDだがともに attr=mp,func=heal,str=fix*20,mp=-1 を直接宣言。b_mp range300/gun_delay=b_mp*1、s_mp range0/gun_delay=b_mp*3。別子 b_mp_faroff:b_mp L205-213はfar=off/fkey=b_mp*2、子の実効attr継承はVERIFY。
+[SAVED REGISTER] 既保存exe/T013_A18_A1C_CALLBACK_MAP_20261012.txt：VA0x59FA40..0x59FAE3はcompiled Skill attr name(+0x110)の19キー比較。mp index01一致でSkill+0xA18=0x599060、Skill+0xA1C=0x599360。登録の仕組みは既B-20261012-0108-01/1920-02既知。本件の新増分はb_mp/s_mp原作実名と該当callbackの条件付き接続のみ。
+[SAVED FILTER] 既保存exe/T013_NORMAL_AI_BOUNDED_NATIVE_20261012.txt VA0x599360..0x599377で候補Unit+0x94の現在MPと+0xE0の最大MPをsigned比較、現在>=最大ならAL1。既T012§50/§51のVA0x54A170 erase-ifへ+A1C predicateとして渡る経路ならAL1候補を効果前に削除する。実効compiled attr/mp登録・合法戦場での関数到達はVERIFY。
+[SAVED PRIORITY] 同保存native VA0x599060..0x5990C4は候補2者のMP(+0x94)/最大MP(+0xE0)のx87比率を比較し、同率時にrecord+0x8距離doubleを参照。既B-20261012-1920-02の順序規則を再確定・再READY算入せず、本件は原作MP heal技能とその属性固有比較へ結ぶ。max0/FPU例外/入力順・tie/実際の最終targetはVERIFY。
+[CALLSITE LIMIT] 既T012§52-53：normal heal側は候補構築→+A1C除外→optional+A18並べ替え・候補数>4時の先頭4-record helper、その後の選別とMP引落0x5461D9→core0x5461FF。heal+allfunc別direct callerへこの+A18/MP順序を移植しない。b_mp/s_mpの原文にallfunc直接指定は見えないが、native実効モードは別VERIFY。
+[STATIC CONDITIONAL CONSEQUENCE] 元Skillのattr=mpがnative registered effective Skillにも保持され、該当normal-heal処理へ合法到達した場合、MP満量(current>=max)候補は選別前に除去対象となり、残存候補の評価にはMP比率/同率距離が関係する。『MPが最も少ないUnitへ必ず自動回復』『同一Unitでb_mp/s_mp併有』『回復やMP支払い成功』はいずれも未証明。
+[DEDUP/HOLD] 旧B-20261017-1517-01はgun_delay異func・Class、B-20261017-1715-01はb_mp_faroff/SKRN取得、B-20261013-1945-01は19キー一致、B-20261012-1920-02はcallback実体。新しく数えるのは原文2MP-heal→登録MP callback→候補処理の限定crossjoinだけ。旧B1216/B1613とE旧cp172統合拒否はBLOCKEDのまま。安全拒否済callback新逆解析を行わず既保存資料のみread-only。
+[REIMPLEMENT] raw Skill attr/func/parent/gun_delay と effective Skill callback登録を別段階に保持。候補元配列、A1C削除前後、A18比較・>4 helper、最終対象、MP引落前後、core、RNG・戻PCを別receipt。MP最大0や負値を勝手に正常化しない。
+[GOLDEN DESIGNED_NOT_RUN] 合法boss_web保有b_mpを第一候補、SKRN子b_mp_faroffとs_mpは取得・effective確認後のみ。比較条件：候補MP max-1/max/max+1、同MP率・距離差、候補3/4/5、range0/300、同旧EXE/DAT/SAVE SHA・seed/UI入力と新実装を可視対象/MP変化/発動/次tickで比較。内部pointerやstatic推論だけならINELIGIBLE。旧実機PASS0/strict0。
+[NEXT/VERIFY] compiled attr親子継承・normal heal到達の合法証明、MP率x87 profileとtie・first-four helper、MP引落と回復の最終順、0x4E7ED0と射撃結果・latch/方向、T013最終target優先は未解決。重いREA/Ghidra/原本EXE実行0、Remote/Git/MASTER/他owner/設定/automation変更0。
+[STATE] DETAIL WRITTEN; T012/T013/HANDOFF readbackを含む4/4確認までB限定STATIC READY保留。E正式統合は別。

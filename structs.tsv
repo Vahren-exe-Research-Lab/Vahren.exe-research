@@ -113,3 +113,7 @@ ScriptEngine	0x1EED88	vec	executionPCs	VM の並列 PC 列。現在フレーム�
 ScriptEngine	0x1EED98	vec	executionModes	VM の並列実行モード列。現在フレームは末尾要素。シナリオの phase identity とは独立。	静的確認	data/T010_EVENT_SCHEDULER.md lines229-259,344; F§82.1
 ScriptEngine	0x1EEDA8	vec	executionFrameKinds	VM の並列フレーム種別列。現在フレームは末尾要素。frameInstallMode=0 では先頭に0を挿入。	静的確認	data/T010_EVENT_SCHEDULER.md lines229-259,344; F§82.1
 ScriptEngine	0x1EEC44	u8	battleActive	mode2 で戦闘更新の前後に読む byte のゲート。合法な状態遷移の全体は未確認。	静的確認	data/T010_EVENT_SCHEDULER.md lines375-376; F§82.1
+UnitRuntime	0x90	unknown	hp	実行中Unit-like基点のHP。enabled HP後処理で整数として読む。幅・符号型不明。UnitDefではない。 回収済み研究本文のみ。幅・具体的class同一性未確定。	静的確認	data/T012_HEAL_HP_POST_577100_CONTRACT_20261013.md lines4-5; REF_SKILL_POST_ACTION.md lines69-71
+UnitRuntime	0xDC	unknown	hpMax	実行中Unit-like基点のHPmax。HP段階計算の整数除数。幅・符号型不明。ゼロ除数等は未確定。 回収済み研究本文のみ。幅・具体的class同一性未確定。	静的確認	data/T012_HEAL_HP_POST_577100_CONTRACT_20261013.md lines4-5; REF_SKILL_POST_ACTION.md lines69-71
+UnitRuntime	0x738	unknown	hpTier	HP割合から整数化後signed 0..20へclampして書く段階値。HP本体と別。格納幅・宣言符号型不明。 回収済み研究本文のみ。幅・具体的class同一性未確定。	静的確認	data/T012_HEAL_HP_POST_577100_CONTRACT_20261013.md lines4-5; data/T012_HP_LIFEBAR_TIMER_CROSSCALL_20261013.md line7
+UnitRuntime	0x185F4	unknown	hpRegistrationCountdown	HP後処理で0/150を書く登録関連残量候補。enabled経路は登録skip時も150再設定。幅・宣言符号型・tick単位不明。 回収済み研究本文のみ。幅・具体的class同一性未確定。	静的確認	data/T012_HEAL_HP_POST_577100_CONTRACT_20261013.md lines4-6; data/T012_HP_LIFEBAR_TIMER_CROSSCALL_20261013.md lines4-7; REF_SKILL_POST_ACTION.md line72

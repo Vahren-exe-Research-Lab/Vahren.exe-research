@@ -64,4 +64,10 @@
 - [research/recovered/b_batch2/T012_RUSH_GAMETASK_VIRTUAL_STATUS_GATE_NATIVE_20261027_17H.md 行 19](../../research/recovered/b_batch2/T012_RUSH_GAMETASK_VIRTUAL_STATUS_GATE_NATIVE_20261027_17H.md?plain=1#L19-L19) — [GOLDEN] 無改変原作ver0.67＋20倍強化前DAT、同一SAVE/MAP/Skill/input/RNGを使用し、Rush+0x210=0/非0とM+8/M+0x14を合法な原作状態から観測する。実tick間隔、summon数、UI・HP/MP/状態/exp/next RNGを記録し新実装と比較。DESIG
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 
+- [research/recovered/b_batch8/data/T012_RUSH_VTABLE_SLOT2345_STATUS_GETTER_STATIC_20261021_1714.md 行 9](../../research/recovered/b_batch8/data/T012_RUSH_VTABLE_SLOT2345_STATUS_GETTER_STATIC_20261021_1714.md?plain=1#L9-L9) — [ASM JOIN] 保存済B owner exe/T013_RUSH_RECORD_54F990_NATIVE_20261013.txt。0x54F9C5: byte[Rush+0x210]=0；0x54F9DA actor byte+0x65==0なら0x54F9E2 CALL 54FD50後、0x54F9ED a
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/b_batch8/data/T012_RUSH_VTABLE_SLOT2345_STATUS_GETTER_STATIC_20261021_1714.md 行 10](../../research/recovered/b_batch8/data/T012_RUSH_VTABLE_SLOT2345_STATUS_GETTER_STATIC_20261021_1714.md?plain=1#L10-L10) — [ASM JOIN CONT] actor byte+0x65!=0なら0x54F9FB→0x54FA01: [actor+0x1C8]+0x1A8 byte→Rush+0x210（0x54FA07）。両枝は0x54FA0Dに合流。
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

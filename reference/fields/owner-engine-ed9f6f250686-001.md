@@ -106,6 +106,12 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 220](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L220-L220) — - **文字列の解決（0x49C450）**: `@名前` は文字列リスト変数（engine+0x1E863C）の先頭要素。存在しない、または空なら `""` で、変数は作られない。`@`で始まらない名前はその文字列自体。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+<a id="field-1eebec"></a>
+## engine + 0x1EEBEC
+
+- [research/recovered/b_batch8/data/T013_CASE8_LIVE_FILTER_TREE_ORDER_VECTOR_ABI_20261024_0110.md 行 7](../../research/recovered/b_batch8/data/T013_CASE8_LIVE_FILTER_TREE_ORDER_VECTOR_ABI_20261024_0110.md?plain=1#L7-L7) — [NEW TREE RANGE] 0x49E96B～0x49E980: `ecx=engine+0x1EEBEC`に対し`0x49F410`を呼び、文字列キーからtree iterator2端を取得。0x49F410 Ghidraはtree node+0x1Cの比較と0x402C40 comparatorを含む。キー比
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 <a id="field-1eec3c"></a>
 ## engine + 0x1EEC3C
 
