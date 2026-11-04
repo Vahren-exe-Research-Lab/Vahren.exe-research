@@ -1,0 +1,195 @@
+"""Portable reference regression checks using a small independent source fixture."""
+import hashlib
+import importlib.util
+import json
+from pathlib import Path
+import subprocess
+import sys
+import tempfile
+import unittest
+
+spec = importlib.util.spec_from_file_location("reference", Path(__file__).with_name("reference.py"))
+reference = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(reference)
+
+
+class ReferenceTests(unittest.TestCase):
+    def setUp(self):
+        self.directory = tempfile.TemporaryDirectory()
+        self.addCleanup(self.directory.cleanup)
+        self.root = Path(self.directory.name)
+        (self.root / "reference").mkdir()
+        (self.root / "symbols.tsv").write_text(
+            "0x55BC60\tfunc\tStatusWnd_Layout\t詳細パネルの解雇ボタン\t実機確認\tF§95\n", encoding="utf-8")
+        (self.root / "structs.tsv").write_text(
+            "StatusWnd\t0x1C6\tu8\tbtnDismiss\t解雇の印\t静的確認\tF§95\n", encoding="utf-8")
+        source = self.root / "evidence.md"
+        source.write_text("# Evidence\n関数が印を書く。\n", encoding="utf-8")
+        relation = {
+            "id": "dismiss-write", "subject": "va:0x0055BC60", "predicate": "writes",
+            "object": "field:StatusWnd:0x1C6", "summary": "解雇の印を書く",
+            "confidence": "静的確認", "target_version": "ver0.67",
+            "source": {"path": "evidence.md", "sha256": hashlib.sha256(source.read_bytes()).hexdigest(),
+                       "start_line": 2, "end_line": 2}}
+        self.relation = relation
+        self.save_relation()
+
+    def save_relation(self):
+        (self.root / "reference/relations.jsonl").write_text(
+            json.dumps(self.relation, ensure_ascii=False) + "\n", encoding="utf-8")
+
+    def test_address_names_and_reverse_field_lookup(self):
+        data = reference.load(self.root)
+        for query in ("0x55BC60", "0055bc60", "Vahren.exe+15BC60", "StatusWnd_Layout", "解雇"):
+            self.assertTrue(reference.search(data, query), query)
+        matches = reference.search(data, "StatusWnd+0x1C6")
+        self.assertTrue(any(row.get("id") == "dismiss-write" for row in matches))
+
+    def test_build_links_both_directions_and_preserves_confidence(self):
+        data = reference.load(self.root)
+        files = reference.render(self.root, data)
+        symbol = files["reference/symbols/0055BC60.md"]
+        structure = files["reference/structs/StatusWnd.md"]
+        self.assertIn("../structs/StatusWnd.md#field-1c6", symbol)
+        self.assertIn("../symbols/0055BC60.md", structure)
+        self.assertIn("実機確認", symbol)
+        self.assertIn("静的確認", symbol)
+        self.assertIn("evidence.md?plain=1#L2-L2", symbol)
+
+    def test_stale_source_and_escape_are_rejected(self):
+        (self.root / "evidence.md").write_text("changed", encoding="utf-8")
+        with self.assertRaises(ValueError):
+            reference.load(self.root)
+        self.relation["source"]["path"] = "../outside.md"
+        self.save_relation()
+        with self.assertRaises(ValueError):
+            reference.load(self.root)
+
+    def test_invalid_line_range_is_rejected(self):
+        self.relation["source"]["end_line"] = 100
+        self.save_relation()
+        with self.assertRaises(ValueError):
+            reference.load(self.root)
+
+    def test_address_search_is_case_insensitive(self):
+        data = reference.load(self.root)
+        self.assertTrue(reference.search(data, "0X55bc60"))
+
+    def test_structure_filename_and_link_keep_names_inside_directory(self):
+        self.assertEqual(reference.struct_filename("A/B"), "A%2FB.md")
+        self.assertIn("A%252FB.md", reference.endpoint_link("struct:A/B", {}))
+
+    def add_recovery_ledger(self):
+        directory = self.root / "research/recovered"
+        directory.mkdir(parents=True)
+        report = directory / "native.md"
+        report.write_text("# Native report\nVA0x55BC60 calls 0X5739E4; field +0x1C6.\n", encoding="utf-8")
+        digest = hashlib.sha256(report.read_bytes()).hexdigest()
+        ledger = directory / "RECOVERY_LEDGER.tsv"
+        ledger.write_text("destination\tdestination_sha256\nresearch/recovered/native.md\t" + digest + "\n", encoding="utf-8")
+        return report, ledger
+
+    def test_recovered_unknown_address_is_searchable_with_line_provenance(self):
+        self.add_recovery_ledger()
+        data = reference.load(self.root)
+        hits = reference.search(data, "0x5739e4")
+        self.assertEqual(len(hits), 1)
+        mention = hits[0]
+        self.assertEqual(mention["kind"], "source_mention")
+        self.assertEqual(mention["source"]["start_line"], 2)
+        self.assertIn("検証なし", mention["confidence"])
+        self.assertFalse(reference.search(data, "va:0x000001C6"))
+
+    def test_existing_symbol_links_mention_without_promoting_confidence(self):
+        self.add_recovery_ledger()
+        data = reference.load(self.root)
+        page = reference.render(self.root, data)["reference/symbols/0055BC60.md"]
+        self.assertIn("研究文書での言及", page)
+        self.assertIn("native.md?plain=1#L2-L2", page)
+        self.assertIn("辞書の確度　実機確認", page)
+        self.assertIn("意味・動作の検証なし", page)
+
+    def test_recovered_ledger_rejects_stale_missing_and_escaping_sources(self):
+        report, ledger = self.add_recovery_ledger()
+        report.write_text("changed", encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "Stale"):
+            reference.load(self.root)
+        report.unlink()
+        with self.assertRaisesRegex(ValueError, "Missing"):
+            reference.load(self.root)
+        ledger.write_text("destination\tdestination_sha256\n../escape.md\t00\n", encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "escapes"):
+            reference.load(self.root)
+
+    def add_layout_alias(self, aliases):
+        with (self.root / "symbols.tsv").open("a", encoding="utf-8") as stream:
+            stream.write("0x8BCD48\tobject\tg_TempStatusWnd\t一時パネル\t静的確認\tF§95\n")
+        layout = dict(self.relation, id="temp-layout", subject="va:0x008BCD48",
+                      predicate="uses_layout", object="struct:StatusWnd", aliases=aliases)
+        self.write_relations([self.relation, layout])
+        return layout
+
+    def write_relations(self, rows):
+        (self.root / "reference/relations.jsonl").write_text(
+            "".join(json.dumps(row, ensure_ascii=False) + "\n" for row in rows), encoding="utf-8")
+
+    def test_explicit_layout_alias_resolves_field_and_reverse_relations(self):
+        self.add_layout_alias(["TempStatusWnd"])
+        data = reference.load(self.root)
+        for query in ("TempStatusWnd+0x1C6", "tempstatuswnd + 0x1c6"):
+            hits = reference.search(data, query)
+            self.assertTrue(any(row["id"] == "field:StatusWnd:0x1C6" for row in hits))
+            self.assertTrue(any(row["id"] == "dismiss-write" for row in hits))
+
+    def test_alias_requires_explicit_layout_and_rejects_bad_names(self):
+        layout = self.add_layout_alias(["TempStatusWnd"])
+        for aliases in ([""], ["StatusWnd"], "TempStatusWnd", [9]):
+            layout["aliases"] = aliases
+            self.write_relations([self.relation, layout])
+            with self.assertRaises(ValueError):
+                reference.load(self.root)
+        layout["aliases"] = ["TempStatusWnd"]
+        layout["predicate"] = "calls"
+        self.write_relations([self.relation, layout])
+        with self.assertRaises(ValueError):
+            reference.load(self.root)
+
+    def test_alias_cannot_point_to_two_layouts(self):
+        layout = self.add_layout_alias(["TempStatusWnd"])
+        with (self.root / "structs.tsv").open("a", encoding="utf-8") as stream:
+            stream.write("OtherWnd\t0x10\tu8\tflag\t印\t静的確認\tF§95\n")
+        conflicting = dict(layout, id="other-layout", object="struct:OtherWnd")
+        self.write_relations([self.relation, layout, conflicting])
+        with self.assertRaisesRegex(ValueError, "Conflicting"):
+            reference.load(self.root)
+
+    def test_duplicate_dictionary_identity_is_rejected(self):
+        for filename in ("symbols.tsv", "structs.tsv"):
+            path = self.root / filename
+            original = path.read_text(encoding="utf-8")
+            path.write_text(original + original, encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "Duplicate dictionary ID"):
+                reference.load(self.root)
+            path.write_text(original, encoding="utf-8")
+
+    def test_check_detects_obsolete_generated_pages_without_deleting(self):
+        tool = Path(__file__).with_name("reference.py")
+        command = [sys.executable, "-B", str(tool), "--root", str(self.root)]
+        built = subprocess.run(command + ["build"], capture_output=True, text=True, encoding="utf-8")
+        self.assertEqual(built.returncode, 0, built.stderr)
+        directory = self.root / "reference/symbols"
+        custom = directory / "notes.md"
+        custom.write_text("User notes\n", encoding="utf-8")
+        checked = subprocess.run(command + ["check"], capture_output=True, text=True, encoding="utf-8")
+        self.assertEqual(checked.returncode, 0, checked.stderr)
+        obsolete = directory / "00000001.md"
+        obsolete.write_text("<!-- Generated by tools/reference.py. -->\nold", encoding="utf-8")
+        checked = subprocess.run(command + ["check"], capture_output=True, text=True, encoding="utf-8")
+        self.assertNotEqual(checked.returncode, 0)
+        self.assertIn("00000001.md", checked.stderr)
+        self.assertTrue(obsolete.exists())
+        self.assertEqual(custom.read_text(encoding="utf-8"), "User notes\n")
+
+
+if __name__ == "__main__":
+    unittest.main()
