@@ -38,6 +38,7 @@
 - 型　`ptr`
 - 辞書の確度　実機確認
 - 辞書の出典表記　C(§93), W
+- 出典 [C(§93)](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-93)。Claude解析記録へのC(§...)という明示的な引用。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L81)
 
 読み手・書き手の個別採録は未実施です。
@@ -50,6 +51,7 @@
 - 型　`i32`
 - 辞書の確度　静的確認
 - 辞書の出典表記　F§95
+- 出典 [F§95](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-95)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L82)
 
 - [StatusWnd::vf15_shared2](../symbols/00560650.md) → `writes` → [StatusWnd + 0x1BC pressedIndex](../structs/StatusWnd.md#field-1bc)。対象の印が立つ矩形に当たると押下中の番号を入れる。 （静的確認（元報告の記述。今回の原作再検証なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/DAT_UI_V4_STATUS_PANEL.md?plain=1#L14-L18) · `PANEL-DOWN-INDEX`
@@ -65,6 +67,7 @@
 - 型　`u8`
 - 辞書の確度　実機確認
 - 辞書の出典表記　C(§93)
+- 出典 [C(§93)](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-93)。Claude解析記録へのC(§...)という明示的な引用。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L83)
 
 - [StatusWnd_Layout](../symbols/0055BC60.md) → `writes` → [StatusWnd + 0x1C4 btnHire](../structs/StatusWnd.md#field-1c4)。雇用ボタンを描いた後に印を立てる。 （静的確認（元報告の記述。今回の原作再検証なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/DAT_UI_V4_STATUS_PANEL.md?plain=1#L10-L12) · `PANEL-LAYOUT-1C4`
@@ -78,6 +81,7 @@
 - 型　`u8`
 - 辞書の確度　静的確認
 - 辞書の出典表記　C(§93)
+- 出典 [C(§93)](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-93)。Claude解析記録へのC(§...)という明示的な引用。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L84)
 
 - [StatusWnd_Layout](../symbols/0055BC60.md) → `writes` → [StatusWnd + 0x1C5 btnExtract](../structs/StatusWnd.md#field-1c5)。召上げボタンを描いた後に印を立てる。 （静的確認（元報告の記述。今回の原作再検証なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/DAT_UI_V4_STATUS_PANEL.md?plain=1#L10-L12) · `PANEL-LAYOUT-1C5`
@@ -91,6 +95,7 @@
 - 型　`u8`
 - 辞書の確度　実機確認
 - 辞書の出典表記　C(§93)
+- 出典 [C(§93)](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-93)。Claude解析記録へのC(§...)という明示的な引用。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L85)
 
 - [StatusWnd_Layout](../symbols/0055BC60.md) → `writes` → [StatusWnd + 0x1C6 btnDismiss](../structs/StatusWnd.md#field-1c6)。解雇ボタンを描いた後に印を立てる。 （静的確認（元報告の記述。今回の原作再検証なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/DAT_UI_V4_STATUS_PANEL.md?plain=1#L10-L12) · `PANEL-LAYOUT-1C6`
@@ -104,6 +109,7 @@
 - 型　`u8`
 - 辞書の確度　静的確認
 - 辞書の出典表記　C(§93)
+- 出典 [C(§93)](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-93)。Claude解析記録へのC(§...)という明示的な引用。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L86)
 
 - [StatusWnd_Layout](../symbols/0055BC60.md) → `writes` → [StatusWnd + 0x1C7 btnItem](../structs/StatusWnd.md#field-1c7)。アイテムボタンを描いた後に印を立てる。 （静的確認（元報告の記述。今回の原作再検証なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/DAT_UI_V4_STATUS_PANEL.md?plain=1#L10-L12) · `PANEL-LAYOUT-1C7`

@@ -138,6 +138,62 @@ class ReferenceTests(unittest.TestCase):
         self.assertIn("RECOVERY_LEDGER.tsv?plain=1#L2-L2", page)
         self.assertIn("always grants EXP", page)
 
+    def add_citation_registry(self):
+        source = self.root / "findings.md"
+        source.write_text('<a id="f-95"></a>\n## 95. Panel\nHistorical research\n', encoding="utf-8")
+        registry = {"F": {"path": "findings.md", "sha256": hashlib.sha256(source.read_bytes()).hexdigest(),
+                          "sections": {"95": "f-95"}, "limitations": "Partially redacted historical research"}}
+        (self.root / "reference/sources.json").write_text(json.dumps(registry), encoding="utf-8")
+        return source, registry
+
+    def test_citations_resolve_for_symbols_fields_and_subsections(self):
+        self.add_citation_registry()
+        symbol_path = self.root / "symbols.tsv"
+        symbol_path.write_text(symbol_path.read_text(encoding="utf-8").replace("F§95", "F§95.2, F§999, X§1"), encoding="utf-8")
+        data = reference.load(self.root)
+        symbol = reference.search(data, "0x55BC60")[0]
+        self.assertEqual(symbol["source_links"][0]["label"], "F§95.2")
+        self.assertEqual(symbol["source_links"][0]["anchor"], "f-95")
+        self.assertEqual(symbol["unresolved_citations"], ["F§999", "X§1"])
+        self.assertIn("Partially redacted", symbol["source_links"][0]["limitations"])
+        self.assertEqual(data["fields"][0]["source_links"][0]["label"], "F§95")
+        pages = reference.render(self.root, data)
+        for path in ("reference/symbols/0055BC60.md", "reference/structs/StatusWnd.md"):
+            self.assertIn("[F§95", pages[path])
+            self.assertIn("../../findings.md#f-95", pages[path])
+            self.assertIn("Partially redacted historical research", pages[path])
+        self.assertIn("F§999", pages["reference/symbols/0055BC60.md"])
+        self.assertNotIn("#f-999", pages["reference/symbols/0055BC60.md"])
+
+    def test_citation_registry_stale_hash_missing_anchor_and_escape_fail(self):
+        source, registry = self.add_citation_registry()
+        source.write_text("changed", encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "Stale"):
+            reference.load(self.root)
+        registry["F"]["sha256"] = hashlib.sha256(source.read_bytes()).hexdigest()
+        path = self.root / "reference/sources.json"
+        path.write_text(json.dumps(registry), encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "anchor"):
+            reference.load(self.root)
+        registry["F"]["path"] = "../outside.md"
+        path.write_text(json.dumps(registry), encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "escapes"):
+            reference.load(self.root)
+
+    def test_explicit_parenthesized_citations_keep_label_and_subsection(self):
+        _, registry = self.add_citation_registry()
+        registry["C"] = registry["F"]
+        (self.root / "reference/sources.json").write_text(json.dumps(registry), encoding="utf-8")
+        path = self.root / "structs.tsv"
+        path.write_text(path.read_text(encoding="utf-8").replace("F§95", "C(§95), C(§95.2), Z(§93)"), encoding="utf-8")
+        data = reference.load(self.root)
+        field = data["fields"][0]
+        self.assertEqual([item["label"] for item in field["source_links"]], ["C(§95)", "C(§95.2)"])
+        self.assertEqual([item["anchor"] for item in field["source_links"]], ["f-95", "f-95"])
+        self.assertEqual(field["unresolved_citations"], ["Z(§93)"])
+        page = reference.render(self.root, data)["reference/structs/StatusWnd.md"]
+        self.assertIn("[C(§95.2)](../../findings.md#f-95)", page)
+
     def test_recovered_ledger_rejects_stale_missing_and_escaping_sources(self):
         report, ledger = self.add_recovery_ledger()
         report.write_text("changed", encoding="utf-8")

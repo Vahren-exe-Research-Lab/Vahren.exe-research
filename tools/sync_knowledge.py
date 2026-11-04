@@ -719,6 +719,13 @@ FILES += (
     'tools/recovery_coverage.py',
     'tools/test_recovery_coverage.py',
 )
+# Reviewed screened findings and citation registry.
+FILES += (
+    'reference/sources.json',
+    'research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md',
+    'research/recovered/findings/README.md',
+    'research/recovered/findings/SCREENING.json',
+)
 ALLOWED = set(FILES) | {MANIFEST}
 RESTRICTED = (
     re.compile(r"(?i)\b[A-Z]:[\\/]+Users[\\/]+[A-Za-z0-9._-]+"),

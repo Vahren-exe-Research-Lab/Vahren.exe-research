@@ -13,6 +13,7 @@
 - 型　`u8`
 - 辞書の確度　静的確認
 - 辞書の出典表記　wiki/T019, F§79.2
+- 出典 [F§79.2](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-79)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L105)
 
 - [Save_WriteTurnState](../symbols/00471D20.md) → `reads` → [TurnState + 0x09 endFlag09](../structs/TurnState.md#field-9)。通常セーブへの書出し対象。メモリ上の状態を保存形式へ変換する。 （静的確認（既存研究の整理。今回の原作再検証なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L169-L175) · `SAVE-TURN-WRITE-9`
@@ -26,6 +27,7 @@
 - 型　`u8`
 - 辞書の確度　静的確認
 - 辞書の出典表記　wiki/T019, F§78
+- 出典 [F§78](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-78)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L106)
 
 - [Save_WriteTurnState](../symbols/00471D20.md) → `reads` → [TurnState + 0x0A gameClear](../structs/TurnState.md#field-a)。通常セーブへの書出し対象。メモリ上の状態を保存形式へ変換する。 （静的確認（既存研究の整理。今回の原作再検証なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L169-L176) · `SAVE-TURN-WRITE-A`
@@ -39,6 +41,8 @@
 - 型　`i32`
 - 辞書の確度　静的確認
 - 辞書の出典表記　F§62.1, S1101§2
+- 出典 [F§62.1](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-62)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
+- 本文リンク未解決　S1101§2
 - [元の辞書行](../../structs.tsv#L107)
 
 - [Save_WriteTurnState](../symbols/00471D20.md) → `reads` → [TurnState + 0x14 turn](../structs/TurnState.md#field-14)。通常セーブへの書出し対象。メモリ上の状態を保存形式へ変換する。 （静的確認（既存研究の整理。今回の原作再検証なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L169-L177) · `SAVE-TURN-WRITE-14`
@@ -52,6 +56,7 @@
 - 型　`vec`
 - 辞書の確度　静的確認
 - 辞書の出典表記　F§59, T014§normal save tail
+- 出典 [F§59](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-59)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L108)
 
 - [Save_WriteTurnState](../symbols/00471D20.md) → `reads` → [TurnState + 0x18 order](../structs/TurnState.md#field-18)。通常セーブへの書出し対象。メモリ上の状態を保存形式へ変換する。 （静的確認（既存研究の整理。今回の原作再検証なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L169-L179) · `SAVE-TURN-WRITE-18`
@@ -65,6 +70,7 @@
 - 型　`i32`
 - 辞書の確度　静的確認
 - 辞書の出典表記　F§59, §69.2, §76.2
+- 出典 [F§59](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-59)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L109)
 
 - [Save_WriteTurnState](../symbols/00471D20.md) → `reads` → [TurnState + 0x38 phase](../structs/TurnState.md#field-38)。通常セーブへの書出し対象。メモリ上の状態を保存形式へ変換する。 （静的確認（既存研究の整理。今回の原作再検証なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L169-L178) · `SAVE-TURN-WRITE-38`

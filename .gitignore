@@ -729,3 +729,10 @@
 !/research/recovered/exp/README.md
 !/tools/recovery_coverage.py
 !/tools/test_recovery_coverage.py
+
+# Screened findings and citation registry
+!/research/recovered/findings/
+!/reference/sources.json
+!/research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md
+!/research/recovered/findings/README.md
+!/research/recovered/findings/SCREENING.json
