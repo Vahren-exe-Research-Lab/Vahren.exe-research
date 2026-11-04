@@ -4,6 +4,18 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-10"></a>
+## param_3 + 0x10
+
+- [research/recovered/e_batch2/reports/tests/E_OFFLINE_SYNC_20261029/T020_DIALOG_PREDISPATCH_GOLDEN_RUN_ID_AUDIT_20261028_1849.md 行 18](../../research/recovered/e_batch2/reports/tests/E_OFFLINE_SYNC_20261029/T020_DIALOG_PREDISPATCH_GOLDEN_RUN_ID_AUDIT_20261028_1849.md?plain=1#L18-L18) — - `0x0049C450`の出力先文字列相当構造体では`param_3+0x14=0xF`、`param_3+0x10=0`、先頭バイト0をセット後、`FUN_00402710`で文字列相当を複写する。この処理は登録前の入力形成であってダイアログ表示成功ではない。
+  制約・訂正　Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+<a id="field-14"></a>
+## param_3 + 0x14
+
+- [research/recovered/e_batch2/reports/tests/E_OFFLINE_SYNC_20261029/T020_DIALOG_PREDISPATCH_GOLDEN_RUN_ID_AUDIT_20261028_1849.md 行 18](../../research/recovered/e_batch2/reports/tests/E_OFFLINE_SYNC_20261029/T020_DIALOG_PREDISPATCH_GOLDEN_RUN_ID_AUDIT_20261028_1849.md?plain=1#L18-L18) — - `0x0049C450`の出力先文字列相当構造体では`param_3+0x14=0xF`、`param_3+0x10=0`、先頭バイト0をセット後、`FUN_00402710`で文字列相当を複写する。この処理は登録前の入力形成であってダイアログ表示成功ではない。
+  制約・訂正　Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
 <a id="field-dc"></a>
 ## param_3 + 0xDC
 

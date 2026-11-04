@@ -55,7 +55,7 @@ DAT の数値変数の表
 - 出典 [F§82](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-82)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L39)
 
-読み手・書き手の個別採録は未実施です。
+- [GameManager + 0x504 engine](../structs/GameManager.md#field-504) → `uses_layout` → [ScriptEngine](../structs/ScriptEngine.md)。訂正済みの基準表でE=engine=G+0x504を確認。ScriptEngineはこの埋め込みE領域に付けた事典上のレイアウト名であり、原作のC++クラス名・RTTI名を確定したものではない。 （静的確認（回収済み研究の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3538-L3545) · `MEM-VM-EMBEDDED-ENGINE-LAYOUT`
 
 <a id="field-1ef144"></a>
 ## 0x1EF144 sceneId

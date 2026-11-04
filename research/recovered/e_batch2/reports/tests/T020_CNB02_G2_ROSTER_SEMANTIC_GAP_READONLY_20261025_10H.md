@@ -1,0 +1,23 @@
+# E-AUDIT-20261025-10H-T018-T020-G2-ROSTER-SEMANTIC-CHECK-01
+Owner E / T018,T020. 2026-10-25 10H JST. STATIC CODE READ + IN-MEMORY SYNTHETIC PROBE / VERIFY / NOT READY / NATIVE GAME NOT RUN.
+## Independent contribution
+Read-only inspected E-owned tests/t020_cnb02_receipt_provenance_gate_20261021_2345.py SHA256 34BC469C50471A1BCE58D2815D6E5D9A4CF45D6CD2232898312FDE69A15E349D; existing G1 timing policy T020_G1_ATTACK_PHASE_RECEIPT_POLICY_RECONCILIATION_20261024_2053.md SHA C7FDA98DD1E77EFDA506374167029DE06B587DF24E806BCF94BB122788322F11.
+Existing gate checks g2.map_id truthy, sides keys exactly attack/defense/support and each value list, roster nonempty list and every record's side/unit_visible/troop_visible truthy. It does NOT check roster.side domain or association with side lists, actual deployed identity, element type, unique identity, or match to MAP file. E-owned byte-binding gate is separate (SHA B1382005D55780166DE46F8FB20AA5F214FF105101EA84241B5E5DC9278151AB).
+Original EXE identity by prior manifest only: E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187; not recalculated and original EXE not run.
+## Focused read-only tests actually executed
+Used Python 3.12.10 -B to import existing E gate, create deepcopy of its OWN synthetic base, change one field per case, call gate in memory. Original .py and all fixtures were NOT edited. Both runs exit code 0; 8 first-run and 4 second-run outputs captured in this report.
+SYNTHETIC true baseline => SYNTHETIC_SCHEMA_ONLY; roster.side='neutral' => SYNTHETIC_SCHEMA_ONLY; roster.side=7 => SYNTHETIC_SCHEMA_ONLY; attack=[] plus defense=[] => SYNTHETIC_SCHEMA_ONLY.
+Exact roster duplicate => SYNTHETIC_SCHEMA_ONLY; map_id='STATIC_UNCONFIRMED_MAP' => SYNTHETIC_SCHEMA_ONLY; troop_visible=42 => SYNTHETIC_SCHEMA_ONLY; missing support key => VERIFY (positive negative-control).
+SYNTHETIC false with pre-filled placeholder 64hex hashes/old_observed=true: baseline => ELIGIBLE_FOR_REVIEW_NOT_MATCH; roster.side='neutral' => same; empty attack+defense => same; unit_visible=17 => same.
+No forged receipt is real original-game evidence. No case returned gameplay PASS or strict MATCH. Executed outcomes are existing schema predicate observations, NOT a new maintained regression suite; new native dynamic observations=0.
+## E acceptance policy candidate (design only)
+G2 evidence needs each roster record's side in {attack,defense,support}, Unit/Troop typed identifiers and per-side membership consistency; attack and defense must be demonstrably present in a true launched battle. Support may legitimately be empty.
+Distinguish per-battle ordered deployment evidence from static Spot.member, definition pointer lists, and UI text; prohibit undocumented duplicate roster identity except if independent original semantics justifies it. Real MAP ID/bytes and the same battle/run/clock/source chain must be verified independently; never infer G2 from shape success.
+Candidate regression S01 unknown side; S02 numeric side; S03 empty attack+defense; S04 duplicate roster; S05 unproven map placeholder; S06 numeric Unit/Troop; S07 missing support. DESIGNED for future strict acceptor, NOT added to old code and NOT RUN as new suite. Existing gate remains unchanged intentionally.
+## E status and safety
+T019 newly confirmed original Wiki/DAT/EXE contradiction=0. GameClear lexical DAT13/TXT2 scope RESOLVED, script2 winner/phase flag/TXT runtime/gwrite VERIFY (prior status).
+C-NB02 original legal old UI G0 sp2->sp16, G1 same-run SAVE bytes+input, G2 observed MAP/3 sides/ordered Unit-Troop, G3 result, G4 World delta all NOT QUALIFIED. New E DYNAMIC OBSERVED=0; actual Golden PASS=0; strict MATCH=0.
+Formal READY integrated ID none; MASTER last confirmed cp196, READY596 (A115/B229/C136/D116); READY all-ID enumeration was NOT rerun. MASTER TASK QUEUE independently recounted this 10H run: 34 unique tasks (DONE9 / IN_PROGRESS21 / VERIFY4), E T018/T019/T020 all IN_PROGRESS; 4642 MASTER lines. MASTER not changed; OFFLINE-UNSYNCED entries remain unintegrated.
+Old safety refusals (T018 table/session join, C T026/T032, D T030 TSV, 0x5710C0 and others) remain BLOCKED; no bypass or resubmission. No new safety refusals or connection faults.
+Source and stage hashes above are evidence provenance; this new note is only an E-owned independent audit, not a replayed rejected payload. A-D/REA/dev_lab, original ZIP/EXE/DAT/SAVE, Git/push, Work and schedules untouched.
+NEXT: obtain a legal original-game C-NB02 same-battle G0/G1/G2 receipt chain. Only then exercise side-to-roster validation against actual Unit/Troop records, preserve support=[] and phase-specific G1 policy, and consider non-conflicting E-only validator changes under owner/review.

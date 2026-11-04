@@ -1,0 +1,25 @@
+# E-AUDIT-20261026-1849-T018-T020-CAPTURE-GAP-TEMPORAL-COVERAGE-01
+Owner E / T018,T020 (T019 read-only). 2026-10-26 18:49 JST. Local Compact PC connected. STATIC REPLAY OF ARCHIVED ORIGINAL / SYNTHETIC NEGATIVE TESTS EXECUTED / VERIFY / NOT READY / ORIGINAL GAME NOT RUN.
+
+## Verified original sources
+- Watch-1 `rea_lab/headless_analysis/search_index/BATTLE_ORIGINAL_WATCH_23272_20261021T142710802580Z.jsonl`: SHA256 9DF9A0D8C7D15958F4711478ED6DFF1F912E49313D6FC5BA5DCBC5B089E262A7, 234 JSONL records.
+- Watch-2 `rea_lab/headless_analysis/search_index/BATTLE_ORIGINAL_WATCH_V2_23272_20261021T151336188087Z.jsonl`: SHA256 1D60CC8CDC6D3B9F020FB52238C3A714F069EA4A4B489F874D90F41FEEE74B46, 85 JSONL records.
+- Script hashes source bytes before JSON decode and rejects mismatch/row drift. EXE baseline SHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187 is inherited from the 2026-10-21 manifest, not independently rehashed this run.
+
+## NEW evidence delta: active-period retry coverage, two different failure signatures
+- Watch-1: ACTIVE first observed 2026-10-21T14:31:37.765392Z; capture attempts 1..28 at 14:31:37.766634Z through 14:31:50.138229Z (12.371595 seconds); all 28 are `SnapshotError: unexpected nil tree node`. First later ACTIVE=0 at 14:33:34.325867Z. Gap from LAST attempted capture to first inactive=104.187638 seconds; 21 further recorded active-state observations but NO further `CAPTURE_VERIFY_GAP` record.
+- Watch-2: ACTIVE first observed 2026-10-21T15:14:40.580007Z; attempts 1..28 at 15:14:40.582071Z through 15:14:52.027390Z (11.445319 seconds); all 28 are `SnapshotError: Unbounded memory request`. First later ACTIVE=0 at 15:17:24.500365Z. Gap from last attempted capture to first inactive=152.472975 seconds; 30 further recorded active-state observations but NO further `CAPTURE_VERIFY_GAP` record.
+- Each log's repeated failures are therefore confined to the early ~12-second attempt window; failed attempts cannot establish that snapshots would necessarily fail throughout the rest of each battle. Conversely, absent later logged attempts do NOT prove later success, or that other recorder paths were not running.
+- Watch-1 and Watch-2 share historical PID23272 but are distinct time windows and error categories. Never collapse their 56 failures into a single fault signature or sum them as additional independent battle runs.
+- Candidate engineering implication (VERIFY, B/REA owner only): separately diagnose nil-tree traversal vs memory-request size validation; examine the 28-attempt budget and whether later-phase attempts are explicitly disabled. This audit does NOT authorize a retry of any safety-refused capture operation or editing another owner's recorder.
+
+## T020 executable / incident continuity
+- New E-only file `tests/t020_cnb02_capture_gap_temporal_coverage_20261026_1849.py` final SHA256 E9BC22709D3C4C65B6A6909C6E87F5339A35F25352318F28456A0C3CFC8A52DE. 4/4 Python unittest PASS, 0 FAIL, including pinned archival hashes, 1..28 attempt sequence, distinct reason per watch, late-active observations, false Golden protection, corrupted SHA and row-count negatives.
+- Initial one-off python -c had quoting/newline SyntaxError (OTHER; output not used). The first new unittest run was 3/4 with a mistaken assumption that both logs had the same error; corrected ONLY the new E file to assert the actual distinct error reasons; final 4/4 PASS. These are NOT safety refusals. RECOVERY-ID E-RC-20261026-1849-CLI-QUOTE-AND-TEST-OTHER-01; no unrecorded failed source mutation.
+- Do not relabel this archive replay as fresh E gameplay DYNAMIC OBSERVED, old-game actual Golden PASS, or strict MATCH: all three = 0. C-NB02 E_G0 lawful UI+attack/target, E_G1 same-battle actual SAVE bytes+input, E_G2 true MAP/3-side roles+ordered deployed Unit/Troop, E_G3 native result and E_G4 strategic World delta all NOT QUALIFIED.
+
+## Integration, T019, refusal boundary
+- MASTER TASK QUEUE directly recounted now: 34 unique IDs, DONE9/IN_PROGRESS21/VERIFY4. MASTER byte SHA read-only E7329C9C6368E67BE191A4ABF45156319E32826FF039FB2B9E226DEDDAC6B6B3. Last formal checkpoint196 / READY596=A115/B229/C136/D116 inherited; full READY ID re-enumeration NOT RUN. Official new READY integration 0. B-20261026-1816-T028 is STATIC/VERIFY/NOT READY, not promoted.
+- T019 newly confirmed Wiki/DAT/EXE contradiction 0; GameClear DAT13/TXT2 lexical-scope split RESOLVED; script2 precedence/phase flag/TXT runtime loader/post-clear gwrite return remain VERIFY (not re-tested).
+- Earlier T018 table boundary, rejected E session joins/JSON/payloads, C T026/T032, D T030 TSV, 0x5710C0 remain separately BLOCKED; no alternative shell/tool/path/Remote/ZIP attempt. Historical 13H/14H OFFLINE-UNSYNCED remains not formally integrated. No new safety refusal or connection failure.
+- This run only writes new E-owned test+this report; no MASTER/A-D/REA/dev_lab/original EXE-DAT-ZIP-SAVE/Git/push/Work/settings/schedule changes. Next priority: lawful same-battle C-NB02 G0/G1/G2 real receipt acquisition with file SHA, phase timestamps and capture coverage; any collector diagnosis goes to B/REA owner, not E modification.

@@ -1,0 +1,6 @@
+scope	coverage_state	reason	no_retry_boundary	checked_date
+Linked native EXE, SQLite, JSON/EVIDENCE, probes, audit scripts, logs and HANDOFF	DEFERRED_METADATA_ONLY	Outside literal approved report bodies; references retained without following	NO_READ_NO_EXECUTE	2026-11-05
+0x5710C0..0x571500; 0x58021E..0x580340; 0x5769B0 and downstream0x5767B0; whole-owner FUN_00580280 composites	DEFERRED_METADATA_ONLY	Coordinator-known excluded scope; no body retrieval or later-offset bypass	HISTORICAL_HOLD_NOT_LIFTED	2026-11-05
+11/1 18H partial evidence and prior Wave6 safety refusal	DEFERRED_METADATA_ONLY	Historical hold preserved independently of reports recovered here	NO_RETRY_NO_ALTERNATE_ROUTE	2026-11-05
+10/31 16H final supplementary hash/list/lock check	DEFERRED_METADATA_ONLY	Current REF records historical SAFETY_REFUSAL; earlier audit/readback do not fulfill it	HISTORICAL_CHECK_UNFULFILLED_NO_RETRY	2026-11-05
+F720 historical three-tree versus later streambuf/EH identity	DEFERRED_METADATA_ONLY	No F720 literal in this batch; no identity reconciliation evidence	DO_NOT_MERGE_BY_ID; HOLD_FOR_ID_RECONCILIATION_IF_REQUIRED	2026-11-05
