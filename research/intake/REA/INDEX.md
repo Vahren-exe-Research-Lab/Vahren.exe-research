@@ -1,3 +1,14 @@
+<!-- REA-20261105-07H-1013-1012-SPATIAL-VECTOR-CROSSWALK -->
+## 2026-11-05 07H | 10/13–10/12 old REA unkeyed owner-source crosswalk (5 EXISTING SOURCE FILES; 0 new studies)
+
+**Curator-safe handoff:** [10/13 SpotPath/SpotEscapePath lifecycle vs save, two-layer native runner continuation gap, and 10/12 vector clear vs append/ABI](REA_20261105_07H_1013_1012_SAFE_SPATIAL_AND_VECTOR_CURATOR_CROSSWALK.md), Git blob `bfb816d696315d29d9e8b3617c0f8644dec79b9c`, original owner branch source commit `2f1d307afaf12d6e6adff49f821ae72041505665`. Five historical **UNKEYED_SOURCE** reports already preserved in archives A/B/C (blobs `aa0ab71d`, `399e6e8d`, `c5b67240`), compared by relative path/historical source SHA256; **not five newly identified original research IDs, not new intake, not newly CURATED**.
+
+**Material meaning gap:** registered SpotPath types with +0x08/+0x48 AL0 skip Task/Render but preserve conditional spatial register/unregister path; graph-save SpotPath payload symbols `0x5B0400/0x5B0600` in current `develop` are distinct from lifecycle `0x5B0120/0x5B0250`. Old `0x57CFA0/0x57CFD0` support vector source narrows caller-specific clear-before-empty-range with five PUSH/RET 0x14 vs misleading four-arg pseudo, without proving allocator/heap outcomes. Historical runner test stages and SHA drift are **implementation-only** and not original native evidence. Already-curated symbol names remain linked; no duplicate symbols or new `VERIFIED`.
+
+**Status:** Original source `PRESERVED_UNKEYED_SOURCE`; incremental owner crosswalk `NOT_CURATED / OFFLINE-UNSYNCED`. PC Local connector HTTP 429 this run: original PE, V9, active.lock and PC QUEUE/PROGRESS **not read**. New formal REA five-method VERIFIED=0; Golden PASS/strict MATCH/READY=0/0/0. Source SHA256 values were historically measured on PC (2026-11-02), **not remeasured**. Refused Wave6/18H/protected-area evidence unchanged and not reattempted. No develop/REF/TSV/original game/other-owner modification.
+
+**Next cursor:** 2026-10-12 20:35 existing B-owned AI evidence crosswalk **link/ownership review only**; then 15:41 shared reader XREF and 14:37 Unit marker. Skip five reviewed unkeyed sources and blocked/status-only. Curator separately checks permitted original SHA/native/V9/errata and adopts only verified portions from pinned owner PR into develop.
+
 <!-- REA-20261105-06H-UNIT-TICK-EXPIRY-CURSOR -->
 ## 2026-11-05 06H | 10/15 permitted tick/expiry old-source meaning review (9 EXISTING IDs; 0 new)
 
