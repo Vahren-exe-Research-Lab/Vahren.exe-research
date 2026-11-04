@@ -1,0 +1,16 @@
+# REA-20261017-1133-AUX-POINT-447150-QWORD-01｜補助枝point A/B→447150→547FC0のcaller側データ経路
+- [OWNER / SCOPE] 独立REA、WRQ-20261013-REA-DEATH P0、T012/T013。Desktop Commander Local Compactのみ。承認済コピーと既保存x86の照合。新規Ghidra/REA逆解析・ゲーム実行なし。原本/他レーンはread-only。
+- [EVIDENCE] `exe/T012_DAMAGE_CALLER_CONTEXTS.txt` SHA256 `9A2ED3B4DAA72ECB2D32511471BBDD18CC1E883EC5CFBCD31B4FD6B1A4566CA3` を本回再hash一致。VA 0x546BBE..0x546C3F。補足既存証拠 `REA_20261017_0939_AUX_POINT_STACK_REBASE.md`・`REA_20261017_1031_SCRATCH_POINT_PAIR_BOUNDARY.md`・`REA_20261016_1138_DEFERRED_STACK_ARGS_AUDIT.md`。
+- [STACK BASIS] S=0x546BBE `SUB ESP,0x1C` 直前ESP、通常の呼出/帰還時のstack保存を仮定。補助scratch基底はS-0x1C。A=(DWORD[S-4],DWORD[S])、B=(DWORD[S-0xC],DWORD[S-8])と既存メモのpoint対を明記。
+- [NEW CALLER INPUT] 0x546BFC `EDX=[ESP+0x1C]=A.y`; 0x546C00 `EAX=[ESP+0x18]=A.x`; 0x546C04 `ECX=[ESP+0x10]=B.x`; 0x546C08/09 `PUSH A.y`, `PUSH A.x`; 0x546C0A `EAX=[ESP+0x1C]=B.y`（2push後のESPで再評価）; 0x546C0E `CALL 0x447150`。したがってcallerはAをstack、BをECX/EAXとして準備する。callee内部演算や正式ABIは未確定。
+- [NEW RESULT BRIDGE] 上記push2個後のESP=S-0x24。0x546C13 `FSTP QWORD [ESP+0x28]` の書込先は `[S+4..S+0xB]`（scratch直後より更に4byte上）。続く0x546C17/19/1Bで3pushしESP=S-0x30。0x546C1C `LEA ECX,[ESP+0x34]` は同じ `[S+4]` へのpointer。0x546C22 `CALL 0x547FC0` にECXで渡す。実際の0x547FC0消費/帰還はVERIFY。
+- [STACK BALANCE] 0x546C27 `ADD ESP,0x14`で2個の先行`0x447150`用pushと3個の`0x547FC0`直前push、計20byteを解放しESPはS-0x1Cに戻る（両callee正常復帰を条件）。分岐0x546C2C→3push→0x546C3A→ADD ESP,0xCも同じ深さで合流。
+- [SEPARATE OUTPUT SLOT] 0x546BC3 `MOV [ESP+0x48],ESP` はscratch基底S-0x1Cを別slot `[S+0x2C]`へ記録し、前述A.y=[S]や結果qword=[S+4]のwriterではない。この窓の保存情報だけでA.y=[S]の初期化元を確定しない。
+- [BRANCH GATE] 0x546BF7/FA `TEST AH,0x44; JP 0x546C2C` の非遷移側だけが0x447150→結果qword→547FC0を通る。遷移側は0x546C32/34/35の3push、ECX=0、EDX=ESIで547FC0へ直接渡す。x87 flagsのゲーム上の意味と例外パスは未確認。
+- [DELTA / DE-DUP] 既1138の「2個の先行pushとqwordの遅延cleanup」、0939の「A/B起点」、1031の「A.yがscratch境界外」は再計上しない。新増分は**A/B 4 DWORDのcaller側配置→447150→FPU qword保存位置→547FC0 ECX引継ぎ**の一つの連続データフロー接続だけ。
+- [LIMITATIONS] 0x4051D0/0x4678A0によるscratchのwriter、A.y=[S]の値、0x447150内部の計算、0x547FC0第3正式stack引数の消費・正常return、vtable+0x80のlive型はVERIFY。0x575A60→575DF0→5684B0外側callbackも未完。完走や弾/命中/HP/MP/RNG・動的可視ゲーム性は証明しない。
+- [PREFLIGHT / CAPACITY] 本回Local CPU LoadPercentage=100%、空きRAM=11.77GiB、active.lock=false、プロセス名java/javaw/ghidra/rea一致行なし、承認済コピー`rea_lab/targets/hakushin067_Vahren.exe` SHA256 `E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187`一致。PC高負荷につき重量runner/syncは起動しない。軽量操作の総所要時間は未計測、新規Ghidra実行時間0秒。
+- [PROGRESS] 保存RUN_RESULT`runs/20261011T153309850Z/RUN_RESULT.json` REA6.1.0/Ghidra12.1.4、最新sync`logs/progress_sync_20261011T153958076Z.json`。Wave1=16/16、W2=10/10、W3=10/10、W4=12/12、W5=16/16、累計64/64 VERIFIED（P0=29/P1=35）。新規5種ev_* ID=0、新VERIFIED=0。Wave6正式0/16、候補P0=5/P1=11、TODO12/既拒否BLOCKED4/結果VERIFY0。QUEUE/PROGRESS古いのは既往EPERM。
+- [MASTER / GAME] MASTER最新checkpoint166、研究34Task DONE9/IN_PROGRESS21/VERIFY4。旧EXE実機golden PASS0、新旧strict MATCH0。ゲーム再実装率は測定していない。
+- [NEXT / SAFETY] PC低負荷時のみ再preflight。最優先は保存済み0x447150の出力意味とA.y writer、0x547FC0実引数/帰還、次に通常死亡Task callback。REA runner指定6.4.0と成功run6.1.0の版差、正式Wave6未登録、4VA安全拒否とrename EPERMを無理に変更しない。単一MCP/4関数/回、Ghidra900000ms、request960000msを維持。拒否0x5710C0..571500、0x515750/515790/5159B0/57D180、REA text exporter/既拒否write payloadは別shell/tool/path/Remoteで迂回しない。
+- [OWNERSHIP] 今回のREA専用新規メモ以外、A-E/MASTER/T018/Work/WRQ、原本ZIP/EXE/SAVE、Git/push、MCP/OS設定、automation等に変更操作なし。

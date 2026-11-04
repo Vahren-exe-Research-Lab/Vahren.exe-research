@@ -1,0 +1,13 @@
+# REA-20261018-0638-T014-GWRITE-OPENFAIL-VM-CONTINUE-01
+- [OWNER / STATUS] 独立REA、T014主・T006関連。新規Ghidra 0、新規VERIFIED 0。保存済み静的機械語・5方法証拠のみをread-only横断照合。対象はSHA E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187の承認済みコピー由来の証拠。今回の実ファイルSHA再計算なし。
+- [PRECHECK] MASTER checkpoint179/DONE9/34、ANALYSIS_LANES_PROTOCOL、README・QUEUE・PROGRESS、最新run 20261011T153309850Z、sync 20261011T153958076Z、REA_20261018_0536...を先読。既解析の重複取得0。
+- [CORE RETURN/EXISTING] 0x428710（T014 writer）保存済みGhidra info ev_18083c1e4b216eb84426042a80e5dd8d28b884882f59162ab8f5fe1cb74a64d6、ASM ev_a8b58058d05e576dbaa8ebd22736dcfa684d5fb5289e0897e1e5834eb351ec4b。READ用CreateFileAは0x4288F3、invalid handle分岐0x428907..0x4289ADはcleanupしてRET。新規ファイル作成失敗0x42887D..0x428898はLoadException throw。後段upsert/writeまで到達するとは限らない。
+- [NEW CROSS-CALL] 原作保存済exe/T014_GLOBAL_DISASM.txt 0x4A60D1（gwrite opcode handler）：0x4A61BD CALL 0x428710、その帰還後0x4A61C2 add esp,0x3c、0x4A61C5/0x4A61D0 local string cleanup、0x4A61DB XOR AL,AL、0x4A61DD JMP 0x4A633C。保存済exe/T006_UNKNOWN_BRANCH.txt 0x4A633C..0x4A6357 epilogueは正常経路のALを変更せずRET。
+- [VM CONTRACT] 保存済exe/T006_HANDLER_RETURN_CFG.tsvで opcode77 gwrite=states0/exit0x4A633C。T006既確定dispatched AL0=同pass Continue／AL1=Yield。従ってREAD-open失敗が例外なく局所RETした条件では、gwrite handlerがAL0を返しVM interpreterは継続する（正常なファイル永続化完了の意味ではない）。新規の増分はT014失敗時局所RETとT006 opcode戻り値の条件付き接続のみ。
+- [ASYMMETRY] 新規作成不能のthrow経路はこのAL0正常復帰とは別。gwrite(key,value)のaux空文字上書きなど従来T014 API知見は再加算0。
+- [VERIFY] LoadException catch経路、ReadFile後のshort read、WriteFile API成功判定と永続化保証、実ファイルの部分書込、VM上位での他種エラー表示、旧EXE実機での観測は未確認。読込open失敗でも常にセーブ成功/破損と断定しない。原作新BUG確定0。
+- [DEDUPE] 先行REA_20261018_0536_GLOBAL_SAV_OPEN_FAILURE_ASYMMETRY_QC.mdの「core create失敗throw対read-open失敗RET」は既存。今回は未接続だったgwrite VM opcode77の帰還AL0を追加照合。拒否済T014 stream flags（REA-RC-20261018-04H-T014-STREAM-COMMIT-WRITE-SAFETY-01）のpayload復元・別path/tool再提出ではない。
+- [COUNTS] 保存済sync Wave1=16/16 Wave2=10/10 Wave3=10/10 Wave4=12/12 Wave5=16/16、累計64/64（P0 29/29、P1 35/35）。今回VERIFIED増分0。Wave6正式0/16、暫定P0=5/P1=11、TODO12・既往安全拒否BLOCKED4・結果VERIFY0。旧EXE実機golden PASS0、strict MATCH0。ゲーム再実装率は測定していない。raw QUEUE/PROGRESSは既往EPERMで古い。
+- [EXEC/CAPACITY] CPU率n/a・RAM未測定、active.lock直下listingなし。先行Java/Ghidraの完全な負荷gate未確認、現runner REA6.4.0指定vs保存成功REA6.1.0/Ghidra12.1.4、Wave6未正式登録のためrun_decompile.ps1/sync_progress.mjsは未実行。新規解析実行時間0秒、照合総時間未計測。単一MCP/最大4関数/Ghidra900000ms/request960000msを保持。
+- [NEXT] 最優先WRQ-20261013-REA-DEATH（0x575A60→0x575DF0→0x5684B0、T010/T012/T013）、許可済み保存証拠で正常帰還・Task/描画/Spatialの連結を検証。T014は0x428710 caller例外・戻り後の非永続化扱いをVERIFY。Wave6 P0の0x470980/0x42E700は安全条件成立までTODO。
+- [UNCHANGED] 原本ZIP/EXE/SAVE・A-E・MASTER・T018・他研究・Work・既存QUEUE/PROGRESS/runner・Git/push・MCP設定・automation変更0。禁止VAと拒否済REA抽出の再試行0。

@@ -1,0 +1,15 @@
+# REA-20261018-2340-DEATH-SELECTION-PREFIX-CROSSCHECK-01｜選択解除の前半書込とWork静的整合
+- [SCOPE] 独立REA・Desktop Commander Local Compactのみ。P0 WRQ-20261013-REA-DEATH / T010,T012,T013。既存保存nativeとWorkのread-only対照。過去拒否メモ・禁止範囲を代行再保存しない。
+- [SOURCE] SOURCE_RECOVERY_DAMAGE_STATUS_20261011.md のREA-WRQ-20261013-DEATH-11/12（0x527ED0..0x527F55、0x4EC680、0x4C5C40）。保存run source SHA256=E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187。
+- [WORK] dev_lab/src/hakushin_compat/native_battle_outcome.py の TroopSelectionCleanup.advance() をread-only再確認。
+- [STATIC CROSSCHECK 1] T+0x1D=0時のみselectionOwner+0x348 listからTroop*一致node全件を解除（0x4EC680）。Work selection全一致の抽出とfor/unlinkは、この局所の重複削除多重度と整合。
+- [STATIC CROSSCHECK 2] 解除後owner+0x34Cが0、かつ((owner+0x368-owner+0x364)&0xFFFFFFFC)==0の2条件でowner+0x45Dを0化。Work count=oldcount-len(selection)、bitmask比較、hide→+0x45D=0は局所条件と整合。
+- [STATIC CROSSCHECK 3] owner+0x20C非0なら先に0化し、4C5C40でtarget=&owner+0x1E0のdisplay list最初の一致1件だけ解除。Work display[:1]・+0x20C=0・unlinkが該当する。
+- [BOUNDARY] 整合は選択解除prefixの条件・削除多重度・書込順序に限定。0x4EC680/0x4C5C40のallocator障害、callee未帰還、続く0x527F27→41F850→56BA80→global vfunc→条件付401BE0→0x527F55 RET4と上位0x568532/0x5685FDへの帰還はVERIFY。WorkのVERIFY_TROOP_SELECTION後の復帰未実装懸念を解消していない。
+- [EVIDENCE] 新規Ghidra info/pseudo/assembly/callers/calleesの証拠ID各0、新規関数VERIFIED+0。再利用する既存静的契約=REA-ND-20261013-001。旧実機golden PASS0、strict MATCH0。ゲーム再実装率は測定していない。
+- [PROGRESS] 保存RUN_RESULT 20261011T153309850Z、sync 20261011T153958076Z: Wave1 16/16,Wave2 10/10,Wave3 10/10,Wave4 12/12,Wave5 16/16＝64/64(P0 29/29,P1 35/35)。Wave6正式0/16、暫定P0 5/P1 11、TODO12(P0 2/P1 10)、既往BLOCKED4(P0 3/P1 1)、関数結果VERIFY0。QUEUE/PROGRESSはEPERMでstale。
+- [MASTER] 最新読取checkpoint186、研究34Task DONE9/IN_PROGRESS21/VERIFY4。
+- [PREFLIGHT] 2026-10-18T23:39:16 JST CPU69%、空きRAM7.15GiB、Java/Ghidra/REAプロセス検出0、active.lock=false、承認済コピーSHA256指定値一致。8GiB未満・高CPUにつき重いREA/Ghidra起動禁止、run_decompile/sync未実行。
+- [TIME/LIMIT] 前検査約5.08秒、Ghidra実行0秒、軽量分析総時間未計測。単一MCPセッション・4関数/回以下・Ghidra900000ms・request960000ms。runner 6.4.0指定と保存成功REA6.1.0の版差未解決。
+- [NEXT] prefix一致を再解析せず0x527F27以降UI正常returnと0x5685FD後のTask解除/0x575F71・0x575F91への帰還、正規Wave6の非拒否P0 0x470980/0x42E700の既存xref確認を優先。禁止0x5710C0..0x571500・拒否済4VA・text exporterの迂回不可。
+- [NOCHANGE] 原本ZIP/EXE、A-E・MASTER/T018、Work、runner/QUEUE/PROGRESS、Git/push/公開、MCP設定/スケジュール/automationには変更なし。

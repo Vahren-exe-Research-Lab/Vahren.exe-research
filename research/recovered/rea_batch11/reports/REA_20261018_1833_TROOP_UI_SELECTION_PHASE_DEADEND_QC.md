@@ -1,0 +1,16 @@
+# REA-20261018-1833-TROOP-UI-PHASE-DEADEND-01｜死亡後段の部隊UI解除・復帰階層
+- [OWNER] 独立REA／WRQ-20261013-REA-DEATH／T010,T012,T013。Desktop Commander Local Compact限定。既存証拠とdev_labソースの静的読取のみ。新Ghidra実行0、製品編集0。
+- [NATIVE] 既保存REA-ND-20261013-001 ND-GRAPH-TAIL/ND-TROOP：死亡側0x575F6C→0x5684B0（外側帰還0x575F71）、条件付0x575F8C→同関数（外側帰還0x575F91）。一回目の正常帰還後にUnit+0x1867Dを再読。
+- [TROOP BRANCHES] 選択中で剪定後空なら0x56852D→0x527ED0（復帰0x568532）。選択中・非空なら0x56853B→0x41F850（復帰0x568540）。通常・生存あり・先頭条件成立なら0x5685C5→0x527EA0へtail jump。通常・全滅・先頭条件成立なら0x5685F8→0x527ED0（復帰0x5685FD）。
+- [IMPLEMENTED PREFIX] dev_lab/src/hakushin_compat/native_battle_outcome.py L376-495: TroopSelectionCleanup.advance は0x527ED0を受理し、selection ring/display nodeの部分変更後、next_va=0x527F29/callee_va=0x41F850/return_pc=0x527F2E/complete=False のTroopSelectionTraceを返す。同インスタンス2回目のadvanceは拒否。
+- [SESSION EVIDENCE] dev_lab/src/hakushin_compat/native_battle_session.py L2553-2591: update_resolved_troopはACTIVEのみ、未完了でVERIFY_TROOP_UPDATE。continue_resolved_troop_selectionは0x527ED0の部分処理後VERIFY_TROOP_SELECTIONへ遷移。全文キーワード照合で同phase文字列・_troop_selection_traceは各1箇所（代入のみ）で、このファイル内に対応する正常帰還resume/phase解消経路なし。
+- [NEW DELTA] 前回の「0x41F850/0x527EA0が選択解除advance対象外」に加え、advanceが対応する0x527ED0経路さえ0x527F29→0x41F850のpending UIを戻す公開Session経路が確認できない。部分リング変更をもって0x527ED0、0x5684B0、0x575DF0全体の正常完了とは扱えない。
+- [RETURN STACK] 0x41F850から0x527F2E→0x527ED0内部復帰→0x568532または0x5685FD→0x5684B0の残余分岐→死亡側0x575F71または0x575F91の順の実return receiptが必要。tail-jump0x527EA0および選択中非空UI経路は別stage。状態フラグのみで成功帰還を偽装しない。
+- [VERIFY] 上記4経路の合法実到達、UI各helperの副作用/戻り値/失敗時挙動、Session他モジュールの外部操作の全量網羅、旧実機の挙動は未検証。既存静的照合の新発見であり旧実機BUG確定・5方法Ghidra VERIFICATIONではない。
+- [EVIDENCE] 既存契約REA-ND-20261013-001、保存SOURCE_RECOVERY_DAMAGE_STATUS_20261011.md ND-TROOP、dev_lab上記2ファイル。新規Ghidra info/pseudo/assembly/callers/callees evidence IDは各0。承認コピーSHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187を本runでLocal Get-FileHash再確認。
+- [PROGRESS] 最新保存sync=progress_sync_20261011T153958076Z.json、Wave1 16/16・Wave2 10/10・Wave3 10/10・Wave4 12/12・Wave5 16/16、計64/64(P0 29/29/P1 35/35)、今回増加0。Wave6正式0/16、暫定P0 5/P1 11、TODO12/BLOCKED4/関数結果VERIFY0。QUEUE/PROGRESSは既存rename EPERMで古い。
+- [MASTER/GOLDEN] 現行MASTER checkpoint185、研究DONE9/34・IN_PROGRESS21・VERIFY4。旧EXE実機golden PASS0、strict MATCH0。ゲーム再実装率は測定していない。
+- [PREFLIGHT] CPU26%、空きRAM9.56GiB、Java/Ghidra/REA実プロセス0、active.lock無し。現runner REA6.4.0指定／既存成功runREA6.1.0、Wave6未正式登録・既往EPERMで重量run/sync起動しない。Ghidra実行時間0秒、軽量調査時間未計測。実行枠は単一MCP、4関数、900000ms/960000ms。
+- [MINOR RESOLVED] 調査中に接頭辞のないWAVE5_COMPLETE...を誤指定しENOENT。正名REA_WAVE5_COMPLETE...をディレクトリ一覧で認識、別資料REA_WAVE6_XREF_ELIGIBILITY_AUDIT_20261012_0140.mdを正常読取。証拠消失や拒否操作の迂回なし。
+- [NEXT] 保存済み0x527ED0のUI帰還条件と0x5684B0の残余枝を読み取り専用で整理。実機/自動成功とは判定しない。Wave6は正式安全キュー登録・runner版整合・EPERMの正規解決以前は実行しない。
+- [SAFETY] 原本ZIP/EXE実行・編集0。安全拒否済0x5710C0..0x571500/REA text抽出/W6等の再実行・別shell/path/tool/Remote迂回0。他owner・MASTER・T018・Work製品・runner・QUEUE/PROGRESS・Git/push・MCP設定・automation変更0。

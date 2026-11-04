@@ -1,0 +1,16 @@
+# REA-20261017-2033-TASK-UNREGISTER-NOOP-RECEIPT-01｜Work task解除actionの無変更成功ログ境界
+- [OWNER/REQUEST] 独立REA / WRQ-20261013-REA-DEATH P0 / T010,T012,T013。Local Compactのread-only既存native証拠×Work source監査。新しいREA/Ghidra逆解析・原作EXE実行・ゲーム実機検証なし。
+- [TARGET] 承認済copy rea_lab/targets/hakushin067_Vahren.exe をread-only hash照合、SHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187一致。原本ZIP/EXE/SAVE無変更。
+- [NATIVE PREEXISTING] SOURCE_RECOVERY_DAMAGE_STATUS_20261011.md の REA-WRQ-20261013-DEATH-27: 0x4C22B0 はTask activeの最初の一致を0化、pendingの最初の一致をstable eraseし、deleteFlag=0では他vector追記なしでRET8。どちらにも一致しないこと自体は成功した登録解除件数を意味しない。通常Unit経路は0x575C6A→0x4C22B0、正常戻りPC 0x575C6F（ND-001）。
+- [WORK EXACT] dev_lab/src/hakushin_compat/native_task_registry.py 31..44 TaskRegistry.unregister: pointer in self.activeなら最初を0化、in self.pendingなら最初をpop、defer_delete=Trueなら別vectorへappend。両方未登録かつdefer_delete=Falseの場合は本体変更なしで例外なく復帰。
+- [WORK SESSION] dev_lab/src/hakushin_compat/native_battle_session.py 2508..2513 unregister_resolved_task: phase ACTIVEかつpointerがrosterのself._unitsに存在することを要求するが、Task active/pendingに実在するかは検査しない。TaskRegistry.unregisterの戻り値/変更件数も伝播しない。
+- [WORK RUNNER] dev_lab/src/hakushin_compat/native_battle_runner.py 397..409: type=task_unregister_resolvedで上記Session APIを呼んだ後、無条件にactionsへ native_function_va=0x4C22B0 を追加する。Task registryに一致がなかった場合も同じaction記録となる（上記コードからの条件付き帰結）。
+- [NEW CROSSWALK DELTA] すでにDEATH-27とREA-20261014-1600にあった『first-match』『roster Unit限定』『返りreceiptなし』を再計上しない。追加した差分は「roster Unitは合法だがTaskのactive/pendingの双方に不在、defer_delete=False」の入力で、Work出力に0x4C22B0 actionがある一方Taskベクトルは一切変化しない、という最小の反例契約。
+- [INTERPRETATION] runnerのnative_function_vaは選択した操作を示す注記であり、原作0x4C22B0を実行した・各副作用が存在した・0x575C6Fへ正常帰還した・通常死亡graphが完了した証拠ではない。実製品バグ再現・旧EXEとの不一致確定はNOT RUN/VERIFY。
+- [RECOMMENDED CHECK / NOT RUN] Work owner側で同じroster Unitの (A) activeのみ1件、(B) pendingのみ1件、(C)双方0件、(D)重複登録 を個別fixtureとして、before/after vectorとreturnPC、deleteFlag、phase/owner identityのreceiptを分離。Cではactionの有無と実変化0を別軸で評価し、偽のDONEや補完AL/returnを付与しない。
+- [STATUS] STATIC WORK-CODE / EXISTING NATIVE CROSSCHECK=1 note。新規Ghidra info/pseudo/assembly/callers/callees ID=0、新関数VERIFIED=0。未閉の原作callee正常副作用・graph/Task/Spatial・合法death GoldenはVERIFY。
+- [WAVES] 保存済runs/20261011T153309850Z/RUN_RESULT.json + logs/progress_sync_20261011T153958076Z.json: Wave1=16/16,2=10/10,3=10/10,4=12/12,5=16/16、計64/64 VERIFIED（P0=29/29,P1=35/35）。Wave6正式0/16、暫定P0=5/P1=11、未試行TODO12・既往安全拒否BLOCKED4・取得結果VERIFY0。QUEUE/PROGRESS旧statusはrename EPERMのため未追随。
+- [MASTER/GAME] 開始時MASTER checkpoint173・研究DONE9/34（IN_PROGRESS21/VERIFY4）。旧EXE actual gameplay golden PASS0、新旧strict MATCH0。ゲーム再実装率は測定していない。
+- [PREFLIGHT] 2026-10-17 20時台 JST、CPU34%、空きRAM12.75GiB、active.lock無し、承認済コピーSHA一致。明確なJava/Ghidra/REA実行なし（文字列部分一致プロセスLenovoVantageのみ）。新規Ghidra実行0秒、軽量調査総時間未計測。
+- [NO HEAVY / LIMIT] 現runner REA6.4.0指定と最後の成功run REA6.1.0/Ghidra12.1.4の差、Wave6未登録・拒否4VA・QUEUE/PROGRESS rename EPERMのため run_decompile.ps1 と sync_progress.mjs は起動しない。単一MCP、最大4関数/回、Ghidra900000ms/request960000ms。
+- [SAFETY/NEXT] P0は依然0x575A60→0x575DF0→0x5684B0の外側Task/Render/Spatial callback正常帰還、4C22B0 active/pending removeのactual receipt。拒否済0x5710C0..0x571500、Wave6四VA、REA text exporter、前回拒否済みnote payloadは再実行/迂回しない。原本/A-E/MASTER/T018/他owner/Work/WRQ/Git/push/MCP設定/automationは編集せず、REA所有の本メモだけ保存。

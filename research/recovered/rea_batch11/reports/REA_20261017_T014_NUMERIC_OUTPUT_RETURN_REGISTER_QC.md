@@ -1,0 +1,13 @@
+# REA-20261017-18H-T014-470700-EAX-OUTPUT-01｜数値readerの正常帰還レジスタを既保存証拠で照合
+- [OWNER/SCOPE] REA独立 / T014 / Wave6 P0候補0x42E700の呼出境界。新規逆解析・REA/Ghidra起動0、既拒否4VA/0x5710C0..0x571500/exporter再試行0。原本/他レーン/MASTER/T018/Work/Git/MCP/automation変更なし。
+- [SOURCE] Wave5保存run 20261011T144115307Z、target SHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187（今回Local preflight再hash一致）。0x470700 Ghidra info ev_e676039e3083db867c85605ee376898d307e4a18d8f264c9c6f5003be1deb31e（entry 0x470700、body 99 bytes、0x470700..0x470762）。
+- [EVIDENCE] assembly ev_f7ed3af4df1cdf7b14d9208f3d4aa735267b9ab022ee7d6b3860c4521bbb95cf、pseudo ev_fa4f2750e44895495089baaea76f6c2e6b39e1ec155c9b68af4b63bc17ac8e07、callers ev_14939a8b9ce66f7858434d5f57609aca8f4d26a7781078754cfc513c5032989c（resolved caller10）、callees ev_3f9a89a60c30eee71f662be8ef197b9016cfe610caae887926287dcb5d131286。
+- [SAVED CONTROL FLOW] 0x470709/0B/0D/12で(0,4,&B060F0,ESI)をpush、0x470713 CALL 0x42E700。0x470718..732でstream-state検査、異常時0x470734..74Fへ進みLoadException throw（正常帰還とは別）。
+- [NEW REGISTER CHECK] 正常側0x470754 MOV EDX,[B060F0]→0x47075A MOV EAX,[EBP+8]→0x47075D MOV [EAX],EDX→0x47075F..762 RET。すなわち正常RET直前のEAXは出力先ポインタ、格納値そのものではない。Ghidra pseudoがvoid FUN_00470700(undefined4 *param_1)とするのと矛盾する必須のAPI戻り値は証明されない。
+- [NO FALSE ABI] このEAX値は命令レベルで観測したret時レジスタであり、callerが正式戻り値として消費するかは未検証。数値戻り値をEAXで返す関数に機械的に置換しない。実効出力は*param_1へのDWORD格納で、0x42E700内部の短読/失敗/stream消費契約は未取得。
+- [REUSE/DELTA] 0xB060F0 global scratchと*param_1へのコピー自体は既存REA_T014_CALLERS_GLOBAL_SCRATCH_SCOPE_20261012_0738.mdに記録済みで再発見計上0。本件の差分は正常RET時のEAX=出力先・pseudo voidとの区別、および例外枝から正常書込に達しない分離だけ。
+- [WAVE6 BASIS] 0x470700のcallee5手法保存済みで0x42E700を参照。0x470700そのものは既VERIFIED、0x42E700には5手法がなくWave6候補TODO。0x4705F0 caller 0x470980も既存ev_661507e7456c44d65dd153fff0f2c6b8de0e33a9519370d794118fae0def6743から確認済、対象自身のVERIFIEDを意味しない。
+- [RECOVERY/OTHER] 今回、PowerShell標準Get-Content -Raw→ConvertFrom-JsonでQUEUEの日本語が文字化けし構文エラーとなった（REA-RC-20261017-18H-PS-ENCODING-QC-01）。入力はread-only、取得したQUEUE集計は不採用・書込0、同コマンド再実行0。正しい旧表示と64/64は先にLocal read_fileした既存QUEUE・保存syncログ・W6 QCから採用。失敗操作は安全拒否・rename EPERMとは別分類OTHER。
+- [COUNT] 保存済Wave1..5 16+10+10+12+16=64/64 STATIC VERIFIED（P0 29/29・P1 35/35）。今回新規5種 evidenceID0、VERIFIED増0。Wave6正式0/16（暫定P0 5/P1 11、未試行TODO12、旧安全拒否BLOCKED4、結果VERIFY0）。
+- [MASTER/GAME] 開始時MASTER checkpoint171・研究DONE9/34（IN_PROGRESS21/VERIFY4）。旧EXE実機Gameplay golden PASS0、新旧strict MATCH0、ゲーム再実装率は測定していない。
+- [PREFLIGHT/NEXT] 2026-10-17 18:37:28 JST CPU52%、空きRAM11.65GiB、Java/Ghidra新規起動無し、active.lock無し、copy SHA一致。新Ghidra実行0秒、軽量総時間未計測。現runner REA6.4.0と成功run6.1.0の差・Wave6未登録・QUEUE/PROGRESS rename EPERMを残しrunner/sync実行0。最大4関数/回・Ghidra900000ms/request960000ms。P0 WRQ-20261013-REA-DEATHの0x575A60→575DF0→5684B0外側callback/Task正常帰還はVERIFYのまま最優先。

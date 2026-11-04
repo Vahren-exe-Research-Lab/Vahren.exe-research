@@ -10,4 +10,25 @@
 - [research/recovered/b_batch6/data/T012_EFFECT_LINK_RECORD_IDENTITY_CORRECTION_20261013.md 行 6](../../research/recovered/b_batch6/data/T012_EFFECT_LINK_RECORD_IDENTITY_CORRECTION_20261013.md?plain=1#L6-L6) — [TYPE L: 16BYTE LINK RECORD] 0x41E060 at41E071 push ECX=R→41E072 call41E1D0、返EAXを41E077 EBX=Lとする。0x41E1D0 reuse/new bodyは`[L+0]=active byte1`, `[L+4]=R pointer`
   制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
 
+<a id="field-40"></a>
+## L + 0x40
+
+- [research/recovered/b_batch11/data/T028_LINKED_INNER_POINT_COLLAPSE_OUTER_CENTER_NATIVE_20261029_07H.md 行 20](../../research/recovered/b_batch11/data/T028_LINKED_INNER_POINT_COLLAPSE_OUTER_CENTER_NATIVE_20261029_07H.md?plain=1#L20-L20) — **重要:** AL1処理がIを点縮退しても、直後N配置の参照元は L+0x40..4C（外側）であって I=L+0x1A0..1ACではない。内側縮退と外側中心寄せを混同すると原作配置を誤実装する。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+<a id="field-160"></a>
+## L + 0x160
+
+- [research/recovered/b_batch11/data/T028_LINKED_INNER_POINT_COLLAPSE_OUTER_CENTER_NATIVE_20261029_07H.md 行 23](../../research/recovered/b_batch11/data/T028_LINKED_INNER_POINT_COLLAPSE_OUTER_CENTER_NATIVE_20261029_07H.md?plain=1#L23-L23) — EXE CALL site 0x5AA709 E8→0x5A9CC0は既06H確認済み、今回の新しいnative値は0x5AA703 EAX=L+0x160、I+0x40がL+0x1A0に写ること、およびI zero-extent とN外側中心配置の分離。未回収10/25・他lane全意味dedupはVERIFY。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+<a id="field-1a0"></a>
+## L + 0x1A0
+
+- [research/recovered/b_batch11/data/T028_LINKED_INNER_POINT_COLLAPSE_OUTER_CENTER_NATIVE_20261029_07H.md 行 12](../../research/recovered/b_batch11/data/T028_LINKED_INNER_POINT_COLLAPSE_OUTER_CENTER_NATIVE_20261029_07H.md?plain=1#L12-L12) — 0x5A9CC2 MOV ESI,EAX により関数引数I=L+0x160が確定。したがって同関数の I+0x40/+0x44/+0x48/+0x4C は **L+0x1A0/+0x1A4/+0x1A8/+0x1AC**。06Hの「obj+0x40矩形」をL本体+0x40と同一視しない。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch11/data/T028_LINKED_INNER_POINT_COLLAPSE_OUTER_CENTER_NATIVE_20261029_07H.md 行 20](../../research/recovered/b_batch11/data/T028_LINKED_INNER_POINT_COLLAPSE_OUTER_CENTER_NATIVE_20261029_07H.md?plain=1#L20-L20) — **重要:** AL1処理がIを点縮退しても、直後N配置の参照元は L+0x40..4C（外側）であって I=L+0x1A0..1ACではない。内側縮退と外側中心寄せを混同すると原作配置を誤実装する。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

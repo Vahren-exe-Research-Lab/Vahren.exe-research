@@ -1,0 +1,18 @@
+# REA-20261019-1739-T014-T031-SAVE-RNG-VECTOR-01｜セーブ鍵生成の再実装用決定的入力ベクトル
+- [OWNER] 独立REA。T014(P1: 0x427040) / T031(P1: 0x5B6EAB)、戦闘側0x40ED80との関係は条件付きVERIFY。2026-10-19 17:39 JST。旧原本ゲームは実行していない。
+- [PRECHECK] MASTER_LEDGER.md checkpoint189/DONE9/34、ANALYSIS_LANES_PROTOCOL.md、decomp_task README/QUEUE/PROGRESS、最新runとsyncをread-only照合。W1 16/16 W2 10/10 W3 10/10 W4 12/12 W5 16/16=64/64、P0 29 P1 35。Wave6 0/16(TODO12/BLOCKED4)。PROGRESSはEPERMによる古い15/16表示。
+- [TARGET] 保存済みREA6.1.0/Ghidra12.1.4のsource SHA E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187。現物の再hashはしていない。
+- [G1] VA0x5B6EAB、run 20261009T194358486Z、assembly ev_b1254a8fd74b2e65bc7d0dd87874866862fe9db02fd920de0dc7d93b35348924：PTD+0x14に state=(214013*state+2531011) mod 2^32、rand15=(state>>16)&0x7fff。
+- [G2] VA0x427040、run 20261011T113414092Z、assembly ev_21d9cad3ff2b047a9f34ec1a4be3a8053e3bdb9ad5acc35c0d93e42dc035b9d4、pseudo ev_cc5bde730579a34289233a8406ed8b02996d9ffebd7ec12b375398fd353359f3。5種結果VERIFIEDは保存済RUN_RESULT.jsonで照合、今回の新規Ghidra取得0。
+- [ALGORITHM] 0x427057..4270A0でCRT randを28回消費、x87 CWのRC=11(0方向)でkey[i]=8+floor(rand15*112/32768)。生成範囲8..119。0x42704Fは4-byte magic 01 02 03 04。0x4270A8で入力byte長が32以下ならpayload loopは無いが28回消費は済み。
+- [ABSOLUTE INDEX] VA4270B0..4270DDは絶対ファイルoffset p>=32に対し、out[p]=(in[p]+key[p%28])&255。例：p=32はkey[4]でありkey[0]ではない。既存T003のabsolute-index訂正と整合。out[4..31]は28鍵byte。
+- [DERIVED] 28回合成は state28=(0x405BAF31*seed+0x08C0D79C) mod 2^32。32bit環の逐次合成計算から導出した計算上の主張で、旧EXE実行テストではない。
+- [VECTOR seed=0] 28回後state=0x08C0D79C、keyHex=08225010263024762b701c680b084e3e2661123a4f755260470c6a0f、zero-payload8の暗号化offset32..39=263024762b701c68。
+- [VECTOR seed=1] 28回後state=0x491C86CD、keyHex=08471d62493d2f6c645b1b6857412a091230181a7639150808324347、zero-payload8の暗号化offset32..39=493d2f6c645b1b68。
+- [VECTOR seed=12345] 28回後state=0x8E040985、keyHex=214960531b57651a6b573b3a4d522838532a61152a242e3c112b5114、zero-payload8の暗号化offset32..39=1b57651a6b573b3a。
+- [TEST CONTRACT] 40-byte all-zero bufferを入力とみなすエンコーダの生成後、offset0..3=01020304、offset4..31=keyHex、offset32..39=各zero-payload8の期待byte。コード計算によるDESIGNED_NOT_RUN fixtureであり旧EXE golden PASSではない。
+- [THREAD LIMIT] 0x5B6EABが__getptdを使用するため、saveとbattleが同一スレッド・再seedなしで呼ぶ場合に限りsave28消費は後続のbattle乱数列をずらす。他スレッド、srand、実frame順はVERIFY。
+- [STATUS] 今回新しい関数静的VERIFIED=0、既存64の再解析/二重加算なし。Wave6正式0/16、未着手12、関数VERIFY0、安全拒否4。研究MASTER最新checkpoint189 DONE9/34、IN_PROGRESS21/VERIFY4、旧EXE実機Golden PASS0、新旧strict MATCH0、ゲーム再実装率は測定していない。
+- [LOAD/LIMIT] PC CPU/RAM/active.lock/Java/Ghidraは既往安全拒否preflightの再試行を避けたため未計測。REA/Ghidra/runner/sync実行0秒、read-only検討全体時間未計測。online上限1MCP/最大4関数/Ghidra900000ms/request960000ms。
+- [REFUSAL/OWNERSHIP] 過去のrun_decompile起動安全拒否、Wave6の拒否4VA、0x5710C0..0x571500、拒否済みREA exporter/preflightを再試行・別tool/path/shell/Remote迂回しない。原本ZIP/EXE、MASTER/A-E/T018、既存QUEUE/PROGRESS/作業run/他設定/Git/automationは変更しない。
+- [NEXT] 初回死亡処理T010/T012/T013の0x575F91正常帰還とtroop選択更新の許可済み既存証拠を優先。T014のセーブ後乱数影響は同一スレッド/再seed順の旧実機合法観測を待つ。本fixtureと先行オフライン未同期資料はE/所有レーンが重複審査するまで独立REAの追加試験候補に留める。

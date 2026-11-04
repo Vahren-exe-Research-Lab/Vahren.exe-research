@@ -157,6 +157,9 @@
 <a id="field-1eec44"></a>
 ## engine + 0x1EEC44
 
+- [research/recovered/rea_batch11/reports/REA_20261015_2240_POSTLETHAL_EVENT_FLAG_ABI.md 行 9](../../research/recovered/rea_batch11/reports/REA_20261015_2240_POSTLETHAL_EVENT_FLAG_ABI.md?plain=1#L9-L9) — - EXACT GUARD: 0x4321F4 flag!=0 THEN 0x432209 CMP BYTE [engine+0x1EEC44],0。両方非0なら0x432216 battle-special routeへ進み、一般経路0x432306をskipする。flag=1でもengine battle flag
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
 - [research/recovered/script_topics/T010_EVENT_SCHEDULER.md 行 375](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L375-L375) — [CONFIRMED-SAVED-NATIVE / NEW GATE] A所有 `exe/T006_FLOW_CONTROL_PROBE.txt` 0x4335E0..0x433621。`[engine+0x1EEC3C]`のmode分岐でmode1は0x433617を経て`0x4338D0`へ、mode6は0x433
   制約・訂正　Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
 

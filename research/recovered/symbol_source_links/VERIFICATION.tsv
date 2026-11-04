@@ -1,0 +1,8 @@
+check	result	detail
+proposal_cap	PASS	30 proposals on 30 unique dictionary rows; eight new batch11 locator destinations
+exact_primary_id_va	PASS	Each existing exact cited B ID occurs in the unique primary authored header; registered VA occurs literally with only leading-zero normalization
+source_preservation	PASS	Every proposed source retains the exact existing source as prefix; dictionary raw-line and source-field SHA256 receipts verified
+protected_ranges	PASS	No target line intersects symbols.tsv citation ranges 123,151,266,267 in relations/corrections metadata
+inputs_unchanged	PASS	symbols.tsv, relations/corrections metadata and both eligible recovery ledgers unchanged since snapshot
+skip_accounting	PASS	74 citation-level skips, including 13 already-present paths, two held-symbol IDs, one absent VA, 12 duplicate-row alternatives and three clear outside-cap candidates
+scope	PASS	Only accepted nonblank hash-bearing Markdown destinations from root recovery ledger and batch11 intake were indexed; no original, native, payload, script execution or shared write

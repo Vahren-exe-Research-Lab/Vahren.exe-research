@@ -1,0 +1,105 @@
+{
+  "checks_failed": 0,
+  "checks_passed": 72,
+  "computed": {
+    "equivalence_transitivity_holds_for_1_NaN_2": false,
+    "negative_wrapped_square_46341_0": -2147479015,
+    "synthetic_comparisons": {
+      "a_b": false,
+      "a_c": false,
+      "b_a": false,
+      "b_c": false,
+      "c_a": true,
+      "c_b": false
+    },
+    "x87_status_AH": {
+      "equal": "0x40",
+      "greater": "0x00",
+      "less": "0x01",
+      "unordered": "0x45"
+    }
+  },
+  "golden_pass": 0,
+  "limitations": [
+    "Masked x87 negative-square-root -> NaN path is conditional; not observed on real game.",
+    "Comparator argument register order and real distance semantics not revalidated from original PE this run.",
+    "No claim that 26-list merge produced an incorrect gameplay order.",
+    "PC MASTER, HOLD21 and 03H recovery not directly inspected."
+  ],
+  "local_saved_receipts": [
+    {
+      "hour": "05H",
+      "verified": 4
+    },
+    {
+      "hour": "06H",
+      "verified": 4
+    },
+    {
+      "hour": "07H",
+      "verified": 4
+    },
+    {
+      "hour": "08H",
+      "verified": 4
+    },
+    {
+      "hour": "09H",
+      "verified": 4
+    },
+    {
+      "hour": "10H",
+      "verified": 4
+    },
+    {
+      "hour": "11H",
+      "verified": 4
+    },
+    {
+      "hour": "12H",
+      "verified": 4
+    },
+    {
+      "hour": "13H",
+      "verified": 4
+    },
+    {
+      "hour": "14H",
+      "verified": 4
+    }
+  ],
+  "native_execution": false,
+  "new_original_pe_read": false,
+  "owner": "B",
+  "pc_connected": false,
+  "pc_synced": false,
+  "previous_source_sha256": {
+    "B_OFFLINE_20261101_13H_DISTANCE_SORT_EVIDENCE.json": "1C2030F7A1D8EB12A5E97F51509C70FA1BA25ADD600C271A5DA23516939A0205",
+    "B_OFFLINE_20261101_14H_DISTANCE_BOUNDARY_EVIDENCE.json": "9941DE16CB1EB58D894EDCDCA4846E058976EE4093C6D4C2A604512124EBB392"
+  },
+  "prior_call_sites": {
+    "0x0052609E": "0x005E3B70",
+    "0x00526112": "0x005E3B70",
+    "0x0052AD35": "0x00526030"
+  },
+  "ready": false,
+  "research_id": "B-OFFLINE-20261101-15H-T011-T024-NAN-COMPARATOR-TRANSITIVITY-01",
+  "source": "PRIOR_CAPTURED_STATIC_13H_14H+SYNTHETIC_INFERENCE",
+  "source_sites": {
+    "0x0052608E": "0FAFC0",
+    "0x00526091": "0FAFC9",
+    "0x00526094": "03C1",
+    "0x00526117": "DC5C2410",
+    "0x0052611D": "F6C441",
+    "0x00526120": "750F",
+    "0x00526122": "B801000000",
+    "0x00526134": "33C0",
+    "0x0052AD3A": "84C0",
+    "0x0052AD3C": "741B"
+  },
+  "strict_match": 0,
+  "tasks": [
+    "T011",
+    "T024"
+  ]
+}

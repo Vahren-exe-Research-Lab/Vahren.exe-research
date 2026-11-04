@@ -1,0 +1,16 @@
+# REA-20261019-0133-TROOP-CALLFRAME-METADATA-01｜死亡経由TroopUpdateの呼出元PCとABI情報の欠落監査
+- [OWNER/TASK] 独立REA / WRQ-20261013-REA-DEATH / T010,T012,T013。Desktop Commander Local Compactのみ。対象は保存済みnative資料とWork所有現行Pythonのread-only比較。原本・他owner・製品コード変更なし。
+- [PROVENANCE] 既存原作契約=REA-ND-20261013-001、REA所有SOURCE_RECOVERY_DAMAGE_STATUS_20261011.md §ND-TROOP/§ND-GRAPH-TAIL。保存run source SHA=E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187。今回EXE実ファイル再ハッシュなし。
+- [NATIVE PARENT CALLS] 死亡側0x575F6C CALL0x5684B0→戻り0x575F71、および0x575F8C CALL0x5684B0→戻り0x575F91。前者帰還後Unit+1867D再読によって後者実行を判断するため両callの継続元は同一ではない。
+- [CURRENT WORK TRACE] dev_lab/src/hakushin_compat/native_battle_outcome.py のTroopUpdateTraceにはpointer/next_va/extent/live_count/removed/complete/callee_va/return_pc/object_ref/tail_call/task_unregisteredがあるが、死亡呼出元のouter_return_pc・call_generation・callee_stackは無い。原作caller0x575F71と0x575F91の識別をTroopUpdateTrace単体から回収できない。
+- [BRANCH ONE] selectedかつ剪定後非空: codeはui(0x56853B,0x568540,callee=0x41F850)を生成。nativeは0x41F850へarg1=1を渡すが、このTroopUpdateTrace型は引数の保存欄を持たない。選択解除0x527ED0内部のTroopSelectionTraceではcallee_stack=(1,)を別に保持しており粒度が不統一。
+- [BRANCH TWO] normal・live_count>0・先頭controlled: codeはui(0x5685C5,None,callee=0x527EA0,tail=True)を返し、return_pc=None。これは正当なtail-callの内部帰還先が無いという記録であり、外側0x5684B0呼出元へ戻るPCが不要という意味ではない。
+- [OTHER BRANCHES] selected emptyの0x56852D→0x527ED0→0x568532、normal empty controlledの0x5685F8→0x527ED0→0x5685FDも内部return_pcのみで外側死亡callerの帰還先を表さない。TroopSelectionTrace.parent_return_pcは0x568532/0x5685FDであり0x575F71/0x575F91とは別階層。
+- [SESSION CHECK] native_battle_session.pyのupdate_resolved_troopはACTIVE限定でtraceのみ保存し、continue_resolved_troop_selectionはVERIFY_TROOP_UPDATE→VERIFY_TROOP_SELECTIONへ遷移する。両APIは死亡呼出元のPCやcall generationを引数・戻り値に含めない。native_battle_runner.pyのtroop_selection_resolvedはpending UIでbreakする。
+- [INDEPENDENT DELTA] 既存の「UI復帰なし」「binding一世代のみ」に追加し、未完成経路を正確に復元するにはTroopUpdateTrace単体のcaller origin/外側return PC/引数表現が不足することを現存ソースから限定確認。製品全モジュールの不存在を証明せず、原作動的BUGやstrict不一致として確定しない。
+- [ACCEPTANCE DESIGN/NOT RUN] 発火元0x575F6Cと0x575F8Cを別fixtureにし、caller VA/outer returnPC、Troop pointer、branch nextVA、callee VA、callee stack、inner returnPC、tail_call、callee returned、outer returned、selection binding generationを段階別に保持。未確認returnを正常値に偽装しない。
+- [EVIDENCE/STATUS] Ghidra info/pseudo/assembly/callers/calleesの新規evidence IDは各0件。新VERIFIED関数+0。保存run20261011T153309850Z＋sync20261011T153958076ZではW1 16/16,W2 10/10,W3 10/10,W4 12/12,W5 16/16、累計64/64(P0 29/P1 35)。Wave6正式0/16、暫定P0=5/P1=11、未着手TODO12(P0 2/P1 10)、既往拒否BLOCKED4(P0 3/P1 1)、関数結果VERIFY0。QUEUE/PROGRESS既往rename EPERMで古い。
+- [RESEARCH/GOLDEN] MASTER直読最新checkpoint187、研究DONE9/34・IN_PROGRESS21/VERIFY4。旧EXE実機golden PASS0、新旧strict MATCH0。ゲーム再実装率は測定していない。
+- [PC/PREFLIGHT] 前回REA-RC-20261019-0034-LOCAL-PREFLIGHT-SAFETY-01のread-only PowerShell前検査拒否を繰返し/別shell/tool/pathで迂回しない。今回のCPU/RAM/先行Java状態・承認copyの新規SHA確認は未実施。Local資料一覧にactive.lockは見えなかったが原子的検査とはみなさない。安全条件未確認とrunner6.4.0対成功REA6.1.0の版差・Wave6未登録により重い解析/新syncを実行しない。
+- [TIME/LIMIT] 新規Ghidra実行時間0秒、軽量調査総時間未計測。単一MCPセッション/最大4関数/Ghidra900000ms/request960000ms。不足・競合・拒否時にプロセス停止やlock削除はしない。
+- [NEXT/SAFETY] P0死亡Graphのoutward callframe識別と0x527F2E後の実UI return receiptを安全な既存証拠から継続。Wave6 P0候補0x470980/0x42E700は未着手維持（新規逆解析を実施しない）。禁止0x5710C0..0x571500、既拒否Wave6 4VA、既拒否REA exporter/前検査を再試行・迂回しない。原本ZIP/EXE・A-E・MASTER/T018・Work製品・QUEUE/PROGRESS・Git/push/設定/既存automationは変更しない。

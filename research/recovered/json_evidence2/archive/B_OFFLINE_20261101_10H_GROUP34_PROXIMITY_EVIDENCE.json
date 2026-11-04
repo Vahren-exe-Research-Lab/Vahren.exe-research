@@ -1,0 +1,681 @@
+{
+  "research_id": "B-OFFLINE-20261101-10H-T011-T024-GROUP34-PROXIMITY-GATE-01",
+  "owner": "B",
+  "tasks": [
+    "T011",
+    "T024"
+  ],
+  "T013": "VERIFY context only",
+  "state": [
+    "OFFLINE-UNSYNCED",
+    "STATIC",
+    "INFERRED",
+    "VERIFY",
+    "NOT READY"
+  ],
+  "original_game_Golden_PASS": 0,
+  "strict_MATCH": 0,
+  "READY": false,
+  "source_SHA256": {
+    "Vahren.exe": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+    "offline_pack_zip": "911E5E37A3F9BD5B36F929AF94B0D1E2CD1CD5CF34E3E2F16C8FC800ABF5F7C2",
+    "B_recovery_zip": "059B91381C1B58214353769006E0F4049FCDE393A6B7970F4513602878A2B2C9",
+    "search.sqlite": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF"
+  },
+  "source": "PE original raw bytes with exact native VA; Ghidra 20261021 STATIC pseudoc; no game execution",
+  "native_instruction_windows": [
+    {
+      "va": "0x005680BE",
+      "hex": "c7461c00010000",
+      "sha256": "8E9D8A8FC4BC6C7660F68D6AAA70307AB9F3143F4E16BF2A3F47396D089DA3D7"
+    },
+    {
+      "va": "0x005680CF",
+      "hex": "895e34",
+      "sha256": "0504475F93755B9C7C9F5874DDF7686B617FF7DEFBCF5659A70E72EF7ED128A8"
+    },
+    {
+      "va": "0x005680D2",
+      "hex": "895e30",
+      "sha256": "7B7F6367536A73F646238C7D0767EDB99B4734EB720E75C8EB8CAD63430AE8B4"
+    },
+    {
+      "va": "0x005680FC",
+      "hex": "dc0d60b06300",
+      "sha256": "20D10A61CCC5386C2AFBC8F2D1686D3377BFE18FD46E877B81534F19734C2F55"
+    },
+    {
+      "va": "0x00568109",
+      "hex": "89463c",
+      "sha256": "65A45029C31A1A4D9811CB83012DF9C530CCF842DF2CB121E3933C3137F5DEAB"
+    },
+    {
+      "va": "0x0056AB6D",
+      "hex": "ff453c",
+      "sha256": "B6EE8EFD3B7EE1900ACB54705E58270F2608A58C333A313606AFDC13684F8843"
+    },
+    {
+      "va": "0x00569392",
+      "hex": "80be7c86010000",
+      "sha256": "AB122B565C826275923651D8F1F458B2EF673A600C0FDBAA2B4147B58F1F3BE8"
+    },
+    {
+      "va": "0x0056939B",
+      "hex": "80be7e86010000",
+      "sha256": "702B02A0798BE518B94475D0FDDC83C13BD88479209250EF08FA7EFB25D095FF"
+    },
+    {
+      "va": "0x005693A4",
+      "hex": "83beb000000000",
+      "sha256": "D233DDCE9BFA51638D8043D769E234DC79690BCD0DF1C70B83CDB51B734E02CE"
+    },
+    {
+      "va": "0x005693B3",
+      "hex": "83bea800000000",
+      "sha256": "AEA712531A32812CF917280D494DA1312A505840AC7FCB7C3457311771C74B77"
+    },
+    {
+      "va": "0x005693BC",
+      "hex": "8b8630e50100",
+      "sha256": "06A9C5A4C318315CF975573E5A034753FA38987310AFDC4B324CCD015979D6C1"
+    },
+    {
+      "va": "0x005693C2",
+      "hex": "3b055cbc6500",
+      "sha256": "9253F33C1F5DB104770CD089E5671E55217A7E617669AB77C6C792CB526F6017"
+    },
+    {
+      "va": "0x005693E7",
+      "hex": "8b8628020000",
+      "sha256": "C84D8D02DC7149AD3107DB2615E9B5D7F5BA3ED4641A8380E7992F312F1E2EBD"
+    },
+    {
+      "va": "0x005693ED",
+      "hex": "8b4d34",
+      "sha256": "723AC045286BB2294D7DEFD0C3A2AA3C588396B429A66268BD1FD3E2E883656C"
+    },
+    {
+      "va": "0x005693F2",
+      "hex": "8d0441",
+      "sha256": "9577C2B75FBBDB4669010F274E9BD61EF6C9AB936A210D25D10B9E2F672353BC"
+    },
+    {
+      "va": "0x00569407",
+      "hex": "3bc6",
+      "sha256": "6C0D2984620C6B21698EA13A8A6175BBE84B92E247D28483551067F6CA2DB356"
+    },
+    {
+      "va": "0x0056940B",
+      "hex": "80b87c86010000",
+      "sha256": "608CB4B6C2292FA66BA2BB5ABDA37B31C2733094A320C468267C73DE001531F5"
+    },
+    {
+      "va": "0x00569414",
+      "hex": "80b87e86010000",
+      "sha256": "F00B1C404F504F43FF8EFEE680DCB968F62EA6292E9D929697747E1A41F73178"
+    },
+    {
+      "va": "0x0056941D",
+      "hex": "8bb824020000",
+      "sha256": "0256345BBE23EDAF7D999EB538F5E05840AD9ECA8A5570635B6FD3BB8B135271"
+    },
+    {
+      "va": "0x00569429",
+      "hex": "8b9020020000",
+      "sha256": "2E73EB5D4B1B0E1B2F73C8EB399DCF57523DC72F36E1A0AD1D4FA17E353BB77B"
+    },
+    {
+      "va": "0x0056942F",
+      "hex": "8b8620020000",
+      "sha256": "1A914533CC04E47826083F069C8CA11DC9A1141B554FCF2E91C7247494D2388D"
+    },
+    {
+      "va": "0x00569435",
+      "hex": "8b8e24020000",
+      "sha256": "47CD1AFD0E6DF156891D250FF4390F2E57F26AF3045618D60334FB106289BF87"
+    },
+    {
+      "va": "0x00569443",
+      "hex": "0fafc9",
+      "sha256": "CC691CE68A4123F1E31F76E21B8145357794B083EA6C921A08F72E1710FF9D1E"
+    },
+    {
+      "va": "0x00569446",
+      "hex": "0fafc0",
+      "sha256": "ECD316E5030D0C6E70834DE9728AAB5840C010F56545EC663A6B08680395DD59"
+    },
+    {
+      "va": "0x00569449",
+      "hex": "03c8",
+      "sha256": "6E222F1C275C8906045B65FF3C1636C68C733B4FC164DCE540A04AC74F510AEC"
+    },
+    {
+      "va": "0x00569458",
+      "hex": "db442414",
+      "sha256": "04A0FFFE1861F4F1637666A7B22D980CC8BC30D2C2B79149CFDE7DAB88D187B9"
+    },
+    {
+      "va": "0x0056945C",
+      "hex": "ded9",
+      "sha256": "038334F481B35C454EFE47852578B64E03E66058A1CE9311C86DAEAD98B76951"
+    },
+    {
+      "va": "0x00569460",
+      "hex": "f6c401",
+      "sha256": "6D1D10AC5858F7996530A42DCD926ECABFC66788C2F2190D15117C11E6AF664C"
+    },
+    {
+      "va": "0x00569463",
+      "hex": "750e",
+      "sha256": "A14FB5A5396A0BF85CE808E2004020D12877746198D6D8DF50C24CC2F81782A3"
+    },
+    {
+      "va": "0x0056948D",
+      "hex": "d9ee",
+      "sha256": "22BE160562621C4F39FBED535871C4DFB45C81ECB8DAC5C27E4E8A2AE5A0B05E"
+    },
+    {
+      "va": "0x005694B2",
+      "hex": "dc7c2418",
+      "sha256": "D71DAE5D656BB65B84A7871879EC9D826D28424C6B306DDACB1E2204AEF43E4E"
+    },
+    {
+      "va": "0x005694B6",
+      "hex": "dc5c2430",
+      "sha256": "BD89804AC22002B5A0FEC874C0DC0B0C1CDEE8E8BD458D73B7FAD6D1BA1DBE28"
+    },
+    {
+      "va": "0x005694BC",
+      "hex": "f6c401",
+      "sha256": "6D1D10AC5858F7996530A42DCD926ECABFC66788C2F2190D15117C11E6AF664C"
+    },
+    {
+      "va": "0x005694BF",
+      "hex": "750f",
+      "sha256": "BB52E9E6DB182172C9062587FC4BDD0A673150F95815E0BCBAE120469101ACDD"
+    },
+    {
+      "va": "0x0056ADBA",
+      "hex": "55",
+      "sha256": "A25513C7E0F6EAA80A3337EE18081B9E2ED09E00AF8531C8F7BB2542764027E7"
+    },
+    {
+      "va": "0x0056ADC6",
+      "hex": "84c0",
+      "sha256": "CEFB6AB22CEB39E9BA061187C8EA79ABD8C6DD3FB3031CE67C7CB6BE1FE8B2E0"
+    },
+    {
+      "va": "0x0056AE8A",
+      "hex": "84c0",
+      "sha256": "CEFB6AB22CEB39E9BA061187C8EA79ABD8C6DD3FB3031CE67C7CB6BE1FE8B2E0"
+    },
+    {
+      "va": "0x005290A7",
+      "hex": "8b4634",
+      "sha256": "536F0A527B016BEF3264DF865CCA26512E95B49248CE37709305035509C41288"
+    },
+    {
+      "va": "0x005290DD",
+      "hex": "8b5634",
+      "sha256": "EFF27B1B824B9B3BD8D1A037CAF5CF7A309439BB5F5868D02D5C4B7A831CC992"
+    }
+  ],
+  "direct_E8_calls": [
+    {
+      "site_va": "0x005680E9",
+      "callee_va": "0x005B6EAB",
+      "bytes": "e8bded0400"
+    },
+    {
+      "site_va": "0x00568102",
+      "callee_va": "0x005D1B80",
+      "bytes": "e8799a0600"
+    },
+    {
+      "site_va": "0x00569453",
+      "callee_va": "0x005E3B70",
+      "bytes": "e818a70700"
+    },
+    {
+      "site_va": "0x0056ADC1",
+      "callee_va": "0x00569360",
+      "bytes": "e89ae5ffff"
+    },
+    {
+      "site_va": "0x0056AE85",
+      "callee_va": "0x00569360",
+      "bytes": "e8d6e4ffff"
+    },
+    {
+      "site_va": "0x0056ADE9",
+      "callee_va": "0x00569700",
+      "bytes": "e812e9ffff"
+    },
+    {
+      "site_va": "0x0056AE77",
+      "callee_va": "0x00569730",
+      "bytes": "e8b4e8ffff"
+    }
+  ],
+  "rdata_double": [
+    {
+      "va": "0x0063B048",
+      "double": 1.0,
+      "sha256": "6C3C396ED6B5C36DCAE172271F462051B1266B851E92DF3DEEA8AC65478FD712"
+    },
+    {
+      "va": "0x0063B050",
+      "double": 0.5,
+      "sha256": "4CFA5B42CA669328764E67CD9A34BB8F90B16ED7CA8D85E8443783D7CCCE15ED"
+    },
+    {
+      "va": "0x0063B060",
+      "double": 100.0,
+      "sha256": "00754A39F7DE30495780D4C6242F680316F56BF4BF735C3681B3AC1D14F1512E"
+    },
+    {
+      "va": "0x0063B080",
+      "double": 3.0517578125e-05,
+      "sha256": "0051CFD064EA4A91086438CE7F6B3D21CA62D76EE264A63F3692E57CDA89CD6E"
+    }
+  ],
+  "pseudoc": [
+    {
+      "va": "0x00568080",
+      "path": "functions/0056/00568080.c",
+      "bytes": 1813,
+      "sha256": "CB626F94AD9C0DC6226D9D08E0624ACB4E74082397FED7EA6C9C71FE945DFFA7"
+    },
+    {
+      "va": "0x00569280",
+      "path": "functions/0056/00569280.c",
+      "bytes": 1744,
+      "sha256": "196E85C4BF1DDC4A4D10EFF87BCEFB422AD49B6E7E1262F9B3CFAFBEE6C50D74"
+    },
+    {
+      "va": "0x00569360",
+      "path": "functions/0056/00569360.c",
+      "bytes": 2627,
+      "sha256": "309A88BD46955E9873936F91AF03731C50156A1B2476FAAA18EEE9F5696AAF1C"
+    },
+    {
+      "va": "0x0056AB20",
+      "path": "functions/0056/0056AB20.c",
+      "bytes": 13724,
+      "sha256": "124E47F6664898EAC07375C89F0A082D0417191D88290B99638AFA83C051A0E3"
+    },
+    {
+      "va": "0x00528DB0",
+      "path": "functions/0052/00528DB0.c",
+      "bytes": 19534,
+      "sha256": "A2444391476AF79BF31F64465B3D344C30EA3E499E9D722D5D01F11D639CBEBC"
+    }
+  ],
+  "model_examples": [
+    {
+      "eligible_other_units": 0,
+      "nearby_units": 0,
+      "predicate": 1,
+      "type": "SYNTHETIC_ONLY"
+    },
+    {
+      "eligible_other_units": 1,
+      "nearby_units": 0,
+      "predicate": 0,
+      "type": "SYNTHETIC_ONLY"
+    },
+    {
+      "eligible_other_units": 1,
+      "nearby_units": 1,
+      "predicate": 1,
+      "type": "SYNTHETIC_ONLY"
+    },
+    {
+      "eligible_other_units": 2,
+      "nearby_units": 0,
+      "predicate": 0,
+      "type": "SYNTHETIC_ONLY"
+    },
+    {
+      "eligible_other_units": 2,
+      "nearby_units": 1,
+      "predicate": 1,
+      "type": "SYNTHETIC_ONLY"
+    },
+    {
+      "eligible_other_units": 2,
+      "nearby_units": 2,
+      "predicate": 1,
+      "type": "SYNTHETIC_ONLY"
+    },
+    {
+      "eligible_other_units": 3,
+      "nearby_units": 1,
+      "predicate": 0,
+      "type": "SYNTHETIC_ONLY"
+    },
+    {
+      "eligible_other_units": 3,
+      "nearby_units": 2,
+      "predicate": 1,
+      "type": "SYNTHETIC_ONLY"
+    }
+  ],
+  "tests": [
+    {
+      "id": "PE_SHA256",
+      "pass": true,
+      "actual": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187"
+    },
+    {
+      "id": "PACK_SHA256",
+      "pass": true,
+      "actual": "911E5E37A3F9BD5B36F929AF94B0D1E2CD1CD5CF34E3E2F16C8FC800ABF5F7C2"
+    },
+    {
+      "id": "RECOVERY_SHA256",
+      "pass": true,
+      "actual": "059B91381C1B58214353769006E0F4049FCDE393A6B7970F4513602878A2B2C9"
+    },
+    {
+      "id": "SQLITE_SHA256",
+      "pass": true,
+      "actual": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF"
+    },
+    {
+      "id": "SQLITE_RO_QUICK_CHECK",
+      "pass": true,
+      "actual": "ok"
+    },
+    {
+      "id": "INSTRUCTION_005680BE",
+      "pass": true,
+      "actual": "c7461c00010000"
+    },
+    {
+      "id": "INSTRUCTION_005680CF",
+      "pass": true,
+      "actual": "895e34"
+    },
+    {
+      "id": "INSTRUCTION_005680D2",
+      "pass": true,
+      "actual": "895e30"
+    },
+    {
+      "id": "INSTRUCTION_005680FC",
+      "pass": true,
+      "actual": "dc0d60b06300"
+    },
+    {
+      "id": "INSTRUCTION_00568109",
+      "pass": true,
+      "actual": "89463c"
+    },
+    {
+      "id": "INSTRUCTION_0056AB6D",
+      "pass": true,
+      "actual": "ff453c"
+    },
+    {
+      "id": "INSTRUCTION_00569392",
+      "pass": true,
+      "actual": "80be7c86010000"
+    },
+    {
+      "id": "INSTRUCTION_0056939B",
+      "pass": true,
+      "actual": "80be7e86010000"
+    },
+    {
+      "id": "INSTRUCTION_005693A4",
+      "pass": true,
+      "actual": "83beb000000000"
+    },
+    {
+      "id": "INSTRUCTION_005693B3",
+      "pass": true,
+      "actual": "83bea800000000"
+    },
+    {
+      "id": "INSTRUCTION_005693BC",
+      "pass": true,
+      "actual": "8b8630e50100"
+    },
+    {
+      "id": "INSTRUCTION_005693C2",
+      "pass": true,
+      "actual": "3b055cbc6500"
+    },
+    {
+      "id": "INSTRUCTION_005693E7",
+      "pass": true,
+      "actual": "8b8628020000"
+    },
+    {
+      "id": "INSTRUCTION_005693ED",
+      "pass": true,
+      "actual": "8b4d34"
+    },
+    {
+      "id": "INSTRUCTION_005693F2",
+      "pass": true,
+      "actual": "8d0441"
+    },
+    {
+      "id": "INSTRUCTION_00569407",
+      "pass": true,
+      "actual": "3bc6"
+    },
+    {
+      "id": "INSTRUCTION_0056940B",
+      "pass": true,
+      "actual": "80b87c86010000"
+    },
+    {
+      "id": "INSTRUCTION_00569414",
+      "pass": true,
+      "actual": "80b87e86010000"
+    },
+    {
+      "id": "INSTRUCTION_0056941D",
+      "pass": true,
+      "actual": "8bb824020000"
+    },
+    {
+      "id": "INSTRUCTION_00569429",
+      "pass": true,
+      "actual": "8b9020020000"
+    },
+    {
+      "id": "INSTRUCTION_0056942F",
+      "pass": true,
+      "actual": "8b8620020000"
+    },
+    {
+      "id": "INSTRUCTION_00569435",
+      "pass": true,
+      "actual": "8b8e24020000"
+    },
+    {
+      "id": "INSTRUCTION_00569443",
+      "pass": true,
+      "actual": "0fafc9"
+    },
+    {
+      "id": "INSTRUCTION_00569446",
+      "pass": true,
+      "actual": "0fafc0"
+    },
+    {
+      "id": "INSTRUCTION_00569449",
+      "pass": true,
+      "actual": "03c8"
+    },
+    {
+      "id": "INSTRUCTION_00569458",
+      "pass": true,
+      "actual": "db442414"
+    },
+    {
+      "id": "INSTRUCTION_0056945C",
+      "pass": true,
+      "actual": "ded9"
+    },
+    {
+      "id": "INSTRUCTION_00569460",
+      "pass": true,
+      "actual": "f6c401"
+    },
+    {
+      "id": "INSTRUCTION_00569463",
+      "pass": true,
+      "actual": "750e"
+    },
+    {
+      "id": "INSTRUCTION_0056948D",
+      "pass": true,
+      "actual": "d9ee"
+    },
+    {
+      "id": "INSTRUCTION_005694B2",
+      "pass": true,
+      "actual": "dc7c2418"
+    },
+    {
+      "id": "INSTRUCTION_005694B6",
+      "pass": true,
+      "actual": "dc5c2430"
+    },
+    {
+      "id": "INSTRUCTION_005694BC",
+      "pass": true,
+      "actual": "f6c401"
+    },
+    {
+      "id": "INSTRUCTION_005694BF",
+      "pass": true,
+      "actual": "750f"
+    },
+    {
+      "id": "INSTRUCTION_0056ADBA",
+      "pass": true,
+      "actual": "55"
+    },
+    {
+      "id": "INSTRUCTION_0056ADC6",
+      "pass": true,
+      "actual": "84c0"
+    },
+    {
+      "id": "INSTRUCTION_0056AE8A",
+      "pass": true,
+      "actual": "84c0"
+    },
+    {
+      "id": "INSTRUCTION_005290A7",
+      "pass": true,
+      "actual": "8b4634"
+    },
+    {
+      "id": "INSTRUCTION_005290DD",
+      "pass": true,
+      "actual": "8b5634"
+    },
+    {
+      "id": "E8_005680E9",
+      "pass": true,
+      "actual": "0x5b6eab"
+    },
+    {
+      "id": "E8_00568102",
+      "pass": true,
+      "actual": "0x5d1b80"
+    },
+    {
+      "id": "E8_00569453",
+      "pass": true,
+      "actual": "0x5e3b70"
+    },
+    {
+      "id": "E8_0056ADC1",
+      "pass": true,
+      "actual": "0x569360"
+    },
+    {
+      "id": "E8_0056AE85",
+      "pass": true,
+      "actual": "0x569360"
+    },
+    {
+      "id": "E8_0056ADE9",
+      "pass": true,
+      "actual": "0x569700"
+    },
+    {
+      "id": "E8_0056AE77",
+      "pass": true,
+      "actual": "0x569730"
+    },
+    {
+      "id": "CONSTANT_0063B048",
+      "pass": true,
+      "actual": "1.0"
+    },
+    {
+      "id": "CONSTANT_0063B050",
+      "pass": true,
+      "actual": "0.5"
+    },
+    {
+      "id": "CONSTANT_0063B060",
+      "pass": true,
+      "actual": "100.0"
+    },
+    {
+      "id": "CONSTANT_0063B080",
+      "pass": true,
+      "actual": "3.0517578125e-05"
+    },
+    {
+      "id": "PACK_CRC",
+      "pass": true,
+      "actual": "CRC all entries"
+    },
+    {
+      "id": "PSEUDOC_00568080",
+      "pass": true,
+      "actual": 1
+    },
+    {
+      "id": "PSEUDOC_00569280",
+      "pass": true,
+      "actual": 1
+    },
+    {
+      "id": "PSEUDOC_00569360",
+      "pass": true,
+      "actual": 1
+    },
+    {
+      "id": "PSEUDOC_0056AB20",
+      "pass": true,
+      "actual": 1
+    },
+    {
+      "id": "PSEUDOC_00528DB0",
+      "pass": true,
+      "actual": 1
+    },
+    {
+      "id": "RECOVERY_CRC",
+      "pass": true,
+      "actual": "CRC all entries"
+    }
+  ],
+  "pass_count": 62,
+  "test_count": 62,
+  "safe_scoping": "No pre-refused commands/VA, no Ghidra reanalysis, no writable source, original PE read-only.",
+  "known_error": "PC Local Compact SSE probe 429, not a safety denial. Prior 03H attempted write existence unknown.",
+  "caveat": "x87 signed overflow/NaN/real-game branch, RNG phase and final movement outcome VERIFY."
+}

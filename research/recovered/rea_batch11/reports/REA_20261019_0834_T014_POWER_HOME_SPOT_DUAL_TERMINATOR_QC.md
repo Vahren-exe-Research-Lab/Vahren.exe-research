@@ -1,0 +1,14 @@
+# REA-20261019-0834-T014-POWER-HOMESPOT-DUAL-END-01｜Power home_spot読込と二重空tokenの消費境界
+- [OWNER] 独立REA/T014 P0。Desktop Commander Local Compactのみ、既保存Ghidra/native証拠のread-only再照合。新規解析・EXE実行なし。
+- [SOURCE] runs/20261011T133432356Z/5964C0_procedure_assembly.json ID ev_225abdeab1240aef12bae0642c86e2bc6494b630fee961f55233f5c29cbb5e25、pseudo ID ev_9608d350a99e5ba1453392474e951d01a83321124085c78de8ef29ffc8ea96d9。保存source SHA E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187（今回実ファイル再hashなし）。
+- [LITERAL] 保存済みA所有 exe/T014_ENTITY_MARKERS.txt は0x626AB0='home_spot'、writer側0x626AE8も'home_spot'と記載。0x59691E MOV ECX,0x626AB0→0x596927 CALL0x40B200→0x59692E JZ0x596997により、home_spot一致時だけ文字列vector path、不一致時は従来の一般数値tree pathへ進む。
+- [INNER LIST] 0x596930で文字列scratch(ESP+0x48)初期化、0x59694D CALL0x4705F0で次のnameを読み、0x596955で長さ0なら0x596984へ分岐。非空なら0x59695B..0x596969でPower+0xC0と文字列scratchを準備しCALL0x415530、0x596973..0x596982でheap string処理の後0x596930へ戻る。0x415530の厳密なappend/replace・失敗時副作用は未検証。
+- [FIRST EMPTY TOKEN] home_spot内の空tokenは0x596984へ進み、必要な一時文字列解放後0x5969F9に合流して外側0x4705F0を再び呼ぶ。従ってvector終了はPower全tag領域の終了ではない。
+- [SECOND EMPTY TOKEN / CONTROL FLOW] home_spot内終了後の外側tag再読は0x5969F9..0x596A05。0x596A0C TEST EDI→0x596A0E JNZ0x596756で非空だけ次tag処理へ戻す。2個目が空なら0x596A14のD-tag存在flag判定を経て、flag0で0x596A1BのPower+0xDC sentinel、flag1で0x596A29 cleanupへ。初回tag読取0x596740後に即空の場合だけ0x59674E TEST EDI→0x596750 JZ0x596A1Bと直接sentinelへ進む別経路であり、この2経路を混同しない。
+- [WRITER CROSSCHECK] 既保存REA STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md S-POWER-04はwriter 0x596AA0側のhome_spot vector＋空文字2回を記録。今回reader分岐と突合して、最初の空文字=home_spot要素列終端、次の空文字=Power tag外側終端という局所STATIC対応を追加。先行資料の「2番目のスコープ不明」を限定解消する。
+- [BOUNDARY] home_spot tagの名前自体は保存済みnative文字列一覧とのクロスウォーク。0x40B200 full ABI、0x415530 mutate/allocator、直前の+0xC0状態、短読込/EOF/不正2重終端時の動作はVERIFY。合法実save観測/旧EXE gameplay Goldenは未実施。
+- [STATUS] 元0x5964C0は既存5方法VERIFIED、今回新Ghidra info/pseudo/assembly/callers/callees evidence ID各0、新VERIFIED 0。Wave6候補0/16(P0 5/P1 11; TODO12/BLOCKED4;関数結果VERIFY0)。拒否済0x5710C0..0x571500/既拒否Wave6 4VA/exporter/preflightの新規抽出や迂回なし。
+- [COUNTS] 保存sync 20261011T153958076Z W1 16/16 W2 10/10 W3 10/10 W4 12/12 W5 16/16 = 64/64 STATIC (P0 29/P1 35)。QUEUE/PROGRESSはrename EPERMでSTALE。最新MASTER checkpoint189・研究DONE9/34、IN_PROGRESS21、VERIFY4。旧EXE実機golden PASS0、新旧strict MATCH0、再実装率未測定。
+- [LOAD/LIMIT] CPU/RAM/先行Java・Ghidra/active.lock/承認copy現在SHAは既拒否前検査を尊重し未測定。Ghidra/REA/run_decompile/sync 0秒、軽量調査総時間未計測。既存成功REA6.1.0/Ghidra12.1.4、現runner6.4.0。単一MCP/最大4関数・900000ms/960000ms。
+- [NEXT] T014 Power home_spot vector初期状態と0x415530 return/payloadを保存済み証拠から可能な範囲で確認。最優先の死亡T010/T012/T013では0x575F91正常帰還と初回troop NULL+selectedのfixture不足を継続。新しい旧実機golden証拠がない限りPASSにしない。
+- [OWNERSHIP] 原本ZIP/EXE/SAVE、他A-E/MASTER/T018、Work製品・QUEUE/PROGRESS・Git/push・MCP/OS設定・既存automation変更なし。

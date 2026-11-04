@@ -31,6 +31,21 @@
 - [research/recovered/b_reports/T011_T024_DUAL_LIST_MODE3_VECTOR_NATIVE_20261101_12H.md 行 48](../../research/recovered/b_reports/T011_T024_DUAL_LIST_MODE3_VECTOR_NATIVE_20261101_12H.md?plain=1#L48-L48) — 原作ver0.67の同一EXE/DAT/MAP/SAVE、同じ戦闘シナリオ・グループ、Unit群、RNG、0/1/複数のA/B分類、`manager+0x474` が3／非3、`group+0x34`の正負境界、前後のlinked-list順序とvector要素順、各Unit+0x1867C、Record+0x28の変
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
+<a id="field-1e8630"></a>
+## manager + 0x1E8630
+
+- [research/recovered/b_batch11/data/T028_TRIFLAG_SIDE_MODE_PRODUCER_NATIVE_20261028_01H.md 行 13](../../research/recovered/b_batch11/data/T028_TRIFLAG_SIDE_MODE_PRODUCER_NATIVE_20261028_01H.md?plain=1#L13-L13) — - F54!=0: manager+0x1EED44=[manager+0x1E8630]、+0x1EED48=[manager+0x1E8634]、0x490AA0..AAでmode=(!player_battle)。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch11/data/T028_TRIFLAG_SIDE_MODE_PRODUCER_NATIVE_20261028_01H.md 行 20](../../research/recovered/b_batch11/data/T028_TRIFLAG_SIDE_MODE_PRODUCER_NATIVE_20261028_01H.md?plain=1#L20-L20) — - F54/F55が指すゲーム上の正式名称、[manager+0x1E8630/34/38]の実体（陣営・troop等）、実状態での到達、+0x1EED56の最終consumerとGameEvent副作用はVERIFY。+0x1EED54/55をenemy/player boolと命名しない。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+<a id="field-1e8634"></a>
+## manager + 0x1E8634
+
+- [research/recovered/b_batch11/data/T028_TRIFLAG_SIDE_MODE_PRODUCER_NATIVE_20261028_01H.md 行 13](../../research/recovered/b_batch11/data/T028_TRIFLAG_SIDE_MODE_PRODUCER_NATIVE_20261028_01H.md?plain=1#L13-L13) — - F54!=0: manager+0x1EED44=[manager+0x1E8630]、+0x1EED48=[manager+0x1E8634]、0x490AA0..AAでmode=(!player_battle)。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 <a id="field-1eec3c"></a>
 ## manager + 0x1EEC3C
 
@@ -40,10 +55,28 @@
 - [research/recovered/b_batch2/T028_WANDER_MERCENARY_TEMPLATE_DISPATCH_NATIVE_20261028_15H.md 行 22](../../research/recovered/b_batch2/T028_WANDER_MERCENARY_TEMPLATE_DISPATCH_NATIVE_20261028_15H.md?plain=1#L22-L22) — 無改変原作ver0.67 EXE、20倍改変前DAT、同SAVE/MAP/input/RNG、候補+0x75/+0x77/+0x74/+0x1B0・manager+0x1EEC3C・0x585E00/0x583A80戻値を合法runで分離し、放浪/傭兵の実UI、候補存否、忠誠度・士気、World帰還、再雇用の前後を原作
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 
+<a id="field-1eec74"></a>
+## manager + 0x1EEC74
+
+- [research/recovered/b_batch11/data/T028_DUAL_VECTOR_ALFLAG_AND_DRAIN_NATIVE_V3_20261029_05H.md 行 14](../../research/recovered/b_batch11/data/T028_DUAL_VECTOR_ALFLAG_AND_DRAIN_NATIVE_V3_20261029_05H.md?plain=1#L14-L14) — - 0x48C880後半は、旧既知5tuple manager+0x1EEC74..78で 0x48D2C2 CALL0x417160→0x48D30C MOV [EBP+0x1EEC78],EAX、別第1vectorで0x48D328 CALL0x417160→0x48D36C MOV [EBP+0x1EEC98],
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch11/data/T028_RESULT_QUEUE_INCOMPLETE_TUPLE_OUTOFRANGE_V3_20261029_03H.md 行 11](../../research/recovered/b_batch11/data/T028_RESULT_QUEUE_INCOMPLETE_TUPLE_OUTOFRANGE_V3_20261029_03H.md?plain=1#L11-L11) — - `FUN_0048C880` は manager+0x1EEC74(begin)/+0x1EEC78(end) の28-byte要素列を処理。最初の要素インデックス0から4まで都度 `vector_length <= index` の条件で `LAB_0048D18D` に跳ぶ（前02H既知の5検査は再計上0）。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 <a id="field-1eec94"></a>
 ## manager + 0x1EEC94
 
 - [research/recovered/b_batch10/data/T028_ALTERNATE_VECTOR_FIRE_REGISTRATION_CROSSJOIN_V3_20261029_04H.md 行 9](../../research/recovered/b_batch10/data/T028_ALTERNATE_VECTOR_FIRE_REGISTRATION_CROSSJOIN_V3_20261029_04H.md?plain=1#L9-L9) — - Ghidra V3修復検索の0x48C880 pseudoc（旧Ghidra由来・ABI未検証）では、manager+0x1EEC94..98 と +0x1EECA4..A8 の28-byte要素vectorを個別に順走査し、範囲外時は前03H既知0x48D18D throw sinkを共有する。この既知範囲検査は
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch11/data/T028_DUAL_VECTOR_ALFLAG_AND_DRAIN_NATIVE_V3_20261029_05H.md 行 9](../../research/recovered/b_batch11/data/T028_DUAL_VECTOR_ALFLAG_AND_DRAIN_NATIVE_V3_20261029_05H.md?plain=1#L9-L9) — - 既04Hで接続済の第1vector manager+0x1EEC94..98: 0x48CFB3 MOV ECX,ESI→0x48CFB7 E8 CALL0x49E490→0x48CFBE TEST ESI,ESI、非NULLなら0x48CFC4 vtable+0x64→0x48CFC9 indirect CALL
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+<a id="field-1eeca4"></a>
+## manager + 0x1EECA4
+
+- [research/recovered/b_batch11/data/T028_DUAL_VECTOR_ALFLAG_AND_DRAIN_NATIVE_V3_20261029_05H.md 行 10](../../research/recovered/b_batch11/data/T028_DUAL_VECTOR_ALFLAG_AND_DRAIN_NATIVE_V3_20261029_05H.md?plain=1#L10-L10) — - 第2vector manager+0x1EECA4..A8: 0x48D065 MOV ECX,ESI→0x48D069 E8 CALL0x49E490→0x48D070 TEST ESI,ESI、非NULLなら0x48D076 vtable+0x64→0x48D07B indirect CALL→AL gate。
   制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
 <a id="field-1eed43"></a>
@@ -57,6 +90,18 @@
 
 - [research/recovered/b_batch3/T028_BATTLE_MODE_CONFIG_PRODUCER_NATIVE_20261028_00H.md 行 12](../../research/recovered/b_batch3/T028_BATTLE_MODE_CONFIG_PRODUCER_NATIVE_20261028_00H.md?plain=1#L12-L12) — - 新接続：現行V3 E8 native-indexで0x49056A(0x490180)／0x522660,0x52285D(0x521D90)→0x490590、設定loader入口0x555DFE→0x5657F0。前回23H既知0x491870の0x4921C4 manager+0x1EED43→0x4921C
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+<a id="field-1eed44"></a>
+## manager + 0x1EED44
+
+- [research/recovered/b_batch11/data/T028_TRIFLAG_SIDE_MODE_PRODUCER_NATIVE_20261028_01H.md 行 13](../../research/recovered/b_batch11/data/T028_TRIFLAG_SIDE_MODE_PRODUCER_NATIVE_20261028_01H.md?plain=1#L13-L13) — - F54!=0: manager+0x1EED44=[manager+0x1E8630]、+0x1EED48=[manager+0x1E8634]、0x490AA0..AAでmode=(!player_battle)。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+<a id="field-1eed54"></a>
+## manager + 0x1EED54
+
+- [research/recovered/b_batch11/data/T028_TREE_FLAG_EXACT_MATCH_TO_BATTLE_SIDE_NATIVE_20261028_02H.md 行 12](../../research/recovered/b_batch11/data/T028_TREE_FLAG_EXACT_MATCH_TO_BATTLE_SIDE_NATIVE_20261028_02H.md?plain=1#L12-L12) — - 0x4909DC CMP BYTE PTR [ESP+0x74],0、0x4909E1 JE 0x4909EF。非0なら0x4909E3でF54（manager+0x1EED54）=1、0なら0x4909EFでF55（+0x1EED55）=1。これは01Hで残った「stackフラグのwriter」を限定的に解決。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
 <a id="field-1eed55"></a>
 ## manager + 0x1EED55

@@ -1,0 +1,16 @@
+# REA-20261018-0236-DOT54-OWNER-RETURN-GATE-01｜死亡GraphのDot v+54復帰契約
+- [SCOPE/OWNER] 独立REA / WRQ-20261013-REA-DEATH、T010/T012/T013。Desktop Commander Local Compact限定。許可済み保存NativeとWork sourceのread-only照合。新規逆解析・元拒否操作の反復なし。
+- [SOURCE] MASTER checkpoint178（2026-10-18 01時台E非READY照合で据置）/プロトコル/README/QUEUE/PROGRESSを先読。保存RUN_RESULT 20261011T153309850Z、sync 20261011T153958076Z、SOURCE_RECOVERY_DAMAGE_STATUS_20261011.md内DEATH-06/08、Work native_battle_outcome.py:113-159、session.py:281-290、runner.py:457-460を照合。
+- [NATIVE VA] 0x575DFD→0x4DDD80(Dot=Unit+0x540)。global87F783が0なら0x4DDE6B RET4→親0x575E02。非0なら0x4DDD97 Dot.virtual+0x54 CALL、正常帰還0x4DDD99でEAXを検査する。
+- [DOT BINDING SAVED] 既保存DEATH-08: ctor VA0x56FA52 がUnit+0x540へvptr0x639A4C（Dot RTTI）を格納。Dot+0x54 virtual=0x5428A0、命令8B416C C3 はEAX=[ECX+0x6C]を返す。Unit+0x540+0x6C=Unit+0x5AC、既存0x5707AEでowner=Unit pointerを格納する初期化証拠あり。
+- [BRANCH DIFFERENCE] CALL返EAX==0なら0x4DDD9D..ADでglobal0x8A2ED8へ0xF0byte memset(0)の後0x4DDDB1 RET4。EAX!=0なら0x4DDDB4以降にtree lookup（0x4F8A80）→条件付きerase(0x4DEC70)/72byte move/backref/countへ進む。最初のvirtual帰還をbool ALへ縮めずEAX全DWORDで判定する。
+- [CURRENT WORK] begin_normal_disable_graph_575df0はUnit本体vptr0x63A9E4/disabled flag/marker byteを確認し、marker!=0でgraph(object_ref=Unit+540, slot54, return_pc4DDD99)、next_va4DDD97を返して意図的に中断する。検査した関数はDot実vptr（Unit+540）、Dot.owner（Unit+5AC）、仮想結果EAXをまだ検証・取得しない。
+- [NEW LIMITED DELTA] 今回の追加は、旧保存Dot ctor/getterの具体的offsetをWork graph cursorに対応付け『slot54呼出直前のlive object-binding receiptと、0/nonzero return各分岐を再開時に別受理する必要』を明確化したこと。まだresume未実装は前回0135/0035で指摘済みにつき重複成果計上しない。
+- [WORK ACCEPTANCE / NOT RUN] Dot vptr/type identity・owner fieldと同一Unitの生存時identityを確認。virtual戻り値は再実装で捏造しない。EAX==0なら実memset完了receipt、EAX!=0ならtree検索→erase→配列backref/commit receipt後のみ0x575E02へ戻し、その後window virtual+34へ。非zeroのowner pointerとtree keyは同一視しない。
+- [VERIFY BOUNDARY] 死亡直前にDot vptr/ownerがctor値から書き換わるか、callee例外/異常return、globalバッファの最終意味、tree iterator安全性、下流render/Task/Spatial、実Gameplayは未確認。元の原作BUG・Work実機不一致確定とはしない。
+- [EVIDENCE] 新Ghidra5手法evidenceID=0、静的VERIFIED増加0。許可済みND-DEATH-08/06と保存Native N1、最新20261011T153309850Zの5方法（例0x57CFD0 info ev_f85bc7f40298b5ec205b3f4f8c0365f48b2fa30e5e8afc42691ec110f5c23efa）を再利用。新規関数境界認定0。
+- [COUNTS] Sync W1=16/16、W2=10/10、W3=10/10、W4=12/12、W5=16/16、計64/64(P0=29/29,P1=35/35)静的証拠VERIFIED。Wave6正式0/16、暫定P0=5/P1=11（未試行TODO12/BLOCKED4/結果VERIFY0）。QUEUE raw16/64、PROGRESS raw15/16は既往rename EPERMによるstale。
+- [MASTER/GOLDEN] 公式MASTER checkpoint178、研究DONE9/34・IN_PROGRESS21・VERIFY4。旧EXE実機golden PASS0、新旧strict MATCH0。ゲーム再実装率は測定していない。
+- [LOAD/EXEC] Local接続OK。list_processes CPU使用率n/a、RAM未測定で低負荷未保証。decomp_task直下active.lockは一覧上未検出（厳密preflight完了ではない）。REA6.1.0成功run対現runner6.4.0、Wave6未登録・安全guard不足・rename EPERMによりrunner/sync未実行。新Ghidra実行0秒、軽量調査総時間未計測。
+- [NEXT] WRQ-20261013-REA-DEATH P0: 4DDD99のEAX return receiptからzero-memset/tree lookupの合流点、Dot owner runtime identity、後続3 window別world captureと実RETURNを許可済み資料で追跡。Wave6は合法候補0x470980/0x42E700のxref証拠のみ。単一MCP・最大4件/回・Ghidra900000ms/request960000ms不変。
+- [NOCHANGE/REFUSAL] 0x5710C0..0x571500、Wave6拒否4VA・既拒否REAテキストexportと21H/23H拒否commandの再実行/別tool,shell,path,Remote迂回0。原本ZIP/EXE、A-E/MASTER/T018/Work/WRQ、runner/QUEUE/PROGRESS、Git/push、MCP設定、automationは変更しない。

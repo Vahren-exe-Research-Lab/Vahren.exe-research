@@ -7,6 +7,9 @@
 <a id="field-d4"></a>
 ## source + 0xD4
 
+- [research/recovered/b_batch11/data/T028_SHARED_FALLBACK_ROSTER_BACKLINK_REBIND_NATIVE_20261028_09H.md 行 11](../../research/recovered/b_batch11/data/T028_SHARED_FALLBACK_ROSTER_BACKLINK_REBIND_NATIVE_20261028_09H.md?plain=1#L11-L11) — - 07H既知の0x5882F0はsource自身を候補へ先頭追加し、source+0xD4/+0xD8を巡回。今回の増分はfallback初期配列が空であることと、missで+0x1A4だけが再束縛されるという初期化→再利用時系列。fallbackが0x5882F0へ入力される実到達は未確認であり、常に候補1件とは断
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 - [research/recovered/b_batch2/T028_ROSTER_VECTOR_DUAL_SET_PRODUCER_NATIVE_20261028_10H.md 行 9](../../research/recovered/b_batch2/T028_ROSTER_VECTOR_DUAL_SET_PRODUCER_NATIVE_20261028_10H.md?plain=1#L9-L9) — - 0x493A95 LEA ECX,[ESP+0xFC] / 0x493A9C PUSH ECX / 0x493A9D PUSH EDI / 0x493A9E CALL 0x5882F0。既07H原作ASMで解明済みの0x5882F0は元オブジェクト自身を先頭seedし、source+0xD4..D8の0x1C幅名レ
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 

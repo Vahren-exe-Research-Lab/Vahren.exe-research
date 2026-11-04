@@ -16,6 +16,36 @@
 - [research/recovered/rea_batch10/reports/REA_20261020_0035_T013_T031_STEALTH_RNG_CARDINALITY_QC.md 行 8](../../research/recovered/rea_batch10/reports/REA_20261020_0035_T013_T031_STEALTH_RNG_CARDINALITY_QC.md?plain=1#L8-L8) — - [POOL 2] 第1配列を全て走査後、距離/範囲条件で0x514E69から早期RET、そうでなければ0x514E75から第2配列(base+0x58,+0x5C)走査。第2ループ0x514E8C..0x514EE8には直接0x5B6EAB呼出なし。第2配列にも別callee間接作用が無いとは未証明。
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
 
+<a id="field-6c"></a>
+## base + 0x6C
+
+- [research/recovered/rea_batch11/reports/REA_20261018_1335_DEATH_UNITFLASH8_REGISTRY_COVERAGE_QC.md 行 4](../../research/recovered/rea_batch11/reports/REA_20261018_1335_DEATH_UNITFLASH8_REGISTRY_COVERAGE_QC.md?plain=1#L4-L4) — - [SAVED NATIVE] 0x575F41から計8枠を順に確認し、base=U+0x928+i*0x264、active byte=base+0x78=U+0x9A0+i*0x264。非activeはskip。activeではowner=mem32(base+0x6C)を使用し、0x575F51でactiveを
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_batch11/reports/REA_20261018_14H_DEATH_DETACH_CALLSITE_RETURN_PC_GATE_QC.md 行 5](../../research/recovered/rea_batch11/reports/REA_20261018_14H_DEATH_DETACH_CALLSITE_RETURN_PC_GATE_QC.md?plain=1#L5-L5) — - [NATIVE SAVED FLASH LOOP] UnitFlash i=0..7、base=U+0x928+i*0x264、active=byte(base+0x78)。active=0なら41E160をskip、非0ならowner=mem32(base+0x6C)、activeを先に0にして0x575F54
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+<a id="field-74"></a>
+## base + 0x74
+
+- [research/recovered/b_batch11/data/T028_SHARED_FALLBACK_ROSTER_BACKLINK_REBIND_NATIVE_20261028_09H.md 行 10](../../research/recovered/b_batch11/data/T028_SHARED_FALLBACK_ROSTER_BACKLINK_REBIND_NATIVE_20261028_09H.md?plain=1#L10-L10) — - アドレス算術を原本ASMと照合：0xB05BCC=0xB05A28+0x1A4、0xB05A9C=base+0x74、0xB05A9F=base+0x77。よって fallback+0x1A4はconstructorで0にされた後、**初回・再使用を問わずmissごとに入力+0xE0由来へ上書き**される。+0x7
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+<a id="field-77"></a>
+## base + 0x77
+
+- [research/recovered/b_batch11/data/T028_SHARED_FALLBACK_ROSTER_BACKLINK_REBIND_NATIVE_20261028_09H.md 行 10](../../research/recovered/b_batch11/data/T028_SHARED_FALLBACK_ROSTER_BACKLINK_REBIND_NATIVE_20261028_09H.md?plain=1#L10-L10) — - アドレス算術を原本ASMと照合：0xB05BCC=0xB05A28+0x1A4、0xB05A9C=base+0x74、0xB05A9F=base+0x77。よって fallback+0x1A4はconstructorで0にされた後、**初回・再使用を問わずmissごとに入力+0xE0由来へ上書き**される。+0x7
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+<a id="field-78"></a>
+## base + 0x78
+
+- [research/recovered/rea_batch11/reports/REA_20261018_1335_DEATH_UNITFLASH8_REGISTRY_COVERAGE_QC.md 行 4](../../research/recovered/rea_batch11/reports/REA_20261018_1335_DEATH_UNITFLASH8_REGISTRY_COVERAGE_QC.md?plain=1#L4-L4) — - [SAVED NATIVE] 0x575F41から計8枠を順に確認し、base=U+0x928+i*0x264、active byte=base+0x78=U+0x9A0+i*0x264。非activeはskip。activeではowner=mem32(base+0x6C)を使用し、0x575F51でactiveを
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_batch11/reports/REA_20261018_14H_DEATH_DETACH_CALLSITE_RETURN_PC_GATE_QC.md 行 5](../../research/recovered/rea_batch11/reports/REA_20261018_14H_DEATH_DETACH_CALLSITE_RETURN_PC_GATE_QC.md?plain=1#L5-L5) — - [NATIVE SAVED FLASH LOOP] UnitFlash i=0..7、base=U+0x928+i*0x264、active=byte(base+0x78)。active=0なら41E160をskip、非0ならowner=mem32(base+0x6C)、activeを先に0にして0x575F54
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
 <a id="field-504"></a>
 ## base + 0x504
 

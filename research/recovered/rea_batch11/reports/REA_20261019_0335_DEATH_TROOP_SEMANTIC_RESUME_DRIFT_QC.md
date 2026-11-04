@@ -1,0 +1,17 @@
+# REA-20261019-0335-DEATH-TROOP-SEMANTIC-RESUME-DRIFT-01｜死亡二部隊継続のWorkコード更新再監査
+- [OWNER/SCOPE] 独立REA / WRQ-20261013-REA-DEATH / T010,T012,T013。Desktop Commander Local Compactのみで既存資料とWork現行Pythonをread-only照合。新Ghidra・原作EXE実行なし。
+- [SOURCE] 保存済み原作静的契約REA-ND-20261013-001 / SOURCE_RECOVERY_DAMAGE_STATUS_20261011.md。最新保存run20261011T153309850Z・sync20261011T153958076Z、source SHA256=E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187。今回は対象EXE再SHAなし。
+- [WORK CODE TIMING] native_battle_outcome.pyは2026-10-19 02:23 JST、native_battle_session.pyは02:27 JST、native_battle_runner.pyは02:29 JST頃に更新されている（Local file metadataのUTC記録から換算）。以前の01:33 callframe監査より後の現行内容を今回直接読取。
+- [NEW BINDING CONTINUATION] native_battle_session.py continue_resolved_troop_selectionは、前回binding.trace.complete=trueの場合に同じlive storageからfresh TroopSelectionCleanupを構築し、二度目の正規選択解除を受け付ける。未完了bindingは再使用しない。従来の「二度目のbinding交換経路なし」は現在のコードへ適用不可。
+- [NEW UI SEMANTIC] continue_semantic_troop_uiは選択中非空0x56853B→0x41F850/0x568540と、通常非空tail0x5685C5→0x527EA0を別条件で完了扱いにし、troop_ui_revisionを進める。描画の完全なnative return receiptではなく新エンジンの意味的再描画通知。
+- [NEW POSTSELECTION MODE2] continue_semantic_troop_selection_uiは0x56852D→0x527ED0→0x568532と0x5685F8→0x527ED0→0x5685FDを区別し、後者では選択解除後にengine+0x1EF140を再読、mode==2時にTaskRegistry.unregister(pointer,defer_delete=False)。旧『後段Task解除なし』は現コードでは解消候補。ただし合法動的到達・Task副作用・実機一致は未検証。
+- [NEW OUTER DEATH GRAPH] continue_resolved_normal_disable_troopsは0x575F62/0x575F6C/0x575F71/0x575F8Cを状態として保持し、第1所属部隊NULLのとき0x575F71を経由、第1帰還後にUnit+0x1867Dを再読して選択owner+0x358の第2部隊更新を判断する。同一pointerでも別callsiteとして扱い、graph.completed_troopsに別々に記録する。
+- [RETURN-PC SCOPE] pending第1、第2callのgraph.return_pcはそれぞれ0x575F71・0x575F91。TroopUpdateTrace型には依然outer_return_pc/callee_stack欄がないが、親Graph側にouter originが存在するため『全体で復帰先情報なし』という旧解釈は過剰。第2完了時はframe.next_va=0x575C54へ移り、0x575F91を独立した完了段としては露出しない。
+- [NEW RUNNER ACTIONS] native_battle_runner.pyはtroop_ui_semantic、troop_selection_ui_semantic、normal_disable_troops_resolved、normal_disable_complete_resolvedを公開済み。以前のrunnerがselection時breakのみという観察は現行版で失効。
+- [NOT A GOLDEN / OPEN] 新UIは明示的にGDI/vertex native表示を再演算しないsemantic host notification。原作0x41F850/0x56BA80/0x401BE0の実画面、通常死亡0x575A60上位へ全帰還、合法同一pointer/NULL初回到達、exception時副作用、旧新同条件fixtureはVERIFY。コード静的照合であって旧原作BUG解消・実機strict互換合格とは宣言しない。
+- [EVIDENCE STATUS] 今回Ghidra新規info/pseudo/assembly/callers/calleesのEvidence IDは各0件、新関数STATIC VERIFIED+0。以前のREA-ND-20261013-001を再利用し、既存旧メモは歴史的snapshotとして保全。
+- [METRICS] 最新保存sync W1=16/16 W2=10/10 W3=10/10 W4=12/12 W5=16/16、累計64/64(P0=29/29,P1=35/35)。Wave6正式0/16・候補P0=5/P1=11、非拒否TODO12(P0 2/P1 10)、拒否済BLOCKED4(P0 3/P1 1)、結果VERIFY0。QUEUE/PROGRESSは既往rename EPERMで古い。
+- [RESEARCH/GOLDEN] 今回読取MASTER checkpoint187、DONE9/34、IN_PROGRESS21/VERIFY4。旧EXE実機golden PASS0、新旧strict MATCH0、ゲーム再実装率は測定していない。
+- [PREFLIGHT/EXE] Local資料読取成功。既往安全拒否REA-RC-20261019-0034-LOCAL-PREFLIGHT-SAFETY-01のCPU/RAM/Java/lock/SHA一括検査を繰返し・迂回しない。今回はPC負荷・active.lock/承認copy実ファイルSHA未確認につき重量run/syncを起動しない。新Ghidra実行0秒、軽量総時間未計測。保存成功REA6.1.0と現runner6.4.0の版差保持。
+- [LIMIT/NEXT] 単一MCP session、最大4関数/回、Ghidra900000ms、request960000ms。次回はWork現行版の死亡Troop UIの回帰テスト証拠をread-only照合、0x575F91の実returnと二重Task解除防止/同一ownerおよび原作実画面差をVERIFYとして切り分ける。拒否済0x5710C0..0x571500、W6拒否4VA、text exporter、前検査の代替再実行は行わない。
+- [OWNERSHIP] 原本ZIP/EXE、既存A-E・MASTER/T018、Workソース/共有WRQ、QUEUE/PROGRESS、runner、Git/push/公開、MCP設定、既存automationは変更・停止・無効化・削除しない。

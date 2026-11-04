@@ -1,0 +1,5 @@
+metadata_path	record_id	start_line	end_line
+reference/corrections.jsonl	CORRECTION-STATUSWND-PRESS	123	123
+reference/corrections.jsonl	CORRECTION-BATTLE-SCENE-EPILOGUE	151	151
+reference/corrections.jsonl	CORRECTION-SAVE-READ-TURNSTATE	266	266
+reference/corrections.jsonl	CORRECTION-SAVE-WRITE-TURNSTATE	267	267

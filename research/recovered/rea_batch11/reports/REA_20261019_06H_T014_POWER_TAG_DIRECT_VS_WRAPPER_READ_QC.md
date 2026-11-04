@@ -1,0 +1,15 @@
+# REA-20261019-06H-T014-POWER-TAG-READER-DUALPATH-01｜Power readerの数値タグ4枝の読取／commit境界
+- [OWNER/SCOPE] 独立REA / T014 P0、Wave6非拒否候補0x42E700。Desktop Commander Local Compactのみ。保存済み同一SHAのGhidra JSONを直接read-only照合。新規逆解析・原本実行・製品修正なし。
+- [PROVENANCE] 既存run=20261011T133432356Z、REA6.1.0/Ghidra12.1.4、source/end SHA256=E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187。今回承認コピーの実ファイル再hashは行わない。
+- [PARENT VERIFIED] VA0x5964C0（Power runtime reader/T014）は保存RUN_RESULTで5/5 VERIFIED。info ev_105b1c184be5d868744bee92f4d32362e03bb147780923add1925cff2553acea、pseudo ev_9608d350a99e5ba1453392474e951d01a83321124085c78de8ef29ffc8ea96d9、assembly ev_225abdeab1240aef12bae0642c86e2bc6494b630fee961f55233f5c29cbb5e25。
+- [PARENT XREFS] callers ev_24c083a492c9b10125bdeecdfbc3db2f2d263a8cd19efd9d17513b9bc771efef、callees ev_ff3bf40913871207a524bdcdc61a67694df2d6300e9bcae944c544e93caf631d。Ghidra body ranges=0x5964C0..0x596656と0x596660..0x596A99、total1489bytes/non-contiguous。全spanを関数本文と誤認しない。
+- [DIRECT FOUR-BYTE TAG A] 保存assembly 0x59679C..0x5967A6はPUSH 0/PUSH 4/PUSH 0xB060F0/PUSH EBX→CALL0x42E700。0x5967AB..0x5967C5のstream状態bit検査を通過して初めて0x5967CB..0x5967D5でPower+0xD0へscratch DWORDをcommit。失敗は0x596A5AのLoadException経路。
+- [DIRECT FOUR-BYTE TAG B] 同型0x596822..0x59682C CALL0x42E700→0x596831..0x59684B状態検査→正常0x596851..0x59685BでPower+0xD4にcommit。失敗は0x596A7AのLoadException経路。両CALLのGhidra pseudo表記FUN_0042e700()の0引数表示をx86 ABI確定としない。
+- [WRAPPER TAG C/D] tag別0x5968A8..0x5968B4はPower+0xD8をPUSHしCALL0x470700、0x596902..0x596914はPower+0xDCをPUSHしCALL0x470700。wrapperは保存済み別VERIFIED 0x470700の内側0x42E700および例外後commitを経る。4枝全てを一律の直接CALLで実装しない。
+- [DISCRIMINATOR] 各枝は保存assemblyの0x402C40比較とタグ長条件（順に7/9/8/10）に由来。参照static string候補0x626A84/0x626A8C/0x626A98/0x626AA4のraw bytes・human-readable field名は本回未確認のため命名VERIFY。0x596997にも別の0x470700呼出があり、数値読取をこの4枝だけと一般化しない。
+- [BARRIER] 保存疑似CとASMの一致は読取ルート/出力先/stream状態検査に限定。0x42E700のcallee関数入口・RETスタック清掃・short read時の部分更新・タグ実意味・例外後外側状態・合法旧実機到達はTODO/VERIFY。LoadException以前にcalleeがscratchを変更した可能性を否定しない。
+- [ACCEPTANCE/NOT RUN] T014担当向け別fixture候補: Power tag A/B正常4byte→各D0/D4更新、異常フラグ→対応field未commit、tag C/D正常→wrapper経由D8/DC更新、未認識tag・短読込→cursor/例外/未変更範囲。実原作saveと新build比較はNOT RUN。
+- [METRICS] 保存同期20261011T153958076Z Wave1=16/16, Wave2=10/10, Wave3=10/10, Wave4=12/12, Wave5=16/16、計64/64 STATIC（P0 29/29・P1 35/35）。今回新Ghidra info/pseudo/assembly/callers/callees証拠ID各0、新VERIFIED+0。Wave6正式0/16、候補P0=5/P1=11、未着手TODO12(P0=2/P1=10)、既拒否BLOCKED4(P0=3/P1=1)、関数結果VERIFY0。
+- [MASTER/GOLDEN] MASTER直読最新checkpoint189、研究DONE9/34・IN_PROGRESS21・VERIFY4。旧EXE実機golden PASS0、strict MATCH0。ゲーム再実装率は測定していない。QUEUE/PROGRESSは保存syncのSTALE_RENAME_DENIEDで旧表示。
+- [PC/LIMIT] CPU/RAM/先行Java/Ghidra/active.lock/現在copy SHAは今回未計測（既往安全拒否preflightの同内容再試行・tool/path/shell迂回なし）。Ghidra/REA/run_decompile/sync起動0秒、軽量総時間未計測。単一MCP、4関数/回、Ghidra900000ms/request960000ms。現在runner6.4.0指定、成功run6.1.0のprovenanceを改変しない。
+- [NEXT/OWNERSHIP] 最優先WRQ-REA-DEATHのT010/T012/T013 0x575F91独立帰還はVERIFY維持。T014は現存0x5964C0の4種tag→field reader区分を将来T014 owner確認待ちとして保存。禁止0x5710C0..0x571500/拒否済Wave6四VA/REA text exporter/前検査の迂回0。原本ZIP/EXE、A-E・MASTER/T018、Work、QUEUE/PROGRESS、Git/push、MCP設定、既存automationは変更しない。

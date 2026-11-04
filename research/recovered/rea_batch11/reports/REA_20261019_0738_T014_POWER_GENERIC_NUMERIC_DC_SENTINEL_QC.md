@@ -1,0 +1,15 @@
+# REA-20261019-0738-T014-POWER-GENERIC-NUMERIC-DC-SENTINEL-01｜Power readerの未分類数値タグと+DC省略既定
+- [OWNER/SCOPE] 独立REA/T014 P0。Desktop Commander Local Compactによる保存済みGhidra5方法のread-only照合のみ。対象承認済copyの保存run source SHA E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187。原本/他owner/runner変更なし。
+- [SOURCE] runs/20261011T133432356Z/5964C0_procedure_assembly.json（ev_225abdeab1240aef12bae0642c86e2bc6494b630fee961f55233f5c29cbb5e25）およびprocedure_pseudo_code.json（ev_9608d350a99e5ba1453392474e951d01a83321124085c78de8ef29ffc8ea96d9）。既VERIFIED info ev_105b1c184be5d868744bee92f4d32362e03bb147780923add1925cff2553acea、callers ev_24c083a492c9b10125bdeecdfbc3db2f2d263a8cd19efd9d17513b9bc771efef、callees ev_ff3bf40913871207a524bdcdc61a67694df2d6300e9bcae944c544e93caf631d。
+- [PRIOR DEDUP] REA_20261019_06H_T014_POWER_TAG_DIRECT_VS_WRAPPER_READ_QC.mdの4専用タグD0/D4/D8/DCと、REA_20261019_0535_T014_PARENT_IO_COMMIT_GATE_QC.mdの0x470700正常commitは再発見として加算しない。
+- [TREE RESET BEFORE TAG LOOP] 0x5966FE..0x59673FはPower+0xB0の既存tree headerを0x463070へ渡した後、関連header linksを自参照に戻しPower+0xB8へ0を書き、タグループへ進む。0x463070内部の厳密allocator副作用はVERIFY。
+- [ADDITIONAL BRANCH] 0x59691Eはstring候補0x626AB0を0x40B200で判別し、非一致時0x596997へ分岐。そこではCALL0x470700で数値をstack scratchへ読み、0x5969B4 CALL0x436560→0x5969CF CALL0x436680→0x5969DB CALL0x463280（destination ESI=Power+0xB0）へ進む。四つの専用数値タグ以外が一律discardされるわけではない。
+- [TREE DUPLICATE BOUNDARY] 0x463280の既確定generic insert-if-absent契約を流用すると、同じキーとして構築されたentryの再投入は既存キーを残す候補。ただし436560/436680が構築する実key/valueの型・重複時の前処理は未照合。現時点でPower全タグの一律first-winsと断定しない。
+- [DC PRESENCE FLAG] 0x5965A2でlocal byteの0初期値があり、長さ10の専用tag D枝0x59690Fでbyte=1。全タグ読込後0x596A14で同flagを検査し、0の場合だけ0x596A1B..1FでPower+0xDC=0x80000008とする。D枝が実行された場合の値は0x596914 CALL0x470700によって決まり、既定のsentinelで上書きしない。
+- [KEY LIMIT] 比較文字列VA0x626A84/8C/98/A4/B0の生文字列と各Power field名は今回未取得。0x40B200 predicateの比較詳細・任意タグ構文・EOF/短読込・例外後の部分tree状態と重複keyの実到達はVERIFY。
+- [IMPACT] Powerの再実装受入条件に①専用4tag、②0x626AB0の特別string系、③その他数値tagのPower+B0 tree挿入、④D tag不在時だけDC sentinelという4種の処理境界を分離する。未知タグを無条件に捨てたりDCを常に0に初期化しない。実原作save golden/実機比較はNOT RUN。
+- [VERIFICATION] 新規Ghidra info/pseudo/assembly/callers/callees取得Evidence ID各0、新関数STATIC VERIFIED+0。親0x5964C0は既存5点VERIFIED、callee0x42E700(T014/P0)・0x470980(T014/P0)はWave6 TODO維持。
+- [PROGRESS] 保存sync progress_sync_20261011T153958076Z: W1 16/16 W2 10/10 W3 10/10 W4 12/12 W5 16/16=64/64(P0 29/29,P1 35/35)。Wave6正式0/16、候補P0 5/P1 11、未着手TODO12(P0 2/P1 10)、拒否済BLOCKED4(P0 3/P1 1)、関数結果VERIFY0。QUEUE/PROGRESSは既往rename EPERM stale。
+- [MASTER/GOLDEN] 今回読取最新MASTER checkpoint189、研究DONE9/34・IN_PROGRESS21・VERIFY4。旧EXE実機golden PASS0・strict MATCH0。ゲーム再実装率は測定していない。
+- [LOAD/TIME] 既往安全拒否されたCPU/RAM/Java/active.lock/SHA一括preflightを再試行・別shell/tool/pathで迂回していないため今回のPC負荷/先行Java/lock/現在copy SHAは未測定。Ghidra/REA/runner/sync実行0秒、軽量調査総時間未計測。単一MCP・最大4関数/回・Ghidra900000ms/request960000ms。現runner指定REA6.4.0と成功run6.1.0の版差を保持。
+- [NEXT/SAFETY] 第一優先はT010/T012/T013死亡0x575F91独立帰還と初回troop NULL+selected flagの合法条件。T014はPower 0x626AB0 tagの意味とgeneric tree entry/duplicate/exceptionを既存保存証拠から追加確認。禁止0x5710C0..0x571500・既拒否Wave6 4VA・text exporter/preflightの再試行/迂回なし。原本ZIP/EXE、A-E/MASTER/T018、Work製品、QUEUE/PROGRESS、Git/push、MCP設定、既存automation変更なし。

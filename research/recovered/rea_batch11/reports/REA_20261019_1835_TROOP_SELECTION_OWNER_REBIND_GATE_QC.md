@@ -1,0 +1,17 @@
+# REA-20261019-1835-TROOP-SELECTION-OWNER-REBIND-GATE-01｜死亡部隊選択の所有者変更時の再束縛制約
+- [OWNER/TASK] 独立REA / WRQ-20261013-REA-DEATH / P0 T010,T012,T013。Desktop Commander Local Compactだけで保存済みnative契約と現在のWorkソースをread-only照合。原本・他owner・製品コードは変更しない。
+- [SOURCE] rea_lab/decomp_task/SOURCE_RECOVERY_DAMAGE_STATUS_20261011.md のND-GRAPH-TAIL/ND-TROOP/選択解除ABI、logs/NORMAL_DEATH_CONTRACT_VERIFY_20261013.json（134 saved checks PASS）、dev_lab/src/hakushin_compat/native_battle_session.py・native_battle_outcome.py。成功run 20261011T153309850Z、sync 20261011T153958076Z。
+- [NATIVE GATE 1] 0x575F6C CALL0x5684B0→0x575F71帰還後、Unit+0x1867Dを再読。非0時、engine+0x1E8B34のselectionOwnerをその時点で取得して+0x358の別Troopへ0x575F8C CALL0x5684B0→0x575F91。2回のownerが常に同じと示す証拠は今回なし。
+- [NATIVE GATE 2] 0x56852D(selected empty)および0x5685F8(normal empty controlled)は0x527ED0を呼ぶ。calleeは選択ownerのlinked-node/display/UI状態を変更し得るが、owner pointerそのものが更新される合法pathは未確認。
+- [CURRENT BINDING] native_battle_session.py bind_troop_selectionは初回ACTIVEだけ。continue_resolved_troop_selectionは前回binding.trace.complete時、TroopSelectionCleanup(binding.owner,binding.objects,binding.nodes,binding.normal_allocator)で新オブジェクトを構築するが、owner値は前回と同一。
+- [CURRENT REQUIREMENT] native_battle_outcome.py TroopSelectionCleanup.advanceは binding.owner.pointer==parent.object_ref を要求。後続0x5684B0が異なるselectionOwnerをparent.object_refに採用した場合、既存binding複製からはこの照合を満たせずSessionGap/ValueError相当で止まる。
+- [NARROW DELTA] 前回REA_20261019_0335の「同一live storageをfresh bindingへ交換」を否定しない。その動作は同一ownerなら成立する。一方、正当な途中owner変更への再束縛手段は今回確認したAPIでは見当たらない。合法旧ゲームでownerが変わることは未証明のため、確定バグではなく条件付きVERIFY。
+- [INDEPENDENT CASES / NOT RUN] A: first selectionが同一ownerで再入する。B: 1st 0x527ED0完了後にengine+1E8B34が別ownerを指す（2nd selectedTroopも別）。C: 異なる2nd ownerに対し前回ownerのnodes/objectsを誤用しない。各例でfirst/second owner ptr、Troop ptr、0x575F71/0x575F91、binding generation、deleted nodes、callee/UI completedを個別trace。旧EXE合法到達が観測されるまではcase B/CはDESIGNED_NOT_RUN。
+- [RETURN/COMPAT] graphの二つのcallsiteは独立で、2nd 0x575F91の正常RET前に0x575F95へ昇格させない。semantic redraw通知は原作GDI/vertexの厳密帰還証拠でない。既存0x575F91の未露出差分と重複READY計上しない。
+- [EVIDENCE] 今回新規Ghidra info/pseudo/assembly/callers/callees Evidence IDはいずれも0、新たな静的VERIFIED関数0。再利用契約ID=REA-ND-20261013-001、SOURCE_RECOVERY_DAMAGE_STATUS_20261011.md。source SHA256=E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187（保存run、今回現物再hashなし）。
+- [PROGRESS] 保存済みsync Wave1=16/16, W2=10/10, W3=10/10, W4=12/12, W5=16/16 計64/64 VERIFIED（P0=29/29、P1=35/35）、今回+0。Wave6正式0/16、暫定P0 5/P1 11、TODO12(P0 2/P1 10)、安全拒否BLOCKED4(P0 3/P1 1)、関数結果VERIFY0。QUEUE/PROGRESSはrename EPERMによるstale。
+- [MASTER/GOLDEN] 今回読取MASTER最終checkpoint190、研究DONE9/34・IN_PROGRESS21/VERIFY4。旧EXE実機golden PASS0、新旧strict MATCH0。ゲーム再実装率は測定していない。
+- [LOAD/SAFETY] Local接続成功、decomp_task一覧でactive.lockなし、list_processesのJava/Ghidra/REA該当名0。ただしCPU列n/a、Chrome44・Node6、空きRAM未計測で低負荷保証不可。既往安全拒否preflight/runner再実行をせず、REA/Ghidra実行0秒、軽量照合全体時間未計測。
+- [LIMIT] 成功証拠REA6.1.0+Ghidra12.1.4、runner README指定6.4.0の差、Wave6正式未登録、rename EPERM。単一MCP session、1回最大4関数、Ghidra900000ms、request960000ms維持。run_decompile/sync_progressは起動しない。
+- [NEXT] 0x527ED0 UIの合法owner変更可否・戻り後0x575F71でのengine+1E8B34再読タイミングを許可済み既存証拠とowner回帰に照合。新規解析拒否0x5710C0..0x571500、Wave6拒否4件、既拒否exporter/preflightは迂回/反復しない。
+- [OWNERSHIP] 原本ZIP/EXE、A-E・MASTER/T018、Workソース/WRQ、既存QUEUE/PROGRESS、Git/push/公開、MCP設定/既存automationは変更・停止・削除なし。独立REA専用本メモだけ新規作成。

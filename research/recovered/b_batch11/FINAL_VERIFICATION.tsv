@@ -1,0 +1,11 @@
+check	result	detail	checked_date
+selection	PASS	39 literal approved paths; complete report and identity coverage	2026-11-05
+ledger_schema	PASS	Root nine-column schema	2026-11-05
+selection_receipt	PASS	Literal approved receipt byte identity	2026-11-05
+distinct_source_hashes	PASS	No within-batch exact duplicate bodies	2026-11-05
+export_identity	PASS	36 exact copies independently read back; one privacy derivative fully reconstructed from original prefix/replacement/suffix	2026-11-05
+privacy_proof	PASS	One UTF-8 byte offset, removed-token hash/length, replacement identity, unchanged prefix/suffix proof verified; no personal absolute path in exported bodies	2026-11-05
+held_no_body	PASS	Two substantive/dependent FUN_005769B0 composite reports have metadata only and blank ledger destinations	2026-11-05
+body_count	PASS	37 complete authored Markdown bodies; no alias duplicates	2026-11-05
+approved_only	PASS	Every body corresponds to one exact approved eligible path	2026-11-05
+input_receipts	PASS	Selection and three permitted baseline input metadata fingerprints verified unchanged	2026-11-05

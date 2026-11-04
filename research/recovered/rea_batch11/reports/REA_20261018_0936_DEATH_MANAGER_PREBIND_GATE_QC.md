@@ -1,0 +1,17 @@
+# REA-20261018-0936-DEATH-MANAGER-PREBIND-GATE-01｜通常死亡graphでTask/Render/Spatial registryを後付けできない境界
+- [REQUEST/OWNER] WRQ-20261013-REA-DEATH P0、T010/T012/T013。独立REA専用資料。Desktop Commander Local CompactでMASTER checkpoint181 / ANALYSIS_LANES_PROTOCOL / README / QUEUE / PROGRESS / 最新RUN_RESULT・sync・既存ND-001/0833を先読。Workソースはread-only。
+- [NEW SCOPE] 0833の「Graph停止後、既存unregister APIはACTIVE guardで使用不能」と異なり、本IDでは解除に必要なregistryの初回bind自体もGraph停止後に行えない前提条件を確定。これはWork実装の静的インターフェース制約であり原作の挙動不一致・動的BUG確定ではない。
+- [WORK BIND TASK] dev_lab/src/hakushin_compat/native_battle_session.py:1125-1137 のbind_task_registryは冒頭self._active()、unique TaskRegistry.validate と、CollisionWorld/MotionWorldのcell listとtask.active/pending/deferred_deleteの同一オブジェクトalias拒否を要求する。既bind registryを再bind不可。
+- [WORK BIND RENDER] 同session.py:257-269 bind_render_registryはself._active()、registry.validate、unique manager、Unit ptr/field mapとの非aliasを要求。解除unregister_resolved_render:271-279もself._active()かつ明示manager_pointer一致が必要。
+- [WORK BIND SPATIAL] 同session.py:171-186 bind_collision_world と:299-310 bind_motion_world はself._active()、World.validate、既boundやUnit/Task-spatial aliasを拒否。graphで呼ぶunregister_resolved_window:291-307もself._active()かつlive window/child identityを要求。
+- [PHASE TRANSITION] session.py:211-222のbegin_resolved_normal_disableは未完のときVERIFY_NORMAL_DISABLE、:224-254のcollision完了時VERIFY_NORMAL_DISABLE_GRAPHに遷移。:281-290 continue_graphは同GRAPH位相のみ、初回frame.next_va=575C52条件。session._activeはACTIVE以外を拒否（既REA_20261018_0833記録）。
+- [NATIVE BASIS] 既保存REA-ND-20261013-001 ND-GRAPH: W=Unit+5B0/800/89Cを順序解除、各WのTaskMgr=*(world+4)+C、RenderMgr=*(world+C)、SpatialMgr=*(world+8)。world=*(Unit+C)は各window入口で再取得。virtual ALや各callee正常帰還はVERIFY。
+- [INCREMENTAL CONSEQUENCE] 将来WorkがGraph stage実装を追加しても、未登録Task/Render/Motion managerをGraph内部で従来bind API経由で遅延bindするだけではACTIVE guardで停止する。合法開始前のregistry/World prebindingと、Graph専用の帰還receipt・実world manager identityとの照合を分けて設計する必要。
+- [STRICT VERIFY] TaskRegistry/RenderRegistry/MotionWorldの現在のbound pointerが原作world内の各managerと同一だとは今回証明していない。worldがWindow間で更新される可能性も残る。binding済みならGraphが完走できるとの推測は禁止。別のGraph-safe内部APIや合法動的manager獲得は未実装・未検証。
+- [NO NEW DECOMP] 新Ghidra五方法(info/pseudo/assembly/callers/callees)のevidence ID=0、今回STATIC VERIFIED増加0。既存REA-ND-20261013-001と成功RUN_RESULT20261011T153309850Z / approved sourceSHA E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187を参照。今回承認コピーの再ハッシュ・EXE起動なし。
+- [PROGRESS] Latest sync20261011T153958076Z W1=16/16、W2=10/10、W3=10/10、W4=12/12、W5=16/16、累計64/64 verified(P0=29/29,P1=35/35)。Wave6正式0/16、暫定P0 5/P1 11、未試行TODO12・安全拒否BLOCKED4・結果VERIFY0。QUEUE raw16/64とPROGRESS raw15/16は既往rename EPERMのstale、再同期なし。
+- [MASTER/GOLDEN] 最新MASTER checkpoint181、DONE9/34・IN_PROGRESS21・VERIFY4。旧EXE実機golden PASS0、新旧strict MATCH0、ゲーム再実装率は測定していない。
+- [PC/EXECUTION] Local接続成功。list_processes全CPU率n/a、RAM空き未測定、名前Java/Ghidra/REAの検出なし、node/codex/claude/ブラウザ稼働、Local session PID23860入力待ち非介入。decomp_task直下active.lock未検出。負荷が安全とは証明できず重量runを起動せず。新Ghidra実行0秒、軽量調査総時間未計測。
+- [RUN LIMIT/ENV] 現runner REA6.4.0指定vs直近成功REA6.1.0＋Ghidra12.1.4、Wave6未正式登録、安全拒否VA4件、rename EPERM。run_decompile.ps1・sync_progress.mjsは未実行。単一MCP、最大4関数/回、Ghidra900000ms、要求960000msは不変。
+- [NEXT PRIORITY] P0: 生存child 575AEF→575C34、0x575C52→575DF0のGraph、W3個の動的vptrとmanager identity・Task/Render/Spatialごとの正常帰還、575F95→575C54→575D0D→5789F2→578B5Fの順序を、既存許可済み証拠で個別確認。Wave6 T014合法未着手0x470980/0x42E700はTODO維持。
+- [BOUNDARY/SAFETY] 禁止0x5710C0..0x571500、既拒否Wave6四VA、拒否済REAテキスト抽出/同じ失敗操作の迂回・反復0。原本ZIP/EXE/SAVE、A-E/MASTER/T018、Work/WRQ、runner/QUEUE/PROGRESS、Git/push、MCP設定、automation変更0。

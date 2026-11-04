@@ -1,0 +1,13 @@
+# REA-20261017-1635-CP170-COUNT-QC-01｜MASTER checkpoint170のREA旧表示と保存済み静的証拠の差
+- [OWNER/REQUEST] 迫真戦記ver0.67独立REA、WRQ-20261013-REA-DEATH。T031（証拠数）・T012/T013（継続解析）参照。新規Ghidra逆解析や原作EXE実行を行わない、Local Compactによる保存資料の照合。
+- [MASTER] 2026-10-17時点のMASTER_LEDGER.md末尾は研究E checkpoint170（34Task DONE9 / IN_PROGRESS21 / VERIFY4）。cp170に「REA初期16候補の保存STATIC15・TODO1」と記述されるが、これはREA自身の古いPROGRESS.md（2026-10-09T21:35:27Z）の15/16表示と一致する。
+- [PRIMARY RUN] rea_lab/decomp_task/runs/20261009T213635897Z/RUN_RESULT.json はT031 0x479A30をVERIFIEDと記録し、info/pseudo/assembly/callers/calleesの五証拠IDがすべて存在。関数入口0x479A30、長さ278、REA6.1.0/Ghidra12.1.4、source/end SHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187。新たに同VAを実行し直していない。
+- [EVIDENCE IDs] 0x479A30: info ev_bc32501ec77c9a2ad69878bdc8a6f31c8ac45aa96ee4fd265164651bfee06817 / pseudo ev_d56de9a11ccede3814ef85102722ee19558a3ea1ba574713dfb7e7dce688d346 / asm ev_2e6b35f821850d3520355b4c13d985d1716da9d16125603c4e06490b2c82eb48 / callers ev_d49cc0eaabceca7ac7d567dd28fc7b47447fa3dc665ada4913367d59fa875b05 / callees ev_82aaee83a4771edd2edb40da9b734a7341cca4a5324c869a6079bf1c8997f961。
+- [LATEST SYNC] logs/progress_sync_20261011T153958076Z.json はRUN_RESULT21件を集計しWave1=16/16、Wave2=10/10、Wave3=10/10、Wave4=12/12、Wave5=16/16、合計64/64 STATIC VERIFIED（P0=29/29、P1=35/35）。新規Ghidra検証増分は今回0件。QUEUE.json.currentも16/16、PROGRESS.mdは15/16でstale。
+- [ROOT CAUSE] 同syncのqueueUpdate=STALE_RENAME_DENIED、humanReadableProgress=SKIPPED_QUEUE_STALE。QUEUE/PROGRESSのWindows rename EPERMが保存済みrunと人間向け表示にズレを生じさせる。MASTERをREAが訂正・編集しない。Eが将来正式統合する際はこのRUN_RESULTとsyncを優先して読み直す必要がある。
+- [WAVE6] 正式キュー登録なし、0/16 VERIFIED。暫定候補P0=5/P1=11、未試行TODO12、過去SAFETY_REFUSAL4VA（0x515750/0x515790/0x5159B0/0x57D180）BLOCKED、取得結果VERIFY0。安全拒否範囲0x5710C0..0x571500および既拒否REAテキスト抽出は対象外。
+- [PRE-FLIGHT] 2026-10-17T16:35:04+09:00 Local read-only: CPU16%、空きRAM13.22GiB、active.lock無し、java/Ghidra/REA該当プロセス無し（類似名LenovoVantageのみ）、承認済みEXEコピーSHA256一致。preflight PowerShell exit0、実行2.61秒。
+- [RUN DECISION] 最新成功REA6.1.0と現行runner指定6.4.0の不整合、Wave6未登録/拒否候補、QUEUE/PROGRESS EPERMのためrun_decompile.ps1・sync_progress.mjsを実行しない。新規Ghidra実行0秒、軽量read-only合計時間は未計測。単一MCP・最大4関数/回・Ghidra900000ms/request960000msを維持。
+- [RECOVERY] 直前のREA-RC-20261017-1536-STATIC-NOTE-WRITE-SAFETY-01は分析本文と復旧票の双方が安全拒否でPC未保存。今回の件数整合メモはその拒否payloadの別経路再提出ではなく独立の管理照合。旧拒否はBLOCKEDのまま。今回の0x57E3D9値スロット分析について新証拠・正式保存を主張しない。
+- [GAME/REIMPLEMENT] 旧原作EXE実機golden PASS0、新旧strict MATCH0。ゲーム再実装率は測定していない。STATIC VERIFIED64は原作のゲーム挙動や完全互換率を意味しない。
+- [NEXT] WRQ-20261013-REA-DEATHの0x575A60→0x575DF0→0x5684B0とhit handler外側callbackの正常帰還を保存済み証拠だけで追跡。Eへの引継ぎは「受領未確認」とし、A-E・MASTER・T018・他領域・Work/WRQ・原本ZIP/EXE・Git/push・MCP設定・既存automationには書込変更なし。
