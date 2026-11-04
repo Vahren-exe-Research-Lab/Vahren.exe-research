@@ -1,0 +1,11 @@
+# C-20261014-2025-01 | T025/T029/T016/T033 | poo15宣言と原作参照の限定横断監査
+[STATUS] READYはver0.67正規化SCRIPTの宣言/文字列参照census限定。nativeローダ・alias・動的Power・実GameplayはVERIFY/UNOBSERVED・NOT READY。実旧Golden0、新旧strict MATCH0。
+[PRIMARY] a_default/script/7000_その他シナリオ/free_sc.dat:29-34、power_others.dat:159-175,359；45_内政_防衛兵器/siege_system.dat:98-100,145-147、siege_politic.dat:168-176,437-444,917-923,1060-1066,1204-1210；102_ランダムイベント/randomev0-10.dat:85；40_内政/politic_youhei_unique.dat:153；7000_その他シナリオ/free_ev_world.dat:708；event_world.dat:2430,2467。
+[METHOD/CONFIRMED] Desktop Commander Local Compactのliteral content searchを正規化済a_default/script配下*.datへ実施して完了。poo15は計13一致/7 DAT。この数字は文字列出現数であり、実行中API回数やコメント除外後の有効命令数ではない。
+[DECLARATION/CONFIRMED] free_sc.datのsc_free初期powerリストはpoo14の次がpoo16でpoo15なし（既統合C-20261014-1930-01）。power_others.datのpower宣言もpoo14:po14の次がpoo16:po16。上記全*.dat literal検索では「power poo15」を含む宣言を発見できず、power_others.datのpoo15登場箇所はpoo29のdiplo文字列中のみ。これは限定コーパスでの非発見でありnative runtime未生成の証明ではない。
+[REFERENCE CROSSWALK/NEW] siege_system.datの攻守別poo15→po15参照2箇所、siege_politic.datのpo15/poo15比較/研究スロット参照5箇所、randomev0-10.datのisPlayer(poo15)1箇所、politic_youhei_unique.datのisPlayer(poo15)1箇所、free_ev_world.datのresetLeague引数1箇所、power_others.datの他Power外交定義文字列1箇所、event_world.datのpo15/poo15条件文字列2箇所を照合。
+[DELTA/DEDUP] C-20261014-1930-01の「sc_free初期名簿に無いpoo15への観戦resetLeague」自体はcp144正式統合済で再計数しない。本IDの増分は原作*.datのpower宣言非発見と、T029/イベント/人材での複数参照の宣言対照。以前SAFETY_REFUSALのC-RC-20261014-1824-01にある外交値writer解析・§106追記を再提出/代行/変更しない。
+[REIMPLEMENT] 「sc_free初期Power名簿」「正規化Script内power宣言」「実runtime生成Power」「po/poo変換」を別stateで保持。poo15を勝手に補完/po14やpo16へ修正、全pooをpoへalias確定、参照をdeadとして削除、未知native挙動をnoop/例外に確定しない。
+[VERIFY/UNOBSERVED] 旧loaderが「power poo15」なしをどう解決するか、po15との継承/別名・動的生成、実Power存在、各T029防衛メニュー/戦闘とrandomev等の合法到達、resetLeagueの効果は不明。旧原作BUG新規0。
+[GOLDEN DESIGNED/NOT RUN] 合法sc_free観戦/非観戦の初回NewTurn→同Turn再入→次Turnで表示Power/同盟を旧新同SAVE SHA・入力比較。追加の攻守防衛Lv・randomev1_1・特殊雇用はpo15/poo15へ合法到達を確認してからのみ観測。到達不可はINELIGIBLE、旧Gameplay actual PASS0・新旧strict MATCH0。
+[RECOVERY/NEXT/CAPACITY] Cの旧外交書込拒否C-RC-20261014-1824-01、T026/T032他拒否はBLOCKED据置。T025 boss_dead/native erasePower・WW inactive/self union・sc_free queue、T029城壁周期/50000、T026教師変数、T027財布stock、T033旧IDはVERIFY維持。MASTER cp144・517公式IDはE専有、Eのみ新READY重複確認/採否。Local Compactのみ、原本はread-only、重いEXE/Ghidra/Java/REA起動0、CPU率n/a。

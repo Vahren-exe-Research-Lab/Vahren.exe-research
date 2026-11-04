@@ -1,0 +1,16 @@
+# E-AUDIT-20261031-16H-T020-T013-BUCKET-MERGE-SIGNED-GATE-01
+- Owner E/T020; source B/T013 data\T013_BUCKET_LIST_MERGE_COMPARATOR_NATIVE_20261031_16H.md SHA256 C9E9AE4017DB40F4810E32CB45419EE2390028757BBE38843DC0E1AE3A8CA621. Owner B state STATIC/INFERRED/VERIFY/NOT READY.
+- Original read-only PE SHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187; native byte windows 3/3, E8 CALL targets 10/10, native instruction anchors 14/14 independently matched.
+- V9 read-only showed 0x579FF9,0x57A097,0x57A14D -> 0x57A830; 0x57A890 -> 0x5A3EA0; 0x57A8AB/0x57A8D7 -> 0x4C5800.
+- Additional bounded caller evidence: original E8 0x57A8EC -> 0x5B6BBB and 0x4C5819 -> 0x5B5B6D. These sites are present in V9 but not separately detailed by B16. Their runtime purpose, success/failure and ABI are UNKNOWN.
+- Native mode2 selects candidate+0xA0C, other modes select +0xA10. Native signed JLE skips +0xA14 addition when base score <= -2147483547 (0x80000065). No full comparator verdict is modeled; secondary priority and tie order remain VERIFY.
+- Native static 0x579EB0 uses 26 list buckets of 12B each; list splice changes count across distinct lists at 0x4C581E/0x4C5823. Bucket assignment, node ordering, exceptions and final attack target remain VERIFY.
+- T020 198/198 conditional synthetic cases: 144 signed 32-bit field/threshold/bonus projections and 54 distinct-list count conservation fixtures. Native ABI and legal-game input reachability have not been shown.
+- Dedup: B12/B13 score rank, B14 kind8 caller and B15 record+0x28 random producer are antecedents. No evidence that random+0x28 directly enters the native 0x5A3EA0 predicate; final-target RNG effect NOT VERIFIED.
+- T018 C-NB02: legal old normal UI G0, same-run prebattle SAVE bytes/SHA+input G1, real MAP/three sides/ordered Unit-Troop G2, and later G3/G4 are NOT RUN. Confirm pre-20x DAT restoration first. Old original DYNAMIC OBSERVED=0, actual Golden PASS=0, strict MATCH=0.
+- T019 new confirmed original contradiction=0; GameClear DAT13/TXT2 source-scope difference RESOLVED; script2 precedence, TXT runtime load, flag and gwrite remain VERIFY.
+- KB_CANDIDATE owner E/T020 RID above cross-ref B-20261031-16H-T013-BUCKET-LIST-MERGE-COMPARATOR-01. VA 0x579EB0/0x57A830/0x5A3EA0/0x4C5800; E8 source sites; candidate+0xA0C/+0xA10/+0xA14; source SHA; STATIC/INFERRED/VERIFY/Golden0/READY0. Dedicated knowledge curator only.
+- MASTER unchanged: last cp196/READY596=A115/B229/C136/D116; Task 9 DONE/21 IN_PROGRESS/4 VERIFY inherited, not reclassified; new READY IDs 0.
+- Safety: previous E T018, C T026/T032, D T030 and forbidden 0x5710C0..0x571500 remain BLOCKED, no retry. B HOLD21 and previous OFFLINE-UNSYNCED are not READY. Other owners, game originals, Git, knowledge, Work, schedules untouched.
+- Next priority: legal G0/G1/G2 receipts; only then old/new data match. B owner to verify Unit+0x18654 count producer, list input ABI, secondary comparator and result consumer.
+- Status STATIC BYTE VERIFIED / CONDITIONAL SYNTHETIC / VERIFY / NOT READY.

@@ -16,4 +16,13 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3181](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3181-L3181) — \| R5 連撃の生成 \| T0 \| next_first=on、子 joi の rush=2、root の homing=0 \| 0x54F720(joi, 0, &角度)。Rush+0x1F4 = 4（interval） \| — \| vf31 0x57EA48..5D、0x54F990 \|
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+<a id="field-210"></a>
+## Rush + 0x210
+
+- [research/recovered/b_batch2/T012_RUSH_GAMETASK_VIRTUAL_STATUS_GATE_NATIVE_20261027_17H.md 行 14](../../research/recovered/b_batch2/T012_RUSH_GAMETASK_VIRTUAL_STATUS_GATE_NATIVE_20261027_17H.md?plain=1#L14-L14) — [STATIC/INFERRED GATE] active vector内の非NULL正規Rushについて、このGameTask走査でのupdate到達条件は (M+8==0 AND DWORD[M+0x14]==0) OR (Rush+0x210 != 0)。後者はMフラグの片方が立つ場合のgetter結果。gett
+  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+- [research/recovered/b_batch2/T012_RUSH_GAMETASK_VIRTUAL_STATUS_GATE_NATIVE_20261027_17H.md 行 19](../../research/recovered/b_batch2/T012_RUSH_GAMETASK_VIRTUAL_STATUS_GATE_NATIVE_20261027_17H.md?plain=1#L19-L19) — [GOLDEN] 無改変原作ver0.67＋20倍強化前DAT、同一SAVE/MAP/Skill/input/RNGを使用し、Rush+0x210=0/非0とM+8/M+0x14を合法な原作状態から観測する。実tick間隔、summon数、UI・HP/MP/状態/exp/next RNGを記録し新実装と比較。DESIG
+  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

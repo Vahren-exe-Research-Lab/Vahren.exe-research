@@ -25,4 +25,13 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1078](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1078-L1078) — \| skill+0x2A8 \| 0x59BD42..0x59BE56: exp_per=off→−123456.0、on→1.0、それ以外 int×0.01（無指定 0.0） \| CONFIRMED \|
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+<a id="field-2b0"></a>
+## skill + 0x2B0
+
+- [research/recovered/b_batch2/T011_TRAINING_LEADER_BONUS_MEMO_NATIVE_20261031_07H.md 行 4](../../research/recovered/b_batch2/T011_TRAINING_LEADER_BONUS_MEMO_NATIVE_20261031_07H.md?plain=1#L4-L4) — [PRIOR/DEDUP CORRECTION] 2026-10-11 dev_lab/docs/PEER_SCRIPT01_FINDINGS_20261011.md §62.1 (約1410-1430行) は 0x583DC0 を「隊長解決」、訓練 count=up+隊長の status/training skill
+  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+- [research/recovered/b_batch2/T011_TRAINING_LEADER_BONUS_MEMO_NATIVE_20261031_07H.md 行 14](../../research/recovered/b_batch2/T011_TRAINING_LEADER_BONUS_MEMO_NATIVE_20261031_07H.md?plain=1#L14-L14) — [KB_CANDIDATE] research_id=B-20261031-07H-T011-TRAINING-LEADER-BONUS-MEMO-01; owner=B/T011; primary VA=0x4722BE,0x4723A8,0x4723BC,0x4F8A80,0x4ED3B0,0x474A80; of
+  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

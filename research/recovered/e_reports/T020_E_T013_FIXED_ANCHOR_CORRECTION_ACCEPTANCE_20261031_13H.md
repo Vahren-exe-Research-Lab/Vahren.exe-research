@@ -1,0 +1,24 @@
+# E-AUDIT-20261031-13H-T020-T013-FIXED-ANCHOR-CORRECTION-01
+- Owner/task: E/T020 (T018 legal Golden and T019 source-conflict crosscheck).
+- Basis: B-20261031-13H-T013-SORT-ANCHOR-TIE-CORRECTION-01, B/T013 owner research; **B NOT READY**. Corrects interpretation of B-20261031-12H-T013-DUAL-SCORE-COMPARATORS-01, without erasing prior research.
+- B source: `data/T013_DUAL_SCORE_SORT_ANCHOR_TIE_CORRECTION_NATIVE_20261031_13H.md`; SHA256 `6C09EA760DEB4FDD6C6793648833D22C2B246A94A8AEB82BB8C9FB6FAFA9CB18`.
+- Original PE: `rea_lab/targets/hakushin067_Vahren.exe` read-only, SHA256 `E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187`; no native game execution.
+- Independent bounded PE SHA windows: **6/6 PASS**, exclusive-end [0x447240,0x44727A), [0x44926E,0x4492DF), [0x47BB50,0x47BC52), [0x44D6A0,0x44D770), [0x449296,0x4492CE), [0x44926E,0x44927F).
+- Independent Capstone E8 destination checks: **3/3 PASS**: 0x449276→0x47BB50, 0x47BBF6→0x44D6A0, 0x47BB83→0x47BCC0. V9 read-only inspect 0x47BB50: 45 verified callers, 6 outgoing E8, 21 focused reports, STATUS STATIC_METADATA/VERIFY.
+- Native rank producer: 0x44927E ECX=0; 0x449280 EBP=10000; 0x449285 EDI=0x80000008. 0x4492AF/B7 resets EDI to raw score **only if the anchor is still sentinel**; 0x4492BB/BF decrements EBP when current raw score differs from retained anchor.
+- **CORRECTION**: previous intuition 'equal to immediately previous candidate ⇒ preserve rank' is false for lower tied scores. It is not an assertion about original-game target selection or 33+ sort stability.
+- Regression anchors: [20,20,8,8]⇒[10000,10000,9999,9998]; [20,8,8,8]⇒[10000,9999,9998,9997]; [20,20,20]⇒constant 10000; sentinel-first must permit re-anchor.
+- Native write gate: signed score <= 0x80000065 skips write, but the preceding EBP decrement remains; model stores null for skipped output, never imputes game-visible rank.
+- Synthetic tests: **4,032/4,032 PASS** = 4 mode cases × (10^3 ordered-score triples + 8 independent anchors). 1,044 cases differed from intentionally obsolete previous-score-group model (diagnostic count, NOT game observations).
+- Scope: supplied score order is a model input, NOT verified output of native sort or legal game path. 2..32 comparator semantics are bounded STATIC; 33+ partition stability, all-mode ABI, overflow, actual target/next tick remain VERIFY.
+- Original-game DYNAMIC OBSERVED 0; actual Golden PASS 0; strict MATCH 0. New B READY 0; E formal READY integration 0; no change to MASTER.
+- T018 C-NB02: same-run unmodified original G0 normal UI battle start; G1 immediately prior SAVE bytes/SHA + exact input; G2 actual MAP, attack/defense/support sides and ordered deployed Unit/Troop. Missing => DESIGNED_NOT_RUN, G3/G4 unfulfilled.
+- Rank-specific legal Golden additionally requires pre-20x original DAT bytes pinned, mode 2/non2, 2/3/4/32/33+ legal candidate counts, tied-high/tied-low scores when legally observable, pre/post rank and target/tick captures. Unobservable internal fields stay null/INELIGIBLE; no forced injected game state.
+- T019: research interpretation erratum, **not** a demonstrated Wiki/DAT/EXE contradiction or engine bug. GameClear DAT13/TXT2 scope remains RESOLVED; script2, TXT actual load, phase flag and gwrite downstream remain VERIFY.
+- MASTER: latest previously verified checkpoint **196** / READY **596** (A115/B229/C136/D116); 34 tasks DONE9/IN_PROGRESS21/VERIFY4 are inherited, not freshly reclassified.
+- KB_CANDIDATE: correction B13→B12 and E/T020 single source-linked candidate; VA 0x448E90/0x449276/0x47BB50/0x44D6A0/0x447240/0x447260/0x4492AF/0x4492B7/0x4492BB/0x4492BF/0x4492C0, offset candidate +0xA0C vs +0xA10. STATIC x86; INFERRED score-role; VERIFY end behavior; READY=NO; Golden=0.
+- Dedup: historical T013 comparator, 10/23 sorting, B12 252 E12 synthetic PASS are antecedents; no second READY count. GitHub knowledge curation belongs to dedicated curator; this E run writes no Git, KB, A-D, REA, dev_lab or original assets.
+- Safety: existing T018 table-boundary, C/T026/T032, D/T030 TSV and forbidden 0x5710C0 refusals remain separate BLOCKED. No retry by other tool/path/shell/Remote, no source EXE execution, no Ghidra/Java reanalysis.
+- Pending: old OFFLINE-UNSYNCED set, B SAFE134/HOLD21 and 10/25 missing research are not validated as integrated. Treat any raw upload failures as CONNECTION/OTHER, not new safety-refusal.
+- Files: `tests/t020_e_t013_fixed_anchor_rank_gate_20261031_13H.py`, `tests/T020_E_T013_FIXED_ANCHOR_CASES_20261031_13H.json`, this acceptance and separate readback receipt. Re-run: `python -B tests/t020_e_t013_fixed_anchor_rank_gate_20261031_13H.py`.
+- Next: find any legally observed rank consumer and reconcile B source corrections with E12 acceptance; prioritize C-NB02 legal original G0/G1/G2 before declaring gameplay correspondence. All current results: STATIC/CONDITIONAL_SYNTHETIC/VERIFY/NOT_READY.

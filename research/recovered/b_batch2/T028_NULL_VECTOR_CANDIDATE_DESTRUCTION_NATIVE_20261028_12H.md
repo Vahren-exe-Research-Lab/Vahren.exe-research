@@ -1,0 +1,21 @@
+# B-20261028-1217-T028-NULL-VECTOR-CANDIDATE-DESTRUCTION-01｜null配列時の候補ポインタ破棄とowner索引清掃
+Owner: B / T028。2026-10-28 12:17 JST。STATIC-ORIGINAL-PE-ASM / STATIC-V3-GHIDRA / INFERRED / VERIFY / NOT READY。READY新規0、MASTER統合0、Task DONE0。
+## 前提・未同期
+Desktop Commander Local Compact ONLINE。MASTER最終既知E正式checkpoint196/READY596、ANALYSIS_LANES_PROTOCOL、B5 owner/HANDOFF/既拒否/未同期索引、旧README/BUILD_MANIFESTとCURRENT_ACTIVE_RESEARCH_STATE_LATESTを読取。10/25 14H OFFLINE全文・他lane完全意味dedupはOFFLINE-UNSYNCED/VERIFY。11H成果の別vectorと第2setを同一視しない。
+元原作PE: rea_lab/targets/hakushin067_Vahren.exe（2,910,720B、実SHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187）、read-only。ACTIVE V3 SQLite 135,110,656B SHA256 0B057C43D30EAEC74588C84CF7E09AA7A488BD0FF170925591953EF578AFCB25、immutable read-only quick_check=ok、V3 guard PASS_ACTIVE_V3_STATIC input14/errors0/gameplay NOT_RUN。旧DB/Ghidra全解析/ゲーム実行なし。
+## 原作ASMで今回特定した新しい分岐
+0x497C0D CMP BYTE [EBP+0x77],0、0x497C12 CMP [EBP+0x75],0。双方0で0x497C17 CMP ECX,0。**ECX非0**: 0x497C2F EDI=ECX、0x497C31 CALL0x4C1290（11H既知のvector append）。
+**ECX=0**: 0x497C1B MOV ECX,[EDI+0x0C]→0x497C1E PUSH ECX（ownerポインタ）、0x497C1F MOV EBX,EBP（候補ポインタ）、0x497C21 CALL0x463590、0x497C26 JMP0x498DBD。この枝は単なるappend省略ではない。EDIは0x497BFBで呼出し元EDXから設定される。
+0x463590の0x463594 EBP=[ESP+0x10] は上記ownerを取得。0x4635A0 ESI=owner+0x2FC、0x4635A7 CALL0x49F410で索引木内の範囲を求め、0x4635BA CALL0x4BF820で範囲内エントリを消す経路。厳密なkey/範囲境界・削除件数はVERIFY。
+0x4635DE CALL0x402710でscratch文字列構築後、0x4635E3 PUSH owner→0x4635E4 CALL0x460F10。callee 0x460F46は[owner+0x330]を木headerとして走査し、0x460F95 CALL0x402C40の比較結果と0x460FA2..0x460FB1の長さ等値gateを使う。
+同一key該当時、0x461038のowner+0x32Cを使って0x46103E CALL0x510C20（木ノードerase）を実行し、0x46104E [record+0x94]=0、0x461055 heap/inline分岐、0x46105C [record+0x84]=0でstringを空にする。非該当は次node走査、見つからず0x461017でEAX=0を返す（擬似C補助／native枝照合）。
+0x4635E9 TEST EBX,EBX→非0時0x4635EE CALL0x4591F0（候補内資源を解放するdtor様関数）、0x4635F4 CALL0x5B6BBB（同ポインタ解放）へ進む。これは候補オブジェクトの破棄経路が存在することを示す。ただしゲーム上の削除・所有権・外部参照寿命はVERIFY。
+## 独立検証と重複抑止
+元PE x86-32 capstone限定解読。窓0x463590（117B）SHA256 3765E2A1236B2159DBE60FB03D58828D9F5D8F03CFE4634D5F7A4476315E1C36；0x460F10（377B）SHA256 D46D357082DC5EA83F26CB173817F6B2B427F8FDA6BF2A6C319C3EC752C29A79。
+E8 REL32原PE 10/10一致: 0x497C21→0x463590、0x4635A7→0x49F410、0x4635BA→0x4BF820、0x4635DE→0x402710、0x4635E4→0x460F10、0x4635EE→0x4591F0、0x4635F4→0x5B6BBB、0x460F95→0x402C40、0x46103E→0x510C20、0x46106A→0x5B6BBB。
+B所有T011/T012/T013/T024/T028 data/exe Markdown＋HANDOFFの326資料を読取検索。新site 0x497C1B /0x4635A0 /0x4635E3 /0x46103E /0x46104E /0x4635BA 旧literal各0。旧11Hのflag gate、0x497C21の存在、0x4C1290一般vector helperは再計上0。10/25未同期全文・他レーン完全意味重複は未検証。
+## 影響・再開点
+REIMPLEMENT: null配列経路をno-opまたはvector appendと扱うとowner索引二系統・string清掃・候補資源解放の差分を失う可能性。原作コードがこれらの関数に到達する合法条件と他ポインタ保持は未確定で、ゲームの死亡/士気/敗走・忠誠処理と直結させない。
+次は0x497BB0のECX=0の上流producer（0x494618/0x49516Aほか）、owner+0x2FCと+0x32Cのフィールド型、0x4591F0後の外部参照・第2RB set本当のconsumer、T028士気敗走/T013最終target/T024戦闘AI/T011召喚親子を優先。
+GOLDEN: 無改変ver0.67 EXE＋20倍強化前DAT、同一SAVE/MAP/入力/RNG、候補+75/+77=0・ECX null/nonnull各状態でowner木の前後、candidate寿命と可視戦略結果を比較。DESIGNED_NOT_RUN、旧原作Gameplay PASS0、strict MATCH0、新正式READY0、MASTER統合0、Task DONE0、NOT READY。
+既安全拒否VA0x5710C0..0x571500/0x58021E..0x580340および拒否済操作の再試行/迂回0。MASTER/他lane/REA/dev_lab/原本EXE/DAT/SAVE/ZIP/Git/Work/設定/スケジュール無変更。

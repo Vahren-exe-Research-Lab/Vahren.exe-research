@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-c"></a>
+## vtable + 0xC
+
+- [research/recovered/b_batch2/T012_RUSH_GAMETASK_VIRTUAL_STATUS_GATE_NATIVE_20261027_17H.md 行 13](../../research/recovered/b_batch2/T012_RUSH_GAMETASK_VIRTUAL_STATUS_GATE_NATIVE_20261027_17H.md?plain=1#L13-L13) — [RUSH GETTER ASM] Rush vtable +0x0C と +0x10 は両方0x54E0A0。元PE 0x54E0A0 MOV AL,BYTE PTR[ECX+0x210]; 0x54E0A6 RET。Rush+0x210は既存0x54F990 initializer内0x54F9C5 / 0x54F
+  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
 <a id="field-24"></a>
 ## vtable + 0x24
 
@@ -27,6 +33,33 @@
 
 - [research/recovered/b_reports/T013_VIEW_OFF_COMPARE_VSLOT5C_NATIVE_20261101_02H.md 行 14](../../research/recovered/b_reports/T013_VIEW_OFF_COMPARE_VSLOT5C_NATIVE_20261101_02H.md?plain=1#L14-L14) — [KB_CANDIDATE] owner B/T013、本ID。VA 0x45A240/0x45A253/0x45A26F/0x45A274/0x45A296/0x45A2C6/0x45A2D0/0x42F860/0x42F889/0x57D994/0x57D99B/0x57D99F/0x57D9A9。offset g
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
+
+- [research/recovered/e_reports/T020_E_T013_OFF_EXACT_VSLOT_ACCEPTANCE_20261101_02H.md 行 8](../../research/recovered/e_reports/T020_E_T013_OFF_EXACT_VSLOT_ACCEPTANCE_20261101_02H.md?plain=1#L8-L8) — [AI GATE] 0x57D994 CALL0x4C1860; if PtInRect AL!=0 then skip vcall; even with AL==0, secondary ESI!=0 skips. Only AL==0 AND ESI==0 reaches the [vtable+0x5C] ind
+  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
+
+- [research/recovered/e_reports/T020_E_T013_OFF_EXACT_VSLOT_ACCEPTANCE_20261101_02H.md 行 13](../../research/recovered/e_reports/T020_E_T013_OFF_EXACT_VSLOT_ACCEPTANCE_20261101_02H.md?plain=1#L13-L13) — [KB_CANDIDATE] E/T020 this ID crosschecks B/T013 source with original PE SHA; VA 0x45A26F/0x45A296/0x45A2C6/0x42F860/0x57D994/0x57D99B/0x57D99F/0x57D9A9; global
+  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
+
+- [research/recovered/e_reports/T020_E_T013_RECT_BOOL_WINAPI_ACCEPTANCE_20261031_23H.md 行 11](../../research/recovered/e_reports/T020_E_T013_RECT_BOOL_WINAPI_ACCEPTANCE_20261031_23H.md?plain=1#L11-L11) — [CALLER SPLIT] B/T013 original evidence: 0x57DE95 uses margin100 and gates C8/CC write→alternate-list clear→tail reset versus head fallback. 0x57D994 uses Unit+
+  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
+
+- [research/recovered/e_reports/T020_E_T013_RECT_BOOL_WINAPI_ACCEPTANCE_20261031_23H.md 行 20](../../research/recovered/e_reports/T020_E_T013_RECT_BOOL_WINAPI_ACCEPTANCE_20261031_23H.md?plain=1#L20-L20) — [NEXT] Once allowed source exists, test 0x4C1690 coordinate transform and 0x57D9A9 vtable+0x5C side effects from authorized static evidence; original C-NB02 G0/
+  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
+
+<a id="field-64"></a>
+## vtable + 0x64
+
+- [research/recovered/b_batch2/T028_EFFECT_ALFLAG_CALLSITE_SENTINEL_MATRIX_NATIVE_20261029_08H.md 行 13](../../research/recovered/b_batch2/T028_EFFECT_ALFLAG_CALLSITE_SENTINEL_MATRIX_NATIVE_20261029_08H.md?plain=1#L13-L13) — \| 0x435246 \| 0x435244 MOV AL,1 \| 0x435234 vtable+0x64 真後の1 \|
+  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+- [research/recovered/b_batch2/T028_EFFECT_ALFLAG_CALLSITE_SENTINEL_MATRIX_NATIVE_20261029_08H.md 行 22](../../research/recovered/b_batch2/T028_EFFECT_ALFLAG_CALLSITE_SENTINEL_MATRIX_NATIVE_20261029_08H.md?plain=1#L22-L22) — - 0x431BE0..0x431BFC は [ESI] vtable+0x64 を0x431BE7 CALL、0x431BE9 TEST ALし、falseで0x431BFC RET4。trueのみ0x431BEDで[ESP+4]のbyteをALへ再設定し、0x431BF1 ECX=ESI+0x260、0x431BF
+  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+- [research/recovered/b_batch2/T028_SIGNED_MODE_TWO_EFFECT_SUBOBJECTS_NATIVE_20261029_09H.md 行 15](../../research/recovered/b_batch2/T028_SIGNED_MODE_TWO_EFFECT_SUBOBJECTS_NATIVE_20261029_09H.md?plain=1#L15-L15) — - 0x4189B0のnative：0x4189B6 [vtable+0x64]→0x4189BB CALL EDX→0x4189BD TEST AL→falseなら0x4189D0。true時0x4189C1 EAX=[ESP+0xC]でmodeを受け、0x4189C5 ESI+=0x1E0→0x4189CB CAL
+  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+- [research/recovered/b_batch2/T028_SIGNED_MODE_TWO_EFFECT_SUBOBJECTS_NATIVE_20261029_09H.md 行 20](../../research/recovered/b_batch2/T028_SIGNED_MODE_TWO_EFFECT_SUBOBJECTS_NATIVE_20261029_09H.md?plain=1#L20-L20) — - 0x4A3B46..50は候補vectorの4byteポインタ件数でloop。0x4A3B66 [vtable+0x64]→0x4A3B69 CALL EAX、falseはskip。trueならmode>=0時0x4A3B8F CALL0x4189B0、mode<0時0x4A3BA7 CALL0x431BE0。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 
 <a id="field-70"></a>
 ## vtable + 0x70

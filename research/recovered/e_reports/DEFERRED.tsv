@@ -1,0 +1,6 @@
+source_path	state	reason
+tests/T020_E_T011_BULK_ERASE_ACCEPTANCE_20261031_09H.md	EXCLUDED_PREEXISTING_REFUSAL_SCOPE	No semantic or verification use; selection error returned text before corrected allowlist; no copy
+tests/T020_E_T011_PARTIAL_ERASE_ACCEPTANCE_20261031_10H.md	EXCLUDED_PREEXISTING_REFUSAL_SCOPE	No semantic or verification use; selection error returned text before corrected allowlist; no copy
+tests/T020_E_T011_SUCCESSOR_BEFORE_ERASE_ACCEPTANCE_20261031_11H.md	EXCLUDED_PREEXISTING_REFUSAL_SCOPE	No semantic or verification use; selection error returned text before corrected allowlist; no copy
+tests/T020_E_T013_A14_RNG_BOUNDARY_ACCEPTANCE_20261031_19H.md	DEFERRED_TEXT_REVIEW_INCOMPLETE	Source text contains substantial apparent encoding damage; not admitted in this bounded pass
+tests/T020_E_T013_DUAL_SCHEDULER_ACCEPTANCE_20261030_13H.md	DEFERRED_TEXT_REVIEW_INCOMPLETE	Source text contains substantial apparent encoding damage; not admitted in this bounded pass

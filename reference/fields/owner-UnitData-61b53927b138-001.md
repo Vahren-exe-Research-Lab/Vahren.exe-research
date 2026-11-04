@@ -7,6 +7,9 @@
 <a id="field-168"></a>
 ## UnitData + 0x168
 
+- [research/recovered/b_batch2/T011_TRAINING_COUNT_PROVENANCE_NATIVE_20261031_06H.md 行 9](../../research/recovered/b_batch2/T011_TRAINING_COUNT_PROVENANCE_NATIVE_20261031_06H.md?plain=1#L9-L9) — [NEW GATES] 0x472254 UnitData+0x168 level と既定上限候補をCMP→0x47225A JGE skip；0x47226F UnitData+0xC8とresolver値CMP→0x472275 JGE skip；0x47227D CALL0x5857E0後0x472284 JNE
+  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
 - [research/recovered/b_reports/T011_T012_EXP_TRAINING_DEATH_CROSSWALK_NATIVE_20261029.md 行 33](../../research/recovered/b_reports/T011_T012_EXP_TRAINING_DEATH_CROSSWALK_NATIVE_20261029.md?plain=1#L33-L33) — [LEVEL] UnitData+0x168 level / +0x16C EXP / +0x170 next threshold。0x58A650即時SimpleUnit、0x575110通常Unitの遅延処理。11field再計算及び0x58AFA0 skill/property刷新は未完全動的確認。
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail; DAT491 is direct source-line distribution, not491 effective units; training_up caller linkage remains VERIFY
 

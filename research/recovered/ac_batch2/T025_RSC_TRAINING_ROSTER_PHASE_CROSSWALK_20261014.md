@@ -1,0 +1,15 @@
+# T025 rsc 初期Trainingの前後 Power 集合境界 (C-20261014-2325-01)
+- ID/TASK: C-20261014-2325-01 / T025 P0・T016（T033現行rsc対照）。
+- STATUS: READY＝原作ver0.67 SCRIPTに記述された前後順序のみ。VERIFY＝旧native変数スコープ、集合と実Training効果、合法旧Gameplay。原作actual Golden PASS0、old/new strict MATCH0。
+- PRIMARY: normalized a_default/script/5000_ランダムシナリオ/sc_rnd_sys.dat:895-966、同/ev_rnd.dat:1-20、a_default/script/event_world.dat:1104-1118,1411-1443,1501-1517,1751-1784、同/7000_その他シナリオ/free_ev_world.dat:727-745,970-1008。
+- CONFIRMED-SCRIPT rsc pre-stage: ev_rsc_shoki内でstoreAllPower(@aaa)→master時のみsubv(@aaa,@plap)→setDiplo(@aaa,0)→clear(@aaa)後、mode0ではaddUnit(fix500_matsuei,spp0)とsetTrainingUp(@ddd,2)、全modeでsetTraining(@ddd,100)を呼ぶ。
+- SOURCE VARIABLE: ev_rsc_shoki入口から上記早期2 setterまで、@dddの明示clear/setv/storeAllPowerはない。sc_rnd_sys.datの同ファイル前段op_grnにも@ddd literalが見当たらない（今回同ファイル0..894行を直接読取り検索）。ただし外側World・別routine・旧VMのscratch引継ぎを否定する証拠ではない。
+- CONFIRMED-SCRIPT middle-stage: 3初期spotのUnitをroamへ移し、hideSpot(rndmspot_homo/cookie/nonke)、erasePower(rndmpower_homo/cookie/nonke)を個別に記述した後で routine(storeUnitOfEnemy)。
+- CONFIRMED-SCRIPT post-stage: 共通storeUnitOfEnemyは冒頭storeAllPower(@ddd)を実行し、isMasterならプレイヤー勢力を除外、さらにpo50/61/62/63/63_sci1を除外してから他勢力Unit集合@aaa・人材@eeeを構築する。rsc難度1/2/3のaddLevel・setBaseLevel・setTrainingUp(@ddd,3/4/5)はこのroutineの後。
+- CROSS-SCENARIO DIFFERENCE: sci1 firstsetup2・sc_free firstsetupfree2では入口clear(@ddd)→routine(storeUnitOfEnemy)→setTraining(@ddd,100)、mode0 setTrainingUp(@ddd,2)。rscはこの前後関係が逆。共通routineの内部writerを「全シナリオで事前完了」とみなさない。
+- LIMIT: mode0でTrainingUpが必ず無効、あるいは旧値が漏洩することは未証明。早期@dddの初期/保存寿命・Power列挙・erasePowerのruntime効果・旧実トレーニング結果はVERIFY。後半@dddがactive勢力だけを返すかも未観測。
+- REIMPLEMENT: rscは①early TrainingUp(mode0)/Training(全mode)の当時の@ddd、②一時勢力削除、③storeUnitOfEnemyによる@ddd再構築、④late mode1..3強化を別phaseにする。共通routineを前倒しして@dddを統一したり、3 Powerを消す前後の集合を同一視しない。
+- GOLDEN DESIGN/NOT RUN: 合法な未改変原作rscで難度0/1/2/3×master/nonmasterの初回World・同turn再入・次turn、削除前後のruntime Power名簿、Training/TrainingUp可視値、敵Unit Lv、画面/合法SAVE SHAを採取し同入力の新実装と比較。@ddd内部値は観測不可ならINELIGIBLE、合法ケース不在もINELIGIBLE。
+- DEDUP: C-20261012-1536-01の共通storeUnitOfEnemy集合構築とsci1/free初期強化、C-20261014-2222-01のrsc外交master条件・3Power削除は既存正式成果。本IDはrsc早期setterの使用時点と後期routine生成集合との前後逆転のみを新規増分とする。
+- BLOCKED UNCHANGED: C-RC-20261014-1824-01、旧C/T025・T026・T032等の安全拒否を再提出/迂回していない。旧EXE Gameplay0、strict0、原作確定BUG0、Task DONE増0。
+- NEXT: Cは合法旧rsc save/UIの観測可能性とA既保存VM variable lifetimeをread-only照合。Aにscratch scope、EにT018 old/new比較受入をHANDOFFで引継ぐ。原本・MASTER・他owner・Git・設定は非変更。

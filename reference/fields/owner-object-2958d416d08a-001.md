@@ -10,6 +10,30 @@
 - [research/recovered/b_reports/T013_HEAL_FINISH_UNREGISTER_POOL_REUSE_NATIVE_20261027_10H.md 行 6](../../research/recovered/b_reports/T013_HEAL_FINISH_UNREGISTER_POOL_REUSE_NATIVE_20261027_10H.md?plain=1#L6-L6) — [OWNER REGISTRATION] 0x54E11A/0x54E11E→0x550980 factory。factory 0x550C53 virtual+0x18→0x455FA0、0x455FAB MOV [object+0xC],holder。0x54E2CC holder=[effect+0xC]、0x5
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
+<a id="field-54"></a>
+## object + 0x54
+
+- [research/recovered/b_batch2/B_T012_T013_SPATIAL_CELL_MIGRATION_OFFLINE_20261023_0716.md 行 17](../../research/recovered/b_batch2/B_T012_T013_SPATIAL_CELL_MIGRATION_OFFLINE_20261023_0716.md?plain=1#L17-L17) — 前回06:08の `0x004BC920` は矩形中心を用いた空間セルへの初回登録と `object+0x54` の値保存を確認済み。今回は **未登録の別関数 `0x004BCA30`** の機械語を原作EXEから直接確認した。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+- [research/recovered/b_batch2/B_T012_T013_SPATIAL_CELL_MIGRATION_OFFLINE_20261023_0716.md 行 28](../../research/recovered/b_batch2/B_T012_T013_SPATIAL_CELL_MIGRATION_OFFLINE_20261023_0716.md?plain=1#L28-L28) — \| `0x004BCB18..0x004BCB1F` \| コンテナ `+0x08` を増加し、同じ値を `object+0x54` に記録 \| STATIC-ASM \|
+  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+- [research/recovered/b_batch2/B_T012_T013_SPATIAL_CELL_MIGRATION_OFFLINE_20261023_0716.md 行 30](../../research/recovered/b_batch2/B_T012_T013_SPATIAL_CELL_MIGRATION_OFFLINE_20261023_0716.md?plain=1#L30-L30) — この関数は単なる「座標が変わるたびに全登録を作り直す関数」ではない。**マスクをかけたセル座標が変わらなければ、セル配列にも `object+0x54` にも変更しない**。マスクの実行時値とセルサイズの確定はVERIFY。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+- [research/recovered/b_batch2/B_T012_T013_SPATIAL_CELL_MIGRATION_OFFLINE_20261023_0716.md 行 53](../../research/recovered/b_batch2/B_T012_T013_SPATIAL_CELL_MIGRATION_OFFLINE_20261023_0716.md?plain=1#L53-L53) — ## 5. `object+0x54` は不変の個体IDではない（T011/T012に重要）
+  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+- [research/recovered/b_batch2/B_T012_T013_SPATIAL_CELL_MIGRATION_OFFLINE_20261023_0716.md 行 57](../../research/recovered/b_batch2/B_T012_T013_SPATIAL_CELL_MIGRATION_OFFLINE_20261023_0716.md?plain=1#L57-L57) — その一方、同じセル内の移動では早期ジャンプして書き戻さない。よって `object+0x54` を「不変の個体ID」「座標更新ごとのカウンタ」「画面フレーム番号」と固定して再実装する根拠はない。局所的には**登録時またはセル越境時に更新されるstamp**と呼ぶのが安全。実際の全writer、比較reader、スコア書
+  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+- [research/recovered/b_batch2/B_T012_T013_SPATIAL_CELL_MIGRATION_OFFLINE_20261023_0716.md 行 66](../../research/recovered/b_batch2/B_T012_T013_SPATIAL_CELL_MIGRATION_OFFLINE_20261023_0716.md?plain=1#L66-L66) — **Golden設計（NOT RUN）**：同一EXE、DAT、MAP、SAVE、tick、RNG、入力で、単体移動が「同セル」「セル境界越え」「負座標境界越え」に分かれる配置を作る。セルごとのobjectポインタ列の順序、`grid+0x08`、`object+0x54`、最終接触候補、命中対象、HP・状態・RNGを
+  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+- [research/recovered/b_batch2/B_T012_T013_SPATIAL_CELL_MIGRATION_OFFLINE_20261023_0716.md 行 70](../../research/recovered/b_batch2/B_T012_T013_SPATIAL_CELL_MIGRATION_OFFLINE_20261023_0716.md?plain=1#L70-L70) — - **P0次回**：`0x004BC4F0` の空間セル列挙から、`0x004E6D10` など実際のミサイル接触候補探索との接続を限定的に調査する。`grid+0x28`の初期化と `object+0x54` readerを調べ、セル順序が本当に最終対象へ作用するかVERIFY。T024/T028はP0維持。0x5
+  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
 <a id="field-18684"></a>
 ## object + 0x18684
 

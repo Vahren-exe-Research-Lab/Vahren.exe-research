@@ -7,7 +7,7 @@
 <a id="field-10c"></a>
 ## def + 0x10C
 
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 768](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L768-L768) — - **item**: unit の `item`（`@シナリオ` / 素の名前）、なければ class。数値の項目でグループが切り替わる（最初は front）。front の項目は def+0x10C と def+0xEC の先頭（1つずつ先頭に入れるので逆順）、back の項目は def+0xFC と末尾。最後に 
+- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 768](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L768-L768) — - **item**: unit の `item`（`@シナリオ` / 素の名前）、なければ class。数値の項目でグループが切り替わる（最初は front）。front の項目は def+0x10C と def+0xEC の先頭（1つずつ先頭に入れるので逆順）、back の項目は def+0xFC と末尾。最後に
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
 <a id="field-11c"></a>

@@ -1,0 +1,10 @@
+source_path	source_sha256	bytes	owner	reason	checked_date
+data/T005_T006_SCRIPT_INVENTORY.md	57f023356837e7b30a39b8870c2347ef3bec901fad758ef7992d3749191162e1	10317	A	GENERATED_INVENTORY: mechanical inventory; richer T009 model already recovered; payload not reviewed in this batch	2026-11-05
+data/T009_CONTEXT_KEYS.md	3f515997555d272909e69bb485985901b357ee108bd80613790a501261dfce4a	7711	A	GENERATED_INVENTORY: mechanical inventory; richer T009 model already recovered; payload not reviewed in this batch	2026-11-05
+data/T009_FALLBACK_COVERAGE.md	65edab042e8748a935fead9bf51078794702ca2b400254299a5486ae69dc0d53	8900	A	GENERATED_INVENTORY: mechanical inventory; richer T009 model already recovered; payload not reviewed in this batch	2026-11-05
+data/T033_LEGACY_SCENARIO_IDS.md	928a027d2ccd17575b51ef5dfe46639dab28daf1ad1900e291aa5b9839a0dcc1	22950	C	HOLD_RELATED_COMPOSITE: full review found explicit refused rsc3/rsc4 property-table history; not recovered	2026-11-05
+data/T034_SHIMOKITANO_TEA.md	47a83ec47fd0d0b25989503fbf0a906686a9ff2436da1018fa5c53343727170a	159	C	POINTER_ONLY: three-line merged pointer to recovered T034 subgame body	2026-11-05
+evidence/T025_SCI_FREE_BONUS_FRIEND_LIFECYCLE_20261015.md	641d92b6a7869f7bf3cda83ebb5d9e570ae0767b221c001096b2582bf568642f	4415	C	HOLD_RELATED_SAME_STUDY: full review records SAFETY_REFUSAL for C-20261015-0824-01 HANDOFF payload; not recovered	2026-11-05
+evidence/T029_POSTBATTLE_WORLD_CASTLE_PREGUARD_20261015.md	345866ae39627938455825483466cbfadc58295587929c15ccddecb5755dae81	5388	C	HOLD_RELATED_MANUAL_REVIEW: prior DEFERRED same-ID HANDOFF refusal; payload not opened	2026-11-05
+evidence/T033_LOAD_POWER_BEFORE_SCENARIO_POSTLOAD_CROSSWALK_20261015.md	71066448f3169d90a694245c3f123f210330d77641626dd0bb4c310bd6afdecf	4257	C	HOLD_RELATED_MANUAL_REVIEW: prior DEFERRED legacy rsc3/rsc4 refusal boundary; payload not opened	2026-11-05
+evidence/T033_UNDECLARED_SCENARIO_FIELD_LOOKUP_DEFAULT_20261015.md	f77586aad842221be79a988876dac52af34fd1c299c7968b950ec15831e8d6fb	3820	C	HOLD_RELATED_MANUAL_REVIEW: prior DEFERRED explicit refused rsc3/rsc4 payload; payload not opened	2026-11-05

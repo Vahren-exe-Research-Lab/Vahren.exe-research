@@ -10,4 +10,13 @@
 - [research/recovered/symbol_sources/T011_TRAINING_CACHE_FULL_RANGE_ERASE_NATIVE_20261031_09H.md 行 14](../../research/recovered/symbol_sources/T011_TRAINING_CACHE_FULL_RANGE_ERASE_NATIVE_20261031_09H.md?plain=1#L14-L14) — [KB_CANDIDATE] 本見出しID; owner B/T011; VA 0x4726C1/0x4DEF40/0x4DEF57/0x4ED030/0x4ED046/0x49F6A0/0x4DEFCF/0x4DEC70; node sentinel byte +0x15, tree head +0x4, count
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation; full-range bulk erase and partial node erase distinct; partial helper not required in normal full cleanup
 
+<a id="field-186b4"></a>
+## count + 0x186B4
+
+- [research/recovered/e_reports/T020_E_T013_ALT_LIST_RESET_ACCEPTANCE_20261031_22H.md 行 8](../../research/recovered/e_reports/T020_E_T013_ALT_LIST_RESET_ACCEPTANCE_20261031_22H.md?plain=1#L8-L8) — [CONDITIONAL MODEL] arg nonzero enters an all-clear path, sets alt count +0x186B4=0 and releases nodes; arg zero with nonempty alt list models one unlink/count
+  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
+
+- [research/recovered/e_reports/T020_E_T013_ALT_LIST_RESET_ACCEPTANCE_20261031_22H.md 行 9](../../research/recovered/e_reports/T020_E_T013_ALT_LIST_RESET_ACCEPTANCE_20261031_22H.md?plain=1#L9-L9) — [POST GATE] Conditional static gate is Unit+0x8C==0, byte+0x1F8!=0, updated alt count +0x186B4==0, and +0x5F0!=0x80000008. Success may enter virtual calls and l
+  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

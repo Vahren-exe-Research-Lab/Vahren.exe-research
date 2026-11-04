@@ -10,4 +10,10 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1355](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1355-L1355) — \| 42 showSpot \| 名前ごとに 0x467E90 で spot を解決（失敗なら無視）。GM+0x1EEBCC の要素マップに無ければ作成（0x5A8110）して表示（vcall +0x54） \| 0x4A2F00.. 疑似C \|
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+<a id="field-5c"></a>
+## vcall + 0x5C
+
+- [research/recovered/e_reports/T020_E_T013_OFF_EXACT_VSLOT_ACCEPTANCE_20261101_02H.md 行 11](../../research/recovered/e_reports/T020_E_T013_OFF_EXACT_VSLOT_ACCEPTANCE_20261101_02H.md?plain=1#L11-L11) — [NEGATIVE CONDITIONS] 'of','offx','off ','OFF','' never count as the exact returned off bytes. Quarter helper need not execute when quota non-off. D3DX_REQUIRED
+  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)
