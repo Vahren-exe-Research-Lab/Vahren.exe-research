@@ -70,6 +70,12 @@
 - [research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md 行 23](../../research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md?plain=1#L23-L23) — - 直接CALL索引：`0x00583CF0` 内 `0x00583D82 -> 0x00583DC0`。`0x00583CF0`はまず `*(param_1+0x1A4)+0x2F0` を介した別の走査を行い、行き着かない場合に `0x583DC0` のフォールバックへ進む擬似Cがある。**`+0x2F0`と`+0x
   制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
 
+<a id="field-1d0"></a>
+## param_1 + 0x1D0
+
+- [research/recovered/b_batch7/data/T012_RUSH_VTABLE_LOGICAL_VS_PHYSICAL_LIFETIME_OFFLINE_20261021_1509.md 行 16](../../research/recovered/b_batch7/data/T012_RUSH_VTABLE_LOGICAL_VS_PHYSICAL_LIFETIME_OFFLINE_20261021_1509.md?plain=1#L16-L16) — 4. `0x005501A0` 擬似Cの生成回数上限到達側は **CALL site `0x005503F9 → 0x004C22B0(param_1,0)`** の後、 `*(byte *)(param_1+0x1D0)=0`。`0x004C22B0` 擬似Cは管理配列からポインタを0にする、別配列で要素を詰める等の
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
 <a id="field-280"></a>
 ## param_1 + 0x280
 

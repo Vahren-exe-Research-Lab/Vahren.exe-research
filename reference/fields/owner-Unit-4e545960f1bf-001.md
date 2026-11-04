@@ -25,6 +25,9 @@
 - [research/recovered/b_batch6/data/T011_UNIT_EFFECT_RING_OWNER_4DFB00_20261013.md 行 9](../../research/recovered/b_batch6/data/T011_UNIT_EFFECT_RING_OWNER_4DFB00_20261013.md?plain=1#L9-L9) — [WORK/DATA MODEL] UnitBattleInstance { effectSlots: 8 × 0x264 at+0x928, effectCursorDWORD:+0x185F8, childActiveLPtrs:vector Unit+0x6C/70/74, rest } としてRとLを厳密区別。
   制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
 
+- [research/recovered/b_batch7/data/T012_POSTILLUSION_POSTCORE_VECTOR_VIRTUAL_20261016.md 行 5](../../research/recovered/b_batch7/data/T012_POSTILLUSION_POSTCORE_VECTOR_VIRTUAL_20261016.md?plain=1#L5-L5) — [FACT/CALLER] nonempty時57E88F ECX=[Unit+0xC]→57E892 EDX=[ECX+4]、57E895 PUSH Unit EBX;57E896 PUSH receiver EDX、57E897 ESI=&Skill+30、57E89A CALL4B9F70、57E89F rest
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
 <a id="field-24"></a>
 ## Unit + 0x24
 
@@ -93,6 +96,9 @@
 
 <a id="field-7c"></a>
 ## Unit + 0x7C
+
+- [research/recovered/b_batch7/data/T012_ILLUSION_POSTMP_DAMAGE_BRANCH_20261016.md 行 7](../../research/recovered/b_batch7/data/T012_ILLUSION_POSTMP_DAMAGE_BRANCH_20261016.md?plain=1#L7-L7) — [FACT-DAMAGE] 通常側0x57E7A5..0x57E7BAは[Unit+0x7C]一時contextを構築し、Skill+0x24C>=0かつSkill+0x27C!=0の場合だけ0x57E7E0 CALL0x550E70(context, Unit+0x1E570)を実行、0x57E7E5 JMP0x57
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
 - [research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md 行 35](../../research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md?plain=1#L35-L35) — x86がlittle-endianであるため、最終的なcontext 3 byteは `[+0x0C,+0x0D,+0x0E] = [0,1,0]`。3個の書き込みは**候補ループの中**で毎回繰り返される。候補が2件なら両者とも独立に`+0x0C=0`から効果コアへ入る。構造体アドレス自体は同じ `Unit+0x7C
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
@@ -178,6 +184,9 @@
 - [research/recovered/b_batch3/B_T012_T013_VSLOT70_LIVE_VECTOR_OFFLINE_20261023_1109.md 行 43](../../research/recovered/b_batch3/B_T012_T013_VSLOT70_LIVE_VECTOR_OFFLINE_20261023_1109.md?plain=1#L43-L43) — `Unit+0x90`はB先行研究でHP現在値と同定されている。今回の差分で、「virtualを1種類の共通HP関数とみなす」実装は不適切と確認。target型によりafterhit/afterdeath、派生弾発射、イベント/静止物処理への経路が違う。`0x00550E70`が**calleeの戻り値を成功判定に使う
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+- [research/recovered/b_batch7/data/T012_HEAL_HP_POST_577100_CONTRACT_20261013.md 行 5](../../research/recovered/b_batch7/data/T012_HEAL_HP_POST_577100_CONTRACT_20261013.md?plain=1#L5-L5) — [ENABLED/MATH] mode!=0なら0x577146 FILD Unit+0x90(HP)→0x57714C FIDIV Unit+0xDC(HPmax)→0x577152 FDIV global double VA0x63B198を実行。今回隔離EXE read-only定数生byte 9a9999999
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 552](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L552-L552) — ## 22. Unit 能力値の生成 — DAT の hp/attack… から Unit+0x90.. と *_max まで（0x58B7F0 → 0x573BD0）
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
@@ -201,6 +210,12 @@
 
 - [research/recovered/b_batch5/data/T011_T012_MISSILE_SPECIAL_MP_UNIT_FIXTURE_20261013.md 行 9](../../research/recovered/b_batch5/data/T011_T012_MISSILE_SPECIAL_MP_UNIT_FIXTURE_20261013.md?plain=1#L9-L9) — [REIMPLEMENT] Source Skill graph `new_misairu:sk_ms`, child`new_misairu_mz:new_misairu`, child`sp_new_misairu:new_misairu` and Unit raw skill2/leader_skill/lear
   制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
+- [research/recovered/b_batch7/data/T012_MODE0_KIND2_POSTDEBIT_CHILD_AL_BOUNDARY_20261015.md 行 4](../../research/recovered/b_batch7/data/T012_MODE0_KIND2_POSTDEBIT_CHILD_AL_BOUNDARY_20261015.md?plain=1#L4-L4) — [FACT STAGE1] 0x57EED4 EDX=Skill+0x278, 0x57EEDA Unit+0x94 -= EDX。ここへ至る任意の正常前段枝（mode0/mode1の各条件は別契約）で、後続効果呼出よりMP減算が先行する。早期MPREC AL1・latch2 AL0分岐はこの地点に到達しない。
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/b_batch7/data/T012_MODE0_LATE_MP_FALLBACK_POSTSELECT_CROSSJOIN_20261014.md 行 5](../../research/recovered/b_batch7/data/T012_MODE0_LATE_MP_FALLBACK_POSTSELECT_CROSSJOIN_20261014.md?plain=1#L5-L5) — [STEP2/FALLBACK GATE] 0x57ED56..0x57ED66のUnit+0x8C!=0またはUnit+0x1F8==0側が0x57ED68へ。0x57ED68 Skill+0x278(cost)!=0、0x57ED72 Unit+0x94(MP)<cost、0x57ED7A Unit+0x135==
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
 - [research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md 行 13](../../research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md?plain=1#L13-L13) — 前回09時台 `B-OFFLINE-20261023-0909-T012-T013-DUAL-POOL-RANGE-FANOUT-01` が `0x00547DB0` の「複数候補へ個別に `0x00550E70` を呼び、候補走査後に Unit+0x94 を一回減算」という経路を整理した。2026-10-21スナップ
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
@@ -246,6 +261,12 @@
 
 <a id="field-b8"></a>
 ## Unit + 0xB8
+
+- [research/recovered/b_batch7/data/T012_MODE0_LATE_MP_FALLBACK_POSTSELECT_CROSSJOIN_20261014.md 行 6](../../research/recovered/b_batch7/data/T012_MODE0_LATE_MP_FALLBACK_POSTSELECT_CROSSJOIN_20261014.md?plain=1#L6-L6) — [STEP3/RETURN] 0x57ED87 xor eax,eax→0x57ED89 cmp [Unit+0xB8](mprec),eax→0x57ED8F setg al→0x57ED99 ret8。Unit+0xB8>0ならmode0 handler AL1を返すが、この早期returnでは0x57EDEB..
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/b_batch7/data/T012_MODE0_LATE_MP_FALLBACK_POSTSELECT_CROSSJOIN_20261014.md 行 12](../../research/recovered/b_batch7/data/T012_MODE0_LATE_MP_FALLBACK_POSTSELECT_CROSSJOIN_20261014.md?plain=1#L12-L12) — [GOLDEN DESIGN/NOT RUN] 原作合法kind2 Skillでearly gateを避けlate不足branchに入れる条件を先に確認。cost−1/cost/cost+1 × Unit+0xB8=-1/0/+1 × Unit+0x135=0/1、同旧SAVE/SHA/seed/配置/入力の可視Ski
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
 - [research/recovered/e_reports/T020_E_T013_PAIRWISE_DISTANCE_ACCEPTANCE_20261030_16H.md 行 12](../../research/recovered/e_reports/T020_E_T013_PAIRWISE_DISTANCE_ACCEPTANCE_20261030_16H.md?plain=1#L12-L12) — - Both temporary tree identities, group-to-Unit+0xB8 provenance, 0x44D1C0 equal-key handling, node lifetime, downstream 0x44C2D3+ result use, original gameplay
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
@@ -295,6 +316,9 @@
 <a id="field-dc"></a>
 ## Unit + 0xDC
 
+- [research/recovered/b_batch7/data/T012_HEAL_HP_POST_577100_CONTRACT_20261013.md 行 5](../../research/recovered/b_batch7/data/T012_HEAL_HP_POST_577100_CONTRACT_20261013.md?plain=1#L5-L5) — [ENABLED/MATH] mode!=0なら0x577146 FILD Unit+0x90(HP)→0x57714C FIDIV Unit+0xDC(HPmax)→0x577152 FDIV global double VA0x63B198を実行。今回隔離EXE read-only定数生byte 9a9999999
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1130](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1130-L1130) — \| HP表示 \| itoa(Unit+0xDC) と itoa(Unit+0x90)（0x407300 内）→ 現在HP=Unit+0xDC、最大=Unit+0x90 \| STATIC-HIGH \|
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
@@ -331,6 +355,12 @@
 - [research/recovered/b_batch6/data/T011_TOONO_DEATH_CLASS_UNIT_MP_GATE_20261014.md 行 7](../../research/recovered/b_batch6/data/T011_TOONO_DEATH_CLASS_UNIT_MP_GATE_20261014.md?plain=1#L7-L7) — [PRIOR MP NATIVE] B既存T011_SPECIAL_PROPERTY_SKILL4C_20261013.md/B-20261013-1740-01: Skill parser 0x59A30E..0x59A398はon→+0x4C=1 /その他 numeric getter→+0x4C。raw off
   制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
 
+- [research/recovered/b_batch7/data/T012_MODE0_LATE_MP_FALLBACK_POSTSELECT_CROSSJOIN_20261014.md 行 5](../../research/recovered/b_batch7/data/T012_MODE0_LATE_MP_FALLBACK_POSTSELECT_CROSSJOIN_20261014.md?plain=1#L5-L5) — [STEP2/FALLBACK GATE] 0x57ED56..0x57ED66のUnit+0x8C!=0またはUnit+0x1F8==0側が0x57ED68へ。0x57ED68 Skill+0x278(cost)!=0、0x57ED72 Unit+0x94(MP)<cost、0x57ED7A Unit+0x135==
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/b_batch7/data/T012_MODE0_LATE_MP_FALLBACK_POSTSELECT_CROSSJOIN_20261014.md 行 12](../../research/recovered/b_batch7/data/T012_MODE0_LATE_MP_FALLBACK_POSTSELECT_CROSSJOIN_20261014.md?plain=1#L12-L12) — [GOLDEN DESIGN/NOT RUN] 原作合法kind2 Skillでearly gateを避けlate不足branchに入れる条件を先に確認。cost−1/cost/cost+1 × Unit+0xB8=-1/0/+1 × Unit+0x135=0/1、同旧SAVE/SHA/seed/配置/入力の可視Ski
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
 <a id="field-137"></a>
 ## Unit + 0x137
 
@@ -366,50 +396,5 @@
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 737](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L737-L737) — その後、0x571B70 が Unit+0x168 = summon_max、Unit+0x13C = def の consti のコピー（0x4C1340）、Unit+0x14C = def の movetype を設定し、最後に 0x573BD0 を呼ぶ（§22/§23）。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
-
-<a id="field-14c"></a>
-## Unit + 0x14C
-
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 673](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L673-L673) — 2. `movetype` → Unit+0x14C = 技能の `add`（+0x13C、0x59A79B..0x59A7C8）（0x5743C9..0x574407）
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
-
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 737](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L737-L737) — その後、0x571B70 が Unit+0x168 = summon_max、Unit+0x13C = def の consti のコピー（0x4C1340）、Unit+0x14C = def の movetype を設定し、最後に 0x573BD0 を呼ぶ（§22/§23）。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
-
-<a id="field-15c"></a>
-## Unit + 0x15C
-
-- [research/recovered/b_batch5/data/T011_LEVELUP_11FIELD_RECALC_CACHE_GATE_20261021_17H.md 行 16](../../research/recovered/b_batch5/data/T011_LEVELUP_11FIELD_RECALC_CACHE_GATE_20261021_17H.md?plain=1#L16-L16) — 7. `0x58AFA0`の保存擬似C前段は`(local_64==0) \|\| (Unit+0x168 < local_18)`でloopを抜け、成立しない場合に`0x58C0E0`へ進む。直後の`0x469390()`非zero枝でtree sentinelと見られる`Unit+0x15C`指す構造を初期化し、`Un
-  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
-
-<a id="field-160"></a>
-## Unit + 0x160
-
-- [research/recovered/b_batch5/data/T011_LEVELUP_11FIELD_RECALC_CACHE_GATE_20261021_17H.md 行 16](../../research/recovered/b_batch5/data/T011_LEVELUP_11FIELD_RECALC_CACHE_GATE_20261021_17H.md?plain=1#L16-L16) — 7. `0x58AFA0`の保存擬似C前段は`(local_64==0) \|\| (Unit+0x168 < local_18)`でloopを抜け、成立しない場合に`0x58C0E0`へ進む。直後の`0x469390()`非zero枝でtree sentinelと見られる`Unit+0x15C`指す構造を初期化し、`Un
-  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
-
-<a id="field-168"></a>
-## Unit + 0x168
-
-- [research/recovered/b_batch5/data/T011_LEVELUP_11FIELD_RECALC_CACHE_GATE_20261021_17H.md 行 10](../../research/recovered/b_batch5/data/T011_LEVELUP_11FIELD_RECALC_CACHE_GATE_20261021_17H.md?plain=1#L10-L10) — 3. レベル上限を満たす場合、`Unit+0x168`を先に1増加し、11個のフィールドへの**ポインタ**をstackに構築する。候補集合は`Unit+{0x178,0x17C,0x180,0x184,0x188,0x18C,0x190,0x194,0x198,0x19C,0x1A0}`（計11）。
-  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
-
-- [research/recovered/b_batch5/data/T011_LEVELUP_11FIELD_RECALC_CACHE_GATE_20261021_17H.md 行 16](../../research/recovered/b_batch5/data/T011_LEVELUP_11FIELD_RECALC_CACHE_GATE_20261021_17H.md?plain=1#L16-L16) — 7. `0x58AFA0`の保存擬似C前段は`(local_64==0) \|\| (Unit+0x168 < local_18)`でloopを抜け、成立しない場合に`0x58C0E0`へ進む。直後の`0x469390()`非zero枝でtree sentinelと見られる`Unit+0x15C`指す構造を初期化し、`Un
-  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
-
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 672](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L672-L672) — 1. `summon_max` → Unit+0x168 += 値（0x57436C..0x574399）
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
-
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 737](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L737-L737) — その後、0x571B70 が Unit+0x168 = summon_max、Unit+0x13C = def の consti のコピー（0x4C1340）、Unit+0x14C = def の movetype を設定し、最後に 0x573BD0 を呼ぶ（§22/§23）。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
-
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 769](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L769-L769) — - Unit+0x168 summon_max = 0x585AD0(def, "summon_max")。0 なら `unit_summon_min`（0x46F4C0、既定値 1）、負なら 0（0x5729C0..0x572A28）。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
-
-<a id="field-16c"></a>
-## Unit + 0x16C
-
-- [research/recovered/b_batch5/data/T011_LEVELUP_11FIELD_RECALC_CACHE_GATE_20261021_17H.md 行 8](../../research/recovered/b_batch5/data/T011_LEVELUP_11FIELD_RECALC_CACHE_GATE_20261021_17H.md?plain=1#L8-L8) — 1. `0x58A650`入口はGhidra擬似Cで`*(uint*)(Unit+0x170) <= *(uint*)(Unit+0x16C)`の**unsigned**閾値判定。従来T011 03:09資料の既存知見で再計上しない。
-  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

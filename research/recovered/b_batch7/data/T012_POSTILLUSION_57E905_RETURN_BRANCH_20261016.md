@@ -1,0 +1,15 @@
+# B-20261016-1616-01｜T012 幻覚合流後 57E905..57EB2F の追加Skill/派生処理と局所AL1帰還
+[DATE/TASK/STATUS] 2026-10-16 16時台 JST。T012主/T013参照。B限定 STATIC-X86 CANDIDATE。旧原作実機 Gameplay PASS0／新旧strict MATCH0／Task DONE増0。
+[EXE/PROVENANCE] 迫真0.67同梱EXEとSHA256一致の解析コピー rea_lab/targets/hakushin067_Vahren.exe をLocal python+pefile+capstoneで2局所窓だけREAD-ONLY確認。binary SHA256=e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187 (before/after同一)。B-owned opcode excerpt=exe/T012_57E905_57EB30_BRANCH_MAP_20261016.txt。window SHAは同excerptに記録。
+[ENTRY] B-20261016-1515-01既知の57E8CA Skill+9C非zeroまたは+A8!=+ACから57E905へ。57E907でEAX(+9C)非zeroなら57E90B Skill+8C参照→57E97D。zeroなら57E913 Skill+270で二分し、非zero 57E921..949でSkill+74・Unit+1E4D8由来算術/idiv、zero 57E94F..970でSkill+A8/+AC幅由来と40ED80の乱数。両者57E972/978 CALL40AFB0→57E97D合流。
+[RESOLVER] 57E97D以降は4051D0→Unit+1DCをECXに57E98B CALL4678A0、57E999で元Skill+26F byteを確認。==0は57E9A4..C4でUnit vtable+80を直接call→57EA9B。!=0はresolver結果+74==0で580280、非0で54F720を選び、いずれも57EA78..99 Unit vtable+80へ合流する（各callee正常retを条件とする）。
+[FLAGS/SPECIAL] 57E9CBのchild+74比較後57E9CF..D9のx87比較/FNSTSW AXは整数EFLAGSを変更しないため、57E9DB JNEはchild+74比較の結果で分岐する。さらにAHマスク44hのTEST/JPで後続580280または54F720への引数形態が枝分かれ。Skill+1D8のFP値・非有限・calleeの実作用はVERIFY。
+[OPTIONAL-TAIL] 57EA9Bで元Skillへ復帰。57EA9D Skill+F4非zeroなら402710→4678A0で派生対象を解決し、結果+74==0なら57EAF0 CALL580280、非0なら57EB17 CALL54F720、後段57BE30。+F4==0なら直接57EB1F CALL57BE30。57EB00/57EB29はAL=1でRET4。これは当該caller局所終了値であり射撃命中/HP変化や全callee正常帰還の保証ではない。
+[NEW/DEDUP] 既B-20261016-1411-01 MP→illusion bypass、B-20261016-1515-01 57E887 vector/57E8FE virtual、既B-20261013-1253-01 Unit vtable+80の579290実体候補、既T012§57BE30副作用は再採録しない。新規単位は未解析だった57E905～57EB2Fのbranch/callee選択/元Skill+F4 optional stage/AL1 returnを同一callerへ接続。
+[VERIFY/BOUNDARY] 579290になるのは既解析の特定Unit vtableの場合のみ（別型+80=544F80あり）。40AFB0/4678A0/580280/54F720/57BE30の実効果・正常帰還、Skill+26F/270/+F4のrawキー、0除算可能性、HP/MP refund・弾/命中・追加RNG cursorと実戦skill到達は未確定。
+[REIMPLEMENT] root Skill+9C/+270/A8/AC/74、Unit+1E4D8、40ED80 draw、selector 40AFB0、resolver 4678A0、root +26F→child+74→factory→Unit virtual80、root +F4→optional factory→postskill 57BE30→local AL1 のstageを条件付きreceiptとして保持。射撃成功・MP返還・runtime subtypeを推測補完しない。
+[GOLDEN-DESIGNED/NOT RUN] 元Skill+26F 0/非0、+F4 空/非空、合法child+74 0/正、幻覚有無、MP cost±1 を可達条件別に旧新同SAVE/SHA/seed/操作で可視Skill・対象・弾・HP/MP・再使用/次tick比較。内部virtual/fieldのみはINELIGIBLE。Gameplay PASS0/strict MATCH0。
+[NEXT] 元Skill+26F/+270/+F4の原作rawとparser既証拠の対応を限定照合。Unit runtime class別vtable+80実体、factory returnとpostskill副作用への接続、576E80/4E7ED0射撃latchは別優先P0。安全拒否0x5710C0..571500や過去書込拒否を別経路再試行しない。
+[INTEGRATION] B detail＋T012＋T013＋HANDOFF＋excerpt の5点読戻し一致後のみB限定STATIC READY。EのみMASTER公式統合。現時点MASTER cp164=561(A115/B196/C134/D116)をBから変更しない。既B1313 E-BLOCKED/0321+0611 HOLD/B1110 NOT READY据置。
+
+[EXISTING-PARSER-CROSSJOIN / SAME ID, NO NEW READY] B既READY B-20261013-1951-01（data/T011_NEXT_ORDER_INTERVAL_NATIVE_20261013.md）は原作raw next_order→0x59C3B5 Skill byte+0x270を確定済み。本件0x57E913は同じroot Skill byte+0x270を条件判定する。従ってこの後段callerでもnative compiled next_order slotを参照する点だけ追加照合。0x57E921のordinal/IDIVや0x40AFB0の実作用・有効スキルはVERIFY、既parser evidence/READY再計数0。

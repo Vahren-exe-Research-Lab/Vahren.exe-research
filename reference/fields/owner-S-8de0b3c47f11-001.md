@@ -52,6 +52,30 @@
 - [research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md 行 15](../../research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md?plain=1#L15-L15) — workerの `S` を0x005023EFでPUSH EDI完了時のESPと定義。出力localは `[S+0x14]=ptr1, [S+0x10]=bytes1, [S+0x1C]=ptr2, [S+0x18]=bytes2`。
   制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
 
+<a id="field-cc"></a>
+## S + 0xCC
+
+- [research/recovered/rea_batch7/reports/REA_20261027_09H_P0_D3DX_VIEWPORT_RESULT_STATIC.md 行 19](../../research/recovered/rea_batch7/reports/REA_20261027_09H_P0_D3DX_VIEWPORT_RESULT_STATIC.md?plain=1#L19-L19) — 交差点出力は`S+0xCC`。0x00559C1D `CALL EBX`の**直後**0x00559C1F `FLD [ESP+0xCC]`、0x00559C42 `FLD [ESP+0xD0]`でx/yを読む。NULL相当の失敗返却や交点出力未更新の場合でも原作側に明示的な直後ガードはない。交点不成立の実際の到達性、
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+<a id="field-d8"></a>
+## S + 0xD8
+
+- [research/recovered/rea_batch7/reports/REA_20261027_09H_P0_D3DX_VIEWPORT_RESULT_STATIC.md 行 18](../../research/recovered/rea_batch7/reports/REA_20261027_09H_P0_D3DX_VIEWPORT_RESULT_STATIC.md?plain=1#L18-L18) — 0x00559BCF, 0x00559BFEはPE IAT 0x006092DC=`D3DXVec3Unproject`をESIから呼ぶ。第1出力は`S+0xE4`、第2出力は`S+0xD8`。両方とも戻り値を条件分岐に使用せず、0x00559C1DのEBX（PE IAT 0x006092E4=`D3DXPlaneIn
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+<a id="field-e4"></a>
+## S + 0xE4
+
+- [research/recovered/rea_batch7/reports/REA_20261027_09H_P0_D3DX_VIEWPORT_RESULT_STATIC.md 行 18](../../research/recovered/rea_batch7/reports/REA_20261027_09H_P0_D3DX_VIEWPORT_RESULT_STATIC.md?plain=1#L18-L18) — 0x00559BCF, 0x00559BFEはPE IAT 0x006092DC=`D3DXVec3Unproject`をESIから呼ぶ。第1出力は`S+0xE4`、第2出力は`S+0xD8`。両方とも戻り値を条件分岐に使用せず、0x00559C1DのEBX（PE IAT 0x006092E4=`D3DXPlaneIn
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+<a id="field-f0"></a>
+## S + 0xF0
+
+- [research/recovered/rea_batch7/reports/REA_20261027_09H_P0_D3DX_VIEWPORT_RESULT_STATIC.md 行 14](../../research/recovered/rea_batch7/reports/REA_20261027_09H_P0_D3DX_VIEWPORT_RESULT_STATIC.md?plain=1#L14-L14) — `S`=各stdcall呼出し前の安定ESPとすると、0x005599E4の出力バッファ候補は`S+0xF0`。D3DXVec3Unproject呼出し0x00559BCF/0x00559BFEの第3引数用`LEA [ESP+0xFC]`（その時点で12バイトPUSH済み）も同じ`S+0xF0`に対応する。したがってV
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
 <a id="field-300"></a>
 ## S + 0x300
 

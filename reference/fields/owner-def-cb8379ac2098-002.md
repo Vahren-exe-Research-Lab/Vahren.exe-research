@@ -4,8 +4,26 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-e8"></a>
+## def + 0xE8
+
+- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 2267](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L2267-L2267) — 4. L = A0, B0, A1, B1, …（A = def+0xE8 が立っている def、B = それ以外）。
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 2291](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L2291-L2291) — ### 70.3 def+0xE8（前線フラグ、CONFIRMED）
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
 <a id="field-ec"></a>
 ## def + 0xEC
+
+- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 645](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L645-L645) — - 未解明のまま残るのは**入力側**だけ: 各 def の技能リスト def+0xEC を作る 0x58C0E0（skill/skill2・skillset 展開・乱数を含む）、`@mode_sdown`、`notalent_down`、`unit_status_hp`、consti map の初期値、レベル補正の
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 662](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L662-L662) — - 集合と vector は周ごとに空にする（0x573EA4..0x573F0A）。そのため周2の順序は**文字列昇順で重複なし**（std::less = バイト比較 0x402C40）。周0/1 は def+0xEC の順序。
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 704](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L704-L704) — - **tnok（仮の入力・静的予測）**: def+0xEC = DAT の unit `skill` リスト（ファイル順）、リーダー自身、配下なし、consti は空と**仮定**した場合:
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 714](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L714-L714) — - **まだ接続できない**: 部隊に属する Unit の最終値。def+0xEC の技能リスト（0x58C0E0）、consti map の初期値（Unit+0x13C）、`@mode_sdown` / `notalent_down` / `unit_status_hp`（0x46F4C0 / 0x463CA0）が未
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification

@@ -16,4 +16,10 @@
 - [research/recovered/b_batch3/T013_SUPPORT_EFFECT_54E0B0_CONTRACT_20261013.md 行 5](../../research/recovered/b_batch3/T013_SUPPORT_EFFECT_54E0B0_CONTRACT_20261013.md?plain=1#L5-L5) — [EFFECT OBJECT] 0x54E11E call0x550980（先行push5DWORDのgeometry/container引数）からEAXをEDIに受取り、0x54E128以降 EDI+0x5C/+0x58/+0x64/+0x88/+0x60 と位置+0x8C/+0x90、関連owner+0x98等を直
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+<a id="field-8c"></a>
+## word + 0x8C
+
+- [research/recovered/b_batch7/data/T012_HP_LIFEBAR_VTABLE_DISPATCH_20261013.md 行 6](../../research/recovered/b_batch7/data/T012_HP_LIFEBAR_VTABLE_DISPATCH_20261013.md?plain=1#L6-L6) — [CLASS SOURCE] B T013_AI.md元保存§constructor/RTTI：SimpleStaticUnit vtable0x63A8E4、SimpleUnit0x63A9E4。T011_DATA_MODEL.mdではSimpleUnit word+0x8C/8D=0x0001 / SimpleSt
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

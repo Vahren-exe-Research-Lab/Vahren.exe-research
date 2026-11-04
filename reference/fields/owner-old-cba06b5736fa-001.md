@@ -10,4 +10,7 @@
 - [research/recovered/b_batch3/T011_FOLLOW_COMPILER_RUSH_RESULT_LINK_NATIVE_20261027_20H.md 行 9](../../research/recovered/b_batch3/T011_FOLLOW_COMPILER_RUSH_RESULT_LINK_NATIVE_20261027_20H.md?plain=1#L9-L9) — [CONSUMER CROSS-JOIN] Rush update 0x55038F CMP DWORD [EAX+0x1D0],0（EAX=Skill ptr）；zero→0x5503BEでリンク処理skip。nonzeroなら結果ポインタEBPが非NULLかを0x550398/39Aで調べ、旧Rush+0x1F8が
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+- [research/recovered/b_batch7/data/T012_RUSH_COMPILED_INTERVAL_ATTEMPT_LINK_NATIVE_20261027_19H.md 行 10](../../research/recovered/b_batch7/data/T012_RUSH_COMPILED_INTERVAL_ATTEMPT_LINK_NATIVE_20261027_19H.md?plain=1#L10-L10) — [NEW OPTIONAL LINKAGE] 0x55038F CMP DWORD[Skill+0x1D0],0、非0時0x550398 EBP(result)の非NULLを確認し、Rush+0x1F8 old非NULLなら0x5503A6 [result+0x194]=old、0x5503B2 [old+0x198]
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

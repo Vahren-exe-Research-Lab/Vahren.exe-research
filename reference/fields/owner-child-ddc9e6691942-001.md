@@ -4,11 +4,26 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-4"></a>
+## child + 0x4
+
+- [research/recovered/b_batch7/data/T012_HEAL_CHILD_POOL_41E1D0_CONTRACT_20261013.md 行 6](../../research/recovered/b_batch7/data/T012_HEAL_CHILD_POOL_41E1D0_CONTRACT_20261013.md?plain=1#L6-L6) — [REUSE RETURN] 0x41E276 sourceDest [ESP+0x14]→ECX、record EAX(既存child)を保持し、0x41E27B [child+0x8]=X（EBP）、0x41E27F [child+0xC]=Y（EBX）、0x41E282 [child+0x4]=sourceDes
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+<a id="field-8"></a>
+## child + 0x8
+
+- [research/recovered/b_batch7/data/T012_HEAL_CHILD_POOL_41E1D0_CONTRACT_20261013.md 行 6](../../research/recovered/b_batch7/data/T012_HEAL_CHILD_POOL_41E1D0_CONTRACT_20261013.md?plain=1#L6-L6) — [REUSE RETURN] 0x41E276 sourceDest [ESP+0x14]→ECX、record EAX(既存child)を保持し、0x41E27B [child+0x8]=X（EBP）、0x41E27F [child+0xC]=Y（EBX）、0x41E282 [child+0x4]=sourceDes
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
 <a id="field-c"></a>
 ## child + 0xC
 
 - [research/recovered/b_batch3/T011_SUMMON_CALLER_GROUP_PROVENANCE_NATIVE_20261027_15H.md 行 13](../../research/recovered/b_batch3/T011_SUMMON_CALLER_GROUP_PROVENANCE_NATIVE_20261027_15H.md?plain=1#L13-L13) — [GOLDEN] 無改変ver0.67 EXE・KARATE_X20改変前DAT・同一SAVE/MAP/input/RNGを固定。4 caller系の召喚条件別にS/H/effect+0x7C、child+0xC、selector、group EDI、child+0x1D0、group list、可視出現・EXP帰属を
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch7/data/T012_HEAL_CHILD_POOL_41E1D0_CONTRACT_20261013.md 行 6](../../research/recovered/b_batch7/data/T012_HEAL_CHILD_POOL_41E1D0_CONTRACT_20261013.md?plain=1#L6-L6) — [REUSE RETURN] 0x41E276 sourceDest [ESP+0x14]→ECX、record EAX(既存child)を保持し、0x41E27B [child+0x8]=X（EBP）、0x41E27F [child+0xC]=Y（EBX）、0x41E282 [child+0x4]=sourceDes
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
 <a id="field-14"></a>
 ## child + 0x14

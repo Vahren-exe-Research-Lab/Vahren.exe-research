@@ -4,6 +4,51 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-14c"></a>
+## Unit + 0x14C
+
+- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 673](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L673-L673) — 2. `movetype` → Unit+0x14C = 技能の `add`（+0x13C、0x59A79B..0x59A7C8）（0x5743C9..0x574407）
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 737](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L737-L737) — その後、0x571B70 が Unit+0x168 = summon_max、Unit+0x13C = def の consti のコピー（0x4C1340）、Unit+0x14C = def の movetype を設定し、最後に 0x573BD0 を呼ぶ（§22/§23）。
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+<a id="field-15c"></a>
+## Unit + 0x15C
+
+- [research/recovered/b_batch5/data/T011_LEVELUP_11FIELD_RECALC_CACHE_GATE_20261021_17H.md 行 16](../../research/recovered/b_batch5/data/T011_LEVELUP_11FIELD_RECALC_CACHE_GATE_20261021_17H.md?plain=1#L16-L16) — 7. `0x58AFA0`の保存擬似C前段は`(local_64==0) \|\| (Unit+0x168 < local_18)`でloopを抜け、成立しない場合に`0x58C0E0`へ進む。直後の`0x469390()`非zero枝でtree sentinelと見られる`Unit+0x15C`指す構造を初期化し、`Un
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
+<a id="field-160"></a>
+## Unit + 0x160
+
+- [research/recovered/b_batch5/data/T011_LEVELUP_11FIELD_RECALC_CACHE_GATE_20261021_17H.md 行 16](../../research/recovered/b_batch5/data/T011_LEVELUP_11FIELD_RECALC_CACHE_GATE_20261021_17H.md?plain=1#L16-L16) — 7. `0x58AFA0`の保存擬似C前段は`(local_64==0) \|\| (Unit+0x168 < local_18)`でloopを抜け、成立しない場合に`0x58C0E0`へ進む。直後の`0x469390()`非zero枝でtree sentinelと見られる`Unit+0x15C`指す構造を初期化し、`Un
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
+<a id="field-168"></a>
+## Unit + 0x168
+
+- [research/recovered/b_batch5/data/T011_LEVELUP_11FIELD_RECALC_CACHE_GATE_20261021_17H.md 行 10](../../research/recovered/b_batch5/data/T011_LEVELUP_11FIELD_RECALC_CACHE_GATE_20261021_17H.md?plain=1#L10-L10) — 3. レベル上限を満たす場合、`Unit+0x168`を先に1増加し、11個のフィールドへの**ポインタ**をstackに構築する。候補集合は`Unit+{0x178,0x17C,0x180,0x184,0x188,0x18C,0x190,0x194,0x198,0x19C,0x1A0}`（計11）。
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
+- [research/recovered/b_batch5/data/T011_LEVELUP_11FIELD_RECALC_CACHE_GATE_20261021_17H.md 行 16](../../research/recovered/b_batch5/data/T011_LEVELUP_11FIELD_RECALC_CACHE_GATE_20261021_17H.md?plain=1#L16-L16) — 7. `0x58AFA0`の保存擬似C前段は`(local_64==0) \|\| (Unit+0x168 < local_18)`でloopを抜け、成立しない場合に`0x58C0E0`へ進む。直後の`0x469390()`非zero枝でtree sentinelと見られる`Unit+0x15C`指す構造を初期化し、`Un
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
+- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 672](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L672-L672) — 1. `summon_max` → Unit+0x168 += 値（0x57436C..0x574399）
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 737](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L737-L737) — その後、0x571B70 が Unit+0x168 = summon_max、Unit+0x13C = def の consti のコピー（0x4C1340）、Unit+0x14C = def の movetype を設定し、最後に 0x573BD0 を呼ぶ（§22/§23）。
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 769](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L769-L769) — - Unit+0x168 summon_max = 0x585AD0(def, "summon_max")。0 なら `unit_summon_min`（0x46F4C0、既定値 1）、負なら 0（0x5729C0..0x572A28）。
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+<a id="field-16c"></a>
+## Unit + 0x16C
+
+- [research/recovered/b_batch5/data/T011_LEVELUP_11FIELD_RECALC_CACHE_GATE_20261021_17H.md 行 8](../../research/recovered/b_batch5/data/T011_LEVELUP_11FIELD_RECALC_CACHE_GATE_20261021_17H.md?plain=1#L8-L8) — 1. `0x58A650`入口はGhidra擬似Cで`*(uint*)(Unit+0x170) <= *(uint*)(Unit+0x16C)`の**unsigned**閾値判定。従来T011 03:09資料の既存知見で再計上しない。
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
 <a id="field-170"></a>
 ## Unit + 0x170
 
@@ -60,6 +105,9 @@
 
 - [research/recovered/b_batch3/T028_THIRD_SELECTOR_CALLER_RETURN_GATE_NATIVE_20261030_10H.md 行 10](../../research/recovered/b_batch3/T028_THIRD_SELECTOR_CALLER_RETURN_GATE_NATIVE_20261030_10H.md?plain=1#L10-L10) — 0x447BF2 配列候補取得→0x447BF5 CMP BYTE [Unit+0x18610],0；0なら0x447BFE EAX=[Unit+0x1C8]→0x447C04 CALL0x583CF0、非ゼロ返却候補で0x447C21 EDI=EAX。例外/他pathはVERIFY。
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch7/data/T012_POSTILLUSION_RUSH_POSTSKILL_STATE_CROSSJOIN_20261017.md 行 6](../../research/recovered/b_batch7/data/T012_POSTILLUSION_RUSH_POSTSKILL_STATE_CROSSJOIN_20261017.md?plain=1#L6-L6) — [FACT-POST-LATE] VA57BFB8 Unit+0x1C8 linkedのbyte+0x77/+0x75が両0なら57C14C共通epilogueへskip（この局所ではmsgおよびSkill+0x26C後段をskip）。非0ならmsg@/msg fallback候補の文字列を調べ、非空時だけ57C0FC
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
 - [research/recovered/b_reports/T011_T024_GROUP34_DUAL_BUCKET_ELIGIBILITY_NATIVE_20261101_11H.md 行 33](../../research/recovered/b_reports/T011_T024_GROUP34_DUAL_BUCKET_ELIGIBILITY_NATIVE_20261101_11H.md?plain=1#L33-L33) — 分岐を決めるのは、先頭Unitに関連するデータ `Unit+0x1C8` が指す領域の `+0xE8` と、`0x529043` の整数変換結果を96 (`0x60`) と比較する `0x52904C/0x529057` のフラグである。
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
@@ -120,6 +168,18 @@
 
 - [research/recovered/b_batch4/data/B_T012_T024_VOICE_EXPIRY_ROUTING_OFFLINE_20261022_1210.md 行 14](../../research/recovered/b_batch4/data/B_T012_T024_VOICE_EXPIRY_ROUTING_OFFLINE_20261022_1210.md?plain=1#L14-L14) — 2. **重要な新しい接続**：`FUN_0057B380`（VA `0x0057B380`, Ghidra size 1248）は `Unit+0x1DC` を参照し、`0x0057B453 → FUN_00469A20` を呼ぶ。`FUN_00469A20`（VA `0x00469A20`, size 2458）は
   制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+- [research/recovered/b_batch7/data/T012_HP_LIFEBAR_CONTEXT_HEIGHT_20261013.md 行 4](../../research/recovered/b_batch7/data/T012_HP_LIFEBAR_CONTEXT_HEIGHT_20261013.md?plain=1#L4-L4) — [NATIVE GETTER] B-20261013-1850-01保存一次 native `exe/T012_HEAL_HP_POST_577100_NATIVE_20261013.txt` 0x577184 `EDX=[Unit+0x1DC]` owner context、0x57718A PUSH 0x32=50
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/b_batch7/data/T012_KIND2_VS_ALLFUNC_CHILD_RUSH_ROUTE_20261015.md 行 5](../../research/recovered/b_batch7/data/T012_KIND2_VS_ALLFUNC_CHILD_RUSH_ROUTE_20261015.md?plain=1#L5-L5) — [CALLER A / ALLFUNC] 0x5472E7..0x547350 は Skill+0x100/+0x104 の0x1C-stride子recordを0x402710経由でコピーし、Unit+0x1DC をECXとして 0x4678A0 を呼ぶ。0x547357 で returned Skill+0x74
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/b_batch7/data/T012_KIND2_VS_ALLFUNC_CHILD_RUSH_ROUTE_20261015.md 行 7](../../research/recovered/b_batch7/data/T012_KIND2_VS_ALLFUNC_CHILD_RUSH_ROUTE_20261015.md?plain=1#L7-L7) — [CALLER B / KIND2] 0x57EFDE..0x57F011 は同じ +0x100/+0x104 子recordを0x402710→ECX=Unit+0x1DC→0x4678A0で解決。0x57F011 の +0x74==0 は 0x57F02E/0x57F045 の 0x580280 branch、非z
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/b_batch7/data/T012_KIND2_VS_ALLFUNC_CHILD_RUSH_ROUTE_20261015.md 行 12](../../research/recovered/b_batch7/data/T012_KIND2_VS_ALLFUNC_CHILD_RUSH_ROUTE_20261015.md?plain=1#L12-L12) — [NEXT] 既許可B-owned Skill+0x100/+0x104 compiled producer・Unit+0x1DC resolver 0x4678A0 context・合法原作属性と所持者の特定を優先。T012 final damage/MP fallback/latch/4E7ED0、T013 tar
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3543](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3543-L3543) — \| **E = engine = G+0x504** \| VA 0x8BE7F4 \| 戦闘・戦略の資料にある「GM / engine + 0x1EEC3C、+0x1EEC44、+0x1E8630 …」の全部 \| 静的初期化 `0x553F60(&0x8BE7F4)`。Unit 初期化で `Unit+0x1E0 = G+
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
@@ -241,6 +301,27 @@
 - [research/recovered/b_batch3/T024_TEMP_SELECTION_UI_ADAPTER_NATIVE_20261025_22H.md 行 23](../../research/recovered/b_batch3/T024_TEMP_SELECTION_UI_ADAPTER_NATIVE_20261025_22H.md?plain=1#L23-L23) — Next P0: discover producer for Troop+0x1D/+0x1C and Unit+0x45D=1, 0x528700 owner+358 alias/lifetime, 0x56BA80 virtual-slot effects, and source-level AI target s
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+<a id="field-800"></a>
+## Unit + 0x800
+
+- [research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md 行 4](../../research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md?plain=1#L4-L4) — [ABSTRACT INPUT] 既保存 `exe/T012_KNOCK_CORE_DUMP.txt` の0x578F8C/578FA3/578FBAはpush kind=4/0/6、push &Unit+0x800→call4E02A0。別caller0x578EF0はWork `native_heal_mutati
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md 行 11](../../research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md?plain=1#L11-L11) — [REIMPLEMENT/STAGES] receiptにはUnit pointer、Unit+0x800 container ptr、kind index(5/1/3/2/4/0/6)、old&new Unit+878、+874 end cursor、+880 0x80000008 sentinel、`49ED30`
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md 行 5](../../research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md?plain=1#L5-L5) — [ENTRY/KEY] 4DFD80はEDI=Unit+0x800 container-like structure、stack arg1 status-index DWORD（RET4）。4DFD96 call565780 and4DFDA0 call479760の戻・byte initializeを経て4DFDA5
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/b_batch7/data/T012_REFRESH_TREE_RANGE_4E1FA0_CONTRACT_20261013.md 行 8](../../research/recovered/b_batch7/data/T012_REFRESH_TREE_RANGE_4E1FA0_CONTRACT_20261013.md?plain=1#L8-L8) — [WORK/REIMPLEMENT] Work `run_heal_refresh` active nonemptyでremove_entryが未完成。resume receiptは`Unit+0x800`, `header+0x70`, key[lookup], outPair before/after, candi
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+<a id="field-878"></a>
+## Unit + 0x878
+
+- [research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md 行 4](../../research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md?plain=1#L4-L4) — [INBOUND CALLS] B-20261013-2034-62の4E02A0はfound entryへ4E1FA0→510850後、container=Unit+0x800のDWORD+0x78（Unit+0x878）が非0なら4E036D call4DFD80(kind derived from contain
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
 <a id="field-928"></a>
 ## Unit + 0x928
 
@@ -252,6 +333,9 @@
 
 - [research/recovered/b_batch6/data/T012_FLASH_DAMAGE_WRAPPER_576F10_CONTRACT_20261013.md 行 5](../../research/recovered/b_batch6/data/T012_FLASH_DAMAGE_WRAPPER_576F10_CONTRACT_20261013.md?plain=1#L5-L5) — [RING + LOWER-CALL] eligible Unitの場合0x576F24 Unit+185F8++、>=8時0x576F33 Unit+185F8=0、0x576F43 newIndex×0x264、0x576F50 EDI=Unit+0x928+newIndex*0x264 = R。0x576F3D
   制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
+
+- [research/recovered/b_batch7/data/T012_HEAL_POST_EFFECT_CALLER_551C7F_20261013.md 行 6](../../research/recovered/b_batch7/data/T012_HEAL_POST_EFFECT_CALLER_551C7F_20261013.md?plain=1#L6-L6) — [OPTIONAL-CHILD] ctx+E!=0、Skill+0x248 signed>0、Unit+0x1867C==0かつUnit+0x8D==0の場合、0x551CBEでUnit+0x185F8++、>=8なら0に戻し、0x551CD9で8×(? exact stride0x264) のslot pointer
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
 <a id="field-185f8"></a>
 ## Unit + 0x185F8
@@ -295,6 +379,12 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1673](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1673-L1673) — - talent 以外は Unit+0x18614==0。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+<a id="field-1863c"></a>
+## Unit + 0x1863C
+
+- [research/recovered/b_batch7/data/T012_MODE0_LATE_MP_FALLBACK_POSTSELECT_CROSSJOIN_20261014.md 行 7](../../research/recovered/b_batch7/data/T012_MODE0_LATE_MP_FALLBACK_POSTSELECT_CROSSJOIN_20261014.md?plain=1#L7-L7) — [STEP4/OUTER] callerの0x57E5D8 jmp0x57E5EC→0x57E5EC test al→0x57E5EE JNE0x57E610。AL1によって0x57E610 [Unit+0x1863C] Skill取得→0x57E618 call0x577600→0x57E61F call0x571A
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
 <a id="field-18650"></a>
 ## Unit + 0x18650
 
@@ -321,77 +411,5 @@
 
 - [research/recovered/symbol_sources/T013_UNIT18654_LIST_WRITER_ERASE_NATIVE_20261031_20H.md 行 14](../../research/recovered/symbol_sources/T013_UNIT18654_LIST_WRITER_ERASE_NATIVE_20261031_20H.md?plain=1#L14-L14) — [KB_CANDIDATE] ID=B-20261031-20H-T013-UNIT18654-LIST-WRITER-REMOVE-01; owner=B/T013; VA=0x574D70/0x574E30/0x56F880/0x577600/0x577A20/0x57DD10; CALL=0x4AB946/0x4
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation
-
-<a id="field-18654"></a>
-## Unit + 0x18654
-
-- [research/recovered/b_reports/T013_RNG_CONTEXT_CARRY_NO_DIRECT_CMP_NATIVE_20261031_18H.md 行 18](../../research/recovered/b_reports/T013_RNG_CONTEXT_CARRY_NO_DIRECT_CMP_NATIVE_20261031_18H.md?plain=1#L18-L18) — [RECOVERY/STATE/NEXT] 今回の新規安全拒否0/接続障害0、旧HOLD21再提出0、GitHub raw保全gap OPEN。次はcontext+0x28を直接読む所有関数/書込み元、Unit+0x18654 writer、最後の対象選択consumerを既研究IDと照合して絞り込む。T011召喚EX
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
-
-- [research/recovered/e_reports/T020_E_T013_BUCKET_MERGE_ACCEPTANCE_20261031_16H.md 行 15](../../research/recovered/e_reports/T020_E_T013_BUCKET_MERGE_ACCEPTANCE_20261031_16H.md?plain=1#L15-L15) — - Next priority: legal G0/G1/G2 receipts; only then old/new data match. B owner to verify Unit+0x18654 count producer, list input ABI, secondary comparator and
-  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
-
-- [research/recovered/e_reports/T020_E_T013_DRAIN_RESTORE_CAP_ACCEPTANCE_20261031_17H.md 行 13](../../research/recovered/e_reports/T020_E_T013_DRAIN_RESTORE_CAP_ACCEPTANCE_20261031_17H.md?plain=1#L13-L13) — - Next P0: legally sourced G0/G1/G2 receipt; then B owner verifies actual list ownership and Unit+0x18654 producer, final target+tick. This report is STATIC BYT
-  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
-
-- [research/recovered/e_reports/T020_E_T013_KIND8_PREQUEUE_ACCEPTANCE_20261031_15H.md 行 11](../../research/recovered/e_reports/T020_E_T013_KIND8_PREQUEUE_ACCEPTANCE_20261031_15H.md?plain=1#L11-L11) — - Source offset contract: 0x577DC7 pushes EBP from Unit+0x18650; the queue's input+4 maps conditionally to Unit+0x18654. Native structure typing, actual valid c
-  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
-
-- [research/recovered/e_reports/T020_E_T013_KIND8_PREQUEUE_ACCEPTANCE_20261031_15H.md 行 17](../../research/recovered/e_reports/T020_E_T013_KIND8_PREQUEUE_ACCEPTANCE_20261031_15H.md?plain=1#L17-L17) — - Kind8 add-on fixture only if legal UI reachability: capture original/clone with same EXE+DAT+SAVE/MAP+input+RNG initial state; compare emitted visible action/
-  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
-
-- [research/recovered/e_reports/T020_E_T013_KIND8_PREQUEUE_ACCEPTANCE_20261031_15H.md 行 25](../../research/recovered/e_reports/T020_E_T013_KIND8_PREQUEUE_ACCEPTANCE_20261031_15H.md?plain=1#L25-L25) — - Next P0: acquire same-run G0/G1/G2; independently verify original 0x579EB0→0x57A830 and Unit+0x18654 count producer, x87 converted payload and legal visible e
-  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
-
-- [research/recovered/symbol_sources/T013_BUCKET_LIST_MERGE_COMPARATOR_NATIVE_20261031_16H.md 行 15](../../research/recovered/symbol_sources/T013_BUCKET_LIST_MERGE_COMPARATOR_NATIVE_20261031_16H.md?plain=1#L15-L15) — [KB_CANDIDATE] 研究ID=本見出し、owner B/T013、VA0x579EB0/0x579F04/0x579FF9/0x57A097/0x57A14D/0x57A830/0x5A3EA0/0x4C5800、CALL siteは[GRAPH]、offset Unit+0x18654/list+4、can
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation; byte windows use inclusive endpoints as corrected current REF; record+0x28 and candidate+0xA14 must remain distinct
-
-- [research/recovered/symbol_sources/T013_INPUT_DRAIN_RESTORE_LIST_CAP_NATIVE_20261031_17H.md 行 20](../../research/recovered/symbol_sources/T013_INPUT_DRAIN_RESTORE_LIST_CAP_NATIVE_20261031_17H.md?plain=1#L20-L20) — [NEXT P0] 0x57A16Cのinput-vs-bin ownership、0x5A3DF0 record+0x28 consumer、Unit+0x18654 writer、最終target選出consumerをread-only特定。T011召喚R→親恒久EXP、T012 damage/status、T02
-  制約・訂正　Historical STATIC/INFERRED/VERIFY and Golden0 preserved; no native/runtime revalidation; personal absolute path prefix replacement count1; all technical content retained; original unchanged; probes and native evidence not followed
-
-- [research/recovered/symbol_sources/T013_KIND8_RANDOM_PAYLOAD_QUEUE_NATIVE_20261031_15H.md 行 14](../../research/recovered/symbol_sources/T013_KIND8_RANDOM_PAYLOAD_QUEUE_NATIVE_20261031_15H.md?plain=1#L14-L14) — [GOLDEN NOT RUN] 無改変原作EXE、空手20倍変更前の合法DAT、同一SAVE/MAP/入力/RNG初期状態で(1) Unit+0x18654=0/1/2以上、(2) kind8成立/不成立、(3) Unit+0x1A4/+0x134..0x138と+0x8C/+0x1F8/+0x1F9、(4) 乱数・
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation
-
-<a id="field-1867c"></a>
-## Unit + 0x1867C
-
-- [research/recovered/b_batch2/T028_RETREAT_OK_QUEUE_DRAIN_ELIGIBILITY_NATIVE_20261029_19H.md 行 14](../../research/recovered/b_batch2/T028_RETREAT_OK_QUEUE_DRAIN_ELIGIBILITY_NATIVE_20261029_19H.md?plain=1#L14-L14) — - 0x5694E0実ASMは入力EAXの+0x0C..+0x10内側Unit pointer配列を走査し、Unit+0x1867C==0かつ+0x1867E==0が一件でも存在する場合AL=0、存在しなければAL=1（空配列も1）。従って外側対象の一つが未処理eligible Unitを持てばstate4書込を抑止す
-  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
-
-- [research/recovered/b_batch3/B_T012_T013_VSLOT70_LIVE_VECTOR_OFFLINE_20261023_1109.md 行 34](../../research/recovered/b_batch3/B_T012_T013_VSLOT70_LIVE_VECTOR_OFFLINE_20261023_1109.md?plain=1#L34-L34) — 4つの関数それぞれに、`Unit+0x1867C`のbyte状態を先に検査し、処理する経路で `Unit+0x90 -= incoming_amount` が存在する。実バイト上の確認点：
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_batch3/B_T012_T013_VSLOT70_LIVE_VECTOR_OFFLINE_20261023_1109.md 行 75](../../research/recovered/b_batch3/B_T012_T013_VSLOT70_LIVE_VECTOR_OFFLINE_20261023_1109.md?plain=1#L75-L75) — 原作EXE指定SHA・同一DAT/MAP/SAVE・固定seed/RNG状態・同一Unit/Skill条件で、4対象型に対する`+0x70`入口/HP変化/副作用を分ける。`Unit+0x1867C`=0/非0、HP=正/境界/0、入力0/1/0xF4240/0xF4241を安全に再現可能な合法状況だけで確認。ターゲッ
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md 行 17](../../research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md?plain=1#L17-L17) — - `0x56928C`で`group+0x34=0`に初期化し、メンバーポインタ配列 `group+0xC..+0x10` を巡回する。`Unit+0x1867C!=0`を除外し、生存扱いのUnit数を`n`とする。
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md 行 32](../../research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md?plain=1#L32-L32) — - `0x5284A0`では入力Unitが非NULLで `Unit+0x8C==0`、`Unit+0x1F8!=0`、`Unit+0x1867C==0`、`Unit+0x1D0!=0`、`Unit+0x1867E==0`、`Unit+0x1FA==0` の条件で `0x5284E2→0x568710` の後 `0x52
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_batch3/T013_MODE2_ALT_DUALFLAG_AND_MODE3_NATIVE_20261030_15H.md 行 13](../../research/recovered/b_batch3/T013_MODE2_ALT_DUALFLAG_AND_MODE3_NATIVE_20261030_15H.md?plain=1#L13-L13) — 0x44BFA1 CMP BYTE [Unit+0x1867C],0 / 0x44BFAA CMP BYTE [Unit+0x1867E],0: both zero needed to take 0x44BFB1 JE 0x44BFCA. At 0x44BFCA selected pointer (or EAX=0 a
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md 行 9](../../research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md?plain=1#L9-L9) — - 0x515091/94 Unit vector要素を順次取得し、0x515097 CMP BYTE Unit+0x1867C,0 / 0x51509E JNE 0x5150C9 で除外。+0x1867Eの検査は当関数には無し。
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md 行 22](../../research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md?plain=1#L22-L22) — - Golden条件: x20前DATと無改変原EXEの同SAVE/MAP/input/RNGで、managerとgroupのUnit vector(0/1/複数)、Unit+0x1867C/+0x1D0、UnitData+0x1C4、前後+0x88/+0x8C/+0xB0/+0xD0、FPU status、0x449
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_batch3/T028_SPATIAL_GRID_DUAL_ERASE_AND_MOVE_NATIVE_20261026_09H.md 行 11](../../research/recovered/b_batch3/T028_SPATIAL_GRID_DUAL_ERASE_AND_MOVE_NATIVE_20261026_09H.md?plain=1#L11-L11) — - 死亡経路: SimpleStaticUnit `0x55B043 Unit+0x1867C=1` → `0x55B04A CALL 0x49D9F0`（既08H tree削除） → `0x55B04F EAX=[[Unit+0xC]+8]` → `0x55B055 CALL 0x4E4F60`。後者は別の占有格子解
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_batch4/data/B_T012_T013_PERSON_POOL_LIFECYCLE_OFFLINE_20261023_1215.md 行 30](../../research/recovered/b_batch4/data/B_T012_T013_PERSON_POOL_LIFECYCLE_OFFLINE_20261023_1215.md?plain=1#L30-L30) — - `0x005684B0`は、Ghidra擬似C上では`unaff_EDI+0x0C / +0x10` のグループ内vectorを走査し、フラグ`+0x1D`が立つ経路では `Unit+0x1867C != 0` の個体を`memcpy`で詰め、endを4バイト縮める。**対象はグループvector**であって、前節
-  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
-
-- [research/recovered/b_batch4/data/B_T012_T013_PERSON_POOL_LIFECYCLE_OFFLINE_20261023_1215.md 行 44](../../research/recovered/b_batch4/data/B_T012_T013_PERSON_POOL_LIFECYCLE_OFFLINE_20261023_1215.md?plain=1#L44-L44) — **優先検索：** `callers/related 0x005149C0, 0x00514AA0`（一括クリアをいつ呼ぶか）、`callers 0x00514F10`、`function 0x00547DB0`の`owner+0x48/+0x4C`全writerと`+0x1D4`参照先のPerson同定、`0x005
-  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
-
-- [research/recovered/b_batch4/data/B_T024_T012_AI_TIMER_EXPIRY_OFFLINE_20261022_1112.md 行 14](../../research/recovered/b_batch4/data/B_T024_T012_AI_TIMER_EXPIRY_OFFLINE_20261022_1112.md?plain=1#L14-L14) — 3. `0x00449500`ではContextのUnit候補ベクタ`+0x78..+0x7C`を走査し、`Unit+0x1867C=0`、`+0x1867E=0`、`+0xC0/+0xC8/+0xD0>=0`を満たす候補について `0x004496AF→0x005D1B80`、`0x004496B9→0x0040ED
-  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
-
-- [research/recovered/b_batch6/data/T012_FLASH_DAMAGE_HEAL_CALL_ORDER_20261013.md 行 6](../../research/recovered/b_batch6/data/T012_FLASH_DAMAGE_HEAL_CALL_ORDER_20261013.md?plain=1#L6-L6) — [HEAL DIFFERENCE] 同じ保存Skill+0x248を読むheal/status attr core0x551490内は、入口Skill+230 chance gate0x5514D7..55150B、対象選別/抵抗/値変更などの先行stage後、0x551C6A call551E50、0x551C7F
-  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

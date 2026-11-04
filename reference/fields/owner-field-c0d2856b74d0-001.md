@@ -16,6 +16,12 @@
 - [research/recovered/b_batch5/data/T011_T012_MISSILE_SPECIAL_MP_UNIT_FIXTURE_20261013.md 行 21](../../research/recovered/b_batch5/data/T011_T012_MISSILE_SPECIAL_MP_UNIT_FIXTURE_20261013.md?plain=1#L21-L21) — [CROSS-LANE-NOTE-20261013-1906 / VERIFY ONLY / SAME B-20261013-1856-02] A owner read-only `data/T005_FORMAL_GRAMMAR.md` generic parser `0x505210` treats literal
   制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
 
+<a id="field-70"></a>
+## field + 0x70
+
+- [research/recovered/b_batch7/data/T012_REFRESH_TREE_RANGE_4E1FA0_CONTRACT_20261013.md 行 10](../../research/recovered/b_batch7/data/T012_REFRESH_TREE_RANGE_4E1FA0_CONTRACT_20261013.md?plain=1#L10-L10) — [VERIFY/NEXT] exact tree field+0x70/+0x74 sentinel and lower/upper pair semantics、key producer、510850 pair removal/erase and 49ED30 initial presence cursor、valu
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
 <a id="field-278"></a>
 ## field + 0x278
 

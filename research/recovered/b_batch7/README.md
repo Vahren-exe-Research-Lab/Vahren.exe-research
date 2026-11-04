@@ -1,0 +1,15 @@
+# B batch 7 authored-report recovery
+
+Checked 2026-11-05 against the literal approved 45-path selection at repository base b070349. This directory recovers 45 distinct new authored Markdown bodies: 44 exact byte copies and one complete privacy-only derivative. Content variants:0; exact aliases:0; deferred:0. No prior source was overwritten.
+
+Every current source SHA256 and byte length matches the approved selection; every current source SHA256 matches RESEARCH_SOURCE_CATALOG.tsv. All45 source hashes are distinct. Baseline research/recovered/RECOVERY_LEDGER.tsv (679 rows) and SOURCE_MANIFEST.tsv (1859 rows) contain no accepted source exact destination hash or same-filename match. This is identity checking against those baselines, not proof of complete semantic nonduplication. METADATA_RECEIPTS.tsv hashes the exact baseline inputs; SELECTION_RECEIPT.tsv records the literal approved scope. IDENTITY_RECEIPTS.tsv records all45 accepted SHA proofs and complete line review ranges. VERIFICATION.tsv records per-source checks. REPORT_LEDGER.tsv uses the recovery root nine-column schema. DEFERRED.tsv is header-only.
+
+Only Rush reset/first-tick1412 contains a personal absolute root; its complete derivative replaces that one token with [RESEARCH_ROOT]. TRANSFORM_RECEIPTS.tsv records the original token SHA256, zero-based UTF-8 byte offset, replacement hash and untouched prefix/suffix proofs. No original personal token is recorded.
+
+These are historical authored claims. STATIC/INFERRED/VERIFY, limited READY, NOT READY, Golden0, strict0 and synthetic test counts retain their original dates and limitations. No linked native, script, JSON, log, EXE, SQLite, HANDOFF, DAT or ZIP body was opened or executed. No runtime, Golden, new READY, E integration or task-completion credit is created. Excluded5710C0..571500,58021E..580340,5769B0,downstream5767B0,wholeFUN00580280,rsc3/rsc4 property tables andT029 postbattle castle-hold evidence were not recovered. Accepted reports only mention exclusions historically or keep them as opaque dependencies; their own independent caller/numeric/heal/presence subjects remain bounded.
+
+Corrections remain complete: HP vtable dispatch20261024 identifies63A9E4 as Unit and63A4BC as SimpleUnit; mode0 early/late flag partition20261018 corrects the earlier gate condition and preserves original2214 NOT READY; mode1 missile2219 correction overrides earlier READY and forbids E integration for2217. Sparse presence1917 corrects18H tail suspicion by identifying an internal5B gap. Caller5501A0 studies do not recover580280 internals; quota attempts are not successful effect counts. Initializer-to-first-tick and logical-to-physical lifetime links remain conditional, with runtime object identity and virtual update unresolved. Current repository REF material takes precedence over conflicting dated claims.
+
+Only this batch directory was written. Original research, root/shared ledgers, shared code, dictionaries, builds and Git were unchanged by this worker.
+
+[Reviewed bodies](data/) · [Ledger](REPORT_LEDGER.tsv) · [Identity proofs](IDENTITY_RECEIPTS.tsv)

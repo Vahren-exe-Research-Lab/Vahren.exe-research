@@ -1,0 +1,13 @@
+# B-20261015-1518-01｜T012/T013 mode0 kind2 root・child・extraのsentinel別引数経路（限定STATIC）
+[DATE/OWNER] 2026-10-15 15:18 JST。T012 primary、T013 crossref。既存B所有保存x86の読み取り専用静的照合。Task DONE+0、原作Gameplay actual PASS0、新旧strict MATCH0。
+[TARGET] original Vahren.exe相当 SHA256=e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187。既保存 exe/T013_SKILL_HANDLERS_BOUNDED_NATIVE_20261013.txt VA57EF44..57F170のみ（新規逆解析・原本EXE実行0）。
+[ROOT/FACT] 57EF44でroot Skill+74を検査。zero側57EF4C sentinel比較[ESP+1C],0x80000008：一致→57EF5F xor ECX,ECX→57EF61 call580280、非一致→57EF74 LEA ECX,[ESP+28]→57EF78同callee。nonzero側57EF82 sentinel比較：一致→57EF91 xor EAX,EAX→57EFA1 call54F720、非一致→57EF9A LEA EAX,[ESP+20]→57EFA1。
+[CHILD/FACT] 57F001 copy→57F00C resolver→57F011 result+74判定。zero側57F019 sentinel比較：一致→57F02C xor ECX,ECX→57F02E call580280、非一致→57F041 LEA ECX,[ESP+28]→57F045。nonzero側57F04F sentinel比較：一致→57F05F xor EAX,EAX→57F06F call54F720、非一致→57F069 LEA EAX,[ESP+24]→57F06F。
+[EXTRA/FACT] Skill+F4==0は57F0B1 JE57F168でoptionalをskip。非0時57F0ADでESI=[ESP+38]を取得し57F0F2でpush ESI（root/childと異なる引数形）、57F0EC result+74判定。zero側57F0F7 sentinel比較で57F103 xor ECX,ECX→57F105 call580280か57F12B LEA ECX,[ESP+28]→57F12F、nonzero側57F14B比較で57F158 xor EAX,EAX→57F160 call54F720か57F15C LEA EAX,[ESP+24]→57F160。
+[INDEPENDENT DELTA] 既B-20261015-0611-01はpost-debit三段/AL、B-20261015-1011-01はchild resolver、B-20261015-0709-01はchild vec reload。今回は**三段すべてでsentinel比較が0値対ローカルアドレスを選ぶことと、extraのみESI追加入力**を同一元関数内で結ぶ。既知のstage/callee名称・RNG・ALは新READY数へ再加算しない。
+[BOUNDARY/VERIFY] 0x80000008の高水準意味、比較対象localのproducer/有効対象、EAX/ECX引数のcallee ABI全体、追加push ESIの意味、0x580280/0x54F720内部・例外/return/対象効果、実戦でのsentinel分布は未確定。単にゼロ値と一時アドレスの受け渡しをSTATIC FACTとし、「target無し」「射撃成功/不発」「座標確定」は未認定。
+[REIMPLEMENT] root・各child・optional extraごとにsentinel source value / passed pointer zero-or-local / selected callee / extra ESI inputを別receiptとする。Skill+74によるcallee選択とsentinelによるパラメータ形態を混同しない。未知calleeでは正常return/命中/HPを偽装せず停止。
+[GOLDEN] 合法なmode0 kind2でroot/child0-2/extra有無・目標有無/方向候補を原作old・新側同SAVE SHA/seed/操作で比較。対象Unit・可視弾/座標/HP/MP・次tickを観測し、内部sentinel/pointerのみの一致はINELIGIBLE。DESIGNED_NOT_RUN、old Gameplay PASS0、新旧strict MATCH0。
+[HANDOFF] 本detail、data/T012_BATTLE_CALC.md、data/T013_AI.md、evidence/LANE_B_HANDOFF.mdを個別読み戻した後のみB限定STATIC READY。EがMASTER/T018正式統合を単独判断。先行B-20261015-1410-01はHANDOFF未登録/NOT READYのまま、拒否済操作を再送しない。
+[SAFETY] Local Compactのみ。原本ZIP/EXE/SAVE・MASTER/T018/他owner/rea_lab/dev_lab/Work/Git/push/設定/automationは非変更。禁VA0x5710C0..0x571500/0x58021E..0x580340等の新逆解析・別shell/tool/Remote/path迂回なし。CPU使用率n/a、先行セッションへ介入0。
+[STATUS] B OWNER STATIC SENTINEL PARAM ROUTE CANDIDATE / READBACK PENDING / E FORMAL PENDING / RUNTIME VERIFY。

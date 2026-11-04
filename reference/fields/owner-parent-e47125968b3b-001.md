@@ -10,6 +10,12 @@
 - [research/recovered/rea_batch3/reports/REA_20261031_17H_P0_VORBIS_BITBUFFER_INIT_STATIC.md 行 11](../../research/recovered/rea_batch3/reports/REA_20261031_17H_P0_VORBIS_BITBUFFER_INIT_STATIC.md?plain=1#L11-L11) — - 元x86 `0x5D4900` は非ゼロ入力時に親0x48バイトをcallocし、`ESI=0..14` の計15スロットを構築する。 `0x5D4941 cmp esi,7`、`0x5D4944 jne` により**index 7だけ**親の埋込 `parent+0x04` を `parent+0x28` へ渡し
   制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
 
+<a id="field-c"></a>
+## parent + 0xC
+
+- [research/recovered/b_batch7/data/T012_HEAL_EFFECT_CHILD_REGISTRY_41E060_41E160_CONTRACT_20261013.md 行 7](../../research/recovered/b_batch7/data/T012_HEAL_EFFECT_CHILD_REGISTRY_41E060_41E160_CONTRACT_20261013.md?plain=1#L7-L7) — [CHILD REMOVAL] 4DFBB0の旧active record解除callerは4DFBBF ESI=[EDI+6C],4DFBC2 EAX=EDI,4DFBC7 call41E160。関数41E160はESI parent/owner vector begin+6C/end+70をDWORD stride
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
 <a id="field-28"></a>
 ## parent + 0x28
 

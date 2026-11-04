@@ -10,4 +10,58 @@
 - [research/recovered/b_batch6/data/T012_EFFECT_REGISTRATION_DUAL_SINK_20261013.md 行 5](../../research/recovered/b_batch6/data/T012_EFFECT_REGISTRATION_DUAL_SINK_20261013.md?plain=1#L5-L5) — [4C3DC0 STATE] ECX=manager-like owner, EAX=child task-like ptr。0x4C3DC5 [owner+0x30]+=10、0x4C3DCE [child+0x54]=更新値。その後child vtable+0x38を呼び戻EAXがsigned負ならowner+0x
   制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
 
+<a id="field-40"></a>
+## container + 0x40
+
+- [research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md 行 8](../../research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md?plain=1#L8-L8) — [COMMON RECT/GATE] At4E00C4..4E00D5 compute signed32 center/rectangle deltas and compare [container+0x80] against sentinel0x80000008. Sentinel equal→4E00E6 [con
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+<a id="field-70"></a>
+## container + 0x70
+
+- [research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md 行 5](../../research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md?plain=1#L5-L5) — [FIRST NO-OP RET] `4E02AB EDI=&container+0x70`、`4E02B8 call49ED30`→`4E02BD MOV EAX,[EAX]`→`4E02BF CMP EAX,[container+0x74]`。一致すれば`4E02C2 JE 4E0372`→epilogue `4E
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/b_batch7/data/T012_REFRESH_TREE_RANGE_4E1FA0_CONTRACT_20261013.md 行 4](../../research/recovered/b_batch7/data/T012_REFRESH_TREE_RANGE_4E1FA0_CONTRACT_20261013.md?plain=1#L4-L4) — [CALLER/ABI] B-20261013-2034-62保存x86：4E02A0の`4E02C8 LEA ECX,&local2`、4E02CC PUSH ECX（arg2 out-pair*）、4E02CD PUSH EDI（arg1 = &container+0x70 tree header）、4E02CE
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+<a id="field-74"></a>
+## container + 0x74
+
+- [research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md 行 5](../../research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md?plain=1#L5-L5) — [FIRST NO-OP RET] `4E02AB EDI=&container+0x70`、`4E02B8 call49ED30`→`4E02BD MOV EAX,[EAX]`→`4E02BF CMP EAX,[container+0x74]`。一致すれば`4E02C2 JE 4E0372`→epilogue `4E
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md 行 8](../../research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md?plain=1#L8-L8) — [SURVIVOR BRANCH] `container+0x78 !=0`の時`4E0362 EDX=[container+0x74]`→`4E0365 EAX=[EDX]`→`4E0367 ECX=[EAX+0xC]`→`4E036A PUSH ECX`→`4E036D CALL4DFD80`、4E0372共通ep
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md 行 4](../../research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md?plain=1#L4-L4) — [INBOUND CALLS] B-20261013-2034-62の4E02A0はfound entryへ4E1FA0→510850後、container=Unit+0x800のDWORD+0x78（Unit+0x878）が非0なら4E036D call4DFD80(kind derived from contain
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+<a id="field-78"></a>
+## container + 0x78
+
+- [research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md 行 6](../../research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md?plain=1#L6-L6) — [MUTATION STAGE] 非一致では`4E02D0 call4E1FA0`、受けたlocal2 DWORDをpushし`4E02E5 call510850`を必ず通過。これらがコレクション中のどの要素を何個eraseするかはcallees未解決。`4E02EA CMP dword[container+0x78]
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md 行 7](../../research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md?plain=1#L7-L7) — [REMOVED LAST/LIFECYCLE] `[container+0x78]==0`で`4E02F5 CMP [container+0x80],0x80000008`。すでにsentinelなら`4E0372` epilogue/RET8、重複callbackを起動しない。未sentinelなら`4E0303
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md 行 8](../../research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md?plain=1#L8-L8) — [SURVIVOR BRANCH] `container+0x78 !=0`の時`4E0362 EDX=[container+0x74]`→`4E0365 EAX=[EDX]`→`4E0367 ECX=[EAX+0xC]`→`4E036A PUSH ECX`→`4E036D CALL4DFD80`、4E0372共通ep
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+<a id="field-80"></a>
+## container + 0x80
+
+- [research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md 行 7](../../research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md?plain=1#L7-L7) — [REMOVED LAST/LIFECYCLE] `[container+0x78]==0`で`4E02F5 CMP [container+0x80],0x80000008`。すでにsentinelなら`4E0372` epilogue/RET8、重複callbackを起動しない。未sentinelなら`4E0303
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md 行 8](../../research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md?plain=1#L8-L8) — [COMMON RECT/GATE] At4E00C4..4E00D5 compute signed32 center/rectangle deltas and compare [container+0x80] against sentinel0x80000008. Sentinel equal→4E00E6 [con
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+<a id="field-84"></a>
+## container + 0x84
+
+- [research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md 行 7](../../research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md?plain=1#L7-L7) — [7-WAY WRITERS] For each 0..6, corresponding bounded case runs0x423E80(first key)→copies 6 DWORD [returned] to container+0x84..+0x98, then0x423D70(second key)→c
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

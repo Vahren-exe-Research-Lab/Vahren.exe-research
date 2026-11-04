@@ -7,6 +7,9 @@
 <a id="field-c"></a>
 ## record + 0xC
 
+- [research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md 行 14](../../research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md?plain=1#L14-L14) — [VERIFY/NEXT] 4DFD80 resource loader423E80/423D70 media object definition, 565780/479760 linked owner, case record+0xC producer, native Unit subtype vtable+0x8/
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1077](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1077-L1077) — \| 停止条件 \| skill+0x2A8 == −123456.0（exp_per=off）、Unit+0x1D0==NULL、Unit+0x18614≠0、record+0xC≠0（付与後1にする） \| CONFIRMED \|
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
@@ -115,10 +118,49 @@
 - [research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md 行 17](../../research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md?plain=1#L17-L17) — - **今回の増分:** 前回 `B-OFFLINE-20261021-0716-01`で既知の`0x467DE0`→`record+0x1A4`に加え、今回新たに`0x467E90`→`record+0xB0`という**第二のbacklink書込み**を確認。`+0x1A4`と`+0xB0`を同一フィールドに潰さない
   制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
 
+<a id="field-1d0"></a>
+## record + 0x1D0
+
+- [research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md 行 12](../../research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md?plain=1#L12-L12) — 1. `0x0054F720` の保存済みGhidra擬似Cと直接CALLグラフ：既存レコード `record+0x1D0 == 0` を見つけた再利用経路は **site `0x0054F7DD → 0x0054F990`**。空きがなければ0x218Bレコードを確保・登録し、**site `0x0054F819 →
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md 行 13](../../research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md?plain=1#L13-L13) — 2. `0x0054F990` 擬似Cで `record=param_3` とすると、**`record+0x1D0=1`（active候補）、`record+0x1D4=in_EAX`（定義候補）、`record+0x1F0=0`（試行番号）、`record+0x1F8=0`（リンク先候補）、`record+0x1F
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/b_batch7/data/T012_RUSH_VTABLE_LOGICAL_VS_PHYSICAL_LIFETIME_OFFLINE_20261021_1509.md 行 17](../../research/recovered/b_batch7/data/T012_RUSH_VTABLE_LOGICAL_VS_PHYSICAL_LIFETIME_OFFLINE_20261021_1509.md?plain=1#L17-L17) — 5. `0x0054F720` は global vector `DAT_008BE278..DAT_008BE27C` を走査し、`record+0x1D0==0`なら**同じrecordを0x54F990へ再初期化**して返る。したがって制御フローが同一Rush record上で成立するなら「quota到達→論理非
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+<a id="field-1d4"></a>
+## record + 0x1D4
+
+- [research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md 行 13](../../research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md?plain=1#L13-L13) — 2. `0x0054F990` 擬似Cで `record=param_3` とすると、**`record+0x1D0=1`（active候補）、`record+0x1D4=in_EAX`（定義候補）、`record+0x1F0=0`（試行番号）、`record+0x1F8=0`（リンク先候補）、`record+0x1F
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
 <a id="field-1f0"></a>
 ## record + 0x1F0
 
 - [research/recovered/b_batch3/T012_RUSH_SKILL_INTERVAL_FIRST_TICK_BURST_NATIVE_20261027_18H.md 行 5](../../research/recovered/b_batch3/T012_RUSH_SKILL_INTERVAL_FIRST_TICK_BURST_NATIVE_20261027_18H.md?plain=1#L5-L5) — [NEW ASM/SEED] 0x54F990 の record=EBP / Skill=EAX。0x54F9AC MOV [EBP+0x1D4],EAX、0x54F9D1 MOV EDX,[EAX+0x78]、0x54F9D4 MOV [EBP+0x1F4],EDX。したがって初期record.counterは0でな
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md 行 13](../../research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md?plain=1#L13-L13) — 2. `0x0054F990` 擬似Cで `record=param_3` とすると、**`record+0x1D0=1`（active候補）、`record+0x1D4=in_EAX`（定義候補）、`record+0x1F0=0`（試行番号）、`record+0x1F8=0`（リンク先候補）、`record+0x1F
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+<a id="field-1f4"></a>
+## record + 0x1F4
+
+- [research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md 行 13](../../research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md?plain=1#L13-L13) — 2. `0x0054F990` 擬似Cで `record=param_3` とすると、**`record+0x1D0=1`（active候補）、`record+0x1D4=in_EAX`（定義候補）、`record+0x1F0=0`（試行番号）、`record+0x1F8=0`（リンク先候補）、`record+0x1F
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+<a id="field-1f8"></a>
+## record + 0x1F8
+
+- [research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md 行 13](../../research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md?plain=1#L13-L13) — 2. `0x0054F990` 擬似Cで `record=param_3` とすると、**`record+0x1D0=1`（active候補）、`record+0x1D4=in_EAX`（定義候補）、`record+0x1F0=0`（試行番号）、`record+0x1F8=0`（リンク先候補）、`record+0x1F
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+<a id="field-1fc"></a>
+## record + 0x1FC
+
+- [research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md 行 13](../../research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md?plain=1#L13-L13) — 2. `0x0054F990` 擬似Cで `record=param_3` とすると、**`record+0x1D0=1`（active候補）、`record+0x1D4=in_EAX`（定義候補）、`record+0x1F0=0`（試行番号）、`record+0x1F8=0`（リンク先候補）、`record+0x1F
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

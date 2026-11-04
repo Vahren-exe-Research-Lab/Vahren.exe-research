@@ -1,0 +1,13 @@
+# B-20261017-1014-01｜T012/T013 57E905後段二段factoryと54F720共有Rush pool/record writerの接続
+[TYPE/TASK] T012 primary / T013 xref。新規は既保存命令のCALLER→CALLEE→record stateの限定crossjoinのみ。旧原作Gameplay PASS0、新旧strict MATCH0、Task DONE増0。
+[SOURCE] 同梱EXE一致SHA256=e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187。B保存exe/T012_57E905_57EB30_BRANCH_MAP_20261016.txt（限定2窓SHA記録）、exe/T013_RUSH_FACTORY_54F720_NATIVE_20261013.txt（window_SHA256=ac5cd042e9adc6b099c299b7eaef05fd30e3e1ac749bcd26ad227b3a62cd7f66）、exe/T013_RUSH_RECORD_54F990_NATIVE_20261013.txt（window_SHA256=a79ab134fbfe4b56181771b39cf8a77c3c00778768548bf03f83470b0919aee9）。いずれもLocal read-only、原本EXE未実行/未変更。
+[STAGE-A] VA57E999 root Skill+26F byte!=0、resolver後child+74!=0の合法・callee正常復帰経路では57EA58又は57EA70 CALL54F720、その後57EA99 Unit vtable+80。root+26F==0なら第一factoryを飛ばしvirtualへ。
+[STAGE-B] VA57EA9D original Skill+F4!=0なら別402710→4678A0 resolver後child+74!=0で57EB17 CALL54F720、続いて57EB22 CALL57BE30。+F4==0又はchild+74==0ではこのCALL54F720は無い（代わりにskip/別factory）。
+[SHARED-CALLEE] 54F720はglobal[8BE278/8BE27C]の4B pointer poolを走査、候補byte+1D0==0なら54F7DD CALL54F990→54F7EC CALL4C2240のreuse側、新規なら54F7FB CALL550410→54F819 CALL54F990→owner+74 pointer vector append側。正常returnでの54F990は両経路に1回、ただしallocation failure/error/callee abnormalは別VERIFY。
+[RECORD-WRITER] 既B保存54F990 VA54F9A5はrecord byte+1D0=1を書込、VA54F99A/54F9AC/54F9B2はrecord+1DC/+1D4/+1D8へ入口引数候補を書込。+1D0は次の54F720 pool走査条件に関与し、stage-A後のstage-Bを同一初期snapshot/同一recordと決め打ちできない。
+[NEW BOUNDED CONSEQUENCE] root+26F!=0と+F4!=0、各child+74!=0で両factoryの正常復帰が続く場合、1行動の当該caller局所に同じstateful Rush pool writerへの呼出が最大2段存在する。stage-Bのresolver入力、record identity、source Skillはstage-Aと同一と限らない。2回CALLを2発命中・2ダメージと数えない。
+[DEDUP] 正本cp165で統合済B-20261016-1616-01の57EA分岐、B-20261013-1130-01の54F720単体、B-20261013-1154-01の54F990単体を新命令として再計上しない。先行B-20261015-2310-01の通常kind2三段からの54F720→54F990とは別callerで、同ID/拒否境界を代理救済しない。
+[VERIFY/NO SUCCESS CLAIM] 57EA branch実到達、4678A0/402710の返値・次child、54F990→writerの全状態/下位callee return、poolを途中で解除する他writer、発射/衝突/HP/MP/RNG/最終target、Unit+80と57BE30の実作用は不明。AL=1を命中とみなさない。
+[REIMPLEMENT] receipt: root+26F/F4・stage-A/B child identity/+74・CALL経路/returnPC、global pool begin/end・scan byte+1D0、reuse/new branch、record+1D4/1D8/1DC、owner+74 vector と4C2240登録を分離。二段を1つに畳まずUNKNOWNで停止可能にする。
+[GOLDEN] 合法旧原作で2段が到達可能なSkillが特定された場合のみ旧EXE/DAT/SAVE/input/video SHA、seed/実配置/同操作で可視effect数・時刻・方向・HP/MP・次tickをnew同build条件で比較。内部pool/byteだけはINELIGIBLE。DESIGNED_NOT_RUN／actual old Gameplay PASS0／strict MATCH0。
+[SAFETY/STATUS] 旧拒否VA5710C0..571500・58021E..580340・既拒否payload迂回0。REA/Ghidra起動0、Remote0、原本ZIP/EXE/SAVE、MASTER/T018、他owner、rea_lab/dev_lab/Work/WRQ、Git/push、設定/automation不変更。detail＋T012 owner＋T013 owner＋B HANDOFFを独立readback後にのみB限定STATIC CROSSJOIN READY。

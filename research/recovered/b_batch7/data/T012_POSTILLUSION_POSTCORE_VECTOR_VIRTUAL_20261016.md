@@ -1,0 +1,14 @@
+# B-20261016-1515-01｜T012/T013 幻覚分岐合流後Skill+30/+34 vector→4B9F70、別virtual+80 gate
+[DATE/TASK/STATUS] 2026-10-16 15時台JST。T012 primary/T013 crossref。B限定SAVED-X86 CROSSCALL CANDIDATE。原作Gameplay PASS0／new-old strict MATCH0／Task DONE+0。
+[PROVENANCE] 迫真ver0.67同梱EXE既記録SHA256=e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187。B保存exe/T012_DAMAGE_CALLER_CONTEXTS.txt (VA57E887..57E91A), exe/T013_SUPPORT_POSTCORE_RANDOM_4B9F70_NATIVE_20261013.txt(4B9F70..4BA00F)をread-only。新規EXE逆解析なし。
+[FACT/JOIN] 既B-20261016-1411-01の57E7C5/57E7D2 direct bypass、57E7E5 direct 550E70後、57E7EA幻覚detourはいずれも57E887へ合流する。57E887 MOV EDX,[Skill+30];57E88A CMP [Skill+34]、57E88D JE57E8A2で空vectorをskip。
+[FACT/CALLER] nonempty時57E88F ECX=[Unit+0xC]→57E892 EDX=[ECX+4]、57E895 PUSH Unit EBX;57E896 PUSH receiver EDX、57E897 ESI=&Skill+30、57E89A CALL4B9F70、57E89F restores ESI=[EBP+8]。Unit/Skillのtyped名は前段57E74D/57E759の既保存register追跡に限定。
+[FACT/CALLEE-PRIOR] 既READY B-20261013-1825-01の保存4B9F70 bodyはbegin=end時direct return、nonempty時4B9FA0 CALL5B6EABで局所randを1回、28-byte SSO/heap要素選択、receiver vtable+24呼出、4BA00F RET8。ここでは既知callee本体を再READY計上しない。
+[FACT/CONTINUATION] 57E8A2ではSkill+254読取後、+254!=0なら乗算尺度を変える別FP branch。57E8CA Skill+9Cを検査、zeroかつSkill+A8==Skill+ACなら57E8E2 Unit vtable+80 call (57E8FE)→57E900 JMP57EA9D。非zero/非empty時57E905側へ進む。vtable+80人間名・実効果・callee正常retは未解明。
+[NEW/DEDUP] 新規は57E887での『幻覚・damage分岐の両側から同一Skill+30/+34 optional random/virtualへ到達可能』というcaller-side crossjoin、および同後段のSkill+254/+9C/+A8/+AC条件付きUnit virtual+80呼出を別stage化したこと。既B-1411のMP/illusion順序と既B-1825の4B9F70 body/returnは加算0。
+[BOUNDARY] 57E887到達に先行calleeが実際正常復帰することが前提。+30 vectorのDAT property、receiver vtable+24、Unit virtual+80の実作用、Skill+254の数値的意味、57E905..57EA9D末尾、実弾生成/HP/MP refund/総RNG cursorはVERIFY。+30非空=必ず可視効果/Hitとはしない。calleeがthrow/nonreturnなら後続stageは到達保証なし。
+[RNG-RECEIPT] 各siteを区別：57E798 CALL40ED80（Unit+CC負の場合）、57E7FA CALL5B6EAB（幻覚detour局所）、4B9FA0 CALL5B6EAB（57E887以降Skill+30非空の場合）。局所draw条件は静的・各サイトの総stream/他callee内drawと最終同seed挙動はVERIFY。
+[REIMPLEMENT] direction(Unit+18688)・MP debit(+94)・illusion gate→damage/detour・postjoin vector begin/end・random child index・receiver+24 virtual／Skill+254 scale／+9C,+A8,+AC gate／Unit+80 virtualを独立receiptと未知callee gapで保持。既知部分だけの完了フラグ/HP hitを偽装しない。
+[GOLDEN] 合法原作で到達するSkill+30リスト空/非空(1/複数)、術者illusion有無、同SAVE SHA/seed/入力・Skill/Unit/UI変化をold/newと比較。可視弾/演出/対象HP/MPと次の乱数依存動作・次tickを比較する設計のみ。内部vectorやvtableはINELIGIBLE。DESIGNED_NOT_RUN、Gameplay PASS0、strict MATCH0。
+[SAFETY/INTEGRATION] 安全拒否済0x5710C0..0x571500および旧拒否候補を新解析・代替再提出しない。B detail→T012/T013→HANDOFFの独立readback後のみB限定STATIC READY。EだけがMASTER正式採用。MASTER checkpoint163=560(A115/B195/C134/D116)はread-only、旧B-1313はE安全拒否でBLOCKED、旧B0321/B0611 HOLD、B1110などNOT READY据置。
+[NEXT] Skill+30/+34のsource property／57E905後段は既存許可証拠の範囲で確認、攻撃resultと576E80/4E7ED0/latchへ接続する条件を重複排除して検討。実機比較は別担当Eが旧合法捕捉できるまでPASS0。

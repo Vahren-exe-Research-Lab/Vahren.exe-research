@@ -4,6 +4,18 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-8"></a>
+## vtable + 0x8
+
+- [research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md 行 7](../../research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md?plain=1#L7-L7) — [REMOVED LAST/LIFECYCLE] `[container+0x78]==0`で`4E02F5 CMP [container+0x80],0x80000008`。すでにsentinelなら`4E0372` epilogue/RET8、重複callbackを起動しない。未sentinelなら`4E0303
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md 行 9](../../research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md?plain=1#L9-L9) — [NEW REGISTRATION BRANCH] Sentinel equal path after bounds update:4E01BF indirect vtable+0x8, AL!=0 only then4E01CC CALL4C2240(pending Task, prior B);4E01D8 ind
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md 行 14](../../research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md?plain=1#L14-L14) — [VERIFY/NEXT] 4DFD80 resource loader423E80/423D70 media object definition, 565780/479760 linked owner, case record+0xC producer, native Unit subtype vtable+0x8/
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
 <a id="field-c"></a>
 ## vtable + 0xC
 
@@ -31,6 +43,15 @@
 - [research/recovered/rea_batch5/reports/REA_20261028_09H_P0_OGG_VTABLE_STATIC.md 行 16](../../research/recovered/rea_batch5/reports/REA_20261028_09H_P0_OGG_VTABLE_STATIC.md?plain=1#L16-L16) — - 従って、**このコンストラクタから渡されたvptrが維持される経路**に限り、間接CALL `0x0050202A` は `0x00501EB0`（vtable+0x10）に解決する。一般の仮想呼出し全体を解決したわけではない。
   制約・訂正　Historical author STATIC/VERIFY claims and audit counts only; current REF_AUDIO_VORBIS precedence; no new native/runtime/ABI/READY validation; linked evidence excluded
 
+<a id="field-14"></a>
+## vtable + 0x14
+
+- [research/recovered/rea_batch7/reports/REA_20261026_10H_P0_DMUSIC_AUDIOPATH_STATIC.md 行 16](../../research/recovered/rea_batch7/reports/REA_20261026_10H_P0_DMUSIC_AUDIOPATH_STATIC.md?plain=1#L16-L16) — - 4BF687で EAX=[ESP+4] を読み、GetDefaultAudioPathのHRESULTを上書き。4BF68Bで volume=[stream+0C]、4BF68Eで EAX をthisとしてVTableを無条件逆参照。4BF690/692/693で duration=0, volume, path-
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+- [research/recovered/rea_batch7/reports/REA_20261026_10H_P0_DMUSIC_AUDIOPATH_STATIC.md 行 17](../../research/recovered/rea_batch7/reports/REA_20261026_10H_P0_DMUSIC_AUDIOPATH_STATIC.md?plain=1#L17-L17) — - vtable +0x14(第5スロット)と2引数は IDirectMusicAudioPath8::SetVolume(LONG, DWORD) に一致。duration=0 msの即時適用を指定し、ユーザー側fadeは別途+0x20による逐次更新で制御する。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
 <a id="field-1c"></a>
 ## vtable + 0x1C
 
@@ -48,6 +69,9 @@
 
 - [research/recovered/b_batch6/data/T011_UNIT_EFFECT_RING_OWNER_4DFB00_20261013.md 行 6](../../research/recovered/b_batch6/data/T011_UNIT_EFFECT_RING_OWNER_4DFB00_20261013.md?plain=1#L6-L6) — [R INITIAL FIELDS] 4DFB0C/0F R+40/+44=0、4DFB17/1A R+48/+4C=0x20(32)、+50/+54/+58=0、+5C=0xFF、+60=0xFFFFFF、byte+64=0、0x4DFB3E `call [R.vtable+0x28]`（vtableは入場時既存、当
   制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
+
+- [research/recovered/b_batch7/data/T012_HEAL_EFFECT_RECORD_4DFBB0_CONTRACT_20261013.md 行 3](../../research/recovered/b_batch7/data/T012_HEAL_EFFECT_RECORD_4DFBB0_CONTRACT_20261013.md?plain=1#L3-L3) — [SOURCE/PROOF] B exe/T012_HEAL_EFFECT_RECORD_4DFBB0_NATIVE_20261013.txtをLocal readback。isolate read-only target SHA256=e8dac301050c8e630d7e0ce93aeefd95e641207d9
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 424](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L424-L424) — [VERIFY] vtable+0x28 concrete target、mask0x6の各bitの意味/branch reachability、fallback globalのbuffer境界と0x42A340の入出力、WriteFile error/short writeの実効。ゲーム側の正常saveで各経路が起こ
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
@@ -73,14 +97,32 @@
 <a id="field-34"></a>
 ## vtable + 0x34
 
+- [research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md 行 7](../../research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md?plain=1#L7-L7) — [REMOVED LAST/LIFECYCLE] `[container+0x78]==0`で`4E02F5 CMP [container+0x80],0x80000008`。すでにsentinelなら`4E0372` epilogue/RET8、重複callbackを起動しない。未sentinelなら`4E0303
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md 行 13](../../research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md?plain=1#L13-L13) — [VERIFY/NEXT] 0x49ED30 lookupと4E1FA0/510850 erase/writer、Unit+878 runtime count、4DFD80 survivor refresh、vtable+0x34/+0x8/+0x48/+0x44のsubtype dispatch、4C3E40/4BC
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
 - [research/recovered/b_reports/T013_HEAL_FINISH_UNREGISTER_POOL_REUSE_NATIVE_20261027_10H.md 行 7](../../research/recovered/b_reports/T013_HEAL_FINISH_UNREGISTER_POOL_REUSE_NATIVE_20261027_10H.md?plain=1#L7-L7) — [FINISH A] 0x54E4A8..0x54E4F8：vtable+0x34→0x4BBBD0、vtable+8真で0x54E4C1 EAX=[holder+4]→0x54E4C6 ADD EAX,0xC→0x54E4C4 PUSH EBX(=0) / 0x54E4C5 PUSH ESI(effect*)→0x5
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
 - [research/recovered/rea_batch4/reports/REA_20261030_03H_P0_DSBUFFER_ALIAS_CURSOR_IID_STATIC.md 行 13](../../research/recovered/rea_batch4/reports/REA_20261030_03H_P0_DSBUFFER_ALIAS_CURSOR_IID_STATIC.md?plain=1#L13-L13) — cleanupの `0x004BF318` Stop後、`0x004BF31C CALL 0x00502330` に入る。再充填関数で `0x00502339 XOR EDI,EDI` → `0x00502352 PUSH EDI` → `0x00502354 CALL EDX` は vtable+0x34 の **S
   制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
 
+<a id="field-44"></a>
+## vtable + 0x44
+
+- [research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md 行 7](../../research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md?plain=1#L7-L7) — [REMOVED LAST/LIFECYCLE] `[container+0x78]==0`で`4E02F5 CMP [container+0x80],0x80000008`。すでにsentinelなら`4E0372` epilogue/RET8、重複callbackを起動しない。未sentinelなら`4E0303
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
 <a id="field-48"></a>
 ## vtable + 0x48
+
+- [research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md 行 7](../../research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md?plain=1#L7-L7) — [REMOVED LAST/LIFECYCLE] `[container+0x78]==0`で`4E02F5 CMP [container+0x80],0x80000008`。すでにsentinelなら`4E0372` epilogue/RET8、重複callbackを起動しない。未sentinelなら`4E0303
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md 行 9](../../research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md?plain=1#L9-L9) — [NEW REGISTRATION BRANCH] Sentinel equal path after bounds update:4E01BF indirect vtable+0x8, AL!=0 only then4E01CC CALL4C2240(pending Task, prior B);4E01D8 ind
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
 - [research/recovered/b_reports/T012_SUMMON_CORE_54E7B0_CONTRACT_20261013.md 行 11](../../research/recovered/b_reports/T012_SUMMON_CORE_54E7B0_CONTRACT_20261013.md?plain=1#L11-L11) — [POST EFFECT] 0x54F2D7 effect vtable+8→条件付き0x4C2240、vtable+0x48→0x4C3DC0、0x54F305 call0x4BC920。特定EAX==3/flag成立なら0x41EF50→0x41F850。Skill+0x30/+0x34が非空時0x54F364 c
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail; historical READY-STATIC-BODY label is not a new current READY admission
@@ -153,5 +195,26 @@
 
 - [research/recovered/b_batch3/T012_UNIT_VIRTUAL80_579290_CONTRACT_20261013.md 行 1](../../research/recovered/b_batch3/T012_UNIT_VIRTUAL80_579290_CONTRACT_20261013.md?plain=1#L1-L1) — # B-20261013-1253-01｜WRQ-B-SKILL：Unit vtable+0x80 →0x579290軌道座標列設定関数（T012/T013）
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+<a id="field-98"></a>
+## vtable + 0x98
+
+- [research/recovered/rea_batch7/reports/REA_20261026_21H_P0_DMUSIC_ARRAY_COUNT_TEARDOWN_STATIC.md 行 14](../../research/recovered/rea_batch7/reports/REA_20261026_21H_P0_DMUSIC_ARRAY_COUNT_TEARDOWN_STATIC.md?plain=1#L14-L14) — - `0x004BE7C0 MOV EAX,[ESI+0x70]`、`0x004BE7C3 CMP [EAX+EDI*4],0`、非NULL要素に対し`0x004BE7D7 CALL EDX`（vtable+0x98、既報CloseDown同定）、`0x004BE7E5 CALL EDX`（vtable+8、Relea
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+<a id="field-c0"></a>
+## vtable + 0xC0
+
+- [research/recovered/rea_batch7/reports/REA_20261027_08H_P0_D3DX_CAMERA_GEOMETRY_READBACK.md 行 18](../../research/recovered/rea_batch7/reports/REA_20261027_08H_P0_D3DX_CAMERA_GEOMETRY_READBACK.md?plain=1#L18-L18) — 次回: vtable +0xC0 GetViewport（0x00559A28）正常値・失敗分岐、D3DXPlaneIntersectLine（0x00559C1D）の未交差時出力契約、`0x00879838` の複数consumerを限定照合。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+<a id="field-cc"></a>
+## vtable + 0xCC
+
+- [research/recovered/rea_batch7/reports/REA_20261026_10H_P0_DMUSIC_AUDIOPATH_STATIC.md 行 14](../../research/recovered/rea_batch7/reports/REA_20261026_10H_P0_DMUSIC_AUDIOPATH_STATIC.md?plain=1#L14-L14) — - 4BF679で LEA EDX,[ESP+4]。これはPROLOGUEの PUSH ECX で積んだローカルDWORDを出力領域として指す。4BF67D/7Eで outポインタ/performance-this を積み、4BF67Fで vtable+0xCC を取得、4BF685で間接CALL。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+- [research/recovered/rea_batch7/reports/REA_20261026_10H_P0_DMUSIC_AUDIOPATH_STATIC.md 行 15](../../research/recovered/rea_batch7/reports/REA_20261026_10H_P0_DMUSIC_AUDIOPATH_STATIC.md?plain=1#L15-L15) — - vtable +0xCC(第51スロット) + 引数(out IDirectMusicAudioPath**)は DirectX SDK の IDirectMusicPerformance8::GetDefaultAudioPath に一致する（推定API同定。runtime vptr未採取）。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)
