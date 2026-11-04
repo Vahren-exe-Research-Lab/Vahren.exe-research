@@ -10,6 +10,27 @@
 - [research/recovered/b_batch3/T011_SUMMON_CALLER_GROUP_PROVENANCE_NATIVE_20261027_15H.md 行 13](../../research/recovered/b_batch3/T011_SUMMON_CALLER_GROUP_PROVENANCE_NATIVE_20261027_15H.md?plain=1#L13-L13) — [GOLDEN] 無改変ver0.67 EXE・KARATE_X20改変前DAT・同一SAVE/MAP/input/RNGを固定。4 caller系の召喚条件別にS/H/effect+0x7C、child+0xC、selector、group EDI、child+0x1D0、group list、可視出現・EXP帰属を
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+<a id="field-14"></a>
+## child + 0x14
+
+- [research/recovered/rea_batch2/reports/REA_20261103_13H_P0_CLEANUP_CHILD_DETACH_DELETE_BRANCH_STATIC.md 行 8](../../research/recovered/rea_batch2/reports/REA_20261103_13H_P0_CLEANUP_CHILD_DETACH_DELETE_BRANCH_STATIC.md?plain=1#L8-L8) — 1. Native `0x51DD60` uses `[child+0x14]` at `0x51DD71` to split cleanup: when **zero**, `0x51DD78` invokes `0x562B00(child)` and `0x51DD7E` invokes `0x5B6BBB(ch
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
+
+- [research/recovered/rea_batch2/reports/REA_20261103_13H_P0_CLEANUP_CHILD_DETACH_DELETE_BRANCH_STATIC.md 行 9](../../research/recovered/rea_batch2/reports/REA_20261103_13H_P0_CLEANUP_CHILD_DETACH_DELETE_BRANCH_STATIC.md?plain=1#L9-L9) — 2. Native `0x562B00` **rechecks** byte `[child+0x14]`: if nonzero (`0x562B0B..49`), it accesses global `0xAADD04` and `0xAADD08`, calls `0x4C52D0` to create a l
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
+
+- [research/recovered/rea_batch2/reports/REA_20261103_13H_P0_CLEANUP_CHILD_DETACH_DELETE_BRANCH_STATIC.md 行 10](../../research/recovered/rea_batch2/reports/REA_20261103_13H_P0_CLEANUP_CHILD_DETACH_DELETE_BRANCH_STATIC.md?plain=1#L10-L10) — 3. If byte `[child+0x14]` is zero (`0x562B4A..5F`), `0x562B00` loads `[child+0]`; if non-NULL, it calls its **indirect vtable +8** with one pushed pointer argum
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
+
+- [research/recovered/rea_batch2/reports/REA_20261103_14H_P0_LISTNODE_ALLOCATION_THROW_PROPAGATION_STATIC.md 行 10](../../research/recovered/rea_batch2/reports/REA_20261103_14H_P0_LISTNODE_ALLOCATION_THROW_PROPAGATION_STATIC.md?plain=1#L10-L10) — 1. The nonzero `[child+0x14]` branch of `0x562B00` directly calls `0x4C52D0` at `0x562B1B`; on *ordinary return*, subsequent `0x562B40` saves EAX as a linked no
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
+
+- [research/recovered/rea_batch2/reports/REA_20261103_16H_P0_BULK_GRID_CLEANUP_EXCEPTION_AND_VPTR8_STATIC.md 行 10](../../research/recovered/rea_batch2/reports/REA_20261103_16H_P0_BULK_GRID_CLEANUP_EXCEPTION_AND_VPTR8_STATIC.md?plain=1#L10-L10) — 1. Original `0x563EDC/0x563EF0` loops over grid dimensions at EDI `+0x1404/+0x1400`; at `0x563EFE..0x563F21`, non-null slot with `[child+0x14]==0` conditionally
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
+
+- [research/recovered/rea_batch2/reports/REA_20261103_16H_P0_BULK_GRID_CLEANUP_EXCEPTION_AND_VPTR8_STATIC.md 行 11](../../research/recovered/rea_batch2/reports/REA_20261103_16H_P0_BULK_GRID_CLEANUP_EXCEPTION_AND_VPTR8_STATIC.md?plain=1#L11-L11) — 2. When the non-null slot's `[child+0x14]!=0`, `0x563F23..0x563F58` allocates a list node via `0x4C52D0`, checks unsigned `0x3ffffffe-[0xAADD08]` and branches t
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
+
 <a id="field-1c8"></a>
 ## child + 0x1C8
 

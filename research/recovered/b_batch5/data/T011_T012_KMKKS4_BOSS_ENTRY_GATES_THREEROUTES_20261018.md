@@ -1,0 +1,14 @@
+# B-20261018-2211-01｜T011主/T012参照：kmkks4配置の呼出し前段と3ルート原文条件
+[STATUS] 2026-10-18 22時台 JST。新規限定 STATIC ORIGINAL SOURCE、4/4独立readbackでのみ B READY。旧原作Gameplay Golden PASS0、新旧strict MATCH0、Task DONE増0。
+[SOURCE 1] normalized/a_default/script/2001_イベント_ボス/event_50_共通ボス.dat L1-18、event bossevent：isPlayer(po13/po17/po20/po21/po27)のいずれか・yet(boss_nisehsi)・(aa>39 || getTurn()>29) の原文ANDでevent(boss_nisehsi)を呼ぶ。aaは同L4-7のstorePlayerUnit/storePowerOfUnit/pushSpot(@bbb,aa)の後で使われる。
+[SOURCE 2] 同L40-53のsc_free枝：isScenario(sc_free)・(aa>39 || getTurn()>29)・boss_advent<1、pushRand(@bossdare)後、値20..39かつisPlayer(nisehsi/hsi/aiktw)==0でevent(boss_nisehsi)へ入る宣言。L55-85にはgetTurn()>39と複数yet条件を持つ独立の後段ランダム枝があり、同L71にもevent(boss_nisehsi)が存在。排他的な全体呼出し保証は未証明。
+[SOURCE 3] normalized/5000_ランダムシナリオ/event_50_共通ボス_rsc.dat L1-11,L28-30,L64-68：bossevent_rscは(aa>39 || getTurn()>29)かつboss_advent<1を入口に、isPlayer(nisedrgn_r/nisehsiwaru_r/hsi/nisehsi/aiktw)==0の場合addv(@bossdare,boss_nisehsi)で候補登録、shuffle→index0→event(@bossdare_R)、最後boss_advent=1を宣言。候補登録≠選出/実生成。
+[SOURCE 4] normalized/2001_イベント_ボス/EB_2222_レイノアレフ.dat L2-14,L124-148：event boss_nisehsiのisScenario(sc_free)==0ブロックは映像/会話選択側、ブロック終端L124以降にsetv(@bosp,sp35)、routine(spot_eva)、addUnit(kmkks4,sp35) L132/L138/L144 とaddPower(po2222) L147/addSpot(sp35,po2222) L148がある。原文上は会話選択枝の内側ではない。
+[EXE/SCOPE] 対象同梱Vahren.exe既保存SHA256=e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187。既VA0x59C1BA..0x59C253 Skill field取得、0x57E5D3→0x57EB40、0x580280、0x4E7ED0は一般参照で本イベントdispatchの特定xrefではない。新規EXE解析0、拒否VA0x5710C0..0x571500操作0。
+[PRIOR/DEDUP] B-20261018-2021-02のkmkks/rensha直接宣言、B-20261018-2109-01のkmkks4親・3 addUnit/po2222配置を重複証拠加算しない。今回の増分は配置イベントの前段3系統の明示trigger/候補選択条件と、会話ブロック外の配置位置という接続だけ。
+[FACT/VERIFY] 原文の条件式/呼出し/記述位置はCONFIRMED。実際のyet/event/pushRand/shuffle/native addUnitの副作用、ルート間重複防止・ターン時相、原作での実発火、3実ユニット生成、kmkks4の実効rensha_watecannon継承はVERIFY。本文の「会話をskipしても配置される」は原文上の支配関係に限り、実機挙動は未立証。
+[REIMPLEMENT] raw trigger route(standard/sc_free/rsc)・predicate・candidate enqueue/selection・event execution・visual branch・post-branch deployment・resolved Unit/Class/Skillを異なるstageで保持。原文getTurn>29やaa>39を勝手に>=へ変更せず、story skipをevent cancel扱いしない。
+[GOLDEN DESIGN/NOT RUN] 合法原作でrouteと所持勢力・turn・aa/地域数・boss_advent・yet状態・候補poolを区別し、UI発火/スキップを確認。その後sp35とpo2222の旧可視Unit数・Class・Skill所持を採取し、出撃が合法な場合のみold/new同EXE/DAT/SAVE/map/input/capture SHA・対象/HP/MP/次tick比較。未観測ならINELIGIBLE、旧PASS0/strict0。
+[NEXT] T011は合法なroute/実戦前のkmkks4発現と継承を観測できる証拠入口の確保、T012はそれを原作攻撃結果fixture候補へ限定引継ぎ。event engineの一般schedulerはC/A所有read-only参照・担当外編集禁止。T012の4E7ED0/580280/Unit+1E560/+18688/MP fallback、T013 +A18/+A1Cは未解決P0維持。
+[SAFETY] 原本ZIP/EXE/SAVE、MASTER/T018/他owner/REA/dev_lab/Work/WRQ/Git/push/設定/automation変更0。旧B-1813 HANDOFF拒否とE-2053/E-2145 MASTER拒否は各BLOCKED維持し本IDで代理回復しない。
+[READY GATE] 本detail、data/T011_DATA_MODEL.md、data/T012_BATTLE_CALC.md、evidence/LANE_B_HANDOFF.mdに同一ID・VERIFY・Golden・次手を個別保存/読戻し確認後のみ B LIMITED STATIC ORIGINAL SOURCE READY。E MASTER統合は別。

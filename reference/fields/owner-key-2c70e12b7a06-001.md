@@ -10,4 +10,10 @@
 - [research/recovered/b_batch2/T011_TRAINING_LEADER_BONUS_MEMO_NATIVE_20261031_07H.md 行 14](../../research/recovered/b_batch2/T011_TRAINING_LEADER_BONUS_MEMO_NATIVE_20261031_07H.md?plain=1#L14-L14) — [KB_CANDIDATE] research_id=B-20261031-07H-T011-TRAINING-LEADER-BONUS-MEMO-01; owner=B/T011; primary VA=0x4722BE,0x4723A8,0x4723BC,0x4F8A80,0x4ED3B0,0x474A80; of
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 
+<a id="field-214"></a>
+## key + 0x214
+
+- [research/recovered/b_batch5/data/T011_T012_HEAL_DELAY_KEY_ALIAS_SOURCE_20261017.md 行 8](../../research/recovered/b_batch5/data/T011_T012_HEAL_DELAY_KEY_ALIAS_SOURCE_20261017.md?plain=1#L8-L8) — [EXE/XREF PREEXISTING ONLY] B保存native exe/T012_SKILL_POST_57BE30_NATIVE_20261013.txt VA0x57BEC3 call0x4C1200（Skill+0x210>0、key+0x214→Unit+0x1E53C map）、0x57BEDB
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

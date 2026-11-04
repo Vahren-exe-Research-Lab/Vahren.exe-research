@@ -22,6 +22,18 @@
 - [research/recovered/b_batch2/T028_WANDER_MERCENARY_TEMPLATE_DISPATCH_NATIVE_20261028_15H.md 行 8](../../research/recovered/b_batch2/T028_WANDER_MERCENARY_TEMPLATE_DISPATCH_NATIVE_20261028_15H.md?plain=1#L8-L8) — 14Hの0x497C4D candidate+0x74→decide3/500 または decide11/10\|25 のproducer、0x497CAF文字列生成は既知で再計上しない。
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 
+<a id="field-78"></a>
+## candidate + 0x78
+
+- [research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md 行 21](../../research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md?plain=1#L21-L21) — - 走査候補には `candidate+0x78!=0 \|\| candidate+0x94!=0` の入口条件があり、候補の `[+0xD4,+0xD8)` という0x1C strideの配列風領域から `+0x10` 相当の値を取り、元の `param_1+0x10` と `0x00402C40` comparato
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
+<a id="field-94"></a>
+## candidate + 0x94
+
+- [research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md 行 21](../../research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md?plain=1#L21-L21) — - 走査候補には `candidate+0x78!=0 \|\| candidate+0x94!=0` の入口条件があり、候補の `[+0xD4,+0xD8)` という0x1C strideの配列風領域から `+0x10` 相当の値を取り、元の `param_1+0x10` と `0x00402C40` comparato
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
 <a id="field-c0"></a>
 ## candidate + 0xC0
 

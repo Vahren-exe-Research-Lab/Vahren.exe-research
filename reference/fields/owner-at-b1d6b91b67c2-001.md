@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-c"></a>
+## at + 0xC
+
+- [research/recovered/rea_batch2/reports/REA_20261102_10H_P0_F720_ARG2_KEY_ORIGIN_ERRATUM_STATIC.md 行 11](../../research/recovered/rea_batch2/reports/REA_20261102_10H_P0_F720_ARG2_KEY_ORIGIN_ERRATUM_STATIC.md?plain=1#L11-L11) — - `0x47D8F2 PUSH EAX` and E8 `0x47D8FE→0x565780` transmit its address. In callee: `0x5657AF MOV EDX,[ESP+0x10]`, `0x5657B3 MOV EDX,[EDX]`, `0x5657B5 MOV [ECX],E
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
+
 <a id="field-40"></a>
 ## at + 0x40
 
@@ -27,6 +33,12 @@
 
 - [research/recovered/b_batch3/T028_SPATIAL_GRID_CTOR_FLAG_PROVENANCE_NATIVE_20261026_11H.md 行 16](../../research/recovered/b_batch3/T028_SPATIAL_GRID_CTOR_FLAG_PROVENANCE_NATIVE_20261026_11H.md?plain=1#L16-L16) — - [ORIGINAL ASM] 0x4E4B9F..0x4E4C03 loops over +0x50 x +0x50 16B cell vectors at +0x4C resetting their ends, and 0x4E4C10..0x4E4C59 clears separate pointer-tabl
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+<a id="field-90"></a>
+## at + 0x90
+
+- [research/recovered/rea_batch2/reports/REA_20261104_04H_P0_CRT_TLS_GATE_AND_ERROR_FLAGS_STATIC.md 行 9](../../research/recovered/rea_batch2/reports/REA_20261104_04H_P0_CRT_TLS_GATE_AND_ERROR_FLAGS_STATIC.md?plain=1#L9-L9) — 1. `0x5BC6A9..0x5BC6C2` calls `0x5BC630`, tests its EAX record pointer, and on zero calls `0x5BB659` with `push 0x10`. Its caller `0x5B9EDB` (already checked 03
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
 
 <a id="field-186cc"></a>
 ## at + 0x186CC

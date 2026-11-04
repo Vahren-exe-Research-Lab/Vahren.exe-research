@@ -10,6 +10,12 @@
 - [research/recovered/e_reports/T020_E_T011_CACHE_LIFECYCLE_ACCEPTANCE_20261031_08H.md 行 17](../../research/recovered/e_reports/T020_E_T011_CACHE_LIFECYCLE_ACCEPTANCE_20261031_08H.md?plain=1#L17-L17) — - KB_CANDIDATE: ID above; owner E/T020, linked B-20261031-08H-T011-TRAINING-CACHE-LIFECYCLE-01 B/T011; VA 0x472091/0x49ED90/0x4726C1/0x4DEF40/0x4726D9/0x474B09/
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
 
+<a id="field-14"></a>
+## flag + 0x14
+
+- [research/recovered/rea_batch2/reports/REA_20261104_03H_P0_STREAMBUF_STATE1_GATE_STATIC.md 行 10](../../research/recovered/rea_batch2/reports/REA_20261104_03H_P0_STREAMBUF_STATE1_GATE_STATIC.md?plain=1#L10-L10) — 3. At 0x42AA80 (V9 function 0x42AA80..0x42AB0F), a virtual-adjusted receiver flag +0x14 bit 2 gates a subpath. If the adjusted +0x0C flags masked by 6 are zero,
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
+
 <a id="field-75"></a>
 ## flag + 0x75
 

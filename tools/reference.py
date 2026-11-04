@@ -157,13 +157,13 @@ def local_field_mentions(content, path, digest, recovery, line):
     return rows
 
 
-def load_mentions(root):
-    """Index literal VA occurrences in explicitly recovered, hash-verified reports."""
+def load_mentions(root, documents=None):
+    """Index literal mentions and optional Markdown text from hash-verified ledger sources."""
     ledger = root / "research/recovered/RECOVERY_LEDGER.tsv"
     if not ledger.exists():
         return []
     mentions = []
-    seen_sources = set()
+    seen_sources = {}
     pattern = re.compile(r"0x([0-9a-f]{6,8})(?![0-9a-f])", re.I)
     with ledger.open(encoding="utf-8-sig", newline="") as stream:
         reader = csv.DictReader(stream, delimiter="\t")
@@ -177,13 +177,15 @@ def load_mentions(root):
                 raise ValueError(f"Source path escapes repository: {row['destination']}")
             if not source.is_file():
                 raise ValueError(f"Missing recovered source: {row['destination']}")
-            payload = source.read_bytes()
-            digest = hashlib.sha256(payload).hexdigest()
+            payload, digest = seen_sources.get(source, (None, None))
+            if payload is None:
+                payload = source.read_bytes()
+                digest = hashlib.sha256(payload).hexdigest()
             if digest.lower() != row["destination_sha256"].lower():
                 raise ValueError(f"Stale recovered source checksum: {row['destination']}")
             if source in seen_sources:
                 continue
-            seen_sources.add(source)
+            seen_sources[source] = (payload, digest)
             path = source.relative_to(root).as_posix()
             recovery = {key: row.get(key, "") for key in ("coverage_state", "prior_coverage", "limitations")}
             recovery["ledger"] = {"path": ledger.relative_to(root).as_posix(),
@@ -192,7 +194,18 @@ def load_mentions(root):
             if source.name == "RUN_RESULT.json":
                 mentions.extend(run_records(content, path, digest, recovery))
                 continue
-            for line, content in enumerate(content.splitlines(), 1):
+            lines = content.splitlines()
+            if documents is not None and source.suffix.lower() == ".md" and lines:
+                heading = next(((number, match[1].strip())
+                                for number, value in enumerate(lines, 1)
+                                if (match := re.match(r"^ {0,3}#{1,6}\s+(.+?)(?:\s+#+)?\s*$", value))), None)
+                title_line, title = heading if heading else (1, source.name)
+                documents.append({"id": f"document:{path}", "name": title,
+                                  "title_line": title_line, "lines": lines,
+                                  "recovery": recovery,
+                                  "source": {"path": path, "sha256": digest,
+                                             "start_line": title_line, "end_line": title_line}})
+            for line, content in enumerate(lines, 1):
                 if source.suffix.lower() == ".md":
                     mentions.extend(local_field_mentions(content, path, digest, recovery, line))
                 for va in sorted({int(match[1], 16) for match in pattern.finditer(content)}):
@@ -380,11 +393,12 @@ def load(root):
                 aliases[key] = target
         relations.append(item)
         relation_ids.add(item["id"])
-    source_mentions = load_mentions(root)
+    documents = []
+    source_mentions = load_mentions(root, documents)
     static_calls, static_receipt = load_static_calls(root, symbols)
     corrections = load_corrections(root, {row["id"] for row in symbols + fields}, ids | relation_ids)
     return {"symbols": symbols, "fields": fields, "relations": relations,
-            "corrections": corrections,
+            "corrections": corrections, "documents": documents,
             "mentions": [row for row in source_mentions if row["kind"] != "field_mention"],
             "field_mentions": [row for row in source_mentions if row["kind"] == "field_mention"],
             "aliases": aliases, "static_calls": static_calls, "static_calls_receipt": static_receipt}
@@ -417,7 +431,48 @@ def search(data, query):
                      or needle in json.dumps(row, ensure_ascii=False).casefold()]
     corrections = [row for row in data["corrections"]
                    if row["subject"] in ids or needle in json.dumps(row, ensure_ascii=False).casefold()]
-    return matched + related + mentions + field_mentions + indexed_calls + corrections
+    # Structured address/field lookup retains its existing normalization and result set.
+    documents = document_matches(data["documents"], query) if not field and not needle.startswith(("va:0x", "field:")) else []
+    return matched + related + mentions + field_mentions + indexed_calls + corrections + documents
+
+
+def document_matches(documents, query):
+    """One bounded first-line excerpt per document, first ledger occurrence order, cap 20."""
+    needle = query.casefold()
+    if not needle.strip():
+        return []
+    matches = []
+    for document in documents:
+        lines = document["lines"]
+        title_hit = needle in document["name"].casefold()
+        filename_hit = needle in Path(document["source"]["path"]).name.casefold()
+        if title_hit or filename_hit:
+            line = document["title_line"]
+        else:
+            line = next((i for i, value in enumerate(lines, 1) if needle in value.casefold()), None)
+        if line is None:
+            continue
+        content = lines[line - 1]
+        # Map the folded match back to original character positions (casefold can expand).
+        folded = content.casefold()
+        offset = folded.find(needle)
+        position = 0
+        if offset >= 0:
+            folded_position = 0
+            for position, character in enumerate(content):
+                if folded_position + len(character.casefold()) > offset:
+                    break
+                folded_position += len(character.casefold())
+        start = max(0, min(position - max(0, (400 - len(query)) // 2), len(content) - 400))
+        excerpt = content[start:start + 400]
+        matches.append({"id": document["id"], "kind": "document_match", "name": document["name"],
+                        "summary": excerpt, "confidence": "研究本文の一致（意味・動作の検証なし）",
+                        "recovery": document["recovery"],
+                        "source": dict(document["source"], start_line=line, end_line=line)})
+    for match in matches[:20]:
+        match["total_document_matches"] = len(matches)
+        match["document_matches_truncated"] = len(matches) > 20
+    return matches[:20]
 
 
 def call_edges(data, query, incoming):
@@ -601,7 +656,9 @@ def render(root, data):
         index += [f"[登録関数間の直接CALL採録条件](static_calls_source.json) — {len(data['static_calls'])}箇所。"
                   "各関数ページで呼び出し元・先を参照でき、`callers VA --json` / `callees VA --json` でも検索できます。", ""]
     index += [f"[訂正履歴](CORRECTIONS.md) — {len(data['corrections'])} 件。訂正済みの旧解釈と現在の解釈を出典行付きで確認できます。", ""]
+    index += [f"[回収済み研究文書の題名・本文](DOCUMENTS.md) — {len(data['documents'])} 文書。題名・ファイル名・研究ID・本文の通常文字列を検索できます。", ""]
     files["reference/README.md"] = "\n".join(index)
+    files["reference/DOCUMENTS.md"] = render_documents(data["documents"])
     corrections = ["# 訂正履歴", "", "<!-- Generated by tools/reference.py. -->", "",
                    "対象は迫真戦記 ver0.67。旧解釈は歴史的な記録として保持しています。", ""]
     corrections += correction_lines(data["corrections"], None, labels, overview=True) or ["訂正の個別採録は未実施です。", ""]
@@ -610,6 +667,23 @@ def render(root, data):
     files.update(render_field_pages(data["field_mentions"]))
     return files
 
+
+
+def render_documents(documents):
+    lines = ["# 回収済み研究文書の題名・本文", "", "<!-- Generated by tools/reference.py. -->", "",
+             "回収台帳でSHAを照合したMarkdown本文だけを対象にします。研究本文の一致（意味・動作の検証なし）です。各文書の対象・部分回収・保留・訂正の制約を確認してください。", "",
+             "通常の文字列検索は題名・ファイル名・研究ID・本文を対象に、1文書につき最初の一致行の最大400文字を表示します。題名・ファイル名の一致は見出し行（見出しがなければ先頭行）を表示します。", "",
+             "文書結果は回収台帳での初出順で最大20件です。省略時は一致総数を表示します。この一覧には全文書を掲載しています。研究ID・題名で絞り込めます。アドレス・所有者＋オフセット検索は従来の専用結果を返します。", ""]
+    for document in documents:
+        source = document["source"]
+        recovery = document["recovery"]
+        ledger = recovery["ledger"]
+        link = "../" + quote(source["path"], safe="/") + f"?plain=1#L{source['start_line']}-L{source['end_line']}"
+        ledger_link = "../" + quote(ledger["path"], safe="/") + f"?plain=1#L{ledger['start_line']}-L{ledger['end_line']}"
+        lines += [f"- [{text(document['name'])}]({link}) — `{text(source['path'])}`",
+                  f"  回収状態 {text(recovery['coverage_state'])}。以前の収録状況 {text(recovery['prior_coverage'])}。[回収台帳]({ledger_link})。制約・訂正 {text(recovery['limitations'])}", ""]
+    lines += ["[事典の入口](README.md)", ""]
+    return "\n".join(lines)
 
 
 def render_field_pages(mentions):
@@ -683,8 +757,16 @@ def main():
             if args.json:
                 print(json.dumps(matches, ensure_ascii=False, indent=2))
             else:
+                document_hit = next((row for row in matches if row.get("kind") == "document_match"), None)
+                if document_hit and document_hit["document_matches_truncated"]:
+                    print(f"文書一致 {document_hit['total_document_matches']}件中、先頭20件を表示（台帳の初出順）。研究ID・題名で絞り込めます。")
                 for row in matches:
                     print(f"{row['id']}  {row.get('name', row.get('predicate', row.get('kind')))}  {row['summary']}  [{row['confidence']}]")
+                    if row.get("kind") == "document_match":
+                        source = row["source"]
+                        print(f"  根拠 {source['path']}:{source['start_line']}-{source['end_line']} / SHA256 {source['sha256']}")
+                        ledger = row["recovery"]["ledger"]
+                        print(f"  回収台帳 {ledger['path']}:{ledger['start_line']}-{ledger['end_line']}")
                     if row.get("kind") == "correction":
                         print(f"  訂正済みの旧解釈（履歴） {row['previous_interpretation']}")
                         print(f"  → 現在の解釈 {row['current_interpretation']} / 対象 {row['target_version']}")

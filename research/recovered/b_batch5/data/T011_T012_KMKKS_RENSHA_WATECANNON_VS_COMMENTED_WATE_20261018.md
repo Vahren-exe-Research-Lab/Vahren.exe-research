@@ -1,0 +1,14 @@
+# B-20261018-2021-02｜T011主/T012参照：kmkks系列の有効連装放水砲とa087側のコメント取得候補
+[CLASS VALID] 原作normalized 20_クラス/B_2222_レイノアレフ.dat L67-119: class kmkks:base skill=rensha_watecannon,seiretsu,c_at1／kmkks2:kmkks skill=rensha_watecannon,seiretsu,c_at2／kmkks3:kmkks skill=rensha_watecannon,seiretsu,c_at3。change=kmkks2*15→kmkks3*25、最後change=@。3Classとも同技能名をactive skillとして直接宣言。
+[COMMENT CONTRAST] 20_クラス/07_10_TNOK_レ_VAN_スカ.dat L380-448: a087/a0872/a0873のactive skillにはrensha_wategun等を指定し、watecannonは各Classの //,self_a087...,watecannon コメント内。active class watecannon取得宣言として扱わない。
+[ROOT ID CONTRAST] 原作32_ボススキル/B_2222_レイノアレフ.dat L318-335: skill rensha_watecannon:sk_ms はgun_delay=cannon*4, check800, range_min100, attr=wate, joint_skill=on, next=rensha_watecannon_nt0, pair_next=watecannon_pr0 を直接宣言。30_スキル/F10_missile_砲撃リニューアル.dat L660-685のskill watecannon:re_cannonとは異なるroot ID/親であり、名前が部分一致するだけで同一Skillとは扱えない。
+[ACTIVE WATER CHAIN] 32_ボススキル/B_2222_レイノアレフ.dat L336-394: rensha_watecannon_nt0 はrush=2/rush_degree160/next2=rensha_watecannon_nt1,nt2/next_order=on、nt1:b_cannon はnext3=watecannon_w_nt1,nt2,pr2,pr0。nt2:nt1はstart_degree_type=2、nt1は=1。子watecannon_w_nt1/nt2の直接attr=wate/mwate、str=attack*100/magic*20（L377-414）。nt1のコメント next=watecannon_w_nt3 は無効、次のnext=@が有効。
+[RELATION TO PRIOR] B-20261018-2021-01はtuyo_cannonとwatecannonが共通battering_cannon_nt0(attr=build)をraw next3で共有する新READY。今回のrensha_watecannon root/nt1直接next/next3 はそれと別構造（共通watecannon_pr0は別のpair_next参照）。前B-20261018-1514-01、Blocked B-1813等の証拠は再計上0。
+[NEW FACT] active kmkks系Classが列挙するのはrensha_watecannonであってwatecannonではない、Class a087系watecannonはコメント内、連装rootは独立のnext→next2→next3構造を宣言、という原文graph/取得境界の結合に限定。
+[EXE SAVED ONLY] 同梱target EXE既保存SHA256=e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187。旧一般VA0x59C1BA..0x59C253、0x57E5D3→0x57EB40、0x550E70/0x580280はreferenceのみ。root固有の実dispatch、Class.skill展開、child発射順/方向・標的・HP/MPは未確認、新逆解析0。
+[REIMPLEMENT] typed graphでclassSkillDirect/classParent/changeTarget/rootSkillId/rootNext/rootPairNext/childNext2/childNext3/rawActiveOrCommentを区別。曖昧な接頭/部分文字列一致でwatecannonとrensha_watecannonを合成しない。コメント技能を自動保有化しない。
+[VERIFY] 元Classがゲームで雇用・出撃できること、Classから有効Skill付与、native親b_cannonからの実効継承、next3の@解決、2連装の可視発射回数/方向/破城・水被害、MP待機・RNG・target優先、戦闘結果は全て未実機。
+[GOLDEN DESIGNED_NOT_RUN] 合法旧原作kmkks/2/3のUI技能所持と発動を先に確認、unit Class×level15/25直前直後と同旧EXE/DAT/SAVE/map/input/capture SHA・可能seedで、rensha rootの2方向・可視水弾・HP/MP/物体HP/待機・nexttick比較。a087 wate rootは合法取得が観測できなければINELIGIBLE。旧GameplayPASS0、新strict0、Task DONE0。
+[NEXT] T011でkmkks Unit出撃経路を保存原本から絞り、T012で一般next2/next3 producer/child resolver既存資料と段階別照合。原作sourceから実発射2回確定へ飛躍しない。
+[SAFETY] 原本ZIP/EXE/SAVE実行・書換なし、禁止VA再逆解析/拒否payload迂回なし、REA/Ghidra heavyなし、Remote/MASTER/T018/他owner/REA/dev_lab/Work/Git/push/設定/automation不変更。
+[READY] 本detail＋data/T011_DATA_MODEL.md＋data/T012_BATTLE_CALC.md＋evidence/LANE_B_HANDOFF.mdを同IDで保存独立4/4読戻し後のみB限定原文STATIC READY、E正式採用は別。

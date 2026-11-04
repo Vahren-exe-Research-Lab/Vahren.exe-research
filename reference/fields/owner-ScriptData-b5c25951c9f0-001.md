@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-14"></a>
+## ScriptData + 0x14
+
+- [research/recovered/b_batch5/data/T011_T012_SUPER_PARENT_STRING_OUTPARAM_MOVE_NATIVE_20261025_00H.md 行 11](../../research/recovered/b_batch5/data/T011_T012_SUPER_PARENT_STRING_OUTPARAM_MOVE_NATIVE_20261025_00H.md?plain=1#L11-L11) — 0x005050A1 LEA ESI,[EBP+0x4]→0x005050A4 MOV EDI,EAX→0x005050AB CALL 0x00405300。callee擬似CはESI先とEDI元の24B string相当を移動/コピーし、長さ+0x10・容量+0x14更新、元を空stringへ戻す。従ってtoken文
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
 <a id="field-20"></a>
 ## ScriptData + 0x20
 

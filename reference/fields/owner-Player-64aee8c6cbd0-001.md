@@ -4,6 +4,33 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-194"></a>
+## Player + 0x194
+
+- [research/recovered/rea_batch2/reports/REA_20261103_06H_P0_PLAYER194_ENGINE_ALIAS_CHAIN_STATIC.md 行 1](../../research/recovered/rea_batch2/reports/REA_20261103_06H_P0_PLAYER194_ENGINE_ALIAS_CHAIN_STATIC.md?plain=1#L1-L1) — # REA 2026-11-03 06H \| bounded g_Engine / Player+0x194 alias chain (STATIC / VERIFY)
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
+
+- [research/recovered/rea_batch2/reports/REA_20261103_06H_P0_PLAYER194_ENGINE_ALIAS_CHAIN_STATIC.md 行 23](../../research/recovered/rea_batch2/reports/REA_20261103_06H_P0_PLAYER194_ENGINE_ALIAS_CHAIN_STATIC.md?plain=1#L23-L23) — - **Dedup:** Same existing 09H research ID; no supersedes/errata necessary. `develop/symbols.tsv` already records the two global bases; `develop/REF_BATTLE_TAKE
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
+
+- [research/recovered/rea_batch2/reports/REA_20261103_07H_P0_STARTUP_WORKER_EXIT_GATE_STATIC.md 行 17](../../research/recovered/rea_batch2/reports/REA_20261103_07H_P0_STARTUP_WORKER_EXIT_GATE_STATIC.md?plain=1#L17-L17) — - This worker unconditionally sets EAX=1 at its normal epilogue, regardless of the return value from `0x4B78C0`, whose return is not checked locally. It thus **
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
+
+- [research/recovered/rea_batch2/reports/REA_20261103_07H_P0_STARTUP_WORKER_EXIT_GATE_STATIC.md 行 19](../../research/recovered/rea_batch2/reports/REA_20261103_07H_P0_STARTUP_WORKER_EXIT_GATE_STATIC.md?plain=1#L19-L19) — - **Narrow new conclusion:** original x86 has a same-function, mode-sensitive initiation/worker-exit gate lexically and normally preceding `0x4B9930` request. T
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
+
+- [research/recovered/rea_batch2/reports/REA_20261103_07H_P0_STARTUP_WORKER_EXIT_GATE_STATIC.md 行 27](../../research/recovered/rea_batch2/reports/REA_20261103_07H_P0_STARTUP_WORKER_EXIT_GATE_STATIC.md?plain=1#L27-L27) — - **Existing meanings / correction:** 06H already linked `Player+0x194` to embedded engine on qualified constructor path; current report adds mode/thread/exit g
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
+
+- [research/recovered/rea_batch2/reports/REA_20261103_07H_P0_STARTUP_WORKER_EXIT_GATE_STATIC.md 行 30](../../research/recovered/rea_batch2/reports/REA_20261103_07H_P0_STARTUP_WORKER_EXIT_GATE_STATIC.md?plain=1#L30-L30) — - **Next cursor:** bounded evidence for `0x48A5B0` allocation/failure propagation through `0x4B78C0` versus the worker's constant normal exit code, then request
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
+
+- [research/recovered/rea_batch2/reports/REA_20261103_08H_P0_TRIPLE_PLAYER_ALLOC_NULL_SIGNAL_GATES_STATIC.md 行 30](../../research/recovered/rea_batch2/reports/REA_20261103_08H_P0_TRIPLE_PLAYER_ALLOC_NULL_SIGNAL_GATES_STATIC.md?plain=1#L30-L30) — - **Dedup/errata:** Same existing historical 09H study, no new ID or supersedes. 06H already covered allocation #1 and successful `Player+0x194` alias. 07H alre
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
+
+- [research/recovered/rea_batch2/reports/REA_20261103_10H_P0_MODE2_PREVCALL_ENTRY_CONVERGENCE_STATIC.md 行 24](../../research/recovered/rea_batch2/reports/REA_20261103_10H_P0_MODE2_PREVCALL_ENTRY_CONVERGENCE_STATIC.md?plain=1#L24-L24) — - VERIFY remaining: actual mode-2 entry frequency and callback gate; indirect pre-call side effects and exception paths; three receiver vptr/lifetimes, allocati
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
+
 <a id="field-324"></a>
 ## Player + 0x324
 

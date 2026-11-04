@@ -10,4 +10,16 @@
 - [research/recovered/random_events/T032_RANDOM_EVENT_EFFECTS.md 行 101](../../research/recovered/random_events/T032_RANDOM_EVENT_EFFECTS.md?plain=1#L101-L101) — - randomev6の bare numeric var `cpo` はnormalized迫真script全体でこの1箇所しか参照されず、setterは0件。target numeric-var getter VA 0x463CA0 はmissing keyを新規record化し value field +0x1C
   制約・訂正　Historical CONFIRMED-SCRIPT/TARGET and conditional READY claims only; no new native/runtime/Golden validation; linked scripts/probes/assets not followed; original source prehistory refusal notices preserved; no omitted old section reconstructed
 
+<a id="field-20"></a>
+## field + 0x20
+
+- [research/recovered/b_batch5/data/T011_T012_MISSILE_SPECIAL_MP_UNIT_FIXTURE_20261013.md 行 21](../../research/recovered/b_batch5/data/T011_T012_MISSILE_SPECIAL_MP_UNIT_FIXTURE_20261013.md?plain=1#L21-L21) — [CROSS-LANE-NOTE-20261013-1906 / VERIFY ONLY / SAME B-20261013-1856-02] A owner read-only `data/T005_FORMAL_GRAMMAR.md` generic parser `0x505210` treats literal
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
+<a id="field-278"></a>
+## field + 0x278
+
+- [research/recovered/b_batch5/data/T011_T012_MISSILE_SPECIAL_MP_UNIT_FIXTURE_20261013.md 行 9](../../research/recovered/b_batch5/data/T011_T012_MISSILE_SPECIAL_MP_UNIT_FIXTURE_20261013.md?plain=1#L9-L9) — [REIMPLEMENT] Source Skill graph `new_misairu:sk_ms`, child`new_misairu_mz:new_misairu`, child`sp_new_misairu:new_misairu` and Unit raw skill2/leader_skill/lear
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

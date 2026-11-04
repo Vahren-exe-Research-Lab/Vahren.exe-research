@@ -88,3 +88,7 @@ E資料の選別では、除外指定した3報告が一括読み取りに含ま
 ## 追加回収と現在の所在
 
 [戦闘・AIの追加38報告](b_batch4/README.md)、[スクリプト文法・イベント実行の主要2文書](script_topics/README.md)、[防衛研究](defense_topic/README.md)を回収した。保留した7件は本文を収録せず理由だけ残す。[現在のMarkdown所在一覧](current_inventory/README.md)で、旧目録にないパス・回収台帳への対応・確認待ちを確認できる。名前だけのGitHub対応と本文一致を区別する。
+
+## 旧目録外のREAと次の追加回収
+
+[REAの現在版45報告](rea_batch2/README.md)、[戦闘・AIの追加44報告](b_batch5/README.md)、[乱数イベント選択・音声の主要3文書](rng_audio/README.md)を回収した。REAの[補足目録](rea_batch2/RESEARCH_SOURCE_CATALOG_SUPPLEMENT.tsv)は旧目録1937件を変更せず、旧目録外の45現在版のSHAを記録する。[ID重複などの意味的保留](rea_batch2/DEFERRED.md)も確認する。[回収済み全文書](../../reference/DOCUMENTS.md)は、題名・研究ID・本文の通常文字列検索の入口になる。

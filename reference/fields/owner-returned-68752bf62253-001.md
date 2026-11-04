@@ -10,4 +10,7 @@
 - [research/recovered/b_batch3/T011_FOLLOW_COMPILER_RUSH_RESULT_LINK_NATIVE_20261027_20H.md 行 7](../../research/recovered/b_batch3/T011_FOLLOW_COMPILER_RUSH_RESULT_LINK_NATIVE_20261027_20H.md?plain=1#L7-L7) — [COMPILATION OTHER BRANCH] 比較偽は0x59B972 PUSH "skill"(0x624C48)・0x59B980 EDX="follow"(0x624C40)→0x59B987 CALL 0x4647D0、0x59B991 EAX=[returned+0x20]→0x59B999 [Ski
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+- [research/recovered/b_batch5/data/T011_NEXT_ORDER_INTERVAL_NATIVE_20261013.md 行 5](../../research/recovered/b_batch5/data/T011_NEXT_ORDER_INTERVAL_NATIVE_20261013.md?plain=1#L5-L5) — [PRODUCER +274] 0x59C3EB EDX='next_interval'→0x59C410 call0x4647D0→0x59C415 ECX=[returned+0x20]→0x59C418 MOV DWORD[compiledSkill+0x274],ECX. The loaded value is
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

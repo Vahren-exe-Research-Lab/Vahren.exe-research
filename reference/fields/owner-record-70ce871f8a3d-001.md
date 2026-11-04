@@ -13,6 +13,9 @@
 <a id="field-1c"></a>
 ## record + 0x1C
 
+- [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 426](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L426-L426) — [VERIFY / IMPLEMENT] [esp+0x94] の実引数origin・符号、ESIの型と初期化、record lifecycle／tree+0x32Cとの所属関係、overflow policy、読出callee、合法シーン・save/load・RNGは未確定。`record+0x1C = clock
+  制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
+
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 298](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L298-L298) — [CONFIRMED-TARGET / 保存済みnative] `exe/T006_SELECT_SETTER_FULL.txt` 0x4637A0..0x4638A2を再読。setter 0x4637A0 は entry時にキーをstring化後、`0x46380A push 0x20`→`0x463810 call
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
 
@@ -75,6 +78,18 @@
 
 - [research/recovered/b_batch2/T028_NULL_VECTOR_CANDIDATE_DESTRUCTION_NATIVE_20261028_12H.md 行 11](../../research/recovered/b_batch2/T028_NULL_VECTOR_CANDIDATE_DESTRUCTION_NATIVE_20261028_12H.md?plain=1#L11-L11) — 同一key該当時、0x461038のowner+0x32Cを使って0x46103E CALL0x510C20（木ノードerase）を実行し、0x46104E [record+0x94]=0、0x461055 heap/inline分岐、0x46105C [record+0x84]=0でstringを空にする。非該当は次
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+<a id="field-90"></a>
+## record + 0x90
+
+- [research/recovered/rea_batch2/reports/REA_20261104_04H_P0_CRT_TLS_GATE_AND_ERROR_FLAGS_STATIC.md 行 10](../../research/recovered/rea_batch2/reports/REA_20261104_04H_P0_CRT_TLS_GATE_AND_ERROR_FLAGS_STATIC.md?plain=1#L10-L10) — 2. `0x5BC630..0x5BC6A8` saves `KERNEL32!GetLastError` at entry and calls `KERNEL32!SetLastError` before return (IAT `0x609158` and `0x6090E8`). It calls `0x5BC4
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
+
+- [research/recovered/rea_batch2/reports/REA_20261104_05H_P0_IOS_FLAGS_EXCEPTION_GATE_STATIC.md 行 23](../../research/recovered/rea_batch2/reports/REA_20261104_05H_P0_IOS_FLAGS_EXCEPTION_GATE_STATIC.md?plain=1#L23-L23) — ## 05H same-run addendum: CRT record +0x90 writer provenance
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
+
+- [research/recovered/rea_batch2/reports/REA_20261104_05H_P0_IOS_FLAGS_EXCEPTION_GATE_STATIC.md 行 37](../../research/recovered/rea_batch2/reports/REA_20261104_05H_P0_IOS_FLAGS_EXCEPTION_GATE_STATIC.md?plain=1#L37-L37) — - **STATIC**: native field writes, intersection, control-flow, three literal strings, 10 direct E8 receipts and `RET 4`. **INFERRED**: iostream error-state sema
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
 
 <a id="field-94"></a>
 ## record + 0x94

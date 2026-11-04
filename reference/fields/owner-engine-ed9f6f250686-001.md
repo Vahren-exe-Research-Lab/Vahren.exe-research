@@ -85,6 +85,21 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 124](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L124-L124) — - ~~`wait()` が判定するUIオブジェクトの意味~~ → **解決**: 引数なしの wait は、次のものが終わるまで待つ。(a) 0x520280: メイン画面（engine+0x1E8630）でスクロールや移動の要求が残っている（+0x438 ≠ 0x80000008、または +0x468 ≠ +0x4
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+- [research/recovered/rea_batch2/reports/REA_20261103_08H_P0_TRIPLE_PLAYER_ALLOC_NULL_SIGNAL_GATES_STATIC.md 行 11](../../research/recovered/rea_batch2/reports/REA_20261103_08H_P0_TRIPLE_PLAYER_ALLOC_NULL_SIGNAL_GATES_STATIC.md?plain=1#L11-L11) — - Allocation 1: `0x48A934 cmp eax,ebx; 0x48A936 je 0x48A944` skips `0x48A93D -> 0x51E100` and sets EAX=0 at `0x48A944`; `0x48A952` stores result/NULL into `[eng
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
+
+<a id="field-1e8634"></a>
+## engine + 0x1E8634
+
+- [research/recovered/rea_batch2/reports/REA_20261103_08H_P0_TRIPLE_PLAYER_ALLOC_NULL_SIGNAL_GATES_STATIC.md 行 12](../../research/recovered/rea_batch2/reports/REA_20261103_08H_P0_TRIPLE_PLAYER_ALLOC_NULL_SIGNAL_GATES_STATIC.md?plain=1#L12-L12) — - Allocation 2: `0x48A96C cmp eax,ebx; 0x48A96E je 0x48A97E` skips `0x48A977 -> 0x447280` and zeroes EAX at `0x48A97E`; `0x48A989` stores result/NULL into `[eng
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
+
+<a id="field-1e8638"></a>
+## engine + 0x1E8638
+
+- [research/recovered/rea_batch2/reports/REA_20261103_08H_P0_TRIPLE_PLAYER_ALLOC_NULL_SIGNAL_GATES_STATIC.md 行 13](../../research/recovered/rea_batch2/reports/REA_20261103_08H_P0_TRIPLE_PLAYER_ALLOC_NULL_SIGNAL_GATES_STATIC.md?plain=1#L13-L13) — - Allocation 3: `0x48A99F cmp eax,ebx; 0x48A9A1 je 0x48A9B1` skips `0x48A9AA -> 0x447280` and zeroes EAX at `0x48A9B1`; `0x48A9B8` stores result/NULL into `[eng
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
+
 <a id="field-1e863c"></a>
 ## engine + 0x1E863C
 
@@ -96,6 +111,9 @@
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3543](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3543-L3543) — \| **E = engine = G+0x504** \| VA 0x8BE7F4 \| 戦闘・戦略の資料にある「GM / engine + 0x1EEC3C、+0x1EEC44、+0x1E8630 …」の全部 \| 静的初期化 `0x553F60(&0x8BE7F4)`。Unit 初期化で `Unit+0x1E0 = G+
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+- [research/recovered/rea_batch2/reports/REA_20261103_06H_P0_PLAYER194_ENGINE_ALIAS_CHAIN_STATIC.md 行 12](../../research/recovered/rea_batch2/reports/REA_20261103_06H_P0_PLAYER194_ENGINE_ALIAS_CHAIN_STATIC.md?plain=1#L12-L12) — - Separate loop entry `0x555E35 mov ecx,0x8BE2F0; 0x555E3D call 0x4B9930`; in its case-1 path `0x4B99B9 lea eax,[esi+0x504]` passes that same `0x8BE7F4` to `0x4
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
 
 - [research/recovered/script_topics/T010_EVENT_SCHEDULER.md 行 375](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L375-L375) — [CONFIRMED-SAVED-NATIVE / NEW GATE] A所有 `exe/T006_FLOW_CONTROL_PROBE.txt` 0x4335E0..0x433621。`[engine+0x1EEC3C]`のmode分岐でmode1は0x433617を経て`0x4338D0`へ、mode6は0x433
   制約・訂正　Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
@@ -169,6 +187,15 @@
 - [research/recovered/DEVLAB_MINIMAP_NATIVE_CONTRACT_20261011.md 行 60](../../research/recovered/DEVLAB_MINIMAP_NATIVE_CONTRACT_20261011.md?plain=1#L60-L60) — - `0x4DD8C0` 内の追加条件は `*(engine+0x1EEEE0) != 0`。偽の場合は**この関数のメッシュ新規生成分岐をskip**。既存の別オーナーにあるoverlayを削除/消去したとまで断定しない。
   制約・訂正　Historical author claims preserved; source hash verified; no new native or runtime validation; referenced local evidence not included
 
+<a id="field-1ef140"></a>
+## engine + 0x1EF140
+
+- [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 137](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L137-L137) — - `isWorld` opcode3 -> VA 0x44F59F: `engine+0x1EF140 == 1`
+  制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
+
+- [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 138](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L138-L138) — - `isMap/isEvent` opcode4 -> VA 0x44F5B0: `engine+0x1EF140 == 2`
+  制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
+
 <a id="field-1ef175"></a>
 ## engine + 0x1EF175
 
@@ -180,6 +207,27 @@
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 445](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L445-L445) — - 同じ switch で、id 7 isNewTurn は engine+0x1EF4C1 のバイト、id 8 isWorldMusicStop は (engine+0x1EF175 == 0) を返す。どちらもエンジンの状態なので未実装。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+- [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 139](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L139-L139) — - `isNewTurn` opcode7 -> VA 0x44F63C: byte `engine+0x1EF4C1`
+  制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
+
+<a id="field-1ef4c2"></a>
+## engine + 0x1EF4C2
+
+- [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 140](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L140-L140) — - `isPlayerTurn` opcode9 -> VA 0x44F658: byte `engine+0x1EF4C2`
+  制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
+
+<a id="field-1ef4c3"></a>
+## engine + 0x1EF4C3
+
+- [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 141](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L141-L141) — - `isPlayerEnd` opcode10 -> VA 0x44F664: byte `engine+0x1EF4C3`
+  制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
+
+<a id="field-1ef4c4"></a>
+## engine + 0x1EF4C4
+
+- [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 142](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L142-L142) — - `isComTurn` opcode12 -> VA 0x44F6A8: byte `engine+0x1EF4C4` を入口gateとして追加power条件を評価
+  制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
 
 <a id="field-1ef6b4"></a>
 ## engine + 0x1EF6B4

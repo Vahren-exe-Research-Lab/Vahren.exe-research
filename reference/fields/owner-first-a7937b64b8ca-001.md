@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-38"></a>
+## first + 0x38
+
+- [research/recovered/rea_batch2/reports/REA_20261104_00H_P0_STREAMBUF_CALLER_ARGUMENT_ORIGIN_STATIC.md 行 10](../../research/recovered/rea_batch2/reports/REA_20261104_00H_P0_STREAMBUF_CALLER_ARGUMENT_ORIGIN_STATIC.md?plain=1#L10-L10) — - Same `0x42A2B0` original later `0x42A30D push 0x22`; `0x42A30F push edi` (still caller's outer+4) and `0x42A31B call 0x42A7A0`; latter `0x42A7CB call 0x42AB20
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
+
 <a id="field-a0c"></a>
 ## first + 0xA0C
 

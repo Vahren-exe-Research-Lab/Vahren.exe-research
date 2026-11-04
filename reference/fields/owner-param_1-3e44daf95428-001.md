@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-10"></a>
+## param_1 + 0x10
+
+- [research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md 行 21](../../research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md?plain=1#L21-L21) — - 走査候補には `candidate+0x78!=0 \|\| candidate+0x94!=0` の入口条件があり、候補の `[+0xD4,+0xD8)` という0x1C strideの配列風領域から `+0x10` 相当の値を取り、元の `param_1+0x10` と `0x00402C40` comparato
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
 <a id="field-48"></a>
 ## param_1 + 0x48
 
@@ -16,17 +22,41 @@
 - [research/recovered/b_batch4/data/B_T012_T013_PERSON_POOL_LIFECYCLE_OFFLINE_20261023_1215.md 行 19](../../research/recovered/b_batch4/data/B_T012_T013_PERSON_POOL_LIFECYCLE_OFFLINE_20261023_1215.md?plain=1#L19-L19) — \| `0x005149C0` \| `*(void **)(param_1+0x4C) = *(void **)(param_1+0x48)`、類似操作は`+0x38`群、`+0x58`群にも存在 \| **一括論理クリア：STATIC-GHIDRA**。要素毎の仮想デストラクタ呼出しはこの関数内に見えない。呼出site
   制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
 
+<a id="field-78"></a>
+## param_1 + 0x78
+
+- [research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md 行 20](../../research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md?plain=1#L20-L20) — - 今回新たに確認した `0x00583DC0` は `*(char*)(param_1+0x78)==0 && *(int*)(param_1+0x94)==0` の場合、`*(int*)(param_1+0x1A4)` を取り、さらにその `+0x300` を参照してtreeを走査する。この読み取りは**`+0x1
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
+<a id="field-94"></a>
+## param_1 + 0x94
+
+- [research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md 行 20](../../research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md?plain=1#L20-L20) — - 今回新たに確認した `0x00583DC0` は `*(char*)(param_1+0x78)==0 && *(int*)(param_1+0x94)==0` の場合、`*(int*)(param_1+0x1A4)` を取り、さらにその `+0x300` を参照してtreeを走査する。この読み取りは**`+0x1
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
 <a id="field-dc"></a>
 ## param_1 + 0xDC
 
 - [research/recovered/b_batch4/data/T011_EXP_LEVEL_INIT_RECALC_OFFLINE_20261021_0309.md 行 11](../../research/recovered/b_batch4/data/T011_EXP_LEVEL_INIT_RECALC_OFFLINE_20261021_0309.md?plain=1#L11-L11) — 1. `0x58B7F0`擬似C: 引数`param_3==-0x7FFFFFF8`のとき、`param_2+0x1A4`に関係する辞書の`class`値をレベル候補へ取得。それ以外は渡された`param_3`を用いる。`param_1==0x00AB42F8`では辞書`scenario`の値を加算、別の`param_
   制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
 
+- [research/recovered/b_batch5/data/T011_LEVEL_ZERO_SENTINEL_CALLER_BRANCHES_OFFLINE_20261021_0413.md 行 13](../../research/recovered/b_batch5/data/T011_LEVEL_ZERO_SENTINEL_CALLER_BRANCHES_OFFLINE_20261021_0413.md?plain=1#L13-L13) — 3. callee `0x0058B7F0`の保存擬似Cは第3引数が`-0x7FFFFFF8`の場合、Unit候補`+0x1A4`の辞書からキー`class`の値を取り直して`+0x168`へ書き込む。それ以外では渡された数値を使用する。その後、別の`param_1`種別による`scenario`値または`param_
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
 <a id="field-16c"></a>
 ## param_1 + 0x16C
 
 - [research/recovered/b_batch4/data/T011_EXP_LEVEL_INIT_RECALC_OFFLINE_20261021_0309.md 行 13](../../research/recovered/b_batch4/data/T011_EXP_LEVEL_INIT_RECALC_OFFLINE_20261021_0309.md?plain=1#L13-L13) — 3. `0x58A540`: `param_1+0x16C=0`を書いた後、`+0x168 > 1`ならレベルに応じたループで`+0x16C`を再算出。`exp_max`と`exp_mul`という設定キーを参照し、成長の途中で`0x5D1B80`も呼ぶ。`+0x16C`は初期化経路で残存値を無条件に温存する領域ではない
   制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+<a id="field-1a4"></a>
+## param_1 + 0x1A4
+
+- [research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md 行 20](../../research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md?plain=1#L20-L20) — - 今回新たに確認した `0x00583DC0` は `*(char*)(param_1+0x78)==0 && *(int*)(param_1+0x94)==0` の場合、`*(int*)(param_1+0x1A4)` を取り、さらにその `+0x300` を参照してtreeを走査する。この読み取りは**`+0x1
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
+- [research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md 行 23](../../research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md?plain=1#L23-L23) — - 直接CALL索引：`0x00583CF0` 内 `0x00583D82 -> 0x00583DC0`。`0x00583CF0`はまず `*(param_1+0x1A4)+0x2F0` を介した別の走査を行い、行き着かない場合に `0x583DC0` のフォールバックへ進む擬似Cがある。**`+0x2F0`と`+0x
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
 
 <a id="field-280"></a>
 ## param_1 + 0x280
@@ -45,5 +75,20 @@
 
 - [research/recovered/b_batch3/T011_MEMBER_FACTORY_REENTRY_GATE_OFFLINE_20261021_0510.md 行 20](../../research/recovered/b_batch3/T011_MEMBER_FACTORY_REENTRY_GATE_OFFLINE_20261021_0510.md?plain=1#L20-L20) — 2. `0x0046717E → 0x00582D90`へ戻る直接CALLを確認。続いて `0x0046718D → 0x00436560`、`0x004671A7 → 0x00436680`、`0x004671B3 → 0x00463280`の順が保存擬似Cに存在し、最後の呼出には`param_1 + 0x2FC`が
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch5/data/T011_MEMBER_LOOKUP_BACKLINK_AND_TREE_INSERT_OFFLINE_20261021_0610.md 行 21](../../research/recovered/b_batch5/data/T011_MEMBER_LOOKUP_BACKLINK_AND_TREE_INSERT_OFFLINE_20261021_0610.md?plain=1#L21-L21) — - `0x00466F60`の `0x004671B3 → 0x00463280` は `param_1+0x2FC` を第1引数とする（推定用途：当該コンテキスト内のtree管理。実体型VERIFY）。
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
+- [research/recovered/b_batch5/data/T011_MEMBER_LOOKUP_BACKLINK_AND_TREE_INSERT_OFFLINE_20261021_0610.md 行 25](../../research/recovered/b_batch5/data/T011_MEMBER_LOOKUP_BACKLINK_AND_TREE_INSERT_OFFLINE_20261021_0610.md?plain=1#L25-L25) — - 同じ`0x00463280`は既存T013研究でもtreeへの挿入helperとして言及済み。**今回のT011固有増分は、member lookupの書込と当該生成callerの`param_1+0x2FC` tree成否の接続**であり、汎用挿入helper自体を新発見として再計上しない。
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
+- [research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md 行 12](../../research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md?plain=1#L12-L12) — - 前回 `B-OFFLINE-20261021-0610-01` で確認済み：`0x00466F60` の直接CALL site `0x004671B3 -> 0x00463280` は第1引数として `param_1+0x2FC` を渡す。ここでは `param_1` を「当該callerのコンテキストポインタ」と
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
+<a id="field-300"></a>
+## param_1 + 0x300
+
+- [research/recovered/b_batch5/data/T011_MEMBER_LOOKUP_BACKLINK_AND_TREE_INSERT_OFFLINE_20261021_0610.md 行 14](../../research/recovered/b_batch5/data/T011_MEMBER_LOOKUP_BACKLINK_AND_TREE_INSERT_OFFLINE_20261021_0610.md?plain=1#L14-L14) — - `local_10 != *(int *)(param_1 + 0x300)` のhit分岐で、`*(int *)(*(int *)(local_10 + 0x28) + 0x1A4) = param_1` を実行し、続いて `uVar1 = *(undefined4 *)(local_10 + 0x28)` を返
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

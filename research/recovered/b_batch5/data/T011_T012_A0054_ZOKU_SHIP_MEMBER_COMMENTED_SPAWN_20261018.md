@@ -1,0 +1,15 @@
+# B-20261018-1418-01｜T011主/T012参照：a0054船員テンプレート4件とコメント化された生成経路
+[DATE/CLASS] 2026-10-18 14時台 JST。STATIC ORIGINAL SOURCE only。実効編成・合法生成・戦闘結果はVERIFY。旧原作Gameplay PASS0、new-old strict MATCH0、Task DONE+0。
+[PROVENANCE] 原作の正規化済み調査コピー read-only。対象EXE既存SHA256=e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187（今回はEXE未解析）。B既正式 B-20261018-1214-01 の砲撃raw key、および B-20261018-1328-01 のClass a0054 direct skillsは再採番しない。
+[RAW UNIT] data/normalized/hakushin067_core/a_default/script/20_クラス/1919_その他.dat L827-850: unit zoku29:zoku1、zoku30:zoku1、zoku31:zoku1、zoku32:zoku1 の4宣言は、それぞれ member@sci1=a0054*7 / level=35 / no_regular=off を直接指定。
+[RAW UNIT PARENT] 50_その他新システム/ship.dat L85-103 は unit zoku1:kobune1 であり、class=c_ship/level=25/skill=s_kaizoku3 等を直記。zoku29..32のUnit親zoku1と、memberで指定されたClass a0054は異なる参照辺。親の有効class/Skill継承はVERIFY。
+[RAW CLASS] 20_クラス/1919_その他.dat L896-906 class a0054:a005 は直接 skill=sp_cannon,b_cannon,seiretsu,c_at3、change=@、merce=a005,a0052,a0053 を指定（既B-1328）。Unitのmember@sci1とClassの直接skillを混同しない。
+[COMMENT-GATED SPAWN] 2026_イベント_旧版クッキー☆原理主義党/po26_event_2.dat の event po26_premises L149-169 は /* ... */ block comment。L158-161に addUnit(zoku29,sp25)〜addUnit(zoku32,sp25) が字面上存在するが、このblockの有効命令とはみなせない。
+[BOUNDED TEXT SEARCH] normalized a_default/script/*.dat 全階層のliteral a0054一致は当該1919_その他.datの5箇所（member4+class宣言1）。zoku29/30/31/32は各2箇所（unit定義1+上記コメントaddUnit1）、合計8一致。検索語に現れない間接生成、マップ配置、内部生成、他領域は除外できない。前回「10_ユニットDATではa0054直接参照0」はスコープ限定であり、全Unit不存在の結論ではない。
+[NEW DELTA] 前回a0054の合法取得経路が未確認だったのに対し、シナリオ修飾付き member を保持する4つの別ID Unit定義を特定。同時に、唯一文字列検索で発見したaddUnitサイトはコメント内と識別した。これは合法生成の証明ではなく、取得調査を具体化する限定原文証拠。
+[IMPLEMENT] raw Unit parent、Unit class、scenario-qualified member Class/count、Class parent/direct skills/change/merce、event comment/active syntax を別の出所付きstateに保存。member@sci1=a0054*7 を zoku29 の class=a0054 へ潰さない。コメント内addUnitをruntime生成イベントと扱わない。
+[PRE-SAVED XREF ONLY] B既保存VA0x59C1BA..0x59C253のSkill関連getter、VA0x57BEC3のpostskill/keyed処理を参考に留め、新規EXE解析なし。member@sci1/Unit生成/Skill実効化のnative mappingは未証明。
+[GOLDEN DESIGNED NOT RUN] 正規原作で合法にzoku29..32が出現・出撃し、a0054のmemberと砲撃2技能保有が可視確認できた場合のみ、old/new同EXE/DAT/SAVE/map/input/capture SHA・seedでb_cannon/sp_cannon使用順、待機、発射、HP/MP、次tickを比較。コメントsiteのみではeligibleにしない。旧Gameplay PASS0、strict MATCH0。
+[VERIFY NEXT] 有効spawn/初期map/Unit配置、@sci1フィールドとmember7の実装、Unit parent→member Class→Skill継承、同キーcooldown実作用、Skill+A18/A1C、latch+1E560・方向+18688・0x4E7ED0・0x580280・MP fallback・最終HPはOPEN。
+[SAFETY/OWNER] 編集はB T011/T012 ownerとLANE_B_HANDOFFのみ。MASTER checkpoint182/公式579=A115/B212/C136/D116はE専有・B非変更。拒否済B0121/0228/0316/0515/0911/1110等・禁止VA5710C0..571500や58021E..580340再試行なし。原本EXE/ZIP/SAVE・他lane・REA/dev_lab・Git/push・Remote・設定・automation変更なし。
+[READY GATE] 本detail＋data/T011_DATA_MODEL.md＋data/T012_BATTLE_CALC.md＋evidence/LANE_B_HANDOFF.md の4点を保存し同ID/事実/VERIFY/Goldenを独立readbackして初めてB限定STATIC SOURCE READY 1。E正式統合は別審査。
