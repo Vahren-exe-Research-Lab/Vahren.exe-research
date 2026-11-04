@@ -1,0 +1,54 @@
+{
+  "research_id": "B-OFFLINE-20261101-10H-T011-T024-GROUP34-PROXIMITY-GATE-01",
+  "owner": "B",
+  "state": [
+    "OFFLINE-UNSYNCED",
+    "STATIC",
+    "INFERRED",
+    "VERIFY",
+    "NOT READY"
+  ],
+  "time_local": "2026-11-01 10H Asia/Tokyo",
+  "pc_write": false,
+  "pc_readback": false,
+  "github_write": false,
+  "original_game_Golden_PASS": 0,
+  "strict_MATCH": 0,
+  "source_validation_pass": 62,
+  "source_validation_total": 62,
+  "chatgpt_container_saved_files": 4,
+  "chatgpt_container_readback_matches": 4,
+  "files": [
+    {
+      "path": "data/T011_T024_GROUP34_PROXIMITY_RATIO_100TICK_NATIVE_20261101_10H.md",
+      "size_bytes": 11366,
+      "sha256": "6b99f9f4a10c2498386fb12f7924621cfa07f9d656d484235f96b2845ae9e247",
+      "readback_sha256": "6b99f9f4a10c2498386fb12f7924621cfa07f9d656d484235f96b2845ae9e247",
+      "match": true
+    },
+    {
+      "path": "data/B_OFFLINE_20261101_10H_GROUP34_PROXIMITY_EVIDENCE.json",
+      "size_bytes": 16354,
+      "sha256": "562415c00b07730547e0bfc92f693503414cc742453c60f95bff8a7e2cb1ce9d",
+      "readback_sha256": "562415c00b07730547e0bfc92f693503414cc742453c60f95bff8a7e2cb1ce9d",
+      "match": true
+    },
+    {
+      "path": "data/B_20261101_10H_GROUP34_PROXIMITY_READONLY_VERIFY.py",
+      "size_bytes": 8088,
+      "sha256": "fbe6e4a2063ee7dc739be53bc8490da9e84ab773f5b4a699e8e6148f92db4334",
+      "readback_sha256": "fbe6e4a2063ee7dc739be53bc8490da9e84ab773f5b4a699e8e6148f92db4334",
+      "match": true
+    },
+    {
+      "path": "evidence/LANE_B_HANDOFF_OFFLINE_DELTA_20261101_10H.md",
+      "size_bytes": 3402,
+      "sha256": "0ac8ccafbfe7bd12439207d923d34a8480862dbcf4c1ad34bfba4fe6ec0a6f1c",
+      "readback_sha256": "0ac8ccafbfe7bd12439207d923d34a8480862dbcf4c1ad34bfba4fe6ec0a6f1c",
+      "match": true
+    }
+  ],
+  "local_connection_error": "MCP SSE probe returned 429 from openai.org",
+  "recovery_status": "03H local write unknown; 04H-10H local PC unsynced.",
+  "limitations": "Original gameplay and current PC MASTER/HANDOFF not reverified."
+}

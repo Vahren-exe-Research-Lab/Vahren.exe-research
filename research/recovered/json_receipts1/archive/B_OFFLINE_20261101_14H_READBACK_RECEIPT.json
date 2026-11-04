@@ -1,0 +1,46 @@
+{
+  "research_id": "B-OFFLINE-20261101-14H-T011-T024-DISTANCE-COMPARE-BOUNDARY-01",
+  "pc_sync": false,
+  "github_write": false,
+  "library_sync": true,
+  "artifact_count": 4,
+  "readback_pass": 4,
+  "manifest": [
+    {
+      "path": "data/T011_T024_DISTANCE_COMPARATOR_BOUNDARY_CROSS_GATES_OFFLINE_20261101_14H.md",
+      "bytes": 9656,
+      "sha256": "2A6F516810D29B5B6E08AF683892CA8AD32300C7BDBF52C336E3D423064DAF63",
+      "readback": true,
+      "library_readback_sha256": "2A6F516810D29B5B6E08AF683892CA8AD32300C7BDBF52C336E3D423064DAF63",
+      "library_readback_ok": true
+    },
+    {
+      "path": "data/B_OFFLINE_20261101_14H_DISTANCE_BOUNDARY_EVIDENCE.json",
+      "bytes": 3400,
+      "sha256": "9941DE16CB1EB58D894EDCDCA4846E058976EE4093C6D4C2A604512124EBB392",
+      "readback": true,
+      "library_readback_sha256": "9941DE16CB1EB58D894EDCDCA4846E058976EE4093C6D4C2A604512124EBB392",
+      "library_readback_ok": true
+    },
+    {
+      "path": "data/B_20261101_14H_DISTANCE_BOUNDARY_EVIDENCE_READONLY.py",
+      "bytes": 3939,
+      "sha256": "DDDC83FB1DA665D1F78646699131B25BEE7978879549BCC752DA1544156F494B",
+      "readback": true,
+      "library_readback_sha256": "DDDC83FB1DA665D1F78646699131B25BEE7978879549BCC752DA1544156F494B",
+      "library_readback_ok": true
+    },
+    {
+      "path": "evidence/LANE_B_HANDOFF_OFFLINE_DELTA_20261101_14H.md",
+      "bytes": 2093,
+      "sha256": "41D463B73E72AF0BA720986443F98350F417AB06643A5B986921B90BC8EE553E",
+      "readback": true,
+      "library_readback_sha256": "41D463B73E72AF0BA720986443F98350F417AB06643A5B986921B90BC8EE553E",
+      "library_readback_ok": true
+    }
+  ],
+  "original_game_golden_pass": 0,
+  "strict_match": 0,
+  "ready": false,
+  "library_readback_pass": 4
+}

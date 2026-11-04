@@ -1,0 +1,54 @@
+{
+  "research_id": "B-OFFLINE-20261101-15H-T011-T024-NAN-COMPARATOR-TRANSITIVITY-01",
+  "owner": "B",
+  "run_date_local": "2026-11-01 15H JST",
+  "pc_sync": false,
+  "github_write": false,
+  "library_sync": true,
+  "manifest": [
+    {
+      "path": "data/T011_T024_DISTANCE_NAN_COMPARATOR_NONTRANSITIVE_OFFLINE_20261101_15H.md",
+      "bytes": 9280,
+      "sha256": "F8709B82172978E67A3DE07AA5E994D8D4269BAAF294C5C43296F1764B90E952",
+      "local_readback": true,
+      "library_materialized_readback": true,
+      "library_materialized_sha256": "F8709B82172978E67A3DE07AA5E994D8D4269BAAF294C5C43296F1764B90E952"
+    },
+    {
+      "path": "data/B_OFFLINE_20261101_15H_NAN_COMPARATOR_ORDER_EVIDENCE.json",
+      "bytes": 2488,
+      "sha256": "8C9924CEC3099C2E1F018CE9C227B679AADC6AE5C1AEBF33CEEB8758975CB1AA",
+      "local_readback": true,
+      "library_materialized_readback": true,
+      "library_materialized_sha256": "8C9924CEC3099C2E1F018CE9C227B679AADC6AE5C1AEBF33CEEB8758975CB1AA"
+    },
+    {
+      "path": "data/B_20261101_15H_NAN_COMPARATOR_ORDER_READONLY_VERIFY.py",
+      "bytes": 5986,
+      "sha256": "EF06A46B5358E905B64B5C953B9CA82BE49C35E2043DBB2C395486508C7C427F",
+      "local_readback": true,
+      "library_materialized_readback": true,
+      "library_materialized_sha256": "EF06A46B5358E905B64B5C953B9CA82BE49C35E2043DBB2C395486508C7C427F"
+    },
+    {
+      "path": "evidence/LANE_B_HANDOFF_OFFLINE_DELTA_20261101_15H.md",
+      "bytes": 3121,
+      "sha256": "057E44DAC80C09D3402F5BBEC32E82C3A661034D38951B63AB8AABD69565C44B",
+      "local_readback": true,
+      "library_materialized_readback": true,
+      "library_materialized_sha256": "057E44DAC80C09D3402F5BBEC32E82C3A661034D38951B63AB8AABD69565C44B"
+    }
+  ],
+  "source_validation_checks_passed": 72,
+  "prior_05H_to_14H_files_local_sha_verified": 40,
+  "artifact_count": 4,
+  "library_readback_pass": 4,
+  "new_original_exe_read": false,
+  "golden_pass": 0,
+  "strict_match": 0,
+  "ready": false,
+  "last_error": "INVALID_ARGUMENT: Error code: INVALID_ARGUMENT; Error: McpServerError: Session terminated",
+  "pc_03H_recovery": "UNVERIFIED",
+  "source": "PRIOR_CAPTURED_STATIC+SYNTHETIC_ONLY",
+  "next": "PC MASTER/PROTOCOL/B HANDOFF/03H recovery, compare IDs/ownership/HOLD then B-only one-time import; offline focus 0x52AD00 equal merge, 0x529691 vs 0x529851 baselines."
+}

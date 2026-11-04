@@ -1,0 +1,18 @@
+# B-20261020-0009-01｜T024 編隊配列のworld条件付きclear／後衛対照51スロット
+[DATE/OWNER/STATUS] 2026-10-20 00時台 JST、T024主。SOURCE-ONLY STATIC CANDIDATE／B owner索引・HANDOFF独立読戻しまでNOT READY。旧原作Gameplay Golden PASS0、新旧strict MATCH0、Task DONE増0。
+[SOURCE] 迫真戦記0.67 CORE 正規化保存資料 data/normalized/hakushin067_core/a_default/script/Ai戦闘制御_軍楽隊なし版.dat（3707行、保存コピー2026-10-04、Local read-only）。現原本EXEの新VA/xrefなし。前回B-20261019-2213-01／B-20261019-2321-01はE MASTER checkpoint192で公式統合済みとして再計上しない。
+[GUARDED WORLD CLEAR] story change_form L7、L13 if(count(@enemy_army)>0) の内部 L15..236に @enemy_army、@form_cav、@form_inf と indexed @form_general0..50/@form_generalcav0..50/@form_generalinf0..50/@form_generalart0..50 のclearが記述。条件falseのときこのworldブロック内のindexed clearは実行されない。
+[BATTLE ENTRY SCOPE] story change_form_battle L307以降の入口は数値flag等をresetし、L347..349で @form_cav/@form_inf/@form_art をclear、L365で @enemy_army をclearする。ただし本3707行ファイルの @form_general0 / @form_generalcav0 / @form_generalinf0 / @form_generalart0 の clear は各world側L21/L73/L125/L177の1箇所のみ（ファイル全行文字列scan）。このbattle入口からindexed slot clearを推定補完しない。
+[STAGE CONNECTION] 現battleの後衛slot0 writer L812はearly gate L1708より前、騎兵slot0 L1754・歩兵slot0 L1869は後、late gate L2093より前。world側clear条件がfalseで従前indexed slotが残り、かつengine自身が消していない場合に限り、L1708は「現在の騎兵/歩兵writer未到達」でもその旧slotを数える可能性がある。count APIと変数の戦闘跨ぎ寿命はVERIFY。
+[FOUR-TABLE CENSUS] 元sourceの if(counter==i)→addv(slot_j) を全表照合。後衛 form_general_num は input0..50を51/51格納、input29→slot29・30→30。騎兵/歩兵/砲兵は各50/51、input30分岐なし、input29→slot30のみ不一致。3兵科の欠番自体は既B-20261019-2213-01。今回の新しい対照は後衛表が完全連番51件である点。
+[INDEX 51+] 当該4表にcounter>=51の明示的addv条件なし。この局所whileでcounterが51以上に到達した場合、slot0..50向けaddvは行われない構文。合法な51超leaderが実際に発生するか、他コードの代替経路は未証明。
+[REIMPLEMENT] world-clear条件／battle入口の原集団clear／indexed slot現在値／rear writer／early待機gate／late full AI gateを別ステージ・nullable provenanceで記録。全戦闘入口で全indexed slotを暗黙初期化するか、51以上を動的に拡張するかは原作実機Goldenまでstrict挙動として決めない。
+[NEW SCOPE/DEDUP] 先行B-2213の3兵科holeとB-2321のearly/late gate式の再発見ではない。新増分はworldでの条件付き全indexed clearとbattle入口非clearのsource全行計数、および正常な後衛表との4表対照。既T024§17-20の数値a_* flag寿命とは別の配列変数scopeであり混同しない。
+[VERIFY] 他scriptからの同名配列clear/write、数値/配列変数のnative scope、world event呼出順、count(@enemy_army)実値、非空旧slot残存、合法戦闘・51超leader可到達、可視AI結果。局所sourceから原作BUG認定0。
+[GOLDEN DESIGNED_NOT_RUN] 旧合法battle初回/連戦、world cleanup前enemy_army空/非空（実UIで識別不可ならUNKNOWN）、rear/cav/inf/artのみ＋混成、leader数29/30/31/51/52を分け、待機Skill・full/kanni・実移動・次tickをEXE/DAT/SAVE/map/input/capture SHA＋seed可否付きで旧新照合。原作Gameplay PASS0／strict MATCH0。
+[SAFETY] 既B-RC-20261019-2010-T024-INDEX-SAFETY-01等の元拒否payloadは別BLOCKED、再提出・代替迂回なし。禁止VA0x5710C0..0x571500、新規REA/Ghidra、原本EXE/ZIP実行・変更、Remote/Git/push/Work/他レーン/MASTER/T018/設定/automation書込0。
+[NEXT] 今回source限定補助証拠のB所有索引・HANDOFF照合と重複監査後、他スクリプトの同名配列作用とnative配列のbattle/world lifetimeを正当に得られる既保存証拠で確認。EだけがMASTERへ統合し旧実機goldenと合算しない。
+
+[CORPUS CROSS-FILE FOLLOWUP] normalized/hakushin067_core/a_default/script の *.dat を代表slot0 4名とslot29 4名でLocal literal content-search（各session COMPLETED）した結果、出現ファイルはいずれも本「Ai戦闘制御_軍楽隊なし版.dat」1ファイルのみ。slot0 occurrences rear20/cav6/inf6/art4、slot29 occurrences rear27/cav3/inf3/art3。検索はexact name文字列に限るため他indexや動的変数文字列を否定しない。
+[SLOT29 CONSUMER CLASS] cav29 L102 clear・L2182 isDead・L2739 smoveTroop、inf29 L154 clear・L2168 isDead・L2598 smoveTroop、art29 L206 clear・L2195 isDead・L2879 smoveTroop の3hit/各。正規化済*.datのexact slot29について他の明示addv/setv writerは検索範囲で0。rear29はL50 clear・L870 addvに加え計27hit。既B-20261019-2213-01の欠番そのものは再READY化せず「whole normalized exact-symbol参照範囲」の補助証拠だけ追加。
+[CORPUS BOUNDARY] 他の非DAT原文、エンジン内部変数構築、runtime indirect参照、script動的名生成等は未検証。実ゲームでslot29が必ず空・smoveTroopが失敗・原作BUG確定とはしない。原作Gameplay PASS0/strict MATCH0、B新READY件数は既判定1件から不変。

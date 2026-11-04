@@ -1,0 +1,16 @@
+# B/T028｜22H検証コード部分保存SAFETY_REFUSAL／安全バックアップV2差替（2026-10-29 03H）
+- RECOVERY-ID: `B-RC-20261029-03H-T028-22H-VERIFY-COPY-SAFETY-04`（SAFETY_REFUSAL / NOT READY）と `B-RC-20261029-03H-BSAFE138-V2-ARCHIVE-05`（保全訂正 / NOT READY）。
+- 元Library: `/迫真戦記再開発プロジェクト/data/B_T028_ALTERNATE_MESSAGE_VECTOR_SINK_VERIFY_20261028_22H.py` 97行、既存原本は変更無し。
+- 直前成功: Desktop Commander Local Compact によりPC B-owned `data/` に先頭50行を保存（rewrite25行+append25行）。
+- 失敗: 続きのPC書込みを含むtool呼出しがOpenAI安全性チェックで拒否。詳細な拒否理由は不明。拒否後の本文再送・別tool/path/shell/ZIP迂回は実施していない。
+- 独立PC metadata: `data/B_T028_ALTERNATE_MESSAGE_VECTOR_SINK_VERIFY_20261028_22H.py` は50行・1979bytes・appendPosition50。残り47行未保存。PCのこのファイルはPARTIAL/INVALID/DO NOT RUN。
+- 以前の17H本文コピー拒否は別ID `B-RC-20261029-0301-T028-17H-COPY-SAFETY-01`。17H PCの後続66行版は外部変更・出自未確定なのでREADY認定しない。
+- 当回の初版ZIP（139資料）に当該未拒否時点のスクリプトが含まれていたため、その後V2で除外した。初版Library ZIPは当チャットが作成したものに限り削除操作し、Library通常一覧から非表示を確認。
+- 現行バックアップ: `/迫真戦記再開発プロジェクト/data/HAKUSHIN_B_LANE_SAFE_RECOVERY_20261029_V2.zip`。
+- 現行V2: 138個のB-owned既存Library raw原文＋README＋hash manifest=140 entries、452905bytes。
+- V2 SHA-256: `4b370da7fbcc2005c63d3224cd56abd7c08dbf264b196ba2341c314b4d76ac2e`。
+- ZIP CRC PASS／内容物138個のSHA256 PASS／Library upload後のraw独立readbackとbytes/SHA一致PASS。
+- B対象155点中17点をV2から除外（旧明示拒否・18時台部分JSON・当日新拒否・関連安全境界）。除外資料は元のLibraryに存在し、今回元ファイルに変更無し。
+- PC同期完了と旧原作互換を意味しない。B READY+0/E統合+0/原作Gameplay Golden PASS0/strict MATCH0。検証用Python実行0。
+- 今回の復旧再開条件: 拒否内容のコピーは安全条件が正当に変化するまでBLOCKED。独立PC同名資料とV2 manifestの読取・重複・競合照合のみ継続。
+- 原本EXE/ZIP/DAT/SAVE、他lane/REA/dev_lab、MASTER、Git/Work/設定/automationの変更無し。

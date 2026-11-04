@@ -1,0 +1,18 @@
+# REA-20261021-02H-T014-SPOT-PREFIX255-CASCADE-STATIC-01｜Spot reader冒頭の255byte境界
+- [STATE/OWNER] 独立REA / T014、既存Ghidra証拠のread-only突合。新規REA/Ghidra起動0、ゲーム旧EXE実機NOT RUN、原本編集0。拒否済みpointer-dedup保存本文とは別の独立検証。
+- [SOURCE] 既存run 20261011T133432356Z（0x598980）と20261011T144115307Z（0x4705F0）、両者REA6.1.0/Ghidra12.1.4、source SHA E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187。今回承認済コピー現物SHAも一致。
+- [EVIDENCE] Spot reader 0x598980: assembly ev_66c1bf6fd99abcfd7034dc3de539e043f9ab1f39ea402827967a1ab418ca929b / info ev_53ed1be96bc20ed0ffbc4d954ae100f1967fd59ebe9ce1884069085408de84aa / pseudo ev_0acff01a3a0b32c2efc27bc4c2c113a5990bee48a71916922824806d419968ad / callers ev_4d7481471a3b7dd25ba99a255743190483ec355ad0f0e6519faff740ac1a22e9 / callees ev_6597562b214fb07ef9cf92fb2a7c26825f7f6c86082b307f37ef650e62a31f52。
+- [EVIDENCE] Token reader 0x4705F0: assembly ev_119a86f44bb44e174c04ae524788b577d2b4085fbdba2dbac424cf906663f94d / callers ev_66d791abc2d31b607e31cf9d4951092495dc9c772ef119d848db2726eda0da87。5-method VERIFIEDは既存runにて確認済み。
+- [SPOT PREFIX] x86 0x5989B8 PUSH EBX→0x5989B9 CALL 0x4705F0、0x5989C4 PUSH [EBX+2C]→0x5989C5 CALL、0x5989D0 PUSH [EBX+64]→0x5989D1 CALL。0x5989E2と0x5989F1にCALL 0x470700が続く。最初の3文字列の間に余剰NULを捨てるCALLはこの直列領域にない。
+- [READER BOUND] 0x470643 NUL判定、0x470653 INC ESI、0x47065C CMP ESI,0xFF / 0x470662 JL。正常stream・許容byte 0x20..0x7Fなら非NUL 255個を取った時点で0x470664へ進み追加NULを消費しない。
+- [SYNTHETIC 254] 1番目のNUL終端tokenが254byteならreader1は254byte+NULを読み、reader2は本来の第2token先頭から始まる。
+- [SYNTHETIC 255] 1番目のNUL終端tokenが255byteならreader1は255byteのみ取得しNULを残す。直後reader2はそのNULから空tokenを返し得る。reader3は本来の第2tokenを読むため、期待される[文字列1,文字列2,文字列3,数値1,数値2]の位置対応がずれる。
+- [SYNTHETIC 256] 1番目が256byteならreader1は先頭255byteのみ、reader2は残り1byte+NULを処理し得て、reader3は本来の第2tokenを読む。
+- [SCOPE] 上記は長さ>=255の許可byte列、通常ストリーム、連続する0x4705F0呼出、回復処理無しという限定仮定。後段0x470700のstream flag/異常例外/旧EXE可視結果はVERIFY。既存ゲームSpotキーに該当長が存在することは未確認であり原作バグとは断定しない。
+- [DEDUP] 20261021 01:33既存REA_20261021_0133_T014_255BYTE_WRITER_READER_BOUNDARY_QC.mdはwriter-reader一般境界。今回の独立差分は保存済みSpot reader 0x598980の連続3token+2数値という具体的な呼出位置への接続のみ。
+- [PROGRESS] 最新保存sync progress_sync_20261011T153958076Z.json: Wave1..5=16+10+10+12+16=64/64 VERIFIED、P0=29/29・P1=35/35、今回新規0。Wave6暫定0/16、TODO12(P0 2/P1 10)、VERIFY0、安全拒否BLOCKED4(P0 3/P1 1)、正式QUEUE未登録。
+- [MASTER/GOLDEN] 最新MASTER checkpoint195、研究DONE9/34、IN_PROGRESS21、VERIFY4。旧EXE実機golden PASS0、strict MATCH0。ゲーム再実装率は測定していない。
+- [PREFLIGHT] Desktop Commander Local Compact。CPU指標2%、free RAM16.69GiB/total30.78GiB、java/javaw/ghidraプロセス一覧出力なし、active.lock無し、承認済みコピーSHA一致。新Ghidra解析時間0秒、read-only軽量調査時間未計測。
+- [GATE] 実インストールREA6.4.0対指定6.1.0、安全拒否関数除外不完全、Wave6正式未登録、QUEUE/PROGRESS既往STALE_RENAME_DENIED。run_decompile.ps1、sync_progress.mjs非実行。既往安全拒否VA0x5710C0..0x571500、Wave6拒否4件、拒否済みREAテキスト抽出の再試行・迂回なし。
+- [NEXT] T014: 0x598980の先頭token後の異常処理と、原作script内Spot keyの長さ上限（別owner資料はread-only）、読み出し済み第2tokenからの後続数値読み取り位置を条件付きで検証。次点T010/T012の0x575F71・0x575F91。
+- [BOUNDARIES] 原本ZIP/EXE/SAVE、A〜E/MASTER/T018、他研究、Git/push/公開、REA setup、MCP設定、既存automationsは変更しない。

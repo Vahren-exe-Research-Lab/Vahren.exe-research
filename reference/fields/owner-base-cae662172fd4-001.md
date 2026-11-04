@@ -4,6 +4,18 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-48"></a>
+## base + 0x48
+
+- [research/recovered/rea_batch10/reports/REA_20261020_0035_T013_T031_STEALTH_RNG_CARDINALITY_QC.md 行 6](../../research/recovered/rea_batch10/reports/REA_20261020_0035_T013_T031_STEALTH_RNG_CARDINALITY_QC.md?plain=1#L6-L6) — - [CHILD ENTRY] 0x514D81/0x514D86で候補第1配列begin/end=(base+0x48,+0x4C)、差をSAR2して要素数。0x514DA2で空なら第2配列開始0x514E75へ。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+<a id="field-58"></a>
+## base + 0x58
+
+- [research/recovered/rea_batch10/reports/REA_20261020_0035_T013_T031_STEALTH_RNG_CARDINALITY_QC.md 行 8](../../research/recovered/rea_batch10/reports/REA_20261020_0035_T013_T031_STEALTH_RNG_CARDINALITY_QC.md?plain=1#L8-L8) — - [POOL 2] 第1配列を全て走査後、距離/範囲条件で0x514E69から早期RET、そうでなければ0x514E75から第2配列(base+0x58,+0x5C)走査。第2ループ0x514E8C..0x514EE8には直接0x5B6EAB呼出なし。第2配列にも別callee間接作用が無いとは未証明。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
 <a id="field-504"></a>
 ## base + 0x504
 

@@ -1,0 +1,19 @@
+# REA-20261020-0035-T013-T031-STEALTH-RNG-CANDIDATE-CARDINALITY-01
+- [OWNER / TASK] 独立REA; T013(P1)主・T031(P0)参照。対象は迫真戦記ver0.67保存STATIC証拠。今回は新規REA/Ghidra逆解析・旧EXE起動・golden試験なし。新VERIFIED=0。
+- [SOURCE SHA] 保存済みrun 20261009T225741694Z source=E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187。承認済みコピー現物の今回の再SHA測定なし。
+- [PARENT] 0x57B870 Ghidra assembly ev_89e3a86b53663da35b8cadf02226f2163996275f1d24f93e37e8009fc50f048c / callees ev_5f69dc42c9b24ee6e1c0cf83c2fb4da210af2dda6c4e48b70cbf9ef185ea6203。info ev_c4fcdda0f9486944ccdcfe1354a6d2e37f2b68761dfd2e47b7df9a11cd367612、pseudo ev_4767a901e9f4b9ad1fc38d59a2f36a6a4a1ef4cc22287abb8e74c97f094aa2dc、callers ev_911883dad3560c441dc40b2e53fe8fb1e83d4b85c4cbf622e80eb7ed59e4a8c4。親は5方法既存証拠。
+- [CHILD SOURCE / LIMIT] read-only既存exe/T013_TARGET_SELECTOR_PROBE.txtの0x514D60..0x514F0Bアセンブリ窓。0x514D60自身のREA5方法evidenceは未取得、関数単位VERIFIEDへ昇格禁止。保存済みx86局所照合/意味VERIFY。
+- [CHILD ENTRY] 0x514D81/0x514D86で候補第1配列begin/end=(base+0x48,+0x4C)、差をSAR2して要素数。0x514DA2で空なら第2配列開始0x514E75へ。
+- [PER CANDIDATE] 第1配列では0x514DB1のbyte(candidate+0x1867C)!=0を除外、0x514DBEでcandidate==selfを除外。その後0x514DC4でdword(candidate+0x1C0)!=0の時だけ0x514DCF CALL 0x5B6EABを1回実行する。負数の非0値でもCALL自体は行う。0x514DEDはrollとの比較、当落にかかわらずこのCALLは消費済み。
+- [POOL 2] 第1配列を全て走査後、距離/範囲条件で0x514E69から早期RET、そうでなければ0x514E75から第2配列(base+0x58,+0x5C)走査。第2ループ0x514E8C..0x514EE8には直接0x5B6EAB呼出なし。第2配列にも別callee間接作用が無いとは未証明。
+- [CHILD LOCAL COUNT / NORMAL VALID POINTERS] K=Σ_{p in firstPool}[byte(p+0x1867C)==0 ∧ p!=self ∧ dword(p+0x1C0)!=0]。Kは0..firstPoolCount。同じ候補集合・変化しない状態ならKの件数は順序非依存だが、rand値が各候補へ割り当たる順序と採否は候補列順序に依存する。第2配列だけに候補がある場合K=0。
+- [PARENT REACHABILITY] 0x57B87F: signed(Unit+0x1E534)>=signed global[0x65BCAC]で更新枝、かつ0x57B930でUnit+0x1E570==0（cached target未保持）の場合に限り、0x57B983 CALL 0x514D60へ到達。cached targetありなら0x57B9BBへ移り子CALL無し。
+- [SELECTED BASE] 0x57B938 signed(Unit+0xC8)<0の場合だけ0x57B940 CALL randのroll→0x57B95E比較で、0x57B966のbase=[Unit+0x1D4]または0x57B974のbase=[[Unit+0x1D4]+0x1C]を選択。Unit+0xC8>=0なら後者。poolの内容・Kがこの条件付きrandom結果で変わる可能性がある。
+- [COMBINED KNOWN DIRECT CALL COUNT] C=counterReached,T=(cachedTarget==0),N=(signed Unit+0xC8<0),S=(byte Unit+0x137!=0)。R_parent=C?(1+int(T&&N)+int(S&&N)):0（前回QC）。今回R_child=int(C&&T)*K(selectedBase)。既存親+この子の明示CALL総数=R_parent+R_child。これは戦闘AI全階層のrand総回数ではない。
+- [ORDER] counter到達時の親0x57B8FE rand →（T&&Nなら親0x57B940 rand）→0x514D60第1配列の該当候補ごとの0x514DCF rand→（S&&Nなら親0x57BA10 rand）の順であり、子候補側はpool順序を維持すること。下位calleeの未知消費があり得るため全PRNG列の確定とはしない。
+- [TEST DESIGN / NOT RUN] counter未達; cacheあり; cacheなし+C8>=0; cacheなし+C8<0+random選択両分岐、各第1配列を空/self/disabled/stealth0/stealth正/stealth負にしてKと順序をtrace。第2配列のみのケースとcap=0/非0を別扱い。結果はDESIGNED_NOT_RUN、原作旧実機golden未観測。
+- [P0/P1 / PROGRESS] 既存sync progress_sync_20261011T153958076Z はWave1 16/16, Wave2 10/10, Wave3 10/10, Wave4 12/12, Wave5 16/16、合計64/64 (P0 29/29, P1 35/35)。今回新増加0。Wave6正式0/16、暫定P0 5/P1 11、未着手TODO12(P0 2/P1 10)、BLOCKED4(P0 3/P1 1)、結果VERIFY0。QUEUE/PROGRESSのEPERM staleは未修正。
+- [MASTER/GOLDEN] MASTER末尾2026-10-19 23:48 checkpoint192（正式590予定値）、34Task DONE9/IN_PROGRESS21/VERIFY4。旧EXE実機golden PASS0、strict MATCH0、ゲーム再実装率は測定していない。
+- [LOAD / LIMIT] Desktop Commander Local Compactで読取成功。list_processesのCPU率n/a、空きRAM未計測。Java/Ghidra名未検出だがChrome/Node/Codex多数、active.lockはディレクトリ一覧に無し（原子的検査ではない）。重解析・run_decompile.ps1・sync_progress.mjsを起動しない。新Ghidra実行0秒、軽量調査総時間未計測。REA6.1.0保存証拠／runner6.4.0指定差と既往EPERMを保持。単一MCP、最大4関数/回、Ghidra900000ms、request960000ms。
+- [BOUNDARY / NEXT] 0x514D60は5方法不足につきVERIFY、未確認の他callee消費もVERIFY。次回T013/T031では原作のstealth raw倍率定数・signed境界の既存証拠を点検し、候補firstPool orderを再実装の検査条件へ落とす。T010/T012死亡処理も優先維持。
+- [SAFETY] 禁VA 0x5710C0..0x571500・既拒否REA抽出・Wave6拒否4関数の再実行/迂回なし。原本ZIP/EXE、MASTER、A-E、T018、製品コード、QUEUE/PROGRESS、Git/push、設定、既存automationを変更しない。

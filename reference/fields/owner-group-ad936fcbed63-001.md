@@ -109,6 +109,9 @@
 <a id="field-34"></a>
 ## group + 0x34
 
+- [research/recovered/b_batch10/data/T024_KB_CURATION_SOURCE_MAP_20261101_19H.md 行 5](../../research/recovered/b_batch10/data/T024_KB_CURATION_SOURCE_MAP_20261101_19H.md?plain=1#L5-L5) — - **再利用できる依存関係**：先行 `0x569280` の `group+0x34` 算出 → 10H `0x569360` の近接比率評価（100tick再評価関連）。別に11H `0x528DB0` はA/B別集計 → 12H mode3はB→Aの順序で `0x52AB50` に渡す。13H non-mode
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 - [research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md 行 17](../../research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md?plain=1#L17-L17) — - `0x56928C`で`group+0x34=0`に初期化し、メンバーポインタ配列 `group+0xC..+0x10` を巡回する。`Unit+0x1867C!=0`を除外し、生存扱いのUnit数を`n`とする。
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 

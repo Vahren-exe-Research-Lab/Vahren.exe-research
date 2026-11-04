@@ -1,0 +1,18 @@
+# REA-20261019-2143-DEATH-SECOND-CALL-REACHABILITY-01｜死亡時の第二Troop呼出到達条件を縮小
+- [OWNER/CLASS] 独立REA・P0 T010/T012/T013。STATIC SAVED ASM×READ-ONLY HOST CROSSCHECK。新規Ghidra/EXE実行なし、原本と他担当コードは変更しない。
+- [PRIMARY] 既存 logs/NORMAL_DEATH_CONTRACT_VERIFY_20261013.json（REA-ND-20261013-001、134 saved shape checks PASS）、SOURCE_RECOVERY_DAMAGE_STATUS_20261011.md §ND-TROOP、dev_lab/reports/CHATGPT_HEAL_MUTATION_20261012.log の保存命令0x575F62..575F95。SHAは保存runのE8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187、現物再hashなし。
+- [NATIVE PARENT] 0x575F62はU+1D0を取得、nullなら第一0x5684B0をskipして0x575F71へ。null以外は0x575F6C CALL0x5684B0を正常帰還まで待つ。0x575F71でU+1867Dを**再読**し、0なら0x575F91へ飛び第二call無し。非0だけengine+1E8B34の現在owner+0x358を使い0x575F8Cで第二0x5684B0を実行。
+- [NATIVE CHILD EFFECT] 0x5684BDはT+1Dを検査。T+1D非0のselected枝で、memberのU+1867C非0を検出すれば0x5684EBでそのmemberの+1867Dを0にして0x568501以降のstable-pruneへ進む。第一Troopが選択モードで死亡Unit自身をmemberとして含む場合、この局所書込によりflagは0になる。ただし後続UI/calleeがflagを再設定するか未確認のため、第二callをskipするのは0x575F71時点でも0のケースに限る。
+- [CONDITIONAL ONLY] 第一Troopがnormal(T+1D=0)のとき同selected-prune書込はその分岐には無い。第一Troop absentや死亡Unit非所属のケースでも+1867Dを必ずclearすると主張できない。ただし下位UI/helperの全副作用も未検証なので、これらのケースで必ず非0のままとは断定しない。
+- [HOST MATCH] native_battle_outcome.py のupdate_troop_5684b0はselected枝のremovedについてunits[p].fields[0x1867D]=0を実行。native_battle_session.py のcontinue_resolved_normal_disable_troopsは第一callのcomplete後0x575F71へ進み、unit.read(0x1867D)&255を再評価して第二callをgateする。これらの局所条件は保存命令と整合する。
+- [REBINDSCOPE] 先行REA-20261019-1835/1933の「selection owner変更によるbind差」VERIFYは無条件ではない。①第一更新後もflag非0で第二callに到達、②第二Troop自身が527ED0選択解除枝に到達、③既存TroopSelectionCleanup bindingのownerと第二callのparent.object_refが異なり古いbindingを再利用、の全条件が必要。第二Troopのnonempty selected UI枝や即完了枝では527ED0 owner一致検査そのものを呼ばない。
+- [CASE A/NOT RUN] 第一T selected＋死亡Uをdisabled memberとして剪定→局所でU+1867Dクリア→後続callee帰還後も0なら第二call skip。saved-native gateとhost codeの局所は一致、callee副作用と旧EXE実機は未観測。
+- [CASE B/NOT RUN] 第一T nullまたはnormal＋帰還後U+1867D非0→第二call必須。第二Tの選択枝・live member数で527ED0依存が変わる。原作合法到達はVERIFY。
+- [CASE C/NOT RUN] 第二Tが527ED0へ到達し、前回完了bindingを別ownerへ再利用→hostはowner.pointer != parent.object_refで拒否し得る。合法な実ゲームでこのowner差が発生するか未確認、確定バグ扱い禁止。
+- [TEST CONTRACT / NOT RUN] 旧原作では第一/第二Troop ptr、各T+1D、死亡U+1867C/+1867Dの第一call前後、engine+1E8B34、第二T live数、527ED0到達、0x575F71/0x575F91各正常帰還を独立nullable receipt化。原本実機golden/strict PASSに加算しない。
+- [DEDUP] 直前18:35はowner rebinding、19:33は527ED0の局所owner書込、20:34は0x575F91純epilogue。本回の増分は「第一selected pruneによる第二call抑制」と「owner bind懸念の3重到達gate」の限定照合のみ。新取得info/pseudo/assembly/callers/callees Evidence ID=0、新VERIFIED=0。
+- [SYNC] 保存run 20261011T153309850Z / sync 20261011T153958076ZでW1 16/16,W2 10/10,W3 10/10,W4 12/12,W5 16/16、合計64/64 (P0 29/29,P1 35/35)。Wave6正式0/16、候補P0 5/P1 11、未着手TODO12(P0 2/P1 10)、拒否BLOCKED4(P0 3/P1 1)、関数結果VERIFY0。既存QUEUE/PROGRESSはEPERMによるstaleで変更しない。
+- [MASTER/GOLDEN] MASTER最終確認checkpoint191、研究DONE9/34・IN_PROGRESS21・VERIFY4。旧EXE実機golden PASS0、新旧strict MATCH0。ゲーム再実装率は測定していない。
+- [LOAD/LIMIT] Desktop Commander Local Compact成功。list_processesでjava/Ghidra/REA名称は目視検出無し、CPU欄n/a、空きRAM未計測、node/chrome多数。フォルダ一覧にactive.lock未表示（非原子的）。PC低負荷は未確認のため重い解析開始せず。新Ghidra実行0秒、軽量調査総時間未計測。成功run REA6.1.0/Ghidra12.1.4対README runner pinned6.4.0差。単一MCP・4関数/回・Ghidra900000ms/request960000ms維持。
+- [NEXT] 新規逆解析せず、許可済証拠で第二527ED0の発生条件と既存binding寿命を照合。Ghidra 5方法の追加取得、合法旧ゲーム到達・実機goldenは未実施/VERIFY。条件が成立するまで仕様変更提案止まり。
+- [SAFETY] 安全拒否0x5710C0..0x571500、Wave6拒否4VA、既拒否REA exporter/preflightの別tool/path/shell/Remote迂回無し。原本ZIP/EXE、MASTER、A-E/T018、既存QUEUE/PROGRESS、dev_lab、Git/push、MCP設定、スケジュール不変更。

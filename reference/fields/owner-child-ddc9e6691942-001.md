@@ -79,6 +79,9 @@
 <a id="field-1c8"></a>
 ## child + 0x1C8
 
+- [research/recovered/b_batch10/data/T024_CHILD_SPRITE_RESOLVER_OUTPTR_PALETTE_NATIVE_20261026_06H.md 行 10](../../research/recovered/b_batch10/data/T024_CHILD_SPRITE_RESOLVER_OUTPTR_PALETTE_NATIVE_20261026_06H.md?plain=1#L10-L10) — [ABI] 0x584970の原作末尾0x5852F3 MOV EAX,[ESP+0x20]、0x58531A RET 8。ECX=child+0x1C8、stack第1引数=出力文字列バッファ、第2引数=1、EAX=第1引数バッファと静的整合。Ghidra pseudoのvoid表示はこのcaller契約と不一致。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 - [research/recovered/b_reports/T011_T012_EXP_TRAINING_DEATH_CROSSWALK_NATIVE_20261029.md 行 34](../../research/recovered/b_reports/T011_T012_EXP_TRAINING_DEATH_CROSSWALK_NATIVE_20261029.md?plain=1#L34-L34) — [SUMMON] 0x54EE82→0x577260 parent+0x1E4B4 cache、miss 0x54EF3E→0x58B7F0および0x54EF69→0x577310、0x54F07A→0x56F880 child+0x1C8=cache R。子RへのEXPと発動者EXPは別。
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail; DAT491 is direct source-line distribution, not491 effective units; training_up caller linkage remains VERIFY
 

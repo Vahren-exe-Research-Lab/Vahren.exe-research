@@ -1,0 +1,17 @@
+# REA-20261020-22H-T014-DIPLO-LIVE-VECTOR-01｜外交save writerの要素数再評価と疑似コードの到達不能例外
+- [OWNER/STATE] 独立REA / T014(P1)・次Wave T014(P1)参照。STATIC SAVED ASM。Desktop Commander Local Compactのみ。原本や実ゲームは実行・変更なし。新規Ghidra/REA実行なし。
+- [SOURCE] 保存run runs/20261011T144115307Z（REA6.1.0/Ghidra12.1.4）の0x471D20、source SHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187。2026-10-20 22:35 JSTに承認済コピー現物SHA一致。
+- [EVIDENCE] 0x471D20は5方法既存VERIFIED: info ev_d66eb9ca2ede2dddefec4ffa0700384bde6cdbe4d00f9186cf00ff67748de6fc、pseudo ev_ab5115883f3f7287b9e69a76b95333a8ddd343252dfc9c1efdafb3f4db81d846、assembly ev_64adbba14e1cee99ca12f12987032aa749c2890ee33057c941c4d0b3eed1fe6f、callers ev_a459496a5ab977b94c768d186aefbfc6f58bb2cb97dcc009e0be9b470f192a56、callees ev_8f32e24032fa7db1f4ddd3212cbf805c0509f176888721d560966984d495d307。
+- [PREFIX] 0x471D26..0x471D37はEDI+0x9,+0xAを各AL→0x4708A0。0x471D3C..0x471D63はEDI+0x14,+0x38の各DWORDを4byte長引数で0x4628F0へ渡す。calleeの内部効果はTODO/VERIFY。
+- [VECTOR BOUND] 0x471D68..0x471D75でEDI+0x18(begin),+0x1C(end)の差をSAR2しcount相当値として計算。0なら0x471D95へジャンプし要素writerを飛ばす。
+- [DEAD GUARD] 0x471D73 XOR EBP,EBP=0、0x471D75 TEST EAX,EAX; 0x471D77 JZ 0x471D95を通過したときEAXは非0。直後0x471D79 CMP EAX,EBP; 0x471D7B JBE 0x471DA6 はunsigned EAX<=0だけが条件であり、この直線入口では到達不能。疑似コードの『if(iVar1!=0){if(iVar1==0) invalid vector<T> subscript}』を実到達する通常例外仕様として扱わない。
+- [LIVE REEVALUATION] 0x471D7Dで[begin+EBP*4]をESIへ読み0x471D80 CALL 0x470830。CALL後の0x471D85/88でbegin/endを再取得し差分を再計算、0x471D8D INC EBPの後0x471D91 CMP EAX,EBP; 0x471D93 JAで次要素へ。要素数は入口で固定していない（ただしcalleeによる変化が実在するとは未証明）。
+- [TRAILER] 0x471D95でESI=0x68B3A8、0x471D9A CALL 0x470830はcount=0の場合にも必ず実行。固定文字列実バイト/意味は未確認につき単に終端候補とする。
+- [CONTRACT] 正常不変vector n=0/1/2について要素writer呼出回数はn、固定0x68B3A8渡しが各1回。n=0でも2byte+2DWORDの前置書込後に固定参照を渡す。writer成功/バイト列/reader対称性/例外はNOT RUN・VERIFY。
+- [RISK] begin>end、end-beginの4byte非倍数、0x470830の副作用や失敗時stream state、0x68B3A8実文字列、0x471AF0 readerとの対応は未確定。到達不能な局所ガードの存在だけで全実行の例外安全性を保証しない。
+- [DEDUP] 既存REA_WAVE5_SAVE_IO_VECTOR_AUDIT_20261011_2347の『byte×2、DWORD×2、vector要素ごと、末尾追加』は既知・再計上0。本回の差分はwriter各CALL後のbegin/end再読と疑似コードの不可能subscript条件のASM訂正。
+- [PROGRESS] 保存最新sync 20261011T153958076Z: W1=16/16,W2=10/10,W3=10/10,W4=12/12,W5=16/16、累計64/64(P0 29/29,P1 35/35)。今回新VERIFIED=0、新evidence ID=0。Wave6暫定候補0/16(P0 5/P1 11、未着手12 [P0 2/P1 10]、既拒否BLOCKED4 [P0 3/P1 1]、関数結果VERIFY0)。正式QUEUE未登録。
+- [MASTER/GOLDEN] 最新MASTER checkpoint195で研究DONE9/34・IN_PROGRESS21・VERIFY4。旧EXE実機golden PASS0、新旧strict MATCH0。ゲーム再実装率は測定していない。既存QUEUE/PROGRESSはEPERMでstale。
+- [LOAD/GATE] 22:35:23 JST CPU LoadPercentage56%、RAM空き15.86GiB、java/ghidra検出なし、active.lock=false、承認済SHA一致、REA実体6.4.0。REA指示6.1.0と一致せず、拒否VA firewall不完全/キューEPERMのためrun_decompile.ps1/sync_progress.mjs非実行。新Ghidra時間0秒、軽量総時間未計測。
+- [NEXT] T014担当が0x471D20を実装比較する際、n=0/1/2+終了参照の固定順とwriter後count再計算を観測点に分離。優先P0の0x470980/0x42E700は安全な正式Wave/環境整合後のみ5方法取得。T010/T012 0x575F71/0x575F91の未解明正常帰還は別途既存証拠で継続。
+- [SAFETY/OWNERSHIP] 拒否0x5710C0..0x571500、Wave6拒否4VA(0x515750/0x515790/0x5159B0/0x57D180)、既拒否REA text exporter、過去拒否保存の迂回なし。A-E/MASTER/T018/他領域、QUEUE/PROGRESS、原本ZIP/EXE、Git/push/公開、MCP/OS設定、既存automation変更なし。今回の新規REA専用QCのみ書込。

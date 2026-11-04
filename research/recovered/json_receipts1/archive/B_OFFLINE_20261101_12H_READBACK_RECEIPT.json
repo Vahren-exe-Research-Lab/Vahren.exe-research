@@ -1,0 +1,35 @@
+{
+  "id": "B-OFFLINE-20261101-12H-T011-T024-DUAL-LIST-MODE3-VECTOR-01",
+  "status": "OFFLINE-UNSYNCED",
+  "location": "ChatGPT working container (not research PC)",
+  "files": [
+    {
+      "file": "T011_T024_DUAL_LIST_MODE3_VECTOR_NATIVE_20261101_12H.md",
+      "relative_path": "data/T011_T024_DUAL_LIST_MODE3_VECTOR_NATIVE_20261101_12H.md",
+      "bytes": 9227,
+      "sha256": "8ED8FCFD43200DB30236A0E6D219E0E3440DBD3A90EE6C68F80C81A0708F7B88",
+      "local_readback": "PASS"
+    },
+    {
+      "file": "B_20261101_12H_MODE3_DUAL_LIST_READONLY_VERIFY.py",
+      "relative_path": "data/B_20261101_12H_MODE3_DUAL_LIST_READONLY_VERIFY.py",
+      "bytes": 7532,
+      "sha256": "73D340DAE893B8E11F87BFEED01E158A097FC4718F728537AD2381A4D0016E63",
+      "local_readback": "PASS"
+    },
+    {
+      "file": "B_OFFLINE_20261101_12H_MODE3_DUAL_LIST_EVIDENCE.json",
+      "relative_path": "data/B_OFFLINE_20261101_12H_MODE3_DUAL_LIST_EVIDENCE.json",
+      "bytes": 7905,
+      "sha256": "67BEC765D345A0B1023605517790B18E0EFD711EC39F95662A8FB96F56FE47FE",
+      "local_readback": "PASS"
+    },
+    {
+      "file": "LANE_B_HANDOFF_OFFLINE_DELTA_20261101_12H.md",
+      "relative_path": "evidence/LANE_B_HANDOFF_OFFLINE_DELTA_20261101_12H.md",
+      "bytes": 3013,
+      "sha256": "2911D69F32BD3FF7FDE8F45F52FAE1EC896CA456B905EDC9EE2284EF5FBFB64C",
+      "local_readback": "PASS"
+    }
+  ]
+}

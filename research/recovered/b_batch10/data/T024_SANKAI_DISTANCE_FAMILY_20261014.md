@@ -1,0 +1,13 @@
+# B-20261014-0413-01｜T024/T011/T012 散開技能familyの距離帯・親子・進退のExplicitNull境界
+[STATUS/SCOPE] 原作0.67正規化DATの宣言と既存B保存native consumerとの限定STATIC join。実効Skill継承・合法戦闘・原作ゲーム動作はVERIFY。B owner READYはHANDOFFを含む3資料の保存・読戻し後のみ。
+[PRIMARY] `data/normalized/hakushin067_core/a_default/script/Ai戦闘制御_軍楽隊なし版.dat` 最終技能定義節（約L3530-3660）。原文の数値/親指定だけをsource factとし、ルートの実発火や動的射程とは区別する。
+[SOURCE FAMILY] `form_sankai`（親なし）はfunc=missile,check=800,range_min=300,force_fire=on,slide=120,gun_delay=form_sankai*2。`form_sankai3:form_sankai`はcheck=1200,range_min=800,special=999,rush=10,rush_interval=11,gun_delay=form_sankai_sp*19,slide=25。
+[SOURCE FAMILY] `form_sankai4:form_sankai3`はcheck=799,range_min=450,rush=6,rush_interval=11,gun_delay=form_sankai*5,slide=25。`form_sankai_l3/r3:form_sankai3` はstart_degree_type=1/2、`form_sankai_l4/r4:form_sankai4` はstart_degree_type=1/2。左右子の実効inheritはVERIFY。
+[SOURCE ADVANCE/RETREAT] `form_forward:form_sankai3` と `form_back:form_sankai3` はともにcheck=15000, `special=@`, `range_min=@`, `rush=@`, gun_delay=form_forward*9999 を直接宣言。forwardはstart_random_degree=180,slide=96、backはstart_degree=135,slide=128。*両者が同一gun_delayキー名*を使うという原文字列を保持し、別キーへ書換えない。
+[EXE SAVED XREF] B所有 `data/T012_BATTLE_CALC.md` §34-37：0x59CE54..59CEDDがcheckをSkill+0x294へ、0x59CFEA..59D07Aがrange_min/far候補を+0x298へ格納、通常発動判定0x547096/0x5470A9は有限中心距離dに対して+0x298<=d<=+0x294。missile+allfuncは別+0x290上限を使い、この通常gateを迂回し得る。今回は新しい逆解析・VA取得なし。
+[CONDITIONAL DISTANCE CONTRACT] 元宣言の直接値を両fieldへ反映し、通常center-distance gateを通るとき、form_sankai3は800<=d<=1200、form_sankai4は450<=d<=799、form_sankai基底は300<=d<=800。3と4の原文字列条件窓はd=799/800の整数境界で重ならない。子l/rも同じになるか、callrouteが通常か、numeric/effective継承は実機未確認。
+[T024 LINK / DEDUP] 先行B-20261014-0013-01はgetTime>=30のSkill付与/解除・片翼壊滅分岐のみ。今回はそれらが参照するl3/r3/l4/r4の独立した*技能定義の距離窓と親辺*、およびforward/backの同名cooldown文字列と明示@を増分化。元script条件やB §34 native gateは再READY計上しない。
+[REIMPLEMENT] raw親辺/明示field/明示@を保持。source宣言距離窓をallfunc候補距離や実弾rangeに一括代入しない。native回復/MP/RNG/latch/Skill+A18/A1C/攻撃結果は今回未確定。forward/backの@を値0または未指定と安易に同値化せず、special/list resolverの証拠を待つ。
+[GOLDEN DESIGNED/NOT RUN] 合法full formationで該当Skillの実取得が確認された場合、normal route×center-distance d=449/450/799/800/1200/1201、Unit state/MP、time29/30、左右翼生死を分け可視Skill発動・座標・MP・次RNGをold/new同条件比較。forward/backは互いのdelay競合・突進/後退・一回限り条件を別測定。original Gameplay PASS0 / strict MATCH0。
+[VERIFY/NEXT] T011: form_sankai3/4への実親合成とspecial=@/range_min=@/rush=@・gun_delay共有名の実効lookup。T012/T013: 通常vs allfunc経路、distance midpoint/MP/発射結果。T024: Skill付与/除去後の実Slot。Eのみ重複審査しMASTER/T018へ正式統合。
+[SAFETY] B所有の原作コピーと既存B静的証拠をread-only照合。原本ZIP/EXE/SAVE実行・改変0。安全拒否済み49ED30/510C20/5710C0..571500及びB0317 owner書込の代替取得/再提出0。Work/REA/dev_lab/MASTER/T018/他lane/Git/Remote/設定/automation変更なし。Task DONE増0。

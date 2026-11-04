@@ -1,0 +1,52 @@
+{
+  "research_id": "B-OFFLINE-20261101-09H-T011-T013-GROUP34-WEIGHTED-SQRT-01",
+  "readback_timestamp_local": "2026-11-01 09H JST",
+  "owner": "B",
+  "state": [
+    "OFFLINE-UNSYNCED",
+    "STATIC",
+    "INFERRED",
+    "VERIFY",
+    "NOT READY"
+  ],
+  "files": [
+    {
+      "path": "data/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md",
+      "bytes": 7621,
+      "sha256": "196375A50098E099512A9DD7F6EFC62E02DC80CB308A87B3771F0C876EF34F3B",
+      "independent_readback": "PASS"
+    },
+    {
+      "path": "data/B_20261101_09H_GROUP34_WEIGHTED_SQRT_NATIVE_READONLY_VERIFY.py",
+      "bytes": 7352,
+      "sha256": "E6FF2C50614FE7315A78570431466AB49E8C19D3DD92043ADC18263DBD43A85A",
+      "independent_readback": "PASS"
+    },
+    {
+      "path": "data/B_OFFLINE_20261101_09H_GROUP34_WEIGHTED_SQRT_EVIDENCE.json",
+      "bytes": 15475,
+      "sha256": "6AF7899AA29F10ACF63BE9806D1A30C79644615DBCD717AF2F435017D678A1AC",
+      "independent_readback": "PASS"
+    },
+    {
+      "path": "evidence/LANE_B_HANDOFF_OFFLINE_DELTA_20261101_09H.md",
+      "bytes": 2646,
+      "sha256": "2229B2A6E62114FF988A112594A2A84301FA7AC6265FFC673879C2EA227B2073",
+      "independent_readback": "PASS"
+    }
+  ],
+  "files_pass": 4,
+  "files_total": 4,
+  "source_verify_pass": 58,
+  "source_verify_total": 58,
+  "script_rerun_exact_output": "PASS",
+  "original_game_Golden_PASS": 0,
+  "strict_MATCH": 0,
+  "new_READY": 0,
+  "pc_write_or_sync": "NOT ATTEMPTED / UNVERIFIED",
+  "git_sync": "NOT ATTEMPTED",
+  "pc_connection_error": "UNAVAILABLE: MCP SSE probe returned 429 from openai.org",
+  "prior_03H_save_status": "UNKNOWN",
+  "safe_134": "PRIOR SNAPSHOT ONLY",
+  "hold_21": "PRESERVED"
+}

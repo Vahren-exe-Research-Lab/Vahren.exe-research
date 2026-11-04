@@ -1,0 +1,103 @@
+{
+  "approved_count": 10,
+  "base_commit": "68c228b1",
+  "selection": [
+    {
+      "source_path": "data/B_OFFLINE_20261101_08H_READBACK_RECEIPT.json",
+      "approved_sha256": "e48796717d3c18e1ad40566ef5733d9b375fe0f520d77eb2840688b4f251fe40",
+      "bytes": 1299,
+      "catalog_sha_match": true,
+      "baseline_exact_sha_aliases": 0,
+      "decision": "ARCHIVE_EXACT",
+      "reason": "Bounded full receipt review: audit/status/count metadata and opaque references only; no substantive held body."
+    },
+    {
+      "source_path": "data/B_OFFLINE_20261101_09H_READBACK_RECEIPT.json",
+      "approved_sha256": "96436bb587dd3cd630d6e1aa58b851f3c4738ebe991e12d4900ac2c898a2b346",
+      "bytes": 1683,
+      "catalog_sha_match": true,
+      "baseline_exact_sha_aliases": 0,
+      "decision": "ARCHIVE_EXACT",
+      "reason": "Bounded full receipt review: audit/status/count metadata and opaque references only; no substantive held body."
+    },
+    {
+      "source_path": "data/B_OFFLINE_20261101_10H_READBACK_RECEIPT.json",
+      "approved_sha256": "036c079c316f068c4c274d6ef095149495ada890e6769f4d43fa3caf1e8ae46e",
+      "bytes": 2022,
+      "catalog_sha_match": true,
+      "baseline_exact_sha_aliases": 0,
+      "decision": "ARCHIVE_EXACT",
+      "reason": "Bounded full receipt review: audit/status/count metadata and opaque references only; no substantive held body."
+    },
+    {
+      "source_path": "data/B_OFFLINE_20261101_11H_READBACK_RECEIPT.json",
+      "approved_sha256": "422f11ae5ddb2c14f29e7a0a086e5ec08b509ebdc6a1e38931dc5e4f5c6b2b1d",
+      "bytes": 1230,
+      "catalog_sha_match": true,
+      "baseline_exact_sha_aliases": 0,
+      "decision": "ARCHIVE_EXACT",
+      "reason": "Bounded full receipt review: audit/status/count metadata and opaque references only; no substantive held body."
+    },
+    {
+      "source_path": "data/B_OFFLINE_20261101_12H_READBACK_RECEIPT.json",
+      "approved_sha256": "6fd4df8c1e19aa1f9153f3a27a1305f5a3c53d9eabe5dd696e966c46598fc6c5",
+      "bytes": 1383,
+      "catalog_sha_match": true,
+      "baseline_exact_sha_aliases": 0,
+      "decision": "ARCHIVE_EXACT",
+      "reason": "Bounded full receipt review: audit/status/count metadata and opaque references only; no substantive held body."
+    },
+    {
+      "source_path": "data/B_OFFLINE_20261101_13H_READBACK_RECEIPT.json",
+      "approved_sha256": "01ce9ea234cf06d3125cf4b05c2e3ad63ff8d079b4b1521954fe93255fac6e97",
+      "bytes": 917,
+      "catalog_sha_match": true,
+      "baseline_exact_sha_aliases": 0,
+      "decision": "ARCHIVE_EXACT",
+      "reason": "Bounded full receipt review: audit/status/count metadata and opaque references only; no substantive held body."
+    },
+    {
+      "source_path": "data/B_OFFLINE_20261101_14H_READBACK_RECEIPT.json",
+      "approved_sha256": "a7d4db2c12aab0a9934934f1a9afba7bd468627ca74dd5e9aa05aac351f203d3",
+      "bytes": 1751,
+      "catalog_sha_match": true,
+      "baseline_exact_sha_aliases": 0,
+      "decision": "ARCHIVE_EXACT",
+      "reason": "Bounded full receipt review: audit/status/count metadata and opaque references only; no substantive held body."
+    },
+    {
+      "source_path": "data/B_OFFLINE_20261101_15H_READBACK_RECEIPT.json",
+      "approved_sha256": "d1d0409079d72b1c0152e534897090cfb2642e8951fd3f024460b0ce07ae0594",
+      "bytes": 2358,
+      "catalog_sha_match": true,
+      "baseline_exact_sha_aliases": 0,
+      "decision": "ARCHIVE_EXACT",
+      "reason": "Bounded full receipt review: audit/status/count metadata and opaque references only; no substantive held body."
+    },
+    {
+      "source_path": "data/B_OFFLINE_20261101_16H_READBACK_RECEIPT.json",
+      "approved_sha256": "7178570f7b60dfbd8bec0ad60dc19c3313c31b26a7ce913f6430da904cafd03e",
+      "bytes": 1880,
+      "catalog_sha_match": true,
+      "baseline_exact_sha_aliases": 0,
+      "decision": "ARCHIVE_EXACT",
+      "reason": "Bounded full receipt review: audit/status/count metadata and opaque references only; no substantive held body."
+    },
+    {
+      "source_path": "data/B_OFFLINE_20261101_16H_READBACK_RECEIPT_CONVERSATION_FINAL.json",
+      "approved_sha256": "89218725795028ef6eebe6f475a2517cf3c8b2379fb5be297ba41daeeb1fb680",
+      "bytes": 2102,
+      "catalog_sha_match": true,
+      "baseline_exact_sha_aliases": 0,
+      "decision": "ARCHIVE_EXACT",
+      "reason": "Bounded full receipt review: audit/status/count metadata and opaque references only; no substantive held body."
+    }
+  ],
+  "counts": {
+    "exact": 10,
+    "privacy_variant": 0,
+    "alias": 0,
+    "deferred": 0
+  },
+  "read_boundary": "Only these ten original JSON bodies plus permitted baseline metadata were read; references remained opaque."
+}

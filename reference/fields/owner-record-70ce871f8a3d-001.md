@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-8"></a>
+## record + 0x8
+
+- [research/recovered/b_batch10/data/T013_SUPPORT_RECORD_BYTE_PROVENANCE_OFFLINE_20261020_1313.md 行 15](../../research/recovered/b_batch10/data/T013_SUPPORT_RECORD_BYTE_PROVENANCE_OFFLINE_20261020_1313.md?plain=1#L15-L15) — - `0x514FCA MOV [ESP+0x20], ESI`（record +0x00の4byte）、`0x514FD7 FSTP double ptr [ESP+0x28]`（record +0x08..0x0Fの8byte）、`0x514FDF MOV [ESP+0x30], ESI`（record +0x10
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 <a id="field-c"></a>
 ## record + 0xC
 

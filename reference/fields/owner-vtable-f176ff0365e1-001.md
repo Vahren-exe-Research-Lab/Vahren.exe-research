@@ -22,6 +22,9 @@
 - [research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md 行 14](../../research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md?plain=1#L14-L14) — [VERIFY/NEXT] 4DFD80 resource loader423E80/423D70 media object definition, 565780/479760 linked owner, case record+0xC producer, native Unit subtype vtable+0x8/
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
+- [research/recovered/rea_batch10/reports/REA_20261022_0535_T014_CATCH_RETHROW_MASK_CONTRAST_STATIC.md 行 13](../../research/recovered/rea_batch10/reports/REA_20261022_0535_T014_CATCH_RETHROW_MASK_CONTRAST_STATIC.md?plain=1#L13-L13) — - 重要な関数関係: 0x470A93→0x426E00（catch）、0x470AC5→0x426E00（normal cleanup）、0x470AE3=未解決computed CALL vtable+0x08。0x470A78はGhidra Catch_All・size45、0x470AA5が関数範囲直後に位置す
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
 <a id="field-c"></a>
 ## vtable + 0xC
 
@@ -79,6 +82,9 @@
 - [research/recovered/b_batch9/data/T013_SUPPORT_OBJECT_550980_CONTRACT_20261013.md 行 10](../../research/recovered/b_batch9/data/T013_SUPPORT_OBJECT_550980_CONTRACT_20261013.md?plain=1#L10-L10) — [DELTA/REIMPLEMENT] 前ID B-20261013-1122-01は54E0B0→550980→551490のcall順まで確定。本件の独立増分はpool初期化・reuse判定+0x6C・record+0xA8初期化・vtable+0x18 callback・return pointer/append
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
+- [research/recovered/rea_batch10/reports/REA_20261022_0443_T014_SINGLEBYTE_EOF_ESI3_STATE_ABI_STATIC.md 行 23](../../research/recovered/rea_batch10/reports/REA_20261022_0443_T014_SINGLEBYTE_EOF_ESI3_STATE_ABI_STATIC.md?plain=1#L23-L23) — - 情報の出典VA/CALL: 0x470611→0x470980、0x4709D5→0x42EC60、0x470A1B computed vtable+0x18、0x470A2F→0x470AAC（GhidraはCALLと登録、実ASMはJMP）、0x470AC5→0x426E00。**索引CALL分類とASMに不一
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
 - [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 606](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L606-L606) — - `IDirectMusicSegment8` vtable +0x18 receives repeat 0/1000 depending on playback mode; interface layout identifies this slot as SetRepeats.
   制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
 
@@ -90,6 +96,15 @@
 
 - [research/recovered/rng_audio/T006_AUDIO_BACKEND_EOF.md 行 6](../../research/recovered/rng_audio/T006_AUDIO_BACKEND_EOF.md?plain=1#L6-L6) — - audioApplyVolume 0x4BF630 calls IBasicAudio vtable +0x1C = put_Volume for the DirectShow branch.
   制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
+
+<a id="field-20"></a>
+## vtable + 0x20
+
+- [research/recovered/rea_batch10/reports/REA_20261021_1835_T014_READ_EH_FRAME_SPLIT_STATIC.md 行 12](../../research/recovered/rea_batch10/reports/REA_20261021_1835_T014_READ_EH_FRAME_SPLIT_STATIC.md?plain=1#L12-L12) — - `0x42ECF0`（31 bytes、code SHA 509ABCB0231F72EE6B7D32D3F197B65F895CDFE2812F22188DBE481B45285E21）は `0x42ED07` の未解決間接CALL `CALL EAX`（vtable+0x20）を行う。疑似Cは`void`だがc
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_batch10/reports/REA_20261022_0737_T014_STREAMBUF_VIRTUAL_SLOT_SEMANTICS_ABI_STATIC.md 行 17](../../research/recovered/rea_batch10/reports/REA_20261022_0737_T014_STREAMBUF_VIRTUAL_SLOT_SEMANTICS_ABI_STATIC.md?plain=1#L17-L17) — - 0x42ECF0→vtable+0x20 CALLsite0x42ED07、0x42E700→0x42ECF0 CALLsite0x42E77F。0x42E700 codeSHA=E50363BD394C5A7820AADE195D5B53B5B02CF000DA9C4AE12D6EB29C168C8A76。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
 
 <a id="field-24"></a>
 ## vtable + 0x24
@@ -208,6 +223,9 @@
 <a id="field-64"></a>
 ## vtable + 0x64
 
+- [research/recovered/b_batch10/data/T028_AL1_PREINSERT_DETACH_GEOMETRY_V9_20261029_06H.md 行 20](../../research/recovered/b_batch10/data/T028_AL1_PREINSERT_DETACH_GEOMETRY_V9_20261029_06H.md?plain=1#L20-L20) — NEXT: vtable+0x64 slotの実体、0x5A9CC0呼出時EAX/ESIのオブジェクト同一性と0x4BC9C0のkey、二vector producer、T028士気敗走、T013最終target、T024戦闘AI、T011召喚、T012ダメージ。安全拒否の迂回無し、原本/MASTER/他lane/RE
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 - [research/recovered/b_batch2/T028_EFFECT_ALFLAG_CALLSITE_SENTINEL_MATRIX_NATIVE_20261029_08H.md 行 13](../../research/recovered/b_batch2/T028_EFFECT_ALFLAG_CALLSITE_SENTINEL_MATRIX_NATIVE_20261029_08H.md?plain=1#L13-L13) — \| 0x435246 \| 0x435244 MOV AL,1 \| 0x435234 vtable+0x64 真後の1 \|
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 
@@ -249,6 +267,9 @@
 
 <a id="field-80"></a>
 ## vtable + 0x80
+
+- [research/recovered/b_batch10/data/T013_SUPPORT_THREE_VECTOR_RETURN_CHAIN_20261013.md 行 8](../../research/recovered/b_batch10/data/T013_SUPPORT_THREE_VECTOR_RETURN_CHAIN_20261013.md?plain=1#L8-L8) — [CRITICAL AL/MP ORDER] Upper caller57F9E8 reads Skill+0x278 cost→57F9EE subtract Unit+0x94 **BEFORE** optional57FA8F Unit vtable+0x80 and57FA99 call54E0B0. On r
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
 - [research/recovered/b_batch3/T012_UNIT_VIRTUAL80_579290_CONTRACT_20261013.md 行 1](../../research/recovered/b_batch3/T012_UNIT_VIRTUAL80_579290_CONTRACT_20261013.md?plain=1#L1-L1) — # B-20261013-1253-01｜WRQ-B-SKILL：Unit vtable+0x80 →0x579290軌道座標列設定関数（T012/T013）
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted

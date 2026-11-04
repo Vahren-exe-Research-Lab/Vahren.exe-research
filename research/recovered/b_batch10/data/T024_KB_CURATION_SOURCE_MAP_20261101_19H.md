@@ -1,0 +1,10 @@
+# B/T024・T011｜GitHub知識ベース取込候補・検索導線（2026-11-01 19H）
+- Curation queue ID: `B-KB-20261101-19H-T024-CURATABLE-SOURCE-MAP-01`; owner=B/T024 (T011関連)、T013最終対象はVERIFY。これは**既存研究9件の整理索引**であり新発見9件・READY9件を新規計上しない。
+- 原作対象：ver0.67 PE SHA256 `E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187`。B研究資料はPC `_REDEV_RESEARCH/data/`。明細は同名 `T024_KB_CURATION_SOURCE_MAP_20261101_19H.tsv` (9研究ID、各sourceの現物SHA256/サイズとは別に指定VA・CALL/offset・行番号を収録)。
+- **GitHub現状のギャップ**：2026-11-01 19H時点 private `ButaMonky/Hakushin067-Research-Knowledge` developの `REF_BATTLE_AI_MORALE.md`、`REF_UNIT_EXP_SUMMON.md`、`symbols.tsv` に `0x529DC0/0x52AD00/0x526030/0x569360` の字句一致なし。PCの `python -B knowledge/kb.py addr 0x529DC0` は「名前なし／資料での言及なし／研究全文索引関連なし」。これはKB未収録の**候補**であり意味的未研究を意味しない。
+- **再利用できる依存関係**：先行 `0x569280` の `group+0x34` 算出 → 10H `0x569360` の近接比率評価（100tick再評価関連）。別に11H `0x528DB0` はA/B別集計 → 12H mode3はB→Aの順序で `0x52AB50` に渡す。13H non-mode3は独立リストそれぞれ `0x529DC0` 距離ソート → `0x52AD00` splice merge → `0x526030` 比較。17Hは局所同点左優先。18Hは各ソート直前に別producerが共通 `0x8BE048/+0x4C` を設定する。
+- **重要な訂正・境界**：14H signed32二乗和overflow、15H NaN非推移性、16H `SAR` 符号付き中点丸めは既存静的命令を利用した**合成/条件付き**検証であり原作バグ確定ではない。17H局所左優先を全体安定ソートと同一視しない。T013の最終攻撃対象決定、T028敗走、T011召喚EXP恒久反映とは未結線（VERIFY）。
+- **証拠格付け**：各行の出典原文・VA・CALL site・SHAを独立確認してから専任統合担当が `symbols.tsv`（名前確定時のみ）・`REF_BATTLE_AI_MORALE.md`（訂正/全体図）・`RESEARCH_SOURCE_CATALOG.tsv`（監査用）へ必要な差分だけ反映。元報告の `OFFLINE-UNSYNCED` は調査当時の状態で、PC原文については2026-11-01 18H HANDOFFのreadback事実と区別。
+- **復旧注意**：03H `T013_VSLOT5C_CLASS_DISPATCH_RETREAT_NATIVE_20261101_03H.md` は本run PC存在未確認。07H `T011_T013_GROUP1E_SETTER_MEMBER_RECALC_NATIVE_20261101_07H.md` はPC未発見でcore4未回収。17/18H B所有最新と07H復旧は次回引継ぎ。既HOLD21・過去安全拒否操作/範囲には未接触・別tool/path/ZIP/Gitでの迂回禁止。
+- **Golden/正式状態**：全件 STATIC/INFERRED/VERIFY (一部 SYNTHETIC_ONLY)、**原作Gameplay Golden PASS0、strict MATCH0、B新READY0、E MASTER統合0**。実機では無改変原作EXE、元DAT、同SAVE/MAP/input/RNG/tickでsource Unitの候補/並び/距離/行動/次tickを照合するまでNOT READY。
+- **権限**：Bは自担当data/HANDOFFにのみ保存。GitHub repo、`knowledge/`、MASTER、他lane、REA、原作ファイル、スケジュールには書込しない。専任knowledge curatorへ`KB_CANDIDATE`として受渡し、既存IDとの意味重複と承認を待つ。ff-only統合は専任のみ。

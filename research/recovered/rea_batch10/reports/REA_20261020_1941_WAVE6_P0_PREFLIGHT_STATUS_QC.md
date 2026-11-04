@@ -1,0 +1,11 @@
+# REA-20261020-1941-W6-P0-STATUS-QC-01｜Wave6安全候補・保存run照合（独立REA）
+- [SCOPE] ver0.67専用コピーのみ。独立REA owner。Desktop Commander Local Compactだけを利用。MASTER cp195・規約・README/QUEUE/PROGRESS・最新run/既存証拠をread-only確認。研究T014(P0)、T010/T012(P0)参照。
+- [SOURCE] 承認済 rea_lab/targets/hakushin067_Vahren.exe をLocalでread-only SHA256測定し、E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187一致（2026-10-20T19:41+09）。
+- [RUN] 最新runs/20261011T153309850Z/RUN_RESULT.json はREA6.1.0・Ghidra12.1.4で0x5158A0/0x57CFA0/0x57CFD0/0x5155C0の5方法をVERIFIED。最新sync logs/progress_sync_20261011T153958076Z.json: W1=16/16,W2=10/10,W3=10/10,W4=12/12,W5=16/16。累計64/64(P0 29/29,P1 35/35)。今回新Ghidra 0、新Evidence ID 0、新VERIFIED 0。
+- [QUEUE STATE] Wave6は未正式登録の16候補、VERIFIED 0/16。P0 5件/P1 11件、既往拒否4件(T013: 0x515750/0x515790/0x5159B0/0x57D180)をBLOCKED(P0 3/P1 1)。未着手TODO12(P0 2/P1 10)、関数結果VERIFY0。拒否4件は再解析・別経路迂回しない。
+- [P0 SAFE XREF] T014 0x470980は既VERIFIED親0x4705F0の保存callee evidence ev_661507e7456c44d65dd153fff0f2c6b8de0e33a9519370d794118fae0def6743 と親ASM ev_119a86f44bb44e174c04ae524788b577d2b4085fbdba2dbac424cf906663f94d の0x470611 CALLで参照。同0x470700親は0x42E700を0x470713でCALL（callee ev_3f9a89a60c30eee71f662be8ef197b9016cfe610caae887926287dcb5d131286）。対象2関数の入口・5方法は未取得・TODOであり親情報を子のVERIFIEDに流用しない。
+- [DEDUP] 既存REA-20261019-0535-T014-PARENT-IO-COMMIT-01やREA_T014_SAVE_TOKEN_SIGNED_BYTE_LENGTH_AUDIT_20261012_0637等のABI/255-byte観察は既知として参照のみ。本記録は2026-10-20夜の安全前提・正式Wave未成立・優先順位のreadbackで、旧発見の再計上なし。
+- [PREFLIGHT] Local瞬間CPU20%、RAM空き18.06GiB/総30.78GiB、Java/Ghidraプロセス検出なし、active.lock=false、コピーSHA一致。重い解析をしない理由は負荷でなく、Wave6未登録・拒否4候補・旧QUEUE/PROGRESSのrename EPERM・既成功REA6.1.0とrunner記載6.4.0不一致。runner/sync/新Ghidraを起動せず解析実行時間0秒。軽量調査全体の時間は未測定。
+- [MASTER/GOLDEN] 最新MASTER cp195、DONE9/34・IN_PROGRESS21・VERIFY4。旧EXE実機golden PASS0、strict MATCH0。ゲーム再実装率は測定していない。QUEUE/PROGRESS rawは既往EPERMにより古く、sync記録を優先する。
+- [NEXT] 優先T010/T012通常死亡正常帰還0x575F71/0x575F91の未観測条件とcallee副作用はVERIFYのまま。T014 0x470980/0x42E700の関数境界・5方法は安全な正式Wave/queue整合が成立した場合に限り取得判断。Wave6の拒否4関数は置換候補の新証拠なしに正式登録しない。
+- [SAFETY] 禁止0x5710C0..0x571500、拒否済REA text exporterとWave6拒否4、拒否済みwrite/renameの再提出・迂回なし。原本ZIP/EXE/SAVE、A-E/MASTER/T018、QUEUE/PROGRESS、dev/Work、Git/push、MCP/REA設定、automationを変更しない。

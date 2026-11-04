@@ -12,7 +12,7 @@
 | 構造体とメモリの位置 | 同じ事典の[構造体一覧](reference/README.md#構造体フィールド)から型を選ぶ。例：[ScriptEngine](reference/structs/ScriptEngine.md)、[実行時ユニットのHP関連](reference/structs/UnitRuntime.md)。フィールドの説明、読み書き関数、根拠へ進む |
 | 研究本文だけにあるオフセット | [所有者＋オフセット索引](reference/FIELD_MENTIONS.md)。`0x`付きの局所表記が対象。正式な型・幅・意味の確定とは区別する |
 | 訂正された説明 | [訂正一覧](reference/CORRECTIONS.md)で旧解釈・現在の解釈・根拠を比較する。各関数・フィールドからも辿れる |
-| 研究ID・題名・本文 | [回収済み全文書](reference/DOCUMENTS.md)。本文と回収制約を確認する。手元のコピーでは下の検索も使える |
+| 研究ID・題名・本文 | [回収済み全文書](reference/DOCUMENTS.md)、[JSON証拠票と本文の対応](research/recovered/json_receipts1/README.md)。本文と回収制約を確認する。手元のコピーでは下の検索も使える |
 | 呼び出し元・呼び出し先 | 各関数ページの静的CALL一覧。収録済みのV9直接CALLが対象で、間接CALLや全関数の網羅ではない |
 | 未回収・保留・原本との対応 | [回収状況](research/recovered/README.md)、[現在のローカル所在](research/recovered/current_inventory/README.md)、[元の目録と収録の照合](research/recovered/COVERAGE.md) |
 | PR・Issue・研究チャットに残る成果 | [GitHub上の所在](research/recovered/GITHUB_SOURCES.md)、[定期研究チャットの照合](research/recovered/SCHEDULE_CHAT_CHECK.md)、[旧チャットの回答保全](research/recovered/chat_finals/README.md)、[旧Aの研究報告と参照照合](research/recovered/chat_a_history/README.md)。いずれも取得時点の記録 |
@@ -35,7 +35,7 @@ python -B tools/reference.py callees 0x0055BC60 --json
 
 アドレスはver0.67のVA、`Vahren.exe+...` は基準0x400000からの相対位置です。構造体と位置は `構造体名+0xオフセット` と書きます。`ScriptEngine` は研究用のレイアウト名で、原作のC++クラス名ではありません。古い本文の `Unit+185F4` のように `0x` を省いた表記は、`python -B tools/reference.py search Unit+185F4` と元の表記で本文検索します。構造体＋オフセット検索は、正式な辞書項目と本文の `0x` 付き局所表記が対象です。
 
-`--json` は人向けページと同じ根拠・確度・制約を返します。通常の文字列検索は研究本文にも一致し、文書ごとの最初の一致行を表示します。文書は台帳の初出順で最大20件なので、表示が省略されたら研究IDや題名で絞ってください。詳細は[検索と追加・訂正の手順](reference/UPDATING.md)にあります。
+`--json` は人向けページと同じ根拠・確度・制約を返します。通常の文字列検索は、回収済み研究本文・JSON証拠票・Pythonコードの内容も対象とします。コードは実行しません。文書ごとの最初の一致行を表示します。文書は台帳の初出順で最大20件なので、表示が省略されたら研究IDや題名で絞ってください。詳細は[検索と追加・訂正の手順](reference/UPDATING.md)にあります。
 
 ## 根拠と未確認事項を読む
 

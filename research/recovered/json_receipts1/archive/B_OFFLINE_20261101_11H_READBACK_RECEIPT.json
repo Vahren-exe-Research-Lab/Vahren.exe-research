@@ -1,0 +1,34 @@
+{
+  "research_id": "B-OFFLINE-20261101-11H-T011-T024-GROUP34-DUAL-BUCKET-GATE-01",
+  "scope": "ChatGPT sandbox and Library pending; research-PC NOT SYNCHRONIZED",
+  "pc_write": false,
+  "github_write": false,
+  "golden_pass": 0,
+  "strict_match": 0,
+  "files": [
+    {
+      "relative_path": "data/T011_T024_GROUP34_DUAL_BUCKET_ELIGIBILITY_NATIVE_20261101_11H.md",
+      "bytes": 9122,
+      "sha256": "EA85732E2C7E52E93B58A53158E07C8E32E15A109EE343277A3EBF85D6F78984",
+      "independent_readback": true
+    },
+    {
+      "relative_path": "data/B_20261101_11H_GROUP34_DUAL_BUCKET_READONLY_VERIFY.py",
+      "bytes": 5705,
+      "sha256": "F8DF5760E5CEC5757A37516E09BEFD05A342B16AB240182D4C25588C66E96483",
+      "independent_readback": true
+    },
+    {
+      "relative_path": "data/B_OFFLINE_20261101_11H_GROUP34_DUAL_BUCKET_EVIDENCE.json",
+      "bytes": 14944,
+      "sha256": "C3E4C3E609E31622A0E4F3B41B2B55F1B0A100909F77B533905FB726D64EEC48",
+      "independent_readback": true
+    },
+    {
+      "relative_path": "evidence/LANE_B_HANDOFF_OFFLINE_DELTA_20261101_11H.md",
+      "bytes": 3586,
+      "sha256": "0BD9FDCFD0DA2BEAA136A29E4D25F70A266BE2A7398AB27045FF3B67E03FA2A2",
+      "independent_readback": true
+    }
+  ]
+}

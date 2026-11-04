@@ -1,0 +1,17 @@
+# REA-20261020-2335-T014-DIPLO-MODE0-ZEROCOPY-01｜外交save reader mode0のzero-byte memcpyとvector論理clear
+- [STATE/OWNER] REA専用・T014。2026-10-20 23時台JST、Local Compactによる保存済みGhidra証拠のread-only静的再照合。新Ghidra取得なし、原作実機NOT RUN、疑似コードを実ソース扱いしない。
+- [SOURCE] runs/20261011T124000308Z/471AF0_procedure_assembly.json (ev_f7d8db97a2ec936312735e2bb6c29f421ff95b1eeeccd1a089237dfda632947b)、pseudo (ev_1e776fb470e6e934d7fffa736600daa070a5e3e009552f7951f653edbc00f871) 、info (ev_29f03715d97de300e639f60e6e2ae24d400cd4bff3edb921ae126c14e4cb09b5)。親run complete=true、failure=null、REA6.1.0/Ghidra12.1.4、source SHA E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187。
+- [ACTUAL SHA] 23:37:40 JST 承認済み rea_lab/targets/hakushin067_Vahren.exe のSHA256実計算が指定値と一致。原本ZIP/EXEは実行・変更なし。
+- [MODE BRANCH] 0x471B71 CMP byte [EBP+8],0; 0x471B7C JNZ 0x471BA6。mode !=0ならvector clear区間をskip、mode=0なら既存begin/end比較へ。
+- [NONEMPTY] 0x471B7E MOV ECX,[EBX+1C] end、0x471B81 MOV ESI,[EBX+18] begin、0x471B84 CMP、0x471B86 JZ 0x471BA6。空配列はcopy/clearなし。
+- [ZERO-BYTE MEMORY COPY] 既存配列非空時、0x471B88 MOV EAX,ECX →0x471B8A SUB EAX,ECX=0 →0x471B8C SAR EAX,2=0 →0x471B8F LEA EDI,[EAX*4]=0。0x471B96 PUSH EDI(=0),0x471B97 PUSH ECX,0x471B98 PUSH ESI、0x471B99 CALL 0x5B6720 (CRT memcpy相当)。この局所直線経路の転送長は常に0で、配列内容のコピーは起こらない。
+- [LOGICAL CLEAR] 0x471BA1 ADD EDI,ESI → 0x471BA3 MOV [EBX+1C],EDI。EDI=0なのでend=beginに設定。基底beginとcapacity(EBX+20)はこの範囲で不変。すなわちsize=0への論理clearであり、storage bytesのゼロ消去や解放ではない。
+- [PSEUDO CORRECTION] Ghidra pseudoには memcpy(_Dst,end,0) と end=_Dst の形が現れている。0x471B88..0x471BA3の機械語によれば正常直線経路で「既存全要素をmemcpyで複製する」解釈は誤り。
+- [MODE CONTINUATION] mode=1は0x471BA6から文字列reader 0x4705F0を反復し、0x471BD9 JZ 0x471BF5の条件を通過せずに0x471BA6へ戻るので、当該loopでは文字列→pointer変換0x467F40とvector追加0x471CCBをskipする。一方mode=0は非空tokenを0x467F40で変換し、既存pointer比較0x471C53等を経てappendし得る。
+- [SCOPE] mode=1が上位処理で何を意味するか、0x4705F0のEOF/LoadException、vectorの外部alias・実capacity、0x5B6720の異常呼出副作用、pointer intern同値と保存データ互換性はVERIFY。内部の無copyは正常有効配列での局所静的分岐に限定。
+- [DEDUP] 既REA_T014_DUAL_MODE_CALLSITE_CONFIRMED_20261012_1142はmode0/1 caller区別を確定済み。既REA_WAVE5_SAVE_IO_VECTOR_AUDIT_20261011_2347はwriter反復を確認済み。本増分はreader 0x471B88..0x471BA3のzero-copy lengthとlogical clear、およびmode=1のappend skipの命令証拠。既存成果再VERIFIED加算なし。
+- [STATUS] 保存済みsync progress_sync_20261011T153958076Z.json: W1 16/16,W2 10/10,W3 10/10,W4 12/12,W5 16/16、計64/64(P0=29/29,P1=35/35)。今回+0、Evidence ID新規0。Wave6暫定0/16、P0=5/P1=11、TODO12(P0=2/P1=10)、安全拒否BLOCKED4(P0=3/P1=1)、VERIFY0。既存QUEUE/PROGRESS rename EPERMでstale、正式登録未了。
+- [MASTER/GOLDEN] 最新MASTER checkpoint195、研究DONE9/34・IN_PROGRESS21・VERIFY4。旧EXE実機golden PASS0、新旧strict MATCH0。ゲーム再実装率は測定していない。
+- [PC/EXEC] 23:37:40 JST CPU13%, 空きRAM15.47GiB/総30.78GiB, java/ghidraなし, active.lockなし。重いGhidra実行0秒、軽量調査時間は未計測。
+- [BLOCKER/NEXT] 現REA実体6.4.0対指定6.1.0不整合、run_batchの禁止関数除外不完全、Wave6キュー未正式登録、QUEUE/PROGRESS EPERM。run_decompile.ps1/sync_progress.mjsは不実行。次はT014のreader 0x471AF0とwriter 0x471D20のNUL終端およびpointer重複判定と、T010/T012の死亡処理正常帰還を既存証拠で照合。Wave6 P0 0x470980/0x42E700は実行条件が整うまでTODO。
+- [SAFETY/BOUNDARY] 0x5710C0..0x571500およびWave6拒否4関数、既往拒否REA exporter、既往拒否保存の迂回/再提出なし。A-E/MASTER/T018/QUEUE/PROGRESS/原本/他研究/Git/push/公開/MCP設定/automation変更なし。REA専用の本QCだけを新規保存する。

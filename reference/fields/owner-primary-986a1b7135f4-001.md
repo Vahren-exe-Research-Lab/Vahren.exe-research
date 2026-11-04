@@ -19,4 +19,19 @@
 - [research/recovered/e_batch4/T020_FASTSIM_RETURN0_PRIMARY_VTABLE_DRAW_GATE_20261023_1850.md 行 24](../../research/recovered/e_batch4/T020_FASTSIM_RETURN0_PRIMARY_VTABLE_DRAW_GATE_20261023_1850.md?plain=1#L24-L24) — 次: 実原作同一battle-windowでvptr・primary+0xA4/+0x84・描画到達とG3/G4を別receipt採取する。正式MASTER統合はowner/source hash/READY/重複競合を確認後のみ。
   制約・訂正　Historical authored claims only; referenced payloads not opened or executed; actual INELIGIBLE/NOT RUN and historical counts preserved; no new native/runtime/Golden/strict MATCH/READY; excluded composites remain deferred outside this subset
 
+<a id="field-1c8"></a>
+## primary + 0x1C8
+
+- [research/recovered/rea_batch10/reports/REA_20261023_17H_P0_BATTLEWND_SECONDARY_VTABLE_FASTSIM_STATIC.md 行 35](../../research/recovered/rea_batch10/reports/REA_20261023_17H_P0_BATTLEWND_SECONDARY_VTABLE_FASTSIM_STATIC.md?plain=1#L35-L35) — - [VERIFY] 0x40E644と0x40E658のreceiver（primary+0x1C8/+0x1CC）の構築元・vptr+0x18具体実装、return4の判定意味を追う。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_batch10/reports/REA_20261023_1833_P0_DEMOPERSON_VSLOT18_STATE4_STATIC.md 行 11](../../research/recovered/rea_batch10/reports/REA_20261023_1833_P0_DEMOPERSON_VSLOT18_STATE4_STATIC.md?plain=1#L11-L11) — - グローバルBattleWnd主実体=0x008B8C90（既知）につき primary+0x1C8=0x008B8E58、primary+0x1CC=0x008B8E5C。V9 refs-to各14件/11件で照合。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+<a id="field-1cc"></a>
+## primary + 0x1CC
+
+- [research/recovered/rea_batch10/reports/REA_20261023_1833_P0_DEMOPERSON_VSLOT18_STATE4_STATIC.md 行 11](../../research/recovered/rea_batch10/reports/REA_20261023_1833_P0_DEMOPERSON_VSLOT18_STATE4_STATIC.md?plain=1#L11-L11) — - グローバルBattleWnd主実体=0x008B8C90（既知）につき primary+0x1C8=0x008B8E58、primary+0x1CC=0x008B8E5C。V9 refs-to各14件/11件で照合。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

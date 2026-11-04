@@ -1,0 +1,102 @@
+check	result	detail	checked_date
+selection	PASS	45 exact approved paths; complete ledger/identity coverage	2026-11-05
+ledger_schema	PASS	Root nine-column schema	2026-11-05
+dispositions	PASS	42 exact; 0 variant; 0 alias; 3 metadata-only deferred	2026-11-05
+source_identity:data/T013_SUPPORT_POSTCORE_RANDOM_4B9F70_CONTRACT_20261013.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T013_SUPPORT_POSTCORE_RANDOM_4B9F70_CONTRACT_20261013.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T013_SUPPORT_POSTCORE_RECT_4C3250_CONTRACT_20261013.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T013_SUPPORT_POSTCORE_RECT_4C3250_CONTRACT_20261013.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T013_SUPPORT_RECORD_BYTE_PROVENANCE_OFFLINE_20261020_1313.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T013_SUPPORT_RECORD_BYTE_PROVENANCE_OFFLINE_20261020_1313.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T013_SUPPORT_RNG_EFFECT_CROSSJOIN_20261013.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T013_SUPPORT_RNG_EFFECT_CROSSJOIN_20261013.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T013_SUPPORT_THREE_VECTOR_RETURN_CHAIN_20261013.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T013_SUPPORT_THREE_VECTOR_RETURN_CHAIN_20261013.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T013_SUPPORT_VECTOR_CAPACITY_GROWTH_OFFLINE_20261020_1609.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T013_SUPPORT_VECTOR_CAPACITY_GROWTH_OFFLINE_20261020_1609.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T013_T028_BATTLE_D0_PRODUCER_SORT_COMPARATOR_NATIVE_20261030_12H.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T013_T028_BATTLE_D0_PRODUCER_SORT_COMPARATOR_NATIVE_20261030_12H.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T013_TASK_PENDING_APPEND_4C2240_CONTRACT_20261013.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T013_TASK_PENDING_APPEND_4C2240_CONTRACT_20261013.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T013_TROOP_COORDINATE_OR_UNIT_DISPATCH_V3_20261023_18H.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T013_TROOP_COORDINATE_OR_UNIT_DISPATCH_V3_20261023_18H.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T013_TROOP_FORM_MODE_SETTER_FIRST_LIVE_V3_20261023_22H.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T013_TROOP_FORM_MODE_SETTER_FIRST_LIVE_V3_20261023_22H.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T013_TROOP_MODE_EXPR_RTTI_DEDUP_NATIVE_20261024_0015.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T013_TROOP_MODE_EXPR_RTTI_DEDUP_NATIVE_20261024_0015.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T013_TROOP_MODE_SOURCE_CASE8_NATIVE_20261023_2317.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T013_TROOP_MODE_SOURCE_CASE8_NATIVE_20261023_2317.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T013_TROOP_POSITION_SCRATCH_MODE_V3_20261023_1915.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T013_TROOP_POSITION_SCRATCH_MODE_V3_20261023_1915.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T013_TROOP_SORTED_PAIR_COMPACTION_NATIVE_20261023_21H.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T013_TROOP_SORTED_PAIR_COMPACTION_NATIVE_20261023_21H.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T013_TROOP_SORT_1BC_COMPARATOR_NATIVE_20261023_20H.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T013_TROOP_SORT_1BC_COMPARATOR_NATIVE_20261023_20H.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T013_VECTOR_GROWTH_ALLOC_ABI_NATIVE_20261027_06H.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T013_VECTOR_GROWTH_ALLOC_ABI_NATIVE_20261027_06H.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T013_WORK_SKILL_HANDLERS_BOUNDARY_20261013.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+deferred_no_body:data/T013_WORK_SKILL_HANDLERS_BOUNDARY_20261013.md	PASS	Blank destination and no body/substitute file	2026-11-05
+source_identity:data/T024_4EE1B0_INPUT_EDGE_521A00_REFRESH_GATING_20261022_0415.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T024_4EE1B0_INPUT_EDGE_521A00_REFRESH_GATING_20261022_0415.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T024_52AD00_MERGE_TIE_LOCAL_STABILITY_NATIVE_20261101_17H.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T024_52AD00_MERGE_TIE_LOCAL_STABILITY_NATIVE_20261101_17H.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T024_AI_DUPLICATE_FAR_DECLARATION_INHERITANCE_20261016.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T024_AI_DUPLICATE_FAR_DECLARATION_INHERITANCE_20261016.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T024_ANTIKITE_TWO_DASH_PROFILES_REPEAT_ENTRY_20261019.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+deferred_no_body:data/T024_ANTIKITE_TWO_DASH_PROFILES_REPEAT_ENTRY_20261019.md	PASS	Blank destination and no body/substitute file	2026-11-05
+source_identity:data/T024_ARTILLERY_GROUP_CLEAR_DOMINANCE_20261020.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T024_ARTILLERY_GROUP_CLEAR_DOMINANCE_20261020.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T024_CHILD_SPRITE_RESOLVER_OUTPTR_PALETTE_NATIVE_20261026_06H.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T024_CHILD_SPRITE_RESOLVER_OUTPTR_PALETTE_NATIVE_20261026_06H.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T024_DASHDUMMY_DECLARATION_ONLY_REFERENCE_AUDIT_20261019.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T024_DASHDUMMY_DECLARATION_ONLY_REFERENCE_AUDIT_20261019.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T024_FIRST_ELIGIBLE_UI_COUNT_SPLIT_NATIVE_20261026_04H.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T024_FIRST_ELIGIBLE_UI_COUNT_SPLIT_NATIVE_20261026_04H.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T024_FORMATION_29_TO_30_SLOT_GAP_SOURCE_20261019.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T024_FORMATION_29_TO_30_SLOT_GAP_SOURCE_20261019.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T024_FORM_GATE_PREPOP_ART_EXCLUSION_20261019.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T024_FORM_GATE_PREPOP_ART_EXCLUSION_20261019.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T024_FORM_SANKAI_TIME30_SKILL_REASSIGN_20261014.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T024_FORM_SANKAI_TIME30_SKILL_REASSIGN_20261014.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T024_KB_CURATION_SOURCE_MAP_20261101_19H.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T024_KB_CURATION_SOURCE_MAP_20261101_19H.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T024_MODE_PARAM_FILTER_TWO_CALLERS_NATIVE_20261026_03H.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T024_MODE_PARAM_FILTER_TWO_CALLERS_NATIVE_20261026_03H.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T024_SANKAI_DISTANCE_FAMILY_20261014.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T024_SANKAI_DISTANCE_FAMILY_20261014.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T024_SIDE_BLUE_PRIORITY_AND_CPU_RED_ANTIKITE_20261020.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+deferred_no_body:data/T024_SIDE_BLUE_PRIORITY_AND_CPU_RED_ANTIKITE_20261020.md	PASS	Blank destination and no body/substitute file	2026-11-05
+source_identity:data/T024_SPECIAL_SWAP_DELAY_CENSUS_20261022_0213.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T024_SPECIAL_SWAP_DELAY_CENSUS_20261022_0213.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T024_T028_BOSS_TIMER_DUAL_GATE_20261020.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T024_T028_BOSS_TIMER_DUAL_GATE_20261020.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T024_T028_DUAL_CLOCK_SENTINEL_ELAPSED_NATIVE_20261022_0815.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T024_T028_DUAL_CLOCK_SENTINEL_ELAPSED_NATIVE_20261022_0815.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T024_T028_UNLIMITED_TIMER_SENTINEL_NATIVE_SOURCE_GATE_20261022_0709.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T024_T028_UNLIMITED_TIMER_SENTINEL_NATIVE_SOURCE_GATE_20261022_0709.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T024_TROOP_CLEANUP_GATES_INPUT_NATIVE_20261025_20H.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T024_TROOP_CLEANUP_GATES_INPUT_NATIVE_20261025_20H.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T024_UI_THREE_RESERVED_SIBLING_GATE_NATIVE_20261026_05H.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T024_UI_THREE_RESERVED_SIBLING_GATE_NATIVE_20261026_05H.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T024_UNIT45D_EMPTY_CONTAINER_RESET_NATIVE_20261025_19H.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T024_UNIT45D_EMPTY_CONTAINER_RESET_NATIVE_20261025_19H.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T024_WORLD_GUARDED_SLOT_CLEAR_REAR_BASELINE_20261020.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T024_WORLD_GUARDED_SLOT_CLEAR_REAR_BASELINE_20261020.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T028_20261028_17H_PARTIAL_COPY_SAFETY_RECOVERY_20261029_03H.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T028_20261028_17H_PARTIAL_COPY_SAFETY_RECOVERY_20261029_03H.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T028_20261028_22H_VERIFY_COPY_SAFETY_RECOVERY_20261029_03H.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T028_20261028_22H_VERIFY_COPY_SAFETY_RECOVERY_20261029_03H.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T028_ADDLIMIT_GETLIMIT_REGISTRATION_SPLIT_20261022_0614.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T028_ADDLIMIT_GETLIMIT_REGISTRATION_SPLIT_20261022_0614.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T028_AL1_PREINSERT_DETACH_GEOMETRY_V9_20261029_06H.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T028_AL1_PREINSERT_DETACH_GEOMETRY_V9_20261029_06H.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+source_identity:data/T028_ALTERNATE_VECTOR_FIRE_REGISTRATION_CROSSJOIN_V3_20261029_04H.md	PASS	Current original SHA256 matches reviewed identity	2026-11-05
+destination_identity:data/T028_ALTERNATE_VECTOR_FIRE_REGISTRATION_CROSSJOIN_V3_20261029_04H.md	PASS	Full byte-for-byte equality including BOM and line endings	2026-11-05
+input_unchanged:approved-selection	PASS	Input hash and size unchanged	2026-11-05
+input_unchanged:SOURCE_MANIFEST.tsv	PASS	Input hash and size unchanged	2026-11-05
+input_unchanged:RESEARCH_SOURCE_CATALOG.tsv	PASS	Input hash and size unchanged	2026-11-05
+input_unchanged:research/recovered/RECOVERY_LEDGER.tsv	PASS	Input hash and size unchanged	2026-11-05
+unique_hashes	PASS	No exact baseline or within-batch hash aliases	2026-11-05
+privacy	PASS	No personal absolute path or privacy token pattern; manual full review also completed	2026-11-05
+no_transforms	PASS	Zero transforms; proof schema retained	2026-11-05
+export_file_scope	PASS	42 body files plus 8 metadata/readme files; final verification added separately	2026-11-05

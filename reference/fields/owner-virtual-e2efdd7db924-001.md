@@ -19,6 +19,27 @@
 - [research/recovered/b_reports/T013_HEAL_FINISH_UNREGISTER_POOL_REUSE_NATIVE_20261027_10H.md 行 6](../../research/recovered/b_reports/T013_HEAL_FINISH_UNREGISTER_POOL_REUSE_NATIVE_20261027_10H.md?plain=1#L6-L6) — [OWNER REGISTRATION] 0x54E11A/0x54E11E→0x550980 factory。factory 0x550C53 virtual+0x18→0x455FA0、0x455FAB MOV [object+0xC],holder。0x54E2CC holder=[effect+0xC]、0x5
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
+- [research/recovered/rea_batch10/reports/REA_20261022_0535_T014_CATCH_RETHROW_MASK_CONTRAST_STATIC.md 行 12](../../research/recovered/rea_batch10/reports/REA_20261022_0535_T014_CATCH_RETHROW_MASK_CONTRAST_STATIC.md?plain=1#L12-L12) — - 前回0443の通常EOF経路（sentry成功→virtual +0x18 が EAX=-1）: 0x470A25 LEA ESI,[EAX+4] => ESI=3、0x470AB7..0x470AC5で oldstate\|3（buffer==nullなら更に\|4）を作り、PUSH 0で0x426E00。excep
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+<a id="field-20"></a>
+## virtual + 0x20
+
+- [research/recovered/rea_batch10/reports/REA_20261021_2035_T014_RDSTATE7_LOAD_EXCEPTION_CALLERS_STATIC.md 行 21](../../research/recovered/rea_batch10/reports/REA_20261021_2035_T014_RDSTATE7_LOAD_EXCEPTION_CALLERS_STATIC.md?plain=1#L21-L21) — - 0x42E700 block read親のsite 0x42E77F→0x42ECF0、0x42ECF0 site 0x42ED07 virtual+0x20（computed CALL）は既知。該当実vptrがbasic_stringbufなら0x4297D0候補。ただし戻り値EDX:EAXと独立ASMは未検証。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_batch10/reports/REA_20261021_2339_T014_SINGLEBYTE_EOF_GCOUNT_BRANCH_STATIC.md 行 17](../../research/recovered/rea_batch10/reports/REA_20261021_2339_T014_SINGLEBYTE_EOF_GCOUNT_BRANCH_STATIC.md?plain=1#L17-L17) — - 0x42E700（code SHA E50363BD394C5A7820AADE195D5B53B5B02CF000DA9C4AE12D6EB29C168C8A76）→0x42ECF0（code SHA 509ABCB0231F72EE6B7D32D3F197B65F895CDFE2812F22188DBE481B
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+<a id="field-24"></a>
+## virtual + 0x24
+
+- [research/recovered/b_batch10/data/T013_SUPPORT_POSTCORE_RANDOM_4B9F70_CONTRACT_20261013.md 行 1](../../research/recovered/b_batch10/data/T013_SUPPORT_POSTCORE_RANDOM_4B9F70_CONTRACT_20261013.md?plain=1#L1-L1) — # B-20261013-1825-01｜WRQ-B-SKILL / B-MT-02：回復コア帰還後の0x4B9F70乱数選択・virtual+0x24・正常RET
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch10/data/T013_SUPPORT_THREE_VECTOR_RETURN_CHAIN_20261013.md 行 5](../../research/recovered/b_batch10/data/T013_SUPPORT_THREE_VECTOR_RETURN_CHAIN_20261013.md?plain=1#L5-L5) — [VECTOR #2 — POST-CORE RANDOM TEXT] 54E317 CALL551490; **on NORMAL callee ret4**, next callerPC=54E31C; EBX=Skill originally stored in effect+0x80. 54E31C/1F co
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 <a id="field-54"></a>
 ## virtual + 0x54
 
@@ -30,6 +51,12 @@
 
 - [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md 行 71](../../research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md?plain=1#L71-L71) — - EXP_ENDTRANSFER_VALIDATION_20261022.json: 上記41site/5文字列を原本から再照合。追加native3siteとSimpleUnit virtual+0x58=0x5445E0も確認。
   制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
+
+<a id="field-64"></a>
+## virtual + 0x64
+
+- [research/recovered/b_batch10/data/T028_ALTERNATE_VECTOR_FIRE_REGISTRATION_CROSSJOIN_V3_20261029_04H.md 行 11](../../research/recovered/b_batch10/data/T028_ALTERNATE_VECTOR_FIRE_REGISTRATION_CROSSJOIN_V3_20261029_04H.md?plain=1#L11-L11) — - 第二vector: 0x48D069 E8→0x49E490（native=e822140100）→同型の非NULL・virtual+0x64 gateを経て0x48D089 E8→0x5AA6E0（native=e852d61100）。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
 <a id="field-70"></a>
 ## virtual + 0x70

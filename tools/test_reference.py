@@ -2,11 +2,13 @@
 import hashlib
 import importlib.util
 import json
+import re
 from pathlib import Path
 import subprocess
 import sys
 import tempfile
 import unittest
+from urllib.parse import unquote, urlsplit
 
 spec = importlib.util.spec_from_file_location("reference", Path(__file__).with_name("reference.py"))
 reference = importlib.util.module_from_spec(spec)
@@ -552,6 +554,88 @@ class ReferenceTests(unittest.TestCase):
                           encoding="utf-8")
         return report, ledger
 
+    def test_reviewed_text_evidence_formats_search_with_hash_lines_and_limits(self):
+        directory = self.root / "research/recovered"
+        directory.mkdir(parents=True)
+        fixtures = {
+            "json": ('{\n  "id": "AUDIT-001",\n  "note": "証拠単語(json)",\n  "status": "PASS"\n}\n', 3),
+            "txt": ("# plain raw heading\n証拠単語(txt)\n", 2),
+            "py": ('raise RuntimeError("証拠単語(py)")\n', 1),
+            "csv": ("id,note\nA,証拠単語(csv)\n", 2),
+            "tsv": ("id\tnote\nA\t証拠単語(tsv)\n", 2),
+            "jsonl": ('{"id":1}\n{"note":"証拠単語(jsonl)"}\n', 2),
+        }
+        entries = []
+        for suffix, (content, line) in fixtures.items():
+            report = directory / ("format-" + suffix + "." + suffix)
+            report.write_text(content, encoding="utf-8")
+            digest = hashlib.sha256(report.read_bytes()).hexdigest()
+            entries.append(f"research/recovered/{report.name}\t{digest}\tHistorical receipt; not runtime proof\n")
+        hidden = directory / "unreviewed.json"
+        hidden.write_text('{"note":"unreviewed evidence wording"}', encoding="utf-8")
+        binary = directory / "opaque.bin"
+        binary.write_text("unsupported evidence wording", encoding="utf-8")
+        entries.append("research/recovered/opaque.bin\t" + hashlib.sha256(binary.read_bytes()).hexdigest() + "\tunsupported extension\n")
+        (directory / "RECOVERY_LEDGER.tsv").write_text(
+            "destination\tdestination_sha256\tlimitations\n" + "".join(entries), encoding="utf-8")
+        data = reference.load(self.root)
+        self.assertEqual(len(data["documents"]), len(fixtures))
+        for suffix, (_, line) in fixtures.items():
+            hits = reference.search(data, "証拠単語(" + suffix + ")")
+            self.assertEqual(len(hits), 1)
+            hit = hits[0]
+            self.assertEqual(hit["kind"], "document_match")
+            self.assertEqual(hit["name"], "format-" + suffix + "." + suffix)
+            self.assertEqual(hit["source"]["start_line"], line)
+            self.assertEqual(hit["source"]["sha256"], hashlib.sha256(
+                (self.root / hit["source"]["path"]).read_bytes()).hexdigest())
+            self.assertIn("not runtime proof", hit["recovery"]["limitations"])
+            self.assertNotIn("reported_status", hit)
+            self.assertNotIn("target_version", hit)
+        self.assertEqual(reference.search(data, "unreviewed evidence wording"), [])
+        self.assertEqual(reference.search(data, "unsupported evidence wording"), [])
+        pages = reference.render(self.root, data)
+        self.assertIn("format-json.json?plain=1#L1-L1", pages["reference/DOCUMENTS.md"])
+
+    def test_evidence_unicode_separators_do_not_change_physical_source_lines(self):
+        directory = self.root / "research/recovered"
+        directory.mkdir(parents=True)
+        receipt = directory / "unicode.json"
+        content = json.dumps({"note": "before\u2028needle-json\u2029tail\u0085end"}, ensure_ascii=False) + "\r\n"
+        receipt.write_bytes(content.encode("utf-8"))
+        text_report = directory / "unicode.txt"
+        text_report.write_bytes("prefix\u2028inline\r\nneedle-txt\r\n".encode("utf-8"))
+        entries = [f"research/recovered/{path.name}\t{hashlib.sha256(path.read_bytes()).hexdigest()}\n"
+                   for path in (receipt, text_report)]
+        (directory / "RECOVERY_LEDGER.tsv").write_text(
+            "destination\tdestination_sha256\n" + "".join(entries), encoding="utf-8")
+        data = reference.load(self.root)
+        for query, expected in (("needle-json", 1), ("needle-txt", 2)):
+            hits = reference.search(data, query)
+            self.assertEqual(len(hits), 1)
+            self.assertEqual(hits[0]["source"]["start_line"], expected)
+            self.assertEqual(hits[0]["source"]["end_line"], expected)
+        source = {"path": "research/recovered/unicode.json",
+                  "sha256": hashlib.sha256(receipt.read_bytes()).hexdigest(),
+                  "start_line": 2, "end_line": 2}
+        with self.assertRaisesRegex(ValueError, "source lines"):
+            reference.validate_source(self.root, source, "bad-physical-line")
+
+    def test_generic_receipt_does_not_replace_structured_run_results(self):
+        ledger = self.add_run_results()
+        receipt = ledger.parent / "audit.json"
+        receipt.write_text('{"note":"攻撃値 receipt-only", "status":"PASS"}\n', encoding="utf-8")
+        with ledger.open("a", encoding="utf-8") as stream:
+            stream.write("research/recovered/audit.json\t" + hashlib.sha256(receipt.read_bytes()).hexdigest()
+                         + "\tHistorical audit only\n")
+        data = reference.load(self.root)
+        hits = reference.search(data, "攻撃値")
+        self.assertEqual(sum(hit["kind"] == "research_run_record" for hit in hits), 2)
+        docs = [hit for hit in hits if hit["kind"] == "document_match"]
+        self.assertEqual(len(docs), 1)
+        self.assertNotIn("reported_status", docs[0])
+        self.assertEqual(len(data["documents"]), 1)
+
     def test_document_search_finds_title_id_filename_and_body_with_cited_excerpt(self):
         report, _ = self.add_prose_report()
         data = reference.load(self.root)
@@ -657,6 +741,88 @@ class ReferenceTests(unittest.TestCase):
         self.assertEqual(len(hits), 20)
         self.assertTrue(all(hit["total_document_matches"] == 25 and hit["document_matches_truncated"] for hit in hits))
         self.assertTrue(all(hit["recovery"]["limitations"] == limits for hit in hits))
+
+    def pagination_fixture(self, count):
+        directory = self.root / "research/recovered"
+        directory.mkdir(parents=True, exist_ok=True)
+        report = directory / "pagination.md"
+        ledger = directory / "RECOVERY_LEDGER.tsv"
+        entries = []
+        for number in range(count):
+            path = report.with_name(f"pagination-{number:03d}.md")
+            path.write_text(f"# Pagination title {number:03d}\nbody {number}\n", encoding="utf-8")
+            entries.append(f"research/recovered/{path.name}\t{hashlib.sha256(path.read_bytes()).hexdigest()}"
+                           f"\tpartial\tprior-{number}\tlimit-{number} " + "context " * 70
+                           + "HOLD_FOR_ID_RECONCILIATION\n")
+        ledger.write_text("destination\tdestination_sha256\tcoverage_state\tprior_coverage\tlimitations\n"
+                          + "".join(entries), encoding="utf-8")
+        return reference.load(self.root)
+
+    def test_document_pagination_keeps_all_provenance_and_resolves_nested_links(self):
+        data = self.pagination_fixture(101)
+        pages = reference.render(self.root, data)
+        overview = pages["reference/DOCUMENTS.md"]
+        names = ["reference/documents/page-001.md", "reference/documents/page-002.md"]
+        self.assertEqual(sorted(name for name in pages if name.startswith("reference/documents/")), names)
+        self.assertIn("documents/page-001.md", overview)
+        self.assertIn("documents/page-002.md", overview)
+        self.assertIn("101", overview)
+        self.assertIn("100", overview)
+        self.assertIn("Pagination title 000", overview)
+        self.assertIn("Pagination title 099", overview)
+        self.assertIn("Pagination title 100", overview)
+        self.assertNotIn("?plain=1#L", overview)
+        self.assertNotIn("HOLD_FOR_ID_RECONCILIATION", overview)
+        self.assertLess(len(overview), 3000)
+        for page_name, expected in zip(names, (data["documents"][:100], data["documents"][100:])):
+            content = pages[page_name]
+            self.assertEqual(content.count("制約・訂正"), len(expected))
+            self.assertIn("../DOCUMENTS.md", content)
+            self.assertIn("../README.md", content)
+            for document in expected:
+                source, recovery = document["source"], document["recovery"]
+                ledger = recovery["ledger"]
+                self.assertIn(document["name"], content)
+                self.assertIn(source["sha256"], content)
+                self.assertIn(recovery["limitations"], content)
+                self.assertIn(recovery["prior_coverage"], content)
+                self.assertIn(f"../../{source['path']}?plain=1#L{source['start_line']}-L{source['end_line']}", content)
+                self.assertIn(f"../../{ledger['path']}?plain=1#L{ledger['start_line']}-L{ledger['end_line']}", content)
+            for target in re.findall(r"\]\(([^)]+)\)", content):
+                relative = unquote(urlsplit(target).path)
+                resolved = (self.root / page_name).parent.joinpath(relative).resolve()
+                generated = resolved.relative_to(self.root).as_posix()
+                self.assertTrue(resolved.is_file() or generated in pages, target)
+        self.assertIn("page-002.md", pages[names[0]])
+        self.assertNotIn("page-000.md", pages[names[0]])
+        self.assertIn("page-001.md", pages[names[1]])
+        self.assertNotIn("page-003.md", pages[names[1]])
+
+    def test_document_pagination_keeps_empty_and_hundred_document_overviews_inline(self):
+        for count in (0, 100):
+            with self.subTest(count=count):
+                data = self.pagination_fixture(count)
+                pages = reference.render(self.root, data)
+                self.assertFalse(any(name.startswith("reference/documents/") for name in pages))
+                overview = pages["reference/DOCUMENTS.md"]
+                self.assertEqual(overview, reference.render_documents(data["documents"]))
+                self.assertEqual(overview.count("制約・訂正"), count)
+                if count:
+                    self.assertIn("../research/recovered/pagination-099.md?plain=1#L1-L1", overview)
+                    self.assertIn("HOLD_FOR_ID_RECONCILIATION", overview)
+
+    def test_document_pagination_shrink_reports_obsolete_pages_without_deletion(self):
+        self.pagination_fixture(101)
+        command = [sys.executable, "-B", str(Path(reference.__file__)), "--root", str(self.root)]
+        built = subprocess.run(command + ["build"], capture_output=True, text=True, encoding="utf-8")
+        self.assertEqual(built.returncode, 0, built.stderr)
+        page = self.root / "reference/documents/page-002.md"
+        self.assertTrue(page.is_file())
+        self.pagination_fixture(1)
+        checked = subprocess.run(command + ["check"], capture_output=True, text=True, encoding="utf-8")
+        self.assertNotEqual(checked.returncode, 0)
+        self.assertIn("reference/documents/page-002.md (obsolete generated page; review removal)", checked.stderr)
+        self.assertTrue(page.exists())
 
     def test_document_search_optional_ledger_and_rejects_bad_alias_hash_and_escape(self):
         self.assertEqual(reference.load(self.root).get("documents"), [])

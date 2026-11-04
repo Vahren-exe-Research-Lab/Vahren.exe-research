@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-20"></a>
+## state + 0x20
+
+- [research/recovered/rea_batch10/reports/REA_20261023_21H_P0_DEMOPERSON_A5_RTTI_GATE_STATIC.md 行 8](../../research/recovered/rea_batch10/reports/REA_20261023_21H_P0_DEMOPERSON_A5_RTTI_GATE_STATIC.md?plain=1#L8-L8) — - 既存20時台REAの0x449730→0x44CF80→state+0x20、19時台state4書込、18時台getter、16時台500ループは再計上しない。本件新規差分は+0xA5 state4ゲートの条件付き生成元とRTTI経路の接続。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
 <a id="field-24"></a>
 ## state + 0x24
 
@@ -33,6 +39,12 @@
 
 - [research/recovered/rea_batch5/reports/REA_20261029_10H_P0_OGG_CODEBOOK_OWNERSHIP_STATIC.md 行 13](../../research/recovered/rea_batch5/reports/REA_20261029_10H_P0_OGG_CODEBOOK_OWNERSHIP_STATIC.md?plain=1#L13-L13) — - `0x005D57C0` は解析済みストリームの共有コードブック表を **codec state +0xB20** に保持する。0なら `calloc(book_count, 0x38)` で作成し、各入力について **CALL `0x005D5B51` → `0x005DA070`** が表中の0x38-byte
   制約・訂正　Historical author STATIC/VERIFY claims and audit counts only; current REF_AUDIO_VORBIS precedence; no new native/runtime/ABI/READY validation; linked evidence excluded
+
+<a id="field-1eec44"></a>
+## state + 0x1EEC44
+
+- [research/recovered/b_batch10/data/T024_T028_DUAL_CLOCK_SENTINEL_ELAPSED_NATIVE_20261022_0815.md 行 8](../../research/recovered/b_batch10/data/T024_T028_DUAL_CLOCK_SENTINEL_ELAPSED_NATIVE_20261022_0815.md?plain=1#L8-L8) — - 0x521A00 擬似C（code SHA256 410C8106FF93452A279B5A3B57062556F0B486CEEAEAEE70678E5DC2143EB384）：上流条件の下、iVar5==2かつ state +0x1EEC44!=0 のとき 0x521CDF→0x5263E0。その後の +0x
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
 <a id="field-1ef144"></a>
 ## state + 0x1EF144
