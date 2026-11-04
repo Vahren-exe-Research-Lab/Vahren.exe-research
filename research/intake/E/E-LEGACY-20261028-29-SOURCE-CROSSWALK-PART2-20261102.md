@@ -132,6 +132,21 @@ Source-grounded findings (E report line references; shortened):
 - L10: [ORDER / BOUNDARY] 合成mode0はFadeOutSheet候補、非0は後続event候補。前回23Hの局所 mode書込→死亡queue清掃/空skip→mode branch を両modeで保持。ただしwriter(0x490590)実到達、0x491870経由でconsumerに届くinstance/epoch同一性、AL上流意味、manager+0x1EED55論理名はVERIFY。合成したsource/manager同値を実戦同一性に昇格させない。
 - L11: [IMPLEMENTATION CROSSWALK] strict実装時、{config raw/absence, compiled boolean, AL/manager flag, selected source, mode-write, queue clear, mode branch, battle epoch}を個別nullableなtraceにする。静的なmode0を勝敗/経験値/死亡イベント実作用と同義に扱わない。dev_labへの直接修正・受領確認なし。
 
+### E-only 00H static-model admission matrix (2026-11-04; existing ID, no native promotion)
+
+The already archived [E synthetic 00H Python](repro/t020_t028_battle_mode_config_producer_gate_20261028_00H.py) (Git blob `3a87ccfe6ad2d2e1d4ef1ac55e32639f46b561b2`) and its above historical E report (PC SHA-256 `9bb7ec375103493a0cddb6150f176b825e27a723b6da2604584bd3c6ab21dda2`) were cross-referenced by source identity, **not independently rerun**. The full E original-report bytes and B/T028 original source have **not** been rehashed or reopened in this pass; GitHub E source and the indexed E excerpt, not native original gameplay, support the table.
+
+| Bounded synthetic input (`al_zero`, `flag_zero`) | Selected configuration in E model | Missing selected raw | E-model `mode` / downstream candidate |
+| --- | --- | --- | --- |
+| `false, true` | player | fallback `1` | `0` / fade candidate |
+| `true, false` | player | fallback `1` | `0` / fade candidate |
+| `true, true` | enemy | fallback `0` | `1` / later-event candidate |
+| `true, true`, `enemy_raw=1` | enemy | present `1` | `0` / fade candidate |
+
+**Negative-evidence guard:** missing player configuration (the E model's ABSENT sentinel) is **not** explicit `player_raw=0` (which produces mode `1` on the player path). Explicit `None`, `bool`, string or out-of-signed-32-bit raw produces `VERIFY_CONFIG_RAW`, not a default. The current E model conservatively evaluates **both** raw configuration fields before selecting one: an invalid *unselected* field can therefore yield `VERIFY_CONFIG_RAW` too. That is a **synthetic fail-closed modeling choice**, not native proof that the executable actually reads or validates both config fields. Never use model rejection to assert a native branch was unreachable.
+
+The E source `join(writer_manager,reader_manager,writer_run,reader_run)` distinguishes missing IDs, different run epochs and different manager pointers; even matching values return `SYNTHETIC_EQUAL_NOT_RUNTIME_IDENTITY`, not a native caller-to-consumer binding. The later [01H side/flag model](repro/t020_t028_triflag_side_mode_provenance_gate_20261028_01H.py) separately conditions on F54/F55 and treats F56 as independent: 00H's two booleans are **not** an observed proof of those producer bytes. No same-run G0 UI, immediate G1 SAVE/input, actual G2 MAP/three-side ordered Unit+Troop, original fade, event effect or XP/morale delta has been proven here. `STATIC/archived_SYNTHETIC/VERIFY | PUBLISHED_INTAKE_CODE_ONLY | NOT_CURATED`; B/T028 native source is read-only and B-owned.
+
 Next: review any superseding errata, original proof ownership, and runtime G0–G2 before curator/MASTER decisions.
 
 ## E-AUDIT-20261028-14H-T020-T028-DECIDE-BRANCH-CROSSWALK-01
