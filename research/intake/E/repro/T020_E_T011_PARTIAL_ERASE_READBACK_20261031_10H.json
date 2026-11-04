@@ -1,0 +1,46 @@
+{
+  "research_id": "E-AUDIT-20261031-10H-T020-T011-PARTIAL-ERASE-GUARD-01",
+  "owner": "E",
+  "task": "T020",
+  "status": "STATIC/CONDITIONAL_SYNTHETIC/VERIFY/NOT_READY",
+  "origin": "authorized PC Desktop Commander Local Compact readback + Get-FileHash SHA256",
+  "source_document": "data/T011_TRAINING_PARTIAL_ERASE_NATIVE_20261031_10H.md",
+  "source_document_sha256": "FCFE8992BE8EA58636A958E8BA0E4D615F6EAC4E9DB2455EE45C5B07D0187EF6",
+  "files": [
+    {
+      "name": "t020_e_t011_partial_erase_acceptance_20261031_10H.py",
+      "size_bytes": 3885,
+      "sha256": "442EE33D643389379E25F240AA87EB3385A1C4D1458588168A32E9B15381FD18"
+    },
+    {
+      "name": "T020_E_T011_PARTIAL_ERASE_CASES_20261031_10H.json",
+      "size_bytes": 86544,
+      "sha256": "B190B66CF13ED314D5C7D617887DAD99BDC51E900A7DCF14544B7AFC14C3E41D"
+    },
+    {
+      "name": "T020_E_T011_PARTIAL_ERASE_ACCEPTANCE_20261031_10H.md",
+      "size_bytes": 4656,
+      "sha256": "8CB2955649DFB0718B172476648FFD57C3DF0E5CA9037575D22D8F03E022F6F7"
+    }
+  ],
+  "master_read_sha256": "E7329C9C6368E67BE191A4ABF45156319E32826FF039FB2B9E226DEDDAC6B6B3",
+  "native_window_pass": "1/1",
+  "native_call_pass": "7/7",
+  "synthetic_cases_pass": "240/240",
+  "execution_exit_code": 0,
+  "real_game_executed": false,
+  "dynamic_observed": 0,
+  "actual_golden_pass": 0,
+  "strict_match": 0,
+  "new_ready_integrations": 0,
+  "old_checkpoint": 196,
+  "ready_total_old": 596,
+  "task_states_direct_current": {
+    "done": 9,
+    "in_progress": 21,
+    "verify": 4
+  },
+  "legacy_safety_refusals": "BLOCKED / untouched",
+  "old_offline_unsynced": "OPEN",
+  "note": "Source file unchanged. No source executable launch, no MASTER write. Do not promote synthetic pass to original compatibility."
+}
