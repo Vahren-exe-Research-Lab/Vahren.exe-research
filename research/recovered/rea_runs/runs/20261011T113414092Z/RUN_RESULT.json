@@ -1,0 +1,161 @@
+{
+  "runId": "20261011T113414092Z",
+  "started": "2026-10-11T11:34:14.161Z",
+  "source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "rea": "6.1.0",
+  "ghidra": "12.1.4",
+  "operation": "static_decompile_only",
+  "function_addresses": [
+    "0x428710",
+    "0x427040",
+    "0x4270F0",
+    "0x565700"
+  ],
+  "records": [
+    {
+      "address": "0x428710",
+      "related_task": "T014",
+      "title": "global.savのupsertと書込",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_18083c1e4b216eb84426042a80e5dd8d28b884882f59162ab8f5fe1cb74a64d6",
+          "entry": "0x428710",
+          "length": 3252
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_562ea04990ecb04a74ea0796d27a7c629a061894e46952f31b87c452af188775",
+          "result_chars": 17222
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_a8b58058d05e576dbaa8ebd22736dcfa684d5fb5289e0897e1e5834eb351ec4b",
+          "result_chars": 24991
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_21421f53fb9052bf2f3b7cbee448c0bfe34b814e644d49db93939e7b14d7719a",
+          "result_count": 3
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_607a477af0d6bc95128190a05f5ff119d4c08a35d1691703c6e75331d4b7adc0",
+          "result_count": 38
+        }
+      },
+      "failed_method": null
+    },
+    {
+      "address": "0x427040",
+      "related_task": "T014",
+      "title": "28-byte envelope暗号化",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_04f97081148c5b70a34c1f70d55ef4100240002c8aade454c183f1c6c1f267be",
+          "entry": "0x427040",
+          "length": 174
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_cc5bde730579a34289233a8406ed8b02996d9ffebd7ec12b375398fd353359f3",
+          "result_chars": 1035
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_21d9cad3ff2b047a9f34ec1a4be3a8053e3bdb9ad5acc35c0d93e42dc035b9d4",
+          "result_chars": 1581
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_5800379b392e021d012b4ed2929a7d40986ec1ae23deabbb01d4d1eb99e62dd7",
+          "result_count": 3
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_c463ef0019017816af152f4bcc37ce9600899b5c733949daf3da6cec3cd503cd",
+          "result_count": 2
+        }
+      },
+      "failed_method": null
+    },
+    {
+      "address": "0x4270F0",
+      "related_task": "T014",
+      "title": "28-byte envelope復号",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_635c2e10a0dc0c5959db8b9dbe207d6add73016686659c7d69d1ebc6ebf6d861",
+          "entry": "0x4270f0",
+          "length": 148
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_39248efde5737b8ffb423ef2219bf7f22a8407ba4d2fba240047fa9dc22d9e8e",
+          "result_chars": 706
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_84ece236c68732c4d4ba932ee7067c72cac05ae979a3b9c31eb74a1564448aff",
+          "result_chars": 1375
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_3631b28b5de0bba085d7d228382aa9855fb625818af01b15ed158e8bd9c7d35b",
+          "result_count": 7
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_a5272c533567fc10514af1688daca7bccaab813d285c49e1ee871cf6e827e37a",
+          "result_count": 2
+        }
+      },
+      "failed_method": null
+    },
+    {
+      "address": "0x565700",
+      "related_task": "T010",
+      "title": "戦闘時間limit更新",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_38f76e7e1e556dbcfffe3e8830f53a66c5080b395e7673add73eb5a6e73ceeac",
+          "entry": "0x565700",
+          "length": 35
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_4236ba2cb5bd0403d1f1c52ce271be5a980a0170aaca244cd2a26067d727ed38",
+          "result_chars": 213
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_199f778915fba3f40b5f0f5c530cd39c09ae578cfceb26396b480efca1a1a6fa",
+          "result_chars": 242
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_2dc7e00fd1035415d97e5503fb0d17a34350c67f4a2aebec03d69105116c03fc",
+          "result_count": 1
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_ed2db2f15b1beb1fcb4cb0b739af970a02fe323eac41d8470a0d0b6eed014576",
+          "result_count": 0
+        }
+      },
+      "failed_method": null
+    }
+  ],
+  "completed": true,
+  "failure": null,
+  "no_game_execution": true,
+  "end_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "finished": "2026-10-11T11:40:25.725Z"
+}

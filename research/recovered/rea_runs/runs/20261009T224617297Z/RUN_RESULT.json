@@ -1,0 +1,89 @@
+{
+  "runId": "20261009T224617297Z",
+  "started": "2026-10-09T22:46:17.511Z",
+  "source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "rea": "6.1.0",
+  "ghidra": "12.1.4",
+  "operation": "static_decompile_only",
+  "function_addresses": [
+    "0x58EFD0",
+    "0x4E7ED0"
+  ],
+  "records": [
+    {
+      "address": "0x58EFD0",
+      "related_task": "T014",
+      "title": "Unit save state serializer",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_331b9bf2f784ada814e5e562a35d3f0b8e72a6e3049890e684eb172b7eb55ea9",
+          "entry": "0x58efd0",
+          "length": 2050
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_cde544509b86b04088d6dc930be72217c748a238c92970d25767aba134389c41",
+          "result_chars": 14777
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_fc8c23eb060d4cca74ce05f46674a7ceb09d69e81637d412eed595d6c6e0cedb",
+          "result_chars": 17286
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_d251cf1d88bb3b7a62bec917d39c94d4a368b3b11904f023f716ac49abafde8a",
+          "result_count": 1
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_aff78c9310b5134c0bf04742827786247c828d8e0dfc4f85e96ab2f7e2ceb407",
+          "result_count": 8
+        }
+      },
+      "failed_method": null
+    },
+    {
+      "address": "0x4E7ED0",
+      "related_task": "T012/T013",
+      "title": "ミサイルlatch callback意味解析",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_84484fc7fa35babd7aee561e3c7eb8f0a4d26a984565a931c440c706238bc3d2",
+          "entry": "0x4e7ed0",
+          "length": 814
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_5541fff9fcb4b4681426b0f8b59eb115ab466489067bef28bd4a45d6e9c9785b",
+          "result_chars": 4075
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_4b52004127ec175ac9c1971618398099d6a721f800f5f5b083599764a1aab2a8",
+          "result_chars": 7452
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_8aeb5c5872fc8ce8dd659812f27cd3853ebafcc585293d7122d1818566d22f0e",
+          "result_count": 2
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_f92bf764688187f03a28b0aadcf300366fa740c5ef2bb456ac7bbbae039c8081",
+          "result_count": 4
+        }
+      },
+      "failed_method": null
+    }
+  ],
+  "completed": true,
+  "failure": null,
+  "no_game_execution": true,
+  "end_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "finished": "2026-10-09T22:54:56.031Z"
+}

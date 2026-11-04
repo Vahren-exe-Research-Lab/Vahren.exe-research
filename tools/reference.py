@@ -40,6 +40,66 @@ def table(root, filename, columns):
     return rows
 
 
+def run_records(content, path, digest, recovery):
+    run = json.loads(content)
+    if not isinstance(run, dict) or not isinstance(run.get("runId"), str) or not run["runId"]:
+        raise ValueError(f"Malformed run record header: {path}")
+    if not isinstance(run.get("records"), list):
+        raise ValueError(f"Malformed run record list: {path}")
+    locations = {}
+    for match in re.finditer(r'"address"\s*:\s*("(?:[^"\\]|\\.)*")', content):
+        raw = json.loads(match[1])
+        locations.setdefault(raw, []).append(content.count("\n", 0, match.start()) + 1)
+    rows = []
+    seen = set()
+    for record in run["records"]:
+        required = ("address", "related_task", "title", "status")
+        if (not isinstance(record, dict)
+                or any(not isinstance(record.get(key), str) or not record[key] for key in required)
+                or not isinstance(record.get("methods"), dict)
+                or any(not isinstance(value, dict) for value in record["methods"].values())):
+            raise ValueError(f"Malformed run record: {path}")
+        subject = address(record["address"])
+        if not subject.startswith("va:0x") or subject in seen:
+            raise ValueError(f"Invalid or duplicate run record address: {path}")
+        seen.add(subject)
+        if not locations.get(record["address"]):
+            raise ValueError(f"Missing literal run record address line: {path}")
+        line = locations[record["address"]].pop(0)
+        rows.append({
+            "id": f"run:{run['runId']}:{subject.removeprefix('va:')}",
+            "kind": "research_run_record", "va": subject.removeprefix("va:"),
+            "subject": subject, "name": f"{path}:{line}", "summary": record["title"],
+            "confidence": "過去の解析取得記録（意味・動作・原作実機の検証なし）",
+            "reported_status": record["status"], "run_id": run["runId"],
+            "related_task": record["related_task"], "methods": record["methods"],
+            "recovery": recovery,
+            "source": {"path": path, "sha256": digest, "start_line": line, "end_line": line}})
+    return rows
+
+
+def local_field_mentions(content, path, digest, recovery, line):
+    pattern = r"(?<![\w:])([A-Za-z_]\w*(?:::[A-Za-z_]\w*)*)\s*\+\s*(0x[0-9a-f]+)(?![\w])"
+    registers = {"eax", "ebx", "ecx", "edx", "esi", "edi", "esp", "ebp", "eip",
+                 "rax", "rbx", "rcx", "rdx", "rsi", "rdi", "rsp", "rbp", "rip",
+                 "ax", "bx", "cx", "dx", "si", "di", "sp", "bp"}
+    rows = []
+    seen = set()
+    for match in re.finditer(pattern, content, re.I):
+        owner = match[1]
+        offset = f"0x{int(match[2], 16):X}"
+        if owner.casefold() in registers or re.fullmatch(r"r\d+[dwb]?", owner, re.I) or (owner, offset) in seen:
+            continue
+        seen.add((owner, offset))
+        rows.append({
+            "id": f"field-mention:{path}:{line}:{owner}:{offset}", "kind": "field_mention",
+            "owner_text": owner, "offset": offset, "name": f"{owner} + {offset}",
+            "summary": content.strip(), "confidence": "研究文書の局所表記（型・意味・レイアウト未確定）",
+            "recovery": recovery,
+            "source": {"path": path, "sha256": digest, "start_line": line, "end_line": line}})
+    return rows
+
+
 def load_mentions(root):
     """Index literal VA occurrences in explicitly recovered, hash-verified reports."""
     ledger = root / "research/recovered/RECOVERY_LEDGER.tsv"
@@ -71,7 +131,13 @@ def load_mentions(root):
             recovery = {key: row.get(key, "") for key in ("coverage_state", "prior_coverage", "limitations")}
             recovery["ledger"] = {"path": ledger.relative_to(root).as_posix(),
                                   "start_line": ledger_start, "end_line": reader.line_num}
-            for line, content in enumerate(payload.decode("utf-8-sig").splitlines(), 1):
+            content = payload.decode("utf-8-sig")
+            if source.name == "RUN_RESULT.json":
+                mentions.extend(run_records(content, path, digest, recovery))
+                continue
+            for line, content in enumerate(content.splitlines(), 1):
+                if source.suffix.lower() == ".md":
+                    mentions.extend(local_field_mentions(content, path, digest, recovery, line))
                 for va in sorted({int(match[1], 16) for match in pattern.finditer(content)}):
                     mentions.append({
                         "id": f"mention:{path}:{line}:{va:08X}",
@@ -107,7 +173,32 @@ def load_citation_registry(root):
     return registry
 
 
-def attach_citations(row, registry):
+def recovered_citations(root):
+    ledger = root / "research/recovered/RECOVERY_LEDGER.tsv"
+    if not ledger.exists():
+        return []
+    citations = []
+    seen = set()
+    with ledger.open(encoding="utf-8-sig", newline="") as stream:
+        for row in csv.DictReader(stream, delimiter="\t"):
+            label = row.get("source_path", "")
+            if not label or (label, row["destination"]) in seen:
+                continue
+            relative = Path(row["destination"])
+            destination = (root / relative).resolve()
+            if relative.is_absolute() or not destination.is_relative_to(root):
+                raise ValueError(f"Citation path escapes repository: {row['destination']}")
+            if not destination.is_file():
+                raise ValueError(f"Missing recovered citation source: {row['destination']}")
+            if hashlib.sha256(destination.read_bytes()).hexdigest().lower() != row["destination_sha256"].lower():
+                raise ValueError(f"Stale recovered citation checksum: {row['destination']}")
+            citations.append({"label": label, "path": destination.relative_to(root).as_posix(),
+                              "anchor": "", "limitations": row.get("limitations", "")})
+            seen.add((label, row["destination"]))
+    return citations
+
+
+def attach_citations(row, registry, recovered=()):
     row["source_links"] = []
     row["unresolved_citations"] = []
     seen = set()
@@ -126,6 +217,10 @@ def attach_citations(row, registry):
             continue
         row["source_links"].append({"label": label, "path": entry["path"], "anchor": anchor,
                                     "limitations": entry.get("limitations", "")})
+    for citation in recovered:
+        pattern = r"(?<![\w./\\-])" + re.escape(citation["label"]) + r"(?![\w./\\-])"
+        if re.search(pattern, row["source"]):
+            row["source_links"].append(citation)
 
 
 def load(root):
@@ -133,13 +228,14 @@ def load(root):
     symbols = table(root, "symbols.tsv", SYMBOL_COLUMNS)
     fields = table(root, "structs.tsv", FIELD_COLUMNS)
     registry = load_citation_registry(root)
+    recovered = recovered_citations(root)
     for row in symbols:
         row["id"] = address(row["va"])
     for row in fields:
         row["id"] = f"field:{row['struct']}:0x{int(row['offset'], 16):X}"
     ids = set()
     for row in symbols + fields:
-        attach_citations(row, registry)
+        attach_citations(row, registry, recovered)
         if row["id"] in ids:
             raise ValueError(f"Duplicate dictionary ID: {row['id']}")
         ids.add(row["id"])
@@ -191,8 +287,11 @@ def load(root):
                 aliases[key] = target
         relations.append(item)
         relation_ids.add(item["id"])
+    source_mentions = load_mentions(root)
     return {"symbols": symbols, "fields": fields, "relations": relations,
-            "mentions": load_mentions(root), "aliases": aliases}
+            "mentions": [row for row in source_mentions if row["kind"] != "field_mention"],
+            "field_mentions": [row for row in source_mentions if row["kind"] == "field_mention"],
+            "aliases": aliases}
 
 
 def search(data, query):
@@ -210,7 +309,14 @@ def search(data, query):
                or needle in json.dumps(row, ensure_ascii=False).casefold()]
     mentions = [row for row in data["mentions"]
                 if needle in json.dumps(row, ensure_ascii=False).casefold()]
-    return matched + related + mentions
+    if field:
+        field_mentions = [row for row in data["field_mentions"]
+                          if row["owner_text"].casefold() == name.casefold()
+                          and int(row["offset"], 16) == int(field[2], 16)]
+    else:
+        field_mentions = [row for row in data["field_mentions"]
+                          if needle in json.dumps(row, ensure_ascii=False).casefold()]
+    return matched + related + mentions + field_mentions
 
 
 def text(value):
@@ -220,7 +326,9 @@ def text(value):
 def citation_lines(row):
     lines = []
     for citation in row["source_links"]:
-        link = "../../" + quote(citation["path"], safe="/") + "#" + quote(citation["anchor"], safe="")
+        link = "../../" + quote(citation["path"], safe="/")
+        if citation["anchor"]:
+            link += "#" + quote(citation["anchor"], safe="")
         lines.append(f"- 出典 [{text(citation['label'])}]({link})。{text(citation['limitations'])}")
     if row["unresolved_citations"]:
         lines.append("- 本文リンク未解決　" + "、".join(row["unresolved_citations"]))
@@ -300,10 +408,20 @@ def render(root, data):
                 link = "../../" + quote(source["path"], safe="/")
                 link += f"?plain=1#L{source['start_line']}-L{source['end_line']}"
                 lines.append(f"- [{text(mention['name'])}]({link}) — {text(mention['summary'])}")
+                if mention["kind"] == "research_run_record":
+                    lines.append(f"  取得run `{text(mention['run_id'])}`、Task `{text(mention['related_task'])}`、"
+                                 f"記録上の状態 `{text(mention['reported_status'])}`。{text(mention['confidence'])}")
+                    for method, metadata in mention["methods"].items():
+                        evidence = metadata.get("evidence_id")
+                        if evidence:
+                            lines.append(f"  - 取得方法 `{text(method)}`、[記録された証拠ID `{text(evidence)}`]({link})")
+                    lines += ["", "<details>", "<summary>取得方法の元メタデータ</summary>", "", "```json",
+                              json.dumps(mention["methods"], ensure_ascii=False, indent=2), "```", "</details>", ""]
         lines += ["", "[事典の入口](../README.md)", ""]
         files["reference/symbols/" + filename] = "\n".join(lines)
         index.append(f"| {row['va']} | [{text(row['name'])}](symbols/{filename}) | {text(row['kind'])} | {text(row['summary'])} |")
-    index += ["", "## 構造体・フィールド", ""]
+    index += ["", "## 構造体・フィールド", "",
+              f"[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — {len(data['field_mentions'])} 件。型や意味の正式登録前の局所表記も検索できます。", ""]
     for name in sorted({row["struct"] for row in data["fields"]}):
         lines = [f"# {name}", "", "<!-- Generated by tools/reference.py. -->", "",
                  "対象は迫真戦記 ver0.67。各フィールドの型・確度・出典は元の辞書から保持しています。", ""]
@@ -321,8 +439,27 @@ def render(root, data):
         files["reference/structs/" + filename] = "\n".join(lines)
         index.append(f"- [{text(name)}](structs/{quote(filename, safe='')})")
     index += ["", f"辞書項目 {len(data['symbols'])} 件、フィールド {len(data['fields'])} 件、根拠付き関係 {len(data['relations'])} 件。", ""]
-    index += [f"回収済み文書のVA言及 {len(data['mentions'])} 件を検索対象に含みます。辞書未登録のVAも検索できます。", ""]
+    index += [f"回収済み文書のVA言及・取得記録 {len(data['mentions'])} 件を検索対象に含みます。辞書未登録のVAも検索できます。", ""]
     files["reference/README.md"] = "\n".join(index)
+    field_index = ["# 研究文書の所有者・オフセット表記", "",
+                   "<!-- Generated by tools/reference.py. -->", "",
+                   "所有者名は各報告書内の局所的な表記です。同名の記号でも資料をまたいだ型・意味・レイアウトの同一性は未確定です。", "",
+                   "検索例は `python tools/reference.py search 'Unit+0x18654'`。以下の抜粋は160文字までで、全文は出典の該当行へ移動して確認できます。", ""]
+    groups = {}
+    for mention in data["field_mentions"]:
+        groups.setdefault((mention["owner_text"], mention["offset"]), []).append(mention)
+    for (owner, offset), rows in sorted(groups.items(), key=lambda item: (item[0][0].casefold(), int(item[0][1], 16), item[0][0])):
+        field_index += [f"## {owner} + {offset}", ""]
+        for mention in rows:
+            source = mention["source"]
+            link = "../" + quote(source["path"], safe="/")
+            link += f"?plain=1#L{source['start_line']}-L{source['end_line']}"
+            snippet = mention["summary"][:160]
+            field_index.append(f"- [{text(source['path'])} 行 {source['start_line']}]({link}) — {text(snippet)}")
+            field_index.append(f"  制約・訂正　{text(mention['recovery']['limitations'])}")
+        field_index.append("")
+    field_index += ["[事典の入口](README.md)", ""]
+    files["reference/FIELD_MENTIONS.md"] = "\n".join(field_index)
     return files
 
 
@@ -345,6 +482,9 @@ def main():
             else:
                 for row in matches:
                     print(f"{row['id']}  {row.get('name', row.get('predicate'))}  {row['summary']}  [{row['confidence']}]")
+                    if row.get("kind") == "research_run_record":
+                        print(f"  run {row['run_id']} / Task {row['related_task']} / 記録上の状態 {row['reported_status']}")
+                        print("  取得方法 " + json.dumps(row["methods"], ensure_ascii=False))
                     if "recovery" in row:
                         recovery = row["recovery"]
                         print(f"  回収状態 {recovery['coverage_state']} / 以前の収録状況 {recovery['prior_coverage']}")

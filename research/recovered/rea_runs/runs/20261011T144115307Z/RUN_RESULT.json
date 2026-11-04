@@ -1,0 +1,161 @@
+{
+  "runId": "20261011T144115307Z",
+  "started": "2026-10-11T14:41:15.361Z",
+  "source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "rea": "6.1.0",
+  "ghidra": "12.1.4",
+  "operation": "static_decompile_only",
+  "function_addresses": [
+    "0x4705F0",
+    "0x470700",
+    "0x471D20",
+    "0x5154F0"
+  ],
+  "records": [
+    {
+      "address": "0x4705F0",
+      "related_task": "T014",
+      "title": "save string読込helper",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_8d6b4c6b269ce0021d9fc898bb87d4fb557a70421b0ed4453ab1d6c4d161784f",
+          "entry": "0x4705f0",
+          "length": 256
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_3851d07b1e0119564efeb2d7215b9c16ff9a63f274ce843c13ed100dfee38752",
+          "result_chars": 1453
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_119a86f44bb44e174c04ae524788b577d2b4085fbdba2dbac424cf906663f94d",
+          "result_chars": 1940
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_66d791abc2d31b607e31cf9d4951092495dc9c772ef119d848db2726eda0da87",
+          "result_count": 13
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_661507e7456c44d65dd153fff0f2c6b8de0e33a9519370d794118fae0def6743",
+          "result_count": 5
+        }
+      },
+      "failed_method": null
+    },
+    {
+      "address": "0x470700",
+      "related_task": "T014",
+      "title": "save int32読込helper",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_e676039e3083db867c85605ee376898d307e4a18d8f264c9c6f5003be1deb31e",
+          "entry": "0x470700",
+          "length": 99
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_fa4f2750e44895495089baaea76f6c2e6b39e1ec155c9b68af4b63bc17ac8e07",
+          "result_chars": 643
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_f7ed3af4df1cdf7b14d9208f3d4aa735267b9ab022ee7d6b3860c4521bbb95cf",
+          "result_chars": 879
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_14939a8b9ce66f7858434d5f57609aca8f4d26a7781078754cfc513c5032989c",
+          "result_count": 10
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_3f9a89a60c30eee71f662be8ef197b9016cfe610caae887926287dcb5d131286",
+          "result_count": 3
+        }
+      },
+      "failed_method": null
+    },
+    {
+      "address": "0x471D20",
+      "related_task": "T014",
+      "title": "外交runtime save書込",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_d66eb9ca2ede2dddefec4ffa0700384bde6cdbe4d00f9186cf00ff67748de6fc",
+          "entry": "0x471d20",
+          "length": 144
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_ab5115883f3f7287b9e69a76b95333a8ddd343252dfc9c1efdafb3f4db81d846",
+          "result_chars": 604
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_64adbba14e1cee99ca12f12987032aa749c2890ee33057c941c4d0b3eed1fe6f",
+          "result_chars": 1424
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_a459496a5ab977b94c768d186aefbfc6f58bb2cb97dcc009e0be9b470f192a56",
+          "result_count": 1
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_8f32e24032fa7db1f4ddd3212cbf805c0509f176888721d560966984d495d307",
+          "result_count": 4
+        }
+      },
+      "failed_method": null
+    },
+    {
+      "address": "0x5154F0",
+      "related_task": "T013",
+      "title": "候補配列alias-safe追加",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_49cbc451308e458f59684fb8b64adbb92e6d0bcdd5abb08e63f08fcf044184d2",
+          "entry": "0x5154f0",
+          "length": 207
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_8c2e00fbbaaca29b29284ec0899df000751530685da489a4b210c6bffdad8b4d",
+          "result_chars": 1151
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_6a53e867e218f8905561e0687a0340e1dafe224e61cc7d465b0047e7b21c3d64",
+          "result_chars": 2189
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_8ce283bf9f936114ed4749b1907814810be35fb077af15de779d65256288d320",
+          "result_count": 1
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_c8e76cb2fcf962a30ce7b57a87aa46569443fdfdf23f9314b8ef66435ce3447a",
+          "result_count": 1
+        }
+      },
+      "failed_method": null
+    }
+  ],
+  "completed": true,
+  "failure": null,
+  "no_game_execution": true,
+  "end_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "finished": "2026-10-11T14:46:33.247Z"
+}

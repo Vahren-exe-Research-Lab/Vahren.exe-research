@@ -1,0 +1,53 @@
+{
+  "runId": "20261009T213635897Z",
+  "started": "2026-10-09T21:36:35.918Z",
+  "source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "rea": "6.1.0",
+  "ghidra": "12.1.4",
+  "operation": "static_decompile_only",
+  "function_addresses": [
+    "0x479A30"
+  ],
+  "records": [
+    {
+      "address": "0x479A30",
+      "related_task": "T031",
+      "title": "スクリプトshuffle本体（関数入口）",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_bc32501ec77c9a2ad69878bdc8a6f31c8ac45aa96ee4fd265164651bfee06817",
+          "entry": "0x479a30",
+          "length": 278
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_d56de9a11ccede3814ef85102722ee19558a3ea1ba574713dfb7e7dce688d346",
+          "result_chars": 1918
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_2e6b35f821850d3520355b4c13d985d1716da9d16125603c4e06490b2c82eb48",
+          "result_chars": 2716
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_d49cc0eaabceca7ac7d567dd28fc7b47447fa3dc665ada4913367d59fa875b05",
+          "result_count": 8
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_82aaee83a4771edd2edb40da9b734a7341cca4a5324c869a6079bf1c8997f961",
+          "result_count": 2
+        }
+      },
+      "failed_method": null
+    }
+  ],
+  "completed": true,
+  "failure": null,
+  "no_game_execution": true,
+  "end_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "finished": "2026-10-09T21:42:35.297Z"
+}

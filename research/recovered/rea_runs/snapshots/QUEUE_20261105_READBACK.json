@@ -1,0 +1,668 @@
+{
+  "schema_version": 1,
+  "project": "迫真戦記 ver0.67",
+  "task_name": "REA 6.1.0 / Ghidra 12.1.4 progressive decompilation",
+  "target_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "selection_scope": "Wave 1 (16), Wave 2 (10), Wave 3 (10), Wave 4 (12) static-evidence completions; Wave 5 (16) newly queued native-entry candidates. Wave denominators are independent; never whole-EXE coverage.",
+  "waves": [
+    {
+      "wave": 1,
+      "scope": "initial 16 priority functions",
+      "total": 16,
+      "verified_at_freeze": 16,
+      "freeze_run": "20261009T213635897Z",
+      "status": "COMPLETE_STATIC_ONLY"
+    },
+    {
+      "wave": 2,
+      "scope": "syntax registration/inheritance, FPU rounding, RNG reseed, save helper, scenario map",
+      "total": 10,
+      "verified_at_freeze": 10,
+      "freeze_run": "20261009T221558628Z",
+      "progress_rule": "Count function_queue entries with wave=2; keep old entries implicit wave=1",
+      "status": "COMPLETE_STATIC_ONLY"
+    },
+    {
+      "wave": 3,
+      "scope": "generic script AST, variant lookup, if/rif/while, Unit save/load, battle recovery",
+      "total": 10,
+      "verified_at_freeze": 10,
+      "freeze_run": "20261009T224617297Z",
+      "progress_rule": "Count function_queue entries with wave=3; never replace original SHA or wave1/2 freeze values",
+      "status": "COMPLETE_STATIC_ONLY"
+    },
+    {
+      "wave": 4,
+      "scope": "event VM and scheduler, full save reader/global map codec, battle target AI",
+      "total": 12,
+      "verified_at_freeze": 12,
+      "freeze_run": "20261011T114202395Z",
+      "progress_rule": "Count function_queue entries with wave=4, keep Wave 1-3 frozen",
+      "status": "COMPLETE_STATIC_ONLY"
+    },
+    {
+      "wave": 5,
+      "scope": "normal save wrappers, stream/read/write groups, event flag predicate, numeric tree primitive, AI support pool internals",
+      "total": 16,
+      "progress_rule": "Saved RUN_RESULT + five Ghidra method evidence required; Wave 1-4 frozen",
+      "status": "IN_PROGRESS"
+    }
+  ],
+  "status_vocabulary": [
+    "TODO",
+    "RUNNING",
+    "ACQUIRED",
+    "VERIFIED",
+    "VERIFY",
+    "BLOCKED",
+    "SKIPPED"
+  ],
+  "function_queue": [
+    {
+      "address": "0x550E70",
+      "related_task": "T012",
+      "title": "ダメージ計算コア",
+      "priority": "P0",
+      "status": "VERIFIED",
+      "validated_reference": "../results/run_20261009T175957025Z_550E70_info.json",
+      "validation": "Previously validated REA/Ghidra JSON; not runtime/golden"
+    },
+    {
+      "address": "0x576E30",
+      "related_task": "T012",
+      "title": "死亡系耐性ヘルパー",
+      "priority": "P0",
+      "status": "VERIFIED",
+      "validated_reference": "../results/run_20261009T175957025Z_576E30_info.json",
+      "validation": "Previously validated REA/Ghidra JSON; not runtime/golden"
+    },
+    {
+      "address": "0x550D80",
+      "related_task": "T012",
+      "title": "攻撃値・Skillモード計算",
+      "priority": "P0",
+      "status": "VERIFIED",
+      "last_run_id": "20261009T194358486Z",
+      "validated_reference": "runs/20261009T194358486Z/RUN_RESULT.json",
+      "evidence_ids": {
+        "procedure_info": "ev_05a1e04f7a3038a145d3b1825faabe70369aa82fd588d4bb1559745b4c022b6c",
+        "procedure_pseudo_code": "ev_ba3f72ac7cd8528392cb5efb12258c16a2ac8f99d64142344ddd0aa0614e44ea",
+        "procedure_assembly": "ev_346b0078854151ba4f2c6e2f72ce4ea18ac902996c34cc268386c5f3558de50e",
+        "procedure_callers": "ev_45010a1704adc25b6948b6b5aa882adb8d49dbd69b8c03bbe2b7e85e14c52121",
+        "procedure_callees": "ev_ade824f9644a6049f96eb6ab898efc176a922288267f3c3a297ad5de62acf493"
+      },
+      "validation": "Five Ghidra static operations, source SHA, evidence IDs verified; gameplay NOT RUN"
+    },
+    {
+      "address": "0x40ED80",
+      "related_task": "T031",
+      "title": "CRT乱数の範囲変換",
+      "priority": "P0",
+      "status": "VERIFIED",
+      "last_run_id": "20261009T194358486Z",
+      "validated_reference": "runs/20261009T194358486Z/RUN_RESULT.json",
+      "evidence_ids": {
+        "procedure_info": "ev_d9b072d7215187fce9c8728d777bc320fb741d4aeb04a84cd7b39a6252e4f01d",
+        "procedure_pseudo_code": "ev_b992483f9d853a28fa46a51bffb1b3a7e8b706ebb9ed9f6927494b8dca388379",
+        "procedure_assembly": "ev_74c7a4ee5e8d96d0bfb64e52035f32b76121125762d05ee7f56ce8300e56ea02",
+        "procedure_callers": "ev_fcaab3749388b92aabc79016efbbda7d48d5fb29ace7cc6bfc5d46d2dca4f6f3",
+        "procedure_callees": "ev_0c028e7b4ec31bc691d2a2e7078d28ebf5077b0a868987175e40d433537bc47c"
+      },
+      "validation": "Five Ghidra static operations, source SHA, evidence IDs verified; gameplay NOT RUN"
+    },
+    {
+      "address": "0x5B6EAB",
+      "related_task": "T031",
+      "title": "MSVC CRT randコア",
+      "priority": "P0",
+      "status": "VERIFIED",
+      "last_run_id": "20261009T194358486Z",
+      "validated_reference": "runs/20261009T194358486Z/RUN_RESULT.json",
+      "evidence_ids": {
+        "procedure_info": "ev_b8c4c340c61d6b1f89f6c664d87aa506e91807133996e188cfab77b984e1be20",
+        "procedure_pseudo_code": "ev_d1185fb4560123a4b4be782bac8545af348eeaa02a2370da5711ccd6dbe6410f",
+        "procedure_assembly": "ev_b1254a8fd74b2e65bc7d0dd87874866862fe9db02fd920de0dc7d93b35348924",
+        "procedure_callers": "ev_6d98641154bb14aaf23e95b8a7a54aba34352bcd4a2884a293f8fb27e6b4794e",
+        "procedure_callees": "ev_518fee85b91d2ca3b5f8f23eda958b842b7604de9a2edf407d4fa6f372b97a3f"
+      },
+      "validation": "Five Ghidra static operations, source SHA, evidence IDs verified; gameplay NOT RUN"
+    },
+    {
+      "address": "0x4637A0",
+      "related_task": "T006/T014",
+      "title": "数値変数マップの更新",
+      "priority": "P0",
+      "status": "VERIFIED",
+      "last_run_id": "20261009T194358486Z",
+      "validated_reference": "runs/20261009T194358486Z/RUN_RESULT.json",
+      "evidence_ids": {
+        "procedure_info": "ev_5a52b41e3d6275e55e61176c89aed961f997b5e210ee9171ab1803a0e59251df",
+        "procedure_pseudo_code": "ev_67a32464e373a99b440353b451f3eb4de7b4f478b1b4639ad16475939345e543",
+        "procedure_assembly": "ev_2f3ae4cb05781e68e782c32d5628721d2e99859ccfdfd4160c38953ba86d4148",
+        "procedure_callers": "ev_8efbd2f99b45372d5e3188eaa1291845243ef48fb7087953cdf09da6f609b58a",
+        "procedure_callees": "ev_a5b427dc221589ddde90040ca144b2c4e34b965f39ae293d55d6102cab13aaff"
+      },
+      "validation": "Five Ghidra static operations, source SHA, evidence IDs verified; gameplay NOT RUN"
+    },
+    {
+      "address": "0x4C1200",
+      "related_task": "T012",
+      "title": "属性・耐性キー探索",
+      "priority": "P0",
+      "status": "VERIFIED",
+      "last_run_id": "20261009T203528568Z",
+      "validated_reference": "runs/20261009T203528568Z/RUN_RESULT.json",
+      "evidence_ids": {
+        "procedure_info": "ev_88e96506b01da0e00c44624a01a90befdd58c8cb1c89a79a3936ab61c541acbe",
+        "procedure_pseudo_code": "ev_0da9a2c7bfc9531a69b56187862188ec89a3b39b82cc96a7c2855fa88e0cb56a",
+        "procedure_assembly": "ev_595d16832dc842a304f319f3cb2ccd0326abb11f341b937ca5947c1c0c8c4d20",
+        "procedure_callers": "ev_00c4f526dbb29cda9775fdebaca5010097da35a3f9661301d7a393ff98efe6b9",
+        "procedure_callees": "ev_a187eebaf2a1fe8c71ff1c4961a59f4a777308df245992be49c0b5a5e99799ad"
+      },
+      "validation": "Five Ghidra static operations, source SHA, evidence IDs verified; gameplay NOT RUN"
+    },
+    {
+      "address": "0x4647D0",
+      "related_task": "T005/T011",
+      "title": "スクリプト構造体フィールド参照",
+      "priority": "P1",
+      "status": "VERIFIED",
+      "last_run_id": "20261009T203528568Z",
+      "validated_reference": "runs/20261009T203528568Z/RUN_RESULT.json",
+      "evidence_ids": {
+        "procedure_info": "ev_99fd6a5ef457d978dff3a6fa559ac84b7a9ea42575d7f7e662a6a16af49ec68a",
+        "procedure_pseudo_code": "ev_abf9a3d853de34021a92f88509a454b0740b3a38425964a01a80c21d5b8fb2ad",
+        "procedure_assembly": "ev_cb5d674e7b19e9b6643e7770bb254c3a05615df84e51af9df02a20123309cdd7",
+        "procedure_callers": "ev_265ab28a5ab814d32410016c121cf713afc9196f1dc5962203264892c3282790",
+        "procedure_callees": "ev_d03c426f551a3f3a462cf8bc51b8f9c6b8ff7c474f78e7018bd5c5b09d065c31"
+      },
+      "validation": "Five Ghidra static operations, source SHA, evidence IDs verified; gameplay NOT RUN"
+    },
+    {
+      "address": "0x46F4C0",
+      "related_task": "T009",
+      "title": "context数値取得とデフォルト",
+      "priority": "P1",
+      "status": "VERIFIED",
+      "last_run_id": "20261009T203528568Z",
+      "validated_reference": "runs/20261009T203528568Z/RUN_RESULT.json",
+      "evidence_ids": {
+        "procedure_info": "ev_a696803c6d29aad2b5ef9946d3506259795c551d6de3eb12875c2c1986ce5f20",
+        "procedure_pseudo_code": "ev_0c119526b0b9f0ed1deac8326b49c0e6300a1caee6facb32a6f36cd96475dee5",
+        "procedure_assembly": "ev_04eb8d506f513bc1c1e0a6c6bccb1485ff5932ec89050fd4cd49c60f8c547987",
+        "procedure_callers": "ev_f0915b72dbf96d4faba23a9b3ae28362540db352f930f92eb5f29ca954e02cde",
+        "procedure_callees": "ev_3076e8722a3711a56eb429e57ada423da57f2331db8826c100a5dd7375e0a5e2"
+      },
+      "validation": "Five Ghidra static operations, source SHA, evidence IDs verified; gameplay NOT RUN"
+    },
+    {
+      "address": "0x5B6E99",
+      "related_task": "T031",
+      "title": "CRT srand初期化",
+      "priority": "P1",
+      "status": "VERIFIED",
+      "last_run_id": "20261009T203528568Z",
+      "validated_reference": "runs/20261009T203528568Z/RUN_RESULT.json",
+      "evidence_ids": {
+        "procedure_info": "ev_e70a740103bcba1158b32537871f47d532ddc6d53f348b77b606436205ef7c70",
+        "procedure_pseudo_code": "ev_da7f8650c6031c741a9f4f5fd565afb6472b560e99ba70a65a9ddc6e0e3756a0",
+        "procedure_assembly": "ev_b7c889054f0f2801ace83b0af444ea2f737e0e93f1964a9d6e2e8291a7c4e15a",
+        "procedure_callers": "ev_552008420d6c3c88f80ced1c9a0a455c048c122db5a4019b3e22632716d67cd7",
+        "procedure_callees": "ev_0baac63babed889da53b870eeff2e10a222c402fa198f1c0a5d6a4bf29373bd2"
+      },
+      "validation": "Five Ghidra static operations, source SHA, evidence IDs verified; gameplay NOT RUN"
+    },
+    {
+      "address": "0x578B70",
+      "related_task": "T012",
+      "title": "状態異常・即死更新",
+      "priority": "P1",
+      "status": "VERIFIED",
+      "last_run_id": "20261009T211647219Z",
+      "validated_reference": "runs/20261009T211647219Z/RUN_RESULT.json",
+      "evidence_ids": {
+        "procedure_info": "ev_c38a8e3222ba2b7ffa1f313387e991c9483b6eb341cc0420f558cae01ecaa2ce",
+        "procedure_pseudo_code": "ev_53d2cc897a22cf0c529c9185a9b989d94930f3923ee0827aaf3a383269b0cdec",
+        "procedure_assembly": "ev_0c0b2219061bb7a44cd626861cdf48816e2cb7b1b24693e6a351cebd87c4a425",
+        "procedure_callers": "ev_0bd2225fa4596eec29fd5b8d9bbbea443ac003caaee27268dac573d333c9d8e0",
+        "procedure_callees": "ev_6ebfb407037803a15caa73bf2dac6d44a8183655c0d9c1ddacb947047c4b73f3"
+      },
+      "validation": "Five Ghidra static operations, source SHA, evidence IDs verified; gameplay NOT RUN"
+    },
+    {
+      "address": "0x551490",
+      "related_task": "T012",
+      "title": "回復・状態値変更",
+      "priority": "P1",
+      "status": "VERIFIED",
+      "last_run_id": "20261009T211647219Z",
+      "validated_reference": "runs/20261009T211647219Z/RUN_RESULT.json",
+      "evidence_ids": {
+        "procedure_info": "ev_9dc284d83a801f79361e06aa967d1ab02c54e901d779b2630b99820da73ea1f2",
+        "procedure_pseudo_code": "ev_76bfbcbcb7ba63a61aa4c2704da7b98ad5c6621c6122dc41aa0178fe2cf1d383",
+        "procedure_assembly": "ev_aa48c7fd838d47ecdf2dcd5a4f37e870ca8d57ff1631ba13789ac96197701132",
+        "procedure_callers": "ev_e897601f38b263c081a8eeb91c428bbc8c91f5483377cfbbfbd6d06c315f02b6",
+        "procedure_callees": "ev_3edf85695467b43ea1dca8714aae5fa1024fbf9a3ea876540b8d39e58fc3f108"
+      },
+      "validation": "Five Ghidra static operations, source SHA, evidence IDs verified; gameplay NOT RUN"
+    },
+    {
+      "address": "0x547DB0",
+      "related_task": "T012",
+      "title": "allfuncミサイル特殊経路",
+      "priority": "P1",
+      "status": "VERIFIED",
+      "last_run_id": "20261009T211647219Z",
+      "validated_reference": "runs/20261009T211647219Z/RUN_RESULT.json",
+      "evidence_ids": {
+        "procedure_info": "ev_545a8e62936abe1778a33b205bfb491b1eec415bcfa97f81a3cf9156743d21cf",
+        "procedure_pseudo_code": "ev_94877c5e9c170f211be129dfb3d70c88429d6e52380ffec0df6ab2581a652132",
+        "procedure_assembly": "ev_a334c0a7a76287f02c7990bfad428f7e388b8583e099815fbfd4c2b6a5efed85",
+        "procedure_callers": "ev_d3315bb4e288bddac0f19de91a54d3143116b0face3e5cb6a18dcfd8c9f36529",
+        "procedure_callees": "ev_105bb6d33a317ad16ef806f84a73f91a9e0dec56d6c76fe911979b44bd618f2c"
+      },
+      "validation": "Five Ghidra static operations, source SHA, evidence IDs verified; gameplay NOT RUN"
+    },
+    {
+      "address": "0x546F70",
+      "related_task": "T012",
+      "title": "ミサイル技能ディスパッチ",
+      "priority": "P1",
+      "status": "VERIFIED",
+      "last_run_id": "20261009T211647219Z",
+      "validated_reference": "runs/20261009T211647219Z/RUN_RESULT.json",
+      "evidence_ids": {
+        "procedure_info": "ev_de9fe152f97d184fe1d6d790ca6dde7cb0e12c2ec847e285e445b5d9da5dbd12",
+        "procedure_pseudo_code": "ev_b30ce0f3e46fe67b8a5ab5486644dbbaaee403c19c6ee9d8b676fe4cc676b3d1",
+        "procedure_assembly": "ev_7167b2644c003cdd1d0d0cc977d3d20f1af2ffede7b1f17fea0c63d8f6a7cb42",
+        "procedure_callers": "ev_f984343c06c05046a2fff4c1fdc3a8215c9764abb0d0763424033003404655f6",
+        "procedure_callees": "ev_55afd5b9808fde0ebb76306b3697561a21d7e4117fee787062b0f61c09a5b956"
+      },
+      "validation": "Five Ghidra static operations, source SHA, evidence IDs verified; gameplay NOT RUN"
+    },
+    {
+      "address": "0x479A30",
+      "related_task": "T031",
+      "title": "スクリプトshuffle本体（関数入口）",
+      "priority": "P1",
+      "status": "VERIFIED",
+      "last_run_id": "20261009T213635897Z",
+      "validated_reference": "runs/20261009T213635897Z/RUN_RESULT.json",
+      "evidence_ids": {
+        "procedure_info": "ev_bc32501ec77c9a2ad69878bdc8a6f31c8ac45aa96ee4fd265164651bfee06817",
+        "procedure_pseudo_code": "ev_d56de9a11ccede3814ef85102722ee19558a3ea1ba574713dfb7e7dce688d346",
+        "procedure_assembly": "ev_2e6b35f821850d3520355b4c13d985d1716da9d16125603c4e06490b2c82eb48",
+        "procedure_callers": "ev_d49cc0eaabceca7ac7d567dd28fc7b47447fa3dc665ada4913367d59fa875b05",
+        "procedure_callees": "ev_82aaee83a4771edd2edb40da9b734a7341cca4a5324c869a6079bf1c8997f961"
+      },
+      "validation": "Five Ghidra static operations, source SHA, evidence IDs verified; gameplay NOT RUN"
+    },
+    {
+      "address": "0x460000",
+      "related_task": "T014",
+      "title": "セーブ書込本体",
+      "priority": "P1",
+      "status": "VERIFIED",
+      "last_run_id": "20261009T212627835Z",
+      "validated_reference": "runs/20261009T212627835Z/RUN_RESULT.json",
+      "evidence_ids": {
+        "procedure_info": "ev_76fca377cfc1ee6b6dd225934568ef4fb94e52cc359d35beff1ccb7ef68d99c3",
+        "procedure_pseudo_code": "ev_06e5a34750f37c054b3f916ca1d135ab52b3b62b35043ac84ffc8b0a668e05c4",
+        "procedure_assembly": "ev_fec99c35153c8902d10879722c3a8fcb90bcdd434f62a9dedd7878e352529394",
+        "procedure_callers": "ev_91099310a072569d892f9a238b2b7849ecf367b30cd5bbcd0c8fbb0f74bc7724",
+        "procedure_callees": "ev_3ed77f73bd20825ba6b7b67779b97a50404d10e858d64bc85630b7d585c0a0a0"
+      },
+      "validation": "Five Ghidra static operations, source SHA, evidence IDs verified; gameplay NOT RUN"
+    },
+    {
+      "address": "0x463280",
+      "related_task": "T005",
+      "title": "汎用宣言登録と同名先勝ち規則",
+      "priority": "P0",
+      "wave": 2,
+      "status": "TODO"
+    },
+    {
+      "address": "0x465060",
+      "related_task": "T005/T011",
+      "title": "親定義・variantの再帰参照",
+      "priority": "P0",
+      "wave": 2,
+      "status": "TODO"
+    },
+    {
+      "address": "0x5D1B80",
+      "related_task": "T012",
+      "title": "小数→整数の丸め・x87結果",
+      "priority": "P0",
+      "wave": 2,
+      "status": "TODO"
+    },
+    {
+      "address": "0x4C1FC0",
+      "related_task": "T031",
+      "title": "ワールド・シーン初期化と乱数再seed",
+      "priority": "P0",
+      "wave": 2,
+      "status": "TODO"
+    },
+    {
+      "address": "0x5001B0",
+      "related_task": "T031",
+      "title": "マップ初期化とローカルseed",
+      "priority": "P0",
+      "wave": 2,
+      "status": "TODO"
+    },
+    {
+      "address": "0x479740",
+      "related_task": "T031",
+      "title": "shuffle vector入口（本体への橋渡し）",
+      "priority": "P1",
+      "wave": 2,
+      "status": "TODO"
+    },
+    {
+      "address": "0x4B78C0",
+      "related_task": "T031",
+      "title": "起動処理全体（GetTickCount seedを含む関数入口）",
+      "priority": "P1",
+      "wave": 2,
+      "status": "TODO"
+    },
+    {
+      "address": "0x551E50",
+      "related_task": "T012",
+      "title": "ダメージ後の状態変化・callback補助",
+      "priority": "P1",
+      "wave": 2,
+      "status": "TODO"
+    },
+    {
+      "address": "0x470830",
+      "related_task": "T014",
+      "title": "セーブ直列化stream書込補助",
+      "priority": "P1",
+      "wave": 2,
+      "status": "TODO"
+    },
+    {
+      "address": "0x433E80",
+      "related_task": "T005",
+      "title": "scenario.map参照を含む処理の正しい関数入口",
+      "priority": "P1",
+      "wave": 2,
+      "status": "TODO"
+    },
+    {
+      "address": "0x505210",
+      "related_task": "T005",
+      "title": "構造体generic property parser",
+      "priority": "P0",
+      "wave": 3,
+      "status": "TODO"
+    },
+    {
+      "address": "0x504400",
+      "related_task": "T005",
+      "title": "構造体登録とcurrent field table",
+      "priority": "P0",
+      "wave": 3,
+      "status": "TODO"
+    },
+    {
+      "address": "0x4693F0",
+      "related_task": "T005",
+      "title": "scenario variant qualified property",
+      "priority": "P0",
+      "wave": 3,
+      "status": "TODO"
+    },
+    {
+      "address": "0x464290",
+      "related_task": "T005/T011",
+      "title": "property存在判定・super fallback",
+      "priority": "P0",
+      "wave": 3,
+      "status": "TODO"
+    },
+    {
+      "address": "0x50A5E0",
+      "related_task": "T005/T006",
+      "title": "if/rif制御AST callback",
+      "priority": "P0",
+      "wave": 3,
+      "status": "TODO"
+    },
+    {
+      "address": "0x50A850",
+      "related_task": "T005/T006",
+      "title": "while制御構文解析",
+      "priority": "P1",
+      "wave": 3,
+      "status": "TODO"
+    },
+    {
+      "address": "0x57DF90",
+      "related_task": "T012",
+      "title": "HP・MP・状態異常の自然回復",
+      "priority": "P1",
+      "wave": 3,
+      "status": "TODO"
+    },
+    {
+      "address": "0x58E870",
+      "related_task": "T014",
+      "title": "Unit save state reader",
+      "priority": "P1",
+      "wave": 3,
+      "status": "TODO"
+    },
+    {
+      "address": "0x58EFD0",
+      "related_task": "T014",
+      "title": "Unit save state serializer",
+      "priority": "P1",
+      "wave": 3,
+      "status": "TODO"
+    },
+    {
+      "address": "0x4E7ED0",
+      "related_task": "T012/T013",
+      "title": "ミサイルlatch callback意味解析",
+      "priority": "P1",
+      "wave": 3,
+      "status": "TODO"
+    },
+    {
+      "address": "0x4321B0",
+      "related_task": "T006/T014",
+      "title": "イベント・routine共通実行とyet marker",
+      "priority": "P0",
+      "wave": 4,
+      "status": "TODO"
+    },
+    {
+      "address": "0x4930C0",
+      "related_task": "T010",
+      "title": "battleEvent root if/rifの反復・消去（正しい入口）",
+      "priority": "P0",
+      "wave": 4,
+      "status": "TODO"
+    },
+    {
+      "address": "0x45E1E0",
+      "related_task": "T014",
+      "title": "通常セーブの全group読込本体",
+      "priority": "P0",
+      "wave": 4,
+      "status": "TODO"
+    },
+    {
+      "address": "0x57B870",
+      "related_task": "T013",
+      "title": "戦闘AI target再探索とcounter",
+      "priority": "P0",
+      "wave": 4,
+      "status": "TODO"
+    },
+    {
+      "address": "0x514D60",
+      "related_task": "T013",
+      "title": "primary/fallback targeting選択",
+      "priority": "P1",
+      "wave": 4,
+      "status": "TODO"
+    },
+    {
+      "address": "0x514F10",
+      "related_task": "T013",
+      "title": "補助候補リストの構築",
+      "priority": "P1",
+      "wave": 4,
+      "status": "TODO"
+    },
+    {
+      "address": "0x428010",
+      "related_task": "T014",
+      "title": "global.savのデコード・読込",
+      "priority": "P1",
+      "wave": 4,
+      "status": "TODO"
+    },
+    {
+      "address": "0x428710",
+      "related_task": "T014",
+      "title": "global.savのupsertと書込",
+      "priority": "P1",
+      "wave": 4,
+      "status": "TODO"
+    },
+    {
+      "address": "0x427040",
+      "related_task": "T014",
+      "title": "28-byte envelope暗号化",
+      "priority": "P1",
+      "wave": 4,
+      "status": "TODO"
+    },
+    {
+      "address": "0x4270F0",
+      "related_task": "T014",
+      "title": "28-byte envelope復号",
+      "priority": "P1",
+      "wave": 4,
+      "status": "TODO"
+    },
+    {
+      "address": "0x565700",
+      "related_task": "T010",
+      "title": "戦闘時間limit更新",
+      "priority": "P1",
+      "wave": 4,
+      "status": "TODO"
+    },
+    {
+      "address": "0x432EE0",
+      "related_task": "T010",
+      "title": "world/fight/politics phase dispatcher",
+      "priority": "P1",
+      "wave": 4,
+      "status": "TODO"
+    },
+{"address":"0x45E5F0","related_task":"T014","title":"通常saveロード上位wrapper","priority":"P0","wave":5,"status":"TODO"},
+{"address":"0x429C60","related_task":"T014","title":"save復号後stream構築","priority":"P0","wave":5,"status":"TODO"},
+{"address":"0x471AF0","related_task":"T014","title":"外交runtime save読込","priority":"P0","wave":5,"status":"TODO"},
+{"address":"0x435550","related_task":"T014","title":"Spot経路graph save読込","priority":"P0","wave":5,"status":"TODO"},
+{"address":"0x598980","related_task":"T014","title":"Spot runtime読込","priority":"P0","wave":5,"status":"TODO"},
+{"address":"0x5964C0","related_task":"T014","title":"Power runtime読込","priority":"P0","wave":5,"status":"TODO"},
+{"address":"0x4A6700","related_task":"T005/T014","title":"数値・property共通tree primitive","priority":"P0","wave":5,"status":"TODO"},
+{"address":"0x40B200","related_task":"T006/T010","title":"eventフラグ条件判定helper","priority":"P0","wave":5,"status":"TODO"},
+{"address":"0x4705F0","related_task":"T014","title":"save string読込helper","priority":"P1","wave":5,"status":"TODO"},
+{"address":"0x470700","related_task":"T014","title":"save int32読込helper","priority":"P1","wave":5,"status":"TODO"},
+{"address":"0x471D20","related_task":"T014","title":"外交runtime save書込","priority":"P1","wave":5,"status":"TODO"},
+{"address":"0x5154F0","related_task":"T013","title":"候補配列alias-safe追加","priority":"P1","wave":5,"status":"TODO"},
+{"address":"0x5158A0","related_task":"T013","title":"支援候補cache更新helper","priority":"P1","wave":5,"status":"TODO"},
+{"address":"0x57CFA0","related_task":"T013","title":"支援候補特殊評価","priority":"P1","wave":5,"status":"TODO"},
+{"address":"0x57CFD0","related_task":"T013","title":"支援候補通常評価","priority":"P1","wave":5,"status":"TODO"},
+{"address":"0x5155C0","related_task":"T013","title":"候補配列確保・再配置","priority":"P1","wave":5,"status":"TODO"}
+  ],
+  "candidate_revisions": [
+    {
+      "original_candidate": "0x4B044F",
+      "original_title": "スクリプトshuffle処理",
+      "reason": "Ghidra procedure_info reports containing function 0x4AE0F0, length 22037 and 564 basic blocks; 0x4B044F is not a function entry. Evidence preserved; not a safety refusal.",
+      "result": "VERIFY_NON_ENTRY",
+      "evidence_file": "runs/20261009T212627835Z/4B044F_procedure_info.json",
+      "replacement_function_candidate": "0x479A30",
+      "replacement_basis": "../../data/T031_RANDOM_EVENT_SCHEDULER.md §16 identifies 0x479A30 as the native shuffle core; function entry still requires Ghidra validation."
+    },
+    {
+      "original_candidate": "0x4B7900",
+      "original_title": "起動時GetTickCount seed",
+      "reason": "Ghidra procedure_info reports containing function 0x4B78C0, 3452 bytes and 139 basic blocks; requested 0x4B7900 is not a function entry. This is a function boundary diagnostic, not a safety refusal.",
+      "result": "VERIFY_NON_ENTRY",
+      "evidence_file": "runs/20261009T215905915Z/4B7900_procedure_info.json",
+      "replacement_function_candidate": "0x4B78C0",
+      "replacement_basis": "Ghidra-reported actual entrypoint 0x4B78C0; 0x4B7907 startup srand call is documented in ../../data/T031_RANDOM_EVENT_SCHEDULER.md §17."
+    },
+    {
+      "original_candidate": "0x433F20",
+      "original_title": "scenario.map参照のnative consumer",
+      "reason": "Ghidra procedure_info resolved 0x433F20 as an interior address of function 0x433E80, 797 bytes / 45 basic blocks and non-contiguous body; candidate address was not an entrypoint.",
+      "result": "VERIFY_NON_ENTRY",
+      "evidence_file": "runs/20261009T220712454Z/433F20_procedure_info.json",
+      "replacement_function_candidate": "0x433E80",
+      "replacement_basis": "Ghidra-reported containing function entry and T005 §scenario.map existing saved native references."
+    },
+    {
+      "original_candidate": "0x4930D0",
+      "original_title": "battleEvent root if/rifの反復・消去",
+      "reason": "Ghidra procedure_info reports containing function start 0x4930C0 (573 bytes, 46 basic blocks); 0x4930D0 is an interior native location, not a function entry.",
+      "result": "VERIFY_NON_ENTRY",
+      "evidence_file": "runs/20261009T225741694Z/4930D0_procedure_info.json",
+      "replacement_function_candidate": "0x4930C0",
+      "replacement_basis": "../../data/T010_EVENT_SCHEDULER.md target battle root lifecycle; Ghidra reports the exact containing entrypoint."
+    }
+  ],
+  "exclusions": [
+    {
+      "address_range": "0x5710C0..0x571500",
+      "reason": "B-RC-20261008-1915-01 / SAFETY_REFUSAL. Do not retry through other tool, shell, path or automation."
+    },
+    {
+      "operation": "extract_verified.mjs unfinished text exporter",
+      "reason": "Local safety refusal; do not complete or reroute this extraction operation."
+    }
+  ],
+  "baseline": {
+    "existing_verified_functions": 2,
+    "initial_wave_total": 16,
+    "existing_research_tasks": {
+      "done": 9,
+      "in_progress": 21,
+      "verify": 4,
+      "total": 34
+    },
+    "target_gameplay_golden_pass": 0,
+    "new_engine_golden_pass": 0
+  },
+  "last_progress_run": "2026-10-09T21:43:54.512Z",
+  "important": "VERIFIED means content/provenance consistency of static Ghidra evidence, NOT original game behavior verified.",
+  "current": {
+    "validated": 16,
+    "total": 16,
+    "percent": 100,
+    "by_status": {
+      "TODO": 0,
+      "RUNNING": 0,
+      "ACQUIRED": 0,
+      "VERIFIED": 16,
+      "VERIFY": 0,
+      "BLOCKED": 0,
+      "SKIPPED": 0
+    },
+    "last_batch": "20261009T213635897Z",
+    "increment_this_sync": 0
+  }
+}

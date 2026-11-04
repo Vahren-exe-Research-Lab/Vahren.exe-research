@@ -1,0 +1,161 @@
+{
+  "runId": "20261009T215200079Z",
+  "started": "2026-10-09T21:52:00.104Z",
+  "source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "rea": "6.1.0",
+  "ghidra": "12.1.4",
+  "operation": "static_decompile_only",
+  "function_addresses": [
+    "0x463280",
+    "0x465060",
+    "0x5D1B80",
+    "0x4C1FC0"
+  ],
+  "records": [
+    {
+      "address": "0x463280",
+      "related_task": "T005",
+      "title": "汎用宣言登録と同名先勝ち規則",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_07594e48bf10c7d3f1b65f21e2f1917b2e74e083f54f09e9659022e04f70ace9",
+          "entry": "0x463280",
+          "length": 340
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_ee41eff345d68943cc2f8abf1bc46b58fc5d3a09b4a42f7a22b9925fe921e17f",
+          "result_chars": 1700
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_88bd0a7af01cc8756c1dc8c48f37e805a052303f37d706d5f50439825fdc7f97",
+          "result_chars": 3607
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_cd55b9172146b1b73b06b54bbd571550221ca05419457de972262d896ecbf0b0",
+          "result_count": 64
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_fc25c4b7deaa83dad01c4ceddecfb21b3a21b01861f6bb2a68b03569187ba066",
+          "result_count": 5
+        }
+      },
+      "failed_method": null
+    },
+    {
+      "address": "0x465060",
+      "related_task": "T005/T011",
+      "title": "親定義・variantの再帰参照",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_8d24eb9a427ef546c8aa6886f53fcd741794928787bcfc2044b6e5dbbd743bbc",
+          "entry": "0x465060",
+          "length": 1082
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_233f9b9f3119880c1d5f229249cca895d3ed452a5763e3c266c7037d8a1b52fe",
+          "result_chars": 5173
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_46ee86d6b0ce0f1ccd3b3b624ad786c68111cf15cdb475cf3d60c35b64536819",
+          "result_chars": 9022
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_016d96588d86f5d16bd7d617290d9f4dce624bdf1a7ead74684e52776fe68cac",
+          "result_count": 36
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_9e03a7e802991e4a1fa7886590e08fc896fc5e87b9e463d00edc645216d660bc",
+          "result_count": 13
+        }
+      },
+      "failed_method": null
+    },
+    {
+      "address": "0x5D1B80",
+      "related_task": "T012",
+      "title": "小数→整数の丸め・x87結果",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_cd35cd2870eae68df088f2c2aa4ebe65effad542ddd3e48af4980b03f84bb93d",
+          "entry": "0x5d1b80",
+          "length": 28
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_946b4cb4043cc1c51c0bf1e181804c4546fc900c0df2872c150b4159d345b40f",
+          "result_chars": 830
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_0bcb24273794aa659538ffb7ed13e373239d40b71eb8680fcb8c077e62ec4321",
+          "result_chars": 263
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_2322fb1d80acf35ee55468c61158fa7709c43185b9cd32a684a7c80279fd9b40",
+          "result_count": 293
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_12c21436493df0a08f00089e3781f8d4e62cab06c295cb1291447360a75d5e51",
+          "result_count": 0
+        }
+      },
+      "failed_method": null
+    },
+    {
+      "address": "0x4C1FC0",
+      "related_task": "T031",
+      "title": "ワールド・シーン初期化と乱数再seed",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_f6cebb13eb3328cdc9d3e660154c13d52de5f6a85f3c949529fba00fc683ff87",
+          "entry": "0x4c1fc0",
+          "length": 258
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_2db9d3dfabe3792f0d248e05a8cf83ff242442ef96d3d0b058604ca532ac0982",
+          "result_chars": 1748
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_fa25e1b10387ef8c1c09ced68a01726175dabfcddb2c24d716e29cf7d0094410",
+          "result_chars": 2810
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_e98dfe12f3234b7d5b400c3ee5d8394bd13fb67ff33c608a1f5c5abe1d7b0113",
+          "result_count": 7
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_58e50869dc743b11ea5ce43e8a867aa6dd723ea0f9e0770e0bef2c329600af43",
+          "result_count": 4
+        }
+      },
+      "failed_method": null
+    }
+  ],
+  "completed": true,
+  "failure": null,
+  "no_game_execution": true,
+  "end_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "finished": "2026-10-09T21:58:19.981Z"
+}

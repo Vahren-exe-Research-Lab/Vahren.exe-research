@@ -1,0 +1,161 @@
+{
+  "runId": "20261009T203528568Z",
+  "started": "2026-10-09T20:35:28.584Z",
+  "source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "rea": "6.1.0",
+  "ghidra": "12.1.4",
+  "operation": "static_decompile_only",
+  "function_addresses": [
+    "0x4C1200",
+    "0x4647D0",
+    "0x46F4C0",
+    "0x5B6E99"
+  ],
+  "records": [
+    {
+      "address": "0x4C1200",
+      "related_task": "T012",
+      "title": "属性・耐性キー探索",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_88e96506b01da0e00c44624a01a90befdd58c8cb1c89a79a3936ab61c541acbe",
+          "entry": "0x4c1200",
+          "length": 136
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_0da9a2c7bfc9531a69b56187862188ec89a3b39b82cc96a7c2855fa88e0cb56a",
+          "result_chars": 599
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_595d16832dc842a304f319f3cb2ccd0326abb11f341b937ca5947c1c0c8c4d20",
+          "result_chars": 1520
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_00c4f526dbb29cda9775fdebaca5010097da35a3f9661301d7a393ff98efe6b9",
+          "result_count": 92
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_a187eebaf2a1fe8c71ff1c4961a59f4a777308df245992be49c0b5a5e99799ad",
+          "result_count": 2
+        }
+      },
+      "failed_method": null
+    },
+    {
+      "address": "0x4647D0",
+      "related_task": "T005/T011",
+      "title": "スクリプト構造体フィールド参照",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_99fd6a5ef457d978dff3a6fa559ac84b7a9ea42575d7f7e662a6a16af49ec68a",
+          "entry": "0x4647d0",
+          "length": 1157
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_abf9a3d853de34021a92f88509a454b0740b3a38425964a01a80c21d5b8fb2ad",
+          "result_chars": 5181
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_cb5d674e7b19e9b6643e7770bb254c3a05615df84e51af9df02a20123309cdd7",
+          "result_chars": 9664
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_265ab28a5ab814d32410016c121cf713afc9196f1dc5962203264892c3282790",
+          "result_count": 116
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_d03c426f551a3f3a462cf8bc51b8f9c6b8ff7c474f78e7018bd5c5b09d065c31",
+          "result_count": 9
+        }
+      },
+      "failed_method": null
+    },
+    {
+      "address": "0x46F4C0",
+      "related_task": "T009",
+      "title": "context数値取得とデフォルト",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_a696803c6d29aad2b5ef9946d3506259795c551d6de3eb12875c2c1986ce5f20",
+          "entry": "0x46f4c0",
+          "length": 555
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_0c119526b0b9f0ed1deac8326b49c0e6300a1caee6facb32a6f36cd96475dee5",
+          "result_chars": 2716
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_04eb8d506f513bc1c1e0a6c6bccb1485ff5932ec89050fd4cd49c60f8c547987",
+          "result_chars": 4648
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_f0915b72dbf96d4faba23a9b3ae28362540db352f930f92eb5f29ca954e02cde",
+          "result_count": 111
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_3076e8722a3711a56eb429e57ada423da57f2331db8826c100a5dd7375e0a5e2",
+          "result_count": 12
+        }
+      },
+      "failed_method": null
+    },
+    {
+      "address": "0x5B6E99",
+      "related_task": "T031",
+      "title": "CRT srand初期化",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_e70a740103bcba1158b32537871f47d532ddc6d53f348b77b606436205ef7c70",
+          "entry": "0x5b6e99",
+          "length": 18
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_da7f8650c6031c741a9f4f5fd565afb6472b560e99ba70a65a9ddc6e0e3756a0",
+          "result_chars": 138
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_b7c889054f0f2801ace83b0af444ea2f737e0e93f1964a9d6e2e8291a7c4e15a",
+          "result_chars": 205
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_552008420d6c3c88f80ced1c9a0a455c048c122db5a4019b3e22632716d67cd7",
+          "result_count": 3
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_0baac63babed889da53b870eeff2e10a222c402fa198f1c0a5d6a4bf29373bd2",
+          "result_count": 1
+        }
+      },
+      "failed_method": null
+    }
+  ],
+  "completed": true,
+  "failure": null,
+  "no_game_execution": true,
+  "end_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "finished": "2026-10-09T20:41:18.518Z"
+}

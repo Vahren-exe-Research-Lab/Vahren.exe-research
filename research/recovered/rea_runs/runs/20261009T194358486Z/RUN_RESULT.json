@@ -1,0 +1,161 @@
+{
+  "runId": "20261009T194358486Z",
+  "started": "2026-10-09T19:43:58.525Z",
+  "source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "rea": "6.1.0",
+  "ghidra": "12.1.4",
+  "operation": "static_decompile_only",
+  "function_addresses": [
+    "0x550D80",
+    "0x40ED80",
+    "0x5B6EAB",
+    "0x4637A0"
+  ],
+  "records": [
+    {
+      "address": "0x550D80",
+      "related_task": "T012",
+      "title": "攻撃値・Skillモード計算",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_05a1e04f7a3038a145d3b1825faabe70369aa82fd588d4bb1559745b4c022b6c",
+          "entry": "0x550d80",
+          "length": 234
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_ba3f72ac7cd8528392cb5efb12258c16a2ac8f99d64142344ddd0aa0614e44ea",
+          "result_chars": 517
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_346b0078854151ba4f2c6e2f72ce4ea18ac902996c34cc268386c5f3558de50e",
+          "result_chars": 1675
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_45010a1704adc25b6948b6b5aa882adb8d49dbd69b8c03bbe2b7e85e14c52121",
+          "result_count": 2
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_ade824f9644a6049f96eb6ab898efc176a922288267f3c3a297ad5de62acf493",
+          "result_count": 1
+        }
+      },
+      "failed_method": null
+    },
+    {
+      "address": "0x40ED80",
+      "related_task": "T031",
+      "title": "CRT乱数の範囲変換",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_d9b072d7215187fce9c8728d777bc320fb741d4aeb04a84cd7b39a6252e4f01d",
+          "entry": "0x40ed80",
+          "length": 45
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_b992483f9d853a28fa46a51bffb1b3a7e8b706ebb9ed9f6927494b8dca388379",
+          "result_chars": 147
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_74c7a4ee5e8d96d0bfb64e52035f32b76121125762d05ee7f56ce8300e56ea02",
+          "result_chars": 419
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_fcaab3749388b92aabc79016efbbda7d48d5fb29ace7cc6bfc5d46d2dca4f6f3",
+          "result_count": 37
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_0c028e7b4ec31bc691d2a2e7078d28ebf5077b0a868987175e40d433537bc47c",
+          "result_count": 2
+        }
+      },
+      "failed_method": null
+    },
+    {
+      "address": "0x5B6EAB",
+      "related_task": "T031",
+      "title": "MSVC CRT randコア",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_b8c4c340c61d6b1f89f6c664d87aa506e91807133996e188cfab77b984e1be20",
+          "entry": "0x5b6eab",
+          "length": 33
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_d1185fb4560123a4b4be782bac8545af348eeaa02a2370da5711ccd6dbe6410f",
+          "result_chars": 216
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_b1254a8fd74b2e65bc7d0dd87874866862fe9db02fd920de0dc7d93b35348924",
+          "result_chars": 257
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_6d98641154bb14aaf23e95b8a7a54aba34352bcd4a2884a293f8fb27e6b4794e",
+          "result_count": 79
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_518fee85b91d2ca3b5f8f23eda958b842b7604de9a2edf407d4fa6f372b97a3f",
+          "result_count": 1
+        }
+      },
+      "failed_method": null
+    },
+    {
+      "address": "0x4637A0",
+      "related_task": "T006/T014",
+      "title": "数値変数マップの更新",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_5a52b41e3d6275e55e61176c89aed961f997b5e210ee9171ab1803a0e59251df",
+          "entry": "0x4637a0",
+          "length": 338
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_67a32464e373a99b440353b451f3eb4de7b4f478b1b4639ad16475939345e543",
+          "result_chars": 1898
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_2f3ae4cb05781e68e782c32d5628721d2e99859ccfdfd4160c38953ba86d4148",
+          "result_chars": 3125
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_8efbd2f99b45372d5e3188eaa1291845243ef48fb7087953cdf09da6f609b58a",
+          "result_count": 10
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_a5b427dc221589ddde90040ca144b2c4e34b965f39ae293d55d6102cab13aaff",
+          "result_count": 9
+        }
+      },
+      "failed_method": null
+    }
+  ],
+  "completed": true,
+  "failure": null,
+  "no_game_execution": true,
+  "end_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "finished": "2026-10-09T19:52:10.767Z"
+}
