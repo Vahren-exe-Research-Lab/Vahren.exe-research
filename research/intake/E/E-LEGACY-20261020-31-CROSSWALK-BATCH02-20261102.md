@@ -111,6 +111,22 @@ Original E report excerpts with source line references (truncated, do not use as
 
 Curation: reconcile superseding corrections and source ownership with original E report and applicable native owner evidence before promoting interpretation.
 
+
+### T019 admission crosswalk — 2026-11-04 safe-source review
+
+**Existing IDs only; no new finding or source recovery.** Compare the above 07H study with the already indexed `E-AUDIT-20261025-04H-T018-T019-T020-CNB02-SCENARIO-POWER-EVENT-CROSSWALK-01` (original E source `tests/T020_CNB02_SPOT_POWER_EVENT_GATE_CROSSWALK_20261025_04H.md`, historical SHA-256 `B5388800CDA83D30426818A9AE79D8EB4419F3939DF6043C7DF2969BFF94508F`). The 07H source report has historical SHA-256 `53A548927F82492800503EA15529AA83DD6AE16E906CD395DB33876614608DDA`. These are old PC-reported SHA values, **not freshly rehashed** by this GitHub-only review. 04H and 07H are excerpt-indexed; an excerpt is not independently verified complete native or DAT evidence.
+
+| Evidence presented to T019/Golden review | Bounded classification and required next proof |
+| --- | --- |
+| `power.po2.home` includes `sp16`, while the `member` declaration is different (04H L5) | `STATIC` location/attribute declaration only; not real-time ownership, attack origin or scenario G0. Need same-run lawful UI/Spot/Power state and input. |
+| `spot.sp16.member` includes named unit(s) (04H L6) | `STATIC` scenario roster; not actual loaded G2 MAP or ordered deployed Unit/Troop. Need same-run deployment capture with identity provenance. |
+| `po2_battle` has distinct candidate branches, including a preceding branch that sets `battleevent=1` (04H L9–L12) | Branch condition text alone does not prove which event executed; require original-run condition values, selection order, VM phase and chronological receipt. Do not assert a confirmed T019 runtime conflict. |
+| `class inyumeb` versus `unit u_inyume` advertise different `dead_event` declarations (07H L7/L13) | `STATIC/VERIFY`, not a verified callback mismatch. Need actual killed Unit identity and native callback lineage in that same run. |
+| Footage of `VS_inyume_win` with no same-run prompt/choice record (07H L15) | `CHOICE_ORIGIN_UNPROVEN`; cannot infer the input or retroactively qualify G0/G1. |
+| `yet(VS_inyume)==0` only in a later SAVE or another battle window (07H L17) | `EVENT_EPOCH_UNPROVEN`; cannot attach event to G3/G4 or to a different battle. |
+
+**Review gate:** two distinct study IDs linked, not merged or duplicated. Same-run original UI/input, immediate SAVE, actual MAP/three-side ordered Unit/Troop, branch/callback receipts and World before/after diff all remain missing. `PUBLISHED_INTAKE_EXCERPT / NOT_CURATED / STATIC+VERIFY`; new original Golden PASS 0, strict MATCH 0, new formal READY 0, new MASTER delta 0. No synthetic or native test was run; curator independently validates before adopting any policy. Protected/refused sources stay excluded.
+
 ## E-AUDIT-20261025-18H-T018-T020-MODE2-PREACTIVE-PHASE-BOUNDARY-01
 
 **E source:** `tests/T020_CNB02_MODE2_PREACTIVE_PHASE_BOUNDARY_20261025_18H.md`; **SHA256:** `5d8de36ca113fb8948c9ce669f90bdbe3f69e73206cfad643a20e189352e3c20`; **size:** 4473 bytes. **Title:** E-AUDIT-20261025-18H-T018-T020-MODE2-PREACTIVE-PHASE-BOUNDARY-01. **Golden:** not established; **new READY:** none.
