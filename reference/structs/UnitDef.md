@@ -34,6 +34,16 @@ DAT の unit タグ（個体キーを最初の + で切ったもの。例 a030+5
 - [UnitDef_Create](../symbols/00582D90.md) → `writes` → [UnitDef + 0x1C tag](../structs/UnitDef.md#field-1c)。unit タグと class への解決結果に従って定義のタグ・種族・クラスを設定する。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L517-L520) · `MEM-DEF-CREATE-1C`
 - [UnitDef_GetFriendSet](../symbols/00586320.md) → `reads` → [UnitDef + 0x1C tag](../structs/UnitDef.md#field-1c)。friend の宣言を unit 鎖、なければ class から引くため、定義のタグまたはクラス名を読む。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L982-L987) · `MEM-FRIEND-PROPERTY-1C`
 
+## 訂正履歴
+
+旧解釈は訂正済みの履歴です。現在の意味は辞書と各訂正の確度・対象を確認してください。
+
+- [UnitDef + 0x1C tag](../structs/UnitDef.md#field-1c) · `CORRECTION-UNITDEF-TAG` · `corrected`。tag の旧説明を失効させ、タグと定義表キーを区別する。
+  - 訂正済みの旧解釈（履歴）　定義表のキー。例 a030+0。
+  - → 現在の解釈　個体キーを最初の + で切った DAT の unit タグ。例 a030+5 → a030。定義表のキーは +0x00。
+  - 確度　静的確認（元の辞書・報告の確認範囲。今回の原作再検証なし）。対象　迫真戦記 ver0.67 / Vahren.exe image base 0x400000。[訂正の根拠](../../structs.tsv?plain=1#L3-L3)
+
+
 <a id="field-38"></a>
 ## 0x38 race
 
@@ -133,6 +143,16 @@ DAT の unit タグ（個体キーを最初の + で切ったもの。例 a030+5
 
 - [Save_WriteUnitDataRecord](../symbols/0058EFD0.md) → `reads` → [UnitDef + 0x78 isLeader](../structs/UnitDef.md#field-78)。通常セーブへ UnitDef.isLeader を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L73-L89) · `MEM-UNIT-SERIALIZE-78`
 - [UnitDef_SetRoaming](../symbols/00460E90.md) → `writes` → [UnitDef + 0x78 isLeader](../structs/UnitDef.md#field-78)。放浪化で当該 UnitDef フィールドを 0 に初期化する。隊長印 +0x78 の意味は後の訂正に従う。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L885-L886) · `MEM-ROAM-RESET-78`
+
+## 訂正履歴
+
+旧解釈は訂正済みの履歴です。現在の意味は辞書と各訂正の確度・対象を確認してください。
+
+- [UnitDef + 0x78 isLeader](../structs/UnitDef.md#field-78) · `CORRECTION-UNITDEF-TROOP-LEADER` · `corrected`。中立独立部隊だけに限定した初期解釈を訂正する。
+  - 訂正済みの旧解釈（履歴）　独立部隊（中立）のリーダーの印。
+  - → 現在の解釈　部隊の隊長の印。Spot の部隊集合には隊長と配下が入る。
+  - 確度　静的確認（元の辞書・報告の確認範囲。今回の原作再検証なし）。対象　迫真戦記 ver0.67 / Vahren.exe image base 0x400000。[訂正の根拠](../../structs.tsv?plain=1#L5-L5)
+
 
 <a id="field-79"></a>
 ## 0x79 flag_79

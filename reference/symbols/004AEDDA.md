@@ -15,4 +15,14 @@ pushRand（opcode14）で0〜99の乱数を生成し、スクリプト数値変�
 
 関係の個別採録は未実施です。
 
+## 研究文書での言及
+
+以下は文書内の言及（意味・動作の検証なし）です。文書の限界や訂正も併せて確認してください。
+
+- [回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L237-L237) — research/recovered/save_topic/T014_GLOBAL_SAVE.md。収録状態 CONTENT_REVIEWED_EXACT_CURRENT_REVISION。以前の収録状況 CATALOG_SOURCE_REVISION_DIFFERS。制約・訂正 Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md:236](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L236-L236) — - script API `pushRand` のnative handler VA 0x4AEDDAは、引数0から変数名を取り、0x40ED80の0..99乱数を値にして、engine pointerとflag=1を渡し0x4637A0へ書く（VA 0x4AEDF8..0x4AEE13）。
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md:245](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L245-L245) — [EVIDENCE] `exe/T006_SELECT_SETTER_FULL.txt` 0x4637A0-0x4638A2、`exe/T031_STRINGOP_HANDLERS.txt` 0x4AEDDA-0x4AEE18、`exe/T014_VAR_CALLSITE_PROBE.txt`、既存`exe/T014_NORMAL_SAVE_CORE.txt`、`data/T031_RANDOM_EVENT_SCHEDULER.md`。
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md:259](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L259-L259) — [EVIDENCE] exe/T031_REGISTRY_XREFS.txt 0x4AE145..0x4AE191; exe/T014_VAR_HELPER_XREFS.txt direct callers; exe/T031_STRINGOP_HANDLERS.txt 0x4AEDDA..0x4AEE13; exe/T006_SELECT_SETTER_FULL.txt 0x4637A0..0x4638A2。
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md:279](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L279-L279) — [EVIDENCE] `exe/T014_VAR_HELPER_XREFS.txt`126 lines, `exe/T031_REGISTRY_XREFS.txt` `0x4AE145..0x4AE191`, `exe/T031_STRINGOP_HANDLERS.txt` op14 `0x4AEDDA` / op15 `0x4AEE1F`、`exe/T006_NUMVAR_WRITE_AFTER_LOOKUP.txt`、`exe/T006_SELECT_SETTER_FULL.txt`。
+
 [事典の入口](../README.md)

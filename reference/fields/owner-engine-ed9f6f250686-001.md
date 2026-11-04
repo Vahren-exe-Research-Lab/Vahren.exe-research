@@ -4,11 +4,80 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-2c"></a>
+## engine + 0x2C
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 140](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L140-L140) — - 主要4group直後、writer VA 0x460585 は stream を `0x471D20` へ渡し、engine world-base (`engine+0x2C`) の `+0x1EF4B4` objectをserializeする。reader VA 0x45E53E は対になる `0x471AF0`
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+<a id="field-2e0"></a>
+## engine + 0x2E0
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 96](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L96-L96) — - engine +0x2E0 groupは key + serializer 0x596AA0。
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 110](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L110-L110) — - engine +0x2E0 -> serializer 0x596AA0。home_spot/fixtype/train_max/train_up/base_level 等をserializeするため **Power runtime state** と同定。
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+<a id="field-2f0"></a>
+## engine + 0x2F0
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 95](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L95-L95) — - engine +0x2F0 groupは key + serializer 0x598CE0。
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 109](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L109-L109) — - engine +0x2F0 -> serializer 0x598CE0。capacity/castlebattle/fightvalue/dunname 等をserializeするため **Spot runtime state** と同定。
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 571](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L571-L571) — [CONFIRMED-SAVED-NATIVE / A58 INCREMENT] A58の通常save load後Unit全件pass（`exe/T014_NORMAL_LOAD_PROBE.txt` 0x45EF74..0x45EFB7）で、Unit+0x94!=0時にUnit+0x84をkey化して呼ぶ`0x467
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+<a id="field-300"></a>
+## engine + 0x300
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 94](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L94-L94) — - engine +0x300 groupは各nodeのkeyを0x470830、mapped valueをserializer 0x58EFD0へ渡す。
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 108](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L108-L108) — - engine +0x300 -> serializer 0x58EFD0。unit名/skill/arbeit/item_skill/friend/各能力値・状態等のruntime fieldを大量serializeするため **Unit runtime state** と同定。
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+<a id="field-30c"></a>
+## engine + 0x30C
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 256](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L256-L256) — - 0x4637A0 は engine+0x30C/+0x310 numeric mapへ結果を書くことを既に確認。ただしこの証拠だけで全numeric APIs・battle-local変数の保存/寿命を一般化しない。
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 299](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L299-L299) — [CONFIRMED-TARGET / 制御フロー] `0x46382E cmp byte [ebp+0x10],0`→0なら `0x463871` へ、nonzeroなら `0x46383E..0x463857` で engine+0x30C/+0x310 を `0x4C1200` で検索し、`0x463860..0
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 314](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L314-L314) — [CONFIRMED-TARGET / @scenario shared map] `exe/T009_SCENARIO_SYMBOL_HELPER_DUMP.txt` 0x463610..0x46371Bを再照合。@scenario設定に使用する文字列writer 0x463610は別writer関数だが、0x463
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+<a id="field-310"></a>
+## engine + 0x310
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 112](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L112-L112) — - engine +0x310 は key string + mapped string + int32 のscript persistent-state map。helper 0x4637A0/0x463CA0も同じ +0x30C/+0x310 mapを更新・参照する。
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 489](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L489-L489) — [CONFIRMED-SAVED-NATIVE / INCREMENTAL] A所有 `exe/T032_VAR_DEFAULT_PROBE.txt` VA0x463D17..0x463DCAを再確認。0x463D19の0x4C1200 key検索でnode != engine+0x310 sentinelなら0x46
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
 <a id="field-32c"></a>
 ## engine + 0x32C
 
 - [REF_SAVE_FORMAT.md 行 192](../../REF_SAVE_FORMAT.md?plain=1#L192-L192) — \| T014 A16〜A85 \| engine+0x32C「第5コンテナ」の用途は不明 \| 放浪中の Unit の集合（F§26）。保存されずロード後に作り直す \| T014 冒頭と各節に注記 \|
   制約・訂正　Existing full body linked; catalog revision differs
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 7](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L7-L7) — - **「第5コンテナ」engine+0x32C は放浪中の Unit の集合**（F§26: 0x460E90 が追加、0x460F10 が除去。structs の Ctx+0x32C roamingSet）。セーブには入らない。ロードで空にした後、+0x84（放浪先）が空でない Unit に 0x460E90 を呼
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 325](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L325-L325) — - +0x330のhead/sentinelから走査開始。node+0x11 flagで終端を判定し、各node+0x08値を0x4ED240(engine+0x32C)へ渡した後、nodeを0x5B6BBBで解放する（0x45EC13..0x45EC42）。
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+<a id="field-334"></a>
+## engine + 0x334
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 326](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L326-L326) — - 走査後headの+4/+0/+8を自分自身へ戻し、engine+0x334（件数）=0にする（0x45EC46..0x45EC66）。次の0x45EC6C以降でgroup1読込準備へ進む。
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
 
 <a id="field-1e8630"></a>
 ## engine + 0x1E8630

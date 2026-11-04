@@ -16,6 +16,36 @@
 - [research/recovered/b_reports/T024_FALLBACK_FLAG_LATCH_FOURWAY_NATIVE_20261025_23H.md 行 8](../../research/recovered/b_reports/T024_FALLBACK_FLAG_LATCH_FOURWAY_NATIVE_20261025_23H.md?plain=1#L8-L8) — - +0x3C/3D（0x526AE8/0x526AF3）も消費して分岐。成立時はglobal 0x67B313等による別条件処理、0x526B59→0x4C21F0等へ。0のとき0x526B79 owner+0x14==0なら0x526B7E AL0→return（後続pair群未消費）。
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail; source addendum limits missing-call claim to legacy20261021 DB, not V3
 
+<a id="field-2c"></a>
+## owner + 0x2C
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 602](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L602-L602) — [CONFIRMED-SAVED-NATIVE / A61 INCREMENT] 前回A61で未解明だった通常load後段の第一helper 0x432010（caller `exe/T014_NORMAL_LOAD_PROBE.txt` VA0x45F5B2..0x45F5BB、ESI=[owner+0x2C]+0x
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 622](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L622-L622) — [CONFIRMED-SAVED-NATIVE / NEW CALLERS] A62で既知のload末尾0x45F5B2..0x45F5BB（ESI=[owner+0x2C]+0x504）→0x432010に加え、D所有read-only `exe/T015_WINDOW_INPUT_GLOBAL_XREFS.txt`
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+<a id="field-1b8"></a>
+## owner + 0x1B8
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 500](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L500-L500) — [EVIDENCE] `exe/T006_NUMVAR_WRITE_AFTER_LOOKUP.txt` 0x41EC63..0x41EC89,0x430B04..0x430B10,0x44DBC0..0x44DBDF,0x451161..0x451177；`exe/T032_VAR_DEFAULT_PROBE.txt`
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+<a id="field-2dc"></a>
+## owner + 0x2DC
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 548](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L548-L548) — [CONFIRMED-SAVED-NATIVE] A所有`exe/T014_NORMAL_LOAD_PROBE.txt`のreaderは同一marker `0x65CD28` との文字列比較後、非markerの場合に群別construct枝へ進み、次レコードへ戻る。numeric: 0x45ED92→0x45F8A2(
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 701](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L701-L701) — [CONTRAST / VERIFY] full-load `exe/T014_NORMAL_LOAD_PROBE.txt` 0x45F66E..0x45F758はPower recordごとに0x138B確保・同0x590560 init・0x5964C0 read・owner+0x2DC treeへinsertする
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+<a id="field-2ec"></a>
+## owner + 0x2EC
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 548](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L548-L548) — [CONFIRMED-SAVED-NATIVE] A所有`exe/T014_NORMAL_LOAD_PROBE.txt`のreaderは同一marker `0x65CD28` との文字列比較後、非markerの場合に群別construct枝へ進み、次レコードへ戻る。numeric: 0x45ED92→0x45F8A2(
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
 <a id="field-2f0"></a>
 ## owner + 0x2F0
 
@@ -27,6 +57,15 @@
 
 - [research/recovered/b_batch2/T028_NULL_VECTOR_CANDIDATE_DESTRUCTION_NATIVE_20261028_12H.md 行 9](../../research/recovered/b_batch2/T028_NULL_VECTOR_CANDIDATE_DESTRUCTION_NATIVE_20261028_12H.md?plain=1#L9-L9) — 0x463590の0x463594 EBP=[ESP+0x10] は上記ownerを取得。0x4635A0 ESI=owner+0x2FC、0x4635A7 CALL0x49F410で索引木内の範囲を求め、0x4635BA CALL0x4BF820で範囲内エントリを消す経路。厳密なkey/範囲境界・削除件数はVERIF
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 548](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L548-L548) — [CONFIRMED-SAVED-NATIVE] A所有`exe/T014_NORMAL_LOAD_PROBE.txt`のreaderは同一marker `0x65CD28` との文字列比較後、非markerの場合に群別construct枝へ進み、次レコードへ戻る。numeric: 0x45ED92→0x45F8A2(
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+<a id="field-30c"></a>
+## owner + 0x30C
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 548](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L548-L548) — [CONFIRMED-SAVED-NATIVE] A所有`exe/T014_NORMAL_LOAD_PROBE.txt`のreaderは同一marker `0x65CD28` との文字列比較後、非markerの場合に群別construct枝へ進み、次レコードへ戻る。numeric: 0x45ED92→0x45F8A2(
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
 
 <a id="field-330"></a>
 ## owner + 0x330
@@ -48,5 +87,11 @@
 
 - [research/recovered/b_batch2/T028_RETREAT_OK_POSTPASS_VTABLE68_NATIVE_20261029_20H.md 行 8](../../research/recovered/b_batch2/T028_RETREAT_OK_POSTPASS_VTABLE68_NATIVE_20261029_20H.md?plain=1#L8-L8) — - 0x52216E MOV ECX,EBP→0x522170 E8 CALL 0x528700、0x522175 PUSH EAX/0x522176 LEA→0x52217B E8 CALL 0x525C90。前者は2026-10-25 T024で既知の owner+0x364/+0x368 spanに応じたlist
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+<a id="field-1eee18"></a>
+## owner + 0x1EEE18
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 593](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L593-L593) — [CONFIRMED-SAVED-NATIVE / A60 INCREMENT] A所有 `exe/T014_NORMAL_LOAD_PROBE.txt` VA0x45F5B2..0x45F633。既知のPower/Unit first-match pointer復元を終えた後、owner=[edi]の基底+0x2Cか
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

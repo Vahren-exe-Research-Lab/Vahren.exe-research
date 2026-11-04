@@ -25,6 +25,9 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 2858](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L2858-L2858) — - storeNowPower（[GM+0x10] → 0x471DC0。GM+0x10 = turnproc を確定）
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 6](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L6-L6) — - **「Diplomacy runtime state」は誤った名前**。GameManager+0x1EF4B4 はターン進行オブジェクト（F§59・§62.1・§71.2・§79.2 で静的確認。GM+0x10 がこれを指す）。保存される +0x14 は経過ターン（0x472714 で +1）、+0x38 は段階
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
 <a id="field-70"></a>
 ## GM + 0x70
 

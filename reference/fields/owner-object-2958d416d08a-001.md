@@ -10,6 +10,12 @@
 - [research/recovered/b_reports/T013_HEAL_FINISH_UNREGISTER_POOL_REUSE_NATIVE_20261027_10H.md 行 6](../../research/recovered/b_reports/T013_HEAL_FINISH_UNREGISTER_POOL_REUSE_NATIVE_20261027_10H.md?plain=1#L6-L6) — [OWNER REGISTRATION] 0x54E11A/0x54E11E→0x550980 factory。factory 0x550C53 virtual+0x18→0x455FA0、0x455FAB MOV [object+0xC],holder。0x54E2CC holder=[effect+0xC]、0x5
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
+<a id="field-1c"></a>
+## object + 0x1C
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 92](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L92-L92) — - engine object +0x310 のRB-treeをin-order走査し、各nodeで key string、mapped object側string、mapped object +0x1C のint32を順に書く。record形状は `key NUL + string NUL + int32LE`。
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
 <a id="field-54"></a>
 ## object + 0x54
 
@@ -33,6 +39,60 @@
 
 - [research/recovered/b_batch2/B_T012_T013_SPATIAL_CELL_MIGRATION_OFFLINE_20261023_0716.md 行 70](../../research/recovered/b_batch2/B_T012_T013_SPATIAL_CELL_MIGRATION_OFFLINE_20261023_0716.md?plain=1#L70-L70) — - **P0次回**：`0x004BC4F0` の空間セル列挙から、`0x004E6D10` など実際のミサイル接触候補探索との接続を限定的に調査する。`grid+0x28`の初期化と `object+0x54` readerを調べ、セル順序が本当に最終対象へ作用するかVERIFY。T024/T028はP0維持。0x5
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+<a id="field-6c"></a>
+## object + 0x6C
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 190](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L190-L190) — 1. `string object+0x6C`
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+<a id="field-88"></a>
+## object + 0x88
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 191](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L191-L191) — 2. `u32`（writerは `object+0x88:u8` をzero-extendして4 byteで保存）
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+<a id="field-1e8"></a>
+## object + 0x1E8
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 192](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L192-L192) — 3. `string object+0x1E8`
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 197](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L197-L197) — - 読込後、`object+0x1E8` と `object+0x204` の文字列は `0x49E490` でworld graph上のobjectへ再解決され、両方が有効なら `0x5AFB30` でlinkを再構成する。従ってこの2 fieldは少なくともgraph endpoint/reference名であるこ
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+<a id="field-204"></a>
+## object + 0x204
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 193](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L193-L193) — 4. `string object+0x204`
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 197](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L197-L197) — - 読込後、`object+0x1E8` と `object+0x204` の文字列は `0x49E490` でworld graph上のobjectへ再解決され、両方が有効なら `0x5AFB30` でlinkを再構成する。従ってこの2 fieldは少なくともgraph endpoint/reference名であるこ
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+<a id="field-220"></a>
+## object + 0x220
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 194](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L194-L194) — 5. `string object+0x220`
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 198](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L198-L198) — - `object+0x220` は保存文字列、`object+0x23C` は32-bit値であるが、ユーザー可視の論理名は未確定。
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+<a id="field-23c"></a>
+## object + 0x23C
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 195](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L195-L195) — 6. `int32 object+0x23C`
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 198](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L198-L198) — - `object+0x220` は保存文字列、`object+0x23C` は32-bit値であるが、ユーザー可視の論理名は未確定。
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+<a id="field-310"></a>
+## object + 0x310
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 92](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L92-L92) — - engine object +0x310 のRB-treeをin-order走査し、各nodeで key string、mapped object側string、mapped object +0x1C のint32を順に書く。record形状は `key NUL + string NUL + int32LE`。
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
 
 <a id="field-18684"></a>
 ## object + 0x18684

@@ -189,6 +189,35 @@ class KnowledgeSecurityTests(unittest.TestCase):
                         self.assertEqual([Path(call.args[0][2]).name for call in check.call_args_list],
                                          ["reference.py", "recovery_coverage.py"])
 
+    def test_portable_publication_requires_correction_registry_and_evidence(self):
+        ledger = "research/recovered/RECOVERY_LEDGER.tsv"
+        registry = "reference/sources.json"
+        correction_registry = "reference/corrections.jsonl"
+        evidence = "correction_source.md"
+        required = {ledger, registry, "reference/relations.jsonl", correction_registry, evidence}
+        for target in (correction_registry, evidence):
+            for missing in ("allowlist", "tracked"):
+                with self.subTest(target=target, missing=missing), tempfile.TemporaryDirectory() as folder:
+                    root = Path(folder)
+                    for name in required:
+                        path = root / name
+                        path.parent.mkdir(parents=True, exist_ok=True)
+                        path.write_text("", encoding="utf-8")
+                    (root / ledger).write_text("destination\n", encoding="utf-8")
+                    (root / registry).write_text("{}", encoding="utf-8")
+                    data = {"relations": [], "corrections": [{"source": {"path": evidence}}]}
+                    def verify(allowed, tracked):
+                        with patch.object(sync, "KB", root), \
+                             patch.object(sync, "ALLOWED", allowed), \
+                             patch.object(sync.reference, "load", return_value=data), \
+                             patch.object(sync.reference, "render", return_value={}), \
+                             patch.object(sync, "git", return_value=("\0".join(sorted(tracked)) + "\0", 0)):
+                            sync.verify_portable_publication()
+                    verify(required, required)
+                    with self.assertRaisesRegex(sync.Blocked, target):
+                        verify(required - ({target} if missing == "allowlist" else set()),
+                               required - ({target} if missing == "tracked" else set()))
+
     def test_publish_blocks_stale_reference_before_remote_changes(self):
         with tempfile.TemporaryDirectory() as folder:
             root = Path(folder)

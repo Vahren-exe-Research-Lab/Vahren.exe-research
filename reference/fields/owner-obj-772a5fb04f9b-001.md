@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-2c"></a>
+## obj + 0x2C
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 770](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L770-L770) — [CONFIRMED SAVED X86 / INDEPENDENT DELTA] A既存`exe/T031_PHASE_OVERLAP_PROBE.txt` VA0x4610B5..0x4610E0では入力obj=[esp+0x28]の+0x330 sentinel headをEBPへ、[EBP]をESIへ取り、ow
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
 <a id="field-38"></a>
 ## obj + 0x38
 
@@ -28,6 +34,12 @@
 - [research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md 行 11](../../research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md?plain=1#L11-L11) — - 0x5150D7 CALL 0x5B6513 はsecurity cookie検査。native cookieの正常経路0x5B6513 CMP ECX,[0x65A220]→0x5B651B REPZ RETでEAXを変更しない。通常経路のEAXは 0x515076 で作った &obj+0x88 に保たれる。Gh
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+<a id="field-c8"></a>
+## obj + 0xC8
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 763](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L763-L763) — [NEW CROSS-CALLER / CONFIRMED SAVED X86] A保存 `exe/T031_PHASE_OVERLAP_PROBE.txt` 0x41A3EA..0x41A3F6, 0x41D009..0x41D00F, 0x44FF18..0x44FF35, 0x4500B5..0x4500D2,
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
 <a id="field-dc"></a>
 ## obj + 0xDC
 
@@ -39,5 +51,17 @@
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 977](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L977-L977) — 2. obj+0xDC の型（雇用・城・傭兵の入口）と、VERIFY の入口4組の引数。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+<a id="field-1a4"></a>
+## obj + 0x1A4
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 763](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L763-L763) — [NEW CROSS-CALLER / CONFIRMED SAVED X86] A保存 `exe/T031_PHASE_OVERLAP_PROBE.txt` 0x41A3EA..0x41A3F6, 0x41D009..0x41D00F, 0x44FF18..0x44FF35, 0x4500B5..0x4500D2,
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+<a id="field-330"></a>
+## obj + 0x330
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 770](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L770-L770) — [CONFIRMED SAVED X86 / INDEPENDENT DELTA] A既存`exe/T031_PHASE_OVERLAP_PROBE.txt` VA0x4610B5..0x4610E0では入力obj=[esp+0x28]の+0x330 sentinel headをEBPへ、[EBP]をESIへ取り、ow
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

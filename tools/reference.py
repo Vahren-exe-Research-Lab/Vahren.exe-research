@@ -280,6 +280,54 @@ def attach_citations(row, registry, recovered=()):
             row["source_links"].append(citation)
 
 
+def validate_source(root, source, identifier):
+    if (not isinstance(source, dict)
+            or any(not isinstance(source.get(key), str) or not source[key].strip()
+                   for key in ("path", "sha256"))
+            or not re.fullmatch(r"[0-9a-fA-F]{64}", source["sha256"])):
+        raise ValueError(f"Invalid source metadata: {identifier}")
+    relative = Path(source["path"])
+    evidence = (root / relative).resolve()
+    if relative.is_absolute() or not evidence.is_relative_to(root):
+        raise ValueError(f"Source path escapes repository: {identifier}")
+    if not evidence.is_file():
+        raise ValueError(f"Missing source: {source['path']}")
+    payload = evidence.read_bytes()
+    if hashlib.sha256(payload).hexdigest().lower() != source["sha256"].lower():
+        raise ValueError(f"Stale source checksum: {source['path']}")
+    count = len(payload.decode("utf-8-sig").splitlines())
+    if (any(type(source.get(key)) is not int for key in ("start_line", "end_line"))
+            or not 1 <= source["start_line"] <= source["end_line"] <= count):
+        raise ValueError(f"Invalid source lines: {identifier}")
+
+
+def load_corrections(root, endpoints, reserved_ids):
+    path = root / "reference/corrections.jsonl"
+    corrections = []
+    seen = set(reserved_ids)
+    required = ("id", "subject", "status", "previous_interpretation", "current_interpretation",
+                "summary", "confidence", "target_version")
+    for line, content in enumerate(path.read_text(encoding="utf-8-sig").splitlines() if path.exists() else [], 1):
+        if not content.strip():
+            continue
+        item = json.loads(content)
+        if (not isinstance(item, dict)
+                or any(not isinstance(item.get(key), str) or not item[key].strip() for key in required)):
+            raise ValueError(f"corrections.jsonl:{line}: missing required text")
+        if item["id"] in seen:
+            raise ValueError(f"Duplicate correction ID: {item['id']}")
+        if item["subject"] not in endpoints:
+            raise ValueError(f"Unknown correction endpoint: {item['id']}")
+        if (item["status"] != "corrected" or item["target_version"] not in (
+                "ver0.67", "迫真戦記 ver0.67 / Vahren.exe image base 0x400000")):
+            raise ValueError(f"Invalid correction status or target version: {item['id']}")
+        validate_source(root, item.get("source"), item["id"])
+        item["kind"] = "correction"
+        corrections.append(item)
+        seen.add(item["id"])
+    return corrections
+
+
 def load(root):
     root = Path(root).resolve()
     symbols = table(root, "symbols.tsv", SYMBOL_COLUMNS)
@@ -313,19 +361,7 @@ def load(root):
             raise ValueError(f"Duplicate relation ID: {item['id']}")
         if item["subject"] not in ids or item["object"] not in ids:
             raise ValueError(f"Unknown relation endpoint: {item['id']}")
-        source = item["source"]
-        relative = Path(source["path"])
-        evidence = (root / relative).resolve()
-        if relative.is_absolute() or not evidence.is_relative_to(root):
-            raise ValueError(f"Source path escapes repository: {item['id']}")
-        if not evidence.is_file():
-            raise ValueError(f"Missing source: {source['path']}")
-        payload = evidence.read_bytes()
-        if hashlib.sha256(payload).hexdigest().lower() != source["sha256"].lower():
-            raise ValueError(f"Stale source checksum: {source['path']}")
-        count = len(payload.decode("utf-8-sig").splitlines())
-        if not 1 <= source["start_line"] <= source["end_line"] <= count:
-            raise ValueError(f"Invalid source lines: {item['id']}")
+        validate_source(root, item["source"], item["id"])
         if "aliases" in item:
             names = item["aliases"]
             if item["predicate"] != "uses_layout" or not item["object"].startswith("struct:"):
@@ -346,7 +382,9 @@ def load(root):
         relation_ids.add(item["id"])
     source_mentions = load_mentions(root)
     static_calls, static_receipt = load_static_calls(root, symbols)
+    corrections = load_corrections(root, {row["id"] for row in symbols + fields}, ids | relation_ids)
     return {"symbols": symbols, "fields": fields, "relations": relations,
+            "corrections": corrections,
             "mentions": [row for row in source_mentions if row["kind"] != "field_mention"],
             "field_mentions": [row for row in source_mentions if row["kind"] == "field_mention"],
             "aliases": aliases, "static_calls": static_calls, "static_calls_receipt": static_receipt}
@@ -377,7 +415,9 @@ def search(data, query):
     indexed_calls = [row for row in data["static_calls"]
                      if row["subject"] in ids or row["object"] in ids
                      or needle in json.dumps(row, ensure_ascii=False).casefold()]
-    return matched + related + mentions + field_mentions + indexed_calls
+    corrections = [row for row in data["corrections"]
+                   if row["subject"] in ids or needle in json.dumps(row, ensure_ascii=False).casefold()]
+    return matched + related + mentions + field_mentions + indexed_calls + corrections
 
 
 def call_edges(data, query, incoming):
@@ -410,12 +450,12 @@ def struct_filename(name):
     return quote(name, safe="") + ".md"
 
 
-def endpoint_link(identifier, labels):
+def endpoint_link(identifier, labels, prefix="../"):
     parts = identifier.split(":")
     if parts[0] == "va":
-        target = f"../symbols/{int(parts[1], 16):08X}.md"
+        target = f"{prefix}symbols/{int(parts[1], 16):08X}.md"
     else:
-        target = "../structs/" + quote(struct_filename(parts[1]), safe="")
+        target = prefix + "structs/" + quote(struct_filename(parts[1]), safe="")
         if parts[0] == "field":
             target += f"#field-{int(parts[2], 16):x}"
     return f"[{text(labels.get(identifier, identifier))}]({target})"
@@ -434,6 +474,23 @@ def relation_lines(relations, identifier, labels):
             f"{endpoint_link(row['object'], labels)}。{text(row['summary'])} "
             f"（{text(row['confidence'])}、{text(row['target_version'])}）。"
             f"[根拠]({link}) · `{row['id']}`")
+    return lines
+
+
+def correction_lines(corrections, identifier, labels, overview=False):
+    rows = [row for row in corrections if identifier is None or row["subject"] == identifier]
+    if not rows:
+        return []
+    lines = ["", "## 訂正履歴", "", "旧解釈は訂正済みの履歴です。現在の意味は辞書と各訂正の確度・対象を確認してください。", ""]
+    for row in rows:
+        source = row["source"]
+        link = ("../" if overview else "../../") + quote(source["path"], safe="/")
+        link += f"?plain=1#L{source['start_line']}-L{source['end_line']}"
+        endpoint = endpoint_link(row["subject"], labels, prefix="" if overview else "../")
+        lines += [f"- {endpoint} · `{text(row['id'])}` · `corrected`。{text(row['summary'])}",
+                  f"  - 訂正済みの旧解釈（履歴）　{text(row['previous_interpretation'])}",
+                  f"  - → 現在の解釈　{text(row['current_interpretation'])}",
+                  f"  - 確度　{text(row['confidence'])}。対象　{text(row['target_version'])}。[訂正の根拠]({link})", ""]
     return lines
 
 
@@ -485,6 +542,7 @@ def render(root, data):
         lines += [f"- [元の辞書行](../../symbols.tsv#L{row['dictionary_line']})", "",
                   "## 関数・メモリとの関係", ""]
         lines += relation_lines(data["relations"], row["id"], labels) or ["関係の個別採録は未実施です。"]
+        lines += correction_lines(data["corrections"], row["id"], labels)
         lines += static_call_lines(data, row["id"], labels)
         mentions = [item for item in data["mentions"] if item["subject"] == row["id"]]
         if mentions:
@@ -532,6 +590,7 @@ def render(root, data):
             lines += citation_lines(row)
             lines += [f"- [元の辞書行](../../structs.tsv#L{row['dictionary_line']})", ""]
             lines += relation_lines(data["relations"], row["id"], labels) or ["読み手・書き手の個別採録は未実施です。"]
+            lines += correction_lines(data["corrections"], row["id"], labels)
         lines += ["", "[事典の入口](../README.md)", ""]
         filename = struct_filename(name)
         files["reference/structs/" + filename] = "\n".join(lines)
@@ -541,7 +600,13 @@ def render(root, data):
     if data["static_calls_receipt"]:
         index += [f"[登録関数間の直接CALL採録条件](static_calls_source.json) — {len(data['static_calls'])}箇所。"
                   "各関数ページで呼び出し元・先を参照でき、`callers VA --json` / `callees VA --json` でも検索できます。", ""]
+    index += [f"[訂正履歴](CORRECTIONS.md) — {len(data['corrections'])} 件。訂正済みの旧解釈と現在の解釈を出典行付きで確認できます。", ""]
     files["reference/README.md"] = "\n".join(index)
+    corrections = ["# 訂正履歴", "", "<!-- Generated by tools/reference.py. -->", "",
+                   "対象は迫真戦記 ver0.67。旧解釈は歴史的な記録として保持しています。", ""]
+    corrections += correction_lines(data["corrections"], None, labels, overview=True) or ["訂正の個別採録は未実施です。", ""]
+    corrections += ["[事典の入口](README.md)", ""]
+    files["reference/CORRECTIONS.md"] = "\n".join(corrections)
     files.update(render_field_pages(data["field_mentions"]))
     return files
 
@@ -619,7 +684,12 @@ def main():
                 print(json.dumps(matches, ensure_ascii=False, indent=2))
             else:
                 for row in matches:
-                    print(f"{row['id']}  {row.get('name', row.get('predicate'))}  {row['summary']}  [{row['confidence']}]")
+                    print(f"{row['id']}  {row.get('name', row.get('predicate', row.get('kind')))}  {row['summary']}  [{row['confidence']}]")
+                    if row.get("kind") == "correction":
+                        print(f"  訂正済みの旧解釈（履歴） {row['previous_interpretation']}")
+                        print(f"  → 現在の解釈 {row['current_interpretation']} / 対象 {row['target_version']}")
+                        source = row["source"]
+                        print(f"  根拠 {source['path']}:{source['start_line']}-{source['end_line']}")
                     if row.get("kind") == "research_run_record":
                         print(f"  run {row['run_id']} / Task {row['related_task']} / 記録上の状態 {row['reported_status']}")
                         print("  取得方法 " + json.dumps(row["methods"], ensure_ascii=False))
