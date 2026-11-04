@@ -22,3 +22,7 @@
 - [通常セーブに関係する状態・第79節](PEER_SCRIPT01_FINDINGS_20261011.md#f-79)
 - [詳細パネルの条件・第93節](PEER_SCRIPT01_FINDINGS_20261011.md#f-93)
 - [詳細パネルのボタン処理・第95節](PEER_SCRIPT01_FINDINGS_20261011.md#f-95)
+
+## GitHub取得コピーでの確認
+
+[収録コミット683d5f8](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/683d5f8b40a044d37ac63d3a8bc2509d8073d9f8)を別クローンへ取得し、737項目のマニフェスト一致、原本SHA一致、除外範囲以外の4,124行から保存版を再構成できることを確認した。189項目の出典リンクと、TempStatusWndの解雇フィールドからC(§93)の実在する節へ到達することを検証済み。検索18試験、収録範囲11試験は成功。[PR #23](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/23)に変更範囲を記録している。全体の手動確認と、除外部分の扱いは継続課題。
