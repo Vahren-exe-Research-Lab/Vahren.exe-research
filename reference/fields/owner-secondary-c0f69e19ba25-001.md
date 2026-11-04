@@ -4,6 +4,18 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-78"></a>
+## secondary + 0x78
+
+- [research/recovered/e_batch4/T020_FASTSIM_RETURN0_PRIMARY_VTABLE_DRAW_GATE_20261023_1850.md 行 33](../../research/recovered/e_batch4/T020_FASTSIM_RETURN0_PRIMARY_VTABLE_DRAW_GATE_20261023_1850.md?plain=1#L33-L33) — 0x40E220 native 0x40E22CでEAX=0x80000008、0x40E231は[secondary+0x78]、0x40E23Aは[secondary+0x7C]と比較してから進む。後者はBattleWnd primary+0xA4に相当する。
+  制約・訂正　Historical authored claims only; referenced payloads not opened or executed; actual INELIGIBLE/NOT RUN and historical counts preserved; no new native/runtime/Golden/strict MATCH/READY; excluded composites remain deferred outside this subset
+
+<a id="field-7c"></a>
+## secondary + 0x7C
+
+- [research/recovered/e_batch4/T020_FASTSIM_RETURN0_PRIMARY_VTABLE_DRAW_GATE_20261023_1850.md 行 33](../../research/recovered/e_batch4/T020_FASTSIM_RETURN0_PRIMARY_VTABLE_DRAW_GATE_20261023_1850.md?plain=1#L33-L33) — 0x40E220 native 0x40E22CでEAX=0x80000008、0x40E231は[secondary+0x78]、0x40E23Aは[secondary+0x7C]と比較してから進む。後者はBattleWnd primary+0xA4に相当する。
+  制約・訂正　Historical authored claims only; referenced payloads not opened or executed; actual INELIGIBLE/NOT RUN and historical counts preserved; no new native/runtime/Golden/strict MATCH/READY; excluded composites remain deferred outside this subset
+
 <a id="field-19c"></a>
 ## secondary + 0x19C
 

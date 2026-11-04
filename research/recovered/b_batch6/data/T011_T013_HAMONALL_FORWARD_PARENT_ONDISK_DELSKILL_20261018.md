@@ -1,0 +1,14 @@
+# B-20261018-0615-01 | T011主/T013参照 | hamon_all の前方親宣言と ONDISK cross-kind skill 差
+[DATE/STATUS] 2026-10-18 06:15 JST。限定STATIC ORIGINAL SOURCE ×既保存callback登録表。実効継承/合法実機はVERIFY。原作Gameplay actual PASS0、新旧strict MATCH0、Task DONE+0。
+[ORIGINAL-SKILL] normalized hakushin067_core/a_default/script/30_スキル/F13_heal_support.dat 1-based L117付近：skill hamon_all : b_all は表示/アイコン/sortkeyのみ明示。直後の同file L124付近に skill b_all の本体が定義され、raw attr=all,func=heal,range=400,str=magic_dext*50,str_ratio=0,mp=-1,gun_delay=b_all*3。raw text上では子が親に先行する。
+[ORIGINAL-CLASS] normalized 20_クラス/24_26_ONDISK_二軍_原理.dat class a240:base (L19-30付近)、a2402:a240(L46-58付近)、a2403:a240(L66-78付近) の各 skill には hamon_all を直接列挙。a2402/a2403は親辺と各自の直接skill宣言の両方を持つ。
+[ORIGINAL-UNIT] normalized 10_ユニット/24_ヒューマンダストクルセイダース.dat unit ondisk:base4 の class=c_ondisk、skill2=b_all、delskill列にhamon_allを直接指定。後続同fileの class c_ondisk:a240, c_ondisk2:a2402, c_ondisk3:a2403 の各親辺・change辺を確認。Unitのskill2とdelskillとClassのskillは**別宣言**。
+[SAVED-NATIVE-REF] B所有 exe/T013_A18_A1C_CALLBACK_MAP_20261012.txt：VA0x59FA40..0x59FAE3、attr key all=index18 に対してSkill+0xA18=0x599310、Skill+0xA1C=0x599580を登録する保存済み表。callback実体は本件で再解析せず、以前の安全拒否bodyも再試行しない。
+[STATIC-CONSEQUENCE] raw構文として(1)Skill子→後に現れる親、(2)Classがその子を直接列挙、(3)派生Classを指すUnitが子をdelskillで挙げつつ親b_allをskill2へ記述、の3段を結べる。両IDを同一Skillへ併合せず、Skill親辺・Class親辺・change辺・Unit削除/付与を独立保持する。
+[VERIFY] 前方参照のcompiled成功、Class→Unit skill実効合成、delskillがどのpoolを除去するか、Unit+skill2=b_allの取得、hamon_allのeffective attr=all/func=heal、+A18/A1Cの当Skill実際のpointer、実対象/状態異常回復/MP/HP/RNGはすべて未確定。ondiskがhamon_allを実行不能とは断定しない。
+[DELTA/DEDUP] B-20261017-1413-01の別heal delay/取得やB-20261012-0412-01のclass親と@抑止一般例、およびB-20261012-0108-01の19属性callback表は再計上しない。本ID独立増分は具体的hamon_all前方親＋a240/c_ondisk/ondiskのraw取得・削除グラフの連結のみ。
+[REIMPLEMENT] parsed declaration-order、parent-reference resolution、Class.skill、Unit.skill2/delskill、changeを別列・段階に分け、raw b_allとhamon_allの意味/実効値を後追い照合。+A18/+A1Cは実効attrがallと証明された時のみ適用候補。
+[GOLDEN-DESIGNED/NOT RUN] 合法旧原作でa240系列とondisk/c_ondisk系列が出撃し可視Skill表示・使用可能かを検証、同EXE/DAT/SAVE/map/input/capture SHAとseed/turn条件を固定して、hamon_allとb_allのUI技能、発動、状態/HP/MP、target、次tickを旧新比較。原作未実行のためPASS0。内部pointerのみはINELIGIBLE。
+[NEXT] 保存済みloaderと許可済みB資料から前方親・Unit.delskillの実効結果を段階別に追跡。T012最終damage/0x4E7ED0・MP fallback/Unit+1E560/+18688、T013 actual target優先は引き続きOPEN。
+[SAFETY/OWNER] B data/T011/T013/detailとevidence/LANE_B_HANDOFFのみ更新対象。MASTER/T018/他owner/REA/dev_lab/Work/Git/push/設定/automation変更なし。拒否済VA0x5710C0..571500とcallback body等を新解析せず、過去拒否payloadを迂回しない。原本ZIP/EXE実行・変更なし。
+[READY GATE] detail、data/T011_DATA_MODEL.md、data/T013_AI.md、evidence/LANE_B_HANDOFF.mdの同ID/原文/VERIFY/Golden0を独立4点readback後だけB限定STATIC SOURCE READY。E正式統合は別。

@@ -4,8 +4,41 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-ec"></a>
+## def + 0xEC
+
+- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 714](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L714-L714) — - **まだ接続できない**: 部隊に属する Unit の最終値。def+0xEC の技能リスト（0x58C0E0）、consti map の初期値（Unit+0x13C）、`@mode_sdown` / `notalent_down` / `unit_status_hp`（0x46F4C0 / 0x463CA0）が未
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 717](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L717-L717) — 1. **0x58C0E0**: def+0xEC の技能リスト（skill / skill2、skillset 展開 0x46A3C0 / 0x46A700、0x4FA9F0 と 0x501CA0 の乱数・並べ替え、0x416D60 の集合化）。部隊 Unit の最終値を決める最後の大きな入力。
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 724](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L724-L724) — ## 24. def の技能リスト生成（def+0xEC）— 0x58C0E0 / 0x58DA40 / 0x58AFA0 / item
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 740](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L740-L740) — - 開始時に、それまでの def+0xEC を集合 S に入れてから空にする（0x58C17B..0x58C1C3）。
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 768](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L768-L768) — - **item**: unit の `item`（`@シナリオ` / 素の名前）、なければ class。数値の項目でグループが切り替わる（最初は front）。front の項目は def+0x10C と def+0xEC の先頭（1つずつ先頭に入れるので逆順）、back の項目は def+0xFC と末尾。最後に
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 786](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L786-L786) — - def+0xEC = ch0, charge_new, a_dash, sp_chikorita1, ch1, h_gun, sp_speed, seiretsu, pes_knock, c_cv1, ps_hp, ps_at, ps_df, ps_sp3, ps_mv3, ps_pl, ps_eart, ps_w
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+<a id="field-fc"></a>
+## def + 0xFC
+
+- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 750](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L750-L750) — 7. def+0xFC、def+0x10C（item の技能）を末尾に追加 → 0x58DA40。
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 768](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L768-L768) — - **item**: unit の `item`（`@シナリオ` / 素の名前）、なければ class。数値の項目でグループが切り替わる（最初は front）。front の項目は def+0x10C と def+0xEC の先頭（1つずつ先頭に入れるので逆順）、back の項目は def+0xFC と末尾。最後に
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
 <a id="field-10c"></a>
 ## def + 0x10C
+
+- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 750](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L750-L750) — 7. def+0xFC、def+0x10C（item の技能）を末尾に追加 → 0x58DA40。
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 768](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L768-L768) — - **item**: unit の `item`（`@シナリオ` / 素の名前）、なければ class。数値の項目でグループが切り替わる（最初は front）。front の項目は def+0x10C と def+0xEC の先頭（1つずつ先頭に入れるので逆順）、back の項目は def+0xFC と末尾。最後に
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
@@ -135,5 +168,14 @@
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1678](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1678-L1678) — - **`unit_strength_587cc0`**: context の fv_* 係数（0x459610 で読む。既定値 hp10 mp100 attack100 speed200 move200 hprec200 level10 consti10 summon20）を使い、各積を chop して def+0x
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+<a id="field-1d0"></a>
+## def + 0x1D0
+
+- [research/recovered/b_batch6/data/T012_5501A0_MODE4_RESULT_LINK_ABI_VERIFY_OFFLINE_20261021_1015.md 行 11](../../research/recovered/b_batch6/data/T012_5501A0_MODE4_RESULT_LINK_ABI_VERIFY_OFFLINE_20261021_1015.md?plain=1#L11-L11) — 2. 定義 `def+0x1D0 != 0` の場合、`iVar3!=0 && manager+0x1F8!=0` のときだけ `new+0x194=oldHead` と `oldHead+0x198=new` を実行し、**その後の `manager+0x1F8=iVar3` 自体は毎回実行**する。従って擬似Cを字
+  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
+
+- [research/recovered/b_batch6/data/T012_5501A0_MODE4_RESULT_LINK_ABI_VERIFY_OFFLINE_20261021_1015.md 行 29](../../research/recovered/b_batch6/data/T012_5501A0_MODE4_RESULT_LINK_ABI_VERIFY_OFFLINE_20261021_1015.md?plain=1#L29-L29) — - 検証は合法的に発火させた同一旧原作 ver0.67 EXE SHA / DAT SHA / SAVE SHA / map /入力 /tick /可能ならseedと、新実装build SHAを分離して採る。mode=4/非4、def+0x1D0=0/1、既存 `manager+0x1F8` NULL/nonnull、
+  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

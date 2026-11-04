@@ -1,0 +1,47 @@
+{
+  "snapshot_date": "2026-11-05",
+  "active_history_pages": 4,
+  "active_history_records_examined": 200,
+  "active_history_has_more": true,
+  "archived_history_examined": false,
+  "research_title_candidates": 36,
+  "selected_final_receipts": [
+    {
+      "source_uri": "chatgpt://6acd8339-6790-83ee-a957-99c517a150af/messages/7f3589df-b35d-433f-bf4f-5e0b8c1786d0",
+      "chat_title": "迫真戦記 新A｜EXE・VM",
+      "last_message_id": "7f3589df-b35d-433f-bf4f-5e0b8c1786d0",
+      "chat_updated_utc": "2026-10-14T00:05:58+00:00",
+      "text_encoding": "UTF-8 without newline normalization or added header",
+      "bytes": 1378,
+      "sha256": "2a7dbef1439f35858b28f6c406658b1b43dd7d6718e5dee1bcd413d679c98a72",
+      "destination": "research/recovered/chat_finals/CHAT_A_20261014_LAST_SELECTED_FINAL.md",
+      "older_messages_not_reviewed": 9,
+      "has_older_turns": false
+    },
+    {
+      "source_uri": "chatgpt://6ace176d-3c74-83ee-bc45-9532c826484b/messages/96b8045b-577d-46b1-904a-2ac794fdfc81",
+      "chat_title": "迫真戦記 新C｜内政・戦略",
+      "last_message_id": "96b8045b-577d-46b1-904a-2ac794fdfc81",
+      "chat_updated_utc": "2026-10-15T19:23:11+00:00",
+      "text_encoding": "UTF-8 without newline normalization or added header",
+      "bytes": 1809,
+      "sha256": "447c497ee29b1693d38d850ed5535dd167f0b984d58fa952c3e1dcce01c095df",
+      "destination": "research/recovered/chat_finals/CHAT_C_20261016_LAST_SELECTED_FINAL.md",
+      "older_messages_not_reviewed": 9,
+      "has_older_turns": false
+    },
+    {
+      "source_uri": "chatgpt://6ace1a3c-1ed8-83e8-9064-e16f513ffd6a/messages/a8157ea7-8275-49c4-836f-6f43f92afc18",
+      "chat_title": "迫真戦記 新D｜RTS・UI",
+      "last_message_id": "a8157ea7-8275-49c4-836f-6f43f92afc18",
+      "chat_updated_utc": "2026-10-15T20:33:00+00:00",
+      "text_encoding": "UTF-8 without newline normalization or added header",
+      "bytes": 1658,
+      "sha256": "b605da9ba1970575f0d15c80c7e12868d945d84bd689915acf7f19b297ec755f",
+      "destination": "research/recovered/chat_finals/CHAT_D_20261016_LAST_SELECTED_FINAL.md",
+      "older_messages_not_reviewed": 9,
+      "has_older_turns": false
+    }
+  ],
+  "scope": "Research-title metadata only; three selected latest final texts; not all messages or all schedules"
+}

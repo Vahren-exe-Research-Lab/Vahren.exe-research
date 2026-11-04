@@ -4,6 +4,18 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-8"></a>
+## linked + 0x8
+
+- [research/recovered/b_batch6/data/T012_EFFECT_REGISTRATION_DUAL_SINK_20261013.md 行 4](../../research/recovered/b_batch6/data/T012_EFFECT_REGISTRATION_DUAL_SINK_20261013.md?plain=1#L4-L4) — [REGISTER CALLER] B-20261013-1400-01の原作native41E134でchild ESIのvirtual+0x48を呼び、戻りAL!=0時だけ41E13A ECX=[parent linked+0xC],41E13D EAX=ESI→41E13F call4C3DC0。その分岐の真偽と
+  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
+
+<a id="field-c"></a>
+## linked + 0xC
+
+- [research/recovered/b_batch6/data/T012_EFFECT_REGISTRATION_DUAL_SINK_20261013.md 行 4](../../research/recovered/b_batch6/data/T012_EFFECT_REGISTRATION_DUAL_SINK_20261013.md?plain=1#L4-L4) — [REGISTER CALLER] B-20261013-1400-01の原作native41E134でchild ESIのvirtual+0x48を呼び、戻りAL!=0時だけ41E13A ECX=[parent linked+0xC],41E13D EAX=ESI→41E13F call4C3DC0。その分岐の真偽と
+  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
+
 <a id="field-1d"></a>
 ## linked + 0x1D
 

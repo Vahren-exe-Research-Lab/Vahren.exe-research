@@ -1,0 +1,15 @@
+# 迫真戦記 0.67 新B｜0x5501A0 周期dispatchと生成結果の条件付き連結（09時台）
+- Evidence候補ID: B-20261021-0910-01 / owner T012、T011参照。STATIC-GHIDRA / VERIFY / NOT READY。正式B READY・E統合は0。
+- SOURCE: PC search_index/search.sqlite, function 0x5501A0; code_sha256=1687A2EB67E5D43881EE8E1BCA397AB1089B23168D02AA5D7E86E13DA932CB31; original EXE SHA256=E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187。擬似Cは原ASMの確証ではない。
+- CHECKPOINT: PC MASTER checkpoint195 / E記載READY予定595(本run独立再計数なし)。B HANDOFF、T012_BATTLE_CALC、T012_SUMMON_CORE_54E7B0_CONTRACT、T011_DATA_MODEL、T011_SUMMON_RUNTIME_UNIT_56F880_CONTRACTと重複照合。B1015-01/02は再計上しない。
+- STATIC: effect-like param_1+0x1D4から定義参照。param_1+0x1F4をincrementし、[definition+0x78] <= counterでcounterを0に戻して分配処理へ進む。負値、0周期、overflowのnative semanticsはVERIFY。
+- STATIC CALL site 0x550219 -> 0x54E7B0: [definition+0x40]==4側の生成処理。これ以外の分配には 0x55037F -> 0x580280 のCALLが存在。単純に両方常時実行ではない。
+- STATIC: [definition+0x1D0]!=0の場合、非zero戻り候補と旧effect+0x1F8が共に有効なら候補+0x194へ旧tail、旧tail+0x198へ候補を書込。続いてeffect+0x1F8へ生成結果候補を書込。分配先別の戻り値/NULL/所有権はVERIFY。
+- STATIC: effect+0x1F0の回数候補を加算。[definition+0x74] <= counterなら0x5503F9 CALL 0x4C22B0後にeffect+0x1D0(byte)=0。上限未満でも[definition+0x78]!=0なら当該呼出しからreturn; 0なら同一関数内でwhile継続候補。
+- STATIC INDEX: 0x5501A0の直接callerとして検索DB上0件。未到達を意味しない。間接/仮想callerは未解決、原作実発火/DYNAMIC観測0。
+- DEDUP: 旧T012_SUMMON_COREは0x54E7B0子本体、旧02時台T012は0x580280内部登録。本IDは0x5501A0の二経路選択・周期counter・conditional linkという別の局所仕様のみ。最新全原ASMとの厳密重複と実作用は未確定。
+- INFERRED/VERIFY: emitter field名、+0x1F8 tailの寿命、kind4の返却保証、生成が召喚Unitか投射体か、effectの多重起動、RNG/MP/HPと厳密引数は断定しない。
+- GOLDEN-DESIGNED-NOT-RUN: 合法旧原作の同条件でkind4/それ以外・+0x74上限・+0x78周期0/正値・連続tick/ゼロ生成を分離し、発生物/時刻/HP/MP/RNG/同一SAVE-map-input-capture SHAを旧新比較。原作Gameplay PASS0、strict MATCH0。
+- NEXT: 保存済みASMで0x5501A0の条件ジャンプ・スタック引数と0x55037Fの戻り値レジスタを確認。間接callerとcreator生成オブジェクトの+0x194/+0x198 consumerを静的照合。P0のMP fallback/攻撃結果は別未解決。
+- SAFETY: 既拒否VAや拒否済み08時台研究本文にアクセス・再提出しない。元EXE/ZIP/SAVE実行・変更0、REA/Ghidra重いjob0、Git/MASTER/他owner/Work/Remote/automation更新0。
+- STATUS: PC B data保存・独立読み戻しが確認されるまでUNVERIFIED、READYではない。

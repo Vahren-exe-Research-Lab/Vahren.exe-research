@@ -31,6 +31,24 @@
 - [research/recovered/rea_batch2/reports/REA_20261103_16H_P0_BULK_GRID_CLEANUP_EXCEPTION_AND_VPTR8_STATIC.md 行 11](../../research/recovered/rea_batch2/reports/REA_20261103_16H_P0_BULK_GRID_CLEANUP_EXCEPTION_AND_VPTR8_STATIC.md?plain=1#L11-L11) — 2. When the non-null slot's `[child+0x14]!=0`, `0x563F23..0x563F58` allocates a list node via `0x4C52D0`, checks unsigned `0x3ffffffe-[0xAADD08]` and branches t
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
 
+<a id="field-54"></a>
+## child + 0x54
+
+- [research/recovered/b_batch6/data/T012_EFFECT_LINK_RECORD_IDENTITY_CORRECTION_20261013.md 行 6](../../research/recovered/b_batch6/data/T012_EFFECT_LINK_RECORD_IDENTITY_CORRECTION_20261013.md?plain=1#L6-L6) — [TYPE L: 16BYTE LINK RECORD] 0x41E060 at41E071 push ECX=R→41E072 call41E1D0、返EAXを41E077 EBX=Lとする。0x41E1D0 reuse/new bodyは`[L+0]=active byte1`, `[L+4]=R pointer`
+  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
+
+- [research/recovered/b_batch6/data/T012_EFFECT_REGISTRATION_DUAL_SINK_20261013.md 行 5](../../research/recovered/b_batch6/data/T012_EFFECT_REGISTRATION_DUAL_SINK_20261013.md?plain=1#L5-L5) — [4C3DC0 STATE] ECX=manager-like owner, EAX=child task-like ptr。0x4C3DC5 [owner+0x30]+=10、0x4C3DCE [child+0x54]=更新値。その後child vtable+0x38を呼び戻EAXがsigned負ならowner+0x
+  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
+
+- [research/recovered/b_batch6/data/T012_EFFECT_REGISTRATION_DUAL_SINK_20261013.md 行 7](../../research/recovered/b_batch6/data/T012_EFFECT_REGISTRATION_DUAL_SINK_20261013.md?plain=1#L7-L7) — [4BC920 COUNT/FIELD] 0x4BC9A0 `eax=[arg1+8]` →0x4BC9A3 `eax++`→0x4BC9A4 `[arg1+8]=eax`→0x4BC9A7 `[child+0x54]=eax`→0x4BC9AF ret8。**同一callerで先行4C3DC0がchild+54へ書い
+  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
+
+<a id="field-74"></a>
+## child + 0x74
+
+- [research/recovered/b_batch6/data/T012_DUAL_RUSH_BRANCH_SPECIFIC_REGISTRATION_CROSSJOIN_20261017.md 行 4](../../research/recovered/b_batch6/data/T012_DUAL_RUSH_BRANCH_SPECIFIC_REGISTRATION_CROSSJOIN_20261017.md?plain=1#L4-L4) — [CALLSITE] root Skill+0x26F!=0・stage-A解決child+0x74!=0で57EA58/70→54F720、後続root Skill+0xF4!=0・stage-B child+0x74!=0で57EB17→54F720（各callee正常return等が前提）。stage間にUnit
+  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
+
 <a id="field-1c8"></a>
 ## child + 0x1C8
 

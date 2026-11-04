@@ -1,0 +1,7 @@
+scope	state	reason	approved_body_deferrals	payload_action	checked_date
+5710C0..571500	METADATA_ONLY_EXCLUDED	Historical held Wave6 range; literal approved readback mention is a no-retry prohibition only	0	No payload opened or native action attempted	2026-11-05
+58021E..580340	METADATA_ONLY_EXCLUDED	Excluded held range; no approved body dependency found	0	No payload opened or native action attempted	2026-11-05
+5769B0 / downstream 5767B0	METADATA_ONLY_EXCLUDED	Held function/dependent analysis remains excluded	0	No payload opened or native action attempted	2026-11-05
+whole-owner FUN00580280 composites	METADATA_ONLY_EXCLUDED	Do not infer safe subranges or ownership from unavailable held composite	0	No payload opened or native action attempted	2026-11-05
+historical Oct31 16H final supplementary hash/list/lock	HISTORICAL_SAFETY_REFUSAL_NOT_RETRIED	Current REF preserves refused final check separately from earlier valid audit/readback	0	Metadata note only; no retry or substitute	2026-11-05
+historical Nov1 18H supplementary evidence	HISTORICAL_HOLD_NOT_LIFTED	Current REF preserves incomplete held supplementary evidence	0	Metadata note only; no retrieval or substitute	2026-11-05

@@ -4,6 +4,30 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-10"></a>
+## entry + 0x10
+
+- [research/recovered/rea_batch5/reports/REA_20261029_11H_P0_BITBOOK_SYMBOL_STATIC.md 行 15](../../research/recovered/rea_batch5/reports/REA_20261029_11H_P0_BITBOOK_SYMBOL_STATIC.md?plain=1#L15-L15) — - `0x005DAD60` は `0x005DAD8B` と `0x005DADE5` の2箇所で内部indexを直接取得し、`entry+0x10` の浮動小数ベクトルにstride（entry先頭の次元数）を掛けて加算。 `0x005DAD93 / 0x005DADED` で **-1** と比較してエラー帰還。
+  制約・訂正　Historical author STATIC/VERIFY claims and audit counts only; current REF_AUDIO_VORBIS precedence; no new native/runtime/ABI/READY validation; linked evidence excluded
+
+<a id="field-14"></a>
+## entry + 0x14
+
+- [research/recovered/rea_batch5/reports/REA_20261029_11H_P0_BITBOOK_SYMBOL_STATIC.md 行 12](../../research/recovered/rea_batch5/reports/REA_20261029_11H_P0_BITBOOK_SYMBOL_STATIC.md?plain=1#L12-L12) — - `0x005DA070` はcodebook entryを0x38バイトに初期化し、`0x005DA1AC`で `entry+0x14`（ソート済code境界の配列）、`0x005DA229`で `entry+0x18`（元symbol番号へのmap）、`0x005DA25F`で `entry+0x1C`（正cod
+  制約・訂正　Historical author STATIC/VERIFY claims and audit counts only; current REF_AUDIO_VORBIS precedence; no new native/runtime/ABI/READY validation; linked evidence excluded
+
+- [research/recovered/rea_batch5/reports/REA_20261029_11H_P0_BITBOOK_SYMBOL_STATIC.md 行 13](../../research/recovered/rea_batch5/reports/REA_20261029_11H_P0_BITBOOK_SYMBOL_STATIC.md?plain=1#L13-L13) — - `0x005DA930` はまず `0x005DA94A` → `0x005E6CF0` で `entry+0x24` bitをpeek。非負のfast-table entry（`entry+0x20`）なら `0x005DA982` → `0x005E6DB0` で消費して **symbol内部index** を
+  制約・訂正　Historical author STATIC/VERIFY claims and audit counts only; current REF_AUDIO_VORBIS precedence; no new native/runtime/ABI/READY validation; linked evidence excluded
+
+<a id="field-18"></a>
+## entry + 0x18
+
+- [research/recovered/rea_batch5/reports/REA_20261029_11H_P0_BITBOOK_SYMBOL_STATIC.md 行 12](../../research/recovered/rea_batch5/reports/REA_20261029_11H_P0_BITBOOK_SYMBOL_STATIC.md?plain=1#L12-L12) — - `0x005DA070` はcodebook entryを0x38バイトに初期化し、`0x005DA1AC`で `entry+0x14`（ソート済code境界の配列）、`0x005DA229`で `entry+0x18`（元symbol番号へのmap）、`0x005DA25F`で `entry+0x1C`（正cod
+  制約・訂正　Historical author STATIC/VERIFY claims and audit counts only; current REF_AUDIO_VORBIS precedence; no new native/runtime/ABI/READY validation; linked evidence excluded
+
+- [research/recovered/rea_batch5/reports/REA_20261029_11H_P0_BITBOOK_SYMBOL_STATIC.md 行 14](../../research/recovered/rea_batch5/reports/REA_20261029_11H_P0_BITBOOK_SYMBOL_STATIC.md?plain=1#L14-L14) — - `0x005DAA60` は入口で `entry+8` の正件数を検査（`0x005DAA67`）、`0x005DAA72` から `0x005DA930` を呼ぶ。非負indexなら `0x005DAA7E / 0x005DAA81` で `entry+0x18` の元symbol mapを読んで返す。件数0また
+  制約・訂正　Historical author STATIC/VERIFY claims and audit counts only; current REF_AUDIO_VORBIS precedence; no new native/runtime/ABI/READY validation; linked evidence excluded
+
 <a id="field-1c"></a>
 ## entry + 0x1C
 
@@ -15,5 +39,32 @@
 
 - [research/recovered/c_topics/T027_MERCHANT_PRICE_PURCHASE.md 行 203](../../research/recovered/c_topics/T027_MERCHANT_PRICE_PURCHASE.md?plain=1#L203-L203) — [CONFIRMED-SAVED-NATIVE / CROSSWALK] 旧EXE ChoiceWnd vm16 0x41EBE0のcommitはpending index `+0x168` がsentinel 0x80000008ならcommitせず、非sentinel時にも0x41EC59のhit-test戻値が0
   制約・訂正　Historical source/static-native and synthetic arithmetic claims only; linked records not acquired; no new runtime validation or Golden/READY promotion
+
+- [research/recovered/rea_batch5/reports/REA_20261029_11H_P0_BITBOOK_SYMBOL_STATIC.md 行 12](../../research/recovered/rea_batch5/reports/REA_20261029_11H_P0_BITBOOK_SYMBOL_STATIC.md?plain=1#L12-L12) — - `0x005DA070` はcodebook entryを0x38バイトに初期化し、`0x005DA1AC`で `entry+0x14`（ソート済code境界の配列）、`0x005DA229`で `entry+0x18`（元symbol番号へのmap）、`0x005DA25F`で `entry+0x1C`（正cod
+  制約・訂正　Historical author STATIC/VERIFY claims and audit counts only; current REF_AUDIO_VORBIS precedence; no new native/runtime/ABI/READY validation; linked evidence excluded
+
+- [research/recovered/rea_batch5/reports/REA_20261029_11H_P0_BITBOOK_SYMBOL_STATIC.md 行 13](../../research/recovered/rea_batch5/reports/REA_20261029_11H_P0_BITBOOK_SYMBOL_STATIC.md?plain=1#L13-L13) — - `0x005DA930` はまず `0x005DA94A` → `0x005E6CF0` で `entry+0x24` bitをpeek。非負のfast-table entry（`entry+0x20`）なら `0x005DA982` → `0x005E6DB0` で消費して **symbol内部index** を
+  制約・訂正　Historical author STATIC/VERIFY claims and audit counts only; current REF_AUDIO_VORBIS precedence; no new native/runtime/ABI/READY validation; linked evidence excluded
+
+<a id="field-20"></a>
+## entry + 0x20
+
+- [research/recovered/rea_batch5/reports/REA_20261029_11H_P0_BITBOOK_SYMBOL_STATIC.md 行 12](../../research/recovered/rea_batch5/reports/REA_20261029_11H_P0_BITBOOK_SYMBOL_STATIC.md?plain=1#L12-L12) — - `0x005DA070` はcodebook entryを0x38バイトに初期化し、`0x005DA1AC`で `entry+0x14`（ソート済code境界の配列）、`0x005DA229`で `entry+0x18`（元symbol番号へのmap）、`0x005DA25F`で `entry+0x1C`（正cod
+  制約・訂正　Historical author STATIC/VERIFY claims and audit counts only; current REF_AUDIO_VORBIS precedence; no new native/runtime/ABI/READY validation; linked evidence excluded
+
+- [research/recovered/rea_batch5/reports/REA_20261029_11H_P0_BITBOOK_SYMBOL_STATIC.md 行 13](../../research/recovered/rea_batch5/reports/REA_20261029_11H_P0_BITBOOK_SYMBOL_STATIC.md?plain=1#L13-L13) — - `0x005DA930` はまず `0x005DA94A` → `0x005E6CF0` で `entry+0x24` bitをpeek。非負のfast-table entry（`entry+0x20`）なら `0x005DA982` → `0x005E6DB0` で消費して **symbol内部index** を
+  制約・訂正　Historical author STATIC/VERIFY claims and audit counts only; current REF_AUDIO_VORBIS precedence; no new native/runtime/ABI/READY validation; linked evidence excluded
+
+<a id="field-24"></a>
+## entry + 0x24
+
+- [research/recovered/rea_batch5/reports/REA_20261029_11H_P0_BITBOOK_SYMBOL_STATIC.md 行 13](../../research/recovered/rea_batch5/reports/REA_20261029_11H_P0_BITBOOK_SYMBOL_STATIC.md?plain=1#L13-L13) — - `0x005DA930` はまず `0x005DA94A` → `0x005E6CF0` で `entry+0x24` bitをpeek。非負のfast-table entry（`entry+0x20`）なら `0x005DA982` → `0x005E6DB0` で消費して **symbol内部index** を
+  制約・訂正　Historical author STATIC/VERIFY claims and audit counts only; current REF_AUDIO_VORBIS precedence; no new native/runtime/ABI/READY validation; linked evidence excluded
+
+<a id="field-28"></a>
+## entry + 0x28
+
+- [research/recovered/rea_batch5/reports/REA_20261029_11H_P0_BITBOOK_SYMBOL_STATIC.md 行 13](../../research/recovered/rea_batch5/reports/REA_20261029_11H_P0_BITBOOK_SYMBOL_STATIC.md?plain=1#L13-L13) — - `0x005DA930` はまず `0x005DA94A` → `0x005E6CF0` で `entry+0x24` bitをpeek。非負のfast-table entry（`entry+0x20`）なら `0x005DA982` → `0x005E6DB0` で消費して **symbol内部index** を
+  制約・訂正　Historical author STATIC/VERIFY claims and audit counts only; current REF_AUDIO_VORBIS precedence; no new native/runtime/ABI/READY validation; linked evidence excluded
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

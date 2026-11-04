@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-10"></a>
+## virtual + 0x10
+
+- [research/recovered/e_batch4/T020_FASTSIM_TAIL_MULTIENTRY_CROSSWALK_20261023_2153.md 行 10](../../research/recovered/e_batch4/T020_FASTSIM_TAIL_MULTIENTRY_CROSSWALK_20261023_2153.md?plain=1#L10-L10) — 0x0040E220 pseudoCでは ret!=0 の後、virtual +0x10→0x00493630→0x0040F000→0x0048ABF0 と進み、iVar1+0x1EF175のbyteが0なら 0x0040E2D2 からcalleeを呼ぶ。
+  制約・訂正　Historical authored claims only; referenced payloads not opened or executed; actual INELIGIBLE/NOT RUN and historical counts preserved; no new native/runtime/Golden/strict MATCH/READY; excluded composites remain deferred outside this subset
+
 <a id="field-18"></a>
 ## virtual + 0x18
 
@@ -27,6 +33,9 @@
 
 - [research/recovered/b_batch3/B_T012_T013_VSLOT70_LIVE_VECTOR_OFFLINE_20261023_1109.md 行 69](../../research/recovered/b_batch3/B_T012_T013_VSLOT70_LIVE_VECTOR_OFFLINE_20261023_1109.md?plain=1#L69-L69) — - `HP virtual+0x70`を1つの固定関数と決めず、少なくとも4つの型別入口（Unit/SimpleUnit/StaticUnit/SimpleStaticUnit）を区別。具体的なゲーム内型との実物確認は別途必要。
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch6/data/T012_FLASH_DAMAGE_HEAL_CALL_ORDER_20261013.md 行 4](../../research/recovered/b_batch6/data/T012_FLASH_DAMAGE_HEAL_CALL_ORDER_20261013.md?plain=1#L4-L4) — [POSTDAMAGE GATE ORDER] 0x551143..0x551154は条件付target virtual+0x70、0x551156..0x551167はlinked helper0x551E50へ進む。0x55116E cmp byte[effect ctx+0xE],0→0x551172 JE 0x
+  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
 
 - [research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md 行 72](../../research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md?plain=1#L72-L72) — 同一原作EXE SHA / 同一DAT / SAVE / MAP / 入力 / RNG seed と状態で、合法な `allfunc` ミサイル技能を採り、候補vectorが0/1/2/3件の場合と、2件中1件不適格・index10/非10・Skill+0x2A8 sentinel/zero・Unit+0x1D0 nu
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail

@@ -1,0 +1,19 @@
+# REA 2026-10-28 13H｜保存・独立読み戻し
+研究ID: `REA-LOCAL-20261028-13H-P0-OGG-BACKSCAN-SEEK64-ABI-STATIC-01`
+状態: PC-SAVED / STATIC / VERIFY / NOT READY。
+対象: `0x005CEE10` の `0x005CEE80 CALL EAX`、64KiB後方探索、seek callback `0x005CFDD0`。
+隔離EXE/旧検索DB/V9各SHA256一致、両SQLite quick_check=ok。active.lockなし、Java/Ghidra先行プロセスなし。開始時空きRAM約14.32GiB、CPU不明。
+初回静的監査56/56 PASS（約1.37秒）、証拠JSON保存時56/56 PASS（約1.176秒）。
+**別PowerShell/Pythonプロセス**での再監査56/56 PASS（約1.11秒）、exit=0、failed=[]。
+同プロセスで証拠JSONを再読込しpassed=56/total=56/failed=0、新規formal=0、Golden=0を確認（exit=0）。
+前回12Hの監査も別プロセスで50/50 PASS（約1.152秒、exit=0）。既存正式Wave1〜5の64/64は保存済syncで照合し再計上なし。
+PCのGet-FileHash SHA256（独立読戻し）：
+- REA_20261028_13H_P0_OGG_SEEK_BACKSCAN_PROBE.py: 6FEE4BFEC767C0C4D4BAC9D59C8EB197E8DFA275692774ADAC470BC4586922FA
+- REA_20261028_13H_P0_OGG_BACKSCAN_AUDIT.py: 3CAA1BA747CE74ED217B3D405DF6ABF096681D8342BEDD6778AC0DF8110B3299
+- REA_20261028_13H_P0_OGG_BACKSCAN_EVIDENCE.json: 7702D521F45C62BDF1DE19F38C0CF4C3FA29A6AE2C3AC1C7C3F81ACEE70C82D5
+- REA_20261028_13H_P0_OGG_BACKSCAN_SEEK64_STATIC.md: 6C57A8479EA5E1FAEF0A9E4D23B484F3E497BCE9E5DE533140EB2697CC459D9D
+監査対象は静的命令・索引整合であり、ゲームGolden実測0、strict MATCH NOT RUN。5種正式REA証拠新規完全パッケージ0。正式TODO/VERIFY/BLOCKED差分0/0/0。
+調査メモ: 最初の探索プローブが命令途中の`0x005CEEB0`からデコードし不正表示となったため、その表示を不採用とし命令境界`0x005CEEAC`から再読込して検証。安全拒否・接続障害なし。
+このrunで原本、MASTER、QUEUE/PROGRESS、既存RUN、他owner、検索DB、Git、公開先、スケジュールは変更せず、REA自身の5ファイルのみ新規保存。
+記録時刻（JST）: 2026-10-28 13:43台。研究全体の所要時間は未測定。
+次回P0: `0x005CEB90` / `0x005CEC2E` のread callbackとページ解析、`0x005D39F0`のbuffer reset。Unicode/console `__write_nolock`は別VERIFY継続。

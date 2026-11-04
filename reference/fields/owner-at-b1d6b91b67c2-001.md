@@ -40,6 +40,12 @@
 - [research/recovered/rea_batch2/reports/REA_20261104_04H_P0_CRT_TLS_GATE_AND_ERROR_FLAGS_STATIC.md 行 9](../../research/recovered/rea_batch2/reports/REA_20261104_04H_P0_CRT_TLS_GATE_AND_ERROR_FLAGS_STATIC.md?plain=1#L9-L9) — 1. `0x5BC6A9..0x5BC6C2` calls `0x5BC630`, tests its EAX record pointer, and on zero calls `0x5BB659` with `push 0x10`. Its caller `0x5B9EDB` (already checked 03
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
 
+<a id="field-928"></a>
+## at + 0x928
+
+- [research/recovered/b_batch6/data/T011_UNIT_EFFECT_RING_OWNER_4DFB00_20261013.md 行 9](../../research/recovered/b_batch6/data/T011_UNIT_EFFECT_RING_OWNER_4DFB00_20261013.md?plain=1#L9-L9) — [WORK/DATA MODEL] UnitBattleInstance { effectSlots: 8 × 0x264 at+0x928, effectCursorDWORD:+0x185F8, childActiveLPtrs:vector Unit+0x6C/70/74, rest } としてRとLを厳密区別。
+  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
+
 <a id="field-186cc"></a>
 ## at + 0x186CC
 
