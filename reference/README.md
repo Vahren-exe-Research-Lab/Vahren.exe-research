@@ -495,7 +495,7 @@
 
 ## 構造体・フィールド
 
-[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 1409 件。型や意味の正式登録前の局所表記も検索できます。
+[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 1411 件。型や意味の正式登録前の局所表記も検索できます。
 
 - [Ctx](structs/Ctx.md)
 - [FrameWnd](structs/FrameWnd.md)
@@ -508,8 +508,8 @@
 - [TurnState](structs/TurnState.md)
 - [UnitDef](structs/UnitDef.md)
 
-辞書項目 482 件、フィールド 107 件、根拠付き関係 28 件。
+辞書項目 482 件、フィールド 107 件、根拠付き関係 114 件。
 
-回収済み文書のVA言及・取得記録 13254 件を検索対象に含みます。辞書未登録のVAも検索できます。
+回収済み文書のVA言及・取得記録 13288 件を検索対象に含みます。辞書未登録のVAも検索できます。
 
 [登録関数間の直接CALL採録条件](static_calls_source.json) — 2373箇所。各関数ページで呼び出し元・先を参照でき、`callers VA --json` / `callees VA --json` でも検索できます。

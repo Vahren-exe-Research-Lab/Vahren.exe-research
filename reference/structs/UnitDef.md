@@ -16,7 +16,7 @@
 - 本文リンク未解決　S1101§4
 - [元の辞書行](../../structs.tsv#L13)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteUnitDataRecord](../symbols/0058EFD0.md) → `reads` → [UnitDef + 0x00 key](../structs/UnitDef.md#field-0)。通常セーブへ UnitDef.key を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L73-L80) · `MEM-UNIT-SERIALIZE-0`
 
 <a id="field-1c"></a>
 ## 0x1C tag
@@ -30,7 +30,9 @@ DAT の unit タグ（個体キーを最初の + で切ったもの。例 a030+5
 - 本文リンク未解決　S1101§4
 - [元の辞書行](../../structs.tsv#L3)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteUnitDataRecord](../symbols/0058EFD0.md) → `reads` → [UnitDef + 0x1C tag](../structs/UnitDef.md#field-1c)。通常セーブへ UnitDef.tag を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L73-L81) · `MEM-UNIT-SERIALIZE-1C`
+- [UnitDef_Create](../symbols/00582D90.md) → `writes` → [UnitDef + 0x1C tag](../structs/UnitDef.md#field-1c)。unit タグと class への解決結果に従って定義のタグ・種族・クラスを設定する。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L517-L520) · `MEM-DEF-CREATE-1C`
+- [UnitDef_GetFriendSet](../symbols/00586320.md) → `reads` → [UnitDef + 0x1C tag](../structs/UnitDef.md#field-1c)。friend の宣言を unit 鎖、なければ class から引くため、定義のタグまたはクラス名を読む。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L982-L987) · `MEM-FRIEND-PROPERTY-1C`
 
 <a id="field-38"></a>
 ## 0x38 race
@@ -43,7 +45,8 @@ DAT の unit タグ（個体キーを最初の + で切ったもの。例 a030+5
 - 出典 [F§21](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-21)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L14)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteUnitDataRecord](../symbols/0058EFD0.md) → `reads` → [UnitDef + 0x38 race](../structs/UnitDef.md#field-38)。通常セーブへ UnitDef.race を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L73-L83) · `MEM-UNIT-SERIALIZE-38`
+- [UnitDef_Create](../symbols/00582D90.md) → `writes` → [UnitDef + 0x38 race](../structs/UnitDef.md#field-38)。unit タグと class への解決結果に従って定義のタグ・種族・クラスを設定する。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L517-L520) · `MEM-DEF-CREATE-38`
 
 <a id="field-54"></a>
 ## 0x54 class
@@ -56,7 +59,10 @@ DAT の unit タグ（個体キーを最初の + で切ったもの。例 a030+5
 - 出典 [F§21](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-21)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L15)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteUnitDataRecord](../symbols/0058EFD0.md) → `reads` → [UnitDef + 0x54 class](../structs/UnitDef.md#field-54)。通常セーブへ UnitDef.class を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L73-L84) · `MEM-UNIT-SERIALIZE-54`
+- [UnitDef_Create](../symbols/00582D90.md) → `writes` → [UnitDef + 0x54 class](../structs/UnitDef.md#field-54)。unit タグと class への解決結果に従って定義のタグ・種族・クラスを設定する。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L517-L520) · `MEM-DEF-CREATE-54`
+- [UnitDef_GetField](../symbols/00585AD0.md) → `reads` → [UnitDef + 0x54 class](../structs/UnitDef.md#field-54)。unit 側で見つからないプロパティを class の継承連鎖から取得するため、クラス名を読む。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L521-L526) · `MEM-DEF-GET-CLASS-54`
+- [UnitDef_GetFriendSet](../symbols/00586320.md) → `reads` → [UnitDef + 0x54 class](../structs/UnitDef.md#field-54)。friend の宣言を unit 鎖、なければ class から引くため、定義のタグまたはクラス名を読む。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L982-L987) · `MEM-FRIEND-PROPERTY-54`
 
 <a id="field-70"></a>
 ## 0x70 sex
@@ -69,7 +75,7 @@ DAT の unit タグ（個体キーを最初の + で切ったもの。例 a030+5
 - 出典 [F§71.2](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-71)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L16)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteUnitDataRecord](../symbols/0058EFD0.md) → `reads` → [UnitDef + 0x70 sex](../structs/UnitDef.md#field-70)。通常セーブへ UnitDef.sex を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L73-L82) · `MEM-UNIT-SERIALIZE-70`
 
 <a id="field-74"></a>
 ## 0x74 isPlayerUnit
@@ -83,7 +89,7 @@ DAT の unit タグ（個体キーを最初の + で切ったもの。例 a030+5
 - 本文リンク未解決　S1101§4
 - [元の辞書行](../../structs.tsv#L4)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteUnitDataRecord](../symbols/0058EFD0.md) → `reads` → [UnitDef + 0x74 isPlayerUnit](../structs/UnitDef.md#field-74)。通常セーブへ UnitDef.isPlayerUnit を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L73-L85) · `MEM-UNIT-SERIALIZE-74`
 
 <a id="field-75"></a>
 ## 0x75 isTalent
@@ -96,7 +102,7 @@ DAT の unit タグ（個体キーを最初の + で切ったもの。例 a030+5
 - 出典 [F§23.4](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-23)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L17)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteUnitDataRecord](../symbols/0058EFD0.md) → `reads` → [UnitDef + 0x75 isTalent](../structs/UnitDef.md#field-75)。通常セーブへ UnitDef.isTalent を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L73-L86) · `MEM-UNIT-SERIALIZE-75`
 
 <a id="field-77"></a>
 ## 0x77 isPowerMaster
@@ -110,7 +116,8 @@ DAT の unit タグ（個体キーを最初の + で切ったもの。例 a030+5
 - 本文リンク未解決　S1101§4
 - [元の辞書行](../../structs.tsv#L18)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteUnitDataRecord](../symbols/0058EFD0.md) → `reads` → [UnitDef + 0x77 isPowerMaster](../structs/UnitDef.md#field-77)。通常セーブへ UnitDef.isPowerMaster を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L73-L88) · `MEM-UNIT-SERIALIZE-77`
+- [UnitDef_SetRoaming](../symbols/00460E90.md) → `writes` → [UnitDef + 0x77 isPowerMaster](../structs/UnitDef.md#field-77)。放浪化で当該 UnitDef フィールドを 0 に初期化する。隊長印 +0x78 の意味は後の訂正に従う。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L885-L886) · `MEM-ROAM-RESET-77`
 
 <a id="field-78"></a>
 ## 0x78 isLeader
@@ -124,7 +131,8 @@ DAT の unit タグ（個体キーを最初の + で切ったもの。例 a030+5
 - 本文リンク未解決　S1101§4
 - [元の辞書行](../../structs.tsv#L5)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteUnitDataRecord](../symbols/0058EFD0.md) → `reads` → [UnitDef + 0x78 isLeader](../structs/UnitDef.md#field-78)。通常セーブへ UnitDef.isLeader を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L73-L89) · `MEM-UNIT-SERIALIZE-78`
+- [UnitDef_SetRoaming](../symbols/00460E90.md) → `writes` → [UnitDef + 0x78 isLeader](../structs/UnitDef.md#field-78)。放浪化で当該 UnitDef フィールドを 0 に初期化する。隊長印 +0x78 の意味は後の訂正に従う。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L885-L886) · `MEM-ROAM-RESET-78`
 
 <a id="field-79"></a>
 ## 0x79 flag_79
@@ -137,7 +145,8 @@ DAT の unit タグ（個体キーを最初の + で切ったもの。例 a030+5
 - 出典 [F§67.2](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-67)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L19)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteUnitDataRecord](../symbols/0058EFD0.md) → `reads` → [UnitDef + 0x79 flag_79](../structs/UnitDef.md#field-79)。通常セーブへ UnitDef.flag_79 を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L73-L90) · `MEM-UNIT-SERIALIZE-79`
+- [UnitDef_SetRoaming](../symbols/00460E90.md) → `writes` → [UnitDef + 0x79 flag_79](../structs/UnitDef.md#field-79)。放浪化で当該 UnitDef フィールドを 0 に初期化する。隊長印 +0x78 の意味は後の訂正に従う。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L885-L886) · `MEM-ROAM-RESET-79`
 
 <a id="field-7a"></a>
 ## 0x7A isVassal
@@ -149,7 +158,8 @@ DAT の unit タグ（個体キーを最初の + で切ったもの。例 a030+5
 - 辞書の出典表記　C(§93, x32dbg 0x55D98F)
 - [元の辞書行](../../structs.tsv#L6)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteUnitDataRecord](../symbols/0058EFD0.md) → `reads` → [UnitDef + 0x7A isVassal](../structs/UnitDef.md#field-7a)。通常セーブへ UnitDef.isVassal を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L73-L91) · `MEM-UNIT-SERIALIZE-7A`
+- [UnitDef_SetRoaming](../symbols/00460E90.md) → `writes` → [UnitDef + 0x7A isVassal](../structs/UnitDef.md#field-7a)。放浪化で当該 UnitDef フィールドを 0 に初期化する。隊長印 +0x78 の意味は後の訂正に従う。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L885-L886) · `MEM-ROAM-RESET-7A`
 
 <a id="field-7c"></a>
 ## 0x7C arbeit
@@ -163,7 +173,7 @@ DAT の unit タグ（個体キーを最初の + で切ったもの。例 a030+5
 - 本文リンク未解決　S1101§4
 - [元の辞書行](../../structs.tsv#L20)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteUnitDataRecord](../symbols/0058EFD0.md) → `reads` → [UnitDef + 0x7C arbeit](../structs/UnitDef.md#field-7c)。通常セーブへ UnitDef.arbeit を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L73-L108) · `MEM-UNIT-SERIALIZE-7C`
 
 <a id="field-80"></a>
 ## 0x80 rank
@@ -176,7 +186,8 @@ DAT の unit タグ（個体キーを最初の + で切ったもの。例 a030+5
 - 出典 [F§62.1](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-62)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L21)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteUnitDataRecord](../symbols/0058EFD0.md) → `reads` → [UnitDef + 0x80 rank](../structs/UnitDef.md#field-80)。通常セーブへ UnitDef.rank を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L73-L92) · `MEM-UNIT-SERIALIZE-80`
+- [UnitDef_SetRoaming](../symbols/00460E90.md) → `writes` → [UnitDef + 0x80 rank](../structs/UnitDef.md#field-80)。放浪化で当該 UnitDef フィールドを 0 に初期化する。隊長印 +0x78 の意味は後の訂正に従う。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L885-L886) · `MEM-ROAM-RESET-80`
 
 <a id="field-84"></a>
 ## 0x84 roamSpot
@@ -190,7 +201,10 @@ DAT の unit タグ（個体キーを最初の + で切ったもの。例 a030+5
 - 本文リンク未解決　S1101§4
 - [元の辞書行](../../structs.tsv#L7)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteUnitDataRecord](../symbols/0058EFD0.md) → `reads` → [UnitDef + 0x84 roamSpot](../structs/UnitDef.md#field-84)。通常セーブへ UnitDef.roamSpot を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L73-L93) · `MEM-UNIT-SERIALIZE-84`
+- [UnitDef_SetRoaming](../symbols/00460E90.md) → `writes` → [UnitDef + 0x84 roamSpot](../structs/UnitDef.md#field-84)。放浪先スポット名を代入する。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L878-L886) · `MEM-ROAM-SET-84`
+- [UnitDef_ClearRoaming](../symbols/00460F10.md) → `writes` → [UnitDef + 0x84 roamSpot](../structs/UnitDef.md#field-84)。放浪解除で放浪先文字列を空にする。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L878-L886) · `MEM-ROAM-CLEAR-84`
+- [World_MonthlyRoamMove](../symbols/00461DA0.md) → `writes` → [UnitDef + 0x84 roamSpot](../structs/UnitDef.md#field-84)。月次の放浪移動で選んだスポット名を代入する。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L878-L886) · `MEM-ROAM-MONTH-84`
 
 <a id="field-a0"></a>
 ## 0xA0 arbeitUser
@@ -203,7 +217,7 @@ DAT の unit タグ（個体キーを最初の + で切ったもの。例 a030+5
 - 出典 [F§71.2](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-71)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L22)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteUnitDataRecord](../symbols/0058EFD0.md) → `reads` → [UnitDef + 0xA0 arbeitUser](../structs/UnitDef.md#field-a0)。通常セーブへ UnitDef.arbeitUser を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L73-L109) · `MEM-UNIT-SERIALIZE-A0`
 
 <a id="field-bc"></a>
 ## 0xBC merits
@@ -216,7 +230,8 @@ DAT の unit タグ（個体キーを最初の + で切ったもの。例 a030+5
 - 出典 [F§59](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-59)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L23)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteUnitDataRecord](../symbols/0058EFD0.md) → `reads` → [UnitDef + 0xBC merits](../structs/UnitDef.md#field-bc)。通常セーブへ UnitDef.merits を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L73-L97) · `MEM-UNIT-SERIALIZE-BC`
+- [UnitDef_SetRoaming](../symbols/00460E90.md) → `writes` → [UnitDef + 0xBC merits](../structs/UnitDef.md#field-bc)。放浪化で当該 UnitDef フィールドを 0 に初期化する。隊長印 +0x78 の意味は後の訂正に従う。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L885-L886) · `MEM-ROAM-RESET-BC`
 
 <a id="field-c0"></a>
 ## 0xC0 loyal
@@ -229,7 +244,8 @@ DAT の unit タグ（個体キーを最初の + で切ったもの。例 a030+5
 - 出典 [F§59](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-59)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L24)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteUnitDataRecord](../symbols/0058EFD0.md) → `reads` → [UnitDef + 0xC0 loyal](../structs/UnitDef.md#field-c0)。通常セーブへ UnitDef.loyal を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L73-L98) · `MEM-UNIT-SERIALIZE-C0`
+- [UnitDef_SetRoaming](../symbols/00460E90.md) → `writes` → [UnitDef + 0xC0 loyal](../structs/UnitDef.md#field-c0)。放浪化で当該 UnitDef フィールドを 100 に初期化する。隊長印 +0x78 の意味は後の訂正に従う。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L885-L886) · `MEM-ROAM-RESET-C0`
 
 <a id="field-c4"></a>
 ## 0xC4 trust
@@ -242,7 +258,7 @@ DAT の unit タグ（個体キーを最初の + で切ったもの。例 a030+5
 - 出典 [F§62.1](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-62)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L25)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteUnitDataRecord](../symbols/0058EFD0.md) → `reads` → [UnitDef + 0xC4 trust](../structs/UnitDef.md#field-c4)。通常セーブへ UnitDef.trust を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L73-L99) · `MEM-UNIT-SERIALIZE-C4`
 
 <a id="field-c8"></a>
 ## 0xC8 actedTurn
@@ -255,7 +271,7 @@ DAT の unit タグ（個体キーを最初の + で切ったもの。例 a030+5
 - 出典 [F§68.1](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-68)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L26)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteUnitDataRecord](../symbols/0058EFD0.md) → `reads` → [UnitDef + 0xC8 actedTurn](../structs/UnitDef.md#field-c8)。通常セーブへ UnitDef.actedTurn を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L73-L94) · `MEM-UNIT-SERIALIZE-C8`
 
 <a id="field-cc"></a>
 ## 0xCC enableTurn
@@ -268,7 +284,7 @@ DAT の unit タグ（個体キーを最初の + で切ったもの。例 a030+5
 - 出典 [F§25.2](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-25)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L27)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteUnitDataRecord](../symbols/0058EFD0.md) → `reads` → [UnitDef + 0xCC enableTurn](../structs/UnitDef.md#field-cc)。通常セーブへ UnitDef.enableTurn を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L73-L95) · `MEM-UNIT-SERIALIZE-CC`
 
 <a id="field-d0"></a>
 ## 0xD0 leaveTurn
@@ -281,7 +297,7 @@ DAT の unit タグ（個体キーを最初の + で切ったもの。例 a030+5
 - 出典 [F§59](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-59)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L28)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteUnitDataRecord](../symbols/0058EFD0.md) → `reads` → [UnitDef + 0xD0 leaveTurn](../structs/UnitDef.md#field-d0)。通常セーブへ UnitDef.leaveTurn を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L73-L100) · `MEM-UNIT-SERIALIZE-D0`
 
 <a id="field-d4"></a>
 ## 0xD4 members
@@ -294,7 +310,7 @@ DAT の unit タグ（個体キーを最初の + で切ったもの。例 a030+5
 - 出典 [F§25.2](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-25)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L29)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteUnitDataRecord](../symbols/0058EFD0.md) → `reads` → [UnitDef + 0xD4 members](../structs/UnitDef.md#field-d4)。通常セーブへ UnitDef.members を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L73-L101) · `MEM-UNIT-SERIALIZE-D4`
 
 <a id="field-e4"></a>
 ## 0xE4 sortKey
@@ -307,7 +323,8 @@ DAT の unit タグ（個体キーを最初の + で切ったもの。例 a030+5
 - 出典 [F§58](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-58)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L30)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteUnitDataRecord](../symbols/0058EFD0.md) → `reads` → [UnitDef + 0xE4 sortKey](../structs/UnitDef.md#field-e4)。通常セーブへ UnitDef.sortKey を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L73-L102) · `MEM-UNIT-SERIALIZE-E4`
+- [UnitDef_SetRoaming](../symbols/00460E90.md) → `writes` → [UnitDef + 0xE4 sortKey](../structs/UnitDef.md#field-e4)。放浪化で当該 UnitDef フィールドを 24 に初期化する。隊長印 +0x78 の意味は後の訂正に従う。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L885-L886) · `MEM-ROAM-RESET-E4`
 
 <a id="field-e8"></a>
 ## 0xE8 isFront
@@ -320,7 +337,7 @@ DAT の unit タグ（個体キーを最初の + で切ったもの。例 a030+5
 - 出典 [F§70.3](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-70)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L31)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteUnitDataRecord](../symbols/0058EFD0.md) → `reads` → [UnitDef + 0xE8 isFront](../structs/UnitDef.md#field-e8)。通常セーブへ UnitDef.isFront を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L73-L103) · `MEM-UNIT-SERIALIZE-E8`
 
 <a id="field-ec"></a>
 ## 0xEC skills
@@ -333,7 +350,7 @@ DAT の unit タグ（個体キーを最初の + で切ったもの。例 a030+5
 - 出典 [F§24](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-24)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L8)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteUnitDataRecord](../symbols/0058EFD0.md) → `reads` → [UnitDef + 0xEC skills](../structs/UnitDef.md#field-ec)。通常セーブへ UnitDef.skills を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L73-L104) · `MEM-UNIT-SERIALIZE-EC`
 
 <a id="field-fc"></a>
 ## 0xFC skillsBack
@@ -346,7 +363,7 @@ DAT の unit タグ（個体キーを最初の + で切ったもの。例 a030+5
 - 出典 [F§24.2](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-24)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L32)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteUnitDataRecord](../symbols/0058EFD0.md) → `reads` → [UnitDef + 0xFC skillsBack](../structs/UnitDef.md#field-fc)。通常セーブへ UnitDef.skillsBack を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L73-L105) · `MEM-UNIT-SERIALIZE-FC`
 
 <a id="field-10c"></a>
 ## 0x10C skillsFront
@@ -359,7 +376,7 @@ DAT の unit タグ（個体キーを最初の + で切ったもの。例 a030+5
 - 出典 [F§24.2](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-24)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L33)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteUnitDataRecord](../symbols/0058EFD0.md) → `reads` → [UnitDef + 0x10C skillsFront](../structs/UnitDef.md#field-10c)。通常セーブへ UnitDef.skillsFront を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L73-L106) · `MEM-UNIT-SERIALIZE-10C`
 
 <a id="field-11c"></a>
 ## 0x11C items
@@ -372,7 +389,7 @@ DAT の unit タグ（個体キーを最初の + で切ったもの。例 a030+5
 - 出典 [F§79.5](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-79)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L34)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteUnitDataRecord](../symbols/0058EFD0.md) → `reads` → [UnitDef + 0x11C items](../structs/UnitDef.md#field-11c)。通常セーブへ UnitDef.items を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L73-L110) · `MEM-UNIT-SERIALIZE-11C`
 
 <a id="field-130"></a>
 ## 0x130 map130
@@ -385,7 +402,7 @@ DAT の unit タグ（個体キーを最初の + で切ったもの。例 a030+5
 - 本文リンク未解決　S1101§4
 - [元の辞書行](../../structs.tsv#L35)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteUnitDataRecord](../symbols/0058EFD0.md) → `reads` → [UnitDef + 0x130 map130](../structs/UnitDef.md#field-130)。通常セーブへ UnitDef.map130 を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L73-L107) · `MEM-UNIT-SERIALIZE-130`
 
 <a id="field-13c"></a>
 ## 0x13C movetype
@@ -398,7 +415,7 @@ DAT の unit タグ（個体キーを最初の + で切ったもの。例 a030+5
 - 出典 [F§24.4](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-24)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L36)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteUnitDataRecord](../symbols/0058EFD0.md) → `reads` → [UnitDef + 0x13C movetype](../structs/UnitDef.md#field-13c)。通常セーブへ UnitDef.movetype を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L73-L112) · `MEM-UNIT-SERIALIZE-13C`
 
 <a id="field-158"></a>
 ## 0x158 friendSet
@@ -412,7 +429,9 @@ friend 集合（std::set 本体。先頭ノード +0x15C、件数 +0x160）。�
 - 本文リンク未解決　S1101§4
 - [元の辞書行](../../structs.tsv#L9)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteUnitDataRecord](../symbols/0058EFD0.md) → `reads` → [UnitDef + 0x158 friendSet](../structs/UnitDef.md#field-158)。通常セーブへ UnitDef.friendSet を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L73-L111) · `MEM-UNIT-SERIALIZE-158`
+- [UnitDef_GetFriendSet](../symbols/00586320.md) → `reads` → [UnitDef + 0x158 friendSet](../structs/UnitDef.md#field-158)。非空なら保持済み friend 集合を複写して返す。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L982-L986) · `MEM-FRIEND-READ-158`
+- [UnitDef_GetFriendSet](../symbols/00586320.md) → `writes` → [UnitDef + 0x158 friendSet](../structs/UnitDef.md#field-158)。friend 集合が空なら friend / friend_ex をもとに中身を再生成する。実機での乱数位置は未確認。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L982-L991) · `MEM-FRIEND-WRITE-158`
 
 <a id="field-160"></a>
 ## 0x160 friendSetSize
@@ -425,7 +444,7 @@ friend 集合の件数
 - 出典 [F§30](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-30)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L10)
 
-読み手・書き手の個別採録は未実施です。
+- [UnitDef_GetFriendSet](../symbols/00586320.md) → `reads` → [UnitDef + 0x160 friendSetSize](../structs/UnitDef.md#field-160)。friend 集合の件数が非ゼロなら既存集合を複写して返し、空なら再生成する。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L982-L986) · `MEM-FRIEND-SIZE-160`
 
 <a id="field-168"></a>
 ## 0x168 stats
@@ -440,7 +459,7 @@ friend 集合の件数
 - 本文リンク未解決　S1101§4
 - [元の辞書行](../../structs.tsv#L11)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteUnitDataRecord](../symbols/0058EFD0.md) → `reads` → [UnitDef + 0x168 stats](../structs/UnitDef.md#field-168)。通常セーブへ UnitDef.stats を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L73-L113) · `MEM-UNIT-SERIALIZE-168`
 
 <a id="field-1a4"></a>
 ## 0x1A4 ctx

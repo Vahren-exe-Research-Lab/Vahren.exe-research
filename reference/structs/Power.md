@@ -16,7 +16,7 @@
 - 出典 [F§58](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-58)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L59)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WritePowerGroupRecord](../symbols/00596AA0.md) → `reads` → [Power + 0x00 name](../structs/Power.md#field-0)。通常セーブへ Power.name を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L142-L147) · `MEM-POWER-SERIALIZE-0`
 
 <a id="field-1c"></a>
 ## 0x1C isActive
@@ -29,7 +29,7 @@
 - 出典 [F§58](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-58)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L60)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WritePowerGroupRecord](../symbols/00596AA0.md) → `reads` → [Power + 0x1C isActive](../structs/Power.md#field-1c)。通常セーブへ Power.isActive を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L142-L148) · `MEM-POWER-SERIALIZE-1C`
 
 <a id="field-1d"></a>
 ## 0x1D isPlayer
@@ -42,7 +42,7 @@
 - 出典 [C(§93)](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-93)。Claude解析記録へのC(§...)という明示的な引用。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L57)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WritePowerGroupRecord](../symbols/00596AA0.md) → `reads` → [Power + 0x1D isPlayer](../structs/Power.md#field-1d)。通常セーブへ Power.isPlayer を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L142-L149) · `MEM-POWER-SERIALIZE-1D`
 
 <a id="field-20"></a>
 ## 0x20 personality
@@ -55,7 +55,7 @@
 - 出典 [F§66](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-66)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L61)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WritePowerGroupRecord](../symbols/00596AA0.md) → `reads` → [Power + 0x20 personality](../structs/Power.md#field-20)。通常セーブへ Power.personality を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L142-L153) · `MEM-POWER-SERIALIZE-20`
 
 <a id="field-24"></a>
 ## 0x24 master
@@ -69,7 +69,7 @@
 - 本文リンク未解決　S1101§6
 - [元の辞書行](../../structs.tsv#L58)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WritePowerGroupRecord](../symbols/00596AA0.md) → `reads` → [Power + 0x24 master](../structs/Power.md#field-24)。通常セーブへ Power.master を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L142-L151) · `MEM-POWER-SERIALIZE-24`
 
 <a id="field-40"></a>
 ## 0x40 str40
@@ -83,7 +83,7 @@
 - 本文リンク未解決　S1101§6
 - [元の辞書行](../../structs.tsv#L62)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WritePowerGroupRecord](../symbols/00596AA0.md) → `reads` → [Power + 0x40 str40](../structs/Power.md#field-40)。通常セーブへ Power.str40 を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （推定を含む既存静的記述（意味は未確定。今回の原作再検証なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L142-L152) · `MEM-POWER-SERIALIZE-40`
 
 <a id="field-5c"></a>
 ## 0x5C money
@@ -96,7 +96,7 @@
 - 出典 [F§58](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-58)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L63)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WritePowerGroupRecord](../symbols/00596AA0.md) → `reads` → [Power + 0x5C money](../structs/Power.md#field-5c)。通常セーブへ Power.money を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L142-L150) · `MEM-POWER-SERIALIZE-5C`
 
 <a id="field-60"></a>
 ## 0x60 turn60
@@ -109,7 +109,7 @@
 - 出典 [F§62.1](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-62)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L64)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WritePowerGroupRecord](../symbols/00596AA0.md) → `reads` → [Power + 0x60 turn60](../structs/Power.md#field-60)。通常セーブへ Power.turn60 を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L142-L154) · `MEM-POWER-SERIALIZE-60`
 
 <a id="field-64"></a>
 ## 0x64 territory
@@ -122,7 +122,7 @@
 - 出典 [F§58](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-58)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L65)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WritePowerGroupRecord](../symbols/00596AA0.md) → `reads` → [Power + 0x64 territory](../structs/Power.md#field-64)。通常セーブへ Power.territory を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L142-L156) · `MEM-POWER-SERIALIZE-64`
 
 <a id="field-90"></a>
 ## 0x90 merce
@@ -135,7 +135,7 @@
 - 出典 [F§58](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-58)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L66)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WritePowerGroupRecord](../symbols/00596AA0.md) → `reads` → [Power + 0x90 merce](../structs/Power.md#field-90)。通常セーブへ Power.merce を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L142-L157) · `MEM-POWER-SERIALIZE-90`
 
 <a id="field-a0"></a>
 ## 0xA0 staff
@@ -148,7 +148,7 @@ staff
 - 出典 [F§58](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-58)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L67)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WritePowerGroupRecord](../symbols/00596AA0.md) → `reads` → [Power + 0xA0 staff](../structs/Power.md#field-a0)。通常セーブへ Power.staff を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L142-L158) · `MEM-POWER-SERIALIZE-A0`
 
 <a id="field-c0"></a>
 ## 0xC0 home
@@ -161,7 +161,7 @@ home の Spot 名（空なら DAT の home を使う。セーブの札 home_spot
 - 出典 [F§66](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-66)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L68)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WritePowerGroupRecord](../symbols/00596AA0.md) → `reads` → [Power + 0xC0 home](../structs/Power.md#field-c0)。通常セーブへ Power.home を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L142-L164) · `MEM-POWER-SERIALIZE-C0`
 
 <a id="field-d0"></a>
 ## 0xD0 fix
@@ -174,7 +174,7 @@ fix（on/home/hold/warlike → 1〜4、他 0）
 - 出典 [F§58](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-58)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L69)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WritePowerGroupRecord](../symbols/00596AA0.md) → `reads` → [Power + 0xD0 fix](../structs/Power.md#field-d0)。通常セーブへ Power.fix を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L142-L160) · `MEM-POWER-SERIALIZE-D0`
 
 <a id="field-d4"></a>
 ## 0xD4 trainingAverage
@@ -187,7 +187,7 @@ training_average（セーブの札 train_max）
 - 出典 [F§45](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-45)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L70)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WritePowerGroupRecord](../symbols/00596AA0.md) → `reads` → [Power + 0xD4 trainingAverage](../structs/Power.md#field-d4)。通常セーブへ Power.trainingAverage を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L142-L161) · `MEM-POWER-SERIALIZE-D4`
 
 <a id="field-d8"></a>
 ## 0xD8 trainingUp
@@ -200,7 +200,8 @@ training_up（セーブの札 train_up）
 - 出典 [F§45](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-45)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L71)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WritePowerGroupRecord](../symbols/00596AA0.md) → `reads` → [Power + 0xD8 trainingUp](../structs/Power.md#field-d8)。通常セーブへ Power.trainingUp を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L142-L162) · `MEM-POWER-SERIALIZE-D8`
+- [Training_GetEffectiveUpCount](../symbols/00595320.md) → `reads` → [Power + 0xD8 trainingUp](../structs/Power.md#field-d8)。訓練基礎回数として Power+0xD8 を読み、ゼロならシナリオ値へフォールバックする。実ゲームの訓練結果は未照合。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_UNIT_EXP_SUMMON.md?plain=1#L34-L40) · `MEM-TRAINING-UP-D8`
 
 <a id="field-dc"></a>
 ## 0xDC baseLevel
@@ -213,7 +214,7 @@ base_level。0x80000008 ならロード時 @scenario の base_level で補う
 - 出典 [F§45](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-45)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L72)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WritePowerGroupRecord](../symbols/00596AA0.md) → `reads` → [Power + 0xDC baseLevel](../structs/Power.md#field-dc)。通常セーブへ Power.baseLevel を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L142-L163) · `MEM-POWER-SERIALIZE-DC`
 
 <a id="field-e0"></a>
 ## 0xE0 ctx

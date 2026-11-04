@@ -13,4 +13,7 @@
 - [research/recovered/b_batch3/T028_BATTLE_MODE_CONFIG_PRODUCER_NATIVE_20261028_00H.md 行 9](../../research/recovered/b_batch3/T028_BATTLE_MODE_CONFIG_PRODUCER_NATIVE_20261028_00H.md?plain=1#L9-L9) — - 0x565BCE PUSH0x628E50 原作文字列 '@config@enemy_battle'→0x565BD0 CALL0x402800→0x565BD5 CALL0x428010。0x565BE2 設定欠落時 global byte[0x683749]=0、指定時0x565BF0 byte=([entry
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+- [research/recovered/c_topics/T027_MERCHANT_PRICE_PURCHASE.md 行 203](../../research/recovered/c_topics/T027_MERCHANT_PRICE_PURCHASE.md?plain=1#L203-L203) — [CONFIRMED-SAVED-NATIVE / CROSSWALK] 旧EXE ChoiceWnd vm16 0x41EBE0のcommitはpending index `+0x168` がsentinel 0x80000008ならcommitせず、非sentinel時にも0x41EC59のhit-test戻値が0
+  制約・訂正　Historical source/static-native and synthetic arithmetic claims only; linked records not acquired; no new runtime validation or Golden/READY promotion
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

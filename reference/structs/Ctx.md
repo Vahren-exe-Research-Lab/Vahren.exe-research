@@ -30,7 +30,7 @@
 - 本文リンク未解決　S1101§2
 - [元の辞書行](../../structs.tsv#L52)
 
-読み手・書き手の個別採録は未実施です。
+- [UnitDef_GetField](../symbols/00585AD0.md) → `reads` → [Ctx + 0x34 scenarioName](../structs/Ctx.md#field-34)。key@シナリオ名の優先キーを組み立てるため文脈のシナリオ名を読む。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L521-L526) · `MEM-DEF-GET-SCENARIO-34`
 
 <a id="field-50"></a>
 ## 0x50 playerUnit
@@ -43,7 +43,7 @@
 - 出典 [F§79.2](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-79)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L53)
 
-読み手・書き手の個別採録は未実施です。
+- [Power_Personality](../symbols/00593890.md) → `reads` → [Ctx + 0x50 playerUnit](../structs/Ctx.md#field-50)。性格が3になった際の補正条件としてプレイヤー本人・勢力の有無を確認する。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1732-L1739) · `MEM-PERSONALITY-CONTEXT-50`
 
 <a id="field-54"></a>
 ## 0x54 playerPower
@@ -56,7 +56,7 @@
 - 出典 [F§79.2](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-79)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L54)
 
-読み手・書き手の個別採録は未実施です。
+- [Power_Personality](../symbols/00593890.md) → `reads` → [Ctx + 0x54 playerPower](../structs/Ctx.md#field-54)。性格が3になった際の補正条件としてプレイヤー本人・勢力の有無を確認する。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1732-L1739) · `MEM-PERSONALITY-CONTEXT-54`
 
 <a id="field-2dc"></a>
 ## 0x2DC powers
@@ -147,6 +147,7 @@ unitDefs の件数
 - 出典 [F§26](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-26)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L50)
 
-読み手・書き手の個別採録は未実施です。
+- [UnitDef_SetRoaming](../symbols/00460E90.md) → `writes` → [Ctx + 0x32C roamingSet](../structs/Ctx.md#field-32c)。放浪化で集合へ追加する。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L878-L890) · `MEM-ROAM-SET-CONTEXT-32C`
+- [UnitDef_ClearRoaming](../symbols/00460F10.md) → `writes` → [Ctx + 0x32C roamingSet](../structs/Ctx.md#field-32c)。放浪解除で集合から外す。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L878-L890) · `MEM-ROAM-CLEAR-CONTEXT-32C`
 
 [事典の入口](../README.md)

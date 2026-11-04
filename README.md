@@ -213,3 +213,5 @@ python -B knowledge\tools\research_index.py --check
 **Historical E evidence search (2026-11-02):** See [E 193-ID provenance and correction index](research/intake/E/INDEX.md) and [shared intake/status ledger](research/intake/README.md). These are PUBLISHED_INTAKE / VERIFY by default, not 193 original native facts. Three independently reviewed synthetic/source-policy corrections are cross-linked in [battle REF](REF_BATTLE_TAKEOVER.md) and [DAT REF](REF_DAT_BEHAVIOR.md). Original same-battle G0/G1/G2, external G4 commit and actual strict Golden remain unproven.
 
 **登録関数の呼び出し関係と追加回収（2026-11-05）:** [関数・メモリの参照入口](reference/README.md)から、V9静的索引の登録関数間2,373 CALL箇所・872組を双方向に参照できる。[B追加研究41件](research/recovered/b_batch3/README.md)も本文・元の確度・訂正・出典ハッシュを保存した。過去の静的索引や研究者の主張を新たな実機確認には格上げしない。
+
+**メモリの読み書き関係（2026-11-05）:** [関数・メモリ事典](reference/README.md)で、構造体＋オフセットから読み手・書き手の関数と根拠へ進める。[採録範囲と曖昧な主張の扱い](research/recovered/MEMORY_RELATION_REVIEW.md)を併記し、保存ファイルへの出力とメモリへの書込みを区別した。[研究チャットの保存先照合](research/recovered/SCHEDULE_CHAT_CHECK.md)も参照。

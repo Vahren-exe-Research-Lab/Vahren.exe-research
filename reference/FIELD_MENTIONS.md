@@ -204,8 +204,9 @@
 | engine + 0x1EF175 | 1 | [1](fields/owner-engine-ed9f6f250686-001.md#field-1ef175) |
 | engine + 0x1EF4C1 | 1 | [1](fields/owner-engine-ed9f6f250686-001.md#field-1ef4c1) |
 | engine + 0x1EF6B4 | 3 | [1](fields/owner-engine-ed9f6f250686-001.md#field-1ef6b4) |
-| entry + 0x1C | 2 | [1](fields/owner-entry-923fe53966c6-001.md#field-1c) |
+| entry + 0x1C | 3 | [1](fields/owner-entry-923fe53966c6-001.md#field-1c) |
 | F0が + 0x24 | 1 | [1](fields/owner-F0%25E3%2581%258C-35314356f157-001.md#field-24) |
+| field + 0x1C | 1 | [1](fields/owner-field-c0d2856b74d0-001.md#field-1c) |
 | fields + 0xC | 1 | [1](fields/owner-fields-bfe5d697162d-001.md#field-c) |
 | find + 0x1867E | 1 | [1](fields/owner-find-e6640de835ad-001.md#field-1867e) |
 | first + 0xA0C | 1 | [1](fields/owner-first-a7937b64b8ca-001.md#field-a0c) |
