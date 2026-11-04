@@ -1465,3 +1465,27 @@ Breakdown of the **30 unmatched source file rows**, using previously recorded ga
 - Authorized-PC connection-status inquiry failed `Session terminated`. No original file, `MASTER_LEDGER.md`, T018 corpus, T019 wiki original, legal G0–G2 primary witness, or run-specific EXE/SAVE/MAP was read/modified. No PC source SHA-256 or original-game Golden verification occurred. Prior denials/protected-range/HOLD remain unchanged.
 
 **Next independent cursor:** source-SHA/byte-length/EOF reconciliation for the **nine small-delta E already-published files only if the legitimate authorized PC connection becomes available**; **9/9 branch-only locator exceptions were already matched to current INDEX references** and should not be rescanned without changed sources. Separately assess never-refused T018/T019 owner-corpus **metadata/errata** and new independent primary evidence if available, without reopening refused content. Recheck PR head and locator blob before repeating this metadata comparison. For original G0–G2, require same-run lawful UI, immediately preceding SAVE bytes/input, loaded MAP, three-side and ordered Unit/Troop independent observations. **New PUBLISHED_INTAKE original IDs 0; CURATED 0; original Golden PASS 0; strict MATCH 0; new formal READY 0; new formal MASTER delta 0.** No `develop`, REF/dictionaries, other owner, original game or schedule changes.
+
+## E 2026-11-04 21H JST — nine published-script EOF SHA reconciliation
+
+**Evidence:** E/T018–T020, OFFLINE_GITHUB_DERIVATIVE_CHECK / STATIC_METADATA / VERIFY / NOT_CURATED; no new research ID. Private Draft PR #17 pinned HEAD before audit: 392a66924a82b45167d49abf0d3507b3a93892c8. Historical original-PC locator: research/intake/E/E-T020-REPRO-ASSET-RECEIPTS-20261102.tsv (blob 1be1396c04decacee425e15ab64877ad6175f243).
+
+Only the nine already-published E-owned, non-HOLD Python files on this owner branch were fetched and compared against the historical PC SHA-256 values in that locator (source file and bytes were NOT read again on the authorized PC). A separately self-tested SHA-256 implementation over UTF-8 content confirms that adding one or two trailing LF bytes to the GitHub text gives **9/9 matching recorded original-PC SHA-256 digests and recorded byte lengths**. GitHub files are *not* themselves source-byte exact. This is cryptographic consistency against earlier hashes, **not** a fresh PC original-byte verification.
+
+| Existing filename in research/intake/E/repro/ | GitHub Git blob SHA-1 | GitHub bytes → recorded original bytes | Required suffix / hash result |
+| --- | --- | --- | --- |
+| t020_battle_return_commit_gate_20261021_2147.py | ac3d3f8197243716e29502d17069b76936ea2073 | 2840 → 2841 | +1 LF MATCH |
+| t020_cnb02_byte_binding_20261022_0046.py | fbd04ec8ad4dfbfb6fc7ebfc7d1e3a67d5d4450c | 5329 → 5330 | +1 LF MATCH |
+| t020_cnb02_g2_active_window_review_20261025_17H.py | b9e70e1186e1ac2c0d124a7d01a096a69b01798c | 5258 → 5260 | +2 LF MATCH |
+| t020_cnb02_g2_roster_role_coverage_overlay_20261026_09H.py | bc8316fcb14e770160f8ce010de31342713d4078 | 4302 → 4303 | +1 LF MATCH (previously known normalized) |
+| t020_cnb02_g2_roster_shape_diagnostic_20261026_08H.py | b55131e6372bad02924a55f1a639d9989dfc964d | 4873 → 4874 | +1 LF MATCH |
+| t020_cnb02_mode2_preactive_phase_review_20261025_18H.py | a45446d96ea4b3e871532e803fc9811328639b44 | 3268 → 3269 | +1 LF MATCH |
+| t020_cnb02_watch1_observation_bracket_gate_20261025_20H.py | 5960fce7645a5c3fe3810e3c045dfc17c00d2443 | 4693 → 4695 | +2 LF MATCH |
+| t020_e_native_cnb02_join_preflight_20261029_09H.py | 70948aaa7f33b210177f21e6c570bd533c276c86 | 10035 → 10037 | +2 LF MATCH |
+| t020_e_native_runner_evidence_boundary_20261029_08H.py | a40a08e5a10219dff929225d13ad8e35df1fc8c9 | 6380 → 6381 | +1 LF MATCH |
+
+**Supersedes only the nine-file unresolved-EOF portion of the preceding 20H checkpoint:** six source-hash matches with +1 LF and three with +2 LF, based on unchanged historical PC hash metadata. Do not modify stored original source_sha256, infer a live PC rehash, or restore altered GitHub file bytes. The four separately sanitized source variations, 30 missing/HOLD/gitignored locator rows, and 296 merely size-equal matches are unchanged; refused content never fetched.
+
+Authorized research-PC normal connection returned Session terminated on 2026-11-04 21H JST. No alternative PC route was attempted; no native/game/synthetic rerun, current MASTER_LEDGER, T018 source corpus, T019 contradictions wiki or same-run Golden observed. New study IDs 0; new source files 0; original Golden PASS 0; strict MATCH 0; formal READY additions 0; formal MASTER delta 0; CURATED 0.
+
+**Next independent safe cursor:** T018 tests/T018_GOLDEN_CORPUS.md and T019 wiki/T019_CONTRADICTIONS.md safe owner metadata/errata, conditional on provenance/HOLD/dedup preflight and legitimate PC availability. In the meantime review only already-permitted sanitized GitHub evidence; do not retry source holds. Native G0 UI + immediate G1 SAVE/input + actual loaded MAP/three-side ordered G2 remain unqualified. Do not repeat this nine-file comparison unless the E receipt blob or owner Git blobs change.
