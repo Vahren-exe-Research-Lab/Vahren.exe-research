@@ -1,0 +1,2 @@
+source_path	operation	replacements	source_sha256	destination_sha256	proof
+exe/T006_TARGET_DISPATCH.md	NONE_EXACT_BYTE_COPY	0	70d8b5d4ecda0362d21aba4dc9c2c203965f16eb9a0bb6e712ae8069901bdca9	70d8b5d4ecda0362d21aba4dc9c2c203965f16eb9a0bb6e712ae8069901bdca9	Full byte equality; no token substitution; no derivative; UTF-8 offsets/prefix/suffix proofs not applicable

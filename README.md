@@ -54,7 +54,7 @@ python -B tools/reference.py callees 0x0055BC60 --json
 | 戦闘AI・士気 | [REF_BATTLE_AI_MORALE.md](REF_BATTLE_AI_MORALE.md) |
 | 戦闘乗っ取り・外部結果統合 | [REF_BATTLE_TAKEOVER.md](REF_BATTLE_TAKEOVER.md) |
 | DAT・画面部品・詳細パネル | [REF_DAT_BEHAVIOR.md](REF_DAT_BEHAVIOR.md)、[REF_UI_SYSTEM.md](REF_UI_SYSTEM.md) |
-| VM・context・時計 | [REF_SCRIPT_VM_CONTEXT.md](REF_SCRIPT_VM_CONTEXT.md) |
+| VM・context・時計 | [REF_SCRIPT_VM_CONTEXT.md](REF_SCRIPT_VM_CONTEXT.md)、[主要本文と旧説明の訂正](research/recovered/vm_dispatch_topic/README.md) |
 | セーブの処理・通常セーブの形式 | [REF_SAVE_PERSISTENCE.md](REF_SAVE_PERSISTENCE.md)、[REF_SAVE_FORMAT.md](REF_SAVE_FORMAT.md) |
 | ランダムイベント | [REF_RANDOM_EVENTS.md](REF_RANDOM_EVENTS.md) |
 | RTSシナリオ | [REF_RTS_SCENARIO.md](REF_RTS_SCENARIO.md) |

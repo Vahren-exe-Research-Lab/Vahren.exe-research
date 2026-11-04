@@ -2888,4 +2888,46 @@
 - [迫真戦記・研究A｜作業報告](../research/recovered/chat_a_history/CHAT_A_20261014_SESSION_TERMINATED_OPERATIONAL.md?plain=1#L1-L1) — `research/recovered/chat_a_history/CHAT_A_20261014_SESSION_TERMINATED_OPERATIONAL.md`
   回収状態 CHAT_HISTORY_EXACT_UTF8_OPERATIONAL。以前の収録状況 EARLIER_FINAL_NOT_CAPTURED; NO_SAME_SHA_BASELINE_ALIAS。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L995-L995)。制約・訂正 Historical claims; PC save/readback not newly proven; no linked evidence read; no new READY/DONE/Golden/runtime credit
 
+- [T006 target runtime command dispatch](../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L1-L1) — `research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 UNREVIEWED_CURRENT_PATH; CATALOG_PATH_PRESENT; catalog SHA and bytes match。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L996-L996)。制約・訂正 Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
+- [迫真戦記・研究C｜防衛研究と城壁周期の新しい関係を確認](../research/recovered/chat_c_history/CHAT_C_20261015_2124_FINAL.md?plain=1#L1-L1) — `research/recovered/chat_c_history/CHAT_C_20261015_2124_FINAL.md`
+  回収状態 CHAT_HISTORY_EXACT_UTF8_RESEARCH。以前の収録状況 EARLIER_FINAL_NOT_CAPTURED; NO_SAME_SHA_BASELINE_ALIAS。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L997-L997)。制約・訂正 Historical authored claim only; no original PC payload or linked evidence read; no new READY/DONE/Golden/native validation; chat SHA is selected UTF8 text only
+
+- [迫真戦記・研究C｜商人・教育イベントの実行順序を追加解析](../research/recovered/chat_c_history/CHAT_C_20261015_2240_FINAL.md?plain=1#L1-L1) — `research/recovered/chat_c_history/CHAT_C_20261015_2240_FINAL.md`
+  回収状態 CHAT_HISTORY_EXACT_UTF8_RESEARCH。以前の収録状況 EARLIER_FINAL_NOT_CAPTURED; NO_SAME_SHA_BASELINE_ALIAS。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L998-L998)。制約・訂正 Historical authored claim only; no original PC payload or linked evidence read; no new READY/DONE/Golden/native validation; chat SHA is selected UTF8 text only
+
+- [迫真戦記・研究C｜農業コマンドの使用回数と消費条件を解析・保存完了](../research/recovered/chat_c_history/CHAT_C_20261015_2328_FINAL.md?plain=1#L1-L1) — `research/recovered/chat_c_history/CHAT_C_20261015_2328_FINAL.md`
+  回収状態 CHAT_HISTORY_EXACT_UTF8_RESEARCH。以前の収録状況 EARLIER_FINAL_NOT_CAPTURED; NO_SAME_SHA_BASELINE_ALIAS。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L999-L999)。制約・訂正 Historical authored claim only; no original PC payload or linked evidence read; no new READY/DONE/Golden/native validation; chat SHA is selected UTF8 text only
+
+- [迫真戦記・研究C｜MZ関連イベントの実行順序を追加解析](../research/recovered/chat_c_history/CHAT_C_20261016_0023_FINAL.md?plain=1#L1-L1) — `research/recovered/chat_c_history/CHAT_C_20261016_0023_FINAL.md`
+  回収状態 CHAT_HISTORY_EXACT_UTF8_RESEARCH。以前の収録状況 EARLIER_FINAL_NOT_CAPTURED; NO_SAME_SHA_BASELINE_ALIAS。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1000-L1000)。制約・訂正 Historical authored claim only; no original PC payload or linked evidence read; no new READY/DONE/Golden/native validation; chat SHA is selected UTF8 text only
+
+- [迫真戦記・研究C｜Worldイベントの勢力情報と外交処理を追加解析](../research/recovered/chat_c_history/CHAT_C_20261016_0122_FINAL.md?plain=1#L1-L1) — `research/recovered/chat_c_history/CHAT_C_20261016_0122_FINAL.md`
+  回収状態 CHAT_HISTORY_EXACT_UTF8_RESEARCH。以前の収録状況 EARLIER_FINAL_NOT_CAPTURED; NO_SAME_SHA_BASELINE_ALIAS。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1001-L1001)。制約・訂正 Historical authored claim only; no original PC payload or linked evidence read; no new READY/DONE/Golden/native validation; chat SHA is selected UTF8 text only
+
+- [迫真戦記・研究C｜Local接続障害・再開記録](../research/recovered/chat_c_history/CHAT_C_20261016_0220_OPERATIONAL.md?plain=1#L1-L1) — `research/recovered/chat_c_history/CHAT_C_20261016_0220_OPERATIONAL.md`
+  回収状態 CHAT_HISTORY_EXACT_UTF8_OPERATIONAL。以前の収録状況 EARLIER_FINAL_NOT_CAPTURED; NO_SAME_SHA_BASELINE_ALIAS。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1002-L1002)。制約・訂正 Historical authored claim only; no original PC payload or linked evidence read; no new READY/DONE/Golden/native validation; chat SHA is selected UTF8 text only
+
+- [迫真戦記・研究C｜Local接続障害が継続](../research/recovered/chat_c_history/CHAT_C_20261016_0322_OPERATIONAL.md?plain=1#L1-L1) — `research/recovered/chat_c_history/CHAT_C_20261016_0322_OPERATIONAL.md`
+  回収状態 CHAT_HISTORY_EXACT_UTF8_OPERATIONAL。以前の収録状況 EARLIER_FINAL_NOT_CAPTURED; NO_SAME_SHA_BASELINE_ALIAS。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1003-L1003)。制約・訂正 Historical authored claim only; no original PC payload or linked evidence read; no new READY/DONE/Golden/native validation; chat SHA is selected UTF8 text only
+
+- [迫真戦記・研究D｜2026年10月15日・20時台](../research/recovered/chat_d_history/CHAT_D_20261015_20H_FINAL.md?plain=1#L1-L1) — `research/recovered/chat_d_history/CHAT_D_20261015_20H_FINAL.md`
+  回収状態 CHAT_HISTORY_EXACT_UTF8_RESEARCH。以前の収録状況 EARLIER_FINAL_NOT_CAPTURED。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1004-L1004)。制約・訂正 KNOWN ERRONEOUS historical interpretation; do not use as current fact; later correction withheld; current REF precedence; Historical claims only; PC save/readback not newly proven; current REF precedence; no linked evidence acquired; no new READY/DONE/Golden/native/runtime validation credit
+
+- [迫真戦記・研究D｜2026年10月16日・0時台](../research/recovered/chat_d_history/CHAT_D_20261016_00H_FINAL.md?plain=1#L1-L1) — `research/recovered/chat_d_history/CHAT_D_20261016_00H_FINAL.md`
+  回収状態 CHAT_HISTORY_EXACT_UTF8_RESEARCH。以前の収録状況 EARLIER_FINAL_NOT_CAPTURED。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1005-L1005)。制約・訂正 Historical claims only; PC save/readback not newly proven; current REF precedence; no linked evidence acquired; no new READY/DONE/Golden/native/runtime validation credit
+
+- [迫真戦記・研究D｜2026年10月16日・01時台](../research/recovered/chat_d_history/CHAT_D_20261016_01H_FINAL.md?plain=1#L1-L1) — `research/recovered/chat_d_history/CHAT_D_20261016_01H_FINAL.md`
+  回収状態 CHAT_HISTORY_EXACT_UTF8_RESEARCH。以前の収録状況 EARLIER_FINAL_NOT_CAPTURED。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1006-L1006)。制約・訂正 Historical claims only; PC save/readback not newly proven; current REF precedence; no linked evidence acquired; no new READY/DONE/Golden/native/runtime validation credit
+
+- [迫真戦記・研究D｜2026年10月16日・02時台](../research/recovered/chat_d_history/CHAT_D_20261016_02H_FINAL.md?plain=1#L1-L1) — `research/recovered/chat_d_history/CHAT_D_20261016_02H_FINAL.md`
+  回収状態 CHAT_HISTORY_EXACT_UTF8_OPERATIONAL。以前の収録状況 EARLIER_FINAL_NOT_CAPTURED。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1007-L1007)。制約・訂正 Historical claims only; PC save/readback not newly proven; current REF precedence; no linked evidence acquired; no new READY/DONE/Golden/native/runtime validation credit
+
+- [迫真戦記・研究D｜2026年10月16日・03時台](../research/recovered/chat_d_history/CHAT_D_20261016_03H_FINAL.md?plain=1#L1-L1) — `research/recovered/chat_d_history/CHAT_D_20261016_03H_FINAL.md`
+  回収状態 CHAT_HISTORY_EXACT_UTF8_OPERATIONAL。以前の収録状況 EARLIER_FINAL_NOT_CAPTURED。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1008-L1008)。制約・訂正 Historical claims only; PC save/readback not newly proven; current REF precedence; no linked evidence acquired; no new READY/DONE/Golden/native/runtime validation credit
+
+- [迫真戦記・研究D｜2026年10月16日・04時台](../research/recovered/chat_d_history/CHAT_D_20261016_04H_FINAL.md?plain=1#L1-L1) — `research/recovered/chat_d_history/CHAT_D_20261016_04H_FINAL.md`
+  回収状態 CHAT_HISTORY_EXACT_UTF8_OPERATIONAL。以前の収録状況 EARLIER_FINAL_NOT_CAPTURED。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1009-L1009)。制約・訂正 Historical claims only; PC save/readback not newly proven; current REF precedence; no linked evidence acquired; no new READY/DONE/Golden/native/runtime validation credit
+
 [事典の入口](README.md)

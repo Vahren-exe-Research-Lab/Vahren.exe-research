@@ -1,0 +1,2 @@
+source_path	decision	reviewed_lines_inclusive	dedup_sources	dedup_result	dependency_boundary	privacy
+exe/T006_TARGET_DISPATCH.md	RECOVER_EXACT	1-140;141-260;261-390;391-510;511-640;641-760;761-870;871-976	SOURCE_MANIFEST.tsv;research/recovered/RECOVERY_LEDGER.tsv	No matching source SHA in either metadata file	473 and 491 opaque 0x580280 references only; 681/689/737/746/944 historical refusal/no-retry boundaries; no held substantive payload	Full review plus personal-path/secret-pattern scan found no personal paths or secrets

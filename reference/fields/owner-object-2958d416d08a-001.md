@@ -73,6 +73,12 @@
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 191](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L191-L191) — 2. `u32`（writerは `object+0x88:u8` をzero-extendして4 byteで保存）
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
 
+<a id="field-98"></a>
+## object + 0x98
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 824](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L824-L824) — [CONFIRMED-SAVED-NATIVE / ORDER CONTRAST] A所有`exe/T006_DIALOG_VMETHODS.txt` 0x441DC3..0x441DDB は+0x294非sentinel時にEDI=[object+0x98]→0x4463F0→+0x294=sentinel。Choi
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
 <a id="field-1e8"></a>
 ## object + 0x1E8
 

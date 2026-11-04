@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-3c"></a>
+## offset + 0x3C
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 783](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L783-L783) — [CONFIRMED-SAVED-NATIVE / VTABLE] `exe/T006_UI_RTTI_PROBE.txt` のDialogWnd primary vtable 0x6389FCは、index15/16/17/18 (byte offset +0x3C/+0x40/+0x44/+0x48)が順に0x44
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
 <a id="field-b4"></a>
 ## offset + 0xB4
 

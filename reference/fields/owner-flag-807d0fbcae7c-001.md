@@ -34,6 +34,12 @@
 - [research/recovered/b_batch4/data/T011_B_REENTRY_LOCAL429_RECOVERY_20261021_0510.md 行 5](../../research/recovered/b_batch4/data/T011_B_REENTRY_LOCAL429_RECOVERY_20261021_0510.md?plain=1#L5-L5) — - 許可された独立作業: 添付済オフラインZIP34 entry CRC PASS、manifest-SQLite SHA一致、既保存Ghidra擬似CとCALL関係のみ静的照合。新規研究候補 `B-OFFLINE-20261021-0510-01`（T011 0x582D90 member→0x466F60→0x58
   制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
 
+<a id="field-1eec44"></a>
+## flag + 0x1EEC44
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 115](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L115-L115) — marker!=0では対応frameを破棄しながら外側へunwindする。battle-active flag +0x1EEC44!=0ではunwindせず即Yieldする特殊pathがある。
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
 <a id="field-1eed55"></a>
 ## flag + 0x1EED55
 

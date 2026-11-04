@@ -91,6 +91,12 @@
 - [research/recovered/b_batch3/T028_SPATIAL_GRID_CTOR_FLAG_PROVENANCE_NATIVE_20261026_11H.md 行 11](../../research/recovered/b_batch3/T028_SPATIAL_GRID_CTOR_FLAG_PROVENANCE_NATIVE_20261026_11H.md?plain=1#L11-L11) — - [ORIGINAL ASM] 0x4E4B34 MOV BL,AL; 0x4E4B36 stores the context pointer at manager+0x34; 0x4E4B40 MOV [ESI+0x3C],BL. The chosen mode comes from caller AL, not
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+<a id="field-38"></a>
+## manager + 0x38
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 568](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L568-L568) — - first playbackはplaylist element 0を直接選び、indexを+1してcount到達で0へwrap。stream transition path around 0x4BE250も `manager+0x38` のelementを0x40AFB0で取得→index++→modulo wra
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
 <a id="field-3c"></a>
 ## manager + 0x3C
 
@@ -396,11 +402,5 @@
 
 - [research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md 行 31](../../research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md?plain=1#L31-L31) — - `0x5282C0`では`group+0x1C==0` (`0x5282C5`) と先頭Unit `+0x1FA==0` (`0x5282DA`) が条件。`manager+0x348`のリンク集合で同一グループの既登録を避け、`0x528304→0x5299E0`の後 `0x52830A mov al,1`、`0
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-<a id="field-474"></a>
-## manager + 0x474
-
-- [research/intake/B/B-OFFLINE-20261101-13H-T011-T024-DISTANCE-SORT-MODE-GATE-01.md 行 14](../../research/intake/B/B-OFFLINE-20261101-13H-T011-T024-DISTANCE-SORT-MODE-GATE-01.md?plain=1#L14-L14) — KB_CANDIDATE: VA 0x529DC0,0x52AD00,0x526030,0x569730; calls 0x5296A8/0x529868/0x52AD35/0x529750/0x529921; group+0xC/+0x10, Unit+0x40/+0x48/+0x4C/+0x1867C, manag
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation; canonical B intake already preserves original source SHA and reusable bounded facts; raw original not duplicated
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)
