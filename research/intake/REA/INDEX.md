@@ -1,3 +1,12 @@
+<!-- REA-20261105-05H-OLD-TROOP-DEATH-GWRITE-CROSSWALK -->
+## 2026-11-05 05H | 10/19–10/18 permitted older owner Troop/death/gwrite curation crosswalk (15 EXISTING IDs; 0 new)
+
+**GitHub-only source & curation gap review:** [15 already PUBLISHED owner source IDs, historical file SHA256, native ABI scope, corrections and curator gates](REA_20261105_05H_OLD_TROOP_DEATH_GWRITE_SEMANTIC_CROSSWALK.md), Git blob `ef81825c461af131fdfdb9f72f776571f31e7c82`. Four remaining 10/19 B Troop/death IDs and eleven selected safe older 10/18 A/B IDs. Source digest blobs `7974f39f`, `f922ff0e`, `84b47634`; original report SHA256 values measured historically on the authorized PC, **not** rehashed this run. Private `develop` comparison pinned `c1fcb51eb900f3b4d09cdbc82d0e90dade1b2d67`; `REF_BATTLE_TAKEOVER`/`REF_SAVE_PERSISTENCE`/`symbols.tsv` sampled. Curated duplicate links: `0x527ED0` selection-state symbol (T024), `0x428010/0x428710` and `gread/gwrite` upsert (A/T014). **Unadopted or not independently rechecked**: post-first-`0x575F71` flag and current owner re-read, distinct parent return/epilogue, local store versus indirect UI owner mutation, mode2 after pending UI, Dot virtual EAX branch, global-saved READ-open early return and VM Continue ≠ disk-write success. No assertion all 15 IDs are globally uncurated. No source files reimported or new PR created.
+
+**Status:** original source already `PUBLISHED_INTAKE`; current meaning crosswalk `NOT_CURATED`; new REA IDs/intake **0/0**, newly acquired formal five-method VERIFIED **0**, original Golden PASS / strict MATCH / READY **0/0/0**. GitHub note readback Git blob matched content; original PE/V9/active.lock/QUEUE/PROGRESS **PC UNSYNCED**. Prior denied source/operations remain metadata-only HOLD. Shared `develop`, REF, TSV, original game and other owners **untouched**.
+
+**Next safe chronological cursor:** 10/18 13H–15H existing permitted death registry/detach research IDs not yet semantically crosswalked, then 10/17 legacy permitted reports by ID + VA + meaning + historical source SHA (skip already reviewed and denied/gate-only). Curator alone performs independent native verification/REF adoption. Do not count this review as 15 new discoveries.
+
 <!-- REA-20261105-04H-OLD-T013-T014-CURATOR-CROSSWALK -->
 ## 2026-11-05 04H | 10/20→10/19 older owner T013/T014 semantic curator delta (13 EXISTING IDs, 0 new)
 
