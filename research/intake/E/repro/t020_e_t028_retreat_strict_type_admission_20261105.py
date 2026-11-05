@@ -59,16 +59,33 @@ NEGATIVE_CASES = [
 
 def main():
     document = json.loads(FIXTURE.read_text(encoding="utf-8-sig"))
-    assert document["owner"] == "E"
-    assert document["origin"] == "SYNTHETIC_FAMILIES_NOT_GAMEPLAY"
-    assert document["b_status"] == "VERIFY_NOT_READY"
-    assert document["research_id"] == "E-AUDIT-20261029-21H-T020-T028-RETREAT-NO-DESTINATION-SOURCE-VISIBILITY-01"
-    cases = document["cases"]
-    assert len(cases) == len({c["id"] for c in cases})
+    # Do not use assert for evidence gates: `python -O` removes assert statements.
+    headers = {
+        "owner": "E",
+        "origin": "SYNTHETIC_FAMILIES_NOT_GAMEPLAY",
+        "b_status": "VERIFY_NOT_READY",
+        "research_id": "E-AUDIT-20261029-21H-T020-T028-RETREAT-NO-DESTINATION-SOURCE-VISIBILITY-01",
+    }
+    if type(document) is not dict:
+        raise ValueError("fixture root must be a JSON object")
+    for key, expected in headers.items():
+        if document.get(key) != expected:
+            raise ValueError(f"fixture {key} mismatch")
+    cases = document.get("cases")
+    if type(cases) is not list or not cases:
+        raise ValueError("archived cases must be a non-empty list")
+    seen = set()
     for case in cases:
-        assert classify_strict(case) == case["expected"], case["id"]
-    for case, expected in NEGATIVE_CASES:
-        assert classify_strict(case) == expected, (case, expected)
+        if type(case) is not dict or type(case.get("id")) is not str or not case["id"]:
+            raise ValueError("case must have a nonempty string ID")
+        if case["id"] in seen:
+            raise ValueError(f"duplicate case ID {case['id']}")
+        seen.add(case["id"])
+        if classify_strict(case) != case.get("expected"):
+            raise ValueError(f"case {case['id']} unexpected synthetic result")
+    for index, (case, expected) in enumerate(NEGATIVE_CASES, 1):
+        if classify_strict(case) != expected:
+            raise ValueError(f"negative case {index} failed")
     print(f"E21H STRICT SYNTHETIC: {len(cases)}/{len(cases)} archived + "
           f"{len(NEGATIVE_CASES)}/{len(NEGATIVE_CASES)} boundary tests PASS; "
           "ORIGINAL GAME NOT RUN; GOLDEN 0; READY 0; NOT CURATED")
