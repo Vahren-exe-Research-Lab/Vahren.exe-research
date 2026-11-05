@@ -1,0 +1,9 @@
+# GitHub履歴と変更HEADの残作業監査
+
+2026-11-05 10:02 UTC取得時点、非公開repo・develop `525b37e43f26c7a95c2b3818f83ed9507a33d452` を固定した。全状態のIssue6件・PR54件をmetadataで取得し、各parent/comment接続は全てhasNextPage=false、コメント113件のID/URL/日時を確認した。review submission・inline review threadは0件。本文・コメント内容・diff・blobはこの監査では取得していない。最初の大きなnested queryはMAX_NODE_LIMITで拒否されたためnested review接続だけを20件に減らし、0件とpaginationを再確認した。queryと範囲はCAPTUREに残す。
+
+前回05:27UTCのopen-PR一覧からPR16/17/18のHEADが変わり、既存一覧対象外だったclosed PR5もmetadataで追加確認した。4つの固定HEADのtreeはtruncated=false。research配下1199blob所在のうち現在developと同一383、以前の固定PRcatalogと同一801、比較metadataに同一blobなし15。15は15種類のblobで、研究の新発見数ではなく、INDEX/既存crosswalkの改版・synthetic Python・Bの歴史的報告改版などの次の確認候補である。本文を読んで安全・正しさ・未収録の新知見と確定してはいない。既知whole-held crosswalkは新HEADでも解除しない。
+
+コメント113件のうち、小さい6parent群の10件は[別の限定取得](../github_comments_small1/README.md)で本文review/保存した。残るIssue4/PR16/17/18の103件は内容未review。本文のtime bindingがconnectorにないIssue側6件は、metadata日時と同じ版の本文と厳密に結び付いたとは書かない。本文が保存されたことを一次native証拠やLibrary原報告の取得としない。
+
+Gitblob SHA1の一致はbyte identityだけを示す。原本SHA256・研究ID・semantic採録・privacy版・別名とは分ける。全treeの全ファイルや新しいHEADの全内容を回収済み/未回収と判定した監査ではない。API取得後も研究者のPRが進む可能性があり、時点を超えた完了保証ではない。外部へのコメント投稿・Issue/PR操作・原本変更・native/code/DB実行はしていない。

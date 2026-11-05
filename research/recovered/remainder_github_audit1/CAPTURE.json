@@ -1,0 +1,7 @@
+{
+  "captured_utc": "2026-11-05T10:02:30.708120+00:00",
+  "base": "525b37e43f26c7a95c2b3818f83ed9507a33d452",
+  "query": "query { repository(owner:\"ButaMonky\", name:\"Hakushin067-Research-Knowledge\") { nameWithOwner isPrivate defaultBranchRef { name target { oid } } issues(states:[OPEN,CLOSED],first:100) { totalCount pageInfo { hasNextPage endCursor } nodes { number title url state updatedAt comments(first:100) { totalCount pageInfo { hasNextPage endCursor } nodes { id databaseId url createdAt updatedAt } } } } pullRequests(states:[OPEN,CLOSED,MERGED],first:100) { totalCount pageInfo { hasNextPage endCursor } nodes { number title url state updatedAt headRefOid headRefName baseRefName comments(first:100) { totalCount pageInfo { hasNextPage endCursor } nodes { id databaseId url createdAt updatedAt } } reviews(first:100) { totalCount pageInfo { hasNextPage endCursor } nodes { id databaseId submittedAt state comments { totalCount } } } reviewThreads(first:20) { totalCount pageInfo { hasNextPage endCursor } nodes { id isResolved comments(first:20) { totalCount pageInfo { hasNextPage endCursor } nodes { id databaseId url createdAt updatedAt } } } } } } } }",
+  "scope": "GraphQL metadata only; all issue/PR states, first100 issue/PR/comments/reviews; reviewThreads20/comment20; every pagination field preserved; no body/comment text/diff/blobs fetched; no mutations",
+  "initial_query_failure": "MAX_NODE_LIMIT_EXCEEDED; no body requested; reduced nested review connection bounds"
+}

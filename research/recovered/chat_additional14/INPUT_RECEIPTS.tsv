@@ -1,0 +1,11 @@
+path	sha256	bytes	role
+research/recovered/chat_selected22/APPROVED_SELECTION.tsv	a6cf3423030e99238bdfedf1f4b73a9002f1d458f64e1e50205daa2e289d341d	4640	Frozen selected22 metadata only, no reports/body read
+research/recovered/chat_selected22/CAPTURE_RECEIPT.json	ea8f4378925366450dd3b8c43225894325ea301a2b3b8ccc9940c4f83ac3c86d	19052	Frozen selected22 metadata only, no reports/body read
+research/recovered/chat_selected22/DEFERRED.tsv	a826764520d3964b2477c183c70b0cf0790fc522551a4251175a9a7d9dff5fc1	59	Frozen selected22 metadata only, no reports/body read
+research/recovered/chat_selected22/INPUT_RECEIPTS.tsv	4141ad20244275b87197fcfaf346a9c9b5d7a2ca571f2e19c90b0c927009060f	1593	Frozen selected22 metadata only, no reports/body read
+research/recovered/chat_selected22/OUTPUT_MANIFEST.tsv	8d115552168d5c10d79f9789cc955e926d7a8cfadcc02c6e1acd1480d688af4b	2134	Frozen selected22 metadata only, no reports/body read
+research/recovered/chat_selected22/README.md	3d6e3f37be51d8ab3fe6eefb3138a5f421b2d912ad4bb1b63528665309c68933	3300	Frozen selected22 metadata only, no reports/body read
+research/recovered/chat_selected22/REPORT_LEDGER.tsv	854ca2efb246a0940e9f7b70f5543335be400668b307e172b2f410ffe65532b9	11073	Frozen selected22 metadata only, no reports/body read
+research/recovered/chat_selected22/REVIEW_IDENTITY.tsv	3b881710bc09cb80a9390001024c042fc5d3e1655bfbb46233d6735d069f4aae	10250	Frozen selected22 metadata only, no reports/body read
+research/recovered/chat_selected22/UNAVAILABLE.tsv	1d6f85ac198cb9c79478aa142ea82f9c6f32fad45408c314f319d3c6845d79e7	3383	Frozen selected22 metadata only, no reports/body read
+research/recovered/RECOVERY_LEDGER.tsv	7093c28d0be7b9e1a3bd0ba3e63b97bcbfc2caff70d795a66c11a2076ea45a84	1757844	2384 existing source/destination URI/SHA dedup

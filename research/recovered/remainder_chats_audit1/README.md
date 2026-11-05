@@ -1,0 +1,21 @@
+# Research-chat remainder audit: metadata only
+
+Baseline 525b37e43f26c7a95c2b3818f83ed9507a33d452; root ledger2384. Existing chat README/capture/ledger/deferral metadata and candidate/library tables only were read. No assistant body, user body, tool output, attachment, original Library report, or linked payload was reread/acquired. No new capture or root-ledger row.
+
+The same-day saved PROJECT_DISCOVERY_RECEIPT already proves terminal listing pages: active7 pages/324 entries and archived3 pages/109 entries, both hasMore=false. Its93-candidate table SHA matches:82 active/11 archived;51 research-or-audit-title leads and42 exact-project-context leads. No fresh listing/read_thread calls were necessary, avoiding unrelated private titles/summaries. Terminal metadata paging is a dated mutable-service snapshot, not present-day account or conversation completeness.
+
+Of93 candidates,9 chats have36 unique selected-message receipts:30 published exact captures across8 chats, plus6 prior whole-message deferrals (C2/D3/transform1).84 candidates have no selected-message receipt;85 have no published body including transform. Those counts are not missing findings or automatically research-bearing chats. STATUS distinguishes explicit research/audit titles from general project context.
+
+A/C/D initially saved latest1 each, then selected9 earlier messages each. The returned ten-message windows now account for A10 saved, C8 saved+2 held, D7 saved+3 held. Initial older9-unreviewed fields are historical snapshots, not27 currently unreviewed messages. D20H remains a known erroneous historical explanation; current REF wins and withheld correction is not reconstructed.
+
+New E/REA/New B each saved latest1 only. Their returned windows retain9/9/4 unselected agent IDs and lengths:22 concrete assistant-message candidates in MESSAGES, body unreviewed/unpreserved. New B has an unfollowed nextCursor. Archived old E saved latest1 and also has an unfollowed nextCursor, with older count/IDs unknown. E/REA/V4 hasMore=false flags describe returned turns, not all messages, attachments, or service-wide history. Transform pagination was not recorded. CAPTURE_SCOPES preserves these distinctions rather than manufacturing coverage.
+
+V4 excluded one returned user item; New B also records one excluded user item. User/tool/attachment material is not added to the22 assistant candidates. Capture-time latest answers need not be the answers at candidate-listing timestamps; this audit does not refresh current chat state. Initial and later receipts are deduplicated by message URI/ID; root30 saved URIs and30 saved SHA values are unique.
+
+The6 whole-message deferrals remain as recorded: known held study, prior refused/dependent content, or unresolved original-DAT-definition material role. This audit does not reopen/adjudicate them or invent a new acquisition refusal. The22 unselected answers and84 unselected chats are unassessed, not conclusive holds. Any future body selection must be coordinated with the parent before expansion and preserve known held boundaries.
+
+Pinned REA_LIBRARY_STATUS separately records14 original Library bodies not captured, represented by4 accepted recovery compilations. LIBRARY_REMAINDER copies identity/SHA/LF/status metadata only. No equivalence between latest chat replies, the22 unselected messages, and those14 original reports is established. No opaqueURI guessing, Library retrieval, or compilation-body expansion occurred.
+
+Concrete next selection leads are the22 known assistant IDs, old E/New B cursor ranges, then metadata-first triage of84 unselected candidate chats. They are audit leads, not authorization to fetch all history or new native research. Existing captures should not be duplicated. Complete account/scheduled-outcome/transcript recovery remains unproved.
+
+Recorded hashes describe selected Unicode encoded UTF8, not service database bytes. Capture success and historical research/native/PASS/READY/Golden claims remain separate. Existing body hashes were not reread/revalidated here. All outputs are metadata and derived audit tables; INPUT_PINS fixes every source read. No original/shared/core/Git/chat/sidebar/schedule/automation changes or extra agents. OUTPUT_MANIFEST excludes itself.

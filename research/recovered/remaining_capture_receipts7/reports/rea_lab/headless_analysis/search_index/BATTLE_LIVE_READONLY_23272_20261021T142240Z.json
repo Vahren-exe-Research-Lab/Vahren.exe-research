@@ -1,0 +1,112 @@
+{
+  "id": "BRIDGE-READONLY-NATIVE-RUNTIME-20261021",
+  "status": "READ_ONLY_NATIVE_SAMPLE_NOT_FULL_GAMEPLAY_GOLDEN",
+  "pid": 23272,
+  "sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "preferred_base": "0x00400000",
+  "module_actual_base": "0x00050000",
+  "rva_game_manager": "0x004BE2F0",
+  "rva_game_event": "0x004BE7F4",
+  "stable_two_samples_50ms": true,
+  "before": {
+    "capture_status": "READ_ONLY_NATIVE_STATUS_NOT_ATOMIC",
+    "game_manager_ptr": "0x0050E2F0",
+    "game_event_ptr": "0x0050E7F4",
+    "manager_dispatch_code": 0,
+    "scene_dispatch_type": 1,
+    "event_mode": 1,
+    "battle_active": 0,
+    "attack_map_count": 0,
+    "battlefield_pointer": "0x00000000",
+    "native_m_pause": 0,
+    "native_m_alt_gate": 0,
+    "task_active_count": 297,
+    "task_pending_count": 0,
+    "crt_thread_holdrand": "UNOBSERVED_THREAD_LOCAL",
+    "vm_cursor": "UNOBSERVED",
+    "actual_selected_map": "UNOBSERVED",
+    "sides": [
+      {
+        "slot": 0,
+        "pointer": "0x16F30908",
+        "vtable": "0x00289B08",
+        "verified_vtable": true,
+        "troop_vector_length": 0,
+        "unit_vector_length": 0
+      },
+      {
+        "slot": 1,
+        "pointer": "0x1639DC30",
+        "vtable": "0x00288B60",
+        "verified_vtable": true,
+        "troop_vector_length": 0,
+        "unit_vector_length": 0
+      },
+      {
+        "slot": 2,
+        "pointer": "0x16427690",
+        "vtable": "0x00288B60",
+        "verified_vtable": true,
+        "troop_vector_length": 0,
+        "unit_vector_length": 0
+      }
+    ],
+    "normal_battle_candidate": false,
+    "gameplay_100_gate_satisfied": false
+  },
+  "after": {
+    "capture_status": "READ_ONLY_NATIVE_STATUS_NOT_ATOMIC",
+    "game_manager_ptr": "0x0050E2F0",
+    "game_event_ptr": "0x0050E7F4",
+    "manager_dispatch_code": 0,
+    "scene_dispatch_type": 1,
+    "event_mode": 1,
+    "battle_active": 0,
+    "attack_map_count": 0,
+    "battlefield_pointer": "0x00000000",
+    "native_m_pause": 0,
+    "native_m_alt_gate": 0,
+    "task_active_count": 297,
+    "task_pending_count": 0,
+    "crt_thread_holdrand": "UNOBSERVED_THREAD_LOCAL",
+    "vm_cursor": "UNOBSERVED",
+    "actual_selected_map": "UNOBSERVED",
+    "sides": [
+      {
+        "slot": 0,
+        "pointer": "0x16F30908",
+        "vtable": "0x00289B08",
+        "verified_vtable": true,
+        "troop_vector_length": 0,
+        "unit_vector_length": 0
+      },
+      {
+        "slot": 1,
+        "pointer": "0x1639DC30",
+        "vtable": "0x00288B60",
+        "verified_vtable": true,
+        "troop_vector_length": 0,
+        "unit_vector_length": 0
+      },
+      {
+        "slot": 2,
+        "pointer": "0x16427690",
+        "vtable": "0x00288B60",
+        "verified_vtable": true,
+        "troop_vector_length": 0,
+        "unit_vector_length": 0
+      }
+    ],
+    "normal_battle_candidate": false,
+    "gameplay_100_gate_satisfied": false
+  },
+  "original_executable_modified": false,
+  "original_memory_modified": false,
+  "native_hook_or_debugger_installed": false,
+  "known_gaps": [
+    "No mapped selected MAP or actual battle roster instances",
+    "CRT thread local RNG state not captured",
+    "GameEvent VM cursor/Task full roster not captured",
+    "No original-vs-external finish or strategy result comparison"
+  ]
+}

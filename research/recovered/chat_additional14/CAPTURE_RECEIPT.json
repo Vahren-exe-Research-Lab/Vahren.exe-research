@@ -1,0 +1,606 @@
+{
+  "selection_authorization": "Parent explicitly authorized a separate additional14 snapshot after fixed22 was frozen; one fresh read per same three threads only, no cursor or other selection.",
+  "receipt_recorded_utc": "2026-11-05 10:20:08 UTC",
+  "message_timestamp_scope": "Not separately exposed; receipt time is after review, not individual message time. This is a fresh snapshot, not reproduction of prior response/time.",
+  "request": {
+    "turnLimit": 1,
+    "includeOutputs": false,
+    "maxOutputCharsPerItem": 12000
+  },
+  "selection": [
+    {
+      "thread_id": "6ae923ae-a704-83ee-abd8-4130624c63bd",
+      "message_id": "ef5a0d9a-c5ca-4202-94ad-3bc8c6bef449",
+      "prior_utf16": 665,
+      "prior_turn_id": "525e9181-7620-4061-8610-37b56417e2f6"
+    },
+    {
+      "thread_id": "6ae923ae-a704-83ee-abd8-4130624c63bd",
+      "message_id": "af345815-8f5d-436e-8ad5-d92934206fd6",
+      "prior_utf16": 681,
+      "prior_turn_id": "525e9181-7620-4061-8610-37b56417e2f6"
+    },
+    {
+      "thread_id": "6ae923ae-a704-83ee-abd8-4130624c63bd",
+      "message_id": "c08351e0-f045-4219-8991-5a65d77887f8",
+      "prior_utf16": 457,
+      "prior_turn_id": "525e9181-7620-4061-8610-37b56417e2f6"
+    },
+    {
+      "thread_id": "6ae923ae-a704-83ee-abd8-4130624c63bd",
+      "message_id": "2facf36c-f353-41f6-a3e4-157cc472ac82",
+      "prior_utf16": 455,
+      "prior_turn_id": "525e9181-7620-4061-8610-37b56417e2f6"
+    },
+    {
+      "thread_id": "6ae923ae-a704-83ee-abd8-4130624c63bd",
+      "message_id": "a7c4cedb-d0a8-4b0f-a3c2-28f6e26b5a35",
+      "prior_utf16": 759,
+      "prior_turn_id": "525e9181-7620-4061-8610-37b56417e2f6"
+    },
+    {
+      "thread_id": "6aea0154-96fc-83ee-96d3-0b8dec4210c5",
+      "message_id": "4902290a-47b9-4762-a5ec-384ed67fcd35",
+      "prior_utf16": 816,
+      "prior_turn_id": "d63e5d0d-fe5c-413d-9c72-8ebdbdb40332"
+    },
+    {
+      "thread_id": "6aea0154-96fc-83ee-96d3-0b8dec4210c5",
+      "message_id": "2f146fd4-e241-41a8-b04a-4f4703a94a9b",
+      "prior_utf16": 986,
+      "prior_turn_id": "d63e5d0d-fe5c-413d-9c72-8ebdbdb40332"
+    },
+    {
+      "thread_id": "6aea0154-96fc-83ee-96d3-0b8dec4210c5",
+      "message_id": "7235310d-d2b3-459c-816f-8b3a4bfdd6e9",
+      "prior_utf16": 848,
+      "prior_turn_id": "d63e5d0d-fe5c-413d-9c72-8ebdbdb40332"
+    },
+    {
+      "thread_id": "6aea0154-96fc-83ee-96d3-0b8dec4210c5",
+      "message_id": "be9de04a-a9b9-4268-8dbe-6b50e2ca1a9c",
+      "prior_utf16": 745,
+      "prior_turn_id": "d63e5d0d-fe5c-413d-9c72-8ebdbdb40332"
+    },
+    {
+      "thread_id": "6aea0154-96fc-83ee-96d3-0b8dec4210c5",
+      "message_id": "e3422888-9bcb-435f-ae92-14bf3dd5fda1",
+      "prior_utf16": 669,
+      "prior_turn_id": "d63e5d0d-fe5c-413d-9c72-8ebdbdb40332"
+    },
+    {
+      "thread_id": "6aea0916-3ee4-83ec-b05f-2b3afe2d3f5d",
+      "message_id": "d15bc80d-71d5-4a62-92e7-3dc4786862ba",
+      "prior_utf16": 1005,
+      "prior_turn_id": "47a78203-d89b-40ac-9c91-368e7d10dcd2"
+    },
+    {
+      "thread_id": "6aea0916-3ee4-83ec-b05f-2b3afe2d3f5d",
+      "message_id": "443829f5-52b4-433e-a6a3-b7fbd35dca67",
+      "prior_utf16": 851,
+      "prior_turn_id": "47a78203-d89b-40ac-9c91-368e7d10dcd2"
+    },
+    {
+      "thread_id": "6aea0916-3ee4-83ec-b05f-2b3afe2d3f5d",
+      "message_id": "5dd6f72b-50c3-4bcf-bcf2-593a66e6ce11",
+      "prior_utf16": 1012,
+      "prior_turn_id": "47a78203-d89b-40ac-9c91-368e7d10dcd2"
+    },
+    {
+      "thread_id": "6aea0916-3ee4-83ec-b05f-2b3afe2d3f5d",
+      "message_id": "062cb02a-444c-4650-86d3-076b906a3620",
+      "prior_utf16": 901,
+      "prior_turn_id": "47a78203-d89b-40ac-9c91-368e7d10dcd2"
+    }
+  ],
+  "bounds": [
+    {
+      "thread_id": "6ae923ae-a704-83ee-abd8-4130624c63bd",
+      "title": "迫真戦記 新E｜互換・統合",
+      "updated_at": 1793872705.648341,
+      "page": {
+        "order": "newest_first",
+        "limit": 1,
+        "nextCursor": null,
+        "hasMore": false
+      },
+      "returned_turns": 1
+    },
+    {
+      "thread_id": "6aea0154-96fc-83ee-96d3-0b8dec4210c5",
+      "title": "迫真戦記 REA逆コンパイル",
+      "updated_at": 1793871607.525435,
+      "page": {
+        "order": "newest_first",
+        "limit": 1,
+        "nextCursor": null,
+        "hasMore": false
+      },
+      "returned_turns": 1
+    },
+    {
+      "thread_id": "6aea0916-3ee4-83ec-b05f-2b3afe2d3f5d",
+      "title": "迫真戦記 新B｜戦闘・AI",
+      "updated_at": 1793873774.526029,
+      "page": {
+        "order": "newest_first",
+        "limit": 1,
+        "nextCursor": null,
+        "hasMore": false
+      },
+      "returned_turns": 1
+    }
+  ],
+  "returned_items_metadata": [
+    {
+      "thread_id": "6ae923ae-a704-83ee-abd8-4130624c63bd",
+      "turn_id": "525e9181-7620-4061-8610-37b56417e2f6",
+      "id": "525e9181-7620-4061-8610-37b56417e2f6",
+      "type": "agentMessage",
+      "utf16_chars": 777,
+      "selected": false
+    },
+    {
+      "thread_id": "6ae923ae-a704-83ee-abd8-4130624c63bd",
+      "turn_id": "525e9181-7620-4061-8610-37b56417e2f6",
+      "id": "0611f41d-6f11-4f4f-b092-49e56f0d1eee",
+      "type": "agentMessage",
+      "utf16_chars": 458,
+      "selected": false
+    },
+    {
+      "thread_id": "6ae923ae-a704-83ee-abd8-4130624c63bd",
+      "turn_id": "525e9181-7620-4061-8610-37b56417e2f6",
+      "id": "777e743e-f546-43a8-8c3a-4637d628b278",
+      "type": "agentMessage",
+      "utf16_chars": 486,
+      "selected": false
+    },
+    {
+      "thread_id": "6ae923ae-a704-83ee-abd8-4130624c63bd",
+      "turn_id": "525e9181-7620-4061-8610-37b56417e2f6",
+      "id": "0831a1cf-3bdc-48fc-ad49-0eb46ad43c81",
+      "type": "agentMessage",
+      "utf16_chars": 844,
+      "selected": false
+    },
+    {
+      "thread_id": "6ae923ae-a704-83ee-abd8-4130624c63bd",
+      "turn_id": "525e9181-7620-4061-8610-37b56417e2f6",
+      "id": "605082a3-e562-438d-ab8f-4bd30dae9011",
+      "type": "agentMessage",
+      "utf16_chars": 636,
+      "selected": false
+    },
+    {
+      "thread_id": "6ae923ae-a704-83ee-abd8-4130624c63bd",
+      "turn_id": "525e9181-7620-4061-8610-37b56417e2f6",
+      "id": "ef5a0d9a-c5ca-4202-94ad-3bc8c6bef449",
+      "type": "agentMessage",
+      "utf16_chars": 665,
+      "selected": true
+    },
+    {
+      "thread_id": "6ae923ae-a704-83ee-abd8-4130624c63bd",
+      "turn_id": "525e9181-7620-4061-8610-37b56417e2f6",
+      "id": "af345815-8f5d-436e-8ad5-d92934206fd6",
+      "type": "agentMessage",
+      "utf16_chars": 681,
+      "selected": true
+    },
+    {
+      "thread_id": "6ae923ae-a704-83ee-abd8-4130624c63bd",
+      "turn_id": "525e9181-7620-4061-8610-37b56417e2f6",
+      "id": "c08351e0-f045-4219-8991-5a65d77887f8",
+      "type": "agentMessage",
+      "utf16_chars": 457,
+      "selected": true
+    },
+    {
+      "thread_id": "6ae923ae-a704-83ee-abd8-4130624c63bd",
+      "turn_id": "525e9181-7620-4061-8610-37b56417e2f6",
+      "id": "2facf36c-f353-41f6-a3e4-157cc472ac82",
+      "type": "agentMessage",
+      "utf16_chars": 455,
+      "selected": true
+    },
+    {
+      "thread_id": "6ae923ae-a704-83ee-abd8-4130624c63bd",
+      "turn_id": "525e9181-7620-4061-8610-37b56417e2f6",
+      "id": "a7c4cedb-d0a8-4b0f-a3c2-28f6e26b5a35",
+      "type": "agentMessage",
+      "utf16_chars": 759,
+      "selected": true
+    },
+    {
+      "thread_id": "6aea0154-96fc-83ee-96d3-0b8dec4210c5",
+      "turn_id": "d63e5d0d-fe5c-413d-9c72-8ebdbdb40332",
+      "id": "d63e5d0d-fe5c-413d-9c72-8ebdbdb40332",
+      "type": "agentMessage",
+      "utf16_chars": 901,
+      "selected": false
+    },
+    {
+      "thread_id": "6aea0154-96fc-83ee-96d3-0b8dec4210c5",
+      "turn_id": "d63e5d0d-fe5c-413d-9c72-8ebdbdb40332",
+      "id": "d6ae36c2-b640-4510-87c8-9374ca4cac07",
+      "type": "agentMessage",
+      "utf16_chars": 963,
+      "selected": false
+    },
+    {
+      "thread_id": "6aea0154-96fc-83ee-96d3-0b8dec4210c5",
+      "turn_id": "d63e5d0d-fe5c-413d-9c72-8ebdbdb40332",
+      "id": "7ada3144-8230-4af4-a026-8bbd1aa263fa",
+      "type": "agentMessage",
+      "utf16_chars": 775,
+      "selected": false
+    },
+    {
+      "thread_id": "6aea0154-96fc-83ee-96d3-0b8dec4210c5",
+      "turn_id": "d63e5d0d-fe5c-413d-9c72-8ebdbdb40332",
+      "id": "2785a95b-98a0-4979-ba07-f7f8c589c29e",
+      "type": "agentMessage",
+      "utf16_chars": 723,
+      "selected": false
+    },
+    {
+      "thread_id": "6aea0154-96fc-83ee-96d3-0b8dec4210c5",
+      "turn_id": "d63e5d0d-fe5c-413d-9c72-8ebdbdb40332",
+      "id": "2d0586eb-e4a0-4d81-8796-e7d5b180e62b",
+      "type": "agentMessage",
+      "utf16_chars": 786,
+      "selected": false
+    },
+    {
+      "thread_id": "6aea0154-96fc-83ee-96d3-0b8dec4210c5",
+      "turn_id": "d63e5d0d-fe5c-413d-9c72-8ebdbdb40332",
+      "id": "4902290a-47b9-4762-a5ec-384ed67fcd35",
+      "type": "agentMessage",
+      "utf16_chars": 816,
+      "selected": true
+    },
+    {
+      "thread_id": "6aea0154-96fc-83ee-96d3-0b8dec4210c5",
+      "turn_id": "d63e5d0d-fe5c-413d-9c72-8ebdbdb40332",
+      "id": "2f146fd4-e241-41a8-b04a-4f4703a94a9b",
+      "type": "agentMessage",
+      "utf16_chars": 986,
+      "selected": true
+    },
+    {
+      "thread_id": "6aea0154-96fc-83ee-96d3-0b8dec4210c5",
+      "turn_id": "d63e5d0d-fe5c-413d-9c72-8ebdbdb40332",
+      "id": "7235310d-d2b3-459c-816f-8b3a4bfdd6e9",
+      "type": "agentMessage",
+      "utf16_chars": 848,
+      "selected": true
+    },
+    {
+      "thread_id": "6aea0154-96fc-83ee-96d3-0b8dec4210c5",
+      "turn_id": "d63e5d0d-fe5c-413d-9c72-8ebdbdb40332",
+      "id": "be9de04a-a9b9-4268-8dbe-6b50e2ca1a9c",
+      "type": "agentMessage",
+      "utf16_chars": 745,
+      "selected": true
+    },
+    {
+      "thread_id": "6aea0154-96fc-83ee-96d3-0b8dec4210c5",
+      "turn_id": "d63e5d0d-fe5c-413d-9c72-8ebdbdb40332",
+      "id": "e3422888-9bcb-435f-ae92-14bf3dd5fda1",
+      "type": "agentMessage",
+      "utf16_chars": 669,
+      "selected": true
+    },
+    {
+      "thread_id": "6aea0916-3ee4-83ec-b05f-2b3afe2d3f5d",
+      "turn_id": "be70ca0c-bfb8-4e9d-ae0d-f5f1e4d246c0",
+      "id": "be70ca0c-bfb8-4e9d-ae0d-f5f1e4d246c0",
+      "type": "agentMessage",
+      "utf16_chars": 1423,
+      "selected": false
+    },
+    {
+      "thread_id": "6aea0916-3ee4-83ec-b05f-2b3afe2d3f5d",
+      "turn_id": "be70ca0c-bfb8-4e9d-ae0d-f5f1e4d246c0",
+      "id": "1c253d6c-1450-452c-9d9a-4474b7d1eb75",
+      "type": "agentMessage",
+      "utf16_chars": 1051,
+      "selected": false
+    },
+    {
+      "thread_id": "6aea0916-3ee4-83ec-b05f-2b3afe2d3f5d",
+      "turn_id": "be70ca0c-bfb8-4e9d-ae0d-f5f1e4d246c0",
+      "id": "007cd48c-5891-4806-8265-30d8cda48e8c",
+      "type": "agentMessage",
+      "utf16_chars": 908,
+      "selected": false
+    },
+    {
+      "thread_id": "6aea0916-3ee4-83ec-b05f-2b3afe2d3f5d",
+      "turn_id": "be70ca0c-bfb8-4e9d-ae0d-f5f1e4d246c0",
+      "id": "13b3b4b8-1725-4913-beda-77f297b65a93",
+      "type": "agentMessage",
+      "utf16_chars": 802,
+      "selected": false
+    },
+    {
+      "thread_id": "6aea0916-3ee4-83ec-b05f-2b3afe2d3f5d",
+      "turn_id": "be70ca0c-bfb8-4e9d-ae0d-f5f1e4d246c0",
+      "id": "8848f95a-0695-4d2a-a487-501ed757b508",
+      "type": "agentMessage",
+      "utf16_chars": 1203,
+      "selected": false
+    },
+    {
+      "thread_id": "6aea0916-3ee4-83ec-b05f-2b3afe2d3f5d",
+      "turn_id": "be70ca0c-bfb8-4e9d-ae0d-f5f1e4d246c0",
+      "id": "d15bc80d-71d5-4a62-92e7-3dc4786862ba",
+      "type": "agentMessage",
+      "utf16_chars": 1005,
+      "selected": true
+    },
+    {
+      "thread_id": "6aea0916-3ee4-83ec-b05f-2b3afe2d3f5d",
+      "turn_id": "be70ca0c-bfb8-4e9d-ae0d-f5f1e4d246c0",
+      "id": "443829f5-52b4-433e-a6a3-b7fbd35dca67",
+      "type": "agentMessage",
+      "utf16_chars": 851,
+      "selected": true
+    },
+    {
+      "thread_id": "6aea0916-3ee4-83ec-b05f-2b3afe2d3f5d",
+      "turn_id": "be70ca0c-bfb8-4e9d-ae0d-f5f1e4d246c0",
+      "id": "5dd6f72b-50c3-4bcf-bcf2-593a66e6ce11",
+      "type": "agentMessage",
+      "utf16_chars": 1012,
+      "selected": true
+    },
+    {
+      "thread_id": "6aea0916-3ee4-83ec-b05f-2b3afe2d3f5d",
+      "turn_id": "be70ca0c-bfb8-4e9d-ae0d-f5f1e4d246c0",
+      "id": "062cb02a-444c-4650-86d3-076b906a3620",
+      "type": "agentMessage",
+      "utf16_chars": 901,
+      "selected": true
+    },
+    {
+      "thread_id": "6aea0916-3ee4-83ec-b05f-2b3afe2d3f5d",
+      "turn_id": "be70ca0c-bfb8-4e9d-ae0d-f5f1e4d246c0",
+      "id": "a8bf8bb2-4ddc-4fdc-a93d-b1510b49d8c7",
+      "type": "agentMessage",
+      "utf16_chars": 830,
+      "selected": false
+    }
+  ],
+  "accepted": [
+    {
+      "thread_id": "6ae923ae-a704-83ee-abd8-4130624c63bd",
+      "message_id": "ef5a0d9a-c5ca-4202-94ad-3bc8c6bef449",
+      "turn_id": "525e9181-7620-4061-8610-37b56417e2f6",
+      "thread_updated_at": 1793872705.648341,
+      "turn_started_at": 1793839759.366583,
+      "turn_completed_at": 1793872676.392404,
+      "utf16": 665,
+      "source_uri": "chatgpt://6ae923ae-a704-83ee-abd8-4130624c63bd/messages/ef5a0d9a-c5ca-4202-94ad-3bc8c6bef449",
+      "sha256": "abc223c91c8c071001b4f40e1f7916ed51811571e9d574687cfc8620131cceae",
+      "bytes": 1437,
+      "physical_lf": 11,
+      "terminal_lf": false,
+      "destination": "research/recovered/chat_additional14/reports/ef5a0d9a-c5ca-4202-94ad-3bc8c6bef449.md",
+      "role": "NEW_EXACT_CAPTURE"
+    },
+    {
+      "thread_id": "6ae923ae-a704-83ee-abd8-4130624c63bd",
+      "message_id": "af345815-8f5d-436e-8ad5-d92934206fd6",
+      "turn_id": "525e9181-7620-4061-8610-37b56417e2f6",
+      "thread_updated_at": 1793872705.648341,
+      "turn_started_at": 1793839759.366583,
+      "turn_completed_at": 1793872676.392404,
+      "utf16": 681,
+      "source_uri": "chatgpt://6ae923ae-a704-83ee-abd8-4130624c63bd/messages/af345815-8f5d-436e-8ad5-d92934206fd6",
+      "sha256": "586f01e879275fac4923b153846a1d6d362443a9bdd2a7734ce13a133b7e53c8",
+      "bytes": 1467,
+      "physical_lf": 9,
+      "terminal_lf": false,
+      "destination": "research/recovered/chat_additional14/reports/af345815-8f5d-436e-8ad5-d92934206fd6.md",
+      "role": "NEW_EXACT_CAPTURE"
+    },
+    {
+      "thread_id": "6ae923ae-a704-83ee-abd8-4130624c63bd",
+      "message_id": "c08351e0-f045-4219-8991-5a65d77887f8",
+      "turn_id": "525e9181-7620-4061-8610-37b56417e2f6",
+      "thread_updated_at": 1793872705.648341,
+      "turn_started_at": 1793839759.366583,
+      "turn_completed_at": 1793872676.392404,
+      "utf16": 457,
+      "source_uri": "chatgpt://6ae923ae-a704-83ee-abd8-4130624c63bd/messages/c08351e0-f045-4219-8991-5a65d77887f8",
+      "sha256": "d1982c6e5b8c322b30f0e245c6c1c6fe87d083c26248dc6daac78e4ff80eb9e4",
+      "bytes": 921,
+      "physical_lf": 9,
+      "terminal_lf": false,
+      "destination": "research/recovered/chat_additional14/reports/c08351e0-f045-4219-8991-5a65d77887f8.md",
+      "role": "NEW_EXACT_CAPTURE"
+    },
+    {
+      "thread_id": "6ae923ae-a704-83ee-abd8-4130624c63bd",
+      "message_id": "2facf36c-f353-41f6-a3e4-157cc472ac82",
+      "turn_id": "525e9181-7620-4061-8610-37b56417e2f6",
+      "thread_updated_at": 1793872705.648341,
+      "turn_started_at": 1793839759.366583,
+      "turn_completed_at": 1793872676.392404,
+      "utf16": 455,
+      "source_uri": "chatgpt://6ae923ae-a704-83ee-abd8-4130624c63bd/messages/2facf36c-f353-41f6-a3e4-157cc472ac82",
+      "sha256": "5f0d9bcc722e8003665f9f5022a22fef72cca9ad76f4cb327717a5f44f950129",
+      "bytes": 933,
+      "physical_lf": 15,
+      "terminal_lf": false,
+      "destination": "research/recovered/chat_additional14/reports/2facf36c-f353-41f6-a3e4-157cc472ac82.md",
+      "role": "NEW_EXACT_CAPTURE"
+    },
+    {
+      "thread_id": "6ae923ae-a704-83ee-abd8-4130624c63bd",
+      "message_id": "a7c4cedb-d0a8-4b0f-a3c2-28f6e26b5a35",
+      "turn_id": "525e9181-7620-4061-8610-37b56417e2f6",
+      "thread_updated_at": 1793872705.648341,
+      "turn_started_at": 1793839759.366583,
+      "turn_completed_at": 1793872676.392404,
+      "utf16": 759,
+      "source_uri": "chatgpt://6ae923ae-a704-83ee-abd8-4130624c63bd/messages/a7c4cedb-d0a8-4b0f-a3c2-28f6e26b5a35",
+      "sha256": "36ca34bb4a78f6da6b9979eb31a4f307aff70f92f652e0a019767b0f912c7a0e",
+      "bytes": 1515,
+      "physical_lf": 11,
+      "terminal_lf": false,
+      "destination": "research/recovered/chat_additional14/reports/a7c4cedb-d0a8-4b0f-a3c2-28f6e26b5a35.md",
+      "role": "NEW_EXACT_CAPTURE"
+    },
+    {
+      "thread_id": "6aea0154-96fc-83ee-96d3-0b8dec4210c5",
+      "message_id": "4902290a-47b9-4762-a5ec-384ed67fcd35",
+      "turn_id": "d63e5d0d-fe5c-413d-9c72-8ebdbdb40332",
+      "thread_updated_at": 1793871607.525435,
+      "turn_started_at": 1793839600.90883,
+      "turn_completed_at": 1793871590.762632,
+      "utf16": 816,
+      "source_uri": "chatgpt://6aea0154-96fc-83ee-96d3-0b8dec4210c5/messages/4902290a-47b9-4762-a5ec-384ed67fcd35",
+      "sha256": "353bb2e59951afe0e042d3846301e4f5cd7a2c6f4d1666e7fd72ef8838724b93",
+      "bytes": 1484,
+      "physical_lf": 25,
+      "terminal_lf": false,
+      "destination": "research/recovered/chat_additional14/reports/4902290a-47b9-4762-a5ec-384ed67fcd35.md",
+      "role": "NEW_EXACT_CAPTURE"
+    },
+    {
+      "thread_id": "6aea0154-96fc-83ee-96d3-0b8dec4210c5",
+      "message_id": "2f146fd4-e241-41a8-b04a-4f4703a94a9b",
+      "turn_id": "d63e5d0d-fe5c-413d-9c72-8ebdbdb40332",
+      "thread_updated_at": 1793871607.525435,
+      "turn_started_at": 1793839600.90883,
+      "turn_completed_at": 1793871590.762632,
+      "utf16": 986,
+      "source_uri": "chatgpt://6aea0154-96fc-83ee-96d3-0b8dec4210c5/messages/2f146fd4-e241-41a8-b04a-4f4703a94a9b",
+      "sha256": "99e30ca4943252fda971f100e674fc3d7b70eeaea504eff3d259a9f1471b0af4",
+      "bytes": 1910,
+      "physical_lf": 19,
+      "terminal_lf": false,
+      "destination": "research/recovered/chat_additional14/reports/2f146fd4-e241-41a8-b04a-4f4703a94a9b.md",
+      "role": "NEW_EXACT_CAPTURE"
+    },
+    {
+      "thread_id": "6aea0154-96fc-83ee-96d3-0b8dec4210c5",
+      "message_id": "7235310d-d2b3-459c-816f-8b3a4bfdd6e9",
+      "turn_id": "d63e5d0d-fe5c-413d-9c72-8ebdbdb40332",
+      "thread_updated_at": 1793871607.525435,
+      "turn_started_at": 1793839600.90883,
+      "turn_completed_at": 1793871590.762632,
+      "utf16": 848,
+      "source_uri": "chatgpt://6aea0154-96fc-83ee-96d3-0b8dec4210c5/messages/7235310d-d2b3-459c-816f-8b3a4bfdd6e9",
+      "sha256": "cfcaa238d83111555764d647e14fa6ce077e2d24430b579283b1ed691edd7d68",
+      "bytes": 1720,
+      "physical_lf": 11,
+      "terminal_lf": false,
+      "destination": "research/recovered/chat_additional14/reports/7235310d-d2b3-459c-816f-8b3a4bfdd6e9.md",
+      "role": "NEW_EXACT_CAPTURE"
+    },
+    {
+      "thread_id": "6aea0154-96fc-83ee-96d3-0b8dec4210c5",
+      "message_id": "be9de04a-a9b9-4268-8dbe-6b50e2ca1a9c",
+      "turn_id": "d63e5d0d-fe5c-413d-9c72-8ebdbdb40332",
+      "thread_updated_at": 1793871607.525435,
+      "turn_started_at": 1793839600.90883,
+      "turn_completed_at": 1793871590.762632,
+      "utf16": 745,
+      "source_uri": "chatgpt://6aea0154-96fc-83ee-96d3-0b8dec4210c5/messages/be9de04a-a9b9-4268-8dbe-6b50e2ca1a9c",
+      "sha256": "193eea90a09f6899561a3d4fbfd78f9ef28bfb2e5068c19cec80b46303ad45e6",
+      "bytes": 1411,
+      "physical_lf": 21,
+      "terminal_lf": false,
+      "destination": "research/recovered/chat_additional14/reports/be9de04a-a9b9-4268-8dbe-6b50e2ca1a9c.md",
+      "role": "NEW_EXACT_CAPTURE"
+    },
+    {
+      "thread_id": "6aea0154-96fc-83ee-96d3-0b8dec4210c5",
+      "message_id": "e3422888-9bcb-435f-ae92-14bf3dd5fda1",
+      "turn_id": "d63e5d0d-fe5c-413d-9c72-8ebdbdb40332",
+      "thread_updated_at": 1793871607.525435,
+      "turn_started_at": 1793839600.90883,
+      "turn_completed_at": 1793871590.762632,
+      "utf16": 669,
+      "source_uri": "chatgpt://6aea0154-96fc-83ee-96d3-0b8dec4210c5/messages/e3422888-9bcb-435f-ae92-14bf3dd5fda1",
+      "sha256": "e90f1cb09a7e669811e457267df08130af16c9bbdf2db590f20ecd15f583f826",
+      "bytes": 1379,
+      "physical_lf": 11,
+      "terminal_lf": false,
+      "destination": "research/recovered/chat_additional14/reports/e3422888-9bcb-435f-ae92-14bf3dd5fda1.md",
+      "role": "NEW_EXACT_CAPTURE"
+    },
+    {
+      "thread_id": "6aea0916-3ee4-83ec-b05f-2b3afe2d3f5d",
+      "message_id": "d15bc80d-71d5-4a62-92e7-3dc4786862ba",
+      "turn_id": "be70ca0c-bfb8-4e9d-ae0d-f5f1e4d246c0",
+      "thread_updated_at": 1793873774.526029,
+      "turn_started_at": 1793842773.943846,
+      "turn_completed_at": 1793873720.65888,
+      "utf16": 1005,
+      "source_uri": "chatgpt://6aea0916-3ee4-83ec-b05f-2b3afe2d3f5d/messages/d15bc80d-71d5-4a62-92e7-3dc4786862ba",
+      "sha256": "ca4977de3bff42351cff39788ff670a6e69a08b4b6f32adbf2e8b600255e26dd",
+      "bytes": 1949,
+      "physical_lf": 25,
+      "terminal_lf": false,
+      "destination": "research/recovered/chat_additional14/reports/d15bc80d-71d5-4a62-92e7-3dc4786862ba.md",
+      "role": "NEW_EXACT_CAPTURE"
+    },
+    {
+      "thread_id": "6aea0916-3ee4-83ec-b05f-2b3afe2d3f5d",
+      "message_id": "443829f5-52b4-433e-a6a3-b7fbd35dca67",
+      "turn_id": "be70ca0c-bfb8-4e9d-ae0d-f5f1e4d246c0",
+      "thread_updated_at": 1793873774.526029,
+      "turn_started_at": 1793842773.943846,
+      "turn_completed_at": 1793873720.65888,
+      "utf16": 851,
+      "source_uri": "chatgpt://6aea0916-3ee4-83ec-b05f-2b3afe2d3f5d/messages/443829f5-52b4-433e-a6a3-b7fbd35dca67",
+      "sha256": "744e1172e1ac2e2386c1710f8b2fd051b307446da5c0a2da59aa1dd52288d058",
+      "bytes": 1633,
+      "physical_lf": 15,
+      "terminal_lf": false,
+      "destination": "research/recovered/chat_additional14/reports/443829f5-52b4-433e-a6a3-b7fbd35dca67.md",
+      "role": "NEW_EXACT_CAPTURE"
+    },
+    {
+      "thread_id": "6aea0916-3ee4-83ec-b05f-2b3afe2d3f5d",
+      "message_id": "5dd6f72b-50c3-4bcf-bcf2-593a66e6ce11",
+      "turn_id": "be70ca0c-bfb8-4e9d-ae0d-f5f1e4d246c0",
+      "thread_updated_at": 1793873774.526029,
+      "turn_started_at": 1793842773.943846,
+      "turn_completed_at": 1793873720.65888,
+      "utf16": 1012,
+      "source_uri": "chatgpt://6aea0916-3ee4-83ec-b05f-2b3afe2d3f5d/messages/5dd6f72b-50c3-4bcf-bcf2-593a66e6ce11",
+      "sha256": "4953ee3e4dfecd3ce1dcbab6acd0f1e1576a0b50de4ad6263244349cf8e79e15",
+      "bytes": 1874,
+      "physical_lf": 29,
+      "terminal_lf": false,
+      "destination": "research/recovered/chat_additional14/reports/5dd6f72b-50c3-4bcf-bcf2-593a66e6ce11.md",
+      "role": "NEW_EXACT_CAPTURE"
+    },
+    {
+      "thread_id": "6aea0916-3ee4-83ec-b05f-2b3afe2d3f5d",
+      "message_id": "062cb02a-444c-4650-86d3-076b906a3620",
+      "turn_id": "be70ca0c-bfb8-4e9d-ae0d-f5f1e4d246c0",
+      "thread_updated_at": 1793873774.526029,
+      "turn_started_at": 1793842773.943846,
+      "turn_completed_at": 1793873720.65888,
+      "utf16": 901,
+      "source_uri": "chatgpt://6aea0916-3ee4-83ec-b05f-2b3afe2d3f5d/messages/062cb02a-444c-4650-86d3-076b906a3620",
+      "sha256": "382d275171883ab1f0564674ce55766a49b98bfcd202a69764107cb03615dfe3",
+      "bytes": 1657,
+      "physical_lf": 21,
+      "terminal_lf": false,
+      "destination": "research/recovered/chat_additional14/reports/062cb02a-444c-4650-86d3-076b906a3620.md",
+      "role": "NEW_EXACT_CAPTURE"
+    }
+  ],
+  "hash_scope": "Exact selected agentMessage.text Unicode encoded UTF8; no added header/BOM/newline normalization; not server DB/raw HTTP/wrapper/preview.",
+  "complete_basis": "All14 selected returned strings below12000 per-item cap, no truncation marker, prior metadata UTF16 lengths match; provider has no separate truncation flag.",
+  "scope": "Only fixed additional14 reviewed/captured. Other16agent metadata only:15 prior accepted IDs plus1 newly visible out-of-scope ID. No user item returned in fresh snapshot. No cursor/further API/linked payload expansion.",
+  "classification": "Dated author integration/research/correction/test/status claims; no new native/runtime/ABI/type/Golden/READY validation."
+}

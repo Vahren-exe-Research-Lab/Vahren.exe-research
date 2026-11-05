@@ -1,0 +1,20 @@
+{
+  "id": "BRIDGE-20261021-REAL-WAR-TREE-V5",
+  "source_kind": "ACTUAL_ORIGINAL_GAME_POSTBATTLE_MEMORY_NOT_ATOMIC",
+  "source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "pid": 23272,
+  "module_load_base": "0x00050000",
+  "capture_guard_stable_not_atomic_proof": true,
+  "attack_spot_ptrs": [
+    "0x1C993C58"
+  ],
+  "attack_def_counts": [
+    12
+  ],
+  "help_count": 0,
+  "total_attack_definition_pointers": 12,
+  "native_battle_start_packet_proven": false,
+  "native_result_writeback_proven": false,
+  "game_modified": false,
+  "note": "Original game war trees are decoded after combat. Not proof of actual selected troops or map at pre-battle hook."
+}

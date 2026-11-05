@@ -1,0 +1,32 @@
+{
+  "fixed_original22": {
+    "folder": "research/recovered/chat_selected22",
+    "frozen_manifest_sha256": "8d115552168d5c10d79f9789cc955e926d7a8cfadcc02c6e1acd1480d688af4b",
+    "accepted": 12,
+    "not_returned": 10,
+    "body_bytes": 20801,
+    "unchanged": true
+  },
+  "separately_authorized_additional14": {
+    "selected": 14,
+    "accepted": 14,
+    "not_returned_this_new_snapshot": 0,
+    "deferred": 0,
+    "partial": 0,
+    "aliases": 0,
+    "privacy_variants": 0,
+    "body_bytes": 21290,
+    "request_calls": 3,
+    "further_calls_or_cursors": 0
+  },
+  "new_response_items": {
+    "agent": 30,
+    "user": 0,
+    "selected": 14,
+    "unselected_metadata_only": 16,
+    "unselected_existing_saved_ids": 15,
+    "new_out_of_scope_ids": 1
+  },
+  "body_time_scope": "New snapshot only; no individual message timestamp exposed",
+  "scope_stop": "One additional permitted pass finished; no rolling-window chasing"
+}

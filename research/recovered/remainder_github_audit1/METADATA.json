@@ -1,0 +1,2759 @@
+{
+  "data": {
+    "repository": {
+      "nameWithOwner": "ButaMonky/Hakushin067-Research-Knowledge",
+      "isPrivate": true,
+      "defaultBranchRef": {
+        "name": "develop",
+        "target": {
+          "oid": "525b37e43f26c7a95c2b3818f83ed9507a33d452"
+        }
+      },
+      "issues": {
+        "totalCount": 6,
+        "pageInfo": {
+          "hasNextPage": false,
+          "endCursor": "Y3Vyc29yOnYyOpK0MjAyNi0xMS0wM1QxMzoxNjoxNlrPAAAAAXCOaF0="
+        },
+        "nodes": [
+          {
+            "number": 1,
+            "title": "[KB recovery] KB-RC-20261031-22H-LOCAL-PREFLIGHT-SAFETY-01 — Local preflight safety refusal",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/1",
+            "state": "OPEN",
+            "updatedAt": "2026-10-31T13:24:06Z",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 2,
+            "title": "[KB GH-only VERIFY] KB-20261101-GITHUB-ONLY-TRIAGE-01: 9 nonstandard ID pairs + V9 current baseline",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/2",
+            "state": "OPEN",
+            "updatedAt": "2026-10-31T22:48:23Z",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 3,
+            "title": "[KB REA recovery] REA-20261101-03H-16H-TRIAGE: 14 IDs / 67 Library files / GH README entry fixes",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/3",
+            "state": "OPEN",
+            "updatedAt": "2026-11-01T18:08:48Z",
+            "comments": {
+              "totalCount": 5,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": "Y3Vyc29yOnYyOpHPAAAAAYcdwdU="
+              },
+              "nodes": [
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABhuR6nQ",
+                  "databaseId": 6558087837,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/3#issuecomment-6558087837",
+                  "createdAt": "2026-11-01T12:42:09Z",
+                  "updatedAt": "2026-11-01T12:42:09Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABhuUyQw",
+                  "databaseId": 6558134851,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/3#issuecomment-6558134851",
+                  "createdAt": "2026-11-01T12:46:41Z",
+                  "updatedAt": "2026-11-01T12:46:41Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABhw9tTA",
+                  "databaseId": 6560902476,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/3#issuecomment-6560902476",
+                  "createdAt": "2026-11-01T16:48:11Z",
+                  "updatedAt": "2026-11-01T16:48:11Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABhxiOZQ",
+                  "databaseId": 6561500773,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/3#issuecomment-6561500773",
+                  "createdAt": "2026-11-01T17:39:05Z",
+                  "updatedAt": "2026-11-01T17:39:05Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABhx3B1Q",
+                  "databaseId": 6561841621,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/3#issuecomment-6561841621",
+                  "createdAt": "2026-11-01T18:08:47Z",
+                  "updatedAt": "2026-11-01T18:08:47Z"
+                }
+              ]
+            }
+          },
+          {
+            "number": 4,
+            "title": "[KB linkage] KB-LINKAGE-20261101-1937 — source ID traceability and uncurated research queue",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4",
+            "state": "OPEN",
+            "updatedAt": "2026-11-05T07:09:58Z",
+            "comments": {
+              "totalCount": 58,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": "Y3Vyc29yOnYyOpHPAAAAAYx9-vI="
+              },
+              "nodes": [
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABhuFncg",
+                  "databaseId": 6557886322,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6557886322",
+                  "createdAt": "2026-11-01T12:23:03Z",
+                  "updatedAt": "2026-11-01T12:23:03Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABhuFpkA",
+                  "databaseId": 6557886864,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6557886864",
+                  "createdAt": "2026-11-01T12:23:05Z",
+                  "updatedAt": "2026-11-01T12:23:05Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABhuFrMg",
+                  "databaseId": 6557887282,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6557887282",
+                  "createdAt": "2026-11-01T12:23:08Z",
+                  "updatedAt": "2026-11-01T12:23:08Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABhuGLVQ",
+                  "databaseId": 6557895509,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6557895509",
+                  "createdAt": "2026-11-01T12:23:53Z",
+                  "updatedAt": "2026-11-01T12:23:53Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABhuGM6Q",
+                  "databaseId": 6557895913,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6557895913",
+                  "createdAt": "2026-11-01T12:23:55Z",
+                  "updatedAt": "2026-11-01T12:23:55Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABhuGhFQ",
+                  "databaseId": 6557901077,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6557901077",
+                  "createdAt": "2026-11-01T12:24:23Z",
+                  "updatedAt": "2026-11-01T12:24:23Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABhuGj4Q",
+                  "databaseId": 6557901793,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6557901793",
+                  "createdAt": "2026-11-01T12:24:27Z",
+                  "updatedAt": "2026-11-01T12:24:27Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABhuGmaQ",
+                  "databaseId": 6557902441,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6557902441",
+                  "createdAt": "2026-11-01T12:24:30Z",
+                  "updatedAt": "2026-11-01T12:24:30Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABhuGoLQ",
+                  "databaseId": 6557902893,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6557902893",
+                  "createdAt": "2026-11-01T12:24:32Z",
+                  "updatedAt": "2026-11-01T12:24:32Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABhuGqSw",
+                  "databaseId": 6557903435,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6557903435",
+                  "createdAt": "2026-11-01T12:24:35Z",
+                  "updatedAt": "2026-11-01T12:24:35Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABhuG7kA",
+                  "databaseId": 6557907856,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6557907856",
+                  "createdAt": "2026-11-01T12:24:59Z",
+                  "updatedAt": "2026-11-01T12:24:59Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABhuG9RQ",
+                  "databaseId": 6557908293,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6557908293",
+                  "createdAt": "2026-11-01T12:25:01Z",
+                  "updatedAt": "2026-11-01T12:25:01Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABhuHAOg",
+                  "databaseId": 6557909050,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6557909050",
+                  "createdAt": "2026-11-01T12:25:05Z",
+                  "updatedAt": "2026-11-01T12:25:05Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABhuHCZw",
+                  "databaseId": 6557909607,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6557909607",
+                  "createdAt": "2026-11-01T12:25:08Z",
+                  "updatedAt": "2026-11-01T12:25:08Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABhuHyTQ",
+                  "databaseId": 6557921869,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6557921869",
+                  "createdAt": "2026-11-01T12:26:11Z",
+                  "updatedAt": "2026-11-01T12:26:11Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABhubZIw",
+                  "databaseId": 6558243107,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6558243107",
+                  "createdAt": "2026-11-01T12:56:43Z",
+                  "updatedAt": "2026-11-01T12:56:43Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABhvfHnQ",
+                  "databaseId": 6559352733,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6559352733",
+                  "createdAt": "2026-11-01T14:33:42Z",
+                  "updatedAt": "2026-11-01T14:33:42Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABhzlRhg",
+                  "databaseId": 6563647878,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6563647878",
+                  "createdAt": "2026-11-01T20:45:30Z",
+                  "updatedAt": "2026-11-01T20:47:50Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABhzz10g",
+                  "databaseId": 6563886546,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6563886546",
+                  "createdAt": "2026-11-01T21:06:46Z",
+                  "updatedAt": "2026-11-01T21:06:46Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABiglxFg",
+                  "databaseId": 6610841878,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6610841878",
+                  "createdAt": "2026-11-03T17:25:00Z",
+                  "updatedAt": "2026-11-03T17:25:00Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABij6h0Q",
+                  "databaseId": 6614327761,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6614327761",
+                  "createdAt": "2026-11-03T20:11:00Z",
+                  "updatedAt": "2026-11-03T20:11:00Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABik7wxQ",
+                  "databaseId": 6615396549,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6615396549",
+                  "createdAt": "2026-11-03T21:04:45Z",
+                  "updatedAt": "2026-11-03T21:05:54Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABimHx5A",
+                  "databaseId": 6616642020,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6616642020",
+                  "createdAt": "2026-11-03T22:08:52Z",
+                  "updatedAt": "2026-11-03T22:10:40Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABinTYLg",
+                  "databaseId": 6617880622,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6617880622",
+                  "createdAt": "2026-11-03T23:13:06Z",
+                  "updatedAt": "2026-11-03T23:14:12Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABioLr_w",
+                  "databaseId": 6618803199,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6618803199",
+                  "createdAt": "2026-11-04T00:10:01Z",
+                  "updatedAt": "2026-11-04T00:10:01Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABipDi2g",
+                  "databaseId": 6619718362,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6619718362",
+                  "createdAt": "2026-11-04T01:07:48Z",
+                  "updatedAt": "2026-11-04T01:07:48Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABip4DJg",
+                  "databaseId": 6620578598,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6620578598",
+                  "createdAt": "2026-11-04T02:06:07Z",
+                  "updatedAt": "2026-11-04T02:07:09Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABiqp6oQ",
+                  "databaseId": 6621395617,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6621395617",
+                  "createdAt": "2026-11-04T03:04:19Z",
+                  "updatedAt": "2026-11-04T03:04:19Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABirfTNA",
+                  "databaseId": 6622270260,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6622270260",
+                  "createdAt": "2026-11-04T04:07:35Z",
+                  "updatedAt": "2026-11-04T04:07:35Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABisSYZA",
+                  "databaseId": 6623107172,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6623107172",
+                  "createdAt": "2026-11-04T05:08:31Z",
+                  "updatedAt": "2026-11-04T05:09:39Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABitHGug",
+                  "databaseId": 6623971002,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6623971002",
+                  "createdAt": "2026-11-04T06:10:04Z",
+                  "updatedAt": "2026-11-04T06:11:08Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABit82CA",
+                  "databaseId": 6624851464,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6624851464",
+                  "createdAt": "2026-11-04T07:06:16Z",
+                  "updatedAt": "2026-11-04T07:06:32Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABiu9eaw",
+                  "databaseId": 6625910379,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6625910379",
+                  "createdAt": "2026-11-04T08:08:45Z",
+                  "updatedAt": "2026-11-04T08:09:49Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABiv6zJg",
+                  "databaseId": 6626915110,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6626915110",
+                  "createdAt": "2026-11-04T09:02:49Z",
+                  "updatedAt": "2026-11-04T09:05:46Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABixCd4Q",
+                  "databaseId": 6628089313,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6628089313",
+                  "createdAt": "2026-11-04T10:08:00Z",
+                  "updatedAt": "2026-11-04T10:08:00Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABixINJQ",
+                  "databaseId": 6628183333,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6628183333",
+                  "createdAt": "2026-11-04T10:13:31Z",
+                  "updatedAt": "2026-11-04T10:13:31Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABiyCCUQ",
+                  "databaseId": 6629130833,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6629130833",
+                  "createdAt": "2026-11-04T11:10:37Z",
+                  "updatedAt": "2026-11-04T11:12:22Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABizFUTg",
+                  "databaseId": 6630233166,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6630233166",
+                  "createdAt": "2026-11-04T12:10:16Z",
+                  "updatedAt": "2026-11-04T12:10:16Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABi0TAKg",
+                  "databaseId": 6631505962,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6631505962",
+                  "createdAt": "2026-11-04T13:10:54Z",
+                  "updatedAt": "2026-11-04T13:12:01Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABi1ht2A",
+                  "databaseId": 6632795608,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6632795608",
+                  "createdAt": "2026-11-04T14:09:44Z",
+                  "updatedAt": "2026-11-04T14:10:46Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABi228yw",
+                  "databaseId": 6634192075,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6634192075",
+                  "createdAt": "2026-11-04T15:09:13Z",
+                  "updatedAt": "2026-11-04T15:10:37Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABi4Pv6A",
+                  "databaseId": 6635646952,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6635646952",
+                  "createdAt": "2026-11-04T16:11:40Z",
+                  "updatedAt": "2026-11-04T16:11:40Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABi5gktg",
+                  "databaseId": 6636971190,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6636971190",
+                  "createdAt": "2026-11-04T17:09:35Z",
+                  "updatedAt": "2026-11-04T17:09:35Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABi6tRAQ",
+                  "databaseId": 6638227713,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6638227713",
+                  "createdAt": "2026-11-04T18:07:08Z",
+                  "updatedAt": "2026-11-04T18:08:10Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABi8CVIA",
+                  "databaseId": 6639621408,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6639621408",
+                  "createdAt": "2026-11-04T19:09:55Z",
+                  "updatedAt": "2026-11-04T19:09:55Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABi9Q0Kw",
+                  "databaseId": 6640907307,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6640907307",
+                  "createdAt": "2026-11-04T20:08:54Z",
+                  "updatedAt": "2026-11-04T20:09:57Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABi-cn4Q",
+                  "databaseId": 6642149345,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6642149345",
+                  "createdAt": "2026-11-04T21:08:05Z",
+                  "updatedAt": "2026-11-04T21:08:38Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABi_qGbw",
+                  "databaseId": 6643418735,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6643418735",
+                  "createdAt": "2026-11-04T22:10:48Z",
+                  "updatedAt": "2026-11-04T22:14:45Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABjAsudw",
+                  "databaseId": 6644510327,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6644510327",
+                  "createdAt": "2026-11-04T23:07:39Z",
+                  "updatedAt": "2026-11-04T23:08:53Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABjB6miA",
+                  "databaseId": 6645786248,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6645786248",
+                  "createdAt": "2026-11-05T00:08:45Z",
+                  "updatedAt": "2026-11-05T00:08:45Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABjC2UYg",
+                  "databaseId": 6646764642,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6646764642",
+                  "createdAt": "2026-11-05T01:08:07Z",
+                  "updatedAt": "2026-11-05T01:08:07Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABjC4C0Q",
+                  "databaseId": 6646792913,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6646792913",
+                  "createdAt": "2026-11-05T01:09:45Z",
+                  "updatedAt": "2026-11-05T01:09:45Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABjDvcmw",
+                  "databaseId": 6647700635,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6647700635",
+                  "createdAt": "2026-11-05T02:10:18Z",
+                  "updatedAt": "2026-11-05T02:11:41Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABjEn74g",
+                  "databaseId": 6648626146,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6648626146",
+                  "createdAt": "2026-11-05T03:10:26Z",
+                  "updatedAt": "2026-11-05T03:10:26Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABjFbn5w",
+                  "databaseId": 6649472999,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6649472999",
+                  "createdAt": "2026-11-05T04:12:23Z",
+                  "updatedAt": "2026-11-05T04:15:16Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABjGNrqg",
+                  "databaseId": 6650293162,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6650293162",
+                  "createdAt": "2026-11-05T05:12:05Z",
+                  "updatedAt": "2026-11-05T05:12:05Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABjHCv3w",
+                  "databaseId": 6651162591,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6651162591",
+                  "createdAt": "2026-11-05T06:13:02Z",
+                  "updatedAt": "2026-11-05T06:13:02Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABjH368g",
+                  "databaseId": 6652033778,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6652033778",
+                  "createdAt": "2026-11-05T07:09:57Z",
+                  "updatedAt": "2026-11-05T07:09:57Z"
+                }
+              ]
+            }
+          },
+          {
+            "number": 6,
+            "title": "[REA KB_CANDIDATE] 2026-11-01 17–21H CRT/EH4 native source map + recovery backlog",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/6",
+            "state": "OPEN",
+            "updatedAt": "2026-11-01T12:44:41Z",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 20,
+            "title": "【研究索引・起動障害】Vahren.exe が1〜3秒で終了（コード0）／DATのファイルロック（2026-11-03）",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/20",
+            "state": "OPEN",
+            "updatedAt": "2026-11-03T13:17:40Z",
+            "comments": {
+              "totalCount": 1,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": "Y3Vyc29yOnYyOpHPAAAAAYmuJJI="
+              },
+              "nodes": [
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABia4kkg",
+                  "databaseId": 6604858514,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/20#issuecomment-6604858514",
+                  "createdAt": "2026-11-03T13:17:40Z",
+                  "updatedAt": "2026-11-03T13:17:40Z"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "pullRequests": {
+        "totalCount": 54,
+        "pageInfo": {
+          "hasNextPage": false,
+          "endCursor": "Y3Vyc29yOnYyOpHPAAAAATQdh7A="
+        },
+        "nodes": [
+          {
+            "number": 5,
+            "title": "Research intake: archive uncurated findings safely and index E backlog",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/5",
+            "state": "CLOSED",
+            "updatedAt": "2026-11-01T12:48:30Z",
+            "headRefOid": "f48ee7c0fd8ef9520dc959c2786c8273ce1815cb",
+            "headRefName": "work/kb-research-intake-policy-20261101-r1",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 1,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": "Y3Vyc29yOnYyOpHPAAAAAYbk4Cg="
+              },
+              "nodes": [
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABhuTgKA",
+                  "databaseId": 6558113832,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/5#issuecomment-6558113832",
+                  "createdAt": "2026-11-01T12:44:43Z",
+                  "updatedAt": "2026-11-01T12:44:43Z"
+                }
+              ]
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 7,
+            "title": "B研究成果のGitHub保全: 2026-11-01 19–21HのT013/T024証拠と10–18H復旧キュー",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/7",
+            "state": "OPEN",
+            "updatedAt": "2026-11-01T12:46:43Z",
+            "headRefOid": "7798d943fe953c196f987cf0951ee194386b878d",
+            "headRefName": "work/b-evidence-20261101-19to21",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 8,
+            "title": "E intake: archive 6 source-verified offline T018/T019/T020 studies (NOT CURATED)",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/8",
+            "state": "OPEN",
+            "updatedAt": "2026-11-01T13:03:29Z",
+            "headRefOid": "997654f62f1cbbf40b164bce2ef698f8bdfc85a3",
+            "headRefName": "intake/E-20261101-2152-offline-0549-16h",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 9,
+            "title": "B intake: recover 10–12H T011/T024 evidence and 22H two-caller dispatch crossjoin",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/9",
+            "state": "OPEN",
+            "updatedAt": "2026-11-01T14:31:17Z",
+            "headRefOid": "86def35f58fa62cf1b3798ecbf9c623760bb3fc1",
+            "headRefName": "work/b-evidence-20261101-22",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 1,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": "Y3Vyc29yOnYyOpHPAAAAAYb3S9I="
+              },
+              "nodes": [
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABhvdL0g",
+                  "databaseId": 6559321042,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/9#issuecomment-6559321042",
+                  "createdAt": "2026-11-01T14:31:17Z",
+                  "updatedAt": "2026-11-01T14:31:17Z"
+                }
+              ]
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 10,
+            "title": "REA source intake: recover five native-static findings (incl. 22H __fsopen scope)",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/10",
+            "state": "OPEN",
+            "updatedAt": "2026-11-01T13:51:57Z",
+            "headRefOid": "f9384eeb024e25a871438e56cffeef064245cd0b",
+            "headRefName": "intake/rea-20261101-22h-fsopen-native-r1",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 11,
+            "title": "E/T020 intake: recover six source-verified training and viewflag acceptance studies",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/11",
+            "state": "OPEN",
+            "updatedAt": "2026-11-01T14:05:19Z",
+            "headRefOid": "91b7a6fd1be51a33d52df4ccd32b5b439dcb32a7",
+            "headRefName": "intake/E-20261101-2249-t020-training-viewflag-r1",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 12,
+            "title": "B intake: recover 13–15H distance/comparator evidence and 23H T024 optional-double fallback",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/12",
+            "state": "OPEN",
+            "updatedAt": "2026-11-01T14:31:21Z",
+            "headRefOid": "b12461bcbeec5f276a5db703166e65f03a535c80",
+            "headRefName": "work/b-evidence-20261101-23",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 1,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": "Y3Vyc29yOnYyOpHPAAAAAYb3T80="
+              },
+              "nodes": [
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABhvdPzQ",
+                  "databaseId": 6559322061,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/12#issuecomment-6559322061",
+                  "createdAt": "2026-11-01T14:31:21Z",
+                  "updatedAt": "2026-11-01T14:31:21Z"
+                }
+              ]
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 13,
+            "title": "[REA intake] 23H __getstream locking + recover 01H–02H residue (4 source IDs)",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/13",
+            "state": "OPEN",
+            "updatedAt": "2026-11-01T14:46:57Z",
+            "headRefOid": "8fb6fca041740e69d58434cfedc64037d204b3fd",
+            "headRefName": "intake/rea-20261101-23h-getstream-residue-r1",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 14,
+            "title": "E/T020 intake: source-verifiable 09–16H acceptance and rank/RNG corrections (8 IDs)",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/14",
+            "state": "OPEN",
+            "updatedAt": "2026-11-01T14:59:32Z",
+            "headRefOid": "d2891492f86f19444252dd330cc7ee7baf2f9aef",
+            "headRefName": "intake/E-20261101-2352-t020-09h16h",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 15,
+            "title": "B intake: recover 16–18H evidence and correct 0x542280 native atan2/sentinel path",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/15",
+            "state": "OPEN",
+            "updatedAt": "2026-11-01T15:16:22Z",
+            "headRefOid": "8167e8401a2125e815ed5db846ad63b423b62d77",
+            "headRefName": "work/b-evidence-20261102-00",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 16,
+            "title": "[REA intake] Owner research archive (266 indexed IDs) — curator handoff / NOT CURATED",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/16",
+            "state": "OPEN",
+            "updatedAt": "2026-11-05T08:37:22Z",
+            "headRefOid": "26b6d1946169bcd510a1cf9f34a5a68a46fcfaa5",
+            "headRefName": "intake/rea-20261102-00h-file-lock-residue-r1",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 13,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": "Y3Vyc29yOnYyOpHPAAAAAYxRHIw="
+              },
+              "nodes": [
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABhyTn9A",
+                  "databaseId": 6562310132,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/16#issuecomment-6562310132",
+                  "createdAt": "2026-11-01T18:48:32Z",
+                  "updatedAt": "2026-11-01T18:48:32Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABiCrofg",
+                  "databaseId": 6579480702,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/16#issuecomment-6579480702",
+                  "createdAt": "2026-11-02T14:20:14Z",
+                  "updatedAt": "2026-11-02T14:20:14Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABiD90Nw",
+                  "databaseId": 6580827191,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/16#issuecomment-6580827191",
+                  "createdAt": "2026-11-02T15:19:34Z",
+                  "updatedAt": "2026-11-02T15:19:34Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABiKN_jA",
+                  "databaseId": 6587383692,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/16#issuecomment-6587383692",
+                  "createdAt": "2026-11-02T20:13:31Z",
+                  "updatedAt": "2026-11-02T20:13:31Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABiLo4ew",
+                  "databaseId": 6588872827,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/16#issuecomment-6588872827",
+                  "createdAt": "2026-11-02T21:26:54Z",
+                  "updatedAt": "2026-11-02T21:26:54Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABiUIOmg",
+                  "databaseId": 6597775002,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/16#issuecomment-6597775002",
+                  "createdAt": "2026-11-03T07:18:04Z",
+                  "updatedAt": "2026-11-03T07:18:04Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABib4Q4w",
+                  "databaseId": 6605902051,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/16#issuecomment-6605902051",
+                  "createdAt": "2026-11-03T14:05:29Z",
+                  "updatedAt": "2026-11-03T14:05:29Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABida1vw",
+                  "databaseId": 6607517119,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/16#issuecomment-6607517119",
+                  "createdAt": "2026-11-03T15:13:53Z",
+                  "updatedAt": "2026-11-03T15:13:53Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABieC2yQ",
+                  "databaseId": 6608172745,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/16#issuecomment-6608172745",
+                  "createdAt": "2026-11-03T15:41:14Z",
+                  "updatedAt": "2026-11-03T15:41:14Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABieyFPA",
+                  "databaseId": 6608946492,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/16#issuecomment-6608946492",
+                  "createdAt": "2026-11-03T16:06:09Z",
+                  "updatedAt": "2026-11-03T16:06:09Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABie3Bqw",
+                  "databaseId": 6609027499,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/16#issuecomment-6609027499",
+                  "createdAt": "2026-11-03T16:08:47Z",
+                  "updatedAt": "2026-11-03T16:08:47Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABie-YUQ",
+                  "databaseId": 6609147985,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/16#issuecomment-6609147985",
+                  "createdAt": "2026-11-03T16:12:42Z",
+                  "updatedAt": "2026-11-03T16:12:42Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABjFEcjA",
+                  "databaseId": 6649093260,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/16#issuecomment-6649093260",
+                  "createdAt": "2026-11-05T03:44:08Z",
+                  "updatedAt": "2026-11-05T03:44:08Z"
+                }
+              ]
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 17,
+            "title": "E intake: 193 historical IDs, reproducibility & curator selective-adoption queue (NOT CURATED)",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/17",
+            "state": "OPEN",
+            "updatedAt": "2026-11-05T09:57:51Z",
+            "headRefOid": "6abaaa51956e6915a9964e3fefb779222927bdd1",
+            "headRefName": "intake/E-20261102-0049-t020-17h23h",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 17,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": "Y3Vyc29yOnYyOpHPAAAAAYv65xI="
+              },
+              "nodes": [
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABh8F-FA",
+                  "databaseId": 6572572180,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/17#issuecomment-6572572180",
+                  "createdAt": "2026-11-02T08:28:36Z",
+                  "updatedAt": "2026-11-02T08:28:36Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABh88iKQ",
+                  "databaseId": 6573466153,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/17#issuecomment-6573466153",
+                  "createdAt": "2026-11-02T09:18:54Z",
+                  "updatedAt": "2026-11-02T09:18:54Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABh925vg",
+                  "databaseId": 6574422462,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/17#issuecomment-6574422462",
+                  "createdAt": "2026-11-02T10:06:54Z",
+                  "updatedAt": "2026-11-02T10:09:49Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABh--n4Q",
+                  "databaseId": 6575597537,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/17#issuecomment-6575597537",
+                  "createdAt": "2026-11-02T11:07:12Z",
+                  "updatedAt": "2026-11-02T11:07:12Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABiAHQHA",
+                  "databaseId": 6576787484,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/17#issuecomment-6576787484",
+                  "createdAt": "2026-11-02T12:10:29Z",
+                  "updatedAt": "2026-11-02T12:10:29Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABiBYPgg",
+                  "databaseId": 6578114434,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/17#issuecomment-6578114434",
+                  "createdAt": "2026-11-02T13:17:22Z",
+                  "updatedAt": "2026-11-02T13:17:22Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABiOPPCw",
+                  "databaseId": 6591598347,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/17#issuecomment-6591598347",
+                  "createdAt": "2026-11-02T23:57:52Z",
+                  "updatedAt": "2026-11-02T23:57:52Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABiUH3Kg",
+                  "databaseId": 6597769002,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/17#issuecomment-6597769002",
+                  "createdAt": "2026-11-03T07:17:41Z",
+                  "updatedAt": "2026-11-03T07:18:57Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABiU4G9w",
+                  "databaseId": 6598559479,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/17#issuecomment-6598559479",
+                  "createdAt": "2026-11-03T08:07:44Z",
+                  "updatedAt": "2026-11-03T08:10:03Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABiWACZQ",
+                  "databaseId": 6599737957,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/17#issuecomment-6599737957",
+                  "createdAt": "2026-11-03T09:14:29Z",
+                  "updatedAt": "2026-11-03T09:14:29Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABiXByLw",
+                  "databaseId": 6600815151,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/17#issuecomment-6600815151",
+                  "createdAt": "2026-11-03T10:10:02Z",
+                  "updatedAt": "2026-11-03T10:12:07Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABiYUEYw",
+                  "databaseId": 6602163299,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/17#issuecomment-6602163299",
+                  "createdAt": "2026-11-03T11:06:19Z",
+                  "updatedAt": "2026-11-03T11:06:19Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABiZdoSg",
+                  "databaseId": 6603368522,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/17#issuecomment-6603368522",
+                  "createdAt": "2026-11-03T12:07:19Z",
+                  "updatedAt": "2026-11-03T12:08:13Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABiasTRA",
+                  "databaseId": 6604657476,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/17#issuecomment-6604657476",
+                  "createdAt": "2026-11-03T13:08:35Z",
+                  "updatedAt": "2026-11-03T13:10:04Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABibrgyg",
+                  "databaseId": 6605693130,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/17#issuecomment-6605693130",
+                  "createdAt": "2026-11-03T13:56:03Z",
+                  "updatedAt": "2026-11-03T13:56:03Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABicF1TA",
+                  "databaseId": 6606124364,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/17#issuecomment-6606124364",
+                  "createdAt": "2026-11-03T14:15:08Z",
+                  "updatedAt": "2026-11-03T14:15:08Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABi_rnEg",
+                  "databaseId": 6643443474,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/17#issuecomment-6643443474",
+                  "createdAt": "2026-11-04T22:12:05Z",
+                  "updatedAt": "2026-11-04T22:12:05Z"
+                }
+              ]
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 18,
+            "title": "B intake: historical battle/skill/AI evidence — curator selective adoption (NOT CURATED)",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18",
+            "state": "OPEN",
+            "updatedAt": "2026-11-05T09:14:06Z",
+            "headRefOid": "83544d1038afb1a875b6ed605408e07e3a384f49",
+            "headRefName": "work/b-evidence-20261102-01",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 15,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": "Y3Vyc29yOnYyOpHPAAAAAYyd0Kw="
+              },
+              "nodes": [
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABhx3b7A",
+                  "databaseId": 6561848300,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18#issuecomment-6561848300",
+                  "createdAt": "2026-11-01T18:09:20Z",
+                  "updatedAt": "2026-11-01T18:09:20Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABhyDwaQ",
+                  "databaseId": 6562050153,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18#issuecomment-6562050153",
+                  "createdAt": "2026-11-01T18:26:21Z",
+                  "updatedAt": "2026-11-01T18:26:21Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABhyVqqg",
+                  "databaseId": 6562343594,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18#issuecomment-6562343594",
+                  "createdAt": "2026-11-01T18:51:22Z",
+                  "updatedAt": "2026-11-01T18:51:22Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABh4t3Iw",
+                  "databaseId": 6569031459,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18#issuecomment-6569031459",
+                  "createdAt": "2026-11-02T04:25:32Z",
+                  "updatedAt": "2026-11-02T04:25:32Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABh5QeVQ",
+                  "databaseId": 6569598549,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18#issuecomment-6569598549",
+                  "createdAt": "2026-11-02T05:11:35Z",
+                  "updatedAt": "2026-11-02T05:12:34Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABh6BeqQ",
+                  "databaseId": 6570401449,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18#issuecomment-6570401449",
+                  "createdAt": "2026-11-02T06:10:20Z",
+                  "updatedAt": "2026-11-02T06:10:20Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABh6zdXQ",
+                  "databaseId": 6571220317,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18#issuecomment-6571220317",
+                  "createdAt": "2026-11-02T07:05:45Z",
+                  "updatedAt": "2026-11-02T07:09:07Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABiLpj-Q",
+                  "databaseId": 6588883961,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18#issuecomment-6588883961",
+                  "createdAt": "2026-11-02T21:27:28Z",
+                  "updatedAt": "2026-11-02T21:27:28Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABiSd-Uw",
+                  "databaseId": 6596034131,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18#issuecomment-6596034131",
+                  "createdAt": "2026-11-03T05:13:44Z",
+                  "updatedAt": "2026-11-03T05:13:44Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABiTPdPA",
+                  "databaseId": 6596844860,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18#issuecomment-6596844860",
+                  "createdAt": "2026-11-03T06:14:29Z",
+                  "updatedAt": "2026-11-03T06:14:29Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABifMIhw",
+                  "databaseId": 6609373319,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18#issuecomment-6609373319",
+                  "createdAt": "2026-11-03T16:21:00Z",
+                  "updatedAt": "2026-11-03T16:21:00Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABifPvuw",
+                  "databaseId": 6609432507,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18#issuecomment-6609432507",
+                  "createdAt": "2026-11-03T16:23:28Z",
+                  "updatedAt": "2026-11-03T16:23:28Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABifV7kQ",
+                  "databaseId": 6609533841,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18#issuecomment-6609533841",
+                  "createdAt": "2026-11-03T16:27:48Z",
+                  "updatedAt": "2026-11-03T16:28:34Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABjIxDaA",
+                  "databaseId": 6652969832,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18#issuecomment-6652969832",
+                  "createdAt": "2026-11-05T08:06:05Z",
+                  "updatedAt": "2026-11-05T08:06:05Z"
+                },
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABjJ3QrA",
+                  "databaseId": 6654120108,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18#issuecomment-6654120108",
+                  "createdAt": "2026-11-05T09:10:05Z",
+                  "updatedAt": "2026-11-05T09:11:25Z"
+                }
+              ]
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 19,
+            "title": "[研究・起動障害] DAT残留ロックでVahren.exeがExitCode 0終了する再現と修復（11/03）",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/19",
+            "state": "OPEN",
+            "updatedAt": "2026-11-03T13:17:33Z",
+            "headRefOid": "300a3c0666961b390006be08a72d89a5ea4bee7b",
+            "headRefName": "work/kb-STARTUP-FILELOCK-20261103",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 1,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": "Y3Vyc29yOnYyOpHPAAAAAYmuGk4="
+              },
+              "nodes": [
+                {
+                  "id": "IC_kwDOVb7AvM8AAAABia4aTg",
+                  "databaseId": 6604855886,
+                  "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/19#issuecomment-6604855886",
+                  "createdAt": "2026-11-03T13:17:33Z",
+                  "updatedAt": "2026-11-03T13:17:33Z"
+                }
+              ]
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 21,
+            "title": "関数・メモリ事典を検索可能にし、ローカル研究8文書を回収",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/21",
+            "state": "MERGED",
+            "updatedAt": "2026-11-04T17:44:21Z",
+            "headRefOid": "f39157d407e25af9c40b2a288d4b6c5009e98353",
+            "headRefName": "work/kb-reference-publish-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 22,
+            "title": "経験値・召喚10本文と再現資料6件を回収し、本文収録範囲を追跡",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/22",
+            "state": "MERGED",
+            "updatedAt": "2026-11-04T17:55:47Z",
+            "headRefOid": "a061b4255a8d029b6ad83e40988cf7c6651f2ae2",
+            "headRefName": "work/kb-recovery-exp-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 23,
+            "title": "主要解析記録の部分版から189項目の出典へ直接たどれるようにする",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/23",
+            "state": "MERGED",
+            "updatedAt": "2026-11-04T18:10:01Z",
+            "headRefOid": "3c2d365d12be67bc0284f427276aee83342e7cdd",
+            "headRefName": "work/kb-findings-links-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 24,
+            "title": "定期研究21回と引用元11本文を回収し、未辞書化メモリ項目を検索可能にする",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/24",
+            "state": "MERGED",
+            "updatedAt": "2026-11-04T18:33:36Z",
+            "headRefOid": "cd03505b5665e3fd58379ef792880251e2fdacad",
+            "headRefName": "work/kb-schedule-runs-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 25,
+            "title": "解析57本文を追加し、メモリ索引を分割して継続更新を検査する",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/25",
+            "state": "MERGED",
+            "updatedAt": "2026-11-04T19:01:22Z",
+            "headRefOid": "57c70a85762e5b616706a95a6655c660b35a9c68",
+            "headRefName": "work/kb-report-batch-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 26,
+            "title": "新しい本文・索引ファイルのGit登録漏れを送信前に検出する",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/26",
+            "state": "MERGED",
+            "updatedAt": "2026-11-04T19:11:19Z",
+            "headRefOid": "f47008b024f789bce4c99f7c83f3b16cdc88c1d9",
+            "headRefName": "work/kb-publish-inputs-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 27,
+            "title": "研究70本文を追加し、担当PR・Issueの所在を照合する",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/27",
+            "state": "MERGED",
+            "updatedAt": "2026-11-04T19:37:54Z",
+            "headRefOid": "d12075db52290a1bfc70e95ee537f8af034fb3dc",
+            "headRefName": "work/kb-source-batch2-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 28,
+            "title": "Add portable function call graph and recover 41 local research reports",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/28",
+            "state": "MERGED",
+            "updatedAt": "2026-11-04T19:57:49Z",
+            "headRefOid": "14b3cbc83c2188680a29eb7fcae8d859072c62ba",
+            "headRefName": "work/kb-call-graph-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 29,
+            "title": "Curate memory readers and writers with source-backed report recovery",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/29",
+            "state": "MERGED",
+            "updatedAt": "2026-11-04T20:08:39Z",
+            "headRefOid": "c620cfe2853e298027e9c76546512ef0717c911d",
+            "headRefName": "work/kb-memory-relations-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 30,
+            "title": "Expose source-backed interpretation corrections and recover SAVE research",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/30",
+            "state": "MERGED",
+            "updatedAt": "2026-11-04T20:18:27Z",
+            "headRefOid": "c1fcb51eb900f3b4d09cdbc82d0e90dade1b2d67",
+            "headRefName": "work/kb-corrections-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 31,
+            "title": "Recover 41 authored reports and map current local research documents",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/31",
+            "state": "MERGED",
+            "updatedAt": "2026-11-04T20:33:26Z",
+            "headRefOid": "782de29010619e39d97a524d35fbe349e9eb19da",
+            "headRefName": "work/kb-source-batch4-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 32,
+            "title": "Search reviewed report text and recover 92 authored sources",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/32",
+            "state": "MERGED",
+            "updatedAt": "2026-11-04T20:51:36Z",
+            "headRefOid": "43233091c991b88bfc4ce2fe019776ed5eb2d375",
+            "headRefName": "work/kb-source-batch5-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 33,
+            "title": "Curate typed script-engine memory and recover E REA reports",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/33",
+            "state": "MERGED",
+            "updatedAt": "2026-11-04T21:10:29Z",
+            "headRefOid": "69de6a29e3c061806451709a78637e7a5aa345b8",
+            "headRefName": "work/kb-memory-and-recovery-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 34,
+            "title": "Link battle-limit globals and recover 90 reports with faster source lookup",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/34",
+            "state": "MERGED",
+            "updatedAt": "2026-11-04T21:30:00Z",
+            "headRefOid": "96e20643a6e3db84a6b097945f038d5a8a79831f",
+            "headRefName": "work/kb-limit-and-recovery-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 35,
+            "title": "Recover 127 reports and preserve selected old A C D chat records",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/35",
+            "state": "MERGED",
+            "updatedAt": "2026-11-04T21:51:29Z",
+            "headRefOid": "b070349917d2692c6a4e6498dc62e9aa3e5097ae",
+            "headRefName": "work/kb-source-batch6-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 36,
+            "title": "関数・メモリの入口整理と追加135本文の回収",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/36",
+            "state": "MERGED",
+            "updatedAt": "2026-11-04T22:07:43Z",
+            "headRefOid": "a91676bf571de37b0d9ec8dacb6f99941cc501b1",
+            "headRefName": "work/kb-source-batch7-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 37,
+            "title": "HP関連メモリ4項目の根拠付き採録と追加85本文",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/37",
+            "state": "MERGED",
+            "updatedAt": "2026-11-04T22:21:55Z",
+            "headRefOid": "c8b9686a136763b678495afafb4cd13b9b9fde8a",
+            "headRefName": "work/kb-runtime-unit-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 38,
+            "title": "旧Aチャットの本文対応と追加86文書・GitHub所在の整理",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/38",
+            "state": "MERGED",
+            "updatedAt": "2026-11-04T22:36:22Z",
+            "headRefOid": "edd10819f9b2755edb8c63693f49f3ea54052b68",
+            "headRefName": "work/kb-chat-source-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 39,
+            "title": "VM主要本文の回収・自然完了の訂正と旧C/D回答の保全",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/39",
+            "state": "MERGED",
+            "updatedAt": "2026-11-04T22:52:09Z",
+            "headRefOid": "68c228b1bd1022920a926caa9481950467f8ceb8",
+            "headRefName": "work/kb-vm-chat-history-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 40,
+            "title": "証拠テキスト検索・本文索引の分割と追加96原本の回収",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/40",
+            "state": "MERGED",
+            "updatedAt": "2026-11-04T23:19:14Z",
+            "headRefOid": "691bd90e1b193ffb1ab9368bacfca2e2310421ca",
+            "headRefName": "work/kb-json-evidence-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 41,
+            "title": "関数30件の出典補完と追加85本文・証拠JSONの対応整理",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/41",
+            "state": "MERGED",
+            "updatedAt": "2026-11-04T23:40:08Z",
+            "headRefOid": "d214fec648b3d15007bb9b81626a97ab34d2c641",
+            "headRefName": "work/kb-json-support-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 42,
+            "title": "追加105研究本文の検索統合と研究チャット93候補の所在照合",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/42",
+            "state": "MERGED",
+            "updatedAt": "2026-11-05T00:07:31Z",
+            "headRefOid": "9e7cb38879c69e0250300845da1e1c9e1bd236bb",
+            "headRefName": "work/kb-recovery-largebatch-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 43,
+            "title": "待機・時計・実行モードのメモリ関係を採録し99本文を追加",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/43",
+            "state": "MERGED",
+            "updatedAt": "2026-11-05T00:26:43Z",
+            "headRefOid": "2a6af7b389d82a92b85bef475aaf981d31d1990d",
+            "headRefName": "work/kb-memory-intake-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 44,
+            "title": "残存研究150本文の検索統合とGitHub受付・改版の照合",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/44",
+            "state": "MERGED",
+            "updatedAt": "2026-11-05T00:47:52Z",
+            "headRefOid": "60bffac58f4b55d56374ab3f15513b468224c5c0",
+            "headRefName": "work/kb-residual-reports-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 45,
+            "title": "勢力・領地検索の辞書訂正とメモリ4関係、追加31本文の採録",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/45",
+            "state": "MERGED",
+            "updatedAt": "2026-11-05T01:17:18Z",
+            "headRefOid": "7def491b8b982b624f8c301c6c903047e99b1a2e",
+            "headRefName": "work/kb-memory-scope-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 46,
+            "title": "旧研究・Issueの出典対応を補完し、文書名の検索を優先",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/46",
+            "state": "MERGED",
+            "updatedAt": "2026-11-05T01:45:24Z",
+            "headRefOid": "fed0edb892178834a2d777fe99fdfd3765257ce1",
+            "headRefName": "work/kb-outside-md-issues-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 47,
+            "title": "主報告とIssueの根拠を関数・メモリ事典へ接続する",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/47",
+            "state": "MERGED",
+            "updatedAt": "2026-11-05T02:11:43Z",
+            "headRefOid": "5c4218a43c46e851c3481f2aea54e2565c9f2dae",
+            "headRefName": "work/kb-large-scope-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 48,
+            "title": "人とAIのための短い研究追加・訂正ガイドを入口に置く",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/48",
+            "state": "MERGED",
+            "updatedAt": "2026-11-05T02:19:52Z",
+            "headRefOid": "c5f7799b6a036e06ef9f5c84b4c5c8a80a925e89",
+            "headRefName": "work/kb-contributing-guide-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 49,
+            "title": "日本語に隣接するメモリ表記の検索と旧生成ページの整理を直す",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/49",
+            "state": "MERGED",
+            "updatedAt": "2026-11-05T02:40:13Z",
+            "headRefOid": "76819fcb21efbcf53045eec21fcfcb8c55f65543",
+            "headRefName": "work/kb-field-token-boundary-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 50,
+            "title": "後日の報告に合わせてキャッシュ補助関数とRTS条件の説明を訂正する",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/50",
+            "state": "MERGED",
+            "updatedAt": "2026-11-05T03:08:11Z",
+            "headRefOid": "a06d86cc84a565d03a58b668209010b03907646d",
+            "headRefName": "work/kb-cached-value-correction-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 51,
+            "title": "戦略進行の主報告・設定schemaと旧REFの固定版を収録する",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/51",
+            "state": "MERGED",
+            "updatedAt": "2026-11-05T03:53:47Z",
+            "headRefOid": "f812c04ba3db51235cc75ccebfac6bf12f1b3835",
+            "headRefName": "work/kb-format-intake-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 52,
+            "title": "元のファイル名・出典URIから保存文書を検索できるようにする",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/52",
+            "state": "MERGED",
+            "updatedAt": "2026-11-05T04:28:50Z",
+            "headRefOid": "b9ce5e523d56076c1ebf7ea32a2499da43bebfc9",
+            "headRefName": "work/kb-source-label-search-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 53,
+            "title": "関数・メモリ研究の未収録JSON記録30件を根拠付き検索へ追加",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/53",
+            "state": "MERGED",
+            "updatedAt": "2026-11-05T04:44:47Z",
+            "headRefOid": "355ec8ba1c7b1723f944bdf4547c9353112722ab",
+            "headRefName": "work/kb-authored-json-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 54,
+            "title": "研究記録55出典を検索へ追加し、従来一覧外の未照合候補を明示",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/54",
+            "state": "MERGED",
+            "updatedAt": "2026-11-05T05:00:38Z",
+            "headRefOid": "b347163cd3201b99f06ebdad0bb0882a4371f045",
+            "headRefName": "work/kb-json-receipts-more-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 55,
+            "title": "未登録6関数を一次資料から採録し、一覧外の135出典・127本文を収録",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/55",
+            "state": "MERGED",
+            "updatedAt": "2026-11-05T05:21:23Z",
+            "headRefOid": "190bf0987f4a7d14f6e2d0f38fc703996d15b9ec",
+            "headRefName": "work/kb-outside-map-research-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 56,
+            "title": "研究チャット・PR・未コミット文書を接続し、seek callbackと起動事例を採録",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/56",
+            "state": "MERGED",
+            "updatedAt": "2026-11-05T05:54:28Z",
+            "headRefOid": "24d3f3bfb1598d0b6ee1777f75ad59c5f079085a",
+            "headRefName": "work/kb-open-work-and-source-gaps-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 57,
+            "title": "表・JSONなどのメモリ表記検索を修正し、構造化研究22本文を接続",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/57",
+            "state": "MERGED",
+            "updatedAt": "2026-11-05T06:35:43Z",
+            "headRefOid": "68a9a917d651dffe23b2e1ee44ae7297f67b3dc7",
+            "headRefName": "work/kb-structured-evidence-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 58,
+            "title": "検証モデル・証拠票188本文を回収し、既収録1件の保留範囲を訂正",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/58",
+            "state": "MERGED",
+            "updatedAt": "2026-11-05T07:15:32Z",
+            "headRefOid": "a9f7fc663148f47d924c6753b3c5953416d96181",
+            "headRefName": "work/kb-json-model-evidence-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 59,
+            "title": "分野別196本文を収録し、CRT局所unwindの4CALL経路を採録",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/59",
+            "state": "MERGED",
+            "updatedAt": "2026-11-05T07:44:17Z",
+            "headRefOid": "5ab625346ef4bc32a6389d6236bc1e76e7a730d9",
+            "headRefName": "work/kb-json-domain-evidence-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          },
+          {
+            "number": 60,
+            "title": "TXT等118出典を回収し、同じnode+0x28の保存形式を区別",
+            "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/60",
+            "state": "MERGED",
+            "updatedAt": "2026-11-05T09:40:15Z",
+            "headRefOid": "525b37e43f26c7a95c2b3818f83ed9507a33d452",
+            "headRefName": "work/kb-remaining-text-roles-20261105",
+            "baseRefName": "develop",
+            "comments": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviews": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            },
+            "reviewThreads": {
+              "totalCount": 0,
+              "pageInfo": {
+                "hasNextPage": false,
+                "endCursor": null
+              },
+              "nodes": []
+            }
+          }
+        ]
+      }
+    }
+  }
+}

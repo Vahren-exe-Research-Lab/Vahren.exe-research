@@ -1661,7 +1661,7 @@
 | ratio + 0x288 | 1 | [1](fields/owner-ratio-2f04a79ef13b-001.md#field-288) |
 | raw + 0x88 | 1 | [1](fields/owner-raw-d7439bee2477-001.md#field-88) |
 | rawDWORD + 0x14 | 1 | [1](fields/owner-rawDWORD-602cb11a7cab-001.md#field-14) |
-| reader + 0xC | 1 | [1](fields/owner-reader-3d0941964aa3-001.md#field-c) |
+| reader + 0xC | 2 | [1](fields/owner-reader-3d0941964aa3-001.md#field-c) |
 | reader + 0x32C | 1 | [1](fields/owner-reader-3d0941964aa3-001.md#field-32c) |
 | rec + 0x1C | 1 | [1](fields/owner-rec-cb41b38387d6-001.md#field-1c) |
 | receiver + 0xC | 3 | [1](fields/owner-receiver-81bae876b705-001.md#field-c) |

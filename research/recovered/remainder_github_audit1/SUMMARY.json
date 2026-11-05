@@ -1,0 +1,24 @@
+{
+  "base": "525b37e43f26c7a95c2b3818f83ed9507a33d452",
+  "issues": 6,
+  "prs": 54,
+  "all_parent_and_comment_pages_terminal": true,
+  "comment_metadata_rows": 113,
+  "reviews": 0,
+  "review_threads": 0,
+  "changed_open_heads": [
+    16,
+    17,
+    18
+  ],
+  "additional_closed_head": 5,
+  "tree_research_locations": 1199,
+  "changed_same_pr_paths": 48,
+  "new_blob_metadata_locations": 15,
+  "research_location_states": {
+    "EXACT_CURRENT_TREE": 383,
+    "EXACT_PRIOR_PR_CATALOG": 801,
+    "NEW_BLOB_METADATA_LEAD": 15
+  },
+  "limits": "Metadata only; exact Git blob identity is not semantic adoption; no comment or blob body fetched here. Selected10 comment bodies are separate followup capture; remaining103 unreviewed."
+}

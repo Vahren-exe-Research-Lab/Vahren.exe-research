@@ -200,4 +200,194 @@
   本文 SHA256 `672ec140552396045fe7068806898e78e5f1c8afb02a90c1e3c9d3aacb89b195`
   元パス <code>rea_lab/headless_analysis/search_index/BATTLE_USER_20261021T164622798833Z_b8419f5d_EVENTS.jsonl</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2385-L2385)。
 
+- [BATTLE_LIVE_READONLY_23272_20261021T142240Z.json](../../research/recovered/remaining_capture_receipts7/reports/rea_lab/headless_analysis/search_index/BATTLE_LIVE_READONLY_23272_20261021T142240Z.json?plain=1#L1-L1) — `research/recovered/remaining_capture_receipts7/reports/rea_lab/headless_analysis/search_index/BATTLE_LIVE_READONLY_23272_20261021T142240Z.json`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 HEADER_ONLY_AUDIT_LEAD_AT_BASELINE_525b37。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2386-L2386)。制約・訂正 Dated authored original-state/count summary only; no new native/ABI/type/Golden/READY/atomicity/full-prebattle/strategic-writeback correctness. Pointers are reported session identities. No linked acquisition or execution.
+  本文 SHA256 `a9cf26501b619a5fcd3891038c8a05fb997e83d36ad90ae328e0bc71018d653d`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_LIVE_READONLY_23272_20261021T142240Z.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2386-L2386)。
+
+- [BATTLE_ORIGINAL_WAR_TREE_DECODE_V5_23272_20261021T144551063564Z.json](../../research/recovered/remaining_capture_receipts7/reports/rea_lab/headless_analysis/search_index/BATTLE_ORIGINAL_WAR_TREE_DECODE_V5_23272_20261021T144551063564Z.json?plain=1#L1-L1) — `research/recovered/remaining_capture_receipts7/reports/rea_lab/headless_analysis/search_index/BATTLE_ORIGINAL_WAR_TREE_DECODE_V5_23272_20261021T144551063564Z.json`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 HEADER_ONLY_AUDIT_LEAD_AT_BASELINE_525b37。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2387-L2387)。制約・訂正 Dated authored original-state/count summary only; no new native/ABI/type/Golden/READY/atomicity/full-prebattle/strategic-writeback correctness. Pointers are reported session identities. No linked acquisition or execution.
+  本文 SHA256 `05641c668bca02ee12dddb1136548d451d7875a775f00b6d4da77bf8ee88df29`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_ORIGINAL_WAR_TREE_DECODE_V5_23272_20261021T144551063564Z.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2387-L2387)。
+
+- [14時間67ファイルの独立Libraryバイト照合（GitHub正本への同期ではない）](../../research/recovered/github_comments_small1/data/comment_6558087837.md?plain=1#L2-L2) — `research/recovered/github_comments_small1/data/comment_6558087837.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 EXTERNAL_COMMENT_NOT_PREVIOUSLY_CAPTURED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2388-L2388)。制約・訂正 Captured connector body Unicode encoded UTF-8, not server database bytes. Historical author claims only; no linked source acquisition/native rerun/semantic promotion. Current body timestamp binding unavailable; pinned timestamps are prior metadata.
+  本文 SHA256 `a5795ebd2a17b09822cd9f219c28cbe99d2f1cd1f56ee7f79b7acb10879fd654`
+  元パス <code>https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/3#issuecomment-6558087837</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2388-L2388)。
+
+- [REA 03–16H 意味的統合下書き：14 IDの依存と訂正](../../research/recovered/github_comments_small1/data/comment_6558134851.md?plain=1#L2-L2) — `research/recovered/github_comments_small1/data/comment_6558134851.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 EXTERNAL_COMMENT_NOT_PREVIOUSLY_CAPTURED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2389-L2389)。制約・訂正 Captured connector body Unicode encoded UTF-8, not server database bytes. Historical author claims only; no linked source acquisition/native rerun/semantic promotion. Current body timestamp binding unavailable; pinned timestamps are prior metadata.
+  本文 SHA256 `1256bf3d73fa6ac183f129029706293ba61d3638f770fbf21f122cab64c9fdae`
+  元パス <code>https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/3#issuecomment-6558134851</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2389-L2389)。
+
+- [comment_6560902476.md](../../research/recovered/github_comments_small1/data/comment_6560902476.md?plain=1#L1-L1) — `research/recovered/github_comments_small1/data/comment_6560902476.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 EXTERNAL_COMMENT_NOT_PREVIOUSLY_CAPTURED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2390-L2390)。制約・訂正 Captured connector body Unicode encoded UTF-8, not server database bytes. Historical author claims only; no linked source acquisition/native rerun/semantic promotion. Current body timestamp binding unavailable; pinned timestamps are prior metadata.
+  本文 SHA256 `5b91d7e49bbfd8f4dc51e9e5b878632615c148f4cf382c07705fce90f1d0e56f`
+  元パス <code>https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/3#issuecomment-6560902476</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2390-L2390)。
+
+- [comment_6561500773.md](../../research/recovered/github_comments_small1/data/comment_6561500773.md?plain=1#L1-L1) — `research/recovered/github_comments_small1/data/comment_6561500773.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 EXTERNAL_COMMENT_NOT_PREVIOUSLY_CAPTURED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2391-L2391)。制約・訂正 Captured connector body Unicode encoded UTF-8, not server database bytes. Historical author claims only; no linked source acquisition/native rerun/semantic promotion. Current body timestamp binding unavailable; pinned timestamps are prior metadata.
+  本文 SHA256 `2f9ec1ed6225ff59fd5088d47d084f5a336ec64d153520cdd1be4f1514017fd0`
+  元パス <code>https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/3#issuecomment-6561500773</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2391-L2391)。
+
+- [comment_6561841621.md](../../research/recovered/github_comments_small1/data/comment_6561841621.md?plain=1#L1-L1) — `research/recovered/github_comments_small1/data/comment_6561841621.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 EXTERNAL_COMMENT_NOT_PREVIOUSLY_CAPTURED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2392-L2392)。制約・訂正 Captured connector body Unicode encoded UTF-8, not server database bytes. Historical author claims only; no linked source acquisition/native rerun/semantic promotion. Current body timestamp binding unavailable; pinned timestamps are prior metadata.
+  本文 SHA256 `e6abbf4a16fb1077182eaa51dc4f01e7bf071b681a70e1da3e1ae992a7aa5e1e`
+  元パス <code>https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/3#issuecomment-6561841621</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2392-L2392)。
+
+- [comment_6604858514.md](../../research/recovered/github_comments_small1/data/comment_6604858514.md?plain=1#L1-L1) — `research/recovered/github_comments_small1/data/comment_6604858514.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 EXTERNAL_COMMENT_NOT_PREVIOUSLY_CAPTURED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2393-L2393)。制約・訂正 Captured connector body Unicode encoded UTF-8, not server database bytes. Historical author claims only; no linked source acquisition/native rerun/semantic promotion. Current body timestamp binding unavailable; pinned timestamps are prior metadata.
+  本文 SHA256 `b4fe6e97f5ffaaae548f46c954fcf0bfe73e85f602bd78ff0497333dbaf4c2f1`
+  元パス <code>https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/20#issuecomment-6604858514</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2393-L2393)。
+
+- [KB curator read-only review — intake PR #5 / publication blockers](../../research/recovered/github_comments_small1/data/comment_6558113832.md?plain=1#L2-L2) — `research/recovered/github_comments_small1/data/comment_6558113832.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 EXTERNAL_COMMENT_NOT_PREVIOUSLY_CAPTURED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2394-L2394)。制約・訂正 Captured connector body Unicode encoded UTF-8, not server database bytes. Historical author claims only; no linked source acquisition/native rerun/semantic promotion. Returned timestamps match pinned metadata; full edit history not provided.
+  本文 SHA256 `cc354e90510578158f05614f42b96b9775d4399eea5b89af34667266e69f0b62`
+  元パス <code>https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/5#issuecomment-6558113832</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2394-L2394)。
+
+- [comment_6559321042.md](../../research/recovered/github_comments_small1/data/comment_6559321042.md?plain=1#L1-L1) — `research/recovered/github_comments_small1/data/comment_6559321042.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 EXTERNAL_COMMENT_NOT_PREVIOUSLY_CAPTURED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2395-L2395)。制約・訂正 Captured connector body Unicode encoded UTF-8, not server database bytes. Historical author claims only; no linked source acquisition/native rerun/semantic promotion. Returned timestamps match pinned metadata; full edit history not provided.
+  本文 SHA256 `edab7f396f5a43a90387f2985382226d1b2399746ba239cf83d1d93b1bf37d32`
+  元パス <code>https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/9#issuecomment-6559321042</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2395-L2395)。
+
+- [comment_6559322061.md](../../research/recovered/github_comments_small1/data/comment_6559322061.md?plain=1#L1-L1) — `research/recovered/github_comments_small1/data/comment_6559322061.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 EXTERNAL_COMMENT_NOT_PREVIOUSLY_CAPTURED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2396-L2396)。制約・訂正 Captured connector body Unicode encoded UTF-8, not server database bytes. Historical author claims only; no linked source acquisition/native rerun/semantic promotion. Returned timestamps match pinned metadata; full edit history not provided.
+  本文 SHA256 `b5295febec92c0a6dec0faf9ae83b22fe797f4616033637d24ec47be1c0e2273`
+  元パス <code>https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/12#issuecomment-6559322061</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2396-L2396)。
+
+- [comment_6604855886.md](../../research/recovered/github_comments_small1/data/comment_6604855886.md?plain=1#L1-L1) — `research/recovered/github_comments_small1/data/comment_6604855886.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 EXTERNAL_COMMENT_NOT_PREVIOUSLY_CAPTURED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2397-L2397)。制約・訂正 Captured connector body Unicode encoded UTF-8, not server database bytes. Historical author claims only; no linked source acquisition/native rerun/semantic promotion. Returned timestamps match pinned metadata; full edit history not provided.
+  本文 SHA256 `a3f4ea3f90ba32dadf3c85b59be2f1594fc8b74182a555a73d3f2192d21cfeb7`
+  元パス <code>https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/19#issuecomment-6604855886</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2397-L2397)。
+
+- [525e9181-7620-4061-8610-37b56417e2f6.md](../../research/recovered/chat_selected22/reports/525e9181-7620-4061-8610-37b56417e2f6.md?plain=1#L1-L1) — `research/recovered/chat_selected22/reports/525e9181-7620-4061-8610-37b56417e2f6.md`
+  回収状態 CHAT_SELECTED_REPLY_EXACT_UTF8_CAPTURE。以前の収録状況 KNOWN_ID_LENGTH_ONLY_BODY_UNREVIEWED;NO_ROOT2384_ID_OR_SHA_ALIAS。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2398-L2398)。制約・訂正 Dated author research/correction/integration/status claims; claimed PR/commit/blob/save/test counts not independently fetched or rerun. No new native/runtime/ABI/type/Golden/strict/READY credit. Linked PR/Library/native/code/log/DB/game/case/archive targets unacquired; historical next steps inert.
+  本文 SHA256 `70d02465373d06408c3ea2cb0c8f2551515677f685e72700a7089ff8b8bb2ab8`
+  元パス <code>chatgpt://6ae923ae-a704-83ee-abd8-4130624c63bd/messages/525e9181-7620-4061-8610-37b56417e2f6</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2398-L2398)。
+
+- [0611f41d-6f11-4f4f-b092-49e56f0d1eee.md](../../research/recovered/chat_selected22/reports/0611f41d-6f11-4f4f-b092-49e56f0d1eee.md?plain=1#L1-L1) — `research/recovered/chat_selected22/reports/0611f41d-6f11-4f4f-b092-49e56f0d1eee.md`
+  回収状態 CHAT_SELECTED_REPLY_EXACT_UTF8_CAPTURE。以前の収録状況 KNOWN_ID_LENGTH_ONLY_BODY_UNREVIEWED;NO_ROOT2384_ID_OR_SHA_ALIAS。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2399-L2399)。制約・訂正 Dated author research/correction/integration/status claims; claimed PR/commit/blob/save/test counts not independently fetched or rerun. No new native/runtime/ABI/type/Golden/strict/READY credit. Linked PR/Library/native/code/log/DB/game/case/archive targets unacquired; historical next steps inert.
+  本文 SHA256 `dc7bb255dea320e411c08234637f78d519266759eef5c4b0cc2872915a4da1d7`
+  元パス <code>chatgpt://6ae923ae-a704-83ee-abd8-4130624c63bd/messages/0611f41d-6f11-4f4f-b092-49e56f0d1eee</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2399-L2399)。
+
+- [777e743e-f546-43a8-8c3a-4637d628b278.md](../../research/recovered/chat_selected22/reports/777e743e-f546-43a8-8c3a-4637d628b278.md?plain=1#L1-L1) — `research/recovered/chat_selected22/reports/777e743e-f546-43a8-8c3a-4637d628b278.md`
+  回収状態 CHAT_SELECTED_REPLY_EXACT_UTF8_CAPTURE。以前の収録状況 KNOWN_ID_LENGTH_ONLY_BODY_UNREVIEWED;NO_ROOT2384_ID_OR_SHA_ALIAS。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2400-L2400)。制約・訂正 Dated author research/correction/integration/status claims; claimed PR/commit/blob/save/test counts not independently fetched or rerun. No new native/runtime/ABI/type/Golden/strict/READY credit. Linked PR/Library/native/code/log/DB/game/case/archive targets unacquired; historical next steps inert.
+  本文 SHA256 `fb809adb4ff97c3413640aab55ebbc2487ab575a9a793ecf49322a051af28b59`
+  元パス <code>chatgpt://6ae923ae-a704-83ee-abd8-4130624c63bd/messages/777e743e-f546-43a8-8c3a-4637d628b278</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2400-L2400)。
+
+- [0831a1cf-3bdc-48fc-ad49-0eb46ad43c81.md](../../research/recovered/chat_selected22/reports/0831a1cf-3bdc-48fc-ad49-0eb46ad43c81.md?plain=1#L1-L1) — `research/recovered/chat_selected22/reports/0831a1cf-3bdc-48fc-ad49-0eb46ad43c81.md`
+  回収状態 CHAT_SELECTED_REPLY_EXACT_UTF8_CAPTURE。以前の収録状況 KNOWN_ID_LENGTH_ONLY_BODY_UNREVIEWED;NO_ROOT2384_ID_OR_SHA_ALIAS。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2401-L2401)。制約・訂正 Dated author research/correction/integration/status claims; claimed PR/commit/blob/save/test counts not independently fetched or rerun. No new native/runtime/ABI/type/Golden/strict/READY credit. Linked PR/Library/native/code/log/DB/game/case/archive targets unacquired; historical next steps inert.
+  本文 SHA256 `8cc28fc9c4c6b2345e3687f35f6417ba86c941dbdeab07545735993966917a00`
+  元パス <code>chatgpt://6ae923ae-a704-83ee-abd8-4130624c63bd/messages/0831a1cf-3bdc-48fc-ad49-0eb46ad43c81</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2401-L2401)。
+
+- [d63e5d0d-fe5c-413d-9c72-8ebdbdb40332.md](../../research/recovered/chat_selected22/reports/d63e5d0d-fe5c-413d-9c72-8ebdbdb40332.md?plain=1#L1-L1) — `research/recovered/chat_selected22/reports/d63e5d0d-fe5c-413d-9c72-8ebdbdb40332.md`
+  回収状態 CHAT_SELECTED_REPLY_EXACT_UTF8_CAPTURE。以前の収録状況 KNOWN_ID_LENGTH_ONLY_BODY_UNREVIEWED;NO_ROOT2384_ID_OR_SHA_ALIAS。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2402-L2402)。制約・訂正 Dated author research/correction/integration/status claims; claimed PR/commit/blob/save/test counts not independently fetched or rerun. No new native/runtime/ABI/type/Golden/strict/READY credit. Linked PR/Library/native/code/log/DB/game/case/archive targets unacquired; historical next steps inert.
+  本文 SHA256 `11a1cc12666882104c82d4814adc91440b175adc0f9239a216f1c30a03efb99f`
+  元パス <code>chatgpt://6aea0154-96fc-83ee-96d3-0b8dec4210c5/messages/d63e5d0d-fe5c-413d-9c72-8ebdbdb40332</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2402-L2402)。
+
+- [d6ae36c2-b640-4510-87c8-9374ca4cac07.md](../../research/recovered/chat_selected22/reports/d6ae36c2-b640-4510-87c8-9374ca4cac07.md?plain=1#L1-L1) — `research/recovered/chat_selected22/reports/d6ae36c2-b640-4510-87c8-9374ca4cac07.md`
+  回収状態 CHAT_SELECTED_REPLY_EXACT_UTF8_CAPTURE。以前の収録状況 KNOWN_ID_LENGTH_ONLY_BODY_UNREVIEWED;NO_ROOT2384_ID_OR_SHA_ALIAS。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2403-L2403)。制約・訂正 Dated author research/correction/integration/status claims; claimed PR/commit/blob/save/test counts not independently fetched or rerun. No new native/runtime/ABI/type/Golden/strict/READY credit. Linked PR/Library/native/code/log/DB/game/case/archive targets unacquired; historical next steps inert.
+  本文 SHA256 `a32ee9426a50390d66cd94a5a14bd158bcdaa9c5e9e3ef7fea832ec0f2758c46`
+  元パス <code>chatgpt://6aea0154-96fc-83ee-96d3-0b8dec4210c5/messages/d6ae36c2-b640-4510-87c8-9374ca4cac07</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2403-L2403)。
+
+- [7ada3144-8230-4af4-a026-8bbd1aa263fa.md](../../research/recovered/chat_selected22/reports/7ada3144-8230-4af4-a026-8bbd1aa263fa.md?plain=1#L1-L1) — `research/recovered/chat_selected22/reports/7ada3144-8230-4af4-a026-8bbd1aa263fa.md`
+  回収状態 CHAT_SELECTED_REPLY_EXACT_UTF8_CAPTURE。以前の収録状況 KNOWN_ID_LENGTH_ONLY_BODY_UNREVIEWED;NO_ROOT2384_ID_OR_SHA_ALIAS。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2404-L2404)。制約・訂正 Dated author research/correction/integration/status claims; claimed PR/commit/blob/save/test counts not independently fetched or rerun. No new native/runtime/ABI/type/Golden/strict/READY credit. Linked PR/Library/native/code/log/DB/game/case/archive targets unacquired; historical next steps inert.
+  本文 SHA256 `598e3cc7b6c905b7593f91775f61e71bb4c585abb3e1a834bc7668f8c1023b7d`
+  元パス <code>chatgpt://6aea0154-96fc-83ee-96d3-0b8dec4210c5/messages/7ada3144-8230-4af4-a026-8bbd1aa263fa</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2404-L2404)。
+
+- [2785a95b-98a0-4979-ba07-f7f8c589c29e.md](../../research/recovered/chat_selected22/reports/2785a95b-98a0-4979-ba07-f7f8c589c29e.md?plain=1#L1-L1) — `research/recovered/chat_selected22/reports/2785a95b-98a0-4979-ba07-f7f8c589c29e.md`
+  回収状態 CHAT_SELECTED_REPLY_EXACT_UTF8_CAPTURE。以前の収録状況 KNOWN_ID_LENGTH_ONLY_BODY_UNREVIEWED;NO_ROOT2384_ID_OR_SHA_ALIAS。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2405-L2405)。制約・訂正 Dated author research/correction/integration/status claims; claimed PR/commit/blob/save/test counts not independently fetched or rerun. No new native/runtime/ABI/type/Golden/strict/READY credit. Linked PR/Library/native/code/log/DB/game/case/archive targets unacquired; historical next steps inert.
+  本文 SHA256 `7267449e02a50e4b40c58ed8d29f0981b4095a417531b63784fe59a5982fa3cd`
+  元パス <code>chatgpt://6aea0154-96fc-83ee-96d3-0b8dec4210c5/messages/2785a95b-98a0-4979-ba07-f7f8c589c29e</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2405-L2405)。
+
+- [Codexの整理について](../../research/recovered/chat_selected22/reports/be70ca0c-bfb8-4e9d-ae0d-f5f1e4d246c0.md?plain=1#L15-L15) — `research/recovered/chat_selected22/reports/be70ca0c-bfb8-4e9d-ae0d-f5f1e4d246c0.md`
+  回収状態 CHAT_SELECTED_REPLY_EXACT_UTF8_CAPTURE。以前の収録状況 KNOWN_ID_LENGTH_ONLY_BODY_UNREVIEWED;NO_ROOT2384_ID_OR_SHA_ALIAS。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2406-L2406)。制約・訂正 Dated author research/correction/integration/status claims; claimed PR/commit/blob/save/test counts not independently fetched or rerun. No new native/runtime/ABI/type/Golden/strict/READY credit. Linked PR/Library/native/code/log/DB/game/case/archive targets unacquired; historical next steps inert.
+  本文 SHA256 `ff4471c5fb59254278a3862f93ef5da86ece349107f74a5a092fce7b0d0e6895`
+  元パス <code>chatgpt://6aea0916-3ee4-83ec-b05f-2b3afe2d3f5d/messages/be70ca0c-bfb8-4e9d-ae0d-f5f1e4d246c0</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2406-L2406)。
+
+- [1c253d6c-1450-452c-9d9a-4474b7d1eb75.md](../../research/recovered/chat_selected22/reports/1c253d6c-1450-452c-9d9a-4474b7d1eb75.md?plain=1#L1-L1) — `research/recovered/chat_selected22/reports/1c253d6c-1450-452c-9d9a-4474b7d1eb75.md`
+  回収状態 CHAT_SELECTED_REPLY_EXACT_UTF8_CAPTURE。以前の収録状況 KNOWN_ID_LENGTH_ONLY_BODY_UNREVIEWED;NO_ROOT2384_ID_OR_SHA_ALIAS。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2407-L2407)。制約・訂正 Dated author research/correction/integration/status claims; claimed PR/commit/blob/save/test counts not independently fetched or rerun. No new native/runtime/ABI/type/Golden/strict/READY credit. Linked PR/Library/native/code/log/DB/game/case/archive targets unacquired; historical next steps inert.
+  本文 SHA256 `3c9804a39ed6fac3287665990f90befff64308986725894b5fc2fca89edeb2c3`
+  元パス <code>chatgpt://6aea0916-3ee4-83ec-b05f-2b3afe2d3f5d/messages/1c253d6c-1450-452c-9d9a-4474b7d1eb75</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2407-L2407)。
+
+- [007cd48c-5891-4806-8265-30d8cda48e8c.md](../../research/recovered/chat_selected22/reports/007cd48c-5891-4806-8265-30d8cda48e8c.md?plain=1#L1-L1) — `research/recovered/chat_selected22/reports/007cd48c-5891-4806-8265-30d8cda48e8c.md`
+  回収状態 CHAT_SELECTED_REPLY_EXACT_UTF8_CAPTURE。以前の収録状況 KNOWN_ID_LENGTH_ONLY_BODY_UNREVIEWED;NO_ROOT2384_ID_OR_SHA_ALIAS。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2408-L2408)。制約・訂正 Dated author research/correction/integration/status claims; claimed PR/commit/blob/save/test counts not independently fetched or rerun. No new native/runtime/ABI/type/Golden/strict/READY credit. Linked PR/Library/native/code/log/DB/game/case/archive targets unacquired; historical next steps inert.
+  本文 SHA256 `332e95f87b69681569f5993f35d2c3ea6502249e3dfed2748406eb311cb6826a`
+  元パス <code>chatgpt://6aea0916-3ee4-83ec-b05f-2b3afe2d3f5d/messages/007cd48c-5891-4806-8265-30d8cda48e8c</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2408-L2408)。
+
+- [13b3b4b8-1725-4913-beda-77f297b65a93.md](../../research/recovered/chat_selected22/reports/13b3b4b8-1725-4913-beda-77f297b65a93.md?plain=1#L1-L1) — `research/recovered/chat_selected22/reports/13b3b4b8-1725-4913-beda-77f297b65a93.md`
+  回収状態 CHAT_SELECTED_REPLY_EXACT_UTF8_CAPTURE。以前の収録状況 KNOWN_ID_LENGTH_ONLY_BODY_UNREVIEWED;NO_ROOT2384_ID_OR_SHA_ALIAS。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2409-L2409)。制約・訂正 Dated author research/correction/integration/status claims; claimed PR/commit/blob/save/test counts not independently fetched or rerun. No new native/runtime/ABI/type/Golden/strict/READY credit. Linked PR/Library/native/code/log/DB/game/case/archive targets unacquired; historical next steps inert.
+  本文 SHA256 `8b0d9afceb20a100cd52473fec335b7d0c5a2bfa60c1ab565e0b9ba6e73e8987`
+  元パス <code>chatgpt://6aea0916-3ee4-83ec-b05f-2b3afe2d3f5d/messages/13b3b4b8-1725-4913-beda-77f297b65a93</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2409-L2409)。
+
+- [ef5a0d9a-c5ca-4202-94ad-3bc8c6bef449.md](../../research/recovered/chat_additional14/reports/ef5a0d9a-c5ca-4202-94ad-3bc8c6bef449.md?plain=1#L1-L1) — `research/recovered/chat_additional14/reports/ef5a0d9a-c5ca-4202-94ad-3bc8c6bef449.md`
+  回収状態 CHAT_ADDITIONAL_SELECTED_REPLY_EXACT_UTF8_CAPTURE。以前の収録状況 PREVIOUS_RESPONSE_ID_LENGTH_ONLY;EXPLICIT_NEW_ADDITIONAL14_SELECTION。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2410-L2410)。制約・訂正 Historical authored integration/research/correction/test/status claims only; PR/develop/SHA/save/test/curation statements not independently fetched or rerun. No new native/runtime/ABI/type/Golden/strict/READY credit. Links and next instructions inert; no Library/native/code/log/DB/game/case/archive acquisition.
+  本文 SHA256 `abc223c91c8c071001b4f40e1f7916ed51811571e9d574687cfc8620131cceae`
+  元パス <code>chatgpt://6ae923ae-a704-83ee-abd8-4130624c63bd/messages/ef5a0d9a-c5ca-4202-94ad-3bc8c6bef449</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2410-L2410)。
+
+- [af345815-8f5d-436e-8ad5-d92934206fd6.md](../../research/recovered/chat_additional14/reports/af345815-8f5d-436e-8ad5-d92934206fd6.md?plain=1#L1-L1) — `research/recovered/chat_additional14/reports/af345815-8f5d-436e-8ad5-d92934206fd6.md`
+  回収状態 CHAT_ADDITIONAL_SELECTED_REPLY_EXACT_UTF8_CAPTURE。以前の収録状況 PREVIOUS_RESPONSE_ID_LENGTH_ONLY;EXPLICIT_NEW_ADDITIONAL14_SELECTION。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2411-L2411)。制約・訂正 Historical authored integration/research/correction/test/status claims only; PR/develop/SHA/save/test/curation statements not independently fetched or rerun. No new native/runtime/ABI/type/Golden/strict/READY credit. Links and next instructions inert; no Library/native/code/log/DB/game/case/archive acquisition.
+  本文 SHA256 `586f01e879275fac4923b153846a1d6d362443a9bdd2a7734ce13a133b7e53c8`
+  元パス <code>chatgpt://6ae923ae-a704-83ee-abd8-4130624c63bd/messages/af345815-8f5d-436e-8ad5-d92934206fd6</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2411-L2411)。
+
+- [c08351e0-f045-4219-8991-5a65d77887f8.md](../../research/recovered/chat_additional14/reports/c08351e0-f045-4219-8991-5a65d77887f8.md?plain=1#L1-L1) — `research/recovered/chat_additional14/reports/c08351e0-f045-4219-8991-5a65d77887f8.md`
+  回収状態 CHAT_ADDITIONAL_SELECTED_REPLY_EXACT_UTF8_CAPTURE。以前の収録状況 PREVIOUS_RESPONSE_ID_LENGTH_ONLY;EXPLICIT_NEW_ADDITIONAL14_SELECTION。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2412-L2412)。制約・訂正 Historical authored integration/research/correction/test/status claims only; PR/develop/SHA/save/test/curation statements not independently fetched or rerun. No new native/runtime/ABI/type/Golden/strict/READY credit. Links and next instructions inert; no Library/native/code/log/DB/game/case/archive acquisition.
+  本文 SHA256 `d1982c6e5b8c322b30f0e245c6c1c6fe87d083c26248dc6daac78e4ff80eb9e4`
+  元パス <code>chatgpt://6ae923ae-a704-83ee-abd8-4130624c63bd/messages/c08351e0-f045-4219-8991-5a65d77887f8</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2412-L2412)。
+
+- [2facf36c-f353-41f6-a3e4-157cc472ac82.md](../../research/recovered/chat_additional14/reports/2facf36c-f353-41f6-a3e4-157cc472ac82.md?plain=1#L1-L1) — `research/recovered/chat_additional14/reports/2facf36c-f353-41f6-a3e4-157cc472ac82.md`
+  回収状態 CHAT_ADDITIONAL_SELECTED_REPLY_EXACT_UTF8_CAPTURE。以前の収録状況 PREVIOUS_RESPONSE_ID_LENGTH_ONLY;EXPLICIT_NEW_ADDITIONAL14_SELECTION。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2413-L2413)。制約・訂正 Historical authored integration/research/correction/test/status claims only; PR/develop/SHA/save/test/curation statements not independently fetched or rerun. No new native/runtime/ABI/type/Golden/strict/READY credit. Links and next instructions inert; no Library/native/code/log/DB/game/case/archive acquisition.
+  本文 SHA256 `5f0d9bcc722e8003665f9f5022a22fef72cca9ad76f4cb327717a5f44f950129`
+  元パス <code>chatgpt://6ae923ae-a704-83ee-abd8-4130624c63bd/messages/2facf36c-f353-41f6-a3e4-157cc472ac82</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2413-L2413)。
+
+- [a7c4cedb-d0a8-4b0f-a3c2-28f6e26b5a35.md](../../research/recovered/chat_additional14/reports/a7c4cedb-d0a8-4b0f-a3c2-28f6e26b5a35.md?plain=1#L1-L1) — `research/recovered/chat_additional14/reports/a7c4cedb-d0a8-4b0f-a3c2-28f6e26b5a35.md`
+  回収状態 CHAT_ADDITIONAL_SELECTED_REPLY_EXACT_UTF8_CAPTURE。以前の収録状況 PREVIOUS_RESPONSE_ID_LENGTH_ONLY;EXPLICIT_NEW_ADDITIONAL14_SELECTION。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2414-L2414)。制約・訂正 Historical authored integration/research/correction/test/status claims only; PR/develop/SHA/save/test/curation statements not independently fetched or rerun. No new native/runtime/ABI/type/Golden/strict/READY credit. Links and next instructions inert; no Library/native/code/log/DB/game/case/archive acquisition.
+  本文 SHA256 `36ca34bb4a78f6da6b9979eb31a4f307aff70f92f652e0a019767b0f912c7a0e`
+  元パス <code>chatgpt://6ae923ae-a704-83ee-abd8-4130624c63bd/messages/a7c4cedb-d0a8-4b0f-a3c2-28f6e26b5a35</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2414-L2414)。
+
+- [4902290a-47b9-4762-a5ec-384ed67fcd35.md](../../research/recovered/chat_additional14/reports/4902290a-47b9-4762-a5ec-384ed67fcd35.md?plain=1#L1-L1) — `research/recovered/chat_additional14/reports/4902290a-47b9-4762-a5ec-384ed67fcd35.md`
+  回収状態 CHAT_ADDITIONAL_SELECTED_REPLY_EXACT_UTF8_CAPTURE。以前の収録状況 PREVIOUS_RESPONSE_ID_LENGTH_ONLY;EXPLICIT_NEW_ADDITIONAL14_SELECTION。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2415-L2415)。制約・訂正 Historical authored integration/research/correction/test/status claims only; PR/develop/SHA/save/test/curation statements not independently fetched or rerun. No new native/runtime/ABI/type/Golden/strict/READY credit. Links and next instructions inert; no Library/native/code/log/DB/game/case/archive acquisition.
+  本文 SHA256 `353bb2e59951afe0e042d3846301e4f5cd7a2c6f4d1666e7fd72ef8838724b93`
+  元パス <code>chatgpt://6aea0154-96fc-83ee-96d3-0b8dec4210c5/messages/4902290a-47b9-4762-a5ec-384ed67fcd35</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2415-L2415)。
+
+- [2f146fd4-e241-41a8-b04a-4f4703a94a9b.md](../../research/recovered/chat_additional14/reports/2f146fd4-e241-41a8-b04a-4f4703a94a9b.md?plain=1#L1-L1) — `research/recovered/chat_additional14/reports/2f146fd4-e241-41a8-b04a-4f4703a94a9b.md`
+  回収状態 CHAT_ADDITIONAL_SELECTED_REPLY_EXACT_UTF8_CAPTURE。以前の収録状況 PREVIOUS_RESPONSE_ID_LENGTH_ONLY;EXPLICIT_NEW_ADDITIONAL14_SELECTION。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2416-L2416)。制約・訂正 Historical authored integration/research/correction/test/status claims only; PR/develop/SHA/save/test/curation statements not independently fetched or rerun. No new native/runtime/ABI/type/Golden/strict/READY credit. Links and next instructions inert; no Library/native/code/log/DB/game/case/archive acquisition.
+  本文 SHA256 `99e30ca4943252fda971f100e674fc3d7b70eeaea504eff3d259a9f1471b0af4`
+  元パス <code>chatgpt://6aea0154-96fc-83ee-96d3-0b8dec4210c5/messages/2f146fd4-e241-41a8-b04a-4f4703a94a9b</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2416-L2416)。
+
+- [7235310d-d2b3-459c-816f-8b3a4bfdd6e9.md](../../research/recovered/chat_additional14/reports/7235310d-d2b3-459c-816f-8b3a4bfdd6e9.md?plain=1#L1-L1) — `research/recovered/chat_additional14/reports/7235310d-d2b3-459c-816f-8b3a4bfdd6e9.md`
+  回収状態 CHAT_ADDITIONAL_SELECTED_REPLY_EXACT_UTF8_CAPTURE。以前の収録状況 PREVIOUS_RESPONSE_ID_LENGTH_ONLY;EXPLICIT_NEW_ADDITIONAL14_SELECTION。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2417-L2417)。制約・訂正 Historical authored integration/research/correction/test/status claims only; PR/develop/SHA/save/test/curation statements not independently fetched or rerun. No new native/runtime/ABI/type/Golden/strict/READY credit. Links and next instructions inert; no Library/native/code/log/DB/game/case/archive acquisition.
+  本文 SHA256 `cfcaa238d83111555764d647e14fa6ce077e2d24430b579283b1ed691edd7d68`
+  元パス <code>chatgpt://6aea0154-96fc-83ee-96d3-0b8dec4210c5/messages/7235310d-d2b3-459c-816f-8b3a4bfdd6e9</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2417-L2417)。
+
+- [be9de04a-a9b9-4268-8dbe-6b50e2ca1a9c.md](../../research/recovered/chat_additional14/reports/be9de04a-a9b9-4268-8dbe-6b50e2ca1a9c.md?plain=1#L1-L1) — `research/recovered/chat_additional14/reports/be9de04a-a9b9-4268-8dbe-6b50e2ca1a9c.md`
+  回収状態 CHAT_ADDITIONAL_SELECTED_REPLY_EXACT_UTF8_CAPTURE。以前の収録状況 PREVIOUS_RESPONSE_ID_LENGTH_ONLY;EXPLICIT_NEW_ADDITIONAL14_SELECTION。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2418-L2418)。制約・訂正 Historical authored integration/research/correction/test/status claims only; PR/develop/SHA/save/test/curation statements not independently fetched or rerun. No new native/runtime/ABI/type/Golden/strict/READY credit. Links and next instructions inert; no Library/native/code/log/DB/game/case/archive acquisition.
+  本文 SHA256 `193eea90a09f6899561a3d4fbfd78f9ef28bfb2e5068c19cec80b46303ad45e6`
+  元パス <code>chatgpt://6aea0154-96fc-83ee-96d3-0b8dec4210c5/messages/be9de04a-a9b9-4268-8dbe-6b50e2ca1a9c</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2418-L2418)。
+
+- [e3422888-9bcb-435f-ae92-14bf3dd5fda1.md](../../research/recovered/chat_additional14/reports/e3422888-9bcb-435f-ae92-14bf3dd5fda1.md?plain=1#L1-L1) — `research/recovered/chat_additional14/reports/e3422888-9bcb-435f-ae92-14bf3dd5fda1.md`
+  回収状態 CHAT_ADDITIONAL_SELECTED_REPLY_EXACT_UTF8_CAPTURE。以前の収録状況 PREVIOUS_RESPONSE_ID_LENGTH_ONLY;EXPLICIT_NEW_ADDITIONAL14_SELECTION。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2419-L2419)。制約・訂正 Historical authored integration/research/correction/test/status claims only; PR/develop/SHA/save/test/curation statements not independently fetched or rerun. No new native/runtime/ABI/type/Golden/strict/READY credit. Links and next instructions inert; no Library/native/code/log/DB/game/case/archive acquisition.
+  本文 SHA256 `e90f1cb09a7e669811e457267df08130af16c9bbdf2db590f20ecd15f583f826`
+  元パス <code>chatgpt://6aea0154-96fc-83ee-96d3-0b8dec4210c5/messages/e3422888-9bcb-435f-ae92-14bf3dd5fda1</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2419-L2419)。
+
+- [d15bc80d-71d5-4a62-92e7-3dc4786862ba.md](../../research/recovered/chat_additional14/reports/d15bc80d-71d5-4a62-92e7-3dc4786862ba.md?plain=1#L1-L1) — `research/recovered/chat_additional14/reports/d15bc80d-71d5-4a62-92e7-3dc4786862ba.md`
+  回収状態 CHAT_ADDITIONAL_SELECTED_REPLY_EXACT_UTF8_CAPTURE。以前の収録状況 PREVIOUS_RESPONSE_ID_LENGTH_ONLY;EXPLICIT_NEW_ADDITIONAL14_SELECTION。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2420-L2420)。制約・訂正 Historical authored integration/research/correction/test/status claims only; PR/develop/SHA/save/test/curation statements not independently fetched or rerun. No new native/runtime/ABI/type/Golden/strict/READY credit. Links and next instructions inert; no Library/native/code/log/DB/game/case/archive acquisition.
+  本文 SHA256 `ca4977de3bff42351cff39788ff670a6e69a08b4b6f32adbf2e8b600255e26dd`
+  元パス <code>chatgpt://6aea0916-3ee4-83ec-b05f-2b3afe2d3f5d/messages/d15bc80d-71d5-4a62-92e7-3dc4786862ba</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2420-L2420)。
+
+- [443829f5-52b4-433e-a6a3-b7fbd35dca67.md](../../research/recovered/chat_additional14/reports/443829f5-52b4-433e-a6a3-b7fbd35dca67.md?plain=1#L1-L1) — `research/recovered/chat_additional14/reports/443829f5-52b4-433e-a6a3-b7fbd35dca67.md`
+  回収状態 CHAT_ADDITIONAL_SELECTED_REPLY_EXACT_UTF8_CAPTURE。以前の収録状況 PREVIOUS_RESPONSE_ID_LENGTH_ONLY;EXPLICIT_NEW_ADDITIONAL14_SELECTION。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2421-L2421)。制約・訂正 Historical authored integration/research/correction/test/status claims only; PR/develop/SHA/save/test/curation statements not independently fetched or rerun. No new native/runtime/ABI/type/Golden/strict/READY credit. Links and next instructions inert; no Library/native/code/log/DB/game/case/archive acquisition.
+  本文 SHA256 `744e1172e1ac2e2386c1710f8b2fd051b307446da5c0a2da59aa1dd52288d058`
+  元パス <code>chatgpt://6aea0916-3ee4-83ec-b05f-2b3afe2d3f5d/messages/443829f5-52b4-433e-a6a3-b7fbd35dca67</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2421-L2421)。
+
+- [5dd6f72b-50c3-4bcf-bcf2-593a66e6ce11.md](../../research/recovered/chat_additional14/reports/5dd6f72b-50c3-4bcf-bcf2-593a66e6ce11.md?plain=1#L1-L1) — `research/recovered/chat_additional14/reports/5dd6f72b-50c3-4bcf-bcf2-593a66e6ce11.md`
+  回収状態 CHAT_ADDITIONAL_SELECTED_REPLY_EXACT_UTF8_CAPTURE。以前の収録状況 PREVIOUS_RESPONSE_ID_LENGTH_ONLY;EXPLICIT_NEW_ADDITIONAL14_SELECTION。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2422-L2422)。制約・訂正 Historical authored integration/research/correction/test/status claims only; PR/develop/SHA/save/test/curation statements not independently fetched or rerun. No new native/runtime/ABI/type/Golden/strict/READY credit. Links and next instructions inert; no Library/native/code/log/DB/game/case/archive acquisition.
+  本文 SHA256 `4953ee3e4dfecd3ce1dcbab6acd0f1e1576a0b50de4ad6263244349cf8e79e15`
+  元パス <code>chatgpt://6aea0916-3ee4-83ec-b05f-2b3afe2d3f5d/messages/5dd6f72b-50c3-4bcf-bcf2-593a66e6ce11</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2422-L2422)。
+
+- [062cb02a-444c-4650-86d3-076b906a3620.md](../../research/recovered/chat_additional14/reports/062cb02a-444c-4650-86d3-076b906a3620.md?plain=1#L1-L1) — `research/recovered/chat_additional14/reports/062cb02a-444c-4650-86d3-076b906a3620.md`
+  回収状態 CHAT_ADDITIONAL_SELECTED_REPLY_EXACT_UTF8_CAPTURE。以前の収録状況 PREVIOUS_RESPONSE_ID_LENGTH_ONLY;EXPLICIT_NEW_ADDITIONAL14_SELECTION。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2423-L2423)。制約・訂正 Historical authored integration/research/correction/test/status claims only; PR/develop/SHA/save/test/curation statements not independently fetched or rerun. No new native/runtime/ABI/type/Golden/strict/READY credit. Links and next instructions inert; no Library/native/code/log/DB/game/case/archive acquisition.
+  本文 SHA256 `382d275171883ab1f0564674ce55766a49b98bfcd202a69764107cb03615dfe3`
+  元パス <code>chatgpt://6aea0916-3ee4-83ec-b05f-2b3afe2d3f5d/messages/062cb02a-444c-4650-86d3-076b906a3620</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2423-L2423)。
+
 [前のページ](page-023.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md)

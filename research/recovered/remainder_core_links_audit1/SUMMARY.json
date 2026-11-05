@@ -1,0 +1,21 @@
+{
+  "symbol": {
+    "total": 503,
+    "without_explicit_resolved_link": 319,
+    "with_unresolved_section_label": 102
+  },
+  "field": {
+    "total": 122,
+    "without_explicit_resolved_link": 18,
+    "with_unresolved_section_label": 23
+  },
+  "linkless_symbols_by_kind": {
+    "code": 47,
+    "func": 220,
+    "global": 46,
+    "object": 5,
+    "string": 1
+  },
+  "baseline": "525b37e43f26c7a95c2b3818f83ed9507a33d452",
+  "limits": "Explicit source_links only; automatic VA mentions/manual relation evidence may exist. No claim that all linkless meanings lack evidence. No content/semantic adoption review."
+}
