@@ -175,5 +175,13 @@
       "source_line_estimate_method": "Saved scaffold arithmetic only; original bytes not reread. 3182-intro5-prioranchors82-priorplaceholderlines21+prioromittedoriginal31.",
       "original_byte_mapping_verified": false
     }
-  ]
+  ],
+  "saved_derivative_scope_privacy_review": {
+    "status": "COMPLETE",
+    "source_sha256": "af1da13e6b95ec75af7ed758679eb6740e8ad90e9d00d032c5ee3374589864d8",
+    "physical_lf": 4260,
+    "receipt": "research/recovered/findings/MANUAL_REVIEW_20261105.json",
+    "all_technical_claims_verified": false,
+    "original_excluded_lines_reviewed": false
+  }
 }

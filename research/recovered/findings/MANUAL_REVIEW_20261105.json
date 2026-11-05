@@ -1,0 +1,164 @@
+{
+  "source_path": "research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md",
+  "source_sha256": "af1da13e6b95ec75af7ed758679eb6740e8ad90e9d00d032c5ee3374589864d8",
+  "bytes": 452304,
+  "physical_lf": 4260,
+  "review": "COMPLETE_SAVED_DERIVATIVE_CONTENT_SCOPE_PRIVACY_REVIEW",
+  "reviewed_lines": 4260,
+  "missing_lines": 0,
+  "review_chunks": 26,
+  "new_blockers_after_scope_correction": 0,
+  "coverage": [
+    {
+      "part": "part1",
+      "start": 1,
+      "end": 160
+    },
+    {
+      "part": "part1",
+      "start": 161,
+      "end": 320
+    },
+    {
+      "part": "part1",
+      "start": 321,
+      "end": 480
+    },
+    {
+      "part": "part1",
+      "start": 481,
+      "end": 640
+    },
+    {
+      "part": "part1",
+      "start": 641,
+      "end": 800
+    },
+    {
+      "part": "part1",
+      "start": 801,
+      "end": 960
+    },
+    {
+      "part": "part1",
+      "start": 961,
+      "end": 1120
+    },
+    {
+      "part": "part1",
+      "start": 1121,
+      "end": 1280
+    },
+    {
+      "part": "part1",
+      "start": 1281,
+      "end": 1420
+    },
+    {
+      "part": "part2",
+      "start": 1421,
+      "end": 1620
+    },
+    {
+      "part": "part2",
+      "start": 1621,
+      "end": 1820
+    },
+    {
+      "part": "part2",
+      "start": 1821,
+      "end": 2020
+    },
+    {
+      "part": "part2",
+      "start": 2021,
+      "end": 2220
+    },
+    {
+      "part": "part2",
+      "start": 2221,
+      "end": 2420
+    },
+    {
+      "part": "part2",
+      "start": 2421,
+      "end": 2620
+    },
+    {
+      "part": "part2",
+      "start": 2621,
+      "end": 2840
+    },
+    {
+      "part": "part3",
+      "start": 2841,
+      "end": 2980
+    },
+    {
+      "part": "part3",
+      "start": 2981,
+      "end": 3120
+    },
+    {
+      "part": "part3",
+      "start": 3121,
+      "end": 3260
+    },
+    {
+      "part": "part3",
+      "start": 3261,
+      "end": 3400
+    },
+    {
+      "part": "part3",
+      "start": 3401,
+      "end": 3540
+    },
+    {
+      "part": "part3",
+      "start": 3541,
+      "end": 3680
+    },
+    {
+      "part": "part3",
+      "start": 3681,
+      "end": 3820
+    },
+    {
+      "part": "part3",
+      "start": 3821,
+      "end": 3960
+    },
+    {
+      "part": "part3",
+      "start": 3961,
+      "end": 4100
+    },
+    {
+      "part": "part3",
+      "start": 4101,
+      "end": 4260
+    }
+  ],
+  "private_evidence_receipts": [
+    {
+      "part": "part1",
+      "coverage_file": "COVERAGE.tsv",
+      "coverage_sha256": "969ff1c4fc43e4815a152c482a24f156ae8a1f9ecb9b7de6fa6b5ebc72618fed",
+      "chunks": 9
+    },
+    {
+      "part": "part2",
+      "coverage_file": "REVIEW_RANGES.tsv",
+      "coverage_sha256": "bdcc903cffd07d7cd6d377b7f6f9db6dd2ef8d312e083f6a5c4836aaf4603346",
+      "chunks": 7
+    },
+    {
+      "part": "part3",
+      "coverage_file": "CHUNK_COVERAGE.tsv",
+      "coverage_sha256": "6467339115160c5f6c3daaa9672f11ae1fac7c971f6159a1c8e50fd371c7add6",
+      "chunks": 10
+    }
+  ],
+  "limits": "Current saved derivative only, after old saved LF3182 scope correction. Original excluded559+1 lines, Library originals and linked targets were not read. Not a verification of every technical claim, runtime behavior, original accuracy, all citation semantics or full source recovery. Historical STATIC/ACTUAL/model/synthetic/design distinctions retained. No public-setting change or original recycling."
+}

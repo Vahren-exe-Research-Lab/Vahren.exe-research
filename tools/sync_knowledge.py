@@ -4821,6 +4821,7 @@ FILES += (
     'research/recovered/findings/REVISION_20261105.json',
 )
 FILES += ('reference/fields/owner-RetreatVoice-72893f6eae8d-001.md',)
+FILES += ('research/recovered/findings/MANUAL_REVIEW_20261105.json',)
 ALLOWED = set(FILES) | {MANIFEST}
 # Fully reviewed authored analysis only; pin one complete UTF-8 snapshot.
 # This does not waive binary, decoding, privacy, allowlist or ledger checks.
