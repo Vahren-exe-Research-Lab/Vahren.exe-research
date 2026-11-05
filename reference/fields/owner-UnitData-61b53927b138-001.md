@@ -13,6 +13,18 @@
 - [research/recovered/b_reports/T011_T012_EXP_TRAINING_DEATH_CROSSWALK_NATIVE_20261029.md 行 33](../../research/recovered/b_reports/T011_T012_EXP_TRAINING_DEATH_CROSSWALK_NATIVE_20261029.md?plain=1#L33-L33) — [LEVEL] UnitData+0x168 level / +0x16C EXP / +0x170 next threshold。0x58A650即時SimpleUnit、0x575110通常Unitの遅延処理。11field再計算及び0x58AFA0 skill/property刷新は未完全動的確認。
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail; DAT491 is direct source-line distribution, not491 effective units; training_up caller linkage remains VERIFY
 
+<a id="field-16c"></a>
+## UnitData + 0x16C
+
+- [research/recovered/knowledge_history1/reports/knowledge/REF_UNIT_EXP_SUMMON.md 行 14](../../research/recovered/knowledge_history1/reports/knowledge/REF_UNIT_EXP_SUMMON.md?plain=1#L14-L14) — - Training function 0x471E80 uses UnitData+0x170 for a threshold and writes experience to UnitData+0x16C at 0x4723D8; 0x4723DE calls 0x58A650 for level update.
+  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
+
+<a id="field-170"></a>
+## UnitData + 0x170
+
+- [research/recovered/knowledge_history1/reports/knowledge/REF_UNIT_EXP_SUMMON.md 行 14](../../research/recovered/knowledge_history1/reports/knowledge/REF_UNIT_EXP_SUMMON.md?plain=1#L14-L14) — - Training function 0x471E80 uses UnitData+0x170 for a threshold and writes experience to UnitData+0x16C at 0x4723D8; 0x4723DE calls 0x58A650 for level update.
+  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
+
 <a id="field-1b1"></a>
 ## UnitData + 0x1B1
 

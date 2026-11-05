@@ -4,6 +4,18 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-18"></a>
+## offset + 0x18
+
+- [research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md 行 428](../../research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md?plain=1#L428-L428) — [INDEPENDENT ASM ↔ PSEUDO READBACK] 同RUNの`479A30_procedure_assembly.json`と`479A30_procedure_pseudo_code.json`をEがJSON.parseして0x479A68 `ADD ESI,0x1C`（28byte strid
+  制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
+
+<a id="field-1c"></a>
+## offset + 0x1C
+
+- [research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_PERSISTENCE.md 行 8](../../research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_PERSISTENCE.md?plain=1#L8-L8) — - Logical records: key string, aux string, signed int32 value; mapped value offset +0x1C. gwrite performs UPSERT, not append and not key deletion; setting zero
+  制約・訂正　Frozen complete canonical baseline copy; identity only, no new semantic review; stable versioning exception authorized
+
 <a id="field-3c"></a>
 ## offset + 0x3C
 

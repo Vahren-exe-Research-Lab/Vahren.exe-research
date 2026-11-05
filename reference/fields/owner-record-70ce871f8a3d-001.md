@@ -19,6 +19,9 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1077](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1077-L1077) — \| 停止条件 \| skill+0x2A8 == −123456.0（exp_per=off）、Unit+0x1D0==NULL、Unit+0x18614≠0、record+0xC≠0（付与後1にする） \| CONFIRMED \|
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+- [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 38](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L38-L38) — - Original 0x5D5922 calls 0x5D9F40: 0x5D9F55 stores a source codebook pointer at look record+0x0C. Owner slots are in inner+0x720; 0x38-byte look records in inn
+  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
+
 - [research/recovered/remaining_md1/reports/data/T012_T013_B_RESEARCH_TASKBOARD_20261013.md 行 137](../../research/recovered/remaining_md1/reports/data/T012_T013_B_RESEARCH_TASKBOARD_20261013.md?plain=1#L137-L137) — [CONTROL CONTRACT] Only if Work's existing`run_heal_refresh` preconditions permit and Unit+878 is nonempty: outer4E02A0 lookup49ED30 (UNKNOWN SAFETY_REFUSAL), i
   制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
 
@@ -66,6 +69,15 @@
 
 - [research/recovered/e_reports/T020_E_T013_KIND8_PREQUEUE_ACCEPTANCE_20261031_15H.md 行 21](../../research/recovered/e_reports/T020_E_T013_KIND8_PREQUEUE_ACCEPTANCE_20261031_15H.md?plain=1#L21-L21) — - `KB_CANDIDATE` (do not auto-promote): B/T013 ID above and E/T020 ID in title, VA 0x577D82/0x577DCB/0x577ADE/0x577B27/0x5A3DF0/0x5A3E55/0x5A3E78/0x579EB0/0x579
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
+
+- [research/recovered/knowledge_history1/reports/knowledge/README.md 行 12](../../research/recovered/knowledge_history1/reports/knowledge/README.md?plain=1#L12-L12) — \| 戦闘AIの候補生成→ソート→ヘッド分岐 \| `REF_BATTLE_AI_MORALE.md` 冒頭の source map \| B/T013 12〜21H：`+0xA14` と `record+0x28` を混同しない \|
+  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
+
+- [research/recovered/knowledge_history1/reports/knowledge/REF_BATTLE_AI_MORALE.md 行 13](../../research/recovered/knowledge_history1/reports/knowledge/REF_BATTLE_AI_MORALE.md?plain=1#L13-L13) — \| Per-candidate RNG penalty/bonus \| `0x57A7D0` writes `candidate+0xA14` \| B19 \| B18's `record+0x28` is a DIFFERENT field \|
+  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
+
+- [research/recovered/knowledge_history1/reports/knowledge/REF_BATTLE_AI_MORALE.md 行 108](../../research/recovered/knowledge_history1/reports/knowledge/REF_BATTLE_AI_MORALE.md?plain=1#L108-L108) — - **Correction of possible overgeneralization**: B18 established only that `context/record+0x28` is not **directly read** by the `0x5A3EA0` comparator. B19 prov
+  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
 
 - [research/recovered/symbol_sources/T013_BUCKET_LIST_MERGE_COMPARATOR_NATIVE_20261031_16H.md 行 12](../../research/recovered/symbol_sources/T013_BUCKET_LIST_MERGE_COMPARATOR_NATIVE_20261031_16H.md?plain=1#L12-L12) — [ORDER/DEDUP] 先行B12/13Hの0x447240/0x447260比較子、score rank、先行15H record+0x28 RNGとUnit+0x18654の入口gateは今回再計上0。今回固有は0x57A830から3箇所のlist merge、native比較子0x5A3EA0の加算と多段pr
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation; byte windows use inclusive endpoints as corrected current REF; record+0x28 and candidate+0xA14 must remain distinct

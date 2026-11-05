@@ -25,6 +25,9 @@
 - [research/recovered/other_reports/T009_CONTEXT_MODEL.md 行 86](../../research/recovered/other_reports/T009_CONTEXT_MODEL.md?plain=1#L86-L86) — - neutral_max: effective spot_capacity (`scenario/context +0x0C`) をfallbackに使用。
   制約・訂正　Historical authored static claims only; no new native/runtime validation; referenced evidence omitted; Golden/READY unchanged
 
+- [research/recovered/outside_reports1/reports/exp_research_20261021/EXP_RESEARCH_PROGRESS_20261022.md 行 15](../../research/recovered/outside_reports1/reports/exp_research_20261021/EXP_RESEARCH_PROGRESS_20261022.md?plain=1#L15-L15) — \| P1 \| 複数技能の経験値重複 \| hit context+0xC、連射回数、成功判定 \| 複数hit/0EXP/skill offを元EXEで比較 \|
+  制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
+
 - [research/recovered/search_reports1/reports/_history_20261029/P0_SUMMON_EXP_OWNER_REPORT_20261021.md 行 51](../../research/recovered/search_reports1/reports/_history_20261029/P0_SUMMON_EXP_OWNER_REPORT_20261021.md?plain=1#L51-L51) — [STATIC VERIFIED] `0x551E50` はhit context actor+0x1D0非NULL、+0x18614=0、context+0xC=0、Skill+0x2A8 sentinelではない場合、context+0xCを先行1にセットし、そのactor+0x1C8の先 `R+0x16C` に量
   制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
 
@@ -220,6 +223,12 @@
 - [research/recovered/b_reports/T013_RNG_CONTEXT_CARRY_NO_DIRECT_CMP_NATIVE_20261031_18H.md 行 16](../../research/recovered/b_reports/T013_RNG_CONTEXT_CARRY_NO_DIRECT_CMP_NATIVE_20261031_18H.md?plain=1#L16-L16) — [KB_CANDIDATE] ID=B-20261031-18H-T013-RNG-CONTEXT-CARRY-NONUSE-01; owner=B/T013; VA=0x5A3DF0/0x577A20/0x579EB0/0x57A830/0x5A3EA0; CALL site=0x577D82/0x577DCB/0x
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
+- [research/recovered/knowledge_history1/reports/knowledge/REF_BATTLE_AI_MORALE.md 行 102](../../research/recovered/knowledge_history1/reports/knowledge/REF_BATTLE_AI_MORALE.md?plain=1#L102-L102) — - **B18** `B-20261031-18H-T013-RNG-CONTEXT-CARRY-NONUSE-01` — `data/T013_RNG_CONTEXT_CARRY_NO_DIRECT_CMP_NATIVE_20261031_18H.md`: record `+0x28` is copied by `0
+  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
+
+- [research/recovered/knowledge_history1/reports/knowledge/REF_BATTLE_AI_MORALE.md 行 104](../../research/recovered/knowledge_history1/reports/knowledge/REF_BATTLE_AI_MORALE.md?plain=1#L104-L104) — - **P0/next**: determine the actual `Unit+0x18654` writer, any direct or indirect `record/context+0x28` consumer beyond this callback, exceptional/overflow comp
+  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
+
 - [research/recovered/tests_batch5/T020_E_T013_RNG_CONTEXT_TRANSFER_ACCEPTANCE_20261031_18H.md 行 12](../../research/recovered/tests_batch5/T020_E_T013_RNG_CONTEXT_TRANSFER_ACCEPTANCE_20261031_18H.md?plain=1#L12-L12) — - **T019:** no new confirmed original Wiki/DAT/EXE contradiction; false inference that context+0x28 is directly consumed by the merge comparator is a *research
   制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
 
@@ -365,15 +374,6 @@
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
 
 - [research/recovered/rea_batch2/reports/REA_20261102_11H_P0_F720_EXCLUSION_TREE_INDIRECT_CALLFRAME_STATIC.md 行 28](../../research/recovered/rea_batch2/reports/REA_20261102_11H_P0_F720_EXCLUSION_TREE_INDIRECT_CALLFRAME_STATIC.md?plain=1#L28-L28) — - **Next lawful cursor:** limited original x86 inspection of `0x489630` sixth argument's use and mutation callees; reconcile two sentinel offsets and verify whe
-  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
-
-- [research/recovered/rea_batch2/reports/REA_20261102_12H_P0_F720_EXCLUSION_TREE_FILTER_ARG8_STATIC.md 行 14](../../research/recovered/rea_batch2/reports/REA_20261102_12H_P0_F720_EXCLUSION_TREE_FILTER_ARG8_STATIC.md?plain=1#L14-L14) — - **Bounded negative evidence only:** inspected direct dereferences of the sixth/arg8 tree-container pointer are reads/comparisons; **no direct store through th
-  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
-
-- [research/recovered/rea_batch2/reports/REA_20261102_12H_P0_F720_EXCLUSION_TREE_FILTER_ARG8_STATIC.md 行 18](../../research/recovered/rea_batch2/reports/REA_20261102_12H_P0_F720_EXCLUSION_TREE_FILTER_ARG8_STATIC.md?plain=1#L18-L18) — - **Next lawful cursor:** identify true `context+0x1EED30/34` tree writer via bounded original-x86 callers/field xrefs, then inspect other `0x48F9E0` callers an
-  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
-
-- [research/recovered/rea_batch2/reports/REA_20261102_12H_P0_F720_EXCLUSION_TREE_RESET_WRITER_STATIC.md 行 8](../../research/recovered/rea_batch2/reports/REA_20261102_12H_P0_F720_EXCLUSION_TREE_RESET_WRITER_STATIC.md?plain=1#L8-L8) — - Clear end `0x4F8F01 MOV [EAX+4],EAX`, `0x4F8F07 MOV [EAX],EAX`, `0x4F8F0D MOV [EAX+8],EAX` sets the header links to itself; `0x4F8F10 MOV [EDI+8],0` sets cont
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

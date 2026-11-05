@@ -22,6 +22,18 @@
 - [research/recovered/rea_batch3/reports/REA_20261031_17H_P0_VORBIS_BITBUFFER_INIT_STATIC.md 行 11](../../research/recovered/rea_batch3/reports/REA_20261031_17H_P0_VORBIS_BITBUFFER_INIT_STATIC.md?plain=1#L11-L11) — - 元x86 `0x5D4900` は非ゼロ入力時に親0x48バイトをcallocし、`ESI=0..14` の計15スロットを構築する。 `0x5D4941 cmp esi,7`、`0x5D4944 jne` により**index 7だけ**親の埋込 `parent+0x04` を `parent+0x28` へ渡し
   制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
 
+<a id="field-2c"></a>
+## parent + 0x2C
+
+- [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 78](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L78-L78) — - Earlier 0x005D57F8 calls calloc(1,0x88), stores the parent in +0x68 and writes parent+0x2C at 0x005D5820 without a locally established NULL test. This is a di
+  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
+
+<a id="field-68"></a>
+## parent + 0x68
+
+- [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 104](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L104-L104) — - Earlier 0x5D57F8 calls calloc(1,0x88) for the parent inner object; after storage in parent+0x68, 0x5D5820 writes through the returned pointer without a demons
+  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
+
 <a id="field-1e4b4"></a>
 ## parent + 0x1E4B4
 

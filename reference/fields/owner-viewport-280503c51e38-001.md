@@ -7,6 +7,9 @@
 <a id="field-4a4"></a>
 ## viewport + 0x4A4
 
+- [research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md 行 188](../../research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md?plain=1#L188-L188) — - しかし両helper帰還後に共通tail VA 0x4A2DADへ進み、`byte [engine+0x1EEC71]=0` と `byte [viewport+0x4A4]=0` を必ず書く。
+  制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
+
 - [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 285](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L285-L285) — - opcode34は `playBGM` / `play` shared handler VA 0x4A2D04。0引数ではexecutionMode `+0x1EEC3C==1`ならplayWorld core 0x48EEE0、それ以外ならplayBattle core 0x48F080を呼ぶ。ただしhelper
   制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
 

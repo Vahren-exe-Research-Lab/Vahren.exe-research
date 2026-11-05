@@ -76,6 +76,12 @@
 - [research/recovered/exp/EXP_KIND4_DISPATCH_PRODUCERS_20261021.md 行 18](../../research/recovered/exp/EXP_KIND4_DISPATCH_PRODUCERS_20261021.md?plain=1#L18-L18) — - [STATIC] 前2つの生成入口はいずれも実際の `Skill+0x40==4` 分岐につながり、同型のR mapを利用する。3つめの `0x54E7B0` 召喚coreと合計3系統。
   制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md
 
+- [research/recovered/outside_reports1/reports/exp_research_20261021/EXP_COLLAB_STATUS_20261021.md 行 24](../../research/recovered/outside_reports1/reports/exp_research_20261021/EXP_COLLAB_STATUS_20261021.md?plain=1#L24-L24) — - 上位種別4分岐: 0x545CC0→0x547490@0x546469、0x552EF0→0x553390@0x553177。Skill+0x40==4分岐および後者Skill+0x74反復/zero fallbackを保存擬似C確認。
+  制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
+
+- [research/recovered/outside_reports1/reports/exp_research_20261021/EXP_SHARED_INDEX_20261021.md 行 101](../../research/recovered/outside_reports1/reports/exp_research_20261021/EXP_SHARED_INDEX_20261021.md?plain=1#L101-L101) — - `EXP_KIND4_DISPATCH_PRODUCERS_20261021.md`: 0x545CC0 switch Skill+0x40 case4→0x547490、および0x552EF0 Skill+0x40==4→0x553390。後者はSkill+0x74反復制御も記録。
+  制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
+
 - [research/recovered/rea_batch14/reports/SOURCE_RECOVERY_TYPED_DAMAGE_20261011.md 行 45](../../research/recovered/rea_batch14/reports/SOURCE_RECOVERY_TYPED_DAMAGE_20261011.md?plain=1#L45-L45) — - ratioは分母0なら0。Skill+0x40 mode3=0.02固定、mode4=0.01固定、mode5=clamp(0.01..0.2)、その他=clamp(0.01..0.33)。第1引数object+0x185FCとの算術と0x5D1B80丸めはnative callbackで表現。加算先は別のUnit
   制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
 
@@ -362,12 +368,6 @@
 ## Skill + 0x1BC
 
 - [research/recovered/b_reports/B_T012_T028_STATIC_RETURN_DEATHBRANCH_OFFLINE_20261024_1111.md 行 22](../../research/recovered/b_reports/B_T012_T028_STATIC_RETURN_DEATHBRANCH_OFFLINE_20261024_1111.md?plain=1#L22-L22) — - 両側合流後`Skill+0x1BC bit1`と`Skill+0x194 !=0`によって `0x55AD5F CALL 0x580280` へ進む **afterdeath候補** があり、`0x55AD6E`で `this` のvtable+0x58を呼ぶ。効果発火・オブジェクトの寿命はVERIFY。
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
-
-- [research/recovered/b_reports/B_T012_T028_STATIC_RETURN_DEATHBRANCH_OFFLINE_20261024_1111.md 行 26](../../research/recovered/b_reports/B_T012_T028_STATIC_RETURN_DEATHBRANCH_OFFLINE_20261024_1111.md?plain=1#L26-L26) — `0x0055B07D`でHP減算、`0x0055B083/8D`で生存・死亡を分岐。生存時は`Skill+0x1B0`条件で`0x55B0D7 CALL 0x547FC0`。死亡時は`Skill+0x1BC bit1`と`+0x194!=0`条件で`0x55B124 CALL 0x547FC0`、最後に`0x55B1
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
-
-- [research/recovered/b_reports/B_T012_T028_STATIC_RETURN_DEATHBRANCH_OFFLINE_20261024_1111.md 行 48](../../research/recovered/b_reports/B_T012_T028_STATIC_RETURN_DEATHBRANCH_OFFLINE_20261024_1111.md?plain=1#L48-L48) — 対象EXEと無改変DATのSHA、SAVE/MAP/同一入力・RNGを固定し、原作実測で4つのRTTIクラス（生存HP正/0/負、既死亡状態、1000000/1000001）を比較。StaticUnitの文字列長0/非0と戻りオブジェクト+0x74の0/非0、`Skill+0x1BC bit1`/`+0x194`も変化
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

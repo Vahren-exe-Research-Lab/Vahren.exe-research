@@ -40,6 +40,12 @@
 - [research/recovered/rea_batch2/reports/REA_20261104_04H_P0_CRT_TLS_GATE_AND_ERROR_FLAGS_STATIC.md 行 9](../../research/recovered/rea_batch2/reports/REA_20261104_04H_P0_CRT_TLS_GATE_AND_ERROR_FLAGS_STATIC.md?plain=1#L9-L9) — 1. `0x5BC6A9..0x5BC6C2` calls `0x5BC630`, tests its EAX record pointer, and on zero calls `0x5BB659` with `push 0x10`. Its caller `0x5B9EDB` (already checked 03
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
 
+<a id="field-16c"></a>
+## at + 0x16C
+
+- [research/recovered/knowledge_history1/reports/knowledge/REF_UNIT_EXP_SUMMON.md 行 9](../../research/recovered/knowledge_history1/reports/knowledge/REF_UNIT_EXP_SUMMON.md?plain=1#L9-L9) — - The identified accumulation target is a linked UnitData field at +0x16C; the exact end-to-end caller types, rounding and lifetime are not yet fully verified.
+  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
+
 <a id="field-928"></a>
 ## at + 0x928
 

@@ -19,6 +19,12 @@
 <a id="field-720"></a>
 ## inner + 0x720
 
+- [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 38](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L38-L38) — - Original 0x5D5922 calls 0x5D9F40: 0x5D9F55 stores a source codebook pointer at look record+0x0C. Owner slots are in inner+0x720; 0x38-byte look records in inn
+  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
+
+- [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 87](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L87-L87) — - REA/T015 ID REA-LOCAL-20261031-01H-P0-VORBIS-SETUP-TAG-BOUND-WRITER-STATIC-01; source rea_lab/decomp_task/REA_20261031_01H_P0_TAG_WRITER_BOUNDS_STATIC.md and
+  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
+
 - [research/recovered/rea_batch3/reports/REA_20261031_10H_P0_VORBIS_CODEBOOK_OWNER_STATIC.md 行 14](../../research/recovered/rea_batch3/reports/REA_20261031_10H_P0_VORBIS_CODEBOOK_OWNER_STATIC.md?plain=1#L14-L14) — - `0x005D57C0` の構築経路では、codebook所有者の `inner+0x720` 配列を入力に `inner+0xB20` の0x38-byte lookレコード配列を作る。
   制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
 
@@ -36,6 +42,15 @@
 
 <a id="field-b20"></a>
 ## inner + 0xB20
+
+- [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 38](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L38-L38) — - Original 0x5D5922 calls 0x5D9F40: 0x5D9F55 stores a source codebook pointer at look record+0x0C. Owner slots are in inner+0x720; 0x38-byte look records in inn
+  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
+
+- [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 77](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L77-L77) — - 0x005D58E7 and 0x005D5B12 are two calloc(count,0x38) sites for initial look-record creation and later conversion, both storing at inner+0xB20. The local 0x005
+  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
+
+- [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 103](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L103-L103) — - At 0x5D58E7 and 0x5D5B12, separate construction/conversion modes call calloc(count,0x38) and store its result into the same inner+0xB20 look array slot. A cou
+  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
 
 - [research/recovered/rea_batch3/reports/REA_20261031_10H_P0_VORBIS_CODEBOOK_OWNER_STATIC.md 行 14](../../research/recovered/rea_batch3/reports/REA_20261031_10H_P0_VORBIS_CODEBOOK_OWNER_STATIC.md?plain=1#L14-L14) — - `0x005D57C0` の構築経路では、codebook所有者の `inner+0x720` 配列を入力に `inner+0xB20` の0x38-byte lookレコード配列を作る。
   制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION

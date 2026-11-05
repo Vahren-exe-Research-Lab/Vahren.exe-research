@@ -667,6 +667,50 @@ class ReferenceTests(unittest.TestCase):
         for section in ("symbols", "fields", "relations", "mentions", "field_mentions"):
             self.assertNotIn("TASK-PROSE-025", json.dumps(data[section], ensure_ascii=False))
 
+    def test_document_ranking_precedes_cap_and_preserves_ties_sources_and_inputs(self):
+        # Earlier incidental mentions must not crowd filename/title matches out of the cap.
+        directory = self.root / "research/recovered"
+        directory.mkdir(parents=True)
+        query = "target-report.md"
+        body_names = [f"body-{i:02d}.md" for i in range(21, -1, -1)]
+        fixtures = [(name, "# Ordinary report\n" + "p" * 600 + query + "s" * 600
+                     + "\nsecond " + query + "\n") for name in body_names]
+        fixtures += [
+            ("title-z.md", "preamble\n# Review target-report.md\n"),
+            ("title-a.md", "preamble\n# Another target-report.md review\n"),
+            ("z-target-report.md", "preamble\n# Filename evidence Z\n"),
+            ("a-target-report.md", "preamble\n# Filename evidence A\n"),
+        ]
+        rows = []
+        for name, content in fixtures:
+            report = directory / name
+            report.write_bytes(content.encode("utf-8"))
+            rows.append(f"research/recovered/{name}\t"
+                        + hashlib.sha256(report.read_bytes()).hexdigest() + "\n")
+        ledger = directory / "RECOVERY_LEDGER.tsv"
+        ledger.write_text("destination\tdestination_sha256\n" + "".join(rows), encoding="utf-8")
+        before_bytes = {path: path.read_bytes() for path in directory.iterdir()}
+        data = reference.load(self.root)
+        before_documents = json.dumps(data["documents"], ensure_ascii=False, sort_keys=True)
+
+        hits = reference.document_matches(data["documents"], query.upper())
+
+        expected_names = ["z-target-report.md", "a-target-report.md",
+                          "title-z.md", "title-a.md"] + body_names[:16]
+        self.assertEqual([Path(hit["source"]["path"]).name for hit in hits], expected_names)
+        self.assertEqual(len(hits), 20)
+        self.assertTrue(all(hit["total_document_matches"] == 26 for hit in hits))
+        self.assertTrue(all(hit["document_matches_truncated"] for hit in hits))
+        self.assertTrue(all(hit["source"]["start_line"] == 2
+                            and hit["source"]["end_line"] == 2 for hit in hits))
+        self.assertEqual(hits[0]["summary"], "# Filename evidence Z")
+        self.assertEqual(hits[2]["summary"], "# Review target-report.md")
+        self.assertEqual(hits[4]["summary"], "p" * 192 + query + "s" * 192)
+        self.assertEqual(json.dumps(data["documents"], ensure_ascii=False, sort_keys=True),
+                         before_documents)
+        self.assertEqual({path: path.read_bytes() for path in directory.iterdir()}, before_bytes)
+        self.assertEqual(reference.document_matches(data["documents"], query.upper()), hits)
+
     def test_document_search_cap_order_first_match_and_filename_fallback(self):
         report, _ = self.add_prose_report()
         data = reference.load(self.root)

@@ -13,6 +13,12 @@
 - [research/recovered/rea_batch3/reports/REA_20261031_12H_P0_VORBIS_LOOK_ARRAY_CALLOC_STATIC.md 行 16](../../research/recovered/rea_batch3/reports/REA_20261031_12H_P0_VORBIS_LOOK_ARRAY_CALLOC_STATIC.md?plain=1#L16-L16) — - `0x005D9F40` は冒頭で対象lookレコードを `memset(...,0,0x38)`、後続 `0x005D9F55` で `look+0x0C` にborrowedポインタを格納する。`0x005DA070` も冒頭 `0x005DA082` でlookレコードを `memset(...,0,0x38
   制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
 
+<a id="field-10"></a>
+## look + 0x10
+
+- [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 39](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L39-L39) — - After successful 0x5D5B51 -> 0x5DA070 conversion, 0x5D5B60 frees the source and 0x5D5B6C zeroes its owner slot. Failure cleanup revisits only remaining non-nu
+  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
+
 <a id="field-14"></a>
 ## look + 0x14
 

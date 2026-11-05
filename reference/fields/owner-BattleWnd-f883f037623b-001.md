@@ -16,6 +16,12 @@
 - [research/recovered/search_reports1/reports/BATTLE_TAKEOVER_RESEARCH_STAGE6_20261021.md 行 10](../../research/recovered/search_reports1/reports/BATTLE_TAKEOVER_RESEARCH_STAGE6_20261021.md?plain=1#L10-L10) — - EDX: 通常/scriptでは &E+0x1EED20、BattleWndでは [BattleWnd+0x194] の値。
   制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
 
+<a id="field-238"></a>
+## BattleWnd + 0x238
+
+- [research/recovered/outside_reports1/reports/exp_research_20261021/EXP_RESUME_20261021.md 行 63](../../research/recovered/outside_reports1/reports/exp_research_20261021/EXP_RESUME_20261021.md?plain=1#L63-L63) — - 新接続A: BattleWnd+0x238 update roster→SimpleUnit virtual+4=545740→545CC0→近接virtual7C=546C90→550E70→551E50、回復551490→551E50。+8C=1で条件付き即時58A650。
+  制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
+
 <a id="field-248"></a>
 ## BattleWnd + 0x248
 

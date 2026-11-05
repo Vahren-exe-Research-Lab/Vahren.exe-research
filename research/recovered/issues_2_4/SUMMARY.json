@@ -1,0 +1,29 @@
+{
+  "fixed_baseline": "7def491b8b982b624f8c301c6c903047e99b1a2e",
+  "baseline_ledger_rows": 1576,
+  "issues_selected": [
+    2,
+    4
+  ],
+  "accepted_bodies": 2,
+  "whole_body_deferrals": 0,
+  "privacy_edits": 0,
+  "source_bytes": 15263,
+  "issue2_pairs": 9,
+  "literal_paths": 18,
+  "accepted_pair_paths": 11,
+  "unaccepted_pair_paths": 7,
+  "complete_accepted_pairs": [
+    2,
+    7,
+    9
+  ],
+  "canonical_source_cells": 780,
+  "identity_metadata_files": 32,
+  "accepted_evidence_documents": 11,
+  "input_receipts": 49,
+  "network_calls": "Exactly2 GitHub connector fetch_issue calls; no network followups",
+  "comments_read": 0,
+  "linked_artifacts_read": 0,
+  "original_native_reads": 0
+}

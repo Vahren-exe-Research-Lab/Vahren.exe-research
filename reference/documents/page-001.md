@@ -6,7 +6,7 @@
 
 通常の文字列検索は題名・ファイル名・研究ID・本文を対象に、1文書につき最初の一致行の最大400文字を表示します。題名・ファイル名の一致はMarkdownの見出し行（見出しがなければ先頭行）を表示します。その他の形式はファイル名を題名とし、元の文字列表現を検索します。RUN_RESULT.jsonは従来の構造化run索引で扱います。
 
-文書結果は回収台帳での初出順で最大20件です。省略時は一致総数を表示します。全件の出典・制約は一覧または各詳細ページに掲載しています。研究ID・題名で絞り込めます。アドレス・所有者＋オフセット検索は従来の専用結果を返します。
+文書検索結果はファイル名の一致、題名の一致、本文だけの一致の順で最大20件です。同じ区分内は回収台帳での初出順です。省略時は一致総数を表示します。全件の出典・制約は一覧または各詳細ページに掲載しています。研究ID・題名で絞り込めます。アドレス・所有者＋オフセット検索は従来の専用結果を返します。
 
 [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md) · [次のページ](page-002.md)
 
@@ -346,7 +346,7 @@
   回収状態 GITHUB_READBACK_VERIFIED_b28f876_EXACT_BODY。以前の収録状況 No exact current source SHA among all preflight Git-tracked file bytes; curated/summary overlap may exist。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L106-L106)。制約・訂正 Historical STATIC/INFERRED/VERIFY and synthetic-test claims; no new native/runtime verification; referenced raw assets/probes/archives not recovered; no Golden/READY promotion; vftable slot count is author-stated upper bound; original class labels do not prove method semantics
   本文 SHA256 `78b7082d603efe0bc5701fbf646e950d3b77e49df12123ddcceeb695bfed49ec`
 
-- [通常セーブ（.sav）形式の事典（2026-11-01 Claude。出典ID S1101）](../../REF_SAVE_FORMAT.md?plain=1#L1-L1) — `REF_SAVE_FORMAT.md`
+- [通常セーブ（.sav）形式の事典（2026-11-01 Claude。出典ID S1101）](../../research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md?plain=1#L1-L1) — `research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md`
   回収状態 LINKED_EXACT_TRACKED_BODY。以前の収録状況 Current actual source SHA matches tracked file bytes。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L107-L107)。制約・訂正 Existing full body linked; catalog revision differs
   本文 SHA256 `ab8ad91a089936864ce06657fd35decb1a9fa2e65a437ffa1f88c85323026366`
 

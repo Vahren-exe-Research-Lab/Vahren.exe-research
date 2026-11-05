@@ -292,6 +292,9 @@
 - [research/recovered/e_reports/T020_E_T013_MODE3_EBX_ACCEPTANCE_20261031_05H.md 行 17](../../research/recovered/e_reports/T020_E_T013_MODE3_EBX_ACCEPTANCE_20261031_05H.md?plain=1#L17-L17) — - vector長0/1/4 × manager+0x98=9/10/11 × groupflag0/1 × manager+0x18=0/1 × manager+0xA5=0/1 = 72件。合成出力はUnit書込なし24、category3=16、category6=24、category7=8件。72/72 PA
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
 
+- [research/recovered/knowledge_history1/reports/knowledge/REF_BATTLE_AI_MORALE.md 行 62](../../research/recovered/knowledge_history1/reports/knowledge/REF_BATTLE_AI_MORALE.md?plain=1#L62-L62) — - With eligible Units, the category-3 branch can select 'push' if manager+0x98>10, 'advance' (category 6) otherwise, and 'even' (category 7) under an additional
+  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
+
 <a id="field-a0"></a>
 ## manager + 0xA0
 
@@ -389,9 +392,6 @@
   制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
 
 - [research/recovered/b_batch7/data/T012_MODE4_EMPTY_CANDIDATE_QUOTA_CROSSGATE_OFFLINE_20261021_1110.md 行 14](../../research/recovered/b_batch7/data/T012_MODE4_EMPTY_CANDIDATE_QUOTA_CROSSGATE_OFFLINE_20261021_1110.md?plain=1#L14-L14) — - calleeから正常復帰した上位`0x5501A0`は、戻り値/生成個体確認の分岐を挟まずに `manager+0x1F0` を+1し、`def+0x74` 上限と比較する。**calleeが上記の空候補短絡でeffect生成を行わなくても、上位が試行枠を消費する条件付き経路と整合**する（STATIC-PSEUD
-  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
-
-- [research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md 行 14](../../research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md?plain=1#L14-L14) — 3. `0x005501A0` 擬似C：引数 `manager+0x1F4` を先に1加算し、`def=*(manager+0x1D4)`・`def+0x78 <= manager+0x1F4` のゲート成立時にカウンタ `+0x1F4=0`、dispatch、`manager+0x1F0` を+1。kind4は **
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

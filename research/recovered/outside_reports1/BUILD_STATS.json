@@ -1,0 +1,16 @@
+{
+  "selected": 13,
+  "current_source_bytes": 254703,
+  "accepted": 13,
+  "held": 0,
+  "full_reviews": 13,
+  "partial_reviews": 0,
+  "unopened_preholds": 0,
+  "exact_bodies": 13,
+  "privacy_bodies": 0,
+  "privacy_token_edits": 0,
+  "baseline_aliases": 0,
+  "within_batch_aliases": 0,
+  "catalog_sha_size_matches": 13,
+  "baseline_ledger_rows": 1576
+}

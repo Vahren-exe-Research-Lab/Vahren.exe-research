@@ -7,7 +7,7 @@
 <a id="field-1c"></a>
 ## UnitDef + 0x1C
 
-- [REF_SAVE_FORMAT.md 行 195](../../REF_SAVE_FORMAT.md?plain=1#L195-L195) — \| knowledge structs UnitDef+0x1C \| 「ユニット ID（例 a030+0）。定義表のキー」 \| DAT の unit タグ。定義表のキーは +0x00 \| KB 修正案 \|
+- [research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md 行 195](../../research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md?plain=1#L195-L195) — \| knowledge structs UnitDef+0x1C \| 「ユニット ID（例 a030+0）。定義表のキー」 \| DAT の unit タグ。定義表のキーは +0x00 \| KB 修正案 \|
   制約・訂正　Existing full body linked; catalog revision differs
 
 - [research/recovered/remaining_md1/reports/dev_lab/docs/CHATGPT_CURRENT_HANDOFF.md 行 120](../../research/recovered/remaining_md1/reports/dev_lab/docs/CHATGPT_CURRENT_HANDOFF.md?plain=1#L120-L120) — - 既存研究の訂正（2026-11-01夜、Claude）：T014 の「外交状態」はターン進行オブジェクト（+0x14 経過ターン、+0x38 phase、手番順の勢力列）、「第5コンテナ」+0x32C は放浪集合、Unit+0x94 は放浪先の文字列長。T014 冒頭に訂正一覧を追記。knowledge の Uni
@@ -16,19 +16,19 @@
 <a id="field-74"></a>
 ## UnitDef + 0x74
 
-- [REF_SAVE_FORMAT.md 行 196](../../REF_SAVE_FORMAT.md?plain=1#L196-L196) — \| knowledge structs UnitDef+0x74 \| 「マスター（君主）の印」 \| プレイヤー本人の Unit の印。勢力の盟主は +0x77 \| KB 修正案（確かさは実機確認のまま） \|
+- [research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md 行 196](../../research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md?plain=1#L196-L196) — \| knowledge structs UnitDef+0x74 \| 「マスター（君主）の印」 \| プレイヤー本人の Unit の印。勢力の盟主は +0x77 \| KB 修正案（確かさは実機確認のまま） \|
   制約・訂正　Existing full body linked; catalog revision differs
 
 <a id="field-78"></a>
 ## UnitDef + 0x78
 
-- [REF_SAVE_FORMAT.md 行 197](../../REF_SAVE_FORMAT.md?plain=1#L197-L197) — \| knowledge structs UnitDef+0x78 \| 「独立部隊（中立）のリーダーの印」（F§26 の初期の解釈） \| 部隊の隊長の印（F§58・§62.1 で訂正済み） \| KB 修正案 \|
+- [research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md 行 197](../../research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md?plain=1#L197-L197) — \| knowledge structs UnitDef+0x78 \| 「独立部隊（中立）のリーダーの印」（F§26 の初期の解釈） \| 部隊の隊長の印（F§58・§62.1 で訂正済み） \| KB 修正案 \|
   制約・訂正　Existing full body linked; catalog revision differs
 
 <a id="field-158"></a>
 ## UnitDef + 0x158
 
-- [REF_SAVE_FORMAT.md 行 198](../../REF_SAVE_FORMAT.md?plain=1#L198-L198) — \| knowledge structs UnitDef+0x158 \| ptr、遅延生成 \| std::set 本体（先頭 +0x15C、件数 +0x160）。「遅延生成」は中身を空なら作り直すこと \| KB 修正案 \|
+- [research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md 行 198](../../research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md?plain=1#L198-L198) — \| knowledge structs UnitDef+0x158 \| ptr、遅延生成 \| std::set 本体（先頭 +0x15C、件数 +0x160）。「遅延生成」は中身を空なら作り直すこと \| KB 修正案 \|
   制約・訂正　Existing full body linked; catalog revision differs
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

@@ -10,6 +10,18 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1079](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1079-L1079) — \| 係数f \| 種別(skill+0x40, 表0x55201C): 3→0.02、4→0.01、5→clamp(r,0.01,0.2)、その他→clamp(r,0.01,0.33)。r=a/b（b=0なら0.0） \| CONFIRMED \|
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+<a id="field-1b0"></a>
+## skill + 0x1B0
+
+- [research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md 行 134](../../research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md?plain=1#L134-L134) — object damage handler VA 0x55B060 はHPを減算し、HP>0のsurvivor branchで skill +0x1B0 を検査する。
+  制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
+
+<a id="field-1bc"></a>
+## skill + 0x1BC
+
+- [research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md 行 136](../../research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md?plain=1#L136-L136) — 同handlerのHP<=0 branchは skill +0x1BC bit1 を検査して +0x184 afterdeathをdispatchしてからobject破棄へ進む。
+  制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
+
 <a id="field-288"></a>
 ## skill + 0x288
 
