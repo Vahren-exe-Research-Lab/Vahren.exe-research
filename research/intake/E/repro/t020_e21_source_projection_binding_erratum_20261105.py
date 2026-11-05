@@ -8,6 +8,7 @@ No original EXE/DAT/MAP/SAVE or protected artifact is used.
 import hashlib
 import hmac
 import json
+import math
 import re
 import unittest
 
@@ -23,6 +24,14 @@ def _unique_object(pairs):
 
 def _reject_nonfinite(value):
     raise ValueError("nonfinite JSON value")
+
+
+def _finite_float(token):
+    """Reject JSON exponent overflow to inf (parse_constant cannot catch 1e309)."""
+    value = float(token)
+    if not math.isfinite(value):
+        raise ValueError("nonfinite JSON exponent/float")
+    return value
 
 
 def _typed_equal(a, b):
@@ -63,7 +72,8 @@ def check_projection(raw, expected_sha256, receipt):
             try:
                 doc = json.loads(raw.decode("utf-8"),
                                  object_pairs_hook=_unique_object,
-                                 parse_constant=_reject_nonfinite)
+                                 parse_constant=_reject_nonfinite,
+                                 parse_float=_finite_float)
             except (UnicodeDecodeError, ValueError, TypeError):
                 status = "SOURCE_JSON_INVALID"
             else:
@@ -161,6 +171,29 @@ class ProjectionBindingTests(unittest.TestCase):
         raw = b'{"capture":NaN}'
         self.assertEqual(self.result(raw=raw, digest=hashlib.sha256(raw).hexdigest())["status"],
                          "SOURCE_JSON_INVALID")
+
+    def test_exponent_overflow_rejected_even_if_receipt_claims_inf(self):
+        # Python json.loads otherwise maps JSON 1e309 to float('inf').
+        raw = self.raw.replace(b'"order": 0', b'"order": 1e309')
+        self.assertNotEqual(raw, self.raw)
+        c = json.loads(json.dumps(self.capture))
+        c["g2"]["deployed"][0]["order"] = float("inf")
+        self.assertEqual(self.result(raw=raw, digest=hashlib.sha256(raw).hexdigest(),
+                                     receipt=c)["status"], "SOURCE_JSON_INVALID")
+
+    def test_negative_exponent_overflow_rejected(self):
+        raw = self.raw.replace(b'"order": 0', b'"order": -9e9999')
+        self.assertNotEqual(raw, self.raw)
+        self.assertEqual(self.result(raw=raw, digest=hashlib.sha256(raw).hexdigest())[
+            "status"], "SOURCE_JSON_INVALID")
+
+    def test_normal_fractional_json_still_binds_synthetically(self):
+        c = json.loads(json.dumps(self.capture))
+        c["g2"]["deployed"][0]["order"] = 0.5
+        raw = json.dumps({"capture": c}, sort_keys=True).encode("utf-8")
+        r = check_projection(raw, hashlib.sha256(raw).hexdigest(), c)
+        self.assertEqual(r["status"], "SYNTHETIC_FIELD_BINDING_ONLY")
+        self.assertFalse(r["actual_golden_pass"] or r["strict_match"] or r["ready"])
 
     def test_invalid_utf8_rejected(self):
         raw = b'\xff'
