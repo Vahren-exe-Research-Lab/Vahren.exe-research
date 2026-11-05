@@ -1,6 +1,6 @@
 # OGG-only test-copy migration — follow-up design, 2026-11-06
 
-Status: ASSET_CONVERSION_VERIFIED / BRIDGE_NOT_IMPLEMENTED.
+Status: ASSET_CONVERSION_VERIFIED / BRIDGE_CANDIDATE_BUILT_RUNTIME_PENDING.
 The original DAT-path plugin's world-event playback has passed bounded runtime/user acceptance.
 This separate follow-up is authorized by the user's request to convert all WAV files and play the isolated copy. Permission to delete original WAVs is present, but deletion is not useful until existing callers are routed successfully.
 
@@ -141,3 +141,56 @@ V9 for004C01A0 shows the single-slot behavior: stop/release old manager+34 buffe
 SE and battle observation gates are now satisfied for the bounded captured paths, including a native null-result case. Keep the same factory signature candidate, borrowed original device, and one stopped Buffer8 reference transferred to the original caller. Keep Play/volume/later Release with the original caller. Do not replace the existing eight-voice DAT API with this synchronous factory interface.
 
 Before all-WAV removal: resolve scenario-root precedence with absent WAVs; confirm installation before relevant cache fills; implement bounded worker decode requests and cancellation/ownership; validate returned original-device buffers and failure paths; then test the currently unobserved SINGLE route. No bridge code or live patch was installed by this observation.
+
+
+## Implemented bridge candidate and isolated subset installation (2026-11-06)
+
+Status: BRIDGE_CANDIDATE_BUILT_AND_INSTALLED / REAL_GAME_RUNTIME_PENDING.
+Historical observation sections above describe the earlier, unimplemented state.
+
+Source: HakushinExtensions worktree branch feat/ogg-audio-20261105, local commit c78b09647579bcd1aae7440f2c7caed8de811174 (product branch not pushed).
+Built/installed DLL SHA256 9c8b87c31fa168850869a704232edb5888ffbf9d71f00a321075de1f06e28225.
+Initial explicit map:63 unique keys from prior observed SE/BATTLE paths plus the SINGLE test voice; SHA256 34599cd8ff6b636aa03bcbfbffb4ba7c417144a3d210d884aaea03e4406d95b1,4396 bytes,ACP932. Full5972-entry map is prepared separately (SHA256 bcaae783842326bef6aa4365cf95674c25e2c16cd1cbfdbb2d81220ff9d55ca1); not selected.
+All original WAVs remain. Six installed files were backed up and read-back hash verified. No game was launched by the agent, and no bridge audibility acceptance is claimed.
+
+### New static evidence: SINGLE trigger and earliest installation
+
+The existing DAT command is vc: native004A1190 loads the string at006317E8,004A11A5 assigns opcode0x4B,004A11B9 inserts it. Dispatcher CALL004A1BD0 reaches004C01A0. A normal authored vc(small3/sp_go) event was prepared; no manual native-function call is needed.
+
+The proxy's DirectInput8Create calls HK_StartupTry -> Core_Load -> plugin_init before forwarding to the real DirectInput factory. Native chain00555AD0 ->004B78C0 ->004B9E50 ->004EE0C0 ->004BCDD0 reaches this bootstrap. In004B78C0, input construction precedes CALL004B7D08 ->004BF930, which creates the original sound device. Thus synchronous plugin_init patch installation can precede all device-dependent factory calls.
+
+- Main HWND: preferred008797FC/RVA4797FC; CreateWindowExA call005557D8, store005557E0, before call00555918 to loader coordinator00555CD0.
+- Loading flag: DWORD at0087983C/RVA47983C; store1 at00555D69, clear at00555E15 after loader join.
+- Original sound manager:008BE3A0/RVA4BE3A0, zero-filled image tail before initialization; device at+0.
+- The loader normally runs in a created worker thread, with an inline alternative. Initialization thread MUST NOT be required to equal UI thread.
+- Production gate: exact host identity already accepted; loading==1; device==0; original HWND has current-process owner. Capture its UI thread separately. Refuse late activation; do not use the EXP plugin's later title/message-hook route.
+- Additional scoped SE resolver CALL:004C09F1 bytes E8 9A 67 F6 FF ->00427190, cdecl; caller cleans stack at004C09F8. Only this site is patched, not the shared resolver globally.
+
+These are static ordering/ABI findings. Actual runtime installation at that point is the next trial's first gate.
+
+### Implemented interfaces and ownership
+
+- hakushin_ogg_backend.h: HkOggDecodePcmCancel(path,live_bytes,out,cancel) returns owned CAP-sized HKO_PCM without creating an audio device or playing. HkOggFreePcm releases it. Native open/info/read/clear remain worker-only.
+- hakushin_ogg_factory.h: hko_make_original_buffer borrows original IDirectSound, creates CTRLVOLUME secondary buffer, copies both Lock ranges, Unlocks, queries Buffer8, releases temporary base reference and transfers one stopped Buffer8. Original callers retain volume/Play/duplicate/later Release.
+- hakushin_ogg_manifest.h: owned bounded ACP TSV,8192-entry limit, Unicode-aware case/separator comparison (CP932 trail bytes preserved), explicit source/target mapping. Scenario-root selection precedes fallback even without WAVs. Existing primary WAV is a precedence barrier; it does not authorize silent playback fallback for an explicitly mapped missing OGG.
+- hakushin_ogg_request.h: one owned queued/inflight request, copied path, completion event, producer/worker references, bounded5000ms wait and cancellation. Timeouts retain worker-owned state until completion; no caller stack pointers survive.
+- hakushin_ogg_bridge.h: three stdcall-compatible factories plus scoped cdecl resolver; UI-thread mapped playback, original fallback for unmapped/unsupported-thread paths. Worker prioritizes bridge requests and defers new DAT commands through the entire caller PCM-free/buffer-transfer interval.
+- Transient memory remains bounded by16MiB per decoded clip and64MiB including existing DAT buffers plus staging/new copy. Transferred original-manager caches are owned by the original engine and are not covered by the DAT eight-voice budget.
+- Optional [bridge] enabled=1; immutable HakushinOgg.manifest.tsv. Existing routine(hk_ogg_v1) API remains independent.
+- Four managed Core CALL patches install with exact expected bytes; rollback retains ownership if incomplete. Active bridge is process-lifetime; hot shutdown returns HK_BUSY rather than unpatching from an arbitrary thread.
+
+### Verification and fixes
+
+All11 OGG test programs passed at O0 and O2, plus actual Core disabled/wrong-host tests. New tests exercise native-decode substitutes and cleanup, real DirectSound stopped-buffer readback/duplication after original release, split Lock failure ownership, manifest selection, request timeout/producer races, four-site rollback, early loader-thread gate, non-UI fallback, restore failure and HKCP_RECOVER retention. Seven manifest-generator Python tests pass; all5972 generated map entries loaded and resolved with the native C parser. Launcher syntax and isolated mock-launch tests pass; they did not start the real game.
+
+Independent review corrections were demonstrated failing before fixes:
+1. RECOVER retention sentinel -1 must not enable adapters; mapped execution requires active==1.
+2. Once recognized as mapped, unavailable-worker and reentrant/busy calls return null with error logs. They must not pass an already selected OGG to the original WAV parser or silently replay the old WAV.
+
+The broader existing Python discovery had16 errors from missing tools/claude_lecture_v4.dat in unrelated installer/package/profile tests; exact test identifiers are preserved locally. This fixture was not added or altered.
+
+### Next user trial
+
+A separate launcher checks EXE/DLL/map hashes, archives previous OGG/loader logs, starts the game normally and collects fresh logs plus exit receipt after normal exit. The authored one-shot world event uses vc for SINGLE coverage. User checks short battle, BGM, effects/voices and category volume. No x32dbg, screenshots or repeated breakpoints are required.
+
+Pending: observed BRIDGE_ACTIVE=4 before relevant sound creation; native decode of actual subset assets; SINGLE/BATTLE/SE result0 and user audibility; original category volume/cache/duplicate behavior; no regression in BGM/game operation. Only after subset acceptance should the full map and WAV-removal phase proceed. Formal function-dictionary adoption remains curator-owned.
