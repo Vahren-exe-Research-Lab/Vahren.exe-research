@@ -1,0 +1,150 @@
+{
+  "root": "[USER_HOME]\\Documents\\迫真戦記",
+  "archives": {
+    "Vahren701.zip": {
+      "size_bytes": 63266814,
+      "sha256": "EEC56E675CC46D0D7B6743F38E9A28A112A22CFF80D38BCA143323297E2EF4E0",
+      "entry_count": 1808,
+      "uncompressed_bytes": 88218770,
+      "extension_counts": {
+        ".png": 1008,
+        ".dat": 254,
+        ".map": 191,
+        ".bmp": 144,
+        ".wav": 74,
+        ".mid": 67,
+        ".jpg": 49,
+        ".mp3": 8,
+        ".txt": 7,
+        ".exe": 2,
+        ".bat": 1,
+        ".cur": 1,
+        ".ini": 1,
+        ".ogg": 1
+      },
+      "top2_counts": {
+        "Vahren/a_default": 1800,
+        "Vahren/a_system": 3,
+        "Vahren/Vahren.exe": 1,
+        "Vahren/Vahren@chip3.ÉVâAâCâRâôö┬.exe": 1,
+        "Vahren/VahrenâtâïâXâNâèü[âô.bat": 1,
+        "Vahren/Ägùpæfì▐é╠Æ±ïƒî│âTâCâgùl.txt": 1,
+        "Vahren/Éαû╛Åæ.txt": 1
+      }
+    },
+    "新約迫真戦記―ほのぼの神話ver0.67 豪華版(画像・音声削除版).zip": {
+      "size_bytes": 365090453,
+      "sha256": "A1DAC7209FCA6FBF7D05D956054047B4C36E5149EB100434BF796CCB94970423",
+      "entry_count": 7026,
+      "uncompressed_bytes": 410537953,
+      "extension_counts": {
+        ".png": 5605,
+        ".dat": 595,
+        ".jpg": 274,
+        ".wav": 233,
+        ".map": 151,
+        ".bmp": 128,
+        ".txt": 19,
+        ".ini": 7,
+        ".db": 4,
+        ".bat": 2,
+        ".exe": 2,
+        ".ogg": 2,
+        ".cur": 1,
+        ".dll": 1,
+        ".mid": 1,
+        ".mp3": 1
+      },
+      "top2_counts": {
+        "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default": 7007,
+        "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_system": 4,
+        "新約迫真戦記―ほのぼの神話ver0.67 豪華版/カスタム": 3,
+        "新約迫真戦記―ほのぼの神話ver0.67 豪華版/RTS情報": 1,
+        "新約迫真戦記―ほのぼの神話ver0.67 豪華版/Vahren.exe": 1,
+        "新約迫真戦記―ほのぼの神話ver0.67 豪華版/d3dx9_35.dll": 1,
+        "新約迫真戦記―ほのぼの神話ver0.67 豪華版/readme_1__初心者向け説明.txt": 1,
+        "新約迫真戦記―ほのぼの神話ver0.67 豪華版/readme_2＿クレジット等.txt": 1,
+        "新約迫真戦記―ほのぼの神話ver0.67 豪華版/readme_3＿更新内容.txt": 1,
+        "新約迫真戦記―ほのぼの神話ver0.67 豪華版/readme_4＿実績一覧.txt": 1,
+        "新約迫真戦記―ほのぼの神話ver0.67 豪華版/readme_5＿うるさいと感じる人がいそうなボイス.txt": 1,
+        "新約迫真戦記―ほのぼの神話ver0.67 豪華版/readme_6＿調整方針.txt": 1,
+        "新約迫真戦記―ほのぼの神話ver0.67 豪華版/フルスクリーンで起動.bat": 1,
+        "新約迫真戦記―ほのぼの神話ver0.67 豪華版/新約迫真戦記ーほのぼの神話ー.exe": 1,
+        "新約迫真戦記―ほのぼの神話ver0.67 豪華版/相性.png": 1
+      }
+    },
+    "新約迫真戦記―ほのぼの神話ver0.67 豪華版.zip": {
+      "size_bytes": 3365940598,
+      "sha256": "95C693162A9A7D4AAA3DF6E5A780C47E5B429D70863CE1D8B4FCF012B9408C61",
+      "entry_count": 14375,
+      "uncompressed_bytes": 3753788850,
+      "extension_counts": {
+        ".png": 6774,
+        ".wav": 5972,
+        ".dat": 595,
+        ".ogg": 396,
+        ".jpg": 279,
+        ".map": 151,
+        ".bmp": 128,
+        ".mp3": 39,
+        ".txt": 19,
+        ".ini": 11,
+        ".db": 4,
+        ".bat": 2,
+        ".exe": 2,
+        ".cur": 1,
+        ".dll": 1,
+        ".mid": 1
+      },
+      "top2_counts": {
+        "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default": 14356,
+        "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_system": 4,
+        "新約迫真戦記―ほのぼの神話ver0.67 豪華版/カスタム": 3,
+        "新約迫真戦記―ほのぼの神話ver0.67 豪華版/RTS情報": 1,
+        "新約迫真戦記―ほのぼの神話ver0.67 豪華版/Vahren.exe": 1,
+        "新約迫真戦記―ほのぼの神話ver0.67 豪華版/d3dx9_35.dll": 1,
+        "新約迫真戦記―ほのぼの神話ver0.67 豪華版/readme_1__初心者向け説明.txt": 1,
+        "新約迫真戦記―ほのぼの神話ver0.67 豪華版/readme_2＿クレジット等.txt": 1,
+        "新約迫真戦記―ほのぼの神話ver0.67 豪華版/readme_3＿更新内容.txt": 1,
+        "新約迫真戦記―ほのぼの神話ver0.67 豪華版/readme_4＿実績一覧.txt": 1,
+        "新約迫真戦記―ほのぼの神話ver0.67 豪華版/readme_5＿うるさいと感じる人がいそうなボイス.txt": 1,
+        "新約迫真戦記―ほのぼの神話ver0.67 豪華版/readme_6＿調整方針.txt": 1,
+        "新約迫真戦記―ほのぼの神話ver0.67 豪華版/フルスクリーンで起動.bat": 1,
+        "新約迫真戦記―ほのぼの神話ver0.67 豪華版/新約迫真戦記ーほのぼの神話ー.exe": 1,
+        "新約迫真戦記―ほのぼの神話ver0.67 豪華版/相性.png": 1
+      }
+    }
+  },
+  "hakushin_core_vs_full": {
+    "core_zip": "新約迫真戦記―ほのぼの神話ver0.67 豪華版(画像・音声削除版).zip",
+    "full_zip": "新約迫真戦記―ほのぼの神話ver0.67 豪華版.zip",
+    "core_files": 7026,
+    "full_files": 14375,
+    "common_files": 7026,
+    "identical_common_files": 7026,
+    "changed_common_files": 0,
+    "only_core_files": 0,
+    "only_full_files": 7349,
+    "only_full_by_ext": {
+      ".ogg": 394,
+      ".mp3": 38,
+      ".png": 1169,
+      ".jpg": 5,
+      ".wav": 5739,
+      ".ini": 4
+    },
+    "only_core_by_ext": {},
+    "nonmedia_only_full_count": 4,
+    "nonmedia_only_core_count": 0,
+    "nonmedia_changed_count": 0,
+    "nonmedia_only_full": [
+      "a_default/sound/desktop.ini",
+      "a_default/voice/small2/desktop.ini",
+      "a_default/voice/small3/desktop.ini",
+      "a_default/voice/small4/desktop.ini"
+    ],
+    "nonmedia_only_core": [],
+    "nonmedia_changed": [],
+    "changed_examples": []
+  }
+}

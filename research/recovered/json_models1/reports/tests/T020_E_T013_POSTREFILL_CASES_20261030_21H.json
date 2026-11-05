@@ -1,0 +1,2673 @@
+{
+  "research_id": "E-AUDIT-20261030-21H-T020-T013-POSTREFILL-UNIT-GATE-01",
+  "source_id": "B-20261030-21H-T013-MODE2-POSTREFILL-SCORE-DISPATCH-01",
+  "owner": "E/T020",
+  "evidence": "STATIC PE code bytes plus synthetic hypothetical conditions",
+  "gameplay": "NOT_RUN",
+  "cases": [
+    {
+      "id": "cleanup-00-ok",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 0,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-00-bad_a",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 0,
+      "flags": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-00-bad_b",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 0,
+      "flags": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-00-bad_c0",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 0,
+      "flags": [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-00-bad_d0",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 0,
+      "flags": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-00-bad_c8",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 0,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-00-bad_double",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 0,
+      "flags": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-00-bad_triple",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 0,
+      "flags": [
+        1,
+        0,
+        -1,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-01-ok",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 1,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-01-bad_a",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 1,
+      "flags": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-01-bad_b",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 1,
+      "flags": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-01-bad_c0",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 1,
+      "flags": [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-01-bad_d0",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 1,
+      "flags": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-01-bad_c8",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 1,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-01-bad_double",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 1,
+      "flags": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-01-bad_triple",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 1,
+      "flags": [
+        1,
+        0,
+        -1,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-02-ok",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 2,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-02-bad_a",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 2,
+      "flags": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-02-bad_b",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 2,
+      "flags": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-02-bad_c0",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 2,
+      "flags": [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-02-bad_d0",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 2,
+      "flags": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-02-bad_c8",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 2,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-02-bad_double",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 2,
+      "flags": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-02-bad_triple",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 2,
+      "flags": [
+        1,
+        0,
+        -1,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-03-ok",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 3,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-03-bad_a",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 3,
+      "flags": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-03-bad_b",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 3,
+      "flags": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-03-bad_c0",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 3,
+      "flags": [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-03-bad_d0",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 3,
+      "flags": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-03-bad_c8",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 3,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-03-bad_double",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 3,
+      "flags": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-03-bad_triple",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 3,
+      "flags": [
+        1,
+        0,
+        -1,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-04-ok",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 4,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-04-bad_a",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 4,
+      "flags": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-04-bad_b",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 4,
+      "flags": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-04-bad_c0",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 4,
+      "flags": [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-04-bad_d0",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 4,
+      "flags": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-04-bad_c8",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 4,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-04-bad_double",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 4,
+      "flags": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-04-bad_triple",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 4,
+      "flags": [
+        1,
+        0,
+        -1,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-05-ok",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 5,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-05-bad_a",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 5,
+      "flags": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-05-bad_b",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 5,
+      "flags": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-05-bad_c0",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 5,
+      "flags": [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-05-bad_d0",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 5,
+      "flags": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-05-bad_c8",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 5,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-05-bad_double",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 5,
+      "flags": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-05-bad_triple",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 5,
+      "flags": [
+        1,
+        0,
+        -1,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-06-ok",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 6,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-06-bad_a",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 6,
+      "flags": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-06-bad_b",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 6,
+      "flags": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-06-bad_c0",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 6,
+      "flags": [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-06-bad_d0",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 6,
+      "flags": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-06-bad_c8",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 6,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-06-bad_double",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 6,
+      "flags": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-06-bad_triple",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 6,
+      "flags": [
+        1,
+        0,
+        -1,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-07-ok",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 7,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-07-bad_a",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 7,
+      "flags": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-07-bad_b",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 7,
+      "flags": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-07-bad_c0",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 7,
+      "flags": [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-07-bad_d0",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 7,
+      "flags": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-07-bad_c8",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 7,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-07-bad_double",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 7,
+      "flags": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-07-bad_triple",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 7,
+      "flags": [
+        1,
+        0,
+        -1,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-08-ok",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 8,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-08-bad_a",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 8,
+      "flags": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-08-bad_b",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 8,
+      "flags": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-08-bad_c0",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 8,
+      "flags": [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-08-bad_d0",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 8,
+      "flags": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-08-bad_c8",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 8,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-08-bad_double",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 8,
+      "flags": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "cleanup-08-bad_triple",
+      "kind": "synthetic_gate",
+      "stage": "cleanup",
+      "category": 8,
+      "flags": [
+        1,
+        0,
+        -1,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "cleanup_only",
+        "unit_eligible": null,
+        "label_va": null
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-00-ok",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 0,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": true,
+        "label_va": "0x0044C7EF"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-00-bad_a",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 0,
+      "flags": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C7EF"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-00-bad_b",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 0,
+      "flags": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C7EF"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-00-bad_c0",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 0,
+      "flags": [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C7EF"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-00-bad_d0",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 0,
+      "flags": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C7EF"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-00-bad_c8",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 0,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C7EF"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-00-bad_double",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 0,
+      "flags": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C7EF"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-00-bad_triple",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 0,
+      "flags": [
+        1,
+        0,
+        -1,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C7EF"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-01-ok",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 1,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": true,
+        "label_va": "0x0044C804"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-01-bad_a",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 1,
+      "flags": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C804"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-01-bad_b",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 1,
+      "flags": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C804"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-01-bad_c0",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 1,
+      "flags": [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C804"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-01-bad_d0",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 1,
+      "flags": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C804"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-01-bad_c8",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 1,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C804"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-01-bad_double",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 1,
+      "flags": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C804"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-01-bad_triple",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 1,
+      "flags": [
+        1,
+        0,
+        -1,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C804"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-02-ok",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 2,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": true,
+        "label_va": "0x0044C80B"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-02-bad_a",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 2,
+      "flags": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C80B"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-02-bad_b",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 2,
+      "flags": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C80B"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-02-bad_c0",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 2,
+      "flags": [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C80B"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-02-bad_d0",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 2,
+      "flags": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C80B"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-02-bad_c8",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 2,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C80B"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-02-bad_double",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 2,
+      "flags": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C80B"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-02-bad_triple",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 2,
+      "flags": [
+        1,
+        0,
+        -1,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C80B"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-03-ok",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 3,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": true,
+        "label_va": "0x0044C812"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-03-bad_a",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 3,
+      "flags": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C812"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-03-bad_b",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 3,
+      "flags": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C812"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-03-bad_c0",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 3,
+      "flags": [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C812"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-03-bad_d0",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 3,
+      "flags": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C812"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-03-bad_c8",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 3,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C812"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-03-bad_double",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 3,
+      "flags": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C812"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-03-bad_triple",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 3,
+      "flags": [
+        1,
+        0,
+        -1,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C812"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-04-ok",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 4,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": true,
+        "label_va": "0x0044C81E"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-04-bad_a",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 4,
+      "flags": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C81E"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-04-bad_b",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 4,
+      "flags": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C81E"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-04-bad_c0",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 4,
+      "flags": [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C81E"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-04-bad_d0",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 4,
+      "flags": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C81E"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-04-bad_c8",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 4,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C81E"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-04-bad_double",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 4,
+      "flags": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C81E"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-04-bad_triple",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 4,
+      "flags": [
+        1,
+        0,
+        -1,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C81E"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-05-ok",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 5,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": true,
+        "label_va": "0x0044C81E"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-05-bad_a",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 5,
+      "flags": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C81E"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-05-bad_b",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 5,
+      "flags": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C81E"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-05-bad_c0",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 5,
+      "flags": [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C81E"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-05-bad_d0",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 5,
+      "flags": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C81E"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-05-bad_c8",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 5,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C81E"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-05-bad_double",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 5,
+      "flags": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C81E"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-05-bad_triple",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 5,
+      "flags": [
+        1,
+        0,
+        -1,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C81E"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-06-ok",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 6,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": true,
+        "label_va": "0x0044C7F6"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-06-bad_a",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 6,
+      "flags": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C7F6"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-06-bad_b",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 6,
+      "flags": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C7F6"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-06-bad_c0",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 6,
+      "flags": [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C7F6"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-06-bad_d0",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 6,
+      "flags": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C7F6"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-06-bad_c8",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 6,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C7F6"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-06-bad_double",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 6,
+      "flags": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C7F6"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-06-bad_triple",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 6,
+      "flags": [
+        1,
+        0,
+        -1,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C7F6"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-07-ok",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 7,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": true,
+        "label_va": "0x0044C7FD"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-07-bad_a",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 7,
+      "flags": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C7FD"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-07-bad_b",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 7,
+      "flags": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C7FD"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-07-bad_c0",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 7,
+      "flags": [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C7FD"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-07-bad_d0",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 7,
+      "flags": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C7FD"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-07-bad_c8",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 7,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C7FD"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-07-bad_double",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 7,
+      "flags": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C7FD"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-07-bad_triple",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 7,
+      "flags": [
+        1,
+        0,
+        -1,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C7FD"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-08-ok",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 8,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": true,
+        "label_va": "0x0044C819"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-08-bad_a",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 8,
+      "flags": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C819"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-08-bad_b",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 8,
+      "flags": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C819"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-08-bad_c0",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 8,
+      "flags": [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C819"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-08-bad_d0",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 8,
+      "flags": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C819"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-08-bad_c8",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 8,
+      "flags": [
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C819"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-08-bad_double",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 8,
+      "flags": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C819"
+      }
+    },
+    {
+      "id": "hypothetical_mode1_reached-08-bad_triple",
+      "kind": "synthetic_gate",
+      "stage": "hypothetical_mode1_reached",
+      "category": 8,
+      "flags": [
+        1,
+        0,
+        -1,
+        0,
+        -1
+      ],
+      "expected": {
+        "route": "mode1_candidate",
+        "unit_eligible": false,
+        "label_va": "0x0044C819"
+      }
+    },
+    {
+      "id": "unknown-final_target",
+      "kind": "noninference",
+      "field": "final_target",
+      "expected": "UNKNOWN"
+    },
+    {
+      "id": "unknown-total_rng_draws",
+      "kind": "noninference",
+      "field": "total_rng_draws",
+      "expected": "UNKNOWN"
+    },
+    {
+      "id": "unknown-nan_branch",
+      "kind": "noninference",
+      "field": "nan_branch",
+      "expected": "UNKNOWN"
+    },
+    {
+      "id": "unknown-x87_comparison_meaning",
+      "kind": "noninference",
+      "field": "x87_comparison_meaning",
+      "expected": "UNKNOWN"
+    },
+    {
+      "id": "unknown-semantic_label",
+      "kind": "noninference",
+      "field": "semantic_label",
+      "expected": "UNKNOWN"
+    },
+    {
+      "id": "unknown-old_runtime_reachability",
+      "kind": "noninference",
+      "field": "old_runtime_reachability",
+      "expected": "UNKNOWN"
+    },
+    {
+      "id": "unknown-unit_1e4f8_visible_effect",
+      "kind": "noninference",
+      "field": "unit_1e4f8_visible_effect",
+      "expected": "UNKNOWN"
+    },
+    {
+      "id": "unknown-same_run_identity",
+      "kind": "noninference",
+      "field": "same_run_identity",
+      "expected": "UNKNOWN"
+    },
+    {
+      "id": "unknown-golden_pass",
+      "kind": "noninference",
+      "field": "golden_pass",
+      "expected": "UNKNOWN"
+    },
+    {
+      "id": "unknown-strict_match",
+      "kind": "noninference",
+      "field": "strict_match",
+      "expected": "UNKNOWN"
+    },
+    {
+      "id": "unknown-tree_cleanup_count",
+      "kind": "noninference",
+      "field": "tree_cleanup_count",
+      "expected": "UNKNOWN"
+    },
+    {
+      "id": "unknown-actual_g2_roster",
+      "kind": "noninference",
+      "field": "actual_g2_roster",
+      "expected": "UNKNOWN"
+    }
+  ]
+}

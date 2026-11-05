@@ -1,0 +1,3606 @@
+{
+  "id": "E-AUDIT-20261031-04H-T020-T013-LABEL-WEIGHT-FANOUT-01",
+  "classification": "STATIC_BYTE_PINNED_CONDITIONAL_SYNTHETIC_VERIFY_NOT_READY",
+  "source_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "source_b_note_sha256": "04FBCBB5EDA02856FD7B9C7E711C141E53E40EED2897EDDD560959F256FAE31C",
+  "static_checks": {
+    "writer_window": "E94D6BC79B299C67E444DDBCDB4B80C6B289279502F17EA1BB44BF5756A8291C",
+    "label_jump_table": "D38E53A02F5435DFDFA275A045BC57B1EA4CB76F51C1A8F1D8D614752255CAD5",
+    "native_call_sites": 3,
+    "native_coefficients": 3
+  },
+  "cases": [
+    {
+      "category": 0,
+      "model_label": "hold",
+      "model_weight": 120,
+      "invalid_gate_mask": 0,
+      "model_writer_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 5,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 0,
+      "model_label": "hold",
+      "model_weight": 120,
+      "invalid_gate_mask": 1,
+      "model_writer_indices": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 0,
+      "model_label": "hold",
+      "model_weight": 120,
+      "invalid_gate_mask": 2,
+      "model_writer_indices": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 0,
+      "model_label": "hold",
+      "model_weight": 120,
+      "invalid_gate_mask": 3,
+      "model_writer_indices": [
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 0,
+      "model_label": "hold",
+      "model_weight": 120,
+      "invalid_gate_mask": 4,
+      "model_writer_indices": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 0,
+      "model_label": "hold",
+      "model_weight": 120,
+      "invalid_gate_mask": 5,
+      "model_writer_indices": [
+        1,
+        3,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 0,
+      "model_label": "hold",
+      "model_weight": 120,
+      "invalid_gate_mask": 6,
+      "model_writer_indices": [
+        0,
+        3,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 0,
+      "model_label": "hold",
+      "model_weight": 120,
+      "invalid_gate_mask": 7,
+      "model_writer_indices": [
+        3,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 0,
+      "model_label": "hold",
+      "model_weight": 120,
+      "invalid_gate_mask": 8,
+      "model_writer_indices": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 0,
+      "model_label": "hold",
+      "model_weight": 120,
+      "invalid_gate_mask": 9,
+      "model_writer_indices": [
+        1,
+        2,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 0,
+      "model_label": "hold",
+      "model_weight": 120,
+      "invalid_gate_mask": 10,
+      "model_writer_indices": [
+        0,
+        2,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 0,
+      "model_label": "hold",
+      "model_weight": 120,
+      "invalid_gate_mask": 11,
+      "model_writer_indices": [
+        2,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 0,
+      "model_label": "hold",
+      "model_weight": 120,
+      "invalid_gate_mask": 12,
+      "model_writer_indices": [
+        0,
+        1,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 0,
+      "model_label": "hold",
+      "model_weight": 120,
+      "invalid_gate_mask": 13,
+      "model_writer_indices": [
+        1,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 0,
+      "model_label": "hold",
+      "model_weight": 120,
+      "invalid_gate_mask": 14,
+      "model_writer_indices": [
+        0,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 0,
+      "model_label": "hold",
+      "model_weight": 120,
+      "invalid_gate_mask": 15,
+      "model_writer_indices": [
+        4
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 0,
+      "model_label": "hold",
+      "model_weight": 120,
+      "invalid_gate_mask": 16,
+      "model_writer_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 0,
+      "model_label": "hold",
+      "model_weight": 120,
+      "invalid_gate_mask": 17,
+      "model_writer_indices": [
+        1,
+        2,
+        3
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 0,
+      "model_label": "hold",
+      "model_weight": 120,
+      "invalid_gate_mask": 18,
+      "model_writer_indices": [
+        0,
+        2,
+        3
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 0,
+      "model_label": "hold",
+      "model_weight": 120,
+      "invalid_gate_mask": 19,
+      "model_writer_indices": [
+        2,
+        3
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 0,
+      "model_label": "hold",
+      "model_weight": 120,
+      "invalid_gate_mask": 20,
+      "model_writer_indices": [
+        0,
+        1,
+        3
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 0,
+      "model_label": "hold",
+      "model_weight": 120,
+      "invalid_gate_mask": 21,
+      "model_writer_indices": [
+        1,
+        3
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 0,
+      "model_label": "hold",
+      "model_weight": 120,
+      "invalid_gate_mask": 22,
+      "model_writer_indices": [
+        0,
+        3
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 0,
+      "model_label": "hold",
+      "model_weight": 120,
+      "invalid_gate_mask": 23,
+      "model_writer_indices": [
+        3
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 0,
+      "model_label": "hold",
+      "model_weight": 120,
+      "invalid_gate_mask": 24,
+      "model_writer_indices": [
+        0,
+        1,
+        2
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 0,
+      "model_label": "hold",
+      "model_weight": 120,
+      "invalid_gate_mask": 25,
+      "model_writer_indices": [
+        1,
+        2
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 0,
+      "model_label": "hold",
+      "model_weight": 120,
+      "invalid_gate_mask": 26,
+      "model_writer_indices": [
+        0,
+        2
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 0,
+      "model_label": "hold",
+      "model_weight": 120,
+      "invalid_gate_mask": 27,
+      "model_writer_indices": [
+        2
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 0,
+      "model_label": "hold",
+      "model_weight": 120,
+      "invalid_gate_mask": 28,
+      "model_writer_indices": [
+        0,
+        1
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 0,
+      "model_label": "hold",
+      "model_weight": 120,
+      "invalid_gate_mask": 29,
+      "model_writer_indices": [
+        1
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 0,
+      "model_label": "hold",
+      "model_weight": 120,
+      "invalid_gate_mask": 30,
+      "model_writer_indices": [
+        0
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 0,
+      "model_label": "hold",
+      "model_weight": 120,
+      "invalid_gate_mask": 31,
+      "model_writer_indices": [],
+      "model_rng_calls": 0,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 1,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 0,
+      "model_writer_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 5,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 1,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 1,
+      "model_writer_indices": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 1,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 2,
+      "model_writer_indices": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 1,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 3,
+      "model_writer_indices": [
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 1,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 4,
+      "model_writer_indices": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 1,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 5,
+      "model_writer_indices": [
+        1,
+        3,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 1,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 6,
+      "model_writer_indices": [
+        0,
+        3,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 1,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 7,
+      "model_writer_indices": [
+        3,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 1,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 8,
+      "model_writer_indices": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 1,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 9,
+      "model_writer_indices": [
+        1,
+        2,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 1,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 10,
+      "model_writer_indices": [
+        0,
+        2,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 1,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 11,
+      "model_writer_indices": [
+        2,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 1,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 12,
+      "model_writer_indices": [
+        0,
+        1,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 1,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 13,
+      "model_writer_indices": [
+        1,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 1,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 14,
+      "model_writer_indices": [
+        0,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 1,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 15,
+      "model_writer_indices": [
+        4
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 1,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 16,
+      "model_writer_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 1,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 17,
+      "model_writer_indices": [
+        1,
+        2,
+        3
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 1,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 18,
+      "model_writer_indices": [
+        0,
+        2,
+        3
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 1,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 19,
+      "model_writer_indices": [
+        2,
+        3
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 1,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 20,
+      "model_writer_indices": [
+        0,
+        1,
+        3
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 1,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 21,
+      "model_writer_indices": [
+        1,
+        3
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 1,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 22,
+      "model_writer_indices": [
+        0,
+        3
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 1,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 23,
+      "model_writer_indices": [
+        3
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 1,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 24,
+      "model_writer_indices": [
+        0,
+        1,
+        2
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 1,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 25,
+      "model_writer_indices": [
+        1,
+        2
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 1,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 26,
+      "model_writer_indices": [
+        0,
+        2
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 1,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 27,
+      "model_writer_indices": [
+        2
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 1,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 28,
+      "model_writer_indices": [
+        0,
+        1
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 1,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 29,
+      "model_writer_indices": [
+        1
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 1,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 30,
+      "model_writer_indices": [
+        0
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 1,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 31,
+      "model_writer_indices": [],
+      "model_rng_calls": 0,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 2,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 0,
+      "model_writer_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 5,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 2,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 1,
+      "model_writer_indices": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 2,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 2,
+      "model_writer_indices": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 2,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 3,
+      "model_writer_indices": [
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 2,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 4,
+      "model_writer_indices": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 2,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 5,
+      "model_writer_indices": [
+        1,
+        3,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 2,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 6,
+      "model_writer_indices": [
+        0,
+        3,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 2,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 7,
+      "model_writer_indices": [
+        3,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 2,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 8,
+      "model_writer_indices": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 2,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 9,
+      "model_writer_indices": [
+        1,
+        2,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 2,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 10,
+      "model_writer_indices": [
+        0,
+        2,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 2,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 11,
+      "model_writer_indices": [
+        2,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 2,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 12,
+      "model_writer_indices": [
+        0,
+        1,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 2,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 13,
+      "model_writer_indices": [
+        1,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 2,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 14,
+      "model_writer_indices": [
+        0,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 2,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 15,
+      "model_writer_indices": [
+        4
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 2,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 16,
+      "model_writer_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 2,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 17,
+      "model_writer_indices": [
+        1,
+        2,
+        3
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 2,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 18,
+      "model_writer_indices": [
+        0,
+        2,
+        3
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 2,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 19,
+      "model_writer_indices": [
+        2,
+        3
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 2,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 20,
+      "model_writer_indices": [
+        0,
+        1,
+        3
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 2,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 21,
+      "model_writer_indices": [
+        1,
+        3
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 2,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 22,
+      "model_writer_indices": [
+        0,
+        3
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 2,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 23,
+      "model_writer_indices": [
+        3
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 2,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 24,
+      "model_writer_indices": [
+        0,
+        1,
+        2
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 2,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 25,
+      "model_writer_indices": [
+        1,
+        2
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 2,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 26,
+      "model_writer_indices": [
+        0,
+        2
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 2,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 27,
+      "model_writer_indices": [
+        2
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 2,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 28,
+      "model_writer_indices": [
+        0,
+        1
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 2,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 29,
+      "model_writer_indices": [
+        1
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 2,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 30,
+      "model_writer_indices": [
+        0
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 2,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 31,
+      "model_writer_indices": [],
+      "model_rng_calls": 0,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 3,
+      "model_label": "push",
+      "model_weight": 160,
+      "invalid_gate_mask": 0,
+      "model_writer_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 5,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 3,
+      "model_label": "push",
+      "model_weight": 160,
+      "invalid_gate_mask": 1,
+      "model_writer_indices": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 3,
+      "model_label": "push",
+      "model_weight": 160,
+      "invalid_gate_mask": 2,
+      "model_writer_indices": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 3,
+      "model_label": "push",
+      "model_weight": 160,
+      "invalid_gate_mask": 3,
+      "model_writer_indices": [
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 3,
+      "model_label": "push",
+      "model_weight": 160,
+      "invalid_gate_mask": 4,
+      "model_writer_indices": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 3,
+      "model_label": "push",
+      "model_weight": 160,
+      "invalid_gate_mask": 5,
+      "model_writer_indices": [
+        1,
+        3,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 3,
+      "model_label": "push",
+      "model_weight": 160,
+      "invalid_gate_mask": 6,
+      "model_writer_indices": [
+        0,
+        3,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 3,
+      "model_label": "push",
+      "model_weight": 160,
+      "invalid_gate_mask": 7,
+      "model_writer_indices": [
+        3,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 3,
+      "model_label": "push",
+      "model_weight": 160,
+      "invalid_gate_mask": 8,
+      "model_writer_indices": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 3,
+      "model_label": "push",
+      "model_weight": 160,
+      "invalid_gate_mask": 9,
+      "model_writer_indices": [
+        1,
+        2,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 3,
+      "model_label": "push",
+      "model_weight": 160,
+      "invalid_gate_mask": 10,
+      "model_writer_indices": [
+        0,
+        2,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 3,
+      "model_label": "push",
+      "model_weight": 160,
+      "invalid_gate_mask": 11,
+      "model_writer_indices": [
+        2,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 3,
+      "model_label": "push",
+      "model_weight": 160,
+      "invalid_gate_mask": 12,
+      "model_writer_indices": [
+        0,
+        1,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 3,
+      "model_label": "push",
+      "model_weight": 160,
+      "invalid_gate_mask": 13,
+      "model_writer_indices": [
+        1,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 3,
+      "model_label": "push",
+      "model_weight": 160,
+      "invalid_gate_mask": 14,
+      "model_writer_indices": [
+        0,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 3,
+      "model_label": "push",
+      "model_weight": 160,
+      "invalid_gate_mask": 15,
+      "model_writer_indices": [
+        4
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 3,
+      "model_label": "push",
+      "model_weight": 160,
+      "invalid_gate_mask": 16,
+      "model_writer_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 3,
+      "model_label": "push",
+      "model_weight": 160,
+      "invalid_gate_mask": 17,
+      "model_writer_indices": [
+        1,
+        2,
+        3
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 3,
+      "model_label": "push",
+      "model_weight": 160,
+      "invalid_gate_mask": 18,
+      "model_writer_indices": [
+        0,
+        2,
+        3
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 3,
+      "model_label": "push",
+      "model_weight": 160,
+      "invalid_gate_mask": 19,
+      "model_writer_indices": [
+        2,
+        3
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 3,
+      "model_label": "push",
+      "model_weight": 160,
+      "invalid_gate_mask": 20,
+      "model_writer_indices": [
+        0,
+        1,
+        3
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 3,
+      "model_label": "push",
+      "model_weight": 160,
+      "invalid_gate_mask": 21,
+      "model_writer_indices": [
+        1,
+        3
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 3,
+      "model_label": "push",
+      "model_weight": 160,
+      "invalid_gate_mask": 22,
+      "model_writer_indices": [
+        0,
+        3
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 3,
+      "model_label": "push",
+      "model_weight": 160,
+      "invalid_gate_mask": 23,
+      "model_writer_indices": [
+        3
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 3,
+      "model_label": "push",
+      "model_weight": 160,
+      "invalid_gate_mask": 24,
+      "model_writer_indices": [
+        0,
+        1,
+        2
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 3,
+      "model_label": "push",
+      "model_weight": 160,
+      "invalid_gate_mask": 25,
+      "model_writer_indices": [
+        1,
+        2
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 3,
+      "model_label": "push",
+      "model_weight": 160,
+      "invalid_gate_mask": 26,
+      "model_writer_indices": [
+        0,
+        2
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 3,
+      "model_label": "push",
+      "model_weight": 160,
+      "invalid_gate_mask": 27,
+      "model_writer_indices": [
+        2
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 3,
+      "model_label": "push",
+      "model_weight": 160,
+      "invalid_gate_mask": 28,
+      "model_writer_indices": [
+        0,
+        1
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 3,
+      "model_label": "push",
+      "model_weight": 160,
+      "invalid_gate_mask": 29,
+      "model_writer_indices": [
+        1
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 3,
+      "model_label": "push",
+      "model_weight": 160,
+      "invalid_gate_mask": 30,
+      "model_writer_indices": [
+        0
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 3,
+      "model_label": "push",
+      "model_weight": 160,
+      "invalid_gate_mask": 31,
+      "model_writer_indices": [],
+      "model_rng_calls": 0,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 4,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 0,
+      "model_writer_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 5,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 4,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 1,
+      "model_writer_indices": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 4,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 2,
+      "model_writer_indices": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 4,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 3,
+      "model_writer_indices": [
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 4,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 4,
+      "model_writer_indices": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 4,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 5,
+      "model_writer_indices": [
+        1,
+        3,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 4,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 6,
+      "model_writer_indices": [
+        0,
+        3,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 4,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 7,
+      "model_writer_indices": [
+        3,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 4,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 8,
+      "model_writer_indices": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 4,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 9,
+      "model_writer_indices": [
+        1,
+        2,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 4,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 10,
+      "model_writer_indices": [
+        0,
+        2,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 4,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 11,
+      "model_writer_indices": [
+        2,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 4,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 12,
+      "model_writer_indices": [
+        0,
+        1,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 4,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 13,
+      "model_writer_indices": [
+        1,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 4,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 14,
+      "model_writer_indices": [
+        0,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 4,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 15,
+      "model_writer_indices": [
+        4
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 4,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 16,
+      "model_writer_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 4,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 17,
+      "model_writer_indices": [
+        1,
+        2,
+        3
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 4,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 18,
+      "model_writer_indices": [
+        0,
+        2,
+        3
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 4,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 19,
+      "model_writer_indices": [
+        2,
+        3
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 4,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 20,
+      "model_writer_indices": [
+        0,
+        1,
+        3
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 4,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 21,
+      "model_writer_indices": [
+        1,
+        3
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 4,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 22,
+      "model_writer_indices": [
+        0,
+        3
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 4,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 23,
+      "model_writer_indices": [
+        3
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 4,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 24,
+      "model_writer_indices": [
+        0,
+        1,
+        2
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 4,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 25,
+      "model_writer_indices": [
+        1,
+        2
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 4,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 26,
+      "model_writer_indices": [
+        0,
+        2
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 4,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 27,
+      "model_writer_indices": [
+        2
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 4,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 28,
+      "model_writer_indices": [
+        0,
+        1
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 4,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 29,
+      "model_writer_indices": [
+        1
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 4,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 30,
+      "model_writer_indices": [
+        0
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 4,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 31,
+      "model_writer_indices": [],
+      "model_rng_calls": 0,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 5,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 0,
+      "model_writer_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 5,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 5,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 1,
+      "model_writer_indices": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 5,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 2,
+      "model_writer_indices": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 5,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 3,
+      "model_writer_indices": [
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 5,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 4,
+      "model_writer_indices": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 5,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 5,
+      "model_writer_indices": [
+        1,
+        3,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 5,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 6,
+      "model_writer_indices": [
+        0,
+        3,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 5,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 7,
+      "model_writer_indices": [
+        3,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 5,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 8,
+      "model_writer_indices": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 5,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 9,
+      "model_writer_indices": [
+        1,
+        2,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 5,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 10,
+      "model_writer_indices": [
+        0,
+        2,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 5,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 11,
+      "model_writer_indices": [
+        2,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 5,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 12,
+      "model_writer_indices": [
+        0,
+        1,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 5,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 13,
+      "model_writer_indices": [
+        1,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 5,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 14,
+      "model_writer_indices": [
+        0,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 5,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 15,
+      "model_writer_indices": [
+        4
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 5,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 16,
+      "model_writer_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 5,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 17,
+      "model_writer_indices": [
+        1,
+        2,
+        3
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 5,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 18,
+      "model_writer_indices": [
+        0,
+        2,
+        3
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 5,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 19,
+      "model_writer_indices": [
+        2,
+        3
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 5,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 20,
+      "model_writer_indices": [
+        0,
+        1,
+        3
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 5,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 21,
+      "model_writer_indices": [
+        1,
+        3
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 5,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 22,
+      "model_writer_indices": [
+        0,
+        3
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 5,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 23,
+      "model_writer_indices": [
+        3
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 5,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 24,
+      "model_writer_indices": [
+        0,
+        1,
+        2
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 5,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 25,
+      "model_writer_indices": [
+        1,
+        2
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 5,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 26,
+      "model_writer_indices": [
+        0,
+        2
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 5,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 27,
+      "model_writer_indices": [
+        2
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 5,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 28,
+      "model_writer_indices": [
+        0,
+        1
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 5,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 29,
+      "model_writer_indices": [
+        1
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 5,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 30,
+      "model_writer_indices": [
+        0
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 5,
+      "model_label": "hold",
+      "model_weight": 160,
+      "invalid_gate_mask": 31,
+      "model_writer_indices": [],
+      "model_rng_calls": 0,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 6,
+      "model_label": "advance",
+      "model_weight": 60,
+      "invalid_gate_mask": 0,
+      "model_writer_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 5,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 6,
+      "model_label": "advance",
+      "model_weight": 60,
+      "invalid_gate_mask": 1,
+      "model_writer_indices": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 6,
+      "model_label": "advance",
+      "model_weight": 60,
+      "invalid_gate_mask": 2,
+      "model_writer_indices": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 6,
+      "model_label": "advance",
+      "model_weight": 60,
+      "invalid_gate_mask": 3,
+      "model_writer_indices": [
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 6,
+      "model_label": "advance",
+      "model_weight": 60,
+      "invalid_gate_mask": 4,
+      "model_writer_indices": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 6,
+      "model_label": "advance",
+      "model_weight": 60,
+      "invalid_gate_mask": 5,
+      "model_writer_indices": [
+        1,
+        3,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 6,
+      "model_label": "advance",
+      "model_weight": 60,
+      "invalid_gate_mask": 6,
+      "model_writer_indices": [
+        0,
+        3,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 6,
+      "model_label": "advance",
+      "model_weight": 60,
+      "invalid_gate_mask": 7,
+      "model_writer_indices": [
+        3,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 6,
+      "model_label": "advance",
+      "model_weight": 60,
+      "invalid_gate_mask": 8,
+      "model_writer_indices": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 6,
+      "model_label": "advance",
+      "model_weight": 60,
+      "invalid_gate_mask": 9,
+      "model_writer_indices": [
+        1,
+        2,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 6,
+      "model_label": "advance",
+      "model_weight": 60,
+      "invalid_gate_mask": 10,
+      "model_writer_indices": [
+        0,
+        2,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 6,
+      "model_label": "advance",
+      "model_weight": 60,
+      "invalid_gate_mask": 11,
+      "model_writer_indices": [
+        2,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 6,
+      "model_label": "advance",
+      "model_weight": 60,
+      "invalid_gate_mask": 12,
+      "model_writer_indices": [
+        0,
+        1,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 6,
+      "model_label": "advance",
+      "model_weight": 60,
+      "invalid_gate_mask": 13,
+      "model_writer_indices": [
+        1,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 6,
+      "model_label": "advance",
+      "model_weight": 60,
+      "invalid_gate_mask": 14,
+      "model_writer_indices": [
+        0,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 6,
+      "model_label": "advance",
+      "model_weight": 60,
+      "invalid_gate_mask": 15,
+      "model_writer_indices": [
+        4
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 6,
+      "model_label": "advance",
+      "model_weight": 60,
+      "invalid_gate_mask": 16,
+      "model_writer_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 6,
+      "model_label": "advance",
+      "model_weight": 60,
+      "invalid_gate_mask": 17,
+      "model_writer_indices": [
+        1,
+        2,
+        3
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 6,
+      "model_label": "advance",
+      "model_weight": 60,
+      "invalid_gate_mask": 18,
+      "model_writer_indices": [
+        0,
+        2,
+        3
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 6,
+      "model_label": "advance",
+      "model_weight": 60,
+      "invalid_gate_mask": 19,
+      "model_writer_indices": [
+        2,
+        3
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 6,
+      "model_label": "advance",
+      "model_weight": 60,
+      "invalid_gate_mask": 20,
+      "model_writer_indices": [
+        0,
+        1,
+        3
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 6,
+      "model_label": "advance",
+      "model_weight": 60,
+      "invalid_gate_mask": 21,
+      "model_writer_indices": [
+        1,
+        3
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 6,
+      "model_label": "advance",
+      "model_weight": 60,
+      "invalid_gate_mask": 22,
+      "model_writer_indices": [
+        0,
+        3
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 6,
+      "model_label": "advance",
+      "model_weight": 60,
+      "invalid_gate_mask": 23,
+      "model_writer_indices": [
+        3
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 6,
+      "model_label": "advance",
+      "model_weight": 60,
+      "invalid_gate_mask": 24,
+      "model_writer_indices": [
+        0,
+        1,
+        2
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 6,
+      "model_label": "advance",
+      "model_weight": 60,
+      "invalid_gate_mask": 25,
+      "model_writer_indices": [
+        1,
+        2
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 6,
+      "model_label": "advance",
+      "model_weight": 60,
+      "invalid_gate_mask": 26,
+      "model_writer_indices": [
+        0,
+        2
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 6,
+      "model_label": "advance",
+      "model_weight": 60,
+      "invalid_gate_mask": 27,
+      "model_writer_indices": [
+        2
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 6,
+      "model_label": "advance",
+      "model_weight": 60,
+      "invalid_gate_mask": 28,
+      "model_writer_indices": [
+        0,
+        1
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 6,
+      "model_label": "advance",
+      "model_weight": 60,
+      "invalid_gate_mask": 29,
+      "model_writer_indices": [
+        1
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 6,
+      "model_label": "advance",
+      "model_weight": 60,
+      "invalid_gate_mask": 30,
+      "model_writer_indices": [
+        0
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 6,
+      "model_label": "advance",
+      "model_weight": 60,
+      "invalid_gate_mask": 31,
+      "model_writer_indices": [],
+      "model_rng_calls": 0,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 7,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 0,
+      "model_writer_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 5,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 7,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 1,
+      "model_writer_indices": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 7,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 2,
+      "model_writer_indices": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 7,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 3,
+      "model_writer_indices": [
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 7,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 4,
+      "model_writer_indices": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 7,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 5,
+      "model_writer_indices": [
+        1,
+        3,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 7,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 6,
+      "model_writer_indices": [
+        0,
+        3,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 7,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 7,
+      "model_writer_indices": [
+        3,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 7,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 8,
+      "model_writer_indices": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 7,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 9,
+      "model_writer_indices": [
+        1,
+        2,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 7,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 10,
+      "model_writer_indices": [
+        0,
+        2,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 7,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 11,
+      "model_writer_indices": [
+        2,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 7,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 12,
+      "model_writer_indices": [
+        0,
+        1,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 7,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 13,
+      "model_writer_indices": [
+        1,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 7,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 14,
+      "model_writer_indices": [
+        0,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 7,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 15,
+      "model_writer_indices": [
+        4
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 7,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 16,
+      "model_writer_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 7,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 17,
+      "model_writer_indices": [
+        1,
+        2,
+        3
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 7,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 18,
+      "model_writer_indices": [
+        0,
+        2,
+        3
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 7,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 19,
+      "model_writer_indices": [
+        2,
+        3
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 7,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 20,
+      "model_writer_indices": [
+        0,
+        1,
+        3
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 7,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 21,
+      "model_writer_indices": [
+        1,
+        3
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 7,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 22,
+      "model_writer_indices": [
+        0,
+        3
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 7,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 23,
+      "model_writer_indices": [
+        3
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 7,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 24,
+      "model_writer_indices": [
+        0,
+        1,
+        2
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 7,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 25,
+      "model_writer_indices": [
+        1,
+        2
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 7,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 26,
+      "model_writer_indices": [
+        0,
+        2
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 7,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 27,
+      "model_writer_indices": [
+        2
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 7,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 28,
+      "model_writer_indices": [
+        0,
+        1
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 7,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 29,
+      "model_writer_indices": [
+        1
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 7,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 30,
+      "model_writer_indices": [
+        0
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 7,
+      "model_label": "even",
+      "model_weight": 160,
+      "invalid_gate_mask": 31,
+      "model_writer_indices": [],
+      "model_rng_calls": 0,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 8,
+      "model_label": "back",
+      "model_weight": 160,
+      "invalid_gate_mask": 0,
+      "model_writer_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 5,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 8,
+      "model_label": "back",
+      "model_weight": 160,
+      "invalid_gate_mask": 1,
+      "model_writer_indices": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 8,
+      "model_label": "back",
+      "model_weight": 160,
+      "invalid_gate_mask": 2,
+      "model_writer_indices": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 8,
+      "model_label": "back",
+      "model_weight": 160,
+      "invalid_gate_mask": 3,
+      "model_writer_indices": [
+        2,
+        3,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 8,
+      "model_label": "back",
+      "model_weight": 160,
+      "invalid_gate_mask": 4,
+      "model_writer_indices": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 8,
+      "model_label": "back",
+      "model_weight": 160,
+      "invalid_gate_mask": 5,
+      "model_writer_indices": [
+        1,
+        3,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 8,
+      "model_label": "back",
+      "model_weight": 160,
+      "invalid_gate_mask": 6,
+      "model_writer_indices": [
+        0,
+        3,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 8,
+      "model_label": "back",
+      "model_weight": 160,
+      "invalid_gate_mask": 7,
+      "model_writer_indices": [
+        3,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 8,
+      "model_label": "back",
+      "model_weight": 160,
+      "invalid_gate_mask": 8,
+      "model_writer_indices": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 8,
+      "model_label": "back",
+      "model_weight": 160,
+      "invalid_gate_mask": 9,
+      "model_writer_indices": [
+        1,
+        2,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 8,
+      "model_label": "back",
+      "model_weight": 160,
+      "invalid_gate_mask": 10,
+      "model_writer_indices": [
+        0,
+        2,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 8,
+      "model_label": "back",
+      "model_weight": 160,
+      "invalid_gate_mask": 11,
+      "model_writer_indices": [
+        2,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 8,
+      "model_label": "back",
+      "model_weight": 160,
+      "invalid_gate_mask": 12,
+      "model_writer_indices": [
+        0,
+        1,
+        4
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 8,
+      "model_label": "back",
+      "model_weight": 160,
+      "invalid_gate_mask": 13,
+      "model_writer_indices": [
+        1,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 8,
+      "model_label": "back",
+      "model_weight": 160,
+      "invalid_gate_mask": 14,
+      "model_writer_indices": [
+        0,
+        4
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 8,
+      "model_label": "back",
+      "model_weight": 160,
+      "invalid_gate_mask": 15,
+      "model_writer_indices": [
+        4
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 8,
+      "model_label": "back",
+      "model_weight": 160,
+      "invalid_gate_mask": 16,
+      "model_writer_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "model_rng_calls": 4,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 8,
+      "model_label": "back",
+      "model_weight": 160,
+      "invalid_gate_mask": 17,
+      "model_writer_indices": [
+        1,
+        2,
+        3
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 8,
+      "model_label": "back",
+      "model_weight": 160,
+      "invalid_gate_mask": 18,
+      "model_writer_indices": [
+        0,
+        2,
+        3
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 8,
+      "model_label": "back",
+      "model_weight": 160,
+      "invalid_gate_mask": 19,
+      "model_writer_indices": [
+        2,
+        3
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 8,
+      "model_label": "back",
+      "model_weight": 160,
+      "invalid_gate_mask": 20,
+      "model_writer_indices": [
+        0,
+        1,
+        3
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 8,
+      "model_label": "back",
+      "model_weight": 160,
+      "invalid_gate_mask": 21,
+      "model_writer_indices": [
+        1,
+        3
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 8,
+      "model_label": "back",
+      "model_weight": 160,
+      "invalid_gate_mask": 22,
+      "model_writer_indices": [
+        0,
+        3
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 8,
+      "model_label": "back",
+      "model_weight": 160,
+      "invalid_gate_mask": 23,
+      "model_writer_indices": [
+        3
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 8,
+      "model_label": "back",
+      "model_weight": 160,
+      "invalid_gate_mask": 24,
+      "model_writer_indices": [
+        0,
+        1,
+        2
+      ],
+      "model_rng_calls": 3,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 8,
+      "model_label": "back",
+      "model_weight": 160,
+      "invalid_gate_mask": 25,
+      "model_writer_indices": [
+        1,
+        2
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 8,
+      "model_label": "back",
+      "model_weight": 160,
+      "invalid_gate_mask": 26,
+      "model_writer_indices": [
+        0,
+        2
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 8,
+      "model_label": "back",
+      "model_weight": 160,
+      "invalid_gate_mask": 27,
+      "model_writer_indices": [
+        2
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 8,
+      "model_label": "back",
+      "model_weight": 160,
+      "invalid_gate_mask": 28,
+      "model_writer_indices": [
+        0,
+        1
+      ],
+      "model_rng_calls": 2,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 8,
+      "model_label": "back",
+      "model_weight": 160,
+      "invalid_gate_mask": 29,
+      "model_writer_indices": [
+        1
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 8,
+      "model_label": "back",
+      "model_weight": 160,
+      "invalid_gate_mask": 30,
+      "model_writer_indices": [
+        0
+      ],
+      "model_rng_calls": 1,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    },
+    {
+      "category": 8,
+      "model_label": "back",
+      "model_weight": 160,
+      "invalid_gate_mask": 31,
+      "model_writer_indices": [],
+      "model_rng_calls": 0,
+      "verdict": "SYNTHETIC_ONLY_NOT_ORIGINAL_GAMEPLAY"
+    }
+  ],
+  "caveat": "Vector may mutate; cache, RNG order, writer ABI, final gameplay NOT OBSERVED"
+}

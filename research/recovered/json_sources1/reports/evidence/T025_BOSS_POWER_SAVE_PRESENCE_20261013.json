@@ -1,0 +1,188 @@
+{
+ "id": "C-20261013-0825-01",
+ "task": "T025/T016",
+ "classification": "CONFIRMED_SAVED_REFERENCE_IDS_AND_SOURCE_ONLY__NOT_NATIVE_POWER_ALIVE",
+ "original_source": "data/normalized/hakushin067_core/a_default/script/2001_イベント_ボス/event_51_ボス死亡時.dat",
+ "save_report": "dev_lab/reports/ACTUAL_SAVE_REFERENCE_GRAPH_20261011.json",
+ "source_writers": [
+  [
+   245,
+   "dead_boss_power",
+   "po61"
+  ],
+  [
+   258,
+   "dead_boss_power",
+   "po81"
+  ],
+  [
+   266,
+   "dead_boss_power",
+   "po81"
+  ],
+  [
+   278,
+   "dead_boss_power",
+   "po519"
+  ],
+  [
+   301,
+   "dead_boss_power",
+   "po50"
+  ],
+  [
+   312,
+   "dead_boss_power",
+   "po2222"
+  ],
+  [
+   328,
+   "union_boss_power",
+   "po2525"
+  ],
+  [
+   342,
+   "dead_boss_power",
+   "po505"
+  ],
+  [
+   383,
+   "dead_boss_power",
+   "po64"
+  ],
+  [
+   421,
+   "dead_boss_power",
+   "po63_sci1"
+  ],
+  [
+   437,
+   "dead_boss_power",
+   "po1414"
+  ],
+  [
+   449,
+   "dead_boss_power",
+   "po1423"
+  ],
+  [
+   460,
+   "union_boss_power",
+   "po260"
+  ],
+  [
+   470,
+   "dead_boss_power",
+   "po423"
+  ]
+ ],
+ "source_direct_erasers": [
+  [
+   234,
+   "erasePower",
+   "po2323"
+  ],
+  [
+   432,
+   "erasePower",
+   "rndm8"
+  ]
+ ],
+ "unique_cleanup_power_candidates": [
+  "po61",
+  "po81",
+  "po519",
+  "po50",
+  "po2222",
+  "po2525",
+  "po505",
+  "po64",
+  "po63_sci1",
+  "po1414",
+  "po1423",
+  "po260",
+  "po423",
+  "po2323",
+  "rndm8"
+ ],
+ "target_save_sha256": {
+  "save1": "15776d294a0c4f66568e7964331d60990b704f2ca324c568c49560561ae1947a",
+  "auto": "08b3e05176dbb2ef076142c1bc91a586b428e82cccf44e6e6ac58cd46fb2e594",
+  "save2": "45ccef306b56bf66810726436365207ca18b63d7cc0e432e784034d196fa5635"
+ },
+ "checks": {
+  "save1": {
+   "reported_powers": 29,
+   "actual_keys": 29,
+   "unit24_keys": 29,
+   "missing": [
+    "po61",
+    "po81",
+    "po519",
+    "po50",
+    "po2222",
+    "po2525",
+    "po505",
+    "po64",
+    "po63_sci1",
+    "po1414",
+    "po1423",
+    "po260",
+    "po423",
+    "po2323",
+    "rndm8"
+   ],
+   "present": [],
+   "all_keys_equal": true
+  },
+  "auto": {
+   "reported_powers": 29,
+   "actual_keys": 29,
+   "unit24_keys": 29,
+   "missing": [
+    "po61",
+    "po81",
+    "po519",
+    "po50",
+    "po2222",
+    "po2525",
+    "po505",
+    "po64",
+    "po63_sci1",
+    "po1414",
+    "po1423",
+    "po260",
+    "po423",
+    "po2323",
+    "rndm8"
+   ],
+   "present": [],
+   "all_keys_equal": true
+  },
+  "save2": {
+   "reported_powers": 29,
+   "actual_keys": 29,
+   "unit24_keys": 29,
+   "missing": [
+    "po61",
+    "po81",
+    "po519",
+    "po50",
+    "po2222",
+    "po2525",
+    "po505",
+    "po64",
+    "po63_sci1",
+    "po1414",
+    "po1423",
+    "po260",
+    "po423",
+    "po2323",
+    "rndm8"
+   ],
+   "present": [],
+   "all_keys_equal": true
+  }
+ },
+ "note": "All 15 explicit Power-name candidates are absent from three saved Power ID registries, which represent two independent plaintext states; does not prove native isAlive false, branch ineligibility later, or erase/union semantics."
+}

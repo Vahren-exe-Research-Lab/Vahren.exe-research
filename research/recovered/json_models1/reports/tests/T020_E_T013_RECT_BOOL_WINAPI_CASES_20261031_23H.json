@@ -1,0 +1,8166 @@
+{
+  "research_id": "E-AUDIT-20261031-23H-T020-T013-RECT-INSET-WINAPI-01",
+  "native_pe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "cases": [
+    {
+      "id": "RECT-0001",
+      "margin": 0,
+      "rect": [
+        -740,
+        -380,
+        -740,
+        -380
+      ],
+      "point": [
+        -741,
+        -380
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0002",
+      "margin": 0,
+      "rect": [
+        -740,
+        -380,
+        -740,
+        -380
+      ],
+      "point": [
+        -740,
+        -380
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0003",
+      "margin": 0,
+      "rect": [
+        -740,
+        -380,
+        -740,
+        -380
+      ],
+      "point": [
+        -741,
+        -381
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0004",
+      "margin": 0,
+      "rect": [
+        -740,
+        -380,
+        -740,
+        -380
+      ],
+      "point": [
+        -740,
+        -381
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0005",
+      "margin": 0,
+      "rect": [
+        -740,
+        -380,
+        -740,
+        -380
+      ],
+      "point": [
+        -740,
+        -380
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0006",
+      "margin": 0,
+      "rect": [
+        -740,
+        -380,
+        -740,
+        -380
+      ],
+      "point": [
+        -740,
+        -380
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0007",
+      "margin": 0,
+      "rect": [
+        -740,
+        -380,
+        -740,
+        -380
+      ],
+      "point": [
+        -741,
+        -380
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0008",
+      "margin": 0,
+      "rect": [
+        -740,
+        -380,
+        -740,
+        -380
+      ],
+      "point": [
+        -740,
+        -381
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0009",
+      "margin": 0,
+      "rect": [
+        -740,
+        -371,
+        -740,
+        -370
+      ],
+      "point": [
+        -741,
+        -371
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0010",
+      "margin": 0,
+      "rect": [
+        -740,
+        -371,
+        -740,
+        -370
+      ],
+      "point": [
+        -740,
+        -371
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0011",
+      "margin": 0,
+      "rect": [
+        -740,
+        -371,
+        -740,
+        -370
+      ],
+      "point": [
+        -741,
+        -371
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0012",
+      "margin": 0,
+      "rect": [
+        -740,
+        -371,
+        -740,
+        -370
+      ],
+      "point": [
+        -740,
+        -371
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0013",
+      "margin": 0,
+      "rect": [
+        -740,
+        -371,
+        -740,
+        -370
+      ],
+      "point": [
+        -740,
+        -370
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0014",
+      "margin": 0,
+      "rect": [
+        -740,
+        -371,
+        -740,
+        -370
+      ],
+      "point": [
+        -740,
+        -371
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0015",
+      "margin": 0,
+      "rect": [
+        -740,
+        -371,
+        -740,
+        -370
+      ],
+      "point": [
+        -741,
+        -371
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0016",
+      "margin": 0,
+      "rect": [
+        -740,
+        -371,
+        -740,
+        -370
+      ],
+      "point": [
+        -740,
+        -371
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0017",
+      "margin": 0,
+      "rect": [
+        -740,
+        -362,
+        -740,
+        -161
+      ],
+      "point": [
+        -741,
+        -362
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0018",
+      "margin": 0,
+      "rect": [
+        -740,
+        -362,
+        -740,
+        -161
+      ],
+      "point": [
+        -740,
+        -362
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0019",
+      "margin": 0,
+      "rect": [
+        -740,
+        -362,
+        -740,
+        -161
+      ],
+      "point": [
+        -741,
+        -162
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0020",
+      "margin": 0,
+      "rect": [
+        -740,
+        -362,
+        -740,
+        -161
+      ],
+      "point": [
+        -740,
+        -162
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0021",
+      "margin": 0,
+      "rect": [
+        -740,
+        -362,
+        -740,
+        -161
+      ],
+      "point": [
+        -740,
+        -161
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0022",
+      "margin": 0,
+      "rect": [
+        -740,
+        -362,
+        -740,
+        -161
+      ],
+      "point": [
+        -740,
+        -362
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0023",
+      "margin": 0,
+      "rect": [
+        -740,
+        -362,
+        -740,
+        -161
+      ],
+      "point": [
+        -741,
+        -362
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0024",
+      "margin": 0,
+      "rect": [
+        -740,
+        -362,
+        -740,
+        -161
+      ],
+      "point": [
+        -740,
+        -162
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0025",
+      "margin": 0,
+      "rect": [
+        -735,
+        -380,
+        -735,
+        -380
+      ],
+      "point": [
+        -736,
+        -380
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0026",
+      "margin": 0,
+      "rect": [
+        -735,
+        -380,
+        -735,
+        -380
+      ],
+      "point": [
+        -735,
+        -380
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0027",
+      "margin": 0,
+      "rect": [
+        -735,
+        -380,
+        -735,
+        -380
+      ],
+      "point": [
+        -736,
+        -381
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0028",
+      "margin": 0,
+      "rect": [
+        -735,
+        -380,
+        -735,
+        -380
+      ],
+      "point": [
+        -735,
+        -381
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0029",
+      "margin": 0,
+      "rect": [
+        -735,
+        -380,
+        -735,
+        -380
+      ],
+      "point": [
+        -735,
+        -380
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0030",
+      "margin": 0,
+      "rect": [
+        -735,
+        -380,
+        -735,
+        -380
+      ],
+      "point": [
+        -735,
+        -380
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0031",
+      "margin": 0,
+      "rect": [
+        -735,
+        -380,
+        -735,
+        -380
+      ],
+      "point": [
+        -736,
+        -380
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0032",
+      "margin": 0,
+      "rect": [
+        -735,
+        -380,
+        -735,
+        -380
+      ],
+      "point": [
+        -735,
+        -381
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0033",
+      "margin": 0,
+      "rect": [
+        -735,
+        -371,
+        -735,
+        -370
+      ],
+      "point": [
+        -736,
+        -371
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0034",
+      "margin": 0,
+      "rect": [
+        -735,
+        -371,
+        -735,
+        -370
+      ],
+      "point": [
+        -735,
+        -371
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0035",
+      "margin": 0,
+      "rect": [
+        -735,
+        -371,
+        -735,
+        -370
+      ],
+      "point": [
+        -736,
+        -371
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0036",
+      "margin": 0,
+      "rect": [
+        -735,
+        -371,
+        -735,
+        -370
+      ],
+      "point": [
+        -735,
+        -371
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0037",
+      "margin": 0,
+      "rect": [
+        -735,
+        -371,
+        -735,
+        -370
+      ],
+      "point": [
+        -735,
+        -370
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0038",
+      "margin": 0,
+      "rect": [
+        -735,
+        -371,
+        -735,
+        -370
+      ],
+      "point": [
+        -735,
+        -371
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0039",
+      "margin": 0,
+      "rect": [
+        -735,
+        -371,
+        -735,
+        -370
+      ],
+      "point": [
+        -736,
+        -371
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0040",
+      "margin": 0,
+      "rect": [
+        -735,
+        -371,
+        -735,
+        -370
+      ],
+      "point": [
+        -735,
+        -371
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0041",
+      "margin": 0,
+      "rect": [
+        -735,
+        -362,
+        -735,
+        -161
+      ],
+      "point": [
+        -736,
+        -362
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0042",
+      "margin": 0,
+      "rect": [
+        -735,
+        -362,
+        -735,
+        -161
+      ],
+      "point": [
+        -735,
+        -362
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0043",
+      "margin": 0,
+      "rect": [
+        -735,
+        -362,
+        -735,
+        -161
+      ],
+      "point": [
+        -736,
+        -162
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0044",
+      "margin": 0,
+      "rect": [
+        -735,
+        -362,
+        -735,
+        -161
+      ],
+      "point": [
+        -735,
+        -162
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0045",
+      "margin": 0,
+      "rect": [
+        -735,
+        -362,
+        -735,
+        -161
+      ],
+      "point": [
+        -735,
+        -161
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0046",
+      "margin": 0,
+      "rect": [
+        -735,
+        -362,
+        -735,
+        -161
+      ],
+      "point": [
+        -735,
+        -362
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0047",
+      "margin": 0,
+      "rect": [
+        -735,
+        -362,
+        -735,
+        -161
+      ],
+      "point": [
+        -736,
+        -362
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0048",
+      "margin": 0,
+      "rect": [
+        -735,
+        -362,
+        -735,
+        -161
+      ],
+      "point": [
+        -735,
+        -162
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0049",
+      "margin": 0,
+      "rect": [
+        -730,
+        -380,
+        -729,
+        -380
+      ],
+      "point": [
+        -731,
+        -380
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0050",
+      "margin": 0,
+      "rect": [
+        -730,
+        -380,
+        -729,
+        -380
+      ],
+      "point": [
+        -730,
+        -380
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0051",
+      "margin": 0,
+      "rect": [
+        -730,
+        -380,
+        -729,
+        -380
+      ],
+      "point": [
+        -730,
+        -381
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0052",
+      "margin": 0,
+      "rect": [
+        -730,
+        -380,
+        -729,
+        -380
+      ],
+      "point": [
+        -729,
+        -381
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0053",
+      "margin": 0,
+      "rect": [
+        -730,
+        -380,
+        -729,
+        -380
+      ],
+      "point": [
+        -730,
+        -380
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0054",
+      "margin": 0,
+      "rect": [
+        -730,
+        -380,
+        -729,
+        -380
+      ],
+      "point": [
+        -729,
+        -380
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0055",
+      "margin": 0,
+      "rect": [
+        -730,
+        -380,
+        -729,
+        -380
+      ],
+      "point": [
+        -730,
+        -380
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0056",
+      "margin": 0,
+      "rect": [
+        -730,
+        -380,
+        -729,
+        -380
+      ],
+      "point": [
+        -730,
+        -381
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0057",
+      "margin": 0,
+      "rect": [
+        -730,
+        -371,
+        -729,
+        -370
+      ],
+      "point": [
+        -731,
+        -371
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0058",
+      "margin": 0,
+      "rect": [
+        -730,
+        -371,
+        -729,
+        -370
+      ],
+      "point": [
+        -730,
+        -371
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0059",
+      "margin": 0,
+      "rect": [
+        -730,
+        -371,
+        -729,
+        -370
+      ],
+      "point": [
+        -730,
+        -371
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0060",
+      "margin": 0,
+      "rect": [
+        -730,
+        -371,
+        -729,
+        -370
+      ],
+      "point": [
+        -729,
+        -371
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0061",
+      "margin": 0,
+      "rect": [
+        -730,
+        -371,
+        -729,
+        -370
+      ],
+      "point": [
+        -730,
+        -370
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0062",
+      "margin": 0,
+      "rect": [
+        -730,
+        -371,
+        -729,
+        -370
+      ],
+      "point": [
+        -729,
+        -371
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0063",
+      "margin": 0,
+      "rect": [
+        -730,
+        -371,
+        -729,
+        -370
+      ],
+      "point": [
+        -730,
+        -371
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0064",
+      "margin": 0,
+      "rect": [
+        -730,
+        -371,
+        -729,
+        -370
+      ],
+      "point": [
+        -730,
+        -371
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0065",
+      "margin": 0,
+      "rect": [
+        -730,
+        -362,
+        -729,
+        -161
+      ],
+      "point": [
+        -731,
+        -362
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0066",
+      "margin": 0,
+      "rect": [
+        -730,
+        -362,
+        -729,
+        -161
+      ],
+      "point": [
+        -730,
+        -362
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0067",
+      "margin": 0,
+      "rect": [
+        -730,
+        -362,
+        -729,
+        -161
+      ],
+      "point": [
+        -730,
+        -162
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0068",
+      "margin": 0,
+      "rect": [
+        -730,
+        -362,
+        -729,
+        -161
+      ],
+      "point": [
+        -729,
+        -162
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0069",
+      "margin": 0,
+      "rect": [
+        -730,
+        -362,
+        -729,
+        -161
+      ],
+      "point": [
+        -730,
+        -161
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0070",
+      "margin": 0,
+      "rect": [
+        -730,
+        -362,
+        -729,
+        -161
+      ],
+      "point": [
+        -729,
+        -362
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0071",
+      "margin": 0,
+      "rect": [
+        -730,
+        -362,
+        -729,
+        -161
+      ],
+      "point": [
+        -730,
+        -362
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0072",
+      "margin": 0,
+      "rect": [
+        -730,
+        -362,
+        -729,
+        -161
+      ],
+      "point": [
+        -730,
+        -162
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0073",
+      "margin": 0,
+      "rect": [
+        -725,
+        -380,
+        -524,
+        -380
+      ],
+      "point": [
+        -726,
+        -380
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0074",
+      "margin": 0,
+      "rect": [
+        -725,
+        -380,
+        -524,
+        -380
+      ],
+      "point": [
+        -725,
+        -380
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0075",
+      "margin": 0,
+      "rect": [
+        -725,
+        -380,
+        -524,
+        -380
+      ],
+      "point": [
+        -525,
+        -381
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0076",
+      "margin": 0,
+      "rect": [
+        -725,
+        -380,
+        -524,
+        -380
+      ],
+      "point": [
+        -524,
+        -381
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0077",
+      "margin": 0,
+      "rect": [
+        -725,
+        -380,
+        -524,
+        -380
+      ],
+      "point": [
+        -725,
+        -380
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0078",
+      "margin": 0,
+      "rect": [
+        -725,
+        -380,
+        -524,
+        -380
+      ],
+      "point": [
+        -524,
+        -380
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0079",
+      "margin": 0,
+      "rect": [
+        -725,
+        -380,
+        -524,
+        -380
+      ],
+      "point": [
+        -525,
+        -380
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0080",
+      "margin": 0,
+      "rect": [
+        -725,
+        -380,
+        -524,
+        -380
+      ],
+      "point": [
+        -725,
+        -381
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0081",
+      "margin": 0,
+      "rect": [
+        -725,
+        -371,
+        -524,
+        -370
+      ],
+      "point": [
+        -726,
+        -371
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0082",
+      "margin": 0,
+      "rect": [
+        -725,
+        -371,
+        -524,
+        -370
+      ],
+      "point": [
+        -725,
+        -371
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0083",
+      "margin": 0,
+      "rect": [
+        -725,
+        -371,
+        -524,
+        -370
+      ],
+      "point": [
+        -525,
+        -371
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0084",
+      "margin": 0,
+      "rect": [
+        -725,
+        -371,
+        -524,
+        -370
+      ],
+      "point": [
+        -524,
+        -371
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0085",
+      "margin": 0,
+      "rect": [
+        -725,
+        -371,
+        -524,
+        -370
+      ],
+      "point": [
+        -725,
+        -370
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0086",
+      "margin": 0,
+      "rect": [
+        -725,
+        -371,
+        -524,
+        -370
+      ],
+      "point": [
+        -524,
+        -371
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0087",
+      "margin": 0,
+      "rect": [
+        -725,
+        -371,
+        -524,
+        -370
+      ],
+      "point": [
+        -525,
+        -371
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0088",
+      "margin": 0,
+      "rect": [
+        -725,
+        -371,
+        -524,
+        -370
+      ],
+      "point": [
+        -725,
+        -371
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0089",
+      "margin": 0,
+      "rect": [
+        -725,
+        -362,
+        -524,
+        -161
+      ],
+      "point": [
+        -726,
+        -362
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0090",
+      "margin": 0,
+      "rect": [
+        -725,
+        -362,
+        -524,
+        -161
+      ],
+      "point": [
+        -725,
+        -362
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0091",
+      "margin": 0,
+      "rect": [
+        -725,
+        -362,
+        -524,
+        -161
+      ],
+      "point": [
+        -525,
+        -162
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0092",
+      "margin": 0,
+      "rect": [
+        -725,
+        -362,
+        -524,
+        -161
+      ],
+      "point": [
+        -524,
+        -162
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0093",
+      "margin": 0,
+      "rect": [
+        -725,
+        -362,
+        -524,
+        -161
+      ],
+      "point": [
+        -725,
+        -161
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0094",
+      "margin": 0,
+      "rect": [
+        -725,
+        -362,
+        -524,
+        -161
+      ],
+      "point": [
+        -524,
+        -362
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0095",
+      "margin": 0,
+      "rect": [
+        -725,
+        -362,
+        -524,
+        -161
+      ],
+      "point": [
+        -525,
+        -362
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0096",
+      "margin": 0,
+      "rect": [
+        -725,
+        -362,
+        -524,
+        -161
+      ],
+      "point": [
+        -725,
+        -162
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0097",
+      "margin": 100,
+      "rect": [
+        -740,
+        -380,
+        -541,
+        -181
+      ],
+      "point": [
+        -641,
+        -280
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0098",
+      "margin": 100,
+      "rect": [
+        -740,
+        -380,
+        -541,
+        -181
+      ],
+      "point": [
+        -640,
+        -280
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0099",
+      "margin": 100,
+      "rect": [
+        -740,
+        -380,
+        -541,
+        -181
+      ],
+      "point": [
+        -642,
+        -282
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0100",
+      "margin": 100,
+      "rect": [
+        -740,
+        -380,
+        -541,
+        -181
+      ],
+      "point": [
+        -641,
+        -282
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0101",
+      "margin": 100,
+      "rect": [
+        -740,
+        -380,
+        -541,
+        -181
+      ],
+      "point": [
+        -640,
+        -281
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0102",
+      "margin": 100,
+      "rect": [
+        -740,
+        -380,
+        -541,
+        -181
+      ],
+      "point": [
+        -641,
+        -280
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0103",
+      "margin": 100,
+      "rect": [
+        -740,
+        -380,
+        -541,
+        -181
+      ],
+      "point": [
+        -642,
+        -280
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0104",
+      "margin": 100,
+      "rect": [
+        -740,
+        -380,
+        -541,
+        -181
+      ],
+      "point": [
+        -640,
+        -282
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0105",
+      "margin": 100,
+      "rect": [
+        -740,
+        -371,
+        -541,
+        -170
+      ],
+      "point": [
+        -641,
+        -271
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0106",
+      "margin": 100,
+      "rect": [
+        -740,
+        -371,
+        -541,
+        -170
+      ],
+      "point": [
+        -640,
+        -271
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0107",
+      "margin": 100,
+      "rect": [
+        -740,
+        -371,
+        -541,
+        -170
+      ],
+      "point": [
+        -642,
+        -271
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0108",
+      "margin": 100,
+      "rect": [
+        -740,
+        -371,
+        -541,
+        -170
+      ],
+      "point": [
+        -641,
+        -271
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0109",
+      "margin": 100,
+      "rect": [
+        -740,
+        -371,
+        -541,
+        -170
+      ],
+      "point": [
+        -640,
+        -270
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0110",
+      "margin": 100,
+      "rect": [
+        -740,
+        -371,
+        -541,
+        -170
+      ],
+      "point": [
+        -641,
+        -271
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0111",
+      "margin": 100,
+      "rect": [
+        -740,
+        -371,
+        -541,
+        -170
+      ],
+      "point": [
+        -642,
+        -271
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0112",
+      "margin": 100,
+      "rect": [
+        -740,
+        -371,
+        -541,
+        -170
+      ],
+      "point": [
+        -640,
+        -271
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0113",
+      "margin": 100,
+      "rect": [
+        -740,
+        -362,
+        -541,
+        39
+      ],
+      "point": [
+        -641,
+        -262
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0114",
+      "margin": 100,
+      "rect": [
+        -740,
+        -362,
+        -541,
+        39
+      ],
+      "point": [
+        -640,
+        -262
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0115",
+      "margin": 100,
+      "rect": [
+        -740,
+        -362,
+        -541,
+        39
+      ],
+      "point": [
+        -642,
+        -62
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0116",
+      "margin": 100,
+      "rect": [
+        -740,
+        -362,
+        -541,
+        39
+      ],
+      "point": [
+        -641,
+        -62
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0117",
+      "margin": 100,
+      "rect": [
+        -740,
+        -362,
+        -541,
+        39
+      ],
+      "point": [
+        -640,
+        -61
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0118",
+      "margin": 100,
+      "rect": [
+        -740,
+        -362,
+        -541,
+        39
+      ],
+      "point": [
+        -641,
+        -262
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0119",
+      "margin": 100,
+      "rect": [
+        -740,
+        -362,
+        -541,
+        39
+      ],
+      "point": [
+        -642,
+        -262
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0120",
+      "margin": 100,
+      "rect": [
+        -740,
+        -362,
+        -541,
+        39
+      ],
+      "point": [
+        -640,
+        -62
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0121",
+      "margin": 100,
+      "rect": [
+        -735,
+        -380,
+        -535,
+        -181
+      ],
+      "point": [
+        -636,
+        -280
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0122",
+      "margin": 100,
+      "rect": [
+        -735,
+        -380,
+        -535,
+        -181
+      ],
+      "point": [
+        -635,
+        -280
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0123",
+      "margin": 100,
+      "rect": [
+        -735,
+        -380,
+        -535,
+        -181
+      ],
+      "point": [
+        -636,
+        -282
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0124",
+      "margin": 100,
+      "rect": [
+        -735,
+        -380,
+        -535,
+        -181
+      ],
+      "point": [
+        -635,
+        -282
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0125",
+      "margin": 100,
+      "rect": [
+        -735,
+        -380,
+        -535,
+        -181
+      ],
+      "point": [
+        -635,
+        -281
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0126",
+      "margin": 100,
+      "rect": [
+        -735,
+        -380,
+        -535,
+        -181
+      ],
+      "point": [
+        -635,
+        -280
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0127",
+      "margin": 100,
+      "rect": [
+        -735,
+        -380,
+        -535,
+        -181
+      ],
+      "point": [
+        -636,
+        -280
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0128",
+      "margin": 100,
+      "rect": [
+        -735,
+        -380,
+        -535,
+        -181
+      ],
+      "point": [
+        -635,
+        -282
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0129",
+      "margin": 100,
+      "rect": [
+        -735,
+        -371,
+        -535,
+        -170
+      ],
+      "point": [
+        -636,
+        -271
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0130",
+      "margin": 100,
+      "rect": [
+        -735,
+        -371,
+        -535,
+        -170
+      ],
+      "point": [
+        -635,
+        -271
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0131",
+      "margin": 100,
+      "rect": [
+        -735,
+        -371,
+        -535,
+        -170
+      ],
+      "point": [
+        -636,
+        -271
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0132",
+      "margin": 100,
+      "rect": [
+        -735,
+        -371,
+        -535,
+        -170
+      ],
+      "point": [
+        -635,
+        -271
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0133",
+      "margin": 100,
+      "rect": [
+        -735,
+        -371,
+        -535,
+        -170
+      ],
+      "point": [
+        -635,
+        -270
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0134",
+      "margin": 100,
+      "rect": [
+        -735,
+        -371,
+        -535,
+        -170
+      ],
+      "point": [
+        -635,
+        -271
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0135",
+      "margin": 100,
+      "rect": [
+        -735,
+        -371,
+        -535,
+        -170
+      ],
+      "point": [
+        -636,
+        -271
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0136",
+      "margin": 100,
+      "rect": [
+        -735,
+        -371,
+        -535,
+        -170
+      ],
+      "point": [
+        -635,
+        -271
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0137",
+      "margin": 100,
+      "rect": [
+        -735,
+        -362,
+        -535,
+        39
+      ],
+      "point": [
+        -636,
+        -262
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0138",
+      "margin": 100,
+      "rect": [
+        -735,
+        -362,
+        -535,
+        39
+      ],
+      "point": [
+        -635,
+        -262
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0139",
+      "margin": 100,
+      "rect": [
+        -735,
+        -362,
+        -535,
+        39
+      ],
+      "point": [
+        -636,
+        -62
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0140",
+      "margin": 100,
+      "rect": [
+        -735,
+        -362,
+        -535,
+        39
+      ],
+      "point": [
+        -635,
+        -62
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0141",
+      "margin": 100,
+      "rect": [
+        -735,
+        -362,
+        -535,
+        39
+      ],
+      "point": [
+        -635,
+        -61
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0142",
+      "margin": 100,
+      "rect": [
+        -735,
+        -362,
+        -535,
+        39
+      ],
+      "point": [
+        -635,
+        -262
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0143",
+      "margin": 100,
+      "rect": [
+        -735,
+        -362,
+        -535,
+        39
+      ],
+      "point": [
+        -636,
+        -262
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0144",
+      "margin": 100,
+      "rect": [
+        -735,
+        -362,
+        -535,
+        39
+      ],
+      "point": [
+        -635,
+        -62
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0145",
+      "margin": 100,
+      "rect": [
+        -730,
+        -380,
+        -529,
+        -181
+      ],
+      "point": [
+        -631,
+        -280
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0146",
+      "margin": 100,
+      "rect": [
+        -730,
+        -380,
+        -529,
+        -181
+      ],
+      "point": [
+        -630,
+        -280
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0147",
+      "margin": 100,
+      "rect": [
+        -730,
+        -380,
+        -529,
+        -181
+      ],
+      "point": [
+        -630,
+        -282
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0148",
+      "margin": 100,
+      "rect": [
+        -730,
+        -380,
+        -529,
+        -181
+      ],
+      "point": [
+        -629,
+        -282
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0149",
+      "margin": 100,
+      "rect": [
+        -730,
+        -380,
+        -529,
+        -181
+      ],
+      "point": [
+        -630,
+        -281
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0150",
+      "margin": 100,
+      "rect": [
+        -730,
+        -380,
+        -529,
+        -181
+      ],
+      "point": [
+        -629,
+        -280
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0151",
+      "margin": 100,
+      "rect": [
+        -730,
+        -380,
+        -529,
+        -181
+      ],
+      "point": [
+        -630,
+        -280
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0152",
+      "margin": 100,
+      "rect": [
+        -730,
+        -380,
+        -529,
+        -181
+      ],
+      "point": [
+        -630,
+        -282
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0153",
+      "margin": 100,
+      "rect": [
+        -730,
+        -371,
+        -529,
+        -170
+      ],
+      "point": [
+        -631,
+        -271
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0154",
+      "margin": 100,
+      "rect": [
+        -730,
+        -371,
+        -529,
+        -170
+      ],
+      "point": [
+        -630,
+        -271
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0155",
+      "margin": 100,
+      "rect": [
+        -730,
+        -371,
+        -529,
+        -170
+      ],
+      "point": [
+        -630,
+        -271
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0156",
+      "margin": 100,
+      "rect": [
+        -730,
+        -371,
+        -529,
+        -170
+      ],
+      "point": [
+        -629,
+        -271
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0157",
+      "margin": 100,
+      "rect": [
+        -730,
+        -371,
+        -529,
+        -170
+      ],
+      "point": [
+        -630,
+        -270
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0158",
+      "margin": 100,
+      "rect": [
+        -730,
+        -371,
+        -529,
+        -170
+      ],
+      "point": [
+        -629,
+        -271
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0159",
+      "margin": 100,
+      "rect": [
+        -730,
+        -371,
+        -529,
+        -170
+      ],
+      "point": [
+        -630,
+        -271
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0160",
+      "margin": 100,
+      "rect": [
+        -730,
+        -371,
+        -529,
+        -170
+      ],
+      "point": [
+        -630,
+        -271
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0161",
+      "margin": 100,
+      "rect": [
+        -730,
+        -362,
+        -529,
+        39
+      ],
+      "point": [
+        -631,
+        -262
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0162",
+      "margin": 100,
+      "rect": [
+        -730,
+        -362,
+        -529,
+        39
+      ],
+      "point": [
+        -630,
+        -262
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0163",
+      "margin": 100,
+      "rect": [
+        -730,
+        -362,
+        -529,
+        39
+      ],
+      "point": [
+        -630,
+        -62
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0164",
+      "margin": 100,
+      "rect": [
+        -730,
+        -362,
+        -529,
+        39
+      ],
+      "point": [
+        -629,
+        -62
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0165",
+      "margin": 100,
+      "rect": [
+        -730,
+        -362,
+        -529,
+        39
+      ],
+      "point": [
+        -630,
+        -61
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0166",
+      "margin": 100,
+      "rect": [
+        -730,
+        -362,
+        -529,
+        39
+      ],
+      "point": [
+        -629,
+        -262
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0167",
+      "margin": 100,
+      "rect": [
+        -730,
+        -362,
+        -529,
+        39
+      ],
+      "point": [
+        -630,
+        -262
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0168",
+      "margin": 100,
+      "rect": [
+        -730,
+        -362,
+        -529,
+        39
+      ],
+      "point": [
+        -630,
+        -62
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0169",
+      "margin": 100,
+      "rect": [
+        -725,
+        -380,
+        -324,
+        -181
+      ],
+      "point": [
+        -626,
+        -280
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0170",
+      "margin": 100,
+      "rect": [
+        -725,
+        -380,
+        -324,
+        -181
+      ],
+      "point": [
+        -625,
+        -280
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0171",
+      "margin": 100,
+      "rect": [
+        -725,
+        -380,
+        -324,
+        -181
+      ],
+      "point": [
+        -425,
+        -282
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0172",
+      "margin": 100,
+      "rect": [
+        -725,
+        -380,
+        -324,
+        -181
+      ],
+      "point": [
+        -424,
+        -282
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0173",
+      "margin": 100,
+      "rect": [
+        -725,
+        -380,
+        -324,
+        -181
+      ],
+      "point": [
+        -625,
+        -281
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0174",
+      "margin": 100,
+      "rect": [
+        -725,
+        -380,
+        -324,
+        -181
+      ],
+      "point": [
+        -424,
+        -280
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0175",
+      "margin": 100,
+      "rect": [
+        -725,
+        -380,
+        -324,
+        -181
+      ],
+      "point": [
+        -425,
+        -280
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0176",
+      "margin": 100,
+      "rect": [
+        -725,
+        -380,
+        -324,
+        -181
+      ],
+      "point": [
+        -625,
+        -282
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0177",
+      "margin": 100,
+      "rect": [
+        -725,
+        -371,
+        -324,
+        -170
+      ],
+      "point": [
+        -626,
+        -271
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0178",
+      "margin": 100,
+      "rect": [
+        -725,
+        -371,
+        -324,
+        -170
+      ],
+      "point": [
+        -625,
+        -271
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0179",
+      "margin": 100,
+      "rect": [
+        -725,
+        -371,
+        -324,
+        -170
+      ],
+      "point": [
+        -425,
+        -271
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0180",
+      "margin": 100,
+      "rect": [
+        -725,
+        -371,
+        -324,
+        -170
+      ],
+      "point": [
+        -424,
+        -271
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0181",
+      "margin": 100,
+      "rect": [
+        -725,
+        -371,
+        -324,
+        -170
+      ],
+      "point": [
+        -625,
+        -270
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0182",
+      "margin": 100,
+      "rect": [
+        -725,
+        -371,
+        -324,
+        -170
+      ],
+      "point": [
+        -424,
+        -271
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0183",
+      "margin": 100,
+      "rect": [
+        -725,
+        -371,
+        -324,
+        -170
+      ],
+      "point": [
+        -425,
+        -271
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0184",
+      "margin": 100,
+      "rect": [
+        -725,
+        -371,
+        -324,
+        -170
+      ],
+      "point": [
+        -625,
+        -271
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0185",
+      "margin": 100,
+      "rect": [
+        -725,
+        -362,
+        -324,
+        39
+      ],
+      "point": [
+        -626,
+        -262
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0186",
+      "margin": 100,
+      "rect": [
+        -725,
+        -362,
+        -324,
+        39
+      ],
+      "point": [
+        -625,
+        -262
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0187",
+      "margin": 100,
+      "rect": [
+        -725,
+        -362,
+        -324,
+        39
+      ],
+      "point": [
+        -425,
+        -62
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0188",
+      "margin": 100,
+      "rect": [
+        -725,
+        -362,
+        -324,
+        39
+      ],
+      "point": [
+        -424,
+        -62
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0189",
+      "margin": 100,
+      "rect": [
+        -725,
+        -362,
+        -324,
+        39
+      ],
+      "point": [
+        -625,
+        -61
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0190",
+      "margin": 100,
+      "rect": [
+        -725,
+        -362,
+        -324,
+        39
+      ],
+      "point": [
+        -424,
+        -262
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0191",
+      "margin": 100,
+      "rect": [
+        -725,
+        -362,
+        -324,
+        39
+      ],
+      "point": [
+        -425,
+        -262
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0192",
+      "margin": 100,
+      "rect": [
+        -725,
+        -362,
+        -324,
+        39
+      ],
+      "point": [
+        -625,
+        -62
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0193",
+      "margin": 200,
+      "rect": [
+        -740,
+        -380,
+        -341,
+        19
+      ],
+      "point": [
+        -541,
+        -180
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0194",
+      "margin": 200,
+      "rect": [
+        -740,
+        -380,
+        -341,
+        19
+      ],
+      "point": [
+        -540,
+        -180
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0195",
+      "margin": 200,
+      "rect": [
+        -740,
+        -380,
+        -341,
+        19
+      ],
+      "point": [
+        -542,
+        -182
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0196",
+      "margin": 200,
+      "rect": [
+        -740,
+        -380,
+        -341,
+        19
+      ],
+      "point": [
+        -541,
+        -182
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0197",
+      "margin": 200,
+      "rect": [
+        -740,
+        -380,
+        -341,
+        19
+      ],
+      "point": [
+        -540,
+        -181
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0198",
+      "margin": 200,
+      "rect": [
+        -740,
+        -380,
+        -341,
+        19
+      ],
+      "point": [
+        -541,
+        -180
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0199",
+      "margin": 200,
+      "rect": [
+        -740,
+        -380,
+        -341,
+        19
+      ],
+      "point": [
+        -542,
+        -180
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0200",
+      "margin": 200,
+      "rect": [
+        -740,
+        -380,
+        -341,
+        19
+      ],
+      "point": [
+        -540,
+        -182
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0201",
+      "margin": 200,
+      "rect": [
+        -740,
+        -371,
+        -341,
+        30
+      ],
+      "point": [
+        -541,
+        -171
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0202",
+      "margin": 200,
+      "rect": [
+        -740,
+        -371,
+        -341,
+        30
+      ],
+      "point": [
+        -540,
+        -171
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0203",
+      "margin": 200,
+      "rect": [
+        -740,
+        -371,
+        -341,
+        30
+      ],
+      "point": [
+        -542,
+        -171
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0204",
+      "margin": 200,
+      "rect": [
+        -740,
+        -371,
+        -341,
+        30
+      ],
+      "point": [
+        -541,
+        -171
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0205",
+      "margin": 200,
+      "rect": [
+        -740,
+        -371,
+        -341,
+        30
+      ],
+      "point": [
+        -540,
+        -170
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0206",
+      "margin": 200,
+      "rect": [
+        -740,
+        -371,
+        -341,
+        30
+      ],
+      "point": [
+        -541,
+        -171
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0207",
+      "margin": 200,
+      "rect": [
+        -740,
+        -371,
+        -341,
+        30
+      ],
+      "point": [
+        -542,
+        -171
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0208",
+      "margin": 200,
+      "rect": [
+        -740,
+        -371,
+        -341,
+        30
+      ],
+      "point": [
+        -540,
+        -171
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0209",
+      "margin": 200,
+      "rect": [
+        -740,
+        -362,
+        -341,
+        239
+      ],
+      "point": [
+        -541,
+        -162
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0210",
+      "margin": 200,
+      "rect": [
+        -740,
+        -362,
+        -341,
+        239
+      ],
+      "point": [
+        -540,
+        -162
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0211",
+      "margin": 200,
+      "rect": [
+        -740,
+        -362,
+        -341,
+        239
+      ],
+      "point": [
+        -542,
+        38
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0212",
+      "margin": 200,
+      "rect": [
+        -740,
+        -362,
+        -341,
+        239
+      ],
+      "point": [
+        -541,
+        38
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0213",
+      "margin": 200,
+      "rect": [
+        -740,
+        -362,
+        -341,
+        239
+      ],
+      "point": [
+        -540,
+        39
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0214",
+      "margin": 200,
+      "rect": [
+        -740,
+        -362,
+        -341,
+        239
+      ],
+      "point": [
+        -541,
+        -162
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0215",
+      "margin": 200,
+      "rect": [
+        -740,
+        -362,
+        -341,
+        239
+      ],
+      "point": [
+        -542,
+        -162
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0216",
+      "margin": 200,
+      "rect": [
+        -740,
+        -362,
+        -341,
+        239
+      ],
+      "point": [
+        -540,
+        38
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0217",
+      "margin": 200,
+      "rect": [
+        -735,
+        -380,
+        -335,
+        19
+      ],
+      "point": [
+        -536,
+        -180
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0218",
+      "margin": 200,
+      "rect": [
+        -735,
+        -380,
+        -335,
+        19
+      ],
+      "point": [
+        -535,
+        -180
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0219",
+      "margin": 200,
+      "rect": [
+        -735,
+        -380,
+        -335,
+        19
+      ],
+      "point": [
+        -536,
+        -182
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0220",
+      "margin": 200,
+      "rect": [
+        -735,
+        -380,
+        -335,
+        19
+      ],
+      "point": [
+        -535,
+        -182
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0221",
+      "margin": 200,
+      "rect": [
+        -735,
+        -380,
+        -335,
+        19
+      ],
+      "point": [
+        -535,
+        -181
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0222",
+      "margin": 200,
+      "rect": [
+        -735,
+        -380,
+        -335,
+        19
+      ],
+      "point": [
+        -535,
+        -180
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0223",
+      "margin": 200,
+      "rect": [
+        -735,
+        -380,
+        -335,
+        19
+      ],
+      "point": [
+        -536,
+        -180
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0224",
+      "margin": 200,
+      "rect": [
+        -735,
+        -380,
+        -335,
+        19
+      ],
+      "point": [
+        -535,
+        -182
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0225",
+      "margin": 200,
+      "rect": [
+        -735,
+        -371,
+        -335,
+        30
+      ],
+      "point": [
+        -536,
+        -171
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0226",
+      "margin": 200,
+      "rect": [
+        -735,
+        -371,
+        -335,
+        30
+      ],
+      "point": [
+        -535,
+        -171
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0227",
+      "margin": 200,
+      "rect": [
+        -735,
+        -371,
+        -335,
+        30
+      ],
+      "point": [
+        -536,
+        -171
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0228",
+      "margin": 200,
+      "rect": [
+        -735,
+        -371,
+        -335,
+        30
+      ],
+      "point": [
+        -535,
+        -171
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0229",
+      "margin": 200,
+      "rect": [
+        -735,
+        -371,
+        -335,
+        30
+      ],
+      "point": [
+        -535,
+        -170
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0230",
+      "margin": 200,
+      "rect": [
+        -735,
+        -371,
+        -335,
+        30
+      ],
+      "point": [
+        -535,
+        -171
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0231",
+      "margin": 200,
+      "rect": [
+        -735,
+        -371,
+        -335,
+        30
+      ],
+      "point": [
+        -536,
+        -171
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0232",
+      "margin": 200,
+      "rect": [
+        -735,
+        -371,
+        -335,
+        30
+      ],
+      "point": [
+        -535,
+        -171
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0233",
+      "margin": 200,
+      "rect": [
+        -735,
+        -362,
+        -335,
+        239
+      ],
+      "point": [
+        -536,
+        -162
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0234",
+      "margin": 200,
+      "rect": [
+        -735,
+        -362,
+        -335,
+        239
+      ],
+      "point": [
+        -535,
+        -162
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0235",
+      "margin": 200,
+      "rect": [
+        -735,
+        -362,
+        -335,
+        239
+      ],
+      "point": [
+        -536,
+        38
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0236",
+      "margin": 200,
+      "rect": [
+        -735,
+        -362,
+        -335,
+        239
+      ],
+      "point": [
+        -535,
+        38
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0237",
+      "margin": 200,
+      "rect": [
+        -735,
+        -362,
+        -335,
+        239
+      ],
+      "point": [
+        -535,
+        39
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0238",
+      "margin": 200,
+      "rect": [
+        -735,
+        -362,
+        -335,
+        239
+      ],
+      "point": [
+        -535,
+        -162
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0239",
+      "margin": 200,
+      "rect": [
+        -735,
+        -362,
+        -335,
+        239
+      ],
+      "point": [
+        -536,
+        -162
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0240",
+      "margin": 200,
+      "rect": [
+        -735,
+        -362,
+        -335,
+        239
+      ],
+      "point": [
+        -535,
+        38
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0241",
+      "margin": 200,
+      "rect": [
+        -730,
+        -380,
+        -329,
+        19
+      ],
+      "point": [
+        -531,
+        -180
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0242",
+      "margin": 200,
+      "rect": [
+        -730,
+        -380,
+        -329,
+        19
+      ],
+      "point": [
+        -530,
+        -180
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0243",
+      "margin": 200,
+      "rect": [
+        -730,
+        -380,
+        -329,
+        19
+      ],
+      "point": [
+        -530,
+        -182
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0244",
+      "margin": 200,
+      "rect": [
+        -730,
+        -380,
+        -329,
+        19
+      ],
+      "point": [
+        -529,
+        -182
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0245",
+      "margin": 200,
+      "rect": [
+        -730,
+        -380,
+        -329,
+        19
+      ],
+      "point": [
+        -530,
+        -181
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0246",
+      "margin": 200,
+      "rect": [
+        -730,
+        -380,
+        -329,
+        19
+      ],
+      "point": [
+        -529,
+        -180
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0247",
+      "margin": 200,
+      "rect": [
+        -730,
+        -380,
+        -329,
+        19
+      ],
+      "point": [
+        -530,
+        -180
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0248",
+      "margin": 200,
+      "rect": [
+        -730,
+        -380,
+        -329,
+        19
+      ],
+      "point": [
+        -530,
+        -182
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0249",
+      "margin": 200,
+      "rect": [
+        -730,
+        -371,
+        -329,
+        30
+      ],
+      "point": [
+        -531,
+        -171
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0250",
+      "margin": 200,
+      "rect": [
+        -730,
+        -371,
+        -329,
+        30
+      ],
+      "point": [
+        -530,
+        -171
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0251",
+      "margin": 200,
+      "rect": [
+        -730,
+        -371,
+        -329,
+        30
+      ],
+      "point": [
+        -530,
+        -171
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0252",
+      "margin": 200,
+      "rect": [
+        -730,
+        -371,
+        -329,
+        30
+      ],
+      "point": [
+        -529,
+        -171
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0253",
+      "margin": 200,
+      "rect": [
+        -730,
+        -371,
+        -329,
+        30
+      ],
+      "point": [
+        -530,
+        -170
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0254",
+      "margin": 200,
+      "rect": [
+        -730,
+        -371,
+        -329,
+        30
+      ],
+      "point": [
+        -529,
+        -171
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0255",
+      "margin": 200,
+      "rect": [
+        -730,
+        -371,
+        -329,
+        30
+      ],
+      "point": [
+        -530,
+        -171
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0256",
+      "margin": 200,
+      "rect": [
+        -730,
+        -371,
+        -329,
+        30
+      ],
+      "point": [
+        -530,
+        -171
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0257",
+      "margin": 200,
+      "rect": [
+        -730,
+        -362,
+        -329,
+        239
+      ],
+      "point": [
+        -531,
+        -162
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0258",
+      "margin": 200,
+      "rect": [
+        -730,
+        -362,
+        -329,
+        239
+      ],
+      "point": [
+        -530,
+        -162
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0259",
+      "margin": 200,
+      "rect": [
+        -730,
+        -362,
+        -329,
+        239
+      ],
+      "point": [
+        -530,
+        38
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0260",
+      "margin": 200,
+      "rect": [
+        -730,
+        -362,
+        -329,
+        239
+      ],
+      "point": [
+        -529,
+        38
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0261",
+      "margin": 200,
+      "rect": [
+        -730,
+        -362,
+        -329,
+        239
+      ],
+      "point": [
+        -530,
+        39
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0262",
+      "margin": 200,
+      "rect": [
+        -730,
+        -362,
+        -329,
+        239
+      ],
+      "point": [
+        -529,
+        -162
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0263",
+      "margin": 200,
+      "rect": [
+        -730,
+        -362,
+        -329,
+        239
+      ],
+      "point": [
+        -530,
+        -162
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0264",
+      "margin": 200,
+      "rect": [
+        -730,
+        -362,
+        -329,
+        239
+      ],
+      "point": [
+        -530,
+        38
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0265",
+      "margin": 200,
+      "rect": [
+        -725,
+        -380,
+        -124,
+        19
+      ],
+      "point": [
+        -526,
+        -180
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0266",
+      "margin": 200,
+      "rect": [
+        -725,
+        -380,
+        -124,
+        19
+      ],
+      "point": [
+        -525,
+        -180
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0267",
+      "margin": 200,
+      "rect": [
+        -725,
+        -380,
+        -124,
+        19
+      ],
+      "point": [
+        -325,
+        -182
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0268",
+      "margin": 200,
+      "rect": [
+        -725,
+        -380,
+        -124,
+        19
+      ],
+      "point": [
+        -324,
+        -182
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0269",
+      "margin": 200,
+      "rect": [
+        -725,
+        -380,
+        -124,
+        19
+      ],
+      "point": [
+        -525,
+        -181
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0270",
+      "margin": 200,
+      "rect": [
+        -725,
+        -380,
+        -124,
+        19
+      ],
+      "point": [
+        -324,
+        -180
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0271",
+      "margin": 200,
+      "rect": [
+        -725,
+        -380,
+        -124,
+        19
+      ],
+      "point": [
+        -325,
+        -180
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0272",
+      "margin": 200,
+      "rect": [
+        -725,
+        -380,
+        -124,
+        19
+      ],
+      "point": [
+        -525,
+        -182
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0273",
+      "margin": 200,
+      "rect": [
+        -725,
+        -371,
+        -124,
+        30
+      ],
+      "point": [
+        -526,
+        -171
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0274",
+      "margin": 200,
+      "rect": [
+        -725,
+        -371,
+        -124,
+        30
+      ],
+      "point": [
+        -525,
+        -171
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0275",
+      "margin": 200,
+      "rect": [
+        -725,
+        -371,
+        -124,
+        30
+      ],
+      "point": [
+        -325,
+        -171
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0276",
+      "margin": 200,
+      "rect": [
+        -725,
+        -371,
+        -124,
+        30
+      ],
+      "point": [
+        -324,
+        -171
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0277",
+      "margin": 200,
+      "rect": [
+        -725,
+        -371,
+        -124,
+        30
+      ],
+      "point": [
+        -525,
+        -170
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0278",
+      "margin": 200,
+      "rect": [
+        -725,
+        -371,
+        -124,
+        30
+      ],
+      "point": [
+        -324,
+        -171
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0279",
+      "margin": 200,
+      "rect": [
+        -725,
+        -371,
+        -124,
+        30
+      ],
+      "point": [
+        -325,
+        -171
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0280",
+      "margin": 200,
+      "rect": [
+        -725,
+        -371,
+        -124,
+        30
+      ],
+      "point": [
+        -525,
+        -171
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0281",
+      "margin": 200,
+      "rect": [
+        -725,
+        -362,
+        -124,
+        239
+      ],
+      "point": [
+        -526,
+        -162
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0282",
+      "margin": 200,
+      "rect": [
+        -725,
+        -362,
+        -124,
+        239
+      ],
+      "point": [
+        -525,
+        -162
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0283",
+      "margin": 200,
+      "rect": [
+        -725,
+        -362,
+        -124,
+        239
+      ],
+      "point": [
+        -325,
+        38
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0284",
+      "margin": 200,
+      "rect": [
+        -725,
+        -362,
+        -124,
+        239
+      ],
+      "point": [
+        -324,
+        38
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0285",
+      "margin": 200,
+      "rect": [
+        -725,
+        -362,
+        -124,
+        239
+      ],
+      "point": [
+        -525,
+        39
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0286",
+      "margin": 200,
+      "rect": [
+        -725,
+        -362,
+        -124,
+        239
+      ],
+      "point": [
+        -324,
+        -162
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0287",
+      "margin": 200,
+      "rect": [
+        -725,
+        -362,
+        -124,
+        239
+      ],
+      "point": [
+        -325,
+        -162
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0288",
+      "margin": 200,
+      "rect": [
+        -725,
+        -362,
+        -124,
+        239
+      ],
+      "point": [
+        -525,
+        38
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0289",
+      "margin": 400,
+      "rect": [
+        -740,
+        -380,
+        59,
+        419
+      ],
+      "point": [
+        -341,
+        20
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0290",
+      "margin": 400,
+      "rect": [
+        -740,
+        -380,
+        59,
+        419
+      ],
+      "point": [
+        -340,
+        20
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0291",
+      "margin": 400,
+      "rect": [
+        -740,
+        -380,
+        59,
+        419
+      ],
+      "point": [
+        -342,
+        18
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0292",
+      "margin": 400,
+      "rect": [
+        -740,
+        -380,
+        59,
+        419
+      ],
+      "point": [
+        -341,
+        18
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0293",
+      "margin": 400,
+      "rect": [
+        -740,
+        -380,
+        59,
+        419
+      ],
+      "point": [
+        -340,
+        19
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0294",
+      "margin": 400,
+      "rect": [
+        -740,
+        -380,
+        59,
+        419
+      ],
+      "point": [
+        -341,
+        20
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0295",
+      "margin": 400,
+      "rect": [
+        -740,
+        -380,
+        59,
+        419
+      ],
+      "point": [
+        -342,
+        20
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0296",
+      "margin": 400,
+      "rect": [
+        -740,
+        -380,
+        59,
+        419
+      ],
+      "point": [
+        -340,
+        18
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0297",
+      "margin": 400,
+      "rect": [
+        -740,
+        -371,
+        59,
+        430
+      ],
+      "point": [
+        -341,
+        29
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0298",
+      "margin": 400,
+      "rect": [
+        -740,
+        -371,
+        59,
+        430
+      ],
+      "point": [
+        -340,
+        29
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0299",
+      "margin": 400,
+      "rect": [
+        -740,
+        -371,
+        59,
+        430
+      ],
+      "point": [
+        -342,
+        29
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0300",
+      "margin": 400,
+      "rect": [
+        -740,
+        -371,
+        59,
+        430
+      ],
+      "point": [
+        -341,
+        29
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0301",
+      "margin": 400,
+      "rect": [
+        -740,
+        -371,
+        59,
+        430
+      ],
+      "point": [
+        -340,
+        30
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0302",
+      "margin": 400,
+      "rect": [
+        -740,
+        -371,
+        59,
+        430
+      ],
+      "point": [
+        -341,
+        29
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0303",
+      "margin": 400,
+      "rect": [
+        -740,
+        -371,
+        59,
+        430
+      ],
+      "point": [
+        -342,
+        29
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0304",
+      "margin": 400,
+      "rect": [
+        -740,
+        -371,
+        59,
+        430
+      ],
+      "point": [
+        -340,
+        29
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0305",
+      "margin": 400,
+      "rect": [
+        -740,
+        -362,
+        59,
+        639
+      ],
+      "point": [
+        -341,
+        38
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0306",
+      "margin": 400,
+      "rect": [
+        -740,
+        -362,
+        59,
+        639
+      ],
+      "point": [
+        -340,
+        38
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0307",
+      "margin": 400,
+      "rect": [
+        -740,
+        -362,
+        59,
+        639
+      ],
+      "point": [
+        -342,
+        238
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0308",
+      "margin": 400,
+      "rect": [
+        -740,
+        -362,
+        59,
+        639
+      ],
+      "point": [
+        -341,
+        238
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0309",
+      "margin": 400,
+      "rect": [
+        -740,
+        -362,
+        59,
+        639
+      ],
+      "point": [
+        -340,
+        239
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0310",
+      "margin": 400,
+      "rect": [
+        -740,
+        -362,
+        59,
+        639
+      ],
+      "point": [
+        -341,
+        38
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0311",
+      "margin": 400,
+      "rect": [
+        -740,
+        -362,
+        59,
+        639
+      ],
+      "point": [
+        -342,
+        38
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0312",
+      "margin": 400,
+      "rect": [
+        -740,
+        -362,
+        59,
+        639
+      ],
+      "point": [
+        -340,
+        238
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0313",
+      "margin": 400,
+      "rect": [
+        -735,
+        -380,
+        65,
+        419
+      ],
+      "point": [
+        -336,
+        20
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0314",
+      "margin": 400,
+      "rect": [
+        -735,
+        -380,
+        65,
+        419
+      ],
+      "point": [
+        -335,
+        20
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0315",
+      "margin": 400,
+      "rect": [
+        -735,
+        -380,
+        65,
+        419
+      ],
+      "point": [
+        -336,
+        18
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0316",
+      "margin": 400,
+      "rect": [
+        -735,
+        -380,
+        65,
+        419
+      ],
+      "point": [
+        -335,
+        18
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0317",
+      "margin": 400,
+      "rect": [
+        -735,
+        -380,
+        65,
+        419
+      ],
+      "point": [
+        -335,
+        19
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0318",
+      "margin": 400,
+      "rect": [
+        -735,
+        -380,
+        65,
+        419
+      ],
+      "point": [
+        -335,
+        20
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0319",
+      "margin": 400,
+      "rect": [
+        -735,
+        -380,
+        65,
+        419
+      ],
+      "point": [
+        -336,
+        20
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0320",
+      "margin": 400,
+      "rect": [
+        -735,
+        -380,
+        65,
+        419
+      ],
+      "point": [
+        -335,
+        18
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0321",
+      "margin": 400,
+      "rect": [
+        -735,
+        -371,
+        65,
+        430
+      ],
+      "point": [
+        -336,
+        29
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0322",
+      "margin": 400,
+      "rect": [
+        -735,
+        -371,
+        65,
+        430
+      ],
+      "point": [
+        -335,
+        29
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0323",
+      "margin": 400,
+      "rect": [
+        -735,
+        -371,
+        65,
+        430
+      ],
+      "point": [
+        -336,
+        29
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0324",
+      "margin": 400,
+      "rect": [
+        -735,
+        -371,
+        65,
+        430
+      ],
+      "point": [
+        -335,
+        29
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0325",
+      "margin": 400,
+      "rect": [
+        -735,
+        -371,
+        65,
+        430
+      ],
+      "point": [
+        -335,
+        30
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0326",
+      "margin": 400,
+      "rect": [
+        -735,
+        -371,
+        65,
+        430
+      ],
+      "point": [
+        -335,
+        29
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0327",
+      "margin": 400,
+      "rect": [
+        -735,
+        -371,
+        65,
+        430
+      ],
+      "point": [
+        -336,
+        29
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0328",
+      "margin": 400,
+      "rect": [
+        -735,
+        -371,
+        65,
+        430
+      ],
+      "point": [
+        -335,
+        29
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0329",
+      "margin": 400,
+      "rect": [
+        -735,
+        -362,
+        65,
+        639
+      ],
+      "point": [
+        -336,
+        38
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0330",
+      "margin": 400,
+      "rect": [
+        -735,
+        -362,
+        65,
+        639
+      ],
+      "point": [
+        -335,
+        38
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0331",
+      "margin": 400,
+      "rect": [
+        -735,
+        -362,
+        65,
+        639
+      ],
+      "point": [
+        -336,
+        238
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0332",
+      "margin": 400,
+      "rect": [
+        -735,
+        -362,
+        65,
+        639
+      ],
+      "point": [
+        -335,
+        238
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0333",
+      "margin": 400,
+      "rect": [
+        -735,
+        -362,
+        65,
+        639
+      ],
+      "point": [
+        -335,
+        239
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0334",
+      "margin": 400,
+      "rect": [
+        -735,
+        -362,
+        65,
+        639
+      ],
+      "point": [
+        -335,
+        38
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0335",
+      "margin": 400,
+      "rect": [
+        -735,
+        -362,
+        65,
+        639
+      ],
+      "point": [
+        -336,
+        38
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0336",
+      "margin": 400,
+      "rect": [
+        -735,
+        -362,
+        65,
+        639
+      ],
+      "point": [
+        -335,
+        238
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0337",
+      "margin": 400,
+      "rect": [
+        -730,
+        -380,
+        71,
+        419
+      ],
+      "point": [
+        -331,
+        20
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0338",
+      "margin": 400,
+      "rect": [
+        -730,
+        -380,
+        71,
+        419
+      ],
+      "point": [
+        -330,
+        20
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0339",
+      "margin": 400,
+      "rect": [
+        -730,
+        -380,
+        71,
+        419
+      ],
+      "point": [
+        -330,
+        18
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0340",
+      "margin": 400,
+      "rect": [
+        -730,
+        -380,
+        71,
+        419
+      ],
+      "point": [
+        -329,
+        18
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0341",
+      "margin": 400,
+      "rect": [
+        -730,
+        -380,
+        71,
+        419
+      ],
+      "point": [
+        -330,
+        19
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0342",
+      "margin": 400,
+      "rect": [
+        -730,
+        -380,
+        71,
+        419
+      ],
+      "point": [
+        -329,
+        20
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0343",
+      "margin": 400,
+      "rect": [
+        -730,
+        -380,
+        71,
+        419
+      ],
+      "point": [
+        -330,
+        20
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0344",
+      "margin": 400,
+      "rect": [
+        -730,
+        -380,
+        71,
+        419
+      ],
+      "point": [
+        -330,
+        18
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0345",
+      "margin": 400,
+      "rect": [
+        -730,
+        -371,
+        71,
+        430
+      ],
+      "point": [
+        -331,
+        29
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0346",
+      "margin": 400,
+      "rect": [
+        -730,
+        -371,
+        71,
+        430
+      ],
+      "point": [
+        -330,
+        29
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0347",
+      "margin": 400,
+      "rect": [
+        -730,
+        -371,
+        71,
+        430
+      ],
+      "point": [
+        -330,
+        29
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0348",
+      "margin": 400,
+      "rect": [
+        -730,
+        -371,
+        71,
+        430
+      ],
+      "point": [
+        -329,
+        29
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0349",
+      "margin": 400,
+      "rect": [
+        -730,
+        -371,
+        71,
+        430
+      ],
+      "point": [
+        -330,
+        30
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0350",
+      "margin": 400,
+      "rect": [
+        -730,
+        -371,
+        71,
+        430
+      ],
+      "point": [
+        -329,
+        29
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0351",
+      "margin": 400,
+      "rect": [
+        -730,
+        -371,
+        71,
+        430
+      ],
+      "point": [
+        -330,
+        29
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0352",
+      "margin": 400,
+      "rect": [
+        -730,
+        -371,
+        71,
+        430
+      ],
+      "point": [
+        -330,
+        29
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0353",
+      "margin": 400,
+      "rect": [
+        -730,
+        -362,
+        71,
+        639
+      ],
+      "point": [
+        -331,
+        38
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0354",
+      "margin": 400,
+      "rect": [
+        -730,
+        -362,
+        71,
+        639
+      ],
+      "point": [
+        -330,
+        38
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0355",
+      "margin": 400,
+      "rect": [
+        -730,
+        -362,
+        71,
+        639
+      ],
+      "point": [
+        -330,
+        238
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0356",
+      "margin": 400,
+      "rect": [
+        -730,
+        -362,
+        71,
+        639
+      ],
+      "point": [
+        -329,
+        238
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0357",
+      "margin": 400,
+      "rect": [
+        -730,
+        -362,
+        71,
+        639
+      ],
+      "point": [
+        -330,
+        239
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0358",
+      "margin": 400,
+      "rect": [
+        -730,
+        -362,
+        71,
+        639
+      ],
+      "point": [
+        -329,
+        38
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0359",
+      "margin": 400,
+      "rect": [
+        -730,
+        -362,
+        71,
+        639
+      ],
+      "point": [
+        -330,
+        38
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0360",
+      "margin": 400,
+      "rect": [
+        -730,
+        -362,
+        71,
+        639
+      ],
+      "point": [
+        -330,
+        238
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0361",
+      "margin": 400,
+      "rect": [
+        -725,
+        -380,
+        276,
+        419
+      ],
+      "point": [
+        -326,
+        20
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0362",
+      "margin": 400,
+      "rect": [
+        -725,
+        -380,
+        276,
+        419
+      ],
+      "point": [
+        -325,
+        20
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0363",
+      "margin": 400,
+      "rect": [
+        -725,
+        -380,
+        276,
+        419
+      ],
+      "point": [
+        -125,
+        18
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0364",
+      "margin": 400,
+      "rect": [
+        -725,
+        -380,
+        276,
+        419
+      ],
+      "point": [
+        -124,
+        18
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0365",
+      "margin": 400,
+      "rect": [
+        -725,
+        -380,
+        276,
+        419
+      ],
+      "point": [
+        -325,
+        19
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0366",
+      "margin": 400,
+      "rect": [
+        -725,
+        -380,
+        276,
+        419
+      ],
+      "point": [
+        -124,
+        20
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0367",
+      "margin": 400,
+      "rect": [
+        -725,
+        -380,
+        276,
+        419
+      ],
+      "point": [
+        -125,
+        20
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0368",
+      "margin": 400,
+      "rect": [
+        -725,
+        -380,
+        276,
+        419
+      ],
+      "point": [
+        -325,
+        18
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0369",
+      "margin": 400,
+      "rect": [
+        -725,
+        -371,
+        276,
+        430
+      ],
+      "point": [
+        -326,
+        29
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0370",
+      "margin": 400,
+      "rect": [
+        -725,
+        -371,
+        276,
+        430
+      ],
+      "point": [
+        -325,
+        29
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0371",
+      "margin": 400,
+      "rect": [
+        -725,
+        -371,
+        276,
+        430
+      ],
+      "point": [
+        -125,
+        29
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0372",
+      "margin": 400,
+      "rect": [
+        -725,
+        -371,
+        276,
+        430
+      ],
+      "point": [
+        -124,
+        29
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0373",
+      "margin": 400,
+      "rect": [
+        -725,
+        -371,
+        276,
+        430
+      ],
+      "point": [
+        -325,
+        30
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0374",
+      "margin": 400,
+      "rect": [
+        -725,
+        -371,
+        276,
+        430
+      ],
+      "point": [
+        -124,
+        29
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0375",
+      "margin": 400,
+      "rect": [
+        -725,
+        -371,
+        276,
+        430
+      ],
+      "point": [
+        -125,
+        29
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0376",
+      "margin": 400,
+      "rect": [
+        -725,
+        -371,
+        276,
+        430
+      ],
+      "point": [
+        -325,
+        29
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0377",
+      "margin": 400,
+      "rect": [
+        -725,
+        -362,
+        276,
+        639
+      ],
+      "point": [
+        -326,
+        38
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0378",
+      "margin": 400,
+      "rect": [
+        -725,
+        -362,
+        276,
+        639
+      ],
+      "point": [
+        -325,
+        38
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0379",
+      "margin": 400,
+      "rect": [
+        -725,
+        -362,
+        276,
+        639
+      ],
+      "point": [
+        -125,
+        238
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0380",
+      "margin": 400,
+      "rect": [
+        -725,
+        -362,
+        276,
+        639
+      ],
+      "point": [
+        -124,
+        238
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0381",
+      "margin": 400,
+      "rect": [
+        -725,
+        -362,
+        276,
+        639
+      ],
+      "point": [
+        -325,
+        239
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0382",
+      "margin": 400,
+      "rect": [
+        -725,
+        -362,
+        276,
+        639
+      ],
+      "point": [
+        -124,
+        38
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0383",
+      "margin": 400,
+      "rect": [
+        -725,
+        -362,
+        276,
+        639
+      ],
+      "point": [
+        -125,
+        38
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0384",
+      "margin": 400,
+      "rect": [
+        -725,
+        -362,
+        276,
+        639
+      ],
+      "point": [
+        -325,
+        238
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0385",
+      "margin": 600,
+      "rect": [
+        -740,
+        -380,
+        459,
+        819
+      ],
+      "point": [
+        -141,
+        220
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0386",
+      "margin": 600,
+      "rect": [
+        -740,
+        -380,
+        459,
+        819
+      ],
+      "point": [
+        -140,
+        220
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0387",
+      "margin": 600,
+      "rect": [
+        -740,
+        -380,
+        459,
+        819
+      ],
+      "point": [
+        -142,
+        218
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0388",
+      "margin": 600,
+      "rect": [
+        -740,
+        -380,
+        459,
+        819
+      ],
+      "point": [
+        -141,
+        218
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0389",
+      "margin": 600,
+      "rect": [
+        -740,
+        -380,
+        459,
+        819
+      ],
+      "point": [
+        -140,
+        219
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0390",
+      "margin": 600,
+      "rect": [
+        -740,
+        -380,
+        459,
+        819
+      ],
+      "point": [
+        -141,
+        220
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0391",
+      "margin": 600,
+      "rect": [
+        -740,
+        -380,
+        459,
+        819
+      ],
+      "point": [
+        -142,
+        220
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0392",
+      "margin": 600,
+      "rect": [
+        -740,
+        -380,
+        459,
+        819
+      ],
+      "point": [
+        -140,
+        218
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0393",
+      "margin": 600,
+      "rect": [
+        -740,
+        -371,
+        459,
+        830
+      ],
+      "point": [
+        -141,
+        229
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0394",
+      "margin": 600,
+      "rect": [
+        -740,
+        -371,
+        459,
+        830
+      ],
+      "point": [
+        -140,
+        229
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0395",
+      "margin": 600,
+      "rect": [
+        -740,
+        -371,
+        459,
+        830
+      ],
+      "point": [
+        -142,
+        229
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0396",
+      "margin": 600,
+      "rect": [
+        -740,
+        -371,
+        459,
+        830
+      ],
+      "point": [
+        -141,
+        229
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0397",
+      "margin": 600,
+      "rect": [
+        -740,
+        -371,
+        459,
+        830
+      ],
+      "point": [
+        -140,
+        230
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0398",
+      "margin": 600,
+      "rect": [
+        -740,
+        -371,
+        459,
+        830
+      ],
+      "point": [
+        -141,
+        229
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0399",
+      "margin": 600,
+      "rect": [
+        -740,
+        -371,
+        459,
+        830
+      ],
+      "point": [
+        -142,
+        229
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0400",
+      "margin": 600,
+      "rect": [
+        -740,
+        -371,
+        459,
+        830
+      ],
+      "point": [
+        -140,
+        229
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0401",
+      "margin": 600,
+      "rect": [
+        -740,
+        -362,
+        459,
+        1039
+      ],
+      "point": [
+        -141,
+        238
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0402",
+      "margin": 600,
+      "rect": [
+        -740,
+        -362,
+        459,
+        1039
+      ],
+      "point": [
+        -140,
+        238
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0403",
+      "margin": 600,
+      "rect": [
+        -740,
+        -362,
+        459,
+        1039
+      ],
+      "point": [
+        -142,
+        438
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0404",
+      "margin": 600,
+      "rect": [
+        -740,
+        -362,
+        459,
+        1039
+      ],
+      "point": [
+        -141,
+        438
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0405",
+      "margin": 600,
+      "rect": [
+        -740,
+        -362,
+        459,
+        1039
+      ],
+      "point": [
+        -140,
+        439
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0406",
+      "margin": 600,
+      "rect": [
+        -740,
+        -362,
+        459,
+        1039
+      ],
+      "point": [
+        -141,
+        238
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0407",
+      "margin": 600,
+      "rect": [
+        -740,
+        -362,
+        459,
+        1039
+      ],
+      "point": [
+        -142,
+        238
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0408",
+      "margin": 600,
+      "rect": [
+        -740,
+        -362,
+        459,
+        1039
+      ],
+      "point": [
+        -140,
+        438
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0409",
+      "margin": 600,
+      "rect": [
+        -735,
+        -380,
+        465,
+        819
+      ],
+      "point": [
+        -136,
+        220
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0410",
+      "margin": 600,
+      "rect": [
+        -735,
+        -380,
+        465,
+        819
+      ],
+      "point": [
+        -135,
+        220
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0411",
+      "margin": 600,
+      "rect": [
+        -735,
+        -380,
+        465,
+        819
+      ],
+      "point": [
+        -136,
+        218
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0412",
+      "margin": 600,
+      "rect": [
+        -735,
+        -380,
+        465,
+        819
+      ],
+      "point": [
+        -135,
+        218
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0413",
+      "margin": 600,
+      "rect": [
+        -735,
+        -380,
+        465,
+        819
+      ],
+      "point": [
+        -135,
+        219
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0414",
+      "margin": 600,
+      "rect": [
+        -735,
+        -380,
+        465,
+        819
+      ],
+      "point": [
+        -135,
+        220
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0415",
+      "margin": 600,
+      "rect": [
+        -735,
+        -380,
+        465,
+        819
+      ],
+      "point": [
+        -136,
+        220
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0416",
+      "margin": 600,
+      "rect": [
+        -735,
+        -380,
+        465,
+        819
+      ],
+      "point": [
+        -135,
+        218
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0417",
+      "margin": 600,
+      "rect": [
+        -735,
+        -371,
+        465,
+        830
+      ],
+      "point": [
+        -136,
+        229
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0418",
+      "margin": 600,
+      "rect": [
+        -735,
+        -371,
+        465,
+        830
+      ],
+      "point": [
+        -135,
+        229
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0419",
+      "margin": 600,
+      "rect": [
+        -735,
+        -371,
+        465,
+        830
+      ],
+      "point": [
+        -136,
+        229
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0420",
+      "margin": 600,
+      "rect": [
+        -735,
+        -371,
+        465,
+        830
+      ],
+      "point": [
+        -135,
+        229
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0421",
+      "margin": 600,
+      "rect": [
+        -735,
+        -371,
+        465,
+        830
+      ],
+      "point": [
+        -135,
+        230
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0422",
+      "margin": 600,
+      "rect": [
+        -735,
+        -371,
+        465,
+        830
+      ],
+      "point": [
+        -135,
+        229
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0423",
+      "margin": 600,
+      "rect": [
+        -735,
+        -371,
+        465,
+        830
+      ],
+      "point": [
+        -136,
+        229
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0424",
+      "margin": 600,
+      "rect": [
+        -735,
+        -371,
+        465,
+        830
+      ],
+      "point": [
+        -135,
+        229
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0425",
+      "margin": 600,
+      "rect": [
+        -735,
+        -362,
+        465,
+        1039
+      ],
+      "point": [
+        -136,
+        238
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0426",
+      "margin": 600,
+      "rect": [
+        -735,
+        -362,
+        465,
+        1039
+      ],
+      "point": [
+        -135,
+        238
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0427",
+      "margin": 600,
+      "rect": [
+        -735,
+        -362,
+        465,
+        1039
+      ],
+      "point": [
+        -136,
+        438
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0428",
+      "margin": 600,
+      "rect": [
+        -735,
+        -362,
+        465,
+        1039
+      ],
+      "point": [
+        -135,
+        438
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0429",
+      "margin": 600,
+      "rect": [
+        -735,
+        -362,
+        465,
+        1039
+      ],
+      "point": [
+        -135,
+        439
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0430",
+      "margin": 600,
+      "rect": [
+        -735,
+        -362,
+        465,
+        1039
+      ],
+      "point": [
+        -135,
+        238
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0431",
+      "margin": 600,
+      "rect": [
+        -735,
+        -362,
+        465,
+        1039
+      ],
+      "point": [
+        -136,
+        238
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0432",
+      "margin": 600,
+      "rect": [
+        -735,
+        -362,
+        465,
+        1039
+      ],
+      "point": [
+        -135,
+        438
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0433",
+      "margin": 600,
+      "rect": [
+        -730,
+        -380,
+        471,
+        819
+      ],
+      "point": [
+        -131,
+        220
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0434",
+      "margin": 600,
+      "rect": [
+        -730,
+        -380,
+        471,
+        819
+      ],
+      "point": [
+        -130,
+        220
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0435",
+      "margin": 600,
+      "rect": [
+        -730,
+        -380,
+        471,
+        819
+      ],
+      "point": [
+        -130,
+        218
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0436",
+      "margin": 600,
+      "rect": [
+        -730,
+        -380,
+        471,
+        819
+      ],
+      "point": [
+        -129,
+        218
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0437",
+      "margin": 600,
+      "rect": [
+        -730,
+        -380,
+        471,
+        819
+      ],
+      "point": [
+        -130,
+        219
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0438",
+      "margin": 600,
+      "rect": [
+        -730,
+        -380,
+        471,
+        819
+      ],
+      "point": [
+        -129,
+        220
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0439",
+      "margin": 600,
+      "rect": [
+        -730,
+        -380,
+        471,
+        819
+      ],
+      "point": [
+        -130,
+        220
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0440",
+      "margin": 600,
+      "rect": [
+        -730,
+        -380,
+        471,
+        819
+      ],
+      "point": [
+        -130,
+        218
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0441",
+      "margin": 600,
+      "rect": [
+        -730,
+        -371,
+        471,
+        830
+      ],
+      "point": [
+        -131,
+        229
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0442",
+      "margin": 600,
+      "rect": [
+        -730,
+        -371,
+        471,
+        830
+      ],
+      "point": [
+        -130,
+        229
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0443",
+      "margin": 600,
+      "rect": [
+        -730,
+        -371,
+        471,
+        830
+      ],
+      "point": [
+        -130,
+        229
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0444",
+      "margin": 600,
+      "rect": [
+        -730,
+        -371,
+        471,
+        830
+      ],
+      "point": [
+        -129,
+        229
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0445",
+      "margin": 600,
+      "rect": [
+        -730,
+        -371,
+        471,
+        830
+      ],
+      "point": [
+        -130,
+        230
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0446",
+      "margin": 600,
+      "rect": [
+        -730,
+        -371,
+        471,
+        830
+      ],
+      "point": [
+        -129,
+        229
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0447",
+      "margin": 600,
+      "rect": [
+        -730,
+        -371,
+        471,
+        830
+      ],
+      "point": [
+        -130,
+        229
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0448",
+      "margin": 600,
+      "rect": [
+        -730,
+        -371,
+        471,
+        830
+      ],
+      "point": [
+        -130,
+        229
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0449",
+      "margin": 600,
+      "rect": [
+        -730,
+        -362,
+        471,
+        1039
+      ],
+      "point": [
+        -131,
+        238
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0450",
+      "margin": 600,
+      "rect": [
+        -730,
+        -362,
+        471,
+        1039
+      ],
+      "point": [
+        -130,
+        238
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0451",
+      "margin": 600,
+      "rect": [
+        -730,
+        -362,
+        471,
+        1039
+      ],
+      "point": [
+        -130,
+        438
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0452",
+      "margin": 600,
+      "rect": [
+        -730,
+        -362,
+        471,
+        1039
+      ],
+      "point": [
+        -129,
+        438
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0453",
+      "margin": 600,
+      "rect": [
+        -730,
+        -362,
+        471,
+        1039
+      ],
+      "point": [
+        -130,
+        439
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0454",
+      "margin": 600,
+      "rect": [
+        -730,
+        -362,
+        471,
+        1039
+      ],
+      "point": [
+        -129,
+        238
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0455",
+      "margin": 600,
+      "rect": [
+        -730,
+        -362,
+        471,
+        1039
+      ],
+      "point": [
+        -130,
+        238
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0456",
+      "margin": 600,
+      "rect": [
+        -730,
+        -362,
+        471,
+        1039
+      ],
+      "point": [
+        -130,
+        438
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0457",
+      "margin": 600,
+      "rect": [
+        -725,
+        -380,
+        676,
+        819
+      ],
+      "point": [
+        -126,
+        220
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0458",
+      "margin": 600,
+      "rect": [
+        -725,
+        -380,
+        676,
+        819
+      ],
+      "point": [
+        -125,
+        220
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0459",
+      "margin": 600,
+      "rect": [
+        -725,
+        -380,
+        676,
+        819
+      ],
+      "point": [
+        75,
+        218
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0460",
+      "margin": 600,
+      "rect": [
+        -725,
+        -380,
+        676,
+        819
+      ],
+      "point": [
+        76,
+        218
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0461",
+      "margin": 600,
+      "rect": [
+        -725,
+        -380,
+        676,
+        819
+      ],
+      "point": [
+        -125,
+        219
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0462",
+      "margin": 600,
+      "rect": [
+        -725,
+        -380,
+        676,
+        819
+      ],
+      "point": [
+        76,
+        220
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0463",
+      "margin": 600,
+      "rect": [
+        -725,
+        -380,
+        676,
+        819
+      ],
+      "point": [
+        75,
+        220
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0464",
+      "margin": 600,
+      "rect": [
+        -725,
+        -380,
+        676,
+        819
+      ],
+      "point": [
+        -125,
+        218
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0465",
+      "margin": 600,
+      "rect": [
+        -725,
+        -371,
+        676,
+        830
+      ],
+      "point": [
+        -126,
+        229
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0466",
+      "margin": 600,
+      "rect": [
+        -725,
+        -371,
+        676,
+        830
+      ],
+      "point": [
+        -125,
+        229
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0467",
+      "margin": 600,
+      "rect": [
+        -725,
+        -371,
+        676,
+        830
+      ],
+      "point": [
+        75,
+        229
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0468",
+      "margin": 600,
+      "rect": [
+        -725,
+        -371,
+        676,
+        830
+      ],
+      "point": [
+        76,
+        229
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0469",
+      "margin": 600,
+      "rect": [
+        -725,
+        -371,
+        676,
+        830
+      ],
+      "point": [
+        -125,
+        230
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0470",
+      "margin": 600,
+      "rect": [
+        -725,
+        -371,
+        676,
+        830
+      ],
+      "point": [
+        76,
+        229
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0471",
+      "margin": 600,
+      "rect": [
+        -725,
+        -371,
+        676,
+        830
+      ],
+      "point": [
+        75,
+        229
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0472",
+      "margin": 600,
+      "rect": [
+        -725,
+        -371,
+        676,
+        830
+      ],
+      "point": [
+        -125,
+        229
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0473",
+      "margin": 600,
+      "rect": [
+        -725,
+        -362,
+        676,
+        1039
+      ],
+      "point": [
+        -126,
+        238
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0474",
+      "margin": 600,
+      "rect": [
+        -725,
+        -362,
+        676,
+        1039
+      ],
+      "point": [
+        -125,
+        238
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0475",
+      "margin": 600,
+      "rect": [
+        -725,
+        -362,
+        676,
+        1039
+      ],
+      "point": [
+        75,
+        438
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0476",
+      "margin": 600,
+      "rect": [
+        -725,
+        -362,
+        676,
+        1039
+      ],
+      "point": [
+        76,
+        438
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0477",
+      "margin": 600,
+      "rect": [
+        -725,
+        -362,
+        676,
+        1039
+      ],
+      "point": [
+        -125,
+        439
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0478",
+      "margin": 600,
+      "rect": [
+        -725,
+        -362,
+        676,
+        1039
+      ],
+      "point": [
+        76,
+        238
+      ],
+      "expected": false,
+      "win32_api_observed": false,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0479",
+      "margin": 600,
+      "rect": [
+        -725,
+        -362,
+        676,
+        1039
+      ],
+      "point": [
+        75,
+        238
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    },
+    {
+      "id": "RECT-0480",
+      "margin": 600,
+      "rect": [
+        -725,
+        -362,
+        676,
+        1039
+      ],
+      "point": [
+        -125,
+        438
+      ],
+      "expected": true,
+      "win32_api_observed": true,
+      "source": "SYNTHETIC_API_NOT_GAMEPLAY"
+    }
+  ]
+}

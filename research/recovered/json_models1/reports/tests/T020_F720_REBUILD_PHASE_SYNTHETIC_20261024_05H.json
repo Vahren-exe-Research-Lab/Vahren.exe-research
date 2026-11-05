@@ -1,0 +1,29 @@
+{
+  "research_id": "E-AUDIT-20261024-05H-T020-F720-REBUILD-PHASE-GATE-01",
+  "owner": "E", "task": "T020", "status": ["STATIC-CROSSWALK", "SYNTHETIC", "NOT READY"],
+  "source_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "source_files": [{"path":"rea_lab/decomp_task/REA_20261024_0541_P0_LIST_REBUILD_F720_STATIC.md","sha256":"9D3E9BC4387B36DD9F8AE3AD3DE3C4EC545C94DBA18177A29BA10814B9DBB4BA"},{"path":"rea_lab/decomp_task/REA_20261024_0541_P0_LIST_REBUILD_F720_EVIDENCE.json","sha256":"770DAF331D49EE2697B9904F10A2050237B41230E0CA56B6B21E12FB8FE0CDA4"},{"path":"rea_lab/decomp_task/REA_20261024_05H_P0_LIST_RESET_PROBE.py","sha256":"4D175B5A1A6C978BF23776B24CF8B8034937593240C2A96B3B35CC62D2BC43A1"},{"path":"rea_lab/targets/hakushin067_Vahren.exe","sha256":"E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187"}],
+  "expected_e8": {"0x48FBD1":"0x498E60","0x48FBD9":"0x48F720","0x48FBF7":"0x583C70","0x498E7D":"0x498F90","0x498FB4":"0x476830","0x4991B5":"0x476830"},
+  "cases": [
+    {"id":"RB-01","path":"rebuild","phase":"reset_only","count":null,"selector":"unknown","claim":"none","expected":"RESET_NOT_LOOKUP"},
+    {"id":"RB-02","path":"rebuild","phase":"rebuild_called","count":null,"selector":"unknown","claim":"none","expected":"REBUILD_COUNT_UNOBSERVED"},
+    {"id":"RB-03","path":"rebuild","phase":"rebuild_called","count":0,"selector":"unknown","claim":"none","expected":"REBUILD_EMPTY_POSSIBLE"},
+    {"id":"RB-04","path":"rebuild","phase":"rebuild_called","count":3,"selector":"unknown","claim":"none","expected":"REBUILD_NONEMPTY_NOT_SELECTED"},
+    {"id":"RB-05","path":"rebuild","phase":"lookup","count":0,"selector":"null","claim":"none","expected":"EMPTY_LOOKUP_CONDITIONAL_NULL"},
+    {"id":"RB-06","path":"rebuild","phase":"lookup","count":1,"selector":"unknown","claim":"none","expected":"NONEMPTY_NOT_NONNULL"},
+    {"id":"RB-07","path":"rebuild","phase":"lookup","count":1,"selector":"null","claim":"none","expected":"FILTERED_NULL_POSSIBLE"},
+    {"id":"RB-08","path":"rebuild","phase":"lookup","count":1,"selector":"non_null","claim":"none","expected":"SYNTHETIC_NONNULL_NOT_G2"},
+    {"id":"RB-09","path":"rebuild","phase":"lookup","count":0,"selector":"non_null","claim":"none","expected":"CONTRADICTORY_SIMULTANEOUS_RECEIPT"},
+    {"id":"RB-10","path":"direct","phase":"dispatch","count":null,"selector":"unknown","claim":"none","expected":"DIRECT_GATE_NOT_GOLDEN"},
+    {"id":"RB-11","path":"direct","phase":"dispatch","count":0,"selector":"unknown","claim":"none","expected":"DIRECT_GATE_NOT_GOLDEN"},
+    {"id":"RB-12","path":"direct","phase":"dispatch","count":1,"selector":"unknown","claim":"none","expected":"DIRECT_GATE_NOT_GOLDEN"},
+    {"id":"RB-13","path":"rebuild","phase":"lookup","count":1,"selector":"unknown","claim":"g2","expected":"REJECT_G2_FROM_INTERNAL"},
+    {"id":"RB-14","path":"rebuild","phase":"lookup","count":0,"selector":"null","claim":"crash","expected":"REJECT_RUNTIME_CRASH_PROOF"},
+    {"id":"RB-15","path":"rebuild","phase":"rebuild_called","count":3,"selector":"unknown","claim":"ready","expected":"REJECT_READY_FROM_NOT_READY"},
+    {"id":"RB-16","path":"direct","phase":"dispatch","count":null,"selector":"unknown","claim":"same_owner","expected":"REJECT_LIST_IDENTITY"},
+    {"id":"RB-17","path":"rebuild","phase":"lookup","count":1,"selector":"non_null","claim":"strict","expected":"REJECT_STRICT_FROM_STATIC"},
+    {"id":"RB-18","path":"rebuild","phase":"rebuild_called","count":3,"selector":"unknown","claim":"nonnull_guarantee","expected":"REJECT_NONNULL_GUARANTEE"},
+    {"id":"RB-19","path":"rebuild","phase":"lookup","count":1,"selector":"unknown","claim":"executed","expected":"REJECT_DYNAMIC_WITHOUT_TRACE"},
+    {"id":"RB-20","path":"direct","phase":"dispatch","count":null,"selector":"unknown","claim":"timer_g0","expected":"REJECT_TIMER_AS_LEGAL_G0"}
+  ]
+}

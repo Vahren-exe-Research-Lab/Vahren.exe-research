@@ -1,0 +1,462 @@
+{
+  "counts": {
+    "font": 110,
+    "fontc": 2,
+    "select": 1088,
+    "choice": 337,
+    "erase": 42505,
+    "dialog": 2617,
+    "dialogF": 0,
+    "setbcg": 0,
+    "bg": 1022,
+    "title": 8,
+    "title2": 77,
+    "face2": 0,
+    "showImage": 0,
+    "showFace": 0,
+    "showPict": 0,
+    "hideImage": 12,
+    "showChara": 0,
+    "hideChara": 0,
+    "reverseChara": 0,
+    "showPicture": 0,
+    "hidePicture": 0,
+    "doskill": 1,
+    "reloadMenu": 528,
+    "showPolitics": 0,
+    "showCamp": 0,
+    "resetZone": 0,
+    "doGameEnding": 0,
+    "setGameClear": 15,
+    "exit": 1,
+    "ppl1": 0,
+    "showDungeon": 0,
+    "cutin": 0,
+    "vc": 0,
+    "choiceTitle": 317
+  },
+  "top_files": {
+    "font": [
+      [
+        "a_default\\script\\2001_イベント_ボス\\EB_5151_古代アステカ王国.dat",
+        92
+      ],
+      [
+        "a_default\\script\\2023_イベント_リュージ騎士団\\po23_Eliz.dat",
+        14
+      ],
+      [
+        "a_default\\script\\100_イベント汎用\\event_battle.dat",
+        2
+      ],
+      [
+        "a_default\\script\\2000_勢力ストーリー\\po22_battle.dat",
+        2
+      ]
+    ],
+    "fontc": [
+      [
+        "a_default\\script\\2023_イベント_リュージ騎士団\\event_23_RPG.dat",
+        2
+      ]
+    ],
+    "select": [
+      [
+        "a_default\\script\\102_ランダムイベント\\randomev21-30.dat",
+        76
+      ],
+      [
+        "a_default\\script\\102_ランダムイベント\\randomev31-40.dat",
+        48
+      ],
+      [
+        "a_default\\script\\102_ランダムイベント\\randomev0-10.dat",
+        44
+      ],
+      [
+        "a_default\\script\\102_ランダムイベント\\randomev51-60.dat",
+        43
+      ],
+      [
+        "a_default\\script\\102_ランダムイベント\\randomev41-50.dat",
+        40
+      ],
+      [
+        "a_default\\script\\44_内政_迫真の世紀\\po26_kaiso.dat",
+        34
+      ],
+      [
+        "a_default\\script\\2000_勢力ストーリー\\po25_event.dat",
+        27
+      ],
+      [
+        "a_default\\script\\44_内政_迫真の世紀\\po23_chap3_True.dat",
+        24
+      ],
+      [
+        "a_default\\script\\44_内政_迫真の世紀\\po25_kaiso.dat",
+        24
+      ],
+      [
+        "a_default\\script\\102_ランダムイベント\\randomev71-80.dat",
+        23
+      ]
+    ],
+    "choice": [
+      [
+        "a_default\\script\\2023_イベント_リュージ騎士団\\event_23_RPG.dat",
+        81
+      ],
+      [
+        "a_default\\script\\50_その他新システム\\qa_004.dat",
+        13
+      ],
+      [
+        "a_default\\script\\2023_イベント_リュージ騎士団\\po23_event_5.dat",
+        12
+      ],
+      [
+        "a_default\\script\\102_ランダムイベント\\randomev0-10.dat",
+        11
+      ],
+      [
+        "a_default\\script\\102_ランダムイベント\\randomev31-40.dat",
+        11
+      ],
+      [
+        "a_default\\script\\43_内政_教育\\lecture.dat",
+        11
+      ],
+      [
+        "a_default\\script\\102_ランダムイベント\\randomev21-30.dat",
+        10
+      ],
+      [
+        "a_default\\script\\102_ランダムイベント\\randomev41-50.dat",
+        10
+      ],
+      [
+        "a_default\\script\\102_ランダムイベント\\randomev51-60.dat",
+        10
+      ],
+      [
+        "a_default\\script\\50_その他新システム\\qa_003.dat",
+        9
+      ]
+    ],
+    "erase": [
+      [
+        "a_default\\script\\2023_イベント_リュージ騎士団\\event_23_RPG.dat",
+        3714
+      ],
+      [
+        "a_default\\script\\2000_勢力ストーリー\\po25_event.dat",
+        3362
+      ],
+      [
+        "a_default\\script\\44_内政_迫真の世紀\\po25_kaiso.dat",
+        3326
+      ],
+      [
+        "a_default\\script\\2000_勢力ストーリー\\po5_event.dat",
+        1492
+      ],
+      [
+        "a_default\\script\\44_内政_迫真の世紀\\po22_kaiso.dat",
+        1058
+      ],
+      [
+        "a_default\\script\\2000_勢力ストーリー\\po22_event.dat",
+        1053
+      ],
+      [
+        "a_default\\script\\2000_勢力ストーリー\\po14_event.dat",
+        910
+      ],
+      [
+        "a_default\\script\\2023_イベント_リュージ騎士団\\po23_event_10_B.dat",
+        886
+      ],
+      [
+        "a_default\\script\\2000_勢力ストーリー\\po2_event.dat",
+        675
+      ],
+      [
+        "a_default\\script\\2000_勢力ストーリー\\po33_event.dat",
+        664
+      ]
+    ],
+    "dialog": [
+      [
+        "a_default\\script\\50_その他新システム\\siki.dat",
+        316
+      ],
+      [
+        "a_default\\script\\102_ランダムイベント\\randomev0-10.dat",
+        168
+      ],
+      [
+        "a_default\\script\\102_ランダムイベント\\randomev51-60.dat",
+        118
+      ],
+      [
+        "a_default\\script\\102_ランダムイベント\\randomev31-40.dat",
+        104
+      ],
+      [
+        "a_default\\script\\102_ランダムイベント\\randomev21-30.dat",
+        94
+      ],
+      [
+        "a_default\\script\\102_ランダムイベント\\randomev41-50.dat",
+        89
+      ],
+      [
+        "a_default\\script\\40_内政\\politic_youhei_inmu.dat",
+        82
+      ],
+      [
+        "a_default\\script\\40_内政\\CC_bidai_and_sake_robo.dat",
+        74
+      ],
+      [
+        "a_default\\script\\102_ランダムイベント\\randomev61-70.dat",
+        71
+      ],
+      [
+        "a_default\\script\\40_内政\\CC_skill.dat",
+        63
+      ]
+    ],
+    "bg": [
+      [
+        "a_default\\script\\2000_勢力ストーリー\\po25_event.dat",
+        85
+      ],
+      [
+        "a_default\\script\\44_内政_迫真の世紀\\po25_kaiso.dat",
+        85
+      ],
+      [
+        "a_default\\script\\2000_勢力ストーリー\\po5_event.dat",
+        65
+      ],
+      [
+        "a_default\\script\\44_内政_迫真の世紀\\po26_kaiso.dat",
+        45
+      ],
+      [
+        "a_default\\script\\102_ランダムイベント\\randomev_analasassin.dat",
+        44
+      ],
+      [
+        "a_default\\script\\44_内政_迫真の世紀\\po22_kaiso.dat",
+        38
+      ],
+      [
+        "a_default\\script\\2000_勢力ストーリー\\po22_event.dat",
+        36
+      ],
+      [
+        "a_default\\script\\2023_イベント_リュージ騎士団\\po23_event_19_ED_C.dat",
+        35
+      ],
+      [
+        "a_default\\script\\2023_イベント_リュージ騎士団\\po23_event_10_B.dat",
+        34
+      ],
+      [
+        "a_default\\script\\44_内政_迫真の世紀\\po23_chap4.dat",
+        33
+      ]
+    ],
+    "title": [
+      [
+        "a_default\\script\\50_その他新システム\\qa_001.dat",
+        3
+      ],
+      [
+        "a_default\\script\\2023_イベント_リュージ騎士団\\po23_event_10_B.dat",
+        2
+      ],
+      [
+        "a_default\\script\\1000_チュートリアル\\tuto_event1.dat",
+        1
+      ],
+      [
+        "a_default\\script\\2000_勢力ストーリー\\po18_event.dat",
+        1
+      ],
+      [
+        "a_default\\script\\2000_勢力ストーリー\\po3_event.dat",
+        1
+      ]
+    ],
+    "title2": [
+      [
+        "a_default\\script\\2023_イベント_リュージ騎士団\\event_23_RPG.dat",
+        51
+      ],
+      [
+        "a_default\\script\\2023_イベント_リュージ騎士団\\po23_event_20_Chapter_Change.dat",
+        16
+      ],
+      [
+        "a_default\\script\\2000_勢力ストーリー\\po1_event.dat",
+        6
+      ],
+      [
+        "a_default\\script\\2000_勢力ストーリー\\po31_event.dat",
+        4
+      ]
+    ],
+    "hideImage": [
+      [
+        "a_default\\script\\2000_勢力ストーリー\\po22_event.dat",
+        6
+      ],
+      [
+        "a_default\\script\\44_内政_迫真の世紀\\po22_kaiso.dat",
+        6
+      ]
+    ],
+    "doskill": [
+      [
+        "a_default\\script\\100_イベント汎用\\event_01_共通イベント２.dat",
+        1
+      ]
+    ],
+    "reloadMenu": [
+      [
+        "a_default\\script\\44_内政_迫真の世紀\\politic_kaisotsuika.dat",
+        271
+      ],
+      [
+        "a_default\\script\\40_内政\\graphic_change.dat",
+        31
+      ],
+      [
+        "a_default\\script\\41_内政_アイテム\\ev_item_use_000_status1.dat",
+        20
+      ],
+      [
+        "a_default\\script\\41_内政_アイテム\\ev_item_use_001_resilience1.dat",
+        19
+      ],
+      [
+        "a_default\\script\\40_内政\\CC_bidai_and_sake_robo.dat",
+        16
+      ],
+      [
+        "a_default\\script\\40_内政\\politic_youhei_inmu.dat",
+        16
+      ],
+      [
+        "a_default\\script\\40_内政\\CC_skill.dat",
+        15
+      ],
+      [
+        "a_default\\script\\41_内政_アイテム\\ev_item_use_002_skill2.dat",
+        13
+      ],
+      [
+        "a_default\\script\\40_内政\\CC_unit_change.dat",
+        10
+      ],
+      [
+        "a_default\\script\\40_内政\\politic_youhei_named.dat",
+        10
+      ]
+    ],
+    "setGameClear": [
+      [
+        "a_default\\script\\event_world.dat",
+        2
+      ],
+      [
+        "a_default\\script\\3000_淫ドリームマッチ\\ev_dream.dat",
+        2
+      ],
+      [
+        "a_default\\script\\5000_ランダムシナリオ\\ev_rnd.dat",
+        2
+      ],
+      [
+        "a_default\\script\\7000_その他シナリオ\\free_ev_world.dat",
+        2
+      ],
+      [
+        "a_default\\script\\7000_その他シナリオ\\踏ん切り付けるための避難所.txt",
+        2
+      ],
+      [
+        "a_default\\script\\2000_勢力ストーリー\\po25_event.dat",
+        1
+      ],
+      [
+        "a_default\\script\\2023_イベント_リュージ騎士団\\po23_event_12_ED_A.dat",
+        1
+      ],
+      [
+        "a_default\\script\\2023_イベント_リュージ騎士団\\po23_event_12_ED_B_B.dat",
+        1
+      ],
+      [
+        "a_default\\script\\2023_イベント_リュージ騎士団\\po23_event_12_ED_B_S.dat",
+        1
+      ],
+      [
+        "a_default\\script\\2023_イベント_リュージ騎士団\\po23_event_19_ED_C.dat",
+        1
+      ]
+    ],
+    "exit": [
+      [
+        "a_default\\script\\100_イベント汎用\\event_end.dat",
+        1
+      ]
+    ],
+    "choiceTitle": [
+      [
+        "a_default\\script\\2023_イベント_リュージ騎士団\\event_23_RPG.dat",
+        81
+      ],
+      [
+        "a_default\\script\\50_その他新システム\\qa_004.dat",
+        13
+      ],
+      [
+        "a_default\\script\\2023_イベント_リュージ騎士団\\po23_event_5.dat",
+        12
+      ],
+      [
+        "a_default\\script\\43_内政_教育\\lecture.dat",
+        11
+      ],
+      [
+        "a_default\\script\\42_内政_行商人システム\\ev_M_famima.dat",
+        10
+      ],
+      [
+        "a_default\\script\\50_その他新システム\\qa_003.dat",
+        9
+      ],
+      [
+        "a_default\\script\\102_ランダムイベント\\randomev71-80.dat",
+        7
+      ],
+      [
+        "a_default\\script\\42_内政_行商人システム\\ev_M_TSUYOSHI.dat",
+        7
+      ],
+      [
+        "a_default\\script\\42_内政_行商人システム\\ev_M_znm2.dat",
+        7
+      ],
+      [
+        "a_default\\script\\101_キャラクリ\\chara_create_event.dat",
+        6
+      ]
+    ]
+  }
+}

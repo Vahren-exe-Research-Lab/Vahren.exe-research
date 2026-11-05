@@ -7,6 +7,21 @@
 <a id="field-1d0"></a>
 ## Unit + 0x1D0
 
+- [research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md 行 32](../../research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md?plain=1#L32-L32) — - `0x5284A0`では入力Unitが非NULLで `Unit+0x8C==0`、`Unit+0x1F8!=0`、`Unit+0x1867C==0`、`Unit+0x1D0!=0`、`Unit+0x1867E==0`、`Unit+0x1FA==0` の条件で `0x5284E2→0x568710` の後 `0x52
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md 行 10](../../research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md?plain=1#L10-L10) — - 通過したUnitについて 0x5150BB..C7 が UnitData=[Unit+0x1C8] の +0x1C4 DWORDをobj+0x88へ加算。さらに Unit+0x1D0 !=0 のときだけ0x5150A9..B5で同じ値をobj+0x8Cへ加算。意味名/符号/overflow/合法NULLはVERIF
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch4/data/B_T012_T024_VOICE_EXPIRY_ROUTING_OFFLINE_20261022_1210.md 行 15](../../research/recovered/b_batch4/data/B_T012_T024_VOICE_EXPIRY_ROUTING_OFFLINE_20261022_1210.md?plain=1#L15-L15) — 3. `FUN_0057B380` の外側の入場条件は単純な無条件実行ではない。少なくとも `Unit+0x1867E == 0`、32-bit符号付き `Unit+0xC0 >=0`、`Unit+0xD0 >=0` が必要で、さらに `+0x8C!=0`、`+0x1F8==0`、`+0x1F9!=0`、`+0x186
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+- [research/recovered/b_batch6/data/T011_T012_T013_T024_T028_UNSYNCED_RECOVERY_REGISTER_20261020.md 行 43](../../research/recovered/b_batch6/data/T011_T012_T013_T024_T028_UNSYNCED_RECOVERY_REGISTER_20261020.md?plain=1#L43-L43) — \| `B-OFFLINE-20261020-0908-03` \| T013 \| 支援能力、混乱、`unit_element_heal`、`Unit+0x1D0`の16合成条件 \| 候補収集と実際の支援技能成功を区別 \|
+  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
+
+- [research/recovered/b_batch8/data/T013_CASE8_LEXICAL_TREE_COMPARATOR_NATIVE_V9_20261024_0217.md 行 11](../../research/recovered/b_batch8/data/T013_CASE8_LEXICAL_TREE_COMPARATOR_NATIVE_V9_20261024_0217.md?plain=1#L11-L11) — [EXISTING-CROSSJOIN] 01:10の0x49E8B0 alive filter +1867C、tree successor、global vector 0xB050E0と00:15のUnit+0x1D0 visited-Troop dedupは既知として再計数0。今回の差分はtree比較の実byte・
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 - [research/recovered/b_batch8/data/T013_CASE8_LIVE_FILTER_TREE_ORDER_VECTOR_ABI_20261024_0110.md 行 11](../../research/recovered/b_batch8/data/T013_CASE8_LIVE_FILTER_TREE_ORDER_VECTOR_ABI_20261024_0110.md?plain=1#L11-L11) — [CROSSJOIN] 先行00:15のvisited-setはUnit+0x1D0 pointer候補をkeyとし一度のみ0x569530へmode値を渡す。今回のcase8ではalive filtered tree range順がvisited-set適用順の入力。treeキー/recordの式・複数Troopの実
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
@@ -333,29 +348,5 @@
 
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 312](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L312-L312) — [CONFIRMED-TARGET / four maps] 同じロード時初期化区間0x45EB74..0x45EC0DはUnit +0x2FC/+0x300、Spot +0x2EC/+0x2F0、Power +0x2DC/+0x2E0の各mapも解放・sentinel reset・count=0化する。これは通常sa
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
-
-<a id="field-430"></a>
-## Unit + 0x430
-
-- [research/recovered/b_reports/T024_UNIT_ACTION_PRIORITY_CHAIN_NATIVE_20261025_17H.md 行 13](../../research/recovered/b_reports/T024_UNIT_ACTION_PRIORITY_CHAIN_NATIVE_20261025_17H.md?plain=1#L13-L13) — - 0x527716/722 は Unit+0x430==0x80000008（sentinel）かつUnit+0x45D==0でなければAL0。Unit+0x18Cの+0x50/51及び+0x26/27の各ペアに少なくとも1つ非0が必要。
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
-
-<a id="field-44c"></a>
-## Unit + 0x44C
-
-- [research/recovered/b_reports/T024_UNIT_ACTION_PRIORITY_CHAIN_NATIVE_20261025_17H.md 行 14](../../research/recovered/b_reports/T024_UNIT_ACTION_PRIORITY_CHAIN_NATIVE_20261025_17H.md?plain=1#L14-L14) — - 条件成立かつ Unit+0x44C==0x80000008 なら0x52775B..0x52778Bで座標等を+0x44C/+450/+454/+458に保存し+0x464=0、0x527792 AL=1。そうでなければ0x5277B7→0x520800後+0x464=0、0x5277C3 AL=1。
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
-
-<a id="field-45d"></a>
-## Unit + 0x45D
-
-- [research/recovered/b_batch10/data/T024_TROOP_CLEANUP_GATES_INPUT_NATIVE_20261025_20H.md 行 1](../../research/recovered/b_batch10/data/T024_TROOP_CLEANUP_GATES_INPUT_NATIVE_20261025_20H.md?plain=1#L1-L1) — # T024｜Troop候補整理と入力座標経路からUnit+0x45D解除への入口条件（2026-10-25 20時台）
-  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
-
-- [research/recovered/b_batch10/data/T024_UNIT45D_EMPTY_CONTAINER_RESET_NATIVE_20261025_19H.md 行 1](../../research/recovered/b_batch10/data/T024_UNIT45D_EMPTY_CONTAINER_RESET_NATIVE_20261025_19H.md?plain=1#L1-L1) — # T024｜Unit+0x45D解除の二つの空コンテナ経路（2026-10-25 19時台）
-  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
-
-- [research/recovered/b_batch3/T024_TEMP_SELECTION_UI_ADAPTER_NATIVE_20261025_22H.md 行 23](../../research/recovered/b_batch3/T024_TEMP_SELECTION_UI_ADAPTER_NATIVE_20261025_22H.md?plain=1#L23-L23) — Next P0: discover producer for Troop+0x1D/+0x1C and Unit+0x45D=1, 0x528700 owner+358 alias/lifetime, 0x56BA80 virtual-slot effects, and source-level AI target s
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

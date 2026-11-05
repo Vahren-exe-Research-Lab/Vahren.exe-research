@@ -1,0 +1,12 @@
+{
+"schema": "E-T020-request-activation-phase-v1",
+"id": "E-AUDIT-20261023-15H-T018-T020-REQUEST-ACTIVATION-SPLIT-01",
+"source_index": "HAKUSHIN067_CURRENT_CANONICAL_V3_20261022",
+"source_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+"evidence_class": "STATIC_ONLY", "execution": "DESIGNED_NOT_RUN",
+"direct_e8_edges": [["0x004921CD","0x004922A0","request_candidate"],["0x00522297","0x004922A0","request_candidate"],["0x005222AA","0x004922A0","request_candidate"],["0x004B99CD","0x0048D6A0","init_candidate"],["0x0048E9F0","0x004338D0","vm_candidate"],["0x00433E58","0x00492890","activation_candidate"]],
+"observed_static_writes": [{"function":"0x004922A0","offset":"+0x1EED43","semantic":"request_flag_candidate"},{"function":"0x00492890","offset":"+0x1EEC3C","value":2,"semantic":"mode_candidate"},{"function":"0x00492890","offset":"+0x1EEC44","value":1,"semantic":"active_candidate"}],
+"negative_cases": [{"case":"RA-01","invalid_claim":"request_call_alone_proves_G0_G2","expected":"VERIFY_NO_RUNTIME_PROOF"},{"case":"RA-02","invalid_claim":"ScriptBattle_RTTI_excludes_normal_UI","expected":"VERIFY_UI_ORIGIN"},{"case":"RA-03","invalid_claim":"active_write_means_all_callbacks_completed","expected":"VERIFY_CALLBACK_TIMING"},{"case":"RA-04","invalid_claim":"direct_static_chain_proves_same_run_reached","expected":"VERIFY_DYNAMIC_PROVENANCE"}],
+"g0_observed": 0, "g1_observed": 0, "g2_observed": 0,
+"actual_golden_pass": 0, "strict_match": 0, "new_ready_integrated": 0
+}

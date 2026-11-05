@@ -1,0 +1,78 @@
+{
+  "vahren701": {
+    "archive": "Vahren701.zip",
+    "selected_extension_counts": {
+      ".ini": 1,
+      ".dat": 254,
+      ".txt": 7,
+      ".map": 191,
+      ".bat": 1
+    },
+    "top2_entry_counts_all_files": {
+      "a_default/chip3": 468,
+      "a_default/script": 255,
+      "a_default/face": 231,
+      "a_default/icon": 198,
+      "a_default/stage": 191,
+      "a_default/picture": 162,
+      "a_default/image": 78,
+      "a_default/bgm": 76,
+      "a_default/sound": 74,
+      "a_default/flag": 67,
+      "a_system/load.png": 1,
+      "a_system/mouse.cur": 1,
+      "a_system/reset.mid": 1,
+      "Vahren.exe": 1,
+      "Vahren@chip3.ÉVâAâCâRâôö┬.exe": 1,
+      "VahrenâtâïâXâNâèü[âô.bat": 1,
+      "Ägùpæfì▐é╠Æ±ïƒî│âTâCâgùl.txt": 1,
+      "Éαû╛Åæ.txt": 1
+    }
+  },
+  "hakushin067_core": {
+    "archive": "新約迫真戦記―ほのぼの神話ver0.67 豪華版(画像・音声削除版).zip",
+    "selected_extension_counts": {
+      ".dat": 595,
+      ".ini": 7,
+      ".db": 4,
+      ".txt": 19,
+      ".map": 151,
+      ".bat": 2
+    },
+    "top2_entry_counts_all_files": {
+      "a_default/face": 2458,
+      "a_default/chip": 1323,
+      "a_default/chip2": 1147,
+      "a_default/script": 599,
+      "a_default/image": 519,
+      "a_default/icon": 346,
+      "a_default/voice": 234,
+      "a_default/stage": 152,
+      "a_default/flag": 132,
+      "a_default/picture": 91,
+      "a_default/bgm": 3,
+      "a_default/Ai戦闘制御_軍楽隊入り版.dat": 1,
+      "a_default/route.png": 1,
+      "a_default/sound": 1,
+      "a_system/debug_paper.txt": 1,
+      "a_system/load.png": 1,
+      "a_system/mouse.cur": 1,
+      "a_system/reset.mid": 1,
+      "d3dx9_35.dll": 1,
+      "readme_1__初心者向け説明.txt": 1,
+      "readme_2＿クレジット等.txt": 1,
+      "readme_3＿更新内容.txt": 1,
+      "readme_4＿実績一覧.txt": 1,
+      "readme_5＿うるさいと感じる人がいそうなボイス.txt": 1,
+      "readme_6＿調整方針.txt": 1,
+      "RTS情報/RTSシナリオ.txt": 1,
+      "Vahren.exe": 1,
+      "カスタム/01.使い方.txt": 1,
+      "カスタム/ddebug_paper.txt": 1,
+      "カスタム/迫真戦記_1200,900で起動（非推奨）.bat": 1,
+      "フルスクリーンで起動.bat": 1,
+      "新約迫真戦記ーほのぼの神話ー.exe": 1,
+      "相性.png": 1
+    }
+  }
+}

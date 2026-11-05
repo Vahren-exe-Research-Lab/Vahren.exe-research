@@ -7,6 +7,12 @@
 <a id="field-e4"></a>
 ## context + 0xE4
 
+- [research/recovered/b_batch9/data/T013_COORD_TRANSFORM_GATE_OUTPUT_ABI_NATIVE_20261101_00H.md 行 14](../../research/recovered/b_batch9/data/T013_COORD_TRANSFORM_GATE_OUTPUT_ABI_NATIVE_20261101_00H.md?plain=1#L14-L14) — [KB_CANDIDATE] 本ID B/T013、VA 0x4C1690/0x4C16A4/0x4C16B5/0x4C1700/0x4C1735/0x4C1755、CALL 0x4C1880→0x4C1690 / 0x4C1714・0x4C1725→0x5D1B80、offset context+0xE4/+0xDC
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/b_batch9/data/T013_COORD_TRANSFORM_GATE_OUTPUT_ABI_NATIVE_20261101_00H.md 行 16](../../research/recovered/b_batch9/data/T013_COORD_TRANSFORM_GATE_OUTPUT_ABI_NATIVE_20261101_00H.md?plain=1#L16-L16) — [GOLDEN REQUIRED] 無改変原作と20倍化前DAT、同一SAVE/MAP/Unit/input/RNG/tickでglobal0x65BD9Eの0/1・context+0xE4の0/1、identity/nonidentity D3DX行列、負座標・rounding境界、margin100/200/400
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 - [research/recovered/e_reports/T020_E_T013_COORD_GATE_RECT_ACCEPTANCE_20261101_00H.md 行 7](../../research/recovered/e_reports/T020_E_T013_COORD_GATE_RECT_ACCEPTANCE_20261101_00H.md?plain=1#L7-L7) — [NEW E T020 FIXTURE] 2 global[0x65BD9E] states × 2 context+0xE4 states × 4 native caller margin values(100,200,400,600) × 10 synthetic signed points = 160 uniqu
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
 

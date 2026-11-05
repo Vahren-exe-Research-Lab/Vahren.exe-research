@@ -1,0 +1,48 @@
+{
+  "count": {
+    "msg": 41763,
+    "chat": 12769,
+    "talk": 9
+  },
+  "same_line_argc": {
+    "msg": {
+      "1": 7212,
+      "2": 34340,
+      "0": 165,
+      "3": 15,
+      "5": 10,
+      "4": 1
+    },
+    "chat": {
+      "3": 12618,
+      "2": 114,
+      "5": 10
+    },
+    "talk": {
+      "2": 9
+    }
+  },
+  "samples": {
+    "msg": [
+      "a_default\\script\\event_world.dat: msg(TDNはエリザベートだった)",
+      "a_default\\script\\event_world.dat: msg(神苑探訪に戻ります。)",
+      "a_default\\script\\event_world.dat: msg(何らかの要因で強制終了したようなので、$該当イベントから復帰します。$アニメーション中にクリックを連打した可能性があります。$強制終了の原因となりますのでクリックは非推奨です。)",
+      "a_default\\script\\event_world.dat: msg(何らかの要因で強制終了したようなので、$該当イベントから復帰します。$アニメーション中にクリックを連打した可能性があります。$強制終了の原因となりますのでクリックは非推奨です。)",
+      "a_default\\script\\event_world.dat: msg(何らかの要因で強制終了したようなので、$該当イベントから復帰します。$アニメーション中にクリックを連打した可能性があります。$強制終了の原因となりますのでクリックは非推奨です。)"
+    ],
+    "chat": [
+      "a_default\\script\\100_イベント汎用\\event_00_共通イベント.dat: chat(@plau,@fca_sad,センセンシャル。)",
+      "a_default\\script\\100_イベント汎用\\event_00_共通イベント.dat: chat(kbtit,kbtit7,分隊があのザマかよ！@お前もう生きて帰れねぇな？)",
+      "a_default\\script\\100_イベント汎用\\event_00_共通イベント.dat: chat(hirano,hirano2,……残念だよ、葛城。@所詮、背中を預けるには足りない男だったか。)",
+      "a_default\\script\\100_イベント汎用\\event_00_共通イベント.dat: chat(rensan,rensan11,すいませぇん！！@このような不覚……！@腹を切って詫びるしか……！)",
+      "a_default\\script\\100_イベント汎用\\event_00_共通イベント.dat: chat(hirano,hirano8,……フッフッフ。)"
+    ],
+    "talk": [
+      "a_default\\script\\102_ランダムイベント\\randomev0-10.dat: talk(abesan,男は度胸！何でも試してみるのさ！きっといい気持だぜ！)",
+      "a_default\\script\\102_ランダムイベント\\randomev0-10.dat: talk(モヒカン,なにぃ！こいつほえ面をかかせてやるぜ！)",
+      "a_default\\script\\102_ランダムイベント\\randomev0-10.dat: talk(abesan,このぶんだとそうとうがまんしてたみたいだな。$腹ン中がパンパンだぜ)",
+      "a_default\\script\\102_ランダムイベント\\randomev0-10.dat: talk(モヒカン,なんてやつだ…！俺の23センチのでかちんを$受け切った奴なんて初めてだぜ)",
+      "a_default\\script\\102_ランダムイベント\\randomev0-10.dat: talk(abesan,だろうな俺も初めてだよ)"
+    ]
+  }
+}

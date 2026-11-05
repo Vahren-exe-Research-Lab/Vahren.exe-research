@@ -1,0 +1,79 @@
+{
+  "evidence_id": "C-20261013-0432-01",
+  "task_ids": [
+    "T025",
+    "T016"
+  ],
+  "certainty": "CONFIRMED_TARGET_SAVE_NUMERIC_AND_SAVED_NATIVE_CROSSWALK__GAMEPLAY_NOT_READY",
+  "scope": "Original Vahren 0.67 user-produced saved numeric records only; no original EXE gameplay execution",
+  "source_files": {
+    "save1": "dev_lab/_work/target_actual_20261011_save1.sav",
+    "save2": "dev_lab/_work/target_actual_20261011_save2.sav",
+    "script": "data/normalized/hakushin067_core/a_default/script/event_world.dat:60-76",
+    "event": "data/normalized/hakushin067_core/a_default/script/2001_イベント_ボス/event_51_ボス死亡時.dat:211-242,495-548",
+    "saved_native": "data/T014_GLOBAL_SAVE.md:98-113 (A owner read-only)"
+  },
+  "captures": [
+    {
+      "name": "save1",
+      "source_sha256": "15776d294a0c4f66568e7964331d60990b704f2ca324c568c49560561ae1947a",
+      "numeric_records": 1958,
+      "scenario": "sci1",
+      "player_power": "po2",
+      "values": {
+        "@evtend_boss_dead": 1,
+        "@evtend_bossevent": 1,
+        "@evtend_price_factor": 1,
+        "bossdead": 0,
+        "drgn_is_dead1": 0,
+        "checkturn": 1,
+        "checktiming": 1,
+        "siegeturn": 1,
+        "price_factor_zumi": 1
+      },
+      "absent_exact_keys": [
+        "yetbossev",
+        "drgn_is_dead2",
+        "item_mer",
+        "item_stock",
+        "item_kazu",
+        "@dead_boss_power",
+        "@union_boss_power"
+      ]
+    },
+    {
+      "name": "save2",
+      "source_sha256": "45ccef306b56bf66810726436365207ca18b63d7cc0e432e784034d196fa5635",
+      "numeric_records": 2591,
+      "scenario": "sci1",
+      "player_power": "po2",
+      "values": {
+        "@evtend_boss_dead": 1,
+        "@evtend_bossevent": 1,
+        "@evtend_price_factor": 1,
+        "bossdead": 0,
+        "drgn_is_dead1": 0,
+        "checkturn": 2,
+        "checktiming": 1,
+        "siegeturn": 2,
+        "price_factor_zumi": 1
+      },
+      "absent_exact_keys": [
+        "yetbossev",
+        "drgn_is_dead2",
+        "item_mer",
+        "item_stock",
+        "item_kazu",
+        "@dead_boss_power",
+        "@union_boss_power"
+      ]
+    }
+  ],
+  "aux_for_all_selected_present_keys": "",
+  "per_capture_sav_sha256_verified_unchanged": true,
+  "important_limit": "Persisted event invocation marker @evtend_boss_dead=1 is not equivalent to bossdead=1 or yetbossev=1; actual queue/body timing unobserved.",
+  "t029_note": "siegeturn 1->2 accompanies checkturn 1->2, but eligible trigger count and causality not proven; prior T025 §59 recorded this numeric delta.",
+  "t027_note": "item_mer/item_stock/item_kazu exact keys absent in both early saves; cannot infer merchant choice variable lifetime or stock5 boundary behavior.",
+  "gameplay_golden_pass": 0,
+  "new_engine_strict_match": 0
+}

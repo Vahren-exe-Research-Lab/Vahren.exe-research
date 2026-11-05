@@ -1,0 +1,296 @@
+{
+  "study_id": "B-OFFLINE-20261023-0808-T012-T013-RENDER-COLLISION-BOUNDARY-01",
+  "source_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "source_db_sha256": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF",
+  "source_match": true,
+  "sqlite_quick_check": "ok",
+  "opcode_checks": [
+    {
+      "va": "0x004BC531",
+      "expected": "6A07",
+      "actual": "6A07",
+      "pass": true,
+      "note": "seven buckets (constructor argument)"
+    },
+    {
+      "va": "0x004BC533",
+      "expected": "6A10",
+      "actual": "6A10",
+      "pass": true,
+      "note": "16-byte descriptor stride"
+    },
+    {
+      "va": "0x004BC535",
+      "expected": "68B836B000",
+      "actual": "68B836B000",
+      "pass": true,
+      "note": "bucket array base 0xB036B8"
+    },
+    {
+      "va": "0x004BC5EB",
+      "expected": "E8D0FDFFFF",
+      "actual": "E8D0FDFFFF",
+      "pass": true,
+      "note": "cell lookup 0x4BC3C0"
+    },
+    {
+      "va": "0x004BC635",
+      "expected": "807F6400",
+      "actual": "807F6400",
+      "pass": true,
+      "note": "object +0x64 gating"
+    },
+    {
+      "va": "0x004BC64D",
+      "expected": "8B4740",
+      "actual": "8B4740",
+      "pass": true,
+      "note": "object left x bound"
+    },
+    {
+      "va": "0x004BC683",
+      "expected": "FFD0",
+      "actual": "FFD0",
+      "pass": true,
+      "note": "virtual dispatch +0x40"
+    },
+    {
+      "va": "0x004BC685",
+      "expected": "83C003",
+      "actual": "83C003",
+      "pass": true,
+      "note": "bucket index adjust +3"
+    },
+    {
+      "va": "0x004BC688",
+      "expected": "83F803",
+      "actual": "83F803",
+      "pass": true,
+      "note": "special-case bucket index 3"
+    },
+    {
+      "va": "0x004BC69A",
+      "expected": "894704",
+      "actual": "894704",
+      "pass": true,
+      "note": "cache sort key 1 at object+4"
+    },
+    {
+      "va": "0x004BC6A6",
+      "expected": "894708",
+      "actual": "894708",
+      "pass": true,
+      "note": "cache sort key 2 at object+8"
+    },
+    {
+      "va": "0x004BC8DE",
+      "expected": "6860BC4B00",
+      "actual": "6860BC4B00",
+      "pass": true,
+      "note": "push comparator 0x4BBC60"
+    },
+    {
+      "va": "0x004BC8E9",
+      "expected": "E862F2FBFF",
+      "actual": "E862F2FBFF",
+      "pass": true,
+      "note": "sort call 0x47BB50"
+    },
+    {
+      "va": "0x004BBC64",
+      "expected": "8B4204",
+      "actual": "8B4204",
+      "pass": true,
+      "note": "load object+4 from first pointer"
+    },
+    {
+      "va": "0x004BBC6C",
+      "expected": "8B4E04",
+      "actual": "8B4E04",
+      "pass": true,
+      "note": "load object+4 from second pointer"
+    },
+    {
+      "va": "0x004BBC6F",
+      "expected": "3BC1",
+      "actual": "3BC1",
+      "pass": true,
+      "note": "primary key signed comparison"
+    },
+    {
+      "va": "0x004BBC73",
+      "expected": "8B4208",
+      "actual": "8B4208",
+      "pass": true,
+      "note": "load secondary key first pointer"
+    },
+    {
+      "va": "0x004BBC78",
+      "expected": "3B4608",
+      "actual": "3B4608",
+      "pass": true,
+      "note": "secondary key signed comparison"
+    },
+    {
+      "va": "0x004BBC7C",
+      "expected": "0F9CC0",
+      "actual": "0F9CC0",
+      "pass": true,
+      "note": "signed less than result secondary"
+    },
+    {
+      "va": "0x004BBC84",
+      "expected": "0F9CC0",
+      "actual": "0F9CC0",
+      "pass": true,
+      "note": "signed less than result primary"
+    },
+    {
+      "va": "0x004C4142",
+      "expected": "E8A983FFFF",
+      "actual": "E8A983FFFF",
+      "pass": true,
+      "note": "render parent calls spatial collect"
+    },
+    {
+      "va": "0x004C41A0",
+      "expected": "E8AB060000",
+      "actual": "E8AB060000",
+      "pass": true,
+      "note": "render parent calls batch draw"
+    },
+    {
+      "va": "0x00515477",
+      "expected": "83B93401000000",
+      "actual": "83B93401000000",
+      "pass": true,
+      "note": "Skill+0x134 collision gate"
+    },
+    {
+      "va": "0x00515489",
+      "expected": "E88218FDFF",
+      "actual": "E88218FDFF",
+      "pass": true,
+      "note": "collision tree path, distinct from render"
+    }
+  ],
+  "call_checks": [
+    {
+      "site": "0x004BC5EB",
+      "target": "0x004BC3C0",
+      "bytecode": "E8D0FDFFFF",
+      "computed_target": "0x004BC3C0",
+      "sqlite_targets": [
+        "0x004BC3C0"
+      ],
+      "pass": true
+    },
+    {
+      "site": "0x004BC8C6",
+      "target": "0x004FAA60",
+      "bytecode": "E895E10300",
+      "computed_target": "0x004FAA60",
+      "sqlite_targets": [
+        "0x004FAA60"
+      ],
+      "pass": true
+    },
+    {
+      "site": "0x004BC8E9",
+      "target": "0x0047BB50",
+      "bytecode": "E862F2FBFF",
+      "computed_target": "0x0047BB50",
+      "sqlite_targets": [
+        "0x0047BB50"
+      ],
+      "pass": true
+    },
+    {
+      "site": "0x004C4142",
+      "target": "0x004BC4F0",
+      "bytecode": "E8A983FFFF",
+      "computed_target": "0x004BC4F0",
+      "sqlite_targets": [
+        "0x004BC4F0"
+      ],
+      "pass": true
+    },
+    {
+      "site": "0x004C41A0",
+      "target": "0x004C4850",
+      "bytecode": "E8AB060000",
+      "computed_target": "0x004C4850",
+      "sqlite_targets": [
+        "0x004C4850"
+      ],
+      "pass": true
+    },
+    {
+      "site": "0x00515489",
+      "target": "0x004E6D10",
+      "bytecode": "E88218FDFF",
+      "computed_target": "0x004E6D10",
+      "sqlite_targets": [
+        "0x004E6D10"
+      ],
+      "pass": true
+    }
+  ],
+  "function_pseudoc_sha_checks": [
+    {
+      "va": "0x004BC4F0",
+      "size": 1052,
+      "pseudo_sha_ok": true
+    },
+    {
+      "va": "0x004C3EB0",
+      "size": 1384,
+      "pseudo_sha_ok": true
+    },
+    {
+      "va": "0x004C4850",
+      "size": 278,
+      "pseudo_sha_ok": true
+    },
+    {
+      "va": "0x004E6D10",
+      "size": 964,
+      "pseudo_sha_ok": true
+    },
+    {
+      "va": "0x00515470",
+      "size": 32,
+      "pseudo_sha_ok": true
+    }
+  ],
+  "direct_caller_sets": {
+    "0x004BC4F0": [
+      {
+        "caller_va": "0x004C3EB0",
+        "site_va": "0x004C4142"
+      }
+    ],
+    "0x004E6D10": [
+      {
+        "caller_va": "0x00515470",
+        "site_va": "0x00515489"
+      }
+    ]
+  },
+  "counts": {
+    "opcode_pass": 24,
+    "opcode_total": 24,
+    "call_pass": 6,
+    "call_total": 6,
+    "pseudo_sha_pass": 5,
+    "pseudo_sha_total": 5
+  },
+  "limitations": [
+    "STATIC only",
+    "no indirect/vtable target inference",
+    "no gameplay Golden",
+    "no assert that render candidate sort orders collision targets",
+    "unverified runtime sort tie behavior",
+    "PC live MASTER not accessible"
+  ]
+}

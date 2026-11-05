@@ -4,8 +4,20 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-1e8"></a>
+## record + 0x1E8
+
+- [research/recovered/b_batch9/data/T013_RUSH_RECORD_54F990_CONTRACT_20261013.md 行 8](../../research/recovered/b_batch9/data/T013_RUSH_RECORD_54F990_CONTRACT_20261013.md?plain=1#L8-L8) — [FINAL] 0x54FCFB tests record+0x1E8 sentinel 0x80000008; non-sentinel uses coordinate deltas→0x54FD16 call0x5E743A and writes double angle to record+0x200 at0x5
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 <a id="field-1f0"></a>
 ## record + 0x1F0
+
+- [research/recovered/b_batch3/T012_RUSH_SKILL_INTERVAL_FIRST_TICK_BURST_NATIVE_20261027_18H.md 行 5](../../research/recovered/b_batch3/T012_RUSH_SKILL_INTERVAL_FIRST_TICK_BURST_NATIVE_20261027_18H.md?plain=1#L5-L5) — [NEW ASM/SEED] 0x54F990 の record=EBP / Skill=EAX。0x54F9AC MOV [EBP+0x1D4],EAX、0x54F9D1 MOV EDX,[EAX+0x78]、0x54F9D4 MOV [EBP+0x1F4],EDX。したがって初期record.counterは0でな
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch7/data/T012_RUSH_COMPILED_INTERVAL_ATTEMPT_LINK_NATIVE_20261027_19H.md 行 15](../../research/recovered/b_batch7/data/T012_RUSH_COMPILED_INTERVAL_ATTEMPT_LINK_NATIVE_20261027_19H.md?plain=1#L15-L15) — [GOLDEN DESIGNED/NOT RUN] 未改変ver0.67 EXE、KARATE_X20以前DAT、同一SAVE/MAP/input/RNGでraw rush_interval=-1/0/2、rush上限0/1/4、通常発動と生成失敗の合法条件、GameTask M flags/Rush+0x210を観測
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
 - [research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md 行 13](../../research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md?plain=1#L13-L13) — 2. `0x0054F990` 擬似Cで `record=param_3` とすると、**`record+0x1D0=1`（active候補）、`record+0x1D4=in_EAX`（定義候補）、`record+0x1F0=0`（試行番号）、`record+0x1F8=0`（リンク先候補）、`record+0x1F
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained

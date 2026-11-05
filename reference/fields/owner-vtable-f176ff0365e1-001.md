@@ -85,9 +85,6 @@
 - [research/recovered/b_batch2/T012_RUSH_GAMETASK_VIRTUAL_STATUS_GATE_NATIVE_20261027_17H.md 行 15](../../research/recovered/b_batch2/T012_RUSH_GAMETASK_VIRTUAL_STATUS_GATE_NATIVE_20261027_17H.md?plain=1#L15-L15) — [CONTRAST] 09H Heal用vtable+0xC/+0x10 は常0返却。Rush側は同じ更新loopでも+0x210の動的値次第で更新可能、双方の発火ゲートを一律実装してはいけない。実際のmanager同一性・次tick・実技能・RNG効果はVERIFY。
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 
-- [research/recovered/b_batch3/T013_HEAL_DEFERRED_TICK_DISPATCH_NATIVE_20261027_09H.md 行 11](../../research/recovered/b_batch3/T013_HEAL_DEFERRED_TICK_DISPATCH_NATIVE_20261027_09H.md?plain=1#L11-L11) — [SLOT GATES] 0x4C290B CMP BYTE[ESI+8],0。非0時0x4C2911/13は[EBX.vtable+0x0C]、0時task+0x14非0なら0x4C291F/21で+0x10を呼び0x4C2928 TEST AL→0なら0x4C2935 skip。0且つtask+0x14==0ならp
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
 - [research/recovered/e_batch3/T020_FASTSIM_PRESELECTOR_BRANCH_GATE_20261023_1952.md 行 19](../../research/recovered/e_batch3/T020_FASTSIM_PRESELECTOR_BRANCH_GATE_20261023_1952.md?plain=1#L19-L19) — 前18:50版のprimary vtable +0x0C/0x452D90、+0xA4/+0x84判定は既知として加算せず、今回追加したのはそれ以前の3段階ゲート（mode・+19C・0x431FB0）である。
   制約・訂正　Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
 
@@ -301,9 +298,6 @@
 <a id="field-24"></a>
 ## vtable + 0x24
 
-- [research/recovered/b_batch3/T013_HEAL_DEFERRED_TICK_DISPATCH_NATIVE_20261027_09H.md 行 15](../../research/recovered/b_batch3/T013_HEAL_DEFERRED_TICK_DISPATCH_NATIVE_20261027_09H.md?plain=1#L15-L15) — [OTHER SLOT +0x24 CAVEAT] 0x54E31Fがvector非空なら0x54E32F CALL0x4B9F70、内部0x4BA009がvtable+0x24を呼ぶ。しかし0x54E327..2Eはfirst stack arg=[[EDI+0xC]+4]、second arg=EDIであり、cal
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
 - [research/recovered/b_batch9/data/T013_EFFECT_VTABLE_TICK_JOIN_NATIVE_20261027_08H.md 行 8](../../research/recovered/b_batch9/data/T013_EFFECT_VTABLE_TICK_JOIN_NATIVE_20261027_08H.md?plain=1#L8-L8) — [HELPER SLOT] +0x24関数0x54E3F0は既B-20261019-1811-01のSkill+0x3E8/+0x3ECおよびeffect+0xA4に依存する項目選択helper。今回は「vtable+0x24からこの既知helperを参照する」と静的結合。既数式・parser cap32/fallba
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
@@ -336,5 +330,11 @@
 
 - [research/recovered/b_batch7/data/T012_HEAL_EFFECT_RECORD_4DFBB0_CONTRACT_20261013.md 行 5](../../research/recovered/b_batch7/data/T012_HEAL_EFFECT_RECORD_4DFBB0_CONTRACT_20261013.md?plain=1#L5-L5) — [RELEASE/RESET] 0x4DFBBA byte[EDI+0x78] !=0ならEDI+0x6CをESIへ、0x4DFBC4 byte[EDI+0x78]=0→0x4DFBC7 call0x41E160。旧レコードの登録解除・所有者解放までの正確な意味はcallee UNKNOWN。0x4DFBD0..0x4
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 244](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L244-L244) — [CONFIRMED-SAVED-NATIVE] 通常sav writerの0x4605EAでstatus/mode byteのbit0x6をtestし、zeroならstream-like object vtable+0x28(0x46060A)をcallして2出力を取得、nonzeroならglobal 0x6098B
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 249](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L249-L249) — [NEXT] vtable+0x28具体実体、T014 numeric map battle・RTS scene scope、T006 set/add op5/6 case payload、T005 ExplicitNull consumer。Eが既存ID重複照合後にMASTER統合。READY
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

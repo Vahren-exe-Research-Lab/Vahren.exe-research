@@ -1,0 +1,225 @@
+{
+  "evidence_type": "STATIC-EXE-ASM/RTTI + STATIC-SQLITE + STATIC-GHIDRA",
+  "zip_sha256": "911E5E37A3F9BD5B36F929AF94B0D1E2CD1CD5CF34E3E2F16C8FC800ABF5F7C2",
+  "exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "sqlite_sha256": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF",
+  "zip_file_count": 34,
+  "sections": [
+    {
+      "name": ".text",
+      "rva": 4096,
+      "raw_off": 1024,
+      "raw_size": 2129920
+    },
+    {
+      "name": ".rdata",
+      "rva": 2134016,
+      "raw_off": 2130944,
+      "raw_size": 329728
+    },
+    {
+      "name": ".data",
+      "rva": 2465792,
+      "raw_off": 2460672,
+      "raw_size": 211968
+    },
+    {
+      "name": ".rsrc",
+      "rva": 7426048,
+      "raw_off": 2672640,
+      "raw_size": 89088
+    },
+    {
+      "name": ".reloc",
+      "rva": 7516160,
+      "raw_off": 2761728,
+      "raw_size": 148992
+    }
+  ],
+  "class_vtable_dispatch": [
+    {
+      "type_name": "Unit",
+      "type_descriptor_va": "0x0068D048",
+      "rtti_complete_object_locator_va": "0x0063FF38",
+      "vtable_minus_4_locator_pointer_va": "0x0063A9E0",
+      "vtable_va": "0x0063A9E4",
+      "vtable_slot_0x70_va": "0x0063AA54",
+      "target_va": "0x00578370",
+      "pseudoc_sha256": "1C6630B2505F9A9C720E2FB980DD070C410582D6DB74EE32E00402BDEA81F051",
+      "function_size": 2034,
+      "slot_raw_hex": "70 83 57 00"
+    },
+    {
+      "type_name": "SimpleUnit",
+      "type_descriptor_va": "0x0068D34C",
+      "rtti_complete_object_locator_va": "0x0063F61C",
+      "vtable_minus_4_locator_pointer_va": "0x0063A4B8",
+      "vtable_va": "0x0063A4BC",
+      "vtable_slot_0x70_va": "0x0063A52C",
+      "target_va": "0x00544790",
+      "pseudoc_sha256": "6E8673F8A5A104E87D0AB3B58625E2DABB7B0EBD56633BF6C19069F4CF689997",
+      "function_size": 1395,
+      "slot_raw_hex": "90 47 54 00"
+    },
+    {
+      "type_name": "StaticUnit",
+      "type_descriptor_va": "0x0068D5E4",
+      "rtti_complete_object_locator_va": "0x0063FC28",
+      "vtable_minus_4_locator_pointer_va": "0x0063A858",
+      "vtable_va": "0x0063A85C",
+      "vtable_slot_0x70_va": "0x0063A8CC",
+      "target_va": "0x0055ABA0",
+      "pseudoc_sha256": "8A087ADE9ED33360A304AA4E1B55441F00E1B7A9A0E8022B7995FDE269C3F1ED",
+      "function_size": 475,
+      "slot_raw_hex": "A0 AB 55 00"
+    },
+    {
+      "type_name": "SimpleStaticUnit",
+      "type_descriptor_va": "0x0068D5C4",
+      "rtti_complete_object_locator_va": "0x0063FBC4",
+      "vtable_minus_4_locator_pointer_va": "0x0063A8E0",
+      "vtable_va": "0x0063A8E4",
+      "vtable_slot_0x70_va": "0x0063A954",
+      "target_va": "0x0055B060",
+      "pseudoc_sha256": "1371DA09748938A4F277FC374D3AEB7B32D3761330BAB9CEAAB6EB7C00091F28",
+      "function_size": 223,
+      "slot_raw_hex": "60 B0 55 00"
+    }
+  ],
+  "loop_sites": [
+    {
+      "va": "0x005783BB",
+      "length": 7,
+      "original_hex": "80 BB 7C 86 01 00 00",
+      "meaning_static_x86": "Unit: guard Unit+0x1867C"
+    },
+    {
+      "va": "0x005783D7",
+      "length": 5,
+      "original_hex": "3D 41 42 0F 00",
+      "meaning_static_x86": "Unit: sentinel comparison 0xF4241"
+    },
+    {
+      "va": "0x005783DE",
+      "length": 6,
+      "original_hex": "29 83 68 E5 01 00",
+      "meaning_static_x86": "Unit: subtract from Unit+0x1E568"
+    },
+    {
+      "va": "0x005783E6",
+      "length": 10,
+      "original_hex": "C7 83 68 E5 01 00 00 00 00 00",
+      "meaning_static_x86": "Unit: clear Unit+0x1E568 in sentinel branch"
+    },
+    {
+      "va": "0x005783F0",
+      "length": 6,
+      "original_hex": "29 83 90 00 00 00",
+      "meaning_static_x86": "Unit: subtract Unit+0x90"
+    },
+    {
+      "va": "0x005447DB",
+      "length": 7,
+      "original_hex": "80 BB 7C 86 01 00 00",
+      "meaning_static_x86": "SimpleUnit: guard Unit+0x1867C"
+    },
+    {
+      "va": "0x005447F7",
+      "length": 6,
+      "original_hex": "29 8B 90 00 00 00",
+      "meaning_static_x86": "SimpleUnit: subtract Unit+0x90"
+    },
+    {
+      "va": "0x0055ABB0",
+      "length": 6,
+      "original_hex": "38 9F 7C 86 01 00",
+      "meaning_static_x86": "StaticUnit: guard Unit+0x1867C"
+    },
+    {
+      "va": "0x0055ABBF",
+      "length": 6,
+      "original_hex": "29 87 90 00 00 00",
+      "meaning_static_x86": "StaticUnit: subtract Unit+0x90"
+    },
+    {
+      "va": "0x0055B06D",
+      "length": 7,
+      "original_hex": "80 BF 7C 86 01 00 00",
+      "meaning_static_x86": "SimpleStaticUnit: guard Unit+0x1867C"
+    },
+    {
+      "va": "0x0055B07D",
+      "length": 6,
+      "original_hex": "29 87 90 00 00 00",
+      "meaning_static_x86": "SimpleStaticUnit: subtract Unit+0x90"
+    },
+    {
+      "va": "0x00547EB4",
+      "length": 3,
+      "original_hex": "8B 34 B9",
+      "meaning_static_x86": "allfunc: vector[index] current candidate"
+    },
+    {
+      "va": "0x00547F60",
+      "length": 5,
+      "original_hex": "E8 0B 8F 00 00",
+      "meaning_static_x86": "allfunc: CALL 0x550E70"
+    },
+    {
+      "va": "0x00547F65",
+      "length": 5,
+      "original_hex": "C6 44 24 24 01",
+      "meaning_static_x86": "allfunc: unconditional success mark after call"
+    },
+    {
+      "va": "0x00547F6E",
+      "length": 4,
+      "original_hex": "8B 54 24 10",
+      "meaning_static_x86": "allfunc: manager vector address reload"
+    },
+    {
+      "va": "0x00547F72",
+      "length": 2,
+      "original_hex": "8B 0A",
+      "meaning_static_x86": "allfunc: reload vector begin"
+    },
+    {
+      "va": "0x00547F74",
+      "length": 3,
+      "original_hex": "8B 42 04",
+      "meaning_static_x86": "allfunc: reload vector end"
+    },
+    {
+      "va": "0x00547F79",
+      "length": 1,
+      "original_hex": "47",
+      "meaning_static_x86": "allfunc: increment numeric index"
+    },
+    {
+      "va": "0x00547F7D",
+      "length": 2,
+      "original_hex": "3B C7",
+      "meaning_static_x86": "allfunc: compare live length vs incremented index"
+    },
+    {
+      "va": "0x00547F7F",
+      "length": 6,
+      "original_hex": "0F 87 2F FF FF FF",
+      "meaning_static_x86": "allfunc: conditional backward jump to 0x547EB4"
+    }
+  ],
+  "indirect_dispatch": {
+    "site_va": "0x00551154",
+    "site_bytes": "FF D2",
+    "fetch_vptr_va": "0x00551146",
+    "fetch_slot_va": "0x00551148",
+    "slot_offset": 112,
+    "sqlite_record": {
+      "caller": "0x00550E70",
+      "instruction": "CALL EDX",
+      "computed": 1,
+      "pcode_callind": 1,
+      "candidate_type": "POINTER_OR_VIRTUAL_UNDETERMINED"
+    }
+  }
+}

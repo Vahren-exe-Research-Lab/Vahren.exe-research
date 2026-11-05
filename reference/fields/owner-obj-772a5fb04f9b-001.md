@@ -115,6 +115,12 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 977](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L977-L977) — 2. obj+0xDC の型（雇用・城・傭兵の入口）と、VERIFY の入口4組の引数。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+<a id="field-e4"></a>
+## obj + 0xE4
+
+- [research/recovered/json_sources1/reports/data/B_T011_T012_MISSILE_VTABLE_SLOT38_EVIDENCE_20261022_1813.json 行 295](../../research/recovered/json_sources1/reports/data/B_T011_T012_MISSILE_VTABLE_SLOT38_EVIDENCE_20261022_1813.json?plain=1#L295-L295) — "slot38": "if skill+0x28 == 0 and byte(skill+0x9F5) != 0: return obj+0xE4; else: return (byte(skill+0x9F4) != 0 ? 1000000 : 0)",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
 <a id="field-1a4"></a>
 ## obj + 0x1A4
 

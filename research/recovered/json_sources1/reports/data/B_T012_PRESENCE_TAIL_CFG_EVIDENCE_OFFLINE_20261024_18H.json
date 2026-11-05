@@ -1,0 +1,174 @@
+{
+  "research_id": "B-OFFLINE-20261024-18H-T012-PRESENCE-TAIL-CFG-01",
+  "recovery_id": "B-RC-20261024-18H-LOCAL429-UNSYNCED-01",
+  "owner": "B",
+  "task": "T012",
+  "date_jst": "2026-10-24 18H",
+  "classification": [
+    "OFFLINE-UNSYNCED",
+    "STATIC-ORIGINAL-PE-ASM",
+    "STATIC-DERIVED",
+    "VERIFY",
+    "NOT READY"
+  ],
+  "connection": {
+    "preferred_tool": "Desktop Commander Local Compact",
+    "actual_error": "UNAVAILABLE: Error code: UNAVAILABLE; Error: McpServerError: MCP SSE probe returned 429 from openai.org",
+    "class": "CONNECTION",
+    "not_safety_refusal": true,
+    "pc_current_master_read": false,
+    "pc_handoff_updated": false
+  },
+  "offline_source": {
+    "zip_name": "HAKUSHIN067_AI_OFFLINE_PACK_20261021.zip",
+    "zip_sha256": "911E5E37A3F9BD5B36F929AF94B0D1E2CD1CD5CF34E3E2F16C8FC800ABF5F7C2",
+    "zip_entry_count": 34,
+    "zip_crc_pass": true,
+    "exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+    "sqlite_sha256": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF",
+    "sqlite_quick_check": "ok",
+    "snapshot_date": "2026-10-21",
+    "source_exe_unchanged": true
+  },
+  "ghidra": {
+    "va": "0x00464290",
+    "size_bytes": 802,
+    "size_hex": "0x322",
+    "pseudoc_function_tail_not_explicitly_decompiled": true,
+    "code_sha256": "68EBE29629531DA6FB5AA44E315BBF120DD5AACB8F7400AC5619845748E5BB56",
+    "end_address_verified_from_ghidra": false
+  },
+  "native_observation": {
+    "native_function_start_va": "0x00464290",
+    "last_executable_instruction_end_exclusive": "0x004645B7",
+    "contiguous_extent_bytes": 807,
+    "padding_from_va": "0x004645B7",
+    "followed_by_int3_9_bytes": true,
+    "delta_vs_ghidra_size_bytes": 5,
+    "possible_body_range_mismatch_requires_independent_ghidra_function_body_validation": true
+  },
+  "control_flow": [
+    {
+      "at": "0x004644BC",
+      "asm": "MOV EAX,[ESI+0x4]",
+      "label": "map_nil_sentinel"
+    },
+    {
+      "at": "0x004644BF",
+      "asm": "CMP [ESP+0x24],EAX",
+      "label": "value_lookup_vs_nil"
+    },
+    {
+      "at": "0x004644C3",
+      "asm": "JNE 0x004645A0",
+      "label": "if_lookup_result_not_nil -> positive cleanup"
+    },
+    {
+      "at": "0x004645A0",
+      "asm": "CMP [ESP+0x40],EBP",
+      "label": "string cleanup condition"
+    },
+    {
+      "at": "0x004645A4",
+      "asm": "JB 0x004645B3",
+      "label": "skip cleanup when small string"
+    },
+    {
+      "at": "0x004645AB",
+      "asm": "CALL 0x005B6BBB",
+      "label": "optional cleanup; already known routine"
+    },
+    {
+      "at": "0x004645B0",
+      "asm": "ADD ESP,0x4",
+      "label": "caller cleanup"
+    },
+    {
+      "at": "0x004645B3",
+      "asm": "MOV AL,1",
+      "label": "positive return"
+    },
+    {
+      "at": "0x004645B5",
+      "asm": "JMP 0x0046457C",
+      "label": "shared_epilogue"
+    },
+    {
+      "at": "0x0046457A",
+      "asm": "XOR AL,AL",
+      "label": "negative return only"
+    },
+    {
+      "at": "0x0046459D",
+      "asm": "RET 0x8",
+      "label": "shared exit"
+    },
+    {
+      "at": "0x0046443B",
+      "asm": "MOV AL,1",
+      "label": "separate earlier positive branch; already recorded previously"
+    }
+  ],
+  "native_windows": {
+    "direct_predicate_branch": {
+      "start_va": "0x004644BC",
+      "end_va_exclusive": "0x004644C9",
+      "bytes_len": 13,
+      "hex": "8b4604394424240f85d7000000",
+      "sha256": "B44B19DA21109F54E462B8E151B4B3A5505D5C0C41579D6CAD1CDA9B265F46A8"
+    },
+    "null_secondary_success": {
+      "start_va": "0x00464432",
+      "end_va_exclusive": "0x00464442",
+      "bytes_len": 16,
+      "hex": "8d4c242ce875e2f9ffb001e93a010000",
+      "sha256": "6A63698A003E452E70D1BE3DE7B3A1A6B6A3B07026471E90EA891F9981D2DD9F"
+    },
+    "positive_tail": {
+      "start_va": "0x004645A0",
+      "end_va_exclusive": "0x004645B7",
+      "bytes_len": 23,
+      "hex": "396c2440720d8b54242c52e80b26150083c404b001ebc5",
+      "sha256": "934774CA541CB94F517FF0F27F6BCE41347778E5F621B62E252FB4EC488ADDAA"
+    },
+    "counter_advance": {
+      "start_va": "0x00464550",
+      "end_va_exclusive": "0x00464562",
+      "bytes_len": 18,
+      "hex": "8b442414408944241483f8320f8ceefeffff",
+      "sha256": "9FF443A5B4C67A0D02212E536FE0FE2A35BA4C1C0EE739A15838C600C547CBC7"
+    },
+    "negative_return_and_ret8": {
+      "start_va": "0x0046457A",
+      "end_va_exclusive": "0x004645A0",
+      "bytes_len": 38,
+      "hex": "32c08b8c248400000064890d00000000595f5e5d5b8b4c246c33cce8791f150083c47cc20800",
+      "sha256": "91FA24EC85A2E1E4D8FED295B2D97C63248112A91F70FE84EEDB5CE3EA83A007"
+    }
+  },
+  "claims": {
+    "new": "Connect previously unreported 0x004644C3 success predicate to 0x004645A0/0x004645B3 and distinguish native contiguous function extent from Ghidra metadata 802 bytes; investigate missing affirmative path in void pseudoc.",
+    "not_new": "0x004645B3 AL=1, 0x0046457A AL=0, 50-bound, Skill+0x288 default, earlier 17H already established.",
+    "cannot_conclude": "Exactly which addresses were excluded from Ghidra function body solely from size field; runtime existence/precedence for legal DAT; full ownership, dynamic effects."
+  },
+  "safety": {
+    "refused_ranges_not_queried": [
+      "0x005710C0..0x00571500",
+      "0x0058021E..0x00580340",
+      "0x00624A1C known refused literal"
+    ],
+    "unsafe_retry_count": 0
+  },
+  "result": {
+    "new_ready": 0,
+    "master_integration": 0,
+    "task_done": 0,
+    "golden_pass": 0,
+    "strict_match": 0,
+    "pc_sync": false
+  },
+  "next": {
+    "static": "Verify Ghidra function body ranges before calling truncation proven; trace attr-lookup nil sentinel and parent/child priority at 0x004644BC..0x004645B7 without denied regions.",
+    "golden": "Unmodified PE/DAT, same SAVE/MAP/seed/input; direct/parent/absent/explicit-zero str_ratio; capture Skill+0x288 and damage/HP/tick."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "top": {
+    "Vahren/a_default": 1837,
+    "Vahren/a_system": 4,
+    "Vahren/Vahren.exe": 1,
+    "Vahren/Vahren@chip3.\u00c9V\u00e2A\u00e2C\u00e2R\u00e2\u00f4\u00f6\u252c.exe": 1,
+    "Vahren/Vahren\u00e2t\u00e2\u00ef\u00e2X\u00e2N\u00e2\u00e8\u00fc[\u00e2\u00f4.bat": 1,
+    "Vahren/\u00c4g\u00f9p\u00e6f\u00ec\u2590\u00e9\u2560\u00c6\u00b1\u00ef\u0192\u00ee\u2502\u00e2T\u00e2C\u00e2g\u00f9l.txt": 1,
+    "Vahren/\u00c9\u03b1\u00fb\u255b\u00c5\u00e6.txt": 1
+  },
+  "a_system_count": 4,
+  "a_system_size": 87678,
+  "root_files": [
+    "Vahren/Vahren.exe",
+    "Vahren/Vahren@chip3.\u00c9V\u00e2A\u00e2C\u00e2R\u00e2\u00f4\u00f6\u252c.exe",
+    "Vahren/Vahren\u00e2t\u00e2\u00ef\u00e2X\u00e2N\u00e2\u00e8\u00fc[\u00e2\u00f4.bat",
+    "Vahren/\u00c4g\u00f9p\u00e6f\u00ec\u2590\u00e9\u2560\u00c6\u00b1\u00ef\u0192\u00ee\u2502\u00e2T\u00e2C\u00e2g\u00f9l.txt",
+    "Vahren/\u00c9\u03b1\u00fb\u255b\u00c5\u00e6.txt"
+  ]
+}

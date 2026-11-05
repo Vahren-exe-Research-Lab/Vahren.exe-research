@@ -1,0 +1,21 @@
+{
+  "selected_files": 1232,
+  "encoding_stats": {
+    "vahren701": {
+      "utf-8-sig": 3,
+      "cp932": 7
+    },
+    "hakushin067_core": {
+      "cp932": 586,
+      "utf-8-sig": 32,
+      "empty": 1
+    }
+  },
+  "binary_logic_files_by_source_ext": {
+    "vahren701:.dat": 253,
+    "vahren701:.map": 191,
+    "hakushin067_core:.db": 4,
+    "hakushin067_core:.dat": 4,
+    "hakushin067_core:.map": 151
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "research_id": "E-AUDIT-20261024-09H-T018-T020-INDEX-V9-FLOW-TYPE-01",
+  "type": "SYNTHETIC_ONLY",
+  "cases": [
+    {
+      "id": "V9-01",
+      "index": "V9",
+      "db_hash": "match",
+      "exe_hash": "match",
+      "declared_flow": "E8",
+      "actual_flow": "E8",
+      "site_bound": true,
+      "claim_golden": false,
+      "expected": "STATIC_REVIEW_ONLY"
+    },
+    {
+      "id": "V9-02",
+      "index": "V3",
+      "db_hash": "match",
+      "exe_hash": "match",
+      "declared_flow": "E8",
+      "actual_flow": "E8",
+      "site_bound": true,
+      "claim_golden": false,
+      "expected": "HISTORICAL_REPLAY_ONLY"
+    },
+    {
+      "id": "V9-03",
+      "index": "20261021_INDEX",
+      "db_hash": "match",
+      "exe_hash": "match",
+      "declared_flow": "E8",
+      "actual_flow": "E8",
+      "site_bound": true,
+      "claim_golden": false,
+      "expected": "HISTORICAL_REPLAY_ONLY"
+    },
+    {
+      "id": "V9-04",
+      "index": "V9",
+      "db_hash": "bad",
+      "exe_hash": "match",
+      "declared_flow": "E8",
+      "actual_flow": "E8",
+      "site_bound": true,
+      "claim_golden": false,
+      "expected": "REJECT_INDEX_HASH"
+    },
+    {
+      "id": "V9-05",
+      "index": "V9",
+      "db_hash": "match",
+      "exe_hash": "bad",
+      "declared_flow": "E8",
+      "actual_flow": "E8",
+      "site_bound": true,
+      "claim_golden": false,
+      "expected": "REJECT_EXE_HASH"
+    },
+    {
+      "id": "V9-06",
+      "index": "V9",
+      "db_hash": "match",
+      "exe_hash": "match",
+      "declared_flow": "E8",
+      "actual_flow": "JMP",
+      "site_bound": true,
+      "claim_golden": false,
+      "expected": "REJECT_FLOW_KIND"
+    },
+    {
+      "id": "V9-07",
+      "index": "V9",
+      "db_hash": "match",
+      "exe_hash": "match",
+      "declared_flow": "JMP",
+      "actual_flow": "JMP",
+      "site_bound": true,
+      "claim_golden": false,
+      "expected": "REJECT_JUMP_AS_CALL"
+    },
+    {
+      "id": "V9-08",
+      "index": "V9",
+      "db_hash": "match",
+      "exe_hash": "match",
+      "declared_flow": "E8",
+      "actual_flow": "E8",
+      "site_bound": false,
+      "claim_golden": false,
+      "expected": "REJECT_UNBOUND_SITE"
+    },
+    {
+      "id": "V9-09",
+      "index": "V9",
+      "db_hash": "match",
+      "exe_hash": "match",
+      "declared_flow": "E8",
+      "actual_flow": "E8",
+      "site_bound": true,
+      "claim_golden": true,
+      "expected": "REJECT_GOLDEN_FROM_STATIC"
+    },
+    {
+      "id": "V9-10",
+      "index": "V9",
+      "db_hash": "match",
+      "exe_hash": "match",
+      "declared_flow": "E8",
+      "actual_flow": "E8",
+      "site_bound": true,
+      "claim_golden": false,
+      "expected": "STATIC_REVIEW_ONLY"
+    },
+    {
+      "id": "V9-11",
+      "index": "V9",
+      "db_hash": "match",
+      "exe_hash": "match",
+      "declared_flow": "INDIRECT",
+      "actual_flow": "INDIRECT",
+      "site_bound": true,
+      "claim_golden": false,
+      "expected": "REJECT_INDIRECT_AS_DIRECT"
+    }
+  ]
+}

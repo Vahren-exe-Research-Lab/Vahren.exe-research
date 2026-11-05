@@ -1,0 +1,818 @@
+{
+  "research_id": "E-AUDIT-20261029-05H-T020-PC-SOURCE-INVENTORY-01",
+  "status": "STATIC_BYTES / VERIFY / NOT READY",
+  "scope": "PC top-level tests: T018/T020/t020 date-tag 20261025..27",
+  "items": [
+    {
+      "file": "T020_11H_GOLDEN_HELPER_BYTE_PROOF_AUDIT_20261027_1350.md",
+      "sha256": "3ED71259C4F78006C04738DF009F3122007133DC3C1710D5B6D81DDA5B92EE59",
+      "bytes": 4217,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "T020_CNB02_CAPTURE_EXCEPTION_CLASS_EPOCH_AUDIT_20261026_1946.md",
+      "sha256": "684EA6D6F07BD43076D3B3279D906721D6B8FFB674AAEED3F9C19BCDD33BC21F",
+      "bytes": 4254,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "T020_CNB02_CAPTURE_GAP_TEMPORAL_COVERAGE_20261026_1849.md",
+      "sha256": "8201E61BA965AF2A977B2016BB045F6BBDFA4E43360B522338DFA94E4CBE90A3",
+      "bytes": 5142,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "T020_CNB02_DUAL_WATCH_COUNTER_PHASE_20261025_21H.md",
+      "sha256": "02E68B385D7BD71490822F33BAC218C8E2483618577ED94A60C30945746DE33C",
+      "bytes": 4192,
+      "date_tag": "20261025"
+    },
+    {
+      "file": "T020_CNB02_G0_ATTACK_COUNT_NONIDENTITY_AUDIT_20261027_05H.md",
+      "sha256": "F81C5C9D6E83FD71A89DB1B17138ACD93127027EC96DD1E5685B3BB4EE149537",
+      "bytes": 4865,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "T020_CNB02_G0_SAVED_PRESTATE_CLOCK_AND_B04_CACHE_RECEIPTS_20261027_04H.md",
+      "sha256": "DA230F14006CB4B545CA1AD4F1DA1AFEEB4248393DB7226D94F0B261AB0F2A2C",
+      "bytes": 7589,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "T020_CNB02_G1_CLICK_SAVE_ORDER_RECONCILIATION_20261025_15H.md",
+      "sha256": "36CF7421B927AB785160C9BC3BB3402E7A550B5530145BA62819ADCB0B845B86",
+      "bytes": 4875,
+      "date_tag": "20261025"
+    },
+    {
+      "file": "T020_CNB02_G1_PHASE_CONTRACT_EXECUTABLE_REGRESSION_20261025_16H.md",
+      "sha256": "230D52901E317BFD0AB08E20027CEC26750658578C7EA29467852004F81F66DF",
+      "bytes": 4303,
+      "date_tag": "20261025"
+    },
+    {
+      "file": "T020_CNB02_G2_ACTIVE_WINDOW_SCHEMA_REVIEW_20261025_17H.md",
+      "sha256": "6B23BCC7B934BAAFF834C40B7919337CB062F6A20FA26B6C3237B834026D301C",
+      "bytes": 4987,
+      "date_tag": "20261025"
+    },
+    {
+      "file": "T020_CNB02_G2_CROSS_GENERATION_PARITY_GATE_20261026_10H.md",
+      "sha256": "0584365A103610A04ACAA08923AF2CC864ACB6537EE3F677F31ED78107BFC4BB",
+      "bytes": 4835,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "T020_CNB02_G2_CROSS_ROLE_VISIBLE_ALIAS_DIAGNOSTIC_20261026_1158.md",
+      "sha256": "3CE52E96FB8F2542682065C0F4ECDDE7B00F234A13CFA54B7C3AABF9E5112AA1",
+      "bytes": 4750,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "T020_CNB02_G2_PLACEHOLDER_IDENTITY_REVIEW_20261026_13H.md",
+      "sha256": "23F1C78F6BBA3B705D695522F57771B8B252D2258F4C010818018BD6DC90FFC4",
+      "bytes": 3755,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "T020_CNB02_G2_ROSTER_ROLE_COVERAGE_REGRESSION_20261026_09H.md",
+      "sha256": "759606BA516928C21A623FE3C2A3F8CEB9DA73A8CCD872C417C89BBB6A4DAD91",
+      "bytes": 4786,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "T020_CNB02_G2_ROSTER_SEMANTIC_GAP_READONLY_20261025_10H.md",
+      "sha256": "39DBE2D6F9688F93253D59E31EC28AE5C3F654E7F62F5C9CCEC0105D39185602",
+      "bytes": 4714,
+      "date_tag": "20261025"
+    },
+    {
+      "file": "T020_CNB02_G2_ROSTER_SHAPE_NEGATIVE_EXEC_20261026_08H.md",
+      "sha256": "CD5459C17FF88735D62518326FE7A36D1168B9E023ED2786ECB89E8BB0A64BF4",
+      "bytes": 4386,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "T020_CNB02_G2_SEMANTIC_REVIEW_RUNNER_20261025_11H.md",
+      "sha256": "A8B9430B2A852CF05B679963DF1CC06B635EB57F20B720CFF465B7B4FE0BB744",
+      "bytes": 3446,
+      "date_tag": "20261025"
+    },
+    {
+      "file": "T020_CNB02_G2_SUPPORT_PARTICIPATION_DEPLOYMENT_REVIEW_20261026_1253.md",
+      "sha256": "34DF7D4731A184EE4E2BFD9D9962C0810A36D178C7B501B00A20A960CCDFDD3C",
+      "bytes": 4211,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "T020_CNB02_INYUME_DEATH_SELECT_PROVENANCE_GATE_20261025_07H.md",
+      "sha256": "53A548927F82492800503EA15529AA83DD6AE16E906CD395DB33876614608DDA",
+      "bytes": 5578,
+      "date_tag": "20261025"
+    },
+    {
+      "file": "T020_CNB02_MODE2_PREACTIVE_PHASE_BOUNDARY_20261025_18H.md",
+      "sha256": "5D8DE36CA113FB8948C9CE669F90BDBE3F69E73206CFAD643A20E189352E3C20",
+      "bytes": 4473,
+      "date_tag": "20261025"
+    },
+    {
+      "file": "T020_CNB02_PO2_OPTIONAL_EVENT_CANCEL_AUDIO_VISUAL_GATE_20261025_06H.md",
+      "sha256": "E027B09AFE0773C5E91A06C0B234635C5829699A675699D31A8BE420AFE929B5",
+      "bytes": 5444,
+      "date_tag": "20261025"
+    },
+    {
+      "file": "T020_CNB02_POINTER_IDENTITY_EPOCH_OVERLAP_20261026_1755.md",
+      "sha256": "259A5C0D4D48DDBEDA80092E96138C7C969388FFE59C575E2CFE67CE5E191D34",
+      "bytes": 4079,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "T020_CNB02_POSTBATTLE_WAR_TREE_VS_DEPLOYED_G2_PHASE_GATE_20261025_12H.md",
+      "sha256": "D06023527E6D9CC4D3055C8D86E3D22E97B96AF9E98E642DB92DC9338710ACB9",
+      "bytes": 4472,
+      "date_tag": "20261025"
+    },
+    {
+      "file": "T020_CNB02_PREPARED_POINTER_FALSE_POSITIVE_REPLAY_20261026_15H.md",
+      "sha256": "F7EF035FC8F616B135136975D4AE024F5F3081176DAE6571D535A373F666C376",
+      "bytes": 4756,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "T020_CNB02_PREPOST_ACTIVE_POINTER_RETENTION_AUDIT_20261026_17H.md",
+      "sha256": "5A1499251B65AE13B693FCC3B033CF73BD7B1D747AF63B1CBF5BAA2B6F66158A",
+      "bytes": 5008,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "T020_CNB02_SPOT_POWER_EVENT_GATE_CROSSWALK_20261025_04H.md",
+      "sha256": "B5388800CDA83D30426818A9AE79D8EB4419F3939DF6043C7DF2969BFF94508F",
+      "bytes": 4909,
+      "date_tag": "20261025"
+    },
+    {
+      "file": "T020_CNB02_STAGE13_WATCH_CROSSRUN_PROVENANCE_GATE_20261026_2044.md",
+      "sha256": "606B0AE6ABDBE62FBE7B636EE0440DC7F47CE8A3E5A36BAE89D0A5641AB6635F",
+      "bytes": 4831,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "T020_CNB02_WATCH1_OBSERVATION_BRACKET_EXEC_20261025_20H.md",
+      "sha256": "92BF7265EF6FCF571F8B9EE4BB3B59A377D7A77D214C58CB0B0F8E44657156AD",
+      "bytes": 4069,
+      "date_tag": "20261025"
+    },
+    {
+      "file": "T020_CNB02_WATCH1_SAMPLING_BOUNDS_20261025_19H.json",
+      "sha256": "E5AEA5AA06EDC33AE2CED416AD1BAB7754EB01213BE98E80DBF3A7232A06475E",
+      "bytes": 2598,
+      "date_tag": "20261025",
+      "json_parse": "PASS"
+    },
+    {
+      "file": "T020_CNB02_WATCH1_SAMPLING_BOUNDS_20261025_19H.md",
+      "sha256": "B4E7BDEDB3A42170F74D0000CC685BA51FD2DB816A9729614406F50E923B68FB",
+      "bytes": 3800,
+      "date_tag": "20261025"
+    },
+    {
+      "file": "T020_CNB02_WORLD_RESET_VS_FIGHT_EVENT_EPOCH_20261025_05H.md",
+      "sha256": "A731FB485D6F4138BAA23A0285985C2EF1EC3D81182BCCE0359FFC9AEB287B89",
+      "bytes": 4825,
+      "date_tag": "20261025"
+    },
+    {
+      "file": "T020_G0_USER_LABEL_TO_SOURCE_SPOT_CROSSWALK_20261025_03H.md",
+      "sha256": "69ECF69A271C1742A0A6B385DD265B534944400A2F4B9E4FDB943B50A99DB11D",
+      "bytes": 4991,
+      "date_tag": "20261025"
+    },
+    {
+      "file": "T020_G1_SAVED_CANDIDATE_WATCH_WINDOW_PREFLIGHT_20261025_02H.md",
+      "sha256": "3021C3A0A5E351B099CF3DCE85A2B85AC9EFD5F0AB8DBA22FD6F78783619CBB9",
+      "bytes": 4725,
+      "date_tag": "20261025"
+    },
+    {
+      "file": "T020_GOLDEN_WEAK_HELPER_CONSUMER_SCOPE_20261027_14H.md",
+      "sha256": "BC5F46F3FC5337B1C364B3E3966425EB4FEEFB86C77B445D2539211EBA1400F8",
+      "bytes": 5009,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "T020_LEGACY_V3_CALLSITE_COVERAGE_20261025_08H.md",
+      "sha256": "C55E210EA9CF8FF86E090ED367AF5E6BBFA1A0E6D5956EA09D140B55DE350A78",
+      "bytes": 4463,
+      "date_tag": "20261025"
+    },
+    {
+      "file": "T020_NATIVE_LOCAL_JMP_VS_V3_CALLGRAPH_SCOPE_20261025_09H.md",
+      "sha256": "08B08515A55D4BBDF7910BC83BE39D6DD6586A122E3594355265166BF65A9FD1",
+      "bytes": 4707,
+      "date_tag": "20261025"
+    },
+    {
+      "file": "T020_POSTBATTLE_WARTREE_EVIDENCE_NAMESPACE_AUDIT_20261025_01H.md",
+      "sha256": "68D57A58485CB88640672B034F1934450CC458C077150EA5A9CE1C575FA9C153",
+      "bytes": 5590,
+      "date_tag": "20261025"
+    },
+    {
+      "file": "T020_STAGE12_ATTACKMAP_HELPMAP_NONEXCLUSIVE_ROLE_20261026_02H.md",
+      "sha256": "713F5E1D90C67AD065C31179444846B52373B5349F127FDDDE798045F95513DF",
+      "bytes": 4561,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "T020_STAGE12_PARTICIPATION_COVERAGE_LOWER_BOUND_20261026_03H.md",
+      "sha256": "C43D0B4508A668D2A2436ECD775BA394EC960B6584A8FD5AE2D340ECCC5438DA",
+      "bytes": 4099,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "T020_STAGE13_ACTIVE_PENDING_POINTER_EPOCH_20261027_0044.md",
+      "sha256": "89311992F3642457E29240C25FEFB668483DE107355DFEC8594CE4F4ADE5D1DC",
+      "bytes": 4540,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "T020_STAGE13_MEMORY_REGION_NONOVERLAP_AUDIT_20261027_01H.md",
+      "sha256": "C8517B8CD8AF5191C3FF98875D387B7865E050B4F259E47B6988779274E246B9",
+      "bytes": 4132,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "T020_STAGE13_POWER_ROLE_COVERAGE_BRIDGE_20261026_05H.md",
+      "sha256": "C7C7EB278510F26435E606229C848879C615E05142AE3B96D7F2D9F47EF3471A",
+      "bytes": 5007,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "T020_STAGE13_RAW8_DIRECT_BYTE_ATTESTATION_20261026_22H.md",
+      "sha256": "142289925672D7A7EEF89B1FBB82C77249A81CD1D834A705397C3358364B19AA",
+      "bytes": 4601,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "T020_STAGE13_SIDEPAIR_ROLE_RESULT_SEPARATION_20261026_06H.md",
+      "sha256": "1964ED257461381449B649E453504FDE421897E3C666B4C1F4B14F3FE9A32B7F",
+      "bytes": 4309,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "T020_STAGE13_V7_TASK_SLOT_OCCUPANCY_AUDIT_20261026_2355.md",
+      "sha256": "9BF499A7DFA07057DE98A96E01B9BFED8A3E30E2E25C126CFADD84642BB8196F",
+      "bytes": 4979,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "T020_STAGE13_V7_TASK_VECTOR_LIMIT_GAP_20261026_2257.md",
+      "sha256": "E7E2973E24B03DE8A8AC371245C8C4D64A6DEFEB7ACCE7CF180198172CFDBC3F",
+      "bytes": 5022,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "T020_STAGE15_SHARED_RECORD_G3G4_CROSSWALK_20261026_07H.md",
+      "sha256": "E5DAE87E8F70ED3B173D71FCE63E9B53DA3E988C5F96592053FA021D600ED09D",
+      "bytes": 4548,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "T020_STAGE8_RECORDER_READER_BOUNDARY_CROSSWALK_20261025_22H.md",
+      "sha256": "66002D33E221BEE99F4A5966615DE6A3BCF54AB3F9F96C86314A983C82097486",
+      "bytes": 4407,
+      "date_tag": "20261025"
+    },
+    {
+      "file": "T020_T011_FOLLOW_COMPILER_RESULT_NONIDENTITY_GATE_20261027_20H.md",
+      "sha256": "585063EABEB1F61B6C804C38EF66C96CE094B2CF047A68E3A85961DDED272CD3",
+      "bytes": 5009,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "T020_T011_SOURCE_TRIAD_SENTINEL_NEGATIVE_GATE_20261027_16H.md",
+      "sha256": "AC1CF5849DD458C641B08352652595E706976DBB00DA44BB48C32846FF2AD489",
+      "bytes": 4425,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "T020_T011_SUMMON_GROUP_PARENT_NONIDENTITY_20261027_15H.md",
+      "sha256": "16AF7574A6ED3C09F51707ACDA7293FF0488D566CD7C7CF5FB4CBB7F322EA819",
+      "bytes": 4313,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "T020_T012_RUSH_GAMETASK_VIRTUAL_GATE_CROSSWALK_20261027_17H.md",
+      "sha256": "90988940882928B6EF1325EDF1FEBF97606E75DB62ECFBBAF361A6BF05AD771E",
+      "bytes": 4949,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "T020_T012_RUSH_INTERVAL_SEED_BURST_NEGATIVE_GATE_20261027_18H.md",
+      "sha256": "26B6A28E62B6E446FACF13785CECE68565BE7668C36441FEA5D3E13B374E5A2A",
+      "bytes": 4577,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "T020_T012_RUSH_RAW_COMPILED_ATTEMPT_SEPARATION_20261027_19H.md",
+      "sha256": "68120921EDB1A4C7798C79400E21C97FBC9D95B7C8A01058A715ED99DEC6D87B",
+      "bytes": 3852,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "T020_T013_BACKLINK_NONUNIQUE_AUDIT_20261027_12H.md",
+      "sha256": "400BC435275EAEDB56E974F35D0D6F1FF45EF77A31D3767CF37E222902D07518",
+      "bytes": 3919,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "T020_T013_BACKLINK_NONUNIQUE_CASES_20261027_12H.json",
+      "sha256": "A1EE8FAE5F41889F66DFEFA90503FBC055824198321063E3D701F7C94582A0FA",
+      "bytes": 1814,
+      "date_tag": "20261027",
+      "json_parse": "PASS"
+    },
+    {
+      "file": "T020_T013_GOLDEN_HELPER_FALSE_POSITIVE_AUDIT_20261027_13H.md",
+      "sha256": "A5DE883F8CC27FA5DC01A2113A09EFB086019611180CF42A7CDDBC1365F7B251",
+      "bytes": 4801,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "T020_T013_HEAL_PENDING_TICK_ACCEPTANCE_20261027_09H.md",
+      "sha256": "DC341C8967AA5FF4A487A08F9A58DAB833ECF7881BA7D46392605B9EFE20E566",
+      "bytes": 4213,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "T020_T013_HEAL_PENDING_TICK_FIXTURES_20261027_09H.json",
+      "sha256": "5C94DD3F0B6611DC98AA66075EB9A03989FA827F5EA8802C054351795EF8FB83",
+      "bytes": 1307,
+      "date_tag": "20261027",
+      "json_parse": "PASS"
+    },
+    {
+      "file": "T020_T013_HEAL_TEARDOWN_FIXTURES_20261027_10H.json",
+      "sha256": "2ADDACC8375684ECCB9F7E9FEDCF379C43DD9D50BFDBF7A7A46625B69EA53D55",
+      "bytes": 890,
+      "date_tag": "20261027",
+      "json_parse": "PASS"
+    },
+    {
+      "file": "T020_T013_HEAL_TEARDOWN_POOL_REUSE_GATE_20261027_10H.md",
+      "sha256": "08C90D1BA3EC1867696E14D088EA97FD4F52FAF46CF242D69215980C41737A2A",
+      "bytes": 4745,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "T020_T013_MANAGER_IDENTITY_FIXTURES_20261027_11H.json",
+      "sha256": "2EDD9C57CC8813636490AF41F3F1E48BA352D95C0C64E2EBCFBF67814B023B7C",
+      "bytes": 1706,
+      "date_tag": "20261027",
+      "json_parse": "PASS"
+    },
+    {
+      "file": "T020_T013_MANAGER_IDENTITY_PROVENANCE_GATE_20261027_11H.md",
+      "sha256": "CF5615B1E0C7B4ABA42BDE8FED043C8C410028F78E6B4C49767B062BE3AE7A15",
+      "bytes": 4440,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "T020_T013_SUPPORT_CACHE_LOGICAL_EMPTY_AND_G2_NONIDENTITY_20261027_06H.md",
+      "sha256": "5DC0AD3855DB344F0F60B0CC96ACA960EB915A6E55511DD1B96C70C8404FDF8F",
+      "bytes": 6416,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "T020_T013_SUPPORT_EFFECT_VISUAL_CALL_SEPARATION_20261027_07H.md",
+      "sha256": "0152E6B7751AC46C35720AD4BD193E1456DCE84FD6FF5A8F1A952754218B3BAF",
+      "bytes": 4563,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "T020_T013_VTABLE_SLOT_STATIC_ROUTE_NEGATIVE_GATE_20261027_08H.md",
+      "sha256": "CEBCDEA8DA920F7E7BE47B44B86956B5767F1AE15A7541FB82EC8D39EEB9335E",
+      "bytes": 3909,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "T020_T028_COUNT_MODE_PRECLEAR_GATE_20261027_23H.md",
+      "sha256": "FBB51C9BE4A305726B6CF871ADFC59B268948617498740B691B2FEF933962F3B",
+      "bytes": 4436,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "T020_T028_COUNT_QUEUE_LIFETIME_OWNER_SEPARATION_20261027_22H.md",
+      "sha256": "AA97D0AADE74810EAD6740D6207F8FC1C74A79FEB297261D1B38787E54F0C20E",
+      "bytes": 4446,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "T020_T028_DEAD_EVENT_COUNT_COLOR_ROUTE_GATE_20261027_21H.md",
+      "sha256": "5B92ECE1EDADA172DA1069C5BD08EF0D621EF9685223494ECF994FAF9E43A2B3",
+      "bytes": 4767,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "T020_T028_HASH_ORDER_DUPLICATE_CONDITIONAL_GATE_20261027_03H.md",
+      "sha256": "B95D1389E60FACBAD5F85138486B9AF377A6DA6939EF69653322157E9213F698",
+      "bytes": 4107,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "T020_T028_ROUTE_CACHE_BIT28_KEY_ALIAS_AUDIT_20261027_02H.md",
+      "sha256": "25489B5E40BE2884EC0CFE34212C4E8CEA2475D60B96222D25B6BC390A7F7E29",
+      "bytes": 5177,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "T020_V7_COLLECTOR_CLI_LABEL_PROVENANCE_20261026_00H.md",
+      "sha256": "4B8B908AE78A7705106A7961358BB23D3DC8DFD9C9AE32DDB8370CC3AF0CD13B",
+      "bytes": 3955,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "T020_V7_LIVE_EVIDENCE_CLASS_RECONCILIATION_20261025_23H.md",
+      "sha256": "6132F0C29A557CBF1018C0DB6AD724E4B085B1DDDE0D70D227B71A5747BD4DE4",
+      "bytes": 4714,
+      "date_tag": "20261025"
+    },
+    {
+      "file": "T020_V7_TASK_COUNTER_DRIFT_BOUND_20261026_04H.md",
+      "sha256": "2ECC11FF6BDB5B275C7383CC9D1599F79F65521B0BA014DFAB6CB12EBDA1DD0A",
+      "bytes": 4524,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "T020_V7_TROOP_MEMBER_EPOCH_CLOSURE_REPLAY_20261026_01H.md",
+      "sha256": "44136D88FC2D09BDA82B152CB67BACE9A28461D2CC344DF661AF61474E0A91DB",
+      "bytes": 5511,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "T020_WATCH_READY_LABEL_COLLISION_STATIC_AUDIT_20261026_14H.md",
+      "sha256": "0A9FC95BD0F3E26E264D193962CCFC91B40C654407B391603B9AAC3E0D93E121",
+      "bytes": 4429,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "T020_WORK_OBS_PARENT_AND_SCENARIO_CENSUS_20261025_00H.md",
+      "sha256": "B7928553F727A19B72D961405DE26D187606D9660811A723CB32A2C201FEF94E",
+      "bytes": 4975,
+      "date_tag": "20261025"
+    },
+    {
+      "file": "t020_cnb02_capture_exception_class_epoch_20261026_1946.py",
+      "sha256": "0EA32882F38E2EA645500225A3F2F535B69B1A03B83CA538B114FFC1B2252073",
+      "bytes": 3571,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "t020_cnb02_capture_gap_temporal_coverage_20261026_1849.py",
+      "sha256": "E9BC22709D3C4C65B6A6909C6E87F5339A35F25352318F28456A0C3CFC8A52DE",
+      "bytes": 4400,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "t020_cnb02_dual_watch_counter_phase_gate_20261025_21H.py",
+      "sha256": "B2C27CB98B739401917E47F4D2D952BDC948CD02137F452170ECB1FF945C39B4",
+      "bytes": 4123,
+      "date_tag": "20261025"
+    },
+    {
+      "file": "t020_cnb02_g1_phase_contract_matrix_20261025_16H.py",
+      "sha256": "348916EB43CE0CBF48B23207F6D7B960F85467DA4D2071794F7DC63B14A5D857",
+      "bytes": 5265,
+      "date_tag": "20261025"
+    },
+    {
+      "file": "t020_cnb02_g2_active_window_review_20261025_17H.py",
+      "sha256": "1035B5420AE40D4D45A45E685F38014F3DEE824DE361143F32FE65C29C486359",
+      "bytes": 5260,
+      "date_tag": "20261025"
+    },
+    {
+      "file": "t020_cnb02_g2_cross_generation_parity_guard_20261026_10H.py",
+      "sha256": "E2F206F30F3D66DE9BD91D4A0C62DDC081FADF8403F69250C5594F42C2317CFF",
+      "bytes": 4779,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "t020_cnb02_g2_cross_role_visible_alias_guard_20261026_1158.py",
+      "sha256": "9EBB19F73F284D119FA536308AF9DA9694DB8181A0E5E0DA2189C0FA2B2F6AC8",
+      "bytes": 4337,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "t020_cnb02_g2_placeholder_identity_review_20261026_13H.py",
+      "sha256": "3A1B5F0A10A5F29657FB2CA93D5A4F5ECC755BAE5B35A207A1087D30B5DB92B4",
+      "bytes": 4676,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "t020_cnb02_g2_roster_role_coverage_overlay_20261026_09H.py",
+      "sha256": "3D81E8435DFE9CA2EA6F3207476789393A67973A67B622A1EB79CDD7AC65634F",
+      "bytes": 4303,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "t020_cnb02_g2_roster_shape_diagnostic_20261026_08H.py",
+      "sha256": "36F12B3B71C249A8FD56F7F65E13D3A513333F3F4538AB5BC95C82291E30A032",
+      "bytes": 4874,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "t020_cnb02_g2_semantic_review_20261025_11H.py",
+      "sha256": "A76D5499B1751443705649B02687DEA5D6FCBDEBDA5323A209695DC9F5736E66",
+      "bytes": 6449,
+      "date_tag": "20261025"
+    },
+    {
+      "file": "t020_cnb02_g2_support_presence_deployment_review_20261026_1253.py",
+      "sha256": "0320A180906CBFF14EC943011FB24BDA1835D2C53669EF7C99724513A01F1F4A",
+      "bytes": 5165,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "t020_cnb02_g2_unhashable_role_failclosed_20261026_11H.py",
+      "sha256": "2AB5810741A6E4B42F67D356AD65ADAB3084B60CDB7D00EDE394ADBA6E35D47D",
+      "bytes": 3230,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "t020_cnb02_mode2_preactive_phase_review_20261025_18H.py",
+      "sha256": "F0A4122B4568906AF1753A7FB7CFE1497172D30CEDDF1DF5138FEB8001E72E7A",
+      "bytes": 3269,
+      "date_tag": "20261025"
+    },
+    {
+      "file": "t020_cnb02_pointer_identity_epoch_overlap_20261026_1755.py",
+      "sha256": "091D8D94452E9311A1EDB6B0E138E9585C45B3825BAA527F884DE5DE516D611D",
+      "bytes": 4224,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "t020_cnb02_postbattle_vs_g2_phase_gate_20261025_12H.py",
+      "sha256": "976E05D6B93DD72370672158507A601C91C795A44EA9532B40258394B9E31ABD",
+      "bytes": 4798,
+      "date_tag": "20261025"
+    },
+    {
+      "file": "t020_cnb02_prepared_pointer_false_positive_replay_20261026_15H.py",
+      "sha256": "6893047A33218D2EAA068827C8559619CC159638B5FC44D4F748899631B63A61",
+      "bytes": 4102,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "t020_cnb02_stage13_watch_crossrun_provenance_20261026_2044.py",
+      "sha256": "6BE8A6B40556537319BB28918D9BD3D2AE494E2E9D17A52DC2FC8CC7B048CD4B",
+      "bytes": 4513,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "t020_cnb02_watch1_observation_bracket_gate_20261025_20H.py",
+      "sha256": "F2F152A6A7B0F1B6E92E4AB1E492D560F1EE4F2FB52C107A1F1C5D0F7A545805",
+      "bytes": 4695,
+      "date_tag": "20261025"
+    },
+    {
+      "file": "t020_cnb02_watch_prepost_pointer_lifecycle_20261026_17H.py",
+      "sha256": "8D917457CAF6AD56ED43DFB39A79016A57199E46F5FFB09FA4B0BA632F2897FA",
+      "bytes": 3569,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "t020_e_20261025_27_inventory_20261029_05H.py",
+      "sha256": "A6758EE97D3EAD74DA95334EBE2F812F7084B3BC45D32C40E81960376A4E7301",
+      "bytes": 3359,
+      "date_tag": "20261025"
+    },
+    {
+      "file": "t020_g0_attack_count_nonidentity_20261027_05H.py",
+      "sha256": "B2171CEE51153CBAE8809ADABE3966541502FC9BEC0FF3393EBCEF2949BF65C1",
+      "bytes": 2261,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "t020_golden_helper_consumer_scope_guard_20261027_14H.py",
+      "sha256": "3250694A8890FC8EA224B48BCD87ED86156EB241DA1FD5ED3243ECE3E195C3B7",
+      "bytes": 2693,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "t020_stage12_attackmap_helpmap_role_guard_20261026_02H.py",
+      "sha256": "7241B05F1AB6356AA6356AF69F3225C08FA2710ED382E756843486FD897783CC",
+      "bytes": 3346,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "t020_stage12_participation_coverage_lower_bound_20261026_03H.py",
+      "sha256": "779AFC0F0F4A8AFAB93DBDE8A28E1975463E356AAB9149473ECD9DCB0C220B01",
+      "bytes": 2952,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "t020_stage13_active_pending_alias_audit_20261027_0044.py",
+      "sha256": "DE99824214A96E6846A9CE2EB7A7D4A54014E221F9B1ABE18D65102FA319E6C2",
+      "bytes": 2497,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "t020_stage13_memory_region_overlap_audit_20261027_0145.py",
+      "sha256": "40B6C8DAF60CDDD480D39223B9F41A961EEDE8051AA73A13AE967817F5443BF5",
+      "bytes": 2306,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "t020_stage13_power_role_coverage_gate_20261026_05H.py",
+      "sha256": "2F5A740687F3F7588FC3DB3A394EAEA5E5FF62345FCCDEC5CA61AFDB07A44F87",
+      "bytes": 5671,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "t020_stage13_sidepair_role_result_separation_20261026_06H.py",
+      "sha256": "A837623D95BCFCB708029FBED35E6F968E14465881D9A1F1EF255A915D4CEE62",
+      "bytes": 4679,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "t020_stage15_shared_state_exit_crosswalk_20261026_07H.py",
+      "sha256": "15561B2545BF6F09AE7192E8C1693C4D430D07966793DC2A79744A6AAB78DAED",
+      "bytes": 5823,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "t020_stage8_recorder_reader_contract_audit_20261025_22H.py",
+      "sha256": "44FD3ECCDDD90968D8CBDB1C4C28BBA586081F09BD95299E7BF145C8F3D016D0",
+      "bytes": 4735,
+      "date_tag": "20261025"
+    },
+    {
+      "file": "t020_t011_follow_compiler_result_nonidentity_20261027_20H.py",
+      "sha256": "385C5015821698B44FB11EE369C4889E65C3C4073F0E1F6E50F9402BC67DEA78",
+      "bytes": 4955,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "t020_t011_summon_group_parent_nonidentity_20261027_15H.py",
+      "sha256": "092050A11FD392D06BE3CA48EA406AB128CD4EC219DEC2EDAB073BD24C5D9B63",
+      "bytes": 6267,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "t020_t011_summon_source_branch_identity_gate_20261027_16H.py",
+      "sha256": "374AF7FA64974BB180E1A6915FE8CCD33B8F716B19EC3AE542E8521050E70098",
+      "bytes": 6292,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "t020_t012_rush_interval_seed_burst_gate_20261027_18H.py",
+      "sha256": "36604A7DB49DCE02EADC800D8281CB1A6E6A399E566FE1F7C4C109E15E907C70",
+      "bytes": 4825,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "t020_t012_rush_manager_virtual_gate_20261027_17H.py",
+      "sha256": "6577DD36B86A7A8E871B158816676840151A1C14FBED08FE52732A5D305A5229",
+      "bytes": 4549,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "t020_t012_rush_raw_compiled_attempt_separation_20261027_19H.py",
+      "sha256": "B5C71441EE8F2267BCD722E0B291ED892A7345F64A7854D32E6520A3FD1EE17F",
+      "bytes": 4378,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "t020_t013_11h_helper_byte_attestation_audit_20261027_1350.py",
+      "sha256": "4BC4FA21F01E01E9BFE5E564EA25767EDF1FA712E06D4C379B839234005AD2E5",
+      "bytes": 4429,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "t020_t013_backlink_nonunique_gate_20261027_12H.py",
+      "sha256": "3CCD7216E8E3769C72067788B4CC5A2E8A7EF43FF3F9BECF0C67D3F08989AE3D",
+      "bytes": 2895,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "t020_t013_effect_vfx_independence_gate_20261027_07H.py",
+      "sha256": "8EE3F6CE10D5B73361C2D527C83A1A23A1B36F910A01AEDDA6EBBF3DCF6E3AD4",
+      "bytes": 2976,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "t020_t013_golden_helper_false_positive_audit_20261027_13H.py",
+      "sha256": "482B9FEAE6DEA9EF2FE267FEF9C5F10171E7BAEC0FFC33D6D5D482E75CA33AD7",
+      "bytes": 2929,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "t020_t013_heal_pending_tick_gate_20261027_09H.py",
+      "sha256": "418ECE15AB6B9613A8CFC480C9638C4A743F621CEA1A77ED7618F7DBBDC1A7A0",
+      "bytes": 4403,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "t020_t013_heal_teardown_pool_reuse_gate_20261027_10H.py",
+      "sha256": "AE4A59D4EE1767058D53E63F32F8EBF038E392587B5471ECF75108821402FD6F",
+      "bytes": 6463,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "t020_t013_manager_identity_receipt_gate_20261027_11H.py",
+      "sha256": "452D28FA97A6CCD1C9CD28CFAC8991FEA2D4859A62A89C4B3128DC6FAC264590",
+      "bytes": 3368,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "t020_t013_multiple_holder_backlink_gate_20261027_12H.py",
+      "sha256": "590D24A923E04F1339DC4AF3CB41B3B1060D29AA24396E6969E07A387C817460",
+      "bytes": 3851,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "t020_t013_support_cache_logical_length_gate_20261027_06H.py",
+      "sha256": "F6525BFDEADB8D52645D0B37F6F9EAD32B1958E460A85BD3E4E7E7BBE134C4B6",
+      "bytes": 2626,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "t020_t013_vtable_route_static_gate_20261027_08H.py",
+      "sha256": "79B6B80A0CC0B924FA17EBAD3A96113EC95C60EA9D6BB4AAA2307EA1916E926B",
+      "bytes": 2953,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "t020_t028_count_queue_lifetime_owner_gate_20261027_22H.py",
+      "sha256": "B5A7FB1CBC115B903533FCE80EFB27E0C7D0125C8D8ABCD107044AB618AF89AF",
+      "bytes": 4734,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "t020_t028_count_queue_mode_preclear_gate_20261027_23H.py",
+      "sha256": "B30D6C107A385F3DD926CD10235100D67FD31AF4E42D99A8AB5B230215F0E704",
+      "bytes": 6170,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "t020_t028_dead_event_count_color_route_20261027_21H.py",
+      "sha256": "9BF4886BAD82034C12629A92F28ECF6E8BC6CBC318762BCBF04B4D36FF38E628",
+      "bytes": 3695,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "t020_t028_hash_order_duplicate_window_20261027_03H.py",
+      "sha256": "454F82C21119288A136A04C94C0AEF6591A6AEA0DAF4FB0F5D210C9FD8D5E0BC",
+      "bytes": 2504,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "t020_t028_route_cache_bit28_alias_gate_20261027_02H.py",
+      "sha256": "4DB77B451A5A51BD9A6E6D7616A47B7B992490E443D95CC616E0B9C0D479FB8E",
+      "bytes": 2562,
+      "date_tag": "20261027"
+    },
+    {
+      "file": "t020_v7_legacy_label_provenance_gate_20261026_00H.py",
+      "sha256": "6486264336EDED1C40D307E243322FA8FC522DD43834D41B659052596C4A610D",
+      "bytes": 3810,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "t020_v7_live_evidence_class_gate_20261025_23H.py",
+      "sha256": "E022EF5E876B1361CBBFA3F14C7FC7BD613BD687F4AB39C87C0B26535A9F3419",
+      "bytes": 4174,
+      "date_tag": "20261025"
+    },
+    {
+      "file": "t020_v7_task_counter_drift_gate_20261026_04H.py",
+      "sha256": "5D10F6A6939D7F1119B56284F39AC8A99155C85EE8F9394EB454AAAD39C7D0AD",
+      "bytes": 4175,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "t020_v7_task_slot_occupancy_20261026_2355.py",
+      "sha256": "E41F18E4563C2B1F4F02E1352143CE3A17A2B4B8920C5B80356CFFBA4CDEE384",
+      "bytes": 2911,
+      "date_tag": "20261026"
+    },
+    {
+      "file": "t020_v7_troop_member_epoch_guard_20261026_01H.py",
+      "sha256": "E63C6D43FAC0A7D2E8E5F82745A3721405C7DFAD6B2E7CDDE13C650A43EAA841",
+      "bytes": 3812,
+      "date_tag": "20261026"
+    }
+  ],
+  "invalid_json": [],
+  "previous_library_source_count": 23,
+  "previous_library_original_name_matches": 22,
+  "previous_library_name_mismatches": [
+    "T020_GOLDEN_CAPTURE_SEMANTIC_BIND_CASES_20261028_2149.json"
+  ],
+  "canonical_alias_sha256": "7D574FF25175C4BAB3BF1C2CCDE6744482C05142717DAA8CC82E06F55F04CCAA",
+  "canonical_alias_match": true
+}

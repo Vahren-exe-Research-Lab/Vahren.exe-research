@@ -1,0 +1,113 @@
+{
+  "id": "E-AUDIT-20261023-1651-T018-T020-FASTSIM-EXIT-PROOF-SPLIT-01",
+  "evidence_class": "SYNTHETIC_NEGATIVE_FIXTURES_NOT_GAMEPLAY",
+  "source_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "source_v9_db_sha256": "2629CB2F03ECEC9927E89892C77F847E4CDBA381AB718825C1CA8CFEEEF00EDE",
+  "source_owner": "REA_20261023_1638_P0_FAST_SIM_500TICK_OUTCOME_CONTRACT_STATIC / E independent V9 callers 0x493630",
+  "original_gameplay": "NOT_RUN",
+  "strict_comparison": "NOT_RUN",
+  "cases": [
+    {
+      "id": "FS-01",
+      "family": "fastsim",
+      "return_code": 0,
+      "expected": "STATIC_RETURN0_D220_NO_FINISH"
+    },
+    {
+      "id": "FS-02",
+      "family": "fastsim",
+      "return_code": 0,
+      "claim_native_finish": true,
+      "expected": "BLOCK_FALSE_FINISH"
+    },
+    {
+      "id": "FS-03",
+      "family": "fastsim",
+      "return_code": 1,
+      "claimed_finish_bool": true,
+      "expected": "STATIC_FINISH_BOOL1_MEANING_VERIFY"
+    },
+    {
+      "id": "FS-04",
+      "family": "fastsim",
+      "return_code": 2,
+      "claimed_finish_bool": false,
+      "expected": "STATIC_FINISH_BOOL0_MEANING_VERIFY"
+    },
+    {
+      "id": "FS-05",
+      "family": "fastsim",
+      "return_code": 1,
+      "claimed_finish_bool": false,
+      "expected": "BLOCK_BOOL_CONFLICT"
+    },
+    {
+      "id": "FS-06",
+      "family": "fastsim",
+      "return_code": 2,
+      "claimed_finish_bool": true,
+      "expected": "BLOCK_BOOL_CONFLICT"
+    },
+    {
+      "id": "FS-07",
+      "family": "fastsim",
+      "return_code": 0,
+      "cause": "loop_limit500",
+      "expected": "STATIC_RETURN0_D220_NO_FINISH"
+    },
+    {
+      "id": "FS-08",
+      "family": "fastsim",
+      "return_code": 2,
+      "cause": "loop_limit500",
+      "expected": "BLOCK_500_LIMIT_CONFLICT"
+    },
+    {
+      "id": "FS-09",
+      "family": "fastsim",
+      "return_code": 1,
+      "claim_golden": true,
+      "expected": "BLOCK_PROOF_PROMOTION"
+    },
+    {
+      "id": "FS-10",
+      "family": "fastsim",
+      "return_code": 1,
+      "cross_window": true,
+      "expected": "BLOCK_CROSS_WINDOW"
+    },
+    {
+      "id": "FS-11",
+      "family": "fastsim",
+      "return_code": 1,
+      "dual_commit": true,
+      "expected": "BLOCK_DOUBLE_COMMIT"
+    },
+    {
+      "id": "FS-12",
+      "family": "natural",
+      "return_code": 1,
+      "expected": "VERIFY_NON_FASTSIM_ROUTE"
+    },
+    {
+      "id": "FS-13",
+      "family": "fastsim",
+      "return_code": 1,
+      "process_epoch_verified": false,
+      "expected": "VERIFY_PROCESS_EPOCH"
+    },
+    {
+      "id": "FS-14",
+      "family": "fastsim",
+      "return_code": 3,
+      "expected": "VERIFY_UNKNOWN_CODE"
+    },
+    {
+      "id": "FS-15",
+      "family": "fastsim",
+      "return_code": 2,
+      "claim_native_finish": false,
+      "expected": "BLOCK_MISSING_FINISH"
+    }
+  ]
+}

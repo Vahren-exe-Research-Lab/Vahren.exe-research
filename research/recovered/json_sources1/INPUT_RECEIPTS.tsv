@@ -1,0 +1,3 @@
+role	path	sha256	bytes	notes
+APPROVED_SELECTION	private-approved-selection/hakushin-json_sources1-approved.tsv	8b70980026e36b27a89811ed59a6ffadb1ec2c6eadadcbd696e5dd4fc79f5a52	16758	103 exact literal source identities
+BASELINE_LEDGER	research/recovered/RECOVERY_LEDGER.tsv	523d29ac58a0569ac960967365283732a7f8bba2c993bf12a670f87b3a5b4270	1300826	1877 rows; baseline 68a9a917d651dffe23b2e1ee44ae7297f67b3dc7; source and destination SHA dedup; no matches; no within-batch duplicate SHA

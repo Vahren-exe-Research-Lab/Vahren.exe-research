@@ -1,0 +1,7211 @@
+{
+  "record_count": 30634,
+  "parent_ref_count": 21214,
+  "parent_not_found": 56,
+  "ambiguous_candidate_count": 1292,
+  "same_kind_plus_other_kind_count": 1292,
+  "same_kind_plus_other_kind_examples": [
+    {
+      "child": {
+        "order": 225,
+        "kind": "class",
+        "name": "c_you",
+        "parent": "base",
+        "file": "101_キャラクリ\\chara_create_unit.dat",
+        "line": 35
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 493,
+        "kind": "unit",
+        "name": "base1",
+        "parent": "base",
+        "file": "10_ユニット\\00_base.dat",
+        "line": 37
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 497,
+        "kind": "class",
+        "name": "akushiroyo_set_cl",
+        "parent": "base",
+        "file": "10_ユニット\\00_簡易戦闘.dat",
+        "line": 1
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 646,
+        "kind": "class",
+        "name": "c_akagi",
+        "parent": "zou",
+        "file": "10_ユニット\\05_ヴォイス・ドラマ革命企画.dat",
+        "line": 457
+      },
+      "candidates": [
+        {
+          "kind": "class",
+          "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+          "line": 997,
+          "order": 5785
+        },
+        {
+          "kind": "movetype",
+          "file": "movetype.dat",
+          "line": 172,
+          "order": 29566
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 914,
+        "kind": "class",
+        "name": "in000",
+        "parent": "base",
+        "file": "10_ユニット\\1001_傭兵_淫夢くん.dat",
+        "line": 933
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 1692,
+        "kind": "class",
+        "name": "c_isama2",
+        "parent": "a0102",
+        "file": "10_ユニット\\91_放浪_クッキー☆.dat",
+        "line": 1364
+      },
+      "candidates": [
+        {
+          "kind": "class",
+          "file": "20_クラス\\01_03_マリナーズ_空手部_キモティカ.dat",
+          "line": 49,
+          "order": 5698
+        },
+        {
+          "kind": "voice",
+          "file": "serihu.dat",
+          "line": 5622,
+          "order": 30018
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 1803,
+        "kind": "unit",
+        "name": "goodtoono",
+        "parent": "toono",
+        "file": "10_ユニット\\B_11_閉店の日.dat",
+        "line": 323
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\17_遠野の世界.dat",
+          "line": 1,
+          "order": 1168
+        },
+        {
+          "kind": "movetype",
+          "file": "movetype.dat",
+          "line": 150,
+          "order": 29563
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 1953,
+        "kind": "unit",
+        "name": "u_misya_hashira",
+        "parent": "base",
+        "file": "10_ユニット\\B_23_リュージボス.dat",
+        "line": 1443
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 1954,
+        "kind": "class",
+        "name": "misya_hashira",
+        "parent": "base",
+        "file": "10_ユニット\\B_23_リュージボス.dat",
+        "line": 1454
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 2155,
+        "kind": "skill",
+        "name": "self_a00a66r",
+        "parent": "self_a000",
+        "file": "116_仮設ランダムイベント61-70\\randomev66_unit_class_a00a66r.dat",
+        "line": 3
+      },
+      "candidates": [
+        {
+          "kind": "class",
+          "file": "50_その他新システム\\self_summon_classes.dat",
+          "line": 2,
+          "order": 24488
+        },
+        {
+          "kind": "skill",
+          "file": "50_その他新システム\\self_summon_skills.dat",
+          "line": 19,
+          "order": 24937
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 2157,
+        "kind": "skill",
+        "name": "self_a00a66r2",
+        "parent": "self_a000",
+        "file": "116_仮設ランダムイベント61-70\\randomev66_unit_class_a00a66r.dat",
+        "line": 12
+      },
+      "candidates": [
+        {
+          "kind": "class",
+          "file": "50_その他新システム\\self_summon_classes.dat",
+          "line": 2,
+          "order": 24488
+        },
+        {
+          "kind": "skill",
+          "file": "50_その他新システム\\self_summon_skills.dat",
+          "line": 19,
+          "order": 24937
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 2159,
+        "kind": "skill",
+        "name": "self_a00a66r3",
+        "parent": "self_a000",
+        "file": "116_仮設ランダムイベント61-70\\randomev66_unit_class_a00a66r.dat",
+        "line": 21
+      },
+      "candidates": [
+        {
+          "kind": "class",
+          "file": "50_その他新システム\\self_summon_classes.dat",
+          "line": 2,
+          "order": 24488
+        },
+        {
+          "kind": "skill",
+          "file": "50_その他新システム\\self_summon_skills.dat",
+          "line": 19,
+          "order": 24937
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 2161,
+        "kind": "class",
+        "name": "a00a66r",
+        "parent": "base",
+        "file": "116_仮設ランダムイベント61-70\\randomev66_unit_class_a00a66r.dat",
+        "line": 31
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 2167,
+        "kind": "class",
+        "name": "inyume66r",
+        "parent": "base",
+        "file": "116_仮設ランダムイベント61-70\\randomev66_unit_class_inyume66r.dat",
+        "line": 74
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 2170,
+        "kind": "class",
+        "name": "c_pr66_master",
+        "parent": "base",
+        "file": "116_仮設ランダムイベント61-70\\randomev66_unit_class（マスター不在につき不使用）.dat",
+        "line": 4
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 2173,
+        "kind": "unit",
+        "name": "pr66_master",
+        "parent": "base",
+        "file": "116_仮設ランダムイベント61-70\\randomev66_unit_class（マスター不在につき不使用）.dat",
+        "line": 75
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 3385,
+        "kind": "unit",
+        "name": "toono_rage",
+        "parent": "toono",
+        "file": "11_表情差分\\F差分_99_共通差分.dat",
+        "line": 1635
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\17_遠野の世界.dat",
+          "line": 1,
+          "order": 1168
+        },
+        {
+          "kind": "movetype",
+          "file": "movetype.dat",
+          "line": 150,
+          "order": 29563
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 3386,
+        "kind": "unit",
+        "name": "toono_sad",
+        "parent": "toono",
+        "file": "11_表情差分\\F差分_99_共通差分.dat",
+        "line": 1640
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\17_遠野の世界.dat",
+          "line": 1,
+          "order": 1168
+        },
+        {
+          "kind": "movetype",
+          "file": "movetype.dat",
+          "line": 150,
+          "order": 29563
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 3387,
+        "kind": "unit",
+        "name": "toono_gosh",
+        "parent": "toono",
+        "file": "11_表情差分\\F差分_99_共通差分.dat",
+        "line": 1645
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\17_遠野の世界.dat",
+          "line": 1,
+          "order": 1168
+        },
+        {
+          "kind": "movetype",
+          "file": "movetype.dat",
+          "line": 150,
+          "order": 29563
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 3388,
+        "kind": "unit",
+        "name": "toono_conf",
+        "parent": "toono",
+        "file": "11_表情差分\\F差分_99_共通差分.dat",
+        "line": 1650
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\17_遠野の世界.dat",
+          "line": 1,
+          "order": 1168
+        },
+        {
+          "kind": "movetype",
+          "file": "movetype.dat",
+          "line": 150,
+          "order": 29563
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 3389,
+        "kind": "unit",
+        "name": "toono_cum",
+        "parent": "toono",
+        "file": "11_表情差分\\F差分_99_共通差分.dat",
+        "line": 1655
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\17_遠野の世界.dat",
+          "line": 1,
+          "order": 1168
+        },
+        {
+          "kind": "movetype",
+          "file": "movetype.dat",
+          "line": 150,
+          "order": 29563
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 3390,
+        "kind": "unit",
+        "name": "toono_miss",
+        "parent": "toono",
+        "file": "11_表情差分\\F差分_99_共通差分.dat",
+        "line": 1660
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\17_遠野の世界.dat",
+          "line": 1,
+          "order": 1168
+        },
+        {
+          "kind": "movetype",
+          "file": "movetype.dat",
+          "line": 150,
+          "order": 29563
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 3659,
+        "kind": "unit",
+        "name": "ice_joy",
+        "parent": "ice",
+        "file": "11_表情差分\\F差分_99_共通差分.dat",
+        "line": 3079
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\33_INU.dat",
+          "line": 371,
+          "order": 1521
+        },
+        {
+          "kind": "field",
+          "file": "field_01.dat",
+          "line": 487,
+          "order": 29083
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 3660,
+        "kind": "unit",
+        "name": "ice_gosh",
+        "parent": "ice",
+        "file": "11_表情差分\\F差分_99_共通差分.dat",
+        "line": 3084
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\33_INU.dat",
+          "line": 371,
+          "order": 1521
+        },
+        {
+          "kind": "field",
+          "file": "field_01.dat",
+          "line": 487,
+          "order": 29083
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 3661,
+        "kind": "unit",
+        "name": "ice_conf",
+        "parent": "ice",
+        "file": "11_表情差分\\F差分_99_共通差分.dat",
+        "line": 3089
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\33_INU.dat",
+          "line": 371,
+          "order": 1521
+        },
+        {
+          "kind": "field",
+          "file": "field_01.dat",
+          "line": 487,
+          "order": 29083
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 3771,
+        "kind": "unit",
+        "name": "toono_pwpk",
+        "parent": "toono",
+        "file": "11_表情差分\\F差分_99_共通差分.dat",
+        "line": 3692
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\17_遠野の世界.dat",
+          "line": 1,
+          "order": 1168
+        },
+        {
+          "kind": "movetype",
+          "file": "movetype.dat",
+          "line": 150,
+          "order": 29563
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 3783,
+        "kind": "unit",
+        "name": "hori_pwpk",
+        "parent": "hori",
+        "file": "11_表情差分\\F差分_99_共通差分.dat",
+        "line": 3762
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\23_リュージ騎士団.dat",
+          "line": 572,
+          "order": 1335
+        },
+        {
+          "kind": "field",
+          "file": "field_02_神苑_鎌倉.dat",
+          "line": 2022,
+          "order": 29430
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 4409,
+        "kind": "unit",
+        "name": "hideori",
+        "parent": "base",
+        "file": "2000_勢力ストーリー\\po31_event.dat",
+        "line": 2
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 4410,
+        "kind": "unit",
+        "name": "po31_ghost",
+        "parent": "base",
+        "file": "2000_勢力ストーリー\\po31_event.dat",
+        "line": 8
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 4617,
+        "kind": "class",
+        "name": "ru999",
+        "parent": "base",
+        "file": "2023_イベント_リュージ騎士団\\event_23_RPG.dat",
+        "line": 16023
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 4626,
+        "kind": "unit",
+        "name": "base_s4h",
+        "parent": "base",
+        "file": "2023_イベント_リュージ騎士団\\event_23_RPG.dat",
+        "line": 16169
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 4921,
+        "kind": "unit",
+        "name": "hori_s4",
+        "parent": "hori",
+        "file": "2023_イベント_リュージ騎士団\\event_23_RPG.dat",
+        "line": 17737
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\23_リュージ騎士団.dat",
+          "line": 572,
+          "order": 1335
+        },
+        {
+          "kind": "field",
+          "file": "field_02_神苑_鎌倉.dat",
+          "line": 2022,
+          "order": 29430
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 4925,
+        "kind": "unit",
+        "name": "base_s4",
+        "parent": "base",
+        "file": "2023_イベント_リュージ騎士団\\event_23_RPG.dat",
+        "line": 17796
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5658,
+        "kind": "class",
+        "name": "a000",
+        "parent": "base",
+        "file": "20_クラス\\00_汎用兵科.dat",
+        "line": 69
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5661,
+        "kind": "class",
+        "name": "a001",
+        "parent": "base",
+        "file": "20_クラス\\00_汎用兵科.dat",
+        "line": 126
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5667,
+        "kind": "class",
+        "name": "a003",
+        "parent": "base",
+        "file": "20_クラス\\00_汎用兵科.dat",
+        "line": 237
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5670,
+        "kind": "class",
+        "name": "a004",
+        "parent": "base",
+        "file": "20_クラス\\00_汎用兵科.dat",
+        "line": 294
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5673,
+        "kind": "class",
+        "name": "a005",
+        "parent": "base",
+        "file": "20_クラス\\00_汎用兵科.dat",
+        "line": 351
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5676,
+        "kind": "class",
+        "name": "a075",
+        "parent": "base",
+        "file": "20_クラス\\00_汎用兵科.dat",
+        "line": 412
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5679,
+        "kind": "class",
+        "name": "a006",
+        "parent": "base",
+        "file": "20_クラス\\00_汎用兵科.dat",
+        "line": 470
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5682,
+        "kind": "class",
+        "name": "a007",
+        "parent": "base",
+        "file": "20_クラス\\00_汎用兵科.dat",
+        "line": 531
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5685,
+        "kind": "class",
+        "name": "a008",
+        "parent": "base",
+        "file": "20_クラス\\00_汎用兵科.dat",
+        "line": 592
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5688,
+        "kind": "class",
+        "name": "a009",
+        "parent": "base",
+        "file": "20_クラス\\00_汎用兵科.dat",
+        "line": 654
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5691,
+        "kind": "class",
+        "name": "a00a",
+        "parent": "base",
+        "file": "20_クラス\\00_汎用兵科.dat",
+        "line": 721
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5694,
+        "kind": "class",
+        "name": "a00b",
+        "parent": "base",
+        "file": "20_クラス\\00_汎用兵科.dat",
+        "line": 784
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5697,
+        "kind": "class",
+        "name": "a010",
+        "parent": "base",
+        "file": "20_クラス\\01_03_マリナーズ_空手部_キモティカ.dat",
+        "line": 16
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5703,
+        "kind": "class",
+        "name": "a016",
+        "parent": "base",
+        "file": "20_クラス\\01_03_マリナーズ_空手部_キモティカ.dat",
+        "line": 136
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5706,
+        "kind": "class",
+        "name": "a018",
+        "parent": "base",
+        "file": "20_クラス\\01_03_マリナーズ_空手部_キモティカ.dat",
+        "line": 199
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5709,
+        "kind": "class",
+        "name": "a01a",
+        "parent": "base",
+        "file": "20_クラス\\01_03_マリナーズ_空手部_キモティカ.dat",
+        "line": 268
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5712,
+        "kind": "class",
+        "name": "a020",
+        "parent": "base",
+        "file": "20_クラス\\01_03_マリナーズ_空手部_キモティカ.dat",
+        "line": 334
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5715,
+        "kind": "class",
+        "name": "a022",
+        "parent": "base",
+        "file": "20_クラス\\01_03_マリナーズ_空手部_キモティカ.dat",
+        "line": 395
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5718,
+        "kind": "class",
+        "name": "a024",
+        "parent": "base",
+        "file": "20_クラス\\01_03_マリナーズ_空手部_キモティカ.dat",
+        "line": 462
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5721,
+        "kind": "class",
+        "name": "a999",
+        "parent": "base",
+        "file": "20_クラス\\01_03_マリナーズ_空手部_キモティカ.dat",
+        "line": 523
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5725,
+        "kind": "class",
+        "name": "ra022",
+        "parent": "base",
+        "file": "20_クラス\\01_03_マリナーズ_空手部_キモティカ.dat",
+        "line": 607
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5728,
+        "kind": "class",
+        "name": "a030",
+        "parent": "base",
+        "file": "20_クラス\\01_03_マリナーズ_空手部_キモティカ.dat",
+        "line": 678
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5736,
+        "kind": "class",
+        "name": "a034",
+        "parent": "base",
+        "file": "20_クラス\\01_03_マリナーズ_空手部_キモティカ.dat",
+        "line": 824
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5739,
+        "kind": "class",
+        "name": "ha034",
+        "parent": "base",
+        "file": "20_クラス\\01_03_マリナーズ_空手部_キモティカ.dat",
+        "line": 880
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5743,
+        "kind": "class",
+        "name": "a040",
+        "parent": "base",
+        "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+        "line": 14
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5746,
+        "kind": "class",
+        "name": "a041",
+        "parent": "base",
+        "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+        "line": 95
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5752,
+        "kind": "class",
+        "name": "a043",
+        "parent": "base",
+        "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+        "line": 230
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5755,
+        "kind": "class",
+        "name": "a046",
+        "parent": "base",
+        "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+        "line": 305
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5758,
+        "kind": "class",
+        "name": "a044",
+        "parent": "base",
+        "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+        "line": 369
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5761,
+        "kind": "class",
+        "name": "a049",
+        "parent": "base",
+        "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+        "line": 431
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5764,
+        "kind": "class",
+        "name": "a04a",
+        "parent": "base",
+        "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+        "line": 501
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5767,
+        "kind": "class",
+        "name": "a04b",
+        "parent": "base",
+        "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+        "line": 572
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5773,
+        "kind": "class",
+        "name": "ba041",
+        "parent": "base",
+        "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+        "line": 731
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5779,
+        "kind": "class",
+        "name": "a058",
+        "parent": "base",
+        "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+        "line": 860
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5782,
+        "kind": "class",
+        "name": "a059",
+        "parent": "base",
+        "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+        "line": 928
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5786,
+        "kind": "class",
+        "name": "zou2",
+        "parent": "zou",
+        "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+        "line": 1035
+      },
+      "candidates": [
+        {
+          "kind": "class",
+          "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+          "line": 997,
+          "order": 5785
+        },
+        {
+          "kind": "movetype",
+          "file": "movetype.dat",
+          "line": 172,
+          "order": 29566
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5787,
+        "kind": "class",
+        "name": "zou3",
+        "parent": "zou",
+        "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+        "line": 1049
+      },
+      "candidates": [
+        {
+          "kind": "class",
+          "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+          "line": 997,
+          "order": 5785
+        },
+        {
+          "kind": "movetype",
+          "file": "movetype.dat",
+          "line": 172,
+          "order": 29566
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5788,
+        "kind": "class",
+        "name": "a061",
+        "parent": "base",
+        "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+        "line": 1063
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5791,
+        "kind": "class",
+        "name": "a064",
+        "parent": "base",
+        "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+        "line": 1115
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5794,
+        "kind": "class",
+        "name": "a065",
+        "parent": "base",
+        "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+        "line": 1172
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5797,
+        "kind": "class",
+        "name": "a070",
+        "parent": "base",
+        "file": "20_クラス\\07_10_TNOK_レ_VAN_スカ.dat",
+        "line": 13
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5800,
+        "kind": "class",
+        "name": "a072",
+        "parent": "base",
+        "file": "20_クラス\\07_10_TNOK_レ_VAN_スカ.dat",
+        "line": 71
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5803,
+        "kind": "class",
+        "name": "a074",
+        "parent": "base",
+        "file": "20_クラス\\07_10_TNOK_レ_VAN_スカ.dat",
+        "line": 136
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5806,
+        "kind": "class",
+        "name": "a080",
+        "parent": "base",
+        "file": "20_クラス\\07_10_TNOK_レ_VAN_スカ.dat",
+        "line": 194
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5812,
+        "kind": "class",
+        "name": "a085",
+        "parent": "base",
+        "file": "20_クラス\\07_10_TNOK_レ_VAN_スカ.dat",
+        "line": 313
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5815,
+        "kind": "class",
+        "name": "a087",
+        "parent": "base",
+        "file": "20_クラス\\07_10_TNOK_レ_VAN_スカ.dat",
+        "line": 376
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5818,
+        "kind": "class",
+        "name": "a090",
+        "parent": "base",
+        "file": "20_クラス\\07_10_TNOK_レ_VAN_スカ.dat",
+        "line": 445
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5821,
+        "kind": "class",
+        "name": "a092",
+        "parent": "base",
+        "file": "20_クラス\\07_10_TNOK_レ_VAN_スカ.dat",
+        "line": 507
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5824,
+        "kind": "class",
+        "name": "a100",
+        "parent": "base",
+        "file": "20_クラス\\07_10_TNOK_レ_VAN_スカ.dat",
+        "line": 567
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5827,
+        "kind": "class",
+        "name": "a101",
+        "parent": "base",
+        "file": "20_クラス\\07_10_TNOK_レ_VAN_スカ.dat",
+        "line": 632
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5830,
+        "kind": "class",
+        "name": "a103",
+        "parent": "base",
+        "file": "20_クラス\\07_10_TNOK_レ_VAN_スカ.dat",
+        "line": 696
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5833,
+        "kind": "class",
+        "name": "a110",
+        "parent": "base",
+        "file": "20_クラス\\11_15_サセバト_アリソン_SWW.dat",
+        "line": 14
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5836,
+        "kind": "class",
+        "name": "a117",
+        "parent": "base",
+        "file": "20_クラス\\11_15_サセバト_アリソン_SWW.dat",
+        "line": 71
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5839,
+        "kind": "class",
+        "name": "a112",
+        "parent": "base",
+        "file": "20_クラス\\11_15_サセバト_アリソン_SWW.dat",
+        "line": 134
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5842,
+        "kind": "class",
+        "name": "a12b",
+        "parent": "base",
+        "file": "20_クラス\\11_15_サセバト_アリソン_SWW.dat",
+        "line": 195
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5845,
+        "kind": "class",
+        "name": "a12a",
+        "parent": "base",
+        "file": "20_クラス\\11_15_サセバト_アリソン_SWW.dat",
+        "line": 257
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5848,
+        "kind": "class",
+        "name": "a129",
+        "parent": "base",
+        "file": "20_クラス\\11_15_サセバト_アリソン_SWW.dat",
+        "line": 318
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5851,
+        "kind": "class",
+        "name": "a120",
+        "parent": "base",
+        "file": "20_クラス\\11_15_サセバト_アリソン_SWW.dat",
+        "line": 381
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5854,
+        "kind": "class",
+        "name": "a123",
+        "parent": "base",
+        "file": "20_クラス\\11_15_サセバト_アリソン_SWW.dat",
+        "line": 443
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5857,
+        "kind": "class",
+        "name": "a130",
+        "parent": "base",
+        "file": "20_クラス\\11_15_サセバト_アリソン_SWW.dat",
+        "line": 505
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5860,
+        "kind": "class",
+        "name": "a134",
+        "parent": "base",
+        "file": "20_クラス\\11_15_サセバト_アリソン_SWW.dat",
+        "line": 565
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5863,
+        "kind": "class",
+        "name": "a138",
+        "parent": "base",
+        "file": "20_クラス\\11_15_サセバト_アリソン_SWW.dat",
+        "line": 627
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5866,
+        "kind": "class",
+        "name": "a139",
+        "parent": "base",
+        "file": "20_クラス\\11_15_サセバト_アリソン_SWW.dat",
+        "line": 691
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5869,
+        "kind": "class",
+        "name": "a142",
+        "parent": "base",
+        "file": "20_クラス\\11_15_サセバト_アリソン_SWW.dat",
+        "line": 753
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5872,
+        "kind": "class",
+        "name": "a149",
+        "parent": "base",
+        "file": "20_クラス\\11_15_サセバト_アリソン_SWW.dat",
+        "line": 815
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5875,
+        "kind": "class",
+        "name": "a142s",
+        "parent": "base",
+        "file": "20_クラス\\11_15_サセバト_アリソン_SWW.dat",
+        "line": 878
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5878,
+        "kind": "class",
+        "name": "a160",
+        "parent": "base",
+        "file": "20_クラス\\16_20_ALC_遠野_おじさん_正統_VVAN.dat",
+        "line": 15
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    }
+  ],
+  "ambiguous_examples": [
+    {
+      "child": {
+        "order": 225,
+        "kind": "class",
+        "name": "c_you",
+        "parent": "base",
+        "file": "101_キャラクリ\\chara_create_unit.dat",
+        "line": 35
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 493,
+        "kind": "unit",
+        "name": "base1",
+        "parent": "base",
+        "file": "10_ユニット\\00_base.dat",
+        "line": 37
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 497,
+        "kind": "class",
+        "name": "akushiroyo_set_cl",
+        "parent": "base",
+        "file": "10_ユニット\\00_簡易戦闘.dat",
+        "line": 1
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 646,
+        "kind": "class",
+        "name": "c_akagi",
+        "parent": "zou",
+        "file": "10_ユニット\\05_ヴォイス・ドラマ革命企画.dat",
+        "line": 457
+      },
+      "candidates": [
+        {
+          "kind": "class",
+          "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+          "line": 997,
+          "order": 5785
+        },
+        {
+          "kind": "movetype",
+          "file": "movetype.dat",
+          "line": 172,
+          "order": 29566
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 914,
+        "kind": "class",
+        "name": "in000",
+        "parent": "base",
+        "file": "10_ユニット\\1001_傭兵_淫夢くん.dat",
+        "line": 933
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 1692,
+        "kind": "class",
+        "name": "c_isama2",
+        "parent": "a0102",
+        "file": "10_ユニット\\91_放浪_クッキー☆.dat",
+        "line": 1364
+      },
+      "candidates": [
+        {
+          "kind": "class",
+          "file": "20_クラス\\01_03_マリナーズ_空手部_キモティカ.dat",
+          "line": 49,
+          "order": 5698
+        },
+        {
+          "kind": "voice",
+          "file": "serihu.dat",
+          "line": 5622,
+          "order": 30018
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 1803,
+        "kind": "unit",
+        "name": "goodtoono",
+        "parent": "toono",
+        "file": "10_ユニット\\B_11_閉店の日.dat",
+        "line": 323
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\17_遠野の世界.dat",
+          "line": 1,
+          "order": 1168
+        },
+        {
+          "kind": "movetype",
+          "file": "movetype.dat",
+          "line": 150,
+          "order": 29563
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 1953,
+        "kind": "unit",
+        "name": "u_misya_hashira",
+        "parent": "base",
+        "file": "10_ユニット\\B_23_リュージボス.dat",
+        "line": 1443
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 1954,
+        "kind": "class",
+        "name": "misya_hashira",
+        "parent": "base",
+        "file": "10_ユニット\\B_23_リュージボス.dat",
+        "line": 1454
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 2155,
+        "kind": "skill",
+        "name": "self_a00a66r",
+        "parent": "self_a000",
+        "file": "116_仮設ランダムイベント61-70\\randomev66_unit_class_a00a66r.dat",
+        "line": 3
+      },
+      "candidates": [
+        {
+          "kind": "class",
+          "file": "50_その他新システム\\self_summon_classes.dat",
+          "line": 2,
+          "order": 24488
+        },
+        {
+          "kind": "skill",
+          "file": "50_その他新システム\\self_summon_skills.dat",
+          "line": 19,
+          "order": 24937
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 2157,
+        "kind": "skill",
+        "name": "self_a00a66r2",
+        "parent": "self_a000",
+        "file": "116_仮設ランダムイベント61-70\\randomev66_unit_class_a00a66r.dat",
+        "line": 12
+      },
+      "candidates": [
+        {
+          "kind": "class",
+          "file": "50_その他新システム\\self_summon_classes.dat",
+          "line": 2,
+          "order": 24488
+        },
+        {
+          "kind": "skill",
+          "file": "50_その他新システム\\self_summon_skills.dat",
+          "line": 19,
+          "order": 24937
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 2159,
+        "kind": "skill",
+        "name": "self_a00a66r3",
+        "parent": "self_a000",
+        "file": "116_仮設ランダムイベント61-70\\randomev66_unit_class_a00a66r.dat",
+        "line": 21
+      },
+      "candidates": [
+        {
+          "kind": "class",
+          "file": "50_その他新システム\\self_summon_classes.dat",
+          "line": 2,
+          "order": 24488
+        },
+        {
+          "kind": "skill",
+          "file": "50_その他新システム\\self_summon_skills.dat",
+          "line": 19,
+          "order": 24937
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 2161,
+        "kind": "class",
+        "name": "a00a66r",
+        "parent": "base",
+        "file": "116_仮設ランダムイベント61-70\\randomev66_unit_class_a00a66r.dat",
+        "line": 31
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 2167,
+        "kind": "class",
+        "name": "inyume66r",
+        "parent": "base",
+        "file": "116_仮設ランダムイベント61-70\\randomev66_unit_class_inyume66r.dat",
+        "line": 74
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 2170,
+        "kind": "class",
+        "name": "c_pr66_master",
+        "parent": "base",
+        "file": "116_仮設ランダムイベント61-70\\randomev66_unit_class（マスター不在につき不使用）.dat",
+        "line": 4
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 2173,
+        "kind": "unit",
+        "name": "pr66_master",
+        "parent": "base",
+        "file": "116_仮設ランダムイベント61-70\\randomev66_unit_class（マスター不在につき不使用）.dat",
+        "line": 75
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 3385,
+        "kind": "unit",
+        "name": "toono_rage",
+        "parent": "toono",
+        "file": "11_表情差分\\F差分_99_共通差分.dat",
+        "line": 1635
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\17_遠野の世界.dat",
+          "line": 1,
+          "order": 1168
+        },
+        {
+          "kind": "movetype",
+          "file": "movetype.dat",
+          "line": 150,
+          "order": 29563
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 3386,
+        "kind": "unit",
+        "name": "toono_sad",
+        "parent": "toono",
+        "file": "11_表情差分\\F差分_99_共通差分.dat",
+        "line": 1640
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\17_遠野の世界.dat",
+          "line": 1,
+          "order": 1168
+        },
+        {
+          "kind": "movetype",
+          "file": "movetype.dat",
+          "line": 150,
+          "order": 29563
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 3387,
+        "kind": "unit",
+        "name": "toono_gosh",
+        "parent": "toono",
+        "file": "11_表情差分\\F差分_99_共通差分.dat",
+        "line": 1645
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\17_遠野の世界.dat",
+          "line": 1,
+          "order": 1168
+        },
+        {
+          "kind": "movetype",
+          "file": "movetype.dat",
+          "line": 150,
+          "order": 29563
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 3388,
+        "kind": "unit",
+        "name": "toono_conf",
+        "parent": "toono",
+        "file": "11_表情差分\\F差分_99_共通差分.dat",
+        "line": 1650
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\17_遠野の世界.dat",
+          "line": 1,
+          "order": 1168
+        },
+        {
+          "kind": "movetype",
+          "file": "movetype.dat",
+          "line": 150,
+          "order": 29563
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 3389,
+        "kind": "unit",
+        "name": "toono_cum",
+        "parent": "toono",
+        "file": "11_表情差分\\F差分_99_共通差分.dat",
+        "line": 1655
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\17_遠野の世界.dat",
+          "line": 1,
+          "order": 1168
+        },
+        {
+          "kind": "movetype",
+          "file": "movetype.dat",
+          "line": 150,
+          "order": 29563
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 3390,
+        "kind": "unit",
+        "name": "toono_miss",
+        "parent": "toono",
+        "file": "11_表情差分\\F差分_99_共通差分.dat",
+        "line": 1660
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\17_遠野の世界.dat",
+          "line": 1,
+          "order": 1168
+        },
+        {
+          "kind": "movetype",
+          "file": "movetype.dat",
+          "line": 150,
+          "order": 29563
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 3659,
+        "kind": "unit",
+        "name": "ice_joy",
+        "parent": "ice",
+        "file": "11_表情差分\\F差分_99_共通差分.dat",
+        "line": 3079
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\33_INU.dat",
+          "line": 371,
+          "order": 1521
+        },
+        {
+          "kind": "field",
+          "file": "field_01.dat",
+          "line": 487,
+          "order": 29083
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 3660,
+        "kind": "unit",
+        "name": "ice_gosh",
+        "parent": "ice",
+        "file": "11_表情差分\\F差分_99_共通差分.dat",
+        "line": 3084
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\33_INU.dat",
+          "line": 371,
+          "order": 1521
+        },
+        {
+          "kind": "field",
+          "file": "field_01.dat",
+          "line": 487,
+          "order": 29083
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 3661,
+        "kind": "unit",
+        "name": "ice_conf",
+        "parent": "ice",
+        "file": "11_表情差分\\F差分_99_共通差分.dat",
+        "line": 3089
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\33_INU.dat",
+          "line": 371,
+          "order": 1521
+        },
+        {
+          "kind": "field",
+          "file": "field_01.dat",
+          "line": 487,
+          "order": 29083
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 3771,
+        "kind": "unit",
+        "name": "toono_pwpk",
+        "parent": "toono",
+        "file": "11_表情差分\\F差分_99_共通差分.dat",
+        "line": 3692
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\17_遠野の世界.dat",
+          "line": 1,
+          "order": 1168
+        },
+        {
+          "kind": "movetype",
+          "file": "movetype.dat",
+          "line": 150,
+          "order": 29563
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 3783,
+        "kind": "unit",
+        "name": "hori_pwpk",
+        "parent": "hori",
+        "file": "11_表情差分\\F差分_99_共通差分.dat",
+        "line": 3762
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\23_リュージ騎士団.dat",
+          "line": 572,
+          "order": 1335
+        },
+        {
+          "kind": "field",
+          "file": "field_02_神苑_鎌倉.dat",
+          "line": 2022,
+          "order": 29430
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 4409,
+        "kind": "unit",
+        "name": "hideori",
+        "parent": "base",
+        "file": "2000_勢力ストーリー\\po31_event.dat",
+        "line": 2
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 4410,
+        "kind": "unit",
+        "name": "po31_ghost",
+        "parent": "base",
+        "file": "2000_勢力ストーリー\\po31_event.dat",
+        "line": 8
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 4617,
+        "kind": "class",
+        "name": "ru999",
+        "parent": "base",
+        "file": "2023_イベント_リュージ騎士団\\event_23_RPG.dat",
+        "line": 16023
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 4626,
+        "kind": "unit",
+        "name": "base_s4h",
+        "parent": "base",
+        "file": "2023_イベント_リュージ騎士団\\event_23_RPG.dat",
+        "line": 16169
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 4921,
+        "kind": "unit",
+        "name": "hori_s4",
+        "parent": "hori",
+        "file": "2023_イベント_リュージ騎士団\\event_23_RPG.dat",
+        "line": 17737
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\23_リュージ騎士団.dat",
+          "line": 572,
+          "order": 1335
+        },
+        {
+          "kind": "field",
+          "file": "field_02_神苑_鎌倉.dat",
+          "line": 2022,
+          "order": 29430
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 4925,
+        "kind": "unit",
+        "name": "base_s4",
+        "parent": "base",
+        "file": "2023_イベント_リュージ騎士団\\event_23_RPG.dat",
+        "line": 17796
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5658,
+        "kind": "class",
+        "name": "a000",
+        "parent": "base",
+        "file": "20_クラス\\00_汎用兵科.dat",
+        "line": 69
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5661,
+        "kind": "class",
+        "name": "a001",
+        "parent": "base",
+        "file": "20_クラス\\00_汎用兵科.dat",
+        "line": 126
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5667,
+        "kind": "class",
+        "name": "a003",
+        "parent": "base",
+        "file": "20_クラス\\00_汎用兵科.dat",
+        "line": 237
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5670,
+        "kind": "class",
+        "name": "a004",
+        "parent": "base",
+        "file": "20_クラス\\00_汎用兵科.dat",
+        "line": 294
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5673,
+        "kind": "class",
+        "name": "a005",
+        "parent": "base",
+        "file": "20_クラス\\00_汎用兵科.dat",
+        "line": 351
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5676,
+        "kind": "class",
+        "name": "a075",
+        "parent": "base",
+        "file": "20_クラス\\00_汎用兵科.dat",
+        "line": 412
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5679,
+        "kind": "class",
+        "name": "a006",
+        "parent": "base",
+        "file": "20_クラス\\00_汎用兵科.dat",
+        "line": 470
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5682,
+        "kind": "class",
+        "name": "a007",
+        "parent": "base",
+        "file": "20_クラス\\00_汎用兵科.dat",
+        "line": 531
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5685,
+        "kind": "class",
+        "name": "a008",
+        "parent": "base",
+        "file": "20_クラス\\00_汎用兵科.dat",
+        "line": 592
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5688,
+        "kind": "class",
+        "name": "a009",
+        "parent": "base",
+        "file": "20_クラス\\00_汎用兵科.dat",
+        "line": 654
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5691,
+        "kind": "class",
+        "name": "a00a",
+        "parent": "base",
+        "file": "20_クラス\\00_汎用兵科.dat",
+        "line": 721
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5694,
+        "kind": "class",
+        "name": "a00b",
+        "parent": "base",
+        "file": "20_クラス\\00_汎用兵科.dat",
+        "line": 784
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5697,
+        "kind": "class",
+        "name": "a010",
+        "parent": "base",
+        "file": "20_クラス\\01_03_マリナーズ_空手部_キモティカ.dat",
+        "line": 16
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5703,
+        "kind": "class",
+        "name": "a016",
+        "parent": "base",
+        "file": "20_クラス\\01_03_マリナーズ_空手部_キモティカ.dat",
+        "line": 136
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5706,
+        "kind": "class",
+        "name": "a018",
+        "parent": "base",
+        "file": "20_クラス\\01_03_マリナーズ_空手部_キモティカ.dat",
+        "line": 199
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5709,
+        "kind": "class",
+        "name": "a01a",
+        "parent": "base",
+        "file": "20_クラス\\01_03_マリナーズ_空手部_キモティカ.dat",
+        "line": 268
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5712,
+        "kind": "class",
+        "name": "a020",
+        "parent": "base",
+        "file": "20_クラス\\01_03_マリナーズ_空手部_キモティカ.dat",
+        "line": 334
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5715,
+        "kind": "class",
+        "name": "a022",
+        "parent": "base",
+        "file": "20_クラス\\01_03_マリナーズ_空手部_キモティカ.dat",
+        "line": 395
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5718,
+        "kind": "class",
+        "name": "a024",
+        "parent": "base",
+        "file": "20_クラス\\01_03_マリナーズ_空手部_キモティカ.dat",
+        "line": 462
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5721,
+        "kind": "class",
+        "name": "a999",
+        "parent": "base",
+        "file": "20_クラス\\01_03_マリナーズ_空手部_キモティカ.dat",
+        "line": 523
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5725,
+        "kind": "class",
+        "name": "ra022",
+        "parent": "base",
+        "file": "20_クラス\\01_03_マリナーズ_空手部_キモティカ.dat",
+        "line": 607
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5728,
+        "kind": "class",
+        "name": "a030",
+        "parent": "base",
+        "file": "20_クラス\\01_03_マリナーズ_空手部_キモティカ.dat",
+        "line": 678
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5736,
+        "kind": "class",
+        "name": "a034",
+        "parent": "base",
+        "file": "20_クラス\\01_03_マリナーズ_空手部_キモティカ.dat",
+        "line": 824
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5739,
+        "kind": "class",
+        "name": "ha034",
+        "parent": "base",
+        "file": "20_クラス\\01_03_マリナーズ_空手部_キモティカ.dat",
+        "line": 880
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5743,
+        "kind": "class",
+        "name": "a040",
+        "parent": "base",
+        "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+        "line": 14
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5746,
+        "kind": "class",
+        "name": "a041",
+        "parent": "base",
+        "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+        "line": 95
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5752,
+        "kind": "class",
+        "name": "a043",
+        "parent": "base",
+        "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+        "line": 230
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5755,
+        "kind": "class",
+        "name": "a046",
+        "parent": "base",
+        "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+        "line": 305
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5758,
+        "kind": "class",
+        "name": "a044",
+        "parent": "base",
+        "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+        "line": 369
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5761,
+        "kind": "class",
+        "name": "a049",
+        "parent": "base",
+        "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+        "line": 431
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5764,
+        "kind": "class",
+        "name": "a04a",
+        "parent": "base",
+        "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+        "line": 501
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5767,
+        "kind": "class",
+        "name": "a04b",
+        "parent": "base",
+        "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+        "line": 572
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5773,
+        "kind": "class",
+        "name": "ba041",
+        "parent": "base",
+        "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+        "line": 731
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5779,
+        "kind": "class",
+        "name": "a058",
+        "parent": "base",
+        "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+        "line": 860
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5782,
+        "kind": "class",
+        "name": "a059",
+        "parent": "base",
+        "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+        "line": 928
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5786,
+        "kind": "class",
+        "name": "zou2",
+        "parent": "zou",
+        "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+        "line": 1035
+      },
+      "candidates": [
+        {
+          "kind": "class",
+          "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+          "line": 997,
+          "order": 5785
+        },
+        {
+          "kind": "movetype",
+          "file": "movetype.dat",
+          "line": 172,
+          "order": 29566
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5787,
+        "kind": "class",
+        "name": "zou3",
+        "parent": "zou",
+        "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+        "line": 1049
+      },
+      "candidates": [
+        {
+          "kind": "class",
+          "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+          "line": 997,
+          "order": 5785
+        },
+        {
+          "kind": "movetype",
+          "file": "movetype.dat",
+          "line": 172,
+          "order": 29566
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5788,
+        "kind": "class",
+        "name": "a061",
+        "parent": "base",
+        "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+        "line": 1063
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5791,
+        "kind": "class",
+        "name": "a064",
+        "parent": "base",
+        "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+        "line": 1115
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5794,
+        "kind": "class",
+        "name": "a065",
+        "parent": "base",
+        "file": "20_クラス\\04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+        "line": 1172
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5797,
+        "kind": "class",
+        "name": "a070",
+        "parent": "base",
+        "file": "20_クラス\\07_10_TNOK_レ_VAN_スカ.dat",
+        "line": 13
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5800,
+        "kind": "class",
+        "name": "a072",
+        "parent": "base",
+        "file": "20_クラス\\07_10_TNOK_レ_VAN_スカ.dat",
+        "line": 71
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5803,
+        "kind": "class",
+        "name": "a074",
+        "parent": "base",
+        "file": "20_クラス\\07_10_TNOK_レ_VAN_スカ.dat",
+        "line": 136
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5806,
+        "kind": "class",
+        "name": "a080",
+        "parent": "base",
+        "file": "20_クラス\\07_10_TNOK_レ_VAN_スカ.dat",
+        "line": 194
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5812,
+        "kind": "class",
+        "name": "a085",
+        "parent": "base",
+        "file": "20_クラス\\07_10_TNOK_レ_VAN_スカ.dat",
+        "line": 313
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5815,
+        "kind": "class",
+        "name": "a087",
+        "parent": "base",
+        "file": "20_クラス\\07_10_TNOK_レ_VAN_スカ.dat",
+        "line": 376
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5818,
+        "kind": "class",
+        "name": "a090",
+        "parent": "base",
+        "file": "20_クラス\\07_10_TNOK_レ_VAN_スカ.dat",
+        "line": 445
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5821,
+        "kind": "class",
+        "name": "a092",
+        "parent": "base",
+        "file": "20_クラス\\07_10_TNOK_レ_VAN_スカ.dat",
+        "line": 507
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5824,
+        "kind": "class",
+        "name": "a100",
+        "parent": "base",
+        "file": "20_クラス\\07_10_TNOK_レ_VAN_スカ.dat",
+        "line": 567
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5827,
+        "kind": "class",
+        "name": "a101",
+        "parent": "base",
+        "file": "20_クラス\\07_10_TNOK_レ_VAN_スカ.dat",
+        "line": 632
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5830,
+        "kind": "class",
+        "name": "a103",
+        "parent": "base",
+        "file": "20_クラス\\07_10_TNOK_レ_VAN_スカ.dat",
+        "line": 696
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5833,
+        "kind": "class",
+        "name": "a110",
+        "parent": "base",
+        "file": "20_クラス\\11_15_サセバト_アリソン_SWW.dat",
+        "line": 14
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5836,
+        "kind": "class",
+        "name": "a117",
+        "parent": "base",
+        "file": "20_クラス\\11_15_サセバト_アリソン_SWW.dat",
+        "line": 71
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5839,
+        "kind": "class",
+        "name": "a112",
+        "parent": "base",
+        "file": "20_クラス\\11_15_サセバト_アリソン_SWW.dat",
+        "line": 134
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5842,
+        "kind": "class",
+        "name": "a12b",
+        "parent": "base",
+        "file": "20_クラス\\11_15_サセバト_アリソン_SWW.dat",
+        "line": 195
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5845,
+        "kind": "class",
+        "name": "a12a",
+        "parent": "base",
+        "file": "20_クラス\\11_15_サセバト_アリソン_SWW.dat",
+        "line": 257
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5848,
+        "kind": "class",
+        "name": "a129",
+        "parent": "base",
+        "file": "20_クラス\\11_15_サセバト_アリソン_SWW.dat",
+        "line": 318
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5851,
+        "kind": "class",
+        "name": "a120",
+        "parent": "base",
+        "file": "20_クラス\\11_15_サセバト_アリソン_SWW.dat",
+        "line": 381
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5854,
+        "kind": "class",
+        "name": "a123",
+        "parent": "base",
+        "file": "20_クラス\\11_15_サセバト_アリソン_SWW.dat",
+        "line": 443
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5857,
+        "kind": "class",
+        "name": "a130",
+        "parent": "base",
+        "file": "20_クラス\\11_15_サセバト_アリソン_SWW.dat",
+        "line": 505
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5860,
+        "kind": "class",
+        "name": "a134",
+        "parent": "base",
+        "file": "20_クラス\\11_15_サセバト_アリソン_SWW.dat",
+        "line": 565
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5863,
+        "kind": "class",
+        "name": "a138",
+        "parent": "base",
+        "file": "20_クラス\\11_15_サセバト_アリソン_SWW.dat",
+        "line": 627
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5866,
+        "kind": "class",
+        "name": "a139",
+        "parent": "base",
+        "file": "20_クラス\\11_15_サセバト_アリソン_SWW.dat",
+        "line": 691
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5869,
+        "kind": "class",
+        "name": "a142",
+        "parent": "base",
+        "file": "20_クラス\\11_15_サセバト_アリソン_SWW.dat",
+        "line": 753
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5872,
+        "kind": "class",
+        "name": "a149",
+        "parent": "base",
+        "file": "20_クラス\\11_15_サセバト_アリソン_SWW.dat",
+        "line": 815
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5875,
+        "kind": "class",
+        "name": "a142s",
+        "parent": "base",
+        "file": "20_クラス\\11_15_サセバト_アリソン_SWW.dat",
+        "line": 878
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5878,
+        "kind": "class",
+        "name": "a160",
+        "parent": "base",
+        "file": "20_クラス\\16_20_ALC_遠野_おじさん_正統_VVAN.dat",
+        "line": 15
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5882,
+        "kind": "class",
+        "name": "a172",
+        "parent": "base",
+        "file": "20_クラス\\16_20_ALC_遠野_おじさん_正統_VVAN.dat",
+        "line": 135
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5886,
+        "kind": "class",
+        "name": "a17b",
+        "parent": "base",
+        "file": "20_クラス\\16_20_ALC_遠野_おじさん_正統_VVAN.dat",
+        "line": 228
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5889,
+        "kind": "class",
+        "name": "a0mnr",
+        "parent": "base",
+        "file": "20_クラス\\16_20_ALC_遠野_おじさん_正統_VVAN.dat",
+        "line": 297
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5898,
+        "kind": "class",
+        "name": "a200",
+        "parent": "base",
+        "file": "20_クラス\\16_20_ALC_遠野_おじさん_正統_VVAN.dat",
+        "line": 498
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5901,
+        "kind": "class",
+        "name": "a201",
+        "parent": "base",
+        "file": "20_クラス\\16_20_ALC_遠野_おじさん_正統_VVAN.dat",
+        "line": 557
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5907,
+        "kind": "class",
+        "name": "me001",
+        "parent": "base",
+        "file": "20_クラス\\1919_その他.dat",
+        "line": 60
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5910,
+        "kind": "class",
+        "name": "a0kabi",
+        "parent": "base",
+        "file": "20_クラス\\1919_その他.dat",
+        "line": 121
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5913,
+        "kind": "class",
+        "name": "a0n0",
+        "parent": "base",
+        "file": "20_クラス\\1919_その他.dat",
+        "line": 188
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5916,
+        "kind": "class",
+        "name": "a0zoku",
+        "parent": "base",
+        "file": "20_クラス\\1919_その他.dat",
+        "line": 269
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5919,
+        "kind": "class",
+        "name": "debunomi",
+        "parent": "base",
+        "file": "20_クラス\\1919_その他.dat",
+        "line": 326
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5920,
+        "kind": "class",
+        "name": "a0fly",
+        "parent": "base",
+        "file": "20_クラス\\1919_その他.dat",
+        "line": 367
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5923,
+        "kind": "class",
+        "name": "a0crn",
+        "parent": "base",
+        "file": "20_クラス\\1919_その他.dat",
+        "line": 429
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5926,
+        "kind": "class",
+        "name": "a0crow",
+        "parent": "base",
+        "file": "20_クラス\\1919_その他.dat",
+        "line": 497
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5969,
+        "kind": "class",
+        "name": "zappa000",
+        "parent": "self_a000",
+        "file": "20_クラス\\1919_その他.dat",
+        "line": 841
+      },
+      "candidates": [
+        {
+          "kind": "class",
+          "file": "50_その他新システム\\self_summon_classes.dat",
+          "line": 2,
+          "order": 24488
+        },
+        {
+          "kind": "skill",
+          "file": "50_その他新システム\\self_summon_skills.dat",
+          "line": 19,
+          "order": 24937
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5970,
+        "kind": "class",
+        "name": "zappa002",
+        "parent": "self_a002",
+        "file": "20_クラス\\1919_その他.dat",
+        "line": 846
+      },
+      "candidates": [
+        {
+          "kind": "class",
+          "file": "50_その他新システム\\self_summon_classes.dat",
+          "line": 64,
+          "order": 24496
+        },
+        {
+          "kind": "skill",
+          "file": "50_その他新システム\\self_summon_skills.dat",
+          "line": 110,
+          "order": 24949
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5971,
+        "kind": "class",
+        "name": "zappa004",
+        "parent": "self_a004",
+        "file": "20_クラス\\1919_その他.dat",
+        "line": 851
+      },
+      "candidates": [
+        {
+          "kind": "class",
+          "file": "50_その他新システム\\self_summon_classes.dat",
+          "line": 124,
+          "order": 24504
+        },
+        {
+          "kind": "skill",
+          "file": "50_その他新システム\\self_summon_skills.dat",
+          "line": 164,
+          "order": 24961
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5972,
+        "kind": "class",
+        "name": "zappa009",
+        "parent": "self_a009",
+        "file": "20_クラス\\1919_その他.dat",
+        "line": 856
+      },
+      "candidates": [
+        {
+          "kind": "class",
+          "file": "50_その他新システム\\self_summon_classes.dat",
+          "line": 237,
+          "order": 24519
+        },
+        {
+          "kind": "skill",
+          "file": "50_その他新システム\\self_summon_skills.dat",
+          "line": 305,
+          "order": 24991
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5973,
+        "kind": "class",
+        "name": "zappa006",
+        "parent": "self_a006",
+        "file": "20_クラス\\1919_その他.dat",
+        "line": 861
+      },
+      "candidates": [
+        {
+          "kind": "class",
+          "file": "50_その他新システム\\self_summon_classes.dat",
+          "line": 171,
+          "order": 24510
+        },
+        {
+          "kind": "skill",
+          "file": "50_その他新システム\\self_summon_skills.dat",
+          "line": 224,
+          "order": 24973
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5974,
+        "kind": "class",
+        "name": "zappa007",
+        "parent": "self_a007",
+        "file": "20_クラス\\1919_その他.dat",
+        "line": 866
+      },
+      "candidates": [
+        {
+          "kind": "class",
+          "file": "50_その他新システム\\self_summon_classes.dat",
+          "line": 193,
+          "order": 24513
+        },
+        {
+          "kind": "skill",
+          "file": "50_その他新システム\\self_summon_skills.dat",
+          "line": 251,
+          "order": 24979
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5975,
+        "kind": "class",
+        "name": "zappa008",
+        "parent": "self_a008",
+        "file": "20_クラス\\1919_その他.dat",
+        "line": 871
+      },
+      "candidates": [
+        {
+          "kind": "class",
+          "file": "50_その他新システム\\self_summon_classes.dat",
+          "line": 215,
+          "order": 24516
+        },
+        {
+          "kind": "skill",
+          "file": "50_その他新システム\\self_summon_skills.dat",
+          "line": 278,
+          "order": 24985
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5976,
+        "kind": "class",
+        "name": "zappa00a",
+        "parent": "self_a00a",
+        "file": "20_クラス\\1919_その他.dat",
+        "line": 876
+      },
+      "candidates": [
+        {
+          "kind": "class",
+          "file": "50_その他新システム\\self_summon_classes.dat",
+          "line": 259,
+          "order": 24522
+        },
+        {
+          "kind": "skill",
+          "file": "50_その他新システム\\self_summon_skills.dat",
+          "line": 332,
+          "order": 24997
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5977,
+        "kind": "class",
+        "name": "zappa00b",
+        "parent": "self_a00b",
+        "file": "20_クラス\\1919_その他.dat",
+        "line": 881
+      },
+      "candidates": [
+        {
+          "kind": "class",
+          "file": "50_その他新システム\\self_summon_classes.dat",
+          "line": 281,
+          "order": 24525
+        },
+        {
+          "kind": "skill",
+          "file": "50_その他新システム\\self_summon_skills.dat",
+          "line": 359,
+          "order": 25003
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5982,
+        "kind": "class",
+        "name": "a215",
+        "parent": "base",
+        "file": "20_クラス\\21_23_材料屋_HSI_リュージ.dat",
+        "line": 75
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5985,
+        "kind": "class",
+        "name": "a218",
+        "parent": "base",
+        "file": "20_クラス\\21_23_材料屋_HSI_リュージ.dat",
+        "line": 150
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5988,
+        "kind": "class",
+        "name": "a219",
+        "parent": "base",
+        "file": "20_クラス\\21_23_材料屋_HSI_リュージ.dat",
+        "line": 219
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5991,
+        "kind": "class",
+        "name": "a220",
+        "parent": "base",
+        "file": "20_クラス\\21_23_材料屋_HSI_リュージ.dat",
+        "line": 292
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 5997,
+        "kind": "class",
+        "name": "a221",
+        "parent": "base",
+        "file": "20_クラス\\21_23_材料屋_HSI_リュージ.dat",
+        "line": 386
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6003,
+        "kind": "class",
+        "name": "a224",
+        "parent": "base",
+        "file": "20_クラス\\21_23_材料屋_HSI_リュージ.dat",
+        "line": 487
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6007,
+        "kind": "class",
+        "name": "a226",
+        "parent": "base",
+        "file": "20_クラス\\21_23_材料屋_HSI_リュージ.dat",
+        "line": 581
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6011,
+        "kind": "class",
+        "name": "a229",
+        "parent": "base",
+        "file": "20_クラス\\21_23_材料屋_HSI_リュージ.dat",
+        "line": 675
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6022,
+        "kind": "class",
+        "name": "a240",
+        "parent": "base",
+        "file": "20_クラス\\24_26_ONDISK_二軍_原理.dat",
+        "line": 15
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6025,
+        "kind": "class",
+        "name": "a244",
+        "parent": "base",
+        "file": "20_クラス\\24_26_ONDISK_二軍_原理.dat",
+        "line": 88
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6028,
+        "kind": "class",
+        "name": "a250",
+        "parent": "base",
+        "file": "20_クラス\\24_26_ONDISK_二軍_原理.dat",
+        "line": 145
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6031,
+        "kind": "class",
+        "name": "a252",
+        "parent": "base",
+        "file": "20_クラス\\24_26_ONDISK_二軍_原理.dat",
+        "line": 211
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6037,
+        "kind": "class",
+        "name": "a255",
+        "parent": "base",
+        "file": "20_クラス\\24_26_ONDISK_二軍_原理.dat",
+        "line": 334
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6050,
+        "kind": "class",
+        "name": "a262",
+        "parent": "base",
+        "file": "20_クラス\\24_26_ONDISK_二軍_原理.dat",
+        "line": 632
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6053,
+        "kind": "class",
+        "name": "ss103",
+        "parent": "base",
+        "file": "20_クラス\\24_26_ONDISK_二軍_原理.dat",
+        "line": 694
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6056,
+        "kind": "class",
+        "name": "a265",
+        "parent": "base",
+        "file": "20_クラス\\24_26_ONDISK_二軍_原理.dat",
+        "line": 762
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6059,
+        "kind": "class",
+        "name": "ss009",
+        "parent": "base",
+        "file": "20_クラス\\24_26_ONDISK_二軍_原理.dat",
+        "line": 820
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6065,
+        "kind": "class",
+        "name": "sa044",
+        "parent": "base",
+        "file": "20_クラス\\24_26_ONDISK_二軍_原理.dat",
+        "line": 947
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6068,
+        "kind": "class",
+        "name": "sa046",
+        "parent": "base",
+        "file": "20_クラス\\24_26_ONDISK_二軍_原理.dat",
+        "line": 1009
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6071,
+        "kind": "class",
+        "name": "ss030",
+        "parent": "base",
+        "file": "20_クラス\\24_26_ONDISK_二軍_原理.dat",
+        "line": 1072
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6074,
+        "kind": "class",
+        "name": "a26b",
+        "parent": "base",
+        "file": "20_クラス\\24_26_ONDISK_二軍_原理.dat",
+        "line": 1135
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6077,
+        "kind": "class",
+        "name": "tiger",
+        "parent": "base",
+        "file": "20_クラス\\24_26_ONDISK_二軍_原理.dat",
+        "line": 1195
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6081,
+        "kind": "class",
+        "name": "a27b",
+        "parent": "base",
+        "file": "20_クラス\\27_30_岡山.dat",
+        "line": 2
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6084,
+        "kind": "class",
+        "name": "a28a",
+        "parent": "base",
+        "file": "20_クラス\\27_30_岡山.dat",
+        "line": 76
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6087,
+        "kind": "class",
+        "name": "a290",
+        "parent": "base",
+        "file": "20_クラス\\27_30_岡山.dat",
+        "line": 132
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6093,
+        "kind": "class",
+        "name": "a295",
+        "parent": "base",
+        "file": "20_クラス\\27_30_岡山.dat",
+        "line": 253
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6099,
+        "kind": "class",
+        "name": "a311",
+        "parent": "base",
+        "file": "20_クラス\\31_33_GUC_サムソン_白狼.dat",
+        "line": 2
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6102,
+        "kind": "class",
+        "name": "a315",
+        "parent": "base",
+        "file": "20_クラス\\31_33_GUC_サムソン_白狼.dat",
+        "line": 55
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6105,
+        "kind": "class",
+        "name": "a318",
+        "parent": "base",
+        "file": "20_クラス\\31_33_GUC_サムソン_白狼.dat",
+        "line": 112
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6108,
+        "kind": "class",
+        "name": "a320",
+        "parent": "base",
+        "file": "20_クラス\\31_33_GUC_サムソン_白狼.dat",
+        "line": 172
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6111,
+        "kind": "class",
+        "name": "a325",
+        "parent": "base",
+        "file": "20_クラス\\31_33_GUC_サムソン_白狼.dat",
+        "line": 229
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6114,
+        "kind": "class",
+        "name": "a323",
+        "parent": "base",
+        "file": "20_クラス\\31_33_GUC_サムソン_白狼.dat",
+        "line": 289
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6117,
+        "kind": "class",
+        "name": "a329",
+        "parent": "base",
+        "file": "20_クラス\\31_33_GUC_サムソン_白狼.dat",
+        "line": 346
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6123,
+        "kind": "class",
+        "name": "a333",
+        "parent": "base",
+        "file": "20_クラス\\31_33_GUC_サムソン_白狼.dat",
+        "line": 476
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6134,
+        "kind": "class",
+        "name": "amhsi",
+        "parent": "base",
+        "file": "20_クラス\\B_14_ヌエバ・デスパセーニャ.dat",
+        "line": 82
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6137,
+        "kind": "class",
+        "name": "amhsizako",
+        "parent": "base",
+        "file": "20_クラス\\B_14_ヌエバ・デスパセーニャ.dat",
+        "line": 147
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6157,
+        "kind": "class",
+        "name": "kmkks",
+        "parent": "base",
+        "file": "20_クラス\\B_2222_レイノアレフ.dat",
+        "line": 67
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6160,
+        "kind": "class",
+        "name": "ssr",
+        "parent": "base",
+        "file": "20_クラス\\B_2222_レイノアレフ.dat",
+        "line": 125
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6163,
+        "kind": "class",
+        "name": "drgn",
+        "parent": "base",
+        "file": "20_クラス\\B_2222_レイノアレフ.dat",
+        "line": 185
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6166,
+        "kind": "class",
+        "name": "dnjmk",
+        "parent": "base",
+        "file": "20_クラス\\B_2222_レイノアレフ.dat",
+        "line": 246
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6172,
+        "kind": "class",
+        "name": "htubn",
+        "parent": "base",
+        "file": "20_クラス\\B_2222_レイノアレフ.dat",
+        "line": 360
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6175,
+        "kind": "class",
+        "name": "ancient000",
+        "parent": "base",
+        "file": "20_クラス\\B_23_リュージボス.dat",
+        "line": 1
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6176,
+        "kind": "class",
+        "name": "ancient00b",
+        "parent": "base",
+        "file": "20_クラス\\B_23_リュージボス.dat",
+        "line": 43
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6177,
+        "kind": "class",
+        "name": "advent_c",
+        "parent": "base",
+        "file": "20_クラス\\B_23_リュージボス.dat",
+        "line": 87
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6178,
+        "kind": "class",
+        "name": "bombnomi",
+        "parent": "base",
+        "file": "20_クラス\\B_23_リュージボス.dat",
+        "line": 133
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6179,
+        "kind": "class",
+        "name": "februar_c",
+        "parent": "base",
+        "file": "20_クラス\\B_23_リュージボス.dat",
+        "line": 175
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6180,
+        "kind": "class",
+        "name": "feb_bit",
+        "parent": "base",
+        "file": "20_クラス\\B_23_リュージボス.dat",
+        "line": 218
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6181,
+        "kind": "class",
+        "name": "hovert1_c",
+        "parent": "base",
+        "file": "20_クラス\\B_23_リュージボス.dat",
+        "line": 265
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6182,
+        "kind": "class",
+        "name": "hovert2_c",
+        "parent": "base",
+        "file": "20_クラス\\B_23_リュージボス.dat",
+        "line": 310
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6183,
+        "kind": "class",
+        "name": "sakerobo_mpt",
+        "parent": "base",
+        "file": "20_クラス\\B_23_リュージボス.dat",
+        "line": 354
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6184,
+        "kind": "class",
+        "name": "mobile_c",
+        "parent": "base",
+        "file": "20_クラス\\B_23_リュージボス.dat",
+        "line": 397
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6185,
+        "kind": "class",
+        "name": "shaman",
+        "parent": "base",
+        "file": "20_クラス\\B_23_リュージボス.dat",
+        "line": 440
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6189,
+        "kind": "class",
+        "name": "a1494",
+        "parent": "base",
+        "file": "20_クラス\\B_23_リュージボス.dat",
+        "line": 553
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6190,
+        "kind": "class",
+        "name": "kaeru23a",
+        "parent": "base",
+        "file": "20_クラス\\B_23_リュージボス.dat",
+        "line": 594
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6191,
+        "kind": "class",
+        "name": "kaeru23b",
+        "parent": "base",
+        "file": "20_クラス\\B_23_リュージボス.dat",
+        "line": 632
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6192,
+        "kind": "class",
+        "name": "kaeru23c",
+        "parent": "base",
+        "file": "20_クラス\\B_23_リュージボス.dat",
+        "line": 668
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6193,
+        "kind": "class",
+        "name": "misya_23",
+        "parent": "base",
+        "file": "20_クラス\\B_23_リュージボス.dat",
+        "line": 706
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6194,
+        "kind": "class",
+        "name": "skmiryo_23",
+        "parent": "base",
+        "file": "20_クラス\\B_23_リュージボス.dat",
+        "line": 745
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6203,
+        "kind": "class",
+        "name": "wndg4",
+        "parent": "base",
+        "file": "20_クラス\\B_25_ジトメ秘密教団.dat",
+        "line": 17
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6204,
+        "kind": "class",
+        "name": "qacl4",
+        "parent": "base",
+        "file": "20_クラス\\B_25_ジトメ秘密教団.dat",
+        "line": 50
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6206,
+        "kind": "class",
+        "name": "migo4",
+        "parent": "base",
+        "file": "20_クラス\\B_25_ジトメ秘密教団.dat",
+        "line": 117
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6207,
+        "kind": "class",
+        "name": "hsnsi4",
+        "parent": "base",
+        "file": "20_クラス\\B_25_ジトメ秘密教団.dat",
+        "line": 150
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6208,
+        "kind": "class",
+        "name": "otsg4",
+        "parent": "base",
+        "file": "20_クラス\\B_25_ジトメ秘密教団.dat",
+        "line": 185
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6232,
+        "kind": "class",
+        "name": "base_toono",
+        "parent": "base",
+        "file": "20_クラス\\B_2_クレイジーサイコホモ.dat",
+        "line": 13
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6235,
+        "kind": "class",
+        "name": "base_go",
+        "parent": "base",
+        "file": "20_クラス\\B_50_GO.dat",
+        "line": 13
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6256,
+        "kind": "class",
+        "name": "sastkn",
+        "parent": "base",
+        "file": "20_クラス\\B_5151_古代アステカ王国.dat",
+        "line": 3
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6257,
+        "kind": "class",
+        "name": "olmeca",
+        "parent": "base",
+        "file": "20_クラス\\B_5151_古代アステカ王国.dat",
+        "line": 34
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6258,
+        "kind": "class",
+        "name": "a525_0",
+        "parent": "base",
+        "file": "20_クラス\\B_525_神聖UNEI帝国.dat",
+        "line": 15
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6264,
+        "kind": "class",
+        "name": "a525_3",
+        "parent": "base",
+        "file": "20_クラス\\B_525_神聖UNEI帝国.dat",
+        "line": 114
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6267,
+        "kind": "class",
+        "name": "a525_4",
+        "parent": "base",
+        "file": "20_クラス\\B_525_神聖UNEI帝国.dat",
+        "line": 164
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6270,
+        "kind": "class",
+        "name": "a525_9",
+        "parent": "base",
+        "file": "20_クラス\\B_525_神聖UNEI帝国.dat",
+        "line": 214
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6273,
+        "kind": "class",
+        "name": "a525_a9",
+        "parent": "base",
+        "file": "20_クラス\\B_525_神聖UNEI帝国.dat",
+        "line": 265
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6277,
+        "kind": "class",
+        "name": "c_ncnc_base_sub",
+        "parent": "base",
+        "file": "20_クラス\\B_525_神聖UNEI帝国.dat",
+        "line": 335
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6304,
+        "kind": "class",
+        "name": "binari1",
+        "parent": "base",
+        "file": "20_クラス\\B_5_土屋稲荷大社.dat",
+        "line": 2
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6305,
+        "kind": "class",
+        "name": "binari2",
+        "parent": "base",
+        "file": "20_クラス\\B_5_土屋稲荷大社.dat",
+        "line": 47
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6306,
+        "kind": "class",
+        "name": "binari3",
+        "parent": "base",
+        "file": "20_クラス\\B_5_土屋稲荷大社.dat",
+        "line": 88
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 6438,
+        "kind": "unit",
+        "name": "hori_dr",
+        "parent": "hori",
+        "file": "3000_淫ドリームマッチ\\DB3_biim.dat",
+        "line": 98
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\23_リュージ騎士団.dat",
+          "line": 572,
+          "order": 1335
+        },
+        {
+          "kind": "field",
+          "file": "field_02_神苑_鎌倉.dat",
+          "line": 2022,
+          "order": 29430
+        }
+      ]
+    },
+    {
+      "child": {
+        "order": 8838,
+        "kind": "class",
+        "name": "mint",
+        "parent": "base",
+        "file": "30_スキル\\F13_heal_support.dat",
+        "line": 1580
+      },
+      "candidates": [
+        {
+          "kind": "unit",
+          "file": "10_ユニット\\00_base.dat",
+          "line": 1,
+          "order": 492
+        },
+        {
+          "kind": "class",
+          "file": "20_クラス\\00_汎用兵科.dat",
+          "line": 48,
+          "order": 5657
+        }
+      ]
+    }
+  ]
+}

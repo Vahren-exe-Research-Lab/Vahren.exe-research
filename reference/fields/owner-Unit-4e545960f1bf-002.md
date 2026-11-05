@@ -7,6 +7,9 @@
 <a id="field-8c"></a>
 ## Unit + 0x8C
 
+- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1014](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1014-L1014) — \| 0x575110 ゲート \| Unit+0x8C≠0→即return（0x576660なし）。+0x1D0==0 または +0x18614≠0 → ループなしで 0x576660(1)。終了時 +0x186C0/C4/C8/CC=0x80000008, +0x186BC=0 \| CONFIRMED \|
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1084](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1084-L1084) — \| 直後のLvUp \| Unit+0x8C≠0（SimpleUnit/SimpleStaticUnit）かつ exp≥next の時だけ 0x58A650＋"t_levelup"/"levelup" \| CONFIRMED \|
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
@@ -69,6 +72,18 @@
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1130](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1130-L1130) — \| HP表示 \| itoa(Unit+0xDC) と itoa(Unit+0x90)（0x407300 内）→ 現在HP=Unit+0xDC、最大=Unit+0x90 \| STATIC-HIGH \|
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+- [research/recovered/json_sources1/reports/data/B_T012_T013_VSLOT70_LIVE_VECTOR_EVIDENCE_20261023_1109.json 行 118](../../research/recovered/json_sources1/reports/data/B_T012_T013_VSLOT70_LIVE_VECTOR_EVIDENCE_20261023_1109.json?plain=1#L118-L118) — "meaning_static_x86": "Unit: subtract Unit+0x90"
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
+- [research/recovered/json_sources1/reports/data/B_T012_T013_VSLOT70_LIVE_VECTOR_EVIDENCE_20261023_1109.json 行 130](../../research/recovered/json_sources1/reports/data/B_T012_T013_VSLOT70_LIVE_VECTOR_EVIDENCE_20261023_1109.json?plain=1#L130-L130) — "meaning_static_x86": "SimpleUnit: subtract Unit+0x90"
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
+- [research/recovered/json_sources1/reports/data/B_T012_T013_VSLOT70_LIVE_VECTOR_EVIDENCE_20261023_1109.json 行 142](../../research/recovered/json_sources1/reports/data/B_T012_T013_VSLOT70_LIVE_VECTOR_EVIDENCE_20261023_1109.json?plain=1#L142-L142) — "meaning_static_x86": "StaticUnit: subtract Unit+0x90"
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
+- [research/recovered/json_sources1/reports/data/B_T012_T013_VSLOT70_LIVE_VECTOR_EVIDENCE_20261023_1109.json 行 154](../../research/recovered/json_sources1/reports/data/B_T012_T013_VSLOT70_LIVE_VECTOR_EVIDENCE_20261023_1109.json?plain=1#L154-L154) — "meaning_static_x86": "SimpleStaticUnit: subtract Unit+0x90"
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
 
 - [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 278](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L278-L278) — - `0x551BA6..0x551BD8`のheal attack/defense等は`Unit+0x90..+0x128`のcurrent runtime statへ直接加算/clampする一方、今回確認した2つの初期化断片ではその**stat本体の再コピーは証明されない**。`0x571B70`やbattle i
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
@@ -330,20 +345,5 @@
 
 - [research/recovered/rea_batch10/reports/REA_20261020_0035_T013_T031_STEALTH_RNG_CARDINALITY_QC.md 行 11](../../research/recovered/rea_batch10/reports/REA_20261020_0035_T013_T031_STEALTH_RNG_CARDINALITY_QC.md?plain=1#L11-L11) — - [SELECTED BASE] 0x57B938 signed(Unit+0xC8)<0の場合だけ0x57B940 CALL randのroll→0x57B95E比較で、0x57B966のbase=[Unit+0x1D4]または0x57B974のbase=[[Unit+0x1D4]+0x1C]を選択。Unit+0x
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
-
-- [research/recovered/rea_batch10/reports/REA_20261020_0035_T013_T031_STEALTH_RNG_CARDINALITY_QC.md 行 12](../../research/recovered/rea_batch10/reports/REA_20261020_0035_T013_T031_STEALTH_RNG_CARDINALITY_QC.md?plain=1#L12-L12) — - [COMBINED KNOWN DIRECT CALL COUNT] C=counterReached,T=(cachedTarget==0),N=(signed Unit+0xC8<0),S=(byte Unit+0x137!=0)。R_parent=C?(1+int(T&&N)+int(S&&N)):0（前回Q
-  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
-
-- [research/recovered/rea_batch13/reports/REA_T013_SUPPORT_VECTOR_REFRESH_GUARD_20261010_2336.md 行 9](../../research/recovered/rea_batch13/reports/REA_T013_SUPPORT_VECTOR_REFRESH_GUARD_20261010_2336.md?plain=1#L9-L9) — - 0x57BA07..0x57BA34ではUnit+0xC8<0なら独立CRT乱数と境界比較を行い、一方の選択時だけ0x57BA3Fの0x514F10を経て0x57BA53 CALL 0x57CFA0→0x57BA58 JMP 0x57BA9C。この経路では下記0x5158A0や0x57CFD0を呼ばない。
-  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
-
-- [research/recovered/rea_batch13/reports/REA_T013_SUPPORT_VECTOR_REFRESH_GUARD_20261010_2336.md 行 16](../../research/recovered/rea_batch13/reports/REA_T013_SUPPORT_VECTOR_REFRESH_GUARD_20261010_2336.md?plain=1#L16-L16) — - [TEST DESIGNED/NOT RUN] full refresh、Unit+0x137={0,1}、Unit+0xC8={負,非負}、乱数比較={成否}、vector begin=end/!=endで、3 calleeの呼数・+0x1E588・可視ターゲット・乱数系列を独立trace。
-  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
-
-- [research/recovered/rea_batch14/reports/REA_SOURCE_RECOVERY_T013_POOL_ARGUMENTS_20261011.md 行 13](../../research/recovered/rea_batch14/reports/REA_SOURCE_RECOVERY_T013_POOL_ARGUMENTS_20261011.md?plain=1#L13-L13) — - `0x57B938..0x57B964`: Unit+0xC8<0のときだけ主target側の独立rand15+native変換を行い、`roll < [0x65BD64]`で分岐。
-  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
-
-- [research/recovered/rea_batch14/reports/STATIC_DECOMP_COMPAT_CORRECTIONS_20261010.md 行 38](../../research/recovered/rea_batch14/reports/STATIC_DECOMP_COMPAT_CORRECTIONS_20261010.md?plain=1#L38-L38) — - 直接CALL site: `0x57B8FE` jitter、cachedTarget=NULLかつUnit+0xC8<0のみ `0x57B940` primary confusion、Unit+0x137非0かつ+0xC8<0のみ`0x57BA10`support confusion。これらのほかcallee内の
-  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

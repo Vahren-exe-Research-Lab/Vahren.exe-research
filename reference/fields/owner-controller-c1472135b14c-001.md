@@ -31,11 +31,20 @@
 - [research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md 行 71](../../research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md?plain=1#L71-L71) — **Golden必要条件**：同一SHA EXE・DAT・SAVE・MAP・入力・RNG/tickを揃え、`controller+0x278`=0/正数、`actor+0xC0/C4/C8/CC`正負、A/B vectorが空/1/2候補、距離帯の内外・境界、`candidate+0x1867C`、2回の確率分岐、各候
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+- [research/recovered/json_sources1/reports/data/B_T012_T013_DUAL_POOL_RANGE_FANOUT_EVIDENCE_20261023_0909.json 行 26](../../research/recovered/json_sources1/reports/data/B_T012_T013_DUAL_POOL_RANGE_FANOUT_EVIDENCE_20261023_0909.json?plain=1#L26-L26) — "note": "controller+0x278 initial guard",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
+- [research/recovered/json_sources1/reports/data/B_T012_T013_DUAL_POOL_RANGE_FANOUT_EVIDENCE_20261023_0909.json 行 222](../../research/recovered/json_sources1/reports/data/B_T012_T013_DUAL_POOL_RANGE_FANOUT_EVIDENCE_20261023_0909.json?plain=1#L222-L222) — "note": "subtract controller+0x278 cost exactly once",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
 <a id="field-290"></a>
 ## controller + 0x290
 
 - [research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md 行 51](../../research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md?plain=1#L51-L51) — - `0x00547EC4..0x00547EED`：actor/候補の矩形X中点と `+0x4C` のY位置から `(Δx)^2+(Δy)^2` を求め、`0x00547EED → 0x005E3B70`に渡す。Ghidra擬似Cは `controller+0x298 <= distance <= controlle
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/json_sources1/reports/data/B_T012_T013_DUAL_POOL_RANGE_FANOUT_EVIDENCE_20261023_0909.json 行 131](../../research/recovered/json_sources1/reports/data/B_T012_T013_DUAL_POOL_RANGE_FANOUT_EVIDENCE_20261023_0909.json?plain=1#L131-L131) — "note": "upper range controller+0x290",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
 
 <a id="field-298"></a>
 ## controller + 0x298
@@ -45,5 +54,8 @@
 
 - [research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md 行 51](../../research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md?plain=1#L51-L51) — - `0x00547EC4..0x00547EED`：actor/候補の矩形X中点と `+0x4C` のY位置から `(Δx)^2+(Δy)^2` を求め、`0x00547EED → 0x005E3B70`に渡す。Ghidra擬似Cは `controller+0x298 <= distance <= controlle
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/json_sources1/reports/data/B_T012_T013_DUAL_POOL_RANGE_FANOUT_EVIDENCE_20261023_0909.json 行 138](../../research/recovered/json_sources1/reports/data/B_T012_T013_DUAL_POOL_RANGE_FANOUT_EVIDENCE_20261023_0909.json?plain=1#L138-L138) — "note": "lower range controller+0x298",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

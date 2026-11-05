@@ -1,0 +1,200 @@
+{
+  "scaled_0_01": {
+    "actor_per": [
+      "0045BAF7"
+    ],
+    "arbeit_gain": [
+      "00496C05"
+    ],
+    "arbeit_gain_lose": [
+      "00496BC9",
+      "00496C27"
+    ],
+    "arbeit_price_coe": [
+      "00475DDC",
+      "004778AF",
+      "004D6890"
+    ],
+    "bold_spotpath": [
+      "005AFD75"
+    ],
+    "btl_attackmode": [
+      "00449A20",
+      "0044B67A",
+      "0044C679"
+    ],
+    "btl_chargemode": [
+      "00449A43",
+      "0044B69D",
+      "0044C6A0",
+      "0044CE0A",
+      "0044CEDB"
+    ],
+    "btl_counter": [
+      "004483F7"
+    ],
+    "btl_healer": [
+      "0044827C"
+    ],
+    "btl_intercept": [
+      "0044829B",
+      "0044AF86"
+    ],
+    "btl_mode_coe": [
+      "0044838B"
+    ],
+    "btl_nocastle_bdr": [
+      "00448C88"
+    ],
+    "btl_replace_line": [
+      "004F6706"
+    ],
+    "btl_standby": [
+      "0044AEE8"
+    ],
+    "caution_adjust": [
+      "0047E9EC",
+      "00484396",
+      "0048474C"
+    ],
+    "dead_penalty": [
+      "00588D7C"
+    ],
+    "diplo_budget_per": [
+      "00480B77"
+    ],
+    "diplo_cost_per": [
+      "0044465C",
+      "00444A6E",
+      "00444EE6",
+      "004813D8",
+      "00593C34"
+    ],
+    "diplo_most_power": [
+      "00484B39"
+    ],
+    "employ_price_coe": [
+      "00475D9D",
+      "0047786B",
+      "004D680F"
+    ],
+    "executive_bdr": [
+      "0059276D",
+      "00592ABD"
+    ],
+    "fv_attack_per": [
+      "0045B1AE"
+    ],
+    "fv_hp_per": [
+      "0045B16C"
+    ],
+    "fv_hprec_per": [
+      "0045B21A"
+    ],
+    "fv_level_per": [
+      "0045B23B"
+    ],
+    "fv_move_per": [
+      "0045B1F6"
+    ],
+    "fv_mp_per": [
+      "0045B18D"
+    ],
+    "fv_speed_per": [
+      "0045B1D2"
+    ],
+    "notalent_down": [
+      "0055DCD2",
+      "00573CF0"
+    ],
+    "picture_fade": [
+      "0051C14B",
+      "0052C6AD"
+    ],
+    "picture_floor": [
+      "004A54DC",
+      "0051B2D0"
+    ],
+    "raid_max": [
+      "004754AE"
+    ],
+    "raid_min": [
+      "0047548F"
+    ],
+    "raise_most_power": [
+      "0047C67E"
+    ],
+    "scenario_select2": [
+      "0053DE65"
+    ],
+    "senior_bdr": [
+      "00592792",
+      "00592AE2"
+    ],
+    "support_gain": [
+      "00496329"
+    ],
+    "support_gain_lose": [
+      "004962ED",
+      "0049634B"
+    ],
+    "support_trust_bdr": [
+      "0052EE61",
+      "0052F21C"
+    ],
+    "target_way_coe": [
+      "0047E8F1"
+    ],
+    "training_average": [
+      "005952EC"
+    ],
+    "trust_down_per": [
+      "0059244C"
+    ],
+    "unit_charge_slide": [
+      "0045B091"
+    ],
+    "unit_knock_speed": [
+      "0045B0D9"
+    ],
+    "unit_lifebar_height": [
+      "00577192"
+    ],
+    "unit_missile_slide": [
+      "0045B0B5"
+    ],
+    "unit_poison_per": [
+      "0045AE88"
+    ],
+    "unit_retreat_damage": [
+      "0045ADEF"
+    ],
+    "unit_retreat_speed": [
+      "0045AE13"
+    ],
+    "unit_summon_level": [
+      "0045AE55"
+    ],
+    "unit_sword_slide": [
+      "0045B070"
+    ],
+    "unit_use_coe": [
+      "0045AE34"
+    ],
+    "vassal_price_coe": [
+      "00561045",
+      "005629A3"
+    ],
+    "win_gain": [
+      "004957B3"
+    ],
+    "wnd_alpha": [
+      "0045A572"
+    ]
+  },
+  "local_min1_candidates": {
+    "diplo_bestfriend": [
+      "004819F1"
+    ]
+  }
+}

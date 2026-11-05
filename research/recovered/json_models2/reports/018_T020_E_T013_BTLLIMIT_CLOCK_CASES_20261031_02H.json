@@ -1,0 +1,4498 @@
+{
+  "id": "E-AUDIT-20261031-02H-T020-T013-BTLLIMIT-CLOCK-GATE-01",
+  "owner": "E/T020",
+  "classification": "STATIC_NATIVE_BYTES_AND_CONDITIONAL_SYNTHETIC",
+  "status": "VERIFY_NOT_READY",
+  "source_sha256": "0A125BC3A4E287E4DFFC2F5BA38AD2D2F43F3157DD98E41E9C3971C84598177D",
+  "exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "dynamic_observed": 0,
+  "golden_pass": 0,
+  "strict_match": 0,
+  "assumptions": [
+    "positive synthetic property 500 or 1000",
+    "x87 rounding and getter semantics remain unverified",
+    "timer/flags are hypothetical, not observed gameplay"
+  ],
+  "cases": [
+    {
+      "id": "SYN-001",
+      "inputs": {
+        "cat": 0,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "start": 0,
+        "cur": 0,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-002",
+      "inputs": {
+        "cat": 0,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "start": 200,
+        "cur": 101,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-003",
+      "inputs": {
+        "cat": 0,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "start": 200,
+        "cur": 100,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-004",
+      "inputs": {
+        "cat": 0,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "start": 200,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-005",
+      "inputs": {
+        "cat": 0,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "start": 2147483656,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-006",
+      "inputs": {
+        "cat": 0,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "start": 2147483656,
+        "cur": 200,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-007",
+      "inputs": {
+        "cat": 0,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "start": 2147483647,
+        "cur": 2147483648,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-008",
+      "inputs": {
+        "cat": 0,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "start": 0,
+        "cur": 0,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-009",
+      "inputs": {
+        "cat": 0,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "start": 200,
+        "cur": 101,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-010",
+      "inputs": {
+        "cat": 0,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "start": 200,
+        "cur": 100,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-011",
+      "inputs": {
+        "cat": 0,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "start": 200,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-012",
+      "inputs": {
+        "cat": 0,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "start": 2147483656,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-013",
+      "inputs": {
+        "cat": 0,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "start": 2147483656,
+        "cur": 200,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-014",
+      "inputs": {
+        "cat": 0,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "start": 2147483647,
+        "cur": 2147483648,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-015",
+      "inputs": {
+        "cat": 0,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "start": 0,
+        "cur": 0,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-016",
+      "inputs": {
+        "cat": 0,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "start": 200,
+        "cur": 101,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-017",
+      "inputs": {
+        "cat": 0,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "start": 200,
+        "cur": 100,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-018",
+      "inputs": {
+        "cat": 0,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "start": 200,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-019",
+      "inputs": {
+        "cat": 0,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "start": 2147483656,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-020",
+      "inputs": {
+        "cat": 0,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "start": 2147483656,
+        "cur": 200,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-021",
+      "inputs": {
+        "cat": 0,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "start": 2147483647,
+        "cur": 2147483648,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-022",
+      "inputs": {
+        "cat": 0,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "start": 0,
+        "cur": 0,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-023",
+      "inputs": {
+        "cat": 0,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "start": 200,
+        "cur": 101,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-024",
+      "inputs": {
+        "cat": 0,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "start": 200,
+        "cur": 100,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-025",
+      "inputs": {
+        "cat": 0,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "start": 200,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-026",
+      "inputs": {
+        "cat": 0,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "start": 2147483656,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-027",
+      "inputs": {
+        "cat": 0,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "start": 2147483656,
+        "cur": 200,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-028",
+      "inputs": {
+        "cat": 0,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "start": 2147483647,
+        "cur": 2147483648,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-029",
+      "inputs": {
+        "cat": 0,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "start": 0,
+        "cur": 0,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-030",
+      "inputs": {
+        "cat": 0,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "start": 200,
+        "cur": 101,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-031",
+      "inputs": {
+        "cat": 0,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "start": 200,
+        "cur": 100,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-032",
+      "inputs": {
+        "cat": 0,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "start": 200,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-033",
+      "inputs": {
+        "cat": 0,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "start": 2147483656,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-034",
+      "inputs": {
+        "cat": 0,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "start": 2147483656,
+        "cur": 200,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-035",
+      "inputs": {
+        "cat": 0,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "start": 2147483647,
+        "cur": 2147483648,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-036",
+      "inputs": {
+        "cat": 0,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "start": 0,
+        "cur": 0,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-037",
+      "inputs": {
+        "cat": 0,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "start": 200,
+        "cur": 101,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-038",
+      "inputs": {
+        "cat": 0,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "start": 200,
+        "cur": 100,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-039",
+      "inputs": {
+        "cat": 0,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "start": 200,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-040",
+      "inputs": {
+        "cat": 0,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "start": 2147483656,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-041",
+      "inputs": {
+        "cat": 0,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "start": 2147483656,
+        "cur": 200,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-042",
+      "inputs": {
+        "cat": 0,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "start": 2147483647,
+        "cur": 2147483648,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-043",
+      "inputs": {
+        "cat": 0,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "start": 0,
+        "cur": 0,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-044",
+      "inputs": {
+        "cat": 0,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "start": 200,
+        "cur": 101,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-045",
+      "inputs": {
+        "cat": 0,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "start": 200,
+        "cur": 100,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-046",
+      "inputs": {
+        "cat": 0,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "start": 200,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-047",
+      "inputs": {
+        "cat": 0,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "start": 2147483656,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-048",
+      "inputs": {
+        "cat": 0,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "start": 2147483656,
+        "cur": 200,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-049",
+      "inputs": {
+        "cat": 0,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "start": 2147483647,
+        "cur": 2147483648,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-050",
+      "inputs": {
+        "cat": 0,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "start": 0,
+        "cur": 0,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-051",
+      "inputs": {
+        "cat": 0,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "start": 200,
+        "cur": 101,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-052",
+      "inputs": {
+        "cat": 0,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "start": 200,
+        "cur": 100,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-053",
+      "inputs": {
+        "cat": 0,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "start": 200,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-054",
+      "inputs": {
+        "cat": 0,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "start": 2147483656,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-055",
+      "inputs": {
+        "cat": 0,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "start": 2147483656,
+        "cur": 200,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-056",
+      "inputs": {
+        "cat": 0,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "start": 2147483647,
+        "cur": 2147483648,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 0,
+        "final": 0,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-057",
+      "inputs": {
+        "cat": 1,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "start": 0,
+        "cur": 0,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-058",
+      "inputs": {
+        "cat": 1,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "start": 200,
+        "cur": 101,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-059",
+      "inputs": {
+        "cat": 1,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "start": 200,
+        "cur": 100,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-060",
+      "inputs": {
+        "cat": 1,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "start": 200,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-061",
+      "inputs": {
+        "cat": 1,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "start": 2147483656,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-062",
+      "inputs": {
+        "cat": 1,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "start": 2147483656,
+        "cur": 200,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-063",
+      "inputs": {
+        "cat": 1,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "start": 2147483647,
+        "cur": 2147483648,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-064",
+      "inputs": {
+        "cat": 1,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "start": 0,
+        "cur": 0,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-065",
+      "inputs": {
+        "cat": 1,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "start": 200,
+        "cur": 101,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-066",
+      "inputs": {
+        "cat": 1,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "start": 200,
+        "cur": 100,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-067",
+      "inputs": {
+        "cat": 1,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "start": 200,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-068",
+      "inputs": {
+        "cat": 1,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "start": 2147483656,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-069",
+      "inputs": {
+        "cat": 1,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "start": 2147483656,
+        "cur": 200,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-070",
+      "inputs": {
+        "cat": 1,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "start": 2147483647,
+        "cur": 2147483648,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-071",
+      "inputs": {
+        "cat": 1,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "start": 0,
+        "cur": 0,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-072",
+      "inputs": {
+        "cat": 1,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "start": 200,
+        "cur": 101,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-073",
+      "inputs": {
+        "cat": 1,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "start": 200,
+        "cur": 100,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-074",
+      "inputs": {
+        "cat": 1,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "start": 200,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-075",
+      "inputs": {
+        "cat": 1,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "start": 2147483656,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-076",
+      "inputs": {
+        "cat": 1,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "start": 2147483656,
+        "cur": 200,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-077",
+      "inputs": {
+        "cat": 1,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "start": 2147483647,
+        "cur": 2147483648,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-078",
+      "inputs": {
+        "cat": 1,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "start": 0,
+        "cur": 0,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-079",
+      "inputs": {
+        "cat": 1,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "start": 200,
+        "cur": 101,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-080",
+      "inputs": {
+        "cat": 1,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "start": 200,
+        "cur": 100,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-081",
+      "inputs": {
+        "cat": 1,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "start": 200,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-082",
+      "inputs": {
+        "cat": 1,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "start": 2147483656,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-083",
+      "inputs": {
+        "cat": 1,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "start": 2147483656,
+        "cur": 200,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-084",
+      "inputs": {
+        "cat": 1,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "start": 2147483647,
+        "cur": 2147483648,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-085",
+      "inputs": {
+        "cat": 1,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "start": 0,
+        "cur": 0,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 1,
+        "final": 1,
+        "k": 10000,
+        "threshold": 100,
+        "key": "btl_limit"
+      }
+    },
+    {
+      "id": "SYN-086",
+      "inputs": {
+        "cat": 1,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "start": 200,
+        "cur": 101,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": 99,
+        "threshold": 100,
+        "key": "btl_limit"
+      }
+    },
+    {
+      "id": "SYN-087",
+      "inputs": {
+        "cat": 1,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "start": 200,
+        "cur": 100,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 1,
+        "final": 1,
+        "k": 100,
+        "threshold": 100,
+        "key": "btl_limit"
+      }
+    },
+    {
+      "id": "SYN-088",
+      "inputs": {
+        "cat": 1,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "start": 200,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 1,
+        "final": 1,
+        "k": 101,
+        "threshold": 100,
+        "key": "btl_limit"
+      }
+    },
+    {
+      "id": "SYN-089",
+      "inputs": {
+        "cat": 1,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "start": 2147483656,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": 99,
+        "threshold": 100,
+        "key": "btl_limit"
+      }
+    },
+    {
+      "id": "SYN-090",
+      "inputs": {
+        "cat": 1,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "start": 2147483656,
+        "cur": 200,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 1,
+        "final": 1,
+        "k": 200,
+        "threshold": 100,
+        "key": "btl_limit"
+      }
+    },
+    {
+      "id": "SYN-091",
+      "inputs": {
+        "cat": 1,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "start": 2147483647,
+        "cur": 2147483648,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": -1,
+        "threshold": 100,
+        "key": "btl_limit"
+      }
+    },
+    {
+      "id": "SYN-092",
+      "inputs": {
+        "cat": 1,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "start": 0,
+        "cur": 0,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 1,
+        "final": 1,
+        "k": 10000,
+        "threshold": 100,
+        "key": "btl_limit"
+      }
+    },
+    {
+      "id": "SYN-093",
+      "inputs": {
+        "cat": 1,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "start": 200,
+        "cur": 101,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": 99,
+        "threshold": 100,
+        "key": "btl_limit"
+      }
+    },
+    {
+      "id": "SYN-094",
+      "inputs": {
+        "cat": 1,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "start": 200,
+        "cur": 100,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 1,
+        "final": 1,
+        "k": 100,
+        "threshold": 100,
+        "key": "btl_limit"
+      }
+    },
+    {
+      "id": "SYN-095",
+      "inputs": {
+        "cat": 1,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "start": 200,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 1,
+        "final": 1,
+        "k": 101,
+        "threshold": 100,
+        "key": "btl_limit"
+      }
+    },
+    {
+      "id": "SYN-096",
+      "inputs": {
+        "cat": 1,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "start": 2147483656,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": 99,
+        "threshold": 100,
+        "key": "btl_limit"
+      }
+    },
+    {
+      "id": "SYN-097",
+      "inputs": {
+        "cat": 1,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "start": 2147483656,
+        "cur": 200,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 1,
+        "final": 1,
+        "k": 200,
+        "threshold": 100,
+        "key": "btl_limit"
+      }
+    },
+    {
+      "id": "SYN-098",
+      "inputs": {
+        "cat": 1,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "start": 2147483647,
+        "cur": 2147483648,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": -1,
+        "threshold": 100,
+        "key": "btl_limit"
+      }
+    },
+    {
+      "id": "SYN-099",
+      "inputs": {
+        "cat": 1,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "start": 0,
+        "cur": 0,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 1,
+        "final": 1,
+        "k": 10000,
+        "threshold": 200,
+        "key": "btl_limit_c"
+      }
+    },
+    {
+      "id": "SYN-100",
+      "inputs": {
+        "cat": 1,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "start": 200,
+        "cur": 101,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": 99,
+        "threshold": 200,
+        "key": "btl_limit_c"
+      }
+    },
+    {
+      "id": "SYN-101",
+      "inputs": {
+        "cat": 1,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "start": 200,
+        "cur": 100,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": 100,
+        "threshold": 200,
+        "key": "btl_limit_c"
+      }
+    },
+    {
+      "id": "SYN-102",
+      "inputs": {
+        "cat": 1,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "start": 200,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": 101,
+        "threshold": 200,
+        "key": "btl_limit_c"
+      }
+    },
+    {
+      "id": "SYN-103",
+      "inputs": {
+        "cat": 1,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "start": 2147483656,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": 99,
+        "threshold": 200,
+        "key": "btl_limit_c"
+      }
+    },
+    {
+      "id": "SYN-104",
+      "inputs": {
+        "cat": 1,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "start": 2147483656,
+        "cur": 200,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 1,
+        "final": 1,
+        "k": 200,
+        "threshold": 200,
+        "key": "btl_limit_c"
+      }
+    },
+    {
+      "id": "SYN-105",
+      "inputs": {
+        "cat": 1,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "start": 2147483647,
+        "cur": 2147483648,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": -1,
+        "threshold": 200,
+        "key": "btl_limit_c"
+      }
+    },
+    {
+      "id": "SYN-106",
+      "inputs": {
+        "cat": 1,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "start": 0,
+        "cur": 0,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 1,
+        "final": 1,
+        "k": 10000,
+        "threshold": 200,
+        "key": "btl_limit_c"
+      }
+    },
+    {
+      "id": "SYN-107",
+      "inputs": {
+        "cat": 1,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "start": 200,
+        "cur": 101,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": 99,
+        "threshold": 200,
+        "key": "btl_limit_c"
+      }
+    },
+    {
+      "id": "SYN-108",
+      "inputs": {
+        "cat": 1,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "start": 200,
+        "cur": 100,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": 100,
+        "threshold": 200,
+        "key": "btl_limit_c"
+      }
+    },
+    {
+      "id": "SYN-109",
+      "inputs": {
+        "cat": 1,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "start": 200,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": 101,
+        "threshold": 200,
+        "key": "btl_limit_c"
+      }
+    },
+    {
+      "id": "SYN-110",
+      "inputs": {
+        "cat": 1,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "start": 2147483656,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": 99,
+        "threshold": 200,
+        "key": "btl_limit_c"
+      }
+    },
+    {
+      "id": "SYN-111",
+      "inputs": {
+        "cat": 1,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "start": 2147483656,
+        "cur": 200,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 1,
+        "final": 1,
+        "k": 200,
+        "threshold": 200,
+        "key": "btl_limit_c"
+      }
+    },
+    {
+      "id": "SYN-112",
+      "inputs": {
+        "cat": 1,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "start": 2147483647,
+        "cur": 2147483648,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": -1,
+        "threshold": 200,
+        "key": "btl_limit_c"
+      }
+    },
+    {
+      "id": "SYN-113",
+      "inputs": {
+        "cat": 6,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "start": 0,
+        "cur": 0,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-114",
+      "inputs": {
+        "cat": 6,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "start": 200,
+        "cur": 101,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-115",
+      "inputs": {
+        "cat": 6,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "start": 200,
+        "cur": 100,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-116",
+      "inputs": {
+        "cat": 6,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "start": 200,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-117",
+      "inputs": {
+        "cat": 6,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "start": 2147483656,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-118",
+      "inputs": {
+        "cat": 6,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "start": 2147483656,
+        "cur": 200,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-119",
+      "inputs": {
+        "cat": 6,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "start": 2147483647,
+        "cur": 2147483648,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-120",
+      "inputs": {
+        "cat": 6,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "start": 0,
+        "cur": 0,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-121",
+      "inputs": {
+        "cat": 6,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "start": 200,
+        "cur": 101,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-122",
+      "inputs": {
+        "cat": 6,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "start": 200,
+        "cur": 100,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-123",
+      "inputs": {
+        "cat": 6,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "start": 200,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-124",
+      "inputs": {
+        "cat": 6,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "start": 2147483656,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-125",
+      "inputs": {
+        "cat": 6,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "start": 2147483656,
+        "cur": 200,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-126",
+      "inputs": {
+        "cat": 6,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "start": 2147483647,
+        "cur": 2147483648,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-127",
+      "inputs": {
+        "cat": 6,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "start": 0,
+        "cur": 0,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-128",
+      "inputs": {
+        "cat": 6,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "start": 200,
+        "cur": 101,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-129",
+      "inputs": {
+        "cat": 6,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "start": 200,
+        "cur": 100,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-130",
+      "inputs": {
+        "cat": 6,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "start": 200,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-131",
+      "inputs": {
+        "cat": 6,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "start": 2147483656,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-132",
+      "inputs": {
+        "cat": 6,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "start": 2147483656,
+        "cur": 200,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-133",
+      "inputs": {
+        "cat": 6,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "start": 2147483647,
+        "cur": 2147483648,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-134",
+      "inputs": {
+        "cat": 6,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "start": 0,
+        "cur": 0,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-135",
+      "inputs": {
+        "cat": 6,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "start": 200,
+        "cur": 101,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-136",
+      "inputs": {
+        "cat": 6,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "start": 200,
+        "cur": 100,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-137",
+      "inputs": {
+        "cat": 6,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "start": 200,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-138",
+      "inputs": {
+        "cat": 6,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "start": 2147483656,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-139",
+      "inputs": {
+        "cat": 6,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "start": 2147483656,
+        "cur": 200,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-140",
+      "inputs": {
+        "cat": 6,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "start": 2147483647,
+        "cur": 2147483648,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-141",
+      "inputs": {
+        "cat": 6,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "start": 0,
+        "cur": 0,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-142",
+      "inputs": {
+        "cat": 6,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "start": 200,
+        "cur": 101,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-143",
+      "inputs": {
+        "cat": 6,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "start": 200,
+        "cur": 100,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-144",
+      "inputs": {
+        "cat": 6,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "start": 200,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-145",
+      "inputs": {
+        "cat": 6,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "start": 2147483656,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-146",
+      "inputs": {
+        "cat": 6,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "start": 2147483656,
+        "cur": 200,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-147",
+      "inputs": {
+        "cat": 6,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "start": 2147483647,
+        "cur": 2147483648,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-148",
+      "inputs": {
+        "cat": 6,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "start": 0,
+        "cur": 0,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-149",
+      "inputs": {
+        "cat": 6,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "start": 200,
+        "cur": 101,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-150",
+      "inputs": {
+        "cat": 6,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "start": 200,
+        "cur": 100,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-151",
+      "inputs": {
+        "cat": 6,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "start": 200,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-152",
+      "inputs": {
+        "cat": 6,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "start": 2147483656,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-153",
+      "inputs": {
+        "cat": 6,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "start": 2147483656,
+        "cur": 200,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-154",
+      "inputs": {
+        "cat": 6,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "start": 2147483647,
+        "cur": 2147483648,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-155",
+      "inputs": {
+        "cat": 6,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "start": 0,
+        "cur": 0,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-156",
+      "inputs": {
+        "cat": 6,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "start": 200,
+        "cur": 101,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-157",
+      "inputs": {
+        "cat": 6,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "start": 200,
+        "cur": 100,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-158",
+      "inputs": {
+        "cat": 6,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "start": 200,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-159",
+      "inputs": {
+        "cat": 6,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "start": 2147483656,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-160",
+      "inputs": {
+        "cat": 6,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "start": 2147483656,
+        "cur": 200,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-161",
+      "inputs": {
+        "cat": 6,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "start": 2147483647,
+        "cur": 2147483648,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-162",
+      "inputs": {
+        "cat": 6,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "start": 0,
+        "cur": 0,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-163",
+      "inputs": {
+        "cat": 6,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "start": 200,
+        "cur": 101,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-164",
+      "inputs": {
+        "cat": 6,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "start": 200,
+        "cur": 100,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-165",
+      "inputs": {
+        "cat": 6,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "start": 200,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-166",
+      "inputs": {
+        "cat": 6,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "start": 2147483656,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-167",
+      "inputs": {
+        "cat": 6,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "start": 2147483656,
+        "cur": 200,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-168",
+      "inputs": {
+        "cat": 6,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "start": 2147483647,
+        "cur": 2147483648,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-169",
+      "inputs": {
+        "cat": 7,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "start": 0,
+        "cur": 0,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-170",
+      "inputs": {
+        "cat": 7,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "start": 200,
+        "cur": 101,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-171",
+      "inputs": {
+        "cat": 7,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "start": 200,
+        "cur": 100,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-172",
+      "inputs": {
+        "cat": 7,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "start": 200,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-173",
+      "inputs": {
+        "cat": 7,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "start": 2147483656,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-174",
+      "inputs": {
+        "cat": 7,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "start": 2147483656,
+        "cur": 200,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-175",
+      "inputs": {
+        "cat": 7,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "start": 2147483647,
+        "cur": 2147483648,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-176",
+      "inputs": {
+        "cat": 7,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "start": 0,
+        "cur": 0,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-177",
+      "inputs": {
+        "cat": 7,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "start": 200,
+        "cur": 101,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-178",
+      "inputs": {
+        "cat": 7,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "start": 200,
+        "cur": 100,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-179",
+      "inputs": {
+        "cat": 7,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "start": 200,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-180",
+      "inputs": {
+        "cat": 7,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "start": 2147483656,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-181",
+      "inputs": {
+        "cat": 7,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "start": 2147483656,
+        "cur": 200,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-182",
+      "inputs": {
+        "cat": 7,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "start": 2147483647,
+        "cur": 2147483648,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-183",
+      "inputs": {
+        "cat": 7,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "start": 0,
+        "cur": 0,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-184",
+      "inputs": {
+        "cat": 7,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "start": 200,
+        "cur": 101,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-185",
+      "inputs": {
+        "cat": 7,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "start": 200,
+        "cur": 100,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-186",
+      "inputs": {
+        "cat": 7,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "start": 200,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-187",
+      "inputs": {
+        "cat": 7,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "start": 2147483656,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-188",
+      "inputs": {
+        "cat": 7,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "start": 2147483656,
+        "cur": 200,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-189",
+      "inputs": {
+        "cat": 7,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "start": 2147483647,
+        "cur": 2147483648,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-190",
+      "inputs": {
+        "cat": 7,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "start": 0,
+        "cur": 0,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-191",
+      "inputs": {
+        "cat": 7,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "start": 200,
+        "cur": 101,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-192",
+      "inputs": {
+        "cat": 7,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "start": 200,
+        "cur": 100,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-193",
+      "inputs": {
+        "cat": 7,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "start": 200,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-194",
+      "inputs": {
+        "cat": 7,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "start": 2147483656,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-195",
+      "inputs": {
+        "cat": 7,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "start": 2147483656,
+        "cur": 200,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-196",
+      "inputs": {
+        "cat": 7,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "start": 2147483647,
+        "cur": 2147483648,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": null,
+        "threshold": null,
+        "key": null
+      }
+    },
+    {
+      "id": "SYN-197",
+      "inputs": {
+        "cat": 7,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "start": 0,
+        "cur": 0,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 7,
+        "final": 7,
+        "k": 10000,
+        "threshold": 100,
+        "key": "btl_limit"
+      }
+    },
+    {
+      "id": "SYN-198",
+      "inputs": {
+        "cat": 7,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "start": 200,
+        "cur": 101,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": 99,
+        "threshold": 100,
+        "key": "btl_limit"
+      }
+    },
+    {
+      "id": "SYN-199",
+      "inputs": {
+        "cat": 7,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "start": 200,
+        "cur": 100,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 7,
+        "final": 7,
+        "k": 100,
+        "threshold": 100,
+        "key": "btl_limit"
+      }
+    },
+    {
+      "id": "SYN-200",
+      "inputs": {
+        "cat": 7,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "start": 200,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 7,
+        "final": 7,
+        "k": 101,
+        "threshold": 100,
+        "key": "btl_limit"
+      }
+    },
+    {
+      "id": "SYN-201",
+      "inputs": {
+        "cat": 7,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "start": 2147483656,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": 99,
+        "threshold": 100,
+        "key": "btl_limit"
+      }
+    },
+    {
+      "id": "SYN-202",
+      "inputs": {
+        "cat": 7,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "start": 2147483656,
+        "cur": 200,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 7,
+        "final": 7,
+        "k": 200,
+        "threshold": 100,
+        "key": "btl_limit"
+      }
+    },
+    {
+      "id": "SYN-203",
+      "inputs": {
+        "cat": 7,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "start": 2147483647,
+        "cur": 2147483648,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": -1,
+        "threshold": 100,
+        "key": "btl_limit"
+      }
+    },
+    {
+      "id": "SYN-204",
+      "inputs": {
+        "cat": 7,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "start": 0,
+        "cur": 0,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 7,
+        "final": 7,
+        "k": 10000,
+        "threshold": 100,
+        "key": "btl_limit"
+      }
+    },
+    {
+      "id": "SYN-205",
+      "inputs": {
+        "cat": 7,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "start": 200,
+        "cur": 101,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": 99,
+        "threshold": 100,
+        "key": "btl_limit"
+      }
+    },
+    {
+      "id": "SYN-206",
+      "inputs": {
+        "cat": 7,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "start": 200,
+        "cur": 100,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 7,
+        "final": 7,
+        "k": 100,
+        "threshold": 100,
+        "key": "btl_limit"
+      }
+    },
+    {
+      "id": "SYN-207",
+      "inputs": {
+        "cat": 7,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "start": 200,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 7,
+        "final": 7,
+        "k": 101,
+        "threshold": 100,
+        "key": "btl_limit"
+      }
+    },
+    {
+      "id": "SYN-208",
+      "inputs": {
+        "cat": 7,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "start": 2147483656,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": 99,
+        "threshold": 100,
+        "key": "btl_limit"
+      }
+    },
+    {
+      "id": "SYN-209",
+      "inputs": {
+        "cat": 7,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "start": 2147483656,
+        "cur": 200,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 7,
+        "final": 7,
+        "k": 200,
+        "threshold": 100,
+        "key": "btl_limit"
+      }
+    },
+    {
+      "id": "SYN-210",
+      "inputs": {
+        "cat": 7,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "start": 2147483647,
+        "cur": 2147483648,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": -1,
+        "threshold": 100,
+        "key": "btl_limit"
+      }
+    },
+    {
+      "id": "SYN-211",
+      "inputs": {
+        "cat": 7,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "start": 0,
+        "cur": 0,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 7,
+        "final": 7,
+        "k": 10000,
+        "threshold": 200,
+        "key": "btl_limit_c"
+      }
+    },
+    {
+      "id": "SYN-212",
+      "inputs": {
+        "cat": 7,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "start": 200,
+        "cur": 101,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": 99,
+        "threshold": 200,
+        "key": "btl_limit_c"
+      }
+    },
+    {
+      "id": "SYN-213",
+      "inputs": {
+        "cat": 7,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "start": 200,
+        "cur": 100,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": 100,
+        "threshold": 200,
+        "key": "btl_limit_c"
+      }
+    },
+    {
+      "id": "SYN-214",
+      "inputs": {
+        "cat": 7,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "start": 200,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": 101,
+        "threshold": 200,
+        "key": "btl_limit_c"
+      }
+    },
+    {
+      "id": "SYN-215",
+      "inputs": {
+        "cat": 7,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "start": 2147483656,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": 99,
+        "threshold": 200,
+        "key": "btl_limit_c"
+      }
+    },
+    {
+      "id": "SYN-216",
+      "inputs": {
+        "cat": 7,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "start": 2147483656,
+        "cur": 200,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 7,
+        "final": 7,
+        "k": 200,
+        "threshold": 200,
+        "key": "btl_limit_c"
+      }
+    },
+    {
+      "id": "SYN-217",
+      "inputs": {
+        "cat": 7,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "start": 2147483647,
+        "cur": 2147483648,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 7,
+        "k": -1,
+        "threshold": 200,
+        "key": "btl_limit_c"
+      }
+    },
+    {
+      "id": "SYN-218",
+      "inputs": {
+        "cat": 7,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "start": 0,
+        "cur": 0,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 7,
+        "final": 7,
+        "k": 10000,
+        "threshold": 200,
+        "key": "btl_limit_c"
+      }
+    },
+    {
+      "id": "SYN-219",
+      "inputs": {
+        "cat": 7,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "start": 200,
+        "cur": 101,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": 99,
+        "threshold": 200,
+        "key": "btl_limit_c"
+      }
+    },
+    {
+      "id": "SYN-220",
+      "inputs": {
+        "cat": 7,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "start": 200,
+        "cur": 100,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": 100,
+        "threshold": 200,
+        "key": "btl_limit_c"
+      }
+    },
+    {
+      "id": "SYN-221",
+      "inputs": {
+        "cat": 7,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "start": 200,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": 101,
+        "threshold": 200,
+        "key": "btl_limit_c"
+      }
+    },
+    {
+      "id": "SYN-222",
+      "inputs": {
+        "cat": 7,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "start": 2147483656,
+        "cur": 99,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": 99,
+        "threshold": 200,
+        "key": "btl_limit_c"
+      }
+    },
+    {
+      "id": "SYN-223",
+      "inputs": {
+        "cat": 7,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "start": 2147483656,
+        "cur": 200,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 7,
+        "final": 7,
+        "k": 200,
+        "threshold": 200,
+        "key": "btl_limit_c"
+      }
+    },
+    {
+      "id": "SYN-224",
+      "inputs": {
+        "cat": 7,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "start": 2147483647,
+        "cur": 2147483648,
+        "limit": 500,
+        "limit_c": 1000
+      },
+      "conditional_expected": {
+        "intermediate": 6,
+        "final": 6,
+        "k": -1,
+        "threshold": 200,
+        "key": "btl_limit_c"
+      }
+    }
+  ]
+}

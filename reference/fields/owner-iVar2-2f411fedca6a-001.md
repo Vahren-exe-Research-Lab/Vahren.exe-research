@@ -22,4 +22,22 @@
 - [research/recovered/e_batch2/reports/tests/E_OFFLINE_SYNC_20261029/T020_DIALOG_REGISTRY_FALLBACK_BRANCH_AUDIT_20261028_1745.md 行 33](../../research/recovered/e_batch2/reports/tests/E_OFFLINE_SYNC_20261029/T020_DIALOG_REGISTRY_FALLBACK_BRANCH_AUDIT_20261028_1745.md?plain=1#L33-L33) — **重要な受入境界:** (1) 登録関数に到達すること、(2) 登録結果フラグが1になること、(3) `local_78 == 0` による間接CALL分岐に入ること、(4) 原作で画面表示・ユーザー選択・World更新が発生することは、それぞれ別の事象である。擬似C中の`local_78`は登録前のメモリ読み出しに
   制約・訂正　Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
 
+<a id="field-48"></a>
+## iVar2 + 0x48
+
+- [research/recovered/json_sources1/reports/data/B_T012_T013_PERSON_POOL_LIFECYCLE_EVIDENCE_20261023_1215.json 行 199](../../research/recovered/json_sources1/reports/data/B_T012_T013_PERSON_POOL_LIFECYCLE_EVIDENCE_20261023_1215.json?plain=1#L199-L199) — "marker": "iVar2 + 0x48",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
+<a id="field-4c"></a>
+## iVar2 + 0x4C
+
+- [research/recovered/json_sources1/reports/data/B_T012_T013_PERSON_POOL_LIFECYCLE_EVIDENCE_20261023_1215.json 行 204](../../research/recovered/json_sources1/reports/data/B_T012_T013_PERSON_POOL_LIFECYCLE_EVIDENCE_20261023_1215.json?plain=1#L204-L204) — "marker": "iVar2 + 0x4c",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
+<a id="field-1867c"></a>
+## iVar2 + 0x1867C
+
+- [research/recovered/json_sources1/reports/data/B_T012_T013_PERSON_POOL_LIFECYCLE_EVIDENCE_20261023_1215.json 行 189](../../research/recovered/json_sources1/reports/data/B_T012_T013_PERSON_POOL_LIFECYCLE_EVIDENCE_20261023_1215.json?plain=1#L189-L189) — "marker": "iVar2 + 0x1867c",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

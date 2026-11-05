@@ -1,0 +1,272 @@
+{
+  "research_id": "B-OFFLINE-20261028-22H-T028-ALTERNATE-RESULT-VECTOR-PAIR-01",
+  "recovery_id": "B-RC-20261028-22H-LOCAL-SESSION-TERMINATED-01",
+  "owner": "B/T028",
+  "status": "OFFLINE-UNSYNCED / STATIC-ORIGINAL-PE-ASM / STATIC-OLD-GHIDRA / INFERRED / VERIFY / NOT READY",
+  "source": {
+    "exe": "Vahren(2).exe (Library, original ver0.67, read-only)",
+    "offline_zip": "HAKUSHIN067_AI_OFFLINE_PACK_20261021.zip",
+    "exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+    "offline_zip_sha256": "911E5E37A3F9BD5B36F929AF94B0D1E2CD1CD5CF34E3E2F16C8FC800ABF5F7C2",
+    "sqlite_sha256": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF",
+    "zip_crc": "34/34",
+    "ghidra_version": "2026-10-21 old static snapshot"
+  },
+  "local_connection": {
+    "tool": "Desktop Commander Local Compact read_file",
+    "error": "INVALID_ARGUMENT: McpServerError: Session terminated",
+    "classification": "TRANSIENT_CONNECTIVITY_NOT_SAFETY_REFUSAL",
+    "synced_to_pc": false
+  },
+  "findings": {
+    "manager_vector_offset": "0x1EEC74",
+    "native_manager_vector_ptr": "0x434B42: edi=[esp+0x44], 0x434B48: edi+=0x1eec74",
+    "first_append": "0x434B5A -> 0x415530, vector pointed to by EDI",
+    "scratch_index": "0x00AC0868",
+    "scratch_buffer_base": "0x00AC0460",
+    "scratch_slot_size": 128,
+    "scratch_slots": 8,
+    "scratch_circular": "on old index 0..7 next = (old +1) mod 8",
+    "decimal_format": "0x434B82 -> 0x5D1779 (__itoa with base 10), input in ESI copied from ECX",
+    "copy_to_local_string": "0x434BC0 -> 0x402800",
+    "second_append": "0x434BD0 -> 0x429A00, uses EBX=EDI, advances vector end by 0x1c (0x429AAC)",
+    "actual_game_ui": "UNKNOWN",
+    "member_unit_change": "UNPROVEN"
+  },
+  "original_e8_callers": {
+    "0x498AB3": "0x434B10",
+    "0x498D55": "0x434B10"
+  },
+  "verification": {
+    "source_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+    "source_size": 2910720,
+    "function": "0x00434B10",
+    "function_bytes": 427,
+    "function_sha256": "9B727120D32D9011E453DCB15B99C7A266A2192899104341693476F952A85A92",
+    "instruction_checks": [
+      {
+        "site": "0x00434B42",
+        "expected": "8B7C2444",
+        "actual": "8B7C2444",
+        "pass_check": true
+      },
+      {
+        "site": "0x00434B46",
+        "expected": "8BF1",
+        "actual": "8BF1",
+        "pass_check": true
+      },
+      {
+        "site": "0x00434B48",
+        "expected": "81C774EC1E00",
+        "actual": "81C774EC1E00",
+        "pass_check": true
+      },
+      {
+        "site": "0x00434B4E",
+        "expected": "8D4C2448",
+        "actual": "8D4C2448",
+        "pass_check": true
+      },
+      {
+        "site": "0x00434B5F",
+        "expected": "A16808AC00",
+        "actual": "A16808AC00",
+        "pass_check": true
+      },
+      {
+        "site": "0x00434B64",
+        "expected": "40",
+        "actual": "40",
+        "pass_check": true
+      },
+      {
+        "site": "0x00434B65",
+        "expected": "A36808AC00",
+        "actual": "A36808AC00",
+        "pass_check": true
+      },
+      {
+        "site": "0x00434B6A",
+        "expected": "83F808",
+        "actual": "83F808",
+        "pass_check": true
+      },
+      {
+        "site": "0x00434B6D",
+        "expected": "7C07",
+        "actual": "7C07",
+        "pass_check": true
+      },
+      {
+        "site": "0x00434B6F",
+        "expected": "33C0",
+        "actual": "33C0",
+        "pass_check": true
+      },
+      {
+        "site": "0x00434B76",
+        "expected": "C1E007",
+        "actual": "C1E007",
+        "pass_check": true
+      },
+      {
+        "site": "0x00434B79",
+        "expected": "6A0A",
+        "actual": "6A0A",
+        "pass_check": true
+      },
+      {
+        "site": "0x00434B7B",
+        "expected": "056004AC00",
+        "actual": "056004AC00",
+        "pass_check": true
+      },
+      {
+        "site": "0x00434B81",
+        "expected": "56",
+        "actual": "56",
+        "pass_check": true
+      },
+      {
+        "site": "0x00434BC5",
+        "expected": "8D4C2414",
+        "actual": "8D4C2414",
+        "pass_check": true
+      },
+      {
+        "site": "0x00434BC9",
+        "expected": "8BDF",
+        "actual": "8BDF",
+        "pass_check": true
+      },
+      {
+        "site": "0x00429A25",
+        "expected": "8BF9",
+        "actual": "8BF9",
+        "pass_check": true
+      },
+      {
+        "site": "0x00429AAC",
+        "expected": "8343041C",
+        "actual": "8343041C",
+        "pass_check": true
+      },
+      {
+        "site": "0x00406DD0",
+        "expected": "A16808AC00",
+        "actual": "A16808AC00",
+        "pass_check": true
+      },
+      {
+        "site": "0x00406DDB",
+        "expected": "83F808",
+        "actual": "83F808",
+        "pass_check": true
+      },
+      {
+        "site": "0x00406DE7",
+        "expected": "C1E007",
+        "actual": "C1E007",
+        "pass_check": true
+      },
+      {
+        "site": "0x00406DEA",
+        "expected": "056004AC00",
+        "actual": "056004AC00",
+        "pass_check": true
+      },
+      {
+        "site": "0x00498AAB",
+        "expected": "57",
+        "actual": "57",
+        "pass_check": true
+      },
+      {
+        "site": "0x00498D4C",
+        "expected": "57",
+        "actual": "57",
+        "pass_check": true
+      }
+    ],
+    "direct_calls": [
+      {
+        "site": "0x00434B5A",
+        "target": "0x00415530",
+        "actual": "0x00415530",
+        "bytes": "E8D109FEFF",
+        "pass_check": true
+      },
+      {
+        "site": "0x00434B82",
+        "target": "0x005D1779",
+        "actual": "0x005D1779",
+        "bytes": "E8F2CB1900",
+        "pass_check": true
+      },
+      {
+        "site": "0x00434BC0",
+        "target": "0x00402800",
+        "actual": "0x00402800",
+        "bytes": "E83BDCFCFF",
+        "pass_check": true
+      },
+      {
+        "site": "0x00434BD0",
+        "target": "0x00429A00",
+        "actual": "0x00429A00",
+        "bytes": "E82B4EFFFF",
+        "pass_check": true
+      },
+      {
+        "site": "0x00406DF7",
+        "target": "0x005D1779",
+        "actual": "0x005D1779",
+        "bytes": "E87DA91C00",
+        "pass_check": true
+      },
+      {
+        "site": "0x00498AB3",
+        "target": "0x00434B10",
+        "actual": "0x00434B10",
+        "bytes": "E858C0F9FF",
+        "pass_check": true
+      },
+      {
+        "site": "0x00498D55",
+        "target": "0x00434B10",
+        "actual": "0x00434B10",
+        "bytes": "E8B6BDF9FF",
+        "pass_check": true
+      }
+    ],
+    "instruction_pass_count": 24,
+    "call_pass_count": 7,
+    "buffer_index_from_valid_0_7": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      0
+    ],
+    "metadata": {
+      "mode": "OFFLINE-UNSYNCED/STATIC/VERIFY/NOT_READY",
+      "golden_pass": 0,
+      "strict_match": 0
+    }
+  },
+  "nonduplication": {
+    "old_snapshot": "New VAs and vector offset absent from B HANDOFF, T011, T012, T024 snapshot; absent from 17-21H B T028 reports apart from 0x434B10 already known",
+    "current_pc": "NOT VERIFIED"
+  },
+  "golden": {
+    "old_gameplay_pass": 0,
+    "strict_match": 0,
+    "ready": false,
+    "requirements": "same unmodified ver0.67 EXE, pre-20x DAT, identical SAVE/MAP/user input/RNG; observe dialogue vs vector queue and Unit state independently"
+  },
+  "next": "Follow +0x1eec74 vector consumer; find read/clear loops and UI/event dispatch; avoid inferring it is a rendered log. Verify every call site and owner; sync to B handoff once PC connection returns."
+}

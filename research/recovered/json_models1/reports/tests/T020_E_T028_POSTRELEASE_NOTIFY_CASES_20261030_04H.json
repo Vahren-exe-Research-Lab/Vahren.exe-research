@@ -1,0 +1,743 @@
+{
+  "research_id": "E-AUDIT-20261030-04H-T020-T028-NOTIFY-GATE-DECOUPLING-01",
+  "owner": "E",
+  "source_owner": "B",
+  "source_sha256": "7A56916D8FA5540426BB178F5272295DAE5F353F826C8AD2ADA8F45410190774",
+  "source_status": "VERIFY_NOT_READY",
+  "scope": "SYNTHETIC_STATIC_PATH_NOT_GAMEPLAY",
+  "actual_golden_pass": 0,
+  "strict_match": 0,
+  "cases": [
+    {
+      "id": "M0_000_0",
+      "input": {
+        "same_spot": false,
+        "flag77": 0,
+        "flag75": 0,
+        "stack_flag": 0,
+        "mode": 0
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        0,
+        0,
+        "NEXT_ENTRY"
+      ]
+    },
+    {
+      "id": "M0_000_1",
+      "input": {
+        "same_spot": false,
+        "flag77": 0,
+        "flag75": 0,
+        "stack_flag": 0,
+        "mode": 1
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        0,
+        0,
+        "NEXT_ENTRY"
+      ]
+    },
+    {
+      "id": "M0_001_0",
+      "input": {
+        "same_spot": false,
+        "flag77": 0,
+        "flag75": 0,
+        "stack_flag": 1,
+        "mode": 0
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        0,
+        0,
+        "NEXT_ENTRY"
+      ]
+    },
+    {
+      "id": "M0_001_1",
+      "input": {
+        "same_spot": false,
+        "flag77": 0,
+        "flag75": 0,
+        "stack_flag": 1,
+        "mode": 1
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        0,
+        0,
+        "NEXT_ENTRY"
+      ]
+    },
+    {
+      "id": "M0_010_0",
+      "input": {
+        "same_spot": false,
+        "flag77": 0,
+        "flag75": 1,
+        "stack_flag": 0,
+        "mode": 0
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        0,
+        0,
+        "NEXT_ENTRY"
+      ]
+    },
+    {
+      "id": "M0_010_1",
+      "input": {
+        "same_spot": false,
+        "flag77": 0,
+        "flag75": 1,
+        "stack_flag": 0,
+        "mode": 1
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        0,
+        0,
+        "NEXT_ENTRY"
+      ]
+    },
+    {
+      "id": "M0_011_0",
+      "input": {
+        "same_spot": false,
+        "flag77": 0,
+        "flag75": 1,
+        "stack_flag": 1,
+        "mode": 0
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        0,
+        1,
+        "CALL_0x434B10_ECX10"
+      ]
+    },
+    {
+      "id": "M0_011_1",
+      "input": {
+        "same_spot": false,
+        "flag77": 0,
+        "flag75": 1,
+        "stack_flag": 1,
+        "mode": 1
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        0,
+        1,
+        "CALL_0x52CF50"
+      ]
+    },
+    {
+      "id": "M0_100_0",
+      "input": {
+        "same_spot": false,
+        "flag77": 1,
+        "flag75": 0,
+        "stack_flag": 0,
+        "mode": 0
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        0,
+        0,
+        "NEXT_ENTRY"
+      ]
+    },
+    {
+      "id": "M0_100_1",
+      "input": {
+        "same_spot": false,
+        "flag77": 1,
+        "flag75": 0,
+        "stack_flag": 0,
+        "mode": 1
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        0,
+        0,
+        "NEXT_ENTRY"
+      ]
+    },
+    {
+      "id": "M0_101_0",
+      "input": {
+        "same_spot": false,
+        "flag77": 1,
+        "flag75": 0,
+        "stack_flag": 1,
+        "mode": 0
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        0,
+        1,
+        "CALL_0x434B10_ECX10"
+      ]
+    },
+    {
+      "id": "M0_101_1",
+      "input": {
+        "same_spot": false,
+        "flag77": 1,
+        "flag75": 0,
+        "stack_flag": 1,
+        "mode": 1
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        0,
+        1,
+        "CALL_0x52CF50"
+      ]
+    },
+    {
+      "id": "M0_110_0",
+      "input": {
+        "same_spot": false,
+        "flag77": 1,
+        "flag75": 1,
+        "stack_flag": 0,
+        "mode": 0
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        0,
+        0,
+        "NEXT_ENTRY"
+      ]
+    },
+    {
+      "id": "M0_110_1",
+      "input": {
+        "same_spot": false,
+        "flag77": 1,
+        "flag75": 1,
+        "stack_flag": 0,
+        "mode": 1
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        0,
+        0,
+        "NEXT_ENTRY"
+      ]
+    },
+    {
+      "id": "M0_111_0",
+      "input": {
+        "same_spot": false,
+        "flag77": 1,
+        "flag75": 1,
+        "stack_flag": 1,
+        "mode": 0
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        0,
+        1,
+        "CALL_0x434B10_ECX10"
+      ]
+    },
+    {
+      "id": "M0_111_1",
+      "input": {
+        "same_spot": false,
+        "flag77": 1,
+        "flag75": 1,
+        "stack_flag": 1,
+        "mode": 1
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        0,
+        1,
+        "CALL_0x52CF50"
+      ]
+    },
+    {
+      "id": "M1_000_0",
+      "input": {
+        "same_spot": true,
+        "flag77": 0,
+        "flag75": 0,
+        "stack_flag": 0,
+        "mode": 0
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        1,
+        0,
+        "NEXT_ENTRY"
+      ]
+    },
+    {
+      "id": "M1_000_1",
+      "input": {
+        "same_spot": true,
+        "flag77": 0,
+        "flag75": 0,
+        "stack_flag": 0,
+        "mode": 1
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        1,
+        0,
+        "NEXT_ENTRY"
+      ]
+    },
+    {
+      "id": "M1_001_0",
+      "input": {
+        "same_spot": true,
+        "flag77": 0,
+        "flag75": 0,
+        "stack_flag": 1,
+        "mode": 0
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        1,
+        0,
+        "NEXT_ENTRY"
+      ]
+    },
+    {
+      "id": "M1_001_1",
+      "input": {
+        "same_spot": true,
+        "flag77": 0,
+        "flag75": 0,
+        "stack_flag": 1,
+        "mode": 1
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        1,
+        0,
+        "NEXT_ENTRY"
+      ]
+    },
+    {
+      "id": "M1_010_0",
+      "input": {
+        "same_spot": true,
+        "flag77": 0,
+        "flag75": 1,
+        "stack_flag": 0,
+        "mode": 0
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        1,
+        0,
+        "NEXT_ENTRY"
+      ]
+    },
+    {
+      "id": "M1_010_1",
+      "input": {
+        "same_spot": true,
+        "flag77": 0,
+        "flag75": 1,
+        "stack_flag": 0,
+        "mode": 1
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        1,
+        0,
+        "NEXT_ENTRY"
+      ]
+    },
+    {
+      "id": "M1_011_0",
+      "input": {
+        "same_spot": true,
+        "flag77": 0,
+        "flag75": 1,
+        "stack_flag": 1,
+        "mode": 0
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        1,
+        1,
+        "CALL_0x434B10_ECX10"
+      ]
+    },
+    {
+      "id": "M1_011_1",
+      "input": {
+        "same_spot": true,
+        "flag77": 0,
+        "flag75": 1,
+        "stack_flag": 1,
+        "mode": 1
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        1,
+        1,
+        "CALL_0x52CF50"
+      ]
+    },
+    {
+      "id": "M1_100_0",
+      "input": {
+        "same_spot": true,
+        "flag77": 1,
+        "flag75": 0,
+        "stack_flag": 0,
+        "mode": 0
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        1,
+        0,
+        "NEXT_ENTRY"
+      ]
+    },
+    {
+      "id": "M1_100_1",
+      "input": {
+        "same_spot": true,
+        "flag77": 1,
+        "flag75": 0,
+        "stack_flag": 0,
+        "mode": 1
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        1,
+        0,
+        "NEXT_ENTRY"
+      ]
+    },
+    {
+      "id": "M1_101_0",
+      "input": {
+        "same_spot": true,
+        "flag77": 1,
+        "flag75": 0,
+        "stack_flag": 1,
+        "mode": 0
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        1,
+        1,
+        "CALL_0x434B10_ECX10"
+      ]
+    },
+    {
+      "id": "M1_101_1",
+      "input": {
+        "same_spot": true,
+        "flag77": 1,
+        "flag75": 0,
+        "stack_flag": 1,
+        "mode": 1
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        1,
+        1,
+        "CALL_0x52CF50"
+      ]
+    },
+    {
+      "id": "M1_110_0",
+      "input": {
+        "same_spot": true,
+        "flag77": 1,
+        "flag75": 1,
+        "stack_flag": 0,
+        "mode": 0
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        1,
+        0,
+        "NEXT_ENTRY"
+      ]
+    },
+    {
+      "id": "M1_110_1",
+      "input": {
+        "same_spot": true,
+        "flag77": 1,
+        "flag75": 1,
+        "stack_flag": 0,
+        "mode": 1
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        1,
+        0,
+        "NEXT_ENTRY"
+      ]
+    },
+    {
+      "id": "M1_111_0",
+      "input": {
+        "same_spot": true,
+        "flag77": 1,
+        "flag75": 1,
+        "stack_flag": 1,
+        "mode": 0
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        1,
+        1,
+        "CALL_0x434B10_ECX10"
+      ]
+    },
+    {
+      "id": "M1_111_1",
+      "input": {
+        "same_spot": true,
+        "flag77": 1,
+        "flag75": 1,
+        "stack_flag": 1,
+        "mode": 1
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        1,
+        1,
+        "CALL_0x52CF50"
+      ]
+    },
+    {
+      "id": "BYTE_FLAG77_2",
+      "input": {
+        "same_spot": true,
+        "flag77": 2,
+        "flag75": 0,
+        "stack_flag": 1,
+        "mode": 1
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        1,
+        1,
+        "CALL_0x52CF50"
+      ]
+    },
+    {
+      "id": "BYTE_STACK_255",
+      "input": {
+        "same_spot": true,
+        "flag77": 0,
+        "flag75": 1,
+        "stack_flag": 255,
+        "mode": 1
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        1,
+        1,
+        "CALL_0x52CF50"
+      ]
+    },
+    {
+      "id": "MODE_2",
+      "input": {
+        "same_spot": true,
+        "flag77": 0,
+        "flag75": 1,
+        "stack_flag": 1,
+        "mode": 2
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        1,
+        1,
+        "CALL_0x434B10_ECX10"
+      ]
+    },
+    {
+      "id": "MODE_NEG1",
+      "input": {
+        "same_spot": true,
+        "flag77": 0,
+        "flag75": 1,
+        "stack_flag": 1,
+        "mode": -1
+      },
+      "expected": [
+        "STATIC_BRANCH_MODEL",
+        1,
+        1,
+        "CALL_0x434B10_ECX10"
+      ]
+    },
+    {
+      "id": "FLAG77_NONE",
+      "input": {
+        "same_spot": true,
+        "flag77": null,
+        "flag75": 1,
+        "stack_flag": 1,
+        "mode": 1
+      },
+      "expected": [
+        "REJECT_INPUT",
+        null,
+        null,
+        "NONE"
+      ]
+    },
+    {
+      "id": "STACK_BOOL",
+      "input": {
+        "same_spot": true,
+        "flag77": 0,
+        "flag75": 1,
+        "stack_flag": true,
+        "mode": 1
+      },
+      "expected": [
+        "REJECT_INPUT",
+        null,
+        null,
+        "NONE"
+      ]
+    },
+    {
+      "id": "FLAG75_TEXT",
+      "input": {
+        "same_spot": true,
+        "flag77": 0,
+        "flag75": "1",
+        "stack_flag": 1,
+        "mode": 1
+      },
+      "expected": [
+        "REJECT_INPUT",
+        null,
+        null,
+        "NONE"
+      ]
+    },
+    {
+      "id": "FLAG77_NEG",
+      "input": {
+        "same_spot": true,
+        "flag77": -1,
+        "flag75": 1,
+        "stack_flag": 1,
+        "mode": 1
+      },
+      "expected": [
+        "REJECT_INPUT",
+        null,
+        null,
+        "NONE"
+      ]
+    },
+    {
+      "id": "STACK_OVER",
+      "input": {
+        "same_spot": true,
+        "flag77": 0,
+        "flag75": 1,
+        "stack_flag": 256,
+        "mode": 1
+      },
+      "expected": [
+        "REJECT_INPUT",
+        null,
+        null,
+        "NONE"
+      ]
+    },
+    {
+      "id": "SPOT_MATCH_NOT_BOOL",
+      "input": {
+        "same_spot": 1,
+        "flag77": 0,
+        "flag75": 1,
+        "stack_flag": 1,
+        "mode": 1
+      },
+      "expected": [
+        "REJECT_INPUT",
+        null,
+        null,
+        "NONE"
+      ]
+    },
+    {
+      "id": "MODE_BOOL",
+      "input": {
+        "same_spot": true,
+        "flag77": 0,
+        "flag75": 1,
+        "stack_flag": 1,
+        "mode": true
+      },
+      "expected": [
+        "REJECT_INPUT",
+        null,
+        null,
+        "NONE"
+      ]
+    },
+    {
+      "id": "MODE_OVERFLOW",
+      "input": {
+        "same_spot": true,
+        "flag77": 0,
+        "flag75": 1,
+        "stack_flag": 1,
+        "mode": 2147483648
+      },
+      "expected": [
+        "REJECT_INPUT",
+        null,
+        null,
+        "NONE"
+      ]
+    },
+    {
+      "id": "MISSING_STACK",
+      "input": {
+        "same_spot": true,
+        "flag77": 0,
+        "flag75": 1,
+        "mode": 1
+      },
+      "expected": [
+        "VERIFY_MISSING_INPUT",
+        null,
+        null,
+        "NONE"
+      ]
+    },
+    {
+      "id": "ACTUAL_GOLDEN_PROHIBITED",
+      "input": {
+        "claim": "actual_golden"
+      },
+      "expected": [
+        "NOT_GAMEPLAY_PROOF",
+        null,
+        null,
+        "NONE"
+      ]
+    }
+  ]
+}

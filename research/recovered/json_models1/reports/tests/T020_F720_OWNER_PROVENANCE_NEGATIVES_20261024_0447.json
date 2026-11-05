@@ -1,0 +1,155 @@
+{
+  "id": "E-AUDIT-20261024-0447-T020-F720-OWNER-CONTAINER-PROVENANCE-01",
+  "owner": "E",
+  "task": "T020",
+  "status": "SYNTHETIC_STATIC_NEGATIVE_ONLY_NOT_READY",
+  "source_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "rea_report_file": "REA_20261024_04H_P0_F720_OWNER_PROVENANCE_STATIC.md",
+  "rea_report_sha256": "6FE0B7F3068BE34E4AB547B8C46F1270F4658A8D8BAD682B43BA7226EFFDDEE2",
+  "rea_audit_file": "REA_20261024_0437_P0_F720_OWNER_BYTE_AUDIT.py",
+  "rea_audit_sha256": "F72B87051A6C75430FF453EE3418E345B67426E4CD5BD3065CD4372C5F4B831A",
+  "previous_rea_evidence_sha256": "78F8B1FCA145FD33552AD68F09A0FF2D23FE8CA71484ED539BDECC9D35B4911C",
+  "static_direct_callers_to_0x40D0A0": [
+    "0x491FFB",
+    "0x49204F",
+    "0x492143",
+    "0x4921F7",
+    "0x492473"
+  ],
+  "dl_at_direct_callers": [
+    1,
+    0,
+    0,
+    0,
+    1
+  ],
+  "cases": [
+    {
+      "id": "OP-01",
+      "owner_callsite": "0x491FFB",
+      "candidate_state": "unknown",
+      "claim": "none",
+      "expected": "STATIC_OWNER_BINDING_ONLY"
+    },
+    {
+      "id": "OP-02",
+      "owner_callsite": "0x49204F",
+      "candidate_state": "unknown",
+      "claim": "none",
+      "expected": "STATIC_OWNER_BINDING_ONLY"
+    },
+    {
+      "id": "OP-03",
+      "owner_callsite": "0x492143",
+      "candidate_state": "empty_at_lookup",
+      "claim": "none",
+      "expected": "CONDITIONAL_EMPTY_HEAD_RET_ZERO"
+    },
+    {
+      "id": "OP-04",
+      "owner_callsite": "0x4921F7",
+      "candidate_state": "nonempty_at_lookup",
+      "claim": "none",
+      "expected": "FILTER_RESULT_UNDETERMINED"
+    },
+    {
+      "id": "OP-05",
+      "owner_callsite": "0x492473",
+      "candidate_state": "reset_at_earlier_time",
+      "claim": "none",
+      "expected": "TIMEPOINT_MISMATCH_NOT_CURRENT_EMPTY"
+    },
+    {
+      "id": "OP-06",
+      "owner_callsite": null,
+      "candidate_state": "unknown",
+      "claim": "none",
+      "expected": "OWNER_PROVENANCE_UNBOUND"
+    },
+    {
+      "id": "OP-07",
+      "owner_callsite": "0x491FFB",
+      "candidate_state": "unknown",
+      "claim": "same_owner_comparator",
+      "expected": "REJECT_CONTEXT_ALIAS_ASSERTION"
+    },
+    {
+      "id": "OP-08",
+      "owner_callsite": "0x49204F",
+      "candidate_state": "empty_at_lookup",
+      "claim": "crash_observed",
+      "expected": "REJECT_CRASH_WITHOUT_RUNTIME"
+    },
+    {
+      "id": "OP-09",
+      "owner_callsite": "0x492143",
+      "candidate_state": "nonempty_at_lookup",
+      "claim": "g2_observed",
+      "expected": "REJECT_G2_FROM_INTERNAL_POINTER"
+    },
+    {
+      "id": "OP-10",
+      "owner_callsite": "0x4921F7",
+      "candidate_state": "unknown",
+      "claim": "golden_pass",
+      "expected": "REJECT_GOLDEN_FROM_STATIC"
+    },
+    {
+      "id": "OP-11",
+      "owner_callsite": "0x492473",
+      "candidate_state": "unknown",
+      "claim": "runtime_executed",
+      "expected": "REJECT_EXECUTION_WITHOUT_TRACE"
+    },
+    {
+      "id": "OP-12",
+      "owner_callsite": "0x491FFB",
+      "candidate_state": "nonempty_at_lookup",
+      "claim": "guaranteed_nonnull",
+      "expected": "REJECT_NONNULL_INVARIANT"
+    },
+    {
+      "id": "OP-13",
+      "owner_callsite": "0x49204F",
+      "candidate_state": "unknown",
+      "claim": "dl_is_side",
+      "expected": "REJECT_DL_SEMANTICS"
+    },
+    {
+      "id": "OP-14",
+      "owner_callsite": "0x492143",
+      "candidate_state": "unknown",
+      "claim": "same_run_save",
+      "expected": "REJECT_SAVE_BINDING"
+    },
+    {
+      "id": "OP-15",
+      "owner_callsite": "0x4921F7",
+      "candidate_state": "empty_at_lookup",
+      "claim": "strict_match",
+      "expected": "REJECT_STRICT_MATCH"
+    },
+    {
+      "id": "OP-16",
+      "owner_callsite": "0x492473",
+      "candidate_state": "nonempty_at_lookup",
+      "claim": "none",
+      "expected": "FILTER_RESULT_UNDETERMINED"
+    },
+    {
+      "id": "OP-17",
+      "owner_callsite": "0x491FFB",
+      "candidate_state": "reset_at_earlier_time",
+      "claim": "none",
+      "expected": "TIMEPOINT_MISMATCH_NOT_CURRENT_EMPTY"
+    },
+    {
+      "id": "OP-18",
+      "owner_callsite": null,
+      "candidate_state": "empty_at_lookup",
+      "claim": "none",
+      "expected": "OWNER_PROVENANCE_UNBOUND"
+    }
+  ]
+}
+

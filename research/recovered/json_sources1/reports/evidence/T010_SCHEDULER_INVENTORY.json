@@ -1,0 +1,1012 @@
+{
+  "phase_assignment_counts": {
+    "fight": 14,
+    "politics": 172,
+    "world": 9
+  },
+  "phase_refs": {
+    "fight": [
+      {
+        "file": "Ai戦闘制御_軍楽隊なし版.dat",
+        "line": 309,
+        "value": "on"
+      },
+      {
+        "file": "defense.dat",
+        "line": 3,
+        "value": "on"
+      },
+      {
+        "file": "scenario1.dat",
+        "line": 29,
+        "value": "fev1"
+      },
+      {
+        "file": "1000_チュートリアル\\tuto_scenario.dat",
+        "line": 80,
+        "value": "fev1"
+      },
+      {
+        "file": "3000_淫ドリームマッチ\\sc_dream.dat",
+        "line": 81,
+        "value": "drev"
+      },
+      {
+        "file": "30_スキル\\F22_召喚を使ったトーク.dat",
+        "line": 236,
+        "value": "on"
+      },
+      {
+        "file": "4000_AoW\\scenario_aow.dat",
+        "line": 13,
+        "value": "@"
+      },
+      {
+        "file": "5000_ランダムシナリオ\\sc_rnd.dat",
+        "line": 11,
+        "value": "orfer"
+      },
+      {
+        "file": "50_その他新システム\\siki_iwana.dat",
+        "line": 27,
+        "value": "on"
+      },
+      {
+        "file": "6000_スキルテスト\\0maptest.dat",
+        "line": 89,
+        "value": "be_st"
+      },
+      {
+        "file": "6000_スキルテスト\\skilltest.dat",
+        "line": 4,
+        "value": "on"
+      },
+      {
+        "file": "6000_スキルテスト\\skilltest.dat",
+        "line": 972,
+        "value": "be_st"
+      },
+      {
+        "file": "7000_その他シナリオ\\free_sc.dat",
+        "line": 15,
+        "value": "fev_free"
+      },
+      {
+        "file": "8000_RTSシナリオ\\RTSscenario.dat",
+        "line": 500,
+        "value": "rtsf"
+      }
+    ],
+    "politics": [
+      {
+        "file": "context.dat",
+        "line": 4,
+        "value": "内政ポイント,polip,polip,@,@,@,内政,spp0,spp0,キャラカスタマイズ,spp1,spp1,アイテム,spp1_2,spp1_2,ヘルプ・設定,spp1_3,spp1_3,迫真の世紀,spp2,spp2"
+      },
+      {
+        "file": "scenario1.dat",
+        "line": 68,
+        "value": "ev_poli"
+      },
+      {
+        "file": "1000_チュートリアル\\tuto_scenario.dat",
+        "line": 102,
+        "value": "ev_poli"
+      },
+      {
+        "file": "116_仮設ランダムイベント61-70\\randomev66_poli.dat",
+        "line": 10,
+        "value": "fix"
+      },
+      {
+        "file": "116_仮設ランダムイベント61-70\\randomev66_poli.dat",
+        "line": 18,
+        "value": "erase"
+      },
+      {
+        "file": "3000_淫ドリームマッチ\\sc_dream.dat",
+        "line": 85,
+        "value": "ev_poli"
+      },
+      {
+        "file": "40_内政\\CC_chara_create.dat",
+        "line": 4,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\CC_heiki.dat",
+        "line": 4,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\CC_inu_hakuro.dat",
+        "line": 4,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\CC_sichosha.dat",
+        "line": 4,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\CC_unit_change.dat",
+        "line": 4,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\CC_unit_change.dat",
+        "line": 31,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\CC_unit_change.dat",
+        "line": 52,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\CC_unit_change.dat",
+        "line": 82,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\CC_unit_change.dat",
+        "line": 97,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\CC_unit_change.dat",
+        "line": 112,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\CC_youhei_samson.dat",
+        "line": 4,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\graphic_change.dat",
+        "line": 2,
+        "value": "on"
+      },
+      {
+        "file": "40_内政\\graphic_change.dat",
+        "line": 9,
+        "value": "erase"
+      },
+      {
+        "file": "40_内政\\graphic_change_unit_class.dat",
+        "line": 12,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\graphic_change_unit_class.dat",
+        "line": 84,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\graphic_change_unit_class.dat",
+        "line": 144,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\graphic_change_unit_class.dat",
+        "line": 193,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\graphic_change_unit_class.dat",
+        "line": 233,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\graphic_change_unit_class.dat",
+        "line": 271,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\graphic_change_unit_class.dat",
+        "line": 308,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\graphic_change_unit_class.dat",
+        "line": 402,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\graphic_change_unit_class.dat",
+        "line": 496,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\graphic_change_unit_class.dat",
+        "line": 533,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\graphic_change_unit_class.dat",
+        "line": 569,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\graphic_change_unit_class.dat",
+        "line": 589,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\graphic_change_unit_class.dat",
+        "line": 603,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\graphic_change_unit_class.dat",
+        "line": 617,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\graphic_change_unit_class.dat",
+        "line": 631,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\graphic_change_unit_class.dat",
+        "line": 645,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\graphic_change_unit_class.dat",
+        "line": 659,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\graphic_change_unit_class.dat",
+        "line": 673,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\graphic_change_unit_class.dat",
+        "line": 686,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\graphic_change_unit_class.dat",
+        "line": 700,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\graphic_change_unit_class.dat",
+        "line": 713,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\graphic_change_unit_class.dat",
+        "line": 726,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\graphic_change_unit_class.dat",
+        "line": 756,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\graphic_change_unit_class.dat",
+        "line": 786,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\graphic_change_unit_class.dat",
+        "line": 801,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\graphic_change_unit_class.dat",
+        "line": 844,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\graphic_change_unit_class.dat",
+        "line": 896,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\graphic_change_unit_class.dat",
+        "line": 925,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\graphic_change_unit_class.dat",
+        "line": 955,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\graphic_change_unit_class.dat",
+        "line": 989,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\graphic_change_unit_class.dat",
+        "line": 1003,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\politic_ev_spot.dat",
+        "line": 444,
+        "value": "erase"
+      },
+      {
+        "file": "40_内政\\politic_ev_spot.dat",
+        "line": 449,
+        "value": "on"
+      },
+      {
+        "file": "40_内政\\politic_ev_spot.dat",
+        "line": 455,
+        "value": "on"
+      },
+      {
+        "file": "40_内政\\politic_ev_spot.dat",
+        "line": 472,
+        "value": "on"
+      },
+      {
+        "file": "40_内政\\politic_ev_spot.dat",
+        "line": 480,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\politic_ev_spot.dat",
+        "line": 486,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\politic_ev_spot.dat",
+        "line": 518,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\politic_ev_spot.dat",
+        "line": 523,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\politic_ev_spot.dat",
+        "line": 532,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\politic_ev_spot.dat",
+        "line": 557,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\politic_ev_spot.dat",
+        "line": 572,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\politic_ev_spot.dat",
+        "line": 586,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\politic_ev_spot.dat",
+        "line": 599,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\politic_sakenomi.dat",
+        "line": 2,
+        "value": "on"
+      },
+      {
+        "file": "40_内政\\politic_sakenomi.dat",
+        "line": 8,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\politic_youhei_inmu.dat",
+        "line": 27,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\politic_youhei_inmu.dat",
+        "line": 35,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\politic_youhei_named.dat",
+        "line": 4,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\politic_youhei_old.dat",
+        "line": 13,
+        "value": "fix"
+      },
+      {
+        "file": "40_内政\\politic_youhei_old.dat",
+        "line": 27,
+        "value": "fix"
+      },
+      {
+        "file": "41_内政_アイテム\\item.dat",
+        "line": 2,
+        "value": "on"
+      },
+      {
+        "file": "41_内政_アイテム\\item.dat",
+        "line": 9,
+        "value": "erase"
+      },
+      {
+        "file": "41_内政_アイテム\\item_000_status1.dat",
+        "line": 4,
+        "value": "fix"
+      },
+      {
+        "file": "41_内政_アイテム\\item_000_status2.dat",
+        "line": 4,
+        "value": "fix"
+      },
+      {
+        "file": "41_内政_アイテム\\item_001_resilience1.dat",
+        "line": 4,
+        "value": "fix"
+      },
+      {
+        "file": "41_内政_アイテム\\item_001_resilience2.dat",
+        "line": 4,
+        "value": "fix"
+      },
+      {
+        "file": "41_内政_アイテム\\item_002_skill1.dat",
+        "line": 4,
+        "value": "fix"
+      },
+      {
+        "file": "41_内政_アイテム\\item_002_skill2.dat",
+        "line": 4,
+        "value": "fix"
+      },
+      {
+        "file": "41_内政_アイテム\\item_003_sonota.dat",
+        "line": 4,
+        "value": "fix"
+      },
+      {
+        "file": "41_内政_アイテム\\rare_item_list.dat",
+        "line": 7,
+        "value": "fix"
+      },
+      {
+        "file": "41_内政_アイテム\\rare_item_list.dat",
+        "line": 25,
+        "value": "fix"
+      },
+      {
+        "file": "41_内政_アイテム\\rare_item_list.dat",
+        "line": 38,
+        "value": "fix"
+      },
+      {
+        "file": "41_内政_アイテム\\rare_item_list.dat",
+        "line": 51,
+        "value": "fix"
+      },
+      {
+        "file": "41_内政_アイテム\\rare_item_list.dat",
+        "line": 64,
+        "value": "fix"
+      },
+      {
+        "file": "41_内政_アイテム\\rare_item_list.dat",
+        "line": 77,
+        "value": "fix"
+      },
+      {
+        "file": "41_内政_アイテム\\rare_item_list.dat",
+        "line": 90,
+        "value": "fix"
+      },
+      {
+        "file": "41_内政_アイテム\\rare_item_list.dat",
+        "line": 103,
+        "value": "fix"
+      },
+      {
+        "file": "41_内政_アイテム\\rare_item_list.dat",
+        "line": 125,
+        "value": "fix"
+      },
+      {
+        "file": "41_内政_アイテム\\rare_item_list.dat",
+        "line": 132,
+        "value": "fix"
+      },
+      {
+        "file": "41_内政_アイテム\\rare_item_list.dat",
+        "line": 140,
+        "value": "fix"
+      },
+      {
+        "file": "41_内政_アイテム\\rare_item_list.dat",
+        "line": 147,
+        "value": "fix"
+      },
+      {
+        "file": "41_内政_アイテム\\rare_item_list.dat",
+        "line": 154,
+        "value": "fix"
+      },
+      {
+        "file": "41_内政_アイテム\\rare_item_list.dat",
+        "line": 161,
+        "value": "fix"
+      },
+      {
+        "file": "41_内政_アイテム\\rare_item_list.dat",
+        "line": 168,
+        "value": "fix"
+      },
+      {
+        "file": "41_内政_アイテム\\rare_item_list.dat",
+        "line": 175,
+        "value": "fix"
+      },
+      {
+        "file": "41_内政_アイテム\\rare_item_list.dat",
+        "line": 182,
+        "value": "fix"
+      },
+      {
+        "file": "41_内政_アイテム\\rare_item_list.dat",
+        "line": 189,
+        "value": "fix"
+      },
+      {
+        "file": "41_内政_アイテム\\rare_item_list.dat",
+        "line": 196,
+        "value": "fix"
+      },
+      {
+        "file": "41_内政_アイテム\\rare_item_list.dat",
+        "line": 203,
+        "value": "fix"
+      },
+      {
+        "file": "41_内政_アイテム\\rare_item_list.dat",
+        "line": 210,
+        "value": "fix"
+      },
+      {
+        "file": "41_内政_アイテム\\rare_item_list.dat",
+        "line": 217,
+        "value": "fix"
+      },
+      {
+        "file": "41_内政_アイテム\\rare_item_list.dat",
+        "line": 224,
+        "value": "fix"
+      },
+      {
+        "file": "41_内政_アイテム\\rare_item_list.dat",
+        "line": 231,
+        "value": "fix"
+      },
+      {
+        "file": "41_内政_アイテム\\rare_item_list.dat",
+        "line": 238,
+        "value": "fix"
+      },
+      {
+        "file": "41_内政_アイテム\\rare_item_list.dat",
+        "line": 246,
+        "value": "fix"
+      },
+      {
+        "file": "41_内政_アイテム\\rare_item_list.dat",
+        "line": 260,
+        "value": "fix"
+      },
+      {
+        "file": "42_内政_行商人システム\\M_znm.dat",
+        "line": 166,
+        "value": "fix"
+      },
+      {
+        "file": "43_内政_教育\\lecture.dat",
+        "line": 3,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 2,
+        "value": "on"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 13,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 79,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 167,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 227,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 272,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 372,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 379,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 403,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 434,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 464,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 494,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 575,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 584,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 624,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 719,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 735,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 742,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 780,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 787,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 794,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 809,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 944,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 1008,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 1046,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 1135,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 1234,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 1333,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 1468,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 1515,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 1523,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 1671,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 1833,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 1895,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 1904,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 1913,
+        "value": "fix"
+      },
+      {
+        "file": "44_内政_迫真の世紀\\politic_kaiso.dat",
+        "line": 1923,
+        "value": "fix"
+      },
+      {
+        "file": "45_内政_防衛兵器\\siege_politic.dat",
+        "line": 707,
+        "value": "fix"
+      },
+      {
+        "file": "45_内政_防衛兵器\\siege_politic.dat",
+        "line": 727,
+        "value": "fix"
+      },
+      {
+        "file": "45_内政_防衛兵器\\siege_politic.dat",
+        "line": 732,
+        "value": "fix"
+      },
+      {
+        "file": "45_内政_防衛兵器\\siege_politic.dat",
+        "line": 737,
+        "value": "fix"
+      },
+      {
+        "file": "45_内政_防衛兵器\\siege_politic.dat",
+        "line": 742,
+        "value": "fix"
+      },
+      {
+        "file": "45_内政_防衛兵器\\siege_politic.dat",
+        "line": 753,
+        "value": "fix"
+      },
+      {
+        "file": "45_内政_防衛兵器\\siege_politic.dat",
+        "line": 758,
+        "value": "fix"
+      },
+      {
+        "file": "45_内政_防衛兵器\\siege_politic.dat",
+        "line": 763,
+        "value": "fix"
+      },
+      {
+        "file": "45_内政_防衛兵器\\siege_politic.dat",
+        "line": 768,
+        "value": "fix"
+      },
+      {
+        "file": "45_内政_防衛兵器\\siege_politic.dat",
+        "line": 782,
+        "value": "fix"
+      },
+      {
+        "file": "45_内政_防衛兵器\\siege_politic.dat",
+        "line": 787,
+        "value": "fix"
+      },
+      {
+        "file": "45_内政_防衛兵器\\siege_politic.dat",
+        "line": 792,
+        "value": "fix"
+      },
+      {
+        "file": "45_内政_防衛兵器\\siege_politic.dat",
+        "line": 797,
+        "value": "fix"
+      },
+      {
+        "file": "5000_ランダムシナリオ\\sc_rnd.dat",
+        "line": 15,
+        "value": "ev_poli"
+      },
+      {
+        "file": "50_その他新システム\\q__a.dat",
+        "line": 2,
+        "value": "on"
+      },
+      {
+        "file": "50_その他新システム\\q__a.dat",
+        "line": 8,
+        "value": "fix"
+      },
+      {
+        "file": "50_その他新システム\\q__a.dat",
+        "line": 35,
+        "value": "fix"
+      },
+      {
+        "file": "50_その他新システム\\q__a.dat",
+        "line": 66,
+        "value": "fix"
+      },
+      {
+        "file": "50_その他新システム\\q__a.dat",
+        "line": 134,
+        "value": "fix"
+      },
+      {
+        "file": "50_その他新システム\\restructuring .dat",
+        "line": 611,
+        "value": "fix"
+      },
+      {
+        "file": "50_その他新システム\\siki_item_switch.dat",
+        "line": 4,
+        "value": "fix"
+      },
+      {
+        "file": "50_その他新システム\\siki_item_switch.dat",
+        "line": 25,
+        "value": "fix"
+      },
+      {
+        "file": "6000_スキルテスト\\0maptest.dat",
+        "line": 113,
+        "value": "ev_poli"
+      },
+      {
+        "file": "6000_スキルテスト\\event_test.dat",
+        "line": 252,
+        "value": "fix"
+      },
+      {
+        "file": "6000_スキルテスト\\sel_item.dat",
+        "line": 1283,
+        "value": "fix"
+      },
+      {
+        "file": "6000_スキルテスト\\skilltest.dat",
+        "line": 1002,
+        "value": "ev_poli"
+      },
+      {
+        "file": "7000_その他シナリオ\\free_sc.dat",
+        "line": 52,
+        "value": "ev_poli"
+      }
+    ],
+    "world": [
+      {
+        "file": "scenario1.dat",
+        "line": 28,
+        "value": "wev1"
+      },
+      {
+        "file": "1000_チュートリアル\\tuto_scenario.dat",
+        "line": 79,
+        "value": "wev1"
+      },
+      {
+        "file": "3000_淫ドリームマッチ\\sc_dream.dat",
+        "line": 80,
+        "value": "wev_dream"
+      },
+      {
+        "file": "4000_AoW\\scenario_aow.dat",
+        "line": 12,
+        "value": "we_aow"
+      },
+      {
+        "file": "5000_ランダムシナリオ\\sc_rnd.dat",
+        "line": 10,
+        "value": "wev_rsc"
+      },
+      {
+        "file": "6000_スキルテスト\\0maptest.dat",
+        "line": 88,
+        "value": "we_st"
+      },
+      {
+        "file": "6000_スキルテスト\\skilltest.dat",
+        "line": 971,
+        "value": "we_st"
+      },
+      {
+        "file": "7000_その他シナリオ\\free_sc.dat",
+        "line": 14,
+        "value": "wev_free"
+      },
+      {
+        "file": "8000_RTSシナリオ\\RTSscenario.dat",
+        "line": 499,
+        "value": "rts"
+      }
+    ]
+  },
+  "condition_calls": {
+    "isNewTurn": 126,
+    "isPlayerTurn": 150,
+    "isPlayerEnd": 80,
+    "isComTurn": 118,
+    "isWorld": 1,
+    "isBattle": 0,
+    "isInterval": 539,
+    "getTurn": 156,
+    "getTime": 182,
+    "getLimit": 10
+  },
+  "battleEvent_registrations": {
+    "form_inbattle": 1,
+    "form_inbattle_kanni": 1,
+    "event_defdead": 1,
+    "be_pinegaki_talk": 1,
+    "rtsb1v1no1": 1,
+    "rtsb2v2no1": 1
+  },
+  "battleEvent_total": 6,
+  "battleEvent_unique": 6
+}

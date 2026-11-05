@@ -4,15 +4,6 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
-<a id="field-14"></a>
-## task + 0x14
-
-- [research/recovered/b_batch3/T013_HEAL_DEFERRED_TICK_DISPATCH_NATIVE_20261027_09H.md 行 11](../../research/recovered/b_batch3/T013_HEAL_DEFERRED_TICK_DISPATCH_NATIVE_20261027_09H.md?plain=1#L11-L11) — [SLOT GATES] 0x4C290B CMP BYTE[ESI+8],0。非0時0x4C2911/13は[EBX.vtable+0x0C]、0時task+0x14非0なら0x4C291F/21で+0x10を呼び0x4C2928 TEST AL→0なら0x4C2935 skip。0且つtask+0x14==0ならp
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_batch3/T013_HEAL_DEFERRED_TICK_DISPATCH_NATIVE_20261027_09H.md 行 13](../../research/recovered/b_batch3/T013_HEAL_DEFERRED_TICK_DISPATCH_NATIVE_20261027_09H.md?plain=1#L13-L13) — [CONDITIONAL CONTRACT] 正規Healの場合+0x0C/+0x10が0なので、実tick実行条件はtask+8==0且つtask+0x14==0且つactive list内に非NULL Healが存在すること（この局所caller経路）。例外/他caller/別オブジェクト時は別契約。task+8!
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
 <a id="field-3c"></a>
 ## task + 0x3C
 

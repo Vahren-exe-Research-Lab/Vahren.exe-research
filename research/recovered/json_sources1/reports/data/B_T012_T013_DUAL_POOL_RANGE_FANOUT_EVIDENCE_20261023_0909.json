@@ -1,0 +1,399 @@
+{
+  "study_id": "B-OFFLINE-20261023-0909-T012-T013-DUAL-POOL-RANGE-FANOUT-01",
+  "task_owner": "B/T012,T013",
+  "state": "OFFLINE-UNSYNCED / STATIC-EXE-ASM / STATIC-SQLITE / INFERRED / VERIFY / NOT READY",
+  "source": {
+    "exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+    "db_sha256": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF",
+    "zip_sha256": "911E5E37A3F9BD5B36F929AF94B0D1E2CD1CD5CF34E3E2F16C8FC800ABF5F7C2",
+    "zip_entries": 34,
+    "zip_crc_bad": null,
+    "match": true
+  },
+  "sqlite_quick_check": "ok",
+  "opcode_checks": [
+    {
+      "va": "0x00547DB8",
+      "hex": "83BDC000000000",
+      "expected": "83BDC000000000",
+      "note": "actor+0xC0 eligibility guard",
+      "pass": true
+    },
+    {
+      "va": "0x00547DC3",
+      "hex": "83BB7802000000",
+      "expected": "83BB7802000000",
+      "note": "controller+0x278 initial guard",
+      "pass": true
+    },
+    {
+      "va": "0x00547DD7",
+      "hex": "83BDC400000000",
+      "expected": "83BDC400000000",
+      "note": "actor+0xC4 second eligibility guard",
+      "pass": true
+    },
+    {
+      "va": "0x00547DF3",
+      "hex": "398594000000",
+      "expected": "398594000000",
+      "note": "actor+0x94 versus cost gate",
+      "pass": true
+    },
+    {
+      "va": "0x00547E38",
+      "hex": "83BDC800000000",
+      "expected": "83BDC800000000",
+      "note": "actor+0xC8 pool select gate",
+      "pass": true
+    },
+    {
+      "va": "0x00547E6A",
+      "hex": "3B0564BD6500",
+      "expected": "3B0564BD6500",
+      "note": "RNG-threshold compare DAT_0065BD64",
+      "pass": true
+    },
+    {
+      "va": "0x00547E72",
+      "hex": "8B95D4010000",
+      "expected": "8B95D4010000",
+      "note": "pool A manager actor+0x1D4",
+      "pass": true
+    },
+    {
+      "va": "0x00547E78",
+      "hex": "83C248",
+      "expected": "83C248",
+      "note": "pool A vector at manager+0x48",
+      "pass": true
+    },
+    {
+      "va": "0x00547E81",
+      "hex": "8B95D4010000",
+      "expected": "8B95D4010000",
+      "note": "pool B manager actor+0x1D4",
+      "pass": true
+    },
+    {
+      "va": "0x00547E87",
+      "hex": "8B421C",
+      "expected": "8B421C",
+      "note": "pool B through manager+0x1C",
+      "pass": true
+    },
+    {
+      "va": "0x00547E8A",
+      "hex": "83C048",
+      "expected": "83C048",
+      "note": "pool B vector at nested manager+0x48",
+      "pass": true
+    },
+    {
+      "va": "0x00547E98",
+      "hex": "2BC1C1F802",
+      "expected": "2BC1C1F802",
+      "note": "vector item count from end-begin divided by four",
+      "pass": true
+    },
+    {
+      "va": "0x00547EB4",
+      "hex": "8B34B9",
+      "expected": "8B34B9",
+      "note": "candidate pointer from vector[index]",
+      "pass": true
+    },
+    {
+      "va": "0x00547EB7",
+      "hex": "80BE7C86010000",
+      "expected": "80BE7C86010000",
+      "note": "skip flagged candidate+0x1867C",
+      "pass": true
+    },
+    {
+      "va": "0x00547EDD",
+      "hex": "0FAFD2",
+      "expected": "0FAFD2",
+      "note": "candidate delta-x squared",
+      "pass": true
+    },
+    {
+      "va": "0x00547EE0",
+      "hex": "0FAFC9",
+      "expected": "0FAFC9",
+      "note": "candidate delta-y squared",
+      "pass": true
+    },
+    {
+      "va": "0x00547EF2",
+      "hex": "DB8390020000",
+      "expected": "DB8390020000",
+      "note": "upper range controller+0x290",
+      "pass": true
+    },
+    {
+      "va": "0x00547F01",
+      "hex": "DB8398020000",
+      "expected": "DB8398020000",
+      "note": "lower range controller+0x298",
+      "pass": true
+    },
+    {
+      "va": "0x00547F10",
+      "hex": "83BDCC00000000",
+      "expected": "83BDCC00000000",
+      "note": "actor+0xCC conditional per-target RNG",
+      "pass": true
+    },
+    {
+      "va": "0x00547F37",
+      "hex": "390560BD6500",
+      "expected": "390560BD6500",
+      "note": "per-target RNG threshold DAT_0065BD60",
+      "pass": true
+    },
+    {
+      "va": "0x00547F3F",
+      "hex": "8D457C",
+      "expected": "8D457C",
+      "note": "prepare actor+0x7C dispatch packet",
+      "pass": true
+    },
+    {
+      "va": "0x00547F54",
+      "hex": "56",
+      "expected": "56",
+      "note": "push each candidate",
+      "pass": true
+    },
+    {
+      "va": "0x00547F60",
+      "hex": "E80B8F0000",
+      "expected": "E80B8F0000",
+      "note": "per-candidate dispatch to 0x550E70",
+      "pass": true
+    },
+    {
+      "va": "0x00547F65",
+      "hex": "C644242401",
+      "expected": "C644242401",
+      "note": "success flag set after dispatch",
+      "pass": true
+    },
+    {
+      "va": "0x00547F6E",
+      "hex": "8B542410",
+      "expected": "8B542410",
+      "note": "reload vector descriptor after dispatch",
+      "pass": true
+    },
+    {
+      "va": "0x00547F72",
+      "hex": "8B0A",
+      "expected": "8B0A",
+      "note": "reload vector begin each iteration",
+      "pass": true
+    },
+    {
+      "va": "0x00547F74",
+      "hex": "8B4204",
+      "expected": "8B4204",
+      "note": "reload vector end each iteration",
+      "pass": true
+    },
+    {
+      "va": "0x00547F7D",
+      "hex": "3BC7",
+      "expected": "3BC7",
+      "note": "continue until end after increment",
+      "pass": true
+    },
+    {
+      "va": "0x00547F85",
+      "hex": "807C242400",
+      "expected": "807C242400",
+      "note": "skip spending if never dispatched",
+      "pass": true
+    },
+    {
+      "va": "0x00547F96",
+      "hex": "298594000000",
+      "expected": "298594000000",
+      "note": "subtract controller+0x278 cost exactly once",
+      "pass": true
+    }
+  ],
+  "call_checks": [
+    {
+      "site": "0x00546F9A",
+      "expected_target": "0x00547DB0",
+      "encoded_hex": "E8110E0000",
+      "calculated_target": "0x00547DB0",
+      "sqlite_targets": [
+        "0x00547DB0"
+      ],
+      "pass": true
+    },
+    {
+      "site": "0x00547E15",
+      "expected_target": "0x004C1200",
+      "encoded_hex": "E8E693F7FF",
+      "calculated_target": "0x004C1200",
+      "sqlite_targets": [
+        "0x004C1200"
+      ],
+      "pass": true
+    },
+    {
+      "site": "0x00547E4C",
+      "expected_target": "0x005B6EAB",
+      "encoded_hex": "E85AF00600",
+      "calculated_target": "0x005B6EAB",
+      "sqlite_targets": [
+        "0x005B6EAB"
+      ],
+      "pass": true
+    },
+    {
+      "site": "0x00547E65",
+      "expected_target": "0x005D1B80",
+      "encoded_hex": "E8169D0800",
+      "calculated_target": "0x005D1B80",
+      "sqlite_targets": [
+        "0x005D1B80"
+      ],
+      "pass": true
+    },
+    {
+      "site": "0x00547EED",
+      "expected_target": "0x005E3B70",
+      "encoded_hex": "E87EBC0900",
+      "calculated_target": "0x005E3B70",
+      "sqlite_targets": [
+        "0x005E3B70"
+      ],
+      "pass": true
+    },
+    {
+      "site": "0x00547F19",
+      "expected_target": "0x005B6EAB",
+      "encoded_hex": "E88DEF0600",
+      "calculated_target": "0x005B6EAB",
+      "sqlite_targets": [
+        "0x005B6EAB"
+      ],
+      "pass": true
+    },
+    {
+      "site": "0x00547F32",
+      "expected_target": "0x005D1B80",
+      "encoded_hex": "E8499C0800",
+      "calculated_target": "0x005D1B80",
+      "sqlite_targets": [
+        "0x005D1B80"
+      ],
+      "pass": true
+    },
+    {
+      "site": "0x00547F60",
+      "expected_target": "0x00550E70",
+      "encoded_hex": "E80B8F0000",
+      "calculated_target": "0x00550E70",
+      "sqlite_targets": [
+        "0x00550E70"
+      ],
+      "pass": true
+    }
+  ],
+  "pseudoc_checks": [
+    {
+      "va": "0x00547DB0",
+      "size_bytes": 513,
+      "pseudoc_sha256": "47A697D2EFCBD96569B45A4FA6286BB3C7E59490FA35FDC8491C608A92B85447",
+      "pass": true
+    },
+    {
+      "va": "0x00546F70",
+      "size_bytes": 1308,
+      "pseudoc_sha256": "F985CDD3883A6D0C82E5AA42E5E7D89CFD33C4FA24993C54375E3162DDAFC114",
+      "pass": true
+    },
+    {
+      "va": "0x00550E70",
+      "size_bytes": 1566,
+      "pseudoc_sha256": "4F0ADBF3458EA25BAF3EE64A8D3E38DBDBFC2E282E167FAD57E5DCAD20299869",
+      "pass": true
+    }
+  ],
+  "direct_callers_547DB0": [
+    {
+      "caller_va": "0x00546F70",
+      "site_va": "0x00546F9A"
+    }
+  ],
+  "synthetic_cases": [
+    {
+      "case": "all_blocked",
+      "dispatch_count": 0,
+      "success": false,
+      "cost_debits": 0,
+      "total_spend": 0,
+      "pass": true
+    },
+    {
+      "case": "empty_pool",
+      "dispatch_count": 0,
+      "success": false,
+      "cost_debits": 0,
+      "total_spend": 0,
+      "pass": true
+    },
+    {
+      "case": "one_eligible",
+      "dispatch_count": 1,
+      "success": true,
+      "cost_debits": 1,
+      "total_spend": 8,
+      "pass": true
+    },
+    {
+      "case": "two_eligible",
+      "dispatch_count": 2,
+      "success": true,
+      "cost_debits": 1,
+      "total_spend": 8,
+      "pass": true
+    },
+    {
+      "case": "one_filtered",
+      "dispatch_count": 1,
+      "success": true,
+      "cost_debits": 1,
+      "total_spend": 8,
+      "pass": true
+    },
+    {
+      "case": "all_filtered",
+      "dispatch_count": 0,
+      "success": false,
+      "cost_debits": 0,
+      "total_spend": 0,
+      "pass": true
+    }
+  ],
+  "counts": {
+    "opcodes": "30/30",
+    "calls": "8/8",
+    "pseudoc": "3/3",
+    "synthetic": "6/6"
+  },
+  "limitations": [
+    "not game execution",
+    "synthetic tests do not prove runtime effects",
+    "target group identity unverified",
+    "rand functions meanings and consumption unverified",
+    "no HP/status proof",
+    "no original Golden",
+    "PC MASTER cannot be read"
+  ]
+}

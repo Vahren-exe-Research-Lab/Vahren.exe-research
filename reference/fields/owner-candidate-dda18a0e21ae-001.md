@@ -244,6 +244,9 @@
 - [research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md 行 71](../../research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md?plain=1#L71-L71) — **Golden必要条件**：同一SHA EXE・DAT・SAVE・MAP・入力・RNG/tickを揃え、`controller+0x278`=0/正数、`actor+0xC0/C4/C8/CC`正負、A/B vectorが空/1/2候補、距離帯の内外・境界、`candidate+0x1867C`、2回の確率分岐、各候
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+- [research/recovered/json_sources1/reports/data/B_T012_T013_DUAL_POOL_RANGE_FANOUT_EVIDENCE_20261023_0909.json 行 110](../../research/recovered/json_sources1/reports/data/B_T012_T013_DUAL_POOL_RANGE_FANOUT_EVIDENCE_20261023_0909.json?plain=1#L110-L110) — "note": "skip flagged candidate+0x1867C",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
 - [research/recovered/rea_batch10/reports/REA_20261020_0035_T013_T031_STEALTH_RNG_CARDINALITY_QC.md 行 7](../../research/recovered/rea_batch10/reports/REA_20261020_0035_T013_T031_STEALTH_RNG_CARDINALITY_QC.md?plain=1#L7-L7) — - [PER CANDIDATE] 第1配列では0x514DB1のbyte(candidate+0x1867C)!=0を除外、0x514DBEでcandidate==selfを除外。その後0x514DC4でdword(candidate+0x1C0)!=0の時だけ0x514DCF CALL 0x5B6EABを1回実行す
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
 

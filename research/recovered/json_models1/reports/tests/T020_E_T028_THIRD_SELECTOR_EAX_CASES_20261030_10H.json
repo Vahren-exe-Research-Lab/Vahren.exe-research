@@ -1,0 +1,760 @@
+{
+  "research_id": "E-AUDIT-20261030-10H-T020-T028-THIRD-SELECTOR-OPAQUE-EAX-01",
+  "origin": "B-20261030-1017-T028-THIRD-SELECTOR-CALLER-RETURN-GATE-01",
+  "classification": "STATIC_MODEL_ONLY; NOT_GAMEPLAY",
+  "case_count": 56,
+  "cases": [
+    {
+      "id": "S001",
+      "kind": "model",
+      "upstream": 0,
+      "cache": 0,
+      "constructed": 0,
+      "selector_return": 0,
+      "scan_1ad": [],
+      "caller_reached": true,
+      "expected_source": "null",
+      "expected_eax": 0,
+      "expected_flag_action": "zero_due_to_null_selector"
+    },
+    {
+      "id": "S002",
+      "kind": "model",
+      "upstream": 0,
+      "cache": 0,
+      "constructed": 0,
+      "selector_return": 0,
+      "scan_1ad": [
+        0
+      ],
+      "caller_reached": true,
+      "expected_source": "null",
+      "expected_eax": 0,
+      "expected_flag_action": "zero_due_to_null_selector"
+    },
+    {
+      "id": "S003",
+      "kind": "model",
+      "upstream": 0,
+      "cache": 0,
+      "constructed": 0,
+      "selector_return": 0,
+      "scan_1ad": [
+        0,
+        1
+      ],
+      "caller_reached": true,
+      "expected_source": "null",
+      "expected_eax": 0,
+      "expected_flag_action": "zero_due_to_null_selector"
+    },
+    {
+      "id": "S004",
+      "kind": "model",
+      "upstream": 0,
+      "cache": 0,
+      "constructed": 0,
+      "selector_return": 16384,
+      "scan_1ad": [],
+      "caller_reached": true,
+      "expected_source": "null",
+      "expected_eax": 0,
+      "expected_flag_action": "retain_value_unproven"
+    },
+    {
+      "id": "S005",
+      "kind": "model",
+      "upstream": 0,
+      "cache": 0,
+      "constructed": 0,
+      "selector_return": 16384,
+      "scan_1ad": [
+        0
+      ],
+      "caller_reached": true,
+      "expected_source": "null",
+      "expected_eax": 0,
+      "expected_flag_action": "retain_value_unproven"
+    },
+    {
+      "id": "S006",
+      "kind": "model",
+      "upstream": 0,
+      "cache": 0,
+      "constructed": 0,
+      "selector_return": 16384,
+      "scan_1ad": [
+        0,
+        1
+      ],
+      "caller_reached": true,
+      "expected_source": "null",
+      "expected_eax": 0,
+      "expected_flag_action": "zero_due_to_unit_flag"
+    },
+    {
+      "id": "S007",
+      "kind": "model",
+      "upstream": 0,
+      "cache": 0,
+      "constructed": 12288,
+      "selector_return": 0,
+      "scan_1ad": [],
+      "caller_reached": true,
+      "expected_source": "constructed",
+      "expected_eax": 12288,
+      "expected_flag_action": "zero_due_to_null_selector"
+    },
+    {
+      "id": "S008",
+      "kind": "model",
+      "upstream": 0,
+      "cache": 0,
+      "constructed": 12288,
+      "selector_return": 0,
+      "scan_1ad": [
+        0
+      ],
+      "caller_reached": true,
+      "expected_source": "constructed",
+      "expected_eax": 12288,
+      "expected_flag_action": "zero_due_to_null_selector"
+    },
+    {
+      "id": "S009",
+      "kind": "model",
+      "upstream": 0,
+      "cache": 0,
+      "constructed": 12288,
+      "selector_return": 0,
+      "scan_1ad": [
+        0,
+        1
+      ],
+      "caller_reached": true,
+      "expected_source": "constructed",
+      "expected_eax": 12288,
+      "expected_flag_action": "zero_due_to_null_selector"
+    },
+    {
+      "id": "S010",
+      "kind": "model",
+      "upstream": 0,
+      "cache": 0,
+      "constructed": 12288,
+      "selector_return": 16384,
+      "scan_1ad": [],
+      "caller_reached": true,
+      "expected_source": "constructed",
+      "expected_eax": 12288,
+      "expected_flag_action": "retain_value_unproven"
+    },
+    {
+      "id": "S011",
+      "kind": "model",
+      "upstream": 0,
+      "cache": 0,
+      "constructed": 12288,
+      "selector_return": 16384,
+      "scan_1ad": [
+        0
+      ],
+      "caller_reached": true,
+      "expected_source": "constructed",
+      "expected_eax": 12288,
+      "expected_flag_action": "retain_value_unproven"
+    },
+    {
+      "id": "S012",
+      "kind": "model",
+      "upstream": 0,
+      "cache": 0,
+      "constructed": 12288,
+      "selector_return": 16384,
+      "scan_1ad": [
+        0,
+        1
+      ],
+      "caller_reached": true,
+      "expected_source": "constructed",
+      "expected_eax": 12288,
+      "expected_flag_action": "zero_due_to_unit_flag"
+    },
+    {
+      "id": "S013",
+      "kind": "model",
+      "upstream": 0,
+      "cache": 8192,
+      "constructed": 0,
+      "selector_return": 0,
+      "scan_1ad": [],
+      "caller_reached": true,
+      "expected_source": "cache",
+      "expected_eax": 8192,
+      "expected_flag_action": "zero_due_to_null_selector"
+    },
+    {
+      "id": "S014",
+      "kind": "model",
+      "upstream": 0,
+      "cache": 8192,
+      "constructed": 0,
+      "selector_return": 0,
+      "scan_1ad": [
+        0
+      ],
+      "caller_reached": true,
+      "expected_source": "cache",
+      "expected_eax": 8192,
+      "expected_flag_action": "zero_due_to_null_selector"
+    },
+    {
+      "id": "S015",
+      "kind": "model",
+      "upstream": 0,
+      "cache": 8192,
+      "constructed": 0,
+      "selector_return": 0,
+      "scan_1ad": [
+        0,
+        1
+      ],
+      "caller_reached": true,
+      "expected_source": "cache",
+      "expected_eax": 8192,
+      "expected_flag_action": "zero_due_to_null_selector"
+    },
+    {
+      "id": "S016",
+      "kind": "model",
+      "upstream": 0,
+      "cache": 8192,
+      "constructed": 0,
+      "selector_return": 16384,
+      "scan_1ad": [],
+      "caller_reached": true,
+      "expected_source": "cache",
+      "expected_eax": 8192,
+      "expected_flag_action": "retain_value_unproven"
+    },
+    {
+      "id": "S017",
+      "kind": "model",
+      "upstream": 0,
+      "cache": 8192,
+      "constructed": 0,
+      "selector_return": 16384,
+      "scan_1ad": [
+        0
+      ],
+      "caller_reached": true,
+      "expected_source": "cache",
+      "expected_eax": 8192,
+      "expected_flag_action": "retain_value_unproven"
+    },
+    {
+      "id": "S018",
+      "kind": "model",
+      "upstream": 0,
+      "cache": 8192,
+      "constructed": 0,
+      "selector_return": 16384,
+      "scan_1ad": [
+        0,
+        1
+      ],
+      "caller_reached": true,
+      "expected_source": "cache",
+      "expected_eax": 8192,
+      "expected_flag_action": "zero_due_to_unit_flag"
+    },
+    {
+      "id": "S019",
+      "kind": "model",
+      "upstream": 0,
+      "cache": 8192,
+      "constructed": 12288,
+      "selector_return": 0,
+      "scan_1ad": [],
+      "caller_reached": true,
+      "expected_source": "cache",
+      "expected_eax": 8192,
+      "expected_flag_action": "zero_due_to_null_selector"
+    },
+    {
+      "id": "S020",
+      "kind": "model",
+      "upstream": 0,
+      "cache": 8192,
+      "constructed": 12288,
+      "selector_return": 0,
+      "scan_1ad": [
+        0
+      ],
+      "caller_reached": true,
+      "expected_source": "cache",
+      "expected_eax": 8192,
+      "expected_flag_action": "zero_due_to_null_selector"
+    },
+    {
+      "id": "S021",
+      "kind": "model",
+      "upstream": 0,
+      "cache": 8192,
+      "constructed": 12288,
+      "selector_return": 0,
+      "scan_1ad": [
+        0,
+        1
+      ],
+      "caller_reached": true,
+      "expected_source": "cache",
+      "expected_eax": 8192,
+      "expected_flag_action": "zero_due_to_null_selector"
+    },
+    {
+      "id": "S022",
+      "kind": "model",
+      "upstream": 0,
+      "cache": 8192,
+      "constructed": 12288,
+      "selector_return": 16384,
+      "scan_1ad": [],
+      "caller_reached": true,
+      "expected_source": "cache",
+      "expected_eax": 8192,
+      "expected_flag_action": "retain_value_unproven"
+    },
+    {
+      "id": "S023",
+      "kind": "model",
+      "upstream": 0,
+      "cache": 8192,
+      "constructed": 12288,
+      "selector_return": 16384,
+      "scan_1ad": [
+        0
+      ],
+      "caller_reached": true,
+      "expected_source": "cache",
+      "expected_eax": 8192,
+      "expected_flag_action": "retain_value_unproven"
+    },
+    {
+      "id": "S024",
+      "kind": "model",
+      "upstream": 0,
+      "cache": 8192,
+      "constructed": 12288,
+      "selector_return": 16384,
+      "scan_1ad": [
+        0,
+        1
+      ],
+      "caller_reached": true,
+      "expected_source": "cache",
+      "expected_eax": 8192,
+      "expected_flag_action": "zero_due_to_unit_flag"
+    },
+    {
+      "id": "S025",
+      "kind": "model",
+      "upstream": 4096,
+      "cache": 0,
+      "constructed": 0,
+      "selector_return": 0,
+      "scan_1ad": [],
+      "caller_reached": true,
+      "expected_source": "upstream",
+      "expected_eax": 4096,
+      "expected_flag_action": "zero_due_to_null_selector"
+    },
+    {
+      "id": "S026",
+      "kind": "model",
+      "upstream": 4096,
+      "cache": 0,
+      "constructed": 0,
+      "selector_return": 0,
+      "scan_1ad": [
+        0
+      ],
+      "caller_reached": true,
+      "expected_source": "upstream",
+      "expected_eax": 4096,
+      "expected_flag_action": "zero_due_to_null_selector"
+    },
+    {
+      "id": "S027",
+      "kind": "model",
+      "upstream": 4096,
+      "cache": 0,
+      "constructed": 0,
+      "selector_return": 0,
+      "scan_1ad": [
+        0,
+        1
+      ],
+      "caller_reached": true,
+      "expected_source": "upstream",
+      "expected_eax": 4096,
+      "expected_flag_action": "zero_due_to_null_selector"
+    },
+    {
+      "id": "S028",
+      "kind": "model",
+      "upstream": 4096,
+      "cache": 0,
+      "constructed": 0,
+      "selector_return": 16384,
+      "scan_1ad": [],
+      "caller_reached": true,
+      "expected_source": "upstream",
+      "expected_eax": 4096,
+      "expected_flag_action": "retain_value_unproven"
+    },
+    {
+      "id": "S029",
+      "kind": "model",
+      "upstream": 4096,
+      "cache": 0,
+      "constructed": 0,
+      "selector_return": 16384,
+      "scan_1ad": [
+        0
+      ],
+      "caller_reached": true,
+      "expected_source": "upstream",
+      "expected_eax": 4096,
+      "expected_flag_action": "retain_value_unproven"
+    },
+    {
+      "id": "S030",
+      "kind": "model",
+      "upstream": 4096,
+      "cache": 0,
+      "constructed": 0,
+      "selector_return": 16384,
+      "scan_1ad": [
+        0,
+        1
+      ],
+      "caller_reached": true,
+      "expected_source": "upstream",
+      "expected_eax": 4096,
+      "expected_flag_action": "zero_due_to_unit_flag"
+    },
+    {
+      "id": "S031",
+      "kind": "model",
+      "upstream": 4096,
+      "cache": 0,
+      "constructed": 12288,
+      "selector_return": 0,
+      "scan_1ad": [],
+      "caller_reached": true,
+      "expected_source": "upstream",
+      "expected_eax": 4096,
+      "expected_flag_action": "zero_due_to_null_selector"
+    },
+    {
+      "id": "S032",
+      "kind": "model",
+      "upstream": 4096,
+      "cache": 0,
+      "constructed": 12288,
+      "selector_return": 0,
+      "scan_1ad": [
+        0
+      ],
+      "caller_reached": true,
+      "expected_source": "upstream",
+      "expected_eax": 4096,
+      "expected_flag_action": "zero_due_to_null_selector"
+    },
+    {
+      "id": "S033",
+      "kind": "model",
+      "upstream": 4096,
+      "cache": 0,
+      "constructed": 12288,
+      "selector_return": 0,
+      "scan_1ad": [
+        0,
+        1
+      ],
+      "caller_reached": true,
+      "expected_source": "upstream",
+      "expected_eax": 4096,
+      "expected_flag_action": "zero_due_to_null_selector"
+    },
+    {
+      "id": "S034",
+      "kind": "model",
+      "upstream": 4096,
+      "cache": 0,
+      "constructed": 12288,
+      "selector_return": 16384,
+      "scan_1ad": [],
+      "caller_reached": true,
+      "expected_source": "upstream",
+      "expected_eax": 4096,
+      "expected_flag_action": "retain_value_unproven"
+    },
+    {
+      "id": "S035",
+      "kind": "model",
+      "upstream": 4096,
+      "cache": 0,
+      "constructed": 12288,
+      "selector_return": 16384,
+      "scan_1ad": [
+        0
+      ],
+      "caller_reached": true,
+      "expected_source": "upstream",
+      "expected_eax": 4096,
+      "expected_flag_action": "retain_value_unproven"
+    },
+    {
+      "id": "S036",
+      "kind": "model",
+      "upstream": 4096,
+      "cache": 0,
+      "constructed": 12288,
+      "selector_return": 16384,
+      "scan_1ad": [
+        0,
+        1
+      ],
+      "caller_reached": true,
+      "expected_source": "upstream",
+      "expected_eax": 4096,
+      "expected_flag_action": "zero_due_to_unit_flag"
+    },
+    {
+      "id": "S037",
+      "kind": "model",
+      "upstream": 4096,
+      "cache": 8192,
+      "constructed": 0,
+      "selector_return": 0,
+      "scan_1ad": [],
+      "caller_reached": true,
+      "expected_source": "upstream",
+      "expected_eax": 4096,
+      "expected_flag_action": "zero_due_to_null_selector"
+    },
+    {
+      "id": "S038",
+      "kind": "model",
+      "upstream": 4096,
+      "cache": 8192,
+      "constructed": 0,
+      "selector_return": 0,
+      "scan_1ad": [
+        0
+      ],
+      "caller_reached": true,
+      "expected_source": "upstream",
+      "expected_eax": 4096,
+      "expected_flag_action": "zero_due_to_null_selector"
+    },
+    {
+      "id": "S039",
+      "kind": "model",
+      "upstream": 4096,
+      "cache": 8192,
+      "constructed": 0,
+      "selector_return": 0,
+      "scan_1ad": [
+        0,
+        1
+      ],
+      "caller_reached": true,
+      "expected_source": "upstream",
+      "expected_eax": 4096,
+      "expected_flag_action": "zero_due_to_null_selector"
+    },
+    {
+      "id": "S040",
+      "kind": "model",
+      "upstream": 4096,
+      "cache": 8192,
+      "constructed": 0,
+      "selector_return": 16384,
+      "scan_1ad": [],
+      "caller_reached": true,
+      "expected_source": "upstream",
+      "expected_eax": 4096,
+      "expected_flag_action": "retain_value_unproven"
+    },
+    {
+      "id": "S041",
+      "kind": "model",
+      "upstream": 4096,
+      "cache": 8192,
+      "constructed": 0,
+      "selector_return": 16384,
+      "scan_1ad": [
+        0
+      ],
+      "caller_reached": true,
+      "expected_source": "upstream",
+      "expected_eax": 4096,
+      "expected_flag_action": "retain_value_unproven"
+    },
+    {
+      "id": "S042",
+      "kind": "model",
+      "upstream": 4096,
+      "cache": 8192,
+      "constructed": 0,
+      "selector_return": 16384,
+      "scan_1ad": [
+        0,
+        1
+      ],
+      "caller_reached": true,
+      "expected_source": "upstream",
+      "expected_eax": 4096,
+      "expected_flag_action": "zero_due_to_unit_flag"
+    },
+    {
+      "id": "S043",
+      "kind": "model",
+      "upstream": 4096,
+      "cache": 8192,
+      "constructed": 12288,
+      "selector_return": 0,
+      "scan_1ad": [],
+      "caller_reached": true,
+      "expected_source": "upstream",
+      "expected_eax": 4096,
+      "expected_flag_action": "zero_due_to_null_selector"
+    },
+    {
+      "id": "S044",
+      "kind": "model",
+      "upstream": 4096,
+      "cache": 8192,
+      "constructed": 12288,
+      "selector_return": 0,
+      "scan_1ad": [
+        0
+      ],
+      "caller_reached": true,
+      "expected_source": "upstream",
+      "expected_eax": 4096,
+      "expected_flag_action": "zero_due_to_null_selector"
+    },
+    {
+      "id": "S045",
+      "kind": "model",
+      "upstream": 4096,
+      "cache": 8192,
+      "constructed": 12288,
+      "selector_return": 0,
+      "scan_1ad": [
+        0,
+        1
+      ],
+      "caller_reached": true,
+      "expected_source": "upstream",
+      "expected_eax": 4096,
+      "expected_flag_action": "zero_due_to_null_selector"
+    },
+    {
+      "id": "S046",
+      "kind": "model",
+      "upstream": 4096,
+      "cache": 8192,
+      "constructed": 12288,
+      "selector_return": 16384,
+      "scan_1ad": [],
+      "caller_reached": true,
+      "expected_source": "upstream",
+      "expected_eax": 4096,
+      "expected_flag_action": "retain_value_unproven"
+    },
+    {
+      "id": "S047",
+      "kind": "model",
+      "upstream": 4096,
+      "cache": 8192,
+      "constructed": 12288,
+      "selector_return": 16384,
+      "scan_1ad": [
+        0
+      ],
+      "caller_reached": true,
+      "expected_source": "upstream",
+      "expected_eax": 4096,
+      "expected_flag_action": "retain_value_unproven"
+    },
+    {
+      "id": "S048",
+      "kind": "model",
+      "upstream": 4096,
+      "cache": 8192,
+      "constructed": 12288,
+      "selector_return": 16384,
+      "scan_1ad": [
+        0,
+        1
+      ],
+      "caller_reached": true,
+      "expected_source": "upstream",
+      "expected_eax": 4096,
+      "expected_flag_action": "zero_due_to_unit_flag"
+    },
+    {
+      "id": "N001",
+      "kind": "anti_overclaim",
+      "claim": "ghidra_void_proves_eax_unused",
+      "must_reject": true
+    },
+    {
+      "id": "N002",
+      "kind": "anti_overclaim",
+      "claim": "producer_eax_always_original_unit",
+      "must_reject": true
+    },
+    {
+      "id": "N003",
+      "kind": "anti_overclaim",
+      "claim": "third_argument_may_be_1_at_0x447c2f",
+      "must_reject": true
+    },
+    {
+      "id": "N004",
+      "kind": "anti_overclaim",
+      "claim": "null_producer_skips_selector_call",
+      "must_reject": true
+    },
+    {
+      "id": "N005",
+      "kind": "anti_overclaim",
+      "claim": "nonnull_selector_guarantees_local_flag_1",
+      "must_reject": true
+    },
+    {
+      "id": "N006",
+      "kind": "anti_overclaim",
+      "claim": "unit_1ad_nonzero_proves_unit_death",
+      "must_reject": true
+    },
+    {
+      "id": "N007",
+      "kind": "anti_overclaim",
+      "claim": "cache_hit_proves_constructed_object",
+      "must_reject": true
+    },
+    {
+      "id": "N008",
+      "kind": "anti_overclaim",
+      "claim": "synthetic_pass_proves_golden",
+      "must_reject": true
+    }
+  ]
+}

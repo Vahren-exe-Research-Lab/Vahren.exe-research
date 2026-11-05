@@ -1,0 +1,20 @@
+{
+  "base": "68a9a917d651dffe23b2e1ee44ae7297f67b3dc7",
+  "selected_paths": 211,
+  "accepted_source_rows": 193,
+  "accepted_canonical_bodies": 188,
+  "deferred_whole_paths": 18,
+  "root_ledger_rows": 2069,
+  "searchable_documents": 2023,
+  "document_origins": 2048,
+  "field_mentions": 6161,
+  "symbols": 498,
+  "functions": 362,
+  "fields": 120,
+  "relations": 159,
+  "corrections": 15,
+  "parent_alias_reconciliations": 0,
+  "new_native_runtime_tests": 0,
+  "original_cleanup": "NOT_PERFORMED",
+  "prior_accepted_body_scope_corrections": 1
+}

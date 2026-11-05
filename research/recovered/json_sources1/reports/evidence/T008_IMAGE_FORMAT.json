@@ -1,0 +1,232 @@
+{
+  "image1": {
+    "bmp": {
+      "size": 3612726,
+      "header_file_size": 3612726,
+      "pixel_offset": 54,
+      "dib_size": 40,
+      "width": 2048,
+      "height": 441,
+      "planes": 1,
+      "bpp": 32,
+      "compression": 0,
+      "image_size": 0,
+      "expected_raw_32bpp": 3612726,
+      "sha256": "d4045874375eff1ccb7827aaff9fd0b722da3701076706524e4bd4a15af7915a"
+    },
+    "meta": {
+      "size": 12003,
+      "width": 2048,
+      "height": 441,
+      "bgra": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "records": 497,
+      "consumed": 12003,
+      "trailing": 0,
+      "all_bounds_valid": true,
+      "max_rect_w": 160,
+      "max_rect_h": 174,
+      "duplicate_names": 0,
+      "first_records": [
+        [
+          "asphalt",
+          1840,
+          37,
+          1872,
+          69
+        ],
+        [
+          "asphalt1",
+          1872,
+          37,
+          1904,
+          69
+        ],
+        [
+          "beach",
+          1904,
+          37,
+          1936,
+          69
+        ],
+        [
+          "beach1",
+          1936,
+          37,
+          1968,
+          69
+        ],
+        [
+          "beach1E",
+          1968,
+          37,
+          2000,
+          69
+        ],
+        [
+          "beach1N",
+          2000,
+          37,
+          2032,
+          69
+        ],
+        [
+          "beach1NE",
+          0,
+          69,
+          32,
+          101
+        ],
+        [
+          "beach1NW",
+          32,
+          69,
+          64,
+          101
+        ],
+        [
+          "beach1S",
+          64,
+          69,
+          96,
+          101
+        ],
+        [
+          "beach1SE",
+          96,
+          69,
+          128,
+          101
+        ]
+      ],
+      "sha256": "bc523953f4749033bdaa83df56b2fb9c7eb06dd4910b7369371bda470b3f52c3"
+    },
+    "dimension_match": true,
+    "file_size_exact_32bpp": true
+  },
+  "image2": {
+    "bmp": {
+      "size": 262198,
+      "header_file_size": 262198,
+      "pixel_offset": 54,
+      "dib_size": 40,
+      "width": 2048,
+      "height": 32,
+      "planes": 1,
+      "bpp": 32,
+      "compression": 0,
+      "image_size": 0,
+      "expected_raw_32bpp": 262198,
+      "sha256": "6b8cf53079bebaf4336c9f335f5d693f86882a21c7ad1cf7bfdda19c1da64c5f"
+    },
+    "meta": {
+      "size": 429,
+      "width": 2048,
+      "height": 32,
+      "bgra": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "records": 16,
+      "consumed": 429,
+      "trailing": 0,
+      "all_bounds_valid": true,
+      "max_rect_w": 32,
+      "max_rect_h": 32,
+      "duplicate_names": 0,
+      "first_records": [
+        [
+          "o_charge0",
+          0,
+          0,
+          32,
+          32
+        ],
+        [
+          "o_charge1",
+          32,
+          0,
+          64,
+          32
+        ],
+        [
+          "o_charge2",
+          64,
+          0,
+          96,
+          32
+        ],
+        [
+          "o_charge3",
+          96,
+          0,
+          128,
+          32
+        ],
+        [
+          "o_charge4",
+          128,
+          0,
+          160,
+          32
+        ],
+        [
+          "o_charge5",
+          160,
+          0,
+          192,
+          32
+        ],
+        [
+          "o_charge6",
+          192,
+          0,
+          224,
+          32
+        ],
+        [
+          "o_charge7",
+          224,
+          0,
+          256,
+          32
+        ],
+        [
+          "o_flash0",
+          256,
+          0,
+          288,
+          32
+        ],
+        [
+          "o_flash1",
+          288,
+          0,
+          320,
+          32
+        ]
+      ],
+      "sha256": "f826caa56650b1ecfc1b85d43dcc1fc3f8a1c588040b814491f6715fdd3315a9"
+    },
+    "dimension_match": true,
+    "file_size_exact_32bpp": true
+  }
+}

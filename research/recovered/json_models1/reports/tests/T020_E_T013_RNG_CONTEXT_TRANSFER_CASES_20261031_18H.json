@@ -1,0 +1,19 @@
+{
+  "research_id": "E-AUDIT-20261031-18H-T020-T013-RNG-CONTEXT-NEGATIVE-INFERENCE-01",
+  "owner": "E/T020",
+  "antecedent": "B-20261031-18H-T013-RNG-CONTEXT-CARRY-NONUSE-01",
+  "source": "data/T013_RNG_CONTEXT_CARRY_NO_DIRECT_CMP_NATIVE_20261031_18H.md",
+  "source_sha256": "6EACB969DDEC6E7F40408A342D17FD32A9401B9664C21F8A7071C05DB70298F3",
+  "original_pe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "scope": "static wrapper copies and callback direct-displacement search; no claim on aliases, ABI, side effects or final target",
+  "cases": [
+    {"case_id":"RNGCTX18-KIND8-SINGLE", "route":"kind8", "count_family":"1", "unsupported_shortcut":"NO_RNG_CONSUMPTION", "golden_status":"DESIGNED_NOT_RUN", "strict_match":null, "original_dynamic_observed":false},
+    {"case_id":"RNGCTX18-KIND8-MULTI", "route":"kind8", "count_family":"2+", "unsupported_shortcut":"PAYLOAD_IS_SORT_KEY", "golden_status":"DESIGNED_NOT_RUN", "strict_match":null, "original_dynamic_observed":false},
+    {"case_id":"RNGCTX18-KIND8-ZERO", "route":"kind8", "count_family":"0", "unsupported_shortcut":"FINAL_TARGET_PROVEN", "golden_status":"DESIGNED_NOT_RUN", "strict_match":null, "original_dynamic_observed":false},
+    {"case_id":"RNGCTX18-OTHER-SINGLE", "route":"non_kind8", "count_family":"1", "unsupported_shortcut":"NO_RNG_CONSUMPTION", "golden_status":"DESIGNED_NOT_RUN", "strict_match":null, "original_dynamic_observed":false},
+    {"case_id":"RNGCTX18-OTHER-MULTI", "route":"non_kind8", "count_family":"2+", "unsupported_shortcut":"PAYLOAD_IS_SORT_KEY", "golden_status":"DESIGNED_NOT_RUN", "strict_match":null, "original_dynamic_observed":false},
+    {"case_id":"RNGCTX18-OTHER-ZERO", "route":"non_kind8", "count_family":"0", "unsupported_shortcut":"FINAL_TARGET_PROVEN", "golden_status":"DESIGNED_NOT_RUN", "strict_match":null, "original_dynamic_observed":false}
+  ],
+  "legitimate_golden": "unmodified old EXE and pre-20x DAT; same-run G0 legal UI battle, G1 save/input SHA, G2 actual MAP/3 sides/ordered Unit/Troop, then before/after sort + next-tick observed target",
+  "status": "STATIC / VERIFY / NOT READY"
+}

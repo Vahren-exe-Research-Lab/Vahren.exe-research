@@ -1,0 +1,29 @@
+{
+  "records": {
+    "mark@po14": [
+      "clearsww.png",
+      1
+    ],
+    "po23_bouken_tochu": [
+      "",
+      0
+    ],
+    "signed_min": [
+      "",
+      -2147483648
+    ],
+    "signed_max": [
+      "",
+      2147483647
+    ]
+  },
+  "plain_size": 93,
+  "encrypted_size": 125,
+  "magic": "01020304",
+  "key": "08090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f20212223",
+  "roundtrip_payload": true,
+  "roundtrip_records": true,
+  "terminator_end": 93,
+  "payload_fully_consumed": true,
+  "sha256": "349bb5b93c4a940049ed7e931c9e70cccb0183be670ed4e4eb470c4775612800"
+}

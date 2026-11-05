@@ -1,0 +1,144 @@
+{
+  "research_id": "B-OFFLINE-20261024-1209-T012-T028-STATIC-RETPOINTER-BRANCH-ABI-01",
+  "recovery_id": "B-RC-20261024-1209-LOCAL-SESSION-AND-PRIOR-REFUSAL-BOUNDARY-01",
+  "run_local_time": "2026-10-24 12:09 JST",
+  "pc_attempt": {
+    "tool": "Desktop Commander Local Compact read_file",
+    "path": "[USER_HOME]\\Documents\\迫真戦記\\_REDEV_RESEARCH\\MASTER_LEDGER.md",
+    "error": "INVALID_ARGUMENT: Error code: INVALID_ARGUMENT; Error: McpServerError: Session terminated",
+    "class": "CONNECTION",
+    "pc_current_master_read": false,
+    "pc_write": false,
+    "pc_readback": false
+  },
+  "source": {
+    "archive": "HAKUSHIN067_AI_OFFLINE_PACK_20261021.zip",
+    "archive_sha256": "911E5E37A3F9BD5B36F929AF94B0D1E2CD1CD5CF34E3E2F16C8FC800ABF5F7C2",
+    "archive_entries": 34,
+    "archive_crc": "PASS",
+    "snapshot_date": "2026-10-21",
+    "exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+    "sqlite_sha256": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF",
+    "sqlite_quick_check": "ok",
+    "original_exe_executed": false
+  },
+  "native_assertions": {
+    "staticunit_string_copy_start": "0x0055AC35 SUB ESP,0x1C",
+    "staticunit_copy_call": "0x0055AC54 CALL 0x00402710",
+    "staticunit_resolver_call": "0x0055AC5F CALL 0x004678A0",
+    "immediate_result_use": "0x0055AC65 CMP DWORD PTR [EAX+0x74],EBX",
+    "resolver_empty_path": "0x00467928 MOV EAX,0x00B08698",
+    "resolver_lookup_path": "0x00467974 MOV EAX,ESI",
+    "resolver_new_path": "0x00467A1A MOV EAX,EDI",
+    "resolver_ret": "0x00467A3A RET 0x1C",
+    "branch_zero": "0x0055AC71 CALL 0x00580280; 0x0055AC76 ADD ESP,0x10; EDX=ECX=0",
+    "branch_nonzero": "0x0055AC84 CALL 0x0054F720; 0x0055AC89 ADD ESP,0x0C; EAX=0 ECX=EDI",
+    "ghidra_signature_disagreement": "Ghidra labels 0x004678A0 void __thiscall, but native EAX return consumed immediately"
+  },
+  "proof_windows": [
+    {
+      "name": "caller_string_argument_then_resolver",
+      "start_va": "0x0055AC35",
+      "end_va_exclusive": "0x0055AC64",
+      "nbytes": 47,
+      "sha256": "0E01C53673518F7AA6E2BE09B8A2385FFDD9B1BE30822813E68F4252F9EF180F"
+    },
+    {
+      "name": "caller_result_split_and_two_abi_routes",
+      "start_va": "0x0055AC64",
+      "end_va_exclusive": "0x0055AC91",
+      "nbytes": 45,
+      "sha256": "90800584C5E08F1A397A98976F78BD3EF6D1C1646590937B42DF25ACBF7138BC"
+    },
+    {
+      "name": "resolver_global_return_path",
+      "start_va": "0x004678D2",
+      "end_va_exclusive": "0x00467932",
+      "nbytes": 96,
+      "sha256": "4CC8264648FC282D36CD05C749D7D46604E2B9464AB65DC4795EC309EA3A7CCC"
+    },
+    {
+      "name": "resolver_found_return_path",
+      "start_va": "0x00467932",
+      "end_va_exclusive": "0x0046797B",
+      "nbytes": 73,
+      "sha256": "AF08912F5A6490DEE37357F4BD2A629D1561E1EBFA63ED47470173BE893BE57D"
+    },
+    {
+      "name": "resolver_allocated_return_path",
+      "start_va": "0x0046797B",
+      "end_va_exclusive": "0x00467A3D",
+      "nbytes": 194,
+      "sha256": "9620EB9B3D6F75304248200FEAF3CC05ADABB853C9C970E5FEDBD1768C581103"
+    },
+    {
+      "name": "damage_caller_post_vcall",
+      "start_va": "0x00551154",
+      "end_va_exclusive": "0x0055116C",
+      "nbytes": 24,
+      "sha256": "F847117E7531C209AD12C9E2AA72A26B825DE6A8CB69981E2DC710973E05C9ED"
+    },
+    {
+      "name": "status_caller_post_vcall",
+      "start_va": "0x00578E1E",
+      "end_va_exclusive": "0x00578E35",
+      "nbytes": 23,
+      "sha256": "904BC791E97F120FC77DA5723642FF4D5FCD64D44D0FAF3BA7035E280ECE0E34"
+    },
+    {
+      "name": "regen_caller_post_vcall",
+      "start_va": "0x0057E04D",
+      "end_va_exclusive": "0x0057E061",
+      "nbytes": 20,
+      "sha256": "A30D8D85B1551745F67D709857413FE3334F5C9F94E7EE76079C4134C2FA98DB"
+    }
+  ],
+  "dedup_scope": "old 2026-10-21 B snapshot and 2026-10-24 10:16/11:11 B reports; current PC B HANDOFF not accessible",
+  "forbidden_region_correction": {
+    "status": "RECORDED",
+    "area": "Prior refused callee body slice 0x0058021E..0x00580340",
+    "incident": "One initial scoped CLI function query 0x00580280 was issued before historical refusal scope was discovered; output was excluded from research evidence and no further inspection performed",
+    "further_queries": 0,
+    "no_callee_body_used": true,
+    "caller_only_reference": "0x0055AC71 instruction is outside refused region"
+  },
+  "conclusions": [
+    "static original native 0x004678A0 returns EAX pointer, unlike Ghidra void label",
+    "StaticUnit death custom-string caller dereferences returned record +0x74",
+    "branch outputs have distinct explicit stack widths 16 vs 12 bytes and different register states",
+    "two known vslot+0x70 callers do not consume AL at return, and third has no immediate AL test; avoid assuming AL=1 triggers duplicate event"
+  ],
+  "not_established": [
+    "meaning of record +0x74",
+    "actual gameplay reachability or error/exception behavior",
+    "lifetime and full type of returned object",
+    "PC current duplicate/READY state"
+  ],
+  "golden_pass": 0,
+  "strict_match": 0,
+  "ready": false,
+  "pc_unsynced": true,
+  "modifications": {
+    "original_zip_exe_dat_save": 0,
+    "git": 0,
+    "master_other_lanes": 0,
+    "pc_b_owned_files": 0,
+    "work": 0,
+    "schedule": 0
+  },
+  "additional_post_vcall_findings": {
+    "0x00551154": "AL not consumed immediately; EAX overwritten by MOV EAX,[EBX+0x1C8]",
+    "0x00578E1E": "immediate store constant and memory condition, no AL test in short window; global consumption VERIFY",
+    "0x0057E04D": "immediate epilogue without testing AL"
+  },
+  "storage": {
+    "initial_library_upload": "2/2 succeeded",
+    "initial_library_readback": "2/2 succeeded",
+    "subsequent_addendum_update": "2/2 attempted each twice; failed",
+    "actual_error": "container_session_unavailable: No active container session was found for container_path",
+    "current_library_contents": "initial version WITHOUT additional post-vcall findings",
+    "current_local_contents": "latest version WITH post-vcall findings and recovery note",
+    "pc_save_readback": "not performed",
+    "reconcile_next": "Do not duplicate: compare same research ID and contents before merging"
+  }
+}

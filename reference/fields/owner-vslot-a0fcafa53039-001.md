@@ -28,6 +28,9 @@
 - [research/recovered/b_batch3/B_T012_RENDER_ORDER_ROUTE_OFFLINE_20261022_1912.md 行 35](../../research/recovered/b_batch3/B_T012_RENDER_ORDER_ROUTE_OFFLINE_20261022_1912.md?plain=1#L35-L35) — `0x004C4850`は、対象のslot+0x48が0である場合だけslot+0x1Cを呼び出し、頂点バッファ候補へ出力する。Missile / SimpleMissile vslot+0x1C はどちらも`0x0054D480`（既存Ghidra本文には頂点座標計算が存在）である。つまり **`+0x48=0`は非
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+- [research/recovered/json_sources1/reports/data/B_T012_RENDER_ORDER_ROUTE_EVIDENCE_20261022_1912.json 行 168](../../research/recovered/json_sources1/reports/data/B_T012_RENDER_ORDER_ROUTE_EVIDENCE_20261022_1912.json?plain=1#L168-L168) — "0x4C4850 uses object vslot+0x48 false and vslot+0x1C for writing render vertex records, D3D state confirms render consumer",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
 - [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0933_T014_EMPTY_SHEET_VSLOT20_AUDIT.md 行 82](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0933_T014_EMPTY_SHEET_VSLOT20_AUDIT.md?plain=1#L82-L82) — 0x00543428  call eax              ; vslot +0x1C
   制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
 
@@ -67,6 +70,9 @@
 - [research/recovered/b_reports/B_T011_T012_MISSILE_VTABLE_SLOT38_OFFLINE_20261022_1813.sanitized.md 行 36](../../research/recovered/b_reports/B_T011_T012_MISSILE_VTABLE_SLOT38_OFFLINE_20261022_1813.sanitized.md?plain=1#L36-L36) — - vslot+0x38がこの2クラスなら、`0x0054D970`の返り値が**並べ替えの第一キー**、slot+0x3Cの`this+0x54`が**同値時第二キー**となる。+0x54は従来 `0x004BC920` 登録処理が設定する値でもある。ただし、**AIの最終対象選択/命中判定/ダメージ順序と同一のソー
   制約・訂正　Privacy derivative: one personal research-root prefix replaced with <research-root> plus explicit recovery annotation; full technical content retained; reversible byte reconstruction matches source SHA; historical STATIC/INFERRED/VERIFY only; no linked payload read or Golden/READY promotion
 
+- [research/recovered/json_sources1/reports/data/B_T012_RENDER_ORDER_ROUTE_EVIDENCE_20261022_1912.json 行 169](../../research/recovered/json_sources1/reports/data/B_T012_RENDER_ORDER_ROUTE_EVIDENCE_20261022_1912.json?plain=1#L169-L169) — "For concrete missile classes, vslot+0x40 = 0x546A20 returns skill_candidate+0x28, vslot+0x38 = 0x54D970, +0x3C = 0x402CD0",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
 <a id="field-40"></a>
 ## vslot + 0x40
 
@@ -79,6 +85,12 @@
 - [research/recovered/b_reports/B_T011_T012_MISSILE_VTABLE_SLOT38_OFFLINE_20261022_1813.sanitized.md 行 34](../../research/recovered/b_reports/B_T011_T012_MISSILE_VTABLE_SLOT38_OFFLINE_20261022_1813.sanitized.md?plain=1#L34-L34) — - `0x004BC4F0` の `0x004BC67E/0x004BC693/0x004BC69F` でそれぞれ vslot `+0x40/+0x38/+0x3C` が呼ばれる。vslot+0x40の値に3を加えて3と比較（mod 2^32なので元が0の条件に等しい）し、通過するとslot+0x38の戻り値を、当該仮
   制約・訂正　Privacy derivative: one personal research-root prefix replaced with <research-root> plus explicit recovery annotation; full technical content retained; reversible byte reconstruction matches source SHA; historical STATIC/INFERRED/VERIFY only; no linked payload read or Golden/READY promotion
 
+- [research/recovered/json_sources1/reports/data/B_T012_RENDER_ORDER_ROUTE_EVIDENCE_20261022_1912.json 行 167](../../research/recovered/json_sources1/reports/data/B_T012_RENDER_ORDER_ROUTE_EVIDENCE_20261022_1912.json?plain=1#L167-L167) — "0x4BC4F0 uses vslot+0x40+3 as bucket; +0x40==0 bucket3 gets signed two-key sort via 0x47BB50/0x4BBC60, then render path invokes 0x4C4850",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
+- [research/recovered/json_sources1/reports/data/B_T012_RENDER_ORDER_ROUTE_EVIDENCE_20261022_1912.json 行 169](../../research/recovered/json_sources1/reports/data/B_T012_RENDER_ORDER_ROUTE_EVIDENCE_20261022_1912.json?plain=1#L169-L169) — "For concrete missile classes, vslot+0x40 = 0x546A20 returns skill_candidate+0x28, vslot+0x38 = 0x54D970, +0x3C = 0x402CD0",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
 <a id="field-48"></a>
 ## vslot + 0x48
 
@@ -87,6 +99,18 @@
 
 - [research/recovered/b_batch3/B_T012_RENDER_ORDER_ROUTE_OFFLINE_20261022_1912.md 行 53](../../research/recovered/b_batch3/B_T012_RENDER_ORDER_ROUTE_OFFLINE_20261022_1912.md?plain=1#L53-L53) — `Missile.sortKey`という抽象値だけを一個設け、全描画と戦闘の命中優先順に共通使用するのは不適切である。少なくとも（a）vslot+0x48に基づく描画投入経路の分岐、（b）vslot+0x40に3を加えたバケット分類、（c）バケット3の`(+0x04,+0x08)`符号付き辞書式整列、（d）`+0x48
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/json_sources1/reports/data/B_T012_RENDER_ORDER_ROUTE_EVIDENCE_20261022_1912.json 行 165](../../research/recovered/json_sources1/reports/data/B_T012_RENDER_ORDER_ROUTE_EVIDENCE_20261022_1912.json?plain=1#L165-L165) — "Missile and SimpleMissile vslot+0x48 = 0x43B5A0 -> AL=0 always when native vptr is intact",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
+- [research/recovered/json_sources1/reports/data/B_T012_RENDER_ORDER_ROUTE_EVIDENCE_20261022_1912.json 行 166](../../research/recovered/json_sources1/reports/data/B_T012_RENDER_ORDER_ROUTE_EVIDENCE_20261022_1912.json?plain=1#L166-L166) — "0x4C5C80 only enters 0x4C3DC0 and 0x4C55A0 branch if vslot+0x48 nonzero, hence concrete missile classes skip this registered-list sort path",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
+- [research/recovered/json_sources1/reports/data/B_T012_RENDER_ORDER_ROUTE_EVIDENCE_20261022_1912.json 行 168](../../research/recovered/json_sources1/reports/data/B_T012_RENDER_ORDER_ROUTE_EVIDENCE_20261022_1912.json?plain=1#L168-L168) — "0x4C4850 uses object vslot+0x48 false and vslot+0x1C for writing render vertex records, D3D state confirms render consumer",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
+- [research/recovered/json_sources1/reports/data/B_T012_RENDER_ORDER_ROUTE_EVIDENCE_20261022_1912.json 行 170](../../research/recovered/json_sources1/reports/data/B_T012_RENDER_ORDER_ROUTE_EVIDENCE_20261022_1912.json?plain=1#L170-L170) — "The 18:13 virtual sort comparator via 0x4C5910 is verified generic, but ordinary missile insertion into that path is blocked by concrete vslot+0x48=0; any alte
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
 
 <a id="field-58"></a>
 ## vslot + 0x58
@@ -141,5 +165,8 @@
 
 - [research/recovered/b_reports/B_T012_T028_STATIC_RETURN_DEATHBRANCH_OFFLINE_20261024_1111.md 行 50](../../research/recovered/b_reports/B_T012_T028_STATIC_RETURN_DEATHBRANCH_OFFLINE_20261024_1111.md?plain=1#L50-L50) — 次回: `0x0055ABA0`/`0x0055B060`のvslot+0x70間接CALLから`AL`を実際に読む呼出元の有無、`0x0055AC2D`の文字列を作るロード/コピー元、`0x00578370`のdynamic receiver型、以前の拒否案件から独立した安全な読取だけ継続。
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
+
+- [research/recovered/json_sources1/reports/data/B_T012_T028_STATIC_RETPOINTER_BRANCH_ABI_OFFLINE_20261024_1209.json 行 109](../../research/recovered/json_sources1/reports/data/B_T012_T028_STATIC_RETPOINTER_BRANCH_ABI_OFFLINE_20261024_1209.json?plain=1#L109-L109) — "two known vslot+0x70 callers do not consume AL at return, and third has no immediate AL test; avoid assuming AL=1 triggers duplicate event"
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

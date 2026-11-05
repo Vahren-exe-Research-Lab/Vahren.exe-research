@@ -1,0 +1,1305 @@
+{
+  "counts": [
+    [
+      "skill",
+      16554
+    ],
+    [
+      "unit",
+      4586
+    ],
+    [
+      "class",
+      4080
+    ],
+    [
+      "event",
+      3232
+    ],
+    [
+      "voice",
+      853
+    ],
+    [
+      "spot",
+      401
+    ],
+    [
+      "field",
+      276
+    ],
+    [
+      "object",
+      263
+    ],
+    [
+      "power",
+      143
+    ],
+    [
+      "skillset",
+      106
+    ],
+    [
+      "story",
+      72
+    ],
+    [
+      "detail",
+      48
+    ],
+    [
+      "movetype",
+      33
+    ],
+    [
+      "race",
+      21
+    ],
+    [
+      "workspace",
+      11
+    ],
+    [
+      "scenario",
+      9
+    ],
+    [
+      "world",
+      3
+    ],
+    [
+      "fight",
+      1
+    ],
+    [
+      "attribute",
+      1
+    ],
+    [
+      "context",
+      1
+    ],
+    [
+      "sound",
+      1
+    ]
+  ],
+  "tagless": {
+    "detail": 48,
+    "workspace": 11,
+    "attribute": 1,
+    "context": 1,
+    "sound": 1
+  },
+  "inheritance": {
+    "field": 100,
+    "skill": 13049,
+    "unit": 4281,
+    "class": 3256,
+    "spot": 367,
+    "power": 124,
+    "object": 17,
+    "race": 20
+  },
+  "top_parents": {
+    "field": [
+      [
+        "stone",
+        11
+      ],
+      [
+        "stone2",
+        10
+      ],
+      [
+        "mud",
+        9
+      ],
+      [
+        "snow",
+        9
+      ],
+      [
+        "ice",
+        6
+      ],
+      [
+        "grass",
+        5
+      ],
+      [
+        "kblock1",
+        5
+      ],
+      [
+        "sea0",
+        4
+      ],
+      [
+        "snow_k",
+        4
+      ],
+      [
+        "sand",
+        3
+      ],
+      [
+        "edotuti_k",
+        3
+      ],
+      [
+        "degig",
+        2
+      ],
+      [
+        "degim",
+        2
+      ],
+      [
+        "degis",
+        2
+      ],
+      [
+        "asphalt",
+        2
+      ],
+      [
+        "mersh",
+        2
+      ],
+      [
+        "rock",
+        2
+      ],
+      [
+        "stone_k",
+        2
+      ],
+      [
+        "stone2_k",
+        2
+      ],
+      [
+        "edotuti_k_w",
+        2
+      ]
+    ],
+    "skill": [
+      [
+        "sk_ms",
+        3851
+      ],
+      [
+        "self_a000",
+        441
+      ],
+      [
+        "self_a000_nt0",
+        440
+      ],
+      [
+        "s_defbase",
+        228
+      ],
+      [
+        "s_defbase_nt",
+        228
+      ],
+      [
+        "megadeath_hitXX_CountAXX_base",
+        201
+      ],
+      [
+        "megadeath_hitXX_CountBXX_base",
+        200
+      ],
+      [
+        "ra0002",
+        142
+      ],
+      [
+        "sk_sw",
+        102
+      ],
+      [
+        "eff_sake_joi",
+        101
+      ],
+      [
+        "ra0002_nt",
+        93
+      ],
+      [
+        "waitspecial",
+        77
+      ],
+      [
+        "s_rts",
+        72
+      ],
+      [
+        "dtSWK_hand_base",
+        69
+      ],
+      [
+        "sk_sw0",
+        67
+      ],
+      [
+        "hqinfkarate",
+        45
+      ],
+      [
+        "hanzo_orochi_base",
+        38
+      ],
+      [
+        "m_heal",
+        37
+      ],
+      [
+        "b_gun",
+        35
+      ],
+      [
+        "Shakespeare_fire_chainB_base",
+        33
+      ]
+    ],
+    "unit": [
+      [
+        "cmd",
+        394
+      ],
+      [
+        "eu0",
+        300
+      ],
+      [
+        "base1",
+        243
+      ],
+      [
+        "cmd_gc",
+        109
+      ],
+      [
+        "cmd_item",
+        105
+      ],
+      [
+        "base2",
+        88
+      ],
+      [
+        "ru",
+        87
+      ],
+      [
+        "fmrim",
+        83
+      ],
+      [
+        "base_s4",
+        79
+      ],
+      [
+        "sel_base",
+        68
+      ],
+      [
+        "udk",
+        60
+      ],
+      [
+        "base3",
+        57
+      ],
+      [
+        "alc",
+        52
+      ],
+      [
+        "knn",
+        48
+      ],
+      [
+        "snnn",
+        43
+      ],
+      [
+        "geruch",
+        42
+      ],
+      [
+        "hito1hh",
+        42
+      ],
+      [
+        "bnkrg",
+        41
+      ],
+      [
+        "hito1",
+        41
+      ],
+      [
+        "base4",
+        38
+      ]
+    ],
+    "class": [
+      [
+        "base",
+        248
+      ],
+      [
+        "defbar",
+        89
+      ],
+      [
+        "defboat",
+        89
+      ],
+      [
+        "defbase",
+        51
+      ],
+      [
+        "rtsbase",
+        42
+      ],
+      [
+        "a500",
+        37
+      ],
+      [
+        "base_kn",
+        35
+      ],
+      [
+        "a0003",
+        30
+      ],
+      [
+        "a000",
+        26
+      ],
+      [
+        "a0002",
+        22
+      ],
+      [
+        "a046",
+        19
+      ],
+      [
+        "a080",
+        19
+      ],
+      [
+        "a0803",
+        17
+      ],
+      [
+        "hqinfkarate",
+        17
+      ],
+      [
+        "hqgunkarate",
+        17
+      ],
+      [
+        "a0802",
+        16
+      ],
+      [
+        "a004",
+        15
+      ],
+      [
+        "a020",
+        14
+      ],
+      [
+        "a0203",
+        14
+      ],
+      [
+        "a009",
+        13
+      ]
+    ],
+    "spot": [
+      [
+        "sp",
+        90
+      ],
+      [
+        "spunchi",
+        36
+      ],
+      [
+        "spdr",
+        17
+      ],
+      [
+        "spc",
+        17
+      ],
+      [
+        "spgood",
+        15
+      ],
+      [
+        "spzako",
+        10
+      ],
+      [
+        "sp_mt1",
+        7
+      ],
+      [
+        "spexcellent",
+        6
+      ],
+      [
+        "spkmn",
+        3
+      ],
+      [
+        "sphzn",
+        2
+      ],
+      [
+        "sp1",
+        2
+      ],
+      [
+        "sp2",
+        2
+      ],
+      [
+        "sp47",
+        2
+      ],
+      [
+        "sp4",
+        2
+      ],
+      [
+        "sp5",
+        2
+      ],
+      [
+        "sp6",
+        2
+      ],
+      [
+        "sp7",
+        2
+      ],
+      [
+        "sp8",
+        2
+      ],
+      [
+        "sp9",
+        2
+      ],
+      [
+        "sp10",
+        2
+      ]
+    ],
+    "power": [
+      [
+        "p_t",
+        85
+      ],
+      [
+        "rndm1",
+        6
+      ],
+      [
+        "po1",
+        1
+      ],
+      [
+        "po2",
+        1
+      ],
+      [
+        "po3",
+        1
+      ],
+      [
+        "po4",
+        1
+      ],
+      [
+        "po5",
+        1
+      ],
+      [
+        "po6",
+        1
+      ],
+      [
+        "po7",
+        1
+      ],
+      [
+        "po8",
+        1
+      ],
+      [
+        "po9",
+        1
+      ],
+      [
+        "po10",
+        1
+      ],
+      [
+        "po11",
+        1
+      ],
+      [
+        "po12",
+        1
+      ],
+      [
+        "po13",
+        1
+      ],
+      [
+        "po14",
+        1
+      ],
+      [
+        "po16",
+        1
+      ],
+      [
+        "po17",
+        1
+      ],
+      [
+        "po18",
+        1
+      ],
+      [
+        "po19",
+        1
+      ]
+    ],
+    "object": [
+      [
+        "edo1_k",
+        11
+      ],
+      [
+        "jkwall",
+        2
+      ],
+      [
+        "jkwall1",
+        2
+      ],
+      [
+        "jkwall2",
+        2
+      ]
+    ],
+    "race": [
+      [
+        "hm",
+        15
+      ],
+      [
+        "r0_hm",
+        1
+      ],
+      [
+        "r1_co",
+        1
+      ],
+      [
+        "r20_re",
+        1
+      ],
+      [
+        "r2_hu",
+        1
+      ],
+      [
+        "r3_ei",
+        1
+      ]
+    ]
+  },
+  "examples": {
+    "field": [
+      {
+        "file": "1000_チュートリアル\\field_degi.dat",
+        "line": 1,
+        "tag": "degig",
+        "parent": null
+      },
+      {
+        "file": "1000_チュートリアル\\field_degi.dat",
+        "line": 12,
+        "tag": "degig1",
+        "parent": "degig"
+      },
+      {
+        "file": "1000_チュートリアル\\field_degi.dat",
+        "line": 18,
+        "tag": "degig2",
+        "parent": "degig"
+      },
+      {
+        "file": "1000_チュートリアル\\field_degi.dat",
+        "line": 53,
+        "tag": "degim",
+        "parent": null
+      },
+      {
+        "file": "1000_チュートリアル\\field_degi.dat",
+        "line": 64,
+        "tag": "degim1",
+        "parent": "degim"
+      },
+      {
+        "file": "1000_チュートリアル\\field_degi.dat",
+        "line": 70,
+        "tag": "degim2",
+        "parent": "degim"
+      }
+    ],
+    "object": [
+      {
+        "file": "1000_チュートリアル\\field_degi.dat",
+        "line": 24,
+        "tag": "degitg0",
+        "parent": null
+      },
+      {
+        "file": "1000_チュートリアル\\field_degi.dat",
+        "line": 31,
+        "tag": "degitg1",
+        "parent": null
+      },
+      {
+        "file": "1000_チュートリアル\\field_degi.dat",
+        "line": 38,
+        "tag": "degitg2",
+        "parent": null
+      },
+      {
+        "file": "1000_チュートリアル\\field_degi.dat",
+        "line": 45,
+        "tag": "degitg3",
+        "parent": null
+      },
+      {
+        "file": "1000_チュートリアル\\field_degi.dat",
+        "line": 76,
+        "tag": "degitm0",
+        "parent": null
+      },
+      {
+        "file": "1000_チュートリアル\\field_degi.dat",
+        "line": 83,
+        "tag": "degitm1",
+        "parent": null
+      }
+    ],
+    "unit": [
+      {
+        "file": "1000_チュートリアル\\tuto_event1.dat",
+        "line": 1,
+        "tag": "u_ef_degit",
+        "parent": null
+      },
+      {
+        "file": "1000_チュートリアル\\tuto_event1.dat",
+        "line": 120,
+        "tag": "tuto_udk",
+        "parent": "base1"
+      },
+      {
+        "file": "1000_チュートリアル\\tuto_event1.dat",
+        "line": 159,
+        "tag": "tuto_f1",
+        "parent": null
+      },
+      {
+        "file": "1000_チュートリアル\\tuto_event1.dat",
+        "line": 166,
+        "tag": "tuto_f2",
+        "parent": null
+      },
+      {
+        "file": "1000_チュートリアル\\tuto_event1.dat",
+        "line": 173,
+        "tag": "tuto_f3",
+        "parent": null
+      },
+      {
+        "file": "1000_チュートリアル\\tuto_event1.dat",
+        "line": 180,
+        "tag": "tuto_f4",
+        "parent": null
+      }
+    ],
+    "skill": [
+      {
+        "file": "1000_チュートリアル\\tuto_event1.dat",
+        "line": 15,
+        "tag": "ef_degit",
+        "parent": null
+      },
+      {
+        "file": "1000_チュートリアル\\tuto_event1.dat",
+        "line": 24,
+        "tag": "ef_degit_nt1",
+        "parent": null
+      },
+      {
+        "file": "1000_チュートリアル\\tuto_event1.dat",
+        "line": 31,
+        "tag": "ef_degit_nt1_1",
+        "parent": null
+      },
+      {
+        "file": "1000_チュートリアル\\tuto_event1.dat",
+        "line": 38,
+        "tag": "ef_degit_nt2",
+        "parent": "sk_ms"
+      },
+      {
+        "file": "1000_チュートリアル\\tuto_event1.dat",
+        "line": 57,
+        "tag": "ef_degit_nt3",
+        "parent": "ef_degit_nt2"
+      },
+      {
+        "file": "1000_チュートリアル\\tuto_event1.dat",
+        "line": 62,
+        "tag": "ef_degit_nt4",
+        "parent": "sk_ms"
+      }
+    ],
+    "story": [
+      {
+        "file": "1000_チュートリアル\\tuto_event1.dat",
+        "line": 86,
+        "tag": "story_tuto_1",
+        "parent": null
+      },
+      {
+        "file": "1000_チュートリアル\\tuto_event2.dat",
+        "line": 1,
+        "tag": "story_tuto_2",
+        "parent": null
+      },
+      {
+        "file": "1000_チュートリアル\\tuto_event3.dat",
+        "line": 1,
+        "tag": "story_tuto_3",
+        "parent": null
+      },
+      {
+        "file": "100_イベント汎用\\event_end.dat",
+        "line": 3,
+        "tag": "zzzzzzzzz",
+        "parent": null
+      },
+      {
+        "file": "102_ランダムイベント\\randomev_addfriend.dat",
+        "line": 2,
+        "tag": "randomev_addfriend",
+        "parent": null
+      },
+      {
+        "file": "116_仮設ランダムイベント61-70\\randomev64_b.dat",
+        "line": 736,
+        "tag": "randomev64_world",
+        "parent": null
+      }
+    ],
+    "event": [
+      {
+        "file": "1000_チュートリアル\\tuto_event1.dat",
+        "line": 101,
+        "tag": "ev_tuto_1",
+        "parent": null
+      },
+      {
+        "file": "1000_チュートリアル\\tuto_event1.dat",
+        "line": 231,
+        "tag": "bt_tuto_1",
+        "parent": null
+      },
+      {
+        "file": "1000_チュートリアル\\tuto_event2.dat",
+        "line": 60,
+        "tag": "ev_tuto_2",
+        "parent": null
+      },
+      {
+        "file": "1000_チュートリアル\\tuto_event2.dat",
+        "line": 84,
+        "tag": "ev_tuto_2_2",
+        "parent": null
+      },
+      {
+        "file": "1000_チュートリアル\\tuto_event2.dat",
+        "line": 105,
+        "tag": "ev_tuto_2_3",
+        "parent": null
+      },
+      {
+        "file": "1000_チュートリアル\\tuto_event2.dat",
+        "line": 129,
+        "tag": "ev_tuto_2_4",
+        "parent": null
+      }
+    ],
+    "power": [
+      {
+        "file": "1000_チュートリアル\\tuto_scenario.dat",
+        "line": 1,
+        "tag": "po_tuto_1",
+        "parent": null
+      },
+      {
+        "file": "1000_チュートリアル\\tuto_scenario.dat",
+        "line": 23,
+        "tag": "po_tuto_2",
+        "parent": null
+      },
+      {
+        "file": "1000_チュートリアル\\tuto_scenario.dat",
+        "line": 44,
+        "tag": "po_tuto_3",
+        "parent": null
+      },
+      {
+        "file": "116_仮設ランダムイベント61-70\\randomev66_AddPower.dat",
+        "line": 283,
+        "tag": "Prandomev66",
+        "parent": null
+      },
+      {
+        "file": "3000_淫ドリームマッチ\\dr_power.dat",
+        "line": 1,
+        "tag": "pd0",
+        "parent": "p_t"
+      },
+      {
+        "file": "3000_淫ドリームマッチ\\dr_power.dat",
+        "line": 20,
+        "tag": "pd1",
+        "parent": "p_t"
+      }
+    ],
+    "spot": [
+      {
+        "file": "1000_チュートリアル\\tuto_scenario.dat",
+        "line": 13,
+        "tag": "sp_tuto_1",
+        "parent": null
+      },
+      {
+        "file": "1000_チュートリアル\\tuto_scenario.dat",
+        "line": 36,
+        "tag": "sp_tuto_2",
+        "parent": null
+      },
+      {
+        "file": "1000_チュートリアル\\tuto_scenario.dat",
+        "line": 59,
+        "tag": "sp_tuto_3",
+        "parent": null
+      },
+      {
+        "file": "116_仮設ランダムイベント61-70\\randomev61_70_spot_add.dat",
+        "line": 3,
+        "tag": "sp_randomev64_1",
+        "parent": "sp"
+      },
+      {
+        "file": "116_仮設ランダムイベント61-70\\randomev61_70_spot_add.dat",
+        "line": 15,
+        "tag": "sp_randomev64_2",
+        "parent": "sp"
+      },
+      {
+        "file": "116_仮設ランダムイベント61-70\\randomev61_70_spot_add.dat",
+        "line": 26,
+        "tag": "sp_randomev64_3",
+        "parent": "sp"
+      }
+    ],
+    "scenario": [
+      {
+        "file": "1000_チュートリアル\\tuto_scenario.dat",
+        "line": 67,
+        "tag": "tutorial",
+        "parent": null
+      },
+      {
+        "file": "3000_淫ドリームマッチ\\sc_dream.dat",
+        "line": 1,
+        "tag": "dream",
+        "parent": null
+      },
+      {
+        "file": "4000_AoW\\scenario_aow.dat",
+        "line": 1,
+        "tag": "sci_aow",
+        "parent": null
+      },
+      {
+        "file": "5000_ランダムシナリオ\\sc_rnd.dat",
+        "line": 1,
+        "tag": "rsc",
+        "parent": null
+      },
+      {
+        "file": "6000_スキルテスト\\0maptest.dat",
+        "line": 76,
+        "tag": "sci_mt",
+        "parent": null
+      },
+      {
+        "file": "6000_スキルテスト\\skilltest.dat",
+        "line": 957,
+        "tag": "sci_st",
+        "parent": null
+      }
+    ],
+    "skillset": [
+      {
+        "file": "101_キャラクリ\\chara_create_event.dat",
+        "line": 355,
+        "tag": "chara_class_basic",
+        "parent": null
+      },
+      {
+        "file": "101_キャラクリ\\chara_create_event.dat",
+        "line": 359,
+        "tag": "chara_class_sknm",
+        "parent": null
+      },
+      {
+        "file": "101_キャラクリ\\chara_create_event.dat",
+        "line": 363,
+        "tag": "chara_class_as",
+        "parent": null
+      },
+      {
+        "file": "101_キャラクリ\\chara_create_event.dat",
+        "line": 367,
+        "tag": "chara_class_li",
+        "parent": null
+      },
+      {
+        "file": "101_キャラクリ\\chara_create_event.dat",
+        "line": 371,
+        "tag": "chara_class_cv",
+        "parent": null
+      },
+      {
+        "file": "101_キャラクリ\\chara_create_event.dat",
+        "line": 375,
+        "tag": "chara_class_st",
+        "parent": null
+      }
+    ],
+    "class": [
+      {
+        "file": "101_キャラクリ\\chara_create_unit.dat",
+        "line": 35,
+        "tag": "c_you",
+        "parent": "base"
+      },
+      {
+        "file": "102_ランダムイベント\\randomev_skill&unit.dat",
+        "line": 283,
+        "tag": "c_syunga_rndm",
+        "parent": "a27b"
+      },
+      {
+        "file": "102_ランダムイベント\\randomev_skill&unit.dat",
+        "line": 294,
+        "tag": "c_syunga_rndm2",
+        "parent": "a27b2"
+      },
+      {
+        "file": "102_ランダムイベント\\randomev_skill&unit.dat",
+        "line": 305,
+        "tag": "c_syunga_rndm3",
+        "parent": "a27b3"
+      },
+      {
+        "file": "102_ランダムイベント\\randomev_tyakai.dat",
+        "line": 3166,
+        "tag": "random_tyakai_a",
+        "parent": null
+      },
+      {
+        "file": "102_ランダムイベント\\randomev_tyakai.dat",
+        "line": 3170,
+        "tag": "random_tyakai_b",
+        "parent": null
+      }
+    ],
+    "detail": [
+      {
+        "file": "101_キャラクリ\\chara_create_unit.dat",
+        "line": 134,
+        "tag": null,
+        "parent": null
+      },
+      {
+        "file": "10_ユニット\\B_2222_レイノアレフ.dat",
+        "line": 83,
+        "tag": null,
+        "parent": null
+      },
+      {
+        "file": "10_ユニット\\B_2525_町の小さなパン屋さんと化した二軍.dat",
+        "line": 87,
+        "tag": null,
+        "parent": null
+      },
+      {
+        "file": "10_ユニット\\B_5151_古代アステカ王国.dat",
+        "line": 161,
+        "tag": null,
+        "parent": null
+      },
+      {
+        "file": "10_ユニット\\B_525_神聖UNEI帝国.dat",
+        "line": 653,
+        "tag": null,
+        "parent": null
+      },
+      {
+        "file": "10_ユニット\\Detail_列伝.dat",
+        "line": 1,
+        "tag": null,
+        "parent": null
+      }
+    ],
+    "voice": [
+      {
+        "file": "10_ユニット\\B_23_リュージボス.dat",
+        "line": 583,
+        "tag": "sakenomiga0",
+        "parent": null
+      },
+      {
+        "file": "10_ユニット\\B_23_リュージボス.dat",
+        "line": 595,
+        "tag": "sakenomiga1",
+        "parent": null
+      },
+      {
+        "file": "10_ユニット\\B_23_リュージボス.dat",
+        "line": 615,
+        "tag": "sakenomiga2",
+        "parent": null
+      },
+      {
+        "file": "10_ユニット\\B_23_リュージボス.dat",
+        "line": 637,
+        "tag": "sakenomiga3",
+        "parent": null
+      },
+      {
+        "file": "10_ユニット\\B_23_リュージボス.dat",
+        "line": 667,
+        "tag": "sakenomiga4",
+        "parent": null
+      },
+      {
+        "file": "10_ユニット\\B_23_リュージボス.dat",
+        "line": 702,
+        "tag": "wknn0",
+        "parent": null
+      }
+    ],
+    "world": [
+      {
+        "file": "3000_淫ドリームマッチ\\ev_dream.dat",
+        "line": 1,
+        "tag": "wev_dream",
+        "parent": null
+      },
+      {
+        "file": "5000_ランダムシナリオ\\ev_rnd.dat",
+        "line": 1,
+        "tag": "wev_rsc",
+        "parent": null
+      },
+      {
+        "file": "8000_RTSシナリオ\\RTSscenario.dat",
+        "line": 536,
+        "tag": "rts",
+        "parent": null
+      }
+    ],
+    "workspace": [
+      {
+        "file": "5000_ランダムシナリオ\\pname_rnd.dat",
+        "line": 1,
+        "tag": null,
+        "parent": null
+      },
+      {
+        "file": "7000_その他シナリオ\\power_others.dat",
+        "line": 41,
+        "tag": null,
+        "parent": null
+      },
+      {
+        "file": "7000_その他シナリオ\\power_others.dat",
+        "line": 132,
+        "tag": null,
+        "parent": null
+      },
+      {
+        "file": "7000_その他シナリオ\\power_others.dat",
+        "line": 184,
+        "tag": null,
+        "parent": null
+      },
+      {
+        "file": "7000_その他シナリオ\\power_others.dat",
+        "line": 189,
+        "tag": null,
+        "parent": null
+      },
+      {
+        "file": "7000_その他シナリオ\\power_others.dat",
+        "line": 223,
+        "tag": null,
+        "parent": null
+      }
+    ],
+    "fight": [
+      {
+        "file": "8000_RTSシナリオ\\RTSscenario.dat",
+        "line": 613,
+        "tag": "rtsf",
+        "parent": null
+      }
+    ],
+    "attribute": [
+      {
+        "file": "attribute.dat",
+        "line": 1,
+        "tag": null,
+        "parent": null
+      }
+    ],
+    "context": [
+      {
+        "file": "context.dat",
+        "line": 1,
+        "tag": null,
+        "parent": null
+      }
+    ],
+    "movetype": [
+      {
+        "file": "movetype.dat",
+        "line": 1,
+        "tag": "normal",
+        "parent": null
+      },
+      {
+        "file": "movetype.dat",
+        "line": 8,
+        "tag": "hover",
+        "parent": null
+      },
+      {
+        "file": "movetype.dat",
+        "line": 15,
+        "tag": "kairu",
+        "parent": null
+      },
+      {
+        "file": "movetype.dat",
+        "line": 22,
+        "tag": "hyouzan",
+        "parent": null
+      },
+      {
+        "file": "movetype.dat",
+        "line": 29,
+        "tag": "shinobi",
+        "parent": null
+      },
+      {
+        "file": "movetype.dat",
+        "line": 36,
+        "tag": "moor",
+        "parent": null
+      }
+    ],
+    "race": [
+      {
+        "file": "race.dat",
+        "line": 1,
+        "tag": "hm",
+        "parent": null
+      },
+      {
+        "file": "race.dat",
+        "line": 10,
+        "tag": "r0_hm",
+        "parent": "hm"
+      },
+      {
+        "file": "race.dat",
+        "line": 19,
+        "tag": "r0_hm_build",
+        "parent": "r0_hm"
+      },
+      {
+        "file": "race.dat",
+        "line": 24,
+        "tag": "r10_hm",
+        "parent": "hm"
+      },
+      {
+        "file": "race.dat",
+        "line": 33,
+        "tag": "r1_co",
+        "parent": "hm"
+      },
+      {
+        "file": "race.dat",
+        "line": 42,
+        "tag": "r1_co_build",
+        "parent": "r1_co"
+      }
+    ],
+    "sound": [
+      {
+        "file": "sound.dat",
+        "line": 1,
+        "tag": null,
+        "parent": null
+      }
+    ]
+  }
+}

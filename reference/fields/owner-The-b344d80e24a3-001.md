@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-20"></a>
+## The + 0x20
+
+- [research/recovered/json_models1/reports/tests/E_OFFLINE_SYNC_20261029/T020_DIALOG_REGISTRY_BRANCH_CASES_20261028_1745.json 行 206](../../research/recovered/json_models1/reports/tests/E_OFFLINE_SYNC_20261029/T020_DIALOG_REGISTRY_BRANCH_CASES_20261028_1745.json?plain=1#L206-L206) — "The +0x20 field is not yet named or proven to be tree count.",
+  制約・訂正　Authored historical finite-case/model/receipt/inventory data; expected/PASS/native/READY labels are dated claims, not executed or independently validated now; all numeric/flag/ABI/gameplay meanings remain source-scoped; no native/runtime/Golden/READY/correctness/semantic promotion; linked targets not acquired
+
 <a id="field-38"></a>
 ## The + 0x38
 

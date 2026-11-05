@@ -31,6 +31,9 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 4175](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L4175-L4175) — - 0x551E50 が加算しない条件（先頭）: 技能の exp_per=off（Skill+0x2A8 が −123456.0）、actor+0x1D0（部隊）＝0、actor+0x18614≠0、context+0xC≠0（同じ攻撃で加算済み）。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+- [research/recovered/json_sources1/reports/data/B_T012_T013_ALLFUNC_HITCTX_EXP_EVIDENCE_20261023_1017.json 行 296](../../research/recovered/json_sources1/reports/data/B_T012_T013_ALLFUNC_HITCTX_EXP_EVIDENCE_20261023_1017.json?plain=1#L296-L296) — "new_delta": "Crossjoin of per-candidate hit-context +0xC reset and 0x551E50 once-per-context guard, alongside once-per-fanout MP debit and context+0xE notifica
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
 - [research/recovered/other_reports/T009_CONTEXT_MODEL.md 行 86](../../research/recovered/other_reports/T009_CONTEXT_MODEL.md?plain=1#L86-L86) — - neutral_max: effective spot_capacity (`scenario/context +0x0C`) をfallbackに使用。
   制約・訂正　Historical authored static claims only; no new native/runtime validation; referenced evidence omitted; Golden/READY unchanged
 
@@ -78,6 +81,9 @@
 
 - [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md 行 34](../../research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md?plain=1#L34-L34) — - 0x547A7Fのcontext+0x0E=0は通知条件にも関わる。即時レベルアップ判定と通知は同一ではない。
   制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
+
+- [research/recovered/json_sources1/reports/data/B_T012_T013_ALLFUNC_HITCTX_EXP_EVIDENCE_20261023_1017.json 行 296](../../research/recovered/json_sources1/reports/data/B_T012_T013_ALLFUNC_HITCTX_EXP_EVIDENCE_20261023_1017.json?plain=1#L296-L296) — "new_delta": "Crossjoin of per-candidate hit-context +0xC reset and 0x551E50 once-per-context guard, alongside once-per-fanout MP debit and context+0xE notifica
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
 
 <a id="field-10"></a>
 ## context + 0x10
@@ -354,11 +360,5 @@
 
 - [research/recovered/b_batch2/T013_GLOBAL65BD9E_QUOTA_QUARTER_WRITERS_NATIVE_20261101_01H.md 行 13](../../research/recovered/b_batch2/T013_GLOBAL65BD9E_QUOTA_QUARTER_WRITERS_NATIVE_20261101_01H.md?plain=1#L13-L13) — [GOLDEN REQUIRED] 原作無改変EXE、変更前DAT、同SAVE/MAP/input/seed/RNG/tick、quota_viewとquarter_viewの組合せ、context+0xE4=0/1、global flag0/1、matrix identity/nonidentity、画面点と境界ma
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
-
-- [research/recovered/b_batch9/data/T013_COORD_TRANSFORM_GATE_OUTPUT_ABI_NATIVE_20261101_00H.md 行 14](../../research/recovered/b_batch9/data/T013_COORD_TRANSFORM_GATE_OUTPUT_ABI_NATIVE_20261101_00H.md?plain=1#L14-L14) — [KB_CANDIDATE] 本ID B/T013、VA 0x4C1690/0x4C16A4/0x4C16B5/0x4C1700/0x4C1735/0x4C1755、CALL 0x4C1880→0x4C1690 / 0x4C1714・0x4C1725→0x5D1B80、offset context+0xE4/+0xDC
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/b_batch9/data/T013_COORD_TRANSFORM_GATE_OUTPUT_ABI_NATIVE_20261101_00H.md 行 16](../../research/recovered/b_batch9/data/T013_COORD_TRANSFORM_GATE_OUTPUT_ABI_NATIVE_20261101_00H.md?plain=1#L16-L16) — [GOLDEN REQUIRED] 無改変原作と20倍化前DAT、同一SAVE/MAP/Unit/input/RNG/tickでglobal0x65BD9Eの0/1・context+0xE4の0/1、identity/nonidentity D3DX行列、負座標・rounding境界、margin100/200/400
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

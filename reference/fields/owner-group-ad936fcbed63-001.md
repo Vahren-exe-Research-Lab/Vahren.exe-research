@@ -25,6 +25,9 @@
 - [research/recovered/b_reports/T011_T024_GROUP34_PROXIMITY_RATIO_100TICK_NATIVE_20261101_10H.sanitized.md 行 17](../../research/recovered/b_reports/T011_T024_GROUP34_PROXIMITY_RATIO_100TICK_NATIVE_20261101_10H.sanitized.md?plain=1#L17-L17) — 関数入口 `VA 0x569360`（原作PEのE8入口実体、Ghidra `functions/0056/00569360.c`、ファイルSHA-256 `309A88BD46955E9873936F91AF03731C50156A1B2476FAAA18EEE9F5696AAF1C`）。グループを第1引数、比率do
   制約・訂正　Privacy derivative: one personal research-root prefix replaced with <research-root> plus explicit recovery annotation; full technical content retained; reversible byte reconstruction matches source SHA; historical STATIC/INFERRED/VERIFY only; no linked payload read or Golden/READY promotion
 
+- [research/recovered/json_sources1/reports/data/B_T012_T013_PERSON_POOL_LIFECYCLE_EVIDENCE_20261023_1215.json 行 311](../../research/recovered/json_sources1/reports/data/B_T012_T013_PERSON_POOL_LIFECYCLE_EVIDENCE_20261023_1215.json?plain=1#L311-L311) — "Do not infer immediate Person+0x48 erasure from group+0x0C/+0x10 or manager+0x64 mutators.",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
 <a id="field-1c"></a>
 ## group + 0x1C
 
@@ -342,8 +345,5 @@
 
 - [research/recovered/b_batch3/T013_MODE2_ALT_DUALFLAG_AND_MODE3_NATIVE_20261030_15H.md 行 21](../../research/recovered/b_batch3/T013_MODE2_ALT_DUALFLAG_AND_MODE3_NATIVE_20261030_15H.md?plain=1#L21-L21) — Golden DESIGNED_NOT_RUN: original unmodified EXE+pre-x20 DAT, same SAVE/MAP/input/RNG; vary mode2 scratch, group Unit flags, +0x70/+0x4C sentinel, local accumul
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_batch9/data/T013_MODE2_PRIMARY_UNIT_MODE3_GATE_NATIVE_20261030_14H.md 行 11](../../research/recovered/b_batch9/data/T013_MODE2_PRIMARY_UNIT_MODE3_GATE_NATIVE_20261030_14H.md?plain=1#L11-L11) — 0x44BD9A MOV [EBX+0xB8],ESI。非NULLなら0x44BDAD CALL0x565780、0x44BDBB CALL0x5158E0へ、NULLなら0x44BDC0へ。group+0xB8はこの経路の選択Unit参照と静的推定。+0x1867Cの論理名と下位の実副作用はVERIFY。
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

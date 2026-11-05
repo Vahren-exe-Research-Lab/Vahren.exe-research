@@ -1,0 +1,475 @@
+{
+  "id": "B-OFFLINE-20261022-2016-T012-T013-MISSILE-COLLISION-VCALL-01",
+  "state": "OFFLINE-UNSYNCED/STATIC-ASM/STATIC-SAVED-PSEUDOC/INFERRED/VERIFY/NOT READY",
+  "origin": {
+    "offline_zip": "HAKUSHIN067_AI_OFFLINE_PACK_20261021.zip",
+    "zip_sha256": "911E5E37A3F9BD5B36F929AF94B0D1E2CD1CD5CF34E3E2F16C8FC800ABF5F7C2",
+    "exe": "Vahren(2).exe",
+    "exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+    "sqlite_sha256": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF",
+    "crc_pass": true,
+    "sqlite_quick_check": "ok",
+    "library_root": "/迫真戦記再開発プロジェクト/data/",
+    "pc_connected": false,
+    "pc_error": "INVALID_ARGUMENT: McpServerError: Session terminated",
+    "latest_pc_master_checked": false
+  },
+  "vtable_plus_54": {
+    "Missile": {
+      "+0x54": "0x0054DB60"
+    },
+    "SimpleMissile": {
+      "+0x54": "0x00552E60"
+    }
+  },
+  "opcodes": {
+    "0x00515470": {
+      "expected": "51",
+      "actual": "51",
+      "pass": true
+    },
+    "0x00515477": {
+      "expected": "83b93401000000",
+      "actual": "83b93401000000",
+      "pass": true
+    },
+    "0x00515480": {
+      "expected": "33c0",
+      "actual": "33c0",
+      "pass": true
+    },
+    "0x00515489": {
+      "expected": "e88218fdff",
+      "actual": "e88218fdff",
+      "pass": true
+    },
+    "0x0054C97D": {
+      "expected": "e8ee8afcff",
+      "actual": "e8ee8afcff",
+      "pass": true
+    },
+    "0x0054C98A": {
+      "expected": "8b4254",
+      "actual": "8b4254",
+      "pass": true
+    },
+    "0x0054C990": {
+      "expected": "ffd0",
+      "actual": "ffd0",
+      "pass": true
+    },
+    "0x0054C992": {
+      "expected": "8b13",
+      "actual": "8b13",
+      "pass": true
+    },
+    "0x0054C994": {
+      "expected": "8b4254",
+      "actual": "8b4254",
+      "pass": true
+    },
+    "0x0054C99A": {
+      "expected": "ffd0",
+      "actual": "ffd0",
+      "pass": true
+    },
+    "0x0055268A": {
+      "expected": "e8e12dfcff",
+      "actual": "e8e12dfcff",
+      "pass": true
+    },
+    "0x00552697": {
+      "expected": "8b4254",
+      "actual": "8b4254",
+      "pass": true
+    },
+    "0x0055269D": {
+      "expected": "ffd0",
+      "actual": "ffd0",
+      "pass": true
+    },
+    "0x005526A2": {
+      "expected": "8b4254",
+      "actual": "8b4254",
+      "pass": true
+    },
+    "0x005526A8": {
+      "expected": "ffd0",
+      "actual": "ffd0",
+      "pass": true
+    },
+    "0x004E6F85": {
+      "expected": "e8d6e4f2ff",
+      "actual": "e8d6e4f2ff",
+      "pass": true
+    },
+    "0x004E6F8A": {
+      "expected": "3918",
+      "actual": "3918",
+      "pass": true
+    },
+    "0x004E7047": {
+      "expected": "3941fc",
+      "actual": "3941fc",
+      "pass": true
+    },
+    "0x004E704C": {
+      "expected": "395904",
+      "actual": "395904",
+      "pass": true
+    },
+    "0x004E7055": {
+      "expected": "3901",
+      "actual": "3901",
+      "pass": true
+    },
+    "0x004E705D": {
+      "expected": "394108",
+      "actual": "394108",
+      "pass": true
+    },
+    "0x004E7060": {
+      "expected": "7f5a",
+      "actual": "7f5a",
+      "pass": true
+    },
+    "0x004E70BC": {
+      "expected": "8bc6",
+      "actual": "8bc6",
+      "pass": true
+    },
+    "0x0054DB81": {
+      "expected": "3b91c8010000",
+      "actual": "3b91c8010000",
+      "pass": true
+    },
+    "0x0054DB87": {
+      "expected": "0f8f01010000",
+      "actual": "0f8f01010000",
+      "pass": true
+    },
+    "0x0054DB8F": {
+      "expected": "399878010000",
+      "actual": "399878010000",
+      "pass": true
+    },
+    "0x0054DBCD": {
+      "expected": "e8ae260300",
+      "actual": "e8ae260300",
+      "pass": true
+    },
+    "0x0054DBE5": {
+      "expected": "391d54cd6500",
+      "actual": "391d54cd6500",
+      "pass": true
+    },
+    "0x0054DC22": {
+      "expected": "e859260300",
+      "actual": "e859260300",
+      "pass": true
+    },
+    "0x0054DC63": {
+      "expected": "68e8a16200",
+      "actual": "68e8a16200",
+      "pass": true
+    },
+    "0x0054DC7F": {
+      "expected": "e8cc38f9ff",
+      "actual": "e8cc38f9ff",
+      "pass": true
+    },
+    "0x0054DC87": {
+      "expected": "c686f800000001",
+      "actual": "c686f800000001",
+      "pass": true
+    },
+    "0x00552E7F": {
+      "expected": "3b8ac8010000",
+      "actual": "3b8ac8010000",
+      "pass": true
+    },
+    "0x00552E85": {
+      "expected": "7f55",
+      "actual": "7f55",
+      "pass": true
+    },
+    "0x00552E87": {
+      "expected": "83b87801000000",
+      "actual": "83b87801000000",
+      "pass": true
+    },
+    "0x00552ECD": {
+      "expected": "e8ee50ffff",
+      "actual": "e8ee50ffff",
+      "pass": true
+    },
+    "0x00552ED5": {
+      "expected": "c686f800000001",
+      "actual": "c686f800000001",
+      "pass": true
+    },
+    "0x0054C930": {
+      "expected": "80bbc401000000",
+      "actual": "80bbc401000000",
+      "pass": true
+    },
+    "0x0054C93D": {
+      "expected": "80bbf800000000",
+      "actual": "80bbf800000000",
+      "pass": true
+    },
+    "0x00552648": {
+      "expected": "80bdf800000000",
+      "actual": "80bdf800000000",
+      "pass": true
+    }
+  },
+  "opcode_pass_count": 40,
+  "indexed_direct_calls": [
+    {
+      "site": "0x00515489",
+      "caller": "0x00515470",
+      "callee": "0x004E6D10",
+      "opcode": "e88218fdff",
+      "ref_type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "site": "0x0054C97D",
+      "caller": "0x0054BA00",
+      "callee": "0x00515470",
+      "opcode": "e8ee8afcff",
+      "ref_type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "site": "0x0055268A",
+      "caller": "0x00552030",
+      "callee": "0x00515470",
+      "opcode": "e8e12dfcff",
+      "ref_type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "site": "0x0054DBCD",
+      "caller": "0x0054DB60",
+      "callee": "0x00580280",
+      "opcode": "e8ae260300",
+      "ref_type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "site": "0x0054DC22",
+      "caller": "0x0054DB60",
+      "callee": "0x00580280",
+      "opcode": "e859260300",
+      "ref_type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "site": "0x0054DC7F",
+      "caller": "0x0054DB60",
+      "callee": "0x004E1550",
+      "opcode": "e8cc38f9ff",
+      "ref_type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "site": "0x00552ECD",
+      "caller": "0x00552E60",
+      "callee": "0x00547FC0",
+      "opcode": "e8ee50ffff",
+      "ref_type": "UNCONDITIONAL_CALL"
+    }
+  ],
+  "indexed_function_hashes": [
+    {
+      "va": "0x00515470",
+      "name": "FUN_00515470",
+      "size": 32,
+      "decomp_sha256": "362049055799E7673D357D345AE6E86F645B10F8047496F91A4000B347507B72"
+    },
+    {
+      "va": "0x004E6D10",
+      "name": "FUN_004e6d10",
+      "size": 964,
+      "decomp_sha256": "5DBEB99400933BF5B97D65BA614D10A08B390064DFCCDCC056B73A28118CE5D7"
+    },
+    {
+      "va": "0x0054DB60",
+      "name": "FUN_0054db60",
+      "size": 311,
+      "decomp_sha256": "12F92FCCF0E8B4A79CAF1CF6E21409C58F97DDCEE3011F2636367FE38079415E"
+    },
+    {
+      "va": "0x00552E60",
+      "name": "FUN_00552e60",
+      "size": 131,
+      "decomp_sha256": "A88344A4009E191E2E6D2814609EF39F54EB1036F10B2AE4D6D54538471C6E6B"
+    },
+    {
+      "va": "0x0054BA00",
+      "name": "FUN_0054ba00",
+      "size": 6772,
+      "decomp_sha256": "831FA65C3A3BD3531DDC96159841435D5E1FACAB513E803ED0C7D34B46F7241C"
+    },
+    {
+      "va": "0x00552030",
+      "name": "FUN_00552030",
+      "size": 3621,
+      "decomp_sha256": "5E8B52DA647706A8267641FCA6F24E2CB4CF57905A6A42A32D427C196E03E808"
+    },
+    {
+      "va": "0x00599BD0",
+      "name": "FUN_00599bd0",
+      "size": 24124,
+      "decomp_sha256": "94F69BED55F2E76978B831CCF1179B94987DE2C655B7B861B4E8B49A99588C64"
+    },
+    {
+      "va": "0x0046FCE0",
+      "name": "FUN_0046fce0",
+      "size": 2150,
+      "decomp_sha256": "8B28D36D944E3BC720194C09D54C04F87E0E35FDE5BFE58A564B6CABBF8FB5D6"
+    },
+    {
+      "va": "0x004E1550",
+      "name": "FUN_004e1550",
+      "size": 386,
+      "decomp_sha256": "78E1DE36F1E002AB724F543C5209444A4C481B75E06D595E04338E78244DEB7B"
+    },
+    {
+      "va": "0x00547FC0",
+      "name": "FUN_00547fc0",
+      "size": 8584,
+      "decomp_sha256": "1E0E420AA7884E28A35775EEE140F1E705F1F45A90F2D0E0C80D1975AF32AD36"
+    }
+  ],
+  "branch_models_synthetic_only": [
+    {
+      "class": "Missile",
+      "priority_pass": false,
+      "field_178_nonzero": false,
+      "global_65CD54_nonzero": false,
+      "operation": "NONE",
+      "set_f8": false
+    },
+    {
+      "class": "Missile",
+      "priority_pass": false,
+      "field_178_nonzero": false,
+      "global_65CD54_nonzero": true,
+      "operation": "NONE",
+      "set_f8": false
+    },
+    {
+      "class": "Missile",
+      "priority_pass": false,
+      "field_178_nonzero": true,
+      "global_65CD54_nonzero": false,
+      "operation": "NONE",
+      "set_f8": false
+    },
+    {
+      "class": "Missile",
+      "priority_pass": false,
+      "field_178_nonzero": true,
+      "global_65CD54_nonzero": true,
+      "operation": "NONE",
+      "set_f8": false
+    },
+    {
+      "class": "Missile",
+      "priority_pass": true,
+      "field_178_nonzero": false,
+      "global_65CD54_nonzero": false,
+      "operation": "FUN_004E1550_MissileFlash",
+      "set_f8": true
+    },
+    {
+      "class": "Missile",
+      "priority_pass": true,
+      "field_178_nonzero": false,
+      "global_65CD54_nonzero": true,
+      "operation": "FUN_00580280",
+      "set_f8": true
+    },
+    {
+      "class": "Missile",
+      "priority_pass": true,
+      "field_178_nonzero": true,
+      "global_65CD54_nonzero": false,
+      "operation": "FUN_00580280",
+      "set_f8": true
+    },
+    {
+      "class": "Missile",
+      "priority_pass": true,
+      "field_178_nonzero": true,
+      "global_65CD54_nonzero": true,
+      "operation": "FUN_00580280",
+      "set_f8": true
+    },
+    {
+      "class": "SimpleMissile",
+      "priority_pass": false,
+      "field_178_nonzero": false,
+      "global_65CD54_nonzero": false,
+      "operation": "NONE",
+      "set_f8": false
+    },
+    {
+      "class": "SimpleMissile",
+      "priority_pass": false,
+      "field_178_nonzero": false,
+      "global_65CD54_nonzero": true,
+      "operation": "NONE",
+      "set_f8": false
+    },
+    {
+      "class": "SimpleMissile",
+      "priority_pass": false,
+      "field_178_nonzero": true,
+      "global_65CD54_nonzero": false,
+      "operation": "NONE",
+      "set_f8": false
+    },
+    {
+      "class": "SimpleMissile",
+      "priority_pass": false,
+      "field_178_nonzero": true,
+      "global_65CD54_nonzero": true,
+      "operation": "NONE",
+      "set_f8": false
+    },
+    {
+      "class": "SimpleMissile",
+      "priority_pass": true,
+      "field_178_nonzero": false,
+      "global_65CD54_nonzero": false,
+      "operation": "NONE",
+      "set_f8": true
+    },
+    {
+      "class": "SimpleMissile",
+      "priority_pass": true,
+      "field_178_nonzero": false,
+      "global_65CD54_nonzero": true,
+      "operation": "NONE",
+      "set_f8": true
+    },
+    {
+      "class": "SimpleMissile",
+      "priority_pass": true,
+      "field_178_nonzero": true,
+      "global_65CD54_nonzero": false,
+      "operation": "FUN_00547FC0",
+      "set_f8": true
+    },
+    {
+      "class": "SimpleMissile",
+      "priority_pass": true,
+      "field_178_nonzero": true,
+      "global_65CD54_nonzero": true,
+      "operation": "FUN_00547FC0",
+      "set_f8": true
+    }
+  ],
+  "golden_pass": 0,
+  "strict_match": 0,
+  "ready": 0,
+  "master_integration": 0
+}

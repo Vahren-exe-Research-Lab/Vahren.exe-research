@@ -1,0 +1,460 @@
+{
+  "reloadMenu": {
+    "zero": 0,
+    "nonzero": 528,
+    "samples": [
+      [
+        "a_default\\script\\1000_チュートリアル\\tuto_event2.dat",
+        73,
+        "on"
+      ],
+      [
+        "a_default\\script\\1000_チュートリアル\\tuto_event3.dat",
+        78,
+        "on"
+      ],
+      [
+        "a_default\\script\\40_内政\\CC_bidai_and_sake_robo.dat",
+        40,
+        "on"
+      ],
+      [
+        "a_default\\script\\40_内政\\CC_bidai_and_sake_robo.dat",
+        72,
+        "on"
+      ],
+      [
+        "a_default\\script\\40_内政\\CC_bidai_and_sake_robo.dat",
+        104,
+        "on"
+      ],
+      [
+        "a_default\\script\\40_内政\\CC_bidai_and_sake_robo.dat",
+        136,
+        "on"
+      ],
+      [
+        "a_default\\script\\40_内政\\CC_bidai_and_sake_robo.dat",
+        168,
+        "on"
+      ],
+      [
+        "a_default\\script\\40_内政\\CC_bidai_and_sake_robo.dat",
+        200,
+        "on"
+      ],
+      [
+        "a_default\\script\\40_内政\\CC_bidai_and_sake_robo.dat",
+        232,
+        "on"
+      ],
+      [
+        "a_default\\script\\40_内政\\CC_bidai_and_sake_robo.dat",
+        304,
+        "on"
+      ],
+      [
+        "a_default\\script\\40_内政\\CC_bidai_and_sake_robo.dat",
+        336,
+        "on"
+      ],
+      [
+        "a_default\\script\\40_内政\\CC_bidai_and_sake_robo.dat",
+        368,
+        "on"
+      ]
+    ]
+  },
+  "font": {
+    "zero": 55,
+    "nonzero": 55,
+    "samples": [
+      [
+        "a_default\\script\\100_イベント汎用\\event_battle.dat",
+        452,
+        "AR行楷書体H, 26, 2"
+      ],
+      [
+        "a_default\\script\\100_イベント汎用\\event_battle.dat",
+        458,
+        ""
+      ],
+      [
+        "a_default\\script\\2000_勢力ストーリー\\po22_battle.dat",
+        427,
+        "AR行楷書体H, 26, 2"
+      ],
+      [
+        "a_default\\script\\2000_勢力ストーリー\\po22_battle.dat",
+        429,
+        ""
+      ],
+      [
+        "a_default\\script\\2001_イベント_ボス\\EB_5151_古代アステカ王国.dat",
+        275,
+        "AR行楷書体H, 26, 2"
+      ],
+      [
+        "a_default\\script\\2001_イベント_ボス\\EB_5151_古代アステカ王国.dat",
+        291,
+        ""
+      ],
+      [
+        "a_default\\script\\2001_イベント_ボス\\EB_5151_古代アステカ王国.dat",
+        308,
+        "AR行楷書体H, 26, 2"
+      ],
+      [
+        "a_default\\script\\2001_イベント_ボス\\EB_5151_古代アステカ王国.dat",
+        323,
+        ""
+      ],
+      [
+        "a_default\\script\\2001_イベント_ボス\\EB_5151_古代アステカ王国.dat",
+        474,
+        "AR行楷書体H, 26, 2"
+      ],
+      [
+        "a_default\\script\\2001_イベント_ボス\\EB_5151_古代アステカ王国.dat",
+        478,
+        ""
+      ],
+      [
+        "a_default\\script\\2001_イベント_ボス\\EB_5151_古代アステカ王国.dat",
+        482,
+        "AR行楷書体H, 26, 2"
+      ],
+      [
+        "a_default\\script\\2001_イベント_ボス\\EB_5151_古代アステカ王国.dat",
+        488,
+        ""
+      ]
+    ]
+  },
+  "fontc": {
+    "zero": 1,
+    "nonzero": 1,
+    "samples": [
+      [
+        "a_default\\script\\2023_イベント_リュージ騎士団\\event_23_RPG.dat",
+        11762,
+        "255,0,0"
+      ],
+      [
+        "a_default\\script\\2023_イベント_リュージ騎士団\\event_23_RPG.dat",
+        11766,
+        ""
+      ]
+    ]
+  },
+  "select": {
+    "zero": 0,
+    "nonzero": 1088,
+    "samples": [
+      [
+        "a_default\\script\\100_イベント汎用\\event_00_共通イベント.dat",
+        856,
+        "select,敵勢力の侵攻範囲を一定区域に制限しますか？$$（「決定」でそうする、「取消」で制限しない）"
+      ],
+      [
+        "a_default\\script\\100_イベント汎用\\event_00_共通イベント.dat",
+        1036,
+        "select,イベント：正義の超人　サイバーＺ1号$$（「決定」で閲覧、「取消」でスキップ）"
+      ],
+      [
+        "a_default\\script\\100_イベント汎用\\event_00_共通イベント.dat",
+        1079,
+        "select,イベント：悪の超人　サイバーＺ2号$$（「決定」で閲覧、「取消」でスキップ）"
+      ],
+      [
+        "a_default\\script\\100_イベント汎用\\event_00_共通イベント.dat",
+        1159,
+        "select,イベント：ライバル登場！　サイバーＺ2号$$（「決定」で閲覧、「取消」でスキップ）"
+      ],
+      [
+        "a_default\\script\\100_イベント汎用\\event_00_共通イベント.dat",
+        1195,
+        "select,イベント：ライバル登場！　サイバーＺ1号$$（「決定」で閲覧、「取消」でスキップ）"
+      ],
+      [
+        "a_default\\script\\100_イベント汎用\\event_00_共通イベント.dat",
+        1235,
+        "select,イベント：材料酸化（さんげ）$$（「決定」で閲覧、「取消」でスキップ）"
+      ],
+      [
+        "a_default\\script\\100_イベント汎用\\event_00_共通イベント.dat",
+        1319,
+        "select,イベント：マリナーズ再起！$$（「決定」で閲覧、「取消」でスキップ）"
+      ],
+      [
+        "a_default\\script\\100_イベント汎用\\event_00_共通イベント.dat",
+        1386,
+        "select,イベント：復活！面白味研究会$$（「決定」で閲覧、「取消」でスキップ）"
+      ],
+      [
+        "a_default\\script\\100_イベント汎用\\event_00_共通イベント.dat",
+        1484,
+        "select,イベント：三銃士再集結$$（「決定」で閲覧、「取消」でスキップ）"
+      ],
+      [
+        "a_default\\script\\100_イベント汎用\\event_00_共通イベント.dat",
+        1541,
+        "select,イベント：三銃士再集結$$（「決定」で閲覧、「取消」でスキップ）"
+      ],
+      [
+        "a_default\\script\\100_イベント汎用\\event_01_共通イベント２.dat",
+        14,
+        "select,ＯＰ（全勢力共通部分）：世の中荒れ放題！$$（「決定」で閲覧、「取消」でスキップ）"
+      ],
+      [
+        "a_default\\script\\100_イベント汎用\\event_01_共通イベント２.dat",
+        348,
+        "select,領内にいる全ての放浪人材に雇用が繋がるようにしますか？"
+      ]
+    ]
+  },
+  "choice": {
+    "zero": 0,
+    "nonzero": 337,
+    "samples": [
+      [
+        "a_default\\script\\1000_チュートリアル\\tuto_event3.dat",
+        101,
+        "kantan_setumei,簡単な説明だけ聞く（推奨）,詳しい説明を聞く"
+      ],
+      [
+        "a_default\\script\\100_イベント汎用\\event_00_共通イベント.dat",
+        514,
+        "kaesu,かえす,かえさない"
+      ],
+      [
+        "a_default\\script\\100_イベント汎用\\event_01_共通イベント２.dat",
+        177,
+        "easy_m,イージーモード（補正なし）,ベリーイージーモード（一般兵の雇用レベル＋９）"
+      ],
+      [
+        "a_default\\script\\101_キャラクリ\\chara_create_event.dat",
+        11,
+        "youorastk,ゆうすけでプレイ,TDNエリザベートでプレイ"
+      ],
+      [
+        "a_default\\script\\101_キャラクリ\\chara_create_event.dat",
+        29,
+        "kyarakuri,性別：&@yousex&,種族：&@yourace&,クラス：&@youclass&,ゲームスタート！"
+      ],
+      [
+        "a_default\\script\\101_キャラクリ\\chara_create_event.dat",
+        32,
+        "kyarasex,不明,男性,女性"
+      ],
+      [
+        "a_default\\script\\101_キャラクリ\\chara_create_event.dat",
+        57,
+        "kyararace,ホモビ,薔薇,クッキー☆,イースター☆,レスリング,ノンケ,ホモガキ,東方,神,正体不明,進化獣目,古アステカ系キュピ"
+      ],
+      [
+        "a_default\\script\\101_キャラクリ\\chara_create_event.dat",
+        109,
+        "kyaraclass0,帝国兵科,サケノミ,突撃兵,戦列兵,騎兵,射撃兵,砲兵,魔法兵,支援兵,戦車,スペシャル"
+      ],
+      [
+        "a_default\\script\\102_ランダムイベント\\randomev0-10.dat",
+        13,
+        "choice, 林檎は即刻中止せよ！, まるで桃みたいだぁ【消費：&cmo4&ゼニマ】, ケツでしょ。【消費：内政P5】, これは…幻のブドウだ！【条件：ONDISK所属】"
+      ],
+      [
+        "a_default\\script\\102_ランダムイベント\\randomev0-10.dat",
+        73,
+        "choice, 存置して？,なら（年休）1…か2ぐらいですね 【消費：内政P&cpo2&】,（人権を）あげるわあなたに 【消費：3000ゼニマ】,お前はもうこっから出れないんだよ！【条件：特定勢力】"
+      ],
+      [
+        "a_default\\script\\102_ランダムイベント\\randomev0-10.dat",
+        146,
+        "choice, なぜ女なんだ, 資金を捻出し支援を約束する【消費：&cmo1&ゼニマ】, 資金に加え、新作を全領土に公開しよう【消費：&cmo4&ゼニマ】, 私にもっといい考えがある【消費：内政P&cpo2&】"
+      ],
+      [
+        "a_default\\script\\102_ランダムイベント\\randomev0-10.dat",
+        234,
+        "choice, 関わりたくねえなあ, 真ん中来いよ！（テスト開始）【消費：&cmopinegaki1&ゼニマ】, 俺はその言葉に応える【消費：&cmopinegaki2&ゼニマ】, むしろどっかに売る【消費：内政P&cpo2&】"
+      ]
+    ]
+  },
+  "erase": {
+    "zero": 42502,
+    "nonzero": 3,
+    "samples": [
+      [
+        "a_default\\script\\event_world.dat",
+        47,
+        ""
+      ],
+      [
+        "a_default\\script\\1000_チュートリアル\\tuto_event1.dat",
+        108,
+        ""
+      ],
+      [
+        "a_default\\script\\1000_チュートリアル\\tuto_event1.dat",
+        111,
+        ""
+      ],
+      [
+        "a_default\\script\\1000_チュートリアル\\tuto_event1.dat",
+        113,
+        ""
+      ],
+      [
+        "a_default\\script\\1000_チュートリアル\\tuto_event1.dat",
+        116,
+        ""
+      ],
+      [
+        "a_default\\script\\1000_チュートリアル\\tuto_event1.dat",
+        257,
+        ""
+      ],
+      [
+        "a_default\\script\\1000_チュートリアル\\tuto_event1.dat",
+        259,
+        ""
+      ],
+      [
+        "a_default\\script\\1000_チュートリアル\\tuto_event1.dat",
+        261,
+        ""
+      ],
+      [
+        "a_default\\script\\1000_チュートリアル\\tuto_event1.dat",
+        263,
+        ""
+      ],
+      [
+        "a_default\\script\\1000_チュートリアル\\tuto_event1.dat",
+        265,
+        ""
+      ],
+      [
+        "a_default\\script\\1000_チュートリアル\\tuto_event1.dat",
+        273,
+        ""
+      ],
+      [
+        "a_default\\script\\1000_チュートリアル\\tuto_event1.dat",
+        275,
+        ""
+      ]
+    ]
+  },
+  "title": {
+    "zero": 0,
+    "nonzero": 8,
+    "samples": [
+      [
+        "a_default\\script\\1000_チュートリアル\\tuto_event1.dat",
+        254,
+        "～電脳空間～,-50"
+      ],
+      [
+        "a_default\\script\\2000_勢力ストーリー\\po18_event.dat",
+        593,
+        "ウルトラマン拉致,-40"
+      ],
+      [
+        "a_default\\script\\2000_勢力ストーリー\\po3_event.dat",
+        1523,
+        "ウルトラマン拉致,-40"
+      ],
+      [
+        "a_default\\script\\2023_イベント_リュージ騎士団\\po23_event_10_B.dat",
+        984,
+        "ＵＤＫ……。　　　　　　,-50"
+      ],
+      [
+        "a_default\\script\\2023_イベント_リュージ騎士団\\po23_event_10_B.dat",
+        2600,
+        "ＵＤＫ……。　　　　　　,-50"
+      ],
+      [
+        "a_default\\script\\50_その他新システム\\qa_001.dat",
+        49,
+        "～電脳空間～,-50"
+      ],
+      [
+        "a_default\\script\\50_その他新システム\\qa_001.dat",
+        201,
+        "～電脳空間～,-50"
+      ],
+      [
+        "a_default\\script\\50_その他新システム\\qa_001.dat",
+        319,
+        "～電脳空間～,-50"
+      ]
+    ]
+  },
+  "title2": {
+    "zero": 0,
+    "nonzero": 77,
+    "samples": [
+      [
+        "a_default\\script\\2000_勢力ストーリー\\po1_event.dat",
+        2015,
+        "明日もまた　こうして夜の星空を見るだろう,-30"
+      ],
+      [
+        "a_default\\script\\2000_勢力ストーリー\\po1_event.dat",
+        2017,
+        "明日もまた　こうして夜の星空を見るだろう,-30"
+      ],
+      [
+        "a_default\\script\\2000_勢力ストーリー\\po1_event.dat",
+        2018,
+        "そのたび　私はあなたを思い浮かべる,-50"
+      ],
+      [
+        "a_default\\script\\2000_勢力ストーリー\\po1_event.dat",
+        2020,
+        "明日もまた　こうして夜の星空を見るだろう,-30"
+      ],
+      [
+        "a_default\\script\\2000_勢力ストーリー\\po1_event.dat",
+        2021,
+        "そのたび　私はあなたを思い浮かべる,-50"
+      ],
+      [
+        "a_default\\script\\2000_勢力ストーリー\\po1_event.dat",
+        2022,
+        "この夜空に輝く星のような　あなたを,-70"
+      ],
+      [
+        "a_default\\script\\2000_勢力ストーリー\\po31_event.dat",
+        61,
+        "主人公は、\"警備員\"という役割を持っている。,-50"
+      ],
+      [
+        "a_default\\script\\2000_勢力ストーリー\\po31_event.dat",
+        63,
+        "警備員は、ある重要な任務を任されている。,-50"
+      ],
+      [
+        "a_default\\script\\2000_勢力ストーリー\\po31_event.dat",
+        65,
+        "警備員は、ある神聖な任務を任されている。,-50"
+      ],
+      [
+        "a_default\\script\\2000_勢力ストーリー\\po31_event.dat",
+        67,
+        "警備員を導き、その任務を達成せよ。,-50"
+      ],
+      [
+        "a_default\\script\\2023_イベント_リュージ騎士団\\event_23_RPG.dat",
+        8854,
+        "帝歴前72年　UNEI王国の大敵NSOKが頓死,-30"
+      ],
+      [
+        "a_default\\script\\2023_イベント_リュージ騎士団\\event_23_RPG.dat",
+        8855,
+        "帝歴前69年　ジョースター家が帰順を誓う,-50"
+      ]
+    ]
+  }
+}

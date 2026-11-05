@@ -1,0 +1,2935 @@
+{
+  "research_id": "E-AUDIT-20261101-00H-T020-T013-COORD-GATE-RECT-01",
+  "source_pe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "source_b_sha256": "022EFBC353968A50C1C6B91473279042BA9E139BB759C9D21417CC7DE8C4951C",
+  "states": {
+    "route_predicates": 160,
+    "raw_api_pass": 120,
+    "d3dx_not_run": 40,
+    "original_gameplay_dynamic": 0,
+    "actual_golden_pass": 0,
+    "strict_match": 0
+  },
+  "cases": [
+    {
+      "id": "COORD-001",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 100,
+      "input": [
+        -900,
+        -900
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -900,
+        -900
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-002",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 100,
+      "input": [
+        -600,
+        -600
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -600,
+        -600
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-003",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 100,
+      "input": [
+        -400,
+        -400
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -400,
+        -400
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-004",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 100,
+      "input": [
+        -1,
+        0
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -1,
+        0
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-005",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 100,
+      "input": [
+        0,
+        0
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        0,
+        0
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-006",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 100,
+      "input": [
+        399,
+        399
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        399,
+        399
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-007",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 100,
+      "input": [
+        400,
+        400
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        400,
+        400
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-008",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 100,
+      "input": [
+        600,
+        600
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        600,
+        600
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-009",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 100,
+      "input": [
+        900,
+        900
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        900,
+        900
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-010",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 100,
+      "input": [
+        1000,
+        1000
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        1000,
+        1000
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-011",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 200,
+      "input": [
+        -900,
+        -900
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -900,
+        -900
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-012",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 200,
+      "input": [
+        -600,
+        -600
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -600,
+        -600
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-013",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 200,
+      "input": [
+        -400,
+        -400
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -400,
+        -400
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-014",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 200,
+      "input": [
+        -1,
+        0
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -1,
+        0
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-015",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 200,
+      "input": [
+        0,
+        0
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        0,
+        0
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-016",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 200,
+      "input": [
+        399,
+        399
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        399,
+        399
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-017",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 200,
+      "input": [
+        400,
+        400
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        400,
+        400
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-018",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 200,
+      "input": [
+        600,
+        600
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        600,
+        600
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-019",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 200,
+      "input": [
+        900,
+        900
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        900,
+        900
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-020",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 200,
+      "input": [
+        1000,
+        1000
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        1000,
+        1000
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-021",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 400,
+      "input": [
+        -900,
+        -900
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -900,
+        -900
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-022",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 400,
+      "input": [
+        -600,
+        -600
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -600,
+        -600
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-023",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 400,
+      "input": [
+        -400,
+        -400
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -400,
+        -400
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-024",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 400,
+      "input": [
+        -1,
+        0
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -1,
+        0
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-025",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 400,
+      "input": [
+        0,
+        0
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        0,
+        0
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-026",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 400,
+      "input": [
+        399,
+        399
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        399,
+        399
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-027",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 400,
+      "input": [
+        400,
+        400
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        400,
+        400
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-028",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 400,
+      "input": [
+        600,
+        600
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        600,
+        600
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-029",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 400,
+      "input": [
+        900,
+        900
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        900,
+        900
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-030",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 400,
+      "input": [
+        1000,
+        1000
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        1000,
+        1000
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-031",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 600,
+      "input": [
+        -900,
+        -900
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -900,
+        -900
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-032",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 600,
+      "input": [
+        -600,
+        -600
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -600,
+        -600
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-033",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 600,
+      "input": [
+        -400,
+        -400
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -400,
+        -400
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-034",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 600,
+      "input": [
+        -1,
+        0
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -1,
+        0
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-035",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 600,
+      "input": [
+        0,
+        0
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        0,
+        0
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-036",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 600,
+      "input": [
+        399,
+        399
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        399,
+        399
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-037",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 600,
+      "input": [
+        400,
+        400
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        400,
+        400
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-038",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 600,
+      "input": [
+        600,
+        600
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        600,
+        600
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-039",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 600,
+      "input": [
+        900,
+        900
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        900,
+        900
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-040",
+      "global_65BD9E": 0,
+      "context_E4": 0,
+      "margin": 600,
+      "input": [
+        1000,
+        1000
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        1000,
+        1000
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-041",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 100,
+      "input": [
+        -900,
+        -900
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -900,
+        -900
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-042",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 100,
+      "input": [
+        -600,
+        -600
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -600,
+        -600
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-043",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 100,
+      "input": [
+        -400,
+        -400
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -400,
+        -400
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-044",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 100,
+      "input": [
+        -1,
+        0
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -1,
+        0
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-045",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 100,
+      "input": [
+        0,
+        0
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        0,
+        0
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-046",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 100,
+      "input": [
+        399,
+        399
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        399,
+        399
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-047",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 100,
+      "input": [
+        400,
+        400
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        400,
+        400
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-048",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 100,
+      "input": [
+        600,
+        600
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        600,
+        600
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-049",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 100,
+      "input": [
+        900,
+        900
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        900,
+        900
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-050",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 100,
+      "input": [
+        1000,
+        1000
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        1000,
+        1000
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-051",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 200,
+      "input": [
+        -900,
+        -900
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -900,
+        -900
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-052",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 200,
+      "input": [
+        -600,
+        -600
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -600,
+        -600
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-053",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 200,
+      "input": [
+        -400,
+        -400
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -400,
+        -400
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-054",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 200,
+      "input": [
+        -1,
+        0
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -1,
+        0
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-055",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 200,
+      "input": [
+        0,
+        0
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        0,
+        0
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-056",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 200,
+      "input": [
+        399,
+        399
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        399,
+        399
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-057",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 200,
+      "input": [
+        400,
+        400
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        400,
+        400
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-058",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 200,
+      "input": [
+        600,
+        600
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        600,
+        600
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-059",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 200,
+      "input": [
+        900,
+        900
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        900,
+        900
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-060",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 200,
+      "input": [
+        1000,
+        1000
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        1000,
+        1000
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-061",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 400,
+      "input": [
+        -900,
+        -900
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -900,
+        -900
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-062",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 400,
+      "input": [
+        -600,
+        -600
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -600,
+        -600
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-063",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 400,
+      "input": [
+        -400,
+        -400
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -400,
+        -400
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-064",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 400,
+      "input": [
+        -1,
+        0
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -1,
+        0
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-065",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 400,
+      "input": [
+        0,
+        0
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        0,
+        0
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-066",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 400,
+      "input": [
+        399,
+        399
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        399,
+        399
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-067",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 400,
+      "input": [
+        400,
+        400
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        400,
+        400
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-068",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 400,
+      "input": [
+        600,
+        600
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        600,
+        600
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-069",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 400,
+      "input": [
+        900,
+        900
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        900,
+        900
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-070",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 400,
+      "input": [
+        1000,
+        1000
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        1000,
+        1000
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-071",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 600,
+      "input": [
+        -900,
+        -900
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -900,
+        -900
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-072",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 600,
+      "input": [
+        -600,
+        -600
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -600,
+        -600
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-073",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 600,
+      "input": [
+        -400,
+        -400
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -400,
+        -400
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-074",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 600,
+      "input": [
+        -1,
+        0
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -1,
+        0
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-075",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 600,
+      "input": [
+        0,
+        0
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        0,
+        0
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-076",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 600,
+      "input": [
+        399,
+        399
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        399,
+        399
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-077",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 600,
+      "input": [
+        400,
+        400
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        400,
+        400
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-078",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 600,
+      "input": [
+        600,
+        600
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        600,
+        600
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-079",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 600,
+      "input": [
+        900,
+        900
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        900,
+        900
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-080",
+      "global_65BD9E": 0,
+      "context_E4": 1,
+      "margin": 600,
+      "input": [
+        1000,
+        1000
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        1000,
+        1000
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-081",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 100,
+      "input": [
+        -900,
+        -900
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-082",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 100,
+      "input": [
+        -600,
+        -600
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-083",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 100,
+      "input": [
+        -400,
+        -400
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-084",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 100,
+      "input": [
+        -1,
+        0
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-085",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 100,
+      "input": [
+        0,
+        0
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-086",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 100,
+      "input": [
+        399,
+        399
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-087",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 100,
+      "input": [
+        400,
+        400
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-088",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 100,
+      "input": [
+        600,
+        600
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-089",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 100,
+      "input": [
+        900,
+        900
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-090",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 100,
+      "input": [
+        1000,
+        1000
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-091",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 200,
+      "input": [
+        -900,
+        -900
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-092",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 200,
+      "input": [
+        -600,
+        -600
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-093",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 200,
+      "input": [
+        -400,
+        -400
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-094",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 200,
+      "input": [
+        -1,
+        0
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-095",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 200,
+      "input": [
+        0,
+        0
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-096",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 200,
+      "input": [
+        399,
+        399
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-097",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 200,
+      "input": [
+        400,
+        400
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-098",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 200,
+      "input": [
+        600,
+        600
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-099",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 200,
+      "input": [
+        900,
+        900
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-100",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 200,
+      "input": [
+        1000,
+        1000
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-101",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 400,
+      "input": [
+        -900,
+        -900
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-102",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 400,
+      "input": [
+        -600,
+        -600
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-103",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 400,
+      "input": [
+        -400,
+        -400
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-104",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 400,
+      "input": [
+        -1,
+        0
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-105",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 400,
+      "input": [
+        0,
+        0
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-106",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 400,
+      "input": [
+        399,
+        399
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-107",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 400,
+      "input": [
+        400,
+        400
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-108",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 400,
+      "input": [
+        600,
+        600
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-109",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 400,
+      "input": [
+        900,
+        900
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-110",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 400,
+      "input": [
+        1000,
+        1000
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-111",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 600,
+      "input": [
+        -900,
+        -900
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-112",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 600,
+      "input": [
+        -600,
+        -600
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-113",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 600,
+      "input": [
+        -400,
+        -400
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-114",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 600,
+      "input": [
+        -1,
+        0
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-115",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 600,
+      "input": [
+        0,
+        0
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-116",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 600,
+      "input": [
+        399,
+        399
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-117",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 600,
+      "input": [
+        400,
+        400
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-118",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 600,
+      "input": [
+        600,
+        600
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-119",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 600,
+      "input": [
+        900,
+        900
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-120",
+      "global_65BD9E": 1,
+      "context_E4": 0,
+      "margin": 600,
+      "input": [
+        1000,
+        1000
+      ],
+      "route": "D3DX_REQUIRED",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": null,
+      "rect_result": null,
+      "verdict": "TRANSFORM_NOT_RUN"
+    },
+    {
+      "id": "COORD-121",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 100,
+      "input": [
+        -900,
+        -900
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -900,
+        -900
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-122",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 100,
+      "input": [
+        -600,
+        -600
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -600,
+        -600
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-123",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 100,
+      "input": [
+        -400,
+        -400
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -400,
+        -400
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-124",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 100,
+      "input": [
+        -1,
+        0
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -1,
+        0
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-125",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 100,
+      "input": [
+        0,
+        0
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        0,
+        0
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-126",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 100,
+      "input": [
+        399,
+        399
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        399,
+        399
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-127",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 100,
+      "input": [
+        400,
+        400
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        400,
+        400
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-128",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 100,
+      "input": [
+        600,
+        600
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        600,
+        600
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-129",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 100,
+      "input": [
+        900,
+        900
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        900,
+        900
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-130",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 100,
+      "input": [
+        1000,
+        1000
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        1000,
+        1000
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-131",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 200,
+      "input": [
+        -900,
+        -900
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -900,
+        -900
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-132",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 200,
+      "input": [
+        -600,
+        -600
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -600,
+        -600
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-133",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 200,
+      "input": [
+        -400,
+        -400
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -400,
+        -400
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-134",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 200,
+      "input": [
+        -1,
+        0
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -1,
+        0
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-135",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 200,
+      "input": [
+        0,
+        0
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        0,
+        0
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-136",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 200,
+      "input": [
+        399,
+        399
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        399,
+        399
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-137",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 200,
+      "input": [
+        400,
+        400
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        400,
+        400
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-138",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 200,
+      "input": [
+        600,
+        600
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        600,
+        600
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-139",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 200,
+      "input": [
+        900,
+        900
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        900,
+        900
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-140",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 200,
+      "input": [
+        1000,
+        1000
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        1000,
+        1000
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-141",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 400,
+      "input": [
+        -900,
+        -900
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -900,
+        -900
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-142",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 400,
+      "input": [
+        -600,
+        -600
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -600,
+        -600
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-143",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 400,
+      "input": [
+        -400,
+        -400
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -400,
+        -400
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-144",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 400,
+      "input": [
+        -1,
+        0
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -1,
+        0
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-145",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 400,
+      "input": [
+        0,
+        0
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        0,
+        0
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-146",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 400,
+      "input": [
+        399,
+        399
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        399,
+        399
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-147",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 400,
+      "input": [
+        400,
+        400
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        400,
+        400
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-148",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 400,
+      "input": [
+        600,
+        600
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        600,
+        600
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-149",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 400,
+      "input": [
+        900,
+        900
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        900,
+        900
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-150",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 400,
+      "input": [
+        1000,
+        1000
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        1000,
+        1000
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-151",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 600,
+      "input": [
+        -900,
+        -900
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -900,
+        -900
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-152",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 600,
+      "input": [
+        -600,
+        -600
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -600,
+        -600
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-153",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 600,
+      "input": [
+        -400,
+        -400
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -400,
+        -400
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-154",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 600,
+      "input": [
+        -1,
+        0
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        -1,
+        0
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-155",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 600,
+      "input": [
+        0,
+        0
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        0,
+        0
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-156",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 600,
+      "input": [
+        399,
+        399
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        399,
+        399
+      ],
+      "rect_result": true,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-157",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 600,
+      "input": [
+        400,
+        400
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        400,
+        400
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-158",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 600,
+      "input": [
+        600,
+        600
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        600,
+        600
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-159",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 600,
+      "input": [
+        900,
+        900
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        900,
+        900
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    },
+    {
+      "id": "COORD-160",
+      "global_65BD9E": 1,
+      "context_E4": 1,
+      "margin": 600,
+      "input": [
+        1000,
+        1000
+      ],
+      "route": "RAW_PASSTHROUGH",
+      "native_output_observed": null,
+      "gameplay_observed": false,
+      "expected_point": [
+        1000,
+        1000
+      ],
+      "rect_result": false,
+      "verdict": "SYNTHETIC_RAW_API_PASS"
+    }
+  ]
+}

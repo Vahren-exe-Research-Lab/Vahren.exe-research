@@ -1,0 +1,178 @@
+{
+  "research_id": "B-OFFLINE-20261024-14H-T012-SCALE-INIT-PARSER-COPY-X87-01",
+  "task": "T012",
+  "timestamp_jst": "2026-10-24 14H",
+  "source": "2026-10-21 offline ZIP; verified read-only SQLite/Ghidra pseudoc; no EXE in ZIP",
+  "connection_error": "INVALID_ARGUMENT: McpServerError: Session terminated",
+  "connection_class": "CONNECTION",
+  "source_exe_sha256_from_manifest_only": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "checks": {
+    "zip_members": 34,
+    "zip_crc_all_pass": true,
+    "executable_in_archive": false,
+    "sqlite_quick_check": "ok",
+    "sqlite_sha256": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF",
+    "sqlite_manifest_match": true,
+    "archive_sha256": "911E5E37A3F9BD5B36F929AF94B0D1E2CD1CD5CF34E3E2F16C8FC800ABF5F7C2"
+  },
+  "functions": {
+    "0x00599600": {
+      "name": "FUN_00599600",
+      "size_bytes": 759,
+      "pseudoc_sha256": "BCF1D4BAD5E01DF11ECB6E1FC6EDD4FA107C8EFC013345BC1722D9D0FB1BC2ED",
+      "pseudoc_text_sha256": "BCF1D4BAD5E01DF11ECB6E1FC6EDD4FA107C8EFC013345BC1722D9D0FB1BC2ED",
+      "source_file": "full_pseudoc_20261020/functions/0059/00599600.c"
+    },
+    "0x00599900": {
+      "name": "FUN_00599900",
+      "size_bytes": 720,
+      "pseudoc_sha256": "3B3D888B6D260C2F7586AFEE7874B84B11A6ED328E0D9B518010B707169C4A91",
+      "pseudoc_text_sha256": "3B3D888B6D260C2F7586AFEE7874B84B11A6ED328E0D9B518010B707169C4A91",
+      "source_file": "full_pseudoc_20261020/functions/0059/00599900.c"
+    },
+    "0x00599BD0": {
+      "name": "FUN_00599bd0",
+      "size_bytes": 24124,
+      "pseudoc_sha256": "94F69BED55F2E76978B831CCF1179B94987DE2C655B7B861B4E8B49A99588C64",
+      "pseudoc_text_sha256": "94F69BED55F2E76978B831CCF1179B94987DE2C655B7B861B4E8B49A99588C64",
+      "source_file": "full_pseudoc_20261020/functions/0059/00599BD0.c"
+    },
+    "0x0046FCE0": {
+      "name": "FUN_0046fce0",
+      "size_bytes": 2150,
+      "pseudoc_sha256": "8B28D36D944E3BC720194C09D54C04F87E0E35FDE5BFE58A564B6CABBF8FB5D6",
+      "pseudoc_text_sha256": "8B28D36D944E3BC720194C09D54C04F87E0E35FDE5BFE58A564B6CABBF8FB5D6",
+      "source_file": "full_pseudoc_20261020/functions/0046/0046FCE0.c"
+    },
+    "0x0046FB00": {
+      "name": "FUN_0046fb00",
+      "size_bytes": 471,
+      "pseudoc_sha256": "E79C937C6E922C1E3A595343EC7A560B0A787992FFE83677E0FC5A1B6E481923",
+      "pseudoc_text_sha256": "E79C937C6E922C1E3A595343EC7A560B0A787992FFE83677E0FC5A1B6E481923",
+      "source_file": "full_pseudoc_20261020/functions/0046/0046FB00.c"
+    },
+    "0x004678A0": {
+      "name": "FUN_004678a0",
+      "size_bytes": 413,
+      "pseudoc_sha256": "FA02099D785A38B1584FC1F0200CD1ADC6F813BEFA9E7D436B74113C58AACA8F",
+      "pseudoc_text_sha256": "FA02099D785A38B1584FC1F0200CD1ADC6F813BEFA9E7D436B74113C58AACA8F",
+      "source_file": "full_pseudoc_20261020/functions/0046/004678A0.c"
+    },
+    "0x00550E70": {
+      "name": "FUN_00550e70",
+      "size_bytes": 1566,
+      "pseudoc_sha256": "4F0ADBF3458EA25BAF3EE64A8D3E38DBDBFC2E282E167FAD57E5DCAD20299869",
+      "pseudoc_text_sha256": "4F0ADBF3458EA25BAF3EE64A8D3E38DBDBFC2E282E167FAD57E5DCAD20299869",
+      "source_file": "full_pseudoc_20261020/functions/0055/00550E70.c"
+    }
+  },
+  "call_sites": {
+    "0x00599600→0x00599900": "0x00599860",
+    "0x004678A0→0x00599BD0": "0x004679BF",
+    "0x0046FB00→0x0046FCE0": "0x0046FC13",
+    "0x0046FB00→0x00599BD0": "0x0046FC3E"
+  },
+  "findings": [
+    {
+      "scope": "0x00599600 -> 0x00599900",
+      "offsets": [
+        "+0x27C",
+        "+0x280",
+        "+0x288"
+      ],
+      "evidence": "0x00599900 pseudoc *(undefined8*)(unaff_ESI+0x280)=0; +0x288=0x3FF0000000000000; +0x27C=0",
+      "classification": "STATIC-GHIDRA"
+    },
+    {
+      "scope": "0x00599BD0",
+      "offsets": [
+        "+0x280"
+      ],
+      "evidence": "(double)iStack_1608 * _DAT_0063b070; 0x59CDA3/0x59CDBC in saved old native research",
+      "classification": "STATIC-GHIDRA + PRIOR-SAVED-NATIVE; constant bytes not present in ZIP"
+    },
+    {
+      "scope": "0x0046FB00",
+      "sites": [
+        "0x0046FC13",
+        "0x0046FC3E"
+      ],
+      "evidence": "copy via 0x0046FCE0 then parse via 0x00599BD0 within loop",
+      "classification": "STATIC-CALLGRAPH + STATIC-GHIDRA"
+    },
+    {
+      "scope": "0x00550E70",
+      "offsets": [
+        "+0x280"
+      ],
+      "evidence": "prior native saved 0x005510F1/0x00551102 compares coefficient to zero; NaN branch is ISA theoretical only",
+      "classification": "PRIOR-SAVED-NATIVE / VERIFY"
+    }
+  ],
+  "constant_assumption": "0x0063B070 = 0.01 from prior B native §32; unable to re-hash raw constant bytes because ZIP has no EXE",
+  "numeric_fixtures": [
+    {
+      "int32": -2147483648,
+      "double_coefficient_if_0_01": -21474836.48,
+      "finite": true,
+      "is_zero": false,
+      "naN": false
+    },
+    {
+      "int32": -100,
+      "double_coefficient_if_0_01": -1.0,
+      "finite": true,
+      "is_zero": false,
+      "naN": false
+    },
+    {
+      "int32": -1,
+      "double_coefficient_if_0_01": -0.01,
+      "finite": true,
+      "is_zero": false,
+      "naN": false
+    },
+    {
+      "int32": 0,
+      "double_coefficient_if_0_01": 0.0,
+      "finite": true,
+      "is_zero": true,
+      "naN": false
+    },
+    {
+      "int32": 1,
+      "double_coefficient_if_0_01": 0.01,
+      "finite": true,
+      "is_zero": false,
+      "naN": false
+    },
+    {
+      "int32": 100,
+      "double_coefficient_if_0_01": 1.0,
+      "finite": true,
+      "is_zero": false,
+      "naN": false
+    },
+    {
+      "int32": 2147483647,
+      "double_coefficient_if_0_01": 21474836.47,
+      "finite": true,
+      "is_zero": false,
+      "naN": false
+    }
+  ],
+  "zero_nan_conclusion": "For a valid signed 32-bit int and finite 0.01, this parser store is always finite and exactly zero iff integer is zero. Does not prove no alternative writer or memory corruption.",
+  "not_new": [
+    "T012 §32 already identified parser scale +0x280",
+    "13H already solved x87 JP truth table",
+    "13H old report is locally saved but Library not yet synced"
+  ],
+  "exclusions": [
+    "0x005710C0..0x00571500",
+    "0x0058021E..0x00580340"
+  ],
+  "status": "OFFLINE-UNSYNCED/STATIC/VERIFY/NOT READY",
+  "gameplay_golden_pass": 0,
+  "strict_match": 0,
+  "new_READY": 0
+}

@@ -1,0 +1,323 @@
+{
+  "counts": {
+    "gwrite": {
+      "2": 441,
+      "3": 22
+    },
+    "gread": {
+      "2": 440
+    }
+  },
+  "examples": {
+    "gwrite": {
+      "2": [
+        {
+          "file": "a_default\\script\\event_world.dat",
+          "line": 42,
+          "expr": "gwrite(tdnastk_clear2,9)"
+        },
+        {
+          "file": "a_default\\script\\100_イベント汎用\\event_samson.dat",
+          "line": 152,
+          "expr": "gwrite(samsongekiha,9)"
+        },
+        {
+          "file": "a_default\\script\\100_イベント汎用\\event_samson.dat",
+          "line": 153,
+          "expr": "gwrite(show@po32,1)"
+        },
+        {
+          "file": "a_default\\script\\100_イベント汎用\\event_samson.dat",
+          "line": 154,
+          "expr": "gwrite(show@poo32,1)"
+        },
+        {
+          "file": "a_default\\script\\100_イベント汎用\\event_samson.dat",
+          "line": 155,
+          "expr": "gwrite(show@png,1)"
+        },
+        {
+          "file": "a_default\\script\\100_イベント汎用\\event_samson.dat",
+          "line": 156,
+          "expr": "gwrite(show@yurujiro,1)"
+        },
+        {
+          "file": "a_default\\script\\100_イベント汎用\\event_samson.dat",
+          "line": 157,
+          "expr": "gwrite(show@shimada,1)"
+        },
+        {
+          "file": "a_default\\script\\100_イベント汎用\\event_samson.dat",
+          "line": 158,
+          "expr": "gwrite(show@pinga,1)"
+        },
+        {
+          "file": "a_default\\script\\100_イベント汎用\\event_samson.dat",
+          "line": 159,
+          "expr": "gwrite(show@oyajiisan,1)"
+        },
+        {
+          "file": "a_default\\script\\100_イベント汎用\\event_samson.dat",
+          "line": 160,
+          "expr": "gwrite(show@kachop,1)"
+        },
+        {
+          "file": "a_default\\script\\102_ランダムイベント\\randomev21-30.dat",
+          "line": 42,
+          "expr": "gwrite(randomev21gread,1)"
+        },
+        {
+          "file": "a_default\\script\\102_ランダムイベント\\randomev21-30.dat",
+          "line": 99,
+          "expr": "gwrite(randomev22gread,1)"
+        },
+        {
+          "file": "a_default\\script\\102_ランダムイベント\\randomev21-30.dat",
+          "line": 166,
+          "expr": "gwrite(randomev23gread,1)"
+        },
+        {
+          "file": "a_default\\script\\102_ランダムイベント\\randomev21-30.dat",
+          "line": 215,
+          "expr": "gwrite(randomev24gread,1)"
+        },
+        {
+          "file": "a_default\\script\\102_ランダムイベント\\randomev21-30.dat",
+          "line": 275,
+          "expr": "gwrite(randomev25gread,1)"
+        },
+        {
+          "file": "a_default\\script\\102_ランダムイベント\\randomev21-30.dat",
+          "line": 344,
+          "expr": "gwrite(randomev26gread,1)"
+        },
+        {
+          "file": "a_default\\script\\102_ランダムイベント\\randomev21-30.dat",
+          "line": 405,
+          "expr": "gwrite(randomev27gread,1)"
+        },
+        {
+          "file": "a_default\\script\\102_ランダムイベント\\randomev21-30.dat",
+          "line": 473,
+          "expr": "gwrite(randomev28gread,1)"
+        },
+        {
+          "file": "a_default\\script\\102_ランダムイベント\\randomev21-30.dat",
+          "line": 537,
+          "expr": "gwrite(randomev29gread,1)"
+        },
+        {
+          "file": "a_default\\script\\2000_勢力ストーリー\\po10_event.dat",
+          "line": 387,
+          "expr": "gwrite(po10_clear,9)"
+        }
+      ],
+      "3": [
+        {
+          "file": "a_default\\script\\2000_勢力ストーリー\\po14_event.dat",
+          "line": 3723,
+          "expr": "gwrite(mark@po14,1,clearsww.png)"
+        },
+        {
+          "file": "a_default\\script\\2000_勢力ストーリー\\po14_システム部分.dat",
+          "line": 808,
+          "expr": "gwrite(mark@psr,1,psrikisugi.png)"
+        },
+        {
+          "file": "a_default\\script\\2000_勢力ストーリー\\po1_event.dat",
+          "line": 1556,
+          "expr": "gwrite(mark@po1,1,clearudk.png)"
+        },
+        {
+          "file": "a_default\\script\\2000_勢力ストーリー\\po1_event.dat",
+          "line": 1560,
+          "expr": "gwrite(mark@ri,1,clearri.png)"
+        },
+        {
+          "file": "a_default\\script\\2000_勢力ストーリー\\po22_event.dat",
+          "line": 4259,
+          "expr": "gwrite(mark@po22,1,clearhsi.png)"
+        },
+        {
+          "file": "a_default\\script\\2000_勢力ストーリー\\po25_event.dat",
+          "line": 10861,
+          "expr": "gwrite(mark@psr,1,psrikisugi.png)"
+        },
+        {
+          "file": "a_default\\script\\2000_勢力ストーリー\\po25_event.dat",
+          "line": 11169,
+          "expr": "gwrite(mark@po25,1,clearnkdk.png)"
+        },
+        {
+          "file": "a_default\\script\\2000_勢力ストーリー\\po2_event.dat",
+          "line": 2480,
+          "expr": "gwrite(mark@po2,1,clearkiss.png)"
+        },
+        {
+          "file": "a_default\\script\\2000_勢力ストーリー\\po5_event.dat",
+          "line": 4588,
+          "expr": "gwrite(mark@po5,1,clearmztis.png)"
+        },
+        {
+          "file": "a_default\\script\\2000_勢力ストーリー\\po5_event.dat",
+          "line": 4591,
+          "expr": "gwrite(mark@mz,1,clearpkmn.png)"
+        },
+        {
+          "file": "a_default\\script\\2001_イベント_ボス\\EB_5151_古代アステカ王国.dat",
+          "line": 563,
+          "expr": "gwrite(mark@tdn,1,cleartdn.png)"
+        },
+        {
+          "file": "a_default\\script\\2001_イベント_ボス\\EB_5151_古代アステカ王国.dat",
+          "line": 568,
+          "expr": "gwrite(mark@astk,1,clearastk.png)"
+        },
+        {
+          "file": "a_default\\script\\2001_イベント_ボス\\event_51_ボス死亡時.dat",
+          "line": 346,
+          "expr": "gwrite(mark@po11,1,clearsik.png)"
+        },
+        {
+          "file": "a_default\\script\\2001_イベント_ボス\\event_51_ボス死亡時.dat",
+          "line": 349,
+          "expr": "gwrite(mark@ymns,1,clearsikanal.png)"
+        },
+        {
+          "file": "a_default\\script\\2001_イベント_ボス\\event_51_ボス死亡時.dat",
+          "line": 388,
+          "expr": "gwrite(mark@po26,1,eightprince.png)"
+        },
+        {
+          "file": "a_default\\script\\2023_イベント_リュージ騎士団\\po23_event_11_B.dat",
+          "line": 105,
+          "expr": "gwrite(mark@biim,1,biimikisugi.png)"
+        },
+        {
+          "file": "a_default\\script\\2023_イベント_リュージ騎士団\\po23_event_18_C_google_drive_is_god.dat",
+          "line": 371,
+          "expr": "gwrite(mark@tanaka,1,tanakaikisugi.png)"
+        },
+        {
+          "file": "a_default\\script\\2023_イベント_リュージ騎士団\\po23_event_19_ED_C.dat",
+          "line": 111,
+          "expr": "gwrite(mark@po23,1,clearryuji.png)"
+        },
+        {
+          "file": "a_default\\script\\2026_イベント_旧版クッキー☆原理主義党\\po26_event_11.dat",
+          "line": 68,
+          "expr": "gwrite(mark@po26,1,cleargerup.png)"
+        },
+        {
+          "file": "a_default\\script\\2026_イベント_旧版クッキー☆原理主義党\\po26_event_8.dat",
+          "line": 62,
+          "expr": "gwrite(mark@po26,1,cleargerug.png)"
+        }
+      ]
+    },
+    "gread": {
+      "2": [
+        {
+          "file": "a_default\\script\\100_イベント汎用\\event_01_共通イベント２.dat",
+          "line": 71,
+          "expr": "gread(po1_clear,po1_cleared)"
+        },
+        {
+          "file": "a_default\\script\\100_イベント汎用\\event_01_共通イベント２.dat",
+          "line": 72,
+          "expr": "gread(po2_clear,po2_cleared)"
+        },
+        {
+          "file": "a_default\\script\\100_イベント汎用\\event_01_共通イベント２.dat",
+          "line": 73,
+          "expr": "gread(po3_clear,po3_cleared)"
+        },
+        {
+          "file": "a_default\\script\\100_イベント汎用\\event_01_共通イベント２.dat",
+          "line": 74,
+          "expr": "gread(po4_clear,po4_cleared)"
+        },
+        {
+          "file": "a_default\\script\\100_イベント汎用\\event_01_共通イベント２.dat",
+          "line": 75,
+          "expr": "gread(po5_clear2,po5_cleared)"
+        },
+        {
+          "file": "a_default\\script\\100_イベント汎用\\event_01_共通イベント２.dat",
+          "line": 76,
+          "expr": "gread(po6_clear,po6_cleared)"
+        },
+        {
+          "file": "a_default\\script\\100_イベント汎用\\event_01_共通イベント２.dat",
+          "line": 77,
+          "expr": "gread(po7_clear,po7_cleared)"
+        },
+        {
+          "file": "a_default\\script\\100_イベント汎用\\event_01_共通イベント２.dat",
+          "line": 78,
+          "expr": "gread(po8_clear,po8_cleared)"
+        },
+        {
+          "file": "a_default\\script\\100_イベント汎用\\event_01_共通イベント２.dat",
+          "line": 79,
+          "expr": "gread(po9_clear,po9_cleared)"
+        },
+        {
+          "file": "a_default\\script\\100_イベント汎用\\event_01_共通イベント２.dat",
+          "line": 80,
+          "expr": "gread(po10_clear,po10_cleared)"
+        },
+        {
+          "file": "a_default\\script\\100_イベント汎用\\event_01_共通イベント２.dat",
+          "line": 81,
+          "expr": "gread(po11_clear,po11_cleared)"
+        },
+        {
+          "file": "a_default\\script\\100_イベント汎用\\event_01_共通イベント２.dat",
+          "line": 82,
+          "expr": "gread(po12_clear,po12_cleared)"
+        },
+        {
+          "file": "a_default\\script\\100_イベント汎用\\event_01_共通イベント２.dat",
+          "line": 83,
+          "expr": "gread(po13_clear,po13_cleared)"
+        },
+        {
+          "file": "a_default\\script\\100_イベント汎用\\event_01_共通イベント２.dat",
+          "line": 84,
+          "expr": "gread(po14_clear,po14_cleared)"
+        },
+        {
+          "file": "a_default\\script\\100_イベント汎用\\event_01_共通イベント２.dat",
+          "line": 85,
+          "expr": "gread(po16_clear,po16_cleared)"
+        },
+        {
+          "file": "a_default\\script\\100_イベント汎用\\event_01_共通イベント２.dat",
+          "line": 86,
+          "expr": "gread(po17_clear,po17_cleared)"
+        },
+        {
+          "file": "a_default\\script\\100_イベント汎用\\event_01_共通イベント２.dat",
+          "line": 87,
+          "expr": "gread(po18_clear,po18_cleared)"
+        },
+        {
+          "file": "a_default\\script\\100_イベント汎用\\event_01_共通イベント２.dat",
+          "line": 88,
+          "expr": "gread(po19_clear,po19_cleared)"
+        },
+        {
+          "file": "a_default\\script\\100_イベント汎用\\event_01_共通イベント２.dat",
+          "line": 89,
+          "expr": "gread(po20_clear,po20_cleared)"
+        },
+        {
+          "file": "a_default\\script\\100_イベント汎用\\event_01_共通イベント２.dat",
+          "line": 90,
+          "expr": "gread(po21_clear,po21_cleared)"
+        }
+      ]
+    }
+  }
+}

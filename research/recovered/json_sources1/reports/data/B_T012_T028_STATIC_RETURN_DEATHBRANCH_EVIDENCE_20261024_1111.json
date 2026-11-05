@@ -1,0 +1,241 @@
+{
+  "research_id": "B-OFFLINE-20261024-1111-T012-T028-STATIC-RETURN-DEATHBRANCH-01",
+  "run_time_jst": "2026-10-24 11:11+09:00",
+  "pc_connection": "CONNECTION_ERROR: MCP session terminated; latest PC state not read",
+  "local_attempt_tool": "Desktop Commander Local Compact read_multiple_files of MASTER, protocol, B HANDOFF",
+  "pc_latest_master_checked": false,
+  "pc_written": false,
+  "pc_readback": false,
+  "offline_zip_sha256": "911E5E37A3F9BD5B36F929AF94B0D1E2CD1CD5CF34E3E2F16C8FC800ABF5F7C2",
+  "offline_zip_entries": 34,
+  "offline_zip_crc": "PASS",
+  "original_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "sqlite_sha256": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF",
+  "sqlite_quick_check": "ok",
+  "snapshot_date": "2026-10-21",
+  "origin": "Library ZIP and Vahren.exe read-only",
+  "functions": {
+    "0x00544790": {
+      "entry_va": "0x00544790",
+      "name": "FUN_00544790",
+      "size_bytes": 1395,
+      "ghidra_pseudoc_sha256": "6E8673F8A5A104E87D0AB3B58625E2DABB7B0EBD56633BF6C19069F4CF689997"
+    },
+    "0x00578370": {
+      "entry_va": "0x00578370",
+      "name": "FUN_00578370",
+      "size_bytes": 2034,
+      "ghidra_pseudoc_sha256": "1C6630B2505F9A9C720E2FB980DD070C410582D6DB74EE32E00402BDEA81F051"
+    },
+    "0x0055ABA0": {
+      "entry_va": "0x0055ABA0",
+      "name": "FUN_0055aba0",
+      "size_bytes": 475,
+      "ghidra_pseudoc_sha256": "8A087ADE9ED33360A304AA4E1B55441F00E1B7A9A0E8022B7995FDE269C3F1ED"
+    },
+    "0x0055B060": {
+      "entry_va": "0x0055B060",
+      "name": "FUN_0055b060",
+      "size_bytes": 223,
+      "ghidra_pseudoc_sha256": "1371DA09748938A4F277FC374D3AEB7B32D3761330BAB9CEAAB6EB7C00091F28"
+    },
+    "0x0055A000": {
+      "entry_va": "0x0055A000",
+      "name": "FUN_0055a000",
+      "size_bytes": 295,
+      "ghidra_pseudoc_sha256": "B98B5249A808CBE22E3AC5423855D3144B3CB5B5FF64E48555F0C520B3A55066"
+    },
+    "0x00550E70": {
+      "entry_va": "0x00550E70",
+      "name": "FUN_00550e70",
+      "size_bytes": 1566,
+      "ghidra_pseudoc_sha256": "4F0ADBF3458EA25BAF3EE64A8D3E38DBDBFC2E282E167FAD57E5DCAD20299869"
+    }
+  },
+  "pe_windows": [
+    {
+      "name": "static_guard_damage",
+      "start_va": "0x0055ABB0",
+      "end_va_exclusive": "0x0055ABCB",
+      "byte_count": 27,
+      "sha256": "F705B124F2F0A3314B22BFC9B3AA6CFE233449B3EF74D4705E29C0AA06601AC4",
+      "hex": "389F7C8601000F85B40100008B4508298790000000399F90000000"
+    },
+    {
+      "name": "static_survive_return_and_custom_gate",
+      "start_va": "0x0055AC22",
+      "end_va_exclusive": "0x0055AC35",
+      "byte_count": 19,
+      "sha256": "34DF032FA0BF26FD72561816D6920B711E148E43333DE33B17BAC5E3EC491B42",
+      "hex": "32C05F5E5B8BE55DC21000399F08E80100745C"
+    },
+    {
+      "name": "static_custom_string_copy",
+      "start_va": "0x0055AC3E",
+      "end_va_exclusive": "0x0055AC59",
+      "byte_count": 27,
+      "sha256": "8A2B42908FB809512F759917A9CA80D0B90B92333543720F2B1E18D09920EC4D",
+      "hex": "6AFF538D97F8E70100C741140F000000895910528819E8B77AEAFF"
+    },
+    {
+      "name": "static_custom_callback_split",
+      "start_va": "0x0055AC64",
+      "end_va_exclusive": "0x0055AC91",
+      "byte_count": 45,
+      "sha256": "90800584C5E08F1A397A98976F78BD3EF6D1C1646590937B42DF25ACBF7138BC",
+      "hex": "53395874751453575033D233C9E80A56020083C410E9A2000000575033C08BCFE8974AFFFF83C40CE98F000000"
+    },
+    {
+      "name": "static_lethal_cleanup_low_al",
+      "start_va": "0x0055AD67",
+      "end_va_exclusive": "0x0055AD7B",
+      "byte_count": 20,
+      "sha256": "299BE1E7D9FFB1CA4C84A81700A073BC2DD61A930CB6761C21F6ADAD1DA62954",
+      "hex": "8B178B42588BCFFFD05F5EB0015B8BE55DC21000"
+    },
+    {
+      "name": "simple_static_guard_damage",
+      "start_va": "0x0055B06D",
+      "end_va_exclusive": "0x0055B08F",
+      "byte_count": 34,
+      "sha256": "7320F72951B7AEAF0CF370AE4E0FDA703D2063FF63343DFBA4938EC465B7D7BC",
+      "hex": "80BF7C860100000F85BB0000008B450829879000000083BF90000000008B45107E5A"
+    },
+    {
+      "name": "simple_static_survive_return_afterdeath_gate",
+      "start_va": "0x0055B0DF",
+      "end_va_exclusive": "0x0055B0FB",
+      "byte_count": 28,
+      "sha256": "58D0DBA9EE4D3DE69117CE4EA55DA8BCBCCA03E4AAB51E933DC5F23B973DF6CE",
+      "hex": "32C05F5E8BE55DC21000F680BC01000002743A83B894010000007431"
+    },
+    {
+      "name": "simple_static_lethal_cleanup_low_al",
+      "start_va": "0x0055B12C",
+      "end_va_exclusive": "0x0055B13F",
+      "byte_count": 19,
+      "sha256": "7BE8E4AC9CFD256494CCBFCD59A4BBED4D07B9D91D8F984B2ED9299D0C1384CB",
+      "hex": "8B078B50588BCFFFD25FB0015E8BE55DC21000"
+    },
+    {
+      "name": "static_string_cleanup",
+      "start_va": "0x0055A043",
+      "end_va_exclusive": "0x0055A06B",
+      "byte_count": 40,
+      "sha256": "B080D829861AF26A32423C1531C1FBD0B2C9F886C53B0C38D01B97D0B25015B4",
+      "hex": "E873CB050083C40433DB8D8624E60100C7860CE801000F000000899E08E8010050889EF8E70100E8"
+    },
+    {
+      "name": "unit_sentinel_aux_damage",
+      "start_va": "0x005783D4",
+      "end_va_exclusive": "0x005783F6",
+      "byte_count": 34,
+      "sha256": "A076759E5E9A1EA1C25AA21ECC4F23202304B6486CA6A8EFA68F150D2472855F",
+      "hex": "8B45083D41420F007408298368E50100EB0AC78368E5010000000000298390000000"
+    },
+    {
+      "name": "ordinary_damage_dispatch",
+      "start_va": "0x005510E1",
+      "end_va_exclusive": "0x00551156",
+      "byte_count": 117,
+      "sha256": "BDB6A82E2E265E72DC8323CC2855694F456532DB208C6DD82507A9010D9458DB",
+      "hex": "8B54241083FA0A750433FFEB688B7508DD86800200008BCFD9EEDAE9DFE0F6C4447A0433C9EB3B837C24180675048BCFEB3085D27507B940420F00EB2580BB7E860100007411DB442448DC0D80BD6500E84A0A08008BC8A1A4BD65003BC87D028BC88B45048B138B5270508B45005650518BCBFFD2"
+    }
+  ],
+  "new_evidence": [
+    {
+      "finding": "StaticUnit+0x1E808 is string length of string object at +0x1E7F8; empty branches to default BreakFire route",
+      "sites": [
+        "0x0055AC2D",
+        "0x0055AC41",
+        "0x0055AC91",
+        "0x0055ACE9",
+        "0x0055AD05",
+        "0x0055A053",
+        "0x0055A05D",
+        "0x0055A05D",
+        "0x0055A064"
+      ],
+      "level": "STATIC-ASM with string-layout corroboration; gameplay semantics VERIFY"
+    },
+    {
+      "finding": "nonempty StaticUnit string triggers copied string and calls 0x004678A0; returned record +0x74 splits dispatch to 0x00580280 vs 0x0054F720",
+      "sites": [
+        "0x0055AC41",
+        "0x0055AC54",
+        "0x0055AC5F",
+        "0x0055AC65",
+        "0x0055AC71",
+        "0x0055AC84"
+      ],
+      "level": "STATIC-ASM"
+    },
+    {
+      "finding": "StaticUnit and SimpleStaticUnit: if pre-dead byte+0x1867C nonzero return AL=1 without HP subtract; if live and post-subtract HP>0 return AL=0; if HP<=0 return AL=1",
+      "sites": [
+        "0x0055ABB0",
+        "0x0055AC22",
+        "0x0055AD72",
+        "0x0055B06D",
+        "0x0055B0DF",
+        "0x0055B136"
+      ],
+      "level": "STATIC-ASM; low byte AL only, full EAX not guaranteed"
+    },
+    {
+      "finding": "Only Unit 0x00578370 among these four virtual implementations directly tests 0xF4241 and updates auxiliary Unit+0x1E568 specially; SimpleUnit and static types subtract HP but have no same equality check in their own functions",
+      "sites": [
+        "0x005783D7",
+        "0x005783DE",
+        "0x005783E6",
+        "0x0055ABBF",
+        "0x0055B07D",
+        "0x005447F7"
+      ],
+      "level": "STATIC-ASM/STATIC-DERIVED; indirect chains outside function VERIFY"
+    }
+  ],
+  "prior_reused": [
+    "B-OFFLINE-20261024-1016-T012-T028-VSLOT70-ABI-SENTINEL-JOIN-01",
+    "B-20261024-0912-T028-VTABLE70-DEATH-DISPATCH-RTTI-01",
+    "T012 prior object afterdeath §18"
+  ],
+  "dedup_scope": "2026-10-21 offline B snapshot and prior 10:16 report; latest PC B HANDOFF unknown",
+  "pending_recovery": [
+    "old 22 recovered files vs 10 reported offline studies ID overlap",
+    "two later Library revisions",
+    "safety-refused evidence text only referenced, never retried"
+  ],
+  "actual_gameplay_golden_pass": 0,
+  "strict_match": 0,
+  "new_ready": 0,
+  "new_done": 0,
+  "classification": [
+    "OFFLINE-UNSYNCED",
+    "STATIC",
+    "VERIFY",
+    "NOT READY"
+  ],
+  "unsafe_areas_skipped": [
+    "0x005710C0..0x00571500",
+    "previously refused payloads or commands"
+  ],
+  "no_changes_to": [
+    "PC",
+    "MASTER",
+    "A/C/D/E lanes",
+    "REA",
+    "dev_lab",
+    "Git",
+    "EXE",
+    "SAVE",
+    "DAT",
+    "schedule"
+  ],
+  "next_va": [
+    "0x0055ABA0 return caller use for AL",
+    "0x0055B060 return caller use for AL",
+    "0x0055AC2D field producer/skill mapping",
+    "0x00578370 dynamic dispatch and Golden prerequisites"
+  ]
+}

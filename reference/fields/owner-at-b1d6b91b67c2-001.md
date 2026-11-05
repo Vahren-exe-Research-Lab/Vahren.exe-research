@@ -106,6 +106,12 @@
 - [research/recovered/e_reports/T020_E_T013_HEAD_SENTINEL_COORD_ACCEPTANCE_20261031_21H.md 行 9](../../research/recovered/e_reports/T020_E_T013_HEAD_SENTINEL_COORD_ACCEPTANCE_20261031_21H.md?plain=1#L9-L9) — - Alternative branch `0x57DE95` returning AL true instead stores ESI at Unit+0x186C8 then EBP at +0x186CC, calls 0x576660 and jumps 0x543DE0; AL false may reuse
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
 
+<a id="field-1e7f8"></a>
+## at + 0x1E7F8
+
+- [research/recovered/json_sources1/reports/data/B_T012_T028_STATIC_RETURN_DEATHBRANCH_EVIDENCE_20261024_1111.json 行 147](../../research/recovered/json_sources1/reports/data/B_T012_T028_STATIC_RETURN_DEATHBRANCH_EVIDENCE_20261024_1111.json?plain=1#L147-L147) — "finding": "StaticUnit+0x1E808 is string length of string object at +0x1E7F8; empty branches to default BreakFire route",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
 <a id="field-1e8630"></a>
 ## at + 0x1E8630
 

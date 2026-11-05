@@ -1,0 +1,468 @@
+{
+  "id": "B-OFFLINE-20261022-2310-T011-T012-T013-STRINGSET-PTRMAP-01",
+  "scope": "B T011/T012/T013 only",
+  "status": "OFFLINE-UNSYNCED/STATIC-ASM/STATIC-DERIVED/VERIFY/NOT READY",
+  "sources": {
+    "exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+    "zip_sha256": "911E5E37A3F9BD5B36F929AF94B0D1E2CD1CD5CF34E3E2F16C8FC800ABF5F7C2",
+    "db_sha256": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF",
+    "sqlite_quick_check": "ok",
+    "zip_crc_pass": true,
+    "zip_members": 34,
+    "manifest_source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+    "snapshot_latest_pc_master": false
+  },
+  "direct_call_checks": [
+    {
+      "site": "0x00405394",
+      "expected": "0x00402C40",
+      "observed": "0x00402C40",
+      "bytes": "E8A7D8FFFF",
+      "direct_call_db": true,
+      "ok": true
+    },
+    {
+      "site": "0x004159F5",
+      "expected": "0x004165B0",
+      "observed": "0x004165B0",
+      "bytes": "E8B60B0000",
+      "direct_call_db": true,
+      "ok": true
+    },
+    {
+      "site": "0x00415A28",
+      "expected": "0x00405370",
+      "observed": "0x00405370",
+      "bytes": "E843F9FEFF",
+      "direct_call_db": true,
+      "ok": true
+    },
+    {
+      "site": "0x0041726E",
+      "expected": "0x004165B0",
+      "observed": "0x004165B0",
+      "bytes": "E83DF3FFFF",
+      "direct_call_db": true,
+      "ok": true
+    },
+    {
+      "site": "0x00417393",
+      "expected": "0x00415920",
+      "observed": "0x00415920",
+      "bytes": "E888E5FFFF",
+      "direct_call_db": true,
+      "ok": true
+    },
+    {
+      "site": "0x0046845D",
+      "expected": "0x00417250",
+      "observed": "0x00417250",
+      "bytes": "E8EEEDFAFF",
+      "direct_call_db": true,
+      "ok": true
+    },
+    {
+      "site": "0x004E6F85",
+      "expected": "0x00415460",
+      "observed": "0x00415460",
+      "bytes": "E8D6E4F2FF",
+      "direct_call_db": true,
+      "ok": true
+    },
+    {
+      "site": "0x00515445",
+      "expected": "0x00579AA0",
+      "observed": "0x00579AA0",
+      "bytes": "E856460600",
+      "direct_call_db": true,
+      "ok": true
+    },
+    {
+      "site": "0x0051545A",
+      "expected": "0x00510850",
+      "observed": "0x00510850",
+      "bytes": "E8F1B3FFFF",
+      "direct_call_db": true,
+      "ok": true
+    },
+    {
+      "site": "0x0054C1AC",
+      "expected": "0x00515420",
+      "observed": "0x00515420",
+      "bytes": "E86F92FCFF",
+      "direct_call_db": true,
+      "ok": true
+    },
+    {
+      "site": "0x005525DC",
+      "expected": "0x00515420",
+      "observed": "0x00515420",
+      "bytes": "E83F2EFCFF",
+      "direct_call_db": true,
+      "ok": true
+    },
+    {
+      "site": "0x005108DF",
+      "expected": "0x00510C20",
+      "observed": "0x00510C20",
+      "bytes": "E83C030000",
+      "direct_call_db": true,
+      "ok": true
+    }
+  ],
+  "opcode_checks": [
+    {
+      "site": "0x00405370",
+      "expected": "83781410",
+      "actual": "83781410",
+      "pass": true
+    },
+    {
+      "site": "0x00405381",
+      "expected": "8B7210",
+      "actual": "8B7210",
+      "pass": true
+    },
+    {
+      "site": "0x00405384",
+      "expected": "8BC6",
+      "actual": "8BC6",
+      "pass": true
+    },
+    {
+      "site": "0x0040539D",
+      "expected": "3BF7",
+      "actual": "3BF7",
+      "pass": true
+    },
+    {
+      "site": "0x004053B0",
+      "expected": "0F95C0",
+      "actual": "0F95C0",
+      "pass": true
+    },
+    {
+      "site": "0x004053B6",
+      "expected": "0F98C0",
+      "actual": "0F98C0",
+      "pass": true
+    },
+    {
+      "site": "0x00415A2D",
+      "expected": "84C0",
+      "actual": "84C0",
+      "pass": true
+    },
+    {
+      "site": "0x00415A2F",
+      "expected": "7415",
+      "actual": "7415",
+      "pass": true
+    },
+    {
+      "site": "0x00415A4F",
+      "expected": "C6400400",
+      "actual": "C6400400",
+      "pass": true
+    },
+    {
+      "site": "0x00415A07",
+      "expected": "C6400401",
+      "actual": "C6400401",
+      "pass": true
+    },
+    {
+      "site": "0x004165F7",
+      "expected": "41",
+      "actual": "41",
+      "pass": true
+    },
+    {
+      "site": "0x004165F8",
+      "expected": "894F08",
+      "actual": "894F08",
+      "pass": true
+    },
+    {
+      "site": "0x00417257",
+      "expected": "837F0800",
+      "actual": "837F0800",
+      "pass": true
+    },
+    {
+      "site": "0x0046845D",
+      "expected": "E8EEEDFAFF",
+      "actual": "E8EEEDFAFF",
+      "pass": true
+    },
+    {
+      "site": "0x0051542D",
+      "expected": "80B9FD01000000",
+      "actual": "80B9FD01000000",
+      "pass": true
+    },
+    {
+      "site": "0x00515438",
+      "expected": "8D7A68",
+      "actual": "8D7A68",
+      "pass": true
+    },
+    {
+      "site": "0x00515441",
+      "expected": "8D44241C",
+      "actual": "8D44241C",
+      "pass": true
+    },
+    {
+      "site": "0x00579AB8",
+      "expected": "8B710C",
+      "actual": "8B710C",
+      "pass": true
+    },
+    {
+      "site": "0x00579ABB",
+      "expected": "3BF7",
+      "actual": "3BF7",
+      "pass": true
+    },
+    {
+      "site": "0x00579ABD",
+      "expected": "7305",
+      "actual": "7305",
+      "pass": true
+    },
+    {
+      "site": "0x00579ACA",
+      "expected": "3BFE",
+      "actual": "3BFE",
+      "pass": true
+    },
+    {
+      "site": "0x00579ACC",
+      "expected": "7302",
+      "actual": "7302",
+      "pass": true
+    },
+    {
+      "site": "0x0051087A",
+      "expected": "3BCA",
+      "actual": "3BCA",
+      "pass": true
+    },
+    {
+      "site": "0x0051087C",
+      "expected": "7470",
+      "actual": "7470",
+      "pass": true
+    },
+    {
+      "site": "0x005108DF",
+      "expected": "E83C030000",
+      "actual": "E83C030000",
+      "pass": true
+    },
+    {
+      "site": "0x005525D2",
+      "expected": "8B4D78",
+      "actual": "8B4D78",
+      "pass": true
+    },
+    {
+      "site": "0x005525D5",
+      "expected": "8B91D4010000",
+      "actual": "8B91D4010000",
+      "pass": true
+    },
+    {
+      "site": "0x005525DB",
+      "expected": "55",
+      "actual": "55",
+      "pass": true
+    }
+  ],
+  "function_evidence": [
+    {
+      "va": "0x00402C40",
+      "name": "FUN_00402c40",
+      "size": 113,
+      "pseudoc_sha256": "D92639D90EF16B151BB00FBE6C3125666F3AF0C9A294CFC18D6972913A29D919"
+    },
+    {
+      "va": "0x00405370",
+      "name": "FUN_00405370",
+      "size": 75,
+      "pseudoc_sha256": "4012AC066DE3ACAA1182584224CCA68DE8377AE49999A27F5B17638E1A24F8B2"
+    },
+    {
+      "va": "0x00415920",
+      "name": "FUN_00415920",
+      "size": 311,
+      "pseudoc_sha256": "04F8FD76FDE5451C0A5AEA523EAC161D2FEB9AAC99458492567CA1C96D74B555"
+    },
+    {
+      "va": "0x004165B0",
+      "name": "FUN_004165b0",
+      "size": 478,
+      "pseudoc_sha256": "4DF21C15C8BBA6633B8320B30288812DBAAA56DD9FCDCB43B64F65E7225B91EB"
+    },
+    {
+      "va": "0x00417250",
+      "name": "FUN_00417250",
+      "size": 342,
+      "pseudoc_sha256": "51E4FAFA7D53D8D52427B3912FD7AC38687564B142DBE7CDF715E3EE1193C439"
+    },
+    {
+      "va": "0x00468440",
+      "name": "FUN_00468440",
+      "size": 123,
+      "pseudoc_sha256": "602A1088748F56E3193659A78431D1525DAF4DC43F53B27767AA50B23F980933"
+    },
+    {
+      "va": "0x00415460",
+      "name": "FUN_00415460",
+      "size": 136,
+      "pseudoc_sha256": "46DB8021EB27A193E447836B7116C8944324FE9DBC2137190216948A2BFD709D"
+    },
+    {
+      "va": "0x00515420",
+      "name": "FUN_00515420",
+      "size": 71,
+      "pseudoc_sha256": "8F6F96624262E7939006F1A2C9B77E3645D324A6077CB1BBE544C26D24F99040"
+    },
+    {
+      "va": "0x00579AA0",
+      "name": "FUN_00579aa0",
+      "size": 118,
+      "pseudoc_sha256": "8823788FABCF0ED0C943A264CAE853BBB9E7AF2C492A95861324DC8DB2CE5512"
+    },
+    {
+      "va": "0x00510850",
+      "name": "FUN_00510850",
+      "size": 164,
+      "pseudoc_sha256": "A00F50544E327EE5BE19126DE605D496B2744B9DB2A1B4550A84737BA05FD1FF"
+    },
+    {
+      "va": "0x00510C20",
+      "name": "FUN_00510c20",
+      "size": 621,
+      "pseudoc_sha256": "98145992F702A9D135A7D5BDA0947AD1385C2D7E18E462D5B5A659A86C6A1A5F"
+    }
+  ],
+  "derived_findings": [
+    {
+      "topic": "offset string set order",
+      "evidence": "0x00405370->0x00402C40; 0x00415920 BST left/right by binary comparator",
+      "status": "STATIC-ASM",
+      "meaning": "comparison is bytewise lexicographic (not natural numeric/locale order); no case folding in these functions"
+    },
+    {
+      "topic": "offset key duplication",
+      "evidence": "0x00415A28/2F/4F duplicate path; 0x00415A07 newly inserted path; 0x004165F7/F8 count increment in insertion only",
+      "status": "STATIC-ASM",
+      "meaning": "same binary key is not added twice to this container; effective count is unique key count, assuming unchanged keys"
+    },
+    {
+      "topic": "other offset_on tree key",
+      "evidence": "0x00515441 passes address of caller stack argument, 0x00579AB6/[eax], compare node+0x0C using unsigned branch",
+      "status": "STATIC-ASM",
+      "meaning": "lookup key is 32-bit caller argument value (pointer candidate), NOT skill attr text"
+    },
+    {
+      "topic": "other offset_on tree ownership",
+      "evidence": "0x005525D2/D5/DB derives manager pointer from object+0x78 then +0x1D4; 0x00515438 uses manager+0x68",
+      "status": "STATIC-ASM+INFERRED",
+      "meaning": "target management tree is rooted at referenced manager +0x68, exact class name VERIFY"
+    },
+    {
+      "topic": "equal-range erase",
+      "evidence": "0x00515445 -> 0x00579AA0 produces 2 iterators; 0x0051545A -> 0x00510850; 0x0051087A/7C skip equal iterators, loop calls 0x00510C20",
+      "status": "STATIC-ASM",
+      "meaning": "removes entries in the returned interval rather than treating offset_on as generic hit permission"
+    }
+  ],
+  "synthetic_comparator_examples_NOT_GAMEPLAY": [
+    {
+      "synthetic_keys": [
+        "fire",
+        "fire"
+      ],
+      "unique_sorted_keys": [
+        "fire"
+      ],
+      "pre_normalization_count": 1,
+      "post_single_on_normalization_count": 1
+    },
+    {
+      "synthetic_keys": [
+        "FIRE",
+        "fire"
+      ],
+      "unique_sorted_keys": [
+        "FIRE",
+        "fire"
+      ],
+      "pre_normalization_count": 2,
+      "post_single_on_normalization_count": 2
+    },
+    {
+      "synthetic_keys": [
+        "a",
+        "aa"
+      ],
+      "unique_sorted_keys": [
+        "a",
+        "aa"
+      ],
+      "pre_normalization_count": 2,
+      "post_single_on_normalization_count": 2
+    },
+    {
+      "synthetic_keys": [
+        "on",
+        "on"
+      ],
+      "unique_sorted_keys": [
+        "on"
+      ],
+      "pre_normalization_count": 1,
+      "post_single_on_normalization_count": 0
+    },
+    {
+      "synthetic_keys": [
+        "on",
+        "fire"
+      ],
+      "unique_sorted_keys": [
+        "fire",
+        "on"
+      ],
+      "pre_normalization_count": 2,
+      "post_single_on_normalization_count": 2
+    },
+    {
+      "synthetic_keys": [
+        "fire",
+        "ice",
+        "fire"
+      ],
+      "unique_sorted_keys": [
+        "fire",
+        "ice"
+      ],
+      "pre_normalization_count": 2,
+      "post_single_on_normalization_count": 2
+    }
+  ],
+  "open_verify": [
+    "source DAT tokenizer and any normalization/encoding before insertion",
+    "runtime identification of object pointer and owner tree",
+    "whether other callers create duplicate-valued records in numeric tree",
+    "original gameplay collision/HP/RNG Golden",
+    "latest PC master and B HANDOFF semantic duplicate check"
+  ],
+  "golden_pass": 0,
+  "strict_match": 0,
+  "new_ready": 0,
+  "master_integration": 0,
+  "task_done": 0
+}

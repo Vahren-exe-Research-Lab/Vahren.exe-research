@@ -91,6 +91,24 @@
 - [research/recovered/b_batch11/data/T028_DUAL_VECTOR_ALFLAG_AND_DRAIN_NATIVE_V3_20261029_05H.md 行 12](../../research/recovered/b_batch11/data/T028_DUAL_VECTOR_ALFLAG_AND_DRAIN_NATIVE_V3_20261029_05H.md?plain=1#L12-L12) — - 04Hの二系統→0x5AA6E0 CALL先とspot_fire経路は既知で重複加算しない。新規は呼出時のAL=1/0差分、receiver+0x260、native保存位置+0x8C、AL依存追加処理。どちらが「火」か、+0x5A9CC0の実効果、対象object/vtable実体はVERIFY。
   制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
+<a id="field-3ce4"></a>
+## receiver + 0x3CE4
+
+- [research/recovered/json_sources1/reports/data/T013_POSTCORE_PHASE_FPU_CONSTANTS_20261013.json 行 1](../../research/recovered/json_sources1/reports/data/T013_POSTCORE_PHASE_FPU_CONSTANTS_20261013.json?plain=1#L1-L1) — {"schema":"B-T013-POSTCORE-STATIC-F64-V1","evidence_id":"B-20261013-2023-77","evidence_state":"READY-STATIC-CONSTANTS-CROSSJOIN","source":{"type":"isolated orig
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
+<a id="field-3ce8"></a>
+## receiver + 0x3CE8
+
+- [research/recovered/json_sources1/reports/data/T013_POSTCORE_PHASE_FPU_CONSTANTS_20261013.json 行 1](../../research/recovered/json_sources1/reports/data/T013_POSTCORE_PHASE_FPU_CONSTANTS_20261013.json?plain=1#L1-L1) — {"schema":"B-T013-POSTCORE-STATIC-F64-V1","evidence_id":"B-20261013-2023-77","evidence_state":"READY-STATIC-CONSTANTS-CROSSJOIN","source":{"type":"isolated orig
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
+<a id="field-3cf0"></a>
+## receiver + 0x3CF0
+
+- [research/recovered/json_sources1/reports/data/T013_POSTCORE_PHASE_FPU_CONSTANTS_20261013.json 行 1](../../research/recovered/json_sources1/reports/data/T013_POSTCORE_PHASE_FPU_CONSTANTS_20261013.json?plain=1#L1-L1) — {"schema":"B-T013-POSTCORE-STATIC-F64-V1","evidence_id":"B-20261013-2023-77","evidence_state":"READY-STATIC-CONSTANTS-CROSSJOIN","source":{"type":"isolated orig
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
 <a id="field-1ef148"></a>
 ## receiver + 0x1EF148
 

@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-28"></a>
+## skill + 0x28
+
+- [research/recovered/json_sources1/reports/data/B_T011_T012_MISSILE_VTABLE_SLOT38_EVIDENCE_20261022_1813.json 行 295](../../research/recovered/json_sources1/reports/data/B_T011_T012_MISSILE_VTABLE_SLOT38_EVIDENCE_20261022_1813.json?plain=1#L295-L295) — "slot38": "if skill+0x28 == 0 and byte(skill+0x9F5) != 0: return obj+0xE4; else: return (byte(skill+0x9F4) != 0 ? 1000000 : 0)",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
 <a id="field-40"></a>
 ## skill + 0x40
 
@@ -75,5 +81,23 @@
 
 - [research/recovered/b_batch2/T011_TRAINING_LEADER_BONUS_MEMO_NATIVE_20261031_07H.md 行 14](../../research/recovered/b_batch2/T011_TRAINING_LEADER_BONUS_MEMO_NATIVE_20261031_07H.md?plain=1#L14-L14) — [KB_CANDIDATE] research_id=B-20261031-07H-T011-TRAINING-LEADER-BONUS-MEMO-01; owner=B/T011; primary VA=0x4722BE,0x4723A8,0x4723BC,0x4F8A80,0x4ED3B0,0x474A80; of
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+<a id="field-3c8"></a>
+## skill + 0x3C8
+
+- [research/recovered/json_sources1/reports/data/B_T011_T012_MISSILE_VTABLE_SLOT38_EVIDENCE_20261022_1813.json 行 299](../../research/recovered/json_sources1/reports/data/B_T011_T012_MISSILE_VTABLE_SLOT38_EVIDENCE_20261022_1813.json?plain=1#L299-L299) — "slot30": "0x54D940: variable indexed value skill+0x3C8 + index*4 or base dword"
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
+<a id="field-9f4"></a>
+## skill + 0x9F4
+
+- [research/recovered/json_sources1/reports/data/B_T011_T012_MISSILE_VTABLE_SLOT38_EVIDENCE_20261022_1813.json 行 295](../../research/recovered/json_sources1/reports/data/B_T011_T012_MISSILE_VTABLE_SLOT38_EVIDENCE_20261022_1813.json?plain=1#L295-L295) — "slot38": "if skill+0x28 == 0 and byte(skill+0x9F5) != 0: return obj+0xE4; else: return (byte(skill+0x9F4) != 0 ? 1000000 : 0)",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
+<a id="field-9f5"></a>
+## skill + 0x9F5
+
+- [research/recovered/json_sources1/reports/data/B_T011_T012_MISSILE_VTABLE_SLOT38_EVIDENCE_20261022_1813.json 行 295](../../research/recovered/json_sources1/reports/data/B_T011_T012_MISSILE_VTABLE_SLOT38_EVIDENCE_20261022_1813.json?plain=1#L295-L295) — "slot38": "if skill+0x28 == 0 and byte(skill+0x9F5) != 0: return obj+0xE4; else: return (byte(skill+0x9F4) != 0 ? 1000000 : 0)",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

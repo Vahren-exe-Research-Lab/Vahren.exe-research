@@ -4,8 +4,38 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-1867d"></a>
+## Unit + 0x1867D
+
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md 行 79](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md?plain=1#L79-L79) — Immediate native successor partition also rechecked: of 21 AL=0 sites, **18** directly proceed via PUSH ESI / E8 `0x568FB0`, and **3** (`0x420269/0x528356/0x528
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
+- [research/recovered/rea_batch11/reports/REA_20261018_1833_TROOP_UI_SELECTION_PHASE_DEADEND_QC.md 行 3](../../research/recovered/rea_batch11/reports/REA_20261018_1833_TROOP_UI_SELECTION_PHASE_DEADEND_QC.md?plain=1#L3-L3) — - [NATIVE] 既保存REA-ND-20261013-001 ND-GRAPH-TAIL/ND-TROOP：死亡側0x575F6C→0x5684B0（外側帰還0x575F71）、条件付0x575F8C→同関数（外側帰還0x575F91）。一回目の正常帰還後にUnit+0x1867Dを再読。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_batch11/reports/REA_20261018_1935_TROOP_SELECTION_SINGLE_BINDING_QC.md 行 3](../../research/recovered/rea_batch11/reports/REA_20261018_1935_TROOP_SELECTION_SINGLE_BINDING_QC.md?plain=1#L3-L3) — - [SAVED NATIVE] REA-ND-20261013-001: 通常死亡0x575DF0後段は0x575F6C→0x5684B0（復帰0x575F71）と、Unit+0x1867D再読後に条件付き0x575F8C→0x5684B0（復帰0x575F91）の二層。0x5684B0の選択中空0x56852Dと通
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_batch11/reports/REA_20261019_0335_DEATH_TROOP_SEMANTIC_RESUME_DRIFT_QC.md 行 8](../../research/recovered/rea_batch11/reports/REA_20261019_0335_DEATH_TROOP_SEMANTIC_RESUME_DRIFT_QC.md?plain=1#L8-L8) — - [NEW OUTER DEATH GRAPH] continue_resolved_normal_disable_troopsは0x575F62/0x575F6C/0x575F71/0x575F8Cを状態として保持し、第1所属部隊NULLのとき0x575F71を経由、第1帰還後にUnit+0x1867Dを再読して選
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_batch11/reports/REA_20261019_1835_TROOP_SELECTION_OWNER_REBIND_GATE_QC.md 行 4](../../research/recovered/rea_batch11/reports/REA_20261019_1835_TROOP_SELECTION_OWNER_REBIND_GATE_QC.md?plain=1#L4-L4) — - [NATIVE GATE 1] 0x575F6C CALL0x5684B0→0x575F71帰還後、Unit+0x1867Dを再読。非0時、engine+0x1E8B34のselectionOwnerをその時点で取得して+0x358の別Troopへ0x575F8C CALL0x5684B0→0x575F91。2回の
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/remaining_md1/reports/data/T024_HAKUSHIN_BATTLE_AI.md 行 347](../../research/recovered/remaining_md1/reports/data/T024_HAKUSHIN_BATTLE_AI.md?plain=1#L347-L347) — [NEW ASM] 0x5684B0はowner+0x1D!=0なら+0xC/+0x10 spanを走査しUnit+0x1867C!=0を削除/Unit+0x1867D解除、span空なら0x56852D→0x527ED0。+0x1D==0ならUnit+0x1867C==0をcountし、count>0かつ先頭+0x8
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+
+- [research/recovered/search_reports1/reports/_history_20261029/EXP_SUMMON_DEATH_RESEARCH_20261021.md 行 49](../../research/recovered/search_reports1/reports/_history_20261029/EXP_SUMMON_DEATH_RESEARCH_20261021.md?plain=1#L49-L49) — - [STATIC VERIFIED] `0x54E7B0` の `0x54F096 CALL 0x568710` が生成Unitと部隊参照の接続経路。 `0x568710` はnormal troop modeでUnit+0x1D0を部隊ポインタへセットし、selected modeではUnit+0x1867Dを立て
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
+- [research/recovered/search_reports1/reports/_history_20261029/EXP_SUMMON_DEATH_RESEARCH_20261021.md 行 58](../../research/recovered/search_reports1/reports/_history_20261029/EXP_SUMMON_DEATH_RESEARCH_20261021.md?plain=1#L58-L58) — - [STATIC VERIFIED] 第一更新から帰った**後で** Unit+0x1867Dを再読し、非0なら `0x575F8C CALL 0x5684B0`。2呼出しの存在は確定だが常時2回呼ぶわけではない。
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
 <a id="field-1867e"></a>
 ## Unit + 0x1867E
+
+- [research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md 行 32](../../research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md?plain=1#L32-L32) — - `0x5284A0`では入力Unitが非NULLで `Unit+0x8C==0`、`Unit+0x1F8!=0`、`Unit+0x1867C==0`、`Unit+0x1D0!=0`、`Unit+0x1867E==0`、`Unit+0x1FA==0` の条件で `0x5284E2→0x568710` の後 `0x52
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 - [research/recovered/b_batch3/T013_MODE2_ALT_DUALFLAG_AND_MODE3_NATIVE_20261030_15H.md 行 13](../../research/recovered/b_batch3/T013_MODE2_ALT_DUALFLAG_AND_MODE3_NATIVE_20261030_15H.md?plain=1#L13-L13) — 0x44BFA1 CMP BYTE [Unit+0x1867C],0 / 0x44BFAA CMP BYTE [Unit+0x1867E],0: both zero needed to take 0x44BFB1 JE 0x44BFCA. At 0x44BFCA selected pointer (or EAX=0 a
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
@@ -330,41 +360,5 @@
 
 - [research/recovered/b_batch3/T012_UNIT_VIRTUAL80_579290_CONTRACT_20261013.md 行 6](../../research/recovered/b_batch3/T012_UNIT_VIRTUAL80_579290_CONTRACT_20261013.md?plain=1#L6-L6) — [STATE WRITERS] 0x5792A3 Unit+0x1E49C=[EBP+0x1C]、0x5792A9 Unit byte+0x186D0=1、0x5792B2/+BB Unit+0x1E4A4/+0x1E4A8=pointB X/Y、0x5792C4 Unit+0x186D4=0、0x5792D4 Uni
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-<a id="field-1e4ac"></a>
-## Unit + 0x1E4AC
-
-- [research/recovered/b_batch11/data/T028_DIRECTION_PERM_ROTATION_NATIVE_20261026_18H.md 行 11](../../research/recovered/b_batch11/data/T028_DIRECTION_PERM_ROTATION_NATIVE_20261026_18H.md?plain=1#L11-L11) — [CALLER JOIN] 0x579823 MOV ECX,[ESI+0x18688]→0x57982A PUSH ECX、0x579829 PUSH [Unit+0x1E4AC]、0x57982B/2C 座標PUSH→0x579831 CALL 0x4E7770。従ってこの代替移動callerでは開始回転値=Uni
-  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
-
-- [research/recovered/b_batch3/T012_UNIT_VIRTUAL80_579290_CONTRACT_20261013.md 行 6](../../research/recovered/b_batch3/T012_UNIT_VIRTUAL80_579290_CONTRACT_20261013.md?plain=1#L6-L6) — [STATE WRITERS] 0x5792A3 Unit+0x1E49C=[EBP+0x1C]、0x5792A9 Unit byte+0x186D0=1、0x5792B2/+BB Unit+0x1E4A4/+0x1E4A8=pointB X/Y、0x5792C4 Unit+0x186D4=0、0x5792D4 Uni
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_batch3/T028_FALLBACK_GLOBAL_PAIR_RETABI_NATIVE_20261026_13H.md 行 9](../../research/recovered/b_batch3/T028_FALLBACK_GLOBAL_PAIR_RETABI_NATIVE_20261026_13H.md?plain=1#L9-L9) — - NEW 4 [STATIC ASM]: 0x5795E0の移動中間処理では0x579654/65B [Unit+0x186D0]!=0、0x579661..672 [Unit+0x186D4]==trunc([Unit+0x186D8]/2)の成立時にのみ特殊分岐へ進む。0x57978F [Unit+0x1E4AC
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_batch3/T028_FALLBACK_GLOBAL_PAIR_RETABI_NATIVE_20261026_13H.md 行 10](../../research/recovered/b_batch3/T028_FALLBACK_GLOBAL_PAIR_RETABI_NATIVE_20261026_13H.md?plain=1#L10-L10) — - NEW 5 [STATIC ASM]: 0x5797DE CALL 0x4E5040の戻りEAXを0x5797E3で[Unit+0x228]と比較、EAX<[Unit+228]なら0x5797F0 CALL 0x4E4C70で直接移動。EAX>=thresholdなら0x579814/81Aで[Unit+0x1E4
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-<a id="field-1e4b4"></a>
-## Unit + 0x1E4B4
-
-- [research/recovered/b_batch9/data/T013_SUMMON_CURSOR_579940_CONTRACT_20261013.md 行 4](../../research/recovered/b_batch9/data/T013_SUMMON_CURSOR_579940_CONTRACT_20261013.md?plain=1#L4-L4) — [CALLER DIRECT] B既READY B-20261013-1141-01のexe/T013_SUMMON_LOOKUP_577260_NATIVE_20261013.txt: 0x577285 LEA EAX,&local_cursor、0x577289 PUSH EAX、0x57728A EAX=Unit
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/b_batch9/data/T013_SUMMON_LOOKUP_577260_CONTRACT_20261013.md 行 4](../../research/recovered/b_batch9/data/T013_SUMMON_LOOKUP_577260_CONTRACT_20261013.md?plain=1#L4-L4) — [ENTRY] ECXは対象Unit-like pointer、0x577283 ESI=ECX、0x57728Aで&Unit+0x1E4B4をEAX、0x577294 EDI=local key object、0x57729C call0x579940、戻EAX（tree cursor/record）を[ESP+0x
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/search_reports1/reports/BATTLE_TAKEOVER_RESEARCH_STAGE12_20261022.md 行 32](../../research/recovered/search_reports1/reports/BATTLE_TAKEOVER_RESEARCH_STAGE12_20261022.md?plain=1#L32-L32) — 8RAW全てでUnit+0x1CC（部隊先頭の記録参照）、Unit+0x178..0x180（子一覧）、Unit+0x1E4B4（元Unitの記録キャッシュ）、Unit+0x1E594（条件付き関連参照）の実バイトは保存されていなかった。
-  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
-
-<a id="field-1e4b8"></a>
-## Unit + 0x1E4B8
-
-- [research/recovered/b_batch9/data/T013_SUMMON_CURSOR_579940_CONTRACT_20261013.md 行 4](../../research/recovered/b_batch9/data/T013_SUMMON_CURSOR_579940_CONTRACT_20261013.md?plain=1#L4-L4) — [CALLER DIRECT] B既READY B-20261013-1141-01のexe/T013_SUMMON_LOOKUP_577260_NATIVE_20261013.txt: 0x577285 LEA EAX,&local_cursor、0x577289 PUSH EAX、0x57728A EAX=Unit
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/b_batch9/data/T013_SUMMON_LOOKUP_577260_CONTRACT_20261013.md 行 5](../../research/recovered/b_batch9/data/T013_SUMMON_LOOKUP_577260_CONTRACT_20261013.md?plain=1#L5-L5) — [FOUND] 0x5772A5 compares returned node pointer to Unit+0x1E4B8 sentinel。non-equal routeなら0x5772B2 LEA ESI,[EAX+0x28]、local string capacity>=16なら0x5772BC 0x5B6B
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

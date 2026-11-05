@@ -16,4 +16,10 @@
 - [research/recovered/rea_batch4/reports/REA_20261029_16H_P0_OGG_NULLSLOT_LOOP_STATIC.md 行 11](../../research/recovered/rea_batch4/reports/REA_20261029_16H_P0_OGG_NULLSLOT_LOOP_STATIC.md?plain=1#L11-L11) — - 関数 `0x005DEDF0` の `0x005DEE78 MOV EAX,[EDX+ECX*4+0x220]` はresidue側の処理用ポインタを取得し、`0x005DEE82 MOV [EBP-8],EAX` に保存する。Ghidra擬似Cでは `piVar7=*(int **)(iVar4+0x220+iV
   制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
 
+<a id="field-1867c"></a>
+## iVar4 + 0x1867C
+
+- [research/recovered/json_sources1/reports/data/B_T012_T013_PERSON_POOL_LIFECYCLE_EVIDENCE_20261023_1215.json 行 209](../../research/recovered/json_sources1/reports/data/B_T012_T013_PERSON_POOL_LIFECYCLE_EVIDENCE_20261023_1215.json?plain=1#L209-L209) — "marker": "iVar4 + 0x1867c",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

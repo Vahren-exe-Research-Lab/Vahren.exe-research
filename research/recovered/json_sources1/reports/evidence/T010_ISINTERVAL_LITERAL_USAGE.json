@@ -1,0 +1,85 @@
+{
+  "total_literal_calls": 540,
+  "unique_values": 14,
+  "counts": {
+    "5": 6,
+    "10": 1,
+    "80": 2,
+    "100": 513,
+    "150": 1,
+    "200": 1,
+    "215": 1,
+    "250": 1,
+    "285": 1,
+    "300": 2,
+    "345": 1,
+    "400": 7,
+    "500": 2,
+    "2000": 1
+  },
+  "non_multiple_10": {
+    "215": 1,
+    "345": 1,
+    "285": 1,
+    "5": 6
+  },
+  "non_positive": {},
+  "examples": {
+    "215": {
+      "file": "a_default\\Ai戦闘制御_軍楽隊入り版.dat",
+      "line": 1619
+    },
+    "345": {
+      "file": "a_default\\script\\Ai戦闘制御_軍楽隊なし版.dat",
+      "line": 2201
+    },
+    "285": {
+      "file": "a_default\\script\\Ai戦闘制御_軍楽隊なし版.dat",
+      "line": 2201
+    },
+    "100": {
+      "file": "a_default\\script\\1000_チュートリアル\\tuto_event1.dat",
+      "line": 247
+    },
+    "80": {
+      "file": "a_default\\script\\1000_チュートリアル\\tuto_event1.dat",
+      "line": 336
+    },
+    "300": {
+      "file": "a_default\\script\\2023_イベント_リュージ騎士団\\event_23_RPG.dat",
+      "line": 570
+    },
+    "400": {
+      "file": "a_default\\script\\2023_イベント_リュージ騎士団\\event_23_RPG.dat",
+      "line": 2639
+    },
+    "500": {
+      "file": "a_default\\script\\2023_イベント_リュージ騎士団\\event_23_RPG.dat",
+      "line": 7291
+    },
+    "5": {
+      "file": "a_default\\script\\2023_イベント_リュージ騎士団\\event_23_RPG.dat",
+      "line": 10220
+    },
+    "200": {
+      "file": "a_default\\script\\30_スキル\\F22_召喚を使ったトーク.dat",
+      "line": 245
+    },
+    "150": {
+      "file": "a_default\\script\\30_スキル\\F22_召喚を使ったトーク.dat",
+      "line": 254
+    },
+    "250": {
+      "file": "a_default\\script\\30_スキル\\F22_召喚を使ったトーク.dat",
+      "line": 263
+    },
+    "2000": {
+      "file": "a_default\\script\\4000_AoW\\event_aow_264.dat",
+      "line": 871
+    },
+    "10": {
+      "file": "a_default\\script\\6000_スキルテスト\\skilltest.dat",
+      "line": 13
+    }
+  }
+}

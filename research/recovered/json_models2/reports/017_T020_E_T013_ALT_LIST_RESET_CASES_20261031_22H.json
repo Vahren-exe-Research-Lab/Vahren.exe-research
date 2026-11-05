@@ -1,0 +1,7358 @@
+{
+  "id": "E-AUDIT-20261031-22H-T020-T013-ALT-LIST-RESET-ORDER-GATE-01",
+  "owner": "E/T020",
+  "b_owner": "B/T013",
+  "b_source_sha256": "5F449D9340F19A8F2A67B154CDC207B499EB2E402301E7695D2825C560DBF464",
+  "pe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "static_regions": [
+    {
+      "va": "0x57dd10",
+      "bytes": 461,
+      "sha256": "3F9E3471A20A15F05EE3EF54E0699D787C14A9F6976E6786F60C4B8CB5E56B43"
+    },
+    {
+      "va": "0x576660",
+      "bytes": 332,
+      "sha256": "406D08CAE5E4AFA9421C51387BF6B6D2778EDE1D78ECC104463AC79D5FC31ACD"
+    },
+    {
+      "va": "0x543de0",
+      "bytes": 28,
+      "sha256": "AFFAA18D312239B5D176D1D60983971A7ACD6EFC1AD639319F01A867CF77A0CC"
+    }
+  ],
+  "e8": [
+    {
+      "site": "0x57decb",
+      "target": "0x576660",
+      "raw": "e89087ffff"
+    },
+    {
+      "site": "0x576693",
+      "target": "0x5b6bbb",
+      "raw": "e823050400"
+    },
+    {
+      "site": "0x5766bb",
+      "target": "0x5b6bbb",
+      "raw": "e8fb040400"
+    },
+    {
+      "site": "0x57672d",
+      "target": "0x4c22b0",
+      "raw": "e87ebbf4ff"
+    }
+  ],
+  "e9": {
+    "site": "0x57ded8",
+    "target": "0x543de0",
+    "raw": "e9035ffcff"
+  },
+  "count": 192,
+  "conditional_model_eligible": 168,
+  "ineligible_empty_pop": 24,
+  "post_clear_gate_true": 15,
+  "status": "STATIC_BYTE_VERIFIED_SYNTHETIC_NOT_READY_NOT_GAMEPLAY",
+  "notes": "All-clear and single-unlink are conditional x86 models. Virtual call effects and exact final C8/CC state UNKNOWN.",
+  "original_dynamic_observed": 0,
+  "actual_golden_pass": 0,
+  "strict_match": 0,
+  "cases": [
+    {
+      "id": "0_0000_101",
+      "initial_alt_count": 0,
+      "clear_arg": 0,
+      "eligible": false,
+      "count_after": null,
+      "list_action": "EMPTY_POP_INELIGIBLE",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_0000_80000008",
+      "initial_alt_count": 0,
+      "clear_arg": 0,
+      "eligible": false,
+      "count_after": null,
+      "list_action": "EMPTY_POP_INELIGIBLE",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_0000_0",
+      "initial_alt_count": 0,
+      "clear_arg": 0,
+      "eligible": false,
+      "count_after": null,
+      "list_action": "EMPTY_POP_INELIGIBLE",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_0001_101",
+      "initial_alt_count": 0,
+      "clear_arg": 0,
+      "eligible": false,
+      "count_after": null,
+      "list_action": "EMPTY_POP_INELIGIBLE",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_0001_80000008",
+      "initial_alt_count": 0,
+      "clear_arg": 0,
+      "eligible": false,
+      "count_after": null,
+      "list_action": "EMPTY_POP_INELIGIBLE",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_0001_0",
+      "initial_alt_count": 0,
+      "clear_arg": 0,
+      "eligible": false,
+      "count_after": null,
+      "list_action": "EMPTY_POP_INELIGIBLE",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_0010_101",
+      "initial_alt_count": 0,
+      "clear_arg": 0,
+      "eligible": false,
+      "count_after": null,
+      "list_action": "EMPTY_POP_INELIGIBLE",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_0010_80000008",
+      "initial_alt_count": 0,
+      "clear_arg": 0,
+      "eligible": false,
+      "count_after": null,
+      "list_action": "EMPTY_POP_INELIGIBLE",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_0010_0",
+      "initial_alt_count": 0,
+      "clear_arg": 0,
+      "eligible": false,
+      "count_after": null,
+      "list_action": "EMPTY_POP_INELIGIBLE",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_0011_101",
+      "initial_alt_count": 0,
+      "clear_arg": 0,
+      "eligible": false,
+      "count_after": null,
+      "list_action": "EMPTY_POP_INELIGIBLE",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_0011_80000008",
+      "initial_alt_count": 0,
+      "clear_arg": 0,
+      "eligible": false,
+      "count_after": null,
+      "list_action": "EMPTY_POP_INELIGIBLE",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_0011_0",
+      "initial_alt_count": 0,
+      "clear_arg": 0,
+      "eligible": false,
+      "count_after": null,
+      "list_action": "EMPTY_POP_INELIGIBLE",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_0100_101",
+      "initial_alt_count": 0,
+      "clear_arg": 0,
+      "eligible": false,
+      "count_after": null,
+      "list_action": "EMPTY_POP_INELIGIBLE",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_0100_80000008",
+      "initial_alt_count": 0,
+      "clear_arg": 0,
+      "eligible": false,
+      "count_after": null,
+      "list_action": "EMPTY_POP_INELIGIBLE",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_0100_0",
+      "initial_alt_count": 0,
+      "clear_arg": 0,
+      "eligible": false,
+      "count_after": null,
+      "list_action": "EMPTY_POP_INELIGIBLE",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_0101_101",
+      "initial_alt_count": 0,
+      "clear_arg": 0,
+      "eligible": false,
+      "count_after": null,
+      "list_action": "EMPTY_POP_INELIGIBLE",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_0101_80000008",
+      "initial_alt_count": 0,
+      "clear_arg": 0,
+      "eligible": false,
+      "count_after": null,
+      "list_action": "EMPTY_POP_INELIGIBLE",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_0101_0",
+      "initial_alt_count": 0,
+      "clear_arg": 0,
+      "eligible": false,
+      "count_after": null,
+      "list_action": "EMPTY_POP_INELIGIBLE",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_0110_101",
+      "initial_alt_count": 0,
+      "clear_arg": 0,
+      "eligible": false,
+      "count_after": null,
+      "list_action": "EMPTY_POP_INELIGIBLE",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_0110_80000008",
+      "initial_alt_count": 0,
+      "clear_arg": 0,
+      "eligible": false,
+      "count_after": null,
+      "list_action": "EMPTY_POP_INELIGIBLE",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_0110_0",
+      "initial_alt_count": 0,
+      "clear_arg": 0,
+      "eligible": false,
+      "count_after": null,
+      "list_action": "EMPTY_POP_INELIGIBLE",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_0111_101",
+      "initial_alt_count": 0,
+      "clear_arg": 0,
+      "eligible": false,
+      "count_after": null,
+      "list_action": "EMPTY_POP_INELIGIBLE",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_0111_80000008",
+      "initial_alt_count": 0,
+      "clear_arg": 0,
+      "eligible": false,
+      "count_after": null,
+      "list_action": "EMPTY_POP_INELIGIBLE",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_0111_0",
+      "initial_alt_count": 0,
+      "clear_arg": 0,
+      "eligible": false,
+      "count_after": null,
+      "list_action": "EMPTY_POP_INELIGIBLE",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_1000_101",
+      "initial_alt_count": 0,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_1000_80000008",
+      "initial_alt_count": 0,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_1000_0",
+      "initial_alt_count": 0,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_1001_101",
+      "initial_alt_count": 0,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_1001_80000008",
+      "initial_alt_count": 0,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_1001_0",
+      "initial_alt_count": 0,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_1010_101",
+      "initial_alt_count": 0,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_1010_80000008",
+      "initial_alt_count": 0,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_1010_0",
+      "initial_alt_count": 0,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_1011_101",
+      "initial_alt_count": 0,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_1011_80000008",
+      "initial_alt_count": 0,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_1011_0",
+      "initial_alt_count": 0,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_1100_101",
+      "initial_alt_count": 0,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_1100_80000008",
+      "initial_alt_count": 0,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_1100_0",
+      "initial_alt_count": 0,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_1101_101",
+      "initial_alt_count": 0,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_1101_80000008",
+      "initial_alt_count": 0,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_1101_0",
+      "initial_alt_count": 0,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_1110_101",
+      "initial_alt_count": 0,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_1110_80000008",
+      "initial_alt_count": 0,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_1110_0",
+      "initial_alt_count": 0,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_1111_101",
+      "initial_alt_count": 0,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": true,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_1111_80000008",
+      "initial_alt_count": 0,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": true,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "0_1111_0",
+      "initial_alt_count": 0,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": true,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_0000_101",
+      "initial_alt_count": 1,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_0000_80000008",
+      "initial_alt_count": 1,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_0000_0",
+      "initial_alt_count": 1,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_0001_101",
+      "initial_alt_count": 1,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_0001_80000008",
+      "initial_alt_count": 1,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_0001_0",
+      "initial_alt_count": 1,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_0010_101",
+      "initial_alt_count": 1,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_0010_80000008",
+      "initial_alt_count": 1,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_0010_0",
+      "initial_alt_count": 1,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_0011_101",
+      "initial_alt_count": 1,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_0011_80000008",
+      "initial_alt_count": 1,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_0011_0",
+      "initial_alt_count": 1,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_0100_101",
+      "initial_alt_count": 1,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_0100_80000008",
+      "initial_alt_count": 1,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_0100_0",
+      "initial_alt_count": 1,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_0101_101",
+      "initial_alt_count": 1,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_0101_80000008",
+      "initial_alt_count": 1,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_0101_0",
+      "initial_alt_count": 1,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_0110_101",
+      "initial_alt_count": 1,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_0110_80000008",
+      "initial_alt_count": 1,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_0110_0",
+      "initial_alt_count": 1,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_0111_101",
+      "initial_alt_count": 1,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": true,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_0111_80000008",
+      "initial_alt_count": 1,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": true,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_0111_0",
+      "initial_alt_count": 1,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": true,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_1000_101",
+      "initial_alt_count": 1,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_1000_80000008",
+      "initial_alt_count": 1,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_1000_0",
+      "initial_alt_count": 1,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_1001_101",
+      "initial_alt_count": 1,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_1001_80000008",
+      "initial_alt_count": 1,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_1001_0",
+      "initial_alt_count": 1,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_1010_101",
+      "initial_alt_count": 1,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_1010_80000008",
+      "initial_alt_count": 1,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_1010_0",
+      "initial_alt_count": 1,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_1011_101",
+      "initial_alt_count": 1,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_1011_80000008",
+      "initial_alt_count": 1,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_1011_0",
+      "initial_alt_count": 1,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_1100_101",
+      "initial_alt_count": 1,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_1100_80000008",
+      "initial_alt_count": 1,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_1100_0",
+      "initial_alt_count": 1,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_1101_101",
+      "initial_alt_count": 1,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_1101_80000008",
+      "initial_alt_count": 1,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_1101_0",
+      "initial_alt_count": 1,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_1110_101",
+      "initial_alt_count": 1,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_1110_80000008",
+      "initial_alt_count": 1,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_1110_0",
+      "initial_alt_count": 1,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_1111_101",
+      "initial_alt_count": 1,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": true,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_1111_80000008",
+      "initial_alt_count": 1,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": true,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "1_1111_0",
+      "initial_alt_count": 1,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": true,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_0000_101",
+      "initial_alt_count": 2,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 1,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_0000_80000008",
+      "initial_alt_count": 2,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 1,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_0000_0",
+      "initial_alt_count": 2,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 1,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_0001_101",
+      "initial_alt_count": 2,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 1,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_0001_80000008",
+      "initial_alt_count": 2,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 1,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_0001_0",
+      "initial_alt_count": 2,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 1,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_0010_101",
+      "initial_alt_count": 2,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 1,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_0010_80000008",
+      "initial_alt_count": 2,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 1,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_0010_0",
+      "initial_alt_count": 2,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 1,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_0011_101",
+      "initial_alt_count": 2,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 1,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_0011_80000008",
+      "initial_alt_count": 2,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 1,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_0011_0",
+      "initial_alt_count": 2,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 1,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_0100_101",
+      "initial_alt_count": 2,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 1,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_0100_80000008",
+      "initial_alt_count": 2,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 1,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_0100_0",
+      "initial_alt_count": 2,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 1,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_0101_101",
+      "initial_alt_count": 2,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 1,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_0101_80000008",
+      "initial_alt_count": 2,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 1,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_0101_0",
+      "initial_alt_count": 2,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 1,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_0110_101",
+      "initial_alt_count": 2,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 1,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_0110_80000008",
+      "initial_alt_count": 2,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 1,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_0110_0",
+      "initial_alt_count": 2,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 1,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_0111_101",
+      "initial_alt_count": 2,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 1,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_0111_80000008",
+      "initial_alt_count": 2,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 1,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_0111_0",
+      "initial_alt_count": 2,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 1,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_1000_101",
+      "initial_alt_count": 2,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_1000_80000008",
+      "initial_alt_count": 2,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_1000_0",
+      "initial_alt_count": 2,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_1001_101",
+      "initial_alt_count": 2,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_1001_80000008",
+      "initial_alt_count": 2,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_1001_0",
+      "initial_alt_count": 2,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_1010_101",
+      "initial_alt_count": 2,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_1010_80000008",
+      "initial_alt_count": 2,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_1010_0",
+      "initial_alt_count": 2,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_1011_101",
+      "initial_alt_count": 2,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_1011_80000008",
+      "initial_alt_count": 2,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_1011_0",
+      "initial_alt_count": 2,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_1100_101",
+      "initial_alt_count": 2,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_1100_80000008",
+      "initial_alt_count": 2,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_1100_0",
+      "initial_alt_count": 2,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_1101_101",
+      "initial_alt_count": 2,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_1101_80000008",
+      "initial_alt_count": 2,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_1101_0",
+      "initial_alt_count": 2,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_1110_101",
+      "initial_alt_count": 2,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_1110_80000008",
+      "initial_alt_count": 2,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_1110_0",
+      "initial_alt_count": 2,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_1111_101",
+      "initial_alt_count": 2,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": true,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_1111_80000008",
+      "initial_alt_count": 2,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": true,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "2_1111_0",
+      "initial_alt_count": 2,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": true,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_0000_101",
+      "initial_alt_count": 3,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 2,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_0000_80000008",
+      "initial_alt_count": 3,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 2,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_0000_0",
+      "initial_alt_count": 3,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 2,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_0001_101",
+      "initial_alt_count": 3,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 2,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_0001_80000008",
+      "initial_alt_count": 3,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 2,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_0001_0",
+      "initial_alt_count": 3,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 2,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_0010_101",
+      "initial_alt_count": 3,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 2,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_0010_80000008",
+      "initial_alt_count": 3,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 2,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_0010_0",
+      "initial_alt_count": 3,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 2,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_0011_101",
+      "initial_alt_count": 3,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 2,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_0011_80000008",
+      "initial_alt_count": 3,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 2,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_0011_0",
+      "initial_alt_count": 3,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 2,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_0100_101",
+      "initial_alt_count": 3,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 2,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_0100_80000008",
+      "initial_alt_count": 3,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 2,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_0100_0",
+      "initial_alt_count": 3,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 2,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_0101_101",
+      "initial_alt_count": 3,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 2,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_0101_80000008",
+      "initial_alt_count": 3,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 2,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_0101_0",
+      "initial_alt_count": 3,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 2,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_0110_101",
+      "initial_alt_count": 3,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 2,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_0110_80000008",
+      "initial_alt_count": 3,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 2,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_0110_0",
+      "initial_alt_count": 3,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 2,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_0111_101",
+      "initial_alt_count": 3,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 2,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_0111_80000008",
+      "initial_alt_count": 3,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 2,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_0111_0",
+      "initial_alt_count": 3,
+      "clear_arg": 0,
+      "eligible": true,
+      "count_after": 2,
+      "list_action": "ONE_UNLINK",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_1000_101",
+      "initial_alt_count": 3,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_1000_80000008",
+      "initial_alt_count": 3,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_1000_0",
+      "initial_alt_count": 3,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_1001_101",
+      "initial_alt_count": 3,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_1001_80000008",
+      "initial_alt_count": 3,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_1001_0",
+      "initial_alt_count": 3,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_1010_101",
+      "initial_alt_count": 3,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_1010_80000008",
+      "initial_alt_count": 3,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_1010_0",
+      "initial_alt_count": 3,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_1011_101",
+      "initial_alt_count": 3,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_1011_80000008",
+      "initial_alt_count": 3,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_1011_0",
+      "initial_alt_count": 3,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": false,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_1100_101",
+      "initial_alt_count": 3,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_1100_80000008",
+      "initial_alt_count": 3,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_1100_0",
+      "initial_alt_count": 3,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_1101_101",
+      "initial_alt_count": 3,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_1101_80000008",
+      "initial_alt_count": 3,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_1101_0",
+      "initial_alt_count": 3,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": false,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_1110_101",
+      "initial_alt_count": 3,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_1110_80000008",
+      "initial_alt_count": 3,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_1110_0",
+      "initial_alt_count": 3,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": false,
+      "post_clear_gate": false,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_1111_101",
+      "initial_alt_count": 3,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": true,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          257
+        ],
+        [
+          "0x186cc",
+          514
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_1111_80000008",
+      "initial_alt_count": 3,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": true,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          2147483656
+        ],
+        [
+          "0x186cc",
+          1911
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    },
+    {
+      "id": "3_1111_0",
+      "initial_alt_count": 3,
+      "clear_arg": 1,
+      "eligible": true,
+      "count_after": 0,
+      "list_action": "ALL_CLEAR",
+      "byte8c_zero": true,
+      "byte1f8_nonzero": true,
+      "pre_slot5f0_not_sentinel": true,
+      "post_clear_gate": true,
+      "pre_call_direct_coord_writes": [
+        [
+          "0x186c8",
+          0
+        ],
+        [
+          "0x186cc",
+          0
+        ]
+      ],
+      "tail_direct_writes": [
+        [
+          "0x186c0",
+          2147483656
+        ],
+        [
+          "0x186c4",
+          2147483656
+        ],
+        [
+          "0x186bc",
+          0
+        ]
+      ],
+      "virtual_effects": "UNKNOWN_NOT_MODELED",
+      "original_gameplay": "NOT_RUN"
+    }
+  ]
+}

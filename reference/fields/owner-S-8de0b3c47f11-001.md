@@ -211,11 +211,17 @@
 - [research/recovered/b_batch4/data/B_T012_STR_NATIVE_ABI_SUPER50_OFFLINE_20261024_16H.md 行 31](../../research/recovered/b_batch4/data/B_T012_STR_NATIVE_ABI_SUPER50_OFFLINE_20261024_16H.md?plain=1#L31-L31) — 前のPUSHで変わったESPを戻して計算する。`S`を`0x59CC95`直前のESPとすると、出力先は`S+0x300`（PUSH 1回済みで`ESP+0x304`）、getterの`RET 0x0C`で3スタック引数が復元された後のFILD参照先は`S+0x320`。**差は正確に`+0x20`**。`iStack
   制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
 
+- [research/recovered/json_sources1/reports/data/B_T012_STR_NATIVE_ABI_SUPER50_EVIDENCE_20261024_16H.json 行 56](../../research/recovered/json_sources1/reports/data/B_T012_STR_NATIVE_ABI_SUPER50_EVIDENCE_20261024_16H.json?plain=1#L56-L56) — "stack_abi_proof": "pointer LEA [ESP+0x304] calculated with 1 preceding PUSH => effective base S+0x300; GETTER RET 0xC pops three arguments; FILD at S+0x320, di
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
 <a id="field-320"></a>
 ## S + 0x320
 
 - [research/recovered/b_batch4/data/B_T012_STR_NATIVE_ABI_SUPER50_OFFLINE_20261024_16H.md 行 31](../../research/recovered/b_batch4/data/B_T012_STR_NATIVE_ABI_SUPER50_OFFLINE_20261024_16H.md?plain=1#L31-L31) — 前のPUSHで変わったESPを戻して計算する。`S`を`0x59CC95`直前のESPとすると、出力先は`S+0x300`（PUSH 1回済みで`ESP+0x304`）、getterの`RET 0x0C`で3スタック引数が復元された後のFILD参照先は`S+0x320`。**差は正確に`+0x20`**。`iStack
   制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+- [research/recovered/json_sources1/reports/data/B_T012_STR_NATIVE_ABI_SUPER50_EVIDENCE_20261024_16H.json 行 56](../../research/recovered/json_sources1/reports/data/B_T012_STR_NATIVE_ABI_SUPER50_EVIDENCE_20261024_16H.json?plain=1#L56-L56) — "stack_abi_proof": "pointer LEA [ESP+0x304] calculated with 1 preceding PUSH => effective base S+0x300; GETTER RET 0xC pops three arguments; FILD at S+0x320, di
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
 
 <a id="field-1eed54"></a>
 ## S + 0x1EED54

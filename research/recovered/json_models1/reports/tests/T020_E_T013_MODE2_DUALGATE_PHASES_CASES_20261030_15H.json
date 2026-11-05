@@ -1,0 +1,1069 @@
+{
+  "research_id": "E-AUDIT-20261030-15H-T020-T013-MODE2-DUALGATE-01",
+  "status": "STATIC_SYNTHETIC_ONLY",
+  "game_original": "NOT_RUN",
+  "cases": [
+    {
+      "id": "S001",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [],
+      "selected_index": null,
+      "stack4c_zero_at_postloop": false,
+      "local27_at_postloop": 0,
+      "expected_gate": "JNE_44C0FE_UNDETERMINED"
+    },
+    {
+      "id": "S002",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [],
+      "selected_index": null,
+      "stack4c_zero_at_postloop": false,
+      "local27_at_postloop": 1,
+      "expected_gate": "JNE_44C0FE_UNDETERMINED"
+    },
+    {
+      "id": "S003",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [],
+      "selected_index": null,
+      "stack4c_zero_at_postloop": true,
+      "local27_at_postloop": 0,
+      "expected_gate": "WRITE3_44C079"
+    },
+    {
+      "id": "S004",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [],
+      "selected_index": null,
+      "stack4c_zero_at_postloop": true,
+      "local27_at_postloop": 1,
+      "expected_gate": "NO_WRITE_44C079"
+    },
+    {
+      "id": "S005",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "selected_index": null,
+      "stack4c_zero_at_postloop": false,
+      "local27_at_postloop": 0,
+      "expected_gate": "JNE_44C0FE_UNDETERMINED"
+    },
+    {
+      "id": "S006",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "selected_index": null,
+      "stack4c_zero_at_postloop": false,
+      "local27_at_postloop": 1,
+      "expected_gate": "JNE_44C0FE_UNDETERMINED"
+    },
+    {
+      "id": "S007",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "selected_index": null,
+      "stack4c_zero_at_postloop": true,
+      "local27_at_postloop": 0,
+      "expected_gate": "WRITE3_44C079"
+    },
+    {
+      "id": "S008",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "selected_index": null,
+      "stack4c_zero_at_postloop": true,
+      "local27_at_postloop": 1,
+      "expected_gate": "NO_WRITE_44C079"
+    },
+    {
+      "id": "S009",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "selected_index": null,
+      "stack4c_zero_at_postloop": false,
+      "local27_at_postloop": 0,
+      "expected_gate": "JNE_44C0FE_UNDETERMINED"
+    },
+    {
+      "id": "S010",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "selected_index": null,
+      "stack4c_zero_at_postloop": false,
+      "local27_at_postloop": 1,
+      "expected_gate": "JNE_44C0FE_UNDETERMINED"
+    },
+    {
+      "id": "S011",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "selected_index": null,
+      "stack4c_zero_at_postloop": true,
+      "local27_at_postloop": 0,
+      "expected_gate": "WRITE3_44C079"
+    },
+    {
+      "id": "S012",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "selected_index": null,
+      "stack4c_zero_at_postloop": true,
+      "local27_at_postloop": 1,
+      "expected_gate": "NO_WRITE_44C079"
+    },
+    {
+      "id": "S013",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          1,
+          0
+        ]
+      ],
+      "selected_index": null,
+      "stack4c_zero_at_postloop": false,
+      "local27_at_postloop": 0,
+      "expected_gate": "JNE_44C0FE_UNDETERMINED"
+    },
+    {
+      "id": "S014",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          1,
+          0
+        ]
+      ],
+      "selected_index": null,
+      "stack4c_zero_at_postloop": false,
+      "local27_at_postloop": 1,
+      "expected_gate": "JNE_44C0FE_UNDETERMINED"
+    },
+    {
+      "id": "S015",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          1,
+          0
+        ]
+      ],
+      "selected_index": null,
+      "stack4c_zero_at_postloop": true,
+      "local27_at_postloop": 0,
+      "expected_gate": "WRITE3_44C079"
+    },
+    {
+      "id": "S016",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          1,
+          0
+        ]
+      ],
+      "selected_index": null,
+      "stack4c_zero_at_postloop": true,
+      "local27_at_postloop": 1,
+      "expected_gate": "NO_WRITE_44C079"
+    },
+    {
+      "id": "S017",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          0,
+          0
+        ]
+      ],
+      "selected_index": 0,
+      "stack4c_zero_at_postloop": false,
+      "local27_at_postloop": 0,
+      "expected_gate": "JNE_44C0FE_UNDETERMINED"
+    },
+    {
+      "id": "S018",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          0,
+          0
+        ]
+      ],
+      "selected_index": 0,
+      "stack4c_zero_at_postloop": false,
+      "local27_at_postloop": 1,
+      "expected_gate": "JNE_44C0FE_UNDETERMINED"
+    },
+    {
+      "id": "S019",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          0,
+          0
+        ]
+      ],
+      "selected_index": 0,
+      "stack4c_zero_at_postloop": true,
+      "local27_at_postloop": 0,
+      "expected_gate": "WRITE3_44C079"
+    },
+    {
+      "id": "S020",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          0,
+          0
+        ]
+      ],
+      "selected_index": 0,
+      "stack4c_zero_at_postloop": true,
+      "local27_at_postloop": 1,
+      "expected_gate": "NO_WRITE_44C079"
+    },
+    {
+      "id": "S021",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "selected_index": 2,
+      "stack4c_zero_at_postloop": false,
+      "local27_at_postloop": 0,
+      "expected_gate": "JNE_44C0FE_UNDETERMINED"
+    },
+    {
+      "id": "S022",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "selected_index": 2,
+      "stack4c_zero_at_postloop": false,
+      "local27_at_postloop": 1,
+      "expected_gate": "JNE_44C0FE_UNDETERMINED"
+    },
+    {
+      "id": "S023",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "selected_index": 2,
+      "stack4c_zero_at_postloop": true,
+      "local27_at_postloop": 0,
+      "expected_gate": "WRITE3_44C079"
+    },
+    {
+      "id": "S024",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "selected_index": 2,
+      "stack4c_zero_at_postloop": true,
+      "local27_at_postloop": 1,
+      "expected_gate": "NO_WRITE_44C079"
+    },
+    {
+      "id": "S025",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "selected_index": 2,
+      "stack4c_zero_at_postloop": false,
+      "local27_at_postloop": 0,
+      "expected_gate": "JNE_44C0FE_UNDETERMINED"
+    },
+    {
+      "id": "S026",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "selected_index": 2,
+      "stack4c_zero_at_postloop": false,
+      "local27_at_postloop": 1,
+      "expected_gate": "JNE_44C0FE_UNDETERMINED"
+    },
+    {
+      "id": "S027",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "selected_index": 2,
+      "stack4c_zero_at_postloop": true,
+      "local27_at_postloop": 0,
+      "expected_gate": "WRITE3_44C079"
+    },
+    {
+      "id": "S028",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "selected_index": 2,
+      "stack4c_zero_at_postloop": true,
+      "local27_at_postloop": 1,
+      "expected_gate": "NO_WRITE_44C079"
+    },
+    {
+      "id": "S029",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "selected_index": 0,
+      "stack4c_zero_at_postloop": false,
+      "local27_at_postloop": 0,
+      "expected_gate": "JNE_44C0FE_UNDETERMINED"
+    },
+    {
+      "id": "S030",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "selected_index": 0,
+      "stack4c_zero_at_postloop": false,
+      "local27_at_postloop": 1,
+      "expected_gate": "JNE_44C0FE_UNDETERMINED"
+    },
+    {
+      "id": "S031",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "selected_index": 0,
+      "stack4c_zero_at_postloop": true,
+      "local27_at_postloop": 0,
+      "expected_gate": "WRITE3_44C079"
+    },
+    {
+      "id": "S032",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "selected_index": 0,
+      "stack4c_zero_at_postloop": true,
+      "local27_at_postloop": 1,
+      "expected_gate": "NO_WRITE_44C079"
+    },
+    {
+      "id": "S033",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "selected_index": null,
+      "stack4c_zero_at_postloop": false,
+      "local27_at_postloop": 0,
+      "expected_gate": "JNE_44C0FE_UNDETERMINED"
+    },
+    {
+      "id": "S034",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "selected_index": null,
+      "stack4c_zero_at_postloop": false,
+      "local27_at_postloop": 1,
+      "expected_gate": "JNE_44C0FE_UNDETERMINED"
+    },
+    {
+      "id": "S035",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "selected_index": null,
+      "stack4c_zero_at_postloop": true,
+      "local27_at_postloop": 0,
+      "expected_gate": "WRITE3_44C079"
+    },
+    {
+      "id": "S036",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "selected_index": null,
+      "stack4c_zero_at_postloop": true,
+      "local27_at_postloop": 1,
+      "expected_gate": "NO_WRITE_44C079"
+    },
+    {
+      "id": "S037",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "selected_index": 1,
+      "stack4c_zero_at_postloop": false,
+      "local27_at_postloop": 0,
+      "expected_gate": "JNE_44C0FE_UNDETERMINED"
+    },
+    {
+      "id": "S038",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "selected_index": 1,
+      "stack4c_zero_at_postloop": false,
+      "local27_at_postloop": 1,
+      "expected_gate": "JNE_44C0FE_UNDETERMINED"
+    },
+    {
+      "id": "S039",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "selected_index": 1,
+      "stack4c_zero_at_postloop": true,
+      "local27_at_postloop": 0,
+      "expected_gate": "WRITE3_44C079"
+    },
+    {
+      "id": "S040",
+      "kind": "selector_postloop",
+      "second_pass_pairs": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "selected_index": 1,
+      "stack4c_zero_at_postloop": true,
+      "local27_at_postloop": 1,
+      "expected_gate": "NO_WRITE_44C079"
+    },
+    {
+      "id": "C041",
+      "kind": "crossphase",
+      "unit_byte_pairs": [],
+      "primary_index": null,
+      "second_index": null
+    },
+    {
+      "id": "C042",
+      "kind": "crossphase",
+      "unit_byte_pairs": [
+        [
+          1,
+          1
+        ]
+      ],
+      "primary_index": null,
+      "second_index": null
+    },
+    {
+      "id": "C043",
+      "kind": "crossphase",
+      "unit_byte_pairs": [
+        [
+          0,
+          1
+        ]
+      ],
+      "primary_index": 0,
+      "second_index": null
+    },
+    {
+      "id": "C044",
+      "kind": "crossphase",
+      "unit_byte_pairs": [
+        [
+          1,
+          0
+        ]
+      ],
+      "primary_index": null,
+      "second_index": null
+    },
+    {
+      "id": "C045",
+      "kind": "crossphase",
+      "unit_byte_pairs": [
+        [
+          0,
+          0
+        ]
+      ],
+      "primary_index": 0,
+      "second_index": 0
+    },
+    {
+      "id": "C046",
+      "kind": "crossphase",
+      "unit_byte_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "primary_index": 1,
+      "second_index": 2
+    },
+    {
+      "id": "C047",
+      "kind": "crossphase",
+      "unit_byte_pairs": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "primary_index": 1,
+      "second_index": 2
+    },
+    {
+      "id": "C048",
+      "kind": "crossphase",
+      "unit_byte_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "primary_index": 0,
+      "second_index": 0
+    },
+    {
+      "id": "C049",
+      "kind": "crossphase",
+      "unit_byte_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "primary_index": null,
+      "second_index": null
+    },
+    {
+      "id": "C050",
+      "kind": "crossphase",
+      "unit_byte_pairs": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "primary_index": 1,
+      "second_index": 1
+    },
+    {
+      "id": "L051",
+      "kind": "pergroup",
+      "selected_nonnull": true,
+      "first_unit_flags": [
+        0,
+        1,
+        0
+      ],
+      "group70": 0,
+      "group4c": 0,
+      "expected_route": "FAST_SKIP_TO_44C043"
+    },
+    {
+      "id": "L052",
+      "kind": "pergroup",
+      "selected_nonnull": true,
+      "first_unit_flags": [
+        0,
+        1,
+        0
+      ],
+      "group70": 1,
+      "group4c": 0,
+      "expected_route": "FAST_SKIP_TO_44C043"
+    },
+    {
+      "id": "L053",
+      "kind": "pergroup",
+      "selected_nonnull": true,
+      "first_unit_flags": [
+        0,
+        1,
+        0
+      ],
+      "group70": 1,
+      "group4c": 2147483656,
+      "expected_route": "FAST_SKIP_TO_44C043"
+    },
+    {
+      "id": "L054",
+      "kind": "pergroup",
+      "selected_nonnull": true,
+      "first_unit_flags": [
+        0,
+        0,
+        0
+      ],
+      "group70": 0,
+      "group4c": 0,
+      "expected_route": "SET_LOCAL27_AT_44C010"
+    },
+    {
+      "id": "L055",
+      "kind": "pergroup",
+      "selected_nonnull": true,
+      "first_unit_flags": [
+        0,
+        0,
+        0
+      ],
+      "group70": 1,
+      "group4c": 0,
+      "expected_route": "SET_LOCAL27_AT_44C020"
+    },
+    {
+      "id": "L056",
+      "kind": "pergroup",
+      "selected_nonnull": true,
+      "first_unit_flags": [
+        0,
+        0,
+        0
+      ],
+      "group70": 1,
+      "group4c": 2147483656,
+      "expected_route": "CALL_565780_5158E0_EFFECT_UNKNOWN"
+    },
+    {
+      "id": "L057",
+      "kind": "pergroup",
+      "selected_nonnull": true,
+      "first_unit_flags": [
+        1,
+        1,
+        0
+      ],
+      "group70": 0,
+      "group4c": 0,
+      "expected_route": "SET_LOCAL27_AT_44C010"
+    },
+    {
+      "id": "L058",
+      "kind": "pergroup",
+      "selected_nonnull": true,
+      "first_unit_flags": [
+        1,
+        1,
+        0
+      ],
+      "group70": 1,
+      "group4c": 0,
+      "expected_route": "SET_LOCAL27_AT_44C020"
+    },
+    {
+      "id": "L059",
+      "kind": "pergroup",
+      "selected_nonnull": true,
+      "first_unit_flags": [
+        1,
+        1,
+        0
+      ],
+      "group70": 1,
+      "group4c": 2147483656,
+      "expected_route": "CALL_565780_5158E0_EFFECT_UNKNOWN"
+    },
+    {
+      "id": "L060",
+      "kind": "pergroup",
+      "selected_nonnull": true,
+      "first_unit_flags": [
+        0,
+        1,
+        1
+      ],
+      "group70": 0,
+      "group4c": 0,
+      "expected_route": "SET_LOCAL27_AT_44C010"
+    },
+    {
+      "id": "L061",
+      "kind": "pergroup",
+      "selected_nonnull": true,
+      "first_unit_flags": [
+        0,
+        1,
+        1
+      ],
+      "group70": 1,
+      "group4c": 0,
+      "expected_route": "SET_LOCAL27_AT_44C020"
+    },
+    {
+      "id": "L062",
+      "kind": "pergroup",
+      "selected_nonnull": true,
+      "first_unit_flags": [
+        0,
+        1,
+        1
+      ],
+      "group70": 1,
+      "group4c": 2147483656,
+      "expected_route": "CALL_565780_5158E0_EFFECT_UNKNOWN"
+    },
+    {
+      "id": "U063",
+      "kind": "pergroup",
+      "selected_nonnull": false,
+      "first_unit_flags": null,
+      "group70": 0,
+      "group4c": 0,
+      "expected_route": "NO_SELECTED_SKIP_TO_44C043"
+    },
+    {
+      "id": "U064",
+      "kind": "pergroup",
+      "selected_nonnull": false,
+      "first_unit_flags": null,
+      "group70": 1,
+      "group4c": 0,
+      "expected_route": "NO_SELECTED_SKIP_TO_44C043"
+    },
+    {
+      "id": "U065",
+      "kind": "pergroup",
+      "selected_nonnull": false,
+      "first_unit_flags": null,
+      "group70": 1,
+      "group4c": 2147483656,
+      "expected_route": "NO_SELECTED_SKIP_TO_44C043"
+    },
+    {
+      "id": "N066",
+      "kind": "overclaim_guard",
+      "unsupported_claim": "second_pass_checks_only_1867c",
+      "must_reject": true
+    },
+    {
+      "id": "N067",
+      "kind": "overclaim_guard",
+      "unsupported_claim": "primary_pass_also_requires_1867e",
+      "must_reject": true
+    },
+    {
+      "id": "N068",
+      "kind": "overclaim_guard",
+      "unsupported_claim": "scratch_nonzero_immediately_writes_mode3",
+      "must_reject": true
+    },
+    {
+      "id": "N069",
+      "kind": "overclaim_guard",
+      "unsupported_claim": "candidate_always_equals_first_unit",
+      "must_reject": true
+    },
+    {
+      "id": "N070",
+      "kind": "overclaim_guard",
+      "unsupported_claim": "any_candidate_guarantees_mode3",
+      "must_reject": true
+    },
+    {
+      "id": "N071",
+      "kind": "overclaim_guard",
+      "unsupported_claim": "helper_calls_prove_runtime_side_effect",
+      "must_reject": true
+    },
+    {
+      "id": "N072",
+      "kind": "overclaim_guard",
+      "unsupported_claim": "scratch_writer_proven",
+      "must_reject": true
+    },
+    {
+      "id": "N073",
+      "kind": "overclaim_guard",
+      "unsupported_claim": "first_unit_null_safety_proven",
+      "must_reject": true
+    },
+    {
+      "id": "N074",
+      "kind": "overclaim_guard",
+      "unsupported_claim": "group_b8_is_persistent_across_ticks",
+      "must_reject": true
+    },
+    {
+      "id": "N075",
+      "kind": "overclaim_guard",
+      "unsupported_claim": "stack_4c_is_always_zero",
+      "must_reject": true
+    },
+    {
+      "id": "N076",
+      "kind": "overclaim_guard",
+      "unsupported_claim": "0x44c0fe_outcome_proven",
+      "must_reject": true
+    },
+    {
+      "id": "N077",
+      "kind": "overclaim_guard",
+      "unsupported_claim": "unit_byte_flags_gameplay_names_proven",
+      "must_reject": true
+    },
+    {
+      "id": "N078",
+      "kind": "overclaim_guard",
+      "unsupported_claim": "original_gameplay_pass_from_static",
+      "must_reject": true
+    },
+    {
+      "id": "N079",
+      "kind": "overclaim_guard",
+      "unsupported_claim": "all_synthetic_cases_strict_match",
+      "must_reject": true
+    }
+  ]
+}

@@ -1,0 +1,2907 @@
+{
+  "research_id": "E-AUDIT-20261031-03H-T020-T013-EFFECTIVE-CONTEXT-BOUNDARY-01",
+  "owner": "E/T020",
+  "type": "STATIC_AND_CONDITIONAL_SYNTHETIC",
+  "status": "VERIFY_NOT_READY",
+  "source_sha256": {
+    "DAT": "C87F523F8B3DC41112132B48917FFAE2E2435B30EAB61EC87C96679CDA7B3547",
+    "B": "7955FA4E9D75300BFA7C89F5C87265975C55113586586EC73ACAEAB4E8436E57",
+    "PE": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+    "GETTER": "9DF1852AF25A81CF9983D6E869A3867A3A777FD1D38E87F263BC631BFAE6DAA6"
+  },
+  "original_dat_values": {
+    "btl_limit": 1300,
+    "btl_limit_c": 1500
+  },
+  "dynamic_observed": 0,
+  "actual_golden_pass": 0,
+  "strict_match": 0,
+  "assumptions": [
+    "K abstracted from old clock logic",
+    "original DAT value resolution at runtime not dynamically observed",
+    "ABSENT and EXPLICIT_ZERO are hypothetical source conditions",
+    "no original game execution and no x87/NaN guarantee"
+  ],
+  "cases": [
+    {
+      "case_id": "SYN-001",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "state": "DAT_PRESENT",
+        "K": 259,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-002",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "state": "DAT_PRESENT",
+        "K": 260,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-003",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "state": "DAT_PRESENT",
+        "K": 261,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-004",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "state": "ABSENT",
+        "K": 99,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-005",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "state": "ABSENT",
+        "K": 100,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-006",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "state": "ABSENT",
+        "K": 101,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-007",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "state": "EXPLICIT_ZERO",
+        "K": -1,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-008",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "state": "EXPLICIT_ZERO",
+        "K": 0,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-009",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "state": "EXPLICIT_ZERO",
+        "K": 1,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-010",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "state": "DAT_PRESENT",
+        "K": 259,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-011",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "state": "DAT_PRESENT",
+        "K": 260,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-012",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "state": "DAT_PRESENT",
+        "K": 261,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-013",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "state": "ABSENT",
+        "K": 99,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-014",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "state": "ABSENT",
+        "K": 100,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-015",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "state": "ABSENT",
+        "K": 101,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-016",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "state": "EXPLICIT_ZERO",
+        "K": -1,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-017",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "state": "EXPLICIT_ZERO",
+        "K": 0,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-018",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "state": "EXPLICIT_ZERO",
+        "K": 1,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-019",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "state": "DAT_PRESENT",
+        "K": 299,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 7,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-020",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "state": "DAT_PRESENT",
+        "K": 300,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 7,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-021",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "state": "DAT_PRESENT",
+        "K": 301,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 7,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-022",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "state": "ABSENT",
+        "K": 99,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 7,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-023",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "state": "ABSENT",
+        "K": 100,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 7,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-024",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "state": "ABSENT",
+        "K": 101,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 7,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-025",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "state": "EXPLICIT_ZERO",
+        "K": -1,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 7,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-026",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "state": "EXPLICIT_ZERO",
+        "K": 0,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 7,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-027",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "state": "EXPLICIT_ZERO",
+        "K": 1,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 7,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-028",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "state": "DAT_PRESENT",
+        "K": 299,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-029",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "state": "DAT_PRESENT",
+        "K": 300,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-030",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "state": "DAT_PRESENT",
+        "K": 301,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-031",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "state": "ABSENT",
+        "K": 99,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-032",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "state": "ABSENT",
+        "K": 100,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-033",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "state": "ABSENT",
+        "K": 101,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-034",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "state": "EXPLICIT_ZERO",
+        "K": -1,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-035",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "state": "EXPLICIT_ZERO",
+        "K": 0,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-036",
+      "inputs": {
+        "category": 1,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "state": "EXPLICIT_ZERO",
+        "K": 1,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-037",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "state": "DAT_PRESENT",
+        "K": 259,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": "btl_limit",
+        "property_value": 1300,
+        "threshold": 260
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-038",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "state": "DAT_PRESENT",
+        "K": 260,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 1,
+        "final": 1,
+        "key_fetched": "btl_limit",
+        "property_value": 1300,
+        "threshold": 260
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-039",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "state": "DAT_PRESENT",
+        "K": 261,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 1,
+        "final": 1,
+        "key_fetched": "btl_limit",
+        "property_value": 1300,
+        "threshold": 260
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-040",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "state": "ABSENT",
+        "K": 99,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": "btl_limit",
+        "property_value": 500,
+        "threshold": 100
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-041",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "state": "ABSENT",
+        "K": 100,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 1,
+        "final": 1,
+        "key_fetched": "btl_limit",
+        "property_value": 500,
+        "threshold": 100
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-042",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "state": "ABSENT",
+        "K": 101,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 1,
+        "final": 1,
+        "key_fetched": "btl_limit",
+        "property_value": 500,
+        "threshold": 100
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-043",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "state": "EXPLICIT_ZERO",
+        "K": -1,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": "btl_limit",
+        "property_value": 0,
+        "threshold": 0
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-044",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "state": "EXPLICIT_ZERO",
+        "K": 0,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 1,
+        "final": 1,
+        "key_fetched": "btl_limit",
+        "property_value": 0,
+        "threshold": 0
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-045",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "state": "EXPLICIT_ZERO",
+        "K": 1,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 1,
+        "final": 1,
+        "key_fetched": "btl_limit",
+        "property_value": 0,
+        "threshold": 0
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-046",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "state": "DAT_PRESENT",
+        "K": 259,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": "btl_limit",
+        "property_value": 1300,
+        "threshold": 260
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-047",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "state": "DAT_PRESENT",
+        "K": 260,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 1,
+        "final": 1,
+        "key_fetched": "btl_limit",
+        "property_value": 1300,
+        "threshold": 260
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-048",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "state": "DAT_PRESENT",
+        "K": 261,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 1,
+        "final": 1,
+        "key_fetched": "btl_limit",
+        "property_value": 1300,
+        "threshold": 260
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-049",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "state": "ABSENT",
+        "K": 99,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": "btl_limit",
+        "property_value": 500,
+        "threshold": 100
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-050",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "state": "ABSENT",
+        "K": 100,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 1,
+        "final": 1,
+        "key_fetched": "btl_limit",
+        "property_value": 500,
+        "threshold": 100
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-051",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "state": "ABSENT",
+        "K": 101,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 1,
+        "final": 1,
+        "key_fetched": "btl_limit",
+        "property_value": 500,
+        "threshold": 100
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-052",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "state": "EXPLICIT_ZERO",
+        "K": -1,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": "btl_limit",
+        "property_value": 0,
+        "threshold": 0
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-053",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "state": "EXPLICIT_ZERO",
+        "K": 0,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 1,
+        "final": 1,
+        "key_fetched": "btl_limit",
+        "property_value": 0,
+        "threshold": 0
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-054",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "state": "EXPLICIT_ZERO",
+        "K": 1,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 1,
+        "final": 1,
+        "key_fetched": "btl_limit",
+        "property_value": 0,
+        "threshold": 0
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-055",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "state": "DAT_PRESENT",
+        "K": 299,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 7,
+        "key_fetched": "btl_limit_c",
+        "property_value": 1500,
+        "threshold": 300
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-056",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "state": "DAT_PRESENT",
+        "K": 300,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 1,
+        "final": 1,
+        "key_fetched": "btl_limit_c",
+        "property_value": 1500,
+        "threshold": 300
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-057",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "state": "DAT_PRESENT",
+        "K": 301,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 1,
+        "final": 1,
+        "key_fetched": "btl_limit_c",
+        "property_value": 1500,
+        "threshold": 300
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-058",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "state": "ABSENT",
+        "K": 99,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 7,
+        "key_fetched": "btl_limit_c",
+        "property_value": 500,
+        "threshold": 100
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-059",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "state": "ABSENT",
+        "K": 100,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 1,
+        "final": 1,
+        "key_fetched": "btl_limit_c",
+        "property_value": 500,
+        "threshold": 100
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-060",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "state": "ABSENT",
+        "K": 101,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 1,
+        "final": 1,
+        "key_fetched": "btl_limit_c",
+        "property_value": 500,
+        "threshold": 100
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-061",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "state": "EXPLICIT_ZERO",
+        "K": -1,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 7,
+        "key_fetched": "btl_limit_c",
+        "property_value": 0,
+        "threshold": 0
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-062",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "state": "EXPLICIT_ZERO",
+        "K": 0,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 1,
+        "final": 1,
+        "key_fetched": "btl_limit_c",
+        "property_value": 0,
+        "threshold": 0
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-063",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "state": "EXPLICIT_ZERO",
+        "K": 1,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 1,
+        "final": 1,
+        "key_fetched": "btl_limit_c",
+        "property_value": 0,
+        "threshold": 0
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-064",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "state": "DAT_PRESENT",
+        "K": 299,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": "btl_limit_c",
+        "property_value": 1500,
+        "threshold": 300
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-065",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "state": "DAT_PRESENT",
+        "K": 300,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 1,
+        "final": 1,
+        "key_fetched": "btl_limit_c",
+        "property_value": 1500,
+        "threshold": 300
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-066",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "state": "DAT_PRESENT",
+        "K": 301,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 1,
+        "final": 1,
+        "key_fetched": "btl_limit_c",
+        "property_value": 1500,
+        "threshold": 300
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-067",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "state": "ABSENT",
+        "K": 99,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": "btl_limit_c",
+        "property_value": 500,
+        "threshold": 100
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-068",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "state": "ABSENT",
+        "K": 100,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 1,
+        "final": 1,
+        "key_fetched": "btl_limit_c",
+        "property_value": 500,
+        "threshold": 100
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-069",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "state": "ABSENT",
+        "K": 101,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 1,
+        "final": 1,
+        "key_fetched": "btl_limit_c",
+        "property_value": 500,
+        "threshold": 100
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-070",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "state": "EXPLICIT_ZERO",
+        "K": -1,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": "btl_limit_c",
+        "property_value": 0,
+        "threshold": 0
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-071",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "state": "EXPLICIT_ZERO",
+        "K": 0,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 1,
+        "final": 1,
+        "key_fetched": "btl_limit_c",
+        "property_value": 0,
+        "threshold": 0
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-072",
+      "inputs": {
+        "category": 1,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "state": "EXPLICIT_ZERO",
+        "K": 1,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 1,
+        "final": 1,
+        "key_fetched": "btl_limit_c",
+        "property_value": 0,
+        "threshold": 0
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-073",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "state": "DAT_PRESENT",
+        "K": 259,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-074",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "state": "DAT_PRESENT",
+        "K": 260,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-075",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "state": "DAT_PRESENT",
+        "K": 261,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-076",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "state": "ABSENT",
+        "K": 99,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-077",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "state": "ABSENT",
+        "K": 100,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-078",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "state": "ABSENT",
+        "K": 101,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-079",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "state": "EXPLICIT_ZERO",
+        "K": -1,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-080",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "state": "EXPLICIT_ZERO",
+        "K": 0,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-081",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 0,
+        "m18": 0,
+        "state": "EXPLICIT_ZERO",
+        "K": 1,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-082",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "state": "DAT_PRESENT",
+        "K": 259,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-083",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "state": "DAT_PRESENT",
+        "K": 260,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-084",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "state": "DAT_PRESENT",
+        "K": 261,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-085",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "state": "ABSENT",
+        "K": 99,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-086",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "state": "ABSENT",
+        "K": 100,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-087",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "state": "ABSENT",
+        "K": 101,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-088",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "state": "EXPLICIT_ZERO",
+        "K": -1,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-089",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "state": "EXPLICIT_ZERO",
+        "K": 0,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-090",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 0,
+        "m18": 1,
+        "state": "EXPLICIT_ZERO",
+        "K": 1,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-091",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "state": "DAT_PRESENT",
+        "K": 299,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 7,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-092",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "state": "DAT_PRESENT",
+        "K": 300,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 7,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-093",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "state": "DAT_PRESENT",
+        "K": 301,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 7,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-094",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "state": "ABSENT",
+        "K": 99,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 7,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-095",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "state": "ABSENT",
+        "K": 100,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 7,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-096",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "state": "ABSENT",
+        "K": 101,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 7,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-097",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "state": "EXPLICIT_ZERO",
+        "K": -1,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 7,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-098",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "state": "EXPLICIT_ZERO",
+        "K": 0,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 7,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-099",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 1,
+        "m18": 0,
+        "state": "EXPLICIT_ZERO",
+        "K": 1,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 7,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-100",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "state": "DAT_PRESENT",
+        "K": 299,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-101",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "state": "DAT_PRESENT",
+        "K": 300,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-102",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "state": "DAT_PRESENT",
+        "K": 301,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-103",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "state": "ABSENT",
+        "K": 99,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-104",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "state": "ABSENT",
+        "K": 100,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-105",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "state": "ABSENT",
+        "K": 101,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-106",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "state": "EXPLICIT_ZERO",
+        "K": -1,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-107",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "state": "EXPLICIT_ZERO",
+        "K": 0,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-108",
+      "inputs": {
+        "category": 7,
+        "m98": 10,
+        "flag": 1,
+        "m18": 1,
+        "state": "EXPLICIT_ZERO",
+        "K": 1,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": null,
+        "property_value": null,
+        "threshold": null
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-109",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "state": "DAT_PRESENT",
+        "K": 259,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": "btl_limit",
+        "property_value": 1300,
+        "threshold": 260
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-110",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "state": "DAT_PRESENT",
+        "K": 260,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 7,
+        "final": 7,
+        "key_fetched": "btl_limit",
+        "property_value": 1300,
+        "threshold": 260
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-111",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "state": "DAT_PRESENT",
+        "K": 261,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 7,
+        "final": 7,
+        "key_fetched": "btl_limit",
+        "property_value": 1300,
+        "threshold": 260
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-112",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "state": "ABSENT",
+        "K": 99,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": "btl_limit",
+        "property_value": 500,
+        "threshold": 100
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-113",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "state": "ABSENT",
+        "K": 100,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 7,
+        "final": 7,
+        "key_fetched": "btl_limit",
+        "property_value": 500,
+        "threshold": 100
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-114",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "state": "ABSENT",
+        "K": 101,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 7,
+        "final": 7,
+        "key_fetched": "btl_limit",
+        "property_value": 500,
+        "threshold": 100
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-115",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "state": "EXPLICIT_ZERO",
+        "K": -1,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": "btl_limit",
+        "property_value": 0,
+        "threshold": 0
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-116",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "state": "EXPLICIT_ZERO",
+        "K": 0,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 7,
+        "final": 7,
+        "key_fetched": "btl_limit",
+        "property_value": 0,
+        "threshold": 0
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-117",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 0,
+        "m18": 0,
+        "state": "EXPLICIT_ZERO",
+        "K": 1,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 7,
+        "final": 7,
+        "key_fetched": "btl_limit",
+        "property_value": 0,
+        "threshold": 0
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-118",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "state": "DAT_PRESENT",
+        "K": 259,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": "btl_limit",
+        "property_value": 1300,
+        "threshold": 260
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-119",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "state": "DAT_PRESENT",
+        "K": 260,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 7,
+        "final": 7,
+        "key_fetched": "btl_limit",
+        "property_value": 1300,
+        "threshold": 260
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-120",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "state": "DAT_PRESENT",
+        "K": 261,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 7,
+        "final": 7,
+        "key_fetched": "btl_limit",
+        "property_value": 1300,
+        "threshold": 260
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-121",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "state": "ABSENT",
+        "K": 99,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": "btl_limit",
+        "property_value": 500,
+        "threshold": 100
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-122",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "state": "ABSENT",
+        "K": 100,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 7,
+        "final": 7,
+        "key_fetched": "btl_limit",
+        "property_value": 500,
+        "threshold": 100
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-123",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "state": "ABSENT",
+        "K": 101,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 7,
+        "final": 7,
+        "key_fetched": "btl_limit",
+        "property_value": 500,
+        "threshold": 100
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-124",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "state": "EXPLICIT_ZERO",
+        "K": -1,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": "btl_limit",
+        "property_value": 0,
+        "threshold": 0
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-125",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "state": "EXPLICIT_ZERO",
+        "K": 0,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 7,
+        "final": 7,
+        "key_fetched": "btl_limit",
+        "property_value": 0,
+        "threshold": 0
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-126",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 0,
+        "m18": 1,
+        "state": "EXPLICIT_ZERO",
+        "K": 1,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 7,
+        "final": 7,
+        "key_fetched": "btl_limit",
+        "property_value": 0,
+        "threshold": 0
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-127",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "state": "DAT_PRESENT",
+        "K": 299,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 7,
+        "key_fetched": "btl_limit_c",
+        "property_value": 1500,
+        "threshold": 300
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-128",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "state": "DAT_PRESENT",
+        "K": 300,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 7,
+        "final": 7,
+        "key_fetched": "btl_limit_c",
+        "property_value": 1500,
+        "threshold": 300
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-129",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "state": "DAT_PRESENT",
+        "K": 301,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 7,
+        "final": 7,
+        "key_fetched": "btl_limit_c",
+        "property_value": 1500,
+        "threshold": 300
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-130",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "state": "ABSENT",
+        "K": 99,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 7,
+        "key_fetched": "btl_limit_c",
+        "property_value": 500,
+        "threshold": 100
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-131",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "state": "ABSENT",
+        "K": 100,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 7,
+        "final": 7,
+        "key_fetched": "btl_limit_c",
+        "property_value": 500,
+        "threshold": 100
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-132",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "state": "ABSENT",
+        "K": 101,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 7,
+        "final": 7,
+        "key_fetched": "btl_limit_c",
+        "property_value": 500,
+        "threshold": 100
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-133",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "state": "EXPLICIT_ZERO",
+        "K": -1,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 7,
+        "key_fetched": "btl_limit_c",
+        "property_value": 0,
+        "threshold": 0
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-134",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "state": "EXPLICIT_ZERO",
+        "K": 0,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 7,
+        "final": 7,
+        "key_fetched": "btl_limit_c",
+        "property_value": 0,
+        "threshold": 0
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-135",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 1,
+        "m18": 0,
+        "state": "EXPLICIT_ZERO",
+        "K": 1,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 7,
+        "final": 7,
+        "key_fetched": "btl_limit_c",
+        "property_value": 0,
+        "threshold": 0
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-136",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "state": "DAT_PRESENT",
+        "K": 299,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": "btl_limit_c",
+        "property_value": 1500,
+        "threshold": 300
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-137",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "state": "DAT_PRESENT",
+        "K": 300,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 7,
+        "final": 7,
+        "key_fetched": "btl_limit_c",
+        "property_value": 1500,
+        "threshold": 300
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-138",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "state": "DAT_PRESENT",
+        "K": 301,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 7,
+        "final": 7,
+        "key_fetched": "btl_limit_c",
+        "property_value": 1500,
+        "threshold": 300
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-139",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "state": "ABSENT",
+        "K": 99,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": "btl_limit_c",
+        "property_value": 500,
+        "threshold": 100
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-140",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "state": "ABSENT",
+        "K": 100,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 7,
+        "final": 7,
+        "key_fetched": "btl_limit_c",
+        "property_value": 500,
+        "threshold": 100
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-141",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "state": "ABSENT",
+        "K": 101,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 7,
+        "final": 7,
+        "key_fetched": "btl_limit_c",
+        "property_value": 500,
+        "threshold": 100
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-142",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "state": "EXPLICIT_ZERO",
+        "K": -1,
+        "relative_boundary": -1
+      },
+      "expected_conditional": {
+        "pre_relabel": 6,
+        "final": 6,
+        "key_fetched": "btl_limit_c",
+        "property_value": 0,
+        "threshold": 0
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-143",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "state": "EXPLICIT_ZERO",
+        "K": 0,
+        "relative_boundary": 0
+      },
+      "expected_conditional": {
+        "pre_relabel": 7,
+        "final": 7,
+        "key_fetched": "btl_limit_c",
+        "property_value": 0,
+        "threshold": 0
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    },
+    {
+      "case_id": "SYN-144",
+      "inputs": {
+        "category": 7,
+        "m98": 11,
+        "flag": 1,
+        "m18": 1,
+        "state": "EXPLICIT_ZERO",
+        "K": 1,
+        "relative_boundary": 1
+      },
+      "expected_conditional": {
+        "pre_relabel": 7,
+        "final": 7,
+        "key_fetched": "btl_limit_c",
+        "property_value": 0,
+        "threshold": 0
+      },
+      "source": "SYNTHETIC_NOT_OLD_EXE_OBSERVATION"
+    }
+  ]
+}

@@ -1,0 +1,307 @@
+{
+  "status": "OFFLINE-UNSYNCED / STATIC-ASM / STATIC-SQLITE / STATIC-DERIVED / SYNTHETIC / VERIFY / NOT READY",
+  "exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "db_sha256": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF",
+  "sqlite_integrity": "ok",
+  "opcode_count": 27,
+  "call_count": 4,
+  "functions_sha_count": 3,
+  "synthetic_cases": 4,
+  "opcodes": [
+    {
+      "va": "0x00547F3F",
+      "bytes": "8D457C",
+      "ok": true
+    },
+    {
+      "va": "0x00547F4E",
+      "bytes": "66C7400C0001",
+      "ok": true
+    },
+    {
+      "va": "0x00547F55",
+      "bytes": "66C7400D0101",
+      "ok": true
+    },
+    {
+      "va": "0x00547F5C",
+      "bytes": "C6400E00",
+      "ok": true
+    },
+    {
+      "va": "0x00547F65",
+      "bytes": "C644242401",
+      "ok": true
+    },
+    {
+      "va": "0x00547F7F",
+      "bytes": "0F872FFFFFFF",
+      "ok": true
+    },
+    {
+      "va": "0x00547F85",
+      "bytes": "807C242400",
+      "ok": true
+    },
+    {
+      "va": "0x00547F96",
+      "bytes": "298594000000",
+      "ok": true
+    },
+    {
+      "va": "0x005510E5",
+      "bytes": "83FA0A",
+      "ok": true
+    },
+    {
+      "va": "0x005510EA",
+      "bytes": "33FF",
+      "ok": true
+    },
+    {
+      "va": "0x005510EC",
+      "bytes": "EB68",
+      "ok": true
+    },
+    {
+      "va": "0x00551143",
+      "bytes": "8B4504",
+      "ok": true
+    },
+    {
+      "va": "0x00551154",
+      "bytes": "FFD2",
+      "ok": true
+    },
+    {
+      "va": "0x00551156",
+      "bytes": "8B83C8010000",
+      "ok": true
+    },
+    {
+      "va": "0x0055115C",
+      "bytes": "8B8878010000",
+      "ok": true
+    },
+    {
+      "va": "0x00551162",
+      "bytes": "51",
+      "ok": true
+    },
+    {
+      "va": "0x00551163",
+      "bytes": "57",
+      "ok": true
+    },
+    {
+      "va": "0x00551164",
+      "bytes": "53",
+      "ok": true
+    },
+    {
+      "va": "0x00551165",
+      "bytes": "8BC5",
+      "ok": true
+    },
+    {
+      "va": "0x00551E74",
+      "bytes": "83B8D001000000",
+      "ok": true
+    },
+    {
+      "va": "0x00551E81",
+      "bytes": "80B81486010000",
+      "ok": true
+    },
+    {
+      "va": "0x00551E8E",
+      "bytes": "807E0C00",
+      "ok": true
+    },
+    {
+      "va": "0x00551E9F",
+      "bytes": "C6460C01",
+      "ok": true
+    },
+    {
+      "va": "0x00551FB2",
+      "bytes": "01976C010000",
+      "ok": true
+    },
+    {
+      "va": "0x00551FC9",
+      "bytes": "3B8770010000",
+      "ok": true
+    },
+    {
+      "va": "0x00551FD8",
+      "bytes": "807E0E00",
+      "ok": true
+    },
+    {
+      "va": "0x00551FDC",
+      "bytes": "7434",
+      "ok": true
+    }
+  ],
+  "calls": [
+    {
+      "site": "0x00547F60",
+      "caller": "0x00547DB0",
+      "target": "0x00550E70",
+      "rel32": 36619,
+      "sqlite_match": true
+    },
+    {
+      "site": "0x00551167",
+      "caller": "0x00550E70",
+      "target": "0x00551E50",
+      "rel32": 3300,
+      "sqlite_match": true
+    },
+    {
+      "site": "0x00551FD3",
+      "caller": "0x00551E50",
+      "target": "0x0058A650",
+      "rel32": 231032,
+      "sqlite_match": true
+    },
+    {
+      "site": "0x00551FF5",
+      "caller": "0x00551E50",
+      "target": "0x004E13F0",
+      "rel32": -461834,
+      "sqlite_match": true
+    }
+  ],
+  "functions": [
+    {
+      "va": "0x00547DB0",
+      "size_bytes": 513,
+      "pseudoc_sha256": "47A697D2EFCBD96569B45A4FA6286BB3C7E59490FA35FDC8491C608A92B85447",
+      "sha256_match": true
+    },
+    {
+      "va": "0x00550E70",
+      "size_bytes": 1566,
+      "pseudoc_sha256": "4F0ADBF3458EA25BAF3EE64A8D3E38DBDBFC2E282E167FAD57E5DCAD20299869",
+      "sha256_match": true
+    },
+    {
+      "va": "0x00551E50",
+      "size_bytes": 457,
+      "pseudoc_sha256": "6A57F71F09FCAAF4E1755AB65DF7737BAD6C1D8CD4E0757E8BBAC7C9D5FFAAD6",
+      "sha256_match": true
+    }
+  ],
+  "synthetic": [
+    {
+      "eligible_targets": 0,
+      "core_calls": 0,
+      "mp_debit_occurrences": 0,
+      "exp_helper_gate_open_at_entry": 0,
+      "context_e_notification_gate": 0,
+      "observations": []
+    },
+    {
+      "eligible_targets": 1,
+      "core_calls": 1,
+      "mp_debit_occurrences": 1,
+      "exp_helper_gate_open_at_entry": 1,
+      "context_e_notification_gate": 0,
+      "observations": [
+        {
+          "target": 0,
+          "at_core_entry": [
+            0,
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "eligible_targets": 2,
+      "core_calls": 2,
+      "mp_debit_occurrences": 1,
+      "exp_helper_gate_open_at_entry": 2,
+      "context_e_notification_gate": 0,
+      "observations": [
+        {
+          "target": 0,
+          "at_core_entry": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "target": 1,
+          "at_core_entry": [
+            0,
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "eligible_targets": 3,
+      "core_calls": 3,
+      "mp_debit_occurrences": 1,
+      "exp_helper_gate_open_at_entry": 3,
+      "context_e_notification_gate": 0,
+      "observations": [
+        {
+          "target": 0,
+          "at_core_entry": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "target": 1,
+          "at_core_entry": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "target": 2,
+          "at_core_entry": [
+            0,
+            1,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "Static and synthetic only: not a gameplay Golden test; actual EXP, HP, events and RNG unresolved.",
+  "research_id": "B-OFFLINE-20261023-1017-T012-T013-ALLFUNC-HITCTX-EXP-REARM-01",
+  "recovery_id": "B-RC-20261023-1017-LOCAL429-01",
+  "source_zip_sha256": "911E5E37A3F9BD5B36F929AF94B0D1E2CD1CD5CF34E3E2F16C8FC800ABF5F7C2",
+  "zip_entries": 34,
+  "zip_crc_result": null,
+  "snapshot": "2026-10-21/MASTER checkpoint195; not current PC canonical",
+  "owner": "B/T012,T013; T011 crossref only",
+  "source_ref": [
+    "research_snapshot/data/T012_BATTLE_CALC.md §34,§59,§77 (existing findings: NOT re-counted)",
+    "research_snapshot/evidence/LANE_B_HANDOFF.md",
+    "Library 2026-10-23 09:09 B_T012_T013_DUAL_POOL_RANGE_FANOUT...",
+    "search.sqlite functions/calls, original EXE code bytes"
+  ],
+  "new_delta": "Crossjoin of per-candidate hit-context +0xC reset and 0x551E50 once-per-context guard, alongside once-per-fanout MP debit and context+0xE notification suppression.",
+  "actual_gameplay_golden_pass": 0,
+  "strict_match": 0,
+  "new_ready": 0,
+  "master_integrations": 0,
+  "limitations": [
+    "Latest PC MASTER and owners not available (Local HTTP 429)",
+    "Eligible EXP remains conditional on skill sentinel, linked Unit, target state and helper branches",
+    "No runtime RNG/target HP/EXP measurements",
+    "No claim EXP name or level-up notification semantics absolutely proven"
+  ]
+}

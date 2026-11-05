@@ -1,0 +1,411 @@
+{
+  "id": "B-OFFLINE-20261022-2245-T011-T012-T013-OFFSET-ATTR-GATE-01",
+  "status": "OFFLINE-UNSYNCED/STATIC-ASM/STATIC-SAVED-PSEUDOC/INFERRED/VERIFY/NOT READY",
+  "sources": {
+    "exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+    "offline_zip_sha256": "911E5E37A3F9BD5B36F929AF94B0D1E2CD1CD5CF34E3E2F16C8FC800ABF5F7C2",
+    "sqlite_sha256": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF",
+    "sqlite_quick_check": "ok"
+  },
+  "exact_string_literals": {
+    "0x624c74": {
+      "expected": "on",
+      "observed": "on"
+    },
+    "0x624c78": {
+      "expected": "offset_on",
+      "observed": "offset_on"
+    },
+    "0x624c84": {
+      "expected": "skill",
+      "observed": "skill"
+    },
+    "0x624f90": {
+      "expected": "offset",
+      "observed": "offset"
+    },
+    "0x624f98": {
+      "expected": "skill",
+      "observed": "skill"
+    },
+    "0x624fa0": {
+      "expected": "on",
+      "observed": "on"
+    },
+    "0x6248bc": {
+      "expected": "attr",
+      "observed": "attr"
+    },
+    "0x6248c4": {
+      "expected": "skill",
+      "observed": "skill"
+    }
+  },
+  "direct_calls": [
+    {
+      "site": "0x0059BB05",
+      "hex": "E8C68CECFF",
+      "decoded": "0x004647D0",
+      "expected": "0x004647D0",
+      "sqlite_edge": [
+        "0x00599BD0",
+        "0x004647D0"
+      ],
+      "pass_asm": true,
+      "pass_db": true
+    },
+    {
+      "site": "0x0059BB1A",
+      "hex": "E8E1F6E6FF",
+      "decoded": "0x0040B200",
+      "expected": "0x0040B200",
+      "sqlite_edge": [
+        "0x00599BD0",
+        "0x0040B200"
+      ],
+      "pass_asm": true,
+      "pass_db": true
+    },
+    {
+      "site": "0x0059C9EC",
+      "hex": "E87F8DECFF",
+      "decoded": "0x00465770",
+      "expected": "0x00465770",
+      "sqlite_edge": [
+        "0x00599BD0",
+        "0x00465770"
+      ],
+      "pass_asm": true,
+      "pass_db": true
+    },
+    {
+      "site": "0x0059CA05",
+      "hex": "E8668DE7FF",
+      "decoded": "0x00415770",
+      "expected": "0x00415770",
+      "sqlite_edge": [
+        "0x00599BD0",
+        "0x00415770"
+      ],
+      "pass_asm": true,
+      "pass_db": true
+    },
+    {
+      "site": "0x0059CA2E",
+      "hex": "E8BD92E7FF",
+      "decoded": "0x00415CF0",
+      "expected": "0x00415CF0",
+      "sqlite_edge": [
+        "0x00599BD0",
+        "0x00415CF0"
+      ],
+      "pass_asm": true,
+      "pass_db": true
+    },
+    {
+      "site": "0x0059CA5C",
+      "hex": "E8DFB9ECFF",
+      "decoded": "0x00468440",
+      "expected": "0x00468440",
+      "sqlite_edge": [
+        "0x00599BD0",
+        "0x00468440"
+      ],
+      "pass_asm": true,
+      "pass_db": true
+    },
+    {
+      "site": "0x0059CA8A",
+      "hex": "E871E7E6FF",
+      "decoded": "0x0040B200",
+      "expected": "0x0040B200",
+      "sqlite_edge": [
+        "0x00599BD0",
+        "0x0040B200"
+      ],
+      "pass_asm": true,
+      "pass_db": true
+    },
+    {
+      "site": "0x0059CAA3",
+      "hex": "E8C89DE7FF",
+      "decoded": "0x00416870",
+      "expected": "0x00416870",
+      "sqlite_edge": [
+        "0x00599BD0",
+        "0x00416870"
+      ],
+      "pass_asm": true,
+      "pass_db": true
+    },
+    {
+      "site": "0x0046845D",
+      "hex": "E8EEEDFAFF",
+      "decoded": "0x00417250",
+      "expected": "0x00417250",
+      "sqlite_edge": [
+        "0x00468440",
+        "0x00417250"
+      ],
+      "pass_asm": true,
+      "pass_db": true
+    },
+    {
+      "site": "0x00515445",
+      "hex": "E856460600",
+      "decoded": "0x00579AA0",
+      "expected": "0x00579AA0",
+      "sqlite_edge": [
+        "0x00515420",
+        "0x00579AA0"
+      ],
+      "pass_asm": true,
+      "pass_db": true
+    },
+    {
+      "site": "0x0051545A",
+      "hex": "E8F1B3FFFF",
+      "decoded": "0x00510850",
+      "expected": "0x00510850",
+      "sqlite_edge": [
+        "0x00515420",
+        "0x00510850"
+      ],
+      "pass_asm": true,
+      "pass_db": true
+    },
+    {
+      "site": "0x00515489",
+      "hex": "E88218FDFF",
+      "decoded": "0x004E6D10",
+      "expected": "0x004E6D10",
+      "sqlite_edge": [
+        "0x00515470",
+        "0x004E6D10"
+      ],
+      "pass_asm": true,
+      "pass_db": true
+    }
+  ],
+  "asm_opcode_checks": [
+    {
+      "va": "0x0059BB1F",
+      "expected_hex": "8885FD010000",
+      "observed_hex": "8885FD010000",
+      "pass": true
+    },
+    {
+      "va": "0x0059CA56",
+      "expected_hex": "8DBD2C010000",
+      "observed_hex": "8DBD2C010000",
+      "pass": true
+    },
+    {
+      "va": "0x0059CA61",
+      "expected_hex": "83BD3401000000",
+      "observed_hex": "83BD3401000000",
+      "pass": true
+    },
+    {
+      "va": "0x0059CA6A",
+      "expected_hex": "C685FD01000001",
+      "observed_hex": "C685FD01000001",
+      "pass": true
+    },
+    {
+      "va": "0x0059CA71",
+      "expected_hex": "83BD3401000001",
+      "observed_hex": "83BD3401000001",
+      "pass": true
+    },
+    {
+      "va": "0x0059CA82",
+      "expected_hex": "8D7F0C",
+      "observed_hex": "8D7F0C",
+      "pass": true
+    },
+    {
+      "va": "0x0059CA91",
+      "expected_hex": "7439",
+      "observed_hex": "7439",
+      "pass": true
+    },
+    {
+      "va": "0x0059CAC4",
+      "expected_hex": "89BD34010000",
+      "observed_hex": "89BD34010000",
+      "pass": true
+    },
+    {
+      "va": "0x0051542D",
+      "expected_hex": "80B9FD01000000",
+      "observed_hex": "80B9FD01000000",
+      "pass": true
+    },
+    {
+      "va": "0x00515477",
+      "expected_hex": "83B93401000000",
+      "observed_hex": "83B93401000000",
+      "pass": true
+    }
+  ],
+  "function_index": [
+    {
+      "va": "0x00599BD0",
+      "size_bytes": 24124,
+      "pseudoc_sha256": "94F69BED55F2E76978B831CCF1179B94987DE2C655B7B861B4E8B49A99588C64"
+    },
+    {
+      "va": "0x00468440",
+      "size_bytes": 123,
+      "pseudoc_sha256": "602A1088748F56E3193659A78431D1525DAF4DC43F53B27767AA50B23F980933"
+    },
+    {
+      "va": "0x00417250",
+      "size_bytes": 342,
+      "pseudoc_sha256": "51E4FAFA7D53D8D52427B3912FD7AC38687564B142DBE7CDF715E3EE1193C439"
+    },
+    {
+      "va": "0x004165B0",
+      "size_bytes": 478,
+      "pseudoc_sha256": "4DF21C15C8BBA6633B8320B30288812DBAAA56DD9FCDCB43B64F65E7225B91EB"
+    },
+    {
+      "va": "0x00515470",
+      "size_bytes": 32,
+      "pseudoc_sha256": "362049055799E7673D357D345AE6E86F645B10F8047496F91A4000B347507B72"
+    },
+    {
+      "va": "0x00515420",
+      "size_bytes": 71,
+      "pseudoc_sha256": "8F6F96624262E7939006F1A2C9B77E3645D324A6077CB1BBE544C26D24F99040"
+    },
+    {
+      "va": "0x004E6D10",
+      "size_bytes": 964,
+      "pseudoc_sha256": "5DBEB99400933BF5B97D65BA614D10A08B390064DFCCDCC056B73A28118CE5D7"
+    },
+    {
+      "va": "0x0040B200",
+      "size_bytes": 84,
+      "pseudoc_sha256": "F0F35AB2EAAA32DB401D46A94A13B0CB55D0DFF33B1065433E16135D1848F11D"
+    },
+    {
+      "va": "0x00579AA0",
+      "size_bytes": 118,
+      "pseudoc_sha256": "8823788FABCF0ED0C943A264CAE853BBB9E7AF2C492A95861324DC8DB2CE5512"
+    },
+    {
+      "va": "0x00510850",
+      "size_bytes": 164,
+      "pseudoc_sha256": "A00F50544E327EE5BE19126DE605D496B2744B9DB2A1B4550A84737BA05FD1FF"
+    }
+  ],
+  "branch_models_not_gameplay": [
+    {
+      "offset_on_on": false,
+      "offset_keys": [],
+      "before_count": 0,
+      "after_count": 0,
+      "flag_0x1FD": 0,
+      "gate_0x515470": false,
+      "gate_0x515420": false
+    },
+    {
+      "offset_on_on": true,
+      "offset_keys": [],
+      "before_count": 0,
+      "after_count": 0,
+      "flag_0x1FD": 1,
+      "gate_0x515470": false,
+      "gate_0x515420": true
+    },
+    {
+      "offset_on_on": false,
+      "offset_keys": [
+        "on"
+      ],
+      "before_count": 1,
+      "after_count": 0,
+      "flag_0x1FD": 1,
+      "gate_0x515470": false,
+      "gate_0x515420": true
+    },
+    {
+      "offset_on_on": true,
+      "offset_keys": [
+        "on"
+      ],
+      "before_count": 1,
+      "after_count": 0,
+      "flag_0x1FD": 1,
+      "gate_0x515470": false,
+      "gate_0x515420": true
+    },
+    {
+      "offset_on_on": false,
+      "offset_keys": [
+        "fire"
+      ],
+      "before_count": 1,
+      "after_count": 1,
+      "flag_0x1FD": 1,
+      "gate_0x515470": true,
+      "gate_0x515420": true
+    },
+    {
+      "offset_on_on": true,
+      "offset_keys": [
+        "fire"
+      ],
+      "before_count": 1,
+      "after_count": 1,
+      "flag_0x1FD": 1,
+      "gate_0x515470": true,
+      "gate_0x515420": true
+    },
+    {
+      "offset_on_on": false,
+      "offset_keys": [
+        "fire",
+        "ice"
+      ],
+      "before_count": 2,
+      "after_count": 2,
+      "flag_0x1FD": 1,
+      "gate_0x515470": true,
+      "gate_0x515420": true
+    },
+    {
+      "offset_on_on": false,
+      "offset_keys": [
+        "on",
+        "fire"
+      ],
+      "before_count": 2,
+      "after_count": 2,
+      "flag_0x1FD": 1,
+      "gate_0x515470": true,
+      "gate_0x515420": true
+    }
+  ],
+  "novelty": [
+    "Skill+0x12C script source is offset, not attr",
+    "Skill+0x110 candidate property source is attr",
+    "offset_on=on initializes Skill+0x1FD",
+    "nonempty offset tree forces Skill+0x1FD on",
+    "offset singleton on erases tree and zeroes Skill+0x134",
+    "0x515420 uses +0x1FD and 0x515470 uses +0x134 as independent gates"
+  ],
+  "limitations": [
+    "source Skill and candidate Skill identity must be checked at call ABI",
+    "runtime tree key ordering and damage callback remain VERIFY",
+    "no original game execution",
+    "PC newest MASTER unavailable"
+  ],
+  "golden_pass": 0,
+  "strict_match": 0,
+  "new_ready": 0,
+  "task_done": 0,
+  "master_integration": 0
+}

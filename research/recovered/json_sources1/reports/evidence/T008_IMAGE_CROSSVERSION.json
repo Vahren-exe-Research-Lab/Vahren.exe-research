@@ -1,0 +1,232 @@
+{
+  "image1": {
+    "bmp": {
+      "size": 4034614,
+      "header_file_size": 4034614,
+      "pixel_offset": 54,
+      "dib_size": 40,
+      "width": 1024,
+      "height": 985,
+      "planes": 1,
+      "bpp": 32,
+      "compression": 0,
+      "image_size": 0,
+      "expected_raw_32bpp": 4034614,
+      "sha256": "2c67ad067a5ec7f5847fef5fba169138b4527f9cf0c0a983d147d1ffa6bc4b54"
+    },
+    "meta": {
+      "size": 19350,
+      "width": 1024,
+      "height": 985,
+      "bgra": [
+        4,
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0,
+        0,
+        4,
+        0
+      ],
+      "records": 806,
+      "consumed": 19350,
+      "trailing": 0,
+      "all_bounds_valid": true,
+      "max_rect_w": 112,
+      "max_rect_h": 96,
+      "duplicate_names": 0,
+      "first_records": [
+        [
+          "Char1",
+          470,
+          101,
+          502,
+          133
+        ],
+        [
+          "Char10",
+          502,
+          101,
+          534,
+          133
+        ],
+        [
+          "Char101",
+          534,
+          101,
+          566,
+          133
+        ],
+        [
+          "Char102",
+          566,
+          101,
+          598,
+          133
+        ],
+        [
+          "Char103",
+          598,
+          101,
+          630,
+          133
+        ],
+        [
+          "Char104",
+          630,
+          101,
+          662,
+          133
+        ],
+        [
+          "Char105",
+          662,
+          101,
+          694,
+          133
+        ],
+        [
+          "Char106",
+          694,
+          101,
+          726,
+          133
+        ],
+        [
+          "Char107",
+          726,
+          101,
+          758,
+          133
+        ],
+        [
+          "Char108",
+          758,
+          101,
+          790,
+          133
+        ]
+      ],
+      "sha256": "e4e2cec1c1e825547e933a2f725495d27e64b3ee12f56d0f4fd6e3a3a0d1aa61"
+    },
+    "dimension_match": true,
+    "file_size_exact_32bpp": true
+  },
+  "image2": {
+    "bmp": {
+      "size": 3670070,
+      "header_file_size": 3670070,
+      "pixel_offset": 54,
+      "dib_size": 40,
+      "width": 1024,
+      "height": 896,
+      "planes": 1,
+      "bpp": 32,
+      "compression": 0,
+      "image_size": 0,
+      "expected_raw_32bpp": 3670070,
+      "sha256": "6064ebc75e14d12d128f64b93fc62e32adb6bfe5b7d679168390d94e93d7ae1b"
+    },
+    "meta": {
+      "size": 12308,
+      "width": 1024,
+      "height": 896,
+      "bgra": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "rgba": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "records": 493,
+      "consumed": 12308,
+      "trailing": 0,
+      "all_bounds_valid": true,
+      "max_rect_w": 96,
+      "max_rect_h": 96,
+      "duplicate_names": 0,
+      "first_records": [
+        [
+          "a_black0",
+          400,
+          384,
+          448,
+          432
+        ],
+        [
+          "a_black1",
+          448,
+          384,
+          496,
+          432
+        ],
+        [
+          "a_black2",
+          496,
+          384,
+          544,
+          432
+        ],
+        [
+          "a_black3",
+          544,
+          384,
+          592,
+          432
+        ],
+        [
+          "a_black4",
+          592,
+          384,
+          640,
+          432
+        ],
+        [
+          "a_dark0",
+          932,
+          384,
+          996,
+          448
+        ],
+        [
+          "a_dark1",
+          0,
+          448,
+          64,
+          512
+        ],
+        [
+          "a_dark2",
+          64,
+          448,
+          128,
+          512
+        ],
+        [
+          "a_dark3",
+          128,
+          448,
+          192,
+          512
+        ],
+        [
+          "a_dark4",
+          192,
+          448,
+          256,
+          512
+        ]
+      ],
+      "sha256": "394fbf96c0941d848bd3d1fa710607d8c844600ab0bf7054d95a1d5def71e246"
+    },
+    "dimension_match": true,
+    "file_size_exact_32bpp": true
+  }
+}

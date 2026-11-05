@@ -259,6 +259,9 @@
 - [research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md 行 955](../../research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md?plain=1#L955-L955) — - [C OWNED EVIDENCE] `evidence/T025_WRQ_C_BATTLES_CAPTURE_REFERENCE_GATES_20261013.json`（4494B、schema V1、3件×3 capture、Power逆参照、Spot.member counts、Unit+0x84、actu
   制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
+- [research/recovered/json_sources1/reports/evidence/T025_WRQ_C_BATTLES_CAPTURE_REFERENCE_GATES_20261013.json 行 1](../../research/recovered/json_sources1/reports/evidence/T025_WRQ_C_BATTLES_CAPTURE_REFERENCE_GATES_20261013.json?plain=1#L1-L1) — {"schema":"T025_C_BATTLES_CAPTURE_REFERENCE_GATES_V1","evidence_id":"C-20261013-1002-01","request_id":"WRQ-20261013-C-BATTLES","source_kind":"ORIGINAL_TARGET_SA
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
 - [research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md 行 879](../../research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md?plain=1#L879-L879) — [CONFIRMED-TARGET-SAVED-UNIT-INDEX] save1 sp50 Spot.member=0でもUnit isamaはunlistedで別Unit+0x84のSpot参照sp50を保持。save2 sp50 Spot.member=83の内部にisamaが入り、+0x84は保存別参照名簿に現
   制約・訂正　Full authored historical composite; no substantive known held payload found; current REF/corrections priority; no native/runtime/Golden/READY/semantic promotion
 
@@ -347,9 +350,6 @@
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 935](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L935-L935) — - 実行条件: Unit+0x8C == 0、部隊あり（+0x1D0）、Unit+0x18614 == 0。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
-
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1014](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1014-L1014) — \| 0x575110 ゲート \| Unit+0x8C≠0→即return（0x576660なし）。+0x1D0==0 または +0x18614≠0 → ループなしで 0x576660(1)。終了時 +0x186C0/C4/C8/CC=0x80000008, +0x186BC=0 \| CONFIRMED \|
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

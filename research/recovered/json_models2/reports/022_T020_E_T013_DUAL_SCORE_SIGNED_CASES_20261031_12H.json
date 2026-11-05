@@ -1,0 +1,3539 @@
+{
+  "research_id": "E-AUDIT-20261031-12H-T020-T013-SIGNED-DUAL-FIELD-GATE-01",
+  "owner": "E/T020",
+  "source_owner": "B/T013",
+  "source_research_id": "B-20261031-12H-T013-DUAL-SCORE-COMPARATORS-01",
+  "state": "STATIC/SYNTHETIC/VERIFY/NOT READY",
+  "golden_pass": 0,
+  "strict_match": 0,
+  "cases": [
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          -2147483648,
+          -2147483648
+        ],
+        "+0xA10": [
+          -2147483648,
+          -2147483648
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          -2147483648,
+          -2147483547
+        ],
+        "+0xA10": [
+          -2147483547,
+          -2147483648
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          -2147483648,
+          -2147483546
+        ],
+        "+0xA10": [
+          -2147483546,
+          -2147483648
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          -2147483648,
+          -1
+        ],
+        "+0xA10": [
+          -1,
+          -2147483648
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          -2147483648,
+          0
+        ],
+        "+0xA10": [
+          0,
+          -2147483648
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          -2147483648,
+          1
+        ],
+        "+0xA10": [
+          1,
+          -2147483648
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          -2147483648,
+          2147483647
+        ],
+        "+0xA10": [
+          2147483647,
+          -2147483648
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          -2147483547,
+          -2147483648
+        ],
+        "+0xA10": [
+          -2147483648,
+          -2147483547
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          -2147483547,
+          -2147483547
+        ],
+        "+0xA10": [
+          -2147483547,
+          -2147483547
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          -2147483547,
+          -2147483546
+        ],
+        "+0xA10": [
+          -2147483546,
+          -2147483547
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          -2147483547,
+          -1
+        ],
+        "+0xA10": [
+          -1,
+          -2147483547
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          -2147483547,
+          0
+        ],
+        "+0xA10": [
+          0,
+          -2147483547
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          -2147483547,
+          1
+        ],
+        "+0xA10": [
+          1,
+          -2147483547
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          -2147483547,
+          2147483647
+        ],
+        "+0xA10": [
+          2147483647,
+          -2147483547
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          -2147483546,
+          -2147483648
+        ],
+        "+0xA10": [
+          -2147483648,
+          -2147483546
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          -2147483546,
+          -2147483547
+        ],
+        "+0xA10": [
+          -2147483547,
+          -2147483546
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          -2147483546,
+          -2147483546
+        ],
+        "+0xA10": [
+          -2147483546,
+          -2147483546
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          -2147483546,
+          -1
+        ],
+        "+0xA10": [
+          -1,
+          -2147483546
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          -2147483546,
+          0
+        ],
+        "+0xA10": [
+          0,
+          -2147483546
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          -2147483546,
+          1
+        ],
+        "+0xA10": [
+          1,
+          -2147483546
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          -2147483546,
+          2147483647
+        ],
+        "+0xA10": [
+          2147483647,
+          -2147483546
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          -1,
+          -2147483648
+        ],
+        "+0xA10": [
+          -2147483648,
+          -1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          -1,
+          -2147483547
+        ],
+        "+0xA10": [
+          -2147483547,
+          -1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          -1,
+          -2147483546
+        ],
+        "+0xA10": [
+          -2147483546,
+          -1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          -1,
+          -1
+        ],
+        "+0xA10": [
+          -1,
+          -1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          -1,
+          0
+        ],
+        "+0xA10": [
+          0,
+          -1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          -1,
+          1
+        ],
+        "+0xA10": [
+          1,
+          -1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          -1,
+          2147483647
+        ],
+        "+0xA10": [
+          2147483647,
+          -1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          0,
+          -2147483648
+        ],
+        "+0xA10": [
+          -2147483648,
+          0
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          0,
+          -2147483547
+        ],
+        "+0xA10": [
+          -2147483547,
+          0
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          0,
+          -2147483546
+        ],
+        "+0xA10": [
+          -2147483546,
+          0
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          0,
+          -1
+        ],
+        "+0xA10": [
+          -1,
+          0
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          0,
+          0
+        ],
+        "+0xA10": [
+          0,
+          0
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          0,
+          1
+        ],
+        "+0xA10": [
+          1,
+          0
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          0,
+          2147483647
+        ],
+        "+0xA10": [
+          2147483647,
+          0
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          1,
+          -2147483648
+        ],
+        "+0xA10": [
+          -2147483648,
+          1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          1,
+          -2147483547
+        ],
+        "+0xA10": [
+          -2147483547,
+          1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          1,
+          -2147483546
+        ],
+        "+0xA10": [
+          -2147483546,
+          1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          1,
+          -1
+        ],
+        "+0xA10": [
+          -1,
+          1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          1,
+          0
+        ],
+        "+0xA10": [
+          0,
+          1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          1,
+          1
+        ],
+        "+0xA10": [
+          1,
+          1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          1,
+          2147483647
+        ],
+        "+0xA10": [
+          2147483647,
+          1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          2147483647,
+          -2147483648
+        ],
+        "+0xA10": [
+          -2147483648,
+          2147483647
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          2147483647,
+          -2147483547
+        ],
+        "+0xA10": [
+          -2147483547,
+          2147483647
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          2147483647,
+          -2147483546
+        ],
+        "+0xA10": [
+          -2147483546,
+          2147483647
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          2147483647,
+          -1
+        ],
+        "+0xA10": [
+          -1,
+          2147483647
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          2147483647,
+          0
+        ],
+        "+0xA10": [
+          0,
+          2147483647
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          2147483647,
+          1
+        ],
+        "+0xA10": [
+          1,
+          2147483647
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 0,
+      "fields": {
+        "+0xA0C": [
+          2147483647,
+          2147483647
+        ],
+        "+0xA10": [
+          2147483647,
+          2147483647
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          -2147483648,
+          -2147483648
+        ],
+        "+0xA10": [
+          -2147483648,
+          -2147483648
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          -2147483648,
+          -2147483547
+        ],
+        "+0xA10": [
+          -2147483547,
+          -2147483648
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          -2147483648,
+          -2147483546
+        ],
+        "+0xA10": [
+          -2147483546,
+          -2147483648
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          -2147483648,
+          -1
+        ],
+        "+0xA10": [
+          -1,
+          -2147483648
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          -2147483648,
+          0
+        ],
+        "+0xA10": [
+          0,
+          -2147483648
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          -2147483648,
+          1
+        ],
+        "+0xA10": [
+          1,
+          -2147483648
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          -2147483648,
+          2147483647
+        ],
+        "+0xA10": [
+          2147483647,
+          -2147483648
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          -2147483547,
+          -2147483648
+        ],
+        "+0xA10": [
+          -2147483648,
+          -2147483547
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          -2147483547,
+          -2147483547
+        ],
+        "+0xA10": [
+          -2147483547,
+          -2147483547
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          -2147483547,
+          -2147483546
+        ],
+        "+0xA10": [
+          -2147483546,
+          -2147483547
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          -2147483547,
+          -1
+        ],
+        "+0xA10": [
+          -1,
+          -2147483547
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          -2147483547,
+          0
+        ],
+        "+0xA10": [
+          0,
+          -2147483547
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          -2147483547,
+          1
+        ],
+        "+0xA10": [
+          1,
+          -2147483547
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          -2147483547,
+          2147483647
+        ],
+        "+0xA10": [
+          2147483647,
+          -2147483547
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          -2147483546,
+          -2147483648
+        ],
+        "+0xA10": [
+          -2147483648,
+          -2147483546
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          -2147483546,
+          -2147483547
+        ],
+        "+0xA10": [
+          -2147483547,
+          -2147483546
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          -2147483546,
+          -2147483546
+        ],
+        "+0xA10": [
+          -2147483546,
+          -2147483546
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          -2147483546,
+          -1
+        ],
+        "+0xA10": [
+          -1,
+          -2147483546
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          -2147483546,
+          0
+        ],
+        "+0xA10": [
+          0,
+          -2147483546
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          -2147483546,
+          1
+        ],
+        "+0xA10": [
+          1,
+          -2147483546
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          -2147483546,
+          2147483647
+        ],
+        "+0xA10": [
+          2147483647,
+          -2147483546
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          -1,
+          -2147483648
+        ],
+        "+0xA10": [
+          -2147483648,
+          -1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          -1,
+          -2147483547
+        ],
+        "+0xA10": [
+          -2147483547,
+          -1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          -1,
+          -2147483546
+        ],
+        "+0xA10": [
+          -2147483546,
+          -1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          -1,
+          -1
+        ],
+        "+0xA10": [
+          -1,
+          -1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          -1,
+          0
+        ],
+        "+0xA10": [
+          0,
+          -1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          -1,
+          1
+        ],
+        "+0xA10": [
+          1,
+          -1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          -1,
+          2147483647
+        ],
+        "+0xA10": [
+          2147483647,
+          -1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          0,
+          -2147483648
+        ],
+        "+0xA10": [
+          -2147483648,
+          0
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          0,
+          -2147483547
+        ],
+        "+0xA10": [
+          -2147483547,
+          0
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          0,
+          -2147483546
+        ],
+        "+0xA10": [
+          -2147483546,
+          0
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          0,
+          -1
+        ],
+        "+0xA10": [
+          -1,
+          0
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          0,
+          0
+        ],
+        "+0xA10": [
+          0,
+          0
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          0,
+          1
+        ],
+        "+0xA10": [
+          1,
+          0
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          0,
+          2147483647
+        ],
+        "+0xA10": [
+          2147483647,
+          0
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          1,
+          -2147483648
+        ],
+        "+0xA10": [
+          -2147483648,
+          1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          1,
+          -2147483547
+        ],
+        "+0xA10": [
+          -2147483547,
+          1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          1,
+          -2147483546
+        ],
+        "+0xA10": [
+          -2147483546,
+          1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          1,
+          -1
+        ],
+        "+0xA10": [
+          -1,
+          1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          1,
+          0
+        ],
+        "+0xA10": [
+          0,
+          1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          1,
+          1
+        ],
+        "+0xA10": [
+          1,
+          1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          1,
+          2147483647
+        ],
+        "+0xA10": [
+          2147483647,
+          1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          2147483647,
+          -2147483648
+        ],
+        "+0xA10": [
+          -2147483648,
+          2147483647
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          2147483647,
+          -2147483547
+        ],
+        "+0xA10": [
+          -2147483547,
+          2147483647
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          2147483647,
+          -2147483546
+        ],
+        "+0xA10": [
+          -2147483546,
+          2147483647
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          2147483647,
+          -1
+        ],
+        "+0xA10": [
+          -1,
+          2147483647
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          2147483647,
+          0
+        ],
+        "+0xA10": [
+          0,
+          2147483647
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          2147483647,
+          1
+        ],
+        "+0xA10": [
+          1,
+          2147483647
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 1,
+      "fields": {
+        "+0xA0C": [
+          2147483647,
+          2147483647
+        ],
+        "+0xA10": [
+          2147483647,
+          2147483647
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          -2147483648,
+          -2147483648
+        ],
+        "+0xA10": [
+          -2147483648,
+          -2147483648
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          -2147483648,
+          -2147483547
+        ],
+        "+0xA10": [
+          -2147483547,
+          -2147483648
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          -2147483648,
+          -2147483546
+        ],
+        "+0xA10": [
+          -2147483546,
+          -2147483648
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          -2147483648,
+          -1
+        ],
+        "+0xA10": [
+          -1,
+          -2147483648
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          -2147483648,
+          0
+        ],
+        "+0xA10": [
+          0,
+          -2147483648
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          -2147483648,
+          1
+        ],
+        "+0xA10": [
+          1,
+          -2147483648
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          -2147483648,
+          2147483647
+        ],
+        "+0xA10": [
+          2147483647,
+          -2147483648
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          -2147483547,
+          -2147483648
+        ],
+        "+0xA10": [
+          -2147483648,
+          -2147483547
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          -2147483547,
+          -2147483547
+        ],
+        "+0xA10": [
+          -2147483547,
+          -2147483547
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          -2147483547,
+          -2147483546
+        ],
+        "+0xA10": [
+          -2147483546,
+          -2147483547
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          -2147483547,
+          -1
+        ],
+        "+0xA10": [
+          -1,
+          -2147483547
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          -2147483547,
+          0
+        ],
+        "+0xA10": [
+          0,
+          -2147483547
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          -2147483547,
+          1
+        ],
+        "+0xA10": [
+          1,
+          -2147483547
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          -2147483547,
+          2147483647
+        ],
+        "+0xA10": [
+          2147483647,
+          -2147483547
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          -2147483546,
+          -2147483648
+        ],
+        "+0xA10": [
+          -2147483648,
+          -2147483546
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          -2147483546,
+          -2147483547
+        ],
+        "+0xA10": [
+          -2147483547,
+          -2147483546
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          -2147483546,
+          -2147483546
+        ],
+        "+0xA10": [
+          -2147483546,
+          -2147483546
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          -2147483546,
+          -1
+        ],
+        "+0xA10": [
+          -1,
+          -2147483546
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          -2147483546,
+          0
+        ],
+        "+0xA10": [
+          0,
+          -2147483546
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          -2147483546,
+          1
+        ],
+        "+0xA10": [
+          1,
+          -2147483546
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          -2147483546,
+          2147483647
+        ],
+        "+0xA10": [
+          2147483647,
+          -2147483546
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          -1,
+          -2147483648
+        ],
+        "+0xA10": [
+          -2147483648,
+          -1
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          -1,
+          -2147483547
+        ],
+        "+0xA10": [
+          -2147483547,
+          -1
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          -1,
+          -2147483546
+        ],
+        "+0xA10": [
+          -2147483546,
+          -1
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          -1,
+          -1
+        ],
+        "+0xA10": [
+          -1,
+          -1
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          -1,
+          0
+        ],
+        "+0xA10": [
+          0,
+          -1
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          -1,
+          1
+        ],
+        "+0xA10": [
+          1,
+          -1
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          -1,
+          2147483647
+        ],
+        "+0xA10": [
+          2147483647,
+          -1
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          0,
+          -2147483648
+        ],
+        "+0xA10": [
+          -2147483648,
+          0
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          0,
+          -2147483547
+        ],
+        "+0xA10": [
+          -2147483547,
+          0
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          0,
+          -2147483546
+        ],
+        "+0xA10": [
+          -2147483546,
+          0
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          0,
+          -1
+        ],
+        "+0xA10": [
+          -1,
+          0
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          0,
+          0
+        ],
+        "+0xA10": [
+          0,
+          0
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          0,
+          1
+        ],
+        "+0xA10": [
+          1,
+          0
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          0,
+          2147483647
+        ],
+        "+0xA10": [
+          2147483647,
+          0
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          1,
+          -2147483648
+        ],
+        "+0xA10": [
+          -2147483648,
+          1
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          1,
+          -2147483547
+        ],
+        "+0xA10": [
+          -2147483547,
+          1
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          1,
+          -2147483546
+        ],
+        "+0xA10": [
+          -2147483546,
+          1
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          1,
+          -1
+        ],
+        "+0xA10": [
+          -1,
+          1
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          1,
+          0
+        ],
+        "+0xA10": [
+          0,
+          1
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          1,
+          1
+        ],
+        "+0xA10": [
+          1,
+          1
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          1,
+          2147483647
+        ],
+        "+0xA10": [
+          2147483647,
+          1
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          2147483647,
+          -2147483648
+        ],
+        "+0xA10": [
+          -2147483648,
+          2147483647
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          2147483647,
+          -2147483547
+        ],
+        "+0xA10": [
+          -2147483547,
+          2147483647
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          2147483647,
+          -2147483546
+        ],
+        "+0xA10": [
+          -2147483546,
+          2147483647
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          2147483647,
+          -1
+        ],
+        "+0xA10": [
+          -1,
+          2147483647
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          2147483647,
+          0
+        ],
+        "+0xA10": [
+          0,
+          2147483647
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          2147483647,
+          1
+        ],
+        "+0xA10": [
+          1,
+          2147483647
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 2,
+      "fields": {
+        "+0xA0C": [
+          2147483647,
+          2147483647
+        ],
+        "+0xA10": [
+          2147483647,
+          2147483647
+        ]
+      },
+      "selected": "+0xA0C",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          -2147483648,
+          -2147483648
+        ],
+        "+0xA10": [
+          -2147483648,
+          -2147483648
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          -2147483648,
+          -2147483547
+        ],
+        "+0xA10": [
+          -2147483547,
+          -2147483648
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          -2147483648,
+          -2147483546
+        ],
+        "+0xA10": [
+          -2147483546,
+          -2147483648
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          -2147483648,
+          -1
+        ],
+        "+0xA10": [
+          -1,
+          -2147483648
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          -2147483648,
+          0
+        ],
+        "+0xA10": [
+          0,
+          -2147483648
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          -2147483648,
+          1
+        ],
+        "+0xA10": [
+          1,
+          -2147483648
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          -2147483648,
+          2147483647
+        ],
+        "+0xA10": [
+          2147483647,
+          -2147483648
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          -2147483547,
+          -2147483648
+        ],
+        "+0xA10": [
+          -2147483648,
+          -2147483547
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          -2147483547,
+          -2147483547
+        ],
+        "+0xA10": [
+          -2147483547,
+          -2147483547
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          -2147483547,
+          -2147483546
+        ],
+        "+0xA10": [
+          -2147483546,
+          -2147483547
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          -2147483547,
+          -1
+        ],
+        "+0xA10": [
+          -1,
+          -2147483547
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          -2147483547,
+          0
+        ],
+        "+0xA10": [
+          0,
+          -2147483547
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          -2147483547,
+          1
+        ],
+        "+0xA10": [
+          1,
+          -2147483547
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          -2147483547,
+          2147483647
+        ],
+        "+0xA10": [
+          2147483647,
+          -2147483547
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          -2147483546,
+          -2147483648
+        ],
+        "+0xA10": [
+          -2147483648,
+          -2147483546
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          -2147483546,
+          -2147483547
+        ],
+        "+0xA10": [
+          -2147483547,
+          -2147483546
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          -2147483546,
+          -2147483546
+        ],
+        "+0xA10": [
+          -2147483546,
+          -2147483546
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          -2147483546,
+          -1
+        ],
+        "+0xA10": [
+          -1,
+          -2147483546
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          -2147483546,
+          0
+        ],
+        "+0xA10": [
+          0,
+          -2147483546
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          -2147483546,
+          1
+        ],
+        "+0xA10": [
+          1,
+          -2147483546
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          -2147483546,
+          2147483647
+        ],
+        "+0xA10": [
+          2147483647,
+          -2147483546
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          -1,
+          -2147483648
+        ],
+        "+0xA10": [
+          -2147483648,
+          -1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          -1,
+          -2147483547
+        ],
+        "+0xA10": [
+          -2147483547,
+          -1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          -1,
+          -2147483546
+        ],
+        "+0xA10": [
+          -2147483546,
+          -1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          -1,
+          -1
+        ],
+        "+0xA10": [
+          -1,
+          -1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          -1,
+          0
+        ],
+        "+0xA10": [
+          0,
+          -1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          -1,
+          1
+        ],
+        "+0xA10": [
+          1,
+          -1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          -1,
+          2147483647
+        ],
+        "+0xA10": [
+          2147483647,
+          -1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          0,
+          -2147483648
+        ],
+        "+0xA10": [
+          -2147483648,
+          0
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          0,
+          -2147483547
+        ],
+        "+0xA10": [
+          -2147483547,
+          0
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          0,
+          -2147483546
+        ],
+        "+0xA10": [
+          -2147483546,
+          0
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          0,
+          -1
+        ],
+        "+0xA10": [
+          -1,
+          0
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          0,
+          0
+        ],
+        "+0xA10": [
+          0,
+          0
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          0,
+          1
+        ],
+        "+0xA10": [
+          1,
+          0
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          0,
+          2147483647
+        ],
+        "+0xA10": [
+          2147483647,
+          0
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          1,
+          -2147483648
+        ],
+        "+0xA10": [
+          -2147483648,
+          1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          1,
+          -2147483547
+        ],
+        "+0xA10": [
+          -2147483547,
+          1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          1,
+          -2147483546
+        ],
+        "+0xA10": [
+          -2147483546,
+          1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          1,
+          -1
+        ],
+        "+0xA10": [
+          -1,
+          1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          1,
+          0
+        ],
+        "+0xA10": [
+          0,
+          1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          1,
+          1
+        ],
+        "+0xA10": [
+          1,
+          1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          1,
+          2147483647
+        ],
+        "+0xA10": [
+          2147483647,
+          1
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": true
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          2147483647,
+          -2147483648
+        ],
+        "+0xA10": [
+          -2147483648,
+          2147483647
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          2147483647,
+          -2147483547
+        ],
+        "+0xA10": [
+          -2147483547,
+          2147483647
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          2147483647,
+          -2147483546
+        ],
+        "+0xA10": [
+          -2147483546,
+          2147483647
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          2147483647,
+          -1
+        ],
+        "+0xA10": [
+          -1,
+          2147483647
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          2147483647,
+          0
+        ],
+        "+0xA10": [
+          0,
+          2147483647
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          2147483647,
+          1
+        ],
+        "+0xA10": [
+          1,
+          2147483647
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "signed_comparator",
+      "mode": 3,
+      "fields": {
+        "+0xA0C": [
+          2147483647,
+          2147483647
+        ],
+        "+0xA10": [
+          2147483647,
+          2147483647
+        ]
+      },
+      "selected": "+0xA10",
+      "predicate_gt": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 0,
+      "score": -2147483648,
+      "changed": false,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 0,
+      "score": -2147483648,
+      "changed": true,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 0,
+      "score": -2147483547,
+      "changed": false,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 0,
+      "score": -2147483547,
+      "changed": true,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 0,
+      "score": -2147483546,
+      "changed": false,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 0,
+      "score": -2147483546,
+      "changed": true,
+      "eligible_write": true
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 0,
+      "score": -1,
+      "changed": false,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 0,
+      "score": -1,
+      "changed": true,
+      "eligible_write": true
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 0,
+      "score": 0,
+      "changed": false,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 0,
+      "score": 0,
+      "changed": true,
+      "eligible_write": true
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 0,
+      "score": 1,
+      "changed": false,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 0,
+      "score": 1,
+      "changed": true,
+      "eligible_write": true
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 0,
+      "score": 2147483647,
+      "changed": false,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 0,
+      "score": 2147483647,
+      "changed": true,
+      "eligible_write": true
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 1,
+      "score": -2147483648,
+      "changed": false,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 1,
+      "score": -2147483648,
+      "changed": true,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 1,
+      "score": -2147483547,
+      "changed": false,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 1,
+      "score": -2147483547,
+      "changed": true,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 1,
+      "score": -2147483546,
+      "changed": false,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 1,
+      "score": -2147483546,
+      "changed": true,
+      "eligible_write": true
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 1,
+      "score": -1,
+      "changed": false,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 1,
+      "score": -1,
+      "changed": true,
+      "eligible_write": true
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 1,
+      "score": 0,
+      "changed": false,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 1,
+      "score": 0,
+      "changed": true,
+      "eligible_write": true
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 1,
+      "score": 1,
+      "changed": false,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 1,
+      "score": 1,
+      "changed": true,
+      "eligible_write": true
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 1,
+      "score": 2147483647,
+      "changed": false,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 1,
+      "score": 2147483647,
+      "changed": true,
+      "eligible_write": true
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 2,
+      "score": -2147483648,
+      "changed": false,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 2,
+      "score": -2147483648,
+      "changed": true,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 2,
+      "score": -2147483547,
+      "changed": false,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 2,
+      "score": -2147483547,
+      "changed": true,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 2,
+      "score": -2147483546,
+      "changed": false,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 2,
+      "score": -2147483546,
+      "changed": true,
+      "eligible_write": true
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 2,
+      "score": -1,
+      "changed": false,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 2,
+      "score": -1,
+      "changed": true,
+      "eligible_write": true
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 2,
+      "score": 0,
+      "changed": false,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 2,
+      "score": 0,
+      "changed": true,
+      "eligible_write": true
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 2,
+      "score": 1,
+      "changed": false,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 2,
+      "score": 1,
+      "changed": true,
+      "eligible_write": true
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 2,
+      "score": 2147483647,
+      "changed": false,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 2,
+      "score": 2147483647,
+      "changed": true,
+      "eligible_write": true
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 3,
+      "score": -2147483648,
+      "changed": false,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 3,
+      "score": -2147483648,
+      "changed": true,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 3,
+      "score": -2147483547,
+      "changed": false,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 3,
+      "score": -2147483547,
+      "changed": true,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 3,
+      "score": -2147483546,
+      "changed": false,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 3,
+      "score": -2147483546,
+      "changed": true,
+      "eligible_write": true
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 3,
+      "score": -1,
+      "changed": false,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 3,
+      "score": -1,
+      "changed": true,
+      "eligible_write": true
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 3,
+      "score": 0,
+      "changed": false,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 3,
+      "score": 0,
+      "changed": true,
+      "eligible_write": true
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 3,
+      "score": 1,
+      "changed": false,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 3,
+      "score": 1,
+      "changed": true,
+      "eligible_write": true
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 3,
+      "score": 2147483647,
+      "changed": false,
+      "eligible_write": false
+    },
+    {
+      "kind": "rank_write_gate",
+      "mode": 3,
+      "score": 2147483647,
+      "changed": true,
+      "eligible_write": true
+    }
+  ]
+}

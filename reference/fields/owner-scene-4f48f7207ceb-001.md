@@ -10,4 +10,10 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 2002](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L2002-L2002) — - 消すのは [scene+0x10] の集合、追加するのは [GM+4]+0x1EF4B4 の集合。両者を同じオブジェクトと見なしている（STATIC_HIGH）。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+<a id="field-68"></a>
+## scene + 0x68
+
+- [research/recovered/json_sources1/reports/data/B_T012_T013_COLLISION_ATTRMAP_ORDER_EVIDENCE_20261022_2113.json 行 317](../../research/recovered/json_sources1/reports/data/B_T012_T013_COLLISION_ATTRMAP_ORDER_EVIDENCE_20261022_2113.json?plain=1#L317-L317) — "scene+0x68 tree insert comparator/key and full writer set",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

@@ -1,0 +1,211 @@
+{
+  "research_id": "E-OFFLINE-20261028-1745-T020-DIALOG-REGISTRY-FALLBACK-GATE-01",
+  "snapshot": "2026-10-21",
+  "observation_time": "2026-10-28 17:45 JST",
+  "source_pack_sha256": "911E5E37A3F9BD5B36F929AF94B0D1E2CD1CD5CF34E3E2F16C8FC800ABF5F7C2",
+  "index_sqlite_sha256": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF",
+  "source_exe_sha256_expected": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "verification": "STATIC_INDEX / SYNTHETIC / NOT NATIVE GAMEPLAY",
+  "state": [
+    "OFFLINE-UNSYNCED",
+    "STATIC",
+    "VERIFY",
+    "NOT-READY",
+    "GAME-NOT-RUN"
+  ],
+  "verified_edges": [
+    [
+      "0x0052CCF0",
+      "0x0052CDDE",
+      "0x0043F470"
+    ],
+    [
+      "0x0052CE50",
+      "0x0052CF23",
+      "0x0043F470"
+    ],
+    [
+      "0x0052CF50",
+      "0x0052D047",
+      "0x0043F470"
+    ],
+    [
+      "0x0052D2E0",
+      "0x0052D3B4",
+      "0x0043F470"
+    ],
+    [
+      "0x0052D3D0",
+      "0x0052D4C3",
+      "0x0043F470"
+    ],
+    [
+      "0x0043F470",
+      "0x0043F5A4",
+      "0x0049C450"
+    ],
+    [
+      "0x0043F470",
+      "0x0043F72F",
+      "0x00416E80"
+    ],
+    [
+      "0x0043F470",
+      "0x0043F73F",
+      "0x00416B90"
+    ],
+    [
+      "0x00416E80",
+      "0x00416EAF",
+      "0x005B6C2B"
+    ],
+    [
+      "0x00416E80",
+      "0x00416F0C",
+      "0x00402800"
+    ],
+    [
+      "0x00416B90",
+      "0x00416BE1",
+      "0x00402C40"
+    ],
+    [
+      "0x00416B90",
+      "0x00416C3C",
+      "0x004165B0"
+    ],
+    [
+      "0x00416B90",
+      "0x00416C6A",
+      "0x00405370"
+    ],
+    [
+      "0x00416B90",
+      "0x00416C86",
+      "0x004165B0"
+    ]
+  ],
+  "negative_edges": [
+    [
+      "0x0043F470",
+      "0x0043F72F",
+      "0x00416B90"
+    ],
+    [
+      "0x0043F470",
+      "0x0043F73F",
+      "0x00416E80"
+    ],
+    [
+      "0x0052CF50",
+      "0x0052D047",
+      "0x00416B90"
+    ],
+    [
+      "0x00416B90",
+      "0x00416C3C",
+      "0x00405370"
+    ],
+    [
+      "0x0043F470",
+      "0x0043F5D1",
+      "0x00416E80"
+    ]
+  ],
+  "static_branch_cases": [
+    {
+      "name": "default_selects_decide11",
+      "stack_field_38_zero": true,
+      "expected_template": "decide11"
+    },
+    {
+      "name": "caller_string_preserved",
+      "stack_field_38_zero": false,
+      "expected_template": "caller_string"
+    },
+    {
+      "name": "aux_empty_branch",
+      "stack_field_54_zero": true,
+      "expected_aux": "zero_length_literals"
+    },
+    {
+      "name": "aux_present_branch",
+      "stack_field_54_zero": false,
+      "expected_aux": "local_2c_derived"
+    },
+    {
+      "name": "callback_precheck_zero",
+      "pre_registration_value_zero": true,
+      "callback_guard_true": true
+    },
+    {
+      "name": "callback_precheck_nonzero",
+      "pre_registration_value_zero": false,
+      "callback_guard_true": false
+    },
+    {
+      "name": "tree_duplicate_may_report_zero",
+      "insertion_success_flag": false,
+      "world_state_proven": false
+    },
+    {
+      "name": "tree_insert_may_report_one",
+      "insertion_success_flag": true,
+      "world_state_proven": false
+    }
+  ],
+  "golden_negative_cases": [
+    {
+      "case_id": "static_dialog_graph",
+      "source_rank": "STATIC_INDEX"
+    },
+    {
+      "case_id": "template_decide11_only",
+      "source_rank": "STATIC_INDEX",
+      "g0_native_ui": false
+    },
+    {
+      "case_id": "callback_guard_true_not_display",
+      "source_rank": "STATIC_INDEX",
+      "g0_native_ui": false
+    },
+    {
+      "case_id": "registry_insert_flag_not_unit_state",
+      "source_rank": "STATIC_INDEX"
+    },
+    {
+      "case_id": "g0_only",
+      "source_rank": "NATIVE_OBSERVED",
+      "g0_native_ui": true
+    },
+    {
+      "case_id": "g0_g1_without_g2",
+      "source_rank": "NATIVE_OBSERVED",
+      "g0_native_ui": true,
+      "g1_raw_save_sha": true,
+      "g1_input_sha": true,
+      "same_battle_key": true
+    },
+    {
+      "case_id": "all_synthetic",
+      "source_rank": "SYNTHETIC",
+      "g0_native_ui": true,
+      "g1_raw_save_sha": true,
+      "g1_input_sha": true,
+      "g2_map_sha": true,
+      "g2_three_side_witness": true,
+      "g2_ordered_troop_unit": true,
+      "same_battle_key": true
+    }
+  ],
+  "claimed_native_observations": 0,
+  "claimed_actual_golden_pass": 0,
+  "claimed_strict_matches": 0,
+  "limitations": [
+    "Ghidra decompilation uses inferred stack slots; original ASM and native call arguments not independently validated in this run.",
+    "The +0x20 field is not yet named or proven to be tree count.",
+    "A conditional indirect vtable CALL is present; target and UI appearance not dynamically observed.",
+    "Two uses of decide11 are not proven to share same runtime selection/value context.",
+    "No original game run, no T018 G0/G1/G2 evidence; synthetic fixtures are not Golden."
+  ]
+}

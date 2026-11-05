@@ -1,0 +1,156 @@
+{
+  "research_id": "B-OFFLINE-20261021-1608-01",
+  "recovery_id": "B-RC-20261021-1608-LOCAL429-01",
+  "phase": "STATIC/ASM/PE_RELOCATION/VERIFY/OFFLINE-UNSYNCED/NOT READY",
+  "exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "exe_executed": false,
+  "exe_modified": false,
+  "offline_pack_sha256": "911E5E37A3F9BD5B36F929AF94B0D1E2CD1CD5CF34E3E2F16C8FC800ABF5F7C2",
+  "sqlite_sha256": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF",
+  "primary_vtable_va": "0x0063A6B4",
+  "primary_vtable_first_six_slots": [
+    {
+      "slot": 0,
+      "site_va": "0x0063A6B4",
+      "function_va": "0x0054F910",
+      "pe_relocation_type": 3
+    },
+    {
+      "slot": 1,
+      "site_va": "0x0063A6B8",
+      "function_va": "0x005501A0",
+      "pe_relocation_type": 3
+    },
+    {
+      "slot": 2,
+      "site_va": "0x0063A6BC",
+      "function_va": "0x00431910",
+      "pe_relocation_type": 3
+    },
+    {
+      "slot": 3,
+      "site_va": "0x0063A6C0",
+      "function_va": "0x0054E0A0",
+      "pe_relocation_type": 3
+    },
+    {
+      "slot": 4,
+      "site_va": "0x0063A6C4",
+      "function_va": "0x0054E0A0",
+      "pe_relocation_type": 3
+    },
+    {
+      "slot": 5,
+      "site_va": "0x0063A6C8",
+      "function_va": "0x0043B5A0",
+      "pe_relocation_type": 3
+    }
+  ],
+  "direct_caller_refs": 0,
+  "indexed_data_pointer_refs_to_update": 0,
+  "checks": [
+    {
+      "check": "target EXE exact SHA",
+      "passed": true,
+      "detail": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187"
+    },
+    {
+      "check": "offline ZIP integrity",
+      "passed": true,
+      "detail": "34 entries; error=None"
+    },
+    {
+      "check": "SQLite manifest checksum",
+      "passed": true,
+      "detail": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF"
+    },
+    {
+      "check": "PE32 image base",
+      "passed": true,
+      "detail": "0x10b base=0x400000"
+    },
+    {
+      "check": "constructor primary vptr write at 0x54F773",
+      "passed": true,
+      "detail": "c706b4a66300"
+    },
+    {
+      "check": "constructor subobject vptr write at 0x54F7BD",
+      "passed": true,
+      "detail": "c7460844a56300"
+    },
+    {
+      "check": "Rush vtable first 6 slot values",
+      "passed": true,
+      "detail": [
+        "0x54f910",
+        "0x5501a0",
+        "0x431910",
+        "0x54e0a0",
+        "0x54e0a0",
+        "0x43b5a0"
+      ]
+    },
+    {
+      "check": "Rush vtable slot 1 file mapping",
+      "passed": true,
+      "detail": "(2333368, '.rdata')"
+    },
+    {
+      "check": "all six vtable slots have HIGHLOW relocation",
+      "passed": true,
+      "detail": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "check": "next table RTTI boundary",
+      "passed": true,
+      "detail": "next COL=0x63fb40, next first=0x554f10"
+    },
+    {
+      "check": "Ghidra function entry matches slot1",
+      "passed": true,
+      "detail": [
+        "FUN_005501a0",
+        621,
+        "1687A2EB67E5D43881EE8E1BCA397AB1089B23168D02AA5D7E86E13DA932CB31"
+      ]
+    },
+    {
+      "check": "ECX as this pointer in update",
+      "passed": true,
+      "detail": "8bf1"
+    },
+    {
+      "check": "timer update and signed compare JL",
+      "passed": true,
+      "detail": "ff86f4010000 3b4778 0f8c"
+    },
+    {
+      "check": "attempt increment and signed quota compare JGE",
+      "passed": true,
+      "detail": "ff86f0010000 3b4774 7d12"
+    },
+    {
+      "check": "missing indexed pointer for slot1 despite raw vtable",
+      "passed": true,
+      "detail": "slot1 refs=0; slot0 refs=1"
+    },
+    {
+      "check": "direct CALL index still zero",
+      "passed": true,
+      "detail": "direct caller refs=0"
+    }
+  ],
+  "passed": 16,
+  "total": 16,
+  "golden_pass": 0,
+  "strict_match": 0,
+  "read_only": true
+}

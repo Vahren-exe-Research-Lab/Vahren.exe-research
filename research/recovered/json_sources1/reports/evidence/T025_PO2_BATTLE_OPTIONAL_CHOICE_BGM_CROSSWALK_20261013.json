@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "C-20261013-2126-01",
+  "task": [
+    "T025",
+    "T016"
+  ],
+  "request": "WRQ-20261013-C-BATTLES",
+  "scope": "SOURCE_CONTROL_FLOW_CONDITIONAL_NOT_OLD_GAMEPLAY",
+  "sources": [
+    {
+      "relative": "a_default/script/scenario1.dat",
+      "lines": "28-30",
+      "role": "fight=fev1"
+    },
+    {
+      "relative": "a_default/script/100_イベント汎用/event_battle.dat",
+      "lines": "1-23,232-240",
+      "role": "po2_battle caller before udrgn two-flag reset"
+    },
+    {
+      "relative": "a_default/script/2000_勢力ストーリー/po2_battle.dat",
+      "lines": "1-30,127-166",
+      "sha256": "DABAEB974585C3E7FA1F66190792C11F786E3915F723BF7D6C9F0BB8D446A88A",
+      "role": "ordered optional branches and TON dialog"
+    },
+    {
+      "relative": "a_default/script/event_world.dat",
+      "lines": "58-61",
+      "role": "world-level battleevent/battlebgmchange reset"
+    }
+  ],
+  "branch_order": [
+    {
+      "name": "VS_toono",
+      "when": "battleevent==0 and local conditions",
+      "pre_dialog_writes": [
+        "battleevent=1"
+      ],
+      "next_optional_if_returned": "blocked_by_battleevent"
+    },
+    {
+      "name": "VS_inyume",
+      "when": "battleevent==0 and local conditions",
+      "pre_dialog_writes": [
+        "battleevent=1"
+      ],
+      "next_optional_if_returned": "blocked_by_battleevent"
+    },
+    {
+      "name": "yaju_VS_ton",
+      "when": "battleevent==0 and yet(yaju_VS_ton) and inBattle(yaju,boss_toono) and isSameArmy==0",
+      "pre_dialog_writes": [
+        "battleevent=1",
+        "battlebgmchange=1"
+      ],
+      "pre_select_ops": [
+        "playBGM(none)",
+        "darkness(40,125,0,0)",
+        "scroll(boss_toono)"
+      ],
+      "select_0_ops": [
+        "playBGM(I Can't Waitdeath techno remix)",
+        "volume(35)"
+      ],
+      "select_1_ops": [
+        "playBGM(I Can't Waitdeath techno remix)",
+        "volume(35)",
+        "optional message/SE/wait sequence"
+      ]
+    }
+  ],
+  "conditional_join": {
+    "if": "fev1 processes po2_battle before its udrgn gate, script operations execute in this order, isEvent()==true and inBattle(udrgn)==true, and yaju_VS_ton trigger holds",
+    "then": "battlebgmchange already 1, so udrgn branch containing drgn_is_dead1=0 and drgn_is_dead2=0 is skipped",
+    "native_queue_and_legal_reachability": "VERIFY"
+  },
+  "duplicate_boundary": "Existing C-20261013-1208-01 already documented po2 battle optional trigger and distinct death hooks; this ID only covers choice-independent TON side effects and later udrgn flag-reset interaction.",
+  "old_exe_gameplay_run": false,
+  "golden_actual_pass": 0,
+  "new_strict_match": 0,
+  "ready": "READY_SCRIPT_ONLY",
+  "unresolved": [
+    "legal simultaneous yaju,boss_toono,udrgn encounter",
+    "VM routine yield/return order",
+    "isEvent value in actual scene",
+    "battlebgmchange persistence after scene",
+    "observable old UI/audio and dragon flags"
+  ],
+  "golden": "NB02/other legal po2 event battles: TON eligible view vs cancel; same-scene dragon eligibility as legally reachable; compare soundtrack, dialogs, flags only if visible, battle outcome/save; other cases INELIGIBLE."
+}

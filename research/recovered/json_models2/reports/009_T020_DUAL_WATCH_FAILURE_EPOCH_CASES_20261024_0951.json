@@ -1,0 +1,17 @@
+{
+  "research_id": "E-AUDIT-20261024-0951-T018-T020-DUAL-WATCH-FAILURE-EPOCH-01",
+  "classification": "SYNTHETIC_ONLY; real watch audit executed separately",
+  "cases": [
+    {"id":"W2-01","packet":false,"expected":"NO_COMPLETE_PACKET"},
+    {"id":"W2-02","packet":false,"native_active":true,"expected":"NO_COMPLETE_PACKET"},
+    {"id":"W2-03","same_pid_cross_run":true,"expected":"REJECT_RUN_IDENTITY"},
+    {"id":"W2-04","late_retry_claim":true,"expected":"REJECT_UNOBSERVED_RETRY"},
+    {"id":"W2-05","native_crash_claim":true,"expected":"REJECT_NATIVE_BUG_ASSERTION"},
+    {"id":"W2-06","source_hash_valid":false,"expected":"REJECT_PROVENANCE"},
+    {"id":"W2-07","packet":true,"legal_ui":false,"expected":"GOLDEN_NOT_ELIGIBLE"},
+    {"id":"W2-08","packet":true,"legal_ui":true,"presave":false,"expected":"GOLDEN_NOT_ELIGIBLE"},
+    {"id":"W2-09","packet":true,"legal_ui":true,"presave":true,"inputs":true,"map":true,"three_sides":false,"ordered_roster":true,"expected":"GOLDEN_NOT_ELIGIBLE"},
+    {"id":"W2-10","packet":true,"legal_ui":true,"presave":true,"inputs":true,"map":true,"three_sides":true,"ordered_roster":false,"expected":"GOLDEN_NOT_ELIGIBLE"},
+    {"id":"W2-11","packet":true,"legal_ui":true,"presave":true,"inputs":true,"map":true,"three_sides":true,"ordered_roster":true,"expected":"ELIGIBLE_CAPTURE_REVIEW"}
+  ]
+}

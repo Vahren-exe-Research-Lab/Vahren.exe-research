@@ -1,0 +1,233 @@
+{
+  "research_id": "E-AUDIT-20261030-01H-T020-T028-PREFLAG-ERASE-PROVENANCE-01",
+  "owner": "E",
+  "source_owner": "B",
+  "source_id": "B-20261030-0113-T028-SPOT-INDEX-EQUALRANGE-ERASE-01",
+  "source_status": "VERIFY_NOT_READY",
+  "origin": "SYNTHETIC_STATIC_CONTROL_FLOW_ONLY",
+  "original_gameplay_dynamic_observed": 0,
+  "actual_golden_pass": 0,
+  "strict_match": 0,
+  "cases": [
+    {
+      "id": "E01",
+      "input": {
+        "site": "0x495544",
+        "mode": 0,
+        "vector_length": 0,
+        "claim": "STATIC_CALL_COUNT"
+      },
+      "expected": "PRE_FLAG_RANGE_ERASE_CALLS_1_ACTUAL_REMOVAL_UNKNOWN"
+    },
+    {
+      "id": "E02",
+      "input": {
+        "site": "0x495544",
+        "mode": 0,
+        "vector_length": 1,
+        "claim": "STATIC_CALL_COUNT"
+      },
+      "expected": "PRE_FLAG_RANGE_ERASE_CALLS_2_ACTUAL_REMOVAL_UNKNOWN"
+    },
+    {
+      "id": "E03",
+      "input": {
+        "site": "0x495079",
+        "mode": 0,
+        "vector_length": 2,
+        "claim": "STATIC_CALL_COUNT"
+      },
+      "expected": "PRE_FLAG_RANGE_ERASE_CALLS_3_ACTUAL_REMOVAL_UNKNOWN"
+    },
+    {
+      "id": "E04",
+      "input": {
+        "site": "0x495079",
+        "mode": 0,
+        "vector_length": 0,
+        "claim": "STATIC_CALL_COUNT"
+      },
+      "expected": "PRE_FLAG_RANGE_ERASE_CALLS_1_ACTUAL_REMOVAL_UNKNOWN"
+    },
+    {
+      "id": "E05",
+      "input": {
+        "site": "0x495544",
+        "mode": 0,
+        "vector_length": 2,
+        "claim": "LOOKUP_ONLY"
+      },
+      "expected": "UNSUPPORTED_NATIVE_SIDE_EFFECT_CLAIM"
+    },
+    {
+      "id": "E06",
+      "input": {
+        "site": "0x495544",
+        "mode": 0,
+        "vector_length": 0,
+        "claim": "NO_MUTATION"
+      },
+      "expected": "UNSUPPORTED_NATIVE_SIDE_EFFECT_CLAIM"
+    },
+    {
+      "id": "E07",
+      "input": {
+        "site": "0x495079",
+        "mode": 0,
+        "vector_length": 1,
+        "claim": "FULL_TREE_CLEARED"
+      },
+      "expected": "UNSUPPORTED_NATIVE_SIDE_EFFECT_CLAIM"
+    },
+    {
+      "id": "E08",
+      "input": {
+        "site": "0x495079",
+        "mode": 0,
+        "vector_length": 1,
+        "claim": "REMOVED_NODES_1"
+      },
+      "expected": "UNSUPPORTED_NATIVE_SIDE_EFFECT_CLAIM"
+    },
+    {
+      "id": "E09",
+      "input": {
+        "site": "0x495544",
+        "mode": 0,
+        "vector_length": 1,
+        "claim": "GOLDEN_PASS"
+      },
+      "expected": "UNSUPPORTED_GOLDEN_CLAIM"
+    },
+    {
+      "id": "E10",
+      "input": {
+        "site": "0x495544",
+        "mode": 0,
+        "vector_length": 2,
+        "claim": "COMPARATOR_EQUIVALENCE"
+      },
+      "expected": "COMPARATOR_UNVERIFIED"
+    },
+    {
+      "id": "E11",
+      "input": {
+        "site": "0x5AC5E7",
+        "mode": 1,
+        "vector_length": 1,
+        "claim": "STATIC_CALL_COUNT"
+      },
+      "expected": "CFG_REACH_UNVERIFIED"
+    },
+    {
+      "id": "E12",
+      "input": {
+        "site": "0x5AC5E7",
+        "mode": 1,
+        "vector_length": 0,
+        "claim": "FULL_TREE_CLEARED"
+      },
+      "expected": "CFG_REACH_UNVERIFIED"
+    },
+    {
+      "id": "E13",
+      "input": {
+        "site": "0x495544",
+        "mode": 1,
+        "vector_length": 1,
+        "claim": "STATIC_CALL_COUNT"
+      },
+      "expected": "SITE_MODE_CONFLICT"
+    },
+    {
+      "id": "E14",
+      "input": {
+        "site": "0x5AC5E7",
+        "mode": 0,
+        "vector_length": 1,
+        "claim": "STATIC_CALL_COUNT"
+      },
+      "expected": "SITE_MODE_CONFLICT"
+    },
+    {
+      "id": "E15",
+      "input": {
+        "site": "0xDEADBEEF",
+        "mode": 0,
+        "vector_length": 1,
+        "claim": "STATIC_CALL_COUNT"
+      },
+      "expected": "UNPROVEN_CALL_SITE"
+    },
+    {
+      "id": "E16",
+      "input": {
+        "site": "0x495079",
+        "mode": null,
+        "vector_length": 1,
+        "claim": "STATIC_CALL_COUNT"
+      },
+      "expected": "MISSING_MODE"
+    },
+    {
+      "id": "E17",
+      "input": {
+        "site": "0x495079",
+        "mode": "0",
+        "vector_length": 1,
+        "claim": "STATIC_CALL_COUNT"
+      },
+      "expected": "INVALID_MODE"
+    },
+    {
+      "id": "E18",
+      "input": {
+        "site": "0x495544",
+        "mode": true,
+        "vector_length": 1,
+        "claim": "STATIC_CALL_COUNT"
+      },
+      "expected": "INVALID_MODE"
+    },
+    {
+      "id": "E19",
+      "input": {
+        "site": "0x495544",
+        "mode": 0,
+        "vector_length": null,
+        "claim": "STATIC_CALL_COUNT"
+      },
+      "expected": "UNKNOWN_VECTOR_LENGTH"
+    },
+    {
+      "id": "E20",
+      "input": {
+        "site": "0x495544",
+        "mode": 0,
+        "vector_length": -1,
+        "claim": "STATIC_CALL_COUNT"
+      },
+      "expected": "INVALID_VECTOR_LENGTH"
+    },
+    {
+      "id": "E21",
+      "input": {
+        "site": "0x495544",
+        "mode": 0,
+        "vector_length": "2",
+        "claim": "STATIC_CALL_COUNT"
+      },
+      "expected": "INVALID_VECTOR_LENGTH"
+    },
+    {
+      "id": "E22",
+      "input": {
+        "site": "0x495544",
+        "mode": 0,
+        "vector_length": 2,
+        "claim": "UNKNOWN_CLAIM"
+      },
+      "expected": "UNKNOWN_CLAIM"
+    }
+  ]
+}

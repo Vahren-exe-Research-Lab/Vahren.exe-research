@@ -1,0 +1,134 @@
+{
+  "id": "E-AUDIT-20261024-0344-T020-F720-CALLER-NULL-CONTRACT-01",
+  "status": "SYNTHETIC_DESIGNED_NOT_GAMEPLAY",
+  "source_id": "REA-LOCAL-20261024-03H-P0-F720-NULLABLE-CALLER-CONTRAST-STATIC-01",
+  "source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "cases": [
+    {
+      "case_id": "F720-01",
+      "site": "0x4901C1",
+      "synthetic_return_value": 0,
+      "expected": "STATIC_NULL_SKIP_IF_REACHED"
+    },
+    {
+      "case_id": "F720-02",
+      "site": "0x4901C1",
+      "synthetic_return_value": 7,
+      "expected": "STATIC_NONNULL_BRANCH"
+    },
+    {
+      "case_id": "F720-03",
+      "site": "0x40F393",
+      "synthetic_return_value": 0,
+      "expected": "STATIC_NULL_FLOW_RISK_NOT_CRASH"
+    },
+    {
+      "case_id": "F720-04",
+      "site": "0x48FBD9",
+      "synthetic_return_value": 0,
+      "expected": "STATIC_NULL_FLOW_RISK_NOT_CRASH"
+    },
+    {
+      "case_id": "F720-05",
+      "site": "0x4F66ED",
+      "synthetic_return_value": 0,
+      "expected": "STATIC_NULL_FLOW_RISK_NOT_CRASH"
+    },
+    {
+      "case_id": "F720-06",
+      "site": "0x40F393",
+      "synthetic_return_value": 2,
+      "expected": "NONNULL_PATH_NOT_GOLDEN"
+    },
+    {
+      "case_id": "F720-07",
+      "site": "0x4905F2",
+      "synthetic_return_value": 0,
+      "expected": "MODE_GATE_NOT_NULL_GUARD"
+    },
+    {
+      "case_id": "F720-08",
+      "site": "0x49381E",
+      "synthetic_return_value": 0,
+      "expected": "MODE_GATE_NOT_NULL_GUARD"
+    },
+    {
+      "case_id": "F720-09",
+      "site": "0x4905F2",
+      "synthetic_return_value": 9,
+      "expected": "NONNULL_PATH_NOT_GOLDEN"
+    },
+    {
+      "case_id": "F720-10",
+      "site": "0x49381E",
+      "synthetic_return_value": 9,
+      "expected": "NONNULL_PATH_NOT_GOLDEN"
+    },
+    {
+      "case_id": "F720-11",
+      "site": "0x434EF3",
+      "synthetic_return_value": 0,
+      "expected": "DOWNSTREAM_NOT_FULLY_AUDITED"
+    },
+    {
+      "case_id": "F720-12",
+      "site": "0x434EF3",
+      "synthetic_return_value": 8,
+      "expected": "DOWNSTREAM_NOT_FULLY_AUDITED"
+    },
+    {
+      "case_id": "F720-13",
+      "site": "0x40F393",
+      "synthetic_return_value": null,
+      "expected": "RETURN_VALUE_UNOBSERVED"
+    },
+    {
+      "case_id": "F720-14",
+      "site": "0x4901C1",
+      "synthetic_return_value": null,
+      "expected": "RETURN_VALUE_UNOBSERVED"
+    },
+    {
+      "case_id": "F720-15",
+      "site": "0x40F393",
+      "synthetic_return_value": 0,
+      "expected": "REJECT_CRASH_CLAIM",
+      "claim_crash": true
+    },
+    {
+      "case_id": "F720-16",
+      "site": "0x4901C1",
+      "synthetic_return_value": 0,
+      "expected": "REJECT_G2_CLAIM",
+      "claim_g2": true
+    },
+    {
+      "case_id": "F720-17",
+      "site": "0x4F66ED",
+      "synthetic_return_value": 0,
+      "expected": "REJECT_G2_CLAIM",
+      "claim_g2": true
+    },
+    {
+      "case_id": "F720-18",
+      "site": "0x40F393",
+      "synthetic_return_value": 0,
+      "expected": "REJECT_OBSERVED_CLAIM",
+      "claim_executed": true
+    },
+    {
+      "case_id": "F720-19",
+      "site": "0x4901C1",
+      "synthetic_return_value": 0,
+      "expected": "STATIC_NULL_SKIP_IF_REACHED",
+      "different_run_receipt": true
+    },
+    {
+      "case_id": "F720-20",
+      "site": "0x4F66ED",
+      "synthetic_return_value": 0,
+      "expected": "STATIC_NULL_FLOW_RISK_NOT_CRASH",
+      "different_run_receipt": true
+    }
+  ]
+}

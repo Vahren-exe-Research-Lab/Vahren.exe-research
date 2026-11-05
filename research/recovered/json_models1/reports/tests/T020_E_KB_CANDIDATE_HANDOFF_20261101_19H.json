@@ -1,0 +1,173 @@
+{
+  "schema": "E_KB_CANDIDATE_HANDOFF_v1",
+  "research_id": "E-PC-20261101-19H-T018-T019-T020-KB-FINDABILITY-CROSSWALK-01",
+  "owner": "E",
+  "tasks": [
+    "T018",
+    "T019",
+    "T020"
+  ],
+  "snapshot_date": "2026-11-01 19H JST",
+  "classification": [
+    "STATIC",
+    "VERIFY",
+    "KB_CANDIDATE",
+    "NOT RUN",
+    "NOT READY"
+  ],
+  "source_report": {
+    "path": "tests/T020_E_KB_FINDABILITY_CROSSWALK_20261101_19H.md",
+    "sha256": "11FF3B1318C85E3748D811BB36EF83962CCF51AA9FAFEE697444150C96F0CF95"
+  },
+  "master": {
+    "checkpoint_last_verified": 196,
+    "ready_last_verified": 596,
+    "task_status_last_verified": {
+      "done": 9,
+      "in_progress": 21,
+      "verify": 4
+    },
+    "source_sha256": "E7329C9C6368E67BE191A4ABF45156319E32826FF039FB2B9E226DEDDAC6B6B3",
+    "new_ready_ids": []
+  },
+  "source_refs": [
+    {
+      "path": "tests/T018_GOLDEN_CORPUS.md",
+      "sha256": "CD79030E92A2091B0043E40B9C50473A92ACD3DF7FD4B3FA65CD52077DD9E120",
+      "owner": "E"
+    },
+    {
+      "path": "wiki/T019_CONTRADICTIONS.md",
+      "sha256": "102AFAB94359902D5E74E4B8C55D06CD46269B85DB1B7D0A426FCDE2ED6FC25B",
+      "owner": "E"
+    },
+    {
+      "path": "tests/T020_E_NATIVE_CNB02_JOIN_PREFLIGHT_20261029_09H.md",
+      "sha256": "EC23B00CD61DE2EEF28C15593E370EA224B36083CA4B508EFF0511C7260CE331",
+      "owner": "E"
+    },
+    {
+      "path": "tests/T020_E_G012_OFFLINE_RECONCILIATION_20261101_17H.md",
+      "sha256": "F3014188EC9729B8786569CC1CD8A03585E601C46B3A14F9B594976E4A9637CA",
+      "owner": "E"
+    },
+    {
+      "path": "tests/T020_E_OFFLINE_39_ADMISSION_TRIAGE_20261101_18H.md",
+      "sha256": "D7A4498270737DC4E756638758BCAB1B9FD0E1EBF68592614D85F08FE66B7245",
+      "owner": "E"
+    }
+  ],
+  "github_read_only": {
+    "repository": "ButaMonky/Hakushin067-Research-Knowledge",
+    "branch": "develop",
+    "head": "0225b2e1cd5c710137a3d921f593d158df06624a",
+    "catalog_entries_snapshot": 1857,
+    "github_catalog_20261101_matches": 0,
+    "github_symbols_manifest_sha256": "6F93FECCF52A8415E6466409C715945C4D16645DDFF7D40668112BF0536BCA7D",
+    "local_symbols_sha256": "C01924149029DC7AB062A3056E8C7DF00968B126ACE32059E67DE871F456A704",
+    "local_index_search_e18_id_hits": 0
+  },
+  "candidates": [
+    {
+      "id": "E19-KB-G012",
+      "domain": "GOLDEN_QA",
+      "task": "T018/T020",
+      "source": "tests/T018_GOLDEN_CORPUS.md",
+      "source_state": "STATIC+VERIFY",
+      "summary": "G0合法UI・G1同一戦闘直前SAVE/入力・G2実MAP/3側/順序付き出撃名簿を独立一次証拠で結合。shared immutable inputとold/new独立観測を分離。",
+      "dedup": "22 missing/11 proposed are not 22/11 new requirements; compare Oct15/Oct17 T018 and Oct29 T020",
+      "golden": 0,
+      "ready": 0
+    },
+    {
+      "id": "E19-KB-T019",
+      "domain": "SCRIPT_VM",
+      "task": "T019/T020",
+      "source": "wiki/T019_CONTRADICTIONS.md",
+      "source_state": "STATIC+VERIFY",
+      "va": [
+        "0x50C9A0",
+        "0x50BF60",
+        "0x557240"
+      ],
+      "summary": "DAT13/TXT2 literal count is source-scope RESOLVED. Native parse candidate and encode/write path must not be conflated. TXT actual load/script2 precedence remain VERIFY.",
+      "golden": 0,
+      "ready": 0
+    },
+    {
+      "id": "E19-KB-DISCOVERY",
+      "domain": "GOLDEN_QA",
+      "task": "T020",
+      "source": "tests/T020_E_OFFLINE_39_ADMISSION_TRIAGE_20261101_18H.md",
+      "source_state": "STATIC INDEX AUDIT",
+      "summary": "2026-11-01 E reports absent from GitHub catalog and local KB FTS; 39 offline files not synchronized into PC corpus. Curator should deduplicate and index reviewed deltas only.",
+      "golden": 0,
+      "ready": 0
+    }
+  ],
+  "t020_designed_not_run": [
+    {
+      "id": "T020-G012-R1",
+      "input_role": "SHARED_IMMUTABLE_INPUT",
+      "condition": "same read-only SAVE/MAP SHA across old/new",
+      "expected": "POTENTIALLY_VALID_INPUT_FIXTURE",
+      "golden": false
+    },
+    {
+      "id": "T020-G012-R2",
+      "input_role": "ORIGINAL_AND_REIMPLEMENT_OBSERVATION",
+      "condition": "old and new observation use same file identity",
+      "expected": "REJECT_NONINDEPENDENT_OBSERVATION",
+      "golden": false
+    },
+    {
+      "id": "T020-G012-R3",
+      "input_role": "ORIGINAL_AND_REIMPLEMENT_OBSERVATION",
+      "condition": "same SHA but different file identities without capture provenance",
+      "expected": "VERIFY_PROVENANCE",
+      "golden": false
+    },
+    {
+      "id": "T020-G012-R4",
+      "input_role": "ORIGINAL_OBSERVATION",
+      "condition": "same PID but different battle time windows",
+      "expected": "REJECT_RUN_JOIN",
+      "golden": false
+    },
+    {
+      "id": "T020-G012-R5",
+      "input_role": "ORIGINAL_OBSERVATION",
+      "condition": "G2 includes MAP and 3 side slots but no ordered deployed Unit/Troop receipt",
+      "expected": "NOT_GOLDEN_ELIGIBLE",
+      "golden": false
+    },
+    {
+      "id": "T020-G012-R6",
+      "input_role": "EVIDENCE_PATH",
+      "condition": "Windows file ID/reparse point/atomic snapshot not verified",
+      "expected": "VERIFY_WINDOWS_CAPTURE",
+      "golden": false
+    },
+    {
+      "id": "T020-T019-R7",
+      "input_role": "SCRIPT_SOURCE",
+      "condition": "TXT not in one native *.dat scan",
+      "expected": "DO_NOT_CONCLUDE_ALL_TXT_UNLOADED",
+      "golden": false
+    }
+  ],
+  "golden": {
+    "dynamic_observed": 0,
+    "actual_pass": 0,
+    "strict_match": 0
+  },
+  "blocked": [
+    "T018 preexisting table boundary refusal",
+    "C T026/T032 refusal",
+    "D T030 TSV refusal",
+    "forbidden VA 0x5710C0 and related range",
+    "B HOLD21",
+    "10/25 unrecovered research"
+  ],
+  "next": "Dedicated curator checks private develop/owner/ID/SHA/duplicates and selectively indexes; E seeks lawful same-battle G0-G1-G2 receipts. No automatic READY or confidence promotion."
+}

@@ -1,0 +1,321 @@
+{
+  "id": "B-OFFLINE-20261022-2113-T012-T013-ATTR-MAP-COLLISION-01",
+  "recovery_ids": [
+    "B-RC-20261022-2113-LOCAL-SSE429-01",
+    "B-RC-20261022-1813-LIBRARY-OVERWRITE-CONTAINER-01"
+  ],
+  "status": "OFFLINE-UNSYNCED/STATIC-ASM/STATIC-SAVED-PSEUDOC/INFERRED/VERIFY/NOT READY",
+  "source": {
+    "zip_file": "HAKUSHIN067_AI_OFFLINE_PACK_20261021.zip",
+    "zip_sha256": "911E5E37A3F9BD5B36F929AF94B0D1E2CD1CD5CF34E3E2F16C8FC800ABF5F7C2",
+    "zip_entries": 34,
+    "exe": "Vahren(2).exe",
+    "exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+    "sqlite_sha256": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF",
+    "snapshot_lane_b_sha256": "6C8A5359E6214F1504D9A288D17BB8F75725A788337F669366949748DC71ADBE",
+    "snapshot_protocol_sha256": "82B76DD0A231488AFD2726003EC25D71A08491FB90C84321E3120EC8F790CB38",
+    "latest_pc_master_available": false,
+    "pc_attempt_error": "UNAVAILABLE: Error code: UNAVAILABLE; Error: McpServerError: MCP SSE probe returned 429 from openai.org",
+    "db_mode": "ro; immutable=1"
+  },
+  "facts": [
+    {
+      "id": "F1",
+      "addr": "0x00599600",
+      "interpretation": "Skill+0x134 zero-initialized; Skill+0x130 stores allocated 0x2C-byte map-head node",
+      "evidence": "pseudoc and 0x00515477 static gate"
+    },
+    {
+      "id": "F2",
+      "addr": "0x00515477",
+      "interpretation": "Skill+0x134==0 returns null collision candidate; consistent with map size, not general projectile enable flag",
+      "evidence": "ASM and F1"
+    },
+    {
+      "id": "F3",
+      "addr": "0x004E6F60..0x004E6F8C",
+      "interpretation": "source Skill+0x12C tree lookup with candidate Skill+0x110 string; compare iterator to source Skill+0x130 end; missing entry skips AABB",
+      "evidence": "ASM, 0x00415460, 0x00415E20"
+    },
+    {
+      "id": "F4",
+      "addr": "0x0059A57A..0x0059A582",
+      "interpretation": "script key attr via 0x6248BC; consumer stores string at Skill+0x110",
+      "evidence": "PE .rdata attr/skill bytes, 0x00599BD0 parser and B preexisting note"
+    },
+    {
+      "id": "F5",
+      "addr": "0x004E6F49..0x004E70B7",
+      "interpretation": "candidate collection iterates tree leftmost->successor via +0x11 isnil, node+0xC payload; first matching node wins; not proven insertion order",
+      "evidence": "ASM successor instruction sequence and early-return 0x004E70BC"
+    }
+  ],
+  "opcode_checks": [
+    {
+      "va": "0x00515477",
+      "expected_hex": "83B93401000000",
+      "observed_hex": "83B93401000000",
+      "match": true
+    },
+    {
+      "va": "0x00515489",
+      "expected_hex": "E88218FDFF",
+      "observed_hex": "E88218FDFF",
+      "match": true
+    },
+    {
+      "va": "0x004E6F49",
+      "expected_hex": "8B442444",
+      "observed_hex": "8B442444",
+      "match": true
+    },
+    {
+      "va": "0x004E6F4D",
+      "expected_hex": "8B4004",
+      "observed_hex": "8B4004",
+      "match": true
+    },
+    {
+      "va": "0x004E6F50",
+      "expected_hex": "8B28",
+      "observed_hex": "8B28",
+      "match": true
+    },
+    {
+      "va": "0x004E6F60",
+      "expected_hex": "8B87B0000000",
+      "observed_hex": "8B87B0000000",
+      "match": true
+    },
+    {
+      "va": "0x004E6F66",
+      "expected_hex": "8B750C",
+      "observed_hex": "8B750C",
+      "match": true
+    },
+    {
+      "va": "0x004E6F69",
+      "expected_hex": "8BBEB0000000",
+      "observed_hex": "8BBEB0000000",
+      "match": true
+    },
+    {
+      "va": "0x004E6F6F",
+      "expected_hex": "8B9830010000",
+      "observed_hex": "8B9830010000",
+      "match": true
+    },
+    {
+      "va": "0x004E6F79",
+      "expected_hex": "81C710010000",
+      "observed_hex": "81C710010000",
+      "match": true
+    },
+    {
+      "va": "0x004E6F80",
+      "expected_hex": "052C010000",
+      "observed_hex": "052C010000",
+      "match": true
+    },
+    {
+      "va": "0x004E6F85",
+      "expected_hex": "E8D6E4F2FF",
+      "observed_hex": "E8D6E4F2FF",
+      "match": true
+    },
+    {
+      "va": "0x004E6F8A",
+      "expected_hex": "3918",
+      "observed_hex": "3918",
+      "match": true
+    },
+    {
+      "va": "0x004E6F8C",
+      "expected_hex": "0F84D8000000",
+      "observed_hex": "0F84D8000000",
+      "match": true
+    },
+    {
+      "va": "0x004E706A",
+      "expected_hex": "807D1100",
+      "observed_hex": "807D1100",
+      "match": true
+    },
+    {
+      "va": "0x004E7070",
+      "expected_hex": "8B4D08",
+      "observed_hex": "8B4D08",
+      "match": true
+    },
+    {
+      "va": "0x004E7079",
+      "expected_hex": "8B01",
+      "observed_hex": "8B01",
+      "match": true
+    },
+    {
+      "va": "0x004E708F",
+      "expected_hex": "8B4504",
+      "observed_hex": "8B4504",
+      "match": true
+    },
+    {
+      "va": "0x004E7098",
+      "expected_hex": "3B6808",
+      "observed_hex": "3B6808",
+      "match": true
+    },
+    {
+      "va": "0x004E70AA",
+      "expected_hex": "8B4C2444",
+      "observed_hex": "8B4C2444",
+      "match": true
+    },
+    {
+      "va": "0x004E70BC",
+      "expected_hex": "8BC6",
+      "observed_hex": "8BC6",
+      "match": true
+    },
+    {
+      "va": "0x004E70C8",
+      "expected_hex": "5F5E5D33C0",
+      "observed_hex": "5F5E5D33C0",
+      "match": true
+    },
+    {
+      "va": "0x00415469",
+      "expected_hex": "E8B2090000",
+      "observed_hex": "E8B2090000",
+      "match": true
+    },
+    {
+      "va": "0x0041546E",
+      "expected_hex": "8B6E04",
+      "observed_hex": "8B6E04",
+      "match": true
+    },
+    {
+      "va": "0x00415475",
+      "expected_hex": "3BC5",
+      "observed_hex": "3BC5",
+      "match": true
+    },
+    {
+      "va": "0x004154CF",
+      "expected_hex": "8D442410",
+      "observed_hex": "8D442410",
+      "match": true
+    },
+    {
+      "va": "0x005996DA",
+      "expected_hex": "E84CD50100",
+      "observed_hex": "E84CD50100",
+      "match": true
+    }
+  ],
+  "opcode_passes": 27,
+  "direct_call_checks": [
+    {
+      "site_va": "0x00515489",
+      "expected_callee": "0x004E6D10",
+      "decoded_target": "0x004E6D10",
+      "sqlite_caller": "0x00515470",
+      "sqlite_callee": "0x004E6D10",
+      "pass": true
+    },
+    {
+      "site_va": "0x004E6F85",
+      "expected_callee": "0x00415460",
+      "decoded_target": "0x00415460",
+      "sqlite_caller": "0x004E6D10",
+      "sqlite_callee": "0x00415460",
+      "pass": true
+    },
+    {
+      "site_va": "0x00415469",
+      "expected_callee": "0x00415E20",
+      "decoded_target": "0x00415E20",
+      "sqlite_caller": "0x00415460",
+      "sqlite_callee": "0x00415E20",
+      "pass": true
+    },
+    {
+      "site_va": "0x004154A4",
+      "expected_callee": "0x00402C40",
+      "decoded_target": "0x00402C40",
+      "sqlite_caller": "0x00415460",
+      "sqlite_callee": "0x00402C40",
+      "pass": true
+    }
+  ],
+  "direct_call_passes": 4,
+  "function_index": [
+    {
+      "va": "0x00515470",
+      "name": "FUN_00515470",
+      "size_bytes": 32,
+      "pseudoc_sha256": "362049055799E7673D357D345AE6E86F645B10F8047496F91A4000B347507B72"
+    },
+    {
+      "va": "0x004E6D10",
+      "name": "FUN_004e6d10",
+      "size_bytes": 964,
+      "pseudoc_sha256": "5DBEB99400933BF5B97D65BA614D10A08B390064DFCCDCC056B73A28118CE5D7"
+    },
+    {
+      "va": "0x00415460",
+      "name": "FUN_00415460",
+      "size_bytes": 136,
+      "pseudoc_sha256": "46DB8021EB27A193E447836B7116C8944324FE9DBC2137190216948A2BFD709D"
+    },
+    {
+      "va": "0x00415E20",
+      "name": "FUN_00415e20",
+      "size_bytes": 120,
+      "pseudoc_sha256": "75DC292C31E824D17937D31DBACA034D31F66899C5727DBF54D2A7D2BCB2BCA5"
+    },
+    {
+      "va": "0x00402C40",
+      "name": "FUN_00402c40",
+      "size_bytes": 113,
+      "pseudoc_sha256": "D92639D90EF16B151BB00FBE6C3125666F3AF0C9A294CFC18D6972913A29D919"
+    },
+    {
+      "va": "0x00599600",
+      "name": "FUN_00599600",
+      "size_bytes": 759,
+      "pseudoc_sha256": "BCF1D4BAD5E01DF11ECB6E1FC6EDD4FA107C8EFC013345BC1722D9D0FB1BC2ED"
+    },
+    {
+      "va": "0x00599BD0",
+      "name": "FUN_00599bd0",
+      "size_bytes": 24124,
+      "pseudoc_sha256": "94F69BED55F2E76978B831CCF1179B94987DE2C655B7B861B4E8B49A99588C64"
+    },
+    {
+      "va": "0x0054BA00",
+      "name": "FUN_0054ba00",
+      "size_bytes": 6772,
+      "pseudoc_sha256": "831FA65C3A3BD3531DDC96159841435D5E1FACAB513E803ED0C7D34B46F7241C"
+    },
+    {
+      "va": "0x00552030",
+      "name": "FUN_00552030",
+      "size_bytes": 3621,
+      "pseudoc_sha256": "5E8B52DA647706A8267641FCA6F24E2CB4CF57905A6A42A32D427C196E03E808"
+    }
+  ],
+  "confirmed_prior": "B-OFFLINE-20261022-2016-T012-T013-MISSILE-COLLISION-VCALL-01",
+  "golden_pass": 0,
+  "strict_match": 0,
+  "new_ready": 0,
+  "task_done": 0,
+  "master_integration": 0,
+  "remaining": [
+    "source Skill+0x12C map script declaration and runtime contents",
+    "scene+0x68 tree insert comparator/key and full writer set",
+    "confirm actual target runtime instances and preservation of inorder under mutations",
+    "collision callback effects on HP/MP, post-hit timing and RNG"
+  ]
+}

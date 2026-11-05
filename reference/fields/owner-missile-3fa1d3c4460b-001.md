@@ -13,6 +13,12 @@
 - [research/recovered/b_batch3/B_T012_T013_COLLISION_CLEANUP_OWNER_OFFLINE_20261023_0009.md 行 36](../../research/recovered/b_batch3/B_T012_T013_COLLISION_CLEANUP_OWNER_OFFLINE_20261023_0009.md?plain=1#L36-L36) — 具体的に、`0x54C96F..0x54C97D`は`[missile+0x78] → [+0x1D4] → [+0x1C] → 0x515470`。SimpleMissileも`0x55267C..0x55268A`で同じ3段階。受信側`0x515484: add edx,0x68`、`0x515489 → 0x4E
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+- [research/recovered/json_sources1/reports/data/B_T012_T013_COLLISION_CLEANUP_OWNER_EVIDENCE_20261023_0009.json 行 42](../../research/recovered/json_sources1/reports/data/B_T012_T013_COLLISION_CLEANUP_OWNER_EVIDENCE_20261023_0009.json?plain=1#L42-L42) — "candidate_tree": "(*( *(missile+0x78)+0x1D4 +0x1C))+0x68",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
+- [research/recovered/json_sources1/reports/data/B_T012_T013_COLLISION_CLEANUP_OWNER_EVIDENCE_20261023_0009.json 行 43](../../research/recovered/json_sources1/reports/data/B_T012_T013_COLLISION_CLEANUP_OWNER_EVIDENCE_20261023_0009.json?plain=1#L43-L43) — "cleanup_tree": "(*( *(missile+0x78)+0x1D4 ))+0x68",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
 <a id="field-a8"></a>
 ## missile + 0xA8
 

@@ -1,0 +1,190 @@
+{
+  "id": "E-AUDIT-20261031-01H-T020-T013-HALFBIAS-RNG-EXHAUSTIVE-01",
+  "owner": "E",
+  "status": "STATIC_BYTE_PIN_CONDITIONAL_SYNTHETIC_VERIFY_NOT_READY",
+  "exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "b01_source_sha256": "990A703DFC830F1DB16B98EE0A3536044A46C583576AF503AE6D9F1B36D9F571",
+  "exhaustive_model_inputs": 98304,
+  "native_gameplay_run": 0,
+  "actual_golden_pass": 0,
+  "strict_match": 0,
+  "cases": [
+    {
+      "id": "HIST-0",
+      "kind": "histogram",
+      "category": 0,
+      "bound": 120,
+      "distinct": 119,
+      "min_count": 275,
+      "max_count": 276,
+      "min_output": 1,
+      "max_output": 119
+    },
+    {
+      "id": "EDGE-0-0",
+      "kind": "edge",
+      "category": 0,
+      "bound": 120,
+      "rand": 0,
+      "want": 1
+    },
+    {
+      "id": "EDGE-0-1",
+      "kind": "edge",
+      "category": 0,
+      "bound": 120,
+      "rand": 1,
+      "want": 1
+    },
+    {
+      "id": "EDGE-0-2",
+      "kind": "edge",
+      "category": 0,
+      "bound": 120,
+      "rand": 2,
+      "want": 1
+    },
+    {
+      "id": "EDGE-0-16384",
+      "kind": "edge",
+      "category": 0,
+      "bound": 120,
+      "rand": 16384,
+      "want": 60
+    },
+    {
+      "id": "EDGE-0-32767",
+      "kind": "edge",
+      "category": 0,
+      "bound": 120,
+      "rand": 32767,
+      "want": 119
+    },
+    {
+      "id": "HIST-6",
+      "kind": "histogram",
+      "category": 6,
+      "bound": 60,
+      "distinct": 59,
+      "min_count": 555,
+      "max_count": 556,
+      "min_output": 1,
+      "max_output": 59
+    },
+    {
+      "id": "EDGE-6-0",
+      "kind": "edge",
+      "category": 6,
+      "bound": 60,
+      "rand": 0,
+      "want": 1
+    },
+    {
+      "id": "EDGE-6-1",
+      "kind": "edge",
+      "category": 6,
+      "bound": 60,
+      "rand": 1,
+      "want": 1
+    },
+    {
+      "id": "EDGE-6-2",
+      "kind": "edge",
+      "category": 6,
+      "bound": 60,
+      "rand": 2,
+      "want": 1
+    },
+    {
+      "id": "EDGE-6-16384",
+      "kind": "edge",
+      "category": 6,
+      "bound": 60,
+      "rand": 16384,
+      "want": 30
+    },
+    {
+      "id": "EDGE-6-32767",
+      "kind": "edge",
+      "category": 6,
+      "bound": 60,
+      "rand": 32767,
+      "want": 59
+    },
+    {
+      "id": "HIST-2",
+      "kind": "histogram",
+      "category": 2,
+      "bound": 160,
+      "distinct": 159,
+      "min_count": 206,
+      "max_count": 207,
+      "min_output": 1,
+      "max_output": 159
+    },
+    {
+      "id": "EDGE-2-0",
+      "kind": "edge",
+      "category": 2,
+      "bound": 160,
+      "rand": 0,
+      "want": 1
+    },
+    {
+      "id": "EDGE-2-1",
+      "kind": "edge",
+      "category": 2,
+      "bound": 160,
+      "rand": 1,
+      "want": 1
+    },
+    {
+      "id": "EDGE-2-2",
+      "kind": "edge",
+      "category": 2,
+      "bound": 160,
+      "rand": 2,
+      "want": 1
+    },
+    {
+      "id": "EDGE-2-16384",
+      "kind": "edge",
+      "category": 2,
+      "bound": 160,
+      "rand": 16384,
+      "want": 80
+    },
+    {
+      "id": "EDGE-2-32767",
+      "kind": "edge",
+      "category": 2,
+      "bound": 160,
+      "rand": 32767,
+      "want": 159
+    },
+    {
+      "id": "UNPROVEN-FPU_control_rounding",
+      "kind": "noninference",
+      "key": "FPU_control_rounding",
+      "want": "UNPROVEN"
+    },
+    {
+      "id": "UNPROVEN-native_score_prior",
+      "kind": "noninference",
+      "key": "native_score_prior",
+      "want": "UNPROVEN"
+    },
+    {
+      "id": "UNPROVEN-native_real_target",
+      "kind": "noninference",
+      "key": "native_real_target",
+      "want": "UNPROVEN"
+    },
+    {
+      "id": "UNPROVEN-original_strict_golden",
+      "kind": "noninference",
+      "key": "original_strict_golden",
+      "want": "UNPROVEN"
+    }
+  ]
+}

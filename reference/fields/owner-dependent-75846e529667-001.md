@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-4"></a>
+## dependent + 0x4
+
+- [research/recovered/json_sources1/reports/data/B_T011_T012_MISSILE_VTABLE_SLOT38_EVIDENCE_20261022_1813.json 行 315](../../research/recovered/json_sources1/reports/data/B_T011_T012_MISSILE_VTABLE_SLOT38_EVIDENCE_20261022_1813.json?plain=1#L315-L315) — "Class-dependent +0x04/+0x54/+0x58 methods",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
 <a id="field-a0c"></a>
 ## dependent + 0xA0C
 
