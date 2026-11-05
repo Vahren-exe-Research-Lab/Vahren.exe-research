@@ -7,6 +7,15 @@
 # BRANCH_ONLY does not imply globally absent in other PR/history, nor curator-approved; DIFFERENT_BLOB means human selective review, not automatic overwrite.
 # Safety/HOLD/refusal scopes are excluded from source/body recovery and remain unchanged. Never infer allowed publication from a filename entry.
 # PUBLISHED_INTAKE on E owner PR is not CURATED; all curator actions refer to dedicated KB owner only; never wholesale-merge or force/rebase/reset.
+# 2026-11-05 follow-up: scoped nonblank line-set check on the four E-owner/document content differences (owner-only / develop-only lines).
+# E-LEGACY-20261020-31-CROSSWALK-BATCH01-20261102.md: 25/1; separate original G0/G1/G2 admissibility and role namespace; 1 develop-only original line requires curator review, not a wholesale overwrite.
+# E-LEGACY-20261020-31-CROSSWALK-BATCH02-20261102.md: 87/0; existing source-ID errata on G2 roster/projection, DemoPerson/F720, two-watch failures, E21 artifact binding.
+# E-LEGACY-20261020-31-CROSSWALK-BATCH05-20261102.md: 4/0; proposed G1 SAVE/UI/COMMIT/ACTIVE sequence acceptance still needs lawful run chronology.
+# E-LEGACY-20261028-29-SOURCE-CROSSWALK-PART2-20261102.md: 73/0; E21 retreat visible-result admission, E14/E15 strict synthetic typing, E06–E11 distinct typed/container identities.
+# The other two DIFFERENT_BLOB_REVIEW rows are provenance INDEX and original-PC asset-receipt TSV, NOT safe instructions to replay refused intake-table writes.
+# CURATOR NEXT CURSOR: only the four crosswalk semantic deltas above, by existing ID, historical source SHA, supersedes/errata and current official REF; pin current owner/develop HEADs anew before any selective curator adoption.
+# E OWNER NEXT CURSOR: seek newly changed, independently lawful NON-HOLD original E/T018 G0-03H / G1-02H and T019 source bytes when authorized PC is restored; otherwise continue fresh source-ID/errata deltas only. T019 World05H and prior safety/10H receipt-write holds remain excluded.
+# This run made zero native Golden observations, zero strict MATCH, zero new formal READY, zero MASTER formal integration, zero original PC source rehash; no owner-source ID, REF, dictionary or develop changes.
 path	owner_pr17_head	develop_snapshot	status	owner_git_blob_sha1	develop_git_blob_sha1	file_class	curator_action
 research/intake/E/E-AUDIT-20261031-17H-T020-T013-DRAIN-RESTORE-CAP-GATE-01.md	fa158577371ec369fc2abc3d427377013ec7ba29	a06d86cc84a565d03a58b668209010b03907646d	SAME_BLOB_IN_DEVELOP	1d0947150c51babf80c24041803c0c430d2517e3	1d0947150c51babf80c24041803c0c430d2517e3	E_RESEARCH_EVIDENCE_NOTE	DUPLICATE_LINK_ONLY
 research/intake/E/E-AUDIT-20261031-18H-T020-T013-RNG-CONTEXT-NEGATIVE-INFERENCE-01.md	fa158577371ec369fc2abc3d427377013ec7ba29	a06d86cc84a565d03a58b668209010b03907646d	SAME_BLOB_IN_DEVELOP	2002e968a93e9d61630b9418356c7d83280d382f	2002e968a93e9d61630b9418356c7d83280d382f	E_RESEARCH_EVIDENCE_NOTE	DUPLICATE_LINK_ONLY
