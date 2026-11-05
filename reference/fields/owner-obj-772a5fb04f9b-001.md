@@ -28,6 +28,9 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3742](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3742-L3742) — - +4（slot 1）: 0x42E74E / 0x43A3DD / 0x4709D0 の 3 箇所。いずれも iostream の sentry で、`[[obj]+4]+obj+0x38` の streambuf の vf1 を呼んでいる。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+- [research/recovered/outside_dev1/reports/004_README_APPLY.md 行 114](../../research/recovered/outside_dev1/reports/004_README_APPLY.md?plain=1#L114-L114) — - 仮想呼び出しの変位で照合: slot 16（+0x40）の呼び出しはない。slot 17（+0x44）は 1 箇所（0x559666、D3D デバイスの vtbl+0x44 = Present）だけ。slot 1（+4）は 3 箇所（0x42E74E / 0x43A3DD / 0x4709D0）あるが、いずれも i
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+
 - [research/recovered/plugin_reports1/reports/T024_OPTIONAL_DOUBLE_FALLBACK_THUNK_V9_STATIC_20261101_23H.md 行 10](../../research/recovered/plugin_reports1/reports/T024_OPTIONAL_DOUBLE_FALLBACK_THUNK_V9_STATIC_20261101_23H.md?plain=1#L10-L10) — V9 function 0x542280 body [0x542280,0x5422BC] 61B（pseudoc帰属）。Ghidra表示: if (global double [0x63B0B8] != *(double *)(obj+0x50)) return *(double *)(obj+0x50); else
   制約・訂正　Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=B_STATIC_CANDIDATE_ERRATUM
 

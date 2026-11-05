@@ -274,4 +274,10 @@
 - [research/recovered/b_reports/T012_SUMMON_CORE_54E7B0_CONTRACT_20261013.md 行 10](../../research/recovered/b_reports/T012_SUMMON_CORE_54E7B0_CONTRACT_20261013.md?plain=1#L10-L10) — [POSITION/REGISTER] 0x54F164特殊条件で候補vtable+0x58 indirect call→cleanup。通常経路は0x54F18A..54F21Dにglobal0xB0BA64/68と0x4FACA0経路、0x54F239 effect object virtual+0x54、0x54
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail; historical READY-STATIC-BODY label is not a new current READY admission
 
+<a id="field-1ef4b4"></a>
+## object + 0x1EF4B4
+
+- [research/recovered/outside_kb1/reports/knowledge_validation_20261030/SYMBOLS_EXPANSION_REPORT_20261029.md 行 63](../../research/recovered/outside_kb1/reports/knowledge_validation_20261030/SYMBOLS_EXPANSION_REPORT_20261029.md?plain=1#L63-L63) — - `Save_ReadDiplomacyState`、`Save_WriteDiplomacyState`：世界側保存object +0x1EF4B4 は確認できても人間向け状態名は仮称。
+  制約・訂正　Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

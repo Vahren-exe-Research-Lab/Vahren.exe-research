@@ -10,6 +10,9 @@
 - [research/recovered/handoff_scope1/reports/dev_lab/docs/archive/WORK_REQUEST_QUEUE_ARCHIVE_20261029.md 行 3234](../../research/recovered/handoff_scope1/reports/dev_lab/docs/archive/WORK_REQUEST_QUEUE_ARCHIVE_20261029.md?plain=1#L3234-L3234) — - snapshot rejected原因: dispatcher ECXはevaluator、VM ownerは[evaluator+4]かつevaluator==VM+0x504。正しいVMから候補akys/kmr/tnok・値30/55/10・Bonusを読取。結果statusレコードは実行後に移動、古いアドレス
   制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
+- [research/recovered/outside_dev1/reports/013_WORK_PINNED_TEMP_HOVER_SPIKE_20261029.md 行 65](../../research/recovered/outside_dev1/reports/013_WORK_PINNED_TEMP_HOVER_SPIKE_20261029.md?plain=1#L65-L65) — - `src/work_selector_hover_context.h`: Player anchor is Temp+0x9C; Player+4 is the owning VM and Player+0x194 is VM+0x504. Temp+0x98 is a different owner chain.
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+
 <a id="field-1eed78"></a>
 ## VM + 0x1EED78
 

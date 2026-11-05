@@ -208,3 +208,16 @@ This section independently reviews **three previously PUBLISHED_INTAKE IDs**, no
 - Important VERIFY limit: `0x5D0D26/28` and `0x5CFBE6/E8` skip their loops for signed count <=0; subsequent equality-only misses (`0x5D0D3C/3E`, `0x5CFBFB/FD`) do not reject a **negative** count with index zero. This is a *conditional branch property*, not proof that negative count is reachable from legal data or causes failure. Upstream pointer/count lifecycle, error cleanup, and live playback remain VERIFY. The 08H two-entry cached/state3 path and the separately CURATED 2026-11-02 01H early `0x5D0B8A` entry must remain distinct; neither was recounted here.
 
 **Evidence boundary and search contract:** three historical IDs are now CURATED_STATIC **only for the instructions, direct CALL sites, and bounded local branch facts described above**. Their full archived offline audits (186/186, 117/117, 187/187) were not rerun. No original-game run, Golden PASS, strict MATCH, newly formal READY, ABI proof, or G4 external-result writeback (all 0 / not demonstrated). See source intake and searchable `symbols.tsv` for `0x5D3DA0`; use `kb.py addr 0x5D3DA0`, `kb.py docs 0x5D4160`, `kb.py find VorbisSetup`, and `kb.py files --task T015` where the authorized local index is present. Next cursor: owner REA 08H/10H/11H native source/correction review and B/E uncurated backlog; do not retry any prior SAFETY_HOLD.
+
+
+## 保存済みOgg研究のgetter・局所state writerを事典へ接続（2026-11-05）
+
+未コミット変更の関数キーを手掛かりに、既に固定保存した一次報告から辞書へ採録した。これは保存済み静的研究の整理であり、今回の原作・native・実機検証ではない。関数名は参照用の説明名で、ABI・正式型・実動作を確定しない。
+
+| 関数 | 保存済み根拠 | 採録範囲・未確認 |
+|---|---|---|
+| [OggSeekPositionShiftGetter](reference/symbols/005D48E0.md) `0x5D48E0` | [REA_20261030_18H_P0_SEEK_FALLBACK_STATIC.md:6-10](research/recovered/rea_batch4/reports/REA_20261030_18H_P0_SEEK_FALLBACK_STATIC.md?plain=1#L6-L10) | 原報告の17byte静的窓では[[EAX+0x1C]+0xE48]の値を返す読取getter。callerは戻り値を位置換算のshift countへ渡す。状態resetという旧解釈は採用しない。単位・値域・実動作は未確認。 |
+| [OggAggregateLinkLengthGetter](reference/symbols/005CFF10.md) `0x5CFF10` | [REA_20261030_19H_P0_SEEK_TOTALLEN_STATIC.md:8-14](research/recovered/rea_batch4/reports/REA_20261030_19H_P0_SEEK_TOTALLEN_STATIC.md?plain=1#L8-L14) | 原報告ではindex=-1時にリンクの64bit長を合算するgetter。安定したstate>=2・リンクmode・件数条件と無効時-131を分ける。正常EOFで-131になるとは断定せず、破損・再入・overflow等は未確認。 |
+| [OggPageUpdateLocalStateWriter](reference/symbols/005CFA10.md) `0x5CFA10` | [REA_20261030_20H_P0_PAGE_STATE_MUTATION_STATIC.md:6-10](research/recovered/rea_batch4/reports/REA_20261030_20H_P0_PAGE_STATE_MUTATION_STATIC.md?plain=1#L6-L10) | 原報告が列挙した自身の直接state書込はowner+0x58への4・EDI(ABI保存を前提に2)・3。callee・alias・再入・他スレッドによる間接変更は未確認。全プログラムの状態不変性や正常EOFを証明しない。 |
+
+各行のSHA・確度は[採録表](research/recovered/intake_outside_map_20261105/SYMBOL_ADOPTIONS.tsv)へ固定した。局所記号owner/thisを正式な構造体型へ昇格させず、新しいフィールド・呼出関係・Golden/READYを機械的に増やしていない。

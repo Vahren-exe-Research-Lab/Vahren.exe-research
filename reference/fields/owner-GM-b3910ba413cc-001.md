@@ -343,6 +343,9 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 2874](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L2874-L2874) — - turnproc フラグ（GM+0x1EF4B4。TurnState に追加）:
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+- [research/recovered/outside_kb1/reports/knowledge/REF_STRUCTS.md 行 48](../../research/recovered/outside_kb1/reports/knowledge/REF_STRUCTS.md?plain=1#L48-L48) — \| `+0x10` \| ptr \| `turnState` \| ターン進行オブジェクト（= GM+0x1EF4B4）を指す \| 静的確認 \| F§79.2 \|
+  制約・訂正　Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+
 <a id="field-1ef4c8"></a>
 ## GM + 0x1EF4C8
 

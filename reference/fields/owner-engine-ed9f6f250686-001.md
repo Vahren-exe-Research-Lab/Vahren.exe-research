@@ -205,6 +205,9 @@
 - [research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md 行 192](../../research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md?plain=1#L192-L192) — \| T014 A16〜A85 \| engine+0x32C「第5コンテナ」の用途は不明 \| 放浪中の Unit の集合（F§26）。保存されずロード後に作り直す \| T014 冒頭と各節に注記 \|
   制約・訂正　Existing full body linked; catalog revision differs
 
+- [research/recovered/outside_dev1/reports/042_REF_SAVE_FORMAT.md 行 192](../../research/recovered/outside_dev1/reports/042_REF_SAVE_FORMAT.md?plain=1#L192-L192) — \| T014 A16〜A85 \| engine+0x32C「第5コンテナ」の用途は不明 \| 放浪中の Unit の集合（F§26）。保存されずロード後に作り直す \| T014 冒頭と各節に注記 \|
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 7](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L7-L7) — - **「第5コンテナ」engine+0x32C は放浪中の Unit の集合**（F§26: 0x460E90 が追加、0x460F10 が除去。structs の Ctx+0x32C roamingSet）。セーブには入らない。ロードで空にした後、+0x84（放浪先）が空でない Unit に 0x460E90 を呼
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
 
@@ -374,9 +377,6 @@
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 
 - [research/recovered/rea_batch11/reports/REA_20261015_2240_POSTLETHAL_EVENT_FLAG_ABI.md 行 9](../../research/recovered/rea_batch11/reports/REA_20261015_2240_POSTLETHAL_EVENT_FLAG_ABI.md?plain=1#L9-L9) — - EXACT GUARD: 0x4321F4 flag!=0 THEN 0x432209 CMP BYTE [engine+0x1EEC44],0。両方非0なら0x432216 battle-special routeへ進み、一般経路0x432306をskipする。flag=1でもengine battle flag
-  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
-
-- [research/recovered/rea_batch11/reports/REA_20261015_2240_POSTLETHAL_EVENT_FLAG_ABI.md 行 11](../../research/recovered/rea_batch11/reports/REA_20261015_2240_POSTLETHAL_EVENT_FLAG_ABI.md?plain=1#L11-L11) — - CRITICAL IMPLICATION: 死亡後両callerの明示flag=1は「常にhistory writerへ行く」を意味しない。0x49CD60を2回呼んだ後のlive engine+0x1EEC44状態に応じて0x4321B0内部のdispatch・履歴処理が異なる。先行virtual+58/0x49
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

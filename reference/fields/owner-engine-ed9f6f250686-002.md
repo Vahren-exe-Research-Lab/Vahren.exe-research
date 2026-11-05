@@ -7,6 +7,9 @@
 <a id="field-1eec44"></a>
 ## engine + 0x1EEC44
 
+- [research/recovered/rea_batch11/reports/REA_20261015_2240_POSTLETHAL_EVENT_FLAG_ABI.md 行 11](../../research/recovered/rea_batch11/reports/REA_20261015_2240_POSTLETHAL_EVENT_FLAG_ABI.md?plain=1#L11-L11) — - CRITICAL IMPLICATION: 死亡後両callerの明示flag=1は「常にhistory writerへ行く」を意味しない。0x49CD60を2回呼んだ後のlive engine+0x1EEC44状態に応じて0x4321B0内部のdispatch・履歴処理が異なる。先行virtual+58/0x49
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
 - [research/recovered/rea_batch14/reports/STATIC_SPATIAL_EVENT_MISSILE_20261010.md 行 20](../../research/recovered/rea_batch14/reports/STATIC_SPATIAL_EVENT_MISSILE_20261010.md?plain=1#L20-L20) — - 入口`in_stack_0000002c !=0 && engine+0x1EEC44 !=0`はearly special route（0x4321B0のgeneral bodyをskip）。このbranchは同関数内数値writer`0x4637A0`のsite 0x432379、通常の`0x40B200`3
   制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
 
@@ -413,12 +416,6 @@
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
 - [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 139](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L139-L139) — - `isNewTurn` opcode7 -> VA 0x44F63C: byte `engine+0x1EF4C1`
-  制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
-
-<a id="field-1ef4c2"></a>
-## engine + 0x1EF4C2
-
-- [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 140](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L140-L140) — - `isPlayerTurn` opcode9 -> VA 0x44F658: byte `engine+0x1EF4C2`
   制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-1ef4c2"></a>
+## engine + 0x1EF4C2
+
+- [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 140](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L140-L140) — - `isPlayerTurn` opcode9 -> VA 0x44F658: byte `engine+0x1EF4C2`
+  制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
+
 <a id="field-1ef4c3"></a>
 ## engine + 0x1EF4C3
 

@@ -4,8 +4,20 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-cc"></a>
+## Unit + 0xCC
+
+- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3266](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3266-L3266) — - Unit+0xCC / +0xC8 の正式名と閾値 DAT_0065bd60 / 0065bd64。
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3293](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3293-L3293) — 5. Unit+0xCC / +0xC8、DAT_0065bd60 / 64、0x57BE30、対象+0x66。いずれも保存済み B / REA の該当 VA が必要。
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
 <a id="field-d0"></a>
 ## Unit + 0xD0
+
+- [research/recovered/b_batch4/data/B_T012_T024_VOICE_EXPIRY_ROUTING_OFFLINE_20261022_1210.md 行 15](../../research/recovered/b_batch4/data/B_T012_T024_VOICE_EXPIRY_ROUTING_OFFLINE_20261022_1210.md?plain=1#L15-L15) — 3. `FUN_0057B380` の外側の入場条件は単純な無条件実行ではない。少なくとも `Unit+0x1867E == 0`、32-bit符号付き `Unit+0xC0 >=0`、`Unit+0xD0 >=0` が必要で、さらに `+0x8C!=0`、`+0x1F8==0`、`+0x1F9!=0`、`+0x186
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
 
 - [research/recovered/b_reports/T011_T024_GROUP34_DUAL_BUCKET_ELIGIBILITY_NATIVE_20261101_11H.md 行 22](../../research/recovered/b_reports/T011_T024_GROUP34_DUAL_BUCKET_ELIGIBILITY_NATIVE_20261101_11H.md?plain=1#L22-L22) — \| Unit+0xD0 \| `0x569633` \| signed dword >= 0 \|
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
@@ -75,6 +87,9 @@
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3468](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3468-L3468) — - Unit+0x130 は ch_karate を指していたため、選択中の技能を示すフィールドではない。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+- [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/BATTLE_AI_ARCHITECTURE_20261025.md 行 32](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/BATTLE_AI_ARCHITECTURE_20261025.md?plain=1#L32-L32) — \| `0x57E1D0` \| Unit+0x130側の別技能候補、標的・距離等のgate \| 主技能候補と混同禁止 \|
+  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
 
 - [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 251](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L251-L251) — - kind 5は最初の該当skill pointerを `Unit+0x130` へ保存、kind 6はこのflag設定branchではskip。
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
@@ -349,43 +364,22 @@
 <a id="field-178"></a>
 ## Unit + 0x178
 
-- [research/recovered/plugin_reports1/reports/UNIT_SAVE_STAT_SNAPSHOT_CROSSWALK_20261026.md 行 9](../../research/recovered/plugin_reports1/reports/UNIT_SAVE_STAT_SNAPSHOT_CROSSWALK_20261026.md?plain=1#L9-L9) — - `0x0058B7F0`：Unitの初期レベルを決定し、Unit+0x178..+0x1A0の11個の能力フィールドに定義から算出した整数値を直接代入。擬似Cに `**(int**)((int)local_84 + index) = iVar6 * iStack_8c + iStack_d0` と類する式。
-  制約・訂正　Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=TRUST_SAVE_AUTHORED_AUDIT
+- [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/HANDOFF.md 行 49](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/HANDOFF.md?plain=1#L49-L49) — - **[ON-STAND-010新発見] SUMMON_PARENT_NATIVE_DAT_BOUNDARY_20261025.md**：既存Ghidra V9で召喚親子リンクを検証。親Unit+0x178/17C/180＝子ポインタ一覧、0x5774A0＝子登録、0x577600＝子数を用いた召喚上限判定、0x54
+  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
 
-- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 307](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L307-L307) — [GOLDEN-DESIGNED; actual game PASS0] flag0/flag1返値・Unit+0x178..+0x1A4と+0x1C4・状態setter差、battle1 debuff→battle2 linked Unit/instance差、battle+0x40..+0x4Cとstat+0x90
-  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+- [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/STAND_DISC_GENERIC_TRANSFER_FEASIBILITY_20261025.md 行 35](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/STAND_DISC_GENERIC_TRANSFER_FEASIBILITY_20261025.md?plain=1#L35-L35) — Unit+0x178/17C/180 に原作の召喚子Unitベクタを確認。登録処理0x005774A0、召喚可能数検査0x00577600、術者死亡時のelement_lost処理0x005445E0/0x00575A60。親子管理を新規開発する必要はない。**ただしDATの親別・技能別子取得/生存中の親からの子だけ消
+  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
 
-- [research/recovered/search_reports1/reports/BATTLE_TAKEOVER_RESEARCH_STAGE12_20261022.md 行 32](../../research/recovered/search_reports1/reports/BATTLE_TAKEOVER_RESEARCH_STAGE12_20261022.md?plain=1#L32-L32) — 8RAW全てでUnit+0x1CC（部隊先頭の記録参照）、Unit+0x178..0x180（子一覧）、Unit+0x1E4B4（元Unitの記録キャッシュ）、Unit+0x1E594（条件付き関連参照）の実バイトは保存されていなかった。
-  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+- [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/STAND_SPEC.md 行 10](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/STAND_SPEC.md?plain=1#L10-L10) — [USER_FIXED] **スタンドは別枠で厳密に管理**。既存DATの召喚・攻撃・耐性・衛星追従を最大限利用し、DATのみでは保証できない不変条件だけ最小の戦闘アダプタで補う。原作には Unit+0x178～0x180 の親→子ベクタがあるので独自親子台帳を作り直さない。
+  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
 
-<a id="field-180"></a>
-## Unit + 0x180
+- [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/STAND_SPEC.md 行 100](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/STAND_SPEC.md?plain=1#L100-L100) — - [ON-STAND-010 STATIC CONFIRMED] 原作 Unit+0x178 begin / +0x17C end / +0x180 capacity は既存召喚子ポインタvector。0x005774A0が登録、0x00577600が子数と召喚上限比較、0x005445E0/0x00575A60がe
+  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
 
-- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 303](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L303-L303) — - 非0経路はUnit+0x180/+0x184/+0x188/+0x18C/+0x190の和をdouble[0x879788]で重み付けし、+0x198/+0x19C、+0x1A0、+0x194、+0x17C、+0x178の値もそれぞれglobal doubleを使い変換・加算。0x587DA3..0x587E41で
-  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+- [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/SUMMON_DISC_REMOVAL_POLICY_20261026.md 行 43](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/SUMMON_DISC_REMOVAL_POLICY_20261026.md?plain=1#L43-L43) — 6. 誰が何体の一般召喚物を出したかを追うためだけに新DLL／独自親子台帳は作らない。既存EXEには親Unit+0x178～+0x180の召喚子vectorがある。将来必要な場合だけ利用検討。
+  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
 
-<a id="field-18c"></a>
-## Unit + 0x18C
-
-- [research/recovered/b_reports/T024_UNIT_ACTION_PRIORITY_CHAIN_NATIVE_20261025_17H.md 行 13](../../research/recovered/b_reports/T024_UNIT_ACTION_PRIORITY_CHAIN_NATIVE_20261025_17H.md?plain=1#L13-L13) — - 0x527716/722 は Unit+0x430==0x80000008（sentinel）かつUnit+0x45D==0でなければAL0。Unit+0x18Cの+0x50/51及び+0x26/27の各ペアに少なくとも1つ非0が必要。
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
-
-<a id="field-1a4"></a>
-## Unit + 0x1A4
-
-- [research/recovered/b_batch5/data/T011_LEVELUP_11FIELD_RECALC_CACHE_GATE_20261021_17H.md 行 9](../../research/recovered/b_batch5/data/T011_LEVELUP_11FIELD_RECALC_CACHE_GATE_20261021_17H.md?plain=1#L9-L9) — 2. `level_max`設定読込後、0なら`0x0046F4C0(Unit+0x1A4,100)`を採用する候補経路。上限の実効値や比較対象が意図する設定意味はVERIFY。未到達ならレベル上昇しない。
-  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
-
-- [research/recovered/b_batch9/data/T013_MODE2_PAIRWISE_DISTANCE_TREE_NATIVE_20261030_16H.md 行 11](../../research/recovered/b_batch9/data/T013_MODE2_PAIRWISE_DISTANCE_TREE_NATIVE_20261030_16H.md?plain=1#L11-L11) — 5. 0x44C1C8 manager+0xA7!=0、0x44C1D5 第一候補Unit+0x1A4==0、0x44C1EA 対候補Unit+0x1A4==2 の3条件成立時だけ、0x44C212 CALL0x44D630 / 0x44C221 CALL0x44D1C0の**第2挿入**を行う。0x44C1F7でEB
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/b_batch9/data/T013_MODE2_PAIRWISE_DISTANCE_TREE_NATIVE_20261030_16H.md 行 17](../../research/recovered/b_batch9/data/T013_MODE2_PAIRWISE_DISTANCE_TREE_NATIVE_20261030_16H.md?plain=1#L17-L17) — 距離計算の32bit符号・overflow、同距離時のキー衝突・木順序、manager+0xA7の由来、両一時木の候補識別、実Unit+0x1A4の意味と先頭選択/最終AI結果への影響を独立照合。Node/key lifetime、0x44D3F0側副作用もVERIFY。
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/b_batch9/data/T013_MODE2_PRIMARY_UNIT_MODE3_GATE_NATIVE_20261030_14H.md 行 16](../../research/recovered/b_batch9/data/T013_MODE2_PRIMARY_UNIT_MODE3_GATE_NATIVE_20261030_14H.md?plain=1#L16-L16) — 0x44B240（mode1）は0x44B372～389でUnit+0x1867C==0のみUnitData=Unit+0x1C8の+0x1C4を合計し、0x44B393/3A2で分岐条件に応じて合計の最大/最小を更新。group中Unit+0x1A4==2の別集計が0x44B3CF..4BFに存在し、manager+
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/b_reports/T013_RANK_CLEANUP_TO_PERUNIT_EVENT_CALLCHAIN_NATIVE_20261031_14H.md 行 8](../../research/recovered/b_reports/T013_RANK_CLEANUP_TO_PERUNIT_EVENT_CALLCHAIN_NATIVE_20261031_14H.md?plain=1#L8-L8) — [CALLEE CONTRACT/BOUNDARY] 0x577A20 original 0x577A52 ESI=ECX、0x577A54 EDI=EDX、0x577A5E/67/70にUnit+0x8C/+0x1F8/+0x1F9 gate、0x577A79 [ESP+0x70] < 0x10なら別早期枝、0x57
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
+- [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/TNOK_CHIKORITA_RECALL_20261025.md 行 9](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/TNOK_CHIKORITA_RECALL_20261025.md?plain=1#L9-L9) — 【2026-10-25 ON-STAND-010訂正】原作EXEに術者Unit+0x178～0x17Cの**召喚子Unitポインタ一覧**が存在し、登録・召喚枠上限判定・術者死亡時のelement_lost消滅に使用されていることを既存Ghidra V9から確認。下記の『独立召喚所有台帳』は仕様テスト用であり、本番で親
+  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

@@ -1,0 +1,16 @@
+# REA isolated upgrade audit (2026-10-12 JST)
+- Scope: 迫真戦記 _REDEV_RESEARCH/rea_lab only. No global npm install, no rea setup, no MCP registration, no original EXE/ZIP/game script edits, no MASTER/A-E changes.
+- Baseline: rea-agents 6.1.0 exact-pin, isolated toolchain. Ghidra 12.1.4 and JDK 21.0.12.1 retained.
+- Update: npm install rea-agents@6.4.0 --prefix toolchain --ignore-scripts --save-exact --omit=dev --no-audit --no-fund --cache npm_cache; exit 0.
+- Installed package and package.json pinned dependency: both 6.4.0. CLI rea --version: 6.4.0 / exit 0.
+- Pre-update backup: toolchain/REA_PRE_UPDATE_v6.1.0_20261012.zip (6 entries, SHA256 AAA639FE574C1CD27C1053E2C4AAE13085BB41C6AB6D580B9A96C604E4F829F9).
+- Backed up files: toolchain/package.json and package-lock.json, README.md, rea_env.ps1, decomp_task/run_batch.mjs and decomp_task/README.md.
+- Current-version metadata updated: README.md, rea_env.ps1, decomp_task/README.md, run_batch.mjs, sync_progress.mjs, toolchain/mcp_probe.mjs.
+- Node syntax checks: run_batch.mjs, sync_progress.mjs, mcp_probe.mjs exit 0.
+- Read-only MCP connect/listTools smoke: server version 6.4.0, 170 tools, required six (open_binary, procedure_info, procedure_pseudo_code, procedure_assembly, procedure_callers, procedure_callees) all present; exit 0.
+- REA doctor --json overall healthy=false / exit 1: optional Hopper, IDA and skill identity absent. Ghidra, Ghidra platform/architecture/install/version/headless/native_decompiler/java/native_authority all OK.
+- Isolated target copy SHA256 still E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187.
+- No old game execution and no new full Ghidra PE analysis were performed; native provider decompilation compatibility and any v6.3+ schema changes still require a future owner-controlled test.
+- Decompile active.lock absent at precheck. Historical run evidence remains version-specific; do not rewrite existing run output or infer game Golden PASS.
+- Windows QUEUE.json/PROGRESS.md rename EPERM is unchanged and was not retried. No bypass of denied operations.
+- For rollback, review the backup and restore old manifests/metadata before reinstalling pinned 6.1.0 inside the isolated toolchain; never overwrite concurrent runs.

@@ -8,7 +8,7 @@
 
 文書検索結果は保存ファイル名、元パス・出典URI、題名、本文だけの一致の順で最大20件です。同じ区分内は回収台帳での初出順です。省略時は一致総数を表示します。全件の出典・制約は一覧または各詳細ページに掲載しています。研究ID・題名で絞り込めます。アドレス・所有者＋オフセット検索は従来の専用結果を返します。
 
-[前のページ](page-016.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md)
+[前のページ](page-016.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md) · [次のページ](page-018.md)
 
 - [T020_E_T013_POSTREFILL_READBACK_20261030_21H.json](../../research/recovered/json_batch1/reports/tests/T020_E_T013_POSTREFILL_READBACK_20261030_21H.json?plain=1#L1-L1) — `research/recovered/json_batch1/reports/tests/T020_E_T013_POSTREFILL_READBACK_20261030_21H.json`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY; root1619 source/destination SHA match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1630-L1630)。制約・訂正 Authored historical HISTORICAL_AUDIT_READBACK_RECEIPT only; recorded PASS/counts/hash/READY are not newly executed or verified; no linked runner/cases/native/source body fetched; no semantic/native/runtime/type/ABI promotion
@@ -370,4 +370,151 @@
   本文 SHA256 `577cbdf041f32257c23d7182130f73cb3d447be9cdf2d3bde0917857966c9e2c`
   元パス <code>tests/T020_E_G0_SAVE_RUN_SOURCE_SCOPE_RECEIPT_20261101_20H.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1705-L1705)。
 
-[前のページ](page-016.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md)
+- [未登録アドレス候補・重要度評価（未検証）](../../research/recovered/outside_kb1/reports/knowledge/CANDIDATE_RANKING_20261030.md?plain=1#L1-L1) — `research/recovered/outside_kb1/reports/knowledge/CANDIDATE_RANKING_20261030.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Currentroot1704 SHA/source-label lookup; historical content SHA not supplied。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1706-L1706)。制約・訂正 Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+  本文 SHA256 `fe2ba8fd6c405ddb8c94e5c6d59fdca22c570ac09c39cbc2df197d17de6a9600`
+  元パス <code>knowledge/CANDIDATE_RANKING_20261030.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1706-L1706)。
+  元パス <code>knowledge_validation_20261030/CANDIDATE_RANKING_20261030.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1711-L1711)。 ALIAS_WITHIN_BATCH_EXACT。制約・訂正 Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+
+- [研究資料の目録（自動生成。build_catalog.py）](../../research/recovered/outside_kb1/reports/knowledge/CATALOG.md?plain=1#L1-L1) — `research/recovered/outside_kb1/reports/knowledge/CATALOG.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Currentroot1704 SHA/source-label lookup; historical content SHA not supplied。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1707-L1707)。制約・訂正 Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+  本文 SHA256 `e8dd473e8b197fd47aee833a034e75c72868cfea178c971fe3c2d0118bac41f9`
+  元パス <code>knowledge/CATALOG.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1707-L1707)。
+
+- [構造体事典（自動生成。元データは structs.tsv）](../../research/recovered/outside_kb1/reports/knowledge/REF_STRUCTS.md?plain=1#L1-L1) — `research/recovered/outside_kb1/reports/knowledge/REF_STRUCTS.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Currentroot1704 SHA/source-label lookup; historical content SHA not supplied。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1708-L1708)。制約・訂正 Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+  本文 SHA256 `806a56efd399685440a79d21aa7bbdc6b395ee1caee952752aee99d2744f83c6`
+  元パス <code>knowledge/REF_STRUCTS.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1708-L1708)。
+
+- [通常セーブ解析の道具（2026-11-01 Claude）](../../research/recovered/outside_kb1/reports/knowledge/research/save_analysis_20261101/README.md?plain=1#L1-L1) — `research/recovered/outside_kb1/reports/knowledge/research/save_analysis_20261101/README.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Currentroot1704 SHA/source-label lookup; historical content SHA not supplied。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1710-L1710)。制約・訂正 Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+  本文 SHA256 `380c8e4a02e33dd4994e84f541d75b88052b323102aad45a5a62e8adb44b953c`
+  元パス <code>knowledge/research/save_analysis_20261101/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1710-L1710)。
+
+- [研究資料の目録（自動生成。build_catalog.py）](../../research/recovered/outside_kb1/reports/knowledge_validation_20261030/CATALOG.md?plain=1#L1-L1) — `research/recovered/outside_kb1/reports/knowledge_validation_20261030/CATALOG.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Currentroot1704 SHA/source-label lookup; historical content SHA not supplied。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1712-L1712)。制約・訂正 Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+  本文 SHA256 `7a9b91d1896c55f4b7aa19c93289248ad459248e00dd21d190f99b189c4c4ed6`
+  元パス <code>knowledge_validation_20261030/CATALOG.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1712-L1712)。
+
+- [全文研究検索DBの軽量化・更新検証（2026-10-30）](../../research/recovered/outside_kb1/reports/knowledge_validation_20261030/DB_OPTIMIZATION_REPORT_20261030.md?plain=1#L1-L1) — `research/recovered/outside_kb1/reports/knowledge_validation_20261030/DB_OPTIMIZATION_REPORT_20261030.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Currentroot1704 SHA/source-label lookup; historical content SHA not supplied。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1713-L1713)。制約・訂正 Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+  本文 SHA256 `c0592460a3adc935836a810a9e8dd1311fa7bba19534f3ace85e845f889878d4`
+  元パス <code>knowledge_validation_20261030/DB_OPTIMIZATION_REPORT_20261030.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1713-L1713)。
+
+- [Ghidra / x32dbg 研究知識ベース反映検証（2026-10-30）](../../research/recovered/outside_kb1/reports/knowledge_validation_20261030/GHIDRA_X32DBG_VERIFICATION_20261030.md?plain=1#L1-L1) — `research/recovered/outside_kb1/reports/knowledge_validation_20261030/GHIDRA_X32DBG_VERIFICATION_20261030.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Currentroot1704 SHA/source-label lookup; historical content SHA not supplied。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1714-L1714)。制約・訂正 Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+  本文 SHA256 `915f17b221c97d9991e3ca240717c8bd5e9d8ef5b856710e98b3d7fe613a6e91`
+  元パス <code>knowledge_validation_20261030/GHIDRA_X32DBG_VERIFICATION_20261030.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1714-L1714)。
+
+- [KB-SYNC-01 安全拒否・未完了記録（2026-10-29 JST）](../../research/recovered/outside_kb1/reports/knowledge_validation_20261030/KB_SYNC_BLOCKED_20261029.md?plain=1#L1-L1) — `research/recovered/outside_kb1/reports/knowledge_validation_20261030/KB_SYNC_BLOCKED_20261029.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Currentroot1704 SHA/source-label lookup; historical content SHA not supplied。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1715-L1715)。制約・訂正 Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+  本文 SHA256 `9455c895c050af7039a26d8827f9d335c7ccf7906e2d252495198148cbc6839e`
+  元パス <code>knowledge_validation_20261030/KB_SYNC_BLOCKED_20261029.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1715-L1715)。
+
+- [迫真戦記研究知識ベース ①②⑤ 実装記録（2026-10-29）](../../research/recovered/outside_kb1/reports/knowledge_validation_20261030/KB_WORKFLOW_125_REPORT_20261029.md?plain=1#L1-L1) — `research/recovered/outside_kb1/reports/knowledge_validation_20261030/KB_WORKFLOW_125_REPORT_20261029.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Currentroot1704 SHA/source-label lookup; historical content SHA not supplied。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1716-L1716)。制約・訂正 Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+  本文 SHA256 `ee7e6ee8748293e0cb756adddcfdce14ead695949d70f2a82aea652193f37158`
+  元パス <code>knowledge_validation_20261030/KB_WORKFLOW_125_REPORT_20261029.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1716-L1716)。
+
+- [研究知識ベース（knowledge）](../../research/recovered/outside_kb1/reports/knowledge_validation_20261030/README.md?plain=1#L1-L1) — `research/recovered/outside_kb1/reports/knowledge_validation_20261030/README.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Currentroot1704 SHA/source-label lookup; historical content SHA not supplied。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1717-L1717)。制約・訂正 Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+  本文 SHA256 `de5a97354eda4b1e3659d064101243238d48c4017f1d0651e97fd42bbc8059be`
+  元パス <code>knowledge_validation_20261030/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1717-L1717)。
+
+- [DAT の挙動事典（手書き。2026-10-29 Claude）](../../research/recovered/outside_kb1/reports/knowledge_validation_20261030/REF_DAT_BEHAVIOR.md?plain=1#L1-L1) — `research/recovered/outside_kb1/reports/knowledge_validation_20261030/REF_DAT_BEHAVIOR.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Currentroot1704 SHA/source-label lookup; historical content SHA not supplied。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1718-L1718)。制約・訂正 Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+  本文 SHA256 `1afa85d534bc4c91ba5f82c2a2b0bebe51a196043c4eeae42529add329bdbb3c`
+  元パス <code>knowledge_validation_20261030/REF_DAT_BEHAVIOR.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1718-L1718)。
+
+- [構造体事典（自動生成。元データは structs.tsv）](../../research/recovered/outside_kb1/reports/knowledge_validation_20261030/REF_STRUCTS.md?plain=1#L1-L1) — `research/recovered/outside_kb1/reports/knowledge_validation_20261030/REF_STRUCTS.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Currentroot1704 SHA/source-label lookup; historical content SHA not supplied。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1719-L1719)。制約・訂正 Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+  本文 SHA256 `729b859a7d8871eaa98ffc905ed289ddf3ff68a3db30971757f9b5d76eb46efa`
+  元パス <code>knowledge_validation_20261030/REF_STRUCTS.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1719-L1719)。
+
+- [UI の仕組み（手書き。2026-10-29 Claude）](../../research/recovered/outside_kb1/reports/knowledge_validation_20261030/REF_UI_SYSTEM.md?plain=1#L1-L1) — `research/recovered/outside_kb1/reports/knowledge_validation_20261030/REF_UI_SYSTEM.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Currentroot1704 SHA/source-label lookup; historical content SHA not supplied。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1720-L1720)。制約・訂正 Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+  本文 SHA256 `b3da94fed618f67b9e7ba4bd296ee3c0cfdb2a67ba8848c0f83ad6c04443aab9`
+  元パス <code>knowledge_validation_20261030/REF_UI_SYSTEM.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1720-L1720)。
+  元パス <code>dev_lab/_work/kb_datui_20261101/before/REF_UI_SYSTEM.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1772-L1772)。 FULL_BODY_EXACT。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.; Parent root-ledger canonical destination shares identical accepted bytes; preparation receipt destination remains a historical intake-stage copy
+
+- [symbols.tsv 全分野拡充 作業報告（2026-10-29）](../../research/recovered/outside_kb1/reports/knowledge_validation_20261030/SYMBOLS_EXPANSION_REPORT_20261029.md?plain=1#L1-L1) — `research/recovered/outside_kb1/reports/knowledge_validation_20261030/SYMBOLS_EXPANSION_REPORT_20261029.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Currentroot1704 SHA/source-label lookup; historical content SHA not supplied。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1721-L1721)。制約・訂正 Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+  本文 SHA256 `3d141d1cbbbf46a2002d725cb50fc7dab69650176f00fb8256db0d5615bdc272`
+  元パス <code>knowledge_validation_20261030/SYMBOLS_EXPANSION_REPORT_20261029.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1721-L1721)。
+
+- [研究知識ベースの正本・競合防止（KB-SYNC-01）](../../research/recovered/outside_kb1/reports/knowledge_validation_20261030/SYNC_PROTOCOL.md?plain=1#L1-L1) — `research/recovered/outside_kb1/reports/knowledge_validation_20261030/SYNC_PROTOCOL.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Currentroot1704 SHA/source-label lookup; historical content SHA not supplied。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1722-L1722)。制約・訂正 Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+  本文 SHA256 `8da2e046bb14471ab20aa4fb530f34b69314770c914d4fba8a17f2a914b8095f`
+  元パス <code>knowledge_validation_20261030/SYNC_PROTOCOL.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1722-L1722)。
+
+- [研究知識ベース同期状態](../../research/recovered/outside_kb1/reports/knowledge_validation_20261030/SYNC_STATUS.md?plain=1#L1-L1) — `research/recovered/outside_kb1/reports/knowledge_validation_20261030/SYNC_STATUS.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Currentroot1704 SHA/source-label lookup; historical content SHA not supplied。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1723-L1723)。制約・訂正 Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+  本文 SHA256 `e26f3010796b9dd97d884321213dfff2f4e5fd0728ddc3e26b03e243fcd58baa`
+  元パス <code>knowledge_validation_20261030/SYNC_STATUS.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1723-L1723)。
+
+- [迫真戦記 ver0.67 — REA 6.4.0 独立解析ラボ](../../research/recovered/outside_kb1/reports/rea_lab/README.md?plain=1#L1-L1) — `research/recovered/outside_kb1/reports/rea_lab/README.md`
+  回収状態 CONTENT_REVIEWED_PRIVACY_FULL_VARIANT。以前の収録状況 Currentroot1704 SHA/source-label lookup; historical content SHA not supplied。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1724-L1724)。制約・訂正 Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption; only local account-name token in physical LF26 replaced; full byte-span proof PRIVACY_SPANS.tsv
+  本文 SHA256 `6a7fb46dc319942400f1d89d04ab9ae9f61eff453c213ef4d835105933da37e2`
+  元パス <code>rea_lab/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1724-L1724)。
+
+- [【最初に読む】迫真戦記 ver0.67 Ghidra 解析（2026-10-29 更新 / Claude）](../../research/recovered/outside_kb1/reports/rea_lab/headless_analysis/00_START_HERE_ACTIVE_RESEARCH.md?plain=1#L1-L1) — `research/recovered/outside_kb1/reports/rea_lab/headless_analysis/00_START_HERE_ACTIVE_RESEARCH.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Currentroot1704 SHA/source-label lookup; historical content SHA not supplied。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1725-L1725)。制約・訂正 Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+  本文 SHA256 `1dd87cc12f48cdd92952e5923dbf19b96ed0de64cedbdf2f633b444e6c443236`
+  元パス <code>rea_lab/headless_analysis/00_START_HERE_ACTIVE_RESEARCH.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1725-L1725)。
+
+- [HAKUSHIN-GHIDRA-WHOLE-20261020](../../research/recovered/outside_kb1/reports/rea_lab/headless_analysis/_history_20261029/RUN_MANIFEST_20261020.md?plain=1#L1-L1) — `research/recovered/outside_kb1/reports/rea_lab/headless_analysis/_history_20261029/RUN_MANIFEST_20261020.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Currentroot1704 SHA/source-label lookup; historical content SHA not supplied。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1729-L1729)。制約・訂正 Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+  本文 SHA256 `df8498cd8cc781a18dd6405a93bee2fbb963172e17a415aba47508b0886986b7`
+  元パス <code>rea_lab/headless_analysis/_history_20261029/RUN_MANIFEST_20261020.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1729-L1729)。
+
+- [REA/Ghidra isolated installation audit — 2026-10-10](../../research/recovered/outside_kb1/reports/rea_lab/results/INSTALLATION_STATUS_20261010.md?plain=1#L1-L1) — `research/recovered/outside_kb1/reports/rea_lab/results/INSTALLATION_STATUS_20261010.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Currentroot1704 SHA/source-label lookup; historical content SHA not supplied。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1730-L1730)。制約・訂正 Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+  本文 SHA256 `9b451b7bef7ffe7291cc3e82644d86bfd4a395de948eb2eca77974ea1e28e257`
+  元パス <code>rea_lab/results/INSTALLATION_STATUS_20261010.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1730-L1730)。
+
+- [GHIDRA-JAVA-20261020 — 起動環境修復記録](../../research/recovered/outside_kb1/reports/rea_lab/results/REA_GHIDRA_JAVA_FIX_20261020.md?plain=1#L1-L1) — `research/recovered/outside_kb1/reports/rea_lab/results/REA_GHIDRA_JAVA_FIX_20261020.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Currentroot1704 SHA/source-label lookup; historical content SHA not supplied。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1731-L1731)。制約・訂正 Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+  本文 SHA256 `85d052a4348fd8bec1d21167286bbedc192df42ef39e619bc4af8de96bd22f1f`
+  元パス <code>rea_lab/results/REA_GHIDRA_JAVA_FIX_20261020.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1731-L1731)。
+
+- [REA isolated upgrade audit (2026-10-12 JST)](../../research/recovered/outside_kb1/reports/rea_lab/results/REA_UPGRADE_20261012.md?plain=1#L1-L1) — `research/recovered/outside_kb1/reports/rea_lab/results/REA_UPGRADE_20261012.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Currentroot1704 SHA/source-label lookup; historical content SHA not supplied。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1732-L1732)。制約・訂正 Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+  本文 SHA256 `c997dc2e6ebea400da835ab1985dedba2c4d1ff7f4de6458d497423b6c63629f`
+  元パス <code>rea_lab/results/REA_UPGRADE_20261012.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1732-L1732)。
+
+- [疑似C 39関数の依存関係（保存済みGhidra callers/callees 集計）](../../research/recovered/outside_kb1/reports/dev_lab/recovered_source/DEPENDENCY_AUDIT.md?plain=1#L1-L1) — `research/recovered/outside_kb1/reports/dev_lab/recovered_source/DEPENDENCY_AUDIT.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Currentroot1704 SHA/source-label lookup; historical content SHA not supplied。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1733-L1733)。制約・訂正 Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+  本文 SHA256 `a32489c32c4ddf8f8cd861ec4e49ae64e1bdc8bdee337c78e4e8723c11646962`
+  元パス <code>dev_lab/recovered_source/DEPENDENCY_AUDIT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1733-L1733)。
+
+- [保存済みGhidra疑似Cソース — 再開発用sourcebook](../../research/recovered/outside_kb1/reports/dev_lab/recovered_source/INDEX.md?plain=1#L1-L1) — `research/recovered/outside_kb1/reports/dev_lab/recovered_source/INDEX.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Currentroot1704 SHA/source-label lookup; historical content SHA not supplied。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1734-L1734)。制約・訂正 Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+  本文 SHA256 `766d00dab266baaf4c03f0fbbec6887bb9c79f750a36eb5d3f4a0336bc942123`
+  元パス <code>dev_lab/recovered_source/INDEX.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1734-L1734)。
+
+- [元EXEをソースへ戻すための現実的な設計図](../../research/recovered/outside_kb1/reports/dev_lab/recovered_source/SOURCE_RECONSTRUCTION_ROADMAP.md?plain=1#L1-L1) — `research/recovered/outside_kb1/reports/dev_lab/recovered_source/SOURCE_RECONSTRUCTION_ROADMAP.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Currentroot1704 SHA/source-label lookup; historical content SHA not supplied。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1735-L1735)。制約・訂正 Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+  本文 SHA256 `65fd283e28f77551618ad6839cca32e368ce5e894c6d96f8d4bb9e977e4e0b3f`
+  元パス <code>dev_lab/recovered_source/SOURCE_RECONSTRUCTION_ROADMAP.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1735-L1735)。
+
+- [迫真戦記 ver0.67 — 独立互換エンジン開発ラボ](../../research/recovered/outside_dev1/reports/001_README.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/001_README.md`
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1736-L1736)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  本文 SHA256 `1090dc0058d899c6595dfa3b923825839136329374d5e690310d18239e27dacc`
+  元パス <code>dev_lab/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1736-L1736)。
+
+- [窓のアクティブ状態の診断版（Claude 2026-10-31）](../../research/recovered/outside_dev1/reports/002_README.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/002_README.md`
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1737-L1737)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  本文 SHA256 `8a8850630b95d39156e1e2c3b19fc30c84b0fe9cd2c9c7054eeeb8cec338f4d1`
+  元パス <code>dev_lab/_work/act_trace_20261031/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1737-L1737)。
+
+- [ボタンの縁の残りの修正（Claude 2026-10-31）](../../research/recovered/outside_dev1/reports/003_README.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/003_README.md`
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1738-L1738)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  本文 SHA256 `fe7f7dd5351c5bceefb3b999d0946e0c3eee46d879a69b98f9a7c1b8d24da8b8`
+  元パス <code>dev_lab/_work/btnfix_20261031/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1738-L1738)。
+
+- [Claude ローダー修正パッチ（2026-10-26）— Codex（Work）向け取り込み手順](../../research/recovered/outside_dev1/reports/004_README_APPLY.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/004_README_APPLY.md`
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1739-L1739)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  本文 SHA256 `951f539b42e82483241677dcaea41ef2cb79903c12bba67e2a3813cf1ff20600`
+  元パス <code>dev_lab/_work/claude_loader_patches_20261026/README_APPLY.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1739-L1739)。
+
+[前のページ](page-016.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md) · [次のページ](page-018.md)

@@ -40,6 +40,15 @@
 - [research/recovered/b_batch7/data/T012_HEAL_CHILD_POOL_41E1D0_CONTRACT_20261013.md 行 4](../../research/recovered/b_batch7/data/T012_HEAL_CHILD_POOL_41E1D0_CONTRACT_20261013.md?plain=1#L4-L4) — [CALLER / INPUT] 前B-20261013-1400-01で確定の0x41E060 register helper→0x41E072 call0x41E1D0。ECX=dest subrecordをstack第1引数にpush、X-valueをstack第2として渡し、EAX=Y-value。0x41E1
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
+<a id="field-178"></a>
+## parent + 0x178
+
+- [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/SUMMON_PARENT_NATIVE_DAT_BOUNDARY_20261025.md 行 15](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/SUMMON_PARENT_NATIVE_DAT_BOUNDARY_20261025.md?plain=1#L15-L15) — - VA 0x005445E0: 生存している子を parent+0x178..17C で走査し、子のelement_lostを判定して子Unitのvtable+0x58を呼ぶ死亡処理。
+  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+
+- [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/SUMMON_PARENT_NATIVE_DAT_BOUNDARY_20261025.md 行 38](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/SUMMON_PARENT_NATIVE_DAT_BOUNDARY_20261025.md?plain=1#L38-L38) — B: 完全汎用・高精度：最小DLLや新戦闘adapterがparent+0x178..17Cの**原作既存**子一覧を参照して子個体だけ消す。独立した親子リストを同期管理することは原則不要。特定技能から生まれた子だけを選ぶ場合は追加のrootSkillID識別が必要。
+  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+
 <a id="field-1e4b4"></a>
 ## parent + 0x1E4B4
 

@@ -22,4 +22,10 @@
 - [research/recovered/plugin_reports1/reports/T007_MAP_FORMAT.md 行 14](../../research/recovered/plugin_reports1/reports/T007_MAP_FORMAT.md?plain=1#L14-L14) — - entry = type:u8 + name:UTF-8 bytes + 0xFE。
   制約・訂正　Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=MAP_IMAGE_FORMAT_STUDY
 
+<a id="field-1c4"></a>
+## bytes + 0x1C4
+
+- [research/recovered/outside_dev1/reports/017_WORK_V4_REVIEW_LOCATION_CUSTOM_COLUMNS_20261029.md 行 121](../../research/recovered/outside_dev1/reports/017_WORK_V4_REVIEW_LOCATION_CUSTOM_COLUMNS_20261029.md?plain=1#L121-L121) — At already established stops, record EIP and run-specific module base; at 0x55BC60 entry record ECX=self, [esp+4], [self+0x1B8] and owned/non-owned context. At
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Only personal profile prefix substitutions; byte spans and all unchanged gaps proven.
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

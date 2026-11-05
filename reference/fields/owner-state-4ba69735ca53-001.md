@@ -73,6 +73,12 @@
 - [research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md 行 214](../../research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md?plain=1#L214-L214) — - STATIC: EH state1 local-pointer address into 0x42AA00; 0x5B61F2 -> 0x5B9EDB predicate at state +0x90 controls optional 0x42AA80; indirect nested vptr+0x34 and
   制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
 
+<a id="field-a4"></a>
+## state + 0xA4
+
+- [research/recovered/outside_dev1/reports/017_WORK_V4_REVIEW_LOCATION_CUSTOM_COLUMNS_20261029.md 行 93](../../research/recovered/outside_dev1/reports/017_WORK_V4_REVIEW_LOCATION_CUSTOM_COLUMNS_20261029.md?plain=1#L93-L93) — - War object 0x8BA538, created at 0x5A4100, has visible +0x84 (0x8BA5BC) and state +0xA4 (0x8BA5DC). State 0x80000008 was also present normally; visible became
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Only personal profile prefix substitutions; byte spans and all unchanged gaps proven.
+
 <a id="field-18c"></a>
 ## state + 0x18C
 

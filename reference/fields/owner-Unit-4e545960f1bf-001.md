@@ -85,6 +85,9 @@
 - [research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md 行 204](../../research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md?plain=1#L204-L204) — \| 本書の初版（同日） \| Unit+0x38 などを「意味未確認」、Power+0x24 を「再確認が必要」、能力値+0x174 を「予備」 \| FINDINGS に静的確認済みの意味があった（§4〜§7） \| 本版で書き直し \|
   制約・訂正　Existing full body linked; catalog revision differs
 
+- [research/recovered/outside_dev1/reports/042_REF_SAVE_FORMAT.md 行 204](../../research/recovered/outside_dev1/reports/042_REF_SAVE_FORMAT.md?plain=1#L204-L204) — \| 本書の初版（同日） \| Unit+0x38 などを「意味未確認」、Power+0x24 を「再確認が必要」、能力値+0x174 を「予備」 \| FINDINGS に静的確認済みの意味があった（§4〜§7） \| 本版で書き直し \|
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+
 <a id="field-40"></a>
 ## Unit + 0x40
 
@@ -153,6 +156,9 @@
 
 - [research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md 行 32](../../research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md?plain=1#L32-L32) — - RAM で 1 バイトの項目（Unit+0x74〜0x7A・+0xE8、Power+0x1C・+0x1D、ターン進行+0x09・+0x0A、経路+0x88）は 0x4708A0 で 4 バイト（u32）として書かれる。静的確認・実測。
   制約・訂正　Existing full body linked; catalog revision differs
+
+- [research/recovered/outside_dev1/reports/042_REF_SAVE_FORMAT.md 行 32](../../research/recovered/outside_dev1/reports/042_REF_SAVE_FORMAT.md?plain=1#L32-L32) — - RAM で 1 バイトの項目（Unit+0x74〜0x7A・+0xE8、Power+0x1C・+0x1D、ターン進行+0x09・+0x0A、経路+0x88）は 0x4708A0 で 4 バイト（u32）として書かれる。静的確認・実測。
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
 
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 583](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L583-L583) — [VERIFY / REIMPLEMENT] Power+0x1D/Unit+0x74の意味、二つのowner pointerがUI上で何を選択するか、tree走査順とユーザーの直前選択状態の関係、空集合時の表示、0x432010/0x471980等後続の作用は未確定。「player faction」「active h
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
@@ -345,11 +351,5 @@
 
 - [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 229](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L229-L229) — - constructor discriminatorは隣接byte pair `Unit+0x8C/+0x8D` に現れ、SimpleUnitは `0x0001`、SimpleStaticUnitは `0x0101` をword writeする。
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
-
-- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 239](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L239-L239) — - `Unit+0x8C` 単独bitの意味（SimpleUnit family markerまでは高確度、player-facing semanticsは未命名）。
-  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
-
-- [research/recovered/remaining_md1/reports/data/T024_HAKUSHIN_BATTLE_AI.md 行 393](../../research/recovered/remaining_md1/reports/data/T024_HAKUSHIN_BATTLE_AI.md?plain=1#L393-L393) — [NEW ORIGINAL ASM] 0x41F007 JE0x41F07E: mode0はouter ownerを順走査し先頭Unit+0x8C==0/+0x1F8!=0の最初のownerで0x41F0C1→0x41F0CF/0x41F0DF「そのownerのinner length +3」を計算して0x41F0E2
-  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

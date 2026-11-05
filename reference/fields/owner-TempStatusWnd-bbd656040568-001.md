@@ -4,6 +4,24 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-84"></a>
+## TempStatusWnd + 0x84
+
+- [research/recovered/outside_kb1/reports/knowledge/REF_STRUCTS.md 行 102](../../research/recovered/outside_kb1/reports/knowledge/REF_STRUCTS.md?plain=1#L102-L102) — \| `+0x84` \| u8 \| `shown` \| 表示中の印（WarWnd+0x84 = 0x8BA5BC、TempStatusWnd+0x84 = 0x8BCDCC） \| 実機確認 \| C(§93), W \|
+  制約・訂正　Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+
+- [research/recovered/outside_kb1/reports/knowledge_validation_20261030/REF_STRUCTS.md 行 53](../../research/recovered/outside_kb1/reports/knowledge_validation_20261030/REF_STRUCTS.md?plain=1#L53-L53) — \| `+0x84` \| u8 \| `shown` \| 表示中の印（WarWnd+0x84 = 0x8BA5BC、TempStatusWnd+0x84 = 0x8BCDCC） \| 実機確認 \| C(§93), W \|
+  制約・訂正　Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+
+<a id="field-98"></a>
+## TempStatusWnd + 0x98
+
+- [research/recovered/outside_dev1/reports/040_REF_UI_SYSTEM.md 行 54](../../research/recovered/outside_dev1/reports/040_REF_UI_SYSTEM.md?plain=1#L54-L54) — 実機確認：TempStatusWnd+0x98の所有者と、0x521AF0の受信者Playerは別オブジェクト。両者の+4は同じ文脈を指し、Player+0x194は文脈+0x504を指す。同一ポインタを要求すると一覧の説明処理を全拒否する。保存V9でも0x521AEEがPlayer本体をECXへ設定することを確認。出
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+
+- [research/recovered/outside_kb1/reports/knowledge_validation_20261030/REF_UI_SYSTEM.md 行 54](../../research/recovered/outside_kb1/reports/knowledge_validation_20261030/REF_UI_SYSTEM.md?plain=1#L54-L54) — 実機確認：TempStatusWnd+0x98の所有者と、0x521AF0の受信者Playerは別オブジェクト。両者の+4は同じ文脈を指し、Player+0x194は文脈+0x504を指す。同一ポインタを要求すると一覧の説明処理を全拒否する。保存V9でも0x521AEEがPlayer本体をECXへ設定することを確認。出
+  制約・訂正　Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+
 <a id="field-1b8"></a>
 ## TempStatusWnd + 0x1B8
 

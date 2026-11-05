@@ -302,7 +302,10 @@
 | 0x565750 | [Event_GetElapsedLimitTime](symbols/00565750.md) | func | 時間制限ありなら初期値から現在値を差し引き、番兵状態では現在値を返す。 |
 | 0x567EC0 | [SortCandidate_CompareSignedField1BC](symbols/00567EC0.md) | func | Original 26-byte callback compares signed 32-bit fields at two pointer arguments +0x1BC and SETL returns 1 iff first<second; two verified sort callsites; exact object type and global sort semantics VERIFY. |
 | 0x5681C0 | [T028_RetreatSpotOrFailureString](symbols/005681C0.md) | func | Original x86 conditional destination search; zero result constructs failure string, nonzero stores Unit+0x1B4 and INC Spot+0xB8 before Unit virtual dispatch. Full ABI, actual retreat and message display VERIFY |
+| 0x569360 | [TroopFirstEligiblePartnerRatioGate](symbols/00569360.md) | func | 最初の適格Unitをアンカーとして他の適格候補の近接比率を判定すると原報告が解析。通常有限値のモデルではM/N>=0.5、比較相手なし等は1。FPU特殊値・ABI・実動作は未確認。 |
 | 0x569530 | [Mode30_WriteAndConditionalDispatch](symbols/00569530.md) | func | Original x86 writes incoming EAX at owner+0x30 then, for a nonempty member vector, conditionally invokes 0x569730 for the first local +0x1867C==0 member; three verified E8 callers. ABI/gameplay effect VERIFY. |
+| 0x5699C0 | [TroopPositionCandidateScratchProducer](symbols/005699C0.md) | func | 構成員候補を列挙し、局所mode別に配置候補pairを共有scratchへ積む処理候補。原報告は角度候補のowner+0x28保存と8byte単位のscratch再利用を記録。型・座標系・ABI・実出力は未確認。 |
+| 0x56AB20 | [TroopVirtualSlot4_PeriodicCandidateRoutine](symbols/0056AB20.md) | func | Troopのvtable+4に対応すると原報告が記録する候補処理。入口の条件を通ると局所カウンタを更新し、周期条件付きで0x569360を呼ぶ。実仮想CALL到達・士気や逃走との関係・ABIは未確認。 |
 | 0x56F6F0 | [Unit_InitializeRuntimeHolder](symbols/0056F6F0.md) | func | Unit の生成時に渡された所有者文脈を Unit+0xC に設定する補助。召喚元 Unit+0xC からの継承経路で使用される。 |
 | 0x56F720 | [Unit_SetHolderField](symbols/0056F720.md) | code | Unit の生成側でコンストラクタ引数を Unit+0xC に書き込む命令位置。 |
 | 0x56F880 | [Unit_ConstructSummonedRuntime](symbols/0056F880.md) | func | 召喚時にも使用される通常 Unit オブジェクトの生成処理。owner/holder 引数を 0x56F6F0 へ渡し、vtable 0x63A9E4 を設定する。 |
@@ -403,6 +406,8 @@
 | 0x5B79D7 | [CRT_ftell_shared_EBP_unlock_helper](symbols/005B79D7.md) | func | 0x5B79C9から呼ばれる10 byteのunlock補助。親ftellのEBP+8を読むため独立hook呼出ABIを想定しない。0x641260のSEH4 cleanup handler候補にも登録 |
 | 0x5BB6E0 | [CRT_except_handler4_search_unwind](symbols/005BB6E0.md) | func | MSVC __except_handler4。exception flagsでsearchとunwindを分け、filter=0のscopeは検索時にfilter呼出を飛ばす。実ランタイムの対象ftell例外配送とunlock実行保証は未実測 |
 | 0x5CF970 | [Vorbis_State3InitFromImplicitESI](symbols/005CF970.md) | func | Original native reads decoder state from ESI+0x58, conditionally initializes state3 via 0x5D5BD0 and writes state4. Early direct caller 0x5D0B8A supplements the pre-existing cached 0x5D0D67 call; full ABI/runtime VERIFY. |
+| 0x5CFA10 | [OggPageUpdateLocalStateWriter](symbols/005CFA10.md) | func | 原報告が列挙した自身の直接state書込はowner+0x58への4・EDI(ABI保存を前提に2)・3。callee・alias・再入・他スレッドによる間接変更は未確認。全プログラムの状態不変性や正常EOFを証明しない。 |
+| 0x5CFF10 | [OggAggregateLinkLengthGetter](symbols/005CFF10.md) | func | 原報告ではindex=-1時にリンクの64bit長を合算するgetter。安定したstate>=2・リンクmode・件数条件と無効時-131を分ける。正常EOFで-131になるとは断定せず、破損・再入・overflow等は未確認。 |
 | 0x5D0B8A | [Vorbis_State3EarlyInitCallsite](symbols/005D0B8A.md) | code | Original E8 direct call to 0x5CF970 after nonnegative upstream 0x5D04E0 return; ESI previously loaded from outer decoder pointer. Different from cached 0x5D0D67 call; only bounded static branch established. |
 | 0x5D16C0 | [OggFileWrapper_OpenWithCloseCallback](symbols/005D16C0.md) | func | 標準ファイル開閉経路でCRT _fclose候補をcallbackとして後続へ渡しouter+0x2C8へ保存させる。別caller/再入は未確認。 |
 | 0x5D1B80 | [ftol](symbols/005D1B80.md) | func | x87 の浮動小数点→整数変換 |
@@ -413,6 +418,7 @@
 | 0x5D4160 | [VorbisSetup_WriteTagArrays](symbols/005D4160.md) | func | 3種setup tag群の個数と値域を検査しtag/pointer配列を初期化する原作x86。別writerや破損入力は未検証。 |
 | 0x5D4420 | [VorbisHeader_Type1SignaturePrecheck](symbols/005D4420.md) | func | 先頭type1と6byte vorbis署名を事前照合する局所原作x86関数。他のpacket種別ルータとは別。 |
 | 0x5D44C0 | [VorbisHeader_TypeOrderRouter](symbols/005D44C0.md) | func | 署名とtype1/3/5を照合し各parse関数へdispatchする。失敗コード-132/-133と種別前提は局所確認で親への伝播は未検証。 |
+| 0x5D48E0 | [OggSeekPositionShiftGetter](symbols/005D48E0.md) | func | 原報告の17byte静的窓では[[EAX+0x1C]+0xE48]の値を返す読取getter。callerは戻り値を位置換算のshift countへ渡す。状態resetという旧解釈は採用しない。単位・値域・実動作は未確認。 |
 | 0x5D4900 | [VorbisBitbuffer_CreateFifteenSlots](symbols/005D4900.md) | func | 親内の埋込index7と個別calloc14件でbitbuffer slot群を初期化。malloc失敗や実ゲーム破損は未観測。 |
 | 0x5D4980 | [VorbisGrow_AlignAndAllocateBuffer](symbols/005D4980.md) | func | 8byte整列要求をsigned容量条件で判定し、必要なら旧使用量+0x50を蓄積してmalloc退避nodeと新bufferを確保。失敗時の実際の到達性はVERIFY。 |
 | 0x5D49F0 | [VorbisGrow_FreeListAndOptionalRealloc](symbols/005D49F0.md) | func | outer+0x54の旧buffer退避listを解放し、+0x50非零のときrealloc結果を+0x44へ未検査上書きする。正の要求での失敗時の参照喪失は条件付きで実機未検証。 |
@@ -501,7 +507,7 @@
 
 ## 構造体・フィールド
 
-[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 5557 件。型や意味の正式登録前の局所表記も検索できます。
+[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 5747 件。型や意味の正式登録前の局所表記も検索できます。
 
 - [Ctx](structs/Ctx.md)
 - [FrameWnd](structs/FrameWnd.md)
@@ -516,12 +522,12 @@
 - [UnitDef](structs/UnitDef.md)
 - [UnitRuntime](structs/UnitRuntime.md)
 
-辞書項目 488 件、フィールド 120 件、根拠付き関係 159 件。
+辞書項目 494 件、フィールド 120 件、根拠付き関係 159 件。
 
-回収済み文書のVA言及・取得記録 53158 件を検索対象に含みます。辞書未登録のVAも検索できます。
+回収済み文書のVA言及・取得記録 54093 件を検索対象に含みます。辞書未登録のVAも検索できます。
 
 [登録関数間の直接CALL採録条件](static_calls_source.json) — 2373箇所。各関数ページで呼び出し元・先を参照でき、`callers VA --json` / `callees VA --json` でも検索できます。
 
 [訂正履歴](CORRECTIONS.md) — 15 件。訂正済みの旧解釈と現在の解釈を出典行付きで確認できます。
 
-[回収済み研究文書の題名・本文](DOCUMENTS.md) — 1671 文書。題名・ファイル名・研究ID・本文の通常文字列を検索できます。
+[回収済み研究文書の題名・本文](DOCUMENTS.md) — 1798 文書。題名・ファイル名・研究ID・本文の通常文字列を検索できます。

@@ -10,4 +10,7 @@
 - [research/recovered/b_batch6/data/T011_UNIT_EFFECT_RING_OWNER_4DFB00_20261013.md 行 1](../../research/recovered/b_batch6/data/T011_UNIT_EFFECT_RING_OWNER_4DFB00_20261013.md?plain=1#L1-L1) — # B-20261013-1422-01｜WRQ-B-SKILL / Unit ctorが8つのR EffectRecord+0x6CへUnit self pointerを供給（T011/T012/T013）
   制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
 
+- [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/SUMMON_PARENT_NATIVE_DAT_BOUNDARY_20261025.md 行 21](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/SUMMON_PARENT_NATIVE_DAT_BOUNDARY_20261025.md?plain=1#L21-L21) — - 既存T011/T012契約（SUMMON_RUNTIME_UNIT_56F880、SUMMON_CORE_54E7B0）と整合。T011のEffectRecord+0x6C=self Unitとは全く別の参照である。
+  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

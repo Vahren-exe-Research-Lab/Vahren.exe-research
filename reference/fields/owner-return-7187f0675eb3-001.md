@@ -4,6 +4,15 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-1d"></a>
+## return + 0x1D
+
+- [research/recovered/outside_dev1/reports/017_WORK_V4_REVIEW_LOCATION_CUSTOM_COLUMNS_20261029.md 行 92](../../research/recovered/outside_dev1/reports/017_WORK_V4_REVIEW_LOCATION_CUSTOM_COLUMNS_20261029.md?plain=1#L92-L92) — - 0x597B00 return was stable per faction; return+0x1D was 1 for player faction, 0 for two other factions and an allied faction. This strongly supports player-fa
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Only personal profile prefix substitutions; byte spans and all unchanged gaps proven.
+
+- [research/recovered/outside_dev1/reports/017_WORK_V4_REVIEW_LOCATION_CUSTOM_COLUMNS_20261029.md 行 121](../../research/recovered/outside_dev1/reports/017_WORK_V4_REVIEW_LOCATION_CUSTOM_COLUMNS_20261029.md?plain=1#L121-L121) — At already established stops, record EIP and run-specific module base; at 0x55BC60 entry record ECX=self, [esp+4], [self+0x1B8] and owned/non-owned context. At
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Only personal profile prefix substitutions; byte spans and all unchanged gaps proven.
+
 <a id="field-20"></a>
 ## return + 0x20
 

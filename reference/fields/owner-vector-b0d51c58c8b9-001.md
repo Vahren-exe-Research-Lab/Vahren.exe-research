@@ -46,6 +46,12 @@
 - [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md 行 94](../../research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md?plain=1#L94-L94) — - ローダ0x599BD0@0x59A79Bは文字列add(0x6248EC)を指定し、0x59A7C8でcompiled Skill+0x13Cへ設定。0x59E81Cはadd2(0x625508)、0x59E897は候補vector+0x158を指定する。除外対象のappend helper本体は読んでいない。
   制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
 
+<a id="field-178"></a>
+## vector + 0x178
+
+- [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/TASKS.md 行 39](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/TASKS.md?plain=1#L39-L39) — - [x] ON-STAND-010-STATIC: 原作Unitの召喚子vector +0x178/17C/180、登録0x5774A0、上限判定0x577600、死亡時element_lost処理0x5445E0/575A60を既存V9解析で突合。独自親子管理の新設方針を撤回。証拠資料 SUMMON_PARENT_
+  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+
 <a id="field-1e584"></a>
 ## vector + 0x1E584
 
