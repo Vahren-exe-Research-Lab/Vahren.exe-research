@@ -13,6 +13,15 @@
 <a id="field-50"></a>
 ## conditional + 0x50
 
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b17b18-20261102-0625/research/intake/README.md 行 217](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b17b18-20261102-0625/research/intake/README.md?plain=1#L217-L217) — \| `B-20261102-01H-T024-5421D0-8DIST-SENTINEL-WRITER-01` \| [#18](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18) `51202745e471` / [writer](B
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-f720-20261102-07h/research/intake/README.md 行 205](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-f720-20261102-07h/research/intake/README.md?plain=1#L205-L205) — \| `B-20261102-01H-T024-5421D0-8DIST-SENTINEL-WRITER-01` \| [#18](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18) `51202745e471` / [writer](B
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/research/intake/README.md 行 216](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/research/intake/README.md?plain=1#L216-L216) — \| `B-20261102-01H-T024-5421D0-8DIST-SENTINEL-WRITER-01` \| [#18](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/18) `51202745e471` / [writer](B
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
 - [research/recovered/plugin_reports1/reports/T024_542280_NATIVE_ATAN2_SENTINEL_ERRATUM_20261102_00H.md 行 19](../../research/recovered/plugin_reports1/reports/T024_542280_NATIVE_ATAN2_SENTINEL_ERRATUM_20261102_00H.md?plain=1#L19-L19) — Recovery: 03H save UNKNOWN; 07H core4 missing; 10/25 source/54-byte conflict OPEN; historical safety HOLD21 unchanged; SAFE134 old snapshot not reaudited. Game
   制約・訂正　Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=B_STATIC_CANDIDATE_ERRATUM
 

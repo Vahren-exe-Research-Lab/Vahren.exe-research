@@ -7,6 +7,9 @@
 <a id="field-8"></a>
 ## codebook + 0x8
 
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 68](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L68-L68) — - Native E8 0x005DA604/0x005DA6D6 both call CRT allocator 0x005B9BC8 and store codebook +0x08; E8 0x005DA811 similarly stores +0x20. Under positive element coun
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
 - [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 58](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L58-L58) — - Native E8 0x005DA604/0x005DA6D6 both call CRT allocator 0x005B9BC8 and store codebook +0x08; E8 0x005DA811 similarly stores +0x20. Under positive element coun
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
 

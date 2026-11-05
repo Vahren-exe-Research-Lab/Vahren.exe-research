@@ -7,6 +7,9 @@
 <a id="field-a10"></a>
 ## use + 0xA10
 
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md 行 129](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md?plain=1#L129-L129) — - At 0x448FA6..0x448FBF, mode==2 selects candidate +0xA0C; other modes use +0xA10 for score reset. At 0x448F84/0x44926E, comparison routines 0x447240/0x447260 a
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
 - [research/recovered/knowledge_history1/reports/knowledge/REF_BATTLE_AI_MORALE.md 行 66](../../research/recovered/knowledge_history1/reports/knowledge/REF_BATTLE_AI_MORALE.md?plain=1#L66-L66) — - At 0x448FA6..0x448FBF, mode==2 selects candidate +0xA0C; other modes use +0xA10 for score reset. At 0x448F84/0x44926E, comparison routines 0x447240/0x447260 a
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
 

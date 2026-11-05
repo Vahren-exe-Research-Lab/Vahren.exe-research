@@ -1,0 +1,3 @@
+path	sha256	bytes	role
+private-approved-selection/hakushin-github_blob5-approved.tsv	3e93f7282cee336f2a3e71e3059e481ed2efa6036b7e6f96f4d9e5b9df61e974	860	Exact5file immutable head/blob/size pins
+research/recovered/RECOVERY_LEDGER.tsv	f1ca410fb520081320a5e62b7fc70aac6032bcb3b0dc7a63c81cd4aae0e6921b	1269072	1839row current dedup metadata at capture

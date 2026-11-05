@@ -7,6 +7,9 @@
 <a id="field-8c"></a>
 ## Unit + 0x8C
 
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 229](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L229-L229) — - constructor discriminatorは隣接byte pair `Unit+0x8C/+0x8D` に現れ、SimpleUnitは `0x0001`、SimpleStaticUnitは `0x0101` をword writeする。
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
 - [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 239](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L239-L239) — - `Unit+0x8C` 単独bitの意味（SimpleUnit family markerまでは高確度、player-facing semanticsは未命名）。
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 
@@ -342,11 +345,5 @@
 
 - [research/recovered/rea_batch14/reports/WAVE4_FINDINGS_20261010.md 行 87](../../research/recovered/rea_batch14/reports/WAVE4_FINDINGS_20261010.md?plain=1#L87-L87) — - `0x57B9F4` support capability `Unit+0x137 != 0` かつ `0x57BA07` confusion gauge `Unit+0xC8 < 0` の時だけ、**独立の**`0x57BA10: CALL 0x5B6EAB` を追加1回。比較結果によりsupport build
   制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
-
-<a id="field-cc"></a>
-## Unit + 0xCC
-
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3178](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3178-L3178) — \| R2 混乱による外れ \| T0 \| Unit+0xCC<0 のときだけ \| 判定値 < DAT_0065bd60 なら標的点を乱数でずらし、R3 を飛ばす \| Rng_RangeInclusive 1回。外れたらさらに rand() 1回 \| vf31 0x57E79D/0x57E7FF。フィールド名は VERIF
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

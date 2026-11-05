@@ -1,0 +1,19 @@
+{
+  "base": "190bf0987f4a7d14f6e2d0f38fc703996d15b9ec",
+  "accepted_rows": 1839,
+  "saved_destinations": 1819,
+  "pr_locations": 1696,
+  "original_paths_hashed": 78,
+  "source_identities_proven": 1836,
+  "unproven_or_partial": 3,
+  "links": 178,
+  "linked_source_labels": 109,
+  "source_only_links": 0,
+  "linked_pr_locations": 165,
+  "limits": "Fixed accepted-source identity bridge, not all original research, full PR intake, new body recovery or semantic adoption; expected source SHA match required; no original text displayed; partial/protected/nonlocal variant origins not expanded",
+  "public_exception_receipt_rows": 78,
+  "full_private_identity_table_sha256": "83b24baa1d69f387fa6600ca7c14b21aa60cf7d3f19e678a695d669c3d126be8",
+  "full_private_pr_link_table_sha256": "055f94e3ca77eab91b267849150e0e936b91d7a60167b9da143aa043710be5f1",
+  "public_saved_exact_link_table": "../github_reconcile2/GITHUB_EXACT_BODY_LINKS.tsv",
+  "result": "ZERO_ADDITIONAL_SOURCE_ONLY_PR_LINKS;NO_NEW_RECOVERY_OR_CURATION_COUNT"
+}

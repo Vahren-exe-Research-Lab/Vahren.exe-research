@@ -221,3 +221,10 @@ This section independently reviews **three previously PUBLISHED_INTAKE IDs**, no
 | [OggPageUpdateLocalStateWriter](reference/symbols/005CFA10.md) `0x5CFA10` | [REA_20261030_20H_P0_PAGE_STATE_MUTATION_STATIC.md:6-10](research/recovered/rea_batch4/reports/REA_20261030_20H_P0_PAGE_STATE_MUTATION_STATIC.md?plain=1#L6-L10) | 原報告が列挙した自身の直接state書込はowner+0x58への4・EDI(ABI保存を前提に2)・3。callee・alias・再入・他スレッドによる間接変更は未確認。全プログラムの状態不変性や正常EOFを証明しない。 |
 
 各行のSHA・確度は[採録表](research/recovered/intake_outside_map_20261105/SYMBOL_ADOPTIONS.tsv)へ固定した。局所記号owner/thisを正式な構造体型へ昇格させず、新しいフィールド・呼出関係・Golden/READYを機械的に増やしていない。
+
+
+## オフライン回収報告とseek callbackの限定採録（2026-11-05）
+
+[0x5CFDD0の事典](reference/symbols/005CFDD0.md)へ、[12–16H回収集約の30–32行](research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_12H_16H_SEEK_FTELL_RECOVERY_STATIC.md?plain=1#L30-L32)を根拠に標準FILE seek callback窓の報告を接続した。元Library報告の全文やnativeを今回取得・再実験したものではなく、完全ABI・他callback・2GiB/4GiBでの実故障は未確認である。低位32bitの局所境界の報告から、全入力の切捨て障害や安全性を一般化しない。
+
+同集約26–28行のftell旧索引欠落・fragment仮説は歴史的訂正として読み、現在の[ftell入口](reference/symbols/005B797C.md)と[親フレーム依存helper](reference/symbols/005B79D7.md)を重複して新規採録しない。[14研究IDと4回収集約の対応](research/recovered/intake_open_sources_20261105/REA_LIBRARY_STATUS.tsv)では、集約が読めることと元Library本文を取得したことを分けている。

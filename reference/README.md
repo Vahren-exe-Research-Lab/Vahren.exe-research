@@ -407,6 +407,7 @@
 | 0x5BB6E0 | [CRT_except_handler4_search_unwind](symbols/005BB6E0.md) | func | MSVC __except_handler4。exception flagsでsearchとunwindを分け、filter=0のscopeは検索時にfilter呼出を飛ばす。実ランタイムの対象ftell例外配送とunlock実行保証は未実測 |
 | 0x5CF970 | [Vorbis_State3InitFromImplicitESI](symbols/005CF970.md) | func | Original native reads decoder state from ESI+0x58, conditionally initializes state3 via 0x5D5BD0 and writes state4. Early direct caller 0x5D0B8A supplements the pre-existing cached 0x5D0D67 call; full ABI/runtime VERIFY. |
 | 0x5CFA10 | [OggPageUpdateLocalStateWriter](symbols/005CFA10.md) | func | 原報告が列挙した自身の直接state書込はowner+0x58への4・EDI(ABI保存を前提に2)・3。callee・alias・再入・他スレッドによる間接変更は未確認。全プログラムの状態不変性や正常EOFを証明しない。 |
+| 0x5CFDD0 | [Ogg_SeekCallbackLow32Boundary](symbols/005CFDD0.md) | func | 回収集約報告が示す34byteの標準FILE seek callback窓。0x5CFDE8で_fseek側へFILE*/low32/originを渡し、その窓ではhigh32読込を未検出と報告する。元14原報告・nativeは今回未取得。完全ABI・他callback・大容量ファイルでの故障は未確認。 |
 | 0x5CFF10 | [OggAggregateLinkLengthGetter](symbols/005CFF10.md) | func | 原報告ではindex=-1時にリンクの64bit長を合算するgetter。安定したstate>=2・リンクmode・件数条件と無効時-131を分ける。正常EOFで-131になるとは断定せず、破損・再入・overflow等は未確認。 |
 | 0x5D0B8A | [Vorbis_State3EarlyInitCallsite](symbols/005D0B8A.md) | code | Original E8 direct call to 0x5CF970 after nonnegative upstream 0x5D04E0 return; ESI previously loaded from outer decoder pointer. Different from cached 0x5D0D67 call; only bounded static branch established. |
 | 0x5D16C0 | [OggFileWrapper_OpenWithCloseCallback](symbols/005D16C0.md) | func | 標準ファイル開閉経路でCRT _fclose候補をcallbackとして後続へ渡しouter+0x2C8へ保存させる。別caller/再入は未確認。 |
@@ -507,7 +508,7 @@
 
 ## 構造体・フィールド
 
-[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 5747 件。型や意味の正式登録前の局所表記も検索できます。
+[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 5892 件。型や意味の正式登録前の局所表記も検索できます。
 
 - [Ctx](structs/Ctx.md)
 - [FrameWnd](structs/FrameWnd.md)
@@ -522,12 +523,12 @@
 - [UnitDef](structs/UnitDef.md)
 - [UnitRuntime](structs/UnitRuntime.md)
 
-辞書項目 494 件、フィールド 120 件、根拠付き関係 159 件。
+辞書項目 495 件、フィールド 120 件、根拠付き関係 159 件。
 
-回収済み文書のVA言及・取得記録 54093 件を検索対象に含みます。辞書未登録のVAも検索できます。
+回収済み文書のVA言及・取得記録 55236 件を検索対象に含みます。辞書未登録のVAも検索できます。
 
 [登録関数間の直接CALL採録条件](static_calls_source.json) — 2373箇所。各関数ページで呼び出し元・先を参照でき、`callers VA --json` / `callees VA --json` でも検索できます。
 
 [訂正履歴](CORRECTIONS.md) — 15 件。訂正済みの旧解釈と現在の解釈を出典行付きで確認できます。
 
-[回収済み研究文書の題名・本文](DOCUMENTS.md) — 1798 文書。題名・ファイル名・研究ID・本文の通常文字列を検索できます。
+[回収済み研究文書の題名・本文](DOCUMENTS.md) — 1814 文書。題名・ファイル名・研究ID・本文の通常文字列を検索できます。

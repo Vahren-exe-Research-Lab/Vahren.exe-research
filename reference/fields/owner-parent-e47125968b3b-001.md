@@ -25,11 +25,17 @@
 <a id="field-2c"></a>
 ## parent + 0x2C
 
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 88](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L88-L88) — - Earlier 0x005D57F8 calls calloc(1,0x88), stores the parent in +0x68 and writes parent+0x2C at 0x005D5820 without a locally established NULL test. This is a di
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
 - [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 78](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L78-L78) — - Earlier 0x005D57F8 calls calloc(1,0x88), stores the parent in +0x68 and writes parent+0x2C at 0x005D5820 without a locally established NULL test. This is a di
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
 
 <a id="field-68"></a>
 ## parent + 0x68
+
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 114](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L114-L114) — - Earlier 0x5D57F8 calls calloc(1,0x88) for the parent inner object; after storage in parent+0x68, 0x5D5820 writes through the returned pointer without a demons
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
 
 - [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 104](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L104-L104) — - Earlier 0x5D57F8 calls calloc(1,0x88) for the parent inner object; after storage in parent+0x68, 0x5D5820 writes through the returned pointer without a demons
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation

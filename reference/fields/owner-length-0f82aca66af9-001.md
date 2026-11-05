@@ -10,6 +10,9 @@
 - [research/recovered/b_batch3/T013_CASE8_MAP_VECTOR_STRIDE_WRITER_NATIVE_20261024_06H.md 行 8](../../research/recovered/b_batch3/T013_CASE8_MAP_VECTOR_STRIDE_WRITER_NATIVE_20261024_06H.md?plain=1#L8-L8) — [NEW-3 ELEMENT] 0x00430300 native 0x430361 E8→0x00402710 string copy、0x430369 ADD ESI,0x1C、0x43036C ADD EAX,0x1C、0x430389 ADD ESI,0x1C。Ghidraはsourceとdest双方のstri
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 81](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L81-L81) — - 0x005D44DF calls 0x005E6CD0 to initialize a 20-byte reader: cursor and bitOffset +0/+4=0, packet base/current pointer +8/+0xC, byte length +0x10. This is a pr
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
 - [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 71](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L71-L71) — - 0x005D44DF calls 0x005E6CD0 to initialize a 20-byte reader: cursor and bitOffset +0/+4=0, packet base/current pointer +8/+0xC, byte length +0x10. This is a pr
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
 

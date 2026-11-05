@@ -7,6 +7,9 @@
 <a id="field-cc"></a>
 ## Unit + 0xCC
 
+- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3178](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3178-L3178) — \| R2 混乱による外れ \| T0 \| Unit+0xCC<0 のときだけ \| 判定値 < DAT_0065bd60 なら標的点を乱数でずらし、R3 を飛ばす \| Rng_RangeInclusive 1回。外れたらさらに rand() 1回 \| vf31 0x57E79D/0x57E7FF。フィールド名は VERIF
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3266](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3266-L3266) — - Unit+0xCC / +0xC8 の正式名と閾値 DAT_0065bd60 / 0065bd64。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
@@ -377,9 +380,6 @@
   制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
 
 - [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/SUMMON_DISC_REMOVAL_POLICY_20261026.md 行 43](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/SUMMON_DISC_REMOVAL_POLICY_20261026.md?plain=1#L43-L43) — 6. 誰が何体の一般召喚物を出したかを追うためだけに新DLL／独自親子台帳は作らない。既存EXEには親Unit+0x178～+0x180の召喚子vectorがある。将来必要な場合だけ利用検討。
-  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
-
-- [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/TNOK_CHIKORITA_RECALL_20261025.md 行 9](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/TNOK_CHIKORITA_RECALL_20261025.md?plain=1#L9-L9) — 【2026-10-25 ON-STAND-010訂正】原作EXEに術者Unit+0x178～0x17Cの**召喚子Unitポインタ一覧**が存在し、登録・召喚枠上限判定・術者死亡時のelement_lost消滅に使用されていることを既存Ghidra V9から確認。下記の『独立召喚所有台帳』は仕様テスト用であり、本番で親
   制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

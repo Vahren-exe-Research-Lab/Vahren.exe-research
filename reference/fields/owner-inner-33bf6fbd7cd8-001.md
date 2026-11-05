@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-8"></a>
+## inner + 0x8
+
+- [research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_06H_08H_MODE_CACHE_RECOVERY_STATIC.md 行 5](../../research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_06H_08H_MODE_CACHE_RECOVERY_STATIC.md?plain=1#L5-L5) — - **Bounded native:** setup parser `0x005D4160`; `0x005D435F/63` stores 6bit+1 mode count in `inner+0x08`; `0x005D4384` calls `0x005D1C71 _calloc(1,0x10)`, save
+  制約・訂正　Authored REA recovery compilation, not full original Library bodies; STATIC/ABI/NOT_READY/Golden limits retained; linked evidence not acquired; no semantic/READY promotion.
+
 <a id="field-c"></a>
 ## inner + 0xC
 
@@ -15,6 +21,15 @@
 
 - [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 568](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L568-L568) — [NATIVE SUBJECT AND GATES] 入力名前解決0x49C450→candidate 0x49E8B0→vectorが空なら0x4B5AEEから0x4B5BBC cleanupへ。各outer+0x1D0 inner非NULL・0x44D070型照合一致した場合のみ内側の分岐を実行。AL[-0x76]
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+<a id="field-20"></a>
+## inner + 0x20
+
+- [research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_06H_08H_MODE_CACHE_RECOVERY_STATIC.md 行 5](../../research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_06H_08H_MODE_CACHE_RECOVERY_STATIC.md?plain=1#L5-L5) — - **Bounded native:** setup parser `0x005D4160`; `0x005D435F/63` stores 6bit+1 mode count in `inner+0x08`; `0x005D4384` calls `0x005D1C71 _calloc(1,0x10)`, save
+  制約・訂正　Authored REA recovery compilation, not full original Library bodies; STATIC/ABI/NOT_READY/Golden limits retained; linked evidence not acquired; no semantic/READY promotion.
+
+- [research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_06H_08H_MODE_CACHE_RECOVERY_STATIC.md 行 11](../../research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_06H_08H_MODE_CACHE_RECOVERY_STATIC.md?plain=1#L11-L11) — - **Distinct from 06H:** `0x005CF06B -> 0x005D3DA0` calls init helper; `0x005D3DC4 -> 0x005D1C71` requests `calloc(1,0xE50)` and `0x005D3DCC` assigns result to
+  制約・訂正　Authored REA recovery compilation, not full original Library bodies; STATIC/ABI/NOT_READY/Golden limits retained; linked evidence not acquired; no semantic/READY promotion.
 
 <a id="field-48"></a>
 ## inner + 0x48
@@ -61,6 +76,12 @@
 <a id="field-720"></a>
 ## inner + 0x720
 
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 48](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L48-L48) — - Original 0x5D5922 calls 0x5D9F40: 0x5D9F55 stores a source codebook pointer at look record+0x0C. Owner slots are in inner+0x720; 0x38-byte look records in inn
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 97](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L97-L97) — - REA/T015 ID REA-LOCAL-20261031-01H-P0-VORBIS-SETUP-TAG-BOUND-WRITER-STATIC-01; source rea_lab/decomp_task/REA_20261031_01H_P0_TAG_WRITER_BOUNDS_STATIC.md and
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
 - [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 38](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L38-L38) — - Original 0x5D5922 calls 0x5D9F40: 0x5D9F55 stores a source codebook pointer at look record+0x0C. Owner slots are in inner+0x720; 0x38-byte look records in inn
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
 
@@ -84,6 +105,21 @@
 
 <a id="field-b20"></a>
 ## inner + 0xB20
+
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 48](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L48-L48) — - Original 0x5D5922 calls 0x5D9F40: 0x5D9F55 stores a source codebook pointer at look record+0x0C. Owner slots are in inner+0x720; 0x38-byte look records in inn
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 87](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L87-L87) — - 0x005D58E7 and 0x005D5B12 are two calloc(count,0x38) sites for initial look-record creation and later conversion, both storing at inner+0xB20. The local 0x005
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 113](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L113-L113) — - At 0x5D58E7 and 0x5D5B12, separate construction/conversion modes call calloc(count,0x38) and store its result into the same inner+0xB20 look array slot. A cou
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
+- [research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_03H_05H_OFFLINE_RESIDUE_CORRECTED_STATIC.md 行 6](../../research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_03H_05H_OFFLINE_RESIDUE_CORRECTED_STATIC.md?plain=1#L6-L6) — 1. `REA-OFFLINE-20261101-03H-P0-VORBIS-CODEBOOK-DIMENSION-DUAL-BUILDER-PROVENANCE-STATIC-01`：`0x005D9F40` と `0x005DA070` が元コードブックの先頭DWORD（dimension）をコンパイル済みレコード
+  制約・訂正　Authored REA recovery compilation, not full original Library bodies; STATIC/ABI/NOT_READY/Golden limits retained; linked evidence not acquired; no semantic/READY promotion.
+
+- [research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_03H_05H_OFFLINE_RESIDUE_CORRECTED_STATIC.md 行 24](../../research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_03H_05H_OFFLINE_RESIDUE_CORRECTED_STATIC.md?plain=1#L24-L24) — owner `REA/T015`、参照VA `0x5D9F40/0x5DA070/0x5DFE10/0x5DFFC0/0x5E0DC0/0x5E6E10`、CALL site `0x5DFE5C/0x5DFE68/0x5D5922/0x5D5B51`、offset `inner+0xB20`, `entry+0x00`
+  制約・訂正　Authored REA recovery compilation, not full original Library bodies; STATIC/ABI/NOT_READY/Golden limits retained; linked evidence not acquired; no semantic/READY promotion.
 
 - [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 38](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L38-L38) — - Original 0x5D5922 calls 0x5D9F40: 0x5D9F55 stores a source codebook pointer at look record+0x0C. Owner slots are in inner+0x720; 0x38-byte look records in inn
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation

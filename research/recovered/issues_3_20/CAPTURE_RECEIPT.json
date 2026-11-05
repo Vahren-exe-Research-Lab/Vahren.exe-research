@@ -1,0 +1,30 @@
+[
+  {
+    "number": 3,
+    "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/3",
+    "title": "[KB REA recovery] REA-20261101-03H-16H-TRIAGE: 14 IDs / 67 Library files / GH README entry fixes",
+    "captured_utc": "2026-11-05 05:28:48 UTC",
+    "returned_updated_at": "2026-11-01T18:08:48Z",
+    "comments_reported_not_fetched": 5,
+    "unicode_body_sha256": "47e2054adecf8a020a52ac79adaa7a17260032016989de973b9ae09139be0e4f",
+    "utf8_bytes": 12502,
+    "physical_lf_lines": 53,
+    "destination": "ISSUE_3_BODY.md",
+    "selection": "Exactly2fetch_issuecalls, selected issue.body only; complete returned field; no comments/timeline/diff/attachments",
+    "representation": "UTF8 of selected Unicode, no BOM/header/newline normalization; serverDB byte identity not asserted"
+  },
+  {
+    "number": 20,
+    "url": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/20",
+    "title": "【研究索引・起動障害】Vahren.exe が1〜3秒で終了（コード0）／DATのファイルロック（2026-11-03）",
+    "captured_utc": "2026-11-05 05:28:48 UTC",
+    "returned_updated_at": "2026-11-03T13:17:40Z",
+    "comments_reported_not_fetched": 1,
+    "unicode_body_sha256": "e613de059bf723cc6219b19ea42742cacd937d3f1a06c1b9c3342cc25dc6e455",
+    "utf8_bytes": 2755,
+    "physical_lf_lines": 38,
+    "destination": "ISSUE_20_BODY.md",
+    "selection": "Exactly2fetch_issuecalls, selected issue.body only; complete returned field; no comments/timeline/diff/attachments",
+    "representation": "UTF8 of selected Unicode, no BOM/header/newline normalization; serverDB byte identity not asserted"
+  }
+]

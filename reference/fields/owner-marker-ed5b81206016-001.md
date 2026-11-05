@@ -7,6 +7,9 @@
 <a id="field-24"></a>
 ## marker + 0x24
 
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 69](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L69-L69) — - 0x005D9E70 checks marker+0x24, conditionally frees nonnull +0x20 and +0x08 fields, clears 10 dwords and releases the structure. Its later cleanup cannot retro
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
 - [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 59](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L59-L59) — - 0x005D9E70 checks marker+0x24, conditionally frees nonnull +0x20 and +0x08 fields, clears 10 dwords and releases the structure. Its later cleanup cannot retro
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
 

@@ -7,6 +7,12 @@
 <a id="field-e4"></a>
 ## context + 0xE4
 
+- [research/recovered/e_reports/T020_E_T013_COORD_GATE_RECT_ACCEPTANCE_20261101_00H.md 行 7](../../research/recovered/e_reports/T020_E_T013_COORD_GATE_RECT_ACCEPTANCE_20261101_00H.md?plain=1#L7-L7) — [NEW E T020 FIXTURE] 2 global[0x65BD9E] states × 2 context+0xE4 states × 4 native caller margin values(100,200,400,600) × 10 synthetic signed points = 160 uniqu
+  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
+
+- [research/recovered/e_reports/T020_E_T013_OFF_EXACT_VSLOT_ACCEPTANCE_20261101_02H.md 行 9](../../research/recovered/e_reports/T020_E_T013_OFF_EXACT_VSLOT_ACCEPTANCE_20261101_02H.md?plain=1#L9-L9) — [T020 FIXTURE] 7 synthetic ASCII returned values ('off','on','offx','off ','of','OFF','') x 7 second-key values x context+0xE4 {0,1} x PtInRect AL {0,1} x ESI {
+  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
+
 - [research/recovered/e_reports/T020_E_T013_OFF_EXACT_VSLOT_ACCEPTANCE_20261101_02H.md 行 13](../../research/recovered/e_reports/T020_E_T013_OFF_EXACT_VSLOT_ACCEPTANCE_20261101_02H.md?plain=1#L13-L13) — [KB_CANDIDATE] E/T020 this ID crosschecks B/T013 source with original PE SHA; VA 0x45A26F/0x45A296/0x45A2C6/0x42F860/0x57D994/0x57D99B/0x57D99F/0x57D9A9; global
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
 
@@ -39,6 +45,9 @@
 
 <a id="field-2c8"></a>
 ## context + 0x2C8
+
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 170](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L170-L170) — - `REA-LOCAL-20261025-1736-P0-FILE-CLOSE-CALLBACK-BRIDGE-STATIC-01`, PC-only `rea_lab/decomp_task/REA_20261025_17H_P0_FILE_CLOSE_CALLBACK_STATIC.md`, actual rep
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
 
 - [research/recovered/rea_batch8/reports/REA_20261025_17H_P0_FILE_CLOSE_CALLBACK_STATIC.md 行 13](../../research/recovered/rea_batch8/reports/REA_20261025_17H_P0_FILE_CLOSE_CALLBACK_STATIC.md?plain=1#L13-L13) — - したがってこの呼出系列でcontext+0x2C8へ格納される関数ポインタは0x005B7A4E（_fclose）。0x005CFEEEのCALL EAXは、当該系列の格納値が変更されず、gateを満たしていれば_fclose(FILE*)を実行する。
   制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency

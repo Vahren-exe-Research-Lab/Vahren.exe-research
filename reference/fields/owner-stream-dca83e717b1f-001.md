@@ -88,6 +88,9 @@
 <a id="field-44"></a>
 ## stream + 0x44
 
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 179](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L179-L179) — - At `0x005022E9` the caller invokes prefill `0x00502330`, checks only AL at `0x005022EE`, then can call a thread starter `0x005B7D14` at `0x00502300` and store
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
 - [research/recovered/rea_batch4/reports/REA_20261030_00H_P0_OGG_PREFILL_ERROR_START_STATIC.md 行 10](../../research/recovered/rea_batch4/reports/REA_20261030_00H_P0_OGG_PREFILL_ERROR_START_STATIC.md?plain=1#L10-L10) — **今回追加した上位到達照合：** `0x005022E9 CALL 0x00502330`、`0x005022EE TEST AL,AL`、`0x005022F0 JE 0x0050231B`。AL非0ならスレッドハンドル `[ESI+0x48]` がゼロのとき `0x005022FB PUSH 0x005023E0
   制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
 
@@ -102,6 +105,9 @@
 
 <a id="field-48"></a>
 ## stream + 0x48
+
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 179](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L179-L179) — - At `0x005022E9` the caller invokes prefill `0x00502330`, checks only AL at `0x005022EE`, then can call a thread starter `0x005B7D14` at `0x00502300` and store
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
 
 - [research/recovered/rea_batch4/reports/REA_20261030_01H_P0_OGG_THREADFAIL_PLAY_STATIC.md 行 10](../../research/recovered/rea_batch4/reports/REA_20261030_01H_P0_OGG_THREADFAIL_PLAY_STATIC.md?plain=1#L10-L10) — 1. `0x005B7D90 CMP EAX,-1` →失敗時`0x005B7DAF OR EAX,0xFFFFFFFF`。直接CALL `0x00502300→0x005B7D14` の返値は `0x00502308` で `[stream+0x48]` に格納され、`0x0050230B/0E` で戻りAL=1と
   制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS

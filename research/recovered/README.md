@@ -1,5 +1,7 @@
 # 回収した研究本文
 
+[未コミット文書・GitHub・研究チャットの16本文と接続](intake_open_sources_20261105/README.md)：1関数の限定採録、[起動障害の研究案内](../../REF_STARTUP_LOADING.md)、14元Library報告と4回収集約の違い、未取得範囲を整理した。
+
 [従来一覧外の135出典・127本文と6関数の採録](intake_outside_map_20261105/README.md)：[139候補の対応表](intake_outside_map_20261105/CURRENT_DISPOSITIONS.tsv)で受入・重複・保留・対象外を確認できる。原文書・作業コピーの削除はまだ行わない。
 
 [JSON記録55出典・50本文の追加と別名照合](intake_authored_json_more_20261105/README.md)、[前回の30本文追加](intake_authored_json_20261105/README.md)で、未収録のチェック・読戻し票を台帳と本文検索へつないだ。保存件数を新しい発見や実機試験数と読み替えず、保留と既存の確度を維持する。

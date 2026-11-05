@@ -8,7 +8,7 @@
 
 文書検索結果は保存ファイル名、元パス・出典URI、題名、本文だけの一致の順で最大20件です。同じ区分内は回収台帳での初出順です。省略時は一致総数を表示します。全件の出典・制約は一覧または各詳細ページに掲載しています。研究ID・題名で絞り込めます。アドレス・所有者＋オフセット検索は従来の専用結果を返します。
 
-全 1798 文書。各詳細ページは最大100文書で、出典行・SHA256・回収台帳・制約を保持しています。
+全 1814 文書。各詳細ページは最大100文書で、出典行・SHA256・回収台帳・制約を保持しています。
 
 | 詳細ページ | 文書数 | 最初の題名 | 最後の題名 |
 |---|---:|---|---|
@@ -29,6 +29,7 @@
 | [15](documents/page-015.md) | 100 | REA Wave 3候補（未着手・Wave2全件照合後にキュー化） | Reservation extension integration plan |
 | [16](documents/page-016.md) | 100 | Bounded manifest planning layer | T020_E_T013_VIEWFLAG_CHAIN_READBACK_20261101_01H.json |
 | [17](documents/page-017.md) | 100 | T020_E_T013_POSTREFILL_READBACK_20261030_21H.json | Claude ローダー修正パッチ（2026-10-26）— Codex（Work）向け取り込み手順 |
-| [18](documents/page-018.md) | 98 | Bounded v2 implementation — 2026-10-27 | 迫真戦記｜追加ストーリー正本 |
+| [18](documents/page-018.md) | 100 | Bounded v2 implementation — 2026-10-27 | 研究知識ベース同期状態 |
+| [19](documents/page-019.md) | 14 | Private research intake — owner ID/source links | [KB-20261103-STARTUP-FILELOCK-01] DATファイルの残留ロックによる起動直後の正常終了扱い（実機再現・修復） |
 
 [事典の入口](README.md)
