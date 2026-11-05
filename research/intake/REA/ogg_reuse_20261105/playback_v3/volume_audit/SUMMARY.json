@@ -1,0 +1,68 @@
+{
+  "research_id": "REA-T015-OGG-REUSE-20261105",
+  "date": "2026-11-05",
+  "game_after": {
+    "master": 0.0499885567,
+    "mute": 0,
+    "channels": [
+      1,
+      1
+    ],
+    "before": null,
+    "exclusive_causality": "UNPROVEN"
+  },
+  "wave_silent_test": {
+    "first_before": "FFFFFFFF",
+    "second_before": "FFFFFFFF",
+    "first_set": "0CCC0CCC",
+    "second_after": "0CCC0CCC",
+    "restore_api_return": 0,
+    "restored_value_readback": false,
+    "game_modified": false
+  },
+  "ds_silent_test": {
+    "first_before": 0,
+    "second_before": 0,
+    "first_after": -3000,
+    "second_after": 0,
+    "session_master_before": 1,
+    "session_master_after": 1,
+    "mute_before_after": [
+      0,
+      0
+    ],
+    "channels_before_after": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "result": 0,
+    "hresult": 0,
+    "game_modified": false,
+    "game_integration_tested": false
+  },
+  "logs": {
+    "playback-20261105-230029.log": {
+      "sha256": "c1fdb8c5b0df39e5f3b6ea9037db647ee8213da23be26a6ccc24bfcde9f0b21f",
+      "bytes": 55821
+    },
+    "after-playback-v3.log": {
+      "sha256": "0923e0d2f6529e2d3c6e27e906a3d0b36fcf579fe5d845fa1fd995c310f20df6",
+      "bytes": 534
+    },
+    "synthetic-wave-volume.log": {
+      "sha256": "369690003117c06ab1707059cf2903c17aa6cce0586d6c8a5affef8f6639579f",
+      "bytes": 226
+    },
+    "synthetic-ds-volume.log": {
+      "sha256": "6ec944bbc13781271014dd94be619a3bfafc61e7ad0248f3906e08fd3ec6cec8",
+      "bytes": 1248
+    }
+  },
+  "status": "V3_WINMM_ISOLATION_FAILED_DS_SECONDARY_SYNTHETIC_CANDIDATE"
+}

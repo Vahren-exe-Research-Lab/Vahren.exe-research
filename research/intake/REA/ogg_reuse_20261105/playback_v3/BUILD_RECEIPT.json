@@ -1,0 +1,39 @@
+{
+  "status": "BUILT_NOT_RUN_IN_GAME",
+  "tests": [
+    "test_decode",
+    "test_guard",
+    "test_lifetime",
+    "test_probe",
+    "test_playback",
+    "test_sink"
+  ],
+  "tests_exit": 0,
+  "compiler": "Zig 0.14.1 cc -target x86-windows-gnu -O2 -UNDEBUG -std=c11 -Wall -Wextra -Werror",
+  "game_sha256": "e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187",
+  "dll_sha256": "e7570b677c7f6ec6000b626825de62d62106938fcd47ac5a04c32a01288f3bf6",
+  "runner_sha256": "0c722378b212c71b2900347917ce9b2e262bc2e6fd86adfa2a6e5acb26ea6cec",
+  "source_sha256": "ca05fe21c6dea8c6288a7c2e60d0a620823ca61d837356bd0f63289c68af9b76",
+  "exports": [
+    "HkOggInitialize",
+    "HkOggPlay",
+    "HkOggPlaybackThread",
+    "HkOggProbeThread",
+    "HkOggSetVolume",
+    "HkOggShutdown",
+    "HkOggStop"
+  ],
+  "prior_runtime": "probe-v2 bounded decode successful, not playback",
+  "limitations": [
+    "No v3 game run or audible verification yet",
+    "No DAT hook",
+    "Loop flags configured; no loop-wrap runtime observation yet"
+  ],
+  "review": "Independent source review: no one-shot handoff blockers; original ABI not independently revalidated.",
+  "extra_checks": [
+    "Initialized wrong-thread play/volume/stop/shutdown rejected with no resource changes",
+    "Usage exit 2",
+    "Wrong target exit 103",
+    "PowerShell wrapper parses without errors"
+  ]
+}

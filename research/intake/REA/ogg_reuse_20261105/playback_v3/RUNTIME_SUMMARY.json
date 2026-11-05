@@ -1,0 +1,108 @@
+{
+  "research_id": "REA-T015-OGG-REUSE-20261105",
+  "status": "HOST_DECODE_AND_DLL_AUDIO_OBSERVED_BGM_VOLUME_ISOLATION_UNRESOLVED",
+  "raw_log_sha256": "c1fdb8c5b0df39e5f3b6ea9037db647ee8213da23be26a6ccc24bfcde9f0b21f",
+  "raw_log_bytes": 55821,
+  "events": 1024,
+  "game_sha256": "e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187",
+  "dll_sha256": "e7570b677c7f6ec6000b626825de62d62106938fcd47ac5a04c32a01288f3bf6",
+  "runner_sha256": "0c722378b212c71b2900347917ce9b2e262bc2e6fd86adfa2a6e5acb26ea6cec",
+  "source_sha256": "ca05fe21c6dea8c6288a7c2e60d0a620823ca61d837356bd0f63289c68af9b76",
+  "cycles": [
+    {
+      "pcm_bytes": 1007616,
+      "pcm_frames": 251904,
+      "duration_seconds": 5.712108843537415,
+      "channels": 2,
+      "rate": 44100,
+      "bits": 16,
+      "positive_read_count": 472,
+      "read_return_histogram": {
+        "0": 1,
+        "512": 224,
+        "1280": 1,
+        "2304": 67,
+        "4096": 180
+      },
+      "eof_observed": true,
+      "clear_return": 0
+    },
+    {
+      "pcm_bytes": 1007616,
+      "pcm_frames": 251904,
+      "duration_seconds": 5.712108843537415,
+      "channels": 2,
+      "rate": 44100,
+      "bits": 16,
+      "positive_read_count": 472,
+      "read_return_histogram": {
+        "0": 1,
+        "512": 224,
+        "1280": 1,
+        "2304": 67,
+        "4096": 180
+      },
+      "eof_observed": true,
+      "clear_return": 0
+    }
+  ],
+  "positions": [
+    {
+      "handle": 1,
+      "samples": 131916,
+      "buffer_flags": 30
+    },
+    {
+      "handle": 1,
+      "samples": 276702,
+      "buffer_flags": 30
+    },
+    {
+      "handle": 2,
+      "samples": 131750,
+      "buffer_flags": 30
+    },
+    {
+      "handle": 1,
+      "samples": 409447,
+      "buffer_flags": 30
+    },
+    {
+      "handle": 2,
+      "samples": 264448,
+      "buffer_flags": 30
+    },
+    {
+      "handle": 2,
+      "samples": 353006,
+      "buffer_flags": 30
+    }
+  ],
+  "live_voices": [
+    1,
+    2,
+    2,
+    1
+  ],
+  "volume_api_return": 0,
+  "stop_api_returns": [
+    0,
+    0
+  ],
+  "end_recorded": true,
+  "user_report": {
+    "additional_audio_heard": true,
+    "bgm_uninterrupted": true,
+    "additional_audio_stopped": true,
+    "post_test_game_operable": true,
+    "bgm_volume": "User suspects BGM became quieter; magnitude/timing unmeasured"
+  },
+  "limitations": [
+    "Two sequential full decodes of one normal OGG, not concurrent DLL decoder contexts",
+    "No PCM content hash or reference-decoder equivalence in v3",
+    "Position progression supports queued playback; not independent loop-boundary audibility proof",
+    "Successful volume API call does not prove per-voice isolation",
+    "BGM session volume before diagnostic was not logged",
+    "No malformed inputs, leak measurement, DAT integration or long-duration coverage"
+  ]
+}

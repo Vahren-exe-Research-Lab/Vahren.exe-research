@@ -1,0 +1,20 @@
+{
+  "Run-Playback.cmd": "517ae30ec9a6080390efe39a39f90873932bf323bd4333fff83948cf3f543920",
+  "Run-Playback.ps1": "d9c930d38e3939d0dde90125855ebbf858a195f1d2c977796f50fd020ae9aec0",
+  "build.ps1": "a914956d94628c86b303f1c5e765c8844be209512ea50ca2725af738e439f6c7",
+  "decode_policy.h": "58efd5cd8c1983916ba1f0c8e03a4adbe39b2f36f808564aee13a2796b4b3177",
+  "exports.def": "7f1ea0f9b65e0dca4b1ac5b1ea9720eff26afa4cdf51e9d6d2d1e1ad892ea643",
+  "hakushin_ogg.c": "8ab9d3fc135bf8eca30b73ee39e1e02912d3b99dbd160dde34d54f154302d418",
+  "hakushin_ogg.h": "6b12a957cd6fee4a1084a805e26fac7313c927f44b5d5c955d5afe84435a4ed9",
+  "playback_scenario.h": "87032aa43dcd5dff160fd6dfbb517c529998d4fb309a4f5194aa75237226606d",
+  "playback_thread.h": "4f36f52d5a8bf2092262aeb4e318d380e1d3427eeb55456ee7d4b248eaccd9d4",
+  "probe_decode.h": "6d5428d409933e1367e2db4a5f95ef45e9d88022ad439dc5e44e63c5381f4fdf",
+  "probe_thread.h": "c88b9037dba297fa0665d9a6d4d305088125f3f7a69027bb5d347b33c2d9a6a4",
+  "run_probe.c": "ec1d5bc3f59add673f11116aea30e96416fa6c5a0e82031dfc26c613732e5910",
+  "test_decode.c": "f8b796ad36e4c185a8e166a19eee433644c943e160dbdb7df00afb5f48614bf3",
+  "test_guard.c": "a6272057e8ecc78656c88d57e718278347c0aa43b85cb5d41855ba33c4e0de51",
+  "test_lifetime.c": "da702d7cbb37026b2909bb1b101f283e8470656f8088e64b9da2ade2c417d5e5",
+  "test_playback.c": "20a3af1c6da4de324a9be60271f0725bf17a20659c4cae5ba2818ceaf47f06ee",
+  "test_probe.c": "537ae8fc7e8914ec0de54f5bacf0b9e36f7feedde810cce5e1771d83628918d0",
+  "test_sink.c": "5bc18127b9a0a9a940115daedcc4aa081382982c30ddeb7519a03278a48b8ca9"
+}
