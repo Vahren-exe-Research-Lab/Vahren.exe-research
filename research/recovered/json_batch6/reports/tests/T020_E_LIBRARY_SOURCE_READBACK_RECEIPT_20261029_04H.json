@@ -1,0 +1,55 @@
+{
+  "research_id": "E-AUDIT-20261029-04H-T020-LIBRARY-BYTE-RECOVERY-01",
+  "owner": "E/T020",
+  "status": "SAVED_AND_READBACK / STATIC / VERIFY / NOT READY",
+  "library_source_file_count": 23,
+  "library_source_total_bytes": 210955,
+  "source_manifest_crosswalk": "22/23 direct names match in E_OFFLINE_SYNC; remaining 21H canonical separately byte-pinned",
+  "offline_copy_crosswalk": "22/23 names hash-match, 21H prior copy is truncated invalid JSON",
+  "synthetic_fixture_integrity_tests": "3/3 PASS",
+  "native_dynamic_observed": 0,
+  "actual_golden_pass": 0,
+  "strict_match": 0,
+  "ready_integrated_count": 0,
+  "new_safety_refusals": 0,
+  "recoveries": [
+    {
+      "id": "E-RC-20261029-04H-TOOLCALL-CAP-01",
+      "kind": "TOOL_CALL_LIMIT",
+      "recovered": true,
+      "raw_bytes_sha256": "7D574FF25175C4BAB3BF1C2CCDE6744482C05142717DAA8CC82E06F55F04CCAA"
+    }
+  ],
+  "files": [
+    {
+      "name": "T020_E_OFFLINE_LIBRARY_BYTE_RECONCILIATION_20261029_04H.md",
+      "bytes": 5229,
+      "sha256": "69AC3801C158F1F8D82C65A6B5E87AD75094B615C968F45DC21F168713106DC1"
+    },
+    {
+      "name": "T020_E_LIBRARY_SOURCE_MANIFEST_20261029_04H.json",
+      "bytes": 4783,
+      "sha256": "10AB86C458598FEF0C81AEF2CC7118485950ACC57972D0B5C1B8031E637A37AC"
+    },
+    {
+      "name": "T020_GOLDEN_CAPTURE_SEMANTIC_BIND_CASES_20261028_2149_LIBPIN_7D574F25.json",
+      "bytes": 20943,
+      "sha256": "7D574FF25175C4BAB3BF1C2CCDE6744482C05142717DAA8CC82E06F55F04CCAA"
+    },
+    {
+      "name": "t020_e_library_snapshot_reconcile_20261029_04H.py",
+      "bytes": 1530,
+      "sha256": "FA219F62A32E323BDDBB8BC4E488AFB7FC3BAAB25FAD8DD45A491BE8D5F68DBE"
+    },
+    {
+      "name": "t020_e21_library_pin_integrity_20261029_04H.py",
+      "bytes": 1537,
+      "sha256": "40FD28FA6F769D25BD628941CB422D6D84723BA9B56C7DE32F3E1AD5F7611EA6"
+    },
+    {
+      "name": "T020_DIALOG_WRAPPER_FINGERPRINT_GOLDEN_LINEAGE_CASES_20261028_1949.json",
+      "bytes": 65108,
+      "sha256": "C61E0128498B58AD0933D671E85BE3D896E5FB77A15EB1C2722E8723FEA53411"
+    }
+  ]
+}

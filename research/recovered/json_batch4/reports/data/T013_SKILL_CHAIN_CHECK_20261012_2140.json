@@ -1,0 +1,373 @@
+{
+  "schema": 1,
+  "evidence_id": "B-20261012-2140-01",
+  "timestamp_jst": "2026-10-12T21:54:17.754087+09:00",
+  "evidence_class": "SAVED_ASSEMBLY_AND_CALLER_TRANSITION_MODEL_NOT_GAME_EXECUTION",
+  "checks": 86,
+  "failures": [],
+  "status": "PASS",
+  "final_handoff_checked": true,
+  "source_sha256": {
+    "status_dump": "293a7bfa57d3dc948d28188f4b67e5ce62b530a4acb370b9646833d4eccdc3bb",
+    "search_dump": "3b55961d6a0653bbb61e90678b2f81faddf67fa6ebde7c74e1795045a7fc5e94",
+    "action_dump": "ce1ff9d65200bd8a2f0a6efdbc213e77319224228e979490091379bdf5fca69b"
+  },
+  "contract_sha256": "4c65ff98a3d71ecd67660daeadfac904d68b9f6f9585a38c05c050cdaa0bb9d1",
+  "handoff_sha256": "1f26a2c613f244a704729fd2ffe4e709f584774b24db812fe679df3ae9287e95",
+  "script_sha256": "06b0fa3f4c3592083e20d1568d3b258ae26bc4c5f020a51ca9a93d2f39f39c1a",
+  "original_exe_opened_or_executed": false,
+  "gameplay_golden_pass": 0,
+  "strict_match": 0,
+  "limitations": [
+    "5799D0 body and side effects unknown",
+    "576450 body unknown",
+    "callee-internal RNG not counted as zero",
+    "no original gameplay or full Work suite run"
+  ],
+  "results": [
+    {
+      "check": "instruction_0057E4E7",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E4ED",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E50F",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E548",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E549",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E54F",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E554",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E557",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E534",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E539",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E572",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E577",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E57D",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E591",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E5A5",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E5AD",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E5B2",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E5CC",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E5D3",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E5DD",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E5E7",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E5EC",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E5F0",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E5FF",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E618",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E61F",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E628",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E1D9",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E2AA",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E2BE",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E32B",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E356",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E3FB",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E43A",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E490",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E4BC",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057E4D0",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057AEBC",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057AEC1",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057AEC3",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057AECA",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057AECF",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057AED1",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057AEDA",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057B375",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057B885",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057B88F",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057B8A1",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057B92A",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057B983",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057BA10",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057BA97",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057BACE",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057BB21",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057BB8F",
+      "pass": true
+    },
+    {
+      "check": "instruction_0057BB9B",
+      "pass": true
+    },
+    {
+      "check": "full_search_direct_CRT_call_sites_only",
+      "pass": true
+    },
+    {
+      "check": "5799D0_not_defined_in_loaded_B_dumps",
+      "pass": true
+    },
+    {
+      "check": "caller_boundary_model_0",
+      "pass": true
+    },
+    {
+      "check": "caller_boundary_model_1",
+      "pass": true
+    },
+    {
+      "check": "caller_boundary_model_2",
+      "pass": true
+    },
+    {
+      "check": "caller_boundary_model_3",
+      "pass": true
+    },
+    {
+      "check": "caller_boundary_model_4",
+      "pass": true
+    },
+    {
+      "check": "caller_boundary_model_5",
+      "pass": true
+    },
+    {
+      "check": "caller_boundary_model_6",
+      "pass": true
+    },
+    {
+      "check": "caller_boundary_model_7",
+      "pass": true
+    },
+    {
+      "check": "outer_AL_return_model_0",
+      "pass": true
+    },
+    {
+      "check": "outer_AL_return_model_1",
+      "pass": true
+    },
+    {
+      "check": "outer_AL_return_model_2",
+      "pass": true
+    },
+    {
+      "check": "outer_AL_return_model_3",
+      "pass": true
+    },
+    {
+      "check": "outer_AL_return_model_4",
+      "pass": true
+    },
+    {
+      "check": "outer_AL_return_model_5",
+      "pass": true
+    },
+    {
+      "check": "canonical_section_unique",
+      "pass": true
+    },
+    {
+      "check": "contract_section_### A.",
+      "pass": true
+    },
+    {
+      "check": "contract_section_### B.",
+      "pass": true
+    },
+    {
+      "check": "contract_section_### C.",
+      "pass": true
+    },
+    {
+      "check": "contract_section_### D.",
+      "pass": true
+    },
+    {
+      "check": "contract_section_### E.",
+      "pass": true
+    },
+    {
+      "check": "contract_section_### F.",
+      "pass": true
+    },
+    {
+      "check": "unknown_accessor_not_hidden",
+      "pass": true
+    },
+    {
+      "check": "empty_primary_does_not_end_frame",
+      "pass": true
+    },
+    {
+      "check": "work_cursor_handoff_named",
+      "pass": true
+    },
+    {
+      "check": "pointer_slot_reference_named",
+      "pass": true
+    },
+    {
+      "check": "final_handoff_id_unique",
+      "pass": true
+    },
+    {
+      "check": "final_marker",
+      "pass": true
+    },
+    {
+      "check": "canonical_final_marker",
+      "pass": true
+    }
+  ]
+}

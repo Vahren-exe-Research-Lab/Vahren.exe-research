@@ -1,0 +1,73 @@
+{
+  "status": "WORK_TYPED_ADAPTER_STATIC_BY_GRANT / NOT GAMEPLAY",
+  "root_count": 2435,
+  "summary": {
+    "not_direct_granted/missile": {
+      "rejected": 5206,
+      "all": 7530,
+      "accepted": 2324,
+      "accepted_pct": 30.86
+    },
+    "granted_root/missile": {
+      "rejected": 1425,
+      "all": 1724,
+      "accepted": 299,
+      "accepted_pct": 17.34
+    },
+    "not_direct_granted/heal": {
+      "accepted": 245,
+      "all": 246,
+      "rejected": 1,
+      "accepted_pct": 99.59
+    },
+    "not_direct_granted/sword": {
+      "accepted": 42,
+      "all": 42,
+      "accepted_pct": 100.0
+    },
+    "granted_root/sword": {
+      "accepted": 76,
+      "all": 76,
+      "accepted_pct": 100.0
+    },
+    "granted_root/heal": {
+      "accepted": 74,
+      "all": 74,
+      "accepted_pct": 100.0
+    }
+  },
+  "stop_reasons": {
+    "not_direct_granted/missile": [
+      [
+        "str not single permitted mode*integer",
+        4941
+      ],
+      [
+        "nonliteral integer: knock",
+        243
+      ],
+      [
+        "nonliteral integer: mp",
+        17
+      ],
+      [
+        "nonliteral integer: add_per",
+        5
+      ]
+    ],
+    "granted_root/missile": [
+      [
+        "str not single permitted mode*integer",
+        1425
+      ]
+    ],
+    "not_direct_granted/heal": [
+      [
+        "str not single permitted mode*integer",
+        1
+      ]
+    ]
+  },
+  "source": "WIKI_FULL_DAT_ADAPTER_COVERAGE_20261013.json",
+  "caveat": "Unit/Class grant root static only. Others may be event/child/set reached."
+}

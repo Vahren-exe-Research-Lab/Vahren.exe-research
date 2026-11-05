@@ -1,0 +1,63 @@
+{
+  "research_id": "E-AUDIT-20261030-19H-T020-T013-EQUAL-RANGE-ERASE-GATE-01",
+  "snapshot_jst": "2026-10-30 19H JST",
+  "owner": "E/T020",
+  "state": "STATIC_NATIVE_BYTE_VERIFIED_SYNTHETIC_EXECUTED_VERIFY_NOT_READY",
+  "b_owner_id": "B-20261030-19H-T013-EQUAL-RANGE-ERASE-01",
+  "b_source_sha256": "034EEBC1521C16F9EB77F500E9579CCF4C7DB3744F82BF478A1F858E41B705E8",
+  "original_pe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "artifacts": [
+    {
+      "path": "tests/t020_e_t013_equal_range_erase_gate_20261030_19H.py",
+      "bytes": 5377,
+      "sha256": "83D44F11A01AA14B82515DF4A2C226CF39D141759A9F30B0886D3DE7CF4BCD2B"
+    },
+    {
+      "path": "tests/T020_E_T013_EQUAL_RANGE_ERASE_CASES_20261030_19H.json",
+      "bytes": 27649,
+      "sha256": "93994CDF8B891928D69F89AFB1AFE955D2C4707111C5CAD4BBD249514C5B10DE"
+    },
+    {
+      "path": "tests/T020_E_T013_EQUAL_RANGE_ERASE_ACCEPTANCE_20261030_19H.md",
+      "bytes": 5572,
+      "sha256": "50296D614D64116B83D3434CEEE9C90C44CB4955E88195C3DFF33442EB989D41"
+    }
+  ],
+  "checks": {
+    "synthetic_new_pass": 84,
+    "rerun_18h_pass": 64,
+    "rerun_17h_pass": 56,
+    "run_total_pass": 204,
+    "report_cumulative_not_full_rerun": 957,
+    "pe_windows_sha_match_actual": 4,
+    "pe_direct_e8_match": 4,
+    "b_source_window_sha_mismatch": 1,
+    "original_game_run": 0,
+    "dynamic_observed": 0,
+    "actual_golden_pass": 0,
+    "strict_match": 0
+  },
+  "discrepancy": {
+    "type": "B19_EVIDENCE_METADATA_SHA_TRANSCRIPTION",
+    "va": "0x44C42E",
+    "length_bytes": 354,
+    "reported": "7A9F01E76357FDCE9A82D9E372C288547E0C5769D1BCDE95DEC770C3DEEABE69",
+    "actual": "7A9F01E76357FDCE9A82D9E372C288547E0C5769D1BCDE95DEC770C3DEEEBE69",
+    "owner_fix_required": "B"
+  },
+  "master": {
+    "checkpoint": 196,
+    "ready_total": 596,
+    "new_ready": 0,
+    "task_done": 9,
+    "task_in_progress": 21,
+    "task_verify": 4,
+    "sha256": "E7329C9C6368E67BE191A4ABF45156319E32826FF039FB2B9E226DEDDAC6B6B3"
+  },
+  "safety": {
+    "new_safety_refusal": 0,
+    "other_error": "initial B19 stage_b SHA mismatch recovered by verified E-only expectation correction",
+    "old_refusals": "BLOCKED_NOT_RETRIED",
+    "offline_unsynced": "OPEN"
+  }
+}

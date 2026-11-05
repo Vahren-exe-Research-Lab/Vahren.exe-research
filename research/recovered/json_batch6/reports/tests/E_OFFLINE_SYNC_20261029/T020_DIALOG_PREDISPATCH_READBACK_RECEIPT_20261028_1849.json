@@ -1,0 +1,36 @@
+{
+  "research_id": "E-OFFLINE-20261028-1849-T020-PREDIALOG-EXPR-GOLDEN-RUN-ID-GATE-01",
+  "readback": "LIBRARY RAW_FILE BYTE EQUAL",
+  "files": [
+    {
+      "name": "T020_DIALOG_PREDISPATCH_GOLDEN_RUN_ID_AUDIT_20261028_1849.md",
+      "sha256": "B80A9B6397A54ECFEA304B2E63B6E9859076C37B978FEC223DCD9B5A7F9E1507",
+      "readback_match": true,
+      "bytes": 8462
+    },
+    {
+      "name": "T020_DIALOG_PREDISPATCH_CASES_20261028_1849.json",
+      "sha256": "AB80DAEF387703C34163C715E66FB1B37BD904736C5FF39F92AF7C19B78C99D0",
+      "readback_match": true,
+      "bytes": 5033
+    },
+    {
+      "name": "t020_dialog_predispatch_golden_run_gate_20261028_1849.py",
+      "sha256": "2F070FA60924E277FCAF0CC832FE1B9FCE55BD7BDB669BBDA08D97D24C6BF9A2",
+      "readback_match": true,
+      "bytes": 5298
+    }
+  ],
+  "validation": {
+    "new_tests": "36/36 PASS",
+    "previous_1745": "46/46 PASS",
+    "previous_1645": "28/28 PASS",
+    "combined": "110/110 PASS",
+    "native_gameplay": "NOT RUN",
+    "actual_golden_pass": 0,
+    "strict_match": 0
+  },
+  "pc_sync": "NOT DONE",
+  "master_integrated": false,
+  "connection_error": "E-RC-20261028-1849-LOCAL-SSE-429-01"
+}

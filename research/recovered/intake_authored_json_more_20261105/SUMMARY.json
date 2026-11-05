@@ -1,0 +1,17 @@
+{
+  "base": "355ec8ba1c7b1723f944bdf4547c9353112722ab",
+  "selected": 55,
+  "accepted": 55,
+  "unique_new_bodies": 50,
+  "alias_source_rows": 5,
+  "whole_file_deferred": 0,
+  "root_ledger_rows": 1704,
+  "searchable_documents": 1671,
+  "field_mentions": 5557,
+  "symbols": 488,
+  "fields": 120,
+  "relations": 159,
+  "corrections": 15,
+  "new_native_tests": 0,
+  "original_cleanup": "NOT_PERFORMED"
+}

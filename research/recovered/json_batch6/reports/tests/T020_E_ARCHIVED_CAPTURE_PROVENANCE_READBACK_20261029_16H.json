@@ -1,0 +1,70 @@
+{
+  "research_id": "E-AUDIT-20261029-16H-T020-ARCHIVED-CAPTURE-PROVENANCE-01",
+  "owner": "E/T018/T020",
+  "provenance": "PC_LOCAL_ARCHIVED_SOURCE_BYTE_AUDIT",
+  "classification": "STATIC_SYNTHETIC_EXECUTED_VERIFY_NOT_READY",
+  "test_result": {
+    "tests_run": 12,
+    "tests_pass": 12,
+    "tests_failed": 0,
+    "process_exit_code": 0,
+    "retest_current_code": true
+  },
+  "source_audit": {
+    "summaries": 7,
+    "live_source_claims": 3,
+    "synthetic_selftests": 4,
+    "live_raw": 8,
+    "live_failures": 5,
+    "synthetic_raw": 4,
+    "receipts_hash_matched": 20,
+    "event_logs_byte_sha_pinned": 7,
+    "errors": 0
+  },
+  "saved_files_sha256": {
+    "t020_e_archived_capture_provenance_20261029_16H.py": "068C4216141F67002636F3AB443F22DAC92DA868EC1BB7019B2C73DD42A11701",
+    "T020_E_ARCHIVED_CAPTURE_PROVENANCE_RECEIPT_20261029_16H.json": "716B80CFE9DF73717B4AE1D1C5FE3F3326B8A90DA70D5C05ABE8B9CC6545566E",
+    "T020_E_ARCHIVED_CAPTURE_PROVENANCE_AUDIT_20261029_16H.md": "91BFF560F5FEB50D9D14AF7B0CEE1BFFB3B712A7DFD94A12FB6DB48A9C54015C"
+  },
+  "readback": {
+    "source_code_verified_by_subsequent_test_run": true,
+    "receipt_json_read_success": true,
+    "report_tail_read_success": true,
+    "sha256_independently_recalculated_by_powershell": true
+  },
+  "master_last_confirmed": {
+    "checkpoint": 196,
+    "ready": 596,
+    "lanes": {
+      "A": 115,
+      "B": 229,
+      "C": 136,
+      "D": 116
+    },
+    "task_34_previous": {
+      "DONE": 9,
+      "IN_PROGRESS": 21,
+      "VERIFY": 4
+    },
+    "task_recount_this_run": false
+  },
+  "golden": {
+    "native_dynamic_observed_this_run": 0,
+    "actual_golden_pass": 0,
+    "strict_match": 0
+  },
+  "new_formal_ready": 0,
+  "original_game_run": false,
+  "blocked_previous_refusals_retained": true,
+  "issues": [
+    {
+      "kind": "OTHER",
+      "detail": "earlier report-assembly JS SyntaxError; corrected before any file write, no partial file"
+    },
+    {
+      "kind": "OTHER",
+      "detail": "optional old rea_lab/decomp_task/RUN_STATUS.md absent (ENOENT); PROGRESS.md available"
+    }
+  ],
+  "offlinesync": "PENDING_DEDUP"
+}

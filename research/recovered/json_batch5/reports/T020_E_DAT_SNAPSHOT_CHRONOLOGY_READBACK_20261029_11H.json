@@ -1,0 +1,38 @@
+{
+  "research_id": "E-AUDIT-20261029-11H-T018-T020-DAT-SNAPSHOT-CHRONOLOGY-01",
+  "status": "PC_SAVED_INDEPENDENT_READBACK_VERIFIED",
+  "files": [
+    {
+      "path": "tests/T020_E_DAT_SNAPSHOT_CHRONOLOGY_FIXTURES_20261029_11H.json",
+      "bytes": 2702,
+      "sha256": "E4D5D23AFF9D2C515075B1B9ED7545E95DD320918F59043FDBFF392CB861DC50",
+      "json_parsed": true,
+      "case_count": 6,
+      "unique_case_ids": 6,
+      "test_execution": "NOT_RUN"
+    },
+    {
+      "path": "tests/T020_E_DAT_SNAPSHOT_CHRONOLOGY_AUDIT_20261029_11H.md",
+      "bytes": 5618,
+      "sha256": "DE1312A0F4998DE89B4AACFBB003E739796D900F3B68DC0E9BDBCF65E70C63DF",
+      "readback": true
+    }
+  ],
+  "preexisting_regression_rerun": {
+    "test_files": [
+      "t020_e_dat_epoch_baseline_gate_20261029_10H.py",
+      "t020_e_native_cnb02_join_preflight_20261029_09H.py"
+    ],
+    "executed": 34,
+    "passed": 34,
+    "failed": 0,
+    "new_tests": 0
+  },
+  "native_original_new_executions": 0,
+  "actual_golden_pass": 0,
+  "strict_match": 0,
+  "master_ready_added": 0,
+  "new_safety_refusal": 0,
+  "recoverable_other_errors": 1,
+  "next": "Legal native same-run G0/G1/G2 primary witnesses with loaded DAT generation; keep T019 source creation date UNKNOWN."
+}

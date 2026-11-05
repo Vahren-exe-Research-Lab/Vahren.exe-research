@@ -1,0 +1,20 @@
+{
+  "id": "B-20261013-0117-01",
+  "status": "PASS",
+  "checks": 192,
+  "failures": [],
+  "final_handoff_checked": false,
+  "classification": "SAVED_REA_ASSEMBLY_BRANCH_AND_FINITE_MODEL_NOT_GAME_EXECUTION",
+  "sha256": {
+    "REA_assembly_json": "98749c8d1bf870477f48722e7e98eea558301f44f13539df4710c41e44c65d07",
+    "contract": "9f3f33ffba5a04cde932bd58eca6287c6b76f26b731220ea9cb1ad0f5d8d452e"
+  },
+  "gameplay_golden_pass": 0,
+  "strict_match": 0,
+  "original_executed": false,
+  "limits": [
+    "no original gameplay or dynamic CW/MXCSR observation",
+    "callee effects not proven",
+    "signed overflow/negative radii/invalid grid pointers VERIFY"
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "evidence_id": "B-20261012-2320-01",
+  "evidence_class": "SAVED_B_ASSEMBLY_PATH_ONLY",
+  "source_sha256": "293a7bfa57d3dc948d28188f4b67e5ce62b530a4acb370b9646833d4eccdc3bb",
+  "checks": [
+    {
+      "check": "VA_0057AA0F",
+      "pass": true
+    },
+    {
+      "check": "VA_0057AA17",
+      "pass": true
+    },
+    {
+      "check": "VA_0057AA29",
+      "pass": true
+    },
+    {
+      "check": "VA_0057AA8C",
+      "pass": true
+    },
+    {
+      "check": "VA_0057AA96",
+      "pass": true
+    },
+    {
+      "check": "VA_0057AA98",
+      "pass": true
+    },
+    {
+      "check": "VA_0057AA99",
+      "pass": true
+    },
+    {
+      "check": "VA_0057AAC7",
+      "pass": true
+    },
+    {
+      "check": "VA_0057AAD3",
+      "pass": true
+    },
+    {
+      "check": "VA_0057AAD9",
+      "pass": true
+    },
+    {
+      "check": "VA_0057AADF",
+      "pass": true
+    },
+    {
+      "check": "VA_0057AAE5",
+      "pass": true
+    },
+    {
+      "check": "VA_0057AAEB",
+      "pass": true
+    },
+    {
+      "check": "VA_0057AAA3",
+      "pass": true
+    },
+    {
+      "check": "P1_all_native_boundaries_present",
+      "pass": true
+    },
+    {
+      "check": "P1_no_internal_call",
+      "pass": true
+    },
+    {
+      "check": "P1_no_ebx_write_after_xor",
+      "pass": true
+    },
+    {
+      "check": "P2_all_native_boundaries_present",
+      "pass": true
+    },
+    {
+      "check": "P2_no_internal_call",
+      "pass": true
+    },
+    {
+      "check": "P2_no_ebx_write_after_xor",
+      "pass": true
+    },
+    {
+      "check": "P1_skips_counter_write",
+      "pass": true
+    },
+    {
+      "check": "P2_decrements_and_writes_counter",
+      "pass": true
+    },
+    {
+      "check": "P3_calls_unresolved_helper",
+      "pass": true
+    }
+  ],
+  "pass": true,
+  "old_exe_executed": false,
+  "gameplay_golden_pass": 0,
+  "strict_match": 0,
+  "limits": [
+    "Path P3 after 5B3F90 does not prove EBX preservation.",
+    "Post-store 4DFA30/57E180 effects unverified.",
+    "Legal combat reachability not observed."
+  ]
+}

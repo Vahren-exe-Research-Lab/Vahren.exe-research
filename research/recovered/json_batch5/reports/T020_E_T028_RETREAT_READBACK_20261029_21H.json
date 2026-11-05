@@ -1,0 +1,40 @@
+{
+  "id": "E-AUDIT-20261029-21H-T020-T028-RETREAT-NO-DESTINATION-SOURCE-VISIBILITY-01",
+  "saved_at_local": "2026-10-29 21H JST",
+  "owner": "E",
+  "status": "STATIC_VERIFY_NOT_READY",
+  "source": {
+    "B_T028_detail_sha256": "EE0831A672E0AFA56D17F4ED278C1B49260C0D3120E47ACB6ABAD4F02A01135A",
+    "V9_pointer_sha256": "4A767242C465DB302ACF5FAF582202E4B604E0708492712792F35745F3F5669A"
+  },
+  "files": [
+    {
+      "filename": "T020_E_T028_RETREAT_NO_DESTINATION_ACCEPTANCE_20261029_21H.md",
+      "bytes": 4259,
+      "sha256": "26BB28F003EBF575CFE29742F7F47127F1482F77663AFFCBAB2D03CCE0452982"
+    },
+    {
+      "filename": "T020_E_T028_RETREAT_EARLY_FAIL_CASES_20261029_21H.json",
+      "bytes": 2190,
+      "sha256": "5F31A4C342EC292623937CC3769C71B910F04C5BAAE243CFA705E563F22F037F"
+    },
+    {
+      "filename": "t020_e_t028_retreat_source_visibility_gate_20261029_21H.py",
+      "bytes": 1356,
+      "sha256": "136D5DBDA312ADCACD07558AC7B9CB0D36C97A8F4C4E3710E27C3388154181D8"
+    }
+  ],
+  "synthetic_route_pass": 8,
+  "synthetic_route_total": 8,
+  "provenance_contract_pass": 3,
+  "provenance_contract_total": 3,
+  "actual_gameplay_runs": 0,
+  "actual_golden_pass": 0,
+  "strict_match": 0,
+  "new_ready_integrated": 0,
+  "last_master_checkpoint": 196,
+  "last_ready_count": 596,
+  "task_status": "OLD_VERIFIED_9_21_4_NOT_RECOUNTED",
+  "old_safety_refusals": "BLOCKED_NOT_RETRIED",
+  "offline_unsynced": "NOT_FULLY_RECONCILED"
+}

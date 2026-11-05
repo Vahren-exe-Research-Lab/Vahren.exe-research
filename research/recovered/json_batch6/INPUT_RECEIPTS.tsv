@@ -1,0 +1,3 @@
+role	path	sha256	bytes	notes
+APPROVED_SELECTION	private-approved-selection/hakushin-json_batch6-approved.tsv	a26ed6c59d6b9a2c78883727cbd62a9b9a21cf0bd603c69ffcd97477f9876cda	4680	21 literal original paths
+BASELINE_AND_CURRENT_LEDGER	research/recovered/RECOVERY_LEDGER.tsv	71c680afdffbeb11186e43a720a40166db9b132f2bc38a6a914451baa5bb31a9	1144675	1649 rows; current bytes equal git355ec8ba1c7b1723f944bdf4547c9353112722ab

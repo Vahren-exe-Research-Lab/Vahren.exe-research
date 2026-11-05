@@ -1,0 +1,49 @@
+{
+  "research_id": "E-AUDIT-20261030-10H-T020-T028-THIRD-SELECTOR-OPAQUE-EAX-01",
+  "recorded_at": "2026-10-30 10H JST",
+  "state": "STATIC/SOURCE+NATIVE_BYTE_VERIFIED/SYNTHETIC_EXECUTED/VERIFY/NOT_READY",
+  "original_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "b_source_sha256": "B2273C621C9B4E1E5A7AFFF4061C85F3809246EDFBADD9EAD8ABF57960E45268",
+  "master_sha256_before": "E7329C9C6368E67BE191A4ABF45156319E32826FF039FB2B9E226DEDDAC6B6B3",
+  "artifacts": [
+    {
+      "name": "t020_e_t028_third_selector_eax_gate_20261030_10H.py",
+      "size": 4207,
+      "sha256": "1D8B2E2FF6E71547C09A707E0D31DDA232646ECF0E8270F9219B84B189050A1C"
+    },
+    {
+      "name": "T020_E_T028_THIRD_SELECTOR_EAX_CASES_20261030_10H.json",
+      "size": 17757,
+      "sha256": "9E2ECF6A3270BF94206B319168A016ACDE3FE8D1FCCDF011030DDDCCB1F2D79B"
+    },
+    {
+      "name": "T020_E_T028_THIRD_SELECTOR_OPAQUE_EAX_ACCEPTANCE_20261030_10H.md",
+      "size": 4121,
+      "sha256": "C69A44308381BEE64399B2CE7FE5DBADB0AC4879B053074BA5F8629EFF8D17A8"
+    }
+  ],
+  "validation": {
+    "new_synthetic_pass": 56,
+    "new_synthetic_total": 56,
+    "pe_window_verified": 2,
+    "e8_call_verified": 6,
+    "previous_372_covered_by_this_run": false,
+    "old_gameplay_runs": 0,
+    "old_golden_pass": 0,
+    "strict_match": 0,
+    "formal_ready_added": 0
+  },
+  "recovery": {
+    "type": "OTHER",
+    "status": "RECOVERED",
+    "issue": "PE magic escape literal in new E Python validator; corrected one own-file line, rerun PASS",
+    "new_safety_refusals": 0
+  },
+  "limitations": [
+    "B study VERIFY/NOT READY",
+    "T018 G0-G1-G2 same-run primary proof missing",
+    "T019 runtime contradictions unresolved",
+    "Legacy OFFLINE-UNSYNCED duplicate/owner audit incomplete"
+  ],
+  "next": "Read-only check local flag 0x447C69 consumer and producer 0x49E490 return ABI; native Golden independent user-authorized observation before upgrade."
+}

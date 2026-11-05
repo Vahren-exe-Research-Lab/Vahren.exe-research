@@ -1,0 +1,40 @@
+{
+  "research_id": "E-AUDIT-20261029-06H-T020-SOURCE-PIN-ADMISSION-01",
+  "owner": "E",
+  "status": "STATIC_SYNTHETIC_EXECUTED_VERIFY_NOT_READY",
+  "files": [
+    {
+      "name": "t020_e_source_pin_admission_20261029_06H.py",
+      "bytes": 4151,
+      "sha256": "CF0ADB6FF53BF5A10B56EAA1CE947ED6ED382946DA03CE4915C80FBD5B54B277"
+    },
+    {
+      "name": "T020_E_SOURCE_PIN_ADMISSION_AUDIT_20261029_06H.md",
+      "bytes": 3383,
+      "sha256": "7C96CC74908FCF11492D41B272AFEB421565C44AF7D230CB28121F6B0C5A38BF"
+    }
+  ],
+  "source_manifest_pins": {
+    "pc_133": "29DF7E435A3C63C0A33F7A2F38D83C2EA604E1791F669BAED5A38CF8BDC0DFE1",
+    "library_23": "10AB86C458598FEF0C81AEF2CC7118485950ACC57972D0B5C1B8031E637A37AC"
+  },
+  "tests": {
+    "new_source_pin": "8/8 PASS exit0",
+    "pc_inventory": "5/5 PASS exit0",
+    "library_pin": "3/3 PASS exit0",
+    "total": "16/16 PASS"
+  },
+  "other_error": {
+    "type": "OTHER_RECOVERED",
+    "summary": "PowerShell inline variable quoting produced a ParserError before file hashes were measured. Separate read-only Get-FileHash calls then succeeded.",
+    "unsaved_effect": "none"
+  },
+  "official_ready_added": 0,
+  "checkpoint_last_known": 196,
+  "ready_last_known": 596,
+  "tasks_last_known": "DONE9 IN_PROGRESS21 VERIFY4",
+  "native_dynamic_observed": 0,
+  "actual_golden_pass": 0,
+  "strict_match": 0,
+  "scope": "No original executable run; no MASTER or other-lane edits; rejected operations not retried."
+}

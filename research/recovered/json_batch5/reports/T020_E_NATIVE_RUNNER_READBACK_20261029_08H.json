@@ -1,0 +1,50 @@
+{
+  "research_id": "E-AUDIT-20261029-08H-T018-T020-NATIVE-RUNNER-EVIDENCE-BOUNDARY-01",
+  "owner": "E/T018/T020",
+  "state": "STATIC_SYNTHETIC_EXECUTED_VERIFY_NOT_READY",
+  "checks": {
+    "new_tests": 19,
+    "passed": 19,
+    "failures": 0,
+    "exit_code": 0,
+    "pid": 23068
+  },
+  "files": [
+    {
+      "name": "t020_e_native_runner_evidence_boundary_20261029_08H.py",
+      "bytes": 6381,
+      "sha256": "35DDC47A7C17520F95349F9758F1701B9CFA8BE61A7153370324F3410F0AAB59"
+    },
+    {
+      "name": "T020_E_NATIVE_RUNNER_EVIDENCE_BOUNDARY_20261029_08H.md",
+      "bytes": 5082,
+      "sha256": "30BF6CC7D5CE982FAE79FED12ED0BE95768ADB1316929C45725F1B44BBDA7EB5"
+    }
+  ],
+  "source_sha256": {
+    "dev_native_battle_runner": "2F1BBFDA6A3C935564AEF5A9FAD6DA10085A1C87B5C093BED4CAAF551250A5F9",
+    "dev_test_native_battle_runner": "FC3004C8A71D2EC45C7C635F373E3D15DB7C905788D17F0ACF380D16CE8CF61A"
+  },
+  "official_master": {
+    "checkpoint_last_known": 196,
+    "ready_last_known": 596,
+    "A": 115,
+    "B": 229,
+    "C": 136,
+    "D": 116,
+    "tasks_last_known": {
+      "DONE": 9,
+      "IN_PROGRESS": 21,
+      "VERIFY": 4
+    },
+    "new_ready_integrations": 0
+  },
+  "golden": {
+    "dynamic_observed": 0,
+    "actual_pass": 0,
+    "strict_match": 0
+  },
+  "old_safety_refusals_retried": 0,
+  "original_game_executed": false,
+  "dev_runner_executed": false
+}

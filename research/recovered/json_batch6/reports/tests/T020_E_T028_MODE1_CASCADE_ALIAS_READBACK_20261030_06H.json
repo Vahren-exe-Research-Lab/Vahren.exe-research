@@ -1,0 +1,57 @@
+{
+  "research_id": "E-AUDIT-20261030-06H-T020-T028-MODE1-CASCADE-ALIAS-GATE-01",
+  "owner": "E/T020",
+  "source_owner_id": "B-20261030-0615-T028-MODE1-CASCADE-DTOR-01",
+  "snapshot_jst": "2026-10-30 06H",
+  "source_path": "data/T028_RETREAT_MODE1_CASCADE_DTOR_NATIVE_20261030_06H.md",
+  "source_sha256": "9942B6B3AA22C2CB93850DBFCAF64A01A4BD0B51F0C0C4F9B3970D0751320BDD",
+  "source_owner_handoff_unique": true,
+  "artifact_sha256": {
+    "T020_E_T028_MODE1_CASCADE_ALIAS_CASES_20261030_06H.json": "9AF8AE92BBE019F24573D066A7D0DEED267F6B2DBF5B5D7720848677AF81AEF5",
+    "t020_e_t028_mode1_cascade_alias_gate_20261030_06H.py": "AA384D12489C567E56F1766EB1B3C8941F948D127A79B75D932628B168B8332F",
+    "T020_E_T028_MODE1_CASCADE_ALIAS_ACCEPTANCE_20261030_06H.md": "3A8DF10BF567B52F9F90C6A94568D395F94A062024FF650E29540AF97C1B1536"
+  },
+  "test_results": {
+    "new_cases": 39,
+    "new_passed": 39,
+    "old_cases": 227,
+    "old_passed": 227,
+    "total_passed": 266,
+    "total_cases": 266,
+    "runner_exit_zero": 10,
+    "runner_count": 10
+  },
+  "master_sha256": "E7329C9C6368E67BE191A4ABF45156319E32826FF039FB2B9E226DEDDAC6B6B3",
+  "master_checkpoint_verified": 196,
+  "ready_total_verified": 596,
+  "ready_by_lane": {
+    "A": 115,
+    "B": 229,
+    "C": 136,
+    "D": 116
+  },
+  "task_queue": {
+    "total": 34,
+    "DONE": 9,
+    "IN_PROGRESS": 21,
+    "VERIFY": 4
+  },
+  "new_ready_integrated": 0,
+  "golden": {
+    "original_gameplay": "NOT_RUN",
+    "dynamic_observed": 0,
+    "actual_golden_pass": 0,
+    "strict_match": 0
+  },
+  "t019_new_confirmed_conflicts": 0,
+  "unresolved": [
+    "same-run G1 G2 source proof",
+    "candidate-primary pointer alias runtime policy",
+    "0x467DE0 side effects",
+    "0x5AC5EC cleanup",
+    "OFFLINE-UNSYNCED dedup",
+    "prior safety refusals"
+  ],
+  "safe_changes": "E-owned tests 4 files only; no MASTER/other-owner/Git/EXE/automation edits",
+  "status": "STATIC_SOURCE_PINNED_SYNTHETIC_PASS_VERIFY_NOT_READY"
+}

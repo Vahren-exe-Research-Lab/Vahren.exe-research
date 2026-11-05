@@ -1,0 +1,84 @@
+{
+  "research_id": "E-OFFLINE-20261028-2045-T018-T020-GOLDEN-LINEAGE-CONTENT-BOUND-01",
+  "snapshot_date_jst": "2026-10-28 20:45",
+  "status": "OFFLINE-UNSYNCED / STATIC-OLD-INDEX / SYNTHETIC EXECUTED / NOT READY",
+  "library_path": "/迫真戦記/E_OFFLINE_UNSYNCED/",
+  "files": [
+    {
+      "filename": "T020_GOLDEN_LINEAGE_CONTENT_BOUND_AUDIT_20261028_2045.md",
+      "library_file_id": "file_00000000e2bc81f98f5db605e7048f7f",
+      "sha256": "5EB696F60F9255DC3E08F630011754B02571EC10C3FBAFF95723F67E8DF44A2B",
+      "readback_sha256": "5EB696F60F9255DC3E08F630011754B02571EC10C3FBAFF95723F67E8DF44A2B",
+      "verified_identical": true
+    },
+    {
+      "filename": "T020_GOLDEN_LINEAGE_CONTENT_BOUND_CASES_20261028_2045.json",
+      "library_file_id": "file_00000000d784822f819d6d32051fba68",
+      "sha256": "71C09CCCACCF878A7B04C695565EB2C316BA895FDB72B8C9E852CC05101B24F9",
+      "readback_sha256": "71C09CCCACCF878A7B04C695565EB2C316BA895FDB72B8C9E852CC05101B24F9",
+      "verified_identical": true
+    },
+    {
+      "filename": "t020_golden_lineage_content_bound_gate_20261028_2045.py",
+      "library_file_id": "file_00000000e14c822fbe3dc636dd96cd1d",
+      "sha256": "9F1A4586F77408D4067A1CE77E86CB2F1215CE6DD53B0D2F5A3E2993534E376B",
+      "readback_sha256": "9F1A4586F77408D4067A1CE77E86CB2F1215CE6DD53B0D2F5A3E2993534E376B",
+      "verified_identical": true
+    }
+  ],
+  "executed_tests": {
+    "new": 36,
+    "previous_1645": 28,
+    "previous_1745": 46,
+    "previous_1849": 36,
+    "previous_1949": 58,
+    "total": 204,
+    "fail": 0
+  },
+  "golden": {
+    "dynamic_observed": 0,
+    "actual_golden_pass": 0,
+    "strict_match": 0
+  },
+  "master": {
+    "status": "not rechecked on PC",
+    "last_known_jst": "2026-10-28 12H",
+    "checkpoint": 196,
+    "ready_total": 596,
+    "task_total": 34,
+    "done": 9,
+    "in_progress": 21,
+    "verify": 4,
+    "duplicate_task_id": 0,
+    "new_integration": 0
+  },
+  "connection_recovery": {
+    "id": "E-RC-20261028-2045-LOCAL-SSE-429-01",
+    "classification": "CONNECTION / RATE_LIMIT",
+    "attempt": "Desktop Commander Local Compact read_multiple_files MASTER+protocol+README",
+    "error": "MCP SSE probe returned 429 from openai.org",
+    "saved": "3 Library artifacts + this receipt locally",
+    "unsaved": "Windows MASTER sync and PC latest checkpoint/other lanes",
+    "resume": "PC session restored; authorized E review excluding prior refused operations"
+  },
+  "library_transient": {
+    "id": "E-RC-20261028-2045-LIBRARY-SCRIPT-OVERWRITE-TRANSIENT-02",
+    "classification": "CONNECTION/OTHER",
+    "error": "container_session_unavailable",
+    "attempts": 2,
+    "note": "An optional script enhancement was NOT uploaded; local was reverted to the already-uploaded and verified original, so there is no divergence or outstanding unsaved code change."
+  },
+  "preserved_safety_refusals": [
+    "E-RC-20261028-1353-READONLY-PS-SAFETY-01",
+    "E-RC-20261028-13H-E13-REPORT-APPEND-SAFETY-02",
+    "T018 table/session-join",
+    "T019 refused XREF",
+    "C T026/T032",
+    "D T030 TSV",
+    "0x5710C0"
+  ],
+  "offline_unsynced_20261025": true,
+  "original_game_run": false,
+  "new_source_exe_sha_check": false,
+  "readback_method": "Library materialize raw_file then byte-level sha256 compare in container"
+}

@@ -1,0 +1,63 @@
+{
+  "research_id": "E-AUDIT-20261030-07H-T020-T028-POSTRET-BUFFER-RELEASE-01",
+  "snapshot_local": "2026-10-30 07H JST",
+  "status": "STATIC_SOURCE_PINNED_SYNTHETIC_EXECUTED_VERIFY_NOT_READY",
+  "owner": "E",
+  "source_owner_id": "B-20261030-0711-T028-MODE1-POSTRET-BUFFER-RELEASE-01",
+  "source_document_sha256": "A62F2BFC272326AE24A94807637A9F370644995ABF2F1182179E7357A14DB945",
+  "source_document_bytes": 3323,
+  "source_owner_and_handoff_id_checks": {
+    "owner_occurrences": 1,
+    "handoff_heading_occurrences": 1
+  },
+  "files": [
+    {
+      "name": "t020_e_t028_postret_vector_buffer_free_gate_20261030_07H.py",
+      "sha256": "A90936B8E8CA61FF238512712071E0BF53CDD03C6A9DE9A2BAA575A16684FC18",
+      "bytes": 3497
+    },
+    {
+      "name": "T020_E_T028_POSTRET_BUFFER_FREE_CASES_20261030_07H.json",
+      "sha256": "EDE88F3CA4DCEBC5EE0E50DA60385C4ED2B9AD466EC4C885B5820419E495E8A7",
+      "bytes": 11225
+    },
+    {
+      "name": "T020_E_T028_POSTRET_BUFFER_FREE_ACCEPTANCE_20261030_07H.md",
+      "sha256": "9607B54CE9B25720F4D17AC55BE45C280EFE7ED15BCCA6C4F22569FBE9021B48",
+      "bytes": 4415
+    }
+  ],
+  "readback": "All three files independently read; SHA256 re-calculated from Windows real bytes",
+  "fixture": {
+    "positive": 24,
+    "rejected_invalid": 9,
+    "total": 33
+  },
+  "regression": {
+    "new_pass": 33,
+    "previous_pass": 266,
+    "combined_pass": 299,
+    "script_exit_zero": 11,
+    "failed": 0
+  },
+  "master": {
+    "sha256": "E7329C9C6368E67BE191A4ABF45156319E32826FF039FB2B9E226DEDDAC6B6B3",
+    "checkpoint_last_confirmed": 196,
+    "ready_last_confirmed": 596,
+    "task_rows": 34,
+    "done": 9,
+    "in_progress": 21,
+    "verify": 4,
+    "modified": false
+  },
+  "strict": {
+    "original_game": "NOT_RUN",
+    "dynamic_observed": 0,
+    "actual_golden_pass": 0,
+    "strict_match": 0
+  },
+  "ready_integrated_this_run": 0,
+  "offline_unsynced": "NOT_RECONCILED",
+  "safety_refusals_new": 0,
+  "next": "Legitimate same-run G0/G1/G2 source receipts; B owner 0x510850/0x5AC5B5 and EDI/EBX provenance; do not redo prior safety-refused operations."
+}
