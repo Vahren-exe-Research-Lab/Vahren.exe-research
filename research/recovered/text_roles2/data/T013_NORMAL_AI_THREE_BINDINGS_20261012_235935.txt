@@ -1,0 +1,128 @@
+# B bounded list cleanup / virtual bindings / STATIC ONLY
+timestamp_jst=2026-10-12T23:59:35.913780+09:00
+target=rea_lab/targets/hakushin067_Vahren.exe; no execution or writes
+
+=== 0x004FC920..0x004FC970 exclusive ===
+range_sha256=5f3e1606134b83d2be8c06ecbc683db110b3f31b5dce3d2c64ca12eeb11d3ad3
+raw_hex=8b4424048b08894c24043b0674268b48048b1089118b088b500450895104e878a20b008b44240883c404ff4e0489078bc7c20400890f8bc7c20400cccccccccc3bd174228b420456befeffff1f2bf083
+004FC920 8b442404                 mov      eax, dword ptr [esp + 4]
+004FC924 8b08                     mov      ecx, dword ptr [eax]
+004FC926 894c2404                 mov      dword ptr [esp + 4], ecx
+004FC92A 3b06                     cmp      eax, dword ptr [esi]
+004FC92C 7426                     je       0x4fc954
+004FC92E 8b4804                   mov      ecx, dword ptr [eax + 4]
+004FC931 8b10                     mov      edx, dword ptr [eax]
+004FC933 8911                     mov      dword ptr [ecx], edx
+004FC935 8b08                     mov      ecx, dword ptr [eax]
+004FC937 8b5004                   mov      edx, dword ptr [eax + 4]
+004FC93A 50                       push     eax
+004FC93B 895104                   mov      dword ptr [ecx + 4], edx
+004FC93E e878a20b00               call     0x5b6bbb
+004FC943 8b442408                 mov      eax, dword ptr [esp + 8]
+004FC947 83c404                   add      esp, 4
+004FC94A ff4e04                   dec      dword ptr [esi + 4]
+004FC94D 8907                     mov      dword ptr [edi], eax
+004FC94F 8bc7                     mov      eax, edi
+004FC951 c20400                   ret      4
+004FC954 890f                     mov      dword ptr [edi], ecx
+004FC956 8bc7                     mov      eax, edi
+004FC958 c20400                   ret      4
+004FC95B cc                       int3     
+004FC95C cc                       int3     
+004FC95D cc                       int3     
+004FC95E cc                       int3     
+004FC95F cc                       int3     
+004FC960 3bd1                     cmp      edx, ecx
+004FC962 7422                     je       0x4fc986
+004FC964 8b4204                   mov      eax, dword ptr [edx + 4]
+004FC967 56                       push     esi
+004FC968 befeffff1f               mov      esi, 0x1ffffffe
+004FC96D 2bf0                     sub      esi, eax
+
+=== 0x005B6BBB..0x005B6C40 exclusive ===
+range_sha256=cbcfc88dd4d74463257e396078b37d64f7188d2e344db942e1618caeb82a9d05
+raw_hex=8bff558bec5de9220600008bff558becff750851e80b4d000059595dc204008bff51c70118996000e8874c000059c38bff558bec568bf1e8e3fffffff6450801740756e8b8ffffff598bc65e5dc204008bff558bec8b450883c1095183c00950e8c04d0000f7d8591bc059405dc204008bff558bec83ec10eb0dff7508e83a4e00005985c0
+005B6BBB 8bff                     mov      edi, edi
+005B6BBD 55                       push     ebp
+005B6BBE 8bec                     mov      ebp, esp
+005B6BC0 5d                       pop      ebp
+005B6BC1 e922060000               jmp      0x5b71e8
+005B6BC6 8bff                     mov      edi, edi
+005B6BC8 55                       push     ebp
+005B6BC9 8bec                     mov      ebp, esp
+005B6BCB ff7508                   push     dword ptr [ebp + 8]
+005B6BCE 51                       push     ecx
+005B6BCF e80b4d0000               call     0x5bb8df
+005B6BD4 59                       pop      ecx
+005B6BD5 59                       pop      ecx
+005B6BD6 5d                       pop      ebp
+005B6BD7 c20400                   ret      4
+005B6BDA 8bff                     mov      edi, edi
+005B6BDC 51                       push     ecx
+005B6BDD c70118996000             mov      dword ptr [ecx], 0x609918
+005B6BE3 e8874c0000               call     0x5bb86f
+005B6BE8 59                       pop      ecx
+005B6BE9 c3                       ret      
+005B6BEA 8bff                     mov      edi, edi
+005B6BEC 55                       push     ebp
+005B6BED 8bec                     mov      ebp, esp
+005B6BEF 56                       push     esi
+005B6BF0 8bf1                     mov      esi, ecx
+005B6BF2 e8e3ffffff               call     0x5b6bda
+005B6BF7 f6450801                 test     byte ptr [ebp + 8], 1
+005B6BFB 7407                     je       0x5b6c04
+005B6BFD 56                       push     esi
+005B6BFE e8b8ffffff               call     0x5b6bbb
+005B6C03 59                       pop      ecx
+005B6C04 8bc6                     mov      eax, esi
+005B6C06 5e                       pop      esi
+005B6C07 5d                       pop      ebp
+005B6C08 c20400                   ret      4
+005B6C0B 8bff                     mov      edi, edi
+005B6C0D 55                       push     ebp
+005B6C0E 8bec                     mov      ebp, esp
+005B6C10 8b4508                   mov      eax, dword ptr [ebp + 8]
+005B6C13 83c109                   add      ecx, 9
+005B6C16 51                       push     ecx
+005B6C17 83c009                   add      eax, 9
+005B6C1A 50                       push     eax
+005B6C1B e8c04d0000               call     0x5bb9e0
+005B6C20 f7d8                     neg      eax
+005B6C22 59                       pop      ecx
+005B6C23 1bc0                     sbb      eax, eax
+005B6C25 59                       pop      ecx
+005B6C26 40                       inc      eax
+005B6C27 5d                       pop      ebp
+005B6C28 c20400                   ret      4
+005B6C2B 8bff                     mov      edi, edi
+005B6C2D 55                       push     ebp
+005B6C2E 8bec                     mov      ebp, esp
+005B6C30 83ec10                   sub      esp, 0x10
+005B6C33 eb0d                     jmp      0x5b6c42
+005B6C35 ff7508                   push     dword ptr [ebp + 8]
+005B6C38 e83a4e0000               call     0x5bba77
+005B6C3D 59                       pop      ecx
+005B6C3E 85c0                     test     eax, eax
+
+=== 0x005E80F0..0x005E8100 exclusive ===
+range_sha256=2efd6de98e397cbf7a47773ad54699c95194e87185f4638d9e9f20a48560fc81
+raw_hex=8b5424088d420c8b4ae833c8e812e4fc
+005E80F0 8b542408                 mov      edx, dword ptr [esp + 8]
+005E80F4 8d420c                   lea      eax, [edx + 0xc]
+005E80F7 8b4ae8                   mov      ecx, dword ptr [edx - 0x18]
+005E80FA 33c8                     xor      ecx, eax
+
+=== 0x0063AA4C..0x0063AA54 exclusive ===
+range_sha256=91f13015553dea7d2e75eedd453a83db77e364415b29b8284675173c2132c8f7
+raw_hex=1081570000835700
+pointer_values=['0x578110', '0x578300']
+
+=== 0x0063A524..0x0063A52C exclusive ===
+range_sha256=036b5bbbf900f3eed48c469a03501f4b36c868e4be9acc613774540de3edb391
+raw_hex=104d5400b04d5400
+pointer_values=['0x544d10', '0x544db0']
+
+=== 0x0063A94C..0x0063A954 exclusive ===
+range_sha256=91f13015553dea7d2e75eedd453a83db77e364415b29b8284675173c2132c8f7
+raw_hex=1081570000835700
+pointer_values=['0x578110', '0x578300']

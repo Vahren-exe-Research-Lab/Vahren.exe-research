@@ -1,0 +1,106 @@
+0x6319b8 b'on' on
+0x6319bc b'on' on
+0x6319c0 b'@politics_hide' @politics_hide
+0x6319d0 b'on' on
+0x6319d4 b'@camp_hide' @camp_hide
+0x6319e0 b'@mode_nozone' @mode_nozone
+0x6319f0 b'$\x81\\\x8a\xae\x81\\' $―完―
+0x6319f8 b'title_name' title_name
+0x631a04 b'gameclear' gameclear
+0x631a10 b'gameclear' gameclear
+0x631a1c b'erase' erase
+0x631a24 b'politics' politics
+0x68c130 b'.?AUExpresString@@' .?AUExpresString@@
+0x68c14c b'.?AUExpresElement@@' .?AUExpresElement@@
+0x637e04 b'invalid vector<T> subscript' invalid vector<T> subscript
+0x637e38 b'vector<T> too long' vector<T> too long
+0x62ff74 b'a_system/reset.mid' a_system/reset.mid
+0x62ffc0 b'.' .
+0x62ffd0 b'bgm/*' bgm/*
+0x62ffe0 b'' 
+0x62ffec b'bgm/*' bgm/*
+0x62fff0 b'*' *
+0x62fff4 b'/' /
+0x62fff8 b'bgm/' bgm/
+0x630000 b'.' .
+0x630004 b'.mid' .mid
+0x63000c b'.mp3' .mp3
+0x630014 b'.ogg' .ogg
+0x63001c b'.' .
+0x630020 b'mp3' mp3
+0x630024 b'.' .
+0x630028 b'ogg' ogg
+0x63002c b'mp3' mp3
+0x630030 b'a_system/reset.mid' a_system/reset.mid
+0x632d80 b'world_bgm' world_bgm
+0x632d8c b'world_volume' world_volume
+0x632d9c b'bgm@' bgm@
+0x632da4 b'dungeon' dungeon
+0x632dac b'bgm' bgm
+0x632db0 b'dungeon' dungeon
+0x632db8 b'volume@' volume@
+0x632dc0 b'dungeon' dungeon
+0x632dc8 b'dungeon' dungeon
+0x632dd0 b'volume' volume
+0x632dd8 b'dungeon' dungeon
+0x632de0 b'bgm' bgm
+0x632de4 b'event' event
+0x632dec b'volume' volume
+0x632df4 b'event' event
+0x632dfc b'bgm' bgm
+0x632e00 b'volume' volume
+0x632e08 b'bgm_fix' bgm_fix
+0x632e10 b'battle_bgm' battle_bgm
+0x632e1c b'battle_volume' battle_volume
+0x6300f8 b'sound_count' sound_count
+0x630104 b'default' default
+0x63010c b'b_sound_count' b_sound_count
+0x63011c b'default_battle' default_battle
+0x629eb4 b'bgm_volume' bgm_volume
+0x628e68 b'@config@bgm_volume' @config@bgm_volume
+0x628e7c b'@config@se_volume' @config@se_volume
+0x628e90 b'@config@bv_volume' @config@bv_volume
+0x628ea4 b'@config@tv_volume' @config@tv_volume
+0x633c40 b'context' context
+0x633c48 b'context' context
+0x62ffa0 b'\x9a\x99\x99\x99\x99\x99\xc9?\x82a\x82f\x82l\x82\xcc\x93\xc7\x82\xdd\x8d\x9e\x82\xdd\x92\x86\x82\xc5\x82\xb7' 囮劔劔ﾉ?ＢＧＭの読み込み中です
+0x62ff90 b'' 
+0x629cb8 b'testmap' testmap
+0x629cc0 b'musicoff' musicoff
+0x629ccc b'noactive' noactive
+0x629cd8 b'skillcheckoff' skillcheckoff
+0x629ce8 b'midi' midi
+0x624898 b'attack_us' attack_us
+0x6248a4 b'skill' skill
+0x6248ac b'sortkey' sortkey
+0x6248b4 b'skill' skill
+0x6248bc b'attr' attr
+0x6248c4 b'skill' skill
+0x624fa4 b'func' func
+0x624fac b'skill' skill
+0x624fb4 b'sword' sword
+0x624fbc b'missile' missile
+0x624fc4 b'heal' heal
+0x624fcc b'summon' summon
+0x624fd4 b'charge' charge
+0x624fdc b'status' status
+0x624fe4 b'on' on
+0x624fe8 b'allfunc' allfunc
+0x624ff0 b'skill' skill
+--- ptr table 0x68C7D0 ---
+0x68c7d0 -> 0x630004 b'.mid' .mid
+0x68c7d4 -> 0x63000c b'.mp3' .mp3
+0x68c7d8 -> 0x630014 b'.ogg' .ogg
+--- GUIDs ---
+0x60cd6c e436ebb3-524f-11ce-9f53-0020af0ba770
+0x60cd7c 56a868b1-0ad4-11ce-b03a-0020af0ba770
+0x60cd8c 56a868b6-0ad4-11ce-b03a-0020af0ba770
+0x60cd9c 56a868b3-0ad4-11ce-b03a-0020af0ba770
+0x60cdac 36b73880-c2c8-11cf-8b46-00805f6cef60
+0x60cdbc 56a868a9-0ad4-11ce-b03a-0020af0ba770
+0x6096ac c6784488-41a3-418f-aa15-b35093ba42d4
+0x6096cc 19e7c08c-0a44-4e6a-a116-595a7cd5de8c
+0x6096dc 06621075-e92e-11d1-a8c5-00c04fa3726e
+0x6096ec d2ac2892-b39b-11d1-8704-00600893b1bd
+0x6096fc d2ac2882-b39b-11d1-8704-00600893b1bd
+0x60971c 6825a449-7524-4d82-920f-50e36ab3ab1e

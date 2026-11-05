@@ -1,0 +1,146 @@
+[Vahren701.zip] audio={'.mid': 67, '.mp3': 8, '.ogg': 1, '.wav': 74}
+  bgm_audio={'.mid': 66, '.mp3': 8, '.ogg': 1} total=75
+  bgm_same_basename_multi_ext=1 [('my_girl', ['.mid', '.mp3'])]
+  bgm_basename_contains_dot=0 []
+  bgm_casefold_duplicate_paths=0 []
+  bgm_extension_case={'.mid': 62, '.mp3': 8, '.MID': 4, '.ogg': 1}
+  ogg_loop_comment_hits=0/1
+[新約迫真戦記―ほのぼの神話ver0.67 豪華版(画像・音声削除版).zip] audio={'.mid': 1, '.mp3': 1, '.ogg': 2, '.wav': 233}
+  bgm_audio={'.ogg': 2, '.mp3': 1} total=3
+  bgm_same_basename_multi_ext=0 []
+  bgm_basename_contains_dot=0 []
+  bgm_casefold_duplicate_paths=0 []
+  bgm_extension_case={'.ogg': 2, '.mp3': 1}
+  ogg_loop_comment_hits=0/2
+[新約迫真戦記―ほのぼの神話ver0.67 豪華版.zip] audio={'.mid': 1, '.mp3': 39, '.ogg': 396, '.wav': 5972}
+  bgm_audio={'.ogg': 396, '.mp3': 38} total=434
+  bgm_same_basename_multi_ext=1 [('スーパーカズヤのテーマを耳コピしてみた', ['.mp3', '.ogg'])]
+  bgm_basename_contains_dot=0 []
+  bgm_casefold_duplicate_paths=0 []
+  bgm_extension_case={'.ogg': 396, '.mp3': 38}
+  ogg_loop_comment_hits=0/396
+
+
+## 2026-10-07 BGM reference classification checkpoint 17
+[CORPUS]
+- Active simple direct playBGM/loopBGM args: 2923 / 272 unique. 268 unique resolve to FULL BGM stems.
+- Four missing unique names are classified: `none` 896 = intentional missing/reset idiom; `指定ないです` 2 = intentional placeholder after stopBGM+volume(0); `サスライガー神社` and `バクシンガー神社` = one call each, both under `6000_スキルテスト/event_test.dat`.
+- Therefore production direct-call asset references have zero unresolved candidates after semantic/test-only classification. This does NOT mean all context/property references are fully proven.
+- Static BGM-property scan is now restricted to exact keys bgm/battle_bgm/world_bgm/title_bgm. The old wildcard accidentally counted sound-table key `reinobgm=600`; that false positive is removed.
+- Corrected static property total: 167 refs / 90 unique values. Asset-unmatched values are only `@` (23) and `none` (6).
+- All 23 `bgm=@` occurrences are inside spot definitions in random-event / Dream Match spot files. Several Dream Match entries explicitly comment out a concrete bgm line immediately before `bgm=@`, strongly supporting explicit-empty/no-BGM semantics, but native consumer behavior remains VERIFY.
+- All 6 `bgm=none` occurrences are event battle setup blocks adjacent to map/handle/btl_unitmax/disperse/castle_battle and before battle execution; several also execute `playBGM(none)` inside the battle event. This strongly supports no-automatic-BGM intent; exact property-consumer path remains VERIFY.
+[REIMPLEMENT]
+- Do not report `reinobgm=600` as an unresolved BGM asset. Keep exact property-name filtering.
+- Treat direct production BGM reference integrity as clean, while preserving missing-name/reset behavior for `none` and placeholder calls rather than inventing assets.
+[VERIFY]
+- Prove native runtime semantics of static `bgm=@` and `bgm=none` before canonicalizing them as identical sentinels.
+
+
+## 2026-10-12 11:37 新D / T017: ZIP目録の全音声path/サイズ限定監査（D-20261012-1137-01）
+[CONFIRMED-MANIFEST / NEW SCOPE] 読取専用 `evidence/ZIP_ENTRIES.csv`（Zip,FullName,Extension,Length）から拡張子を大文字小文字非区別で .wav/.ogg/.mp3/.mid に限定して各Zip内を集計。Vahren701=150件、迫真CORE=237件、迫真FULL=6408件で、既存T017の音声種別件数の和と一致。
+[CONFIRMED-MANIFEST] 上記3 archive各々で FullName.ToLowerInvariant() 完全一致の**大文字小文字差だけによる同一相対path衝突は0件**。Length=0の音声entryも各0件。.wavのLength<44 byteも各0件。3 archiveの全音声entry総数は6795件（別archive間の重複を含む）。
+[IMPACT / LIMIT] FULLの全6408音声のZIP目録上では0-byte assetや単純なcase-insensitive path競合を検出せず、旧T017のBGM限定衝突0を**全音声拡張子へ範囲拡張**。これはCRC照合、WAV/OGG/MP3/MIDIのデコード成功、音声品質、Unicode正規化衝突、原作再生成功を証明しない。短いWAVの確認は44-byte閾値という限定的検査でありcodec validationではない。
+[VERIFY / GOLDEN NOT RUN] OGG/MP3/WAV/MID全例の可読性、デコーダ/DirectShowの実際の選択・EOF・UI volume0 loop・focusとの因果は未観測。旧EXE gameplay actual PASS0、新エンジンstrict MATCH0。
+[NEXT] 必要になればT017 ownerとして固定サンプルの静的ヘッダー/CRC検証を検討し、T015音量0 transport側の失敗条件と分離。T030の2v2 isAllDead/no-target addSkill/HQ MP/生産/waveはD別担当資料で継続VERIFY。
+[STATUS / SAFETY] Local Compactの既存ZIP_ENTRIES.csv読取りに対する軽量 PowerShell Import-Csv/Group-Object集計のみ（プロセスexit0）。原本ZIP/EXEを開かず、新逆解析/Ghidra/REA・実機起動0。禁止途中evidence/T030_RTS_PRODUCTION_GRAPH.tsv、既往拒否EXEおよびD handoff/T030への拒否済み書込操作は非使用・非迂回。MASTER/T018、他lane、rea/dev、Git/push、Remote/MCP/スケジュール非変更。Handoff未登録なので**NOT READY**。
+
+## 2026-10-13 D/T017: PSR死亡SEの参照名・sound.datキー・二配置WAVを独立照合（D-20261013-0137-02）
+[CONFIRMED-NORMALIZED-SOURCE] normalized ver0.67 a_default/script/sound.dat:514 は pserdead=1200 と記載する。normalized script全域へのpserdead content検索は COMPLETED 1 match / 1 file（sound.dat:514）のみ。逆にpsrdeadはCOMPLETED 9 matches / 3 files。例: 10_ユニット/B_14_ヌエバ・デスパセーニャ.dat:24には dead = ぱたり……。@psrdead（同:130/235も類似）、5000_ランダムシナリオ/event_50_共通ボス_rsc.dat:2131には playSE(psrdead)（同:2245）、2000_勢力ストーリー/po14_battle.dat:268にも playSE(psrdead)。明示script参照はpserdeadではなくpsrdead。既報D-20261012-1835-01（REPORTED_ONLY）の名不一致候補を、今回実使用位置まで直接照合した増分。元ID自体を新規件数として再計上しない。
+[CONFIRMED-FULL-MANIFEST] 読取専用 evidence/ZIP_ENTRIES.csv:17479 は a_default/sound/psrdead.wav Length=290470、同:21485は a_default/voice/small3/psrdead.wav Length=290436。FULL ZIP目録でpserdead一致file=0、psrdeadはこの2 path。34byte長差のみ確認できる。WAV/PCMの実内容差・原作engineの優先検索順・playSEとdead fieldのruntime解釈・再生成功は未証明。原本ZIP内6WAV比較の既往安全拒否対象を再試行していない。
+[REIMPLEMENT] 原文キーpserdeadと参照ID psrdeadを同一化・自動補正しない。sound.datの1200がpsrdeadへ適用されることを断定しない。物理2path候補・source参照・native resolver／SE時間表を独立traceし、実効値はVERIFYのまま。音量0 BGM transportへの因果も仮定しない。
+[GOLDEN DESIGNED/NOT RUN] 合法PSR unit死亡時のSE・テキスト表示と、イベントplaySE(psrdead)を同条件比較。source ID/asset候補path/実SE期間/volume/voice優先/fallbackを分離記録し、未到達ならINELIGIBLE。旧EXE実機actual PASS0、新strict MATCH0。
+[STATUS/SAFETY] Local Compactでnormalized sourceと既存FULL目録の軽量read-only照合。T017本資料とLANE_D_HANDOFFへの同ID追記/読戻し後だけREADY-SOURCE-ASSET-BOUNDARY。native音声結果VERIFY。初回本追記はJavaScript template literalのバッククォート構文エラーで未実行（安全拒否でなく書込0）、通常の記法訂正後に本追記。禁止生産TSV、拒否EXE/WAV比較、原本ZIP/EXE、MASTER/T018/他lane/REA/dev_lab/Git/Remote/automation不変更。
+
+## 2026-10-13 04:36 D/T017: 全playSE literalとsound.dat・音声目録の限定突合（D-20261013-0436-01）
+[CONFIRMED-STATIC SCAN / SCOPE] Local Compactの通常起動で、正規化ver0.67 a_default/script/**/の590 .datをread-only走査。block commentと//行commentを簡易除去後、括弧入れ子なしのplaySE(単純literal)のみ抽出し、合計4,933参照・395 distinct ID。sound.datの単純な整数値キー443件。evidence/ZIP_ENTRIES.csvの全3 archiveにおけるa_default/配下のWAV basename unionは5,974種類（異版跨ぎ重複をdedup）。これは限定正規表現の計数で、native parser全域/到達可能呼出数ではない。
+[CONFIRMED-STATIC NEGATIVE MATCH / 7 IDs 13 CALLS] 上記playSE literalのうちWAV stemに大小無視完全一致しないものは7 ID・13 call。intercom_nettori(4; 2000_勢力ストーリー/po22_event.dat:1521)、betya(2; 同:4082)、basya(1; po33_event.dat:583)、horror(1; 2001_イベント_ボス/EB_5151_古代アステカ王国.dat:444)、dakituki(1; 2023_イベント_リュージ騎士団/po23_event_17_C.dat:143)、rain_1(2; 2023_イベント_リュージ騎士団/po23_event_12_ED_B_B.dat:213)、sosogu(2; 43_内政_教育/ev06_sadou.dat:338)。位置は各IDの最初に検出した行であり、全callsite表ではない。
+[SOUND KEY SPLIT] 同7名中、rain_1=800とsosogu=800はsound.datの整数指定あり/一致WAVなし。残り5名（合計9 call）はsound.dat整数keyも無し。追加で成功した既存ZIP目録のWAV/OGG/MP3/MID照合でも7名と完全一致するmedia basenameは検出されなかった（各archive別網羅表の再生成成功を意味しない）。
+[NEAR-NAME CANDIDATES / NOT AUTO-FIX] 保存済manifestの別名にはbasya19.wav、horror_9.wav、dakituku.wav、rain1.wavがあり、字面からそれぞれbasya/horror/dakituki/rain_1の候補となる。しかし文字列類似性のみで同音・作者意図・エンジンfallback/asset aliasは立証しない。intercom_nettori/betyaは今回の近似候補検査で高類似名を得ていない。既報psrdead/pserdead不一致は別件であり再計上しない。
+[IMPACT] 参照名、sound.dat duration key、ZIP相対path別asset IDは独立データとして保持。欠落候補7件を強制修正・別名に自動変換・無音確定にしない。sound.datキー未登録でもnative playSEがfileを解決する可能性、物理assetのruntime探索先、解析対象外動的ID、退避ファイルはVERIFY。
+[GOLDEN DESIGNED/NOT RUN] 原作UIで上記event/茶会等が合法到達する場合、音の再生可否、選択basename/検索path、duration、見えるイベント継続を旧原作とstrictで別途観測。未到達はINELIGIBLE。旧EXE actual PASS0、新strict MATCH0。
+[RECORD OF ERROR/REFUSAL] 初回UTF-8 Python pipeが日本語pathを?へ変換して失敗（OSError22、書込なし）、同じ通常static scanでASCII path discoveryへ修正して上の結果取得。この後に求めた7名の全archive別詳細再集計Local start_processはOpenAI安全チェックで実行前拒否。**当該拒否コマンドの迂回・再試行なし**。D所有evidence/LANE_D_HANDOFF.mdのD-RC-20261013-0436-01に拒否対象/成功地点/再開条件を記録。拒否操作結果0と先行成功した2検査を混同しない。
+[NEXT/STATUS] DのT017 asset/source照合のみ、原本ZIP/EXEや禁止T030 TSVは非接触。他owner資料/MASTER/T018/REA/dev_lab/Git/scheduleは不変更。handoffへ同IDを一意登録し読み戻すまでNOT READY、登録後もREADY-STATIC-ASSET-CANDIDATESに限定する。
+
+## D-20261013-0732-02 — playSEのnative引数→virtual methodとBGM resolverの分離
+[CONFIRMED-SAVED-NATIVE / NEW BOUNDARY] A所有read-only exe/T006_AUDIO_COMMAND_GROUP.txt:0x4A2CD4..0x4A2CFFをDが静的再読。playSEは0x415750→0x452860で第1引数を文字列として解決し（0x4A2CE4..0x4A2CEDで文字列body pointer調整）、0x4A2CEF [esi+4]でmanager pointerを取得、0x4A2CF2/0x4A2CF6 vtable +0x24を読んで0x4A2CFB call eax。局所では成否や物理WAV pathnameを確定する比較・branchは示されない。
+[CONTRAST] 別のplayBGM/play branchは同保存ファイル0x4A2D04..0x4A2DAD、0x4A2DA8で明示的に0x4BDE40 BGM resolverを呼ぶ。playSEのこの局所callerから0x4BDE40への直接callは無い。BGMの.mid→.mp3→.ogg探索順・DirectMusic missing resetをSEの7 IDへ無断転用しない。
+[APPLICATION] D-20261013-0436-01の単純literal playSE unmatched7 ID/13参照、D-20261013-0137-02のpsrdead/pserdead・2 WAV path候補を参照する。名前がWAV目録に一致しないことと、SE manager virtual calleeの内部解決失敗・silent/no-op・音長値の適用を区別する。既存7 IDや先行参照数は再計上しない。
+[VERIFY] vtable+0x24の実callee、managerの具体型、sound.dat time-key参照位置、WAV/voice相対pathの検索優先順・asset alias・fallback、失敗時の可視/可聴結果は未同定。A/T006のVM引数/scene契約はread-only参照のみ、他owner資料へ書かない。
+[GOLDEN NOT RUN / NEXT] 合法到達可能なplaySE(intercom_nettori等7 literal)と既知成功音を選び、呼出名・sound key・物理asset選択・実再生・イベント継続を別観測。静的branchと原作実機を混同せず旧EXE actual PASS0/new strict MATCH0。新しい保存済みSE virtual callee/RTTI証拠が得られたらD側で追加接続する。
+[CHECK/SAFETY] A保存nativeとD所有資料を軽量read-only照合、上記共通16アンカー検査16/16成功。過去拒否されたZIP内WAV個別再集計や不完全T030 TSV・EXE processは再利用/再試行/別経路迂回なし。MASTER/T018/他owner/rea/dev/Git/Remote/MCP/automation変更なし。
+[STATUS] D本文保存後に再読→D Handoffへ同ID登録・再読後のみREADY-SAVED-DISPATCH-BOUNDARY。
+
+## D-20261013-0835-02 — playSE virtual callの2引数と返値非分岐を局所確定（T017）
+[CONFIRMED-SAVED-NATIVE / INCREMENT] A所有read-only exe/T006_AUDIO_COMMAND_GROUP.txt VA0x4A2CEF..0x4A2CFF：manager=[esi+4]、vtable=[manager]、0x4A2CF4 push edi→0x4A2CF5 push eax（解決された文字列body）、0x4A2CF6 mov eax,[vtable+0x24]、0x4A2CF9 mov ecx,manager、0x4A2CFB call eax。local callはmanager thiscall形の2stack argsで第1string pointer、第2はその時点のEDI値。EDIの論理意味/zero既定値はここからは未確定。
+[CONFIRMED-RETURN-BOUNDARY] virtual call直後0x4A2CFD xor al,al→0x4A2CFF jmp 0x4A633Cへ無条件に進む。従ってこのscript commandの局所handlerではcallee EAX/AL戻り値で分岐せずALを明示0へ上書き。callee内部例外、SE再生失敗時のmanager状態、common tail後のVM効果は未観測であり「音源欠落でも必ずイベント継続」とは断定しない。
+[REIMPLEMENT IMPACT] script playSEの文字列・opaque EDI第2引数・virtual target・戻り値棄却を別traceし、BGM 0x4BDE40を代用しない。既報D-20261013-0436-01の7未一致SE名/13 callとpserdead vs psrdeadも、virtual callee実fail/no-opを示すものではない。目録とnative resolverを混同しない。
+[GOLDEN NOT RUN] 合法イベントで既知一致SEと7不一致候補を鳴らし、SE成否/可聴音/別名/画面継続/後続commandと、calleeback error/例外を可能な範囲で区別。旧EXE Gameplay PASS0、新strict MATCH0。内部EAXやcallee不能ならINELIGIBLEとする。
+[CHECK/STATUS] 保存exe/T006_AUDIO_COMMAND_GROUP.txtのpush/register/vtable/call/xor/jmpの7アンカー照合成功（合同22/22）。D所有資料に追記、Handoff同ID再読後にREADY-SAVED-ABI-BOUNDARY。禁止済みZIP WAV詳細比較/EXE再解析・不完全T030 TSVへ非接触/非迂回。MASTER/T018/他lane/rea/dev/Git/Remote/設定/automation変更0。
+[NEXT] 新しい正規保存証拠にSE manager具体vtable・callee実体・WAV/voice resolverがあれば軽量照合する。音量0停止再開はBGM transport T015側で独立調査する。
+
+## D-20261013-0933-03 — playSEの第2仮想引数EDIは通常ScriptFunc dispatcher経路で0
+[OWNER/T017][CONFIRMED-SAVED-NATIVE / NEW CROSS-FUNCTION] A保存exe/T006_DISPATCH_PROBE.txt VA0x4A1302 `xor edi,edi` →0x4A1310 opcode jump-tableへ到達。A保存exe/T006_AUDIO_COMMAND_GROUP.txtでplaySE case VA0x4A2CD4..0x4A2CFBはEDIを書き換えず0x4A2CF4 `push edi`→0x4A2CF5 `push eax`→manager vtable+0x24呼出を実行する。従ってこの通常jump-table→playSE caseの直接制御経路では前回D-0835-02のopaque EDI第2stack引数は数値0となる。
+[ABI LIMIT] 通常caseではpush順は第2引数0、続いて解決済み音声名pointerで、managerをECX thisとしてcall。別の未観測jump-in/再入/例外がEDIに値を与えるとの断定も否定もせず、数値0の意味（音量・loop・分類・slot）はcallee本体の証拠待ち。0x4A2CFDのAL=0・共通tailへの直行は既知のまま。
+[IMPACT] script playSE traceで通常dispatcher pathの第2引数をunknown扱いせずraw0と保持可能。一方でvtable+0x24の実callee、WAV/voice別名/探索、sound.dat duration、7名13参照の実再生失敗は引き続きVERIFYで、BGM resolver 0x4BDE40を流用しない。
+[GOLDEN DESIGNED/NOT RUN] 合法playSE呼出で正常音源と既報7不一致名、args/可聴結果・画面進行を旧原作と新strictで比較。内部EDIだけ合法観測不可ならINELIGIBLE。原作Gameplay PASS0/new strict MATCH0。
+[NEXT] 新たな保存済みmanager vtable/+0x24 callee、別path callerが出ればread-only crosswalkを行う。拒否済ZIP WAV比較・原本EXE処理は迂回せず、A正本その他owner/MASTER/REA/dev/Git非変更。
+
+ 
+## D-20261013-1209-01｜T017 sound.datの負の整数キー5種と同値重複キー1種（script metadata限定）
+[CONFIRMED-ORIGINAL-NORMALIZED-SOURCE] 正規化ver0.67 a_default/script/sound.dat（556行）をDesktop Commander Local Compact read_fileで全読し、コメント/括弧を除いた単純な「key = signed_integer」行を軽量JSで分類。整数指定のraw行449件・keyのcase-insensitive distinct448種（厳密な全文native parserではない）。既存D-20261013-0436-01の正の時間key443種は再発見として加算しない。新増分は非正値および重複キーのraw宣言である。
+[EXACT NEGATIVE LOCATIONS] sound.dat:345 sen_ka_kazekiri04a=-100、:346 sen_ka_kazekiri04b=-100、:347 sen_ka_kazekiri04c=-100、:351 sen_fa_muchi01=-100、:357 meka_ge_tokei_h01b=-100。負値はこの5行のみ、zero指定0（この限定単純整数行の範囲）。正値は残444宣言行・443 distinct keyとなり、旧sound key数443と数字上一致するが、以前の監査器が負値をどう扱ったかは未調査。
+[EXACT DUPLICATE] sound.dat:194 と:374 に mecha23_c=500 が各1件（同名2行、同値500、現時点で値競合なし）。同名重複のparser first/last・casefoldやduration登録の意味はnative caller不明。二回発音する、またはエラーになるとは断定しない。
+[IMPACT / REIMPLEMENT] soundの原文宣言順と符号付きinteger値を保持し、負値を自動で0/100等にclampしない、重複キーを黙って消したうえで原文痕跡を失わない。Native sound resolver/SE manager vtable+0x24がsound.datの-100をどの場面で読むか・時間幅をどう変換するか、playSE文字列からfileへの解決、どのraw keyが使用されるかはVERIFY。作者意図/実可聴効果・silent/error・AudioStateはNOT OBSERVED。
+[GOLDEN DESIGNED/NOT RUN] 合法scriptで上記5 SE名が実際に発行されるか静的到達性を別評価、到達可能ケースで原作と新エンジンの音声継続/待ち時間/次命令までの経過/再生可否を比較。mecha23_cも合法イベントで比較。旧EXE Gameplay actual PASS0／新strict MATCH0、内部onlyならINELIGIBLE。
+[NEXT] D保存の現在使用SE名との符号付きmetadata照合（別名/fallbackは未確定）、T006側parser/SE manager正規証拠をread-only参照して-100評価consumerを調査する。拒否済ZIP WAV個別再検査は再試行・別ツール迂回しない。禁止T030_RTS_PRODUCTION_GRAPH.tsv、原本EXE/ZIP/snapshot、MASTER/T018/他レーン/REA/dev_lab/Work/Remote/Git/automationに変更なし。
+[STATUS] D owner追記後readbackとevidence/LANE_D_HANDOFF.mdへ同ID独立登録を確認した場合のみREADY-SOURCE-SIGNED-META。数449/448/5/1は原作動的試験数ではない。ID日時はrun開始時刻JST12:09、発見瞬間の実測ではない。
+
+
+### T017 D-20261013-1209-01 追加の参照到達性確認（同一研究IDへの増補・新規READYは増やさない）
+[CONFIRMED-SOURCE-CALLSITE / DISTINCT FROM METADATA] normalized 590 DAT の許可済み軽量read-only searchを行い、sound.dat の raw -100 名5件は実際の script/skill 字面に登場することを確認。RTSskill.dat:975と30_スキル/F11_sword.dat:325に「sound = sen_ka_kazekiri04a,sen_ka_kazekiri04b,sen_ka_kazekiri04c」、30_スキル/F10_missile.dat:6392に「sound=meka_ge_tokei_h01b」、30_スキル/F10_missile_鞭.dat:16に「sound=sen_fa_muchi01」、102_ランダムイベント/randomev71-80.dat:552には「playSE(sen_fa_muchi01)」という有効原文字列がある。従って -100 は未参照の死んだ metadata キーだけではない。ただしskill.soundのnative解決とplaySE()の第1引数解決は同一calleeとは未確定、5件が旧実機で再生成功する保証もない。
+[CONFIRMED-DUPLICATE-KEY-USE] sound.dat:194/:374 の同値500キー mecha23_c には本編 2000_勢力ストーリー/po25_event.dat:2758 の明示 playSE(mecha23_c)、30_スキル/F20_summon.dat:8384 の sound=mecha23_c が別途存在。mecha23_c_min等の類似名と混同しない。raw重複が実再生時間へ影響するかは同値のため原作観測で区別できない可能性がある。
+[VERIFY/GOLDEN] 参照文字列の存在・宣言値だけをSOURCE確定とする。ゲーム内Skill自動使用/イベント合法到達/SEファイル成功、-100 special変換、実sound manager、再生時間・イベントwaitはすべてVERIFY。旧EXE Gameplay actual PASS0、新strict MATCH0。前回WAV ZIP詳細比較の安全拒否は再実行しない。
+
+ 
+## D-20261013-1634-01 — T017未一致playSE 7代表場面の表示/待機隣接命令と合法Golden入口（SOURCE-ADJACENCY）
+[SCOPE/EXISTING] D既知D-20261013-0436-01で全script簡易regexのplaySE未一致7ID/13call、sound.dat key別、asset物理stem候補を保存済み。本増分は当該7IDの代表原文callsiteを直接読んで前後の表示・待機と命令大小表記を整理したもの。全13 callsiteを再調査したわけではなく、既知件数・manifest欠落やcalleeを再READY加算しない。
+[SOURCE CASE 1] 2000_勢力ストーリー/po22_event.dat:1521 は「PlaySE(intercom_nettori)」（先頭P大文字）→msg(ピーンポーン（ねっとり）)→wait(20)→chat→PlaySE(open1919)。同:4082の「playSE(betya)」→wait(20)→chat/choice前段。大小文字PのVM受理、scene到達は未実機/VERIFY。
+[SOURCE CASE 2] po33_event.dat:583 は「playSE(basya)」→馬車のmsg→stopbgm→playBGM→shake、2001_イベント_ボス/EB_5151_古代アステカ王国.dat:444 は「playSE(horror)」→msg→wait(100)。2023_イベント_リュージ騎士団/po23_event_17_C.dat:143は「playSE(dakituki)」→shake(25)→msg→後続playSE(hit_s11_b_sono2)。各効果音と明示画面命令は独立script commandで、sound failure時のVM副作用は未確定。
+[SOURCE CASE 3] 2023_イベント_リュージ騎士団/po23_event_12_ED_B_B.dat:213 は dialog(kageru,雨雲の禍)→wait(35)→playSE(rain_1)→wait(25)→ナレーション。43_内政_教育/ev06_sadou.dat:338 は分岐内 playSE(sosogu)→wait(40)→msg。両IDにsound.dat整数key=800があり物理media stemには未一致という既存D§0436知見の再利用。raw 800を実SE durationと断定しない。
+[NEW DELTA/TEST ENTRY] 上記7代表は通常story/education/eventスクリプトの台詞やUI命令に挟まっており、デバッグ専用名の一覧だけではない。原作実機で合法到達する場合、(a) script command発火、(b) SE virtual callee、(c) asset選択/発音、(d)独立wait・message進行を別々に採取する自然fixtureがある。playSE失敗で必ず続行、音が絶対に鳴らない、イベント到達保証は主張しない。
+[EXISTING NATIVE SEPARATION] 既存D-20261013-0835-02と0933-03ではplaySEはmanager virtual +0x24を使い通常第2引数0、handler AL戻りを上書きするが、callee実体と例外時のVM続行はVERIFY。BGM resolver 0x4BDE40をSEへ流用しない。音量0 BGM loopと同原因に結合しない。
+[GOLDEN DESIGNED/NOT RUN] 正規UIで辿れる上記物語場面だけ、直前後の会話/待ち時間/可聴SE・他の正常SE対照候補open1919/hit_s11_b_sono2を比較。入場不可のsceneはINELIGIBLE、内部state観測不能も別報告。原作Gameplay actual PASS0、新strict MATCH0。
+[SAFETY/STATUS] D T017 owner本文とD Handoff同IDを保存再読できた場合のみ READY-SOURCE-EVENT-ADJACENCY。拒否済詳細ZIP/WAV比較、新EXE逆解析・元T030不完全生産TSV・以前の拒否payloadは再試行/別経路迂回しない。原本/T018/MASTER/他owner/rea_lab/dev_lab/Work/Git/Remote/MCP/schedule変更なし。
+
+## D-20261013-1732-03 — 負値sound -100のRTS技能実参照と、イベントplaySEの-100/1200別ID境界（T017）
+[CONFIRMED-ORIGINAL-NORMALIZED-SOURCE / NEW REACHABILITY CROSSWALK] 既存§D-20261013-1209-01で確認済みのsound.dat:345-347 sen_ka_kazekiri04a/b/c=-100、:351 sen_fa_muchi01=-100、:357 meka_ge_tokei_h01b=-100は、新しい値の発見ではない。今回は同ver0.67 normalized scriptの参照元をLocal Compact content search COMPLETED→代表原文直接読取で初めて結んだ。
+[SKILL REF / EXACT] 8000_RTSシナリオ/RTSskill.dat:975 はRTS突撃skillの sound=sen_ka_kazekiri04a,sen_ka_kazekiri04b,sen_ka_kazekiri04c を列挙。30_スキル/F20_summon.dat:1873の skill yari_swing_pr1 も sound=sen_ka_kazekiri04b,sen_ka_kazekiri04c。32_ボススキル/B_25_ジトメ秘密教団.dat:3225、31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat:15062 は sound=meka_ge_tokei_h01b。前者のフィールドsoundとscript命令playSEは同一APIだと断定しない。
+[EVENT-SPECIFIC NAME CONTRAST] sound.dat:354 は別名 sen_fa_muchi01_ev=1200 と明記。102_ランダムイベント/randomev71-80.dat:552は playSE(sen_fa_muchi01)（raw -100 key名）、対照randomev51-60.dat:574,577,580は playSE(sen_fa_muchi01_ev)（raw 1200 key名）をwait(30/40/30)・shake(10)と交互に使用。単なる同一aliasとして-100→1200正規化しない。参照名が異なる事実とnative SE時間/再生が異なる事実は別である。
+[SCOPED SEARCH / LIMIT] read-only normalized a_default/scriptで6 literalのor content searchはCOMPLETED（regex 135 match、context含む651結果行）。この数はsound.dat、comment、名前の部分一致(*_ev等)を含み、playSE実呼出件数/合法到達数ではない。上記代表原文のみ個別readbackでCONFIRMED。技能の有効継承/再生タイミング・RTS生成後効果、sound=-100の意味、playSEとsoundのduration共通化、physical WAV解決は全てVERIFY。
+[IMPLEMENT / GOLDEN NOT RUN] skill.sound raw ID→SE metadata key→manager実calleeと、event playSE raw ID→時間設定→次命令wait/画面/発音を別trace。合法なRTS突撃skill使用とランダムイベントの該当2場面で可聴・終了/重畳・中断・待機を旧原作/new strict対照。actual Gameplay old PASS0、新strict MATCH0。任意発動/不可視内部のみならINELIGIBLE。
+[OWNER / NEXT / SAFETY] 次はT017 native SE vtable+24からsound metadataが読まれる条件、T015 master0 BGM transportとの独立性を保存済み証拠のみで検証。既存sound.dat raw負値数5は二重READY計上しない。禁止T030不完全TSV・拒否済EXE process/ZIP WAV個別再集計を使わず迂回しない。D担当T017 ownerとHandoff各保存後readbackまでNOT READY、MASTER/T018/他レーン/REA/dev_lab/原本/Git/Remote/MCP/automation非編集。
+
+## D-20261013-1952-03 — 大文字PlaySE/PlayBGMの主command解決とSE直前未知erase誤記の実行境界（T017）
+[NEW CROSS-LANE READONLY JOIN / ORIGINAL SOURCE] normalized a_default/script/2000_勢力ストーリー/po22_event.dat:1518-1530 はuppercase PlaySE(intercom_nettori)→msg→wait20→uppercase PlaySE(open1919)→wait20→uppercase PlayBGM(するめ大学神社)→volume(35)。D既存D-20261013-1634-01ではuppercase command登録への到達をVERIFYにしていた。今回A所有readonly exe/T006_TARGET_DISPATCH.md:command registry節とcase-insensitive canonicalization/unknown-command挙動、exe/T006_OPCODE_HANDLERS.tsv:playSE opcode33→0x4A2CD4、およびexe/T006_AUDIO_COMMAND_GROUP.txt 0x4A2CD4..4A2CFFを直接照合し、upper/lower表記を別API種別に分類して音声命令を脱落させない根拠を補強。
+[CONDITIONAL DISPATCH / SCOPE] target主command名をcase-insensitive canonicalizeする既存Aのnative契約が上記原文の命令nodeにも同様に適用される条件下で、PlaySEはlowercase playSEと同じopcode33/script handlerへ進み、manager virtual+0x24(通常第2引数0)を呼び、その戻り値を局所AL0で上書きする。uppercaseそれ自体を「未知APIで再生せず」と扱わない。ただし原作script parse/command nodeの実到達、物理WAV intercom_nettori欠落のresolver結果、イベント会話進行・実可聴、PlayBGM uppercaseのコーデック成功は別途VERIFY。D既存の7 ID/13 callやAのcasefold発見自体を新READYとして再計上しない。
+[VISUAL/SE ADJACENCY / NON-READY DYNAMIC] 同sourceとは別のnormalized 102_ランダムイベント/randomev71-80.dat:550-553はmsg→eras()→playSE(sen_fa_muchi01)→msg。A所有T006はeras()を未登録commandとしてcleanup/no-op扱いと静的確定。D既存1732-03のsound.dat:351 sen_fa_muchi01=-100を接続すると、本イベントでは前画面eraseを成功したものと見なしてSE/次msgの合成画面を保証してはいけない。実際の画面残留/同時音声はVERIFY。一方randomev51-60.dat:574..580は別名playSE(sen_fa_muchi01_ev) raw1200で、shake10/wait30/40/30があり、正規対照になる。新増分は実際のイベント文脈でAPI casefoldとUNKNOWN commandの前後境界を同時に固定した点。
+[REIMPLEMENT / GOLDEN NOT RUN] event traceに {raw command spelling, normalized command name, opcode, argument raw, SE manager virtual call, asset resolution, wait/erase/video state}を別列で記録。po22のupper/lower音命令/会話waitとrandomev71-80のeras→SE→msgを合法UI観測、randomev51-60をSE名別対照。未知commandをfatal/無条件eraseへ修正せず、Uppercaseをsilentとみなさない。原作Gameplay PASS0・新strict MATCH0、非法的scene注入はgoldenとして扱わない。
+[NEXT/SAFETY] T017 SE virtual+0x24の実path/time lookupはA/T006新しい合法保存根拠待ち。T015音量0/focusとT030 2v2/MPは別。owner本資料とLANE_D_HANDOFF同IDの追加・readback後のみ限定STATIC READY。過去拒否のZIP内WAV比較/EXE process/不完全T030_RTS_PRODUCTION_GRAPH.tsvとそのpayloadは再使用・別経路迂回しない。MASTER/T018/他owner/REA/dev_lab/Work/Git/Remote/MCP/automation編集なし。
+
+
+## D-20261014-0038-01 | T017 | playSE非一致7 ID・13箇所の全source位置と対照イベント分岐（限定STATIC）
+[NEW DELTA / CONFIRMED-SOURCE] 既存D-20261013-0436-01の非一致7 ID/13 calls、D-1634-01の7代表callsiteは再集計・再発見としない。本回、許可済みnormalized 590 DATのread-only content search(10 matches: intercom_nettori4/betya2/rain_1 2/sosogu2)と各該当原文のread_file直接再読で、代表以外の6箇所を初めて確定した。検索結果は10 literal matches/70 context lines、not 70 calls。
+[EXACT PAIR LOCATIONS] 2000_勢力ストーリー/po22_event.dat:1521,1583 の PlaySE(intercom_nettori) は 44_内政_迫真の世紀/po22_kaiso.dat:1421,1483 と各同局所の erase→PlaySE→msg→wait(20)および後続open1919が一致。po22_event.dat:4082 playSE(betya) と po22_kaiso.dat:3295 は erase→playSE→wait(20)→chat→wait(60)→後続playSE(gusaa01_sono2) の局所一致。
+[SECONDARY PAIRS] 2023_イベント_リュージ騎士団/po23_event_12_ED_B_B.dat:213 と po23_event_12_ED_B_S.dat:214 の playSE(rain_1) は dialog→wait(35)→playSE→wait(25)→同文章msg×2 の局所一致。43_内政_教育/ev06_sadou.dat:338 と ev999_tyakai.dat:282 の playSE(sosogu) は picture2件→SE→wait(40)まで一致するが、次の出力が前者 msg(@eranda_student,...)、後者 chat(@eranda_student3,@fceranda_student3_sad,...) と相違。単純な完全シーンコピーとはしない。
+[COMPLETE LOCATION ACCOUNTING] 既報の singleton は po33_event.dat:583 basya、EB_5151_古代アステカ王国.dat:444 horror、po23_event_17_C.dat:143 dakituki。以上 4+2+2+2+1+1+1=13 literal callsites/7 raw names（前回既知総数の網羅位置化）。検索は正規化スクリプトの文字列面に限り、comment removal/native parse・合法経路可達性の全証明ではない。
+[IMPACT / VERIFY] 名前が一致しないイベントを単一代表fixtureへ圧縮せず、別context/複製イベントの発音・wait・メッセージ（teaではmsg/chat差）を分離。大文字PlaySEのdispatchは既知D1952-03/A T006の条件付き証拠を再利用するだけ。SE vtable+24実callee、sound.dat値800、物理asset探索・再生可否、同じ局所原文が同一合法runで発火することはすべてVERIFY、欠落silent/errorや原作bug確定禁止。
+[GOLDEN DESIGNED NOT RUN] 合法旧ゲームUIで po22本編対po22_kaiso、雨B_B対B_S、茶会ev06対ev999を選択・到達できた組だけ、発音/メッセージ差・wait/scene進行・その後の正常SEをold/new同入力で採取。不可達組はINELIGIBLE。旧Gameplay PASS0、新strict MATCH0。
+[NEXT / STATUS / SAFETY] 次はSE manager vtable+24の正規保存native証拠が新規に得られた場合だけ物理resolver/negative duration readerを追う。禁止T030_RTS_PRODUCTION_GRAPH.tsv/拒否済EXE・ZIP WAV詳細・拒否済T015 D2335本文は一切再使用・迂回しない。D所有本文保存後readback＋LANE_D_HANDOFF同ID追記readbackの両方成功時に限定READY-STATIC-SOURCE-CALLSITE。MASTER cp130公式479(D91)へのE統合・原作実機確認は未実施。MASTER/T018/他レーン/REA/dev_lab/Work/Git/Remote/MCP/automation非変更。
+
+## D-20261014-0233-02 — RTS 9 DATの直接audio-commandゼロとskill.sound有効宣言20件の境界（T017）
+[CONFIRMED SOURCE / SCOPE] 既存normalized a_default/script/8000_RTSシナリオ配下9 DAT（RTSbuilding/class/easymode/enemybuild/new/powerspot/scenario/skill/summon）をLocal Compactでread-only全量取得。文字列前処理でblock/line commentを除いた範囲をcase-insensitive簡易syntax検索すると、有効playSE/playBGM/loopBGM/stopBGM/volume/isWorldMusicStop/isGameClear関数呼出は9 DAT合計0件。RTSscenario.datの既報30曲loopBGMとvolume(40)はblock commentなので数えない。これは完全native parserや動的呼出の不在証明ではない。
+[CONFIRMED PROPERTY / NEW COUNT] 同9 DAT内のコメント外で行頭sound=有効raw propertyは20行：RTSskill.dat 6件（245 tm2_mind000、291 tm2_coin000、333 tm2_mind000、637 @、731 bom01、973 sen_ka_kazekiri04a/b/c）、RTSsummon.dat 14件（8/29 tm2_sonic005、483/495/508/521/534/547/560/573/586/737/753/833 power20）。他7 DATでは0件。この20はraw property行数であり音声種類、再生回数、生成Skill数ではない。
+[IMPACT / VERIFY] RTSにイベントplaySEやloopBGMの明示命令が無いことと、技能sound属性から実際にSEが鳴らないことは別。sound=@を実ファイル名と同一視せず、既報sound.datの-100設定/SE manager virtual+0x24とSkill.soundのruntime consumer同一性を未確認のまま保持。音量0ループ、BGM transport、物理WAV/OGG aliasと実可聴・Skill親継承はVERIFY。
+[GOLDEN / NOT RUN] 合法RTS起動直後BGMの有無とHQ召喚・戦闘SkillのSEを区別して旧新可聴/視覚traceを取得する。old Gameplay actual PASS0、新strict MATCH0。直接script構文の0件を実際の無音確定としない。
+[NEXT / SAFETY] 許可済み保存SE consumer根拠が増えた場合にsound属性からhandlerへの経路を再照合。過去拒否のZIP内WAV詳細比較/EXE process、T015 D2335 rejected本文、不完全T030_RTS_PRODUCTION_GRAPH.tsvは不使用・非迂回。MASTER/T018/他lane/rea_lab/dev_lab/Work/WRQ/Git/Remote/MCP/schedule非編集。D所有本文とHANDOFF同IDの別々のappend/readback両成功後のみ限定STATIC READY。

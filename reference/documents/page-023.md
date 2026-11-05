@@ -8,7 +8,7 @@
 
 文書検索結果は保存ファイル名、元パス・出典URI、題名、本文だけの一致の順で最大20件です。同じ区分内は回収台帳での初出順です。省略時は一致総数を表示します。全件の出典・制約は一覧または各詳細ページに掲載しています。研究ID・題名で絞り込めます。アドレス・所有者＋オフセット検索は従来の専用結果を返します。
 
-[前のページ](page-022.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md)
+[前のページ](page-022.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md) · [次のページ](page-024.md)
 
 - [WIKI_SKILL_DELAY_UNRESOLVED14_20261013.json](../../research/recovered/json_wiki1/reports/wiki/WIKI_SKILL_DELAY_UNRESOLVED14_20261013.json?plain=1#L1-L1) — `research/recovered/json_wiki1/reports/wiki/WIKI_SKILL_DELAY_UNRESOLVED14_20261013.json`
   回収状態 EXACT_BODY_AVAILABLE。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2248-L2248)。制約・訂正 14 unresolved help-delay cases with3-8 selected source clauses each, not whole source definitions/files; Dated authored static/parser/graph/fixture/test claims only; no new native execution, ABI/type certainty, correctness, READY, Golden, strict or legal-gameplay credit. Historical instructions inert. No linked target acquired/executed.
@@ -110,4 +110,404 @@
   本文 SHA256 `e9bfd03a694da65d84aebef65be7a0557ad5fb971d7e76baeb3966fc93b802c4`
   元パス <code>wiki/WIKI_WORK_STAGE_SMOKE_20261013.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2267-L2267)。
 
-[前のページ](page-022.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md)
+- [T005_CONTROL_KEYWORD_PROBE.txt](../../research/recovered/text_roles1/reports/exe/T005_CONTROL_KEYWORD_PROBE.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T005_CONTROL_KEYWORD_PROBE.txt`
+  回収状態 CONTENT_REVIEWED_ENCODING_VARIANT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2268-L2268)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `53111dafe09f8f6b1f1312dfdcf0b7c8ac3d616e5e3839c439fdafe9d723171f`
+  元パス <code>exe/T005_CONTROL_KEYWORD_PROBE.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2268-L2268)。
+
+- [T005_PARSER_TOKEN_NAMES.txt](../../research/recovered/text_roles1/reports/exe/T005_PARSER_TOKEN_NAMES.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T005_PARSER_TOKEN_NAMES.txt`
+  回収状態 CONTENT_REVIEWED_ENCODING_VARIANT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2269-L2269)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `bc62819838a8feb3487a9abb7528cb2d8a2e2b06af3d2bde226f1e575cca2a52`
+  元パス <code>exe/T005_PARSER_TOKEN_NAMES.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2269-L2269)。
+
+- [T005_PARSER_TOKEN_PROBE.txt](../../research/recovered/text_roles1/reports/exe/T005_PARSER_TOKEN_PROBE.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T005_PARSER_TOKEN_PROBE.txt`
+  回収状態 CONTENT_REVIEWED_ENCODING_VARIANT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2270-L2270)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `5af77a7db993ddf216493513210baf9ed8fd104a260fd9764282725c1a8a54cd`
+  元パス <code>exe/T005_PARSER_TOKEN_PROBE.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2270-L2270)。
+
+- [T005_SCENARIO_PROPERTY_SEMANTICS.txt](../../research/recovered/text_roles1/reports/exe/T005_SCENARIO_PROPERTY_SEMANTICS.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T005_SCENARIO_PROPERTY_SEMANTICS.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2271-L2271)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `b047f6c16a6227e3eee30c36d4971339a3f6494f0b2796fe4aba7cc5af3465ab`
+  元パス <code>exe/T005_SCENARIO_PROPERTY_SEMANTICS.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2271-L2271)。
+
+- [T005_SPECIAL_REGISTRY_LIST.txt](../../research/recovered/text_roles1/reports/exe/T005_SPECIAL_REGISTRY_LIST.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T005_SPECIAL_REGISTRY_LIST.txt`
+  回収状態 CONTENT_REVIEWED_ENCODING_VARIANT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2272-L2272)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `65497782c26dd14af1fac2f047beaed3a76eee8ea4d1381f434af10a1bf693e3`
+  元パス <code>exe/T005_SPECIAL_REGISTRY_LIST.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2272-L2272)。
+
+- [T006_AUDIO_CODEC_RESOLUTION.txt](../../research/recovered/text_roles1/reports/exe/T006_AUDIO_CODEC_RESOLUTION.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T006_AUDIO_CODEC_RESOLUTION.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2273-L2273)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `a95bc6d66a590e083cb0bdd3972dc0e0c82386bb23187bae0092ea5c6ee70a7f`
+  元パス <code>exe/T006_AUDIO_CODEC_RESOLUTION.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2273-L2273)。
+
+- [T006_ERASE_RTTI.txt](../../research/recovered/text_roles1/reports/exe/T006_ERASE_RTTI.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T006_ERASE_RTTI.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2274-L2274)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `775979b7c441a2e38ed2239258257bbd5036d6334b397884398eb8af3a2e45b6`
+  元パス <code>exe/T006_ERASE_RTTI.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2274-L2274)。
+
+- [T006_FONT_CONSTANTS.txt](../../research/recovered/text_roles1/reports/exe/T006_FONT_CONSTANTS.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T006_FONT_CONSTANTS.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2275-L2275)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `278dc3e38d31eb159260bfc83369217d7a6cca4bf9eba5c060120a2ee0ce20d2`
+  元パス <code>exe/T006_FONT_CONSTANTS.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2275-L2275)。
+
+- [T006_GAMECLEAR_RELATIVE_WRITER_SCAN.txt](../../research/recovered/text_roles1/reports/exe/T006_GAMECLEAR_RELATIVE_WRITER_SCAN.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T006_GAMECLEAR_RELATIVE_WRITER_SCAN.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2276-L2276)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `8f400d34c2a6bd6ab5749986e7df5e3f3df409b3734002b002f47a7cdc42dc96`
+  元パス <code>exe/T006_GAMECLEAR_RELATIVE_WRITER_SCAN.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2276-L2276)。
+
+- [T006_IMAGE_STRINGS.txt](../../research/recovered/text_roles1/reports/exe/T006_IMAGE_STRINGS.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T006_IMAGE_STRINGS.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2277-L2277)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `98889f5b35e699b86bf9418b7830accb82962c1f83af32658664bd68e411f3be`
+  元パス <code>exe/T006_IMAGE_STRINGS.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2277-L2277)。
+
+- [T006_LINK_RTTI.txt](../../research/recovered/text_roles1/reports/exe/T006_LINK_RTTI.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T006_LINK_RTTI.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2278-L2278)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `66a47b6e5842853f64c8c7b0f9f5dee1b095058e9a06ef097a545d85e50e539a`
+  元パス <code>exe/T006_LINK_RTTI.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2278-L2278)。
+
+- [T006_LOOPBGM_PROBE.txt](../../research/recovered/text_roles1/reports/exe/T006_LOOPBGM_PROBE.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T006_LOOPBGM_PROBE.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2279-L2279)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `1c2e0cb2bcec9b7778991c5df04a7efd322490d8eb8353e6a4deff6e86dd76bf`
+  元パス <code>exe/T006_LOOPBGM_PROBE.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2279-L2279)。
+
+- [T006_MSG_CORE_LITERALS.txt](../../research/recovered/text_roles1/reports/exe/T006_MSG_CORE_LITERALS.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T006_MSG_CORE_LITERALS.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2280-L2280)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `bfc878b9ee3a143ab5bd2391e953a03e02cf9845368c9c7c3a541c5056d91d32`
+  元パス <code>exe/T006_MSG_CORE_LITERALS.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2280-L2280)。
+
+- [T006_OGG_METADATA_PROBE.txt](../../research/recovered/text_roles1/reports/exe/T006_OGG_METADATA_PROBE.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T006_OGG_METADATA_PROBE.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2281-L2281)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `55bc80387e12598c3dd024578854eed084210d72c5d88d2749b665504f29defa`
+  元パス <code>exe/T006_OGG_METADATA_PROBE.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2281-L2281)。
+
+- [T006_SHOWCAMP_ALIAS_PROBE.txt](../../research/recovered/text_roles1/reports/exe/T006_SHOWCAMP_ALIAS_PROBE.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T006_SHOWCAMP_ALIAS_PROBE.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2282-L2282)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `9231dc3eb7e627440e3f1fd8bc67722ca50e1e604d76876d70b3b5aa1a07b288`
+  元パス <code>exe/T006_SHOWCAMP_ALIAS_PROBE.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2282-L2282)。
+
+- [T006_TITLE_RTTI.txt](../../research/recovered/text_roles1/reports/exe/T006_TITLE_RTTI.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T006_TITLE_RTTI.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2283-L2283)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `22355a8033f898f23bf20e044c5bbc3be81a64df3a1d2211d994ab68014de376`
+  元パス <code>exe/T006_TITLE_RTTI.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2283-L2283)。
+
+- [T006_UI_RTTI_PROBE.txt](../../research/recovered/text_roles1/reports/exe/T006_UI_RTTI_PROBE.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T006_UI_RTTI_PROBE.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2284-L2284)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `b4e9aeb05f725ddb9e7f012ec02d75a4c4f8aadb109be27a50d28a1390ea09f9`
+  元パス <code>exe/T006_UI_RTTI_PROBE.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2284-L2284)。
+
+- [T006_WORLD_GRAPH_STRINGS.txt](../../research/recovered/text_roles1/reports/exe/T006_WORLD_GRAPH_STRINGS.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T006_WORLD_GRAPH_STRINGS.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2285-L2285)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `f913c977f9a8f550c8f5941adf8a67bc8dcb583f28f8af57bf34e65a3293d1c9`
+  元パス <code>exe/T006_WORLD_GRAPH_STRINGS.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2285-L2285)。
+
+- [T009_CAPACITY_ABSOLUTE_REFS.txt](../../research/recovered/text_roles1/reports/exe/T009_CAPACITY_ABSOLUTE_REFS.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T009_CAPACITY_ABSOLUTE_REFS.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2286-L2286)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `4fe7b4b61f084559b0099e2175070c232a6a7494e99ee36e95095d8f1655d601`
+  元パス <code>exe/T009_CAPACITY_ABSOLUTE_REFS.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2286-L2286)。
+
+- [T009_REMAINING_SPECIAL_KEYS.txt](../../research/recovered/text_roles1/reports/exe/T009_REMAINING_SPECIAL_KEYS.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T009_REMAINING_SPECIAL_KEYS.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2287-L2287)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `7440d1baa7841852030467439aa576aafefa14c2d061fcc28e962983d4049942`
+  元パス <code>exe/T009_REMAINING_SPECIAL_KEYS.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2287-L2287)。
+
+- [T009_SPECIAL_KEY_XREFS.txt](../../research/recovered/text_roles1/reports/exe/T009_SPECIAL_KEY_XREFS.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T009_SPECIAL_KEY_XREFS.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2288-L2288)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `2b747e2280c29e8e738ebf2d3e5be312d2bdd46088d566144d0462e7ac994cd0`
+  元パス <code>exe/T009_SPECIAL_KEY_XREFS.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2288-L2288)。
+
+- [T010_RESETTIME_XREF.txt](../../research/recovered/text_roles1/reports/exe/T010_RESETTIME_XREF.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T010_RESETTIME_XREF.txt`
+  回収状態 CONTENT_REVIEWED_ENCODING_VARIANT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2289-L2289)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `1148d8884e90412cddbc27601f66c849102835e4b799030536756f8b812c6aa1`
+  元パス <code>exe/T010_RESETTIME_XREF.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2289-L2289)。
+
+- [T010_STORY_TARGET_STRING_SCAN.txt](../../research/recovered/text_roles1/reports/exe/T010_STORY_TARGET_STRING_SCAN.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T010_STORY_TARGET_STRING_SCAN.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2290-L2290)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `de2ce9e954595558566af53f4deb1cbfbd6b808da5d1f21676505b10f70ecf08`
+  元パス <code>exe/T010_STORY_TARGET_STRING_SCAN.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2290-L2290)。
+
+- [T011_PARSER_CLUSTER_STRINGS.txt](../../research/recovered/text_roles1/reports/exe/T011_PARSER_CLUSTER_STRINGS.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T011_PARSER_CLUSTER_STRINGS.txt`
+  回収状態 CONTENT_REVIEWED_ENCODING_VARIANT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2291-L2291)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `a92de609b28f61d6f1f9773a8c5f2cfc22965ea3d8dc120bf09e7dc45f7a7db5`
+  元パス <code>exe/T011_PARSER_CLUSTER_STRINGS.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2291-L2291)。
+
+- [T012_ADD2_PROBE.txt](../../research/recovered/text_roles1/reports/exe/T012_ADD2_PROBE.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T012_ADD2_PROBE.txt`
+  回収状態 CONTENT_REVIEWED_ENCODING_VARIANT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2292-L2292)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `8d4147bd7c27b2683ab32542b64b81555d16dbd0368ed0f6cb4517c3d53f4933`
+  元パス <code>exe/T012_ADD2_PROBE.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2292-L2292)。
+
+- [T012_CONSTANT_PROBE.txt](../../research/recovered/text_roles1/reports/exe/T012_CONSTANT_PROBE.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T012_CONSTANT_PROBE.txt`
+  回収状態 CONTENT_REVIEWED_ENCODING_VARIANT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2293-L2293)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `ae439b5d00fc48ae5cd0d8a7c7fd8b36b16b6f952be772cf11368ed2b12379e3`
+  元パス <code>exe/T012_CONSTANT_PROBE.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2293-L2293)。
+
+- [T012_SKILL_FIELD_XREFS.txt](../../research/recovered/text_roles1/reports/exe/T012_SKILL_FIELD_XREFS.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T012_SKILL_FIELD_XREFS.txt`
+  回収状態 CONTENT_REVIEWED_ENCODING_VARIANT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2294-L2294)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `013bee3eb7e51706a46473f6f75aeec3597cd1606033357a0e90c3a27d80ddeb`
+  元パス <code>exe/T012_SKILL_FIELD_XREFS.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2294-L2294)。
+
+- [T012_STATUS_REFS_CORRECTED.txt](../../research/recovered/text_roles1/reports/exe/T012_STATUS_REFS_CORRECTED.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T012_STATUS_REFS_CORRECTED.txt`
+  回収状態 CONTENT_REVIEWED_ENCODING_VARIANT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2295-L2295)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `d13bcdbc32305cb61ccfe963fe9c0cc27af9e291376a677559bc5705b7f761dc`
+  元パス <code>exe/T012_STATUS_REFS_CORRECTED.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2295-L2295)。
+
+- [T013_FIELD137_STRINGS.txt](../../research/recovered/text_roles1/reports/exe/T013_FIELD137_STRINGS.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T013_FIELD137_STRINGS.txt`
+  回収状態 CONTENT_REVIEWED_ENCODING_VARIANT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2296-L2296)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `34056e15c2c1d01299e1e412ade3083167cc8e1010fc690c92b2e9d6d12e013a`
+  元パス <code>exe/T013_FIELD137_STRINGS.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2296-L2296)。
+
+- [T013_POOL_VTABLE_NAMES.txt](../../research/recovered/text_roles1/reports/exe/T013_POOL_VTABLE_NAMES.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T013_POOL_VTABLE_NAMES.txt`
+  回収状態 CONTENT_REVIEWED_ENCODING_VARIANT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2297-L2297)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `2da4cd754a205e15089052bf676b93a7090a8b2f357cdfd679c1f89fa36dc6ee`
+  元パス <code>exe/T013_POOL_VTABLE_NAMES.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2297-L2297)。
+
+- [T013_STRING_BAND_6280.txt](../../research/recovered/text_roles1/reports/exe/T013_STRING_BAND_6280.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T013_STRING_BAND_6280.txt`
+  回収状態 CONTENT_REVIEWED_ENCODING_VARIANT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2298-L2298)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `f45bdfab04a59910982f49c8648e745aae5f23561ec6fc11d9b0e5b927cbced6`
+  元パス <code>exe/T013_STRING_BAND_6280.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2298-L2298)。
+
+- [T013_UNIT_STRING_BAND.txt](../../research/recovered/text_roles1/reports/exe/T013_UNIT_STRING_BAND.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T013_UNIT_STRING_BAND.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2299-L2299)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `fa5d7548d13242e34df4eb86a5cb320e14dd43c67c6e928d76bca9c59fe09be3`
+  元パス <code>exe/T013_UNIT_STRING_BAND.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2299-L2299)。
+
+- [T014_ENTITY_MARKERS.txt](../../research/recovered/text_roles1/reports/exe/T014_ENTITY_MARKERS.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T014_ENTITY_MARKERS.txt`
+  回収状態 CONTENT_REVIEWED_ENCODING_VARIANT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2300-L2300)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `30a87a900357c495ff0d9ee99e1272c46aa3948d5865d5e5e5e6366964264f05`
+  元パス <code>exe/T014_ENTITY_MARKERS.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2300-L2300)。
+
+- [T014_GLOBAL_API_EXACT.txt](../../research/recovered/text_roles1/reports/exe/T014_GLOBAL_API_EXACT.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T014_GLOBAL_API_EXACT.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2301-L2301)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `0d7ce3f1c35cde64fa5d5fcd0f2b9acdfd51178058be0db603817137c6d9af4b`
+  元パス <code>exe/T014_GLOBAL_API_EXACT.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2301-L2301)。
+
+- [T014_SAVE_MARKERS.txt](../../research/recovered/text_roles1/reports/exe/T014_SAVE_MARKERS.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T014_SAVE_MARKERS.txt`
+  回収状態 CONTENT_REVIEWED_ENCODING_VARIANT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2302-L2302)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `8487eb0d85bacfa2b7ba532fe206cce62200f496ff47c3496ee176b7d76cac90`
+  元パス <code>exe/T014_SAVE_MARKERS.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2302-L2302)。
+
+- [T014_SAVE_PTRS.txt](../../research/recovered/text_roles1/reports/exe/T014_SAVE_PTRS.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T014_SAVE_PTRS.txt`
+  回収状態 CONTENT_REVIEWED_ENCODING_VARIANT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2303-L2303)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `66121d01df5c611759a6736140e35647e56fb3757a5b6943dde7627ab35ba04d`
+  元パス <code>exe/T014_SAVE_PTRS.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2303-L2303)。
+
+- [T014_TAIL_GLOBALS_PROBE.txt](../../research/recovered/text_roles1/reports/exe/T014_TAIL_GLOBALS_PROBE.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T014_TAIL_GLOBALS_PROBE.txt`
+  回収状態 CONTENT_REVIEWED_ENCODING_VARIANT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2304-L2304)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `79f3cc06b62f212e2e7a6bef2347ef99dd232cc915036fc11b1336b2c89d6f20`
+  元パス <code>exe/T014_TAIL_GLOBALS_PROBE.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2304-L2304)。
+
+- [T014_TAIL_STRING_PROBE.txt](../../research/recovered/text_roles1/reports/exe/T014_TAIL_STRING_PROBE.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T014_TAIL_STRING_PROBE.txt`
+  回収状態 CONTENT_REVIEWED_ENCODING_VARIANT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2305-L2305)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `16793febfabba107e472d171b12853bbba6c7c3a314722f8282e1b06b30b646c`
+  元パス <code>exe/T014_TAIL_STRING_PROBE.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2305-L2305)。
+
+- [T014_VAR_HELPER_XREFS.txt](../../research/recovered/text_roles1/reports/exe/T014_VAR_HELPER_XREFS.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T014_VAR_HELPER_XREFS.txt`
+  回収状態 CONTENT_REVIEWED_ENCODING_VARIANT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2306-L2306)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `3ff3da55db5583a8d98b8092b57acc790612a1ab33a01a010fc811bd95efbfd8`
+  元パス <code>exe/T014_VAR_HELPER_XREFS.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2306-L2306)。
+
+- [T015_JP_UI_STRINGS.txt](../../research/recovered/text_roles1/reports/exe/T015_JP_UI_STRINGS.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T015_JP_UI_STRINGS.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2307-L2307)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `eb3a95316b4fb62fe4d4e8983098271d3d9183c7c4b32597ade665ab5232787b`
+  元パス <code>exe/T015_JP_UI_STRINGS.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2307-L2307)。
+
+- [T023_VERSION_CHRONOLOGY_2016_2017.txt](../../research/recovered/text_roles1/reports/exe/T023_VERSION_CHRONOLOGY_2016_2017.txt?plain=1#L1-L1) — `research/recovered/text_roles1/reports/exe/T023_VERSION_CHRONOLOGY_2016_2017.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_AT_BASELINE_2266。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2308-L2308)。制約・訂正 Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+  本文 SHA256 `bb02274c80923d7fc82d87805744e9350982de7ef37348d2c44fd2059e04a6a0`
+  元パス <code>exe/T023_VERSION_CHRONOLOGY_2016_2017.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2308-L2308)。
+
+- [T004_ANCHOR_XREFS.txt](../../research/recovered/text_roles2/data/T004_ANCHOR_XREFS.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T004_ANCHOR_XREFS.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2309-L2309)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Inventory role is preserved; not an independent new finding.
+  本文 SHA256 `2369078e866e361fa0ba3bd0d036edcd98a936acc3ee93220aa3ed7a0c8869bc`
+  元パス <code>exe/T004_ANCHOR_XREFS.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2309-L2309)。
+
+- [T005_STRING_GLOBAL_MAP.txt](../../research/recovered/text_roles2/data/T005_STRING_GLOBAL_MAP.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T005_STRING_GLOBAL_MAP.txt`
+  回収状態 CONTENT_REVIEWED_ENCODING_VARIANT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2310-L2310)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Inventory role is preserved; not an independent new finding.
+  本文 SHA256 `39d24d446b77d936df05421b07efe3608926091144bcf78f4931ff832f8eadea`
+  元パス <code>exe/T005_STRING_GLOBAL_MAP.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2310-L2310)。
+
+- [T006_ARG_RTTI_NAMES.txt](../../research/recovered/text_roles2/data/T006_ARG_RTTI_NAMES.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T006_ARG_RTTI_NAMES.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2311-L2311)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result.
+  本文 SHA256 `c2126ab41b84da770630872d705eb972e255751c9d350fbfe293096de7ffe6ec`
+  元パス <code>exe/T006_ARG_RTTI_NAMES.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2311-L2311)。
+
+- [T006_DIALOG_BG_STRINGS.txt](../../research/recovered/text_roles2/data/T006_DIALOG_BG_STRINGS.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T006_DIALOG_BG_STRINGS.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2312-L2312)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Inventory role is preserved; not an independent new finding.
+  本文 SHA256 `43a04f4e8cedee3e78997db7952a290d6776a72dad80c68f94437cad450f3357`
+  元パス <code>exe/T006_DIALOG_BG_STRINGS.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2312-L2312)。
+
+- [T006_DOSKILL_CONSTANT_LITERAL_PROBE.txt](../../research/recovered/text_roles2/data/T006_DOSKILL_CONSTANT_LITERAL_PROBE.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T006_DOSKILL_CONSTANT_LITERAL_PROBE.txt`
+  回収状態 CONTENT_REVIEWED_ENCODING_VARIANT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2313-L2313)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Inventory role is preserved; not an independent new finding.
+  本文 SHA256 `73b12fa640c2a874af13a942b709028ae3dd083f04dccce305682de3e2700f05`
+  元パス <code>exe/T006_DOSKILL_CONSTANT_LITERAL_PROBE.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2313-L2313)。
+
+- [T006_MIDI_GUID_PROBE.txt](../../research/recovered/text_roles2/data/T006_MIDI_GUID_PROBE.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T006_MIDI_GUID_PROBE.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2314-L2314)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Inventory role is preserved; not an independent new finding.
+  本文 SHA256 `33b60d0870049f0118bb51c05f08dd97fef402a42a2c1c54cad763de9a821efd`
+  元パス <code>exe/T006_MIDI_GUID_PROBE.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2314-L2314)。
+
+- [T006_OPCODE11_NAME_LITERALS.txt](../../research/recovered/text_roles2/data/T006_OPCODE11_NAME_LITERALS.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T006_OPCODE11_NAME_LITERALS.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2315-L2315)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Inventory role is preserved; not an independent new finding.
+  本文 SHA256 `f65c445c0d3815dd00d531cdb2ca914d50d45dd1176cd7c79817c1ef46782972`
+  元パス <code>exe/T006_OPCODE11_NAME_LITERALS.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2315-L2315)。
+
+- [T006_OPCODE11_NAME_OBJECTS.txt](../../research/recovered/text_roles2/data/T006_OPCODE11_NAME_OBJECTS.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T006_OPCODE11_NAME_OBJECTS.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2316-L2316)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result.
+  本文 SHA256 `91d3f17ad2a2aeee6433dc3567a7ec6df4d286098b751d1abc881d13871458f5`
+  元パス <code>exe/T006_OPCODE11_NAME_OBJECTS.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2316-L2316)。
+
+- [T006_SELECT_LITERALS.txt](../../research/recovered/text_roles2/data/T006_SELECT_LITERALS.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T006_SELECT_LITERALS.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2317-L2317)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Inventory role is preserved; not an independent new finding.
+  本文 SHA256 `fe0d5727d2d2065781d8787a88c5f26bd415320011172d11f7ab442bef5ca802`
+  元パス <code>exe/T006_SELECT_LITERALS.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2317-L2317)。
+
+- [T006_SELECT_LITERAL_BYTES.txt](../../research/recovered/text_roles2/data/T006_SELECT_LITERAL_BYTES.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T006_SELECT_LITERAL_BYTES.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2318-L2318)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result.
+  本文 SHA256 `8eadef58c8105e3a1d5eda3ad7de81cfc3ce55a7ac38bc857880f847488e8c27`
+  元パス <code>exe/T006_SELECT_LITERAL_BYTES.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2318-L2318)。
+
+- [T006_VTABLE_NAME_PROBE.txt](../../research/recovered/text_roles2/data/T006_VTABLE_NAME_PROBE.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T006_VTABLE_NAME_PROBE.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2319-L2319)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Inventory role is preserved; not an independent new finding.
+  本文 SHA256 `b344480ec028cc34f67fc20f156ead986c11ba89191f3183e849300b85209787`
+  元パス <code>exe/T006_VTABLE_NAME_PROBE.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2319-L2319)。
+
+- [T006_WIN_SEMANTICS.txt](../../research/recovered/text_roles2/data/T006_WIN_SEMANTICS.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T006_WIN_SEMANTICS.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2320-L2320)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result.
+  本文 SHA256 `221d0f54f642cbf1676827147ac13e7c821ea30b82224d56ac5561aace09fddb`
+  元パス <code>exe/T006_WIN_SEMANTICS.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2320-L2320)。
+
+- [T010_COUNTER_XREFS.txt](../../research/recovered/text_roles2/data/T010_COUNTER_XREFS.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T010_COUNTER_XREFS.txt`
+  回収状態 CONTENT_REVIEWED_ENCODING_VARIANT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2321-L2321)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result.
+  本文 SHA256 `767540246e87836c430492561aaf9b694e71d1626e0f0f98c06ea449ea2494fd`
+  元パス <code>exe/T010_COUNTER_XREFS.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2321-L2321)。
+
+- [T010_FINISH_LITERALS.txt](../../research/recovered/text_roles2/data/T010_FINISH_LITERALS.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T010_FINISH_LITERALS.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2322-L2322)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result.
+  本文 SHA256 `32720995b77416a398ab686547bf2f59b39ab901d58550d9a649f3849593c721`
+  元パス <code>exe/T010_FINISH_LITERALS.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2322-L2322)。
+
+- [T010_RESULT_LITERALS.txt](../../research/recovered/text_roles2/data/T010_RESULT_LITERALS.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T010_RESULT_LITERALS.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2323-L2323)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Inventory role is preserved; not an independent new finding.
+  本文 SHA256 `70ca5c13956af32f79cbd1460b2a6947c2c075601c2edbb74c56944314bef977`
+  元パス <code>exe/T010_RESULT_LITERALS.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2323-L2323)。
+
+- [T011_RTTI_NAMES.txt](../../research/recovered/text_roles2/data/T011_RTTI_NAMES.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T011_RTTI_NAMES.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2324-L2324)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Inventory role is preserved; not an independent new finding.
+  本文 SHA256 `5a2f55b1cf3d085acd5560a198e086895e8f531cef259d1f37a9a2db69e164d4`
+  元パス <code>exe/T011_RTTI_NAMES.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2324-L2324)。
+
+- [T011_UNIT_EFFECT_RING_INIT_4DFB00_NATIVE_20261013.txt](../../research/recovered/text_roles2/data/T011_UNIT_EFFECT_RING_INIT_4DFB00_NATIVE_20261013.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T011_UNIT_EFFECT_RING_INIT_4DFB00_NATIVE_20261013.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2325-L2325)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result.
+  本文 SHA256 `a8aaaddd8f40e30e36348ddef1e204a8e77cb3fcee6c3a91fb268f1d327ef12d`
+  元パス <code>exe/T011_UNIT_EFFECT_RING_INIT_4DFB00_NATIVE_20261013.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2325-L2325)。
+
+- [T012_AFTERDEATH_FLAG_REFS.txt](../../research/recovered/text_roles2/data/T012_AFTERDEATH_FLAG_REFS.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T012_AFTERDEATH_FLAG_REFS.txt`
+  回収状態 CONTENT_REVIEWED_ENCODING_VARIANT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2326-L2326)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result.
+  本文 SHA256 `7f201178cc0bf92283588b11bd20ad7d338507aa7042ea68c90347f7a5d349b0`
+  元パス <code>exe/T012_AFTERDEATH_FLAG_REFS.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2326-L2326)。
+
+- [T012_AFTERHIT_OFFSET_REFS.txt](../../research/recovered/text_roles2/data/T012_AFTERHIT_OFFSET_REFS.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T012_AFTERHIT_OFFSET_REFS.txt`
+  回収状態 CONTENT_REVIEWED_ENCODING_VARIANT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2327-L2327)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result.
+  本文 SHA256 `a6b570a2603424344fe440ace746b60cc0a9ec602155afcf379af0f36c9b8b0d`
+  元パス <code>exe/T012_AFTERHIT_OFFSET_REFS.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2327-L2327)。
+
+- [T012_ATTR_TABLES.txt](../../research/recovered/text_roles2/data/T012_ATTR_TABLES.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T012_ATTR_TABLES.txt`
+  回収状態 CONTENT_REVIEWED_ENCODING_VARIANT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2328-L2328)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Inventory role is preserved; not an independent new finding.
+  本文 SHA256 `a08fccf35919c44164ea4c5e4f7a7fd068e2fd491b2bc70a59d6bd8dccf73e4e`
+  元パス <code>exe/T012_ATTR_TABLES.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2328-L2328)。
+
+- [T012_DAMAGE_CORE_CALLERS.txt](../../research/recovered/text_roles2/data/T012_DAMAGE_CORE_CALLERS.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T012_DAMAGE_CORE_CALLERS.txt`
+  回収状態 CONTENT_REVIEWED_ENCODING_VARIANT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2329-L2329)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Inventory role is preserved; not an independent new finding.
+  本文 SHA256 `b4c0e40792417639e1af93a8b26e2afcdeb52f4d9c39c487eda6fb45044ddb52`
+  元パス <code>exe/T012_DAMAGE_CORE_CALLERS.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2329-L2329)。
+
+- [T012_EFFECT_PRIORITY_QUEUE_4C3DC0_NATIVE_20261013.txt](../../research/recovered/text_roles2/data/T012_EFFECT_PRIORITY_QUEUE_4C3DC0_NATIVE_20261013.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T012_EFFECT_PRIORITY_QUEUE_4C3DC0_NATIVE_20261013.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2330-L2330)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result.
+  本文 SHA256 `7e3636d9f74d77cf232f0c9c204a53a2dc608103ef5ffc8ac2223f2b09a6a44a`
+  元パス <code>exe/T012_EFFECT_PRIORITY_QUEUE_4C3DC0_NATIVE_20261013.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2330-L2330)。
+
+- [T012_HEAL_CHILD_POOL_41E1D0_NATIVE_20261013.txt](../../research/recovered/text_roles2/data/T012_HEAL_CHILD_POOL_41E1D0_NATIVE_20261013.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T012_HEAL_CHILD_POOL_41E1D0_NATIVE_20261013.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2331-L2331)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result.
+  本文 SHA256 `a6851bb0424b356642d2e01ae78dec62b602927066ce35e0d5e5b5b46f43a32c`
+  元パス <code>exe/T012_HEAL_CHILD_POOL_41E1D0_NATIVE_20261013.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2331-L2331)。
+
+- [T012_HEAL_VECTOR_ERROR_5B5BBA_NATIVE_20261013.txt](../../research/recovered/text_roles2/data/T012_HEAL_VECTOR_ERROR_5B5BBA_NATIVE_20261013.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T012_HEAL_VECTOR_ERROR_5B5BBA_NATIVE_20261013.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2332-L2332)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result.
+  本文 SHA256 `c0888d0434131598f393901144b7d058e5df82bd7a39425ae8c04f9fdef5be41`
+  元パス <code>exe/T012_HEAL_VECTOR_ERROR_5B5BBA_NATIVE_20261013.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2332-L2332)。
+
+- [T012_POISON_NUMERIC_SLOWPATH_5BCF71_NATIVE_20261013.txt](../../research/recovered/text_roles2/data/T012_POISON_NUMERIC_SLOWPATH_5BCF71_NATIVE_20261013.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T012_POISON_NUMERIC_SLOWPATH_5BCF71_NATIVE_20261013.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2333-L2333)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result.
+  本文 SHA256 `1ec268ae5102bdbba955d9a2d406510acb55770999ec945d92f24db00eaa4842`
+  元パス <code>exe/T012_POISON_NUMERIC_SLOWPATH_5BCF71_NATIVE_20261013.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2333-L2333)。
+
+- [T012_REFRESH_TREE_ERASE_510850_NATIVE_20261013.txt](../../research/recovered/text_roles2/data/T012_REFRESH_TREE_ERASE_510850_NATIVE_20261013.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T012_REFRESH_TREE_ERASE_510850_NATIVE_20261013.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2334-L2334)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result.
+  本文 SHA256 `9e429bb6eec4d874a92b26ee84136ec601e342a356ed89f2174db7cd65cbb9e5`
+  元パス <code>exe/T012_REFRESH_TREE_ERASE_510850_NATIVE_20261013.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2334-L2334)。
+
+- [T012_REFRESH_TREE_RANGE_4E1FA0_NATIVE_20261013.txt](../../research/recovered/text_roles2/data/T012_REFRESH_TREE_RANGE_4E1FA0_NATIVE_20261013.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T012_REFRESH_TREE_RANGE_4E1FA0_NATIVE_20261013.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2335-L2335)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result.
+  本文 SHA256 `52bb126d922921baf1a7bdfe29d2e804c0f3808d52199fd8d0a9f1ec6ef555aa`
+  元パス <code>exe/T012_REFRESH_TREE_RANGE_4E1FA0_NATIVE_20261013.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2335-L2335)。
+
+- [T012_SPECIAL_CALLER_RTTI.txt](../../research/recovered/text_roles2/data/T012_SPECIAL_CALLER_RTTI.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T012_SPECIAL_CALLER_RTTI.txt`
+  回収状態 CONTENT_REVIEWED_ENCODING_VARIANT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2336-L2336)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Inventory role is preserved; not an independent new finding.
+  本文 SHA256 `d8748c945896abd78bcba00f8bbd23942caba39b94e722409711b4cc0153ba2f`
+  元パス <code>exe/T012_SPECIAL_CALLER_RTTI.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2336-L2336)。
+
+- [T013_A18_A1C_CALLBACK_MAP_20261012.txt](../../research/recovered/text_roles2/data/T013_A18_A1C_CALLBACK_MAP_20261012.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T013_A18_A1C_CALLBACK_MAP_20261012.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2337-L2337)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result. Callback predicate bodies explicitly were not acquired; registry metadata does not waive that boundary.
+  本文 SHA256 `65929313611043d035a27ef8783b0937d23639871f3e4062275ccfb5567aa665`
+  元パス <code>exe/T013_A18_A1C_CALLBACK_MAP_20261012.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2337-L2337)。
+
+- [T013_A18_SORT_SHUFFLE_20261011.txt](../../research/recovered/text_roles2/data/T013_A18_SORT_SHUFFLE_20261011.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T013_A18_SORT_SHUFFLE_20261011.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2338-L2338)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result.
+  本文 SHA256 `f765a8f3640b678c918aea3349257aa4f8934ea4dba995e69aa41d680a2d2cf8`
+  元パス <code>exe/T013_A18_SORT_SHUFFLE_20261011.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2338-L2338)。
+
+- [T013_CONFUSION_POOL_ROUTING.txt](../../research/recovered/text_roles2/data/T013_CONFUSION_POOL_ROUTING.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T013_CONFUSION_POOL_ROUTING.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2339-L2339)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result.
+  本文 SHA256 `de6764b2559984e9d18f75d87d955b512d73aac24d97939c1dcc822e4ed52d23`
+  元パス <code>exe/T013_CONFUSION_POOL_ROUTING.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2339-L2339)。
+
+- [T013_CONTEXT_STRING_BAND.txt](../../research/recovered/text_roles2/data/T013_CONTEXT_STRING_BAND.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T013_CONTEXT_STRING_BAND.txt`
+  回収状態 CONTENT_REVIEWED_ENCODING_VARIANT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2340-L2340)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Inventory role is preserved; not an independent new finding.
+  本文 SHA256 `d4703c1887fdd02109edae7f0f72352c4cc09dc6cb9150df7d1670665b9ccdc8`
+  元パス <code>exe/T013_CONTEXT_STRING_BAND.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2340-L2340)。
+
+- [T013_COOLDOWN_SUCCESSOR_20261013_0031.txt](../../research/recovered/text_roles2/data/T013_COOLDOWN_SUCCESSOR_20261013_0031.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T013_COOLDOWN_SUCCESSOR_20261013_0031.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2341-L2341)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result.
+  本文 SHA256 `36972bc44bbf05c7fe0608376207b6879217a1e40dd92151838285fe8785a1ae`
+  元パス <code>exe/T013_COOLDOWN_SUCCESSOR_20261013_0031.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2341-L2341)。
+
+- [T013_ELEMENT_HEAL_FILTER.txt](../../research/recovered/text_roles2/data/T013_ELEMENT_HEAL_FILTER.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T013_ELEMENT_HEAL_FILTER.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2342-L2342)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result.
+  本文 SHA256 `e3300e33932c09626cff21610dd3398e7d83a2e0324f4b3cc702b0e4972e9d4f`
+  元パス <code>exe/T013_ELEMENT_HEAL_FILTER.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2342-L2342)。
+
+- [T013_NORMAL_AI_THREE_BINDINGS_20261012_235935.txt](../../research/recovered/text_roles2/data/T013_NORMAL_AI_THREE_BINDINGS_20261012_235935.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T013_NORMAL_AI_THREE_BINDINGS_20261012_235935.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2343-L2343)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result.
+  本文 SHA256 `792909d99f997bb599d605f9c55c6c94255cde515199a459d0f5e68b16168554`
+  元パス <code>exe/T013_NORMAL_AI_THREE_BINDINGS_20261012_235935.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2343-L2343)。
+
+- [T013_POOL_RTTI_HIERARCHY.txt](../../research/recovered/text_roles2/data/T013_POOL_RTTI_HIERARCHY.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T013_POOL_RTTI_HIERARCHY.txt`
+  回収状態 CONTENT_REVIEWED_ENCODING_VARIANT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2344-L2344)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Inventory role is preserved; not an independent new finding.
+  本文 SHA256 `85ab8102581d56c6ff0fca16c75d171288fe4da8e79b887d3874936df11ccfef`
+  元パス <code>exe/T013_POOL_RTTI_HIERARCHY.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2344-L2344)。
+
+- [T013_RUSH_COPY_PREFIX_5500E0_NATIVE_20261013.txt](../../research/recovered/text_roles2/data/T013_RUSH_COPY_PREFIX_5500E0_NATIVE_20261013.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T013_RUSH_COPY_PREFIX_5500E0_NATIVE_20261013.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2345-L2345)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result.
+  本文 SHA256 `c3a0b96fd0855cce1c263ce27ed35bdcd0048cedd71d321b78906d9781ff889f`
+  元パス <code>exe/T013_RUSH_COPY_PREFIX_5500E0_NATIVE_20261013.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2345-L2345)。
+
+- [T013_RUSH_TASK_DETACH_4C22B0_NATIVE_20261013.txt](../../research/recovered/text_roles2/data/T013_RUSH_TASK_DETACH_4C22B0_NATIVE_20261013.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T013_RUSH_TASK_DETACH_4C22B0_NATIVE_20261013.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2346-L2346)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result.
+  本文 SHA256 `1322489f540c30c93e03c966469ceb839ba64818c0b08adc05df40dcbc6f4a2a`
+  元パス <code>exe/T013_RUSH_TASK_DETACH_4C22B0_NATIVE_20261013.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2346-L2346)。
+
+- [T013_RUSH_VECTOR_APPEND_550410_NATIVE_20261013.txt](../../research/recovered/text_roles2/data/T013_RUSH_VECTOR_APPEND_550410_NATIVE_20261013.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T013_RUSH_VECTOR_APPEND_550410_NATIVE_20261013.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2347-L2347)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result.
+  本文 SHA256 `fdf622f2dc78250fecb8a6a2692f15d7da4ec02388f650eca3673f98fc907692`
+  元パス <code>exe/T013_RUSH_VECTOR_APPEND_550410_NATIVE_20261013.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2347-L2347)。
+
+[前のページ](page-022.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md) · [次のページ](page-024.md)

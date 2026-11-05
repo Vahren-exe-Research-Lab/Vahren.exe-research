@@ -1,0 +1,13 @@
+@save VA=0062A6EF ptr_fileoffs= 
+.sav#1 VA=0062A6F8 ptr_fileoffs= 0013819D
+save#1 VA=0062A700 ptr_fileoffs= 001381A3
+auto save VA=0062A710 ptr_fileoffs= 001385C1,001385D8
+no save#1 VA=0062A71C ptr_fileoffs= 00138679
+@load VA=0062F32F ptr_fileoffs= 
+auto.sav VA=0062F338 ptr_fileoffs= 000CE90D
+.sav#2 VA=0062F344 ptr_fileoffs= 000CE94D
+save#2 VA=0062F34C ptr_fileoffs= 000CE953
+no auto save VA=0062F370 ptr_fileoffs= 000CEE59,000CEE6C
+no save#2 VA=0062F380 ptr_fileoffs= 000CEEB5,000CEEC5
+load* VA=00632BC0 ptr_fileoffs= 0008B0CB
+auto.sav#2 VA=00634F38 ptr_fileoffs= 0005F34C

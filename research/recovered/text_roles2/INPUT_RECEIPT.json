@@ -1,0 +1,26 @@
+{
+  "baseline": "5ab625346ef4bc32a6389d6236bc1e76e7a730d9",
+  "baseline_root_ledger_rows": 2266,
+  "baseline_ledger_sha256": "4ad456af97f85d964b74912e4eb60980b56cfbd0ec62d9fe5b014535d8cfbc5b",
+  "selection_sha256": "92341a92fa010631165982b04788a5f5e3fd8ed962a1c35a2257af162632c36d",
+  "selection_count": 192,
+  "selected_original_bytes": 6585472,
+  "current_pin_hash_size_matches": 192,
+  "source_stability_and_no_reparse_checks": "PASS192",
+  "accepted_origins": 57,
+  "unique_destinations": 57,
+  "deferred": 135,
+  "baseline_aliases": 0,
+  "within_batch_aliases": 0,
+  "states": {
+    "CONTENT_REVIEWED_EXACT": 37,
+    "CONTENT_REVIEWED_ENCODING_VARIANT": 19,
+    "CONTENT_REVIEWED_PRIVACY_VARIANT": 1
+  },
+  "accepted_source_bytes": 129668,
+  "saved_body_bytes": 110153,
+  "privacy_spans": 2,
+  "encoding_sources": 19,
+  "privacy_encoding_overlap": 0,
+  "network_native_execution_linked_expansion": false
+}

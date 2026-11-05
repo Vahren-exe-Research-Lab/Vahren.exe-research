@@ -1,0 +1,63 @@
+
+TABLE 0068D420
+0 0x629f24 hp
+1 0x629f28 mp
+2 0x629f2c attack
+3 0x629f34 defense
+4 0x629f3c magic
+5 0x629f44 magdef
+6 0x629f4c speed
+7 0x629f54 dext
+8 0x629f5c move
+9 0x629f64 hprec
+10 0x629f6c mprec
+11 0x629f74 poi
+12 0x629f78 para
+13 0x629f80 sil
+14 0x629f84 conf
+15 0x629f8c ill
+16 0x629f90 stone
+17 0x629f98 fear
+18 0x629fa0 all
+
+TABLE 0068D470
+0 0x629fa4 t_hpUp
+1 0x629fac t_mpUp
+2 0x629fb4 t_attackUp
+3 0x629fc0 t_defenseUp
+4 0x629fcc t_magicUp
+5 0x629fd8 t_magdefUp
+6 0x629fe4 t_speedUp
+7 0x629ff0 t_dextUp
+8 0x629ffc t_moveUp
+9 0x62a008 t_hprecUp
+10 0x62a014 t_mprecUp
+11 0x62a020 t_poisonUp
+12 0x62a02c t_paralysisUp
+13 0x62a03c t_silenceUp
+14 0x62a048 t_confusionUp
+15 0x62a058 t_illusionUp
+16 0x62a068 t_stoneUp
+17 0x62a074 t_fearUp
+18 0x62a080 t_allUp
+
+TABLE 0068D4C0
+0 0x62a088 t_hpDown
+1 0x62a094 t_mpDown
+2 0x62a0a0 t_attackDown
+3 0x62a0b0 t_defenseDown
+4 0x62a0c0 t_magicDown
+5 0x62a0cc t_magdefDown
+6 0x62a0dc t_speedDown
+7 0x62a0e8 t_dextDown
+8 0x62a0f4 t_moveDown
+9 0x62a100 t_hprecDown
+10 0x62a10c t_mprecDown
+11 0x62a118 t_poison
+12 0x62a124 t_paralysis
+13 0x62a130 t_silence
+14 0x62a13c t_confusion
+15 0x62a148 t_illusion
+16 0x62a154 t_stone
+17 0x62a15c t_fear
+18 0x62a164 t_allDown

@@ -1,0 +1,11 @@
+target=新約迫真戦記―ほのぼの神話ver0.67 豪華版/Vahren.exe
+b'LOOPSTART': count=0 offsets=[]
+b'LOOPLENGTH': count=0 offsets=[]
+b'LOOPEND': count=0 offsets=[]
+b'loopstart': count=0 offsets=[]
+b'looplength': count=0 offsets=[]
+b'vorbis': count=5 offsets=[2466256, 2466264, 2466272, 2466280, 2466332]
+OggOpen calls: 00501F5D->0x5be400, 00501F91->0x5d12e0, 00501FB7->0x5d0e90
+OggSeek calls: 00502015->0x5d0e90
+OggLoad calls: 0050202A->edx, 00502038->0x5d16c0, 00502060->0x5d0f70
+OggClose calls: 00501EC1->0x5cfe00, 00501ED8->0x5be400, 00501EEB->0x5be400

@@ -1,0 +1,17 @@
+VT 0x63a4bc SELF .?AVSimpleUnit@@ CHD 0x63f630 N 7
+0 0x63f750 .?AVSimpleUnit@@ contained 6 mdisp 0 pdisp -1 vdisp 0 attr 0x40
+1 0x63f660 .?AVUnit@@ contained 5 mdisp 0 pdisp -1 vdisp 0 attr 0x40
+2 0x63f714 .?AVChildOwner@@ contained 2 mdisp 0 pdisp -1 vdisp 0 attr 0x40
+3 0x63c410 .?AVChara@@ contained 1 mdisp 0 pdisp -1 vdisp 0 attr 0x40
+4 0x63c290 .?AVActionable@@ contained 0 mdisp 0 pdisp -1 vdisp 0 attr 0x40
+5 0x63f6c4 .?AVDamager@@ contained 0 mdisp 124 pdisp -1 vdisp 0 attr 0x40
+6 0x63f6a8 .?AVNoDeletedObject@@ contained 0 mdisp 140 pdisp -1 vdisp 0 attr 0x40
+VT 0x63a8e4 SELF .?AVSimpleStaticUnit@@ CHD 0x63fbd8 N 8
+0 0x63fc0c .?AVSimpleStaticUnit@@ contained 7 mdisp 0 pdisp -1 vdisp 0 attr 0x40
+1 0x63fc6c .?AVStaticUnit@@ contained 6 mdisp 0 pdisp -1 vdisp 0 attr 0x40
+2 0x63f660 .?AVUnit@@ contained 5 mdisp 0 pdisp -1 vdisp 0 attr 0x40
+3 0x63f714 .?AVChildOwner@@ contained 2 mdisp 0 pdisp -1 vdisp 0 attr 0x40
+4 0x63c410 .?AVChara@@ contained 1 mdisp 0 pdisp -1 vdisp 0 attr 0x40
+5 0x63c290 .?AVActionable@@ contained 0 mdisp 0 pdisp -1 vdisp 0 attr 0x40
+6 0x63f6c4 .?AVDamager@@ contained 0 mdisp 124 pdisp -1 vdisp 0 attr 0x40
+7 0x63f6a8 .?AVNoDeletedObject@@ contained 0 mdisp 140 pdisp -1 vdisp 0 attr 0x40

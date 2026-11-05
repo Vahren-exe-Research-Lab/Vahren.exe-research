@@ -1,0 +1,28 @@
+# T006 win() battle-exit semantics
+調査日: 2026-10-07
+
+[CONFIRMED-TARGET]
+- command opcode5 `win` handler is VA 0x4A174A and returns AL=1 (Yield).
+- handler first calls 0x52BFF0 on engine+0x1E8630, then calls 0x493630 with engine execution/battle state.
+- 0x493630 performs battle teardown: clears engine+0x1EEC44 (battle-active), +0x1EEC48, +0x1EED40/+0x1EED42, clears battleEvent active-root list at +0x1EEDB8, and performs scene/UI cleanup/rebuild paths.
+- when current executionMode is 2, 0x493630 invokes teardown virtuals on engine+0x1E8630/+0x1E8634/+0x1E8638 before clearing battle state.
+- dispatcher zeroes EDI before opcode dispatch; win passes this fixed 0 as the second stack argument to 0x493630.
+- natural battle finish caller 0x40E2B9 passes `(resultCode==1)` as the same argument. 0x493630 tests it at 0x494858 and selects two large post-battle branches (0 -> 0x494866, nonzero -> 0x494F8E).
+- therefore strict win semantics are battle exit/teardown with fixed resultFlag=0 + Yield. Human side meaning of resultFlag is not yet named.
+
+[HAKUSEN CORPUS]
+- normalized 0.67 corpus contains 32 `win()` calls.
+- the same command is used after both player-victory and player-defeat/enemy-victory dialogue in RTS scripts.
+- outcome-specific flags/dialogue are set by surrounding script before `win()`; the command itself is shared.
+
+[WIKI CROSSCHECK]
+- current Vahren Wiki documents win() as leaving the battle scene; this matches target native teardown and corpus usage.
+
+[REIMPLEMENT]
+- strict engine should model `win()` as battle-scene teardown + fixed resultFlag=0 + VM Yield.
+- keep script-authored victory/defeat flags/dialogue separate from the native finish-core resultFlag; map resultFlag 0/1 to human side semantics only after T010 closes the post-battle branches.
+
+[EVIDENCE]
+- exe/T006_TERMINAL_HANDLERS.txt
+- exe/T006_WIN_PROBE.txt
+- data/normalized/hakushin067_core/a_default/script/8000_RTSシナリオ/*.dat

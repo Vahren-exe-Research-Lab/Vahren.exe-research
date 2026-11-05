@@ -25,6 +25,12 @@
 - [research/recovered/b_batch3/T028_QUEUE_SINK_SHARED_DIALOG_ARITY_GUARDS_NATIVE_20261029_02H.md 行 12](../../research/recovered/b_batch3/T028_QUEUE_SINK_SHARED_DIALOG_ARITY_GUARDS_NATIVE_20261029_02H.md?plain=1#L12-L12) — 0x48CD08 cap比較・0x48CD0D index3位置=begin+0x54、0x48CD13 heap ptr/0x48CD1B inline ptrをold[ESP+0x30]へ保存（旧01H既知）。今回新たに0x48CD4F cap比較・0x48CD54 index4位置=begin+0x70、0x48
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+<a id="field-60"></a>
+## begin + 0x60
+
+- [research/recovered/text_roles2/data/T013_A18_SORT_SHUFFLE_20261011.txt 行 4](../../research/recovered/text_roles2/data/T013_A18_SORT_SHUFFLE_20261011.txt?plain=1#L4-L4) — CALLERS: saved B exe/T013_SUPPORT_EVAL_FOCUS.txt 0x5460AE..0x5460F2 (normal heal), 0x57F84B..0x57F893 (support_ai_a fallback). When Skill+0xA18 !=0, 0x54A1C0 in
+  制約・訂正　Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result.
+
 <a id="field-70"></a>
 ## begin + 0x70
 

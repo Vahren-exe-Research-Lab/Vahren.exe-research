@@ -1,0 +1,11 @@
+00632434	support_gain_lose
+00632448	support_gain
+00632458	support_gain
+00632468	support_gain_lose
+0063247C	decide11
+00632488	$$$に金%%%の謝礼を支払いました
+006324A8	decide11
+006324B4	$$$に金%%%の謝礼を支払いました
+006324D4	decide2
+006324DC	$$$から金%%%の謝礼を受け取りました
+00632500	decide2

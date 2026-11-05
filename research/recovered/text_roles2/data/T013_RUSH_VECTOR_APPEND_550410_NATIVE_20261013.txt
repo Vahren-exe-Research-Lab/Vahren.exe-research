@@ -1,0 +1,141 @@
+# B T013 0x550410..0x550575 three separate functions with int3 boundaries
+window_sha256=6fb6b2c8fdc2885b9ca735b59e25d41f9514976a3ec902222529e592475348cc
+bytes=357
+instructions=131
+normal_returns=[('0x55045a', ''), ('0x550483', ''), ('0x5504e8', ''), ('0x550574', '')]
+source_original_executed=false
+source_original_modified=false
+original_gameplay_pass=0
+new_strict_match=0
+
+00550410 push     esi
+00550411 mov      esi, eax
+00550413 mov      eax, dword ptr [0x8be27c]
+00550418 cmp      esi, eax
+0055041A jae      0x55045b
+0055041C mov      ecx, dword ptr [0x8be278]
+00550422 cmp      ecx, esi
+00550424 ja       0x55045b
+00550426 sub      esi, ecx
+00550428 sar      esi, 2
+0055042B cmp      eax, dword ptr [0x8be280]
+00550431 jne      0x550443
+00550433 call     0x550490
+00550438 mov      eax, dword ptr [0x8be27c]
+0055043D mov      ecx, dword ptr [0x8be278]
+00550443 test     eax, eax
+00550445 je       0x55047a
+00550447 mov      ecx, dword ptr [ecx + esi*4]
+0055044A mov      dword ptr [eax], ecx
+0055044C mov      eax, dword ptr [0x8be27c]
+00550451 add      eax, 4
+00550454 mov      dword ptr [0x8be27c], eax
+00550459 pop      esi
+0055045A ret      
+0055045B cmp      eax, dword ptr [0x8be280]
+00550461 jne      0x55046d
+00550463 call     0x550490
+00550468 mov      eax, dword ptr [0x8be27c]
+0055046D test     eax, eax
+0055046F je       0x55047a
+00550471 mov      edx, dword ptr [esi]
+00550473 mov      dword ptr [eax], edx
+00550475 mov      eax, dword ptr [0x8be27c]
+0055047A add      eax, 4
+0055047D mov      dword ptr [0x8be27c], eax
+00550482 pop      esi
+00550483 ret      
+00550484 int3     
+00550485 int3     
+00550486 int3     
+00550487 int3     
+00550488 int3     
+00550489 int3     
+0055048A int3     
+0055048B int3     
+0055048C int3     
+0055048D int3     
+0055048E int3     
+0055048F int3     
+00550490 mov      ecx, dword ptr [0x8be27c]
+00550496 mov      edx, dword ptr [0x8be278]
+0055049C sub      ecx, edx
+0055049E sar      ecx, 2
+005504A1 cmp      ecx, 0x3ffffffe
+005504A7 jbe      0x5504b3
+005504A9 push     0x637e38
+005504AE call     0x5b5b6d
+005504B3 mov      eax, dword ptr [0x8be280]
+005504B8 sub      eax, edx
+005504BA inc      ecx
+005504BB sar      eax, 2
+005504BE cmp      ecx, eax
+005504C0 jbe      0x5504e8
+005504C2 push     esi
+005504C3 mov      edx, eax
+005504C5 shr      edx, 1
+005504C7 mov      esi, 0x3fffffff
+005504CC sub      esi, edx
+005504CE cmp      esi, eax
+005504D0 pop      esi
+005504D1 jae      0x5504d7
+005504D3 xor      eax, eax
+005504D5 jmp      0x5504d9
+005504D7 add      eax, edx
+005504D9 cmp      eax, ecx
+005504DB jae      0x5504df
+005504DD mov      eax, ecx
+005504DF push     ebx
+005504E0 mov      ebx, eax
+005504E2 call     0x5504f0
+005504E7 pop      ebx
+005504E8 ret      
+005504E9 int3     
+005504EA int3     
+005504EB int3     
+005504EC int3     
+005504ED int3     
+005504EE int3     
+005504EF int3     
+005504F0 cmp      ebx, 0x3fffffff
+005504F6 jbe      0x550502
+005504F8 push     0x637e38
+005504FD call     0x5b5b6d
+00550502 mov      eax, dword ptr [0x8be280]
+00550507 sub      eax, dword ptr [0x8be278]
+0055050D sar      eax, 2
+00550510 cmp      eax, ebx
+00550512 jae      0x550574
+00550514 push     esi
+00550515 push     edi
+00550516 mov      ecx, ebx
+00550518 call     0x42ac20
+0055051D mov      ecx, dword ptr [0x8be27c]
+00550523 mov      edi, eax
+00550525 mov      eax, dword ptr [0x8be278]
+0055052A sub      ecx, eax
+0055052C sar      ecx, 2
+0055052F add      ecx, ecx
+00550531 add      ecx, ecx
+00550533 push     ecx
+00550534 push     eax
+00550535 push     edi
+00550536 call     0x5b6720
+0055053B mov      eax, dword ptr [0x8be278]
+00550540 mov      esi, dword ptr [0x8be27c]
+00550546 sub      esi, eax
+00550548 add      esp, 0xc
+0055054B sar      esi, 2
+0055054E test     eax, eax
+00550550 je       0x55055b
+00550552 push     eax
+00550553 call     0x5b6bbb
+00550558 add      esp, 4
+0055055B lea      eax, [edi + esi*4]
+0055055E lea      edx, [edi + ebx*4]
+00550561 mov      dword ptr [0x8be278], edi
+00550567 pop      edi
+00550568 mov      dword ptr [0x8be280], edx
+0055056E mov      dword ptr [0x8be27c], eax
+00550573 pop      esi
+00550574 ret      

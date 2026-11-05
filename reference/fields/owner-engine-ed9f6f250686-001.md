@@ -262,6 +262,12 @@
 - [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 385](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L385-L385) — [CONFIRMED / DELTA] A保存 `exe/T031_RESEED_CALL_XREFS.txt` VA 0x48EAAE..0x48EAF0。既知A-20261012-0405-01の mode=7書込(0x48EAAE)→central reset/reseed 0x4C1FC0(0x48EABC)→
   制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
 
+- [research/recovered/text_roles2/data/T006_WIN_SEMANTICS.txt 行 6](../../research/recovered/text_roles2/data/T006_WIN_SEMANTICS.txt?plain=1#L6-L6) — - handler first calls 0x52BFF0 on engine+0x1E8630, then calls 0x493630 with engine execution/battle state.
+  制約・訂正　Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result.
+
+- [research/recovered/text_roles2/data/T006_WIN_SEMANTICS.txt 行 8](../../research/recovered/text_roles2/data/T006_WIN_SEMANTICS.txt?plain=1#L8-L8) — - when current executionMode is 2, 0x493630 invokes teardown virtuals on engine+0x1E8630/+0x1E8634/+0x1E8638 before clearing battle state.
+  制約・訂正　Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result.
+
 - [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 138](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L138-L138) — - opcode5 `win` (VA 0x4A174A) は engine +0x1E8630 に対し 0x52BFF0 を呼び、続けて +0x1EED1C/+0x1EED20 を用いて 0x493630 を呼んだ後、`AL=1` (Yield)。呼出先の論理副作用名は継続解析する。
   制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
 
@@ -369,14 +375,5 @@
 
 - [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 957](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L957-L957) — [DELTA / GLOBAL FRAME READ] A所有の保存済命令 `exe/T010_FRAME_HELPER_PROBE.txt` 0x4339B1..0x4339F1。descriptor stack +0x1EED78/7C が非空なら、0x4339C3..0x4339DEで +0x1EED98/9C（
   制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
-
-<a id="field-1eec44"></a>
-## engine + 0x1EEC44
-
-- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 539](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L539-L539) — [CONFIRMED-SAVED-NATIVE / NEW PREFIX] A所有read-only exe/T006_BATTLE_STATE_PROBE.txt VA0x4B5D20..0x4B5E6Eを照合。opcode11 handler 0x4B5D0Eは0x4B5D20..2DでunctrlTroop li
-  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
-
-- [research/recovered/rea_batch11/reports/REA_20261015_2240_POSTLETHAL_EVENT_FLAG_ABI.md 行 9](../../research/recovered/rea_batch11/reports/REA_20261015_2240_POSTLETHAL_EVENT_FLAG_ABI.md?plain=1#L9-L9) — - EXACT GUARD: 0x4321F4 flag!=0 THEN 0x432209 CMP BYTE [engine+0x1EEC44],0。両方非0なら0x432216 battle-special routeへ進み、一般経路0x432306をskipする。flag=1でもengine battle flag
-  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

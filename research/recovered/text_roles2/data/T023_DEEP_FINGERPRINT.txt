@@ -1,0 +1,12 @@
+
+## target size 2910720 sha256 e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187 crc32 96D989B7
+timestamp 1476792537 linker 10 0 os 5 1 subsys 5 1 checksum 0x2cce5a
+sections [('.text', '0x1000', 2129920, '7c701dd0629f6645'), ('.rdata', '0x209000', 329728, '2958a42dde8d0129'), ('.data', '0x25a000', 211968, 'e7560dec4d03ef1a'), ('.rsrc', '0x715000', 89088, '26fdf9547af20b41'), ('.reloc', '0x72b000', 148992, '62c3c30d879a6c36')]
+str 0x23b1d0 [USER_HOME]\Documents\Visual Studio 2010\Projects\Vahren\Release\Vahren.pdb
+version_error 'PE' object has no attribute 'FileInfo'
+
+## v701 size 2957824 sha256 7813d61efd3be03cb838c54098b5dd7b162e0ec8e4375bc9e6b07c8a0236ce4f crc32 62F833E3
+timestamp 1525157142 linker 14 13 os 6 0 subsys 6 0 checksum 0x0
+sections [('.text', '0x1000', 2125312, 'a9d2fe381ad67c4b'), ('.rdata', '0x208000', 339968, '0044d41e61924597'), ('.data', '0x25b000', 381440, '173fa749e4789748'), ('.rsrc', '0x710000', 512, 'b1298ea4ba094875'), ('.reloc', '0x711000', 109568, '3c847fb87ec9ab34')]
+str 0x245218 [USER_HOME]\Documents\Visual Studio 2017\Vahren\Release\Vahren.pdb
+version_error 'PE' object has no attribute 'FileInfo'

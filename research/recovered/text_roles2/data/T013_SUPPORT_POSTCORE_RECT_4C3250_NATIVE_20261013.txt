@@ -1,0 +1,33 @@
+# B T013 post heal rectangle source helper bounded VA4C3250..4C32AA excl
+isolate_sha256=e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187
+window_sha256=7589cb810fd6ee1f1b92f6b5d2c40dd446632ad0be3edf72db27f1fca7845a17
+bytes=90
+instructions=22
+normal_rets=[('0x4c327c', ''), ('0x4c32a9', '')]
+game_executed=false
+game_modified=false
+gameplay_pass=0
+strict_match=0
+
+004C3250 cmp      byte ptr [ecx + 0x3cd1], 0
+004C3257 jne      0x4c327d
+004C3259 mov      edx, dword ptr [ecx + 0x3cb0]
+004C325F mov      dword ptr [eax], edx
+004C3261 mov      edx, dword ptr [ecx + 0x3cb4]
+004C3267 mov      dword ptr [eax + 4], edx
+004C326A mov      edx, dword ptr [ecx + 0x3cb8]
+004C3270 mov      ecx, dword ptr [ecx + 0x3cbc]
+004C3276 mov      dword ptr [eax + 8], edx
+004C3279 mov      dword ptr [eax + 0xc], ecx
+004C327C ret      
+004C327D cmp      byte ptr [ecx + 0x3cd0], 0
+004C3284 je       0x4c3259
+004C3286 mov      edx, dword ptr [ecx + 0x3cc0]
+004C328C mov      dword ptr [eax], edx
+004C328E mov      edx, dword ptr [ecx + 0x3cc4]
+004C3294 mov      dword ptr [eax + 4], edx
+004C3297 mov      edx, dword ptr [ecx + 0x3cc8]
+004C329D mov      ecx, dword ptr [ecx + 0x3ccc]
+004C32A3 mov      dword ptr [eax + 8], edx
+004C32A6 mov      dword ptr [eax + 0xc], ecx
+004C32A9 ret      

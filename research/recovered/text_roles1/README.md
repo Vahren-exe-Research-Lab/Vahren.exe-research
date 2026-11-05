@@ -1,0 +1,13 @@
+# text_roles1 — TXT資料の役割確定
+
+指定189原本（6,585,465 bytes）を役割判定し、41本文/41出典行を保存した。22件は元UTF8 bytesと完全一致、19件はUTF16LE BOMからUTF8 no BOMへの全文・損失なし変換。保存本文78,942 bytes。privacy編集0、既存/バッチ内alias0。基準 `5ab625346ef4bc32a6389d6236bc1e76e7a730d9`、基準root2266行SHA `4ad456af97f85d964b74912e4eb60980b56cfbd0ec62d9fe5b014535d8cfbc5b`、選定表SHA `177ccea37d1ec47dfc62bf5f277aa38cdc01158054a24ccaefba4f04d30d05e2`。現行2266行もsource/destination SHA重複lookupに使用した。core503/363func/120fields/163relations/15correctionsは入力基準であり、当バッチの新発見数ではない。
+
+最初30件は800 Unicode文字、31–80は600文字、81–189は500文字以内の先頭を先に確認した。raw Ghidra/逆アセンブル/probeのstandalone未解釈function/window collectionは全文意味レビューや公開をせず、具体的なheader/format/物理LF境界を記録。header後に紛れる形式の確認が必要な候補のみ全行のlexical形式/section位置も確認したが、意味レビューとは区別する。REVIEW_IDENTITYは189件の役割と方法を明示する。
+
+148件は本文なしのwhole metadata。内訳146件は未解釈native listing（既知579290 owner-write payloadに当たる1件も含む）、1件は元MIDI全track/event輸出、1件はjump-site indexの内部dispatch帰属未解決。最後のindexはLF1–255を確認したが580BEB/580BE2がwhole580280内部であるという決定的owner/range metadataが得られず、近傍VAだけで帰属断定しない。新しい取得拒否を意味しない。全保留に本文/抜粋/独立部分だけの再構成を保存しない。既知helper/Task/stream/asset等の保留を解除していない。
+
+41受理資料は全文物理LFをbounded出力で確認。語句/RTTI/vtable/constant/文字列xref/推定callbackの索引と、著者のscenario property・audio・story訂正・global API・version分析を含む。生成TXTというだけで拒否せず、分析に添う短い選別命令根拠は保持した。単行xrefや短い文字列/定数断片はstandalone全面native/memory exportと区別した。空xref、None/callback_guess、誤decode、file-backedでないprobe errorを修正・確定扱いせず、そのままsource-scopedで残す。RTTIは自動的にlayout/class identityへ昇格しない。
+
+対象版の区別と歴史的訂正を維持する。T005 keyword比較はVahren701と迫真0.67を混同しない。story raw substringの予備結論と同票末尾の訂正は両方残し、訂正優先。version letterは推定/VERIFYで、外部年表を今回Web照合していない。audio codec票も前半のVERIFYと後半のrefinementを歴史的資料として保持し、current REF/辞書を優先する。保存は資料の数であり、新規native/runtime/ABI/type/Golden/READY/正しさの証明ではない。新しいcore採録や実行は0。
+
+全189入力のliteral包含/全祖先no-reparse、current SHA/sizeのpins一致、identity read前後size/mtime安定と最終hashを確認。catalog行数と物理LF計数の差は0件（あれば表で明示、SHA revisionではない）。19変換はstrict UTF16LE decode、raw BOM+UTF16LE再encode原byte一致、UTF8 decodeと元Unicode一致、CRLF/終端保持をENCODING_RECEIPTSで証明する。原UTF16/NUL blobは公開しない。保存41本文とmanifestのhash/sizeを検証。OUTPUT_MANIFESTは自身を除外。原本・共有root・code/core・Git・networkを変更せず、packet外原本/リンク先native/code/log/game/asset/DB/archiveを取得・実行していない。

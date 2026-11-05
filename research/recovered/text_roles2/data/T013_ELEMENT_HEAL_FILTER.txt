@@ -1,0 +1,21 @@
+T013 unit_element_heal / support candidate filter evidence
+Source: bundled target Vahren.exe static disassembly; extracted from T013_1D0_GLOBAL_PROBE.txt
+
+[context loader]
+0045B020 push 0x634668        ; "unit_element_heal"
+0045B025 push ebx
+0045B026 mov  ecx, 0x634664 ; "off" fallback
+0045B02F call 0x46F6F0
+0045B034 mov  ecx, 0x634660 ; "on"
+0045B043 call 0x40B200
+0045B050 mov  byte ptr [0x87984F], al
+
+[support builder 0x514F10]
+00514F91 cmp byte ptr [esi+0x1867C], 0 ; dead/inactive exclusion
+00514F98 jne 0x514FE8
+00514F9A cmp byte ptr [0x87984F], 0
+00514FA1 jne 0x514FAC        ; unit_element_heal=on bypasses next filter
+00514FA3 cmp dword ptr [esi+0x1D0], 0
+00514FAA je  0x514FE8        ; off: +0x1D0==0 candidate excluded
+
+Conclusion: global 0x87984F is context unit_element_heal. Unit+0x1D0 is the discriminator consumed by the native summon-heal eligibility path; exact pointer/object semantic remains VERIFY.

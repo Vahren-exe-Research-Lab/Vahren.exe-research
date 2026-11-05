@@ -1,0 +1,47 @@
+target: bundled 迫真戦記 Vahren.exe (read-only ZIP member)
+
+handler: opcode37 loopBGM VA 0x4A2E09
+- argc==0: jump to common 0x4A1486 (`xor al,al`) => Continue/no-op.
+- argc>0: iterate argument vector in original order.
+- each arg node: 0x415750 -> node pointer -> 0x4A64E0 type predicate.
+- predicate 0x4A64E0 calls 0x5E72E5 with TypeDescriptor objects:
+  source 0x68C144 (+8 name 0x68C14C) = .?AUExpresElement@@
+  target 0x68C128 (+8 name 0x68C130) = .?AUExpresString@@
+  => MSVC RTTI dynamic-cast style check ExpresElement -> ExpresString.
+- only predicate-true args are resolved by 0x452860 and appended to local list; false args are skipped.
+- after filter: local list -> loop core 0x4BDCB0; handler clears worldMusic flags and Continue.
+
+loop core 0x4BDCB0
+- copies/inserts supplied string range into audio-manager playlist vector at +0x28..+0x30 using 0x479B50.
+- playlist element stride = 0x1C (28 bytes).
+- current index +0x38 set to 0.
+- if count==0, attempts element[0] and calls vector range failure path with string:
+  0x637E04 = "invalid vector<T> subscript".
+- first playback uses playlist element 0, then increments +0x38 and wraps modulo count.
+- sets loop-enabled byte +0x24 = 1.
+
+transition/update path around 0x4BE250
+- when loop-enabled and current stream transition condition is reached, reads element at current +0x38 via 0x40AFB0.
+- increments +0x38 and wraps to 0 at count.
+- calls playback core 0x4BDE40 with selected element.
+- no RNG/random selection appears in handler, playlist-copy core, initial selection, or transition selection.
+
+strict target conclusion
+- loopBGM(a,b,c) cycles in supplied order a -> b -> c -> a ... (subject to normal stream transition state).
+- loopBGM() is a Continue/no-op.
+- non-ExpresString args are silently filtered; if all supplied args are filtered out, downstream empty-vector element access reaches the target's vector subscript failure path.
+
+current Wiki crosscheck
+- current Vahren Wiki documents loopBGM(file,file,...) as random-order playback.
+- bundled target native is sequential indexed round-robin; treat Wiki random order as later-version/documentation difference until later EXE comparison.
+
+corpus
+- normalized 迫真0.67: 7 loopBGM call sites.
+- example: event_battle.dat uses loopBGM(戦闘曲17神社,ボス06神社,ボス08神社).
+- example: politic_sakenomi.dat uses 7 supplied tracks, showing multi-track path is real game behavior.
+
+primary evidence
+- T006_AUDIO_COMMAND_GROUP.txt
+- expanded T006_AUDIO_HELPERS.txt
+- t006_audio_helpers.py
+- t006_scene_literal_probe.py

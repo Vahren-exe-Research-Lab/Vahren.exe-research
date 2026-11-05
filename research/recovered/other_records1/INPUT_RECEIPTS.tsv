@@ -1,0 +1,4 @@
+role	path	sha256	bytes	notes
+APPROVED_SELECTION	private-approved-selection/hakushin-other_records1-approved.tsv	195d7a92124e0da4b6c9590a23935c5a56e21a781a1b3880071390d3e49d454e	3380	22 exact literals
+FIXED_BASELINE_LEDGER	research/recovered/RECOVERY_LEDGER.tsv@5ab625346ef4bc32a6389d6236bc1e76e7a730d9	4ad456af97f85d964b74912e4eb60980b56cfbd0ec62d9fe5b014535d8cfbc5b	1669761	2266 rows; source/destination SHA alias lookup0
+CURRENT_ALIAS_LEDGER	research/recovered/RECOVERY_LEDGER.tsv	4ad456af97f85d964b74912e4eb60980b56cfbd0ec62d9fe5b014535d8cfbc5b	1669761	2266 rows; source/destination SHA alias lookup0; no within-batch SHA duplicate

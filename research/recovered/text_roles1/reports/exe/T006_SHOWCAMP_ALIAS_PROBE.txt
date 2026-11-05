@@ -1,0 +1,8 @@
+raw bundled target EXE byte scan
+showPolitics: 1 occurrence (file offset 0x230b7c)
+showCamp: 1 occurrence (file offset 0x230b8c)
+showParty: 0 occurrences
+@politics_hide: 3 occurrences
+@camp_hide: 3 occurrences
+@mode_nozone: 4 occurrences
+Registry T006_REGISTRY_RECOVERED.tsv: opcode58 showPolitics, opcode59 showCamp; no showParty registry entry.

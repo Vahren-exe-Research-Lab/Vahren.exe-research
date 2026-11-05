@@ -1,0 +1,3 @@
+source_path	representation	span_index	source_start	source_end	removed_bytes	removed_sha256	destination_start	destination_end	replacement_utf8	replacement_sha256
+exe/T023_DEEP_FINGERPRINT.txt	Raw UTF-8 source bytes	1	462	477	15	f6520bdf67467db70b3c7421325ecac5cd309e7c8d831646a176160726d1c8b4	462	473	[USER_HOME]	c66a223d61e90b2790f72130ecfe7f306b3b1c32f05622607060bf304a8ac13a
+exe/T023_DEEP_FINGERPRINT.txt	Raw UTF-8 source bytes	2	1052	1067	15	f6520bdf67467db70b3c7421325ecac5cd309e7c8d831646a176160726d1c8b4	1048	1059	[USER_HOME]	c66a223d61e90b2790f72130ecfe7f306b3b1c32f05622607060bf304a8ac13a

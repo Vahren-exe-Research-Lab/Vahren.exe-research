@@ -1,0 +1,15 @@
+00631854	linkSpot
+00631860	route
+00631868	spot_route
+00631874	route_esc
+00631880	spot_escape_route
+00631894	+
+00631898	+
+0063189C	linkSpot
+006318A8	_esc
+006318B0	linkSpot
+006318BC	+
+006318C0	+
+006318C4	hideLink
+006318D0	_esc
+006318D8	hideSpotMark

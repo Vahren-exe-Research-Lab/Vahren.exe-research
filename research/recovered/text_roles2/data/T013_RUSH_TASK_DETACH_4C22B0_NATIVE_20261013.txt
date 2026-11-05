@@ -1,0 +1,146 @@
+# B-owned T013 isolated original x86 0x4C22B0..0x4C2405
+window_sha256=a1188e5b96d422aec2347e25c4eef3911f5eb03369dcc701998e96949053f00a
+byte_length=341
+instruction_count=136
+normal_returns=[('0x4c23a5', '8'), ('0x4c2402', '8')]
+source_original_executed=false
+source_original_modified=false
+original_gameplay_pass=0
+new_strict_match=0
+
+004C22B0 push     esi
+004C22B1 mov      esi, eax
+004C22B3 mov      edx, dword ptr [esi + 0x2c]
+004C22B6 mov      eax, dword ptr [esi + 0x30]
+004C22B9 sub      eax, edx
+004C22BB sar      eax, 2
+004C22BE xor      ecx, ecx
+004C22C0 push     edi
+004C22C1 mov      edi, dword ptr [esp + 0xc]
+004C22C5 test     eax, eax
+004C22C7 jle      0x4c22e3
+004C22C9 lea      esp, [esp]
+004C22D0 cmp      dword ptr [edx + ecx*4], edi
+004C22D3 je       0x4c22dc
+004C22D5 inc      ecx
+004C22D6 cmp      ecx, eax
+004C22D8 jl       0x4c22d0
+004C22DA jmp      0x4c22e3
+004C22DC mov      dword ptr [edx + ecx*4], 0
+004C22E3 mov      edx, dword ptr [esi + 0x64]
+004C22E6 mov      eax, dword ptr [esi + 0x68]
+004C22E9 sub      eax, edx
+004C22EB sar      eax, 2
+004C22EE xor      ecx, ecx
+004C22F0 test     eax, eax
+004C22F2 jle      0x4c2321
+004C22F4 cmp      dword ptr [edx + ecx*4], edi
+004C22F7 je       0x4c2300
+004C22F9 inc      ecx
+004C22FA cmp      ecx, eax
+004C22FC jl       0x4c22f4
+004C22FE jmp      0x4c2321
+004C2300 lea      eax, [edx + ecx*4]
+004C2303 mov      edx, dword ptr [esi + 0x68]
+004C2306 lea      ecx, [eax + 4]
+004C2309 sub      edx, ecx
+004C230B sar      edx, 2
+004C230E add      edx, edx
+004C2310 add      edx, edx
+004C2312 push     edx
+004C2313 push     ecx
+004C2314 push     eax
+004C2315 call     0x5b6720
+004C231A add      esp, 0xc
+004C231D add      dword ptr [esi + 0x68], -4
+004C2321 cmp      byte ptr [esp + 0x10], 0
+004C2326 je       0x4c2400
+004C232C mov      eax, dword ptr [esi + 0x58]
+004C232F add      esi, 0x54
+004C2332 lea      ecx, [esp + 0xc]
+004C2336 push     ebx
+004C2337 cmp      ecx, eax
+004C2339 jae      0x4c23a8
+004C233B mov      edx, dword ptr [esi]
+004C233D cmp      edx, ecx
+004C233F ja       0x4c23a8
+004C2341 mov      edi, ecx
+004C2343 mov      ecx, dword ptr [esi + 8]
+004C2346 sub      edi, edx
+004C2348 sar      edi, 2
+004C234B cmp      eax, ecx
+004C234D jne      0x4c2390
+004C234F sub      eax, edx
+004C2351 sar      eax, 2
+004C2354 cmp      eax, 0x3ffffffe
+004C2359 jbe      0x4c2365
+004C235B push     0x637e38
+004C2360 call     0x5b5b6d
+004C2365 sub      ecx, edx
+004C2367 inc      eax
+004C2368 sar      ecx, 2
+004C236B cmp      eax, ecx
+004C236D jbe      0x4c2390
+004C236F mov      edx, ecx
+004C2371 shr      edx, 1
+004C2373 mov      ebx, 0x3fffffff
+004C2378 sub      ebx, edx
+004C237A cmp      ebx, ecx
+004C237C jae      0x4c2382
+004C237E xor      ecx, ecx
+004C2380 jmp      0x4c2384
+004C2382 add      ecx, edx
+004C2384 cmp      ecx, eax
+004C2386 jae      0x4c238a
+004C2388 mov      ecx, eax
+004C238A push     ecx
+004C238B call     0x501a40
+004C2390 mov      eax, dword ptr [esi + 4]
+004C2393 test     eax, eax
+004C2395 je       0x4c23fb
+004C2397 mov      edx, dword ptr [esi]
+004C2399 mov      ecx, dword ptr [edx + edi*4]
+004C239C pop      ebx
+004C239D mov      dword ptr [eax], ecx
+004C239F add      dword ptr [esi + 4], 4
+004C23A3 pop      edi
+004C23A4 pop      esi
+004C23A5 ret      8
+004C23A8 mov      ecx, dword ptr [esi + 8]
+004C23AB cmp      eax, ecx
+004C23AD jne      0x4c23f2
+004C23AF mov      edx, dword ptr [esi]
+004C23B1 sub      eax, edx
+004C23B3 sar      eax, 2
+004C23B6 cmp      eax, 0x3ffffffe
+004C23BB jbe      0x4c23c7
+004C23BD push     0x637e38
+004C23C2 call     0x5b5b6d
+004C23C7 sub      ecx, edx
+004C23C9 inc      eax
+004C23CA sar      ecx, 2
+004C23CD cmp      eax, ecx
+004C23CF jbe      0x4c23f2
+004C23D1 mov      edx, ecx
+004C23D3 shr      edx, 1
+004C23D5 mov      ebx, 0x3fffffff
+004C23DA sub      ebx, edx
+004C23DC cmp      ebx, ecx
+004C23DE jae      0x4c23e4
+004C23E0 xor      ecx, ecx
+004C23E2 jmp      0x4c23e6
+004C23E4 add      ecx, edx
+004C23E6 cmp      ecx, eax
+004C23E8 jae      0x4c23ec
+004C23EA mov      ecx, eax
+004C23EC push     ecx
+004C23ED call     0x501a40
+004C23F2 mov      eax, dword ptr [esi + 4]
+004C23F5 test     eax, eax
+004C23F7 je       0x4c23fb
+004C23F9 mov      dword ptr [eax], edi
+004C23FB add      dword ptr [esi + 4], 4
+004C23FF pop      ebx
+004C2400 pop      edi
+004C2401 pop      esi
+004C2402 ret      8

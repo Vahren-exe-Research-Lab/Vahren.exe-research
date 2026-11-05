@@ -1,0 +1,13 @@
+新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/chip/desktop.ini
+新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/chip2/desktop.ini
+新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/face/desktop.ini
+新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/icon/desktop.ini
+新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/image/desktop.ini
+新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/45_内政_防衛兵器/siege_system.dat
+新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/stage/desktop.ini
+新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/voice/small1/desktop.ini
+新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_system/
+新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_system/debug_paper.txt
+新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_system/load.png
+新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_system/mouse.cur
+新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_system/reset.mid

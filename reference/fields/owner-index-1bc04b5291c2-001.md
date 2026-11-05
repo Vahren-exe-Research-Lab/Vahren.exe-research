@@ -13,6 +13,9 @@
 - [research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md 行 304](../../research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md?plain=1#L304-L304) — - audio loop core 0x4BDCB0はfiltered listをmanager playlist vectorへrange-copy/insertし、current index +0x38=0を設定。初回はelement0を再生後index++。
   制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
 
+- [research/recovered/text_roles1/reports/exe/T006_LOOPBGM_PROBE.txt 行 17](../../research/recovered/text_roles1/reports/exe/T006_LOOPBGM_PROBE.txt?plain=1#L17-L17) — - current index +0x38 set to 0.
+  制約・訂正　Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+
 <a id="field-294"></a>
 ## index + 0x294
 

@@ -7,6 +7,15 @@
 <a id="field-1eef60"></a>
 ## engine + 0x1EEF60
 
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 31](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L31-L31) — engine+0x1EEF60	addPowerStaff2		0x4a73a2	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
+
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 32](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L32-L32) — engine+0x1EEF60	setTraining		0x4a73fb	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
+
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 33](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L33-L33) — engine+0x1EEF60	addTrainingUp		0x4a7425	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
+
 - [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 34](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L34-L34) — engine+0x1EEF60	setTrainingUp		0x4a7454	REGISTRATION_XREF_ONLY
   制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
@@ -330,17 +339,5 @@
 
 - [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 391](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L391-L391) — [CONFIRMED / NEW BRANCH] A保存 `exe/T031_PHASE_PREDICATE_HANDLERS.txt` 0x44F6A8..0x44F6DE。既知T031のisComTurn opcode12/engine+0x1EF4C4入口readerを精密化。入口は`cmp byte[esi+0
   制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
-
-<a id="field-1ef6b4"></a>
-## engine + 0x1EF6B4
-
-- [research/recovered/DEVLAB_MINIMAP_NATIVE_CONTRACT_20261011.md 行 17](../../research/recovered/DEVLAB_MINIMAP_NATIVE_CONTRACT_20261011.md?plain=1#L17-L17) — - `engine = *(DAT_0087F798+4)` 候補の `engine+0x1EF6B4` からvector-of-vector様のDWORD値グリッドを取り出し、外側が行、内側が列として周回。`pCVar6` を `SetDCBrushColor` に渡し、`FillRect` でセル色矩形を塗る。
-  制約・訂正　Historical author claims preserved; source hash verified; no new native or runtime validation; referenced local evidence not included
-
-- [research/recovered/DEVLAB_MINIMAP_NATIVE_CONTRACT_20261011.md 行 36](../../research/recovered/DEVLAB_MINIMAP_NATIVE_CONTRACT_20261011.md?plain=1#L36-L36) — 1. **色グリッドproducer**：map初期化 0x4F0BE0 側の engine+0x1EF6B4 所有者、spot/field/raw paletteとの接続をnative writer+calleeの局所証拠から確認。これはD/T015へリンクする依頼候補であり他レーン資料は編集不可。
-  制約・訂正　Historical author claims preserved; source hash verified; no new native or runtime validation; referenced local evidence not included
-
-- [research/recovered/DEVLAB_MINIMAP_NATIVE_CONTRACT_20261011.md 行 57](../../research/recovered/DEVLAB_MINIMAP_NATIVE_CONTRACT_20261011.md?plain=1#L57-L57) — - `0x48D6A0` battle/stage setupは`0x4F0BE0` stage readerの後に`0x4DD8C0`を呼ぶ保存静的順序。だが前者が直接engine+0x1EF6B4を生成するわけではなく、各calleeのポインタ引数/副作用はVERIFY。原作の通常battleだけでなく他scene
-  制約・訂正　Historical author claims preserved; source hash verified; no new native or runtime validation; referenced local evidence not included
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

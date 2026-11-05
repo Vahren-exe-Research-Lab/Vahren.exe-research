@@ -1,0 +1,60 @@
+# B T012 bounded effect-registration helper
+source_sha256=e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187
+window_sha256=3dba864e1c00f1a03cf90e7772401061d89f15bf18e8d2487998ec32fcb04399
+VA=0x4c3dc0
+bytes=117
+instructions=48
+returns=[('0x4c3e34', '')]
+source_executed=false
+source_modified=false
+old_gameplay_pass=0
+new_strict_match=0
+
+004C3DC0 push     ecx
+004C3DC1 push     esi
+004C3DC2 push     edi
+004C3DC3 mov      edi, ecx
+004C3DC5 add      dword ptr [edi + 0x30], 0xa
+004C3DC9 mov      esi, eax
+004C3DCB mov      eax, dword ptr [edi + 0x30]
+004C3DCE mov      dword ptr [esi + 0x54], eax
+004C3DD1 mov      eax, dword ptr [esi]
+004C3DD3 mov      edx, dword ptr [eax + 0x38]
+004C3DD6 mov      ecx, esi
+004C3DD8 call     edx
+004C3DDA mov      dword ptr [esp + 8], esi
+004C3DDE test     eax, eax
+004C3DE0 js       0x4c3e0f
+004C3DE2 lea      esi, [edi + 0x18]
+004C3DE5 mov      edi, dword ptr [esi]
+004C3DE7 mov      ecx, dword ptr [edi + 4]
+004C3DEA lea      eax, [esp + 8]
+004C3DEE push     eax
+004C3DEF push     ecx
+004C3DF0 push     edi
+004C3DF1 call     0x4c52d0
+004C3DF6 mov      ecx, dword ptr [esi + 4]
+004C3DF9 mov      edx, 0x3ffffffe
+004C3DFE sub      edx, ecx
+004C3E00 cmp      edx, 1
+004C3E03 jae      0x4c3e1f
+004C3E05 push     0x637ed4
+004C3E0A call     0x5b5b6d
+004C3E0F lea      esi, [edi + 0x24]
+004C3E12 mov      edi, dword ptr [esi]
+004C3E14 mov      eax, dword ptr [edi + 4]
+004C3E17 lea      edx, [esp + 8]
+004C3E1B push     edx
+004C3E1C push     eax
+004C3E1D jmp      0x4c3df0
+004C3E1F inc      ecx
+004C3E20 mov      dword ptr [esi + 4], ecx
+004C3E23 mov      dword ptr [edi + 4], eax
+004C3E26 mov      ecx, dword ptr [eax + 4]
+004C3E29 push     esi
+004C3E2A mov      dword ptr [ecx], eax
+004C3E2C call     0x4c55a0
+004C3E31 pop      edi
+004C3E32 pop      esi
+004C3E33 pop      ecx
+004C3E34 ret      

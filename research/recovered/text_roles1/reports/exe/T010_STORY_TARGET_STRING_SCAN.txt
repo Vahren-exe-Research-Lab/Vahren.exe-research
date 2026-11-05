@@ -1,0 +1,29 @@
+﻿T010 story keyword raw-string scan — bundled target Vahren.exe
+Date: 2026-10-06
+
+Exact ASCII / UTF-16LE first offsets in bundled target:
+story      ASCII 2278816 / UTF16 -1
+friend     ASCII 2251406 / UTF16 -1
+fight      ASCII 2250940 / UTF16 -1
+politics   ASCII 2250648 / UTF16 -1
+pre        ASCII 2243385 / UTF16 -1
+quickreload ASCII -1 / UTF16 -1
+offset_on  ASCII 2244728 / UTF16 -1
+
+Interpretation:
+- story/friend/fight/politics/pre all exist as exact ASCII literals in the actual bundled target engine.
+- This materially weakens the earlier concern that story.pre / story.politics were only a later V7 parser invention.
+- Literal presence alone does not prove exact field semantics or ordering, so behavior/order remains VERIFY.
+- The 2017-09-11 independent parser models StoryData {Friend,Fight,Politics,Pre} and WPFCollect routes pre=on to the front of the selected phase list, normal story to the tail.
+- Candidate order: pre story -> scenario base phase event -> normal story, with phase selection fight > politics > world.
+
+Reimplementation impact:
+- Preserve story.pre/politics in grammar for target profile unless native parser xref/fixture disproves them.
+- Do not yet freeze ordering as CONFIRMED; add minimal order fixtures.
+
+CORRECTION 2026-10-06 継続監査18:
+- 上記 `pre ASCII 2243385` はexact keywordではなくraw substring scanのfalse positive。
+- 周辺bytesは `...hprec\0...mprec\0...` で、`pre` はその内部に出現していた。
+- exact NUL-terminated `pre\0` scanはtarget=0件、Vahren701=0件。
+- native story collector VA 0x46E250も pre/politics fieldを参照しない。
+- 以後は data/T010_EVENT_SCHEDULER.md の継続監査18訂正を正とする。

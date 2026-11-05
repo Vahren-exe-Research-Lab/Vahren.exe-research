@@ -1,0 +1,7 @@
+00631808 (845640557, 0, 6494216, 'block\x00\x00\x00event\x00\x00\x00msg2\x00\x00\x00\x00talk2\x00\x00\x00chat2\x00\x00\x00image/\x00\x00title\x00\x00\x00showBlind\x00\x00\x00scroll\x00\x00linkSpot\x00\x00\x00\x00route\x00\x00\x00spot_route\x00\x00route_esc\x00\x00\x00spot_escape_route\x00\x00\x00+\x00\x00\x00+\x00\x00\x00linkSpot\x00\x00\x00\x00_esc\x00\x00\x00\x00linkSpot\x00\x00\x00\x00+\x00\x00\x00+\x00\x00\x00hideLink\x00\x00\x00\x00')
+00631810 ERR "data at RVA 0x6e257665 can't be fetched"
+00631818 ERR "data at RVA 0x3227736d can't be fetched"
+00631820 ERR "data at RVA 0x6b2c6174 can't be fetched"
+00631828 ERR "data at RVA 0x74216863 can't be fetched"
+00631830 ERR "data at RVA 0x67216d69 can't be fetched"
+00631838 ERR "data at RVA 0x6c346974 can't be fetched"

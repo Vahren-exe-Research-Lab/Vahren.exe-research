@@ -1,0 +1,2 @@
+0x63a4bc COL 0x63f61c TD 0x68d34c NAME .?AVSimpleUnit@@
+0x63a8e4 COL 0x63fbc4 TD 0x68d5c4 NAME .?AVSimpleStaticUnit@@

@@ -516,7 +516,7 @@
 
 ## 構造体・フィールド
 
-[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 7735 件。型や意味の正式登録前の局所表記も検索できます。
+[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 7775 件。型や意味の正式登録前の局所表記も検索できます。
 
 - [Ctx](structs/Ctx.md)
 - [FrameWnd](structs/FrameWnd.md)
@@ -524,19 +524,21 @@
 - [GameTask](structs/GameTask.md)
 - [Player](structs/Player.md)
 - [Power](structs/Power.md)
+- [SaveUnitDataTreeNode](structs/SaveUnitDataTreeNode.md)
 - [ScriptEngine](structs/ScriptEngine.md)
 - [Spot](structs/Spot.md)
 - [StatusWnd](structs/StatusWnd.md)
+- [SummonRecordCacheNode](structs/SummonRecordCacheNode.md)
 - [TurnState](structs/TurnState.md)
 - [UnitDef](structs/UnitDef.md)
 - [UnitRuntime](structs/UnitRuntime.md)
 
-辞書項目 503 件、フィールド 120 件、根拠付き関係 163 件。
+辞書項目 503 件、フィールド 122 件、根拠付き関係 165 件。
 
-回収済み文書のVA言及・取得記録 70628 件を検索対象に含みます。辞書未登録のVAも検索できます。
+回収済み文書のVA言及・取得記録 74723 件を検索対象に含みます。辞書未登録のVAも検索できます。
 
 [登録関数間の直接CALL採録条件](static_calls_source.json) — 2373箇所。各関数ページで呼び出し元・先を参照でき、`callers VA --json` / `callees VA --json` でも検索できます。
 
 [訂正履歴](CORRECTIONS.md) — 15 件。訂正済みの旧解釈と現在の解釈を出典行付きで確認できます。
 
-[回収済み研究文書の題名・本文](DOCUMENTS.md) — 2220 文書。題名・ファイル名・研究ID・本文の通常文字列を検索できます。
+[回収済み研究文書の題名・本文](DOCUMENTS.md) — 2338 文書。題名・ファイル名・研究ID・本文の通常文字列を検索できます。

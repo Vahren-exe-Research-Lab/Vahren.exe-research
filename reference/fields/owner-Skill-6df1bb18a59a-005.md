@@ -244,6 +244,18 @@
 - [research/recovered/remaining_md1/reports/data/T012_T013_B_RESEARCH_TASKBOARD_20261013.md 行 55](../../research/recovered/remaining_md1/reports/data/T012_T013_B_RESEARCH_TASKBOARD_20261013.md?plain=1#L55-L55) — [NEXT] native owner pointer arrays+48..4C/+58..5C→Unit target out+0/+8/+10のtypedモデル、range gate and equal-distance tie and fallback、actual legal Skill+0xA18 sort
   制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
 
+- [research/recovered/text_roles2/data/T013_A18_A1C_CALLBACK_MAP_20261012.txt 行 4](../../research/recovered/text_roles2/data/T013_A18_A1C_CALLBACK_MAP_20261012.txt?plain=1#L4-L4) — Function entry clears Skill+0xA18/+0xA1C to null at 0x59FA4A/0x59FA50.
+  制約・訂正　Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result. Callback predicate bodies explicitly were not acquired; registry metadata does not waive that boundary.
+
+- [research/recovered/text_roles2/data/T013_A18_SORT_SHUFFLE_20261011.txt 行 4](../../research/recovered/text_roles2/data/T013_A18_SORT_SHUFFLE_20261011.txt?plain=1#L4-L4) — CALLERS: saved B exe/T013_SUPPORT_EVAL_FOCUS.txt 0x5460AE..0x5460F2 (normal heal), 0x57F84B..0x57F893 (support_ai_a fallback). When Skill+0xA18 !=0, 0x54A1C0 in
+  制約・訂正　Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result.
+
+- [research/recovered/text_roles2/data/T013_A18_SORT_SHUFFLE_20261011.txt 行 5](../../research/recovered/text_roles2/data/T013_A18_SORT_SHUFFLE_20261011.txt?plain=1#L5-L5) — WRAPPER: saved B exe/T012_T011_HELPER_FOCUS_20261009.txt 0x54A1C0..0x54A1EF. EAX=Skill+0xA18 carried unmodified into fourth argument of 0x54A660(begin,end,count
+  制約・訂正　Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result.
+
+- [research/recovered/text_roles2/data/T013_A18_SORT_SHUFFLE_20261011.txt 行 16](../../research/recovered/text_roles2/data/T013_A18_SORT_SHUFFLE_20261011.txt?plain=1#L16-L16) — 0054B2D1 call dword ptr [esp+0x3c]   ; two-record callback supplied via Skill+0xA18 wrapper
+  制約・訂正　Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result.
+
 <a id="field-a1c"></a>
 ## Skill + 0xA1C
 

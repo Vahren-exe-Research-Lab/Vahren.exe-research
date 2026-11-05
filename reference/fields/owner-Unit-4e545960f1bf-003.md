@@ -28,6 +28,15 @@
 - [research/recovered/rea_batch14/reports/WAVE4_FINDINGS_20261010.md 行 87](../../research/recovered/rea_batch14/reports/WAVE4_FINDINGS_20261010.md?plain=1#L87-L87) — - `0x57B9F4` support capability `Unit+0x137 != 0` かつ `0x57BA07` confusion gauge `Unit+0xC8 < 0` の時だけ、**独立の**`0x57BA10: CALL 0x5B6EAB` を追加1回。比較結果によりsupport build
   制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
 
+- [research/recovered/text_roles2/data/T013_CONFUSION_POOL_ROUTING.txt 行 11](../../research/recovered/text_roles2/data/T013_CONFUSION_POOL_ROUTING.txt?plain=1#L11-L11) — 0057B938 cmp dword ptr [Unit+0xC8], 0
+  制約・訂正　Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result.
+
+- [research/recovered/text_roles2/data/T013_CONFUSION_POOL_ROUTING.txt 行 25](../../research/recovered/text_roles2/data/T013_CONFUSION_POOL_ROUTING.txt?plain=1#L25-L25) — If Unit+0xC8<0 and RNG0_99 < unit_confusion_miss:
+  制約・訂正　Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result.
+
+- [research/recovered/text_roles2/data/T013_CONFUSION_POOL_ROUTING.txt 行 33](../../research/recovered/text_roles2/data/T013_CONFUSION_POOL_ROUTING.txt?plain=1#L33-L33) — Conclusion: Unit+0xC8 is the confusion status gauge in this routing path; negative=confused. Default unit_confusion_miss=50 gives 50% pool inversion. Attack nor
+  制約・訂正　Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result.
+
 <a id="field-cc"></a>
 ## Unit + 0xCC
 
@@ -253,6 +262,9 @@
 - [research/recovered/rea_batch14/reports/WAVE4_FINDINGS_20261010.md 行 87](../../research/recovered/rea_batch14/reports/WAVE4_FINDINGS_20261010.md?plain=1#L87-L87) — - `0x57B9F4` support capability `Unit+0x137 != 0` かつ `0x57BA07` confusion gauge `Unit+0xC8 < 0` の時だけ、**独立の**`0x57BA10: CALL 0x5B6EAB` を追加1回。比較結果によりsupport build
   制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
 
+- [research/recovered/text_roles2/data/T013_CONFUSION_POOL_ROUTING.txt 行 24](../../research/recovered/text_roles2/data/T013_CONFUSION_POOL_ROUTING.txt?plain=1#L24-L24) — Unit+0x137 gates support builder.
+  制約・訂正　Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result.
+
 <a id="field-138"></a>
 ## Unit + 0x138
 
@@ -363,20 +375,5 @@
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 737](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L737-L737) — その後、0x571B70 が Unit+0x168 = summon_max、Unit+0x13C = def の consti のコピー（0x4C1340）、Unit+0x14C = def の movetype を設定し、最後に 0x573BD0 を呼ぶ（§22/§23）。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
-
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 769](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L769-L769) — - Unit+0x168 summon_max = 0x585AD0(def, "summon_max")。0 なら `unit_summon_min`（0x46F4C0、既定値 1）、負なら 0（0x5729C0..0x572A28）。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
-
-- [research/recovered/outside_reports1/reports/exp_research_20261021/EXP_WIKI_DRAFT_PC_20261021.md 行 12](../../research/recovered/outside_reports1/reports/exp_research_20261021/EXP_WIKI_DRAFT_PC_20261021.md?plain=1#L12-L12) — 内部ではUnit+0x168=Lv、+0x16C=累積EXP、+0x170=次の閾値候補。
-  制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
-
-<a id="field-16c"></a>
-## Unit + 0x16C
-
-- [research/recovered/b_batch5/data/T011_LEVELUP_11FIELD_RECALC_CACHE_GATE_20261021_17H.md 行 8](../../research/recovered/b_batch5/data/T011_LEVELUP_11FIELD_RECALC_CACHE_GATE_20261021_17H.md?plain=1#L8-L8) — 1. `0x58A650`入口はGhidra擬似Cで`*(uint*)(Unit+0x170) <= *(uint*)(Unit+0x16C)`の**unsigned**閾値判定。従来T011 03:09資料の既存知見で再計上しない。
-  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
-
-- [research/recovered/exp/EXP_SUMMON_OWNER_RESEARCH.md 行 8](../../research/recovered/exp/EXP_SUMMON_OWNER_RESEARCH.md?plain=1#L8-L8) — 既知STATIC: ヒット経験値 writer 0x551E50 は攻撃BattleUnit+0x1C8を用い、紐づくUnit+0x16Cへ加算。
-  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; early unresolved cache/lifetime questions refined by CACHE_STRING_KEY, ENDTRANSFER, LIFECYCLE; wiki refusal is metadata only, held draft not copied
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

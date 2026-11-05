@@ -1,0 +1,53 @@
+
+=== afterhit ===
+string 0x624948 file 0x223d48
+xref 0059A9CA mov edx, 0x624948
+
+=== afterdeath ===
+string 0x624920 file 0x223d20
+string 0x624934 file 0x223d34
+string 0x62d240 file 0x22c640
+xref 0059A8F7 mov edx, 0x624920
+xref 0059A96B mov edx, 0x624934
+xref 0050FD0B mov dword ptr [esp + 0x20], 0x62d240
+
+=== knock_power ===
+string 0x624bcc file 0x223fcc
+xref 0059B76F mov edx, 0x624bcc
+
+=== knock_speed ===
+string 0x624bb8 file 0x223fb8
+string 0x6346bd file 0x233abd
+xref 0059B70F mov edx, 0x624bb8
+
+=== str ===
+string 0x624ff8 file 0x2243f8
+string 0x62c600 file 0x22ba00
+string 0x630b87 file 0x22ff87
+xref 0059CCA5 mov edx, 0x624ff8
+xref 00602832 push 0x62c600
+
+=== damage ===
+string 0x624968 file 0x223d68
+string 0x634561 file 0x233961
+string 0x634728 file 0x233b28
+xref 0059AA9A mov edx, 0x624968
+
+=== allfunc ===
+string 0x624fe8 file 0x2243e8
+xref 0059CC4F mov edx, 0x624fe8
+
+=== attack_us ===
+string 0x624898 file 0x223c98
+xref 0059A4AF mov edx, 0x624898
+
+=== func ===
+string 0x624fa4 file 0x2243a4
+string 0x624feb file 0x2243eb
+xref 0059CAE0 mov edx, 0x624fa4
+
+=== attr ===
+string 0x6248bc file 0x223cbc
+string 0x62db88 file 0x22cf88
+xref 0059A559 mov edx, 0x6248bc
+xref 004EECCA mov edx, 0x62db88
