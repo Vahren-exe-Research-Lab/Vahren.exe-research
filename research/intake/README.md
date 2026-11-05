@@ -1,5 +1,7 @@
 # Private research intake — owner ID/source links
 
+新しい研究を残す方・AIは[追加・訂正ガイド](../../CONTRIBUTING.md)から始めてください。担当の本文保全と、統合担当による辞書・検索への採録を分けて説明しています。
+
 This is the **searchable owner-source intake**; a source ID, file or owner unit test is not verified original gameplay. `PUBLISHED_INTAKE / VERIFY / NOT_CURATED` until curator examines original bytes and correction lineage. Original Golden PASS=0, strict MATCH=0, newly accepted READY=0. Official semantic knowledge remains in `REF_*.md` and `symbols.tsv` / `structs.tsv` only after independent review.
 
 
