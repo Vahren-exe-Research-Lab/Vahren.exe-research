@@ -1,3 +1,10 @@
+<!-- REA-20261105-09H-FOLLOWON-WAVE45-SEVEN-SOURCES -->
+## 2026-11-05 09H follow-on | seven further prior Wave4/Wave5 and T013 sources (43 already archived source files reviewed; zero new IDs/intake)
+
+[Owner handoff §§10–12](REA_20261105_07H_1013_1012_SAFE_SPATIAL_AND_VECTOR_CURATOR_CROSSWALK.md) Git blob 2665ce66a566461f1e82cdb030155669c8b4e4bb, commit 9421fa8d800031df219fab652cfea478c7bb0985. Three historic T013 sources in legacy B and four Wave4/Wave5 sources in legacy D, each with original relative path and **historic** source SHA256 in the handoff, compare saved ABI/conditional rand, alias-safe 24-byte append, separate scene-frame argument paths, writer/reader evidence, comparator and Unit duplicate handling. **Key correction:** 0x40B200 is full-length string equality, not intrinsically event-flag logic; 0x4A6700 insertion cannot alone prove first-wins; 0x5154F0 alias-safe append != 0x514F10 scratch end reset. Existing save schema, battle clock, Unit/Spot/Power record names and T013 counter are DUPLICATE_LINKED, not re-curated. Prior REA Wave completion snapshots are not new formal VERIFIED. Owner 266 existing ID checkpoint remains prior count, 43 is a *reviewed old-file total* only, never 43 original new IDs.
+
+**State:** historical source PRESERVED_UNKEYED_SOURCE; crosswalk NOT_CURATED/OFFLINE-UNSYNCED (Local HTTP429, current PE/V9/source SHA/active.lock/QUEUE/PROGRESS unavailable). New five-kind formal VERIFIED 0, Golden original PASS/strict MATCH/READY 0/0/0. No shared develop/REF/TSV/native asset/other-owner or refused evidence altered. **Next cursor:** start already indexed 24 VA_MATCH_ONLY / SEMANTIC_VERIFY cases with REA-LOCAL-20261029-02H-P0-OGG-STATE131-CLOSE-ABI-STATIC-01 (0x5CFEEE one-FILE* cleanup ABI), compare 10/31 current curated meaning and report correction, WITHOUT promoting VA match to CURATED or retrying held Wave6/18H/protected evidence.
+
 <!-- REA-20261105-09H-1011-1010-UNKEYED-CURATION-CROSSWALK -->
 ## 2026-11-05 09H | 12 additional previously archived 10/11–10/10 unkeyed source files meaning-reviewed (36 cumulative; 0 new source/ID)
 
