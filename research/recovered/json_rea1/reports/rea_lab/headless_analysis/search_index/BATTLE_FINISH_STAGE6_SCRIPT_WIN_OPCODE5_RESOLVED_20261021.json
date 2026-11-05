@@ -1,0 +1,51 @@
+{
+  "research_id": "BRIDGE-20261021-SCRIPT-WIN-CONFIRMED",
+  "status": "ORIGINAL PE SWITCH TABLE + X86 VERIFIED / OWNER A T006 EXISTING RESULT CONFIRMED",
+  "source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "opcode5": "win() via jump table slot5 direct target 0x004A174A",
+  "opcode4": "continue via jump table slot4 target 0x004A166E",
+  "dispatcher_initializes_EDI_zero": "0x004A1302 xor edi,edi before jump table",
+  "win_direct_handler": "0x004A174A..0x004A1764 uses PUSH EDI, so script win passes zero in the normal opcode5 path, under callee-saved EDI ABI",
+  "continue_separate_cleanup": "0x004A1670 MOV EDI,-4 is opcode4 frame-stack pointer decrement, not proof win flag equals -4; no-While helper at 0x4A1745 handles illegal continue case",
+  "owner_previous_result": "exe/T006_TARGET_DISPATCH.md documents win() native resultFlag0",
+  "correction_of_preliminary": "BATTLE_FINISH_STAGE6_SCRIPT_WIN_FLAG_DISCREPANCY_20261021.json was conservative and left a possible conflict. Explicit switch table differentiates opcode4 from opcode5 and resolves it. Do NOT create bug issue for script win flag.",
+  "new_ready_evidence_count": 0,
+  "proof": [
+    {
+      "va": "0x004A1302",
+      "opcode_bytes": "33ff",
+      "asm": "xor edi, edi"
+    },
+    {
+      "va": "0x004A166E",
+      "opcode_bytes": "32db",
+      "asm": "xor bl, bl"
+    },
+    {
+      "va": "0x004A1670",
+      "opcode_bytes": "bffcffffff",
+      "asm": "mov edi, 0xfffffffc"
+    },
+    {
+      "va": "0x004A174A",
+      "opcode_bytes": "8b8e30861e00",
+      "asm": "mov ecx, dword ptr [esi + 0x1e8630]"
+    },
+    {
+      "va": "0x004A1750",
+      "opcode_bytes": "57",
+      "asm": "push edi"
+    },
+    {
+      "va": "0x004A175C",
+      "opcode_bytes": "57",
+      "asm": "push edi"
+    },
+    {
+      "va": "0x004A1764",
+      "opcode_bytes": "e8c71effff",
+      "asm": "call 0x493630"
+    }
+  ],
+  "remaining": "Only actual native gameplay test can confirm strict win event outcomes and alternative exceptional paths."
+}

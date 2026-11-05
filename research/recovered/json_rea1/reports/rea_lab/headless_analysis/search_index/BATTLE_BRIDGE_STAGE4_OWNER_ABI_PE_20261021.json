@@ -1,0 +1,92 @@
+{
+  "id": "BRIDGE-OWNER-CROSSWALK-20261021",
+  "status": "STATIC PE VERIFIED / GAME NOT RUN / NO DETOUR",
+  "exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "manager_this": "ECX at FUN_004B9930 entry; saved ESI at 0x4B993E",
+  "game_event": "GameManager +0x504 passed in ECX at 0x4B99C7 to 0x48D6A0 at 0x4B99CD",
+  "game_task": "GameManager +0x0C stored in EDI at 0x4B996B, pushed at 0x4B99DF to 0x4C24B0",
+  "task_engine": "At 0x4C24B7, first stack argument GameTask* loaded to EBP; +0x04 is GameManager*; at 0x4C24C3 clears GameManager+0x08 state",
+  "scene_dispatch_exit": "After message pump returns, GameManager+0x08 compared to 2; if different, loop dispatches next scene at 0x4B9970. Do NOT equate this state to battle victory.",
+  "hook_analysis": "0x4B99CD callsite 5-byte E8 with ECX=GameEvent. 0x4B99D2 short JMP occupies only 2 bytes, separate adjacent mode7 branch at 0x4B99D4.",
+  "do_not_guess": [
+    "Wrapper still needs complete ABI proof and exception safety",
+    "GameTask and GameEvent are not interchangeable",
+    "Manager state+0x08 is not the raw battle result flag"
+  ],
+  "evidence": {
+    "dispatch": [
+      {
+        "va": "0x004B993E",
+        "hex": "8bf1",
+        "asm": "mov esi, ecx"
+      },
+      {
+        "va": "0x004B996B",
+        "hex": "8d7e0c",
+        "asm": "lea edi, [esi + 0xc]"
+      },
+      {
+        "va": "0x004B99C7",
+        "hex": "8d8e04050000",
+        "asm": "lea ecx, [esi + 0x504]"
+      },
+      {
+        "va": "0x004B99CD",
+        "hex": "e8ce3cfdff",
+        "asm": "call 0x48d6a0"
+      },
+      {
+        "va": "0x004B99D2",
+        "hex": "eb0b",
+        "asm": "jmp 0x4b99df"
+      },
+      {
+        "va": "0x004B99DF",
+        "hex": "57",
+        "asm": "push edi"
+      },
+      {
+        "va": "0x004B99E0",
+        "hex": "e8cb8a0000",
+        "asm": "call 0x4c24b0"
+      },
+      {
+        "va": "0x004B99E5",
+        "hex": "837e0802",
+        "asm": "cmp dword ptr [esi + 8], 2"
+      },
+      {
+        "va": "0x004B99E9",
+        "hex": "7585",
+        "asm": "jne 0x4b9970"
+      }
+    ],
+    "task_entry": [
+      {
+        "va": "0x004C24B7",
+        "hex": "8b6c2434",
+        "asm": "mov ebp, dword ptr [esp + 0x34]"
+      },
+      {
+        "va": "0x004C24BB",
+        "hex": "8b4504",
+        "asm": "mov eax, dword ptr [ebp + 4]"
+      },
+      {
+        "va": "0x004C24C3",
+        "hex": "895808",
+        "asm": "mov dword ptr [eax + 8], ebx"
+      },
+      {
+        "va": "0x004C24F4",
+        "hex": "8b4504",
+        "asm": "mov eax, dword ptr [ebp + 4]"
+      },
+      {
+        "va": "0x004C24F7",
+        "hex": "395808",
+        "asm": "cmp dword ptr [eax + 8], ebx"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "BRIDGE-LIVE-V6-WIDE-PREFLIGHT",
+  "status": "ORIGINAL_GAME_STRATEGIC_READ_ONLY_WIDE_REGIONS",
+  "pid": 15664,
+  "source_SHA256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "loadbase": "0x00050000",
+  "game_event_mode": 1,
+  "battle_active": 0,
+  "game_process_modified": false,
+  "original_exe_launched": false,
+  "actual_battle_start_packet_captured": false,
+  "checks": {
+    "game_event_vtable_matches": true,
+    "GameTask_header_128_bytes_read": true,
+    "Task_pause_byte": 0,
+    "GameTask_vector_entries": 305,
+    "GameTask_vector_wide_bytes_read": 1220,
+    "sides": [
+      {
+        "side": 0,
+        "vtable_matches": true,
+        "read_bytes": 84,
+        "troop_begin": "0x00000000",
+        "unit_begin": "0x00000000"
+      },
+      {
+        "side": 1,
+        "vtable_matches": true,
+        "read_bytes": 84,
+        "troop_begin": "0x00000000",
+        "unit_begin": "0x00000000"
+      },
+      {
+        "side": 2,
+        "vtable_matches": true,
+        "read_bytes": 84,
+        "troop_begin": "0x00000000",
+        "unit_begin": "0x00000000"
+      }
+    ],
+    "total_memory_read_bytes": 1604
+  },
+  "unknowns": []
+}

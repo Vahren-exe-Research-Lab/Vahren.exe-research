@@ -1,0 +1,87 @@
+{
+  "id": "BRIDGE-20261021-RESEARCH-06-VALIDATION",
+  "status": "ORIGINAL_PE_STATIC + SYNTHETIC AND SELF_PROCESS_ONLY; ORIGINAL_GAME_NOT_RUN",
+  "checks": {
+    "sha_original_pe_copy": true,
+    "sha_game_actual_vahren": true,
+    "no_false_mod_launcher_identity": true,
+    "abi_five_direct_callers": true,
+    "abi_callee_ret8": true,
+    "abi_result_map_condition": true,
+    "finish_raw_zero_branch": true,
+    "finish_raw_nonzero_branch": true,
+    "script_opcode5_zero_recrosscheck": true,
+    "aslr_dynamic_base": true,
+    "aslr_gamemanager_rva": true,
+    "aslr_gameevent_rva": true,
+    "live_readonly_probe_is_selftest_only": true,
+    "last_stage5_21_pass": true,
+    "ledger_unique_id_18": true,
+    "ledger_all_files_exist": true,
+    "stage6_report_saved": true,
+    "stage6_research_index_updated": true,
+    "objective_work_gate_pending": true,
+    "synthetic_50_success": true
+  },
+  "passed": 20,
+  "total": 20,
+  "synthetic_tests": 50,
+  "failed": 0,
+  "errors": 0,
+  "original_game_live_capture_count": 0,
+  "native_original_external_roundtrip_count": 0,
+  "original_game_golden_pass_count": 0,
+  "work_started": false,
+  "work_transfer_objective_pass": 2,
+  "work_transfer_objective_total": 9,
+  "previous_subjective_readiness_percent": 47.5,
+  "current_subjective_readiness_percent": 47.5,
+  "evidence_files": [
+    {
+      "filename": "BATTLE_FINISH_STAGE6_EXACT_NATIVE_ABI_GATE_20261021.json",
+      "sha256": "E09B3060711E6820029AC28B6674023EF0EE013E397E99DD39CE155B23698E65",
+      "size_bytes": 3314
+    },
+    {
+      "filename": "BATTLE_FINISH_STAGE6_SCRIPT_WIN_OPCODE5_RESOLVED_20261021.json",
+      "sha256": "444D4497C9353D29248508F53A3E968358626747BCC32FD55B1E51B3474DA49E",
+      "size_bytes": 2086
+    },
+    {
+      "filename": "BATTLE_FINISH_STAGE6_COMMIT_BRANCH_GUARD_PE_20261021.json",
+      "sha256": "AF3AB4FB5EB69A956587061A40EA49DA4CC0832DB6DF33197D6E578512DD8CF6",
+      "size_bytes": 23477
+    },
+    {
+      "filename": "BATTLE_BRIDGE_STAGE6_ASLR_PE_LAYOUT_20261021.json",
+      "sha256": "6B8F4CB98E00E57DA11C6770EDCF58D3979BE4C18ECCBF07B38B010CE717A4BC",
+      "size_bytes": 1829
+    },
+    {
+      "filename": "BATTLE_LIVE_READONLY_PROBE_SELFTEST_20261021.json",
+      "sha256": "4C7B76E5FF03DB32BB72F24F161A24AB569E30CF4DD3DD622719D06E4A430A42",
+      "size_bytes": 269
+    },
+    {
+      "filename": "BATTLE_TAKEOVER_RESEARCH_STAGE6_20261021.md",
+      "sha256": "27AC5FC7FE26C17858E1B7FDE58E6D2C135CEF2E285A229DA361B034AEB5EFF2",
+      "size_bytes": 7757
+    },
+    {
+      "filename": "BATTLE_BRIDGE_FINDINGS_LEDGER.jsonl",
+      "sha256": "3859C33FC037EA75D93605E66CA1BB18D1C044E3281C0906747F748F5289A974",
+      "size_bytes": 16107
+    },
+    {
+      "filename": "BATTLE_BRIDGE_RESEARCH_INDEX.md",
+      "sha256": "EA1E960A422F2A8702EEDBAF9317593D7CE1B7FC3544C326513CD3B868BC9715",
+      "size_bytes": 6751
+    }
+  ],
+  "synthetic_test_output": "..................................................\n----------------------------------------------------------------------\nRan 50 tests in 0.016s\n\nOK\n",
+  "warnings": [
+    "Only original PE and original saved-byte data have been used; no legitimate native battle executed.",
+    "Native process reader selftest touched only the current Python process.",
+    "Stage6 crossjoin with owner A/B/C does not increase their READY/DONE status."
+  ]
+}

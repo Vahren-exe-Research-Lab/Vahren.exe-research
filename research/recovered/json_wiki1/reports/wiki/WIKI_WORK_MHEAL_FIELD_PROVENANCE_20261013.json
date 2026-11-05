@@ -1,0 +1,447 @@
+{
+  "schema": "WIKI_WORK_MHEAL_PROVENANCE_V1",
+  "purpose": "Assist Work owner replacing synthetic runtime fields only when Native producer is grounded",
+  "Work_test_snapshot_sha256": {
+    "fixture": "0ef107cf866c5b372d66d2bee56f24b5648cf2d5c3c84a116093eaef684bc155",
+    "source_result": "22f10b0265fe4d6a301b8363a24c483365c2ee1112d53c34cabae6fc750cebdd"
+  },
+  "Work_source_result_core_return": {
+    "unit_pointer": 1,
+    "record_pointer": 12000,
+    "next_va": 5563164,
+    "native_return_va": 5578314,
+    "index_after": 1,
+    "security_check_va": 5989651,
+    "security_check_passed": true,
+    "core_returned": true,
+    "blocked": true
+  },
+  "Work_execution_status": "VERIFY",
+  "Work_original_golden": 0,
+  "source_file": "a_default/script/30_スキル/F13_heal_support.dat",
+  "source_SHA256": "5f7a6e6df21e0facbd874327eacb334c9867516d5510c3f4956b17ff72317cd2",
+  "source_line": 54,
+  "source_direct_props": {
+    "name": [
+      "ヒール"
+    ],
+    "icon": [
+      "skill_014.png",
+      "@ligh.png"
+    ],
+    "help": [
+      "$射程距離：500　（接敵時使用不可）$技中移動力：50％$―――――――――$[属性：補助・ＨＰ回復][魔力×200％]"
+    ],
+    "sound": [
+      "tm2_coin000"
+    ],
+    "image": [
+      "eff_d_heal"
+    ],
+    "anime": [
+      "3"
+    ],
+    "flash_image": [
+      "eff_d_heal"
+    ],
+    "flash_anime": [
+      "8"
+    ],
+    "attr": [
+      "hp"
+    ],
+    "w": [
+      "48"
+    ],
+    "h": [
+      "48"
+    ],
+    "a": [
+      "220"
+    ],
+    "func": [
+      "heal"
+    ],
+    "flash": [
+      "5"
+    ],
+    "speed": [
+      "500"
+    ],
+    "range": [
+      "500"
+    ],
+    "slow_per": [
+      "50"
+    ],
+    "str": [
+      "magic * 200"
+    ],
+    "mp": [
+      "80"
+    ],
+    "sortkey": [
+      "-500"
+    ],
+    "hide_help": [
+      "on"
+    ]
+  },
+  "source_effective": {
+    "func": {
+      "found": true,
+      "string": "heal",
+      "numeric": 0,
+      "keyword_values": null,
+      "direct_values": [
+        "heal"
+      ]
+    },
+    "mp": {
+      "found": true,
+      "string": "80",
+      "numeric": 80,
+      "keyword_values": null,
+      "direct_values": [
+        "80"
+      ]
+    },
+    "special": {
+      "found": false,
+      "string": null,
+      "numeric": null,
+      "keyword_values": null,
+      "direct_values": null
+    },
+    "rush": {
+      "found": false,
+      "string": null,
+      "numeric": null,
+      "keyword_values": null,
+      "direct_values": null
+    },
+    "flash": {
+      "found": true,
+      "string": "5",
+      "numeric": 5,
+      "keyword_values": null,
+      "direct_values": [
+        "5"
+      ]
+    },
+    "add_per": {
+      "found": false,
+      "string": null,
+      "numeric": null,
+      "keyword_values": null,
+      "direct_values": null
+    },
+    "attr": {
+      "found": true,
+      "string": "hp",
+      "numeric": 0,
+      "keyword_values": null,
+      "direct_values": [
+        "hp"
+      ]
+    },
+    "str": {
+      "found": true,
+      "string": null,
+      "numeric": null,
+      "keyword_values": [
+        "magic * 200"
+      ],
+      "direct_values": [
+        "magic * 200"
+      ]
+    },
+    "range": {
+      "found": true,
+      "string": "500",
+      "numeric": 500,
+      "keyword_values": null,
+      "direct_values": [
+        "500"
+      ]
+    },
+    "check": {
+      "found": false,
+      "string": null,
+      "numeric": null,
+      "keyword_values": null,
+      "direct_values": null
+    },
+    "range_min": {
+      "found": false,
+      "string": null,
+      "numeric": null,
+      "keyword_values": null,
+      "direct_values": null
+    },
+    "gun_delay": {
+      "found": false,
+      "string": null,
+      "numeric": null,
+      "keyword_values": null,
+      "direct_values": null
+    },
+    "add2": {
+      "found": false,
+      "string": null,
+      "numeric": null,
+      "keyword_values": null,
+      "direct_values": null
+    },
+    "add_all": {
+      "found": false,
+      "string": null,
+      "numeric": null,
+      "keyword_values": null,
+      "direct_values": null
+    },
+    "allfunc": {
+      "found": false,
+      "string": null,
+      "numeric": null,
+      "keyword_values": null,
+      "direct_values": null
+    },
+    "exp_per": {
+      "found": false,
+      "string": null,
+      "numeric": null,
+      "keyword_values": null,
+      "direct_values": null
+    },
+    "delay": {
+      "found": false,
+      "string": null,
+      "numeric": null,
+      "keyword_values": null,
+      "direct_values": null
+    }
+  },
+  "Work_runtime_fields": {
+    "0x4C": 3,
+    "0x40": 3,
+    "0x44": 0,
+    "0x278": 80,
+    "0x210": 0,
+    "0xA1C": 5870384,
+    "0x88": 0,
+    "0x254": 0,
+    "0x1C": 4,
+    "0x20": 4,
+    "0x48": 0,
+    "0x24": 8,
+    "0x2C": -17956950,
+    "0x2A0": 0.0,
+    "0x2B4": 0,
+    "0x230": 100,
+    "0x158": 0,
+    "0x15C": 0,
+    "0x120": 2,
+    "0x74": 0
+  },
+  "Work_runtime_note": "Skill+74=0 is explicit SYNTHETIC runtime input, raw producer unresolved; Skill+4C=3 remains SYNTHETIC (m_heal special unspecified). EXP conversion remains explicitly assumed.; target8D=1/185F4=4 and count2 are SYNTHETIC explicit branch inputs, not observed original runtime.; native core stack/cookie/previousSEH explicit SYNTHETIC values captured at entry, not a callee-success flag.",
+  "provenance_table": [
+    {
+      "field": "0x278",
+      "name": "compiled MP cost",
+      "script_key": "mp",
+      "value": 80,
+      "binding": "SOURCE_MATCH",
+      "ref": "T011/T012 Skill+278 cost",
+      "DAT_effective_state": {
+        "found": true,
+        "string": "80",
+        "numeric": 80,
+        "keyword_values": null,
+        "direct_values": [
+          "80"
+        ]
+      },
+      "native_0x_offset_source_verified": true
+    },
+    {
+      "field": "0x4C",
+      "name": "Skill MP early/late admission mode",
+      "script_key": "special",
+      "value": 3,
+      "binding": "SYNTHETIC_NOT_SOURCE",
+      "ref": "B1740 Skill+4C special; raw m_heal missing",
+      "DAT_effective_state": {
+        "found": false,
+        "string": null,
+        "numeric": null,
+        "keyword_values": null,
+        "direct_values": null
+      },
+      "native_0x_offset_source_verified": false
+    },
+    {
+      "field": "0x74",
+      "name": "Skill rush count",
+      "script_key": "rush",
+      "value": 0,
+      "binding": "SYNTHETIC_NOT_YET_SOURCE_PROVEN",
+      "ref": "B-20261013-1920-02/B1930-01 Rush+74 native setter. m_heal raw rush not declared",
+      "DAT_effective_state": {
+        "found": false,
+        "string": null,
+        "numeric": null,
+        "keyword_values": null,
+        "direct_values": null
+      },
+      "native_0x_offset_source_verified": false
+    },
+    {
+      "field": "0x230",
+      "name": "add_per compiled chance",
+      "script_key": "add_per",
+      "value": 100,
+      "binding": "NATIVE_DEFAULT_100_SAVED",
+      "ref": "B1322 zero / absent add_per compiled chance100",
+      "DAT_effective_state": {
+        "found": false,
+        "string": null,
+        "numeric": null,
+        "keyword_values": null,
+        "direct_values": null
+      },
+      "native_0x_offset_source_verified": true
+    },
+    {
+      "field": "0xA1C",
+      "name": "hp callback filter pointer",
+      "script_key": "attr",
+      "value": 5870384,
+      "binding": "SOURCE_AND_B_NATIVE_CALLBACK",
+      "ref": "B 59FA40 19-key hp +A1C=0x599330",
+      "DAT_effective_state": {
+        "found": true,
+        "string": "hp",
+        "numeric": 0,
+        "keyword_values": null,
+        "direct_values": [
+          "hp"
+        ]
+      },
+      "native_0x_offset_source_verified": true
+    },
+    {
+      "field": "0x248",
+      "name": "flash signed count or strength",
+      "script_key": "flash",
+      "value": 5,
+      "binding": "SOURCE_MATCH_IN_TRACE",
+      "ref": "B core E-side signed flash gate/Work 551C7F..",
+      "DAT_effective_state": {
+        "found": true,
+        "string": "5",
+        "numeric": 5,
+        "keyword_values": null,
+        "direct_values": [
+          "5"
+        ]
+      },
+      "native_0x_offset_source_verified": true
+    },
+    {
+      "field": "0x6F0",
+      "name": "flash source record count",
+      "script_key": null,
+      "value": 2,
+      "binding": "SYNTHETIC_NOT_ORIGINAL_DAT_PRODUCER",
+      "ref": "Work action35 source_count=2, original producer unresolved / literal extraction denied",
+      "DAT_effective_state": {},
+      "native_0x_offset_source_verified": false
+    },
+    {
+      "field": "0x6F4",
+      "name": "flash source records pointer",
+      "script_key": null,
+      "value": null,
+      "binding": "UNKNOWN_SOURCE_RECORDS",
+      "ref": "B source=&Skill+6F4, native storage/record encoding not yet bound",
+      "DAT_effective_state": {},
+      "native_0x_offset_source_verified": false
+    },
+    {
+      "field": "0x210",
+      "name": "cooldown node key",
+      "script_key": "gun_delay",
+      "value": 0,
+      "binding": "SYNTHETIC_OR_NO_SOURCE",
+      "ref": "Skill+210/+214 tree binding separate; no equivalent of missing gun_delay proven",
+      "DAT_effective_state": {
+        "found": false,
+        "string": null,
+        "numeric": null,
+        "keyword_values": null,
+        "direct_values": null
+      },
+      "native_0x_offset_source_verified": false
+    },
+    {
+      "field": "0x88",
+      "name": "support range lower bound",
+      "script_key": "range_min",
+      "value": 0,
+      "binding": "EXPLICIT_RUNTIME_UNVERIFIED",
+      "ref": "support Skill+88 is distinct from missile range_min",
+      "DAT_effective_state": {
+        "found": false,
+        "string": null,
+        "numeric": null,
+        "keyword_values": null,
+        "direct_values": null
+      },
+      "native_0x_offset_source_verified": false
+    },
+    {
+      "field": "0x2A0",
+      "name": "effect spatial double",
+      "script_key": null,
+      "value": 0.0,
+      "binding": "EXPLICIT_RUNTIME_UNVERIFIED",
+      "ref": "B-20261013-1930-07 scaled percent producer raw literal human name unknown",
+      "DAT_effective_state": {},
+      "native_0x_offset_source_verified": false
+    },
+    {
+      "field": "0x2B4",
+      "name": "effect raw directional field",
+      "script_key": null,
+      "value": 0,
+      "binding": "EXPLICIT_RUNTIME_UNVERIFIED",
+      "ref": "B-20261013-1930-07 generic numeric getter raw literal unknown",
+      "DAT_effective_state": {},
+      "native_0x_offset_source_verified": false
+    },
+    {
+      "field": "0x268",
+      "name": "post-core conditional geometry phase",
+      "script_key": null,
+      "value": null,
+      "binding": "MISSING_IN_FIXTURE",
+      "ref": "B-20261013-1926-03 upstream two writers 30/generic, identity raw key VERIFY",
+      "DAT_effective_state": {},
+      "native_0x_offset_source_verified": false
+    }
+  ],
+  "allowed_next_steps": [
+    "Reuse existing Work1041 HP/EXP->flash->core-return test results, do not reimplement",
+    "Obtain signed Skill+248 writer route for flash=-4 source or use explicit manual synthetic binding",
+    "For m_heal flash5 preserve pending +6F0 source-count and +6F4 records; never synthesize success",
+    "Reduce synthetic +4C=3/+74=0 only after compiler fields from generic A/B saved evidence",
+    "Unit/Task complete return requires 54E31C and upper consumer proof after bounded core return"
+  ],
+  "blocked": [
+    "Skill+6F0 denied literal extraction remains blocked",
+    "Generic Native getter missing/parent/@ field final compiler for m_heal not fully proven"
+  ],
+  "original_actual_play": 0,
+  "strict_MATCH": 0
+}

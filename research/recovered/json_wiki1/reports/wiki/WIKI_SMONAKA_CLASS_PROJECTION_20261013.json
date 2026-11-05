@@ -1,0 +1,49 @@
+{
+  "status": "STATIC Work parser+definition projection (not native summon spawns)",
+  "skill": "s_monaka",
+  "file_sha256": "8e17ff4566dfc1547323b5acc89dee41b918ea946be160555b758431c0ec3ac3",
+  "candidates": {
+    "mona0071": {
+      "source_kind": "class",
+      "work_unit_def_is_unit": false,
+      "work_class_tag": "mona0071",
+      "race": "r2_hu",
+      "parent": "base",
+      "member_count": 7,
+      "member_values": [
+        "mona0071",
+        "mona0071",
+        "mona0071",
+        "mona0071",
+        "mona0071",
+        "mona0071",
+        "mona0071"
+      ],
+      "inherited_hp": "5500",
+      "inherited_movetype": "snowh"
+    },
+    "mona0072": {
+      "source_kind": "class",
+      "work_unit_def_is_unit": false,
+      "work_class_tag": "mona0072",
+      "race": "r2_hu",
+      "parent": "mona0071",
+      "member_count": 7,
+      "member_values": [
+        "mona0072",
+        "mona0072",
+        "mona0072",
+        "mona0072",
+        "mona0072",
+        "mona0072",
+        "mona0072"
+      ],
+      "inherited_hp": "5500",
+      "inherited_movetype": "snowh"
+    }
+  },
+  "expected_native_core": "0x54E7B0",
+  "test_executed": "NativeRegistries.add/lookup, unit_definition; NOT actual Unit factory",
+  "old_gameplay_golden": 0,
+  "new_strict_match": 0
+}

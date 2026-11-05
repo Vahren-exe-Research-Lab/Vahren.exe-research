@@ -1,0 +1,73 @@
+{
+  "status": "LOCAL WORK_BOUNDED_STAGE_SYNTHETIC ON ORIGINAL DAT -4",
+  "source_skill_parent": "m_heal",
+  "skills": [
+    {
+      "tag": "sp_fmrim_heal",
+      "raw_dat_flash": "-4",
+      "NativeScriptData_number": -4,
+      "manually_bound_Skill_248": -4,
+      "work_next_va": "0x551cf2",
+      "requires_skill_6f0": false,
+      "work_callee_va": null,
+      "work_parent_returned": false,
+      "work_target_unchanged": true,
+      "synthetic_env": "SupportCoreFlashTests.make",
+      "source_compiler_tested": false,
+      "old_gameplay_tested": false,
+      "pass": true
+    },
+    {
+      "tag": "sp_fmrim_heal2",
+      "raw_dat_flash": "-4",
+      "NativeScriptData_number": -4,
+      "manually_bound_Skill_248": -4,
+      "work_next_va": "0x551cf2",
+      "requires_skill_6f0": false,
+      "work_callee_va": null,
+      "work_parent_returned": false,
+      "work_target_unchanged": true,
+      "synthetic_env": "SupportCoreFlashTests.make",
+      "source_compiler_tested": false,
+      "old_gameplay_tested": false,
+      "pass": true
+    },
+    {
+      "tag": "sp_fmrim_heal3",
+      "raw_dat_flash": "-4",
+      "NativeScriptData_number": -4,
+      "manually_bound_Skill_248": -4,
+      "work_next_va": "0x551cf2",
+      "requires_skill_6f0": false,
+      "work_callee_va": null,
+      "work_parent_returned": false,
+      "work_target_unchanged": true,
+      "synthetic_env": "SupportCoreFlashTests.make",
+      "source_compiler_tested": false,
+      "old_gameplay_tested": false,
+      "pass": true
+    }
+  ],
+  "source_script_files": [
+    "30_スキル/F13_heal_support.dat",
+    "31_ユニットスキル/U_必殺_26_30_原理～イースター.dat"
+  ],
+  "source_zip_sha256": "a1dac7209fca6fbf7d05d956054047b4c36e5149eb100434bf796ccb94970423",
+  "Work_test_helper": "dev_lab/tests/test_native_unit_tick.py::SupportCoreFlashTests.make (read-only)",
+  "Work_gate": "dev_lab/src/hakushin_compat/native_unit_ai.py::resume_selected_support_core_flash",
+  "explicit_no_effects": [
+    "Unit HP no new effects",
+    "Target ring unchanged",
+    "RNG cursor not present in this helper",
+    "Unit function not returned"
+  ],
+  "remaining": [
+    "Real compiled Skill+248 from raw flash=-4 not proven",
+    "Legitimate sp_fmrim_joker event grant/skill activation not proven",
+    "Synthetic source Unit is NOT a real sp_fmrim_joker owner",
+    "551D40 -> 551E4A -> 54E31C -> Unit return still depends on Work stages",
+    "No original gameplay/strict parity"
+  ],
+  "old_gameplay_Golden": 0,
+  "strict_new_MATCH": 0
+}

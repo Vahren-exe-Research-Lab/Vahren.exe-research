@@ -1,0 +1,261 @@
+{
+  "status": "WORK typed Heal DAT attr vs saved B native 19 +A18/+A1C key table; not real targets",
+  "source": "WIKI_FULL_DAT_ADAPTER_COVERAGE_20261013.json",
+  "work_callback_raw_keys": [
+    "hp",
+    "mp",
+    "attack",
+    "defense",
+    "magic",
+    "magdef",
+    "speed",
+    "dext",
+    "move",
+    "hprec",
+    "mprec",
+    "poi",
+    "para",
+    "sil",
+    "conf",
+    "ill",
+    "stone",
+    "fear",
+    "all"
+  ],
+  "work_callback_keys_count": 19,
+  "heal_skill_total": 320,
+  "heal_typed_success": 319,
+  "heal_raw_attribute_histogram": {
+    "dext": 24,
+    "speed": 8,
+    "hp": 71,
+    "move": 37,
+    "ch": 2,
+    "all": 33,
+    "mp": 20,
+    "attack": 26,
+    "defense": 23,
+    "magic": 20,
+    "magdef": 1,
+    "hprec": 6,
+    "mprec": 3,
+    "": 38,
+    "poi": 1,
+    "stone": 2,
+    "para": 2,
+    "fear": 1,
+    "conf": 1
+  },
+  "heal_unique_raw_attributes": 19,
+  "heal_attributes_not_in_19key_table": [
+    {
+      "skill": "m_yaku_nt2_c4",
+      "attr": "ch",
+      "mp": 0
+    },
+    {
+      "skill": "sp_move_nt2",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "sp_heal_nt1",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "sp_heal_nt2",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "sp_knn_nt1",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "heal_clown_mprec",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "son_voe_down2",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "son_voe_down3",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "son_voe_down4",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "son_voe_down5",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "son_voe_down6",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "son_voe_down7",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "sp_zrklson_at",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "sp_zrklson_df",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "sp_zrklson_mg",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "sp_zrklson_dx",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "sp_zrklson_sp",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "sp_zrklson_hr",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "sp_zrklson_mr",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "sp_zrklson_mv",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "senkyo_happy_nt1",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "sp_biim_kamakura_nt1",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "sp_biim_kamakura_nt2",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "sp_jun_yaku_nt2_c4",
+      "attr": "ch",
+      "mp": 0
+    },
+    {
+      "skill": "sp_nyn_down",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "sp_ryuma_nt2",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "kdance_move",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "sp_heal2_nt1",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "sp_heal2_nt2",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "sp_heal_3_nt1",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "g_inmudash_heal",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "asasin_cream_protect_ability_1",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "asasin_cream_weapon_ability_self",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "asasin_cream_weapon_ability_enemy",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "asasin_cream_weapon_glove_ability_self",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "asasin_cream_weapon_glove_ability_enemy",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "hanzo_cream_weapon_ability_self",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "hanzo_cream_weapon_ability_enemy",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "hanzo_cream_weapon_glove_ability_self",
+      "attr": "",
+      "mp": 0
+    },
+    {
+      "skill": "hanzo_cream_weapon_glove_ability_enemy",
+      "attr": "",
+      "mp": 0
+    }
+  ],
+  "heal_untyped": [
+    {
+      "skill": "u_diplo_nt",
+      "reason": "DatHealGap: VERIFY str: one known mode * signed integer required"
+    }
+  ],
+  "assumption": "Skill+0x110 attr table and 551653 68D420 attr-string table are not proven identical",
+  "native_gameplay": false,
+  "golden": 0
+}

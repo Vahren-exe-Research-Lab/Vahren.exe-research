@@ -1,0 +1,373 @@
+{
+  "research_id": "BRIDGE-20261022-RESEARCH-16",
+  "subject": "ORIGINAL_NORMAL_BATTLE_ENTRY_BOUNDARIES",
+  "evidence_class": "ORIGINAL_PE_AND_TWO_ARCHIVED_ORIGINAL_GAME_RUNS",
+  "source_SHA256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "scene_dispatch_jump_table": {
+    "0": "0x4b9982",
+    "1": "0x4b99b9",
+    "2": "0x4b99c7",
+    "3": "0x4b99df",
+    "4": "0x4b998f",
+    "5": "0x4b99ab",
+    "6": "0x4b999d",
+    "7": "0x4b99d4"
+  },
+  "normal_scene_index": 2,
+  "fade_out_vtable": "0x6388d4",
+  "fade_in_vtable": "0x638d84",
+  "both_fade_update_vf_plus4": "0x543b10",
+  "native_instructions": {
+    "0x4b9970": {
+      "bytes": "8b8644f11e00",
+      "asm": "mov eax, dword ptr [esi + 0x1ef144]"
+    },
+    "0x4b997b": {
+      "bytes": "ff2485fc994b00",
+      "asm": "jmp dword ptr [eax*4 + 0x4b99fc]"
+    },
+    "0x4b99c7": {
+      "bytes": "8d8e04050000",
+      "asm": "lea ecx, [esi + 0x504]"
+    },
+    "0x4b99cd": {
+      "bytes": "e8ce3cfdff",
+      "asm": "call 0x48d6a0"
+    },
+    "0x4b99d2": {
+      "bytes": "eb0b",
+      "asm": "jmp 0x4b99df"
+    },
+    "0x4b99e0": {
+      "bytes": "e8cb8a0000",
+      "asm": "call 0x4c24b0"
+    },
+    "0x4b99e5": {
+      "bytes": "837e0802",
+      "asm": "cmp dword ptr [esi + 8], 2"
+    },
+    "0x4c24c3": {
+      "bytes": "895808",
+      "asm": "mov dword ptr [eax + 8], ebx"
+    },
+    "0x4c26dc": {
+      "bytes": "ffd0",
+      "asm": "call eax"
+    },
+    "0x4c2714": {
+      "bytes": "e8b7010000",
+      "asm": "call 0x4c28d0"
+    },
+    "0x4921cd": {
+      "bytes": "e8ce000000",
+      "asm": "call 0x4922a0"
+    },
+    "0x4923eb": {
+      "bytes": "389d43ed1e00",
+      "asm": "cmp byte ptr [ebp + 0x1eed43], bl"
+    },
+    "0x4923f1": {
+      "bytes": "754e",
+      "asm": "jne 0x492441"
+    },
+    "0x492412": {
+      "bytes": "6a02",
+      "asm": "push 2"
+    },
+    "0x492417": {
+      "bytes": "e814160b00",
+      "asm": "call 0x543a30"
+    },
+    "0x49241c": {
+      "bytes": "c706d4886300",
+      "asm": "mov dword ptr [esi], 0x6388d4"
+    },
+    "0x543c01": {
+      "bytes": "3d10270000",
+      "asm": "cmp eax, 0x2710"
+    },
+    "0x543c0b": {
+      "bytes": "898244f11e00",
+      "asm": "mov dword ptr [edx + 0x1ef144], eax"
+    },
+    "0x543c14": {
+      "bytes": "c7400801000000",
+      "asm": "mov dword ptr [eax + 8], 1"
+    },
+    "0x48d6e1": {
+      "bytes": "c7833cec1e0002000000",
+      "asm": "mov dword ptr [ebx + 0x1eec3c], 2"
+    },
+    "0x48d6eb": {
+      "bytes": "c68344ec1e0000",
+      "asm": "mov byte ptr [ebx + 0x1eec44], 0"
+    },
+    "0x48d810": {
+      "bytes": "e8ab470300",
+      "asm": "call 0x4c1fc0"
+    },
+    "0x48e9e1": {
+      "bytes": "83bb0ced1e0000",
+      "asm": "cmp dword ptr [ebx + 0x1eed0c], 0"
+    },
+    "0x48e9f0": {
+      "bytes": "e8db4efaff",
+      "asm": "call 0x4338d0"
+    },
+    "0x48ea16": {
+      "bytes": "6810270000",
+      "asm": "push 0x2710"
+    },
+    "0x48ea23": {
+      "bytes": "c706848d6300",
+      "asm": "mov dword ptr [esi], 0x638d84"
+    },
+    "0x48ea5a": {
+      "bytes": "c3",
+      "asm": "ret "
+    },
+    "0x433b1c": {
+      "bytes": "8941fc",
+      "asm": "mov dword ptr [ecx - 4], eax"
+    },
+    "0x433e58": {
+      "bytes": "e833ea0500",
+      "asm": "call 0x492890"
+    },
+    "0x492960": {
+      "bytes": "c7863cec1e0002000000",
+      "asm": "mov dword ptr [esi + 0x1eec3c], 2"
+    },
+    "0x49296a": {
+      "bytes": "c68644ec1e0001",
+      "asm": "mov byte ptr [esi + 0x1eec44], 1"
+    }
+  },
+  "archived_runs": [
+    {
+      "session": "BATTLE_USER_20261021T163100686424Z_9cddfc86",
+      "original_pid": 28432,
+      "fade_to_active_sample_window_seconds": 2.737005,
+      "fade_observation": {
+        "mode": 2,
+        "active": 0,
+        "attack_count": 3,
+        "battlefield_ptr": "0x4100FA68",
+        "world_mode": 1,
+        "scene_type": 2,
+        "frame_counter": 0,
+        "pause": 0,
+        "task_active_start_ptr": "0x16DC7028",
+        "task_active_end_ptr": "0x16DC7028"
+      },
+      "active_observation": {
+        "mode": 2,
+        "active": 1,
+        "attack_count": 3,
+        "battlefield_ptr": "0x4100FA68",
+        "world_mode": 0,
+        "scene_type": 2,
+        "frame_counter": 63,
+        "pause": 0,
+        "task_active_start_ptr": "0x16DC7028",
+        "task_active_end_ptr": "0x16DC7854"
+      },
+      "archive_records": [
+        {
+          "name": "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_01.json",
+          "sha256": "7C0A7BD05FFAB908A90BBBEC0863FCE040A99A33A17E75520C9CC19094565332",
+          "GameEvent_task_index": 0,
+          "first_Unit_task_index": 98,
+          "task_categories_before_first_Unit": {
+            "GameEvent": 1,
+            "DialogWnd": 1,
+            "Player": 1,
+            "Enemy": 2,
+            "StaticUnit": 85,
+            "Troop": 8
+          },
+          "snapshot_guard_is_atomic": false
+        },
+        {
+          "name": "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_02.json",
+          "sha256": "D7662477F8D136EBD98541061A9E896F9B535193046CB0C0F01F95FDC826D9C8",
+          "GameEvent_task_index": 0,
+          "first_Unit_task_index": 98,
+          "task_categories_before_first_Unit": {
+            "GameEvent": 1,
+            "DialogWnd": 1,
+            "Player": 1,
+            "Enemy": 2,
+            "StaticUnit": 85,
+            "Troop": 8
+          },
+          "snapshot_guard_is_atomic": false
+        },
+        {
+          "name": "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_03.json",
+          "sha256": "4806E392CBC3ED29756C5C3BCDC65ABD40B176DF6AFFC80CE6C420A5F66CA088",
+          "GameEvent_task_index": 0,
+          "first_Unit_task_index": 98,
+          "task_categories_before_first_Unit": {
+            "GameEvent": 1,
+            "DialogWnd": 1,
+            "Player": 1,
+            "Enemy": 2,
+            "StaticUnit": 85,
+            "Troop": 8
+          },
+          "snapshot_guard_is_atomic": false
+        },
+        {
+          "name": "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_05.json",
+          "sha256": "77B29DC80A2CA84BD347A56D63E3830D54044358599961D0C7D0678B6352F9E7",
+          "GameEvent_task_index": 0,
+          "first_Unit_task_index": 98,
+          "task_categories_before_first_Unit": {
+            "GameEvent": 1,
+            "DialogWnd": 1,
+            "Player": 1,
+            "Enemy": 2,
+            "StaticUnit": 85,
+            "Troop": 8
+          },
+          "snapshot_guard_is_atomic": false
+        }
+      ]
+    },
+    {
+      "session": "BATTLE_USER_20261021T164622798833Z_b8419f5d",
+      "original_pid": 32468,
+      "fade_to_active_sample_window_seconds": 2.832952,
+      "fade_observation": {
+        "mode": 2,
+        "active": 0,
+        "attack_count": 3,
+        "battlefield_ptr": "0x420C61F0",
+        "world_mode": 1,
+        "scene_type": 2,
+        "frame_counter": 0,
+        "pause": 0,
+        "task_active_start_ptr": "0x1E60E020",
+        "task_active_end_ptr": "0x1E60E020"
+      },
+      "active_observation": {
+        "mode": 2,
+        "active": 1,
+        "attack_count": 3,
+        "battlefield_ptr": "0x420C61F0",
+        "world_mode": 0,
+        "scene_type": 2,
+        "frame_counter": 73,
+        "pause": 0,
+        "task_active_start_ptr": "0x1E60E020",
+        "task_active_end_ptr": "0x1E60E84C"
+      },
+      "archive_records": [
+        {
+          "name": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_01.json",
+          "sha256": "9DE328DA5FBFF98151ED2A26133FC123EABE6972DF1C6588F0DC4AB26098A034",
+          "GameEvent_task_index": 0,
+          "first_Unit_task_index": 98,
+          "task_categories_before_first_Unit": {
+            "GameEvent": 1,
+            "DialogWnd": 1,
+            "Player": 1,
+            "Enemy": 2,
+            "StaticUnit": 85,
+            "Troop": 8
+          },
+          "snapshot_guard_is_atomic": false
+        },
+        {
+          "name": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_02.json",
+          "sha256": "285F30D088752016F1792800EE8DD7E32E630BB5523C464FEC737DA7D4B7C614",
+          "GameEvent_task_index": 0,
+          "first_Unit_task_index": 98,
+          "task_categories_before_first_Unit": {
+            "GameEvent": 1,
+            "DialogWnd": 1,
+            "Player": 1,
+            "Enemy": 2,
+            "StaticUnit": 85,
+            "Troop": 8
+          },
+          "snapshot_guard_is_atomic": false
+        },
+        {
+          "name": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_04.json",
+          "sha256": "BC5C91413202D1F2512EFEE679B7DA08CD8DA0CA4E86AFCCED288E4BD051056A",
+          "GameEvent_task_index": 0,
+          "first_Unit_task_index": 98,
+          "task_categories_before_first_Unit": {
+            "GameEvent": 1,
+            "DialogWnd": 1,
+            "Player": 1,
+            "Enemy": 2,
+            "StaticUnit": 85,
+            "Troop": 8
+          },
+          "snapshot_guard_is_atomic": false
+        },
+        {
+          "name": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_05.json",
+          "sha256": "72FF106B32D2AF20384685A0F45D8DB587EE5EFC9F3F93C75F43E31EB77A3108",
+          "GameEvent_task_index": 0,
+          "first_Unit_task_index": 98,
+          "task_categories_before_first_Unit": {
+            "GameEvent": 1,
+            "DialogWnd": 1,
+            "Player": 1,
+            "Enemy": 2,
+            "StaticUnit": 85,
+            "Troop": 8
+          },
+          "snapshot_guard_is_atomic": false
+        }
+      ]
+    }
+  ],
+  "entry_phases": [
+    {
+      "name": "FADE_OUT_SCENE_REQUEST",
+      "site": "0x543c0b",
+      "status": "STATIC_AND_ARCHIVED_TRANSITION",
+      "risk": "Native Unit roster not built yet; setter occurs in existing Task callback"
+    },
+    {
+      "name": "BEFORE_SCENE_CONSTRUCTOR",
+      "site": "0x4b99cd",
+      "status": "STATIC_CANDIDATE",
+      "risk": "Native map/units absent; skipping builder would omit native setup"
+    },
+    {
+      "name": "AFTER_SCENE_CONSTRUCTOR_BEFORE_HOST_LOOP",
+      "site": "0x4b99d2",
+      "status": "STATIC_CANDIDATE_NO_HOOK",
+      "risk": "2-byte short jump; original builder may already run VM, RNG reseed, UI callbacks"
+    },
+    {
+      "name": "SCRIPT_BATTLE_ACTIVE_ACTIVATION",
+      "site": "0x433e58",
+      "status": "STATIC_CONDITIONAL_CALL",
+      "risk": "VM already advanced PC; 0x492890 carries side and pending side effects"
+    },
+    {
+      "name": "BEFORE_HOST_TASK_PASS",
+      "site": "0x4c2714",
+      "status": "STATIC_SHARED_TASK_BOUNDARY",
+      "risk": "Host input and pause callbacks already ran; first-pass proof not established"
+    }
+  ],
+  "no_original_game_accessed": true,
+  "no_original_game_written": true,
+  "no_hook_installed": true,
+  "work_not_used": true,
+  "full_G1_proven": false,
+  "external_roundtrip_proven": false,
+  "work_gate": [
+    3,
+    9
+  ],
+  "note": "VM and task runner side effects cannot be cancelled by only skipping a visual scene; exact first update is not sampled."
+}

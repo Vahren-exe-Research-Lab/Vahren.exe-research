@@ -1,0 +1,913 @@
+{
+  "status": "STATIC Skill attr key gaps (callback dispatch semantics unverified)",
+  "undefined_callback_40": 40,
+  "classified": {
+    "('ch', False, True)": 2,
+    "('', False, True)": 29,
+    "('', False, False)": 9
+  },
+  "records": [
+    {
+      "skill": "m_yaku_nt2_c4",
+      "attr": "ch",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": true,
+      "witness": {
+        "root": "m_yaku",
+        "steps": [
+          "m_yaku",
+          "m_yaku_nt1",
+          "m_yaku_nt2",
+          "m_yaku_nt2_c",
+          "m_yaku_nt2_c4"
+        ],
+        "unit_class_grants": [
+          {
+            "owner": "class:a333",
+            "source": "a_default/script/20_クラス/31_33_GUC_サムソン_白狼.dat",
+            "line": 476,
+            "field": "skill"
+          },
+          {
+            "owner": "class:a3332",
+            "source": "a_default/script/20_クラス/31_33_GUC_サムソン_白狼.dat",
+            "line": 507,
+            "field": "skill"
+          },
+          {
+            "owner": "class:a3333",
+            "source": "a_default/script/20_クラス/31_33_GUC_サムソン_白狼.dat",
+            "line": 521,
+            "field": "skill"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_move_nt2",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": true,
+      "witness": {
+        "root": "sp_move",
+        "steps": [
+          "sp_move",
+          "sp_move_nt1",
+          "sp_move_nt2"
+        ],
+        "unit_class_grants": [
+          {
+            "owner": "unit:udk",
+            "source": "a_default/script/10_ユニット/01_マリナーズ傭兵団.dat",
+            "line": 2,
+            "field": "skill"
+          },
+          {
+            "owner": "unit:bidairobo_udk5",
+            "source": "a_default/script/10_ユニット/05_ヴォイス・ドラマ革命企画.dat",
+            "line": 1336,
+            "field": "skill"
+          },
+          {
+            "owner": "unit:udrgn23",
+            "source": "a_default/script/10_ユニット/120_スペシャル人材.dat",
+            "line": 499,
+            "field": "skill"
+          },
+          {
+            "owner": "unit:rensan",
+            "source": "a_default/script/10_ユニット/18_虐待専従0J_13部隊.dat",
+            "line": 2,
+            "field": "skill"
+          },
+          {
+            "owner": "unit:tanaka",
+            "source": "a_default/script/10_ユニット/23_リュージ騎士団.dat",
+            "line": 90,
+            "field": "skill"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_heal_nt1",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": true,
+      "witness": {
+        "root": "sp_heal",
+        "steps": [
+          "sp_heal",
+          "sp_heal_nt1"
+        ],
+        "unit_class_grants": [
+          {
+            "owner": "unit:yrim",
+            "source": "a_default/script/10_ユニット/110_イベント人材.dat",
+            "line": 450,
+            "field": "learn"
+          },
+          {
+            "owner": "unit:kuroknn2",
+            "source": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_boss.dat",
+            "line": 104,
+            "field": "skill"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_heal_nt2",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": true,
+      "witness": {
+        "root": "sp_heal",
+        "steps": [
+          "sp_heal",
+          "sp_heal_nt2"
+        ],
+        "unit_class_grants": [
+          {
+            "owner": "unit:yrim",
+            "source": "a_default/script/10_ユニット/110_イベント人材.dat",
+            "line": 450,
+            "field": "learn"
+          },
+          {
+            "owner": "unit:kuroknn2",
+            "source": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_boss.dat",
+            "line": 104,
+            "field": "skill"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_knn_nt1",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": true,
+      "witness": {
+        "root": "sp_knn",
+        "steps": [
+          "sp_knn",
+          "sp_knn_nt1"
+        ],
+        "unit_class_grants": [
+          {
+            "owner": "unit:knn",
+            "source": "a_default/script/10_ユニット/04_ほのぼの神道.dat",
+            "line": 1,
+            "field": "skill"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "heal_clown_mprec",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": false,
+      "witness": null
+    },
+    {
+      "skill": "son_voe_down2",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": true,
+      "witness": {
+        "root": "son_voe",
+        "steps": [
+          "son_voe",
+          "son_voe_down1",
+          "son_voe_down2"
+        ],
+        "unit_class_grants": [
+          {
+            "owner": "unit:zrklson",
+            "source": "a_default/script/10_ユニット/94_放浪_ホモガキ・養殖.dat",
+            "line": 150,
+            "field": "skill"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "son_voe_down3",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": true,
+      "witness": {
+        "root": "son_voe",
+        "steps": [
+          "son_voe",
+          "son_voe_down1",
+          "son_voe_down3"
+        ],
+        "unit_class_grants": [
+          {
+            "owner": "unit:zrklson",
+            "source": "a_default/script/10_ユニット/94_放浪_ホモガキ・養殖.dat",
+            "line": 150,
+            "field": "skill"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "son_voe_down4",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": true,
+      "witness": {
+        "root": "son_voe",
+        "steps": [
+          "son_voe",
+          "son_voe_down1",
+          "son_voe_down4"
+        ],
+        "unit_class_grants": [
+          {
+            "owner": "unit:zrklson",
+            "source": "a_default/script/10_ユニット/94_放浪_ホモガキ・養殖.dat",
+            "line": 150,
+            "field": "skill"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "son_voe_down5",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": true,
+      "witness": {
+        "root": "son_voe",
+        "steps": [
+          "son_voe",
+          "son_voe_down1",
+          "son_voe_down5"
+        ],
+        "unit_class_grants": [
+          {
+            "owner": "unit:zrklson",
+            "source": "a_default/script/10_ユニット/94_放浪_ホモガキ・養殖.dat",
+            "line": 150,
+            "field": "skill"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "son_voe_down6",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": true,
+      "witness": {
+        "root": "son_voe",
+        "steps": [
+          "son_voe",
+          "son_voe_down1",
+          "son_voe_down6"
+        ],
+        "unit_class_grants": [
+          {
+            "owner": "unit:zrklson",
+            "source": "a_default/script/10_ユニット/94_放浪_ホモガキ・養殖.dat",
+            "line": 150,
+            "field": "skill"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "son_voe_down7",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": false,
+      "witness": null
+    },
+    {
+      "skill": "sp_zrklson_at",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": true,
+      "witness": {
+        "root": "sp_zrklson_debuff",
+        "steps": [
+          "sp_zrklson_debuff",
+          "sp_zrklson_nt",
+          "sp_zrklson_at"
+        ],
+        "unit_class_grants": [
+          {
+            "owner": "unit:zrklson",
+            "source": "a_default/script/10_ユニット/94_放浪_ホモガキ・養殖.dat",
+            "line": 150,
+            "field": "learn"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_zrklson_df",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": true,
+      "witness": {
+        "root": "sp_zrklson_debuff",
+        "steps": [
+          "sp_zrklson_debuff",
+          "sp_zrklson_nt",
+          "sp_zrklson_df"
+        ],
+        "unit_class_grants": [
+          {
+            "owner": "unit:zrklson",
+            "source": "a_default/script/10_ユニット/94_放浪_ホモガキ・養殖.dat",
+            "line": 150,
+            "field": "learn"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_zrklson_mg",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": true,
+      "witness": {
+        "root": "sp_zrklson_debuff",
+        "steps": [
+          "sp_zrklson_debuff",
+          "sp_zrklson_nt",
+          "sp_zrklson_mg"
+        ],
+        "unit_class_grants": [
+          {
+            "owner": "unit:zrklson",
+            "source": "a_default/script/10_ユニット/94_放浪_ホモガキ・養殖.dat",
+            "line": 150,
+            "field": "learn"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_zrklson_dx",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": false,
+      "witness": null
+    },
+    {
+      "skill": "sp_zrklson_sp",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": true,
+      "witness": {
+        "root": "sp_zrklson_debuff",
+        "steps": [
+          "sp_zrklson_debuff",
+          "sp_zrklson_nt",
+          "sp_zrklson_sp"
+        ],
+        "unit_class_grants": [
+          {
+            "owner": "unit:zrklson",
+            "source": "a_default/script/10_ユニット/94_放浪_ホモガキ・養殖.dat",
+            "line": 150,
+            "field": "learn"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_zrklson_hr",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": true,
+      "witness": {
+        "root": "sp_zrklson_debuff",
+        "steps": [
+          "sp_zrklson_debuff",
+          "sp_zrklson_nt",
+          "sp_zrklson_hr"
+        ],
+        "unit_class_grants": [
+          {
+            "owner": "unit:zrklson",
+            "source": "a_default/script/10_ユニット/94_放浪_ホモガキ・養殖.dat",
+            "line": 150,
+            "field": "learn"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_zrklson_mr",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": false,
+      "witness": null
+    },
+    {
+      "skill": "sp_zrklson_mv",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": true,
+      "witness": {
+        "root": "sp_zrklson_debuff",
+        "steps": [
+          "sp_zrklson_debuff",
+          "sp_zrklson_nt",
+          "sp_zrklson_mv"
+        ],
+        "unit_class_grants": [
+          {
+            "owner": "unit:zrklson",
+            "source": "a_default/script/10_ユニット/94_放浪_ホモガキ・養殖.dat",
+            "line": 150,
+            "field": "learn"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "senkyo_happy_nt1",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": true,
+      "witness": {
+        "root": "senkyo_happy",
+        "steps": [
+          "senkyo_happy",
+          "senkyo_happy_nt1"
+        ],
+        "unit_class_grants": [
+          {
+            "owner": "unit:siwausa",
+            "source": "a_default/script/10_ユニット/91_放浪_クッキー☆.dat",
+            "line": 1024,
+            "field": "skill"
+          },
+          {
+            "owner": "unit:siwausa",
+            "source": "a_default/script/10_ユニット/91_放浪_クッキー☆.dat",
+            "line": 1024,
+            "field": "leader_skill"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_biim_kamakura_nt1",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": true,
+      "witness": {
+        "root": "sp_biim_kamakura",
+        "steps": [
+          "sp_biim_kamakura",
+          "sp_biim_kamakura_nt1"
+        ],
+        "unit_class_grants": [
+          {
+            "owner": "unit:ginryu23",
+            "source": "a_default/script/10_ユニット/120_スペシャル人材.dat",
+            "line": 410,
+            "field": "skill2"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_biim_kamakura_nt2",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": true,
+      "witness": {
+        "root": "sp_biim_kamakura",
+        "steps": [
+          "sp_biim_kamakura",
+          "sp_biim_kamakura_nt2"
+        ],
+        "unit_class_grants": [
+          {
+            "owner": "unit:ginryu23",
+            "source": "a_default/script/10_ユニット/120_スペシャル人材.dat",
+            "line": 410,
+            "field": "skill2"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_jun_yaku_nt2_c4",
+      "attr": "ch",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": true,
+      "witness": {
+        "root": "sp_jun",
+        "steps": [
+          "sp_jun",
+          "sp_jun_yaku",
+          "sp_jun_yaku_nt2_c",
+          "sp_jun_yaku_nt2_c4"
+        ],
+        "unit_class_grants": [
+          {
+            "owner": "unit:jun",
+            "source": "a_default/script/10_ユニット/94_放浪_ホモガキ・養殖.dat",
+            "line": 240,
+            "field": "learn"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_nyn_down",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": true,
+      "witness": {
+        "root": "sp_nyn",
+        "steps": [
+          "sp_nyn",
+          "sp_nyn_nt1",
+          "sp_nyn_nt2",
+          "sp_nyn_down"
+        ],
+        "unit_class_grants": [
+          {
+            "owner": "unit:nyn",
+            "source": "a_default/script/10_ユニット/21_お菓子作りの材料屋さん.dat",
+            "line": 3,
+            "field": "skill"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_ryuma_nt2",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": true,
+      "witness": {
+        "root": "sp_ryuma",
+        "steps": [
+          "sp_ryuma",
+          "sp_ryuma_nt1",
+          "sp_ryuma_nt2"
+        ],
+        "unit_class_grants": [
+          {
+            "owner": "unit:ryuma",
+            "source": "a_default/script/10_ユニット/23_リュージ騎士団.dat",
+            "line": 501,
+            "field": "skill"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "kdance_move",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": true,
+      "witness": {
+        "root": "kdance",
+        "steps": [
+          "kdance",
+          "kdance_nt",
+          "kdance_nt1",
+          "kdance_move"
+        ],
+        "unit_class_grants": [
+          {
+            "owner": "unit:kazuya",
+            "source": "a_default/script/10_ユニット/08_レスリング帝国.dat",
+            "line": 70,
+            "field": "learn"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_heal2_nt1",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": true,
+      "witness": {
+        "root": "sp_healwhiteknn",
+        "steps": [
+          "sp_healwhiteknn",
+          "sp_heal2_nt1"
+        ],
+        "unit_class_grants": [
+          {
+            "owner": "unit:kuroknn1919",
+            "source": "a_default/script/10_ユニット/B_14_黒KNN.dat",
+            "line": 1,
+            "field": "skill"
+          },
+          {
+            "owner": "unit:whiteknn",
+            "source": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_lastboss.dat",
+            "line": 1,
+            "field": "skill"
+          },
+          {
+            "owner": "class:c_whiteknn",
+            "source": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_lastboss.dat",
+            "line": 163,
+            "field": "skill"
+          },
+          {
+            "owner": "class:c_whiteknn2",
+            "source": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_lastboss.dat",
+            "line": 177,
+            "field": "skill"
+          },
+          {
+            "owner": "class:c_whiteknn3",
+            "source": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_lastboss.dat",
+            "line": 191,
+            "field": "skill"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_heal2_nt2",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": true,
+      "witness": {
+        "root": "sp_healwhiteknn",
+        "steps": [
+          "sp_healwhiteknn",
+          "sp_heal2_nt2"
+        ],
+        "unit_class_grants": [
+          {
+            "owner": "unit:kuroknn1919",
+            "source": "a_default/script/10_ユニット/B_14_黒KNN.dat",
+            "line": 1,
+            "field": "skill"
+          },
+          {
+            "owner": "unit:whiteknn",
+            "source": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_lastboss.dat",
+            "line": 1,
+            "field": "skill"
+          },
+          {
+            "owner": "class:c_whiteknn",
+            "source": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_lastboss.dat",
+            "line": 163,
+            "field": "skill"
+          },
+          {
+            "owner": "class:c_whiteknn2",
+            "source": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_lastboss.dat",
+            "line": 177,
+            "field": "skill"
+          },
+          {
+            "owner": "class:c_whiteknn3",
+            "source": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_lastboss.dat",
+            "line": 191,
+            "field": "skill"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_heal_3_nt1",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": false,
+      "witness": null
+    },
+    {
+      "skill": "g_inmudash_heal",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": true,
+      "witness": {
+        "root": "sp_midocha",
+        "steps": [
+          "sp_midocha",
+          "g_inmudash_js",
+          "g_inmudash_js1",
+          "g_inmudash_heal"
+        ],
+        "unit_class_grants": [
+          {
+            "owner": "unit:midocha",
+            "source": "a_default/script/10_ユニット/B_525_神聖UNEI帝国.dat",
+            "line": 293,
+            "field": "skill2"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "asasin_cream_protect_ability_1",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": true,
+      "witness": {
+        "root": "asasin_cream_protect",
+        "steps": [
+          "asasin_cream_protect",
+          "asasin_cream_protect_Eff_C_wait",
+          "asasin_cream_protect_ability_0",
+          "asasin_cream_protect_ability_1"
+        ],
+        "unit_class_grants": [
+          {
+            "owner": "unit:asasin",
+            "source": "a_default/script/10_ユニット/110_イベント人材.dat",
+            "line": 1594,
+            "field": "skill2"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "asasin_cream_weapon_ability_self",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": true,
+      "witness": {
+        "root": "asasin_cream_weapon_glove",
+        "steps": [
+          "asasin_cream_weapon_glove",
+          "asasin_cream_weapon_glove_join",
+          "asasin_cream_weapon",
+          "asasin_cream_weapon_ability_self"
+        ],
+        "unit_class_grants": [
+          {
+            "owner": "unit:asasin",
+            "source": "a_default/script/10_ユニット/110_イベント人材.dat",
+            "line": 1594,
+            "field": "skill2"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "asasin_cream_weapon_ability_enemy",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": true,
+      "witness": {
+        "root": "asasin_cream_weapon_glove",
+        "steps": [
+          "asasin_cream_weapon_glove",
+          "asasin_cream_weapon_glove_join",
+          "asasin_cream_weapon",
+          "asasin_cream_weapon_join",
+          "asasin_cream_weapon_join_0_L_0",
+          "asasin_cream_weapon_join_0_L_1",
+          "asasin_cream_weapon_join_0_L_2",
+          "asasin_cream_weapon_join_0_L_3",
+          "asasin_cream_weapon_Eff_0_L_0",
+          "asasin_cream_weapon_ability_enemy"
+        ],
+        "unit_class_grants": [
+          {
+            "owner": "unit:asasin",
+            "source": "a_default/script/10_ユニット/110_イベント人材.dat",
+            "line": 1594,
+            "field": "skill2"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "asasin_cream_weapon_glove_ability_self",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": true,
+      "witness": {
+        "root": "asasin_cream_weapon_glove",
+        "steps": [
+          "asasin_cream_weapon_glove",
+          "asasin_cream_weapon_glove_ability_self"
+        ],
+        "unit_class_grants": [
+          {
+            "owner": "unit:asasin",
+            "source": "a_default/script/10_ユニット/110_イベント人材.dat",
+            "line": 1594,
+            "field": "skill2"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "asasin_cream_weapon_glove_ability_enemy",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": false,
+      "witness": null
+    },
+    {
+      "skill": "hanzo_cream_weapon_ability_self",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": false,
+      "witness": null
+    },
+    {
+      "skill": "hanzo_cream_weapon_ability_enemy",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": true,
+      "witness": {
+        "root": "hanzo_cream_weapon_glove",
+        "steps": [
+          "hanzo_cream_weapon_glove",
+          "hanzo_cream_weapon_glove_join",
+          "hanzo_cream_weapon",
+          "hanzo_cream_weapon_join",
+          "hanzo_cream_weapon_join_0_L_0",
+          "hanzo_cream_weapon_join_0_L_1",
+          "hanzo_cream_weapon_join_0_L_2",
+          "hanzo_cream_weapon_join_0_L_3",
+          "hanzo_cream_weapon_Eff_0_L_0",
+          "hanzo_cream_weapon_ability_enemy"
+        ],
+        "unit_class_grants": [
+          {
+            "owner": "unit:hanzo",
+            "source": "a_default/script/10_ユニット/110_イベント人材.dat",
+            "line": 1675,
+            "field": "skill2"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "hanzo_cream_weapon_glove_ability_self",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": false,
+      "witness": null
+    },
+    {
+      "skill": "hanzo_cream_weapon_glove_ability_enemy",
+      "attr": "",
+      "mp": 0,
+      "direct_equip": false,
+      "reachable": false,
+      "witness": null
+    }
+  ],
+  "parent_caveat": "Raw empty attr may intentionally skip callback or be child-only; not a gameplay exception",
+  "gameplay_golden": 0
+}

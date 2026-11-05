@@ -1,0 +1,146 @@
+{
+  "status": "SAVED B x86 textual evidence only; no new EXE acquisition",
+  "items": [
+    {
+      "file": "T013_SKILL_HANDLERS_BOUNDED_NATIVE_20261013.txt",
+      "address": "0057EED4",
+      "line": 258,
+      "saved_lines": [
+        "0057EEC0 83c424               add       esp, 0x24",
+        "0057EEC3 c20800               ret       8",
+        "0057EEC6 dd442428             fld       qword ptr [esp + 0x28]",
+        "0057EECA c78560e5010001000000 mov       dword ptr [ebp + 0x1e560], 1",
+        "0057EED4 8b9378020000         mov       edx, dword ptr [ebx + 0x278]",
+        "0057EEDA 299594000000         sub       dword ptr [ebp + 0x94], edx",
+        "0057EEE0 8b8354020000         mov       eax, dword ptr [ebx + 0x254]",
+        "0057EEE6 8944243c             mov       dword ptr [esp + 0x3c], eax",
+        "0057EEEA 85c0                 test      eax, eax",
+        "0057EEEC 7454                 je        0x57ef42",
+        "0057EEEE db44243c             fild      dword ptr [esp + 0x3c]",
+        "0057EEF2 83ec10               sub       esp, 0x10"
+      ],
+      "source_txt_sha256": "f879d5bb4b7ebdbe64adb1fd84ce8596b94f4b9d0700eb7a05f8acefc77145a7"
+    },
+    {
+      "file": "T013_SKILL_HANDLERS_BOUNDED_NATIVE_20261013.txt",
+      "address": "0057EEDA",
+      "line": 259,
+      "saved_lines": [
+        "0057EEC3 c20800               ret       8",
+        "0057EEC6 dd442428             fld       qword ptr [esp + 0x28]",
+        "0057EECA c78560e5010001000000 mov       dword ptr [ebp + 0x1e560], 1",
+        "0057EED4 8b9378020000         mov       edx, dword ptr [ebx + 0x278]",
+        "0057EEDA 299594000000         sub       dword ptr [ebp + 0x94], edx",
+        "0057EEE0 8b8354020000         mov       eax, dword ptr [ebx + 0x254]",
+        "0057EEE6 8944243c             mov       dword ptr [esp + 0x3c], eax",
+        "0057EEEA 85c0                 test      eax, eax",
+        "0057EEEC 7454                 je        0x57ef42",
+        "0057EEEE db44243c             fild      dword ptr [esp + 0x3c]",
+        "0057EEF2 83ec10               sub       esp, 0x10",
+        "0057EEF5 8d742438             lea       esi, [esp + 0x38]"
+      ],
+      "source_txt_sha256": "f879d5bb4b7ebdbe64adb1fd84ce8596b94f4b9d0700eb7a05f8acefc77145a7"
+    },
+    {
+      "file": "T013_SKILL_HANDLERS_BOUNDED_NATIVE_20261013.txt",
+      "address": "0057F366",
+      "line": 633,
+      "saved_lines": [
+        "0057F35E 5e                   pop       esi",
+        "0057F35F 5d                   pop       ebp",
+        "0057F360 83c41c               add       esp, 0x1c",
+        "0057F363 c20400               ret       4",
+        "0057F366 8b8b78020000         mov       ecx, dword ptr [ebx + 0x278]",
+        "0057F36C 298d94000000         sub       dword ptr [ebp + 0x94], ecx",
+        "0057F372 8b4c2420             mov       ecx, dword ptr [esp + 0x20]",
+        "0057F376 ba08000080           mov       edx, 0x80000008",
+        "0057F37B 8bc2                 mov       eax, edx",
+        "0057F37D 89542410             mov       dword ptr [esp + 0x10], edx",
+        "0057F381 89442414             mov       dword ptr [esp + 0x14], eax",
+        "0057F385 3bc8                 cmp       ecx, eax"
+      ],
+      "source_txt_sha256": "f879d5bb4b7ebdbe64adb1fd84ce8596b94f4b9d0700eb7a05f8acefc77145a7"
+    },
+    {
+      "file": "T013_SKILL_HANDLERS_BOUNDED_NATIVE_20261013.txt",
+      "address": "0057EECA",
+      "line": 257,
+      "saved_lines": [
+        "0057EEBF 5b                   pop       ebx",
+        "0057EEC0 83c424               add       esp, 0x24",
+        "0057EEC3 c20800               ret       8",
+        "0057EEC6 dd442428             fld       qword ptr [esp + 0x28]",
+        "0057EECA c78560e5010001000000 mov       dword ptr [ebp + 0x1e560], 1",
+        "0057EED4 8b9378020000         mov       edx, dword ptr [ebx + 0x278]",
+        "0057EEDA 299594000000         sub       dword ptr [ebp + 0x94], edx",
+        "0057EEE0 8b8354020000         mov       eax, dword ptr [ebx + 0x254]",
+        "0057EEE6 8944243c             mov       dword ptr [esp + 0x3c], eax",
+        "0057EEEA 85c0                 test      eax, eax",
+        "0057EEEC 7454                 je        0x57ef42",
+        "0057EEEE db44243c             fild      dword ptr [esp + 0x3c]"
+      ],
+      "source_txt_sha256": "f879d5bb4b7ebdbe64adb1fd84ce8596b94f4b9d0700eb7a05f8acefc77145a7"
+    },
+    {
+      "file": "T013_SKILL_HANDLERS_BOUNDED_NATIVE_20261013.txt",
+      "address": "0057EEBA",
+      "line": 249,
+      "saved_lines": [
+        "0057EEA7 55                   push      ebp",
+        "0057EEA8 e84325f6ff           call      0x4e13f0",
+        "0057EEAD 83c410               add       esp, 0x10",
+        "0057EEB0 c78560e5010002000000 mov       dword ptr [ebp + 0x1e560], 2",
+        "0057EEBA 32c0                 xor       al, al",
+        "0057EEBC 5f                   pop       edi",
+        "0057EEBD 5e                   pop       esi",
+        "0057EEBE 5d                   pop       ebp",
+        "0057EEBF 5b                   pop       ebx",
+        "0057EEC0 83c424               add       esp, 0x24",
+        "0057EEC3 c20800               ret       8",
+        "0057EEC6 dd442428             fld       qword ptr [esp + 0x28]"
+      ],
+      "source_txt_sha256": "f879d5bb4b7ebdbe64adb1fd84ce8596b94f4b9d0700eb7a05f8acefc77145a7"
+    },
+    {
+      "file": "T013_SUPPORT_EVAL_FOCUS.txt",
+      "address": "0057F9EE",
+      "line": 912,
+      "saved_lines": [
+        "0057F9DC mov     edi, dword ptr [ebp + 8]",
+        "0057F9DF and     eax, 7",
+        "0057F9E2 mov     dword ptr [esi + 0x18688], eax",
+        "0057F9E8 mov     ecx, dword ptr [edi + 0x278]",
+        "0057F9EE sub     dword ptr [esi + 0x94], ecx",
+        "0057F9F4 mov     eax, dword ptr [edi + 0x254]",
+        "0057F9FA mov     dword ptr [esp + 0x3c], eax",
+        "0057F9FE test    eax, eax",
+        "0057FA00 je      0x57fa91",
+        "0057FA06 mov     eax, dword ptr [esi + 0x18688]",
+        "0057FA0C fild    dword ptr [esp + 0x3c]",
+        "0057FA10 add     eax, 2"
+      ],
+      "source_txt_sha256": "580f1e698496fa91bd56f4ba74ad1f7a606c4ef0d9c96b26f1335f0b8313d332"
+    },
+    {
+      "file": "T013_SUPPORT_EVAL_FOCUS.txt",
+      "address": "0057FA99",
+      "line": 958,
+      "saved_lines": [
+        "0057FA8F call    edx",
+        "0057FA91 mov     ecx, dword ptr [esp + 0x30]",
+        "0057FA95 mov     ebx, edi",
+        "0057FA97 mov     edx, esi",
+        "0057FA99 call    0x54e0b0",
+        "0057FA9E mov     ebx, dword ptr [edi + 0x100]",
+        "0057FAA4 mov     ecx, dword ptr [edi + 0x104]",
+        "0057FAAA sub     ecx, ebx",
+        "0057FAAC mov     eax, 0x92492493",
+        "0057FAB1 imul    ecx",
+        "0057FAB3 add     edx, ecx",
+        "0057FAB5 sar     edx, 4"
+      ],
+      "source_txt_sha256": "580f1e698496fa91bd56f4ba74ad1f7a606c4ef0d9c96b26f1335f0b8313d332"
+    }
+  ],
+  "not_a_native_new_ready": true
+}

@@ -1,0 +1,21 @@
+{
+  "id": "BRIDGE-V6-CROSSPROCESS-REAL-WIN32-20261022",
+  "state": "WIN32_TEST_CHILD_PROCESS_ONLY",
+  "original_game_process_touched": false,
+  "original_game_writes": false,
+  "actual_native_battle_G1_packet": false,
+  "subprocess_pid": 12008,
+  "checks": {
+    "1byte_read_match": true,
+    "64byte_read_match": true,
+    "84byte_read_match": true,
+    "128byte_read_match": true,
+    "1188byte_read_match": true,
+    "4096byte_read_match": true,
+    "65536byte_read_match": true,
+    "sha256_full_64KiB": true
+  },
+  "synthetic_memory_base": "0x18000000",
+  "reads_passed": 8,
+  "reads_total": 8
+}

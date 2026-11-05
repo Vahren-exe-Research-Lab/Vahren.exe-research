@@ -1,0 +1,133 @@
+{
+  "research_id": "BRIDGE-20261022-STAGE15-BOUNDARY-REALIGNMENT",
+  "source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "status": "STATIC_PE_NOT_NEW_GAMEPLAY",
+  "native_anchors": [
+    {
+      "function": "0x551e50",
+      "site": "0x551ea3",
+      "hex": "8bb8c8010000",
+      "instruction": "mov edi, dword ptr [eax + 0x1c8]"
+    },
+    {
+      "function": "0x551e50",
+      "site": "0x551fb2",
+      "hex": "01976c010000",
+      "instruction": "add dword ptr [edi + 0x16c], edx"
+    },
+    {
+      "function": "0x575110",
+      "site": "0x57517d",
+      "hex": "8b83c8010000",
+      "instruction": "mov eax, dword ptr [ebx + 0x1c8]"
+    },
+    {
+      "function": "0x575110",
+      "site": "0x57518d",
+      "hex": "3b8870010000",
+      "instruction": "cmp ecx, dword ptr [eax + 0x170]"
+    },
+    {
+      "function": "0x575110",
+      "site": "0x5751fd",
+      "hex": "898768010000",
+      "instruction": "mov dword ptr [edi + 0x168], eax"
+    },
+    {
+      "function": "0x575a60",
+      "site": "0x575aa6",
+      "hex": "8b86c8010000",
+      "instruction": "mov eax, dword ptr [esi + 0x1c8]"
+    },
+    {
+      "function": "0x575a60",
+      "site": "0x575ab3",
+      "hex": "c680b101000001",
+      "instruction": "mov byte ptr [eax + 0x1b1], 1"
+    },
+    {
+      "function": "0x575a60",
+      "site": "0x575abc",
+      "hex": "899e90000000",
+      "instruction": "mov dword ptr [esi + 0x90], ebx"
+    },
+    {
+      "function": "0x578370",
+      "site": "0x578969",
+      "hex": "8b93c8010000",
+      "instruction": "mov edx, dword ptr [ebx + 0x1c8]"
+    },
+    {
+      "function": "0x578370",
+      "site": "0x578970",
+      "hex": "e8fbfa0000",
+      "instruction": "call 0x588470"
+    },
+    {
+      "function": "0x578370",
+      "site": "0x57897b",
+      "hex": "8882b0010000",
+      "instruction": "mov byte ptr [edx + 0x1b0], al"
+    },
+    {
+      "function": "0x493630",
+      "site": "0x4941e0",
+      "hex": "80bbb001000000",
+      "instruction": "cmp byte ptr [ebx + 0x1b0], 0"
+    },
+    {
+      "function": "0x493630",
+      "site": "0x494387",
+      "hex": "80bbb001000000",
+      "instruction": "cmp byte ptr [ebx + 0x1b0], 0"
+    },
+    {
+      "function": "0x493630",
+      "site": "0x494504",
+      "hex": "8b93b4010000",
+      "instruction": "mov edx, dword ptr [ebx + 0x1b4]"
+    },
+    {
+      "function": "0x493630",
+      "site": "0x49450a",
+      "hex": "8996b4010000",
+      "instruction": "mov dword ptr [esi + 0x1b4], edx"
+    },
+    {
+      "function": "0x493630",
+      "site": "0x494667",
+      "hex": "39bd28ed1e00",
+      "instruction": "cmp dword ptr [ebp + 0x1eed28], edi"
+    },
+    {
+      "function": "0x493630",
+      "site": "0x49466d",
+      "hex": "0f85e5010000",
+      "instruction": "jne 0x494858"
+    },
+    {
+      "function": "0x493630",
+      "site": "0x494858",
+      "hex": "80bc243401000000",
+      "instruction": "cmp byte ptr [esp + 0x134], 0"
+    }
+  ],
+  "pseudocode_hashes": {
+    "00551E50.c": "6A57F71F09FCAAF4E1755AB65DF7737BAD6C1D8CD4E0757E8BBAC7C9D5FFAAD6",
+    "00575110.c": "F283F26289E0FD437B95BA614D83355358267B6FFDE0D6ADFF1DD86A9FE7BAA6",
+    "00575A60.c": "C160E0FFE9BEBD248CB57AAC51B743F41B4879232162E0211764456E87354CFE",
+    "00578370.c": "1C6630B2505F9A9C720E2FB980DD070C410582D6DB74EE32E00402BDEA81F051",
+    "00493630.c": "84E072807338F6011CEDD50D458C9257F13B45FC72605FDC9406B2FCEBE8DAAE"
+  },
+  "conclusions": [
+    "Original end is not a result packet only: persistent Unit-record EXP is modified during combat.",
+    "Unit+1C8 is the bridge between runtime Unit and shared strategic record; do not mix the two offset spaces.",
+    "Record+1B0 and +1B1 have distinct writers; HP0 alone does not establish permanent death.",
+    "Native finish consumes shared-state changes and must not be combined with a second custom strategy settlement.",
+    "A different combat engine does not require replication of original projectiles, AI, positions, or random draw counts.",
+    "Original host-owned VM, references and RNG can remain resident only if a safe hold/resume boundary is proved."
+  ],
+  "full_G1_proven": false,
+  "native_writeback_proven": false,
+  "work_used": false
+}

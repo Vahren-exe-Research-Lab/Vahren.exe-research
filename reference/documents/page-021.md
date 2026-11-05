@@ -8,7 +8,7 @@
 
 文書検索結果は保存ファイル名、元パス・出典URI、題名、本文だけの一致の順で最大20件です。同じ区分内は回収台帳での初出順です。省略時は一致総数を表示します。全件の出典・制約は一覧または各詳細ページに掲載しています。研究ID・題名で絞り込めます。アドレス・所有者＋オフセット検索は従来の専用結果を返します。
 
-[前のページ](page-020.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md)
+[前のページ](page-020.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md) · [次のページ](page-022.md)
 
 - [T025_BOSS_POWER_SAVE_PRESENCE_20261013.json](../../research/recovered/json_sources1/reports/evidence/T025_BOSS_POWER_SAVE_PRESENCE_20261013.json?plain=1#L1-L1) — `research/recovered/json_sources1/reports/evidence/T025_BOSS_POWER_SAVE_PRESENCE_20261013.json`
   回収状態 EXACT_BODY_AVAILABLE。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2048-L2048)。制約・訂正 Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
@@ -125,4 +125,389 @@
   本文 SHA256 `dcc833821653a405a3cbebe376d79cbd970600c11f865a04c25c37d331312720`
   元パス <code>evidence/VAHREN_ZIP_TOPOLOGY.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2070-L2070)。
 
-[前のページ](page-020.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md)
+- [REA-20261101-17H-21H-P0-CANDIDATE-QUEUE](../../research/recovered/issue6/ISSUE_6_BODY.md?plain=1#L1-L1) — `research/recovered/issue6/ISSUE_6_BODY.md`
+  回収状態 ISSUE_BODY_EXACT_CAPTURED_UNICODE。以前の収録状況 GITHUB_METADATA_ONLY_NO_PRIOR_SELECTED_BODY。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2071-L2071)。制約・訂正 Complete selected latest issue.body Unicode encoded UTF8; not server HTTP/DB raw bytes or full issue history. Historical author static tests only. Linked native/EVIDENCE/code/DB/Library bodies not acquired. 18H partial refused append remains held metadata only. Old uncurated claims checked against current REF; no new runtime/ABI/Golden/READY credit.
+  本文 SHA256 `669a7b7deb6750a8c62a3419a347c33d0320544882106fd77ba844204a8d863a`
+  元パス <code>https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/6#issue-body</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2071-L2071)。
+
+- [01_T004_PE_SURVEY.json](../../research/recovered/json_exp_exe1/reports/01_T004_PE_SURVEY.json?plain=1#L1-L1) — `research/recovered/json_exp_exe1/reports/01_T004_PE_SURVEY.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 NO_FIXED_BASELINE_ACCEPTED_SHA_MATCH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2072-L2072)。制約・訂正 Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened.
+  本文 SHA256 `a28de4b2f8c757c5ccf893266a401136073bb2ea761dc12bd75341424a2fdcc5`
+  元パス <code>exe/T004_PE_SURVEY.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2072-L2072)。
+
+- [02_T004_RTTI_MAP.json](../../research/recovered/json_exp_exe1/reports/02_T004_RTTI_MAP.json?plain=1#L1-L1) — `research/recovered/json_exp_exe1/reports/02_T004_RTTI_MAP.json`
+  回収状態 CONTENT_REVIEWED_PRIVACY_VARIANT。以前の収録状況 NO_FIXED_BASELINE_ACCEPTED_SHA_MATCH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2073-L2073)。制約・訂正 Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Personal escaped Windows profile prefix only redacted; exact spans and unchanged gaps prove full derivative.
+  本文 SHA256 `8c0c23fe2647e1da7b44b6c1ebbd515eea5fd7ea2431cdb5a8e8637918ccd0e1`
+  元パス <code>exe/T004_RTTI_MAP.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2073-L2073)。
+
+- [03_T006_API_STRING_XREFS.json](../../research/recovered/json_exp_exe1/reports/03_T006_API_STRING_XREFS.json?plain=1#L1-L1) — `research/recovered/json_exp_exe1/reports/03_T006_API_STRING_XREFS.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 NO_FIXED_BASELINE_ACCEPTED_SHA_MATCH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2074-L2074)。制約・訂正 Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened.
+  本文 SHA256 `04083d7964b1c44186ad7c5866225b24cc35d88dfb6549c69c866f5aa4c7a37b`
+  元パス <code>exe/T006_API_STRING_XREFS.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2074-L2074)。
+
+- [04_T006_CASE_ANALYSIS.json](../../research/recovered/json_exp_exe1/reports/04_T006_CASE_ANALYSIS.json?plain=1#L1-L1) — `research/recovered/json_exp_exe1/reports/04_T006_CASE_ANALYSIS.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 NO_FIXED_BASELINE_ACCEPTED_SHA_MATCH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2075-L2075)。制約・訂正 Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened.
+  本文 SHA256 `4cedbb20129e86b528300e8ff1c68cc4da9b4a6ab5bc7a6fdd8b5b29e55c02a6`
+  元パス <code>exe/T006_CASE_ANALYSIS.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2075-L2075)。
+
+- [05_T006_CASE_INSENSITIVE_ENGINE_STRINGS.json](../../research/recovered/json_exp_exe1/reports/05_T006_CASE_INSENSITIVE_ENGINE_STRINGS.json?plain=1#L1-L1) — `research/recovered/json_exp_exe1/reports/05_T006_CASE_INSENSITIVE_ENGINE_STRINGS.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 NO_FIXED_BASELINE_ACCEPTED_SHA_MATCH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2076-L2076)。制約・訂正 Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened.
+  本文 SHA256 `050cbe7286530fe9bf4177bc57124815aa17a87ee7bdaf119a27f333cdc826b7`
+  元パス <code>exe/T006_CASE_INSENSITIVE_ENGINE_STRINGS.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2076-L2076)。
+
+- [06_EXP_AI_EVIDENCE_20261021.json](../../research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json?plain=1#L1-L1) — `research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 NO_FIXED_BASELINE_ACCEPTED_SHA_MATCH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2077-L2077)。制約・訂正 Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+  本文 SHA256 `bd709a5378f6c16cf8dba74354f591a6736158e53b4d96e92a3a76267eca60b8`
+  元パス <code>exp_research_20261021/EXP_AI_EVIDENCE_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2077-L2077)。
+
+- [08_EXP_DRAIN_DAT_USAGE_20261022_04.json](../../research/recovered/json_exp_exe1/reports/08_EXP_DRAIN_DAT_USAGE_20261022_04.json?plain=1#L1-L1) — `research/recovered/json_exp_exe1/reports/08_EXP_DRAIN_DAT_USAGE_20261022_04.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 NO_FIXED_BASELINE_ACCEPTED_SHA_MATCH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2078-L2078)。制約・訂正 Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Selected drain-family attribute/source-line inventory, not a full effective-skill or original-source corpus.
+  本文 SHA256 `c986d687855155fd9109dab576559b9702cc0017f1e425baad550f5dc147f76a`
+  元パス <code>exp_research_20261021/EXP_DRAIN_DAT_USAGE_20261022_04.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2078-L2078)。
+
+- [09_EXP_ENDTRANSFER_VALIDATION_20261022.json](../../research/recovered/json_exp_exe1/reports/09_EXP_ENDTRANSFER_VALIDATION_20261022.json?plain=1#L1-L1) — `research/recovered/json_exp_exe1/reports/09_EXP_ENDTRANSFER_VALIDATION_20261022.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 NO_FIXED_BASELINE_ACCEPTED_SHA_MATCH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2079-L2079)。制約・訂正 Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened.
+  本文 SHA256 `e4a1ed2c3244f81631732f559cd623ee1704b294a98ca21aadfaca8c018d1b53`
+  元パス <code>exp_research_20261021/EXP_ENDTRANSFER_VALIDATION_20261022.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2079-L2079)。
+
+- [11_EXP_HIT_INPUTS_AUDIT_20261022_06.json](../../research/recovered/json_exp_exe1/reports/11_EXP_HIT_INPUTS_AUDIT_20261022_06.json?plain=1#L1-L1) — `research/recovered/json_exp_exe1/reports/11_EXP_HIT_INPUTS_AUDIT_20261022_06.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 NO_FIXED_BASELINE_ACCEPTED_SHA_MATCH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2080-L2080)。制約・訂正 Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Short selected original-provenance DAT examples attached to authored analysis (9/4/4 examples,4-25LF each); not source-file or systematic property-corpus export, and no inheritance/runtime coverage inferred.
+  本文 SHA256 `4d8a2605cb4bff291afa5a91bdc61d1d8144f652c37bb7caa385d596ebc96b3c`
+  元パス <code>exp_research_20261021/EXP_HIT_INPUTS_AUDIT_20261022_06.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2080-L2080)。
+
+- [12_EXP_HIT_INPUTS_REPLAY_20261022_06.json](../../research/recovered/json_exp_exe1/reports/12_EXP_HIT_INPUTS_REPLAY_20261022_06.json?plain=1#L1-L1) — `research/recovered/json_exp_exe1/reports/12_EXP_HIT_INPUTS_REPLAY_20261022_06.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 NO_FIXED_BASELINE_ACCEPTED_SHA_MATCH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2081-L2081)。制約・訂正 Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened.
+  本文 SHA256 `1c3818060c470a20a96a2678cdb62735f3e0aaa7f3feae9d8799c9347a5fa02c`
+  元パス <code>exp_research_20261021/EXP_HIT_INPUTS_REPLAY_20261022_06.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2081-L2081)。
+
+- [13_EXP_KIND4_DISPATCH_EVIDENCE_20261021.json](../../research/recovered/json_exp_exe1/reports/13_EXP_KIND4_DISPATCH_EVIDENCE_20261021.json?plain=1#L1-L1) — `research/recovered/json_exp_exe1/reports/13_EXP_KIND4_DISPATCH_EVIDENCE_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 NO_FIXED_BASELINE_ACCEPTED_SHA_MATCH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2082-L2082)。制約・訂正 Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened.
+  本文 SHA256 `2ed20b36bafd21338b169a236c9aed92a151566f7b3f9c8e8f35d985672186ed`
+  元パス <code>exp_research_20261021/EXP_KIND4_DISPATCH_EVIDENCE_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2082-L2082)。
+
+- [14_EXP_SAVE_TREE_BOUNDARY_EVIDENCE_20261021.json](../../research/recovered/json_exp_exe1/reports/14_EXP_SAVE_TREE_BOUNDARY_EVIDENCE_20261021.json?plain=1#L1-L1) — `research/recovered/json_exp_exe1/reports/14_EXP_SAVE_TREE_BOUNDARY_EVIDENCE_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 NO_FIXED_BASELINE_ACCEPTED_SHA_MATCH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2083-L2083)。制約・訂正 Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened.
+  本文 SHA256 `9622a342f6b8ca7b023abc9b225b5020e952f8868fb253240bf8ac795b1052e4`
+  元パス <code>exp_research_20261021/EXP_SAVE_TREE_BOUNDARY_EVIDENCE_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2083-L2083)。
+
+- [15_EXP_SETTLEMENT_OWNER_AUDIT_20261022_04.json](../../research/recovered/json_exp_exe1/reports/15_EXP_SETTLEMENT_OWNER_AUDIT_20261022_04.json?plain=1#L1-L1) — `research/recovered/json_exp_exe1/reports/15_EXP_SETTLEMENT_OWNER_AUDIT_20261022_04.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 NO_FIXED_BASELINE_ACCEPTED_SHA_MATCH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2084-L2084)。制約・訂正 Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Short selected original-provenance DAT examples attached to authored analysis (9/4/4 examples,4-25LF each); not source-file or systematic property-corpus export, and no inheritance/runtime coverage inferred.
+  本文 SHA256 `b201c5cb9af30eae5a9d05fbbb6d9b2b562bbcbb701fe7e410187fb761073073`
+  元パス <code>exp_research_20261021/EXP_SETTLEMENT_OWNER_AUDIT_20261022_04.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2084-L2084)。
+
+- [16_EXP_SETTLEMENT_OWNER_REPLAY_20261022_04.json](../../research/recovered/json_exp_exe1/reports/16_EXP_SETTLEMENT_OWNER_REPLAY_20261022_04.json?plain=1#L1-L1) — `research/recovered/json_exp_exe1/reports/16_EXP_SETTLEMENT_OWNER_REPLAY_20261022_04.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 NO_FIXED_BASELINE_ACCEPTED_SHA_MATCH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2085-L2085)。制約・訂正 Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened.
+  本文 SHA256 `e6766fe4a3b0b77e8fd1551ddd897cd6503ce0d4658836407d076cb7fd339445`
+  元パス <code>exp_research_20261021/EXP_SETTLEMENT_OWNER_REPLAY_20261022_04.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2085-L2085)。
+
+- [17_EXP_SIMPLEBATTLE_LIFECYCLE_EVIDENCE_20261022.json](../../research/recovered/json_exp_exe1/reports/17_EXP_SIMPLEBATTLE_LIFECYCLE_EVIDENCE_20261022.json?plain=1#L1-L1) — `research/recovered/json_exp_exe1/reports/17_EXP_SIMPLEBATTLE_LIFECYCLE_EVIDENCE_20261022.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 NO_FIXED_BASELINE_ACCEPTED_SHA_MATCH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2086-L2086)。制約・訂正 Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened.
+  本文 SHA256 `61226cf42a74bd0c43994ce0d051269dc40f242bbc48f8968b59d3e51142f9c6`
+  元パス <code>exp_research_20261021/EXP_SIMPLEBATTLE_LIFECYCLE_EVIDENCE_20261022.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2086-L2086)。
+
+- [18_EXP_SIMPLEBATTLE_LIFECYCLE_VALIDATION_20261022.json](../../research/recovered/json_exp_exe1/reports/18_EXP_SIMPLEBATTLE_LIFECYCLE_VALIDATION_20261022.json?plain=1#L1-L1) — `research/recovered/json_exp_exe1/reports/18_EXP_SIMPLEBATTLE_LIFECYCLE_VALIDATION_20261022.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 NO_FIXED_BASELINE_ACCEPTED_SHA_MATCH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2087-L2087)。制約・訂正 Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened.
+  本文 SHA256 `adffa900fae385db7ecea091369403e2b6d66988d4acd39e5e6f3bb16fa0ed45`
+  元パス <code>exp_research_20261021/EXP_SIMPLEBATTLE_LIFECYCLE_VALIDATION_20261022.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2087-L2087)。
+
+- [19_EXP_STRING_CACHE_ABI_EVIDENCE_20261021.json](../../research/recovered/json_exp_exe1/reports/19_EXP_STRING_CACHE_ABI_EVIDENCE_20261021.json?plain=1#L1-L1) — `research/recovered/json_exp_exe1/reports/19_EXP_STRING_CACHE_ABI_EVIDENCE_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 NO_FIXED_BASELINE_ACCEPTED_SHA_MATCH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2088-L2088)。制約・訂正 Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened.
+  本文 SHA256 `8440b0057d6983d291a151217af7f5a60839d14c9e1f4cd7e9acaf97f1aebb6e`
+  元パス <code>exp_research_20261021/EXP_STRING_CACHE_ABI_EVIDENCE_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2088-L2088)。
+
+- [20_EXP_SUMMON_DESTRUCTOR_VTABLE_20261022.json](../../research/recovered/json_exp_exe1/reports/20_EXP_SUMMON_DESTRUCTOR_VTABLE_20261022.json?plain=1#L1-L1) — `research/recovered/json_exp_exe1/reports/20_EXP_SUMMON_DESTRUCTOR_VTABLE_20261022.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 NO_FIXED_BASELINE_ACCEPTED_SHA_MATCH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2089-L2089)。制約・訂正 Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened.
+  本文 SHA256 `103ef91c0f187fcb8781e9cfd8d7182f1a61d48040f4ceb5a189a96d6300d430`
+  元パス <code>exp_research_20261021/EXP_SUMMON_DESTRUCTOR_VTABLE_20261022.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2089-L2089)。
+
+- [21_EXP_SUMMON_GATES_EVIDENCE_20261022.json](../../research/recovered/json_exp_exe1/reports/21_EXP_SUMMON_GATES_EVIDENCE_20261022.json?plain=1#L1-L1) — `research/recovered/json_exp_exe1/reports/21_EXP_SUMMON_GATES_EVIDENCE_20261022.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 NO_FIXED_BASELINE_ACCEPTED_SHA_MATCH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2090-L2090)。制約・訂正 Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Short selected original-provenance DAT examples attached to authored analysis (9/4/4 examples,4-25LF each); not source-file or systematic property-corpus export, and no inheritance/runtime coverage inferred.
+  本文 SHA256 `24358bf90ff88de65ce095ea09763e2bb500317089beff266050663ffe0911ab`
+  元パス <code>exp_research_20261021/EXP_SUMMON_GATES_EVIDENCE_20261022.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2090-L2090)。
+
+- [22_EXP_THREE_PRODUCER_CALLS_20261021.json](../../research/recovered/json_exp_exe1/reports/22_EXP_THREE_PRODUCER_CALLS_20261021.json?plain=1#L1-L1) — `research/recovered/json_exp_exe1/reports/22_EXP_THREE_PRODUCER_CALLS_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 NO_FIXED_BASELINE_ACCEPTED_SHA_MATCH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2091-L2091)。制約・訂正 Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened.
+  本文 SHA256 `badc35023251625b22c902c9121f048d76c5bcf741fc9c1e49b4f5a122d96f1c`
+  元パス <code>exp_research_20261021/EXP_THREE_PRODUCER_CALLS_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2091-L2091)。
+
+- [23_EXP_TRANSFER_NATIVE_CENSUS_20261022.json](../../research/recovered/json_exp_exe1/reports/23_EXP_TRANSFER_NATIVE_CENSUS_20261022.json?plain=1#L1-L1) — `research/recovered/json_exp_exe1/reports/23_EXP_TRANSFER_NATIVE_CENSUS_20261022.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 NO_FIXED_BASELINE_ACCEPTED_SHA_MATCH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2092-L2092)。制約・訂正 Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held ranges are exclusion metadata. Two witnesses attributed to547FC0 lie at5488ED/548989, beyond named heldprefix through548000; no whole-function or runtime conclusion.
+  本文 SHA256 `25e8bf376bcfede9b7d0f9688b195326a0a1cea3085571d7fc9ae68bbe5d6d1a`
+  元パス <code>exp_research_20261021/EXP_TRANSFER_NATIVE_CENSUS_20261022.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2092-L2092)。
+
+- [24_EXP_UNIT_VTABLE_LIFETIME_20261022.json](../../research/recovered/json_exp_exe1/reports/24_EXP_UNIT_VTABLE_LIFETIME_20261022.json?plain=1#L1-L1) — `research/recovered/json_exp_exe1/reports/24_EXP_UNIT_VTABLE_LIFETIME_20261022.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 NO_FIXED_BASELINE_ACCEPTED_SHA_MATCH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2093-L2093)。制約・訂正 Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened.
+  本文 SHA256 `df98a21d1794857810aa8988c0b5c0caff06e8e49f645e3c4cd5c22afb4a8cae`
+  元パス <code>exp_research_20261021/EXP_UNIT_VTABLE_LIFETIME_20261022.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2093-L2093)。
+
+- [25_EXP_UNIT_VTABLE_WRITER_SCAN_20261022.json](../../research/recovered/json_exp_exe1/reports/25_EXP_UNIT_VTABLE_WRITER_SCAN_20261022.json?plain=1#L1-L1) — `research/recovered/json_exp_exe1/reports/25_EXP_UNIT_VTABLE_WRITER_SCAN_20261022.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 NO_FIXED_BASELINE_ACCEPTED_SHA_MATCH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2094-L2094)。制約・訂正 Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened.
+  本文 SHA256 `b792aca533279a4ebed43965b7c42999080e4be93a79e05a3e4a9d26bf1acad1`
+  元パス <code>exp_research_20261021/EXP_UNIT_VTABLE_WRITER_SCAN_20261022.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2094-L2094)。
+
+- [26_EXP_WRITER_CENSUS_20261022.json](../../research/recovered/json_exp_exe1/reports/26_EXP_WRITER_CENSUS_20261022.json?plain=1#L1-L1) — `research/recovered/json_exp_exe1/reports/26_EXP_WRITER_CENSUS_20261022.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 NO_FIXED_BASELINE_ACCEPTED_SHA_MATCH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2095-L2095)。制約・訂正 Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+  本文 SHA256 `ebdcfa75b6ef8c6b8a0bd8427bb486540b87b18ff811eacbbc523f4ec87011ed`
+  元パス <code>exp_research_20261021/EXP_WRITER_CENSUS_20261022.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2095-L2095)。
+
+- [BATTLE_BOUNDARY_VALIDATION_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BOUNDARY_VALIDATION_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BOUNDARY_VALIDATION_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2096-L2096)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `e658f334f43b25919cd53d0ceae7d4694d94da0c78815e43821355b7dbc5adae`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_BOUNDARY_VALIDATION_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2096-L2096)。
+
+- [BATTLE_BOUNDARY_VALIDATION_V2_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BOUNDARY_VALIDATION_V2_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BOUNDARY_VALIDATION_V2_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2097-L2097)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `9e781fe486fba03839945a158d739838bbeaa2e11f7983fa7e5e214df91220cb`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_BOUNDARY_VALIDATION_V2_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2097-L2097)。
+
+- [BATTLE_BRIDGE_AUTO_SAVE_SUFFIX_DIAG_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_AUTO_SAVE_SUFFIX_DIAG_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_AUTO_SAVE_SUFFIX_DIAG_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2098-L2098)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `a28ba58b75d2307b1816dc0530eac17d8a49aa1cbb6cb214727722dffb3b42e8`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_AUTO_SAVE_SUFFIX_DIAG_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2098-L2098)。
+
+- [BATTLE_BRIDGE_CNB02_NATIVE_SAVE_CROSSWALK_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_CNB02_NATIVE_SAVE_CROSSWALK_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_CNB02_NATIVE_SAVE_CROSSWALK_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2099-L2099)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `049df08d5e3167cc7617dc4b0565e3fbdebf521c3a4bcfd87ca9bfaf1e41ca3d`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_CNB02_NATIVE_SAVE_CROSSWALK_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2099-L2099)。
+
+- [BATTLE_BRIDGE_CURRENT_ORIGINAL_SAVES_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_CURRENT_ORIGINAL_SAVES_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_CURRENT_ORIGINAL_SAVES_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2100-L2100)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `c5faed1d622c0b246f9fc505cd265714c86ee5d05dc99a5a38295c1ccddfc1b6`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_CURRENT_ORIGINAL_SAVES_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2100-L2100)。
+
+- [BATTLE_BRIDGE_FIELD_XREFS_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json`
+  回収状態 PRIVACY_ONLY_FULL_VARIANT。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2101-L2101)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `c7c168e46bafbac8d67b37799e92f33fb2e72205bfc65fa9c639518aef6c15b3`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2101-L2101)。
+
+- [BATTLE_BRIDGE_IPC_SYNTHETIC_PROOF_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_IPC_SYNTHETIC_PROOF_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_IPC_SYNTHETIC_PROOF_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2102-L2102)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `bfe7ea1a264cd98a91e7bd4ed01a9a6ce13a1e69eda9ca893081d5a67800a6f1`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_IPC_SYNTHETIC_PROOF_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2102-L2102)。
+
+- [BATTLE_BRIDGE_MODULEBASE_SELFTEST_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_MODULEBASE_SELFTEST_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_MODULEBASE_SELFTEST_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2103-L2103)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `6af21d97204d22dad6256da761b8c850bac36406c9b8788b72a61c44e76ef23d`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_MODULEBASE_SELFTEST_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2103-L2103)。
+
+- [BATTLE_BRIDGE_PROGRESS_STAGE8_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_PROGRESS_STAGE8_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_PROGRESS_STAGE8_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2104-L2104)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `ecf95e31e4316eb4b2e48e8678d792b6f87ab578acfd4ea9a40aa85ce48671e4`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_PROGRESS_STAGE8_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2104-L2104)。
+
+- [BATTLE_BRIDGE_PROTOCOL_DRAFT_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_PROTOCOL_DRAFT_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_PROTOCOL_DRAFT_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2105-L2105)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `16d3b9fe404c28a4bb97de2280276f0bc7c04f810ad9f8cd9fd6cbb3110b2448`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_PROTOCOL_DRAFT_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2105-L2105)。
+
+- [BATTLE_BRIDGE_SAVE2_WAR_ROUTE_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_SAVE2_WAR_ROUTE_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_SAVE2_WAR_ROUTE_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2106-L2106)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `3349e6ff0c68a9daba71606e65c16ca2b8d61e2660f948cfc09e51ffdc6275dc`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_SAVE2_WAR_ROUTE_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2106-L2106)。
+
+- [BATTLE_BRIDGE_SAVED_WIRE_IPC_VERIFY_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_SAVED_WIRE_IPC_VERIFY_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_SAVED_WIRE_IPC_VERIFY_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2107-L2107)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `c893131d927bee33cb6d3e11378cd165aea2b0c0c6523d1058cd721f880989bf`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_SAVED_WIRE_IPC_VERIFY_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2107-L2107)。
+
+- [BATTLE_BRIDGE_STAGE3_PACK_MANIFEST_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE3_PACK_MANIFEST_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE3_PACK_MANIFEST_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2108-L2108)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `dbee42aa7625624a4eb56f5bdb81da00bf5aa28660afeb808d30c585b59e7094`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE3_PACK_MANIFEST_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2108-L2108)。
+
+- [BATTLE_BRIDGE_STAGE3_VALIDATION_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE3_VALIDATION_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE3_VALIDATION_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2109-L2109)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `fc3d27de1a427caacc5ff49dbf079bfa3b000d03aadc6cc92fcf594f94eb841e`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE3_VALIDATION_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2109-L2109)。
+
+- [BATTLE_BRIDGE_STAGE4_FOCUS_PAUSE_PE_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE4_FOCUS_PAUSE_PE_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE4_FOCUS_PAUSE_PE_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2110-L2110)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `5873b9104a08e1af56f2194ff4bb42973128af506b7e3d941478054f4553fa1b`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE4_FOCUS_PAUSE_PE_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2110-L2110)。
+
+- [BATTLE_BRIDGE_STAGE4_HOOKSITE_PE_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE4_HOOKSITE_PE_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE4_HOOKSITE_PE_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2111-L2111)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `b5aa1c1520a12826afaa28065d79422f0e72387d06646e1299a8b8f2aae38449`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE4_HOOKSITE_PE_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2111-L2111)。
+
+- [BATTLE_BRIDGE_STAGE4_OWNER_ABI_PE_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE4_OWNER_ABI_PE_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE4_OWNER_ABI_PE_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2112-L2112)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `d7af9909b2e0ef6ba2fe7cc0ee4b2027dfc2a4069e219bb5af2181a8767fd7c5`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE4_OWNER_ABI_PE_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2112-L2112)。
+
+- [BATTLE_BRIDGE_STAGE4_VALIDATION_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE4_VALIDATION_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE4_VALIDATION_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2113-L2113)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `a8eff1e3773a0d4f917d90a8c9e2c00d127c47be76a8b90cb87104b5bf041377`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE4_VALIDATION_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2113-L2113)。
+
+- [BATTLE_BRIDGE_STAGE5_NATIVE_BUILDER_ABI_PE_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE5_NATIVE_BUILDER_ABI_PE_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE5_NATIVE_BUILDER_ABI_PE_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2114-L2114)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `7fdd38c2e3c7d50f8bcc18e6e6718f18ddc8441dddec988e25ed96b1504158cc`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE5_NATIVE_BUILDER_ABI_PE_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2114-L2114)。
+
+- [BATTLE_BRIDGE_STAGE5_SCENE_PATH_SPLIT_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE5_SCENE_PATH_SPLIT_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE5_SCENE_PATH_SPLIT_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2115-L2115)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `99edd8cea78e79709c2e3d0bdc73427990a0dfa4ff4d2ad3dc7126f85ac09887`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE5_SCENE_PATH_SPLIT_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2115-L2115)。
+
+- [BATTLE_BRIDGE_STAGE5_VALIDATION_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE5_VALIDATION_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE5_VALIDATION_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2116-L2116)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `01a1258498313f3db0ebb88c6c6c789dd16786cb3e549b45b095534e8b7b40f4`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE5_VALIDATION_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2116-L2116)。
+
+- [BATTLE_BRIDGE_STAGE5_VALIDATION_V2_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE5_VALIDATION_V2_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE5_VALIDATION_V2_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2117-L2117)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `eb4cc0133e24d31d36735ff68e7788f4ec29fec199c3c8d33c4c2853ac1cc671`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE5_VALIDATION_V2_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2117-L2117)。
+
+- [BATTLE_BRIDGE_STAGE6_ASLR_PE_LAYOUT_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE6_ASLR_PE_LAYOUT_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE6_ASLR_PE_LAYOUT_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2118-L2118)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `6b8f4cb98e00e57da11c6770edcf58d3979be4c18eccbf07b38b010ce717a4bc`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE6_ASLR_PE_LAYOUT_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2118-L2118)。
+
+- [BATTLE_BRIDGE_STAGE6_VALIDATION_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE6_VALIDATION_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE6_VALIDATION_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2119-L2119)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `4325906a371862324d3a40aff7a38dedc0a0107d654dcdc723c088db2ffe60c7`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE6_VALIDATION_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2119-L2119)。
+
+- [BATTLE_BRIDGE_STAGE6_VALIDATION_V2_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE6_VALIDATION_V2_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE6_VALIDATION_V2_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2120-L2120)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `d2336cd3b750d6e557e762b549dbce668337c694b94d14e22dc2345663be2511`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE6_VALIDATION_V2_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2120-L2120)。
+
+- [BATTLE_BRIDGE_STAGE8_VALIDATION_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE8_VALIDATION_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE8_VALIDATION_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2121-L2121)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `cdf3edde988400572cbe1c91ba9ffc88c26e9a4f8e2a39ef963f3360bf487aa6`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE8_VALIDATION_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2121-L2121)。
+
+- [BATTLE_BRIDGE_STAGE8_VALIDATION_V2_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE8_VALIDATION_V2_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE8_VALIDATION_V2_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2122-L2122)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `58a76c86efc0aa0a29ce587fe955696061cda332193e13fa911a88672225e019`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE8_VALIDATION_V2_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2122-L2122)。
+
+- [BATTLE_BRIDGE_SYNTHETIC_DECODED_SAMPLE_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_SYNTHETIC_DECODED_SAMPLE_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_SYNTHETIC_DECODED_SAMPLE_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2123-L2123)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `c22de0d5e3ee47b92ec66aa1f869233f0ae4bf27e3c79d2527ce79f607a60baa`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_SYNTHETIC_DECODED_SAMPLE_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2123-L2123)。
+
+- [BATTLE_BRIDGE_SYNTHETIC_GATE_BLOCKERS_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_SYNTHETIC_GATE_BLOCKERS_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_SYNTHETIC_GATE_BLOCKERS_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2124-L2124)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `38ec6fe9e2ec5f9c21bcc66cdc15f40d6f09604548b50a3d0833afcdc6dda48a`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_SYNTHETIC_GATE_BLOCKERS_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2124-L2124)。
+
+- [BATTLE_BRIDGE_SYNTHETIC_MEMORY_SAMPLE_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_SYNTHETIC_MEMORY_SAMPLE_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_SYNTHETIC_MEMORY_SAMPLE_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2125-L2125)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `bca24c4e3f783c481cf39814dfc8407bfb6ead4960af5a6134ca4cb46e3381bd`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_SYNTHETIC_MEMORY_SAMPLE_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2125-L2125)。
+
+- [BATTLE_BRIDGE_VALIDATION_20261021_1830.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_VALIDATION_20261021_1830.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_VALIDATION_20261021_1830.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2126-L2126)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `af5bb1a85bf0363c4bad362d357f40104737d94e5277fc4667b24fdd374b72da`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_VALIDATION_20261021_1830.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2126-L2126)。
+
+- [BATTLE_BRIDGE_WORK_TRANSFER_GATE_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_WORK_TRANSFER_GATE_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_WORK_TRANSFER_GATE_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2127-L2127)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `0404ea53a9e93f66c59c70280475225ef6da97fe62f0986fefd42ef6f963d97e`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_WORK_TRANSFER_GATE_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2127-L2127)。
+
+- [BATTLE_BRIDGE_WORK_TRANSFER_GATE_STAGE8_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_WORK_TRANSFER_GATE_STAGE8_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_WORK_TRANSFER_GATE_STAGE8_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2128-L2128)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `0410ddfd64c5d80a59364f8ce1179652459cbee92d9a9b824b124b4f85702c19`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_WORK_TRANSFER_GATE_STAGE8_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2128-L2128)。
+
+- [BATTLE_CRT_RNG_ABI_PE_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_CRT_RNG_ABI_PE_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_CRT_RNG_ABI_PE_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2129-L2129)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `4370f3c58e960b7f4cda7d959b2fad9a4527d5dbe377b95c3552cb10c7835040`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_CRT_RNG_ABI_PE_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2129-L2129)。
+
+- [BATTLE_CRT_RNG_EXTERNAL_VERIFY_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_CRT_RNG_EXTERNAL_VERIFY_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_CRT_RNG_EXTERNAL_VERIFY_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2130-L2130)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `3c5fc7ba458abcc7b749760bcad94ecdb1f4f4f74905a8b1d6d373005988c4c8`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_CRT_RNG_EXTERNAL_VERIFY_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2130-L2130)。
+
+- [BATTLE_DEFINITION_IDENTITY_PE_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_DEFINITION_IDENTITY_PE_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_DEFINITION_IDENTITY_PE_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2131-L2131)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `d8582f2de559a7a946cd50cc92cbf9b389fd1e6da6ace0c965870ecc7885294e`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_DEFINITION_IDENTITY_PE_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2131-L2131)。
+
+- [BATTLE_FINISH_STAGE6_COMMIT_BRANCH_GUARD_PE_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE6_COMMIT_BRANCH_GUARD_PE_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE6_COMMIT_BRANCH_GUARD_PE_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2132-L2132)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `af3ab4fb5eb69a956587061a40ea49da4cc0832db6df33197d6e578512dd8cf6`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE6_COMMIT_BRANCH_GUARD_PE_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2132-L2132)。
+
+- [BATTLE_FINISH_STAGE6_EXACT_NATIVE_ABI_GATE_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE6_EXACT_NATIVE_ABI_GATE_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE6_EXACT_NATIVE_ABI_GATE_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2133-L2133)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `e09b3060711e6820029ac28b6674023ef0ee013e397e99dd39ce155b23698e65`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE6_EXACT_NATIVE_ABI_GATE_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2133-L2133)。
+
+- [BATTLE_FINISH_STAGE6_NATIVE_CALLER_ABI_PE_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE6_NATIVE_CALLER_ABI_PE_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE6_NATIVE_CALLER_ABI_PE_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2134-L2134)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `d75b9cf8dc1fb54d6054c1cbe7efefd6d494ee234f56a040b35857f9ee6ace43`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE6_NATIVE_CALLER_ABI_PE_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2134-L2134)。
+
+- [BATTLE_FINISH_STAGE6_NATIVE_WINDOWS_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE6_NATIVE_WINDOWS_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE6_NATIVE_WINDOWS_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2135-L2135)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `d9ddcfbad1608e02cb0fc09f4ddf64b290babdd7f6142ec44ab96b209473e71a`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE6_NATIVE_WINDOWS_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2135-L2135)。
+
+- [BATTLE_FINISH_STAGE6_RET8_CROSSBRANCH_PE_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE6_RET8_CROSSBRANCH_PE_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE6_RET8_CROSSBRANCH_PE_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2136-L2136)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `8e124d7ce36878cd332a2ea6ae65c2fa69290fc7de186df39bea9baed83cffc9`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE6_RET8_CROSSBRANCH_PE_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2136-L2136)。
+
+- [BATTLE_FINISH_STAGE6_SCRIPT_EDI_BRANCH_WINDOWS_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE6_SCRIPT_EDI_BRANCH_WINDOWS_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE6_SCRIPT_EDI_BRANCH_WINDOWS_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2137-L2137)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `683ad096c3f079ad1ad3446ba13a68d9b9f487771eed7adaf15bffe5ac15baec`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE6_SCRIPT_EDI_BRANCH_WINDOWS_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2137-L2137)。
+
+- [BATTLE_FINISH_STAGE6_SCRIPT_EDI_PROVENANCE_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE6_SCRIPT_EDI_PROVENANCE_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE6_SCRIPT_EDI_PROVENANCE_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2138-L2138)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `8feb0f079e00a8a72102a354ee1d805d44a5c5067a1fec6cfdb440e3c0c81696`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE6_SCRIPT_EDI_PROVENANCE_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2138-L2138)。
+
+- [BATTLE_FINISH_STAGE6_SCRIPT_WIN_FLAG_DISCREPANCY_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE6_SCRIPT_WIN_FLAG_DISCREPANCY_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE6_SCRIPT_WIN_FLAG_DISCREPANCY_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2139-L2139)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `c70b0adc15bb5ffb6cbd5000619651864eadbb6c6e08045e9da12d6d25d68d82`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE6_SCRIPT_WIN_FLAG_DISCREPANCY_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2139-L2139)。
+
+- [BATTLE_FINISH_STAGE6_SCRIPT_WIN_OPCODE5_RESOLVED_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE6_SCRIPT_WIN_OPCODE5_RESOLVED_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE6_SCRIPT_WIN_OPCODE5_RESOLVED_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2140-L2140)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `444d4497c9353d29248508f53a3e968358626747bcc32fd55b1e51b3474da49e`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE6_SCRIPT_WIN_OPCODE5_RESOLVED_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2140-L2140)。
+
+- [BATTLE_FINISH_STAGE7_GAMEEVENT_DIRECT_WRITESET_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE7_GAMEEVENT_DIRECT_WRITESET_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE7_GAMEEVENT_DIRECT_WRITESET_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2141-L2141)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `906fe5addf6bdc01784493acd6e11483c19ec0961802c17c410549ff0095a1d8`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE7_GAMEEVENT_DIRECT_WRITESET_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2141-L2141)。
+
+- [BATTLE_FINISH_STAGE7_TASK_VM_REENTRY_PE_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE7_TASK_VM_REENTRY_PE_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE7_TASK_VM_REENTRY_PE_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2142-L2142)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `5dec9c0e0c747f5cd5ab2afad8500fc20ed905dcebf31d5c868e98c77f2874f6`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE7_TASK_VM_REENTRY_PE_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2142-L2142)。
+
+- [BATTLE_G0_LEGAL_ORIGINAL_NATIVE_RUN_CONFIRMED.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_G0_LEGAL_ORIGINAL_NATIVE_RUN_CONFIRMED.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_G0_LEGAL_ORIGINAL_NATIVE_RUN_CONFIRMED.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2143-L2143)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `87ade831d38f199697f905dad1a8c964e01f0593d1e1c0be9780ea6fbd998c2c`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_G0_LEGAL_ORIGINAL_NATIVE_RUN_CONFIRMED.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2143-L2143)。
+
+- [BATTLE_G0_ORIGINAL_BATTLE_TRACE_REVIEW_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_G0_ORIGINAL_BATTLE_TRACE_REVIEW_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_G0_ORIGINAL_BATTLE_TRACE_REVIEW_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2144-L2144)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `b18b94de0597ee0387fd7a737fc3480caf660e2f0e78574ffa18c3d95dd82005`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_G0_ORIGINAL_BATTLE_TRACE_REVIEW_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2144-L2144)。
+
+- [BATTLE_HANDOFF_RNG_OWNER_STATIC_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_HANDOFF_RNG_OWNER_STATIC_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_HANDOFF_RNG_OWNER_STATIC_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2145-L2145)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `5ca38209a60f24d657a4ec9364933f65dc3dde862c3c6d624010f04efa26436f`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_HANDOFF_RNG_OWNER_STATIC_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2145-L2145)。
+
+- [BATTLE_INIT_GHIDRA_END_CORRECTION_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_INIT_GHIDRA_END_CORRECTION_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_INIT_GHIDRA_END_CORRECTION_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2146-L2146)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `c93fde8857181772ffeedbdb69d895bb5a733d2281dfdbf73d490798a09525d4`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_INIT_GHIDRA_END_CORRECTION_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2146-L2146)。
+
+- [BATTLE_INIT_ORIGINAL_GHIDRA_BODY_AUDIT_20261021.json](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_INIT_ORIGINAL_GHIDRA_BODY_AUDIT_20261021.json?plain=1#L1-L1) — `research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_INIT_ORIGINAL_GHIDRA_BODY_AUDIT_20261021.json`
+  回収状態 CONTENT_REVIEWED_EXACT_STRUCTURED_EVIDENCE。以前の収録状況 UNACCEPTED_AT_BASELINE_2069。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2147-L2147)。制約・訂正 Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+  本文 SHA256 `743233db83fad62fb1576d3ba076494fdc10b49fe12f6fc42def66b347306fbb`
+  元パス <code>rea_lab/headless_analysis/search_index/BATTLE_INIT_ORIGINAL_GHIDRA_BODY_AUDIT_20261021.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2147-L2147)。
+
+[前のページ](page-020.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md) · [次のページ](page-022.md)

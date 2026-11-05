@@ -1,0 +1,43 @@
+{
+  "id": "BRIDGE-20261022-STAGE10-VALIDATION",
+  "checks": {
+    "tests_111_no_failure": true,
+    "gui_no_automatic_recording": true,
+    "gui_imports_v7": true,
+    "session_defaults_v7": true,
+    "original_failures_untouched": true,
+    "native_null_check": true,
+    "native_null_skip_branch": true,
+    "native_periodic_compaction": true,
+    "native_three_arrays_recovered": true,
+    "three_partial_battle_structures_recovered": true,
+    "no_recovered_G1_false_claim": true,
+    "three_child_OS_pipeline_pass": true,
+    "child_RAW_hashes_match": true,
+    "old_V6_unchanged": true,
+    "core_backup_matches_original": true
+  },
+  "passed": 15,
+  "total": 15,
+  "tests": 111,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "test_log": "...............................................................................................................\n----------------------------------------------------------------------\nRan 111 tests in 0.737s\n\nOK\n",
+  "gui_stdout": "GUI_SMOKE_PASS: no recorder started\n",
+  "gui_stderr": "",
+  "live_battle_retested": false,
+  "full_G1_proven": false,
+  "external_game_roundtrip_proven": false,
+  "recoveries": "Three historical FAILED attempts recovered as separate partial structures",
+  "native_game_accessed_in_this_validation": false,
+  "work_used": false,
+  "source_hashes": {
+    "battle_native_detached_capture_v7_20261022.py": "C8E590CB1ECD69CD18E30164F7DEA74BC6DB29D80C9FCB57991A3F567053126F",
+    "battle_user_recorder_core_20261022.py": "DE4D60A4697E104BF4D7A75FE30DF9640089313D9AF40BB2A4703F593785CACC",
+    "battle_user_recorder_app_20261022.py": "21EA8712FDD90C004A23A3615562B0A670229114BE1170AB379FC48FD58E750A",
+    "test_battle_task_null_stage10_20261022.py": "9E449FBB4253A7FDA6BC5CCC34E5FCB59BC37383FE3CCC6D1B866FF5709F9F4A",
+    "BATTLE_STAGE10_NULL_TASK_RECOVERY_20261022.json": "C16A2AED4DEDA630251A47F4F544CBC887E1D9A760CBCF875ECA0C7C276A04B2",
+    "BATTLE_STAGE10_NULL_TASK_CROSSPROCESS_20261022.json": "FE95AC58A3D4EF74D4B94D3CBE3F324902599452C7B9BB32D2ED993ABA9E0E82"
+  }
+}

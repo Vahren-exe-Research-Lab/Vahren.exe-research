@@ -1,0 +1,18 @@
+{
+  "status": "SELFTEST_COMPLETE",
+  "origin": "SYNTHETIC_TASK_HOLES_CHILD_WIN32",
+  "utc": "2026-10-21T15:57:38.281233+00:00",
+  "structural_captures": 1,
+  "capture_failures": 0,
+  "attempts": 1,
+  "files": [
+    {
+      "name": "BATTLE_USER_20261021T155738116005Z_f31a10dd_RAW_01.json",
+      "sha256": "1B35D0A791A8A21E97EAB7990725276A39C0BBCCD96EC4C5A64B2F225F67937C"
+    }
+  ],
+  "event_log": "BATTLE_USER_20261021T155738116005Z_f31a10dd_EVENTS.jsonl",
+  "full_G1_proven": false,
+  "external_game_roundtrip_proven": false,
+  "game_memory_written": false
+}

@@ -1,0 +1,86 @@
+{
+  "id": "BRIDGE-HOOK-SITES-20261021",
+  "source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "status": "ORIGINAL_PE_VERIFIED / NO_HOOK_INSTALLED",
+  "instructions": [
+    {
+      "va": "0x004B99B9",
+      "bytes": "8d8604050000",
+      "length": 6,
+      "asm": "lea eax, [esi + 0x504]"
+    },
+    {
+      "va": "0x004B99BF",
+      "bytes": "50",
+      "length": 1,
+      "asm": "push eax"
+    },
+    {
+      "va": "0x004B99C0",
+      "bytes": "e8bb2efdff",
+      "length": 5,
+      "asm": "call 0x48c880"
+    },
+    {
+      "va": "0x004B99C5",
+      "bytes": "eb18",
+      "length": 2,
+      "asm": "jmp 0x4b99df"
+    },
+    {
+      "va": "0x004B99C7",
+      "bytes": "8d8e04050000",
+      "length": 6,
+      "asm": "lea ecx, [esi + 0x504]"
+    },
+    {
+      "va": "0x004B99CD",
+      "bytes": "e8ce3cfdff",
+      "length": 5,
+      "asm": "call 0x48d6a0"
+    },
+    {
+      "va": "0x004B99D2",
+      "bytes": "eb0b",
+      "length": 2,
+      "asm": "jmp 0x4b99df"
+    },
+    {
+      "va": "0x004B99D4",
+      "bytes": "8d8e04050000",
+      "length": 6,
+      "asm": "lea ecx, [esi + 0x504]"
+    },
+    {
+      "va": "0x004B99DA",
+      "bytes": "e88150fdff",
+      "length": 5,
+      "asm": "call 0x48ea60"
+    },
+    {
+      "va": "0x004B99DF",
+      "bytes": "57",
+      "length": 1,
+      "asm": "push edi"
+    },
+    {
+      "va": "0x004B99E0",
+      "bytes": "e8cb8a0000",
+      "length": 5,
+      "asm": "call 0x4c24b0"
+    },
+    {
+      "va": "0x004B99E5",
+      "bytes": "837e0802",
+      "length": 4,
+      "asm": "cmp dword ptr [esi + 8], 2"
+    }
+  ],
+  "hazards": [
+    "0x004B99D2 is a 2-byte short JMP: blindly writing a 5-byte near JMP destroys code for a different scene arm starting at 0x004B99D4",
+    "0x004B99CD is a 5-byte direct CALL to 0x0048D6A0; a replacement target would need to preserve the native ECX argument, stack, caller-saved ABI, original call and return path",
+    "0x004C24B0 runs an entire message/Task loop; blocking the UI thread waiting for another EXE causes a responsive-UI hazard",
+    "Any real detour must be separately designed and verified; this is evidence, NOT an installed hook."
+  ],
+  "candidate_handoff_after_original_builder": "Return to 0x004B99D2 from original 0x0048D6A0, through an instrumented 0x004B99CD call only after native ABI proof"
+}

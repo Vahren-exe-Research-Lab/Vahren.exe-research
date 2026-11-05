@@ -1,0 +1,104 @@
+{
+  "research_id": "EXP-COLLAB-20261021-2112-01/CP02",
+  "source_db": "../rea_lab/headless_analysis/search_index/search.sqlite",
+  "status": "STATIC_INDEX_VERIFIED; actual_game_not_run; NOT_READY",
+  "direct_sites": [
+    {
+      "producer": "0x00547490",
+      "stage": "lookup",
+      "site": "0x005477F4",
+      "callee": "0x00577260",
+      "count": 1,
+      "passed": true
+    },
+    {
+      "producer": "0x00547490",
+      "stage": "construct",
+      "site": "0x00547897",
+      "callee": "0x0058B7F0",
+      "count": 1,
+      "passed": true
+    },
+    {
+      "producer": "0x00547490",
+      "stage": "copy",
+      "site": "0x005478B3",
+      "callee": "0x00466BA0",
+      "count": 1,
+      "passed": true
+    },
+    {
+      "producer": "0x00547490",
+      "stage": "insert",
+      "site": "0x005478BA",
+      "callee": "0x00577310",
+      "count": 1,
+      "passed": true
+    },
+    {
+      "producer": "0x00553390",
+      "stage": "lookup",
+      "site": "0x0055352D",
+      "callee": "0x00577260",
+      "count": 1,
+      "passed": true
+    },
+    {
+      "producer": "0x00553390",
+      "stage": "construct",
+      "site": "0x005535E4",
+      "callee": "0x0058B7F0",
+      "count": 1,
+      "passed": true
+    },
+    {
+      "producer": "0x00553390",
+      "stage": "copy",
+      "site": "0x00553600",
+      "callee": "0x00466BA0",
+      "count": 1,
+      "passed": true
+    },
+    {
+      "producer": "0x00553390",
+      "stage": "insert",
+      "site": "0x0055360C",
+      "callee": "0x00577310",
+      "count": 1,
+      "passed": true
+    },
+    {
+      "producer": "0x0054E7B0",
+      "stage": "lookup",
+      "site": "0x0054EE82",
+      "callee": "0x00577260",
+      "count": 1,
+      "passed": true
+    },
+    {
+      "producer": "0x0054E7B0",
+      "stage": "construct",
+      "site": "0x0054EF3E",
+      "callee": "0x0058B7F0",
+      "count": 1,
+      "passed": true
+    },
+    {
+      "producer": "0x0054E7B0",
+      "stage": "copy",
+      "site": "0x0054EF5A",
+      "callee": "0x00466BA0",
+      "count": 1,
+      "passed": true
+    },
+    {
+      "producer": "0x0054E7B0",
+      "stage": "insert",
+      "site": "0x0054EF69",
+      "callee": "0x00577310",
+      "count": 1,
+      "passed": true
+    }
+  ],
+  "scope_warning": "12 direct-call sites; not a runtime trace or stable identity proof"
+}

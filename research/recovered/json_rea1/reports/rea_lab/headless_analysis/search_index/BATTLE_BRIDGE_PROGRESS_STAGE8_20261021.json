@@ -1,0 +1,61 @@
+{
+  "id": "BRIDGE-20261021-RESEARCH-08-SUBJECTIVE-PROGRESS",
+  "metric": "Engineering research readiness only, NOT executable finished percentage or success probability",
+  "previous_percent": 47.5,
+  "current_percent": 51.75,
+  "uncertainty_range_percent": [
+    39,
+    60
+  ],
+  "estimated_dimensions": [
+    {
+      "name": "Ghidra/CALL search infrastructure",
+      "weight": 10,
+      "prior": 100,
+      "current": 100
+    },
+    {
+      "name": "Native start hook and ABI",
+      "weight": 20,
+      "prior": 80,
+      "current": 85
+    },
+    {
+      "name": "Original battle start packet and state identity",
+      "weight": 25,
+      "prior": 35,
+      "current": 45
+    },
+    {
+      "name": "Native result ABI and one-time world commit",
+      "weight": 20,
+      "prior": 45,
+      "current": 45
+    },
+    {
+      "name": "Original Task/VM/UI pause/resume",
+      "weight": 15,
+      "prior": 25,
+      "current": 30
+    },
+    {
+      "name": "Original game to external EXE to original game smoke test",
+      "weight": 10,
+      "prior": 0,
+      "current": 0
+    }
+  ],
+  "objective_work_gate_passes": 3,
+  "objective_work_gate_count": 9,
+  "original_game_battle_observed": true,
+  "original_game_start_packet_complete": false,
+  "original_external_game_roundtrip_passes": 0,
+  "new_evidence": [
+    "actual SHA-matched Vahren.exe native battle start/end",
+    "user attestation of CPU-turn-delayed invasion",
+    "real game postbattle AttackMap/HelpMap color/nil layout confirmed",
+    "native war tree decoder v5 synthetic tests 10/10 and corrected watcher 8/8"
+  ],
+  "caveat": "The after-battle tree snapshots differ at different times. Do not infer exact start participant roster from them.",
+  "work_transfer_ready": false
+}

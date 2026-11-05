@@ -1,0 +1,14 @@
+{
+  "research_id": "EXP-SETTLEMENT-20261022-04/REPLAY",
+  "result": "PASS",
+  "native_sites_replayed": 61,
+  "literals_replayed": 9,
+  "vtable_slots_replayed": 3,
+  "pseudocode_hashes_replayed": 16,
+  "dat_examples_replayed": 4,
+  "graph_edge_occurrences_replayed": 11,
+  "source_files_unchanged": true,
+  "evidence_sha256": "B201C5CB9AF30EAE5A9D05FBBB6D9B2B562BBCBB701FE7E410187FB761073073",
+  "gameplay_tests": 0,
+  "scope": "Static byte/source replay only; indirect calls and feasible runtime paths remain unverified."
+}

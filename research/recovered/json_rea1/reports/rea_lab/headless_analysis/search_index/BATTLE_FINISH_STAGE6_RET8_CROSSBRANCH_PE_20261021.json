@@ -1,0 +1,118 @@
+{
+  "status": "STATIC PE LINEAR_BRANCH_XREFS_NOT_PROVEN_CFG",
+  "sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "GHIDRA_declared_body_va": "0x00493630",
+  "declared_size": 11376,
+  "ret8": "0x00494855",
+  "after_ret_flag_compare": "0x00494858",
+  "branch_to_flag_after_ret": [
+    {
+      "site": "0x0049466D",
+      "op": "jne",
+      "target": "0x00494858"
+    }
+  ],
+  "all_three_targets": {
+    "0x00494858": [
+      {
+        "site": "0x0049466D",
+        "op": "jne",
+        "target": "0x00494858"
+      }
+    ],
+    "0x00494855": [],
+    "0x00494F8E": [
+      {
+        "site": "0x00494860",
+        "op": "jne",
+        "target": "0x00494F8E"
+      }
+    ]
+  },
+  "branches_to_0x4948xx": [
+    {
+      "site": "0x0049466D",
+      "op": "jne",
+      "target": "0x00494858"
+    },
+    {
+      "site": "0x004947D3",
+      "op": "je",
+      "target": "0x0049480E"
+    },
+    {
+      "site": "0x004947DB",
+      "op": "je",
+      "target": "0x00494805"
+    },
+    {
+      "site": "0x00494823",
+      "op": "je",
+      "target": "0x0049482E"
+    },
+    {
+      "site": "0x00494888",
+      "op": "je",
+      "target": "0x00494899"
+    },
+    {
+      "site": "0x00494A13",
+      "op": "ja",
+      "target": "0x004948CE"
+    },
+    {
+      "site": "0x00494F89",
+      "op": "jmp",
+      "target": "0x00494823"
+    }
+  ],
+  "forward_jumps_past_ret8": [
+    {
+      "site": "0x00493899",
+      "op": "je",
+      "target": "0x0049627D"
+    },
+    {
+      "site": "0x004938DE",
+      "op": "je",
+      "target": "0x00496245"
+    },
+    {
+      "site": "0x004939A8",
+      "op": "jbe",
+      "target": "0x004960F1"
+    },
+    {
+      "site": "0x00493BDD",
+      "op": "jbe",
+      "target": "0x004960F1"
+    },
+    {
+      "site": "0x004940EF",
+      "op": "jbe",
+      "target": "0x004960F1"
+    },
+    {
+      "site": "0x00494346",
+      "op": "jbe",
+      "target": "0x004960F1"
+    },
+    {
+      "site": "0x0049441D",
+      "op": "jbe",
+      "target": "0x004960F1"
+    },
+    {
+      "site": "0x00494598",
+      "op": "jbe",
+      "target": "0x004960F1"
+    },
+    {
+      "site": "0x0049466D",
+      "op": "jne",
+      "target": "0x00494858"
+    }
+  ],
+  "number_of_linear_branch_xrefs": 259,
+  "limitation": "x86 conditional/unconditional edges to numeric targets only. Indirect jumps, EH dispatch and alternative entry can bypass these xrefs; no conclusion that after-RET is unreachable."
+}

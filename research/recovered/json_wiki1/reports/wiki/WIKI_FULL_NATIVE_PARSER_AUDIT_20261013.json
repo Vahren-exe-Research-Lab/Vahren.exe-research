@@ -1,0 +1,4963 @@
+{
+  "status": "STATIC_WORK_PARSER_SCAN_COMPLETE",
+  "completed_files": 590,
+  "expected_files": 590,
+  "rows": [
+    {
+      "file": "a_default/script/1000_チュートリアル/field_degi.dat",
+      "size_bytes": 1645,
+      "sha256": "d69ba43a77b70be799e646fe9084ef9449f022a2ff0993b59f9b41faad2e593a",
+      "parse_error": null,
+      "parse_declarations": 21,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/1000_チュートリアル/tuto_event1.dat",
+      "size_bytes": 14685,
+      "sha256": "e1fa2a630880f7841f6ba2cdcd0b68573496b6a55f0cbec05bf4f1df9d7a24a1",
+      "parse_error": null,
+      "parse_declarations": 21,
+      "skill_declarations": 8
+    },
+    {
+      "file": "a_default/script/1000_チュートリアル/tuto_event2.dat",
+      "size_bytes": 9631,
+      "sha256": "770d09f7b04a954275d4f50100840bb0d86efdb391ba16a22a7f82279cc6873a",
+      "parse_error": null,
+      "parse_declarations": 13,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/1000_チュートリアル/tuto_event3.dat",
+      "size_bytes": 21696,
+      "sha256": "1749348fd9fefbe4d4dd88a14c50a84b160dae12093253dc8acb2473448c6760",
+      "parse_error": null,
+      "parse_declarations": 11,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/1000_チュートリアル/tuto_scenario.dat",
+      "size_bytes": 1682,
+      "sha256": "2e15b3f18c80f7f487f30e06224c9218fbf566f1fe07d1a5dcc4f18dbba1c470",
+      "parse_error": null,
+      "parse_declarations": 8,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/100_イベント汎用/event_00_共通イベント.dat",
+      "size_bytes": 36800,
+      "sha256": "7430e2ddc17617c368158653dcecdef5ae54b818ff493779558505e4bf20f5ee",
+      "parse_error": null,
+      "parse_declarations": 78,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/100_イベント汎用/event_01_共通イベント２.dat",
+      "size_bytes": 30671,
+      "sha256": "9e816c2fd325dfa879cbc728163e6ffe7cd379ae99e6c297b793f3c87477ef41",
+      "parse_error": null,
+      "parse_declarations": 23,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/100_イベント汎用/event_battle.dat",
+      "size_bytes": 18457,
+      "sha256": "72463ad98b1bf530574c2440fe1f65062e43c54074e3dd7bed0c545fece82b1c",
+      "parse_error": null,
+      "parse_declarations": 7,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/100_イベント汎用/event_castleset.dat",
+      "size_bytes": 1382,
+      "sha256": "4a9fdffaa86d7900be86c94a645ad54836766d2b218e33ceed22e78ab01549d9",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/100_イベント汎用/event_end.dat",
+      "size_bytes": 20776,
+      "sha256": "259596d8a0f27d4415b1907a9aedeccf4767508c694059c27c73ada8c5a51758",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/100_イベント汎用/event_samson.dat",
+      "size_bytes": 25352,
+      "sha256": "36019096a5a95477c5426c4f54423e9a19a8d6986e4257145d201384c088ce49",
+      "parse_error": null,
+      "parse_declarations": 20,
+      "skill_declarations": 5
+    },
+    {
+      "file": "a_default/script/100_イベント汎用/event_world_kousoku.dat",
+      "size_bytes": 12880,
+      "sha256": "5514adb15d99a2654839036adb26785cf0c37c35ac5de64cc18427fe36039323",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/101_キャラクリ/chara_create_event.dat",
+      "size_bytes": 10229,
+      "sha256": "5ae7460c76ff91b611c6239a60632585beca3c6e03868b2c33b0deab225a27dc",
+      "parse_error": null,
+      "parse_declarations": 14,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/101_キャラクリ/chara_create_unit.dat",
+      "size_bytes": 6079,
+      "sha256": "57257d39e2c1fbf3ac95f30839be3048611ac832b680845d2c07793110a93594",
+      "parse_error": null,
+      "parse_declarations": 20,
+      "skill_declarations": 12
+    },
+    {
+      "file": "a_default/script/102_ランダムイベント/randomev0-10.dat",
+      "size_bytes": 32619,
+      "sha256": "86567eb786a4dd3d9b8bf518ead42eb733ecdb451155a0f1923911ff3f2d589d",
+      "parse_error": null,
+      "parse_declarations": 13,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/102_ランダムイベント/randomev11-20.dat",
+      "size_bytes": 23968,
+      "sha256": "11cbbe79c2df8013a6100ddd69a34442da899cc6de2bafb70033f3415c706995",
+      "parse_error": null,
+      "parse_declarations": 8,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/102_ランダムイベント/randomev21-30.dat",
+      "size_bytes": 25913,
+      "sha256": "af3328f5abb2f9e82fba3c2534f55c5555c9a98ad995dfcc123e4933f2af4773",
+      "parse_error": null,
+      "parse_declarations": 11,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/102_ランダムイベント/randomev31-40.dat",
+      "size_bytes": 18391,
+      "sha256": "4d860628f9fc951a204760c29b1cc82bce232857cf8dcfa374e7ef3010fbaaa4",
+      "parse_error": null,
+      "parse_declarations": 13,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/102_ランダムイベント/randomev41-50.dat",
+      "size_bytes": 16644,
+      "sha256": "78ac9fc2af19cd4fe9f3278e8498a789125f59df776d56a9d9ce8f33848ffc67",
+      "parse_error": null,
+      "parse_declarations": 14,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/102_ランダムイベント/randomev51-60.dat",
+      "size_bytes": 46092,
+      "sha256": "03c1cb98e7471891bf239947183d6da8405b23fce13b8452f479f0869f4492f1",
+      "parse_error": null,
+      "parse_declarations": 20,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/102_ランダムイベント/randomev61-70.dat",
+      "size_bytes": 24157,
+      "sha256": "f7de6f29df64eb85a8758844be90437add74bbaf1661aa3322dc84f8938289c9",
+      "parse_error": null,
+      "parse_declarations": 15,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/102_ランダムイベント/randomev71-80.dat",
+      "size_bytes": 35956,
+      "sha256": "fde78e7bc638be503734015aef095ce99f82ab6664ef03cb31931ad0ff187dce",
+      "parse_error": null,
+      "parse_declarations": 19,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/102_ランダムイベント/randomev_addfriend.dat",
+      "size_bytes": 3064,
+      "sha256": "00be225e42880f0787bbaa10913b309005e1a746a19f4fdd6ebb18da3c383d16",
+      "parse_error": null,
+      "parse_declarations": 17,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/102_ランダムイベント/randomev_analasassin.dat",
+      "size_bytes": 30638,
+      "sha256": "1b0dd83ed8e5ca86e07cdf7f82f4e0c75eb2541fb9cee199aefb31418d901b2a",
+      "parse_error": null,
+      "parse_declarations": 8,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/102_ランダムイベント/randomev_skill&unit.dat",
+      "size_bytes": 7040,
+      "sha256": "7d97e609eb2845e97fb5dae6b79af6f66375f1831f8a4133c3e63432459e25e7",
+      "parse_error": null,
+      "parse_declarations": 34,
+      "skill_declarations": 21
+    },
+    {
+      "file": "a_default/script/102_ランダムイベント/randomev_tyakai.dat",
+      "size_bytes": 129997,
+      "sha256": "4b1466f6989dd056da8f3b05c37c47763bec0e317bcec5d728c5064977637aaa",
+      "parse_error": null,
+      "parse_declarations": 79,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/102_ランダムイベント/randomset.dat",
+      "size_bytes": 16737,
+      "sha256": "b0f774b476620c118bc10b2614ee9d9cc4f6b40f1e4aab74b6db196490941c6f",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/00_base.dat",
+      "size_bytes": 1414,
+      "sha256": "34b06d83b6b824bc50cc3ed419aaab3cae98eb4eb031842c720a3a7e559a11bb",
+      "parse_error": null,
+      "parse_declarations": 5,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/00_簡易戦闘.dat",
+      "size_bytes": 878,
+      "sha256": "d23cd3ce783a7771b39593059fc55af1799cd5008198a52995841cb1ff7f4af5",
+      "parse_error": null,
+      "parse_declarations": 4,
+      "skill_declarations": 2
+    },
+    {
+      "file": "a_default/script/10_ユニット/01_マリナーズ傭兵団.dat",
+      "size_bytes": 8051,
+      "sha256": "785a3d7022fc0301dbf119c1cce2f423ea87a0911affde2fdc573fb1261c9dc0",
+      "parse_error": null,
+      "parse_declarations": 17,
+      "skill_declarations": 1
+    },
+    {
+      "file": "a_default/script/10_ユニット/02_迫真空手道場.dat",
+      "size_bytes": 12864,
+      "sha256": "4213c95d7830ba4abeeebca197918bbc13d31a2f758de779de5e62dac56e4a90",
+      "parse_error": null,
+      "parse_declarations": 28,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/03_アークシェード銃士連隊.dat",
+      "size_bytes": 18233,
+      "sha256": "b5c786c7d690b83cc846d7979459ff3b79a64de93f4fc8779224fd3cd617eb08",
+      "parse_error": null,
+      "parse_declarations": 45,
+      "skill_declarations": 1
+    },
+    {
+      "file": "a_default/script/10_ユニット/04_ほのぼの神道.dat",
+      "size_bytes": 15936,
+      "sha256": "68ebdcac1803755a48a906c7ed8d93efaae2d6973e2a469dba611a6b69e734c2",
+      "parse_error": null,
+      "parse_declarations": 34,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/05_ヴォイス・ドラマ革命企画.dat",
+      "size_bytes": 27280,
+      "sha256": "149db869184d8b400a449bdc9e4eaedc6440584b36cb6da8c8fbae8feab30cac",
+      "parse_error": null,
+      "parse_declarations": 68,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/06_ヒゲクマ海賊団.dat",
+      "size_bytes": 7423,
+      "sha256": "c633568e011711d894f928191500909c2ef01094f086b139f087d236d6aa5565",
+      "parse_error": null,
+      "parse_declarations": 20,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/07_タニオカ・シンジケート.dat",
+      "size_bytes": 12229,
+      "sha256": "1bbbbcf117d8daa2a9f33253f21c21c37149891ef15156b7765303a552219c32",
+      "parse_error": null,
+      "parse_declarations": 33,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/08_レスリング帝国.dat",
+      "size_bytes": 7548,
+      "sha256": "d3340416abd9a3b3f9fdcbb30b2a973dcabf800b388983f8d84cc81848d7c96b",
+      "parse_error": null,
+      "parse_declarations": 20,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/09_ダークホーム伯.dat",
+      "size_bytes": 7300,
+      "sha256": "bb822f463d341f3789171fc8be92df963792ce9677da44a75660ebfd0d628e86",
+      "parse_error": null,
+      "parse_declarations": 20,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/1000_傭兵.dat",
+      "size_bytes": 14839,
+      "sha256": "357a594434a30b9cc77f3c7014f0d6a25ef73b00c38985d5f5dfa884e2121ab9",
+      "parse_error": null,
+      "parse_declarations": 36,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/1001_傭兵_淫夢くん.dat",
+      "size_bytes": 17336,
+      "sha256": "e804c002794f679846b9c04af3a5a915ef21c46771bc9ec9824c6d57566c982c",
+      "parse_error": null,
+      "parse_declarations": 99,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/10_スカーレット伯.dat",
+      "size_bytes": 7609,
+      "sha256": "b218776013a565c9bcb65ddac4c4d120ccfae0919e24cea8758a9d9354919110",
+      "parse_error": null,
+      "parse_declarations": 20,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/110_イベント人材.dat",
+      "size_bytes": 39985,
+      "sha256": "13ce9e956929e4b67598b944f00b391f4feffc9907855d63db3813da99c10fb9",
+      "parse_error": null,
+      "parse_declarations": 110,
+      "skill_declarations": 4
+    },
+    {
+      "file": "a_default/script/10_ユニット/11_サセバトミサタ族.dat",
+      "size_bytes": 7365,
+      "sha256": "4ef9e448555536f120402073bf439e235e704d1361f7c3bd8f4a7b4fc5fd2f7d",
+      "parse_error": null,
+      "parse_declarations": 20,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/120_スペシャル人材.dat",
+      "size_bytes": 17215,
+      "sha256": "8eba2c2f9b0bf67288c32d2a654505ba0e2893408850559ffae7c896f530bd25",
+      "parse_error": null,
+      "parse_declarations": 29,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/12_クラピース労働project.dat",
+      "size_bytes": 8526,
+      "sha256": "896b97d6740c70f77d876c9b9410e3773c278fae6cd05aac9ae9a53f8832abf9",
+      "parse_error": null,
+      "parse_declarations": 20,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/13_アリソン・パクハイト.dat",
+      "size_bytes": 6113,
+      "sha256": "8eb1287ec6dd5a969009cb5ed48649cf3b588cf2fb0ffd8ebef37fb22273e949",
+      "parse_error": null,
+      "parse_declarations": 16,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/14_SWW大社.dat",
+      "size_bytes": 6672,
+      "sha256": "19d9ce93d1150890dba7013af0e80039d7f83ebd19d5b3c01103f11d4190fb17",
+      "parse_error": null,
+      "parse_declarations": 16,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/15_.dat",
+      "size_bytes": 51,
+      "sha256": "20a8e83a88d00be4be25048b0dffc264e7ed5a92745fd9a3c3506e828f9cdcb1",
+      "parse_error": null,
+      "parse_declarations": 0,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/16_ALC一派.dat",
+      "size_bytes": 7051,
+      "sha256": "5210e8f4730ffd4e3092e77997e57b39382ec0ddfbc72b0ee210facb80c0bbab",
+      "parse_error": null,
+      "parse_declarations": 16,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/17_遠野の世界.dat",
+      "size_bytes": 10797,
+      "sha256": "8809ce0a18d1386df285ec4868e64b4353641477d27c77ebfc45456d74cd0e9e",
+      "parse_error": null,
+      "parse_declarations": 25,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/18_虐待専従0J_13部隊.dat",
+      "size_bytes": 5847,
+      "sha256": "f6b6528e57d7b889adeb54bb899f858a080e8e6c23c099ea5ced76867cac1cb0",
+      "parse_error": null,
+      "parse_declarations": 13,
+      "skill_declarations": 1
+    },
+    {
+      "file": "a_default/script/10_ユニット/19_正統スカーレット家.dat",
+      "size_bytes": 7183,
+      "sha256": "fadb9ac6b3d396f84a6c8c373d5093acdd61c88e347be68ae8f0109c7917d6a3",
+      "parse_error": null,
+      "parse_declarations": 20,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/20_VVANグループ.dat",
+      "size_bytes": 8455,
+      "sha256": "5620f4aacf39be1912f0d782855c9979242721ea778973b5b8ce2f54c2f9cddf",
+      "parse_error": null,
+      "parse_declarations": 20,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/21_お菓子作りの材料屋さん.dat",
+      "size_bytes": 14403,
+      "sha256": "355b4b83dc3c1def522cdf02f3dcf21a6a3e35a86a284c3f6dc2fcb2ad4760ad",
+      "parse_error": null,
+      "parse_declarations": 32,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/22_玉兎賊.dat",
+      "size_bytes": 11774,
+      "sha256": "ffde564338beeec0715c007822814515b1f0f10579b9595bdb8314467254d987",
+      "parse_error": null,
+      "parse_declarations": 28,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/23_リュージ騎士団.dat",
+      "size_bytes": 12978,
+      "sha256": "eace5df95616266869604866ba9c24d62359410a2568198777f8d9999574264b",
+      "parse_error": null,
+      "parse_declarations": 33,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/24_ヒューマンダストクルセイダース.dat",
+      "size_bytes": 9254,
+      "sha256": "ac65c1c998c0fdbd57d8a2f45c3a7649e885403abb3f6ae9c22fa12b12dd5848",
+      "parse_error": null,
+      "parse_declarations": 24,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/25_オーバック・カンパニー.dat",
+      "size_bytes": 12718,
+      "sha256": "4a91166488c4558f173e064f1f2b9454f5bcb1937473af0badf36a31bc37e8dd",
+      "parse_error": null,
+      "parse_declarations": 28,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/26_クッキー☆原理主義党.dat",
+      "size_bytes": 17077,
+      "sha256": "95c82783476d9f7530b481e41a165495062cf4f4bd3327270fd2d3f05586a9a3",
+      "parse_error": null,
+      "parse_declarations": 40,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/27_淫.dat",
+      "size_bytes": 1905,
+      "sha256": "60cad1b257f3dc2b8349f4dddcab715ae74a2a20fad9e6a7b369facf486b7631",
+      "parse_error": null,
+      "parse_declarations": 4,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/28_結構過激な倒博派.dat",
+      "size_bytes": 1792,
+      "sha256": "6d435af67081d6add14fdbc5e9ea44b9f118fe688212da18352720ae551ac054",
+      "parse_error": null,
+      "parse_declarations": 4,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/29_岡山県.dat",
+      "size_bytes": 6589,
+      "sha256": "24ee0a5cf565e94d7a36c446955847bfc9766ae5d82e3b74f967a0a79b98bd39",
+      "parse_error": null,
+      "parse_declarations": 16,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/30_イースターエッグ調査旅団.dat",
+      "size_bytes": 5552,
+      "sha256": "4a5f783f4cb0dcec01437ebf44b29af9a17377ccf8b0444ea3d93ed2d25f201b",
+      "parse_error": null,
+      "parse_declarations": 20,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/31_GUC浄化機関.dat",
+      "size_bytes": 2405,
+      "sha256": "309ebcf4f7f1fa4c3ae85466413b4101fa9813ff3d76c38ee6819de01019b51a",
+      "parse_error": null,
+      "parse_declarations": 4,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/32_サムソン.dat",
+      "size_bytes": 9152,
+      "sha256": "69bedd125394b31b7d616b22a5795e2b4d218f34ecc684b5554cf8471c7e008f",
+      "parse_error": null,
+      "parse_declarations": 24,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/33_INU.dat",
+      "size_bytes": 9794,
+      "sha256": "a08570ddca43b5d7b6ed6f4071940684bd932baea6f9bea0536f886b0378b463",
+      "parse_error": null,
+      "parse_declarations": 26,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/90_放浪_ホモビ.dat",
+      "size_bytes": 35214,
+      "sha256": "4920ed64a9bf749389afd1145f2eaa50d3296403f96bd5c2b40611a492476e67",
+      "parse_error": null,
+      "parse_declarations": 92,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/91_放浪_クッキー☆.dat",
+      "size_bytes": 28482,
+      "sha256": "48b9a63b4b5552207cd7f117520686ca091fe6028890bd0567cb0f12c382603e",
+      "parse_error": null,
+      "parse_declarations": 73,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/92_放浪_ レスリング.dat",
+      "size_bytes": 10477,
+      "sha256": "99e4aed4894e9ccecb592c85518923e489f609b940f4ad5666461ecdc54b088c",
+      "parse_error": null,
+      "parse_declarations": 28,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/93_放浪_ノンケ・東方・アステカ.dat",
+      "size_bytes": 13428,
+      "sha256": "33ac542f600f4c604ca8ffe68cbcdc9e0c5306bb1f43fa9b2c78ab3e8e33166d",
+      "parse_error": null,
+      "parse_declarations": 36,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/94_放浪_ホモガキ・養殖.dat",
+      "size_bytes": 12333,
+      "sha256": "b5762090c242312f66cccba900e13c7b41fd71f75bb75aea574946086ce71fe3",
+      "parse_error": null,
+      "parse_declarations": 32,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/B_11_閉店の日.dat",
+      "size_bytes": 6431,
+      "sha256": "615142974f45791635e262672afe67946da9fd5eddc6c10d06a462abb04e7528",
+      "parse_error": null,
+      "parse_declarations": 14,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/B_14_ヌエバ・デスパセーニャ.dat",
+      "size_bytes": 7739,
+      "sha256": "766d5e8eb3d2da855b5845d9ff225e79505ecbf8ece0a96f77069d763fd50e97",
+      "parse_error": null,
+      "parse_declarations": 14,
+      "skill_declarations": 4
+    },
+    {
+      "file": "a_default/script/10_ユニット/B_14_黒KNN.dat",
+      "size_bytes": 1338,
+      "sha256": "dd590e400083ccb8607c53dd8bbb643b1fb0610de866e1e2d313978609c1cea6",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/B_1_クレイジーサイコレズ.dat",
+      "size_bytes": 7718,
+      "sha256": "a48c8f5acdb056102c0122b4af56e473db017da571dc82d9ba475a979bb6b4d4",
+      "parse_error": null,
+      "parse_declarations": 16,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/B_2222_レイノアレフ.dat",
+      "size_bytes": 6318,
+      "sha256": "2604403a444cae84701a9e423906098a4712dc335d28f523b1842679f307b1e0",
+      "parse_error": null,
+      "parse_declarations": 28,
+      "skill_declarations": 3
+    },
+    {
+      "file": "a_default/script/10_ユニット/B_2323_リュージ騎士団.dat",
+      "size_bytes": 8995,
+      "sha256": "b8711ff323238d9bedc1ba5bf801b1cbe5bc68fcf5aea7173fc5c45355ca3352",
+      "parse_error": null,
+      "parse_declarations": 20,
+      "skill_declarations": 5
+    },
+    {
+      "file": "a_default/script/10_ユニット/B_23_リュージボス.dat",
+      "size_bytes": 37771,
+      "sha256": "ae0f0bad71a197dee9d1c4569ad8cb65c490d9c75b72ca2c85cf2c3f67899a41",
+      "parse_error": null,
+      "parse_declarations": 80,
+      "skill_declarations": 4
+    },
+    {
+      "file": "a_default/script/10_ユニット/B_2525_町の小さなパン屋さんと化した二軍.dat",
+      "size_bytes": 1695,
+      "sha256": "8f2ffda1019bb7162dfab9d90e18ee67372ee1eff77af7ae36c070595cc5d323",
+      "parse_error": null,
+      "parse_declarations": 4,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/B_25_ジトメ秘密教団.dat",
+      "size_bytes": 7698,
+      "sha256": "f9fe8e438316dd3575193e3a6c013d5b88afcb60b36e2acb9c7967a2e34c6aa2",
+      "parse_error": null,
+      "parse_declarations": 12,
+      "skill_declarations": 4
+    },
+    {
+      "file": "a_default/script/10_ユニット/B_26_第二革命.dat",
+      "size_bytes": 1780,
+      "sha256": "8f48cb73e0b7ae5dc31b7c7a32a2330af0a6e340472416a735470784bb824341",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/B_2_クレイジーサイコホモ.dat",
+      "size_bytes": 6638,
+      "sha256": "64e6a1e6450a4a86ebcc01859dba79e37c550450efc6666dc827990062108171",
+      "parse_error": null,
+      "parse_declarations": 17,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/B_50_神の国.dat",
+      "size_bytes": 3191,
+      "sha256": "2fb3728d38c141e312b6a09961ead7b4023cb922c55c2047e1ba960e8c127c17",
+      "parse_error": null,
+      "parse_declarations": 5,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/B_5151_古代アステカ王国.dat",
+      "size_bytes": 9272,
+      "sha256": "ac663ab145fa4bb5f9a349282e743bb1e8245af4da296fe9eb11ca1dd4ecd403",
+      "parse_error": null,
+      "parse_declarations": 8,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/B_525_神聖UNEI帝国.dat",
+      "size_bytes": 13782,
+      "sha256": "59933d339c4276fdeb47fddf3f441eef246cc181fea1acdfd909328bf9291b97",
+      "parse_error": null,
+      "parse_declarations": 38,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/B_5_土屋稲荷大社.dat",
+      "size_bytes": 3938,
+      "sha256": "15ace13b0f5ecd3495fa5bd8534e966b2dc733ac68eb371847b529e7c7fae630",
+      "parse_error": null,
+      "parse_declarations": 8,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/B_63_リッチーHZN.dat",
+      "size_bytes": 1559,
+      "sha256": "26aefbd67fb44a456e1ff2afdce725c7ba899ee98143cb5c0f01355cf7397793",
+      "parse_error": null,
+      "parse_declarations": 2,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/Detail_列伝.dat",
+      "size_bytes": 102142,
+      "sha256": "838fe74f6e6520afb7e0ec205f4e5687d812ec4b0890d795685226d46b4689b3",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/10_ユニット/E_イベント用キャラ差分.dat",
+      "size_bytes": 8314,
+      "sha256": "89af5f9c7c8856a9aa1e8b7117efba045a7558ee696d52e8e52307999257c29f",
+      "parse_error": null,
+      "parse_declarations": 38,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/116_仮設ランダムイベント61-70/randomev61_70_spot_add.dat",
+      "size_bytes": 3293,
+      "sha256": "c9c18d31b210ad9c6c9c8a6fa117f7393b1a423646399c2c76da0e0d9a317365",
+      "parse_error": null,
+      "parse_declarations": 17,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/116_仮設ランダムイベント61-70/randomev64_b.dat",
+      "size_bytes": 27017,
+      "sha256": "9344ffcc7d00b8f5e3aac61dcc04907e7563d2da6b7f959e59acc757489ad3e1",
+      "parse_error": null,
+      "parse_declarations": 9,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/116_仮設ランダムイベント61-70/randomev64_choice_1b.dat",
+      "size_bytes": 14454,
+      "sha256": "f0f3ebb6fdd8fbe4b842a8c7760951002982625e75d1cd5438f9ba32b28e00aa",
+      "parse_error": null,
+      "parse_declarations": 2,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/116_仮設ランダムイベント61-70/randomev64_choice_1c.dat",
+      "size_bytes": 23106,
+      "sha256": "be02146feeadc78dea73e4705d2e7d886a883afd6f952489c115586a5f3846d3",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/116_仮設ランダムイベント61-70/randomev64_choice_1d.dat",
+      "size_bytes": 2875,
+      "sha256": "cb15cdeee7940ed228a8dfca814ee49702c570ca42f40a5b6381e5815f78291e",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/116_仮設ランダムイベント61-70/randomev64_choice_2b.dat",
+      "size_bytes": 10797,
+      "sha256": "25263a336a1cefd811cd4e578336c7b3e44a99d3dbe771a619e4bb18599e471c",
+      "parse_error": null,
+      "parse_declarations": 2,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/116_仮設ランダムイベント61-70/randomev64_choice_2c.dat",
+      "size_bytes": 6313,
+      "sha256": "fa3d155cce752c52f745e63c7aea973e499d83c6ff6e02659f6e70e988f763fe",
+      "parse_error": null,
+      "parse_declarations": 2,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/116_仮設ランダムイベント61-70/randomev66_AddPower.dat",
+      "size_bytes": 8694,
+      "sha256": "1d081b630b08d52a6958738a707a7039af8ac0fd492b67087c538dfec1d18cdb",
+      "parse_error": null,
+      "parse_declarations": 2,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/116_仮設ランダムイベント61-70/randomev66_AddPower_b.dat",
+      "size_bytes": 17919,
+      "sha256": "644c2c3f4a75d1cb65ca5abab3077a476723d6f2b4672d4269e64038675ffbd2",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/116_仮設ランダムイベント61-70/randomev66_AddPower_b2.dat",
+      "size_bytes": 14732,
+      "sha256": "0ecdc9970637a07e01dfc27e7a8d6799dcda88346d90751cbf06cb0e4f7af3b1",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/116_仮設ランダムイベント61-70/randomev66_AddPower_b3.dat",
+      "size_bytes": 14638,
+      "sha256": "5ad47468fb50dba5d52987006fcd65459da0d515fb114d00bdf5568c9bdf0b33",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/116_仮設ランダムイベント61-70/randomev66_b.dat",
+      "size_bytes": 25529,
+      "sha256": "cbae1406616758f972e10e204d1f77f411b1340345914953682904c19bf1f084",
+      "parse_error": null,
+      "parse_declarations": 7,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/116_仮設ランダムイベント61-70/randomev66_choice_0b.dat",
+      "size_bytes": 7952,
+      "sha256": "3a4b1062146c349b334c77e91cd1af237adb51f19f8f749d2929438772604ce5",
+      "parse_error": null,
+      "parse_declarations": 2,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/116_仮設ランダムイベント61-70/randomev66_choice_0x.dat",
+      "size_bytes": 13325,
+      "sha256": "23ef287092e1a0c8033098c52891714f6e5e9cc8d894e73fc4aa2ffa5dfea4fa",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/116_仮設ランダムイベント61-70/randomev66_poli.dat",
+      "size_bytes": 7965,
+      "sha256": "cb2588fddfa93b90fc2daa38e7ac4c07a8a83a26dedf2f3580335b2beee68d90",
+      "parse_error": null,
+      "parse_declarations": 7,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/116_仮設ランダムイベント61-70/randomev66_poli_b.dat",
+      "size_bytes": 10365,
+      "sha256": "0b7ed2ef67257878bd0813ed9a667cb621b6bfe42e196a008be208e4248bb5ff",
+      "parse_error": null,
+      "parse_declarations": 6,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/116_仮設ランダムイベント61-70/randomev66_unit_class_a00a66r.dat",
+      "size_bytes": 1753,
+      "sha256": "7872cf2b008979ddf669924f9f4428318bdc7809b7442774d6937ad44accde39",
+      "parse_error": null,
+      "parse_declarations": 9,
+      "skill_declarations": 6
+    },
+    {
+      "file": "a_default/script/116_仮設ランダムイベント61-70/randomev66_unit_class_inyume66r.dat",
+      "size_bytes": 2089,
+      "sha256": "61b6a0343728a1a92c1226cae1dfebf5baa1bb52596e443de47ab56759e92a09",
+      "parse_error": null,
+      "parse_declarations": 6,
+      "skill_declarations": 3
+    },
+    {
+      "file": "a_default/script/116_仮設ランダムイベント61-70/randomev66_unit_class（マスター不在につき不使用）.dat",
+      "size_bytes": 1821,
+      "sha256": "17c994147a680f4591c1616f07ba7ce96abafdc6cda5fa26ea1531687ceabf2f",
+      "parse_error": null,
+      "parse_declarations": 4,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/116_仮設ランダムイベント61-70/skill_fight_GGG.dat",
+      "size_bytes": 2452,
+      "sha256": "be655e51aa9ed10d8d73e23780dbe168fd3f315ad17419ab9517d7ca2db7dc59",
+      "parse_error": null,
+      "parse_declarations": 9,
+      "skill_declarations": 9
+    },
+    {
+      "file": "a_default/script/116_仮設ランダムイベント61-70/skill_fight_TGS.dat",
+      "size_bytes": 2324,
+      "sha256": "dbc66e9b5bf7e78b32ce041e0d1a311ba357b70f582d943b833488331d3f8114",
+      "parse_error": null,
+      "parse_declarations": 9,
+      "skill_declarations": 9
+    },
+    {
+      "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+      "size_bytes": 5821,
+      "sha256": "97ee5767e7034870c3d552f7ebbfa0463bbc2fa516a91621f1c6a76d83d7e1aa",
+      "parse_error": null,
+      "parse_declarations": 20,
+      "skill_declarations": 20
+    },
+    {
+      "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+      "size_bytes": 1273,
+      "sha256": "da9fd8af84b6481c5fc201c87c32f3fd62936addf34c6ed72345e31b955f1079",
+      "parse_error": null,
+      "parse_declarations": 10,
+      "skill_declarations": 10
+    },
+    {
+      "file": "a_default/script/116_仮設ランダムイベント61-70/skill_stove.dat",
+      "size_bytes": 12937,
+      "sha256": "d7b94b539b630dd7c75b10b45788609dd45e0e3c0d70c63fa58eb1fac84db72d",
+      "parse_error": null,
+      "parse_declarations": 40,
+      "skill_declarations": 40
+    },
+    {
+      "file": "a_default/script/116_仮設ランダムイベント61-70/skill_stove_ensyou.dat",
+      "size_bytes": 3846,
+      "sha256": "103164032b116a0fb2545f0cffcda2fcf4c0da58590cdebdf95d0d8e303fea1c",
+      "parse_error": null,
+      "parse_declarations": 25,
+      "skill_declarations": 25
+    },
+    {
+      "file": "a_default/script/116_仮設ランダムイベント61-70/skill_stove_wave.dat",
+      "size_bytes": 1822,
+      "sha256": "a30cbb701157c7fe3aaae4825673cbd4929e92186d5499f3b893f6e903744971",
+      "parse_error": null,
+      "parse_declarations": 7,
+      "skill_declarations": 7
+    },
+    {
+      "file": "a_default/script/11_表情差分/F差分_11_サセバトミサタ.dat",
+      "size_bytes": 758,
+      "sha256": "a9cb2c90256757ac323077bdc8ee0d13277d9b283a0953ff0db8151da285bbae",
+      "parse_error": null,
+      "parse_declarations": 11,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/11_表情差分/F差分_12_クラピース.dat",
+      "size_bytes": 1002,
+      "sha256": "8eb3bd96e5d739747ccfa1a75e13ea9cad34239cc110898856fb8aaebcdd9772",
+      "parse_error": null,
+      "parse_declarations": 10,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/11_表情差分/F差分_14_SWW大社.dat",
+      "size_bytes": 239,
+      "sha256": "309bdc1878742bd1ba8cd3b1a042cd6402586d5422ad34ff25c3fab471545c37",
+      "parse_error": null,
+      "parse_declarations": 5,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/11_表情差分/F差分_16_ALC一派.dat",
+      "size_bytes": 5308,
+      "sha256": "0edcb3166686c3cf22e32e0a9326857c3a2e8f2dafab1b7807738e0bf4203fa7",
+      "parse_error": null,
+      "parse_declarations": 53,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/11_表情差分/F差分_17_遠野の世界.dat",
+      "size_bytes": 136,
+      "sha256": "10db6b0e6d0ffd2dabd359e67a7419689fd932b343da1a47e80b98c61fd5fc84",
+      "parse_error": null,
+      "parse_declarations": 2,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/11_表情差分/F差分_18_虐待専従.dat",
+      "size_bytes": 222,
+      "sha256": "45b2969cf85ac20f9f491be66caa440780cff436a7094ff9856af2be2e0e08cb",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/11_表情差分/F差分_19_正統スカーレット.dat",
+      "size_bytes": 1515,
+      "sha256": "78bb9046ef50ba1a577c7254c70cb6928a3597a9134c8cc6977f0c165a7d6bcc",
+      "parse_error": null,
+      "parse_declarations": 12,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/11_表情差分/F差分_1_マリナーズ.dat",
+      "size_bytes": 4636,
+      "sha256": "f25a2000442ed95cd62869762a471d4810d01d92e5dbc62ffbbab9bf6d2a121e",
+      "parse_error": null,
+      "parse_declarations": 48,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/11_表情差分/F差分_20_VVAN.dat",
+      "size_bytes": 211,
+      "sha256": "9025e76e46ae1b8eb54ddfe03c673ddbfe03ed4bd3be4e89773eb487879c4e8f",
+      "parse_error": null,
+      "parse_declarations": 2,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/11_表情差分/F差分_21_材料屋.dat",
+      "size_bytes": 1121,
+      "sha256": "91753faa39e1eb04b6328765927d3fbb7d0536885bb04b3b73d3788c58947f15",
+      "parse_error": null,
+      "parse_declarations": 29,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/11_表情差分/F差分_22_玉兎賊.dat",
+      "size_bytes": 2121,
+      "sha256": "b47ee95628f48246ab8965f8f0af870082c70ee9cfd498ab0d55d9c4be1407e6",
+      "parse_error": null,
+      "parse_declarations": 15,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/11_表情差分/F差分_23_リュージ騎士団.dat",
+      "size_bytes": 19366,
+      "sha256": "5105f3c275482029617af786b9ed3bc999fd1e1c811ce34b6ffbf1bf03e85be2",
+      "parse_error": null,
+      "parse_declarations": 207,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/11_表情差分/F差分_25_オーバック.dat",
+      "size_bytes": 6844,
+      "sha256": "81a046537fa71e2c0926449aa61b3e48414653acb7f552cf9ab759d31c978911",
+      "parse_error": null,
+      "parse_declarations": 59,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/11_表情差分/F差分_26_クッキー☆原理主義党.dat",
+      "size_bytes": 13469,
+      "sha256": "4a1073847d2f5ec0110cdfac8cc7177de50236053abaf54b6412c126fb1574c4",
+      "parse_error": null,
+      "parse_declarations": 162,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/11_表情差分/F差分_2_迫真空手道場.dat",
+      "size_bytes": 672,
+      "sha256": "3f8ad1b1ef33c706ca041338143ec2540eb905ac1ea1d69842b765908933ebbe",
+      "parse_error": null,
+      "parse_declarations": 8,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/11_表情差分/F差分_30_イースター.dat",
+      "size_bytes": 61,
+      "sha256": "651a0e310065d37d6996614d2799f55cf63d4d55e4fa8336b5396ec42d1efea0",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/11_表情差分/F差分_33_白狼の民.dat",
+      "size_bytes": 671,
+      "sha256": "331f5789a067fdaf835af190cdcd3343306318f2a2f147fe37445ab0630e0436",
+      "parse_error": null,
+      "parse_declarations": 7,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/11_表情差分/F差分_4_ほのぼの神道.dat",
+      "size_bytes": 8843,
+      "sha256": "500cde650e9259565f8f7f55330de61dda959638ccec1bc71144bb01ecbd0189",
+      "parse_error": null,
+      "parse_declarations": 117,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/11_表情差分/F差分_5_革命企画.dat",
+      "size_bytes": 4722,
+      "sha256": "05ae726389de52563a38f654c3e5e00f6131ddb8c36f18aab7da8cdf4170a894",
+      "parse_error": null,
+      "parse_declarations": 46,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/11_表情差分/F差分_6_ヒゲクマ.dat",
+      "size_bytes": 362,
+      "sha256": "ba8a89922a8322c3becc51c73161ccecd2cabe7c3fc8982475c2aef1b4d742b1",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/11_表情差分/F差分_99_共通差分.dat",
+      "size_bytes": 60516,
+      "sha256": "cbadfcc0e5d5fbe4c4a6e915d645c3d85e0d5cb0449ce23651471866305cb36e",
+      "parse_error": null,
+      "parse_declarations": 806,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po10_battle.dat",
+      "size_bytes": 2105,
+      "sha256": "6ce6d8dcb8a5af73429f2f744e279a0d315ee6d65eb811f1d285e4a44572163b",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po10_event.dat",
+      "size_bytes": 17187,
+      "sha256": "8f18715725377f84d7bca609f025f5baa2be620189aaed3c36aabb60e6e6115c",
+      "parse_error": null,
+      "parse_declarations": 15,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po11_battle.dat",
+      "size_bytes": 22749,
+      "sha256": "ddb052608908a3765d77992eefbb1f7a42efa9ab31fb6508a7f11a25f3b82d4f",
+      "parse_error": null,
+      "parse_declarations": 7,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po11_event.dat",
+      "size_bytes": 101464,
+      "sha256": "2383a000915d73a3c06cc16c0e6b9b2232f700964d05b238ae4e73260ec8a0c6",
+      "parse_error": null,
+      "parse_declarations": 25,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po12_battle.dat",
+      "size_bytes": 5990,
+      "sha256": "6f61c990c1c54fd4ac6c77a1a2f99aceb6c121c9213095ab28fade2629cfba89",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po12_event.dat",
+      "size_bytes": 25801,
+      "sha256": "5873e35c21df1dd84e4bb75a47d6772a222f14bfd341874f1c81a93528460f50",
+      "parse_error": null,
+      "parse_declarations": 10,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po12_story.dat",
+      "size_bytes": 1248,
+      "sha256": "077939d3f031c320bf94fc01de0574de4f31583d51955d5621a025207220db1d",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po13_event.dat",
+      "size_bytes": 22152,
+      "sha256": "dc21a76ae38f51ab65ab046ae5961462cea28f7592103bd4baed601c8a20a3ab",
+      "parse_error": null,
+      "parse_declarations": 15,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po14_battle.dat",
+      "size_bytes": 14390,
+      "sha256": "c7bb5d03945758d8b156a256ddb4b14728fa04af918b7cf59b1669746d138f25",
+      "parse_error": null,
+      "parse_declarations": 7,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po14_event.dat",
+      "size_bytes": 139841,
+      "sha256": "82f10843240684419ac494800a0d43f9d799fff62570f823d90e7db9628858b9",
+      "parse_error": null,
+      "parse_declarations": 44,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po14_システム部分.dat",
+      "size_bytes": 15592,
+      "sha256": "1ed9d15adefcf3b352c8eb6b03ca57997d215aa1db7eafd8035d1eadc7b77776",
+      "parse_error": null,
+      "parse_declarations": 14,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po16_event.dat",
+      "size_bytes": 7388,
+      "sha256": "6d0fe5608fe7e4aa933b757885fb3b53149cf86e114b3487224adc04fbb01634",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po17_event.dat",
+      "size_bytes": 9749,
+      "sha256": "8f93ccde082bdcb394033ee7bac733443b99d9b0d9e83aca728b19572af303f7",
+      "parse_error": null,
+      "parse_declarations": 5,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po17_story.dat",
+      "size_bytes": 236,
+      "sha256": "ce475bf7cf8d3fcaa800f0ef60a38497c570f0d2e53761fe34efd2e6c238fbba",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po18_event.dat",
+      "size_bytes": 26347,
+      "sha256": "80e9bda1565eb42c082f5d9db57c7a4f3a065266213ab4f374dbe29421c27f60",
+      "parse_error": null,
+      "parse_declarations": 18,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po19_battle.dat",
+      "size_bytes": 3032,
+      "sha256": "4762c051fc9b8d49713c22f68084d7d462213703d7751ece9094feb83b31d1de",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po19_event.dat",
+      "size_bytes": 32664,
+      "sha256": "f1098e56f3d742dedacaddc64ad859c6fed2cf3d32afdb42049d33482a7c73f3",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po1_battle.dat",
+      "size_bytes": 3254,
+      "sha256": "191f42bc55cfc57339ee648c91da458d102f547b94300b8d55513c4df108d7dc",
+      "parse_error": null,
+      "parse_declarations": 4,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po1_event.dat",
+      "size_bytes": 69143,
+      "sha256": "5bbc7dbdd0b30ea5fa89385774457aa0c1da2e3f144636c2fd4a6c36e21aa273",
+      "parse_error": null,
+      "parse_declarations": 37,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po20_event.dat",
+      "size_bytes": 11437,
+      "sha256": "76e765a5ec31baee1934ec0a2e974ef5a124695c3b34526ae1a8b10e3772fbc1",
+      "parse_error": null,
+      "parse_declarations": 5,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po20_story.dat",
+      "size_bytes": 236,
+      "sha256": "f21d8b2999eb34dab8d9f193d4e7dcb43b1a4c6ed369c59e7e9f2455bc0de6bc",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po21_event.dat",
+      "size_bytes": 8327,
+      "sha256": "a3745c44dd502e046fb11eda578432956e8d0707562d9e64b6b9514a6082b804",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po22_battle.dat",
+      "size_bytes": 13141,
+      "sha256": "09231d29db30ac1688ced8f9e7bff101199c4090682345d7d93ce2da611d2489",
+      "parse_error": null,
+      "parse_declarations": 15,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po22_event.dat",
+      "size_bytes": 161020,
+      "sha256": "30dd3e9907257c9da41abd9e837c8c8d94661cc0bf442083f5e6b6a6b4283134",
+      "parse_error": null,
+      "parse_declarations": 83,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po22_story.dat",
+      "size_bytes": 4126,
+      "sha256": "a20eb78eac2c7a95852e205aa1171e5a379ad28d76ce04ed0fc3aef2de56aa4e",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po25_battle.dat",
+      "size_bytes": 35089,
+      "sha256": "15308589112848cb4dd8109e92e911a6bf55ab1c80239f91067ac85922ffe564",
+      "parse_error": null,
+      "parse_declarations": 8,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po25_event.dat",
+      "size_bytes": 449900,
+      "sha256": "8f8943ccfd6a232504917d6805ef555070a6f971d5ee7632ea3af930fd67cf08",
+      "parse_error": null,
+      "parse_declarations": 122,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po25_story.dat",
+      "size_bytes": 11203,
+      "sha256": "ca633bcecb58b8b831922ed1a1b1e3e3645eb0c006d441ba9d0555778f3e28a8",
+      "parse_error": null,
+      "parse_declarations": 17,
+      "skill_declarations": 9
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po2_battle.dat",
+      "size_bytes": 3383,
+      "sha256": "1b217db8031b5214d466d737bd347837bd9c3bf9ba7a32a3865d39c0c5cb2cab",
+      "parse_error": null,
+      "parse_declarations": 7,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po2_event.dat",
+      "size_bytes": 99268,
+      "sha256": "412d3074d728d1e047ce5172f5858b55efe78ecde0e7d8141553647d7860c647",
+      "parse_error": null,
+      "parse_declarations": 28,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po2_システム部分.dat",
+      "size_bytes": 2977,
+      "sha256": "0021628dd09d426099416912bbca83c9a72a8e68a3e3f8bb49d3c502e8c30c9c",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po31_event.dat",
+      "size_bytes": 8392,
+      "sha256": "9786efc18b5ab2790f434607448290d2d7bcc7383c6e32c7d6e445713c6d0d87",
+      "parse_error": null,
+      "parse_declarations": 7,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po33_event.dat",
+      "size_bytes": 72261,
+      "sha256": "2b420cb27f4f195b845a03907e6540d9291819f8d56006e7c8d32cdd02fff553",
+      "parse_error": null,
+      "parse_declarations": 34,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po33_story.dat",
+      "size_bytes": 6171,
+      "sha256": "da8023d5a9d3752496de7f3cd4f611c812f44a7326063c1abbcb2766a3a094e7",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po3_event.dat",
+      "size_bytes": 48556,
+      "sha256": "523a26dcda96deedbf09e9efc278e5c57d8901e9c2b61eaaac73b444f635add1",
+      "parse_error": null,
+      "parse_declarations": 23,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po5_battle.dat",
+      "size_bytes": 12727,
+      "sha256": "384caa04c82788537074457751e4ead00bbac332b66e5ea13dbb8b71ad278841",
+      "parse_error": null,
+      "parse_declarations": 4,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po5_event.dat",
+      "size_bytes": 207024,
+      "sha256": "cf77288b2c16144659f4a1962ecb73a3e4053b504a91e9156be4a06b8fbdd12c",
+      "parse_error": null,
+      "parse_declarations": 34,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po7_event.dat",
+      "size_bytes": 5360,
+      "sha256": "6cbf0c173366964a6acc7b5d9da0f140156f4a1ddc6c50878178961d1c53d6f5",
+      "parse_error": null,
+      "parse_declarations": 5,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po8_event.dat",
+      "size_bytes": 20782,
+      "sha256": "8a65d72117bd335f9311bac480e8d8f60423ecc65e92fbdb7af2cb650321181b",
+      "parse_error": null,
+      "parse_declarations": 8,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2000_勢力ストーリー/po9_event.dat",
+      "size_bytes": 8295,
+      "sha256": "29f7ea1146247e8fe0aa368d68929cc5838bee111b3fe1c467b97e225494ccac",
+      "parse_error": null,
+      "parse_declarations": 8,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2001_イベント_ボス/EB_2222_レイノアレフ.dat",
+      "size_bytes": 6463,
+      "sha256": "e632b1ede7fc4bae70e4be593263c2036cdaab30c213f4ec41d1e65f54cb40e8",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2001_イベント_ボス/EB_2323_リュージ騎士団.dat",
+      "size_bytes": 30132,
+      "sha256": "506333ea4dfc8df52d715c888e36312ce9b8dc778c0ce25c3c38f94adb44670f",
+      "parse_error": null,
+      "parse_declarations": 15,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2001_イベント_ボス/EB_2525_町の小さなパン屋さんと化した二軍.dat",
+      "size_bytes": 11126,
+      "sha256": "de2717b4131c59a6e2fea97cf1efdd5c471b205527e30700350a216f6a9de435",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2001_イベント_ボス/EB_5151_古代アステカ王国.dat",
+      "size_bytes": 76057,
+      "sha256": "e256ed1364f8ca6df8f7797f3403a794f59950ef23603b966de665837684eacc",
+      "parse_error": null,
+      "parse_declarations": 23,
+      "skill_declarations": 1
+    },
+    {
+      "file": "a_default/script/2001_イベント_ボス/event_01_boss.dat",
+      "size_bytes": 1802,
+      "sha256": "f3505a02f1ea9a220ecae57777b8f7324f6588ab7d38abe7e82e49b531b62df6",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2001_イベント_ボス/event_50_共通ボス.dat",
+      "size_bytes": 9885,
+      "sha256": "7c7df04c883d697767ac3995fb4beb940318f723917dab195f2f5422ec1c059c",
+      "parse_error": null,
+      "parse_declarations": 6,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2001_イベント_ボス/event_51_ボス死亡時.dat",
+      "size_bytes": 13673,
+      "sha256": "c17f089c47b68ce7e1e8ca4d314cd11c714a1d5a3323f30af5044bf94c73cdd6",
+      "parse_error": null,
+      "parse_declarations": 16,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2023_イベント_リュージ騎士団/event_23_RPG.dat",
+      "size_bytes": 687671,
+      "sha256": "4d17707dfc520973ec7a09e831891aa637d6338b42e1f3c461701f4338ec027c",
+      "parse_error": null,
+      "parse_declarations": 590,
+      "skill_declarations": 33
+    },
+    {
+      "file": "a_default/script/2023_イベント_リュージ騎士団/po23_battle.dat",
+      "size_bytes": 11661,
+      "sha256": "0c7716fb72b0f0acfecb2237428e465e512ce8e7a1776e1c648e57000fa1fe91",
+      "parse_error": null,
+      "parse_declarations": 4,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2023_イベント_リュージ騎士団/po23_battle_H.dat",
+      "size_bytes": 61040,
+      "sha256": "0cc34f375cd31fec1074102d6d21b7b6265b96ca7be48dc60a41a8f7ac57a2ee",
+      "parse_error": null,
+      "parse_declarations": 5,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2023_イベント_リュージ騎士団/po23_battle_R.dat",
+      "size_bytes": 9495,
+      "sha256": "a8434dd86fa3a455f355e179610bf7e41964e029063740d5eb6de48843c9e4c6",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2023_イベント_リュージ騎士団/po23_battle_S.dat",
+      "size_bytes": 28554,
+      "sha256": "cb29f7b3668e183b0596215c4a18507a84d1e7bc4277a0c99584e8b0fedb410d",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2023_イベント_リュージ騎士団/po23_Eliz.dat",
+      "size_bytes": 34863,
+      "sha256": "ba9df22bca2f0cb5bf3d8769bc1676f22178676ce56f3e27f7e51b8b93ccf635",
+      "parse_error": null,
+      "parse_declarations": 5,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2023_イベント_リュージ騎士団/po23_event.dat",
+      "size_bytes": 101893,
+      "sha256": "67e963a7d74ba749728fab94874909a73ce0528e2e61aed9335042b809e69ec8",
+      "parse_error": null,
+      "parse_declarations": 15,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2023_イベント_リュージ騎士団/po23_event_10_B.dat",
+      "size_bytes": 99226,
+      "sha256": "6f3ddd58aefbc07b09effdb05e576e26036ad93fea6dde1abbf0007bddeb157c",
+      "parse_error": null,
+      "parse_declarations": 5,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2023_イベント_リュージ騎士団/po23_event_10_C.dat",
+      "size_bytes": 41721,
+      "sha256": "f0a08608686ec17d7c0dbe736a7c2e46b5c8129a26e2209129b7781d1a5f427e",
+      "parse_error": null,
+      "parse_declarations": 6,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2023_イベント_リュージ騎士団/po23_event_11_A.dat",
+      "size_bytes": 32944,
+      "sha256": "de9ee5597246b093956f5e9cff93bac380227fee8ea16b3fa9502f0874ae561f",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2023_イベント_リュージ騎士団/po23_event_11_B.dat",
+      "size_bytes": 48578,
+      "sha256": "4abcee7e553ea024682b00e6102616d8c09b39a86ee3a9e8adbd77b07b51d1a2",
+      "parse_error": null,
+      "parse_declarations": 7,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2023_イベント_リュージ騎士団/po23_event_11_C.dat",
+      "size_bytes": 32953,
+      "sha256": "5215f82b640f38f4c5401f080ad722eb94c3afae2b8e1c5042f67bede1749c6e",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2023_イベント_リュージ騎士団/po23_event_12_ED_A.dat",
+      "size_bytes": 55015,
+      "sha256": "c107f61b8797364cbf06048b2df2c8803c0ae61dc323fd927e2c9c07205e2d9c",
+      "parse_error": null,
+      "parse_declarations": 5,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2023_イベント_リュージ騎士団/po23_event_12_ED_B_B.dat",
+      "size_bytes": 44043,
+      "sha256": "2da5a77e5a6329c13a45f75e13ad28271e2dae7c105a650b84fe1ce5020605eb",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2023_イベント_リュージ騎士団/po23_event_12_ED_B_S.dat",
+      "size_bytes": 47151,
+      "sha256": "f29bd76638206cbd4e103f6ecb19f59ebcb9821a4c82d9eec97a3dce7e94acfd",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2023_イベント_リュージ騎士団/po23_event_13_C.dat",
+      "size_bytes": 70921,
+      "sha256": "e30c05ddf9050aba3de4ee872656cb13980181912c0fbd87ac4ffb7f4184733e",
+      "parse_error": null,
+      "parse_declarations": 11,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2023_イベント_リュージ騎士団/po23_event_14_C.dat",
+      "size_bytes": 35606,
+      "sha256": "b0693c675fc4da4acffb8da33544e1beedce4a5b622a14f1033d6cda71d6183c",
+      "parse_error": null,
+      "parse_declarations": 4,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2023_イベント_リュージ騎士団/po23_event_15_C.dat",
+      "size_bytes": 35182,
+      "sha256": "f9cdef743988de4ec518b067b81bbecdc7de13bf0ecba7c84b66e33193bfa7b8",
+      "parse_error": null,
+      "parse_declarations": 4,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2023_イベント_リュージ騎士団/po23_event_16_C.dat",
+      "size_bytes": 58937,
+      "sha256": "7486c23ba7e008e07d1985c4d85517311b861720c8036a02f6006fd3dd09cc7c",
+      "parse_error": null,
+      "parse_declarations": 5,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2023_イベント_リュージ騎士団/po23_event_17_C.dat",
+      "size_bytes": 67307,
+      "sha256": "0aeec52f9375f40c97f634777d689933576aaa41e276fa8b062e2daf40c0a71f",
+      "parse_error": null,
+      "parse_declarations": 8,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2023_イベント_リュージ騎士団/po23_event_18_C_google_drive_is_god.dat",
+      "size_bytes": 44079,
+      "sha256": "d9218ed0bc414117f25c8f433344e751fe31493632cf98366b3207dbf0c184ff",
+      "parse_error": null,
+      "parse_declarations": 10,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2023_イベント_リュージ騎士団/po23_event_19_ED_C.dat",
+      "size_bytes": 81337,
+      "sha256": "90b3cd6fc5dd0324d144635ffd1f380f561c4dd1b64d542e8b58c8e9a719bf67",
+      "parse_error": null,
+      "parse_declarations": 4,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2023_イベント_リュージ騎士団/po23_event_2.dat",
+      "size_bytes": 69275,
+      "sha256": "22c2d1f9acb9332c983051294ac442dfd9912d010d6d3b9ae0eac22f073bf362",
+      "parse_error": null,
+      "parse_declarations": 15,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2023_イベント_リュージ騎士団/po23_event_20_Chapter_Change.dat",
+      "size_bytes": 11777,
+      "sha256": "0073cdbfe297f03c1ee10067321c19f23716fab93fe13427c4e2fd749e8c73b8",
+      "parse_error": null,
+      "parse_declarations": 8,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2023_イベント_リュージ騎士団/po23_event_3.dat",
+      "size_bytes": 43479,
+      "sha256": "0181cb21d0e5b1a219ecced2ee8e0852c6b56f7501e0df33fbe079e43874c43c",
+      "parse_error": null,
+      "parse_declarations": 6,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2023_イベント_リュージ騎士団/po23_event_4.dat",
+      "size_bytes": 52017,
+      "sha256": "f552bacd40aeb88840d58478500c75f894f584725f0c54058c4465802880af63",
+      "parse_error": null,
+      "parse_declarations": 16,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2023_イベント_リュージ騎士団/po23_event_5.dat",
+      "size_bytes": 63893,
+      "sha256": "54d4ed35400e94261b94a8f477036b31aedd68592c628e5ff20fb41eddf5a397",
+      "parse_error": null,
+      "parse_declarations": 14,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2023_イベント_リュージ騎士団/po23_event_6.dat",
+      "size_bytes": 51188,
+      "sha256": "a5794d9043d9f32a8a4ce620e5a8dcdf7f01df5e2b94a7743a643e6d3bb5ac40",
+      "parse_error": null,
+      "parse_declarations": 12,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2023_イベント_リュージ騎士団/po23_event_7.dat",
+      "size_bytes": 24346,
+      "sha256": "171f6e5441a860d1b4f0c30e89a3ffd0301e9d3ae36ada0702c46523844117a0",
+      "parse_error": null,
+      "parse_declarations": 5,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2023_イベント_リュージ騎士団/po23_event_8.dat",
+      "size_bytes": 63261,
+      "sha256": "89d8c91842d05a4448ae61054cdb0f58345a98dbcce3224fbe0a6944174b2a78",
+      "parse_error": null,
+      "parse_declarations": 5,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2023_イベント_リュージ騎士団/po23_event_8_C.dat",
+      "size_bytes": 50683,
+      "sha256": "65a0bbebe107595a0233c1927ea7cd0c6946bf891572690ef5ed6bdead988da1",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2023_イベント_リュージ騎士団/po23_event_9_A.dat",
+      "size_bytes": 9797,
+      "sha256": "cfa2212dc76ddebc6e468886b0baa8d7d623c73afcec35d4a052072a32fba43a",
+      "parse_error": null,
+      "parse_declarations": 4,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2023_イベント_リュージ騎士団/po23_event_9_B.dat",
+      "size_bytes": 68373,
+      "sha256": "ae64e9c90a3504e51ad6b699b07d91bebf5d2f69a725fa44c0eadc8bea2eb2dd",
+      "parse_error": null,
+      "parse_declarations": 10,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2023_イベント_リュージ騎士団/po23_event_9_C.dat",
+      "size_bytes": 48263,
+      "sha256": "631a7e731c65b54fe55067f819dbcdbc083694b38c7ecde16ce3a4a3164602ad",
+      "parse_error": null,
+      "parse_declarations": 5,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/0_旧顔グラ.dat",
+      "size_bytes": 2508,
+      "sha256": "1a976d213148dcdb50c69306c94d2d478cc655f9a6c4ce95543ce46b22cf7f4d",
+      "parse_error": null,
+      "parse_declarations": 37,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/battle/event_26_battle.dat",
+      "size_bytes": 18789,
+      "sha256": "a6cd3c748474036c2cf281258946c7e541980e85b5e68c9f8054b52601926732",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/battle/unit_drama.dat",
+      "size_bytes": 6807,
+      "sha256": "1b4b606c330f7e613405d8fda138e44364e786b2b6136002dafd0de2591a7467",
+      "parse_error": null,
+      "parse_declarations": 61,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/event_51_bossdead26.dat",
+      "size_bytes": 8016,
+      "sha256": "ae6e769fa49821a0a90c4a1967ed492bfaeab35fdbb915a02d557919d804da24",
+      "parse_error": null,
+      "parse_declarations": 2,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/po26_event_10.dat",
+      "size_bytes": 14010,
+      "sha256": "49558dc2b264017e0403e76337b7ee7b70f506965bf0ede269ec9607bc8dd48d",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_boss.dat",
+      "size_bytes": 6267,
+      "sha256": "16e52f9574d0faf8e0e7204d905c862fafde0f6126fa390ec225e80ce18a551a",
+      "parse_error": null,
+      "parse_declarations": 13,
+      "skill_declarations": 10
+    },
+    {
+      "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_cyclops.dat",
+      "size_bytes": 4723,
+      "sha256": "4120bb430e49378edc53220136224b12d82f7c5c85b16a9767ebb6c2a134b952",
+      "parse_error": null,
+      "parse_declarations": 23,
+      "skill_declarations": 19
+    },
+    {
+      "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_lastboss.dat",
+      "size_bytes": 4692,
+      "sha256": "1452c30beb8c7c4cf087e891d632fc3bf0b127c4e67d639db0923c6da56890d1",
+      "parse_error": null,
+      "parse_declarations": 9,
+      "skill_declarations": 5
+    },
+    {
+      "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/po26_battle.dat",
+      "size_bytes": 8286,
+      "sha256": "1d44658c8cfe14cafec0abf3525a030736c8a42af34b0eaeefae1b29dd7822a0",
+      "parse_error": null,
+      "parse_declarations": 4,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/po26_event.dat",
+      "size_bytes": 57299,
+      "sha256": "f81bb5e8724164266b2ba47446ba4a08f250d67abb9fe127e2b7b86f10e9833d",
+      "parse_error": null,
+      "parse_declarations": 21,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/po26_event_11.dat",
+      "size_bytes": 26055,
+      "sha256": "7023234ad0b9a51b54445c33a7c8cc678e7932e383e791ac96d92137d6f713f7",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/po26_event_12.dat",
+      "size_bytes": 8656,
+      "sha256": "64bf281a4a02b93e929ba044d0afb079f4720176887500e6c44baef149092050",
+      "parse_error": null,
+      "parse_declarations": 6,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/po26_event_13.dat",
+      "size_bytes": 11825,
+      "sha256": "d93f39cc15c0b2309b7a6cc6f92cbe41531908b8d3320d62ab96acb2ae4dceb0",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/po26_event_14.dat",
+      "size_bytes": 43942,
+      "sha256": "595942d68dd20646c96b4bef3284d3811cf5bb8cdbd3759db38906d9c5011ab9",
+      "parse_error": null,
+      "parse_declarations": 10,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/po26_event_2.dat",
+      "size_bytes": 30046,
+      "sha256": "28e1e8ac19ee455e81d43472efeed5e335c570781479b8c52199367cbd29c100",
+      "parse_error": null,
+      "parse_declarations": 12,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/po26_event_3.dat",
+      "size_bytes": 32229,
+      "sha256": "878b90bc45a526ced74bb885f6b19ed2e428a2901defca9e53199200a0152a6d",
+      "parse_error": null,
+      "parse_declarations": 8,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/po26_event_4.dat",
+      "size_bytes": 55389,
+      "sha256": "90fc27df769f084fb600aab2bbff98108d27b85ae4962bdf34eb855b73ff8ea0",
+      "parse_error": null,
+      "parse_declarations": 9,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/po26_event_5.dat",
+      "size_bytes": 4832,
+      "sha256": "04dbbe4b256c47e8f470334add38738b33f676271c54211ccb928f3361a35af7",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/po26_event_6.dat",
+      "size_bytes": 45931,
+      "sha256": "94603204d0bcb9289ec7d8d8954d63ff2d22ee7ad747210b6260e5a2d2692072",
+      "parse_error": null,
+      "parse_declarations": 7,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/po26_event_7.dat",
+      "size_bytes": 35419,
+      "sha256": "cc41acd705f01cda3a67bc10dfcb758f1b98015ecfc0e49132ada819c6df2573",
+      "parse_error": null,
+      "parse_declarations": 6,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/po26_event_8.dat",
+      "size_bytes": 30609,
+      "sha256": "b3ff89d000fa05c7d29b309473dc8ac60570fc637996115b8fc18421df3ffb0a",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/po26_event_9.dat",
+      "size_bytes": 23726,
+      "sha256": "b714ddfcb893320cf21cf0f7a5b7cc715a1a9090a592e72c2fcf87869b280a95",
+      "parse_error": null,
+      "parse_declarations": 5,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/20_クラス/00_汎用兵科.dat",
+      "size_bytes": 15822,
+      "sha256": "8fe0790990060718c9561d2d5c95d98df26593c914e55a753adca439d5ab092a",
+      "parse_error": null,
+      "parse_declarations": 41,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/20_クラス/01_03_マリナーズ_空手部_キモティカ.dat",
+      "size_bytes": 18719,
+      "sha256": "9084010a0d182979e1a150214869fae417088f67d80c0d824237001153b0ecd9",
+      "parse_error": null,
+      "parse_declarations": 46,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/20_クラス/04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+      "size_bytes": 23832,
+      "sha256": "e13ee9686c119511e3aa0edd6fec020f66f2c4f30a91dca833e41098ac93443a",
+      "parse_error": null,
+      "parse_declarations": 54,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/20_クラス/07_10_TNOK_レ_VAN_スカ.dat",
+      "size_bytes": 15458,
+      "sha256": "d5c3493da3bba4812603e8cc74ae8b130d1ee45c0083bf59c91d34e8a4dc55b0",
+      "parse_error": null,
+      "parse_declarations": 36,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/20_クラス/11_15_サセバト_アリソン_SWW.dat",
+      "size_bytes": 18586,
+      "sha256": "f97d2c28a2dd29420ce206595f25d3af4a82395b74f2d2a8fd4ef0f576ed7a40",
+      "parse_error": null,
+      "parse_declarations": 45,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/20_クラス/16_20_ALC_遠野_おじさん_正統_VVAN.dat",
+      "size_bytes": 12710,
+      "sha256": "c0539fd38fea7bd94d1010a4c0ff6ac2541e5ab0754baa3b3ac325d5b26607a3",
+      "parse_error": null,
+      "parse_declarations": 26,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/20_クラス/1919_その他.dat",
+      "size_bytes": 15666,
+      "sha256": "17f7f54d9dc3a4d68646595bc7f6863777b12dc30e433ba447c56a5a4fdd315e",
+      "parse_error": null,
+      "parse_declarations": 75,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/20_クラス/21_23_材料屋_HSI_リュージ.dat",
+      "size_bytes": 17670,
+      "sha256": "8d3594162df98c89545a136dbce7134f14814516ad4ed2b9bafd2278ad8c490e",
+      "parse_error": null,
+      "parse_declarations": 43,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/20_クラス/24_26_ONDISK_二軍_原理.dat",
+      "size_bytes": 25764,
+      "sha256": "9cbc478e14eedee0e45c175b26d56b2d87442cf78cd5fead637248a57906b303",
+      "parse_error": null,
+      "parse_declarations": 59,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/20_クラス/27_30_岡山.dat",
+      "size_bytes": 7497,
+      "sha256": "dba2cb3e18dcd26c52b554d4c749d6eade196fc5900e875be18950e03bee2c19",
+      "parse_error": null,
+      "parse_declarations": 18,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/20_クラス/31_33_GUC_サムソン_白狼.dat",
+      "size_bytes": 10111,
+      "sha256": "2e1c6f2055f320a81b7c988c850052ad514da07ec615bfc5a188244773d6b3d3",
+      "parse_error": null,
+      "parse_declarations": 27,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/20_クラス/B_11_閉店の日.dat",
+      "size_bytes": 1067,
+      "sha256": "774ecc32d26a929ff0c2717066092c5b57e3c268495521627ec8787414b8c915",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/20_クラス/B_14_ヌエバ・デスパセーニャ.dat",
+      "size_bytes": 2936,
+      "sha256": "b0bc1c55eeece1a8b76a21702a81631b6e285e27031bd9c9f4d427231ca93084",
+      "parse_error": null,
+      "parse_declarations": 9,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/20_クラス/B_1_クレイジーサイコレズ.dat",
+      "size_bytes": 2144,
+      "sha256": "901527828697c93c450dcfdbce28c7c5040e51f0e2289ec50ec7bd0b601ee581",
+      "parse_error": null,
+      "parse_declarations": 14,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/20_クラス/B_2222_レイノアレフ.dat",
+      "size_bytes": 12583,
+      "sha256": "da4539bd2410bc4b1f34de43b85c957c8137a446460012a8b4b86bb1243dade4",
+      "parse_error": null,
+      "parse_declarations": 24,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/20_クラス/B_23_リュージボス.dat",
+      "size_bytes": 14697,
+      "sha256": "7574a0efef473042448e326fad3b82dd1ac294091cedb39054850d56ba384bd2",
+      "parse_error": null,
+      "parse_declarations": 22,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/20_クラス/B_2525_町の小さなパン屋さんと化した二軍.dat",
+      "size_bytes": 2095,
+      "sha256": "3ce81b8fb106fe6d67c86a27c88be8c1e66d207a8d853aad03e470822c06def0",
+      "parse_error": null,
+      "parse_declarations": 6,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/20_クラス/B_25_ジトメ秘密教団.dat",
+      "size_bytes": 4695,
+      "sha256": "1d4f14c69de82aec1e55bf9ab9fe97728364b34aa88f2a48d1ba921fa48a834e",
+      "parse_error": null,
+      "parse_declarations": 7,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/20_クラス/B_26_第二革命.dat",
+      "size_bytes": 6457,
+      "sha256": "d0dd54e749a2966d4d0fe5522843b0f1447a6241ccca17b187ab21c66935042a",
+      "parse_error": null,
+      "parse_declarations": 23,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/20_クラス/B_2_クレイジーサイコホモ.dat",
+      "size_bytes": 1063,
+      "sha256": "87e096d16cbfc370829d0842fcee8a63bd22e669e56cba55e71b5ba4747dfde2",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/20_クラス/B_50_GO.dat",
+      "size_bytes": 6531,
+      "sha256": "2036d8cea63ad72ad555ded8e89dad8578f2891333c789f3335e06d815bba00d",
+      "parse_error": null,
+      "parse_declarations": 21,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/20_クラス/B_5151_古代アステカ王国.dat",
+      "size_bytes": 1153,
+      "sha256": "22f072ef6e84715884197263ea7dd89e1c8fa9fd71e7e6aab72eb8768b3aa668",
+      "parse_error": null,
+      "parse_declarations": 2,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/20_クラス/B_525_神聖UNEI帝国.dat",
+      "size_bytes": 12184,
+      "sha256": "0d9cd2248759e776b19f3fa5b5d71185b77c54684f83d4988573d793db5ce25c",
+      "parse_error": null,
+      "parse_declarations": 46,
+      "skill_declarations": 7
+    },
+    {
+      "file": "a_default/script/20_クラス/B_5_土屋稲荷大社.dat",
+      "size_bytes": 2540,
+      "sha256": "d6ee1807d61a617bcc3f84d07bd3438cae5b5761b5821ecfcd90ee15ffbf830e",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/20_クラス/B_63_HZN.dat",
+      "size_bytes": 936,
+      "sha256": "e18adb6a0a3923a2979f4d162bf56bc22488607210bbce4db7d63d63c8dc9eed",
+      "parse_error": null,
+      "parse_declarations": 7,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/20_クラス/B_64_ミッションシナリオ.dat",
+      "size_bytes": 1242,
+      "sha256": "9da52c87c7e5ed11fe212f3c5aa963476cd55e128d8a3b3ad653d22e78b552d9",
+      "parse_error": null,
+      "parse_declarations": 6,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/20_クラス/Detail_列伝.dat",
+      "size_bytes": 79205,
+      "sha256": "ce91bb995bb1de240d136bddd592e91c1a26b5341ef9f8919b19026ccab74cb0",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/20_クラス/Enemy_敵AI用クラス.dat",
+      "size_bytes": 11889,
+      "sha256": "165ce4951805304dbcc392b5f97812df515c661335d0818d4a74278b5bafa2d7",
+      "parse_error": null,
+      "parse_declarations": 51,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/3000_淫ドリームマッチ/DB11_heitenGO.dat",
+      "size_bytes": 343,
+      "sha256": "b45a5fa97f33847dabd8fdc3f50a441e6669597a7d82968fdfd2dc496bc6eaaf",
+      "parse_error": null,
+      "parse_declarations": 5,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/3000_淫ドリームマッチ/DB1423_unit_S.dat",
+      "size_bytes": 1090,
+      "sha256": "b5ad4a712923e2a2c466d44bdf02ff7086f4b02d3b6c6ce2693903e2c28bedae",
+      "parse_error": null,
+      "parse_declarations": 13,
+      "skill_declarations": 4
+    },
+    {
+      "file": "a_default/script/3000_淫ドリームマッチ/DB14_PSR.dat",
+      "size_bytes": 800,
+      "sha256": "d5014969242d70a2df96d756d8de5107cdf64e2903033658c19e38d707022c18",
+      "parse_error": null,
+      "parse_declarations": 7,
+      "skill_declarations": 4
+    },
+    {
+      "file": "a_default/script/3000_淫ドリームマッチ/DB1_ALC.dat",
+      "size_bytes": 288,
+      "sha256": "9dab46ee13e6c467d7ef6dc63a1aac1940fe9870f55cc0663183cde72ba204a8",
+      "parse_error": null,
+      "parse_declarations": 6,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/3000_淫ドリームマッチ/DB22_HSI.dat",
+      "size_bytes": 1060,
+      "sha256": "8bfb4ba83443d9e8986cdad47dfba47979b314a213ea0134db173f89bf292679",
+      "parse_error": null,
+      "parse_declarations": 2,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/3000_淫ドリームマッチ/DB259_ATUD.dat",
+      "size_bytes": 1083,
+      "sha256": "52e780385e8308d3122e050d968190786cd8c8d9be713e359ee35a22be0bf535",
+      "parse_error": null,
+      "parse_declarations": 12,
+      "skill_declarations": 4
+    },
+    {
+      "file": "a_default/script/3000_淫ドリームマッチ/DB25_NKDK.dat",
+      "size_bytes": 98,
+      "sha256": "2f1a001ce0ddf2299fa41fbf54f82821c369a563abee4e0273d1dda7aa2f2ca5",
+      "parse_error": null,
+      "parse_declarations": 2,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/3000_淫ドリームマッチ/DB264_Plazchen.dat",
+      "size_bytes": 2683,
+      "sha256": "6f2124d1fc680509297fa78bf35f1be0d4db1aa23ddf7c33bef8294d84c103af",
+      "parse_error": null,
+      "parse_declarations": 4,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/3000_淫ドリームマッチ/DB26_FMRIM.dat",
+      "size_bytes": 87,
+      "sha256": "7b071adf8ff328386d0983c81041a290250858659ba5b54ed08c1462e87e6ea4",
+      "parse_error": null,
+      "parse_declarations": 2,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/3000_淫ドリームマッチ/DB2_DIO.dat",
+      "size_bytes": 214,
+      "sha256": "6660ff078f0c278c68f55f45d64754cb3de9b4490230611193106659eea89d57",
+      "parse_error": null,
+      "parse_declarations": 6,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/3000_淫ドリームマッチ/DB3_biim.dat",
+      "size_bytes": 1355,
+      "sha256": "7b996562c4d2400d52d62ea74a317ab10d205bd3e83311340b1fd981e9c9dc35",
+      "parse_error": null,
+      "parse_declarations": 16,
+      "skill_declarations": 5
+    },
+    {
+      "file": "a_default/script/3000_淫ドリームマッチ/DB423_unit_R.dat",
+      "size_bytes": 202,
+      "sha256": "e58f8c746a5c1c7127d7bb82dc07a9a849406c856d152b5b424d077037f4d4fc",
+      "parse_error": null,
+      "parse_declarations": 2,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/3000_淫ドリームマッチ/DB51_Elizabeth.dat",
+      "size_bytes": 312,
+      "sha256": "c72a1424cde3719fca2ab97a27d4b8e99589e0d735c78c0d2ae3731e79fc51a8",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/3000_淫ドリームマッチ/DB5_dai0.dat",
+      "size_bytes": 370,
+      "sha256": "1dfc82e71389dc18586e20da27b1944a5b6bf212b4875d4e85ab081eff2892c9",
+      "parse_error": null,
+      "parse_declarations": 7,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/3000_淫ドリームマッチ/DB5_GO.dat",
+      "size_bytes": 205,
+      "sha256": "52bcbf297dbfd0340fd4e346ba475e033abe35af00a0a5845b7fa5698fb3b4c9",
+      "parse_error": null,
+      "parse_declarations": 4,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/3000_淫ドリームマッチ/DB6423_unit_H.dat",
+      "size_bytes": 2409,
+      "sha256": "7f12629d8d93cb1fa804dc13093acf5e96808a42f07ca0e544cb2423a9a92bf1",
+      "parse_error": null,
+      "parse_declarations": 18,
+      "skill_declarations": 11
+    },
+    {
+      "file": "a_default/script/3000_淫ドリームマッチ/DBH_HZN.dat",
+      "size_bytes": 664,
+      "sha256": "14d52f6d4cc02992770101de0423e7e6d793b60d5666dff9f99a881b8ee227be",
+      "parse_error": null,
+      "parse_declarations": 2,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/3000_淫ドリームマッチ/dr_power.dat",
+      "size_bytes": 7949,
+      "sha256": "78a11fce21db4db007fc0367f20a42bc20a683b59696489b8f958746a69fde42",
+      "parse_error": null,
+      "parse_declarations": 18,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/3000_淫ドリームマッチ/dr_spot.dat",
+      "size_bytes": 8109,
+      "sha256": "d3b8642dde7bbbb6eaeed0fbcfb14c90cbd92a1c34b7f1380dffb2d6806c838c",
+      "parse_error": null,
+      "parse_declarations": 35,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/3000_淫ドリームマッチ/ev_bonus.dat",
+      "size_bytes": 7281,
+      "sha256": "57beaca485758142f3987248a52271a8a817461e8fb8f0ab1ff402978affb527",
+      "parse_error": null,
+      "parse_declarations": 33,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/3000_淫ドリームマッチ/ev_boss.dat",
+      "size_bytes": 10642,
+      "sha256": "11f55130efc147e7dff70bc9bb6213b94e69f46ec909b551ddf8b715155d008d",
+      "parse_error": null,
+      "parse_declarations": 17,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/3000_淫ドリームマッチ/ev_bossdead.dat",
+      "size_bytes": 22460,
+      "sha256": "3c7234bf9575e8759a8d541956bf909a8f45b140c0aeb7f70c2c52c3195b83be",
+      "parse_error": null,
+      "parse_declarations": 37,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/3000_淫ドリームマッチ/ev_dream.dat",
+      "size_bytes": 20410,
+      "sha256": "0db9f30a1ec07bf499df77a32f0178841eec0fad11ce107bd05a82619f74c470",
+      "parse_error": null,
+      "parse_declarations": 2,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/3000_淫ドリームマッチ/ev_form change.dat",
+      "size_bytes": 4505,
+      "sha256": "2abc263862a0ae2ba8d040c71d547d846b6dd92f5eb0416731a4e8b4fbd934be",
+      "parse_error": null,
+      "parse_declarations": 13,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/3000_淫ドリームマッチ/ev_opening.dat",
+      "size_bytes": 14059,
+      "sha256": "478aac56f4cbf611ebaa45b0496c943b77522410467220dc55485773b5598e27",
+      "parse_error": null,
+      "parse_declarations": 2,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/3000_淫ドリームマッチ/pd11_boss change.dat",
+      "size_bytes": 12061,
+      "sha256": "fa08bb163c8f1f176cdf6b3609417a16e99760d54078bdf483545378b9d1fa1b",
+      "parse_error": null,
+      "parse_declarations": 2,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/3000_淫ドリームマッチ/pd1423_battle_S.dat",
+      "size_bytes": 22955,
+      "sha256": "cf33226c45fe07d994556fedfa51c9831fdd84e6e5d2e6c80d1449319a23ac3e",
+      "parse_error": null,
+      "parse_declarations": 2,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/3000_淫ドリームマッチ/pd14_boss change.dat",
+      "size_bytes": 6985,
+      "sha256": "30149f654358128f2518b2b1a979347295b214642d5e0a2915ca73c3c8a99e6c",
+      "parse_error": null,
+      "parse_declarations": 2,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/3000_淫ドリームマッチ/pd25_boss change.dat",
+      "size_bytes": 17061,
+      "sha256": "070fc6b74539bcfe091c61ca495b950a0fcd89cf054aacd89848eaa0538f88c4",
+      "parse_error": null,
+      "parse_declarations": 2,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/3000_淫ドリームマッチ/pd3_boss change.dat",
+      "size_bytes": 16838,
+      "sha256": "d584a7544aaa32f4f3c3663b08b9d0965575b1a0311ac2a0a924ba010c1fdef3",
+      "parse_error": null,
+      "parse_declarations": 2,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/3000_淫ドリームマッチ/pd6423_battle_H.dat",
+      "size_bytes": 51643,
+      "sha256": "f9834ce51478e36415800e5d0c94a45c24f4177eff5f7a412b746fbd2f2e67f3",
+      "parse_error": null,
+      "parse_declarations": 4,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/3000_淫ドリームマッチ/sc_dream.dat",
+      "size_bytes": 6958,
+      "sha256": "d6060e8923781c15e9019da0693939b50d1ca3abc12f983557f9b2a9d85551b1",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/3000_淫ドリームマッチ/sc_dream_sys.dat",
+      "size_bytes": 4003,
+      "sha256": "c5fe1539bb85e15cbd4619fa0110a3ccdee6c046f302f149dcd8f9adaf179cdf",
+      "parse_error": null,
+      "parse_declarations": 6,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/3000_淫ドリームマッチ/置換用.dat",
+      "size_bytes": 5169,
+      "sha256": "e93663f0267ea13d5b5945d67a04eeadbabc51212c8fc15496e9b0f58af9f69d",
+      "parse_error": null,
+      "parse_declarations": 0,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/30_スキル/C_必殺_クラス専用.dat",
+      "size_bytes": 32067,
+      "sha256": "ef92191222f079231a88f9da6142573496c851bc37975b26e67118940cc53557",
+      "parse_error": null,
+      "parse_declarations": 128,
+      "skill_declarations": 128
+    },
+    {
+      "file": "a_default/script/30_スキル/F00_skillset.dat",
+      "size_bytes": 2944,
+      "sha256": "fa49ada00b916e429e18d8c8783523ca65426f9372bf7921da6fd1b5749fb876",
+      "parse_error": null,
+      "parse_declarations": 48,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/30_スキル/F10_missile.dat",
+      "size_bytes": 155145,
+      "sha256": "af115bbeb64312ca70cbb864d673d44c5dc9667952ce5e9ea3800d446202810d",
+      "parse_error": null,
+      "parse_declarations": 591,
+      "skill_declarations": 590
+    },
+    {
+      "file": "a_default/script/30_スキル/F10_missile_砲撃リニューアル.dat",
+      "size_bytes": 52447,
+      "sha256": "4fa328de4235f9503e28d43fd3a5f13818ef05d093c26f0badb6c23a404b38cd",
+      "parse_error": null,
+      "parse_declarations": 182,
+      "skill_declarations": 182
+    },
+    {
+      "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+      "size_bytes": 94777,
+      "sha256": "755ff23eafbaa71e572dd770782685fcfff66f47a699b9efcf22301b3ca2c7cd",
+      "parse_error": null,
+      "parse_declarations": 392,
+      "skill_declarations": 392
+    },
+    {
+      "file": "a_default/script/30_スキル/F10_missile_鞭.dat",
+      "size_bytes": 11104,
+      "sha256": "551d794cf01753c95d08eaca98c7235842d351d05cf2feb7e5ab5ea649dbecf1",
+      "parse_error": null,
+      "parse_declarations": 43,
+      "skill_declarations": 43
+    },
+    {
+      "file": "a_default/script/30_スキル/F11_sword.dat",
+      "size_bytes": 115133,
+      "sha256": "868e67e0f5c5a0707959d4ac5e5e718bc90e0d4b9dd2f30420bc55a3852d054f",
+      "parse_error": null,
+      "parse_declarations": 516,
+      "skill_declarations": 513
+    },
+    {
+      "file": "a_default/script/30_スキル/F12_charge.dat",
+      "size_bytes": 44134,
+      "sha256": "c5d0df3eee97bd31225b892fcfc2c5567eef8074482c9a7da762966edecf402c",
+      "parse_error": null,
+      "parse_declarations": 179,
+      "skill_declarations": 179
+    },
+    {
+      "file": "a_default/script/30_スキル/F13_heal_support.dat",
+      "size_bytes": 51563,
+      "sha256": "5f7a6e6df21e0facbd874327eacb334c9867516d5510c3f4956b17ff72317cd2",
+      "parse_error": null,
+      "parse_declarations": 143,
+      "skill_declarations": 141
+    },
+    {
+      "file": "a_default/script/30_スキル/F20_summon.dat",
+      "size_bytes": 280541,
+      "sha256": "8e17ff4566dfc1547323b5acc89dee41b918ea946be160555b758431c0ec3ac3",
+      "parse_error": null,
+      "parse_declarations": 1009,
+      "skill_declarations": 748
+    },
+    {
+      "file": "a_default/script/30_スキル/F21_奴隷少年summon_鞭_突撃_斬撃.dat",
+      "size_bytes": 12042,
+      "sha256": "aff5356f73a6172eae8aeb9c7dc7074b82865c35022eef91f23b1a7080cfb6eb",
+      "parse_error": null,
+      "parse_declarations": 51,
+      "skill_declarations": 51
+    },
+    {
+      "file": "a_default/script/30_スキル/F22_召喚を使ったトーク.dat",
+      "size_bytes": 13504,
+      "sha256": "777db48159f69c6b0bdd9473bd9153f185aabf6c335a1007088a634e14ceb0e4",
+      "parse_error": null,
+      "parse_declarations": 112,
+      "skill_declarations": 26
+    },
+    {
+      "file": "a_default/script/30_スキル/F30_死亡時スキル.dat",
+      "size_bytes": 16189,
+      "sha256": "f2aa80296373fde740d58b81320fd9fd2ef3e6d3e1188fc4f12cf8595f8611f0",
+      "parse_error": null,
+      "parse_declarations": 79,
+      "skill_declarations": 79
+    },
+    {
+      "file": "a_default/script/30_スキル/F31_死亡時エフェクト.dat",
+      "size_bytes": 40649,
+      "sha256": "64e4f61501a16c67f71f1ab54bcc50b242501eb2d0baba6afd3494cf3854a8d4",
+      "parse_error": null,
+      "parse_declarations": 157,
+      "skill_declarations": 157
+    },
+    {
+      "file": "a_default/script/30_スキル/F40_移動_ワープ_バリア.dat",
+      "size_bytes": 25897,
+      "sha256": "435245e7cd765654030fcc2029eebcdfbdea9c1ccb5f51223eae2cc94571fbbe",
+      "parse_error": null,
+      "parse_declarations": 73,
+      "skill_declarations": 73
+    },
+    {
+      "file": "a_default/script/30_スキル/F50_延焼_究極悶絶少年.dat",
+      "size_bytes": 9740,
+      "sha256": "c2377dc50a668cbd5bc611f74517cba84fd33e797362055abddc1449e2a67ab5",
+      "parse_error": null,
+      "parse_declarations": 43,
+      "skill_declarations": 43
+    },
+    {
+      "file": "a_default/script/30_スキル/F51_榴弾・延焼_プレッツヒェン.dat",
+      "size_bytes": 21060,
+      "sha256": "1c30137d56186a01653b7a6640fe55f0576d47143e999ab3e1286e017a0d077f",
+      "parse_error": null,
+      "parse_declarations": 105,
+      "skill_declarations": 105
+    },
+    {
+      "file": "a_default/script/30_スキル/F52_出血エフェクト.dat",
+      "size_bytes": 10324,
+      "sha256": "b562227704fe2a2bbee17dc07a1b753cefd9b5b04b6c968b6975c93f7269da9d",
+      "parse_error": null,
+      "parse_declarations": 28,
+      "skill_declarations": 28
+    },
+    {
+      "file": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+      "size_bytes": 37271,
+      "sha256": "53935b4b9e0406bda6221739cb826088faf6d5bfea9006d56ebfd8a64952de39",
+      "parse_error": null,
+      "parse_declarations": 147,
+      "skill_declarations": 147
+    },
+    {
+      "file": "a_default/script/30_スキル/F61_核兵器.dat",
+      "size_bytes": 17080,
+      "sha256": "4a7f018735c9464e9b03cfcc82558063c2c4437734d8b63c9fa5260cd3aa7b15",
+      "parse_error": null,
+      "parse_declarations": 71,
+      "skill_declarations": 71
+    },
+    {
+      "file": "a_default/script/30_スキル/F62_ホモビーム.dat",
+      "size_bytes": 60960,
+      "sha256": "3e99aac6858243f615afe176ac7106c4541dff24c7e605fcc2fb7c044b692dc8",
+      "parse_error": null,
+      "parse_declarations": 447,
+      "skill_declarations": 425
+    },
+    {
+      "file": "a_default/script/30_スキル/Status_10_部隊.dat",
+      "size_bytes": 67501,
+      "sha256": "ad5ff98d10470726404c4bddaca80338b11716fa3b871ae3b36a842d0438d172",
+      "parse_error": null,
+      "parse_declarations": 379,
+      "skill_declarations": 379
+    },
+    {
+      "file": "a_default/script/30_スキル/Status_20_個人.dat",
+      "size_bytes": 18053,
+      "sha256": "115dc979c1ee70764eb79505c36ccf1b6ab20d81b69a56ee79e9b59be421ecbf",
+      "parse_error": null,
+      "parse_declarations": 72,
+      "skill_declarations": 72
+    },
+    {
+      "file": "a_default/script/30_スキル/Status_30_ユニット専用.dat",
+      "size_bytes": 37632,
+      "sha256": "20196085ac8e76fb8827f01d04c03a66e557a07f76a1df21b95655534388f165",
+      "parse_error": null,
+      "parse_declarations": 110,
+      "skill_declarations": 110
+    },
+    {
+      "file": "a_default/script/30_スキル/Status_40_分類.dat",
+      "size_bytes": 7280,
+      "sha256": "6f44d4eb92d7c822106da94409372413c726e17eb91d58ff4b70db7bbe2ff034",
+      "parse_error": null,
+      "parse_declarations": 52,
+      "skill_declarations": 52
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_11_15_サセバトミサタ～SWW.dat",
+      "size_bytes": 12468,
+      "sha256": "fbdcc42637328099de4257c6df9b6456b9a399cc65c429ca1f70d7f6e9801bc7",
+      "parse_error": null,
+      "parse_declarations": 45,
+      "skill_declarations": 45
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_16_20_ALC一派～VVAN.dat",
+      "size_bytes": 47640,
+      "sha256": "015d307aae8b2bfefb42546a55950aeed788d068a27a0a025984d9f93e8814a4",
+      "parse_error": null,
+      "parse_declarations": 208,
+      "skill_declarations": 208
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+      "size_bytes": 91267,
+      "sha256": "c3f699ca01c179b8ba4d14bebed4477d38d8932e2ec315580162119404968c4a",
+      "parse_error": null,
+      "parse_declarations": 370,
+      "skill_declarations": 370
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+      "size_bytes": 62202,
+      "sha256": "487c351a368ce83abd6f791affefcdb14e4da042f110c2c589f4050563807064",
+      "parse_error": null,
+      "parse_declarations": 252,
+      "skill_declarations": 252
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat",
+      "size_bytes": 56717,
+      "sha256": "13389d95df472112ae390a89ad8e35db2f1c6caba98d518595933930ffe5e92a",
+      "parse_error": null,
+      "parse_declarations": 235,
+      "skill_declarations": 235
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_31_32_ぢゆし～サムソン.dat",
+      "size_bytes": 32317,
+      "sha256": "1e5f74a97553388e6a105066cc1a7c666d9578e8a6cb0f75f0e9b390a98f6f36",
+      "parse_error": null,
+      "parse_declarations": 126,
+      "skill_declarations": 125
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+      "size_bytes": 276498,
+      "sha256": "958d80b9071063df3cfc81874e9ada5a5a576d9e62f1a6f9bd97e8d4fc20787f",
+      "parse_error": null,
+      "parse_declarations": 1146,
+      "skill_declarations": 1145
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+      "size_bytes": 82653,
+      "sha256": "0630568b86f9aed67a50bbb02055af45b379c43c1469bc8cfdab7c36614ac0c2",
+      "parse_error": null,
+      "parse_declarations": 309,
+      "skill_declarations": 300
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+      "size_bytes": 29148,
+      "sha256": "1dc762d8c9fe95c8a743e089622443610d69290e3dae56f86e7071c44e36ce66",
+      "parse_error": null,
+      "parse_declarations": 125,
+      "skill_declarations": 124
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_0_共用.dat",
+      "size_bytes": 42435,
+      "sha256": "24900bf1626fe2c5263b34f2439f512df0e23572657d95b01a6dd12aad966ee0",
+      "parse_error": null,
+      "parse_declarations": 151,
+      "skill_declarations": 151
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+      "size_bytes": 90408,
+      "sha256": "2b1b7751ed62bec5e0c2870830e2ab2e7646e3bc540968f33b7be2f90c3d33e8",
+      "parse_error": null,
+      "parse_declarations": 403,
+      "skill_declarations": 402
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_16_20_ALC一派～VVAN.dat",
+      "size_bytes": 55726,
+      "sha256": "65da6b633a23a7b57cd425a904af6880a92bb117b3b2bc5fdc2cb205dd698693",
+      "parse_error": null,
+      "parse_declarations": 206,
+      "skill_declarations": 206
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+      "size_bytes": 82105,
+      "sha256": "3947a5577a028a4e0a06300c5271660ca15a35d0f0cd0200ba08c5b51517d81b",
+      "parse_error": null,
+      "parse_declarations": 357,
+      "skill_declarations": 357
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+      "size_bytes": 69511,
+      "sha256": "9b75d1660fea0f2f9f48c12be76a8787c512ab499563821a42b8d6dcb4125db8",
+      "parse_error": null,
+      "parse_declarations": 246,
+      "skill_declarations": 245
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "size_bytes": 45554,
+      "sha256": "f68ab1106a5e045bdb395803ca52b1b0e05799d3ae8998fa2f41a717eb85f4f2",
+      "parse_error": null,
+      "parse_declarations": 196,
+      "skill_declarations": 196
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_31_32_ぢゆし～サムソン.dat",
+      "size_bytes": 33121,
+      "sha256": "b5d404849154d4e2d4aa70b7a19023a117a8e000a80926c2f4ef733ef3a760d2",
+      "parse_error": null,
+      "parse_declarations": 146,
+      "skill_declarations": 146
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_6_10_ヒゲクマ～スカーレット.dat",
+      "size_bytes": 37498,
+      "sha256": "275ed9de442b4348a1692f0776a79819fe67a2ffd465393b6c234d2818ab02fc",
+      "parse_error": null,
+      "parse_declarations": 127,
+      "skill_declarations": 127
+    },
+    {
+      "file": "a_default/script/32_ボススキル/B_14_ヌエバ・デスパセーニャ.dat",
+      "size_bytes": 29265,
+      "sha256": "4c2010a9d99bb1454905ebc0fd9fad6ded7e2151f001821e3a85fc4164172bca",
+      "parse_error": null,
+      "parse_declarations": 105,
+      "skill_declarations": 105
+    },
+    {
+      "file": "a_default/script/32_ボススキル/B_14_黒KNN.dat",
+      "size_bytes": 549,
+      "sha256": "33d159fee6de7d4167fcd03fc8beda765b67bcb7003dbe4c3a223bd8b836eb40",
+      "parse_error": null,
+      "parse_declarations": 2,
+      "skill_declarations": 2
+    },
+    {
+      "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+      "size_bytes": 35727,
+      "sha256": "1c045a84add57e07fc3c9ebbd6c4683c9f85d1b16389c6bd69c70ecc4e484c27",
+      "parse_error": null,
+      "parse_declarations": 126,
+      "skill_declarations": 125
+    },
+    {
+      "file": "a_default/script/32_ボススキル/B_2222_レイノアレフ.dat",
+      "size_bytes": 29636,
+      "sha256": "035c21d9e85db1dda270919130fabba3df92d7bc904d863a3351b10834f647ee",
+      "parse_error": null,
+      "parse_declarations": 129,
+      "skill_declarations": 128
+    },
+    {
+      "file": "a_default/script/32_ボススキル/B_2323_リュージ騎士団.dat",
+      "size_bytes": 30788,
+      "sha256": "743c5d5ce6266bd2714a608666b4d354788119248412d1dc3a858b06a5809cde",
+      "parse_error": null,
+      "parse_declarations": 95,
+      "skill_declarations": 92
+    },
+    {
+      "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "size_bytes": 371447,
+      "sha256": "6a1a3b28ddb2730008f7e3d0e0b2fa57951eae2744602978edf27d33f22f4afd",
+      "parse_error": null,
+      "parse_declarations": 1439,
+      "skill_declarations": 1436
+    },
+    {
+      "file": "a_default/script/32_ボススキル/B_2525_町の小さなパン屋さんと化した二軍.dat",
+      "size_bytes": 3254,
+      "sha256": "eef1fc71736a881b72314b3952c1964d12bb69413fc75e1ddb3394163346526c",
+      "parse_error": null,
+      "parse_declarations": 9,
+      "skill_declarations": 9
+    },
+    {
+      "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+      "size_bytes": 64928,
+      "sha256": "b641b3fbac4d977a5172dc48bd9462e4bae9331ca97372b8aaa2dd31385aee34",
+      "parse_error": null,
+      "parse_declarations": 308,
+      "skill_declarations": 308
+    },
+    {
+      "file": "a_default/script/32_ボススキル/B_26old_第二革命企画.dat",
+      "size_bytes": 15725,
+      "sha256": "5aecc209c214cf5f1b47c745b28c3076fc1a2556df00f68fd979ed136c7df967",
+      "parse_error": null,
+      "parse_declarations": 50,
+      "skill_declarations": 35
+    },
+    {
+      "file": "a_default/script/32_ボススキル/B_2_クレイジーサイコホモ.dat",
+      "size_bytes": 23585,
+      "sha256": "8cbe0bcb422ab771dd8b44ff6158d73d5a96f5d77d0d200f367ecd1fb390fd6a",
+      "parse_error": null,
+      "parse_declarations": 97,
+      "skill_declarations": 97
+    },
+    {
+      "file": "a_default/script/32_ボススキル/B_505_閉店の日.dat",
+      "size_bytes": 18196,
+      "sha256": "02bb4ecddf186a880dd53cbac5d5e9408442c9fe0b167324d0c9f6bfa947e3ac",
+      "parse_error": null,
+      "parse_declarations": 73,
+      "skill_declarations": 73
+    },
+    {
+      "file": "a_default/script/32_ボススキル/B_50_GO.dat",
+      "size_bytes": 5380,
+      "sha256": "203e4e22f88e21eddc6a1c491ac0ffb8ba07e326b36bf692755f7d4ab1b426d7",
+      "parse_error": null,
+      "parse_declarations": 24,
+      "skill_declarations": 24
+    },
+    {
+      "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+      "size_bytes": 65267,
+      "sha256": "ec82426976b31f220b9d791e9404e2de63cfaa6d0f45671841ef80533718d36a",
+      "parse_error": null,
+      "parse_declarations": 328,
+      "skill_declarations": 328
+    },
+    {
+      "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+      "size_bytes": 129569,
+      "sha256": "e893c6adb32656786d37f4758c7011fe94c4c4bed1866036bc10129cc4ac4f8a",
+      "parse_error": null,
+      "parse_declarations": 438,
+      "skill_declarations": 438
+    },
+    {
+      "file": "a_default/script/32_ボススキル/B_5_伏見稲荷大社.dat",
+      "size_bytes": 33261,
+      "sha256": "d3eacda5fb9535f50ea62b6544fd8129e0cb818a41fb604d0a7c082966d6432c",
+      "parse_error": null,
+      "parse_declarations": 129,
+      "skill_declarations": 129
+    },
+    {
+      "file": "a_default/script/32_ボススキル/B_63_HZN.dat",
+      "size_bytes": 4055,
+      "sha256": "d96ee0c593e5b20e18dbfd963819f34d3160dec7ecbc5d9f1c5f136fab55b0dc",
+      "parse_error": null,
+      "parse_declarations": 18,
+      "skill_declarations": 16
+    },
+    {
+      "file": "a_default/script/33_仮設アサシン/skill_asasin_00.dat",
+      "size_bytes": 6774,
+      "sha256": "e79e60aebf9773924e8574952516357dd06a506b7c623e40996c9bf82e86490a",
+      "parse_error": null,
+      "parse_declarations": 21,
+      "skill_declarations": 21
+    },
+    {
+      "file": "a_default/script/33_仮設アサシン/skill_asasin_cream_protect.dat",
+      "size_bytes": 2584,
+      "sha256": "395d367e36efd684db71bb9044e8720a0e7efd6116cdc633c331cb5da5ec13d9",
+      "parse_error": null,
+      "parse_declarations": 10,
+      "skill_declarations": 10
+    },
+    {
+      "file": "a_default/script/33_仮設アサシン/skill_asasin_cream_weapon.dat",
+      "size_bytes": 7981,
+      "sha256": "70971d357142211220f05a0fa6ec07030928cccb69b7302739964e9ef3678db8",
+      "parse_error": null,
+      "parse_declarations": 34,
+      "skill_declarations": 34
+    },
+    {
+      "file": "a_default/script/33_仮設アサシン/skill_asasin_cream_weapon_glove.dat",
+      "size_bytes": 3325,
+      "sha256": "4350f7264da91d86da65126a720b0dabb5ab80deeb4b918e15c83bbb3651dbe7",
+      "parse_error": null,
+      "parse_declarations": 11,
+      "skill_declarations": 11
+    },
+    {
+      "file": "a_default/script/33_仮設アサシン/skill_asasin_glove_00.dat",
+      "size_bytes": 8954,
+      "sha256": "71ef0ab90545377960e21f782bbc2f25da2b570e1eae8209a04666c717e7784b",
+      "parse_error": null,
+      "parse_declarations": 26,
+      "skill_declarations": 26
+    },
+    {
+      "file": "a_default/script/33_仮設アサシン/skill_asasin_glove_01.dat",
+      "size_bytes": 3789,
+      "sha256": "96e448a4a858922dd6dc03686a3b899983e226e11f47cfe35837ce4c7733220c",
+      "parse_error": null,
+      "parse_declarations": 14,
+      "skill_declarations": 14
+    },
+    {
+      "file": "a_default/script/33_仮設アサシン/skill_asasin_glove_02.dat",
+      "size_bytes": 3359,
+      "sha256": "0d1187b36df2660de46cd92f2d889c77f3e60e54a246aff1e3b2311e8a541dbb",
+      "parse_error": null,
+      "parse_declarations": 15,
+      "skill_declarations": 15
+    },
+    {
+      "file": "a_default/script/33_仮設アサシン/skill_asasin_glove_03.dat",
+      "size_bytes": 6633,
+      "sha256": "b4172ee6b0ec3a44b5b1bd56bae818d1d6ecd9d3c6d08d4d82ecf6c83696f8f9",
+      "parse_error": null,
+      "parse_declarations": 37,
+      "skill_declarations": 37
+    },
+    {
+      "file": "a_default/script/33_仮設アサシン/skill_asasin_glove_04.dat",
+      "size_bytes": 6259,
+      "sha256": "2e66deefdbc6531a3dd2d395e05a5d7c6aed89f6def5da0b2860b905047f50cc",
+      "parse_error": null,
+      "parse_declarations": 33,
+      "skill_declarations": 33
+    },
+    {
+      "file": "a_default/script/33_仮設アサシン/skill_asasin_glove_05.dat",
+      "size_bytes": 2098,
+      "sha256": "002f4c011d6fe39da85c6374cdc88bff1cd6c14cb3aaedd7c62eb243782642f8",
+      "parse_error": null,
+      "parse_declarations": 10,
+      "skill_declarations": 10
+    },
+    {
+      "file": "a_default/script/35_仮設半造/skill_hanzo_cream_weapon.dat",
+      "size_bytes": 8433,
+      "sha256": "d06b893467ed6e6549ce8679af6a2634e6f0913343e5f05f1579809d67f4b488",
+      "parse_error": null,
+      "parse_declarations": 34,
+      "skill_declarations": 34
+    },
+    {
+      "file": "a_default/script/35_仮設半造/skill_hanzo_cream_weapon_glove.dat",
+      "size_bytes": 3503,
+      "sha256": "0ffd8530583341e17e0766318c09b03dfe80968fb0434908d573f77b74515ac9",
+      "parse_error": null,
+      "parse_declarations": 11,
+      "skill_declarations": 11
+    },
+    {
+      "file": "a_default/script/35_仮設半造/skill_hanzo_hell.dat",
+      "size_bytes": 6720,
+      "sha256": "26c4d4ca345dba4cb265c3ac394db8308fe84f18fde9af6a4be7f846b06be414",
+      "parse_error": null,
+      "parse_declarations": 24,
+      "skill_declarations": 24
+    },
+    {
+      "file": "a_default/script/35_仮設半造/skill_hanzo_impact.dat",
+      "size_bytes": 6898,
+      "sha256": "d1a00203a9a5f3b227489a532d9da393592f0de7d0fd0eb5fd502b84d1dcc13f",
+      "parse_error": null,
+      "parse_declarations": 27,
+      "skill_declarations": 27
+    },
+    {
+      "file": "a_default/script/35_仮設半造/skill_hanzo_kama_sibari.dat",
+      "size_bytes": 6582,
+      "sha256": "71d6f0f67a848585814c22042f7b49838e687e78f06bd7107fc97d0023b75275",
+      "parse_error": null,
+      "parse_declarations": 18,
+      "skill_declarations": 18
+    },
+    {
+      "file": "a_default/script/35_仮設半造/skill_hanzo_kunai.dat",
+      "size_bytes": 2073,
+      "sha256": "b983f775cea1d088ed032b12f102205b1619978a52bff4118c9dda8fcb24f082",
+      "parse_error": null,
+      "parse_declarations": 8,
+      "skill_declarations": 8
+    },
+    {
+      "file": "a_default/script/35_仮設半造/skill_hanzo_orochi.dat",
+      "size_bytes": 10148,
+      "sha256": "0f53578e2183db34936bff09afa8f302340b8fb41e8736a926305254a723a4b7",
+      "parse_error": null,
+      "parse_declarations": 39,
+      "skill_declarations": 39
+    },
+    {
+      "file": "a_default/script/35_仮設半造/skill_hanzo_reppu_kyaku.dat",
+      "size_bytes": 4248,
+      "sha256": "a6d78d1c8002666a07cf68677500f80804aba8d7a47259dc0578a3207b1938a0",
+      "parse_error": null,
+      "parse_declarations": 16,
+      "skill_declarations": 16
+    },
+    {
+      "file": "a_default/script/35_仮設半造/skill_hanzo_spin.dat",
+      "size_bytes": 3011,
+      "sha256": "51a477275b6ccb9be888b48d162609036609cf7954eb6ae0f55bc8d7ad1d1abe",
+      "parse_error": null,
+      "parse_declarations": 9,
+      "skill_declarations": 9
+    },
+    {
+      "file": "a_default/script/35_仮設半造/unit_class_hanzo.dat",
+      "size_bytes": 2256,
+      "sha256": "4c30fb1603d7d8aee72d2e8714681d798ace44700ca93f17a730f395a3bcc9fc",
+      "parse_error": null,
+      "parse_declarations": 0,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/36_仮設新勢力/skill_Balrog_Bloody.dat",
+      "size_bytes": 3721,
+      "sha256": "90f6dc2d6d06d1c1ea7bb8aecec289fcf67529802387bcfb969bd7bf425c1e11",
+      "parse_error": null,
+      "parse_declarations": 18,
+      "skill_declarations": 18
+    },
+    {
+      "file": "a_default/script/36_仮設新勢力/skill_Balrog_Crystal.dat",
+      "size_bytes": 4598,
+      "sha256": "8235077930c903854c85ef2db1953bd149552bee60db649c1f5e48c31bf457b2",
+      "parse_error": null,
+      "parse_declarations": 19,
+      "skill_declarations": 19
+    },
+    {
+      "file": "a_default/script/36_仮設新勢力/skill_Balrog_Flying_Barcelona.dat",
+      "size_bytes": 6019,
+      "sha256": "1a99df3f2b0096ed459f78dd10906fbf64465b530e1080304331da868c73f2cb",
+      "parse_error": null,
+      "parse_declarations": 25,
+      "skill_declarations": 25
+    },
+    {
+      "file": "a_default/script/36_仮設新勢力/skill_Balrog_hit.dat",
+      "size_bytes": 2154,
+      "sha256": "32ce3d62592419e95d24d98d8899a5a28bb14385098a119e9262618d6905cad8",
+      "parse_error": null,
+      "parse_declarations": 11,
+      "skill_declarations": 11
+    },
+    {
+      "file": "a_default/script/36_仮設新勢力/skill_Balrog_hit_B.dat",
+      "size_bytes": 2091,
+      "sha256": "431ae28e09c73c3b9b2a62574b5537500b39fe907e3a6f8381a85d30b7881caa",
+      "parse_error": null,
+      "parse_declarations": 10,
+      "skill_declarations": 10
+    },
+    {
+      "file": "a_default/script/36_仮設新勢力/skill_Balrog_Sky.dat",
+      "size_bytes": 4387,
+      "sha256": "4d949c61f411e59cd61742f5d884e0429c18d6e51168ccd38edacc44804ebc6a",
+      "parse_error": null,
+      "parse_declarations": 20,
+      "skill_declarations": 20
+    },
+    {
+      "file": "a_default/script/36_仮設新勢力/skill_CHUN_LI_hyakuretu.dat",
+      "size_bytes": 3665,
+      "sha256": "2b589bf2dfb2a8a98127e67a8a55c72788de0cc1a5d7a7c6454c6b9440646f01",
+      "parse_error": null,
+      "parse_declarations": 14,
+      "skill_declarations": 14
+    },
+    {
+      "file": "a_default/script/36_仮設新勢力/skill_CHUN_LI_kikou.dat",
+      "size_bytes": 3389,
+      "sha256": "4f966667c33a9be67282cf1b9b67acf0446926e61e937bb21e9cae4804df208d",
+      "parse_error": null,
+      "parse_declarations": 13,
+      "skill_declarations": 13
+    },
+    {
+      "file": "a_default/script/36_仮設新勢力/skill_CHUN_LI_supining.dat",
+      "size_bytes": 3263,
+      "sha256": "bbe093cc14e43042c672e15a03a7b88c909776ae62c1603aad25e81a87e02140",
+      "parse_error": null,
+      "parse_declarations": 12,
+      "skill_declarations": 12
+    },
+    {
+      "file": "a_default/script/36_仮設新勢力/unit_class_in_balrog.dat",
+      "size_bytes": 2576,
+      "sha256": "59ca2a906ec33a0a726a1df6a66eafde21dc6251cbc5c3fd49619bb9d2dc5375",
+      "parse_error": null,
+      "parse_declarations": 7,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/36_仮設新勢力/unit_class_in_CHUN_LI.dat",
+      "size_bytes": 1356,
+      "sha256": "8a6d4bbd93d047458c6d2a716bb8cbec6e7ca244181f028f79bf63c2d1a0ba61",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/4000_AoW/class_aow.dat",
+      "size_bytes": 2077,
+      "sha256": "34f65e66eeab50fce33a4b4852a6641c89aa7107af9abf26b238ab2e6de66f8b",
+      "parse_error": null,
+      "parse_declarations": 18,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/4000_AoW/event_aow_100.dat",
+      "size_bytes": 13015,
+      "sha256": "c5a9799bb57cc4c2fe2d3829a63891a64598384ee3ac6ab971cd86e320701bf6",
+      "parse_error": null,
+      "parse_declarations": 7,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/4000_AoW/event_aow_264.dat",
+      "size_bytes": 44605,
+      "sha256": "7c9343352b2c05cdb44f69252d0a462ef3f17ecf7b2fc01edddcddc69634cd0e",
+      "parse_error": null,
+      "parse_declarations": 9,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/4000_AoW/scenario_aow.dat",
+      "size_bytes": 719,
+      "sha256": "e2ce111aaa55add2b08577c7481464ce4f966c391d23dead9bd7c17080cd3c10",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/4000_AoW/unit_aow_100.dat",
+      "size_bytes": 4007,
+      "sha256": "b2a0d7c48b6083dde8b66a40ec537329618a8c796f4e4578e434c171ee44bd35",
+      "parse_error": null,
+      "parse_declarations": 23,
+      "skill_declarations": 1
+    },
+    {
+      "file": "a_default/script/4000_AoW/unit_aow_264.dat",
+      "size_bytes": 13271,
+      "sha256": "cb7de01c1753efd819cbe852da5e259fc17bd359dc159fda280f9665b264942e",
+      "parse_error": null,
+      "parse_declarations": 74,
+      "skill_declarations": 21
+    },
+    {
+      "file": "a_default/script/40_内政/CC_bidai_and_sake_robo.dat",
+      "size_bytes": 13445,
+      "sha256": "3ffaaa1bb510271c0e6c5e58fc5fadd5282426032d0d2a9f8ed54197cb8d4b59",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/40_内政/CC_chara_create.dat",
+      "size_bytes": 12481,
+      "sha256": "d4c5af0fb941c9804b5613080e371007c5247051732dd20e38a308a18d0573d0",
+      "parse_error": null,
+      "parse_declarations": 28,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/40_内政/CC_genri.dat",
+      "size_bytes": 7353,
+      "sha256": "1f1dddfbbc01ad9eeaa128252222e072e8538d1f86e67b5e6f54266ceeb6d156",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/40_内政/CC_heiki.dat",
+      "size_bytes": 8254,
+      "sha256": "7ba4453453066ad2a679b6b78ddb4d1e79407446202648746d36e792922a8220",
+      "parse_error": null,
+      "parse_declarations": 8,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/40_内政/CC_inu_hakuro.dat",
+      "size_bytes": 3549,
+      "sha256": "89d8f9523b490854c048ab974895d184dc1c3b16215bf45a03554cea386d2cf9",
+      "parse_error": null,
+      "parse_declarations": 5,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/40_内政/CC_poke.dat",
+      "size_bytes": 5613,
+      "sha256": "5d687c4cd0ed89f6a252c87e5bd0ab01ca91d981ed99e5a3093575084bb0b3db",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/40_内政/CC_sichosha.dat",
+      "size_bytes": 1418,
+      "sha256": "7480659d6c295fffae1bcce0b2ceb94b2f59b86668d629f3a3ca970780c42bb0",
+      "parse_error": null,
+      "parse_declarations": 5,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/40_内政/CC_skill.dat",
+      "size_bytes": 14611,
+      "sha256": "0d784055868b590436a8307aba5b9128e45d9b318f74150d853bffd621b74209",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/40_内政/CC_takuya.dat",
+      "size_bytes": 4294,
+      "sha256": "24a369bcbe523f4d3f5fa09ea57d59281804612bc6deebb31a41e585ad53f410",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/40_内政/CC_unit_change.dat",
+      "size_bytes": 11214,
+      "sha256": "84e2dff51719d38556ab6f6bfb3319b4f21eb3c8da4ed6b1fb2e8db07e362608",
+      "parse_error": null,
+      "parse_declarations": 19,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/40_内政/CC_youhei_samson.dat",
+      "size_bytes": 3831,
+      "sha256": "8fbe9e9a5a45473ea8b3e6f98eda7d328d2e860ee47a13bfaeb459bdc1f2fff3",
+      "parse_error": null,
+      "parse_declarations": 7,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/40_内政/ev_debug.dat",
+      "size_bytes": 484,
+      "sha256": "d4f6a7f50511be103d9bd2d5de72944c60e5906c1803d62c8587b86a2df7e7b9",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/40_内政/ev_matsuei.dat",
+      "size_bytes": 604,
+      "sha256": "6e0c186a58c0f4fbb25fbe8636a293c3ad7807eb341f7cf0b28a7a15e025c18a",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/40_内政/ev_worldwar.dat",
+      "size_bytes": 1807,
+      "sha256": "94d88ae54cd4b33a0be19d8ebc1625e0ae436d47c0d4a91ba7c910cdd00949f1",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/40_内政/graphic_change.dat",
+      "size_bytes": 18168,
+      "sha256": "c349750d65201a3386776c7afce65cd16ff46c6e3687a2d54b91d75b01786b2c",
+      "parse_error": null,
+      "parse_declarations": 4,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/40_内政/graphic_change_unit_class.dat",
+      "size_bytes": 13390,
+      "sha256": "762d687ccbeb8bafcd722b57c142740dd00d419ab5bbcea856912257694e4a35",
+      "parse_error": null,
+      "parse_declarations": 178,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/40_内政/politic_ev_spot.dat",
+      "size_bytes": 25017,
+      "sha256": "009e1547e4518194dbb5fcb108bdc81671d2071da33a045f081ddb5eb48b52fa",
+      "parse_error": null,
+      "parse_declarations": 31,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/40_内政/politic_sakenomi.dat",
+      "size_bytes": 10447,
+      "sha256": "5470114dbeadb0f6fd26308fef790df62fd47a01127f987a94d76efc5440ab82",
+      "parse_error": null,
+      "parse_declarations": 5,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/40_内政/politic_youhei_inmu.dat",
+      "size_bytes": 31621,
+      "sha256": "59891b45d8d57ce20ea59a0e3aa5b03e4a9f232b313de593c38c0b547eda5db0",
+      "parse_error": null,
+      "parse_declarations": 21,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/40_内政/politic_youhei_named.dat",
+      "size_bytes": 20167,
+      "sha256": "50945beffaebe723a9be62fe9f1e808c9e9172e15e4f62ae70111fb6dc629e05",
+      "parse_error": null,
+      "parse_declarations": 13,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/40_内政/politic_youhei_old.dat",
+      "size_bytes": 6064,
+      "sha256": "6619803f3f64678c863da332abeab1d70ed43cb506b44a0656cfcc8e3e2b64d2",
+      "parse_error": null,
+      "parse_declarations": 9,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/40_内政/politic_youhei_unique.dat",
+      "size_bytes": 7398,
+      "sha256": "ecbdbe738b2957d359428c9c40248282ad3e86ffa3710fabe4ce8d4b98fc2430",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/40_内政/unit_sakegyaku.dat",
+      "size_bytes": 6416,
+      "sha256": "bb12e07cfba113208df5cf91e41080cc231d3373802b936d09d0667f5bd7aeff",
+      "parse_error": null,
+      "parse_declarations": 66,
+      "skill_declarations": 10
+    },
+    {
+      "file": "a_default/script/41_内政_アイテム/ev_chara_choice.dat",
+      "size_bytes": 15484,
+      "sha256": "9421868b8b44facf7b9a0650ec2e5a75a5f99ed3f1fa332a4c510fbc4e36aaef",
+      "parse_error": null,
+      "parse_declarations": 7,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/41_内政_アイテム/ev_item_use_000_status1.dat",
+      "size_bytes": 18064,
+      "sha256": "23172bde06b4d3ee321db3c93ffb4c8f46d5e3dd43660746ee578b819745e201",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/41_内政_アイテム/ev_item_use_000_status2.dat",
+      "size_bytes": 4097,
+      "sha256": "54e774dd73ca25147455029f0aefc4e02cf973eb915cea02ebe8a5751a701354",
+      "parse_error": null,
+      "parse_declarations": 2,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/41_内政_アイテム/ev_item_use_001_resilience1.dat",
+      "size_bytes": 13744,
+      "sha256": "28692dbe18b416846c44033d9be396d56971b127d18221be32331c68cfba0b9e",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/41_内政_アイテム/ev_item_use_001_resilience2.dat",
+      "size_bytes": 815,
+      "sha256": "44d8852448ecd466b61f6d06c827fa14b672d643ff90f5500a9f111843b33a77",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/41_内政_アイテム/ev_item_use_002_skill1.dat",
+      "size_bytes": 5500,
+      "sha256": "34b3f2a987137a2e97a433202e6c765eb014920beea5b7362c316bb3d7e6463b",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/41_内政_アイテム/ev_item_use_002_skill2.dat",
+      "size_bytes": 10429,
+      "sha256": "2309c5465282dab1676faab85d883d0494be8ed68500e68bb72bf25abf836269",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/41_内政_アイテム/ev_item_use_003_sonota.dat",
+      "size_bytes": 5855,
+      "sha256": "705df1498b378af9aeaaeb4b0501ceb678a86c3d59a5c9d72838975b989cc485",
+      "parse_error": null,
+      "parse_declarations": 2,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/41_内政_アイテム/I23_yunomi_and_pot.dat",
+      "size_bytes": 12881,
+      "sha256": "8bd7662e03fd6d89248743096f4a783eaa83e00465ce0da5affe11be44351c90",
+      "parse_error": null,
+      "parse_declarations": 6,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/41_内政_アイテム/item.dat",
+      "size_bytes": 10072,
+      "sha256": "97a0332e11b057f71817d816b3e56e0eea581256bc8e04bd2a58f9302e2c0f81",
+      "parse_error": null,
+      "parse_declarations": 4,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/41_内政_アイテム/item_000_status1.dat",
+      "size_bytes": 3847,
+      "sha256": "a68ee986c37f25793ce959720f98082b86ed0a66e5376d164a4f29ff6ac2abfe",
+      "parse_error": null,
+      "parse_declarations": 23,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/41_内政_アイテム/item_000_status2.dat",
+      "size_bytes": 885,
+      "sha256": "15e52782dca123b8d2cffeb1df8feead1e793fdedfd2b3233a35b065cb4c2c79",
+      "parse_error": null,
+      "parse_declarations": 7,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/41_内政_アイテム/item_001_resilience1.dat",
+      "size_bytes": 4108,
+      "sha256": "486bf694176261bff62ca2bb17ab4dc74cbfcf536ddb5d5d3f3741aca9b8c4dd",
+      "parse_error": null,
+      "parse_declarations": 22,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/41_内政_アイテム/item_001_resilience2.dat",
+      "size_bytes": 482,
+      "sha256": "8398da50ce473ed8db445f83262309b7dcf1257a043b5c6543cad8ec1f6fb9b1",
+      "parse_error": null,
+      "parse_declarations": 4,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/41_内政_アイテム/item_002_skill1.dat",
+      "size_bytes": 1785,
+      "sha256": "867890537095b7e1680b85772aec215d8aa9dae491f7d48f8fda902b2ebb3897",
+      "parse_error": null,
+      "parse_declarations": 11,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/41_内政_アイテム/item_002_skill2.dat",
+      "size_bytes": 2702,
+      "sha256": "6f49a9c579404e07e46b2ebcd18193eb03f19e8ce545ed642f388f92b1f1b10d",
+      "parse_error": null,
+      "parse_declarations": 16,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/41_内政_アイテム/item_003_sonota.dat",
+      "size_bytes": 875,
+      "sha256": "17b76160c412f436e7af07af50d2f0b7734b28d4ff45e78e5acbe17fc9c334da",
+      "parse_error": null,
+      "parse_declarations": 6,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/41_内政_アイテム/merchant.dat",
+      "size_bytes": 1620,
+      "sha256": "56aed1783afa398a116a8ee62909a1c14cf8b7ff8c3d2944704e7d1eb4ddc0e1",
+      "parse_error": null,
+      "parse_declarations": 0,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/41_内政_アイテム/rare_item_list.dat",
+      "size_bytes": 6972,
+      "sha256": "c145bfa9696eba610e16412aeaacb2910929f4505b464a7a875fd7b14c5ea7aa",
+      "parse_error": null,
+      "parse_declarations": 41,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/41_内政_アイテム/S_item_000_status1.dat",
+      "size_bytes": 1404,
+      "sha256": "86c735a4e2a6f581200bd47611701e1a0b1fb2381294265401749db7e3060403",
+      "parse_error": null,
+      "parse_declarations": 6,
+      "skill_declarations": 6
+    },
+    {
+      "file": "a_default/script/41_内政_アイテム/S_item_001_resilience1.dat",
+      "size_bytes": 9148,
+      "sha256": "d5902aba24bdec790f36627f0ed7ef10d655e64b567226b1f32cba2d01bd0989",
+      "parse_error": null,
+      "parse_declarations": 41,
+      "skill_declarations": 41
+    },
+    {
+      "file": "a_default/script/41_内政_アイテム/S_item_001_resilience2.dat",
+      "size_bytes": 270,
+      "sha256": "015ae9ad1accf3b8d3eae76327f4fb498940d589dc6013cfdf9120b4c699d34b",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 1
+    },
+    {
+      "file": "a_default/script/41_内政_アイテム/S_item_002_skill1.dat",
+      "size_bytes": 201,
+      "sha256": "2030e28e3900a19c31de20f0b2f10baed3cbc5e9a2aa2404a49d633f01421a4e",
+      "parse_error": null,
+      "parse_declarations": 2,
+      "skill_declarations": 2
+    },
+    {
+      "file": "a_default/script/41_内政_アイテム/S_item_002_skill2.dat",
+      "size_bytes": 5953,
+      "sha256": "8f3af43a38944ba5ebb9f22577096a97272bf7e40d3641ef33a587df8867965e",
+      "parse_error": null,
+      "parse_declarations": 24,
+      "skill_declarations": 24
+    },
+    {
+      "file": "a_default/script/41_内政_アイテム/S_item_skillset.dat",
+      "size_bytes": 1352,
+      "sha256": "686fdcc0a27eb6cc7fd13109c949fe2fb84e89d485913a8237bbf14d871b3673",
+      "parse_error": null,
+      "parse_declarations": 5,
+      "skill_declarations": 4
+    },
+    {
+      "file": "a_default/script/42_内政_行商人システム/ev_0_dialog.dat",
+      "size_bytes": 9897,
+      "sha256": "f5aa3a145ffe594831604013c3e6ab89220f1012e876ba982043bac9a4f73804",
+      "parse_error": null,
+      "parse_declarations": 2,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/42_内政_行商人システム/ev_M_db.dat",
+      "size_bytes": 10773,
+      "sha256": "137c590b587f4efcf51831954a48bbeffc2a56036ab6f59060961e8e4b6e19db",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/42_内政_行商人システム/ev_M_famima.dat",
+      "size_bytes": 18561,
+      "sha256": "ca9b123d0a6bb6a9cc656707757b5f9d6cd5d3fbf69199eb1e39564b8627396a",
+      "parse_error": null,
+      "parse_declarations": 4,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/42_内政_行商人システム/ev_M_mot_mimi.dat",
+      "size_bytes": 11115,
+      "sha256": "05b0e016e5a5b7ca0ada79275c895e828b0a25495c332b811379d2f78d53ce21",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/42_内政_行商人システム/ev_M_nakanokun.dat",
+      "size_bytes": 8788,
+      "sha256": "d44204448d152c872bc270bea8d8a536200cad7b7368fa7de647b86ca2efed0d",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/42_内政_行商人システム/ev_M_NKDKoback.dat",
+      "size_bytes": 12629,
+      "sha256": "af647b5691a12cdb9d09f119ee0dbc4b28431f5e2530bfafb9b1d72382fcf087",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/42_内政_行商人システム/ev_M_NYNmate.dat",
+      "size_bytes": 8807,
+      "sha256": "d1f88d29276bfc5692a0adb141322d7b369688949890b60146b070ef724caa9a",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/42_内政_行商人システム/ev_M_samson.dat",
+      "size_bytes": 8445,
+      "sha256": "0cb2e2b571af3db15ca88adb8515522e6e0a27cbba88863ae09da768a734eded",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/42_内政_行商人システム/ev_M_TSUYOSHI.dat",
+      "size_bytes": 13793,
+      "sha256": "6cb6c7840a9f5871cb30d02478e027570901b07ae203b19f0af6d4a96195af81",
+      "parse_error": null,
+      "parse_declarations": 5,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/42_内政_行商人システム/ev_M_znm1.dat",
+      "size_bytes": 9947,
+      "sha256": "3defcd25cc656c4c81598371027989ad1dcc7292ebd1e3033be606936b82830d",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/42_内政_行商人システム/ev_M_znm2.dat",
+      "size_bytes": 9585,
+      "sha256": "e3f56acaaba9259d4df26d1e96f1e2081cbfe1802c11020a208840f929c1b367",
+      "parse_error": null,
+      "parse_declarations": 2,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/42_内政_行商人システム/ev_M_znm_honnin.dat",
+      "size_bytes": 9231,
+      "sha256": "9d3d25fc7c419bdbdd2f914206b4a4e2d610df852dbc50b14772d12116856fcf",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/42_内政_行商人システム/M_db.dat",
+      "size_bytes": 2030,
+      "sha256": "72658fdcc51ab62e675872c61435c603454ebdcbddeef560873e7fd49fb3e0a6",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/42_内政_行商人システム/M_mot_mimi.dat",
+      "size_bytes": 2241,
+      "sha256": "ab0a80c5fd264fc7ffc6711eedaedd7d068bdd09f20d3af05c1c7680459c9ada",
+      "parse_error": null,
+      "parse_declarations": 5,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/42_内政_行商人システム/M_nakanokun.dat",
+      "size_bytes": 1658,
+      "sha256": "1310db8d9db8f0e2268ad0004a8cd2a2f05387a8b5ec524dad984b719a3f7906",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/42_内政_行商人システム/M_NKDKoback.dat",
+      "size_bytes": 2568,
+      "sha256": "dba643ff2de251f22ba6640aced0d0b7146eac17b29060f817c78524c726b1ab",
+      "parse_error": null,
+      "parse_declarations": 5,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/42_内政_行商人システム/M_NYNmate.dat",
+      "size_bytes": 4510,
+      "sha256": "e7db93f86d26ba00c8897c100ce254eb8693830470d238182046cb7cd7be9742",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/42_内政_行商人システム/M_samson.dat",
+      "size_bytes": 1777,
+      "sha256": "2dd50bfc042acde0e35eb531616c7c8cc08be604c61920be762b152a0b0655d6",
+      "parse_error": null,
+      "parse_declarations": 5,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/42_内政_行商人システム/M_TSUYOSHI.dat",
+      "size_bytes": 2834,
+      "sha256": "e6ebaacd1d57919a2945cc0e7197c58c37079c691dc5fa199ff8fda20ea99aff",
+      "parse_error": null,
+      "parse_declarations": 4,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/42_内政_行商人システム/M_znm.dat",
+      "size_bytes": 6457,
+      "sha256": "e51b4e88b32d2b23b524670448f9c0dc404b456577985aef91e375c7167165cf",
+      "parse_error": null,
+      "parse_declarations": 9,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/42_内政_行商人システム/M_znm_honnin.dat",
+      "size_bytes": 1603,
+      "sha256": "5ae827afd2ea52996b924b6e390766b7e84f44a40b59236d0610582ea3f06e68",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/43_内政_教育/ev01_swim.dat",
+      "size_bytes": 14191,
+      "sha256": "7b4c493d126a465fe6308b607228ebfb3f3d728f3c31e7a32544b73cb92e207f",
+      "parse_error": null,
+      "parse_declarations": 58,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/43_内政_教育/ev02_sing.dat",
+      "size_bytes": 18670,
+      "sha256": "cc6cccfbf9df88bf4a92403873a9e84e0823b88046e43f41a73ad0e5826aacc5",
+      "parse_error": null,
+      "parse_declarations": 73,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/43_内政_教育/ev03_karate.dat",
+      "size_bytes": 14602,
+      "sha256": "80132dc9fd64a9a3dcb74a3faa56fe029102e672d74658c91a7e0df885cc8fb9",
+      "parse_error": null,
+      "parse_declarations": 56,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/43_内政_教育/ev04_kuso.dat",
+      "size_bytes": 16567,
+      "sha256": "81bbfec9cd7fa3c0226ce1b7ad058b7154e58d008f68fed0e951fc96988c822e",
+      "parse_error": null,
+      "parse_declarations": 58,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/43_内政_教育/ev05_voicedrama.dat",
+      "size_bytes": 18560,
+      "sha256": "24331eae33a00adaac26fbb4a543111613f8d4c7c091731bd140061ea71fcbeb",
+      "parse_error": null,
+      "parse_declarations": 63,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/43_内政_教育/ev06_sadou.dat",
+      "size_bytes": 21340,
+      "sha256": "6c2c4d4e18d9ffc23723ab6bf4b09f9de0bf10f6e063c9df308d546a23863030",
+      "parse_error": null,
+      "parse_declarations": 83,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/43_内政_教育/ev07_tyokyotame.dat",
+      "size_bytes": 18770,
+      "sha256": "a9a222a6e11ece5f0a6a9884950469c2cc086e0b794dd34d51148d9545813651",
+      "parse_error": null,
+      "parse_declarations": 71,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/43_内政_教育/ev08_interview.dat",
+      "size_bytes": 17322,
+      "sha256": "6c616df975be54b000d978dc43664a66b7ef0b1be438010fda6228f677c58be1",
+      "parse_error": null,
+      "parse_declarations": 61,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/43_内政_教育/ev09_amefoot.dat",
+      "size_bytes": 14990,
+      "sha256": "a31abc2afaad05f017fd3a43beb784a99812200b4bc186192f0fe6fd103187b1",
+      "parse_error": null,
+      "parse_declarations": 64,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/43_内政_教育/ev10_baseball.dat",
+      "size_bytes": 26282,
+      "sha256": "9418b4c12f0f49eb69292483ec5aa4b2453c71db4b5ec5e55398a7e6b99f84fa",
+      "parse_error": null,
+      "parse_declarations": 96,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/43_内政_教育/ev11_onani.dat",
+      "size_bytes": 20811,
+      "sha256": "5aa24583b65f1ffc6b5f2a142c3c7361125c0ad6c26e9a1fa640ff51a42617ce",
+      "parse_error": null,
+      "parse_declarations": 103,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/43_内政_教育/ev12_kendou.dat",
+      "size_bytes": 21199,
+      "sha256": "97bfd6c7ea389fed734a5c1e184ec8daa481855d5e9f9ea08dd54460b8fadc02",
+      "parse_error": null,
+      "parse_declarations": 104,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/43_内政_教育/ev999_tyakai.dat",
+      "size_bytes": 37580,
+      "sha256": "3712667e62e2f56b8d713b9b768e3d49ab0867715ea958546fd4d2643df86bcb",
+      "parse_error": null,
+      "parse_declarations": 8,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/43_内政_教育/lecture.dat",
+      "size_bytes": 40544,
+      "sha256": "7f458e27871ba6608e38d433e22b624cf05014370b2a5fdcc1a15adcaa866e8f",
+      "parse_error": null,
+      "parse_declarations": 38,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/44_内政_迫真の世紀/kaiso_26_battle.dat",
+      "size_bytes": 17785,
+      "sha256": "2c36460b118c274885acfea5b6f32a15262eac0b7cabd8d5f7e2fd5e14e80774",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/44_内政_迫真の世紀/po10_kaiso.dat",
+      "size_bytes": 2894,
+      "sha256": "e86df94e7f0c42b2a34fddabdd1b4a265d9dc76877abd6895f92310a3b40664c",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/44_内政_迫真の世紀/po11_kaiso.dat",
+      "size_bytes": 17794,
+      "sha256": "cc931a5ac2e4cb64269065a857d95202b6e9d8d6f393ccaccd9bd6e7af984f7d",
+      "parse_error": null,
+      "parse_declarations": 12,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/44_内政_迫真の世紀/po13_kaiso.dat",
+      "size_bytes": 2162,
+      "sha256": "0f275a9a84ae8db7644f8dcf50900b11d151bd7ee77591969cd809b0acf17170",
+      "parse_error": null,
+      "parse_declarations": 4,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/44_内政_迫真の世紀/po14_kaiso.dat",
+      "size_bytes": 35927,
+      "sha256": "aaa7d452d3705778c468136304d13fdbb573fe384222e4bcc1cd1c123f6ee846",
+      "parse_error": null,
+      "parse_declarations": 26,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/44_内政_迫真の世紀/po16_kaiso.dat",
+      "size_bytes": 5774,
+      "sha256": "5917d411c30c97329c3e4dc825324730e99ee3065a57439783603c6d4427a228",
+      "parse_error": null,
+      "parse_declarations": 2,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/44_内政_迫真の世紀/po18_kaiso.dat",
+      "size_bytes": 3714,
+      "sha256": "12b984575f0a2a58f28d03280536d6c92dfae85dd69f799741a09c8e7fac0474",
+      "parse_error": null,
+      "parse_declarations": 4,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/44_内政_迫真の世紀/po1_kaiso.dat",
+      "size_bytes": 6869,
+      "sha256": "e9f13dc4506a30edd2005c435f12684e321e96c3599273f8a955890c987fdde4",
+      "parse_error": null,
+      "parse_declarations": 8,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/44_内政_迫真の世紀/po21_kaiso.dat",
+      "size_bytes": 441,
+      "sha256": "19c42c6008d736f1863e5694e37f9c4618cf128e03b1e9ac6c1f72e426550fc2",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/44_内政_迫真の世紀/po22_kaiso.dat",
+      "size_bytes": 147847,
+      "sha256": "d5a7c0d4c2406f08f9dac1b8b0c921d5eee18ac7a0a2825b8ccc392f3d78e59e",
+      "parse_error": null,
+      "parse_declarations": 80,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/44_内政_迫真の世紀/po23_chap1.dat",
+      "size_bytes": 14980,
+      "sha256": "51c55902034eef45b875492e0e7510968baa1111fd636f79376ef093d34a2faa",
+      "parse_error": null,
+      "parse_declarations": 10,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/44_内政_迫真の世紀/po23_chap2.dat",
+      "size_bytes": 8032,
+      "sha256": "367614d2bc25a3f1d70cc599a296c48818ad726e9e82b7ebf2a9f7522c279a01",
+      "parse_error": null,
+      "parse_declarations": 5,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/44_内政_迫真の世紀/po23_chap3_BNKRG.dat",
+      "size_bytes": 54360,
+      "sha256": "91aa7faf46a9c53724b99f2aeede7575a7b6d026abbcc3c701324c9a6f27d90a",
+      "parse_error": null,
+      "parse_declarations": 19,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/44_内政_迫真の世紀/po23_chap3_Normal.dat",
+      "size_bytes": 35119,
+      "sha256": "ed54ce579ffb164bb65706858dfbcb2d72177d52cf0f35e935f1bde15def3f7b",
+      "parse_error": null,
+      "parse_declarations": 18,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/44_内政_迫真の世紀/po23_chap3_SNNN.dat",
+      "size_bytes": 45088,
+      "sha256": "bdc9091d101635a093ce28b346091ec16dd142604526d8b82eefe034de9675f2",
+      "parse_error": null,
+      "parse_declarations": 18,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/44_内政_迫真の世紀/po23_chap3_True.dat",
+      "size_bytes": 13828,
+      "sha256": "2972679342a1ca9e0a50fb319ce74e9da20b55ad64f70b12e69364f8d698a4fb",
+      "parse_error": null,
+      "parse_declarations": 24,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/44_内政_迫真の世紀/po23_chap4.dat",
+      "size_bytes": 79082,
+      "sha256": "116da86812fc61cf7c5edcec35f0bab39a5be1d4e2095073ff2219b1658cf46b",
+      "parse_error": null,
+      "parse_declarations": 8,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/44_内政_迫真の世紀/po25_kaiso.dat",
+      "size_bytes": 431682,
+      "sha256": "3f75ec2bedf5e67746e8e27363f6d10c8c4cd3cc2d6d0c4d5e54f46fc83c218b",
+      "parse_error": null,
+      "parse_declarations": 116,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/44_内政_迫真の世紀/po26_kaiso.dat",
+      "size_bytes": 113264,
+      "sha256": "3f7555380036b890f8afe4d75994dd4962c6cd5e3dcfcd16defb66680354bbf0",
+      "parse_error": null,
+      "parse_declarations": 43,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/44_内政_迫真の世紀/po2_kaiso.dat",
+      "size_bytes": 7171,
+      "sha256": "320a68144c06ac613d9ef3800d7d2d3158431771870c59be985e7ad33903c0ed",
+      "parse_error": null,
+      "parse_declarations": 11,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/44_内政_迫真の世紀/po33_kaiso.dat",
+      "size_bytes": 17419,
+      "sha256": "b295b2bf4616868a513c01f5695f73915dabf678b05d0c3761fffd8afe579d1c",
+      "parse_error": null,
+      "parse_declarations": 10,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/44_内政_迫真の世紀/po3_kaiso.dat",
+      "size_bytes": 12719,
+      "sha256": "5824e867a92c7cf7e156a713e0b90b1ce43493439f58765afb211c8958e3fed1",
+      "parse_error": null,
+      "parse_declarations": 8,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/44_内政_迫真の世紀/po4_kaiso.dat",
+      "size_bytes": 3998,
+      "sha256": "351f716b74f7b6d77118debb3b8cb52d89f8d680e5aa683253d3111b47db53c2",
+      "parse_error": null,
+      "parse_declarations": 5,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/44_内政_迫真の世紀/po5_kaiso.dat",
+      "size_bytes": 7663,
+      "sha256": "578242e1a5ae44bac70481f053884bfee1d4da3098824aead06c7a39c12aa2bc",
+      "parse_error": null,
+      "parse_declarations": 13,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/44_内政_迫真の世紀/po7_kaiso.dat",
+      "size_bytes": 741,
+      "sha256": "80437d7ef6ecff7b2d230cd971340840f7b4e741319b5331eea1e17a8a7ef102",
+      "parse_error": null,
+      "parse_declarations": 2,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/44_内政_迫真の世紀/po8_kaiso.dat",
+      "size_bytes": 2248,
+      "sha256": "f50d12f80a623efc3f6b583a4aa3b3fb1873b82b5c72c618d8be0ab1f55a8d41",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/44_内政_迫真の世紀/po9_kaiso.dat",
+      "size_bytes": 1066,
+      "sha256": "91bde27858445e5bf98c200bf310b30c4f7ce9e2369c93db6fab563dcea2be85",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/44_内政_迫真の世紀/politic_kaiso.dat",
+      "size_bytes": 29318,
+      "sha256": "ab6233f4f4f5fa9410fcf3ff5fb078b5aade7a04f6ffb4bac240ae2c6b46fbec",
+      "parse_error": null,
+      "parse_declarations": 313,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/44_内政_迫真の世紀/politic_kaisotsuika.dat",
+      "size_bytes": 25456,
+      "sha256": "e6b9983ca3211c347396014887d4e43f5574027b04cc4fbc8ecd0a779594f910",
+      "parse_error": null,
+      "parse_declarations": 2,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/45_内政_防衛兵器/siege_class.dat",
+      "size_bytes": 19765,
+      "sha256": "6d9d01e43c1c94d16f88939bdb1b9c78ca5d9fafcaf5b979f5b8b22e8c17934b",
+      "parse_error": null,
+      "parse_declarations": 231,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/45_内政_防衛兵器/siege_class_SP63_鎌倉.dat",
+      "size_bytes": 5240,
+      "sha256": "c3a6716e591ad3b0159420877bb41e34fac1b79fdeb3b89b2ee4d37aac8ce3b7",
+      "parse_error": null,
+      "parse_declarations": 17,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/45_内政_防衛兵器/siege_politic.dat",
+      "size_bytes": 30390,
+      "sha256": "d4b5424927d302a3fba8e8bce84cc515283637c065e19f99a215b53bf985b007",
+      "parse_error": null,
+      "parse_declarations": 20,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/45_内政_防衛兵器/siege_skill.dat",
+      "size_bytes": 61797,
+      "sha256": "2e2ad38af972cac52715dd3498064066a99bce304b8f8f69e7e4f71c01c3a648",
+      "parse_error": null,
+      "parse_declarations": 661,
+      "skill_declarations": 661
+    },
+    {
+      "file": "a_default/script/45_内政_防衛兵器/siege_skill_SP63_鎌倉.dat",
+      "size_bytes": 5834,
+      "sha256": "e9b48bbe4ddeb24b01290f147ebcf9de70e8923369aa150690a47772d49d9e97",
+      "parse_error": null,
+      "parse_declarations": 25,
+      "skill_declarations": 25
+    },
+    {
+      "file": "a_default/script/45_内政_防衛兵器/siege_system.dat",
+      "size_bytes": 63191,
+      "sha256": "d5d46305fa2905b336ab454417d04e67d457c5eefe6f453ba28395548be805e5",
+      "parse_error": null,
+      "parse_declarations": 14,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/5000_ランダムシナリオ/ev_rnd.dat",
+      "size_bytes": 49555,
+      "sha256": "9baa36456ad1568743a0aed5d6c6cf43e9d0c0b38b579ddd1b07440e7727bfad",
+      "parse_error": null,
+      "parse_declarations": 4,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/5000_ランダムシナリオ/event_50_共通ボス_rsc.dat",
+      "size_bytes": 71434,
+      "sha256": "fb834aaf2cb0c9cd3881be3b92ac4b9bcdfaa1b7762ef21dfe65a22a20d0a681",
+      "parse_error": null,
+      "parse_declarations": 12,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/5000_ランダムシナリオ/pname_rnd.dat",
+      "size_bytes": 27307,
+      "sha256": "2557664877aa28647bda8d488c51ec2826a7369de0dbbbcc9511d7e69fe36c20",
+      "parse_error": null,
+      "parse_declarations": 5,
+      "skill_declarations": 1
+    },
+    {
+      "file": "a_default/script/5000_ランダムシナリオ/RB_ボスクラス.dat",
+      "size_bytes": 41026,
+      "sha256": "b29a7c11acb9f3d906da735748fa73769923ff683160cffe9dade792021f00d0",
+      "parse_error": null,
+      "parse_declarations": 241,
+      "skill_declarations": 116
+    },
+    {
+      "file": "a_default/script/5000_ランダムシナリオ/RB_ボススキル.dat",
+      "size_bytes": 21529,
+      "sha256": "35ed35a4e9a43363a373d6640cf934d20189770f668493549a5bbccf146371e2",
+      "parse_error": null,
+      "parse_declarations": 80,
+      "skill_declarations": 80
+    },
+    {
+      "file": "a_default/script/5000_ランダムシナリオ/RB_ボス人材.dat",
+      "size_bytes": 30671,
+      "sha256": "62f628827e80ca0a36f4477517331764feb905c67d8320bbc89327ad032940c2",
+      "parse_error": null,
+      "parse_declarations": 58,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/5000_ランダムシナリオ/sc_rnd.dat",
+      "size_bytes": 8980,
+      "sha256": "14153eb6bc27b967e3fe4b2307bce66a2c1bb7a885a4d91110837d82bb8fbfa4",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/5000_ランダムシナリオ/sc_rnd_sm.dat",
+      "size_bytes": 9025,
+      "sha256": "cc48711b04aea2df034672e1358e666136b68fa564bbffe07575c36cf52df8ad",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/5000_ランダムシナリオ/sc_rnd_sys.dat",
+      "size_bytes": 47492,
+      "sha256": "21b0450b0a71424e496c6c23781f87846774b0ff48c751faf67b00e7b667e8c7",
+      "parse_error": null,
+      "parse_declarations": 111,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/5000_ランダムシナリオ/sc_rnd_unit.dat",
+      "size_bytes": 4362,
+      "sha256": "75e83e178a0495cfc1d56e97efde22dc3710d79fafa173902acdb451e34abf13",
+      "parse_error": null,
+      "parse_declarations": 4,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/5000_ランダムシナリオ/spot_rnd.dat",
+      "size_bytes": 2408,
+      "sha256": "ecfc7a29c64566eaa51e5348a0b9fd7bf56da8fdeed063d5dcd73322ead805ff",
+      "parse_error": null,
+      "parse_declarations": 6,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/50_その他新システム/CC_material.dat",
+      "size_bytes": 1399,
+      "sha256": "3e1ca75fdc0eec3ee09863abd6f56e2fe473592a97c22a6ca9101010fe58880d",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/50_その他新システム/ev_zairyoya.dat",
+      "size_bytes": 1482,
+      "sha256": "16fd3d04bcf36e5e4c202f84b3a9d8ff2ad279e2ba97dbdf3ca2f7fb062fbcdc",
+      "parse_error": null,
+      "parse_declarations": 2,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/50_その他新システム/face_change.dat",
+      "size_bytes": 8638,
+      "sha256": "05e0a481ff050adc4d5ce23ff6b0ad345279131426d3c64de90db404474d747c",
+      "parse_error": null,
+      "parse_declarations": 5,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/50_その他新システム/headquarters - skill.dat",
+      "size_bytes": 6706,
+      "sha256": "817241be96c2215476fc26f5168186552893680d4001d9d4e1457019d7b27013",
+      "parse_error": null,
+      "parse_declarations": 54,
+      "skill_declarations": 36
+    },
+    {
+      "file": "a_default/script/50_その他新システム/headquarters.dat",
+      "size_bytes": 6764,
+      "sha256": "23afb73d49cd3a8be70c04f40b806c7792b392b078235d08731ccd5724a1a074",
+      "parse_error": null,
+      "parse_declarations": 29,
+      "skill_declarations": 20
+    },
+    {
+      "file": "a_default/script/50_その他新システム/kaigun.dat",
+      "size_bytes": 41639,
+      "sha256": "89232bf41545e5cedb29be83a941257aef66615c4fc2750f20c4467df3856aa4",
+      "parse_error": null,
+      "parse_declarations": 2,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/50_その他新システム/q__a.dat",
+      "size_bytes": 4184,
+      "sha256": "d87dde8172d80d51280c1f70e5e9994f5d08ff9ee658844b1b0b20428b66391e",
+      "parse_error": null,
+      "parse_declarations": 23,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/50_その他新システム/qa_001.dat",
+      "size_bytes": 15152,
+      "sha256": "7b42a76ad9fedc448e5de2fd86ed768ea5347c03d7b2ea82daa4ffc54e5f069f",
+      "parse_error": null,
+      "parse_declarations": 4,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/50_その他新システム/qa_002.dat",
+      "size_bytes": 6114,
+      "sha256": "404456a0242c981dd8f6fb9cff6c38d44a3036ee415cf3429bc9d7a1fa8a55e4",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/50_その他新システム/qa_003.dat",
+      "size_bytes": 10691,
+      "sha256": "a55a4515b341b4adc3148caa6647667869341854ec139ff7f926b3736e672f21",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/50_その他新システム/qa_004.dat",
+      "size_bytes": 9567,
+      "sha256": "cb2c042856f2302c9429d9450ce4d25348e274ea0ac15c5bd69683821f90fb10",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/50_その他新システム/qa_008_to_016.dat",
+      "size_bytes": 12087,
+      "sha256": "9005bd99e875d79dbe619554638f9d230b78dd9e45fc37e7c80dadac837a457a",
+      "parse_error": null,
+      "parse_declarations": 9,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/50_その他新システム/qa_siege.dat",
+      "size_bytes": 5958,
+      "sha256": "a50d3d5eddc30619602e473ba3f612b75f19ece5789dd3b0174126b7b46d4eef",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/50_その他新システム/restructuring .dat",
+      "size_bytes": 33259,
+      "sha256": "bd9aacd5caf11e0ad8f7754ea1d9eb40ae550868da679bc0479073b4ebbb605b",
+      "parse_error": null,
+      "parse_declarations": 8,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/50_その他新システム/self_summon_classes.dat",
+      "size_bytes": 56669,
+      "sha256": "37349e8e572fcf1ea2819fa4739b2283b64d3e2ce55a6eb4e0463cebc9d56b6b",
+      "parse_error": null,
+      "parse_declarations": 448,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/50_その他新システム/self_summon_skills.dat",
+      "size_bytes": 54153,
+      "sha256": "c88d123824e2d44b42b508accd403ed9ab4bea75838c2b2f63e21b65ebe693a0",
+      "parse_error": null,
+      "parse_declarations": 756,
+      "skill_declarations": 756
+    },
+    {
+      "file": "a_default/script/50_その他新システム/ship.dat",
+      "size_bytes": 8998,
+      "sha256": "87867efdb3a149fc67ac98e4b5d4b9fd993a99ef44da2f0613c3d7e30c458857",
+      "parse_error": null,
+      "parse_declarations": 124,
+      "skill_declarations": 2
+    },
+    {
+      "file": "a_default/script/50_その他新システム/shipsummon.dat",
+      "size_bytes": 3885,
+      "sha256": "1746315f78ae170a7b41b8507027c98ad6f1cfafa4292dfa78240a10c9e980e5",
+      "parse_error": null,
+      "parse_declarations": 21,
+      "skill_declarations": 21
+    },
+    {
+      "file": "a_default/script/50_その他新システム/siki.dat",
+      "size_bytes": 122305,
+      "sha256": "34d96b1bac436432d3b17a298453e4f86b1cf5246e5a580dbf374989d200aa60",
+      "parse_error": null,
+      "parse_declarations": 366,
+      "skill_declarations": 58
+    },
+    {
+      "file": "a_default/script/50_その他新システム/siki_item_switch.dat",
+      "size_bytes": 3150,
+      "sha256": "43b525206e7652bd1f45a68b905c14faaf1f09394304898a7ca968625df59c47",
+      "parse_error": null,
+      "parse_declarations": 9,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/50_その他新システム/siki_iwana.dat",
+      "size_bytes": 2446,
+      "sha256": "c8992f57b450d1480a61e1b95039422a50d19fae68a12305782303820a473e06",
+      "parse_error": null,
+      "parse_declarations": 2,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/50_その他新システム/siki_ボス側近.dat",
+      "size_bytes": 14379,
+      "sha256": "cc7a04b94702acc78ef18ea021b62dc504533445788cf42faee45e2cf24aed9a",
+      "parse_error": null,
+      "parse_declarations": 36,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/6000_スキルテスト/0maptest.dat",
+      "size_bytes": 2674,
+      "sha256": "9495303d33c851c2e99b861750d3c9c9e5504ef702a2ce02197fda78e5b7848a",
+      "parse_error": null,
+      "parse_declarations": 13,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/6000_スキルテスト/event_test.dat",
+      "size_bytes": 10159,
+      "sha256": "42a246071a9dea2d918a23d30c180e7a4a5e60f807cca906431fcead9a6d0328",
+      "parse_error": null,
+      "parse_declarations": 10,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/6000_スキルテスト/jyaken.dat",
+      "size_bytes": 5165,
+      "sha256": "6bb0560070430529de1ec3eac2501080cc3b4f4c274afd77f9b1dc7890ead4b4",
+      "parse_error": null,
+      "parse_declarations": 17,
+      "skill_declarations": 17
+    },
+    {
+      "file": "a_default/script/6000_スキルテスト/poli_skilltest.dat",
+      "size_bytes": 1803,
+      "sha256": "4fcb0d697e269b98b62c447a0af02fd6efe236d2ed916822029b1eb81c052fe4",
+      "parse_error": null,
+      "parse_declarations": 3,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/6000_スキルテスト/sel_item.dat",
+      "size_bytes": 34208,
+      "sha256": "eadc977dbe6648356e17e898e7ddd16274c2b68fba834dc30d3b4415cdb73aca",
+      "parse_error": null,
+      "parse_declarations": 98,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/6000_スキルテスト/skill_00_test.dat",
+      "size_bytes": 6954,
+      "sha256": "3e7774bc749374a5e99de037cb7040925989eadc3dcadbc9964e1d0d9b2c623d",
+      "parse_error": null,
+      "parse_declarations": 35,
+      "skill_declarations": 35
+    },
+    {
+      "file": "a_default/script/6000_スキルテスト/skill_intyo.dat",
+      "size_bytes": 26890,
+      "sha256": "daae6b426bd6ef71c8841e5cfb2cfc9397a7939c2eb7077a25509d890eb69ba0",
+      "parse_error": null,
+      "parse_declarations": 76,
+      "skill_declarations": 59
+    },
+    {
+      "file": "a_default/script/6000_スキルテスト/skill_人材追加mod.dat",
+      "size_bytes": 25592,
+      "sha256": "b11965171be5c136d3761aa83f97e1fc815b7971bf8e02eb474242737bd20bc4",
+      "parse_error": null,
+      "parse_declarations": 78,
+      "skill_declarations": 65
+    },
+    {
+      "file": "a_default/script/6000_スキルテスト/skilltest.dat",
+      "size_bytes": 21788,
+      "sha256": "dff6a3f51655af4de7287777495f33b6dcf697a0d1b969469dfafa5b3d9ddd5d",
+      "parse_error": null,
+      "parse_declarations": 95,
+      "skill_declarations": 8
+    },
+    {
+      "file": "a_default/script/6000_スキルテスト/testskill.dat",
+      "size_bytes": 10954,
+      "sha256": "74595bbfd211e04923f8c4ac9989790316cbb2f085158b115f3a6bc3fc4d5f28",
+      "parse_error": null,
+      "parse_declarations": 38,
+      "skill_declarations": 35
+    },
+    {
+      "file": "a_default/script/7000_その他シナリオ/free_ev_battle.dat",
+      "size_bytes": 5339,
+      "sha256": "98bc56e5c4d787644d4f492b8a101444c483b48a239a72b6029bb55f53daaf05",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/7000_その他シナリオ/free_ev_world.dat",
+      "size_bytes": 30341,
+      "sha256": "e7fed6296687a59b05e04add20795b202e954d2e5ae63d5029b91f8f9e6eeb00",
+      "parse_error": null,
+      "parse_declarations": 5,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/7000_その他シナリオ/free_sc.dat",
+      "size_bytes": 9449,
+      "sha256": "48be60c1ec10c7780f91b91380d9003ec63bc14c6adbd9f21e7424ebfd93e473",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/7000_その他シナリオ/power_others.dat",
+      "size_bytes": 9344,
+      "sha256": "b1fe9ff525961e8c5d39f40ff0eff45bc41289ed868f171fac7d31f15b1eae6a",
+      "parse_error": null,
+      "parse_declarations": 37,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/7000_その他シナリオ/spot_others.dat",
+      "size_bytes": 3022,
+      "sha256": "795e35555a1a8c2f04a3fa614c5c5207eed735bc44009550a2f95990bdcab51d",
+      "parse_error": null,
+      "parse_declarations": 116,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/8000_RTSシナリオ/RTSbuilding.dat",
+      "size_bytes": 19867,
+      "sha256": "e9c2050b168e397d64b9a1235aa30a759be47e76a8294268c85ac2c031660c50",
+      "parse_error": null,
+      "parse_declarations": 118,
+      "skill_declarations": 15
+    },
+    {
+      "file": "a_default/script/8000_RTSシナリオ/RTSclass.dat",
+      "size_bytes": 7146,
+      "sha256": "b073dc8c5e54b1f5c097c698a3322d93e49614549cb6e85ff7c6cf39d734e849",
+      "parse_error": null,
+      "parse_declarations": 48,
+      "skill_declarations": 5
+    },
+    {
+      "file": "a_default/script/8000_RTSシナリオ/RTSeasymode.dat",
+      "size_bytes": 5641,
+      "sha256": "7c625be0de399e2b26e09904cf95fdf5e71b2ea95ce2921f83ae541212b6bb45",
+      "parse_error": null,
+      "parse_declarations": 45,
+      "skill_declarations": 27
+    },
+    {
+      "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+      "size_bytes": 19536,
+      "sha256": "d1dd885629e1c3b224e92e23729b0d6d4d99d467a01a8cc47b795acfecc518df",
+      "parse_error": null,
+      "parse_declarations": 221,
+      "skill_declarations": 164
+    },
+    {
+      "file": "a_default/script/8000_RTSシナリオ/RTSnew.dat",
+      "size_bytes": 5656,
+      "sha256": "ed00127b5d070bc2d1b3a3f320a1634a980d9b207c21affbd7f0b827b25695eb",
+      "parse_error": null,
+      "parse_declarations": 45,
+      "skill_declarations": 27
+    },
+    {
+      "file": "a_default/script/8000_RTSシナリオ/RTSpowerspot.dat",
+      "size_bytes": 1246,
+      "sha256": "da4dbca764aeb0e725564ae8c8fadd1dabe3d7b5f4477375c3660239c68e55e0",
+      "parse_error": null,
+      "parse_declarations": 7,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/8000_RTSシナリオ/RTSscenario.dat",
+      "size_bytes": 25793,
+      "sha256": "ea79f33bcb3f7fe60dac69d79b97f246c998b2573c923526a810432af0d02bee",
+      "parse_error": null,
+      "parse_declarations": 8,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/8000_RTSシナリオ/RTSskill.dat",
+      "size_bytes": 20958,
+      "sha256": "732d0d4580dca0dbd7d3ba7bce7bd07475168faeef6423df690ae66ccacb4c74",
+      "parse_error": null,
+      "parse_declarations": 128,
+      "skill_declarations": 127
+    },
+    {
+      "file": "a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+      "size_bytes": 49127,
+      "sha256": "395b2af6e476610c6e06452249b3cfc9baccc9e6ce6628085e2aee5cec9580a6",
+      "parse_error": null,
+      "parse_declarations": 417,
+      "skill_declarations": 326
+    },
+    {
+      "file": "a_default/script/Ai戦闘制御_入れ替え必殺技.dat",
+      "size_bytes": 12591,
+      "sha256": "f9c8945411204b700470bbd8ab187127f644a1528ec81a31a25e0d92923c8b63",
+      "parse_error": null,
+      "parse_declarations": 158,
+      "skill_declarations": 158
+    },
+    {
+      "file": "a_default/script/Ai戦闘制御_軍楽隊なし版.dat",
+      "size_bytes": 154554,
+      "sha256": "c850cc74b5ed6b2d09b2923f3bceb8a5e99b0843a3bc51cdb04a51036c86752c",
+      "parse_error": null,
+      "parse_declarations": 17,
+      "skill_declarations": 12
+    },
+    {
+      "file": "a_default/script/Ai戦闘制御_追加部分.dat",
+      "size_bytes": 141533,
+      "sha256": "b88919adcb6afbe22d583299f5678114f5ddfc3ac3fdbedcb0ccfdf741ada9ef",
+      "parse_error": null,
+      "parse_declarations": 911,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/Ai戦闘制御_速度・待機スキル.dat",
+      "size_bytes": 2812,
+      "sha256": "d72e108f88cc8f02507187bdec577e539b4bf456d19475e04a9b240550ef309f",
+      "parse_error": null,
+      "parse_declarations": 18,
+      "skill_declarations": 18
+    },
+    {
+      "file": "a_default/script/attribute.dat",
+      "size_bytes": 2845,
+      "sha256": "db99c07ece3947cf5413f0423c2a9d6bcea9244d7869e429bed33555d7e96386",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/context.dat",
+      "size_bytes": 6779,
+      "sha256": "c11fe13b14844f82228d2c45135ea906255ca794b6a9dddb7cb18b01b6411235",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/defense.dat",
+      "size_bytes": 2280,
+      "sha256": "fa159b0a605f53ae2777ad157941ff028827a2332037949a7519f82bc41085b9",
+      "parse_error": null,
+      "parse_declarations": 7,
+      "skill_declarations": 2
+    },
+    {
+      "file": "a_default/script/event_world.dat",
+      "size_bytes": 57876,
+      "sha256": "9f1df62c2d566b3200501c1d34b791e472ab0e29d92030aeb82aff2c7a889c47",
+      "parse_error": null,
+      "parse_declarations": 9,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/field_01.dat",
+      "size_bytes": 20665,
+      "sha256": "3e6cb61ab273cf7372e348119791d974f96b1740a3173809e85122540ce58a61",
+      "parse_error": null,
+      "parse_declarations": 193,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/field_02_神苑_鎌倉.dat",
+      "size_bytes": 34806,
+      "sha256": "0f8baf6b4a074001b0bdfbe2f8319514e202aa0220feaf5d6cae746e801db1ad",
+      "parse_error": null,
+      "parse_declarations": 325,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/movetype.dat",
+      "size_bytes": 9488,
+      "sha256": "bf553c354dac1eb1a8c5435d8945ca323776cde8e25dbe9f0404ac90018b696a",
+      "parse_error": null,
+      "parse_declarations": 33,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/power(1).dat",
+      "size_bytes": 46453,
+      "sha256": "1365a66b3758d9bd75f36a2a71c07623201702446c627dcb7ed0ccf941246d5e",
+      "parse_error": null,
+      "parse_declarations": 66,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/race.dat",
+      "size_bytes": 2991,
+      "sha256": "b4d0fe322e440f56e254a8c0b61806f34f4cc94dfeed6b5c5f667ca1abc305ae",
+      "parse_error": null,
+      "parse_declarations": 21,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/scenario1.dat",
+      "size_bytes": 9871,
+      "sha256": "4c7a72f71515914d0f657f6b0d70da04165c2e5e8a2c9c668a7b2998ca1b1698",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/serihu.dat",
+      "size_bytes": 208160,
+      "sha256": "70fa040e87b34329b061cfc8b149ccc10c8226fc0d57794ab99bb6ae7074bb08",
+      "parse_error": null,
+      "parse_declarations": 524,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/serihu_pls.dat",
+      "size_bytes": 140241,
+      "sha256": "51279cdaff837a93ee922f7aa69d79532003730f7668c688f2643038911dd10d",
+      "parse_error": null,
+      "parse_declarations": 314,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/sound.dat",
+      "size_bytes": 9808,
+      "sha256": "3a6d9a52f8084a2deec9fcaaeca67a4cf6eae2a922392bd7fed306aa18fb4bf8",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/spot.dat",
+      "size_bytes": 31726,
+      "sha256": "835ff7ad0a334e1661b3a8d6da755ed50c9b3fc60b349b3fe1a0fdc4f6c22887",
+      "parse_error": null,
+      "parse_declarations": 137,
+      "skill_declarations": 0
+    },
+    {
+      "file": "a_default/script/spot_detail.dat",
+      "size_bytes": 15029,
+      "sha256": "c50d3c893042e09f681afbc77dec9a9783a98e87917f5379b4b7c134254b2f53",
+      "parse_error": null,
+      "parse_declarations": 1,
+      "skill_declarations": 0
+    }
+  ],
+  "elapsed_s_approx": 20.78,
+  "meaning": "synthetic parser source audit; NOT old EXE execution",
+  "original_zip_sha256": "a1dac7209fca6fbf7d05d956054047b4c36e5149eb100434bf796ccb94970423",
+  "work_registry_skill_count": 16554,
+  "parsed_skill_count": 16554,
+  "parsed_structure_count": 30748,
+  "file_error_count": 0,
+  "error_files": [],
+  "source_skill_total_lexical": 16554,
+  "full_corpus_source_vs_work_delta": 0,
+  "sample_effective": {
+    "m_heal": {
+      "chain": [
+        "m_heal"
+      ],
+      "func": {
+        "found": true,
+        "text": "heal",
+        "number": 0
+      },
+      "mp": {
+        "found": true,
+        "text": "80",
+        "number": 80
+      },
+      "check": {
+        "found": false,
+        "text": "",
+        "number": 0
+      },
+      "range": {
+        "found": true,
+        "text": "500",
+        "number": 500
+      },
+      "gun_delay": []
+    },
+    "seiretsu": {
+      "chain": [
+        "seiretsu"
+      ],
+      "func": {
+        "found": true,
+        "text": "heal",
+        "number": 0
+      },
+      "mp": {
+        "found": true,
+        "text": "0",
+        "number": 0
+      },
+      "check": {
+        "found": false,
+        "text": "",
+        "number": 0
+      },
+      "range": {
+        "found": true,
+        "text": "0",
+        "number": 0
+      },
+      "gun_delay": []
+    },
+    "cook_heal": {
+      "chain": [
+        "cook_heal",
+        "m_heal"
+      ],
+      "func": {
+        "found": true,
+        "text": "heal",
+        "number": 0
+      },
+      "mp": {
+        "found": true,
+        "text": "0",
+        "number": 0
+      },
+      "check": {
+        "found": false,
+        "text": "",
+        "number": 0
+      },
+      "range": {
+        "found": true,
+        "text": "500",
+        "number": 500
+      },
+      "gun_delay": [
+        "b_heal*3"
+      ]
+    },
+    "s_monaka": {
+      "chain": [
+        "s_monaka"
+      ],
+      "func": {
+        "found": true,
+        "text": "summon",
+        "number": 0
+      },
+      "mp": {
+        "found": true,
+        "text": "40",
+        "number": 40
+      },
+      "check": {
+        "found": true,
+        "text": "9999",
+        "number": 9999
+      },
+      "range": {
+        "found": true,
+        "text": "100",
+        "number": 100
+      },
+      "gun_delay": []
+    },
+    "b_iwana": {
+      "chain": [
+        "b_iwana",
+        "sk_ms"
+      ],
+      "func": {
+        "found": true,
+        "text": "missile",
+        "number": 0
+      },
+      "mp": {
+        "found": true,
+        "text": "60",
+        "number": 60
+      },
+      "check": {
+        "found": false,
+        "text": "",
+        "number": 0
+      },
+      "range": {
+        "found": true,
+        "text": "450",
+        "number": 450
+      },
+      "gun_delay": [
+        "b_iwana*2"
+      ]
+    },
+    "spinfiremax": {
+      "chain": [
+        "spinfiremax",
+        "sk_ms"
+      ],
+      "func": {
+        "found": true,
+        "text": "missile",
+        "number": 0
+      },
+      "mp": {
+        "found": true,
+        "text": "80",
+        "number": 80
+      },
+      "check": {
+        "found": true,
+        "text": "600",
+        "number": 600
+      },
+      "range": {
+        "found": true,
+        "text": "600",
+        "number": 600
+      },
+      "gun_delay": []
+    },
+    "musen_move": {
+      "chain": [
+        "musen_move"
+      ],
+      "func": {
+        "found": true,
+        "text": "heal",
+        "number": 0
+      },
+      "mp": {
+        "found": false,
+        "text": "",
+        "number": 0
+      },
+      "check": {
+        "found": false,
+        "text": "",
+        "number": 0
+      },
+      "range": {
+        "found": true,
+        "text": "9999",
+        "number": 9999
+      },
+      "gun_delay": [
+        "musen*2"
+      ]
+    },
+    "b_all": {
+      "chain": [
+        "b_all"
+      ],
+      "func": {
+        "found": true,
+        "text": "heal",
+        "number": 0
+      },
+      "mp": {
+        "found": true,
+        "text": "-1",
+        "number": -1
+      },
+      "check": {
+        "found": false,
+        "text": "",
+        "number": 0
+      },
+      "range": {
+        "found": true,
+        "text": "400",
+        "number": 400
+      },
+      "gun_delay": [
+        "b_all*3"
+      ]
+    }
+  },
+  "notes": [
+    "Full corpus in Work *synthetic* parser order. Real old EXE file ordering/partial declaration semantics remain VERIFY.",
+    "Files with errors still contribute preceding parsed declarations, matching this Work loader behavior, not guaranteed original behavior.",
+    "Not a gameplay golden test."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "BRIDGE-STAGE15-CASUALTY-STRATEGY-EFFECTS",
+  "source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "state": "STATIC_CONDITIONAL_PATH_NOT_NEW_RUNTIME_OBSERVATION",
+  "instructions": [
+    {
+      "site": "0x588de0",
+      "bytes": "898b6c010000",
+      "instruction": "mov dword ptr [ebx + 0x16c], ecx"
+    },
+    {
+      "site": "0x588e34",
+      "bytes": "29b074010000",
+      "instruction": "sub dword ptr [eax + 0x174], esi"
+    },
+    {
+      "site": "0x588e40",
+      "bytes": "29705c",
+      "instruction": "sub dword ptr [eax + 0x5c], esi"
+    },
+    {
+      "site": "0x588ea4",
+      "bytes": "e802e00200",
+      "instruction": "call 0x5b6eab"
+    },
+    {
+      "site": "0x588f68",
+      "bytes": "e83edf0200",
+      "instruction": "call 0x5b6eab"
+    }
+  ],
+  "strings": {
+    "0x62724c": "medical",
+    "0x62726c": "alive_per",
+    "0x627278": "alive_per",
+    "0x627284": "alive_per"
+  },
+  "meaning": "Casualty handling conditionally adjusts shared EXP, charges leader-record+174 or Power+5C, and may sample alive_per before finish. Exporting winner alone omits these effects.",
+  "not_claimed": [
+    "Every Unit takes this branch",
+    "Direct invocation is safe",
+    "A correct external result writer exists"
+  ]
+}

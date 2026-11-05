@@ -1,0 +1,53 @@
+{
+  "id": "BRIDGE-20261022-USER-RECORDER-VALIDATION",
+  "checks": {
+    "regressions_pass": true,
+    "gui_creation_no_auto_start": true,
+    "full_child_pipeline_pass": true,
+    "child_pipeline_has_wide_reads": true,
+    "child_pipeline_is_not_game": true,
+    "actual_original_strategic_preflight": true,
+    "actual_original_wide_task_read": true
+  },
+  "checks_passed": 7,
+  "checks_total": 7,
+  "tests_run": 101,
+  "test_failures": 0,
+  "test_errors": 0,
+  "test_skips": 0,
+  "test_log": ".....................................................................................................\n----------------------------------------------------------------------\nRan 101 tests in 0.288s\n\nOK\n",
+  "gui_test": "GUI_SMOKE_PASS: no recorder started\n",
+  "gui_error": "",
+  "full_pipeline_origin": "SYNTHETIC_CHILD_WIN32_READONLY",
+  "actual_native_preflight_only": true,
+  "new_native_battle_capture_count": 0,
+  "new_native_G1_complete": false,
+  "work_started": false,
+  "source_files": [
+    {
+      "name": "battle_user_recorder_core_20261022.py",
+      "sha256": "28E175EBAFA25675C820863FB85010F82735BF68A4B2408703B1C8574E3B6D68"
+    },
+    {
+      "name": "battle_user_recorder_app_20261022.py",
+      "sha256": "D113D707BE882BDCCB63069C81DF4C708210632B7858A9DB70459BD85BEA5668"
+    },
+    {
+      "name": "test_battle_user_recorder_20261022.py",
+      "sha256": "10658397339D44F6DF11EEDD63B577ABDD381E8D1D0180462F8F1C389E8CD6F3"
+    },
+    {
+      "name": "test_battle_user_recorder_crossprocess_20261022.py",
+      "sha256": "86DF25985331951DB9DC596D31D900EF464A748A1408C4C0B45941C1D00783CC"
+    },
+    {
+      "name": "battle_native_detached_capture_v6_20261022.py",
+      "sha256": "28799AF6FFF5059B2C53A7EB6BD4D0416FAA6084D902623A4C7849060327276F"
+    },
+    {
+      "name": "battle_native_war_tree_decoder_v5_20261021.py",
+      "sha256": "0DD7C9EBD0BF97E4BA421FEC02909A44A9B6ABDA4A3538239B479530D909EB6A"
+    }
+  ],
+  "warning": "Legacy synthetic fixture tests are regression-only, not original RB-tree compatibility proof."
+}

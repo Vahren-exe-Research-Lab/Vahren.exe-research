@@ -1,0 +1,95 @@
+{
+  "research_id": "BRIDGE-20261022-RESEARCH-12-VALIDATION",
+  "status": "SAVED_ORIGINAL_RUNTIME_AND_STATIC_PE_EVIDENCE_VALIDATION_NOT_G1_OR_PRODUCT_TEST",
+  "checks": {
+    "original_pe_sha": true,
+    "all12_recorded_source_hashes": true,
+    "supporting_sources_unchanged": true,
+    "two_distinct_original_pids": true,
+    "both_runs_four_capture_replays": true,
+    "unchanged_recording_code": true,
+    "missing3_and17_observed": true,
+    "missing_all_present_next_capture": true,
+    "both_add185_remove0": true,
+    "old_roster_prefix_preserved": true,
+    "same24_troops_preserved": true,
+    "growth_distribution_19x8_3x7_2x6": true,
+    "new_record185_disjoint": true,
+    "new_units_backlinks_reciprocal": true,
+    "all8_nonatomic": true,
+    "source_link_fields_missing": true,
+    "summon_effect_payloads_missing": true,
+    "two_task_peak_header_counts": true,
+    "all8_join_Player_8_16_Enemy8": true,
+    "Enemy_entry_help_matches": true,
+    "384_troop_parent_pairs": true,
+    "no_unmatched_participation_records": true,
+    "native_seven_direct_sites_verified": true,
+    "no_summon_cause_or_full_G1_claim": true,
+    "recorder_unchanged_Work_unused": true,
+    "ledger_unique": true,
+    "five_stage12_findings": true,
+    "stage12_evidence_exists": true,
+    "canonical_index_current": true,
+    "gates_still3_of9": true
+  },
+  "passed": 30,
+  "total": 30,
+  "source_hashes_verified": 12,
+  "raw_captures_replayed": 8,
+  "troop_parent_pairs_checked": 384,
+  "temporal_reconciliation": [
+    {
+      "session": "BATTLE_USER_20261021T163100686424Z_9cddfc86",
+      "absent_in_RAW02_Task_union": 3,
+      "present_in_next_capture": 3,
+      "still_absent": 0,
+      "causal_registration_path_proven": false
+    },
+    {
+      "session": "BATTLE_USER_20261021T164622798833Z_b8419f5d",
+      "absent_in_RAW02_Task_union": 17,
+      "present_in_next_capture": 17,
+      "still_absent": 0,
+      "causal_registration_path_proven": false
+    }
+  ],
+  "ledger_total": 47,
+  "game_memory_accessed": false,
+  "recorder_modified": false,
+  "full_G1_proven": false,
+  "external_game_roundtrip_proven": false,
+  "work_used": false,
+  "work_gate_pass": 3,
+  "work_gate_total": 9,
+  "evidence": [
+    {
+      "name": "BATTLE_STAGE12_GROWTH_CONSISTENCY_ANALYSIS_20261022.json",
+      "sha256": "22227467A6B75A7DAB12DD968546F2E9AAA04B22CF46898D98E531D860F23B57"
+    },
+    {
+      "name": "BATTLE_STAGE12_WAR_SIDE_CROSSWALK_20261022.json",
+      "sha256": "9BC09C7EC861C5E21068ADD274534BD88685BAA1AB1EF780C8B1E3BD4B06EB8E"
+    },
+    {
+      "name": "BATTLE_TAKEOVER_RESEARCH_STAGE12_20261022.md",
+      "sha256": "CBDA139470666251C41B2A79ACFDA7755A61368F0EA8E015BAAEF1BB3BBD48BA"
+    },
+    {
+      "name": "BATTLE_BRIDGE_RESEARCH_INDEX.md",
+      "sha256": "0F0BA11ABB794FCAFB3F32C9AD02F235B63A7E256ABCC53F3F02978A0071DFD9"
+    },
+    {
+      "name": "BATTLE_BRIDGE_FINDINGS_LEDGER.jsonl",
+      "sha256": "49B0CF09F6C29C779259E93437EF4AD073A225E6A4D8C2EF5C9138DB98096BAB"
+    },
+    {
+      "name": "analyze_stage12_unit_growth_consistency_20261022.py",
+      "sha256": "0BB58992AE713C050D0C5A93D0B144A1FDF75FF2718F548159924B7FB2CF721C"
+    },
+    {
+      "name": "analyze_stage12_war_roster_crosswalk_20261022.py",
+      "sha256": "3E646DEE0C3BEE2F26493272FE91B36691191E564FA27C6513C5A3AA341183A5"
+    }
+  ]
+}

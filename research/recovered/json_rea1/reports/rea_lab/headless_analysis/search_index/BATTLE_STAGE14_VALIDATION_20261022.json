@@ -1,0 +1,105 @@
+{
+  "research_id": "BRIDGE-20261022-RESEARCH-14-VALIDATION",
+  "status": "OFFLINE_ORIGINAL_PE_AND_RETAINED_RAW_NOT_NEW_NATIVE_CAPTURE",
+  "checks": {
+    "original_PE_identity": true,
+    "all_protected_inputs_unchanged": true,
+    "original_12_manifest_files": true,
+    "55_native_anchors_rechecked": true,
+    "11_pseudocode_inputs_unchanged": true,
+    "FLS_API_strings": true,
+    "TLS_getter_cache_imports": true,
+    "133_byte_unit_core": true,
+    "correct_grid_stride_and_sentinel": true,
+    "VM_stack_widths": true,
+    "8_saved_RAW_replayed": true,
+    "4190_Unit_HPMP_maxima_coordinates_still_absent": true,
+    "8_VM_grid_owner_gettercache_still_absent": true,
+    "synthetic_representation_edge_cases": true,
+    "ledger_unique_ids": true,
+    "five_stage14_findings_recorded": true,
+    "stage14_evidence_files_exist": true,
+    "stage14_index_updated": true,
+    "stage14_report_saved": true,
+    "work_gate_unchanged_3_of_9": true,
+    "no_G1_or_recorder_promotion": true,
+    "inputs_unchanged_at_finish": true
+  },
+  "checks_passed": 22,
+  "checks_total": 22,
+  "native_instruction_anchors": 55,
+  "source_functions": 11,
+  "retained_RAW_replayed": 8,
+  "unit_observation_counts": {
+    "observations": 4190,
+    "HPMP_absent": 4190,
+    "maxima_absent": 4190,
+    "coords_absent": 4190
+  },
+  "synthetic_representation_checks": {
+    "signed_HP_preserved_without_clamp": true,
+    "current_max_values_distinct": true,
+    "missing_is_not_zero": true,
+    "integer_XY_representation": true,
+    "projection_retains_height_component": true,
+    "zero_PC_and_null_element_allowed": true,
+    "preincremented_PC_not_reexecuted": true,
+    "completed_block_PC_equals_count": true,
+    "out_of_range_PC_is_not_normalized": true,
+    "noncontiguous_row_pointer_grid": true,
+    "sentinel_raw_bits_preserved": true,
+    "row_table_not_flat_cells": true
+  },
+  "synthetic_representation_pass": 12,
+  "synthetic_representation_total": 12,
+  "protected_file_count": 20,
+  "ledger_entries": 57,
+  "new_findings": 5,
+  "full_G1_proven": false,
+  "native_process_accessed": false,
+  "recorder_changed": false,
+  "work_used": false,
+  "external_roundtrip_proven": false,
+  "work_gates": [
+    3,
+    9
+  ],
+  "reference_readiness_not_reestimated": 51.75,
+  "source_receipts": [
+    {
+      "file": "BATTLE_STAGE14_MISSING_STATE_NATIVE_EVIDENCE_20261022.json",
+      "sha256": "06045329D6FA4EF2D7C6B78B358DA89B0DFDD6C1AFD63B0291475F824E67D090",
+      "bytes": 62247
+    },
+    {
+      "file": "BATTLE_STAGE14_READ_LAYOUT_SPEC_20261022.json",
+      "sha256": "8C836343005AEBE49703FCEC5386C492C3F9D3C9FF13CD4D7AF2D4F6408239B8",
+      "bytes": 5540
+    },
+    {
+      "file": "BATTLE_TAKEOVER_RESEARCH_STAGE14_20261022.md",
+      "sha256": "08C8B2F601EE26DEF876342F96CEC49486A8838AFDC2EBB7FD724A9515E4835F",
+      "bytes": 10369
+    },
+    {
+      "file": "research_stage14_missing_state_20261022.py",
+      "sha256": "EE431A34C2F4E67F39A6E7C5F017F3FD4A27494CF7EF3CB41C74E2A8175C310E",
+      "bytes": 8065
+    },
+    {
+      "file": "validate_stage14_missing_state_20261022.py",
+      "sha256": "66EA5100A0DD00DE3A8B0672B9CA1DCC508FC0444E09A96A72514A3DB8C28CB3",
+      "bytes": 8881
+    },
+    {
+      "file": "BATTLE_BRIDGE_RESEARCH_INDEX.md",
+      "sha256": "85DAF6E1348539397516D8FA12BDB25184312687CE618BDAE27CE9FBB384267D",
+      "bytes": 16814
+    },
+    {
+      "file": "BATTLE_BRIDGE_FINDINGS_LEDGER.jsonl",
+      "sha256": "0C05D3C6069F4502ABC12EA2D518801FA1A1176F9315973EBE63C57BE5BBAC7A",
+      "bytes": 51671
+    }
+  ]
+}

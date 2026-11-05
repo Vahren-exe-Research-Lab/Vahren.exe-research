@@ -1,0 +1,83 @@
+{
+  "research_id": "BRIDGE-20261022-RESEARCH-13-VALIDATION",
+  "status": "OFFLINE_ORIGINAL_BYTES_AND_PE_NOT_A_NEW_GAMEPLAY_TEST",
+  "checks": {
+    "original_PE_SHA": true,
+    "twelve_manifest_files": true,
+    "recorder_and_source_inputs_unchanged": true,
+    "eight_actual_samples": true,
+    "4190_repeated_unit_observations": true,
+    "independent_sparse_byte_coverage": true,
+    "unit_observation_total_recomputed": true,
+    "all_native_role_and_distinct_flag_domains_rechecked": true,
+    "not_before_first_Task_not_atomic": true,
+    "eighteen_native_opcode_sites": true,
+    "three_native_script_variable_labels": true,
+    "three_map_direct_calls": true,
+    "HP_MP_access_bytes": true,
+    "pseudocode_sources_unchanged": true,
+    "sparse_coverage_six_edge_cases": true,
+    "missing_is_ABSENT_not_zero": true,
+    "ledger_no_duplicate_ids": true,
+    "five_stage13_findings_saved": true,
+    "stage13_evidence_exists": true,
+    "contract_seven_minimum_groups": true,
+    "no_G1_or_roundtrip_promotion": true,
+    "no_runtime_or_tool_edits_claimed": true,
+    "work_gate_still_3_of_9": true,
+    "index_current_stage13": true,
+    "report_written": true
+  },
+  "checks_passed": 25,
+  "checks_total": 25,
+  "raw_snapshots_replayed": 8,
+  "repeated_unit_observations": 4190,
+  "native_opcode_anchors": 18,
+  "sparse_coverage_edge_cases": 6,
+  "ledger_entries": 52,
+  "full_G1_proven": false,
+  "external_game_roundtrip_proven": false,
+  "work_used": false,
+  "native_process_accessed": false,
+  "recorder_changed": false,
+  "work_gate_pass": 3,
+  "work_gate_total": 9,
+  "readiness_reference_unchanged": 51.75,
+  "source_receipts": [
+    {
+      "name": "BATTLE_STAGE13_INPUT_COVERAGE_20261022.json",
+      "sha256": "17FE5C34BF60A680736E2B0F6FEEF13F46EE8C2BC54B726560E6674BB34D4DCB",
+      "bytes": 59015
+    },
+    {
+      "name": "BATTLE_STAGE13_PACKET_REQUIREMENTS_20261022.json",
+      "sha256": "42BE6B86723AA4CD66CF3D59DE93066820F6D3D5EF58F01E548D8685681A57D5",
+      "bytes": 4421
+    },
+    {
+      "name": "BATTLE_TAKEOVER_RESEARCH_STAGE13_20261022.md",
+      "sha256": "7968D743ACF4CEB2E306E30BEC7C81A9C658027982232DC1C05DC5AA290D08A4",
+      "bytes": 9576
+    },
+    {
+      "name": "analyze_stage13_packet_coverage_20261022.py",
+      "sha256": "224788B0641691FC019A9048BFFC220F521467216EA812713182DB3A7661A95C",
+      "bytes": 11524
+    },
+    {
+      "name": "validate_stage13_packet_coverage_20261022.py",
+      "sha256": "AC9396B67165F40659E9D6B5E5960CE43FBCA397225ADE16884BB7839F164240",
+      "bytes": 8407
+    },
+    {
+      "name": "BATTLE_BRIDGE_RESEARCH_INDEX.md",
+      "sha256": "E87D48C017D939959408E725AAF3866CE321BC510394524B8CF0DE5F44451FB9",
+      "bytes": 15729
+    },
+    {
+      "name": "BATTLE_BRIDGE_FINDINGS_LEDGER.jsonl",
+      "sha256": "3F9A6BF116BE306204EB13E657044F4F784C4D08ABDE167EC742DB79CB62AD2E",
+      "bytes": 46610
+    }
+  ]
+}

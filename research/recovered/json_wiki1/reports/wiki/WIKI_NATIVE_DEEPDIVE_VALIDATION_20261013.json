@@ -1,0 +1,264 @@
+{
+  "status": "STATIC_WIKI_DAT_RESEARCH_CHECKPOINT / ALL_ASSERTIONS_TRUE",
+  "checks": {
+    "work_parser_590": true,
+    "work_parser_no_error": true,
+    "registry_16554": true,
+    "source_parsed_skill_exact": true,
+    "all_skill_index_16554": true,
+    "parent_missing_37": true,
+    "func_categories_sum": true,
+    "direct_skill_grant_2435": true,
+    "direct_reachable_11953": true,
+    "skillset_reachable_12147": true,
+    "event_candidate_14098": true,
+    "old_140101_not_preserved": true,
+    "orphan_witnesses_16": true,
+    "orphan_event_candidate_17": true,
+    "all_direct_orphans_func_unset": true,
+    "missing_equipment_44_34": true,
+    "raw_delay_256": true,
+    "raw_gun_delay_885": true,
+    "delay_both_143": true,
+    "help_delay_180": true,
+    "delay_131_35_14": true,
+    "smonaka_2classes_7members": true,
+    "F_handoff_21_v6_not_run": true,
+    "adapter_9692": true,
+    "heal_adapter_319_of_320": true,
+    "missile_adapter_2623_of_9254": true,
+    "sword_adapter_118_of_118": true,
+    "missile_str_6366": true,
+    "missile_str_missing_6027": true,
+    "missile_granted_root_1724": true,
+    "missile_root_adapter_299": true,
+    "missile_child_total_1425": true,
+    "missile_child_typed_388": true,
+    "missile_child_fixture4": true,
+    "movetype_total_33": true,
+    "movetype_units_4586": true,
+    "movetype_classes_4080": true,
+    "city_movetype_units_539": true,
+    "wiki_movetype_29x9_245_16": true,
+    "wiki_rush_threshold_hypothesis_diff_1": true,
+    "special_direct_571": true,
+    "special_inherited_1166": true,
+    "special_on_687": true,
+    "special_MP_fixtures_17": true,
+    "heal_typed_319": true,
+    "heal_callback_19": true,
+    "heal_attr_unknown_40": true,
+    "heal_attr_unknown_reachable_31": true,
+    "effective_negative_mp_94": true,
+    "negative_direct_grant_60": true,
+    "negative_heal_stage_44": true,
+    "heal_add2_20": true,
+    "heal_add2_fixture_20": true,
+    "heal_blank_attr_add2_20": true,
+    "explicit_AT_4727": true,
+    "AT_mask_parent_3084": true,
+    "AT_shadowed15": true,
+    "AT_Work_parser_9": true,
+    "AT_20_battle_inputs": true,
+    "effective_next_12266": true,
+    "effective_direct_delta313": true,
+    "effective_event_and_skillsets_14257": true,
+    "effective_events_literal726": true,
+    "mp_at_13": true,
+    "original_heal_negative_flash3": true,
+    "flash_negative_stage3": true,
+    "fmrim_legal_source_candidate": true,
+    "mheal_source_provenance13": true,
+    "mheal_fixture_compiled_special_synthetic": true,
+    "Work_core_return_54E31C": true,
+    "Work_P0_packet_3_subtasks": true,
+    "Work_P0_Markdown": true,
+    "deepdive_sections_exist": true,
+    "source_zip_SHA_alignment": true,
+    "Work_readonly_sourcetypes": true
+  },
+  "pass_count": 75,
+  "total_checks": 75,
+  "original_zip_sha256": "a1dac7209fca6fbf7d05d956054047b4c36e5149eb100434bf796ccb94970423",
+  "work_source_post_snapshot_changes": {
+    "native_unit_ai.py": {
+      "snapshot": "494d2d5e4bd77351daf240f5c3402123a952d8aee3fdaadad76bec7c65ff372f",
+      "current": "da5d69d4e154274ff909d59e424f8258e12c9d4232f05c5b1470b0b39e77ede2"
+    },
+    "native_battle_runner.py": {
+      "snapshot": "610cd27cd5506b68f909278f34203f17a2c9e7805fac89dedb808e17611b86be",
+      "current": "31ec4c468a9e121aa99a51dcce6ee3a435f5396ae3227c90d52752686786b033"
+    },
+    "native_battle_session.py": {
+      "snapshot": "0caffc7cb2a03b515fd1f6d09babedded2b7ad6ba8ab8d8e987704488b1dda15",
+      "current": "b4e7aaf9af49b7a386268986a2702d49e0b215a6c2744beca21d60c95dae0bf7"
+    }
+  },
+  "facts_not_claimed": [
+    "original exe run",
+    "real battle gameplay",
+    "golden strict match",
+    "native Skill field offsets for raw delay/gun_delay",
+    "Work source code changes",
+    "B/F integration"
+  ],
+  "files": [
+    "WIKI_DAT_NATIVE_DEEPDIVE_20261013.md",
+    "WIKI_FULL_NATIVE_PARSER_AUDIT_20261013.json",
+    "WIKI_FULL_SKILL_INDEX_20261013.json.gz",
+    "WIKI_SKILLSET_EVENT_REACHABILITY_20261013.json",
+    "WIKI_SKILL_WITNESS_PATHS_20261013.json",
+    "WIKI_F_BATTLE_IMPLEMENTATION_HANDOFF_20261013.json",
+    "WIKI_WORK_P0_ACTION_PACKET_20261013.json",
+    "WIKI_WORK_P0_ACTION_PACKET_20261013.md"
+  ],
+  "new_READY": 0,
+  "original_Gameplay_Golden": 0,
+  "strict_MATCH": 0,
+  "artifact_digests": {
+    "WIKI_DAT_NATIVE_DEEPDIVE_20261013.md": {
+      "bytes": 55212,
+      "sha256": "0854786aa4814b325fff5591f6cbbd9480db9c3e4e4c48e7cc5d467f1f60d5fa"
+    },
+    "WIKI_FULL_NATIVE_PARSER_AUDIT_20261013.json": {
+      "bytes": 182392,
+      "sha256": "059861e91a2acfa8f60a08f72b8a0f468d1365ce3c5559a2d4eedacb7f6f8af9"
+    },
+    "WIKI_FULL_SKILL_INDEX_20261013.json.gz": {
+      "bytes": 479814,
+      "sha256": "6abf91038e5eff006602279bb4c8f87286c771b1f0315b0fc30f8d35f337b958"
+    },
+    "WIKI_SKILLSET_EVENT_REACHABILITY_20261013.json": {
+      "bytes": 55992,
+      "sha256": "f25a6423724ba781695a519c168caa19c169dcc7e709bd4ac19c0c76e885137e"
+    },
+    "WIKI_SKILL_WITNESS_PATHS_20261013.json": {
+      "bytes": 196585,
+      "sha256": "9bd356f00919b2b9243b1810ff432c0a8ce7cf5c42c7ccc4ae78d2cd1d423355"
+    },
+    "WIKI_F_BATTLE_IMPLEMENTATION_HANDOFF_20261013.json": {
+      "bytes": 78293,
+      "sha256": "f61cdb10a900d7ca8c9ab3a37507fce66ce86d440ee786cf849be7b3383e7352"
+    },
+    "WIKI_WORK_P0_ACTION_PACKET_20261013.json": {
+      "bytes": 10230,
+      "sha256": "6c0b3822274c72287b32f49a1b8b47bbbea031376912459449e73b9a213d4e4b"
+    },
+    "WIKI_WORK_P0_ACTION_PACKET_20261013.md": {
+      "bytes": 5269,
+      "sha256": "0ba104d21fc4614374736252a89daadd13744a8f703190017e86355069d3181e"
+    },
+    "WIKI_FULL_DAT_ADAPTER_COVERAGE_20261013.json": {
+      "bytes": 2018234,
+      "sha256": "31981ee29a41e916f16886ae62e7475d3ca5fc9bca14d564f38aa5246f29b703"
+    },
+    "WIKI_MISSILE_PARENT_CHILD_DAMAGE_BRIDGE_20261013.json": {
+      "bytes": 858338,
+      "sha256": "c132621c8adef79bdbebd7074838ff5f17ce297339af0273ca5378bab9525ba1"
+    },
+    "WIKI_MISSILE_CHAIN_FIXTURE4_20261013.json": {
+      "bytes": 10470,
+      "sha256": "9f40f7014266020c2b115176ceb52f098654efead93b2a613a5698f1e3c8d023"
+    },
+    "WIKI_UNRESOLVED_EQUIPMENT_REFS_20261013.json": {
+      "bytes": 11254,
+      "sha256": "050f8b16b1b77e37062b7650454e43d39c6faa24648e320ca002bbb5a1d9e9e9"
+    },
+    "WIKI_MOVETYPE_STATIC_IMPACT_20261013.json": {
+      "bytes": 64519,
+      "sha256": "818f0ea50ac22425e79bef1fae1c73b0aef64e3278955a502a5f4722f24f4dfe"
+    },
+    "WIKI_MOVETYPE_261CELL_CROSSWALK_20261013.json": {
+      "bytes": 94290,
+      "sha256": "88b89e1fa45e47f63d7bba4a6019cac68a6a6dd11ae68ee25f8b2c724b6f97bb"
+    },
+    "WIKI_MOVETYPE_RUSH_BOUNDARY_20261013.json": {
+      "bytes": 2435,
+      "sha256": "8e1c27029a828add55def553d8a7e67f57837d6901919c94bb99f7454251cf82"
+    },
+    "WIKI_SPECIAL_SKILL4C_MP_INPUT_20261013.json": {
+      "bytes": 518777,
+      "sha256": "583487fcb023624ec419a68dbbb917f63a8bde33a9b120811847b03aa8a5cc60"
+    },
+    "WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json": {
+      "bytes": 16187,
+      "sha256": "ad82c5c17ca4ccc18c918ad4e84d5f174abb419458a6c027d161e7a5aeab6e5f"
+    },
+    "WIKI_HEAL_ATTRIBUTE_CALLBACK_INPUT_20261013.json": {
+      "bytes": 4776,
+      "sha256": "6b4bd7abdf18f13b12cc79e6c4d5b813979bf3c22e54ee53f6634006bd122f4f"
+    },
+    "WIKI_HEAL_ATTRIBUTE_REACHABILITY_20261013.json": {
+      "bytes": 24410,
+      "sha256": "98ff6d78622e24a26da491b262f2eeab507e814e3f2550db9e06aed22e8a7768"
+    },
+    "WIKI_MP_NEGATIVE_EFFECTIVE_20261013.json": {
+      "bytes": 87623,
+      "sha256": "8a20e4a577d0557282b87838d60cefbb4bf0d2159defc8941c2e572bc0e3e6af"
+    },
+    "WIKI_NEGATIVE_HEAL_WORK_STAGE44_20261013.json": {
+      "bytes": 15023,
+      "sha256": "609b43eee15c3cc0f03582953973861f9ee79d8c9c34dda6fd68b689de90a207"
+    },
+    "WIKI_HEAL_ADD2_STATIC_INPUT_20261013.json": {
+      "bytes": 99101,
+      "sha256": "01f5c2a368c55912da1f861aff8fe67340f17f8fa89f3d4789447c0fe9441916"
+    },
+    "WIKI_HEAL_ADD2_20FIXTURES_20261013.json": {
+      "bytes": 19996,
+      "sha256": "98cf872726edaea27e5a62bcc3bb5c9bdded71c0f6f8d8d13e5b93db0177a918"
+    },
+    "WIKI_HEAL_ATTR_ADD2_INTERACTION_20261013.json": {
+      "bytes": 5910,
+      "sha256": "b82bf37d4a06afecd67ee46a89b0ff86c25c98bb2401401627440f415a20c4e7"
+    },
+    "WIKI_AT_NULL_INHERITANCE_20261013.json": {
+      "bytes": 3617226,
+      "sha256": "6efd486a330e83ed735f55e641471ceb57b1e6f3cc94215dd3b3d50a988b6d70"
+    },
+    "WIKI_AT_SHADOWED15_20261013.json": {
+      "bytes": 15598,
+      "sha256": "fcbaac12516b7a5c60c50e1b620f1c1a732ac352b90d2cf4cc699cfc503dbeb2"
+    },
+    "WIKI_AT_WORK_NATIVE_SMOKE_20261013.json": {
+      "bytes": 7771,
+      "sha256": "7d82ef7276a31f4cc4212dd6ba7ea6e5fa9bbbe559753722afcc536315e1d427"
+    },
+    "WIKI_AT_BATTLE_FIXTURE20_20261013.json": {
+      "bytes": 31934,
+      "sha256": "48edc2af5b39bc0b942aecde8b9a6eceb18b6dccb6786b296fcd567410d4e4d6"
+    },
+    "WIKI_SKILL_EFFECTIVE_NEXT_GRAPH_20261013.json": {
+      "bytes": 116135,
+      "sha256": "bdcd679330f61bd1e865ed831f39f59e282e112707cced58fd3099110eb3f35e"
+    },
+    "WIKI_SKILL_EFFECTIVE_ALLROOTS_20261013.json": {
+      "bytes": 132726,
+      "sha256": "94e458ce124295a2abc22b22787d83e7271e43a0a5de0a371d1da5aa5fcd77f6"
+    },
+    "WIKI_MP_AT_ADAPTER_INTERSECTION_20261013.json": {
+      "bytes": 8067,
+      "sha256": "f14a5b63a5eb3dd1bfdf24db7cf1ec0d7de89a484b279ae2fb9065b58034796d"
+    },
+    "WIKI_WORK_HEAL_FLASH_GATE_CANDIDATES_20261013.json": {
+      "bytes": 330894,
+      "sha256": "4cb1d84ac7a5360eb21441ee7d22462a2d6c727b5f4fdfae53cf12a1fb36f52f"
+    },
+    "WIKI_WORK_FLASH_MINUS4_RETURN_ROUTE_20261013.json": {
+      "bytes": 10977,
+      "sha256": "2260e444017ff0cbe80bd1fe3f871d6aec87eb91bbecd0bd1a874bd2465a9d1f"
+    },
+    "WIKI_WORK_FLASH_NEGATIVE3_SMOKE_20261013.json": {
+      "bytes": 2602,
+      "sha256": "0612dc2ca98b3ec324269c68ecae97b1be90f2372a46444d3aa86002df7a2231"
+    },
+    "WIKI_FMRIM_UNIT_EVENT_GRANT_PROVENANCE_20261013.json": {
+      "bytes": 8496,
+      "sha256": "7f88f5bd61e128a5cc59d47d87cba74bb692966442b8005b043733d7b702f50a"
+    },
+    "WIKI_WORK_MHEAL_FIELD_PROVENANCE_20261013.json": {
+      "bytes": 11963,
+      "sha256": "b35a928103c13ee9628e6c93ab9b20332267bc5c819872b5f31e180b113561a8"
+    }
+  }
+}

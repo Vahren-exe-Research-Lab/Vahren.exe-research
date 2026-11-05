@@ -1,0 +1,454 @@
+{
+  "case_only_aliases": [
+    {
+      "script": "GetTurn",
+      "engine_strings": [
+        "getTurn"
+      ],
+      "uses": 1
+    },
+    {
+      "script": "HideLink",
+      "engine_strings": [
+        "hideLink"
+      ],
+      "uses": 1
+    },
+    {
+      "script": "LinkSpot",
+      "engine_strings": [
+        "linkSpot"
+      ],
+      "uses": 5
+    },
+    {
+      "script": "Linkspot",
+      "engine_strings": [
+        "linkSpot"
+      ],
+      "uses": 7
+    },
+    {
+      "script": "PlayBGM",
+      "engine_strings": [
+        "playBGM"
+      ],
+      "uses": 4
+    },
+    {
+      "script": "PlaySE",
+      "engine_strings": [
+        "playSE"
+      ],
+      "uses": 12
+    },
+    {
+      "script": "SkillTroop",
+      "engine_strings": [
+        "skillTroop"
+      ],
+      "uses": 148
+    },
+    {
+      "script": "UnionPower",
+      "engine_strings": [
+        "unionPower"
+      ],
+      "uses": 3
+    },
+    {
+      "script": "addcastle",
+      "engine_strings": [
+        "addCastle"
+      ],
+      "uses": 1
+    },
+    {
+      "script": "adddiplo",
+      "engine_strings": [
+        "addDiplo"
+      ],
+      "uses": 15
+    },
+    {
+      "script": "addfriend",
+      "engine_strings": [
+        "addFriend"
+      ],
+      "uses": 1
+    },
+    {
+      "script": "addgain",
+      "engine_strings": [
+        "addGain"
+      ],
+      "uses": 11
+    },
+    {
+      "script": "addlevel",
+      "engine_strings": [
+        "addLevel"
+      ],
+      "uses": 22
+    },
+    {
+      "script": "addmoney",
+      "engine_strings": [
+        "addMoney"
+      ],
+      "uses": 33
+    },
+    {
+      "script": "addskill",
+      "engine_strings": [
+        "addSkill"
+      ],
+      "uses": 75
+    },
+    {
+      "script": "addskill2",
+      "engine_strings": [
+        "addSkill2"
+      ],
+      "uses": 4
+    },
+    {
+      "script": "addstatus",
+      "engine_strings": [
+        "addStatus"
+      ],
+      "uses": 12
+    },
+    {
+      "script": "addtrust",
+      "engine_strings": [
+        "addTrust"
+      ],
+      "uses": 3
+    },
+    {
+      "script": "addunit",
+      "engine_strings": [
+        "addUnit"
+      ],
+      "uses": 47
+    },
+    {
+      "script": "addvar",
+      "engine_strings": [
+        "addVar"
+      ],
+      "uses": 2
+    },
+    {
+      "script": "changerace",
+      "engine_strings": [
+        "changeRace"
+      ],
+      "uses": 12
+    },
+    {
+      "script": "choicetitle",
+      "engine_strings": [
+        "choiceTitle"
+      ],
+      "uses": 20
+    },
+    {
+      "script": "countmoney",
+      "engine_strings": [
+        "countMoney"
+      ],
+      "uses": 23
+    },
+    {
+      "script": "getturn",
+      "engine_strings": [
+        "getTurn"
+      ],
+      "uses": 1
+    },
+    {
+      "script": "hidespot",
+      "engine_strings": [
+        "hideSpot"
+      ],
+      "uses": 12
+    },
+    {
+      "script": "inpower",
+      "engine_strings": [
+        "inPower"
+      ],
+      "uses": 4
+    },
+    {
+      "script": "isNewturn",
+      "engine_strings": [
+        "isNewTurn"
+      ],
+      "uses": 2
+    },
+    {
+      "script": "isPlayerturn",
+      "engine_strings": [
+        "isPlayerTurn"
+      ],
+      "uses": 2
+    },
+    {
+      "script": "isalive",
+      "engine_strings": [
+        "isAlive"
+      ],
+      "uses": 11
+    },
+    {
+      "script": "ismaster",
+      "engine_strings": [
+        "isMaster"
+      ],
+      "uses": 19
+    },
+    {
+      "script": "isplayer",
+      "engine_strings": [
+        "isPlayer"
+      ],
+      "uses": 6
+    },
+    {
+      "script": "iswar",
+      "engine_strings": [
+        "isWar"
+      ],
+      "uses": 1
+    },
+    {
+      "script": "linkspot",
+      "engine_strings": [
+        "linkSpot"
+      ],
+      "uses": 6
+    },
+    {
+      "script": "playbgm",
+      "engine_strings": [
+        "playBGM"
+      ],
+      "uses": 2
+    },
+    {
+      "script": "playse",
+      "engine_strings": [
+        "playSE"
+      ],
+      "uses": 22
+    },
+    {
+      "script": "pushdiplo",
+      "engine_strings": [
+        "pushDiplo"
+      ],
+      "uses": 7
+    },
+    {
+      "script": "pushspot",
+      "engine_strings": [
+        "pushSpot"
+      ],
+      "uses": 2
+    },
+    {
+      "script": "roamunit",
+      "engine_strings": [
+        "roamUnit"
+      ],
+      "uses": 2
+    },
+    {
+      "script": "showspot",
+      "engine_strings": [
+        "showSpot"
+      ],
+      "uses": 17
+    },
+    {
+      "script": "stopbgm",
+      "engine_strings": [
+        "stopBGM"
+      ],
+      "uses": 2
+    },
+    {
+      "script": "storeAllspot",
+      "engine_strings": [
+        "storeAllSpot"
+      ],
+      "uses": 1
+    },
+    {
+      "script": "storePowerofUnit",
+      "engine_strings": [
+        "storePowerOfUnit"
+      ],
+      "uses": 12
+    },
+    {
+      "script": "storeRaceofUnit",
+      "engine_strings": [
+        "storeRaceOfUnit"
+      ],
+      "uses": 4
+    },
+    {
+      "script": "storeSkillofUnit",
+      "engine_strings": [
+        "storeSkillOfUnit"
+      ],
+      "uses": 1
+    },
+    {
+      "script": "storeSpotofPower",
+      "engine_strings": [
+        "storeSpotOfPower"
+      ],
+      "uses": 2
+    },
+    {
+      "script": "storeSpotofUnit",
+      "engine_strings": [
+        "storeSpotOfUnit"
+      ],
+      "uses": 3
+    },
+    {
+      "script": "storeSpotofpower",
+      "engine_strings": [
+        "storeSpotOfPower"
+      ],
+      "uses": 2
+    },
+    {
+      "script": "storeUnitofPower",
+      "engine_strings": [
+        "storeUnitOfPower"
+      ],
+      "uses": 5
+    },
+    {
+      "script": "storebaseClassOfUnit",
+      "engine_strings": [
+        "storeBaseClassOfUnit"
+      ],
+      "uses": 1
+    },
+    {
+      "script": "storecompower",
+      "engine_strings": [
+        "storeComPower"
+      ],
+      "uses": 1
+    },
+    {
+      "script": "storeskillofunit",
+      "engine_strings": [
+        "storeSkillOfUnit"
+      ],
+      "uses": 1
+    },
+    {
+      "script": "storespotofpower",
+      "engine_strings": [
+        "storeSpotOfPower"
+      ],
+      "uses": 10
+    },
+    {
+      "script": "storeunitofpower",
+      "engine_strings": [
+        "storeUnitOfPower"
+      ],
+      "uses": 8
+    },
+    {
+      "script": "subvar",
+      "engine_strings": [
+        "subVar"
+      ],
+      "uses": 6
+    }
+  ],
+  "true_unmatched": [
+    {
+      "name": "ammo",
+      "uses": 1,
+      "examples": [
+        "serihu_pls.dat:1026"
+      ]
+    },
+    {
+      "name": "backscroll",
+      "uses": 108,
+      "examples": [
+        "1000_チュートリアル\\tuto_event1.dat:330",
+        "1000_チュートリアル\\tuto_event1.dat:347",
+        "1000_チュートリアル\\tuto_event1.dat:413",
+        "1000_チュートリアル\\tuto_event1.dat:473"
+      ]
+    },
+    {
+      "name": "chat3",
+      "uses": 4,
+      "examples": [
+        "2000_勢力ストーリー\\po22_event.dat:531",
+        "2000_勢力ストーリー\\po22_event.dat:533",
+        "44_内政_迫真の世紀\\po22_kaiso.dat:493",
+        "44_内政_迫真の世紀\\po22_kaiso.dat:495"
+      ]
+    },
+    {
+      "name": "eras",
+      "uses": 1,
+      "examples": [
+        "102_ランダムイベント\\randomev71-80.dat:546"
+      ]
+    },
+    {
+      "name": "fafeout",
+      "uses": 2,
+      "examples": [
+        "2000_勢力ストーリー\\po25_event.dat:3335",
+        "44_内政_迫真の世紀\\po25_kaiso.dat:3145"
+      ]
+    },
+    {
+      "name": "hideimage",
+      "uses": 12,
+      "examples": [
+        "2000_勢力ストーリー\\po22_event.dat:1719",
+        "2000_勢力ストーリー\\po22_event.dat:1723",
+        "2000_勢力ストーリー\\po22_event.dat:1728",
+        "2000_勢力ストーリー\\po22_event.dat:1737"
+      ]
+    },
+    {
+      "name": "isNPC",
+      "uses": 2,
+      "examples": [
+        "100_イベント汎用\\event_samson.dat:30",
+        "100_イベント汎用\\event_samson.dat:34"
+      ]
+    },
+    {
+      "name": "sFriend",
+      "uses": 5,
+      "examples": [
+        "116_仮設ランダムイベント61-70\\randomev66_AddPower_b.dat:212",
+        "116_仮設ランダムイベント61-70\\randomev66_AddPower_b.dat:220",
+        "116_仮設ランダムイベント61-70\\randomev66_AddPower_b.dat:225",
+        "116_仮設ランダムイベント61-70\\randomev66_AddPower_b.dat:230"
+      ]
+    }
+  ]
+}

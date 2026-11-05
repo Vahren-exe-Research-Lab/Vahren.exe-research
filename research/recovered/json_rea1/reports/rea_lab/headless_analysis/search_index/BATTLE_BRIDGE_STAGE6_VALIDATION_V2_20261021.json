@@ -1,0 +1,39 @@
+{
+  "research_id": "BRIDGE-20261021-RESEARCH-06-V2",
+  "state": "STAGE6_STATIC+SYNTHETIC+WIN32_SELFTEST_ONLY / GAME_NOT_RUN / WORK_NOT_READY",
+  "extra_checks": {
+    "stage6_prior_verified": true,
+    "self_process_winapi_modulebase": true,
+    "self_process_original_not_touched": true,
+    "findings_19_ids_unique": true,
+    "findings_all_evidence_present": true,
+    "stage6_report_owner_recovery_append": true,
+    "work_gates_not_changed": true,
+    "original_not_executed": true
+  },
+  "extra_checks_passed": 8,
+  "extra_checks_total": 8,
+  "prior_stage6_synthetic_tests": 50,
+  "native_original_game_battle_roundtrips": 0,
+  "work_transfer_objective_gate_pass": 2,
+  "work_transfer_gate_total": 9,
+  "subjective_research_readiness_percent": 47.5,
+  "source_sha256_refs": [
+    {
+      "name": "BATTLE_BRIDGE_STAGE6_VALIDATION_20261021.json",
+      "sha": "4325906A371862324D3A40AFF7A38DEDC0A0107D654DCDC723C088DB2FFE60C7"
+    },
+    {
+      "name": "BATTLE_BRIDGE_MODULEBASE_SELFTEST_20261021.json",
+      "sha": "6AF21D97204D22DAD6256DA761B8C850BAC36406C9B8788B72A61C44E76EF23D"
+    },
+    {
+      "name": "BATTLE_TAKEOVER_RESEARCH_STAGE6_20261021.md",
+      "sha": "413598A3A48183943F19EC0D2449DECD561041804BD3164D3CD66730F6C90568"
+    },
+    {
+      "name": "BATTLE_BRIDGE_FINDINGS_LEDGER.jsonl",
+      "sha": "8380DB84F68FE2FE1C6B458C934977FF9A6FA73665CD7605DF6B349D34635630"
+    }
+  ]
+}

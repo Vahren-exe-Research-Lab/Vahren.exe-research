@@ -4,6 +4,21 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-50"></a>
+## uVar1 + 0x50
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json 行 401](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json?plain=1#L401-L401) — "context_after": "(uVar1 = *(uint *)(uVar1 + 0x50), *(char *)(uVar1 + 0x79) != '\\0')) {"
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json 行 587](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json?plain=1#L587-L587) — "context_after": "(*(char *)(*(int *)(uVar1 + 0x50) + 0x79) != '\\0')) {"
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+<a id="field-79"></a>
+## uVar1 + 0x79
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json 行 401](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json?plain=1#L401-L401) — "context_after": "(uVar1 = *(uint *)(uVar1 + 0x50), *(char *)(uVar1 + 0x79) != '\\0')) {"
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
 <a id="field-1d4"></a>
 ## uVar1 + 0x1D4
 

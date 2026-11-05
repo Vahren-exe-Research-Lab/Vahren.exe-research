@@ -1,0 +1,4190 @@
+{
+  "status": "WORK_SAME_KIND_PARENT_PROPERTY_PROJECTION / NOT ORIGINAL_GAMEPLAY",
+  "source_index": "WIKI_FULL_SKILL_INDEX_20261013.json.gz",
+  "roots_unit_class_direct": 2435,
+  "source_skill_nodes": 16554,
+  "direct_only_reachable_count": 11953,
+  "effective_parent_links_reachable_count": 12266,
+  "new_reached_by_effective_parent_links": 313,
+  "still_unreached_in_direct_grant_model": 4288,
+  "new_by_effective_func": {
+    "missile": 148,
+    "UNSET": 157,
+    "summon": 7,
+    "heal": 1
+  },
+  "effective_link_origin_counters": {
+    "provided/next3/own": 4773,
+    "existing_edges/next3/own": 9912,
+    "provided/next2/own": 830,
+    "existing_edges/next2/own": 4000,
+    "provided/next/own": 2593,
+    "existing_edges/next/own": 2248,
+    "provided/next2/inherited": 81,
+    "existing_edges/next2/inherited": 373,
+    "provided/just_next/inherited": 307,
+    "existing_edges/just_next/inherited": 317,
+    "provided/pair_next/inherited": 437,
+    "existing_edges/pair_next/inherited": 386,
+    "provided/next3/inherited": 576,
+    "existing_edges/next3/inherited": 1235,
+    "provided/next/inherited": 501,
+    "provided/pair_next/own": 751,
+    "existing_edges/pair_next/own": 640,
+    "provided/just_next/own": 265,
+    "existing_edges/just_next/own": 299,
+    "existing_edges/next/inherited": 363
+  },
+  "inherited_edge_target_top": [
+    [
+      "seiretsu_b",
+      189
+    ],
+    [
+      "masupa_nt3",
+      120
+    ],
+    [
+      "gekirei_nt",
+      38
+    ],
+    [
+      "sp_hitotachi2_pr",
+      31
+    ],
+    [
+      "rrmsaw_ef",
+      29
+    ],
+    [
+      "sp_hitotachi2_sound",
+      28
+    ],
+    [
+      "sp_jj9_hit1",
+      27
+    ],
+    [
+      "zan1_pr0",
+      26
+    ],
+    [
+      "ef_magic",
+      26
+    ],
+    [
+      "b_gun_pr0",
+      25
+    ],
+    [
+      "ef_magic2",
+      22
+    ],
+    [
+      "dtswk2_summon_ntFeff",
+      22
+    ],
+    [
+      "asasin_glove_03_finger_atk_1",
+      20
+    ],
+    [
+      "asasin_glove_03_finger_mag_1",
+      20
+    ],
+    [
+      "kusari_ks_nt1",
+      19
+    ],
+    [
+      "kusari_ks_nt2",
+      19
+    ],
+    [
+      "s_power",
+      18
+    ],
+    [
+      "sp_tsuri_nt1",
+      18
+    ],
+    [
+      "ef_gun",
+      16
+    ],
+    [
+      "sp_ganban_pr1",
+      15
+    ],
+    [
+      "ef_rmla_yari20",
+      14
+    ],
+    [
+      "b_star_dreamer_nt5",
+      12
+    ],
+    [
+      "b_star_dreamer_nt7",
+      12
+    ],
+    [
+      "b_star_dreamer_nt7b",
+      12
+    ],
+    [
+      "b_star_dreamer_nt7c",
+      12
+    ],
+    [
+      "b_star_dreamer_nt9",
+      12
+    ],
+    [
+      "asasin_glove_04_finger_atk",
+      12
+    ],
+    [
+      "asasin_glove_04_finger_mag",
+      12
+    ],
+    [
+      "sp_ranbu_nt0",
+      11
+    ],
+    [
+      "sp_ranbu_pr0",
+      11
+    ],
+    [
+      "b_gun_kn",
+      11
+    ],
+    [
+      "suzusaw_ef",
+      11
+    ],
+    [
+      "sadassaw_ef",
+      11
+    ],
+    [
+      "sp_goiko_nt4_1",
+      11
+    ],
+    [
+      "sp_goiko_nt4_2",
+      11
+    ],
+    [
+      "sp_goiko_nt4_3",
+      11
+    ],
+    [
+      "sp_goiko_nt4_4",
+      11
+    ],
+    [
+      "dtswk2_summon_ntF",
+      11
+    ],
+    [
+      "ef_gun2",
+      11
+    ],
+    [
+      "dtswk2_summon_ntF_r",
+      11
+    ]
+  ],
+  "effective_missing_target_count": 197,
+  "effective_missing_target_top": [
+    {
+      "target": "none",
+      "field": "next2",
+      "occurrences": 18
+    },
+    {
+      "target": "b_whip_js",
+      "field": "just_next",
+      "occurrences": 8
+    },
+    {
+      "target": "eff_jinzaisp",
+      "field": "next3",
+      "occurrences": 6
+    },
+    {
+      "target": "hazure",
+      "field": "next2",
+      "occurrences": 6
+    },
+    {
+      "target": "ef_rmla_yari",
+      "field": "next3",
+      "occurrences": 4
+    },
+    {
+      "target": "ef_rmla_yari0",
+      "field": "next3",
+      "occurrences": 4
+    },
+    {
+      "target": "dummy",
+      "field": "next2",
+      "occurrences": 4
+    },
+    {
+      "target": "diyushi_dam1",
+      "field": "next3",
+      "occurrences": 4
+    },
+    {
+      "target": "giant_swing_CountB_Eff",
+      "field": "next3",
+      "occurrences": 3
+    },
+    {
+      "target": "ncnc_cannon_nt3_ef2",
+      "field": "next3",
+      "occurrences": 3
+    },
+    {
+      "target": "sp_masupa5_pair_o",
+      "field": "pair_next",
+      "occurrences": 3
+    },
+    {
+      "target": "sp_icg_bomb0",
+      "field": "next",
+      "occurrences": 3
+    },
+    {
+      "target": "naidesu",
+      "field": "next3",
+      "occurrences": 3
+    },
+    {
+      "target": "stove_fire_chainA_00_00",
+      "field": "next",
+      "occurrences": 2
+    },
+    {
+      "target": "new_misairu_miss_nt3b",
+      "field": "next2",
+      "occurrences": 2
+    },
+    {
+      "target": "kuso_yari1_js3",
+      "field": "next3",
+      "occurrences": 2
+    },
+    {
+      "target": "monzetsu_fire_ensyou_mag",
+      "field": "next3",
+      "occurrences": 2
+    },
+    {
+      "target": "e893zan1_nt0",
+      "field": "next2",
+      "occurrences": 2
+    },
+    {
+      "target": "sp_bio_so",
+      "field": "pair_next",
+      "occurrences": 2
+    },
+    {
+      "target": "b_tsuri_nt7e",
+      "field": "next3",
+      "occurrences": 2
+    },
+    {
+      "target": "m_ligh_js",
+      "field": "next3",
+      "occurrences": 2
+    },
+    {
+      "target": "sww_whip_js",
+      "field": "just_next",
+      "occurrences": 2
+    },
+    {
+      "target": "b_jibaku_kimihiko_pr4",
+      "field": "next3",
+      "occurrences": 2
+    },
+    {
+      "target": "bsp_masupa5_nt5",
+      "field": "next3",
+      "occurrences": 2
+    },
+    {
+      "target": "bsp_masupa5_nt6",
+      "field": "next3",
+      "occurrences": 2
+    },
+    {
+      "target": "sp_vanban_nt4",
+      "field": "next3",
+      "occurrences": 2
+    },
+    {
+      "target": "b_jibaku_pr4",
+      "field": "next3",
+      "occurrences": 2
+    },
+    {
+      "target": "s_cannon_pr2",
+      "field": "next3",
+      "occurrences": 2
+    },
+    {
+      "target": "s_cannon_pr4",
+      "field": "next3",
+      "occurrences": 2
+    },
+    {
+      "target": "sake_rocket_bomber_pr4",
+      "field": "next3",
+      "occurrences": 2
+    },
+    {
+      "target": "sakenomiga_summon_pr0",
+      "field": "pair_next",
+      "occurrences": 2
+    },
+    {
+      "target": "ef_rpgzan",
+      "field": "next",
+      "occurrences": 1
+    },
+    {
+      "target": "b_cannon_apcr_ol",
+      "field": "next3",
+      "occurrences": 1
+    },
+    {
+      "target": "hermit_whip_js",
+      "field": "just_next",
+      "occurrences": 1
+    },
+    {
+      "target": "icg_ch1_js",
+      "field": "next3",
+      "occurrences": 1
+    },
+    {
+      "target": "b_whip_js",
+      "field": "next3",
+      "occurrences": 1
+    },
+    {
+      "target": "dsnch1_js",
+      "field": "next3",
+      "occurrences": 1
+    },
+    {
+      "target": "whip_js",
+      "field": "just_next",
+      "occurrences": 1
+    },
+    {
+      "target": "ef_yuwaku",
+      "field": "next",
+      "occurrences": 1
+    },
+    {
+      "target": "rfire_cannon_pr2b",
+      "field": "next",
+      "occurrences": 1
+    },
+    {
+      "target": "s_ncnc_dead2_10",
+      "field": "next3",
+      "occurrences": 1
+    },
+    {
+      "target": "re_cannon_nt1",
+      "field": "next3",
+      "occurrences": 1
+    },
+    {
+      "target": "car_dead_nt8",
+      "field": "next3",
+      "occurrences": 1
+    },
+    {
+      "target": "monzetsu_fire_ensyou_eff_fake_at",
+      "field": "next3",
+      "occurrences": 1
+    },
+    {
+      "target": "sp_udk_pr1",
+      "field": "next3",
+      "occurrences": 1
+    }
+  ],
+  "witnesses_new_reachability": [
+    {
+      "skill": "clown_torch_nt1",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 1894,
+        "parent": null
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:cl",
+            "source": "a_default/script/10_ユニット/12_クラピース労働project.dat",
+            "line": 2,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_clown_luna",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_clown_luna_nt0",
+            "via_from": "sp_clown_luna",
+            "link_field": "next3",
+            "field_declared_by": "sp_clown_luna",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_clown_luna_nt1",
+            "via_from": "sp_clown_luna_nt0",
+            "link_field": "next3",
+            "field_declared_by": "sp_clown_luna_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "clown_torch_nt0b",
+            "via_from": "sp_clown_luna_nt1",
+            "link_field": "next3",
+            "field_declared_by": "sp_clown_luna_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "clown_torch_nt1",
+            "via_from": "clown_torch_nt0b",
+            "link_field": "next3",
+            "field_declared_by": "clown_torch_nt0",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "skill": "clown_torch_nt2",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 1913,
+        "parent": "clown_torch_nt1"
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:cl",
+            "source": "a_default/script/10_ユニット/12_クラピース労働project.dat",
+            "line": 2,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_clown_luna",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_clown_luna_nt0",
+            "via_from": "sp_clown_luna",
+            "link_field": "next3",
+            "field_declared_by": "sp_clown_luna",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_clown_luna_nt1",
+            "via_from": "sp_clown_luna_nt0",
+            "link_field": "next3",
+            "field_declared_by": "sp_clown_luna_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "clown_torch_nt0b",
+            "via_from": "sp_clown_luna_nt1",
+            "link_field": "next3",
+            "field_declared_by": "sp_clown_luna_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "clown_torch_nt2",
+            "via_from": "clown_torch_nt0b",
+            "link_field": "next3",
+            "field_declared_by": "clown_torch_nt0",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "skill": "ef_tdn_wing",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 2370,
+        "parent": null
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:p_tdnastk",
+            "source": "a_default/script/10_ユニット/B_5151_古代アステカ王国.dat",
+            "line": 72,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "p_sp_tdnastk",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_eliz_pr0",
+            "via_from": "p_sp_tdnastk",
+            "link_field": "pair_next",
+            "field_declared_by": "sp_tdnastk",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "ef_tdn_wing",
+            "via_from": "sp_eliz_pr0",
+            "link_field": "next3",
+            "field_declared_by": "sp_eliz_pr0",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "skill": "ef_tdn_wing3",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 2381,
+        "parent": null
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:p_tdnastk",
+            "source": "a_default/script/10_ユニット/B_5151_古代アステカ王国.dat",
+            "line": 72,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "p_sp_tdnastk",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_eliz_pr0",
+            "via_from": "p_sp_tdnastk",
+            "link_field": "pair_next",
+            "field_declared_by": "sp_tdnastk",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "ef_tdn_wing",
+            "via_from": "sp_eliz_pr0",
+            "link_field": "next3",
+            "field_declared_by": "sp_eliz_pr0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "ef_tdn_wing3",
+            "via_from": "ef_tdn_wing",
+            "link_field": "next",
+            "field_declared_by": "ef_tdn_wing",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "skill": "ef_tdn_wing4",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 2393,
+        "parent": null
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:p_tdnastk",
+            "source": "a_default/script/10_ユニット/B_5151_古代アステカ王国.dat",
+            "line": 72,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "p_sp_tdnastk",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_eliz_pr0",
+            "via_from": "p_sp_tdnastk",
+            "link_field": "pair_next",
+            "field_declared_by": "sp_tdnastk",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "ef_tdn_wing",
+            "via_from": "sp_eliz_pr0",
+            "link_field": "next3",
+            "field_declared_by": "sp_eliz_pr0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "ef_tdn_wing3",
+            "via_from": "ef_tdn_wing",
+            "link_field": "next",
+            "field_declared_by": "ef_tdn_wing",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "ef_tdn_wing4",
+            "via_from": "ef_tdn_wing3",
+            "link_field": "next",
+            "field_declared_by": "ef_tdn_wing3",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "skill": "kmn_beam_pr0",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 8274,
+        "parent": null
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:hzn23",
+            "source": "a_default/script/10_ユニット/B_23_リュージボス.dat",
+            "line": 409,
+            "field": "skill"
+          },
+          {
+            "owner": "unit:hzn26",
+            "source": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_boss.dat",
+            "line": 1,
+            "field": "skill"
+          },
+          {
+            "owner": "unit:dr_hzn",
+            "source": "a_default/script/3000_淫ドリームマッチ/DBH_HZN.dat",
+            "line": 2,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "hzn_beam26",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "kmn_beam_pr0",
+            "via_from": "hzn_beam26",
+            "link_field": "pair_next",
+            "field_declared_by": "kmn_beam",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "skill": "oyakata_summon_pr0",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/32_ボススキル/B_5_伏見稲荷大社.dat",
+        "line": 899,
+        "parent": null
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:jirachi_r",
+            "source": "a_default/script/5000_ランダムシナリオ/RB_ボス人材.dat",
+            "line": 510,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "oyakata_summon_r",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "oyakata_summon_pr0",
+            "via_from": "oyakata_summon_r",
+            "link_field": "pair_next",
+            "field_declared_by": "oyakata_summon",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "skill": "s_gun_pr0",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 4810,
+        "parent": null
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "class:ss030",
+            "source": "a_default/script/20_クラス/24_26_ONDISK_二軍_原理.dat",
+            "line": 1086,
+            "field": "skill"
+          },
+          {
+            "owner": "class:ss0302",
+            "source": "a_default/script/20_クラス/24_26_ONDISK_二軍_原理.dat",
+            "line": 1116,
+            "field": "skill"
+          },
+          {
+            "owner": "class:ss0303",
+            "source": "a_default/script/20_クラス/24_26_ONDISK_二軍_原理.dat",
+            "line": 1132,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sawedoff",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "s_gun_pr0",
+            "via_from": "sawedoff",
+            "link_field": "pair_next",
+            "field_declared_by": "s_gun_so",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "skill": "s_gun_pr_hibana",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 4838,
+        "parent": null
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "class:ss030",
+            "source": "a_default/script/20_クラス/24_26_ONDISK_二軍_原理.dat",
+            "line": 1086,
+            "field": "skill"
+          },
+          {
+            "owner": "class:ss0302",
+            "source": "a_default/script/20_クラス/24_26_ONDISK_二軍_原理.dat",
+            "line": 1116,
+            "field": "skill"
+          },
+          {
+            "owner": "class:ss0303",
+            "source": "a_default/script/20_クラス/24_26_ONDISK_二軍_原理.dat",
+            "line": 1132,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sawedoff",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "s_gun_pr0",
+            "via_from": "sawedoff",
+            "link_field": "pair_next",
+            "field_declared_by": "s_gun_so",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "s_gun_pr_hibana",
+            "via_from": "s_gun_pr0",
+            "link_field": "next3",
+            "field_declared_by": "s_gun_pr0",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "skill": "s_gun_pr_hibana2",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 4853,
+        "parent": null
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "class:ss030",
+            "source": "a_default/script/20_クラス/24_26_ONDISK_二軍_原理.dat",
+            "line": 1086,
+            "field": "skill"
+          },
+          {
+            "owner": "class:ss0302",
+            "source": "a_default/script/20_クラス/24_26_ONDISK_二軍_原理.dat",
+            "line": 1116,
+            "field": "skill"
+          },
+          {
+            "owner": "class:ss0303",
+            "source": "a_default/script/20_クラス/24_26_ONDISK_二軍_原理.dat",
+            "line": 1132,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sawedoff",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "s_gun_pr0",
+            "via_from": "sawedoff",
+            "link_field": "pair_next",
+            "field_declared_by": "s_gun_so",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "s_gun_pr_hibana2",
+            "via_from": "s_gun_pr0",
+            "link_field": "next3",
+            "field_declared_by": "s_gun_pr0",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_akys_fire_nt0b",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 587,
+        "parent": null
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:akys",
+            "source": "a_default/script/10_ユニット/02_迫真空手道場.dat",
+            "line": 264,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_engine",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_engine_nt1",
+            "via_from": "sp_engine",
+            "link_field": "next2",
+            "field_declared_by": "sp_engine",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt0b",
+            "via_from": "sp_engine_nt1",
+            "link_field": "next",
+            "field_declared_by": "sp_akys_fire_nt0",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_akys_fire_nta",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 595,
+        "parent": null
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:akys",
+            "source": "a_default/script/10_ユニット/02_迫真空手道場.dat",
+            "line": 264,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_engine",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_engine_nt1",
+            "via_from": "sp_engine",
+            "link_field": "next2",
+            "field_declared_by": "sp_engine",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt0b",
+            "via_from": "sp_engine_nt1",
+            "link_field": "next",
+            "field_declared_by": "sp_akys_fire_nt0",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_nta",
+            "via_from": "sp_akys_fire_nt0b",
+            "link_field": "next2",
+            "field_declared_by": "sp_akys_fire_nt0b",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_akys_fire_ntb",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 665,
+        "parent": null
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:akys",
+            "source": "a_default/script/10_ユニット/02_迫真空手道場.dat",
+            "line": 264,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_engine",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_engine_nt1",
+            "via_from": "sp_engine",
+            "link_field": "next2",
+            "field_declared_by": "sp_engine",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt0b",
+            "via_from": "sp_engine_nt1",
+            "link_field": "next",
+            "field_declared_by": "sp_akys_fire_nt0",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_ntb",
+            "via_from": "sp_akys_fire_nt0b",
+            "link_field": "next2",
+            "field_declared_by": "sp_akys_fire_nt0b",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_akys_fire_ntc",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 720,
+        "parent": null
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:akys",
+            "source": "a_default/script/10_ユニット/02_迫真空手道場.dat",
+            "line": 264,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_engine",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_engine_nt1",
+            "via_from": "sp_engine",
+            "link_field": "next2",
+            "field_declared_by": "sp_engine",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt0b",
+            "via_from": "sp_engine_nt1",
+            "link_field": "next",
+            "field_declared_by": "sp_akys_fire_nt0",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_ntc",
+            "via_from": "sp_akys_fire_nt0b",
+            "link_field": "next2",
+            "field_declared_by": "sp_akys_fire_nt0b",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_akys_fire_ntd",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 775,
+        "parent": null
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:akys",
+            "source": "a_default/script/10_ユニット/02_迫真空手道場.dat",
+            "line": 264,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_engine",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_engine_nt1",
+            "via_from": "sp_engine",
+            "link_field": "next2",
+            "field_declared_by": "sp_engine",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt0b",
+            "via_from": "sp_engine_nt1",
+            "link_field": "next",
+            "field_declared_by": "sp_akys_fire_nt0",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_ntd",
+            "via_from": "sp_akys_fire_nt0b",
+            "link_field": "next2",
+            "field_declared_by": "sp_akys_fire_nt0b",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_asasin_punch2_nt2",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/33_仮設アサシン/skill_asasin_00.dat",
+        "line": 146,
+        "parent": null
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:asasin",
+            "source": "a_default/script/10_ユニット/110_イベント人材.dat",
+            "line": 1594,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_asasin_punch",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_asasin_punch2_nt2",
+            "via_from": "sp_asasin_punch",
+            "link_field": "next3",
+            "field_declared_by": "sp_asasin_punch2",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_asasin_punch2_nt6",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/33_仮設アサシン/skill_asasin_00.dat",
+        "line": 209,
+        "parent": null
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:asasin",
+            "source": "a_default/script/10_ユニット/110_イベント人材.dat",
+            "line": 1594,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_asasin_punch",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_asasin_punch2_nt6",
+            "via_from": "sp_asasin_punch",
+            "link_field": "next3",
+            "field_declared_by": "sp_asasin_punch2",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_asasin_punch2_nt6b",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/33_仮設アサシン/skill_asasin_00.dat",
+        "line": 219,
+        "parent": null
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:asasin",
+            "source": "a_default/script/10_ユニット/110_イベント人材.dat",
+            "line": 1594,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_asasin_punch",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_asasin_punch2_nt6",
+            "via_from": "sp_asasin_punch",
+            "link_field": "next3",
+            "field_declared_by": "sp_asasin_punch2",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_asasin_punch2_nt6b",
+            "via_from": "sp_asasin_punch2_nt6",
+            "link_field": "next2",
+            "field_declared_by": "sp_asasin_punch2_nt6",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_asasin_punch2_nt6c",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/33_仮設アサシン/skill_asasin_00.dat",
+        "line": 225,
+        "parent": null
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:asasin",
+            "source": "a_default/script/10_ユニット/110_イベント人材.dat",
+            "line": 1594,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_asasin_punch",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_asasin_punch2_nt6",
+            "via_from": "sp_asasin_punch",
+            "link_field": "next3",
+            "field_declared_by": "sp_asasin_punch2",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_asasin_punch2_nt6c",
+            "via_from": "sp_asasin_punch2_nt6",
+            "link_field": "next2",
+            "field_declared_by": "sp_asasin_punch2_nt6",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_asasin_punch2_pr3",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/33_仮設アサシン/skill_asasin_00.dat",
+        "line": 292,
+        "parent": null
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:asasin",
+            "source": "a_default/script/10_ユニット/110_イベント人材.dat",
+            "line": 1594,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_asasin_punch",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_asasin_punch2_pr3",
+            "via_from": "sp_asasin_punch",
+            "link_field": "next3",
+            "field_declared_by": "sp_asasin_punch2",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_eliz_altar0",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 2227,
+        "parent": null
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:p_tdnastk",
+            "source": "a_default/script/10_ユニット/B_5151_古代アステカ王国.dat",
+            "line": 72,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "p_sp_tdnastk",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_eliz_pr0",
+            "via_from": "p_sp_tdnastk",
+            "link_field": "pair_next",
+            "field_declared_by": "sp_tdnastk",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_eliz_altar0",
+            "via_from": "sp_eliz_pr0",
+            "link_field": "next3",
+            "field_declared_by": "sp_eliz_pr0",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_eliz_pr0",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 2141,
+        "parent": null
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:p_tdnastk",
+            "source": "a_default/script/10_ユニット/B_5151_古代アステカ王国.dat",
+            "line": 72,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "p_sp_tdnastk",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_eliz_pr0",
+            "via_from": "p_sp_tdnastk",
+            "link_field": "pair_next",
+            "field_declared_by": "sp_tdnastk",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_eliz_start_nt2",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 2944,
+        "parent": null
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:p_tdnastk",
+            "source": "a_default/script/10_ユニット/B_5151_古代アステカ王国.dat",
+            "line": 72,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "p_sp_tdnastk",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_eliz_start_nt0",
+            "via_from": "p_sp_tdnastk",
+            "link_field": "next3",
+            "field_declared_by": "sp_tdnastk",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_eliz_start_nt2",
+            "via_from": "sp_eliz_start_nt0",
+            "link_field": "next3",
+            "field_declared_by": "sp_eliz_start_nt0",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_hitotachi2_nt2",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 462,
+        "parent": null
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:ymns",
+            "source": "a_default/script/10_ユニット/11_サセバトミサタ族.dat",
+            "line": 1,
+            "field": "skill"
+          },
+          {
+            "owner": "unit:sik",
+            "source": "a_default/script/10_ユニット/120_スペシャル人材.dat",
+            "line": 3,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_hitotachi",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_hitotachi2_nt2",
+            "via_from": "sp_hitotachi",
+            "link_field": "next3",
+            "field_declared_by": "sp_hitotachi2",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_hitotachi2_nt7",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 623,
+        "parent": null
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:ymns",
+            "source": "a_default/script/10_ユニット/11_サセバトミサタ族.dat",
+            "line": 1,
+            "field": "skill"
+          },
+          {
+            "owner": "unit:sik",
+            "source": "a_default/script/10_ユニット/120_スペシャル人材.dat",
+            "line": 3,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_hitotachi",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_hitotachi2_nt2",
+            "via_from": "sp_hitotachi",
+            "link_field": "next3",
+            "field_declared_by": "sp_hitotachi2",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_hitotachi2_nt7",
+            "via_from": "sp_hitotachi2_nt2",
+            "link_field": "next3",
+            "field_declared_by": "sp_hitotachi2_nt2",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_hitotachi2_nt7_nt1",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 633,
+        "parent": null
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:ymns",
+            "source": "a_default/script/10_ユニット/11_サセバトミサタ族.dat",
+            "line": 1,
+            "field": "skill"
+          },
+          {
+            "owner": "unit:sik",
+            "source": "a_default/script/10_ユニット/120_スペシャル人材.dat",
+            "line": 3,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_hitotachi",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_hitotachi2_nt2",
+            "via_from": "sp_hitotachi",
+            "link_field": "next3",
+            "field_declared_by": "sp_hitotachi2",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_hitotachi2_nt7",
+            "via_from": "sp_hitotachi2_nt2",
+            "link_field": "next3",
+            "field_declared_by": "sp_hitotachi2_nt2",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_hitotachi2_nt7_nt1",
+            "via_from": "sp_hitotachi2_nt7",
+            "link_field": "next2",
+            "field_declared_by": "sp_hitotachi2_nt7",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_jaken2_nt2",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 52,
+        "parent": null
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:yaju",
+            "source": "a_default/script/10_ユニット/02_迫真空手道場.dat",
+            "line": 1,
+            "field": "learn"
+          },
+          {
+            "owner": "unit:csy",
+            "source": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_cyclops.dat",
+            "line": 2,
+            "field": "learn"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_jaken",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_jaken2_nt2",
+            "via_from": "sp_jaken",
+            "link_field": "next3",
+            "field_declared_by": "sp_jaken2",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_ligh_at_ligh2a",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 3336,
+        "parent": null
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:p_tdnastk",
+            "source": "a_default/script/10_ユニット/B_5151_古代アステカ王国.dat",
+            "line": 72,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "p_sp_tdnastk",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_eliz_start_nt0",
+            "via_from": "p_sp_tdnastk",
+            "link_field": "next3",
+            "field_declared_by": "sp_tdnastk",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_ligh_atabcd",
+            "via_from": "sp_eliz_start_nt0",
+            "link_field": "next3",
+            "field_declared_by": "sp_eliz_start_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_atabcd_nt1",
+            "via_from": "sp_ligh_atabcd",
+            "link_field": "next",
+            "field_declared_by": "sp_ligh_atabcd",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_ata",
+            "via_from": "sp_ligh_atabcd_nt1",
+            "link_field": "next2",
+            "field_declared_by": "sp_ligh_atabcd_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh2a",
+            "via_from": "sp_ligh_ata",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_ata",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_ligh_at_ligh2b",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 3377,
+        "parent": null
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:p_tdnastk",
+            "source": "a_default/script/10_ユニット/B_5151_古代アステカ王国.dat",
+            "line": 72,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "p_sp_tdnastk",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_eliz_start_nt0",
+            "via_from": "p_sp_tdnastk",
+            "link_field": "next3",
+            "field_declared_by": "sp_tdnastk",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_ligh_atabcd",
+            "via_from": "sp_eliz_start_nt0",
+            "link_field": "next3",
+            "field_declared_by": "sp_eliz_start_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_atabcd_nt1",
+            "via_from": "sp_ligh_atabcd",
+            "link_field": "next",
+            "field_declared_by": "sp_ligh_atabcd",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_atb",
+            "via_from": "sp_ligh_atabcd_nt1",
+            "link_field": "next2",
+            "field_declared_by": "sp_ligh_atabcd_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh2b",
+            "via_from": "sp_ligh_atb",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_atb",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_ligh_at_ligh2c",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 3423,
+        "parent": null
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:p_tdnastk",
+            "source": "a_default/script/10_ユニット/B_5151_古代アステカ王国.dat",
+            "line": 72,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "p_sp_tdnastk",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_eliz_start_nt0",
+            "via_from": "p_sp_tdnastk",
+            "link_field": "next3",
+            "field_declared_by": "sp_tdnastk",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_ligh_atabcd",
+            "via_from": "sp_eliz_start_nt0",
+            "link_field": "next3",
+            "field_declared_by": "sp_eliz_start_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_atabcd_nt1",
+            "via_from": "sp_ligh_atabcd",
+            "link_field": "next",
+            "field_declared_by": "sp_ligh_atabcd",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_atc",
+            "via_from": "sp_ligh_atabcd_nt1",
+            "link_field": "next2",
+            "field_declared_by": "sp_ligh_atabcd_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh2c",
+            "via_from": "sp_ligh_atc",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_atc",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_ligh_at_ligh2d",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 3473,
+        "parent": null
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:p_tdnastk",
+            "source": "a_default/script/10_ユニット/B_5151_古代アステカ王国.dat",
+            "line": 72,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "p_sp_tdnastk",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_eliz_start_nt0",
+            "via_from": "p_sp_tdnastk",
+            "link_field": "next3",
+            "field_declared_by": "sp_tdnastk",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_ligh_atabcd",
+            "via_from": "sp_eliz_start_nt0",
+            "link_field": "next3",
+            "field_declared_by": "sp_eliz_start_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_atabcd_nt1",
+            "via_from": "sp_ligh_atabcd",
+            "link_field": "next",
+            "field_declared_by": "sp_ligh_atabcd",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_atd",
+            "via_from": "sp_ligh_atabcd_nt1",
+            "link_field": "next2",
+            "field_declared_by": "sp_ligh_atabcd_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh2d",
+            "via_from": "sp_ligh_atd",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_atd",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_ligh_at_ligh3a",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 3346,
+        "parent": "sp_ligh_at_ligh2a"
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:p_tdnastk",
+            "source": "a_default/script/10_ユニット/B_5151_古代アステカ王国.dat",
+            "line": 72,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "p_sp_tdnastk",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_eliz_start_nt0",
+            "via_from": "p_sp_tdnastk",
+            "link_field": "next3",
+            "field_declared_by": "sp_tdnastk",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_ligh_atabcd",
+            "via_from": "sp_eliz_start_nt0",
+            "link_field": "next3",
+            "field_declared_by": "sp_eliz_start_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_atabcd_nt1",
+            "via_from": "sp_ligh_atabcd",
+            "link_field": "next",
+            "field_declared_by": "sp_ligh_atabcd",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_ata",
+            "via_from": "sp_ligh_atabcd_nt1",
+            "link_field": "next2",
+            "field_declared_by": "sp_ligh_atabcd_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh2a",
+            "via_from": "sp_ligh_ata",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_ata",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh3a",
+            "via_from": "sp_ligh_at_ligh2a",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_at_ligh2a",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_ligh_at_ligh3b",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 3387,
+        "parent": "sp_ligh_at_ligh2b"
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:p_tdnastk",
+            "source": "a_default/script/10_ユニット/B_5151_古代アステカ王国.dat",
+            "line": 72,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "p_sp_tdnastk",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_eliz_start_nt0",
+            "via_from": "p_sp_tdnastk",
+            "link_field": "next3",
+            "field_declared_by": "sp_tdnastk",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_ligh_atabcd",
+            "via_from": "sp_eliz_start_nt0",
+            "link_field": "next3",
+            "field_declared_by": "sp_eliz_start_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_atabcd_nt1",
+            "via_from": "sp_ligh_atabcd",
+            "link_field": "next",
+            "field_declared_by": "sp_ligh_atabcd",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_atb",
+            "via_from": "sp_ligh_atabcd_nt1",
+            "link_field": "next2",
+            "field_declared_by": "sp_ligh_atabcd_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh2b",
+            "via_from": "sp_ligh_atb",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_atb",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh3b",
+            "via_from": "sp_ligh_at_ligh2b",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_at_ligh2b",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_ligh_at_ligh3c",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 3433,
+        "parent": "sp_ligh_at_ligh2c"
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:p_tdnastk",
+            "source": "a_default/script/10_ユニット/B_5151_古代アステカ王国.dat",
+            "line": 72,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "p_sp_tdnastk",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_eliz_start_nt0",
+            "via_from": "p_sp_tdnastk",
+            "link_field": "next3",
+            "field_declared_by": "sp_tdnastk",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_ligh_atabcd",
+            "via_from": "sp_eliz_start_nt0",
+            "link_field": "next3",
+            "field_declared_by": "sp_eliz_start_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_atabcd_nt1",
+            "via_from": "sp_ligh_atabcd",
+            "link_field": "next",
+            "field_declared_by": "sp_ligh_atabcd",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_atc",
+            "via_from": "sp_ligh_atabcd_nt1",
+            "link_field": "next2",
+            "field_declared_by": "sp_ligh_atabcd_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh2c",
+            "via_from": "sp_ligh_atc",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_atc",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh3c",
+            "via_from": "sp_ligh_at_ligh2c",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_at_ligh2c",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_ligh_at_ligh3d",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 3483,
+        "parent": "sp_ligh_at_ligh2d"
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:p_tdnastk",
+            "source": "a_default/script/10_ユニット/B_5151_古代アステカ王国.dat",
+            "line": 72,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "p_sp_tdnastk",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_eliz_start_nt0",
+            "via_from": "p_sp_tdnastk",
+            "link_field": "next3",
+            "field_declared_by": "sp_tdnastk",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_ligh_atabcd",
+            "via_from": "sp_eliz_start_nt0",
+            "link_field": "next3",
+            "field_declared_by": "sp_eliz_start_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_atabcd_nt1",
+            "via_from": "sp_ligh_atabcd",
+            "link_field": "next",
+            "field_declared_by": "sp_ligh_atabcd",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_atd",
+            "via_from": "sp_ligh_atabcd_nt1",
+            "link_field": "next2",
+            "field_declared_by": "sp_ligh_atabcd_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh2d",
+            "via_from": "sp_ligh_atd",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_atd",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh3d",
+            "via_from": "sp_ligh_at_ligh2d",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_at_ligh2d",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_ligh_at_ligh4a",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 3350,
+        "parent": "sp_ligh_at_ligh2a"
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:p_tdnastk",
+            "source": "a_default/script/10_ユニット/B_5151_古代アステカ王国.dat",
+            "line": 72,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "p_sp_tdnastk",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_eliz_start_nt0",
+            "via_from": "p_sp_tdnastk",
+            "link_field": "next3",
+            "field_declared_by": "sp_tdnastk",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_ligh_atabcd",
+            "via_from": "sp_eliz_start_nt0",
+            "link_field": "next3",
+            "field_declared_by": "sp_eliz_start_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_atabcd_nt1",
+            "via_from": "sp_ligh_atabcd",
+            "link_field": "next",
+            "field_declared_by": "sp_ligh_atabcd",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_ata",
+            "via_from": "sp_ligh_atabcd_nt1",
+            "link_field": "next2",
+            "field_declared_by": "sp_ligh_atabcd_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh2a",
+            "via_from": "sp_ligh_ata",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_ata",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh3a",
+            "via_from": "sp_ligh_at_ligh2a",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_at_ligh2a",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh4a",
+            "via_from": "sp_ligh_at_ligh3a",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_at_ligh3a",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_ligh_at_ligh4b",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 3391,
+        "parent": "sp_ligh_at_ligh2b"
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:p_tdnastk",
+            "source": "a_default/script/10_ユニット/B_5151_古代アステカ王国.dat",
+            "line": 72,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "p_sp_tdnastk",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_eliz_start_nt0",
+            "via_from": "p_sp_tdnastk",
+            "link_field": "next3",
+            "field_declared_by": "sp_tdnastk",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_ligh_atabcd",
+            "via_from": "sp_eliz_start_nt0",
+            "link_field": "next3",
+            "field_declared_by": "sp_eliz_start_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_atabcd_nt1",
+            "via_from": "sp_ligh_atabcd",
+            "link_field": "next",
+            "field_declared_by": "sp_ligh_atabcd",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_atb",
+            "via_from": "sp_ligh_atabcd_nt1",
+            "link_field": "next2",
+            "field_declared_by": "sp_ligh_atabcd_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh2b",
+            "via_from": "sp_ligh_atb",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_atb",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh3b",
+            "via_from": "sp_ligh_at_ligh2b",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_at_ligh2b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh4b",
+            "via_from": "sp_ligh_at_ligh3b",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_at_ligh3b",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_ligh_at_ligh4c",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 3437,
+        "parent": "sp_ligh_at_ligh2c"
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:p_tdnastk",
+            "source": "a_default/script/10_ユニット/B_5151_古代アステカ王国.dat",
+            "line": 72,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "p_sp_tdnastk",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_eliz_start_nt0",
+            "via_from": "p_sp_tdnastk",
+            "link_field": "next3",
+            "field_declared_by": "sp_tdnastk",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_ligh_atabcd",
+            "via_from": "sp_eliz_start_nt0",
+            "link_field": "next3",
+            "field_declared_by": "sp_eliz_start_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_atabcd_nt1",
+            "via_from": "sp_ligh_atabcd",
+            "link_field": "next",
+            "field_declared_by": "sp_ligh_atabcd",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_atc",
+            "via_from": "sp_ligh_atabcd_nt1",
+            "link_field": "next2",
+            "field_declared_by": "sp_ligh_atabcd_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh2c",
+            "via_from": "sp_ligh_atc",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_atc",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh3c",
+            "via_from": "sp_ligh_at_ligh2c",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_at_ligh2c",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh4c",
+            "via_from": "sp_ligh_at_ligh3c",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_at_ligh3c",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_ligh_at_ligh4d",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 3487,
+        "parent": "sp_ligh_at_ligh2d"
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:p_tdnastk",
+            "source": "a_default/script/10_ユニット/B_5151_古代アステカ王国.dat",
+            "line": 72,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "p_sp_tdnastk",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_eliz_start_nt0",
+            "via_from": "p_sp_tdnastk",
+            "link_field": "next3",
+            "field_declared_by": "sp_tdnastk",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_ligh_atabcd",
+            "via_from": "sp_eliz_start_nt0",
+            "link_field": "next3",
+            "field_declared_by": "sp_eliz_start_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_atabcd_nt1",
+            "via_from": "sp_ligh_atabcd",
+            "link_field": "next",
+            "field_declared_by": "sp_ligh_atabcd",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_atd",
+            "via_from": "sp_ligh_atabcd_nt1",
+            "link_field": "next2",
+            "field_declared_by": "sp_ligh_atabcd_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh2d",
+            "via_from": "sp_ligh_atd",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_atd",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh3d",
+            "via_from": "sp_ligh_at_ligh2d",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_at_ligh2d",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh4d",
+            "via_from": "sp_ligh_at_ligh3d",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_at_ligh3d",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_ligh_at_ligh5a",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 3354,
+        "parent": "sp_ligh_at_ligh2a"
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:p_tdnastk",
+            "source": "a_default/script/10_ユニット/B_5151_古代アステカ王国.dat",
+            "line": 72,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "p_sp_tdnastk",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_eliz_start_nt0",
+            "via_from": "p_sp_tdnastk",
+            "link_field": "next3",
+            "field_declared_by": "sp_tdnastk",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_ligh_atabcd",
+            "via_from": "sp_eliz_start_nt0",
+            "link_field": "next3",
+            "field_declared_by": "sp_eliz_start_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_atabcd_nt1",
+            "via_from": "sp_ligh_atabcd",
+            "link_field": "next",
+            "field_declared_by": "sp_ligh_atabcd",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_ata",
+            "via_from": "sp_ligh_atabcd_nt1",
+            "link_field": "next2",
+            "field_declared_by": "sp_ligh_atabcd_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh2a",
+            "via_from": "sp_ligh_ata",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_ata",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh3a",
+            "via_from": "sp_ligh_at_ligh2a",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_at_ligh2a",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh4a",
+            "via_from": "sp_ligh_at_ligh3a",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_at_ligh3a",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh5a",
+            "via_from": "sp_ligh_at_ligh4a",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_at_ligh4a",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_ligh_at_ligh5b",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 3395,
+        "parent": "sp_ligh_at_ligh2b"
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:p_tdnastk",
+            "source": "a_default/script/10_ユニット/B_5151_古代アステカ王国.dat",
+            "line": 72,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "p_sp_tdnastk",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_eliz_start_nt0",
+            "via_from": "p_sp_tdnastk",
+            "link_field": "next3",
+            "field_declared_by": "sp_tdnastk",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_ligh_atabcd",
+            "via_from": "sp_eliz_start_nt0",
+            "link_field": "next3",
+            "field_declared_by": "sp_eliz_start_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_atabcd_nt1",
+            "via_from": "sp_ligh_atabcd",
+            "link_field": "next",
+            "field_declared_by": "sp_ligh_atabcd",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_atb",
+            "via_from": "sp_ligh_atabcd_nt1",
+            "link_field": "next2",
+            "field_declared_by": "sp_ligh_atabcd_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh2b",
+            "via_from": "sp_ligh_atb",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_atb",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh3b",
+            "via_from": "sp_ligh_at_ligh2b",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_at_ligh2b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh4b",
+            "via_from": "sp_ligh_at_ligh3b",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_at_ligh3b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh5b",
+            "via_from": "sp_ligh_at_ligh4b",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_at_ligh4b",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_ligh_at_ligh5c",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 3441,
+        "parent": "sp_ligh_at_ligh2c"
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:p_tdnastk",
+            "source": "a_default/script/10_ユニット/B_5151_古代アステカ王国.dat",
+            "line": 72,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "p_sp_tdnastk",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_eliz_start_nt0",
+            "via_from": "p_sp_tdnastk",
+            "link_field": "next3",
+            "field_declared_by": "sp_tdnastk",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_ligh_atabcd",
+            "via_from": "sp_eliz_start_nt0",
+            "link_field": "next3",
+            "field_declared_by": "sp_eliz_start_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_atabcd_nt1",
+            "via_from": "sp_ligh_atabcd",
+            "link_field": "next",
+            "field_declared_by": "sp_ligh_atabcd",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_atc",
+            "via_from": "sp_ligh_atabcd_nt1",
+            "link_field": "next2",
+            "field_declared_by": "sp_ligh_atabcd_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh2c",
+            "via_from": "sp_ligh_atc",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_atc",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh3c",
+            "via_from": "sp_ligh_at_ligh2c",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_at_ligh2c",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh4c",
+            "via_from": "sp_ligh_at_ligh3c",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_at_ligh3c",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh5c",
+            "via_from": "sp_ligh_at_ligh4c",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_at_ligh4c",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_ligh_at_ligh5d",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 3491,
+        "parent": "sp_ligh_at_ligh2d"
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:p_tdnastk",
+            "source": "a_default/script/10_ユニット/B_5151_古代アステカ王国.dat",
+            "line": 72,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "p_sp_tdnastk",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_eliz_start_nt0",
+            "via_from": "p_sp_tdnastk",
+            "link_field": "next3",
+            "field_declared_by": "sp_tdnastk",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_ligh_atabcd",
+            "via_from": "sp_eliz_start_nt0",
+            "link_field": "next3",
+            "field_declared_by": "sp_eliz_start_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_atabcd_nt1",
+            "via_from": "sp_ligh_atabcd",
+            "link_field": "next",
+            "field_declared_by": "sp_ligh_atabcd",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_atd",
+            "via_from": "sp_ligh_atabcd_nt1",
+            "link_field": "next2",
+            "field_declared_by": "sp_ligh_atabcd_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh2d",
+            "via_from": "sp_ligh_atd",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_atd",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh3d",
+            "via_from": "sp_ligh_at_ligh2d",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_at_ligh2d",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh4d",
+            "via_from": "sp_ligh_at_ligh3d",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_at_ligh3d",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh5d",
+            "via_from": "sp_ligh_at_ligh4d",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_at_ligh4d",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_ligh_at_ligh6a",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 3358,
+        "parent": "sp_ligh_at_ligh2a"
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:p_tdnastk",
+            "source": "a_default/script/10_ユニット/B_5151_古代アステカ王国.dat",
+            "line": 72,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "p_sp_tdnastk",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_eliz_start_nt0",
+            "via_from": "p_sp_tdnastk",
+            "link_field": "next3",
+            "field_declared_by": "sp_tdnastk",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_ligh_atabcd",
+            "via_from": "sp_eliz_start_nt0",
+            "link_field": "next3",
+            "field_declared_by": "sp_eliz_start_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_atabcd_nt1",
+            "via_from": "sp_ligh_atabcd",
+            "link_field": "next",
+            "field_declared_by": "sp_ligh_atabcd",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_ata",
+            "via_from": "sp_ligh_atabcd_nt1",
+            "link_field": "next2",
+            "field_declared_by": "sp_ligh_atabcd_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh2a",
+            "via_from": "sp_ligh_ata",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_ata",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh3a",
+            "via_from": "sp_ligh_at_ligh2a",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_at_ligh2a",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh4a",
+            "via_from": "sp_ligh_at_ligh3a",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_at_ligh3a",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh5a",
+            "via_from": "sp_ligh_at_ligh4a",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_at_ligh4a",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh6a",
+            "via_from": "sp_ligh_at_ligh5a",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_at_ligh5a",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "skill": "sp_ligh_at_ligh6b",
+      "effective_func": "UNSET",
+      "origin": {
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 3399,
+        "parent": "sp_ligh_at_ligh2b"
+      },
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:p_tdnastk",
+            "source": "a_default/script/10_ユニット/B_5151_古代アステカ王国.dat",
+            "line": 72,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "p_sp_tdnastk",
+            "via_from": null,
+            "link_field": null,
+            "field_declared_by": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_eliz_start_nt0",
+            "via_from": "p_sp_tdnastk",
+            "link_field": "next3",
+            "field_declared_by": "sp_tdnastk",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_ligh_atabcd",
+            "via_from": "sp_eliz_start_nt0",
+            "link_field": "next3",
+            "field_declared_by": "sp_eliz_start_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_atabcd_nt1",
+            "via_from": "sp_ligh_atabcd",
+            "link_field": "next",
+            "field_declared_by": "sp_ligh_atabcd",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_atb",
+            "via_from": "sp_ligh_atabcd_nt1",
+            "link_field": "next2",
+            "field_declared_by": "sp_ligh_atabcd_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh2b",
+            "via_from": "sp_ligh_atb",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_atb",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh3b",
+            "via_from": "sp_ligh_at_ligh2b",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_at_ligh2b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh4b",
+            "via_from": "sp_ligh_at_ligh3b",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_at_ligh3b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh5b",
+            "via_from": "sp_ligh_at_ligh4b",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_at_ligh4b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_ligh_at_ligh6b",
+            "via_from": "sp_ligh_at_ligh5b",
+            "link_field": "next3",
+            "field_declared_by": "sp_ligh_at_ligh5b",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    }
+  ],
+  "sample_parent_supplied_links": [
+    {
+      "descendant": "tuto_masupa",
+      "parent_source": "sp_masupa",
+      "field": "next2",
+      "hops": 1,
+      "targets": [
+        "masupa_nt1",
+        "masupa_nt1",
+        "masupa_nt2",
+        "masupa_nt2",
+        "masupa_nt3",
+        "masupa_nt3",
+        "masupa_nt3",
+        "masupa_nt3"
+      ],
+      "origin": {
+        "file": "a_default/script/1000_チュートリアル/tuto_event1.dat",
+        "line": 150,
+        "parent": "sp_masupa"
+      }
+    },
+    {
+      "descendant": "tuto_masupa",
+      "parent_source": "sp_masupa",
+      "field": "just_next",
+      "hops": 1,
+      "targets": [
+        "sp_masupa_bom"
+      ],
+      "origin": {
+        "file": "a_default/script/1000_チュートリアル/tuto_event1.dat",
+        "line": 150,
+        "parent": "sp_masupa"
+      }
+    },
+    {
+      "descendant": "tuto_masupa",
+      "parent_source": "sp_masupa",
+      "field": "pair_next",
+      "hops": 1,
+      "targets": [
+        "masupa_pr0"
+      ],
+      "origin": {
+        "file": "a_default/script/1000_チュートリアル/tuto_event1.dat",
+        "line": 150,
+        "parent": "sp_masupa"
+      }
+    },
+    {
+      "descendant": "loop_winter",
+      "parent_source": "ef_winter",
+      "field": "next3",
+      "hops": 1,
+      "targets": [
+        "ef_winter_nt",
+        "loop_winter"
+      ],
+      "origin": {
+        "file": "a_default/script/100_イベント汎用/event_samson.dat",
+        "line": 965,
+        "parent": "ef_winter"
+      }
+    },
+    {
+      "descendant": "sp_hokyu_azs",
+      "parent_source": "sp_hokyu",
+      "field": "next3",
+      "hops": 1,
+      "targets": [
+        "sp_hokyu_nt1",
+        "sp_hokyu_nt2"
+      ],
+      "origin": {
+        "file": "a_default/script/10_ユニット/01_マリナーズ傭兵団.dat",
+        "line": 93,
+        "parent": "sp_hokyu"
+      }
+    },
+    {
+      "descendant": "sp_hokyu_azs",
+      "parent_source": "sp_hokyu",
+      "field": "pair_next",
+      "hops": 1,
+      "targets": [
+        "gekirei_nt"
+      ],
+      "origin": {
+        "file": "a_default/script/10_ユニット/01_マリナーズ傭兵団.dat",
+        "line": 93,
+        "parent": "sp_hokyu"
+      }
+    },
+    {
+      "descendant": "sp_ruida",
+      "parent_source": "sp_step",
+      "field": "next3",
+      "hops": 1,
+      "targets": [
+        "sp_step_nt",
+        "sp_step_nt2"
+      ],
+      "origin": {
+        "file": "a_default/script/10_ユニット/110_イベント人材.dat",
+        "line": 612,
+        "parent": "sp_step"
+      }
+    },
+    {
+      "descendant": "sp_ruida",
+      "parent_source": "sp_step",
+      "field": "just_next",
+      "hops": 1,
+      "targets": [
+        "sp_step_js"
+      ],
+      "origin": {
+        "file": "a_default/script/10_ユニット/110_イベント人材.dat",
+        "line": 612,
+        "parent": "sp_step"
+      }
+    },
+    {
+      "descendant": "sp_ranbu_rensan",
+      "parent_source": "sp_ranbu",
+      "field": "next3",
+      "hops": 1,
+      "targets": [
+        "sp_ranbu_nt0",
+        "sp_ranbu_pr0"
+      ],
+      "origin": {
+        "file": "a_default/script/10_ユニット/18_虐待専従0J_13部隊.dat",
+        "line": 95,
+        "parent": "sp_ranbu"
+      }
+    },
+    {
+      "descendant": "pot_zan0",
+      "parent_source": "zan0",
+      "field": "pair_next",
+      "hops": 1,
+      "targets": [
+        "zan1_pr0"
+      ],
+      "origin": {
+        "file": "a_default/script/2023_イベント_リュージ騎士団/event_23_RPG.dat",
+        "line": 20596,
+        "parent": "zan0"
+      }
+    },
+    {
+      "descendant": "pot_zan1",
+      "parent_source": "zan1",
+      "field": "pair_next",
+      "hops": 1,
+      "targets": [
+        "zan1_pr0"
+      ],
+      "origin": {
+        "file": "a_default/script/2023_イベント_リュージ騎士団/event_23_RPG.dat",
+        "line": 20618,
+        "parent": "zan1"
+      }
+    },
+    {
+      "descendant": "pot_zan1_nt1",
+      "parent_source": "zan1_nt1",
+      "field": "next",
+      "hops": 1,
+      "targets": [
+        "ef_zan"
+      ],
+      "origin": {
+        "file": "a_default/script/2023_イベント_リュージ騎士団/event_23_RPG.dat",
+        "line": 20641,
+        "parent": "zan1_nt1"
+      }
+    },
+    {
+      "descendant": "sp_hznkani",
+      "parent_source": "sp_gosaku",
+      "field": "next3",
+      "hops": 1,
+      "targets": [
+        "sp_gosaku_nt0",
+        "sp_gosaku_nt0_2",
+        "sp_gosaku_pr0"
+      ],
+      "origin": {
+        "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_boss.dat",
+        "line": 169,
+        "parent": "sp_gosaku"
+      }
+    },
+    {
+      "descendant": "hzn_thun26",
+      "parent_source": "m_thun",
+      "field": "next3",
+      "hops": 2,
+      "targets": [
+        "m_thun_nt0",
+        "m_thun_nt0b"
+      ],
+      "origin": {
+        "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_boss.dat",
+        "line": 231,
+        "parent": "atmu_thun"
+      }
+    },
+    {
+      "descendant": "hzn_wate26",
+      "parent_source": "atmu_wate",
+      "field": "next3",
+      "hops": 1,
+      "targets": [
+        "atmu_wate_nt1",
+        "sp_ganban_nt6",
+        "sp_ganban_nt8",
+        "atmu_wate_nt3"
+      ],
+      "origin": {
+        "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_boss.dat",
+        "line": 243,
+        "parent": "atmu_wate"
+      }
+    },
+    {
+      "descendant": "hzn_beam26",
+      "parent_source": "kmn_beam",
+      "field": "next",
+      "hops": 1,
+      "targets": [
+        "kmn_beam_nt1"
+      ],
+      "origin": {
+        "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_boss.dat",
+        "line": 257,
+        "parent": "kmn_beam"
+      }
+    },
+    {
+      "descendant": "hzn_beam26",
+      "parent_source": "kmn_beam",
+      "field": "pair_next",
+      "hops": 1,
+      "targets": [
+        "kmn_beam_pr0"
+      ],
+      "origin": {
+        "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_boss.dat",
+        "line": 257,
+        "parent": "kmn_beam"
+      }
+    },
+    {
+      "descendant": "cyclops_b_js7",
+      "parent_source": "cyclops_b_js2",
+      "field": "next2",
+      "hops": 1,
+      "targets": [
+        "cyclops_b_nt1",
+        "cyclops_b_nt2",
+        "cyclops_b_nt3",
+        "cyclops_b_nt4",
+        "cyclops_b_nt5",
+        "cyclops_b_nt7",
+        "cyclops_b_nt8"
+      ],
+      "origin": {
+        "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_cyclops.dat",
+        "line": 172,
+        "parent": "cyclops_b_js2"
+      }
+    },
+    {
+      "descendant": "sp_knnhzn",
+      "parent_source": "sp_go_nannkasugoino",
+      "field": "next3",
+      "hops": 1,
+      "targets": [
+        "sp_nannkasugoino_nt1",
+        "sp_nannkasugoino_nt2",
+        "sp_nannkasugoino_so"
+      ],
+      "origin": {
+        "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_lastboss.dat",
+        "line": 47,
+        "parent": "sp_go_nannkasugoino"
+      }
+    },
+    {
+      "descendant": "sp_knnhzn",
+      "parent_source": "sp_go_nannkasugoino",
+      "field": "pair_next",
+      "hops": 1,
+      "targets": [
+        "sp_nannkasugoino_pr0"
+      ],
+      "origin": {
+        "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_lastboss.dat",
+        "line": 47,
+        "parent": "sp_go_nannkasugoino"
+      }
+    },
+    {
+      "descendant": "knn_warp",
+      "parent_source": "go_warp",
+      "field": "pair_next",
+      "hops": 2,
+      "targets": [
+        "go_warp_nt1"
+      ],
+      "origin": {
+        "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_lastboss.dat",
+        "line": 59,
+        "parent": "go_warpb"
+      }
+    },
+    {
+      "descendant": "sp_hznillu",
+      "parent_source": "sp_conf",
+      "field": "next",
+      "hops": 1,
+      "targets": [
+        "sp_conf_nt1"
+      ],
+      "origin": {
+        "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_lastboss.dat",
+        "line": 65,
+        "parent": "sp_conf"
+      }
+    },
+    {
+      "descendant": "sp_cannon2",
+      "parent_source": "sp_cannon",
+      "field": "pair_next",
+      "hops": 1,
+      "targets": [
+        "sp_cannon_pr"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/C_必殺_クラス専用.dat",
+        "line": 194,
+        "parent": "sp_cannon"
+      }
+    },
+    {
+      "descendant": "sp_cannon2_nt",
+      "parent_source": "sp_cannon_nt",
+      "field": "next3",
+      "hops": 1,
+      "targets": [
+        "b_cannon_nt1",
+        "b_cannon_nt2",
+        "b_cannon_pr1",
+        "b_cannon_pr2"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/C_必殺_クラス専用.dat",
+        "line": 202,
+        "parent": "sp_cannon_nt"
+      }
+    },
+    {
+      "descendant": "new_misairu_miss_bomb",
+      "parent_source": "new_misairu_bomb1",
+      "field": "next3",
+      "hops": 1,
+      "targets": [
+        "misairu_nt2",
+        "misairu_nt3",
+        "misairu_nt4",
+        "misairu_nt5"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/C_必殺_クラス専用.dat",
+        "line": 372,
+        "parent": "new_misairu_bomb1"
+      }
+    },
+    {
+      "descendant": "sp_893_js",
+      "parent_source": "sp_893",
+      "field": "next",
+      "hops": 1,
+      "targets": [
+        "sp_893_nt"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/C_必殺_クラス専用.dat",
+        "line": 1005,
+        "parent": "sp_893"
+      }
+    },
+    {
+      "descendant": "sp_893_js",
+      "parent_source": "sp_893",
+      "field": "just_next",
+      "hops": 1,
+      "targets": [
+        "sp_893_js"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/C_必殺_クラス専用.dat",
+        "line": 1005,
+        "parent": "sp_893"
+      }
+    },
+    {
+      "descendant": "sp_893_js",
+      "parent_source": "sp_893",
+      "field": "pair_next",
+      "hops": 1,
+      "targets": [
+        "sp_893_pr"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/C_必殺_クラス専用.dat",
+        "line": 1005,
+        "parent": "sp_893"
+      }
+    },
+    {
+      "descendant": "metalgear_realgun_nt_wate",
+      "parent_source": "b_wate_nt1",
+      "field": "next",
+      "hops": 1,
+      "targets": [
+        "b_wate_nt3"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/C_必殺_クラス専用.dat",
+        "line": 1201,
+        "parent": "b_wate_nt1"
+      }
+    },
+    {
+      "descendant": "metalgear_realgun_nt_wind",
+      "parent_source": "b_wind_nt1",
+      "field": "next",
+      "hops": 1,
+      "targets": [
+        "b_wind_nt3"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/C_必殺_クラス専用.dat",
+        "line": 1206,
+        "parent": "b_wind_nt1"
+      }
+    },
+    {
+      "descendant": "metalgear_realgun_nt_eart",
+      "parent_source": "b_eart_nt1",
+      "field": "next",
+      "hops": 1,
+      "targets": [
+        "b_eart_nt3"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/C_必殺_クラス専用.dat",
+        "line": 1211,
+        "parent": "b_eart_nt1"
+      }
+    },
+    {
+      "descendant": "toono_death_pr1",
+      "parent_source": "toono_death",
+      "field": "pair_next",
+      "hops": 1,
+      "targets": [
+        "toono_death_pr0"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/C_必殺_クラス専用.dat",
+        "line": 1276,
+        "parent": "toono_death"
+      }
+    },
+    {
+      "descendant": "b_cannon_tiger_apcr_new",
+      "parent_source": "re_cannon",
+      "field": "pair_next",
+      "hops": 2,
+      "targets": [
+        "re_cannon_pr0"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/C_必殺_クラス専用.dat",
+        "line": 1450,
+        "parent": "b_cannon_tiger_new"
+      }
+    },
+    {
+      "descendant": "b_ligh_nt2",
+      "parent_source": "b_ligh_nt1",
+      "field": "next",
+      "hops": 1,
+      "targets": [
+        "b_ligh_nt3"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 352,
+        "parent": "b_ligh_nt1"
+      }
+    },
+    {
+      "descendant": "q_ligh",
+      "parent_source": "b_ligh",
+      "field": "next2",
+      "hops": 1,
+      "targets": [
+        "b_ligh_nt1",
+        "b_ligh_nt2",
+        "b_ligh_nt2"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 377,
+        "parent": "b_ligh"
+      }
+    },
+    {
+      "descendant": "q_ligh",
+      "parent_source": "b_ligh",
+      "field": "just_next",
+      "hops": 1,
+      "targets": [
+        "seiretsu_b"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 377,
+        "parent": "b_ligh"
+      }
+    },
+    {
+      "descendant": "q_ligh",
+      "parent_source": "b_ligh",
+      "field": "pair_next",
+      "hops": 1,
+      "targets": [
+        "ef_magic2"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 377,
+        "parent": "b_ligh"
+      }
+    },
+    {
+      "descendant": "b_fire",
+      "parent_source": "b_ligh",
+      "field": "just_next",
+      "hops": 1,
+      "targets": [
+        "seiretsu_b"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 387,
+        "parent": "b_ligh"
+      }
+    },
+    {
+      "descendant": "b_fire",
+      "parent_source": "b_ligh",
+      "field": "pair_next",
+      "hops": 1,
+      "targets": [
+        "ef_magic2"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 387,
+        "parent": "b_ligh"
+      }
+    },
+    {
+      "descendant": "b_fire_nt2",
+      "parent_source": "b_fire_nt1",
+      "field": "next",
+      "hops": 1,
+      "targets": [
+        "b_fire_nt3"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 405,
+        "parent": "b_fire_nt1"
+      }
+    },
+    {
+      "descendant": "q_fire",
+      "parent_source": "b_fire",
+      "field": "next2",
+      "hops": 1,
+      "targets": [
+        "b_fire_nt1",
+        "b_fire_nt2",
+        "b_fire_nt2"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 418,
+        "parent": "b_fire"
+      }
+    },
+    {
+      "descendant": "q_fire",
+      "parent_source": "b_ligh",
+      "field": "just_next",
+      "hops": 2,
+      "targets": [
+        "seiretsu_b"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 418,
+        "parent": "b_fire"
+      }
+    },
+    {
+      "descendant": "q_fire",
+      "parent_source": "b_ligh",
+      "field": "pair_next",
+      "hops": 2,
+      "targets": [
+        "ef_magic2"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 418,
+        "parent": "b_fire"
+      }
+    },
+    {
+      "descendant": "b_eart",
+      "parent_source": "b_ligh",
+      "field": "just_next",
+      "hops": 1,
+      "targets": [
+        "seiretsu_b"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 428,
+        "parent": "b_ligh"
+      }
+    },
+    {
+      "descendant": "b_eart",
+      "parent_source": "b_ligh",
+      "field": "pair_next",
+      "hops": 1,
+      "targets": [
+        "ef_magic2"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 428,
+        "parent": "b_ligh"
+      }
+    },
+    {
+      "descendant": "b_eart_nt2",
+      "parent_source": "b_eart_nt1",
+      "field": "next",
+      "hops": 1,
+      "targets": [
+        "b_eart_nt3"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 449,
+        "parent": "b_eart_nt1"
+      }
+    },
+    {
+      "descendant": "q_eart",
+      "parent_source": "b_eart",
+      "field": "next2",
+      "hops": 1,
+      "targets": [
+        "b_eart_nt1",
+        "b_eart_nt2",
+        "b_eart_nt2"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 462,
+        "parent": "b_eart"
+      }
+    },
+    {
+      "descendant": "q_eart",
+      "parent_source": "b_ligh",
+      "field": "just_next",
+      "hops": 2,
+      "targets": [
+        "seiretsu_b"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 462,
+        "parent": "b_eart"
+      }
+    },
+    {
+      "descendant": "q_eart",
+      "parent_source": "b_ligh",
+      "field": "pair_next",
+      "hops": 2,
+      "targets": [
+        "ef_magic2"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 462,
+        "parent": "b_eart"
+      }
+    },
+    {
+      "descendant": "b_wate",
+      "parent_source": "b_ligh",
+      "field": "just_next",
+      "hops": 1,
+      "targets": [
+        "seiretsu_b"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 472,
+        "parent": "b_ligh"
+      }
+    },
+    {
+      "descendant": "b_wate",
+      "parent_source": "b_ligh",
+      "field": "pair_next",
+      "hops": 1,
+      "targets": [
+        "ef_magic2"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 472,
+        "parent": "b_ligh"
+      }
+    },
+    {
+      "descendant": "b_wate_nt2",
+      "parent_source": "b_wate_nt1",
+      "field": "next",
+      "hops": 1,
+      "targets": [
+        "b_wate_nt3"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 493,
+        "parent": "b_wate_nt1"
+      }
+    },
+    {
+      "descendant": "q_wate",
+      "parent_source": "b_wate",
+      "field": "next2",
+      "hops": 1,
+      "targets": [
+        "b_wate_nt1",
+        "b_wate_nt2",
+        "b_wate_nt2"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 506,
+        "parent": "b_wate"
+      }
+    },
+    {
+      "descendant": "q_wate",
+      "parent_source": "b_ligh",
+      "field": "just_next",
+      "hops": 2,
+      "targets": [
+        "seiretsu_b"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 506,
+        "parent": "b_wate"
+      }
+    },
+    {
+      "descendant": "q_wate",
+      "parent_source": "b_ligh",
+      "field": "pair_next",
+      "hops": 2,
+      "targets": [
+        "ef_magic2"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 506,
+        "parent": "b_wate"
+      }
+    },
+    {
+      "descendant": "b_thun",
+      "parent_source": "b_ligh",
+      "field": "just_next",
+      "hops": 1,
+      "targets": [
+        "seiretsu_b"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 515,
+        "parent": "b_ligh"
+      }
+    },
+    {
+      "descendant": "b_thun",
+      "parent_source": "b_ligh",
+      "field": "pair_next",
+      "hops": 1,
+      "targets": [
+        "ef_magic2"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 515,
+        "parent": "b_ligh"
+      }
+    },
+    {
+      "descendant": "b_thun_nt2",
+      "parent_source": "b_thun_nt1",
+      "field": "next",
+      "hops": 1,
+      "targets": [
+        "b_thun_nt3"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 536,
+        "parent": "b_thun_nt1"
+      }
+    },
+    {
+      "descendant": "q_thun",
+      "parent_source": "b_thun",
+      "field": "next2",
+      "hops": 1,
+      "targets": [
+        "b_thun_nt1",
+        "b_thun_nt2",
+        "b_thun_nt2"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 549,
+        "parent": "b_thun"
+      }
+    },
+    {
+      "descendant": "q_thun",
+      "parent_source": "b_ligh",
+      "field": "just_next",
+      "hops": 2,
+      "targets": [
+        "seiretsu_b"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 549,
+        "parent": "b_thun"
+      }
+    },
+    {
+      "descendant": "q_thun",
+      "parent_source": "b_ligh",
+      "field": "pair_next",
+      "hops": 2,
+      "targets": [
+        "ef_magic2"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 549,
+        "parent": "b_thun"
+      }
+    },
+    {
+      "descendant": "b_wind",
+      "parent_source": "b_ligh",
+      "field": "just_next",
+      "hops": 1,
+      "targets": [
+        "seiretsu_b"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 558,
+        "parent": "b_ligh"
+      }
+    },
+    {
+      "descendant": "b_wind",
+      "parent_source": "b_ligh",
+      "field": "pair_next",
+      "hops": 1,
+      "targets": [
+        "ef_magic2"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 558,
+        "parent": "b_ligh"
+      }
+    },
+    {
+      "descendant": "b_wind_nt2",
+      "parent_source": "b_wind_nt1",
+      "field": "next",
+      "hops": 1,
+      "targets": [
+        "b_wind_nt3"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 579,
+        "parent": "b_wind_nt1"
+      }
+    },
+    {
+      "descendant": "q_wind",
+      "parent_source": "b_wind",
+      "field": "next2",
+      "hops": 1,
+      "targets": [
+        "b_wind_nt1",
+        "b_wind_nt2",
+        "b_wind_nt2"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 592,
+        "parent": "b_wind"
+      }
+    },
+    {
+      "descendant": "q_wind",
+      "parent_source": "b_ligh",
+      "field": "just_next",
+      "hops": 2,
+      "targets": [
+        "seiretsu_b"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 592,
+        "parent": "b_wind"
+      }
+    },
+    {
+      "descendant": "q_wind",
+      "parent_source": "b_ligh",
+      "field": "pair_next",
+      "hops": 2,
+      "targets": [
+        "ef_magic2"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 592,
+        "parent": "b_wind"
+      }
+    },
+    {
+      "descendant": "b_dark",
+      "parent_source": "b_ligh",
+      "field": "just_next",
+      "hops": 1,
+      "targets": [
+        "seiretsu_b"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 601,
+        "parent": "b_ligh"
+      }
+    },
+    {
+      "descendant": "b_dark",
+      "parent_source": "b_ligh",
+      "field": "pair_next",
+      "hops": 1,
+      "targets": [
+        "ef_magic2"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 601,
+        "parent": "b_ligh"
+      }
+    },
+    {
+      "descendant": "b_dark_nt2",
+      "parent_source": "b_dark_nt1",
+      "field": "next",
+      "hops": 1,
+      "targets": [
+        "b_dark_nt3"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 622,
+        "parent": "b_dark_nt1"
+      }
+    },
+    {
+      "descendant": "q_dark",
+      "parent_source": "b_dark",
+      "field": "next2",
+      "hops": 1,
+      "targets": [
+        "b_dark_nt1",
+        "b_dark_nt2",
+        "b_dark_nt2"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 635,
+        "parent": "b_dark"
+      }
+    },
+    {
+      "descendant": "q_dark",
+      "parent_source": "b_ligh",
+      "field": "just_next",
+      "hops": 2,
+      "targets": [
+        "seiretsu_b"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 635,
+        "parent": "b_dark"
+      }
+    },
+    {
+      "descendant": "q_dark",
+      "parent_source": "b_ligh",
+      "field": "pair_next",
+      "hops": 2,
+      "targets": [
+        "ef_magic2"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 635,
+        "parent": "b_dark"
+      }
+    },
+    {
+      "descendant": "b_mrandom",
+      "parent_source": "b_ligh",
+      "field": "just_next",
+      "hops": 1,
+      "targets": [
+        "seiretsu_b"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 645,
+        "parent": "b_ligh"
+      }
+    },
+    {
+      "descendant": "b_mrandom",
+      "parent_source": "b_ligh",
+      "field": "pair_next",
+      "hops": 1,
+      "targets": [
+        "ef_magic2"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 645,
+        "parent": "b_ligh"
+      }
+    },
+    {
+      "descendant": "b_mrandom_nt1_1",
+      "parent_source": "b_fire_nt1",
+      "field": "next",
+      "hops": 1,
+      "targets": [
+        "b_fire_nt3"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 666,
+        "parent": "b_fire_nt1"
+      }
+    },
+    {
+      "descendant": "b_mrandom_nt1_2",
+      "parent_source": "b_ligh_nt1",
+      "field": "next",
+      "hops": 1,
+      "targets": [
+        "b_ligh_nt3"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 670,
+        "parent": "b_ligh_nt1"
+      }
+    },
+    {
+      "descendant": "b_mrandom_nt1_3",
+      "parent_source": "b_wate_nt1",
+      "field": "next",
+      "hops": 1,
+      "targets": [
+        "b_wate_nt3"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 674,
+        "parent": "b_wate_nt1"
+      }
+    },
+    {
+      "descendant": "b_mrandom_nt1_4",
+      "parent_source": "b_eart_nt1",
+      "field": "next",
+      "hops": 1,
+      "targets": [
+        "b_eart_nt3"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 678,
+        "parent": "b_eart_nt1"
+      }
+    },
+    {
+      "descendant": "b_mrandom_nt1_5",
+      "parent_source": "b_thun_nt1",
+      "field": "next",
+      "hops": 1,
+      "targets": [
+        "b_thun_nt3"
+      ],
+      "origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 682,
+        "parent": "b_thun_nt1"
+      }
+    }
+  ],
+  "limitations": [
+    "Declared link '@' is an explicit zero/empty, so this model stops inheritance there",
+    "Native constructor may compile next-family differently than general Work lookup",
+    "No actual original Unit instance/gameplay path was run",
+    "Event, Skillset and dynamic addSkill roots are not added in this comparison"
+  ],
+  "original_gameplay": 0,
+  "strict_new_match": 0
+}

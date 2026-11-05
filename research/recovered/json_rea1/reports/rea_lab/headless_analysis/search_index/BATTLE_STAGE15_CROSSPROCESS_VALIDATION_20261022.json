@@ -1,0 +1,37 @@
+{
+  "origin": "OWN_SYNTHETIC_WINDOWS_CHILD_ONLY",
+  "original_game_accessed": false,
+  "checks": {
+    "shared_record_read": true,
+    "signed_runtime_HP_retained": true,
+    "record_retained_after_runtime_Unit_freed": true,
+    "no_runtime_Unit_dereference_after_return": true,
+    "experience_delta_observed": true,
+    "no_native_commit_claim": true
+  },
+  "passed": 6,
+  "total": 6,
+  "delta": {
+    "session_id": "SYNTHETIC_CHILD",
+    "from_phase": "BATTLE_ENTER",
+    "to_phase": "STRATEGY_RETURN",
+    "record_changes": [
+      {
+        "record": "0x30000000",
+        "changes": {
+          "exp_u32": [
+            25,
+            45
+          ]
+        }
+      }
+    ],
+    "unresolved": [],
+    "newly_observed_records": [],
+    "world_object_changed_refs": [],
+    "native_result_argument_observed": false,
+    "native_commit_proven": false,
+    "identity_lifetimes_proven": false,
+    "warning": "Observed deltas are not a writable native result packet. No death inference from missing references."
+  }
+}

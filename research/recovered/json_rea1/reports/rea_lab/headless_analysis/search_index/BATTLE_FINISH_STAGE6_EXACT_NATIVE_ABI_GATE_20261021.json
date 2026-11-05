@@ -1,0 +1,92 @@
+{
+  "id": "BRIDGE-20261021-RESEARCH-06-FINISH-ABI",
+  "sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "status": "VERIFIED ORIGINAL PE DIRECT MACHINE BYTES / GAME NOT RUN",
+  "function": "0x00493630",
+  "abi": {
+    "ECX": "Battlefield*/context pointer: native natural (E+0x1EED1C), BattleWnd ([BattleWnd+0x190])",
+    "EDX": "War container pointer: natural (&E+0x1EED20), BattleWnd ([BattleWnd+0x194])",
+    "first_stack_arg": "GameEvent pointer E. Entry [ESP+4] -> after prolog [ESP+0x130]",
+    "second_stack_arg": "result flag (0=defender,1=attacker in natural native path). Entry [ESP+8] -> [ESP+0x134]",
+    "normal_stack_return": "0x494855 RET 8 (callee pops both 4-byte stack args)",
+    "caller_side_setup": "ECX/EDX set explicitly before E8 CALL; no blind mapping of BattleWnd args to GameEvent fields"
+  },
+  "result_gate": {
+    "attack_map_count_cmp": "0x494667 CMP dword [EBP+0x1EED28], 0 (EDI zeroed at 0x494655)",
+    "nonzero_branch": "0x49466D JNE 0x494858",
+    "flag_test": "0x494858 CMP byte [ESP+0x134],0",
+    "nonzero_flag_branch": "0x494860 JNE 0x494F8E",
+    "zero_map_branch": "0x494673 -> alternate cleanup/rate etc and eventual RET8. Do not treat as normal strategic commit",
+    "caution": "Many finish prelude side effects (3side vf+14 including LevelUp) occur before this result branch; skipping native finish is not safe either."
+  },
+  "caller_site_matrix": {
+    "BATTLEWND_FAST": {
+      "E8_callsite": "0x0040E2B9"
+    },
+    "TICK_NATURAL_1": {
+      "E8_callsite": "0x0049303A"
+    },
+    "TICK_NATURAL_2": {
+      "E8_callsite": "0x00493082"
+    },
+    "TICK_NATURAL_0": {
+      "E8_callsite": "0x004930A1"
+    },
+    "SCRIPT_RESULT": {
+      "E8_callsite": "0x004A1764"
+    }
+  },
+  "verified_instructions": [
+    {
+      "va": "0x0049366B",
+      "bytes": "8bac2430010000",
+      "asm": "mov ebp, dword ptr [esp + 0x130]"
+    },
+    {
+      "va": "0x00493675",
+      "bytes": "8bf9",
+      "asm": "mov edi, ecx"
+    },
+    {
+      "va": "0x0049367B",
+      "bytes": "8bf2",
+      "asm": "mov esi, edx"
+    },
+    {
+      "va": "0x00494655",
+      "bytes": "33ff",
+      "asm": "xor edi, edi"
+    },
+    {
+      "va": "0x00494667",
+      "bytes": "39bd28ed1e00",
+      "asm": "cmp dword ptr [ebp + 0x1eed28], edi"
+    },
+    {
+      "va": "0x0049466D",
+      "bytes": "0f85e5010000",
+      "asm": "jne 0x494858"
+    },
+    {
+      "va": "0x00494855",
+      "bytes": "c20800",
+      "asm": "ret 8"
+    },
+    {
+      "va": "0x00494858",
+      "bytes": "80bc243401000000",
+      "asm": "cmp byte ptr [esp + 0x134], 0"
+    },
+    {
+      "va": "0x00494860",
+      "bytes": "0f8528070000",
+      "asm": "jne 0x494f8e"
+    }
+  ],
+  "WARNINGS": [
+    "C++ thiscall/fastcall-like ABI inferred from machine instructions only. Detour/exception/stack alignment must be separately tested.",
+    "Do not clear original attack_map to freeze combat prior to finish; empty tree follows alternate path.",
+    "The 0x494855 RET8 lies before one result-branch block in address order but that block has a jump predecessor; source listing order is not execution order.",
+    "Script path EDI value cannot be assumed without caller branch-specific EDI provenance."
+  ]
+}

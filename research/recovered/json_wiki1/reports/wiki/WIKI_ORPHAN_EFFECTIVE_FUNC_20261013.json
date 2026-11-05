@@ -1,0 +1,534 @@
+{
+  "status": "STATIC NATIVE REGISTRY FALLBACK / NOT ACTUAL ENGINE BUG",
+  "orphan_parent_count": 37,
+  "effective_func_by_reached": {
+    "('summon', False)": 1,
+    "('UNSET', True)": 16,
+    "('UNSET', False)": 19,
+    "('heal', False)": 1
+  },
+  "new_event_candidate_orphans": [
+    "demo1_range2"
+  ],
+  "records": [
+    {
+      "tag": "Shakespeare_fire_wave_mag",
+      "parent_missing": "Shakespeare_fire_at",
+      "effective_func": "UNSET",
+      "effective_cost": null,
+      "effective_range": null,
+      "direct_chain_incoming": 7,
+      "from_direct_skill_grant_chain": true,
+      "source": {
+        "file": "a_default/script/30_スキル/F51_榴弾・延焼_プレッツヒェン.dat",
+        "line": 482,
+        "parent": "Shakespeare_fire_at"
+      }
+    },
+    {
+      "tag": "giant_swing_CountAfix",
+      "parent_missing": "giant_swing_CountBXX_base",
+      "effective_func": "UNSET",
+      "effective_cost": null,
+      "effective_range": null,
+      "direct_chain_incoming": 2,
+      "from_direct_skill_grant_chain": true,
+      "source": {
+        "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+        "line": 50,
+        "parent": "giant_swing_CountBXX_base"
+      }
+    },
+    {
+      "tag": "astk_kirakira_pr2",
+      "parent_missing": "astk_kirakira_pr",
+      "effective_func": "UNSET",
+      "effective_cost": null,
+      "effective_range": null,
+      "direct_chain_incoming": 1,
+      "from_direct_skill_grant_chain": true,
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 1940,
+        "parent": "astk_kirakira_pr"
+      }
+    },
+    {
+      "tag": "astk_kirakira_pr3",
+      "parent_missing": "astk_kirakira_pr",
+      "effective_func": "UNSET",
+      "effective_cost": null,
+      "effective_range": null,
+      "direct_chain_incoming": 1,
+      "from_direct_skill_grant_chain": true,
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 1945,
+        "parent": "astk_kirakira_pr"
+      }
+    },
+    {
+      "tag": "giant_swing_CountA00",
+      "parent_missing": "giant_swing_CountAXX_base",
+      "effective_func": "UNSET",
+      "effective_cost": null,
+      "effective_range": null,
+      "direct_chain_incoming": 1,
+      "from_direct_skill_grant_chain": true,
+      "source": {
+        "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+        "line": 5,
+        "parent": "giant_swing_CountAXX_base"
+      }
+    },
+    {
+      "tag": "giant_swing_CountA01",
+      "parent_missing": "giant_swing_CountAXX_base",
+      "effective_func": "UNSET",
+      "effective_cost": null,
+      "effective_range": null,
+      "direct_chain_incoming": 1,
+      "from_direct_skill_grant_chain": true,
+      "source": {
+        "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+        "line": 15,
+        "parent": "giant_swing_CountAXX_base"
+      }
+    },
+    {
+      "tag": "giant_swing_CountA02",
+      "parent_missing": "giant_swing_CountAXX_base",
+      "effective_func": "UNSET",
+      "effective_cost": null,
+      "effective_range": null,
+      "direct_chain_incoming": 1,
+      "from_direct_skill_grant_chain": true,
+      "source": {
+        "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+        "line": 25,
+        "parent": "giant_swing_CountAXX_base"
+      }
+    },
+    {
+      "tag": "giant_swing_CountB00",
+      "parent_missing": "giant_swing_CountBXX_base",
+      "effective_func": "UNSET",
+      "effective_cost": null,
+      "effective_range": null,
+      "direct_chain_incoming": 1,
+      "from_direct_skill_grant_chain": true,
+      "source": {
+        "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+        "line": 10,
+        "parent": "giant_swing_CountBXX_base"
+      }
+    },
+    {
+      "tag": "giant_swing_CountB01",
+      "parent_missing": "giant_swing_CountBXX_base",
+      "effective_func": "UNSET",
+      "effective_cost": null,
+      "effective_range": null,
+      "direct_chain_incoming": 1,
+      "from_direct_skill_grant_chain": true,
+      "source": {
+        "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+        "line": 20,
+        "parent": "giant_swing_CountBXX_base"
+      }
+    },
+    {
+      "tag": "giant_swing_CountB02",
+      "parent_missing": "giant_swing_CountBXX_base",
+      "effective_func": "UNSET",
+      "effective_cost": null,
+      "effective_range": null,
+      "direct_chain_incoming": 1,
+      "from_direct_skill_grant_chain": true,
+      "source": {
+        "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+        "line": 30,
+        "parent": "giant_swing_CountBXX_base"
+      }
+    },
+    {
+      "tag": "giant_swing_CountBfix",
+      "parent_missing": "giant_swing_CountBXX_base",
+      "effective_func": "UNSET",
+      "effective_cost": null,
+      "effective_range": null,
+      "direct_chain_incoming": 1,
+      "from_direct_skill_grant_chain": true,
+      "source": {
+        "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+        "line": 55,
+        "parent": "giant_swing_CountBXX_base"
+      }
+    },
+    {
+      "tag": "m_magickbs_nt1_2",
+      "parent_missing": "m_ligh_js",
+      "effective_func": "UNSET",
+      "effective_cost": null,
+      "effective_range": null,
+      "direct_chain_incoming": 1,
+      "from_direct_skill_grant_chain": true,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat",
+        "line": 1668,
+        "parent": "m_ligh_js"
+      }
+    },
+    {
+      "tag": "m_mrandom_nt1_2",
+      "parent_missing": "m_ligh_js",
+      "effective_func": "UNSET",
+      "effective_cost": null,
+      "effective_range": null,
+      "direct_chain_incoming": 1,
+      "from_direct_skill_grant_chain": true,
+      "source": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 4579,
+        "parent": "m_ligh_js"
+      }
+    },
+    {
+      "tag": "sp_tusk_act1_kn",
+      "parent_missing": "tusk_gun_kn",
+      "effective_func": "UNSET",
+      "effective_cost": null,
+      "effective_range": "300",
+      "direct_chain_incoming": 1,
+      "from_direct_skill_grant_chain": true,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+        "line": 2343,
+        "parent": "tusk_gun_kn"
+      }
+    },
+    {
+      "tag": "syokubumper_arm_nt1",
+      "parent_missing": "sk_ns",
+      "effective_func": "UNSET",
+      "effective_cost": null,
+      "effective_range": "180",
+      "direct_chain_incoming": 1,
+      "from_direct_skill_grant_chain": true,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 15300,
+        "parent": "sk_ns"
+      }
+    },
+    {
+      "tag": "hqreireteicpu",
+      "parent_missing": "hqreifretei",
+      "effective_func": "UNSET",
+      "effective_cost": null,
+      "effective_range": null,
+      "direct_chain_incoming": 0,
+      "from_direct_skill_grant_chain": true,
+      "source": {
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 347,
+        "parent": "hqreifretei"
+      }
+    },
+    {
+      "tag": "stove_fire_wave_mag",
+      "parent_missing": "stove_fire_at",
+      "effective_func": "UNSET",
+      "effective_cost": null,
+      "effective_range": null,
+      "direct_chain_incoming": 7,
+      "from_direct_skill_grant_chain": false,
+      "source": {
+        "file": "a_default/script/116_仮設ランダムイベント61-70/skill_stove.dat",
+        "line": 851,
+        "parent": "stove_fire_at"
+      }
+    },
+    {
+      "tag": "demo1_range2",
+      "parent_missing": "demo_range1",
+      "effective_func": "UNSET",
+      "effective_cost": null,
+      "effective_range": null,
+      "direct_chain_incoming": 1,
+      "from_direct_skill_grant_chain": false,
+      "source": {
+        "file": "a_default/script/50_その他新システム/siki.dat",
+        "line": 153,
+        "parent": "demo_range1"
+      }
+    },
+    {
+      "tag": "giant_swing_CountB03",
+      "parent_missing": "giant_swing_CountBXX_base",
+      "effective_func": "UNSET",
+      "effective_cost": null,
+      "effective_range": null,
+      "direct_chain_incoming": 1,
+      "from_direct_skill_grant_chain": false,
+      "source": {
+        "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+        "line": 41,
+        "parent": "giant_swing_CountBXX_base"
+      }
+    },
+    {
+      "tag": "re_cannon_rts_nt1",
+      "parent_missing": "re_cannon_nt1",
+      "effective_func": "UNSET",
+      "effective_cost": null,
+      "effective_range": null,
+      "direct_chain_incoming": 1,
+      "from_direct_skill_grant_chain": false,
+      "source": {
+        "file": "a_default/script/8000_RTSシナリオ/RTSskill.dat",
+        "line": 550,
+        "parent": "re_cannon_nt1"
+      }
+    },
+    {
+      "tag": "re_cannon_rts_nt3",
+      "parent_missing": "re_cannon_nt3",
+      "effective_func": "UNSET",
+      "effective_cost": null,
+      "effective_range": null,
+      "direct_chain_incoming": 1,
+      "from_direct_skill_grant_chain": false,
+      "source": {
+        "file": "a_default/script/8000_RTSシナリオ/RTSskill.dat",
+        "line": 556,
+        "parent": "re_cannon_nt3"
+      }
+    },
+    {
+      "tag": "rtstocsam_mugen_nt",
+      "parent_missing": "rtstocsam",
+      "effective_func": "UNSET",
+      "effective_cost": null,
+      "effective_range": "50",
+      "direct_chain_incoming": 1,
+      "from_direct_skill_grant_chain": false,
+      "source": {
+        "file": "a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 656,
+        "parent": "rtstocsam"
+      }
+    },
+    {
+      "tag": "sp_gogogo",
+      "parent_missing": "sp_nannkasugoino",
+      "effective_func": "UNSET",
+      "effective_cost": null,
+      "effective_range": null,
+      "direct_chain_incoming": 1,
+      "from_direct_skill_grant_chain": false,
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_505_閉店の日.dat",
+        "line": 371,
+        "parent": "sp_nannkasugoino"
+      }
+    },
+    {
+      "tag": "summon_togashi_0",
+      "parent_missing": "summon_togashi_base",
+      "effective_func": "summon",
+      "effective_cost": null,
+      "effective_range": "1",
+      "direct_chain_incoming": 1,
+      "from_direct_skill_grant_chain": false,
+      "source": {
+        "file": "a_default/script/10_ユニット/110_イベント人材.dat",
+        "line": 1957,
+        "parent": "summon_togashi_base"
+      }
+    },
+    {
+      "tag": "watecannon_w_pr3",
+      "parent_missing": "watecannon_w_pr1",
+      "effective_func": "UNSET",
+      "effective_cost": null,
+      "effective_range": null,
+      "direct_chain_incoming": 1,
+      "from_direct_skill_grant_chain": false,
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_2222_レイノアレフ.dat",
+        "line": 517,
+        "parent": "watecannon_w_pr1"
+      }
+    },
+    {
+      "tag": "aqua_times_pr3",
+      "parent_missing": "aqua_times_pr1",
+      "effective_func": "UNSET",
+      "effective_cost": null,
+      "effective_range": null,
+      "direct_chain_incoming": 0,
+      "from_direct_skill_grant_chain": false,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 2448,
+        "parent": "aqua_times_pr1"
+      }
+    },
+    {
+      "tag": "asasin_cream_weapon_glove_mag",
+      "parent_missing": "asasin_cream_weapon_grove_base",
+      "effective_func": "UNSET",
+      "effective_cost": null,
+      "effective_range": null,
+      "direct_chain_incoming": 0,
+      "from_direct_skill_grant_chain": false,
+      "source": {
+        "file": "a_default/script/33_仮設アサシン/skill_asasin_cream_weapon_glove.dat",
+        "line": 174,
+        "parent": "asasin_cream_weapon_grove_base"
+      }
+    },
+    {
+      "tag": "giant_swing_CountA03",
+      "parent_missing": "giant_swing_CountAXX_base",
+      "effective_func": "UNSET",
+      "effective_cost": null,
+      "effective_range": null,
+      "direct_chain_incoming": 0,
+      "from_direct_skill_grant_chain": false,
+      "source": {
+        "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+        "line": 36,
+        "parent": "giant_swing_CountAXX_base"
+      }
+    },
+    {
+      "tag": "hanzo_cream_weapon_glove_mag",
+      "parent_missing": "hanzo_cream_weapon_grove_base",
+      "effective_func": "UNSET",
+      "effective_cost": null,
+      "effective_range": null,
+      "direct_chain_incoming": 0,
+      "from_direct_skill_grant_chain": false,
+      "source": {
+        "file": "a_default/script/35_仮設半造/skill_hanzo_cream_weapon_glove.dat",
+        "line": 184,
+        "parent": "hanzo_cream_weapon_grove_base"
+      }
+    },
+    {
+      "tag": "heal_clown_mprec",
+      "parent_missing": "sing_mprec",
+      "effective_func": "heal",
+      "effective_cost": null,
+      "effective_range": null,
+      "direct_chain_incoming": 0,
+      "from_direct_skill_grant_chain": false,
+      "source": {
+        "file": "a_default/script/30_スキル/F13_heal_support.dat",
+        "line": 1441,
+        "parent": "sing_mprec"
+      }
+    },
+    {
+      "tag": "rmla_ch_old_yari_pr",
+      "parent_missing": "rmla_yari_pr",
+      "effective_func": "UNSET",
+      "effective_cost": null,
+      "effective_range": null,
+      "direct_chain_incoming": 0,
+      "from_direct_skill_grant_chain": false,
+      "source": {
+        "file": "a_default/script/30_スキル/F12_charge.dat",
+        "line": 1318,
+        "parent": "rmla_yari_pr"
+      }
+    },
+    {
+      "tag": "rtstocsamsp3_hub",
+      "parent_missing": "rtstocsamsp5",
+      "effective_func": "UNSET",
+      "effective_cost": null,
+      "effective_range": null,
+      "direct_chain_incoming": 0,
+      "from_direct_skill_grant_chain": false,
+      "source": {
+        "file": "a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 640,
+        "parent": "rtstocsamsp5"
+      }
+    },
+    {
+      "tag": "s_defbarboat_nt2",
+      "parent_missing": "s_defbar_nt2",
+      "effective_func": "UNSET",
+      "effective_cost": null,
+      "effective_range": null,
+      "direct_chain_incoming": 0,
+      "from_direct_skill_grant_chain": false,
+      "source": {
+        "file": "a_default/script/45_内政_防衛兵器/siege_skill.dat",
+        "line": 3183,
+        "parent": "s_defbar_nt2"
+      }
+    },
+    {
+      "tag": "s_defbarboat_nt3",
+      "parent_missing": "s_defbar_nt3",
+      "effective_func": "UNSET",
+      "effective_cost": null,
+      "effective_range": null,
+      "direct_chain_incoming": 0,
+      "from_direct_skill_grant_chain": false,
+      "source": {
+        "file": "a_default/script/45_内政_防衛兵器/siege_skill.dat",
+        "line": 3197,
+        "parent": "s_defbar_nt3"
+      }
+    },
+    {
+      "tag": "ss_rmla_ch_old_yari_pr",
+      "parent_missing": "ss_rmla_yari_pr",
+      "effective_func": "UNSET",
+      "effective_cost": null,
+      "effective_range": null,
+      "direct_chain_incoming": 0,
+      "from_direct_skill_grant_chain": false,
+      "source": {
+        "file": "a_default/script/30_スキル/F12_charge.dat",
+        "line": 2098,
+        "parent": "ss_rmla_yari_pr"
+      }
+    },
+    {
+      "tag": "testskill",
+      "parent_missing": "sp_nannkasugoino",
+      "effective_func": "UNSET",
+      "effective_cost": null,
+      "effective_range": null,
+      "direct_chain_incoming": 0,
+      "from_direct_skill_grant_chain": false,
+      "source": {
+        "file": "a_default/script/6000_スキルテスト/skill_00_test.dat",
+        "line": 1,
+        "parent": "sp_nannkasugoino"
+      }
+    },
+    {
+      "tag": "watecannon_pr3",
+      "parent_missing": "watecannon_pr1",
+      "effective_func": "UNSET",
+      "effective_cost": null,
+      "effective_range": null,
+      "direct_chain_incoming": 0,
+      "from_direct_skill_grant_chain": false,
+      "source": {
+        "file": "a_default/script/30_スキル/F10_missile_砲撃リニューアル.dat",
+        "line": 779,
+        "parent": "watecannon_pr1"
+      }
+    }
+  ],
+  "note": "Work same-kind registry stops absent parent. A function-unset value may have native fallback; not an observed failure."
+}

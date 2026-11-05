@@ -1,0 +1,100 @@
+{
+  "status": "STRUCTURE_ONLY_SYNTHETIC_OR_DETACHED_NOT_GAMEPLAY_VALIDATED",
+  "attack_map": [
+    {
+      "source_spot_pointer": "0x40004000",
+      "def_pointers": [
+        "0x50001000",
+        "0x50002000"
+      ],
+      "native_node_pointer": "0x20002000"
+    }
+  ],
+  "help_map": [
+    {
+      "spot_pointer": "0x40005000",
+      "power_pointer": "0x60001000",
+      "side_byte": 1,
+      "native_node_pointer": "0x20007000"
+    }
+  ],
+  "note": "Pointer identity / names / selected troops / RNG / scene frame are not inferred.",
+  "sides": [
+    {
+      "slot": 0,
+      "class": "Player",
+      "side_pointer": "0x21000000",
+      "unit_count": 2,
+      "units": [
+        {
+          "slot_index": 0,
+          "unit_pointer": "0x30001000",
+          "unit_record_ptr": "0x70000000",
+          "troop_ptr": "0x71000000"
+        },
+        {
+          "slot_index": 1,
+          "unit_pointer": "0x30002000",
+          "unit_record_ptr": "0x70000004",
+          "troop_ptr": "0x71000004"
+        }
+      ],
+      "troops": [
+        {
+          "troop_pointer": "0x28001000",
+          "owner_ref_pointer": "0x46000000",
+          "member_unit_pointers": [
+            "0x30001000",
+            "0x30002000"
+          ],
+          "members_not_in_side_vector": []
+        }
+      ],
+      "troop_count": 1
+    },
+    {
+      "slot": 1,
+      "class": "Enemy",
+      "side_pointer": "0x22000000",
+      "unit_count": 1,
+      "units": [
+        {
+          "slot_index": 0,
+          "unit_pointer": "0x30003000",
+          "unit_record_ptr": "0x70000008",
+          "troop_ptr": "0x71000008"
+        }
+      ],
+      "troops": [
+        {
+          "troop_pointer": "0x28002000",
+          "owner_ref_pointer": "0x46000004",
+          "member_unit_pointers": [
+            "0x30003000"
+          ],
+          "members_not_in_side_vector": []
+        }
+      ],
+      "troop_count": 1
+    },
+    {
+      "slot": 2,
+      "class": "Enemy",
+      "side_pointer": "0x23000000",
+      "unit_count": 0,
+      "units": [],
+      "troops": [],
+      "troop_count": 0
+    }
+  ],
+  "runtime_unit_count": 3,
+  "warnings": [
+    "Native pointers are same-process addresses; never pass raw pointers as stable external IDs",
+    "Slot 0=Player, slots 1/2=Enemy: attack/defense identity is NOT inferred",
+    "This inventory does NOT include HP/MP/position/skills/PRNG/event state",
+    "Unit+0x1c8 and +0x1d0 may be null or carry runtime-only references",
+    "Troop member vs Side Unit vector mismatch is reported, never auto-repaired or invented.",
+    "Troop owner_ref_pointer is a raw pointer only; no def/side label is inferred."
+  ],
+  "troop_total": 2
+}

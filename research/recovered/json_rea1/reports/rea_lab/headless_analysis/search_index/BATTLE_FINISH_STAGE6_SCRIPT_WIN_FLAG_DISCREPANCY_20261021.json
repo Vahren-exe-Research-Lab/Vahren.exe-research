@@ -1,0 +1,128 @@
+{
+  "research_id": "BRIDGE-SCRIPT-WIN-EDI-20261021",
+  "original_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "status": "STATIC PE SOURCE + SWITCH-TABLE, NOT COMPLETE CFG",
+  "original_opcode_win_arg": "0x4A175C PUSH EDI; 0x4A1763 PUSH ESI; 0x4A1764 CALL 0x493630",
+  "EDI_explicit_writer_before_cleanup": "0x4A1670 MOV EDI,0xFFFFFFFC",
+  "operand_edi_after_set": "0x4A167E MOV EDI,EDI is a no-op; branch inner loop uses EDI as -4 vector decrement and then pushes EDI twice",
+  "edi_writers_up_to_call": [
+    {
+      "site": "0x004A12BC",
+      "op": "lea edi, [eax + 4]"
+    },
+    {
+      "site": "0x004A1302",
+      "op": "xor edi, edi"
+    },
+    {
+      "site": "0x004A1346",
+      "op": "mov edi, 1"
+    },
+    {
+      "site": "0x004A13E6",
+      "op": "inc edi"
+    },
+    {
+      "site": "0x004A1496",
+      "op": "mov edi, 0xfffffffc"
+    },
+    {
+      "site": "0x004A154B",
+      "op": "mov edi, 0xfffffffc"
+    },
+    {
+      "site": "0x004A1670",
+      "op": "mov edi, 0xfffffffc"
+    },
+    {
+      "site": "0x004A167E",
+      "op": "mov edi, edi"
+    }
+  ],
+  "branch_targets_inside_cleanup": [
+    {
+      "source": "0x004A155C",
+      "opcode": "je",
+      "dest": "0x004A164D"
+    },
+    {
+      "source": "0x004A1600",
+      "opcode": "je",
+      "dest": "0x004A1608"
+    },
+    {
+      "source": "0x004A1614",
+      "opcode": "je",
+      "dest": "0x004A161C"
+    },
+    {
+      "source": "0x004A1628",
+      "opcode": "je",
+      "dest": "0x004A1630"
+    },
+    {
+      "source": "0x004A1675",
+      "opcode": "jmp",
+      "dest": "0x004A1680"
+    },
+    {
+      "source": "0x004A168C",
+      "opcode": "je",
+      "dest": "0x004A1729"
+    },
+    {
+      "source": "0x004A16A5",
+      "opcode": "jne",
+      "dest": "0x004A16BF"
+    },
+    {
+      "source": "0x004A16C1",
+      "opcode": "je",
+      "dest": "0x004A16D0"
+    },
+    {
+      "source": "0x004A16DC",
+      "opcode": "je",
+      "dest": "0x004A16E4"
+    },
+    {
+      "source": "0x004A16F0",
+      "opcode": "je",
+      "dest": "0x004A16F8"
+    },
+    {
+      "source": "0x004A1704",
+      "opcode": "je",
+      "dest": "0x004A170C"
+    },
+    {
+      "source": "0x004A1718",
+      "opcode": "je",
+      "dest": "0x004A1680"
+    },
+    {
+      "source": "0x004A1724",
+      "opcode": "jmp",
+      "dest": "0x004A1680"
+    }
+  ],
+  "switch_entries_inside_cleanup": [
+    {
+      "case": 4,
+      "va": "0x004A166E"
+    },
+    {
+      "case": 5,
+      "va": "0x004A174A"
+    }
+  ],
+  "conditional_result": "If script path arrives via 0x4A1670 and callees preserve EDI, value pushed as result flag is 0xFFFFFFFC (low byte 0xFC, nonzero), NOT 0. Require entry-specific CFG/runtime verification.",
+  "discrepancy": "Existing owner A/B saved reports label script win as flag0 fixed; direct byte sequence shows PUSH EDI after MOV EDI,-4 on a visible cleanup path. Do not promote script flag0 to proven invariant.",
+  "owner_followup": [
+    "A/T010",
+    "B/T012",
+    "C/T025",
+    "E/compatibility"
+  ],
+  "rule": "Keep script caller flag as a raw signed int32 with low-byte truth semantics until proven."
+}

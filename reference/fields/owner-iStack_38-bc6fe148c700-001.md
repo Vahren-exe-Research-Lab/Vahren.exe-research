@@ -10,4 +10,10 @@
 - [research/recovered/b_batch3/T012_ENTRY_CONTEXT_FALLBACK_SUPPORT_AND_RESET_20261021.md 行 21](../../research/recovered/b_batch3/T012_ENTRY_CONTEXT_FALLBACK_SUPPORT_AND_RESET_20261021.md?plain=1#L21-L21) — 8. E+0x1EED4Cの対象+0x10==0の枝を処理した後、0x4900DA→0x597A50の結果>0、iStack_38!=0、[iStack_38+0x94]==0の3条件で、0x490122→0x4868D0の戻り値を用いる。真なら0x490149→0x52DE20、偽なら0x490151→0x49018
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 641](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L641-L641) — "before": "if (((0 < iVar13) && (iStack_38 != 0)) && (*(int *)(iStack_38 + 0x94) == 0)) {",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json 行 920](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json?plain=1#L920-L920) — "context_before": "if (((0 < iVar13) && (iStack_38 != 0)) && (*(int *)(iStack_38 + 0x94) == 0)) {",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

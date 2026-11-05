@@ -1,0 +1,4474 @@
+{
+  "status": "RAW DAT Skill field occurrence/NOT NATIVE LOADER MAPPING/NOT GAMEPLAY",
+  "declarations": 16554,
+  "raw_delay_count": 256,
+  "raw_gun_delay_count": 885,
+  "raw_both": 143,
+  "delay_value_histogram": {
+    "2": 127,
+    "3": 29,
+    "1": 53,
+    "@": 11,
+    "6": 8,
+    "0": 3,
+    "10": 3,
+    "4": 3,
+    "8": 5,
+    "16": 1,
+    "5": 10,
+    "12": 1,
+    "34": 1,
+    "14": 1
+  },
+  "gun_delay_value_top": [
+    [
+      "cannon*3",
+      22
+    ],
+    [
+      "@",
+      18
+    ],
+    [
+      "cannon*4",
+      15
+    ],
+    [
+      "sp_ranbu_hsky*6",
+      10
+    ],
+    [
+      "dash*3",
+      9
+    ],
+    [
+      "cannon*6",
+      8
+    ],
+    [
+      "inarizan*3",
+      8
+    ],
+    [
+      "3",
+      6
+    ],
+    [
+      "comsummon*7",
+      6
+    ],
+    [
+      "comsummon*8",
+      6
+    ],
+    [
+      "back*1",
+      6
+    ],
+    [
+      "cannon*2",
+      5
+    ],
+    [
+      "cannon*5",
+      5
+    ],
+    [
+      "sp_masupa*1",
+      5
+    ],
+    [
+      "whip*3",
+      4
+    ],
+    [
+      "seiretsu3*2",
+      4
+    ],
+    [
+      "b_all*3",
+      4
+    ],
+    [
+      "comsummon*9",
+      4
+    ],
+    [
+      "santa*6",
+      4
+    ],
+    [
+      "s_astk*12",
+      4
+    ]
+  ],
+  "help_action_unable_by_effective_func": {
+    "missile": 123,
+    "summon": 57
+  },
+  "help_action_unable_count": 180,
+  "help_action_unable_tags": [
+    "sp_ranbu_rensan",
+    "s_inyume66r",
+    "sp_hznkani",
+    "hzn_firehamachi",
+    "hzn_thun26",
+    "hzn_wate26",
+    "hzn_beam26",
+    "cyclops_b",
+    "sp_hznillu",
+    "pikasp_zan",
+    "s_yn",
+    "s_miryosk",
+    "s_miryosk2",
+    "atmu_fire",
+    "atmu_thun",
+    "atmu_wate",
+    "kmn_misairu",
+    "kmn_gun",
+    "kmn_beam",
+    "b_arrow2",
+    "ill_arrow2",
+    "sb_arrow2",
+    "toonoclaw",
+    "toono_devour",
+    "s_scary",
+    "s_inyume",
+    "s_toshino",
+    "s_crow",
+    "s_kyonsi",
+    "s_miira",
+    "s_alison2",
+    "s_kenja",
+    "s_monaka",
+    "s_a010",
+    "sp_udk_ass",
+    "s_goeinomi",
+    "sp_bangi",
+    "sp_firero",
+    "firerosp_zan",
+    "sp_inariotoko",
+    "s_inari",
+    "sp_chikorita1",
+    "sp_chikorita2",
+    "sp_chikorita3",
+    "sp_masupa6",
+    "s_yn_senyo1",
+    "s_yn_senyo2",
+    "s_yn_senyo3",
+    "s_yn_senyo4",
+    "ymny_summon",
+    "sp_brrng",
+    "s_kaeru",
+    "sp_yuh1",
+    "yuh_devour",
+    "s_fuwausa",
+    "s_milk",
+    "sp_syubarugo",
+    "s_yusakuhati",
+    "sp_fmrim_fmi",
+    "sp_fmrim1",
+    "sp_fmrim2",
+    "s_tsuri",
+    "s_musi",
+    "s_kbs_a",
+    "s_kbs_b",
+    "sp_reyes",
+    "s_renown",
+    "s_tomeigirl",
+    "sp_syokupanman_summon",
+    "s_dorei",
+    "s_jdorei",
+    "s_butadorei",
+    "s_jbutadorei",
+    "sp_masupa",
+    "sp_masu3",
+    "masu_hosi",
+    "sp_masupa5",
+    "sp_masu2",
+    "sp_masu4",
+    "rr_knife",
+    "call_fear",
+    "s_miryohm",
+    "b_monster_ball",
+    "ingon3_a27b",
+    "ingon3",
+    "s_miryo_yaju",
+    "s_miryo_yrim",
+    "sp_ochan",
+    "turnx_b",
+    "sp_jj9",
+    "sp_jagi",
+    "trn_buff",
+    "sww_mishakuji",
+    "biim_summon_23",
+    "u23_dragonclaw",
+    "u23_masupa5",
+    "p_misairu",
+    "sp_step",
+    "sp_ranbu",
+    "sp_pojiko",
+    "sp_fear",
+    "sp_conf",
+    "sp_tea",
+    "sp_gun",
+    "sp_tisa",
+    "sp_mnr",
+    "yaju_rush",
+    "sp_kmrgun",
+    "sp_murpo_reitoubiim",
+    "knn_rush",
+    "sp_kaminari",
+    "sp_hassamu",
+    "sp_nyn",
+    "sp_conf_nyn",
+    "sp_saihu",
+    "sp_flour",
+    "sp_hasami",
+    "bsp_masupa5",
+    "sp_ondisk",
+    "sp_dmcabiim",
+    "sp_aok",
+    "sp_ranbu_toukou",
+    "sp_diyusi",
+    "sp_inu",
+    "sp_gosaku",
+    "sp_boom_ryuga",
+    "itetukuhadou",
+    "fbreath",
+    "cbreath",
+    "s_mhsi",
+    "dragonclaw",
+    "ud_dragonclaw",
+    "udbsp_masupa5",
+    "sp_marimox",
+    "sp_conf_bokhohn",
+    "sp_bokhohn",
+    "sp_kzinssie",
+    "metalclaw_MPT",
+    "sakenomiga_turnx",
+    "misya_devour",
+    "s_dopyu",
+    "sww23_mishakuji",
+    "itetukuhadou_23a",
+    "itetukuhadou_23b",
+    "cbreath_23",
+    "sp_toppa_boss_swk",
+    "sp_toppa_boss",
+    "yuuh_masupa",
+    "atud_summon",
+    "snnm_beam",
+    "sp_fmrim3",
+    "sp_fmrim4",
+    "sp_fmrim5",
+    "sp_fmrim6",
+    "sp_fmrim7",
+    "bosstoono_attack",
+    "sp_go_nannkasugoino2",
+    "sp_scream",
+    "sp_kenri_summon",
+    "sp_kenri_toppa",
+    "kenri_kidan",
+    "sp_kenrirush",
+    "ssrn_kidan",
+    "ssrn_sw",
+    "ssrn_sw_weak",
+    "inm_arrow2",
+    "ncnc_base_summon",
+    "sp_fmrim5_r",
+    "sp_fmrim6_r",
+    "sp_marimox_r",
+    "nkdking_summon_r",
+    "s_kaizoku",
+    "s_kaizoku_toono",
+    "s_kaizoku_drama",
+    "s_kaizoku_vvan",
+    "s_kaizoku_disk",
+    "s_kaizoku_knn",
+    "s_kaizoku_genri",
+    "sp_go_nannkasugoino",
+    "buff_pinga"
+  ],
+  "help_unable_with_delay": 131,
+  "help_unable_without_delay": 49,
+  "delay_cases": [
+    {
+      "tag": "s_inyume66r",
+      "path": "a_default/script/116_仮設ランダムイベント61-70/randomev66_unit_class_inyume66r.dat",
+      "line": 4,
+      "kind": "summon",
+      "delay": {
+        "value": "2",
+        "line": 15
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（いんゆめくん）]"
+    },
+    {
+      "tag": "giant_swing",
+      "path": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+      "line": 46,
+      "kind": "missile",
+      "delay": {
+        "value": "3",
+        "line": 65
+      },
+      "gun_delay": {
+        "value": "giant_swing * 6",
+        "line": 61
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：118$技中移動力：10％$使用後、同スキル使用不能　（期間：通常のスキル6回分）$―――――――――$[属性：近接][攻撃×  6％][範囲攻撃]（多段ヒット）$[属性：近接][攻撃× 50％]$[属性：砲撃][攻撃×100％][範囲攻撃：極大]$[属性：砲撃][魔力× 20％][範囲攻撃：極大]$[属性：砲撃][攻撃×100％][範囲攻撃：中"
+    },
+    {
+      "tag": "hzn_firehamachi",
+      "path": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_boss.dat",
+      "line": 183,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 189
+      },
+      "gun_delay": {
+        "value": "hzn_firehamachi*8",
+        "line": 188
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：600$技中移動力：50％$使用後行動不能　（期間：通常のスキル1回分）$使用後、同スキル使用不能　（期間：通常のスキル8回分）$―――――――――$[属性：火][攻撃× 95％][範囲攻撃：小]（すごくたくさん）$[属性：火][魔力× 15％][範囲攻撃：小]（すごくたくさん）$[属性：召喚（HZNのクソデブ）20体]$―――――――――$追加"
+    },
+    {
+      "tag": "hzn_wate26",
+      "path": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_boss.dat",
+      "line": 243,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 248
+      },
+      "gun_delay": {
+        "value": "hzn_wate26*8",
+        "line": 247
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：500$技中移動力：50％$使用後行動不能　（期間：通常のスキル1回分）$使用後、同スキル使用不能　（期間：通常のスキル8回分）$―――――――――$[属性：水][攻撃× 100％][範囲攻撃：大]（80回）$[属性：水][魔力× 20％][範囲攻撃：大]（80回）$―――――――――$追加効果$ノックバック（歩兵にも効く）"
+    },
+    {
+      "tag": "cyclops_b",
+      "path": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_cyclops.dat",
+      "line": 69,
+      "kind": "missile",
+      "delay": {
+        "value": "3",
+        "line": 89
+      },
+      "gun_delay": {
+        "value": "cyclops_b*25",
+        "line": 81
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：500$技中移動力：0％$使用後行動不能　（期間：通常のスキル3回分）$―――――――――$[固定ダメージ×たくさん]（貫通）$飛び道具を一方的に打ち消す。$鷹のようではありませんか！"
+    },
+    {
+      "tag": "sp_hznillu",
+      "path": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_lastboss.dat",
+      "line": 65,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 75
+      },
+      "gun_delay": {
+        "value": "sp_hznillu*30",
+        "line": 74
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：400　[着弾位置直接指定可]$技中移動力：50％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：土][攻撃× 0％][範囲攻撃：大]（120回）$―――――――――$追加効果$混乱・幻覚のどちらか：50％（状態異常判定が行われる確率が50％であり、$　50％の確率で状態異常にするとは言ってない）$―――――――――$"
+    },
+    {
+      "tag": "pikasp_zan",
+      "path": "a_default/script/30_スキル/C_必殺_クラス専用.dat",
+      "line": 787,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 797
+      },
+      "gun_delay": {
+        "value": "pikasp_zan*6",
+        "line": 800
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：450$技中移動力：100％$使用後行動不能　（期間：通常のスキル1回分）$使用後、同スキル使用不能　（期間：通常のスキル6回分）$―――――――――$[属性：雷][攻撃×100％][範囲攻撃：中]（貫通・15HIT）$[属性：雷][魔力× 20％][範囲攻撃：中]（貫通・15HIT）$―――――――――$追加効果$麻痺：35％（状態異常判定が行"
+    },
+    {
+      "tag": "s_yn",
+      "path": "a_default/script/30_スキル/C_必殺_クラス専用.dat",
+      "line": 1073,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 1085
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（ＦＬＮ役クッキー☆声優）]$多重人格らしい。"
+    },
+    {
+      "tag": "s_miryosk",
+      "path": "a_default/script/30_スキル/F10_missile.dat",
+      "line": 2552,
+      "kind": "summon",
+      "delay": {
+        "value": "2",
+        "line": 2563
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（魅了されたサケノミ）]"
+    },
+    {
+      "tag": "atmu_fire",
+      "path": "a_default/script/30_スキル/F10_missile.dat",
+      "line": 7934,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 7940
+      },
+      "gun_delay": {
+        "value": "atmu_fire*8",
+        "line": 7939
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：600$技中移動力：50％$使用後行動不能　（期間：通常のスキル1回分）$使用後、同スキル使用不能　（期間：通常のスキル8回分）$―――――――――$[属性：火][攻撃× 95％][範囲攻撃：小]（すごくたくさん）$[属性：火][魔力× 15％][範囲攻撃：小]（すごくたくさん）$[属性：召喚（太陽の子ら）20体]$―――――――――$追加効果$"
+    },
+    {
+      "tag": "atmu_thun",
+      "path": "a_default/script/30_スキル/F10_missile.dat",
+      "line": 8020,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 8026
+      },
+      "gun_delay": {
+        "value": "atmu_thun*8",
+        "line": 8025
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：500$技中移動力：50％$使用後行動不能　（期間：通常のスキル1回分）$使用後、同スキル使用不能　（期間：通常のスキル8回分）$―――――――――$[属性：雷][攻撃× 90％][範囲攻撃：大]（60回）$[属性：雷][魔力× 40％][範囲攻撃：大]（60回）$―――――――――$追加効果$ノックバック（歩兵にも効く）"
+    },
+    {
+      "tag": "atmu_wate",
+      "path": "a_default/script/30_スキル/F10_missile.dat",
+      "line": 8048,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 8054
+      },
+      "gun_delay": {
+        "value": "atmu_wate*8",
+        "line": 8053
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：500$技中移動力：50％$使用後行動不能　（期間：通常のスキル1回分）$使用後、同スキル使用不能　（期間：通常のスキル8回分）$―――――――――$[属性：水][攻撃× 100％][範囲攻撃：大]（80回）$[属性：水][魔力× 20％][範囲攻撃：大]（80回）$―――――――――$追加効果$ノックバック（歩兵にも効く）"
+    },
+    {
+      "tag": "kmn_misairu",
+      "path": "a_default/script/30_スキル/F10_missile.dat",
+      "line": 8121,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 8125
+      },
+      "gun_delay": {
+        "value": "kmn_misairu*8",
+        "line": 8124
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：200～800　[放物線軌道]$技中移動力：0％$使用後行動不能　（期間：通常のスキル2回分）$使用後、同スキル使用不能　（期間：通常のスキル8回分）$―――――――――$[属性：風][攻撃×100％][範囲攻撃：極大]（30回）$[属性：風][魔力× 20％][範囲攻撃：極大]（30回）$[属性：ランダム（風：67％、火：33％）][攻撃×10"
+    },
+    {
+      "tag": "kmn_gun",
+      "path": "a_default/script/30_スキル/F10_missile.dat",
+      "line": 8193,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 8196
+      },
+      "gun_delay": {
+        "value": "kmn_gun*8",
+        "line": 8195
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：500$技中移動力：50％$使用後行動不能　（期間：通常のスキル2回分）$使用後、同スキル使用不能　（期間：通常のスキル8回分）$―――――――――$[属性：銃撃][攻撃×100％]（120回）$[属性：銃撃][魔力× 20％]（120回）$―――――――――$追加効果$ノックバック（歩兵にも少し効く）"
+    },
+    {
+      "tag": "kmn_beam",
+      "path": "a_default/script/30_スキル/F10_missile.dat",
+      "line": 8246,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 8251
+      },
+      "gun_delay": {
+        "value": "kmn_beam*8",
+        "line": 8250
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：800$技中移動力：0％$使用後行動不能　（期間：通常のスキル2回分）$使用後、同スキル使用不能　（期間：通常のスキル8回分）$―――――――――$[属性：光][魔力× 20％][範囲攻撃：横長楕円状]（貫通・5HIT）$―――――――――$上記の当たり判定を40ドット間隔で縦に20個並べる。$当たり判定が重なり合っている所ではHIT数も倍になる"
+    },
+    {
+      "tag": "m_arrow2",
+      "path": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+      "line": 131,
+      "kind": "missile",
+      "delay": {
+        "value": "@",
+        "line": 138
+      },
+      "gun_delay": null,
+      "help_action_unable": false,
+      "help_desc": "$射程距離：800　[放物線軌道]（接敵時使用不能）$技中移動力：90％$―――――――――$[属性：矢][攻撃×100％]$[属性：矢][魔力× 20％]"
+    },
+    {
+      "tag": "b_arrow2",
+      "path": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+      "line": 141,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 166
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：800　[放物線軌道]（接敵時使用不能）$使用後行動不能　（期間：通常のスキル2回分）$技中移動力：0％$―――――――――$[属性：矢][攻撃×100％]（3回）$[属性：矢][魔力× 20％]（3回）"
+    },
+    {
+      "tag": "sb_arrow2",
+      "path": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+      "line": 342,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 366
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：800　[放物線軌道]（接敵時使用不能）$使用後行動不能　（期間：通常のスキル2回分）$技中移動力：0％$―――――――――$[属性：矢][攻撃×100％]（2回）$[属性：矢][魔力× 20％]（2回）$―――――――――$追加効果$毒・幻覚・麻痺のどれか：50％（状態異常判定が行われる確率が50％であ$り、50％状態異常にするとは言ってない）"
+    },
+    {
+      "tag": "p_arrow2",
+      "path": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+      "line": 4489,
+      "kind": "missile",
+      "delay": {
+        "value": "@",
+        "line": 4508
+      },
+      "gun_delay": null,
+      "help_action_unable": false,
+      "help_desc": "$射程距離：800　[放物線軌道]（接敵時使用不能）$技中移動力：80％$―――――――――$[属性：矢][攻撃×120％]$[属性：矢][魔力× 30％]$[属性：水][攻撃× 90％][範囲攻撃：小]$[属性：水][魔力× 10％][範囲攻撃：小]$―――――――――$追加効果$麻痺：50％$ノックバック（歩兵にも効く）$―――――――――$着弾地点から"
+    },
+    {
+      "tag": "p_arrow3",
+      "path": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+      "line": 4558,
+      "kind": "missile",
+      "delay": {
+        "value": "@",
+        "line": 4566
+      },
+      "gun_delay": {
+        "value": "cannon*3",
+        "line": 4579
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：150～600　[放物線軌道]（接敵時使用不能）$使用後、同系統スキル（砲撃系）使用不能　（期間：通常のスキル3回分）$技中移動力：50％$―――――――――$[属性：砲撃][攻撃×100％][範囲攻撃：大]$[属性：砲撃][魔力× 30％][範囲攻撃：大]$―――――――――$追加効果$ノックバック（歩兵にも効く）$―――――――――$敵陣こわ"
+    },
+    {
+      "tag": "sp_attack",
+      "path": "a_default/script/30_スキル/F13_heal_support.dat",
+      "line": 368,
+      "kind": "heal",
+      "delay": {
+        "value": "3",
+        "line": 417
+      },
+      "gun_delay": null,
+      "help_action_unable": false,
+      "help_desc": "$射程距離：5000（実質無限）　[射程内の味方全員に効果あり]$技中移動力：100％$使用後、スキル使用不能　（期間：通常のスキル3回分）$―――――――――$[属性：補助・攻撃][固定値：100]$―――――――――$檄を飛ばしたり歌ったりするなどして、全軍の士気を上昇させる。"
+    },
+    {
+      "tag": "s_inyume",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 363,
+      "kind": "summon",
+      "delay": {
+        "value": "2",
+        "line": 374
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（いんゆめくん）]"
+    },
+    {
+      "tag": "s_toshino",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 471,
+      "kind": "summon",
+      "delay": {
+        "value": "2",
+        "line": 482
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（歳納人形）]"
+    },
+    {
+      "tag": "s_crow",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 571,
+      "kind": "summon",
+      "delay": {
+        "value": "2",
+        "line": 582
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（地獄のカラス）]"
+    },
+    {
+      "tag": "s_kyonsi",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 599,
+      "kind": "summon",
+      "delay": {
+        "value": "2",
+        "line": 610
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（キョンシー）]"
+    },
+    {
+      "tag": "s_miira",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 753,
+      "kind": "summon",
+      "delay": {
+        "value": "2",
+        "line": 764
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（サケノミイラ）]"
+    },
+    {
+      "tag": "s_alison2",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 875,
+      "kind": "summon",
+      "delay": {
+        "value": "2",
+        "line": 882
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（ＧＯ教団突撃兵）]$―――――――――$「GOによる統一を目指して」$突撃兵は攻撃することでMPを回復し、$MPが一定値に貯まるごとに同胞を招集する。"
+    },
+    {
+      "tag": "s_kenja",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 957,
+      "kind": "summon",
+      "delay": {
+        "value": "2",
+        "line": 968
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（賢者の石）]"
+    },
+    {
+      "tag": "kintama_summon",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 1266,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 1278
+      },
+      "gun_delay": null,
+      "help_action_unable": false,
+      "help_desc": "$射程距離：200$技中移動力：0％$$―――――――――$[属性：召喚（金玉　2個））]"
+    },
+    {
+      "tag": "s_monaka",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 1596,
+      "kind": "summon",
+      "delay": {
+        "value": "2",
+        "line": 1607
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（チョコモナカジャンボ）]"
+    },
+    {
+      "tag": "s_a010",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 2185,
+      "kind": "summon",
+      "delay": {
+        "value": "1",
+        "line": 2196
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル1回分）$―――――――――$[属性：召喚（イワナ民）]"
+    },
+    {
+      "tag": "sp_udk_ass",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 2252,
+      "kind": "summon",
+      "delay": {
+        "value": "2",
+        "line": 2269
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（影武者）]"
+    },
+    {
+      "tag": "s_goeinomi",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 3360,
+      "kind": "summon",
+      "delay": {
+        "value": "2",
+        "line": 3371
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（剣豪ノミ・ガーディアノミ）]"
+    },
+    {
+      "tag": "sp_bangi",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 4331,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 4343
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（バンギラス）]"
+    },
+    {
+      "tag": "sp_firero",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 4665,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 4677
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（ファイアロー）]"
+    },
+    {
+      "tag": "firerosp_zan",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 4756,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 4764
+      },
+      "gun_delay": {
+        "value": "firerosp_zan*6",
+        "line": 4767
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：300$技中移動力：100％$使用後行動不能　（期間：通常のスキル1回分）$使用後、同スキル使用不能　（期間：通常のスキル6回分）$―――――――――$[属性：火][攻撃×100％][範囲攻撃：中]（貫通・20HIT）$[属性：火][魔力× 20％][範囲攻撃：中]（貫通・20HIT）$―――――――――$ほのおを まとって とっしんする。$じぶ"
+    },
+    {
+      "tag": "sp_inariotoko",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 4915,
+      "kind": "summon",
+      "delay": {
+        "value": "2",
+        "line": 4931
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（第二のいなり男）]"
+    },
+    {
+      "tag": "s_inari",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 5243,
+      "kind": "summon",
+      "delay": {
+        "value": "@",
+        "line": 5255
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（いなり爆弾）]"
+    },
+    {
+      "tag": "higekuma_summon",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 5642,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 5649
+      },
+      "gun_delay": null,
+      "help_action_unable": false,
+      "help_desc": "豚砲兵召喚（5体）"
+    },
+    {
+      "tag": "sp_chikorita1",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 5825,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 5837
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（チコリータ）]"
+    },
+    {
+      "tag": "sp_chikorita2",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 5879,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 5891
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（ベイリーフ（大嘘））]"
+    },
+    {
+      "tag": "sp_chikorita3",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 5933,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 5946
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（メガニウム（大嘘））]"
+    },
+    {
+      "tag": "ymny_summon",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 6378,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 6384
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（半霊）]$―――――――――$備考$召喚レベル100％（ユニットの召喚レベルに優先）$残り召喚数に関わらず使用可能"
+    },
+    {
+      "tag": "sp_mimi_mot",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 6512,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 6518
+      },
+      "gun_delay": null,
+      "help_action_unable": false,
+      "help_desc": "$射程距離：9999$技中移動力：0％$―――――――――$[属性：召喚（平安京の淫夢）]"
+    },
+    {
+      "tag": "ufo_summon",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 6982,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 6998
+      },
+      "gun_delay": {
+        "value": "ufo_summon*4",
+        "line": 6996
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：9999$技中移動力：0％$―――――――――$[属性：召喚（トオノスキー型円盤）4体]"
+    },
+    {
+      "tag": "sp_brrng",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 7438,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 7450
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（ﾍﾞﾛﾘﾝｶﾞ）]"
+    },
+    {
+      "tag": "s_kaeru",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 7790,
+      "kind": "summon",
+      "delay": {
+        "value": "2",
+        "line": 7801
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（ＳＷＫ様の服のカエル）]"
+    },
+    {
+      "tag": "sp_yuh1",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 8380,
+      "kind": "summon",
+      "delay": {
+        "value": "1",
+        "line": 8392
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル1回分）$―――――――――$[属性：召喚（ばけものゆうひぃ）]"
+    },
+    {
+      "tag": "s_fuwausa",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 9319,
+      "kind": "summon",
+      "delay": {
+        "value": "1",
+        "line": 9330
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル1回分）$―――――――――$[属性：召喚（ふわふわうさぎちゃん）]"
+    },
+    {
+      "tag": "s_milk",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 9492,
+      "kind": "summon",
+      "delay": {
+        "value": "2",
+        "line": 9503
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（オーバースピルドミルク）]$―――――――――$くっせぇなこいつ…（牛乳雑巾）"
+    },
+    {
+      "tag": "sp_syubarugo",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 9674,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 9686
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（シュバルゴ）]"
+    },
+    {
+      "tag": "sp_jocar",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 9770,
+      "kind": "missile",
+      "delay": {
+        "value": "6",
+        "line": 9776
+      },
+      "gun_delay": null,
+      "help_action_unable": false,
+      "help_desc": "$発動距離：9999　$技中移動力：0％$―――――――――$車になる。$死亡時、元の姿に戻る。"
+    },
+    {
+      "tag": "s_yusakuhati",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 10168,
+      "kind": "summon",
+      "delay": {
+        "value": "0",
+        "line": 10179
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：70％$使用後行動不能　（期間：通常のスキル1回分）$―――――――――$[属性：召喚（ちくBee）]$―――――――――$オオスズメバチがやって来たんです！$ミツバチに勝ち目はありません。"
+    },
+    {
+      "tag": "sp_fmrim_fmi",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 10726,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 10743
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：0％$使用後行動不能　（期間：通常のスキル1回分）$―――――――――$[属性：召喚]$―――――――――$FMRIMが得意とする表現主義の表現。"
+    },
+    {
+      "tag": "sp_fmrim1",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 10754,
+      "kind": "summon",
+      "delay": {
+        "value": "1",
+        "line": 10765
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル1回分）$―――――――――$[属性：召喚（声優・ランダム）]$―――――――――$素人声優の絵を描いて具現化させる。"
+    },
+    {
+      "tag": "sp_pierrot",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 11783,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 11789
+      },
+      "gun_delay": {
+        "value": "sp_pierrot_pierrot*5",
+        "line": 11794
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：400　[着弾位置直接指定可]$技中移動力：50％$使用後同スキル使用不可　（期間：通常のスキル5回分）$―――――――――$[属性：土][攻撃× 0％][範囲攻撃：大]（20回）$―――――――――$追加効果$混乱・幻覚のどちらか：50％（状態異常判定が行われる確率が50％であり、$　50％の確率で状態異常にするとは言ってない）$―――――――"
+    },
+    {
+      "tag": "s_tsuri",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 12024,
+      "kind": "summon",
+      "delay": {
+        "value": "1",
+        "line": 12035
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル1回分）$―――――――――$[属性：召喚（釣りキチフェイス）]"
+    },
+    {
+      "tag": "s_musi",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 12329,
+      "kind": "summon",
+      "delay": {
+        "value": "2",
+        "line": 12340
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（クソデカユノミミズ、サケシバ）]"
+    },
+    {
+      "tag": "s_kbs_a",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 12443,
+      "kind": "summon",
+      "delay": {
+        "value": "2",
+        "line": 12452
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（帝国歩兵）2体]$―――――――――$備考$召喚レベル90％（ユニットの召喚レベルに優先）"
+    },
+    {
+      "tag": "sp_reyes",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 12782,
+      "kind": "summon",
+      "delay": {
+        "value": "2",
+        "line": 12798
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（真紅眼の黒竜）]"
+    },
+    {
+      "tag": "sp_ssrn",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 13792,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 13803
+      },
+      "gun_delay": null,
+      "help_action_unable": false,
+      "help_desc": "$$　　　　大変申し訳ありませんが$$この動画は権利者の申し立てにより$$　　　　　　　削除されました"
+    },
+    {
+      "tag": "s_renown",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 14426,
+      "kind": "summon",
+      "delay": {
+        "value": "2",
+        "line": 14437
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（レナウン娘）]$―――――――――$レナウン娘がわんさかわんさかわんさかわんさか！"
+    },
+    {
+      "tag": "s_tomeigirl",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 14898,
+      "kind": "summon",
+      "delay": {
+        "value": "2",
+        "line": 14909
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（透明ガール）]"
+    },
+    {
+      "tag": "sp_syokupanman_summon",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 14987,
+      "kind": "summon",
+      "delay": {
+        "value": "2",
+        "line": 14995
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（しょくぱんまん号）]$―――――――――$備考$召喚レベル100％（ユニットの召喚レベルに優先）$残り召喚数に関わらず使用可能"
+    },
+    {
+      "tag": "s_jdorei",
+      "path": "a_default/script/30_スキル/F21_奴隷少年summon_鞭_突撃_斬撃.dat",
+      "line": 236,
+      "kind": "summon",
+      "delay": {
+        "value": "2",
+        "line": 247
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（奴隷少年）]"
+    },
+    {
+      "tag": "s_jbutadorei",
+      "path": "a_default/script/30_スキル/F21_奴隷少年summon_鞭_突撃_斬撃.dat",
+      "line": 652,
+      "kind": "summon",
+      "delay": {
+        "value": "2",
+        "line": 663
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（豚奴隷）]"
+    },
+    {
+      "tag": "yuh_butigire",
+      "path": "a_default/script/30_スキル/F30_死亡時スキル.dat",
+      "line": 97,
+      "kind": "missile",
+      "delay": {
+        "value": "10",
+        "line": 103
+      },
+      "gun_delay": null,
+      "help_action_unable": false,
+      "help_desc": ""
+    },
+    {
+      "tag": "sp_masupa",
+      "path": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+      "line": 3,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 8
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：1000$技中移動力：0％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：光][魔力× 20％][範囲攻撃：横長楕円状]（貫通・5HIT）$―――――――――$上記の当たり判定を40ドット間隔で縦に25個並べる。$当たり判定が重なり合っている所ではHIT数も倍になる。$―――――――――$追加効果$発動時、相殺可能な敵"
+    },
+    {
+      "tag": "sp_masu3",
+      "path": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+      "line": 111,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 116
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：1000$技中移動力：0％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：光][魔力× 25％][範囲攻撃：横長楕円状]（貫通・5HIT）$―――――――――$上記の当たり判定を40ドット間隔で縦に25個並べる。$当たり判定が重なり合っている所ではHIT数も倍になる。"
+    },
+    {
+      "tag": "masu_hosi",
+      "path": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+      "line": 415,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 420
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：1000$技中移動力：0％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：光][魔力× 25％][範囲攻撃：横長楕円状]（貫通・5HIT）$―――――――――$上記の当たり判定を40ドット間隔で縦に25個並べる。$当たり判定が重なり合っている所ではHIT数も倍になる。"
+    },
+    {
+      "tag": "sp_masupa5",
+      "path": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+      "line": 685,
+      "kind": "missile",
+      "delay": {
+        "value": "6",
+        "line": 696
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：1200$技中移動力：0％$使用後行動不能　（期間：通常のスキル6回分）$―――――――――$[属性：光][魔力× 20％][範囲攻撃：縦長]（貫通・10HIT）$―――――――――$通常のマスタースパークより、横の範囲と持続時間が短い。$短時間でダメージを稼げるが最大ダメージでは劣る。$発射まで少し時間がかかる。"
+    },
+    {
+      "tag": "sp_masu2",
+      "path": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+      "line": 1714,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 1719
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：1000$技中移動力：0％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：光][魔力× 20％][範囲攻撃：横長楕円状]（貫通・5HIT）$―――――――――$上記の当たり判定を40ドット間隔で縦に25個並べる。$当たり判定が重なり合っている所ではHIT数も倍になる。"
+    },
+    {
+      "tag": "sp_masu4",
+      "path": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+      "line": 1923,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 1928
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：1000$技中移動力：0％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：光][魔力× 20％][範囲攻撃：横長楕円状]（貫通・5HIT）$―――――――――$上記の当たり判定を40ドット間隔で縦に25個並べる。$当たり判定が重なり合っている所ではHIT数も倍になる。"
+    },
+    {
+      "tag": "sp_ndk2",
+      "path": "a_default/script/30_スキル/F61_核兵器.dat",
+      "line": 5,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 22
+      },
+      "gun_delay": null,
+      "help_action_unable": false,
+      "help_desc": "$射程距離：200～500　[放物線軌道]$技中移動力：0％$―――――――――$[属性：無][魔力× 20％][範囲攻撃：大]（貫通・14HIT）$[属性：無][魔力× 20％][範囲攻撃：超極大]（貫通・14HIT）$―――――――――$追加効果$恐慌：100％（状態異常判定が行われる確率が100％であり、$　100％の確率で状態異常にするとは言ってない"
+    },
+    {
+      "tag": "yuhray",
+      "path": "a_default/script/31_ユニットスキル/U_16_20_ALC一派～VVAN.dat",
+      "line": 1365,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 1371
+      },
+      "gun_delay": null,
+      "help_action_unable": false,
+      "help_desc": "$射程距離：500　[着弾位置直接指定可]（接敵時使用不能）$技中移動力：0％$使用後、行動不能　（期間：通常のスキル1回分）$―――――――――$[属性：無][攻撃× 100％][範囲攻撃：中]（3回）$[属性：無][魔力× 30％][範囲攻撃：中]（3回）$―――――――――$追加効果：吸血$―――――――――$指定地点付近に爆発を起こす。"
+    },
+    {
+      "tag": "call_fear",
+      "path": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+      "line": 2016,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 2025
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：550$技中移動力：50％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：風][魔力×  5％][範囲攻撃：大]（50回）$―――――――――$追加効果$大ノックバック（歩兵にも効く）$恐慌：100％（状態異常判定が行われる確率が100％であり、$　100％状態異常にするとは言ってない）$―――――――――$未知の通信"
+    },
+    {
+      "tag": "s_miryohm",
+      "path": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+      "line": 2654,
+      "kind": "summon",
+      "delay": {
+        "value": "2",
+        "line": 2665
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（魅了されたホモガキ）]"
+    },
+    {
+      "tag": "b_monster_ball",
+      "path": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+      "line": 3356,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 3380
+      },
+      "gun_delay": {
+        "value": "b_monster_ball*6",
+        "line": 3378
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：500　（接敵時使用不能）$技中移動力：70％$使用後行動不能　（期間：通常のスキル1回分）$使用後、同スキル使用不能　（期間：通常のスキル6回分）$―――――――――$[属性：銃撃][攻撃＆技術×80％]（10回）$[属性：銃撃][攻撃＆技術× 20％]（10回）$―――――――――$追加効果$能力低下：移動力（30を1回）$ノックバック（歩兵"
+    },
+    {
+      "tag": "b_fmrim_astk",
+      "path": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat",
+      "line": 214,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 228
+      },
+      "gun_delay": {
+        "value": "b_fmrim_astk*4",
+        "line": 229
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：500$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：0％$使用後同スキル使用不能　（期間：通常のスキル4回分）$―――――――――$[属性：風][攻撃× 90％][範囲攻撃：大]（5回）$[属性：風][魔力× 40％][範囲攻撃：大]（5回）$[属性：土][魔力×  5％][範囲攻撃：大]（5回）$―――――――――$追"
+    },
+    {
+      "tag": "b_fmrim_bb",
+      "path": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat",
+      "line": 438,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 452
+      },
+      "gun_delay": {
+        "value": "b_fmrim_bb*4",
+        "line": 453
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：400$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：60％$使用後同スキル使用不能　（期間：通常のスキル4回分）$―――――――――$[属性：水][魔力技術複合× 30％]（9回）$―――――――――$追加効果$素材化：20％（状態異常判定が行われる確率が20％であり、$　20％素材化するとは言ってない）$―――――――"
+    },
+    {
+      "tag": "reitoubiim",
+      "path": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat",
+      "line": 746,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 753
+      },
+      "gun_delay": {
+        "value": "cannon*4",
+        "line": 755
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：200～700　（接敵時使用不能）$技中移動力：停止$使用後、同系統スキル（砲撃系）使用不能　（期間：通常のスキル4回分）$―――――――――$[属性：水][攻撃×100％]（直撃）$[属性：水][魔力× 40％]（直撃）$[属性：水][攻撃×100％][範囲攻撃：大]（貫通）$[属性：水][魔力× 20％][範囲攻撃：大]（貫通・追加効果なし）"
+    },
+    {
+      "tag": "aok_zan0",
+      "path": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat",
+      "line": 1252,
+      "kind": "sword",
+      "delay": {
+        "value": "1",
+        "line": 1261
+      },
+      "gun_delay": {
+        "value": "aok_zan*2",
+        "line": 1260
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：接敵時$技中移動力：80％$―――――――――$[属性：突撃][攻撃× 50％][範囲攻撃：中]（3回）$[属性：突撃][攻撃×110％][範囲攻撃：大]（4回）$[属性：突撃][魔力× 25％][範囲攻撃：大]（4回）"
+    },
+    {
+      "tag": "aok_zan1",
+      "path": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat",
+      "line": 1272,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 1285
+      },
+      "gun_delay": {
+        "value": "aok_zan*2",
+        "line": 1284
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：80$技中移動力：80％$―――――――――$[属性：突撃][攻撃× 50％][範囲攻撃：中]（3回）$[属性：突撃][攻撃×110％][範囲攻撃：大]（4回）$[属性：突撃][魔力× 25％][範囲攻撃：大]（4回）"
+    },
+    {
+      "tag": "ingon3",
+      "path": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat",
+      "line": 2062,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 2067
+      },
+      "gun_delay": {
+        "value": "ingo*4",
+        "line": 2068
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：550　[着弾位置指定可]$技中移動力：90％$使用後行動不能　（期間：通常のスキル1回分）$使用後、同スキル使用不能　（期間：通常のスキル4回分）$―――――――――$[属性：闇][攻撃×100％][範囲攻撃：小]（9回）$[属性：闇][魔力× 30％][範囲攻撃：小]（9回）$―――――――――$淫語を唱えて言語野にショックを与える。$狙った"
+    },
+    {
+      "tag": "ingon3_old",
+      "path": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat",
+      "line": 2522,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 2527
+      },
+      "gun_delay": {
+        "value": "ingo*2",
+        "line": 2528
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：550　[着弾位置指定可]$技中移動力：80％$使用後、同スキル使用不能　（期間：通常のスキル2回分）$―――――――――$[属性：闇][攻撃× 100％][範囲攻撃：大]（3回）$[属性：闇][魔力× 40％][範囲攻撃：大]（3回）$―――――――――$淫語魔法が発動。$狙った位置に出ない事に定評がある。当たれば強い。"
+    },
+    {
+      "tag": "sp_skrn",
+      "path": "a_default/script/31_ユニットスキル/U_31_32_ぢゆし～サムソン.dat",
+      "line": 1316,
+      "kind": "missile",
+      "delay": {
+        "value": "6",
+        "line": 1322
+      },
+      "gun_delay": null,
+      "help_action_unable": false,
+      "help_desc": "$射程距離：9999　$技中移動力：0％$―――――――――$本性を現す。"
+    },
+    {
+      "tag": "uho_abesan",
+      "path": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+      "line": 1836,
+      "kind": "missile",
+      "delay": {
+        "value": "6",
+        "line": 1842
+      },
+      "gun_delay": null,
+      "help_action_unable": false,
+      "help_desc": "$射程距離：200　$技中移動力：0％$使用後、行動不能　（期間：通常のスキル6回分）$―――――――――$[属性：薔薇][攻撃×100％][範囲攻撃：大]$[属性：薔薇][魔力×20％][範囲攻撃：大]$―――――――――$追加効果$引き寄せ・HP吸収・MP吸収・麻痺$相殺：銃,矢,砲撃,火,水,風,土,雷,光,闇$―――――――――$周囲のホモがホイホイ"
+    },
+    {
+      "tag": "sp_abesan",
+      "path": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+      "line": 2189,
+      "kind": "missile",
+      "delay": {
+        "value": "6",
+        "line": 2195
+      },
+      "gun_delay": null,
+      "help_action_unable": false,
+      "help_desc": "$射程距離：9999　$技中移動力：0％$―――――――――$服を脱ぎ捨てて真の力を解放する。"
+    },
+    {
+      "tag": "s_miryo_yaju",
+      "path": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+      "line": 4183,
+      "kind": "summon",
+      "delay": {
+        "value": "2",
+        "line": 4194
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（奴隷少年）]"
+    },
+    {
+      "tag": "s_miryo_yrim",
+      "path": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+      "line": 4327,
+      "kind": "summon",
+      "delay": {
+        "value": "2",
+        "line": 4338
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（奴隷少年）]"
+    },
+    {
+      "tag": "sp_ochan",
+      "path": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+      "line": 7737,
+      "kind": "missile",
+      "delay": {
+        "value": "6",
+        "line": 7753
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：500$技中移動力：0％$使用後行動不能　（期間：通常のスキル6回分）$―――――――――$[属性：突撃][攻撃× 90％][範囲攻撃：小]（貫通・たくさん）$[属性：突撃][魔力× 10％][範囲攻撃：小]（貫通・たくさん）$―――――――――$おっちゃんの号令のもと　どこからともなく$なぞのおっちゃんが　あつまってくる"
+    },
+    {
+      "tag": "turnx_b",
+      "path": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+      "line": 8260,
+      "kind": "missile",
+      "delay": {
+        "value": "3",
+        "line": 8275
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：500$技中移動力：150％$使用後行動不能　（期間：通常のスキル3回分）$―――――――――$[固定ダメージ×たくさん]（貫通）$飛び道具を一方的に打ち消す。"
+    },
+    {
+      "tag": "sp_jj9",
+      "path": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+      "line": 9633,
+      "kind": "missile",
+      "delay": {
+        "value": "3",
+        "line": 9649
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：500　[着弾位置直接指定可]$技中移動力：50％$使用後行動不能　（期間：通常のスキル3回分）$―――――――――$[属性：雷][攻撃×100％][範囲攻撃：極大]（4HIT）$[属性：雷][魔力× 20％][範囲攻撃：極大]（4HIT）$[属性：ランダム（雷：50％、光：50％）][攻撃×100％][範囲攻撃：中]（18回）$[属性：ランダム"
+    },
+    {
+      "tag": "sp_jagi",
+      "path": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+      "line": 12921,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 12935
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：その場に設置　（接敵時使用不能）$技中移動力：50％$使用後行動不能　（期間：通常のスキル1回分）$―――――――――$[属性：砲撃][攻撃× 90％][範囲攻撃：中]$[属性：火][魔力×  5％][範囲攻撃：小]（6回）$―――――――――$追加効果$ノックバック（歩兵にも効く）・延焼$―――――――――$可燃物の詰まったドラム缶を仕掛ける。"
+    },
+    {
+      "tag": "trn_buff",
+      "path": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+      "line": 14994,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 15006
+      },
+      "gun_delay": {
+        "value": "trn_buff*12",
+        "line": 15007
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：450　[着弾位置直接指定可]$技中移動力：90％$使用後行動不能　（期間：通常のスキル1回分）$使用後、同スキル使用不能　（期間：通常のスキル12回分）$―――――――――$[属性・ダメージ判定なし][範囲攻撃：大]（4回）$―――――――――$追加効果$友軍回復$[属性：補助・素早さ][固定値：5][範囲]（4回）$[属性：補助・状態異常回復"
+    },
+    {
+      "tag": "sww_mishakuji",
+      "path": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+      "line": 1108,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 1129
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：500$技中移動力：50％$使用後行動不能　（期間：通常のスキル1回分）$使用後、同スキル使用不能　（期間：通常のスキル8回分）$―――――――――$[属性：水][攻撃× 100％][範囲攻撃：大]（160回）$[属性：水][魔力× 20％][範囲攻撃：大]（160回）$[属性：水][攻撃× 100％][範囲攻撃：大]（20回）$[属性：水][魔"
+    },
+    {
+      "tag": "swk_summon",
+      "path": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+      "line": 1277,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 1284
+      },
+      "gun_delay": {
+        "value": "swk_summon*8",
+        "line": 1283
+      },
+      "help_action_unable": false,
+      "help_desc": "SWK様の服のカエルをランダムで呼び寄せる。"
+    },
+    {
+      "tag": "g23_zan",
+      "path": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+      "line": 1707,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 1715
+      },
+      "gun_delay": {
+        "value": "u23_zan*7",
+        "line": 1718
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：300$技中移動力：100％$―――――――――$[属性：突撃][攻撃×100％][範囲攻撃：中]（貫通・20HIT）$[属性：突撃][魔力× 20％][範囲攻撃：中]（貫通・20HIT）$―――――――――$銀白色の大翼を開いて飛翔する。"
+    },
+    {
+      "tag": "biim_summon_23",
+      "path": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+      "line": 1841,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 1849
+      },
+      "gun_delay": {
+        "value": "biim_summon*15",
+        "line": 1847
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：0％$使用後行動不能　（期間：通常のスキル2回分）$使用後、同スキル使用不能　（期間：通常のスキル15回分）$―――――――――$[属性：召喚（青眼の白龍）]$―――――――――$備考$召喚レベル90％（ユニットの召喚レベルに優先）$残り召喚数に関わらず使"
+    },
+    {
+      "tag": "u23_zan",
+      "path": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+      "line": 2389,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 2397
+      },
+      "gun_delay": {
+        "value": "u23_zan*7",
+        "line": 2400
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：300$技中移動力：100％$―――――――――$[属性：突撃][攻撃×100％][範囲攻撃：中]（貫通・20HIT）$[属性：突撃][魔力× 20％][範囲攻撃：中]（貫通・20HIT）$―――――――――$銀白色の大翼を開いて飛翔する。"
+    },
+    {
+      "tag": "u23_dragonclaw",
+      "path": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+      "line": 2439,
+      "kind": "missile",
+      "delay": {
+        "value": "3",
+        "line": 2447
+      },
+      "gun_delay": {
+        "value": "u23_dragonclaw*8",
+        "line": 2451
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：200$技中移動力：0％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：近接][攻撃×100％][範囲攻撃：大]（5回）（斬撃エフェクト一つ当たり）$[属性：風][魔力× 20％][範囲攻撃：大]（5回）（斬撃エフェクト一つ当たり）$―――――――――$両腕の巨大な爪で前方を引き裂く。"
+    },
+    {
+      "tag": "u23_masupa5",
+      "path": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+      "line": 2705,
+      "kind": "missile",
+      "delay": {
+        "value": "3",
+        "line": 2717
+      },
+      "gun_delay": {
+        "value": "u23_masupa5*35",
+        "line": 2720
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：1200$技中移動力：0％$使用後行動不能　（期間：通常のスキル6回分）$―――――――――$[属性：風][魔力× 20％][範囲攻撃：楕円状]（貫通・12HIT）$―――――――――$史上最強にして華麗なる殺戮兵器。"
+    },
+    {
+      "tag": "p_reitou",
+      "path": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+      "line": 4317,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 4324
+      },
+      "gun_delay": {
+        "value": "p_reitou*7",
+        "line": 4326
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：98～893　（接敵時使用不能）$技中移動力：0％$使用後、同スキル使用不能　（期間：通常のスキル7回分）$―――――――――$[属性：水][攻撃×100％]（直撃）$[属性：水][魔力× 40％]（直撃）$[属性：水][攻撃×100％][範囲攻撃：大]（貫通）$[属性：水][魔力× 20％][範囲攻撃：大]（貫通・追加効果なし）$―――――――"
+    },
+    {
+      "tag": "p_misairu",
+      "path": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+      "line": 4474,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 4478
+      },
+      "gun_delay": {
+        "value": "p_misairu*9",
+        "line": 4477
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：200～800　[放物線軌道]$技中移動力：0％$使用後行動不能　（期間：通常のスキル2回分）$使用後、同スキル使用不能　（期間：通常のスキル9回分）$―――――――――$[属性：砲撃][攻撃×120％][範囲攻撃：極大]（15回）$[属性：砲撃][魔力× 40％][範囲攻撃：極大]（15回）$[属性：砲撃][攻撃×120％][範囲攻撃：中]（1"
+    },
+    {
+      "tag": "prmla_summon",
+      "path": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+      "line": 4577,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 4584
+      },
+      "gun_delay": {
+        "value": "prmla_summon*4",
+        "line": 4583
+      },
+      "help_action_unable": false,
+      "help_desc": "ＳＳレイプシュタンダーテの編隊を射出する。（8体）"
+    },
+    {
+      "tag": "pgaisensya_summon",
+      "path": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+      "line": 4695,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 4702
+      },
+      "gun_delay": {
+        "value": "pgaisensya_summon*5",
+        "line": 4701
+      },
+      "help_action_unable": false,
+      "help_desc": "市街宣闘車トラクトータァ隊を発進させる。（8両）"
+    },
+    {
+      "tag": "sp_step",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_0_共用.dat",
+      "line": 1,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 7
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：400　[着弾位置直接指定可]$技中移動力：200％$使用後行動不能　（期間：通常のスキル1回分）$―――――――――$[属性：近接][攻撃×100％]（13回）$[属性：近接][魔力× 20％]（13回）$―――――――――$追加効果$即死：100％$（状態異常判定が行われる確率が100％であり、$　100％即死させるとは言ってない）$――――"
+    },
+    {
+      "tag": "sp_ranbu",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_0_共用.dat",
+      "line": 178,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 199
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：200$技中移動力：50％$使用後行動不能　（期間：通常のスキル1回分）$―――――――――$[属性：近接][攻撃×100％][範囲攻撃：中]（20回）$[属性：近接][魔力× 20％][範囲攻撃：中]（20回）$―――――――――$追加効果$相殺：近接,長柄,突撃,銃,矢"
+    },
+    {
+      "tag": "sp_pojiko",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_0_共用.dat",
+      "line": 410,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 422
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：400$技中移動力：50％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：土][魔力× 5％][範囲攻撃：大]（180回）$―――――――――$追加効果$引き寄せ（歩兵にも効く）$石化：100％（状態異常判定が行われる確率が100％であり、$　100％状態異常にするとは言ってない）"
+    },
+    {
+      "tag": "sp_fear",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_0_共用.dat",
+      "line": 954,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 979
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：400$技中移動力：50％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：風][魔力× 5％][範囲攻撃：大]（50回）$―――――――――$追加効果$ノックバック（歩兵にも効く）$恐慌：100％（状態異常判定が行われる確率が100％であり、$　100％状態異常にするとは言ってない）$―――――――――$大声・鬨の声・"
+    },
+    {
+      "tag": "sp_conf",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_0_共用.dat",
+      "line": 1054,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 1066
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：400　[着弾位置直接指定可]$技中移動力：50％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：麻][攻撃× 0％][範囲攻撃：大]（120回）$―――――――――$追加効果$混乱・幻覚のどちらか：50％（状態異常判定が行われる確率が50％であり、$　50％の確率で状態異常にするとは言ってない）$―――――――――$"
+    },
+    {
+      "tag": "sp_zan",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_0_共用.dat",
+      "line": 1159,
+      "kind": "missile",
+      "delay": {
+        "value": "@",
+        "line": 1169
+      },
+      "gun_delay": null,
+      "help_action_unable": false,
+      "help_desc": "$射程距離：300$技中移動力：100％$―――――――――$[属性：近接][攻撃×100％][範囲攻撃：中]（貫通・15HIT）$[属性：近接][魔力× 15％][範囲攻撃：中]（貫通・15HIT）$―――――――――$敵陣に勢いよく斬り込む。$文字通り「斬り」込むとは限らず、素手でこれをやる人も稀にいる。"
+    },
+    {
+      "tag": "sp_slide",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_0_共用.dat",
+      "line": 1305,
+      "kind": "missile",
+      "delay": {
+        "value": "@",
+        "line": 1314
+      },
+      "gun_delay": null,
+      "help_action_unable": false,
+      "help_desc": "$射程距離：300$技中移動力：100％$―――――――――$[属性：近接][攻撃×100％][範囲攻撃：中]（15回）$[属性：近接][魔力× 15％][範囲攻撃：中]（15回）$―――――――――$追加効果$恐慌：100％（状態異常判定が行われる確率が100％であり、$　100％状態異常にするとは言ってない）$―――――――――$こわい。"
+    },
+    {
+      "tag": "sp_tea",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_0_共用.dat",
+      "line": 1418,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 1423
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：500　[着弾位置直接指定可]$技中移動力：50％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：水][魔力× 5％][範囲攻撃：大]（30回）$―――――――――$追加効果$麻痺と沈黙のどちらか：100％（状態異常判定が行われる確率が100％であり、$　100％状態異常にするとは言ってない）"
+    },
+    {
+      "tag": "sp_gun",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_0_共用.dat",
+      "line": 1546,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 1551
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：500$技中移動力：50％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：銃撃][攻撃×100％]（120回）$[属性：銃撃][魔力× 20％]（120回）$―――――――――$追加効果$ノックバック（歩兵にも少し効く）"
+    },
+    {
+      "tag": "sp_grenade",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_0_共用.dat",
+      "line": 1633,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 1639
+      },
+      "gun_delay": null,
+      "help_action_unable": false,
+      "help_desc": "$射程距離：400　[放物線軌道]$技中移動力：50％$使用後スキル使用不能　（期間：通常のスキル2回分）$―――――――――$[属性：砲撃][攻撃×120％][範囲攻撃：極大]$[属性：砲撃][魔力× 40％][範囲攻撃：極大]$[属性：砲撃][攻撃×120％][範囲攻撃：中]（12回）$[属性：砲撃][魔力× 40％][範囲攻撃：中]（12回）$――――"
+    },
+    {
+      "tag": "sp_clown_luna",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+      "line": 1709,
+      "kind": "missile",
+      "delay": {
+        "value": "4",
+        "line": 1724
+      },
+      "gun_delay": null,
+      "help_action_unable": false,
+      "help_desc": "$射程距離：850$技中移動力：0％$―――――――――$このスキルはCL姉貴以外の全てのユニット（味方も含む）にヒットする。$【松明】[属性：麻][技術×10％][範囲攻撃：小・貫通]（40個）$【松明】[属性：補助・攻撃][最大限]$【松明】[属性：補助・HP回復][最大限]$【紫の月光】[属性：麻][技術×24％][貫通]（33回）$$――――――――"
+    },
+    {
+      "tag": "sp_mimi",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+      "line": 2541,
+      "kind": "missile",
+      "delay": {
+        "value": "3",
+        "line": 2551
+      },
+      "gun_delay": null,
+      "help_action_unable": false,
+      "help_desc": "$発動距離：600　（接敵時使用不能）$技中移動力：0％$―――――――――$[属性：近接・長柄・突撃・弓矢・銃・火・光・水・土・雷・風・闇のいずれか][魔力×  5％][範囲攻撃：大]（15回）$―――――――――$追加効果$毒・恐慌・幻覚・混乱・麻痺・石化・沈黙のいずれか：30％$ノックバック（歩兵にも効く）$―――――――――$怪物の姿になりブレスで攻"
+    },
+    {
+      "tag": "sp_flash",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+      "line": 4102,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 4109
+      },
+      "gun_delay": null,
+      "help_action_unable": false,
+      "help_desc": "$射程距離：400　[放物線軌道]$技中移動力：50％$使用後スキル使用不能　（期間：通常のスキル3回分）$―――――――――$[属性：光][攻撃× 90％][範囲攻撃：極大]$[属性：光][魔力×  8％][範囲攻撃：極大]$―――――――――$追加効果$スタン$混乱か幻覚：100％（状態異常判定が行われる確率が100％であり、$　100％の確率で状態異常"
+    },
+    {
+      "tag": "sp_new_alc",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_16_20_ALC一派～VVAN.dat",
+      "line": 5,
+      "kind": "missile",
+      "delay": {
+        "value": "3",
+        "line": 29
+      },
+      "gun_delay": {
+        "value": "Yetzirah*7",
+        "line": 19
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：300$技中移動力：0％$使用後、同系統スキル（die Ewigkeit系）使用不能　（期間：通常のスキル7回分）$―――――――――$[属性：闇][攻撃×400％][範囲攻撃：大]（36回）$[属性：闇][攻撃×120％][範囲攻撃：大]$[属性：闇][魔力×20％][範囲攻撃：大]$[属性：闇][魔力× 15％][範囲攻撃：大]（36回）$―"
+    },
+    {
+      "tag": "sp_alc_kamanaguri",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_16_20_ALC一派～VVAN.dat",
+      "line": 351,
+      "kind": "missile",
+      "delay": {
+        "value": "4",
+        "line": 367
+      },
+      "gun_delay": {
+        "value": "ewigkeit*9",
+        "line": 363
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：150$技中移動力：0％$使用後、同系統スキル（die Ewigkeit系）使用不能　（期間：通常のスキル9回分）$―――――――――$[属性：闇][固定ダメージ：9999]$[属性：闇][攻撃×300％][範囲攻撃：中]$[属性：闇][魔力×20％]（15回）$[属性：闇][魔力×30％][範囲攻撃：中]$[属性：闇][攻撃×100％][範囲攻"
+    },
+    {
+      "tag": "sp_tisa",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_16_20_ALC一派～VVAN.dat",
+      "line": 1046,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 1057
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：400　[着弾位置直接指定可]$技中移動力：50％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：麻][攻撃× 0％][範囲攻撃：大]（120回）$―――――――――$追加効果$混乱・幻覚のどちらか：50％（状態異常判定が行われる確率が50％であり、$　50％の確率で状態異常にするとは言ってない）$―――――――――$"
+    },
+    {
+      "tag": "sp_mnr",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_16_20_ALC一派～VVAN.dat",
+      "line": 1762,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 1773
+      },
+      "gun_delay": {
+        "value": "sp_mnr*15",
+        "line": 1774
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：300$技中移動力：100％$使用後行動不能　（期間：通常のスキル1回分）$使用後、同スキル使用不能　（期間：通常のスキル15回分）$―――――――――$[属性：近接][攻撃×135％][範囲攻撃：中]（貫通・20HIT）$[属性：近接][魔力× 20％][範囲攻撃：中]（貫通・20HIT）$―――――――――$追加効果$ノックバック（歩兵にも効"
+    },
+    {
+      "tag": "yaju_rush",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+      "line": 243,
+      "kind": "missile",
+      "delay": {
+        "value": "8",
+        "line": 265
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：200$技中移動力：50％$―――――――――$使用後行動不能　（期間：通常のスキル8回分）$[属性：純愛][攻撃× 65％][範囲攻撃：中]（191.9回）$[属性：純愛][魔力× 10％][範囲攻撃：中]（191.9回）$―――――――――$敵の動きを止めてからラッシュパンチをぶちかます。"
+    },
+    {
+      "tag": "sp_engine",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+      "line": 527,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 540
+      },
+      "gun_delay": null,
+      "help_action_unable": false,
+      "help_desc": "$射程距離：300$技中移動力：0％$―――――――――$[属性：火][攻撃× 50％]$[範囲攻撃：極大]$（496回）$[属性：火][攻撃× 30％]$（1488回）$$―――――――――$自分を中心に四方を大炎上させる。$闘気を熱エネルギーに変換して全力で開放する$という武神にしか成し得ない迫真空手の究極奥義。"
+    },
+    {
+      "tag": "sp_murpo_reitoubiim",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+      "line": 1267,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 1274
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：200～700　（接敵時使用不能）$技中移動力：0％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：水][攻撃×200％]（直撃）$[属性：水][魔力× 60％]（直撃）$[属性：水][攻撃×150％][範囲攻撃：大]（貫通）$[属性：水][魔力× 20％][範囲攻撃：大]（貫通・追加効果なし）$―――――――――$追"
+    },
+    {
+      "tag": "sp_masahiko",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+      "line": 2542,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 2550
+      },
+      "gun_delay": null,
+      "help_action_unable": false,
+      "help_desc": "$射程距離：700　（接敵時使用不能）$技中移動力：停止$―――――――――$[属性：水][魔力× 1％]（水塊・1HITあたり）$追加効果$能力低下：移動力（最低値まで下げる）$引き寄せ（歩兵にも効く）$沈黙：100％$3分間にわたって敵単体を拘束する水の空間を作り出す。チョーSだよな！"
+    },
+    {
+      "tag": "sp_private",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+      "line": 2703,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 2726
+      },
+      "gun_delay": null,
+      "help_action_unable": false,
+      "help_desc": "$射程距離：300$技中移動力：0％$―――――――――$[属性：近接][攻撃×100％][範囲攻撃：中]$（四角状の範囲内にめちゃくちゃいっぱい）$[属性：近接][魔力× 20％][範囲攻撃：中]$（四角状の範囲内にめちゃくちゃいっぱい）$―――――――――$自分を中心とした四角い範囲内に地割れを起こして攻撃。$「一区画内の敵を全て吹き飛ばし、その区画を自"
+    },
+    {
+      "tag": "knn_rush",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+      "line": 2828,
+      "kind": "missile",
+      "delay": {
+        "value": "8",
+        "line": 2843
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：200$技中移動力：50％$―――――――――$使用後行動不能　（期間：通常のスキル8回分）$[属性：無][攻撃×65％][範囲攻撃：中]（191.9回）$[属性：無][魔力× 10％][範囲攻撃：中]（191.9回）$―――――――――$敵の動きを止めてからラッシュパンチをぶちかます。"
+    },
+    {
+      "tag": "sp_kaminari",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+      "line": 3967,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 3971
+      },
+      "gun_delay": {
+        "value": "@",
+        "line": 3974
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：250$技中移動力：0％$使用後行動不能　（期間：通常のスキル1回分）$―――――――――$[属性：雷][攻撃× 90％][範囲攻撃：大]（60回）$[属性：雷][魔力× 40％][範囲攻撃：大]（60回）$―――――――――$追加効果$ノックバック（歩兵にも効く）"
+    },
+    {
+      "tag": "sp_nyn",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+      "line": 5,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 14
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：400　[着弾位置直接指定可]$技中移動力：50％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：光][攻撃× 0％][範囲攻撃：大]（480回）$―――――――――$追加効果$HP回復力・MP回復力低下"
+    },
+    {
+      "tag": "sp_conf_nyn",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+      "line": 145,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 153
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：400　[着弾位置直接指定可]$技中移動力：50％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：土][攻撃× 0％][範囲攻撃：大]（120回）$―――――――――$追加効果$混乱・幻覚のどちらか：50％（状態異常判定が行われる確率が50％であり、$　50％の確率で状態異常にするとは言ってない）$―――――――――$"
+    },
+    {
+      "tag": "sp_icg_yakimeshi",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+      "line": 248,
+      "kind": "missile",
+      "delay": {
+        "value": "3",
+        "line": 264
+      },
+      "gun_delay": null,
+      "help_action_unable": false,
+      "help_desc": "$射程距離：ひろい(ガバ)$技中移動力：150％$―――――――――$[属性：火][攻撃× 40％]（回数たくさん(ガバ)）$[属性：火][魔力×  5％]（回数たくさん(ガバ)）$―――――――――$追加効果$ノックバック（歩兵にも少し効く）$―――――――――$ガバ物理で炒飯を散布する。"
+    },
+    {
+      "tag": "sp_saihu",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+      "line": 535,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 547
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：200$技中移動力：停止$使用後行動不能　（期間：通常のスキル1回分）$―――――――――$[属性：光][魔力× 10％][範囲攻撃：特大]（たくさん）$―――――――――$追加効果$発動時、相殺可能な敵のスキルを全て打ち消す。（できない時もある）"
+    },
+    {
+      "tag": "sp_flour",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+      "line": 755,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 763
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：400　[着弾位置直接指定可]$技中移動力：50％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：麻][攻撃× 0％][範囲攻撃：大]（120回）$―――――――――$追加効果$混乱・幻覚のどちらか：50％（状態異常判定が行われる確率が50％であり、$　50％の確率で状態異常にするとは言ってない）$―――――――――$"
+    },
+    {
+      "tag": "sp_hasami",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+      "line": 987,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 998
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：200$技中移動力：83％$―――――――――$使用後行動不能　（期間：通常のスキル1回分）$[属性：近接][攻撃×130％][範囲攻撃：中]（20回）$[属性：近接][魔力× 30％][範囲攻撃：中]（20回）[追加効果]$―――――――――$追加効果$即死：30％$（状態異常判定が行われる確率が30％であり、$　30％即死させるとは言ってない"
+    },
+    {
+      "tag": "bsp_masupa5",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+      "line": 1204,
+      "kind": "missile",
+      "delay": {
+        "value": "6",
+        "line": 1224
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：1200$技中移動力：0％$使用後行動不能　（期間：通常のスキル6回分）$―――――――――$[属性：風][魔力× 20％][範囲攻撃：楕円状]（貫通・12HIT）$―――――――――$強靭！無敵！最強！"
+    },
+    {
+      "tag": "sp_ondisk",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+      "line": 2137,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 2149
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：200$技中移動力：50％$―――――――――$使用後行動不能　（期間：通常のスキル1回分）$[属性：近接][攻撃×120％][範囲攻撃：中]（70回）$[属性：光][魔力× 50％][範囲攻撃：中]（70回）$―――――――――$敵の動きを止めてからラッシュパンチをぶちかます。"
+    },
+    {
+      "tag": "sp_tomjeri",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+      "line": 3402,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 3413
+      },
+      "gun_delay": null,
+      "help_action_unable": false,
+      "help_desc": "$射程距離：その場に設置　（接敵時使用不能）$技中移動力：50％$使用後、行動不能　（期間：通常のスキル1回分）$―――――――――$[属性：長柄][攻撃× 95％][設置型]（1回）$[属性：長柄][魔力× 10％][設置型]（1回）$―――――――――$追加効果$ノックバック（歩兵にも少し効く）$麻痺：60％（状態異常判定が行われる確率が60％であり、$"
+    },
+    {
+      "tag": "sp_fmrim_joker",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 5,
+      "kind": "missile",
+      "delay": {
+        "value": "8",
+        "line": 20
+      },
+      "gun_delay": {
+        "value": "sp_fmrim_joker*4",
+        "line": 21
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：1500$技中移動力：0％$―――――――――$[属性：補助・ＨＰ回復][魔力×100％][範囲攻撃：大]（80回×30）$―――――――――$追加効果$ノックバック・引き寄せ（歩兵にも効く）$―――――――――$$$雨になってしまえばいいのに。$$全て雨粒となって、私の中から流れていけばいいのに。$$この醜い感情も、$薄汚い嫉妬も、$欲望も、$"
+    },
+    {
+      "tag": "sp_dmcabiim",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 978,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 985
+      },
+      "gun_delay": {
+        "value": "sp_dmcabiim*8",
+        "line": 990
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：200～2000　（接敵時使用不能）$技中移動力：0％$使用後行動不能　（期間：通常のスキル2回分）$使用後、同スキル使用不能　（期間：通常のスキル8回分）$―――――――――$[属性：水][攻撃・技術複合×100％]（直撃）$[属性：水][魔力× 40％]（直撃）$[属性：水][攻撃・技術複合×100％][範囲攻撃：大]（貫通）$[属性：水]["
+    },
+    {
+      "tag": "sp_ingon",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 1607,
+      "kind": "missile",
+      "delay": {
+        "value": "8",
+        "line": 1613
+      },
+      "gun_delay": null,
+      "help_action_unable": false,
+      "help_desc": "$射程距離：250　$技中移動力：50％$使用後、スキル使用不能　（期間：通常のスキル8回分）$―――――――――$[属性：闇][攻撃×100％][範囲攻撃：大]（300回）$[属性：闇][魔力× 30％][範囲攻撃：大]（300回）$―――――――――$ランダムな位置に淫語魔法が100発発動。"
+    },
+    {
+      "tag": "kusotrap",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 1707,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 1718
+      },
+      "gun_delay": null,
+      "help_action_unable": false,
+      "help_desc": "$射程距離：その場に設置　（接敵時使用不能）$技中移動力：50％$使用後、行動不能　（期間：通常のスキル1回分）$―――――――――$[属性：長柄][攻撃×100％][範囲攻撃：小]$―――――――――$追加効果$ノックバック（歩兵にも効く）$毒：100％（状態異常判定が行われる確率が100％であ$り、100％状態異常にするとは言ってない）$――――――――"
+    },
+    {
+      "tag": "sp_diyusi",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_31_32_ぢゆし～サムソン.dat",
+      "line": 6,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 25
+      },
+      "gun_delay": {
+        "value": "diyusi*3",
+        "line": 18
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：500$技中移動力：0％$使用後行動不能　（期間：通常のスキル1回分）$―――――――――$[属性：突撃][攻撃×150％][範囲攻撃]（貫通・多段HIT）$[属性：突撃][魔力× 20％][範囲攻撃]（貫通・多段HIT）"
+    },
+    {
+      "tag": "sp_inu",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_31_32_ぢゆし～サムソン.dat",
+      "line": 1860,
+      "kind": "missile",
+      "delay": {
+        "value": "16",
+        "line": 1873
+      },
+      "gun_delay": {
+        "value": "sp_inu*24",
+        "line": 1872
+      },
+      "help_action_unable": true,
+      "help_desc": "射程距離：300$技中移動力：120％$使用後行動不能　（期間：通常のスキル16回分）$使用後、同スキル使用不能　（期間：通常のスキル24回分）$―――――――――$[属性：突撃][攻撃×30％]（たくさん）$[属性：突撃][魔力× 30％]（たくさん）$―――――――――$追加効果$能力低下：移動力（最大限）$ノックバック（歩兵にも効く）$麻痺：50％（状"
+    },
+    {
+      "tag": "sp_rikkyotrio",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_6_10_ヒゲクマ～スカーレット.dat",
+      "line": 73,
+      "kind": "missile",
+      "delay": {
+        "value": "3",
+        "line": 89
+      },
+      "gun_delay": null,
+      "help_action_unable": false,
+      "help_desc": "$射程距離：200$技中移動力：150％$―――――――――$[属性：風][攻撃× 90％][範囲攻撃：大]（すごくたくさん）$[属性：風][魔力× 30％][範囲攻撃：大]（すごくたくさん）$―――――――――$追加効果$ノックバック（歩兵にも効く）$―――――――――$触れると爆発する魔方陣を三角形状に展開する。"
+    },
+    {
+      "tag": "sp_gosaku",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_6_10_ヒゲクマ～スカーレット.dat",
+      "line": 746,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 758
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：200$技中移動力：50％$―――――――――$使用後行動不能　（期間：通常のスキル1回分）$[属性：近接][攻撃×120％][範囲攻撃：中]（20回）$[属性：近接][魔力× 40％][範囲攻撃：中]（20回）$―――――――――$追加効果$即死：30％$（状態異常判定が行われる確率が30％であり、$　30％即死させるとは言ってない）$――――"
+    },
+    {
+      "tag": "sp_boom_ryuga",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_6_10_ヒゲクマ～スカーレット.dat",
+      "line": 1949,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 1957
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：400　[着弾位置直接指定可]$技中移動力：50％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：風][攻撃× 0％][範囲攻撃：大]（120回）$―――――――――$追加効果$幻覚：100％（状態異常判定が行われる確率が100％であり、$　100％の確率で状態異常にするとは言ってない）$―――――――――$りゅーが姉"
+    },
+    {
+      "tag": "itetukuhadou",
+      "path": "a_default/script/32_ボススキル/B_14_ヌエバ・デスパセーニャ.dat",
+      "line": 121,
+      "kind": "missile",
+      "delay": {
+        "value": "3",
+        "line": 141
+      },
+      "gun_delay": {
+        "value": "itetukuhadou*61",
+        "line": 139
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：128$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：0％$使用後行動不能　（期間：通常のスキル3回分）$使用後、同スキル使用不能　（期間：通常のスキル61回分）$―――――――――$[属性：闇][攻撃× 0％][効果範囲：極大]$―――――――――$追加効果$防御・技術・HP回復力・移動力低下$―――――――――$魔王特"
+    },
+    {
+      "tag": "fbreath",
+      "path": "a_default/script/32_ボススキル/B_14_ヌエバ・デスパセーニャ.dat",
+      "line": 581,
+      "kind": "missile",
+      "delay": {
+        "value": "5",
+        "line": 606
+      },
+      "gun_delay": {
+        "value": "cbreath*22",
+        "line": 600
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：1200$技中移動力：0％$使用後行動不能　（期間：通常のスキル5回分）$使用後、同スキル使用不能　（期間：通常のスキル22回分）$―――――――――$[属性：火][攻撃×100％][範囲攻撃：極大]（すごくたくさん）$[属性：火][魔力× 10％][範囲攻撃：極大]（すごくたくさん）$―――――――――$追加効果$ノックバック（歩兵にも効く）$"
+    },
+    {
+      "tag": "cbreath",
+      "path": "a_default/script/32_ボススキル/B_14_ヌエバ・デスパセーニャ.dat",
+      "line": 987,
+      "kind": "missile",
+      "delay": {
+        "value": "5",
+        "line": 1009
+      },
+      "gun_delay": {
+        "value": "cbreath*23",
+        "line": 1004
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：1200$技中移動力：0％$使用後行動不能　（期間：通常のスキル5回分）$使用後、同スキル使用不能　（期間：通常のスキル23回分）$―――――――――$[属性：水][攻撃×120％][範囲攻撃：極大]（すごくたくさん）$[属性：水][魔力× 15％][範囲攻撃：極大]（すごくたくさん）$―――――――――$追加効果$ノックバック（歩兵にも効く）$"
+    },
+    {
+      "tag": "s_mhsi",
+      "path": "a_default/script/32_ボススキル/B_14_ヌエバ・デスパセーニャ.dat",
+      "line": 1656,
+      "kind": "summon",
+      "delay": {
+        "value": "2",
+        "line": 1667
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（メタル化HSI）]"
+    },
+    {
+      "tag": "boss_alc_wave",
+      "path": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+      "line": 121,
+      "kind": "missile",
+      "delay": {
+        "value": "@",
+        "line": 129
+      },
+      "gun_delay": {
+        "value": "alc_wave*14",
+        "line": 130
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：400$技中移動力：50％$使用後、同スキル使用不能　（期間：通常のスキル14回分）$―――――――――$[属性：土][魔力× 5％][範囲攻撃：大]（180回）$―――――――――$追加効果$引き寄せ（歩兵にも効く）$石化：100％（状態異常判定が行われる確率が100％であり、$　100％状態異常にするとは言ってない）"
+    },
+    {
+      "tag": "boss_alc_attack_toopa",
+      "path": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+      "line": 133,
+      "kind": "missile",
+      "delay": {
+        "value": "3",
+        "line": 156
+      },
+      "gun_delay": {
+        "value": "boss_alc_attack_toopa*2",
+        "line": 160
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：350$技中移動力：0％$使用後、同スキル使用不能　（期間：通常のスキル2回分）$―――――――――$[属性：闇][攻撃×200％][範囲攻撃：大]（36回×3）$[属性：闇][魔力× 40％][範囲攻撃：大]（36回×3）$―――――――――$腕に鎌を形成して敵を薙ぎ払う。"
+    },
+    {
+      "tag": "boss_alc_attack",
+      "path": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+      "line": 169,
+      "kind": "missile",
+      "delay": {
+        "value": "3",
+        "line": 188
+      },
+      "gun_delay": {
+        "value": "boss_alc_attack*1",
+        "line": 192
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：150$技中移動力：0％$使用後、同スキル使用不能　（期間：通常のスキル1回分）$―――――――――$[属性：闇][攻撃×200％][範囲攻撃：大]（36回×3）$[属性：闇][魔力× 40％][範囲攻撃：大]（36回×3）$―――――――――$腕に鎌を形成して敵を薙ぎ払う。"
+    },
+    {
+      "tag": "sp_super_alc",
+      "path": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+      "line": 454,
+      "kind": "missile",
+      "delay": {
+        "value": "6",
+        "line": 474
+      },
+      "gun_delay": {
+        "value": "@",
+        "line": 468
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：300$技中移動力：0％$―――――――――$[属性：闇][攻撃×400％][範囲攻撃：大]（36回）$[属性：闇][攻撃×120％][範囲攻撃：大]$[属性：闇][魔力× 30％][範囲攻撃：大]（36回）$―――――――――$腕に鎌を形成して敵を薙ぎ払う。$射程距離ギリギリまで飛び込んで鎌を出す点に注意。"
+    },
+    {
+      "tag": "drgn_summon",
+      "path": "a_default/script/32_ボススキル/B_2222_レイノアレフ.dat",
+      "line": 3,
+      "kind": "summon",
+      "delay": {
+        "value": "2",
+        "line": 14
+      },
+      "gun_delay": {
+        "value": "drgn_summon*8",
+        "line": 12
+      },
+      "help_action_unable": false,
+      "help_desc": "あり兵をランダムで呼び寄せる。"
+    },
+    {
+      "tag": "biim_summon",
+      "path": "a_default/script/32_ボススキル/B_2323_リュージ騎士団.dat",
+      "line": 219,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 226
+      },
+      "gun_delay": {
+        "value": "biim_summon*15",
+        "line": 225
+      },
+      "help_action_unable": false,
+      "help_desc": "冥土に落ちた竜を引き摺り出す。"
+    },
+    {
+      "tag": "biim_iwana",
+      "path": "a_default/script/32_ボススキル/B_2323_リュージ騎士団.dat",
+      "line": 289,
+      "kind": "missile",
+      "delay": {
+        "value": "@",
+        "line": 304
+      },
+      "gun_delay": {
+        "value": "biim_iwana*2",
+        "line": 303
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後、同スキル使用不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（一般竜騎爺）2体]$―――――――――$備考$残り召喚数に関わらず使用可能"
+    },
+    {
+      "tag": "ugsp_zan",
+      "path": "a_default/script/32_ボススキル/B_2323_リュージ騎士団.dat",
+      "line": 517,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 525
+      },
+      "gun_delay": {
+        "value": "ugsp_zan*9",
+        "line": 528
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：300$技中移動力：100％$―――――――――$[属性：突撃][攻撃×100％][範囲攻撃：中]（貫通・20HIT）$[属性：突撃][魔力× 20％][範囲攻撃：中]（貫通・20HIT）$―――――――――$敵陣に勢いよく斬り込む。$文字通り「斬り」込むとは限らず、素手でこれをやる人も稀にいる。"
+    },
+    {
+      "tag": "udbsp_masupa5",
+      "path": "a_default/script/32_ボススキル/B_2323_リュージ騎士団.dat",
+      "line": 1080,
+      "kind": "missile",
+      "delay": {
+        "value": "3",
+        "line": 1093
+      },
+      "gun_delay": {
+        "value": "udbsp_masupa5*35",
+        "line": 1094
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：1200$技中移動力：0％$使用後行動不能　（期間：通常のスキル6回分）$―――――――――$[属性：風][魔力× 20％][範囲攻撃：楕円状]（貫通・12HIT）$―――――――――$史上最強にして華麗なる殺戮兵器。"
+    },
+    {
+      "tag": "sp_gansohitotachi",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 5,
+      "kind": "missile",
+      "delay": {
+        "value": "5",
+        "line": 44
+      },
+      "gun_delay": {
+        "value": "sp_gansohitotachi*40",
+        "line": 15
+      },
+      "help_action_unable": false,
+      "help_desc": "国教ほのぼの神道の秘中の秘……$一子相伝の奥義「淫夢之一太刀」は、$破壊神の力を宿したHZNの手により$絶大な威力を発揮する。"
+    },
+    {
+      "tag": "sp_marimox",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 598,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 622
+      },
+      "gun_delay": {
+        "value": "sp_marimox*8",
+        "line": 625
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：400$技中移動力：0％$使用後行動不能　（期間：通常のスキル2回分）$使用後、同スキル使用不能　（期間：通常のスキル8回分）$―――――――――$[属性：近接][攻撃×150％][範囲攻撃：大]（5方向×20回）$[属性：近接][魔力× 30％][範囲攻撃：大]（5方向×20回）"
+    },
+    {
+      "tag": "sp_conf_bokhohn",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 1620,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 1625
+      },
+      "gun_delay": {
+        "value": "sp_conf_bokhohn*10",
+        "line": 1632
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：400　[着弾位置直接指定可]$技中移動力：50％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：土][攻撃× 0％][範囲攻撃：大]（120回）$―――――――――$追加効果$混乱・幻覚のどちらか：50％（状態異常判定が行われる確率が50％であり、$　50％の確率で状態異常にするとは言ってない）$―――――――――$"
+    },
+    {
+      "tag": "sp_bokhohn",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 1721,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 1724
+      },
+      "gun_delay": {
+        "value": "sp_bokhohn*15",
+        "line": 1726
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：1000$技中移動力：0％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：光][魔力× 20％][範囲攻撃：横長楕円状]（貫通・5HIT）$―――――――――$上記の当たり判定を40ドット間隔で縦に25個並べる。$当たり判定が重なり合っている所ではHIT数も倍になる。"
+    },
+    {
+      "tag": "sp_kzinssie",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 2031,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 2037
+      },
+      "gun_delay": {
+        "value": "sp_kzinssie*2",
+        "line": 2047
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：400　[着弾位置直接指定可]$技中移動力：200％$使用後行動不能　（期間：通常のスキル1回分）$―――――――――$[属性：近接][攻撃×150％]（13回）$[属性：近接][魔力× 20％]（13回）$―――――――――$追加効果$即死：100％$（状態異常判定が行われる確率が100％であり、$　100％即死させるとは言ってない）$――――"
+    },
+    {
+      "tag": "kzinssie_zan0",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 2312,
+      "kind": "sword",
+      "delay": {
+        "value": "1",
+        "line": 2322
+      },
+      "gun_delay": {
+        "value": "kzinssie_zan*2",
+        "line": 2321
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：接敵時$技中移動力：80％$―――――――――$[属性：近接][攻撃×150％]（4回）$[属性：近接][魔力× 30％]（4回）"
+    },
+    {
+      "tag": "kzinssie_zan1",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 2331,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 2344
+      },
+      "gun_delay": {
+        "value": "kzinssie_zan*2",
+        "line": 2343
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：80$技中移動力：80％$―――――――――$[属性：近接][攻撃×150％]（4回）$[属性：近接][魔力× 30％]（4回）"
+    },
+    {
+      "tag": "sp_sakenomi7",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 3304,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 3311
+      },
+      "gun_delay": null,
+      "help_action_unable": false,
+      "help_desc": "原初の七声優を招集する。"
+    },
+    {
+      "tag": "s_hzn_MPT",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 3433,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 3441
+      },
+      "gun_delay": {
+        "value": "hzn23_summon*30",
+        "line": 3439
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：9999$技中移動力：0％$使用後、同スキル使用不能　（期間：通常のスキル30回分）$―――――――――$[属性：召喚（托生の蓮根5体）]"
+    },
+    {
+      "tag": "sp_cookie_kiss",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 3841,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 3855
+      },
+      "gun_delay": {
+        "value": "sp_cookie_kiss*15",
+        "line": 3871
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：180　$技中移動力：0％$使用後、同スキル使用不能　（期間：通常のスキル15回分）$―――――――――$[属性：百合]$―――――――――$追加効果$混乱・幻覚の両方（100％）$東方とホモビの流れを汲む者を$対ＳＷＫの尖兵と変えるべく編み出された魔術。$純粋なクッキー☆族にしか効果が発揮されず、$ノンケ族の血が混じっている者（いわゆる養殖）に"
+    },
+    {
+      "tag": "whiteknn23_warp",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 4305,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 4318
+      },
+      "gun_delay": {
+        "value": "whiteknn23_warp*23",
+        "line": 4316
+      },
+      "help_action_unable": false,
+      "help_desc": "一瞬で包囲から脱出する。"
+    },
+    {
+      "tag": "sp_hakurei_genei",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 4743,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 4755
+      },
+      "gun_delay": {
+        "value": "sp_hakurei_genei*13",
+        "line": 4758
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：400$技中移動力：0％$使用後、同スキル使用不能　（期間：通常のスキル13回分）$―――――――――$[属性：闇][攻撃×100％]（貫通・60回）$[属性：闇][魔力× 15％]（60回）$[属性：闇][魔法×20％]（貫通・200回）$[属性：火][魔力× 25％][範囲攻撃]（100回）$―――――――――$追加効果$幻覚（40％）"
+    },
+    {
+      "tag": "b_babylon",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 5238,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 5253
+      },
+      "gun_delay": {
+        "value": "babylon*10",
+        "line": 5250
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：400　[着弾位置直接指定可]$技中移動力：50％$使用後、同スキル使用不能　（期間：通常のスキル10回分）$―――――――――$[属性：光][攻撃× 100％][貫通]（36回×8）$[属性：光][魔力× 20％][貫通]（36回×8）"
+    },
+    {
+      "tag": "sp_star_dreamer",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 5551,
+      "kind": "missile",
+      "delay": {
+        "value": "3",
+        "line": 5566
+      },
+      "gun_delay": {
+        "value": "star_dreamer*25",
+        "line": 5563
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：600　[着弾位置直接指定可]$技中移動力：50％$使用後、同スキル使用不能　（期間：通常のスキル25回分）$―――――――――$[属性：闇][攻撃×105％]（貫通・たくさん）$[属性：闇][魔力× 25％]（貫通・たくさん）$[属性：闇][魔力×  4％][範囲攻撃：極大]"
+    },
+    {
+      "tag": "sakenomiga_rocket",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 10376,
+      "kind": "missile",
+      "delay": {
+        "value": "3",
+        "line": 10388
+      },
+      "gun_delay": {
+        "value": "sakenomiga_rocket*15",
+        "line": 10391
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：400$技中移動力：0％$使用後、同スキル使用不能　（期間：通常のスキル15回分）$―――――――――$[属性：突撃][攻撃×200％][範囲攻撃：中×10]（貫通）$[属性：突撃][魔力× 30％][範囲攻撃：中×10]$[属性：砲撃][攻撃×150％][範囲攻撃：極大×10]$[属性：砲撃][魔力× 30％][範囲攻撃：極大×10]$[属性："
+    },
+    {
+      "tag": "sakenomiga_bombnomi",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 11677,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 11689
+      },
+      "gun_delay": {
+        "value": "sakenomiga_bombnomi*18",
+        "line": 11692
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：500$技中移動力：0％$使用後、同スキル使用不能　（期間：通常のスキル18回分）$―――――――――$[属性：召喚（ボムノミ5体）]"
+    },
+    {
+      "tag": "sakenomiga_summon",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 11957,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 11969
+      },
+      "gun_delay": {
+        "value": "sakenomiga_summon*8",
+        "line": 11972
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：400$技中移動力：0％$使用後、同スキル使用不能　（期間：通常のスキル8回分）$―――――――――$[属性：召喚（アドベントサケノミorフェブラルガ　計8体（ランダム））]"
+    },
+    {
+      "tag": "sakenomiga_protect",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 12311,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 12323
+      },
+      "gun_delay": {
+        "value": "sakenomiga_protect*20",
+        "line": 12326
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：400$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：0％$使用後、同スキル使用不能　（期間：通常のスキル20回分）$―――――――――$ＲＵ姉貴の心の壁を具現化して出力し、$一定時間攻撃を無効化するバリアを展開する。"
+    },
+    {
+      "tag": "sakenomiga_misairu",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 12510,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 12522
+      },
+      "gun_delay": {
+        "value": "sakenomiga_misairu*7",
+        "line": 12525
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：400$技中移動力：0％$使用後、同スキル使用不能　（期間：通常のスキル7回分）$―――――――――$[属性：突撃][攻撃×240％][範囲攻撃：中]（8回)$[属性：火][魔力× 65％][範囲攻撃：中]（8回)"
+    },
+    {
+      "tag": "sakenomiga_turnx",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 12928,
+      "kind": "missile",
+      "delay": {
+        "value": "4",
+        "line": 12945
+      },
+      "gun_delay": {
+        "value": "sakenomiga_turnx*23",
+        "line": 12954
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：500$技中移動力：0％$使用後行動不能　（期間：通常のスキル4回分）$使用後、同スキル使用不能　（期間：通常のスキル23回分）$―――――――――$[固定ダメージ×たくさん]（貫通）$飛び道具を一方的に打ち消す。"
+    },
+    {
+      "tag": "sakenomiga_ora",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 13516,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 13533
+      },
+      "gun_delay": {
+        "value": "sakenomiga_ora*10",
+        "line": 13530
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：250$技中移動力：0％$―――――――――$使用後、同スキル使用不能　（期間：通常のスキル10回分）$[属性：突撃][攻撃×150％][範囲攻撃：中]（50回）$[属性：突撃][魔力× 30％][範囲攻撃：中]（50回）"
+    },
+    {
+      "tag": "sakenomiga_heaven",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 13881,
+      "kind": "missile",
+      "delay": {
+        "value": "3",
+        "line": 13893
+      },
+      "gun_delay": {
+        "value": "sakenomiga_heaven*36",
+        "line": 13896
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：400$技中移動力：0％$使用後、同スキル使用不能　（期間：通常のスキル36回分）$―――――――――$[属性：突撃][攻撃×150％][範囲攻撃：中]（5回）$[属性：突撃][魔力× 25％][範囲攻撃：中]（5回・旋回）$[属性：火][攻撃×125％][範囲攻撃：大]（20回）$[属性：火][魔力× 25％][範囲攻撃：大]（20回）$[属性"
+    },
+    {
+      "tag": "misyamisya_summon",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 15722,
+      "kind": "missile",
+      "delay": {
+        "value": "5",
+        "line": 15734
+      },
+      "gun_delay": null,
+      "help_action_unable": false,
+      "help_desc": "$射程距離：9999$技中移動力：0％$―――――――――$召喚：ミシャクジ様（12体）$ＭＰ消費：500"
+    },
+    {
+      "tag": "dopyudopyu_summon",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 15752,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 15769
+      },
+      "gun_delay": {
+        "value": "dopyudopyu_summon*4",
+        "line": 15766
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：9999$技中移動力：0％$―――――――――$[属性：召喚（ミシャクジ様）]$[属性：召喚（精液系）9体]"
+    },
+    {
+      "tag": "sww23_mishakuji",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 16166,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 16189
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：500$技中移動力：50％$使用後行動不能　（期間：通常のスキル1回分）$使用後、同スキル使用不能　（期間：通常のスキル8回分）$―――――――――$[属性：水][攻撃× 100％][範囲攻撃：大]（160回）$[属性：水][魔力× 20％][範囲攻撃：大]（160回）$[属性：水][攻撃× 100％][範囲攻撃：大]（20回）$[属性：水][魔"
+    },
+    {
+      "tag": "swk23_summon",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 16252,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 16259
+      },
+      "gun_delay": {
+        "value": "swk23_summon*8",
+        "line": 16258
+      },
+      "help_action_unable": false,
+      "help_desc": "SWK様の服のカエルをランダムで呼び寄せる。"
+    },
+    {
+      "tag": "sp_toppa_boss",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 16576,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 16608
+      },
+      "gun_delay": {
+        "value": "sp_toppa_boss*23",
+        "line": 16604
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：500$技中移動力：100％$使用後行動不能　（期間：通常のスキル2回分）$使用後、スキル使用不能　（期間：通常のスキル23回分）$―――――――――$[属性：近接][攻撃×100％][範囲攻撃：中]（貫通・10HIT）$[属性：近接][魔力× 25％][範囲攻撃：中]（貫通・10HIT）"
+    },
+    {
+      "tag": "dtswk2_tale",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 16752,
+      "kind": "missile",
+      "delay": {
+        "value": "3",
+        "line": 16770
+      },
+      "gun_delay": {
+        "value": "dtswk2_tale*8",
+        "line": 16767
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：300$技中移動力：0％$―――――――――$[属性：近接][攻撃×110％][範囲攻撃：大]（2回×3）$[属性：近接][魔力× 25％][範囲攻撃：大]（2回×3）$[属性：闇][魔力× 30％][範囲攻撃：大]（2回×12×3）"
+    },
+    {
+      "tag": "dtswk2_summon",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 17113,
+      "kind": "missile",
+      "delay": {
+        "value": "3",
+        "line": 17125
+      },
+      "gun_delay": {
+        "value": "dtswk2_summon*20",
+        "line": 17128
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：9999$技中移動力：0％$―――――――――$召喚：ミシャクジ様（12体）"
+    },
+    {
+      "tag": "dtswk3_expand",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 17348,
+      "kind": "missile",
+      "delay": {
+        "value": "3",
+        "line": 17361
+      },
+      "gun_delay": {
+        "value": "dtswk3_expand*18",
+        "line": 17359
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：350～600$技中移動力：0％$―――――――――$[属性：近接][攻撃×100％][範囲攻撃：大]（1本あたり）$[属性：近接][魔力× 20％][範囲攻撃：大]（1本あたり）$[属性：風][攻撃× 15％][範囲攻撃：中]（1本あたり）$―――――――――$追加効果：ノックバック"
+    },
+    {
+      "tag": "sp_omiwatari",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 17900,
+      "kind": "missile",
+      "delay": {
+        "value": "3",
+        "line": 17913
+      },
+      "gun_delay": {
+        "value": "sp_omiwatari*24",
+        "line": 17917
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：500$技中移動力：100％$―――――――――$[属性：水][攻撃×120％][範囲攻撃：中]$[属性：水][魔力× 25％][範囲攻撃：中]$―――――――――$追加効果：麻痺（15％）"
+    },
+    {
+      "tag": "dtswk3_tale",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 18524,
+      "kind": "missile",
+      "delay": {
+        "value": "3",
+        "line": 18542
+      },
+      "gun_delay": {
+        "value": "dtswk3_tale*11",
+        "line": 18539
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：100$技中移動力：0％$―――――――――$[属性：近接][攻撃×140％][範囲攻撃：大]（2回×5）$[属性：近接][魔力× 30％][範囲攻撃：大]（2回×5）$[属性：闇][魔力× 30％][範囲攻撃：大]（2回×12×5）"
+    },
+    {
+      "tag": "dtswk3_onbashira",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 19131,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 19144
+      },
+      "gun_delay": {
+        "value": "dtswk3_onbashira*13",
+        "line": 19142
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：300$技中移動力：0％$―――――――――$[属性：近接][攻撃×100％][範囲攻撃：大・貫通]（1本あたり）$[属性：近接][魔力× 20％]（1本あたり）$[属性：闇][攻撃×120％][貫通]（1個あたり）$[属性：闇][魔力× 20％]（1個あたり）$[属性：風][攻撃×100％][範囲攻撃：大]"
+    },
+    {
+      "tag": "dtswk3_summon",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 19381,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 19398
+      },
+      "gun_delay": {
+        "value": "dtswk3_summon*24",
+        "line": 19395
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：9999$技中移動力：0％$―――――――――$[属性：召喚（ミシャクジ様）]$[属性：召喚（元朝の赤蛙）15体]"
+    },
+    {
+      "tag": "hoshoku_nkdking",
+      "path": "a_default/script/32_ボススキル/B_2525_町の小さなパン屋さんと化した二軍.dat",
+      "line": 10,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 20
+      },
+      "gun_delay": {
+        "value": "hoshoku*3",
+        "line": 16
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：110弱$技中移動力：0％$使用後、同スキル使用不能　（期間：通常のスキル3回分）$―――――――――$[属性：突撃][攻撃×110弱％][範囲攻撃：大]（2×110弱回）$[属性：突撃][魔力× 20％][範囲攻撃：大]（110弱回）$―――――――――$追加効果$ＨＰ吸収：110弱％$（判定が行われる確率が110弱％であり、$　110弱％の確"
+    },
+    {
+      "tag": "danmaku_nkdking",
+      "path": "a_default/script/32_ボススキル/B_2525_町の小さなパン屋さんと化した二軍.dat",
+      "line": 38,
+      "kind": "missile",
+      "delay": {
+        "value": "3",
+        "line": 48
+      },
+      "gun_delay": {
+        "value": "nkdking_danmaku*6",
+        "line": 44
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：400　（接敵時使用不能）$技中移動力：50％$使用後、同スキル使用不能　（期間：通常のスキル6回分）$―――――――――$火球（1発あたり）$[属性：火][攻撃×100％][範囲攻撃：極大]$[属性：火][魔力× 20％][範囲攻撃：極大]$[属性：火][攻撃×100％][範囲攻撃：中]（8回）$[属性：火][魔力× 40％][範囲攻撃：中]（"
+    },
+    {
+      "tag": "nkdking_summon",
+      "path": "a_default/script/32_ボススキル/B_2525_町の小さなパン屋さんと化した二軍.dat",
+      "line": 69,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 79
+      },
+      "gun_delay": {
+        "value": "nkdking_summon*8",
+        "line": 78
+      },
+      "help_action_unable": false,
+      "help_desc": "訓練された視聴者兄貴たちを呼び寄せる。"
+    },
+    {
+      "tag": "nkdking_toppa",
+      "path": "a_default/script/32_ボススキル/B_2525_町の小さなパン屋さんと化した二軍.dat",
+      "line": 103,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 106
+      },
+      "gun_delay": {
+        "value": "nkdking_toppa*8",
+        "line": 107
+      },
+      "help_action_unable": false,
+      "help_desc": ""
+    },
+    {
+      "tag": "yuuh_sp",
+      "path": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+      "line": 10,
+      "kind": "missile",
+      "delay": {
+        "value": "10",
+        "line": 23
+      },
+      "gun_delay": {
+        "value": "yuuh_sp*100",
+        "line": 24
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：800$技中移動力：0％$使用後同スキル使用不能　（期間：通常のスキル100回分）$―――――――――$[属性：水][魔力×100％][範囲攻撃：極大]（多段HIT）$[属性：闇][魔力×100％][範囲攻撃：極大]（多段HIT）$―――――――――$追加効果$敵撃破時、ランダムな神話生物を召喚$―――――――――$至上の星辰と至高の恐怖、夜空か"
+    },
+    {
+      "tag": "yuuh_masupa",
+      "path": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+      "line": 598,
+      "kind": "missile",
+      "delay": {
+        "value": "5",
+        "line": 611
+      },
+      "gun_delay": {
+        "value": "yuuh_masupa*20",
+        "line": 610
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：500$技中移動力：0％$使用後行動不能　（期間：通常のスキル5回分）$使用後、同スキル使用不能　（期間：通常のスキル20回分）$―――――――――$[属性：光][魔力× 25％][範囲攻撃：横長楕円状]（貫通）$[属性：闇][魔力× 35％][範囲攻撃：横長楕円状]（貫通）$―――――――――$追加効果$敵撃破時、ランダムな神話生物を召喚$――"
+    },
+    {
+      "tag": "atud_summon",
+      "path": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+      "line": 1014,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 1024
+      },
+      "gun_delay": {
+        "value": "atud_summon*12",
+        "line": 1023
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$使用後、同スキル使用不能　（期間：通常のスキル12回分）$―――――――――$[属性：召喚（ディープ・ワン・ワン・ワン）]$―――――――――$「神話は現実を侵食する。」"
+    },
+    {
+      "tag": "snnm_beam",
+      "path": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+      "line": 2401,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 2412
+      },
+      "gun_delay": {
+        "value": "24",
+        "line": 2411
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：1200$技中移動力：0％$使用後行動不能　（期間：通常のスキル2回分）$使用後、同スキル使用不能　（期間：通常のスキル24回分）$―――――――――$[属性：光][魔力× 20％][範囲攻撃：楕円状]（貫通・12HIT）"
+    },
+    {
+      "tag": "sp_roadroller",
+      "path": "a_default/script/32_ボススキル/B_2_クレイジーサイコホモ.dat",
+      "line": 659,
+      "kind": "missile",
+      "delay": {
+        "value": "12",
+        "line": 675
+      },
+      "gun_delay": {
+        "value": "sp_boss_world*32",
+        "line": 673
+      },
+      "help_action_unable": false,
+      "help_desc": "$発動距離：500$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：0％$―――――――――$[属性：突撃][攻撃×300％][範囲攻撃：中]（直撃）$[属性：突撃][魔力× 55％][範囲攻撃：中]（直撃）$[属性：近接][攻撃×100％][範囲攻撃：中]（84回）$[属性：近接][魔力× 20％][範囲攻撃：中]（84回）$[属性："
+    },
+    {
+      "tag": "go_knn",
+      "path": "a_default/script/32_ボススキル/B_505_閉店の日.dat",
+      "line": 57,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 64
+      },
+      "gun_delay": {
+        "value": "go_knn*21",
+        "line": 63
+      },
+      "help_action_unable": false,
+      "help_desc": "神の叡智でKNN姉貴を創造する。"
+    },
+    {
+      "tag": "go_magic2",
+      "path": "a_default/script/32_ボススキル/B_505_閉店の日.dat",
+      "line": 347,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 354
+      },
+      "gun_delay": {
+        "value": "go_magic*8",
+        "line": 353
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：450　$技中移動力：0％$使用後、同スキル使用不能　（期間：通常のスキル8回分）$―――――――――$ファイアーボール、フォトレーザー、バウンスバブル、$ローリングストーン、ユニコーンドライブ、コールサンダー$の中からランダムで60発発動。$（射程距離は一律450）"
+    },
+    {
+      "tag": "sp_go_nannkasugoino2",
+      "path": "a_default/script/32_ボススキル/B_505_閉店の日.dat",
+      "line": 377,
+      "kind": "missile",
+      "delay": {
+        "value": "3",
+        "line": 387
+      },
+      "gun_delay": {
+        "value": "sp_nannkasugoino2*12",
+        "line": 386
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：400　[着弾位置直接指定可]$技中移動力：  0％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：ランダム（無：25％、闇：75％）][魔力× 70％][範囲攻撃：大]（144回）$―――――――――$破壊神の真骨頂。"
+    },
+    {
+      "tag": "go_summon555",
+      "path": "a_default/script/32_ボススキル/B_505_閉店の日.dat",
+      "line": 714,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 721
+      },
+      "gun_delay": {
+        "value": "go_summon555*8",
+        "line": 720
+      },
+      "help_action_unable": false,
+      "help_desc": "砲兵以外の兵科の兵士をランダムで呼び寄せる。"
+    },
+    {
+      "tag": "go_warp2",
+      "path": "a_default/script/32_ボススキル/B_505_閉店の日.dat",
+      "line": 786,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 799
+      },
+      "gun_delay": {
+        "value": "go_warp2*18",
+        "line": 798
+      },
+      "help_action_unable": false,
+      "help_desc": "一瞬で距離を詰める。"
+    },
+    {
+      "tag": "go_attack2",
+      "path": "a_default/script/32_ボススキル/B_505_閉店の日.dat",
+      "line": 945,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 953
+      },
+      "gun_delay": {
+        "value": "go_attack2*3",
+        "line": 952
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：200$技中移動力：30％$使用後、同スキル使用不能　（期間：通常のスキル5回分）$―――――――――$[属性：ランダム（近接・長柄・突撃）][攻撃×100％][範囲攻撃：大]（24回）$[属性：ランダム（近接・長柄・突撃）][魔力× 20％][範囲攻撃：大]（24回）$―――――――――$ＧＯの力を目の当たりにした兵士は怖気づき、逃げ出してしま"
+    },
+    {
+      "tag": "go_attack",
+      "path": "a_default/script/32_ボススキル/B_50_GO.dat",
+      "line": 1,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 9
+      },
+      "gun_delay": {
+        "value": "go_attack*5",
+        "line": 8
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：200$技中移動力：30％$使用後、同スキル使用不能　（期間：通常のスキル5回分）$―――――――――$[属性：ランダム（近接・長柄・突撃）][攻撃×100％][範囲攻撃：大]（72回）$[属性：ランダム（近接・長柄・突撃）][魔力× 20％][範囲攻撃：大]（72回）$―――――――――$近接・長柄・突撃の3属性による凄まじい攻撃。"
+    },
+    {
+      "tag": "go_magic",
+      "path": "a_default/script/32_ボススキル/B_50_GO.dat",
+      "line": 58,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 65
+      },
+      "gun_delay": {
+        "value": "go_magic*8",
+        "line": 64
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：450　$技中移動力：0％$使用後、同スキル使用不能　（期間：通常のスキル8回分）$―――――――――$ファイアーボール、フォトレーザー、バウンスバブル、$ローリングストーン、ユニコーンドライブ、コールサンダー$の中からランダムで60発発動。$（射程距離は一律450）"
+    },
+    {
+      "tag": "go_summon",
+      "path": "a_default/script/32_ボススキル/B_50_GO.dat",
+      "line": 93,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 100
+      },
+      "gun_delay": {
+        "value": "go_summon*8",
+        "line": 99
+      },
+      "help_action_unable": false,
+      "help_desc": "砲兵以外の兵科の兵士をランダムで呼び寄せる。"
+    },
+    {
+      "tag": "go_warp",
+      "path": "a_default/script/32_ボススキル/B_50_GO.dat",
+      "line": 162,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 175
+      },
+      "gun_delay": {
+        "value": "go_warp*12",
+        "line": 174
+      },
+      "help_action_unable": false,
+      "help_desc": "一瞬で距離を詰める。"
+    },
+    {
+      "tag": "astk_hissatsu",
+      "path": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+      "line": 26,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 35
+      },
+      "gun_delay": {
+        "value": "astk_hissatsu*20",
+        "line": 33
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：400　$技中移動力：0％$使用後、同スキル使用不能　（期間：通常のスキル20回分）$―――――――――$[属性：魔法全種][攻撃× 70～100％][範囲攻撃：極大]（貫通・8回）$[属性：魔法全種][魔力× 10～20％][範囲攻撃：極大]（貫通・8回）$―――――――――$追加効果$ノックバック（歩兵にも効く）$―――――――――$外海に乗"
+    },
+    {
+      "tag": "s_astk",
+      "path": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+      "line": 1370,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 1377
+      },
+      "gun_delay": {
+        "value": "s_astk*12",
+        "line": 1376
+      },
+      "help_action_unable": false,
+      "help_desc": "時空間を突破して、強力無比な古の戦士たちを呼び寄せる。$（16体）"
+    },
+    {
+      "tag": "s_astk2",
+      "path": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+      "line": 1465,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 1472
+      },
+      "gun_delay": {
+        "value": "s_astk*12",
+        "line": 1471
+      },
+      "help_action_unable": false,
+      "help_desc": "時空間を突破して、強力無比な古の戦士たちを呼び寄せる。$（8体）"
+    },
+    {
+      "tag": "s_astk3",
+      "path": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+      "line": 1558,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 1565
+      },
+      "gun_delay": {
+        "value": "s_astk*12",
+        "line": 1564
+      },
+      "help_action_unable": false,
+      "help_desc": "時空間を突破して、強力無比な古の戦士たちを呼び寄せる。$（6体）"
+    },
+    {
+      "tag": "s_astk4",
+      "path": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+      "line": 1651,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 1658
+      },
+      "gun_delay": {
+        "value": "s_astk*12",
+        "line": 1657
+      },
+      "help_action_unable": false,
+      "help_desc": "時空間を突破して、強力無比な古の戦士たちを呼び寄せる。$（5体）"
+    },
+    {
+      "tag": "sp_tdnastk",
+      "path": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+      "line": 2074,
+      "kind": "missile",
+      "delay": {
+        "value": "34",
+        "line": 2088
+      },
+      "gun_delay": {
+        "value": "sp_tdnastk*100",
+        "line": 2089
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：500$技中移動力：0％$―――――――――$[属性：光][魔力×100％][範囲攻撃：中]（7方向×50回）$[属性：光][魔力×100％][範囲攻撃：大]（光の柱がたくさん）$[属性：光][魔力×100％][範囲攻撃：大]（120×17回）$[属性：光][魔力×5％][範囲攻撃：大]（石像の発する光　追加効果：石化）$―――――――――$ケツ"
+    },
+    {
+      "tag": "kenri_hand",
+      "path": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+      "line": 2,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 30
+      },
+      "gun_delay": {
+        "value": "kenri_hand*2",
+        "line": 37
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：300$技中移動力：100％$使用後、同スキル使用不能　（期間：通常のスキル2回分）$―――――――――$[属性：近接][攻撃×125％]（4回）$[属性：削除][魔力× 52％]（4回）$―――――――――$追加効果$敵撃破時、権利者の使徒を召喚"
+    },
+    {
+      "tag": "sp_scream",
+      "path": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+      "line": 426,
+      "kind": "missile",
+      "delay": {
+        "value": "8",
+        "line": 481
+      },
+      "gun_delay": {
+        "value": "sp_scream*25",
+        "line": 480
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：650　$使用後行動不能　（期間：通常のスキル12回分）$使用後、同スキル使用不能　（期間：通常のスキル25回分）$技中移動力：0％$―――――――――$[属性：削除][攻撃×200％][範囲攻撃：極大]（範囲内に沢山）$[属性：削除][魔力× 30％][範囲攻撃：極大]（範囲内に沢山）$追加効果$恐慌・沈黙：80％$―――――――――$身も凍る"
+    },
+    {
+      "tag": "sp_kenri_summon",
+      "path": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+      "line": 945,
+      "kind": "missile",
+      "delay": {
+        "value": "5",
+        "line": 961
+      },
+      "gun_delay": {
+        "value": "sp_kenri_summon*40",
+        "line": 960
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$使用後行動不能　（期間：通常のスキル3回分）$使用後、同スキル使用不能　（期間：通常のスキル40回分）$技中移動力：100％$―――――――――$[属性：召喚（5体）]$―――――――――$神力により側近の部下の複製を造り出す$あくまでも複製に過ぎない為か、本人たちよ"
+    },
+    {
+      "tag": "sp_kenri_toppa",
+      "path": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+      "line": 1075,
+      "kind": "missile",
+      "delay": {
+        "value": "5",
+        "line": 1087
+      },
+      "gun_delay": {
+        "value": "sp_kenri_toppa*36",
+        "line": 1100
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：500$技中移動力：100％$使用後行動不能　（期間：通常のスキル5回分）$使用後、同スキル使用不能　（期間：通常のスキル36回分）$―――――――――$[属性：突撃][攻撃×125％][範囲攻撃：大]（貫通・20HIT）$[属性：突撃][魔力× 25％][範囲攻撃：大]（貫通・20HIT）"
+    },
+    {
+      "tag": "kenri_kidan",
+      "path": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+      "line": 1479,
+      "kind": "missile",
+      "delay": {
+        "value": "5",
+        "line": 1521
+      },
+      "gun_delay": {
+        "value": "kenri_kidan*24",
+        "line": 1520
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：800　[直線軌道]$使用後行動不能　（期間：通常のスキル5回分）$使用後、同スキル使用不能　（期間：通常のスキル24回分）$技中移動力：0％$―――――――――$[属性：削除][攻撃×200％][範囲攻撃：大]（範囲内に沢山）$[属性：削除][魔力× 25％][範囲攻撃：大]（範囲内に沢山）$[属性：火][攻撃×100％][範囲攻撃：大](範囲"
+    },
+    {
+      "tag": "sp_kenrirush",
+      "path": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+      "line": 2202,
+      "kind": "missile",
+      "delay": {
+        "value": "10",
+        "line": 2212
+      },
+      "gun_delay": {
+        "value": "sp_kenrirush*24",
+        "line": 2220
+      },
+      "help_action_unable": true,
+      "help_desc": "$発動距離:500$射程距離：300$技中移動力：120％$使用後行動不能　（期間：通常のスキル24回分）$使用後、同スキル使用不能　（期間：通常のスキル36回分）$―――――――――$[属性：近接][攻撃×125％]（252回）$[属性：削除][魔力× 52％]（252回）$"
+    },
+    {
+      "tag": "sp_midocha",
+      "path": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+      "line": 2429,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 2438
+      },
+      "gun_delay": {
+        "value": "sp_midocha*12",
+        "line": 2435
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：150$技中移動力：100％$使用後、同スキル使用不能　（期間：通常のスキル12回分）$―――――――――$敵に囲まれる前に姿を消す$連続で使用することもあるようだ"
+    },
+    {
+      "tag": "ssrn_kidan",
+      "path": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+      "line": 2963,
+      "kind": "missile",
+      "delay": {
+        "value": "14",
+        "line": 3004
+      },
+      "gun_delay": {
+        "value": "ssrn_kidan*36",
+        "line": 3003
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：1800　[直線軌道]$使用後行動不能　（期間：通常のスキル14回分）$使用後、同スキル使用不能　（期間：通常のスキル36回分）$技中移動力：0％$―――――――――$[属性：削除][攻撃×200％][範囲攻撃：極大]（範囲内に沢山）$[属性：削除][魔力× 30％][範囲攻撃：極大]（範囲内に沢山）$―――――――――$追加効果$大ノックバック"
+    },
+    {
+      "tag": "ssrn_sw",
+      "path": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+      "line": 3705,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 3743
+      },
+      "gun_delay": {
+        "value": "ssrn_sw * 2",
+        "line": 3742
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：300$発動距離：150$技中移動力：0％$―――――――――$使用後行動不能　（期間：通常のスキル2回分）$使用後、同スキル使用不能　（期間：通常のスキル2回分）$[属性：近接][攻撃×200％][範囲攻撃：極大]（3回)(20回）$[属性：近接][魔力× 50％][範囲攻撃：大]（3回)(20回）$[属性：突撃][攻撃×200％][範囲攻撃："
+    },
+    {
+      "tag": "ssrn_sw_weak",
+      "path": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+      "line": 4207,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 4243
+      },
+      "gun_delay": {
+        "value": "ssrn_sw_weak * 4",
+        "line": 4242
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：200$発動距離：150$技中移動力：0％$―――――――――$使用後行動不能　（期間：通常のスキル2回分）$使用後、同スキル使用不能　（期間：通常のスキル4回分）$[属性：近接][攻撃×125％][範囲攻撃：中]（3回)(6回）$[属性：近接][魔力× 25％][範囲攻撃：中]（3回)(6回）$[属性：突撃][攻撃×125％][範囲攻撃：大]（"
+    },
+    {
+      "tag": "sp_inmzan",
+      "path": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+      "line": 4569,
+      "kind": "missile",
+      "delay": {
+        "value": "3",
+        "line": 4578
+      },
+      "gun_delay": {
+        "value": "sp_inmzan*4",
+        "line": 4579
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：500$技中移動力：100％$使用後、同スキル使用不能　（期間：通常のスキル4回分）$―――――――――$[属性：近接][攻撃×100％][範囲攻撃：中]（貫通・10HIT）$[属性：近接][魔力× 25％][範囲攻撃：中]（貫通・10HIT）$―――――――――$回転しながら敵陣に勢いよく斬り込む。$発動中に飛んできた遠距離物理攻撃を相殺する$"
+    },
+    {
+      "tag": "sp_inm_role",
+      "path": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+      "line": 4985,
+      "kind": "missile",
+      "delay": {
+        "value": "3",
+        "line": 4992
+      },
+      "gun_delay": {
+        "value": "sp_inm_role*12",
+        "line": 4993
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：100$技中移動力：100％$使用後、同スキル使用不能　（期間：通常のスキル12回分）$―――――――――$一旦後方へ引き返し、再度突撃を敢行する$この突撃は彼らが死ぬまで繰り返される"
+    },
+    {
+      "tag": "inm_arrow2",
+      "path": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+      "line": 5330,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 5362
+      },
+      "gun_delay": {
+        "value": "inm_arrow2*4",
+        "line": 5361
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：200～1200　[放物線軌道]（接敵時使用不能）$使用後行動不能　（期間：通常のスキル2回分）$使用後、同スキル使用不能　（期間：通常のスキル4回分）$技中移動力：0％$―――――――――$[属性：矢][攻撃×252％]（3回）$[属性：削除][魔力× 50％]（3回）$―――――――――$追加効果$ノックバック大（槍兵には効かない）$――――"
+    },
+    {
+      "tag": "ncnc_base_summon",
+      "path": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+      "line": 6765,
+      "kind": "summon",
+      "delay": {
+        "value": "2",
+        "line": 6776
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：0％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（防衛用兵科）]"
+    },
+    {
+      "tag": "sp_milkyway",
+      "path": "a_default/script/32_ボススキル/B_5_伏見稲荷大社.dat",
+      "line": 4,
+      "kind": "missile",
+      "delay": {
+        "value": "5",
+        "line": 33
+      },
+      "gun_delay": {
+        "value": "sp_milkyway*25",
+        "line": 7
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：144　$技中移動力：0％$使用後、同スキル使用不能　（期間：通常のスキル25回分）$―――――――――$[属性：闇][攻撃× 100％][範囲攻撃・極大]$[属性：闇][魔力× 25％][範囲攻撃・極大]$追加効果：幻覚、混乱、沈黙のいずれか100％"
+    },
+    {
+      "tag": "sp_inaristar",
+      "path": "a_default/script/32_ボススキル/B_5_伏見稲荷大社.dat",
+      "line": 468,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 502
+      },
+      "gun_delay": {
+        "value": "sp_inaristar*8",
+        "line": 488
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：350$技中移動力：0％$使用後、同スキル使用不能　（期間：通常のスキル8回分）$―――――――――$[属性：闇][攻撃×80％][範囲攻撃：大]（45回）$[属性：光][魔力× 15％][範囲攻撃：大]（45回）$追加効果：幻覚、混乱、沈黙のいずれか50％"
+    },
+    {
+      "tag": "command_inari",
+      "path": "a_default/script/32_ボススキル/B_5_伏見稲荷大社.dat",
+      "line": 657,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 704
+      },
+      "gun_delay": {
+        "value": "command_inari*13",
+        "line": 691
+      },
+      "help_action_unable": false,
+      "help_desc": "射程距離：800$技中移動力：0％$使用後、同スキル使用不能　（期間：通常のスキル13回分）$―――――――――$[属性：砲撃][攻撃× 50％][範囲攻撃：大]（3×10回）$―――――――――$追加効果$ノックバック（歩兵にも効く）$―――――――――$親方！　空から女の子が！"
+    },
+    {
+      "tag": "sp_inari_hokyu",
+      "path": "a_default/script/32_ボススキル/B_5_伏見稲荷大社.dat",
+      "line": 774,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 805
+      },
+      "gun_delay": {
+        "value": "sp_inari_hokyu*60",
+        "line": 782
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：400　[射程内の味方全員に効果あり]$使用後、同スキル使用不能　（期間：通常のスキル60回分）$技中移動力：100％$―――――――――$[属性：補助・ＨＰ回復][魔力× 60％]（判定残留）$[属性：補助・状態異常回復][技術× 10％]（判定残留）$―――――――――$一定時間、自分を含めた周囲の味方のＨＰと状態異常を回復し続ける。"
+    },
+    {
+      "tag": "oyakata_summon",
+      "path": "a_default/script/32_ボススキル/B_5_伏見稲荷大社.dat",
+      "line": 862,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 870
+      },
+      "gun_delay": {
+        "value": "oyakata_summon*12",
+        "line": 868
+      },
+      "help_action_unable": false,
+      "help_desc": "第一のいなり男・第二のいなり男・第三のいなり男を創造する。"
+    },
+    {
+      "tag": "sp_tea_kankure_po5",
+      "path": "a_default/script/32_ボススキル/B_5_伏見稲荷大社.dat",
+      "line": 1104,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 1109
+      },
+      "gun_delay": {
+        "value": "sp_tea_kankure_po5*19",
+        "line": 1110
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：500　[着弾位置直接指定可]$技中移動力：50％$使用後、同スキル使用不能　（期間：通常のスキル19回分）$―――――――――$[属性：水][魔力× 5％][範囲攻撃：大]（30回）$―――――――――$追加効果$麻痺と沈黙のどちらか：100％（状態異常判定が行われる確率が100％であり、$　100％状態異常にするとは言ってない）"
+    },
+    {
+      "tag": "kankure_ora",
+      "path": "a_default/script/32_ボススキル/B_5_伏見稲荷大社.dat",
+      "line": 1147,
+      "kind": "missile",
+      "delay": {
+        "value": "3",
+        "line": 1171
+      },
+      "gun_delay": {
+        "value": "kankure_ora*15",
+        "line": 1168
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：150$技中移動力：0％$―――――――――$使用後、同スキル使用不能　（期間：通常のスキル15回分）$[属性：無][攻撃×100％][範囲攻撃：中]（60回）$[属性：無][魔力× 20％][範囲攻撃：中]（60回）"
+    },
+    {
+      "tag": "inari_tekidan",
+      "path": "a_default/script/32_ボススキル/B_5_伏見稲荷大社.dat",
+      "line": 1711,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 1717
+      },
+      "gun_delay": null,
+      "help_action_unable": false,
+      "help_desc": "$射程距離：400　[放物線軌道]$技中移動力：50％$使用後スキル使用不能　（期間：通常のスキル2回分）$―――――――――$[属性：砲撃][攻撃×100％][範囲攻撃：大]$[属性：砲撃][魔力× 20％][範囲攻撃：大]$[属性：砲撃][攻撃×100％][範囲攻撃：小]（4回）$[属性：砲撃][魔力× 20％][範囲攻撃：小]（4回）$――――――――"
+    },
+    {
+      "tag": "g264_prmla_summon2",
+      "path": "a_default/script/4000_AoW/unit_aow_264.dat",
+      "line": 434,
+      "kind": "missile",
+      "delay": {
+        "value": "@",
+        "line": 436
+      },
+      "gun_delay": {
+        "value": "g264_prmla_summon2*12",
+        "line": 441
+      },
+      "help_action_unable": false,
+      "help_desc": "ＳＳレイプシュタンダーテの編隊を射出する。（8体）"
+    },
+    {
+      "tag": "g264_pgaisensya_summon2",
+      "path": "a_default/script/4000_AoW/unit_aow_264.dat",
+      "line": 445,
+      "kind": "missile",
+      "delay": {
+        "value": "@",
+        "line": 447
+      },
+      "gun_delay": {
+        "value": "g264_pgaisensya_summon2*12",
+        "line": 452
+      },
+      "help_action_unable": false,
+      "help_desc": "市街宣闘車トラクトータァ隊を発進させる。（8両）"
+    },
+    {
+      "tag": "dtswk2_summon_r",
+      "path": "a_default/script/5000_ランダムシナリオ/RB_ボススキル.dat",
+      "line": 198,
+      "kind": "missile",
+      "delay": {
+        "value": "3",
+        "line": 210
+      },
+      "gun_delay": {
+        "value": "dtswk2_summon_r*20",
+        "line": 213
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：9999$技中移動力：0％$―――――――――$召喚：ミシャクジ様（12体）"
+    },
+    {
+      "tag": "dtswk3_summon_r",
+      "path": "a_default/script/5000_ランダムシナリオ/RB_ボススキル.dat",
+      "line": 340,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 357
+      },
+      "gun_delay": {
+        "value": "dtswk3_summon*36",
+        "line": 354
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：9999$技中移動力：0％$―――――――――$[属性：召喚（ミシャクジ様）]$[属性：召喚（元朝の赤蛙）8体]"
+    },
+    {
+      "tag": "misyamisya_summon_r",
+      "path": "a_default/script/5000_ランダムシナリオ/RB_ボススキル.dat",
+      "line": 445,
+      "kind": "missile",
+      "delay": {
+        "value": "5",
+        "line": 457
+      },
+      "gun_delay": null,
+      "help_action_unable": false,
+      "help_desc": "$射程距離：9999$技中移動力：0％$―――――――――$召喚：ミシャクジ様（12体）$ＭＰ消費：500"
+    },
+    {
+      "tag": "sakenomiga_bombnomi_r",
+      "path": "a_default/script/5000_ランダムシナリオ/RB_ボススキル.dat",
+      "line": 497,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 509
+      },
+      "gun_delay": {
+        "value": "sakenomiga_bombnomi*30",
+        "line": 512
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：500$技中移動力：0％$使用後、同スキル使用不能　（期間：通常のスキル30回分）$―――――――――$[属性：召喚（ボムノミ5体）]"
+    },
+    {
+      "tag": "sakenomiga_summon_r",
+      "path": "a_default/script/5000_ランダムシナリオ/RB_ボススキル.dat",
+      "line": 533,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 545
+      },
+      "gun_delay": {
+        "value": "sakenomiga_summon*20",
+        "line": 548
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：400$技中移動力：0％$使用後、同スキル使用不能　（期間：通常のスキル20回分）$―――――――――$[属性：召喚（アドベントサケノミorフェブラルガ　計8体（ランダム））]"
+    },
+    {
+      "tag": "nkdking_summon_r",
+      "path": "a_default/script/5000_ランダムシナリオ/RB_ボススキル.dat",
+      "line": 732,
+      "kind": "summon",
+      "delay": {
+        "value": "2",
+        "line": 742
+      },
+      "gun_delay": {
+        "value": "nkdking_summon * 2",
+        "line": 743
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$使用後、同スキル使用不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（訓練された視聴者兄貴）8体]"
+    },
+    {
+      "tag": "s_head_tuyo1",
+      "path": "a_default/script/50_その他新システム/headquarters.dat",
+      "line": 157,
+      "kind": "missile",
+      "delay": {
+        "value": "0",
+        "line": 164
+      },
+      "gun_delay": {
+        "value": "0",
+        "line": 163
+      },
+      "help_action_unable": false,
+      "help_desc": "海軍が援軍として参戦する。"
+    },
+    {
+      "tag": "s_kaizoku",
+      "path": "a_default/script/50_その他新システム/shipsummon.dat",
+      "line": 5,
+      "kind": "summon",
+      "delay": {
+        "value": "0",
+        "line": 16
+      },
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル1回分）$―――――――――$[属性：召喚（調教海賊）]$―――――――――$船の乗組員を降ろして戦闘に参加させる。"
+    },
+    {
+      "tag": "testskillb",
+      "path": "a_default/script/6000_スキルテスト/skill_00_test.dat",
+      "line": 5,
+      "kind": "UNSET",
+      "delay": {
+        "value": "@",
+        "line": 11
+      },
+      "gun_delay": {
+        "value": "@",
+        "line": 10
+      },
+      "help_action_unable": false,
+      "help_desc": ""
+    },
+    {
+      "tag": "sp_go_nannkasugoino",
+      "path": "a_default/script/6000_スキルテスト/skill_00_test.dat",
+      "line": 15,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 25
+      },
+      "gun_delay": {
+        "value": "sp_nannkasugoino*8",
+        "line": 24
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：400　[着弾位置直接指定可]$技中移動力：  0％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：ランダム（無：25％、闇：75％）][魔力× 30％][範囲攻撃：大]（144回）$―――――――――$破壊神の真骨頂。"
+    },
+    {
+      "tag": "buff_pinga",
+      "path": "a_default/script/6000_スキルテスト/skill_intyo.dat",
+      "line": 1007,
+      "kind": "missile",
+      "delay": {
+        "value": "1",
+        "line": 1014
+      },
+      "gun_delay": {
+        "value": "buff_pinga*12",
+        "line": 1015
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：800 $（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：40％$使用後行動不能　（期間：通常のスキル1回分）$使用後、同スキル使用不能　（期間：通常のスキル12回分）$―――――――――$[属性・ダメージ判定なし][範囲攻撃：極大]$―――――――――$追加効果$友軍回復$[属性：補助・攻撃][固定値：100][範囲]$―"
+    },
+    {
+      "tag": "rtssogeki",
+      "path": "a_default/script/8000_RTSシナリオ/RTSskill.dat",
+      "line": 621,
+      "kind": "missile",
+      "delay": {
+        "value": "2",
+        "line": 627
+      },
+      "gun_delay": {
+        "value": "cannon*4",
+        "line": 629
+      },
+      "help_action_unable": false,
+      "help_desc": "$射程距離：200～700　（接敵時使用不能）$技中移動力：停止$使用後、同系統スキル（砲撃系）使用不能　（期間：通常のスキル4回分）$―――――――――$[属性：水][攻撃×100％]$[属性：水][魔力× 20％]$[属性：水][攻撃×100％][範囲攻撃：大]（貫通）$[属性：水][魔力× 40％][範囲攻撃：大]（貫通）$―――――――――$追加効果"
+    }
+  ],
+  "unable_without_delay_samples": [
+    {
+      "tag": "sp_ranbu_rensan",
+      "path": "a_default/script/10_ユニット/18_虐待専従0J_13部隊.dat",
+      "line": 95,
+      "kind": "missile",
+      "delay": null,
+      "gun_delay": {
+        "value": "sp_ranbu_rensan*5",
+        "line": 99
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：200$技中移動力：50％$使用後行動不能　（期間：通常のスキル1回分）$使用後、同スキル使用不能(期間：通常のスキル5回分)$―――――――――$[属性：近接][攻撃×100％][範囲攻撃：中]（20回）$[属性：近接][魔力× 20％][範囲攻撃：中]（20回）$―――――――――$追加効果$相殺：近接,長柄,突撃,銃,矢"
+    },
+    {
+      "tag": "sp_hznkani",
+      "path": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_boss.dat",
+      "line": 169,
+      "kind": "missile",
+      "delay": null,
+      "gun_delay": {
+        "value": "sp_hznkani*9",
+        "line": 174
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：200$技中移動力：50％$―――――――――$使用後行動不能　（期間：通常のスキル1回分）$[属性：近接][攻撃×120％][範囲攻撃：中]（20回）$[属性：近接][魔力× 40％][範囲攻撃：中]（20回）$―――――――――$追加効果$即死：30％$（状態異常判定が行われる確率が30％であり、$　30％即死させるとは言ってない）"
+    },
+    {
+      "tag": "hzn_thun26",
+      "path": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_boss.dat",
+      "line": 231,
+      "kind": "missile",
+      "delay": null,
+      "gun_delay": {
+        "value": "hzn_thun26*8",
+        "line": 236
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：500$技中移動力：50％$使用後行動不能　（期間：通常のスキル1回分）$使用後、同スキル使用不能　（期間：通常のスキル8回分）$―――――――――$[属性：雷][攻撃× 90％][範囲攻撃：大]（60回）$[属性：雷][魔力× 40％][範囲攻撃：大]（60回）$―――――――――$追加効果$ノックバック（歩兵にも効く）"
+    },
+    {
+      "tag": "hzn_beam26",
+      "path": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_boss.dat",
+      "line": 257,
+      "kind": "missile",
+      "delay": null,
+      "gun_delay": {
+        "value": "hzn_beam26*14",
+        "line": 261
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：800$技中移動力：0％$使用後行動不能　（期間：通常のスキル2回分）$使用後、同スキル使用不能　（期間：通常のスキル8回分）$―――――――――$[属性：光][魔力× 20％][範囲攻撃：横長楕円状]（貫通・5HIT）$―――――――――$上記の当たり判定を40ドット間隔で縦に20個並べる。$当たり判定が重なり合っている所ではHIT数も倍になる"
+    },
+    {
+      "tag": "s_miryosk2",
+      "path": "a_default/script/30_スキル/F10_missile.dat",
+      "line": 2590,
+      "kind": "summon",
+      "delay": null,
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（魅了されたサケノミ）]"
+    },
+    {
+      "tag": "ill_arrow2",
+      "path": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+      "line": 245,
+      "kind": "missile",
+      "delay": null,
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：800　[放物線軌道]（接敵時使用不能）$使用後行動不能　（期間：通常のスキル2回分）$技中移動力：0％$―――――――――$[属性：矢][攻撃×100％]（3回）$[属性：矢][技術× 200％]（3回）$―――――――――$追加効果$幻覚：50％"
+    },
+    {
+      "tag": "toonoclaw",
+      "path": "a_default/script/30_スキル/F11_sword.dat",
+      "line": 4157,
+      "kind": "missile",
+      "delay": null,
+      "gun_delay": {
+        "value": "toonoclaw*2",
+        "line": 4166
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：250$技中移動力：100％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：突撃][攻撃×100％][範囲攻撃：中]（5回）（斬撃エフェクト一つ当たり）$[属性：突撃][魔力× 20％][範囲攻撃：大]（5回）（斬撃エフェクト一つ当たり）$―――――――――$強靭な爪で獲物を引き裂く。傷を負った獲物はスタンドに感染して"
+    },
+    {
+      "tag": "toono_devour",
+      "path": "a_default/script/30_スキル/F11_sword.dat",
+      "line": 4450,
+      "kind": "missile",
+      "delay": null,
+      "gun_delay": {
+        "value": "toono_devour*1",
+        "line": 4460
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：100$技中移動力：100％$使用後行動不能　（期間：通常のスキル1回分）$―――――――――$[属性：突撃][攻撃×100％][範囲攻撃：中]（2回）$[属性：突撃][魔力× 20％][範囲攻撃：中]$―――――――――$追加効果$ノックバック（歩兵にも効く）$傷を負った獲物はスタンドに感染して恐竜になる。"
+    },
+    {
+      "tag": "s_scary",
+      "path": "a_default/script/30_スキル/F11_sword.dat",
+      "line": 4627,
+      "kind": "summon",
+      "delay": null,
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（奴隷少年）]"
+    },
+    {
+      "tag": "sp_masupa6",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 6055,
+      "kind": "missile",
+      "delay": null,
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：1200$技中移動力：0％$使用後行動不能　（期間：通常のスキル6回分）$―――――――――$[属性：光][魔力× 20％][範囲攻撃：縦長]（貫通・10HIT）$―――――――――$1ターンめに ひかりを いっぱいに あつめ$2ターンめに ひかりの たばを はっしゃして$こうげきする。"
+    },
+    {
+      "tag": "s_yn_senyo1",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 6244,
+      "kind": "missile",
+      "delay": null,
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（Juno.）]$多重人格らしい。"
+    },
+    {
+      "tag": "s_yn_senyo2",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 6259,
+      "kind": "missile",
+      "delay": null,
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（亜蘭）]$多重人格らしい。"
+    },
+    {
+      "tag": "s_yn_senyo3",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 6274,
+      "kind": "missile",
+      "delay": null,
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（璃瑠琉）]$多重人格らしい。"
+    },
+    {
+      "tag": "s_yn_senyo4",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 6289,
+      "kind": "missile",
+      "delay": null,
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（麗夢炉）]$多重人格らしい。"
+    },
+    {
+      "tag": "yuh_devour",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 8532,
+      "kind": "missile",
+      "delay": null,
+      "gun_delay": {
+        "value": "yuh_devour*1",
+        "line": 8543
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：100$技中移動力：100％$使用後行動不能　（期間：通常のスキル1回分）$―――――――――$[属性：近接][攻撃×135％][範囲攻撃：中]（2回）$[属性：近接][魔力× 40％][範囲攻撃：中]$―――――――――$追加効果$ノックバック（歩兵にも効く）"
+    },
+    {
+      "tag": "sp_fmrim2",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 10780,
+      "kind": "summon",
+      "delay": null,
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル1回分）$―――――――――$[属性：召喚（声優・ランダム・2体）]$―――――――――$素人声優の絵を描いて具現化させる。"
+    },
+    {
+      "tag": "s_kbs_b",
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 12457,
+      "kind": "summon",
+      "delay": null,
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（帝国槍兵）2体]$―――――――――$備考$召喚レベル90％（ユニットの召喚レベルに優先）"
+    },
+    {
+      "tag": "s_dorei",
+      "path": "a_default/script/30_スキル/F21_奴隷少年summon_鞭_突撃_斬撃.dat",
+      "line": 103,
+      "kind": "summon",
+      "delay": null,
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（奴隷少年）]"
+    },
+    {
+      "tag": "s_butadorei",
+      "path": "a_default/script/30_スキル/F21_奴隷少年summon_鞭_突撃_斬撃.dat",
+      "line": 565,
+      "kind": "summon",
+      "delay": null,
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（豚奴隷）]"
+    },
+    {
+      "tag": "rr_knife",
+      "path": "a_default/script/31_ユニットスキル/U_11_15_サセバトミサタ～SWW.dat",
+      "line": 29,
+      "kind": "missile",
+      "delay": null,
+      "gun_delay": {
+        "value": "rr_knife*3",
+        "line": 40
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：350　（接敵時使用不能）$技中移動力：100％$使用後行動不能　（期間：通常のスキル3回分）$―――――――――$[属性：近接][攻撃× 80％]（2回×5）$[属性：近接][技術×100％]（2回×5）$―――――――――$追加効果$幻覚：50％"
+    },
+    {
+      "tag": "ingon3_a27b",
+      "path": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat",
+      "line": 2052,
+      "kind": "missile",
+      "delay": null,
+      "gun_delay": {
+        "value": "ingo*7",
+        "line": 2057
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：550　[着弾位置指定可]$技中移動力：90％$使用後行動不能　（期間：通常のスキル1回分）$使用後、同スキル使用不能　（期間：通常のスキル7回分）$―――――――――$[属性：闇][攻撃×100％][範囲攻撃：小]（9回）$[属性：闇][魔力× 30％][範囲攻撃：小]（9回）$―――――――――$淫語を唱えて言語野にショックを与える。$狙った"
+    },
+    {
+      "tag": "sp_kmrgun",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+      "line": 404,
+      "kind": "missile",
+      "delay": null,
+      "gun_delay": {
+        "value": "sp_kmrgun*6",
+        "line": 407
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：500$技中移動力：50％$使用後行動不能　（期間：通常のスキル2回分）$使用後、同スキル使用不能(期間：通常のスキル6回分)$―――――――――$[属性：銃撃][攻撃×100％]（120回）$[属性：銃撃][魔力× 20％]（120回）$―――――――――$追加効果$ノックバック（歩兵にも少し効く）"
+    },
+    {
+      "tag": "sp_hassamu",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+      "line": 4735,
+      "kind": "missile",
+      "delay": null,
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：200$技中移動力：50％$―――――――――$使用後行動不能　（期間：通常のスキル1回分）$[属性：近接][攻撃×150％][範囲攻撃：中]（20回）$[属性：近接][魔力× 35％][範囲攻撃：中]（20回）$―――――――――$鋼鉄の爪をハサミのように交差させながら相手を切り裂く。"
+    },
+    {
+      "tag": "sp_aok",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 1580,
+      "kind": "missile",
+      "delay": null,
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：300$技中移動力：100％$使用後行動不能　（期間：通常のスキル1回分）$使用後、同スキル使用不能　（期間：通常のスキル15回分）$―――――――――$[属性：突撃][攻撃×135％][範囲攻撃：中]（貫通・20HIT）$[属性：突撃][魔力× 20％][範囲攻撃：中]（貫通・20HIT）$―――――――――$追加効果$ノックバック（歩兵にも効"
+    },
+    {
+      "tag": "sp_ranbu_toukou",
+      "path": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 1956,
+      "kind": "missile",
+      "delay": null,
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：200$技中移動力：50％$―――――――――$使用後行動不能　（期間：通常のスキル1回分）$[属性：近接][攻撃×100％][範囲攻撃：中]（20回）$[属性：近接][魔力× 20％][範囲攻撃：中]（20回）$―――――――――$追加効果$このスキルでキル時相手全体の防御-20・技術-1"
+    },
+    {
+      "tag": "dragonclaw",
+      "path": "a_default/script/32_ボススキル/B_2222_レイノアレフ.dat",
+      "line": 33,
+      "kind": "missile",
+      "delay": null,
+      "gun_delay": {
+        "value": "dragonclaw*5",
+        "line": 43
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：200$技中移動力：0％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：闇][攻撃×120％][範囲攻撃：大]（5回）（斬撃エフェクト一つ当たり）$[属性：闇][魔力× 30％][範囲攻撃：大]（5回）（斬撃エフェクト一つ当たり）$―――――――――$両腕の巨大な爪で前方を引き裂く。"
+    },
+    {
+      "tag": "ud_dragonclaw",
+      "path": "a_default/script/32_ボススキル/B_2323_リュージ騎士団.dat",
+      "line": 630,
+      "kind": "missile",
+      "delay": null,
+      "gun_delay": {
+        "value": "ud_dragonclaw*11",
+        "line": 640
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：200$技中移動力：0％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：近接][攻撃×100％][範囲攻撃：大]（5回）（斬撃エフェクト一つ当たり）$[属性：風][魔力× 20％][範囲攻撃：大]（5回）（斬撃エフェクト一つ当たり）$―――――――――$両腕の巨大な爪で前方を引き裂く。"
+    },
+    {
+      "tag": "metalclaw_MPT",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 9125,
+      "kind": "missile",
+      "delay": null,
+      "gun_delay": {
+        "value": "metalclaw*4",
+        "line": 9135
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：200$技中移動力：0％$使用後行動不能　（期間：通常のスキル4回分）$―――――――――$[属性：近接][攻撃×100％][範囲攻撃：大]（5回）（斬撃エフェクト一つ当たり）$[属性：近接][魔力× 20％][範囲攻撃：大]（5回）（斬撃エフェクト一つ当たり）$―――――――――$鋼鉄の爪で前方を引き裂く。"
+    },
+    {
+      "tag": "misya_devour",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 15511,
+      "kind": "missile",
+      "delay": null,
+      "gun_delay": {
+        "value": "misya_devour*1",
+        "line": 15521
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：100$技中移動力：100％$使用後行動不能　（期間：通常のスキル1回分）$―――――――――$[属性：近接][攻撃×100％][範囲攻撃：中]（2回）$[属性：近接][魔力× 20％][範囲攻撃：中]$―――――――――$追加効果$ノックバック（歩兵にも効く）$獲物を食い殺すと射精する（召喚：精液系）。"
+    },
+    {
+      "tag": "s_dopyu",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 15691,
+      "kind": "summon",
+      "delay": null,
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（奴隷少年）]"
+    },
+    {
+      "tag": "itetukuhadou_23a",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 16518,
+      "kind": "missile",
+      "delay": null,
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$射程距離：128$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：0％$使用後行動不能　（期間：通常のスキル3回分）$使用後、同スキル使用不能　（期間：通常のスキル61回分）$―――――――――$[属性：闇][攻撃× 0％][効果範囲：極大]$―――――――――$追加効果$防御・技術・HP回復力・移動力低下$―――――――――$魔王特"
+    },
+    {
+      "tag": "itetukuhadou_23b",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 16535,
+      "kind": "missile",
+      "delay": null,
+      "gun_delay": {
+        "value": "itetukuhadou*92",
+        "line": 16550
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：128$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：0％$使用後行動不能　（期間：通常のスキル3回分）$使用後、同スキル使用不能　（期間：通常のスキル92回分）$―――――――――$[属性：闇][攻撃× 0％][効果範囲：極大]$―――――――――$追加効果$防御・技術・HP回復力・移動力低下$―――――――――$魔王特"
+    },
+    {
+      "tag": "cbreath_23",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 16553,
+      "kind": "missile",
+      "delay": null,
+      "gun_delay": {
+        "value": "cbreath_23*23",
+        "line": 16566
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：1200$技中移動力：0％$使用後行動不能　（期間：通常のスキル5回分）$使用後、同スキル使用不能　（期間：通常のスキル23回分）$―――――――――$[属性：水][攻撃×120％][範囲攻撃：極大]（すごくたくさん）$[属性：水][魔力× 15％][範囲攻撃：極大]（すごくたくさん）$―――――――――$追加効果$ノックバック（歩兵にも効く）$"
+    },
+    {
+      "tag": "sp_toppa_boss_swk",
+      "path": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 16570,
+      "kind": "missile",
+      "delay": null,
+      "gun_delay": {
+        "value": "sp_toppa_boss*14",
+        "line": 16572
+      },
+      "help_action_unable": true,
+      "help_desc": "$射程距離：500$技中移動力：100％$使用後行動不能　（期間：通常のスキル2回分）$使用後、スキル使用不能　（期間：通常のスキル14回分）$―――――――――$[属性：近接][攻撃×100％][範囲攻撃：中]（貫通・10HIT）$[属性：近接][魔力× 25％][範囲攻撃：中]（貫通・10HIT）"
+    },
+    {
+      "tag": "sp_fmrim3",
+      "path": "a_default/script/32_ボススキル/B_26old_第二革命企画.dat",
+      "line": 39,
+      "kind": "summon",
+      "delay": null,
+      "gun_delay": null,
+      "help_action_unable": true,
+      "help_desc": "$発動距離：1000$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル1回分）$―――――――――$[属性：召喚（声優・15人）]$―――――――――$素人声優の絵を描いて具現化させる。"
+    }
+  ],
+  "skill_s_monaka": {
+    "tag": "s_monaka",
+    "path": "a_default/script/30_スキル/F20_summon.dat",
+    "line": 1596,
+    "kind": "summon",
+    "delay": {
+      "value": "2",
+      "line": 1607
+    },
+    "gun_delay": null,
+    "help_action_unable": true,
+    "help_desc": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（チョコモナカジャンボ）]"
+  },
+  "notes": [
+    "Only direct same-skill attributes, not parent-inherited delay.",
+    "Work parser and native Skill field offset mapping must be confirmed independently.",
+    "A help string may describe unrelated effects or another version."
+  ]
+}

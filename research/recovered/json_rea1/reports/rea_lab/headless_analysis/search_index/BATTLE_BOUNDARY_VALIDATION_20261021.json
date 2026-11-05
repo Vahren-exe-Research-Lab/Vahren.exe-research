@@ -1,0 +1,21 @@
+{
+  "state": "STATIC_ASSISTANT_SELF_CHECK / ORIGINAL_GAME_NOT_RUN",
+  "passes": 11,
+  "total": 13,
+  "checks": {
+    "source_identity": true,
+    "all_21_call_edges_verified": true,
+    "scene_branch_4_original_e8": true,
+    "scene_three_branches": true,
+    "scene_unique_caller": true,
+    "begin_ret8": true,
+    "finish_ret8": true,
+    "mode6_jump_not_e8": true,
+    "scaled_field_offset": true,
+    "scaled_refs_not_zero": true,
+    "direct_false_writer_limitation": true,
+    "004f6540_runtime_unit_both": false,
+    "004f84b0_runtime_unit_both": false
+  },
+  "note": "Static document/byte consistency only; does not prove native takeover or gameplay correctness"
+}

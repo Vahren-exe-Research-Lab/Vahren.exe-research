@@ -1,0 +1,926 @@
+{
+  "research_id": "EXP-SETTLEMENT-20261022-04",
+  "status": "STATIC_NATIVE_AND_DAT_VERIFIED / GAMEPLAY_NOT_RUN",
+  "inputs": {
+    "HAKUSHIN067_CURRENT_CANONICAL_V3_20261022.sqlite": "0B057C43D30EAEC74588C84CF7E09AA7A488BD0FF170925591953EF578AFCB25",
+    "hakushin067_Vahren.exe": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+    "新約迫真戦記―ほのぼの神話ver0.67 豪華版(画像・音声削除版).zip": "A1DAC7209FCA6FBF7D05D956054047B4C36E5149EB100434BF796CCB94970423"
+  },
+  "native_checks": [
+    {
+      "function": "0x460940",
+      "site": "0x460c57",
+      "bytes": "e804630000",
+      "instruction": "call 0x466f60"
+    },
+    {
+      "function": "0x460940",
+      "site": "0x460c60",
+      "bytes": "8bf0",
+      "instruction": "mov esi, eax"
+    },
+    {
+      "function": "0x460940",
+      "site": "0x460c66",
+      "bytes": "53",
+      "instruction": "push ebx"
+    },
+    {
+      "function": "0x460940",
+      "site": "0x460c67",
+      "bytes": "33c9",
+      "instruction": "xor ecx, ecx"
+    },
+    {
+      "function": "0x460940",
+      "site": "0x460c69",
+      "bytes": "8bd6",
+      "instruction": "mov edx, esi"
+    },
+    {
+      "function": "0x460940",
+      "site": "0x460c6b",
+      "bytes": "e880ab1200",
+      "instruction": "call 0x58b7f0"
+    },
+    {
+      "function": "0x466f60",
+      "site": "0x46712b",
+      "bytes": "68d4010000",
+      "instruction": "push 0x1d4"
+    },
+    {
+      "function": "0x466f60",
+      "site": "0x467130",
+      "bytes": "e8f6fa1400",
+      "instruction": "call 0x5b6c2b"
+    },
+    {
+      "function": "0x466f60",
+      "site": "0x467149",
+      "bytes": "e852b91100",
+      "instruction": "call 0x582aa0"
+    },
+    {
+      "function": "0x493630",
+      "site": "0x4936cb",
+      "bytes": "39853cec1e00",
+      "instruction": "cmp dword ptr [ebp + 0x1eec3c], eax"
+    },
+    {
+      "function": "0x493630",
+      "site": "0x4936e1",
+      "bytes": "8b4214",
+      "instruction": "mov eax, dword ptr [edx + 0x14]"
+    },
+    {
+      "function": "0x493630",
+      "site": "0x4936e4",
+      "bytes": "ffd0",
+      "instruction": "call eax"
+    },
+    {
+      "function": "0x49b5c0",
+      "site": "0x49b70d",
+      "bytes": "8b5014",
+      "instruction": "mov edx, dword ptr [eax + 0x14]"
+    },
+    {
+      "function": "0x49b5c0",
+      "site": "0x49b710",
+      "bytes": "ffd2",
+      "instruction": "call edx"
+    },
+    {
+      "function": "0x514c50",
+      "site": "0x514c60",
+      "bytes": "8b0e",
+      "instruction": "mov ecx, dword ptr [esi]"
+    },
+    {
+      "function": "0x514c50",
+      "site": "0x514c62",
+      "bytes": "e8a9040600",
+      "instruction": "call 0x575110"
+    },
+    {
+      "function": "0x54e7b0",
+      "site": "0x54ee7f",
+      "bytes": "8b4b7c",
+      "instruction": "mov ecx, dword ptr [ebx + 0x7c]"
+    },
+    {
+      "function": "0x54e7b0",
+      "site": "0x54ee82",
+      "bytes": "e8d9830200",
+      "instruction": "call 0x577260"
+    },
+    {
+      "function": "0x54e7b0",
+      "site": "0x54ee87",
+      "bytes": "89442424",
+      "instruction": "mov dword ptr [esp + 0x24], eax"
+    },
+    {
+      "function": "0x54e7b0",
+      "site": "0x54ee8d",
+      "bytes": "0f85f7000000",
+      "instruction": "jne 0x54ef8a"
+    },
+    {
+      "function": "0x54e7b0",
+      "site": "0x54ef00",
+      "bytes": "8b89c8010000",
+      "instruction": "mov ecx, dword ptr [ecx + 0x1c8]"
+    },
+    {
+      "function": "0x54e7b0",
+      "site": "0x54ef23",
+      "bytes": "da8968010000",
+      "instruction": "fimul dword ptr [ecx + 0x168]"
+    },
+    {
+      "function": "0x54e7b0",
+      "site": "0x54ef3e",
+      "bytes": "e8adc80300",
+      "instruction": "call 0x58b7f0"
+    },
+    {
+      "function": "0x54e7b0",
+      "site": "0x54ef69",
+      "bytes": "e8a2830200",
+      "instruction": "call 0x577310"
+    },
+    {
+      "function": "0x54e7b0",
+      "site": "0x54f07a",
+      "bytes": "e801080200",
+      "instruction": "call 0x56f880"
+    },
+    {
+      "function": "0x550e70",
+      "site": "0x551167",
+      "bytes": "e8e40c0000",
+      "instruction": "call 0x551e50"
+    },
+    {
+      "function": "0x550e70",
+      "site": "0x551433",
+      "bytes": "8bc6",
+      "instruction": "mov eax, esi"
+    },
+    {
+      "function": "0x550e70",
+      "site": "0x551435",
+      "bytes": "83f80a",
+      "instruction": "cmp eax, 0xa"
+    },
+    {
+      "function": "0x550e70",
+      "site": "0x551438",
+      "bytes": "7e11",
+      "instruction": "jle 0x55144b"
+    },
+    {
+      "function": "0x550e70",
+      "site": "0x551446",
+      "bytes": "e825770200",
+      "instruction": "call 0x578b70"
+    },
+    {
+      "function": "0x551490",
+      "site": "0x551c4c",
+      "bytes": "33c0",
+      "instruction": "xor eax, eax"
+    },
+    {
+      "function": "0x551490",
+      "site": "0x551c55",
+      "bytes": "e8166f0200",
+      "instruction": "call 0x578b70"
+    },
+    {
+      "function": "0x551e50",
+      "site": "0x551e6c",
+      "bytes": "0f8ba0010000",
+      "instruction": "jnp 0x552012"
+    },
+    {
+      "function": "0x551e50",
+      "site": "0x551e74",
+      "bytes": "83b8d001000000",
+      "instruction": "cmp dword ptr [eax + 0x1d0], 0"
+    },
+    {
+      "function": "0x551e50",
+      "site": "0x551fb2",
+      "bytes": "01976c010000",
+      "instruction": "add dword ptr [edi + 0x16c], edx"
+    },
+    {
+      "function": "0x551e50",
+      "site": "0x551fba",
+      "bytes": "80ba8c00000000",
+      "instruction": "cmp byte ptr [edx + 0x8c], 0"
+    },
+    {
+      "function": "0x551e50",
+      "site": "0x551fd3",
+      "bytes": "e878860300",
+      "instruction": "call 0x58a650"
+    },
+    {
+      "function": "0x575110",
+      "site": "0x575152",
+      "bytes": "80bb8c00000000",
+      "instruction": "cmp byte ptr [ebx + 0x8c], 0"
+    },
+    {
+      "function": "0x575110",
+      "site": "0x57515d",
+      "bytes": "0f8596080000",
+      "instruction": "jne 0x5759f9"
+    },
+    {
+      "function": "0x575110",
+      "site": "0x575163",
+      "bytes": "83bbd001000000",
+      "instruction": "cmp dword ptr [ebx + 0x1d0], 0"
+    },
+    {
+      "function": "0x575110",
+      "site": "0x575170",
+      "bytes": "80bb1486010000",
+      "instruction": "cmp byte ptr [ebx + 0x18614], 0"
+    },
+    {
+      "function": "0x575110",
+      "site": "0x57517d",
+      "bytes": "8b83c8010000",
+      "instruction": "mov eax, dword ptr [ebx + 0x1c8]"
+    },
+    {
+      "function": "0x575110",
+      "site": "0x575189",
+      "bytes": "89442420",
+      "instruction": "mov dword ptr [esp + 0x20], eax"
+    },
+    {
+      "function": "0x575110",
+      "site": "0x5751a0",
+      "bytes": "8b7c2420",
+      "instruction": "mov edi, dword ptr [esp + 0x20]"
+    },
+    {
+      "function": "0x575110",
+      "site": "0x5751fd",
+      "bytes": "898768010000",
+      "instruction": "mov dword ptr [edi + 0x168], eax"
+    },
+    {
+      "function": "0x575110",
+      "site": "0x575932",
+      "bytes": "8bdf",
+      "instruction": "mov ebx, edi"
+    },
+    {
+      "function": "0x575110",
+      "site": "0x575934",
+      "bytes": "53",
+      "instruction": "push ebx"
+    },
+    {
+      "function": "0x575110",
+      "site": "0x575935",
+      "bytes": "e866560100",
+      "instruction": "call 0x58afa0"
+    },
+    {
+      "function": "0x575110",
+      "site": "0x57593a",
+      "bytes": "8bcb",
+      "instruction": "mov ecx, ebx"
+    },
+    {
+      "function": "0x575110",
+      "site": "0x57593c",
+      "bytes": "e8bf4a0100",
+      "instruction": "call 0x58a400"
+    },
+    {
+      "function": "0x575110",
+      "site": "0x5759bb",
+      "bytes": "3b8370010000",
+      "instruction": "cmp eax, dword ptr [ebx + 0x170]"
+    },
+    {
+      "function": "0x575110",
+      "site": "0x5759c1",
+      "bytes": "0f83d9f7ffff",
+      "instruction": "jae 0x5751a0"
+    },
+    {
+      "function": "0x577260",
+      "site": "0x57728a",
+      "bytes": "8d86b4e40100",
+      "instruction": "lea eax, [esi + 0x1e4b4]"
+    },
+    {
+      "function": "0x577260",
+      "site": "0x5772b2",
+      "bytes": "8d7028",
+      "instruction": "lea esi, [eax + 0x28]"
+    },
+    {
+      "function": "0x578b70",
+      "site": "0x578b82",
+      "bytes": "8bd8",
+      "instruction": "mov ebx, eax"
+    },
+    {
+      "function": "0x578b70",
+      "site": "0x578da4",
+      "bytes": "0fafc3",
+      "instruction": "imul eax, ebx"
+    },
+    {
+      "function": "0x578b70",
+      "site": "0x578dca",
+      "bytes": "01816c010000",
+      "instruction": "add dword ptr [ecx + 0x16c], eax"
+    },
+    {
+      "function": "0x599bd0",
+      "site": "0x59a79b",
+      "bytes": "baec486200",
+      "instruction": "mov edx, 0x6248ec"
+    },
+    {
+      "function": "0x599bd0",
+      "site": "0x59a7c8",
+      "bytes": "8db53c010000",
+      "instruction": "lea esi, [ebp + 0x13c]"
+    },
+    {
+      "function": "0x599bd0",
+      "site": "0x59e81c",
+      "bytes": "b908556200",
+      "instruction": "mov ecx, 0x625508"
+    },
+    {
+      "function": "0x599bd0",
+      "site": "0x59e897",
+      "bytes": "8dbd58010000",
+      "instruction": "lea edi, [ebp + 0x158]"
+    }
+  ],
+  "literals": {
+    "0x634f54": "neutral_max",
+    "0x634f60": "neutral_min",
+    "0x634f6c": "neutral_member_min",
+    "0x634f80": "neutral_member_max",
+    "0x634f94": "monster_level",
+    "0x634fb0": "monster",
+    "0x634fb8": "spot",
+    "0x6248ec": "add",
+    "0x625508": "add2"
+  },
+  "vtable_checks": [
+    {
+      "slot": "0x638b74",
+      "target": "0x514c50"
+    },
+    {
+      "slot": "0x639b1c",
+      "target": "0x5200a0"
+    },
+    {
+      "slot": "0x638044",
+      "target": "0x514c50"
+    }
+  ],
+  "bounded_direct_call_graph": [
+    {
+      "root": "0x00493630",
+      "depth_limit": 9,
+      "visited": 643,
+      "found_paths": {
+        "0x0058A400": [
+          {
+            "caller": "0x00493630",
+            "site": "0x00494E17",
+            "target": "0x004973E0"
+          },
+          {
+            "caller": "0x004973E0",
+            "site": "0x004978BF",
+            "target": "0x00460940"
+          },
+          {
+            "caller": "0x00460940",
+            "site": "0x00460C6B",
+            "target": "0x0058B7F0"
+          },
+          {
+            "caller": "0x0058B7F0",
+            "site": "0x0058C029",
+            "target": "0x0058A400"
+          }
+        ],
+        "0x0058A540": [
+          {
+            "caller": "0x00493630",
+            "site": "0x00494E17",
+            "target": "0x004973E0"
+          },
+          {
+            "caller": "0x004973E0",
+            "site": "0x004978BF",
+            "target": "0x00460940"
+          },
+          {
+            "caller": "0x00460940",
+            "site": "0x00460C6B",
+            "target": "0x0058B7F0"
+          },
+          {
+            "caller": "0x0058B7F0",
+            "site": "0x0058C022",
+            "target": "0x0058A540"
+          }
+        ],
+        "0x0058B7F0": [
+          {
+            "caller": "0x00493630",
+            "site": "0x00494E17",
+            "target": "0x004973E0"
+          },
+          {
+            "caller": "0x004973E0",
+            "site": "0x004978BF",
+            "target": "0x00460940"
+          },
+          {
+            "caller": "0x00460940",
+            "site": "0x00460C6B",
+            "target": "0x0058B7F0"
+          }
+        ]
+      },
+      "not_found_in_bounded_direct_graph": [
+        "0x00466470",
+        "0x00466BA0",
+        "0x004A7A90",
+        "0x00551E50",
+        "0x00578B70",
+        "0x00588470",
+        "0x0058A650",
+        "0x00577260"
+      ]
+    },
+    {
+      "root": "0x0049B5C0",
+      "depth_limit": 9,
+      "visited": 371,
+      "found_paths": {},
+      "not_found_in_bounded_direct_graph": [
+        "0x00466470",
+        "0x00466BA0",
+        "0x004A7A90",
+        "0x00551E50",
+        "0x00578B70",
+        "0x00588470",
+        "0x0058A400",
+        "0x0058A540",
+        "0x0058A650",
+        "0x0058B7F0",
+        "0x00577260"
+      ]
+    },
+    {
+      "root": "0x00514AA0",
+      "depth_limit": 9,
+      "visited": 4,
+      "found_paths": {},
+      "not_found_in_bounded_direct_graph": [
+        "0x00466470",
+        "0x00466BA0",
+        "0x004A7A90",
+        "0x00551E50",
+        "0x00578B70",
+        "0x00588470",
+        "0x0058A400",
+        "0x0058A540",
+        "0x0058A650",
+        "0x0058B7F0",
+        "0x00577260"
+      ]
+    },
+    {
+      "root": "0x00543E00",
+      "depth_limit": 9,
+      "visited": 70,
+      "found_paths": {},
+      "not_found_in_bounded_direct_graph": [
+        "0x00466470",
+        "0x00466BA0",
+        "0x004A7A90",
+        "0x00551E50",
+        "0x00578B70",
+        "0x00588470",
+        "0x0058A400",
+        "0x0058A540",
+        "0x0058A650",
+        "0x0058B7F0",
+        "0x00577260"
+      ]
+    }
+  ],
+  "excluded_functions": [
+    "0x415460",
+    "0x415530",
+    "0x416870",
+    "0x4c28d0",
+    "0x4c5cc0",
+    "0x5710c0",
+    "0x579a20",
+    "0x580280"
+  ],
+  "drain_callers": [
+    {
+      "caller_function_va": "0x00550E70",
+      "site_va": "0x00551446",
+      "opcode_kind": "E8_DIRECT_CALL"
+    },
+    {
+      "caller_function_va": "0x00551490",
+      "site_va": "0x00551C55",
+      "opcode_kind": "E8_DIRECT_CALL"
+    }
+  ],
+  "source_functions": [
+    {
+      "va": "0x00493630",
+      "origin": "ORIGINAL_20261020_GHIDRA_PSEUDOC_UNCORRECTED",
+      "code_sha256": "84E072807338F6011CEDD50D458C9257F13B45FC72605FDC9406B2FCEBE8DAAE",
+      "excerpts": [],
+      "complete_function_lines": 1788
+    },
+    {
+      "va": "0x004973E0",
+      "origin": "ORIGINAL_20261020_GHIDRA_PSEUDOC_UNCORRECTED",
+      "code_sha256": "5292A86930071B29778A928FA3F8CD0040DBA84A148E8F010979E576A457E937",
+      "excerpts": [],
+      "complete_function_lines": 527
+    },
+    {
+      "va": "0x00460940",
+      "origin": "ORIGINAL_20261020_GHIDRA_PSEUDOC_UNCORRECTED",
+      "code_sha256": "2ADB2CC0119C3390DFE3700A3EB1683C153A963A273D36C07DB0BE39EA81E970",
+      "excerpts": [
+        {
+          "line": 211,
+          "text": "                FUN_0058b7f0();"
+        },
+        {
+          "line": 237,
+          "text": "                    FUN_0058b7f0();"
+        }
+      ],
+      "complete_function_lines": 340
+    },
+    {
+      "va": "0x00466F60",
+      "origin": "ORIGINAL_20261020_GHIDRA_PSEUDOC_UNCORRECTED",
+      "code_sha256": "32E0C2CA4CC5747F450E40F5250FCB02B430D0240CD3D31D599BA93AD07A98E4",
+      "excerpts": [],
+      "complete_function_lines": 126
+    },
+    {
+      "va": "0x00575110",
+      "origin": "ORIGINAL_20261020_GHIDRA_PSEUDOC_UNCORRECTED",
+      "code_sha256": "F283F26289E0FD437B95BA614D83355358267B6FFDE0D6ADFF1DD86A9FE7BAA6",
+      "excerpts": [
+        {
+          "line": 81,
+          "text": "  if (*(char *)(param_1 + 0x8c) == '\\0') {"
+        },
+        {
+          "line": 82,
+          "text": "    if (((*(int *)(param_1 + 0x1d0) != 0) && (*(char *)(param_1 + 0x18614) == '\\0')) &&"
+        },
+        {
+          "line": 83,
+          "text": "       (local_164 = *(int *)(param_1 + 0x1c8),"
+        },
+        {
+          "line": 84,
+          "text": "       *(uint *)(local_164 + 0x170) <= *(uint *)(local_164 + 0x16c))) {"
+        },
+        {
+          "line": 96,
+          "text": "        if (iVar7 <= *(int *)(iVar4 + 0x168)) break;"
+        },
+        {
+          "line": 97,
+          "text": "        *(int *)(iVar4 + 0x168) = *(int *)(iVar4 + 0x168) + 1;"
+        },
+        {
+          "line": 367,
+          "text": "      } while (*(uint *)(iVar4 + 0x170) <= *(uint *)(iVar4 + 0x16c));"
+        }
+      ],
+      "complete_function_lines": 383
+    },
+    {
+      "va": "0x00514C50",
+      "origin": "ORIGINAL_20261020_GHIDRA_PSEUDOC_UNCORRECTED",
+      "code_sha256": "CB34C17282BEEDD6D02D7A870B8C671A3A35E1708FC8D6E7A3EA1DD75DDE7DC7",
+      "excerpts": [],
+      "complete_function_lines": 22
+    },
+    {
+      "va": "0x005200A0",
+      "origin": "ORIGINAL_20261020_GHIDRA_PSEUDOC_UNCORRECTED",
+      "code_sha256": "F32217E2A3D161C9E9BEAA21C563C91E623FE71CBCADFA066E899420872C81A3",
+      "excerpts": [],
+      "complete_function_lines": 114
+    },
+    {
+      "va": "0x0058AFA0",
+      "origin": "ORIGINAL_20261020_GHIDRA_PSEUDOC_UNCORRECTED",
+      "code_sha256": "01C7EACF4F340752F6CEC151D27AE8D2CFA6A31D19143F76E21A65BB93129033",
+      "excerpts": [
+        {
+          "line": 83,
+          "text": "    if ((local_64 == 0) || (*(int *)(param_1 + 0x168) < local_18)) break;"
+        },
+        {
+          "line": 231,
+          "text": "         uVar9 = uStack_d8, (int)uVar10 <= *(int *)(param_1 + 0x168))) {"
+        }
+      ],
+      "complete_function_lines": 393
+    },
+    {
+      "va": "0x0058C0E0",
+      "origin": "ORIGINAL_20261020_GHIDRA_PSEUDOC_UNCORRECTED",
+      "code_sha256": "03D1D0642D4CD4A543B8C48A252B71E13F4FE96889BA7D0C8D8948412800ECBF",
+      "excerpts": [],
+      "complete_function_lines": 1110
+    },
+    {
+      "va": "0x00550E70",
+      "origin": "ORIGINAL_20261020_GHIDRA_PSEUDOC_UNCORRECTED",
+      "code_sha256": "4F0ADBF3458EA25BAF3EE64A8D3E38DBDBFC2E282E167FAD57E5DCAD20299869",
+      "excerpts": [
+        {
+          "line": 115,
+          "text": "    FUN_00551e50(piVar7,puVar10,*(undefined4 *)(piVar7[0x72] + 0x178));"
+        },
+        {
+          "line": 124,
+          "text": "  if ((*(int *)(iVar6 + 0x14c) == 0) && (*(int *)(iVar6 + 0x158) == *(int *)(iVar6 + 0x15c))) {"
+        },
+        {
+          "line": 150,
+          "text": "      FUN_004ace30(*(undefined4 *)(iVar6 + 0x158),*(undefined4 *)(iVar6 + 0x15c));"
+        },
+        {
+          "line": 203,
+          "text": "          FUN_00578b70(puVar1,local_34);"
+        }
+      ],
+      "complete_function_lines": 214
+    },
+    {
+      "va": "0x00551490",
+      "origin": "ORIGINAL_20261020_GHIDRA_PSEUDOC_UNCORRECTED",
+      "code_sha256": "65567127F5FD5C4F7707A4ABACC2B46FA1FE838DFCA66F22B0DB06703CCC24E7",
+      "excerpts": [
+        {
+          "line": 126,
+          "text": "  if (*(int *)(iVar8 + 0x158) == *(int *)(iVar8 + 0x15c)) {"
+        },
+        {
+          "line": 130,
+          "text": "    local_14c = (*(int *)(iVar8 + 0x15c) - *(int *)(iVar8 + 0x158)) / 0x1c;"
+        },
+        {
+          "line": 133,
+          "text": "    if ((uint)((*(int *)(*(int *)(param_1 + 8) + 0x15c) - *(int *)(*(int *)(param_1 + 8) + 0x158)) /"
+        },
+        {
+          "line": 141,
+          "text": "    FUN_004ace30(*(undefined4 *)(iVar8 + 0x158),*(int *)(iVar8 + 0x15c));"
+        },
+        {
+          "line": 330,
+          "text": "        FUN_00578b70(local_158,0);"
+        },
+        {
+          "line": 338,
+          "text": "    FUN_00551e50(param_2,iVar10,*(undefined4 *)local_d4[iVar8]);"
+        }
+      ],
+      "complete_function_lines": 395
+    },
+    {
+      "va": "0x00578B70",
+      "origin": "ORIGINAL_20261020_GHIDRA_PSEUDOC_UNCORRECTED",
+      "code_sha256": "3DCF32B928DE7AA3D34CF8D515AF295C13C751B08359372DD160B16208094C18",
+      "excerpts": [
+        {
+          "line": 3,
+          "text": "// Name: FUN_00578b70 | Bytes: 893"
+        },
+        {
+          "line": 6,
+          "text": "void __fastcall FUN_00578b70(undefined4 param_1,int *param_2,char *param_3,int param_4)"
+        },
+        {
+          "line": 52,
+          "text": "                        if (uVar3 < *(uint *)(iVar4 + 0x16c)) {"
+        },
+        {
+          "line": 53,
+          "text": "                          *(int *)(iVar4 + 0x16c) = *(int *)(iVar4 + 0x16c) - uVar3;"
+        },
+        {
+          "line": 56,
+          "text": "                          *(undefined4 *)(iVar4 + 0x16c) = 0;"
+        },
+        {
+          "line": 58,
+          "text": "                        piVar1 = (int *)(*(int *)(*piVar1 + 0x1c8) + 0x16c);"
+        }
+      ],
+      "complete_function_lines": 179
+    },
+    {
+      "va": "0x00551E50",
+      "origin": "REPAIRED_GHIDRA_FRESH_DECOMP",
+      "code_sha256": "9032EB2A3AB30AC1AC0B9DD00DC58A803CB25CE1E7300529072D84BE76952875",
+      "excerpts": [
+        {
+          "line": 11,
+          "text": "void FUN_00551e50(undefined *ctx_eax,dword arg_stack_0,dword arg_stack_1,dword arg_stack_2)"
+        },
+        {
+          "line": 43,
+          "text": "  if (*(int *)(iVar1 + 0x1d0) == 0) {"
+        },
+        {
+          "line": 49,
+          "text": "  if (*(char *)(iVar1 + 0x18614) != '\\0') {"
+        },
+        {
+          "line": 65,
+          "text": "  iVar1 = *(int *)(iVar1 + 0x1c8);"
+        },
+        {
+          "line": 141,
+          "text": "  *(int *)(iVar1 + 0x16c) = *(int *)(iVar1 + 0x16c) + iVar7;"
+        },
+        {
+          "line": 143,
+          "text": "  if ((((*(char *)(*(int *)ctx_eax + 0x8c) != '\\0') &&"
+        },
+        {
+          "line": 145,
+          "text": "       (*(uint *)(iVar1 + 0x170) <= *(uint *)(iVar1 + 0x16c))) &&"
+        },
+        {
+          "line": 147,
+          "text": "      (FUN_0058a650(), ctx_eax[0xe] != '\\0')) && (cVar6 = FUN_00571a40(), cVar6 != '\\0')) {"
+        }
+      ],
+      "complete_function_lines": 162
+    },
+    {
+      "va": "0x00599BD0",
+      "origin": "ORIGINAL_20261020_GHIDRA_PSEUDOC_UNCORRECTED",
+      "code_sha256": "94F69BED55F2E76978B831CCF1179B94987DE2C655B7B861B4E8B49A99588C64",
+      "excerpts": [
+        {
+          "line": 1118,
+          "text": "  puVar12 = (undefined4 *)(param_3 + 0x8c);"
+        },
+        {
+          "line": 1530,
+          "text": "  *(uint *)(param_3 + 0x1c8) = (uint)(cVar3 != '\\0');"
+        },
+        {
+          "line": 1537,
+          "text": "  iVar7 = *(int *)(param_3 + 0x1c8);"
+        },
+        {
+          "line": 1543,
+          "text": "  *(int *)(param_3 + 0x1c8) = iVar7;"
+        },
+        {
+          "line": 1621,
+          "text": "  *(undefined4 *)(param_3 + 0x1d0) = uVar10;"
+        }
+      ],
+      "complete_function_lines": 3514
+    },
+    {
+      "va": "0x0054E7B0",
+      "origin": "ORIGINAL_20261020_GHIDRA_PSEUDOC_UNCORRECTED",
+      "code_sha256": "B66F05D87C7E4880B668E637FEF275F24EFA80A6DC1948BA6B13BB42702B50F0",
+      "excerpts": [
+        {
+          "line": 81,
+          "text": "    if (*(int *)(param_2 + 0x158) == *(int *)(param_2 + 0x15c)) goto LAB_0054f435;"
+        },
+        {
+          "line": 83,
+          "text": "      local_28c = (int *)((*(int *)(param_2 + 0x15c) - *(int *)(param_2 + 0x158)) / 0x1c);"
+        },
+        {
+          "line": 230,
+          "text": "  if (*(int *)(local_278 + 0x1d0) == 0) {"
+        },
+        {
+          "line": 283,
+          "text": "    FUN_0058b7f0();"
+        },
+        {
+          "line": 295,
+          "text": "      local_28c = *(int **)(local_278 + 0x1d0);"
+        },
+        {
+          "line": 309,
+          "text": "    if ((*(char *)(piVar5[0x1f] + 0x8c) == '\\0') && (*(char *)(piVar5[0x1f] + 0x1f8) != '\\0')) {"
+        },
+        {
+          "line": 317,
+          "text": "      local_28c = *(int **)(iVar6 + 0x1d0);"
+        },
+        {
+          "line": 388,
+          "text": "    if (((*(char *)(local_288 + 0x8c) == '\\0') && (*(char *)(local_288 + 0x1f8) != '\\0')) &&"
+        },
+        {
+          "line": 428,
+          "text": "      if (((*(char *)(iVar6 + 0x8c) == '\\0') && (*(char *)(iVar6 + 0x1f8) != '\\0')) &&"
+        }
+      ],
+      "complete_function_lines": 468
+    },
+    {
+      "va": "0x00577260",
+      "origin": "ORIGINAL_20261020_GHIDRA_PSEUDOC_UNCORRECTED",
+      "code_sha256": "CC5E733E31645C638C5D9AC89412ABEF464105ED2C39740ECD6EF7D7BA877AA8",
+      "excerpts": [],
+      "complete_function_lines": 40
+    }
+  ],
+  "original_dat_examples": [
+    {
+      "skill": "sp_geru_nt1b",
+      "member": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/F20_summon.dat",
+      "line": 10659,
+      "source": "skill sp_geru_nt1b\r\n\t{\r\n\t\tsummon_level = 100\r\n\t\r\n\t\tsound = tm2_sonic005\r\n\t\timage = m_aeroballx03_\r\n\t\tfunc = summon\r\n\t\tw = 64\r\n\t\th = 64\r\n\t\ta = 160\r\n\t\tanime = 8\r\n\t\tanime_interval = 2\r\n\t\ttime = 14\r\n\r\n\t\trange = 30\r\n\r\n\t\tadd = s_ss1013\r\n\r\n\t\tyorozu = troop\r\n\r\n\t\trush = 6\r\n\t\trush_interval = -1\r\n\t\tsummon_level =100\r\n\t}",
+      "member_sha256": "8E17FF4566DFC1547323B5ACC89DEE41B918EA946BE160555B758431C0EC3AC3"
+    },
+    {
+      "skill": "sp_pinegaki_nt1b",
+      "member": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/F20_summon.dat",
+      "line": 12526,
+      "source": "skill sp_pinegaki_nt1b\r\n{\r\n\tsummon_level = 100\r\n\r\n\tsound = tm2_sonic005\r\n\timage = s_fire\r\n\tfunc = summon\r\n\tw = 64\r\n\th = 96\r\n\ta = 160\r\n\tanime = 7\r\n\tanime_interval = 2\r\n\ttime = 12\r\n\r\n\trange = 30\r\n\r\n\tadd2 = pinegakib,a004_s,a004_s,a004_s,a004_s,a004_s\r\n\r\n//\tyorozu = troop3\r\n\tyorozu = troop\r\n\r\n\tnext_order = on\r\n\trush = 3\r\n\trush_interval = -1\r\n}",
+      "member_sha256": "8E17FF4566DFC1547323B5ACC89DEE41B918EA946BE160555B758431C0EC3AC3"
+    },
+    {
+      "skill": "sp_pinegaki_nt1c",
+      "member": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/F20_summon.dat",
+      "line": 12552,
+      "source": "skill sp_pinegaki_nt1c:sp_pinegaki_nt1b\r\n{\r\n\tadd2 = pinegakic,a004_s,a004_s,a004_s,a004_s,a004_s\r\n}",
+      "member_sha256": "8E17FF4566DFC1547323B5ACC89DEE41B918EA946BE160555B758431C0EC3AC3"
+    },
+    {
+      "skill": "sp_pinegaki_nt1d",
+      "member": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/F20_summon.dat",
+      "line": 12557,
+      "source": "skill sp_pinegaki_nt1d:sp_pinegaki_nt1b\r\n{\r\n\tadd2 = pinegakid,a004_s,a004_s,a004_s,a004_s,a004_s\r\n}",
+      "member_sha256": "8E17FF4566DFC1547323B5ACC89DEE41B918EA946BE160555B758431C0EC3AC3"
+    }
+  ],
+  "timing_illustration": {
+    "status": "LOGICAL_EXAMPLE_NOT_RUNTIME_TEST",
+    "before_exp": 900,
+    "next_threshold": 1000,
+    "ordinary_award": 50,
+    "drain_award": 100,
+    "at_ordinary_level_check": 950,
+    "after_drain": 1050,
+    "interpretation": "The ordinary SimpleUnit check may precede crossing caused by drain."
+  },
+  "limits": [
+    "No universal no-transfer proof; indirect calls, excluded code and DAT events remain open.",
+    "Byte presence does not prove runtime reachability. Shared-record claims require identical live owner/key.",
+    "Corrects positive-drain ordering: attack award precedes drain; recovery call passes zero strength.",
+    "Synthetic arithmetic illustration is not original gameplay or emulation."
+  ]
+}

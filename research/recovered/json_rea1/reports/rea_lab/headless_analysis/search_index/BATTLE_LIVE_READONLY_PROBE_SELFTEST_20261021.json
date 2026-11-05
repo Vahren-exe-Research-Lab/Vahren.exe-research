@@ -1,0 +1,8 @@
+{
+  "id": "BRIDGE-LIVE-READONLY-PROBE-SELFTEST-20261021",
+  "status": "SELF-PROCESS_READMEMORY_TEST_ONLY",
+  "memory_word": "0xBADC0FFE",
+  "own_process_filename": "python.exe",
+  "original_game_process_touched": false,
+  "original_game_start_or_hook": false
+}

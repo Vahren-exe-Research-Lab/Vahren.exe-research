@@ -1,0 +1,357 @@
+{
+  "status": "ORIGINAL DAT SKILL SOURCE→WORK TYPED CHILD STATIC FIXTURE / NOT RUN",
+  "source": "WIKI_MISSILE_PARENT_CHILD_DAMAGE_BRIDGE_20261013.json",
+  "sample_count": 4,
+  "samples": [
+    {
+      "root": "3bantya_gun",
+      "root_grants": [
+        {
+          "owner": "class:asp637",
+          "source": "a_default/script/45_内政_防衛兵器/siege_class_SP63_鎌倉.dat",
+          "line": 213,
+          "field": "skill"
+        }
+      ],
+      "typed_damage_descendant": "3bantya_gun_nt1",
+      "child_adapter": {
+        "tag": "3bantya_gun_nt1",
+        "func": "missile",
+        "typed_success": true,
+        "mp_cost": 0,
+        "attr_hex": "676e",
+        "effective_str_mode": 1,
+        "chance": 100,
+        "percent_scale_preview": 1.0
+      },
+      "chain": [
+        {
+          "tag": "3bantya_gun",
+          "path": {
+            "file": "a_default/script/45_内政_防衛兵器/siege_skill_SP63_鎌倉.dat",
+            "line": 40,
+            "parent": "sk_ms"
+          },
+          "func": "missile",
+          "explicit_edges": {
+            "next3": [
+              "3bantya_gun_nt1",
+              "3bantya_gun_nt2"
+            ],
+            "just_next": [
+              "seiretsu_b"
+            ],
+            "pair_next": [
+              "3bantya_gun_pr0"
+            ]
+          }
+        },
+        {
+          "tag": "3bantya_gun_nt1",
+          "path": {
+            "file": "a_default/script/45_内政_防衛兵器/siege_skill_SP63_鎌倉.dat",
+            "line": 79,
+            "parent": "sk_ms"
+          },
+          "func": "missile",
+          "explicit_edges": {
+            "next3": [
+              "ef_3bantya"
+            ]
+          }
+        }
+      ],
+      "typed_adapter_success": true,
+      "assumption": "The original native next-chain may not execute this path."
+    },
+    {
+      "root": "110jaku_gun",
+      "root_grants": [
+        {
+          "owner": "unit:nktidksg",
+          "source": "a_default/script/10_ユニット/25_オーバック・カンパニー.dat",
+          "line": 3,
+          "field": "skill2"
+        }
+      ],
+      "typed_damage_descendant": "110jaku_gun_nt1",
+      "child_adapter": {
+        "tag": "110jaku_gun_nt1",
+        "func": "missile",
+        "typed_success": true,
+        "mp_cost": 0,
+        "attr_hex": "676e",
+        "effective_str_mode": 1,
+        "chance": 100,
+        "percent_scale_preview": 1.0
+      },
+      "chain": [
+        {
+          "tag": "110jaku_gun",
+          "path": {
+            "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+            "line": 2999,
+            "parent": "harimiko_gun"
+          },
+          "func": "missile",
+          "explicit_edges": {
+            "next": [
+              "110jaku_gun_nt0"
+            ],
+            "pair_next": [
+              "110jaku_gun_pr0"
+            ]
+          }
+        },
+        {
+          "tag": "110jaku_gun_nt0",
+          "path": {
+            "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+            "line": 3019,
+            "parent": null
+          },
+          "func": "UNSET",
+          "explicit_edges": {
+            "next": [
+              "110jaku_gun_nt0a"
+            ]
+          }
+        },
+        {
+          "tag": "110jaku_gun_nt0a",
+          "path": {
+            "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+            "line": 3030,
+            "parent": "b_gun"
+          },
+          "func": "missile",
+          "explicit_edges": {
+            "next3": [
+              "110jaku_gun_nt1",
+              "110jaku_gun_nt2",
+              "110jaku_gun_nt3",
+              "110jaku_gun_kn"
+            ],
+            "just_next": [],
+            "pair_next": []
+          }
+        },
+        {
+          "tag": "110jaku_gun_nt1",
+          "path": {
+            "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+            "line": 3044,
+            "parent": "b_gun_nt1"
+          },
+          "func": "missile",
+          "explicit_edges": {
+            "next": [
+              "ef_gun2"
+            ],
+            "next3": []
+          }
+        }
+      ],
+      "typed_adapter_success": true,
+      "assumption": "The original native next-chain may not execute this path."
+    },
+    {
+      "root": "77_gun",
+      "root_grants": [
+        {
+          "owner": "unit:nanachi",
+          "source": "a_default/script/10_ユニット/90_放浪_ホモビ.dat",
+          "line": 1106,
+          "field": "skill2"
+        }
+      ],
+      "typed_damage_descendant": "77_gun_nt1",
+      "child_adapter": {
+        "tag": "77_gun_nt1",
+        "func": "missile",
+        "typed_success": true,
+        "mp_cost": 0,
+        "attr_hex": "676e",
+        "effective_str_mode": 1,
+        "chance": 100,
+        "percent_scale_preview": 1.2
+      },
+      "chain": [
+        {
+          "tag": "77_gun",
+          "path": {
+            "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+            "line": 8019,
+            "parent": "sk_ms"
+          },
+          "func": "missile",
+          "explicit_edges": {
+            "next3": [
+              "77_gun_nt1",
+              "77_gun_nt2"
+            ],
+            "just_next": [
+              "seiretsu_b"
+            ],
+            "pair_next": [
+              "b_gun_pr0"
+            ]
+          }
+        },
+        {
+          "tag": "77_gun_nt1",
+          "path": {
+            "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+            "line": 8042,
+            "parent": "b_gun_nt1"
+          },
+          "func": "missile",
+          "explicit_edges": {}
+        }
+      ],
+      "typed_adapter_success": true,
+      "assumption": "The original native next-chain may not execute this path."
+    },
+    {
+      "root": "Flying_Barcelona",
+      "root_grants": [
+        {
+          "owner": "class:a0vega",
+          "source": "a_default/script/36_仮設新勢力/unit_class_in_balrog.dat",
+          "line": 80,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a0vega2",
+          "source": "a_default/script/36_仮設新勢力/unit_class_in_balrog.dat",
+          "line": 111,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a0vega3",
+          "source": "a_default/script/36_仮設新勢力/unit_class_in_balrog.dat",
+          "line": 126,
+          "field": "skill"
+        }
+      ],
+      "typed_damage_descendant": "Flying_Barcelona_Eff_B_1",
+      "child_adapter": {
+        "tag": "Flying_Barcelona_Eff_B_1",
+        "func": "missile",
+        "typed_success": true,
+        "mp_cost": 0,
+        "attr_hex": "",
+        "effective_str_mode": 6,
+        "chance": 100,
+        "percent_scale_preview": 0.0
+      },
+      "chain": [
+        {
+          "tag": "Flying_Barcelona",
+          "path": {
+            "file": "a_default/script/36_仮設新勢力/skill_Balrog_Flying_Barcelona.dat",
+            "line": 49,
+            "parent": "Flying_Barcelona_base"
+          },
+          "func": "missile",
+          "explicit_edges": {
+            "next3": [
+              "Flying_Barcelona_Set_A_0_0",
+              "Flying_Barcelona_Set_B_0"
+            ]
+          }
+        },
+        {
+          "tag": "Flying_Barcelona_Set_B_0",
+          "path": {
+            "file": "a_default/script/36_仮設新勢力/skill_Balrog_Flying_Barcelona.dat",
+            "line": 206,
+            "parent": "Flying_Barcelona_base"
+          },
+          "func": "missile",
+          "explicit_edges": {
+            "next3": [
+              "Flying_Barcelona_Set_B_1"
+            ]
+          }
+        },
+        {
+          "tag": "Flying_Barcelona_Set_B_1",
+          "path": {
+            "file": "a_default/script/36_仮設新勢力/skill_Balrog_Flying_Barcelona.dat",
+            "line": 216,
+            "parent": "Flying_Barcelona_base"
+          },
+          "func": "missile",
+          "explicit_edges": {
+            "next3": [
+              "Flying_Barcelona_Set_B_2"
+            ]
+          }
+        },
+        {
+          "tag": "Flying_Barcelona_Set_B_2",
+          "path": {
+            "file": "a_default/script/36_仮設新勢力/skill_Balrog_Flying_Barcelona.dat",
+            "line": 224,
+            "parent": "Flying_Barcelona_base"
+          },
+          "func": "missile",
+          "explicit_edges": {
+            "next3": [
+              "Flying_Barcelona_Eff_B_0"
+            ]
+          }
+        },
+        {
+          "tag": "Flying_Barcelona_Eff_B_0",
+          "path": {
+            "file": "a_default/script/36_仮設新勢力/skill_Balrog_Flying_Barcelona.dat",
+            "line": 235,
+            "parent": "Flying_Barcelona_base"
+          },
+          "func": "missile",
+          "explicit_edges": {
+            "next3": [
+              "Flying_Barcelona_Eff_B_1"
+            ]
+          }
+        },
+        {
+          "tag": "Flying_Barcelona_Eff_B_1",
+          "path": {
+            "file": "a_default/script/36_仮設新勢力/skill_Balrog_Flying_Barcelona.dat",
+            "line": 248,
+            "parent": "Flying_Barcelona_base"
+          },
+          "func": "missile",
+          "explicit_edges": {
+            "next3": [
+              "Flying_Barcelona_Eff_B_2"
+            ]
+          }
+        }
+      ],
+      "typed_adapter_success": true,
+      "assumption": "The original native next-chain may not execute this path."
+    }
+  ],
+  "case_handoff": "WDF-13",
+  "required_newF_receipt": [
+    "root Skill pointer and Unit loadout",
+    "triggered next chain path",
+    "child Skill+str mode/attr",
+    "MP debit stage only once",
+    "RNG cursor/next child order",
+    "hit target/HP/status/Unit normal return",
+    "renderer/projectile lifetime"
+  ],
+  "not_established": [
+    "old EXE actual child invocation order",
+    "skill effect reachability",
+    "correct damage/MP/RNG or return for new F",
+    "native FPU runtime profile"
+  ],
+  "old_Gameplay_PASS": 0,
+  "strict_MATCH": 0
+}

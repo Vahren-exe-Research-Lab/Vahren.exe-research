@@ -1,0 +1,35 @@
+{
+  "candidate_site": "0x004B99D2",
+  "engine_mode": 2,
+  "battle_active": 1,
+  "target_spot_pointer": "0x40004000",
+  "attack_entry_count": 1,
+  "checks": {
+    "scene_mode_2": true,
+    "script_active": true,
+    "target_spot_ptr": true,
+    "attack_tree_nonempty": true,
+    "at_least_one_unit": true,
+    "stable_unit_def_names": true,
+    "capture_at_preframe": true,
+    "source_exe_match": true,
+    "normal_battle": true,
+    "map_verified": false,
+    "crt_rng_state": false,
+    "event_cursor": false,
+    "legacy_run_receipt": false,
+    "not_synthetic_input": false
+  },
+  "passed": 9,
+  "total": 14,
+  "status": "BLOCKED_MISSING_EVIDENCE",
+  "blockers": [
+    "Actual selected MAP bytes/hash absent",
+    "Original CRT thread-state at handoff absent",
+    "Native VM/event cursor snapshot absent",
+    "Legal original-game run receipt missing",
+    "Original-game runtime observation not evidenced"
+  ],
+  "original_gameplay_verified": false,
+  "warning": "A fully set synthetic metadata block is NOT proof of real original-game execution."
+}

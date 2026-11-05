@@ -1,0 +1,29 @@
+{
+  "id": "EXP-ENDTRANSFER-20261022-03/VERIFY",
+  "result": "PASS",
+  "native_sites_replayed": 41,
+  "literals_replayed": 5,
+  "extra_native_sites": [
+    {
+      "site": "0x578dca",
+      "bytes": "01816c010000",
+      "instruction": "add dword ptr [ecx + 0x16c], eax"
+    },
+    {
+      "site": "0x551c55",
+      "bytes": "e8166f0200",
+      "instruction": "call 0x578b70"
+    },
+    {
+      "site": "0x551c6a",
+      "bytes": "e8e1010000",
+      "instruction": "call 0x551e50"
+    }
+  ],
+  "simpleunit_slot58": "0x5445e0",
+  "source_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "source_db_sha256": "0B057C43D30EAEC74588C84CF7E09AA7A488BD0FF170925591953EF578AFCB25",
+  "evidence_sha256": "24358BF90FF88DE65CE095EA09763E2BB500317089BEFF266050663FFE0911AB",
+  "source_files_unchanged": true,
+  "gameplay_tests": 0
+}

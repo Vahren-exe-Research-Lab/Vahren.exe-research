@@ -1,0 +1,816 @@
+{
+  "research_id": "BRIDGE-DEF-IDENTITY-PE-20261021-01",
+  "status": "STATIC PE + ARCHIVED PSEUDOCODE ONLY / GAME NOT RUN",
+  "exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "address_to_identity_candidate": "Unit+0x1C8 -> Def*; Def+0x1A4 -> owning definition registry; owner+0x300 -> std::map head; std::map node+0x28 -> Def*",
+  "key_candidate": "map node+0x0C std::string (len node+0x1C, capacity node+0x20, nil node+0x2D); SSO key bytes if capacity<16",
+  "unresolved": [
+    "owner may be absent for temporary defs",
+    "Node layout and code page not actual-game captured",
+    "Object identity may change during transformation/summoning",
+    "Parent registry and node count address need original runtime validation"
+  ],
+  "instructions": {
+    "0x00467DE0": [
+      {
+        "va": "0x00467DE0",
+        "opcode": "6aff",
+        "asm": "push -1"
+      },
+      {
+        "va": "0x00467DE2",
+        "opcode": "68c8805e00",
+        "asm": "push 0x5e80c8"
+      },
+      {
+        "va": "0x00467DE7",
+        "opcode": "64a100000000",
+        "asm": "mov eax, dword ptr fs:[0]"
+      },
+      {
+        "va": "0x00467DED",
+        "opcode": "50",
+        "asm": "push eax"
+      },
+      {
+        "va": "0x00467DEE",
+        "opcode": "51",
+        "asm": "push ecx"
+      },
+      {
+        "va": "0x00467DEF",
+        "opcode": "56",
+        "asm": "push esi"
+      },
+      {
+        "va": "0x00467DF0",
+        "opcode": "57",
+        "asm": "push edi"
+      },
+      {
+        "va": "0x00467DF1",
+        "opcode": "a120a26500",
+        "asm": "mov eax, dword ptr [0x65a220]"
+      },
+      {
+        "va": "0x00467DF6",
+        "opcode": "33c4",
+        "asm": "xor eax, esp"
+      },
+      {
+        "va": "0x00467DF8",
+        "opcode": "50",
+        "asm": "push eax"
+      },
+      {
+        "va": "0x00467DF9",
+        "opcode": "8d442410",
+        "asm": "lea eax, [esp + 0x10]"
+      },
+      {
+        "va": "0x00467DFD",
+        "opcode": "64a300000000",
+        "asm": "mov dword ptr fs:[0], eax"
+      },
+      {
+        "va": "0x00467E03",
+        "opcode": "8bf1",
+        "asm": "mov esi, ecx"
+      },
+      {
+        "va": "0x00467E05",
+        "opcode": "8d44240c",
+        "asm": "lea eax, [esp + 0xc]"
+      },
+      {
+        "va": "0x00467E09",
+        "opcode": "50",
+        "asm": "push eax"
+      },
+      {
+        "va": "0x00467E0A",
+        "opcode": "8d86fc020000",
+        "asm": "lea eax, [esi + 0x2fc]"
+      },
+      {
+        "va": "0x00467E10",
+        "opcode": "8d7c2424",
+        "asm": "lea edi, [esp + 0x24]"
+      },
+      {
+        "va": "0x00467E14",
+        "opcode": "c744241c00000000",
+        "asm": "mov dword ptr [esp + 0x1c], 0"
+      },
+      {
+        "va": "0x00467E1C",
+        "opcode": "e8df930500",
+        "asm": "call 0x4c1200"
+      },
+      {
+        "va": "0x00467E21",
+        "opcode": "8b44240c",
+        "asm": "mov eax, dword ptr [esp + 0xc]"
+      },
+      {
+        "va": "0x00467E25",
+        "opcode": "3b8600030000",
+        "asm": "cmp eax, dword ptr [esi + 0x300]"
+      },
+      {
+        "va": "0x00467E2B",
+        "opcode": "7436",
+        "asm": "je 0x467e63"
+      },
+      {
+        "va": "0x00467E2D",
+        "opcode": "8b4828",
+        "asm": "mov ecx, dword ptr [eax + 0x28]"
+      },
+      {
+        "va": "0x00467E30",
+        "opcode": "89b1a4010000",
+        "asm": "mov dword ptr [ecx + 0x1a4], esi"
+      },
+      {
+        "va": "0x00467E36",
+        "opcode": "837c243410",
+        "asm": "cmp dword ptr [esp + 0x34], 0x10"
+      },
+      {
+        "va": "0x00467E3B",
+        "opcode": "8b7028",
+        "asm": "mov esi, dword ptr [eax + 0x28]"
+      },
+      {
+        "va": "0x00467E3E",
+        "opcode": "720d",
+        "asm": "jb 0x467e4d"
+      },
+      {
+        "va": "0x00467E40",
+        "opcode": "8b542420",
+        "asm": "mov edx, dword ptr [esp + 0x20]"
+      },
+      {
+        "va": "0x00467E44",
+        "opcode": "52",
+        "asm": "push edx"
+      },
+      {
+        "va": "0x00467E45",
+        "opcode": "e871ed1400",
+        "asm": "call 0x5b6bbb"
+      },
+      {
+        "va": "0x00467E4A",
+        "opcode": "83c404",
+        "asm": "add esp, 4"
+      },
+      {
+        "va": "0x00467E4D",
+        "opcode": "8bc6",
+        "asm": "mov eax, esi"
+      },
+      {
+        "va": "0x00467E4F",
+        "opcode": "8b4c2410",
+        "asm": "mov ecx, dword ptr [esp + 0x10]"
+      },
+      {
+        "va": "0x00467E53",
+        "opcode": "64890d00000000",
+        "asm": "mov dword ptr fs:[0], ecx"
+      },
+      {
+        "va": "0x00467E5A",
+        "opcode": "59",
+        "asm": "pop ecx"
+      },
+      {
+        "va": "0x00467E5B",
+        "opcode": "5f",
+        "asm": "pop edi"
+      },
+      {
+        "va": "0x00467E5C",
+        "opcode": "5e",
+        "asm": "pop esi"
+      },
+      {
+        "va": "0x00467E5D",
+        "opcode": "83c410",
+        "asm": "add esp, 0x10"
+      },
+      {
+        "va": "0x00467E60",
+        "opcode": "c21c00",
+        "asm": "ret 0x1c"
+      },
+      {
+        "va": "0x00467E63",
+        "opcode": "837c243410",
+        "asm": "cmp dword ptr [esp + 0x34], 0x10"
+      },
+      {
+        "va": "0x00467E68",
+        "opcode": "720d",
+        "asm": "jb 0x467e77"
+      },
+      {
+        "va": "0x00467E6A",
+        "opcode": "8b442420",
+        "asm": "mov eax, dword ptr [esp + 0x20]"
+      },
+      {
+        "va": "0x00467E6E",
+        "opcode": "50",
+        "asm": "push eax"
+      },
+      {
+        "va": "0x00467E6F",
+        "opcode": "e847ed1400",
+        "asm": "call 0x5b6bbb"
+      },
+      {
+        "va": "0x00467E74",
+        "opcode": "83c404",
+        "asm": "add esp, 4"
+      },
+      {
+        "va": "0x00467E77",
+        "opcode": "33c0",
+        "asm": "xor eax, eax"
+      },
+      {
+        "va": "0x00467E79",
+        "opcode": "8b4c2410",
+        "asm": "mov ecx, dword ptr [esp + 0x10]"
+      },
+      {
+        "va": "0x00467E7D",
+        "opcode": "64890d00000000",
+        "asm": "mov dword ptr fs:[0], ecx"
+      },
+      {
+        "va": "0x00467E84",
+        "opcode": "59",
+        "asm": "pop ecx"
+      },
+      {
+        "va": "0x00467E85",
+        "opcode": "5f",
+        "asm": "pop edi"
+      },
+      {
+        "va": "0x00467E86",
+        "opcode": "5e",
+        "asm": "pop esi"
+      },
+      {
+        "va": "0x00467E87",
+        "opcode": "83c410",
+        "asm": "add esp, 0x10"
+      },
+      {
+        "va": "0x00467E8A",
+        "opcode": "c21c00",
+        "asm": "ret 0x1c"
+      }
+    ],
+    "0x004682B0": [
+      {
+        "va": "0x004682B0",
+        "opcode": "8b4004",
+        "asm": "mov eax, dword ptr [eax + 4]"
+      },
+      {
+        "va": "0x004682B3",
+        "opcode": "55",
+        "asm": "push ebp"
+      },
+      {
+        "va": "0x004682B4",
+        "opcode": "8b6c2408",
+        "asm": "mov ebp, dword ptr [esp + 8]"
+      },
+      {
+        "va": "0x004682B8",
+        "opcode": "57",
+        "asm": "push edi"
+      },
+      {
+        "va": "0x004682B9",
+        "opcode": "8b7804",
+        "asm": "mov edi, dword ptr [eax + 4]"
+      },
+      {
+        "va": "0x004682BC",
+        "opcode": "807f2d00",
+        "asm": "cmp byte ptr [edi + 0x2d], 0"
+      },
+      {
+        "va": "0x004682C0",
+        "opcode": "8944240c",
+        "asm": "mov dword ptr [esp + 0xc], eax"
+      },
+      {
+        "va": "0x004682C4",
+        "opcode": "7560",
+        "asm": "jne 0x468326"
+      },
+      {
+        "va": "0x004682C6",
+        "opcode": "53",
+        "asm": "push ebx"
+      },
+      {
+        "va": "0x004682C7",
+        "opcode": "8b5d10",
+        "asm": "mov ebx, dword ptr [ebp + 0x10]"
+      },
+      {
+        "va": "0x004682CA",
+        "opcode": "56",
+        "asm": "push esi"
+      },
+      {
+        "va": "0x004682CB",
+        "opcode": "eb03",
+        "asm": "jmp 0x4682d0"
+      },
+      {
+        "va": "0x004682CD",
+        "opcode": "8d4900",
+        "asm": "lea ecx, [ecx]"
+      },
+      {
+        "va": "0x004682D0",
+        "opcode": "837d1410",
+        "asm": "cmp dword ptr [ebp + 0x14], 0x10"
+      },
+      {
+        "va": "0x004682D4",
+        "opcode": "8d570c",
+        "asm": "lea edx, [edi + 0xc]"
+      },
+      {
+        "va": "0x004682D7",
+        "opcode": "7205",
+        "asm": "jb 0x4682de"
+      },
+      {
+        "va": "0x004682D9",
+        "opcode": "8b4d00",
+        "asm": "mov ecx, dword ptr [ebp]"
+      },
+      {
+        "va": "0x004682DC",
+        "opcode": "eb02",
+        "asm": "jmp 0x4682e0"
+      },
+      {
+        "va": "0x004682DE",
+        "opcode": "8bcd",
+        "asm": "mov ecx, ebp"
+      },
+      {
+        "va": "0x004682E0",
+        "opcode": "8b7210",
+        "asm": "mov esi, dword ptr [edx + 0x10]"
+      },
+      {
+        "va": "0x004682E3",
+        "opcode": "8bc6",
+        "asm": "mov eax, esi"
+      },
+      {
+        "va": "0x004682E5",
+        "opcode": "3bc6",
+        "asm": "cmp eax, esi"
+      },
+      {
+        "va": "0x004682E7",
+        "opcode": "7300",
+        "asm": "jae 0x4682e9"
+      },
+      {
+        "va": "0x004682E9",
+        "opcode": "8bc6",
+        "asm": "mov eax, esi"
+      },
+      {
+        "va": "0x004682EB",
+        "opcode": "3bf3",
+        "asm": "cmp esi, ebx"
+      },
+      {
+        "va": "0x004682ED",
+        "opcode": "7202",
+        "asm": "jb 0x4682f1"
+      },
+      {
+        "va": "0x004682EF",
+        "opcode": "8bc3",
+        "asm": "mov eax, ebx"
+      },
+      {
+        "va": "0x004682F1",
+        "opcode": "837a1410",
+        "asm": "cmp dword ptr [edx + 0x14], 0x10"
+      },
+      {
+        "va": "0x004682F5",
+        "opcode": "7202",
+        "asm": "jb 0x4682f9"
+      },
+      {
+        "va": "0x004682F7",
+        "opcode": "8b12",
+        "asm": "mov edx, dword ptr [edx]"
+      },
+      {
+        "va": "0x004682F9",
+        "opcode": "e842a9f9ff",
+        "asm": "call 0x402c40"
+      },
+      {
+        "va": "0x004682FE",
+        "opcode": "85c0",
+        "asm": "test eax, eax"
+      },
+      {
+        "va": "0x00468300",
+        "opcode": "750b",
+        "asm": "jne 0x46830d"
+      },
+      {
+        "va": "0x00468302",
+        "opcode": "3bf3",
+        "asm": "cmp esi, ebx"
+      },
+      {
+        "va": "0x00468304",
+        "opcode": "7209",
+        "asm": "jb 0x46830f"
+      },
+      {
+        "va": "0x00468306",
+        "opcode": "3bf3",
+        "asm": "cmp esi, ebx"
+      },
+      {
+        "va": "0x00468308",
+        "opcode": "0f95c0",
+        "asm": "setne al"
+      },
+      {
+        "va": "0x0046830B",
+        "opcode": "85c0",
+        "asm": "test eax, eax"
+      },
+      {
+        "va": "0x0046830D",
+        "opcode": "7905",
+        "asm": "jns 0x468314"
+      },
+      {
+        "va": "0x0046830F",
+        "opcode": "8b7f08",
+        "asm": "mov edi, dword ptr [edi + 8]"
+      },
+      {
+        "va": "0x00468312",
+        "opcode": "eb06",
+        "asm": "jmp 0x46831a"
+      },
+      {
+        "va": "0x00468314",
+        "opcode": "897c2414",
+        "asm": "mov dword ptr [esp + 0x14], edi"
+      },
+      {
+        "va": "0x00468318",
+        "opcode": "8b3f",
+        "asm": "mov edi, dword ptr [edi]"
+      },
+      {
+        "va": "0x0046831A",
+        "opcode": "807f2d00",
+        "asm": "cmp byte ptr [edi + 0x2d], 0"
+      },
+      {
+        "va": "0x0046831E",
+        "opcode": "74b0",
+        "asm": "je 0x4682d0"
+      },
+      {
+        "va": "0x00468320",
+        "opcode": "8b442414",
+        "asm": "mov eax, dword ptr [esp + 0x14]"
+      },
+      {
+        "va": "0x00468324",
+        "opcode": "5e",
+        "asm": "pop esi"
+      },
+      {
+        "va": "0x00468325",
+        "opcode": "5b",
+        "asm": "pop ebx"
+      },
+      {
+        "va": "0x00468326",
+        "opcode": "5f",
+        "asm": "pop edi"
+      },
+      {
+        "va": "0x00468327",
+        "opcode": "5d",
+        "asm": "pop ebp"
+      }
+    ],
+    "0x004C1200": [
+      {
+        "va": "0x004C1200",
+        "opcode": "83ec08",
+        "asm": "sub esp, 8"
+      },
+      {
+        "va": "0x004C1203",
+        "opcode": "53",
+        "asm": "push ebx"
+      },
+      {
+        "va": "0x004C1204",
+        "opcode": "55",
+        "asm": "push ebp"
+      },
+      {
+        "va": "0x004C1205",
+        "opcode": "56",
+        "asm": "push esi"
+      },
+      {
+        "va": "0x004C1206",
+        "opcode": "57",
+        "asm": "push edi"
+      },
+      {
+        "va": "0x004C1207",
+        "opcode": "8bf0",
+        "asm": "mov esi, eax"
+      },
+      {
+        "va": "0x004C1209",
+        "opcode": "e8a270faff",
+        "asm": "call 0x4682b0"
+      },
+      {
+        "va": "0x004C120E",
+        "opcode": "8b6e04",
+        "asm": "mov ebp, dword ptr [esi + 4]"
+      },
+      {
+        "va": "0x004C1211",
+        "opcode": "8944240c",
+        "asm": "mov dword ptr [esp + 0xc], eax"
+      },
+      {
+        "va": "0x004C1215",
+        "opcode": "3bc5",
+        "asm": "cmp eax, ebp"
+      },
+      {
+        "va": "0x004C1217",
+        "opcode": "7456",
+        "asm": "je 0x4c126f"
+      },
+      {
+        "va": "0x004C1219",
+        "opcode": "8b581c",
+        "asm": "mov ebx, dword ptr [eax + 0x1c]"
+      },
+      {
+        "va": "0x004C121C",
+        "opcode": "ba10000000",
+        "asm": "mov edx, 0x10"
+      },
+      {
+        "va": "0x004C1221",
+        "opcode": "395020",
+        "asm": "cmp dword ptr [eax + 0x20], edx"
+      },
+      {
+        "va": "0x004C1224",
+        "opcode": "7205",
+        "asm": "jb 0x4c122b"
+      },
+      {
+        "va": "0x004C1226",
+        "opcode": "8b480c",
+        "asm": "mov ecx, dword ptr [eax + 0xc]"
+      },
+      {
+        "va": "0x004C1229",
+        "opcode": "eb03",
+        "asm": "jmp 0x4c122e"
+      },
+      {
+        "va": "0x004C122B",
+        "opcode": "8d480c",
+        "asm": "lea ecx, [eax + 0xc]"
+      },
+      {
+        "va": "0x004C122E",
+        "opcode": "8b7710",
+        "asm": "mov esi, dword ptr [edi + 0x10]"
+      },
+      {
+        "va": "0x004C1231",
+        "opcode": "8bc6",
+        "asm": "mov eax, esi"
+      },
+      {
+        "va": "0x004C1233",
+        "opcode": "3bf3",
+        "asm": "cmp esi, ebx"
+      },
+      {
+        "va": "0x004C1235",
+        "opcode": "7202",
+        "asm": "jb 0x4c1239"
+      },
+      {
+        "va": "0x004C1237",
+        "opcode": "8bc3",
+        "asm": "mov eax, ebx"
+      },
+      {
+        "va": "0x004C1239",
+        "opcode": "395714",
+        "asm": "cmp dword ptr [edi + 0x14], edx"
+      },
+      {
+        "va": "0x004C123C",
+        "opcode": "7204",
+        "asm": "jb 0x4c1242"
+      },
+      {
+        "va": "0x004C123E",
+        "opcode": "8b17",
+        "asm": "mov edx, dword ptr [edi]"
+      },
+      {
+        "va": "0x004C1240",
+        "opcode": "eb02",
+        "asm": "jmp 0x4c1244"
+      },
+      {
+        "va": "0x004C1242",
+        "opcode": "8bd7",
+        "asm": "mov edx, edi"
+      },
+      {
+        "va": "0x004C1244",
+        "opcode": "e8f719f4ff",
+        "asm": "call 0x402c40"
+      },
+      {
+        "va": "0x004C1249",
+        "opcode": "85c0",
+        "asm": "test eax, eax"
+      },
+      {
+        "va": "0x004C124B",
+        "opcode": "750b",
+        "asm": "jne 0x4c1258"
+      },
+      {
+        "va": "0x004C124D",
+        "opcode": "3bf3",
+        "asm": "cmp esi, ebx"
+      },
+      {
+        "va": "0x004C124F",
+        "opcode": "721e",
+        "asm": "jb 0x4c126f"
+      },
+      {
+        "va": "0x004C1251",
+        "opcode": "3bf3",
+        "asm": "cmp esi, ebx"
+      },
+      {
+        "va": "0x004C1253",
+        "opcode": "0f95c0",
+        "asm": "setne al"
+      },
+      {
+        "va": "0x004C1256",
+        "opcode": "85c0",
+        "asm": "test eax, eax"
+      },
+      {
+        "va": "0x004C1258",
+        "opcode": "7815",
+        "asm": "js 0x4c126f"
+      },
+      {
+        "va": "0x004C125A",
+        "opcode": "8d44240c",
+        "asm": "lea eax, [esp + 0xc]"
+      },
+      {
+        "va": "0x004C125E",
+        "opcode": "8b08",
+        "asm": "mov ecx, dword ptr [eax]"
+      },
+      {
+        "va": "0x004C1260",
+        "opcode": "8b442418",
+        "asm": "mov eax, dword ptr [esp + 0x18]"
+      },
+      {
+        "va": "0x004C1264",
+        "opcode": "5e",
+        "asm": "pop esi"
+      },
+      {
+        "va": "0x004C1265",
+        "opcode": "5d",
+        "asm": "pop ebp"
+      },
+      {
+        "va": "0x004C1266",
+        "opcode": "8908",
+        "asm": "mov dword ptr [eax], ecx"
+      },
+      {
+        "va": "0x004C1268",
+        "opcode": "5b",
+        "asm": "pop ebx"
+      },
+      {
+        "va": "0x004C1269",
+        "opcode": "83c408",
+        "asm": "add esp, 8"
+      },
+      {
+        "va": "0x004C126C",
+        "opcode": "c20400",
+        "asm": "ret 4"
+      },
+      {
+        "va": "0x004C126F",
+        "opcode": "8d442410",
+        "asm": "lea eax, [esp + 0x10]"
+      },
+      {
+        "va": "0x004C1273",
+        "opcode": "896c2410",
+        "asm": "mov dword ptr [esp + 0x10], ebp"
+      },
+      {
+        "va": "0x004C1277",
+        "opcode": "8b08",
+        "asm": "mov ecx, dword ptr [eax]"
+      },
+      {
+        "va": "0x004C1279",
+        "opcode": "8b442418",
+        "asm": "mov eax, dword ptr [esp + 0x18]"
+      },
+      {
+        "va": "0x004C127D",
+        "opcode": "5e",
+        "asm": "pop esi"
+      },
+      {
+        "va": "0x004C127E",
+        "opcode": "5d",
+        "asm": "pop ebp"
+      },
+      {
+        "va": "0x004C127F",
+        "opcode": "8908",
+        "asm": "mov dword ptr [eax], ecx"
+      },
+      {
+        "va": "0x004C1281",
+        "opcode": "5b",
+        "asm": "pop ebx"
+      },
+      {
+        "va": "0x004C1282",
+        "opcode": "83c408",
+        "asm": "add esp, 8"
+      },
+      {
+        "va": "0x004C1285",
+        "opcode": "c20400",
+        "asm": "ret 4"
+      }
+    ]
+  }
+}

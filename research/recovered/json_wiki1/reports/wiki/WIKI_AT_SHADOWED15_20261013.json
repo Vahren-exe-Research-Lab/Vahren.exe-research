@@ -1,0 +1,567 @@
+{
+  "status": "WORK_CURRENT_PARSER_ONLY: raw @ not currently active",
+  "source": "WIKI_AT_NULL_INHERITANCE_20261013.json",
+  "raw_null_shadowed_15": 15,
+  "field_distribution": {
+    "anime/data": 1,
+    "color/keyword": 6,
+    "image/data": 1,
+    "resize_h_min/data": 1,
+    "next2/keyword": 5,
+    "bright/data": 1
+  },
+  "cases": [
+    {
+      "tag": "senkyo_ef",
+      "storage_kind": "data",
+      "field": "anime",
+      "file": "a_default/script/30_スキル/F10_missile.dat",
+      "declaration_line": 7420,
+      "property_line": 7427,
+      "raw_values": [
+        "@"
+      ],
+      "parent": "senkyo",
+      "effective_current": {
+        "found": true,
+        "text": "8",
+        "number": 8
+      },
+      "declared_storage": {
+        "text": "8",
+        "number": 8
+      },
+      "parent_value_if_directly_inherited": {
+        "text": "8",
+        "number": 8,
+        "found": true
+      },
+      "parent_nonempty_blocked": false,
+      "native_parser_current_override_empty": false,
+      "direct_unit_class_skill_grant": false
+    },
+    {
+      "tag": "ef_rmla_ch2",
+      "storage_kind": "keyword",
+      "field": "color",
+      "file": "a_default/script/30_スキル/F12_charge.dat",
+      "declaration_line": 1182,
+      "property_line": 1191,
+      "raw_values": [
+        "@"
+      ],
+      "parent": "ef_yari",
+      "effective_current": {
+        "items": [
+          "255",
+          "18",
+          "48"
+        ]
+      },
+      "declared_storage": {
+        "items": [
+          "255",
+          "18",
+          "48"
+        ]
+      },
+      "parent_value_if_directly_inherited": {
+        "items": [
+          "255",
+          "255",
+          "200"
+        ]
+      },
+      "parent_nonempty_blocked": false,
+      "native_parser_current_override_empty": false,
+      "direct_unit_class_skill_grant": false
+    },
+    {
+      "tag": "ef_rmla_ch_old2",
+      "storage_kind": "keyword",
+      "field": "color",
+      "file": "a_default/script/30_スキル/F12_charge.dat",
+      "declaration_line": 1418,
+      "property_line": 1426,
+      "raw_values": [
+        "@"
+      ],
+      "parent": "ef_yari",
+      "effective_current": {
+        "items": [
+          "255",
+          "150",
+          "150"
+        ]
+      },
+      "declared_storage": {
+        "items": [
+          "255",
+          "150",
+          "150"
+        ]
+      },
+      "parent_value_if_directly_inherited": {
+        "items": [
+          "255",
+          "255",
+          "200"
+        ]
+      },
+      "parent_nonempty_blocked": false,
+      "native_parser_current_override_empty": false,
+      "direct_unit_class_skill_grant": false
+    },
+    {
+      "tag": "ef_ssrmla_ch2",
+      "storage_kind": "keyword",
+      "field": "color",
+      "file": "a_default/script/30_スキル/F12_charge.dat",
+      "declaration_line": 1962,
+      "property_line": 1970,
+      "raw_values": [
+        "@"
+      ],
+      "parent": "ef_yari",
+      "effective_current": {
+        "items": [
+          "20",
+          "0",
+          "70"
+        ]
+      },
+      "declared_storage": {
+        "items": [
+          "20",
+          "0",
+          "70"
+        ]
+      },
+      "parent_value_if_directly_inherited": {
+        "items": [
+          "255",
+          "255",
+          "200"
+        ]
+      },
+      "parent_nonempty_blocked": false,
+      "native_parser_current_override_empty": false,
+      "direct_unit_class_skill_grant": false
+    },
+    {
+      "tag": "ef_ss_rmla_ch_old2",
+      "storage_kind": "keyword",
+      "field": "color",
+      "file": "a_default/script/30_スキル/F12_charge.dat",
+      "declaration_line": 2201,
+      "property_line": 2210,
+      "raw_values": [
+        "@"
+      ],
+      "parent": "ef_yari",
+      "effective_current": {
+        "items": [
+          "20",
+          "0",
+          "70"
+        ]
+      },
+      "declared_storage": {
+        "items": [
+          "20",
+          "0",
+          "70"
+        ]
+      },
+      "parent_value_if_directly_inherited": {
+        "items": [
+          "255",
+          "255",
+          "200"
+        ]
+      },
+      "parent_nonempty_blocked": false,
+      "native_parser_current_override_empty": false,
+      "direct_unit_class_skill_grant": false
+    },
+    {
+      "tag": "893_ef_ch2",
+      "storage_kind": "keyword",
+      "field": "color",
+      "file": "a_default/script/30_スキル/F12_charge.dat",
+      "declaration_line": 2420,
+      "property_line": 2427,
+      "raw_values": [
+        "@"
+      ],
+      "parent": "ef_ch2",
+      "effective_current": {
+        "items": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "declared_storage": {
+        "items": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "parent_value_if_directly_inherited": {
+        "items": []
+      },
+      "parent_nonempty_blocked": false,
+      "native_parser_current_override_empty": false,
+      "direct_unit_class_skill_grant": false
+    },
+    {
+      "tag": "893para_ef_ch2",
+      "storage_kind": "keyword",
+      "field": "color",
+      "file": "a_default/script/30_スキル/F12_charge.dat",
+      "declaration_line": 2533,
+      "property_line": 2540,
+      "raw_values": [
+        "@"
+      ],
+      "parent": "ef_ch2",
+      "effective_current": {
+        "items": [
+          "0",
+          "100",
+          "255"
+        ]
+      },
+      "declared_storage": {
+        "items": [
+          "0",
+          "100",
+          "255"
+        ]
+      },
+      "parent_value_if_directly_inherited": {
+        "items": []
+      },
+      "parent_nonempty_blocked": false,
+      "native_parser_current_override_empty": false,
+      "direct_unit_class_skill_grant": false
+    },
+    {
+      "tag": "tusk_gun_nt_nt1",
+      "storage_kind": "data",
+      "field": "image",
+      "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+      "declaration_line": 2534,
+      "property_line": 2542,
+      "raw_values": [
+        "@"
+      ],
+      "parent": "tusk_gun_nt1",
+      "effective_current": {
+        "found": true,
+        "text": "b_fireball",
+        "number": 0
+      },
+      "declared_storage": {
+        "text": "b_fireball",
+        "number": 0
+      },
+      "parent_value_if_directly_inherited": {
+        "text": "zz_masupa",
+        "number": 0,
+        "found": true
+      },
+      "parent_nonempty_blocked": false,
+      "native_parser_current_override_empty": false,
+      "direct_unit_class_skill_grant": false
+    },
+    {
+      "tag": "b_skbnk_old_nt3b",
+      "storage_kind": "data",
+      "field": "resize_h_min",
+      "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+      "declaration_line": 3759,
+      "property_line": 3771,
+      "raw_values": [
+        "@"
+      ],
+      "parent": "b_skbnk_old_nt3",
+      "effective_current": {
+        "found": true,
+        "text": "48",
+        "number": 48
+      },
+      "declared_storage": {
+        "text": "48",
+        "number": 48
+      },
+      "parent_value_if_directly_inherited": {
+        "text": "48",
+        "number": 48,
+        "found": true
+      },
+      "parent_nonempty_blocked": false,
+      "native_parser_current_override_empty": false,
+      "direct_unit_class_skill_grant": false
+    },
+    {
+      "tag": "sake_rocket_nt2_right",
+      "storage_kind": "keyword",
+      "field": "next2",
+      "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "declaration_line": 10654,
+      "property_line": 10657,
+      "raw_values": [
+        "@"
+      ],
+      "parent": "sake_rocket_nt2_left",
+      "effective_current": {
+        "items": [
+          "sake_rocket_pr2",
+          "sake_rocket_panchi_right",
+          "sake_rocket_panchi_right_D",
+          "sake_rocket_fire_right",
+          "sake_rocket_bomb_right",
+          "sake_rocket_tornade_right"
+        ]
+      },
+      "declared_storage": {
+        "items": [
+          "sake_rocket_pr2",
+          "sake_rocket_panchi_right",
+          "sake_rocket_panchi_right_D",
+          "sake_rocket_fire_right",
+          "sake_rocket_bomb_right",
+          "sake_rocket_tornade_right"
+        ]
+      },
+      "parent_value_if_directly_inherited": {
+        "items": [
+          "sake_rocket_pr2",
+          "sake_rocket_panchi_left",
+          "sake_rocket_panchi_left_D",
+          "sake_rocket_bomb_left",
+          "sake_rocket_fire_left",
+          "sake_rocket_tornade_left"
+        ]
+      },
+      "parent_nonempty_blocked": false,
+      "native_parser_current_override_empty": false,
+      "direct_unit_class_skill_grant": false
+    },
+    {
+      "tag": "sake_rocket_nt2b_right",
+      "storage_kind": "keyword",
+      "field": "next2",
+      "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "declaration_line": 10838,
+      "property_line": 10842,
+      "raw_values": [
+        "@"
+      ],
+      "parent": "sake_rocket_nt2_left",
+      "effective_current": {
+        "items": [
+          "sake_rocket_pr2",
+          "sake_rocket_panchi_right2b",
+          "sake_rocket_panchi_right_D2b",
+          "sake_rocket_fire_right2b",
+          "sake_rocket_bomb_right2b",
+          "sake_rocket_tornade_right2b"
+        ]
+      },
+      "declared_storage": {
+        "items": [
+          "sake_rocket_pr2",
+          "sake_rocket_panchi_right2b",
+          "sake_rocket_panchi_right_D2b",
+          "sake_rocket_fire_right2b",
+          "sake_rocket_bomb_right2b",
+          "sake_rocket_tornade_right2b"
+        ]
+      },
+      "parent_value_if_directly_inherited": {
+        "items": [
+          "sake_rocket_pr2",
+          "sake_rocket_panchi_left",
+          "sake_rocket_panchi_left_D",
+          "sake_rocket_bomb_left",
+          "sake_rocket_fire_left",
+          "sake_rocket_tornade_left"
+        ]
+      },
+      "parent_nonempty_blocked": false,
+      "native_parser_current_override_empty": false,
+      "direct_unit_class_skill_grant": false
+    },
+    {
+      "tag": "sake_rocket_nt3b_right",
+      "storage_kind": "keyword",
+      "field": "next2",
+      "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "declaration_line": 11020,
+      "property_line": 11024,
+      "raw_values": [
+        "@"
+      ],
+      "parent": "sake_rocket_nt2_left",
+      "effective_current": {
+        "items": [
+          "sake_rocket_pr2",
+          "sake_rocket_panchi_right3b",
+          "sake_rocket_panchi_right_D3b",
+          "sake_rocket_fire_right3b",
+          "sake_rocket_bomb_right3b",
+          "sake_rocket_tornade_right3b"
+        ]
+      },
+      "declared_storage": {
+        "items": [
+          "sake_rocket_pr2",
+          "sake_rocket_panchi_right3b",
+          "sake_rocket_panchi_right_D3b",
+          "sake_rocket_fire_right3b",
+          "sake_rocket_bomb_right3b",
+          "sake_rocket_tornade_right3b"
+        ]
+      },
+      "parent_value_if_directly_inherited": {
+        "items": [
+          "sake_rocket_pr2",
+          "sake_rocket_panchi_left",
+          "sake_rocket_panchi_left_D",
+          "sake_rocket_bomb_left",
+          "sake_rocket_fire_left",
+          "sake_rocket_tornade_left"
+        ]
+      },
+      "parent_nonempty_blocked": false,
+      "native_parser_current_override_empty": false,
+      "direct_unit_class_skill_grant": false
+    },
+    {
+      "tag": "sake_rocket_nt4b_right",
+      "storage_kind": "keyword",
+      "field": "next2",
+      "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "declaration_line": 11202,
+      "property_line": 11206,
+      "raw_values": [
+        "@"
+      ],
+      "parent": "sake_rocket_nt2_left",
+      "effective_current": {
+        "items": [
+          "sake_rocket_pr2",
+          "sake_rocket_panchi_right4b",
+          "sake_rocket_panchi_right_D4b",
+          "sake_rocket_fire_right4b",
+          "sake_rocket_bomb_right4b",
+          "sake_rocket_tornade_right4b"
+        ]
+      },
+      "declared_storage": {
+        "items": [
+          "sake_rocket_pr2",
+          "sake_rocket_panchi_right4b",
+          "sake_rocket_panchi_right_D4b",
+          "sake_rocket_fire_right4b",
+          "sake_rocket_bomb_right4b",
+          "sake_rocket_tornade_right4b"
+        ]
+      },
+      "parent_value_if_directly_inherited": {
+        "items": [
+          "sake_rocket_pr2",
+          "sake_rocket_panchi_left",
+          "sake_rocket_panchi_left_D",
+          "sake_rocket_bomb_left",
+          "sake_rocket_fire_left",
+          "sake_rocket_tornade_left"
+        ]
+      },
+      "parent_nonempty_blocked": false,
+      "native_parser_current_override_empty": false,
+      "direct_unit_class_skill_grant": false
+    },
+    {
+      "tag": "sake_rocket_nt5b_right",
+      "storage_kind": "keyword",
+      "field": "next2",
+      "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "declaration_line": 11385,
+      "property_line": 11389,
+      "raw_values": [
+        "@"
+      ],
+      "parent": "sake_rocket_nt2_left",
+      "effective_current": {
+        "items": [
+          "sake_rocket_pr2",
+          "sake_rocket_panchi_right5b",
+          "sake_rocket_panchi_right_D5b",
+          "sake_rocket_fire_right5b",
+          "sake_rocket_bomb_right5b",
+          "sake_rocket_tornade_right5b"
+        ]
+      },
+      "declared_storage": {
+        "items": [
+          "sake_rocket_pr2",
+          "sake_rocket_panchi_right5b",
+          "sake_rocket_panchi_right_D5b",
+          "sake_rocket_fire_right5b",
+          "sake_rocket_bomb_right5b",
+          "sake_rocket_tornade_right5b"
+        ]
+      },
+      "parent_value_if_directly_inherited": {
+        "items": [
+          "sake_rocket_pr2",
+          "sake_rocket_panchi_left",
+          "sake_rocket_panchi_left_D",
+          "sake_rocket_bomb_left",
+          "sake_rocket_fire_left",
+          "sake_rocket_tornade_left"
+        ]
+      },
+      "parent_nonempty_blocked": false,
+      "native_parser_current_override_empty": false,
+      "direct_unit_class_skill_grant": false
+    },
+    {
+      "tag": "sp_inaristar_nt4",
+      "storage_kind": "data",
+      "field": "bright",
+      "file": "a_default/script/32_ボススキル/B_5_伏見稲荷大社.dat",
+      "declaration_line": 539,
+      "property_line": 555,
+      "raw_values": [
+        "@"
+      ],
+      "parent": "sp_inaristar_nt3",
+      "effective_current": {
+        "found": true,
+        "text": "off",
+        "number": 0
+      },
+      "declared_storage": {
+        "text": "off",
+        "number": 0
+      },
+      "parent_value_if_directly_inherited": {
+        "text": "on",
+        "number": 0,
+        "found": true
+      },
+      "parent_nonempty_blocked": false,
+      "native_parser_current_override_empty": false,
+      "direct_unit_class_skill_grant": false
+    }
+  ],
+  "important": "Current Work model says earlier property value wins in these cases; A T005 says special callbacks can have distinct key-specific behavior, original game not demonstrated",
+  "old_gameplay": 0,
+  "strict_match": 0
+}

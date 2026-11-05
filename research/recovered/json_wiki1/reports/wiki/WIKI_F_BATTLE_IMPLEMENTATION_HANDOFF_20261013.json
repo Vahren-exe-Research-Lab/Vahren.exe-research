@@ -1,0 +1,2346 @@
+{
+  "schema": "WIKI_DAT_F_BATTLE_HANDOFF_V6",
+  "target": "WRQ-20261013-B-SKILL/newF",
+  "master_readonly_snapshot": "checkpoint121/430 official IDs (read-only; may advance)",
+  "Work_readonly_checkpoint": "WORK-AWARD-FLASH-20261013-1041 + observed Work core_return result54E31C, original Golden0/new strict0",
+  "Work_prior_completed": "m_heal 551653->551924 HP writer->578EF0 refresh->551C6A EXP/D8->551C7F flash entry (Work1041)",
+  "Work_next_unfinished": "Work synthetic core 551D40->54E31C exists; Skill6F0/6F4 source producer unproven for m_heal flash5, upper 54E31C->Unit/Task return and add2 bulk remain unclosed",
+  "source_index": "WIKI_FULL_SKILL_INDEX_20261013.json.gz",
+  "skill_route_source": "WIKI_WORK_SKILL_ROUTE_MATRIX_20261013.json",
+  "witness_source": "WIKI_SKILL_WITNESS_PATHS_20261013.json",
+  "cases": [
+    {
+      "id": "WDF-01",
+      "owner": "研究B・新F",
+      "scope": "m_heal heal native return",
+      "input": {
+        "skill": {
+          "tag": "m_heal",
+          "kind": 3,
+          "parent_chain": [
+            "m_heal"
+          ],
+          "dat_file": "a_default/script/30_スキル/F13_heal_support.dat",
+          "dat_line": 54,
+          "fields": {
+            "func": {
+              "found": true,
+              "text": "heal",
+              "number": 0,
+              "source_skill": "m_heal",
+              "storage": "scalar"
+            },
+            "attr": {
+              "found": true,
+              "text": "hp",
+              "number": 0,
+              "source_skill": "m_heal",
+              "storage": "scalar"
+            },
+            "mp": {
+              "found": true,
+              "text": "80",
+              "number": 80,
+              "source_skill": "m_heal",
+              "storage": "scalar"
+            },
+            "range": {
+              "found": true,
+              "text": "500",
+              "number": 500,
+              "source_skill": "m_heal",
+              "storage": "scalar"
+            },
+            "check": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "range_min": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "gun_delay": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "str": {
+              "found": true,
+              "text": "magic * 200",
+              "number": 0,
+              "values": [
+                "magic * 200"
+              ],
+              "source_skill": "m_heal",
+              "storage": "keyword_list"
+            },
+            "add": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "add2": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "allfunc": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "add_per": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "next": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "next2": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "next3": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "just_next": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "pair_next": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            }
+          },
+          "native_saved_entry": {
+            "handler_va": "57F570",
+            "caller_va": "57E5DD",
+            "return_pc": "57E5E2",
+            "normal_ret_va": [
+              "57F961",
+              "57FC59",
+              "57F5DF"
+            ],
+            "debit_site": "57F9EE (normal support-A); support-B once later",
+            "effect_child": [
+              "54E0B0",
+              "550980",
+              "551490",
+              "551C7F",
+              "4DFBB0",
+              "41E060",
+              "4C3DC0",
+              "4BC920"
+            ],
+            "evidence": "data/T013_WORK_SKILL_HANDLERS_BOUNDARY_20261013.md",
+            "work_entry": "resume_selected_support_handler",
+            "work_session": "BattleSession._resume_resolved_support_handler"
+          },
+          "native_return_sites_bounded_only": true,
+          "work_adapter": {
+            "supported": true,
+            "type": "DatHealSkill",
+            "cost": 80,
+            "range_upper": 500,
+            "chance": 100
+          },
+          "work_function_exists": true,
+          "work_session_method_exists": true,
+          "effective_cost": 80,
+          "requires_confirmed_equipped_skill": true,
+          "actual_native_handler_return_proven": false,
+          "original_gameplay": "NOT RUN",
+          "new_strict_match": "NOT RUN",
+          "runtime_stops": [
+            "Skill+210/+214 keyed cooldown binding",
+            "Skill+88 lower distance",
+            "Unit+1E584/+1E588 support cache and A18/A1C candidate values",
+            "54E0B0->551490 real effect/resist and RNG cursor",
+            "551C7F callback, Task/visual status and handler+Unit normal return"
+          ]
+        },
+        "MP": [
+          79,
+          80
+        ],
+        "targets": [
+          "none",
+          "damaged",
+          "full"
+        ],
+        "Work_P0_priority_source": "WIKI_WORK_P0_ACTION_PACKET_20261013.json",
+        "bounded_flash_negative_evidence": "WIKI_WORK_FLASH_NEGATIVE3_SMOKE_20261013.json"
+      },
+      "source_checks": [
+        "DAT heal/hp, MP80, candidate core subset tested",
+        "Current Work core return hits 54E31C in synthetic fixture; no Unit return and no old Golden"
+      ],
+      "required_evidence": [
+        "candidate builder and 551490 effects/normal Unit return and visible HP"
+      ],
+      "status": "DESIGNED/NOT RUN",
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "Work_source_edited": false
+    },
+    {
+      "id": "WDF-02",
+      "owner": "研究B・新F",
+      "scope": "s_monaka summons Class candidates",
+      "input": {
+        "skill": {
+          "tag": "s_monaka",
+          "kind": 4,
+          "parent_chain": [
+            "s_monaka"
+          ],
+          "dat_file": "a_default/script/30_スキル/F20_summon.dat",
+          "dat_line": 1596,
+          "fields": {
+            "func": {
+              "found": true,
+              "text": "summon",
+              "number": 0,
+              "source_skill": "s_monaka",
+              "storage": "scalar"
+            },
+            "attr": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "mp": {
+              "found": true,
+              "text": "40",
+              "number": 40,
+              "source_skill": "s_monaka",
+              "storage": "scalar"
+            },
+            "range": {
+              "found": true,
+              "text": "100",
+              "number": 100,
+              "source_skill": "s_monaka",
+              "storage": "scalar"
+            },
+            "check": {
+              "found": true,
+              "text": "9999",
+              "number": 9999,
+              "source_skill": "s_monaka",
+              "storage": "scalar"
+            },
+            "range_min": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "gun_delay": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "str": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "add": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "add2": {
+              "found": true,
+              "text": "mona0071,mona0072",
+              "number": 0,
+              "values": [
+                "mona0071",
+                "mona0072"
+              ],
+              "source_skill": "s_monaka",
+              "storage": "keyword_list"
+            },
+            "allfunc": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "add_per": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "next": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "next2": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "next3": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "just_next": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "pair_next": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            }
+          },
+          "native_saved_entry": {
+            "handler_va": "57F190",
+            "caller_va": "57E5E7",
+            "return_pc": "57E5EC",
+            "normal_ret_va": [
+              "57F1B4",
+              "57F245",
+              "57F363",
+              "57F53E",
+              "57F55E"
+            ],
+            "debit_site": "57F366 (conditional)",
+            "effect_child": [
+              "54E7B0",
+              "550580",
+              "577260",
+              "56F880",
+              "54F458"
+            ],
+            "evidence": "data/T012_SUMMON_CORE_54E7B0_CONTRACT_20261013.md",
+            "work_entry": null,
+            "work_session": null
+          },
+          "native_return_sites_bounded_only": true,
+          "work_adapter": {
+            "supported": false,
+            "type": null,
+            "cost": null,
+            "range_upper": null,
+            "chance": null
+          },
+          "work_function_exists": false,
+          "work_session_method_exists": false,
+          "effective_cost": null,
+          "requires_confirmed_equipped_skill": true,
+          "actual_native_handler_return_proven": false,
+          "original_gameplay": "NOT RUN",
+          "new_strict_match": "NOT RUN",
+          "runtime_stops": [
+            "Work dedicated summon bind/admission not yet found",
+            "54E7B0 candidate direct/vector, Skill+270 RNG conditional",
+            "550580 effect record and 577260 Unit tree lookup",
+            "56F880 Unit ctor+owner vector; Task/spatial/visual + Unit/AI return"
+          ]
+        },
+        "classes": {
+          "mona0071": {
+            "source_kind": "class",
+            "work_unit_def_is_unit": false,
+            "work_class_tag": "mona0071",
+            "race": "r2_hu",
+            "parent": "base",
+            "member_count": 7,
+            "member_values": [
+              "mona0071",
+              "mona0071",
+              "mona0071",
+              "mona0071",
+              "mona0071",
+              "mona0071",
+              "mona0071"
+            ],
+            "inherited_hp": "5500",
+            "inherited_movetype": "snowh"
+          },
+          "mona0072": {
+            "source_kind": "class",
+            "work_unit_def_is_unit": false,
+            "work_class_tag": "mona0072",
+            "race": "r2_hu",
+            "parent": "mona0071",
+            "member_count": 7,
+            "member_values": [
+              "mona0072",
+              "mona0072",
+              "mona0072",
+              "mona0072",
+              "mona0072",
+              "mona0072",
+              "mona0072"
+            ],
+            "inherited_hp": "5500",
+            "inherited_movetype": "snowh"
+          }
+        },
+        "owner_classes": [
+          "a219",
+          "a2192",
+          "a2193"
+        ],
+        "MP": [
+          39,
+          40
+        ],
+        "distance": [
+          99,
+          100,
+          101,
+          9999
+        ]
+      },
+      "source_checks": [
+        "check9999 and range100; each class member*7"
+      ],
+      "required_evidence": [
+        "54E7B0 vector choose/Skill+270, Unit56F880 actual created count, Task/renderer and return"
+      ],
+      "status": "DESIGNED/NOT RUN",
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "Work_source_edited": false
+    },
+    {
+      "id": "WDF-03",
+      "owner": "研究B・新F",
+      "scope": "b_all negative cost",
+      "input": {
+        "skill": {
+          "tag": "b_all",
+          "kind": 3,
+          "parent_chain": [
+            "b_all"
+          ],
+          "dat_file": "a_default/script/30_スキル/F13_heal_support.dat",
+          "dat_line": 124,
+          "fields": {
+            "func": {
+              "found": true,
+              "text": "heal",
+              "number": 0,
+              "source_skill": "b_all",
+              "storage": "scalar"
+            },
+            "attr": {
+              "found": true,
+              "text": "all",
+              "number": 0,
+              "source_skill": "b_all",
+              "storage": "scalar"
+            },
+            "mp": {
+              "found": true,
+              "text": "-1",
+              "number": -1,
+              "source_skill": "b_all",
+              "storage": "scalar"
+            },
+            "range": {
+              "found": true,
+              "text": "400",
+              "number": 400,
+              "source_skill": "b_all",
+              "storage": "scalar"
+            },
+            "check": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "range_min": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "gun_delay": {
+              "found": true,
+              "text": "b_all*3",
+              "number": 0,
+              "values": [
+                "b_all*3"
+              ],
+              "source_skill": "b_all",
+              "storage": "keyword_list"
+            },
+            "str": {
+              "found": true,
+              "text": "magic_dext * 50",
+              "number": 0,
+              "values": [
+                "magic_dext * 50"
+              ],
+              "source_skill": "b_all",
+              "storage": "keyword_list"
+            },
+            "add": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "add2": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "allfunc": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "add_per": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "next": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "next2": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "next3": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "just_next": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "pair_next": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            }
+          },
+          "native_saved_entry": {
+            "handler_va": "57F570",
+            "caller_va": "57E5DD",
+            "return_pc": "57E5E2",
+            "normal_ret_va": [
+              "57F961",
+              "57FC59",
+              "57F5DF"
+            ],
+            "debit_site": "57F9EE (normal support-A); support-B once later",
+            "effect_child": [
+              "54E0B0",
+              "550980",
+              "551490",
+              "551C7F",
+              "4DFBB0",
+              "41E060",
+              "4C3DC0",
+              "4BC920"
+            ],
+            "evidence": "data/T013_WORK_SKILL_HANDLERS_BOUNDARY_20261013.md",
+            "work_entry": "resume_selected_support_handler",
+            "work_session": "BattleSession._resume_resolved_support_handler"
+          },
+          "native_return_sites_bounded_only": true,
+          "work_adapter": {
+            "supported": true,
+            "type": "DatHealSkill",
+            "cost": -1,
+            "range_upper": 400,
+            "chance": 100
+          },
+          "work_function_exists": true,
+          "work_session_method_exists": true,
+          "effective_cost": -1,
+          "requires_confirmed_equipped_skill": true,
+          "actual_native_handler_return_proven": false,
+          "original_gameplay": "NOT RUN",
+          "new_strict_match": "NOT RUN",
+          "runtime_stops": [
+            "Work negative MP rejected at _caster_cost before effect",
+            "Skill+210/+214 keyed cooldown binding",
+            "Skill+88 lower distance",
+            "Unit+1E584/+1E588 support cache and A18/A1C candidate values",
+            "54E0B0->551490 real effect/resist and RNG cursor",
+            "551C7F callback, Task/visual status and handler+Unit normal return",
+            "gun_delay original keyword list -> Skill+210/+214 record and action decrement not fully bridged"
+          ]
+        },
+        "MP": [
+          0,
+          1,
+          100
+        ]
+      },
+      "source_checks": [
+        "DAT mp=-1, Work current support path rejects negative"
+      ],
+      "required_evidence": [
+        "signed MP debit on legal native entry, post debit cap and Unit return"
+      ],
+      "status": "DESIGNED/NOT RUN",
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "Work_source_edited": false
+    },
+    {
+      "id": "WDF-04",
+      "owner": "研究B・新F",
+      "scope": "b_iwana magsuck",
+      "input": {
+        "skill": {
+          "tag": "b_iwana",
+          "kind": 2,
+          "parent_chain": [
+            "b_iwana",
+            "sk_ms"
+          ],
+          "dat_file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+          "dat_line": 6118,
+          "fields": {
+            "func": {
+              "found": true,
+              "text": "missile",
+              "number": 0,
+              "source_skill": "sk_ms",
+              "storage": "scalar"
+            },
+            "attr": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "mp": {
+              "found": true,
+              "text": "60",
+              "number": 60,
+              "source_skill": "b_iwana",
+              "storage": "scalar"
+            },
+            "range": {
+              "found": true,
+              "text": "450",
+              "number": 450,
+              "source_skill": "b_iwana",
+              "storage": "scalar"
+            },
+            "check": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "range_min": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "gun_delay": {
+              "found": true,
+              "text": "b_iwana*2",
+              "number": 0,
+              "values": [
+                "b_iwana*2"
+              ],
+              "source_skill": "b_iwana",
+              "storage": "keyword_list"
+            },
+            "str": {
+              "found": true,
+              "text": "magic*10",
+              "number": 0,
+              "values": [
+                "magic*10"
+              ],
+              "source_skill": "b_iwana",
+              "storage": "keyword_list"
+            },
+            "add": {
+              "found": true,
+              "text": "magsuck",
+              "number": 0,
+              "source_skill": "b_iwana",
+              "storage": "scalar"
+            },
+            "add2": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "allfunc": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "add_per": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "next": {
+              "found": true,
+              "text": "b_iwana_nt1",
+              "number": 0,
+              "source_skill": "b_iwana",
+              "storage": "scalar"
+            },
+            "next2": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "next3": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "just_next": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "pair_next": {
+              "found": true,
+              "text": "ef_magic",
+              "number": 0,
+              "source_skill": "b_iwana",
+              "storage": "scalar"
+            }
+          },
+          "native_saved_entry": {
+            "handler_va": "57EB40",
+            "caller_va": "57E5D3",
+            "return_pc": "57E5D8",
+            "normal_ret_va": [
+              "57EB76",
+              "57ED99",
+              "57EEC3",
+              "57F11E",
+              "57F148",
+              "57F179",
+              "57F187"
+            ],
+            "debit_site": "57EED4",
+            "effect_child": [
+              "54F720",
+              "57BE30",
+              "580280",
+              "4E7ED0"
+            ],
+            "evidence": "data/T013_WORK_SKILL_HANDLERS_BOUNDARY_20261013.md",
+            "work_entry": "resume_selected_missile_handler",
+            "work_session": "BattleSession._resume_resolved_missile_handler"
+          },
+          "native_return_sites_bounded_only": true,
+          "work_adapter": {
+            "supported": true,
+            "type": "DatDamageSkill",
+            "cost": 60,
+            "range_upper": 450,
+            "chance": 100
+          },
+          "work_function_exists": true,
+          "work_session_method_exists": true,
+          "effective_cost": 60,
+          "requires_confirmed_equipped_skill": true,
+          "actual_native_handler_return_proven": false,
+          "original_gameplay": "NOT RUN",
+          "new_strict_match": "NOT RUN",
+          "runtime_stops": [
+            "Skill+278 cost and +290/+294 check/range from actual loader",
+            "4E7ED0 spatial/collision result and latch-dependent debit",
+            "54F720/580280 projectile child effects, linked next/just_next",
+            "57BE30 post and Unit/AI outer return; RNG total",
+            "gun_delay original keyword list -> Skill+210/+214 record and action decrement not fully bridged"
+          ]
+        },
+        "five_local_cases": [
+          {
+            "case": "base",
+            "source_skill": "b_iwana",
+            "label_from_dat": "magsuck",
+            "caster_mp_before": 30,
+            "target_mp_before": 40,
+            "effect_amount": 10,
+            "same_unit": false,
+            "caster_mp_after": 40,
+            "target_mp_after": 30,
+            "downstream_completed": false,
+            "expected_caster": 40,
+            "expected_target": 30,
+            "pass": true
+          },
+          {
+            "case": "no_local_max_clamp",
+            "source_skill": "b_iwana",
+            "label_from_dat": "magsuck",
+            "caster_mp_before": 100,
+            "target_mp_before": 10,
+            "effect_amount": 20,
+            "same_unit": false,
+            "caster_mp_after": 120,
+            "target_mp_after": -10,
+            "downstream_completed": false,
+            "expected_caster": 120,
+            "expected_target": -10,
+            "pass": true
+          },
+          {
+            "case": "negative_amount",
+            "source_skill": "b_iwana",
+            "label_from_dat": "magsuck",
+            "caster_mp_before": 100,
+            "target_mp_before": 10,
+            "effect_amount": -5,
+            "same_unit": false,
+            "caster_mp_after": 95,
+            "target_mp_after": 15,
+            "downstream_completed": false,
+            "expected_caster": 95,
+            "expected_target": 15,
+            "pass": true
+          },
+          {
+            "case": "same_unit_alias",
+            "source_skill": "b_iwana",
+            "label_from_dat": "magsuck",
+            "caster_mp_before": 100,
+            "target_mp_before": 100,
+            "effect_amount": 20,
+            "same_unit": true,
+            "caster_mp_after": 100,
+            "target_mp_after": 100,
+            "downstream_completed": false,
+            "expected_caster": 100,
+            "expected_target": 100,
+            "pass": true
+          },
+          {
+            "case": "signed_wrap",
+            "source_skill": "b_iwana",
+            "label_from_dat": "magsuck",
+            "caster_mp_before": 2147483647,
+            "target_mp_before": 0,
+            "effect_amount": 1,
+            "same_unit": false,
+            "caster_mp_after": -2147483648,
+            "target_mp_after": -1,
+            "downstream_completed": false,
+            "expected_caster": -2147483648,
+            "expected_target": -1,
+            "pass": true
+          }
+        ]
+      },
+      "source_checks": [
+        "Work local 578D6F target- and caster+ MP, synthetic5/5"
+      ],
+      "required_evidence": [
+        "actual add dispatch, hit amount, MP60 debit, later status/gauge and normal return"
+      ],
+      "status": "DESIGNED/NOT RUN",
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "Work_source_edited": false
+    },
+    {
+      "id": "WDF-05",
+      "owner": "研究B・新F",
+      "scope": "delay vs gun_delay",
+      "input": {
+        "s_monaka_delay": "2",
+        "cook_heal_gun_delay": "b_heal*3",
+        "musen_move_gun_delay": "musen*2",
+        "help_delay_counts": {
+          "inherited": 35,
+          "direct": 131,
+          "missing": 14
+        }
+      },
+      "source_checks": [
+        "180 help texts, 166 direct/inherited delay, 14 missing"
+      ],
+      "required_evidence": [
+        "native raw keys to Skill+200/208/20C and +210/214, legal action cycles"
+      ],
+      "status": "DESIGNED/NOT RUN",
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "Work_source_edited": false
+    },
+    {
+      "id": "WDF-06",
+      "owner": "研究B・新F",
+      "scope": "Shakespeare missing parent",
+      "input": {
+        "orphan": {
+          "tag": "Shakespeare_fire_wave_mag",
+          "missing_parent": "Shakespeare_fire_at",
+          "witness": {
+            "root_grants": [
+              {
+                "owner": "unit:plazchen",
+                "source": "a_default/script/10_ユニット/120_スペシャル人材.dat",
+                "line": 688,
+                "field": "skill"
+              },
+              {
+                "owner": "unit:plazchen_dr",
+                "source": "a_default/script/3000_淫ドリームマッチ/DB264_Plazchen.dat",
+                "line": 1,
+                "field": "skill"
+              },
+              {
+                "owner": "unit:plazchen_264",
+                "source": "a_default/script/4000_AoW/unit_aow_264.dat",
+                "line": 378,
+                "field": "skill"
+              },
+              {
+                "owner": "unit:g_plazchen",
+                "source": "a_default/script/40_内政/unit_sakegyaku.dat",
+                "line": 49,
+                "field": "skill"
+              }
+            ],
+            "steps": [
+              {
+                "skill": "p_cannon",
+                "declaration": {
+                  "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+                  "line": 4249,
+                  "parent": "sk_ms"
+                },
+                "effective_func": "missile",
+                "via": "DIRECT_UNIT_CLASS_FIELD"
+              },
+              {
+                "skill": "Shakespeare_fire",
+                "declaration": {
+                  "file": "a_default/script/30_スキル/F51_榴弾・延焼_プレッツヒェン.dat",
+                  "line": 3,
+                  "parent": null
+                },
+                "effective_func": "UNSET",
+                "via": "next3"
+              },
+              {
+                "skill": "Shakespeare_fire_cycle",
+                "declaration": {
+                  "file": "a_default/script/30_スキル/F51_榴弾・延焼_プレッツヒェン.dat",
+                  "line": 47,
+                  "parent": null
+                },
+                "effective_func": "UNSET",
+                "via": "next3"
+              },
+              {
+                "skill": "Shakespeare_fire_cycle_eff",
+                "declaration": {
+                  "file": "a_default/script/30_スキル/F51_榴弾・延焼_プレッツヒェン.dat",
+                  "line": 65,
+                  "parent": null
+                },
+                "effective_func": "UNSET",
+                "via": "next3"
+              },
+              {
+                "skill": "Shakespeare_fire_wave_mag",
+                "declaration": {
+                  "file": "a_default/script/30_スキル/F51_榴弾・延焼_プレッツヒェン.dat",
+                  "line": 482,
+                  "parent": "Shakespeare_fire_at"
+                },
+                "effective_func": "UNSET",
+                "via": "next3"
+              }
+            ]
+          },
+          "inbound_links": 7
+        }
+      },
+      "source_checks": [
+        "Unit plazchen can reference this node through saved static Skill links"
+      ],
+      "required_evidence": [
+        "native parent fallback, Skill func enum, actual effect and return"
+      ],
+      "status": "DESIGNED/NOT RUN",
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "Work_source_edited": false
+    },
+    {
+      "id": "WDF-07",
+      "owner": "研究B・新F",
+      "scope": "giant_swing missing parents",
+      "input": {
+        "orphan": {
+          "tag": "giant_swing_CountAfix",
+          "missing_parent": "giant_swing_CountBXX_base",
+          "witness": {
+            "root_grants": [
+              {
+                "owner": "unit:nagatanien",
+                "source": "a_default/script/10_ユニット/110_イベント人材.dat",
+                "line": 2127,
+                "field": "skill2"
+              }
+            ],
+            "steps": [
+              {
+                "skill": "giant_swing",
+                "declaration": {
+                  "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+                  "line": 46,
+                  "parent": "giant_swing_base"
+                },
+                "effective_func": "missile",
+                "via": "DIRECT_UNIT_CLASS_FIELD"
+              },
+              {
+                "skill": "giant_swing_set_0",
+                "declaration": {
+                  "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+                  "line": 81,
+                  "parent": "giant_swing_base"
+                },
+                "effective_func": "missile",
+                "via": "next3"
+              },
+              {
+                "skill": "giant_swing_set_3_0",
+                "declaration": {
+                  "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+                  "line": 189,
+                  "parent": "giant_swing_base"
+                },
+                "effective_func": "missile",
+                "via": "next3"
+              },
+              {
+                "skill": "giant_swing_set_3_1",
+                "declaration": {
+                  "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+                  "line": 198,
+                  "parent": "giant_swing_base"
+                },
+                "effective_func": "missile",
+                "via": "next3"
+              },
+              {
+                "skill": "giant_swing_Knock_3",
+                "declaration": {
+                  "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+                  "line": 374,
+                  "parent": "giant_swing_base"
+                },
+                "effective_func": "missile",
+                "via": "next3"
+              },
+              {
+                "skill": "giant_swing_CountA00",
+                "declaration": {
+                  "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+                  "line": 5,
+                  "parent": "giant_swing_CountAXX_base"
+                },
+                "effective_func": "UNSET",
+                "via": "next"
+              },
+              {
+                "skill": "giant_swing_CountB00",
+                "declaration": {
+                  "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+                  "line": 10,
+                  "parent": "giant_swing_CountBXX_base"
+                },
+                "effective_func": "UNSET",
+                "via": "next3"
+              },
+              {
+                "skill": "giant_swing_CountA01",
+                "declaration": {
+                  "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+                  "line": 15,
+                  "parent": "giant_swing_CountAXX_base"
+                },
+                "effective_func": "UNSET",
+                "via": "next3"
+              },
+              {
+                "skill": "giant_swing_CountB01",
+                "declaration": {
+                  "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+                  "line": 20,
+                  "parent": "giant_swing_CountBXX_base"
+                },
+                "effective_func": "UNSET",
+                "via": "next3"
+              },
+              {
+                "skill": "giant_swing_CountA02",
+                "declaration": {
+                  "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+                  "line": 25,
+                  "parent": "giant_swing_CountAXX_base"
+                },
+                "effective_func": "UNSET",
+                "via": "next3"
+              },
+              {
+                "skill": "giant_swing_CountB02",
+                "declaration": {
+                  "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+                  "line": 30,
+                  "parent": "giant_swing_CountBXX_base"
+                },
+                "effective_func": "UNSET",
+                "via": "next3"
+              },
+              {
+                "skill": "giant_swing_CountAfix",
+                "declaration": {
+                  "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+                  "line": 50,
+                  "parent": "giant_swing_CountBXX_base"
+                },
+                "effective_func": "UNSET",
+                "via": "next3"
+              }
+            ]
+          },
+          "inbound_links": 2
+        }
+      },
+      "source_checks": [
+        "Unit nagatanien root and multi-edge CountAXX/CountBXX chain"
+      ],
+      "required_evidence": [
+        "native Skill inheritance and next dispatch, visible action/HP/MP"
+      ],
+      "status": "DESIGNED/NOT RUN",
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "Work_source_edited": false
+    },
+    {
+      "id": "WDF-08",
+      "owner": "研究B・新F",
+      "scope": "b_whip_js undefined next target",
+      "input": {
+        "missing_link": {
+          "target": "b_whip_js",
+          "direct_occurrences": 6,
+          "source": "b_hsnsi",
+          "missing_link_field": "just_next",
+          "witness": {
+            "root_grants": [
+              {
+                "owner": "class:hsnsi4",
+                "source": "a_default/script/20_クラス/B_25_ジトメ秘密教団.dat",
+                "line": 165,
+                "field": "skill"
+              },
+              {
+                "owner": "class:hsnsi_r",
+                "source": "a_default/script/5000_ランダムシナリオ/RB_ボスクラス.dat",
+                "line": 1153,
+                "field": "skill"
+              },
+              {
+                "owner": "class:hsnsi_r2",
+                "source": "a_default/script/5000_ランダムシナリオ/RB_ボスクラス.dat",
+                "line": 1173,
+                "field": "skill"
+              },
+              {
+                "owner": "class:hsnsi_r3",
+                "source": "a_default/script/5000_ランダムシナリオ/RB_ボスクラス.dat",
+                "line": 1188,
+                "field": "skill"
+              }
+            ],
+            "steps": [
+              {
+                "skill": "b_hsnsi",
+                "declaration": {
+                  "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+                  "line": 3502,
+                  "parent": "b_whip"
+                },
+                "effective_func": "missile",
+                "via": "DIRECT_UNIT_CLASS_FIELD"
+              }
+            ]
+          }
+        }
+      },
+      "source_checks": [
+        "Class hsnsi4 link path, missing Skill declaration"
+      ],
+      "required_evidence": [
+        "next/just_next missing target behavior on actual original"
+      ],
+      "status": "DESIGNED/NOT RUN",
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "Work_source_edited": false
+    },
+    {
+      "id": "WDF-09",
+      "owner": "研究B・新F",
+      "scope": "eff_jinzaisp undefined next3",
+      "input": {
+        "missing_link": {
+          "target": "eff_jinzaisp",
+          "direct_occurrences": 6,
+          "source": "bsp_masupa5_pair",
+          "missing_link_field": "next3",
+          "witness": {
+            "root_grants": [
+              {
+                "owner": "unit:bluebiim",
+                "source": "a_default/script/10_ユニット/120_スペシャル人材.dat",
+                "line": 210,
+                "field": "skill2"
+              },
+              {
+                "owner": "unit:ginryu23",
+                "source": "a_default/script/10_ユニット/120_スペシャル人材.dat",
+                "line": 410,
+                "field": "skill2"
+              },
+              {
+                "owner": "unit:tanaka",
+                "source": "a_default/script/10_ユニット/23_リュージ騎士団.dat",
+                "line": 90,
+                "field": "skill2"
+              },
+              {
+                "owner": "unit:kakuryo1",
+                "source": "a_default/script/10_ユニット/23_リュージ騎士団.dat",
+                "line": 180,
+                "field": "skill2"
+              },
+              {
+                "owner": "unit:b_tanaka",
+                "source": "a_default/script/10_ユニット/B_2323_リュージ騎士団.dat",
+                "line": 1,
+                "field": "skill2"
+              },
+              {
+                "owner": "unit:b_kakuryo1",
+                "source": "a_default/script/10_ユニット/B_2323_リュージ騎士団.dat",
+                "line": 94,
+                "field": "skill2"
+              },
+              {
+                "owner": "class:a_bwd_23",
+                "source": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+                "line": 1648,
+                "field": "skill"
+              },
+              {
+                "owner": "class:a_bwd",
+                "source": "a_default/script/32_ボススキル/B_2323_リュージ騎士団.dat",
+                "line": 390,
+                "field": "skill"
+              }
+            ],
+            "steps": [
+              {
+                "skill": "bsp_masupa5",
+                "declaration": {
+                  "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+                  "line": 1204,
+                  "parent": null
+                },
+                "effective_func": "missile",
+                "via": "DIRECT_UNIT_CLASS_FIELD"
+              },
+              {
+                "skill": "bsp_masupa5_pair",
+                "declaration": {
+                  "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+                  "line": 1623,
+                  "parent": null
+                },
+                "effective_func": "UNSET",
+                "via": "pair_next"
+              }
+            ]
+          }
+        }
+      },
+      "source_checks": [
+        "Unit bluebiim link path, missing Skill declaration"
+      ],
+      "required_evidence": [
+        "next3 missing target and effect/RNG/normal return"
+      ],
+      "status": "DESIGNED/NOT RUN",
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "Work_source_edited": false
+    },
+    {
+      "id": "WDF-10",
+      "owner": "研究B・新F",
+      "scope": "missing direct equipment skill tags",
+      "input": {
+        "count": 44,
+        "distinct": 34,
+        "by_field": {
+          "skill2": 21,
+          "leader_skill": 1,
+          "skill": 22
+        },
+        "evidence_file": "WIKI_UNRESOLVED_EQUIPMENT_REFS_20261013.json"
+      },
+      "source_checks": [
+        "44 references to 34 unregistered Skill/Skillset names"
+      ],
+      "required_evidence": [
+        "native loader skip/fallback/exception; never auto alias"
+      ],
+      "status": "DESIGNED/NOT RUN",
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "Work_source_edited": false
+    },
+    {
+      "id": "WDF-11",
+      "owner": "研究B・新F",
+      "scope": "spinfiremax chained projectile",
+      "input": {
+        "skill": {
+          "tag": "spinfiremax",
+          "kind": 2,
+          "parent_chain": [
+            "spinfiremax",
+            "sk_ms"
+          ],
+          "dat_file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+          "dat_line": 9318,
+          "fields": {
+            "func": {
+              "found": true,
+              "text": "missile",
+              "number": 0,
+              "source_skill": "sk_ms",
+              "storage": "scalar"
+            },
+            "attr": {
+              "found": true,
+              "text": "cn",
+              "number": 0,
+              "source_skill": "spinfiremax",
+              "storage": "scalar"
+            },
+            "mp": {
+              "found": true,
+              "text": "80",
+              "number": 80,
+              "source_skill": "spinfiremax",
+              "storage": "scalar"
+            },
+            "range": {
+              "found": true,
+              "text": "600",
+              "number": 600,
+              "source_skill": "spinfiremax",
+              "storage": "scalar"
+            },
+            "check": {
+              "found": true,
+              "text": "600",
+              "number": 600,
+              "source_skill": "spinfiremax",
+              "storage": "scalar"
+            },
+            "range_min": {
+              "found": true,
+              "text": "150",
+              "number": 150,
+              "source_skill": "spinfiremax",
+              "storage": "scalar"
+            },
+            "gun_delay": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "str": {
+              "found": true,
+              "text": "attack * 0",
+              "number": 0,
+              "values": [
+                "attack * 0"
+              ],
+              "source_skill": "spinfiremax",
+              "storage": "keyword_list"
+            },
+            "add": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "add2": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "allfunc": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "add_per": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "next": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "next2": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "next3": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "just_next": {
+              "found": true,
+              "text": "spinfiremax_nt1,spinfiremax_nt2,spinfiremax_nt3",
+              "number": 0,
+              "values": [
+                "spinfiremax_nt1",
+                "spinfiremax_nt2",
+                "spinfiremax_nt3"
+              ],
+              "source_skill": "spinfiremax",
+              "storage": "keyword_list"
+            },
+            "pair_next": {
+              "found": true,
+              "text": "b_cannon_pr0",
+              "number": 0,
+              "source_skill": "spinfiremax",
+              "storage": "scalar"
+            }
+          },
+          "native_saved_entry": {
+            "handler_va": "57EB40",
+            "caller_va": "57E5D3",
+            "return_pc": "57E5D8",
+            "normal_ret_va": [
+              "57EB76",
+              "57ED99",
+              "57EEC3",
+              "57F11E",
+              "57F148",
+              "57F179",
+              "57F187"
+            ],
+            "debit_site": "57EED4",
+            "effect_child": [
+              "54F720",
+              "57BE30",
+              "580280",
+              "4E7ED0"
+            ],
+            "evidence": "data/T013_WORK_SKILL_HANDLERS_BOUNDARY_20261013.md",
+            "work_entry": "resume_selected_missile_handler",
+            "work_session": "BattleSession._resume_resolved_missile_handler"
+          },
+          "native_return_sites_bounded_only": true,
+          "work_adapter": {
+            "supported": true,
+            "type": "DatDamageSkill",
+            "cost": 80,
+            "range_upper": 600,
+            "chance": 100
+          },
+          "work_function_exists": true,
+          "work_session_method_exists": true,
+          "effective_cost": 80,
+          "requires_confirmed_equipped_skill": true,
+          "actual_native_handler_return_proven": false,
+          "original_gameplay": "NOT RUN",
+          "new_strict_match": "NOT RUN",
+          "runtime_stops": [
+            "Skill+278 cost and +290/+294 check/range from actual loader",
+            "4E7ED0 spatial/collision result and latch-dependent debit",
+            "54F720/580280 projectile child effects, linked next/just_next",
+            "57BE30 post and Unit/AI outer return; RNG total"
+          ]
+        },
+        "MP": [
+          79,
+          80
+        ],
+        "distance": [
+          149,
+          150,
+          600,
+          601
+        ]
+      },
+      "source_checks": [
+        "sk_ms missile and just_next3, pair_next"
+      ],
+      "required_evidence": [
+        "actual geometry, effect child, MP debit latch and impact/Unit return"
+      ],
+      "status": "DESIGNED/NOT RUN",
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "Work_source_edited": false
+    },
+    {
+      "id": "WDF-12",
+      "owner": "研究B・新F",
+      "scope": "seiretsu move heal nonHP",
+      "input": {
+        "skill": {
+          "tag": "seiretsu",
+          "kind": 3,
+          "parent_chain": [
+            "seiretsu"
+          ],
+          "dat_file": "a_default/script/30_スキル/F13_heal_support.dat",
+          "dat_line": 5,
+          "fields": {
+            "func": {
+              "found": true,
+              "text": "heal",
+              "number": 0,
+              "source_skill": "seiretsu",
+              "storage": "scalar"
+            },
+            "attr": {
+              "found": true,
+              "text": "move",
+              "number": 0,
+              "source_skill": "seiretsu",
+              "storage": "scalar"
+            },
+            "mp": {
+              "found": true,
+              "text": "0",
+              "number": 0,
+              "source_skill": "seiretsu",
+              "storage": "scalar"
+            },
+            "range": {
+              "found": true,
+              "text": "0",
+              "number": 0,
+              "source_skill": "seiretsu",
+              "storage": "scalar"
+            },
+            "check": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "range_min": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "gun_delay": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "str": {
+              "found": true,
+              "text": "fix * 20",
+              "number": 0,
+              "values": [
+                "fix * 20"
+              ],
+              "source_skill": "seiretsu",
+              "storage": "keyword_list"
+            },
+            "add": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "add2": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "allfunc": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "add_per": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "next": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "next2": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "next3": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "just_next": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            },
+            "pair_next": {
+              "found": false,
+              "text": "",
+              "number": 0,
+              "source_skill": null,
+              "storage": "absent"
+            }
+          },
+          "native_saved_entry": {
+            "handler_va": "57F570",
+            "caller_va": "57E5DD",
+            "return_pc": "57E5E2",
+            "normal_ret_va": [
+              "57F961",
+              "57FC59",
+              "57F5DF"
+            ],
+            "debit_site": "57F9EE (normal support-A); support-B once later",
+            "effect_child": [
+              "54E0B0",
+              "550980",
+              "551490",
+              "551C7F",
+              "4DFBB0",
+              "41E060",
+              "4C3DC0",
+              "4BC920"
+            ],
+            "evidence": "data/T013_WORK_SKILL_HANDLERS_BOUNDARY_20261013.md",
+            "work_entry": "resume_selected_support_handler",
+            "work_session": "BattleSession._resume_resolved_support_handler"
+          },
+          "native_return_sites_bounded_only": true,
+          "work_adapter": {
+            "supported": true,
+            "type": "DatHealSkill",
+            "cost": 0,
+            "range_upper": 0,
+            "chance": 100
+          },
+          "work_function_exists": true,
+          "work_session_method_exists": true,
+          "effective_cost": 0,
+          "requires_confirmed_equipped_skill": true,
+          "actual_native_handler_return_proven": false,
+          "original_gameplay": "NOT RUN",
+          "new_strict_match": "NOT RUN",
+          "runtime_stops": [
+            "Skill+210/+214 keyed cooldown binding",
+            "Skill+88 lower distance",
+            "Unit+1E584/+1E588 support cache and A18/A1C candidate values",
+            "54E0B0->551490 real effect/resist and RNG cursor",
+            "551C7F callback, Task/visual status and handler+Unit normal return"
+          ]
+        },
+        "self_move": [
+          "reduced",
+          "at cap"
+        ]
+      },
+      "source_checks": [
+        "func heal/attr move/fix*20/MP0"
+      ],
+      "required_evidence": [
+        "551C7F stat callback and visible movement changes; blocked callee remains VERIFY"
+      ],
+      "status": "DESIGNED/NOT RUN",
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "Work_source_edited": false
+    },
+    {
+      "id": "WDF-13",
+      "owner": "研究B・新F",
+      "scope": "missile parent without str -> child damage/effect chain",
+      "input": {
+        "corpus_checked": 9692,
+        "typed_adapter": {
+          "heal": {
+            "total": 320,
+            "accepted": 319,
+            "rejected": 1,
+            "rejected_pct": 0.312
+          },
+          "missile": {
+            "total": 9254,
+            "accepted": 2623,
+            "rejected": 6631,
+            "rejected_pct": 71.656
+          },
+          "sword": {
+            "total": 118,
+            "accepted": 118,
+            "rejected": 0,
+            "rejected_pct": 0.0
+          }
+        },
+        "root_children_categories": {
+          "has_typed_damage_child": 388,
+          "only_untyped_or_unknown_children": 122,
+          "non_damage_effect_descendants": 790,
+          "no_direct_next_field": 125
+        },
+        "examples": [
+          "3bantya_gun",
+          "110jaku_gun",
+          "Flying_Barcelona"
+        ],
+        "test_fixture": "WIKI_MISSILE_CHAIN_FIXTURE4_20261013.json"
+      },
+      "source_checks": [
+        "Parent missile without str may spawn typed damaging child; 388 rooted candidates",
+        "Full missile typed-adapter success2623/9254 is NOT end-to-end game success"
+      ],
+      "required_evidence": [
+        "Current selected parent must reach linked child; status/visual and projectile terminal consumers",
+        "Correct effect/RNG ordering, MP debit only once, parent and child normal return"
+      ],
+      "status": "DESIGNED/NOT RUN",
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "Work_source_edited": false
+    },
+    {
+      "id": "WDF-14",
+      "owner": "研究D・新F",
+      "scope": "Wiki/DAT 33 movetypes, missing city + 16 percent differences",
+      "input": {
+        "city_units": 539,
+        "city_classes": 9,
+        "source_types": 33,
+        "wiki_types": 29,
+        "static_mismatch_cells": [
+          {
+            "movetype": "snow",
+            "name": "雪原",
+            "unit_count_static": 0,
+            "class_count_static": 0,
+            "terrain": "沼地",
+            "source_key": "mersh",
+            "wiki_percent": 20,
+            "dat_explicit_coefficient": 3,
+            "dat_imputed_coefficient_if_absent": 3,
+            "dat_nominal_percent_HYPOTHESIS": -40,
+            "status": "MISMATCH",
+            "wiki_line": 21
+          },
+          {
+            "movetype": "wheel",
+            "name": "装輪",
+            "unit_count_static": 77,
+            "class_count_static": 117,
+            "terrain": "雪原",
+            "source_key": "snow",
+            "wiki_percent": 20,
+            "dat_explicit_coefficient": 7,
+            "dat_imputed_coefficient_if_absent": 7,
+            "dat_nominal_percent_HYPOTHESIS": 40,
+            "status": "MISMATCH",
+            "wiki_line": 25
+          },
+          {
+            "movetype": "water_wheel",
+            "name": "水陸両用",
+            "unit_count_static": 0,
+            "class_count_static": 4,
+            "terrain": "海上",
+            "source_key": "sea",
+            "wiki_percent": 60,
+            "dat_explicit_coefficient": 7,
+            "dat_imputed_coefficient_if_absent": 7,
+            "dat_nominal_percent_HYPOTHESIS": 40,
+            "status": "MISMATCH",
+            "wiki_line": 26
+          },
+          {
+            "movetype": "tank",
+            "name": "戦車",
+            "unit_count_static": 6,
+            "class_count_static": 26,
+            "terrain": "荒地",
+            "source_key": "mud",
+            "wiki_percent": 80,
+            "dat_explicit_coefficient": 8,
+            "dat_imputed_coefficient_if_absent": 8,
+            "dat_nominal_percent_HYPOTHESIS": 60,
+            "status": "MISMATCH",
+            "wiki_line": 35
+          },
+          {
+            "movetype": "tank",
+            "name": "戦車",
+            "unit_count_static": 6,
+            "class_count_static": 26,
+            "terrain": "海上",
+            "source_key": "sea",
+            "wiki_percent": -90,
+            "dat_explicit_coefficient": 1,
+            "dat_imputed_coefficient_if_absent": 1,
+            "dat_nominal_percent_HYPOTHESIS": -80,
+            "status": "MISMATCH",
+            "wiki_line": 35
+          },
+          {
+            "movetype": "tank",
+            "name": "戦車",
+            "unit_count_static": 6,
+            "class_count_static": 26,
+            "terrain": "雪原",
+            "source_key": "snow",
+            "wiki_percent": 20,
+            "dat_explicit_coefficient": 7,
+            "dat_imputed_coefficient_if_absent": 7,
+            "dat_nominal_percent_HYPOTHESIS": 40,
+            "status": "MISMATCH",
+            "wiki_line": 35
+          },
+          {
+            "movetype": "majime",
+            "name": "天使",
+            "unit_count_static": 6,
+            "class_count_static": 0,
+            "terrain": "草原",
+            "source_key": "grass",
+            "wiki_percent": -80,
+            "dat_explicit_coefficient": 2,
+            "dat_imputed_coefficient_if_absent": 2,
+            "dat_nominal_percent_HYPOTHESIS": -60,
+            "status": "MISMATCH",
+            "wiki_line": 42
+          },
+          {
+            "movetype": "majime",
+            "name": "天使",
+            "unit_count_static": 6,
+            "class_count_static": 0,
+            "terrain": "荒地",
+            "source_key": "mud",
+            "wiki_percent": -80,
+            "dat_explicit_coefficient": 2,
+            "dat_imputed_coefficient_if_absent": 2,
+            "dat_nominal_percent_HYPOTHESIS": -60,
+            "status": "MISMATCH",
+            "wiki_line": 42
+          },
+          {
+            "movetype": "majime",
+            "name": "天使",
+            "unit_count_static": 6,
+            "class_count_static": 0,
+            "terrain": "森林",
+            "source_key": "wood",
+            "wiki_percent": -80,
+            "dat_explicit_coefficient": 2,
+            "dat_imputed_coefficient_if_absent": 2,
+            "dat_nominal_percent_HYPOTHESIS": -60,
+            "status": "MISMATCH",
+            "wiki_line": 42
+          },
+          {
+            "movetype": "majime",
+            "name": "天使",
+            "unit_count_static": 6,
+            "class_count_static": 0,
+            "terrain": "海上",
+            "source_key": "sea",
+            "wiki_percent": -80,
+            "dat_explicit_coefficient": 2,
+            "dat_imputed_coefficient_if_absent": 2,
+            "dat_nominal_percent_HYPOTHESIS": -60,
+            "status": "MISMATCH",
+            "wiki_line": 42
+          },
+          {
+            "movetype": "majime",
+            "name": "天使",
+            "unit_count_static": 6,
+            "class_count_static": 0,
+            "terrain": "砂漠",
+            "source_key": "sand",
+            "wiki_percent": -80,
+            "dat_explicit_coefficient": 2,
+            "dat_imputed_coefficient_if_absent": 2,
+            "dat_nominal_percent_HYPOTHESIS": -60,
+            "status": "MISMATCH",
+            "wiki_line": 42
+          },
+          {
+            "movetype": "majime",
+            "name": "天使",
+            "unit_count_static": 6,
+            "class_count_static": 0,
+            "terrain": "山岳",
+            "source_key": "rock",
+            "wiki_percent": -80,
+            "dat_explicit_coefficient": 2,
+            "dat_imputed_coefficient_if_absent": 2,
+            "dat_nominal_percent_HYPOTHESIS": -60,
+            "status": "MISMATCH",
+            "wiki_line": 42
+          },
+          {
+            "movetype": "majime",
+            "name": "天使",
+            "unit_count_static": 6,
+            "class_count_static": 0,
+            "terrain": "沼地",
+            "source_key": "mersh",
+            "wiki_percent": -80,
+            "dat_explicit_coefficient": 2,
+            "dat_imputed_coefficient_if_absent": 2,
+            "dat_nominal_percent_HYPOTHESIS": -60,
+            "status": "MISMATCH",
+            "wiki_line": 42
+          },
+          {
+            "movetype": "majime",
+            "name": "天使",
+            "unit_count_static": 6,
+            "class_count_static": 0,
+            "terrain": "雪原",
+            "source_key": "snow",
+            "wiki_percent": -80,
+            "dat_explicit_coefficient": 2,
+            "dat_imputed_coefficient_if_absent": 2,
+            "dat_nominal_percent_HYPOTHESIS": -60,
+            "status": "MISMATCH",
+            "wiki_line": 42
+          },
+          {
+            "movetype": "majime",
+            "name": "天使",
+            "unit_count_static": 6,
+            "class_count_static": 0,
+            "terrain": "路面",
+            "source_key": "road",
+            "wiki_percent": -80,
+            "dat_explicit_coefficient": 2,
+            "dat_imputed_coefficient_if_absent": 2,
+            "dat_nominal_percent_HYPOTHESIS": -60,
+            "status": "MISMATCH",
+            "wiki_line": 42
+          },
+          {
+            "movetype": "uneiw",
+            "name": "削除",
+            "unit_count_static": 3,
+            "class_count_static": 12,
+            "terrain": "山岳",
+            "source_key": "rock",
+            "wiki_percent": 20,
+            "dat_explicit_coefficient": null,
+            "dat_imputed_coefficient_if_absent": 5,
+            "dat_nominal_percent_HYPOTHESIS": 0,
+            "status": "MISMATCH",
+            "wiki_line": 43
+          }
+        ],
+        "rush_hypothesis_flip": [
+          {
+            "movetype": "snow",
+            "name": "雪原",
+            "unit_count_static": 0,
+            "class_count_static": 0,
+            "terrain": "沼地",
+            "source_key": "mersh",
+            "wiki_percent": 20,
+            "dat_explicit_coefficient": 3,
+            "dat_imputed_coefficient_if_absent": 3,
+            "dat_nominal_percent_HYPOTHESIS": -40,
+            "status": "MISMATCH",
+            "wiki_line": 21,
+            "wiki_rush_candidate_under_Wiki_rule": true,
+            "dat_rush_candidate_under_hypothetical_coefficient_rule": false,
+            "rush_condition_differs_under_two_hypotheses": true
+          }
+        ]
+      },
+      "source_checks": [
+        "All 261 Wiki terrain cells independently compared to original DAT raw consti",
+        "Wiki-unlisted city movement type has 539 Unit definitions"
+      ],
+      "required_evidence": [
+        "Native consti→speed/terrain tile formula, real MAP and 0.67 Unit placement",
+        "Rush accumulation/eligibility and actual UI movement frame; never hardcode Wiki percentages"
+      ],
+      "status": "DESIGNED/NOT RUN",
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "Work_source_edited": false
+    },
+    {
+      "id": "WDF-15",
+      "owner": "研究B・新F",
+      "scope": "Skill special property and MP early/late admission",
+      "input": {
+        "original_direct_special": 571,
+        "effective_special_count": 1166,
+        "source_samples_file": "WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json",
+        "fixture_count": 17
+      },
+      "source_checks": [
+        "Original DAT special on/off/numeric and native saved B-1740 Skill+4C writer",
+        "17 source-grounded special×MP input candidates"
+      ],
+      "required_evidence": [
+        "Compile raw on/off/numeric to Skill+4C live value; 0x57EB40/57F570 early vs late MP",
+        "MPREC AL without projectile/heal, nextPC, RNG and visible effect"
+      ],
+      "status": "DESIGNED/NOT RUN",
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "Work_source_edited": false
+    },
+    {
+      "id": "WDF-16",
+      "owner": "研究B・新F",
+      "scope": "Heal attr 19 keys vs unknown callback variants",
+      "input": {
+        "typed_heal_total": 319,
+        "callback_registered": 19,
+        "heal_unknown_count": 40,
+        "unknown_attr_ch": [
+          "m_yaku_nt2_c4",
+          "sp_jun_yaku_nt2_c4"
+        ],
+        "source_file": "WIKI_HEAL_ATTRIBUTE_REACHABILITY_20261013.json"
+      },
+      "source_checks": [
+        "Heal typed319, 279 attr registered, 38 empty and 2 ch not registered",
+        "31 of the 40 have direct Unit/Class Skill graph witness"
+      ],
+      "required_evidence": [
+        "551653 scratch 28B name/SSO -> 19-name callback index/empty list branch",
+        "B-20261013-1831-02 has confirmed 19/19 key ordinal equivalence, but actual HP/status/MP callback and Unit return remain unverified"
+      ],
+      "status": "DESIGNED/NOT RUN",
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "Work_source_edited": false
+    },
+    {
+      "id": "WDF-17",
+      "owner": "研究B・新F",
+      "scope": "inherited negative MP beyond b_all, normal cost gate",
+      "input": {
+        "effective_negative_skill_count": 94,
+        "negative_cost_by_func": {
+          "missile": 49,
+          "sword": 1,
+          "heal": 44
+        },
+        "directly_granted": 60,
+        "static_stage_smoke_negative_heal": 44,
+        "raw_sources": "WIKI_MP_NEGATIVE_EFFECTIVE_20261013.json"
+      },
+      "source_checks": [
+        "94 negative Skill definitions after parent lookup, of which 60 directly granted",
+        "44/44 synthetic Work Heal stage correctly fail-closed on negative cost"
+      ],
+      "required_evidence": [
+        "Native 0x5461D9,0x57F9EE,0x57EEDA signed cost branch to actual Unit MP mutation",
+        "No double debit; respect AL/MPREC/cap and child effect/normal return"
+      ],
+      "status": "DESIGNED/NOT RUN",
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "Work_source_edited": false
+    },
+    {
+      "id": "WDF-18",
+      "owner": "研究B・新F",
+      "scope": "Heal attr blank and add2 20-source attribute vectors",
+      "input": {
+        "heal_attr_add2_crosswalk": {
+          "recognized19/add2_empty": 279,
+          "other/add2_empty": 2,
+          "empty/add2_nonempty": 20,
+          "empty/add2_empty": 19
+        },
+        "add2_source_count": 20,
+        "add_all_values": {
+          "on": 15,
+          "": 5
+        },
+        "add2_vector_lengths": {
+          "3": 2,
+          "2": 15,
+          "7": 1,
+          "1": 2
+        },
+        "all_20_cases": "WIKI_HEAL_ADD2_20FIXTURES_20261013.json",
+        "Work_P0_priority_source": "WIKI_WORK_P0_ACTION_PACKET_20261013.json"
+      },
+      "source_checks": [
+        "20 heal Skill with empty attr and nonempty add2, all members among known 19 attributes",
+        "15 have add_all=on, five with no direct add_all setting"
+      ],
+      "required_evidence": [
+        "Native add2 tokenizer/Skill+158 vector source and SSO ordering",
+        "Work1041 has 551C6A→551E50 EXP/D8/551C7F flash entry; multi add2/empty-vector and remaining 4DFBB0/Unit return unverified"
+      ],
+      "status": "DESIGNED/NOT RUN",
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "Work_source_edited": false
+    },
+    {
+      "id": "WDF-19",
+      "owner": "研究B・新F",
+      "scope": "Original Skill explicit @ blocks same-kind parent value",
+      "input": {
+        "raw_at_occurrences": 4727,
+        "Work_active_null": 4712,
+        "Work_masked_nonempty_parent": 3084,
+        "mp_at": 13,
+        "special_at": 16,
+        "source_fixture": "WIKI_AT_BATTLE_FIXTURE20_20261013.json"
+      },
+      "source_checks": [
+        "Work parse_script_text+NativeRegistries synthetic 8 fixture definitions / 9 assertions pass",
+        "B-20261013-1856-02 three-way new_misairu raw source has mp/special @; not newly native-proven"
+      ],
+      "required_evidence": [
+        "Native compiler Skill+278/+4C final values, keyword-specific parser behavior and actual Unit inventory",
+        "Use absent/on/off/@ and MP threshold separately; do not infer game Golden"
+      ],
+      "status": "DESIGNED/NOT RUN",
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "Work_source_edited": false
+    },
+    {
+      "id": "WDF-20",
+      "owner": "研究B・新F",
+      "scope": "Inherited next-family candidate expansion with @ override",
+      "input": {
+        "direct_graph_reachable": 11953,
+        "parent_projected_graph_reachable": 12266,
+        "extra_skill_tags": 313,
+        "witness_file": "WIKI_SKILL_EFFECTIVE_NEXT_GRAPH_20261013.json"
+      },
+      "source_checks": [
+        "At same Unit/Class roots 2435, Work nearest-ancestor link projection extends 11953 to 12266",
+        "Explicit @ blocks parent links; source owner, hops and shortest witnesses saved"
+      ],
+      "required_evidence": [
+        "Native Skill next-family constructor/execution, child effect/MP/RNG and explicit old gameplay reachability",
+        "Do not auto-enable all candidate chains in strict product"
+      ],
+      "status": "DESIGNED/NOT RUN",
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "Work_source_edited": false
+    },
+    {
+      "id": "WDF-21",
+      "owner": "研究A・新F",
+      "scope": "Special keyword duplicate @ after nonempty value",
+      "input": {
+        "non_active_source_at": 15,
+        "cases_file": "WIKI_AT_SHADOWED15_20261013.json",
+        "source_examples": [
+          "sake_rocket_nt2_right",
+          "sake_rocket_nt2b_right"
+        ]
+      },
+      "source_checks": [
+        "Current Work duplicate-list registration keeps first next2 values when following @ appears",
+        "A T005 already recorded duplicate input and special callback family; not new Native READY"
+      ],
+      "required_evidence": [
+        "Original special keyword key-specific duplicate first/last/merge/clear and real weapon Skill visibility",
+        "Do not transfer generic first-wins as proven native special builder outcome"
+      ],
+      "status": "DESIGNED/NOT RUN",
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "Work_source_edited": false
+    }
+  ],
+  "native_new_READY_count": 0,
+  "original_gameplay_golden": 0,
+  "new_strict_match": 0,
+  "ownership": "Only wiki-owned file written; B/F/E/Work/MASTER/WRQ/Git unchanged",
+  "push_notification": false,
+  "next": "B/F owner must read current WRQ, HANDOFF and Work source prior to implementing; unknown subcallee must remain stopped."
+}

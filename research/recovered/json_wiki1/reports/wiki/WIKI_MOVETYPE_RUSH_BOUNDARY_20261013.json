@@ -1,0 +1,82 @@
+{
+  "status": "WIKI_HYPOTHESIS * DAT_COEF_HYPOTHESIS; NOT NATIVE RUSH GATE",
+  "wiki_page": "HakushinWiki_002.zip/texts/000485.txt line49",
+  "rule": "Wiki says movement bonus <= -40% means cannot use skill requiring a run-up",
+  "mismatch_cells": 16,
+  "rush_gate_opposite_hypotheses": 1,
+  "crossing_candidates": [
+    {
+      "movetype": "snow",
+      "name": "雪原",
+      "unit_count_static": 0,
+      "class_count_static": 0,
+      "terrain": "沼地",
+      "source_key": "mersh",
+      "wiki_percent": 20,
+      "dat_explicit_coefficient": 3,
+      "dat_imputed_coefficient_if_absent": 3,
+      "dat_nominal_percent_HYPOTHESIS": -40,
+      "status": "MISMATCH",
+      "wiki_line": 21,
+      "wiki_rush_candidate_under_Wiki_rule": true,
+      "dat_rush_candidate_under_hypothetical_coefficient_rule": false,
+      "rush_condition_differs_under_two_hypotheses": true
+    }
+  ],
+  "priority_by_static_unit_reference": [
+    {
+      "tag": "wheel",
+      "name": "装輪",
+      "unit_definitions": 77,
+      "class_definitions": 117,
+      "different_terrain_cells": 1
+    },
+    {
+      "tag": "tank",
+      "name": "戦車",
+      "unit_definitions": 6,
+      "class_definitions": 26,
+      "different_terrain_cells": 3
+    },
+    {
+      "tag": "majime",
+      "name": "天使",
+      "unit_definitions": 6,
+      "class_definitions": 0,
+      "different_terrain_cells": 9
+    },
+    {
+      "tag": "uneiw",
+      "name": "削除",
+      "unit_definitions": 3,
+      "class_definitions": 12,
+      "different_terrain_cells": 1
+    },
+    {
+      "tag": "water_wheel",
+      "name": "水陸両用",
+      "unit_definitions": 0,
+      "class_definitions": 4,
+      "different_terrain_cells": 1
+    },
+    {
+      "tag": "snow",
+      "name": "雪原",
+      "unit_definitions": 0,
+      "class_definitions": 0,
+      "different_terrain_cells": 1
+    }
+  ],
+  "wiki_unlisted_type_city": {
+    "tag": "city",
+    "unit_definitions": 539,
+    "class_definitions": 9
+  },
+  "limitations": [
+    "Wiki 2026 differs from game 0.67 data version",
+    "Numeric consti -> percent formula has no native confirmation",
+    "Rush progress depends on multiple update ticks and terrain history, not only current terrain",
+    "0 Unit definitions does not imply impossible runtime movement type",
+    "Actual original gameplay golden 0 and strict match 0"
+  ]
+}

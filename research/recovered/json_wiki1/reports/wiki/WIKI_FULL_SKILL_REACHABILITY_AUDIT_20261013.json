@@ -1,0 +1,844 @@
+{
+  "status": "STATIC LITERAL REACHABILITY / NOT ACTUAL GAMEPLAY",
+  "source": "WIKI_FULL_SKILL_INDEX_20261013.json.gz",
+  "explicit_skill_roots": 2435,
+  "explicit_skill_root_refs": 11046,
+  "excluded_unit_class_removal_reference_count": 933,
+  "root_grant_keys": [
+    "assist_skill",
+    "leader_skill",
+    "learn",
+    "skill",
+    "skill2"
+  ],
+  "reachable_skill_by_direct_next_edges": 11953,
+  "reachable_graph_levels": {
+    "0": 2435,
+    "1": 2796,
+    "2": 2640,
+    "3": 1713,
+    "4": 866,
+    "5": 504,
+    "6": 374,
+    "7": 216,
+    "8": 118,
+    "9": 84,
+    "10": 51,
+    "11": 32,
+    "12": 24,
+    "13": 11,
+    "14": 12,
+    "15": 8,
+    "16": 3,
+    "17": 4,
+    "18": 1,
+    "19": 1,
+    "20": 1,
+    "21": 1,
+    "22": 1,
+    "23": 1,
+    "24": 1,
+    "25": 2,
+    "26": 3,
+    "27": 1,
+    "28": 1,
+    "29": 1,
+    "30": 1,
+    "31": 1,
+    "32": 1,
+    "33": 1,
+    "34": 1,
+    "35": 1,
+    "36": 1,
+    "37": 1,
+    "38": 1,
+    "39": 1,
+    "40": 1,
+    "41": 1,
+    "42": 1,
+    "43": 1,
+    "44": 1,
+    "45": 1,
+    "46": 1,
+    "47": 1,
+    "48": 1,
+    "49": 1,
+    "50": 1,
+    "51": 1,
+    "52": 1,
+    "53": 1,
+    "54": 1,
+    "55": 1,
+    "56": 1,
+    "57": 1,
+    "58": 1,
+    "59": 1,
+    "60": 1,
+    "61": 1,
+    "62": 1,
+    "63": 1,
+    "64": 1,
+    "65": 1,
+    "66": 1,
+    "67": 1,
+    "68": 1,
+    "69": 1,
+    "70": 1,
+    "71": 1,
+    "72": 1,
+    "73": 1,
+    "74": 1,
+    "75": 1,
+    "76": 1
+  },
+  "not_reachable_from_explicit_unit_class_skill_roots": 4601,
+  "effective_func_unset_total": 4593,
+  "effective_func_unset_equipped_count": 3,
+  "effective_func_unset_equipped_examples": [
+    "hqreireteicpu",
+    "siege_lv2",
+    "siege_lv3"
+  ],
+  "effective_func_unset_outside_reachable": 1390,
+  "orphan_skill_ranking": [
+    {
+      "skill": "Shakespeare_fire_wave_mag",
+      "parent": "Shakespeare_fire_at",
+      "file": "a_default/script/30_スキル/F51_榴弾・延焼_プレッツヒェン.dat",
+      "line": 482,
+      "effective_func": "UNSET",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 7,
+      "reached_by_literal_skill_chain": true,
+      "reachable_equip_direct": false
+    },
+    {
+      "skill": "giant_swing_CountAfix",
+      "parent": "giant_swing_CountBXX_base",
+      "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+      "line": 50,
+      "effective_func": "UNSET",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 2,
+      "reached_by_literal_skill_chain": true,
+      "reachable_equip_direct": false
+    },
+    {
+      "skill": "astk_kirakira_pr2",
+      "parent": "astk_kirakira_pr",
+      "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+      "line": 1940,
+      "effective_func": "UNSET",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 1,
+      "reached_by_literal_skill_chain": true,
+      "reachable_equip_direct": false
+    },
+    {
+      "skill": "astk_kirakira_pr3",
+      "parent": "astk_kirakira_pr",
+      "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+      "line": 1945,
+      "effective_func": "UNSET",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 1,
+      "reached_by_literal_skill_chain": true,
+      "reachable_equip_direct": false
+    },
+    {
+      "skill": "giant_swing_CountA00",
+      "parent": "giant_swing_CountAXX_base",
+      "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+      "line": 5,
+      "effective_func": "UNSET",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 1,
+      "reached_by_literal_skill_chain": true,
+      "reachable_equip_direct": false
+    },
+    {
+      "skill": "giant_swing_CountA01",
+      "parent": "giant_swing_CountAXX_base",
+      "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+      "line": 15,
+      "effective_func": "UNSET",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 1,
+      "reached_by_literal_skill_chain": true,
+      "reachable_equip_direct": false
+    },
+    {
+      "skill": "giant_swing_CountA02",
+      "parent": "giant_swing_CountAXX_base",
+      "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+      "line": 25,
+      "effective_func": "UNSET",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 1,
+      "reached_by_literal_skill_chain": true,
+      "reachable_equip_direct": false
+    },
+    {
+      "skill": "giant_swing_CountB00",
+      "parent": "giant_swing_CountBXX_base",
+      "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+      "line": 10,
+      "effective_func": "UNSET",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 1,
+      "reached_by_literal_skill_chain": true,
+      "reachable_equip_direct": false
+    },
+    {
+      "skill": "giant_swing_CountB01",
+      "parent": "giant_swing_CountBXX_base",
+      "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+      "line": 20,
+      "effective_func": "UNSET",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 1,
+      "reached_by_literal_skill_chain": true,
+      "reachable_equip_direct": false
+    },
+    {
+      "skill": "giant_swing_CountB02",
+      "parent": "giant_swing_CountBXX_base",
+      "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+      "line": 30,
+      "effective_func": "UNSET",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 1,
+      "reached_by_literal_skill_chain": true,
+      "reachable_equip_direct": false
+    },
+    {
+      "skill": "giant_swing_CountBfix",
+      "parent": "giant_swing_CountBXX_base",
+      "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+      "line": 55,
+      "effective_func": "UNSET",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 1,
+      "reached_by_literal_skill_chain": true,
+      "reachable_equip_direct": false
+    },
+    {
+      "skill": "hqreireteicpu",
+      "parent": "hqreifretei",
+      "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+      "line": 347,
+      "effective_func": "UNSET",
+      "explicit_equip_refs": 1,
+      "explicit_equip_examples": [
+        {
+          "owner": "class:hqreteicpu",
+          "source": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+          "line": 322,
+          "field": "skill"
+        }
+      ],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 0,
+      "reached_by_literal_skill_chain": true,
+      "reachable_equip_direct": true
+    },
+    {
+      "skill": "m_magickbs_nt1_2",
+      "parent": "m_ligh_js",
+      "file": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat",
+      "line": 1668,
+      "effective_func": "UNSET",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 1,
+      "reached_by_literal_skill_chain": true,
+      "reachable_equip_direct": false
+    },
+    {
+      "skill": "m_mrandom_nt1_2",
+      "parent": "m_ligh_js",
+      "file": "a_default/script/30_スキル/F10_missile.dat",
+      "line": 4579,
+      "effective_func": "UNSET",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 1,
+      "reached_by_literal_skill_chain": true,
+      "reachable_equip_direct": false
+    },
+    {
+      "skill": "sp_tusk_act1_kn",
+      "parent": "tusk_gun_kn",
+      "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+      "line": 2343,
+      "effective_func": "UNSET",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 1,
+      "reached_by_literal_skill_chain": true,
+      "reachable_equip_direct": false
+    },
+    {
+      "skill": "syokubumper_arm_nt1",
+      "parent": "sk_ns",
+      "file": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 15300,
+      "effective_func": "UNSET",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 1,
+      "reached_by_literal_skill_chain": true,
+      "reachable_equip_direct": false
+    },
+    {
+      "skill": "stove_fire_wave_mag",
+      "parent": "stove_fire_at",
+      "file": "a_default/script/116_仮設ランダムイベント61-70/skill_stove.dat",
+      "line": 851,
+      "effective_func": "UNSET",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 7,
+      "reached_by_literal_skill_chain": false,
+      "reachable_equip_direct": false
+    },
+    {
+      "skill": "demo1_range2",
+      "parent": "demo_range1",
+      "file": "a_default/script/50_その他新システム/siki.dat",
+      "line": 153,
+      "effective_func": "UNSET",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 1,
+      "reached_by_literal_skill_chain": false,
+      "reachable_equip_direct": false
+    },
+    {
+      "skill": "giant_swing_CountB03",
+      "parent": "giant_swing_CountBXX_base",
+      "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+      "line": 41,
+      "effective_func": "UNSET",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 1,
+      "reached_by_literal_skill_chain": false,
+      "reachable_equip_direct": false
+    },
+    {
+      "skill": "re_cannon_rts_nt1",
+      "parent": "re_cannon_nt1",
+      "file": "a_default/script/8000_RTSシナリオ/RTSskill.dat",
+      "line": 550,
+      "effective_func": "UNSET",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 1,
+      "reached_by_literal_skill_chain": false,
+      "reachable_equip_direct": false
+    },
+    {
+      "skill": "re_cannon_rts_nt3",
+      "parent": "re_cannon_nt3",
+      "file": "a_default/script/8000_RTSシナリオ/RTSskill.dat",
+      "line": 556,
+      "effective_func": "UNSET",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 1,
+      "reached_by_literal_skill_chain": false,
+      "reachable_equip_direct": false
+    },
+    {
+      "skill": "rtstocsam_mugen_nt",
+      "parent": "rtstocsam",
+      "file": "a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+      "line": 656,
+      "effective_func": "UNSET",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 1,
+      "reached_by_literal_skill_chain": false,
+      "reachable_equip_direct": false
+    },
+    {
+      "skill": "sp_gogogo",
+      "parent": "sp_nannkasugoino",
+      "file": "a_default/script/32_ボススキル/B_505_閉店の日.dat",
+      "line": 371,
+      "effective_func": "UNSET",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 1,
+      "reached_by_literal_skill_chain": false,
+      "reachable_equip_direct": false
+    },
+    {
+      "skill": "summon_togashi_0",
+      "parent": "summon_togashi_base",
+      "file": "a_default/script/10_ユニット/110_イベント人材.dat",
+      "line": 1957,
+      "effective_func": "summon",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 1,
+      "reached_by_literal_skill_chain": false,
+      "reachable_equip_direct": false
+    },
+    {
+      "skill": "watecannon_w_pr3",
+      "parent": "watecannon_w_pr1",
+      "file": "a_default/script/32_ボススキル/B_2222_レイノアレフ.dat",
+      "line": 517,
+      "effective_func": "UNSET",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 1,
+      "reached_by_literal_skill_chain": false,
+      "reachable_equip_direct": false
+    },
+    {
+      "skill": "aqua_times_pr3",
+      "parent": "aqua_times_pr1",
+      "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+      "line": 2448,
+      "effective_func": "UNSET",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 0,
+      "reached_by_literal_skill_chain": false,
+      "reachable_equip_direct": false
+    },
+    {
+      "skill": "asasin_cream_weapon_glove_mag",
+      "parent": "asasin_cream_weapon_grove_base",
+      "file": "a_default/script/33_仮設アサシン/skill_asasin_cream_weapon_glove.dat",
+      "line": 174,
+      "effective_func": "UNSET",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 0,
+      "reached_by_literal_skill_chain": false,
+      "reachable_equip_direct": false
+    },
+    {
+      "skill": "giant_swing_CountA03",
+      "parent": "giant_swing_CountAXX_base",
+      "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+      "line": 36,
+      "effective_func": "UNSET",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 0,
+      "reached_by_literal_skill_chain": false,
+      "reachable_equip_direct": false
+    },
+    {
+      "skill": "hanzo_cream_weapon_glove_mag",
+      "parent": "hanzo_cream_weapon_grove_base",
+      "file": "a_default/script/35_仮設半造/skill_hanzo_cream_weapon_glove.dat",
+      "line": 184,
+      "effective_func": "UNSET",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 0,
+      "reached_by_literal_skill_chain": false,
+      "reachable_equip_direct": false
+    },
+    {
+      "skill": "heal_clown_mprec",
+      "parent": "sing_mprec",
+      "file": "a_default/script/30_スキル/F13_heal_support.dat",
+      "line": 1441,
+      "effective_func": "heal",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 0,
+      "reached_by_literal_skill_chain": false,
+      "reachable_equip_direct": false
+    },
+    {
+      "skill": "rmla_ch_old_yari_pr",
+      "parent": "rmla_yari_pr",
+      "file": "a_default/script/30_スキル/F12_charge.dat",
+      "line": 1318,
+      "effective_func": "UNSET",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 0,
+      "reached_by_literal_skill_chain": false,
+      "reachable_equip_direct": false
+    },
+    {
+      "skill": "rtstocsamsp3_hub",
+      "parent": "rtstocsamsp5",
+      "file": "a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+      "line": 640,
+      "effective_func": "UNSET",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 0,
+      "reached_by_literal_skill_chain": false,
+      "reachable_equip_direct": false
+    },
+    {
+      "skill": "s_defbarboat_nt2",
+      "parent": "s_defbar_nt2",
+      "file": "a_default/script/45_内政_防衛兵器/siege_skill.dat",
+      "line": 3183,
+      "effective_func": "UNSET",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 0,
+      "reached_by_literal_skill_chain": false,
+      "reachable_equip_direct": false
+    },
+    {
+      "skill": "s_defbarboat_nt3",
+      "parent": "s_defbar_nt3",
+      "file": "a_default/script/45_内政_防衛兵器/siege_skill.dat",
+      "line": 3197,
+      "effective_func": "UNSET",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 0,
+      "reached_by_literal_skill_chain": false,
+      "reachable_equip_direct": false
+    },
+    {
+      "skill": "ss_rmla_ch_old_yari_pr",
+      "parent": "ss_rmla_yari_pr",
+      "file": "a_default/script/30_スキル/F12_charge.dat",
+      "line": 2098,
+      "effective_func": "UNSET",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 0,
+      "reached_by_literal_skill_chain": false,
+      "reachable_equip_direct": false
+    },
+    {
+      "skill": "testskill",
+      "parent": "sp_nannkasugoino",
+      "file": "a_default/script/6000_スキルテスト/skill_00_test.dat",
+      "line": 1,
+      "effective_func": "UNSET",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 0,
+      "reached_by_literal_skill_chain": false,
+      "reachable_equip_direct": false
+    },
+    {
+      "skill": "watecannon_pr3",
+      "parent": "watecannon_pr1",
+      "file": "a_default/script/30_スキル/F10_missile_砲撃リニューアル.dat",
+      "line": 779,
+      "effective_func": "UNSET",
+      "explicit_equip_refs": 0,
+      "explicit_equip_examples": [],
+      "skillset_member_refs": 0,
+      "direct_chain_incoming": 0,
+      "reached_by_literal_skill_chain": false,
+      "reachable_equip_direct": false
+    }
+  ],
+  "missing_link_targets_total": 115,
+  "missing_link_targets_reachable": 85,
+  "reachable_missing_link_top": [
+    [
+      "b_whip_js",
+      6
+    ],
+    [
+      "eff_jinzaisp",
+      6
+    ],
+    [
+      "diyushi_dam1",
+      4
+    ],
+    [
+      "giant_swing_CountB_Eff",
+      3
+    ],
+    [
+      "monzetsu_fire_ensyou_mag",
+      2
+    ],
+    [
+      "sp_bio_so",
+      2
+    ],
+    [
+      "b_tsuri_nt7e",
+      2
+    ],
+    [
+      "sww_whip_js",
+      2
+    ],
+    [
+      "s_cannon_pr2",
+      2
+    ],
+    [
+      "s_cannon_pr4",
+      2
+    ],
+    [
+      "sake_rocket_bomber_pr4",
+      2
+    ],
+    [
+      "sakenomiga_summon_pr0",
+      2
+    ],
+    [
+      "ncnc_cannon_nt3_ef2",
+      2
+    ],
+    [
+      "b_cannon_apcr_ol",
+      1
+    ],
+    [
+      "hermit_whip_js",
+      1
+    ],
+    [
+      "icg_ch1_js",
+      1
+    ],
+    [
+      "ef_rmla_yari",
+      1
+    ],
+    [
+      "ef_rmla_yari0",
+      1
+    ],
+    [
+      "whip_js",
+      1
+    ],
+    [
+      "ef_yuwaku",
+      1
+    ],
+    [
+      "rfire_cannon_pr2b",
+      1
+    ],
+    [
+      "monzetsu_fire_ensyou_eff_fake_at",
+      1
+    ],
+    [
+      "sp_udk_pr1",
+      1
+    ],
+    [
+      "sp_masupa5_pair_o",
+      1
+    ],
+    [
+      "sp_masupa5_nt5",
+      1
+    ],
+    [
+      "sp_masupa5_nt6",
+      1
+    ],
+    [
+      "sp_ndk2_ef1_flash1_nt",
+      1
+    ],
+    [
+      "e893zan1_nt0",
+      1
+    ],
+    [
+      "turu_whip_js",
+      1
+    ],
+    [
+      "b_milk_nt3_3",
+      1
+    ]
+  ],
+  "all_missing_link_top": [
+    [
+      "b_whip_js",
+      6
+    ],
+    [
+      "eff_jinzaisp",
+      6
+    ],
+    [
+      "diyushi_dam1",
+      4
+    ],
+    [
+      "giant_swing_CountB_Eff",
+      3
+    ],
+    [
+      "ncnc_cannon_nt3_ef2",
+      3
+    ],
+    [
+      "stove_fire_chainA_00_00",
+      2
+    ],
+    [
+      "new_misairu_miss_nt3b",
+      2
+    ],
+    [
+      "kuso_yari1_js3",
+      2
+    ],
+    [
+      "ef_rmla_yari",
+      2
+    ],
+    [
+      "ef_rmla_yari0",
+      2
+    ],
+    [
+      "monzetsu_fire_ensyou_mag",
+      2
+    ],
+    [
+      "e893zan1_nt0",
+      2
+    ],
+    [
+      "sp_bio_so",
+      2
+    ],
+    [
+      "b_tsuri_nt7e",
+      2
+    ],
+    [
+      "sww_whip_js",
+      2
+    ],
+    [
+      "b_jibaku_kimihiko_pr4",
+      2
+    ],
+    [
+      "sp_vanban_nt4",
+      2
+    ],
+    [
+      "b_jibaku_pr4",
+      2
+    ],
+    [
+      "s_cannon_pr2",
+      2
+    ],
+    [
+      "s_cannon_pr4",
+      2
+    ],
+    [
+      "sake_rocket_bomber_pr4",
+      2
+    ],
+    [
+      "sakenomiga_summon_pr0",
+      2
+    ],
+    [
+      "ef_rpgzan",
+      1
+    ],
+    [
+      "b_cannon_apcr_ol",
+      1
+    ],
+    [
+      "hermit_whip_js",
+      1
+    ],
+    [
+      "icg_ch1_js",
+      1
+    ],
+    [
+      "dsnch1_js",
+      1
+    ],
+    [
+      "whip_js",
+      1
+    ],
+    [
+      "ef_yuwaku",
+      1
+    ],
+    [
+      "rfire_cannon_pr2b",
+      1
+    ]
+  ],
+  "notes": [
+    "This is a lower-bound, literal Unit/Class Skill root subset, not full reachability",
+    "Skillsets, events, scripts and runtime addSkill can add more; lack of static reference is NOT dead code",
+    "All link edges are treated as graph edges, not as confirmed native invocation order."
+  ]
+}

@@ -10,4 +10,19 @@
 - [research/recovered/search_reports1/reports/_history_20261029/TASK_LEDGER.md 行 62](../../research/recovered/search_reports1/reports/_history_20261029/TASK_LEDGER.md?plain=1#L62-L62) — - First draft audit FAIL 31/32: test 'mode_2_3_reuse_last_member_troop' searched local_278+0x178 syntax but Ghidra temporary alias at that point is iVar6+0x178.
   制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
 
+<a id="field-1d0"></a>
+## local_278 + 0x1D0
+
+- [research/recovered/json_exp_exe1/reports/15_EXP_SETTLEMENT_OWNER_AUDIT_20261022_04.json 行 843](../../research/recovered/json_exp_exe1/reports/15_EXP_SETTLEMENT_OWNER_AUDIT_20261022_04.json?plain=1#L843-L843) — "text": "  if (*(int *)(local_278 + 0x1d0) == 0) {"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Short selected original-provenance DAT examples attached to authored analysis (9/4/4 examples,4-25LF each); not source-file or systematic property-corpus export, and no inheritance/runtime coverage inferred.
+
+- [research/recovered/json_exp_exe1/reports/15_EXP_SETTLEMENT_OWNER_AUDIT_20261022_04.json 行 851](../../research/recovered/json_exp_exe1/reports/15_EXP_SETTLEMENT_OWNER_AUDIT_20261022_04.json?plain=1#L851-L851) — "text": "      local_28c = *(int **)(local_278 + 0x1d0);"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Short selected original-provenance DAT examples attached to authored analysis (9/4/4 examples,4-25LF each); not source-file or systematic property-corpus export, and no inheritance/runtime coverage inferred.
+
+- [research/recovered/json_exp_exe1/reports/21_EXP_SUMMON_GATES_EVIDENCE_20261022.json 行 422](../../research/recovered/json_exp_exe1/reports/21_EXP_SUMMON_GATES_EVIDENCE_20261022.json?plain=1#L422-L422) — "text": "  if (*(int *)(local_278 + 0x1d0) == 0) {"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Short selected original-provenance DAT examples attached to authored analysis (9/4/4 examples,4-25LF each); not source-file or systematic property-corpus export, and no inheritance/runtime coverage inferred.
+
+- [research/recovered/json_exp_exe1/reports/21_EXP_SUMMON_GATES_EVIDENCE_20261022.json 行 426](../../research/recovered/json_exp_exe1/reports/21_EXP_SUMMON_GATES_EVIDENCE_20261022.json?plain=1#L426-L426) — "text": "      local_28c = *(int **)(local_278 + 0x1d0);"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Short selected original-provenance DAT examples attached to authored analysis (9/4/4 examples,4-25LF each); not source-file or systematic property-corpus export, and no inheritance/runtime coverage inferred.
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

@@ -1,0 +1,78 @@
+{
+  "research_id": "EXP-SIMPLE-LIFECYCLE-20261022-02",
+  "result": "STATIC_REPLAY_PASS",
+  "source_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "evidence_sha256": "61226CF42A74BD0C43994CE0D051269DC40F242BBC48F8968B59D3E51142F9C6",
+  "replayed_assertions": 61,
+  "additional_native_sites": [
+    {
+      "site": "0x40f7ae",
+      "bytes": "8be8",
+      "instruction": "mov ebp, eax",
+      "pass": true
+    },
+    {
+      "site": "0x40f7bc",
+      "bytes": "8b0dcc8e8b00",
+      "instruction": "mov ecx, dword ptr [0x8b8ecc]",
+      "pass": true
+    },
+    {
+      "site": "0x40f7c2",
+      "bytes": "8b15c88e8b00",
+      "instruction": "mov edx, dword ptr [0x8b8ec8]",
+      "pass": true
+    },
+    {
+      "site": "0x40f89c",
+      "bytes": "8929",
+      "instruction": "mov dword ptr [ecx], ebp",
+      "pass": true
+    },
+    {
+      "site": "0x40f8ab",
+      "bytes": "890dcc8e8b00",
+      "instruction": "mov dword ptr [0x8b8ecc], ecx",
+      "pass": true
+    },
+    {
+      "site": "0x544528",
+      "bytes": "8d7d48",
+      "instruction": "lea edi, [ebp + 0x48]",
+      "pass": true
+    },
+    {
+      "site": "0x54452b",
+      "bytes": "e860cdf7ff",
+      "instruction": "call 0x4c1290",
+      "pass": true
+    },
+    {
+      "site": "0x54453d",
+      "bytes": "8bc6",
+      "instruction": "mov eax, esi",
+      "pass": true
+    },
+    {
+      "site": "0x54455c",
+      "bytes": "c21000",
+      "instruction": "ret 0x10",
+      "pass": true
+    }
+  ],
+  "window_aliases": {
+    "window": "0x8b8c90",
+    "update_begin": "0x8b8ec8",
+    "update_end": "0x8b8ecc",
+    "side_a": "0x8b8e58",
+    "side_b": "0x8b8e5c"
+  },
+  "interpretation": "Created SimpleUnit is appended to BattleWnd update vector and to its side roster; typed lifetime link, not a runtime test",
+  "gameplay_tests": 0,
+  "limitations": [
+    "No original gameplay was run",
+    "Not all CPU battle entry modes proved",
+    "Summon-to-parent EXP transfer inside result/event handlers remains open",
+    "Virtual targets are matched using known table/constructor identity, not runtime trace"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "BRIDGE-SAVE2-ROUTE-G0-SAVED-DATA",
+  "source_sha256": "45CCEF306B56BF66810726436365207CA18B63D7CC0E432E784034D196FA5635",
+  "status": "ORIGINAL_SAVE_BYTE_EXACT / LEGAL_GAME_ATTACK_NOT_RUN",
+  "scenario": "sci1",
+  "power": "po2",
+  "byte_exact_save_repack": true,
+  "graph_counts": {
+    "Spot_elm_bucket": 121,
+    "SpotPath_bucket": 160,
+    "SpotEscapePath_bucket": 11
+  },
+  "routes_touching_sp2_or_sp16": [
+    {
+      "class": "path",
+      "key": "sp16+sp17",
+      "raw_name": "sp16+sp17",
+      "endpoints": [
+        "sp17",
+        "sp16"
+      ],
+      "route_name_220": "route",
+      "memory_byte_88": 1
+    },
+    {
+      "class": "path",
+      "key": "sp16+sp2",
+      "raw_name": "sp16+sp2",
+      "endpoints": [
+        "sp2",
+        "sp16"
+      ],
+      "route_name_220": "route",
+      "memory_byte_88": 1
+    },
+    {
+      "class": "path",
+      "key": "sp2+sp2b",
+      "raw_name": "sp2+sp2b",
+      "endpoints": [
+        "sp2",
+        "sp2b"
+      ],
+      "route_name_220": "route",
+      "memory_byte_88": 1
+    },
+    {
+      "class": "path",
+      "key": "sp2+sp50",
+      "raw_name": "sp2+sp50",
+      "endpoints": [
+        "sp50",
+        "sp2"
+      ],
+      "route_name_220": "route",
+      "memory_byte_88": 1
+    }
+  ],
+  "direct_saved_route_sp2_sp16": [
+    {
+      "class": "path",
+      "key": "sp16+sp2",
+      "raw_name": "sp16+sp2",
+      "endpoints": [
+        "sp2",
+        "sp16"
+      ],
+      "route_name_220": "route",
+      "memory_byte_88": 1
+    }
+  ],
+  "legal_war_flag_proved": false,
+  "dynamic_input_operation_proved": false
+}

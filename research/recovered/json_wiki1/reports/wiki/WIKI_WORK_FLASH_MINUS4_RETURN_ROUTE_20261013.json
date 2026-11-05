@@ -1,0 +1,390 @@
+{
+  "schema": "WIKI_WORK_FLASH_NONPOSITIVE_ESCAPE_V1",
+  "Work_saved_gate": "native_unit_ai.py::resume_selected_support_core_flash (read-only, at current source)",
+  "Work_1041_block": "m_heal raw flash5 -> 551CA1/Skill+6F0 missing",
+  "original_data_candidates": [
+    {
+      "tag": "sp_fmrim_heal",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+        "line": 220,
+        "parent": "m_heal"
+      },
+      "typed_loader_supported": true,
+      "flash_raw": "-4",
+      "flash_number": -4,
+      "flash_origin_tag": "sp_fmrim_heal",
+      "flash_kind": "negative",
+      "mp_raw": "80",
+      "attr": "hp",
+      "allfunc": "",
+      "add2": [],
+      "original_grant_examples": [],
+      "directly_granted": false,
+      "static_witness": null,
+      "native_gate_if_compiled_-4": "551C7F Skill+248<=0 ->551CF2, no Skill+6F0 read",
+      "Work_actual_code_behavior": "resume_selected_support_core_flash flash<=0 returns551CF2 without requiring +6F0",
+      "typed_load_and_positive_MP": true,
+      "requires": [
+        "Real Skill compiler must bind raw flash=-4 to signed Skill+248=-4",
+        "Actor must legally select candidate and reach support ctx D/E=1/1",
+        "Target HP bar timer/subtype may force additional unknown 577100 call",
+        "Work Session skill identity/runtime loader may have other missing fields",
+        "551D40/551E4A and 54E31C/Unit return remain independent"
+      ],
+      "original_dat_excerpt": [
+        {
+          "line": 220,
+          "text": "skill sp_fmrim_heal:m_heal"
+        },
+        {
+          "line": 221,
+          "text": "{"
+        },
+        {
+          "line": 222,
+          "text": "sound = @"
+        },
+        {
+          "line": 223,
+          "text": "image = m_rainbowball5"
+        },
+        {
+          "line": 224,
+          "text": "anime = @"
+        },
+        {
+          "line": 225,
+          "text": "flash_image = m_rainbowballx2_5"
+        },
+        {
+          "line": 226,
+          "text": "flash_anime = @"
+        },
+        {
+          "line": 227,
+          "text": "flash = -4"
+        },
+        {
+          "line": 228,
+          "text": "attr = hp"
+        },
+        {
+          "line": 229,
+          "text": "w = 36"
+        },
+        {
+          "line": 230,
+          "text": "h = 48"
+        },
+        {
+          "line": 231,
+          "text": "a= 180"
+        },
+        {
+          "line": 232,
+          "text": "d360 = on"
+        },
+        {
+          "line": 233,
+          "text": "func = heal"
+        },
+        {
+          "line": 234,
+          "text": ""
+        },
+        {
+          "line": 235,
+          "text": "speed = 200"
+        },
+        {
+          "line": 236,
+          "text": "range = 1200"
+        },
+        {
+          "line": 237,
+          "text": ""
+        },
+        {
+          "line": 238,
+          "text": "str = magic * 100"
+        },
+        {
+          "line": 239,
+          "text": ""
+        },
+        {
+          "line": 240,
+          "text": "exp_per = off"
+        },
+        {
+          "line": 241,
+          "text": "}"
+        },
+        {
+          "line": 242,
+          "text": "skill sp_fmrim_joker_biim23_summon_nt2:sp_fmrim_joker_biim23_summon_nt0"
+        }
+      ]
+    },
+    {
+      "tag": "sp_fmrim_heal2",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+        "line": 250,
+        "parent": "sp_fmrim_heal"
+      },
+      "typed_loader_supported": true,
+      "flash_raw": "-4",
+      "flash_number": -4,
+      "flash_origin_tag": "sp_fmrim_heal",
+      "flash_kind": "negative",
+      "mp_raw": "80",
+      "attr": "hp",
+      "allfunc": "",
+      "add2": [],
+      "original_grant_examples": [],
+      "directly_granted": false,
+      "static_witness": null,
+      "native_gate_if_compiled_-4": "551C7F Skill+248<=0 ->551CF2, no Skill+6F0 read",
+      "Work_actual_code_behavior": "resume_selected_support_core_flash flash<=0 returns551CF2 without requiring +6F0",
+      "typed_load_and_positive_MP": true,
+      "requires": [
+        "Real Skill compiler must bind raw flash=-4 to signed Skill+248=-4",
+        "Actor must legally select candidate and reach support ctx D/E=1/1",
+        "Target HP bar timer/subtype may force additional unknown 577100 call",
+        "Work Session skill identity/runtime loader may have other missing fields",
+        "551D40/551E4A and 54E31C/Unit return remain independent"
+      ],
+      "original_dat_excerpt": [
+        {
+          "line": 250,
+          "text": "skill sp_fmrim_heal2 : sp_fmrim_heal"
+        },
+        {
+          "line": 251,
+          "text": "{"
+        },
+        {
+          "line": 252,
+          "text": "image = m_rainbowballx2_5"
+        },
+        {
+          "line": 253,
+          "text": "flash_image = m_rainbowball5"
+        },
+        {
+          "line": 254,
+          "text": "}"
+        },
+        {
+          "line": 255,
+          "text": "skill sp_fmrim_joker_biim23_summon_nt4:sp_fmrim_joker_biim23_summon_nt0"
+        },
+        {
+          "line": 256,
+          "text": "{"
+        },
+        {
+          "line": 257,
+          "text": "next3 = sp_fmrim_joker_eliz_hokyu_nt5"
+        },
+        {
+          "line": 258,
+          "text": "}"
+        },
+        {
+          "line": 259,
+          "text": "skill sp_fmrim_joker_eliz_hokyu_nt5:sp_fmrim_joker_eliz_hokyu_nt1"
+        },
+        {
+          "line": 260,
+          "text": "{"
+        },
+        {
+          "line": 261,
+          "text": "next3 = sp_fmrim_heal3"
+        },
+        {
+          "line": 262,
+          "text": "}"
+        },
+        {
+          "line": 263,
+          "text": "skill sp_fmrim_heal3 : sp_fmrim_heal"
+        },
+        {
+          "line": 264,
+          "text": "{"
+        },
+        {
+          "line": 265,
+          "text": "image = m_rainbowballx2_0"
+        },
+        {
+          "line": 266,
+          "text": "flash_image = m_rainbowball6"
+        },
+        {
+          "line": 267,
+          "text": "}"
+        },
+        {
+          "line": 268,
+          "text": ""
+        },
+        {
+          "line": 269,
+          "text": "//虹の橋をかける　アフリカでは8色らしいんでそれでいく"
+        },
+        {
+          "line": 270,
+          "text": "//ネクストインターバル使う"
+        },
+        {
+          "line": 271,
+          "text": "skill sp_fmrim_joker_rainbow_joi0:sk_ms"
+        },
+        {
+          "line": 272,
+          "text": "{"
+        }
+      ]
+    },
+    {
+      "tag": "sp_fmrim_heal3",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+        "line": 263,
+        "parent": "sp_fmrim_heal"
+      },
+      "typed_loader_supported": true,
+      "flash_raw": "-4",
+      "flash_number": -4,
+      "flash_origin_tag": "sp_fmrim_heal",
+      "flash_kind": "negative",
+      "mp_raw": "80",
+      "attr": "hp",
+      "allfunc": "",
+      "add2": [],
+      "original_grant_examples": [],
+      "directly_granted": false,
+      "static_witness": null,
+      "native_gate_if_compiled_-4": "551C7F Skill+248<=0 ->551CF2, no Skill+6F0 read",
+      "Work_actual_code_behavior": "resume_selected_support_core_flash flash<=0 returns551CF2 without requiring +6F0",
+      "typed_load_and_positive_MP": true,
+      "requires": [
+        "Real Skill compiler must bind raw flash=-4 to signed Skill+248=-4",
+        "Actor must legally select candidate and reach support ctx D/E=1/1",
+        "Target HP bar timer/subtype may force additional unknown 577100 call",
+        "Work Session skill identity/runtime loader may have other missing fields",
+        "551D40/551E4A and 54E31C/Unit return remain independent"
+      ],
+      "original_dat_excerpt": [
+        {
+          "line": 263,
+          "text": "skill sp_fmrim_heal3 : sp_fmrim_heal"
+        },
+        {
+          "line": 264,
+          "text": "{"
+        },
+        {
+          "line": 265,
+          "text": "image = m_rainbowballx2_0"
+        },
+        {
+          "line": 266,
+          "text": "flash_image = m_rainbowball6"
+        },
+        {
+          "line": 267,
+          "text": "}"
+        },
+        {
+          "line": 268,
+          "text": ""
+        },
+        {
+          "line": 269,
+          "text": "//虹の橋をかける　アフリカでは8色らしいんでそれでいく"
+        },
+        {
+          "line": 270,
+          "text": "//ネクストインターバル使う"
+        },
+        {
+          "line": 271,
+          "text": "skill sp_fmrim_joker_rainbow_joi0:sk_ms"
+        },
+        {
+          "line": 272,
+          "text": "{"
+        },
+        {
+          "line": 273,
+          "text": "wait_time = 50"
+        },
+        {
+          "line": 274,
+          "text": "damage = -3"
+        },
+        {
+          "line": 275,
+          "text": "next3 = sp_rainbow_dclaw0,sp_rainbow_dclaw4,sp_rainbow_dclaw7,sp_rainbow_dclaw10,sp_rainbow_dclaw_kb,sp_rainbow_dclaw_kb_b,sp_rainbow_dclaw_kb_c,sp_rainbow_dclaw_kb_d"
+        },
+        {
+          "line": 276,
+          "text": "joint_skill = on"
+        },
+        {
+          "line": 277,
+          "text": "}"
+        },
+        {
+          "line": 278,
+          "text": "skill sp_rainbow_dclaw0"
+        },
+        {
+          "line": 279,
+          "text": "{"
+        },
+        {
+          "line": 280,
+          "text": "joint_skill = on"
+        },
+        {
+          "line": 281,
+          "text": "range = 10"
+        },
+        {
+          "line": 282,
+          "text": "speed = 100"
+        },
+        {
+          "line": 283,
+          "text": "rush = 2"
+        },
+        {
+          "line": 284,
+          "text": "rush_interval = -1"
+        },
+        {
+          "line": 285,
+          "text": "rush_degree = 80"
+        }
+      ]
+    }
+  ],
+  "original_data_count": 3,
+  "Work_gate_without_6F0_is_supported": true,
+  "not_proven": [
+    "That these 3 source skills reach normal heal in original legal battle",
+    "Final 0x248 value if native compiled default/qualifier differs from Work parser",
+    "HP bar renderer and aftercore/Unit return",
+    "Old EXE Gameplay Golden or new strict match"
+  ],
+  "recommendation": "Work owner can stage one native-conformant synthetic test with an explicit negative-flash source; MUST gate on actual runtime compiled +248 and verify all other inputs. Do not change m_heal flash5.",
+  "old_gameplay": 0,
+  "strict_match": 0
+}

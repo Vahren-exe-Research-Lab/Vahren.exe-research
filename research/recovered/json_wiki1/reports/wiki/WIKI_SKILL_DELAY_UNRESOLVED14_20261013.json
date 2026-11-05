@@ -1,0 +1,340 @@
+{
+  "classification": "ORIGINAL_DAT_HELP_DELAY_DISAGREEMENT / NOT NATIVE",
+  "count": 14,
+  "items": {
+    "s_miryosk2": {
+      "file": "a_default/script/30_スキル/F10_missile.dat",
+      "line": 2590,
+      "data": [
+        {
+          "line": 2595,
+          "text": "help = $射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（魅了されたサケノミ）]"
+        },
+        {
+          "line": 2596,
+          "text": "hide_help = on"
+        },
+        {
+          "line": 2606,
+          "text": "func = summon"
+        }
+      ]
+    },
+    "toonoclaw": {
+      "file": "a_default/script/30_スキル/F11_sword.dat",
+      "line": 4157,
+      "data": [
+        {
+          "line": 4162,
+          "text": "help = $射程距離：250$技中移動力：100％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：突撃][攻撃×100％][範囲攻撃：中]（5回）（斬撃エフェクト一つ当たり）$[属性：突撃][魔力× 20％][範囲攻撃：大]（5回）（斬撃エフェクト一つ当たり）$―――――――――$強靭な爪で獲物を引き裂く。傷を負った獲物はスタンドに感染して恐竜になる。"
+        },
+        {
+          "line": 4166,
+          "text": "gun_delay = toonoclaw*2"
+        },
+        {
+          "line": 4172,
+          "text": "next = tclaw_nt0"
+        }
+      ]
+    },
+    "toono_devour": {
+      "file": "a_default/script/30_スキル/F11_sword.dat",
+      "line": 4450,
+      "data": [
+        {
+          "line": 4453,
+          "text": "help = $射程距離：100$技中移動力：100％$使用後行動不能　（期間：通常のスキル1回分）$―――――――――$[属性：突撃][攻撃×100％][範囲攻撃：中]（2回）$[属性：突撃][魔力× 20％][範囲攻撃：中]$―――――――――$追加効果$ノックバック（歩兵にも効く）$傷を負った獲物はスタンドに感染して恐竜になる。"
+        },
+        {
+          "line": 4456,
+          "text": "next = toono_devour_joi"
+        },
+        {
+          "line": 4457,
+          "text": "next_last = on"
+        },
+        {
+          "line": 4458,
+          "text": "pair_next = toono_devour_nt2b"
+        },
+        {
+          "line": 4460,
+          "text": "gun_delay = toono_devour*1"
+        }
+      ]
+    },
+    "s_scary": {
+      "file": "a_default/script/30_スキル/F11_sword.dat",
+      "line": 4627,
+      "data": [
+        {
+          "line": 4632,
+          "text": "help = $射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（奴隷少年）]"
+        },
+        {
+          "line": 4633,
+          "text": "hide_help = on"
+        },
+        {
+          "line": 4643,
+          "text": "func = summon"
+        }
+      ]
+    },
+    "yuh_devour": {
+      "file": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 8532,
+      "data": [
+        {
+          "line": 8535,
+          "text": "help = $射程距離：100$技中移動力：100％$使用後行動不能　（期間：通常のスキル1回分）$―――――――――$[属性：近接][攻撃×135％][範囲攻撃：中]（2回）$[属性：近接][魔力× 40％][範囲攻撃：中]$―――――――――$追加効果$ノックバック（歩兵にも効く）"
+        },
+        {
+          "line": 8539,
+          "text": "next = yuh_devour_joi"
+        },
+        {
+          "line": 8540,
+          "text": "next_last = on"
+        },
+        {
+          "line": 8541,
+          "text": "pair_next = yuh_devour_nt2b"
+        },
+        {
+          "line": 8543,
+          "text": "gun_delay = yuh_devour*1"
+        }
+      ]
+    },
+    "s_dorei": {
+      "file": "a_default/script/30_スキル/F21_奴隷少年summon_鞭_突撃_斬撃.dat",
+      "line": 103,
+      "data": [
+        {
+          "line": 108,
+          "text": "help = $射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（奴隷少年）]"
+        },
+        {
+          "line": 109,
+          "text": "hide_help = on"
+        },
+        {
+          "line": 118,
+          "text": "func = summon"
+        }
+      ]
+    },
+    "s_butadorei": {
+      "file": "a_default/script/30_スキル/F21_奴隷少年summon_鞭_突撃_斬撃.dat",
+      "line": 565,
+      "data": [
+        {
+          "line": 570,
+          "text": "help = $射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（豚奴隷）]"
+        },
+        {
+          "line": 571,
+          "text": "hide_help = on"
+        },
+        {
+          "line": 580,
+          "text": "func = summon"
+        }
+      ]
+    },
+    "rr_knife": {
+      "file": "a_default/script/31_ユニットスキル/U_11_15_サセバトミサタ～SWW.dat",
+      "line": 29,
+      "data": [
+        {
+          "line": 33,
+          "text": "help = $射程距離：350　（接敵時使用不能）$技中移動力：100％$使用後行動不能　（期間：通常のスキル3回分）$―――――――――$[属性：近接][攻撃× 80％]（2回×5）$[属性：近接][技術×100％]（2回×5）$―――――――――$追加効果$幻覚：50％"
+        },
+        {
+          "line": 40,
+          "text": "gun_delay = rr_knife*3"
+        },
+        {
+          "line": 43,
+          "text": "next3 = rr_knife_nt1,rr_knife_nt2,rr_knife_nt3"
+        }
+      ]
+    },
+    "dragonclaw": {
+      "file": "a_default/script/32_ボススキル/B_2222_レイノアレフ.dat",
+      "line": 33,
+      "data": [
+        {
+          "line": 38,
+          "text": "help = $射程距離：200$技中移動力：0％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：闇][攻撃×120％][範囲攻撃：大]（5回）（斬撃エフェクト一つ当たり）$[属性：闇][魔力× 30％][範囲攻撃：大]（5回）（斬撃エフェクト一つ当たり）$―――――――――$両腕の巨大な爪で前方を引き裂く。"
+        },
+        {
+          "line": 41,
+          "text": "wait_time = 30"
+        },
+        {
+          "line": 43,
+          "text": "gun_delay = dragonclaw*5"
+        },
+        {
+          "line": 49,
+          "text": "next = dclaw_nt0"
+        },
+        {
+          "line": 50,
+          "text": "pair_next = sp_hitotachi2_pr"
+        },
+        {
+          "line": 51,
+          "text": "just_next = sp_hitotachi2_sound"
+        }
+      ]
+    },
+    "ud_dragonclaw": {
+      "file": "a_default/script/32_ボススキル/B_2323_リュージ騎士団.dat",
+      "line": 630,
+      "data": [
+        {
+          "line": 635,
+          "text": "help = $射程距離：200$技中移動力：0％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：近接][攻撃×100％][範囲攻撃：大]（5回）（斬撃エフェクト一つ当たり）$[属性：風][魔力× 20％][範囲攻撃：大]（5回）（斬撃エフェクト一つ当たり）$―――――――――$両腕の巨大な爪で前方を引き裂く。"
+        },
+        {
+          "line": 638,
+          "text": "wait_time = 30"
+        },
+        {
+          "line": 640,
+          "text": "gun_delay = ud_dragonclaw*11"
+        },
+        {
+          "line": 646,
+          "text": "next = ud_dclaw_nt0"
+        },
+        {
+          "line": 647,
+          "text": "pair_next = sp_hitotachi2_pr"
+        },
+        {
+          "line": 648,
+          "text": "just_next = sp_hitotachi2_sound"
+        }
+      ]
+    },
+    "metalclaw_MPT": {
+      "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 9125,
+      "data": [
+        {
+          "line": 9130,
+          "text": "help = $射程距離：200$技中移動力：0％$使用後行動不能　（期間：通常のスキル4回分）$―――――――――$[属性：近接][攻撃×100％][範囲攻撃：大]（5回）（斬撃エフェクト一つ当たり）$[属性：近接][魔力× 20％][範囲攻撃：大]（5回）（斬撃エフェクト一つ当たり）$―――――――――$鋼鉄の爪で前方を引き裂く。"
+        },
+        {
+          "line": 9133,
+          "text": "wait_time = 5"
+        },
+        {
+          "line": 9135,
+          "text": "gun_delay = metalclaw*4"
+        },
+        {
+          "line": 9141,
+          "text": "next = mclaw_nt0_MPT"
+        },
+        {
+          "line": 9142,
+          "text": "pair_next = sp_hitotachi2_pr"
+        },
+        {
+          "line": 9143,
+          "text": "just_next = sp_hitotachi2_sound"
+        }
+      ]
+    },
+    "misya_devour": {
+      "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 15511,
+      "data": [
+        {
+          "line": 15514,
+          "text": "help = $射程距離：100$技中移動力：100％$使用後行動不能　（期間：通常のスキル1回分）$―――――――――$[属性：近接][攻撃×100％][範囲攻撃：中]（2回）$[属性：近接][魔力× 20％][範囲攻撃：中]$―――――――――$追加効果$ノックバック（歩兵にも効く）$獲物を食い殺すと射精する（召喚：精液系）。"
+        },
+        {
+          "line": 15517,
+          "text": "next = misya_devour_joi"
+        },
+        {
+          "line": 15518,
+          "text": "next_last = on"
+        },
+        {
+          "line": 15519,
+          "text": "pair_next = misya_devour_nt2b"
+        },
+        {
+          "line": 15521,
+          "text": "gun_delay = misya_devour*1"
+        }
+      ]
+    },
+    "s_dopyu": {
+      "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+      "line": 15691,
+      "data": [
+        {
+          "line": 15696,
+          "text": "help = $射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（奴隷少年）]"
+        },
+        {
+          "line": 15697,
+          "text": "hide_help = on"
+        },
+        {
+          "line": 15707,
+          "text": "func = summon"
+        }
+      ]
+    },
+    "bosstoono_attack": {
+      "file": "a_default/script/32_ボススキル/B_2_クレイジーサイコホモ.dat",
+      "line": 389,
+      "data": [
+        {
+          "line": 392,
+          "text": "help = $射程距離：200$技中移動力：50％$―――――――――$使用後行動不能　（期間：通常のスキル8回分）$[属性：近接][攻撃×100％][範囲攻撃：中]（84回）$[属性：近接][魔力× 20％][範囲攻撃：中]（84回）$―――――――――$敵の動きを止めてからラッシュパンチをぶちかます。"
+        },
+        {
+          "line": 397,
+          "text": "msg@chuboss_toono = （人間）やめてくださいよホントに！@sp_toono_rush2"
+        },
+        {
+          "line": 398,
+          "text": "msg@boss_toono = （人間）やめてくださいよホントに！@sp_toono_rush2"
+        },
+        {
+          "line": 399,
+          "text": "msg@boss_toono_dr = （人間）やめてくださいよホントに！@sp_toono_rush2"
+        },
+        {
+          "line": 400,
+          "text": "msg@boss_toono_r = （人間）やめてくださいよホントに！@sp_toono_rush2"
+        },
+        {
+          "line": 405,
+          "text": "gun_delay = bosstoono_attack*28"
+        },
+        {
+          "line": 443,
+          "text": "next3 = bosstoono_attack_nt1,bosstoono_attack_nt2,sp_clock_so"
+        },
+        {
+          "line": 444,
+          "text": "next_first = on"
+        }
+      ]
+    }
+  },
+  "reason": "Parent-chain lookup has no direct or inherited delay; other properties or help accuracy unresolved",
+  "original_exe_gameplay": 0
+}

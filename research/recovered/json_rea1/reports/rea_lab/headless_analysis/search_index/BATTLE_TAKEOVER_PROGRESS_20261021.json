@@ -1,0 +1,47 @@
+{
+  "id": "BRIDGE-20261021-RESEARCH-01",
+  "scope": "Investigation readiness for first original-EXE -> external-EXE -> original-strategy proof, NOT feature completion",
+  "score_type": "subjective evidence-weighted engineering estimate",
+  "source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "dimensions": [
+    {
+      "name": "Ghidra / source / CALL evidence",
+      "weight": 10,
+      "completion_percent": 100
+    },
+    {
+      "name": "Native start entry, scene branch and ABI",
+      "weight": 20,
+      "completion_percent": 70
+    },
+    {
+      "name": "Real start packet map/unit/side/seed",
+      "weight": 25,
+      "completion_percent": 15
+    },
+    {
+      "name": "Finish ABI, state rehydration and one-time result commit",
+      "weight": 20,
+      "completion_percent": 45
+    },
+    {
+      "name": "Task, VM/event, UI freeze/resume",
+      "weight": 15,
+      "completion_percent": 20
+    },
+    {
+      "name": "End-to-end original-game external process smoke test",
+      "weight": 10,
+      "completion_percent": 0
+    }
+  ],
+  "weighted_percent": 39.75,
+  "range_percent": [
+    30,
+    50
+  ],
+  "gameplay_original_goldens": 0,
+  "actual_external_battle_exe_handoff_pass": 0,
+  "status": "STATIC ONLY / NOT READY / NOT RUN",
+  "note": "Percentage is an approximate project decision aid, not task completion data or verified technical probability."
+}

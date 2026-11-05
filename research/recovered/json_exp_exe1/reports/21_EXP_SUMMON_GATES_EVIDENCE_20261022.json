@@ -1,0 +1,988 @@
+{
+  "id": "EXP-ENDTRANSFER-20261022-03/GATES",
+  "status": "STATIC_VERIFIED_GAMEPLAY_NOT_RUN",
+  "source_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "source_db": "HAKUSHIN067_CURRENT_CANONICAL_V3_20261022.sqlite",
+  "source_db_sha256": "0B057C43D30EAEC74588C84CF7E09AA7A488BD0FF170925591953EF578AFCB25",
+  "dat_zip_sha256": "A1DAC7209FCA6FBF7D05D956054047B4C36E5149EB100434BF796CCB94970423",
+  "native_checks": [
+    {
+      "function": "0x544290",
+      "site": "0x5442c1",
+      "bytes": "8bf9",
+      "instruction": "mov edi, ecx"
+    },
+    {
+      "function": "0x544290",
+      "site": "0x544380",
+      "bytes": "89bed0010000",
+      "instruction": "mov dword ptr [esi + 0x1d0], edi"
+    },
+    {
+      "function": "0x547490",
+      "site": "0x547906",
+      "bytes": "33c9",
+      "instruction": "xor ecx, ecx"
+    },
+    {
+      "function": "0x547490",
+      "site": "0x54790a",
+      "bytes": "e881c9ffff",
+      "instruction": "call 0x544290"
+    },
+    {
+      "function": "0x547490",
+      "site": "0x547a68",
+      "bytes": "8d457c",
+      "instruction": "lea eax, [ebp + 0x7c]"
+    },
+    {
+      "function": "0x547490",
+      "site": "0x547a6b",
+      "bytes": "8928",
+      "instruction": "mov dword ptr [eax], ebp"
+    },
+    {
+      "function": "0x547490",
+      "site": "0x547a6d",
+      "bytes": "895808",
+      "instruction": "mov dword ptr [eax + 8], ebx"
+    },
+    {
+      "function": "0x547490",
+      "site": "0x547a7f",
+      "bytes": "c6400e00",
+      "instruction": "mov byte ptr [eax + 0xe], 0"
+    },
+    {
+      "function": "0x547490",
+      "site": "0x547a83",
+      "bytes": "8b8da0000000",
+      "instruction": "mov ecx, dword ptr [ebp + 0xa0]"
+    },
+    {
+      "function": "0x547490",
+      "site": "0x547a89",
+      "bytes": "51",
+      "instruction": "push ecx"
+    },
+    {
+      "function": "0x547490",
+      "site": "0x547a8a",
+      "bytes": "51",
+      "instruction": "push ecx"
+    },
+    {
+      "function": "0x547490",
+      "site": "0x547a8b",
+      "bytes": "55",
+      "instruction": "push ebp"
+    },
+    {
+      "function": "0x547490",
+      "site": "0x547a8c",
+      "bytes": "e8bfa30000",
+      "instruction": "call 0x551e50"
+    },
+    {
+      "function": "0x547490",
+      "site": "0x547937",
+      "bytes": "85c0",
+      "instruction": "test eax, eax"
+    },
+    {
+      "function": "0x547490",
+      "site": "0x547939",
+      "bytes": "0f8596000000",
+      "instruction": "jne 0x5479d5"
+    },
+    {
+      "function": "0x547490",
+      "site": "0x54798f",
+      "bytes": "0f8528010000",
+      "instruction": "jne 0x547abd"
+    },
+    {
+      "function": "0x547490",
+      "site": "0x547abf",
+      "bytes": "8b5058",
+      "instruction": "mov edx, dword ptr [eax + 0x58]"
+    },
+    {
+      "function": "0x547490",
+      "site": "0x547ac4",
+      "bytes": "ffd2",
+      "instruction": "call edx"
+    },
+    {
+      "function": "0x547490",
+      "site": "0x547ae0",
+      "bytes": "eb86",
+      "instruction": "jmp 0x547a68"
+    },
+    {
+      "function": "0x547490",
+      "site": "0x547aeb",
+      "bytes": "32c0",
+      "instruction": "xor al, al"
+    },
+    {
+      "function": "0x547490",
+      "site": "0x547aed",
+      "bytes": "eba4",
+      "instruction": "jmp 0x547a93"
+    },
+    {
+      "function": "0x54e7b0",
+      "site": "0x54ea15",
+      "bytes": "c744242000000000",
+      "instruction": "mov dword ptr [esp + 0x20], 0"
+    },
+    {
+      "function": "0x54e7b0",
+      "site": "0x54ebdb",
+      "bytes": "68aca16200",
+      "instruction": "push 0x62a1ac"
+    },
+    {
+      "function": "0x54e7b0",
+      "site": "0x54ec4e",
+      "bytes": "c744242001000000",
+      "instruction": "mov dword ptr [esp + 0x20], 1"
+    },
+    {
+      "function": "0x54e7b0",
+      "site": "0x54ec58",
+      "bytes": "68b4a16200",
+      "instruction": "push 0x62a1b4"
+    },
+    {
+      "function": "0x54e7b0",
+      "site": "0x54eccb",
+      "bytes": "c744242002000000",
+      "instruction": "mov dword ptr [esp + 0x20], 2"
+    },
+    {
+      "function": "0x54e7b0",
+      "site": "0x54ecd5",
+      "bytes": "68bca16200",
+      "instruction": "push 0x62a1bc"
+    },
+    {
+      "function": "0x54e7b0",
+      "site": "0x54ed49",
+      "bytes": "c744242003000000",
+      "instruction": "mov dword ptr [esp + 0x20], 3"
+    },
+    {
+      "function": "0x54e7b0",
+      "site": "0x54ed55",
+      "bytes": "83b8d001000000",
+      "instruction": "cmp dword ptr [eax + 0x1d0], 0"
+    },
+    {
+      "function": "0x54e7b0",
+      "site": "0x54ed5e",
+      "bytes": "c744242000000000",
+      "instruction": "mov dword ptr [esp + 0x20], 0"
+    },
+    {
+      "function": "0x551e50",
+      "site": "0x551e74",
+      "bytes": "83b8d001000000",
+      "instruction": "cmp dword ptr [eax + 0x1d0], 0"
+    },
+    {
+      "function": "0x551e50",
+      "site": "0x551e7b",
+      "bytes": "0f8491010000",
+      "instruction": "je 0x552012"
+    },
+    {
+      "function": "0x551e50",
+      "site": "0x551ea3",
+      "bytes": "8bb8c8010000",
+      "instruction": "mov edi, dword ptr [eax + 0x1c8]"
+    },
+    {
+      "function": "0x551e50",
+      "site": "0x551f2f",
+      "bytes": "8b88fc850100",
+      "instruction": "mov ecx, dword ptr [eax + 0x185fc]"
+    },
+    {
+      "function": "0x551e50",
+      "site": "0x551fb2",
+      "bytes": "01976c010000",
+      "instruction": "add dword ptr [edi + 0x16c], edx"
+    },
+    {
+      "function": "0x553390",
+      "site": "0x553698",
+      "bytes": "33c9",
+      "instruction": "xor ecx, ecx"
+    },
+    {
+      "function": "0x553390",
+      "site": "0x55369c",
+      "bytes": "e8ef0bffff",
+      "instruction": "call 0x544290"
+    },
+    {
+      "function": "0x599bd0",
+      "site": "0x59f49f",
+      "bytes": "b92c566200",
+      "instruction": "mov ecx, 0x62562c"
+    },
+    {
+      "function": "0x599bd0",
+      "site": "0x59f4a4",
+      "bytes": "e8b75becff",
+      "instruction": "call 0x465060"
+    },
+    {
+      "function": "0x599bd0",
+      "site": "0x59f53a",
+      "bytes": "8db538030000",
+      "instruction": "lea esi, [ebp + 0x338]"
+    },
+    {
+      "function": "0x599bd0",
+      "site": "0x59f558",
+      "bytes": "e8233decff",
+      "instruction": "call 0x463280"
+    }
+  ],
+  "literals": {
+    "0x62562c": "yorozu",
+    "0x62a1ac": "troop",
+    "0x62a1b4": "troop2",
+    "0x62a1bc": "troop3",
+    "0x62a248": "center"
+  },
+  "kind4_ratio": {
+    "jump_table_slot": "0x552028",
+    "target": "0x551ec5",
+    "constant_va": "0x63b070",
+    "value": 0.01
+  },
+  "functions": [
+    {
+      "va": "0x00547490",
+      "origin": "ORIGINAL_20261020_GHIDRA_PSEUDOC_UNCORRECTED",
+      "code_sha256": "F29CED75230E274EB9A8C2B14123E9206C1E83FB9218895C2347FB62840CF2CA",
+      "same_pseudocode_as_v2": true,
+      "excerpts": [
+        {
+          "line": 182,
+          "text": "          piVar1 = (int *)FUN_00544290();"
+        },
+        {
+          "line": 254,
+          "text": "    FUN_00551e50();"
+        }
+      ]
+    },
+    {
+      "va": "0x00553390",
+      "origin": "ORIGINAL_20261020_GHIDRA_PSEUDOC_UNCORRECTED",
+      "code_sha256": "8D27FFAC3177CD03F8CEED8FB6C64C49D47C63801A7E47BA2CC4195E182B7563",
+      "same_pseudocode_as_v2": true,
+      "excerpts": [
+        {
+          "line": 68,
+          "text": "    local_250 = *(int *)(iVar6 + 0x1c8);"
+        },
+        {
+          "line": 164,
+          "text": "          piVar3 = (int *)FUN_00544290();"
+        },
+        {
+          "line": 181,
+          "text": "          iVar6 = *(int *)(local_244 + 0x33c);"
+        }
+      ]
+    },
+    {
+      "va": "0x00544290",
+      "origin": "ORIGINAL_20261020_GHIDRA_PSEUDOC_UNCORRECTED",
+      "code_sha256": "2ADA4388D371964A4578D257DE0F2B6EE0F4B732144E205C38294F4FB9D4B9A3",
+      "same_pseudocode_as_v2": true,
+      "excerpts": [
+        {
+          "line": 3,
+          "text": "// Name: FUN_00544290 | Bytes: 719"
+        },
+        {
+          "line": 8,
+          "text": "void __thiscall FUN_00544290(int param_1,int param_2,int param_3,int param_4,int param_5)"
+        },
+        {
+          "line": 66,
+          "text": "      param_3 = *(int *)(iVar6 + 0x1c8);"
+        }
+      ]
+    },
+    {
+      "va": "0x00551E50",
+      "origin": "REPAIRED_GHIDRA_FRESH_DECOMP",
+      "code_sha256": "9032EB2A3AB30AC1AC0B9DD00DC58A803CB25CE1E7300529072D84BE76952875",
+      "same_pseudocode_as_v2": true,
+      "excerpts": [
+        {
+          "line": 11,
+          "text": "void FUN_00551e50(undefined *ctx_eax,dword arg_stack_0,dword arg_stack_1,dword arg_stack_2)"
+        },
+        {
+          "line": 43,
+          "text": "  if (*(int *)(iVar1 + 0x1d0) == 0) {"
+        },
+        {
+          "line": 65,
+          "text": "  iVar1 = *(int *)(iVar1 + 0x1c8);"
+        }
+      ]
+    },
+    {
+      "va": "0x005774A0",
+      "origin": "ORIGINAL_20261020_GHIDRA_PSEUDOC_UNCORRECTED",
+      "code_sha256": "151CAAB7CEEFEC3A3B6CD1413171DD7E85B7E4673B9581DDE582555033902A1E",
+      "same_pseudocode_as_v2": true,
+      "excerpts": [
+        {
+          "line": 36,
+          "text": "  if (*(int *)(iVar3 + 0x1e594) != 0) {"
+        },
+        {
+          "line": 37,
+          "text": "    *(int *)(iVar3 + 0x1e594) = param_1;"
+        }
+      ]
+    },
+    {
+      "va": "0x00599BD0",
+      "origin": "ORIGINAL_20261020_GHIDRA_PSEUDOC_UNCORRECTED",
+      "code_sha256": "94F69BED55F2E76978B831CCF1179B94987DE2C655B7B861B4E8B49A99588C64",
+      "same_pseudocode_as_v2": true,
+      "excerpts": [
+        {
+          "line": 1530,
+          "text": "  *(uint *)(param_3 + 0x1c8) = (uint)(cVar3 != '\\0');"
+        },
+        {
+          "line": 1537,
+          "text": "  iVar7 = *(int *)(param_3 + 0x1c8);"
+        },
+        {
+          "line": 1543,
+          "text": "  *(int *)(param_3 + 0x1c8) = iVar7;"
+        },
+        {
+          "line": 1621,
+          "text": "  *(undefined4 *)(param_3 + 0x1d0) = uVar10;"
+        },
+        {
+          "line": 3360,
+          "text": "      FUN_00463280(param_3 + 0x338,apuStack_18f4,uVar8);"
+        },
+        {
+          "line": 3373,
+          "text": "  apuStack_18f4[0] = *(undefined4 **)(param_3 + 0x33c);"
+        }
+      ]
+    },
+    {
+      "va": "0x0054E7B0",
+      "origin": "ORIGINAL_20261020_GHIDRA_PSEUDOC_UNCORRECTED",
+      "code_sha256": "B66F05D87C7E4880B668E637FEF275F24EFA80A6DC1948BA6B13BB42702B50F0",
+      "same_pseudocode_as_v2": true,
+      "excerpts": [
+        {
+          "line": 139,
+          "text": "    local_27c = *(int *)(param_2 + 0x33c);"
+        },
+        {
+          "line": 164,
+          "text": "    local_27c = *(int *)(param_2 + 0x33c);"
+        },
+        {
+          "line": 189,
+          "text": "    local_27c = *(int *)(param_2 + 0x33c);"
+        },
+        {
+          "line": 204,
+          "text": "    local_27c = *(int *)(param_2 + 0x33c);"
+        },
+        {
+          "line": 219,
+          "text": "    local_27c = *(int *)(param_2 + 0x33c);"
+        },
+        {
+          "line": 230,
+          "text": "  if (*(int *)(local_278 + 0x1d0) == 0) {"
+        },
+        {
+          "line": 295,
+          "text": "      local_28c = *(int **)(local_278 + 0x1d0);"
+        },
+        {
+          "line": 317,
+          "text": "      local_28c = *(int **)(iVar6 + 0x1d0);"
+        },
+        {
+          "line": 351,
+          "text": "    local_258 = (double)CONCAT44(local_258._4_4_,*(undefined4 *)(param_2 + 0x33c));"
+        }
+      ]
+    }
+  ],
+  "dat_source_census": {
+    "files": 590,
+    "explicit_uncommented_lines": 85,
+    "warning": "Source-line inventory only; not effective inherited skill count. Excludes non-script DAT.",
+    "occurrences": [
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/10_ユニット/110_イベント人材.dat",
+        "line": 1962,
+        "text": "yorozu = troop",
+        "file_sha256": "13CE9E956929E4B67598B944F00B391F4FEFFC9907855D63DB3813DA99C10FB9"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/2000_勢力ストーリー/po25_story.dat",
+        "line": 445,
+        "text": "yorozu = troop3",
+        "file_sha256": "CA633BCECB58B8B831922ED1A1B1E3E3645EB0C006D441BA9D0555778F3E28A8"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/2000_勢力ストーリー/po25_story.dat",
+        "line": 531,
+        "text": "yorozu = troop3",
+        "file_sha256": "CA633BCECB58B8B831922ED1A1B1E3E3645EB0C006D441BA9D0555778F3E28A8"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/F20_summon.dat",
+        "line": 5685,
+        "text": "yorozu = troop3",
+        "file_sha256": "8E17FF4566DFC1547323B5ACC89DEE41B918EA946BE160555B758431C0EC3AC3"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/F20_summon.dat",
+        "line": 6177,
+        "text": "yorozu = troop",
+        "file_sha256": "8E17FF4566DFC1547323B5ACC89DEE41B918EA946BE160555B758431C0EC3AC3"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/F20_summon.dat",
+        "line": 6256,
+        "text": "yorozu = troop3",
+        "file_sha256": "8E17FF4566DFC1547323B5ACC89DEE41B918EA946BE160555B758431C0EC3AC3"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/F20_summon.dat",
+        "line": 6271,
+        "text": "yorozu = troop3",
+        "file_sha256": "8E17FF4566DFC1547323B5ACC89DEE41B918EA946BE160555B758431C0EC3AC3"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/F20_summon.dat",
+        "line": 6286,
+        "text": "yorozu = troop3",
+        "file_sha256": "8E17FF4566DFC1547323B5ACC89DEE41B918EA946BE160555B758431C0EC3AC3"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/F20_summon.dat",
+        "line": 6301,
+        "text": "yorozu = troop3",
+        "file_sha256": "8E17FF4566DFC1547323B5ACC89DEE41B918EA946BE160555B758431C0EC3AC3"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/F20_summon.dat",
+        "line": 6408,
+        "text": "yorozu = troop3",
+        "file_sha256": "8E17FF4566DFC1547323B5ACC89DEE41B918EA946BE160555B758431C0EC3AC3"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/F20_summon.dat",
+        "line": 9824,
+        "text": "yorozu = troop3",
+        "file_sha256": "8E17FF4566DFC1547323B5ACC89DEE41B918EA946BE160555B758431C0EC3AC3"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/F20_summon.dat",
+        "line": 10009,
+        "text": "yorozu = troop3",
+        "file_sha256": "8E17FF4566DFC1547323B5ACC89DEE41B918EA946BE160555B758431C0EC3AC3"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/F20_summon.dat",
+        "line": 10677,
+        "text": "yorozu = troop",
+        "file_sha256": "8E17FF4566DFC1547323B5ACC89DEE41B918EA946BE160555B758431C0EC3AC3"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/F20_summon.dat",
+        "line": 11981,
+        "text": "yorozu = troop",
+        "file_sha256": "8E17FF4566DFC1547323B5ACC89DEE41B918EA946BE160555B758431C0EC3AC3"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/F20_summon.dat",
+        "line": 12545,
+        "text": "yorozu = troop",
+        "file_sha256": "8E17FF4566DFC1547323B5ACC89DEE41B918EA946BE160555B758431C0EC3AC3"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/F20_summon.dat",
+        "line": 13266,
+        "text": "yorozu = troop",
+        "file_sha256": "8E17FF4566DFC1547323B5ACC89DEE41B918EA946BE160555B758431C0EC3AC3"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/F20_summon.dat",
+        "line": 13665,
+        "text": "yorozu = troop",
+        "file_sha256": "8E17FF4566DFC1547323B5ACC89DEE41B918EA946BE160555B758431C0EC3AC3"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/F20_summon.dat",
+        "line": 15015,
+        "text": "yorozu = troop3",
+        "file_sha256": "8E17FF4566DFC1547323B5ACC89DEE41B918EA946BE160555B758431C0EC3AC3"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/F30_死亡時スキル.dat",
+        "line": 883,
+        "text": "yorozu = troop3",
+        "file_sha256": "F2AA80296373FDE740D58B81320FD9FD2EF3E6D3E1188FC4F12CF8595F8611F0"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/F30_死亡時スキル.dat",
+        "line": 1086,
+        "text": "yorozu = troop3",
+        "file_sha256": "F2AA80296373FDE740D58B81320FD9FD2EF3E6D3E1188FC4F12CF8595F8611F0"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/F30_死亡時スキル.dat",
+        "line": 1096,
+        "text": "yorozu = troop3",
+        "file_sha256": "F2AA80296373FDE740D58B81320FD9FD2EF3E6D3E1188FC4F12CF8595F8611F0"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/F30_死亡時スキル.dat",
+        "line": 1106,
+        "text": "yorozu = troop3",
+        "file_sha256": "F2AA80296373FDE740D58B81320FD9FD2EF3E6D3E1188FC4F12CF8595F8611F0"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/31_ユニットスキル/U_31_32_ぢゆし～サムソン.dat",
+        "line": 1370,
+        "text": "yorozu = troop3",
+        "file_sha256": "1E5F74A97553388E6A105066CC1A7C666D9578E8A6CB0F75F0E9B390A98F6F36"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 1819,
+        "text": "yorozu = troop3",
+        "file_sha256": "958D80B9071063DF3CFC81874E9ADA5A5A576D9E62F1A6F9BD97E8D4FC20787F"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 2244,
+        "text": "yorozu = troop3",
+        "file_sha256": "958D80B9071063DF3CFC81874E9ADA5A5A576D9E62F1A6F9BD97E8D4FC20787F"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+        "line": 4689,
+        "text": "yorozu =troop3",
+        "file_sha256": "0630568B86F9AED67A50BBB02055AF45B379C43C1469BC8CFDAB7C36614AC0C2"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+        "line": 4841,
+        "text": "yorozu =troop3",
+        "file_sha256": "0630568B86F9AED67A50BBB02055AF45B379C43C1469BC8CFDAB7C36614AC0C2"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+        "line": 43,
+        "text": "yorozu = troop",
+        "file_sha256": "1C045A84ADD57E07FC3C9EBBD6C4683C9F85D1B16389C6BD69C70ECC4E484C27"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/4000_AoW/unit_aow_264.dat",
+        "line": 329,
+        "text": "yorozu = troop3",
+        "file_sha256": "CB7DE01C1753EFD819CBE852DA5E259FC17BD359DC159FDA280F9665B264942E"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/4000_AoW/unit_aow_264.dat",
+        "line": 340,
+        "text": "yorozu = troop3",
+        "file_sha256": "CB7DE01C1753EFD819CBE852DA5E259FC17BD359DC159FDA280F9665B264942E"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/4000_AoW/unit_aow_264.dat",
+        "line": 350,
+        "text": "yorozu = troop3",
+        "file_sha256": "CB7DE01C1753EFD819CBE852DA5E259FC17BD359DC159FDA280F9665B264942E"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/4000_AoW/unit_aow_264.dat",
+        "line": 618,
+        "text": "yorozu = troop3",
+        "file_sha256": "CB7DE01C1753EFD819CBE852DA5E259FC17BD359DC159FDA280F9665B264942E"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/50_その他新システム/self_summon_skills.dat",
+        "line": 62,
+        "text": "yorozu = troop",
+        "file_sha256": "C88D123824E2D44B42B508ACCD403ED9AB4BEA75838C2B2F63E21B65EBE693A0"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSeasymode.dat",
+        "line": 72,
+        "text": "yorozu = troop",
+        "file_sha256": "7C625BE0DE399E2B26E09904CF95FDF5E71B2EA95CE2921F83AE541212B6BB45"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 553,
+        "text": "yorozu = troop3",
+        "file_sha256": "D1DD885629E1C3B224E92E23729B0D6D4D99D467A01A8CC47B795ACFECC518DF"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSnew.dat",
+        "line": 73,
+        "text": "yorozu = troop",
+        "file_sha256": "ED00127B5D070BC2D1B3A3F320A1634A980D9B207C21AFFBD7F0B827B25695EB"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSnew.dat",
+        "line": 129,
+        "text": "yorozu = troop3",
+        "file_sha256": "ED00127B5D070BC2D1B3A3F320A1634A980D9B207C21AFFBD7F0B827B25695EB"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 46,
+        "text": "yorozu = troop",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 54,
+        "text": "yorozu = troop3",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 62,
+        "text": "yorozu = troop3",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 70,
+        "text": "yorozu = troop3",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 86,
+        "text": "yorozu = troop",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 94,
+        "text": "yorozu = troop3",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 102,
+        "text": "yorozu = troop3",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 110,
+        "text": "yorozu = troop3",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 127,
+        "text": "yorozu = troop",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 135,
+        "text": "yorozu = troop3",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 143,
+        "text": "yorozu = troop3",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 151,
+        "text": "yorozu = troop3",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 168,
+        "text": "yorozu = troop",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 176,
+        "text": "yorozu = troop3",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 184,
+        "text": "yorozu = troop3",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 192,
+        "text": "yorozu = troop3",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 209,
+        "text": "yorozu = troop",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 217,
+        "text": "yorozu = troop3",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 225,
+        "text": "yorozu = troop3",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 233,
+        "text": "yorozu = troop3",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 250,
+        "text": "yorozu = troop",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 258,
+        "text": "yorozu = troop3",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 266,
+        "text": "yorozu = troop3",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 274,
+        "text": "yorozu = troop3",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 290,
+        "text": "yorozu = troop",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 298,
+        "text": "yorozu = troop",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 306,
+        "text": "yorozu = troop3",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 314,
+        "text": "yorozu = troop3",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 329,
+        "text": "yorozu = troop",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 337,
+        "text": "yorozu = troop3",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 345,
+        "text": "yorozu = troop3",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 353,
+        "text": "yorozu = troop3",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 368,
+        "text": "yorozu = troop",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 376,
+        "text": "yorozu = troop3",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 384,
+        "text": "yorozu = troop3",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 392,
+        "text": "yorozu = troop",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 406,
+        "text": "yorozu = troop",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 416,
+        "text": "yorozu = troop",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 602,
+        "text": "yorozu = troop",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 614,
+        "text": "yorozu = troop",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 625,
+        "text": "yorozu = troop",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 636,
+        "text": "yorozu = troop",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 676,
+        "text": "yorozu = troop",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 686,
+        "text": "yorozu = troop",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 772,
+        "text": "yorozu = troop3",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 784,
+        "text": "yorozu = troop3",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 863,
+        "text": "yorozu = troop3",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      },
+      {
+        "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+        "line": 1253,
+        "text": "yorozu = troop",
+        "file_sha256": "395B2AF6E476610C6E06452249B3CFC9BACCC9E6CE6628085E2AEE5CEC9580A6"
+      }
+    ]
+  },
+  "dat_examples": [
+    {
+      "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/F20_summon.dat",
+      "skill": "higekuma_summon_nt",
+      "line": 5679,
+      "source": "skill higekuma_summon_nt\r\n{\r\n\tsound = tm2_sonic005\r\n\timage = s_fire\r\n\tfunc = summon\r\n\tadd = hia0653\r\n\tyorozu = troop3\r\n\tw = 64\r\n\th = 96\r\n\ta = 160\r\n\tanime = 7\r\n\tanime_interval = 2\r\n\ttime = 12\r\n\trange= 100\r\n\tsummon_level = 100\r\n}"
+    },
+    {
+      "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/F20_summon.dat",
+      "skill": "sp_ykp_nt2",
+      "line": 6170,
+      "source": "skill sp_ykp_nt2\r\n{\r\n\tfunc = summon\r\n\tadd = wykp\r\n\ttime = 0\r\n\trange = -1\r\n\tsummon_level = 100\r\n\tyorozu = troop\r\n}"
+    },
+    {
+      "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/F20_summon.dat",
+      "skill": "s_yn_nt_senyo1",
+      "line": 6253,
+      "source": "skill s_yn_nt_senyo1:s_yn_nt\r\n{\r\n\tadd = yn_s1\r\n\tyorozu = troop3\r\n}"
+    },
+    {
+      "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/F20_summon.dat",
+      "skill": "joker_resummon",
+      "line": 10001,
+      "source": "skill joker_resummon\r\n{\r\n\twait_time = 35\r\n\tfunc = summon\r\n\tadd = joker_re\r\n\ttime = 1\r\n\trange = 50\r\n\tsummon_level = 100\r\n\tyorozu = troop3\r\n\trush = 1\r\n\tsound = tyakuti\r\n}"
+    }
+  ],
+  "limits": [
+    "No game execution",
+    "No universal proof of absent EXP transfer",
+    "Other EXP paths (drain) and later Troop changes not ruled out",
+    "Function ranges and pseudocode provenance distinguished"
+  ]
+}

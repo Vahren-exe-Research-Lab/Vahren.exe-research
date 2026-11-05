@@ -1,0 +1,6791 @@
+{
+  "status": "STATIC DAT LEXICAL ONLY / NOT NATIVE / NOT GAMEPLAY",
+  "source": "新約迫真戦記―ほのぼの神話ver0.67 豪華版(画像・音声削除版).zip",
+  "zip_sha256": "a1dac7209fca6fbf7d05d956054047b4c36e5149eb100434bf796ccb94970423",
+  "dat_count": 590,
+  "skill_declaration_count": 16554,
+  "unique_skill_names": 16554,
+  "parent_reference_count": 13049,
+  "casefold_duplicate_ids": [],
+  "missing_parent": [
+    {
+      "source_skill": "summon_togashi_0",
+      "missing_parent": "summon_togashi_base",
+      "file": "a_default/script/10_ユニット/110_イベント人材.dat",
+      "line": 1957,
+      "descendants": []
+    },
+    {
+      "source_skill": "giant_swing_CountA00",
+      "missing_parent": "giant_swing_CountAXX_base",
+      "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+      "line": 5,
+      "descendants": []
+    },
+    {
+      "source_skill": "giant_swing_CountB00",
+      "missing_parent": "giant_swing_CountBXX_base",
+      "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+      "line": 10,
+      "descendants": []
+    },
+    {
+      "source_skill": "giant_swing_CountA01",
+      "missing_parent": "giant_swing_CountAXX_base",
+      "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+      "line": 15,
+      "descendants": []
+    },
+    {
+      "source_skill": "giant_swing_CountB01",
+      "missing_parent": "giant_swing_CountBXX_base",
+      "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+      "line": 20,
+      "descendants": []
+    },
+    {
+      "source_skill": "giant_swing_CountA02",
+      "missing_parent": "giant_swing_CountAXX_base",
+      "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+      "line": 25,
+      "descendants": []
+    },
+    {
+      "source_skill": "giant_swing_CountB02",
+      "missing_parent": "giant_swing_CountBXX_base",
+      "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+      "line": 30,
+      "descendants": []
+    },
+    {
+      "source_skill": "giant_swing_CountA03",
+      "missing_parent": "giant_swing_CountAXX_base",
+      "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+      "line": 36,
+      "descendants": []
+    },
+    {
+      "source_skill": "giant_swing_CountB03",
+      "missing_parent": "giant_swing_CountBXX_base",
+      "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+      "line": 41,
+      "descendants": []
+    },
+    {
+      "source_skill": "giant_swing_CountAfix",
+      "missing_parent": "giant_swing_CountBXX_base",
+      "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+      "line": 50,
+      "descendants": []
+    },
+    {
+      "source_skill": "giant_swing_CountBfix",
+      "missing_parent": "giant_swing_CountBXX_base",
+      "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+      "line": 55,
+      "descendants": []
+    },
+    {
+      "source_skill": "stove_fire_wave_mag",
+      "missing_parent": "stove_fire_at",
+      "file": "a_default/script/116_仮設ランダムイベント61-70/skill_stove.dat",
+      "line": 851,
+      "descendants": []
+    },
+    {
+      "source_skill": "m_mrandom_nt1_2",
+      "missing_parent": "m_ligh_js",
+      "file": "a_default/script/30_スキル/F10_missile.dat",
+      "line": 4579,
+      "descendants": []
+    },
+    {
+      "source_skill": "watecannon_pr3",
+      "missing_parent": "watecannon_pr1",
+      "file": "a_default/script/30_スキル/F10_missile_砲撃リニューアル.dat",
+      "line": 779,
+      "descendants": []
+    },
+    {
+      "source_skill": "rmla_ch_old_yari_pr",
+      "missing_parent": "rmla_yari_pr",
+      "file": "a_default/script/30_スキル/F12_charge.dat",
+      "line": 1318,
+      "descendants": []
+    },
+    {
+      "source_skill": "ss_rmla_ch_old_yari_pr",
+      "missing_parent": "ss_rmla_yari_pr",
+      "file": "a_default/script/30_スキル/F12_charge.dat",
+      "line": 2098,
+      "descendants": []
+    },
+    {
+      "source_skill": "heal_clown_mprec",
+      "missing_parent": "sing_mprec",
+      "file": "a_default/script/30_スキル/F13_heal_support.dat",
+      "line": 1441,
+      "descendants": []
+    },
+    {
+      "source_skill": "syokubumper_arm_nt1",
+      "missing_parent": "sk_ns",
+      "file": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 15300,
+      "descendants": [
+        "syokubumper_arm_nt2"
+      ]
+    },
+    {
+      "source_skill": "Shakespeare_fire_wave_mag",
+      "missing_parent": "Shakespeare_fire_at",
+      "file": "a_default/script/30_スキル/F51_榴弾・延焼_プレッツヒェン.dat",
+      "line": 482,
+      "descendants": []
+    },
+    {
+      "source_skill": "aqua_times_pr3",
+      "missing_parent": "aqua_times_pr1",
+      "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+      "line": 2448,
+      "descendants": []
+    },
+    {
+      "source_skill": "m_magickbs_nt1_2",
+      "missing_parent": "m_ligh_js",
+      "file": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat",
+      "line": 1668,
+      "descendants": []
+    },
+    {
+      "source_skill": "sp_tusk_act1_kn",
+      "missing_parent": "tusk_gun_kn",
+      "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+      "line": 2343,
+      "descendants": []
+    },
+    {
+      "source_skill": "watecannon_w_pr3",
+      "missing_parent": "watecannon_w_pr1",
+      "file": "a_default/script/32_ボススキル/B_2222_レイノアレフ.dat",
+      "line": 517,
+      "descendants": []
+    },
+    {
+      "source_skill": "sp_gogogo",
+      "missing_parent": "sp_nannkasugoino",
+      "file": "a_default/script/32_ボススキル/B_505_閉店の日.dat",
+      "line": 371,
+      "descendants": []
+    },
+    {
+      "source_skill": "astk_kirakira_pr2",
+      "missing_parent": "astk_kirakira_pr",
+      "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+      "line": 1940,
+      "descendants": []
+    },
+    {
+      "source_skill": "astk_kirakira_pr3",
+      "missing_parent": "astk_kirakira_pr",
+      "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+      "line": 1945,
+      "descendants": []
+    },
+    {
+      "source_skill": "asasin_cream_weapon_glove_mag",
+      "missing_parent": "asasin_cream_weapon_grove_base",
+      "file": "a_default/script/33_仮設アサシン/skill_asasin_cream_weapon_glove.dat",
+      "line": 174,
+      "descendants": []
+    },
+    {
+      "source_skill": "hanzo_cream_weapon_glove_mag",
+      "missing_parent": "hanzo_cream_weapon_grove_base",
+      "file": "a_default/script/35_仮設半造/skill_hanzo_cream_weapon_glove.dat",
+      "line": 184,
+      "descendants": []
+    },
+    {
+      "source_skill": "s_defbarboat_nt2",
+      "missing_parent": "s_defbar_nt2",
+      "file": "a_default/script/45_内政_防衛兵器/siege_skill.dat",
+      "line": 3183,
+      "descendants": []
+    },
+    {
+      "source_skill": "s_defbarboat_nt3",
+      "missing_parent": "s_defbar_nt3",
+      "file": "a_default/script/45_内政_防衛兵器/siege_skill.dat",
+      "line": 3197,
+      "descendants": []
+    },
+    {
+      "source_skill": "demo1_range2",
+      "missing_parent": "demo_range1",
+      "file": "a_default/script/50_その他新システム/siki.dat",
+      "line": 153,
+      "descendants": []
+    },
+    {
+      "source_skill": "testskill",
+      "missing_parent": "sp_nannkasugoino",
+      "file": "a_default/script/6000_スキルテスト/skill_00_test.dat",
+      "line": 1,
+      "descendants": [
+        "testskillb"
+      ]
+    },
+    {
+      "source_skill": "hqreireteicpu",
+      "missing_parent": "hqreifretei",
+      "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+      "line": 347,
+      "descendants": []
+    },
+    {
+      "source_skill": "re_cannon_rts_nt1",
+      "missing_parent": "re_cannon_nt1",
+      "file": "a_default/script/8000_RTSシナリオ/RTSskill.dat",
+      "line": 550,
+      "descendants": []
+    },
+    {
+      "source_skill": "re_cannon_rts_nt3",
+      "missing_parent": "re_cannon_nt3",
+      "file": "a_default/script/8000_RTSシナリオ/RTSskill.dat",
+      "line": 556,
+      "descendants": []
+    },
+    {
+      "source_skill": "rtstocsamsp3_hub",
+      "missing_parent": "rtstocsamsp5",
+      "file": "a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+      "line": 640,
+      "descendants": []
+    },
+    {
+      "source_skill": "rtstocsam_mugen_nt",
+      "missing_parent": "rtstocsam",
+      "file": "a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+      "line": 656,
+      "descendants": []
+    }
+  ],
+  "unresolved_chains": {
+    "next3": [
+      {
+        "source_skill": "giant_swing_CountA00",
+        "target": "giant_swing_CountB_Eff",
+        "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+        "line": 7
+      },
+      {
+        "source_skill": "giant_swing_CountA01",
+        "target": "giant_swing_CountB_Eff",
+        "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+        "line": 17
+      },
+      {
+        "source_skill": "giant_swing_CountA02",
+        "target": "giant_swing_CountB_Eff",
+        "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+        "line": 27
+      },
+      {
+        "source_skill": "kenri_unei_nt2",
+        "target": "ncnc_cannon_nt3_ef2",
+        "file": "a_default/script/20_クラス/B_525_神聖UNEI帝国.dat",
+        "line": 480
+      },
+      {
+        "source_skill": "b_cannon_tiger_apcr_new",
+        "target": "b_cannon_apcr_ol",
+        "file": "a_default/script/30_スキル/C_必殺_クラス専用.dat",
+        "line": 1460
+      },
+      {
+        "source_skill": "icg_ch0_joi",
+        "target": "icg_ch1_js",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 3600
+      },
+      {
+        "source_skill": "oji_whip",
+        "target": "b_whip_js",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 5026
+      },
+      {
+        "source_skill": "dsnch0_joi",
+        "target": "dsnch1_js",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 5133
+      },
+      {
+        "source_skill": "kuso_yari0_joi",
+        "target": "kuso_yari1_js3",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 6509
+      },
+      {
+        "source_skill": "kuso_yari1",
+        "target": "kuso_yari1_js3",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 6522
+      },
+      {
+        "source_skill": "rmla_ch_old_js",
+        "target": "ef_rmla_yari",
+        "file": "a_default/script/30_スキル/F12_charge.dat",
+        "line": 1239
+      },
+      {
+        "source_skill": "rmla_ch_old_js",
+        "target": "ef_rmla_yari0",
+        "file": "a_default/script/30_スキル/F12_charge.dat",
+        "line": 1239
+      },
+      {
+        "source_skill": "ss_rmla_ch_old_js",
+        "target": "ef_rmla_yari",
+        "file": "a_default/script/30_スキル/F12_charge.dat",
+        "line": 2018
+      },
+      {
+        "source_skill": "ss_rmla_ch_old_js",
+        "target": "ef_rmla_yari0",
+        "file": "a_default/script/30_スキル/F12_charge.dat",
+        "line": 2018
+      },
+      {
+        "source_skill": "s_ncnc_dead1_10",
+        "target": "s_ncnc_dead2_10",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 14094
+      },
+      {
+        "source_skill": "re_cannon_test",
+        "target": "re_cannon_nt1",
+        "file": "a_default/script/30_スキル/F31_死亡時エフェクト.dat",
+        "line": 61
+      },
+      {
+        "source_skill": "sayonara_nt14",
+        "target": "car_dead_nt8",
+        "file": "a_default/script/30_スキル/F31_死亡時エフェクト.dat",
+        "line": 2265
+      },
+      {
+        "source_skill": "monzetsu_fire_ensyou_eff_fake",
+        "target": "monzetsu_fire_ensyou_eff_fake_at",
+        "file": "a_default/script/30_スキル/F50_延焼_究極悶絶少年.dat",
+        "line": 306
+      },
+      {
+        "source_skill": "monzetsu_fire_ensyou_eff_fake",
+        "target": "monzetsu_fire_ensyou_mag",
+        "file": "a_default/script/30_スキル/F50_延焼_究極悶絶少年.dat",
+        "line": 306
+      },
+      {
+        "source_skill": "monzetsu_fire_ensyou_eff_fin",
+        "target": "monzetsu_fire_ensyou_mag",
+        "file": "a_default/script/30_スキル/F50_延焼_究極悶絶少年.dat",
+        "line": 624
+      },
+      {
+        "source_skill": "masu3_pr0",
+        "target": "sp_udk_pr1",
+        "file": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+        "line": 164
+      },
+      {
+        "source_skill": "masu_hosi_ef1",
+        "target": "sp_masupa5_ef3",
+        "file": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+        "line": 522
+      },
+      {
+        "source_skill": "sp_masupa5_nt0_check",
+        "target": "sp_masupa5_nt5",
+        "file": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+        "line": 723
+      },
+      {
+        "source_skill": "sp_masupa5_nt0_check",
+        "target": "sp_masupa5_nt6",
+        "file": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+        "line": 723
+      },
+      {
+        "source_skill": "sp_masupa5_pair",
+        "target": "eff_jinzaisp",
+        "file": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+        "line": 1340
+      },
+      {
+        "source_skill": "sp_ndk2_ef1_flash1",
+        "target": "sp_ndk2_ef1_flash1_nt",
+        "file": "a_default/script/30_スキル/F61_核兵器.dat",
+        "line": 526
+      },
+      {
+        "source_skill": "b_milk_nt3",
+        "target": "b_milk_nt3_3",
+        "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+        "line": 751
+      },
+      {
+        "source_skill": "sp_tsuri_nt3",
+        "target": "b_tsuri_nt7e",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 5824
+      },
+      {
+        "source_skill": "sp_tsuri_nt3b",
+        "target": "b_tsuri_nt7e",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 5828
+      },
+      {
+        "source_skill": "jma_ligh_nt0",
+        "target": "jma_ligh_pr2",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 7304
+      },
+      {
+        "source_skill": "bakulaser",
+        "target": "m_ligh_js",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 10192
+      },
+      {
+        "source_skill": "mcy_grenade_pr0",
+        "target": "mcy_grenade_pr3",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 11076
+      },
+      {
+        "source_skill": "biim23_summon_nt4",
+        "target": "biim23_summon_nt4bc",
+        "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+        "line": 2072
+      },
+      {
+        "source_skill": "u23_masupa5",
+        "target": "u23_masupa5_nt5",
+        "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+        "line": 2738
+      },
+      {
+        "source_skill": "u23_masupa5",
+        "target": "u23_masupa5_nt6",
+        "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+        "line": 2738
+      },
+      {
+        "source_skill": "u23_masupa5_pair",
+        "target": "eff_jinzaisp",
+        "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+        "line": 3149
+      },
+      {
+        "source_skill": "jibaku_kimihiko",
+        "target": "b_jibaku_kimihiko_pr1",
+        "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+        "line": 337
+      },
+      {
+        "source_skill": "jibaku_kimihiko",
+        "target": "b_jibaku_kimihiko_pr2",
+        "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+        "line": 337
+      },
+      {
+        "source_skill": "b_jibaku_kimihiko_nt4",
+        "target": "b_jibaku_kimihiko_pr4",
+        "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+        "line": 410
+      },
+      {
+        "source_skill": "b_jibaku_kimihiko_nt5",
+        "target": "b_jibaku_kimihiko_pr4",
+        "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+        "line": 416
+      },
+      {
+        "source_skill": "k_cannon_nt3",
+        "target": "k_cannon_nt2",
+        "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+        "line": 1068
+      },
+      {
+        "source_skill": "k_cannon_nt4",
+        "target": "k_cannon_nt4_nt2",
+        "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+        "line": 1079
+      },
+      {
+        "source_skill": "k_cannon_nt5",
+        "target": "k_cannon_nt5_nt2",
+        "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+        "line": 1108
+      },
+      {
+        "source_skill": "k_cannon_nt6",
+        "target": "k_cannon_nt6_nt2",
+        "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+        "line": 1137
+      },
+      {
+        "source_skill": "k_cannon_nt7",
+        "target": "k_cannon_nt7_nt2",
+        "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+        "line": 1165
+      },
+      {
+        "source_skill": "kurukuru_nt_nt2",
+        "target": "commandBS_nt_nt_nt_nt_nt",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 3099
+      },
+      {
+        "source_skill": "kurukuru_nt_nt2",
+        "target": "art_smoke",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 3099
+      },
+      {
+        "source_skill": "sp_hns_act4_nt4",
+        "target": "hns_ganban_nt9",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_16_20_ALC一派～VVAN.dat",
+        "line": 552
+      },
+      {
+        "source_skill": "sp_icg_pr0",
+        "target": "sp_icg_pr3",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+        "line": 335
+      },
+      {
+        "source_skill": "bsp_masupa5",
+        "target": "bsp_masupa5_nt5",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+        "line": 1242
+      },
+      {
+        "source_skill": "bsp_masupa5",
+        "target": "bsp_masupa5_nt6",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+        "line": 1242
+      },
+      {
+        "source_skill": "bsp_masupa5_pair",
+        "target": "eff_jinzaisp",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+        "line": 1647
+      },
+      {
+        "source_skill": "sp_dmcabiim",
+        "target": "dmcabiim_nt1c",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+        "line": 1005
+      },
+      {
+        "source_skill": "sp_ranbu_toukou_joi",
+        "target": "sp_rambu_nt3",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+        "line": 1974
+      },
+      {
+        "source_skill": "diyusi_nt6",
+        "target": "diyushi_dam1",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_31_32_ぢゆし～サムソン.dat",
+        "line": 638
+      },
+      {
+        "source_skill": "diyusi_nt6",
+        "target": "diyushi_dam1",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_31_32_ぢゆし～サムソン.dat",
+        "line": 638
+      },
+      {
+        "source_skill": "diyusi_nt8",
+        "target": "diyushi_dam1",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_31_32_ぢゆし～サムソン.dat",
+        "line": 647
+      },
+      {
+        "source_skill": "diyusi_nt8",
+        "target": "diyushi_dam1",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_31_32_ぢゆし～サムソン.dat",
+        "line": 647
+      },
+      {
+        "source_skill": "sp_vanban2_nt1b",
+        "target": "sp_vanban_nt4",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_6_10_ヒゲクマ～スカーレット.dat",
+        "line": 1105
+      },
+      {
+        "source_skill": "sp_vanban_nt1b",
+        "target": "sp_vanban_nt4",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_6_10_ヒゲクマ～スカーレット.dat",
+        "line": 1177
+      },
+      {
+        "source_skill": "sp_hnsthunder_pair",
+        "target": "sp_hnsthunder_pair_nt9",
+        "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+        "line": 1334
+      },
+      {
+        "source_skill": "sp_hnsthunder_pair",
+        "target": "sp_hnsthunder_pair_nt10",
+        "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+        "line": 1334
+      },
+      {
+        "source_skill": "sp_hnsthunder_pair",
+        "target": "sp_hnsthunder_pair_nt11",
+        "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+        "line": 1334
+      },
+      {
+        "source_skill": "sp_hnsthunder_pair",
+        "target": "sp_hnsthunder_pair_nt12",
+        "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+        "line": 1334
+      },
+      {
+        "source_skill": "sp_hnsthunder_pair",
+        "target": "eff_jinzaisp",
+        "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+        "line": 1334
+      },
+      {
+        "source_skill": "jibaku",
+        "target": "b_jibaku_pr1",
+        "file": "a_default/script/32_ボススキル/B_2222_レイノアレフ.dat",
+        "line": 1591
+      },
+      {
+        "source_skill": "jibaku",
+        "target": "b_jibaku_pr2",
+        "file": "a_default/script/32_ボススキル/B_2222_レイノアレフ.dat",
+        "line": 1591
+      },
+      {
+        "source_skill": "b_jibaku_nt4",
+        "target": "b_jibaku_pr4",
+        "file": "a_default/script/32_ボススキル/B_2222_レイノアレフ.dat",
+        "line": 1664
+      },
+      {
+        "source_skill": "b_jibaku_nt5",
+        "target": "b_jibaku_pr4",
+        "file": "a_default/script/32_ボススキル/B_2222_レイノアレフ.dat",
+        "line": 1670
+      },
+      {
+        "source_skill": "udbsp_masupa5",
+        "target": "udbsp_masupa5_nt5",
+        "file": "a_default/script/32_ボススキル/B_2323_リュージ騎士団.dat",
+        "line": 1112
+      },
+      {
+        "source_skill": "udbsp_masupa5",
+        "target": "udbsp_masupa5_nt6",
+        "file": "a_default/script/32_ボススキル/B_2323_リュージ騎士団.dat",
+        "line": 1112
+      },
+      {
+        "source_skill": "udbsp_masupa5_pair",
+        "target": "eff_jinzaisp",
+        "file": "a_default/script/32_ボススキル/B_2323_リュージ騎士団.dat",
+        "line": 1523
+      },
+      {
+        "source_skill": "sp_star_dream_masupa_joi2",
+        "target": "sp_star_dream_masupa_nt5",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 6503
+      },
+      {
+        "source_skill": "sp_star_dream_masupa_joi2",
+        "target": "sp_star_dream_masupa_nt6",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 6503
+      },
+      {
+        "source_skill": "februar_beam_nt1",
+        "target": "febfeb_beam_pr2",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 7997
+      },
+      {
+        "source_skill": "februar_beam_nt1",
+        "target": "febfeb_beam_pr3",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 7997
+      },
+      {
+        "source_skill": "s_cannon_shaman",
+        "target": "s_cannon_pr2",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 9805
+      },
+      {
+        "source_skill": "s_cannon_nt4",
+        "target": "s_cannon_pr4",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 9907
+      },
+      {
+        "source_skill": "s_cannon_nt5",
+        "target": "s_cannon_pr4",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 9913
+      },
+      {
+        "source_skill": "sake_rocket_bomber_nt4",
+        "target": "sake_rocket_bomber_pr4",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 11631
+      },
+      {
+        "source_skill": "sake_rocket_bomber_nt5",
+        "target": "sake_rocket_bomber_pr4",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 11637
+      },
+      {
+        "source_skill": "sake_oraora_nt0_left",
+        "target": "sake_oraora_sound",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 13578
+      },
+      {
+        "source_skill": "sake_heaven_sec0_left",
+        "target": "sake_heaven_sec1919_left",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 14241
+      },
+      {
+        "source_skill": "sake_heaven_sec0_right",
+        "target": "sake_heaven_sec1919_right",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 14280
+      },
+      {
+        "source_skill": "sake_heaven_sec0b_denki",
+        "target": "sake_heaven_mask0_denki",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 14430
+      },
+      {
+        "source_skill": "uru_dash_nt0",
+        "target": "uru_dash_nt3",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 14776
+      },
+      {
+        "source_skill": "secret_sww_hand_mask_join2",
+        "target": "secret_sww_hand_mask_join3",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 22166
+      },
+      {
+        "source_skill": "snnm_beam",
+        "target": "snnm_beam_nt5",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 2426
+      },
+      {
+        "source_skill": "snnm_beam",
+        "target": "snnm_beam_nt6",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 2426
+      },
+      {
+        "source_skill": "snnm_beam_pair",
+        "target": "eff_jinzaisp",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 2696
+      },
+      {
+        "source_skill": "sp_sun_attack_nt1b",
+        "target": "sp_sun_2i",
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 3072
+      },
+      {
+        "source_skill": "ssrn_sw_weak_joi2",
+        "target": "ssrn_sw_weak_6",
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 4379
+      },
+      {
+        "source_skill": "ncnc_cannon_nt2",
+        "target": "ncnc_cannon_nt3_ef2",
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 6238
+      },
+      {
+        "source_skill": "sp_ncnc_cannon_nt2",
+        "target": "ncnc_cannon_nt3_ef2",
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 6421
+      },
+      {
+        "source_skill": "pr_asasin_cream_protect_Eff_C_wait",
+        "target": "asasin_cream_protect_ability",
+        "file": "a_default/script/33_仮設アサシン/skill_asasin_00.dat",
+        "line": 356
+      },
+      {
+        "source_skill": "s_cannon_asp635",
+        "target": "s_cannon_pr2",
+        "file": "a_default/script/45_内政_防衛兵器/siege_skill_SP63_鎌倉.dat",
+        "line": 30
+      },
+      {
+        "source_skill": "self_a2953",
+        "target": "self_a2953_nt0",
+        "file": "a_default/script/50_その他新システム/self_summon_skills.dat",
+        "line": 2967
+      },
+      {
+        "source_skill": "muso_hq0_joi",
+        "target": "muso_hq0_nt3",
+        "file": "a_default/script/8000_RTSシナリオ/RTSskill.dat",
+        "line": 17
+      },
+      {
+        "source_skill": "rtsrmlach_js_joi",
+        "target": "ef_ssrmla_yari0",
+        "file": "a_default/script/8000_RTSシナリオ/RTSskill.dat",
+        "line": 994
+      },
+      {
+        "source_skill": "rtsrmlach_nt0",
+        "target": "ssrmla_yari_pr",
+        "file": "a_default/script/8000_RTSシナリオ/RTSskill.dat",
+        "line": 1045
+      }
+    ],
+    "next": [
+      {
+        "source_skill": "stove_fire_cycle_at",
+        "target": "stove_fire_chainA_00_00",
+        "file": "a_default/script/116_仮設ランダムイベント61-70/skill_stove.dat",
+        "line": 814
+      },
+      {
+        "source_skill": "stove_fire_stop_at",
+        "target": "stove_fire_chainA_00_00",
+        "file": "a_default/script/116_仮設ランダムイベント61-70/skill_stove.dat",
+        "line": 875
+      },
+      {
+        "source_skill": "rpgzan1_nt2",
+        "target": "ef_rpgzan",
+        "file": "a_default/script/2023_イベント_リュージ騎士団/event_23_RPG.dat",
+        "line": 16233
+      },
+      {
+        "source_skill": "yuwaku1_nt2",
+        "target": "ef_yuwaku",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 11727
+      },
+      {
+        "source_skill": "rdfire_cannon_pr2",
+        "target": "rfire_cannon_pr2b",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 13098
+      },
+      {
+        "source_skill": "nikuoja_yari1_nt3",
+        "target": "ef_yari1",
+        "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+        "line": 3168
+      },
+      {
+        "source_skill": "eff_sp_abesan_nt3_2b",
+        "target": "eff_sp_abesan_nt3_2c",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 2349
+      },
+      {
+        "source_skill": "torpedo_nt3",
+        "target": "torpado_nt4",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 5191
+      },
+      {
+        "source_skill": "sp_icg_nt1",
+        "target": "sp_icg_bomb0",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+        "line": 306
+      },
+      {
+        "source_skill": "noel_zan1_nt2",
+        "target": "ef_noel_zan",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 857
+      },
+      {
+        "source_skill": "bokhohn_zan1_nt2",
+        "target": "ef_bokhohn_zan",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 1979
+      },
+      {
+        "source_skill": "hzn_zan1_nt2",
+        "target": "ef_hzn_zan",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 3255
+      }
+    ],
+    "next2": [
+      {
+        "source_skill": "new_misairu_miss_nt1",
+        "target": "new_misairu_miss_nt3b",
+        "file": "a_default/script/30_スキル/C_必殺_クラス専用.dat",
+        "line": 352
+      },
+      {
+        "source_skill": "new_misairu_miss_nt1",
+        "target": "new_misairu_miss_nt3b",
+        "file": "a_default/script/30_スキル/C_必殺_クラス専用.dat",
+        "line": 352
+      },
+      {
+        "source_skill": "gun_kata_joi",
+        "target": "e893zan1_nt0",
+        "file": "a_default/script/31_ユニットスキル/U_16_20_ALC一派～VVAN.dat",
+        "line": 2523
+      },
+      {
+        "source_skill": "gun_kata_joi2",
+        "target": "e893zan1_nt0",
+        "file": "a_default/script/31_ユニットスキル/U_16_20_ALC一派～VVAN.dat",
+        "line": 2530
+      },
+      {
+        "source_skill": "ingon3_old",
+        "target": "ingo_oldset_a",
+        "file": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat",
+        "line": 2537
+      },
+      {
+        "source_skill": "sp_fmrim_joker_biim23_summon_nt0_joi",
+        "target": "sp_fmrim_joker_biim23_summon_nt3",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+        "line": 187
+      },
+      {
+        "source_skill": "secret_sww_knock_join",
+        "target": "sww_hand",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 22089
+      },
+      {
+        "source_skill": "ninja_zan1",
+        "target": "ninja_zan1_nt0",
+        "file": "a_default/script/6000_スキルテスト/skill_人材追加mod.dat",
+        "line": 318
+      },
+      {
+        "source_skill": "rtsreaokasicpu",
+        "target": "_nt",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 1233
+      }
+    ],
+    "just_next": [
+      {
+        "source_skill": "b_whip",
+        "target": "b_whip_js",
+        "file": "a_default/script/30_スキル/F10_missile_鞭.dat",
+        "line": 22
+      },
+      {
+        "source_skill": "hermit_whip",
+        "target": "hermit_whip_js",
+        "file": "a_default/script/30_スキル/F10_missile_鞭.dat",
+        "line": 170
+      },
+      {
+        "source_skill": "lick",
+        "target": "whip_js",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 7647
+      },
+      {
+        "source_skill": "tb_whip",
+        "target": "b_whip_js",
+        "file": "a_default/script/30_スキル/F21_奴隷少年summon_鞭_突撃_斬撃.dat",
+        "line": 21
+      },
+      {
+        "source_skill": "jtb_whip",
+        "target": "b_whip_js",
+        "file": "a_default/script/30_スキル/F21_奴隷少年summon_鞭_突撃_斬撃.dat",
+        "line": 154
+      },
+      {
+        "source_skill": "turu_whip",
+        "target": "turu_whip_js",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 4170
+      },
+      {
+        "source_skill": "chefswk_whip",
+        "target": "chefswk_whip_js",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 12476
+      },
+      {
+        "source_skill": "sww_whip",
+        "target": "sww_whip_js",
+        "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+        "line": 584
+      },
+      {
+        "source_skill": "ele_whip",
+        "target": "ele_whip_js",
+        "file": "a_default/script/32_ボススキル/B_2222_レイノアレフ.dat",
+        "line": 1281
+      },
+      {
+        "source_skill": "subier_syokusyu",
+        "target": "b_whip_js",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 2868
+      },
+      {
+        "source_skill": "sww23_whip",
+        "target": "sww_whip_js",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 16432
+      },
+      {
+        "source_skill": "b_hsnsi",
+        "target": "b_whip_js",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 3520
+      },
+      {
+        "source_skill": "ssrn_kidan",
+        "target": "ssrn_kidan_nt3",
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 3007
+      },
+      {
+        "source_skill": "ssrn_kidan",
+        "target": "ssrn_kidan_nt4",
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 3007
+      }
+    ],
+    "pair_next": [
+      {
+        "source_skill": "sp_masupa5",
+        "target": "sp_masupa5_pair_o",
+        "file": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+        "line": 712
+      },
+      {
+        "source_skill": "sp_clockup2",
+        "target": "sp_bio_so",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 29
+      },
+      {
+        "source_skill": "sp_clown_luna",
+        "target": "sp_clown_luna_pr0",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 1733
+      },
+      {
+        "source_skill": "sp_masahiko",
+        "target": "sp_masahiko_pr0",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 2562
+      },
+      {
+        "source_skill": "sp_bio2",
+        "target": "sp_bio_so",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_6_10_ヒゲクマ～スカーレット.dat",
+        "line": 712
+      },
+      {
+        "source_skill": "sp_cookie_kiss",
+        "target": "sp_cookie_kiss_pr0",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 3865
+      },
+      {
+        "source_skill": "sakenomiga_rocket",
+        "target": "sakenomiga_rocket_pr0",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 10396
+      },
+      {
+        "source_skill": "sakenomiga_summon",
+        "target": "sakenomiga_summon_pr0",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 11983
+      },
+      {
+        "source_skill": "sakenomiga_protect",
+        "target": "sakenomiga_protect_pr0",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 12331
+      },
+      {
+        "source_skill": "sakenomiga_misairu",
+        "target": "sakenomiga_misairu_pr0",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 12531
+      },
+      {
+        "source_skill": "ssrn_sw",
+        "target": "ssrn_sw_ef_smoke",
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 3744
+      },
+      {
+        "source_skill": "ssrn_sw_weak",
+        "target": "ssrn_sw_weak_ef_smoke",
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 4244
+      },
+      {
+        "source_skill": "kankure_ora",
+        "target": "kankure_ora_pr0",
+        "file": "a_default/script/32_ボススキル/B_5_伏見稲荷大社.dat",
+        "line": 1186
+      },
+      {
+        "source_skill": "sakenomiga_summon_r",
+        "target": "sakenomiga_summon_pr0",
+        "file": "a_default/script/5000_ランダムシナリオ/RB_ボススキル.dat",
+        "line": 559
+      }
+    ]
+  },
+  "special_literal_chains": {
+    "next3": [
+      {
+        "source_skill": "stove_fire_cycle_at",
+        "target": "@",
+        "file": "a_default/script/116_仮設ランダムイベント61-70/skill_stove.dat",
+        "line": 815
+      },
+      {
+        "source_skill": "stove_fire_wave_at",
+        "target": "@",
+        "file": "a_default/script/116_仮設ランダムイベント61-70/skill_stove.dat",
+        "line": 848
+      },
+      {
+        "source_skill": "stove_fire_chain_mag",
+        "target": "@",
+        "file": "a_default/script/116_仮設ランダムイベント61-70/skill_stove.dat",
+        "line": 922
+      },
+      {
+        "source_skill": "stove_fire_ensyou_mag",
+        "target": "@",
+        "file": "a_default/script/116_仮設ランダムイベント61-70/skill_stove.dat",
+        "line": 960
+      },
+      {
+        "source_skill": "stove_fire_ensyou_eff_fake_at",
+        "target": "@",
+        "file": "a_default/script/116_仮設ランダムイベント61-70/skill_stove.dat",
+        "line": 967
+      },
+      {
+        "source_skill": "stove_fire_ensyou_at_fin",
+        "target": "@",
+        "file": "a_default/script/116_仮設ランダムイベント61-70/skill_stove_ensyou.dat",
+        "line": 159
+      },
+      {
+        "source_skill": "sp_tuyo_cannon",
+        "target": "@",
+        "file": "a_default/script/30_スキル/C_必殺_クラス専用.dat",
+        "line": 90
+      },
+      {
+        "source_skill": "sp_icg_hou",
+        "target": "@",
+        "file": "a_default/script/30_スキル/C_必殺_クラス専用.dat",
+        "line": 1442
+      },
+      {
+        "source_skill": "letsu_beam_pr4",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 925
+      },
+      {
+        "source_skill": "kusomusume_poi_pr0",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 1133
+      },
+      {
+        "source_skill": "m_fire_pr1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 1623
+      },
+      {
+        "source_skill": "m_wate_pr1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 2145
+      },
+      {
+        "source_skill": "ms_wate_pr1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 2416
+      },
+      {
+        "source_skill": "m_eart_pr1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 2804
+      },
+      {
+        "source_skill": "m_wind_pr2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 2972
+      },
+      {
+        "source_skill": "m_wate_bad_pr1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 4521
+      },
+      {
+        "source_skill": "buchipa_pr1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 5789
+      },
+      {
+        "source_skill": "m_rim_pr2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 6116
+      },
+      {
+        "source_skill": "sam_rim_pr2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 6312
+      },
+      {
+        "source_skill": "m_clown_pr1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 7221
+      },
+      {
+        "source_skill": "senkyo_ef",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 7435
+      },
+      {
+        "source_skill": "re_cannon_pr1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_砲撃リニューアル.dat",
+        "line": 575
+      },
+      {
+        "source_skill": "rokeran_pr",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_砲撃リニューアル.dat",
+        "line": 1298
+      },
+      {
+        "source_skill": "harpoon_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_砲撃リニューアル.dat",
+        "line": 1476
+      },
+      {
+        "source_skill": "harpoon_nt3",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_砲撃リニューアル.dat",
+        "line": 1482
+      },
+      {
+        "source_skill": "tadora_cannon_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_砲撃リニューアル.dat",
+        "line": 1976
+      },
+      {
+        "source_skill": "misairu_pr",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_砲撃リニューアル.dat",
+        "line": 2348
+      },
+      {
+        "source_skill": "e893_assault",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 1309
+      },
+      {
+        "source_skill": "e893_assault_nt1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 1326
+      },
+      {
+        "source_skill": "b_gun_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 1461
+      },
+      {
+        "source_skill": "b_gun_kn",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 1472
+      },
+      {
+        "source_skill": "aslt_gun_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 1702
+      },
+      {
+        "source_skill": "aslt_gun2_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 1757
+      },
+      {
+        "source_skill": "aslt_gun3_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 1821
+      },
+      {
+        "source_skill": "kmr_gun_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 2045
+      },
+      {
+        "source_skill": "kmr_gun_kn",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 2061
+      },
+      {
+        "source_skill": "gun_1919_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 2230
+      },
+      {
+        "source_skill": "reitoumgs_nt5",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 2540
+      },
+      {
+        "source_skill": "ss_gun_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 2829
+      },
+      {
+        "source_skill": "burauni_gun_kn",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 3154
+      },
+      {
+        "source_skill": "wategun_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 3301
+      },
+      {
+        "source_skill": "wategun_kn",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 3312
+      },
+      {
+        "source_skill": "b_icggun_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 3482
+      },
+      {
+        "source_skill": "reitoumg_nt5",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 3646
+      },
+      {
+        "source_skill": "s_gun_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 4776
+      },
+      {
+        "source_skill": "hermit_masupa5_nt3_nt1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_鞭.dat",
+        "line": 386
+      },
+      {
+        "source_skill": "american_masupa5_nt3_nt1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_鞭.dat",
+        "line": 647
+      },
+      {
+        "source_skill": "yari1_js3",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 334
+      },
+      {
+        "source_skill": "new_yari1_js2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 496
+      },
+      {
+        "source_skill": "bayonet1_js2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 1481
+      },
+      {
+        "source_skill": "new_kumade1_js2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 2650
+      },
+      {
+        "source_skill": "kumade1_js3",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 2744
+      },
+      {
+        "source_skill": "kumade1_js3",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 2751
+      },
+      {
+        "source_skill": "rmla_yari2_js1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 2918
+      },
+      {
+        "source_skill": "rmla_yari2_js3",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 2955
+      },
+      {
+        "source_skill": "ssrmla_yari2_js1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 5639
+      },
+      {
+        "source_skill": "ssrmla_yari2_js3",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 5670
+      },
+      {
+        "source_skill": "893para_yari1_js2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 6489
+      },
+      {
+        "source_skill": "rmla_ch_js2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F12_charge.dat",
+        "line": 1063
+      },
+      {
+        "source_skill": "rmla_ch_old_js2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F12_charge.dat",
+        "line": 1285
+      },
+      {
+        "source_skill": "ssrmla_ch_js2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F12_charge.dat",
+        "line": 1844
+      },
+      {
+        "source_skill": "ss_rmla_ch_old_js2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F12_charge.dat",
+        "line": 2064
+      },
+      {
+        "source_skill": "heal_mot_mint_nt1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F13_heal_support.dat",
+        "line": 1760
+      },
+      {
+        "source_skill": "crazy_fire_cycle_at",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 3931
+      },
+      {
+        "source_skill": "crazy_fire_chain_mag",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 4007
+      },
+      {
+        "source_skill": "sww_misairu_pr",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 8242
+      },
+      {
+        "source_skill": "m_booster_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 9471
+      },
+      {
+        "source_skill": "m_booster_kn",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 9482
+      },
+      {
+        "source_skill": "dokubari1_js3",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 10431
+      },
+      {
+        "source_skill": "de_dokubari1_js3",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 10585
+      },
+      {
+        "source_skill": "renown_gun_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 14573
+      },
+      {
+        "source_skill": "monzetsu_fire_cycle_at",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F50_延焼_究極悶絶少年.dat",
+        "line": 355
+      },
+      {
+        "source_skill": "monzetsu_fire_chain_mag",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F50_延焼_究極悶絶少年.dat",
+        "line": 469
+      },
+      {
+        "source_skill": "monzetsu_fire_ensyou_at_fin",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F50_延焼_究極悶絶少年.dat",
+        "line": 629
+      },
+      {
+        "source_skill": "Shakespeare_fire_cycle_at",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F51_榴弾・延焼_プレッツヒェン.dat",
+        "line": 446
+      },
+      {
+        "source_skill": "Shakespeare_fire_wave_at",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F51_榴弾・延焼_プレッツヒェン.dat",
+        "line": 479
+      },
+      {
+        "source_skill": "Shakespeare_fire_chain_mag",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F51_榴弾・延焼_プレッツヒェン.dat",
+        "line": 553
+      },
+      {
+        "source_skill": "Shakespeare_fire_ensyou_mag",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F51_榴弾・延焼_プレッツヒェン.dat",
+        "line": 591
+      },
+      {
+        "source_skill": "Shakespeare_fire_ensyou_eff_fake_at",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F51_榴弾・延焼_プレッツヒェン.dat",
+        "line": 598
+      },
+      {
+        "source_skill": "Shakespeare_fire_ensyou_at_fin",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F51_榴弾・延焼_プレッツヒェン.dat",
+        "line": 1084
+      },
+      {
+        "source_skill": "normalknk_wind_pr2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_11_15_サセバトミサタ～SWW.dat",
+        "line": 606
+      },
+      {
+        "source_skill": "alc_eart_pr1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_16_20_ALC一派～VVAN.dat",
+        "line": 88
+      },
+      {
+        "source_skill": "mansyu_poi_pr0",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_16_20_ALC一派～VVAN.dat",
+        "line": 265
+      },
+      {
+        "source_skill": "vvan_gun_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_16_20_ALC一派～VVAN.dat",
+        "line": 2466
+      },
+      {
+        "source_skill": "moonlight_nt4",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 976
+      },
+      {
+        "source_skill": "masagun_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 2284
+      },
+      {
+        "source_skill": "masagun_kn",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 2295
+      },
+      {
+        "source_skill": "tis_gun_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 3340
+      },
+      {
+        "source_skill": "b_monster_ball_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 3417
+      },
+      {
+        "source_skill": "b_monster_ball_kn",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 3429
+      },
+      {
+        "source_skill": "zngm_gun_nt1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 4376
+      },
+      {
+        "source_skill": "zngm_wate_pr1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 4549
+      },
+      {
+        "source_skill": "m_star_pr1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 4803
+      },
+      {
+        "source_skill": "b_udon_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 4984
+      },
+      {
+        "source_skill": "znm_boom_nt3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 5109
+      },
+      {
+        "source_skill": "b_milk_pr",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+        "line": 710
+      },
+      {
+        "source_skill": "nisehsi_zan_nt4",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+        "line": 1228
+      },
+      {
+        "source_skill": "tusk_gun_act2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+        "line": 2462
+      },
+      {
+        "source_skill": "tusk_gun_nt3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+        "line": 2606
+      },
+      {
+        "source_skill": "tusk_old_gun_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+        "line": 2724
+      },
+      {
+        "source_skill": "tusk_old_gun_kn",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+        "line": 2737
+      },
+      {
+        "source_skill": "charao_ball_nt3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+        "line": 2854
+      },
+      {
+        "source_skill": "110jaku_gun_nt1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+        "line": 3050
+      },
+      {
+        "source_skill": "b_fmrim_astk_wind_pr2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat",
+        "line": 389
+      },
+      {
+        "source_skill": "reitoubiim_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat",
+        "line": 868
+      },
+      {
+        "source_skill": "reitoubiim_kn",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat",
+        "line": 881
+      },
+      {
+        "source_skill": "reitoubiim_nt5",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat",
+        "line": 948
+      },
+      {
+        "source_skill": "uho_abesan_dmg_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 1980
+      },
+      {
+        "source_skill": "abesan_yari1_js2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 2437
+      },
+      {
+        "source_skill": "abesan_yari1_js3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 2458
+      },
+      {
+        "source_skill": "b_kim_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 2788
+      },
+      {
+        "source_skill": "b_kim_nt3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 2802
+      },
+      {
+        "source_skill": "b_kim2_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 2913
+      },
+      {
+        "source_skill": "skbnk_tobi_pr0",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 4032
+      },
+      {
+        "source_skill": "c_thun_nt2c",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 4724
+      },
+      {
+        "source_skill": "c_thun_nt3c",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 4776
+      },
+      {
+        "source_skill": "c_thun_nt4c",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 4828
+      },
+      {
+        "source_skill": "c_thun_nt5c",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 4880
+      },
+      {
+        "source_skill": "c_thun_nt6b",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 4913
+      },
+      {
+        "source_skill": "c_thun_nt6c",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 4932
+      },
+      {
+        "source_skill": "di2_nt3b",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 6965
+      },
+      {
+        "source_skill": "mm_wate_pr1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 7517
+      },
+      {
+        "source_skill": "jj9_gun_nt1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 9604
+      },
+      {
+        "source_skill": "hyuk_vul_nt1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 11683
+      },
+      {
+        "source_skill": "a_hyuk_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 11787
+      },
+      {
+        "source_skill": "b_hyuk_ef",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 11948
+      },
+      {
+        "source_skill": "b_hyuk_ef2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 11971
+      },
+      {
+        "source_skill": "b_hyuk_nt3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 12004
+      },
+      {
+        "source_skill": "b_hyuk_ef5",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 12047
+      },
+      {
+        "source_skill": "b_hyuk_ef6",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 12069
+      },
+      {
+        "source_skill": "b_kinakogun_nt3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 14816
+      },
+      {
+        "source_skill": "nkdks_rush_at1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+        "line": 3810
+      },
+      {
+        "source_skill": "kimihiko_gun_nt1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+        "line": 294
+      },
+      {
+        "source_skill": "sp_kuso_pr1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_0_共用.dat",
+        "line": 677
+      },
+      {
+        "source_skill": "sp_kuso_pr2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_0_共用.dat",
+        "line": 690
+      },
+      {
+        "source_skill": "sp_gun_nt1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_0_共用.dat",
+        "line": 1596
+      },
+      {
+        "source_skill": "sp_ymnc_lmg2_nt3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 1414
+      },
+      {
+        "source_skill": "sp_ymnc_shot2_nt1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 1451
+      },
+      {
+        "source_skill": "sp_nsdr_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 3539
+      },
+      {
+        "source_skill": "sp_nsdr_nt6b2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 3684
+      },
+      {
+        "source_skill": "sp_nsdr_nt6b_m",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 3700
+      },
+      {
+        "source_skill": "sp_goiko_nt3b",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 4930
+      },
+      {
+        "source_skill": "sp_goiko_nt4_2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 5059
+      },
+      {
+        "source_skill": "dorobo_nt1b",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_16_20_ALC一派～VVAN.dat",
+        "line": 3218
+      },
+      {
+        "source_skill": "dorobo_nt1_sil",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_16_20_ALC一派～VVAN.dat",
+        "line": 3231
+      },
+      {
+        "source_skill": "dorobo_nt1c",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_16_20_ALC一派～VVAN.dat",
+        "line": 3259
+      },
+      {
+        "source_skill": "sp_murpo_reitoubiim_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 1395
+      },
+      {
+        "source_skill": "sp_murpo_reitoubiim_kn",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 1409
+      },
+      {
+        "source_skill": "sp_murpo_reitoubiim_nt5",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 1476
+      },
+      {
+        "source_skill": "rukick_prpr1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 3189
+      },
+      {
+        "source_skill": "rukick_prpr2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 3206
+      },
+      {
+        "source_skill": "rukick_prpr3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 3223
+      },
+      {
+        "source_skill": "sakerider_ntff2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 3496
+      },
+      {
+        "source_skill": "sp_yakimeshi_nt1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+        "line": 456
+      },
+      {
+        "source_skill": "sp_tusk_act1_nt1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+        "line": 2335
+      },
+      {
+        "source_skill": "charao_ball2_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+        "line": 2933
+      },
+      {
+        "source_skill": "charao_ball2_nt3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+        "line": 2982
+      },
+      {
+        "source_skill": "sp_gandoha_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+        "line": 3979
+      },
+      {
+        "source_skill": "dmcabiim_nt1b",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+        "line": 1153
+      },
+      {
+        "source_skill": "dmcabiim_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+        "line": 1164
+      },
+      {
+        "source_skill": "dmcabiim_kn",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+        "line": 1177
+      },
+      {
+        "source_skill": "dmcabiim_nt5",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+        "line": 1269
+      },
+      {
+        "source_skill": "sp_yurujiro_ntb",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_31_32_ぢゆし～サムソン.dat",
+        "line": 1508
+      },
+      {
+        "source_skill": "sp_yurujiro_ntc",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_31_32_ぢゆし～サムソン.dat",
+        "line": 1517
+      },
+      {
+        "source_skill": "sp_yurujiro_ntd",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_31_32_ぢゆし～サムソン.dat",
+        "line": 1523
+      },
+      {
+        "source_skill": "sp_yurujiro_pr0_2_1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_31_32_ぢゆし～サムソン.dat",
+        "line": 1697
+      },
+      {
+        "source_skill": "sp_yurujiro_pr0_2_2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_31_32_ぢゆし～サムソン.dat",
+        "line": 1703
+      },
+      {
+        "source_skill": "sp_yurujiro_pr0_2_3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_31_32_ぢゆし～サムソン.dat",
+        "line": 1709
+      },
+      {
+        "source_skill": "sp_yurujiro_pr0_2_4",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_31_32_ぢゆし～サムソン.dat",
+        "line": 1715
+      },
+      {
+        "source_skill": "sp_yurujiro_pr0_3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_31_32_ぢゆし～サムソン.dat",
+        "line": 1730
+      },
+      {
+        "source_skill": "sp_yurujiro_pr1_3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_31_32_ぢゆし～サムソン.dat",
+        "line": 1770
+      },
+      {
+        "source_skill": "sp_aniki_nt1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_6_10_ヒゲクマ～スカーレット.dat",
+        "line": 383
+      },
+      {
+        "source_skill": "fbreath_mag",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_14_ヌエバ・デスパセーニャ.dat",
+        "line": 662
+      },
+      {
+        "source_skill": "cbreath_mag",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_14_ヌエバ・デスパセーニャ.dat",
+        "line": 1060
+      },
+      {
+        "source_skill": "poi_yari1_js3",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_2222_レイノアレフ.dat",
+        "line": 664
+      },
+      {
+        "source_skill": "b_psyco_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 1152
+      },
+      {
+        "source_skill": "subier_yari1_js2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 2750
+      },
+      {
+        "source_skill": "subier_yari1_js2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 2757
+      },
+      {
+        "source_skill": "sp_cookie_kiss_nt1",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 3894
+      },
+      {
+        "source_skill": "b_babylon_nt5",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 5480
+      },
+      {
+        "source_skill": "b_babylon_nt6",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 5496
+      },
+      {
+        "source_skill": "b_star_dreamer_nt6",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 5945
+      },
+      {
+        "source_skill": "advent_yari1_js2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 7424
+      },
+      {
+        "source_skill": "advent_yari1_js2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 7431
+      },
+      {
+        "source_skill": "ganboru_sword_pr2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 8544
+      },
+      {
+        "source_skill": "ganboru_sword_pr3",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 8630
+      },
+      {
+        "source_skill": "hovertank_gun_nt1",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 8728
+      },
+      {
+        "source_skill": "hover_misairu_pr",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 8924
+      },
+      {
+        "source_skill": "s_cannon_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 9862
+      },
+      {
+        "source_skill": "s_cannon_nt6",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 9926
+      },
+      {
+        "source_skill": "s_cannon_pr1",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 9961
+      },
+      {
+        "source_skill": "sake_rocket_fire_left",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 10603
+      },
+      {
+        "source_skill": "sake_rocket_tornade_left",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 10628
+      },
+      {
+        "source_skill": "sake_rocket_bomb_left",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 10642
+      },
+      {
+        "source_skill": "sake_rocket_fire_right",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 10703
+      },
+      {
+        "source_skill": "sake_rocket_tornade_right",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 10727
+      },
+      {
+        "source_skill": "sake_rocket_bomb_right",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 10740
+      },
+      {
+        "source_skill": "sake_rocket_fire_left2b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 10794
+      },
+      {
+        "source_skill": "sake_rocket_tornade_left2b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 10819
+      },
+      {
+        "source_skill": "sake_rocket_bomb_left2b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 10833
+      },
+      {
+        "source_skill": "sake_rocket_fire_right2b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 10884
+      },
+      {
+        "source_skill": "sake_rocket_tornade_right2b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 10909
+      },
+      {
+        "source_skill": "sake_rocket_bomb_right2b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 10922
+      },
+      {
+        "source_skill": "sake_rocket_fire_left3b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 10976
+      },
+      {
+        "source_skill": "sake_rocket_tornade_left3b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 11001
+      },
+      {
+        "source_skill": "sake_rocket_bomb_left3b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 11015
+      },
+      {
+        "source_skill": "sake_rocket_fire_right3b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 11066
+      },
+      {
+        "source_skill": "sake_rocket_tornade_right3b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 11091
+      },
+      {
+        "source_skill": "sake_rocket_bomb_right3b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 11104
+      },
+      {
+        "source_skill": "sake_rocket_fire_left4b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 11158
+      },
+      {
+        "source_skill": "sake_rocket_tornade_left4b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 11183
+      },
+      {
+        "source_skill": "sake_rocket_bomb_left4b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 11197
+      },
+      {
+        "source_skill": "sake_rocket_fire_right4b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 11248
+      },
+      {
+        "source_skill": "sake_rocket_tornade_right4b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 11273
+      },
+      {
+        "source_skill": "sake_rocket_bomb_right4b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 11286
+      },
+      {
+        "source_skill": "sake_rocket_fire_left5b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 11341
+      },
+      {
+        "source_skill": "sake_rocket_tornade_left5b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 11366
+      },
+      {
+        "source_skill": "sake_rocket_bomb_left5b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 11380
+      },
+      {
+        "source_skill": "sake_rocket_fire_right5b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 11431
+      },
+      {
+        "source_skill": "sake_rocket_tornade_right5b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 11456
+      },
+      {
+        "source_skill": "sake_rocket_bomb_right5b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 11469
+      },
+      {
+        "source_skill": "sake_rocket_magic_damage",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 11518
+      },
+      {
+        "source_skill": "sake_rocket_magic_damage_eff",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 11538
+      },
+      {
+        "source_skill": "uru_bomb_nt3b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 15058
+      },
+      {
+        "source_skill": "sww23_misairu_pr",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 15487
+      },
+      {
+        "source_skill": "dtswk2_tale_nt2L",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 16920
+      },
+      {
+        "source_skill": "dtswk2_tale_nt3L",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 16932
+      },
+      {
+        "source_skill": "dtswk2_tale_nt3L",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 16937
+      },
+      {
+        "source_skill": "dtswk2_tale_nt2R",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 16996
+      },
+      {
+        "source_skill": "dtswk2_tale_nt3R",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 17006
+      },
+      {
+        "source_skill": "dtswk2_tale_nt3R",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 17011
+      },
+      {
+        "source_skill": "dtswk3_wind_pr2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 17821
+      },
+      {
+        "source_skill": "dtswk3_tale_nt2L",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 18725
+      },
+      {
+        "source_skill": "dtswk3_tale_nt3L",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 18737
+      },
+      {
+        "source_skill": "dtswk3_tale_nt3L",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 18742
+      },
+      {
+        "source_skill": "dtswk3_tale_nt2R",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 18801
+      },
+      {
+        "source_skill": "dtswk3_tale_nt3R",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 18811
+      },
+      {
+        "source_skill": "dtswk3_tale_nt3R",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 18816
+      },
+      {
+        "source_skill": "nihai_tale_nt2L",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 18917
+      },
+      {
+        "source_skill": "nihai_tale_nt3L",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 18929
+      },
+      {
+        "source_skill": "nihai_tale_nt3L",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 18934
+      },
+      {
+        "source_skill": "dtswk3_onbashira_nt3",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 19232
+      },
+      {
+        "source_skill": "dtswk3_onbashira_nt5",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 19283
+      },
+      {
+        "source_skill": "secret_sww_hand_eff_fin_weit",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 22066
+      },
+      {
+        "source_skill": "atud_gun_gun_nt1",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 1255
+      },
+      {
+        "source_skill": "atud_fire_js",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 1672
+      },
+      {
+        "source_skill": "snnm_missile_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 2354
+      },
+      {
+        "source_skill": "b_migo_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 3459
+      },
+      {
+        "source_skill": "b_migo_kn",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 3471
+      },
+      {
+        "source_skill": "sp_nannkasugoino2_nt6",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_505_閉店の日.dat",
+        "line": 671
+      },
+      {
+        "source_skill": "wing_knife_pr2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 3674
+      },
+      {
+        "source_skill": "kenri_hand_R_shadow",
+        "target": "naidesu",
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 124
+      },
+      {
+        "source_skill": "kenri_hand_L_shadow",
+        "target": "naidesu",
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 208
+      },
+      {
+        "source_skill": "inm_gun_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 5536
+      },
+      {
+        "source_skill": "inm_gun_kn",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 5548
+      },
+      {
+        "source_skill": "inm_tekidan_shadow",
+        "target": "naidesu",
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 5680
+      },
+      {
+        "source_skill": "sp_milkyway_damage2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_5_伏見稲荷大社.dat",
+        "line": 162
+      },
+      {
+        "source_skill": "asasin_glove_mist_Eff",
+        "target": "@",
+        "file": "a_default/script/33_仮設アサシン/skill_asasin_glove_00.dat",
+        "line": 195
+      },
+      {
+        "source_skill": "boat_gun_nt1",
+        "target": "@",
+        "file": "a_default/script/45_内政_防衛兵器/siege_skill.dat",
+        "line": 3138
+      },
+      {
+        "source_skill": "3bantya_gun_nt3_4",
+        "target": "@",
+        "file": "a_default/script/45_内政_防衛兵器/siege_skill_SP63_鎌倉.dat",
+        "line": 334
+      },
+      {
+        "source_skill": "sp_nannkasugoino_nt6",
+        "target": "@",
+        "file": "a_default/script/6000_スキルテスト/skill_00_test.dat",
+        "line": 309
+      },
+      {
+        "source_skill": "icg_boom_nt3",
+        "target": "@",
+        "file": "a_default/script/6000_スキルテスト/skill_00_test.dat",
+        "line": 419
+      },
+      {
+        "source_skill": "chop_comedy_nt3a",
+        "target": "@",
+        "file": "a_default/script/6000_スキルテスト/skill_intyo.dat",
+        "line": 150
+      },
+      {
+        "source_skill": "funnel_beam_pr4",
+        "target": "@",
+        "file": "a_default/script/6000_スキルテスト/skill_人材追加mod.dat",
+        "line": 665
+      },
+      {
+        "source_skill": "rtssogeki_nt4",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSskill.dat",
+        "line": 665
+      },
+      {
+        "source_skill": "rtssogeki_nt2",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSskill.dat",
+        "line": 696
+      },
+      {
+        "source_skill": "rtssogeki_kn",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSskill.dat",
+        "line": 709
+      },
+      {
+        "source_skill": "rtssogeki_nt5",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSskill.dat",
+        "line": 785
+      }
+    ],
+    "next": [
+      {
+        "source_skill": "stove_fire_cycle_mag",
+        "target": "@",
+        "file": "a_default/script/116_仮設ランダムイベント61-70/skill_stove.dat",
+        "line": 823
+      },
+      {
+        "source_skill": "stove_fire_wave_mag",
+        "target": "@",
+        "file": "a_default/script/116_仮設ランダムイベント61-70/skill_stove.dat",
+        "line": 856
+      },
+      {
+        "source_skill": "stove_fire_stop_mag",
+        "target": "@",
+        "file": "a_default/script/116_仮設ランダムイベント61-70/skill_stove.dat",
+        "line": 883
+      },
+      {
+        "source_skill": "stove_fire_chain_at",
+        "target": "@",
+        "file": "a_default/script/116_仮設ランダムイベント61-70/skill_stove.dat",
+        "line": 908
+      },
+      {
+        "source_skill": "stove_fire_chain_mag",
+        "target": "@",
+        "file": "a_default/script/116_仮設ランダムイベント61-70/skill_stove.dat",
+        "line": 921
+      },
+      {
+        "source_skill": "stove_fire_ensyou_at_base",
+        "target": "@",
+        "file": "a_default/script/116_仮設ランダムイベント61-70/skill_stove.dat",
+        "line": 945
+      },
+      {
+        "source_skill": "stove_fire_ensyou_mag",
+        "target": "@",
+        "file": "a_default/script/116_仮設ランダムイベント61-70/skill_stove.dat",
+        "line": 959
+      },
+      {
+        "source_skill": "stove_fire_ensyou_eff_fake_at",
+        "target": "@",
+        "file": "a_default/script/116_仮設ランダムイベント61-70/skill_stove.dat",
+        "line": 966
+      },
+      {
+        "source_skill": "sp_3zuyari_nt2",
+        "target": "@",
+        "file": "a_default/script/2023_イベント_リュージ騎士団/event_23_RPG.dat",
+        "line": 19963
+      },
+      {
+        "source_skill": "ef_magic_nt",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 212
+      },
+      {
+        "source_skill": "ef_magic2_nt",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 236
+      },
+      {
+        "source_skill": "b_ligh_nt3",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 372
+      },
+      {
+        "source_skill": "dfire_cannon_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 1827
+      },
+      {
+        "source_skill": "dfire_cannon_nt6",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 1875
+      },
+      {
+        "source_skill": "m_rim_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 6016
+      },
+      {
+        "source_skill": "sam_rim_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 6208
+      },
+      {
+        "source_skill": "m_clown_pr3",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 7245
+      },
+      {
+        "source_skill": "atmu_wate_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 8093
+      },
+      {
+        "source_skill": "b_przm_nt2_1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 9280
+      },
+      {
+        "source_skill": "b_przm_nt2_2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 9291
+      },
+      {
+        "source_skill": "b_przm_nt2_3",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 9302
+      },
+      {
+        "source_skill": "b_cannon_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_砲撃リニューアル.dat",
+        "line": 115
+      },
+      {
+        "source_skill": "b_cannon_nt6",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_砲撃リニューアル.dat",
+        "line": 169
+      },
+      {
+        "source_skill": "tuyo_cannon_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_砲撃リニューアル.dat",
+        "line": 400
+      },
+      {
+        "source_skill": "battering_cannon_nt0",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_砲撃リニューアル.dat",
+        "line": 418
+      },
+      {
+        "source_skill": "watecannon_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_砲撃リニューアル.dat",
+        "line": 724
+      },
+      {
+        "source_skill": "ichigo_cannon_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_砲撃リニューアル.dat",
+        "line": 865
+      },
+      {
+        "source_skill": "ichigo_cannon_nt6",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_砲撃リニューアル.dat",
+        "line": 931
+      },
+      {
+        "source_skill": "harpoong_ef",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_砲撃リニューアル.dat",
+        "line": 1593
+      },
+      {
+        "source_skill": "tadora_cannon_mg1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_砲撃リニューアル.dat",
+        "line": 1908
+      },
+      {
+        "source_skill": "tadora_cannon_mg2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_砲撃リニューアル.dat",
+        "line": 1919
+      },
+      {
+        "source_skill": "b_rocket_ramen_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_砲撃リニューアル.dat",
+        "line": 2463
+      },
+      {
+        "source_skill": "b_flnarrow_nt5",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 491
+      },
+      {
+        "source_skill": "b_whip_nt3",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_鞭.dat",
+        "line": 62
+      },
+      {
+        "source_skill": "b_whip_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_鞭.dat",
+        "line": 79
+      },
+      {
+        "source_skill": "hermit_whip_nt3",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_鞭.dat",
+        "line": 224
+      },
+      {
+        "source_skill": "hermit_whip_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_鞭.dat",
+        "line": 246
+      },
+      {
+        "source_skill": "american_whip_nt3",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_鞭.dat",
+        "line": 538
+      },
+      {
+        "source_skill": "american_whip_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_鞭.dat",
+        "line": 560
+      },
+      {
+        "source_skill": "ch1_js",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 580
+      },
+      {
+        "source_skill": "death_zan1_nt1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 943
+      },
+      {
+        "source_skill": "mur_ch1_nt",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 1109
+      },
+      {
+        "source_skill": "ch1k_js",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 1526
+      },
+      {
+        "source_skill": "snch1_js",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 2038
+      },
+      {
+        "source_skill": "rmla_yari2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 2893
+      },
+      {
+        "source_skill": "rmla_yari2_pr9",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 3069
+      },
+      {
+        "source_skill": "rmla_yari2_pr2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 3111
+      },
+      {
+        "source_skill": "rmla_yari2_pr5",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 3139
+      },
+      {
+        "source_skill": "rmla_yari2_pr3",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 3171
+      },
+      {
+        "source_skill": "rmla_yari2_pr11",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 3217
+      },
+      {
+        "source_skill": "rmla_yari2_pr13",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 3263
+      },
+      {
+        "source_skill": "hoshoku_sichosha_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 5571
+      },
+      {
+        "source_skill": "ssrmla_yari2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 5618
+      },
+      {
+        "source_skill": "ssrmla_yari2_pr9",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 5778
+      },
+      {
+        "source_skill": "ssrmla_yari2_pr2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 5820
+      },
+      {
+        "source_skill": "ssrmla_yari2_pr5",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 5848
+      },
+      {
+        "source_skill": "ssrmla_yari2_pr3",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 5880
+      },
+      {
+        "source_skill": "ssrmla_yari2_pr11",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 5926
+      },
+      {
+        "source_skill": "ssrmla_yari2_pr13",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 5972
+      },
+      {
+        "source_skill": "nk5_zan1_nt1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 6076
+      },
+      {
+        "source_skill": "h_charge_jsb",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F12_charge.dat",
+        "line": 430
+      },
+      {
+        "source_skill": "h_charge_js2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F12_charge.dat",
+        "line": 437
+      },
+      {
+        "source_skill": "crazy_fire_cycle_mag",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 3912
+      },
+      {
+        "source_skill": "crazy_fire_chain_at",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 3992
+      },
+      {
+        "source_skill": "crazy_fire_chain_mag",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 4006
+      },
+      {
+        "source_skill": "firerosp_zan_js",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 4806
+      },
+      {
+        "source_skill": "d_inarizan1_nt1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 5107
+      },
+      {
+        "source_skill": "inari_cannon_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 5394
+      },
+      {
+        "source_skill": "sp_green_flower4",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 6726
+      },
+      {
+        "source_skill": "sp_green_nt1b",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 6754
+      },
+      {
+        "source_skill": "ali_cannon_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 7431
+      },
+      {
+        "source_skill": "lick_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 7688
+      },
+      {
+        "source_skill": "lick_nt3",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 7701
+      },
+      {
+        "source_skill": "kongyo_nt1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 11550
+      },
+      {
+        "source_skill": "gekirei_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 12768
+      },
+      {
+        "source_skill": "rdfire_cannon_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 12978
+      },
+      {
+        "source_skill": "rdfire_cannon_nt6",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 13026
+      },
+      {
+        "source_skill": "tb_whip_nt3",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F21_奴隷少年summon_鞭_突撃_斬撃.dat",
+        "line": 63
+      },
+      {
+        "source_skill": "tb_whip_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F21_奴隷少年summon_鞭_突撃_斬撃.dat",
+        "line": 80
+      },
+      {
+        "source_skill": "jtb_whip_nt3",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F21_奴隷少年summon_鞭_突撃_斬撃.dat",
+        "line": 196
+      },
+      {
+        "source_skill": "jtb_whip_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F21_奴隷少年summon_鞭_突撃_斬撃.dat",
+        "line": 213
+      },
+      {
+        "source_skill": "tsnch1_js",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F21_奴隷少年summon_鞭_突撃_斬撃.dat",
+        "line": 302
+      },
+      {
+        "source_skill": "tbb_whip_nt3",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F21_奴隷少年summon_鞭_突撃_斬撃.dat",
+        "line": 534
+      },
+      {
+        "source_skill": "tbb_whip_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F21_奴隷少年summon_鞭_突撃_斬撃.dat",
+        "line": 551
+      },
+      {
+        "source_skill": "jtbb_whip_nt3",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F21_奴隷少年summon_鞭_突撃_斬撃.dat",
+        "line": 621
+      },
+      {
+        "source_skill": "jtbb_whip_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F21_奴隷少年summon_鞭_突撃_斬撃.dat",
+        "line": 638
+      },
+      {
+        "source_skill": "sp_dorata_nt1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F31_死亡時エフェクト.dat",
+        "line": 2624
+      },
+      {
+        "source_skill": "monzetsu_fire_cycle_mag",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F50_延焼_究極悶絶少年.dat",
+        "line": 365
+      },
+      {
+        "source_skill": "monzetsu_fire_stop_mag",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F50_延焼_究極悶絶少年.dat",
+        "line": 397
+      },
+      {
+        "source_skill": "monzetsu_fire_chain_at",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F50_延焼_究極悶絶少年.dat",
+        "line": 424
+      },
+      {
+        "source_skill": "monzetsu_fire_ensyou_at_base",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F50_延焼_究極悶絶少年.dat",
+        "line": 453
+      },
+      {
+        "source_skill": "monzetsu_fire_chain_mag",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F50_延焼_究極悶絶少年.dat",
+        "line": 468
+      },
+      {
+        "source_skill": "Shakespeare_fire_cycle_mag",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F51_榴弾・延焼_プレッツヒェン.dat",
+        "line": 454
+      },
+      {
+        "source_skill": "Shakespeare_fire_wave_mag",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F51_榴弾・延焼_プレッツヒェン.dat",
+        "line": 487
+      },
+      {
+        "source_skill": "Shakespeare_fire_stop_mag",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F51_榴弾・延焼_プレッツヒェン.dat",
+        "line": 514
+      },
+      {
+        "source_skill": "Shakespeare_fire_chain_at",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F51_榴弾・延焼_プレッツヒェン.dat",
+        "line": 539
+      },
+      {
+        "source_skill": "Shakespeare_fire_chain_mag",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F51_榴弾・延焼_プレッツヒェン.dat",
+        "line": 552
+      },
+      {
+        "source_skill": "Shakespeare_fire_ensyou_at_base",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F51_榴弾・延焼_プレッツヒェン.dat",
+        "line": 576
+      },
+      {
+        "source_skill": "Shakespeare_fire_ensyou_mag",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F51_榴弾・延焼_プレッツヒェン.dat",
+        "line": 590
+      },
+      {
+        "source_skill": "Shakespeare_fire_ensyou_eff_fake_at",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F51_榴弾・延焼_プレッツヒェン.dat",
+        "line": 597
+      },
+      {
+        "source_skill": "mgrb_b",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_16_20_ALC一派～VVAN.dat",
+        "line": 933
+      },
+      {
+        "source_skill": "mgrc_b",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_16_20_ALC一派～VVAN.dat",
+        "line": 1050
+      },
+      {
+        "source_skill": "b_yuh_sode1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_16_20_ALC一派～VVAN.dat",
+        "line": 1266
+      },
+      {
+        "source_skill": "b_yuh_sode5b",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_16_20_ALC一派～VVAN.dat",
+        "line": 1296
+      },
+      {
+        "source_skill": "b_yuh_sode6b",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_16_20_ALC一派～VVAN.dat",
+        "line": 1311
+      },
+      {
+        "source_skill": "b_yuh_sode7b",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_16_20_ALC一派～VVAN.dat",
+        "line": 1326
+      },
+      {
+        "source_skill": "b_yuh_sode8b",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_16_20_ALC一派～VVAN.dat",
+        "line": 1342
+      },
+      {
+        "source_skill": "b_yuh_sode9b",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_16_20_ALC一派～VVAN.dat",
+        "line": 1358
+      },
+      {
+        "source_skill": "gun_kata",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_16_20_ALC一派～VVAN.dat",
+        "line": 2512
+      },
+      {
+        "source_skill": "sp_mur_act4_nt6",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 413
+      },
+      {
+        "source_skill": "b_ziware_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 513
+      },
+      {
+        "source_skill": "moonlight_nt1b",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 932
+      },
+      {
+        "source_skill": "moonlight_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 952
+      },
+      {
+        "source_skill": "moonlight_nt3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 965
+      },
+      {
+        "source_skill": "moonlight_nt4",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 975
+      },
+      {
+        "source_skill": "moonlight_nt6",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 1027
+      },
+      {
+        "source_skill": "moonlight_nt6b",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 1049
+      },
+      {
+        "source_skill": "moonlight_nt6c",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 1072
+      },
+      {
+        "source_skill": "binta_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 1816
+      },
+      {
+        "source_skill": "aqua_times_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 2393
+      },
+      {
+        "source_skill": "turu_whip_nt3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 4215
+      },
+      {
+        "source_skill": "turu_whip_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 4236
+      },
+      {
+        "source_skill": "znm_boom_nt4",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 5116
+      },
+      {
+        "source_skill": "b_bentou_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+        "line": 1405
+      },
+      {
+        "source_skill": "bdfire_cannon_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+        "line": 1773
+      },
+      {
+        "source_skill": "bdfire_cannon_nt6",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+        "line": 1822
+      },
+      {
+        "source_skill": "charao_ball_nt4",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+        "line": 2861
+      },
+      {
+        "source_skill": "b_fmrim_bb_hude_nt1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat",
+        "line": 495
+      },
+      {
+        "source_skill": "m_magickbs_nt1_1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat",
+        "line": 1651
+      },
+      {
+        "source_skill": "b_magickbs_nt3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat",
+        "line": 1814
+      },
+      {
+        "source_skill": "syunga_throw_nt1a",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat",
+        "line": 1888
+      },
+      {
+        "source_skill": "syunga_throw_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat",
+        "line": 1910
+      },
+      {
+        "source_skill": "syunga_throw_nt5",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat",
+        "line": 1961
+      },
+      {
+        "source_skill": "bidai_godhand_ganban_nt3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 843
+      },
+      {
+        "source_skill": "torpedo_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 5181
+      },
+      {
+        "source_skill": "sp_tsuri",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 5806
+      },
+      {
+        "source_skill": "turnx_a_ef2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 8805
+      },
+      {
+        "source_skill": "ch_syokupan_js2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 11628
+      },
+      {
+        "source_skill": "b_hyuk_nt4",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 12022
+      },
+      {
+        "source_skill": "b_hyuk_ef5",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 12046
+      },
+      {
+        "source_skill": "b_hyuk_ef6",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 12068
+      },
+      {
+        "source_skill": "megabeam_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 12253
+      },
+      {
+        "source_skill": "chefswk_whip_nt3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 12518
+      },
+      {
+        "source_skill": "chefswk_whip_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 12536
+      },
+      {
+        "source_skill": "ukaji_cannon_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 15536
+      },
+      {
+        "source_skill": "hecate_moon_nt1a",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 16083
+      },
+      {
+        "source_skill": "sww_whip_nt3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+        "line": 638
+      },
+      {
+        "source_skill": "sww_whip_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+        "line": 657
+      },
+      {
+        "source_skill": "sww_whip_nt3_pr9",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+        "line": 805
+      },
+      {
+        "source_skill": "mishakuji_wate_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+        "line": 1159
+      },
+      {
+        "source_skill": "biim_ganban_nt3_23",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+        "line": 1531
+      },
+      {
+        "source_skill": "g23_cannon_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+        "line": 1838
+      },
+      {
+        "source_skill": "u23_cannon_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+        "line": 2384
+      },
+      {
+        "source_skill": "nkdks_zan_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+        "line": 3884
+      },
+      {
+        "source_skill": "nkdks_buff_pr",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+        "line": 4103
+      },
+      {
+        "source_skill": "b_jibaku_kimihiko_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+        "line": 375
+      },
+      {
+        "source_skill": "b_jibaku_kimihiko_nt6",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+        "line": 429
+      },
+      {
+        "source_skill": "q_dskr_nt1_c",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+        "line": 1243
+      },
+      {
+        "source_skill": "q_dskr_nt2_c",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+        "line": 1291
+      },
+      {
+        "source_skill": "sp_ganban_nt3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_0_共用.dat",
+        "line": 850
+      },
+      {
+        "source_skill": "sp_slide_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_0_共用.dat",
+        "line": 1368
+      },
+      {
+        "source_skill": "kurukuru_bomb2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 3038
+      },
+      {
+        "source_skill": "sp_nsdr_nt7_a",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 3803
+      },
+      {
+        "source_skill": "sp_goiko_nt6_1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 5172
+      },
+      {
+        "source_skill": "sp_goiko_nt6_2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 5189
+      },
+      {
+        "source_skill": "sp_goiko_pr2_2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 5238
+      },
+      {
+        "source_skill": "sp_goiko_pr4",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 5278
+      },
+      {
+        "source_skill": "sp_hns_act4_nt6",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_16_20_ALC一派～VVAN.dat",
+        "line": 574
+      },
+      {
+        "source_skill": "jigen_zan_kazeb",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_16_20_ALC一派～VVAN.dat",
+        "line": 2262
+      },
+      {
+        "source_skill": "tornado_nt3_nt1a_nt_nt3_nt_nt",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_16_20_ALC一派～VVAN.dat",
+        "line": 2784
+      },
+      {
+        "source_skill": "tornado_nt3_nt_last4",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_16_20_ALC一派～VVAN.dat",
+        "line": 2924
+      },
+      {
+        "source_skill": "sp_yaju_act4_nt6",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 360
+      },
+      {
+        "source_skill": "shokudai_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 2078
+      },
+      {
+        "source_skill": "shokudai_nt3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 2086
+      },
+      {
+        "source_skill": "kusari_idv2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 2172
+      },
+      {
+        "source_skill": "sp_knn_act4_nt6",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 2938
+      },
+      {
+        "source_skill": "sp_rubaku_nt3sake",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 3438
+      },
+      {
+        "source_skill": "sp_rubaku_nt3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 3551
+      },
+      {
+        "source_skill": "sp_rukick_pr6",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 3746
+      },
+      {
+        "source_skill": "sp_9ban_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 3933
+      },
+      {
+        "source_skill": "sp_tusk_act4_nt6",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+        "line": 2812
+      },
+      {
+        "source_skill": "sp_fmrim_jocar_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+        "line": 618
+      },
+      {
+        "source_skill": "ice_cannon_nt1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+        "line": 732
+      },
+      {
+        "source_skill": "ice_cannon_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+        "line": 740
+      },
+      {
+        "source_skill": "cm_cannon_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+        "line": 902
+      },
+      {
+        "source_skill": "senkou4_nt3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_31_32_ぢゆし～サムソン.dat",
+        "line": 558
+      },
+      {
+        "source_skill": "v1rocket_nt1",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_14_ヌエバ・デスパセーニャ.dat",
+        "line": 50
+      },
+      {
+        "source_skill": "sp_hnssun_nt3b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+        "line": 1137
+      },
+      {
+        "source_skill": "watecannon_w_nt1",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_2222_レイノアレフ.dat",
+        "line": 395
+      },
+      {
+        "source_skill": "watecannon_w_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_2222_レイノアレフ.dat",
+        "line": 411
+      },
+      {
+        "source_skill": "watecannon_w_nt6",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_2222_レイノアレフ.dat",
+        "line": 452
+      },
+      {
+        "source_skill": "fire_cannon_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_2222_レイノアレフ.dat",
+        "line": 818
+      },
+      {
+        "source_skill": "fire_cannon_nt6",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_2222_レイノアレフ.dat",
+        "line": 866
+      },
+      {
+        "source_skill": "ele_whip_nt3",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_2222_レイノアレフ.dat",
+        "line": 1326
+      },
+      {
+        "source_skill": "ele_whip_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_2222_レイノアレフ.dat",
+        "line": 1342
+      },
+      {
+        "source_skill": "b_jibaku_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_2222_レイノアレフ.dat",
+        "line": 1629
+      },
+      {
+        "source_skill": "b_jibaku_nt6",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_2222_レイノアレフ.dat",
+        "line": 1683
+      },
+      {
+        "source_skill": "biim_ganban_nt3",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_2323_リュージ騎士団.dat",
+        "line": 46
+      },
+      {
+        "source_skill": "ef_magicknn_nt",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 289
+      },
+      {
+        "source_skill": "b_psyco_nt3",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 1168
+      },
+      {
+        "source_skill": "dantag_ch1_js",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 1550
+      },
+      {
+        "source_skill": "subier_syokusyu_nt3",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 2911
+      },
+      {
+        "source_skill": "subier_syokusyu_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 2928
+      },
+      {
+        "source_skill": "hznMPT_nt1b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 3683
+      },
+      {
+        "source_skill": "ohuda_damageL1",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 4996
+      },
+      {
+        "source_skill": "ohuda_damageL2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 5012
+      },
+      {
+        "source_skill": "advent_ligh_nt3",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 7623
+      },
+      {
+        "source_skill": "bombnomi_cannon_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 7741
+      },
+      {
+        "source_skill": "sp_februar_bomb6",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 8056
+      },
+      {
+        "source_skill": "ganboru_rifle_ligh_nt3",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 8340
+      },
+      {
+        "source_skill": "mobile_rifle_ligh_nt3",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 9528
+      },
+      {
+        "source_skill": "s_cannon_nt1",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 9830
+      },
+      {
+        "source_skill": "sake_rocket_bomber_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 11596
+      },
+      {
+        "source_skill": "sake_rocket_bomber_nt6",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 11652
+      },
+      {
+        "source_skill": "sakenomiga_ganban_nt3",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 13763
+      },
+      {
+        "source_skill": "uru_dash_nt2damage",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 14934
+      },
+      {
+        "source_skill": "sp_sww_waza_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 16087
+      },
+      {
+        "source_skill": "mishakuji_wate23_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 16218
+      },
+      {
+        "source_skill": "sww23_whip_nt3",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 16485
+      },
+      {
+        "source_skill": "sww23_whip_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 16504
+      },
+      {
+        "source_skill": "dtswk3_crowd_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 17559
+      },
+      {
+        "source_skill": "sp_dtsww_waza_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 18005
+      },
+      {
+        "source_skill": "dtswk3_kaeru_summon_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 19988
+      },
+      {
+        "source_skill": "yuuh_sp_c3_1e",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 306
+      },
+      {
+        "source_skill": "atud_smoke_fire_js",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 1576
+      },
+      {
+        "source_skill": "atud_fire_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 1713
+      },
+      {
+        "source_skill": "snnm_arm_at1b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 1878
+      },
+      {
+        "source_skill": "snnm_arm_at2b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 1892
+      },
+      {
+        "source_skill": "snnm_arm_nt1b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 1911
+      },
+      {
+        "source_skill": "snnm_arm_nt2b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 1930
+      },
+      {
+        "source_skill": "snnm_arm_nt3b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 1940
+      },
+      {
+        "source_skill": "snnm_arm_nt4b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 1950
+      },
+      {
+        "source_skill": "snnm_arm_nt5b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 1960
+      },
+      {
+        "source_skill": "snnm_arm_nt6b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 1970
+      },
+      {
+        "source_skill": "snnm_arm_nt7b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 1980
+      },
+      {
+        "source_skill": "snnm_arm_nt8b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 1990
+      },
+      {
+        "source_skill": "snnm_arm_nt9b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 2000
+      },
+      {
+        "source_skill": "snnm_arm_nt10b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 2010
+      },
+      {
+        "source_skill": "snnm_arm_nt11b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 2020
+      },
+      {
+        "source_skill": "snnm_arm_nt12b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 2030
+      },
+      {
+        "source_skill": "snnm_arm_nt13b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 2040
+      },
+      {
+        "source_skill": "snnm_arm_nt14b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 2050
+      },
+      {
+        "source_skill": "snnm_arm_nt15b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 2060
+      },
+      {
+        "source_skill": "snnm_arm_nt16b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 2070
+      },
+      {
+        "source_skill": "snnm_arm_nt17b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 2080
+      },
+      {
+        "source_skill": "snnm_arm_nt18b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 2090
+      },
+      {
+        "source_skill": "snnm_arm_nt19b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 2100
+      },
+      {
+        "source_skill": "snnm_arm_nt20b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 2110
+      },
+      {
+        "source_skill": "snnm_arm_nt21b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 2120
+      },
+      {
+        "source_skill": "snnm_arm_nt22b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 2130
+      },
+      {
+        "source_skill": "snnm_arm_nt23b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 2140
+      },
+      {
+        "source_skill": "snnm_arm_nt24b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 2150
+      },
+      {
+        "source_skill": "snnm_arm_nt25b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 2160
+      },
+      {
+        "source_skill": "snnm_arm_nt26b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 2170
+      },
+      {
+        "source_skill": "snnm_arm_nt27b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 2180
+      },
+      {
+        "source_skill": "snnm_arm_nt28b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 2190
+      },
+      {
+        "source_skill": "snnm_arm_nt29b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 2200
+      },
+      {
+        "source_skill": "snnm_arm_nt30b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 2210
+      },
+      {
+        "source_skill": "b_otsg_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 3683
+      },
+      {
+        "source_skill": "roadroller_ganban_nt3",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_2_クレイジーサイコホモ.dat",
+        "line": 1216
+      },
+      {
+        "source_skill": "sp_road_ganban_nt3",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_2_クレイジーサイコホモ.dat",
+        "line": 1283
+      },
+      {
+        "source_skill": "sp_nannkasugoino2_pr6",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_505_閉店の日.dat",
+        "line": 525
+      },
+      {
+        "source_skill": "go_attack2_nt1",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_505_閉店の日.dat",
+        "line": 969
+      },
+      {
+        "source_skill": "go_attack_nt1",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_50_GO.dat",
+        "line": 27
+      },
+      {
+        "source_skill": "sp_sww_waza_nt2_eliz",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 328
+      },
+      {
+        "source_skill": "eliz_wts_tornade_nt3",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 402
+      },
+      {
+        "source_skill": "eliz_wts_honoo_nt3",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 476
+      },
+      {
+        "source_skill": "eliz_wts_tuti_nt3",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 556
+      },
+      {
+        "source_skill": "eliz_wts_hikari_nt3",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 639
+      },
+      {
+        "source_skill": "eliz_wts_yami_nt3",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 722
+      },
+      {
+        "source_skill": "eliz_wts_nizi_nt3",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 806
+      },
+      {
+        "source_skill": "s_astk_pr0",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 1441
+      },
+      {
+        "source_skill": "s_astk2_pr0",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 1534
+      },
+      {
+        "source_skill": "s_astk3_pr0",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 1627
+      },
+      {
+        "source_skill": "s_astk4_pr0",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+        "line": 1720
+      },
+      {
+        "source_skill": "inm_ch1_js",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 5253
+      },
+      {
+        "source_skill": "ef_inm_dark_nt",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 5961
+      },
+      {
+        "source_skill": "sp_milkyway_pr6",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_5_伏見稲荷大社.dat",
+        "line": 403
+      },
+      {
+        "source_skill": "cm_inari_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_5_伏見稲荷大社.dat",
+        "line": 770
+      },
+      {
+        "source_skill": "kankure_ganban_nt3",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_5_伏見稲荷大社.dat",
+        "line": 1324
+      },
+      {
+        "source_skill": "boss_d_inarizan1_nt1",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_5_伏見稲荷大社.dat",
+        "line": 1434
+      },
+      {
+        "source_skill": "boss_d1_inarizan1_nt1",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_5_伏見稲荷大社.dat",
+        "line": 1501
+      },
+      {
+        "source_skill": "boss_d3_inarizan1_nt1",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_5_伏見稲荷大社.dat",
+        "line": 1570
+      },
+      {
+        "source_skill": "boss_inari_cannon_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_5_伏見稲荷大社.dat",
+        "line": 1652
+      },
+      {
+        "source_skill": "s_sei_nt4",
+        "target": "@",
+        "file": "a_default/script/41_内政_アイテム/S_item_002_skill2.dat",
+        "line": 202
+      },
+      {
+        "source_skill": "dfire_cannon_nt1_r",
+        "target": "@",
+        "file": "a_default/script/5000_ランダムシナリオ/RB_ボススキル.dat",
+        "line": 711
+      },
+      {
+        "source_skill": "sp_nannkasugoino_pr6",
+        "target": "@",
+        "file": "a_default/script/6000_スキルテスト/skill_00_test.dat",
+        "line": 163
+      },
+      {
+        "source_skill": "icg_boom_nt4",
+        "target": "@",
+        "file": "a_default/script/6000_スキルテスト/skill_00_test.dat",
+        "line": 426
+      },
+      {
+        "source_skill": "buff_pinga_pr4",
+        "target": "@",
+        "file": "a_default/script/6000_スキルテスト/skill_intyo.dat",
+        "line": 1143
+      },
+      {
+        "source_skill": "ninja_zan1_nt1",
+        "target": "@",
+        "file": "a_default/script/6000_スキルテスト/skill_人材追加mod.dat",
+        "line": 328
+      },
+      {
+        "source_skill": "sp_alc_nt1c",
+        "target": "@",
+        "file": "a_default/script/6000_スキルテスト/skill_人材追加mod.dat",
+        "line": 1215
+      },
+      {
+        "source_skill": "eaempirecpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSeasymode.dat",
+        "line": 105
+      },
+      {
+        "source_skill": "rtsinfkaratecpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 768
+      },
+      {
+        "source_skill": "rtscavkaratecpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 780
+      },
+      {
+        "source_skill": "rtsgunkaratecpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 789
+      },
+      {
+        "source_skill": "rtsmagkaratecpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 799
+      },
+      {
+        "source_skill": "rtsartkaratecpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 810
+      },
+      {
+        "source_skill": "rtsinfmarinacpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 825
+      },
+      {
+        "source_skill": "rtscavmarinacpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 838
+      },
+      {
+        "source_skill": "rtsartmarinacpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 848
+      },
+      {
+        "source_skill": "rtsmagmarinacpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 858
+      },
+      {
+        "source_skill": "rtsreimarinacpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 869
+      },
+      {
+        "source_skill": "rtsinfreteicpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 883
+      },
+      {
+        "source_skill": "rtscavreteicpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 896
+      },
+      {
+        "source_skill": "rtsartreteicpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 906
+      },
+      {
+        "source_skill": "rtsreareteicpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 916
+      },
+      {
+        "source_skill": "rtsreireteicpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 927
+      },
+      {
+        "source_skill": "rtsinfkimocpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 941
+      },
+      {
+        "source_skill": "rtscavkimocpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 954
+      },
+      {
+        "source_skill": "rtsartkimocpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 964
+      },
+      {
+        "source_skill": "rtsreakimocpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 974
+      },
+      {
+        "source_skill": "rtsoldkimocpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 984
+      },
+      {
+        "source_skill": "rtsinfhonocpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 999
+      },
+      {
+        "source_skill": "rtsarthonocpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 1009
+      },
+      {
+        "source_skill": "rtsreahonocpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 1019
+      },
+      {
+        "source_skill": "rtsinqhonocpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 1029
+      },
+      {
+        "source_skill": "rtsmarhonocpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 1042
+      },
+      {
+        "source_skill": "rtsreihonocpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 1064
+      },
+      {
+        "source_skill": "rtsinfgenricpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 1078
+      },
+      {
+        "source_skill": "rtscavgenricpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 1091
+      },
+      {
+        "source_skill": "rtsreagenricpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 1101
+      },
+      {
+        "source_skill": "rtsreigenricpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 1122
+      },
+      {
+        "source_skill": "rtsinfobackcpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 1138
+      },
+      {
+        "source_skill": "rtscavobackcpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 1151
+      },
+      {
+        "source_skill": "rtsreaobackcpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 1161
+      },
+      {
+        "source_skill": "rtsartobackcpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 1172
+      },
+      {
+        "source_skill": "rtsinfokasicpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 1211
+      },
+      {
+        "source_skill": "rtscavokasicpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 1222
+      },
+      {
+        "source_skill": "rtsreaokasicpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 1232
+      },
+      {
+        "source_skill": "rtsartokasicpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 1243
+      },
+      {
+        "source_skill": "rtsinfkoumacpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 1285
+      },
+      {
+        "source_skill": "rtsreakoumacpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 1295
+      },
+      {
+        "source_skill": "rtsreikoumacpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 1306
+      },
+      {
+        "source_skill": "rtsinfsamsoncpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 1317
+      },
+      {
+        "source_skill": "rtsreasamsoncpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+        "line": 1327
+      },
+      {
+        "source_skill": "naempirecpu",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSnew.dat",
+        "line": 106
+      },
+      {
+        "source_skill": "cm_cannon_nt1rts",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSskill.dat",
+        "line": 213
+      }
+    ],
+    "pair_next": [
+      {
+        "source_skill": "rpgzan1_nt1",
+        "target": "@",
+        "file": "a_default/script/2023_イベント_リュージ騎士団/event_23_RPG.dat",
+        "line": 16221
+      },
+      {
+        "source_skill": "rpgzan1_nt2",
+        "target": "@",
+        "file": "a_default/script/2023_イベント_リュージ騎士団/event_23_RPG.dat",
+        "line": 16231
+      },
+      {
+        "source_skill": "letsu_beam_pr4",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 926
+      },
+      {
+        "source_skill": "sww_laser",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 967
+      },
+      {
+        "source_skill": "kusonage",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 1205
+      },
+      {
+        "source_skill": "m_fire_pr1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 1606
+      },
+      {
+        "source_skill": "m_wate_pr1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 2139
+      },
+      {
+        "source_skill": "ms_wate_pr1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 2410
+      },
+      {
+        "source_skill": "m_eart_pr1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 2798
+      },
+      {
+        "source_skill": "buchipa_pr1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 5774
+      },
+      {
+        "source_skill": "senkyo_ef",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 7436
+      },
+      {
+        "source_skill": "atmu_thun",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 8045
+      },
+      {
+        "source_skill": "atmu_wate",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 8072
+      },
+      {
+        "source_skill": "b_kamaitachi_pr2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 8393
+      },
+      {
+        "source_skill": "toki",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 9122
+      },
+      {
+        "source_skill": "tekidan",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_砲撃リニューアル.dat",
+        "line": 1111
+      },
+      {
+        "source_skill": "kuso_mugen",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_砲撃リニューアル.dat",
+        "line": 2154
+      },
+      {
+        "source_skill": "shot_gun_nt0a",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 1855
+      },
+      {
+        "source_skill": "reitoumgs_nt0",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 2433
+      },
+      {
+        "source_skill": "mp1919_nt0a",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 2954
+      },
+      {
+        "source_skill": "rensha_wategun_nt0",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 3376
+      },
+      {
+        "source_skill": "icg_gun_nt0",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 3437
+      },
+      {
+        "source_skill": "harimiko_gun_nt0a",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 3846
+      },
+      {
+        "source_skill": "zan1_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 120
+      },
+      {
+        "source_skill": "ch1_js",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 578
+      },
+      {
+        "source_skill": "karate1_nt1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 1317
+      },
+      {
+        "source_skill": "karate1_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 1326
+      },
+      {
+        "source_skill": "ch1k_js",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 1524
+      },
+      {
+        "source_skill": "kn_zan1_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 1693
+      },
+      {
+        "source_skill": "snch1_js",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 2036
+      },
+      {
+        "source_skill": "tsuppari",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 2225
+      },
+      {
+        "source_skill": "tsuppari2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 2376
+      },
+      {
+        "source_skill": "tsuppari_old",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 2496
+      },
+      {
+        "source_skill": "higekuma_summon",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 5676
+      },
+      {
+        "source_skill": "r_kamaitachi",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 6078
+      },
+      {
+        "source_skill": "dead_nezumi",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 9256
+      },
+      {
+        "source_skill": "yuwaku1_nt1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 11705
+      },
+      {
+        "source_skill": "yuwaku1_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 11725
+      },
+      {
+        "source_skill": "tsnch1_js",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F21_奴隷少年summon_鞭_突撃_斬撃.dat",
+        "line": 300
+      },
+      {
+        "source_skill": "alc_eart_pr1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_16_20_ALC一派～VVAN.dat",
+        "line": 82
+      },
+      {
+        "source_skill": "gun_kata",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_16_20_ALC一派～VVAN.dat",
+        "line": 2518
+      },
+      {
+        "source_skill": "iwana_kamaitachi_pr2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 100
+      },
+      {
+        "source_skill": "zngm_gun_nt0",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 4366
+      },
+      {
+        "source_skill": "zngm_wate_pr1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 4543
+      },
+      {
+        "source_skill": "m_star_pr1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 4797
+      },
+      {
+        "source_skill": "baishu_ef",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+        "line": 2090
+      },
+      {
+        "source_skill": "muso3dan",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+        "line": 2259
+      },
+      {
+        "source_skill": "tusk_gun_act2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+        "line": 2459
+      },
+      {
+        "source_skill": "tusk_old_gun",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+        "line": 2669
+      },
+      {
+        "source_skill": "110jaku_gun_nt0a",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+        "line": 3037
+      },
+      {
+        "source_skill": "syunga_throw",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat",
+        "line": 1859
+      },
+      {
+        "source_skill": "m_inu_how",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_31_32_ぢゆし～サムソン.dat",
+        "line": 1113
+      },
+      {
+        "source_skill": "jma_ligh",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 7297
+      },
+      {
+        "source_skill": "mm_wate_pr1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 7511
+      },
+      {
+        "source_skill": "jj9_stamp_js",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 9506
+      },
+      {
+        "source_skill": "jj9_gun_nt0_3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 9578
+      },
+      {
+        "source_skill": "hyuk_vul_nt0",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 11674
+      },
+      {
+        "source_skill": "comfy_mist",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 14312
+      },
+      {
+        "source_skill": "b_fknn_js",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+        "line": 250
+      },
+      {
+        "source_skill": "sww_mishakuji",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+        "line": 1138
+      },
+      {
+        "source_skill": "tdn_grenade",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+        "line": 166
+      },
+      {
+        "source_skill": "kimihiko_gun_nt0",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+        "line": 286
+      },
+      {
+        "source_skill": "dark_shotgun_nt0a",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+        "line": 778
+      },
+      {
+        "source_skill": "sp_gun_nt0",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_0_共用.dat",
+        "line": 1589
+      },
+      {
+        "source_skill": "sp_grenade",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_0_共用.dat",
+        "line": 1675
+      },
+      {
+        "source_skill": "sp_flash",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 4139
+      },
+      {
+        "source_skill": "bnkrg_grenade",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 4299
+      },
+      {
+        "source_skill": "sp_yakimeshi_nt0",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+        "line": 446
+      },
+      {
+        "source_skill": "sp_tusk_act1_nt0",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+        "line": 2328
+      },
+      {
+        "source_skill": "psr_grenade",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_14_ヌエバ・デスパセーニャ.dat",
+        "line": 282
+      },
+      {
+        "source_skill": "noel_zan1_nt1",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 846
+      },
+      {
+        "source_skill": "noel_zan1_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 855
+      },
+      {
+        "source_skill": "dantag_ch1_js",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 1548
+      },
+      {
+        "source_skill": "bokhohn_zan1_nt1",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 1968
+      },
+      {
+        "source_skill": "bokhohn_zan1_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 1977
+      },
+      {
+        "source_skill": "kzinssie_zan1_nt1",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 2369
+      },
+      {
+        "source_skill": "kzinssie_zan1_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 2383
+      },
+      {
+        "source_skill": "hzn_zan1_nt1",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 3244
+      },
+      {
+        "source_skill": "hzn_zan1_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 3253
+      },
+      {
+        "source_skill": "hovertank_gun_nt0",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 8720
+      },
+      {
+        "source_skill": "mobile_saber1_nt1",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 9598
+      },
+      {
+        "source_skill": "mobile_saber1_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 9607
+      },
+      {
+        "source_skill": "misyamisya_summon",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 15744
+      },
+      {
+        "source_skill": "sww23_mishakuji",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 16197
+      },
+      {
+        "source_skill": "yuuh_toppa",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 1011
+      },
+      {
+        "source_skill": "atud_gun_gun",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 1247
+      },
+      {
+        "source_skill": "b_wndg_nt1",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 3101
+      },
+      {
+        "source_skill": "inm_ch1_js",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 5251
+      },
+      {
+        "source_skill": "inm_tekidan_shadow",
+        "target": "naidesu",
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 5679
+      },
+      {
+        "source_skill": "inm_dark_pr1",
+        "target": "none",
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 5860
+      },
+      {
+        "source_skill": "inari_tekidan",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_5_伏見稲荷大社.dat",
+        "line": 1744
+      },
+      {
+        "source_skill": "boat_gun_nt0",
+        "target": "@",
+        "file": "a_default/script/45_内政_防衛兵器/siege_skill.dat",
+        "line": 3130
+      },
+      {
+        "source_skill": "misyamisya_summon_r",
+        "target": "@",
+        "file": "a_default/script/5000_ランダムシナリオ/RB_ボススキル.dat",
+        "line": 467
+      },
+      {
+        "source_skill": "funnel_beam_pr4",
+        "target": "@",
+        "file": "a_default/script/6000_スキルテスト/skill_人材追加mod.dat",
+        "line": 666
+      },
+      {
+        "source_skill": "masui1_nt1",
+        "target": "@",
+        "file": "a_default/script/6000_スキルテスト/skill_人材追加mod.dat",
+        "line": 779
+      },
+      {
+        "source_skill": "masui1_nt2",
+        "target": "@",
+        "file": "a_default/script/6000_スキルテスト/skill_人材追加mod.dat",
+        "line": 788
+      },
+      {
+        "source_skill": "kuso_rts",
+        "target": "@",
+        "file": "a_default/script/8000_RTSシナリオ/RTSskill.dat",
+        "line": 587
+      }
+    ],
+    "just_next": [
+      {
+        "source_skill": "rpgzan1_nt1",
+        "target": "@",
+        "file": "a_default/script/2023_イベント_リュージ騎士団/event_23_RPG.dat",
+        "line": 16222
+      },
+      {
+        "source_skill": "rpgzan1_nt2",
+        "target": "@",
+        "file": "a_default/script/2023_イベント_リュージ騎士団/event_23_RPG.dat",
+        "line": 16232
+      },
+      {
+        "source_skill": "m_ligh_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 1258
+      },
+      {
+        "source_skill": "b_kamaitachi_pr2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 8394
+      },
+      {
+        "source_skill": "shot_gun_nt0a",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 1856
+      },
+      {
+        "source_skill": "reitoumgs_nt0",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 2434
+      },
+      {
+        "source_skill": "mp1919_nt0a",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 2955
+      },
+      {
+        "source_skill": "rensha_wategun_nt0",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 3377
+      },
+      {
+        "source_skill": "icg_gun_nt0",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 3438
+      },
+      {
+        "source_skill": "harimiko_gun_nt0a",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 3847
+      },
+      {
+        "source_skill": "american_whip",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_鞭.dat",
+        "line": 488
+      },
+      {
+        "source_skill": "zan1_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 121
+      },
+      {
+        "source_skill": "ch1_js",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 579
+      },
+      {
+        "source_skill": "karate1_nt1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 1318
+      },
+      {
+        "source_skill": "karate1_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 1327
+      },
+      {
+        "source_skill": "ch1k_js",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 1525
+      },
+      {
+        "source_skill": "kn_zan1_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 1694
+      },
+      {
+        "source_skill": "snch1_js",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 2037
+      },
+      {
+        "source_skill": "yuwaku1_nt1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 11706
+      },
+      {
+        "source_skill": "yuwaku1_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 11726
+      },
+      {
+        "source_skill": "tsnch1_js",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F21_奴隷少年summon_鞭_突撃_斬撃.dat",
+        "line": 301
+      },
+      {
+        "source_skill": "iwana_kamaitachi_pr2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 101
+      },
+      {
+        "source_skill": "b_laser2_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 177
+      },
+      {
+        "source_skill": "zngm_gun_nt0",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 4367
+      },
+      {
+        "source_skill": "110jaku_gun_nt0a",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+        "line": 3038
+      },
+      {
+        "source_skill": "ma_ligh_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 1030
+      },
+      {
+        "source_skill": "jma_ligh_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 7325
+      },
+      {
+        "source_skill": "jj9_stamp_js",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 9505
+      },
+      {
+        "source_skill": "hyuk_vul_nt0",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 11675
+      },
+      {
+        "source_skill": "megabeam_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 12242
+      },
+      {
+        "source_skill": "b_fknn_js",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+        "line": 251
+      },
+      {
+        "source_skill": "kimihiko_gun_nt0",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+        "line": 287
+      },
+      {
+        "source_skill": "dark_shotgun_nt0a",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+        "line": 779
+      },
+      {
+        "source_skill": "noel_zan1_nt1",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 847
+      },
+      {
+        "source_skill": "noel_zan1_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 856
+      },
+      {
+        "source_skill": "dantag_ch1_js",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 1549
+      },
+      {
+        "source_skill": "bokhohn_zan1_nt1",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 1969
+      },
+      {
+        "source_skill": "bokhohn_zan1_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 1978
+      },
+      {
+        "source_skill": "kzinssie_zan1_nt1",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 2370
+      },
+      {
+        "source_skill": "kzinssie_zan1_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 2384
+      },
+      {
+        "source_skill": "hzn_zan1_nt1",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 3245
+      },
+      {
+        "source_skill": "hzn_zan1_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 3254
+      },
+      {
+        "source_skill": "hovertank_gun_nt0",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 8721
+      },
+      {
+        "source_skill": "mobile_saber1_nt1",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 9599
+      },
+      {
+        "source_skill": "mobile_saber1_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 9608
+      },
+      {
+        "source_skill": "atud_gun_gun",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 1248
+      },
+      {
+        "source_skill": "b_wndg_nt1",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 3100
+      },
+      {
+        "source_skill": "inm_ch1_js",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 5252
+      },
+      {
+        "source_skill": "inm_dark_pr1",
+        "target": "none",
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 5865
+      },
+      {
+        "source_skill": "boat_gun_nt0",
+        "target": "@",
+        "file": "a_default/script/45_内政_防衛兵器/siege_skill.dat",
+        "line": 3131
+      },
+      {
+        "source_skill": "masui1_nt1",
+        "target": "@",
+        "file": "a_default/script/6000_スキルテスト/skill_人材追加mod.dat",
+        "line": 780
+      },
+      {
+        "source_skill": "masui1_nt2",
+        "target": "@",
+        "file": "a_default/script/6000_スキルテスト/skill_人材追加mod.dat",
+        "line": 789
+      }
+    ],
+    "next2": [
+      {
+        "source_skill": "m_wate_pr1",
+        "target": "none",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 2148
+      },
+      {
+        "source_skill": "ms_wate_pr1",
+        "target": "none",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 2419
+      },
+      {
+        "source_skill": "bnkrg_fire2_ef2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 4962
+      },
+      {
+        "source_skill": "bnkrg_fire_pr_nt3_2_2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 5250
+      },
+      {
+        "source_skill": "senkyo_ef",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 7433
+      },
+      {
+        "source_skill": "atmu_fire_joi",
+        "target": "none",
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 8017
+      },
+      {
+        "source_skill": "harimiko_kantsu",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 4191
+      },
+      {
+        "source_skill": "sw_karate1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 1137
+      },
+      {
+        "source_skill": "rmla_yari2_js1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 2919
+      },
+      {
+        "source_skill": "rmla_yari2_pr2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 3112
+      },
+      {
+        "source_skill": "rmla_yari2_pr5",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 3140
+      },
+      {
+        "source_skill": "ssrmla_yari2_js1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 5640
+      },
+      {
+        "source_skill": "ssrmla_yari2_pr2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 5821
+      },
+      {
+        "source_skill": "ssrmla_yari2_pr5",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 5849
+      },
+      {
+        "source_skill": "rmla_ch_js",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F12_charge.dat",
+        "line": 1037
+      },
+      {
+        "source_skill": "rmla_ch_jsb",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F12_charge.dat",
+        "line": 1053
+      },
+      {
+        "source_skill": "tamago_joi",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F12_charge.dat",
+        "line": 1606
+      },
+      {
+        "source_skill": "ssrmla_ch_js",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F12_charge.dat",
+        "line": 1818
+      },
+      {
+        "source_skill": "ssrmla_ch_jsb",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F12_charge.dat",
+        "line": 1834
+      },
+      {
+        "source_skill": "sp_senpai_joi2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 2778
+      },
+      {
+        "source_skill": "sp_senpai_joi2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 2778
+      },
+      {
+        "source_skill": "sp_senpai_joi2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 2778
+      },
+      {
+        "source_skill": "sp_senpai_joi2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 2778
+      },
+      {
+        "source_skill": "sp_senpai_joi2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 2778
+      },
+      {
+        "source_skill": "sp_smokecannon_nt4",
+        "target": "dummy",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 5807
+      },
+      {
+        "source_skill": "sp_smokecannon_nt4",
+        "target": "dummy",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 5807
+      },
+      {
+        "source_skill": "sp_green_ef4",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 6789
+      },
+      {
+        "source_skill": "blade_dead_nt1_2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F31_死亡時エフェクト.dat",
+        "line": 534
+      },
+      {
+        "source_skill": "sayonara_nt7_0",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F31_死亡時エフェクト.dat",
+        "line": 1457
+      },
+      {
+        "source_skill": "sayonara_nt12_nt1_nt1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F31_死亡時エフェクト.dat",
+        "line": 1940
+      },
+      {
+        "source_skill": "sayonara_nt13_1_2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F31_死亡時エフェクト.dat",
+        "line": 2104
+      },
+      {
+        "source_skill": "test_fire",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F31_死亡時エフェクト.dat",
+        "line": 2374
+      },
+      {
+        "source_skill": "p_dash_nt13",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F40_移動_ワープ_バリア.dat",
+        "line": 456
+      },
+      {
+        "source_skill": "toono_syukketu",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F52_出血エフェクト.dat",
+        "line": 15
+      },
+      {
+        "source_skill": "toono_syukketu",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F52_出血エフェクト.dat",
+        "line": 15
+      },
+      {
+        "source_skill": "toono_syukketu",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F52_出血エフェクト.dat",
+        "line": 15
+      },
+      {
+        "source_skill": "toono_syukketu_nt1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F52_出血エフェクト.dat",
+        "line": 24
+      },
+      {
+        "source_skill": "toono_syukketu_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F52_出血エフェクト.dat",
+        "line": 35
+      },
+      {
+        "source_skill": "toono_syukketu_nt3",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F52_出血エフェクト.dat",
+        "line": 159
+      },
+      {
+        "source_skill": "toono_syukketu_nt3",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F52_出血エフェクト.dat",
+        "line": 159
+      },
+      {
+        "source_skill": "toono_syukketu2_nt1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F52_出血エフェクト.dat",
+        "line": 230
+      },
+      {
+        "source_skill": "toono_syukketu2_nt1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F52_出血エフェクト.dat",
+        "line": 230
+      },
+      {
+        "source_skill": "masu_hosi_ef",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+        "line": 514
+      },
+      {
+        "source_skill": "sp_masupa5_nt1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+        "line": 828
+      },
+      {
+        "source_skill": "sp_masupa5_nt1_nt1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+        "line": 854
+      },
+      {
+        "source_skill": "sp_masupa5_nt1_b",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+        "line": 868
+      },
+      {
+        "source_skill": "sp_masupa5_nt3_nt1",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+        "line": 1127
+      },
+      {
+        "source_skill": "sp_masupa5_nt3_nt_ex",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+        "line": 1196
+      },
+      {
+        "source_skill": "sp_masupa5_nt3_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+        "line": 1250
+      },
+      {
+        "source_skill": "sp_ndk2_ef2_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F61_核兵器.dat",
+        "line": 858
+      },
+      {
+        "source_skill": "sp_ndk2_ef2_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F61_核兵器.dat",
+        "line": 858
+      },
+      {
+        "source_skill": "sp_ndk2_ef2_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F61_核兵器.dat",
+        "line": 858
+      },
+      {
+        "source_skill": "sp_ndk2_ef2_nt2",
+        "target": "@",
+        "file": "a_default/script/30_スキル/F61_核兵器.dat",
+        "line": 858
+      },
+      {
+        "source_skill": "moonlight_ef2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 1154
+      },
+      {
+        "source_skill": "zngm_wate_pr1",
+        "target": "none",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 4552
+      },
+      {
+        "source_skill": "m_star_pr1",
+        "target": "none",
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 4806
+      },
+      {
+        "source_skill": "baishu_ef",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+        "line": 2089
+      },
+      {
+        "source_skill": "tusk_gun_nt3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+        "line": 2605
+      },
+      {
+        "source_skill": "tis_gunmin2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+        "line": 3435
+      },
+      {
+        "source_skill": "b_hude_a_ef",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat",
+        "line": 2711
+      },
+      {
+        "source_skill": "sp_zseiken2_pr3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 349
+      },
+      {
+        "source_skill": "sp_zseiken2_pr3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 349
+      },
+      {
+        "source_skill": "sp_zseiken2_pr3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 349
+      },
+      {
+        "source_skill": "uho_abesan_nt5_2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 2149
+      },
+      {
+        "source_skill": "uho_abesan_nt5_2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 2149
+      },
+      {
+        "source_skill": "uho_abesan_nt5_2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 2149
+      },
+      {
+        "source_skill": "abesan_yari1_pr0a",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 2494
+      },
+      {
+        "source_skill": "abesan_yari1_pr0a",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 2494
+      },
+      {
+        "source_skill": "abesan_yari1_pr0a",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 2494
+      },
+      {
+        "source_skill": "abesan_yari1_pr0a",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 2494
+      },
+      {
+        "source_skill": "abesan_yari1_pr0a",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 2494
+      },
+      {
+        "source_skill": "abesan_yari1_pr0a",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 2494
+      },
+      {
+        "source_skill": "abesan_yari1_pr0a",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 2494
+      },
+      {
+        "source_skill": "sp_tsuri",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 5807
+      },
+      {
+        "source_skill": "sp_tsuri",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 5807
+      },
+      {
+        "source_skill": "sp_tsuri",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 5807
+      },
+      {
+        "source_skill": "sp_tsuri",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 5807
+      },
+      {
+        "source_skill": "di2_nt3b",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 6964
+      },
+      {
+        "source_skill": "mm_wate_pr1",
+        "target": "none",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 7520
+      },
+      {
+        "source_skill": "mcy_grenade_nt3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 11005
+      },
+      {
+        "source_skill": "son_voe_down1b",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 11217
+      },
+      {
+        "source_skill": "sp_jagi_nt3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 12995
+      },
+      {
+        "source_skill": "m_hangyo_brs_ef2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 13934
+      },
+      {
+        "source_skill": "u23_masupa5_nt1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+        "line": 2775
+      },
+      {
+        "source_skill": "u23_masupa5_nt1_b",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+        "line": 2789
+      },
+      {
+        "source_skill": "u23_masupa5_nt3_nt1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+        "line": 2966
+      },
+      {
+        "source_skill": "u23_masupa5_nt3_nt_ex",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+        "line": 3030
+      },
+      {
+        "source_skill": "u23_masupa5_nt3_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+        "line": 3087
+      },
+      {
+        "source_skill": "tdn_grenade_nt3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+        "line": 179
+      },
+      {
+        "source_skill": "sp_hitotachi2_nt7",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 629
+      },
+      {
+        "source_skill": "sp_hitotachi2_he",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 847
+      },
+      {
+        "source_skill": "sp_hitotachi2_he",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 847
+      },
+      {
+        "source_skill": "sp_hitotachi2_he",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 847
+      },
+      {
+        "source_skill": "sp_hitotachi2_he_nt1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 856
+      },
+      {
+        "source_skill": "sp_hitotachi2_he_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 867
+      },
+      {
+        "source_skill": "sp_hitotachi2_he_nt3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 991
+      },
+      {
+        "source_skill": "sp_hitotachi2_he_nt3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 991
+      },
+      {
+        "source_skill": "sp_hitotachi2_he2_nt1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 1062
+      },
+      {
+        "source_skill": "sp_hitotachi2_he2_nt1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 1062
+      },
+      {
+        "source_skill": "sp_ymnc_lmg2_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 1407
+      },
+      {
+        "source_skill": "tornado_nt1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_16_20_ALC一派～VVAN.dat",
+        "line": 2325
+      },
+      {
+        "source_skill": "tornado_nt3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_16_20_ALC一派～VVAN.dat",
+        "line": 2654
+      },
+      {
+        "source_skill": "tornado_nt3_nt1a_nt",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_16_20_ALC一派～VVAN.dat",
+        "line": 2671
+      },
+      {
+        "source_skill": "tornado_nt3_nt1a_nt",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_16_20_ALC一派～VVAN.dat",
+        "line": 2671
+      },
+      {
+        "source_skill": "tornado_nt3_nt1a_nt_nt1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_16_20_ALC一派～VVAN.dat",
+        "line": 2697
+      },
+      {
+        "source_skill": "tornado_nt3_nt1a_nt_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_16_20_ALC一派～VVAN.dat",
+        "line": 2729
+      },
+      {
+        "source_skill": "tornado_nt3_nt1a_nt_nt2_nt_nt",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_16_20_ALC一派～VVAN.dat",
+        "line": 2753
+      },
+      {
+        "source_skill": "tornado_nt3_nt1a_nt_nt3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_16_20_ALC一派～VVAN.dat",
+        "line": 2760
+      },
+      {
+        "source_skill": "tornado_nt3_nt1b",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_16_20_ALC一派～VVAN.dat",
+        "line": 2931
+      },
+      {
+        "source_skill": "tornado_nt3_nt1b",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_16_20_ALC一派～VVAN.dat",
+        "line": 2931
+      },
+      {
+        "source_skill": "sp_seiken2_pr3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 1104
+      },
+      {
+        "source_skill": "sp_seiken2_pr3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 1104
+      },
+      {
+        "source_skill": "sp_seiken2_pr3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 1104
+      },
+      {
+        "source_skill": "sp_seiken2_pr3",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 1104
+      },
+      {
+        "source_skill": "kusari_idv2",
+        "target": "dummy",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 2171
+      },
+      {
+        "source_skill": "kusari_idv2",
+        "target": "dummy",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 2171
+      },
+      {
+        "source_skill": "sp_rubaku_nt7",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 3609
+      },
+      {
+        "source_skill": "sp_rubaku_nt7",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 3609
+      },
+      {
+        "source_skill": "bsp_masupa5_nt1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+        "line": 1273
+      },
+      {
+        "source_skill": "bsp_masupa5_nt1_b",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+        "line": 1287
+      },
+      {
+        "source_skill": "bsp_masupa5_nt3_nt1",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+        "line": 1464
+      },
+      {
+        "source_skill": "bsp_masupa5_nt3_nt_ex",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+        "line": 1528
+      },
+      {
+        "source_skill": "bsp_masupa5_nt3_nt2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+        "line": 1585
+      },
+      {
+        "source_skill": "sp_diyualc_nt1_2",
+        "target": "@",
+        "file": "a_default/script/31_ユニットスキル/U_必殺_31_32_ぢゆし～サムソン.dat",
+        "line": 960
+      },
+      {
+        "source_skill": "udbsp_masupa5_nt1",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_2323_リュージ騎士団.dat",
+        "line": 1149
+      },
+      {
+        "source_skill": "udbsp_masupa5_nt1_b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_2323_リュージ騎士団.dat",
+        "line": 1163
+      },
+      {
+        "source_skill": "udbsp_masupa5_nt3_nt1",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_2323_リュージ騎士団.dat",
+        "line": 1340
+      },
+      {
+        "source_skill": "udbsp_masupa5_nt3_nt_ex",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_2323_リュージ騎士団.dat",
+        "line": 1404
+      },
+      {
+        "source_skill": "udbsp_masupa5_nt3_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_2323_リュージ騎士団.dat",
+        "line": 1461
+      },
+      {
+        "source_skill": "knn_fire_joi",
+        "target": "none",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 385
+      },
+      {
+        "source_skill": "hznMPT_ef4",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 3716
+      },
+      {
+        "source_skill": "sp_star_dream_masupa_nt1",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 6575
+      },
+      {
+        "source_skill": "sp_star_dream_masupa_nt1_b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 6590
+      },
+      {
+        "source_skill": "sp_star_dream_masupa_nt3_nt1",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 6769
+      },
+      {
+        "source_skill": "sp_star_dream_masupa_nt3_nt_ex",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 6843
+      },
+      {
+        "source_skill": "sp_star_dream_masupa_nt3_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 6902
+      },
+      {
+        "source_skill": "s_cannon_nt3b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 9896
+      },
+      {
+        "source_skill": "s_cannon_nt3b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 9896
+      },
+      {
+        "source_skill": "s_cannon_nt3b",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 9896
+      },
+      {
+        "source_skill": "sakenomi_syukketu_nt1",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 10042
+      },
+      {
+        "source_skill": "sakenomi_syukketu_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 10053
+      },
+      {
+        "source_skill": "sakenomi_syukketu_nt3",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 10183
+      },
+      {
+        "source_skill": "sakenomi_syukketu_nt3",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 10183
+      },
+      {
+        "source_skill": "sakenomi_syukketu2_nt1",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 10259
+      },
+      {
+        "source_skill": "sakenomi_syukketu2_nt1",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 10259
+      },
+      {
+        "source_skill": "sake_rocket_nt2_right",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 10657
+      },
+      {
+        "source_skill": "sake_rocket_nt2b_right",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 10842
+      },
+      {
+        "source_skill": "sake_rocket_nt3b_right",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 11024
+      },
+      {
+        "source_skill": "sake_rocket_nt4b_right",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 11206
+      },
+      {
+        "source_skill": "sake_rocket_nt5b_right",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 11389
+      },
+      {
+        "source_skill": "uru_heaven_nt4",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 14740
+      },
+      {
+        "source_skill": "uru_heaven_nt4",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 14740
+      },
+      {
+        "source_skill": "uru_heaven_nt4",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 14740
+      },
+      {
+        "source_skill": "uru_heaven_nt4",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 14740
+      },
+      {
+        "source_skill": "uru_heaven_nt4",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 14740
+      },
+      {
+        "source_skill": "uru_heaven_nt4",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 14740
+      },
+      {
+        "source_skill": "uru_heaven_nt4",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 14740
+      },
+      {
+        "source_skill": "uru_heaven_nt4",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 14740
+      },
+      {
+        "source_skill": "uru_heaven_nt4",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 14740
+      },
+      {
+        "source_skill": "uru_heaven_nt4",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 14740
+      },
+      {
+        "source_skill": "snnm_beam_nt3_nt1",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 2517
+      },
+      {
+        "source_skill": "snnm_beam_nt3_nt_ex",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 2581
+      },
+      {
+        "source_skill": "snnm_beam_nt3_nt2",
+        "target": "@",
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 2635
+      },
+      {
+        "source_skill": "toono_fire_joi",
+        "target": "none",
+        "file": "a_default/script/32_ボススキル/B_2_クレイジーサイコホモ.dat",
+        "line": 1182
+      },
+      {
+        "source_skill": "ssrn_kidan_ef2l",
+        "target": "hazure",
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 3130
+      },
+      {
+        "source_skill": "ssrn_kidan_ef2l",
+        "target": "hazure",
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 3130
+      },
+      {
+        "source_skill": "ssrn_kidan_ef3l",
+        "target": "hazure",
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 3303
+      },
+      {
+        "source_skill": "sp_asasin_punch2_pr3",
+        "target": "@",
+        "file": "a_default/script/33_仮設アサシン/skill_asasin_00.dat",
+        "line": 295
+      },
+      {
+        "source_skill": "sp_asasin_punch2_pr3",
+        "target": "@",
+        "file": "a_default/script/33_仮設アサシン/skill_asasin_00.dat",
+        "line": 295
+      },
+      {
+        "source_skill": "sp_asasin_punch2_pr3",
+        "target": "@",
+        "file": "a_default/script/33_仮設アサシン/skill_asasin_00.dat",
+        "line": 295
+      },
+      {
+        "source_skill": "a_jyaken1",
+        "target": "@",
+        "file": "a_default/script/6000_スキルテスト/jyaken.dat",
+        "line": 25
+      },
+      {
+        "source_skill": "a_sikjyaken1",
+        "target": "@",
+        "file": "a_default/script/6000_スキルテスト/jyaken.dat",
+        "line": 209
+      }
+    ]
+  },
+  "mixed_assignment_same_line": [
+    {
+      "source_skill": "hanzo_orochi_Eff_0",
+      "field": "next3",
+      "value": "hanzo_orochi_atk_A_0 , next3 = hanzo_orochi_mag_A_0 ,  hanzo_orochi_atk_A_1 , next3 = hanzo_orochi_mag_A_1",
+      "file": "a_default/script/35_仮設半造/skill_hanzo_orochi.dat",
+      "line": 470
+    },
+    {
+      "source_skill": "hanzo_orochi_Eff_1",
+      "field": "next3",
+      "value": "hanzo_orochi_atk_B_0 , next3 = hanzo_orochi_mag_B_0 ,  hanzo_orochi_atk_B_1 , next3 = hanzo_orochi_mag_B_1",
+      "file": "a_default/script/35_仮設半造/skill_hanzo_orochi.dat",
+      "line": 493
+    },
+    {
+      "source_skill": "hanzo_orochi_Eff_2",
+      "field": "next3",
+      "value": "hanzo_orochi_atk_B_0 , next3 = hanzo_orochi_mag_B_0 ,  hanzo_orochi_atk_B_1 , next3 = hanzo_orochi_mag_B_1",
+      "file": "a_default/script/35_仮設半造/skill_hanzo_orochi.dat",
+      "line": 519
+    },
+    {
+      "source_skill": "hanzo_orochi_Eff_3",
+      "field": "next3",
+      "value": "hanzo_orochi_atk_B_0 , next3 = hanzo_orochi_mag_B_0 ,  hanzo_orochi_atk_B_1 , next3 = hanzo_orochi_mag_B_1",
+      "file": "a_default/script/35_仮設半造/skill_hanzo_orochi.dat",
+      "line": 545
+    },
+    {
+      "source_skill": "hanzo_orochi_Eff_4",
+      "field": "next3",
+      "value": "hanzo_orochi_atk_B_0 , next3 = hanzo_orochi_mag_B_0 ,  hanzo_orochi_atk_B_1 , next3 = hanzo_orochi_mag_B_1",
+      "file": "a_default/script/35_仮設半造/skill_hanzo_orochi.dat",
+      "line": 571
+    }
+  ],
+  "warnings": [
+    "no runtime reachability established",
+    "skill chain parsing is lexical",
+    "special literals excluded from missing-target count"
+  ]
+}

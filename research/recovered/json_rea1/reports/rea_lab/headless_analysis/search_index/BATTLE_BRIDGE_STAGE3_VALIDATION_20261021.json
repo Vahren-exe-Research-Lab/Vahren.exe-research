@@ -1,0 +1,70 @@
+{
+  "id": "BRIDGE-20261021-RESEARCH-03",
+  "status": "ORIGINAL PE STATIC / SYNTHETIC TEST VERIFIED / ORIGINAL GAME NOT RUN",
+  "source_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "checks": {
+    "original_exe_sha_matches": true,
+    "native_preframe_receipt_exists": true,
+    "native_crt_rng_receipt_exists": true,
+    "native_definition_pe_receipt_exists": true,
+    "synthetic_original_game_gate_blocks": true,
+    "external_ipc_5_pass": true,
+    "external_rng_arithmetic_35_pass": true,
+    "synthetic_regression_success": true
+  },
+  "all_pass": true,
+  "synthetic_case_count": 32,
+  "synthetic_failure_count": 0,
+  "synthetic_test_modules": [
+    "test_battle_war_tree_decoder_20261021",
+    "test_battle_bridge_detached_v2_20261021",
+    "test_battle_bridge_detached_v3_20261021",
+    "test_battle_registry_reverse_20261021",
+    "test_battle_preframe_gate_20261021"
+  ],
+  "test_log": "................................\n----------------------------------------------------------------------\nRan 32 tests in 0.017s\n\nOK\n",
+  "original_gameplay_pass": 0,
+  "actual_game_external_bridge_pass": 0,
+  "capture_gate": {
+    "passed": 9,
+    "total": 14,
+    "blockers": [
+      "Actual selected MAP bytes/hash absent",
+      "Original CRT thread-state at handoff absent",
+      "Native VM/event cursor snapshot absent",
+      "Legal original-game run receipt missing",
+      "Original-game runtime observation not evidenced"
+    ],
+    "status": "BLOCKED_MISSING_EVIDENCE"
+  },
+  "independent_os_process_cases": 5,
+  "external_rng_positive": 35,
+  "external_rng_rejections": 4,
+  "evidence_files": [
+    {
+      "name": "BATTLE_PREFRAME_GATE_STATIC_20261021.json",
+      "sha256": "2659C622441799DB028B22268CEB9480F4C42AC66939BBD161EBECE40902EBD6",
+      "bytes": 3163
+    },
+    {
+      "name": "BATTLE_CRT_RNG_ABI_PE_20261021.json",
+      "sha256": "4370F3C58E960B7F4CDA7D959B2FAD9A4527D5DBE377B95C3552CB10C7835040",
+      "bytes": 13920
+    },
+    {
+      "name": "BATTLE_DEFINITION_IDENTITY_PE_20261021.json",
+      "sha256": "D8582F2DE559A7A946CD50CC92CBF9B389FD1E6DA6ACE0C965870ECC7885294E",
+      "bytes": 18655
+    },
+    {
+      "name": "BATTLE_BRIDGE_IPC_SYNTHETIC_PROOF_20261021.json",
+      "sha256": "BFE7EA1A264CD98A91E7BD4ED01A9A6CE13A1E69EDA9CA893081D5A67800A6F1",
+      "bytes": 1406
+    },
+    {
+      "name": "BATTLE_CRT_RNG_EXTERNAL_VERIFY_20261021.json",
+      "sha256": "3C5FC7BA458ABCC7B749760BCAD94ECDB1F4F4F74905A8B1D6D373005988C4C8",
+      "bytes": 3901
+    }
+  ]
+}

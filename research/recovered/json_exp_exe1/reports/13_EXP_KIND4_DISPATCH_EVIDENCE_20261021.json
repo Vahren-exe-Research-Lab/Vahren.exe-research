@@ -1,0 +1,43 @@
+{
+  "research_id": "EXP-COLLAB-20261021-2112-01/CP03",
+  "source": "saved Ghidra pseudocode/direct refs",
+  "status": "STATIC_PASS / GAMEPLAY_NOT_RUN / NOT_READY",
+  "tests": [
+    {
+      "caller": "0x00545CC0",
+      "site": "0x00546469",
+      "callee": "0x00547490",
+      "required": [
+        "switch(*(undefined4 *)(iVar4 + 0x40))",
+        "case 4:",
+        "FUN_00547490()"
+      ],
+      "code_sha256": "BC5B977E87DCABD8CFA3C0DF16C5AFE88ABA5A65FC41AF7D583EBD2360E6A6A3",
+      "condition_hits": {
+        "switch(*(undefined4 *)(iVar4 + 0x40))": true,
+        "case 4:": true,
+        "FUN_00547490()": true
+      },
+      "direct_call_count": 1,
+      "pass": true
+    },
+    {
+      "caller": "0x00552EF0",
+      "site": "0x00553177",
+      "callee": "0x00553390",
+      "required": [
+        "if (*(int *)(iVar3 + 0x40) == 4)",
+        "FUN_00553390()",
+        "if (*(int *)(iVar3 + 0x74) != 0)"
+      ],
+      "code_sha256": "55FCF7714C0EB203BCA9B0688DCEB3D05FFB4702392A766AFDB2A59D7E6E50F9",
+      "condition_hits": {
+        "if (*(int *)(iVar3 + 0x40) == 4)": true,
+        "FUN_00553390()": true,
+        "if (*(int *)(iVar3 + 0x74) != 0)": true
+      },
+      "direct_call_count": 1,
+      "pass": true
+    }
+  ]
+}

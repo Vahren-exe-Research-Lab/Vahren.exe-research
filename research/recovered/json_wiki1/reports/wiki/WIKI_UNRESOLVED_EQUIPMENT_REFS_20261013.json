@@ -1,0 +1,429 @@
+{
+  "status": "DAT_STATIC_UNDECLARED_GRANT_TAGS_NOT_GOLDEN",
+  "count": 44,
+  "unique": 34,
+  "field_counts": {
+    "skill2": 21,
+    "leader_skill": 1,
+    "skill": 22
+  },
+  "owner_kinds": {
+    "unit": 12,
+    "class": 32
+  },
+  "most_repeated": [
+    [
+      "hh_gun",
+      4
+    ],
+    [
+      "pes_525ssrhm",
+      2
+    ],
+    [
+      "self_a2293",
+      2
+    ],
+    [
+      "ssrmla_yari",
+      2
+    ],
+    [
+      "s_defbarkm",
+      2
+    ],
+    [
+      "s_defbarkm2",
+      2
+    ],
+    [
+      "s_defbarkm3",
+      2
+    ],
+    [
+      "rtsmg",
+      2
+    ],
+    [
+      "pes_knock_akys",
+      1
+    ],
+    [
+      "rock1_summon",
+      1
+    ],
+    [
+      "ps_han_cav_ibrg",
+      1
+    ],
+    [
+      "m_ice_bom",
+      1
+    ],
+    [
+      "sp_ncnc_cannon",
+      1
+    ],
+    [
+      "c_st12",
+      1
+    ]
+  ],
+  "locations": [
+    {
+      "missing": "pes_knock_akys",
+      "via_set": null,
+      "grant_owner": "unit:akys",
+      "field": "skill2",
+      "file": "a_default/script/10_ユニット/02_迫真空手道場.dat",
+      "line": 294
+    },
+    {
+      "missing": "rock1_summon",
+      "via_set": null,
+      "grant_owner": "unit:tisa",
+      "field": "leader_skill",
+      "file": "a_default/script/10_ユニット/16_ALC一派.dat",
+      "line": 297
+    },
+    {
+      "missing": "ps_han_cav_ibrg",
+      "via_set": null,
+      "grant_owner": "unit:ibrg",
+      "field": "skill",
+      "file": "a_default/script/10_ユニット/29_岡山県.dat",
+      "line": 33
+    },
+    {
+      "missing": "m_ice_bom",
+      "via_set": null,
+      "grant_owner": "unit:ice",
+      "field": "skill",
+      "file": "a_default/script/10_ユニット/33_INU.dat",
+      "line": 395
+    },
+    {
+      "missing": "pes_525ssrhm",
+      "via_set": null,
+      "grant_owner": "unit:525_ssrhm",
+      "field": "skill2",
+      "file": "a_default/script/10_ユニット/B_525_神聖UNEI帝国.dat",
+      "line": 262
+    },
+    {
+      "missing": "sp_ncnc_cannon",
+      "via_set": null,
+      "grant_owner": "unit:kenri_midocha",
+      "field": "skill2",
+      "file": "a_default/script/10_ユニット/B_525_神聖UNEI帝国.dat",
+      "line": 615
+    },
+    {
+      "missing": "pes_525ssrhm",
+      "via_set": null,
+      "grant_owner": "unit:kenri_ssrhm",
+      "field": "skill2",
+      "file": "a_default/script/10_ユニット/B_525_神聖UNEI帝国.dat",
+      "line": 636
+    },
+    {
+      "missing": "c_st12",
+      "via_set": null,
+      "grant_owner": "class:a2242",
+      "field": "skill",
+      "file": "a_default/script/20_クラス/21_23_材料屋_HSI_リュージ.dat",
+      "line": 549
+    },
+    {
+      "missing": "self_a229",
+      "via_set": null,
+      "grant_owner": "class:a229",
+      "field": "skill2",
+      "file": "a_default/script/20_クラス/21_23_材料屋_HSI_リュージ.dat",
+      "line": 694
+    },
+    {
+      "missing": "self_a2292",
+      "via_set": null,
+      "grant_owner": "class:a2292",
+      "field": "skill2",
+      "file": "a_default/script/20_クラス/21_23_材料屋_HSI_リュージ.dat",
+      "line": 729
+    },
+    {
+      "missing": "self_a2293",
+      "via_set": null,
+      "grant_owner": "class:a2293",
+      "field": "skill2",
+      "file": "a_default/script/20_クラス/21_23_材料屋_HSI_リュージ.dat",
+      "line": 749
+    },
+    {
+      "missing": "self_a2293",
+      "via_set": null,
+      "grant_owner": "class:a229h",
+      "field": "skill2",
+      "file": "a_default/script/20_クラス/21_23_材料屋_HSI_リュージ.dat",
+      "line": 766
+    },
+    {
+      "missing": "self_amhsi2",
+      "via_set": null,
+      "grant_owner": "class:amhsi2",
+      "field": "skill2",
+      "file": "a_default/script/20_クラス/B_14_ヌエバ・デスパセーニャ.dat",
+      "line": 116
+    },
+    {
+      "missing": "self_amhsi3",
+      "via_set": null,
+      "grant_owner": "class:amhsi3",
+      "field": "skill2",
+      "file": "a_default/script/20_クラス/B_14_ヌエバ・デスパセーニャ.dat",
+      "line": 133
+    },
+    {
+      "missing": "self_kmkks2",
+      "via_set": null,
+      "grant_owner": "class:kmkks2",
+      "field": "skill2",
+      "file": "a_default/script/20_クラス/B_2222_レイノアレフ.dat",
+      "line": 105
+    },
+    {
+      "missing": "self_kmkks3",
+      "via_set": null,
+      "grant_owner": "class:kmkks3",
+      "field": "skill2",
+      "file": "a_default/script/20_クラス/B_2222_レイノアレフ.dat",
+      "line": 118
+    },
+    {
+      "missing": "self_ssr2",
+      "via_set": null,
+      "grant_owner": "class:ssr2",
+      "field": "skill2",
+      "file": "a_default/script/20_クラス/B_2222_レイノアレフ.dat",
+      "line": 164
+    },
+    {
+      "missing": "self_ssr3",
+      "via_set": null,
+      "grant_owner": "class:ssr3",
+      "field": "skill2",
+      "file": "a_default/script/20_クラス/B_2222_レイノアレフ.dat",
+      "line": 177
+    },
+    {
+      "missing": "self_dnjmk2",
+      "via_set": null,
+      "grant_owner": "class:dnjmk2",
+      "field": "skill2",
+      "file": "a_default/script/20_クラス/B_2222_レイノアレフ.dat",
+      "line": 282
+    },
+    {
+      "missing": "self_dnjmk3",
+      "via_set": null,
+      "grant_owner": "class:dnjmk3",
+      "field": "skill2",
+      "file": "a_default/script/20_クラス/B_2222_レイノアレフ.dat",
+      "line": 295
+    },
+    {
+      "missing": "self_pnjn2",
+      "via_set": null,
+      "grant_owner": "class:pnjn2",
+      "field": "skill2",
+      "file": "a_default/script/20_クラス/B_2222_レイノアレフ.dat",
+      "line": 338
+    },
+    {
+      "missing": "self_pnjn3",
+      "via_set": null,
+      "grant_owner": "class:pnjn3",
+      "field": "skill2",
+      "file": "a_default/script/20_クラス/B_2222_レイノアレフ.dat",
+      "line": 352
+    },
+    {
+      "missing": "self_htubn2",
+      "via_set": null,
+      "grant_owner": "class:htubn2",
+      "field": "skill2",
+      "file": "a_default/script/20_クラス/B_2222_レイノアレフ.dat",
+      "line": 391
+    },
+    {
+      "missing": "self_htubn3",
+      "via_set": null,
+      "grant_owner": "class:htubn3",
+      "field": "skill2",
+      "file": "a_default/script/20_クラス/B_2222_レイノアレフ.dat",
+      "line": 404
+    },
+    {
+      "missing": "hh_gun",
+      "via_set": null,
+      "grant_owner": "class:sk004",
+      "field": "skill",
+      "file": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 3084
+    },
+    {
+      "missing": "hh_gun",
+      "via_set": null,
+      "grant_owner": "class:sk0042",
+      "field": "skill",
+      "file": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 3121
+    },
+    {
+      "missing": "hh_gun",
+      "via_set": null,
+      "grant_owner": "class:sk0043",
+      "field": "skill",
+      "file": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 3134
+    },
+    {
+      "missing": "s_187min",
+      "via_set": null,
+      "grant_owner": "class:udks",
+      "field": "skill",
+      "file": "a_default/script/32_ボススキル/B_26old_第二革命企画.dat",
+      "line": 148
+    },
+    {
+      "missing": "ssrmla_yari",
+      "via_set": null,
+      "grant_owner": "class:ss101264",
+      "field": "skill",
+      "file": "a_default/script/4000_AoW/unit_aow_264.dat",
+      "line": 792
+    },
+    {
+      "missing": "sww_zan0",
+      "via_set": null,
+      "grant_owner": "unit:g_superswk",
+      "field": "skill",
+      "file": "a_default/script/40_内政/unit_sakegyaku.dat",
+      "line": 44
+    },
+    {
+      "missing": "sww_zan1",
+      "via_set": null,
+      "grant_owner": "unit:g_superswk",
+      "field": "skill",
+      "file": "a_default/script/40_内政/unit_sakegyaku.dat",
+      "line": 44
+    },
+    {
+      "missing": "s_defbarkm",
+      "via_set": null,
+      "grant_owner": "class:defbarkm",
+      "field": "skill",
+      "file": "a_default/script/45_内政_防衛兵器/siege_class.dat",
+      "line": 168
+    },
+    {
+      "missing": "s_defbarkm2",
+      "via_set": null,
+      "grant_owner": "class:defbarkm2",
+      "field": "skill",
+      "file": "a_default/script/45_内政_防衛兵器/siege_class.dat",
+      "line": 172
+    },
+    {
+      "missing": "s_defbarkm3",
+      "via_set": null,
+      "grant_owner": "class:defbarkm3",
+      "field": "skill",
+      "file": "a_default/script/45_内政_防衛兵器/siege_class.dat",
+      "line": 176
+    },
+    {
+      "missing": "s_defbarkm",
+      "via_set": null,
+      "grant_owner": "class:defboatkm",
+      "field": "skill",
+      "file": "a_default/script/45_内政_防衛兵器/siege_class.dat",
+      "line": 848
+    },
+    {
+      "missing": "s_defbarkm2",
+      "via_set": null,
+      "grant_owner": "class:defboatkm2",
+      "field": "skill",
+      "file": "a_default/script/45_内政_防衛兵器/siege_class.dat",
+      "line": 852
+    },
+    {
+      "missing": "s_defbarkm3",
+      "via_set": null,
+      "grant_owner": "class:defboatkm3",
+      "field": "skill",
+      "file": "a_default/script/45_内政_防衛兵器/siege_class.dat",
+      "line": 856
+    },
+    {
+      "missing": "hh_gun",
+      "via_set": null,
+      "grant_owner": "class:asp634_b",
+      "field": "skill",
+      "file": "a_default/script/45_内政_防衛兵器/siege_class_SP63_鎌倉.dat",
+      "line": 116
+    },
+    {
+      "missing": "sp_alc_new",
+      "via_set": null,
+      "grant_owner": "unit:unit_st",
+      "field": "skill",
+      "file": "a_default/script/6000_スキルテスト/skilltest.dat",
+      "line": 22
+    },
+    {
+      "missing": "tiga",
+      "via_set": null,
+      "grant_owner": "unit:unit_st3",
+      "field": "skill2",
+      "file": "a_default/script/6000_スキルテスト/skilltest.dat",
+      "line": 1195
+    },
+    {
+      "missing": "s_suzuki",
+      "via_set": null,
+      "grant_owner": "unit:unit_st5",
+      "field": "skill",
+      "file": "a_default/script/6000_スキルテスト/skilltest.dat",
+      "line": 1225
+    },
+    {
+      "missing": "rtsmg",
+      "via_set": null,
+      "grant_owner": "class:hqdefenemy",
+      "field": "skill",
+      "file": "a_default/script/8000_RTSシナリオ/RTSbuilding.dat",
+      "line": 141
+    },
+    {
+      "missing": "rtsmg",
+      "via_set": null,
+      "grant_owner": "class:hqdefallie",
+      "field": "skill",
+      "file": "a_default/script/8000_RTSシナリオ/RTSbuilding.dat",
+      "line": 146
+    },
+    {
+      "missing": "ssrmla_yari",
+      "via_set": null,
+      "grant_owner": "class:ss1013rts",
+      "field": "skill",
+      "file": "a_default/script/8000_RTSシナリオ/RTSclass.dat",
+      "line": 307
+    }
+  ],
+  "all_declaration_ledger": "WIKI_FULL_SKILL_INDEX_20261013.json.gz + WIKI_SKILLSET_EVENT_REACHABILITY_20261013.json",
+  "risk": "Missing tag in Work registries, not proven failure in old Vahren native",
+  "new_strict_match": 0
+}

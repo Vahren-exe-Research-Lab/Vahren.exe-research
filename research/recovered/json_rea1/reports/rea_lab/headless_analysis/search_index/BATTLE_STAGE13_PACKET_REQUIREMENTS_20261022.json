@@ -1,0 +1,23 @@
+{
+  "research_id": "BRIDGE-20261022-RESEARCH-13-INPUT-CONTRACT",
+  "scope": "Minimum requirements for one normal original-strategy -> external-battle -> original-strategy interface; not an exhaustive native engine state inventory",
+  "status": "DESIGN_AND_RETAINED_BYTE_AUDIT_ONLY_NOT_G1_READY",
+  "source_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "evidence_file": "BATTLE_STAGE13_INPUT_COVERAGE_20261022.json",
+  "original_program_changed": false,
+  "recorder_deployed_or_changed": false,
+  "work_used": false,
+  "minimum_groups": [
+    {"name":"scenario_and_participation","current":"STRUCTURAL_REFS_OBSERVED; stable names and definitions unresolved","need":"Keep source table order, HelpMap, attack/defense Power, Side/Troop membership separately; resolve portable IDs without equating raw pointers across PIDs","known_ranges":"E+1EED44/48 side pair, E+1EED4C/50 defense/attack Power; Side+14 Power, +18 separate flag, +1C peer"},
+    {"name":"unit_state","current":"Only Unit+1C8 and +1D0 links captured for all4190 unit-observations","need":"Values of HP/MP, effective statistics/status, position, facing, skill state, command/target state, ownership and lifetime; do not substitute DAT defaults","candidate_ranges":"Unit+90/94; +98..E4; +214..230; +178..184; +1C8..1D8; larger high-offset state as separately proved"},
+    {"name":"runtime_map","current":"NO captured G+1EF570 map manager header or E+1EECC4 request object","need":"Determine chosen map-file path/hash or non-file construction branch, dimensions, cells, objects, occupancy/dynamic changes and placement; filename/hash alone is insufficient","native_boundary":"0x48D6A0 -> 0x4F0BE0 or 0x4F08E0; map-management base G+1EF570"},
+    {"name":"time_and_limits","current":"Only GameTask-pass counter sampled; actual battle counters and native limit pair absent","need":"Keep Task-pass, battle elapsed, absolute scheduler count, limit initial tag and current value distinct","known_ranges":"E+1EED60/+64/+68; module_base+(0x67B938-0x400000) and +4"},
+    {"name":"rng_continuation","current":"CRT arithmetic statically known; actual state and owner context not captured","need":"Exact game-thread/fiber context plus current32-bit holdrand, any reseed or additional stream; do not call rand or __getptd just to observe","native_chain":"0x5B6EAB -> 0x5BC6A9 -> 0x5BC630; PTD+14, FLS-index global0x65A9A4. Getter may allocate0x214 bytes and initialize owner state"},
+    {"name":"event_vm_and_native_tasks","current":"Task slot references observed but semantic state incomplete; VM four stack headers absent","need":"Preserve original frame-stack order/PC, pending bodies, event roots and callback ordering; retained in old process is an option only with validated no-double-tick/resume contract","known_ranges":"E+1EED78/88/98/A8 each vector header12bytes; E+1EEDB4/C0 and further pending lists; native Task eligibility fields depend on type"},
+    {"name":"coherent_handoff_and_return","current":"All8 snapshots span19..101 Task passes; earliest captures begin at63/73, not at setup return","need":"Prove original input boundary, stable object generation, coherent same-point state, one-time native result commit and rollback; ordinary polling is not proof","static_candidates_only":"0x4B99CD CALL/return0x4B99D2; native init/ScriptBattle/task timing must be verified before any hook"}
+  ],
+  "capture_design": {"phase_a":"copy bounded essential values and references with provenance before expensive Task classification","phase_b":"separate optional task/type introspection; a budget failure must not invalidate already-saved essential bytes","phase_c":"verify internal joins, temporal bounds and outstanding native callbacks offline; partial output stays partial","native_state_ownership":"Do not assume the full native VM or operating-system object memory must be serialized to another EXE. Keeping it in the original process requires an independently proven pause/command/resume contract."},
+  "forbidden_inferences": ["pointer present means object data present","Player always attacker","Side+18 and HelpMap side_byte share one enum","Task-counter unchanged proves atomic snapshot","snapshot after battle start is exact pre-first-tick state","known map file format identifies the map used","known PRNG formula proves captured live PRNG state"],
+  "full_G1_proven": false,
+  "external_roundtrip_proven": false
+}

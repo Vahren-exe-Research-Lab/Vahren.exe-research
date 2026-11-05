@@ -22,4 +22,7 @@
 - [research/recovered/ad_small/reports/BATTLE_TAKEOVER_RESEARCH_STAGE3_20261021.md 行 25](../../research/recovered/ad_small/reports/BATTLE_TAKEOVER_RESEARCH_STAGE3_20261021.md?plain=1#L25-L25) — - Ghidra+原本PE 0x00467DE0ではmap node+0x28からDef*を読み、Def+0x1A4へ辞書所有者を格納、owner+0x300との照合がある。
   制約・訂正　Historical authored claim only; current curated REF priority; linked payloads excluded; no native/runtime/READY/Golden increment; role=CORRECTED_STALE_BRIDGE_PROTOTYPE_AND_PLAN
 
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_DEFINITION_IDENTITY_PE_20261021.json 行 5](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_DEFINITION_IDENTITY_PE_20261021.json?plain=1#L5-L5) — "address_to_identity_candidate": "Unit+0x1C8 -> Def*; Def+0x1A4 -> owning definition registry; owner+0x300 -> std::map head; std::map node+0x28 -> Def*",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

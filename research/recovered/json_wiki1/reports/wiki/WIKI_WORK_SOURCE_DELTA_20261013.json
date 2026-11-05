@@ -1,0 +1,171 @@
+{
+  "status": "WORK_SOURCE_READONLY_SNAPSHOT_DELTA",
+  "files": [
+    {
+      "source": "native_dat_heal_adapter.py",
+      "previous_sha256": "42c013706e6fb24256622e6f19422d02b67259a66ef5c4b471493304d1eac381",
+      "current_sha256": "42c013706e6fb24256622e6f19422d02b67259a66ef5c4b471493304d1eac381",
+      "changed": false,
+      "lines": 300,
+      "top_level_skill_related_symbols": [
+        "DatEffectSkill",
+        "_load_effect_skill",
+        "DatHealSkill",
+        "load_heal_skill"
+      ]
+    },
+    {
+      "source": "native_support_action_subset.py",
+      "previous_sha256": "98924fa62ae98d68bcb63db75eca94e5b21235ad2b1e522e9811d6aa39e2cfb7",
+      "current_sha256": "98924fa62ae98d68bcb63db75eca94e5b21235ad2b1e522e9811d6aa39e2cfb7",
+      "changed": false,
+      "lines": 447,
+      "top_level_skill_related_symbols": [
+        "ResolvedSkillNodeGate"
+      ]
+    },
+    {
+      "source": "native_unit_ai.py",
+      "previous_sha256": "64c74f762d38bee28b18566bdd1406c70cc5096d92ebd1a61e9b0c3878c45115",
+      "current_sha256": "494d2d5e4bd77351daf240f5c3402123a952d8aee3fdaadad76bec7c65ff372f",
+      "changed": true,
+      "lines": 3068,
+      "top_level_skill_related_symbols": [
+        "SkillCallFrame",
+        "_skill",
+        "begin_selected_skill",
+        "begin_secondary_skill",
+        "selected_skill_count",
+        "resume_selected_skill_count",
+        "resume_selected_skill_search",
+        "resume_selected_skill_list",
+        "PostSearchHpTrace",
+        "advance_postsearch_hp_gate",
+        "begin_selected_skill_dispatch",
+        "resume_selected_skill_owner_search",
+        "resume_selected_skill_recovery",
+        "SkillPositionStatics",
+        "SkillPositionTrace",
+        "read_skill_position",
+        "SkillPostTrace",
+        "resume_selected_skill_post",
+        "_read_empty_skill_key_tree",
+        "ControlledSkillPredicateTrace",
+        "controlled_skill_predicate_576570"
+      ]
+    },
+    {
+      "source": "native_battle_runner.py",
+      "previous_sha256": "eb44692850042e19ab4d4fc81ed7ecf1d3a0e571a6caaa128b152ced7f701b2c",
+      "current_sha256": "610cd27cd5506b68f909278f34203f17a2c9e7805fac89dedb808e17611b86be",
+      "changed": true,
+      "lines": 999,
+      "top_level_skill_related_symbols": []
+    },
+    {
+      "source": "native_battle_session.py",
+      "previous_sha256": "d384b5a16ce0c9adc142ee9f13211437810c2e3034e1275b0dfa2ef555192ef6",
+      "current_sha256": "0caffc7cb2a03b515fd1f6d09babedded2b7ad6ba8ab8d8e987704488b1dda15",
+      "changed": true,
+      "lines": 2398,
+      "top_level_skill_related_symbols": []
+    },
+    {
+      "source": "native_skill_capability_subset.py",
+      "previous_sha256": "fd62fb0a5a8458f920a421fa26b31bf850542d6fd79b7c66e50379c992733959",
+      "current_sha256": "fd62fb0a5a8458f920a421fa26b31bf850542d6fd79b7c66e50379c992733959",
+      "changed": false,
+      "lines": 129,
+      "top_level_skill_related_symbols": [
+        "NativeSkillContractUnknown",
+        "one_resolved_skill_local_flag_writes"
+      ]
+    },
+    {
+      "source": "native_rush_missile.py",
+      "previous_sha256": "5b9c771bd91ee42065f288cda16ed73414bc6f81a2fc1a61691477b26dc7de6a",
+      "current_sha256": "5b9c771bd91ee42065f288cda16ed73414bc6f81a2fc1a61691477b26dc7de6a",
+      "changed": false,
+      "lines": 256,
+      "top_level_skill_related_symbols": []
+    },
+    {
+      "source": "peer_script01_native_definitions.py",
+      "previous_sha256": "a97418bb6f853bce31cd0c83efd410ab999ac769770c4e71148ee08378c92cbb",
+      "current_sha256": "a97418bb6f853bce31cd0c83efd410ab999ac769770c4e71148ee08378c92cbb",
+      "changed": false,
+      "lines": 2263,
+      "top_level_skill_related_symbols": [
+        "NativeStatusSkill",
+        "status_skill",
+        "_skill_selected",
+        "skill_or_set_exists",
+        "expand_skill",
+        "postprocess_skill_list",
+        "NativeSkillState",
+        "build_skill_list",
+        "definition_skill_state",
+        "unit_summon_max",
+        "member_skill_lists",
+        "skill_exp_per"
+      ]
+    },
+    {
+      "source": "parent_graph.py",
+      "previous_sha256": "f2930bf6952ad721d40fa2ce23fe11613b73d0ec69249b797adc5cb8b1ab5c54",
+      "current_sha256": "f2930bf6952ad721d40fa2ce23fe11613b73d0ec69249b797adc5cb8b1ab5c54",
+      "changed": false,
+      "lines": 82,
+      "top_level_skill_related_symbols": []
+    },
+    {
+      "source": "native_saved_loader_bootstrap.py",
+      "previous_sha256": "875b940286baf743386ed8616d270aa65c3683518cf22b6c840b4bbce60a9984",
+      "current_sha256": "875b940286baf743386ed8616d270aa65c3683518cf22b6c840b4bbce60a9984",
+      "changed": false,
+      "lines": 148,
+      "top_level_skill_related_symbols": []
+    },
+    {
+      "source": "native_dat_damage_adapter.py",
+      "previous_sha256": "269fab156812a02e904a2f123df2b9fb9139e13bead79f235776efa44a5ca2f5",
+      "current_sha256": "269fab156812a02e904a2f123df2b9fb9139e13bead79f235776efa44a5ca2f5",
+      "changed": false,
+      "lines": 81,
+      "top_level_skill_related_symbols": [
+        "DatDamageSkill",
+        "load_damage_skill"
+      ]
+    },
+    {
+      "source": "native_task_registry.py",
+      "previous_sha256": "543ce853f8c5efaa77d21c6c7c1508a107e8da5f2e402f5ddb68d0f3173784d3",
+      "current_sha256": "543ce853f8c5efaa77d21c6c7c1508a107e8da5f2e402f5ddb68d0f3173784d3",
+      "changed": false,
+      "lines": 250,
+      "top_level_skill_related_symbols": []
+    },
+    {
+      "source": "native_unit_tick.py",
+      "previous_sha256": "96355082eb994dacb3874934f54135baf9f12a084dace7fc73df1be73eeddfd7",
+      "current_sha256": "96355082eb994dacb3874934f54135baf9f12a084dace7fc73df1be73eeddfd7",
+      "changed": false,
+      "lines": 274,
+      "top_level_skill_related_symbols": []
+    },
+    {
+      "source": "battle_definitions.py",
+      "previous_sha256": "fc0a27229f488c39b17c8e021e3b0e21cc63818d5b72e39a1048dd221610b226",
+      "current_sha256": "fc0a27229f488c39b17c8e021e3b0e21cc63818d5b72e39a1048dd221610b226",
+      "changed": false,
+      "lines": 204,
+      "top_level_skill_related_symbols": []
+    }
+  ],
+  "modified_files": [
+    "native_unit_ai.py",
+    "native_battle_runner.py",
+    "native_battle_session.py"
+  ],
+  "note": "No source edits performed; previous route matrix may require rebasing on changed Work files."
+}

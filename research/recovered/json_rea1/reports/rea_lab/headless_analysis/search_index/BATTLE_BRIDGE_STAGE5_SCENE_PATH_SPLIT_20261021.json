@@ -1,0 +1,137 @@
+{
+  "id": "BRIDGE-20261021-PATH-SPLIT",
+  "status": "STATIC PE DIRECT E8 + GHIDRA / NOT ORIGINAL GAME RUNTIME",
+  "sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "direct_call_edges": {
+    "scene_mode2": [
+      {
+        "site_va": "0x004B99CD",
+        "caller_va": "0x004B9930",
+        "target_va": "0x0048D6A0",
+        "origin": "BOTH",
+        "opcode_bytes": "e8ce3cfdff",
+        "verified_e8": 1
+      }
+    ],
+    "battlewnd_solver": [
+      {
+        "site_va": "0x00491FFB",
+        "caller_va": "0x00491870",
+        "target_va": "0x0040D0A0",
+        "origin": "BOTH",
+        "opcode_bytes": "e8a0b0f7ff",
+        "verified_e8": 1
+      },
+      {
+        "site_va": "0x0049204F",
+        "caller_va": "0x00491870",
+        "target_va": "0x0040D0A0",
+        "origin": "BOTH",
+        "opcode_bytes": "e84cb0f7ff",
+        "verified_e8": 1
+      },
+      {
+        "site_va": "0x00492143",
+        "caller_va": "0x00491870",
+        "target_va": "0x0040D0A0",
+        "origin": "BOTH",
+        "opcode_bytes": "e858aff7ff",
+        "verified_e8": 1
+      },
+      {
+        "site_va": "0x004921F7",
+        "caller_va": "0x00491870",
+        "target_va": "0x0040D0A0",
+        "origin": "BOTH",
+        "opcode_bytes": "e8a4aef7ff",
+        "verified_e8": 1
+      },
+      {
+        "site_va": "0x00492473",
+        "caller_va": "0x004922A0",
+        "target_va": "0x0040D0A0",
+        "origin": "BOTH",
+        "opcode_bytes": "e828acf7ff",
+        "verified_e8": 1
+      }
+    ],
+    "headless_setup": [
+      {
+        "site_va": "0x0040D0C6",
+        "caller_va": "0x0040D0A0",
+        "target_va": "0x0040F320",
+        "origin": "BOTH",
+        "opcode_bytes": "e855220000",
+        "verified_e8": 1
+      }
+    ],
+    "headless_inner": [
+      {
+        "site_va": "0x0040E27F",
+        "caller_va": "0x0040E220",
+        "target_va": "0x0040E2F0",
+        "origin": "BOTH",
+        "opcode_bytes": "e86c000000",
+        "verified_e8": 1
+      }
+    ],
+    "battle_finish": [
+      {
+        "site_va": "0x0040E2B9",
+        "caller_va": "0x0040E220",
+        "target_va": "0x00493630",
+        "origin": "BOTH",
+        "opcode_bytes": "e872530800",
+        "verified_e8": 1
+      },
+      {
+        "site_va": "0x0049303A",
+        "caller_va": "0x00492D80",
+        "target_va": "0x00493630",
+        "origin": "BOTH",
+        "opcode_bytes": "e8f1050000",
+        "verified_e8": 1
+      },
+      {
+        "site_va": "0x00493082",
+        "caller_va": "0x00492D80",
+        "target_va": "0x00493630",
+        "origin": "BOTH",
+        "opcode_bytes": "e8a9050000",
+        "verified_e8": 1
+      },
+      {
+        "site_va": "0x004930A1",
+        "caller_va": "0x00492D80",
+        "target_va": "0x00493630",
+        "origin": "BOTH",
+        "opcode_bytes": "e88a050000",
+        "verified_e8": 1
+      },
+      {
+        "site_va": "0x004A1764",
+        "caller_va": "0x004A1250",
+        "target_va": "0x00493630",
+        "origin": "BOTH",
+        "opcode_bytes": "e8c71effff",
+        "verified_e8": 1
+      }
+    ]
+  },
+  "battlewnd_vtable": {
+    "base": "0x006380CC",
+    "+0x04": "0x0040E220",
+    "+0x0C": "0x00431910",
+    "+0x10": "0x00431910"
+  },
+  "conditional_path": "When Actionable BattleWnd Task present and eligible, paused M+8 via vf+0x0C TRUE permits vf+0x04 0x40E220, whose input conditions may reach 0x40E2F0 then 0x493630",
+  "separation": "0x48D6A0 is only direct-called from scene dispatch. 0x40D0A0 has five other direct sites. These routes can converge in finish but are not interchangeable at capture/start.",
+  "NOT_PROVED": [
+    "Normal mode2 native active Task roster contains BattleWnd at any point",
+    "BattleWnd Task always executes its inner solver while paused",
+    "All possible indirect route edges have been enumerated",
+    "An actual original combat ever ran while externally paused"
+  ],
+  "design_decision": "For the external bridge, guard Task roster and route kind; do not claim native M+8 alone freezes ALL battle modes. On unsupported route fail closed to native unmodified path.",
+  "source_caution": "A T010 already proves basic Task gating and BattleWnd inner tick; new increment is distinction and conditional double-processing risk for bridge handoff."
+}

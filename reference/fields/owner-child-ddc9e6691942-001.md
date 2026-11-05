@@ -130,6 +130,9 @@
 <a id="field-1e594"></a>
 ## child + 0x1E594
 
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_STAGE12_GROWTH_CONSISTENCY_ANALYSIS_20261022.json 行 1438](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_STAGE12_GROWTH_CONSISTENCY_ANALYSIS_20261022.json?plain=1#L1438-L1438) — "source_relation": "Source Unit+0x178..0x180 vector, +0x1E4B4 cache; optional conditional child+0x1E594.",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
 - [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/SUMMON_PARENT_NATIVE_DAT_BOUNDARY_20261025.md 行 13](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/SUMMON_PARENT_NATIVE_DAT_BOUNDARY_20261025.md?plain=1#L13-L13) — - VA 0x005774A0: parent Unit の +0x178（子vectorのbegin）、+0x17C（end）、+0x180（capacity）へ child Unit* をappend。child+0x1E594が非0ならこの追従先にparentポインタを代入。child専用のvector生成ではな
   制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
 

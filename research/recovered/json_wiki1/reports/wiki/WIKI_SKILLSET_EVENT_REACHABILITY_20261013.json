@@ -1,0 +1,2195 @@
+{
+  "status": "STATIC ROOT EXTENSION; NOT GAMEPLAY OR SCRIPT CALL SUCCESS",
+  "files_scanned": 590,
+  "known_skill_count": 16554,
+  "raw_unit_class_grant_references": 11748,
+  "direct_skill_root_count": 2435,
+  "skillset_equipped_tag_count": 44,
+  "skillset_equipped_total_refs": 659,
+  "skillset_expanded_member_reference_count": 1851,
+  "skillset_expanded_unique_skill_count": 95,
+  "non_skill_or_undefined_grant_ref_count": 44,
+  "non_skill_or_undefined_grant_distinct": 34,
+  "non_skill_or_undefined_grant_refs": [
+    {
+      "missing": "pes_knock_akys",
+      "via_set": null,
+      "grant_owner": "unit:akys",
+      "field": "skill2",
+      "file": "a_default/script/10_ユニット/02_迫真空手道場.dat",
+      "line": 294
+    },
+    {
+      "missing": "rock1_summon",
+      "via_set": null,
+      "grant_owner": "unit:tisa",
+      "field": "leader_skill",
+      "file": "a_default/script/10_ユニット/16_ALC一派.dat",
+      "line": 297
+    },
+    {
+      "missing": "ps_han_cav_ibrg",
+      "via_set": null,
+      "grant_owner": "unit:ibrg",
+      "field": "skill",
+      "file": "a_default/script/10_ユニット/29_岡山県.dat",
+      "line": 33
+    },
+    {
+      "missing": "m_ice_bom",
+      "via_set": null,
+      "grant_owner": "unit:ice",
+      "field": "skill",
+      "file": "a_default/script/10_ユニット/33_INU.dat",
+      "line": 395
+    },
+    {
+      "missing": "pes_525ssrhm",
+      "via_set": null,
+      "grant_owner": "unit:525_ssrhm",
+      "field": "skill2",
+      "file": "a_default/script/10_ユニット/B_525_神聖UNEI帝国.dat",
+      "line": 262
+    },
+    {
+      "missing": "sp_ncnc_cannon",
+      "via_set": null,
+      "grant_owner": "unit:kenri_midocha",
+      "field": "skill2",
+      "file": "a_default/script/10_ユニット/B_525_神聖UNEI帝国.dat",
+      "line": 615
+    },
+    {
+      "missing": "pes_525ssrhm",
+      "via_set": null,
+      "grant_owner": "unit:kenri_ssrhm",
+      "field": "skill2",
+      "file": "a_default/script/10_ユニット/B_525_神聖UNEI帝国.dat",
+      "line": 636
+    },
+    {
+      "missing": "c_st12",
+      "via_set": null,
+      "grant_owner": "class:a2242",
+      "field": "skill",
+      "file": "a_default/script/20_クラス/21_23_材料屋_HSI_リュージ.dat",
+      "line": 549
+    },
+    {
+      "missing": "self_a229",
+      "via_set": null,
+      "grant_owner": "class:a229",
+      "field": "skill2",
+      "file": "a_default/script/20_クラス/21_23_材料屋_HSI_リュージ.dat",
+      "line": 694
+    },
+    {
+      "missing": "self_a2292",
+      "via_set": null,
+      "grant_owner": "class:a2292",
+      "field": "skill2",
+      "file": "a_default/script/20_クラス/21_23_材料屋_HSI_リュージ.dat",
+      "line": 729
+    },
+    {
+      "missing": "self_a2293",
+      "via_set": null,
+      "grant_owner": "class:a2293",
+      "field": "skill2",
+      "file": "a_default/script/20_クラス/21_23_材料屋_HSI_リュージ.dat",
+      "line": 749
+    },
+    {
+      "missing": "self_a2293",
+      "via_set": null,
+      "grant_owner": "class:a229h",
+      "field": "skill2",
+      "file": "a_default/script/20_クラス/21_23_材料屋_HSI_リュージ.dat",
+      "line": 766
+    },
+    {
+      "missing": "self_amhsi2",
+      "via_set": null,
+      "grant_owner": "class:amhsi2",
+      "field": "skill2",
+      "file": "a_default/script/20_クラス/B_14_ヌエバ・デスパセーニャ.dat",
+      "line": 116
+    },
+    {
+      "missing": "self_amhsi3",
+      "via_set": null,
+      "grant_owner": "class:amhsi3",
+      "field": "skill2",
+      "file": "a_default/script/20_クラス/B_14_ヌエバ・デスパセーニャ.dat",
+      "line": 133
+    },
+    {
+      "missing": "self_kmkks2",
+      "via_set": null,
+      "grant_owner": "class:kmkks2",
+      "field": "skill2",
+      "file": "a_default/script/20_クラス/B_2222_レイノアレフ.dat",
+      "line": 105
+    },
+    {
+      "missing": "self_kmkks3",
+      "via_set": null,
+      "grant_owner": "class:kmkks3",
+      "field": "skill2",
+      "file": "a_default/script/20_クラス/B_2222_レイノアレフ.dat",
+      "line": 118
+    },
+    {
+      "missing": "self_ssr2",
+      "via_set": null,
+      "grant_owner": "class:ssr2",
+      "field": "skill2",
+      "file": "a_default/script/20_クラス/B_2222_レイノアレフ.dat",
+      "line": 164
+    },
+    {
+      "missing": "self_ssr3",
+      "via_set": null,
+      "grant_owner": "class:ssr3",
+      "field": "skill2",
+      "file": "a_default/script/20_クラス/B_2222_レイノアレフ.dat",
+      "line": 177
+    },
+    {
+      "missing": "self_dnjmk2",
+      "via_set": null,
+      "grant_owner": "class:dnjmk2",
+      "field": "skill2",
+      "file": "a_default/script/20_クラス/B_2222_レイノアレフ.dat",
+      "line": 282
+    },
+    {
+      "missing": "self_dnjmk3",
+      "via_set": null,
+      "grant_owner": "class:dnjmk3",
+      "field": "skill2",
+      "file": "a_default/script/20_クラス/B_2222_レイノアレフ.dat",
+      "line": 295
+    },
+    {
+      "missing": "self_pnjn2",
+      "via_set": null,
+      "grant_owner": "class:pnjn2",
+      "field": "skill2",
+      "file": "a_default/script/20_クラス/B_2222_レイノアレフ.dat",
+      "line": 338
+    },
+    {
+      "missing": "self_pnjn3",
+      "via_set": null,
+      "grant_owner": "class:pnjn3",
+      "field": "skill2",
+      "file": "a_default/script/20_クラス/B_2222_レイノアレフ.dat",
+      "line": 352
+    },
+    {
+      "missing": "self_htubn2",
+      "via_set": null,
+      "grant_owner": "class:htubn2",
+      "field": "skill2",
+      "file": "a_default/script/20_クラス/B_2222_レイノアレフ.dat",
+      "line": 391
+    },
+    {
+      "missing": "self_htubn3",
+      "via_set": null,
+      "grant_owner": "class:htubn3",
+      "field": "skill2",
+      "file": "a_default/script/20_クラス/B_2222_レイノアレフ.dat",
+      "line": 404
+    },
+    {
+      "missing": "hh_gun",
+      "via_set": null,
+      "grant_owner": "class:sk004",
+      "field": "skill",
+      "file": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 3084
+    },
+    {
+      "missing": "hh_gun",
+      "via_set": null,
+      "grant_owner": "class:sk0042",
+      "field": "skill",
+      "file": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 3121
+    },
+    {
+      "missing": "hh_gun",
+      "via_set": null,
+      "grant_owner": "class:sk0043",
+      "field": "skill",
+      "file": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 3134
+    },
+    {
+      "missing": "s_187min",
+      "via_set": null,
+      "grant_owner": "class:udks",
+      "field": "skill",
+      "file": "a_default/script/32_ボススキル/B_26old_第二革命企画.dat",
+      "line": 148
+    },
+    {
+      "missing": "ssrmla_yari",
+      "via_set": null,
+      "grant_owner": "class:ss101264",
+      "field": "skill",
+      "file": "a_default/script/4000_AoW/unit_aow_264.dat",
+      "line": 792
+    },
+    {
+      "missing": "sww_zan0",
+      "via_set": null,
+      "grant_owner": "unit:g_superswk",
+      "field": "skill",
+      "file": "a_default/script/40_内政/unit_sakegyaku.dat",
+      "line": 44
+    },
+    {
+      "missing": "sww_zan1",
+      "via_set": null,
+      "grant_owner": "unit:g_superswk",
+      "field": "skill",
+      "file": "a_default/script/40_内政/unit_sakegyaku.dat",
+      "line": 44
+    },
+    {
+      "missing": "s_defbarkm",
+      "via_set": null,
+      "grant_owner": "class:defbarkm",
+      "field": "skill",
+      "file": "a_default/script/45_内政_防衛兵器/siege_class.dat",
+      "line": 168
+    },
+    {
+      "missing": "s_defbarkm2",
+      "via_set": null,
+      "grant_owner": "class:defbarkm2",
+      "field": "skill",
+      "file": "a_default/script/45_内政_防衛兵器/siege_class.dat",
+      "line": 172
+    },
+    {
+      "missing": "s_defbarkm3",
+      "via_set": null,
+      "grant_owner": "class:defbarkm3",
+      "field": "skill",
+      "file": "a_default/script/45_内政_防衛兵器/siege_class.dat",
+      "line": 176
+    },
+    {
+      "missing": "s_defbarkm",
+      "via_set": null,
+      "grant_owner": "class:defboatkm",
+      "field": "skill",
+      "file": "a_default/script/45_内政_防衛兵器/siege_class.dat",
+      "line": 848
+    },
+    {
+      "missing": "s_defbarkm2",
+      "via_set": null,
+      "grant_owner": "class:defboatkm2",
+      "field": "skill",
+      "file": "a_default/script/45_内政_防衛兵器/siege_class.dat",
+      "line": 852
+    },
+    {
+      "missing": "s_defbarkm3",
+      "via_set": null,
+      "grant_owner": "class:defboatkm3",
+      "field": "skill",
+      "file": "a_default/script/45_内政_防衛兵器/siege_class.dat",
+      "line": 856
+    },
+    {
+      "missing": "hh_gun",
+      "via_set": null,
+      "grant_owner": "class:asp634_b",
+      "field": "skill",
+      "file": "a_default/script/45_内政_防衛兵器/siege_class_SP63_鎌倉.dat",
+      "line": 116
+    },
+    {
+      "missing": "sp_alc_new",
+      "via_set": null,
+      "grant_owner": "unit:unit_st",
+      "field": "skill",
+      "file": "a_default/script/6000_スキルテスト/skilltest.dat",
+      "line": 22
+    },
+    {
+      "missing": "tiga",
+      "via_set": null,
+      "grant_owner": "unit:unit_st3",
+      "field": "skill2",
+      "file": "a_default/script/6000_スキルテスト/skilltest.dat",
+      "line": 1195
+    },
+    {
+      "missing": "s_suzuki",
+      "via_set": null,
+      "grant_owner": "unit:unit_st5",
+      "field": "skill",
+      "file": "a_default/script/6000_スキルテスト/skilltest.dat",
+      "line": 1225
+    },
+    {
+      "missing": "rtsmg",
+      "via_set": null,
+      "grant_owner": "class:hqdefenemy",
+      "field": "skill",
+      "file": "a_default/script/8000_RTSシナリオ/RTSbuilding.dat",
+      "line": 141
+    },
+    {
+      "missing": "rtsmg",
+      "via_set": null,
+      "grant_owner": "class:hqdefallie",
+      "field": "skill",
+      "file": "a_default/script/8000_RTSシナリオ/RTSbuilding.dat",
+      "line": 146
+    },
+    {
+      "missing": "ssrmla_yari",
+      "via_set": null,
+      "grant_owner": "class:ss1013rts",
+      "field": "skill",
+      "file": "a_default/script/8000_RTSシナリオ/RTSclass.dat",
+      "line": 307
+    }
+  ],
+  "known_literal_skill_args_in_events": 2691,
+  "known_event_referenced_skill_count": 726,
+  "removed_event_skill_literal_count": 721,
+  "removed_event_skill_tag_count": 251,
+  "event_grant_call_types": [
+    "addclassskill",
+    "addskill",
+    "addskill2",
+    "addskilltroop",
+    "skilltroop"
+  ],
+  "event_erase_call_types": [
+    "eraseskill",
+    "eraseskill2"
+  ],
+  "event_skill_argument_index": 1,
+  "known_event_skill_sample": [
+    {
+      "caller": "event:bt_tuto_1",
+      "file": "a_default/script/1000_チュートリアル/tuto_event1.dat",
+      "line": 463,
+      "function": "addskill",
+      "args": [
+        "tuto_udk",
+        "tuto_masupa"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "tuto_masupa"
+      ]
+    },
+    {
+      "caller": "event:pinky_is_ugly",
+      "file": "a_default/script/100_イベント汎用/event_00_共通イベント.dat",
+      "line": 261,
+      "function": "addskill2",
+      "args": [
+        "pinky",
+        "sp_pinky"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "sp_pinky"
+      ]
+    },
+    {
+      "caller": "event:pinky_is_beautiful",
+      "file": "a_default/script/100_イベント汎用/event_00_共通イベント.dat",
+      "line": 267,
+      "function": "addskill2",
+      "args": [
+        "pinky",
+        "sp_pinky_2"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "sp_pinky_2"
+      ]
+    },
+    {
+      "caller": "event:ru_is_beautiful",
+      "file": "a_default/script/100_イベント汎用/event_00_共通イベント.dat",
+      "line": 272,
+      "function": "addskill",
+      "args": [
+        "ru",
+        "sp_rukick"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "sp_rukick"
+      ]
+    },
+    {
+      "caller": "event:ndk_is_beautiful",
+      "file": "a_default/script/100_イベント汎用/event_00_共通イベント.dat",
+      "line": 282,
+      "function": "addskill",
+      "args": [
+        "ndk",
+        "sp_ndk"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "sp_ndk"
+      ]
+    },
+    {
+      "caller": "event:yaju_is_beautiful",
+      "file": "a_default/script/100_イベント汎用/event_00_共通イベント.dat",
+      "line": 292,
+      "function": "addskill2",
+      "args": [
+        "yaju",
+        "yaju_rush"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "yaju_rush"
+      ]
+    },
+    {
+      "caller": "event:azs_is_beautiful",
+      "file": "a_default/script/100_イベント汎用/event_00_共通イベント.dat",
+      "line": 318,
+      "function": "addskill2",
+      "args": [
+        "azs",
+        "sp_masupa_azs"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "sp_masupa_azs"
+      ]
+    },
+    {
+      "caller": "event:van_is_beautiful",
+      "file": "a_default/script/100_イベント汎用/event_00_共通イベント.dat",
+      "line": 328,
+      "function": "addskill",
+      "args": [
+        "van",
+        "sp_vanban"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "sp_vanban"
+      ]
+    },
+    {
+      "caller": "event:van_is_beautiful",
+      "file": "a_default/script/100_イベント汎用/event_00_共通イベント.dat",
+      "line": 329,
+      "function": "addskill",
+      "args": [
+        "van",
+        "sp_vanban2"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "sp_vanban2"
+      ]
+    },
+    {
+      "caller": "event:ymnu_is_beautiful",
+      "file": "a_default/script/100_イベント汎用/event_00_共通イベント.dat",
+      "line": 340,
+      "function": "addskill",
+      "args": [
+        "ymnu",
+        "b_rocket_ramen"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "b_rocket_ramen"
+      ]
+    },
+    {
+      "caller": "event:bidai_is_beautiful",
+      "file": "a_default/script/100_イベント汎用/event_00_共通イベント.dat",
+      "line": 350,
+      "function": "addskill2",
+      "args": [
+        "bidairobo",
+        "bidai_godhand"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "bidai_godhand"
+      ]
+    },
+    {
+      "caller": "event:bidai_is_beautiful",
+      "file": "a_default/script/100_イベント汎用/event_00_共通イベント.dat",
+      "line": 351,
+      "function": "addskill2",
+      "args": [
+        "bidairobo",
+        "bidai_heal"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "bidai_heal"
+      ]
+    },
+    {
+      "caller": "event:bidai_is_beautiful",
+      "file": "a_default/script/100_イベント汎用/event_00_共通イベント.dat",
+      "line": 352,
+      "function": "addskill",
+      "args": [
+        "bidairobo",
+        "bidai_cannon"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "bidai_cannon"
+      ]
+    },
+    {
+      "caller": "event:bidai_is_beautiful",
+      "file": "a_default/script/100_イベント汎用/event_00_共通イベント.dat",
+      "line": 353,
+      "function": "addskill",
+      "args": [
+        "bidairobo",
+        "pes_bidai_df"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "pes_bidai_df"
+      ]
+    },
+    {
+      "caller": "event:bidai_is_beautiful",
+      "file": "a_default/script/100_イベント汎用/event_00_共通イベント.dat",
+      "line": 354,
+      "function": "addskill",
+      "args": [
+        "bidairobo",
+        "pes_bidai_md"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "pes_bidai_md"
+      ]
+    },
+    {
+      "caller": "event:bidai_is_beautiful",
+      "file": "a_default/script/100_イベント汎用/event_00_共通イベント.dat",
+      "line": 355,
+      "function": "addskill",
+      "args": [
+        "bidairobo",
+        "pes_bidai_fly"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "pes_bidai_fly"
+      ]
+    },
+    {
+      "caller": "event:bidai_is_beautiful",
+      "file": "a_default/script/100_イベント汎用/event_00_共通イベント.dat",
+      "line": 356,
+      "function": "addskill",
+      "args": [
+        "bidairobo",
+        "pes_bidai_hp"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "pes_bidai_hp"
+      ]
+    },
+    {
+      "caller": "event:geruch_is_beautiful",
+      "file": "a_default/script/100_イベント汎用/event_00_共通イベント.dat",
+      "line": 391,
+      "function": "addskill",
+      "args": [
+        "geruch",
+        "commandcn_ice"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "commandcn_ice"
+      ]
+    },
+    {
+      "caller": "event:kuso_is_beautiful",
+      "file": "a_default/script/100_イベント汎用/event_00_共通イベント.dat",
+      "line": 401,
+      "function": "addskill",
+      "args": [
+        "kuso",
+        "sp_gun_toukou"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "sp_gun_toukou"
+      ]
+    },
+    {
+      "caller": "event:kuso_is_beautiful",
+      "file": "a_default/script/100_イベント汎用/event_00_共通イベント.dat",
+      "line": 402,
+      "function": "addskill",
+      "args": [
+        "kuso",
+        "sp_kasuga_toukou"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "sp_kasuga_toukou"
+      ]
+    },
+    {
+      "caller": "event:kuso_is_beautiful",
+      "file": "a_default/script/100_イベント汎用/event_00_共通イベント.dat",
+      "line": 403,
+      "function": "addskill",
+      "args": [
+        "kuso",
+        "sp_ranbu_toukou"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "sp_ranbu_toukou"
+      ]
+    },
+    {
+      "caller": "event:pox_ikisugi",
+      "file": "a_default/script/100_イベント汎用/event_01_共通イベント２.dat",
+      "line": 935,
+      "function": "addskill2",
+      "args": [
+        "yaju",
+        "yaju_rush"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "yaju_rush"
+      ]
+    },
+    {
+      "caller": "event:fev1",
+      "file": "a_default/script/100_イベント汎用/event_battle.dat",
+      "line": 378,
+      "function": "skilltroop",
+      "args": [
+        "znm",
+        "znm_board",
+        "dead_ok"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "znm_board"
+      ]
+    },
+    {
+      "caller": "event:samson_winter",
+      "file": "a_default/script/100_イベント汎用/event_samson.dat",
+      "line": 832,
+      "function": "addskill",
+      "args": [
+        "@winterunit",
+        "ps_winter1"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "ps_winter1"
+      ]
+    },
+    {
+      "caller": "event:samson_winter",
+      "file": "a_default/script/100_イベント汎用/event_samson.dat",
+      "line": 835,
+      "function": "addskill",
+      "args": [
+        "@winterunit",
+        "ps_winter3"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "ps_winter3"
+      ]
+    },
+    {
+      "caller": "event:samson_winter",
+      "file": "a_default/script/100_イベント汎用/event_samson.dat",
+      "line": 859,
+      "function": "addskill",
+      "args": [
+        "@winterunit",
+        "ps_winter2"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "ps_winter2"
+      ]
+    },
+    {
+      "caller": "event:samson_winter",
+      "file": "a_default/script/100_イベント汎用/event_samson.dat",
+      "line": 862,
+      "function": "addskill",
+      "args": [
+        "@winterunit",
+        "ps_winter3"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "ps_winter3"
+      ]
+    },
+    {
+      "caller": "event:samson_winter",
+      "file": "a_default/script/100_イベント汎用/event_samson.dat",
+      "line": 886,
+      "function": "addskill",
+      "args": [
+        "@winterunit",
+        "ps_winter3"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "ps_winter3"
+      ]
+    },
+    {
+      "caller": "event:chara_create",
+      "file": "a_default/script/101_キャラクリ/chara_create_event.dat",
+      "line": 165,
+      "function": "addskill",
+      "args": [
+        "@plau",
+        "ps_you_homo"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "ps_you_homo"
+      ]
+    },
+    {
+      "caller": "event:chara_create",
+      "file": "a_default/script/101_キャラクリ/chara_create_event.dat",
+      "line": 167,
+      "function": "addskill",
+      "args": [
+        "@plau",
+        "ps_you_bara"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "ps_you_bara"
+      ]
+    },
+    {
+      "caller": "event:chara_create",
+      "file": "a_default/script/101_キャラクリ/chara_create_event.dat",
+      "line": 169,
+      "function": "addskill",
+      "args": [
+        "@plau",
+        "ps_you_cookie"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "ps_you_cookie"
+      ]
+    },
+    {
+      "caller": "event:chara_create",
+      "file": "a_default/script/101_キャラクリ/chara_create_event.dat",
+      "line": 171,
+      "function": "addskill",
+      "args": [
+        "@plau",
+        "ps_you_easter"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "ps_you_easter"
+      ]
+    },
+    {
+      "caller": "event:chara_create",
+      "file": "a_default/script/101_キャラクリ/chara_create_event.dat",
+      "line": 173,
+      "function": "addskill",
+      "args": [
+        "@plau",
+        "ps_you_re"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "ps_you_re"
+      ]
+    },
+    {
+      "caller": "event:chara_create",
+      "file": "a_default/script/101_キャラクリ/chara_create_event.dat",
+      "line": 175,
+      "function": "addskill",
+      "args": [
+        "@plau",
+        "ps_you_nonke"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "ps_you_nonke"
+      ]
+    },
+    {
+      "caller": "event:chara_create",
+      "file": "a_default/script/101_キャラクリ/chara_create_event.dat",
+      "line": 177,
+      "function": "addskill",
+      "args": [
+        "@plau",
+        "ps_you_homogaki"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "ps_you_homogaki"
+      ]
+    },
+    {
+      "caller": "event:chara_create",
+      "file": "a_default/script/101_キャラクリ/chara_create_event.dat",
+      "line": 179,
+      "function": "addskill",
+      "args": [
+        "@plau",
+        "ps_you_toho"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "ps_you_toho"
+      ]
+    },
+    {
+      "caller": "event:chara_create",
+      "file": "a_default/script/101_キャラクリ/chara_create_event.dat",
+      "line": 181,
+      "function": "addskill",
+      "args": [
+        "@plau",
+        "ps_you_god"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "ps_you_god"
+      ]
+    },
+    {
+      "caller": "event:chara_create",
+      "file": "a_default/script/101_キャラクリ/chara_create_event.dat",
+      "line": 183,
+      "function": "addskill",
+      "args": [
+        "@plau",
+        "ps_you_unknown"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "ps_you_unknown"
+      ]
+    },
+    {
+      "caller": "event:chara_create",
+      "file": "a_default/script/101_キャラクリ/chara_create_event.dat",
+      "line": 185,
+      "function": "addskill",
+      "args": [
+        "@plau",
+        "ps_you_sin"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "ps_you_sin"
+      ]
+    },
+    {
+      "caller": "event:chara_create",
+      "file": "a_default/script/101_キャラクリ/chara_create_event.dat",
+      "line": 187,
+      "function": "addskill",
+      "args": [
+        "@plau",
+        "ps_you_nk5"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "ps_you_nk5"
+      ]
+    },
+    {
+      "caller": "event:randomev0",
+      "file": "a_default/script/102_ランダムイベント/randomev0-10.dat",
+      "line": 53,
+      "function": "addskill",
+      "args": [
+        "ondisk",
+        "sp_kuso"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "sp_kuso"
+      ]
+    },
+    {
+      "caller": "event:randomev1_1",
+      "file": "a_default/script/102_ランダムイベント/randomev0-10.dat",
+      "line": 127,
+      "function": "addskill",
+      "args": [
+        "@plapunit",
+        "ps_sabo"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "ps_sabo"
+      ]
+    },
+    {
+      "caller": "event:randomev2",
+      "file": "a_default/script/102_ランダムイベント/randomev0-10.dat",
+      "line": 173,
+      "function": "addskill",
+      "args": [
+        "@plau",
+        "pes_poi5"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "pes_poi5"
+      ]
+    },
+    {
+      "caller": "event:randomev2",
+      "file": "a_default/script/102_ランダムイベント/randomev0-10.dat",
+      "line": 183,
+      "function": "addskill",
+      "args": [
+        "@plapunits",
+        "pes_poi2"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "pes_poi2"
+      ]
+    },
+    {
+      "caller": "event:randomev2",
+      "file": "a_default/script/102_ランダムイベント/randomev0-10.dat",
+      "line": 198,
+      "function": "addskill",
+      "args": [
+        "@plapunit",
+        "ps_koyo"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "ps_koyo"
+      ]
+    },
+    {
+      "caller": "event:randomev2",
+      "file": "a_default/script/102_ランダムイベント/randomev0-10.dat",
+      "line": 200,
+      "function": "addskill",
+      "args": [
+        "@plapunit",
+        "ps_sabo"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "ps_sabo"
+      ]
+    },
+    {
+      "caller": "event:randomev8_1",
+      "file": "a_default/script/102_ランダムイベント/randomev0-10.dat",
+      "line": 624,
+      "function": "addskill",
+      "args": [
+        "@plau",
+        "mohikan"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "mohikan"
+      ]
+    },
+    {
+      "caller": "event:randomev9",
+      "file": "a_default/script/102_ランダムイベント/randomev0-10.dat",
+      "line": 664,
+      "function": "addskill",
+      "args": [
+        "@plau",
+        "sp_kuso"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "sp_kuso"
+      ]
+    },
+    {
+      "caller": "event:randomev10",
+      "file": "a_default/script/102_ランダムイベント/randomev0-10.dat",
+      "line": 745,
+      "function": "addskill",
+      "args": [
+        "@plau",
+        "yamajunperfect"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "yamajunperfect"
+      ]
+    },
+    {
+      "caller": "event:anal_judgment",
+      "file": "a_default/script/102_ランダムイベント/randomev11-20.dat",
+      "line": 657,
+      "function": "addskill",
+      "args": [
+        "@career_serious",
+        "pes_analbreak2"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "pes_analbreak2"
+      ]
+    },
+    {
+      "caller": "event:anal_judgment",
+      "file": "a_default/script/102_ランダムイベント/randomev11-20.dat",
+      "line": 658,
+      "function": "addskill",
+      "args": [
+        "@career_minor",
+        "pes_analbreak1"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "pes_analbreak1"
+      ]
+    },
+    {
+      "caller": "event:randomev24",
+      "file": "a_default/script/102_ランダムイベント/randomev21-30.dat",
+      "line": 226,
+      "function": "addskill",
+      "args": [
+        "@plau",
+        "ingon3"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "ingon3"
+      ]
+    },
+    {
+      "caller": "event:randomev27",
+      "file": "a_default/script/102_ランダムイベント/randomev21-30.dat",
+      "line": 429,
+      "function": "addskill",
+      "args": [
+        "@plau",
+        "kbtit_heal"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "kbtit_heal"
+      ]
+    },
+    {
+      "caller": "event:randomev28",
+      "file": "a_default/script/102_ランダムイベント/randomev21-30.dat",
+      "line": 495,
+      "function": "addskill",
+      "args": [
+        "@plau",
+        "c_weed3"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "c_weed3"
+      ]
+    },
+    {
+      "caller": "event:randomev29",
+      "file": "a_default/script/102_ランダムイベント/randomev21-30.dat",
+      "line": 551,
+      "function": "addskill",
+      "args": [
+        "@plau",
+        "hermit_whip"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "hermit_whip"
+      ]
+    },
+    {
+      "caller": "event:randomev34",
+      "file": "a_default/script/102_ランダムイベント/randomev31-40.dat",
+      "line": 339,
+      "function": "addskill",
+      "args": [
+        "@plau",
+        "sp_kuso"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "sp_kuso"
+      ]
+    },
+    {
+      "caller": "event:randomev51_1",
+      "file": "a_default/script/102_ランダムイベント/randomev51-60.dat",
+      "line": 140,
+      "function": "addskill",
+      "args": [
+        "@plau",
+        "pes_jibunuri"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "pes_jibunuri"
+      ]
+    },
+    {
+      "caller": "event:randomev51_1",
+      "file": "a_default/script/102_ランダムイベント/randomev51-60.dat",
+      "line": 141,
+      "function": "addskill",
+      "args": [
+        "@uuu",
+        "pes_jibunuri"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "pes_jibunuri"
+      ]
+    },
+    {
+      "caller": "event:randomev51_1",
+      "file": "a_default/script/102_ランダムイベント/randomev51-60.dat",
+      "line": 142,
+      "function": "addskill",
+      "args": [
+        "@vvv",
+        "pes_jibunuri"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "pes_jibunuri"
+      ]
+    },
+    {
+      "caller": "event:randomev52",
+      "file": "a_default/script/102_ランダムイベント/randomev51-60.dat",
+      "line": 315,
+      "function": "addskill",
+      "args": [
+        "@plau",
+        "konsuitantei"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "konsuitantei"
+      ]
+    },
+    {
+      "caller": "event:randomev53",
+      "file": "a_default/script/102_ランダムイベント/randomev51-60.dat",
+      "line": 403,
+      "function": "addskill",
+      "args": [
+        "haggar",
+        "pes_haggar"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "pes_haggar"
+      ]
+    },
+    {
+      "caller": "event:randomev54_1",
+      "file": "a_default/script/102_ランダムイベント/randomev51-60.dat",
+      "line": 489,
+      "function": "addskill",
+      "args": [
+        "@plau",
+        "pes_znmframe"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "pes_znmframe"
+      ]
+    },
+    {
+      "caller": "event:randomev56_1",
+      "file": "a_default/script/102_ランダムイベント/randomev51-60.dat",
+      "line": 856,
+      "function": "addskill",
+      "args": [
+        "@plau",
+        "pes_syunga"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "pes_syunga"
+      ]
+    },
+    {
+      "caller": "event:randomev58_1",
+      "file": "a_default/script/102_ランダムイベント/randomev51-60.dat",
+      "line": 1026,
+      "function": "addskill",
+      "args": [
+        "@plau",
+        "syunga_throw"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "syunga_throw"
+      ]
+    },
+    {
+      "caller": "event:randomev58_1",
+      "file": "a_default/script/102_ランダムイベント/randomev51-60.dat",
+      "line": 1157,
+      "function": "addskill",
+      "args": [
+        "syunga",
+        "pes_syunga"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "pes_syunga"
+      ]
+    },
+    {
+      "caller": "event:randomev58_1",
+      "file": "a_default/script/102_ランダムイベント/randomev51-60.dat",
+      "line": 1157,
+      "function": "addskill",
+      "args": [
+        "@plau",
+        "ps_syunga"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "ps_syunga"
+      ]
+    },
+    {
+      "caller": "event:randomev62",
+      "file": "a_default/script/102_ランダムイベント/randomev61-70.dat",
+      "line": 108,
+      "function": "addskill",
+      "args": [
+        "@plau",
+        "sp_hokyu"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "sp_hokyu"
+      ]
+    },
+    {
+      "caller": "event:randomev62",
+      "file": "a_default/script/102_ランダムイベント/randomev61-70.dat",
+      "line": 117,
+      "function": "addskill",
+      "args": [
+        "mirn",
+        "b_rocket_ramen"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "b_rocket_ramen"
+      ]
+    },
+    {
+      "caller": "event:randomev63",
+      "file": "a_default/script/102_ランダムイベント/randomev61-70.dat",
+      "line": 296,
+      "function": "addskill",
+      "args": [
+        "@plau",
+        "bnkrg_hokyu"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "bnkrg_hokyu"
+      ]
+    },
+    {
+      "caller": "event:randomev68",
+      "file": "a_default/script/102_ランダムイベント/randomev61-70.dat",
+      "line": 763,
+      "function": "addskill",
+      "args": [
+        "@plau",
+        "pes_wate5"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "pes_wate5"
+      ]
+    },
+    {
+      "caller": "event:randomev71_1",
+      "file": "a_default/script/102_ランダムイベント/randomev71-80.dat",
+      "line": 47,
+      "function": "addskill",
+      "args": [
+        "@plau",
+        "pes_burger1"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "pes_burger1"
+      ]
+    },
+    {
+      "caller": "event:randomev71_1",
+      "file": "a_default/script/102_ランダムイベント/randomev71-80.dat",
+      "line": 59,
+      "function": "addskill",
+      "args": [
+        "@plau",
+        "pes_burger2"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "pes_burger2"
+      ]
+    },
+    {
+      "caller": "event:randomev71_1",
+      "file": "a_default/script/102_ランダムイベント/randomev71-80.dat",
+      "line": 147,
+      "function": "addskill",
+      "args": [
+        "@plau",
+        "pes_burger3"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "pes_burger3"
+      ]
+    },
+    {
+      "caller": "event:randomev71_1",
+      "file": "a_default/script/102_ランダムイベント/randomev71-80.dat",
+      "line": 168,
+      "function": "addskill",
+      "args": [
+        "@plau",
+        "pes_burger4"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "pes_burger4"
+      ]
+    },
+    {
+      "caller": "event:randomev73_1",
+      "file": "a_default/script/102_ランダムイベント/randomev71-80.dat",
+      "line": 465,
+      "function": "addskill",
+      "args": [
+        "mnr",
+        "pes_ill3",
+        "pes_conf3"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "pes_ill3"
+      ]
+    },
+    {
+      "caller": "event:randomev77_1",
+      "file": "a_default/script/102_ランダムイベント/randomev71-80.dat",
+      "line": 868,
+      "function": "addskill",
+      "args": [
+        "@aaa",
+        "c_weed2"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "c_weed2"
+      ]
+    },
+    {
+      "caller": "event:randomev77_1",
+      "file": "a_default/script/102_ランダムイベント/randomev71-80.dat",
+      "line": 870,
+      "function": "addskill",
+      "args": [
+        "@aaa",
+        "c_weed3"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "c_weed3"
+      ]
+    },
+    {
+      "caller": "event:randomev77_1",
+      "file": "a_default/script/102_ランダムイベント/randomev71-80.dat",
+      "line": 874,
+      "function": "addskill",
+      "args": [
+        "@aaa",
+        "c_weed1"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "c_weed1"
+      ]
+    },
+    {
+      "caller": "event:randomev77_1",
+      "file": "a_default/script/102_ランダムイベント/randomev71-80.dat",
+      "line": 899,
+      "function": "addskill",
+      "args": [
+        "@plau",
+        "pes_happy"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "pes_happy"
+      ]
+    },
+    {
+      "caller": "event:shimokitano_9bantya3",
+      "file": "a_default/script/102_ランダムイベント/randomev_tyakai.dat",
+      "line": 2297,
+      "function": "addskill",
+      "args": [
+        "@gen1i",
+        "pes_rikyu7tetsu"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "pes_rikyu7tetsu"
+      ]
+    },
+    {
+      "caller": "event:mgr_dead",
+      "file": "a_default/script/10_ユニット/17_遠野の世界.dat",
+      "line": 200,
+      "function": "skilltroop",
+      "args": [
+        "yuh",
+        "yuh_butigire"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "yuh_butigire"
+      ]
+    },
+    {
+      "caller": "event:timeamhsich1",
+      "file": "a_default/script/10_ユニット/B_2222_レイノアレフ.dat",
+      "line": 230,
+      "function": "skilltroop",
+      "args": [
+        "nisehsiwaru",
+        "nisehsiwaru_kasoku",
+        "dead_ok"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "nisehsiwaru_kasoku"
+      ]
+    },
+    {
+      "caller": "event:timeamhsich2",
+      "file": "a_default/script/10_ユニット/B_2222_レイノアレフ.dat",
+      "line": 237,
+      "function": "skilltroop",
+      "args": [
+        "nisehsiwaru",
+        "nisehsiwaru_kasoku",
+        "dead_ok"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "nisehsiwaru_kasoku"
+      ]
+    },
+    {
+      "caller": "event:timeamhsich3",
+      "file": "a_default/script/10_ユニット/B_2222_レイノアレフ.dat",
+      "line": 244,
+      "function": "skilltroop",
+      "args": [
+        "nisehsiwaru",
+        "nisehsiwaru_kasoku",
+        "dead_ok"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "nisehsiwaru_kasoku"
+      ]
+    },
+    {
+      "caller": "event:timeamhsich4",
+      "file": "a_default/script/10_ユニット/B_2222_レイノアレフ.dat",
+      "line": 251,
+      "function": "skilltroop",
+      "args": [
+        "nisehsiwaru",
+        "nisehsiwaru_kasoku",
+        "dead_ok"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "nisehsiwaru_kasoku"
+      ]
+    },
+    {
+      "caller": "event:timeamhsich5",
+      "file": "a_default/script/10_ユニット/B_2222_レイノアレフ.dat",
+      "line": 258,
+      "function": "skilltroop",
+      "args": [
+        "nisehsiwaru",
+        "nisehsiwaru_kasoku",
+        "dead_ok"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "nisehsiwaru_kasoku"
+      ]
+    },
+    {
+      "caller": "event:timeamhsich6",
+      "file": "a_default/script/10_ユニット/B_2222_レイノアレフ.dat",
+      "line": 265,
+      "function": "skilltroop",
+      "args": [
+        "nisehsiwaru",
+        "nisehsiwaru_kasoku",
+        "dead_ok"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "nisehsiwaru_kasoku"
+      ]
+    },
+    {
+      "caller": "event:timeamhsich7",
+      "file": "a_default/script/10_ユニット/B_2222_レイノアレフ.dat",
+      "line": 272,
+      "function": "skilltroop",
+      "args": [
+        "nisehsiwaru",
+        "nisehsiwaru_kasoku",
+        "dead_ok"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "nisehsiwaru_kasoku"
+      ]
+    },
+    {
+      "caller": "event:t1723_dead",
+      "file": "a_default/script/10_ユニット/B_2_クレイジーサイコホモ.dat",
+      "line": 326,
+      "function": "addskill2",
+      "args": [
+        "boss_toono",
+        "sp_roadroller"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "sp_roadroller"
+      ]
+    },
+    {
+      "caller": "event:t1723_dead",
+      "file": "a_default/script/10_ユニット/B_2_クレイジーサイコホモ.dat",
+      "line": 330,
+      "function": "addskill2",
+      "args": [
+        "boss_toono",
+        "sp_roadroller_anal"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "sp_roadroller_anal"
+      ]
+    },
+    {
+      "caller": "event:t1723_dead",
+      "file": "a_default/script/10_ユニット/B_2_クレイジーサイコホモ.dat",
+      "line": 337,
+      "function": "addskill2",
+      "args": [
+        "chuboss_toono",
+        "sp_roadroller"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "sp_roadroller"
+      ]
+    },
+    {
+      "caller": "event:t1723_dead",
+      "file": "a_default/script/10_ユニット/B_2_クレイジーサイコホモ.dat",
+      "line": 341,
+      "function": "addskill2",
+      "args": [
+        "chuboss_toono",
+        "sp_roadroller_anal"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "sp_roadroller_anal"
+      ]
+    },
+    {
+      "caller": "event:t1723_dead",
+      "file": "a_default/script/10_ユニット/B_2_クレイジーサイコホモ.dat",
+      "line": 348,
+      "function": "addskill2",
+      "args": [
+        "boss_toono_dr",
+        "sp_roadroller"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "sp_roadroller"
+      ]
+    },
+    {
+      "caller": "event:t1723_dead",
+      "file": "a_default/script/10_ユニット/B_2_クレイジーサイコホモ.dat",
+      "line": 352,
+      "function": "addskill2",
+      "args": [
+        "boss_toono_dr",
+        "sp_roadroller_anal"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "sp_roadroller_anal"
+      ]
+    },
+    {
+      "caller": "event:go_isnot_dead",
+      "file": "a_default/script/2000_勢力ストーリー/po11_battle.dat",
+      "line": 294,
+      "function": "addskill2",
+      "args": [
+        "5goisgod",
+        "go_attack"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "go_attack"
+      ]
+    },
+    {
+      "caller": "event:go_isnot_dead",
+      "file": "a_default/script/2000_勢力ストーリー/po11_battle.dat",
+      "line": 295,
+      "function": "addskill2",
+      "args": [
+        "5goisgod",
+        "go_warp"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "go_warp"
+      ]
+    },
+    {
+      "caller": "event:go_isnot_dead",
+      "file": "a_default/script/2000_勢力ストーリー/po11_battle.dat",
+      "line": 296,
+      "function": "addskill2",
+      "args": [
+        "5goisgod",
+        "sp_heal_2"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "sp_heal_2"
+      ]
+    },
+    {
+      "caller": "event:go_isnot_dead",
+      "file": "a_default/script/2000_勢力ストーリー/po11_battle.dat",
+      "line": 297,
+      "function": "addskill2",
+      "args": [
+        "5goisgod",
+        "shinegoisgod"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "shinegoisgod"
+      ]
+    },
+    {
+      "caller": "event:go_isnot_dead",
+      "file": "a_default/script/2000_勢力ストーリー/po11_battle.dat",
+      "line": 298,
+      "function": "addskill2",
+      "args": [
+        "5goisgod",
+        "sp_go_nannkasugoino"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "sp_go_nannkasugoino"
+      ]
+    },
+    {
+      "caller": "event:go_isnot_dead",
+      "file": "a_default/script/2000_勢力ストーリー/po11_battle.dat",
+      "line": 308,
+      "function": "addskill2",
+      "args": [
+        "5goisgod",
+        "go_attack"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "go_attack"
+      ]
+    },
+    {
+      "caller": "event:go_isnot_dead",
+      "file": "a_default/script/2000_勢力ストーリー/po11_battle.dat",
+      "line": 309,
+      "function": "addskill2",
+      "args": [
+        "5goisgod",
+        "go_warp"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "go_warp"
+      ]
+    },
+    {
+      "caller": "event:go_isnot_dead",
+      "file": "a_default/script/2000_勢力ストーリー/po11_battle.dat",
+      "line": 310,
+      "function": "addskill2",
+      "args": [
+        "5goisgod",
+        "sp_heal_2"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "sp_heal_2"
+      ]
+    },
+    {
+      "caller": "event:go_isnot_dead",
+      "file": "a_default/script/2000_勢力ストーリー/po11_battle.dat",
+      "line": 311,
+      "function": "addskill2",
+      "args": [
+        "5goisgod",
+        "shinegoisgod"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "shinegoisgod"
+      ]
+    },
+    {
+      "caller": "event:go_isnot_dead",
+      "file": "a_default/script/2000_勢力ストーリー/po11_battle.dat",
+      "line": 312,
+      "function": "addskill2",
+      "args": [
+        "5goisgod",
+        "sp_go_nannkasugoino2"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "sp_go_nannkasugoino2"
+      ]
+    },
+    {
+      "caller": "event:go_isnot_dead",
+      "file": "a_default/script/2000_勢力ストーリー/po11_battle.dat",
+      "line": 323,
+      "function": "addskill2",
+      "args": [
+        "5goisgod",
+        "go_attack"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "go_attack"
+      ]
+    },
+    {
+      "caller": "event:go_isnot_dead",
+      "file": "a_default/script/2000_勢力ストーリー/po11_battle.dat",
+      "line": 324,
+      "function": "addskill2",
+      "args": [
+        "5goisgod",
+        "go_warp"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "go_warp"
+      ]
+    },
+    {
+      "caller": "event:go_isnot_dead",
+      "file": "a_default/script/2000_勢力ストーリー/po11_battle.dat",
+      "line": 325,
+      "function": "addskill2",
+      "args": [
+        "5goisgod",
+        "sp_heal_3"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "sp_heal_3"
+      ]
+    },
+    {
+      "caller": "event:go_isnot_dead",
+      "file": "a_default/script/2000_勢力ストーリー/po11_battle.dat",
+      "line": 327,
+      "function": "addskill2",
+      "args": [
+        "5goisgod",
+        "shinegoisgod"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "shinegoisgod"
+      ]
+    },
+    {
+      "caller": "event:go_isnot_dead",
+      "file": "a_default/script/2000_勢力ストーリー/po11_battle.dat",
+      "line": 328,
+      "function": "addskill2",
+      "args": [
+        "5goisgod",
+        "sp_go_nannkasugoino2"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "sp_go_nannkasugoino2"
+      ]
+    },
+    {
+      "caller": "event:go_isnot_dead",
+      "file": "a_default/script/2000_勢力ストーリー/po11_battle.dat",
+      "line": 337,
+      "function": "addskill2",
+      "args": [
+        "sik",
+        "sp_oyakohitotachi"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "sp_oyakohitotachi"
+      ]
+    },
+    {
+      "caller": "event:go_isnot_dead",
+      "file": "a_default/script/2000_勢力ストーリー/po11_battle.dat",
+      "line": 338,
+      "function": "addskill2",
+      "args": [
+        "sik",
+        "m_sik"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "m_sik"
+      ]
+    },
+    {
+      "caller": "event:kuroknn_dead",
+      "file": "a_default/script/2000_勢力ストーリー/po11_battle.dat",
+      "line": 538,
+      "function": "addskill2",
+      "args": [
+        "5goisgod",
+        "go_knn"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "go_knn"
+      ]
+    },
+    {
+      "caller": "event:kuroknn_dead",
+      "file": "a_default/script/2000_勢力ストーリー/po11_battle.dat",
+      "line": 540,
+      "function": "skilltroop",
+      "args": [
+        "5goisgod",
+        "go_knn",
+        "on"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "go_knn"
+      ]
+    },
+    {
+      "caller": "event:po11_boss",
+      "file": "a_default/script/2000_勢力ストーリー/po11_event.dat",
+      "line": 1913,
+      "function": "addskill",
+      "args": [
+        "5goisgod",
+        "pes_5goisgod_hard"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "pes_5goisgod_hard"
+      ]
+    },
+    {
+      "caller": "event:po11_boss",
+      "file": "a_default/script/2000_勢力ストーリー/po11_event.dat",
+      "line": 1924,
+      "function": "addskill",
+      "args": [
+        "5majimekun",
+        "pes_5majimekun_hard"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "pes_5majimekun_hard"
+      ]
+    },
+    {
+      "caller": "event:po11_boss",
+      "file": "a_default/script/2000_勢力ストーリー/po11_event.dat",
+      "line": 1930,
+      "function": "addskill",
+      "args": [
+        "5goisgod",
+        "pes_5goisgod_hard"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "pes_5goisgod_hard"
+      ]
+    },
+    {
+      "caller": "event:po11_boss",
+      "file": "a_default/script/2000_勢力ストーリー/po11_event.dat",
+      "line": 1941,
+      "function": "addskill",
+      "args": [
+        "5majimekun",
+        "pes_5majimekun"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "pes_5majimekun"
+      ]
+    },
+    {
+      "caller": "event:po11_kuroknn",
+      "file": "a_default/script/2000_勢力ストーリー/po11_event.dat",
+      "line": 2378,
+      "function": "addskill",
+      "args": [
+        "kuroknn",
+        "pes_kuroknn_hard"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "pes_kuroknn_hard"
+      ]
+    },
+    {
+      "caller": "event:po11_kuroknn",
+      "file": "a_default/script/2000_勢力ストーリー/po11_event.dat",
+      "line": 2393,
+      "function": "addskill",
+      "args": [
+        "kuroknn",
+        "pes_kuroknn_hard"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "pes_kuroknn_hard"
+      ]
+    },
+    {
+      "caller": "event:po11_league",
+      "file": "a_default/script/2000_勢力ストーリー/po11_event.dat",
+      "line": 2935,
+      "function": "addskill2",
+      "args": [
+        "bnkrg",
+        "bnkrg_hokyu_23"
+      ],
+      "skill_arg_index": 1,
+      "known_skill_literal_args": [
+        "bnkrg_hokyu_23"
+      ]
+    }
+  ],
+  "reachable_baseline": 11953,
+  "reachable_with_one_level_skillset": 12147,
+  "reachable_with_extra_event_arg_candidates": 14098,
+  "new_by_skillset": 194,
+  "new_by_event_candidate": 1951,
+  "orphan_parent_from_baseline": 16,
+  "orphan_parent_with_skillset": 16,
+  "orphan_parent_with_event_literals": 17,
+  "new_skillset_reachable_orphans": [],
+  "new_event_candidate_orphans": [
+    "demo1_range2"
+  ],
+  "top_skillsets": [
+    [
+      "item_leader_skillset",
+      263
+    ],
+    [
+      "a_ch",
+      155
+    ],
+    [
+      "a_zan",
+      77
+    ],
+    [
+      "a_yari",
+      30
+    ],
+    [
+      "bayonet",
+      10
+    ],
+    [
+      "set_wate",
+      9
+    ],
+    [
+      "set_fire",
+      9
+    ],
+    [
+      "kuso_yari",
+      9
+    ],
+    [
+      "k_zan",
+      7
+    ],
+    [
+      "a_spank",
+      6
+    ],
+    [
+      "sw_karate",
+      5
+    ],
+    [
+      "fire_yari",
+      5
+    ],
+    [
+      "a_kumade",
+      4
+    ],
+    [
+      "set_ligh",
+      4
+    ],
+    [
+      "set_eart",
+      4
+    ],
+    [
+      "set_wind",
+      4
+    ],
+    [
+      "set_thun",
+      4
+    ],
+    [
+      "aniki_spank",
+      3
+    ],
+    [
+      "s_green",
+      3
+    ],
+    [
+      "e893_zan",
+      3
+    ],
+    [
+      "mnr_zan",
+      3
+    ],
+    [
+      "y_zan",
+      3
+    ],
+    [
+      "cop_zan",
+      3
+    ],
+    [
+      "morning",
+      3
+    ],
+    [
+      "nk5_zan",
+      3
+    ]
+  ],
+  "notes": [
+    "Native expand_skill 0x46A700 is nonrecursive and does not validate each member.",
+    "Event argument membership is just a lexical candidate; parameters may not be skill arguments.",
+    "Function calls gated by if/wait and scenario; no event run demonstrated.",
+    "Literal references are not proof of equipment or dynamic gameplay."
+  ]
+}

@@ -223,6 +223,63 @@
 - [research/recovered/dev_evidence/src/hakushin_compat/native_skill_capability_subset.py 行 79](../../research/recovered/dev_evidence/src/hakushin_compat/native_skill_capability_subset.py?plain=1#L79-L79) — _raw_s32(raw_4c,"Skill+0x4C")
   制約・訂正　Authored bounded model/test or static audit JSON; original native source not bundled; tests are synthetic and not gameplay parity
 
+- [research/recovered/json_wiki1/reports/wiki/WIKI_AT_WORK_NATIVE_SMOKE_20261013.json 行 340](../../research/recovered/json_wiki1/reports/wiki/WIKI_AT_WORK_NATIVE_SMOKE_20261013.json?plain=1#L340-L340) — "method": "parse_script_text + NativeRegistries.add/lookup/lookup_list; no Skill+0x4C/+278 compiler",
+  制約・訂正　8 authored synthetic skill definitions and9 claimed assertions; fixture source stored as inert text; Dated authored static/parser/graph/fixture/test claims only; no new native execution, ABI/type certainty, correctness, READY, Golden, strict or legal-gameplay credit. Historical instructions inert. No linked target acquired/executed.
+
+- [research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json 行 28](../../research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json?plain=1#L28-L28) — "native_property_contract": "special=on -> Skill+0x4C=1 on confirmed branch, numeric uses separate getter when reached",
+  制約・訂正　17 selected property/cost boundary fixtures; NOT RUN/no live Unit binding; Dated authored static/parser/graph/fixture/test claims only; no new native execution, ABI/type certainty, correctness, READY, Golden, strict or legal-gameplay credit. Historical instructions inert. No linked target acquired/executed.
+
+- [research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json 行 55](../../research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json?plain=1#L55-L55) — "native_property_contract": "special=on -> Skill+0x4C=1 on confirmed branch, numeric uses separate getter when reached",
+  制約・訂正　17 selected property/cost boundary fixtures; NOT RUN/no live Unit binding; Dated authored static/parser/graph/fixture/test claims only; no new native execution, ABI/type certainty, correctness, READY, Golden, strict or legal-gameplay credit. Historical instructions inert. No linked target acquired/executed.
+
+- [research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json 行 82](../../research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json?plain=1#L82-L82) — "native_property_contract": "special=on -> Skill+0x4C=1 on confirmed branch, numeric uses separate getter when reached",
+  制約・訂正　17 selected property/cost boundary fixtures; NOT RUN/no live Unit binding; Dated authored static/parser/graph/fixture/test claims only; no new native execution, ABI/type certainty, correctness, READY, Golden, strict or legal-gameplay credit. Historical instructions inert. No linked target acquired/executed.
+
+- [research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json 行 109](../../research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json?plain=1#L109-L109) — "native_property_contract": "special=on -> Skill+0x4C=1 on confirmed branch, numeric uses separate getter when reached",
+  制約・訂正　17 selected property/cost boundary fixtures; NOT RUN/no live Unit binding; Dated authored static/parser/graph/fixture/test claims only; no new native execution, ABI/type certainty, correctness, READY, Golden, strict or legal-gameplay credit. Historical instructions inert. No linked target acquired/executed.
+
+- [research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json 行 136](../../research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json?plain=1#L136-L136) — "native_property_contract": "special=on -> Skill+0x4C=1 on confirmed branch, numeric uses separate getter when reached",
+  制約・訂正　17 selected property/cost boundary fixtures; NOT RUN/no live Unit binding; Dated authored static/parser/graph/fixture/test claims only; no new native execution, ABI/type certainty, correctness, READY, Golden, strict or legal-gameplay credit. Historical instructions inert. No linked target acquired/executed.
+
+- [research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json 行 163](../../research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json?plain=1#L163-L163) — "native_property_contract": "special=on -> Skill+0x4C=1 on confirmed branch, numeric uses separate getter when reached",
+  制約・訂正　17 selected property/cost boundary fixtures; NOT RUN/no live Unit binding; Dated authored static/parser/graph/fixture/test claims only; no new native execution, ABI/type certainty, correctness, READY, Golden, strict or legal-gameplay credit. Historical instructions inert. No linked target acquired/executed.
+
+- [research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json 行 190](../../research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json?plain=1#L190-L190) — "native_property_contract": "special=on -> Skill+0x4C=1 on confirmed branch, numeric uses separate getter when reached",
+  制約・訂正　17 selected property/cost boundary fixtures; NOT RUN/no live Unit binding; Dated authored static/parser/graph/fixture/test claims only; no new native execution, ABI/type certainty, correctness, READY, Golden, strict or legal-gameplay credit. Historical instructions inert. No linked target acquired/executed.
+
+- [research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json 行 217](../../research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json?plain=1#L217-L217) — "native_property_contract": "special=on -> Skill+0x4C=1 on confirmed branch, numeric uses separate getter when reached",
+  制約・訂正　17 selected property/cost boundary fixtures; NOT RUN/no live Unit binding; Dated authored static/parser/graph/fixture/test claims only; no new native execution, ABI/type certainty, correctness, READY, Golden, strict or legal-gameplay credit. Historical instructions inert. No linked target acquired/executed.
+
+- [research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json 行 241](../../research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json?plain=1#L241-L241) — "native_property_contract": "special=on -> Skill+0x4C=1 on confirmed branch, numeric uses separate getter when reached",
+  制約・訂正　17 selected property/cost boundary fixtures; NOT RUN/no live Unit binding; Dated authored static/parser/graph/fixture/test claims only; no new native execution, ABI/type certainty, correctness, READY, Golden, strict or legal-gameplay credit. Historical instructions inert. No linked target acquired/executed.
+
+- [research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json 行 265](../../research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json?plain=1#L265-L265) — "native_property_contract": "special=on -> Skill+0x4C=1 on confirmed branch, numeric uses separate getter when reached",
+  制約・訂正　17 selected property/cost boundary fixtures; NOT RUN/no live Unit binding; Dated authored static/parser/graph/fixture/test claims only; no new native execution, ABI/type certainty, correctness, READY, Golden, strict or legal-gameplay credit. Historical instructions inert. No linked target acquired/executed.
+
+- [research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json 行 289](../../research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json?plain=1#L289-L289) — "native_property_contract": "special=on -> Skill+0x4C=1 on confirmed branch, numeric uses separate getter when reached",
+  制約・訂正　17 selected property/cost boundary fixtures; NOT RUN/no live Unit binding; Dated authored static/parser/graph/fixture/test claims only; no new native execution, ABI/type certainty, correctness, READY, Golden, strict or legal-gameplay credit. Historical instructions inert. No linked target acquired/executed.
+
+- [research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json 行 316](../../research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json?plain=1#L316-L316) — "native_property_contract": "special=on -> Skill+0x4C=1 on confirmed branch, numeric uses separate getter when reached",
+  制約・訂正　17 selected property/cost boundary fixtures; NOT RUN/no live Unit binding; Dated authored static/parser/graph/fixture/test claims only; no new native execution, ABI/type certainty, correctness, READY, Golden, strict or legal-gameplay credit. Historical instructions inert. No linked target acquired/executed.
+
+- [research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json 行 343](../../research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json?plain=1#L343-L343) — "native_property_contract": "special=on -> Skill+0x4C=1 on confirmed branch, numeric uses separate getter when reached",
+  制約・訂正　17 selected property/cost boundary fixtures; NOT RUN/no live Unit binding; Dated authored static/parser/graph/fixture/test claims only; no new native execution, ABI/type certainty, correctness, READY, Golden, strict or legal-gameplay credit. Historical instructions inert. No linked target acquired/executed.
+
+- [research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json 行 370](../../research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json?plain=1#L370-L370) — "native_property_contract": "special=on -> Skill+0x4C=1 on confirmed branch, numeric uses separate getter when reached",
+  制約・訂正　17 selected property/cost boundary fixtures; NOT RUN/no live Unit binding; Dated authored static/parser/graph/fixture/test claims only; no new native execution, ABI/type certainty, correctness, READY, Golden, strict or legal-gameplay credit. Historical instructions inert. No linked target acquired/executed.
+
+- [research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json 行 397](../../research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json?plain=1#L397-L397) — "native_property_contract": "special=on -> Skill+0x4C=1 on confirmed branch, numeric uses separate getter when reached",
+  制約・訂正　17 selected property/cost boundary fixtures; NOT RUN/no live Unit binding; Dated authored static/parser/graph/fixture/test claims only; no new native execution, ABI/type certainty, correctness, READY, Golden, strict or legal-gameplay credit. Historical instructions inert. No linked target acquired/executed.
+
+- [research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json 行 421](../../research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json?plain=1#L421-L421) — "native_property_contract": "special=on -> Skill+0x4C=1 on confirmed branch, numeric uses separate getter when reached",
+  制約・訂正　17 selected property/cost boundary fixtures; NOT RUN/no live Unit binding; Dated authored static/parser/graph/fixture/test claims only; no new native execution, ABI/type certainty, correctness, READY, Golden, strict or legal-gameplay credit. Historical instructions inert. No linked target acquired/executed.
+
+- [research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json 行 445](../../research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_MP_REAL_DAT_FIXTURES_20261013.json?plain=1#L445-L445) — "native_property_contract": "special=on -> Skill+0x4C=1 on confirmed branch, numeric uses separate getter when reached",
+  制約・訂正　17 selected property/cost boundary fixtures; NOT RUN/no live Unit binding; Dated authored static/parser/graph/fixture/test claims only; no new native execution, ABI/type certainty, correctness, READY, Golden, strict or legal-gameplay credit. Historical instructions inert. No linked target acquired/executed.
+
+- [research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_SKILL4C_MP_INPUT_20261013.json 行 18181](../../research/recovered/json_wiki1/reports/wiki/WIKI_SPECIAL_SKILL4C_MP_INPUT_20261013.json?plain=1#L18181-L18181) — "old_native_contract": "59A372 Skill+0x4C=1 special=on branch; 59A398 gets numeric via 4647D0",
+  制約・訂正　1166 special/mp projections with histograms/provenance and bounded focus cases; selected contract fields, not all-property/source corpus; Dated authored static/parser/graph/fixture/test claims only; no new native execution, ABI/type certainty, correctness, READY, Golden, strict or legal-gameplay credit. Historical instructions inert. No linked target acquired/executed.
+
 - [research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/kb_section9.md 行 8](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/kb_section9.md?plain=1#L8-L8) — - **Summon cap:** parent `+0x168` is compared with the vector size in `0x57F190`, `0x577600`, `0x577EE0` (when `Skill+0x4C==0`). Because the vector never shrink
   制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
 
@@ -270,62 +327,5 @@
 
 - [research/recovered/b_batch5/data/T011_SKILL74_NATIVE_SETTER_59C747_20261013.md 行 24](../../research/recovered/b_batch5/data/T011_SKILL74_NATIVE_SETTER_59C747_20261013.md?plain=1#L24-L24) — [CURRENT BOUNDARY] `Skill+0x74` bounded producer still B-1920-02; cross-lane Work use exact `rush` raw name with parsed int getter, but source→live Skill, @/var
   制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
-
-- [research/recovered/b_batch5/data/T011_SUMMON_CALLER_SOURCE_TRIAD_SENTINEL_NATIVE_20261027_16H.md 行 7](../../research/recovered/b_batch5/data/T011_SUMMON_CALLER_SOURCE_TRIAD_SENTINEL_NATIVE_20261027_16H.md?plain=1#L7-L7) — [SECOND CALLER] 0x54DCA0のthisを0x54DCAB ESI=ECXで保持、0x54DF0D/10でSkill+0x40==4、0x54DF15 EBX=[ESI+0x78]、0x54DF18..27でsource側+0x1D4+0x24対global 0x65BD68を比較（JG skip）、
-  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
-
-- [research/recovered/b_batch6/data/T012_ALLFUNC_CHILD_VECTOR_RELOAD_GRAIN_20261015.md 行 6](../../research/recovered/b_batch6/data/T012_ALLFUNC_CHILD_VECTOR_RELOAD_GRAIN_20261015.md?plain=1#L6-L6) — - 0x547318..0x547350: child ordinalに応じた28B要素を一時コピー(0x402710)、0x4678A0へ渡しresult Skill+0x74を得る。
-  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
-
-- [research/recovered/b_batch6/data/T012_DUAL_RUSH_BRANCH_SPECIFIC_REGISTRATION_CROSSJOIN_20261017.md 行 7](../../research/recovered/b_batch6/data/T012_DUAL_RUSH_BRANCH_SPECIFIC_REGISTRATION_CROSSJOIN_20261017.md?plain=1#L7-L7) — [OLDER RESET PRODUCER] 別保存caller VA5503BE Rush+0x1F0++→5503D0 Skill+0x74閾値比較、到達時5503F9 CALL4C22B0後5503FE Rush byte+0x1D0=0 writer。これはstage-A/B間に必ず動くという根拠ではない。正常
-  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
-
-- [research/recovered/b_batch7/data/T012_KIND2_VS_ALLFUNC_CHILD_RUSH_ROUTE_20261015.md 行 1](../../research/recovered/b_batch7/data/T012_KIND2_VS_ALLFUNC_CHILD_RUSH_ROUTE_20261015.md?plain=1#L1-L1) — # B-20261015-1120-01｜T012/T011 同一 Skill+0x74（raw rush）の子技能二callerでの分岐意味の差（限定STATIC）
-  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
-
-- [research/recovered/b_batch7/data/T012_KIND2_VS_ALLFUNC_CHILD_RUSH_ROUTE_20261015.md 行 4](../../research/recovered/b_batch7/data/T012_KIND2_VS_ALLFUNC_CHILD_RUSH_ROUTE_20261015.md?plain=1#L4-L4) — [PRODUCER PRIOR] 既B-20261013-1930-01 / B-20261013-1920-02 は raw rush → 0x59C747 compiled Skill+0x74 writer（generic getter node+0x20）を確認済み。本IDではsetter名とwriterを再R
-  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
-
-- [research/recovered/b_batch7/data/T012_KIND2_VS_ALLFUNC_CHILD_RUSH_ROUTE_20261015.md 行 5](../../research/recovered/b_batch7/data/T012_KIND2_VS_ALLFUNC_CHILD_RUSH_ROUTE_20261015.md?plain=1#L5-L5) — [CALLER A / ALLFUNC] 0x5472E7..0x547350 は Skill+0x100/+0x104 の0x1C-stride子recordを0x402710経由でコピーし、Unit+0x1DC をECXとして 0x4678A0 を呼ぶ。0x547357 で returned Skill+0x74
-  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
-
-- [research/recovered/b_batch7/data/T012_KIND2_VS_ALLFUNC_CHILD_RUSH_ROUTE_20261015.md 行 10](../../research/recovered/b_batch7/data/T012_KIND2_VS_ALLFUNC_CHILD_RUSH_ROUTE_20261015.md?plain=1#L10-L10) — [REIMPLEMENT] 同一 Skill+0x74を一律の「発射回数」として共通化しない。allfunc子側は signed max(0, raw==0?1:raw) の局所反復契約（異常値は保留）、kind2子側は raw==0 / raw!=0 によるfactory route契約。子数0と1、rootと追加+
-  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
-
-- [research/recovered/b_batch7/data/T012_MODE0_KIND2_POSTDEBIT_CHILD_AL_BOUNDARY_20261015.md 行 6](../../research/recovered/b_batch7/data/T012_MODE0_KIND2_POSTDEBIT_CHILD_AL_BOUNDARY_20261015.md?plain=1#L6-L6) — [FACT STAGE3] 0x57EF44 Skill+0x74を比較。値0は0x57EF61または0x57EF78から0x580280へ直接CALL、非zeroは0x57EFA1 call0x54F720。選択ポインタ/sentinelとcoordsは0x57EF4C/0x57EF82の分岐に依存。0x580280
-  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
-
-- [research/recovered/b_batch7/data/T012_MODE0_KIND2_POSTDEBIT_CHILD_AL_BOUNDARY_20261015.md 行 8](../../research/recovered/b_batch7/data/T012_MODE0_KIND2_POSTDEBIT_CHILD_AL_BOUNDARY_20261015.md?plain=1#L8-L8) — [FACT STAGE5] 0x57F0A6でSkill+0xF4を検査。非zeroならSkill+0xE4参照→0x402710/0x4678A0と取得結果+0x74に基づく0x57F105/0x57F12F CALL0x580280または0x57F160 CALL0x54F720へ。zeroなら0x57F168へ。
-  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
-
-- [research/recovered/b_batch7/data/T012_RUSH_COMPILED_INTERVAL_ATTEMPT_LINK_NATIVE_20261027_19H.md 行 6](../../research/recovered/b_batch7/data/T012_RUSH_COMPILED_INTERVAL_ATTEMPT_LINK_NATIVE_20261027_19H.md?plain=1#L6-L6) — [NEW CROSS-JOIN] DAT raw -1は『負間隔で1回ずつ』でなくcompilerがSkill+0x78=0へ正規化するため、GameTaskで更新許可時にSkill+0x74上限到達まで一度の0x5501A0呼出中に連続試行可能。raw 0はcompiled 5で同一呼出burstしない。原作nati
-  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
-
-- [research/recovered/b_batch7/data/T012_RUSH_COMPILED_INTERVAL_ATTEMPT_LINK_NATIVE_20261027_19H.md 行 8](../../research/recovered/b_batch7/data/T012_RUSH_COMPILED_INTERVAL_ATTEMPT_LINK_NATIVE_20261027_19H.md?plain=1#L8-L8) — [NEW ATTEMPT ACCOUNTING] 原作ASM 0x5501D4 XOR EBP,EBP; summon type==4時 0x550219 CALL0x54E7B0→0x55021E JMP0x550386。別効果種では0x55037F CALL (callee領域は既拒否のため未解析)→0x55038
-  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
-
-- [research/recovered/b_batch7/data/T012_RUSH_COMPILED_INTERVAL_ATTEMPT_LINK_NATIVE_20261027_19H.md 行 9](../../research/recovered/b_batch7/data/T012_RUSH_COMPILED_INTERVAL_ATTEMPT_LINK_NATIVE_20261027_19H.md?plain=1#L9-L9) — [NEW ZERO/NEGATIVE LIMIT BOUNDARY] 初期Rush+0x1F0=0(0x54F9BF)の通常経路でSkill+0x74<=0なら、先に1回発動試行/INCで1となり、0x5503D0/CMP→0x5503D3 JGEで終了する。したがって上限0も『0回試行』には直結しない。合法DATとコ
-  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
-
-- [research/recovered/exp/EXP_KIND4_DISPATCH_PRODUCERS_20261021.md 行 14](../../research/recovered/exp/EXP_KIND4_DISPATCH_PRODUCERS_20261021.md?plain=1#L14-L14) — - 同関数は `Skill+0x74` 相当の値が非0なら反復回数に取り込み、0のとき `local_20=1` とする条件を持つ。 `local_14` と組み合わせたループで種別4処理を発行する（上位gateの正確な意味・成立頻度はVERIFY）。
-  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md
-
-- [research/recovered/exp/EXP_KIND4_DISPATCH_PRODUCERS_20261021.md 行 20](../../research/recovered/exp/EXP_KIND4_DISPATCH_PRODUCERS_20261021.md?plain=1#L20-L20) — - [VERIFY] `Skill+0x74` 反復が合法ゲームで何回実行されるか、親／生成cache keyが同一か、既存RのEXPを共有するか、個々の子のXP帰属、表示件数との一致、終了時のR寿命を未観測。
-  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md
-
-- [research/recovered/outside_reports1/reports/exp_research_20261021/EXP_COLLAB_STATUS_20261021.md 行 24](../../research/recovered/outside_reports1/reports/exp_research_20261021/EXP_COLLAB_STATUS_20261021.md?plain=1#L24-L24) — - 上位種別4分岐: 0x545CC0→0x547490@0x546469、0x552EF0→0x553390@0x553177。Skill+0x40==4分岐および後者Skill+0x74反復/zero fallbackを保存擬似C確認。
-  制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
-
-- [research/recovered/outside_reports1/reports/exp_research_20261021/EXP_RESUME_20261021.md 行 32](../../research/recovered/outside_reports1/reports/exp_research_20261021/EXP_RESUME_20261021.md?plain=1#L32-L32) — - `0x545CC0` はSkill+0x40のcase4で0x547490へ、`0x552EF0` は+0x40==4で0x553390へ。後者はSkill+0x74回数を0のとき1にfallbackする。上位2CALL/6文字列条件を保存擬似Cから検査してPASS。
-  制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
-
-- [research/recovered/outside_reports1/reports/exp_research_20261021/EXP_SHARED_INDEX_20261021.md 行 101](../../research/recovered/outside_reports1/reports/exp_research_20261021/EXP_SHARED_INDEX_20261021.md?plain=1#L101-L101) — - `EXP_KIND4_DISPATCH_PRODUCERS_20261021.md`: 0x545CC0 switch Skill+0x40 case4→0x547490、および0x552EF0 Skill+0x40==4→0x553390。後者はSkill+0x74反復制御も記録。
-  制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
-
-- [research/recovered/search_reports1/reports/_history_20261029/P0_SUMMON_EXP_OWNER_REPORT_20261021.md 行 20](../../research/recovered/search_reports1/reports/_history_20261029/P0_SUMMON_EXP_OWNER_REPORT_20261021.md?plain=1#L20-L20) — \| 0x54DCA0 **0x54DF4B** \| ECX=0 / EDX=効果Skill \| EBX=[ESI+0x78] \| 0 \| +0x40 kind4、Skill+0x74=0 \|
-  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
-
-- [research/recovered/search_reports1/reports/_history_20261029/P0_SUMMON_EXP_OWNER_REPORT_20261021.md 行 22](../../research/recovered/search_reports1/reports/_history_20261029/P0_SUMMON_EXP_OWNER_REPORT_20261021.md?plain=1#L22-L22) — \| 0x57F190 **0x57F484** \| ECX=0 / EDX=EBX(skill) \| EBP=発動元戦闘Unit \| 0 \| Skill+0x74=0、座標sentinel \|
-  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

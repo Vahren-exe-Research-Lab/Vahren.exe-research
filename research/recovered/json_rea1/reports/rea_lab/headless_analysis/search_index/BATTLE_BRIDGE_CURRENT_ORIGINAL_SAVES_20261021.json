@@ -1,0 +1,57 @@
+{
+  "id": "BRIDGE-20261021-ORIGINAL-SAVE-READONLY-01",
+  "scope": "Current game-folder local saves, not old 2026-10-11 captured fixtures",
+  "original_exe_gameplay_executed": false,
+  "captured_battle_prestate_eligible": false,
+  "old_game_files_written": false,
+  "records": {
+    "auto.sav": {
+      "sha256": "C09C098CDDED45CE71D5F032E4FCB1DD4177878F21A7AEF86BF68196F4B6B29F",
+      "encoded_bytes": 5953848,
+      "modified_utc": "2026-10-21T12:18:00.767970+00:00",
+      "original_game_file_modified": false,
+      "decode_status": "ORIGINAL_NATIVE_SAVE_FRONTMATTER_DECODED",
+      "scenario": "sci1",
+      "power": "po2",
+      "leading_u32_unlabeled": 0,
+      "numeric_records": 3137,
+      "duplicate_numeric_keys": 5,
+      "reencrypt_identical": true,
+      "decoded_sha256": "4829f2214e112ae62d3864a7aedf5468f531066d74d57403a4f4eab4fa074be0",
+      "remaining_payload_bytes": 5894255,
+      "labeled_turn_candidates": []
+    },
+    "save1.sav": {
+      "sha256": "E80B34749CF502048C99213ED8DD920F5B46C6D488A9F3313582C5643FA183AF",
+      "encoded_bytes": 5421875,
+      "modified_utc": "2026-10-19T13:13:28.179017+00:00",
+      "original_game_file_modified": false,
+      "decode_status": "ORIGINAL_NATIVE_SAVE_FRONTMATTER_DECODED",
+      "scenario": "sci1",
+      "power": "po2",
+      "leading_u32_unlabeled": 0,
+      "numeric_records": 3137,
+      "duplicate_numeric_keys": 5,
+      "reencrypt_identical": true,
+      "decoded_sha256": "f1a911ff68fc2ac0e92f3db40422fd0cbbaaa25eb4e627d3823ea32a14ab80d5",
+      "remaining_payload_bytes": 5362282,
+      "labeled_turn_candidates": []
+    },
+    "save2.sav": {
+      "sha256": "45CCEF306B56BF66810726436365207CA18B63D7CC0E432E784034D196FA5635",
+      "encoded_bytes": 5558753,
+      "modified_utc": "2026-10-10T21:52:19.747500+00:00",
+      "original_game_file_modified": false,
+      "decode_status": "ORIGINAL_NATIVE_SAVE_FRONTMATTER_DECODED",
+      "scenario": "sci1",
+      "power": "po2",
+      "leading_u32_unlabeled": 1,
+      "numeric_records": 2591,
+      "duplicate_numeric_keys": 4,
+      "reencrypt_identical": true,
+      "decoded_sha256": "7c5127e85b3e7d622a7e0eb731ed8f0eeb56d131f6eeaf529e1b16a452bc052f",
+      "remaining_payload_bytes": 5511444,
+      "labeled_turn_candidates": []
+    }
+  }
+}

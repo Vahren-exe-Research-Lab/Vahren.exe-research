@@ -1,0 +1,33 @@
+{
+  "status": "STATIC+SYNTHETIC / ORIGINAL_GAME_NOT_RUN",
+  "source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "checks": {
+    "source_consistency": true,
+    "three_scene_branches_verified": true,
+    "troop_ctor_has_troop_type": true,
+    "unit_create_both_paths": true,
+    "attach_unit_both_paths": true,
+    "troop_create_both_paths": true,
+    "formation_both_paths": true,
+    "placement_delegate": true,
+    "placement_per_unit": true,
+    "outcome_side_unit_vector": true,
+    "experience_after_finish": true,
+    "mode2_start_side_vf0c": true,
+    "mode2_end_side_vf14": true
+  },
+  "static_checks_pass": 13,
+  "static_checks_total": 13,
+  "synthetic_tests_run": 20,
+  "synthetic_failures": 0,
+  "synthetic_errors": 0,
+  "synthetic_success": true,
+  "test_module_names": [
+    "test_battle_war_tree_decoder_20261021",
+    "test_battle_bridge_detached_v2_20261021",
+    "test_battle_bridge_detached_v3_20261021"
+  ],
+  "test_output": "....................\n----------------------------------------------------------------------\nRan 20 tests in 0.004s\n\nOK\n",
+  "no_dynamic_original_samples": true,
+  "notes": "Not proof of Battle EXE handoff; checks only node layout assumptions, ABI disassembly, and synthetic reader."
+}

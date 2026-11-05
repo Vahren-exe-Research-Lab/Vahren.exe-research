@@ -1,0 +1,125 @@
+{
+  "source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "status": "STATIC ORIGINAL PE / EDI WRITER SITES / NOT PATH SENSITIVE",
+  "script_finish_call": "0x004A1764",
+  "edi_writers_before_call": [
+    {
+      "va": "0x004A12BC",
+      "asm": "lea edi, [eax + 4]",
+      "bytes": "8d7804"
+    },
+    {
+      "va": "0x004A1302",
+      "asm": "xor edi, edi",
+      "bytes": "33ff"
+    },
+    {
+      "va": "0x004A1346",
+      "asm": "mov edi, 1",
+      "bytes": "bf01000000"
+    },
+    {
+      "va": "0x004A13E6",
+      "asm": "inc edi",
+      "bytes": "47"
+    },
+    {
+      "va": "0x004A1496",
+      "asm": "mov edi, 0xfffffffc",
+      "bytes": "bffcffffff"
+    },
+    {
+      "va": "0x004A154B",
+      "asm": "mov edi, 0xfffffffc",
+      "bytes": "bffcffffff"
+    },
+    {
+      "va": "0x004A1670",
+      "asm": "mov edi, 0xfffffffc",
+      "bytes": "bffcffffff"
+    },
+    {
+      "va": "0x004A167E",
+      "asm": "mov edi, edi",
+      "bytes": "8bff"
+    }
+  ],
+  "local_callsite_instructions": [
+    {
+      "va": "0x004A1731",
+      "asm": "push 0x6419dc",
+      "bytes": "68dc196400"
+    },
+    {
+      "va": "0x004A1736",
+      "asm": "lea ecx, [ebp - 0xf2a]",
+      "bytes": "8d8dd6f0ffff"
+    },
+    {
+      "va": "0x004A173C",
+      "asm": "xor al, al",
+      "bytes": "32c0"
+    },
+    {
+      "va": "0x004A173E",
+      "asm": "push ecx",
+      "bytes": "51"
+    },
+    {
+      "va": "0x004A173F",
+      "asm": "mov byte ptr [ebp - 0xf2a], al",
+      "bytes": "8885d6f0ffff"
+    },
+    {
+      "va": "0x004A1745",
+      "asm": "call 0x5b864e",
+      "bytes": "e8046f1100"
+    },
+    {
+      "va": "0x004A174A",
+      "asm": "mov ecx, dword ptr [esi + 0x1e8630]",
+      "bytes": "8b8e30861e00"
+    },
+    {
+      "va": "0x004A1750",
+      "asm": "push edi",
+      "bytes": "57"
+    },
+    {
+      "va": "0x004A1751",
+      "asm": "call 0x52bff0",
+      "bytes": "e89aa80800"
+    },
+    {
+      "va": "0x004A1756",
+      "asm": "mov ecx, dword ptr [esi + 0x1eed1c]",
+      "bytes": "8b8e1ced1e00"
+    },
+    {
+      "va": "0x004A175C",
+      "asm": "push edi",
+      "bytes": "57"
+    },
+    {
+      "va": "0x004A175D",
+      "asm": "lea edx, [esi + 0x1eed20]",
+      "bytes": "8d9620ed1e00"
+    },
+    {
+      "va": "0x004A1763",
+      "asm": "push esi",
+      "bytes": "56"
+    },
+    {
+      "va": "0x004A1764",
+      "asm": "call 0x493630",
+      "bytes": "e8c71effff"
+    },
+    {
+      "va": "0x004A1769",
+      "asm": "mov al, 1",
+      "bytes": "b001"
+    }
+  ],
+  "caution": "EDI's actual runtime value at this script branch needs CFG-def-use and original-game test. Direct PUSH EDI is not proof it equals zero."
+}

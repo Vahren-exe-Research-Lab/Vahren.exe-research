@@ -19,4 +19,184 @@
 - [research/recovered/json_sources1/reports/data/B_T012_T013_PERSON_POOL_LIFECYCLE_EVIDENCE_20261023_1215.json 行 244](../../research/recovered/json_sources1/reports/data/B_T012_T013_PERSON_POOL_LIFECYCLE_EVIDENCE_20261023_1215.json?plain=1#L244-L244) — "marker": "unaff_EDI + 0x10",
   制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
 
+<a id="field-158"></a>
+## unaff_EDI + 0x158
+
+- [research/recovered/json_exp_exe1/reports/26_EXP_WRITER_CENSUS_20261022.json 行 259](../../research/recovered/json_exp_exe1/reports/26_EXP_WRITER_CENSUS_20261022.json?plain=1#L259-L259) — "FUN_00415770(param_1 + 0x158,unaff_EDI + 0x158);",
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+<a id="field-164"></a>
+## unaff_EDI + 0x164
+
+- [research/recovered/json_exp_exe1/reports/26_EXP_WRITER_CENSUS_20261022.json 行 466](../../research/recovered/json_exp_exe1/reports/26_EXP_WRITER_CENSUS_20261022.json?plain=1#L466-L466) — "*(undefined4 *)(unaff_ESI + 0x164) = *(undefined4 *)(unaff_EDI + 0x164);",
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+<a id="field-168"></a>
+## unaff_EDI + 0x168
+
+- [research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json 行 2178](../../research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json?plain=1#L2178-L2178) — "text": "iStack_c4 = *(int *)(unaff_EDI + 0x168);"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+- [research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json 行 2952](../../research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json?plain=1#L2952-L2952) — "text": "*(undefined4 *)(param_1 + 0x168) = *(undefined4 *)(unaff_EDI + 0x168);"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+- [research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json 行 3608](../../research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json?plain=1#L3608-L3608) — "text": "*(undefined4 *)(unaff_ESI + 0x168) = *(undefined4 *)(unaff_EDI + 0x168);"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+- [research/recovered/json_exp_exe1/reports/26_EXP_WRITER_CENSUS_20261022.json 行 260](../../research/recovered/json_exp_exe1/reports/26_EXP_WRITER_CENSUS_20261022.json?plain=1#L260-L260) — "*(undefined4 *)(param_1 + 0x168) = *(undefined4 *)(unaff_EDI + 0x168);"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+- [research/recovered/json_exp_exe1/reports/26_EXP_WRITER_CENSUS_20261022.json 行 467](../../research/recovered/json_exp_exe1/reports/26_EXP_WRITER_CENSUS_20261022.json?plain=1#L467-L467) — "*(undefined4 *)(unaff_ESI + 0x168) = *(undefined4 *)(unaff_EDI + 0x168);"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+<a id="field-16c"></a>
+## unaff_EDI + 0x16C
+
+- [research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json 行 2182](../../research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json?plain=1#L2182-L2182) — "text": "iStack_d4 = *(int *)(unaff_EDI + 0x16c);"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+- [research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json 行 2956](../../research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json?plain=1#L2956-L2956) — "text": "*(undefined4 *)(param_1 + 0x16c) = *(undefined4 *)(unaff_EDI + 0x16c);"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+- [research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json 行 3612](../../research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json?plain=1#L3612-L3612) — "text": "*(undefined4 *)(unaff_ESI + 0x16c) = *(undefined4 *)(unaff_EDI + 0x16c);"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+- [research/recovered/json_exp_exe1/reports/26_EXP_WRITER_CENSUS_20261022.json 行 256](../../research/recovered/json_exp_exe1/reports/26_EXP_WRITER_CENSUS_20261022.json?plain=1#L256-L256) — "line": "*(undefined4 *)(param_1 + 0x16c) = *(undefined4 *)(unaff_EDI + 0x16c);",
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+- [research/recovered/json_exp_exe1/reports/26_EXP_WRITER_CENSUS_20261022.json 行 463](../../research/recovered/json_exp_exe1/reports/26_EXP_WRITER_CENSUS_20261022.json?plain=1#L463-L463) — "line": "*(undefined4 *)(unaff_ESI + 0x16c) = *(undefined4 *)(unaff_EDI + 0x16c);",
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+- [research/recovered/json_exp_exe1/reports/26_EXP_WRITER_CENSUS_20261022.json 行 792](../../research/recovered/json_exp_exe1/reports/26_EXP_WRITER_CENSUS_20261022.json?plain=1#L792-L792) — "line": "iStack_d4 = *(int *)(unaff_EDI + 0x16c);",
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+<a id="field-170"></a>
+## unaff_EDI + 0x170
+
+- [research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json 行 2186](../../research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json?plain=1#L2186-L2186) — "text": "iStack_e4 = *(int *)(unaff_EDI + 0x170);"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+- [research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json 行 2960](../../research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json?plain=1#L2960-L2960) — "text": "*(undefined4 *)(param_1 + 0x170) = *(undefined4 *)(unaff_EDI + 0x170);"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+- [research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json 行 3616](../../research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json?plain=1#L3616-L3616) — "text": "*(undefined8 *)(unaff_ESI + 0x170) = *(undefined8 *)(unaff_EDI + 0x170);"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+<a id="field-1c8"></a>
+## unaff_EDI + 0x1C8
+
+- [research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json 行 2964](../../research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json?plain=1#L2964-L2964) — "text": "*(undefined4 *)(param_1 + 0x1c8) = *(undefined4 *)(unaff_EDI + 0x1c8);"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+<a id="field-1d4"></a>
+## unaff_EDI + 0x1D4
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 1085](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L1085-L1085) — "after": "(*(char *)(*(int *)(unaff_EDI + 0x1d4) + 0x18) == '\\0')) {"
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json 行 1429](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json?plain=1#L1429-L1429) — "context_after": "(*(char *)(*(int *)(unaff_EDI + 0x1d4) + 0x18) == '\\0')) {"
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+<a id="field-1e0"></a>
+## unaff_EDI + 0x1E0
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 1083](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L1083-L1083) — "source": "if ((*(char *)(*(int *)(unaff_EDI + 0x1e0) + 0x1eed40) != '\\0') &&",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json 行 1427](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json?plain=1#L1427-L1427) — "code": "if ((*(char *)(*(int *)(unaff_EDI + 0x1e0) + 0x1eed40) != '\\0') &&",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+<a id="field-1e8630"></a>
+## unaff_EDI + 0x1E8630
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 1550](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L1550-L1550) — "source": "*(undefined4 *)(unaff_EDI + 0x1e8630) = uVar4;",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+<a id="field-1e8634"></a>
+## unaff_EDI + 0x1E8634
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 1885](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L1885-L1885) — "source": "*(undefined4 *)(unaff_EDI + 0x1e8634) = uVar4;",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+<a id="field-1e8638"></a>
+## unaff_EDI + 0x1E8638
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 2051](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L2051-L2051) — "source": "*(undefined4 *)(unaff_EDI + 0x1e8638) = uVar4;",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+<a id="field-1eec3c"></a>
+## unaff_EDI + 0x1EEC3C
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 2226](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L2226-L2226) — "source": "*(undefined4 *)(unaff_EDI + 0x1eec3c) = 0;",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 2235](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L2235-L2235) — "source": "*(undefined4 *)(unaff_EDI + 0x1eec3c) = 7;",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+<a id="field-1eec40"></a>
+## unaff_EDI + 0x1EEC40
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 2227](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L2227-L2227) — "before": "*(undefined4 *)(unaff_EDI + 0x1eec40) = 0;",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 2236](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L2236-L2236) — "before": "*(undefined4 *)(unaff_EDI + 0x1eec40) = 7;",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+<a id="field-1eed60"></a>
+## unaff_EDI + 0x1EED60
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 3457](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L3457-L3457) — "after": "*(int *)(unaff_EDI + 0x1eed60) = *(int *)(unaff_EDI + 0x1eed60) + 1;"
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 3465](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L3465-L3465) — "before": "*(int *)(unaff_EDI + 0x1eed60) = *(int *)(unaff_EDI + 0x1eed60) + 1;",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 3529](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L3529-L3529) — "source": "*(int *)(unaff_EDI + 0x1eed60) = *(int *)(unaff_EDI + 0x1eed60) + 1;",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+<a id="field-1eed64"></a>
+## unaff_EDI + 0x1EED64
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 3455](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L3455-L3455) — "source": "*(int *)(unaff_EDI + 0x1eed64) = *(int *)(unaff_EDI + 0x1eed64) + 1;",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 3464](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L3464-L3464) — "source": "if (*(int *)(unaff_EDI + 0x1eed64) % 10 == 0) {",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 3530](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L3530-L3530) — "before": "*(int *)(unaff_EDI + 0x1eed64) = *(int *)(unaff_EDI + 0x1eed64) + 1;",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 3531](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L3531-L3531) — "after": "if (*(int *)(unaff_EDI + 0x1eed64) % 10 == 0) {"
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+<a id="field-1eed68"></a>
+## unaff_EDI + 0x1EED68
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 3576](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L3576-L3576) — "source": "if ((cVar1 == '\\0') \|\| (0 < *(int *)(unaff_EDI + 0x1eed68))) {",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+<a id="field-1eedbc"></a>
+## unaff_EDI + 0x1EEDBC
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 3298](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L3298-L3298) — "source": "if (*(int *)(unaff_EDI + 0x1eedbc) != 0) {",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+<a id="field-1eedc4"></a>
+## unaff_EDI + 0x1EEDC4
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 2878](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L2878-L2878) — "source": "if (*(int *)(unaff_EDI + 0x1eedc4) == *(int *)(unaff_EDI + 0x1eedc8)) {",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 2887](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L2887-L2887) — "source": "if (*(int *)(unaff_EDI + 0x1eedc4) != *(int *)(unaff_EDI + 0x1eedc8)) goto LAB_0049b59b;",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+<a id="field-1eedc8"></a>
+## unaff_EDI + 0x1EEDC8
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 2878](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L2878-L2878) — "source": "if (*(int *)(unaff_EDI + 0x1eedc4) == *(int *)(unaff_EDI + 0x1eedc8)) {",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 2887](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L2887-L2887) — "source": "if (*(int *)(unaff_EDI + 0x1eedc4) != *(int *)(unaff_EDI + 0x1eedc8)) goto LAB_0049b59b;",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

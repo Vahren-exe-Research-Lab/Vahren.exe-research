@@ -1,0 +1,80 @@
+{
+  "id": "EXP-COLLAB-20261021-SAVEBOUNDARY-01",
+  "status": "STATIC_NATIVE_DB / VERIFY / GAMEPLAY_NOT_RUN",
+  "source_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "db_sha256": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF",
+  "native_sites": [
+    {
+      "site": "0x004602AC",
+      "actual": "mov eax, dword ptr [ecx + 0x300]",
+      "expected": "mov *[ecx + 0x300]",
+      "pass": true
+    },
+    {
+      "site": "0x004602B2",
+      "actual": "mov ebp, dword ptr [eax]",
+      "expected": "mov *[eax]",
+      "pass": true
+    },
+    {
+      "site": "0x004602C5",
+      "actual": "lea eax, [ebp + 0xc]",
+      "expected": "lea *[ebp + 0xc]",
+      "pass": true
+    },
+    {
+      "site": "0x004602F6",
+      "actual": "mov edi, dword ptr [ebp + 0x28]",
+      "expected": "mov *edi, dword ptr [ebp + 0x28]",
+      "pass": true
+    },
+    {
+      "site": "0x0046030B",
+      "actual": "call 0x58efd0",
+      "expected": "call *0x58efd0",
+      "pass": true
+    },
+    {
+      "site": "0x00460332",
+      "actual": "cmp byte ptr [ebp + 0x2d], 0",
+      "expected": "cmp *[ebp + 0x2d]",
+      "pass": true
+    },
+    {
+      "site": "0x0057728A",
+      "actual": "lea eax, [esi + 0x1e4b4]",
+      "expected": "lea *[esi + 0x1e4b4]",
+      "pass": true
+    },
+    {
+      "site": "0x005772B2",
+      "actual": "lea esi, [eax + 0x28]",
+      "expected": "lea *esi, [eax + 0x28]",
+      "pass": true
+    },
+    {
+      "site": "0x0057A70F",
+      "actual": "push 0x200",
+      "expected": "push *0x200",
+      "pass": true
+    },
+    {
+      "site": "0x0057A73E",
+      "actual": "mov word ptr [ebx + 0x1fc], ax",
+      "expected": "mov *[ebx + 0x1fc]",
+      "pass": true
+    }
+  ],
+  "direct_writer_callers": [
+    {
+      "caller_va": "0x00460000",
+      "site_va": "0x0046030B"
+    }
+  ],
+  "bounded_conclusion": "0x460000 owner+0x300 tree stores UnitData POINTER at node+0x28; summoned 0x1E4B4 cache returns ADDRESS of embedded node+0x28. These are different storage mechanisms.",
+  "limitations": [
+    "No proof all save paths use this writer",
+    "No proof summon EXP cannot be transferred before save",
+    "No runtime execution, indirect call coverage incomplete"
+  ]
+}

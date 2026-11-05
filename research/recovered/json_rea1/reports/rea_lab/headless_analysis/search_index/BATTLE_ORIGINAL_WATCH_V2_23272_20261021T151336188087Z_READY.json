@@ -1,0 +1,30 @@
+{
+  "id": "BRIDGE-G0G1-LIVE-READONLY-WATCH-20261021",
+  "status": "ARMED_ALREADY_RUNNING_ORIGINAL_ONLY",
+  "pid": 23272,
+  "source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "source_exe_basename": "Vahren.exe",
+  "actual_load_base": "0x00050000",
+  "user_intent": "岡山県南からアゼルバイジャンへ（Spot IDは実機未確定）",
+  "original_game_memory_writes": 0,
+  "original_game_process_launches": 0,
+  "original_game_debugger_breakpoints": 0,
+  "time_limit_seconds": 900,
+  "interval_seconds": 0.1,
+  "trace_file": "BATTLE_ORIGINAL_WATCH_V2_23272_20261021T151336188087Z.jsonl",
+  "initial": {
+    "mode": 1,
+    "active": 0,
+    "attack_count": 1,
+    "battlefield_ptr": "0x1C995170",
+    "world_mode": 0,
+    "scene_type": 1,
+    "frame_counter": 67655,
+    "pause": 0,
+    "task_active_start_ptr": "0x3F385010",
+    "task_active_end_ptr": "0x3F3854C8"
+  },
+  "native_gameplay_G0_confirmed": false,
+  "native_gameplay_G1_complete": false,
+  "not_automatic_work_transfer": true
+}

@@ -1,0 +1,169 @@
+{
+  "status": "SYNTHETIC WORK STAGE ONLY, NOT ORIGINAL EXE OR FULL NEW GAME",
+  "tests": [
+    {
+      "case": "HEAL-NO-TARGET",
+      "tag": "m_heal",
+      "source": "Work native_support_action_subset",
+      "input_mp": 80,
+      "cost": 80,
+      "status": "NO_TARGET",
+      "returned_al": 0,
+      "mp_after": 80,
+      "calls": [],
+      "rng_draws": 0,
+      "action_complete": false,
+      "expected": "NO_TARGET",
+      "pass": true
+    },
+    {
+      "case": "HEAL-MP-LOW",
+      "tag": "m_heal",
+      "source": "Work native_support_action_subset",
+      "input_mp": 79,
+      "cost": 80,
+      "status": "LATE_MP_GATE",
+      "returned_al": 0,
+      "mp_after": 79,
+      "calls": [],
+      "rng_draws": 0,
+      "action_complete": false,
+      "expected": "LATE_MP_GATE",
+      "pass": true
+    },
+    {
+      "case": "HEAL-MP-AT",
+      "tag": "m_heal",
+      "source": "Work native_support_action_subset",
+      "input_mp": 80,
+      "cost": 80,
+      "status": "CORE_RETURNED_POST_ACTION_VERIFY",
+      "returned_al": null,
+      "mp_after": 0,
+      "calls": [
+        12288
+      ],
+      "rng_draws": 0,
+      "action_complete": false,
+      "expected": "CORE_RETURNED_POST_ACTION_VERIFY",
+      "pass": true
+    },
+    {
+      "case": "MOVE-SELF",
+      "tag": "seiretsu",
+      "source": "Work native_support_action_subset",
+      "input_mp": 0,
+      "cost": 0,
+      "status": "CORE_RETURNED_POST_ACTION_VERIFY",
+      "returned_al": null,
+      "mp_after": 0,
+      "calls": [
+        4096
+      ],
+      "rng_draws": 0,
+      "action_complete": false,
+      "expected": "CORE_RETURNED_POST_ACTION_VERIFY",
+      "pass": true
+    },
+    {
+      "case": "NEGATIVE-MP",
+      "tag": "b_all",
+      "source": "Work native_support_action_subset",
+      "input_mp": 0,
+      "cost": -1,
+      "status": "BLOCKED:negative cost reachability VERIFY",
+      "returned_al": null,
+      "mp_after": 0,
+      "calls": [],
+      "rng_draws": 0,
+      "action_complete": false,
+      "expected": "BLOCKED:negative cost reachability VERIFY",
+      "pass": true
+    }
+  ],
+  "callback_registry": {
+    "m_heal": {
+      "attr": "hp",
+      "a18_va": 5869552,
+      "a1c_va": 5870384
+    },
+    "seiretsu": {
+      "attr": "move",
+      "a18_va": 5870160,
+      "a1c_va": 5870656
+    },
+    "b_all": {
+      "attr": "all",
+      "a18_va": 5870352,
+      "a1c_va": 5870976
+    }
+  },
+  "work_adapter_results": {
+    "m_heal": {
+      "supported": true,
+      "type": "DatHealSkill",
+      "cost": 80,
+      "range_upper": 500,
+      "chance": 100
+    },
+    "seiretsu": {
+      "supported": true,
+      "type": "DatHealSkill",
+      "cost": 0,
+      "range_upper": 0,
+      "chance": 100
+    },
+    "cook_heal": {
+      "supported": true,
+      "type": "DatHealSkill",
+      "cost": 0,
+      "range_upper": 500,
+      "chance": 100
+    },
+    "s_monaka": {
+      "supported": false,
+      "type": null,
+      "cost": null,
+      "range_upper": null,
+      "chance": null
+    },
+    "b_iwana": {
+      "supported": true,
+      "type": "DatDamageSkill",
+      "cost": 60,
+      "range_upper": 450,
+      "chance": 100
+    },
+    "spinfiremax": {
+      "supported": true,
+      "type": "DatDamageSkill",
+      "cost": 80,
+      "range_upper": 600,
+      "chance": 100
+    },
+    "musen_move": {
+      "supported": true,
+      "type": "DatHealSkill",
+      "cost": 0,
+      "range_upper": 9999,
+      "chance": 100
+    },
+    "b_all": {
+      "supported": true,
+      "type": "DatHealSkill",
+      "cost": -1,
+      "range_upper": 400,
+      "chance": 100
+    }
+  },
+  "gap_register": [
+    "missing summon DatEffectSkill adapter",
+    "negative cost blocked despite valid DAT",
+    "normal core return does not finish post-action",
+    "cooldown group requires independent binding",
+    "skill-chain and live Unit loadout not tested",
+    "FP and native RNG completion not verified"
+  ],
+  "old_gameplay_golden": 0,
+  "new_strict_match": 0
+}

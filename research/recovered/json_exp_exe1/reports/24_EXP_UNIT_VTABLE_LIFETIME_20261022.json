@@ -1,0 +1,262 @@
+{
+  "id": "EXP-TYPE-LIFETIME-20261022-01",
+  "status": "STATIC_PE / VTABLE_CANDIDATE / GAMEPLAY_NOT_RUN",
+  "exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "tables": [
+    {
+      "table_va": "0x0063A9E4",
+      "entries": [
+        {
+          "slot": "+0x00",
+          "value_va": "0x00570C90",
+          "indexed_func": "FUN_00570c90"
+        },
+        {
+          "slot": "+0x04",
+          "value_va": "0x0057AA00",
+          "indexed_func": "FUN_0057aa00"
+        },
+        {
+          "slot": "+0x08",
+          "value_va": "0x00431910",
+          "indexed_func": "FUN_00431910"
+        },
+        {
+          "slot": "+0x0C",
+          "value_va": "0x0043B5A0",
+          "indexed_func": "FUN_0043b5a0"
+        },
+        {
+          "slot": "+0x10",
+          "value_va": "0x0043B5A0",
+          "indexed_func": "FUN_0043b5a0"
+        },
+        {
+          "slot": "+0x14",
+          "value_va": "0x00431910",
+          "indexed_func": "FUN_00431910"
+        },
+        {
+          "slot": "+0x18",
+          "value_va": "0x00418440",
+          "indexed_func": "FUN_00418440"
+        },
+        {
+          "slot": "+0x1C",
+          "value_va": "0x00575FA0",
+          "indexed_func": "FUN_00575fa0"
+        },
+        {
+          "slot": "+0x20",
+          "value_va": "0x00418430",
+          "indexed_func": "FUN_00418430"
+        },
+        {
+          "slot": "+0x24",
+          "value_va": "0x00543DD0",
+          "indexed_func": "FUN_00543dd0"
+        },
+        {
+          "slot": "+0x28",
+          "value_va": "0x00418490",
+          "indexed_func": "FUN_00418490"
+        },
+        {
+          "slot": "+0x2C",
+          "value_va": "0x0043B5A0",
+          "indexed_func": "FUN_0043b5a0"
+        },
+        {
+          "slot": "+0x30",
+          "value_va": "0x0051CB40",
+          "indexed_func": "FUN_0051cb40"
+        },
+        {
+          "slot": "+0x34",
+          "value_va": "0x00575DF0",
+          "indexed_func": "FUN_00575df0"
+        },
+        {
+          "slot": "+0x38",
+          "value_va": "0x0055AA00",
+          "indexed_func": "FUN_0055aa00"
+        },
+        {
+          "slot": "+0x3C",
+          "value_va": "0x00402CD0",
+          "indexed_func": "FUN_00402cd0"
+        }
+      ]
+    },
+    {
+      "table_va": "0x0063AB10",
+      "entries": [
+        {
+          "slot": "+0x00",
+          "value_va": "0x0043B5A0",
+          "indexed_func": "FUN_0043b5a0"
+        },
+        {
+          "slot": "+0x04",
+          "value_va": "0x00402D60",
+          "indexed_func": "FUN_00402d60"
+        },
+        {
+          "slot": "+0x08",
+          "value_va": "0x0063FE3C",
+          "indexed_func": null
+        },
+        {
+          "slot": "+0x0C",
+          "value_va": "0x0051E550",
+          "indexed_func": "FUN_0051e550"
+        },
+        {
+          "slot": "+0x10",
+          "value_va": "0x004E04F0",
+          "indexed_func": "FUN_004e04f0"
+        },
+        {
+          "slot": "+0x14",
+          "value_va": "0x00431910",
+          "indexed_func": "FUN_00431910"
+        },
+        {
+          "slot": "+0x18",
+          "value_va": "0x0043B5A0",
+          "indexed_func": "FUN_0043b5a0"
+        },
+        {
+          "slot": "+0x1C",
+          "value_va": "0x0043B5A0",
+          "indexed_func": "FUN_0043b5a0"
+        },
+        {
+          "slot": "+0x20",
+          "value_va": "0x00431910",
+          "indexed_func": "FUN_00431910"
+        },
+        {
+          "slot": "+0x24",
+          "value_va": "0x00418440",
+          "indexed_func": "FUN_00418440"
+        },
+        {
+          "slot": "+0x28",
+          "value_va": "0x00418740",
+          "indexed_func": "FUN_00418740"
+        },
+        {
+          "slot": "+0x2C",
+          "value_va": "0x00418430",
+          "indexed_func": "FUN_00418430"
+        },
+        {
+          "slot": "+0x30",
+          "value_va": "0x0056F800",
+          "indexed_func": "FUN_0056f800"
+        },
+        {
+          "slot": "+0x34",
+          "value_va": "0x00418490",
+          "indexed_func": "FUN_00418490"
+        },
+        {
+          "slot": "+0x38",
+          "value_va": "0x0043B5A0",
+          "indexed_func": "FUN_0043b5a0"
+        },
+        {
+          "slot": "+0x3C",
+          "value_va": "0x0051CB40",
+          "indexed_func": "FUN_0051cb40"
+        }
+      ]
+    },
+    {
+      "table_va": "0x0063AD88",
+      "entries": [
+        {
+          "slot": "+0x00",
+          "value_va": "0x0000002D",
+          "indexed_func": null
+        },
+        {
+          "slot": "+0x04",
+          "value_va": "0x0000002D",
+          "indexed_func": null
+        },
+        {
+          "slot": "+0x08",
+          "value_va": "0xFFFFFFD3",
+          "indexed_func": null
+        },
+        {
+          "slot": "+0x0C",
+          "value_va": "0x0000002D",
+          "indexed_func": null
+        },
+        {
+          "slot": "+0x10",
+          "value_va": "0x0000002D",
+          "indexed_func": null
+        },
+        {
+          "slot": "+0x14",
+          "value_va": "0x0000002D",
+          "indexed_func": null
+        },
+        {
+          "slot": "+0x18",
+          "value_va": "0x0000002D",
+          "indexed_func": null
+        },
+        {
+          "slot": "+0x1C",
+          "value_va": "0xFFFFFFD3",
+          "indexed_func": null
+        },
+        {
+          "slot": "+0x20",
+          "value_va": "0xFFFFFFD3",
+          "indexed_func": null
+        },
+        {
+          "slot": "+0x24",
+          "value_va": "0xFFFFFFD3",
+          "indexed_func": null
+        },
+        {
+          "slot": "+0x28",
+          "value_va": "0xFFFFFFFA",
+          "indexed_func": null
+        },
+        {
+          "slot": "+0x2C",
+          "value_va": "0x00000006",
+          "indexed_func": null
+        },
+        {
+          "slot": "+0x30",
+          "value_va": "0x00000006",
+          "indexed_func": null
+        },
+        {
+          "slot": "+0x34",
+          "value_va": "0x00000006",
+          "indexed_func": null
+        },
+        {
+          "slot": "+0x38",
+          "value_va": "0x00000006",
+          "indexed_func": null
+        },
+        {
+          "slot": "+0x3C",
+          "value_va": "0xFFFFFFFA",
+          "indexed_func": null
+        }
+      ]
+    }
+  ]
+}

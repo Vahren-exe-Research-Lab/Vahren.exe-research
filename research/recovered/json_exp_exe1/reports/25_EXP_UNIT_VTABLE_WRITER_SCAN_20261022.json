@@ -1,0 +1,19 @@
+{
+  "source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "constructor_va": "0x0056F880",
+  "scan_end_exclusive": "0x00570AE7",
+  "disassembled_instructions": 1121,
+  "direct_base_object_vtable_stores": [
+    {
+      "va": "0x56f8dd",
+      "mnemonic": "mov",
+      "operands": "dword ptr [ebp], 0x63a9e4",
+      "bytes": "c74500e4a96300"
+    }
+  ],
+  "limitations": [
+    "Function may call helpers that mutate vptr indirectly",
+    "Different construction paths/subtypes may install different vtables",
+    "Executable bytes are static, actual destructor timing still unknown"
+  ]
+}

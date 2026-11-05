@@ -1,0 +1,71 @@
+{
+  "status": "BATTLE_RETURNED",
+  "origin": "LIVE_ORIGINAL_READONLY",
+  "utc": "2026-10-21T15:48:52.275807+00:00",
+  "structural_captures": 0,
+  "capture_failures": 3,
+  "attempts": 3,
+  "files": [
+    {
+      "name": "BATTLE_USER_20261021T154713970636Z_1e19867b_READY.json",
+      "sha256": "00A7BBFF69788F9C1639E519214C5AE1CE8615DF7756E9E2577AA3F8E62CA248"
+    },
+    {
+      "name": "BATTLE_USER_20261021T154713970636Z_1e19867b_FAILURE_01.json",
+      "sha256": "F2878B502BB27B3CCE42FC5C6C3442DFDAD8EC1E7A54FC5B5A98DFC92D2C94E7"
+    },
+    {
+      "name": "BATTLE_USER_20261021T154713970636Z_1e19867b_FAILURE_02.json",
+      "sha256": "280C5BEFB8549F0E53C1B6BEE839148AFD42DD9ADBC9201CC51193614BE54402"
+    },
+    {
+      "name": "BATTLE_USER_20261021T154713970636Z_1e19867b_FAILURE_03.json",
+      "sha256": "E327882D17B5A0107A0C6F8E17B046D16BDB3EB6D0E782461F6BE4D54AD5F157"
+    }
+  ],
+  "event_log": "BATTLE_USER_20261021T154713970636Z_1e19867b_EVENTS.jsonl",
+  "full_G1_proven": false,
+  "external_game_roundtrip_proven": false,
+  "game_memory_written": false,
+  "preflight": {
+    "pid": 13620,
+    "sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+    "load_base": "0x00050000",
+    "Task_header_bytes": 128,
+    "Task_vector_bytes": 1228,
+    "sides": [
+      {
+        "slot": 0,
+        "bytes": 84
+      },
+      {
+        "slot": 1,
+        "bytes": 84
+      },
+      {
+        "slot": 2,
+        "bytes": 84
+      }
+    ],
+    "initial": {
+      "mode": 1,
+      "active": 0,
+      "attack_count": 3,
+      "battlefield_ptr": "0x2788E7F0",
+      "world_mode": 0,
+      "scene_type": 1,
+      "frame_counter": 1162,
+      "pause": 0,
+      "task_active_start_ptr": "0x1D75E038",
+      "task_active_end_ptr": "0x1D75E504"
+    },
+    "native_memory_writes": 0
+  },
+  "code_sha256": {
+    "battle_user_recorder_core_20261022.py": "28E175EBAFA25675C820863FB85010F82735BF68A4B2408703B1C8574E3B6D68",
+    "battle_native_detached_capture_v6_20261022.py": "28799AF6FFF5059B2C53A7EB6BD4D0416FAA6084D902623A4C7849060327276F",
+    "battle_native_war_tree_decoder_v5_20261021.py": "0DD7C9EBD0BF97E4BA421FEC02909A44A9B6ABDA4A3538239B479530D909EB6A",
+    "battle_native_readonly_live_probe_stage6_20261021.py": "E64634E6B18DCFD06CFE9740F0C80B7AACD8FA8CAD8D686288C6DD02ED32F685"
+  },
+  "battle_seen": true
+}

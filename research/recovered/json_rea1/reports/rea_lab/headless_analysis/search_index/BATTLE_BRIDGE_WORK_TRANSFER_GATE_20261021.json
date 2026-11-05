@@ -1,0 +1,34 @@
+{
+  "id": "BRIDGE-WORK-TRANSFER-GATE-20261021",
+  "meaning_of_100_percent": "Ready to hand off a demonstrated safe external battle interface to Work to implement the new battle engine, not engine implementation complete",
+  "status": "RESEARCH_INCOMPLETE_WORK_NOT_STARTED",
+  "old_subjective_engineering_readiness_percent": 47.5,
+  "new_subjective_readiness_percent": 47.5,
+  "actual_original_battle_roundtrip_pass": 0,
+  "gates": {
+    "G0_PE_ABI_AND_SCENE_BOUNDARY_STATIC": true,
+    "G0_NATIVE_SAVE_ROUTE_FIXTURE": true,
+    "G0_LEGAL_NATIVE_ATTACK_UI_OBSERVED": false,
+    "G1_LIVE_BATTLE_START_PACKET_SAME_FRAME": false,
+    "G2_NATIVE_TASK_VM_SAFE_HOLD_RESUME": false,
+    "G3_OLD_NATIVE_TO_EXTERNAL_NOOP_TO_NATIVE": false,
+    "G4_NATIVE_FINISH_RESULT_ONCE": false,
+    "G5_STRATEGY_GOLDEN_RESULT_MATCH": false,
+    "G6_ABORT_CRASH_SAVE_LOAD_ROLLBACK": false
+  },
+  "passes": 2,
+  "total": 9,
+  "missing": [
+    "G0_LEGAL_NATIVE_ATTACK_UI_OBSERVED",
+    "G1_LIVE_BATTLE_START_PACKET_SAME_FRAME",
+    "G2_NATIVE_TASK_VM_SAFE_HOLD_RESUME",
+    "G3_OLD_NATIVE_TO_EXTERNAL_NOOP_TO_NATIVE",
+    "G4_NATIVE_FINISH_RESULT_ONCE",
+    "G5_STRATEGY_GOLDEN_RESULT_MATCH",
+    "G6_ABORT_CRASH_SAVE_LOAD_ROLLBACK"
+  ],
+  "current_source_saved_fixture": "save2.sav",
+  "original_game_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "trigger_instruction": "When and only when all gates have valid original-game receipts, generate a verified Work handoff instruction. Do not activate Work from this script.",
+  "warning": "Raw actual save contents and dynamic native memory traces are not embedded in this gate."
+}

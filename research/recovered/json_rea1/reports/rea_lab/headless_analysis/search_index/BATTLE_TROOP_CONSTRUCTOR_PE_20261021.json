@@ -1,0 +1,26 @@
+{
+  "sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "ctor": "0x00567EE0",
+  "hits": [
+    [
+      "0x00567EF3",
+      "mov eax, dword ptr [0x65a220]"
+    ],
+    [
+      "0x00567F0F",
+      "mov dword ptr [esi], 0x639a30"
+    ],
+    [
+      "0x00567FEF",
+      "mov dword ptr [esi + 0x60], ebx"
+    ],
+    [
+      "0x0056802B",
+      "mov ecx, 0x628acc"
+    ],
+    [
+      "0x0056806A",
+      "mov dword ptr [esp + 0x1c], 0x609840"
+    ]
+  ]
+}

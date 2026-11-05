@@ -1,0 +1,381 @@
+{
+  "status": "ORIGINAL DAT static event provenance, runtime scene not verified",
+  "matches": [
+    {
+      "file": "a_default/script/10_ユニット/26_クッキー☆原理主義党.dat",
+      "line": 413,
+      "match": "unit fmrim:base3",
+      "before": [
+        {
+          "line": 400,
+          "text": "change = c_genba3*25"
+        },
+        {
+          "line": 401,
+          "text": "}"
+        },
+        {
+          "line": 402,
+          "text": ""
+        },
+        {
+          "line": 403,
+          "text": "class c_genba3:a2653"
+        },
+        {
+          "line": 404,
+          "text": "{"
+        },
+        {
+          "line": 405,
+          "text": "fkey = c_genba"
+        },
+        {
+          "line": 406,
+          "text": "name = 少しMad氏"
+        },
+        {
+          "line": 407,
+          "text": "unique = on"
+        },
+        {
+          "line": 408,
+          "text": "same_friend = off"
+        },
+        {
+          "line": 409,
+          "text": "same_call=off"
+        },
+        {
+          "line": 410,
+          "text": "merce = a265,a2652,a2653,ss009*999,a262"
+        },
+        {
+          "line": 411,
+          "text": "}"
+        },
+        {
+          "line": 412,
+          "text": ""
+        }
+      ],
+      "after": [
+        {
+          "line": 414,
+          "text": "{"
+        },
+        {
+          "line": 415,
+          "text": "help = 突撃隊　幕僚長"
+        },
+        {
+          "line": 416,
+          "text": "name = ＦＭＲＩＭ"
+        },
+        {
+          "line": 417,
+          "text": "/+face = fmrim1"
+        },
+        {
+          "line": 418,
+          "text": "face = fmrim1"
+        },
+        {
+          "line": 419,
+          "text": "voice_type = fmrim1"
+        },
+        {
+          "line": 420,
+          "text": "race = r1_co"
+        },
+        {
+          "line": 421,
+          "text": "sex = female"
+        },
+        {
+          "line": 422,
+          "text": "class = c_fmrim"
+        },
+        {
+          "line": 423,
+          "text": "//yabo = 50"
+        },
+        {
+          "line": 424,
+          "text": "//kosen = 50"
+        },
+        {
+          "line": 425,
+          "text": "level = 8"
+        },
+        {
+          "line": 426,
+          "text": "//sortkey = 0"
+        },
+        {
+          "line": 427,
+          "text": "consti = sw*5, pl*7, ch*3, ar*5, gn*8, fire*7, wate*4, wind*3, eart*7, thun*3, ligh*5,"
+        },
+        {
+          "line": 428,
+          "text": "msw*5,mpl*7,mch*3,mar*5,mgn*8,mfire*7,mwate*4,mwind*3,meart*7,mthun*3,mligh*5,"
+        },
+        {
+          "line": 429,
+          "text": "poi*3,fear*3,ill*5,conf*5,stone*7,para*7,sil*5,drain*5,kiss*10"
+        }
+      ]
+    },
+    {
+      "file": "a_default/script/5000_ランダムシナリオ/sc_rnd_sys.dat",
+      "line": 331,
+      "match": "addSkill2(fmrim,sp_fmrim_joker)",
+      "before": [
+        {
+          "line": 318,
+          "text": "addv(@rndmunit,piel)"
+        },
+        {
+          "line": 319,
+          "text": "addv(@rndmunit,ringer)"
+        },
+        {
+          "line": 320,
+          "text": "addv(@rndmunit,robin)"
+        },
+        {
+          "line": 321,
+          "text": "addv(@rndmunit,saimon)"
+        },
+        {
+          "line": 322,
+          "text": "addv(@rndmunit,abesan)"
+        },
+        {
+          "line": 323,
+          "text": "addv(@rndmunit,megadeath)"
+        },
+        {
+          "line": 324,
+          "text": "addv(@rndmunit,fight_fly)"
+        },
+        {
+          "line": 325,
+          "text": "addv(@rndmunit,gogogo)"
+        },
+        {
+          "line": 326,
+          "text": "addv(@rndmunit,intyo)"
+        },
+        {
+          "line": 327,
+          "text": "addv(@rndmunit,nagatanien)"
+        },
+        {
+          "line": 328,
+          "text": ""
+        },
+        {
+          "line": 329,
+          "text": ""
+        },
+        {
+          "line": 330,
+          "text": "//addSkill2(geruch,commandcn_ice)"
+        }
+      ],
+      "after": [
+        {
+          "line": 332,
+          "text": "addSkill(fmrim,b_fmrim_astk,b_fmrim_bb,b_medama)"
+        },
+        {
+          "line": 333,
+          "text": ""
+        },
+        {
+          "line": 334,
+          "text": "}"
+        },
+        {
+          "line": 335,
+          "text": ""
+        },
+        {
+          "line": 336,
+          "text": ""
+        },
+        {
+          "line": 337,
+          "text": "event push_rndunit"
+        },
+        {
+          "line": 338,
+          "text": "{"
+        },
+        {
+          "line": 339,
+          "text": "routine(push_rndm_routine)"
+        },
+        {
+          "line": 340,
+          "text": ""
+        },
+        {
+          "line": 341,
+          "text": "gread(po1_clear,rndm_boss1)"
+        },
+        {
+          "line": 342,
+          "text": "gread(po2_clear,rndm_boss2)"
+        },
+        {
+          "line": 343,
+          "text": ""
+        },
+        {
+          "line": 344,
+          "text": "gread(po5_clear2,rndm_boss5)"
+        },
+        {
+          "line": 345,
+          "text": ""
+        },
+        {
+          "line": 346,
+          "text": "gread(po13_clear,rndm_boss13)"
+        },
+        {
+          "line": 347,
+          "text": "gread(po14_clear,rndm_boss14)"
+        }
+      ]
+    },
+    {
+      "file": "a_default/script/6000_スキルテスト/event_test.dat",
+      "line": 77,
+      "match": "addSkill2(fmrim,sp_fmrim_joker)",
+      "before": [
+        {
+          "line": 64,
+          "text": "addSkill(sakerobog,pes_bidai_df)"
+        },
+        {
+          "line": 65,
+          "text": "addSkill(sakerobog,pes_bidai_md)"
+        },
+        {
+          "line": 66,
+          "text": "addSkill(sakerobog,pes_bidai_hp)"
+        },
+        {
+          "line": 67,
+          "text": "addSkill2(sakuma,pes_naikaku)"
+        },
+        {
+          "line": 68,
+          "text": "addSkill2(nonaka,pes_naikaku)"
+        },
+        {
+          "line": 69,
+          "text": "addSkill2(cobra,pes_naikaku)"
+        },
+        {
+          "line": 70,
+          "text": "addSkill2(kakuryo1,pes_naikaku)"
+        },
+        {
+          "line": 71,
+          "text": "addSkill2(kakuryo2,pes_naikaku)"
+        },
+        {
+          "line": 72,
+          "text": ""
+        },
+        {
+          "line": 73,
+          "text": "addSkill(fmrim,b_medama_n2)"
+        },
+        {
+          "line": 74,
+          "text": "addSkill(fmrim,b_medama_n6)"
+        },
+        {
+          "line": 75,
+          "text": "addSkill(fmrim,b_fmrim_astk)"
+        },
+        {
+          "line": 76,
+          "text": "addSkill(fmrim,b_fmrim_bb)"
+        }
+      ],
+      "after": [
+        {
+          "line": 78,
+          "text": ""
+        },
+        {
+          "line": 79,
+          "text": "addSkill2(5goisgod,go_knn)"
+        },
+        {
+          "line": 80,
+          "text": "eraseSkill(5goisgod,go_summon)"
+        },
+        {
+          "line": 81,
+          "text": "addSkill2(5goisgod,sp_heal_3)"
+        },
+        {
+          "line": 82,
+          "text": "addSkill2(5goisgod,sp_go_nannkasugoino)"
+        },
+        {
+          "line": 83,
+          "text": "addSkill2(5goisgod,shinegoisgod)"
+        },
+        {
+          "line": 84,
+          "text": "addSkill(tdnastk,s_astk)"
+        },
+        {
+          "line": 85,
+          "text": ""
+        },
+        {
+          "line": 86,
+          "text": "addSkill(tdnastk,sp_tdnastk)"
+        },
+        {
+          "line": 87,
+          "text": ""
+        },
+        {
+          "line": 88,
+          "text": "addSkill(jirachi,oyakata_summon)"
+        },
+        {
+          "line": 89,
+          "text": "addSkill2(fmrim2,sp_fmrim6)"
+        },
+        {
+          "line": 90,
+          "text": "addSkill(sakenomiga,sakenomiga_summon)"
+        },
+        {
+          "line": 91,
+          "text": ""
+        },
+        {
+          "line": 92,
+          "text": "addSkill(boss_toono,sp_roadroller)"
+        },
+        {
+          "line": 93,
+          "text": ""
+        }
+      ]
+    }
+  ],
+  "old_Gameplay": 0
+}

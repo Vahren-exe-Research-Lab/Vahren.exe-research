@@ -1,0 +1,59 @@
+{
+  "research_id": "BRIDGE-20261021-RESEARCH-02",
+  "scope": "Evidence-weighted readiness for a one-battle original-strategy -> external EXE -> original-strategy demonstration",
+  "not": "Percentage of completed executable or guaranteed feasibility",
+  "measure": "Subjective engineering readiness; game not run",
+  "source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "dimensions": [
+    {
+      "item": "Ghidra/CALL foundation",
+      "weight": 10,
+      "prior": 100,
+      "current": 100
+    },
+    {
+      "item": "Start entry/ABI and scene dispatch",
+      "weight": 20,
+      "prior": 70,
+      "current": 80
+    },
+    {
+      "item": "Runtime input packet: war map/troops/units/map/seed/events",
+      "weight": 25,
+      "prior": 15,
+      "current": 35
+    },
+    {
+      "item": "End native ABI/result rehydration/one-time commit",
+      "weight": 20,
+      "prior": 45,
+      "current": 45
+    },
+    {
+      "item": "Task/VM/UI lifecycle synchronization",
+      "weight": 15,
+      "prior": 20,
+      "current": 25
+    },
+    {
+      "item": "Actual end-to-end old/new process handshake test",
+      "weight": 10,
+      "prior": 0,
+      "current": 0
+    }
+  ],
+  "prior_weighted_percent": 39.75,
+  "current_weighted_percent": 47.5,
+  "range": [
+    35,
+    55
+  ],
+  "verified_legacy_gameplay_goldens": 0,
+  "verified_external_handoff": 0,
+  "synthetic_decoder_tests": 20,
+  "synthetic_failed": 0,
+  "static_original_pe_source_contract_checks": 13,
+  "static_original_pe_source_contract_failed": 0,
+  "status": "STATIC+SYNTHETIC / NOT RUN / NOT READY",
+  "disclaimer": "No observed original battle capture or safe native rehydration. This is not a project-completion metric or success probability."
+}

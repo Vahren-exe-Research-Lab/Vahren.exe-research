@@ -16,11 +16,17 @@
 <a id="field-190"></a>
 ## BattleWnd + 0x190
 
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE6_EXACT_NATIVE_ABI_GATE_20261021.json 行 7](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE6_EXACT_NATIVE_ABI_GATE_20261021.json?plain=1#L7-L7) — "ECX": "Battlefield*/context pointer: native natural (E+0x1EED1C), BattleWnd ([BattleWnd+0x190])",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
 - [research/recovered/search_reports1/reports/BATTLE_TAKEOVER_RESEARCH_STAGE6_20261021.md 行 9](../../research/recovered/search_reports1/reports/BATTLE_TAKEOVER_RESEARCH_STAGE6_20261021.md?plain=1#L9-L9) — - ECX: 通常/scriptでは [GameEvent E+0x1EED1C] の値、BattleWndでは [BattleWnd+0x190] の値。
   制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
 
 <a id="field-194"></a>
 ## BattleWnd + 0x194
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE6_EXACT_NATIVE_ABI_GATE_20261021.json 行 8](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_FINISH_STAGE6_EXACT_NATIVE_ABI_GATE_20261021.json?plain=1#L8-L8) — "EDX": "War container pointer: natural (&E+0x1EED20), BattleWnd ([BattleWnd+0x194])",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
 
 - [research/recovered/search_reports1/reports/BATTLE_TAKEOVER_RESEARCH_STAGE6_20261021.md 行 10](../../research/recovered/search_reports1/reports/BATTLE_TAKEOVER_RESEARCH_STAGE6_20261021.md?plain=1#L10-L10) — - EDX: 通常/scriptでは &E+0x1EED20、BattleWndでは [BattleWnd+0x194] の値。
   制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain

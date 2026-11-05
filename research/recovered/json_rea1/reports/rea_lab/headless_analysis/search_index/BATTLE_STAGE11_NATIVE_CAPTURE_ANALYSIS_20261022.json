@@ -1,0 +1,828 @@
+{
+  "research_id": "BRIDGE-20261022-RESEARCH-11",
+  "status": "FOUR_ORIGINAL_RUNTIME_STRUCTURES_REPLAY_VERIFIED_NOT_FULL_G1",
+  "session": "BATTLE_USER_20261021T164622798833Z_b8419f5d",
+  "source_original_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "source_summary_sha256": "9E0FEC62DE5604E9BA991E155A629BDB2CE2969D293CBBA75A187AB3CF90568F",
+  "source_eventlog_sha256": "5B61ECAC3477EA762F951D8ADD74D751517402DA98D683BDFAE5CDDB801D62B9",
+  "source_file_hash_checks": [
+    {
+      "name": "BATTLE_USER_20261021T164622798833Z_b8419f5d_READY.json",
+      "sha256": "8FBD74A1642B6A57B29A99DDC6CB9742EAE581E11B78A0595903CA452540DDCE",
+      "bytes": 1285
+    },
+    {
+      "name": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_01.json",
+      "sha256": "9DE328DA5FBFF98151ED2A26133FC123EABE6972DF1C6588F0DC4AB26098A034",
+      "bytes": 393956
+    },
+    {
+      "name": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_02.json",
+      "sha256": "285F30D088752016F1792800EE8DD7E32E630BB5523C464FEC737DA7D4B7C614",
+      "bytes": 437377
+    },
+    {
+      "name": "BATTLE_USER_20261021T164622798833Z_b8419f5d_FAILURE_03.json",
+      "sha256": "75C0DD4DC066E9FC002630F803D673F52D7793B2E309E9F2C0B6B368C0FA16BF",
+      "bytes": 134108
+    },
+    {
+      "name": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_04.json",
+      "sha256": "BC5C91413202D1F2512EFEE679B7DA08CD8DA0CA4E86AFCCED288E4BD051056A",
+      "bytes": 607902
+    },
+    {
+      "name": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_05.json",
+      "sha256": "72FF106B32D2AF20384685A0F45D8DB587EE5EFC9F3F93C75F43E31EB77A3108",
+      "bytes": 537796
+    }
+  ],
+  "capture_code_hashes": {
+    "battle_user_recorder_core_20261022.py": "DE4D60A4697E104BF4D7A75FE30DF9640089313D9AF40BB2A4703F593785CACC",
+    "battle_native_detached_capture_v7_20261022.py": "C8E590CB1ECD69CD18E30164F7DEA74BC6DB29D80C9FCB57991A3F567053126F",
+    "battle_native_war_tree_decoder_v5_20261021.py": "0DD7C9EBD0BF97E4BA421FEC02909A44A9B6ABDA4A3538239B479530D909EB6A",
+    "battle_native_readonly_live_probe_stage6_20261021.py": "E64634E6B18DCFD06CFE9740F0C80B7AACD8FA8CAD8D686288C6DD02ED32F685"
+  },
+  "runtime_image_base": "0x00270000",
+  "saved_captures": [
+    {
+      "attempt": 1,
+      "source_file": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_01.json",
+      "source_sha256": "9DE328DA5FBFF98151ED2A26133FC123EABE6972DF1C6588F0DC4AB26098A034",
+      "captured_utc": "2026-10-21T16:46:32.953122+00:00",
+      "task_counter_before": 73,
+      "task_counter_after": 94,
+      "counter_increment_during_read": 21,
+      "atomic": false,
+      "side_details": [
+        {
+          "slot": 0,
+          "unit_references": 192,
+          "troops": 24,
+          "member_slots": 192,
+          "unique_members": 192,
+          "member_size_histogram": {
+            "8": 24
+          },
+          "troop_members_missing_in_side_roster": [],
+          "side_units_missing_in_troops": []
+        },
+        {
+          "slot": 1,
+          "unit_references": 192,
+          "troops": 24,
+          "member_slots": 192,
+          "unique_members": 192,
+          "member_size_histogram": {
+            "8": 24
+          },
+          "troop_members_missing_in_side_roster": [],
+          "side_units_missing_in_troops": []
+        },
+        {
+          "slot": 2,
+          "unit_references": 0,
+          "troops": 0,
+          "member_slots": 0,
+          "unique_members": 0,
+          "member_size_histogram": {},
+          "troop_members_missing_in_side_roster": [],
+          "side_units_missing_in_troops": []
+        }
+      ],
+      "pointer_deltas_since_previous_saved": [],
+      "attack_definition_counts": [
+        8,
+        16,
+        8
+      ],
+      "help_entries": 1,
+      "task_type_counts": {
+        "active": {
+          "GameEvent": 1,
+          "DialogWnd": 1,
+          "Player": 1,
+          "Enemy": 2,
+          "StaticUnit": 85,
+          "Troop": 48,
+          "Unit": 384,
+          "BattleVSync": 1,
+          "AllLifeWnd": 1,
+          "UnitFlash": 199,
+          "FlyText": 199,
+          "EMPTY_SLOT": 158,
+          "Missile": 27
+        },
+        "pending": {
+          "Unit": 25,
+          "UnitFlash": 16,
+          "FlyText": 16,
+          "SummonFlash": 100
+        }
+      },
+      "task_slot_statistics": {
+        "active": {
+          "slots": 1107,
+          "empty_slots": 158,
+          "nonempty_slots": 949
+        },
+        "pending": {
+          "slots": 157,
+          "empty_slots": 0,
+          "nonempty_slots": 157
+        }
+      },
+      "nonempty_task_slots_classified_by_PE_RTTI": 1106,
+      "side_task_subobject_links": [
+        {
+          "task_ptr": "0x1E4D9900",
+          "class": "Player",
+          "complete_object_pointer": "0x1E4D9870",
+          "matching_native_side_slots": [
+            0
+          ]
+        },
+        {
+          "task_ptr": "0x1DAA4DF0",
+          "class": "Enemy",
+          "complete_object_pointer": "0x1DAA4D60",
+          "matching_native_side_slots": [
+            1
+          ]
+        },
+        {
+          "task_ptr": "0x1DE86CB8",
+          "class": "Enemy",
+          "complete_object_pointer": "0x1DE86C28",
+          "matching_native_side_slots": [
+            2
+          ]
+        }
+      ],
+      "selected_map_observed": false,
+      "rng_observed": false,
+      "vm_cursor_observed": false
+    },
+    {
+      "attempt": 2,
+      "source_file": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_02.json",
+      "source_sha256": "285F30D088752016F1792800EE8DD7E32E630BB5523C464FEC737DA7D4B7C614",
+      "captured_utc": "2026-10-21T16:46:34.507005+00:00",
+      "task_counter_before": 100,
+      "task_counter_after": 134,
+      "counter_increment_during_read": 34,
+      "atomic": false,
+      "side_details": [
+        {
+          "slot": 0,
+          "unit_references": 377,
+          "troops": 24,
+          "member_slots": 377,
+          "unique_members": 377,
+          "member_size_histogram": {
+            "15": 3,
+            "14": 2,
+            "16": 19
+          },
+          "troop_members_missing_in_side_roster": [],
+          "side_units_missing_in_troops": []
+        },
+        {
+          "slot": 1,
+          "unit_references": 192,
+          "troops": 24,
+          "member_slots": 192,
+          "unique_members": 192,
+          "member_size_histogram": {
+            "8": 24
+          },
+          "troop_members_missing_in_side_roster": [],
+          "side_units_missing_in_troops": []
+        },
+        {
+          "slot": 2,
+          "unit_references": 0,
+          "troops": 0,
+          "member_slots": 0,
+          "unique_members": 0,
+          "member_size_histogram": {},
+          "troop_members_missing_in_side_roster": [],
+          "side_units_missing_in_troops": []
+        }
+      ],
+      "pointer_deltas_since_previous_saved": [
+        {
+          "slot": 0,
+          "added_pointers": 185,
+          "removed_pointers": 0,
+          "common_link_changes": 0
+        },
+        {
+          "slot": 1,
+          "added_pointers": 0,
+          "removed_pointers": 0,
+          "common_link_changes": 0
+        },
+        {
+          "slot": 2,
+          "added_pointers": 0,
+          "removed_pointers": 0,
+          "common_link_changes": 0
+        }
+      ],
+      "attack_definition_counts": [
+        8,
+        16,
+        8
+      ],
+      "help_entries": 1,
+      "task_type_counts": {
+        "active": {
+          "GameEvent": 1,
+          "DialogWnd": 1,
+          "Player": 1,
+          "Enemy": 2,
+          "StaticUnit": 85,
+          "Troop": 48,
+          "Unit": 552,
+          "BattleVSync": 1,
+          "AllLifeWnd": 1,
+          "FlyText": 365,
+          "EMPTY_SLOT": 12,
+          "SummonFlash": 46,
+          "UnitFlash": 166
+        },
+        "pending": {}
+      },
+      "task_slot_statistics": {
+        "active": {
+          "slots": 1281,
+          "empty_slots": 12,
+          "nonempty_slots": 1269
+        },
+        "pending": {
+          "slots": 0,
+          "empty_slots": 0,
+          "nonempty_slots": 0
+        }
+      },
+      "nonempty_task_slots_classified_by_PE_RTTI": 1269,
+      "side_task_subobject_links": [
+        {
+          "task_ptr": "0x1E4D9900",
+          "class": "Player",
+          "complete_object_pointer": "0x1E4D9870",
+          "matching_native_side_slots": [
+            0
+          ]
+        },
+        {
+          "task_ptr": "0x1DAA4DF0",
+          "class": "Enemy",
+          "complete_object_pointer": "0x1DAA4D60",
+          "matching_native_side_slots": [
+            1
+          ]
+        },
+        {
+          "task_ptr": "0x1DE86CB8",
+          "class": "Enemy",
+          "complete_object_pointer": "0x1DE86C28",
+          "matching_native_side_slots": [
+            2
+          ]
+        }
+      ],
+      "selected_map_observed": false,
+      "rng_observed": false,
+      "vm_cursor_observed": false
+    },
+    {
+      "attempt": 4,
+      "source_file": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_04.json",
+      "source_sha256": "BC5C91413202D1F2512EFEE679B7DA08CD8DA0CA4E86AFCCED288E4BD051056A",
+      "captured_utc": "2026-10-21T16:46:37.507167+00:00",
+      "task_counter_before": 176,
+      "task_counter_after": 253,
+      "counter_increment_during_read": 77,
+      "atomic": false,
+      "side_details": [
+        {
+          "slot": 0,
+          "unit_references": 377,
+          "troops": 24,
+          "member_slots": 377,
+          "unique_members": 377,
+          "member_size_histogram": {
+            "15": 3,
+            "14": 2,
+            "16": 19
+          },
+          "troop_members_missing_in_side_roster": [],
+          "side_units_missing_in_troops": []
+        },
+        {
+          "slot": 1,
+          "unit_references": 192,
+          "troops": 24,
+          "member_slots": 192,
+          "unique_members": 192,
+          "member_size_histogram": {
+            "8": 24
+          },
+          "troop_members_missing_in_side_roster": [],
+          "side_units_missing_in_troops": []
+        },
+        {
+          "slot": 2,
+          "unit_references": 0,
+          "troops": 0,
+          "member_slots": 0,
+          "unique_members": 0,
+          "member_size_histogram": {},
+          "troop_members_missing_in_side_roster": [],
+          "side_units_missing_in_troops": []
+        }
+      ],
+      "pointer_deltas_since_previous_saved": [
+        {
+          "slot": 0,
+          "added_pointers": 0,
+          "removed_pointers": 0,
+          "common_link_changes": 0
+        },
+        {
+          "slot": 1,
+          "added_pointers": 0,
+          "removed_pointers": 0,
+          "common_link_changes": 0
+        },
+        {
+          "slot": 2,
+          "added_pointers": 0,
+          "removed_pointers": 0,
+          "common_link_changes": 0
+        }
+      ],
+      "attack_definition_counts": [
+        8,
+        16,
+        8
+      ],
+      "help_entries": 1,
+      "task_type_counts": {
+        "active": {
+          "GameEvent": 1,
+          "DialogWnd": 1,
+          "Player": 1,
+          "Enemy": 2,
+          "StaticUnit": 85,
+          "Troop": 48,
+          "Unit": 569,
+          "BattleVSync": 1,
+          "AllLifeWnd": 1,
+          "EMPTY_SLOT": 162,
+          "BattleMsg": 2,
+          "FlyText": 960,
+          "UnitFlash": 133
+        },
+        "pending": {}
+      },
+      "task_slot_statistics": {
+        "active": {
+          "slots": 1966,
+          "empty_slots": 162,
+          "nonempty_slots": 1804
+        },
+        "pending": {
+          "slots": 0,
+          "empty_slots": 0,
+          "nonempty_slots": 0
+        }
+      },
+      "nonempty_task_slots_classified_by_PE_RTTI": 1804,
+      "side_task_subobject_links": [
+        {
+          "task_ptr": "0x1E4D9900",
+          "class": "Player",
+          "complete_object_pointer": "0x1E4D9870",
+          "matching_native_side_slots": [
+            0
+          ]
+        },
+        {
+          "task_ptr": "0x1DAA4DF0",
+          "class": "Enemy",
+          "complete_object_pointer": "0x1DAA4D60",
+          "matching_native_side_slots": [
+            1
+          ]
+        },
+        {
+          "task_ptr": "0x1DE86CB8",
+          "class": "Enemy",
+          "complete_object_pointer": "0x1DE86C28",
+          "matching_native_side_slots": [
+            2
+          ]
+        }
+      ],
+      "selected_map_observed": false,
+      "rng_observed": false,
+      "vm_cursor_observed": false
+    },
+    {
+      "attempt": 5,
+      "source_file": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_05.json",
+      "source_sha256": "72FF106B32D2AF20384685A0F45D8DB587EE5EFC9F3F93C75F43E31EB77A3108",
+      "captured_utc": "2026-10-21T16:46:39.178232+00:00",
+      "task_counter_before": 272,
+      "task_counter_after": 373,
+      "counter_increment_during_read": 101,
+      "atomic": false,
+      "side_details": [
+        {
+          "slot": 0,
+          "unit_references": 377,
+          "troops": 24,
+          "member_slots": 377,
+          "unique_members": 377,
+          "member_size_histogram": {
+            "15": 3,
+            "14": 2,
+            "16": 19
+          },
+          "troop_members_missing_in_side_roster": [],
+          "side_units_missing_in_troops": []
+        },
+        {
+          "slot": 1,
+          "unit_references": 200,
+          "troops": 24,
+          "member_slots": 203,
+          "unique_members": 203,
+          "member_size_histogram": {
+            "8": 16,
+            "9": 7,
+            "12": 1
+          },
+          "troop_members_missing_in_side_roster": [
+            "0x4BA87520",
+            "0x4BAA5AC8",
+            "0x4BAC4070"
+          ],
+          "side_units_missing_in_troops": []
+        },
+        {
+          "slot": 2,
+          "unit_references": 0,
+          "troops": 0,
+          "member_slots": 0,
+          "unique_members": 0,
+          "member_size_histogram": {},
+          "troop_members_missing_in_side_roster": [],
+          "side_units_missing_in_troops": []
+        }
+      ],
+      "pointer_deltas_since_previous_saved": [
+        {
+          "slot": 0,
+          "added_pointers": 0,
+          "removed_pointers": 0,
+          "common_link_changes": 0
+        },
+        {
+          "slot": 1,
+          "added_pointers": 8,
+          "removed_pointers": 0,
+          "common_link_changes": 0
+        },
+        {
+          "slot": 2,
+          "added_pointers": 0,
+          "removed_pointers": 0,
+          "common_link_changes": 0
+        }
+      ],
+      "attack_definition_counts": [
+        8,
+        16,
+        8
+      ],
+      "help_entries": 1,
+      "task_type_counts": {
+        "active": {
+          "GameEvent": 1,
+          "DialogWnd": 1,
+          "Player": 1,
+          "Enemy": 2,
+          "StaticUnit": 85,
+          "Troop": 48,
+          "Unit": 573,
+          "BattleVSync": 1,
+          "AllLifeWnd": 1,
+          "BattleMsg": 1,
+          "EMPTY_SLOT": 152,
+          "FlyText": 452,
+          "Missile": 31,
+          "UnitFlash": 315,
+          "SummonFlash": 30
+        },
+        "pending": {}
+      },
+      "task_slot_statistics": {
+        "active": {
+          "slots": 1694,
+          "empty_slots": 152,
+          "nonempty_slots": 1542
+        },
+        "pending": {
+          "slots": 0,
+          "empty_slots": 0,
+          "nonempty_slots": 0
+        }
+      },
+      "nonempty_task_slots_classified_by_PE_RTTI": 1542,
+      "side_task_subobject_links": [
+        {
+          "task_ptr": "0x1E4D9900",
+          "class": "Player",
+          "complete_object_pointer": "0x1E4D9870",
+          "matching_native_side_slots": [
+            0
+          ]
+        },
+        {
+          "task_ptr": "0x1DAA4DF0",
+          "class": "Enemy",
+          "complete_object_pointer": "0x1DAA4D60",
+          "matching_native_side_slots": [
+            1
+          ]
+        },
+        {
+          "task_ptr": "0x1DE86CB8",
+          "class": "Enemy",
+          "complete_object_pointer": "0x1DE86C28",
+          "matching_native_side_slots": [
+            2
+          ]
+        }
+      ],
+      "selected_map_observed": false,
+      "rng_observed": false,
+      "vm_cursor_observed": false
+    }
+  ],
+  "failure_analysis": {
+    "source_file": "BATTLE_USER_20261021T164622798833Z_b8419f5d_FAILURE_03.json",
+    "source_sha256": "75C0DD4DC066E9FC002630F803D673F52D7793B2E309E9F2C0B6B368C0FA16BF",
+    "where": "GameTask.active at M+0x2C",
+    "begin": "0x4b68b628",
+    "end": "0x4b68d790",
+    "capacity": "0x4b68d950",
+    "observed_count": 2138,
+    "capacity_count": 2250,
+    "collector_limit": 2048,
+    "array_itself_read": false,
+    "bad_game_memory_proven": false,
+    "raise_limit_applied": false,
+    "retained_partial": {
+      "name": "BATTLE_STAGE11_RECOVERED_PARTIAL_03_20261022.json",
+      "sha256": "233A5A3B1CB9E90F01EC4C75D27D69AB308445606C892533EB1DB4BD87B2CB39",
+      "bytes": 97776
+    },
+    "recovered_units": [
+      377,
+      192,
+      0
+    ],
+    "recovered_troops": [
+      24,
+      24,
+      0
+    ],
+    "full_G1_proven": false
+  },
+  "task_RTTI_catalog": {
+    "0x0063A6D0": {
+      "vtable_preferred_va": "0x0063A6D0",
+      "type": "GameEvent",
+      "rtti_raw_name": ".?AVGameEvent@@",
+      "complete_object_locator": "0x0063FB40",
+      "subobject_offset": 0,
+      "type_descriptor": "0x0068D594",
+      "update_va": "0x004335E0",
+      "pause_predicate_va": "0x0043B5A0",
+      "alternate_predicate_va": "0x00431910"
+    },
+    "0x00638A54": {
+      "vtable_preferred_va": "0x00638A54",
+      "type": "DialogWnd",
+      "rtti_raw_name": ".?AVDialogWnd@@",
+      "complete_object_locator": "0x0063D5BC",
+      "subobject_offset": 40,
+      "type_descriptor": "0x0068C374",
+      "update_va": "0x00441460",
+      "pause_predicate_va": "0x00431910",
+      "alternate_predicate_va": "0x00431910"
+    },
+    "0x00639B2C": {
+      "vtable_preferred_va": "0x00639B2C",
+      "type": "Player",
+      "rtti_raw_name": ".?AVPlayer@@",
+      "complete_object_locator": "0x0063F2E0",
+      "subobject_offset": 144,
+      "type_descriptor": "0x0068CFF0",
+      "update_va": "0x00521A00",
+      "pause_predicate_va": "0x00431910",
+      "alternate_predicate_va": "0x00431910"
+    },
+    "0x00638B84": {
+      "vtable_preferred_va": "0x00638B84",
+      "type": "Enemy",
+      "rtti_raw_name": ".?AVEnemy@@",
+      "complete_object_locator": "0x0063D708",
+      "subobject_offset": 144,
+      "type_descriptor": "0x0068BCEC",
+      "update_va": "0x004498E0",
+      "pause_predicate_va": "0x0043B5A0",
+      "alternate_predicate_va": "0x0043B5A0"
+    },
+    "0x0063A85C": {
+      "vtable_preferred_va": "0x0063A85C",
+      "type": "StaticUnit",
+      "rtti_raw_name": ".?AVStaticUnit@@",
+      "complete_object_locator": "0x0063FC28",
+      "subobject_offset": 0,
+      "type_descriptor": "0x0068D5E4",
+      "update_va": "0x0055AD80",
+      "pause_predicate_va": "0x0043B5A0",
+      "alternate_predicate_va": "0x0043B5A0"
+    },
+    "0x00639A30": {
+      "vtable_preferred_va": "0x00639A30",
+      "type": "Troop",
+      "rtti_raw_name": ".?AVTroop@@",
+      "complete_object_locator": "0x0063F400",
+      "subobject_offset": 0,
+      "type_descriptor": "0x0068D034",
+      "update_va": "0x0056AB20",
+      "pause_predicate_va": "0x0043B5A0",
+      "alternate_predicate_va": "0x0043B5A0"
+    },
+    "0x0063A9E4": {
+      "vtable_preferred_va": "0x0063A9E4",
+      "type": "Unit",
+      "rtti_raw_name": ".?AVUnit@@",
+      "complete_object_locator": "0x0063FF38",
+      "subobject_offset": 0,
+      "type_descriptor": "0x0068D048",
+      "update_va": "0x0057AA00",
+      "pause_predicate_va": "0x0043B5A0",
+      "alternate_predicate_va": "0x0043B5A0"
+    },
+    "0x0063A788": {
+      "vtable_preferred_va": "0x0063A788",
+      "type": "BattleVSync",
+      "rtti_raw_name": ".?AVBattleVSync@@",
+      "complete_object_locator": "0x0063F9E0",
+      "subobject_offset": 0,
+      "type_descriptor": "0x0068D544",
+      "update_va": "0x00404EC0",
+      "pause_predicate_va": "0x0043B5A0",
+      "alternate_predicate_va": "0x0043B5A0"
+    },
+    "0x00637EBC": {
+      "vtable_preferred_va": "0x00637EBC",
+      "type": "AllLifeWnd",
+      "rtti_raw_name": ".?AVAllLifeWnd@@",
+      "complete_object_locator": "0x0063C17C",
+      "subobject_offset": 40,
+      "type_descriptor": "0x0065BB4C",
+      "update_va": "0x00401BB0",
+      "pause_predicate_va": "0x0043B5A0",
+      "alternate_predicate_va": "0x0043B5A0"
+    },
+    "0x0063AA6C": {
+      "vtable_preferred_va": "0x0063AA6C",
+      "type": "UnitFlash",
+      "rtti_raw_name": ".?AVUnitFlash@@",
+      "complete_object_locator": "0x0063FEE4",
+      "subobject_offset": 0,
+      "type_descriptor": "0x0068D728",
+      "update_va": "0x004DFD00",
+      "pause_predicate_va": "0x0043B5A0",
+      "alternate_predicate_va": "0x0043B5A0"
+    },
+    "0x00639314": {
+      "vtable_preferred_va": "0x00639314",
+      "type": "FlyText",
+      "rtti_raw_name": ".?AVFlyText@@",
+      "complete_object_locator": "0x0063E3A4",
+      "subobject_offset": 0,
+      "type_descriptor": "0x0068CAF4",
+      "update_va": "0x004E14B0",
+      "pause_predicate_va": "0x004DF000",
+      "alternate_predicate_va": "0x0043B5A0"
+    },
+    "0x0063A544": {
+      "vtable_preferred_va": "0x0063A544",
+      "type": "Missile",
+      "rtti_raw_name": ".?AVMissile@@",
+      "complete_object_locator": "0x0063F7C8",
+      "subobject_offset": 0,
+      "type_descriptor": "0x0068D3A0",
+      "update_va": "0x0054BA00",
+      "pause_predicate_va": "0x00546A10",
+      "alternate_predicate_va": "0x00546A10"
+    },
+    "0x0063A65C": {
+      "vtable_preferred_va": "0x0063A65C",
+      "type": "SummonFlash",
+      "rtti_raw_name": ".?AVSummonFlash@@",
+      "complete_object_locator": "0x0063F88C",
+      "subobject_offset": 0,
+      "type_descriptor": "0x0068D3F0",
+      "update_va": "0x0054F490",
+      "pause_predicate_va": "0x0043B5A0",
+      "alternate_predicate_va": "0x0043B5A0"
+    },
+    "0x00637F1C": {
+      "vtable_preferred_va": "0x00637F1C",
+      "type": "BattleMsg",
+      "rtti_raw_name": ".?AVBattleMsg@@",
+      "complete_object_locator": "0x0063C37C",
+      "subobject_offset": 0,
+      "type_descriptor": "0x0065BC24",
+      "update_va": "0x00403E20",
+      "pause_predicate_va": "0x00431910",
+      "alternate_predicate_va": "0x0043B5A0"
+    }
+  },
+  "pause_callback_original_machine_code": {
+    "0x00431910": [
+      {
+        "va": "0x00431910",
+        "bytes": "b001",
+        "asm": "mov al, 1"
+      },
+      {
+        "va": "0x00431912",
+        "bytes": "c3",
+        "asm": "ret "
+      }
+    ],
+    "0x0043B5A0": [
+      {
+        "va": "0x0043B5A0",
+        "bytes": "32c0",
+        "asm": "xor al, al"
+      },
+      {
+        "va": "0x0043B5A2",
+        "bytes": "c3",
+        "asm": "ret "
+      }
+    ],
+    "0x004DF000": [
+      {
+        "va": "0x004DF000",
+        "bytes": "8a8194000000",
+        "asm": "mov al, byte ptr [ecx + 0x94]"
+      },
+      {
+        "va": "0x004DF006",
+        "bytes": "c3",
+        "asm": "ret "
+      }
+    ],
+    "0x00546A10": [
+      {
+        "va": "0x00546A10",
+        "bytes": "8a81c4010000",
+        "asm": "mov al, byte ptr [ecx + 0x1c4]"
+      },
+      {
+        "va": "0x00546A16",
+        "bytes": "c3",
+        "asm": "ret "
+      }
+    ]
+  },
+  "live_game_opened_by_this_analysis": false,
+  "original_data_modified": false,
+  "capture_tool_modified": false,
+  "new_battle_requested": false,
+  "work_started": false,
+  "full_G1_proven": false,
+  "external_game_roundtrip_proven": false,
+  "limits": [
+    "Counters advanced during all four saves; not a same-frame snapshot",
+    "The fifth attempt has 3 Troop members absent from its earlier-read Side roster",
+    "Unit pointer changes are observed, but no summon cause or fixed starting count is proven",
+    "Static RTTI types identify saved vtable words, not a safe pause/resume protocol",
+    "Task metadata recovered from original PE does not recover missing live object fields",
+    "The one failed task array was never read; only preexisting earlier regions were recovered"
+  ]
+}

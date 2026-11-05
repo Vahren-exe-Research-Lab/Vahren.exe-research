@@ -1,0 +1,52 @@
+{
+  "id": "BRIDGE-20261021-AUTO-SAVE-TRAILER",
+  "original_save_name": "auto.sav",
+  "original_encoded_sha256": "EA0D5CC6B178E6E779C7B1C1D2E255B8605E0ED372E7371BB5637A1D450E5400",
+  "original_size_bytes": 5953848,
+  "original_save_modified": false,
+  "gameplay_loader_verified": false,
+  "interpretation": "Read-only native serialized-byte observation, unknown trailing data is unclassified",
+  "native_front_sections": {
+    "status": "FIVE_NATIVE_SAVE_SECTIONS_EXACT__WORLD_GRAPH_UNPARSED",
+    "source_sha256": "ea0d5cc6b178e6e779c7b1c1d2e255b8605e0ed372e7371bb5637a1d450e5400",
+    "decoded_sha256": "55f50644f10241e26628d1a4eccf91947162ceb46f7198ed191a684f3c71e77e",
+    "encoded_bytes": 5953848,
+    "numeric_records": 3137,
+    "Unit_records": 8444,
+    "Spot_records": 138,
+    "Power_records": 29,
+    "combined_records": 11748,
+    "numeric_start": 33,
+    "numeric_end": 59561,
+    "Unit_end": 5311090,
+    "Spot_end": 5403806,
+    "Power_end": 5412169,
+    "diplomacy_start": 5412169,
+    "diplomacy_end": 5412312,
+    "diplomacy_power_refs": 27,
+    "diplomacy_scalar_u32_14": 4,
+    "world_graph_opaque_bytes": 541504,
+    "world_graph_opaque_sha256": "3970ef2cc63a3f1a97cb0829bcebd5f943781af7302574e905fb2cfc9370e851",
+    "source_byte_roundtrip": true,
+    "old_gameplay_runtime_load_proven": false,
+    "new_game_strict_match": false
+  },
+  "graph_status": "GRAPH_FIRST_FOUR_BUCKETS_PARSED",
+  "graph_counts": {
+    "Spot_elm_bucket": 121,
+    "SpotPath_bucket": 160,
+    "SpotEscapePath_bucket": 11
+  },
+  "world_graph_consumed_bytes": 9656,
+  "unknown_after_graph_bytes": 531848,
+  "unknown_after_graph_sha256": "CFFBEE088CFF0C78A627346BEA3810E40ECA3432857421DC3FB9EF4670BF6D7D",
+  "unknown_first32_hex": "F53C432687478B49A88C53E474446273502AFF133911FD1E7E6D7E2C6349481E",
+  "unknown_last32_hex": "3EDF9E2A6772573251114946695928A53D38BDF91F322BF1545E4BF93E125EBA",
+  "markers_present": {
+    "00000000": 1,
+    "11111111": 1,
+    "22222222": 1,
+    "33333333": 1
+  },
+  "source_sha_unchanged_after_read": true
+}

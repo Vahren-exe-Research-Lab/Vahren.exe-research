@@ -408,6 +408,10 @@
 | 0x5B797C | [CRT_ftell_SEH4_entry](symbols/005B797C.md) | func | Ogg標準FILEのtellに登録される91 byteのMSVC SEH4付きftell入口。NULL FILE*ではerrno=22とinvalid-parameter handler経路、正常FILE*ではlock→__ftell_nolock→unlock。例外時動作/独立DLL ABIは未検証 |
 | 0x5B79D7 | [CRT_ftell_shared_EBP_unlock_helper](symbols/005B79D7.md) | func | 0x5B79C9から呼ばれる10 byteのunlock補助。親ftellのEBP+8を読むため独立hook呼出ABIを想定しない。0x641260のSEH4 cleanup handler候補にも登録 |
 | 0x5BB6E0 | [CRT_except_handler4_search_unwind](symbols/005BB6E0.md) | func | MSVC __except_handler4。exception flagsでsearchとunwindを分け、filter=0のscopeは検索時にfilter呼出を飛ばす。実ランタイムの対象ftell例外配送とunlock実行保証は未実測 |
+| 0x5C3500 | [CRT_LocalUnwind4](symbols/005C3500.md) | func | 4経路のE8呼出先として報告されたMSVC局所unwind処理。scope cursor更新・通知副作用はV9推定を含み、完全ABI・実例外での解放は未確認。 |
+| 0x5C35BD | [CRT_LocalUnwind4_Callsite_PEFragment](symbols/005C35BD.md) | code | 0x5C3590のPE code fragment内と報告されたE8 site。callerの独立関数ABIは未確定。 呼出先は0x5C3500。 |
+| 0x5C35E6 | [CRT_LocalUnwind4_Callsite_5C35D6](symbols/005C35E6.md) | code | 0x5C35D6のcaller内と報告されたE8 site。callerの独立関数ABIは未確定。 呼出先は0x5C3500。 |
+| 0x5C3646 | [CRT_LocalUnwind4_Callsite_ExceptUnwind](symbols/005C3646.md) | code | 0x5C363B内のE8 site。先行20Hにも記載済みで、新しい独立経路の発見とは数えない。 呼出先は0x5C3500。 |
 | 0x5CF970 | [Vorbis_State3InitFromImplicitESI](symbols/005CF970.md) | func | Original native reads decoder state from ESI+0x58, conditionally initializes state3 via 0x5D5BD0 and writes state4. Early direct caller 0x5D0B8A supplements the pre-existing cached 0x5D0D67 call; full ABI/runtime VERIFY. |
 | 0x5CFA10 | [OggPageUpdateLocalStateWriter](symbols/005CFA10.md) | func | 原報告が列挙した自身の直接state書込はowner+0x58への4・EDI(ABI保存を前提に2)・3。callee・alias・再入・他スレッドによる間接変更は未確認。全プログラムの状態不変性や正常EOFを証明しない。 |
 | 0x5CFDD0 | [Ogg_SeekCallbackLow32Boundary](symbols/005CFDD0.md) | func | 回収集約報告が示す34byteの標準FILE seek callback窓。0x5CFDE8で_fseek側へFILE*/low32/originを渡し、その窓ではhigh32読込を未検出と報告する。元14原報告・nativeは今回未取得。完全ABI・他callback・大容量ファイルでの故障は未確認。 |
@@ -415,6 +419,7 @@
 | 0x5D0B8A | [Vorbis_State3EarlyInitCallsite](symbols/005D0B8A.md) | code | Original E8 direct call to 0x5CF970 after nonnegative upstream 0x5D04E0 return; ESI previously loaded from outer decoder pointer. Different from cached 0x5D0D67 call; only bounded static branch established. |
 | 0x5D16C0 | [OggFileWrapper_OpenWithCloseCallback](symbols/005D16C0.md) | func | 標準ファイル開閉経路でCRT _fclose候補をcallbackとして後続へ渡しouter+0x2C8へ保存させる。別caller/再入は未確認。 |
 | 0x5D1B80 | [ftol](symbols/005D1B80.md) | func | x87 の浮動小数点→整数変換 |
+| 0x5D1D33 | [CRT_LocalUnwind4_Callsite_Fsopen](symbols/005D1D33.md) | code | __fsopen(0x5D1CB1)内のE8 site。空ファイル名のエラー経路との対応はV9擬似Cの推定で、native条件・FILE所有権は未確認。 呼出先は0x5C3500。 |
 | 0x5D3D00 | [VorbisComment_FreeAndReset](symbols/005D3D00.md) | func | コメント配列の非NULL要素をsigned countまで解放し、配列/vendor解放後に4つの管理fieldをゼロ化する。部分構築や二重呼出の異常系は未検証。 |
 | 0x5D3DA0 | [VorbisSetup_InitInnerState](symbols/005D3DA0.md) | func | Original 50-byte helper clears selected outer fields and stores calloc(1,0xE50) result at outer+0x1C; parser null gate is separate and full ABI VERIFY. |
 | 0x5D3F60 | [VorbisHeader_Type1Parse](symbols/005D3F60.md) | func | identification headerのversion・block境界・framing条件を検査し成功時outer+8を正値にする原作x86経路。実機入力異常は未検証。 |
@@ -511,7 +516,7 @@
 
 ## 構造体・フィールド
 
-[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 6161 件。型や意味の正式登録前の局所表記も検索できます。
+[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 7735 件。型や意味の正式登録前の局所表記も検索できます。
 
 - [Ctx](structs/Ctx.md)
 - [FrameWnd](structs/FrameWnd.md)
@@ -526,12 +531,12 @@
 - [UnitDef](structs/UnitDef.md)
 - [UnitRuntime](structs/UnitRuntime.md)
 
-辞書項目 498 件、フィールド 120 件、根拠付き関係 159 件。
+辞書項目 503 件、フィールド 120 件、根拠付き関係 163 件。
 
-回収済み文書のVA言及・取得記録 58063 件を検索対象に含みます。辞書未登録のVAも検索できます。
+回収済み文書のVA言及・取得記録 70628 件を検索対象に含みます。辞書未登録のVAも検索できます。
 
 [登録関数間の直接CALL採録条件](static_calls_source.json) — 2373箇所。各関数ページで呼び出し元・先を参照でき、`callers VA --json` / `callees VA --json` でも検索できます。
 
 [訂正履歴](CORRECTIONS.md) — 15 件。訂正済みの旧解釈と現在の解釈を出典行付きで確認できます。
 
-[回収済み研究文書の題名・本文](DOCUMENTS.md) — 2023 文書。題名・ファイル名・研究ID・本文の通常文字列を検索できます。
+[回収済み研究文書の題名・本文](DOCUMENTS.md) — 2220 文書。題名・ファイル名・研究ID・本文の通常文字列を検索できます。

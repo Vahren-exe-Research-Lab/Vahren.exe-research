@@ -1,0 +1,121 @@
+{
+  "research_id": "BRIDGE-20261022-STAGE15-VALIDATION",
+  "status": "STATIC_PE_AND_TEST_CHILD_ONLY_GUI_NOT_DEPLOYED",
+  "checks": {
+    "original_PE_SHA_matches": true,
+    "protected_20_source_files_unchanged": true,
+    "original_12_manifest_files_match": true,
+    "23_native_anchors_independently_verified": true,
+    "medical_alive_per_literals_verified": true,
+    "crossprocess_6_of_6_own_child_only": true,
+    "GUI_not_changed_after_block": true,
+    "GUI_still_uses_original_v7_core": true,
+    "blocked_GUI_and_test_documented": true,
+    "ledger_IDs_unique": true,
+    "5_new_Stage15_findings_saved": true,
+    "new_ledger_evidence_exists": true,
+    "index_Stage15_and_blocker_visible": true,
+    "entry_exit_contract_and_report_saved": true,
+    "old_objective_gate_remains_3_of_9": true,
+    "all_regressions_success_without_skips": true,
+    "15_new_boundary_module_and_session_tests": true,
+    "protected_inputs_unchanged_after_tests": true
+  },
+  "checks_passed": 18,
+  "checks_total": 18,
+  "native_anchor_count": 23,
+  "tests_run": 126,
+  "test_failures": 0,
+  "test_errors": 0,
+  "test_skips": 0,
+  "module_counts": {
+    "test_battle_war_tree_decoder_20261021": 7,
+    "test_battle_bridge_detached_v2_20261021": 7,
+    "test_battle_bridge_detached_v3_20261021": 6,
+    "test_battle_registry_reverse_20261021": 6,
+    "test_battle_preframe_gate_20261021": 6,
+    "test_battle_native_task_roster_20261021": 10,
+    "test_battle_aslr_detached_v4_20261021": 8,
+    "test_battle_native_detached_capture_stage7_20261021": 12,
+    "test_battle_native_war_tree_v5_20261021": 10,
+    "test_battle_live_capture_v5_20261021": 8,
+    "test_battle_reader_v6_20261022": 9,
+    "test_battle_user_recorder_20261022": 12,
+    "test_battle_task_null_stage10_20261022": 10,
+    "test_battle_boundary_stage15_20261022": 12,
+    "test_battle_boundary_recorder_stage15_20261022": 3
+  },
+  "crossprocess_own_child_checks": [
+    6,
+    6
+  ],
+  "original_game_accessed": false,
+  "original_game_written": false,
+  "gui_changed": false,
+  "gui_connected_to_new_backend": false,
+  "rapid_reentry_verified": false,
+  "full_G1_proven": false,
+  "native_result_writeback_proven": false,
+  "work_used": false,
+  "objective_gate_reference": [
+    3,
+    9
+  ],
+  "reference_51_75_not_reestimated": true,
+  "protected_original_file_count": 20,
+  "ledger_entries": 62,
+  "new_findings": 5,
+  "test_output": "..............................................................................................................................\n----------------------------------------------------------------------\nRan 126 tests in 0.816s\n\nOK\n",
+  "receipts": [
+    {
+      "file": "BATTLE_TAKEOVER_RESEARCH_STAGE15_20261022.md",
+      "sha256": "BCAB7FA8316306636C12464ECB39266DE7001B2B499542BAF4198DEE38766D74",
+      "bytes": 8578
+    },
+    {
+      "file": "BATTLE_STAGE15_ENTRY_EXIT_CONTRACT_20261022.md",
+      "sha256": "9F60BE7BDC3B5D6ABCFFD83C54D5EEC79F755EA3899C2E593DD8F36382D7225F",
+      "bytes": 3647
+    },
+    {
+      "file": "BATTLE_STAGE15_NATIVE_BOUNDARY_EVIDENCE_20261022.json",
+      "sha256": "BA20A419C383F5EC2D64B49B9ACC3A33229FB7DDF9E097FCA362161931F9F981",
+      "bytes": 4325
+    },
+    {
+      "file": "BATTLE_STAGE15_CASUALTY_EFFECTS_20261022.json",
+      "sha256": "D06530A88CFF67EEB6F7616515D4B47004351C7B53865790F8F457F603754E06",
+      "bytes": 1320
+    },
+    {
+      "file": "BATTLE_STAGE15_GUI_BLOCKED_20261022.md",
+      "sha256": "F598A27F51F355B4FB065221DD539AE390174296D92B0407C11337D74B372C9A",
+      "bytes": 2960
+    },
+    {
+      "file": "BATTLE_STAGE15_CROSSPROCESS_VALIDATION_20261022.json",
+      "sha256": "8EE42F0AD23789557FE2C65B97C01A3C1B8A13DBBD270F0CA11A7FC0E1C51C9C",
+      "bytes": 1057
+    },
+    {
+      "file": "battle_boundary_stage15_20261022.py",
+      "sha256": "072D63567CCD4A75B012556B55C84CD2650ABC0232EF801313D8A7EBD2598C93",
+      "bytes": 10089
+    },
+    {
+      "file": "battle_user_boundary_recorder_v8_20261022.py",
+      "sha256": "1B87FCE6B955A48DC6A06D253A0C828A88FBA666172E0FD4A1DF98B340FA1B3D",
+      "bytes": 5577
+    },
+    {
+      "file": "BATTLE_BRIDGE_RESEARCH_INDEX.md",
+      "sha256": "166BE2E281B008A237D354098A2AEAB54B6D14CAC99F70764CA714DFC9603B17",
+      "bytes": 18643
+    },
+    {
+      "file": "BATTLE_BRIDGE_FINDINGS_LEDGER.jsonl",
+      "sha256": "D0D124200F4A214BF17906364C9558CCACE50EFCA2790967B7921609FA7625F7",
+      "bytes": 55797
+    }
+  ]
+}

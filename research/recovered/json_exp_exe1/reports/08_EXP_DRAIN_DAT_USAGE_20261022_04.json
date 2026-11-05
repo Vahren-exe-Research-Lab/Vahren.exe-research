@@ -1,0 +1,383 @@
+{
+  "research_id": "EXP-SETTLEMENT-20261022-04/DAT-DRAIN",
+  "status": "SOURCE_INVENTORY_NOT_RUNTIME_REACHABILITY",
+  "source_archive_sha256": "A1DAC7209FCA6FBF7D05D956054047B4C36E5149EB100434BF796CCB94970423",
+  "dat_files": 590,
+  "matched_skill_headers": 16554,
+  "direct_drain_records": 13,
+  "family_records": [
+    {
+      "skill": "pes_burger4",
+      "parent": null,
+      "func": "status",
+      "fields": [
+        {
+          "field": "add2",
+          "value": "magdef,drain"
+        }
+      ],
+      "member": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/102_ランダムイベント/randomev_skill&unit.dat",
+      "line": 225,
+      "member_sha256": "7D97E609EB2845E97FB5DAE6B79AF6F66375F1831F8A4133C3E63432459E25E7",
+      "resolved_func_candidates": [
+        "status"
+      ]
+    },
+    {
+      "skill": "pes_happy",
+      "parent": null,
+      "func": "status",
+      "fields": [
+        {
+          "field": "attr",
+          "value": "drain"
+        }
+      ],
+      "member": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/102_ランダムイベント/randomev_skill&unit.dat",
+      "line": 240,
+      "member_sha256": "7D97E609EB2845E97FB5DAE6B79AF6F66375F1831F8A4133C3E63432459E25E7",
+      "resolved_func_candidates": [
+        "status"
+      ]
+    },
+    {
+      "skill": "ps_drain",
+      "parent": "ps_poi",
+      "func": null,
+      "fields": [
+        {
+          "field": "attr",
+          "value": "drain"
+        }
+      ],
+      "member": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/Status_10_部隊.dat",
+      "line": 470,
+      "member_sha256": "AD5FF98D10470726404C4BDDACA80338B11716FA3B871AE3B36A842D0438D172",
+      "resolved_func_candidates": [
+        "status"
+      ]
+    },
+    {
+      "skill": "ps_drain2",
+      "parent": "ps_drain",
+      "func": null,
+      "fields": [],
+      "member": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/Status_10_部隊.dat",
+      "line": 478,
+      "member_sha256": "AD5FF98D10470726404C4BDDACA80338B11716FA3B871AE3B36A842D0438D172",
+      "resolved_func_candidates": [
+        "status"
+      ]
+    },
+    {
+      "skill": "ps_drain_down",
+      "parent": "ps_poi_down",
+      "func": null,
+      "fields": [
+        {
+          "field": "attr",
+          "value": "drain"
+        }
+      ],
+      "member": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/Status_10_部隊.dat",
+      "line": 976,
+      "member_sha256": "AD5FF98D10470726404C4BDDACA80338B11716FA3B871AE3B36A842D0438D172",
+      "resolved_func_candidates": [
+        "status"
+      ]
+    },
+    {
+      "skill": "ps_drain_down2",
+      "parent": "ps_drain_down",
+      "func": null,
+      "fields": [],
+      "member": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/Status_10_部隊.dat",
+      "line": 984,
+      "member_sha256": "AD5FF98D10470726404C4BDDACA80338B11716FA3B871AE3B36A842D0438D172",
+      "resolved_func_candidates": [
+        "status"
+      ]
+    },
+    {
+      "skill": "ps_han_cav",
+      "parent": null,
+      "func": "status",
+      "fields": [
+        {
+          "field": "add2",
+          "value": "pl,gn,eart,wate,mpl,mgn,meart,mwate,drain,sw,ar,fire,ligh,msw,mar,mfire,mligh,ill,conf,ch,wind,thun,mch,mwind,mthun,poi,fear"
+        }
+      ],
+      "member": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/Status_10_部隊.dat",
+      "line": 1200,
+      "member_sha256": "AD5FF98D10470726404C4BDDACA80338B11716FA3B871AE3B36A842D0438D172",
+      "resolved_func_candidates": [
+        "status"
+      ]
+    },
+    {
+      "skill": "ps_han_cav_ibaragi",
+      "parent": null,
+      "func": "status",
+      "fields": [
+        {
+          "field": "add2",
+          "value": "pl,gn,eart,wate,mpl,mgn,meart,mwate,drain,sw,ar,fire,ligh,msw,mar,mfire,mligh,ill,conf,ch,wind,thun,mch,mwind,mthun,poi,fear"
+        }
+      ],
+      "member": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/Status_10_部隊.dat",
+      "line": 1215,
+      "member_sha256": "AD5FF98D10470726404C4BDDACA80338B11716FA3B871AE3B36A842D0438D172",
+      "resolved_func_candidates": [
+        "status"
+      ]
+    },
+    {
+      "skill": "ps_mgr_type",
+      "parent": null,
+      "func": "status",
+      "fields": [
+        {
+          "field": "add2",
+          "value": "hp,attack,defense,hprec,sw,msw,pl,mpl,ch,mch,ar,mar,gn,mgn,para,stone,drain"
+        }
+      ],
+      "member": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/Status_10_部隊.dat",
+      "line": 1246,
+      "member_sha256": "AD5FF98D10470726404C4BDDACA80338B11716FA3B871AE3B36A842D0438D172",
+      "resolved_func_candidates": [
+        "status"
+      ]
+    },
+    {
+      "skill": "ps_drain3",
+      "parent": "ps_drain",
+      "func": null,
+      "fields": [],
+      "member": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/Status_10_部隊.dat",
+      "line": 2288,
+      "member_sha256": "AD5FF98D10470726404C4BDDACA80338B11716FA3B871AE3B36A842D0438D172",
+      "resolved_func_candidates": [
+        "status"
+      ]
+    },
+    {
+      "skill": "ps_drain4",
+      "parent": "ps_drain",
+      "func": null,
+      "fields": [],
+      "member": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/Status_10_部隊.dat",
+      "line": 2295,
+      "member_sha256": "AD5FF98D10470726404C4BDDACA80338B11716FA3B871AE3B36A842D0438D172",
+      "resolved_func_candidates": [
+        "status"
+      ]
+    },
+    {
+      "skill": "ps_drain5",
+      "parent": "ps_drain",
+      "func": null,
+      "fields": [],
+      "member": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/Status_10_部隊.dat",
+      "line": 2302,
+      "member_sha256": "AD5FF98D10470726404C4BDDACA80338B11716FA3B871AE3B36A842D0438D172",
+      "resolved_func_candidates": [
+        "status"
+      ]
+    },
+    {
+      "skill": "ps_drain_max",
+      "parent": "ps_poi_max",
+      "func": null,
+      "fields": [
+        {
+          "field": "attr",
+          "value": "drain"
+        }
+      ],
+      "member": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/Status_10_部隊.dat",
+      "line": 2309,
+      "member_sha256": "AD5FF98D10470726404C4BDDACA80338B11716FA3B871AE3B36A842D0438D172",
+      "resolved_func_candidates": [
+        "status"
+      ]
+    },
+    {
+      "skill": "ps_drain_min",
+      "parent": "ps_poi_min",
+      "func": null,
+      "fields": [
+        {
+          "field": "attr",
+          "value": "drain"
+        }
+      ],
+      "member": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/Status_10_部隊.dat",
+      "line": 2316,
+      "member_sha256": "AD5FF98D10470726404C4BDDACA80338B11716FA3B871AE3B36A842D0438D172",
+      "resolved_func_candidates": [
+        "status"
+      ]
+    },
+    {
+      "skill": "ps_drain2_min",
+      "parent": "ps_drain_min",
+      "func": null,
+      "fields": [],
+      "member": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/Status_10_部隊.dat",
+      "line": 2324,
+      "member_sha256": "AD5FF98D10470726404C4BDDACA80338B11716FA3B871AE3B36A842D0438D172",
+      "resolved_func_candidates": [
+        "status"
+      ]
+    },
+    {
+      "skill": "ps_drain3_min",
+      "parent": "ps_drain_min",
+      "func": null,
+      "fields": [],
+      "member": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/Status_10_部隊.dat",
+      "line": 2331,
+      "member_sha256": "AD5FF98D10470726404C4BDDACA80338B11716FA3B871AE3B36A842D0438D172",
+      "resolved_func_candidates": [
+        "status"
+      ]
+    },
+    {
+      "skill": "pes_boss_toono_high",
+      "parent": "pes_knock",
+      "func": "status",
+      "fields": [
+        {
+          "field": "add2",
+          "value": "poi,ill,conf,stone,para,drain"
+        }
+      ],
+      "member": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/Status_30_ユニット専用.dat",
+      "line": 142,
+      "member_sha256": "20196085AC8E76FB8827F01D04C03A66E557A07F76A1DF21B95655534388F165",
+      "resolved_func_candidates": [
+        "status"
+      ]
+    },
+    {
+      "skill": "pes_biim1",
+      "parent": null,
+      "func": "status",
+      "fields": [
+        {
+          "field": "add2",
+          "value": "move,eart,drain"
+        }
+      ],
+      "member": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/Status_30_ユニット専用.dat",
+      "line": 316,
+      "member_sha256": "20196085AC8E76FB8827F01D04C03A66E557A07F76A1DF21B95655534388F165",
+      "resolved_func_candidates": [
+        "status"
+      ]
+    },
+    {
+      "skill": "s_itiziku_kancho",
+      "parent": null,
+      "func": "status",
+      "fields": [
+        {
+          "field": "add2",
+          "value": "poi,drain"
+        }
+      ],
+      "member": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/41_内政_アイテム/S_item_001_resilience1.dat",
+      "line": 220,
+      "member_sha256": "D5902ABA24BDEC790F36627F0ED7EF10D655E64B567226B1F32CBA2D01BD0989",
+      "resolved_func_candidates": [
+        "status"
+      ]
+    },
+    {
+      "skill": "s_itiziku_kancho2",
+      "parent": "s_itiziku_kancho",
+      "func": null,
+      "fields": [],
+      "member": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/41_内政_アイテム/S_item_001_resilience1.dat",
+      "line": 234,
+      "member_sha256": "D5902ABA24BDEC790F36627F0ED7EF10D655E64B567226B1F32CBA2D01BD0989",
+      "resolved_func_candidates": [
+        "status"
+      ]
+    },
+    {
+      "skill": "s_itiziku_kancho3",
+      "parent": "s_itiziku_kancho",
+      "func": null,
+      "fields": [],
+      "member": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/41_内政_アイテム/S_item_001_resilience1.dat",
+      "line": 242,
+      "member_sha256": "D5902ABA24BDEC790F36627F0ED7EF10D655E64B567226B1F32CBA2D01BD0989",
+      "resolved_func_candidates": [
+        "status"
+      ]
+    },
+    {
+      "skill": "s_orange_pant",
+      "parent": null,
+      "func": "status",
+      "fields": [
+        {
+          "field": "attr",
+          "value": "drain"
+        }
+      ],
+      "member": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/41_内政_アイテム/S_item_001_resilience1.dat",
+      "line": 265,
+      "member_sha256": "D5902ABA24BDEC790F36627F0ED7EF10D655E64B567226B1F32CBA2D01BD0989",
+      "resolved_func_candidates": [
+        "status"
+      ]
+    }
+  ],
+  "ancestor_records": [
+    {
+      "skill": "ps_poi",
+      "parent": null,
+      "func": "status",
+      "fields": [],
+      "member": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/Status_10_部隊.dat",
+      "line": 332,
+      "member_sha256": "AD5FF98D10470726404C4BDDACA80338B11716FA3B871AE3B36A842D0438D172"
+    },
+    {
+      "skill": "ps_poi_down",
+      "parent": null,
+      "func": "status",
+      "fields": [],
+      "member": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/Status_10_部隊.dat",
+      "line": 838,
+      "member_sha256": "AD5FF98D10470726404C4BDDACA80338B11716FA3B871AE3B36A842D0438D172"
+    },
+    {
+      "skill": "ps_poi_max",
+      "parent": "ps_poi",
+      "func": null,
+      "fields": [],
+      "member": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/Status_10_部隊.dat",
+      "line": 1896,
+      "member_sha256": "AD5FF98D10470726404C4BDDACA80338B11716FA3B871AE3B36A842D0438D172"
+    },
+    {
+      "skill": "ps_poi_min",
+      "parent": "ps_poi",
+      "func": null,
+      "fields": [],
+      "member": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/Status_10_部隊.dat",
+      "line": 1904,
+      "member_sha256": "AD5FF98D10470726404C4BDDACA80338B11716FA3B871AE3B36A842D0438D172"
+    }
+  ],
+  "limits": [
+    "Header/line-oriented parsing, not full DAT syntax or inherited-field merge.",
+    "Does not resolve runtime edits, script2 loaders, constructed strings or exact duplicate-definition winners.",
+    "No positive-EXP drain attack skill was established by this inventory; this is not universal absence proof.",
+    "Counts are source records, not unique effective/available skills or game observations."
+  ]
+}

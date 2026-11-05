@@ -13,6 +13,12 @@
 - [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 870](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L870-L870) — [CONFIRMED-SAVED-NATIVE] A所有 `exe/T014_NORMAL_LOAD_PROBE.txt` 0x45F54C..0x45F5B2：owner+0x54=0後、owner+0x2E0 Power treeを順次走査しmapped Power[node+0x28]のbyte+0x1D !=0
   制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
+- [research/recovered/json_exp_exe1/reports/14_EXP_SAVE_TREE_BOUNDARY_EVIDENCE_20261021.json 行 74](../../research/recovered/json_exp_exe1/reports/14_EXP_SAVE_TREE_BOUNDARY_EVIDENCE_20261021.json?plain=1#L74-L74) — "bounded_conclusion": "0x460000 owner+0x300 tree stores UnitData POINTER at node+0x28; summoned 0x1E4B4 cache returns ADDRESS of embedded node+0x28. These are d
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_DEFINITION_IDENTITY_PE_20261021.json 行 5](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_DEFINITION_IDENTITY_PE_20261021.json?plain=1#L5-L5) — "address_to_identity_candidate": "Unit+0x1C8 -> Def*; Def+0x1A4 -> owning definition registry; owner+0x300 -> std::map head; std::map node+0x28 -> Def*",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 582](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L582-L582) — [CONFIRMED-SAVED-NATIVE / A58-A59から独立増分] A所有 `exe/T014_NORMAL_LOAD_PROBE.txt` VA0x45F54C..0x45F5B2。既知の4群復元→Unit/Spot後処理→numeric runtime再設定→zone flag再計算の後、Power
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
 

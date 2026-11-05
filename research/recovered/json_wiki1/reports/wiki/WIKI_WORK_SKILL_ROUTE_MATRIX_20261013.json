@@ -1,0 +1,1492 @@
+{
+  "status": "B NATIVE SAVED STATIC vs Work SOURCE SNAPSHOT, NOT END-TO-END",
+  "task": "WRQ-20261013-B-SKILL",
+  "work_source_sha256": {
+    "native_dat_heal_adapter.py": "42c013706e6fb24256622e6f19422d02b67259a66ef5c4b471493304d1eac381",
+    "native_support_action_subset.py": "98924fa62ae98d68bcb63db75eca94e5b21235ad2b1e522e9811d6aa39e2cfb7",
+    "native_unit_ai.py": "494d2d5e4bd77351daf240f5c3402123a952d8aee3fdaadad76bec7c65ff372f",
+    "native_battle_runner.py": "610cd27cd5506b68f909278f34203f17a2c9e7805fac89dedb808e17611b86be",
+    "native_battle_session.py": "0caffc7cb2a03b515fd1f6d09babedded2b7ad6ba8ab8d8e987704488b1dda15",
+    "native_skill_capability_subset.py": "fd62fb0a5a8458f920a421fa26b31bf850542d6fd79b7c66e50379c992733959",
+    "native_rush_missile.py": "5b9c771bd91ee42065f288cda16ed73414bc6f81a2fc1a61691477b26dc7de6a",
+    "peer_script01_native_definitions.py": "86228afb09213cae2d93718309a00202fe6b199427d162ba7112b06b7e48ecc2",
+    "parent_graph.py": "f2930bf6952ad721d40fa2ce23fe11613b73d0ec69249b797adc5cb8b1ab5c54",
+    "native_saved_loader_bootstrap.py": "875b940286baf743386ed8616d270aa65c3683518cf22b6c840b4bbce60a9984",
+    "native_dat_damage_adapter.py": "269fab156812a02e904a2f123df2b9fb9139e13bead79f235776efa44a5ca2f5",
+    "native_task_registry.py": "543ce853f8c5efaa77d21c6c7c1508a107e8da5f2e402f5ddb68d0f3173784d3",
+    "native_unit_tick.py": "96355082eb994dacb3874934f54135baf9f12a084dace7fc73df1be73eeddfd7",
+    "battle_definitions.py": "fc0a27229f488c39b17c8e021e3b0e21cc63818d5b72e39a1048dd221610b226"
+  },
+  "original_dat_zip": "新約迫真戦記―ほのぼの神話ver0.67 豪華版(画像・音声削除版).zip",
+  "inputs": [
+    {
+      "tag": "m_heal",
+      "kind": 3,
+      "parent_chain": [
+        "m_heal"
+      ],
+      "dat_file": "a_default/script/30_スキル/F13_heal_support.dat",
+      "dat_line": 54,
+      "fields": {
+        "func": {
+          "found": true,
+          "text": "heal",
+          "number": 0,
+          "source_skill": "m_heal",
+          "storage": "scalar"
+        },
+        "attr": {
+          "found": true,
+          "text": "hp",
+          "number": 0,
+          "source_skill": "m_heal",
+          "storage": "scalar"
+        },
+        "mp": {
+          "found": true,
+          "text": "80",
+          "number": 80,
+          "source_skill": "m_heal",
+          "storage": "scalar"
+        },
+        "range": {
+          "found": true,
+          "text": "500",
+          "number": 500,
+          "source_skill": "m_heal",
+          "storage": "scalar"
+        },
+        "check": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "range_min": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "gun_delay": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "str": {
+          "found": true,
+          "text": "magic * 200",
+          "number": 0,
+          "values": [
+            "magic * 200"
+          ],
+          "source_skill": "m_heal",
+          "storage": "keyword_list"
+        },
+        "add": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "add2": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "allfunc": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "add_per": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "next": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "next2": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "next3": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "just_next": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "pair_next": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        }
+      },
+      "native_saved_entry": {
+        "handler_va": "57F570",
+        "caller_va": "57E5DD",
+        "return_pc": "57E5E2",
+        "normal_ret_va": [
+          "57F961",
+          "57FC59",
+          "57F5DF"
+        ],
+        "debit_site": "57F9EE (normal support-A); support-B once later",
+        "effect_child": [
+          "54E0B0",
+          "550980",
+          "551490",
+          "551C7F",
+          "4DFBB0",
+          "41E060",
+          "4C3DC0",
+          "4BC920"
+        ],
+        "evidence": "data/T013_WORK_SKILL_HANDLERS_BOUNDARY_20261013.md",
+        "work_entry": "resume_selected_support_handler",
+        "work_session": "BattleSession._resume_resolved_support_handler"
+      },
+      "native_return_sites_bounded_only": true,
+      "work_adapter": {
+        "supported": true,
+        "type": "DatHealSkill",
+        "cost": 80,
+        "range_upper": 500,
+        "chance": 100
+      },
+      "work_function_exists": true,
+      "work_session_method_exists": true,
+      "effective_cost": 80,
+      "requires_confirmed_equipped_skill": true,
+      "actual_native_handler_return_proven": false,
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "runtime_stops": [
+        "Skill+210/+214 keyed cooldown binding",
+        "Skill+88 lower distance",
+        "Unit+1E584/+1E588 support cache and A18/A1C candidate values",
+        "54E0B0->551490 real effect/resist and RNG cursor",
+        "551C7F callback, Task/visual status and handler+Unit normal return"
+      ]
+    },
+    {
+      "tag": "seiretsu",
+      "kind": 3,
+      "parent_chain": [
+        "seiretsu"
+      ],
+      "dat_file": "a_default/script/30_スキル/F13_heal_support.dat",
+      "dat_line": 5,
+      "fields": {
+        "func": {
+          "found": true,
+          "text": "heal",
+          "number": 0,
+          "source_skill": "seiretsu",
+          "storage": "scalar"
+        },
+        "attr": {
+          "found": true,
+          "text": "move",
+          "number": 0,
+          "source_skill": "seiretsu",
+          "storage": "scalar"
+        },
+        "mp": {
+          "found": true,
+          "text": "0",
+          "number": 0,
+          "source_skill": "seiretsu",
+          "storage": "scalar"
+        },
+        "range": {
+          "found": true,
+          "text": "0",
+          "number": 0,
+          "source_skill": "seiretsu",
+          "storage": "scalar"
+        },
+        "check": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "range_min": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "gun_delay": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "str": {
+          "found": true,
+          "text": "fix * 20",
+          "number": 0,
+          "values": [
+            "fix * 20"
+          ],
+          "source_skill": "seiretsu",
+          "storage": "keyword_list"
+        },
+        "add": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "add2": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "allfunc": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "add_per": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "next": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "next2": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "next3": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "just_next": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "pair_next": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        }
+      },
+      "native_saved_entry": {
+        "handler_va": "57F570",
+        "caller_va": "57E5DD",
+        "return_pc": "57E5E2",
+        "normal_ret_va": [
+          "57F961",
+          "57FC59",
+          "57F5DF"
+        ],
+        "debit_site": "57F9EE (normal support-A); support-B once later",
+        "effect_child": [
+          "54E0B0",
+          "550980",
+          "551490",
+          "551C7F",
+          "4DFBB0",
+          "41E060",
+          "4C3DC0",
+          "4BC920"
+        ],
+        "evidence": "data/T013_WORK_SKILL_HANDLERS_BOUNDARY_20261013.md",
+        "work_entry": "resume_selected_support_handler",
+        "work_session": "BattleSession._resume_resolved_support_handler"
+      },
+      "native_return_sites_bounded_only": true,
+      "work_adapter": {
+        "supported": true,
+        "type": "DatHealSkill",
+        "cost": 0,
+        "range_upper": 0,
+        "chance": 100
+      },
+      "work_function_exists": true,
+      "work_session_method_exists": true,
+      "effective_cost": 0,
+      "requires_confirmed_equipped_skill": true,
+      "actual_native_handler_return_proven": false,
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "runtime_stops": [
+        "Skill+210/+214 keyed cooldown binding",
+        "Skill+88 lower distance",
+        "Unit+1E584/+1E588 support cache and A18/A1C candidate values",
+        "54E0B0->551490 real effect/resist and RNG cursor",
+        "551C7F callback, Task/visual status and handler+Unit normal return"
+      ]
+    },
+    {
+      "tag": "cook_heal",
+      "kind": 3,
+      "parent_chain": [
+        "cook_heal",
+        "m_heal"
+      ],
+      "dat_file": "a_default/script/30_スキル/F13_heal_support.dat",
+      "dat_line": 89,
+      "fields": {
+        "func": {
+          "found": true,
+          "text": "heal",
+          "number": 0,
+          "source_skill": "m_heal",
+          "storage": "scalar"
+        },
+        "attr": {
+          "found": true,
+          "text": "hp",
+          "number": 0,
+          "source_skill": "m_heal",
+          "storage": "scalar"
+        },
+        "mp": {
+          "found": true,
+          "text": "0",
+          "number": 0,
+          "source_skill": "cook_heal",
+          "storage": "scalar"
+        },
+        "range": {
+          "found": true,
+          "text": "500",
+          "number": 500,
+          "source_skill": "m_heal",
+          "storage": "scalar"
+        },
+        "check": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "range_min": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "gun_delay": {
+          "found": true,
+          "text": "b_heal*3",
+          "number": 0,
+          "values": [
+            "b_heal*3"
+          ],
+          "source_skill": "cook_heal",
+          "storage": "keyword_list"
+        },
+        "str": {
+          "found": true,
+          "text": "magic_dext * 1500",
+          "number": 0,
+          "values": [
+            "magic_dext * 1500"
+          ],
+          "source_skill": "cook_heal",
+          "storage": "keyword_list"
+        },
+        "add": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "add2": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "allfunc": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "add_per": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "next": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "next2": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "next3": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "just_next": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "pair_next": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        }
+      },
+      "native_saved_entry": {
+        "handler_va": "57F570",
+        "caller_va": "57E5DD",
+        "return_pc": "57E5E2",
+        "normal_ret_va": [
+          "57F961",
+          "57FC59",
+          "57F5DF"
+        ],
+        "debit_site": "57F9EE (normal support-A); support-B once later",
+        "effect_child": [
+          "54E0B0",
+          "550980",
+          "551490",
+          "551C7F",
+          "4DFBB0",
+          "41E060",
+          "4C3DC0",
+          "4BC920"
+        ],
+        "evidence": "data/T013_WORK_SKILL_HANDLERS_BOUNDARY_20261013.md",
+        "work_entry": "resume_selected_support_handler",
+        "work_session": "BattleSession._resume_resolved_support_handler"
+      },
+      "native_return_sites_bounded_only": true,
+      "work_adapter": {
+        "supported": true,
+        "type": "DatHealSkill",
+        "cost": 0,
+        "range_upper": 500,
+        "chance": 100
+      },
+      "work_function_exists": true,
+      "work_session_method_exists": true,
+      "effective_cost": 0,
+      "requires_confirmed_equipped_skill": true,
+      "actual_native_handler_return_proven": false,
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "runtime_stops": [
+        "Skill+210/+214 keyed cooldown binding",
+        "Skill+88 lower distance",
+        "Unit+1E584/+1E588 support cache and A18/A1C candidate values",
+        "54E0B0->551490 real effect/resist and RNG cursor",
+        "551C7F callback, Task/visual status and handler+Unit normal return",
+        "gun_delay original keyword list -> Skill+210/+214 record and action decrement not fully bridged"
+      ]
+    },
+    {
+      "tag": "s_monaka",
+      "kind": 4,
+      "parent_chain": [
+        "s_monaka"
+      ],
+      "dat_file": "a_default/script/30_スキル/F20_summon.dat",
+      "dat_line": 1596,
+      "fields": {
+        "func": {
+          "found": true,
+          "text": "summon",
+          "number": 0,
+          "source_skill": "s_monaka",
+          "storage": "scalar"
+        },
+        "attr": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "mp": {
+          "found": true,
+          "text": "40",
+          "number": 40,
+          "source_skill": "s_monaka",
+          "storage": "scalar"
+        },
+        "range": {
+          "found": true,
+          "text": "100",
+          "number": 100,
+          "source_skill": "s_monaka",
+          "storage": "scalar"
+        },
+        "check": {
+          "found": true,
+          "text": "9999",
+          "number": 9999,
+          "source_skill": "s_monaka",
+          "storage": "scalar"
+        },
+        "range_min": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "gun_delay": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "str": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "add": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "add2": {
+          "found": true,
+          "text": "mona0071,mona0072",
+          "number": 0,
+          "values": [
+            "mona0071",
+            "mona0072"
+          ],
+          "source_skill": "s_monaka",
+          "storage": "keyword_list"
+        },
+        "allfunc": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "add_per": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "next": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "next2": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "next3": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "just_next": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "pair_next": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        }
+      },
+      "native_saved_entry": {
+        "handler_va": "57F190",
+        "caller_va": "57E5E7",
+        "return_pc": "57E5EC",
+        "normal_ret_va": [
+          "57F1B4",
+          "57F245",
+          "57F363",
+          "57F53E",
+          "57F55E"
+        ],
+        "debit_site": "57F366 (conditional)",
+        "effect_child": [
+          "54E7B0",
+          "550580",
+          "577260",
+          "56F880",
+          "54F458"
+        ],
+        "evidence": "data/T012_SUMMON_CORE_54E7B0_CONTRACT_20261013.md",
+        "work_entry": null,
+        "work_session": null
+      },
+      "native_return_sites_bounded_only": true,
+      "work_adapter": {
+        "supported": false,
+        "type": null,
+        "cost": null,
+        "range_upper": null,
+        "chance": null
+      },
+      "work_function_exists": false,
+      "work_session_method_exists": false,
+      "effective_cost": null,
+      "requires_confirmed_equipped_skill": true,
+      "actual_native_handler_return_proven": false,
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "runtime_stops": [
+        "Work dedicated summon bind/admission not yet found",
+        "54E7B0 candidate direct/vector, Skill+270 RNG conditional",
+        "550580 effect record and 577260 Unit tree lookup",
+        "56F880 Unit ctor+owner vector; Task/spatial/visual + Unit/AI return"
+      ]
+    },
+    {
+      "tag": "b_iwana",
+      "kind": 2,
+      "parent_chain": [
+        "b_iwana",
+        "sk_ms"
+      ],
+      "dat_file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+      "dat_line": 6118,
+      "fields": {
+        "func": {
+          "found": true,
+          "text": "missile",
+          "number": 0,
+          "source_skill": "sk_ms",
+          "storage": "scalar"
+        },
+        "attr": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "mp": {
+          "found": true,
+          "text": "60",
+          "number": 60,
+          "source_skill": "b_iwana",
+          "storage": "scalar"
+        },
+        "range": {
+          "found": true,
+          "text": "450",
+          "number": 450,
+          "source_skill": "b_iwana",
+          "storage": "scalar"
+        },
+        "check": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "range_min": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "gun_delay": {
+          "found": true,
+          "text": "b_iwana*2",
+          "number": 0,
+          "values": [
+            "b_iwana*2"
+          ],
+          "source_skill": "b_iwana",
+          "storage": "keyword_list"
+        },
+        "str": {
+          "found": true,
+          "text": "magic*10",
+          "number": 0,
+          "values": [
+            "magic*10"
+          ],
+          "source_skill": "b_iwana",
+          "storage": "keyword_list"
+        },
+        "add": {
+          "found": true,
+          "text": "magsuck",
+          "number": 0,
+          "source_skill": "b_iwana",
+          "storage": "scalar"
+        },
+        "add2": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "allfunc": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "add_per": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "next": {
+          "found": true,
+          "text": "b_iwana_nt1",
+          "number": 0,
+          "source_skill": "b_iwana",
+          "storage": "scalar"
+        },
+        "next2": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "next3": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "just_next": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "pair_next": {
+          "found": true,
+          "text": "ef_magic",
+          "number": 0,
+          "source_skill": "b_iwana",
+          "storage": "scalar"
+        }
+      },
+      "native_saved_entry": {
+        "handler_va": "57EB40",
+        "caller_va": "57E5D3",
+        "return_pc": "57E5D8",
+        "normal_ret_va": [
+          "57EB76",
+          "57ED99",
+          "57EEC3",
+          "57F11E",
+          "57F148",
+          "57F179",
+          "57F187"
+        ],
+        "debit_site": "57EED4",
+        "effect_child": [
+          "54F720",
+          "57BE30",
+          "580280",
+          "4E7ED0"
+        ],
+        "evidence": "data/T013_WORK_SKILL_HANDLERS_BOUNDARY_20261013.md",
+        "work_entry": "resume_selected_missile_handler",
+        "work_session": "BattleSession._resume_resolved_missile_handler"
+      },
+      "native_return_sites_bounded_only": true,
+      "work_adapter": {
+        "supported": true,
+        "type": "DatDamageSkill",
+        "cost": 60,
+        "range_upper": 450,
+        "chance": 100
+      },
+      "work_function_exists": true,
+      "work_session_method_exists": true,
+      "effective_cost": 60,
+      "requires_confirmed_equipped_skill": true,
+      "actual_native_handler_return_proven": false,
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "runtime_stops": [
+        "Skill+278 cost and +290/+294 check/range from actual loader",
+        "4E7ED0 spatial/collision result and latch-dependent debit",
+        "54F720/580280 projectile child effects, linked next/just_next",
+        "57BE30 post and Unit/AI outer return; RNG total",
+        "gun_delay original keyword list -> Skill+210/+214 record and action decrement not fully bridged"
+      ]
+    },
+    {
+      "tag": "spinfiremax",
+      "kind": 2,
+      "parent_chain": [
+        "spinfiremax",
+        "sk_ms"
+      ],
+      "dat_file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+      "dat_line": 9318,
+      "fields": {
+        "func": {
+          "found": true,
+          "text": "missile",
+          "number": 0,
+          "source_skill": "sk_ms",
+          "storage": "scalar"
+        },
+        "attr": {
+          "found": true,
+          "text": "cn",
+          "number": 0,
+          "source_skill": "spinfiremax",
+          "storage": "scalar"
+        },
+        "mp": {
+          "found": true,
+          "text": "80",
+          "number": 80,
+          "source_skill": "spinfiremax",
+          "storage": "scalar"
+        },
+        "range": {
+          "found": true,
+          "text": "600",
+          "number": 600,
+          "source_skill": "spinfiremax",
+          "storage": "scalar"
+        },
+        "check": {
+          "found": true,
+          "text": "600",
+          "number": 600,
+          "source_skill": "spinfiremax",
+          "storage": "scalar"
+        },
+        "range_min": {
+          "found": true,
+          "text": "150",
+          "number": 150,
+          "source_skill": "spinfiremax",
+          "storage": "scalar"
+        },
+        "gun_delay": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "str": {
+          "found": true,
+          "text": "attack * 0",
+          "number": 0,
+          "values": [
+            "attack * 0"
+          ],
+          "source_skill": "spinfiremax",
+          "storage": "keyword_list"
+        },
+        "add": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "add2": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "allfunc": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "add_per": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "next": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "next2": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "next3": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "just_next": {
+          "found": true,
+          "text": "spinfiremax_nt1,spinfiremax_nt2,spinfiremax_nt3",
+          "number": 0,
+          "values": [
+            "spinfiremax_nt1",
+            "spinfiremax_nt2",
+            "spinfiremax_nt3"
+          ],
+          "source_skill": "spinfiremax",
+          "storage": "keyword_list"
+        },
+        "pair_next": {
+          "found": true,
+          "text": "b_cannon_pr0",
+          "number": 0,
+          "source_skill": "spinfiremax",
+          "storage": "scalar"
+        }
+      },
+      "native_saved_entry": {
+        "handler_va": "57EB40",
+        "caller_va": "57E5D3",
+        "return_pc": "57E5D8",
+        "normal_ret_va": [
+          "57EB76",
+          "57ED99",
+          "57EEC3",
+          "57F11E",
+          "57F148",
+          "57F179",
+          "57F187"
+        ],
+        "debit_site": "57EED4",
+        "effect_child": [
+          "54F720",
+          "57BE30",
+          "580280",
+          "4E7ED0"
+        ],
+        "evidence": "data/T013_WORK_SKILL_HANDLERS_BOUNDARY_20261013.md",
+        "work_entry": "resume_selected_missile_handler",
+        "work_session": "BattleSession._resume_resolved_missile_handler"
+      },
+      "native_return_sites_bounded_only": true,
+      "work_adapter": {
+        "supported": true,
+        "type": "DatDamageSkill",
+        "cost": 80,
+        "range_upper": 600,
+        "chance": 100
+      },
+      "work_function_exists": true,
+      "work_session_method_exists": true,
+      "effective_cost": 80,
+      "requires_confirmed_equipped_skill": true,
+      "actual_native_handler_return_proven": false,
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "runtime_stops": [
+        "Skill+278 cost and +290/+294 check/range from actual loader",
+        "4E7ED0 spatial/collision result and latch-dependent debit",
+        "54F720/580280 projectile child effects, linked next/just_next",
+        "57BE30 post and Unit/AI outer return; RNG total"
+      ]
+    },
+    {
+      "tag": "musen_move",
+      "kind": 3,
+      "parent_chain": [
+        "musen_move"
+      ],
+      "dat_file": "a_default/script/30_スキル/F13_heal_support.dat",
+      "dat_line": 2069,
+      "fields": {
+        "func": {
+          "found": true,
+          "text": "heal",
+          "number": 0,
+          "source_skill": "musen_move",
+          "storage": "scalar"
+        },
+        "attr": {
+          "found": true,
+          "text": "move",
+          "number": 0,
+          "source_skill": "musen_move",
+          "storage": "scalar"
+        },
+        "mp": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "range": {
+          "found": true,
+          "text": "9999",
+          "number": 9999,
+          "source_skill": "musen_move",
+          "storage": "scalar"
+        },
+        "check": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "range_min": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "gun_delay": {
+          "found": true,
+          "text": "musen*2",
+          "number": 0,
+          "values": [
+            "musen*2"
+          ],
+          "source_skill": "musen_move",
+          "storage": "keyword_list"
+        },
+        "str": {
+          "found": true,
+          "text": "fix * 9999",
+          "number": 0,
+          "values": [
+            "fix * 9999"
+          ],
+          "source_skill": "musen_move",
+          "storage": "keyword_list"
+        },
+        "add": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "add2": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "allfunc": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "add_per": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "next": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "next2": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "next3": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "just_next": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "pair_next": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        }
+      },
+      "native_saved_entry": {
+        "handler_va": "57F570",
+        "caller_va": "57E5DD",
+        "return_pc": "57E5E2",
+        "normal_ret_va": [
+          "57F961",
+          "57FC59",
+          "57F5DF"
+        ],
+        "debit_site": "57F9EE (normal support-A); support-B once later",
+        "effect_child": [
+          "54E0B0",
+          "550980",
+          "551490",
+          "551C7F",
+          "4DFBB0",
+          "41E060",
+          "4C3DC0",
+          "4BC920"
+        ],
+        "evidence": "data/T013_WORK_SKILL_HANDLERS_BOUNDARY_20261013.md",
+        "work_entry": "resume_selected_support_handler",
+        "work_session": "BattleSession._resume_resolved_support_handler"
+      },
+      "native_return_sites_bounded_only": true,
+      "work_adapter": {
+        "supported": true,
+        "type": "DatHealSkill",
+        "cost": 0,
+        "range_upper": 9999,
+        "chance": 100
+      },
+      "work_function_exists": true,
+      "work_session_method_exists": true,
+      "effective_cost": 0,
+      "requires_confirmed_equipped_skill": true,
+      "actual_native_handler_return_proven": false,
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "runtime_stops": [
+        "Skill+210/+214 keyed cooldown binding",
+        "Skill+88 lower distance",
+        "Unit+1E584/+1E588 support cache and A18/A1C candidate values",
+        "54E0B0->551490 real effect/resist and RNG cursor",
+        "551C7F callback, Task/visual status and handler+Unit normal return",
+        "gun_delay original keyword list -> Skill+210/+214 record and action decrement not fully bridged"
+      ]
+    },
+    {
+      "tag": "b_all",
+      "kind": 3,
+      "parent_chain": [
+        "b_all"
+      ],
+      "dat_file": "a_default/script/30_スキル/F13_heal_support.dat",
+      "dat_line": 124,
+      "fields": {
+        "func": {
+          "found": true,
+          "text": "heal",
+          "number": 0,
+          "source_skill": "b_all",
+          "storage": "scalar"
+        },
+        "attr": {
+          "found": true,
+          "text": "all",
+          "number": 0,
+          "source_skill": "b_all",
+          "storage": "scalar"
+        },
+        "mp": {
+          "found": true,
+          "text": "-1",
+          "number": -1,
+          "source_skill": "b_all",
+          "storage": "scalar"
+        },
+        "range": {
+          "found": true,
+          "text": "400",
+          "number": 400,
+          "source_skill": "b_all",
+          "storage": "scalar"
+        },
+        "check": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "range_min": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "gun_delay": {
+          "found": true,
+          "text": "b_all*3",
+          "number": 0,
+          "values": [
+            "b_all*3"
+          ],
+          "source_skill": "b_all",
+          "storage": "keyword_list"
+        },
+        "str": {
+          "found": true,
+          "text": "magic_dext * 50",
+          "number": 0,
+          "values": [
+            "magic_dext * 50"
+          ],
+          "source_skill": "b_all",
+          "storage": "keyword_list"
+        },
+        "add": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "add2": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "allfunc": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "add_per": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "next": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "next2": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "next3": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "just_next": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        },
+        "pair_next": {
+          "found": false,
+          "text": "",
+          "number": 0,
+          "source_skill": null,
+          "storage": "absent"
+        }
+      },
+      "native_saved_entry": {
+        "handler_va": "57F570",
+        "caller_va": "57E5DD",
+        "return_pc": "57E5E2",
+        "normal_ret_va": [
+          "57F961",
+          "57FC59",
+          "57F5DF"
+        ],
+        "debit_site": "57F9EE (normal support-A); support-B once later",
+        "effect_child": [
+          "54E0B0",
+          "550980",
+          "551490",
+          "551C7F",
+          "4DFBB0",
+          "41E060",
+          "4C3DC0",
+          "4BC920"
+        ],
+        "evidence": "data/T013_WORK_SKILL_HANDLERS_BOUNDARY_20261013.md",
+        "work_entry": "resume_selected_support_handler",
+        "work_session": "BattleSession._resume_resolved_support_handler"
+      },
+      "native_return_sites_bounded_only": true,
+      "work_adapter": {
+        "supported": true,
+        "type": "DatHealSkill",
+        "cost": -1,
+        "range_upper": 400,
+        "chance": 100
+      },
+      "work_function_exists": true,
+      "work_session_method_exists": true,
+      "effective_cost": -1,
+      "requires_confirmed_equipped_skill": true,
+      "actual_native_handler_return_proven": false,
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "runtime_stops": [
+        "Work negative MP rejected at _caster_cost before effect",
+        "Skill+210/+214 keyed cooldown binding",
+        "Skill+88 lower distance",
+        "Unit+1E584/+1E588 support cache and A18/A1C candidate values",
+        "54E0B0->551490 real effect/resist and RNG cursor",
+        "551C7F callback, Task/visual status and handler+Unit normal return",
+        "gun_delay original keyword list -> Skill+210/+214 record and action decrement not fully bridged"
+      ]
+    }
+  ],
+  "passes": {
+    "source_schema": 8,
+    "handler_binding": 8,
+    "work_named_handler_exists": 7,
+    "work_stage_smoke": 5,
+    "old_gameplay": 0,
+    "new_strict_match": 0
+  },
+  "boundaries": [
+    "no EXE execution",
+    "unknown child cannot be mocked",
+    "bounded native return VA is not proof of eligible Skill invocation",
+    "Work code readonly; owner B/F files unchanged",
+    "unverified RNG/FPU/field parser remain open"
+  ]
+}

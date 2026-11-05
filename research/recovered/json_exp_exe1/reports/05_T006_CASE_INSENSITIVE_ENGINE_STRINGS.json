@@ -1,0 +1,3944 @@
+{
+  "script_names": 322,
+  "case_insensitive_matches": 317,
+  "missing": [
+    {
+      "script": "sFriend",
+      "uses": 5,
+      "examples": [
+        "116_仮設ランダムイベント61-70\\randomev66_AddPower_b.dat:212",
+        "116_仮設ランダムイベント61-70\\randomev66_AddPower_b.dat:220",
+        "116_仮設ランダムイベント61-70\\randomev66_AddPower_b.dat:225",
+        "116_仮設ランダムイベント61-70\\randomev66_AddPower_b.dat:230"
+      ]
+    },
+    {
+      "script": "chat3",
+      "uses": 4,
+      "examples": [
+        "2000_勢力ストーリー\\po22_event.dat:531",
+        "2000_勢力ストーリー\\po22_event.dat:533",
+        "44_内政_迫真の世紀\\po22_kaiso.dat:493",
+        "44_内政_迫真の世紀\\po22_kaiso.dat:495"
+      ]
+    },
+    {
+      "script": "fafeout",
+      "uses": 2,
+      "examples": [
+        "2000_勢力ストーリー\\po25_event.dat:3335",
+        "44_内政_迫真の世紀\\po25_kaiso.dat:3145"
+      ]
+    },
+    {
+      "script": "eras",
+      "uses": 1,
+      "examples": [
+        "102_ランダムイベント\\randomev71-80.dat:546"
+      ]
+    },
+    {
+      "script": "ammo",
+      "uses": 1,
+      "examples": [
+        "serihu_pls.dat:1026"
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "script": "erase",
+      "uses": 38389,
+      "engine": [
+        {
+          "text": "erase",
+          "va": "0x626c78"
+        },
+        {
+          "text": "erase",
+          "va": "0x631524"
+        },
+        {
+          "text": "erase",
+          "va": "0x631a1c"
+        }
+      ]
+    },
+    {
+      "script": "msg",
+      "uses": 37527,
+      "engine": [
+        {
+          "text": "msg",
+          "va": "0x627cdc"
+        },
+        {
+          "text": "msg",
+          "va": "0x62b1d4"
+        },
+        {
+          "text": "msg",
+          "va": "0x62b1e8"
+        },
+        {
+          "text": "msg",
+          "va": "0x62bf3c"
+        },
+        {
+          "text": "msg",
+          "va": "0x62bf50"
+        },
+        {
+          "text": "msg",
+          "va": "0x62c9d8"
+        },
+        {
+          "text": "msg",
+          "va": "0x6314d8"
+        },
+        {
+          "text": "msg",
+          "va": "0x63198c"
+        },
+        {
+          "text": "msg",
+          "va": "0x6319a0"
+        }
+      ]
+    },
+    {
+      "script": "wait",
+      "uses": 17255,
+      "engine": [
+        {
+          "text": "wait",
+          "va": "0x6302b0"
+        },
+        {
+          "text": "wait",
+          "va": "0x6314c4"
+        },
+        {
+          "text": "wait",
+          "va": "0x6362a4"
+        },
+        {
+          "text": "wait",
+          "va": "0x6362b4"
+        }
+      ]
+    },
+    {
+      "script": "chat",
+      "uses": 12628,
+      "engine": [
+        {
+          "text": "chat",
+          "va": "0x62c9e4"
+        },
+        {
+          "text": "chat",
+          "va": "0x62caa4"
+        },
+        {
+          "text": "chat",
+          "va": "0x6314f4"
+        }
+      ]
+    },
+    {
+      "script": "set",
+      "uses": 6488,
+      "engine": [
+        {
+          "text": "set",
+          "va": "0x6306a8"
+        },
+        {
+          "text": "set",
+          "va": "0x6383d1"
+        },
+        {
+          "text": "set",
+          "va": "0x6383ea"
+        },
+        {
+          "text": "set",
+          "va": "0x638401"
+        }
+      ]
+    },
+    {
+      "script": "addUnit",
+      "uses": 5274,
+      "engine": [
+        {
+          "text": "addUnit",
+          "va": "0x630eb4"
+        }
+      ]
+    },
+    {
+      "script": "playSE",
+      "uses": 4900,
+      "engine": [
+        {
+          "text": "playSE",
+          "va": "0x6315e8"
+        }
+      ]
+    },
+    {
+      "script": "playBGM",
+      "uses": 4041,
+      "engine": [
+        {
+          "text": "playBGM",
+          "va": "0x6315f0"
+        }
+      ]
+    },
+    {
+      "script": "spotmark",
+      "uses": 3688,
+      "engine": [
+        {
+          "text": "spotmark",
+          "va": "0x6316a0"
+        }
+      ]
+    },
+    {
+      "script": "addv",
+      "uses": 3196,
+      "engine": [
+        {
+          "text": "addv",
+          "va": "0x6307fc"
+        }
+      ]
+    },
+    {
+      "script": "picture",
+      "uses": 2809,
+      "engine": [
+        {
+          "text": "picture",
+          "va": "0x624040"
+        },
+        {
+          "text": "picture",
+          "va": "0x626e48"
+        },
+        {
+          "text": "picture",
+          "va": "0x62b12c"
+        },
+        {
+          "text": "picture",
+          "va": "0x630214"
+        },
+        {
+          "text": "picture",
+          "va": "0x6302b8"
+        },
+        {
+          "text": "picture",
+          "va": "0x6302c8"
+        },
+        {
+          "text": "picture",
+          "va": "0x6302d8"
+        },
+        {
+          "text": "picture",
+          "va": "0x6316dc"
+        },
+        {
+          "text": "picture",
+          "va": "0x6318f8"
+        },
+        {
+          "text": "picture",
+          "va": "0x6366b4"
+        },
+        {
+          "text": "picture",
+          "va": "0x6366c4"
+        },
+        {
+          "text": "picture",
+          "va": "0x636764"
+        }
+      ]
+    },
+    {
+      "script": "setv",
+      "uses": 2753,
+      "engine": [
+        {
+          "text": "setv",
+          "va": "0x6307ec"
+        }
+      ]
+    },
+    {
+      "script": "clear",
+      "uses": 2733,
+      "engine": [
+        {
+          "text": "clear",
+          "va": "0x63081c"
+        }
+      ]
+    },
+    {
+      "script": "shake",
+      "uses": 2659,
+      "engine": [
+        {
+          "text": "shake",
+          "va": "0x6249fc"
+        },
+        {
+          "text": "shake",
+          "va": "0x624a0c"
+        },
+        {
+          "text": "shake",
+          "va": "0x631588"
+        }
+      ]
+    },
+    {
+      "script": "routine",
+      "uses": 2589,
+      "engine": [
+        {
+          "text": "routine",
+          "va": "0x6313f4"
+        }
+      ]
+    },
+    {
+      "script": "dialog",
+      "uses": 2546,
+      "engine": [
+        {
+          "text": "Dialog",
+          "va": "0x629a70"
+        },
+        {
+          "text": "dialog",
+          "va": "0x62ca04"
+        },
+        {
+          "text": "dialog",
+          "va": "0x6302e0"
+        },
+        {
+          "text": "dialog",
+          "va": "0x63152c"
+        },
+        {
+          "text": "dialog",
+          "va": "0x635cf0"
+        },
+        {
+          "text": "dialog",
+          "va": "0x635d04"
+        },
+        {
+          "text": "dialog",
+          "va": "0x635d0c"
+        },
+        {
+          "text": "dialog",
+          "va": "0x635d38"
+        },
+        {
+          "text": "dialog",
+          "va": "0x635dc0"
+        },
+        {
+          "text": "dialog",
+          "va": "0x635ddc"
+        },
+        {
+          "text": "dialog",
+          "va": "0x636910"
+        }
+      ]
+    },
+    {
+      "script": "subv",
+      "uses": 2340,
+      "engine": [
+        {
+          "text": "subv",
+          "va": "0x63080c"
+        }
+      ]
+    },
+    {
+      "script": "event",
+      "uses": 2181,
+      "engine": [
+        {
+          "text": "event",
+          "va": "0x626674"
+        },
+        {
+          "text": "event",
+          "va": "0x629038"
+        },
+        {
+          "text": "event",
+          "va": "0x62c73c"
+        },
+        {
+          "text": "event",
+          "va": "0x62d1a8"
+        },
+        {
+          "text": "event",
+          "va": "0x62d97c"
+        },
+        {
+          "text": "event",
+          "va": "0x62d990"
+        },
+        {
+          "text": "event",
+          "va": "0x62dc50"
+        },
+        {
+          "text": "event",
+          "va": "0x63147c"
+        },
+        {
+          "text": "event",
+          "va": "0x631810"
+        },
+        {
+          "text": "event",
+          "va": "0x632160"
+        },
+        {
+          "text": "event",
+          "va": "0x632cd8"
+        },
+        {
+          "text": "event",
+          "va": "0x632ce8"
+        },
+        {
+          "text": "event",
+          "va": "0x632cfc"
+        },
+        {
+          "text": "event",
+          "va": "0x632d08"
+        },
+        {
+          "text": "event",
+          "va": "0x632de4"
+        },
+        {
+          "text": "event",
+          "va": "0x632df4"
+        },
+        {
+          "text": "event",
+          "va": "0x63560c"
+        },
+        {
+          "text": "event",
+          "va": "0x6361a4"
+        },
+        {
+          "text": "event",
+          "va": "0x6361c8"
+        },
+        {
+          "text": "event",
+          "va": "0x6361d4"
+        },
+        {
+          "text": "event",
+          "va": "0x6361e0"
+        },
+        {
+          "text": "event",
+          "va": "0x6361f0"
+        },
+        {
+          "text": "event",
+          "va": "0x63620c"
+        },
+        {
+          "text": "event",
+          "va": "0x63621c"
+        },
+        {
+          "text": "event",
+          "va": "0x63623c"
+        },
+        {
+          "text": "event",
+          "va": "0x636258"
+        },
+        {
+          "text": "event",
+          "va": "0x6382bc"
+        }
+      ]
+    },
+    {
+      "script": "darkness",
+      "uses": 1931,
+      "engine": [
+        {
+          "text": "darkness",
+          "va": "0x631568"
+        }
+      ]
+    },
+    {
+      "script": "volume",
+      "uses": 1905,
+      "engine": [
+        {
+          "text": "volume",
+          "va": "0x62b114"
+        },
+        {
+          "text": "volume",
+          "va": "0x631610"
+        },
+        {
+          "text": "volume",
+          "va": "0x632dd0"
+        },
+        {
+          "text": "volume",
+          "va": "0x632dec"
+        },
+        {
+          "text": "volume",
+          "va": "0x632e00"
+        }
+      ]
+    },
+    {
+      "script": "add",
+      "uses": 1802,
+      "engine": [
+        {
+          "text": "add",
+          "va": "0x6248ec"
+        },
+        {
+          "text": "add",
+          "va": "0x6306ac"
+        },
+        {
+          "text": "add",
+          "va": "0x634d9d"
+        }
+      ]
+    },
+    {
+      "script": "scroll",
+      "uses": 1624,
+      "engine": [
+        {
+          "text": "scroll",
+          "va": "0x6302a8"
+        },
+        {
+          "text": "scroll",
+          "va": "0x6315c8"
+        },
+        {
+          "text": "scroll",
+          "va": "0x63184c"
+        }
+      ]
+    },
+    {
+      "script": "setTruce",
+      "uses": 1528,
+      "engine": [
+        {
+          "text": "setTruce",
+          "va": "0x630e2c"
+        },
+        {
+          "text": "setTruce",
+          "va": "0x6311d4"
+        },
+        {
+          "text": "setTruce",
+          "va": "0x6311ec"
+        },
+        {
+          "text": "setTruce",
+          "va": "0x6311f8"
+        },
+        {
+          "text": "setTruce",
+          "va": "0x631204"
+        },
+        {
+          "text": "setTruce",
+          "va": "0x631210"
+        }
+      ]
+    },
+    {
+      "script": "inPower",
+      "uses": 1419,
+      "engine": [
+        {
+          "text": "inPower",
+          "va": "0x635338"
+        }
+      ]
+    },
+    {
+      "script": "fadeout",
+      "uses": 1394,
+      "engine": [
+        {
+          "text": "fadeout",
+          "va": "0x631558"
+        }
+      ]
+    },
+    {
+      "script": "fadein",
+      "uses": 1307,
+      "engine": [
+        {
+          "text": "fadein",
+          "va": "0x631560"
+        }
+      ]
+    },
+    {
+      "script": "skillTroop",
+      "uses": 1271,
+      "engine": [
+        {
+          "text": "skillTroop",
+          "va": "0x6304d8"
+        }
+      ]
+    },
+    {
+      "script": "getDistance",
+      "uses": 1194,
+      "engine": [
+        {
+          "text": "getDistance",
+          "va": "0x635434"
+        }
+      ]
+    },
+    {
+      "script": "equal",
+      "uses": 1114,
+      "engine": [
+        {
+          "text": "equal",
+          "va": "0x6353f8"
+        }
+      ]
+    },
+    {
+      "script": "addTroop",
+      "uses": 1105,
+      "engine": [
+        {
+          "text": "addTroop",
+          "va": "0x6303e8"
+        }
+      ]
+    },
+    {
+      "script": "addSkill",
+      "uses": 1069,
+      "engine": [
+        {
+          "text": "addSkill",
+          "va": "0x631064"
+        }
+      ]
+    },
+    {
+      "script": "has",
+      "uses": 1039,
+      "engine": [
+        {
+          "text": "has",
+          "va": "0x6353d4"
+        }
+      ]
+    },
+    {
+      "script": "isPlayer",
+      "uses": 1035,
+      "engine": [
+        {
+          "text": "isPlayer",
+          "va": "0x635244"
+        }
+      ]
+    },
+    {
+      "script": "select",
+      "uses": 1033,
+      "engine": [
+        {
+          "text": "select",
+          "va": "0x62bf14"
+        },
+        {
+          "text": "select",
+          "va": "0x62ca14"
+        },
+        {
+          "text": "select",
+          "va": "0x62ca9c"
+        },
+        {
+          "text": "select",
+          "va": "0x631514"
+        }
+      ]
+    },
+    {
+      "script": "bg",
+      "uses": 1004,
+      "engine": [
+        {
+          "text": "bG",
+          "va": "0x4d580a"
+        },
+        {
+          "text": "bg",
+          "va": "0x631544"
+        },
+        {
+          "text": "bg",
+          "va": "0x6361dc"
+        }
+      ]
+    },
+    {
+      "script": "yet",
+      "uses": 833,
+      "engine": [
+        {
+          "text": "yet",
+          "va": "0x6351cc"
+        }
+      ]
+    },
+    {
+      "script": "isMaster",
+      "uses": 770,
+      "engine": [
+        {
+          "text": "isMaster",
+          "va": "0x635260"
+        }
+      ]
+    },
+    {
+      "script": "linkSpot",
+      "uses": 747,
+      "engine": [
+        {
+          "text": "linkSpot",
+          "va": "0x631670"
+        },
+        {
+          "text": "linkSpot",
+          "va": "0x631854"
+        },
+        {
+          "text": "linkSpot",
+          "va": "0x63189c"
+        },
+        {
+          "text": "linkSpot",
+          "va": "0x6318b0"
+        }
+      ]
+    },
+    {
+      "script": "eraseSkill",
+      "uses": 723,
+      "engine": [
+        {
+          "text": "eraseSkill",
+          "va": "0x63107c"
+        }
+      ]
+    },
+    {
+      "script": "index",
+      "uses": 642,
+      "engine": [
+        {
+          "text": "index",
+          "va": "0x630844"
+        }
+      ]
+    },
+    {
+      "script": "showSpot",
+      "uses": 622,
+      "engine": [
+        {
+          "text": "showSpot",
+          "va": "0x631658"
+        }
+      ]
+    },
+    {
+      "script": "isNowSpot",
+      "uses": 616,
+      "engine": [
+        {
+          "text": "isNowSpot",
+          "va": "0x6353ac"
+        }
+      ]
+    },
+    {
+      "script": "setWorldMusic",
+      "uses": 586,
+      "engine": [
+        {
+          "text": "setWorldMusic",
+          "va": "0x631638"
+        }
+      ]
+    },
+    {
+      "script": "ptest",
+      "uses": 552,
+      "engine": [
+        {
+          "text": "ptest",
+          "va": "0x6354dc"
+        }
+      ]
+    },
+    {
+      "script": "isInterval",
+      "uses": 539,
+      "engine": [
+        {
+          "text": "isInterval",
+          "va": "0x635428"
+        }
+      ]
+    },
+    {
+      "script": "reloadMenu",
+      "uses": 526,
+      "engine": [
+        {
+          "text": "reloadMenu",
+          "va": "0x631770"
+        }
+      ]
+    },
+    {
+      "script": "isEvent",
+      "uses": 523,
+      "engine": [
+        {
+          "text": "isEvent",
+          "va": "0x6351c4"
+        }
+      ]
+    },
+    {
+      "script": "setLevel",
+      "uses": 507,
+      "engine": [
+        {
+          "text": "setLevel",
+          "va": "0x631040"
+        }
+      ]
+    },
+    {
+      "script": "getMode",
+      "uses": 486,
+      "engine": [
+        {
+          "text": "getMode",
+          "va": "0x635324"
+        }
+      ]
+    },
+    {
+      "script": "inBattle",
+      "uses": 480,
+      "engine": [
+        {
+          "text": "inBattle",
+          "va": "0x635348"
+        }
+      ]
+    },
+    {
+      "script": "addLevel",
+      "uses": 475,
+      "engine": [
+        {
+          "text": "addLevel",
+          "va": "0x631034"
+        }
+      ]
+    },
+    {
+      "script": "moveTroopFix",
+      "uses": 472,
+      "engine": [
+        {
+          "text": "moveTroopFix",
+          "va": "0x630418"
+        }
+      ]
+    },
+    {
+      "script": "mul",
+      "uses": 460,
+      "engine": [
+        {
+          "text": "mul",
+          "va": "0x6306b4"
+        }
+      ]
+    },
+    {
+      "script": "gwrite",
+      "uses": 459,
+      "engine": [
+        {
+          "text": "gwrite",
+          "va": "0x6317f4"
+        }
+      ]
+    },
+    {
+      "script": "isAlive",
+      "uses": 452,
+      "engine": [
+        {
+          "text": "isAlive",
+          "va": "0x635258"
+        }
+      ]
+    },
+    {
+      "script": "gread",
+      "uses": 440,
+      "engine": [
+        {
+          "text": "gread",
+          "va": "0x6317ec"
+        }
+      ]
+    },
+    {
+      "script": "isDead",
+      "uses": 439,
+      "engine": [
+        {
+          "text": "isDead",
+          "va": "0x635400"
+        }
+      ]
+    },
+    {
+      "script": "isRoamer",
+      "uses": 430,
+      "engine": [
+        {
+          "text": "isRoamer",
+          "va": "0x63526c"
+        }
+      ]
+    },
+    {
+      "script": "sub",
+      "uses": 428,
+      "engine": [
+        {
+          "text": "sub",
+          "va": "0x6306b0"
+        }
+      ]
+    },
+    {
+      "script": "roamUnit",
+      "uses": 427,
+      "engine": [
+        {
+          "text": "roamUnit",
+          "va": "0x630ed8"
+        },
+        {
+          "text": "roamUnit",
+          "va": "0x631250"
+        }
+      ]
+    },
+    {
+      "script": "setDiplo",
+      "uses": 416,
+      "engine": [
+        {
+          "text": "setDiplo",
+          "va": "0x630e50"
+        }
+      ]
+    },
+    {
+      "script": "eraseUnit",
+      "uses": 414,
+      "engine": [
+        {
+          "text": "eraseUnit",
+          "va": "0x630ebc"
+        }
+      ]
+    },
+    {
+      "script": "changeClass",
+      "uses": 402,
+      "engine": [
+        {
+          "text": "changeClass",
+          "va": "0x63104c"
+        }
+      ]
+    },
+    {
+      "script": "addMoney",
+      "uses": 394,
+      "engine": [
+        {
+          "text": "addMoney",
+          "va": "0x630ff0"
+        },
+        {
+          "text": "addMoney",
+          "va": "0x631300"
+        }
+      ]
+    },
+    {
+      "script": "activeTroop",
+      "uses": 365,
+      "engine": [
+        {
+          "text": "activeTroop",
+          "va": "0x63048c"
+        },
+        {
+          "text": "activeTroop",
+          "va": "0x630590"
+        }
+      ]
+    },
+    {
+      "script": "count",
+      "uses": 360,
+      "engine": [
+        {
+          "text": "count",
+          "va": "0x627dac"
+        },
+        {
+          "text": "count",
+          "va": "0x62a314"
+        },
+        {
+          "text": "count",
+          "va": "0x6353c4"
+        }
+      ]
+    },
+    {
+      "script": "addSpot",
+      "uses": 351,
+      "engine": [
+        {
+          "text": "addSpot",
+          "va": "0x630ea0"
+        }
+      ]
+    },
+    {
+      "script": "choice",
+      "uses": 328,
+      "engine": [
+        {
+          "text": "choice",
+          "va": "0x63151c"
+        },
+        {
+          "text": "choice",
+          "va": "0x636918"
+        },
+        {
+          "text": "choice",
+          "va": "0x636920"
+        }
+      ]
+    },
+    {
+      "script": "pushRank",
+      "uses": 326,
+      "engine": [
+        {
+          "text": "pushRank",
+          "va": "0x630788"
+        }
+      ]
+    },
+    {
+      "script": "inSpot",
+      "uses": 310,
+      "engine": [
+        {
+          "text": "inSpot",
+          "va": "0x635340"
+        }
+      ]
+    },
+    {
+      "script": "changeRace",
+      "uses": 310,
+      "engine": [
+        {
+          "text": "changeRace",
+          "va": "0x631058"
+        }
+      ]
+    },
+    {
+      "script": "choiceTitle",
+      "uses": 290,
+      "engine": [
+        {
+          "text": "choiceTitle",
+          "va": "0x6317fc"
+        }
+      ]
+    },
+    {
+      "script": "eraseUnit2",
+      "uses": 288,
+      "engine": [
+        {
+          "text": "eraseUnit2",
+          "va": "0x630ef0"
+        }
+      ]
+    },
+    {
+      "script": "storeUnitOfSpot",
+      "uses": 282,
+      "engine": [
+        {
+          "text": "storeUnitOfSpot",
+          "va": "0x63094c"
+        }
+      ]
+    },
+    {
+      "script": "isFriend",
+      "uses": 281,
+      "engine": [
+        {
+          "text": "isFriend",
+          "va": "0x6352e0"
+        }
+      ]
+    },
+    {
+      "script": "hideLink",
+      "uses": 267,
+      "engine": [
+        {
+          "text": "hideLink",
+          "va": "0x631688"
+        },
+        {
+          "text": "hideLink",
+          "va": "0x6318c4"
+        }
+      ]
+    },
+    {
+      "script": "addFriend",
+      "uses": 261,
+      "engine": [
+        {
+          "text": "addFriend",
+          "va": "0x631144"
+        }
+      ]
+    },
+    {
+      "script": "pushLevel",
+      "uses": 261,
+      "engine": [
+        {
+          "text": "pushLevel",
+          "va": "0x630764"
+        }
+      ]
+    },
+    {
+      "script": "changeMap",
+      "uses": 259,
+      "engine": [
+        {
+          "text": "changeMap",
+          "va": "0x6310fc"
+        }
+      ]
+    },
+    {
+      "script": "addVar",
+      "uses": 255,
+      "engine": [
+        {
+          "text": "addVar",
+          "va": "0x630804"
+        }
+      ]
+    },
+    {
+      "script": "div",
+      "uses": 225,
+      "engine": [
+        {
+          "text": "div",
+          "va": "0x6306b8"
+        }
+      ]
+    },
+    {
+      "script": "smoveTroop",
+      "uses": 207,
+      "engine": [
+        {
+          "text": "smoveTroop",
+          "va": "0x630428"
+        },
+        {
+          "text": "smoveTroop",
+          "va": "0x630558"
+        }
+      ]
+    },
+    {
+      "script": "storeLeaderOfSpot",
+      "uses": 197,
+      "engine": [
+        {
+          "text": "storeLeaderOfSpot",
+          "va": "0x630924"
+        }
+      ]
+    },
+    {
+      "script": "pushDiplo",
+      "uses": 190,
+      "engine": [
+        {
+          "text": "pushDiplo",
+          "va": "0x630750"
+        }
+      ]
+    },
+    {
+      "script": "getTime",
+      "uses": 182,
+      "engine": [
+        {
+          "text": "getTime",
+          "va": "0x635414"
+        }
+      ]
+    },
+    {
+      "script": "addPowerMerce2",
+      "uses": 174,
+      "engine": [
+        {
+          "text": "addPowerMerce2",
+          "va": "0x630f88"
+        },
+        {
+          "text": "addPowerMerce2",
+          "va": "0x6312a8"
+        }
+      ]
+    },
+    {
+      "script": "addstr",
+      "uses": 167,
+      "engine": [
+        {
+          "text": "addstr",
+          "va": "0x630b84"
+        }
+      ]
+    },
+    {
+      "script": "addPowerStaff2",
+      "uses": 166,
+      "engine": [
+        {
+          "text": "addPowerStaff2",
+          "va": "0x630fa8"
+        },
+        {
+          "text": "addPowerStaff2",
+          "va": "0x6312c0"
+        }
+      ]
+    },
+    {
+      "script": "storeMemberOfUnit",
+      "uses": 162,
+      "engine": [
+        {
+          "text": "storeMemberOfUnit",
+          "va": "0x630970"
+        }
+      ]
+    },
+    {
+      "script": "shuffle",
+      "uses": 162,
+      "engine": [
+        {
+          "text": "shuffle",
+          "va": "0x630830"
+        }
+      ]
+    },
+    {
+      "script": "changePowerName",
+      "uses": 161,
+      "engine": [
+        {
+          "text": "changePowerName",
+          "va": "0x630f08"
+        }
+      ]
+    },
+    {
+      "script": "pushv",
+      "uses": 155,
+      "engine": [
+        {
+          "text": "pushv",
+          "va": "0x6306c4"
+        }
+      ]
+    },
+    {
+      "script": "removeSkill",
+      "uses": 148,
+      "engine": [
+        {
+          "text": "removeSkill",
+          "va": "0x631088"
+        }
+      ]
+    },
+    {
+      "script": "SkillTroop",
+      "uses": 148,
+      "engine": [
+        {
+          "text": "skillTroop",
+          "va": "0x6304d8"
+        }
+      ]
+    },
+    {
+      "script": "isPlayerTurn",
+      "uses": 143,
+      "engine": [
+        {
+          "text": "isPlayerTurn",
+          "va": "0x6351f8"
+        }
+      ]
+    },
+    {
+      "script": "getTurn",
+      "uses": 143,
+      "engine": [
+        {
+          "text": "getTurn",
+          "va": "0x6352ec"
+        }
+      ]
+    },
+    {
+      "script": "addSkill2",
+      "uses": 140,
+      "engine": [
+        {
+          "text": "addSkill2",
+          "va": "0x631070"
+        },
+        {
+          "text": "addSkill2",
+          "va": "0x63130c"
+        }
+      ]
+    },
+    {
+      "script": "countSpot",
+      "uses": 139,
+      "engine": [
+        {
+          "text": "countSpot",
+          "va": "0x6352f4"
+        }
+      ]
+    },
+    {
+      "script": "addStatus",
+      "uses": 136,
+      "engine": [
+        {
+          "text": "addStatus",
+          "va": "0x631094"
+        },
+        {
+          "text": "addStatus",
+          "va": "0x631318"
+        }
+      ]
+    },
+    {
+      "script": "rand",
+      "uses": 135,
+      "engine": [
+        {
+          "text": "rand",
+          "va": "0x6351d0"
+        }
+      ]
+    },
+    {
+      "script": "isScenario",
+      "uses": 125,
+      "engine": [
+        {
+          "text": "isScenario",
+          "va": "0x635214"
+        }
+      ]
+    },
+    {
+      "script": "isSameArmy",
+      "uses": 120,
+      "engine": [
+        {
+          "text": "isSameArmy",
+          "va": "0x6352c0"
+        }
+      ]
+    },
+    {
+      "script": "isNewTurn",
+      "uses": 118,
+      "engine": [
+        {
+          "text": "isNewTurn",
+          "va": "0x6351d8"
+        }
+      ]
+    },
+    {
+      "script": "isComTurn",
+      "uses": 118,
+      "engine": [
+        {
+          "text": "isComTurn",
+          "va": "0x635220"
+        }
+      ]
+    },
+    {
+      "script": "pushStatus",
+      "uses": 113,
+      "engine": [
+        {
+          "text": "pushStatus",
+          "va": "0x6307a0"
+        }
+      ]
+    },
+    {
+      "script": "backscroll",
+      "uses": 108,
+      "engine": [
+        {
+          "text": "backScroll",
+          "va": "0x6315b0"
+        }
+      ]
+    },
+    {
+      "script": "font",
+      "uses": 108,
+      "engine": [
+        {
+          "text": "font",
+          "va": "0x631504"
+        }
+      ]
+    },
+    {
+      "script": "hideSpot",
+      "uses": 106,
+      "engine": [
+        {
+          "text": "hideSpot",
+          "va": "0x631664"
+        }
+      ]
+    },
+    {
+      "script": "isTalent",
+      "uses": 103,
+      "engine": [
+        {
+          "text": "isTalent",
+          "va": "0x6352a8"
+        }
+      ]
+    },
+    {
+      "script": "storeSpotOfPower",
+      "uses": 102,
+      "engine": [
+        {
+          "text": "storeSpotOfPower",
+          "va": "0x6308ec"
+        }
+      ]
+    },
+    {
+      "script": "unionPower",
+      "uses": 101,
+      "engine": [
+        {
+          "text": "unionPower",
+          "va": "0x630efc"
+        }
+      ]
+    },
+    {
+      "script": "changeMaster",
+      "uses": 99,
+      "engine": [
+        {
+          "text": "changeMaster",
+          "va": "0x630f38"
+        }
+      ]
+    },
+    {
+      "script": "addGain",
+      "uses": 99,
+      "engine": [
+        {
+          "text": "addGain",
+          "va": "0x6310c4"
+        },
+        {
+          "text": "addGain",
+          "va": "0x631378"
+        }
+      ]
+    },
+    {
+      "script": "countMoney",
+      "uses": 98,
+      "engine": [
+        {
+          "text": "countMoney",
+          "va": "0x635318"
+        }
+      ]
+    },
+    {
+      "script": "setTrainingUp",
+      "uses": 92,
+      "engine": [
+        {
+          "text": "setTrainingUp",
+          "va": "0x630fe0"
+        }
+      ]
+    },
+    {
+      "script": "image",
+      "uses": 90,
+      "engine": [
+        {
+          "text": "image",
+          "va": "0x6240a4"
+        },
+        {
+          "text": "image",
+          "va": "0x6240ac"
+        },
+        {
+          "text": "image",
+          "va": "0x625574"
+        },
+        {
+          "text": "image",
+          "va": "0x626db8"
+        },
+        {
+          "text": "image",
+          "va": "0x626e28"
+        },
+        {
+          "text": "image",
+          "va": "0x62da60"
+        },
+        {
+          "text": "image",
+          "va": "0x62dba4"
+        },
+        {
+          "text": "image",
+          "va": "0x630e04"
+        },
+        {
+          "text": "image",
+          "va": "0x6316cc"
+        },
+        {
+          "text": "image",
+          "va": "0x634264"
+        },
+        {
+          "text": "image",
+          "va": "0x6342b8"
+        },
+        {
+          "text": "image",
+          "va": "0x635f9c"
+        },
+        {
+          "text": "image",
+          "va": "0x636030"
+        },
+        {
+          "text": "image",
+          "va": "0x63643a"
+        }
+      ]
+    },
+    {
+      "script": "storeSpotOfUnit",
+      "uses": 87,
+      "engine": [
+        {
+          "text": "storeSpotOfUnit",
+          "va": "0x630900"
+        }
+      ]
+    },
+    {
+      "script": "storePowerOfUnit",
+      "uses": 86,
+      "engine": [
+        {
+          "text": "storePowerOfUnit",
+          "va": "0x6308d8"
+        }
+      ]
+    },
+    {
+      "script": "removeTroop",
+      "uses": 85,
+      "engine": [
+        {
+          "text": "removeTroop",
+          "va": "0x6303f4"
+        },
+        {
+          "text": "removeTroop",
+          "va": "0x630540"
+        }
+      ]
+    },
+    {
+      "script": "addLimit",
+      "uses": 82,
+      "engine": [
+        {
+          "text": "addLimit",
+          "va": "0x6303dc"
+        }
+      ]
+    },
+    {
+      "script": "storeUnitOfPower",
+      "uses": 80,
+      "engine": [
+        {
+          "text": "storeUnitOfPower",
+          "va": "0x630938"
+        }
+      ]
+    },
+    {
+      "script": "title2",
+      "uses": 77,
+      "engine": [
+        {
+          "text": "title2",
+          "va": "0x631550"
+        }
+      ]
+    },
+    {
+      "script": "storePlayerUnit",
+      "uses": 76,
+      "engine": [
+        {
+          "text": "storePlayerUnit",
+          "va": "0x63087c"
+        }
+      ]
+    },
+    {
+      "script": "addDiplo",
+      "uses": 76,
+      "engine": [
+        {
+          "text": "addDiplo",
+          "va": "0x630e44"
+        },
+        {
+          "text": "addDiplo",
+          "va": "0x63121c"
+        },
+        {
+          "text": "addDiplo",
+          "va": "0x631228"
+        }
+      ]
+    },
+    {
+      "script": "addskill",
+      "uses": 75,
+      "engine": [
+        {
+          "text": "addSkill",
+          "va": "0x631064"
+        }
+      ]
+    },
+    {
+      "script": "addPower",
+      "uses": 74,
+      "engine": [
+        {
+          "text": "addPower",
+          "va": "0x630e88"
+        }
+      ]
+    },
+    {
+      "script": "isPlayerEnd",
+      "uses": 74,
+      "engine": [
+        {
+          "text": "isPlayerEnd",
+          "va": "0x635208"
+        }
+      ]
+    },
+    {
+      "script": "pushRand",
+      "uses": 74,
+      "engine": [
+        {
+          "text": "pushRand",
+          "va": "0x6306e0"
+        }
+      ]
+    },
+    {
+      "script": "setDone",
+      "uses": 71,
+      "engine": [
+        {
+          "text": "setDone",
+          "va": "0x6310ac"
+        }
+      ]
+    },
+    {
+      "script": "erasePower",
+      "uses": 70,
+      "engine": [
+        {
+          "text": "erasePower",
+          "va": "0x630e94"
+        }
+      ]
+    },
+    {
+      "script": "setTraining",
+      "uses": 69,
+      "engine": [
+        {
+          "text": "setTraining",
+          "va": "0x630fc4"
+        }
+      ]
+    },
+    {
+      "script": "resetWorldMusic",
+      "uses": 67,
+      "engine": [
+        {
+          "text": "resetWorldMusic",
+          "va": "0x631648"
+        }
+      ]
+    },
+    {
+      "script": "setLeague",
+      "uses": 67,
+      "engine": [
+        {
+          "text": "setLeague",
+          "va": "0x630e0c"
+        },
+        {
+          "text": "setLeague",
+          "va": "0x63118c"
+        },
+        {
+          "text": "setLeague",
+          "va": "0x6311a4"
+        },
+        {
+          "text": "setLeague",
+          "va": "0x6311b0"
+        },
+        {
+          "text": "setLeague",
+          "va": "0x6311bc"
+        },
+        {
+          "text": "setLeague",
+          "va": "0x6311c8"
+        }
+      ]
+    },
+    {
+      "script": "stopBGM",
+      "uses": 67,
+      "engine": [
+        {
+          "text": "stopBGM",
+          "va": "0x631600"
+        }
+      ]
+    },
+    {
+      "script": "storeNextSpot",
+      "uses": 63,
+      "engine": [
+        {
+          "text": "storeNextSpot",
+          "va": "0x630a40"
+        }
+      ]
+    },
+    {
+      "script": "per",
+      "uses": 62,
+      "engine": [
+        {
+          "text": "per",
+          "va": "0x6306c0"
+        }
+      ]
+    },
+    {
+      "script": "isLeague",
+      "uses": 60,
+      "engine": [
+        {
+          "text": "isLeague",
+          "va": "0x635370"
+        }
+      ]
+    },
+    {
+      "script": "sleepTroop",
+      "uses": 60,
+      "engine": [
+        {
+          "text": "sleepTroop",
+          "va": "0x630498"
+        }
+      ]
+    },
+    {
+      "script": "setEnemyPower",
+      "uses": 59,
+      "engine": [
+        {
+          "text": "setEnemyPower",
+          "va": "0x630e5c"
+        }
+      ]
+    },
+    {
+      "script": "erasePowerMerce",
+      "uses": 58,
+      "engine": [
+        {
+          "text": "erasePowerMerce",
+          "va": "0x630f58"
+        }
+      ]
+    },
+    {
+      "script": "storeAllTalent",
+      "uses": 58,
+      "engine": [
+        {
+          "text": "storeAllTalent",
+          "va": "0x630a50"
+        }
+      ]
+    },
+    {
+      "script": "storeRaceOfUnit",
+      "uses": 57,
+      "engine": [
+        {
+          "text": "storeRaceOfUnit",
+          "va": "0x6309c4"
+        },
+        {
+          "text": "storeRaceOfUnit",
+          "va": "0x630c70"
+        }
+      ]
+    },
+    {
+      "script": "isPostIn",
+      "uses": 57,
+      "engine": [
+        {
+          "text": "isPostIn",
+          "va": "0x6354b8"
+        }
+      ]
+    },
+    {
+      "script": "erasePowerStaff",
+      "uses": 57,
+      "engine": [
+        {
+          "text": "erasePowerStaff",
+          "va": "0x630f68"
+        }
+      ]
+    },
+    {
+      "script": "isVassal",
+      "uses": 56,
+      "engine": [
+        {
+          "text": "isVassal",
+          "va": "0x63528c"
+        }
+      ]
+    },
+    {
+      "script": "isWar",
+      "uses": 54,
+      "engine": [
+        {
+          "text": "isWar",
+          "va": "0x635368"
+        }
+      ]
+    },
+    {
+      "script": "linkEscape",
+      "uses": 53,
+      "engine": [
+        {
+          "text": "linkEscape",
+          "va": "0x63167c"
+        }
+      ]
+    },
+    {
+      "script": "pushTurn",
+      "uses": 49,
+      "engine": [
+        {
+          "text": "pushTurn",
+          "va": "0x6306d4"
+        }
+      ]
+    },
+    {
+      "script": "addunit",
+      "uses": 47,
+      "engine": [
+        {
+          "text": "addUnit",
+          "va": "0x630eb4"
+        }
+      ]
+    },
+    {
+      "script": "pushMoney",
+      "uses": 46,
+      "engine": [
+        {
+          "text": "pushMoney",
+          "va": "0x6306f8"
+        }
+      ]
+    },
+    {
+      "script": "changePlayer",
+      "uses": 45,
+      "engine": [
+        {
+          "text": "changePlayer",
+          "va": "0x630f48"
+        }
+      ]
+    },
+    {
+      "script": "return",
+      "uses": 43,
+      "engine": [
+        {
+          "text": "return",
+          "va": "0x631484"
+        }
+      ]
+    },
+    {
+      "script": "next",
+      "uses": 42,
+      "engine": [
+        {
+          "text": "next",
+          "va": "0x6248cc"
+        },
+        {
+          "text": "next",
+          "va": "0x6314bc"
+        }
+      ]
+    },
+    {
+      "script": "pushSpot",
+      "uses": 42,
+      "engine": [
+        {
+          "text": "pushSpot",
+          "va": "0x630714"
+        }
+      ]
+    },
+    {
+      "script": "break",
+      "uses": 42,
+      "engine": [
+        {
+          "text": "break",
+          "va": "0x627d94"
+        },
+        {
+          "text": "break",
+          "va": "0x6299a4"
+        },
+        {
+          "text": "break",
+          "va": "0x62a2fc"
+        },
+        {
+          "text": "break",
+          "va": "0x62b2f0"
+        },
+        {
+          "text": "break",
+          "va": "0x62dab0"
+        },
+        {
+          "text": "break",
+          "va": "0x6314a0"
+        },
+        {
+          "text": "break",
+          "va": "0x631b78"
+        }
+      ]
+    },
+    {
+      "script": "storeud",
+      "uses": 42,
+      "engine": [
+        {
+          "text": "storeud",
+          "va": "0x6305f4"
+        },
+        {
+          "text": "storeUD",
+          "va": "0x630684"
+        }
+      ]
+    },
+    {
+      "script": "storeLeaderOfPower",
+      "uses": 41,
+      "engine": [
+        {
+          "text": "storeLeaderOfPower",
+          "va": "0x630910"
+        }
+      ]
+    },
+    {
+      "script": "storeSkillOfUnit",
+      "uses": 40,
+      "engine": [
+        {
+          "text": "storeSkillOfUnit",
+          "va": "0x6309d4"
+        }
+      ]
+    },
+    {
+      "script": "isLeader",
+      "uses": 39,
+      "engine": [
+        {
+          "text": "isLeader",
+          "va": "0x635280"
+        }
+      ]
+    },
+    {
+      "script": "changePowerFix",
+      "uses": 39,
+      "engine": [
+        {
+          "text": "changePowerFix",
+          "va": "0x630f28"
+        }
+      ]
+    },
+    {
+      "script": "setCapa",
+      "uses": 37,
+      "engine": [
+        {
+          "text": "setCapa",
+          "va": "0x6310f4"
+        }
+      ]
+    },
+    {
+      "script": "storeAllPower",
+      "uses": 37,
+      "engine": [
+        {
+          "text": "storeAllPower",
+          "va": "0x630a0c"
+        }
+      ]
+    },
+    {
+      "script": "eraseFriend",
+      "uses": 37,
+      "engine": [
+        {
+          "text": "eraseFriend",
+          "va": "0x631150"
+        },
+        {
+          "text": "eraseFriend",
+          "va": "0x6313b0"
+        }
+      ]
+    },
+    {
+      "script": "setPM",
+      "uses": 36,
+      "engine": [
+        {
+          "text": "setPM",
+          "va": "0x630b4c"
+        }
+      ]
+    },
+    {
+      "script": "storeSkillset",
+      "uses": 33,
+      "engine": [
+        {
+          "text": "storeSkillset",
+          "va": "0x630b08"
+        }
+      ]
+    },
+    {
+      "script": "addmoney",
+      "uses": 33,
+      "engine": [
+        {
+          "text": "addMoney",
+          "va": "0x630ff0"
+        },
+        {
+          "text": "addMoney",
+          "va": "0x631300"
+        }
+      ]
+    },
+    {
+      "script": "win",
+      "uses": 32,
+      "engine": [
+        {
+          "text": "win",
+          "va": "0x63148c"
+        }
+      ]
+    },
+    {
+      "script": "storeAllSpot",
+      "uses": 32,
+      "engine": [
+        {
+          "text": "storeAllSpot",
+          "va": "0x630a1c"
+        }
+      ]
+    },
+    {
+      "script": "pushSex",
+      "uses": 32,
+      "engine": [
+        {
+          "text": "pushSex",
+          "va": "0x63075c"
+        }
+      ]
+    },
+    {
+      "script": "setStatus",
+      "uses": 29,
+      "engine": [
+        {
+          "text": "setStatus",
+          "va": "0x6310a0"
+        }
+      ]
+    },
+    {
+      "script": "setud",
+      "uses": 27,
+      "engine": [
+        {
+          "text": "setud",
+          "va": "0x63067c"
+        }
+      ]
+    },
+    {
+      "script": "isJoin",
+      "uses": 26,
+      "engine": [
+        {
+          "text": "isJoin",
+          "va": "0x635360"
+        }
+      ]
+    },
+    {
+      "script": "storePlayerPower",
+      "uses": 26,
+      "engine": [
+        {
+          "text": "storePlayerPower",
+          "va": "0x63088c"
+        }
+      ]
+    },
+    {
+      "script": "moveTroop",
+      "uses": 26,
+      "engine": [
+        {
+          "text": "moveTroop",
+          "va": "0x63040c"
+        },
+        {
+          "text": "moveTroop",
+          "va": "0x63054c"
+        }
+      ]
+    },
+    {
+      "script": "terminate",
+      "uses": 25,
+      "engine": [
+        {
+          "text": "terminate",
+          "va": "0x6314a8"
+        }
+      ]
+    },
+    {
+      "script": "setBaseLevel",
+      "uses": 25,
+      "engine": [
+        {
+          "text": "setBaseLevel",
+          "va": "0x63116c"
+        }
+      ]
+    },
+    {
+      "script": "countmoney",
+      "uses": 23,
+      "engine": [
+        {
+          "text": "countMoney",
+          "va": "0x635318"
+        }
+      ]
+    },
+    {
+      "script": "unctrlTroop",
+      "uses": 23,
+      "engine": [
+        {
+          "text": "unctrlTroop",
+          "va": "0x6304a4"
+        },
+        {
+          "text": "unctrlTroop",
+          "va": "0x63059c"
+        }
+      ]
+    },
+    {
+      "script": "addlevel",
+      "uses": 22,
+      "engine": [
+        {
+          "text": "addLevel",
+          "va": "0x631034"
+        }
+      ]
+    },
+    {
+      "script": "playse",
+      "uses": 22,
+      "engine": [
+        {
+          "text": "playSE",
+          "va": "0x6315e8"
+        }
+      ]
+    },
+    {
+      "script": "choicetitle",
+      "uses": 20,
+      "engine": [
+        {
+          "text": "choiceTitle",
+          "va": "0x6317fc"
+        }
+      ]
+    },
+    {
+      "script": "addBaseLevel",
+      "uses": 19,
+      "engine": [
+        {
+          "text": "addBaseLevel",
+          "va": "0x63115c"
+        },
+        {
+          "text": "addBaseLevel",
+          "va": "0x6312f0"
+        }
+      ]
+    },
+    {
+      "script": "ismaster",
+      "uses": 19,
+      "engine": [
+        {
+          "text": "isMaster",
+          "va": "0x635260"
+        }
+      ]
+    },
+    {
+      "script": "continue",
+      "uses": 19,
+      "engine": [
+        {
+          "text": "continue",
+          "va": "0x6313fc"
+        },
+        {
+          "text": "continue",
+          "va": "0x632a58"
+        }
+      ]
+    },
+    {
+      "script": "pushLimit",
+      "uses": 19,
+      "engine": [
+        {
+          "text": "pushLimit",
+          "va": "0x6307d8"
+        }
+      ]
+    },
+    {
+      "script": "setMoney",
+      "uses": 18,
+      "engine": [
+        {
+          "text": "setMoney",
+          "va": "0x630ffc"
+        }
+      ]
+    },
+    {
+      "script": "isDone",
+      "uses": 18,
+      "engine": [
+        {
+          "text": "isDone",
+          "va": "0x6352d8"
+        }
+      ]
+    },
+    {
+      "script": "changeSpotImage",
+      "uses": 17,
+      "engine": [
+        {
+          "text": "changeSpotImage",
+          "va": "0x6310b4"
+        }
+      ]
+    },
+    {
+      "script": "showspot",
+      "uses": 17,
+      "engine": [
+        {
+          "text": "showSpot",
+          "va": "0x631658"
+        }
+      ]
+    },
+    {
+      "script": "eraseUnitTroop",
+      "uses": 16,
+      "engine": [
+        {
+          "text": "eraseUnitTroop",
+          "va": "0x630ec8"
+        }
+      ]
+    },
+    {
+      "script": "ctrlTroop",
+      "uses": 16,
+      "engine": [
+        {
+          "text": "ctrlTroop",
+          "va": "0x6304b0"
+        }
+      ]
+    },
+    {
+      "script": "adddiplo",
+      "uses": 15,
+      "engine": [
+        {
+          "text": "addDiplo",
+          "va": "0x630e44"
+        },
+        {
+          "text": "addDiplo",
+          "va": "0x63121c"
+        },
+        {
+          "text": "addDiplo",
+          "va": "0x631228"
+        }
+      ]
+    },
+    {
+      "script": "resetLeague",
+      "uses": 15,
+      "engine": [
+        {
+          "text": "resetLeague",
+          "va": "0x630e20"
+        },
+        {
+          "text": "resetLeague",
+          "va": "0x631198"
+        }
+      ]
+    },
+    {
+      "script": "locate",
+      "uses": 14,
+      "engine": [
+        {
+          "text": "locate",
+          "va": "0x6315d8"
+        }
+      ]
+    },
+    {
+      "script": "storePowerOfSpot",
+      "uses": 14,
+      "engine": [
+        {
+          "text": "storePowerOfSpot",
+          "va": "0x6308c4"
+        }
+      ]
+    },
+    {
+      "script": "picture2",
+      "uses": 14,
+      "engine": [
+        {
+          "text": "picture2",
+          "va": "0x6316e4"
+        },
+        {
+          "text": "picture2",
+          "va": "0x6318ec"
+        }
+      ]
+    },
+    {
+      "script": "pushCastle",
+      "uses": 14,
+      "engine": [
+        {
+          "text": "pushCastle",
+          "va": "0x630738"
+        }
+      ]
+    },
+    {
+      "script": "isWatching",
+      "uses": 14,
+      "engine": [
+        {
+          "text": "isWatching",
+          "va": "0x6351a8"
+        }
+      ]
+    },
+    {
+      "script": "mod",
+      "uses": 14,
+      "engine": [
+        {
+          "text": "mod",
+          "va": "0x6306bc"
+        }
+      ]
+    },
+    {
+      "script": "playWorld",
+      "uses": 14,
+      "engine": [
+        {
+          "text": "playWorld",
+          "va": "0x631620"
+        }
+      ]
+    },
+    {
+      "script": "isBlueAlive",
+      "uses": 13,
+      "engine": [
+        {
+          "text": "isBlueAlive",
+          "va": "0x635490"
+        }
+      ]
+    },
+    {
+      "script": "setGain",
+      "uses": 13,
+      "engine": [
+        {
+          "text": "setGain",
+          "va": "0x6310cc"
+        }
+      ]
+    },
+    {
+      "script": "storeNeutralSpot",
+      "uses": 13,
+      "engine": [
+        {
+          "text": "storeNeutralSpot",
+          "va": "0x630a2c"
+        }
+      ]
+    },
+    {
+      "script": "resetTruce",
+      "uses": 13,
+      "engine": [
+        {
+          "text": "resetTruce",
+          "va": "0x630e38"
+        },
+        {
+          "text": "resetTruce",
+          "va": "0x6311e0"
+        }
+      ]
+    },
+    {
+      "script": "setGameClear",
+      "uses": 13,
+      "engine": [
+        {
+          "text": "setGameClear",
+          "va": "0x6317b4"
+        }
+      ]
+    },
+    {
+      "script": "save",
+      "uses": 13,
+      "engine": [
+        {
+          "text": "save",
+          "va": "0x62a6f0"
+        },
+        {
+          "text": "save",
+          "va": "0x62a700"
+        },
+        {
+          "text": "save",
+          "va": "0x62a715"
+        },
+        {
+          "text": "save",
+          "va": "0x62a71f"
+        },
+        {
+          "text": "save",
+          "va": "0x62f34c"
+        },
+        {
+          "text": "save",
+          "va": "0x62f378"
+        },
+        {
+          "text": "save",
+          "va": "0x62f383"
+        },
+        {
+          "text": "save",
+          "va": "0x6314b4"
+        }
+      ]
+    },
+    {
+      "script": "scroll2",
+      "uses": 13,
+      "engine": [
+        {
+          "text": "scroll2",
+          "va": "0x6315d0"
+        }
+      ]
+    },
+    {
+      "script": "isActive",
+      "uses": 13,
+      "engine": [
+        {
+          "text": "isActive",
+          "va": "0x635458"
+        }
+      ]
+    },
+    {
+      "script": "storeComPower",
+      "uses": 12,
+      "engine": [
+        {
+          "text": "storeComPower",
+          "va": "0x6308b4"
+        }
+      ]
+    },
+    {
+      "script": "hidespot",
+      "uses": 12,
+      "engine": [
+        {
+          "text": "hideSpot",
+          "va": "0x631664"
+        }
+      ]
+    },
+    {
+      "script": "changerace",
+      "uses": 12,
+      "engine": [
+        {
+          "text": "changeRace",
+          "va": "0x631058"
+        }
+      ]
+    },
+    {
+      "script": "addstatus",
+      "uses": 12,
+      "engine": [
+        {
+          "text": "addStatus",
+          "va": "0x631094"
+        },
+        {
+          "text": "addStatus",
+          "va": "0x631318"
+        }
+      ]
+    },
+    {
+      "script": "storePowerofUnit",
+      "uses": 12,
+      "engine": [
+        {
+          "text": "storePowerOfUnit",
+          "va": "0x6308d8"
+        }
+      ]
+    },
+    {
+      "script": "PlaySE",
+      "uses": 12,
+      "engine": [
+        {
+          "text": "playSE",
+          "va": "0x6315e8"
+        }
+      ]
+    },
+    {
+      "script": "hideimage",
+      "uses": 12,
+      "engine": [
+        {
+          "text": "hideImage",
+          "va": "0x63171c"
+        }
+      ]
+    },
+    {
+      "script": "countVar",
+      "uses": 12,
+      "engine": [
+        {
+          "text": "countVar",
+          "va": "0x6353b8"
+        }
+      ]
+    },
+    {
+      "script": "storeNowPower",
+      "uses": 11,
+      "engine": [
+        {
+          "text": "storeNowPower",
+          "va": "0x6309fc"
+        }
+      ]
+    },
+    {
+      "script": "addgain",
+      "uses": 11,
+      "engine": [
+        {
+          "text": "addGain",
+          "va": "0x6310c4"
+        },
+        {
+          "text": "addGain",
+          "va": "0x631378"
+        }
+      ]
+    },
+    {
+      "script": "isalive",
+      "uses": 11,
+      "engine": [
+        {
+          "text": "isAlive",
+          "va": "0x635258"
+        }
+      ]
+    },
+    {
+      "script": "addMerits",
+      "uses": 11,
+      "engine": [
+        {
+          "text": "addMerits",
+          "va": "0x631014"
+        }
+      ]
+    },
+    {
+      "script": "pushGain",
+      "uses": 11,
+      "engine": [
+        {
+          "text": "pushGain",
+          "va": "0x63072c"
+        }
+      ]
+    },
+    {
+      "script": "storespotofpower",
+      "uses": 10,
+      "engine": [
+        {
+          "text": "storeSpotOfPower",
+          "va": "0x6308ec"
+        }
+      ]
+    },
+    {
+      "script": "resetEnemyPower",
+      "uses": 10,
+      "engine": [
+        {
+          "text": "resetEnemyPower",
+          "va": "0x630e6c"
+        }
+      ]
+    },
+    {
+      "script": "getLimit",
+      "uses": 10,
+      "engine": [
+        {
+          "text": "getLimit",
+          "va": "0x63541c"
+        }
+      ]
+    },
+    {
+      "script": "changePowerFlag",
+      "uses": 9,
+      "engine": [
+        {
+          "text": "changePowerFlag",
+          "va": "0x630f18"
+        }
+      ]
+    },
+    {
+      "script": "storeMasterOfPower",
+      "uses": 9,
+      "engine": [
+        {
+          "text": "storeMasterOfPower",
+          "va": "0x630984"
+        }
+      ]
+    },
+    {
+      "script": "talk",
+      "uses": 9,
+      "engine": [
+        {
+          "text": "talk",
+          "va": "0x62b124"
+        },
+        {
+          "text": "talk",
+          "va": "0x62c9dc"
+        },
+        {
+          "text": "talk",
+          "va": "0x62ca84"
+        },
+        {
+          "text": "talk",
+          "va": "0x6314e4"
+        }
+      ]
+    },
+    {
+      "script": "removeSpot",
+      "uses": 9,
+      "engine": [
+        {
+          "text": "removeSpot",
+          "va": "0x630ea8"
+        }
+      ]
+    },
+    {
+      "script": "title",
+      "uses": 8,
+      "engine": [
+        {
+          "text": "title",
+          "va": "0x628f88"
+        },
+        {
+          "text": "title",
+          "va": "0x629030"
+        },
+        {
+          "text": "title",
+          "va": "0x62b594"
+        },
+        {
+          "text": "title",
+          "va": "0x631548"
+        },
+        {
+          "text": "title",
+          "va": "0x631838"
+        }
+      ]
+    },
+    {
+      "script": "addCastle",
+      "uses": 8,
+      "engine": [
+        {
+          "text": "addCastle",
+          "va": "0x6310d4"
+        },
+        {
+          "text": "addCastle",
+          "va": "0x631380"
+        }
+      ]
+    },
+    {
+      "script": "storeBaseClassOfUnit",
+      "uses": 8,
+      "engine": [
+        {
+          "text": "storeBaseClassOfUnit",
+          "va": "0x6309ac"
+        },
+        {
+          "text": "storeBaseClassOfUnit",
+          "va": "0x630c58"
+        }
+      ]
+    },
+    {
+      "script": "storeunitofpower",
+      "uses": 8,
+      "engine": [
+        {
+          "text": "storeUnitOfPower",
+          "va": "0x630938"
+        }
+      ]
+    },
+    {
+      "script": "getLife",
+      "uses": 8,
+      "engine": [
+        {
+          "text": "getLife",
+          "va": "0x635470"
+        }
+      ]
+    },
+    {
+      "script": "retreatTroop",
+      "uses": 8,
+      "engine": [
+        {
+          "text": "retreatTroop",
+          "va": "0x6304bc"
+        }
+      ]
+    },
+    {
+      "script": "isAllDead",
+      "uses": 8,
+      "engine": [
+        {
+          "text": "isAllDead",
+          "va": "0x635408"
+        }
+      ]
+    },
+    {
+      "script": "pushdiplo",
+      "uses": 7,
+      "engine": [
+        {
+          "text": "pushDiplo",
+          "va": "0x630750"
+        }
+      ]
+    },
+    {
+      "script": "storeAttackPower",
+      "uses": 7,
+      "engine": [
+        {
+          "text": "storeAttackPower",
+          "va": "0x630a98"
+        }
+      ]
+    },
+    {
+      "script": "Linkspot",
+      "uses": 7,
+      "engine": [
+        {
+          "text": "linkSpot",
+          "va": "0x631670"
+        },
+        {
+          "text": "linkSpot",
+          "va": "0x631854"
+        },
+        {
+          "text": "linkSpot",
+          "va": "0x63189c"
+        },
+        {
+          "text": "linkSpot",
+          "va": "0x6318b0"
+        }
+      ]
+    },
+    {
+      "script": "setLimit",
+      "uses": 7,
+      "engine": [
+        {
+          "text": "setLimit",
+          "va": "0x6303d0"
+        },
+        {
+          "text": "setLimit",
+          "va": "0x63050c"
+        },
+        {
+          "text": "setLimit",
+          "va": "0x630518"
+        }
+      ]
+    },
+    {
+      "script": "isArbeit",
+      "uses": 7,
+      "engine": [
+        {
+          "text": "isArbeit",
+          "va": "0x6352cc"
+        }
+      ]
+    },
+    {
+      "script": "speedTroop",
+      "uses": 6,
+      "engine": [
+        {
+          "text": "speedTroop",
+          "va": "0x6304cc"
+        }
+      ]
+    },
+    {
+      "script": "setPowerHome",
+      "uses": 6,
+      "engine": [
+        {
+          "text": "setPowerHome",
+          "va": "0x63117c"
+        }
+      ]
+    },
+    {
+      "script": "isplayer",
+      "uses": 6,
+      "engine": [
+        {
+          "text": "isPlayer",
+          "va": "0x635244"
+        }
+      ]
+    },
+    {
+      "script": "loopBGM",
+      "uses": 6,
+      "engine": [
+        {
+          "text": "loopBGM",
+          "va": "0x631618"
+        }
+      ]
+    },
+    {
+      "script": "setCastle",
+      "uses": 6,
+      "engine": [
+        {
+          "text": "setCastle",
+          "va": "0x6310e0"
+        }
+      ]
+    },
+    {
+      "script": "isRoamLeader",
+      "uses": 6,
+      "engine": [
+        {
+          "text": "isRoamLeader",
+          "va": "0x635298"
+        }
+      ]
+    },
+    {
+      "script": "storeDefensePower",
+      "uses": 6,
+      "engine": [
+        {
+          "text": "storeDefensePower",
+          "va": "0x630ac0"
+        }
+      ]
+    },
+    {
+      "script": "battleEvent",
+      "uses": 6,
+      "engine": [
+        {
+          "text": "battleEvent",
+          "va": "0x6314cc"
+        }
+      ]
+    },
+    {
+      "script": "storeRectUnit",
+      "uses": 6,
+      "engine": [
+        {
+          "text": "storeRectUnit",
+          "va": "0x630b18"
+        }
+      ]
+    },
+    {
+      "script": "subvar",
+      "uses": 6,
+      "engine": [
+        {
+          "text": "subVar",
+          "va": "0x630814"
+        }
+      ]
+    },
+    {
+      "script": "linkspot",
+      "uses": 6,
+      "engine": [
+        {
+          "text": "linkSpot",
+          "va": "0x631670"
+        },
+        {
+          "text": "linkSpot",
+          "va": "0x631854"
+        },
+        {
+          "text": "linkSpot",
+          "va": "0x63189c"
+        },
+        {
+          "text": "linkSpot",
+          "va": "0x6318b0"
+        }
+      ]
+    },
+    {
+      "script": "pushBaseLevel",
+      "uses": 6,
+      "engine": [
+        {
+          "text": "pushBaseLevel",
+          "va": "0x630b5c"
+        }
+      ]
+    },
+    {
+      "script": "storeAliveUnit",
+      "uses": 6,
+      "engine": [
+        {
+          "text": "storeAliveUnit",
+          "va": "0x630ae8"
+        }
+      ]
+    },
+    {
+      "script": "isGameClear",
+      "uses": 5,
+      "engine": [
+        {
+          "text": "isGameClear",
+          "va": "0x63518c"
+        }
+      ]
+    },
+    {
+      "script": "storeUnitofPower",
+      "uses": 5,
+      "engine": [
+        {
+          "text": "storeUnitOfPower",
+          "va": "0x630938"
+        }
+      ]
+    },
+    {
+      "script": "storeRoamUnitOfSpot",
+      "uses": 5,
+      "engine": [
+        {
+          "text": "storeRoamUnitOfSpot",
+          "va": "0x63095c"
+        }
+      ]
+    },
+    {
+      "script": "isNext",
+      "uses": 5,
+      "engine": [
+        {
+          "text": "isNext",
+          "va": "0x6353a4"
+        }
+      ]
+    },
+    {
+      "script": "LinkSpot",
+      "uses": 5,
+      "engine": [
+        {
+          "text": "linkSpot",
+          "va": "0x631670"
+        },
+        {
+          "text": "linkSpot",
+          "va": "0x631854"
+        },
+        {
+          "text": "linkSpot",
+          "va": "0x63189c"
+        },
+        {
+          "text": "linkSpot",
+          "va": "0x6318b0"
+        }
+      ]
+    },
+    {
+      "script": "freeTroop",
+      "uses": 5,
+      "engine": [
+        {
+          "text": "freeTroop",
+          "va": "0x630468"
+        }
+      ]
+    },
+    {
+      "script": "storeIndexVar",
+      "uses": 5,
+      "engine": [
+        {
+          "text": "storeIndexVar",
+          "va": "0x630858"
+        }
+      ]
+    },
+    {
+      "script": "addTrust",
+      "uses": 4,
+      "engine": [
+        {
+          "text": "addTrust",
+          "va": "0x631020"
+        }
+      ]
+    },
+    {
+      "script": "inpower",
+      "uses": 4,
+      "engine": [
+        {
+          "text": "inPower",
+          "va": "0x635338"
+        }
+      ]
+    },
+    {
+      "script": "storeRaceofUnit",
+      "uses": 4,
+      "engine": [
+        {
+          "text": "storeRaceOfUnit",
+          "va": "0x6309c4"
+        },
+        {
+          "text": "storeRaceOfUnit",
+          "va": "0x630c70"
+        }
+      ]
+    },
+    {
+      "script": "pushCapa",
+      "uses": 4,
+      "engine": [
+        {
+          "text": "pushCapa",
+          "va": "0x630744"
+        }
+      ]
+    },
+    {
+      "script": "addskill2",
+      "uses": 4,
+      "engine": [
+        {
+          "text": "addSkill2",
+          "va": "0x631070"
+        },
+        {
+          "text": "addSkill2",
+          "va": "0x63130c"
+        }
+      ]
+    },
+    {
+      "script": "PlayBGM",
+      "uses": 4,
+      "engine": [
+        {
+          "text": "playBGM",
+          "va": "0x6315f0"
+        }
+      ]
+    },
+    {
+      "script": "eraseTroop",
+      "uses": 4,
+      "engine": [
+        {
+          "text": "eraseTroop",
+          "va": "0x630400"
+        }
+      ]
+    },
+    {
+      "script": "addTrainingUp",
+      "uses": 4,
+      "engine": [
+        {
+          "text": "addTrainingUp",
+          "va": "0x630fd0"
+        },
+        {
+          "text": "addTrainingUp",
+          "va": "0x6312e0"
+        }
+      ]
+    },
+    {
+      "script": "isRedAlive",
+      "uses": 4,
+      "engine": [
+        {
+          "text": "isRedAlive",
+          "va": "0x635484"
+        }
+      ]
+    },
+    {
+      "script": "countPower",
+      "uses": 4,
+      "engine": [
+        {
+          "text": "countPower",
+          "va": "0x63532c"
+        }
+      ]
+    },
+    {
+      "script": "subVar",
+      "uses": 4,
+      "engine": [
+        {
+          "text": "subVar",
+          "va": "0x630814"
+        }
+      ]
+    },
+    {
+      "script": "pushMerits",
+      "uses": 4,
+      "engine": [
+        {
+          "text": "pushMerits",
+          "va": "0x63077c"
+        }
+      ]
+    },
+    {
+      "script": "storeClassOfUnit",
+      "uses": 4,
+      "engine": [
+        {
+          "text": "storeClassOfUnit",
+          "va": "0x630998"
+        }
+      ]
+    },
+    {
+      "script": "countUnit",
+      "uses": 4,
+      "engine": [
+        {
+          "text": "countUnit",
+          "va": "0x635478"
+        }
+      ]
+    },
+    {
+      "script": "storeBattleSpot",
+      "uses": 3,
+      "engine": [
+        {
+          "text": "storeBattleSpot",
+          "va": "0x630a74"
+        }
+      ]
+    },
+    {
+      "script": "storePowerOfForce",
+      "uses": 3,
+      "engine": [
+        {
+          "text": "storePowerOfForce",
+          "va": "0x6309e8"
+        }
+      ]
+    },
+    {
+      "script": "storeSpotofUnit",
+      "uses": 3,
+      "engine": [
+        {
+          "text": "storeSpotOfUnit",
+          "va": "0x630900"
+        }
+      ]
+    },
+    {
+      "script": "addtrust",
+      "uses": 3,
+      "engine": [
+        {
+          "text": "addTrust",
+          "va": "0x631020"
+        }
+      ]
+    },
+    {
+      "script": "UnionPower",
+      "uses": 3,
+      "engine": [
+        {
+          "text": "unionPower",
+          "va": "0x630efc"
+        }
+      ]
+    },
+    {
+      "script": "isNPM",
+      "uses": 3,
+      "engine": [
+        {
+          "text": "isNPM",
+          "va": "0x6351a0"
+        }
+      ]
+    },
+    {
+      "script": "isNPC",
+      "uses": 2,
+      "engine": [
+        {
+          "text": "isNpc",
+          "va": "0x635250"
+        }
+      ]
+    },
+    {
+      "script": "storeSpotofPower",
+      "uses": 2,
+      "engine": [
+        {
+          "text": "storeSpotOfPower",
+          "va": "0x6308ec"
+        }
+      ]
+    },
+    {
+      "script": "storeSpotofpower",
+      "uses": 2,
+      "engine": [
+        {
+          "text": "storeSpotOfPower",
+          "va": "0x6308ec"
+        }
+      ]
+    },
+    {
+      "script": "setArbeit",
+      "uses": 2,
+      "engine": [
+        {
+          "text": "setArbeit",
+          "va": "0x630e7c"
+        }
+      ]
+    },
+    {
+      "script": "pushspot",
+      "uses": 2,
+      "engine": [
+        {
+          "text": "pushSpot",
+          "va": "0x630714"
+        }
+      ]
+    },
+    {
+      "script": "pushTrain",
+      "uses": 2,
+      "engine": [
+        {
+          "text": "pushTrain",
+          "va": "0x630b6c"
+        }
+      ]
+    },
+    {
+      "script": "isInvade",
+      "uses": 2,
+      "engine": [
+        {
+          "text": "isInvade",
+          "va": "0x63537c"
+        }
+      ]
+    },
+    {
+      "script": "roamunit",
+      "uses": 2,
+      "engine": [
+        {
+          "text": "roamUnit",
+          "va": "0x630ed8"
+        },
+        {
+          "text": "roamUnit",
+          "va": "0x631250"
+        }
+      ]
+    },
+    {
+      "script": "playbgm",
+      "uses": 2,
+      "engine": [
+        {
+          "text": "playBGM",
+          "va": "0x6315f0"
+        }
+      ]
+    },
+    {
+      "script": "stopbgm",
+      "uses": 2,
+      "engine": [
+        {
+          "text": "stopBGM",
+          "va": "0x631600"
+        }
+      ]
+    },
+    {
+      "script": "fontc",
+      "uses": 2,
+      "engine": [
+        {
+          "text": "fontc",
+          "va": "0x63150c"
+        }
+      ]
+    },
+    {
+      "script": "isNewturn",
+      "uses": 2,
+      "engine": [
+        {
+          "text": "isNewTurn",
+          "va": "0x6351d8"
+        }
+      ]
+    },
+    {
+      "script": "isPlayerturn",
+      "uses": 2,
+      "engine": [
+        {
+          "text": "isPlayerTurn",
+          "va": "0x6351f8"
+        }
+      ]
+    },
+    {
+      "script": "addvar",
+      "uses": 2,
+      "engine": [
+        {
+          "text": "addVar",
+          "va": "0x630804"
+        }
+      ]
+    },
+    {
+      "script": "aimTroop",
+      "uses": 2,
+      "engine": [
+        {
+          "text": "aimTroop",
+          "va": "0x6304e4"
+        }
+      ]
+    },
+    {
+      "script": "pushCountPower",
+      "uses": 2,
+      "engine": [
+        {
+          "text": "pushCountPower",
+          "va": "0x630704"
+        }
+      ]
+    },
+    {
+      "script": "addCapa",
+      "uses": 2,
+      "engine": [
+        {
+          "text": "addCapa",
+          "va": "0x6310ec"
+        },
+        {
+          "text": "addCapa",
+          "va": "0x63138c"
+        }
+      ]
+    },
+    {
+      "script": "doskill",
+      "uses": 1,
+      "engine": [
+        {
+          "text": "doskill",
+          "va": "0x631768"
+        }
+      ]
+    },
+    {
+      "script": "GetTurn",
+      "uses": 1,
+      "engine": [
+        {
+          "text": "getTurn",
+          "va": "0x6352ec"
+        }
+      ]
+    },
+    {
+      "script": "exit",
+      "uses": 1,
+      "engine": [
+        {
+          "text": "exit",
+          "va": "0x6317c4"
+        }
+      ]
+    },
+    {
+      "script": "storebaseClassOfUnit",
+      "uses": 1,
+      "engine": [
+        {
+          "text": "storeBaseClassOfUnit",
+          "va": "0x6309ac"
+        },
+        {
+          "text": "storeBaseClassOfUnit",
+          "va": "0x630c58"
+        }
+      ]
+    },
+    {
+      "script": "addcastle",
+      "uses": 1,
+      "engine": [
+        {
+          "text": "addCastle",
+          "va": "0x6310d4"
+        },
+        {
+          "text": "addCastle",
+          "va": "0x631380"
+        }
+      ]
+    },
+    {
+      "script": "storecompower",
+      "uses": 1,
+      "engine": [
+        {
+          "text": "storeComPower",
+          "va": "0x6308b4"
+        }
+      ]
+    },
+    {
+      "script": "storeAllspot",
+      "uses": 1,
+      "engine": [
+        {
+          "text": "storeAllSpot",
+          "va": "0x630a1c"
+        }
+      ]
+    },
+    {
+      "script": "storeSkillofUnit",
+      "uses": 1,
+      "engine": [
+        {
+          "text": "storeSkillOfUnit",
+          "va": "0x6309d4"
+        }
+      ]
+    },
+    {
+      "script": "countGain",
+      "uses": 1,
+      "engine": [
+        {
+          "text": "countGain",
+          "va": "0x63530c"
+        }
+      ]
+    },
+    {
+      "script": "storeskillofunit",
+      "uses": 1,
+      "engine": [
+        {
+          "text": "storeSkillOfUnit",
+          "va": "0x6309d4"
+        }
+      ]
+    },
+    {
+      "script": "getturn",
+      "uses": 1,
+      "engine": [
+        {
+          "text": "getTurn",
+          "va": "0x6352ec"
+        }
+      ]
+    },
+    {
+      "script": "addfriend",
+      "uses": 1,
+      "engine": [
+        {
+          "text": "addFriend",
+          "va": "0x631144"
+        }
+      ]
+    },
+    {
+      "script": "HideLink",
+      "uses": 1,
+      "engine": [
+        {
+          "text": "hideLink",
+          "va": "0x631688"
+        },
+        {
+          "text": "hideLink",
+          "va": "0x6318c4"
+        }
+      ]
+    },
+    {
+      "script": "getBlueCount",
+      "uses": 1,
+      "engine": [
+        {
+          "text": "getBlueCount",
+          "va": "0x6354a8"
+        }
+      ]
+    },
+    {
+      "script": "iswar",
+      "uses": 1,
+      "engine": [
+        {
+          "text": "isWar",
+          "va": "0x635368"
+        }
+      ]
+    },
+    {
+      "script": "shiftTroop",
+      "uses": 1,
+      "engine": [
+        {
+          "text": "shiftTroop",
+          "va": "0x630444"
+        },
+        {
+          "text": "shiftTroop",
+          "va": "0x630564"
+        }
+      ]
+    },
+    {
+      "script": "istoWorld",
+      "uses": 1,
+      "engine": [
+        {
+          "text": "istoWorld",
+          "va": "0x635238"
+        }
+      ]
+    },
+    {
+      "script": "pushRand2",
+      "uses": 1,
+      "engine": [
+        {
+          "text": "pushRand2",
+          "va": "0x6306ec"
+        }
+      ]
+    },
+    {
+      "script": "isWorld",
+      "uses": 1,
+      "engine": [
+        {
+          "text": "isWorld",
+          "va": "0x6351b4"
+        }
+      ]
+    },
+    {
+      "script": "pushTrainUp",
+      "uses": 1,
+      "engine": [
+        {
+          "text": "pushTrainUp",
+          "va": "0x630b78"
+        }
+      ]
+    }
+  ]
+}

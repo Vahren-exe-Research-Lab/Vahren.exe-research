@@ -1,0 +1,269 @@
+{
+  "status": "STATIC DAT parent effective attr / add2 crossjoin, not native effects",
+  "Skill_func_heal_total": 320,
+  "by_attr_and_add2": {
+    "recognized19/add2_empty": 279,
+    "other/add2_empty": 2,
+    "empty/add2_nonempty": 20,
+    "empty/add2_empty": 19
+  },
+  "samples_by_cell": {
+    "recognized19/add2_empty": [
+      "nisehsiwaru_dext",
+      "nisehsiwaru_speed",
+      "new_misairu_target_nt",
+      "new_misairu_nt3",
+      "new_misairu_nt3b",
+      "new_misairu_nt3c",
+      "new_misairu_nt3d",
+      "new_misairu_nt3e",
+      "new_misairu_nt3ab",
+      "new_misairu_nt3bb",
+      "new_misairu_nt3cb",
+      "new_misairu_nt3db",
+      "new_misairu_nt3eb",
+      "new_misairu_nt3ac",
+      "new_misairu_nt3bc",
+      "new_misairu_nt3cc",
+      "new_misairu_nt3dc",
+      "new_misairu_nt3ec",
+      "s_power",
+      "s_power_yari",
+      "m_dark_new_nt1",
+      "m_yaku_nt2_a4",
+      "m_yaku_nt2_b4",
+      "m_yaku_nt2_d4",
+      "rocket_ramen_heal",
+      "burauni_gun_nt3_heal",
+      "s_power_s",
+      "seiretsu",
+      "seiretsu2",
+      "seiretsu3"
+    ],
+    "other/add2_empty": [
+      "m_yaku_nt2_c4",
+      "sp_jun_yaku_nt2_c4"
+    ],
+    "empty/add2_nonempty": [
+      "sp_move_nt2",
+      "sp_heal_nt1",
+      "sp_heal_nt2",
+      "sp_knn_nt1",
+      "sp_nyn_down",
+      "sp_ryuma_nt2",
+      "kdance_move",
+      "sp_heal2_nt1",
+      "sp_heal2_nt2",
+      "sp_heal_3_nt1",
+      "g_inmudash_heal",
+      "asasin_cream_protect_ability_1",
+      "asasin_cream_weapon_ability_self",
+      "asasin_cream_weapon_ability_enemy",
+      "asasin_cream_weapon_glove_ability_self",
+      "asasin_cream_weapon_glove_ability_enemy",
+      "hanzo_cream_weapon_ability_self",
+      "hanzo_cream_weapon_ability_enemy",
+      "hanzo_cream_weapon_glove_ability_self",
+      "hanzo_cream_weapon_glove_ability_enemy"
+    ],
+    "empty/add2_empty": [
+      "heal_clown_mprec",
+      "son_voe_down2",
+      "son_voe_down3",
+      "son_voe_down4",
+      "son_voe_down5",
+      "son_voe_down6",
+      "son_voe_down7",
+      "sp_zrklson_at",
+      "sp_zrklson_df",
+      "sp_zrklson_mg",
+      "sp_zrklson_dx",
+      "sp_zrklson_sp",
+      "sp_zrklson_hr",
+      "sp_zrklson_mr",
+      "sp_zrklson_mv",
+      "senkyo_happy_nt1",
+      "sp_biim_kamakura_nt1",
+      "sp_biim_kamakura_nt2",
+      "u_diplo_nt"
+    ]
+  },
+  "attr_empty_and_add2_nonempty": 20,
+  "all_add2_members_from_19_callback_keys": true,
+  "examples_blank_attr_with_add2": [
+    {
+      "tag": "sp_move_nt2",
+      "members": [
+        "move",
+        "para",
+        "stone"
+      ],
+      "add_all": "on"
+    },
+    {
+      "tag": "sp_heal_nt1",
+      "members": [
+        "hp",
+        "all"
+      ],
+      "add_all": "on"
+    },
+    {
+      "tag": "sp_heal_nt2",
+      "members": [
+        "hp",
+        "all"
+      ],
+      "add_all": "on"
+    },
+    {
+      "tag": "sp_knn_nt1",
+      "members": [
+        "hp",
+        "all"
+      ],
+      "add_all": "on"
+    },
+    {
+      "tag": "sp_nyn_down",
+      "members": [
+        "hprec",
+        "mprec"
+      ],
+      "add_all": "on"
+    },
+    {
+      "tag": "sp_ryuma_nt2",
+      "members": [
+        "hp",
+        "all",
+        "attack",
+        "defense",
+        "magic",
+        "dext",
+        "speed"
+      ],
+      "add_all": "on"
+    },
+    {
+      "tag": "kdance_move",
+      "members": [
+        "move",
+        "para",
+        "stone"
+      ],
+      "add_all": "on"
+    },
+    {
+      "tag": "sp_heal2_nt1",
+      "members": [
+        "hp",
+        "all"
+      ],
+      "add_all": "on"
+    },
+    {
+      "tag": "sp_heal2_nt2",
+      "members": [
+        "hp",
+        "all"
+      ],
+      "add_all": "on"
+    },
+    {
+      "tag": "sp_heal_3_nt1",
+      "members": [
+        "hp",
+        "all"
+      ],
+      "add_all": "on"
+    },
+    {
+      "tag": "g_inmudash_heal",
+      "members": [
+        "move"
+      ],
+      "add_all": "on"
+    },
+    {
+      "tag": "asasin_cream_protect_ability_1",
+      "members": [
+        "defense"
+      ],
+      "add_all": ""
+    },
+    {
+      "tag": "asasin_cream_weapon_ability_self",
+      "members": [
+        "attack",
+        "dext"
+      ],
+      "add_all": "on"
+    },
+    {
+      "tag": "asasin_cream_weapon_ability_enemy",
+      "members": [
+        "defense",
+        "dext"
+      ],
+      "add_all": "on"
+    },
+    {
+      "tag": "asasin_cream_weapon_glove_ability_self",
+      "members": [
+        "attack",
+        "dext"
+      ],
+      "add_all": ""
+    },
+    {
+      "tag": "asasin_cream_weapon_glove_ability_enemy",
+      "members": [
+        "defense",
+        "dext"
+      ],
+      "add_all": ""
+    },
+    {
+      "tag": "hanzo_cream_weapon_ability_self",
+      "members": [
+        "attack",
+        "dext"
+      ],
+      "add_all": "on"
+    },
+    {
+      "tag": "hanzo_cream_weapon_ability_enemy",
+      "members": [
+        "defense",
+        "dext"
+      ],
+      "add_all": "on"
+    },
+    {
+      "tag": "hanzo_cream_weapon_glove_ability_self",
+      "members": [
+        "attack",
+        "dext"
+      ],
+      "add_all": ""
+    },
+    {
+      "tag": "hanzo_cream_weapon_glove_ability_enemy",
+      "members": [
+        "defense",
+        "dext"
+      ],
+      "add_all": ""
+    }
+  ],
+  "suggestion": "When Skill attr empty but add2 nonempty, do not treat it as a no-effect Skill: compile a separate candidate-name vector for native 551653 investigation.",
+  "unknowns": [
+    "Order of add2/attr/add_all compiled native Skill fields",
+    "415530/4ACE30/551653 effects and return",
+    "Whether native 68D420 names equal callback registry keys",
+    "Original visual results and cost/RNG"
+  ],
+  "golden": 0,
+  "strict_match": 0
+}

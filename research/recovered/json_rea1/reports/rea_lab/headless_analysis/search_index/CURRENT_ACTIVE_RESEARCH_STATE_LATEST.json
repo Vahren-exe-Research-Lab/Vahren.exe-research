@@ -1,0 +1,13 @@
+{
+  "status": "CURRENT_V9_SELECTED_BY_USER_20261029",
+  "current_database": "HAKUSHIN067_UNIFIED_V9_20261023.sqlite",
+  "current_database_sha256": "2629CB2F03ECEC9927E89892C77F847E4CDBA381AB718825C1CA8CFEEEF00EDE",
+  "current_cli": "search_unified_v9_20261023.py",
+  "knowledge_cli": "../../../knowledge/kb.py",
+  "standard_ghidra_project": "Hakushin067_ResidualCodeRepair_20261022",
+  "read_first": "../00_START_HERE_ACTIVE_RESEARCH.md",
+  "previous_pointer": "V3 (search_current.py), superseded 2026-10-29; old files moved to _history_20261029 or recycle bin",
+  "exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "updated_by": "Claude 2026-10-29",
+  "gameplay_result": "STATIC_ONLY"
+}

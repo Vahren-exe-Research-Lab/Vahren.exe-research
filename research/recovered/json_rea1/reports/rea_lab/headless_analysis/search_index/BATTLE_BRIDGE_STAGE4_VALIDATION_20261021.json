@@ -1,0 +1,67 @@
+{
+  "id": "BRIDGE-20261021-STAGE4-VALIDATE",
+  "status": "PE_STATIC_AND_SYNTHETIC_SELF_CHECK / ORIGINAL_GAME_NOT_RUN",
+  "original_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "checks": {
+    "original_copy_SHA": true,
+    "hook_source_matches_original": true,
+    "host_source_matches_original": true,
+    "owner_source_matches_original": true,
+    "focus_source_matches_original": true,
+    "hook_return_site_2_bytes": true,
+    "hook_caller_site_5_bytes": true,
+    "adjacent_branch_untouched": true,
+    "manager_task_owner_crosswalk": true,
+    "focus_xref_exact_six": true,
+    "focus_only_two_direct_writes": true,
+    "stage4_findings_unique": true,
+    "all_stage4_evidence_linked": true,
+    "canonical_index_saved": true,
+    "synthetic_suite_32_pass": true
+  },
+  "checks_passed": 15,
+  "checks_total": 15,
+  "synthetic_cases_run": 32,
+  "synthetic_failure_count": 0,
+  "test_output": "................................\n----------------------------------------------------------------------\nRan 32 tests in 0.014s\n\nOK\n",
+  "pe_evidence": [
+    {
+      "name": "BATTLE_BRIDGE_STAGE4_HOOKSITE_PE_20261021.json",
+      "sha256": "B5AA1C1520A12826AFAA28065D79422F0E72387D06646E1299A8B8F2AAE38449",
+      "bytes": 2427
+    },
+    {
+      "name": "BATTLE_BRIDGE_STAGE4_OWNER_ABI_PE_20261021.json",
+      "sha256": "D7AF9909B2E0EF6BA2FE7CC0EE4B2027DFC2A4069E219BB5AF2181A8767FD7C5",
+      "bytes": 2817
+    },
+    {
+      "name": "BATTLE_BRIDGE_STAGE4_HOSTLOOP_PE_20261021.json",
+      "sha256": "D025D76729D1EE405FE24EE7EF3AA5556C62B60DC10E9061813F231BCDDF258B",
+      "bytes": 41889
+    },
+    {
+      "name": "BATTLE_BRIDGE_STAGE4_FOCUS_PAUSE_PE_20261021.json",
+      "sha256": "5873B9104A08E1AF56F2194FF4BB42973128AF506B7E3D941478054F4553FA1B",
+      "bytes": 3639
+    },
+    {
+      "name": "BATTLE_BRIDGE_RESEARCH_INDEX.md",
+      "sha256": "8C758F71B4264DC0263A60621631B7643F713C3E28FA5B156522233657476D6E",
+      "bytes": 4311
+    },
+    {
+      "name": "BATTLE_TAKEOVER_RESEARCH_STAGE4_20261021.md",
+      "sha256": "9E829696EC3E53EEAD8EF4E908A95301F5E8068E974F1F39E29AD58D678D8F65",
+      "bytes": 5543
+    },
+    {
+      "name": "BATTLE_BRIDGE_FINDINGS_LEDGER.jsonl",
+      "sha256": "B5F0107C114835C7C8362A891F9C81757B5FB305ABB9614FC9B1388F55DF07ED",
+      "bytes": 3766
+    }
+  ],
+  "original_gameplay_golden_pass": 0,
+  "old_to_external_to_old_real_battle_pass": 0,
+  "advice": "Keep normal markdown/json/source canonical; ZIP only immutable handoff backup"
+}

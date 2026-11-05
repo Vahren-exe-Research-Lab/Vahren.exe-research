@@ -1,0 +1,475 @@
+{
+  "id": "EXP-HITINPUTS-20261022-06",
+  "status": "STATIC_NATIVE_DAT_REPLAY_ONLY",
+  "sources": {
+    "hakushin067_Vahren.exe": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+    "HAKUSHIN067_CURRENT_CANONICAL_V3_20261022.sqlite": "0B057C43D30EAEC74588C84CF7E09AA7A488BD0FF170925591953EF578AFCB25",
+    "新約迫真戦記―ほのぼの神話ver0.67 豪華版(画像・音声削除版).zip": "A1DAC7209FCA6FBF7D05D956054047B4C36E5149EB100434BF796CCB94970423"
+  },
+  "native_checks": [
+    {
+      "function": "0x544790",
+      "site": "0x5447f4",
+      "bytes": "8b4d08",
+      "instruction": "mov ecx, dword ptr [ebp + 8]"
+    },
+    {
+      "function": "0x544790",
+      "site": "0x5447f7",
+      "bytes": "298b90000000",
+      "instruction": "sub dword ptr [ebx + 0x90], ecx"
+    },
+    {
+      "function": "0x550e70",
+      "site": "0x5510db",
+      "bytes": "8bf8",
+      "instruction": "mov edi, eax"
+    },
+    {
+      "function": "0x550e70",
+      "site": "0x5510ea",
+      "bytes": "33ff",
+      "instruction": "xor edi, edi"
+    },
+    {
+      "function": "0x550e70",
+      "site": "0x5510f7",
+      "bytes": "8bcf",
+      "instruction": "mov ecx, edi"
+    },
+    {
+      "function": "0x550e70",
+      "site": "0x551104",
+      "bytes": "33c9",
+      "instruction": "xor ecx, ecx"
+    },
+    {
+      "function": "0x550e70",
+      "site": "0x551117",
+      "bytes": "b940420f00",
+      "instruction": "mov ecx, 0xf4240"
+    },
+    {
+      "function": "0x550e70",
+      "site": "0x551136",
+      "bytes": "8bc8",
+      "instruction": "mov ecx, eax"
+    },
+    {
+      "function": "0x550e70",
+      "site": "0x551141",
+      "bytes": "8bc8",
+      "instruction": "mov ecx, eax"
+    },
+    {
+      "function": "0x550e70",
+      "site": "0x551151",
+      "bytes": "51",
+      "instruction": "push ecx"
+    },
+    {
+      "function": "0x550e70",
+      "site": "0x551154",
+      "bytes": "ffd2",
+      "instruction": "call edx"
+    },
+    {
+      "function": "0x550e70",
+      "site": "0x551156",
+      "bytes": "8b83c8010000",
+      "instruction": "mov eax, dword ptr [ebx + 0x1c8]"
+    },
+    {
+      "function": "0x550e70",
+      "site": "0x55115c",
+      "bytes": "8b8878010000",
+      "instruction": "mov ecx, dword ptr [eax + 0x178]"
+    },
+    {
+      "function": "0x550e70",
+      "site": "0x551162",
+      "bytes": "51",
+      "instruction": "push ecx"
+    },
+    {
+      "function": "0x550e70",
+      "site": "0x551163",
+      "bytes": "57",
+      "instruction": "push edi"
+    },
+    {
+      "function": "0x550e70",
+      "site": "0x551167",
+      "bytes": "e8e40c0000",
+      "instruction": "call 0x551e50"
+    },
+    {
+      "function": "0x551490",
+      "site": "0x551bb7",
+      "bytes": "0118",
+      "instruction": "add dword ptr [eax], ebx"
+    },
+    {
+      "function": "0x551490",
+      "site": "0x551bc8",
+      "bytes": "8bfa",
+      "instruction": "mov edi, edx"
+    },
+    {
+      "function": "0x551490",
+      "site": "0x551bca",
+      "bytes": "2bf9",
+      "instruction": "sub edi, ecx"
+    },
+    {
+      "function": "0x551490",
+      "site": "0x551bcc",
+      "bytes": "8908",
+      "instruction": "mov dword ptr [eax], ecx"
+    },
+    {
+      "function": "0x551490",
+      "site": "0x551c61",
+      "bytes": "8b11",
+      "instruction": "mov edx, dword ptr [ecx]"
+    },
+    {
+      "function": "0x551490",
+      "site": "0x551c63",
+      "bytes": "8b442420",
+      "instruction": "mov eax, dword ptr [esp + 0x20]"
+    },
+    {
+      "function": "0x551490",
+      "site": "0x551c67",
+      "bytes": "52",
+      "instruction": "push edx"
+    },
+    {
+      "function": "0x551490",
+      "site": "0x551c68",
+      "bytes": "53",
+      "instruction": "push ebx"
+    },
+    {
+      "function": "0x551490",
+      "site": "0x551c6a",
+      "bytes": "e8e1010000",
+      "instruction": "call 0x551e50"
+    },
+    {
+      "function": "0x551490",
+      "site": "0x551c77",
+      "bytes": "2bfb",
+      "instruction": "sub edi, ebx"
+    },
+    {
+      "function": "0x551490",
+      "site": "0x551c79",
+      "bytes": "01bdd8000000",
+      "instruction": "add dword ptr [ebp + 0xd8], edi"
+    },
+    {
+      "function": "0x551e50",
+      "site": "0x551e8e",
+      "bytes": "807e0c00",
+      "instruction": "cmp byte ptr [esi + 0xc], 0"
+    },
+    {
+      "function": "0x551e50",
+      "site": "0x551e92",
+      "bytes": "0f857a010000",
+      "instruction": "jne 0x552012"
+    },
+    {
+      "function": "0x551e50",
+      "site": "0x551e9f",
+      "bytes": "c6460c01",
+      "instruction": "mov byte ptr [esi + 0xc], 1"
+    },
+    {
+      "function": "0x551e50",
+      "site": "0x551ed1",
+      "bytes": "dd05e0b26300",
+      "instruction": "fld qword ptr [0x63b2e0]"
+    },
+    {
+      "function": "0x599bd0",
+      "site": "0x59bb55",
+      "bytes": "ba904c6200",
+      "instruction": "mov edx, 0x624c90"
+    },
+    {
+      "function": "0x599bd0",
+      "site": "0x59bb94",
+      "bytes": "888534020000",
+      "instruction": "mov byte ptr [ebp + 0x234], al"
+    },
+    {
+      "function": "0x599bd0",
+      "site": "0x59cca5",
+      "bytes": "baf84f6200",
+      "instruction": "mov edx, 0x624ff8"
+    },
+    {
+      "function": "0x599bd0",
+      "site": "0x59cdbc",
+      "bytes": "dd9d80020000",
+      "instruction": "fstp qword ptr [ebp + 0x280]"
+    }
+  ],
+  "literals": {
+    "0x624c90": "add_all",
+    "0x624ff8": "str",
+    "0x627654": "hp",
+    "0x629f24": "hp"
+  },
+  "healing_ratio": 0.02,
+  "functions": [
+    {
+      "va": "0x544790",
+      "origin": "ORIGINAL_20261020_GHIDRA_PSEUDOC_UNCORRECTED",
+      "sha256": "6E8673F8A5A104E87D0AB3B58625E2DABB7B0EBD56633BF6C19069F4CF689997",
+      "excerpts": []
+    },
+    {
+      "va": "0x550e70",
+      "origin": "ORIGINAL_20261020_GHIDRA_PSEUDOC_UNCORRECTED",
+      "sha256": "4F0ADBF3458EA25BAF3EE64A8D3E38DBDBFC2E282E167FAD57E5DCAD20299869",
+      "excerpts": [
+        {
+          "line": 94,
+          "text": "      if (*(double *)(iVar6 + 0x280) == 0.0) {"
+        },
+        {
+          "line": 115,
+          "text": "    FUN_00551e50(piVar7,puVar10,*(undefined4 *)(piVar7[0x72] + 0x178));"
+        }
+      ]
+    },
+    {
+      "va": "0x551490",
+      "origin": "ORIGINAL_20261020_GHIDRA_PSEUDOC_UNCORRECTED",
+      "sha256": "65567127F5FD5C4F7707A4ABACC2B46FA1FE838DFCA66F22B0DB06703CCC24E7",
+      "excerpts": [
+        {
+          "line": 102,
+          "text": "  local_158 = param_1;"
+        },
+        {
+          "line": 259,
+          "text": "    local_d4[0] = param_2 + 0xdc;"
+        },
+        {
+          "line": 338,
+          "text": "    FUN_00551e50(param_2,iVar10,*(undefined4 *)local_d4[iVar8]);"
+        }
+      ]
+    },
+    {
+      "va": "0x551e50",
+      "origin": "REPAIRED_GHIDRA_FRESH_DECOMP",
+      "sha256": "9032EB2A3AB30AC1AC0B9DD00DC58A803CB25CE1E7300529072D84BE76952875",
+      "excerpts": [
+        {
+          "line": 11,
+          "text": "void FUN_00551e50(undefined *ctx_eax,dword arg_stack_0,dword arg_stack_1,dword arg_stack_2)"
+        },
+        {
+          "line": 65,
+          "text": "  iVar1 = *(int *)(iVar1 + 0x1c8);"
+        }
+      ]
+    },
+    {
+      "va": "0x599bd0",
+      "origin": "ORIGINAL_20261020_GHIDRA_PSEUDOC_UNCORRECTED",
+      "sha256": "94F69BED55F2E76978B831CCF1179B94987DE2C655B7B861B4E8B49A99588C64",
+      "excerpts": [
+        {
+          "line": 1530,
+          "text": "  *(uint *)(param_3 + 0x1c8) = (uint)(cVar3 != '\\0');"
+        },
+        {
+          "line": 1537,
+          "text": "  iVar7 = *(int *)(param_3 + 0x1c8);"
+        },
+        {
+          "line": 1543,
+          "text": "  *(int *)(param_3 + 0x1c8) = iVar7;"
+        },
+        {
+          "line": 2173,
+          "text": "  *(double *)(param_3 + 0x280) = (double)iStack_1608 * _DAT_0063b070;"
+        }
+      ]
+    }
+  ],
+  "dat_examples": [
+    {
+      "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/F13_heal_support.dat",
+      "id": "sp_heal_nt1",
+      "parent": null,
+      "line": 745,
+      "source_sha256": "5F7A6E6DF21E0FACBD874327EACB334C9867516D5510C3F4956B17FF72317CD2",
+      "fields": {
+        "name": null,
+        "func": "heal",
+        "add2": "hp,all",
+        "add_all": "on",
+        "str": "fix * 80000",
+        "exp_per": "off"
+      },
+      "normalized_uncommented_source": "skill sp_heal_nt1\n{\nexp_per = off\n\tmovetype = drop\n\tadd2 = hp,all\n\tflash_image = eff_d_heal\n\tflash_anime = 8\n\tw = 48\n\th = 48\n\tfunc = heal\n\tflash = 5\n\tspeed = 500\n\theight = 0\n\tstr = fix * 80000\n\tadd_all = on\n}"
+    },
+    {
+      "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/30_スキル/F13_heal_support.dat",
+      "id": "sp_knn_nt1",
+      "parent": null,
+      "line": 807,
+      "source_sha256": "5F7A6E6DF21E0FACBD874327EACB334C9867516D5510C3F4956B17FF72317CD2",
+      "fields": {
+        "name": null,
+        "func": "heal",
+        "add2": "hp,all",
+        "add_all": "on",
+        "str": "fix * 80000",
+        "exp_per": "off"
+      },
+      "normalized_uncommented_source": "skill sp_knn_nt1\n{\nexp_per = off\n\tmovetype = drop\n\tadd2 = hp,all\n\tflash_image = eff_d_heal\n\tflash_anime = 8\n\tw = 48\n\th = 48\n\tfunc = heal\n\tflash = 5\n\tspeed = 250\n\theight = 100\n\tstr = fix * 80000\n\tadd_all = on\n\t\n\tstart_random_degree = 360\n}"
+    },
+    {
+      "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+      "id": "sp_nyn_down",
+      "parent": null,
+      "line": 68,
+      "source_sha256": "9B75D1660FEA0F2F9F48C12BE76A8787C512AB499563821A42B8D6DCB4125DB8",
+      "fields": {
+        "name": null,
+        "func": "heal",
+        "add2": "hprec,mprec",
+        "add_all": "on",
+        "str": "magic * -30",
+        "exp_per": "off"
+      },
+      "normalized_uncommented_source": "skill sp_nyn_down\n{\n\texp_per = off\n\tfunc = heal\n\tadd2 = hprec,mprec\n\tadd_all = on\n\tstr = magic * -30\n}"
+    },
+    {
+      "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/32_ボススキル/B_505_閉店の日.dat",
+      "id": "sp_heal2_nt1",
+      "parent": null,
+      "line": 36,
+      "source_sha256": "02BB4ECDDF186A880DD53CBAC5D5E9408442C9FE0B167324D0C9F6BFA947E3AC",
+      "fields": {
+        "name": null,
+        "func": "heal",
+        "add2": "hp,all",
+        "add_all": "on",
+        "str": "fix * 1000000",
+        "exp_per": "off"
+      },
+      "normalized_uncommented_source": "skill sp_heal2_nt1\n{\nexp_per = off\n\tmovetype = drop\n\tadd2 = hp,all\n\tflash_image = eff_d_heal\n\tflash_anime = 8\n\tw = 48\n\th = 48\n\tfunc = heal\n\tflash = 5\n\tspeed = 500\n\theight = 0\n\tstr = fix * 1000000\n\tadd_all = on\n}"
+    },
+    {
+      "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/32_ボススキル/B_505_閉店の日.dat",
+      "id": "sp_heal_3_nt1",
+      "parent": null,
+      "line": 163,
+      "source_sha256": "02BB4ECDDF186A880DD53CBAC5D5E9408442C9FE0B167324D0C9F6BFA947E3AC",
+      "fields": {
+        "name": null,
+        "func": "heal",
+        "add2": "hp,all",
+        "add_all": "on",
+        "str": "fix * 1000000",
+        "exp_per": "off"
+      },
+      "normalized_uncommented_source": "skill sp_heal_3_nt1\n{\nexp_per = off\n\tmovetype = drop\n\tadd2 = hp,all\n\tflash_image = eff_d_heal\n\tflash_anime = 8\n\tw = 48\n\th = 48\n\tfunc = heal\n\tflash = 5\n\tspeed = 500\n\theight = 0\n\tstr = fix * 1000000\n\tadd_all = on\n}"
+    },
+    {
+      "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/33_仮設アサシン/skill_asasin_cream_weapon.dat",
+      "id": "asasin_cream_weapon_ability_self",
+      "parent": "asasin_cream_weapon_base",
+      "line": 419,
+      "source_sha256": "70971D357142211220F05A0FA6EC07030928CCCB69B7302739964E9EF3678DB8",
+      "fields": {
+        "name": null,
+        "func": "heal",
+        "add2": "attack , dext",
+        "add_all": "on",
+        "str": "fix * 2",
+        "exp_per": null
+      },
+      "normalized_uncommented_source": "skill asasin_cream_weapon_ability_self : asasin_cream_weapon_base\n{\n\tattack_us = 7\n\tdamage = 0\n\tstr = fix * 2\n\tfunc = heal\n\tadd2 = attack , dext\n\tadd_all = on\n}"
+    },
+    {
+      "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/33_仮設アサシン/skill_asasin_cream_weapon.dat",
+      "id": "asasin_cream_weapon_ability_enemy",
+      "parent": "asasin_cream_weapon_base",
+      "line": 429,
+      "source_sha256": "70971D357142211220F05A0FA6EC07030928CCCB69B7302739964E9EF3678DB8",
+      "fields": {
+        "name": null,
+        "func": "heal",
+        "add2": "defense , dext",
+        "add_all": "on",
+        "str": "fix * -2",
+        "exp_per": null
+      },
+      "normalized_uncommented_source": "skill asasin_cream_weapon_ability_enemy : asasin_cream_weapon_base\n{\n\t\n\tmovetype = drop\n\theight = 1\n\tspeed = 100\n\trange = 32\n\tdamage = 0\n\tstr = fix * -2\n\tfunc = heal\n\tadd2 = defense , dext\n\tadd_all = on\n}"
+    },
+    {
+      "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/35_仮設半造/skill_hanzo_cream_weapon.dat",
+      "id": "hanzo_cream_weapon_ability_self",
+      "parent": "hanzo_cream_weapon_base",
+      "line": 431,
+      "source_sha256": "D06B893467ED6E6549CE8679AF6A2634E6F0913343E5F05F1579809D67F4B488",
+      "fields": {
+        "name": null,
+        "func": "heal",
+        "add2": "attack , dext",
+        "add_all": "on",
+        "str": "fix * 2",
+        "exp_per": "off"
+      },
+      "normalized_uncommented_source": "skill hanzo_cream_weapon_ability_self : hanzo_cream_weapon_base\n{\n\tattack_us = 7\n\tdamage = 0\n\tstr = fix * 2\n\tfunc = heal\n\tadd2 = attack , dext\n\tadd_all = on\n\texp_per = off\n}"
+    },
+    {
+      "file": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/a_default/script/35_仮設半造/skill_hanzo_cream_weapon.dat",
+      "id": "hanzo_cream_weapon_ability_enemy",
+      "parent": "hanzo_cream_weapon_base",
+      "line": 442,
+      "source_sha256": "D06B893467ED6E6549CE8679AF6A2634E6F0913343E5F05F1579809D67F4B488",
+      "fields": {
+        "name": null,
+        "func": "heal",
+        "add2": "defense , dext",
+        "add_all": "on",
+        "str": "fix * -2",
+        "exp_per": "off"
+      },
+      "normalized_uncommented_source": "skill hanzo_cream_weapon_ability_enemy : hanzo_cream_weapon_base\n{\n\t\n\tmovetype = drop\n\theight = 1\n\tspeed = 100\n\trange = 32\n\tdamage = 0\n\tstr = fix * -2\n\tfunc = heal\n\tadd2 = defense , dext\n\tadd_all = on\n\texp_per = off\n}"
+    }
+  ],
+  "dat_files": 590,
+  "parsed_source_headers": 16554,
+  "recovered_audit_replay": {
+    "file": "EXP_GATES_NUMERIC_AUDIT_20261022_05.json",
+    "sha256": "C57DC8DDDB54FB5C4512EE5322A219475E76D3EA5EA99CDEFAC5E224E9371C97",
+    "native_sites": 34,
+    "constants": 6,
+    "control_word": 1,
+    "function_hashes": 10,
+    "source_dat_rows": 1972,
+    "result": "PASS"
+  },
+  "limits": [
+    "Only listed native paths; no claim every attack mode follows them",
+    "HP callback and EXP numerator are separate values, not a runtime measurement",
+    "Multi-attribute same-context dedup is conditional on no external context reset",
+    "DAT parser is bounded: no nested blocks, conditional variants or full inheritance resolution",
+    "No in-game target selection or full-HP casting test"
+  ],
+  "source_files_unchanged": true,
+  "gameplay_tests": 0
+}

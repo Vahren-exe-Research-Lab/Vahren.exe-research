@@ -1,0 +1,1446 @@
+{
+  "status": "STATIC-LEXICAL->WORK-NATIVE-PARSER-CANDIDATE, NOT ORIGINAL RUNTIME",
+  "caveat": "Only selected files loaded. 0.01 float callback is a PREVIEW ONLY, not old FPU accuracy.",
+  "original_zip": "新約迫真戦記―ほのぼの神話ver0.67 豪華版(画像・音声削除版).zip",
+  "source_files": [
+    {
+      "path": "a_default/script/30_スキル/F10_missile.dat",
+      "declarations": 591,
+      "error": null,
+      "sha256": "af115bbeb64312ca70cbb864d673d44c5dc9667952ce5e9ea3800d446202810d"
+    },
+    {
+      "path": "a_default/script/30_スキル/F13_heal_support.dat",
+      "declarations": 143,
+      "error": null,
+      "sha256": "5f7a6e6df21e0facbd874327eacb334c9867516d5510c3f4956b17ff72317cd2"
+    },
+    {
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "declarations": 1009,
+      "error": null,
+      "sha256": "8e17ff4566dfc1547323b5acc89dee41b918ea946be160555b758431c0ec3ac3"
+    },
+    {
+      "path": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+      "declarations": 1146,
+      "error": null,
+      "sha256": "958d80b9071063df3cfc81874e9ada5a5a576d9e62f1a6f9bd97e8d4fc20787f"
+    }
+  ],
+  "skills": [
+    {
+      "tag": "m_heal",
+      "source": "a_default/script/30_スキル/F13_heal_support.dat",
+      "line": 54,
+      "registry_exists": true,
+      "chain_tags": [
+        "m_heal"
+      ],
+      "func": {
+        "found": true,
+        "text": "heal",
+        "number": 0,
+        "source_skill": "m_heal",
+        "storage": "scalar"
+      },
+      "attr": {
+        "found": true,
+        "text": "hp",
+        "number": 0,
+        "source_skill": "m_heal",
+        "storage": "scalar"
+      },
+      "mp": {
+        "found": true,
+        "text": "80",
+        "number": 80,
+        "source_skill": "m_heal",
+        "storage": "scalar"
+      },
+      "range": {
+        "found": true,
+        "text": "500",
+        "number": 500,
+        "source_skill": "m_heal",
+        "storage": "scalar"
+      },
+      "check": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "range_min": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "gun_delay": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "str": {
+        "found": true,
+        "text": "magic * 200",
+        "number": 0,
+        "values": [
+          "magic * 200"
+        ],
+        "source_skill": "m_heal",
+        "storage": "keyword_list"
+      },
+      "str_ratio": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "add": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "add2": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "add_all": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "allfunc": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "add_per": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "next": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "next2": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "next3": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "just_next": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "pair_next": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "yorozu": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "time": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "summon_level": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "work_adapter_preview": {
+        "supported": true,
+        "type": "DatHealSkill",
+        "cost": 80,
+        "range_upper": 500,
+        "chance": 100
+      }
+    },
+    {
+      "tag": "seiretsu",
+      "source": "a_default/script/30_スキル/F13_heal_support.dat",
+      "line": 5,
+      "registry_exists": true,
+      "chain_tags": [
+        "seiretsu"
+      ],
+      "func": {
+        "found": true,
+        "text": "heal",
+        "number": 0,
+        "source_skill": "seiretsu",
+        "storage": "scalar"
+      },
+      "attr": {
+        "found": true,
+        "text": "move",
+        "number": 0,
+        "source_skill": "seiretsu",
+        "storage": "scalar"
+      },
+      "mp": {
+        "found": true,
+        "text": "0",
+        "number": 0,
+        "source_skill": "seiretsu",
+        "storage": "scalar"
+      },
+      "range": {
+        "found": true,
+        "text": "0",
+        "number": 0,
+        "source_skill": "seiretsu",
+        "storage": "scalar"
+      },
+      "check": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "range_min": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "gun_delay": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "str": {
+        "found": true,
+        "text": "fix * 20",
+        "number": 0,
+        "values": [
+          "fix * 20"
+        ],
+        "source_skill": "seiretsu",
+        "storage": "keyword_list"
+      },
+      "str_ratio": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "add": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "add2": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "add_all": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "allfunc": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "add_per": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "next": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "next2": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "next3": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "just_next": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "pair_next": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "yorozu": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "time": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "summon_level": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "work_adapter_preview": {
+        "supported": true,
+        "type": "DatHealSkill",
+        "cost": 0,
+        "range_upper": 0,
+        "chance": 100
+      }
+    },
+    {
+      "tag": "cook_heal",
+      "source": "a_default/script/30_スキル/F13_heal_support.dat",
+      "line": 89,
+      "registry_exists": true,
+      "chain_tags": [
+        "cook_heal",
+        "m_heal"
+      ],
+      "func": {
+        "found": true,
+        "text": "heal",
+        "number": 0,
+        "source_skill": "m_heal",
+        "storage": "scalar"
+      },
+      "attr": {
+        "found": true,
+        "text": "hp",
+        "number": 0,
+        "source_skill": "m_heal",
+        "storage": "scalar"
+      },
+      "mp": {
+        "found": true,
+        "text": "0",
+        "number": 0,
+        "source_skill": "cook_heal",
+        "storage": "scalar"
+      },
+      "range": {
+        "found": true,
+        "text": "500",
+        "number": 500,
+        "source_skill": "m_heal",
+        "storage": "scalar"
+      },
+      "check": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "range_min": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "gun_delay": {
+        "found": true,
+        "text": "b_heal*3",
+        "number": 0,
+        "values": [
+          "b_heal*3"
+        ],
+        "source_skill": "cook_heal",
+        "storage": "keyword_list"
+      },
+      "str": {
+        "found": true,
+        "text": "magic_dext * 1500",
+        "number": 0,
+        "values": [
+          "magic_dext * 1500"
+        ],
+        "source_skill": "cook_heal",
+        "storage": "keyword_list"
+      },
+      "str_ratio": {
+        "found": true,
+        "text": "0",
+        "number": 0,
+        "source_skill": "cook_heal",
+        "storage": "scalar"
+      },
+      "add": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "add2": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "add_all": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "allfunc": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "add_per": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "next": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "next2": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "next3": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "just_next": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "pair_next": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "yorozu": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "time": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "summon_level": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "work_adapter_preview": {
+        "supported": true,
+        "type": "DatHealSkill",
+        "cost": 0,
+        "range_upper": 500,
+        "chance": 100
+      }
+    },
+    {
+      "tag": "s_monaka",
+      "source": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 1596,
+      "registry_exists": true,
+      "chain_tags": [
+        "s_monaka"
+      ],
+      "func": {
+        "found": true,
+        "text": "summon",
+        "number": 0,
+        "source_skill": "s_monaka",
+        "storage": "scalar"
+      },
+      "attr": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "mp": {
+        "found": true,
+        "text": "40",
+        "number": 40,
+        "source_skill": "s_monaka",
+        "storage": "scalar"
+      },
+      "range": {
+        "found": true,
+        "text": "100",
+        "number": 100,
+        "source_skill": "s_monaka",
+        "storage": "scalar"
+      },
+      "check": {
+        "found": true,
+        "text": "9999",
+        "number": 9999,
+        "source_skill": "s_monaka",
+        "storage": "scalar"
+      },
+      "range_min": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "gun_delay": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "str": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "str_ratio": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "add": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "add2": {
+        "found": true,
+        "text": "mona0071,mona0072",
+        "number": 0,
+        "values": [
+          "mona0071",
+          "mona0072"
+        ],
+        "source_skill": "s_monaka",
+        "storage": "keyword_list"
+      },
+      "add_all": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "allfunc": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "add_per": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "next": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "next2": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "next3": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "just_next": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "pair_next": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "yorozu": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "time": {
+        "found": true,
+        "text": "12",
+        "number": 12,
+        "source_skill": "s_monaka",
+        "storage": "scalar"
+      },
+      "summon_level": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "work_adapter_preview": {
+        "supported": false,
+        "type": null,
+        "cost": null,
+        "range_upper": null,
+        "chance": null
+      }
+    },
+    {
+      "tag": "b_iwana",
+      "source": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+      "line": 6118,
+      "registry_exists": true,
+      "chain_tags": [
+        "b_iwana",
+        "sk_ms"
+      ],
+      "func": {
+        "found": true,
+        "text": "missile",
+        "number": 0,
+        "source_skill": "sk_ms",
+        "storage": "scalar"
+      },
+      "attr": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "mp": {
+        "found": true,
+        "text": "60",
+        "number": 60,
+        "source_skill": "b_iwana",
+        "storage": "scalar"
+      },
+      "range": {
+        "found": true,
+        "text": "450",
+        "number": 450,
+        "source_skill": "b_iwana",
+        "storage": "scalar"
+      },
+      "check": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "range_min": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "gun_delay": {
+        "found": true,
+        "text": "b_iwana*2",
+        "number": 0,
+        "values": [
+          "b_iwana*2"
+        ],
+        "source_skill": "b_iwana",
+        "storage": "keyword_list"
+      },
+      "str": {
+        "found": true,
+        "text": "magic*10",
+        "number": 0,
+        "values": [
+          "magic*10"
+        ],
+        "source_skill": "b_iwana",
+        "storage": "keyword_list"
+      },
+      "str_ratio": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "add": {
+        "found": true,
+        "text": "magsuck",
+        "number": 0,
+        "source_skill": "b_iwana",
+        "storage": "scalar"
+      },
+      "add2": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "add_all": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "allfunc": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "add_per": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "next": {
+        "found": true,
+        "text": "b_iwana_nt1",
+        "number": 0,
+        "source_skill": "b_iwana",
+        "storage": "scalar"
+      },
+      "next2": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "next3": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "just_next": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "pair_next": {
+        "found": true,
+        "text": "ef_magic",
+        "number": 0,
+        "source_skill": "b_iwana",
+        "storage": "scalar"
+      },
+      "yorozu": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "time": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "summon_level": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "work_adapter_preview": {
+        "supported": true,
+        "type": "DatDamageSkill",
+        "cost": 60,
+        "range_upper": 450,
+        "chance": 100
+      }
+    },
+    {
+      "tag": "spinfiremax",
+      "source": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+      "line": 9318,
+      "registry_exists": true,
+      "chain_tags": [
+        "spinfiremax",
+        "sk_ms"
+      ],
+      "func": {
+        "found": true,
+        "text": "missile",
+        "number": 0,
+        "source_skill": "sk_ms",
+        "storage": "scalar"
+      },
+      "attr": {
+        "found": true,
+        "text": "cn",
+        "number": 0,
+        "source_skill": "spinfiremax",
+        "storage": "scalar"
+      },
+      "mp": {
+        "found": true,
+        "text": "80",
+        "number": 80,
+        "source_skill": "spinfiremax",
+        "storage": "scalar"
+      },
+      "range": {
+        "found": true,
+        "text": "600",
+        "number": 600,
+        "source_skill": "spinfiremax",
+        "storage": "scalar"
+      },
+      "check": {
+        "found": true,
+        "text": "600",
+        "number": 600,
+        "source_skill": "spinfiremax",
+        "storage": "scalar"
+      },
+      "range_min": {
+        "found": true,
+        "text": "150",
+        "number": 150,
+        "source_skill": "spinfiremax",
+        "storage": "scalar"
+      },
+      "gun_delay": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "str": {
+        "found": true,
+        "text": "attack * 0",
+        "number": 0,
+        "values": [
+          "attack * 0"
+        ],
+        "source_skill": "spinfiremax",
+        "storage": "keyword_list"
+      },
+      "str_ratio": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "add": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "add2": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "add_all": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "allfunc": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "add_per": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "next": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "next2": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "next3": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "just_next": {
+        "found": true,
+        "text": "spinfiremax_nt1,spinfiremax_nt2,spinfiremax_nt3",
+        "number": 0,
+        "values": [
+          "spinfiremax_nt1",
+          "spinfiremax_nt2",
+          "spinfiremax_nt3"
+        ],
+        "source_skill": "spinfiremax",
+        "storage": "keyword_list"
+      },
+      "pair_next": {
+        "found": true,
+        "text": "b_cannon_pr0",
+        "number": 0,
+        "source_skill": "spinfiremax",
+        "storage": "scalar"
+      },
+      "yorozu": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "time": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "summon_level": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "work_adapter_preview": {
+        "supported": true,
+        "type": "DatDamageSkill",
+        "cost": 80,
+        "range_upper": 600,
+        "chance": 100
+      }
+    },
+    {
+      "tag": "musen_move",
+      "source": "a_default/script/30_スキル/F13_heal_support.dat",
+      "line": 2069,
+      "registry_exists": true,
+      "chain_tags": [
+        "musen_move"
+      ],
+      "func": {
+        "found": true,
+        "text": "heal",
+        "number": 0,
+        "source_skill": "musen_move",
+        "storage": "scalar"
+      },
+      "attr": {
+        "found": true,
+        "text": "move",
+        "number": 0,
+        "source_skill": "musen_move",
+        "storage": "scalar"
+      },
+      "mp": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "range": {
+        "found": true,
+        "text": "9999",
+        "number": 9999,
+        "source_skill": "musen_move",
+        "storage": "scalar"
+      },
+      "check": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "range_min": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "gun_delay": {
+        "found": true,
+        "text": "musen*2",
+        "number": 0,
+        "values": [
+          "musen*2"
+        ],
+        "source_skill": "musen_move",
+        "storage": "keyword_list"
+      },
+      "str": {
+        "found": true,
+        "text": "fix * 9999",
+        "number": 0,
+        "values": [
+          "fix * 9999"
+        ],
+        "source_skill": "musen_move",
+        "storage": "keyword_list"
+      },
+      "str_ratio": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "add": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "add2": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "add_all": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "allfunc": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "add_per": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "next": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "next2": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "next3": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "just_next": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "pair_next": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "yorozu": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "time": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "summon_level": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "work_adapter_preview": {
+        "supported": true,
+        "type": "DatHealSkill",
+        "cost": 0,
+        "range_upper": 9999,
+        "chance": 100
+      }
+    },
+    {
+      "tag": "b_all",
+      "source": "a_default/script/30_スキル/F13_heal_support.dat",
+      "line": 124,
+      "registry_exists": true,
+      "chain_tags": [
+        "b_all"
+      ],
+      "func": {
+        "found": true,
+        "text": "heal",
+        "number": 0,
+        "source_skill": "b_all",
+        "storage": "scalar"
+      },
+      "attr": {
+        "found": true,
+        "text": "all",
+        "number": 0,
+        "source_skill": "b_all",
+        "storage": "scalar"
+      },
+      "mp": {
+        "found": true,
+        "text": "-1",
+        "number": -1,
+        "source_skill": "b_all",
+        "storage": "scalar"
+      },
+      "range": {
+        "found": true,
+        "text": "400",
+        "number": 400,
+        "source_skill": "b_all",
+        "storage": "scalar"
+      },
+      "check": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "range_min": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "gun_delay": {
+        "found": true,
+        "text": "b_all*3",
+        "number": 0,
+        "values": [
+          "b_all*3"
+        ],
+        "source_skill": "b_all",
+        "storage": "keyword_list"
+      },
+      "str": {
+        "found": true,
+        "text": "magic_dext * 50",
+        "number": 0,
+        "values": [
+          "magic_dext * 50"
+        ],
+        "source_skill": "b_all",
+        "storage": "keyword_list"
+      },
+      "str_ratio": {
+        "found": true,
+        "text": "0",
+        "number": 0,
+        "source_skill": "b_all",
+        "storage": "scalar"
+      },
+      "add": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "add2": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "add_all": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "allfunc": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "add_per": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "next": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "next2": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "next3": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "just_next": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "pair_next": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "yorozu": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "time": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "summon_level": {
+        "found": false,
+        "text": "",
+        "number": 0,
+        "source_skill": null,
+        "storage": "absent"
+      },
+      "work_adapter_preview": {
+        "supported": true,
+        "type": "DatHealSkill",
+        "cost": -1,
+        "range_upper": 400,
+        "chance": 100
+      }
+    }
+  ],
+  "unverified": [
+    "global load order",
+    "other declaration kinds",
+    "MP/success/return",
+    "FPU profile",
+    "actual Unit Skill list",
+    "old EXE gameplay"
+  ]
+}

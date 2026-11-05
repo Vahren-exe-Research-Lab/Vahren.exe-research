@@ -1,0 +1,2266 @@
+{
+  "evidence": "DAT_EXPLICIT direct delay + same-kind parent-chain projection; Native loader mapping VERIFY",
+  "declarations": 16554,
+  "direct_delay_declarations": 256,
+  "effective_delay_after_parent_lookup": 499,
+  "effective_nonzero_nonnull_delay": 418,
+  "help_action_unable_total": 180,
+  "help_with_delay_classification": {
+    "inherited": 35,
+    "direct": 131,
+    "missing": 14
+  },
+  "help_unable_effective": {
+    "sp_ranbu_rensan": {
+      "found": true,
+      "value": "1",
+      "declared_by": "sp_ranbu",
+      "hops": 1,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_0_共用.dat",
+        "line": 178,
+        "parent": "sk_ms"
+      },
+      "direct": false
+    },
+    "s_inyume66r": {
+      "found": true,
+      "value": "2",
+      "declared_by": "s_inyume66r",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/116_仮設ランダムイベント61-70/randomev66_unit_class_inyume66r.dat",
+        "line": 4,
+        "parent": null
+      },
+      "direct": true
+    },
+    "sp_hznkani": {
+      "found": true,
+      "value": "1",
+      "declared_by": "sp_gosaku",
+      "hops": 1,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_6_10_ヒゲクマ～スカーレット.dat",
+        "line": 746,
+        "parent": "sk_ms"
+      },
+      "direct": false
+    },
+    "hzn_firehamachi": {
+      "found": true,
+      "value": "1",
+      "declared_by": "hzn_firehamachi",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_boss.dat",
+        "line": 183,
+        "parent": "atmu_fire"
+      },
+      "direct": true
+    },
+    "hzn_thun26": {
+      "found": true,
+      "value": "1",
+      "declared_by": "atmu_thun",
+      "hops": 1,
+      "source": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 8020,
+        "parent": "m_thun"
+      },
+      "direct": false
+    },
+    "hzn_wate26": {
+      "found": true,
+      "value": "1",
+      "declared_by": "hzn_wate26",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_boss.dat",
+        "line": 243,
+        "parent": "atmu_wate"
+      },
+      "direct": true
+    },
+    "hzn_beam26": {
+      "found": true,
+      "value": "2",
+      "declared_by": "kmn_beam",
+      "hops": 1,
+      "source": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 8246,
+        "parent": "sk_ms"
+      },
+      "direct": false
+    },
+    "cyclops_b": {
+      "found": true,
+      "value": "3",
+      "declared_by": "cyclops_b",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_cyclops.dat",
+        "line": 69,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_hznillu": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_hznillu",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/boss/unit_26_lastboss.dat",
+        "line": 65,
+        "parent": "sp_conf"
+      },
+      "direct": true
+    },
+    "pikasp_zan": {
+      "found": true,
+      "value": "1",
+      "declared_by": "pikasp_zan",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/C_必殺_クラス専用.dat",
+        "line": 787,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "s_yn": {
+      "found": true,
+      "value": "2",
+      "declared_by": "s_yn",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/C_必殺_クラス専用.dat",
+        "line": 1073,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "s_miryosk": {
+      "found": true,
+      "value": "2",
+      "declared_by": "s_miryosk",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 2552,
+        "parent": null
+      },
+      "direct": true
+    },
+    "s_miryosk2": {
+      "found": false,
+      "value": null,
+      "declared_by": null,
+      "hops": 1,
+      "missing_parent": null,
+      "direct": false
+    },
+    "atmu_fire": {
+      "found": true,
+      "value": "1",
+      "declared_by": "atmu_fire",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 7934,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "atmu_thun": {
+      "found": true,
+      "value": "1",
+      "declared_by": "atmu_thun",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 8020,
+        "parent": "m_thun"
+      },
+      "direct": true
+    },
+    "atmu_wate": {
+      "found": true,
+      "value": "1",
+      "declared_by": "atmu_wate",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 8048,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "kmn_misairu": {
+      "found": true,
+      "value": "2",
+      "declared_by": "kmn_misairu",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 8121,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "kmn_gun": {
+      "found": true,
+      "value": "2",
+      "declared_by": "kmn_gun",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 8193,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "kmn_beam": {
+      "found": true,
+      "value": "2",
+      "declared_by": "kmn_beam",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 8246,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "b_arrow2": {
+      "found": true,
+      "value": "2",
+      "declared_by": "b_arrow2",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 141,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "ill_arrow2": {
+      "found": true,
+      "value": "2",
+      "declared_by": "b_arrow2",
+      "hops": 1,
+      "source": {
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 141,
+        "parent": "sk_ms"
+      },
+      "direct": false
+    },
+    "sb_arrow2": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sb_arrow2",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F10_missile_銃弓ナイフ.dat",
+        "line": 342,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "toonoclaw": {
+      "found": false,
+      "value": null,
+      "declared_by": null,
+      "hops": 2,
+      "missing_parent": null,
+      "direct": false
+    },
+    "toono_devour": {
+      "found": false,
+      "value": null,
+      "declared_by": null,
+      "hops": 2,
+      "missing_parent": null,
+      "direct": false
+    },
+    "s_scary": {
+      "found": false,
+      "value": null,
+      "declared_by": null,
+      "hops": 1,
+      "missing_parent": null,
+      "direct": false
+    },
+    "s_inyume": {
+      "found": true,
+      "value": "2",
+      "declared_by": "s_inyume",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 363,
+        "parent": null
+      },
+      "direct": true
+    },
+    "s_toshino": {
+      "found": true,
+      "value": "2",
+      "declared_by": "s_toshino",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 471,
+        "parent": null
+      },
+      "direct": true
+    },
+    "s_crow": {
+      "found": true,
+      "value": "2",
+      "declared_by": "s_crow",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 571,
+        "parent": null
+      },
+      "direct": true
+    },
+    "s_kyonsi": {
+      "found": true,
+      "value": "2",
+      "declared_by": "s_kyonsi",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 599,
+        "parent": null
+      },
+      "direct": true
+    },
+    "s_miira": {
+      "found": true,
+      "value": "2",
+      "declared_by": "s_miira",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 753,
+        "parent": null
+      },
+      "direct": true
+    },
+    "s_alison2": {
+      "found": true,
+      "value": "2",
+      "declared_by": "s_alison2",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 875,
+        "parent": null
+      },
+      "direct": true
+    },
+    "s_kenja": {
+      "found": true,
+      "value": "2",
+      "declared_by": "s_kenja",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 957,
+        "parent": null
+      },
+      "direct": true
+    },
+    "s_monaka": {
+      "found": true,
+      "value": "2",
+      "declared_by": "s_monaka",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 1596,
+        "parent": null
+      },
+      "direct": true
+    },
+    "s_a010": {
+      "found": true,
+      "value": "1",
+      "declared_by": "s_a010",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 2185,
+        "parent": null
+      },
+      "direct": true
+    },
+    "sp_udk_ass": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_udk_ass",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 2252,
+        "parent": null
+      },
+      "direct": true
+    },
+    "s_goeinomi": {
+      "found": true,
+      "value": "2",
+      "declared_by": "s_goeinomi",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 3360,
+        "parent": null
+      },
+      "direct": true
+    },
+    "sp_bangi": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_bangi",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 4331,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_firero": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_firero",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 4665,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "firerosp_zan": {
+      "found": true,
+      "value": "1",
+      "declared_by": "firerosp_zan",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 4756,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_inariotoko": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_inariotoko",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 4915,
+        "parent": null
+      },
+      "direct": true
+    },
+    "s_inari": {
+      "found": true,
+      "value": "@",
+      "declared_by": "s_inari",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 5243,
+        "parent": null
+      },
+      "direct": true
+    },
+    "sp_chikorita1": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_chikorita1",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 5825,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_chikorita2": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_chikorita2",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 5879,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_chikorita3": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_chikorita3",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 5933,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_masupa6": {
+      "found": true,
+      "value": "6",
+      "declared_by": "sp_masupa5",
+      "hops": 1,
+      "source": {
+        "file": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+        "line": 685,
+        "parent": null
+      },
+      "direct": false
+    },
+    "s_yn_senyo1": {
+      "found": true,
+      "value": "2",
+      "declared_by": "s_yn",
+      "hops": 1,
+      "source": {
+        "file": "a_default/script/30_スキル/C_必殺_クラス専用.dat",
+        "line": 1073,
+        "parent": "sk_ms"
+      },
+      "direct": false
+    },
+    "s_yn_senyo2": {
+      "found": true,
+      "value": "2",
+      "declared_by": "s_yn",
+      "hops": 1,
+      "source": {
+        "file": "a_default/script/30_スキル/C_必殺_クラス専用.dat",
+        "line": 1073,
+        "parent": "sk_ms"
+      },
+      "direct": false
+    },
+    "s_yn_senyo3": {
+      "found": true,
+      "value": "2",
+      "declared_by": "s_yn",
+      "hops": 1,
+      "source": {
+        "file": "a_default/script/30_スキル/C_必殺_クラス専用.dat",
+        "line": 1073,
+        "parent": "sk_ms"
+      },
+      "direct": false
+    },
+    "s_yn_senyo4": {
+      "found": true,
+      "value": "2",
+      "declared_by": "s_yn",
+      "hops": 1,
+      "source": {
+        "file": "a_default/script/30_スキル/C_必殺_クラス専用.dat",
+        "line": 1073,
+        "parent": "sk_ms"
+      },
+      "direct": false
+    },
+    "ymny_summon": {
+      "found": true,
+      "value": "2",
+      "declared_by": "ymny_summon",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 6378,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_brrng": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_brrng",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 7438,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "s_kaeru": {
+      "found": true,
+      "value": "2",
+      "declared_by": "s_kaeru",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 7790,
+        "parent": null
+      },
+      "direct": true
+    },
+    "sp_yuh1": {
+      "found": true,
+      "value": "1",
+      "declared_by": "sp_yuh1",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 8380,
+        "parent": null
+      },
+      "direct": true
+    },
+    "yuh_devour": {
+      "found": false,
+      "value": null,
+      "declared_by": null,
+      "hops": 2,
+      "missing_parent": null,
+      "direct": false
+    },
+    "s_fuwausa": {
+      "found": true,
+      "value": "1",
+      "declared_by": "s_fuwausa",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 9319,
+        "parent": null
+      },
+      "direct": true
+    },
+    "s_milk": {
+      "found": true,
+      "value": "2",
+      "declared_by": "s_milk",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 9492,
+        "parent": null
+      },
+      "direct": true
+    },
+    "sp_syubarugo": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_syubarugo",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 9674,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "s_yusakuhati": {
+      "found": true,
+      "value": "0",
+      "declared_by": "s_yusakuhati",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 10168,
+        "parent": null
+      },
+      "direct": true
+    },
+    "sp_fmrim_fmi": {
+      "found": true,
+      "value": "1",
+      "declared_by": "sp_fmrim_fmi",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 10726,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_fmrim1": {
+      "found": true,
+      "value": "1",
+      "declared_by": "sp_fmrim1",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 10754,
+        "parent": null
+      },
+      "direct": true
+    },
+    "sp_fmrim2": {
+      "found": true,
+      "value": "1",
+      "declared_by": "sp_fmrim1",
+      "hops": 1,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 10754,
+        "parent": null
+      },
+      "direct": false
+    },
+    "s_tsuri": {
+      "found": true,
+      "value": "1",
+      "declared_by": "s_tsuri",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 12024,
+        "parent": null
+      },
+      "direct": true
+    },
+    "s_musi": {
+      "found": true,
+      "value": "2",
+      "declared_by": "s_musi",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 12329,
+        "parent": null
+      },
+      "direct": true
+    },
+    "s_kbs_a": {
+      "found": true,
+      "value": "2",
+      "declared_by": "s_kbs_a",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 12443,
+        "parent": "s_inyume"
+      },
+      "direct": true
+    },
+    "s_kbs_b": {
+      "found": true,
+      "value": "2",
+      "declared_by": "s_kbs_a",
+      "hops": 1,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 12443,
+        "parent": "s_inyume"
+      },
+      "direct": false
+    },
+    "sp_reyes": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_reyes",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 12782,
+        "parent": null
+      },
+      "direct": true
+    },
+    "s_renown": {
+      "found": true,
+      "value": "2",
+      "declared_by": "s_renown",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 14426,
+        "parent": null
+      },
+      "direct": true
+    },
+    "s_tomeigirl": {
+      "found": true,
+      "value": "2",
+      "declared_by": "s_tomeigirl",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 14898,
+        "parent": null
+      },
+      "direct": true
+    },
+    "sp_syokupanman_summon": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_syokupanman_summon",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 14987,
+        "parent": null
+      },
+      "direct": true
+    },
+    "s_dorei": {
+      "found": false,
+      "value": null,
+      "declared_by": null,
+      "hops": 1,
+      "missing_parent": null,
+      "direct": false
+    },
+    "s_jdorei": {
+      "found": true,
+      "value": "2",
+      "declared_by": "s_jdorei",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F21_奴隷少年summon_鞭_突撃_斬撃.dat",
+        "line": 236,
+        "parent": null
+      },
+      "direct": true
+    },
+    "s_butadorei": {
+      "found": false,
+      "value": null,
+      "declared_by": null,
+      "hops": 1,
+      "missing_parent": null,
+      "direct": false
+    },
+    "s_jbutadorei": {
+      "found": true,
+      "value": "2",
+      "declared_by": "s_jbutadorei",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F21_奴隷少年summon_鞭_突撃_斬撃.dat",
+        "line": 652,
+        "parent": null
+      },
+      "direct": true
+    },
+    "sp_masupa": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_masupa",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+        "line": 3,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_masu3": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_masu3",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+        "line": 111,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "masu_hosi": {
+      "found": true,
+      "value": "2",
+      "declared_by": "masu_hosi",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+        "line": 415,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_masupa5": {
+      "found": true,
+      "value": "6",
+      "declared_by": "sp_masupa5",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+        "line": 685,
+        "parent": null
+      },
+      "direct": true
+    },
+    "sp_masu2": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_masu2",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+        "line": 1714,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_masu4": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_masu4",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+        "line": 1923,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "rr_knife": {
+      "found": false,
+      "value": null,
+      "declared_by": null,
+      "hops": 2,
+      "missing_parent": null,
+      "direct": false
+    },
+    "call_fear": {
+      "found": true,
+      "value": "2",
+      "declared_by": "call_fear",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 2016,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "s_miryohm": {
+      "found": true,
+      "value": "2",
+      "declared_by": "s_miryohm",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 2654,
+        "parent": null
+      },
+      "direct": true
+    },
+    "b_monster_ball": {
+      "found": true,
+      "value": "1",
+      "declared_by": "b_monster_ball",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "line": 3356,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "ingon3_a27b": {
+      "found": true,
+      "value": "1",
+      "declared_by": "ingon3",
+      "hops": 1,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat",
+        "line": 2062,
+        "parent": "sk_ms"
+      },
+      "direct": false
+    },
+    "ingon3": {
+      "found": true,
+      "value": "1",
+      "declared_by": "ingon3",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat",
+        "line": 2062,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "s_miryo_yaju": {
+      "found": true,
+      "value": "2",
+      "declared_by": "s_miryo_yaju",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 4183,
+        "parent": null
+      },
+      "direct": true
+    },
+    "s_miryo_yrim": {
+      "found": true,
+      "value": "2",
+      "declared_by": "s_miryo_yrim",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 4327,
+        "parent": null
+      },
+      "direct": true
+    },
+    "sp_ochan": {
+      "found": true,
+      "value": "6",
+      "declared_by": "sp_ochan",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 7737,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "turnx_b": {
+      "found": true,
+      "value": "3",
+      "declared_by": "turnx_b",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 8260,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_jj9": {
+      "found": true,
+      "value": "3",
+      "declared_by": "sp_jj9",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 9633,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_jagi": {
+      "found": true,
+      "value": "1",
+      "declared_by": "sp_jagi",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 12921,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "trn_buff": {
+      "found": true,
+      "value": "1",
+      "declared_by": "trn_buff",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 14994,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sww_mishakuji": {
+      "found": true,
+      "value": "1",
+      "declared_by": "sww_mishakuji",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+        "line": 1108,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "biim_summon_23": {
+      "found": true,
+      "value": "2",
+      "declared_by": "biim_summon_23",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+        "line": 1841,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "u23_dragonclaw": {
+      "found": true,
+      "value": "3",
+      "declared_by": "u23_dragonclaw",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+        "line": 2439,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "u23_masupa5": {
+      "found": true,
+      "value": "3",
+      "declared_by": "u23_masupa5",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+        "line": 2705,
+        "parent": null
+      },
+      "direct": true
+    },
+    "p_misairu": {
+      "found": true,
+      "value": "2",
+      "declared_by": "p_misairu",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+        "line": 4474,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_step": {
+      "found": true,
+      "value": "1",
+      "declared_by": "sp_step",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_0_共用.dat",
+        "line": 1,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_ranbu": {
+      "found": true,
+      "value": "1",
+      "declared_by": "sp_ranbu",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_0_共用.dat",
+        "line": 178,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_pojiko": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_pojiko",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_0_共用.dat",
+        "line": 410,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_fear": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_fear",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_0_共用.dat",
+        "line": 954,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_conf": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_conf",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_0_共用.dat",
+        "line": 1054,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_tea": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_tea",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_0_共用.dat",
+        "line": 1418,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_gun": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_gun",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_0_共用.dat",
+        "line": 1546,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_tisa": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_tisa",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_16_20_ALC一派～VVAN.dat",
+        "line": 1046,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_mnr": {
+      "found": true,
+      "value": "1",
+      "declared_by": "sp_mnr",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_16_20_ALC一派～VVAN.dat",
+        "line": 1762,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "yaju_rush": {
+      "found": true,
+      "value": "8",
+      "declared_by": "yaju_rush",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 243,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_kmrgun": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_gun",
+      "hops": 1,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_0_共用.dat",
+        "line": 1546,
+        "parent": "sk_ms"
+      },
+      "direct": false
+    },
+    "sp_murpo_reitoubiim": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_murpo_reitoubiim",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 1267,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "knn_rush": {
+      "found": true,
+      "value": "8",
+      "declared_by": "knn_rush",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 2828,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_kaminari": {
+      "found": true,
+      "value": "1",
+      "declared_by": "sp_kaminari",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 3967,
+        "parent": "atmu_thun"
+      },
+      "direct": true
+    },
+    "sp_hassamu": {
+      "found": true,
+      "value": "1",
+      "declared_by": "sp_gosaku",
+      "hops": 1,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_6_10_ヒゲクマ～スカーレット.dat",
+        "line": 746,
+        "parent": "sk_ms"
+      },
+      "direct": false
+    },
+    "sp_nyn": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_nyn",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+        "line": 5,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_conf_nyn": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_conf_nyn",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+        "line": 145,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_saihu": {
+      "found": true,
+      "value": "1",
+      "declared_by": "sp_saihu",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+        "line": 535,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_flour": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_flour",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+        "line": 755,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_hasami": {
+      "found": true,
+      "value": "1",
+      "declared_by": "sp_hasami",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+        "line": 987,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "bsp_masupa5": {
+      "found": true,
+      "value": "6",
+      "declared_by": "bsp_masupa5",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+        "line": 1204,
+        "parent": null
+      },
+      "direct": true
+    },
+    "sp_ondisk": {
+      "found": true,
+      "value": "1",
+      "declared_by": "sp_ondisk",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+        "line": 2137,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_dmcabiim": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_dmcabiim",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+        "line": 978,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_aok": {
+      "found": true,
+      "value": "1",
+      "declared_by": "sp_mnr",
+      "hops": 1,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_16_20_ALC一派～VVAN.dat",
+        "line": 1762,
+        "parent": "sk_ms"
+      },
+      "direct": false
+    },
+    "sp_ranbu_toukou": {
+      "found": true,
+      "value": "1",
+      "declared_by": "sp_ranbu",
+      "hops": 1,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_0_共用.dat",
+        "line": 178,
+        "parent": "sk_ms"
+      },
+      "direct": false
+    },
+    "sp_diyusi": {
+      "found": true,
+      "value": "1",
+      "declared_by": "sp_diyusi",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_31_32_ぢゆし～サムソン.dat",
+        "line": 6,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_inu": {
+      "found": true,
+      "value": "16",
+      "declared_by": "sp_inu",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_31_32_ぢゆし～サムソン.dat",
+        "line": 1860,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_gosaku": {
+      "found": true,
+      "value": "1",
+      "declared_by": "sp_gosaku",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_6_10_ヒゲクマ～スカーレット.dat",
+        "line": 746,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_boom_ryuga": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_boom_ryuga",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_6_10_ヒゲクマ～スカーレット.dat",
+        "line": 1949,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "itetukuhadou": {
+      "found": true,
+      "value": "3",
+      "declared_by": "itetukuhadou",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_14_ヌエバ・デスパセーニャ.dat",
+        "line": 121,
+        "parent": null
+      },
+      "direct": true
+    },
+    "fbreath": {
+      "found": true,
+      "value": "5",
+      "declared_by": "fbreath",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_14_ヌエバ・デスパセーニャ.dat",
+        "line": 581,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "cbreath": {
+      "found": true,
+      "value": "5",
+      "declared_by": "cbreath",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_14_ヌエバ・デスパセーニャ.dat",
+        "line": 987,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "s_mhsi": {
+      "found": true,
+      "value": "2",
+      "declared_by": "s_mhsi",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_14_ヌエバ・デスパセーニャ.dat",
+        "line": 1656,
+        "parent": null
+      },
+      "direct": true
+    },
+    "dragonclaw": {
+      "found": false,
+      "value": null,
+      "declared_by": null,
+      "hops": 2,
+      "missing_parent": null,
+      "direct": false
+    },
+    "ud_dragonclaw": {
+      "found": false,
+      "value": null,
+      "declared_by": null,
+      "hops": 2,
+      "missing_parent": null,
+      "direct": false
+    },
+    "udbsp_masupa5": {
+      "found": true,
+      "value": "3",
+      "declared_by": "udbsp_masupa5",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_2323_リュージ騎士団.dat",
+        "line": 1080,
+        "parent": null
+      },
+      "direct": true
+    },
+    "sp_marimox": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_marimox",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 598,
+        "parent": "bakucharge_nt1"
+      },
+      "direct": true
+    },
+    "sp_conf_bokhohn": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_conf_bokhohn",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 1620,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_bokhohn": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_bokhohn",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 1721,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_kzinssie": {
+      "found": true,
+      "value": "1",
+      "declared_by": "sp_kzinssie",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 2031,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "metalclaw_MPT": {
+      "found": false,
+      "value": null,
+      "declared_by": null,
+      "hops": 2,
+      "missing_parent": null,
+      "direct": false
+    },
+    "sakenomiga_turnx": {
+      "found": true,
+      "value": "4",
+      "declared_by": "sakenomiga_turnx",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 12928,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "misya_devour": {
+      "found": false,
+      "value": null,
+      "declared_by": null,
+      "hops": 2,
+      "missing_parent": null,
+      "direct": false
+    },
+    "s_dopyu": {
+      "found": false,
+      "value": null,
+      "declared_by": null,
+      "hops": 1,
+      "missing_parent": null,
+      "direct": false
+    },
+    "sww23_mishakuji": {
+      "found": true,
+      "value": "1",
+      "declared_by": "sww23_mishakuji",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 16166,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "itetukuhadou_23a": {
+      "found": true,
+      "value": "3",
+      "declared_by": "itetukuhadou",
+      "hops": 1,
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_14_ヌエバ・デスパセーニャ.dat",
+        "line": 121,
+        "parent": null
+      },
+      "direct": false
+    },
+    "itetukuhadou_23b": {
+      "found": true,
+      "value": "3",
+      "declared_by": "itetukuhadou",
+      "hops": 1,
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_14_ヌエバ・デスパセーニャ.dat",
+        "line": 121,
+        "parent": null
+      },
+      "direct": false
+    },
+    "cbreath_23": {
+      "found": true,
+      "value": "5",
+      "declared_by": "cbreath",
+      "hops": 1,
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_14_ヌエバ・デスパセーニャ.dat",
+        "line": 987,
+        "parent": "sk_ms"
+      },
+      "direct": false
+    },
+    "sp_toppa_boss_swk": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_toppa_boss",
+      "hops": 1,
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 16576,
+        "parent": "sp_sm"
+      },
+      "direct": false
+    },
+    "sp_toppa_boss": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_toppa_boss",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 16576,
+        "parent": "sp_sm"
+      },
+      "direct": true
+    },
+    "yuuh_masupa": {
+      "found": true,
+      "value": "5",
+      "declared_by": "yuuh_masupa",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 598,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "atud_summon": {
+      "found": true,
+      "value": "2",
+      "declared_by": "atud_summon",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 1014,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "snnm_beam": {
+      "found": true,
+      "value": "2",
+      "declared_by": "snnm_beam",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 2401,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_fmrim3": {
+      "found": true,
+      "value": "1",
+      "declared_by": "sp_fmrim1",
+      "hops": 1,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 10754,
+        "parent": null
+      },
+      "direct": false
+    },
+    "sp_fmrim4": {
+      "found": true,
+      "value": "1",
+      "declared_by": "sp_fmrim1",
+      "hops": 1,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 10754,
+        "parent": null
+      },
+      "direct": false
+    },
+    "sp_fmrim5": {
+      "found": true,
+      "value": "1",
+      "declared_by": "sp_fmrim1",
+      "hops": 1,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 10754,
+        "parent": null
+      },
+      "direct": false
+    },
+    "sp_fmrim6": {
+      "found": true,
+      "value": "1",
+      "declared_by": "sp_fmrim1",
+      "hops": 1,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 10754,
+        "parent": null
+      },
+      "direct": false
+    },
+    "sp_fmrim7": {
+      "found": true,
+      "value": "1",
+      "declared_by": "sp_fmrim1",
+      "hops": 1,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 10754,
+        "parent": null
+      },
+      "direct": false
+    },
+    "bosstoono_attack": {
+      "found": false,
+      "value": null,
+      "declared_by": null,
+      "hops": 2,
+      "missing_parent": null,
+      "direct": false
+    },
+    "sp_go_nannkasugoino2": {
+      "found": true,
+      "value": "3",
+      "declared_by": "sp_go_nannkasugoino2",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_505_閉店の日.dat",
+        "line": 377,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_scream": {
+      "found": true,
+      "value": "8",
+      "declared_by": "sp_scream",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 426,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_kenri_summon": {
+      "found": true,
+      "value": "5",
+      "declared_by": "sp_kenri_summon",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 945,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_kenri_toppa": {
+      "found": true,
+      "value": "5",
+      "declared_by": "sp_kenri_toppa",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 1075,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "kenri_kidan": {
+      "found": true,
+      "value": "5",
+      "declared_by": "kenri_kidan",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 1479,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "sp_kenrirush": {
+      "found": true,
+      "value": "10",
+      "declared_by": "sp_kenrirush",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 2202,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "ssrn_kidan": {
+      "found": true,
+      "value": "14",
+      "declared_by": "ssrn_kidan",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 2963,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "ssrn_sw": {
+      "found": true,
+      "value": "2",
+      "declared_by": "ssrn_sw",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 3705,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "ssrn_sw_weak": {
+      "found": true,
+      "value": "2",
+      "declared_by": "ssrn_sw_weak",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 4207,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "inm_arrow2": {
+      "found": true,
+      "value": "2",
+      "declared_by": "inm_arrow2",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 5330,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "ncnc_base_summon": {
+      "found": true,
+      "value": "2",
+      "declared_by": "ncnc_base_summon",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 6765,
+        "parent": null
+      },
+      "direct": true
+    },
+    "sp_fmrim5_r": {
+      "found": true,
+      "value": "1",
+      "declared_by": "sp_fmrim1",
+      "hops": 1,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 10754,
+        "parent": null
+      },
+      "direct": false
+    },
+    "sp_fmrim6_r": {
+      "found": true,
+      "value": "1",
+      "declared_by": "sp_fmrim1",
+      "hops": 1,
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 10754,
+        "parent": null
+      },
+      "direct": false
+    },
+    "sp_marimox_r": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_marimox",
+      "hops": 1,
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 598,
+        "parent": "bakucharge_nt1"
+      },
+      "direct": false
+    },
+    "nkdking_summon_r": {
+      "found": true,
+      "value": "2",
+      "declared_by": "nkdking_summon_r",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/5000_ランダムシナリオ/RB_ボススキル.dat",
+        "line": 732,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "s_kaizoku": {
+      "found": true,
+      "value": "0",
+      "declared_by": "s_kaizoku",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/50_その他新システム/shipsummon.dat",
+        "line": 5,
+        "parent": null
+      },
+      "direct": true
+    },
+    "s_kaizoku_toono": {
+      "found": true,
+      "value": "0",
+      "declared_by": "s_kaizoku",
+      "hops": 1,
+      "source": {
+        "file": "a_default/script/50_その他新システム/shipsummon.dat",
+        "line": 5,
+        "parent": null
+      },
+      "direct": false
+    },
+    "s_kaizoku_drama": {
+      "found": true,
+      "value": "0",
+      "declared_by": "s_kaizoku",
+      "hops": 1,
+      "source": {
+        "file": "a_default/script/50_その他新システム/shipsummon.dat",
+        "line": 5,
+        "parent": null
+      },
+      "direct": false
+    },
+    "s_kaizoku_vvan": {
+      "found": true,
+      "value": "0",
+      "declared_by": "s_kaizoku",
+      "hops": 1,
+      "source": {
+        "file": "a_default/script/50_その他新システム/shipsummon.dat",
+        "line": 5,
+        "parent": null
+      },
+      "direct": false
+    },
+    "s_kaizoku_disk": {
+      "found": true,
+      "value": "0",
+      "declared_by": "s_kaizoku",
+      "hops": 1,
+      "source": {
+        "file": "a_default/script/50_その他新システム/shipsummon.dat",
+        "line": 5,
+        "parent": null
+      },
+      "direct": false
+    },
+    "s_kaizoku_knn": {
+      "found": true,
+      "value": "0",
+      "declared_by": "s_kaizoku",
+      "hops": 1,
+      "source": {
+        "file": "a_default/script/50_その他新システム/shipsummon.dat",
+        "line": 5,
+        "parent": null
+      },
+      "direct": false
+    },
+    "s_kaizoku_genri": {
+      "found": true,
+      "value": "0",
+      "declared_by": "s_kaizoku",
+      "hops": 1,
+      "source": {
+        "file": "a_default/script/50_その他新システム/shipsummon.dat",
+        "line": 5,
+        "parent": null
+      },
+      "direct": false
+    },
+    "sp_go_nannkasugoino": {
+      "found": true,
+      "value": "2",
+      "declared_by": "sp_go_nannkasugoino",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/6000_スキルテスト/skill_00_test.dat",
+        "line": 15,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    },
+    "buff_pinga": {
+      "found": true,
+      "value": "1",
+      "declared_by": "buff_pinga",
+      "hops": 0,
+      "source": {
+        "file": "a_default/script/6000_スキルテスト/skill_intyo.dat",
+        "line": 1007,
+        "parent": "sk_ms"
+      },
+      "direct": true
+    }
+  },
+  "help_without_effective_delay": [
+    {
+      "skill": "s_miryosk2",
+      "graph": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 2590,
+        "parent": null
+      },
+      "parent": null
+    },
+    {
+      "skill": "toonoclaw",
+      "graph": {
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 4157,
+        "parent": "sk_ms"
+      },
+      "parent": "sk_ms"
+    },
+    {
+      "skill": "toono_devour",
+      "graph": {
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 4450,
+        "parent": "sk_ms"
+      },
+      "parent": "sk_ms"
+    },
+    {
+      "skill": "s_scary",
+      "graph": {
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 4627,
+        "parent": null
+      },
+      "parent": null
+    },
+    {
+      "skill": "yuh_devour",
+      "graph": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 8532,
+        "parent": "sk_ms"
+      },
+      "parent": "sk_ms"
+    },
+    {
+      "skill": "s_dorei",
+      "graph": {
+        "file": "a_default/script/30_スキル/F21_奴隷少年summon_鞭_突撃_斬撃.dat",
+        "line": 103,
+        "parent": null
+      },
+      "parent": null
+    },
+    {
+      "skill": "s_butadorei",
+      "graph": {
+        "file": "a_default/script/30_スキル/F21_奴隷少年summon_鞭_突撃_斬撃.dat",
+        "line": 565,
+        "parent": null
+      },
+      "parent": null
+    },
+    {
+      "skill": "rr_knife",
+      "graph": {
+        "file": "a_default/script/31_ユニットスキル/U_11_15_サセバトミサタ～SWW.dat",
+        "line": 29,
+        "parent": "sk_ms"
+      },
+      "parent": "sk_ms"
+    },
+    {
+      "skill": "dragonclaw",
+      "graph": {
+        "file": "a_default/script/32_ボススキル/B_2222_レイノアレフ.dat",
+        "line": 33,
+        "parent": "sk_ms"
+      },
+      "parent": "sk_ms"
+    },
+    {
+      "skill": "ud_dragonclaw",
+      "graph": {
+        "file": "a_default/script/32_ボススキル/B_2323_リュージ騎士団.dat",
+        "line": 630,
+        "parent": "sk_ms"
+      },
+      "parent": "sk_ms"
+    },
+    {
+      "skill": "metalclaw_MPT",
+      "graph": {
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 9125,
+        "parent": "sk_ms"
+      },
+      "parent": "sk_ms"
+    },
+    {
+      "skill": "misya_devour",
+      "graph": {
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 15511,
+        "parent": "sk_ms"
+      },
+      "parent": "sk_ms"
+    },
+    {
+      "skill": "s_dopyu",
+      "graph": {
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 15691,
+        "parent": null
+      },
+      "parent": null
+    },
+    {
+      "skill": "bosstoono_attack",
+      "graph": {
+        "file": "a_default/script/32_ボススキル/B_2_クレイジーサイコホモ.dat",
+        "line": 389,
+        "parent": "sk_ms"
+      },
+      "parent": "sk_ms"
+    }
+  ],
+  "example_s_monaka": {
+    "found": true,
+    "value": "2",
+    "declared_by": "s_monaka",
+    "hops": 0,
+    "source": {
+      "file": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 1596,
+      "parent": null
+    },
+    "direct": true
+  },
+  "requires_native": [
+    "Which native Skill+offset receives delay?",
+    "How does @ suppress ancestor/default?",
+    "Do help strings refer to current 0.67 or newer wiki?",
+    "The Unit+1E538 /+1E54C timer relation to delay must be verified."
+  ],
+  "old_exe_observations": 0
+}

@@ -1,0 +1,81 @@
+{
+  "status": "ORIGINAL DAT raw flash<=0 Skill selection for Work, NOT native compiler binding",
+  "tag": "WRQ-B-SKILL/WDF-01 alternate legal source",
+  "heal_total": 320,
+  "flash_groups": {
+    "positive": 229,
+    "absent": 70,
+    "other": 18,
+    "negative": 3
+  },
+  "explicit_flash_nonpositive_count": 3,
+  "candidates": [
+    {
+      "tag": "sp_fmrim_heal",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+        "line": 220,
+        "parent": "m_heal"
+      },
+      "typed_loader_supported": true,
+      "flash_raw": "-4",
+      "flash_number": -4,
+      "flash_origin_tag": "sp_fmrim_heal",
+      "flash_kind": "negative",
+      "mp_raw": "80",
+      "attr": "hp",
+      "allfunc": "",
+      "add2": [],
+      "original_grant_examples": [],
+      "directly_granted": false
+    },
+    {
+      "tag": "sp_fmrim_heal2",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+        "line": 250,
+        "parent": "sp_fmrim_heal"
+      },
+      "typed_loader_supported": true,
+      "flash_raw": "-4",
+      "flash_number": -4,
+      "flash_origin_tag": "sp_fmrim_heal",
+      "flash_kind": "negative",
+      "mp_raw": "80",
+      "attr": "hp",
+      "allfunc": "",
+      "add2": [],
+      "original_grant_examples": [],
+      "directly_granted": false
+    },
+    {
+      "tag": "sp_fmrim_heal3",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+        "line": 263,
+        "parent": "sp_fmrim_heal"
+      },
+      "typed_loader_supported": true,
+      "flash_raw": "-4",
+      "flash_number": -4,
+      "flash_origin_tag": "sp_fmrim_heal",
+      "flash_kind": "negative",
+      "mp_raw": "80",
+      "attr": "hp",
+      "allfunc": "",
+      "add2": [],
+      "original_grant_examples": [],
+      "directly_granted": false
+    }
+  ],
+  "raw_flash_missing_count": 70,
+  "src_snapshot": "WIKI_FULL_DAT_ADAPTER_COVERAGE_20261013.json",
+  "work_stop_snapshot": "WORK-AWARD-FLASH-20261013-1041 551CA1 Skill+6F0 missing in flash>0 m_heal",
+  "next_action": [
+    "If any legit Unit/Class equipped heal with flash0, prefer for return-stage coverage without +6F0",
+    "Confirm actual compiled Skill+248<=0 after Native getter; no synthetic zero default",
+    "Even flash bypass still requires 577100/54E31C/Unit return and old Golden"
+  ],
+  "old_Gameplay_PASS": 0,
+  "new_strict_MATCH": 0
+}

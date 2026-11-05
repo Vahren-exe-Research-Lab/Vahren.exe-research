@@ -1,0 +1,709 @@
+{
+  "status": "20 full raw heal add2 list fixtures / NOT native effect result",
+  "count": 20,
+  "add_all_raw_distribution": {
+    "on": 15,
+    "": 5
+  },
+  "add2_record_count_distribution": {
+    "3": 2,
+    "2": 15,
+    "7": 1,
+    "1": 2
+  },
+  "cases": [
+    {
+      "skill": "sp_move_nt2",
+      "attr": "",
+      "raw_add2": [
+        "move",
+        "para",
+        "stone"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "move",
+          "name_candidate": "move",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "para",
+          "name_candidate": "para",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "stone",
+          "name_candidate": "stone",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "0",
+      "raw_add_all": "on",
+      "source": {
+        "file": "a_default/script/30_スキル/F13_heal_support.dat",
+        "line": 693,
+        "parent": "seiretsu3"
+      },
+      "expected_name_classification": "all known among 19 callback keys",
+      "native_position": "B old 5515C4 4ACE30 for bulk; 551653 19-name lookup",
+      "branch_actual": "VERIFY",
+      "unit_gameplay": "NOT RUN"
+    },
+    {
+      "skill": "sp_heal_nt1",
+      "attr": "",
+      "raw_add2": [
+        "hp",
+        "all"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "hp",
+          "name_candidate": "hp",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "all",
+          "name_candidate": "all",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "",
+      "raw_add_all": "on",
+      "source": {
+        "file": "a_default/script/30_スキル/F13_heal_support.dat",
+        "line": 745,
+        "parent": null
+      },
+      "expected_name_classification": "all known among 19 callback keys",
+      "native_position": "B old 5515C4 4ACE30 for bulk; 551653 19-name lookup",
+      "branch_actual": "VERIFY",
+      "unit_gameplay": "NOT RUN"
+    },
+    {
+      "skill": "sp_heal_nt2",
+      "attr": "",
+      "raw_add2": [
+        "hp",
+        "all"
+      ],
+      "had_direct_add2": false,
+      "items": [
+        {
+          "raw": "hp",
+          "name_candidate": "hp",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "all",
+          "name_candidate": "all",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "",
+      "raw_add_all": "on",
+      "source": {
+        "file": "a_default/script/30_スキル/F13_heal_support.dat",
+        "line": 761,
+        "parent": "sp_heal_nt1"
+      },
+      "expected_name_classification": "all known among 19 callback keys",
+      "native_position": "B old 5515C4 4ACE30 for bulk; 551653 19-name lookup",
+      "branch_actual": "VERIFY",
+      "unit_gameplay": "NOT RUN"
+    },
+    {
+      "skill": "sp_knn_nt1",
+      "attr": "",
+      "raw_add2": [
+        "hp",
+        "all"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "hp",
+          "name_candidate": "hp",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "all",
+          "name_candidate": "all",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "",
+      "raw_add_all": "on",
+      "source": {
+        "file": "a_default/script/30_スキル/F13_heal_support.dat",
+        "line": 807,
+        "parent": null
+      },
+      "expected_name_classification": "all known among 19 callback keys",
+      "native_position": "B old 5515C4 4ACE30 for bulk; 551653 19-name lookup",
+      "branch_actual": "VERIFY",
+      "unit_gameplay": "NOT RUN"
+    },
+    {
+      "skill": "sp_nyn_down",
+      "attr": "",
+      "raw_add2": [
+        "hprec",
+        "mprec"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "hprec",
+          "name_candidate": "hprec",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "mprec",
+          "name_candidate": "mprec",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "",
+      "raw_add_all": "on",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+        "line": 68,
+        "parent": null
+      },
+      "expected_name_classification": "all known among 19 callback keys",
+      "native_position": "B old 5515C4 4ACE30 for bulk; 551653 19-name lookup",
+      "branch_actual": "VERIFY",
+      "unit_gameplay": "NOT RUN"
+    },
+    {
+      "skill": "sp_ryuma_nt2",
+      "attr": "",
+      "raw_add2": [
+        "hp",
+        "all",
+        "attack",
+        "defense",
+        "magic",
+        "dext",
+        "speed"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "hp",
+          "name_candidate": "hp",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "all",
+          "name_candidate": "all",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "attack",
+          "name_candidate": "attack",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "defense",
+          "name_candidate": "defense",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "magic",
+          "name_candidate": "magic",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "dext",
+          "name_candidate": "dext",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "speed",
+          "name_candidate": "speed",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "0",
+      "raw_add_all": "on",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+        "line": 2049,
+        "parent": "seiretsu3"
+      },
+      "expected_name_classification": "all known among 19 callback keys",
+      "native_position": "B old 5515C4 4ACE30 for bulk; 551653 19-name lookup",
+      "branch_actual": "VERIFY",
+      "unit_gameplay": "NOT RUN"
+    },
+    {
+      "skill": "kdance_move",
+      "attr": "",
+      "raw_add2": [
+        "move",
+        "para",
+        "stone"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "move",
+          "name_candidate": "move",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "para",
+          "name_candidate": "para",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "stone",
+          "name_candidate": "stone",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "0",
+      "raw_add_all": "on",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_6_10_ヒゲクマ～スカーレット.dat",
+        "line": 461,
+        "parent": "seiretsu3"
+      },
+      "expected_name_classification": "all known among 19 callback keys",
+      "native_position": "B old 5515C4 4ACE30 for bulk; 551653 19-name lookup",
+      "branch_actual": "VERIFY",
+      "unit_gameplay": "NOT RUN"
+    },
+    {
+      "skill": "sp_heal2_nt1",
+      "attr": "",
+      "raw_add2": [
+        "hp",
+        "all"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "hp",
+          "name_candidate": "hp",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "all",
+          "name_candidate": "all",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "",
+      "raw_add_all": "on",
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_505_閉店の日.dat",
+        "line": 36,
+        "parent": null
+      },
+      "expected_name_classification": "all known among 19 callback keys",
+      "native_position": "B old 5515C4 4ACE30 for bulk; 551653 19-name lookup",
+      "branch_actual": "VERIFY",
+      "unit_gameplay": "NOT RUN"
+    },
+    {
+      "skill": "sp_heal2_nt2",
+      "attr": "",
+      "raw_add2": [
+        "hp",
+        "all"
+      ],
+      "had_direct_add2": false,
+      "items": [
+        {
+          "raw": "hp",
+          "name_candidate": "hp",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "all",
+          "name_candidate": "all",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "",
+      "raw_add_all": "on",
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_505_閉店の日.dat",
+        "line": 52,
+        "parent": "sp_heal2_nt1"
+      },
+      "expected_name_classification": "all known among 19 callback keys",
+      "native_position": "B old 5515C4 4ACE30 for bulk; 551653 19-name lookup",
+      "branch_actual": "VERIFY",
+      "unit_gameplay": "NOT RUN"
+    },
+    {
+      "skill": "sp_heal_3_nt1",
+      "attr": "",
+      "raw_add2": [
+        "hp",
+        "all"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "hp",
+          "name_candidate": "hp",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "all",
+          "name_candidate": "all",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "",
+      "raw_add_all": "on",
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_505_閉店の日.dat",
+        "line": 163,
+        "parent": null
+      },
+      "expected_name_classification": "all known among 19 callback keys",
+      "native_position": "B old 5515C4 4ACE30 for bulk; 551653 19-name lookup",
+      "branch_actual": "VERIFY",
+      "unit_gameplay": "NOT RUN"
+    },
+    {
+      "skill": "g_inmudash_heal",
+      "attr": "",
+      "raw_add2": [
+        "move"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "move",
+          "name_candidate": "move",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "0",
+      "raw_add_all": "on",
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 4974,
+        "parent": "seiretsu3"
+      },
+      "expected_name_classification": "all known among 19 callback keys",
+      "native_position": "B old 5515C4 4ACE30 for bulk; 551653 19-name lookup",
+      "branch_actual": "VERIFY",
+      "unit_gameplay": "NOT RUN"
+    },
+    {
+      "skill": "asasin_cream_protect_ability_1",
+      "attr": "",
+      "raw_add2": [
+        "defense"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "defense",
+          "name_candidate": "defense",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "",
+      "raw_add_all": "",
+      "source": {
+        "file": "a_default/script/33_仮設アサシン/skill_asasin_cream_protect.dat",
+        "line": 127,
+        "parent": "asasin_cream_protect_base"
+      },
+      "expected_name_classification": "all known among 19 callback keys",
+      "native_position": "B old 5515C4 4ACE30 for bulk; 551653 19-name lookup",
+      "branch_actual": "VERIFY",
+      "unit_gameplay": "NOT RUN"
+    },
+    {
+      "skill": "asasin_cream_weapon_ability_self",
+      "attr": "",
+      "raw_add2": [
+        "attack",
+        "dext"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "attack",
+          "name_candidate": "attack",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "dext",
+          "name_candidate": "dext",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "",
+      "raw_add_all": "on",
+      "source": {
+        "file": "a_default/script/33_仮設アサシン/skill_asasin_cream_weapon.dat",
+        "line": 419,
+        "parent": "asasin_cream_weapon_base"
+      },
+      "expected_name_classification": "all known among 19 callback keys",
+      "native_position": "B old 5515C4 4ACE30 for bulk; 551653 19-name lookup",
+      "branch_actual": "VERIFY",
+      "unit_gameplay": "NOT RUN"
+    },
+    {
+      "skill": "asasin_cream_weapon_ability_enemy",
+      "attr": "",
+      "raw_add2": [
+        "defense",
+        "dext"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "defense",
+          "name_candidate": "defense",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "dext",
+          "name_candidate": "dext",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "",
+      "raw_add_all": "on",
+      "source": {
+        "file": "a_default/script/33_仮設アサシン/skill_asasin_cream_weapon.dat",
+        "line": 429,
+        "parent": "asasin_cream_weapon_base"
+      },
+      "expected_name_classification": "all known among 19 callback keys",
+      "native_position": "B old 5515C4 4ACE30 for bulk; 551653 19-name lookup",
+      "branch_actual": "VERIFY",
+      "unit_gameplay": "NOT RUN"
+    },
+    {
+      "skill": "asasin_cream_weapon_glove_ability_self",
+      "attr": "",
+      "raw_add2": [
+        "attack",
+        "dext"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "attack",
+          "name_candidate": "attack",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "dext",
+          "name_candidate": "dext",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "",
+      "raw_add_all": "",
+      "source": {
+        "file": "a_default/script/33_仮設アサシン/skill_asasin_cream_weapon_glove.dat",
+        "line": 149,
+        "parent": "asasin_cream_weapon_glove_base"
+      },
+      "expected_name_classification": "all known among 19 callback keys",
+      "native_position": "B old 5515C4 4ACE30 for bulk; 551653 19-name lookup",
+      "branch_actual": "VERIFY",
+      "unit_gameplay": "NOT RUN"
+    },
+    {
+      "skill": "asasin_cream_weapon_glove_ability_enemy",
+      "attr": "",
+      "raw_add2": [
+        "defense",
+        "dext"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "defense",
+          "name_candidate": "defense",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "dext",
+          "name_candidate": "dext",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "",
+      "raw_add_all": "",
+      "source": {
+        "file": "a_default/script/33_仮設アサシン/skill_asasin_cream_weapon_glove.dat",
+        "line": 158,
+        "parent": "asasin_cream_weapon_glove_base"
+      },
+      "expected_name_classification": "all known among 19 callback keys",
+      "native_position": "B old 5515C4 4ACE30 for bulk; 551653 19-name lookup",
+      "branch_actual": "VERIFY",
+      "unit_gameplay": "NOT RUN"
+    },
+    {
+      "skill": "hanzo_cream_weapon_ability_self",
+      "attr": "",
+      "raw_add2": [
+        "attack",
+        "dext"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "attack",
+          "name_candidate": "attack",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "dext",
+          "name_candidate": "dext",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "",
+      "raw_add_all": "on",
+      "source": {
+        "file": "a_default/script/35_仮設半造/skill_hanzo_cream_weapon.dat",
+        "line": 431,
+        "parent": "hanzo_cream_weapon_base"
+      },
+      "expected_name_classification": "all known among 19 callback keys",
+      "native_position": "B old 5515C4 4ACE30 for bulk; 551653 19-name lookup",
+      "branch_actual": "VERIFY",
+      "unit_gameplay": "NOT RUN"
+    },
+    {
+      "skill": "hanzo_cream_weapon_ability_enemy",
+      "attr": "",
+      "raw_add2": [
+        "defense",
+        "dext"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "defense",
+          "name_candidate": "defense",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "dext",
+          "name_candidate": "dext",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "",
+      "raw_add_all": "on",
+      "source": {
+        "file": "a_default/script/35_仮設半造/skill_hanzo_cream_weapon.dat",
+        "line": 442,
+        "parent": "hanzo_cream_weapon_base"
+      },
+      "expected_name_classification": "all known among 19 callback keys",
+      "native_position": "B old 5515C4 4ACE30 for bulk; 551653 19-name lookup",
+      "branch_actual": "VERIFY",
+      "unit_gameplay": "NOT RUN"
+    },
+    {
+      "skill": "hanzo_cream_weapon_glove_ability_self",
+      "attr": "",
+      "raw_add2": [
+        "attack",
+        "dext"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "attack",
+          "name_candidate": "attack",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "dext",
+          "name_candidate": "dext",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "",
+      "raw_add_all": "",
+      "source": {
+        "file": "a_default/script/35_仮設半造/skill_hanzo_cream_weapon_glove.dat",
+        "line": 157,
+        "parent": "hanzo_cream_weapon_glove_base"
+      },
+      "expected_name_classification": "all known among 19 callback keys",
+      "native_position": "B old 5515C4 4ACE30 for bulk; 551653 19-name lookup",
+      "branch_actual": "VERIFY",
+      "unit_gameplay": "NOT RUN"
+    },
+    {
+      "skill": "hanzo_cream_weapon_glove_ability_enemy",
+      "attr": "",
+      "raw_add2": [
+        "defense",
+        "dext"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "defense",
+          "name_candidate": "defense",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "dext",
+          "name_candidate": "dext",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "",
+      "raw_add_all": "",
+      "source": {
+        "file": "a_default/script/35_仮設半造/skill_hanzo_cream_weapon_glove.dat",
+        "line": 167,
+        "parent": "hanzo_cream_weapon_glove_base"
+      },
+      "expected_name_classification": "all known among 19 callback keys",
+      "native_position": "B old 5515C4 4ACE30 for bulk; 551653 19-name lookup",
+      "branch_actual": "VERIFY",
+      "unit_gameplay": "NOT RUN"
+    }
+  ],
+  "caveat": "DAT add2 list values are native loader inputs; 4ACE30/415530 branch must be reached with live Skill flags to prove actual use",
+  "old_Gameplay_Golden": 0,
+  "new_STRICT_MATCH": 0
+}

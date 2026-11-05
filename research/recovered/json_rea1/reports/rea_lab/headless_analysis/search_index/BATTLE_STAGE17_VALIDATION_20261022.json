@@ -1,0 +1,40 @@
+{
+  "id": "BRIDGE-20261022-STAGE17-VALIDATION",
+  "status": "STATIC_ARCHIVE_EVIDENCE_ONLY",
+  "checks": {
+    "verified_original_PE_identity": true,
+    "native_machine_45_local_anchors": true,
+    "native_ScriptBattle_RTTI": true,
+    "native_standard_start_strings": true,
+    "activation_single_known_direct_caller": true,
+    "normal_VM_restore_suffix": true,
+    "native_activation_RET4": true,
+    "side_start_callback_targets": true,
+    "8_existing_RAW_not_first_pass": true,
+    "16_original_sources_unchanged": true,
+    "ledger_all_ids_unique": true,
+    "six_new_stage17_entries": true,
+    "new_entry_evidence_exists": true,
+    "index_stage17_latest": false,
+    "prior_blocked_pause_not_executed": true,
+    "no_false_native_success": true
+  },
+  "passed": 15,
+  "total": 16,
+  "native_instruction_sites": 45,
+  "archived_raw": 8,
+  "source_files_unchanged": 16,
+  "new_findings": 6,
+  "ledger_entries": 73,
+  "new_native_success_report": "REPORTED_NOT_YET_CORROBORATED",
+  "full_G1": false,
+  "external_roundtrip": false,
+  "game_or_gui_modified": false,
+  "work_used": false,
+  "receipt_sha256": {
+    "BATTLE_STAGE17_ACTIVATION_BOUNDARY_20261022.json": "18165D01E2A87F3188EA44AB5C890AFDBF6E822B14D07839E6416C45313F8F7A",
+    "BATTLE_TAKEOVER_RESEARCH_STAGE17_20261022.md": "BFD92AD25E381DC0D88C97FDD8EFE22172E3C2F735B5FEC3460A4F4278B99E17",
+    "BATTLE_BRIDGE_RESEARCH_INDEX.md": "A512B1ABDA2D5FF6FE171046108C91D7795A8F2375615A41E4638C286778012F",
+    "BATTLE_BRIDGE_FINDINGS_LEDGER.jsonl": "68C9C395782156F5B3EC3F0BA45E6195F23859E921902092B0D9488105DE459C"
+  }
+}

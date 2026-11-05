@@ -1,0 +1,3582 @@
+{
+  "source_db": "[USER_HOME]\\Documents\\迫真戦記\\_REDEV_RESEARCH\\rea_lab\\headless_analysis\\search_index\\search.sqlite",
+  "classification": "PSEUDOC_STATIC_POSSIBLE_WRITE_NOT_ASM_PROOF",
+  "functions_scanned": 10268,
+  "offsets": {
+    "1eed1c": {
+      "references": 23,
+      "writer_candidates": [
+        "0x004321B0",
+        "0x0048F9E0",
+        "0x0049AF10"
+      ],
+      "reader_candidates": [
+        "0x0048F080",
+        "0x0048F9E0",
+        "0x00490180",
+        "0x00491870",
+        "0x004922A0",
+        "0x00492890",
+        "0x004B6710",
+        "0x00521D90",
+        "0x00571B70",
+        "0x00574F70"
+      ]
+    },
+    "1eed4c": {
+      "references": 16,
+      "writer_candidates": [
+        "0x004321B0",
+        "0x0048F9E0",
+        "0x0049AF10"
+      ],
+      "reader_candidates": [
+        "0x004321B0",
+        "0x0048F9E0",
+        "0x00490180",
+        "0x00491870",
+        "0x004922A0",
+        "0x00493630",
+        "0x004B6710",
+        "0x00521D90"
+      ]
+    },
+    "1eed50": {
+      "references": 16,
+      "writer_candidates": [
+        "0x004321B0",
+        "0x0048F9E0",
+        "0x0049AF10"
+      ],
+      "reader_candidates": [
+        "0x004321B0",
+        "0x00490180",
+        "0x004922A0",
+        "0x00493630",
+        "0x004B6710",
+        "0x00521D90"
+      ]
+    },
+    "1eed43": {
+      "references": 6,
+      "writer_candidates": [
+        "0x00490590",
+        "0x004922A0"
+      ],
+      "reader_candidates": [
+        "0x00491870",
+        "0x004922A0"
+      ]
+    },
+    "1eed44": {
+      "references": 9,
+      "writer_candidates": [
+        "0x004321B0",
+        "0x00492710",
+        "0x0049AF10"
+      ],
+      "reader_candidates": [
+        "0x00491870",
+        "0x00492D80",
+        "0x0049D5B0",
+        "0x004B4710"
+      ]
+    },
+    "1eed48": {
+      "references": 11,
+      "writer_candidates": [
+        "0x004321B0",
+        "0x00492710",
+        "0x0049AF10"
+      ],
+      "reader_candidates": [
+        "0x00492890",
+        "0x00492D80",
+        "0x0049D5B0",
+        "0x004B4710"
+      ]
+    },
+    "1eec3c": {
+      "references": 51,
+      "writer_candidates": [
+        "0x004338D0",
+        "0x0048A5B0",
+        "0x0048AD30",
+        "0x0048B4A0",
+        "0x0048BC70",
+        "0x0048BF60",
+        "0x0048C880",
+        "0x0048EA60",
+        "0x00492890",
+        "0x00493630",
+        "0x0049B5C0",
+        "0x005205B0"
+      ],
+      "reader_candidates": [
+        "0x004335E0",
+        "0x004338D0",
+        "0x00434EB0",
+        "0x00493630",
+        "0x004973E0",
+        "0x00497BB0",
+        "0x0049D1B0",
+        "0x004A1250",
+        "0x004B41B0",
+        "0x004B4710",
+        "0x0051E6F0",
+        "0x00521560",
+        "0x00521A00",
+        "0x0052BFF0"
+      ]
+    },
+    "1eec44": {
+      "references": 23,
+      "writer_candidates": [
+        "0x0048AA00",
+        "0x0048AD30",
+        "0x0048B4A0",
+        "0x0048BF60",
+        "0x0048C880",
+        "0x00492710",
+        "0x00492890",
+        "0x00493630",
+        "0x0049B5C0"
+      ],
+      "reader_candidates": [
+        "0x004321B0",
+        "0x004335E0",
+        "0x004A1250",
+        "0x004B4710",
+        "0x004E5040",
+        "0x00521A00",
+        "0x0052B600",
+        "0x0052BFF0",
+        "0x0057AA00",
+        "0x005B4360"
+      ]
+    },
+    "1eec48": {
+      "references": 13,
+      "writer_candidates": [
+        "0x004338D0",
+        "0x0048AA00",
+        "0x0048AD30",
+        "0x0048B4A0",
+        "0x0048BF60",
+        "0x0048C880",
+        "0x00492710",
+        "0x00492890",
+        "0x00493630",
+        "0x0049B5C0",
+        "0x004B6710"
+      ],
+      "reader_candidates": [
+        "0x004338D0",
+        "0x005B4360"
+      ]
+    },
+    "1eedb8": {
+      "references": 25,
+      "writer_candidates": [
+        "0x0048AA00",
+        "0x004922A0",
+        "0x00492710",
+        "0x00493630",
+        "0x0049AF10",
+        "0x0049B5C0"
+      ],
+      "reader_candidates": [
+        "0x0048AA00",
+        "0x004922A0",
+        "0x00492710",
+        "0x00492890",
+        "0x00493630",
+        "0x0049AF10",
+        "0x0049B5C0"
+      ]
+    },
+    "1eedbc": {
+      "references": 12,
+      "writer_candidates": [
+        "0x0048AA00",
+        "0x004922A0",
+        "0x00492710",
+        "0x00492890",
+        "0x00493630",
+        "0x0049AF10",
+        "0x0049B5C0"
+      ],
+      "reader_candidates": [
+        "0x00492890",
+        "0x00492D80",
+        "0x0049B280"
+      ]
+    },
+    "1e8630": {
+      "references": 37,
+      "writer_candidates": [
+        "0x0048A5B0",
+        "0x0048EA60",
+        "0x004A1250",
+        "0x004B6710"
+      ],
+      "reader_candidates": [
+        "0x004321B0",
+        "0x004338D0",
+        "0x0048AA00",
+        "0x0048AD30",
+        "0x0048B4A0",
+        "0x0048BF60",
+        "0x0048C880",
+        "0x0048EA60",
+        "0x0048EEE0",
+        "0x0048F080",
+        "0x0048F9E0",
+        "0x00492890",
+        "0x00492D80",
+        "0x00493630",
+        "0x0049AF10",
+        "0x0049B5C0",
+        "0x004B4710",
+        "0x004B6710",
+        "0x00578370"
+      ]
+    },
+    "1e8634": {
+      "references": 9,
+      "writer_candidates": [
+        "0x0048A5B0"
+      ],
+      "reader_candidates": [
+        "0x004321B0",
+        "0x0048AA00",
+        "0x00492890",
+        "0x00493630",
+        "0x0049AF10",
+        "0x0049B5C0"
+      ]
+    },
+    "1e8638": {
+      "references": 6,
+      "writer_candidates": [
+        "0x0048A5B0"
+      ],
+      "reader_candidates": [
+        "0x004321B0",
+        "0x0048AA00",
+        "0x00492890",
+        "0x00493630",
+        "0x0049B5C0"
+      ]
+    },
+    "1eed60": {
+      "references": 7,
+      "writer_candidates": [
+        "0x00492710",
+        "0x00492890",
+        "0x00492D80",
+        "0x0049B280",
+        "0x004B4710"
+      ],
+      "reader_candidates": []
+    },
+    "1eed64": {
+      "references": 12,
+      "writer_candidates": [
+        "0x00492710",
+        "0x00492890",
+        "0x00492D80",
+        "0x0049B280"
+      ],
+      "reader_candidates": [
+        "0x00492D80",
+        "0x0049B280",
+        "0x0057D8B0"
+      ]
+    },
+    "1eed68": {
+      "references": 4,
+      "writer_candidates": [
+        "0x00492710",
+        "0x00492890"
+      ],
+      "reader_candidates": [
+        "0x00492D80",
+        "0x0049B280"
+      ]
+    },
+    "1eed40": {
+      "references": 33,
+      "writer_candidates": [
+        "0x004321B0",
+        "0x0048AD30",
+        "0x0048B4A0",
+        "0x0048BF60",
+        "0x0048C880",
+        "0x0048F9E0",
+        "0x00493630",
+        "0x0049B5C0"
+      ],
+      "reader_candidates": [
+        "0x004321B0",
+        "0x00492710",
+        "0x00492890",
+        "0x0049D260",
+        "0x0049D5B0",
+        "0x0049D620",
+        "0x0049D6A0",
+        "0x0049D9F0",
+        "0x0049DB60",
+        "0x004B6710",
+        "0x00526510",
+        "0x00546F70",
+        "0x00571B70",
+        "0x00574F70",
+        "0x00576CB0",
+        "0x0057AA00",
+        "0x0057C9B0",
+        "0x0057D680",
+        "0x0057DD10",
+        "0x0057DEE0",
+        "0x0057EB40"
+      ]
+    },
+    "1eed42": {
+      "references": 13,
+      "writer_candidates": [
+        "0x004321B0",
+        "0x0048AD30",
+        "0x0048B4A0",
+        "0x0048BF60",
+        "0x0048C880",
+        "0x0048F9E0",
+        "0x00493630",
+        "0x0049B5C0"
+      ],
+      "reader_candidates": [
+        "0x004F0BE0",
+        "0x0057D1D0"
+      ]
+    },
+    "1eedc4": {
+      "references": 16,
+      "writer_candidates": [],
+      "reader_candidates": [
+        "0x0048AA00",
+        "0x00492710",
+        "0x00492890",
+        "0x00492D80",
+        "0x00493300",
+        "0x00493630",
+        "0x0049B280",
+        "0x0049B5C0"
+      ]
+    },
+    "1eedd4": {
+      "references": 8,
+      "writer_candidates": [],
+      "reader_candidates": [
+        "0x0048AA00",
+        "0x00492710",
+        "0x00492890",
+        "0x00493300",
+        "0x00493630",
+        "0x0049B5C0"
+      ]
+    }
+  },
+  "evidence": {
+    "1eec44": [
+      {
+        "function": "0x004321B0",
+        "size_bytes": 3124,
+        "line": 68,
+        "mode": "read_or_other",
+        "source": "if ((in_stack_0000002c != '\\0') && (*(char *)(param_1 + 0x1eec44) != '\\0')) {",
+        "before": "local_4 = 0;",
+        "after": "puVar12 = param_2;"
+      },
+      {
+        "function": "0x004335E0",
+        "size_bytes": 66,
+        "line": 20,
+        "mode": "read_or_other",
+        "source": "if ((*(char *)(param_1 + 0x1eec44) != '\\0') &&",
+        "before": "}",
+        "after": "(FUN_00492d80(0), *(char *)(param_1 + 0x1eec44) != '\\0')) {"
+      },
+      {
+        "function": "0x004335E0",
+        "size_bytes": 66,
+        "line": 21,
+        "mode": "read_or_other",
+        "source": "(FUN_00492d80(0), *(char *)(param_1 + 0x1eec44) != '\\0')) {",
+        "before": "if ((*(char *)(param_1 + 0x1eec44) != '\\0') &&",
+        "after": "return;"
+      },
+      {
+        "function": "0x0048AA00",
+        "size_bytes": 496,
+        "line": 25,
+        "mode": "possible_write",
+        "source": "*(undefined1 *)(unaff_ESI + 0x1eec44) = 0;",
+        "before": "}",
+        "after": "*(undefined4 *)(unaff_ESI + 0x1eec48) = 0;"
+      },
+      {
+        "function": "0x0048AD30",
+        "size_bytes": 1904,
+        "line": 102,
+        "mode": "possible_write",
+        "source": "*(undefined1 *)(unaff_EBX + 0x1eec44) = 0;",
+        "before": "*(undefined4 *)(unaff_EBX + 0x1eec3c) = 0;",
+        "after": "*(undefined4 *)(unaff_EBX + 0x1eec48) = 0;"
+      },
+      {
+        "function": "0x0048B4A0",
+        "size_bytes": 1988,
+        "line": 56,
+        "mode": "possible_write",
+        "source": "*(undefined1 *)(param_1 + 0x1eec44) = 0;",
+        "before": "*(undefined4 *)(param_1 + 0x1eec3c) = 4;",
+        "after": "*(undefined4 *)(param_1 + 0x1eec48) = 0;"
+      },
+      {
+        "function": "0x0048BF60",
+        "size_bytes": 2322,
+        "line": 62,
+        "mode": "possible_write",
+        "source": "*(undefined1 *)(param_1 + 0x1eec44) = 0;",
+        "before": "*(undefined4 *)(param_1 + 0x1eec3c) = 5;",
+        "after": "*(undefined4 *)(param_1 + 0x1eec48) = 0;"
+      },
+      {
+        "function": "0x0048C880",
+        "size_bytes": 3608,
+        "line": 72,
+        "mode": "possible_write",
+        "source": "*(undefined1 *)(param_1 + 0x1eec44) = 0;",
+        "before": "*(undefined4 *)(param_1 + 0x1eec3c) = 1;",
+        "after": "*(undefined4 *)(param_1 + 0x1eec48) = 0;"
+      },
+      {
+        "function": "0x00492710",
+        "size_bytes": 378,
+        "line": 26,
+        "mode": "possible_write",
+        "source": "*(undefined1 *)(unaff_ESI + 0x1eec44) = 0;",
+        "before": "*(undefined4 *)(unaff_ESI + 0x1eed68) = 0;",
+        "after": "*(undefined4 *)(unaff_ESI + 0x1eec48) = 0;"
+      },
+      {
+        "function": "0x00492890",
+        "size_bytes": 1251,
+        "line": 72,
+        "mode": "possible_write",
+        "source": "*(undefined1 *)(unaff_ESI + 0x1eec44) = 1;",
+        "before": "*(undefined4 *)(unaff_ESI + 0x1eec3c) = 2;",
+        "after": "*(undefined4 *)(unaff_ESI + 0x1eec48) = 0;"
+      },
+      {
+        "function": "0x00493630",
+        "size_bytes": 11376,
+        "line": 139,
+        "mode": "possible_write",
+        "source": "*(undefined1 *)(param_3 + 0x1eec44) = 0;",
+        "before": "}",
+        "after": "*(undefined4 *)(param_3 + 0x1eec48) = 0;"
+      },
+      {
+        "function": "0x0049B5C0",
+        "size_bytes": 3713,
+        "line": 86,
+        "mode": "possible_write",
+        "source": "*(undefined1 *)(param_1 + 0x1eec44) = 0;",
+        "before": "*(undefined4 *)(param_1 + 0x1eec3c) = 2;",
+        "after": "*(undefined4 *)(param_1 + 0x1eec48) = 0;"
+      },
+      {
+        "function": "0x004A1250",
+        "size_bytes": 5249,
+        "line": 199,
+        "mode": "read_or_other",
+        "source": "if (*(char *)(param_1 + 0x1eec44) == '\\0') {",
+        "before": "case (int *)0x2:",
+        "after": "while (*(int *)(param_1 + 0x1eeda8) != *(int *)(param_1 + 0x1eedac)) {"
+      },
+      {
+        "function": "0x004A1250",
+        "size_bytes": 5249,
+        "line": 320,
+        "mode": "read_or_other",
+        "source": "if ((*(int *)(param_1 + 0x1eec3c) != 2) || (*(char *)(param_1 + 0x1eec44) != '\\0')) {",
+        "before": "if ((*(int *)(param_2 + 0x24) - *piVar19 & 0xfffffffcU) == 0) {",
+        "after": "cVar9 = FUN_00520280();"
+      },
+      {
+        "function": "0x004A1250",
+        "size_bytes": 5249,
+        "line": 345,
+        "mode": "read_or_other",
+        "source": "if (*(char *)(param_1 + 0x1eec44) != '\\0') {",
+        "before": "LAB_004a1854:",
+        "after": "piVar19 = (int *)(*(int *)(param_1 + 0x1eedd8) + -4);"
+      },
+      {
+        "function": "0x004B4710",
+        "size_bytes": 7548,
+        "line": 1006,
+        "mode": "read_or_other",
+        "source": "if (*(char *)(param_1 + 0x1eec44) != '\\0') {",
+        "before": "if (local_7a != '\\0') {",
+        "after": "local_188 = (double)(ulonglong)*(uint *)(param_1 + 0x1e8630);"
+      },
+      {
+        "function": "0x004E5040",
+        "size_bytes": 876,
+        "line": 37,
+        "mode": "read_or_other",
+        "source": "(bVar4 = true, *(char *)(*(int *)(param_1 + 0x38) + 0x1eec44) != '\\0')) {",
+        "before": "if ((*(int *)(param_1 + 0x38) == 0) ||",
+        "after": "bVar4 = false;"
+      },
+      {
+        "function": "0x00521A00",
+        "size_bytes": 874,
+        "line": 108,
+        "mode": "read_or_other",
+        "source": "if (*(char *)(*(int *)(param_1 + 0x104) + 0x1eec44) != '\\0') {",
+        "before": "case 2:",
+        "after": "FUN_005263e0();"
+      },
+      {
+        "function": "0x00521A00",
+        "size_bytes": 874,
+        "line": 145,
+        "mode": "read_or_other",
+        "source": "(*(int *)(iVar5 + 0x1eec3c) == 2)) && (*(char *)(iVar5 + 0x1eec44) != '\\0')) {",
+        "before": "(iVar5 = *(int *)(param_1 + 0x104), *(char *)(iVar5 + 0x1eec4c) == '\\0')) &&",
+        "after": "FUN_00526a40(iVar2);"
+      },
+      {
+        "function": "0x0052B600",
+        "size_bytes": 2532,
+        "line": 68,
+        "mode": "read_or_other",
+        "source": "if (*(char *)(*(int *)(param_1 + 0x194) + 0x1eec44) != '\\0') {",
+        "before": "local_d0 = param_1;",
+        "after": "iVar6 = *(int *)(param_1 + 4);"
+      },
+      {
+        "function": "0x0052BFF0",
+        "size_bytes": 959,
+        "line": 38,
+        "mode": "read_or_other",
+        "source": "if (*(char *)(*(int *)(param_1 + 0x194) + 0x1eec44) != '\\0') {",
+        "before": "if (*(char *)(param_1 + 0x45e) != '\\0') {",
+        "after": "iVar3 = *(int *)(param_1 + 4);"
+      },
+      {
+        "function": "0x0057AA00",
+        "size_bytes": 2416,
+        "line": 31,
+        "mode": "read_or_other",
+        "source": "if (*(char *)(param_1[0x78] + 0x1eec44) == '\\0') {",
+        "before": "}",
+        "after": "if (param_1[0x61b5] != -0x7ffffff8) {"
+      },
+      {
+        "function": "0x005B4360",
+        "size_bytes": 425,
+        "line": 29,
+        "mode": "read_or_other",
+        "source": "(*(char *)(iVar2 + 0x1eec44) != '\\0')) &&",
+        "before": "if ((((iVar5 % 0x1e == 0) && (*(int *)(*(int *)(param_1 + 0x70) + 0x14) == 0)) &&",
+        "after": "(piVar6 = (int *)**(int **)(param_1 + 0xac), piVar6 != *(int **)(param_1 + 0xac))) {"
+      }
+    ],
+    "1eed1c": [
+      {
+        "function": "0x004321B0",
+        "size_bytes": 3124,
+        "line": 271,
+        "mode": "possible_write",
+        "source": "*(undefined **)(param_1 + 0x1eed1c) = &DAT_00b094d0;",
+        "before": "_DAT_00b09580 = *(undefined4 *)(param_1 + 0xc);",
+        "after": "FUN_00436340(*(undefined4 *)(*(int *)(param_1 + 0x1eed24) + 4));"
+      },
+      {
+        "function": "0x0048F080",
+        "size_bytes": 1435,
+        "line": 64,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(param_1 + 0x1eed1c) != 0) {",
+        "before": "}",
+        "after": "FUN_00597a20();"
+      },
+      {
+        "function": "0x0048F9E0",
+        "size_bytes": 1943,
+        "line": 104,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)((int)param_2 + 0x1eed1c) = param_1;",
+        "before": "*(undefined4 *)((int)param_2 + 0x1eed18) = 0;",
+        "after": "FUN_004f8ed0();"
+      },
+      {
+        "function": "0x0048F9E0",
+        "size_bytes": 1943,
+        "line": 282,
+        "mode": "read_or_other",
+        "source": "FUN_00597960(*(undefined4 *)((int)param_2 + 0x1eed1c),auStack_a0);",
+        "before": "local_4 = 1;",
+        "after": "local_4 = 0xffffffff;"
+      },
+      {
+        "function": "0x0048F9E0",
+        "size_bytes": 1943,
+        "line": 338,
+        "mode": "read_or_other",
+        "source": "uStack_7c = *(undefined4 *)((int)param_2 + 0x1eed1c);",
+        "before": "if (((0 < iVar13) && (iStack_38 != 0)) && (*(int *)(iStack_38 + 0x94) == 0)) {",
+        "after": "iStack_74 = (int)param_2 + 0x1eed30;"
+      },
+      {
+        "function": "0x00490180",
+        "size_bytes": 1022,
+        "line": 75,
+        "mode": "read_or_other",
+        "source": "uStack_5c = *(undefined4 *)(param_1 + 0x1eed1c);",
+        "before": "iStack_4c = *(undefined4 *)(param_1 + 0x1eed50);",
+        "after": "local_54 = param_1 + 0x1eed30;"
+      },
+      {
+        "function": "0x00491870",
+        "size_bytes": 2599,
+        "line": 393,
+        "mode": "read_or_other",
+        "source": "if ((*(int *)(*(int *)(param_1 + 0x1eed1c) + 0x24) == 0) &&",
+        "before": "}",
+        "after": "((*(int *)(*(int *)(param_1 + 0x1eed1c) + 0x90) == 0 ||"
+      },
+      {
+        "function": "0x00491870",
+        "size_bytes": 2599,
+        "line": 394,
+        "mode": "read_or_other",
+        "source": "((*(int *)(*(int *)(param_1 + 0x1eed1c) + 0x90) == 0 ||",
+        "before": "if ((*(int *)(*(int *)(param_1 + 0x1eed1c) + 0x24) == 0) &&",
+        "after": "(*(int *)(*(int *)(param_1 + 0x1eed44) + 0x48) =="
+      },
+      {
+        "function": "0x00491870",
+        "size_bytes": 2599,
+        "line": 433,
+        "mode": "read_or_other",
+        "source": "ppppuVar10 = *(undefined4 *****)(param_1 + 0x1eed1c);",
+        "before": "FUN_0041de00();",
+        "after": "pppuStack_9c = (undefined4 ***)0x491fec;"
+      },
+      {
+        "function": "0x00491870",
+        "size_bytes": 2599,
+        "line": 448,
+        "mode": "read_or_other",
+        "source": "ppppuVar10 = *(undefined4 *****)(param_1 + 0x1eed1c);",
+        "before": "}",
+        "after": "pppuStack_9c = (undefined4 ***)0x492134;"
+      },
+      {
+        "function": "0x00491870",
+        "size_bytes": 2599,
+        "line": 479,
+        "mode": "read_or_other",
+        "source": "ppppuVar10 = *(undefined4 *****)(param_1 + 0x1eed1c);",
+        "before": "}",
+        "after": "pppuStack_9c = (undefined4 ***)0x4921e8;"
+      },
+      {
+        "function": "0x00491870",
+        "size_bytes": 2599,
+        "line": 505,
+        "mode": "read_or_other",
+        "source": "ppppuVar10 = *(undefined4 *****)(param_1 + 0x1eed1c);",
+        "before": "if ((iVar6 == 0) || (DAT_00683748 == '\\0')) goto LAB_004920fd;",
+        "after": "pppuStack_9c = (undefined4 ***)0x492040;"
+      },
+      {
+        "function": "0x004922A0",
+        "size_bytes": 1116,
+        "line": 72,
+        "mode": "read_or_other",
+        "source": "FUN_00402710(*(undefined4 *)(param_1 + 0x1eed1c),0,0xffffffff);",
+        "before": "local_b4 = (int ***)((uint)local_b4 & 0xffffff00);",
+        "after": "FUN_00463610(*(undefined4 *)(param_1 + 0xc));"
+      },
+      {
+        "function": "0x004922A0",
+        "size_bytes": 1116,
+        "line": 125,
+        "mode": "read_or_other",
+        "source": "ppppiVar4 = *(int *****)(param_1 + 0x1eed1c);",
+        "before": "FUN_00432ee0();",
+        "after": "pppiStack_98 = (int ***)0x492464;"
+      },
+      {
+        "function": "0x00492890",
+        "size_bytes": 1251,
+        "line": 111,
+        "mode": "read_or_other",
+        "source": "uVar12 = *(undefined4 *)(unaff_ESI + 0x1eed1c);",
+        "before": "uVar13 = *(undefined4 *)(unaff_ESI + 0x1eed48);",
+        "after": "}"
+      },
+      {
+        "function": "0x00492890",
+        "size_bytes": 1251,
+        "line": 132,
+        "mode": "read_or_other",
+        "source": "uVar12 = *(undefined4 *)(unaff_ESI + 0x1eed1c);",
+        "before": "uVar13 = *(undefined4 *)(unaff_ESI + 0x1eed48);",
+        "after": "}"
+      },
+      {
+        "function": "0x00492890",
+        "size_bytes": 1251,
+        "line": 138,
+        "mode": "read_or_other",
+        "source": "FUN_00564160(*(undefined4 *)(unaff_ESI + 0x1eed1c),*(undefined4 *)(unaff_ESI + 0x1eed48),piVar8)",
+        "before": "piVar8 = (int *)(unaff_ESI + 0x1eedf4);",
+        "after": ";"
+      },
+      {
+        "function": "0x0049AF10",
+        "size_bytes": 866,
+        "line": 71,
+        "mode": "possible_write",
+        "source": "*(undefined **)(param_1 + 0x1eed1c) = &DAT_00b0a9d0;",
+        "before": "iVar3 = *(int *)(param_1 + 0xc) + 0x58;",
+        "after": "*(int *)(param_1 + 0x1eed4c) = iVar3;"
+      },
+      {
+        "function": "0x004B6710",
+        "size_bytes": 4109,
+        "line": 224,
+        "mode": "read_or_other",
+        "source": "puStack_264 = *(undefined4 **)(param_1 + 0x1eed1c);",
+        "before": "local_8 = CONCAT31(local_8._1_3_,10);",
+        "after": "pcStack_268 = (char *)0x4b6b2e;"
+      },
+      {
+        "function": "0x004B6710",
+        "size_bytes": 4109,
+        "line": 236,
+        "mode": "read_or_other",
+        "source": "puStack_264 = *(undefined4 **)(param_1 + 0x1eed1c);",
+        "before": "local_8 = CONCAT31(local_8._1_3_,9);",
+        "after": "pcStack_268 = (char *)0x4b6b01;"
+      },
+      {
+        "function": "0x00521D90",
+        "size_bytes": 5269,
+        "line": 576,
+        "mode": "read_or_other",
+        "source": "uStack_98 = *(undefined4 *)(iVar4 + 0x1eed1c);",
+        "before": "iStack_90 = iVar4 + 0x1eed30;",
+        "after": "piStack_94 = (int *)(iVar4 + 0x1eed20);"
+      },
+      {
+        "function": "0x00571B70",
+        "size_bytes": 8270,
+        "line": 751,
+        "mode": "read_or_other",
+        "source": "iVar8 = *(int *)(*(int *)(iVar8 + 0x1eed1c) + 0x20);",
+        "before": "if (extraout_DL == '\\0') {",
+        "after": "pppuStack_120 = (undefined4 ***)&iStack_c8;"
+      },
+      {
+        "function": "0x00574F70",
+        "size_bytes": 402,
+        "line": 57,
+        "mode": "read_or_other",
+        "source": "iVar2 = *(int *)(*(int *)(param_1[0x78] + 0x1eed1c) + 0x20);",
+        "before": "((char)param_1[0x6184] == '\\0')))) && (*(char *)(param_1[0x75] + 0x18) == '\\0')) {",
+        "after": "piVar3 = (int *)FUN_00415460(&stack0x00000000);"
+      }
+    ],
+    "1eed40": [
+      {
+        "function": "0x004321B0",
+        "size_bytes": 3124,
+        "line": 282,
+        "mode": "possible_write",
+        "source": "*(undefined1 *)(param_1 + 0x1eed40) = uVar8;",
+        "before": "local_4 = CONCAT31(local_4._1_3_,0xb);",
+        "after": "if (0xf < uStack_20) {"
+      },
+      {
+        "function": "0x004321B0",
+        "size_bytes": 3124,
+        "line": 286,
+        "mode": "read_or_other",
+        "source": "*(undefined1 *)(param_1 + 0x1eed41) = *(undefined1 *)(param_1 + 0x1eed40);",
+        "before": "}",
+        "after": "*(undefined1 *)(param_1 + 0x1eed42) = *(undefined1 *)(param_1 + 0x1eed40);"
+      },
+      {
+        "function": "0x004321B0",
+        "size_bytes": 3124,
+        "line": 287,
+        "mode": "read_or_other",
+        "source": "*(undefined1 *)(param_1 + 0x1eed42) = *(undefined1 *)(param_1 + 0x1eed40);",
+        "before": "*(undefined1 *)(param_1 + 0x1eed41) = *(undefined1 *)(param_1 + 0x1eed40);",
+        "after": "pvVar6 = *(void **)(param_1 + 0x1eebac);"
+      },
+      {
+        "function": "0x0048AD30",
+        "size_bytes": 1904,
+        "line": 104,
+        "mode": "possible_write",
+        "source": "*(undefined2 *)(unaff_EBX + 0x1eed40) = 0;",
+        "before": "*(undefined4 *)(unaff_EBX + 0x1eec48) = 0;",
+        "after": "*(undefined1 *)(unaff_EBX + 0x1eed42) = 0;"
+      },
+      {
+        "function": "0x0048B4A0",
+        "size_bytes": 1988,
+        "line": 58,
+        "mode": "possible_write",
+        "source": "*(undefined2 *)(param_1 + 0x1eed40) = 0;",
+        "before": "*(undefined4 *)(param_1 + 0x1eec48) = 0;",
+        "after": "*(undefined1 *)(param_1 + 0x1eed42) = 0;"
+      },
+      {
+        "function": "0x0048BF60",
+        "size_bytes": 2322,
+        "line": 64,
+        "mode": "possible_write",
+        "source": "*(undefined2 *)(param_1 + 0x1eed40) = 0;",
+        "before": "*(undefined4 *)(param_1 + 0x1eec48) = 0;",
+        "after": "*(undefined1 *)(param_1 + 0x1eed42) = 0;"
+      },
+      {
+        "function": "0x0048C880",
+        "size_bytes": 3608,
+        "line": 74,
+        "mode": "possible_write",
+        "source": "*(undefined2 *)(param_1 + 0x1eed40) = 0;",
+        "before": "*(undefined4 *)(param_1 + 0x1eec48) = 0;",
+        "after": "*(undefined1 *)(param_1 + 0x1eed42) = 0;"
+      },
+      {
+        "function": "0x0048F9E0",
+        "size_bytes": 1943,
+        "line": 55,
+        "mode": "possible_write",
+        "source": "*(char *)((int)param_2 + 0x1eed40) = cVar4;",
+        "before": "cVar4 = FUN_00597860();",
+        "after": "*(char *)((int)param_2 + 0x1eed41) = cVar4;"
+      },
+      {
+        "function": "0x0048F9E0",
+        "size_bytes": 1943,
+        "line": 325,
+        "mode": "possible_write",
+        "source": "*(undefined1 *)((int)param_2 + 0x1eed40) = 0;",
+        "before": "if (*(int *)(*(int *)((int)param_2 + 0x1eed4c) + 0x10) == 0) {",
+        "after": "}"
+      },
+      {
+        "function": "0x00492710",
+        "size_bytes": 378,
+        "line": 51,
+        "mode": "read_or_other",
+        "source": "if (*(char *)(unaff_ESI + 0x1eed40) != '\\0') {",
+        "before": "}",
+        "after": "FUN_0049d6a0(unaff_ESI);"
+      },
+      {
+        "function": "0x00492710",
+        "size_bytes": 378,
+        "line": 60,
+        "mode": "read_or_other",
+        "source": "if (*(char *)(unaff_ESI + 0x1eed40) == '\\0') {",
+        "before": "if (iVar4 == 0) {",
+        "after": "uVar5 = *(undefined4 *)(unaff_ESI + 0xc);"
+      },
+      {
+        "function": "0x00492890",
+        "size_bytes": 1251,
+        "line": 97,
+        "mode": "read_or_other",
+        "source": "if (*(char *)(unaff_ESI + 0x1eed40) != '\\0') {",
+        "before": "*(undefined4 *)(unaff_ESI + 0x1eedec) = 0;",
+        "after": "FUN_0049d6a0(unaff_ESI);"
+      },
+      {
+        "function": "0x00492890",
+        "size_bytes": 1251,
+        "line": 123,
+        "mode": "read_or_other",
+        "source": "if (*(char *)(unaff_ESI + 0x1eed40) == '\\0') {",
+        "before": "if (iVar6 == 0) {",
+        "after": "uVar13 = *(undefined4 *)(unaff_ESI + 0xc);"
+      },
+      {
+        "function": "0x00493630",
+        "size_bytes": 11376,
+        "line": 141,
+        "mode": "possible_write",
+        "source": "*(undefined2 *)(param_3 + 0x1eed40) = 0;",
+        "before": "*(undefined4 *)(param_3 + 0x1eec48) = 0;",
+        "after": "*(undefined1 *)(param_3 + 0x1eed42) = 0;"
+      },
+      {
+        "function": "0x0049B5C0",
+        "size_bytes": 3713,
+        "line": 88,
+        "mode": "possible_write",
+        "source": "*(undefined2 *)(param_1 + 0x1eed40) = 0;",
+        "before": "*(undefined4 *)(param_1 + 0x1eec48) = 0;",
+        "after": "*(undefined1 *)(param_1 + 0x1eed42) = 0;"
+      },
+      {
+        "function": "0x0049D260",
+        "size_bytes": 839,
+        "line": 26,
+        "mode": "read_or_other",
+        "source": "if (*(char *)(in_EAX + 0x1eed40) == '\\0') {",
+        "before": "",
+        "after": "return;"
+      },
+      {
+        "function": "0x0049D5B0",
+        "size_bytes": 105,
+        "line": 15,
+        "mode": "read_or_other",
+        "source": "if (*(char *)(unaff_EBX + 0x1eed40) != '\\0') {",
+        "before": "",
+        "after": "iVar1 = *(int *)(unaff_EBX + 4);"
+      },
+      {
+        "function": "0x0049D620",
+        "size_bytes": 117,
+        "line": 14,
+        "mode": "read_or_other",
+        "source": "if (*(char *)(param_1 + 0x1eed40) != '\\0') {",
+        "before": "",
+        "after": "iVar1 = *(int *)(param_1 + 4);"
+      },
+      {
+        "function": "0x0049D6A0",
+        "size_bytes": 826,
+        "line": 47,
+        "mode": "read_or_other",
+        "source": "if (*(char *)(param_1 + 0x1eed40) != '\\0') {",
+        "before": "ExceptionList = &local_c;",
+        "after": "FUN_0044d0d0(DAT_0065a220 ^ (uint)&stack0xffffff7c);"
+      },
+      {
+        "function": "0x0049D9F0",
+        "size_bytes": 355,
+        "line": 28,
+        "mode": "read_or_other",
+        "source": "if (*(char *)(param_2 + 0x1eed40) != '\\0') {",
+        "before": "iVar2 = param_2;",
+        "after": "local_14 = (int)(*(int *)(param_1 + 0x224) + (*(int *)(param_1 + 0x224) >> 0x1f & 0x1fU)) >> 5;"
+      },
+      {
+        "function": "0x0049DB60",
+        "size_bytes": 87,
+        "line": 13,
+        "mode": "read_or_other",
+        "source": "if (*(char *)(unaff_ESI + 0x1eed40) == '\\0') {",
+        "before": "",
+        "after": "return in_EAX & 0xffffff00;"
+      },
+      {
+        "function": "0x004B6710",
+        "size_bytes": 4109,
+        "line": 217,
+        "mode": "read_or_other",
+        "source": "if (*(char *)(param_1 + 0x1eed40) == '\\0') {",
+        "before": "local_15c = &puStack_240;",
+        "after": "puStack_244 = &DAT_006248f6;"
+      },
+      {
+        "function": "0x00526510",
+        "size_bytes": 1321,
+        "line": 156,
+        "mode": "read_or_other",
+        "source": "if ((((*(char *)(*(int *)(param_1 + 0x194) + 0x1eed40) != '\\0') &&",
+        "before": "FUN_004071b0();",
+        "after": "(*(int *)(iVar3 + 0x1d0) != 0)) &&"
+      },
+      {
+        "function": "0x00546F70",
+        "size_bytes": 1308,
+        "line": 94,
+        "mode": "read_or_other",
+        "source": "(*(char *)(piVar1[0x78] + 0x1eed40) == '\\0')) || (DAT_0065bd9d == '\\0')))) {",
+        "before": "(((*(char *)(piVar1[0x75] + 0x18) != '\\0' ||",
+        "after": "if (piVar1[0x7958] == 2) goto LAB_00547480;"
+      },
+      {
+        "function": "0x00571B70",
+        "size_bytes": 8270,
+        "line": 757,
+        "mode": "read_or_other",
+        "source": "if ((cStack_109 == '\\0') || (*(char *)(*(int *)(param_1 + 0x1e0) + 0x1eed40) != '\\0')) {",
+        "before": "*(undefined1 *)(param_1 + 0x1f8) = 1;",
+        "after": "*(undefined1 *)(param_1 + 0x1f9) = 0;"
+      },
+      {
+        "function": "0x00574F70",
+        "size_bytes": 402,
+        "line": 54,
+        "mode": "read_or_other",
+        "source": "if (((*(char *)(param_1[0x78] + 0x1eed40) != '\\0') &&",
+        "before": "FUN_00576f70();",
+        "after": "((((char)param_1[0x23] != '\\0' || ((char)param_1[0x7e] == '\\0')) &&"
+      },
+      {
+        "function": "0x00576CB0",
+        "size_bytes": 271,
+        "line": 16,
+        "mode": "read_or_other",
+        "source": "if ((*(char *)(*(int *)(in_EAX + 0x1e0) + 0x1eed40) != '\\0') &&",
+        "before": "",
+        "after": "((double)(*(int *)(in_EAX + 0x188) * 2) <= *(double *)(in_EAX + 0x1e578))) {"
+      },
+      {
+        "function": "0x0057AA00",
+        "size_bytes": 2416,
+        "line": 332,
+        "mode": "read_or_other",
+        "source": "((*(char *)(param_1[0x78] + 0x1eed40) == '\\0' || (*(char *)(param_1[0x75] + 0x18) != '\\0')))",
+        "before": "(_DAT_0063b050 <= (double)param_1[0x24] / (double)param_1[0x37])) &&",
+        "after": "))) {"
+      },
+      {
+        "function": "0x0057C9B0",
+        "size_bytes": 1520,
+        "line": 194,
+        "mode": "read_or_other",
+        "source": "if ((*(char *)(*(int *)(param_1 + 0x1e0) + 0x1eed40) == '\\0') ||",
+        "before": "if ((4 < *(int *)(param_1 + 0x18690)) && (!bVar4)) {",
+        "after": "(uVar11 = 0x20, *(char *)(*(int *)(param_1 + 0x1d4) + 0x18) != '\\0')) {"
+      },
+      {
+        "function": "0x0057D680",
+        "size_bytes": 550,
+        "line": 67,
+        "mode": "read_or_other",
+        "source": "if (*(char *)(*(int *)(in_EAX + 0x1e0) + 0x1eed40) == '\\0') goto LAB_0057d85c;",
+        "before": "(iVar7 = (**(code **)(**(int **)(in_EAX + 0x1d4) + 0x18))(), iVar7 == 5)) {",
+        "after": "iVar7 = FUN_00576be0();"
+      },
+      {
+        "function": "0x0057DD10",
+        "size_bytes": 461,
+        "line": 22,
+        "mode": "read_or_other",
+        "source": "if ((*(char *)(*(int *)(unaff_EDI + 0x1e0) + 0x1eed40) != '\\0') &&",
+        "before": "}",
+        "after": "(*(char *)(*(int *)(unaff_EDI + 0x1d4) + 0x18) == '\\0')) {"
+      },
+      {
+        "function": "0x0057DEE0",
+        "size_bytes": 151,
+        "line": 13,
+        "mode": "read_or_other",
+        "source": "if (((*(int *)(in_EAX + 0x198) != 0) && (*(char *)(*(int *)(in_EAX + 0x1e0) + 0x1eed40) == '\\0'))",
+        "before": "",
+        "after": "&& (*(int *)(in_EAX + 0x1e580) != 0)) {"
+      },
+      {
+        "function": "0x0057EB40",
+        "size_bytes": 1610,
+        "line": 142,
+        "mode": "read_or_other",
+        "source": "(((*(char *)(param_1[0x75] + 0x18) != '\\0' || (*(char *)(param_1[0x78] + 0x1eed40) == '\\0')) ||",
+        "before": "(*(int *)(param_1[0x78] + 0x1eed18) == 0)) &&",
+        "after": "(DAT_0065bd9d == '\\0')))) {"
+      }
+    ],
+    "1eed42": [
+      {
+        "function": "0x004321B0",
+        "size_bytes": 3124,
+        "line": 287,
+        "mode": "possible_write",
+        "source": "*(undefined1 *)(param_1 + 0x1eed42) = *(undefined1 *)(param_1 + 0x1eed40);",
+        "before": "*(undefined1 *)(param_1 + 0x1eed41) = *(undefined1 *)(param_1 + 0x1eed40);",
+        "after": "pvVar6 = *(void **)(param_1 + 0x1eebac);"
+      },
+      {
+        "function": "0x0048AD30",
+        "size_bytes": 1904,
+        "line": 105,
+        "mode": "possible_write",
+        "source": "*(undefined1 *)(unaff_EBX + 0x1eed42) = 0;",
+        "before": "*(undefined2 *)(unaff_EBX + 0x1eed40) = 0;",
+        "after": "*(undefined2 *)(unaff_EBX + 0x1eec4c) = 0;"
+      },
+      {
+        "function": "0x0048B4A0",
+        "size_bytes": 1988,
+        "line": 59,
+        "mode": "possible_write",
+        "source": "*(undefined1 *)(param_1 + 0x1eed42) = 0;",
+        "before": "*(undefined2 *)(param_1 + 0x1eed40) = 0;",
+        "after": "*(undefined2 *)(param_1 + 0x1eec4c) = 0;"
+      },
+      {
+        "function": "0x0048BF60",
+        "size_bytes": 2322,
+        "line": 65,
+        "mode": "possible_write",
+        "source": "*(undefined1 *)(param_1 + 0x1eed42) = 0;",
+        "before": "*(undefined2 *)(param_1 + 0x1eed40) = 0;",
+        "after": "*(undefined2 *)(param_1 + 0x1eec4c) = 0;"
+      },
+      {
+        "function": "0x0048C880",
+        "size_bytes": 3608,
+        "line": 75,
+        "mode": "possible_write",
+        "source": "*(undefined1 *)(param_1 + 0x1eed42) = 0;",
+        "before": "*(undefined2 *)(param_1 + 0x1eed40) = 0;",
+        "after": "*(undefined2 *)(param_1 + 0x1eec4c) = 0;"
+      },
+      {
+        "function": "0x0048F9E0",
+        "size_bytes": 1943,
+        "line": 57,
+        "mode": "possible_write",
+        "source": "*(char *)((int)param_2 + 0x1eed42) = cVar4;",
+        "before": "*(char *)((int)param_2 + 0x1eed41) = cVar4;",
+        "after": "if (cVar4 == '\\0') {"
+      },
+      {
+        "function": "0x0048F9E0",
+        "size_bytes": 1943,
+        "line": 63,
+        "mode": "possible_write",
+        "source": "*(undefined1 *)((int)param_2 + 0x1eed42) = uVar5;",
+        "before": "local_4 = 0xffffffff;",
+        "after": "if (0xf < local_1c) {"
+      },
+      {
+        "function": "0x00493630",
+        "size_bytes": 11376,
+        "line": 142,
+        "mode": "possible_write",
+        "source": "*(undefined1 *)(param_3 + 0x1eed42) = 0;",
+        "before": "*(undefined2 *)(param_3 + 0x1eed40) = 0;",
+        "after": "pvVar1 = *(void **)(param_3 + 0x1eedc4);"
+      },
+      {
+        "function": "0x0049B5C0",
+        "size_bytes": 3713,
+        "line": 89,
+        "mode": "possible_write",
+        "source": "*(undefined1 *)(param_1 + 0x1eed42) = 0;",
+        "before": "*(undefined2 *)(param_1 + 0x1eed40) = 0;",
+        "after": "pvVar1 = *(void **)(param_1 + 0x1eedc4);"
+      },
+      {
+        "function": "0x004F0BE0",
+        "size_bytes": 9897,
+        "line": 396,
+        "mode": "read_or_other",
+        "source": "(*(char *)(iStack_1c4 + 0x1eed42) != '\\0')) {",
+        "before": "if ((((char)param_2[0x39] == '\\0') && ((**(code **)*param_2)(), (char)param_2[0x39] == '\\0')) ||",
+        "after": "FUN_004ea2e0();"
+      },
+      {
+        "function": "0x004F0BE0",
+        "size_bytes": 9897,
+        "line": 1418,
+        "mode": "read_or_other",
+        "source": "if (*(char *)(iStack_1c4 + 0x1eed42) != '\\0') goto LAB_004f3206;",
+        "before": "LAB_004f31f9:",
+        "after": "}"
+      },
+      {
+        "function": "0x0057D1D0",
+        "size_bytes": 1199,
+        "line": 64,
+        "mode": "read_or_other",
+        "source": "(*(char *)(*(int *)(param_1 + 0x1e0) + 0x1eed42) == '\\0')) {",
+        "before": "if ((*(char *)(param_1 + 0x8c) != '\\0') &&",
+        "after": "*(int *)(param_1 + 0x186c0) = iVar1 * 2;"
+      },
+      {
+        "function": "0x0057D1D0",
+        "size_bytes": 1199,
+        "line": 113,
+        "mode": "read_or_other",
+        "source": "if (*(char *)(*(int *)(param_1 + 0x1e0) + 0x1eed42) != '\\0') {",
+        "before": "}",
+        "after": "FUN_005767b0(uVar7,uVar8,0,0);"
+      }
+    ],
+    "1eed4c": [
+      {
+        "function": "0x004321B0",
+        "size_bytes": 3124,
+        "line": 300,
+        "mode": "possible_write",
+        "source": "*(int *)(param_1 + 0x1eed4c) = in_stack_00000024;",
+        "before": "*(undefined4 *)(param_1 + 0x1eed5c) = 0;",
+        "after": "*(int *)(param_1 + 0x1eed50) = in_stack_00000028;"
+      },
+      {
+        "function": "0x004321B0",
+        "size_bytes": 3124,
+        "line": 306,
+        "mode": "possible_write",
+        "source": "*(int *)(param_1 + 0x1eed4c) = iVar14;",
+        "before": "}",
+        "after": "iVar14 = in_stack_00000028;"
+      },
+      {
+        "function": "0x004321B0",
+        "size_bytes": 3124,
+        "line": 327,
+        "mode": "read_or_other",
+        "source": "if ((*(char *)(*(int *)(param_1 + 0x1eed4c) + 0x1d) == '\\0') &&",
+        "before": "uStack_58 = uStack_58 & 0xffffff00;",
+        "after": "(cVar9 = FUN_0040b200(), cVar9 == '\\0')) {"
+      },
+      {
+        "function": "0x0048F9E0",
+        "size_bytes": 1943,
+        "line": 115,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)((int)param_2 + 0x1eed4c) = uVar7;",
+        "before": "uVar7 = FUN_00597b00();",
+        "after": "uVar7 = FUN_00583c70();"
+      },
+      {
+        "function": "0x0048F9E0",
+        "size_bytes": 1943,
+        "line": 324,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(*(int *)((int)param_2 + 0x1eed4c) + 0x10) == 0) {",
+        "before": "}",
+        "after": "*(undefined1 *)((int)param_2 + 0x1eed40) = 0;"
+      },
+      {
+        "function": "0x00490180",
+        "size_bytes": 1022,
+        "line": 72,
+        "mode": "read_or_other",
+        "source": "if ((((0 < iVar6) && (local_50 = *(int *)(param_1 + 0x1eed4c), *(int *)(local_50 + 0x10) != 0)) &&",
+        "before": "iVar6 = FUN_00597a50();",
+        "after": "(iVar5 != 0)) && (*(int *)(iVar5 + 0x94) == 0)) {"
+      },
+      {
+        "function": "0x00491870",
+        "size_bytes": 2599,
+        "line": 95,
+        "mode": "read_or_other",
+        "source": "if (ppppuVar11 == *(undefined4 *****)(param_1 + 0x1eed4c)) {",
+        "before": "cVar5 = local_7e;",
+        "after": "local_74 = auStack_b4;"
+      },
+      {
+        "function": "0x00491870",
+        "size_bytes": 2599,
+        "line": 330,
+        "mode": "read_or_other",
+        "source": "if ((undefined4 ****)local_60 == *(undefined4 *****)(param_1 + 0x1eed4c)) {",
+        "before": "local_74 = (undefined1 *)FUN_00597ba0();",
+        "after": "uVar12 = 0;"
+      },
+      {
+        "function": "0x004922A0",
+        "size_bytes": 1116,
+        "line": 86,
+        "mode": "read_or_other",
+        "source": "FUN_00402710(*(undefined4 *)(param_1 + 0x1eed4c),0,0xffffffff);",
+        "before": "local_b4 = (int ***)((uint)local_b4 & 0xffffff00);",
+        "after": "FUN_00463610(*(undefined4 *)(param_1 + 0xc));"
+      },
+      {
+        "function": "0x00493630",
+        "size_bytes": 11376,
+        "line": 322,
+        "mode": "read_or_other",
+        "source": "if ((*(int *)(*(int *)(param_3 + 0x1eed4c) + 0x10) != 0) &&",
+        "before": "}",
+        "after": "(*(int *)(*(int *)(param_3 + 0x1eed50) + 0x10) != 0)) {"
+      },
+      {
+        "function": "0x00493630",
+        "size_bytes": 11376,
+        "line": 448,
+        "mode": "read_or_other",
+        "source": "puStackY_158 = *(undefined1 **)(param_3 + 0x1eed4c);",
+        "before": "FUN_00463610();",
+        "after": "puStack_110 = (uint *)&puStackY_14c;"
+      },
+      {
+        "function": "0x00493630",
+        "size_bytes": 11376,
+        "line": 522,
+        "mode": "read_or_other",
+        "source": "uStack_70 = *(undefined4 *)(param_3 + 0x1eed4c);",
+        "before": "appuStack_30[1] = &puStack_e0;",
+        "after": "uStack_6c = *(undefined4 *)(param_3 + 0x1eed50);"
+      },
+      {
+        "function": "0x0049AF10",
+        "size_bytes": 866,
+        "line": 72,
+        "mode": "possible_write",
+        "source": "*(int *)(param_1 + 0x1eed4c) = iVar3;",
+        "before": "*(undefined **)(param_1 + 0x1eed1c) = &DAT_00b0a9d0;",
+        "after": "*(int *)(param_1 + 0x1eed50) = iVar3;"
+      },
+      {
+        "function": "0x004B6710",
+        "size_bytes": 4109,
+        "line": 213,
+        "mode": "read_or_other",
+        "source": "local_160 = *(undefined **)(param_1 + 0x1eed4c);",
+        "before": "case 0x42:",
+        "after": "local_17c = *(undefined1 **)(param_1 + 0x1eed50);"
+      },
+      {
+        "function": "0x004B6710",
+        "size_bytes": 4109,
+        "line": 354,
+        "mode": "read_or_other",
+        "source": "if (((local_170 != *(undefined1 **)(param_1 + 0x1eed4c)) &&",
+        "before": "local_15c = (undefined4 *)puVar5;",
+        "after": "(local_160 = puVar5, FUN_0048a3a0(), param_1 = local_180, *(int *)(local_178 + 0x18) != 0)"
+      },
+      {
+        "function": "0x00521D90",
+        "size_bytes": 5269,
+        "line": 573,
+        "mode": "read_or_other",
+        "source": "local_8c = *(int **)(iVar4 + 0x1eed4c);",
+        "before": "local_88 = *(int ***)(iVar4 + 0x1eed50);",
+        "after": "pcStack_84 = (char *)0x1;"
+      }
+    ],
+    "1eed50": [
+      {
+        "function": "0x004321B0",
+        "size_bytes": 3124,
+        "line": 301,
+        "mode": "possible_write",
+        "source": "*(int *)(param_1 + 0x1eed50) = in_stack_00000028;",
+        "before": "*(int *)(param_1 + 0x1eed4c) = in_stack_00000024;",
+        "after": "iVar14 = in_stack_00000024;"
+      },
+      {
+        "function": "0x004321B0",
+        "size_bytes": 3124,
+        "line": 311,
+        "mode": "possible_write",
+        "source": "*(int *)(param_1 + 0x1eed50) = iVar14;",
+        "before": "}",
+        "after": "*(undefined2 *)(param_1 + 0x1eed54) = 0;"
+      },
+      {
+        "function": "0x004321B0",
+        "size_bytes": 3124,
+        "line": 329,
+        "mode": "read_or_other",
+        "source": "if ((*(char *)(*(int *)(param_1 + 0x1eed50) + 0x1d) != '\\0') ||",
+        "before": "(cVar9 = FUN_0040b200(), cVar9 == '\\0')) {",
+        "after": "(cVar9 = FUN_0040b200(), cVar9 != '\\0')) {"
+      },
+      {
+        "function": "0x0048F9E0",
+        "size_bytes": 1943,
+        "line": 117,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)((int)param_2 + 0x1eed50) = uVar7;",
+        "before": "uVar7 = FUN_00583c70();",
+        "after": "piVar8 = (int *)FUN_00597ba0();"
+      },
+      {
+        "function": "0x00490180",
+        "size_bytes": 1022,
+        "line": 74,
+        "mode": "read_or_other",
+        "source": "iStack_4c = *(undefined4 *)(param_1 + 0x1eed50);",
+        "before": "(iVar5 != 0)) && (*(int *)(iVar5 + 0x94) == 0)) {",
+        "after": "uStack_5c = *(undefined4 *)(param_1 + 0x1eed1c);"
+      },
+      {
+        "function": "0x004922A0",
+        "size_bytes": 1116,
+        "line": 79,
+        "mode": "read_or_other",
+        "source": "FUN_00402710(*(undefined4 *)(param_1 + 0x1eed50),0,0xffffffff);",
+        "before": "local_b4 = (int ***)((uint)local_b4 & 0xffffff00);",
+        "after": "FUN_00463610(*(undefined4 *)(param_1 + 0xc));"
+      },
+      {
+        "function": "0x00493630",
+        "size_bytes": 11376,
+        "line": 323,
+        "mode": "read_or_other",
+        "source": "(*(int *)(*(int *)(param_3 + 0x1eed50) + 0x10) != 0)) {",
+        "before": "if ((*(int *)(*(int *)(param_3 + 0x1eed4c) + 0x10) != 0) &&",
+        "after": "if ((*(int *)(*(int *)(param_3 + 0x10) + 0x38) != 0) && (cVar4 = FUN_005923f0(), cVar4 != '\\0'))"
+      },
+      {
+        "function": "0x00493630",
+        "size_bytes": 11376,
+        "line": 437,
+        "mode": "read_or_other",
+        "source": "puStackY_158 = *(undefined1 **)(param_3 + 0x1eed50);",
+        "before": "FUN_00463610();",
+        "after": "puStack_110 = (uint *)&puStackY_14c;"
+      },
+      {
+        "function": "0x00493630",
+        "size_bytes": 11376,
+        "line": 523,
+        "mode": "read_or_other",
+        "source": "uStack_6c = *(undefined4 *)(param_3 + 0x1eed50);",
+        "before": "uStack_70 = *(undefined4 *)(param_3 + 0x1eed4c);",
+        "after": "local_114 = (uint *)0x0;"
+      },
+      {
+        "function": "0x00493630",
+        "size_bytes": 11376,
+        "line": 983,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(*(int *)(param_3 + 0x1eed50) + 0x10) != 0) {",
+        "before": "FUN_004962b0();",
+        "after": "puStack_110 = *(uint **)(*(int *)(param_3 + 0x10) + 0x14);"
+      },
+      {
+        "function": "0x00493630",
+        "size_bytes": 11376,
+        "line": 1437,
+        "mode": "read_or_other",
+        "source": "piVar5 = (int *)(*(int *)(param_3 + 0x1eed50) + 0x5c);",
+        "before": "*(int *)(iVar12 + 0xc0) = iVar14;",
+        "after": "*piVar5 = *piVar5 - (int)puStack_104;"
+      },
+      {
+        "function": "0x00493630",
+        "size_bytes": 11376,
+        "line": 1582,
+        "mode": "read_or_other",
+        "source": "if (*(char *)(*(int *)(param_3 + 0x1eed50) + 0x1d) == '\\0') {",
+        "before": "if (*(char *)(param_3 + 0x1eed55) != '\\0') {",
+        "after": "if (((*(int *)(*(int *)(param_3 + 0xc) + 0x54) == 0) &&"
+      },
+      {
+        "function": "0x00493630",
+        "size_bytes": 11376,
+        "line": 1585,
+        "mode": "read_or_other",
+        "source": "(iVar9 = FUN_00583c70(), iVar9 == *(int *)(param_3 + 0x1eed50))) {",
+        "before": "(*(int *)(*(int *)(param_3 + 0xc) + 0x50) != 0)) &&",
+        "after": "puStack_f8 = auStackY_148;"
+      },
+      {
+        "function": "0x0049AF10",
+        "size_bytes": 866,
+        "line": 73,
+        "mode": "possible_write",
+        "source": "*(int *)(param_1 + 0x1eed50) = iVar3;",
+        "before": "*(int *)(param_1 + 0x1eed4c) = iVar3;",
+        "after": "*(undefined2 *)(param_1 + 0x1eed54) = 0x100;"
+      },
+      {
+        "function": "0x004B6710",
+        "size_bytes": 4109,
+        "line": 214,
+        "mode": "read_or_other",
+        "source": "local_17c = *(undefined1 **)(param_1 + 0x1eed50);",
+        "before": "local_160 = *(undefined **)(param_1 + 0x1eed4c);",
+        "after": "if (*(int *)(param_1 + 0x1eed18) == 0) {"
+      },
+      {
+        "function": "0x00521D90",
+        "size_bytes": 5269,
+        "line": 572,
+        "mode": "read_or_other",
+        "source": "local_88 = *(int ***)(iVar4 + 0x1eed50);",
+        "before": "iVar4 = *(int *)(param_1 + 0x194);",
+        "after": "local_8c = *(int **)(iVar4 + 0x1eed4c);"
+      }
+    ],
+    "1e8630": [
+      {
+        "function": "0x004321B0",
+        "size_bytes": 3124,
+        "line": 340,
+        "mode": "read_or_other",
+        "source": "uVar10 = *(undefined4 *)(param_1 + 0x1e8630);",
+        "before": "LAB_00432b0e:",
+        "after": "goto LAB_00432b1c;"
+      },
+      {
+        "function": "0x004321B0",
+        "size_bytes": 3124,
+        "line": 355,
+        "mode": "read_or_other",
+        "source": "uVar10 = *(undefined4 *)(param_1 + 0x1e8630);",
+        "before": "else {",
+        "after": "}"
+      },
+      {
+        "function": "0x004338D0",
+        "size_bytes": 1442,
+        "line": 28,
+        "mode": "read_or_other",
+        "source": "FUN_00520800(*(undefined4 *)(param_1 + 0x1e8630),",
+        "before": "if (iVar6 != 0) {",
+        "after": "((*(int *)(iVar6 + 0x48) - *(int *)(iVar6 + 0x40) >> 1) + *(int *)(iVar6 + 0x40))"
+      },
+      {
+        "function": "0x0048A5B0",
+        "size_bytes": 1097,
+        "line": 131,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(unaff_EDI + 0x1e8630) = uVar4;",
+        "before": "local_4 = 0xffffffff;",
+        "after": "iStack_40 = FUN_005b6c2b(0x188);"
+      },
+      {
+        "function": "0x0048AA00",
+        "size_bytes": 496,
+        "line": 92,
+        "mode": "read_or_other",
+        "source": "(**(code **)(**(int **)(unaff_ESI + 0x1e8630) + 0x10))();",
+        "before": "*(undefined4 *)(unaff_ESI + 0x1eec24) = 0;",
+        "after": "(**(code **)(**(int **)(unaff_ESI + 0x1e8634) + 0x10))();"
+      },
+      {
+        "function": "0x0048AD30",
+        "size_bytes": 1904,
+        "line": 187,
+        "mode": "read_or_other",
+        "source": "(**(code **)(**(int **)(unaff_EBX + 0x1e8630) + 4))();",
+        "before": "*(undefined1 *)(*(int *)(*(int *)(unaff_EBX + 8) + 0xc) + 0x3cd1) = 0;",
+        "after": "FUN_004c2240();"
+      },
+      {
+        "function": "0x0048B4A0",
+        "size_bytes": 1988,
+        "line": 227,
+        "mode": "read_or_other",
+        "source": "(**(code **)(**(int **)(param_1 + 0x1e8630) + 4))();",
+        "before": "*(undefined1 *)(*(int *)(*(int *)(param_1 + 8) + 0xc) + 0x3cd1) = 0;",
+        "after": "if (*(int *)(param_1 + 0x1e8630) == 0) {"
+      },
+      {
+        "function": "0x0048B4A0",
+        "size_bytes": 1988,
+        "line": 228,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(param_1 + 0x1e8630) == 0) {",
+        "before": "(**(code **)(**(int **)(param_1 + 0x1e8630) + 4))();",
+        "after": "iVar4 = 0;"
+      },
+      {
+        "function": "0x0048B4A0",
+        "size_bytes": 1988,
+        "line": 232,
+        "mode": "read_or_other",
+        "source": "iVar4 = *(int *)(param_1 + 0x1e8630) + 0x90;",
+        "before": "else {",
+        "after": "}"
+      },
+      {
+        "function": "0x0048BF60",
+        "size_bytes": 2322,
+        "line": 83,
+        "mode": "read_or_other",
+        "source": "(**(code **)(**(int **)(param_1 + 0x1e8630) + 4))();",
+        "before": "*(undefined4 *)(iVar6 + 0x3ca0) = *(undefined4 *)(iVar6 + 0x3ca4);",
+        "after": "FUN_004c2240();"
+      },
+      {
+        "function": "0x0048C880",
+        "size_bytes": 3608,
+        "line": 125,
+        "mode": "read_or_other",
+        "source": "(**(code **)(**(int **)(param_1 + 0x1e8630) + 4))();",
+        "before": "*(undefined4 *)(iVar11 + 0x3ca0) = *(undefined4 *)(iVar11 + 0x3ca4);",
+        "after": "FUN_004c2240();"
+      },
+      {
+        "function": "0x0048EA60",
+        "size_bytes": 1142,
+        "line": 67,
+        "mode": "read_or_other",
+        "source": "(**(code **)(**(int **)(param_1 + 0x1e8630) + 4))();",
+        "before": "piStack_110 = (int *)0x48eada;",
+        "after": "uVar9 = 0;"
+      },
+      {
+        "function": "0x0048EA60",
+        "size_bytes": 1142,
+        "line": 69,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(param_1 + 0x1e8630) == 0) {",
+        "before": "uVar9 = 0;",
+        "after": "piStack_110 = (int *)0x0;"
+      },
+      {
+        "function": "0x0048EA60",
+        "size_bytes": 1142,
+        "line": 73,
+        "mode": "read_or_other",
+        "source": "piStack_110 = (int *)(*(int *)(param_1 + 0x1e8630) + 0x90);",
+        "before": "else {",
+        "after": "}"
+      },
+      {
+        "function": "0x0048EA60",
+        "size_bytes": 1142,
+        "line": 129,
+        "mode": "read_or_other",
+        "source": "puStack_114 = *(undefined1 **)(param_1 + 0x1e8630);",
+        "before": "uStack_c = 0;",
+        "after": "uStack_40 = *(undefined4 *)(param_1 + 0xc);"
+      },
+      {
+        "function": "0x0048EA60",
+        "size_bytes": 1142,
+        "line": 198,
+        "mode": "read_or_other",
+        "source": "piStack_118 = *(int **)(param_1 + 0x1e8630);",
+        "before": "puStack_114 = (undefined1 *)((int)(((uVar5 ^ uVar8) - uVar8) - DAT_0065beec) / 2);",
+        "after": "puStack_11c = (undefined1 *)0x48ee02;"
+      },
+      {
+        "function": "0x0048EA60",
+        "size_bytes": 1142,
+        "line": 201,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(*(int *)(param_1 + 0x1e8630) + 0x46c) = DAT_0065bee0;",
+        "before": "FUN_00520800();",
+        "after": "iVar4 = *(int *)(param_1 + 4);"
+      },
+      {
+        "function": "0x0048EEE0",
+        "size_bytes": 404,
+        "line": 28,
+        "mode": "read_or_other",
+        "source": "(FUN_0052b480(), *(char *)(*(int *)(param_1 + 0x1e8630) + 0x4a4) != '\\0')) {",
+        "before": "(*(int *)(*(int *)(param_1 + 0xc) + 0x50) == 0)) && (iVar1 = FUN_00469170(), iVar1 != 0)) &&",
+        "after": "*(undefined1 *)(param_1 + 0x1eec71) = 0;"
+      },
+      {
+        "function": "0x0048F080",
+        "size_bytes": 1435,
+        "line": 39,
+        "mode": "read_or_other",
+        "source": "(FUN_0052b480(), *(char *)(*(int *)(param_1 + 0x1e8630) + 0x4a4) != '\\0')) {",
+        "before": "(iVar2 = FUN_00469170(DAT_0065a220 ^ (uint)&stack0xffffff7c), iVar2 != 0)) &&",
+        "after": "*(undefined1 *)(param_1 + 0x1eec71) = 0;"
+      },
+      {
+        "function": "0x0048F080",
+        "size_bytes": 1435,
+        "line": 84,
+        "mode": "read_or_other",
+        "source": "(*(char *)(*(int *)(param_1 + 0x1e8630) + 0x4a4) != '\\0')) {",
+        "before": "if ((*(int *)(*(int *)(param_1 + 0xc) + 0x50) != 0) &&",
+        "after": "iVar2 = FUN_00585890(local_54,\"bgm_fix\");"
+      },
+      {
+        "function": "0x0048F9E0",
+        "size_bytes": 1943,
+        "line": 345,
+        "mode": "read_or_other",
+        "source": "iStack_74 = *(int *)((int)param_2 + 0x1e8630);",
+        "before": "if (cVar4 != '\\0') {",
+        "after": "iStack_78 = 0x49014e;"
+      },
+      {
+        "function": "0x00492890",
+        "size_bytes": 1251,
+        "line": 100,
+        "mode": "read_or_other",
+        "source": "(**(code **)(**(int **)(unaff_ESI + 0x1e8630) + 0xc))();",
+        "before": "}",
+        "after": "(**(code **)(**(int **)(unaff_ESI + 0x1e8634) + 0xc))();"
+      },
+      {
+        "function": "0x00492D80",
+        "size_bytes": 817,
+        "line": 21,
+        "mode": "read_or_other",
+        "source": "FUN_00520800(*(undefined4 *)(in_EAX + 0x1e8630),",
+        "before": "if (iVar3 != 0) {",
+        "after": "((*(int *)(iVar3 + 0x48) - *(int *)(iVar3 + 0x40) >> 1) - DAT_0065beec / 2) +"
+      },
+      {
+        "function": "0x00493630",
+        "size_bytes": 11376,
+        "line": 126,
+        "mode": "read_or_other",
+        "source": "(**(code **)(**(int **)(param_3 + 0x1e8630) + 0x14))();",
+        "before": "*(undefined4 *)(param_3 + 0x1eec3c) = 2;",
+        "after": "(**(code **)(**(int **)(param_3 + 0x1e8634) + 0x14))();"
+      },
+      {
+        "function": "0x0049AF10",
+        "size_bytes": 866,
+        "line": 105,
+        "mode": "read_or_other",
+        "source": "*(undefined4 *)(param_1 + 0x1eed48) = *(undefined4 *)(param_1 + 0x1e8630);",
+        "before": "*(undefined4 *)(param_1 + 0x1eed44) = *(undefined4 *)(param_1 + 0x1e8634);",
+        "after": "piVar4 = (int *)FUN_005b6c2b(0x34);"
+      },
+      {
+        "function": "0x0049B5C0",
+        "size_bytes": 3713,
+        "line": 114,
+        "mode": "read_or_other",
+        "source": "(**(code **)(**(int **)(param_1 + 0x1e8630) + 0x14))();",
+        "before": "}",
+        "after": "(**(code **)(**(int **)(param_1 + 0x1e8634) + 0x14))();"
+      },
+      {
+        "function": "0x004A1250",
+        "size_bytes": 5249,
+        "line": 809,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(*(int *)(param_1 + 0x1e8630) + 0x46c) = *(undefined4 *)(iVar20 + 4);",
+        "before": "iVar20 = FUN_004528a0();",
+        "after": "}"
+      },
+      {
+        "function": "0x004A1250",
+        "size_bytes": 5249,
+        "line": 818,
+        "mode": "possible_write",
+        "source": "*(double *)(*(int *)(param_1 + 0x1e8630) + 0x440) = (double)*(int *)(iVar20 + 4);",
+        "before": "iVar20 = FUN_004528a0();",
+        "after": "break;"
+      },
+      {
+        "function": "0x004A1250",
+        "size_bytes": 5249,
+        "line": 955,
+        "mode": "possible_write",
+        "source": "*(undefined1 *)(*(int *)(param_1 + 0x1e8630) + 0x4a4) = 0;",
+        "before": "*(undefined1 *)(param_1 + 0x1eec71) = 0;",
+        "after": "break;"
+      },
+      {
+        "function": "0x004A1250",
+        "size_bytes": 5249,
+        "line": 985,
+        "mode": "possible_write",
+        "source": "*(undefined1 *)(*(int *)(param_1 + 0x1e8630) + 0x4a4) = 0;",
+        "before": "*(undefined1 *)(param_1 + 0x1eec71) = 0;",
+        "after": "FUN_004154f0();"
+      },
+      {
+        "function": "0x004B4710",
+        "size_bytes": 7548,
+        "line": 1007,
+        "mode": "read_or_other",
+        "source": "local_188 = (double)(ulonglong)*(uint *)(param_1 + 0x1e8630);",
+        "before": "if (*(char *)(param_1 + 0x1eec44) != '\\0') {",
+        "after": "local_190 = (double)CONCAT44(0x4b5d4b,(undefined4)local_190);"
+      },
+      {
+        "function": "0x004B4710",
+        "size_bytes": 7548,
+        "line": 1010,
+        "mode": "read_or_other",
+        "source": "iVar8 = *(int *)(param_1 + 0x1e8630) + 0x358;",
+        "before": "FUN_00528320();",
+        "after": "local_188 = (double)CONCAT44(iVar8,0x4b5d5f);"
+      },
+      {
+        "function": "0x004B6710",
+        "size_bytes": 4109,
+        "line": 114,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(*(int *)(param_1 + 0x1e8630) + 0x46c) = 0x96;",
+        "before": "bVar14 = DAT_008797c9 != '\\0';",
+        "after": "if (bVar14) {"
+      },
+      {
+        "function": "0x004B6710",
+        "size_bytes": 4109,
+        "line": 315,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(*(int *)(param_1 + 0x1e8630) + 0x46c) = 0;",
+        "before": "case 0x43:",
+        "after": "break;"
+      },
+      {
+        "function": "0x004B6710",
+        "size_bytes": 4109,
+        "line": 645,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(*(int *)(param_1 + 0x1e8630) + 0x46c) =",
+        "before": "*(undefined4 *)(param_1 + 0x1eec48) = 1;",
+        "after": "*(undefined4 *)(*(int *)(param_1 + 0x1e8630) + 0x470);"
+      },
+      {
+        "function": "0x004B6710",
+        "size_bytes": 4109,
+        "line": 646,
+        "mode": "read_or_other",
+        "source": "*(undefined4 *)(*(int *)(param_1 + 0x1e8630) + 0x470);",
+        "before": "*(undefined4 *)(*(int *)(param_1 + 0x1e8630) + 0x46c) =",
+        "after": "break;"
+      },
+      {
+        "function": "0x00578370",
+        "size_bytes": 2034,
+        "line": 232,
+        "mode": "read_or_other",
+        "source": "pppuStack_d8 = *(undefined4 ****)(param_1[0x78] + 0x1e8630);",
+        "before": "FUN_0052b600();",
+        "after": "local_dc = (undefined4 ***)0x578795;"
+      }
+    ],
+    "1e8634": [
+      {
+        "function": "0x004321B0",
+        "size_bytes": 3124,
+        "line": 343,
+        "mode": "read_or_other",
+        "source": "*(undefined4 *)(param_1 + 0x1eed48) = *(undefined4 *)(param_1 + 0x1e8634);",
+        "before": "}",
+        "after": "*(undefined4 *)(param_1 + 0x1eed44) = *(undefined4 *)(param_1 + 0x1e8638);"
+      },
+      {
+        "function": "0x004321B0",
+        "size_bytes": 3124,
+        "line": 348,
+        "mode": "read_or_other",
+        "source": "uVar10 = *(undefined4 *)(param_1 + 0x1e8634);",
+        "before": "if (*(char *)(param_1 + 0x1eed55) != '\\0') goto LAB_00432b0e;",
+        "after": "LAB_00432b1c:"
+      },
+      {
+        "function": "0x004321B0",
+        "size_bytes": 3124,
+        "line": 352,
+        "mode": "read_or_other",
+        "source": "uVar10 = *(undefined4 *)(param_1 + 0x1e8634);",
+        "before": "if (*(char *)(param_1 + 0x1eed54) == '\\0') {",
+        "after": "}"
+      },
+      {
+        "function": "0x0048A5B0",
+        "size_bytes": 1097,
+        "line": 141,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(unaff_EDI + 0x1e8634) = uVar4;",
+        "before": "local_4 = 0xffffffff;",
+        "after": "iStack_40 = FUN_005b6c2b(0x188);"
+      },
+      {
+        "function": "0x0048AA00",
+        "size_bytes": 496,
+        "line": 93,
+        "mode": "read_or_other",
+        "source": "(**(code **)(**(int **)(unaff_ESI + 0x1e8634) + 0x10))();",
+        "before": "(**(code **)(**(int **)(unaff_ESI + 0x1e8630) + 0x10))();",
+        "after": "/* WARNING: Could not recover jumptable at 0x0048abee. Too many branches */"
+      },
+      {
+        "function": "0x00492890",
+        "size_bytes": 1251,
+        "line": 101,
+        "mode": "read_or_other",
+        "source": "(**(code **)(**(int **)(unaff_ESI + 0x1e8634) + 0xc))();",
+        "before": "(**(code **)(**(int **)(unaff_ESI + 0x1e8630) + 0xc))();",
+        "after": "(**(code **)(**(int **)(unaff_ESI + 0x1e8638) + 0xc))();"
+      },
+      {
+        "function": "0x00493630",
+        "size_bytes": 11376,
+        "line": 127,
+        "mode": "read_or_other",
+        "source": "(**(code **)(**(int **)(param_3 + 0x1e8634) + 0x14))();",
+        "before": "(**(code **)(**(int **)(param_3 + 0x1e8630) + 0x14))();",
+        "after": "(**(code **)(**(int **)(param_3 + 0x1e8638) + 0x14))();"
+      },
+      {
+        "function": "0x0049AF10",
+        "size_bytes": 866,
+        "line": 104,
+        "mode": "read_or_other",
+        "source": "*(undefined4 *)(param_1 + 0x1eed44) = *(undefined4 *)(param_1 + 0x1e8634);",
+        "before": "*(int *)(param_1 + 0x1eed18) = param_1 + 0x14;",
+        "after": "*(undefined4 *)(param_1 + 0x1eed48) = *(undefined4 *)(param_1 + 0x1e8630);"
+      },
+      {
+        "function": "0x0049B5C0",
+        "size_bytes": 3713,
+        "line": 115,
+        "mode": "read_or_other",
+        "source": "(**(code **)(**(int **)(param_1 + 0x1e8634) + 0x14))();",
+        "before": "(**(code **)(**(int **)(param_1 + 0x1e8630) + 0x14))();",
+        "after": "(**(code **)(**(int **)(param_1 + 0x1e8638) + 0x14))();"
+      }
+    ],
+    "1eed48": [
+      {
+        "function": "0x004321B0",
+        "size_bytes": 3124,
+        "line": 343,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(param_1 + 0x1eed48) = *(undefined4 *)(param_1 + 0x1e8634);",
+        "before": "}",
+        "after": "*(undefined4 *)(param_1 + 0x1eed44) = *(undefined4 *)(param_1 + 0x1e8638);"
+      },
+      {
+        "function": "0x004321B0",
+        "size_bytes": 3124,
+        "line": 350,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(param_1 + 0x1eed48) = uVar10;",
+        "before": "LAB_00432b1c:",
+        "after": "if (*(char *)(param_1 + 0x1eed54) == '\\0') {"
+      },
+      {
+        "function": "0x00492710",
+        "size_bytes": 378,
+        "line": 22,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(unaff_ESI + 0x1eed48) = param_1;",
+        "before": "*(undefined4 *)(unaff_ESI + 0x1eed44) = param_2;",
+        "after": "*(undefined4 *)(unaff_ESI + 0x1eed64) = 0;"
+      },
+      {
+        "function": "0x00492890",
+        "size_bytes": 1251,
+        "line": 110,
+        "mode": "read_or_other",
+        "source": "uVar13 = *(undefined4 *)(unaff_ESI + 0x1eed48);",
+        "before": "}",
+        "after": "uVar12 = *(undefined4 *)(unaff_ESI + 0x1eed1c);"
+      },
+      {
+        "function": "0x00492890",
+        "size_bytes": 1251,
+        "line": 131,
+        "mode": "read_or_other",
+        "source": "uVar13 = *(undefined4 *)(unaff_ESI + 0x1eed48);",
+        "before": "}",
+        "after": "uVar12 = *(undefined4 *)(unaff_ESI + 0x1eed1c);"
+      },
+      {
+        "function": "0x00492890",
+        "size_bytes": 1251,
+        "line": 138,
+        "mode": "read_or_other",
+        "source": "FUN_00564160(*(undefined4 *)(unaff_ESI + 0x1eed1c),*(undefined4 *)(unaff_ESI + 0x1eed48),piVar8)",
+        "before": "piVar8 = (int *)(unaff_ESI + 0x1eedf4);",
+        "after": ";"
+      },
+      {
+        "function": "0x00492D80",
+        "size_bytes": 817,
+        "line": 69,
+        "mode": "read_or_other",
+        "source": "(iVar3 = (**(code **)(**(int **)(in_EAX + 0x1eed48) + 0x18))(), iVar3 != 4)) {",
+        "before": "if ((iVar3 == 4) &&",
+        "after": "FUN_00493630(in_EAX,1);"
+      },
+      {
+        "function": "0x0049AF10",
+        "size_bytes": 866,
+        "line": 105,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(param_1 + 0x1eed48) = *(undefined4 *)(param_1 + 0x1e8630);",
+        "before": "*(undefined4 *)(param_1 + 0x1eed44) = *(undefined4 *)(param_1 + 0x1e8634);",
+        "after": "piVar4 = (int *)FUN_005b6c2b(0x34);"
+      },
+      {
+        "function": "0x0049D5B0",
+        "size_bytes": 105,
+        "line": 27,
+        "mode": "read_or_other",
+        "source": "*(undefined4 *)(unaff_EBX + 0x1eed48),*(undefined4 *)(unaff_EBX + 0x1eed44));",
+        "before": "FUN_005b2630(*(undefined4 *)(iVar3 + uVar4 * 4),*(undefined4 *)(unaff_EBX + 4),",
+        "after": "iVar3 = *(int *)(iVar1 + 0x1ef6f0);"
+      },
+      {
+        "function": "0x004B4710",
+        "size_bytes": 7548,
+        "line": 214,
+        "mode": "read_or_other",
+        "source": "local_b0 = *(undefined1 **)(param_1 + 0x1eed48);",
+        "before": "}",
+        "after": "local_b8 = (double)CONCAT44(&local_19c,(uint)local_b8);"
+      },
+      {
+        "function": "0x004B4710",
+        "size_bytes": 7548,
+        "line": 233,
+        "mode": "read_or_other",
+        "source": "local_b0 = *(undefined1 **)(param_1 + 0x1eed48);",
+        "before": "if (cVar2 != '\\0') {",
+        "after": "}"
+      }
+    ],
+    "1e8638": [
+      {
+        "function": "0x004321B0",
+        "size_bytes": 3124,
+        "line": 344,
+        "mode": "read_or_other",
+        "source": "*(undefined4 *)(param_1 + 0x1eed44) = *(undefined4 *)(param_1 + 0x1e8638);",
+        "before": "*(undefined4 *)(param_1 + 0x1eed48) = *(undefined4 *)(param_1 + 0x1e8634);",
+        "after": "}"
+      },
+      {
+        "function": "0x0048A5B0",
+        "size_bytes": 1097,
+        "line": 151,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(unaff_EDI + 0x1e8638) = uVar4;",
+        "before": "local_4 = 0xffffffff;",
+        "after": "FUN_004a01d0(unaff_EDI);"
+      },
+      {
+        "function": "0x0048AA00",
+        "size_bytes": 496,
+        "line": 96,
+        "mode": "read_or_other",
+        "source": "(**(code **)(**(int **)(unaff_ESI + 0x1e8638) + 0x10))();",
+        "before": "/* WARNING: Treating indirect jump as call */",
+        "after": "return;"
+      },
+      {
+        "function": "0x00492890",
+        "size_bytes": 1251,
+        "line": 102,
+        "mode": "read_or_other",
+        "source": "(**(code **)(**(int **)(unaff_ESI + 0x1e8638) + 0xc))();",
+        "before": "(**(code **)(**(int **)(unaff_ESI + 0x1e8634) + 0xc))();",
+        "after": "*(int *)(*(int *)(*(int *)(unaff_ESI + 8) + 8) + 0x38) = unaff_ESI;"
+      },
+      {
+        "function": "0x00493630",
+        "size_bytes": 11376,
+        "line": 128,
+        "mode": "read_or_other",
+        "source": "(**(code **)(**(int **)(param_3 + 0x1e8638) + 0x14))();",
+        "before": "(**(code **)(**(int **)(param_3 + 0x1e8634) + 0x14))();",
+        "after": "FUN_004c21f0();"
+      },
+      {
+        "function": "0x0049B5C0",
+        "size_bytes": 3713,
+        "line": 116,
+        "mode": "read_or_other",
+        "source": "(**(code **)(**(int **)(param_1 + 0x1e8638) + 0x14))();",
+        "before": "(**(code **)(**(int **)(param_1 + 0x1e8634) + 0x14))();",
+        "after": "iVar10 = *(int *)(param_1 + 4);"
+      }
+    ],
+    "1eed44": [
+      {
+        "function": "0x004321B0",
+        "size_bytes": 3124,
+        "line": 344,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(param_1 + 0x1eed44) = *(undefined4 *)(param_1 + 0x1e8638);",
+        "before": "*(undefined4 *)(param_1 + 0x1eed48) = *(undefined4 *)(param_1 + 0x1e8634);",
+        "after": "}"
+      },
+      {
+        "function": "0x004321B0",
+        "size_bytes": 3124,
+        "line": 357,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(param_1 + 0x1eed44) = uVar10;",
+        "before": "}",
+        "after": "}"
+      },
+      {
+        "function": "0x00491870",
+        "size_bytes": 2599,
+        "line": 395,
+        "mode": "read_or_other",
+        "source": "(*(int *)(*(int *)(param_1 + 0x1eed44) + 0x48) ==",
+        "before": "((*(int *)(*(int *)(param_1 + 0x1eed1c) + 0x90) == 0 ||",
+        "after": "*(int *)(*(int *)(param_1 + 0x1eed44) + 0x4c))))) {"
+      },
+      {
+        "function": "0x00491870",
+        "size_bytes": 2599,
+        "line": 396,
+        "mode": "read_or_other",
+        "source": "*(int *)(*(int *)(param_1 + 0x1eed44) + 0x4c))))) {",
+        "before": "(*(int *)(*(int *)(param_1 + 0x1eed44) + 0x48) ==",
+        "after": "if ((*(char *)(param_1 + 0x1eed43) == '\\0') &&"
+      },
+      {
+        "function": "0x00492710",
+        "size_bytes": 378,
+        "line": 21,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(unaff_ESI + 0x1eed44) = param_2;",
+        "before": "local_4 = DAT_0065a220 ^ (uint)auStack_2c;",
+        "after": "*(undefined4 *)(unaff_ESI + 0x1eed48) = param_1;"
+      },
+      {
+        "function": "0x00492D80",
+        "size_bytes": 817,
+        "line": 59,
+        "mode": "read_or_other",
+        "source": "piVar1 = *(int **)(in_EAX + 0x1eed44);",
+        "before": "}",
+        "after": "cVar2 = FUN_00514c80();"
+      },
+      {
+        "function": "0x0049AF10",
+        "size_bytes": 866,
+        "line": 104,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(param_1 + 0x1eed44) = *(undefined4 *)(param_1 + 0x1e8634);",
+        "before": "*(int *)(param_1 + 0x1eed18) = param_1 + 0x14;",
+        "after": "*(undefined4 *)(param_1 + 0x1eed48) = *(undefined4 *)(param_1 + 0x1e8630);"
+      },
+      {
+        "function": "0x0049D5B0",
+        "size_bytes": 105,
+        "line": 27,
+        "mode": "read_or_other",
+        "source": "*(undefined4 *)(unaff_EBX + 0x1eed48),*(undefined4 *)(unaff_EBX + 0x1eed44));",
+        "before": "FUN_005b2630(*(undefined4 *)(iVar3 + uVar4 * 4),*(undefined4 *)(unaff_EBX + 4),",
+        "after": "iVar3 = *(int *)(iVar1 + 0x1ef6f0);"
+      },
+      {
+        "function": "0x004B4710",
+        "size_bytes": 7548,
+        "line": 238,
+        "mode": "read_or_other",
+        "source": "local_b0 = *(undefined1 **)(param_1 + 0x1eed44);",
+        "before": "LAB_004b4aa7:",
+        "after": "}"
+      }
+    ],
+    "1eec3c": [
+      {
+        "function": "0x004335E0",
+        "size_bytes": 66,
+        "line": 11,
+        "mode": "read_or_other",
+        "source": "iVar1 = *(int *)(param_1 + 0x1eec3c);",
+        "before": "",
+        "after": "if (iVar1 != 1) {"
+      },
+      {
+        "function": "0x004338D0",
+        "size_bytes": 1442,
+        "line": 67,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(param_1 + 0x1eec3c) = *(undefined4 *)(*(int *)(param_1 + 0x1eed9c) + -4);",
+        "before": "uVar1 = *(uint *)(*(int *)(param_1 + 0x1eed8c) + -4);",
+        "after": "iVar6 = *(int *)(*(int *)(param_1 + 0x1eedac) + -4);"
+      },
+      {
+        "function": "0x004338D0",
+        "size_bytes": 1442,
+        "line": 185,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(param_1 + 0x1eec3c) != iVar6) {",
+        "before": "iVar6 = *(int *)(*(int *)(param_1 + 0x1eed9c) + -4);",
+        "after": "piVar4 = (int *)FUN_005b6c2b(0x34);"
+      },
+      {
+        "function": "0x004338D0",
+        "size_bytes": 1442,
+        "line": 201,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(param_1 + 0x1eec3c) == 2) {",
+        "before": "}",
+        "after": "piVar4 = (int *)FUN_005b6c2b(0x34);"
+      },
+      {
+        "function": "0x00434EB0",
+        "size_bytes": 1675,
+        "line": 212,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(pcVar12 + 0x1eec3c) == 1) {",
+        "before": "local_58 = puVar6;",
+        "after": "local_7c = (undefined1 **)0xf;"
+      },
+      {
+        "function": "0x0048A5B0",
+        "size_bytes": 1097,
+        "line": 116,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(unaff_EDI + 0x1eec3c) = 0;",
+        "before": "*(undefined4 *)(unaff_EDI + 0x1eec40) = 0;",
+        "after": "}"
+      },
+      {
+        "function": "0x0048A5B0",
+        "size_bytes": 1097,
+        "line": 120,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(unaff_EDI + 0x1eec3c) = 7;",
+        "before": "*(undefined4 *)(unaff_EDI + 0x1eec40) = 7;",
+        "after": "}"
+      },
+      {
+        "function": "0x0048AD30",
+        "size_bytes": 1904,
+        "line": 101,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(unaff_EBX + 0x1eec3c) = 0;",
+        "before": "uVar12 = DAT_0065beec;",
+        "after": "*(undefined1 *)(unaff_EBX + 0x1eec44) = 0;"
+      },
+      {
+        "function": "0x0048B4A0",
+        "size_bytes": 1988,
+        "line": 55,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(param_1 + 0x1eec3c) = 4;",
+        "before": "ExceptionList = &local_c;",
+        "after": "*(undefined1 *)(param_1 + 0x1eec44) = 0;"
+      },
+      {
+        "function": "0x0048BC70",
+        "size_bytes": 744,
+        "line": 43,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(param_1 + 0x1eec3c) = 6;",
+        "before": "ExceptionList = &local_c;",
+        "after": "FUN_004c1fc0(uVar2);"
+      },
+      {
+        "function": "0x0048BF60",
+        "size_bytes": 2322,
+        "line": 61,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(param_1 + 0x1eec3c) = 5;",
+        "before": "ExceptionList = &local_c;",
+        "after": "*(undefined1 *)(param_1 + 0x1eec44) = 0;"
+      },
+      {
+        "function": "0x0048C880",
+        "size_bytes": 3608,
+        "line": 71,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(param_1 + 0x1eec3c) = 1;",
+        "before": "ExceptionList = &local_c;",
+        "after": "*(undefined1 *)(param_1 + 0x1eec44) = 0;"
+      },
+      {
+        "function": "0x0048EA60",
+        "size_bytes": 1142,
+        "line": 59,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(param_1 + 0x1eec3c) = 7;",
+        "before": "puVar1 = (undefined1 *)(iVar4 + 0x1ef570);",
+        "after": "piStack_110 = (int *)0x48eac1;"
+      },
+      {
+        "function": "0x00492890",
+        "size_bytes": 1251,
+        "line": 71,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(unaff_ESI + 0x1eec3c) = 2;",
+        "before": "}",
+        "after": "*(undefined1 *)(unaff_ESI + 0x1eec44) = 1;"
+      },
+      {
+        "function": "0x00493630",
+        "size_bytes": 11376,
+        "line": 124,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(param_3 + 0x1eec3c) == 2) {",
+        "before": "}",
+        "after": "*(undefined4 *)(param_3 + 0x1eec3c) = 2;"
+      },
+      {
+        "function": "0x00493630",
+        "size_bytes": 11376,
+        "line": 125,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(param_3 + 0x1eec3c) = 2;",
+        "before": "if (*(int *)(param_3 + 0x1eec3c) == 2) {",
+        "after": "(**(code **)(**(int **)(param_3 + 0x1e8630) + 0x14))();"
+      },
+      {
+        "function": "0x00493630",
+        "size_bytes": 11376,
+        "line": 131,
+        "mode": "read_or_other",
+        "source": "if ((DAT_008797c9 != '\\0') && (*(int *)(param_3 + 0x1eec3c) == 1)) {",
+        "before": "}",
+        "after": "FUN_00405a20();"
+      },
+      {
+        "function": "0x00493630",
+        "size_bytes": 11376,
+        "line": 328,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(param_3 + 0x1eec3c) == 1) {",
+        "before": "puStackY_14c = (uint *)0x0;",
+        "after": "pcStackY_150 = \"\";"
+      },
+      {
+        "function": "0x00493630",
+        "size_bytes": 11376,
+        "line": 832,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(param_3 + 0x1eec3c) == 1) {",
+        "before": "}",
+        "after": "cVar4 = (**(code **)(*apuStack_bc[0] + 100))();"
+      },
+      {
+        "function": "0x00493630",
+        "size_bytes": 11376,
+        "line": 1003,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(param_3 + 0x1eec3c) == 1) {",
+        "before": "}",
+        "after": "puStackY_13c = (uint *)0x494e52;"
+      },
+      {
+        "function": "0x00493630",
+        "size_bytes": 11376,
+        "line": 1086,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(param_3 + 0x1eec3c) == 1) {",
+        "before": "auStackY_148[0] = 0;",
+        "after": "pcStackY_150 = \"\";"
+      },
+      {
+        "function": "0x00493630",
+        "size_bytes": 11376,
+        "line": 1462,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(param_3 + 0x1eec3c) == 1) {",
+        "before": "FUN_00416b90();",
+        "after": "cVar4 = (**(code **)(*apuStack_bc[0] + 100))();"
+      },
+      {
+        "function": "0x00493630",
+        "size_bytes": 11376,
+        "line": 1588,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(param_3 + 0x1eec3c) != 1) {",
+        "before": "auStackY_148[0] = 0;",
+        "after": "puStackY_14c = (uint *)0x0;"
+      },
+      {
+        "function": "0x00493630",
+        "size_bytes": 11376,
+        "line": 1649,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(param_3 + 0x1eec3c) == 1) {",
+        "before": "auStackY_148[0] = 0;",
+        "after": "puStackY_14c = (uint *)0x8;"
+      },
+      {
+        "function": "0x00493630",
+        "size_bytes": 11376,
+        "line": 1722,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(param_3 + 0x1eec3c) == 1) {",
+        "before": "}",
+        "after": "iVar9 = *(int *)(param_3 + 0x10);"
+      },
+      {
+        "function": "0x004973E0",
+        "size_bytes": 1985,
+        "line": 119,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(param_1 + 0x1eec3c) == 1) {",
+        "before": "local_c0 = (char *)0x0;",
+        "after": "puStack_d4 = (undefined *)0x0;"
+      },
+      {
+        "function": "0x004973E0",
+        "size_bytes": 1985,
+        "line": 304,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(local_8c + 0x1eec3c) == 1) {",
+        "before": "if (cVar4 != '\\0') {",
+        "after": "ppiStack_b8 = (int **)0x4977d8;"
+      },
+      {
+        "function": "0x004973E0",
+        "size_bytes": 1985,
+        "line": 390,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(param_1 + 0x1eec3c) == 1) {",
+        "before": "local_d8 = local_48;",
+        "after": "puStack_d4 = &DAT_006327f8;"
+      },
+      {
+        "function": "0x00497BB0",
+        "size_bytes": 4660,
+        "line": 131,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(param_2 + 0x1eec3c) == 1) {",
+        "before": "local_78 = (undefined1 *)apuStack_c0;",
+        "after": "local_c4 = (undefined *)0x49892f;"
+      },
+      {
+        "function": "0x00497BB0",
+        "size_bytes": 4660,
+        "line": 246,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(local_80 + 0x1eec3c) == 1) {",
+        "before": "local_78 = (undefined1 *)apuStack_c0;",
+        "after": "local_c4 = &DAT_00624cbd;"
+      },
+      {
+        "function": "0x00497BB0",
+        "size_bytes": 4660,
+        "line": 338,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(param_2 + 0x1eec3c) != 1) {",
+        "before": "local_78 = (undefined1 *)apuStack_c0;",
+        "after": "local_c4 = (undefined *)0x498836;"
+      },
+      {
+        "function": "0x00497BB0",
+        "size_bytes": 4660,
+        "line": 426,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(param_2 + 0x1eec3c) != 1) {",
+        "before": "local_78 = (undefined1 *)apuStack_c0;",
+        "after": "local_c4 = (undefined *)0x49861c;"
+      },
+      {
+        "function": "0x00497BB0",
+        "size_bytes": 4660,
+        "line": 535,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(param_2 + 0x1eec3c) == 1) {",
+        "before": "local_8c = (undefined1 *)apuStack_c0;",
+        "after": "local_c4 = (undefined *)0x497d49;"
+      },
+      {
+        "function": "0x00497BB0",
+        "size_bytes": 4660,
+        "line": 629,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(param_2 + 0x1eec3c) != 1) {",
+        "before": "local_8c = (undefined1 *)apuStack_c0;",
+        "after": "local_c4 = (undefined *)0x497ffc;"
+      },
+      {
+        "function": "0x00497BB0",
+        "size_bytes": 4660,
+        "line": 703,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(param_2 + 0x1eec3c) == 1) {",
+        "before": "local_78 = (undefined1 *)apuStack_c0;",
+        "after": "local_c4 = (undefined *)0x4980e8;"
+      },
+      {
+        "function": "0x00497BB0",
+        "size_bytes": 4660,
+        "line": 786,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(local_80 + 0x1eec3c) == 1) {",
+        "before": "local_78 = (undefined1 *)apuStack_c0;",
+        "after": "local_c4 = &DAT_00624c57;"
+      },
+      {
+        "function": "0x0049B5C0",
+        "size_bytes": 3713,
+        "line": 85,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(param_1 + 0x1eec3c) = 2;",
+        "before": "FUN_00416b90();",
+        "after": "*(undefined1 *)(param_1 + 0x1eec44) = 0;"
+      },
+      {
+        "function": "0x0049D1B0",
+        "size_bytes": 163,
+        "line": 30,
+        "mode": "read_or_other",
+        "source": "(*(int *)(unaff_ESI + 0x1eec3c) == 2)) {",
+        "before": "if ((*(int *)(unaff_ESI + 0x1eebbc) != *(int *)(unaff_ESI + 0x1eebc0)) &&",
+        "after": "(**(code **)(**(int **)(unaff_ESI + 4) + 0x24))(\"break\",0);"
+      },
+      {
+        "function": "0x004A1250",
+        "size_bytes": 5249,
+        "line": 320,
+        "mode": "read_or_other",
+        "source": "if ((*(int *)(param_1 + 0x1eec3c) != 2) || (*(char *)(param_1 + 0x1eec44) != '\\0')) {",
+        "before": "if ((*(int *)(param_2 + 0x24) - *piVar19 & 0xfffffffcU) == 0) {",
+        "after": "cVar9 = FUN_00520280();"
+      },
+      {
+        "function": "0x004A1250",
+        "size_bytes": 5249,
+        "line": 806,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(param_1 + 0x1eec3c) != 1) {",
+        "before": "case (int *)0x1b:",
+        "after": "FUN_00415750();"
+      },
+      {
+        "function": "0x004A1250",
+        "size_bytes": 5249,
+        "line": 930,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(param_1 + 0x1eec3c) == 1) {",
+        "before": "if (*piVar19 == *(int *)(param_2 + 0x24)) {",
+        "after": "FUN_0048eee0();"
+      },
+      {
+        "function": "0x004A1250",
+        "size_bytes": 5249,
+        "line": 1323,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(param_1 + 0x1eec3c) == 1) {",
+        "before": "case (int *)0x2e:",
+        "after": "if (*piVar19 != *(int *)(param_2 + 0x24)) {"
+      },
+      {
+        "function": "0x004B41B0",
+        "size_bytes": 49,
+        "line": 11,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(in_EAX + 0x1eec3c) == 1) {",
+        "before": "",
+        "after": "*param_3 = param_2;"
+      },
+      {
+        "function": "0x004B4710",
+        "size_bytes": 7548,
+        "line": 326,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(param_1 + 0x1eec3c) != 1) {",
+        "before": "uVar11 = local_c8._4_4_;",
+        "after": "local_188 = (double)CONCAT44(local_c8._4_4_,0x4b4ce5);"
+      },
+      {
+        "function": "0x004B4710",
+        "size_bytes": 7548,
+        "line": 1145,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(param_1 + 0x1eec3c) != 1) {",
+        "before": "case 0xe:",
+        "after": "local_188 = (double)CONCAT44(0x4b60a5,(undefined4)local_188);"
+      },
+      {
+        "function": "0x0051E6F0",
+        "size_bytes": 2156,
+        "line": 118,
+        "mode": "read_or_other",
+        "source": "switch(*(undefined4 *)(*(int *)(param_1 + 0x194) + 0x1eec3c)) {",
+        "before": "FUN_004c2240(&DAT_0087f480);",
+        "after": "case 0:"
+      },
+      {
+        "function": "0x005205B0",
+        "size_bytes": 533,
+        "line": 26,
+        "mode": "possible_write",
+        "source": "if ((*(int *)(iVar8 + 0x1eec3c) == 1) && (cVar2 = FUN_00431fb0(), cVar2 != '\\0')) {",
+        "before": "iVar8 = *(int *)(param_1 + 0x194);",
+        "after": "return 0;"
+      },
+      {
+        "function": "0x00521560",
+        "size_bytes": 1147,
+        "line": 33,
+        "mode": "read_or_other",
+        "source": "if ((*(int *)(*(int *)(param_1 + 0x194) + 0x1eec3c) == 1) &&",
+        "before": "bVar3 = local_33;",
+        "after": "(bVar3 = FUN_00431fb0(), *(int *)(param_1 + 0x4a8) == 0)) {"
+      },
+      {
+        "function": "0x00521A00",
+        "size_bytes": 874,
+        "line": 40,
+        "mode": "read_or_other",
+        "source": "iVar5 = *(int *)(*(int *)(param_1 + 0x104) + 0x1eec3c);",
+        "before": "*(undefined1 *)(param_1 + 0x3cc) = 0;",
+        "after": "iVar2 = param_1 + -0x90;"
+      },
+      {
+        "function": "0x00521A00",
+        "size_bytes": 874,
+        "line": 145,
+        "mode": "read_or_other",
+        "source": "(*(int *)(iVar5 + 0x1eec3c) == 2)) && (*(char *)(iVar5 + 0x1eec44) != '\\0')) {",
+        "before": "(iVar5 = *(int *)(param_1 + 0x104), *(char *)(iVar5 + 0x1eec4c) == '\\0')) &&",
+        "after": "FUN_00526a40(iVar2);"
+      },
+      {
+        "function": "0x0052BFF0",
+        "size_bytes": 959,
+        "line": 45,
+        "mode": "read_or_other",
+        "source": "iVar3 = *(int *)(*(int *)(param_1 + 0x194) + 0x1eec3c);",
+        "before": "*(undefined1 *)(param_1 + 0x45e) = 0;",
+        "after": "cVar8 = FUN_00431fb0(uVar9);"
+      }
+    ],
+    "1eec48": [
+      {
+        "function": "0x004338D0",
+        "size_bytes": 1442,
+        "line": 34,
+        "mode": "read_or_other",
+        "source": "if (0 < *(int *)(param_1 + 0x1eec48)) {",
+        "before": "}",
+        "after": "*(int *)(param_1 + 0x1eec48) = *(int *)(param_1 + 0x1eec48) + 1;"
+      },
+      {
+        "function": "0x004338D0",
+        "size_bytes": 1442,
+        "line": 35,
+        "mode": "possible_write",
+        "source": "*(int *)(param_1 + 0x1eec48) = *(int *)(param_1 + 0x1eec48) + 1;",
+        "before": "if (0 < *(int *)(param_1 + 0x1eec48)) {",
+        "after": "}"
+      },
+      {
+        "function": "0x0048AA00",
+        "size_bytes": 496,
+        "line": 26,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(unaff_ESI + 0x1eec48) = 0;",
+        "before": "*(undefined1 *)(unaff_ESI + 0x1eec44) = 0;",
+        "after": "pvVar3 = *(void **)(unaff_ESI + 0x1eedc4);"
+      },
+      {
+        "function": "0x0048AD30",
+        "size_bytes": 1904,
+        "line": 103,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(unaff_EBX + 0x1eec48) = 0;",
+        "before": "*(undefined1 *)(unaff_EBX + 0x1eec44) = 0;",
+        "after": "*(undefined2 *)(unaff_EBX + 0x1eed40) = 0;"
+      },
+      {
+        "function": "0x0048B4A0",
+        "size_bytes": 1988,
+        "line": 57,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(param_1 + 0x1eec48) = 0;",
+        "before": "*(undefined1 *)(param_1 + 0x1eec44) = 0;",
+        "after": "*(undefined2 *)(param_1 + 0x1eed40) = 0;"
+      },
+      {
+        "function": "0x0048BF60",
+        "size_bytes": 2322,
+        "line": 63,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(param_1 + 0x1eec48) = 0;",
+        "before": "*(undefined1 *)(param_1 + 0x1eec44) = 0;",
+        "after": "*(undefined2 *)(param_1 + 0x1eed40) = 0;"
+      },
+      {
+        "function": "0x0048C880",
+        "size_bytes": 3608,
+        "line": 73,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(param_1 + 0x1eec48) = 0;",
+        "before": "*(undefined1 *)(param_1 + 0x1eec44) = 0;",
+        "after": "*(undefined2 *)(param_1 + 0x1eed40) = 0;"
+      },
+      {
+        "function": "0x00492710",
+        "size_bytes": 378,
+        "line": 27,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(unaff_ESI + 0x1eec48) = 0;",
+        "before": "*(undefined1 *)(unaff_ESI + 0x1eec44) = 0;",
+        "after": "pvVar1 = *(void **)(unaff_ESI + 0x1eedc4);"
+      },
+      {
+        "function": "0x00492890",
+        "size_bytes": 1251,
+        "line": 73,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(unaff_ESI + 0x1eec48) = 0;",
+        "before": "*(undefined1 *)(unaff_ESI + 0x1eec44) = 1;",
+        "after": "pvVar1 = *(void **)(unaff_ESI + 0x1eedc4);"
+      },
+      {
+        "function": "0x00493630",
+        "size_bytes": 11376,
+        "line": 140,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(param_3 + 0x1eec48) = 0;",
+        "before": "*(undefined1 *)(param_3 + 0x1eec44) = 0;",
+        "after": "*(undefined2 *)(param_3 + 0x1eed40) = 0;"
+      },
+      {
+        "function": "0x0049B5C0",
+        "size_bytes": 3713,
+        "line": 87,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(param_1 + 0x1eec48) = 0;",
+        "before": "*(undefined1 *)(param_1 + 0x1eec44) = 0;",
+        "after": "*(undefined2 *)(param_1 + 0x1eed40) = 0;"
+      },
+      {
+        "function": "0x004B6710",
+        "size_bytes": 4109,
+        "line": 644,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(param_1 + 0x1eec48) = 1;",
+        "before": "case 0x45:",
+        "after": "*(undefined4 *)(*(int *)(param_1 + 0x1e8630) + 0x46c) ="
+      },
+      {
+        "function": "0x005B4360",
+        "size_bytes": 425,
+        "line": 22,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(iVar2 + 0x1eec48) < 5) {",
+        "before": "iVar2 = *(int *)(param_1 + 0x78);",
+        "after": "if (*(int *)(param_1 + 0xa0) == 1) {"
+      }
+    ],
+    "1eedc4": [
+      {
+        "function": "0x0048AA00",
+        "size_bytes": 496,
+        "line": 27,
+        "mode": "read_or_other",
+        "source": "pvVar3 = *(void **)(unaff_ESI + 0x1eedc4);",
+        "before": "*(undefined4 *)(unaff_ESI + 0x1eec48) = 0;",
+        "after": "if (pvVar3 != *(void **)(unaff_ESI + 0x1eedc8)) {"
+      },
+      {
+        "function": "0x00492710",
+        "size_bytes": 378,
+        "line": 28,
+        "mode": "read_or_other",
+        "source": "pvVar1 = *(void **)(unaff_ESI + 0x1eedc4);",
+        "before": "*(undefined4 *)(unaff_ESI + 0x1eec48) = 0;",
+        "after": "if (pvVar1 != *(void **)(unaff_ESI + 0x1eedc8)) {"
+      },
+      {
+        "function": "0x00492890",
+        "size_bytes": 1251,
+        "line": 74,
+        "mode": "read_or_other",
+        "source": "pvVar1 = *(void **)(unaff_ESI + 0x1eedc4);",
+        "before": "*(undefined4 *)(unaff_ESI + 0x1eec48) = 0;",
+        "after": "if (pvVar1 != *(void **)(unaff_ESI + 0x1eedc8)) {"
+      },
+      {
+        "function": "0x00492D80",
+        "size_bytes": 817,
+        "line": 39,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(in_EAX + 0x1eedc4) == *(int *)(in_EAX + 0x1eedc8)) {",
+        "before": "}",
+        "after": "if (*(int *)(*(int *)(in_EAX + 4) + 0x20) != 0) {"
+      },
+      {
+        "function": "0x00492D80",
+        "size_bytes": 817,
+        "line": 50,
+        "mode": "read_or_other",
+        "source": "(FUN_004930c0(in_EAX), *(int *)(in_EAX + 0x1eedc4) != *(int *)(in_EAX + 0x1eedc8))) {",
+        "before": "if ((*(int *)(in_EAX + 0x1eedbc) != 0) &&",
+        "after": "return true;"
+      },
+      {
+        "function": "0x00492D80",
+        "size_bytes": 817,
+        "line": 113,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(in_EAX + 0x1eedc4) == *(int *)(in_EAX + 0x1eedc8)) {",
+        "before": "}",
+        "after": "if ((DAT_008ba064 == -0x7ffffff8) && (DAT_008ba044 != '\\0')) {"
+      },
+      {
+        "function": "0x00492D80",
+        "size_bytes": 817,
+        "line": 124,
+        "mode": "read_or_other",
+        "source": "return *(int *)(in_EAX + 0x1eedc4) != *(int *)(in_EAX + 0x1eedc8);",
+        "before": "FUN_004930c0(in_EAX);",
+        "after": "}"
+      },
+      {
+        "function": "0x00493300",
+        "size_bytes": 808,
+        "line": 31,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(unaff_EBX + 0x1eedc4) != *(int *)(unaff_EBX + 0x1eedc8)) {",
+        "before": "ExceptionList = &local_c;",
+        "after": "do {"
+      },
+      {
+        "function": "0x00493300",
+        "size_bytes": 808,
+        "line": 48,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(unaff_EBX + 0x1eedc4) != *(int *)(unaff_EBX + 0x1eedc8)) {",
+        "before": "}",
+        "after": "*(int *)(unaff_EBX + 0x1eedc8) = *(int *)(unaff_EBX + 0x1eedc8) + -4;"
+      },
+      {
+        "function": "0x00493300",
+        "size_bytes": 808,
+        "line": 105,
+        "mode": "read_or_other",
+        "source": "(ppcVar4 = *(char ***)(unaff_EBX + 0x1eedc4), ppcVar4 <= apcStack_14)) {",
+        "before": "if ((apcStack_14 < ppcVar3) &&",
+        "after": "if (ppcVar3 == *(char ***)(unaff_EBX + 0x1eedcc)) {"
+      },
+      {
+        "function": "0x00493300",
+        "size_bytes": 808,
+        "line": 112,
+        "mode": "read_or_other",
+        "source": "(*(int *)(unaff_EBX + 0x1eedc4) + ((int)apcStack_14 - (int)ppcVar4 >> 2) * 4);",
+        "before": "*(undefined4 *)",
+        "after": "}"
+      },
+      {
+        "function": "0x00493300",
+        "size_bytes": 808,
+        "line": 153,
+        "mode": "read_or_other",
+        "source": "} while (*(int *)(unaff_EBX + 0x1eedc4) != *(int *)(unaff_EBX + 0x1eedc8));",
+        "before": "LAB_00493573:",
+        "after": "}"
+      },
+      {
+        "function": "0x00493630",
+        "size_bytes": 11376,
+        "line": 143,
+        "mode": "read_or_other",
+        "source": "pvVar1 = *(void **)(param_3 + 0x1eedc4);",
+        "before": "*(undefined1 *)(param_3 + 0x1eed42) = 0;",
+        "after": "if (pvVar1 != *(void **)(param_3 + 0x1eedc8)) {"
+      },
+      {
+        "function": "0x0049B280",
+        "size_bytes": 825,
+        "line": 42,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(unaff_EDI + 0x1eedc4) == *(int *)(unaff_EDI + 0x1eedc8)) {",
+        "before": "((DAT_0087f5d0 == 0 || (DAT_0087f6f0 == 0)))) && (DAT_008bb75c == '\\0')) {",
+        "after": "if (*(int *)(*(int *)(unaff_EDI + 4) + 0x20) != 0) {"
+      },
+      {
+        "function": "0x0049B280",
+        "size_bytes": 825,
+        "line": 54,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(unaff_EDI + 0x1eedc4) != *(int *)(unaff_EDI + 0x1eedc8)) goto LAB_0049b59b;",
+        "before": "FUN_004930c0();",
+        "after": "}"
+      },
+      {
+        "function": "0x0049B5C0",
+        "size_bytes": 3713,
+        "line": 90,
+        "mode": "read_or_other",
+        "source": "pvVar1 = *(void **)(param_1 + 0x1eedc4);",
+        "before": "*(undefined1 *)(param_1 + 0x1eed42) = 0;",
+        "after": "if (pvVar1 != *(void **)(param_1 + 0x1eedc8)) {"
+      }
+    ],
+    "1eedd4": [
+      {
+        "function": "0x0048AA00",
+        "size_bytes": 496,
+        "line": 32,
+        "mode": "read_or_other",
+        "source": "pvVar3 = *(void **)(unaff_ESI + 0x1eedd4);",
+        "before": "}",
+        "after": "if (pvVar3 != *(void **)(unaff_ESI + 0x1eedd8)) {"
+      },
+      {
+        "function": "0x00492710",
+        "size_bytes": 378,
+        "line": 33,
+        "mode": "read_or_other",
+        "source": "pvVar1 = *(void **)(unaff_ESI + 0x1eedd4);",
+        "before": "}",
+        "after": "if (pvVar1 != *(void **)(unaff_ESI + 0x1eedd8)) {"
+      },
+      {
+        "function": "0x00492890",
+        "size_bytes": 1251,
+        "line": 79,
+        "mode": "read_or_other",
+        "source": "pvVar1 = *(void **)(unaff_ESI + 0x1eedd4);",
+        "before": "}",
+        "after": "if (pvVar1 != *(void **)(unaff_ESI + 0x1eedd8)) {"
+      },
+      {
+        "function": "0x00493300",
+        "size_bytes": 808,
+        "line": 51,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(unaff_EBX + 0x1eedd4) != *(int *)(unaff_EBX + 0x1eedd8)) {",
+        "before": "}",
+        "after": "*(int *)(unaff_EBX + 0x1eedd8) = *(int *)(unaff_EBX + 0x1eedd8) + -4;"
+      },
+      {
+        "function": "0x00493300",
+        "size_bytes": 808,
+        "line": 127,
+        "mode": "read_or_other",
+        "source": "ppcVar4 = *(char ***)(unaff_EBX + 0x1eedd4);",
+        "before": "if (apcStack_14 < ppcVar3) {",
+        "after": "if (ppcVar4 <= apcStack_14) {"
+      },
+      {
+        "function": "0x00493300",
+        "size_bytes": 808,
+        "line": 135,
+        "mode": "read_or_other",
+        "source": "(*(int *)(unaff_EBX + 0x1eedd4) + ((int)apcStack_14 - (int)ppcVar4 >> 2) * 4",
+        "before": "*(undefined4 *)",
+        "after": ");"
+      },
+      {
+        "function": "0x00493630",
+        "size_bytes": 11376,
+        "line": 150,
+        "mode": "read_or_other",
+        "source": "pvVar1 = *(void **)(param_3 + 0x1eedd4);",
+        "before": "}",
+        "after": "if (pvVar1 != *(void **)(param_3 + 0x1eedd8)) {"
+      },
+      {
+        "function": "0x0049B5C0",
+        "size_bytes": 3713,
+        "line": 96,
+        "mode": "read_or_other",
+        "source": "pvVar1 = *(void **)(param_1 + 0x1eedd4);",
+        "before": "}",
+        "after": "if (pvVar1 != *(void **)(param_1 + 0x1eedd8)) {"
+      }
+    ],
+    "1eedb8": [
+      {
+        "function": "0x0048AA00",
+        "size_bytes": 496,
+        "line": 38,
+        "mode": "read_or_other",
+        "source": "piVar6 = *(int **)(unaff_ESI + 0x1eedb8);",
+        "before": "FUN_0044d0d0();",
+        "after": "piVar5 = (int *)*piVar6;"
+      },
+      {
+        "function": "0x0048AA00",
+        "size_bytes": 496,
+        "line": 41,
+        "mode": "possible_write",
+        "source": "*(int *)(*(int *)(unaff_ESI + 0x1eedb8) + 4) = *(int *)(unaff_ESI + 0x1eedb8);",
+        "before": "*piVar6 = (int)piVar6;",
+        "after": "*(undefined4 *)(unaff_ESI + 0x1eedbc) = 0;"
+      },
+      {
+        "function": "0x0048AA00",
+        "size_bytes": 496,
+        "line": 43,
+        "mode": "read_or_other",
+        "source": "if (piVar5 != *(int **)(unaff_ESI + 0x1eedb8)) {",
+        "before": "*(undefined4 *)(unaff_ESI + 0x1eedbc) = 0;",
+        "after": "do {"
+      },
+      {
+        "function": "0x0048AA00",
+        "size_bytes": 496,
+        "line": 48,
+        "mode": "read_or_other",
+        "source": "} while (piVar6 != (int *)*(int *)(unaff_ESI + 0x1eedb8));",
+        "before": "piVar5 = piVar6;",
+        "after": "}"
+      },
+      {
+        "function": "0x004922A0",
+        "size_bytes": 1116,
+        "line": 54,
+        "mode": "read_or_other",
+        "source": "piVar5 = *(int **)(param_1 + 0x1eedb8);",
+        "before": "*(undefined1 *)(param_1 + 0x1eed43) = param_2;",
+        "after": "pppiStack_98 = (int ***)*piVar5;"
+      },
+      {
+        "function": "0x004922A0",
+        "size_bytes": 1116,
+        "line": 57,
+        "mode": "possible_write",
+        "source": "*(int *)(*(int *)(param_1 + 0x1eedb8) + 4) = *(int *)(param_1 + 0x1eedb8);",
+        "before": "*piVar5 = (int)piVar5;",
+        "after": "*(undefined4 *)(param_1 + 0x1eedbc) = 0;"
+      },
+      {
+        "function": "0x004922A0",
+        "size_bytes": 1116,
+        "line": 59,
+        "mode": "read_or_other",
+        "source": "if (pppiStack_98 != (int ***)*(int **)(param_1 + 0x1eedb8)) {",
+        "before": "*(undefined4 *)(param_1 + 0x1eedbc) = 0;",
+        "after": "do {"
+      },
+      {
+        "function": "0x004922A0",
+        "size_bytes": 1116,
+        "line": 65,
+        "mode": "read_or_other",
+        "source": "} while (piVar5 != (int *)*(int *)(param_1 + 0x1eedb8));",
+        "before": "pppiStack_98 = (int ***)piVar5;",
+        "after": "}"
+      },
+      {
+        "function": "0x00492710",
+        "size_bytes": 378,
+        "line": 39,
+        "mode": "read_or_other",
+        "source": "piVar2 = *(int **)(unaff_ESI + 0x1eedb8);",
+        "before": "FUN_0044d0d0();",
+        "after": "piVar3 = (int *)*piVar2;"
+      },
+      {
+        "function": "0x00492710",
+        "size_bytes": 378,
+        "line": 42,
+        "mode": "possible_write",
+        "source": "*(int *)(*(int *)(unaff_ESI + 0x1eedb8) + 4) = *(int *)(unaff_ESI + 0x1eedb8);",
+        "before": "*piVar2 = (int)piVar2;",
+        "after": "*(undefined4 *)(unaff_ESI + 0x1eedbc) = 0;"
+      },
+      {
+        "function": "0x00492710",
+        "size_bytes": 378,
+        "line": 44,
+        "mode": "read_or_other",
+        "source": "if (piVar3 != *(int **)(unaff_ESI + 0x1eedb8)) {",
+        "before": "*(undefined4 *)(unaff_ESI + 0x1eedbc) = 0;",
+        "after": "do {"
+      },
+      {
+        "function": "0x00492710",
+        "size_bytes": 378,
+        "line": 49,
+        "mode": "read_or_other",
+        "source": "} while (piVar2 != (int *)*(int *)(unaff_ESI + 0x1eedb8));",
+        "before": "piVar3 = piVar2;",
+        "after": "}"
+      },
+      {
+        "function": "0x00492890",
+        "size_bytes": 1251,
+        "line": 56,
+        "mode": "read_or_other",
+        "source": "iVar5 = *(int *)(unaff_ESI + 0x1eedb8);",
+        "before": "&ScriptIF::RTTI_Type_Descriptor,0,uVar4), iVar5 != 0)) {",
+        "after": "local_5c = iVar6;"
+      },
+      {
+        "function": "0x00493630",
+        "size_bytes": 11376,
+        "line": 158,
+        "mode": "read_or_other",
+        "source": "piVar5 = *(int **)(param_3 + 0x1eedb8);",
+        "before": "FUN_0044d0d0();",
+        "after": "piVar6 = (int *)*piVar5;"
+      },
+      {
+        "function": "0x00493630",
+        "size_bytes": 11376,
+        "line": 161,
+        "mode": "possible_write",
+        "source": "*(int *)(*(int *)(param_3 + 0x1eedb8) + 4) = *(int *)(param_3 + 0x1eedb8);",
+        "before": "*piVar5 = (int)piVar5;",
+        "after": "*(undefined4 *)(param_3 + 0x1eedbc) = 0;"
+      },
+      {
+        "function": "0x00493630",
+        "size_bytes": 11376,
+        "line": 163,
+        "mode": "read_or_other",
+        "source": "if (piVar6 != *(int **)(param_3 + 0x1eedb8)) {",
+        "before": "*(undefined4 *)(param_3 + 0x1eedbc) = 0;",
+        "after": "do {"
+      },
+      {
+        "function": "0x00493630",
+        "size_bytes": 11376,
+        "line": 167,
+        "mode": "read_or_other",
+        "source": "} while (piVar6 != (int *)*(int *)(param_3 + 0x1eedb8));",
+        "before": "FUN_005b6bbb();",
+        "after": "}"
+      },
+      {
+        "function": "0x0049AF10",
+        "size_bytes": 866,
+        "line": 51,
+        "mode": "read_or_other",
+        "source": "piVar4 = *(int **)(param_1 + 0x1eedb8);",
+        "before": "*(undefined1 *)puVar1 = 0;",
+        "after": "piVar2 = (int *)*piVar4;"
+      },
+      {
+        "function": "0x0049AF10",
+        "size_bytes": 866,
+        "line": 54,
+        "mode": "possible_write",
+        "source": "*(int *)(*(int *)(param_1 + 0x1eedb8) + 4) = *(int *)(param_1 + 0x1eedb8);",
+        "before": "*piVar4 = (int)piVar4;",
+        "after": "*(undefined4 *)(param_1 + 0x1eedbc) = 0;"
+      },
+      {
+        "function": "0x0049AF10",
+        "size_bytes": 866,
+        "line": 56,
+        "mode": "read_or_other",
+        "source": "if (piVar2 != *(int **)(param_1 + 0x1eedb8)) {",
+        "before": "*(undefined4 *)(param_1 + 0x1eedbc) = 0;",
+        "after": "do {"
+      },
+      {
+        "function": "0x0049AF10",
+        "size_bytes": 866,
+        "line": 60,
+        "mode": "read_or_other",
+        "source": "} while (piVar2 != (int *)*(int *)(param_1 + 0x1eedb8));",
+        "before": "FUN_005b6bbb();",
+        "after": "}"
+      },
+      {
+        "function": "0x0049B5C0",
+        "size_bytes": 3713,
+        "line": 103,
+        "mode": "read_or_other",
+        "source": "piVar14 = *(int **)(param_1 + 0x1eedb8);",
+        "before": "FUN_0044d0d0();",
+        "after": "piVar9 = (int *)*piVar14;"
+      },
+      {
+        "function": "0x0049B5C0",
+        "size_bytes": 3713,
+        "line": 106,
+        "mode": "possible_write",
+        "source": "*(int *)(*(int *)(param_1 + 0x1eedb8) + 4) = *(int *)(param_1 + 0x1eedb8);",
+        "before": "*piVar14 = (int)piVar14;",
+        "after": "*(undefined4 *)(param_1 + 0x1eedbc) = 0;"
+      },
+      {
+        "function": "0x0049B5C0",
+        "size_bytes": 3713,
+        "line": 108,
+        "mode": "read_or_other",
+        "source": "if (piVar9 != *(int **)(param_1 + 0x1eedb8)) {",
+        "before": "*(undefined4 *)(param_1 + 0x1eedbc) = 0;",
+        "after": "do {"
+      },
+      {
+        "function": "0x0049B5C0",
+        "size_bytes": 3713,
+        "line": 112,
+        "mode": "read_or_other",
+        "source": "} while (piVar9 != (int *)*(int *)(param_1 + 0x1eedb8));",
+        "before": "FUN_005b6bbb();",
+        "after": "}"
+      }
+    ],
+    "1eedbc": [
+      {
+        "function": "0x0048AA00",
+        "size_bytes": 496,
+        "line": 42,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(unaff_ESI + 0x1eedbc) = 0;",
+        "before": "*(int *)(*(int *)(unaff_ESI + 0x1eedb8) + 4) = *(int *)(unaff_ESI + 0x1eedb8);",
+        "after": "if (piVar5 != *(int **)(unaff_ESI + 0x1eedb8)) {"
+      },
+      {
+        "function": "0x004922A0",
+        "size_bytes": 1116,
+        "line": 58,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(param_1 + 0x1eedbc) = 0;",
+        "before": "*(int *)(*(int *)(param_1 + 0x1eedb8) + 4) = *(int *)(param_1 + 0x1eedb8);",
+        "after": "if (pppiStack_98 != (int ***)*(int **)(param_1 + 0x1eedb8)) {"
+      },
+      {
+        "function": "0x00492710",
+        "size_bytes": 378,
+        "line": 43,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(unaff_ESI + 0x1eedbc) = 0;",
+        "before": "*(int *)(*(int *)(unaff_ESI + 0x1eedb8) + 4) = *(int *)(unaff_ESI + 0x1eedb8);",
+        "after": "if (piVar3 != *(int **)(unaff_ESI + 0x1eedb8)) {"
+      },
+      {
+        "function": "0x00492890",
+        "size_bytes": 1251,
+        "line": 49,
+        "mode": "read_or_other",
+        "source": "if ((*(int *)(unaff_ESI + 0x1eedbc) == 0) &&",
+        "before": "*(undefined4 *)(unaff_ESI + 0x1eed68) = 0;",
+        "after": "(iVar6 = *(int *)(param_1 + 4), *(int *)(param_1 + 8) - iVar6 >> 2 != 0)) {"
+      },
+      {
+        "function": "0x00492890",
+        "size_bytes": 1251,
+        "line": 59,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(unaff_ESI + 0x1eedbc) == 0x3ffffffe) {",
+        "before": "iVar6 = FUN_004c52d0(iVar5,*(undefined4 *)(iVar5 + 4),&local_5c);",
+        "after": "/* WARNING: Subroutine does not return */"
+      },
+      {
+        "function": "0x00492890",
+        "size_bytes": 1251,
+        "line": 63,
+        "mode": "possible_write",
+        "source": "*(int *)(unaff_ESI + 0x1eedbc) = *(int *)(unaff_ESI + 0x1eedbc) + 1;",
+        "before": "}",
+        "after": "*(int *)(iVar5 + 4) = iVar6;"
+      },
+      {
+        "function": "0x00492D80",
+        "size_bytes": 817,
+        "line": 49,
+        "mode": "read_or_other",
+        "source": "if ((*(int *)(in_EAX + 0x1eedbc) != 0) &&",
+        "before": "FUN_005656a0();",
+        "after": "(FUN_004930c0(in_EAX), *(int *)(in_EAX + 0x1eedc4) != *(int *)(in_EAX + 0x1eedc8))) {"
+      },
+      {
+        "function": "0x00492D80",
+        "size_bytes": 817,
+        "line": 86,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(in_EAX + 0x1eedbc) == 0) {",
+        "before": "else {",
+        "after": "*(int *)(in_EAX + 0x1eed64) = *(int *)(in_EAX + 0x1eed64) + 1;"
+      },
+      {
+        "function": "0x00493630",
+        "size_bytes": 11376,
+        "line": 162,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(param_3 + 0x1eedbc) = 0;",
+        "before": "*(int *)(*(int *)(param_3 + 0x1eedb8) + 4) = *(int *)(param_3 + 0x1eedb8);",
+        "after": "if (piVar6 != *(int **)(param_3 + 0x1eedb8)) {"
+      },
+      {
+        "function": "0x0049AF10",
+        "size_bytes": 866,
+        "line": 55,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(param_1 + 0x1eedbc) = 0;",
+        "before": "*(int *)(*(int *)(param_1 + 0x1eedb8) + 4) = *(int *)(param_1 + 0x1eedb8);",
+        "after": "if (piVar2 != *(int **)(param_1 + 0x1eedb8)) {"
+      },
+      {
+        "function": "0x0049B280",
+        "size_bytes": 825,
+        "line": 51,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(unaff_EDI + 0x1eedbc) != 0) {",
+        "before": "FUN_005656a0();",
+        "after": "uStack_54 = 0x49b359;"
+      },
+      {
+        "function": "0x0049B5C0",
+        "size_bytes": 3713,
+        "line": 107,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(param_1 + 0x1eedbc) = 0;",
+        "before": "*(int *)(*(int *)(param_1 + 0x1eedb8) + 4) = *(int *)(param_1 + 0x1eedb8);",
+        "after": "if (piVar9 != *(int **)(param_1 + 0x1eedb8)) {"
+      }
+    ],
+    "1eed43": [
+      {
+        "function": "0x00490590",
+        "size_bytes": 4799,
+        "line": 342,
+        "mode": "possible_write",
+        "source": "*(bool *)((int)ppppppuVar3 + 0x1eed43) = DAT_00683749 == '\\0';",
+        "before": ") {",
+        "after": "}"
+      },
+      {
+        "function": "0x00490590",
+        "size_bytes": 4799,
+        "line": 345,
+        "mode": "possible_write",
+        "source": "*(bool *)((int)ppppppuVar3 + 0x1eed43) = DAT_00683748 == '\\0';",
+        "before": "else {",
+        "after": "}"
+      },
+      {
+        "function": "0x00491870",
+        "size_bytes": 2599,
+        "line": 397,
+        "mode": "read_or_other",
+        "source": "if ((*(char *)(param_1 + 0x1eed43) == '\\0') &&",
+        "before": "*(int *)(*(int *)(param_1 + 0x1eed44) + 0x4c))))) {",
+        "after": "((*(char *)(param_1 + 0x1eed54) != '\\0' || (*(char *)(param_1 + 0x1eed55) != '\\0')))) {"
+      },
+      {
+        "function": "0x00491870",
+        "size_bytes": 2599,
+        "line": 473,
+        "mode": "read_or_other",
+        "source": "pppuStack_9c = (undefined4 ***)(uint)*(byte *)(param_1 + 0x1eed43);",
+        "before": "LAB_004921c4:",
+        "after": "pppuStack_a0 = (undefined4 ***)param_1;"
+      },
+      {
+        "function": "0x004922A0",
+        "size_bytes": 1116,
+        "line": 53,
+        "mode": "possible_write",
+        "source": "*(undefined1 *)(param_1 + 0x1eed43) = param_2;",
+        "before": "ExceptionList = &local_c;",
+        "after": "piVar5 = *(int **)(param_1 + 0x1eedb8);"
+      },
+      {
+        "function": "0x004922A0",
+        "size_bytes": 1116,
+        "line": 97,
+        "mode": "read_or_other",
+        "source": "if (*(char *)(param_1 + 0x1eed43) == '\\0') {",
+        "before": "}",
+        "after": "pppiStack_98 = (int ***)0x34;"
+      }
+    ],
+    "1eed64": [
+      {
+        "function": "0x00492710",
+        "size_bytes": 378,
+        "line": 23,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(unaff_ESI + 0x1eed64) = 0;",
+        "before": "*(undefined4 *)(unaff_ESI + 0x1eed48) = param_1;",
+        "after": "*(undefined4 *)(unaff_ESI + 0x1eed60) = 0;"
+      },
+      {
+        "function": "0x00492890",
+        "size_bytes": 1251,
+        "line": 46,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(unaff_ESI + 0x1eed64) = 0;",
+        "before": "uVar10 = 0;",
+        "after": "*(undefined4 *)(unaff_ESI + 0x1eed60) = 0;"
+      },
+      {
+        "function": "0x00492D80",
+        "size_bytes": 817,
+        "line": 43,
+        "mode": "possible_write",
+        "source": "*(int *)(in_EAX + 0x1eed64) = *(int *)(in_EAX + 0x1eed64) + 1;",
+        "before": "}",
+        "after": "*(int *)(in_EAX + 0x1eed60) = *(int *)(in_EAX + 0x1eed60) + 1;"
+      },
+      {
+        "function": "0x00492D80",
+        "size_bytes": 817,
+        "line": 45,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(in_EAX + 0x1eed64) % 10 != 0) {",
+        "before": "*(int *)(in_EAX + 0x1eed60) = *(int *)(in_EAX + 0x1eed60) + 1;",
+        "after": "return false;"
+      },
+      {
+        "function": "0x00492D80",
+        "size_bytes": 817,
+        "line": 53,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(in_EAX + 0x1eed64) % 0x14 == 0) {",
+        "before": "}",
+        "after": "FUN_0049d5b0();"
+      },
+      {
+        "function": "0x00492D80",
+        "size_bytes": 817,
+        "line": 87,
+        "mode": "possible_write",
+        "source": "*(int *)(in_EAX + 0x1eed64) = *(int *)(in_EAX + 0x1eed64) + 1;",
+        "before": "if (*(int *)(in_EAX + 0x1eedbc) == 0) {",
+        "after": "*(int *)(in_EAX + 0x1eed60) = *(int *)(in_EAX + 0x1eed60) + 1;"
+      },
+      {
+        "function": "0x00492D80",
+        "size_bytes": 817,
+        "line": 89,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(in_EAX + 0x1eed64) % 10 == 0) {",
+        "before": "*(int *)(in_EAX + 0x1eed60) = *(int *)(in_EAX + 0x1eed60) + 1;",
+        "after": "if (DAT_0067b938 == -0x7ffffff8) {"
+      },
+      {
+        "function": "0x00492D80",
+        "size_bytes": 817,
+        "line": 117,
+        "mode": "possible_write",
+        "source": "*(int *)(in_EAX + 0x1eed64) = *(int *)(in_EAX + 0x1eed64) + 1;",
+        "before": "}",
+        "after": "*(int *)(in_EAX + 0x1eed60) = *(int *)(in_EAX + 0x1eed60) + 1;"
+      },
+      {
+        "function": "0x00492D80",
+        "size_bytes": 817,
+        "line": 119,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(in_EAX + 0x1eed64) % 10 != 0) {",
+        "before": "*(int *)(in_EAX + 0x1eed60) = *(int *)(in_EAX + 0x1eed60) + 1;",
+        "after": "return false;"
+      },
+      {
+        "function": "0x0049B280",
+        "size_bytes": 825,
+        "line": 47,
+        "mode": "possible_write",
+        "source": "*(int *)(unaff_EDI + 0x1eed64) = *(int *)(unaff_EDI + 0x1eed64) + 1;",
+        "before": "}",
+        "after": "*(int *)(unaff_EDI + 0x1eed60) = *(int *)(unaff_EDI + 0x1eed60) + 1;"
+      },
+      {
+        "function": "0x0049B280",
+        "size_bytes": 825,
+        "line": 49,
+        "mode": "read_or_other",
+        "source": "if (*(int *)(unaff_EDI + 0x1eed64) % 10 == 0) {",
+        "before": "*(int *)(unaff_EDI + 0x1eed60) = *(int *)(unaff_EDI + 0x1eed60) + 1;",
+        "after": "FUN_005656a0();"
+      },
+      {
+        "function": "0x0057D8B0",
+        "size_bytes": 762,
+        "line": 52,
+        "mode": "read_or_other",
+        "source": "bVar3 = *(int *)(param_1[0x78] + 0x1eed64) < 0x65;",
+        "before": "(iVar5 = FUN_0040ed80(), iVar5 == 0)) {",
+        "after": "if ((bVar3) && (param_1[0x7960] == 0)) {"
+      }
+    ],
+    "1eed60": [
+      {
+        "function": "0x00492710",
+        "size_bytes": 378,
+        "line": 24,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(unaff_ESI + 0x1eed60) = 0;",
+        "before": "*(undefined4 *)(unaff_ESI + 0x1eed64) = 0;",
+        "after": "*(undefined4 *)(unaff_ESI + 0x1eed68) = 0;"
+      },
+      {
+        "function": "0x00492890",
+        "size_bytes": 1251,
+        "line": 47,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(unaff_ESI + 0x1eed60) = 0;",
+        "before": "*(undefined4 *)(unaff_ESI + 0x1eed64) = 0;",
+        "after": "*(undefined4 *)(unaff_ESI + 0x1eed68) = 0;"
+      },
+      {
+        "function": "0x00492D80",
+        "size_bytes": 817,
+        "line": 44,
+        "mode": "possible_write",
+        "source": "*(int *)(in_EAX + 0x1eed60) = *(int *)(in_EAX + 0x1eed60) + 1;",
+        "before": "*(int *)(in_EAX + 0x1eed64) = *(int *)(in_EAX + 0x1eed64) + 1;",
+        "after": "if (*(int *)(in_EAX + 0x1eed64) % 10 != 0) {"
+      },
+      {
+        "function": "0x00492D80",
+        "size_bytes": 817,
+        "line": 88,
+        "mode": "possible_write",
+        "source": "*(int *)(in_EAX + 0x1eed60) = *(int *)(in_EAX + 0x1eed60) + 1;",
+        "before": "*(int *)(in_EAX + 0x1eed64) = *(int *)(in_EAX + 0x1eed64) + 1;",
+        "after": "if (*(int *)(in_EAX + 0x1eed64) % 10 == 0) {"
+      },
+      {
+        "function": "0x00492D80",
+        "size_bytes": 817,
+        "line": 118,
+        "mode": "possible_write",
+        "source": "*(int *)(in_EAX + 0x1eed60) = *(int *)(in_EAX + 0x1eed60) + 1;",
+        "before": "*(int *)(in_EAX + 0x1eed64) = *(int *)(in_EAX + 0x1eed64) + 1;",
+        "after": "if (*(int *)(in_EAX + 0x1eed64) % 10 != 0) {"
+      },
+      {
+        "function": "0x0049B280",
+        "size_bytes": 825,
+        "line": 48,
+        "mode": "possible_write",
+        "source": "*(int *)(unaff_EDI + 0x1eed60) = *(int *)(unaff_EDI + 0x1eed60) + 1;",
+        "before": "*(int *)(unaff_EDI + 0x1eed64) = *(int *)(unaff_EDI + 0x1eed64) + 1;",
+        "after": "if (*(int *)(unaff_EDI + 0x1eed64) % 10 == 0) {"
+      },
+      {
+        "function": "0x004B4710",
+        "size_bytes": 7548,
+        "line": 118,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(param_1 + 0x1eed60) = 0;",
+        "before": "case 1:",
+        "after": "break;"
+      }
+    ],
+    "1eed68": [
+      {
+        "function": "0x00492710",
+        "size_bytes": 378,
+        "line": 25,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(unaff_ESI + 0x1eed68) = 0;",
+        "before": "*(undefined4 *)(unaff_ESI + 0x1eed60) = 0;",
+        "after": "*(undefined1 *)(unaff_ESI + 0x1eec44) = 0;"
+      },
+      {
+        "function": "0x00492890",
+        "size_bytes": 1251,
+        "line": 48,
+        "mode": "possible_write",
+        "source": "*(undefined4 *)(unaff_ESI + 0x1eed68) = 0;",
+        "before": "*(undefined4 *)(unaff_ESI + 0x1eed60) = 0;",
+        "after": "if ((*(int *)(unaff_ESI + 0x1eedbc) == 0) &&"
+      },
+      {
+        "function": "0x00492D80",
+        "size_bytes": 817,
+        "line": 62,
+        "mode": "read_or_other",
+        "source": "(0 < *(int *)(in_EAX + 0x1eed68))) {",
+        "before": "if (((cVar2 == '\\0') && (cVar2 = FUN_00514c80(), cVar2 == '\\0')) ||",
+        "after": "iVar3 = FUN_00565730();"
+      },
+      {
+        "function": "0x0049B280",
+        "size_bytes": 825,
+        "line": 57,
+        "mode": "read_or_other",
+        "source": "if ((cVar1 == '\\0') || (0 < *(int *)(unaff_EDI + 0x1eed68))) {",
+        "before": "cVar1 = FUN_00514c80();",
+        "after": "iVar2 = FUN_00565730();"
+      }
+    ]
+  }
+}

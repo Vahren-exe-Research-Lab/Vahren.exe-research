@@ -1,0 +1,6081 @@
+{
+  "status": "DIRECT_UNIT_CLASS_SKILL_ROOT_WITNESSES_ONLY / NOT OLD GAMEPLAY",
+  "source_index": "WIKI_FULL_SKILL_INDEX_20261013.json.gz",
+  "known_skill_nodes": 16554,
+  "root_count": 2435,
+  "witnessed_nodes": 11953,
+  "orphans_with_witnesses": 16,
+  "orphan_witnesses": [
+    {
+      "tag": "Shakespeare_fire_wave_mag",
+      "missing_parent": "Shakespeare_fire_at",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:plazchen",
+            "source": "a_default/script/10_ユニット/120_スペシャル人材.dat",
+            "line": 688,
+            "field": "skill"
+          },
+          {
+            "owner": "unit:plazchen_dr",
+            "source": "a_default/script/3000_淫ドリームマッチ/DB264_Plazchen.dat",
+            "line": 1,
+            "field": "skill"
+          },
+          {
+            "owner": "unit:plazchen_264",
+            "source": "a_default/script/4000_AoW/unit_aow_264.dat",
+            "line": 378,
+            "field": "skill"
+          },
+          {
+            "owner": "unit:g_plazchen",
+            "source": "a_default/script/40_内政/unit_sakegyaku.dat",
+            "line": 49,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "p_cannon",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+              "line": 4249,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "Shakespeare_fire",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F51_榴弾・延焼_プレッツヒェン.dat",
+              "line": 3,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "Shakespeare_fire_cycle",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F51_榴弾・延焼_プレッツヒェン.dat",
+              "line": 47,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "Shakespeare_fire_cycle_eff",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F51_榴弾・延焼_プレッツヒェン.dat",
+              "line": 65,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "Shakespeare_fire_wave_mag",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F51_榴弾・延焼_プレッツヒェン.dat",
+              "line": 482,
+              "parent": "Shakespeare_fire_at"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          }
+        ]
+      },
+      "inbound_links": 7
+    },
+    {
+      "tag": "giant_swing_CountAfix",
+      "missing_parent": "giant_swing_CountBXX_base",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:nagatanien",
+            "source": "a_default/script/10_ユニット/110_イベント人材.dat",
+            "line": 2127,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "giant_swing",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 46,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "giant_swing_set_0",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 81,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_set_3_0",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 189,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_set_3_1",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 198,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_Knock_3",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 374,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_CountA00",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 5,
+              "parent": "giant_swing_CountAXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          },
+          {
+            "skill": "giant_swing_CountB00",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 10,
+              "parent": "giant_swing_CountBXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_CountA01",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 15,
+              "parent": "giant_swing_CountAXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_CountB01",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 20,
+              "parent": "giant_swing_CountBXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_CountA02",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 25,
+              "parent": "giant_swing_CountAXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_CountB02",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 30,
+              "parent": "giant_swing_CountBXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_CountAfix",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 50,
+              "parent": "giant_swing_CountBXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          }
+        ]
+      },
+      "inbound_links": 2
+    },
+    {
+      "tag": "astk_kirakira_pr2",
+      "missing_parent": "astk_kirakira_pr",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:tdnastk",
+            "source": "a_default/script/10_ユニット/B_5151_古代アステカ王国.dat",
+            "line": 1,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "astk_zan",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+              "line": 1844,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "astk_zan_pr3",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+              "line": 1954,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "just_next"
+          },
+          {
+            "skill": "astk_kirakira_pr_joi",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+              "line": 1916,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next"
+          },
+          {
+            "skill": "astk_kirakira_pr2",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+              "line": 1940,
+              "parent": "astk_kirakira_pr"
+            },
+            "effective_func": "UNSET",
+            "via": "next2"
+          }
+        ]
+      },
+      "inbound_links": 1
+    },
+    {
+      "tag": "astk_kirakira_pr3",
+      "missing_parent": "astk_kirakira_pr",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:tdnastk",
+            "source": "a_default/script/10_ユニット/B_5151_古代アステカ王国.dat",
+            "line": 1,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "astk_zan",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+              "line": 1844,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "astk_zan_pr3",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+              "line": 1954,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "just_next"
+          },
+          {
+            "skill": "astk_kirakira_pr_joi",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+              "line": 1916,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next"
+          },
+          {
+            "skill": "astk_kirakira_pr3",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+              "line": 1945,
+              "parent": "astk_kirakira_pr"
+            },
+            "effective_func": "UNSET",
+            "via": "next2"
+          }
+        ]
+      },
+      "inbound_links": 1
+    },
+    {
+      "tag": "giant_swing_CountA00",
+      "missing_parent": "giant_swing_CountAXX_base",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:nagatanien",
+            "source": "a_default/script/10_ユニット/110_イベント人材.dat",
+            "line": 2127,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "giant_swing",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 46,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "giant_swing_set_0",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 81,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_set_3_0",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 189,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_set_3_1",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 198,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_Knock_3",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 374,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_CountA00",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 5,
+              "parent": "giant_swing_CountAXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          }
+        ]
+      },
+      "inbound_links": 1
+    },
+    {
+      "tag": "giant_swing_CountA01",
+      "missing_parent": "giant_swing_CountAXX_base",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:nagatanien",
+            "source": "a_default/script/10_ユニット/110_イベント人材.dat",
+            "line": 2127,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "giant_swing",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 46,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "giant_swing_set_0",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 81,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_set_3_0",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 189,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_set_3_1",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 198,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_Knock_3",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 374,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_CountA00",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 5,
+              "parent": "giant_swing_CountAXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          },
+          {
+            "skill": "giant_swing_CountB00",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 10,
+              "parent": "giant_swing_CountBXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_CountA01",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 15,
+              "parent": "giant_swing_CountAXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          }
+        ]
+      },
+      "inbound_links": 1
+    },
+    {
+      "tag": "giant_swing_CountA02",
+      "missing_parent": "giant_swing_CountAXX_base",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:nagatanien",
+            "source": "a_default/script/10_ユニット/110_イベント人材.dat",
+            "line": 2127,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "giant_swing",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 46,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "giant_swing_set_0",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 81,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_set_3_0",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 189,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_set_3_1",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 198,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_Knock_3",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 374,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_CountA00",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 5,
+              "parent": "giant_swing_CountAXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          },
+          {
+            "skill": "giant_swing_CountB00",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 10,
+              "parent": "giant_swing_CountBXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_CountA01",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 15,
+              "parent": "giant_swing_CountAXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_CountB01",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 20,
+              "parent": "giant_swing_CountBXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_CountA02",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 25,
+              "parent": "giant_swing_CountAXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          }
+        ]
+      },
+      "inbound_links": 1
+    },
+    {
+      "tag": "giant_swing_CountB00",
+      "missing_parent": "giant_swing_CountBXX_base",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:nagatanien",
+            "source": "a_default/script/10_ユニット/110_イベント人材.dat",
+            "line": 2127,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "giant_swing",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 46,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "giant_swing_set_0",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 81,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_set_3_0",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 189,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_set_3_1",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 198,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_Knock_3",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 374,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_CountA00",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 5,
+              "parent": "giant_swing_CountAXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          },
+          {
+            "skill": "giant_swing_CountB00",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 10,
+              "parent": "giant_swing_CountBXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          }
+        ]
+      },
+      "inbound_links": 1
+    },
+    {
+      "tag": "giant_swing_CountB01",
+      "missing_parent": "giant_swing_CountBXX_base",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:nagatanien",
+            "source": "a_default/script/10_ユニット/110_イベント人材.dat",
+            "line": 2127,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "giant_swing",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 46,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "giant_swing_set_0",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 81,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_set_3_0",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 189,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_set_3_1",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 198,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_Knock_3",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 374,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_CountA00",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 5,
+              "parent": "giant_swing_CountAXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          },
+          {
+            "skill": "giant_swing_CountB00",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 10,
+              "parent": "giant_swing_CountBXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_CountA01",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 15,
+              "parent": "giant_swing_CountAXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_CountB01",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 20,
+              "parent": "giant_swing_CountBXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          }
+        ]
+      },
+      "inbound_links": 1
+    },
+    {
+      "tag": "giant_swing_CountB02",
+      "missing_parent": "giant_swing_CountBXX_base",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:nagatanien",
+            "source": "a_default/script/10_ユニット/110_イベント人材.dat",
+            "line": 2127,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "giant_swing",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 46,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "giant_swing_set_0",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 81,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_set_3_0",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 189,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_set_3_1",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 198,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_Knock_3",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 374,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_CountA00",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 5,
+              "parent": "giant_swing_CountAXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          },
+          {
+            "skill": "giant_swing_CountB00",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 10,
+              "parent": "giant_swing_CountBXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_CountA01",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 15,
+              "parent": "giant_swing_CountAXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_CountB01",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 20,
+              "parent": "giant_swing_CountBXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_CountA02",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 25,
+              "parent": "giant_swing_CountAXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_CountB02",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 30,
+              "parent": "giant_swing_CountBXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          }
+        ]
+      },
+      "inbound_links": 1
+    },
+    {
+      "tag": "giant_swing_CountBfix",
+      "missing_parent": "giant_swing_CountBXX_base",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:nagatanien",
+            "source": "a_default/script/10_ユニット/110_イベント人材.dat",
+            "line": 2127,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "giant_swing",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 46,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "giant_swing_set_0",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 81,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_set_3_0",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 189,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_set_3_1",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 198,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_Knock_3",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 374,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_CountA00",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 5,
+              "parent": "giant_swing_CountAXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          },
+          {
+            "skill": "giant_swing_CountB00",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 10,
+              "parent": "giant_swing_CountBXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_CountA01",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 15,
+              "parent": "giant_swing_CountAXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_CountB01",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 20,
+              "parent": "giant_swing_CountBXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_CountA02",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 25,
+              "parent": "giant_swing_CountAXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_CountB02",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 30,
+              "parent": "giant_swing_CountBXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_CountAfix",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 50,
+              "parent": "giant_swing_CountBXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_CountBfix",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 55,
+              "parent": "giant_swing_CountBXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          }
+        ]
+      },
+      "inbound_links": 1
+    },
+    {
+      "tag": "hqreireteicpu",
+      "missing_parent": "hqreifretei",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "class:hqreteicpu",
+            "source": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+            "line": 322,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "hqreireteicpu",
+            "declaration": {
+              "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+              "line": 347,
+              "parent": "hqreifretei"
+            },
+            "effective_func": "UNSET",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          }
+        ]
+      },
+      "inbound_links": 0
+    },
+    {
+      "tag": "m_magickbs_nt1_2",
+      "missing_parent": "m_ligh_js",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:siriris",
+            "source": "a_default/script/10_ユニット/26_クッキー☆原理主義党.dat",
+            "line": 580,
+            "field": "skill"
+          },
+          {
+            "owner": "unit:sangetsu",
+            "source": "a_default/script/10_ユニット/94_放浪_ホモガキ・養殖.dat",
+            "line": 561,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "m_magickbs",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat",
+              "line": 1625,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "m_magickbs_nt1",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat",
+              "line": 1642,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next2"
+          },
+          {
+            "skill": "m_magickbs_nt1_2",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat",
+              "line": 1668,
+              "parent": "m_ligh_js"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          }
+        ]
+      },
+      "inbound_links": 1
+    },
+    {
+      "tag": "m_mrandom_nt1_2",
+      "missing_parent": "m_ligh_js",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:swwmi",
+            "source": "a_default/script/10_ユニット/110_イベント人材.dat",
+            "line": 1421,
+            "field": "skill2"
+          },
+          {
+            "owner": "unit:5goisgod",
+            "source": "a_default/script/10_ユニット/B_11_閉店の日.dat",
+            "line": 2,
+            "field": "skill"
+          },
+          {
+            "owner": "unit:superswk23",
+            "source": "a_default/script/10_ユニット/B_23_リュージボス.dat",
+            "line": 1,
+            "field": "skill"
+          },
+          {
+            "owner": "unit:wagnas",
+            "source": "a_default/script/10_ユニット/B_23_リュージボス.dat",
+            "line": 1555,
+            "field": "skill"
+          },
+          {
+            "owner": "unit:goisgod",
+            "source": "a_default/script/10_ユニット/B_50_神の国.dat",
+            "line": 2,
+            "field": "skill"
+          },
+          {
+            "owner": "unit:g_superswk",
+            "source": "a_default/script/40_内政/unit_sakegyaku.dat",
+            "line": 36,
+            "field": "skill2"
+          },
+          {
+            "owner": "unit:wagnas_g",
+            "source": "a_default/script/40_内政/unit_sakegyaku.dat",
+            "line": 181,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "go_magic",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_50_GO.dat",
+              "line": 58,
+              "parent": "m_mrandom"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "m_mrandom_nt1",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F10_missile.dat",
+              "line": 4570,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next2"
+          },
+          {
+            "skill": "m_mrandom_nt1_2",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F10_missile.dat",
+              "line": 4579,
+              "parent": "m_ligh_js"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          }
+        ]
+      },
+      "inbound_links": 1
+    },
+    {
+      "tag": "sp_tusk_act1_kn",
+      "missing_parent": "tusk_gun_kn",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:johnny",
+            "source": "a_default/script/10_ユニット/24_ヒューマンダストクルセイダース.dat",
+            "line": 88,
+            "field": "learn"
+          },
+          {
+            "owner": "unit:johnny",
+            "source": "a_default/script/10_ユニット/24_ヒューマンダストクルセイダース.dat",
+            "line": 88,
+            "field": "learn"
+          },
+          {
+            "owner": "unit:johnny",
+            "source": "a_default/script/10_ユニット/24_ヒューマンダストクルセイダース.dat",
+            "line": 88,
+            "field": "learn"
+          },
+          {
+            "owner": "unit:johnny",
+            "source": "a_default/script/10_ユニット/24_ヒューマンダストクルセイダース.dat",
+            "line": 88,
+            "field": "learn"
+          },
+          {
+            "owner": "unit:johnny",
+            "source": "a_default/script/10_ユニット/24_ヒューマンダストクルセイダース.dat",
+            "line": 88,
+            "field": "learn"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_tusk_act1",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+              "line": 2298,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "sp_tusk_act1_nt0",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+              "line": 2324,
+              "parent": "h_gun"
+            },
+            "effective_func": "missile",
+            "via": "next"
+          },
+          {
+            "skill": "sp_tusk_act1_kn",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+              "line": 2343,
+              "parent": "tusk_gun_kn"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          }
+        ]
+      },
+      "inbound_links": 1
+    },
+    {
+      "tag": "syokubumper_arm_nt1",
+      "missing_parent": "sk_ns",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "class:c_syokupanman_gou",
+            "source": "a_default/script/30_スキル/F20_summon.dat",
+            "line": 15022,
+            "field": "skill"
+          },
+          {
+            "owner": "class:c_syokupanman_gou2",
+            "source": "a_default/script/30_スキル/F20_summon.dat",
+            "line": 15061,
+            "field": "skill"
+          },
+          {
+            "owner": "class:c_syokupanman_gou3",
+            "source": "a_default/script/30_スキル/F20_summon.dat",
+            "line": 15075,
+            "field": "skill"
+          },
+          {
+            "owner": "class:syokupanman_gou_summon",
+            "source": "a_default/script/30_スキル/F20_summon.dat",
+            "line": 15091,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "syokubumper",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F20_summon.dat",
+              "line": 15117,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "syokubumper_joi0e",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F20_summon.dat",
+              "line": 15176,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "syokubumper_arm_nt1",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F20_summon.dat",
+              "line": 15300,
+              "parent": "sk_ns"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          }
+        ]
+      },
+      "inbound_links": 1
+    },
+    {
+      "tag": "stove_fire_wave_mag",
+      "missing_parent": "stove_fire_at",
+      "witness": null,
+      "inbound_links": 7
+    },
+    {
+      "tag": "demo1_range2",
+      "missing_parent": "demo_range1",
+      "witness": null,
+      "inbound_links": 1
+    },
+    {
+      "tag": "giant_swing_CountB03",
+      "missing_parent": "giant_swing_CountBXX_base",
+      "witness": null,
+      "inbound_links": 1
+    },
+    {
+      "tag": "re_cannon_rts_nt1",
+      "missing_parent": "re_cannon_nt1",
+      "witness": null,
+      "inbound_links": 1
+    },
+    {
+      "tag": "re_cannon_rts_nt3",
+      "missing_parent": "re_cannon_nt3",
+      "witness": null,
+      "inbound_links": 1
+    },
+    {
+      "tag": "rtstocsam_mugen_nt",
+      "missing_parent": "rtstocsam",
+      "witness": null,
+      "inbound_links": 1
+    },
+    {
+      "tag": "sp_gogogo",
+      "missing_parent": "sp_nannkasugoino",
+      "witness": null,
+      "inbound_links": 1
+    },
+    {
+      "tag": "summon_togashi_0",
+      "missing_parent": "summon_togashi_base",
+      "witness": null,
+      "inbound_links": 1
+    },
+    {
+      "tag": "watecannon_w_pr3",
+      "missing_parent": "watecannon_w_pr1",
+      "witness": null,
+      "inbound_links": 1
+    },
+    {
+      "tag": "aqua_times_pr3",
+      "missing_parent": "aqua_times_pr1",
+      "witness": null,
+      "inbound_links": 0
+    },
+    {
+      "tag": "asasin_cream_weapon_glove_mag",
+      "missing_parent": "asasin_cream_weapon_grove_base",
+      "witness": null,
+      "inbound_links": 0
+    },
+    {
+      "tag": "giant_swing_CountA03",
+      "missing_parent": "giant_swing_CountAXX_base",
+      "witness": null,
+      "inbound_links": 0
+    },
+    {
+      "tag": "hanzo_cream_weapon_glove_mag",
+      "missing_parent": "hanzo_cream_weapon_grove_base",
+      "witness": null,
+      "inbound_links": 0
+    },
+    {
+      "tag": "heal_clown_mprec",
+      "missing_parent": "sing_mprec",
+      "witness": null,
+      "inbound_links": 0
+    },
+    {
+      "tag": "rmla_ch_old_yari_pr",
+      "missing_parent": "rmla_yari_pr",
+      "witness": null,
+      "inbound_links": 0
+    },
+    {
+      "tag": "rtstocsamsp3_hub",
+      "missing_parent": "rtstocsamsp5",
+      "witness": null,
+      "inbound_links": 0
+    },
+    {
+      "tag": "s_defbarboat_nt2",
+      "missing_parent": "s_defbar_nt2",
+      "witness": null,
+      "inbound_links": 0
+    },
+    {
+      "tag": "s_defbarboat_nt3",
+      "missing_parent": "s_defbar_nt3",
+      "witness": null,
+      "inbound_links": 0
+    },
+    {
+      "tag": "ss_rmla_ch_old_yari_pr",
+      "missing_parent": "ss_rmla_yari_pr",
+      "witness": null,
+      "inbound_links": 0
+    },
+    {
+      "tag": "testskill",
+      "missing_parent": "sp_nannkasugoino",
+      "witness": null,
+      "inbound_links": 0
+    },
+    {
+      "tag": "watecannon_pr3",
+      "missing_parent": "watecannon_pr1",
+      "witness": null,
+      "inbound_links": 0
+    }
+  ],
+  "unresolved_target_witnesses": [
+    {
+      "target": "b_whip_js",
+      "direct_occurrences": 6,
+      "source": "b_hsnsi",
+      "missing_link_field": "just_next",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "class:hsnsi4",
+            "source": "a_default/script/20_クラス/B_25_ジトメ秘密教団.dat",
+            "line": 165,
+            "field": "skill"
+          },
+          {
+            "owner": "class:hsnsi_r",
+            "source": "a_default/script/5000_ランダムシナリオ/RB_ボスクラス.dat",
+            "line": 1153,
+            "field": "skill"
+          },
+          {
+            "owner": "class:hsnsi_r2",
+            "source": "a_default/script/5000_ランダムシナリオ/RB_ボスクラス.dat",
+            "line": 1173,
+            "field": "skill"
+          },
+          {
+            "owner": "class:hsnsi_r3",
+            "source": "a_default/script/5000_ランダムシナリオ/RB_ボスクラス.dat",
+            "line": 1188,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "b_hsnsi",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+              "line": 3502,
+              "parent": "b_whip"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          }
+        ]
+      }
+    },
+    {
+      "target": "eff_jinzaisp",
+      "direct_occurrences": 6,
+      "source": "bsp_masupa5_pair",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:bluebiim",
+            "source": "a_default/script/10_ユニット/120_スペシャル人材.dat",
+            "line": 210,
+            "field": "skill2"
+          },
+          {
+            "owner": "unit:ginryu23",
+            "source": "a_default/script/10_ユニット/120_スペシャル人材.dat",
+            "line": 410,
+            "field": "skill2"
+          },
+          {
+            "owner": "unit:tanaka",
+            "source": "a_default/script/10_ユニット/23_リュージ騎士団.dat",
+            "line": 90,
+            "field": "skill2"
+          },
+          {
+            "owner": "unit:kakuryo1",
+            "source": "a_default/script/10_ユニット/23_リュージ騎士団.dat",
+            "line": 180,
+            "field": "skill2"
+          },
+          {
+            "owner": "unit:b_tanaka",
+            "source": "a_default/script/10_ユニット/B_2323_リュージ騎士団.dat",
+            "line": 1,
+            "field": "skill2"
+          },
+          {
+            "owner": "unit:b_kakuryo1",
+            "source": "a_default/script/10_ユニット/B_2323_リュージ騎士団.dat",
+            "line": 94,
+            "field": "skill2"
+          },
+          {
+            "owner": "class:a_bwd_23",
+            "source": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+            "line": 1648,
+            "field": "skill"
+          },
+          {
+            "owner": "class:a_bwd",
+            "source": "a_default/script/32_ボススキル/B_2323_リュージ騎士団.dat",
+            "line": 390,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "bsp_masupa5",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+              "line": 1204,
+              "parent": null
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "bsp_masupa5_pair",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+              "line": 1623,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "pair_next"
+          }
+        ]
+      }
+    },
+    {
+      "target": "diyushi_dam1",
+      "direct_occurrences": 4,
+      "source": "diyusi_nt6",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:diyusi",
+            "source": "a_default/script/10_ユニット/31_GUC浄化機関.dat",
+            "line": 5,
+            "field": "learn"
+          },
+          {
+            "owner": "unit:diyusi",
+            "source": "a_default/script/10_ユニット/31_GUC浄化機関.dat",
+            "line": 5,
+            "field": "learn"
+          },
+          {
+            "owner": "class:diyusis",
+            "source": "a_default/script/32_ボススキル/B_26old_第二革命企画.dat",
+            "line": 636,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_diyusi",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_必殺_31_32_ぢゆし～サムソン.dat",
+              "line": 6,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "diyusi_dodai",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_必殺_31_32_ぢゆし～サムソン.dat",
+              "line": 85,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "diyusi_nt1",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_必殺_31_32_ぢゆし～サムソン.dat",
+              "line": 116,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "diyusi_nt5",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_必殺_31_32_ぢゆし～サムソン.dat",
+              "line": 403,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "senkou2",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_必殺_31_32_ぢゆし～サムソン.dat",
+              "line": 430,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "diyusi_nt6",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_必殺_31_32_ぢゆし～サムソン.dat",
+              "line": 631,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next2"
+          }
+        ]
+      }
+    },
+    {
+      "target": "giant_swing_CountB_Eff",
+      "direct_occurrences": 3,
+      "source": "giant_swing_CountA00",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:nagatanien",
+            "source": "a_default/script/10_ユニット/110_イベント人材.dat",
+            "line": 2127,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "giant_swing",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 46,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "giant_swing_set_0",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 81,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_set_3_0",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 189,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_set_3_1",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 198,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_Knock_3",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+              "line": 374,
+              "parent": "giant_swing_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "giant_swing_CountA00",
+            "declaration": {
+              "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+              "line": 5,
+              "parent": "giant_swing_CountAXX_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          }
+        ]
+      }
+    },
+    {
+      "target": "ncnc_cannon_nt3_ef2",
+      "direct_occurrences": 3,
+      "source": "ncnc_cannon_nt2",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "class:ncnc_base_sub2",
+            "source": "a_default/script/20_クラス/B_525_神聖UNEI帝国.dat",
+            "line": 395,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "ncnc_cannon",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+              "line": 6173,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "ncnc_cannon_nt1",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+              "line": 6203,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "ncnc_cannon_nt2",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+              "line": 6215,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          }
+        ]
+      }
+    },
+    {
+      "target": "ef_rmla_yari",
+      "direct_occurrences": 2,
+      "source": "ss_rmla_ch_old_js",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:drama_a101A",
+            "source": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/battle/unit_drama.dat",
+            "line": 253,
+            "field": "skill"
+          },
+          {
+            "owner": "class:self_ss1013drama",
+            "source": "a_default/script/50_その他新システム/self_summon_classes.dat",
+            "line": 2762,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "ss_rmla_ch_old",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F12_charge.dat",
+              "line": 1974,
+              "parent": "charge"
+            },
+            "effective_func": "charge",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "ss_rmla_ch_old_js_joi",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F12_charge.dat",
+              "line": 1995,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          },
+          {
+            "skill": "ss_rmla_ch_old_js",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F12_charge.dat",
+              "line": 2001,
+              "parent": null
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          }
+        ]
+      }
+    },
+    {
+      "target": "ef_rmla_yari0",
+      "direct_occurrences": 2,
+      "source": "ss_rmla_ch_old_js",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:drama_a101A",
+            "source": "a_default/script/2026_イベント_旧版クッキー☆原理主義党/battle/unit_drama.dat",
+            "line": 253,
+            "field": "skill"
+          },
+          {
+            "owner": "class:self_ss1013drama",
+            "source": "a_default/script/50_その他新システム/self_summon_classes.dat",
+            "line": 2762,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "ss_rmla_ch_old",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F12_charge.dat",
+              "line": 1974,
+              "parent": "charge"
+            },
+            "effective_func": "charge",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "ss_rmla_ch_old_js_joi",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F12_charge.dat",
+              "line": 1995,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          },
+          {
+            "skill": "ss_rmla_ch_old_js",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F12_charge.dat",
+              "line": 2001,
+              "parent": null
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          }
+        ]
+      }
+    },
+    {
+      "target": "monzetsu_fire_ensyou_mag",
+      "direct_occurrences": 2,
+      "source": "monzetsu_fire_ensyou_eff_fake",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "class:firero",
+            "source": "a_default/script/30_スキル/F20_summon.dat",
+            "line": 4719,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "firerosp_zan",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F20_summon.dat",
+              "line": 4756,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "firerosp_zan_fire",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F20_summon.dat",
+              "line": 4809,
+              "parent": "firerosp_zan"
+            },
+            "effective_func": "missile",
+            "via": "just_next"
+          },
+          {
+            "skill": "firero_fire_cycle_hit",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F20_summon.dat",
+              "line": 4890,
+              "parent": "monzetsu_fire_cycle_hit"
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          },
+          {
+            "skill": "monzetsu_fire_cycle_at",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F50_延焼_究極悶絶少年.dat",
+              "line": 341,
+              "parent": "monzetsu_fire_cycle_eff"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "monzetsu_fire_chainA_fin_00",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F50_延焼_究極悶絶少年.dat",
+              "line": 483,
+              "parent": "monzetsu_fire_chainA_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          },
+          {
+            "skill": "monzetsu_fire_chainB_fin_00",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F50_延焼_究極悶絶少年.dat",
+              "line": 488,
+              "parent": "monzetsu_fire_chainB_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "monzetsu_fire_chainA_fin_01",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F50_延焼_究極悶絶少年.dat",
+              "line": 494,
+              "parent": "monzetsu_fire_chainA_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "monzetsu_fire_chainB_fin_01",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F50_延焼_究極悶絶少年.dat",
+              "line": 499,
+              "parent": "monzetsu_fire_chainB_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "monzetsu_fire_chainA_fin_fin",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F50_延焼_究極悶絶少年.dat",
+              "line": 601,
+              "parent": "monzetsu_fire_chainA_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "monzetsu_fire_chainB_fin_fin",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F50_延焼_究極悶絶少年.dat",
+              "line": 606,
+              "parent": "monzetsu_fire_chainB_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "monzetsu_fire_ensyou_join_fin",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F50_延焼_究極悶絶少年.dat",
+              "line": 617,
+              "parent": "monzetsu_fire_ensyou_join_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "monzetsu_fire_ensyou_eff_fake",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F50_延焼_究極悶絶少年.dat",
+              "line": 304,
+              "parent": "monzetsu_fire_ensyou_eff_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next2"
+          }
+        ]
+      }
+    },
+    {
+      "target": "e893zan1_nt0",
+      "direct_occurrences": 2,
+      "source": "gun_kata_joi2",
+      "missing_link_field": "next2",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:vvan",
+            "source": "a_default/script/10_ユニット/20_VVANグループ.dat",
+            "line": 1,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "gun_kata",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_16_20_ALC一派～VVAN.dat",
+              "line": 2504,
+              "parent": "e893zan0"
+            },
+            "effective_func": "sword",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "gun_kata_joi2",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_16_20_ALC一派～VVAN.dat",
+              "line": 2527,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next2"
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_bio_so",
+      "direct_occurrences": 2,
+      "source": "sp_bio2",
+      "missing_link_field": "pair_next",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:bio",
+            "source": "a_default/script/10_ユニット/08_レスリング帝国.dat",
+            "line": 147,
+            "field": "skill"
+          },
+          {
+            "owner": "unit:bio",
+            "source": "a_default/script/10_ユニット/08_レスリング帝国.dat",
+            "line": 147,
+            "field": "leader_skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_bio2",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_必殺_6_10_ヒゲクマ～スカーレット.dat",
+              "line": 682,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          }
+        ]
+      }
+    },
+    {
+      "target": "b_tsuri_nt7e",
+      "direct_occurrences": 2,
+      "source": "sp_tsuri_nt3",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:tsuri",
+            "source": "a_default/script/10_ユニット/91_放浪_クッキー☆.dat",
+            "line": 151,
+            "field": "learn"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_tsuri",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+              "line": 5787,
+              "parent": "b_tsuri"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "sp_tsuri_nt1",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+              "line": 5811,
+              "parent": "b_tsuri_nt1"
+            },
+            "effective_func": "UNSET",
+            "via": "next2"
+          },
+          {
+            "skill": "sp_tsuri_nt2",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+              "line": 5815,
+              "parent": "b_tsuri_nt2"
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          },
+          {
+            "skill": "sp_tsuri_nt3",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+              "line": 5822,
+              "parent": "b_tsuri_nt3"
+            },
+            "effective_func": "missile",
+            "via": "next2"
+          }
+        ]
+      }
+    },
+    {
+      "target": "sww_whip_js",
+      "direct_occurrences": 2,
+      "source": "sww23_whip",
+      "missing_link_field": "just_next",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:superswk23",
+            "source": "a_default/script/10_ユニット/B_23_リュージボス.dat",
+            "line": 1,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sww23_whip",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 16412,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          }
+        ]
+      }
+    },
+    {
+      "target": "s_cannon_pr2",
+      "direct_occurrences": 2,
+      "source": "s_cannon_asp635",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "class:asp635",
+            "source": "a_default/script/45_内政_防衛兵器/siege_class_SP63_鎌倉.dat",
+            "line": 2,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "s_cannon_asp635",
+            "declaration": {
+              "file": "a_default/script/45_内政_防衛兵器/siege_skill_SP63_鎌倉.dat",
+              "line": 2,
+              "parent": "s_cannon_shaman"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          }
+        ]
+      }
+    },
+    {
+      "target": "s_cannon_pr4",
+      "direct_occurrences": 2,
+      "source": "s_cannon_nt4",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "class:asp635",
+            "source": "a_default/script/45_内政_防衛兵器/siege_class_SP63_鎌倉.dat",
+            "line": 2,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "s_cannon_asp635",
+            "declaration": {
+              "file": "a_default/script/45_内政_防衛兵器/siege_skill_SP63_鎌倉.dat",
+              "line": 2,
+              "parent": "s_cannon_shaman"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "s_cannon_nt1",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 9826,
+              "parent": "b_cannon_nt1"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "s_cannon_nt3",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 9865,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "s_cannon_nt4",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 9904,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next2"
+          }
+        ]
+      }
+    },
+    {
+      "target": "sake_rocket_bomber_pr4",
+      "direct_occurrences": 2,
+      "source": "sake_rocket_bomber_nt4",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:sakenomiga",
+            "source": "a_default/script/10_ユニット/B_23_リュージボス.dat",
+            "line": 313,
+            "field": "skill2"
+          },
+          {
+            "owner": "unit:sakenomiga_r",
+            "source": "a_default/script/5000_ランダムシナリオ/RB_ボス人材.dat",
+            "line": 1087,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sakenomiga_rocket",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 10376,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "sake_rocket_nt0b_left",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 10418,
+              "parent": "eff_sake_joi"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "sake_rocket_nt0b2_left",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 10427,
+              "parent": "eff_sake_joi"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "sake_rocket_nt0_left",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 10434,
+              "parent": "eff_sake_joi"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "sake_rocket_nt1919_left",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 10469,
+              "parent": "eff_sake_joi"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "sake_rocket_nt2_left",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 10519,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next2"
+          },
+          {
+            "skill": "sake_rocket_bomb_left",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 10635,
+              "parent": "sake_rocket_panchi_left"
+            },
+            "effective_func": "missile",
+            "via": "next2"
+          },
+          {
+            "skill": "sake_rocket_bomber_nt0",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 11550,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          },
+          {
+            "skill": "sake_rocket_bomber_nt1",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 11557,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "sake_rocket_bomber_nt3",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 11599,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next"
+          },
+          {
+            "skill": "sake_rocket_bomber_nt4",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 11628,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next2"
+          }
+        ]
+      }
+    },
+    {
+      "target": "sakenomiga_summon_pr0",
+      "direct_occurrences": 2,
+      "source": "sakenomiga_summon",
+      "missing_link_field": "pair_next",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:sakenomiga",
+            "source": "a_default/script/10_ユニット/B_23_リュージボス.dat",
+            "line": 313,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sakenomiga_summon",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 11957,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          }
+        ]
+      }
+    },
+    {
+      "target": "b_cannon_apcr_ol",
+      "direct_occurrences": 1,
+      "source": "b_cannon_tiger_apcr_new",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "class:tiger",
+            "source": "a_default/script/20_クラス/24_26_ONDISK_二軍_原理.dat",
+            "line": 1213,
+            "field": "skill"
+          },
+          {
+            "owner": "class:tiger2",
+            "source": "a_default/script/20_クラス/24_26_ONDISK_二軍_原理.dat",
+            "line": 1262,
+            "field": "skill"
+          },
+          {
+            "owner": "class:tiger3",
+            "source": "a_default/script/20_クラス/24_26_ONDISK_二軍_原理.dat",
+            "line": 1278,
+            "field": "skill"
+          },
+          {
+            "owner": "class:tiger4",
+            "source": "a_default/script/20_クラス/24_26_ONDISK_二軍_原理.dat",
+            "line": 1295,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "b_cannon_tiger_apcr_new",
+            "declaration": {
+              "file": "a_default/script/30_スキル/C_必殺_クラス専用.dat",
+              "line": 1450,
+              "parent": "b_cannon_tiger_new"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          }
+        ]
+      }
+    },
+    {
+      "target": "hermit_whip_js",
+      "direct_occurrences": 1,
+      "source": "hermit_whip",
+      "missing_link_field": "just_next",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "class:a2403",
+            "source": "a_default/script/20_クラス/24_26_ONDISK_二軍_原理.dat",
+            "line": 68,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "hermit_whip",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F10_missile_鞭.dat",
+              "line": 152,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          }
+        ]
+      }
+    },
+    {
+      "target": "icg_ch1_js",
+      "direct_occurrences": 1,
+      "source": "icg_ch0_joi",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "class:a212",
+            "source": "a_default/script/20_クラス/21_23_材料屋_HSI_リュージ.dat",
+            "line": 14,
+            "field": "skill"
+          },
+          {
+            "owner": "class:a2122",
+            "source": "a_default/script/20_クラス/21_23_材料屋_HSI_リュージ.dat",
+            "line": 45,
+            "field": "skill"
+          },
+          {
+            "owner": "class:a2123",
+            "source": "a_default/script/20_クラス/21_23_材料屋_HSI_リュージ.dat",
+            "line": 60,
+            "field": "skill"
+          },
+          {
+            "owner": "class:ene_a212",
+            "source": "a_default/script/20_クラス/Enemy_敵AI用クラス.dat",
+            "line": 303,
+            "field": "skill"
+          },
+          {
+            "owner": "class:ene_a2122",
+            "source": "a_default/script/20_クラス/Enemy_敵AI用クラス.dat",
+            "line": 314,
+            "field": "skill"
+          },
+          {
+            "owner": "class:ene_a2123",
+            "source": "a_default/script/20_クラス/Enemy_敵AI用クラス.dat",
+            "line": 325,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "icg_ch0",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F11_sword.dat",
+              "line": 3590,
+              "parent": "ch0"
+            },
+            "effective_func": "sword",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "icg_ch0_joi",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F11_sword.dat",
+              "line": 3597,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          }
+        ]
+      }
+    },
+    {
+      "target": "whip_js",
+      "direct_occurrences": 1,
+      "source": "lick",
+      "missing_link_field": "just_next",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "class:brrng",
+            "source": "a_default/script/30_スキル/F20_summon.dat",
+            "line": 7492,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "lick",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F20_summon.dat",
+              "line": 7629,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          }
+        ]
+      }
+    },
+    {
+      "target": "ef_yuwaku",
+      "direct_occurrences": 1,
+      "source": "yuwaku1_nt2",
+      "missing_link_field": "next",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:pierrot",
+            "source": "a_default/script/30_スキル/F20_summon.dat",
+            "line": 11305,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "yuwaku1",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F20_summon.dat",
+              "line": 11665,
+              "parent": "sk_sw"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "yuwaku1_nt2",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F20_summon.dat",
+              "line": 11719,
+              "parent": "yuwaku1"
+            },
+            "effective_func": "missile",
+            "via": "just_next"
+          }
+        ]
+      }
+    },
+    {
+      "target": "rfire_cannon_pr2b",
+      "direct_occurrences": 1,
+      "source": "rdfire_cannon_pr2",
+      "missing_link_field": "next",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "class:reyes",
+            "source": "a_default/script/30_スキル/F20_summon.dat",
+            "line": 12817,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "rdfire_cannon",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F20_summon.dat",
+              "line": 12886,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "rdfire_cannon_pr2",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F20_summon.dat",
+              "line": 13092,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          }
+        ]
+      }
+    },
+    {
+      "target": "monzetsu_fire_ensyou_eff_fake_at",
+      "direct_occurrences": 1,
+      "source": "monzetsu_fire_ensyou_eff_fake",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "class:firero",
+            "source": "a_default/script/30_スキル/F20_summon.dat",
+            "line": 4719,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "firerosp_zan",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F20_summon.dat",
+              "line": 4756,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "firerosp_zan_fire",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F20_summon.dat",
+              "line": 4809,
+              "parent": "firerosp_zan"
+            },
+            "effective_func": "missile",
+            "via": "just_next"
+          },
+          {
+            "skill": "firero_fire_cycle_hit",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F20_summon.dat",
+              "line": 4890,
+              "parent": "monzetsu_fire_cycle_hit"
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          },
+          {
+            "skill": "monzetsu_fire_cycle_at",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F50_延焼_究極悶絶少年.dat",
+              "line": 341,
+              "parent": "monzetsu_fire_cycle_eff"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "monzetsu_fire_chainA_fin_00",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F50_延焼_究極悶絶少年.dat",
+              "line": 483,
+              "parent": "monzetsu_fire_chainA_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          },
+          {
+            "skill": "monzetsu_fire_chainB_fin_00",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F50_延焼_究極悶絶少年.dat",
+              "line": 488,
+              "parent": "monzetsu_fire_chainB_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "monzetsu_fire_chainA_fin_01",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F50_延焼_究極悶絶少年.dat",
+              "line": 494,
+              "parent": "monzetsu_fire_chainA_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "monzetsu_fire_chainB_fin_01",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F50_延焼_究極悶絶少年.dat",
+              "line": 499,
+              "parent": "monzetsu_fire_chainB_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "monzetsu_fire_chainA_fin_fin",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F50_延焼_究極悶絶少年.dat",
+              "line": 601,
+              "parent": "monzetsu_fire_chainA_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "monzetsu_fire_chainB_fin_fin",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F50_延焼_究極悶絶少年.dat",
+              "line": 606,
+              "parent": "monzetsu_fire_chainB_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "monzetsu_fire_ensyou_join_fin",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F50_延焼_究極悶絶少年.dat",
+              "line": 617,
+              "parent": "monzetsu_fire_ensyou_join_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "monzetsu_fire_ensyou_eff_fake",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F50_延焼_究極悶絶少年.dat",
+              "line": 304,
+              "parent": "monzetsu_fire_ensyou_eff_base"
+            },
+            "effective_func": "UNSET",
+            "via": "next2"
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_udk_pr1",
+      "direct_occurrences": 1,
+      "source": "masu3_pr0",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:udk",
+            "source": "a_default/script/10_ユニット/01_マリナーズ傭兵団.dat",
+            "line": 2,
+            "field": "skill"
+          },
+          {
+            "owner": "unit:bidairobo_udk5",
+            "source": "a_default/script/10_ユニット/05_ヴォイス・ドラマ革命企画.dat",
+            "line": 1336,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_masu3",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+              "line": 111,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "masu3_pr0",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+              "line": 161,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "pair_next"
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_masupa5_pair_o",
+      "direct_occurrences": 1,
+      "source": "sp_masupa5",
+      "missing_link_field": "pair_next",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:superhayakuchi",
+            "source": "a_default/script/10_ユニット/21_お菓子作りの材料屋さん.dat",
+            "line": 137,
+            "field": "learn"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_masupa5",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+              "line": 685,
+              "parent": null
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_masupa5_nt5",
+      "direct_occurrences": 1,
+      "source": "sp_masupa5_nt0_check",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:superhayakuchi",
+            "source": "a_default/script/10_ユニット/21_お菓子作りの材料屋さん.dat",
+            "line": 137,
+            "field": "learn"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_masupa5",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+              "line": 685,
+              "parent": null
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "sp_masupa5_nt0_check",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+              "line": 714,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_masupa5_nt6",
+      "direct_occurrences": 1,
+      "source": "sp_masupa5_nt0_check",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:superhayakuchi",
+            "source": "a_default/script/10_ユニット/21_お菓子作りの材料屋さん.dat",
+            "line": 137,
+            "field": "learn"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_masupa5",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+              "line": 685,
+              "parent": null
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "sp_masupa5_nt0_check",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+              "line": 714,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_ndk2_ef1_flash1_nt",
+      "direct_occurrences": 1,
+      "source": "sp_ndk2_ef1_flash1",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:yys_dummy",
+            "source": "a_default/script/30_スキル/F20_summon.dat",
+            "line": 11487,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "kongyo",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F20_summon.dat",
+              "line": 11503,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "sp_ndk2_bomb0",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F61_核兵器.dat",
+              "line": 182,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_ndk2_ef1",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F61_核兵器.dat",
+              "line": 444,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_ndk2_ef1_flash1",
+            "declaration": {
+              "file": "a_default/script/30_スキル/F61_核兵器.dat",
+              "line": 513,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          }
+        ]
+      }
+    },
+    {
+      "target": "turu_whip_js",
+      "direct_occurrences": 1,
+      "source": "turu_whip",
+      "missing_link_field": "just_next",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:hsgdn",
+            "source": "a_default/script/10_ユニット/05_ヴォイス・ドラマ革命企画.dat",
+            "line": 1085,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "turu_whip",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+              "line": 4152,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          }
+        ]
+      }
+    },
+    {
+      "target": "b_milk_nt3_3",
+      "direct_occurrences": 1,
+      "source": "b_milk_nt3",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:milk",
+            "source": "a_default/script/10_ユニット/21_お菓子作りの材料屋さん.dat",
+            "line": 507,
+            "field": "learn"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "b_milk",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+              "line": 671,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "b_milk_nt3",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+              "line": 744,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          }
+        ]
+      }
+    },
+    {
+      "target": "ef_yari1",
+      "direct_occurrences": 1,
+      "source": "nikuoja_yari1_nt3",
+      "missing_link_field": "next",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:nikuoja",
+            "source": "a_default/script/10_ユニット/25_オーバック・カンパニー.dat",
+            "line": 95,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "nikuoja_yari1",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+              "line": 3098,
+              "parent": "sk_sw"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "nikuoja_yari1_joi",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+              "line": 3140,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          },
+          {
+            "skill": "nikuoja_yari1_nt3",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+              "line": 3164,
+              "parent": "nikuoja_yari1_nt1"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          }
+        ]
+      }
+    },
+    {
+      "target": "eff_sp_abesan_nt3_2c",
+      "direct_occurrences": 1,
+      "source": "eff_sp_abesan_nt3_2b",
+      "missing_link_field": "next",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:abesan",
+            "source": "a_default/script/10_ユニット/110_イベント人材.dat",
+            "line": 256,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_abesan",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+              "line": 2189,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "eff_sp_abesan",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+              "line": 2247,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "pair_next"
+          },
+          {
+            "skill": "eff_sp_abesan_nt3",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+              "line": 2300,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "eff_sp_abesan_nt3_2b",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+              "line": 2336,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          }
+        ]
+      }
+    },
+    {
+      "target": "jma_ligh_pr2",
+      "direct_occurrences": 1,
+      "source": "jma_ligh_nt0",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:jonouchi",
+            "source": "a_default/script/10_ユニット/92_放浪_ レスリング.dat",
+            "line": 151,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "jma_ligh",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+              "line": 7290,
+              "parent": "m_ligh"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "jma_ligh_nt0",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+              "line": 7300,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          }
+        ]
+      }
+    },
+    {
+      "target": "mcy_grenade_pr3",
+      "direct_occurrences": 1,
+      "source": "mcy_grenade_pr0",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:mcy",
+            "source": "a_default/script/10_ユニット/94_放浪_ホモガキ・養殖.dat",
+            "line": 2,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "mcy_grenade",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+              "line": 10940,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "mcy_grenade_pr0",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+              "line": 11073,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "pair_next"
+          }
+        ]
+      }
+    },
+    {
+      "target": "chefswk_whip_js",
+      "direct_occurrences": 1,
+      "source": "chefswk_whip",
+      "missing_link_field": "just_next",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:chefswk",
+            "source": "a_default/script/10_ユニット/91_放浪_クッキー☆.dat",
+            "line": 783,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "chefswk_whip",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+              "line": 12458,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          }
+        ]
+      }
+    },
+    {
+      "target": "biim23_summon_nt4bc",
+      "direct_occurrences": 1,
+      "source": "biim23_summon_nt4",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:ginryu23",
+            "source": "a_default/script/10_ユニット/120_スペシャル人材.dat",
+            "line": 410,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "biim_summon_23",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+              "line": 1841,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "biim23_summon_joi",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+              "line": 1878,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          },
+          {
+            "skill": "biim23_summon_nt4",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+              "line": 2057,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          }
+        ]
+      }
+    },
+    {
+      "target": "u23_masupa5_nt5",
+      "direct_occurrences": 1,
+      "source": "u23_masupa5",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:udrgn23",
+            "source": "a_default/script/10_ユニット/120_スペシャル人材.dat",
+            "line": 499,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "u23_masupa5",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+              "line": 2705,
+              "parent": null
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          }
+        ]
+      }
+    },
+    {
+      "target": "u23_masupa5_nt6",
+      "direct_occurrences": 1,
+      "source": "u23_masupa5",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:udrgn23",
+            "source": "a_default/script/10_ユニット/120_スペシャル人材.dat",
+            "line": 499,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "u23_masupa5",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+              "line": 2705,
+              "parent": null
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          }
+        ]
+      }
+    },
+    {
+      "target": "k_cannon_nt2",
+      "direct_occurrences": 1,
+      "source": "k_cannon_nt3",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:skr",
+            "source": "a_default/script/10_ユニット/10_スカーレット伯.dat",
+            "line": 1,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "kouma_cannon",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+              "line": 980,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "k_cannon_js",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+              "line": 1015,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "k_cannon_nt3",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+              "line": 1053,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          }
+        ]
+      }
+    },
+    {
+      "target": "k_cannon_nt4_nt2",
+      "direct_occurrences": 1,
+      "source": "k_cannon_nt4",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:skr",
+            "source": "a_default/script/10_ユニット/10_スカーレット伯.dat",
+            "line": 1,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "kouma_cannon",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+              "line": 980,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "k_cannon_js",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+              "line": 1015,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "k_cannon_nt3",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+              "line": 1053,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "k_cannon_nt4",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+              "line": 1072,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          }
+        ]
+      }
+    },
+    {
+      "target": "k_cannon_nt5_nt2",
+      "direct_occurrences": 1,
+      "source": "k_cannon_nt5",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:skr",
+            "source": "a_default/script/10_ユニット/10_スカーレット伯.dat",
+            "line": 1,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "kouma_cannon",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+              "line": 980,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "k_cannon_js",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+              "line": 1015,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "k_cannon_nt5",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+              "line": 1101,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          }
+        ]
+      }
+    },
+    {
+      "target": "k_cannon_nt6_nt2",
+      "direct_occurrences": 1,
+      "source": "k_cannon_nt6",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:skr",
+            "source": "a_default/script/10_ユニット/10_スカーレット伯.dat",
+            "line": 1,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "kouma_cannon",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+              "line": 980,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "k_cannon_js",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+              "line": 1015,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "k_cannon_nt6",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+              "line": 1130,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          }
+        ]
+      }
+    },
+    {
+      "target": "k_cannon_nt7_nt2",
+      "direct_occurrences": 1,
+      "source": "k_cannon_nt7",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:skr",
+            "source": "a_default/script/10_ユニット/10_スカーレット伯.dat",
+            "line": 1,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "kouma_cannon",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+              "line": 980,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "k_cannon_js",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+              "line": 1015,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "k_cannon_nt7",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+              "line": 1158,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_clown_luna_pr0",
+      "direct_occurrences": 1,
+      "source": "sp_clown_luna",
+      "missing_link_field": "pair_next",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:cl",
+            "source": "a_default/script/10_ユニット/12_クラピース労働project.dat",
+            "line": 2,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_clown_luna",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+              "line": 1709,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          }
+        ]
+      }
+    },
+    {
+      "target": "hns_ganban_nt9",
+      "direct_occurrences": 1,
+      "source": "sp_hns_act4_nt4",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:alc",
+            "source": "a_default/script/10_ユニット/16_ALC一派.dat",
+            "line": 2,
+            "field": "learn"
+          },
+          {
+            "owner": "unit:alc",
+            "source": "a_default/script/10_ユニット/16_ALC一派.dat",
+            "line": 2,
+            "field": "learn"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_alc_kamanaguri",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_必殺_16_20_ALC一派～VVAN.dat",
+              "line": 351,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "sp_alc_kamanaguri_nt1",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_必殺_16_20_ALC一派～VVAN.dat",
+              "line": 426,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_hns_act4_nt4",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_必殺_16_20_ALC一派～VVAN.dat",
+              "line": 550,
+              "parent": "sp_ganban_nt1"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_masahiko_pr0",
+      "direct_occurrences": 1,
+      "source": "sp_masahiko",
+      "missing_link_field": "pair_next",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:masahiko",
+            "source": "a_default/script/10_ユニット/03_アークシェード銃士連隊.dat",
+            "line": 772,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_masahiko",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+              "line": 2542,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_icg_bomb0",
+      "direct_occurrences": 1,
+      "source": "sp_icg_nt1",
+      "missing_link_field": "next",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:icg",
+            "source": "a_default/script/10_ユニット/21_お菓子作りの材料屋さん.dat",
+            "line": 322,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_icg_yakimeshi",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+              "line": 248,
+              "parent": null
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "sp_icg_nt1",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+              "line": 294,
+              "parent": "sp_icg_base"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_icg_pr3",
+      "direct_occurrences": 1,
+      "source": "sp_icg_pr0",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:icg",
+            "source": "a_default/script/10_ユニット/21_お菓子作りの材料屋さん.dat",
+            "line": 322,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_icg_yakimeshi",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+              "line": 248,
+              "parent": null
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "sp_icg_pr0",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+              "line": 331,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "pair_next"
+          }
+        ]
+      }
+    },
+    {
+      "target": "bsp_masupa5_nt5",
+      "direct_occurrences": 1,
+      "source": "bsp_masupa5",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:bluebiim",
+            "source": "a_default/script/10_ユニット/120_スペシャル人材.dat",
+            "line": 210,
+            "field": "skill2"
+          },
+          {
+            "owner": "unit:ginryu23",
+            "source": "a_default/script/10_ユニット/120_スペシャル人材.dat",
+            "line": 410,
+            "field": "skill2"
+          },
+          {
+            "owner": "unit:tanaka",
+            "source": "a_default/script/10_ユニット/23_リュージ騎士団.dat",
+            "line": 90,
+            "field": "skill2"
+          },
+          {
+            "owner": "unit:kakuryo1",
+            "source": "a_default/script/10_ユニット/23_リュージ騎士団.dat",
+            "line": 180,
+            "field": "skill2"
+          },
+          {
+            "owner": "unit:b_tanaka",
+            "source": "a_default/script/10_ユニット/B_2323_リュージ騎士団.dat",
+            "line": 1,
+            "field": "skill2"
+          },
+          {
+            "owner": "unit:b_kakuryo1",
+            "source": "a_default/script/10_ユニット/B_2323_リュージ騎士団.dat",
+            "line": 94,
+            "field": "skill2"
+          },
+          {
+            "owner": "class:a_bwd_23",
+            "source": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+            "line": 1648,
+            "field": "skill"
+          },
+          {
+            "owner": "class:a_bwd",
+            "source": "a_default/script/32_ボススキル/B_2323_リュージ騎士団.dat",
+            "line": 390,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "bsp_masupa5",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+              "line": 1204,
+              "parent": null
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          }
+        ]
+      }
+    },
+    {
+      "target": "bsp_masupa5_nt6",
+      "direct_occurrences": 1,
+      "source": "bsp_masupa5",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:bluebiim",
+            "source": "a_default/script/10_ユニット/120_スペシャル人材.dat",
+            "line": 210,
+            "field": "skill2"
+          },
+          {
+            "owner": "unit:ginryu23",
+            "source": "a_default/script/10_ユニット/120_スペシャル人材.dat",
+            "line": 410,
+            "field": "skill2"
+          },
+          {
+            "owner": "unit:tanaka",
+            "source": "a_default/script/10_ユニット/23_リュージ騎士団.dat",
+            "line": 90,
+            "field": "skill2"
+          },
+          {
+            "owner": "unit:kakuryo1",
+            "source": "a_default/script/10_ユニット/23_リュージ騎士団.dat",
+            "line": 180,
+            "field": "skill2"
+          },
+          {
+            "owner": "unit:b_tanaka",
+            "source": "a_default/script/10_ユニット/B_2323_リュージ騎士団.dat",
+            "line": 1,
+            "field": "skill2"
+          },
+          {
+            "owner": "unit:b_kakuryo1",
+            "source": "a_default/script/10_ユニット/B_2323_リュージ騎士団.dat",
+            "line": 94,
+            "field": "skill2"
+          },
+          {
+            "owner": "class:a_bwd_23",
+            "source": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+            "line": 1648,
+            "field": "skill"
+          },
+          {
+            "owner": "class:a_bwd",
+            "source": "a_default/script/32_ボススキル/B_2323_リュージ騎士団.dat",
+            "line": 390,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "bsp_masupa5",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+              "line": 1204,
+              "parent": null
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          }
+        ]
+      }
+    },
+    {
+      "target": "dmcabiim_nt1c",
+      "direct_occurrences": 1,
+      "source": "sp_dmcabiim",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:genria",
+            "source": "a_default/script/10_ユニット/26_クッキー☆原理主義党.dat",
+            "line": 95,
+            "field": "learn"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_dmcabiim",
+            "declaration": {
+              "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+              "line": 978,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_hnsthunder_pair_nt9",
+      "direct_occurrences": 1,
+      "source": "sp_hnsthunder_pair",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:superalc_test",
+            "source": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+            "line": 448,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_super_alc",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 454,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "sp_slide_alc_nt0",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 615,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next"
+          },
+          {
+            "skill": "sp_slide_alc_joi1",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 665,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_super_alc_nt0",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 675,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          },
+          {
+            "skill": "sp_super_alc_nt0b",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 682,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_slide_alc_nt0_2",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 775,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_slide_alc_joi2",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 795,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_super_alc_nt0_2",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 806,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          },
+          {
+            "skill": "sp_super_alc_nt0c",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 812,
+              "parent": "sp_super_alc_nt0b"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_super_alc_nyokinyoki_nt0b",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 818,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_super_alc_nyokinyoki_nt11",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 992,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_hnssun_nt3b",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 1134,
+              "parent": "sp_hnssun_nt3a"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_hnsthunder_pair0",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 1320,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_hnsthunder_pair",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 1330,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_hnsthunder_pair_nt10",
+      "direct_occurrences": 1,
+      "source": "sp_hnsthunder_pair",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:superalc_test",
+            "source": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+            "line": 448,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_super_alc",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 454,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "sp_slide_alc_nt0",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 615,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next"
+          },
+          {
+            "skill": "sp_slide_alc_joi1",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 665,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_super_alc_nt0",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 675,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          },
+          {
+            "skill": "sp_super_alc_nt0b",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 682,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_slide_alc_nt0_2",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 775,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_slide_alc_joi2",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 795,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_super_alc_nt0_2",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 806,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          },
+          {
+            "skill": "sp_super_alc_nt0c",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 812,
+              "parent": "sp_super_alc_nt0b"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_super_alc_nyokinyoki_nt0b",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 818,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_super_alc_nyokinyoki_nt11",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 992,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_hnssun_nt3b",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 1134,
+              "parent": "sp_hnssun_nt3a"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_hnsthunder_pair0",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 1320,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_hnsthunder_pair",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 1330,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_hnsthunder_pair_nt11",
+      "direct_occurrences": 1,
+      "source": "sp_hnsthunder_pair",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:superalc_test",
+            "source": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+            "line": 448,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_super_alc",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 454,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "sp_slide_alc_nt0",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 615,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next"
+          },
+          {
+            "skill": "sp_slide_alc_joi1",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 665,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_super_alc_nt0",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 675,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          },
+          {
+            "skill": "sp_super_alc_nt0b",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 682,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_slide_alc_nt0_2",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 775,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_slide_alc_joi2",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 795,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_super_alc_nt0_2",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 806,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          },
+          {
+            "skill": "sp_super_alc_nt0c",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 812,
+              "parent": "sp_super_alc_nt0b"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_super_alc_nyokinyoki_nt0b",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 818,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_super_alc_nyokinyoki_nt11",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 992,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_hnssun_nt3b",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 1134,
+              "parent": "sp_hnssun_nt3a"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_hnsthunder_pair0",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 1320,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_hnsthunder_pair",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 1330,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_hnsthunder_pair_nt12",
+      "direct_occurrences": 1,
+      "source": "sp_hnsthunder_pair",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:superalc_test",
+            "source": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+            "line": 448,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_super_alc",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 454,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "sp_slide_alc_nt0",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 615,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next"
+          },
+          {
+            "skill": "sp_slide_alc_joi1",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 665,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_super_alc_nt0",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 675,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          },
+          {
+            "skill": "sp_super_alc_nt0b",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 682,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_slide_alc_nt0_2",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 775,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_slide_alc_joi2",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 795,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_super_alc_nt0_2",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 806,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          },
+          {
+            "skill": "sp_super_alc_nt0c",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 812,
+              "parent": "sp_super_alc_nt0b"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_super_alc_nyokinyoki_nt0b",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 818,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_super_alc_nyokinyoki_nt11",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 992,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_hnssun_nt3b",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 1134,
+              "parent": "sp_hnssun_nt3a"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_hnsthunder_pair0",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 1320,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_hnsthunder_pair",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+              "line": 1330,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          }
+        ]
+      }
+    },
+    {
+      "target": "ele_whip_js",
+      "direct_occurrences": 1,
+      "source": "ele_whip",
+      "missing_link_field": "just_next",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "class:dnjmk",
+            "source": "a_default/script/20_クラス/B_2222_レイノアレフ.dat",
+            "line": 246,
+            "field": "skill"
+          },
+          {
+            "owner": "class:dnjmk2",
+            "source": "a_default/script/20_クラス/B_2222_レイノアレフ.dat",
+            "line": 278,
+            "field": "skill"
+          },
+          {
+            "owner": "class:dnjmk3",
+            "source": "a_default/script/20_クラス/B_2222_レイノアレフ.dat",
+            "line": 291,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "ele_whip",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_2222_レイノアレフ.dat",
+              "line": 1263,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          }
+        ]
+      }
+    },
+    {
+      "target": "udbsp_masupa5_nt5",
+      "direct_occurrences": 1,
+      "source": "udbsp_masupa5",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:udrgn",
+            "source": "a_default/script/10_ユニット/B_2323_リュージ騎士団.dat",
+            "line": 399,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "udbsp_masupa5",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_2323_リュージ騎士団.dat",
+              "line": 1080,
+              "parent": null
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          }
+        ]
+      }
+    },
+    {
+      "target": "udbsp_masupa5_nt6",
+      "direct_occurrences": 1,
+      "source": "udbsp_masupa5",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:udrgn",
+            "source": "a_default/script/10_ユニット/B_2323_リュージ騎士団.dat",
+            "line": 399,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "udbsp_masupa5",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_2323_リュージ騎士団.dat",
+              "line": 1080,
+              "parent": null
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          }
+        ]
+      }
+    },
+    {
+      "target": "ef_noel_zan",
+      "direct_occurrences": 1,
+      "source": "noel_zan1_nt2",
+      "missing_link_field": "next",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:noel",
+            "source": "a_default/script/10_ユニット/B_23_リュージボス.dat",
+            "line": 1496,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "noel_zan1",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 814,
+              "parent": "sk_sw"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "noel_zan1_nt2",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 849,
+              "parent": "noel_zan1"
+            },
+            "effective_func": "missile",
+            "via": "just_next"
+          }
+        ]
+      }
+    },
+    {
+      "target": "ef_bokhohn_zan",
+      "direct_occurrences": 1,
+      "source": "bokhohn_zan1_nt2",
+      "missing_link_field": "next",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:bokhohn",
+            "source": "a_default/script/10_ユニット/B_23_リュージボス.dat",
+            "line": 1677,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "bokhohn_zan1",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 1938,
+              "parent": "sk_sw"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "bokhohn_zan1_nt2",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 1971,
+              "parent": "bokhohn_zan1"
+            },
+            "effective_func": "missile",
+            "via": "just_next"
+          }
+        ]
+      }
+    },
+    {
+      "target": "ef_hzn_zan",
+      "direct_occurrences": 1,
+      "source": "hzn_zan1_nt2",
+      "missing_link_field": "next",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:renkon_hzn",
+            "source": "a_default/script/10_ユニット/B_23_リュージボス.dat",
+            "line": 838,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "hzn_zan1",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 3212,
+              "parent": "sk_sw"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "hzn_zan1_nt2",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 3247,
+              "parent": "hzn_zan1"
+            },
+            "effective_func": "missile",
+            "via": "just_next"
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_cookie_kiss_pr0",
+      "direct_occurrences": 1,
+      "source": "sp_cookie_kiss",
+      "missing_link_field": "pair_next",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:hzn23",
+            "source": "a_default/script/10_ユニット/B_23_リュージボス.dat",
+            "line": 409,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_cookie_kiss",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 3841,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_star_dream_masupa_nt5",
+      "direct_occurrences": 1,
+      "source": "sp_star_dream_masupa_joi2",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:whiteknn23",
+            "source": "a_default/script/10_ユニット/B_23_リュージボス.dat",
+            "line": 503,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_star_dreamer",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 5551,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "g_star_dreamer_nt0",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 6387,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "g_star_dreamer_nt1",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 6396,
+              "parent": "b_star_dreamer_nt1"
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          },
+          {
+            "skill": "g_star_dreamer_nt2",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 6402,
+              "parent": "b_star_dreamer_nt2"
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          },
+          {
+            "skill": "g_star_dreamer_nt3",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 6406,
+              "parent": "b_star_dreamer_nt3"
+            },
+            "effective_func": "missile",
+            "via": "next2"
+          },
+          {
+            "skill": "g_star_dreamer_nt10",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 6422,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_star_dream_masupa_joi",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 6479,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_star_dream_masupa_joi2",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 6490,
+              "parent": null
+            },
+            "effective_func": "missile",
+            "via": "next"
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_star_dream_masupa_nt6",
+      "direct_occurrences": 1,
+      "source": "sp_star_dream_masupa_joi2",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:whiteknn23",
+            "source": "a_default/script/10_ユニット/B_23_リュージボス.dat",
+            "line": 503,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sp_star_dreamer",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 5551,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "g_star_dreamer_nt0",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 6387,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "g_star_dreamer_nt1",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 6396,
+              "parent": "b_star_dreamer_nt1"
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          },
+          {
+            "skill": "g_star_dreamer_nt2",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 6402,
+              "parent": "b_star_dreamer_nt2"
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          },
+          {
+            "skill": "g_star_dreamer_nt3",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 6406,
+              "parent": "b_star_dreamer_nt3"
+            },
+            "effective_func": "missile",
+            "via": "next2"
+          },
+          {
+            "skill": "g_star_dreamer_nt10",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 6422,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_star_dream_masupa_joi",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 6479,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "sp_star_dream_masupa_joi2",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 6490,
+              "parent": null
+            },
+            "effective_func": "missile",
+            "via": "next"
+          }
+        ]
+      }
+    },
+    {
+      "target": "febfeb_beam_pr2",
+      "direct_occurrences": 1,
+      "source": "februar_beam_nt1",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "class:februar_c",
+            "source": "a_default/script/20_クラス/B_23_リュージボス.dat",
+            "line": 175,
+            "field": "skill"
+          },
+          {
+            "owner": "class:februar_c_r",
+            "source": "a_default/script/5000_ランダムシナリオ/RB_ボスクラス.dat",
+            "line": 391,
+            "field": "skill"
+          },
+          {
+            "owner": "class:februar_c_r2",
+            "source": "a_default/script/5000_ランダムシナリオ/RB_ボスクラス.dat",
+            "line": 409,
+            "field": "skill"
+          },
+          {
+            "owner": "class:februar_c_r3",
+            "source": "a_default/script/5000_ランダムシナリオ/RB_ボスクラス.dat",
+            "line": 424,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "februar_beam",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 7969,
+              "parent": null
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "februar_beam_nt1",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 7994,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          }
+        ]
+      }
+    },
+    {
+      "target": "febfeb_beam_pr3",
+      "direct_occurrences": 1,
+      "source": "februar_beam_nt1",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "class:februar_c",
+            "source": "a_default/script/20_クラス/B_23_リュージボス.dat",
+            "line": 175,
+            "field": "skill"
+          },
+          {
+            "owner": "class:februar_c_r",
+            "source": "a_default/script/5000_ランダムシナリオ/RB_ボスクラス.dat",
+            "line": 391,
+            "field": "skill"
+          },
+          {
+            "owner": "class:februar_c_r2",
+            "source": "a_default/script/5000_ランダムシナリオ/RB_ボスクラス.dat",
+            "line": 409,
+            "field": "skill"
+          },
+          {
+            "owner": "class:februar_c_r3",
+            "source": "a_default/script/5000_ランダムシナリオ/RB_ボスクラス.dat",
+            "line": 424,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "februar_beam",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 7969,
+              "parent": null
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "februar_beam_nt1",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 7994,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          }
+        ]
+      }
+    },
+    {
+      "target": "sakenomiga_rocket_pr0",
+      "direct_occurrences": 1,
+      "source": "sakenomiga_rocket",
+      "missing_link_field": "pair_next",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:sakenomiga",
+            "source": "a_default/script/10_ユニット/B_23_リュージボス.dat",
+            "line": 313,
+            "field": "skill2"
+          },
+          {
+            "owner": "unit:sakenomiga_r",
+            "source": "a_default/script/5000_ランダムシナリオ/RB_ボス人材.dat",
+            "line": 1087,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sakenomiga_rocket",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 10376,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          }
+        ]
+      }
+    },
+    {
+      "target": "sakenomiga_protect_pr0",
+      "direct_occurrences": 1,
+      "source": "sakenomiga_protect",
+      "missing_link_field": "pair_next",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:sakenomiga",
+            "source": "a_default/script/10_ユニット/B_23_リュージボス.dat",
+            "line": 313,
+            "field": "skill"
+          },
+          {
+            "owner": "unit:sakenomiga_r",
+            "source": "a_default/script/5000_ランダムシナリオ/RB_ボス人材.dat",
+            "line": 1087,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sakenomiga_protect",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 12311,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          }
+        ]
+      }
+    },
+    {
+      "target": "sakenomiga_misairu_pr0",
+      "direct_occurrences": 1,
+      "source": "sakenomiga_misairu",
+      "missing_link_field": "pair_next",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:sakenomiga",
+            "source": "a_default/script/10_ユニット/B_23_リュージボス.dat",
+            "line": 313,
+            "field": "skill2"
+          },
+          {
+            "owner": "unit:sakenomiga_r",
+            "source": "a_default/script/5000_ランダムシナリオ/RB_ボス人材.dat",
+            "line": 1087,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sakenomiga_misairu",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 12510,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          }
+        ]
+      }
+    },
+    {
+      "target": "sake_oraora_sound",
+      "direct_occurrences": 1,
+      "source": "sake_oraora_nt0_left",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:sakenomiga",
+            "source": "a_default/script/10_ユニット/B_23_リュージボス.dat",
+            "line": 313,
+            "field": "skill2"
+          },
+          {
+            "owner": "unit:sakenomiga_r",
+            "source": "a_default/script/5000_ランダムシナリオ/RB_ボス人材.dat",
+            "line": 1087,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sakenomiga_ora",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 13516,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "sakenomiga_ora_pr0",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 13551,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "pair_next"
+          },
+          {
+            "skill": "sake_oraora_nt0b_left",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 13559,
+              "parent": "eff_sake_joi"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "sake_oraora_nt0b2_left",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 13568,
+              "parent": "eff_sake_joi"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "sake_oraora_nt0_left",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 13576,
+              "parent": "eff_sake_joi"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          }
+        ]
+      }
+    },
+    {
+      "target": "sake_heaven_sec1919_left",
+      "direct_occurrences": 1,
+      "source": "sake_heaven_sec0_left",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:sakenomiga",
+            "source": "a_default/script/10_ユニット/B_23_リュージボス.dat",
+            "line": 313,
+            "field": "skill2"
+          },
+          {
+            "owner": "unit:unit_st",
+            "source": "a_default/script/6000_スキルテスト/skilltest.dat",
+            "line": 19,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sakenomiga_heaven",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 13881,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "sakenomiga_heaven_pr0",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 13922,
+              "parent": "eff_sake_joi"
+            },
+            "effective_func": "UNSET",
+            "via": "pair_next"
+          },
+          {
+            "skill": "sakenomiga_heaven_pr1",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 14217,
+              "parent": "eff_sake_joi"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "sake_heaven_sec0b_left",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 14223,
+              "parent": "eff_sake_joi"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "sake_heaven_sec0b2_left",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 14232,
+              "parent": "eff_sake_joi"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "sake_heaven_sec0_left",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 14239,
+              "parent": "eff_sake_joi"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          }
+        ]
+      }
+    },
+    {
+      "target": "sake_heaven_sec1919_right",
+      "direct_occurrences": 1,
+      "source": "sake_heaven_sec0_right",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:sakenomiga",
+            "source": "a_default/script/10_ユニット/B_23_リュージボス.dat",
+            "line": 313,
+            "field": "skill2"
+          },
+          {
+            "owner": "unit:unit_st",
+            "source": "a_default/script/6000_スキルテスト/skilltest.dat",
+            "line": 19,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sakenomiga_heaven",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 13881,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "sakenomiga_heaven_pr0",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 13922,
+              "parent": "eff_sake_joi"
+            },
+            "effective_func": "UNSET",
+            "via": "pair_next"
+          },
+          {
+            "skill": "sakenomiga_heaven_pr1",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 14217,
+              "parent": "eff_sake_joi"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "sake_heaven_sec0b_right",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 14262,
+              "parent": "eff_sake_joi"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "sake_heaven_sec0b2_right",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 14271,
+              "parent": "eff_sake_joi"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "sake_heaven_sec0_right",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 14278,
+              "parent": "eff_sake_joi"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          }
+        ]
+      }
+    },
+    {
+      "target": "sake_heaven_mask0_denki",
+      "direct_occurrences": 1,
+      "source": "sake_heaven_sec0b_denki",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:sakenomiga",
+            "source": "a_default/script/10_ユニット/B_23_リュージボス.dat",
+            "line": 313,
+            "field": "skill2"
+          },
+          {
+            "owner": "unit:unit_st",
+            "source": "a_default/script/6000_スキルテスト/skilltest.dat",
+            "line": 19,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sakenomiga_heaven",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 13881,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "sakenomiga_heaven_pr0",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 13922,
+              "parent": "eff_sake_joi"
+            },
+            "effective_func": "UNSET",
+            "via": "pair_next"
+          },
+          {
+            "skill": "sakenomiga_heaven_pr1",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 14217,
+              "parent": "eff_sake_joi"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          },
+          {
+            "skill": "sake_heaven_sec0b_denki",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 14428,
+              "parent": "eff_sake_joi"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          }
+        ]
+      }
+    },
+    {
+      "target": "uru_dash_nt3",
+      "direct_occurrences": 1,
+      "source": "uru_dash_nt0",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:sakenomiga",
+            "source": "a_default/script/10_ユニット/B_23_リュージボス.dat",
+            "line": 313,
+            "field": "skill2"
+          },
+          {
+            "owner": "unit:unit_st",
+            "source": "a_default/script/6000_スキルテスト/skilltest.dat",
+            "line": 19,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "sakenomiga_heaven",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 13881,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "uru_dash_nt0",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+              "line": 14772,
+              "parent": "eff_sake_joi"
+            },
+            "effective_func": "UNSET",
+            "via": "next3"
+          }
+        ]
+      }
+    },
+    {
+      "target": "snnm_beam_nt5",
+      "direct_occurrences": 1,
+      "source": "snnm_beam",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:boss_snnm",
+            "source": "a_default/script/10_ユニット/B_25_ジトメ秘密教団.dat",
+            "line": 318,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "snnm_beam",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+              "line": 2401,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          }
+        ]
+      }
+    },
+    {
+      "target": "snnm_beam_nt6",
+      "direct_occurrences": 1,
+      "source": "snnm_beam",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:boss_snnm",
+            "source": "a_default/script/10_ユニット/B_25_ジトメ秘密教団.dat",
+            "line": 318,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "snnm_beam",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+              "line": 2401,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          }
+        ]
+      }
+    },
+    {
+      "target": "ssrn_kidan_nt3",
+      "direct_occurrences": 1,
+      "source": "ssrn_kidan",
+      "missing_link_field": "just_next",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:525_ssrhm",
+            "source": "a_default/script/10_ユニット/B_525_神聖UNEI帝国.dat",
+            "line": 249,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "ssrn_kidan",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+              "line": 2963,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          }
+        ]
+      }
+    },
+    {
+      "target": "ssrn_kidan_nt4",
+      "direct_occurrences": 1,
+      "source": "ssrn_kidan",
+      "missing_link_field": "just_next",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:525_ssrhm",
+            "source": "a_default/script/10_ユニット/B_525_神聖UNEI帝国.dat",
+            "line": 249,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "ssrn_kidan",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+              "line": 2963,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          }
+        ]
+      }
+    },
+    {
+      "target": "ssrn_sw_ef_smoke",
+      "direct_occurrences": 1,
+      "source": "ssrn_sw",
+      "missing_link_field": "pair_next",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:525_ssrhm",
+            "source": "a_default/script/10_ユニット/B_525_神聖UNEI帝国.dat",
+            "line": 249,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "ssrn_sw",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+              "line": 3705,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          }
+        ]
+      }
+    },
+    {
+      "target": "ssrn_sw_weak_ef_smoke",
+      "direct_occurrences": 1,
+      "source": "ssrn_sw_weak",
+      "missing_link_field": "pair_next",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:kenri_ssrhm",
+            "source": "a_default/script/10_ユニット/B_525_神聖UNEI帝国.dat",
+            "line": 633,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "ssrn_sw_weak",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+              "line": 4207,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          }
+        ]
+      }
+    },
+    {
+      "target": "ssrn_sw_weak_6",
+      "direct_occurrences": 1,
+      "source": "ssrn_sw_weak_joi2",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:kenri_ssrhm",
+            "source": "a_default/script/10_ユニット/B_525_神聖UNEI帝国.dat",
+            "line": 633,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "ssrn_sw_weak",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+              "line": 4207,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "ssrn_sw_weak_joi2",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+              "line": 4374,
+              "parent": "sk_sw"
+            },
+            "effective_func": "missile",
+            "via": "just_next"
+          }
+        ]
+      }
+    },
+    {
+      "target": "kankure_ora_pr0",
+      "direct_occurrences": 1,
+      "source": "kankure_ora",
+      "missing_link_field": "pair_next",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "unit:kankure_po5",
+            "source": "a_default/script/10_ユニット/B_5_土屋稲荷大社.dat",
+            "line": 112,
+            "field": "skill2"
+          },
+          {
+            "owner": "unit:kankure_po5_r",
+            "source": "a_default/script/5000_ランダムシナリオ/RB_ボス人材.dat",
+            "line": 593,
+            "field": "skill2"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "kankure_ora",
+            "declaration": {
+              "file": "a_default/script/32_ボススキル/B_5_伏見稲荷大社.dat",
+              "line": 1147,
+              "parent": "sk_ms"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          }
+        ]
+      }
+    },
+    {
+      "target": "_nt",
+      "direct_occurrences": 1,
+      "source": "rtsreaokasicpu",
+      "missing_link_field": "next2",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "class:hqreaokasicpu",
+            "source": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+            "line": 1226,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "rtsreaokasicpu",
+            "declaration": {
+              "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+              "line": 1230,
+              "parent": "ra0002"
+            },
+            "effective_func": "missile",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          }
+        ]
+      }
+    },
+    {
+      "target": "ef_ssrmla_yari0",
+      "direct_occurrences": 1,
+      "source": "rtsrmlach_js_joi",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "class:ss1013rts",
+            "source": "a_default/script/8000_RTSシナリオ/RTSclass.dat",
+            "line": 292,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "rtsrmlach",
+            "declaration": {
+              "file": "a_default/script/8000_RTSシナリオ/RTSskill.dat",
+              "line": 967,
+              "parent": null
+            },
+            "effective_func": "charge",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "rtsrmlach_js_joi",
+            "declaration": {
+              "file": "a_default/script/8000_RTSシナリオ/RTSskill.dat",
+              "line": 991,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "next"
+          }
+        ]
+      }
+    },
+    {
+      "target": "ssrmla_yari_pr",
+      "direct_occurrences": 1,
+      "source": "rtsrmlach_nt0",
+      "missing_link_field": "next3",
+      "witness": {
+        "root_grants": [
+          {
+            "owner": "class:ss1013rts",
+            "source": "a_default/script/8000_RTSシナリオ/RTSclass.dat",
+            "line": 292,
+            "field": "skill"
+          }
+        ],
+        "steps": [
+          {
+            "skill": "rtsrmlach",
+            "declaration": {
+              "file": "a_default/script/8000_RTSシナリオ/RTSskill.dat",
+              "line": 967,
+              "parent": null
+            },
+            "effective_func": "charge",
+            "via": "DIRECT_UNIT_CLASS_FIELD"
+          },
+          {
+            "skill": "rtsrmlach_nt0",
+            "declaration": {
+              "file": "a_default/script/8000_RTSシナリオ/RTSskill.dat",
+              "line": 1042,
+              "parent": null
+            },
+            "effective_func": "UNSET",
+            "via": "pair_next"
+          }
+        ]
+      }
+    }
+  ],
+  "witnessed_missing_target_distinct": 85,
+  "limitations": [
+    "Graph edges are literal next/next2/next3/just_next/pair_next declarations",
+    "Some nodes may only run under event/mode conditions",
+    "Root class may not be available in any legal battle",
+    "Missing target could be parser sentinel/harmless; no auto-correction allowed"
+  ]
+}
