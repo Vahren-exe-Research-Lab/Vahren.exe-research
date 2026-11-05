@@ -1,3 +1,10 @@
+<!-- REA-20261105-09H-CURSOR-DEDUP-ERRATUM -->
+## 2026-11-05 09H cursor correction | do not duplicate 2026-11-04 semantic triage
+
+The 09H follow-on above listed `REA-LOCAL-20261029-02H-P0-OGG-STATE131-CLOSE-ABI-STATIC-01` as a **new owner-side source review cursor**. **ERRATUM:** this ID has *already* been meaning-triaged in the existing 2026-11-04 20H INDEX four-row section below (report SHA256 `BFFED27F82740E06882A7D3F27B66F252A051A612CC2EF5FB77A098A0C5F491E`). It already identifies the local `0x5CFEED PUSH ECX → 0x5CFEEE CALL EAX → 0x5CFEF0 ADD ESP,4` and distinguishes it from the later 10/31 00H CURATED_STATIC callback *provenance*. **Do not perform a duplicate owner-source review or count a new adoption** merely because 09H mentioned this cursor; the remaining original-PC native/ABI validation belongs to the curator when source SHA/lock/V9 and ownership are available. The 2026-11-04 section also explicitly completed **24/24 VA-match *scope* triages**, not 24 semantic CURATED proofs; older intermediate counts are not outstanding queue denominators.
+
+**Next eligible owner-safe cursor (UNASSESSED status not asserted):** the earliest distinct post-10/10 preserved owner source/correction **not yet meaning-triaged in the current INDEX**, to be determined by research-ID + source SHA + exact CFG/errata diff before any write. If source-side candidates are already crosswalked, record `NO_CHANGE / curator-native-validation-dependent` rather than create new IDs/PRs. A concrete curator-only verification queue is the known bounded unadopted `0x5CFEEE` one-argument caller cleanup and related actual callback lifetime; no new PC run or Golden may be claimed. Original PC remains HTTP429/OFFLINE-UNSYNCED, denied evidence excluded. All §10–12 historic file reviews remain valid.
+
 <!-- REA-20261105-09H-FOLLOWON-WAVE45-SEVEN-SOURCES -->
 ## 2026-11-05 09H follow-on | seven further prior Wave4/Wave5 and T013 sources (43 already archived source files reviewed; zero new IDs/intake)
 
