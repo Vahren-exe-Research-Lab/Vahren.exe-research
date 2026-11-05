@@ -1,3 +1,8 @@
+<!-- REA-20261105-17H-CRT21-DEVELOP-RELATION-CROSSWALK -->
+## 2026-11-05 17H | existing 11/01 21H native-E8 author study: four new *develop source relations*, 0 new REA IDs
+
+[Owner curation boundary §19](REA_20261105_07H_1013_1012_SAFE_SPATIAL_AND_VECTOR_CURATOR_CROSSWALK.md) links already published `REA-LOCAL-20261101-21H-P0-UNWIND-FOUR-CALLERS-NLG-STATIC-01` (historical report SHA256 `89314B1069E2A57A928C1320A4C80DC79D6C2C4A3FA65137F082B7634351F2D6`, existing Git blob `d3f6e5931982b7aed262ee18567b791f4753070f`, original archive lines 9–13) to **four new current-develop citation-backed** `calls 0x5C3500` relations `CRT21-UNWIND-CALL-5C35BD / 5C35E6 / 5C3646 / 5D1D33`. Live develop `5ab625346ef4bc32a6389d6236bc1e76e7a730d9` introduced `REF_AUDIO_VORBIS.md` blob `a3e1f423ac245f5102e96aadb49ee861a788e88c`, `reference/relations.jsonl` blob `728d774816205053a7eb68ba1a68e2e738fe05d4` compared to prior `a9f7fc66...`. This is **SOURCE_MAPPED_IN_DEVELOP** for bounded relations, not a newly published owner study or a whole study `CURATED_STATIC`; `0x5C3646` already described at 20H. `__fsopen` error-route, fragment ABI, FILE*/NLG/scope cursor effects remain `VERIFY`. No fresh PC SHA/native/QUEUE or lock evidence (Local HTTP429, `OFFLINE-UNSYNCED`), no safety hold access. New ID/intake/five-kind VERIFIED `0/0/0`; original Golden PASS / strict MATCH / READY `0/0/0`. **Next cursor:** new permitted unique source ID+SHA+errata only, or `NO_CHANGE`; see §19 for curator check. Shared develop/REF/dictionaries untouched by REA.
+
 <!-- REA-20261105-15H-CURRENT-DEVELOP-SEEK-CLEANUP-PROVENANCE-DELTA -->
 ## 2026-11-05 15H | current-develop 0x5CFDD0 source bridge and old 10/30 21–23H cleanup ownership gating
 
