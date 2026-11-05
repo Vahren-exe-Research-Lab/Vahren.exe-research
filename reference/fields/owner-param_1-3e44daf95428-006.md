@@ -7,6 +7,9 @@
 <a id="field-1eed40"></a>
 ## param_1 + 0x1EED40
 
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 1002](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L1002-L1002) — "source": "if (*(char *)(param_1 + 0x1eed40) == '\\0') {",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
 - [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 1112](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L1112-L1112) — "source": "*(undefined1 *)(param_1 + 0x1eed42) = *(undefined1 *)(param_1 + 0x1eed40);",
   制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
 
@@ -314,9 +317,6 @@
   制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
 
 - [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json 行 2051](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json?plain=1#L2051-L2051) — "code": "*(int *)(*(int *)(param_1 + 0x1eed44) + 0x4c))))) {",
-  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
-
-- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json 行 2052](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json?plain=1#L2052-L2052) — "context_before": "(*(int *)(*(int *)(param_1 + 0x1eed44) + 0x48) ==",
   制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

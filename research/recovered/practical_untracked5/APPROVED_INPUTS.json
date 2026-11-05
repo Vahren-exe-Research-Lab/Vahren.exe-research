@@ -1,0 +1,287 @@
+{
+  "scope": "Known original Git worktrees only; metadata, no source bodies; dependency/build/reparse directories pruned",
+  "worktrees": [
+    {
+      "worktree": "knowledge",
+      "head": "a7a7bc300e97429fc58e4c7bfc3eaa311a430e15",
+      "branch": "refs/heads/work/kb-KB-SAVELOAD-20261101",
+      "markdown_files_observed": 32,
+      "untracked_or_ignored_markdown": 3
+    },
+    {
+      "worktree": "knowledge/.worktrees/e-owner-intake-20261103-1351",
+      "head": "f1e1bef3f74362f178dd20c566195e31ac2d7c6d",
+      "branch": "refs/heads/intake/E-20261102-0049-t020-17h23h",
+      "markdown_files_observed": 144,
+      "untracked_or_ignored_markdown": 0
+    },
+    {
+      "worktree": "knowledge/.worktrees/kb-curate-b-dispatch-20261102-0337",
+      "head": "5c9b84a89047732370aa79677ca13c9f852f4b1a",
+      "branch": "refs/heads/work/kb-curate-b-dispatch-20261102-0337",
+      "markdown_files_observed": 106,
+      "untracked_or_ignored_markdown": 0
+    },
+    {
+      "worktree": "knowledge/.worktrees/kb-curate-b-distance-20261102-04h",
+      "head": "68de6a28d1a5ec739027f4e25e0e67d95f2e8b40",
+      "branch": "refs/heads/work/kb-curate-b-distance-20261102-04h",
+      "markdown_files_observed": 106,
+      "untracked_or_ignored_markdown": 0
+    },
+    {
+      "worktree": "knowledge/.worktrees/kb-curate-b-effectrecord-20261103-09h",
+      "head": "38b60a6edb248b0246c6c5c33418b260fb1be4c5",
+      "branch": "refs/heads/work/kb-curate-b-effectrecord-20261103-09h",
+      "markdown_files_observed": 128,
+      "untracked_or_ignored_markdown": 0
+    },
+    {
+      "worktree": "knowledge/.worktrees/kb-curate-b-resultqueue-20261103-12h",
+      "head": "2f408d99505489977de977fad0753fd99d5284f4",
+      "branch": "refs/heads/work/kb-curate-b-resultqueue-20261103-12h",
+      "markdown_files_observed": 128,
+      "untracked_or_ignored_markdown": 0
+    },
+    {
+      "worktree": "knowledge/.worktrees/kb-curate-b-skillpost-20261102",
+      "head": "780427ca8e29a3578633a47b12e1a7fd97f0b624",
+      "branch": "refs/heads/work/kb-curate-b-skillpost-20261102",
+      "markdown_files_observed": 130,
+      "untracked_or_ignored_markdown": 2
+    },
+    {
+      "worktree": "knowledge/.worktrees/kb-curate-b15-rea18-20261031",
+      "head": "bb0e1fb7c1bf5b9ab1cf510c1160888ff62cb157",
+      "branch": "refs/heads/work/kb-20261031-b15rea18-c01",
+      "markdown_files_observed": 26,
+      "untracked_or_ignored_markdown": 0
+    },
+    {
+      "worktree": "knowledge/.worktrees/kb-curate-b17b18-20261102-0625",
+      "head": "843981477e17ad457b75458388237bd8d3e9c878",
+      "branch": "refs/heads/work/kb-curate-b17b18-20261102-0625",
+      "markdown_files_observed": 120,
+      "untracked_or_ignored_markdown": 0
+    },
+    {
+      "worktree": "knowledge/.worktrees/kb-curate-bt028-backlog",
+      "head": "f7fc8963745b76d8c66323c41fa053f306e2b01e",
+      "branch": "refs/heads/work/kb-curate-bt028-backlog",
+      "markdown_files_observed": 128,
+      "untracked_or_ignored_markdown": 0
+    },
+    {
+      "worktree": "knowledge/.worktrees/kb-curate-crossdomain-20261031",
+      "head": "f5b1618394994556da27a02f7f9827aa602e4016",
+      "branch": "refs/heads/work/kb-20261031-crossdomain-01",
+      "markdown_files_observed": 22,
+      "untracked_or_ignored_markdown": 0
+    },
+    {
+      "worktree": "knowledge/.worktrees/kb-curate-duplicates-20261031",
+      "head": "c61f8ee5b6a90b6e51eb1f3836254ba332684b32",
+      "branch": "refs/heads/work/kb-20261031-duplicates-01",
+      "markdown_files_observed": 26,
+      "untracked_or_ignored_markdown": 0
+    },
+    {
+      "worktree": "knowledge/.worktrees/kb-curate-e193-20261102-0558",
+      "head": "bcb61dfbd832f34e85c233b7d6d7bbe6e0699ca6",
+      "branch": "refs/heads/work/kb-curate-e193-20261102-0558",
+      "markdown_files_observed": 120,
+      "untracked_or_ignored_markdown": 0
+    },
+    {
+      "worktree": "knowledge/.worktrees/kb-curate-evening-20261031-22h",
+      "head": "0225b2e1cd5c710137a3d921f593d158df06624a",
+      "branch": "refs/heads/work/kb-20261031-evening-02",
+      "markdown_files_observed": 26,
+      "untracked_or_ignored_markdown": 0
+    },
+    {
+      "worktree": "knowledge/.worktrees/kb-curate-exp-20261103-0816",
+      "head": "47ff7b943f222480f1aba95c9557210e409f10c8",
+      "branch": "refs/heads/work/kb-curate-exp-20261103-0816",
+      "markdown_files_observed": 128,
+      "untracked_or_ignored_markdown": 0
+    },
+    {
+      "worktree": "knowledge/.worktrees/kb-curate-rea-f720-20261102-07h",
+      "head": "60288e7d429c76f0a56e56987bd72790615593dc",
+      "branch": "refs/heads/work/kb-curate-rea-f720-20261102-07h",
+      "markdown_files_observed": 120,
+      "untracked_or_ignored_markdown": 0
+    },
+    {
+      "worktree": "knowledge/.worktrees/kb-curate-rea-legacy-20261102-0411",
+      "head": "8198c614f6c264783676ba00c6f3d8c9c35403b9",
+      "branch": "refs/heads/work/kb-curate-rea-legacy-20261102-0411",
+      "markdown_files_observed": 106,
+      "untracked_or_ignored_markdown": 0
+    },
+    {
+      "worktree": "knowledge/.worktrees/kb-curate-rea-modecache-20261103",
+      "head": "0f005125aa148695b49ad093ec5390e029fd576e",
+      "branch": "refs/heads/work/kb-curate-rea-modecache-20261103",
+      "markdown_files_observed": 128,
+      "untracked_or_ignored_markdown": 0
+    },
+    {
+      "worktree": "knowledge/.worktrees/kb-curate-review-20261102-03h",
+      "head": "782d5b6add9907e3739b2bc43b8b595f516e9ccf",
+      "branch": "refs/heads/work/kb-curate-review-20261102-03h",
+      "markdown_files_observed": 106,
+      "untracked_or_ignored_markdown": 0
+    },
+    {
+      "worktree": "knowledge/.worktrees/kb-curate-skillchance-20261103-07h",
+      "head": "52dc3fc0ee4a940424db17ca5799050a39ab625a",
+      "branch": "refs/heads/work/kb-curate-skillchance-20261103-07h",
+      "markdown_files_observed": 128,
+      "untracked_or_ignored_markdown": 0
+    },
+    {
+      "worktree": "knowledge/.worktrees/kb-curate-t024-sentinel-20261102-0507",
+      "head": "1340640c23ad73d6e805ae994bd38ef14e887498",
+      "branch": "refs/heads/work/kb-curate-t024-sentinel-20261102-0507",
+      "markdown_files_observed": 106,
+      "untracked_or_ignored_markdown": 0
+    },
+    {
+      "worktree": "knowledge/.worktrees/kb-curate-vm-scenario-20261031",
+      "head": "5c816ce0b5160a5f4da68d3dcfe53be3d1399959",
+      "branch": "refs/heads/work/kb-20261031-vm-scenario-01",
+      "markdown_files_observed": 25,
+      "untracked_or_ignored_markdown": 0
+    },
+    {
+      "worktree": "knowledge/.worktrees/kb-curator-1444-T013",
+      "head": "36a840dc9c05be8b64ac9165926cfa47a8b5ff34",
+      "branch": "refs/heads/work/kb-20261031-1444-T013",
+      "markdown_files_observed": 26,
+      "untracked_or_ignored_markdown": 0
+    },
+    {
+      "worktree": "knowledge/.worktrees/kb-curator-20261031-0754",
+      "head": "10e608e7bbb7b4ec1beda7184fa0157c5216007c",
+      "branch": "refs/heads/work/kb-curator-20261031-0754",
+      "markdown_files_observed": 18,
+      "untracked_or_ignored_markdown": 0
+    },
+    {
+      "worktree": "knowledge/.worktrees/kb-curator-20261031-1235",
+      "head": "a1b157dc381d531adbcc1c926bc6fb8a4097afd2",
+      "branch": "refs/heads/work/kb-curator-20261031-1235",
+      "markdown_files_observed": 18,
+      "untracked_or_ignored_markdown": 0
+    },
+    {
+      "worktree": "knowledge/.worktrees/kb-curator-batch02-20261031",
+      "head": "f7970c4507f975f60bb7368d3790d10d7dfe631e",
+      "branch": "refs/heads/work/kb-20261031-batch02",
+      "markdown_files_observed": 18,
+      "untracked_or_ignored_markdown": 0
+    },
+    {
+      "worktree": "knowledge/.worktrees/kb-curator-batch03-20261031",
+      "head": "5249f77cda7abe8a500f5c9a2d8b9bee9030a36a",
+      "branch": "refs/heads/work/kb-20261031-batch03",
+      "markdown_files_observed": 19,
+      "untracked_or_ignored_markdown": 0
+    },
+    {
+      "worktree": "knowledge/.worktrees/kb-curator-batch04-20261031",
+      "head": "163ba43f412075a264f30c1c96858f804c448b8e",
+      "branch": "refs/heads/work/kb-20261031-batch04",
+      "markdown_files_observed": 19,
+      "untracked_or_ignored_markdown": 0
+    },
+    {
+      "worktree": "knowledge/.worktrees/kb-curator-rea06-09-20261031",
+      "head": "cfd42d9fe35ab00be19479ad3c3aa38243e4d70a",
+      "branch": "refs/heads/work/kb-20261031-rea06-09",
+      "markdown_files_observed": 18,
+      "untracked_or_ignored_markdown": 0
+    },
+    {
+      "worktree": "knowledge/.worktrees/kb-followup-B14-REA13-20261031",
+      "head": "6a5881b8104b5689cd1ebea464fd7062ee6ae93e",
+      "branch": "refs/heads/work/kb-20261031-followup-B14-REA13",
+      "markdown_files_observed": 26,
+      "untracked_or_ignored_markdown": 0
+    },
+    {
+      "worktree": "knowledge/.worktrees/kb-integrate-20261031",
+      "head": "dad68c4fedf8a56e430af1ec8a7993e725ce610d",
+      "branch": "refs/heads/develop",
+      "markdown_files_observed": 36,
+      "untracked_or_ignored_markdown": 0
+    },
+    {
+      "worktree": "knowledge/.worktrees/kb-rea-curation-20261101-2145",
+      "head": "dad68c4fedf8a56e430af1ec8a7993e725ce610d",
+      "branch": "refs/heads/work/kb-rea-evidence-20261101-2145",
+      "markdown_files_observed": 36,
+      "untracked_or_ignored_markdown": 0
+    },
+    {
+      "worktree": "knowledge/.worktrees/kb-research-curation-20261031",
+      "head": "aa7bcb082681d160b928e2e3e5c8e932ed8c6e04",
+      "branch": "refs/heads/work/kb-research-curation-20261031",
+      "markdown_files_observed": 15,
+      "untracked_or_ignored_markdown": 0
+    },
+    {
+      "worktree": "knowledge/.worktrees/kb-summon-parent-exp-20261103",
+      "head": "11d53cd71545752751058828570c290b5c0fc885",
+      "branch": "refs/heads/work/kb-summon-parent-exp-20261103",
+      "markdown_files_observed": 128,
+      "untracked_or_ignored_markdown": 0
+    },
+    {
+      "worktree": "knowledge/.worktrees/kb-v9-coverage-20261031",
+      "head": "b2c105d89d1a3f4d61b47cdefbb34250afcbdf67",
+      "branch": "refs/heads/work/kb-v9-coverage-20261031",
+      "markdown_files_observed": 17,
+      "untracked_or_ignored_markdown": 0
+    }
+  ],
+  "candidates": [
+    {
+      "worktree": "knowledge",
+      "path": "CATALOG.md",
+      "bytes": 81212,
+      "mtime_ns": 1793536368763676900,
+      "content_state": "NOT_READ_METADATA_ONLY"
+    },
+    {
+      "worktree": "knowledge",
+      "path": "REF_ADDRESSES.md",
+      "bytes": 191311,
+      "mtime_ns": 1793536366613270500,
+      "content_state": "NOT_READ_METADATA_ONLY"
+    },
+    {
+      "worktree": "knowledge",
+      "path": "REF_STRUCTS.md",
+      "bytes": 15633,
+      "mtime_ns": 1793536366614284000,
+      "content_state": "NOT_READ_METADATA_ONLY"
+    },
+    {
+      "worktree": "knowledge/.worktrees/kb-curate-b-skillpost-20261102",
+      "path": "research/intake/B/B-20261023-1708-T013-TROOP-RTTI-RATIO-GATE-01.md",
+      "bytes": 2606,
+      "mtime_ns": 1793585657425968700,
+      "content_state": "NOT_READ_METADATA_ONLY"
+    },
+    {
+      "worktree": "knowledge/.worktrees/kb-curate-b-skillpost-20261102",
+      "path": "research/intake/B/B-20261023-1915-T013-TROOP-POSITION-SCRATCH-01.md",
+      "bytes": 2636,
+      "mtime_ns": 1793585662342478100,
+      "content_state": "NOT_READ_METADATA_ONLY"
+    }
+  ]
+}

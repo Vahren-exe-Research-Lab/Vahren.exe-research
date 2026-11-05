@@ -124,6 +124,9 @@
 - [research/recovered/e_reports/T020_E_T013_MODE2_PRIMARY_ACCEPTANCE_20261030_14H.md 行 9](../../research/recovered/e_reports/T020_E_T013_MODE2_PRIMARY_ACCEPTANCE_20261030_14H.md?plain=1#L9-L9) — - On local stack scratch [ESP+0x68]==0, 0x44BDF5 tests nested flag [[manager+4]+0x1EF22C]; when nonzero 0x44BE0A writes 3 to manager+0x20. The next mode3 dispat
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
 
+- [research/recovered/practical_comments103/comments/comment_6606124364.md 行 16](../../research/recovered/practical_comments103/comments/comment_6606124364.md?plain=1#L16-L16) — \| 22H \| `B-20261030-22H-T013-SUM88-AH41-01` → `E-AUDIT-20261030-22H-T020-T013-SUM88-FPU-DISPATCH-01` \| `f83c19a40ade58445df2d9e7744b0894b722b174` / `cf302b6a819
+  制約・訂正　Captured GitHub connector body Unicode encoded UTF-8, not HTTP/service database raw bytes. Dated author claims only; no linked original/native/code/Library acquisition or execution. No current correctness/ABI/type/Golden/READY/semantic adoption. Mutable API comment; capture window and returned timestamps are pinned separately.
+
 - [research/recovered/tests_batch5/T020_E_T013_SUM88_BRANCH_ACCEPTANCE_20261030_22H.md 行 11](../../research/recovered/tests_batch5/T020_E_T013_SUM88_BRANCH_ACCEPTANCE_20261030_22H.md?plain=1#L11-L11) — `0x44C99E FCOMPP` → `FNSTSW AX` → `TEST AH,0x41`: clear mask leads locally to a `0x449500` call with second stack argument **2**, not a demonstrated write of 2
   制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
 
@@ -374,9 +377,6 @@
 ## manager + 0x88
 
 - [research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md 行 13](../../research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md?plain=1#L13-L13) — - 原PE 0x44C6AD ECX=EBX(manager)→0x44C6BD CALL 0x515060。0x44C6C2 ECX=[EBX+0x1C]（別group obj）/ 0x44C6C5 ESI=EAX（&manager+0x88）→0x44C6C7 CALL 0x515060。
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md 行 14](../../research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md?plain=1#L14-L14) — - 0x44C6CC ECX=[ESI]（元のmanager+0x88合計）、0x44C6CE [EBX+0xB0]=ECXで **正規化前raw値** を保持。0x44C6D4..DF はこのECXがゼロの時だけ1に変更し[ESI]（manager+0x88）へ書き戻す。負値の0 clampではない。
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

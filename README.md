@@ -2,7 +2,7 @@
 
 関数とメモリの意味を調べ、その根拠になった研究本文まで辿るための事典です。人がGitHubで読むページと、AIが検索するデータは同じ辞書・出典から生成しています。
 
-現在の正本はこの非公開リポジトリの `develop` です。公開に向けた整理とローカル文書の回収を進めています。全研究の移管・公開準備の完了を示すものではありません。 **[現在の残作業と優先順位](REMAINING_WORK.md)** を全体監査から整理しています。
+現在の正本はこの非公開リポジトリの `develop` です。関数・メモリの事典、研究本文の検索、新発見の追加手順を使えます。全研究履歴の完全回収や公開設定への切替とは区別します。 **[現在使える範囲と継続する研究](REMAINING_WORK.md)** に最終照合の結果と未取得・保留範囲をまとめています。
 
 ## まず調べる
 
@@ -49,6 +49,8 @@ python -B tools/reference.py callees 0x0055BC60 --json
 本文の文字列一致、アドレス言及、ファイル名の一致、回収成功は、それぞれ発見の手掛かりや保存状態です。動作の確定には使いません。過去の `STATIC`・`INFERRED`・`VERIFY`・合成テスト・`Golden`・`READY` の範囲も、元の記録に従います。古い報告と後日の訂正がある場合は、現在の事典・REFと訂正根拠を併せて確認してください。
 
 原本と保存版の対応は[回収台帳](research/recovered/RECOVERY_LEDGER.tsv)、Git収録物のSHAは[SOURCE_MANIFEST.tsv](SOURCE_MANIFEST.tsv)で追跡します。部分回収・個人情報だけを伏せた保存版・同一内容の別名・未確認の参照先は区別して記録します。原作素材・生成DB・未取得の証拠までGitHubに揃っているとは扱いません。
+
+合成fixtureを再利用する場合は、[指数オーバーフロー値の受入れ](research/recovered/practical_comments103/comments/comment_6636971190.md)、[旧69件から新79件への改版差分](research/recovered/practical_comments103/comments/comment_6605693130.md)、[case IDの名前空間](research/recovered/practical_comments103/comments/comment_6606124364.md)の注意も参照してください。JSONとして読めること、件数の増加、同じcase IDだけでは、入力の妥当性・独立した試験数・同じ試験内容を保証しません。
 
 ## 分野から探す
 

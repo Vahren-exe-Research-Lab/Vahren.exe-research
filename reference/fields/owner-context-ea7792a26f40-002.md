@@ -22,6 +22,9 @@
 - [research/recovered/e_reports/T020_E_T013_OFF_EXACT_VSLOT_ACCEPTANCE_20261101_02H.md 行 13](../../research/recovered/e_reports/T020_E_T013_OFF_EXACT_VSLOT_ACCEPTANCE_20261101_02H.md?plain=1#L13-L13) — [KB_CANDIDATE] E/T020 this ID crosschecks B/T013 source with original PE SHA; VA 0x45A26F/0x45A296/0x45A2C6/0x42F860/0x57D994/0x57D99B/0x57D99F/0x57D9A9; global
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
 
+- [research/recovered/practical_comments103/comments/comment_6636971190.md 行 16](../../research/recovered/practical_comments103/comments/comment_6636971190.md?plain=1#L16-L16) — - Existing **B 00H** `B-20261101-00H-T013-COORD-TRANSFORM-GATE-OUTPUT-ABI-01`: [owner text](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/247
+  制約・訂正　Captured GitHub connector body Unicode encoded UTF-8, not HTTP/service database raw bytes. Dated author claims only; no linked original/native/code/Library acquisition or execution. No current correctness/ABI/type/Golden/READY/semantic adoption. API current body has no returned created/updated timestamp; prior audit timestamps are independent metadata.
+
 - [research/recovered/tests_batch5/T020_E_T013_VIEWFLAG_CHAIN_ACCEPTANCE_20261101_01H.md 行 9](../../research/recovered/tests_batch5/T020_E_T013_VIEWFLAG_CHAIN_ACCEPTANCE_20261101_01H.md?plain=1#L9-L9) — [COMPOSITION] Downstream B00 consumer 0x4C1690: if final flag=0 OR context+0xE4 nonzero, modeled RAW_PASSTHROUGH; otherwise D3DX_REQUIRED. Route selection is no
   制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
 

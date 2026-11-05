@@ -7,6 +7,12 @@
 <a id="field-1867c"></a>
 ## Unit + 0x1867C
 
+- [research/recovered/remaining_md1/reports/data/T024_HAKUSHIN_BATTLE_AI.md 行 347](../../research/recovered/remaining_md1/reports/data/T024_HAKUSHIN_BATTLE_AI.md?plain=1#L347-L347) — [NEW ASM] 0x5684B0はowner+0x1D!=0なら+0xC/+0x10 spanを走査しUnit+0x1867C!=0を削除/Unit+0x1867D解除、span空なら0x56852D→0x527ED0。+0x1D==0ならUnit+0x1867C==0をcountし、count>0かつ先頭+0x8
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+
+- [research/recovered/search_reports1/reports/_history_20261029/EXP_SUMMON_DEATH_RESEARCH_20261021.md 行 56](../../research/recovered/search_reports1/reports/_history_20261029/EXP_SUMMON_DEATH_RESEARCH_20261021.md?plain=1#L56-L56) — - [STATIC VERIFIED] `0x575A60` はUnit+0x1867C未設定時に設定し、linked+0x1B1を立て、Unit+0x90を0にする。MissileFlash等と複数virtual呼出を経由し、Unitをある戦闘内管理配列から除去する。
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
 - [research/recovered/search_reports1/reports/_history_20261029/EXP_SUMMON_DEATH_RESEARCH_20261021.md 行 59](../../research/recovered/search_reports1/reports/_history_20261029/EXP_SUMMON_DEATH_RESEARCH_20261021.md?plain=1#L59-L59) — - [STATIC VERIFIED] `0x5684B0` はselected troop listからUnit+0x1867Cを判定し死者memberを取り除き、+0x1867Dを0にする枝を持つ。REA-20261019-2143の保存ASM限定報告と整合。
   制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
 
@@ -111,6 +117,9 @@
 
 - [research/recovered/e_reports/T020_E_T013_POSTREFILL_ACCEPTANCE_20261030_21H.md 行 10](../../research/recovered/e_reports/T020_E_T013_POSTREFILL_ACCEPTANCE_20261030_21H.md?plain=1#L10-L10) — After hypothetically reaching the mode1 path, test five ordered Unit eligibility gates: `Unit+0x1867C==0`, `Unit+0x1867E==0`, and signed `Unit+0xC0`, `+0xD0`, `
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
+
+- [research/recovered/practical_comments103/comments/comment_6605693130.md 行 12](../../research/recovered/practical_comments103/comments/comment_6605693130.md?plain=1#L12-L12) — \|15H\| `B-20261030-15H-T013-MODE2-ALT-DUALFLAG-MODE3-01` → `E-AUDIT-20261030-15H-T020-T013-MODE2-DUALGATE-01` \| `127ae3603660fa9e5b972650e8fdedb61021a45e` / **fi
+  制約・訂正　Captured GitHub connector body Unicode encoded UTF-8, not HTTP/service database raw bytes. Dated author claims only; no linked original/native/code/Library acquisition or execution. No current correctness/ABI/type/Golden/READY/semantic adoption. Mutable API comment; capture window and returned timestamps are pinned separately.
 
 - [research/recovered/rea_batch14/reports/SOURCE_RECOVERY_TYPED_DAMAGE_20261011.md 行 39](../../research/recovered/rea_batch14/reports/SOURCE_RECOVERY_TYPED_DAMAGE_20261011.md?plain=1#L39-L39) — - 通常r1..9はUnit+0x1867E非0ならglobal+0x65BD80倍率を別native整数化して、その後btl_min_damageとsigned比較し最低値へ引上げる。
   制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
@@ -330,20 +339,5 @@
 
 - [research/recovered/symbol_sources/T013_FIRST_HEAD_SENTINEL_COORD_BRANCH_NATIVE_20261031_21H.md 行 13](../../research/recovered/symbol_sources/T013_FIRST_HEAD_SENTINEL_COORD_BRANCH_NATIVE_20261031_21H.md?plain=1#L13-L13) — [GOLDEN] 原作非改変EXEと20倍変更前DAT、同一SAVE/MAP/Unit・RNG/input/tickで候補0/1/2+、+0x40=1/!=1、+0x26D=0/!=0、0x4C1860 AL両値、Unit+0x186C8/CCの次tick・最終targetを測定するまでGameplay Golden0
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation
-
-<a id="field-186cc"></a>
-## Unit + 0x186CC
-
-- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md 行 184](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md?plain=1#L184-L184) — - In `0x57DD10`, `Unit+0x18654 == 0` returns locally. With a nonempty list, the head node's candidate is inspected. Candidate `+0x40==1` **or** byte `+0x26D!=0`
-  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
-
-- [research/recovered/knowledge_history1/reports/knowledge/REF_BATTLE_AI_MORALE.md 行 121](../../research/recovered/knowledge_history1/reports/knowledge/REF_BATTLE_AI_MORALE.md?plain=1#L121-L121) — - In `0x57DD10`, `Unit+0x18654 == 0` returns locally. With a nonempty list, the head node's candidate is inspected. Candidate `+0x40==1` **or** byte `+0x26D!=0`
-  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
-
-<a id="field-186d0"></a>
-## Unit + 0x186D0
-
-- [research/recovered/b_batch3/T028_FALLBACK_GLOBAL_PAIR_RETABI_NATIVE_20261026_13H.md 行 9](../../research/recovered/b_batch3/T028_FALLBACK_GLOBAL_PAIR_RETABI_NATIVE_20261026_13H.md?plain=1#L9-L9) — - NEW 4 [STATIC ASM]: 0x5795E0の移動中間処理では0x579654/65B [Unit+0x186D0]!=0、0x579661..672 [Unit+0x186D4]==trunc([Unit+0x186D8]/2)の成立時にのみ特殊分岐へ進む。0x57978F [Unit+0x1E4AC
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

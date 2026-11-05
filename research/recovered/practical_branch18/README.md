@@ -1,0 +1,14 @@
+# 固定18文書版の実用取りこぼし確認
+
+基準 cfa984ec2cde3dc6d5033aaa0d021b55e39cc0b4、root台帳2422行。固定selection 18版を既存original knowledge Git objectからread-only取得し、全blob SHA1とraw SHA256を区別して確認した。原Git更新・linked body/native/runtime取得・テスト実行はしていない。
+
+結果: 新規保存本文0、accepted ledger追加0、既保存primaryの要約2、現行REFで結果保持5、旧案内/集計/作業・分類履歴10、既知whole scope metadata保留1。18版とも既存root source/destination SHA256とexact一致せず、「意味が既存」はbyte aliasではない。原報告2件およびB14/REA13の保存先hashはroot台帳と照合済み。
+
+短いE要約2件は全LFを読んだ。旧REF・auditは現行との差分段落と既存primaryの台帳を照合し、数値・案内資料は役割と差分を確認した。大きいE INDEXはheader/パターン/差分メタデータ確認であり、1011LFの全意味を再審査したとは主張しない。STATUSのreview_methodとold_changed_lf_rangesはこの区別を残す。行差分は今回source scopeを増やす許可ではない。
+
+B12の順位解釈はB13 fixed-anchor訂正を優先する。REA13のconditional cleanupやB14 kind8の結果は現行REFに保持されており、全ABI/実到達/attack意味へ昇格しない。旧takeover compositeは既知4C28D0内部に踏み込むためwhole metadataで閉じ、本文・抜粋を保存しない。過去acceptedでhold解除はしていない。
+
+研究結果の取りこぼしは、この18版の独立報告・REF差分の確認範囲では見つからなかった。旧索引の全リンク先、全研究、未読primaryまでの完全性は主張しない。現在参照先と歴史差はSTATUSに記録した。core/shared/Gitファイルは変更せず、このフォルダの監査票だけを作成した。
+
+入力pin: DOCUMENT_SELECTION_LEADS.tsv SHA256 8f04a08852ed21a1344459ca8e1709276ec8a6826d39685b6aeada1091d3a2f1; root RECOVERY_LEDGER.tsv SHA256 60fb158b941a5edaaa2fec4ab8c8f57c5f9a8c292e353b8d076e0f7ce82c9f6e。
+OUTPUT_MANIFEST.tsvは自身を除く出力をhashする。

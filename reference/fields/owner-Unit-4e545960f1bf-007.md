@@ -280,6 +280,12 @@
 - [research/recovered/knowledge_history1/reports/knowledge/REF_BATTLE_AI_MORALE.md 行 92](../../research/recovered/knowledge_history1/reports/knowledge/REF_BATTLE_AI_MORALE.md?plain=1#L92-L92) — - Scheduler A: `0x449792 -> 0x448E90` is followed by a Unit-pointer-vector walk, `Unit+0x1867C==0` test and mode-dependent additional `0x44D070` index gates. On
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
 
+- [research/recovered/practical_comments103/comments/comment_6605693130.md 行 11](../../research/recovered/practical_comments103/comments/comment_6605693130.md?plain=1#L11-L11) — \|14H\| `B-20261030-14H-T013-MODE2-PRIMARY-UNIT-MODE3-GATE-01` → `E-AUDIT-20261030-14H-T020-T013-MODE2-PRIMARY-GATE-01` \| `78f4d561e69953e28dfc7b5e68e0e40879a3a49
+  制約・訂正　Captured GitHub connector body Unicode encoded UTF-8, not HTTP/service database raw bytes. Dated author claims only; no linked original/native/code/Library acquisition or execution. No current correctness/ABI/type/Golden/READY/semantic adoption. Mutable API comment; capture window and returned timestamps are pinned separately.
+
+- [research/recovered/practical_comments103/comments/comment_6605693130.md 行 12](../../research/recovered/practical_comments103/comments/comment_6605693130.md?plain=1#L12-L12) — \|15H\| `B-20261030-15H-T013-MODE2-ALT-DUALFLAG-MODE3-01` → `E-AUDIT-20261030-15H-T020-T013-MODE2-DUALGATE-01` \| `127ae3603660fa9e5b972650e8fdedb61021a45e` / **fi
+  制約・訂正　Captured GitHub connector body Unicode encoded UTF-8, not HTTP/service database raw bytes. Dated author claims only; no linked original/native/code/Library acquisition or execution. No current correctness/ABI/type/Golden/READY/semantic adoption. Mutable API comment; capture window and returned timestamps are pinned separately.
+
 - [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 340](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L340-L340) — [FACT-2] 0x5150E0は同じcontainer風の+0x48/+0x4C pointer配列を4-byte単位で走査し、Unit+0x1867C==0のみlinked=[Unit+0x1C8]の+0x1C4を読込む（VA0x515110..0x515128）。続けてUnit+0x1B8をindexとしてgl
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 
@@ -303,11 +309,5 @@
 
 - [research/recovered/remaining_md1/reports/data/T012_T013_WRQ_SKILL_INTEGRATION_BRIDGE_20261013.md 行 88](../../research/recovered/remaining_md1/reports/data/T012_T013_WRQ_SKILL_INTEGRATION_BRIDGE_20261013.md?plain=1#L88-L88) — [B-MT-02 SUBSTAGE / B-20261013-1614-01] Postdamage0x551196 calls 0x576F10 with EAX Unit、ECX Skill+0x248 (`flash`)、EDX Skill+0x6F0 count、stack=&Skill+0x6F4 recor
   制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
-
-- [research/recovered/remaining_md1/reports/data/T024_HAKUSHIN_BATTLE_AI.md 行 347](../../research/recovered/remaining_md1/reports/data/T024_HAKUSHIN_BATTLE_AI.md?plain=1#L347-L347) — [NEW ASM] 0x5684B0はowner+0x1D!=0なら+0xC/+0x10 spanを走査しUnit+0x1867C!=0を削除/Unit+0x1867D解除、span空なら0x56852D→0x527ED0。+0x1D==0ならUnit+0x1867C==0をcountし、count>0かつ先頭+0x8
-  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
-
-- [research/recovered/search_reports1/reports/_history_20261029/EXP_SUMMON_DEATH_RESEARCH_20261021.md 行 56](../../research/recovered/search_reports1/reports/_history_20261029/EXP_SUMMON_DEATH_RESEARCH_20261021.md?plain=1#L56-L56) — - [STATIC VERIFIED] `0x575A60` はUnit+0x1867C未設定時に設定し、linked+0x1B1を立て、Unit+0x90を0にする。MissileFlash等と複数virtual呼出を経由し、Unitをある戦闘内管理配列から除去する。
-  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

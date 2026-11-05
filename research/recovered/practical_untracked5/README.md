@@ -1,0 +1,13 @@
+# 未追跡Markdown固定5件の移行漏れ確認
+
+基準 cfa984ec2cde3dc6d5033aaa0d021b55e39cc0b4、root台帳2422行。親のmetadata inventoryは35登録worktree・2483 MD・untracked/ignored 5 literalを報告する。APPROVED_INPUTS.jsonはその入力票を無改変保存したもの。35worktreeの全bodyを今回再走査したとは主張しない。
+
+結果: 既受理exact同一2（CATALOG/REF_STRUCTS）、既受理primaryの要約2（B1708/B1915）、既知whole scope metadataのみ1（REF_ADDRESSES）。新規本文0・REPORT_LEDGER追加0。STATUSに全5件の理由と現在参照先を記録した。B1915のprimary保存先はb_batch10である。
+
+独立4原本だけstable size/mtime・containment/no-reparseを確認しSHA256を実測した。exact2件は保存先hashも確認して既存reviewを再利用。B要約2件は全LFと原報告26/18LFを照合し、意味上の新訂正を発見しなかった。後日のV9検索/EXE照合という要約の記録は著者の過去報告であり、今回再検証でも新しい関数意味の証明でもない。
+
+REF_ADDRESSESはsource本文もhash用bytesも今回取得しない。既存outside_kb1のspecific5769B0/whole580280保留記録とsource path/size/mtimeが対応する。旧SHAを現在実測SHAへ転記せず、byteidentity未確認を残す。保留本文・抜粋は保存しない。
+
+original/Git/core/sharedの変更・linked native/code/log/assets/DB/game取得・実行は一切していない。確認範囲で未保存の有用なprimary結果・訂正は見つからなかった。全研究の完全性や未読資料の安全性は主張しない。
+
+入力票raw SHA256: 1b47ece9517e32092c89b33e3fb4f527e5401962fd23dc9ade6754b72fddce6d。OUTPUT_MANIFESTは自身を除く出力をhashする。

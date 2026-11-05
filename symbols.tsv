@@ -282,7 +282,7 @@
 # ---- イベント・式・乱数 ----
 0x44F470	func	Event_EvaluatePhasePredicate	イベントのフェーズ条件やターン条件を評価する処理領域。個別の opcode 分岐があり、各条件の入力には現在の実行モードが影響する。	推定	T010§battle clock native semantics, T031§2026-10-13 phase predicates
 0x4C1FC0	func	Random_InitializeMapSeed	マップの乱数初期化の経路。内部から CRT srand を呼び、別のマップ初期化ステップにも接続する。	静的確認	T031§17 Native reseed boundaries
-0x4C2240	func	Random_ContinueMapSeedSetup	シーンの乱数リセット後に呼び出される補助。フェーズ5/6などの設定に応じた乱数経路の一部。	推定	T031§2026-10-12 A51, §17
+0x4C2240	func	Vector32_Append_4C2240	保存済み局所解析では、owner+0x64/+0x68/+0x6Cで管理する4B要素vectorへ値を追加する補助。Bの呼出し箇所はTask待機列の文脈。旧T031のscene乱数reset後の呼出し記録を、callee自体の乱数専用処理とは一般化しない。全caller型・実機動作は未確認。	推定	T031§2026-10-12 A51, §17 [旧caller文脈]; data/T013_TASK_PENDING_APPEND_4C2240_CONTRACT_20261013.md lines3-5 [recovered=research/recovered/b_batch10/data/T013_TASK_PENDING_APPEND_4C2240_CONTRACT_20261013.md; sha256=5c5230f15ad15770caccc1e299c12b43e40d9d2e26512750ac06161639855abf; historical author static claim, no new native/runtime test]
 0x48C880	func	Event_RunWorldPhase	World の場面更新を行う入口の一つ。GameManager の場面切替から呼ばれ、world phase dispatchへ進む。	静的確認	T010§phase frameInstallMode=0 caller分類
 0x48B4A0	func	Scene_RunRngResetBranch	場面更新の途中で0x48B658から共通の乱数リセットを呼ぶ分岐を含む。場面番号による実際の用途は未確認。	推定	T031§17 Native reseed boundaries
 0x48BF60	func	Scene_RunPhase5SeedSetup	実行フェーズ5を設定した後、0x48BFECで共通リセット0x4C1FC0を呼び、0x48BFF8で後続補助0x4C2240を呼ぶ。旧ロード一般処理という説明は過大だった。	静的確認	T031§2026-10-12 A51
