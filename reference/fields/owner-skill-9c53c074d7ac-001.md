@@ -25,6 +25,9 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1078](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1078-L1078) — \| skill+0x2A8 \| 0x59BD42..0x59BE56: exp_per=off→−123456.0、on→1.0、それ以外 int×0.01（無指定 0.0） \| CONFIRMED \|
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+- [research/recovered/rea_batch13/reports/FINDINGS_20261010.md 行 79](../../research/recovered/rea_batch13/reports/FINDINGS_20261010.md?plain=1#L79-L79) — - **`0x551E50` T012/T011**: pseudoに `skill+0x2A8 != -123456.0` sentinel gate, `param_2/param_3` 比率（分母非0時）、skill mode+0x40別の比率境界(default 0.01..0.33 / case3 0.02
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
 <a id="field-2b0"></a>
 ## skill + 0x2B0
 

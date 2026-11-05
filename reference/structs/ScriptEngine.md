@@ -6,6 +6,19 @@
 
 - [GameManager + 0x504 engine](../structs/GameManager.md#field-504) → `uses_layout` → [ScriptEngine](../structs/ScriptEngine.md)。訂正済みの基準表でE=engine=G+0x504を確認。ScriptEngineはこの埋め込みE領域に付けた事典上のレイアウト名であり、原作のC++クラス名・RTTI名を確定したものではない。 （静的確認（回収済み研究の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3538-L3545) · `MEM-VM-EMBEDDED-ENGINE-LAYOUT`
 
+<a id="field-1eec3c"></a>
+## 0x1EEC3C currentExecutionMode
+
+0x4335E0が分岐に使う現在の実行モード。報告ではmode2が戦闘。phaseの識別値やフレーム設定方式とは別。幅・宣言enum型・合法な遷移の全体は不明。
+
+- 型　`unknown`
+- 辞書の確度　静的確認
+- 辞書の出典表記　data/T010_EVENT_SCHEDULER.md lines227-235; REF_SCRIPT_VM_CONTEXT.md lines3-4
+- 出典 [data/T010_EVENT_SCHEDULER.md](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md)。Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
+- [元の辞書行](../../structs.tsv#L122)
+
+- [Event_RunExecutionMode](../symbols/004335E0.md) → `reads` → [ScriptEngine + 0x1EEC3C currentExecutionMode](../structs/ScriptEngine.md#field-1eec3c)。実行ループが現在の実行モードを読み、mode1・2・6を別経路に分岐する。phaseの識別値とは区別する。 （静的確認（回収済み研究の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L227-L235) · `MEM2-VM-DISPATCH-READ-MODE`
+
 <a id="field-1eec44"></a>
 ## 0x1EEC44 battleActive
 
@@ -19,6 +32,20 @@ mode2 で戦闘更新の前後に読む byte のゲート。合法な状態遷�
 - [元の辞書行](../../structs.tsv#L115)
 
 - [Event_TestBattleActiveGate](../symbols/004335FA.md) → `reads` → [ScriptEngine + 0x1EEC44 battleActive](../structs/ScriptEngine.md#field-1eec44)。実行モード2で更新前後のactiveバイトを検査し、本呼出元でVM runnerへ進むかを決める。他の呼出元での実行まで排除する主張ではない。 （静的確認（回収済み研究の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L375-L376) · `MEM-VM-ACTIVE-GATE`
+
+<a id="field-1eed58"></a>
+## 0x1EED58 waitCounter
+
+waitが評価した引数を保持するカウンタ。インタプリタの継続ごとに減算し、終了時に0x80000008へ戻す。幅・宣言符号型・場面ごとの完全な挙動は不明。
+
+- 型　`unknown`
+- 辞書の確度　静的確認
+- 辞書の出典表記　data/T010_EVENT_SCHEDULER.md lines97-104; REF_SCRIPT_VM_CONTEXT.md lines3-4,15
+- 出典 [data/T010_EVENT_SCHEDULER.md](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md)。Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
+- [元の辞書行](../../structs.tsv#L121)
+
+- [Script_Op_Wait](../symbols/004A17D8.md) → `reads` → [ScriptEngine + 0x1EED58 waitCounter](../structs/ScriptEngine.md#field-1eed58)。既存のwait命令（opcode9）の位置で、インタプリタの継続ごとに減算する保持カウンタを読む。OSのsleepではない。 （静的確認（回収済み研究の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L97-L104) · `MEM2-VM-WAIT-READ-COUNTER`
+- [Script_Op_Wait](../symbols/004A17D8.md) → `writes` → [ScriptEngine + 0x1EED58 waitCounter](../structs/ScriptEngine.md#field-1eed58)。waitは評価した引数を保持し、インタプリタの継続ごとに減算して、終了時に番兵0x80000008へ戻す。場面による実行スタックの扱いは別条件として残る。 （静的確認（回収済み研究の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L97-L104) · `MEM2-VM-WAIT-WRITE-COUNTER`
 
 <a id="field-1eed60"></a>
 ## 0x1EED60 resettableElapsed
@@ -36,6 +63,24 @@ getTime が返す int32 の経過カウンタ。resetTime はこの値だけを0
 - [Event_ResetBattleClock](../symbols/004B47FC.md) → `writes` → [ScriptEngine + 0x1EED60 resettableElapsed](../structs/ScriptEngine.md#field-1eed60)。resetTimeはこのカウンタだけを0にする。isInterval側の時計と位相はリセットしない。 （静的確認（回収済み研究の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L108-L130) · `MEM-VM-TIME-RESET`
 - [Event_InitializeBattleClock](../symbols/00492710.md) → `writes` → [ScriptEngine + 0x1EED60 resettableElapsed](../structs/ScriptEngine.md#field-1eed60)。戦闘準備でリセット可能な経過カウンタを0に初期化する。 （静的確認（回収済み研究の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L108-L127) · `MEM-VM-TIME-SETUP`
 - [BattleEvent_InstallBattleBlock](../symbols/00492890.md) → `writes` → [ScriptEngine + 0x1EED60 resettableElapsed](../structs/ScriptEngine.md#field-1eed60)。battleEvent準備でもリセット可能な経過カウンタを0に初期化する。 （静的確認（回収済み研究の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L108-L127) · `MEM-VM-TIME-BLOCK-SETUP`
+- [Event_ProcessBattleTick](../symbols/00492D80.md) → `writes` → [ScriptEngine + 0x1EED60 resettableElapsed](../structs/ScriptEngine.md#field-1eed60)。同じ報告上の0x492D80系が、別のリセット可能な経過カウンタを処理tickごとに1増やす。既存入口との対応は推定で、厳密な内部命令位置と実機動作は未確認。 （推定（報告の0x492D80系を既存入口に対応。厳密な命令位置未確認。原作再検証なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L125-L133) · `MEM2-VM-TICK-WRITE-ELAPSED`
+
+<a id="field-1eed64"></a>
+## 0x1EED64 absoluteSchedulerCounter
+
+isIntervalと報告上の10tickごとの制限時間更新に使う絶対スケジューラ時計。リセット可能な+0x1EED60とは別。選択した本文には幅・宣言符号型の明記がなく、実機未検証。
+
+- 型　`unknown`
+- 辞書の確度　静的確認
+- 辞書の出典表記　data/T010_EVENT_SCHEDULER.md lines108-114,125-133; REF_SCRIPT_VM_CONTEXT.md lines3-4,17
+- 出典 [data/T010_EVENT_SCHEDULER.md](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md)。Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
+- [元の辞書行](../../structs.tsv#L120)
+
+- [Expression_TestBattleInterval](../symbols/00451915.md) → `reads` → [ScriptEngine + 0x1EED64 absoluteSchedulerCounter](../structs/ScriptEngine.md#field-1eed64)。isIntervalは、正の指定間隔を10の倍数に切り上げた除数で絶対時計の余りを調べる。 （静的確認（回収済み研究の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L108-L114) · `MEM2-VM-INTERVAL-READ-ABS`
+- [Event_InitializeBattleClock](../symbols/00492710.md) → `writes` → [ScriptEngine + 0x1EED64 absoluteSchedulerCounter](../structs/ScriptEngine.md#field-1eed64)。戦闘開始の初期化で、リセット可能な経過カウンタとともに絶対スケジューラ時計を0にする。 （静的確認（回収済み研究の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L125-L133) · `MEM2-VM-SETUP-WRITE-ABS`
+- [BattleEvent_InstallBattleBlock](../symbols/00492890.md) → `writes` → [ScriptEngine + 0x1EED64 absoluteSchedulerCounter](../structs/ScriptEngine.md#field-1eed64)。battleEventの設定でも絶対スケジューラ時計を0に初期化する。 （静的確認（回収済み研究の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L125-L133) · `MEM2-VM-BLOCKSETUP-WRITE-ABS`
+- [Event_ProcessBattleTick](../symbols/00492D80.md) → `reads` → [ScriptEngine + 0x1EED64 absoluteSchedulerCounter](../structs/ScriptEngine.md#field-1eed64)。報告が0x492D80系に帰属させる10での剰余による制限時間更新判定を、既存入口へ対応付けたもの。厳密な内部命令位置と合法な実機到達は未確認。 （推定（報告の0x492D80系を既存入口に対応。厳密な命令位置未確認。原作再検証なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L125-L133) · `MEM2-VM-TICK-READ-ABS`
+- [Event_ProcessBattleTick](../symbols/00492D80.md) → `writes` → [ScriptEngine + 0x1EED64 absoluteSchedulerCounter](../structs/ScriptEngine.md#field-1eed64)。報告上の0x492D80系は処理tickごとに絶対時計を1増やす。既存入口との対応は推定で、厳密な内部命令位置や実機の周期を確認したものではない。 （推定（報告の0x492D80系を既存入口に対応。厳密な命令位置未確認。原作再検証なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L125-L133) · `MEM2-VM-TICK-WRITE-ABS`
 
 <a id="field-1eed78"></a>
 ## 0x1EED78 executionBlocks

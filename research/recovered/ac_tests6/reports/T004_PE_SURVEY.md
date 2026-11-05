@@ -1,0 +1,327 @@
+# T004 PE survey
+
+## PE files
+### v701
+- Vahren/Vahren.exe size=2957824 sha256=7813D61EFD3BE03CB838C54098B5DD7B162E0EC8E4375BC9E6B07C8A0236CE4F
+  - machine=0x014C entry=0x1C627B image_base=0x400000 timestamp=1525157142
+  - sections: .text(2125312 bytes,A9D2FE381AD6), .rdata(339968 bytes,0044D41E6192), .data(381440 bytes,173FA749E478), .rsrc(512 bytes,B1298EA4BA09), .reloc(109568 bytes,3C847FB87EC9)
+  - imports: KERNEL32.dll[95], USER32.dll[38], GDI32.dll[26], ole32.dll[5], d3d9.dll[1], d3dx9_35.dll[16], MSIMG32.dll[2], DINPUT8.dll[1], WINMM.dll[8], DSOUND.dll[1]
+- Vahren/Vahren@chip3.ÉVâAâCâRâôö┬.exe size=2957824 sha256=7813D61EFD3BE03CB838C54098B5DD7B162E0EC8E4375BC9E6B07C8A0236CE4F
+  - machine=0x014C entry=0x1C627B image_base=0x400000 timestamp=1525157142
+  - sections: .text(2125312 bytes,A9D2FE381AD6), .rdata(339968 bytes,0044D41E6192), .data(381440 bytes,173FA749E478), .rsrc(512 bytes,B1298EA4BA09), .reloc(109568 bytes,3C847FB87EC9)
+  - imports: KERNEL32.dll[95], USER32.dll[38], GDI32.dll[26], ole32.dll[5], d3d9.dll[1], d3dx9_35.dll[16], MSIMG32.dll[2], DINPUT8.dll[1], WINMM.dll[8], DSOUND.dll[1]
+### hakushin_core
+- 新約迫真戦記―ほのぼの神話ver0.67 豪華版/d3dx9_35.dll size=3727720 sha256=2198022938156B790E9CFB0F7997494B66A11A1AD49B395BE58251D635B66B26
+  - machine=0x014C entry=0x34F121 image_base=0x400000 timestamp=1184882078
+  - sections: .text(3523584 bytes,566CEAD7B624), .data(99328 bytes,1FD2F9FE65C2), .rsrc(1024 bytes,0EFB538BE57C), .reloc(93184 bytes,83DFE2028F44)
+  - imports: msvcrt.dll[96], GDI32.dll[27], KERNEL32.dll[80], ADVAPI32.dll[3]
+- 新約迫真戦記―ほのぼの神話ver0.67 豪華版/Vahren.exe size=2910720 sha256=E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187
+  - machine=0x014C entry=0x1B8644 image_base=0x400000 timestamp=1476792537
+  - sections: .text(2129920 bytes,7C701DD0629F), .rdata(329728 bytes,2958A42DDE8D), .data(211968 bytes,E7560DEC4D03), .rsrc(89088 bytes,26FDF9547AF2), .reloc(148992 bytes,62C3C30D879A)
+  - imports: MSIMG32.dll[2], d3d9.dll[1], d3dx9_35.dll[16], KERNEL32.dll[89], USER32.dll[39], GDI32.dll[26], ole32.dll[5], DINPUT8.dll[1], WINMM.dll[8], DSOUND.dll[1]
+- 新約迫真戦記―ほのぼの神話ver0.67 豪華版/新約迫真戦記ーほのぼの神話ー.exe size=3108352 sha256=10BEC554C717ACBB1F6289EE7E46A83EF75936C2F2D14B37D3DC62FDCA426A5F
+  - machine=0x014C entry=0x1B8644 image_base=0x400000 timestamp=1476792537
+  - sections: .text(2129920 bytes,7C701DD0629F), .rdata(329728 bytes,2958A42DDE8D), .data(211968 bytes,E7560DEC4D03), .rsrc(286720 bytes,D8DF2660B9FF), .reloc(148992 bytes,62C3C30D879A)
+  - imports: MSIMG32.dll[2], d3d9.dll[1], d3dx9_35.dll[16], KERNEL32.dll[89], USER32.dll[39], GDI32.dll[26], ole32.dll[5], DINPUT8.dll[1], WINMM.dll[8], DSOUND.dll[1]
+
+## Vahren701 vs Hakushin Vahren section equality
+- .data: same=False
+- .rdata: same=False
+- .reloc: same=False
+- .rsrc: same=False
+- .text: same=False
+
+## Vahren701 import groups
+- KERNEL32.dll: FlushFileBuffers, SetStdHandle, FreeEnvironmentStringsW, GetEnvironmentStringsW, GetCommandLineW, GetCommandLineA, GetOEMCP, IsValidCodePage, FindFirstFileExA, GetProcessHeap, EnumSystemLocalesW, GetUserDefaultLCID, IsValidLocale, GetFileType, ReadConsoleW, GetConsoleMode, SetFilePointerEx, GetACP, GetStdHandle, GetModuleFileNameA, ExitProcess, HeapFree, HeapReAlloc, HeapAlloc, HeapSize, CreateFileW, SetEndOfFile, GetCurrentProcessId, GetCurrentDirectoryW, Process32Next, CreateToolhelp32Snapshot, OpenProcess, TerminateProcess, Process32First, DeleteCriticalSection, CreateThread, GetExitCodeThread, InitializeCriticalSection, LeaveCriticalSection, EnterCriticalSection, WaitForSingleObject, GetFileSize, CloseHandle, CreateFileA, SetFilePointer, WriteFile, ReadFile, Sleep, MultiByteToWideChar, GetLocalTime, GetTickCount, GetConsoleCP, GetModuleHandleExW, FreeLibraryAndExitThread, ResumeThread, ExitThread, LoadLibraryExW, FreeLibrary, RaiseException, InterlockedPushEntrySList, RtlUnwind, GetCurrentThreadId, QueryPerformanceCounter, GetStartupInfoW, WriteConsoleW, IsDebuggerPresent, InitializeSListHead, IsProcessorFeaturePresent, GetCurrentProcess, SetUnhandledExceptionFilter, UnhandledExceptionFilter, WaitForSingleObjectEx, ResetEvent, SetEvent, GetCPInfo, GetStringTypeW, GetLocaleInfoW, LCMapStringW, FindClose, FindNextFileA, DecodePointer, EncodePointer, GetProcAddress, GetModuleHandleW, GetSystemTimeAsFileTime, TlsFree, TlsSetValue, TlsGetValue, TlsAlloc, FindFirstFileA, WideCharToMultiByte, GetLastError, SetLastError, InitializeCriticalSectionAndSpinCount, CreateEventW
+- USER32.dll: CreateWindowExA, UpdateWindow, RegisterClassA, ShowWindow, LoadIconA, PostQuitMessage, InflateRect, DefWindowProcA, SendMessageA, ReleaseDC, GetDC, MessageBoxA, SetWindowTextA, SetWindowTextW, MessageBoxExA, PostMessageA, MessageBoxExW, GetCursorPos, ScreenToClient, PeekMessageA, TranslateMessage, DispatchMessageA, GetMessageA, DrawFrameControl, PtInRect, DrawEdge, DrawTextW, IntersectRect, FrameRect, DrawTextA, UnionRect, FillRect, DestroyCursor, DestroyWindow, LoadCursorA, AdjustWindowRectEx, LoadCursorFromFileA, InvertRect
+- GDI32.dll: CreatePen, GetTextColor, SetDCPenColor, BitBlt, SelectObject, GetTextExtentPoint32A, CreateCompatibleDC, StretchBlt, GetStockObject, DeleteDC, TextOutW, GetTextExtentPoint32W, SetTextColor, TextOutA, SetBkMode, LineTo, SetDCBrushColor, MoveToEx, SetBkColor, GetCurrentObject, AddFontResourceExA, CreateDIBSection, CreateBitmap, DeleteObject, GetObjectA, CreateFontA
+- ole32.dll: CoInitializeEx, CoUninitialize, CoInitialize, CoTaskMemFree, CoCreateInstance
+- d3d9.dll: Direct3DCreate9
+- d3dx9_35.dll: D3DXLoadSurfaceFromFileInMemory, D3DXMatrixInverse, D3DXMatrixScaling, D3DXGetImageInfoFromFileInMemory, D3DXLoadSurfaceFromMemory, D3DXPlaneFromPoints, D3DXVec3TransformCoord, D3DXMatrixRotationZ, D3DXVec3Unproject, D3DXVec3Project, D3DXMatrixLookAtLH, D3DXMatrixPerspectiveFovLH, D3DXMatrixTranslation, D3DXPlaneIntersectLine, D3DXMatrixRotationX, D3DXMatrixMultiply
+- MSIMG32.dll: TransparentBlt, AlphaBlend
+- DINPUT8.dll: DirectInput8Create
+- WINMM.dll: timeGetTime, mmioRead, mmioClose, mmioAscend, mmioOpenA, mmioDescend, timeEndPeriod, timeBeginPeriod
+- DSOUND.dll: #11
+
+## Vahren701 relevant ASCII strings
+-  Base Class Descriptor at (
+-  Class Hierarchy Descriptor'
+-  Type Descriptor'
+- *.dat
+- .?AUScriptBattle@@
+- .?AUScriptBlock@@
+- .?AUScriptData@@
+- .?AUScriptElement@@
+- .?AUScriptFunc@@
+- .?AUScriptIF@@
+- .?AUScriptSet@@
+- .?AUScriptWhile@@
+- .?AVGameMouse@@
+- .?AVGameWindow@@
+- .?AVLoadException@@
+- .?AVLoadWnd@@
+- .?AVNewGameMouse@@
+- .?AVOggDecoder@@
+- .?AVPCMDecoder@@
+- .?AVSaveWnd@@
+- .?AVScenarioSelectWnd@@
+- .?AVScenarioText2Wnd@@
+- .?AVScenarioTextWnd@@
+- .dat
+- .data
+- .data$r
+- .jpg
+- .map
+- .ogg
+- .png
+- /script
+- /script2
+- ?OggS
+- @.data
+- @scenario
+- @special.png
+- AdjustWindowRectEx
+- CreateWindowExA
+- D3DXGetImageInfoFromFileInMemory
+- D3DXLoadSurfaceFromFileInMemory
+- D3DXLoadSurfaceFromMemory
+- D3DXMatrixInverse
+- D3DXMatrixLookAtLH
+- D3DXMatrixMultiply
+- D3DXMatrixPerspectiveFovLH
+- D3DXMatrixRotationX
+- D3DXMatrixRotationZ
+- D3DXMatrixScaling
+- D3DXMatrixTranslation
+- D3DXPlaneFromPoints
+- D3DXPlaneIntersectLine
+- D3DXVec3Project
+- D3DXVec3TransformCoord
+- D3DXVec3Unproject
+- DSOUND.dll
+- DecodePointer
+- DefWindowProcA
+- DestroyWindow
+- Direct3DCreate9
+- DirectInput8Create
+- DirectX9
+- EncodePointer
+- GetCurrentDirectoryW
+- LoadCursorA
+- LoadCursorFromFileA
+- LoadIconA
+- LoadLibraryExW
+- SetWindowTextA
+- SetWindowTextW
+- ShowWindow
+- UpdateWindow
+- WAVE
+- _add.png
+- _all.png
+- _assist.png
+- _item.png
+- _leader.png
+- a_default
+- a_default/
+- a_system/alltp.png
+- a_system/debug_paper.txt
+- a_system/load.png
+- a_system/lockon.png
+- a_system/mouse.cur
+- a_system/nextmsg.png
+- auto save
+- b_sound_count
+- b_sound_itv_max
+- b_sound_itv_min
+- b_sound_no_repeat
+- b_sound_volume
+- bad file descriptor
+- d3d9.dll
+- d3dx9_35.dll
+- debug_paper.txt
+- direct
+- directory not empty
+- encode
+- invalid deque<T> subscript
+- invalid vector<T> subscript
+- is a directory
+- isScenario
+- item_window
+- keep_direct
+- load
+- load*
+- no auto save
+- no save
+- no such file or directory
+- no_autosave
+- not a directory
+- quickreload
+- reloadMenu
+- save
+- save_name
+- scenario
+- scenario_select2
+- scenariotext
+- script/
+- script/english.txt
+- script/language*.txt
+- script/unicode.txt
+- script2
+- script2/
+- sound
+- sound/
+- sound_count
+- sound_volume
+- t_sound_volume
+- uDirectX9
+- wave
+- wave_rotate
+
+## Hakushin Vahren import groups
+- MSIMG32.dll: TransparentBlt, AlphaBlend
+- d3d9.dll: Direct3DCreate9
+- d3dx9_35.dll: D3DXVec3TransformCoord, D3DXLoadSurfaceFromMemory, D3DXGetImageInfoFromFileInMemory, D3DXLoadSurfaceFromFileInMemory, D3DXPlaneFromPoints, D3DXMatrixPerspectiveFovLH, D3DXMatrixMultiply, D3DXMatrixScaling, D3DXVec3Unproject, D3DXMatrixRotationX, D3DXPlaneIntersectLine, D3DXVec3Project, D3DXMatrixInverse, D3DXMatrixTranslation, D3DXMatrixLookAtLH, D3DXMatrixRotationZ
+- KERNEL32.dll: SetFilePointer, WriteFile, ReadFile, CloseHandle, WaitForSingleObject, InitializeCriticalSection, LeaveCriticalSection, EnterCriticalSection, GetExitCodeThread, DeleteCriticalSection, CreateThread, Process32First, OpenProcess, TerminateProcess, GetCurrentDirectoryW, Process32Next, CreateToolhelp32Snapshot, GetCurrentProcessId, GetFileType, InitializeCriticalSectionAndSpinCount, SetHandleCount, GetStringTypeW, GetLocaleInfoW, GetModuleFileNameW, GetStdHandle, HeapCreate, GetCurrentThreadId, SetLastError, TlsFree, GetFileSize, TlsGetValue, TlsAlloc, IsValidCodePage, GetOEMCP, GetACP, ExitProcess, GetModuleHandleW, GetProcAddress, HeapSize, IsProcessorFeaturePresent, IsDebuggerPresent, SetUnhandledExceptionFilter, UnhandledExceptionFilter, GetCurrentProcess, GetCPInfo, LCMapStringW, HeapAlloc, RtlUnwind, RaiseException, GetStartupInfoW, HeapSetInformation, GetCommandLineA, ResumeThread, ExitThread, HeapFree, GetLastError, CreateFileA, Sleep, GetTickCount, GetLocalTime, MultiByteToWideChar, FindNextFileA, FindClose, FindFirstFileA, WideCharToMultiByte, GetModuleFileNameA, FreeEnvironmentStringsW, GetProcessHeap, GetEnvironmentStringsW, QueryPerformanceCounter, GetSystemTimeAsFileTime, GetUserDefaultLCID, GetLocaleInfoA, EnumSystemLocalesA, IsValidLocale, HeapReAlloc, LoadLibraryW, SetStdHandle, GetConsoleCP, GetConsoleMode, FlushFileBuffers, DecodePointer, EncodePointer, InterlockedDecrement, InterlockedIncrement, WriteConsoleW, CreateFileW, SetEndOfFile, TlsSetValue
+- USER32.dll: ReleaseDC, GetDC, LoadImageA, MessageBoxA, SetWindowTextW, SetWindowTextA, MessageBoxExW, MessageBoxExA, PostMessageA, GetCursorPos, ScreenToClient, DispatchMessageA, DestroyWindow, SendMessageA, PostQuitMessage, LoadIconA, CreateWindowExA, DefWindowProcA, DestroyCursor, ShowWindow, AdjustWindowRectEx, UpdateWindow, LoadCursorA, RegisterClassA, LoadCursorFromFileA, InvertRect, FillRect, DrawTextW, DrawTextA, DrawEdge, PtInRect, InflateRect, IntersectRect, UnionRect, FrameRect, DrawFrameControl, GetMessageA, TranslateMessage, PeekMessageA
+- GDI32.dll: MoveToEx, BitBlt, GetTextExtentPoint32W, GetTextExtentPoint32A, LineTo, SetTextColor, DeleteDC, GetCurrentObject, SetDCBrushColor, SetBkColor, SetBkMode, CreateCompatibleDC, TextOutW, GetStockObject, SelectObject, CreatePen, StretchBlt, AddFontResourceExA, GetTextColor, CreateDIBSection, CreateBitmap, SetDCPenColor, CreateFontA, DeleteObject, GetObjectA, TextOutA
+- ole32.dll: CoTaskMemFree, CoInitializeEx, CoInitialize, CoUninitialize, CoCreateInstance
+- DINPUT8.dll: DirectInput8Create
+- WINMM.dll: mmioRead, mmioOpenA, mmioClose, mmioDescend, timeEndPeriod, timeBeginPeriod, timeGetTime, mmioAscend
+- DSOUND.dll: #11
+
+## Hakushin Vahren relevant ASCII strings
+-  Base Class Descriptor at (
+-  Class Hierarchy Descriptor'
+-  Type Descriptor'
+- *.dat
+- .?AUScriptBattle@@
+- .?AUScriptBlock@@
+- .?AUScriptData@@
+- .?AUScriptElement@@
+- .?AUScriptFunc@@
+- .?AUScriptIF@@
+- .?AUScriptSet@@
+- .?AUScriptWhile@@
+- .?AVGameMouse@@
+- .?AVGameWindow@@
+- .?AVLoadException@@
+- .?AVLoadWnd@@
+- .?AVNewGameMouse@@
+- .?AVOggDecoder@@
+- .?AVPCMDecoder@@
+- .?AVSaveWnd@@
+- .?AVScenarioSelectWnd@@
+- .?AVScenarioText2Wnd@@
+- .?AVScenarioTextWnd@@
+- .dat
+- .jpg
+- .map
+- .ogg
+- .png
+- /script
+- /script2
+- 30383D3d3l3x3
+- ?OggS
+- @.data
+- @.png
+- @a_default/
+- @load
+- @save
+- @scenario
+- @scenario_select2
+- @sound
+- @special.png
+- AdjustWindowRectEx
+- Bad file descriptor
+- CreateWindowExA
+- D3DXGetImageInfoFromFileInMemory
+- D3DXLoadSurfaceFromFileInMemory
+- D3DXLoadSurfaceFromMemory
+- D3DXMatrixInverse
+- D3DXMatrixLookAtLH
+- D3DXMatrixMultiply
+- D3DXMatrixPerspectiveFovLH
+- D3DXMatrixRotationX
+- D3DXMatrixRotationZ
+- D3DXMatrixScaling
+- D3DXMatrixTranslation
+- D3DXPlaneFromPoints
+- D3DXPlaneIntersectLine
+- D3DXVec3Project
+- D3DXVec3TransformCoord
+- D3DXVec3Unproject
+- DSOUND.dll
+- DecodePointer
+- DefWindowProcA
+- DestroyWindow
+- Direct3DCreate9
+- DirectInput8Create
+- DirectX9
+- Directory not empty
+- EncodePointer
+- GetActiveWindow
+- GetCurrentDirectoryW
+- GetProcessWindowStation
+- Is a directory
+- LoadCursorA
+- LoadCursorFromFileA
+- LoadIconA
+- LoadImageA
+- LoadLibraryW
+- No such file or directory
+- Not a directory
+- SetWindowTextA
+- SetWindowTextW
+- ShowWindow
+- UpdateWindow
+- WAVE
+- _add.png
+- _all.png
+- _assist.png
+- _item.png
+- _leader.png
+- a_default
+- a_system/alltp.png
+- a_system/debug_paper.txt
+- a_system/load.png
+- a_system/lockon.png
+- a_system/mouse.cur
+- a_system/nextmsg.png
+- auto save
+- b_sound_count
+- b_sound_itv_max
+- b_sound_itv_min
+- b_sound_no_repeat
+- b_sound_volume
+- d3d9.dll
+- d3dx9_35.dll
+- debug_paper.txt
+- direct
+- encode
+- invalid deque<T> subscript
+- invalid vector<T> subscript
+- isScenario
+- item_window
+- keep_direct
+- load*
+- no auto save
+- no save
+- no_autosave
+- reloadMenu
+- save
+- scenario
+- scenario_select2
+- scenariotext
+- script/
+- script/language*.txt
+- script/unicode.txt
+- script2
+- script2/
+- sound
+- sound/
+- sound_count
+- sound_volume
+- t_sound_volume
+- uDirectX9
+- wave
+- wave_rotate

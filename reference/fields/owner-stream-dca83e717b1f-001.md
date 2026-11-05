@@ -25,6 +25,12 @@
 - [research/recovered/rea_batch4/reports/REA_20261030_06H_P0_OGG_BUFFER_DURATION_EOF_EDGE_STATIC.md 行 15](../../research/recovered/rea_batch4/reports/REA_20261030_06H_P0_OGG_BUFFER_DURATION_EOF_EDGE_STATIC.md?plain=1#L15-L15) — `0x0050224F`でこのbuilderを呼び、`0x00502260`で`stream+0x14`の`nAvgBytesPerSec`を読み、`0x00502269`で`stream+0x28`（DSBUFFERDESC.dwBufferBytes）へ転記。バッファ生成は`0x005022C4`の間接CALL。
   制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
 
+<a id="field-18"></a>
+## stream + 0x18
+
+- [research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md 行 12](../../research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md?plain=1#L12-L12) — - 原作静的double 0x0062FFA0 = 0.2（実バイト 9a9999999999c93f）。0x004BF485 FLD [0x62FFA0] と0x004BF48B FCOMP ST(1)がfade-out中の現在値 stream+0x18 と比較し、0x004BF492のJPでstream+0x18
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
 <a id="field-28"></a>
 ## stream + 0x28
 

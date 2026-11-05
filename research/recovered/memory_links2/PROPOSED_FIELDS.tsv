@@ -1,0 +1,4 @@
+# struct	offset	type	name	summary	confidence	source
+ScriptEngine	0x1EED64	unknown	absoluteSchedulerCounter	isIntervalと報告上の10tickごとの制限時間更新に使う絶対スケジューラ時計。リセット可能な+0x1EED60とは別。選択した本文には幅・宣言符号型の明記がなく、実機未検証。	静的確認	data/T010_EVENT_SCHEDULER.md lines108-114,125-133; REF_SCRIPT_VM_CONTEXT.md lines3-4,17
+ScriptEngine	0x1EED58	unknown	waitCounter	waitが評価した引数を保持するカウンタ。インタプリタの継続ごとに減算し、終了時に0x80000008へ戻す。幅・宣言符号型・場面ごとの完全な挙動は不明。	静的確認	data/T010_EVENT_SCHEDULER.md lines97-104; REF_SCRIPT_VM_CONTEXT.md lines3-4,15
+ScriptEngine	0x1EEC3C	unknown	currentExecutionMode	0x4335E0が分岐に使う現在の実行モード。報告ではmode2が戦闘。phaseの識別値やフレーム設定方式とは別。幅・宣言enum型・合法な遷移の全体は不明。	静的確認	data/T010_EVENT_SCHEDULER.md lines227-235; REF_SCRIPT_VM_CONTEXT.md lines3-4

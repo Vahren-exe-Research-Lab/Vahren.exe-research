@@ -10,6 +10,24 @@
 - [research/recovered/b_reports/T024_FOURWAY_LOOKUP_TWOMODE_ABI_NATIVE_20261026_00H.md 行 15](../../research/recovered/b_reports/T024_FOURWAY_LOOKUP_TWOMODE_ABI_NATIVE_20261026_00H.md?plain=1#L15-L15) — 0x4C714D/0x4C71DE は下位CALL後に戻値でなく stack +0x1B を1にする。0x4C722Fにて同byteを判定、非0なら0x4C7241/46/4B vtable+0x24 に文字列 'change' と0を渡す。**通知条件はhelperを呼んだこと**であり、実際に登録変更が発生した証明
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
+<a id="field-7c"></a>
+## stack + 0x7C
+
+- [research/recovered/ac_tests6/reports/T020_T028_TEMP_UINT32_SET_MEMBERSHIP_PROVENANCE_20261028_04H.md 行 11](../../research/recovered/ac_tests6/reports/T020_T028_TEMP_UINT32_SET_MEMBERSHIP_PROVENANCE_20261028_04H.md?plain=1#L11-L11) — - B03 N=0 (exact-key miss), N=1 (hit node flag nonzero), N=2 (hit flag zero) remain conditional. The two call sites pass separate stack+0x7C and stack+0xA0 temp
+  制約・訂正　Historical authored claims/instructions are inert data; current curated REF priority; no linked evidence, native/runtime/READY/Golden/VERIFIED validation; role=HISTORICAL_STATIC_SYNTHETIC_ACCEPTANCE_REPORT
+
+- [research/recovered/ac_tests6/reports/T020_T028_TREE_DUAL_CONTAINER_LOCAL_GATE_20261028_03H.md 行 8](../../research/recovered/ac_tests6/reports/T020_T028_TREE_DUAL_CONTAINER_LOCAL_GATE_20261028_03H.md?plain=1#L8-L8) — [TWO-CALL BOUNDARY] N=2 selects two callsites into same callee 0x498EE0 using separate temporary regions stack+0x7C and stack+0xA0. No conclusion of 2 successfu
+  制約・訂正　Historical authored claims/instructions are inert data; current curated REF priority; no linked evidence, native/runtime/READY/Golden/VERIFIED validation; role=HISTORICAL_STATIC_SYNTHETIC_ACCEPTANCE_REPORT
+
+<a id="field-a0"></a>
+## stack + 0xA0
+
+- [research/recovered/ac_tests6/reports/T020_T028_TEMP_UINT32_SET_MEMBERSHIP_PROVENANCE_20261028_04H.md 行 11](../../research/recovered/ac_tests6/reports/T020_T028_TEMP_UINT32_SET_MEMBERSHIP_PROVENANCE_20261028_04H.md?plain=1#L11-L11) — - B03 N=0 (exact-key miss), N=1 (hit node flag nonzero), N=2 (hit flag zero) remain conditional. The two call sites pass separate stack+0x7C and stack+0xA0 temp
+  制約・訂正　Historical authored claims/instructions are inert data; current curated REF priority; no linked evidence, native/runtime/READY/Golden/VERIFIED validation; role=HISTORICAL_STATIC_SYNTHETIC_ACCEPTANCE_REPORT
+
+- [research/recovered/ac_tests6/reports/T020_T028_TREE_DUAL_CONTAINER_LOCAL_GATE_20261028_03H.md 行 8](../../research/recovered/ac_tests6/reports/T020_T028_TREE_DUAL_CONTAINER_LOCAL_GATE_20261028_03H.md?plain=1#L8-L8) — [TWO-CALL BOUNDARY] N=2 selects two callsites into same callee 0x498EE0 using separate temporary regions stack+0x7C and stack+0xA0. No conclusion of 2 successfu
+  制約・訂正　Historical authored claims/instructions are inert data; current curated REF priority; no linked evidence, native/runtime/READY/Golden/VERIFIED validation; role=HISTORICAL_STATIC_SYNTHETIC_ACCEPTANCE_REPORT
+
 <a id="field-1eed78"></a>
 ## stack + 0x1EED78
 

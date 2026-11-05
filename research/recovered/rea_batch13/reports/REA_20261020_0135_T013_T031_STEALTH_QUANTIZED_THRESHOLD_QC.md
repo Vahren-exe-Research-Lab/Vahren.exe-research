@@ -1,0 +1,18 @@
+# REA-20261020-0135-T013-T031-STEALTH-QUANTIZED-THRESHOLD-01
+- [OWNER/STATUS] 独立REA; T013(P1)主/T031(P0)参照。保存済み許可証拠のread-only照合から導出した数値境界QC。新規Ghidra取得0・新VERIFIED0・旧原作golden PASS0。READY/Task DONEには加算しない。
+- [SOURCE] target SHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187（保存REA証拠に紐づく値、今回現物ハッシュ未計測）。旧原本実行/編集なし。
+- [LOCAL ASM] 既存exe/T013_TARGET_SELECTOR_PROBE.txt VA0x514DB1..0x514DF5: candidate+0x1867C!=0は除外、candidate==selfは除外、candidate+0x1C0==0なら乱数CALLをskip、それ以外は0x514DCF CALL0x5B6EAB→0x514DD8 FILD→0x514DDC FMUL[0x63B080]→0x514DE2 FMUL[0x63B060]→0x514DE8 CALL0x5D1B80→0x514DED CMP candidate+0x1C0,EAX→0x514DF3 JG skip。
+- [CONSTANTS] data/T013_AI.md §stealth: 0x63B080=1/32768、0x63B060=100.0、Unit+0x1C0=stealth。既存CRT rand(0x5B6EAB)は0..32767の15bit値を返す。x87入力積は有限で0以上100未満。
+- [INTEGER HELPER] REA saved runs/20261009T215200079Z/5D1B80_procedure_assembly.json evidence ev_0bcb24273794aa659538ffb7ed13e373239d40b71eb8680fcb8c077e62ec4321：通常SSE routeはCVTTSD2SI（ゼロ方向）。別branchはB-owner data/T012_NUMERIC_FTOL_ALT_5D1BB6_CONTRACT_20261013.mdに保存されたx87差分補正route。FPUプロファイル/例外は未実機確定のためstrict全域の数値一致はVERIFY。
+- [DERIVED NORMAL-FINITE] 0<=r<=32767で正常なゼロ方向32bit整数変換なら roll=floor(100*r/32768) ∈[0,99]。ステルスsは符号付きdword、候補除外条件は s>roll（signed JG）、乱数を引く条件は s!=0。抽選結果とdraw有無を混同しない。
+- [EXACT THRESHOLD COUNT] 15bitの可能な入力32768通り中、正の整数1<=s<=100の除外入力数 N(s)=ceil(32768*s/100) (s=100も32768)；s<=0ではN=0、s>=100ではN=32768。ただしs=0はDRAW0、s<0とs>=100はDRAW1。これは生rand出力空間の組合せ分布であり、実機戦闘の確率測定ではない。
+- [CALCULATED CASES] s=-1: 0/32768,DRAW1; s=0: 0/32768,DRAW0; s=1: 328/32768,DRAW1; s=30: 9831/32768 (30.0018310546875%),DRAW1; s=50: 16384/32768,DRAW1; s=80: 26215/32768 (80.0018310546875%),DRAW1; s=95: 31130/32768 (95.001220703125%),DRAW1; s=99: 32441/32768,DRAW1; s=100/101: 32768/32768,DRAW1。
+- [VALIDATION] 15bit値r=0..32767の全32768件について整数式の比較結果を列挙し、上記件数を算術照合。実EXE起動/実機goldenではない。入力列の確率一様性・実戦到達分布/候補順・FPU制御値・reseed/その他callee内部drawは未証明。
+- [REIMPLEMENT TEST DESIGN] candidate disabled/self/stealth=0/-1/1/30/80/95/99/100/101 × primary/secondary pool、同一候補を異なるvector順に並べる。primaryではs=100でも1draw→必除外、s=-1でも1draw→除外せず、s=0では0draw→除外せず。secondaryにはこの直接drawを適用しない。
+- [RELATED] parent 0x57B870 saved assembly ev_89e3a86b53663da35b8cadf02226f2163996275f1d24f93e37e8009fc50f048c / callees ev_5f69dc42c9b24ee6e1c0cf83c2fb4da210af2dda6c4e48b70cbf9ef185ea6203。子0x514D60はREA5方法未充足につき新VERIFIED扱い禁止。
+- [DEDUP] 既存data/T013_AI.md §stealthのnative比較と先行REA_20261020_0035_T013_T031_STEALTH_RNG_CARDINALITY_QC.mdのK/countを再取得・再計上せず、今回の増分はquantized thresholdの完全数え上げと負/100超境界のdraw-vs-exclude区別。
+- [COUNT] 保存済みsync progress_sync_20261011T153958076Z：Wave1 16/16、Wave2 10/10、Wave3 10/10、Wave4 12/12、Wave5 16/16、計64/64 VERIFIED、P0 29/29・P1 35/35、今回+0。Wave6正式0/16、暫定P0 5/P1 11、未着手TODO12（P0 2/P1 10）、安全拒否BLOCKED4（P0 3/P1 1）、関数結果VERIFY0。QUEUE/PROGRESS stale EPERM維持。
+- [MASTER] 最新末尾研究E checkpoint193 (2026-10-20 00時台)、34 Task DONE9/IN_PROGRESS21/VERIFY4、旧EXE実機golden PASS0、新旧strict MATCH0、ゲーム再実装率は測定していない。
+- [PC/EXECUTION] Desktop Commander Local Compact接続成功。CPU率n/a・空きRAM未計測、多数Chrome/Node/Codex起動、Java/Ghidra名はlist_processesで未検出。active.lockは前記フォルダ一覧になし（atomicでない）。重解析0、新Ghidra実行0秒、軽量全体時間未計測。既存REA6.1.0成功証拠/README runner指定6.4.0差未解決。
+- [LIMITS/SAFETY] REA 6.1.0+Ghidra12.1.4保存基準、単一MCP、最大4関数、Ghidra900000ms/request960000ms。禁VA0x5710C0..0x571500、新規拒否済みREAテキスト抽出・Wave6拒否4関数を再試行/別path/tool/shell迂回なし。原本・MASTER・A-E/T018・QUEUE/PROGRESS・他研究/製品・Git/push・MCP/既存automation無変更。
+- [NEXT] T013/T031: 同じrand15で候補順/stealth境界の期待抽選cursorを数学テスト化（実機とは区別）、原作FPU profile/候補本体合法到達はVERIFY。研究P0のT010/T012通常死亡/選択復帰も維持。

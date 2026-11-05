@@ -1,0 +1,10 @@
+candidate	reason
+UnitRuntime HP/tier/countdown	Existing four fields and five577100 relationships already represented; no duplicate; unknown widths retained; held5769B0 tick excluded
+49B31D alternate clock loop	Historical source says family/site, but no existing symbol endpoint; not proposed
+492960 execution-mode writer	No existing registered endpoint; no new symbol inferred
+433900-family mode copy	Exact existing endpoint/body attribution too broad for a new precise field write; not proposed
+execution-frame install/fetch/pop	Existing twelve relationships already cover four vectors; no duplicates
+absolute/wait/mode field types	No operand width in chosen authored clauses; all remain unknown
+R/P/L effect records	Curated distinction retained; new owner/class/type layouts would exceed strong existing-endpoint proposal scope
+held/refused helpers and castle/CSCI/rsc3/rsc4	Excluded; no original/helper/native/payload/source execution or alternate-route acquisition
+absolute-clock resetTime non-write	Source states no write, but the current relation schema has only positive reads/writes here; absence not turned into an access edge

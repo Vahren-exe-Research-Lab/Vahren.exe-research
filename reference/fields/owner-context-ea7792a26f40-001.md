@@ -322,8 +322,35 @@
 - [research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md 行 14](../../research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md?plain=1#L14-L14) — - `0x00467DE0` の既知lookupでは `local_10 != *(context+0x300)` をhit判定の一部に使用し、hit時に `*(returned_record+0x1A4)=context` を書く。したがって `+0x2FC` はtreeオブジェクトの起点候補、`+0x300`はその
   制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
 
+<a id="field-1e8630"></a>
+## context + 0x1E8630
+
+- [research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1530_P0_DIPLO_HELP_HANDOFF_AUDIT.md 行 89](../../research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1530_P0_DIPLO_HELP_HANDOFF_AUDIT.md?plain=1#L89-L89) — 候補・除外集合をバイナリ境界で受渡しするだけでなく、**呼出時の所有状態と生存期間**も調査する必要がある。今回見つけた`context+0x1E8630`の受信オブジェクト、`state+0x4AC/0x4B0`の利用先、`0x0052CCF0`のイベント起動処理、`0x00521D90`の「同一インスタンスか」、`
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
+<a id="field-1eed20"></a>
+## context + 0x1EED20
+
+- [research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1334_P0_SET_WRITER_AUDIT.md 行 105](../../research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1334_P0_SET_WRITER_AUDIT.md?plain=1#L105-L105) — 3. `context+0x1EED30`に**実際に挿入/消去するwriter**の呼出siteとコンテナ引数別名関係を追加調査。今回見つけた3 CALLは`context+0x1EED20`側のwriter候補であり、除外集合writerに誤計上しない。
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
 <a id="field-1eed30"></a>
 ## context + 0x1EED30
+
+- [research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1334_P0_SET_WRITER_AUDIT.md 行 105](../../research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1334_P0_SET_WRITER_AUDIT.md?plain=1#L105-L105) — 3. `context+0x1EED30`に**実際に挿入/消去するwriter**の呼出siteとコンテナ引数別名関係を追加調査。今回見つけた3 CALLは`context+0x1EED20`側のwriter候補であり、除外集合writerに誤計上しない。
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
+- [research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1435_P0_THREEWAY_EXCLUSION_AUDIT.md 行 54](../../research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1435_P0_THREEWAY_EXCLUSION_AUDIT.md?plain=1#L54-L54) — 反対に、`0x004F9000`（重複判定付き挿入ヘルパー）は`0x4F70BA`と`0x4F7127`で呼ばれるが、両site直前の`EBX`はそれぞれ**`LEA EBX,[ESP+0xF0]`**と**`LEA EBX,[ESP+0x100]`**であり、**スタック上の一時コンテナ**を指している。したがってこ
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
+- [research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1530_P0_DIPLO_HELP_HANDOFF_AUDIT.md 行 89](../../research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1530_P0_DIPLO_HELP_HANDOFF_AUDIT.md?plain=1#L89-L89) — 候補・除外集合をバイナリ境界で受渡しするだけでなく、**呼出時の所有状態と生存期間**も調査する必要がある。今回見つけた`context+0x1E8630`の受信オブジェクト、`state+0x4AC/0x4B0`の利用先、`0x0052CCF0`のイベント起動処理、`0x00521D90`の「同一インスタンスか」、`
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
+- [research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1633_P0_DEFERRED_EXCLUSION_WRITER_AUDIT.md 行 51](../../research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1633_P0_DEFERRED_EXCLUSION_WRITER_AUDIT.md?plain=1#L51-L51) — **重要な境界:** `0x0052EB20` は、グローバル木 `DAT_008BA6F8` が空の場合 `0x0052EB72` から処理後半へ飛ぶ。上記の書込みはそのループが実際に回り、新規キーがあるときだけ成立する。実行時の正本 `context+0x1EED30` との同一オブジェクト性、寿命、全書込元の網羅
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
+- [research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1633_P0_DEFERRED_EXCLUSION_WRITER_AUDIT.md 行 73](../../research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1633_P0_DEFERRED_EXCLUSION_WRITER_AUDIT.md?plain=1#L73-L73) — - `state+0x4B0` が元の `context+0x1EED30` と同一ポインタで保たれる実行時条件と、解除/寿命/破棄の順序。
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
 
 - [research/recovered/rea_batch2/reports/REA_20261102_10H_P0_F720_ARG2_KEY_ORIGIN_ERRATUM_STATIC.md 行 22](../../research/recovered/rea_batch2/reports/REA_20261102_10H_P0_F720_ARG2_KEY_ORIGIN_ERRATUM_STATIC.md?plain=1#L22-L22) — - **errata_of:** 09H `unresolved/source of [ESP+0xE0]`; not a replacement of 09H's unsigned/sentinel/return facts. **Next cursor:** derive the comparison tree `
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
@@ -344,27 +371,6 @@
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
 
 - [research/recovered/rea_batch2/reports/REA_20261102_14H_P0_F720_EXCLUSION_TREE_EH_FINALIZER_STATIC.md 行 19](../../research/recovered/rea_batch2/reports/REA_20261102_14H_P0_F720_EXCLUSION_TREE_EH_FINALIZER_STATIC.md?plain=1#L19-L19) — - **Next lawful cursor:** bounded original-x86 audit of `0x4F8C50` alternate iterator path and the owning FuncInfo call chain, then a distinct search for the st
-  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
-
-- [research/recovered/rea_batch2/reports/REA_20261102_14H_P0_F720_EXCLUSION_TREE_EH_FINALIZER_STATIC.md 行 26](../../research/recovered/rea_batch2/reports/REA_20261102_14H_P0_F720_EXCLUSION_TREE_EH_FINALIZER_STATIC.md?plain=1#L26-L26) — - **Correction/next:** the EH finalizer has both a full-range clear/reset branch and an alternate erase/decrement branch; exact iterator/balance invariants, exc
-  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
-
-- [research/recovered/rea_batch2/reports/REA_20261102_17H_P0_F720_UI_ALIAS_OUTPUT_VECTOR_SCOPE_STATIC.md 行 23](../../research/recovered/rea_batch2/reports/REA_20261102_17H_P0_F720_UI_ALIAS_OUTPUT_VECTOR_SCOPE_STATIC.md?plain=1#L23-L23) — - **Next:** inspect a **bounded, new** original-x86 region `0x40FCB5..0x40FDC6` only if not covered by later owner results, then distinguish remaining output-bu
-  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
-
-- [research/recovered/rea_batch2/reports/REA_20261102_20H_P0_F720_ROSTER_VECTOR_SCOPE_STATIC.md 行 10](../../research/recovered/rea_batch2/reports/REA_20261102_20H_P0_F720_ROSTER_VECTOR_SCOPE_STATIC.md?plain=1#L10-L10) — 2. `0x40FD32/35` reads `[begin+EDI*4]` and writes its dword to `[end]`; alternative `0x40FD91` stores EBX to `[end]`. `0x40FD93/99/9C` reload, advance by 4 and
-  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
-
-- [research/recovered/rea_batch2/reports/REA_20261102_20H_P0_F720_ROSTER_VECTOR_SCOPE_STATIC.md 行 24](../../research/recovered/rea_batch2/reports/REA_20261102_20H_P0_F720_ROSTER_VECTOR_SCOPE_STATIC.md?plain=1#L24-L24) — - **Unresolved:** who actually inserts into `context+0x1EED30/34`; indirect aliases and transitive side effects of `0x501A40`, `0x567EE0`, `0x544290`, `0x568710
-  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
-
-- [research/recovered/rea_batch2/reports/REA_20261102_21H_P0_F720_ROSTER_TAIL_ITERATOR_STATIC.md 行 12](../../research/recovered/rea_batch2/reports/REA_20261102_21H_P0_F720_ROSTER_TAIL_ITERATOR_STATIC.md?plain=1#L12-L12) — 3. `0x410019..0x410108`: reads global vector-like begin/end/cap `0x8B8EC8/0x8B8ECC/0x8B8ED0`. At `0x41009D` or `0x4100F9` the code stores a dword at `[end]`; at
-  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
-
-- [research/recovered/rea_batch2/reports/REA_20261102_21H_P0_F720_ROSTER_TAIL_ITERATOR_STATIC.md 行 24](../../research/recovered/rea_batch2/reports/REA_20261102_21H_P0_F720_ROSTER_TAIL_ITERATOR_STATIC.md?plain=1#L24-L24) — - **Limitation/erratum:** this resolves the prior `0x40FF24` tail cursor but DOES NOT identify a write into `context+0x1EED30/34`; local and global vectors, two
-  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
-
-- [research/recovered/rea_batch2/reports/REA_20261102_22H_P0_F720_ROSTER_EXIT_VTABLE_CANDIDATE_STATIC.md 行 15](../../research/recovered/rea_batch2/reports/REA_20261102_22H_P0_F720_ROSTER_EXIT_VTABLE_CANDIDATE_STATIC.md?plain=1#L15-L15) — 4. Distinct callee `0x410420` (V9 `[0x410420,0x410BE1)`, 1,986 native bytes; V9 indexes 35 direct E8 calls) begins by reading active context via `[0x8B8D28]` an
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

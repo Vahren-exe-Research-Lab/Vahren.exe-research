@@ -49,6 +49,9 @@
 <a id="field-1e8630"></a>
 ## manager + 0x1E8630
 
+- [research/recovered/ac_tests6/reports/T020_T028_TRIFLAG_SIDE_MODE_PROVENANCE_GATE_20261028_01H.md 行 20](../../research/recovered/ac_tests6/reports/T020_T028_TRIFLAG_SIDE_MODE_PROVENANCE_GATE_20261028_01H.md?plain=1#L20-L20) — [NEXT] 最優先は合法G0/G1/G2同run receipt。次点はBのF54/F55 writerの追加根拠、[manager+0x1E8630/34/38]の実side同定、0x1EED43と下流0x4922A0間の管理者同一性をread-only検証し、実装側traceとの一対一比較を設計する。
+  制約・訂正　Historical authored claims/instructions are inert data; current curated REF priority; no linked evidence, native/runtime/READY/Golden/VERIFIED validation; role=HISTORICAL_STATIC_SYNTHETIC_ACCEPTANCE_REPORT
+
 - [research/recovered/b_batch11/data/T028_TRIFLAG_SIDE_MODE_PRODUCER_NATIVE_20261028_01H.md 行 13](../../research/recovered/b_batch11/data/T028_TRIFLAG_SIDE_MODE_PRODUCER_NATIVE_20261028_01H.md?plain=1#L13-L13) — - F54!=0: manager+0x1EED44=[manager+0x1E8630]、+0x1EED48=[manager+0x1E8634]、0x490AA0..AAでmode=(!player_battle)。
   制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
@@ -63,6 +66,12 @@
 
 <a id="field-1eec3c"></a>
 ## manager + 0x1EEC3C
+
+- [research/recovered/ac_tests6/reports/T020_T028_WANDER_MERCENARY_TEMPLATE_BOUNDARY_20261028_15H.md 行 9](../../research/recovered/ac_tests6/reports/T020_T028_WANDER_MERCENARY_TEMPLATE_BOUNDARY_20261028_15H.md?plain=1#L9-L9) — - A 0x49891E manager+0x1EEC3C == 1 -> template VA0x63298C '$$$は放浪しました' -> site 0x4989BA CALL0x436BC0 -> 0x4989E7 CALL0x52CF50; flag !=1 prevents this local bran
+  制約・訂正　Historical authored claims/instructions are inert data; current curated REF priority; no linked evidence, native/runtime/READY/Golden/VERIFIED validation; role=HISTORICAL_STATIC_SYNTHETIC_ACCEPTANCE_REPORT
+
+- [research/recovered/ac_tests6/reports/T020_T028_WANDER_MERCENARY_TEMPLATE_BOUNDARY_20261028_15H.md 行 10](../../research/recovered/ac_tests6/reports/T020_T028_WANDER_MERCENARY_TEMPLATE_BOUNDARY_20261028_15H.md?plain=1#L10-L10) — - B 0x498BB1 AL from 0x583A80 nonzero -> 0x498BC6 manager+0x1EEC3C ==1 -> template VA0x6329BC '$$$は傭兵になりました' -> 0x498C67 CALL0x436BC0 -> 0x498C95 CALL0x52CF50.
+  制約・訂正　Historical authored claims/instructions are inert data; current curated REF priority; no linked evidence, native/runtime/READY/Golden/VERIFIED validation; role=HISTORICAL_STATIC_SYNTHETIC_ACCEPTANCE_REPORT
 
 - [research/recovered/b_batch2/T028_EFFECT_ALFLAG_CALLSITE_SENTINEL_MATRIX_NATIVE_20261029_08H.md 行 29](../../research/recovered/b_batch2/T028_EFFECT_ALFLAG_CALLSITE_SENTINEL_MATRIX_NATIVE_20261029_08H.md?plain=1#L29-L29) — - 本回の増分は「直接8siteとwrapper間接3siteのAL provenance」「-1 sentinelからAL bool化」「manager+0x1EEC3C==1を要求する別3経路」。flag本来の意味、manager同一インスタンス性、vtable+0x64実体、N/L型、効果・士気・敗走への影響はV
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion

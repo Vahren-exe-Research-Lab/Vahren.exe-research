@@ -7,6 +7,9 @@
 <a id="field-d4"></a>
 ## source + 0xD4
 
+- [research/recovered/ac_tests6/reports/T020_T028_FALLBACK_OWNER_REBIND_20261028_09H.md 行 11](../../research/recovered/ac_tests6/reports/T020_T028_FALLBACK_OWNER_REBIND_20261028_09H.md?plain=1#L11-L11) — - Existing search.py function 0x5882F0 confirms source pointer is first output entry before traversing source+0xD4/+0xD8. This DOES NOT prove fallback is passed
+  制約・訂正　Historical authored claims/instructions are inert data; current curated REF priority; no linked evidence, native/runtime/READY/Golden/VERIFIED validation; role=HISTORICAL_STATIC_SYNTHETIC_ACCEPTANCE_REPORT
+
 - [research/recovered/b_batch11/data/T028_SHARED_FALLBACK_ROSTER_BACKLINK_REBIND_NATIVE_20261028_09H.md 行 11](../../research/recovered/b_batch11/data/T028_SHARED_FALLBACK_ROSTER_BACKLINK_REBIND_NATIVE_20261028_09H.md?plain=1#L11-L11) — - 07H既知の0x5882F0はsource自身を候補へ先頭追加し、source+0xD4/+0xD8を巡回。今回の増分はfallback初期配列が空であることと、missで+0x1A4だけが再束縛されるという初期化→再利用時系列。fallbackが0x5882F0へ入力される実到達は未確認であり、常に候補1件とは断
   制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 

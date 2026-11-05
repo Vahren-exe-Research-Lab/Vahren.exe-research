@@ -1,0 +1,5 @@
+input_label	bytes	sha256	scope
+approved_selection	14034	9638C88F4BF5F0D01CCA47E9568C5E7C41770FD3316025DDA9761C6B3B9ADFFB	Exact selection/authorized baseline metadata only; no linked payload body
+SOURCE_MANIFEST.tsv	385607	72C8225577560F9C1398E06D22B0E533C1D69A82AED18ECC3451F37D9DD6CFFF	Exact selection/authorized baseline metadata only; no linked payload body
+RESEARCH_SOURCE_CATALOG.tsv	350283	F14E3BD401A836039F678E9238C6490E2200385EFB0FBB602E62F626EC679CF4	Exact selection/authorized baseline metadata only; no linked payload body
+research/recovered/RECOVERY_LEDGER.tsv	915181	94AF345A72F9D921F60B43B3543788FB5E5F0D0CBBC4CE866443306B9C9798A0	Exact selection/authorized baseline metadata only; no linked payload body

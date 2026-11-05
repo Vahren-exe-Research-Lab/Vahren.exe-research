@@ -142,4 +142,10 @@
 - [research/recovered/b_batch5/data/T011_MEMBER_LOOKUP_BACKLINK_AND_TREE_INSERT_OFFLINE_20261021_0610.md 行 14](../../research/recovered/b_batch5/data/T011_MEMBER_LOOKUP_BACKLINK_AND_TREE_INSERT_OFFLINE_20261021_0610.md?plain=1#L14-L14) — - `local_10 != *(int *)(param_1 + 0x300)` のhit分岐で、`*(int *)(*(int *)(local_10 + 0x28) + 0x1A4) = param_1` を実行し、続いて `uVar1 = *(undefined4 *)(local_10 + 0x28)` を返
   制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
 
+<a id="field-4a8"></a>
+## param_1 + 0x4A8
+
+- [research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1530_P0_DIPLO_HELP_HANDOFF_AUDIT.md 行 85](../../research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1530_P0_DIPLO_HELP_HANDOFF_AUDIT.md?plain=1#L85-L85) — これにより**待避／名前付きイベント要求／名前付きイベント検査／条件付きの通常経路呼出し**という静的接続候補を得た。`0x00521D90`側の条件は文字列判定成立と`DAT_0087F6F0 != 1`。Ghidra疑似Cでも`*(param_1+0x4a8)=0; FUN_00490590();`を確認した。両文
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

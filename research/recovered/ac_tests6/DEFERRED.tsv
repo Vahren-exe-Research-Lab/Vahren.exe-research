@@ -1,0 +1,3 @@
+source_path	source_sha256	source_bytes	reason	destination	destination_sha256
+tests/T020_T028_DECIDE_SELECTOR_CALLSITE_GATE_20261028_14H.md	5aa61df05a4c675f4012fcc65ac8e416bfae82bf16dbb1b2fe338b2072514b66	4448	Full bounded authorized MD review found substantive dependence on held E13 six caller-specific gates and refused append/design payload; whole composite withheld		
+tests/T020_T028_NULL_ECX_CALLSITE_PROVENANCE_20261028_13H.md	90c4dde4e182f7a48afd85d00ca5a1b8cb4ae44a8f0675c2a46822cebf53e57d	3183	Known E20261028_13H held/refused scope; body not opened; exact-source metadata only		
