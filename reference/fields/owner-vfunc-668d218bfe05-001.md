@@ -7,6 +7,9 @@
 <a id="field-54"></a>
 ## vfunc + 0x54
 
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 466](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L466-L466) — [CONFIRMED-SAVED-NATIVE / INCREMENTAL] 既報A-20261010-2059-02の0x5B0218だけでなく、D所有の保存済みnative `exe/T015_SPOT_DISPLAY_VTABLE.txt`はRTTI .?AVSpot@@ / vtable 0x6385BC /
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
 - [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 332](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L332-L332) — - canonical keyが既にworld runtime map engine+0x1EEBCC にあれば既存object vfunc +0x54(arg0=0)を呼んで再表示し、新規objectを重複生成しない。無ければ0x240-byte route objectを生成してmapへinsertする。
   制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
 

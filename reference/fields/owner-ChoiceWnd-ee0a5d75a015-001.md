@@ -13,6 +13,9 @@
 <a id="field-1ac"></a>
 ## ChoiceWnd + 0x1AC
 
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 739](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L739-L739) — [CONFIRMED-SAVED-NATIVE] A所有`exe/T006_SELECT_RESULT_COMMIT.txt` 0x44124Aは旧選択iに対し `[0x65C1B8+4*i]` を[0x609264]通知前に読むが、通知と0x453C20の後0x44127Aで**同table entryを再読込**し
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
 - [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 793](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L793-L793) — [CONFIRMED-SAVED-NATIVE] `exe/T006_DIALOG_VMETHODS.txt` VA0x441182..0x4411A9、0x441D40..0x441D69 は candidate_count=[DialogWnd+0x184]、candidate_geometry_ptr=[0x65
   制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
 

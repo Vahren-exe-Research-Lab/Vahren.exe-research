@@ -55,4 +55,10 @@
 - [research/recovered/plugin_reports1/reports/recruit_sort_v4/docs/RELEASE_HakushinUI_v1.0.md 行 9](../../research/recovered/plugin_reports1/reports/recruit_sort_v4/docs/RELEASE_HakushinUI_v1.0.md?plain=1#L9-L9) — - 説明表示: ゲーム自身のマウス座標（Player+0x324/0x328）を使用、D3DProxyWindow を素通し（フルスクリーン）
   制約・訂正　Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=PLUGIN_SYNTHETIC_CONTRACT_OR_HISTORY
 
+<a id="field-348"></a>
+## Player + 0x348
+
+- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 541](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L541-L541) — [SAVED-C GUI JOIN] 既存保存Ghidra C（dev_lab/recovered_source/peer_script01_ghidra_named_decomp_20261011.zip内decomp_0052xxxx.c/0056xxxx.c、D T015 D-20261013-0943-01）に
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

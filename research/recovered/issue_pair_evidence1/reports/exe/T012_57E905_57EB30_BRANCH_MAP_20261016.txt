@@ -1,0 +1,21 @@
+# B-20261016-1616-01 | T012 bounded static instruction windows | original EXE NOT executed/modified
+# source=rea_lab/targets/hakushin067_Vahren.exe (read-only analysis copy)
+# source_SHA256=e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187 (before=after)
+# 57E905..57EA9D exclusive length=408 window_SHA256=a2f879bddcbc45915a7a1ea8b40b0e3c60f8ffea3dec6a37dc0cee00a816f880
+# 57EA9D..57EB40 exclusive length=163 window_SHA256=cb3e80648bd05374f9c97dc0e28aa60857182ba7be4cf7d1facd1bcdbab2f1fd
+57E905 fstp st(0); 57E907 test eax,eax; 57E909 je 57E913; 57E90B lea eax,[esi+8C]; 57E911 jmp 57E97D
+57E913 cmp byte [esi+270],0; 57E91F je 57E94F
+57E921 mov edi,[esi+74]; 57E924 sub edi,[ebx+1E4D8]; 57E935 imul esi; 57E947 idiv esi; 57E94B mov edi,edx; 57E94D jmp 57E978
+57E94F mov ecx,[esi+AC]; 57E955 sub ecx,[esi+A8]; 57E96B call 40ED80; 57E970 mov edi,eax
+57E972 lea eax,[esi+A8]; 57E978 call 40AFB0; 57E97D sub esp,1C; 57E986 call 4051D0
+57E98B mov ecx,[ebx+1DC]; 57E991 call 4678A0; 57E996 mov edi,[ebp+8]; 57E999 cmp byte [edi+26F],0
+57E9A2 jne 57E9CB; 57E9A4 fld qword [esp+38]; 57E9C4 call eax (Unit vtable+80); 57E9C6 jmp 57EA9B
+57E9CB cmp dword [esi+74],0; 57E9CF fld qword [edi+1D8]; 57E9D7 fucompp; 57E9D9 fnstsw ax; 57E9DB jne 57EA2C
+57E9DD test ah,44; 57E9E0 jp 57EA13; 57EA09 call 580280; 57EA22 call 580280
+57EA2C test ah,44; 57EA2F jp 57EA62; 57EA58 call 54F720; 57EA70 call 54F720
+57EA78 fld qword [esp+38]; 57EA7E mov edx,[edx+80]; 57EA99 call edx (Unit vtable+80); 57EA9B mov esi,edi
+57EA9D cmp dword [esi+F4],0; 57EAA4 je 57EB1F; 57EACB call 402710; 57EAD6 call 4678A0
+57EADB cmp dword [eax+74],0; 57EAE1 jne 57EB0B; 57EAF0 call 580280; 57EAFB call 57BE30
+57EB00 mov al,1; 57EB08 ret 4; 57EB17 call 54F720; 57EB22 call 57BE30; 57EB29 mov al,1; 57EB2F ret 4
+# Bounded opcode map: not proof of successful callee return, dynamic Unit subtype, projectile/HP, game success, or total RNG.
+# Safety: no denied VA 5710C0..571500; no REA/Ghidra; original gameplay PASS0; strict MATCH0.

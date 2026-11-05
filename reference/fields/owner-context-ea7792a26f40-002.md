@@ -67,6 +67,9 @@
 - [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261024_1234_P0_EXCLUSION_SET_AUDIT.md 行 69](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261024_1234_P0_EXCLUSION_SET_AUDIT.md?plain=1#L69-L69) — 3. `0x004868D0` および `0x00488290` で`context+0x1EED30`と`+0x1EED20`がどの引数へ再配置されるか、実際の書込元があるかを追跡する。特に `0x00489630` / `0x00489DB0` の所有オブジェクトと集合間エイリアスを検証する。
   制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
 
+- [research/recovered/recovery_corpus1/reports/REA_OFFLINE_20261024_18H_ARMYCHIP_FLAG_CONSUMER_REPORT.md 行 25](../../research/recovered/recovery_corpus1/reports/REA_OFFLINE_20261024_18H_ARMYCHIP_FLAG_CONSUMER_REPORT.md?plain=1#L25-L25) — **発見**：`0x00491870` は `context+0x1EED30` の木構造からキーを検索し、成功時にノードの `+0x14` バイトを読み込む。これは17時台の「モード1/3/4で挿入ノードへ1、その他で0が保存される」という書込側の発見を、**独立した読取箇所**へ接続するものである。
+  制約・訂正　Historical authored STATIC/readback/test claims only; no new native/runtime/READY/VERIFIED/Golden/strictMATCH or PC sync; linked evidence not acquired
+
 <a id="field-1eed34"></a>
 ## context + 0x1EED34
 
@@ -105,6 +108,18 @@
 
 - [research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1530_P0_DIPLO_HELP_HANDOFF_AUDIT.md 行 40](../../research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1530_P0_DIPLO_HELP_HANDOFF_AUDIT.md?plain=1#L40-L40) — 呼出元`0x00490180`は、`0x4901DB TEST EAX,EAX`などで事前条件を検査してから`0x49021A CALL 0x00488290`を呼び、`0x49021F MOV [ESP+0x17],AL`でこの結果を保持する。入口ガードには`0x00597A50()>0`、`[context+0x1
   制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
+- [research/recovered/recovery_corpus1/reports/REA_OFFLINE_20261024_18H_ARMYCHIP_FLAG_CONSUMER_REPORT.md 行 38](../../research/recovered/recovery_corpus1/reports/REA_OFFLINE_20261024_18H_ARMYCHIP_FLAG_CONSUMER_REPORT.md?plain=1#L38-L38) — フラグ非0の経路は `context+0x1EED4C` を読み、0の経路は `context+0x1EED50` を読み、各経路で `0x005911D0` に渡すCALLが存在する。主要なCALL siteは `0x00491A11`/`0x00491A42`、後段 `0x00491B42`/`0x00491B66
+  制約・訂正　Historical authored STATIC/readback/test claims only; no new native/runtime/READY/VERIFIED/Golden/strictMATCH or PC sync; linked evidence not acquired
+
+- [research/recovered/recovery_corpus1/reports/REA_OFFLINE_20261024_18H_ARMYCHIP_FLAG_CONSUMER_REPORT.md 行 87](../../research/recovered/recovery_corpus1/reports/REA_OFFLINE_20261024_18H_ARMYCHIP_FLAG_CONSUMER_REPORT.md?plain=1#L87-L87) — 2. `context+0x1EED4C` と `+0x1EED50` の値の生成元・実用上の違いをDBの局所 `callers/callees/related` と原本ASMで追跡する。
+  制約・訂正　Historical authored STATIC/readback/test claims only; no new native/runtime/READY/VERIFIED/Golden/strictMATCH or PC sync; linked evidence not acquired
+
+<a id="field-1eed50"></a>
+## context + 0x1EED50
+
+- [research/recovered/recovery_corpus1/reports/REA_OFFLINE_20261024_18H_ARMYCHIP_FLAG_CONSUMER_REPORT.md 行 38](../../research/recovered/recovery_corpus1/reports/REA_OFFLINE_20261024_18H_ARMYCHIP_FLAG_CONSUMER_REPORT.md?plain=1#L38-L38) — フラグ非0の経路は `context+0x1EED4C` を読み、0の経路は `context+0x1EED50` を読み、各経路で `0x005911D0` に渡すCALLが存在する。主要なCALL siteは `0x00491A11`/`0x00491A42`、後段 `0x00491B42`/`0x00491B66
+  制約・訂正　Historical authored STATIC/readback/test claims only; no new native/runtime/READY/VERIFIED/Golden/strictMATCH or PC sync; linked evidence not acquired
 
 <a id="field-1eed64"></a>
 ## context + 0x1EED64

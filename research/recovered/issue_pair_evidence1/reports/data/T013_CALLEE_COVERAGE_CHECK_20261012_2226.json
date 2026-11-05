@@ -1,0 +1,15 @@
+{
+  "audit_id": "B-20261012-2226-01",
+  "timestamp_jst": "2026-10-12T22:34:48.055585+09:00",
+  "verification": "Saved documentation, source hashes, caller instructions and Work pause-boundary AST only; not execution of either callee or the original game",
+  "checks": 33, "failed": [], "status": "PASS", "process_exit_code": 0,
+  "sha256_at_verification": {
+    "coverage": "13a5dc569127e6f313d68fe4f698503b406f4fa6841289bc5aebd7052573be31",
+    "contract": "1bee0e91581dc098544b326e65e0a74765d11c38b7c6d326ebecc32df06742a1",
+    "handoff_before_final_run_record": "f2c774426e6195b3c729333e8937b7627a011f2999579f34f766fabc445b05f7",
+    "status_dump": "293a7bfa57d3dc948d28188f4b67e5ce62b530a4acb370b9646833d4eccdc3bb",
+    "work_readonly_snapshot": "fec9eb5afdc38920ce1b8409779847e6978f9b76728e29b6f0fb1c1f2f9a56dd"
+  },
+  "new_ready": 0, "new_body_functions": 0, "gameplay_golden_pass": 0, "strict_match": 0,
+  "body_status": "5799D0 and 576450 unrecorded in the inspected saved-text corpus; return sites, state effects and RNG remain unknown"
+}

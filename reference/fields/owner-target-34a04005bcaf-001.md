@@ -10,6 +10,12 @@
 - [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md 行 202](../../research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md?plain=1#L202-L202) — - HP処理は0x551151 PUSH ECX→0x551154 virtual+0x70。SimpleUnitの同slotは0x544790で、0x5447F7 SUB [target+0x90],ECXがHPを減らす。これは先行のvtable型対応と結合した限定経路。
   制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
 
+<a id="field-1d4"></a>
+## target + 0x1D4
+
+- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 505](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L505-L505) — [SCOPE / CONFIRMED-SAVED-NATIVE] 過去D§53/54で既知のisAllDead 0x45185C→0x514C80（target+0x1D4）とcountSkill/countPost呼出を新発見として再計上しない。今回はA所有の保存native T010_BATTLE_RESULT_P
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
 <a id="field-a18"></a>
 ## target + 0xA18
 

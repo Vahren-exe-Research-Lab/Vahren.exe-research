@@ -25,6 +25,9 @@
 - [research/recovered/b_reports/T013_HEAL_FINISH_UNREGISTER_POOL_REUSE_NATIVE_20261027_10H.md 行 6](../../research/recovered/b_reports/T013_HEAL_FINISH_UNREGISTER_POOL_REUSE_NATIVE_20261027_10H.md?plain=1#L6-L6) — [OWNER REGISTRATION] 0x54E11A/0x54E11E→0x550980 factory。factory 0x550C53 virtual+0x18→0x455FA0、0x455FAB MOV [object+0xC],holder。0x54E2CC holder=[effect+0xC]、0x5
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 1340](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L1340-L1340) — [NEW DELTA/EVIDENCE] 同owner同ID節・ASM 0x433A86..AA5 と0x433DA7..433E15。自然pop後mode vectorが空ならEAX=2とactive +0x1EEC3Cを比較、**mode==2**で0x34B allocate→0x543A30→vtable 0x
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
 - [research/recovered/rea_batch10/reports/REA_20261022_0535_T014_CATCH_RETHROW_MASK_CONTRAST_STATIC.md 行 12](../../research/recovered/rea_batch10/reports/REA_20261022_0535_T014_CATCH_RETHROW_MASK_CONTRAST_STATIC.md?plain=1#L12-L12) — - 前回0443の通常EOF経路（sentry成功→virtual +0x18 が EAX=-1）: 0x470A25 LEA ESI,[EAX+4] => ESI=3、0x470AB7..0x470AC5で oldstate\|3（buffer==nullなら更に\|4）を作り、PUSH 0で0x426E00。excep
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
 

@@ -7,6 +7,9 @@
 <a id="field-34"></a>
 ## clearは + 0x34
 
+- [research/recovered/handoff_scope1/reports/dev_lab/docs/archive/WORK_REQUEST_QUEUE_ARCHIVE_20261029.md 行 3078](../../research/recovered/handoff_scope1/reports/dev_lab/docs/archive/WORK_REQUEST_QUEUE_ARCHIVE_20261029.md?plain=1#L3078-L3078) — - 重要:521A00→521560→window+0x30→455CF0→StatusWnd+0x44(561120)、clearは+0x34→455D20→+0x48(562140)。521560は879823を検査せず、5233A0より先に実行。したがってEnableWindow(FALSE)や879823=0で
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
 - [research/recovered/remaining_md1/reports/dev_lab/docs/SELECTOR_LOADER_RESEARCH_INDEX.md 行 181](../../research/recovered/remaining_md1/reports/dev_lab/docs/SELECTOR_LOADER_RESEARCH_INDEX.md?plain=1#L181-L181) — - 重要:521A00→521560→window+0x30→455CF0→StatusWnd+0x44(561120)、clearは+0x34→455D20→+0x48(562140)。521560は879823を検査せず、5233A0より先に実行。したがってEnableWindow(FALSE)や879823=0で
   制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
 

@@ -10,6 +10,18 @@
 - [research/recovered/symbol_sources/T011_TRAINING_CACHE_FULL_RANGE_ERASE_NATIVE_20261031_09H.md 行 14](../../research/recovered/symbol_sources/T011_TRAINING_CACHE_FULL_RANGE_ERASE_NATIVE_20261031_09H.md?plain=1#L14-L14) — [KB_CANDIDATE] 本見出しID; owner B/T011; VA 0x4726C1/0x4DEF40/0x4DEF57/0x4ED030/0x4ED046/0x49F6A0/0x4DEFCF/0x4DEC70; node sentinel byte +0x15, tree head +0x4, count
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation; full-range bulk erase and partial node erase distinct; partial helper not required in normal full cleanup
 
+<a id="field-170"></a>
+## count + 0x170
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 707](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L707-L707) — [CONFIRMED-SAVED-NATIVE] A担当`exe/T006_DIALOG_VMETHODS.txt` 0x441180..0x4411AF/0x441D40..69はDialog count+0x184 / global indexed geometry pointer [0x65C1B8+4*i]。`
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+<a id="field-184"></a>
+## count + 0x184
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 707](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L707-L707) — [CONFIRMED-SAVED-NATIVE] A担当`exe/T006_DIALOG_VMETHODS.txt` 0x441180..0x4411AF/0x441D40..69はDialog count+0x184 / global indexed geometry pointer [0x65C1B8+4*i]。`
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
 <a id="field-334"></a>
 ## count + 0x334
 
@@ -24,5 +36,11 @@
 
 - [research/recovered/e_reports/T020_E_T013_ALT_LIST_RESET_ACCEPTANCE_20261031_22H.md 行 9](../../research/recovered/e_reports/T020_E_T013_ALT_LIST_RESET_ACCEPTANCE_20261031_22H.md?plain=1#L9-L9) — [POST GATE] Conditional static gate is Unit+0x8C==0, byte+0x1F8!=0, updated alt count +0x186B4==0, and +0x5F0!=0x80000008. Success may enter virtual calls and l
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
+
+<a id="field-1eec04"></a>
+## count + 0x1EEC04
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 929](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L929-L929) — [CONFIRMED-SAVED-NATIVE] A保存`exe/T014_NORMAL_LOAD_PROBE.txt` 0x45EC24..0x45EC66はECX=owner+0x32C→0x4ED240のnode erase・+0x330 head self-link・+0x334 count=0。A保存`exe
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

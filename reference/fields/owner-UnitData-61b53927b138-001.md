@@ -25,6 +25,9 @@
 - [research/recovered/knowledge_history1/reports/knowledge/REF_UNIT_EXP_SUMMON.md 行 14](../../research/recovered/knowledge_history1/reports/knowledge/REF_UNIT_EXP_SUMMON.md?plain=1#L14-L14) — - Training function 0x471E80 uses UnitData+0x170 for a threshold and writes experience to UnitData+0x16C at 0x4723D8; 0x4723DE calls 0x58A650 for level update.
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
 
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 787](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L787-L787) — [NEW VERIFIED] 訓練0x4723C7非正回数skip、0x4723D0 next threshold UnitData+0x170→0x4723D8 UnitData+0x16C上書き→0x4723DE CALL0x58A650→0x4723E4 loop。通常hit 0x551FB2 ADDと処理が異な
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
 <a id="field-1b1"></a>
 ## UnitData + 0x1B1
 

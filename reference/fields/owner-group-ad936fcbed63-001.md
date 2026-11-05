@@ -85,6 +85,9 @@
 - [research/recovered/b_reports/T011_T024_GROUP34_PROXIMITY_RATIO_100TICK_NATIVE_20261101_10H.sanitized.md 行 53](../../research/recovered/b_reports/T011_T024_GROUP34_PROXIMITY_RATIO_100TICK_NATIVE_20261101_10H.sanitized.md?plain=1#L53-L53) — **PC復帰時の必須再開順**：PC正本MASTER/権限/安全HOLD/担当HANDOFF/既存ID重複・競合を読取→03H書込の存在・同一性・SHAを確認→04〜10HのOFFLINE資料のSHAと最新研究IDを照合して一度だけB許可資料へ取り込む（衝突なら上書きせず調査）、保存readback→KB専任へ候補渡し
   制約・訂正　Privacy derivative: one personal research-root prefix replaced with <research-root> plus explicit recovery annotation; full technical content retained; reversible byte reconstruction matches source SHA; historical STATIC/INFERRED/VERIFY only; no linked payload read or Golden/READY promotion
 
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 772](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L772-L772) — [NEW] child構築後、selector==1なら0x54F02F S+0x1D0、>=2なら0x567EE0 group新規またはS管理list末尾groupで候補EDI選択。EDI非NULLで0x54F093/0x54F096→0x568710にchild/Groupを渡し、group+0x1D==0側0x5
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
 <a id="field-1e"></a>
 ## group + 0x1E
 

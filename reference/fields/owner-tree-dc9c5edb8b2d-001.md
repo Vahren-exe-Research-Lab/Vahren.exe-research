@@ -7,6 +7,9 @@
 <a id="field-8"></a>
 ## tree + 0x8
 
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 814](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L814-L814) — 0x4726C1→0x4DEF40の既知08H callerはbegin=[head] / end=headを渡す。0x4DEF4F/53双方一致の正常木では0x4DEF57→0x4ED030へ進み、0x4ED046→0x49F6A0(右subtree再帰＋左反復)、0x4ED04E node free、0x4ED06
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
 - [research/recovered/symbol_sources/T011_TRAINING_PARTIAL_ERASE_NATIVE_20261031_10H.md 行 15](../../research/recovered/symbol_sources/T011_TRAINING_PARTIAL_ERASE_NATIVE_20261031_10H.md?plain=1#L15-L15) — [KB_CANDIDATE] B-20261031-10H-T011-TRAINING-PARTIAL-ERASE-NATIVE-01 / owner B/T011 / source 上記PE window SHA / CALL 0x4DEFCF→0x4DEC70 / offsets node+0x15, tree+0
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation; full-range bulk erase and partial node erase distinct; partial helper not required in normal full cleanup
 
@@ -27,5 +30,11 @@
 
 - [research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md 行 34](../../research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md?plain=1#L34-L34) — - prefixはstring +0、bytes +0x1C/+0x1D、dword +0x5C、strings +0x24/+0x40、dwords +0x20/+0x60、string +0x74。RB-tree +0x68 names/empty終端、28-byte vector +0x90/+0x94 name
   制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
+<a id="field-32c"></a>
+## tree + 0x32C
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 1288](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L1288-L1288) — [NOT DONE] 原作旧EXE DYNAMIC0/Gameplay Golden PASS0、新strict MATCH0。T005 special duplicate優先、T006 op5/6 payload/Yield、T014 fifth tree+0x32C/変数寿命、T031 central reseed
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

@@ -40,11 +40,59 @@
 - [research/recovered/rea_batch2/reports/REA_20261104_04H_P0_CRT_TLS_GATE_AND_ERROR_FLAGS_STATIC.md 行 9](../../research/recovered/rea_batch2/reports/REA_20261104_04H_P0_CRT_TLS_GATE_AND_ERROR_FLAGS_STATIC.md?plain=1#L9-L9) — 1. `0x5BC6A9..0x5BC6C2` calls `0x5BC630`, tests its EAX record pointer, and on zero calls `0x5BB659` with `push 0x10`. Its caller `0x5B9EDB` (already checked 03
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
 
+<a id="field-168"></a>
+## at + 0x168
+
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 194](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L194-L194) — - `collision` -> string at +0x168（SSO size側 +0x178）。
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
 <a id="field-16c"></a>
 ## at + 0x16C
 
 - [research/recovered/knowledge_history1/reports/knowledge/REF_UNIT_EXP_SUMMON.md 行 9](../../research/recovered/knowledge_history1/reports/knowledge/REF_UNIT_EXP_SUMMON.md?plain=1#L9-L9) — - The identified accumulation target is a linked UnitData field at +0x16C; the exact end-to-end caller types, rounding and lifetime are not yet fully verified.
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
+
+<a id="field-184"></a>
+## at + 0x184
+
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 195](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L195-L195) — - `afterdeath` callback名 -> string at +0x184（SSO size側 +0x194）。
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+<a id="field-1a0"></a>
+## at + 0x1A0
+
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 197](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L197-L197) — - `afterhit` -> string at +0x1A0（SSO size側 +0x1B0）。
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+<a id="field-1bc"></a>
+## at + 0x1BC
+
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 196](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L196-L196) — - 同じ `afterdeath = skill*number` のnumber側 -> int flags at +0x1BC。
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+<a id="field-1e8"></a>
+## at + 0x1E8
+
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 176](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L176-L176) — - `knock` -> int at +0x1E8。
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+<a id="field-1f0"></a>
+## at + 0x1F0
+
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 177](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L177-L177) — - `knock_speed` -> double at +0x1F0。raw integerを0.01倍して格納。
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+<a id="field-1f8"></a>
+## at + 0x1F8
+
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 178](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L178-L178) — - `knock_power` -> int at +0x1F8。
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+<a id="field-24c"></a>
+## at + 0x24C
+
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 179](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L179-L179) — - `damage` -> int-like field at +0x24C。
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 
 <a id="field-928"></a>
 ## at + 0x928

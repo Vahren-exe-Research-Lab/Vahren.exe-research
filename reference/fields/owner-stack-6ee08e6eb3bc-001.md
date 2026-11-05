@@ -10,6 +10,12 @@
 - [research/recovered/b_reports/T024_FOURWAY_LOOKUP_TWOMODE_ABI_NATIVE_20261026_00H.md 行 15](../../research/recovered/b_reports/T024_FOURWAY_LOOKUP_TWOMODE_ABI_NATIVE_20261026_00H.md?plain=1#L15-L15) — 0x4C714D/0x4C71DE は下位CALL後に戻値でなく stack +0x1B を1にする。0x4C722Fにて同byteを判定、非0なら0x4C7241/46/4B vtable+0x24 に文字列 'change' と0を渡す。**通知条件はhelperを呼んだこと**であり、実際に登録変更が発生した証明
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
+<a id="field-20"></a>
+## stack + 0x20
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 199](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L199-L199) — [CONFIRMED-SAVED-NATIVE] common save writer `0x46067D..0x460687` はWriteFile(handle ebp, buffer eax, size ebx, bytesWritten=&stack+0x20, overlapped=0)を呼ぶ。直後 `0x4
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
 <a id="field-7c"></a>
 ## stack + 0x7C
 

@@ -1,0 +1,47 @@
+{
+  "schema": 1, "audit_id": "B-20261012-2226-01", "baseline_id": "B-20261012-2140-01",
+  "date_jst": "2026-10-12", "run_started_jst": "2026-10-12T22:26:52+09:00",
+  "status": "NOT_READY_BODY_EVIDENCE_NOT_RECORDED_IN_SCANNED_TEXT",
+  "scope": "Read-only saved text inventory; not original EXE/ZIP scanning or fresh disassembly",
+  "search": {"hex_terms": ["5799D0", "576450"], "case_insensitive": true, "decimal_va_terms": true, "near_label_intervals": ["5799D0..579ADF", "576450..57665F"], "max_file_bytes": 33554432},
+  "roots": [
+    {"path": "exe", "files_read": 763, "bytes_read": 13773429},
+    {"path": "rea_lab/decomp_task", "files_read": 535, "bytes_read": 8760493},
+    {"path": "rea_lab/results", "files_read": 25, "bytes_read": 9249561},
+    {"path": "rea_lab/tmp", "files_read": 4, "bytes_read": 16238},
+    {"path": "dev_lab/reports", "files_read": 314, "bytes_read": 5126523},
+    {"path": "dev_lab/docs", "files_read": 41, "bytes_read": 962557},
+    {"path": "dev_lab/_work", "files_read": 105, "bytes_read": 4481376},
+    {"path": "data", "files_read": 90, "bytes_read": 2855414},
+    {"path": "evidence", "files_read": 107, "bytes_read": 8301118}
+  ],
+  "totals": {"files_read": 1984, "matched_text_files": 14, "near_label_files": 2, "read_errors": 0, "oversize_or_undecodable_files": 0, "scanner_seconds": 17.203, "process_exit_code": 0},
+  "encodings": ["UTF-8", "UTF-8 BOM", "UTF-16 BOM", "CP932"],
+  "coverage_limits": ["Only named roots and text extensions; no EXE, ZIP or binary project/database content inspected", "Symlinks and .git/node_modules/toolchain/npm_cache/__pycache__/venv/project directories excluded", "No claim that bodies do not exist anywhere outside the inspected saved corpus"],
+  "callees": [
+    {"va": "5799D0", "entry_instruction_labels_found": 0, "body_status": "UNRECORDED_IN_SCANNED_TEXT", "body_return_sites": null, "body_writes": null, "body_rng_draws": null, "verified_caller_sites": ["57E54F"], "caller_resume_pc": ["57E554"], "work_stop_pc": "57E54F"},
+    {"va": "576450", "entry_instruction_labels_found": 0, "body_status": "UNRECORDED_IN_SCANNED_TEXT", "body_return_sites": null, "body_writes": null, "body_rng_draws": null, "saved_caller_references": ["57E534", "57E572", "57781D", "573AE1"], "caller_resume_pc_in_selected_skill": ["57E539", "57E577"], "work_stop_pc": "57E51B"}
+  ],
+  "nearby_unattributed_fragments": [{"path": "exe/T013_POOL_SEMANTICS_PROBE.txt", "lines": "2739..2755", "va": "5765A3..5765DD"}, {"path": "exe/T013_UNIT_OWNER_PROBE.txt", "lines": "193..210", "va": "5765A1..5765DD"}],
+  "fragment_rule": "Sparse snippets headed 5765C0 do not establish a 576450 body, entry connectivity, all returns or side effects. Not assigned to either requested callee.",
+  "primary_saved_sources": [
+    {"path": "exe/T012_STATUS_CORE_DUMP.txt", "lines": "1676..1735", "sha256": "293a7bfa57d3dc948d28188f4b67e5ce62b530a4acb370b9646833d4eccdc3bb"},
+    {"path": "exe/T012_DAMAGE_CALLER_CONTEXTS.txt", "caller_lines": [880,890,900], "sha256": "9a2ed3b4daa72ecb2d32511471bbdd18cc1e883ec5cfbcd31b4fd6b1a4566ca3"},
+    {"path": "exe/T013_SEARCH_CORE.txt", "caller_lines": [239,249,259], "sha256": "3b55961d6a0653bbb61e90678b2f81faddf67fa6ebde7c74e1795045a7fc5e94"},
+    {"path": "exe/T013_SKILL_KIND_ENUM.txt", "caller_lines": [158], "sha256": "d328da2d6b14f3f01ed9a0f516d5d5bf13918851cc18994e2eb1c0a35c2df8d7"},
+    {"path": "dev_lab/reports/CHATGPT_HEAL_MUTATION_20261012.log", "caller_lines": [3546], "sha256_at_scan": "02c052d7b63c1f0052814fa03a573ce872d79f6248ed25da350bdb1bfb84298f"}
+  ],
+  "caller_contract": {
+    "5799D0": {"ECX": "address U+1E4C4", "stack_arg1": "address U+18638, not Skill pointer value", "result_used": "signed32 EAX compared with memory[entry Skill pointer+4C] after return", "complete": false},
+    "576450": {"ESI": "address U+18650 at CALL, not at Work stop", "stack_args": ["memory32(U+18640)","memory32(U+18644)","caller local memory32(ESP+10) before pushes, value unknown"], "caller_uses_raw_result": false, "complete": false},
+    "state_already_committed_at_both_Work_stops": [{"unit_offset": "1E530", "value": 0}],
+    "postreturn_only": {"57E534": "resume57E539; store slot18638=AAFBB8; caller sets AL0 and returns57E547", "57E572": "resume57E577; store slot18638=AAFBB8; caller sets AL1 and returns57E585"},
+    "preserve": ["same Unit and entry Skill identity", "slot/object references", "prior committed prefix and RNG cursor", "parent Task frame/slot and old/new nearby"],
+    "do_not_assume": ["arbitrary EAX or AL", "5799D0 is a pure getter or missing key yields zero", "576450 is list.clear or third argument is zero", "callee RNG or writes absent", "caller return PCs are callee RET sites"]
+  },
+  "work_source_read_only": "dev_lab/src/hakushin_compat/native_unit_ai.py:138..181; SkillCallFrame/begin_selected_skill; no receipt injection for unknown callees",
+  "state": {"master_checkpoint": 89, "official_ids": 210, "new_ready": 0, "new_body_functions": 0, "original_gameplay_golden_pass": 0, "strict_match": 0},
+  "unrelated_refusals_retried": false,
+  "next_evidence_required": ["Saved entry-to-all-exit instruction coverage for 5799D0 and 576450", "Branch target closure, stack cleanup, writes including alias/allocator effects", "576450 third-argument read or ignored-byte proof", "Direct/indirect callee effects and RNG order"],
+  "fresh_original_analysis_performed": false
+}

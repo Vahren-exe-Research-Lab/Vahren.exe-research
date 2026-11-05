@@ -10,4 +10,7 @@
 - [research/recovered/b_batch2/T011_TRAINING_LEADER_BONUS_MEMO_NATIVE_20261031_07H.md 行 8](../../research/recovered/b_batch2/T011_TRAINING_LEADER_BONUS_MEMO_NATIVE_20261031_07H.md?plain=1#L8-L8) — [NATIVE MISS] iterator=endの0x4722DC→0x472310以降は既06Hの隊長+0xEC skill配列(stride0x1C)走査。0x472338 kind+0x40==6→0x472349 name='training'の一致で0x472380 [Skill+0x2B0]をボーナス
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 794](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L794-L794) — [NEW BRANCH] 0x47229E CALL0x583DC0のNULLではbaseline、候補あり0x4722BE CALL0x4F8A80後iterator有効なら0x4722D0 [+0x10] +baseline、iterator=endならstride0x1C走査で0x472338 kind+0x40
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

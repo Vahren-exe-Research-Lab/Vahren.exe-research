@@ -1,0 +1,21 @@
+{
+  "base": "fed0edb892178834a2d777fe99fdfd3765257ce1",
+  "selected_large_markdown": 17,
+  "large_markdown_accepted": 7,
+  "large_markdown_whole_held": 10,
+  "issue_evidence_accepted": 5,
+  "new_root_rows": 12,
+  "root_ledger_rows": 1613,
+  "documents": 1585,
+  "inventory_states": {
+    "RECOVERY_RECEIPT_PRESENT": 1489,
+    "KNOWN_REVIEW_HOLD": 100,
+    "DEFERRED_OTHER_OR_PENDING": 10,
+    "UNREVIEWED_CURRENT_PATH": 1
+  },
+  "issue_pair_paths_accepted": 17,
+  "issue_pairs_both_present": 8,
+  "privacy_edits": 3,
+  "original_cleanup": "NOT_PERFORMED;BATCH_RESTORATION_AND_EXTERNAL_DEPENDENCIES_NOT_YET_COMPLETE",
+  "semantic_core": "UNCHANGED;488symbols/355functions/120fields/159relations/13corrections"
+}

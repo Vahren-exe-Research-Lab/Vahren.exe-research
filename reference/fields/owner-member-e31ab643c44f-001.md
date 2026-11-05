@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-1fa"></a>
+## member + 0x1FA
+
+- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 532](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L532-L532) — [MEMBER WRITER] 同保存native 0x4B5D94..0x4B5E6Eの候補resolver・型一致後にinner+0x0C..0x10を走査し、member pointerごとに0x4B5E62..65でそのALを[member+0x1FA]へ格納する。通常のunctrlTroop literal一
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
 <a id="field-1867c"></a>
 ## member + 0x1867C
 

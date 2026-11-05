@@ -25,11 +25,23 @@
 - [research/recovered/remaining_md1/reports/data/T012_T013_B_RESEARCH_TASKBOARD_20261013.md 行 137](../../research/recovered/remaining_md1/reports/data/T012_T013_B_RESEARCH_TASKBOARD_20261013.md?plain=1#L137-L137) — [CONTROL CONTRACT] Only if Work's existing`run_heal_refresh` preconditions permit and Unit+878 is nonempty: outer4E02A0 lookup49ED30 (UNKNOWN SAFETY_REFUSAL), i
   制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
 
+<a id="field-14"></a>
+## record + 0x14
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 589](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L589-L589) — [CONFIRMED-SAVED-NATIVE / INCREMENTAL] A所有 exe/T005_TABLE_HELPERS.txt 0x436680..0x436717を直接読取。EDXをESIへ、ECXをEDIへ保持し、0x4366AFでsize=0x30を0x5B6C2Bへ渡してheap allocate。
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
 <a id="field-1c"></a>
 ## record + 0x1C
 
 - [research/recovered/chat_a_history/CHAT_A_20261014_02H_FINAL.md 行 61](../../research/recovered/chat_a_history/CHAT_A_20261014_02H_FINAL.md?plain=1#L61-L61) — [record + 0x1C] = EAX
   制約・訂正　Historical claims; PC save/readback not newly proven; no linked evidence read; no new READY/DONE/Golden/runtime credit
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 140](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L140-L140) — 発見[CONFIRMED-TARGET 静的]: group1 loader 0x45ED20..0x45ED92は非空keyなら0x45F8A2へ進み、aux文字列を0x4705F0、int32(value=record+0x1C)を0x470700で復号済みstreamから読み、0x45F90Fで0x4A69B0に
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 256](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L256-L256) — [REIMPLEMENT/GOLDEN] numeric record+0x1C、buffer取得、ExplicitNullを独立モデル化。set/add→writer、battle/RTS scene scope、保存後reload、@特殊consumerはDESIGNED/NOT RUN、旧EXE PASS0。
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
 - [research/recovered/remaining_md1/reports/data/T024_HAKUSHIN_BATTLE_AI.md 行 162](../../research/recovered/remaining_md1/reports/data/T024_HAKUSHIN_BATTLE_AI.md?plain=1#L162-L162) — [VERIFY/P0] battle entry→numeric map resetの可否、set(op5) handler→record +0x1C writer/lookup接続、world/save/reloadをはさむ変数寿命の3点は未確定。現段階では「砲兵flagが必ず次戦へ残る」という結果をCONFIRME
   制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
@@ -159,6 +171,12 @@
 
 - [research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md 行 17](../../research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md?plain=1#L17-L17) — - **今回の増分:** 前回 `B-OFFLINE-20261021-0716-01`で既知の`0x467DE0`→`record+0x1A4`に加え、今回新たに`0x467E90`→`record+0xB0`という**第二のbacklink書込み**を確認。`+0x1A4`と`+0xB0`を同一フィールドに潰さない
   制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+<a id="field-1ac"></a>
+## record + 0x1AC
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 707](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L707-L707) — [CONFIRMED-SAVED-NATIVE] A担当`exe/T006_DIALOG_VMETHODS.txt` 0x441180..0x4411AF/0x441D40..69はDialog count+0x184 / global indexed geometry pointer [0x65C1B8+4*i]。`
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
 <a id="field-1d0"></a>
 ## record + 0x1D0

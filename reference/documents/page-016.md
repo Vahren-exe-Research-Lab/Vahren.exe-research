@@ -302,4 +302,52 @@
   回収状態 GITHUB_ISSUE_LATEST_BODY_EXACT_UTF8_SNAPSHOT。以前の収録状況 NOT_ACCEPTED_IN_FIXED_BASELINE_1576_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1602-L1602)。制約・訂正 Latest returned Unicodebody only,UTF8 hash not server DB bytes; no comments/history/linked artifacts; dated author claims not new native/runtime/READY/Golden/CURATED proof
   本文 SHA256 `fc981e228ed7f19f5b59ac07f4077d871b03ddf4c31d92e04c012d45aa601064`
 
+- [T011 Unit/Class/Skill/Race/Attribute/MoveType data model checkpoint](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L1-L1) — `research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 UNREVIEWED_CURRENT_PATH; baseline1601 SHA match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1603-L1603)。制約・訂正 Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+  本文 SHA256 `2848bfdf9cf9c47cdb5174385d3626140207dd726ce2078982f5486e6ed3c14b`
+
+- [T030 RTS独立シナリオ互換仕様（source/static）](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L1-L1) — `research/recovered/principal_models1/reports/data/T030_RTS_MODE.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 UNREVIEWED_CURRENT_PATH; baseline1601 SHA match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1604-L1604)。制約・訂正 Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+  本文 SHA256 `1e462ef63681ab1a57425c6b686af4534eb2a0e2f9a4180c8bdb6a167ffce0b7`
+
+- [REA 2026-10-24 18H｜独立検査と保存前の読戻し記録](../../research/recovered/recovery_corpus1/reports/REA_OFFLINE_20261024_18H_ARMYCHIP_FLAG_CONSUMER_READBACK.md?plain=1#L1-L1) — `research/recovered/recovery_corpus1/reports/REA_OFFLINE_20261024_18H_ARMYCHIP_FLAG_CONSUMER_READBACK.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 UNREVIEWED_CURRENT_PATH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1605-L1605)。制約・訂正 Historical authored STATIC/readback/test claims only; no new native/runtime/READY/VERIFIED/Golden/strictMATCH or PC sync; linked evidence not acquired
+  本文 SHA256 `9e8378d63136d7576ad79dfe5bfa7dca7bfb71a8875dcac898899a0ed5aba7d0`
+
+- [迫真戦記 ver0.67｜REA P0 独立静的研究（2026-10-24 18時台）](../../research/recovered/recovery_corpus1/reports/REA_OFFLINE_20261024_18H_ARMYCHIP_FLAG_CONSUMER_REPORT.md?plain=1#L1-L1) — `research/recovered/recovery_corpus1/reports/REA_OFFLINE_20261024_18H_ARMYCHIP_FLAG_CONSUMER_REPORT.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 UNREVIEWED_CURRENT_PATH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1606-L1606)。制約・訂正 Historical authored STATIC/readback/test claims only; no new native/runtime/READY/VERIFIED/Golden/strictMATCH or PC sync; linked evidence not acquired
+  本文 SHA256 `9ff5a6d3f94d192f5f72b293ecc3443ff97c1f314a9ac99f58a61363913f4e9b`
+
+- [迫真戦記再開発｜Work→研究チャット共有依頼キュー](../../research/recovered/handoff_scope1/reports/dev_lab/docs/archive/WORK_REQUEST_QUEUE_ARCHIVE_20261029.md?plain=1#L1-L1) — `research/recovered/handoff_scope1/reports/dev_lab/docs/archive/WORK_REQUEST_QUEUE_ARCHIVE_20261029.md`
+  回収状態 CONTENT_REVIEWED_PRIVACY_DERIVATIVE。以前の収録状況 UNREVIEWED_CURRENT_PATH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1607-L1607)。制約・訂正 Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+  本文 SHA256 `2c0bd2dc51a55d70d5a2c7dbe0a7468f08499cb769c2f0a77ae2f7b09b0401ab`
+
+- [レーンA（EXE・VM・永続化）引継ぎ台帳](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L1-L1) — `research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 UNREVIEWED_CURRENT_PATH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1608-L1608)。制約・訂正 Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+  本文 SHA256 `87338176b83834d89a23c258186af28599465551332e44f22f4e6c8c24cc9816`
+
+- [Lane C — 迫真戦記 内政・戦略・イベント解析 handoff](../../research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md?plain=1#L1-L1) — `research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 UNREVIEWED_CURRENT_PATH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1609-L1609)。制約・訂正 Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+  本文 SHA256 `af02662181aca59391580874704eee5c5cfd2ffd66b0d96320137b474088fc51`
+
+- [T013_POST_ACTION_SKILL_577600_20261013.txt](../../research/recovered/issue_pair_evidence1/reports/exe/T013_POST_ACTION_SKILL_577600_20261013.txt?plain=1#L1-L1) — `research/recovered/issue_pair_evidence1/reports/exe/T013_POST_ACTION_SKILL_577600_20261013.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Issue2 pair source absent in fixedfed0edb1601 ledger。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1610-L1610)。制約・訂正 Authored bounded instruction-map evidence for577600; opaque calls only, no linked callee body. Historical static authored claims only; no native/runtime/READY promotion; linked files not fetched.
+  本文 SHA256 `5e88ad065a869e516612fd8aa4c629ce2d47992fe9feb1660d5df4b1275dee11`
+
+- [T013_SKILL_LIST_FILTER_579BA0_20261013.txt](../../research/recovered/issue_pair_evidence1/reports/exe/T013_SKILL_LIST_FILTER_579BA0_20261013.txt?plain=1#L1-L1) — `research/recovered/issue_pair_evidence1/reports/exe/T013_SKILL_LIST_FILTER_579BA0_20261013.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Issue2 pair source absent in fixedfed0edb1601 ledger。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1611-L1611)。制約・訂正 Authored bounded579BA0 filter analysis; its own0718-02 primary ID remains separate from0718-01 caller study. Historical static authored claims only; no native/runtime/READY promotion; linked files not fetched.
+  本文 SHA256 `fa5b4d9c81eb14419acaa846b5466bf89092965b791e279d891eb7ff5c2232e1`
+
+- [T012_57E905_57EB30_BRANCH_MAP_20261016.txt](../../research/recovered/issue_pair_evidence1/reports/exe/T012_57E905_57EB30_BRANCH_MAP_20261016.txt?plain=1#L1-L1) — `research/recovered/issue_pair_evidence1/reports/exe/T012_57E905_57EB30_BRANCH_MAP_20261016.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Issue2 pair source absent in fixedfed0edb1601 ledger。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1612-L1612)。制約・訂正 Authored caller branch-map text;580280 call reference supplies no callee-body approval. Historical static authored claims only; no native/runtime/READY promotion; linked files not fetched.
+  本文 SHA256 `4bf81991712026132c73849ffe2d1e94748878a634a29c34913f5c233775131e`
+
+- [T013_CALLEE_COVERAGE_5799D0_576450_20261012_2226.json](../../research/recovered/issue_pair_evidence1/reports/data/T013_CALLEE_COVERAGE_5799D0_576450_20261012_2226.json?plain=1#L1-L1) — `research/recovered/issue_pair_evidence1/reports/data/T013_CALLEE_COVERAGE_5799D0_576450_20261012_2226.json`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Issue2 pair source absent in fixedfed0edb1601 ledger。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1613-L1613)。制約・訂正 Historical saved-text coverage inventory; reports missing body evidence in then-scanned corpus, not present global absence. Historical static authored claims only; no native/runtime/READY promotion; linked files not fetched.
+  本文 SHA256 `13a5dc569127e6f313d68fe4f698503b406f4fa6841289bc5aebd7052573be31`
+
+- [T013_CALLEE_COVERAGE_CHECK_20261012_2226.json](../../research/recovered/issue_pair_evidence1/reports/data/T013_CALLEE_COVERAGE_CHECK_20261012_2226.json?plain=1#L1-L1) — `research/recovered/issue_pair_evidence1/reports/data/T013_CALLEE_COVERAGE_CHECK_20261012_2226.json`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Issue2 pair source absent in fixedfed0edb1601 ledger。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1614-L1614)。制約・訂正 Historical33-check receipt for paired coverage JSON; not independent gameplay evidence or a fresh native rerun. Historical static authored claims only; no native/runtime/READY promotion; linked files not fetched.
+  本文 SHA256 `a94cd61e3997dba1a75ee222e689386d9cd8a2441459af64851418019264ffdb`
+
 [前のページ](page-015.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md)

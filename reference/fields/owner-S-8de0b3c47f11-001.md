@@ -31,6 +31,12 @@
 - [research/recovered/knowledge_history1/reports/knowledge/REF_UNIT_EXP_SUMMON.md 行 20](../../research/recovered/knowledge_history1/reports/knowledge/REF_UNIT_EXP_SUMMON.md?plain=1#L20-L20) — - The observed static holder flow is source S+0xC -> SummonFlash+0xC -> child Unit+0xC.
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
 
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 766](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L766-L766) — [NEW] 0x54ED51 EAX=S、0x54ED70 ECX=[S+0xC]→0x54ED89 PUSH H→0x54ED8A CALL0x550580(SummonFlash factory)。新規vtable=0x63A65C、slot+0x18=0x455FA0→0x455FABがSummonFlash+0
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 767](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L767-L767) — [CORRECTION] 13Hの未解明EBXは召喚親Unit直接ではなくSummonFlash効果文脈。参照の伝播は S+0xC→SummonFlash+0xC→child+0xC。これは召喚親の一意識別情報を証明しない。元PE E8 site3/3一致、RTTI/静的vtable照合。詳細 data/T011_SU
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
 - [research/recovered/rea_batch4/reports/REA_20261030_04H_P0_DSLOCK_PAIR_FIRSTREGION_STATIC.md 行 11](../../research/recovered/rea_batch4/reports/REA_20261030_04H_P0_DSLOCK_PAIR_FIRSTREGION_STATIC.md?plain=1#L11-L11) — `0x0050235B..0x00502387` のpushとLEA（pushによるESP変位を考慮）よりLock引数は `(stream+8, offset=0, bytes=0, &ptr1[S+0x0C], &bytes1[S+0x08], &ptr2[S+0x14], &bytes2[S+0x10], flag
   制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
 
@@ -168,6 +174,12 @@
 
 - [research/recovered/rea_batch7/reports/REA_20261027_09H_P0_D3DX_VIEWPORT_RESULT_STATIC.md 行 14](../../research/recovered/rea_batch7/reports/REA_20261027_09H_P0_D3DX_VIEWPORT_RESULT_STATIC.md?plain=1#L14-L14) — `S`=各stdcall呼出し前の安定ESPとすると、0x005599E4の出力バッファ候補は`S+0xF0`。D3DXVec3Unproject呼出し0x00559BCF/0x00559BFEの第3引数用`LEA [ESP+0xFC]`（その時点で12バイトPUSH済み）も同じ`S+0xF0`に対応する。したがってV
   制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+<a id="field-1d0"></a>
+## S + 0x1D0
+
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 772](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L772-L772) — [NEW] child構築後、selector==1なら0x54F02F S+0x1D0、>=2なら0x567EE0 group新規またはS管理list末尾groupで候補EDI選択。EDI非NULLで0x54F093/0x54F096→0x568710にchild/Groupを渡し、group+0x1D==0側0x5
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 
 <a id="field-300"></a>
 ## S + 0x300

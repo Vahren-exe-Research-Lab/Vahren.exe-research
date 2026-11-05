@@ -4,6 +4,18 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-c"></a>
+## new + 0xC
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 601](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L601-L601) — [CONFIRMED-SAVED-NATIVE / INCREMENTAL] A所有 exe/T005_REGISTRY_INSERT_PROBE.txt 0x463354..0x4633D1を再照合。generic wrapper 0x463280は0x405370比較結果AL=0の場合、0x463391へ分岐してn
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+<a id="field-20"></a>
+## new + 0x20
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 601](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L601-L601) — [CONFIRMED-SAVED-NATIVE / INCREMENTAL] A所有 exe/T005_REGISTRY_INSERT_PROBE.txt 0x463354..0x4633D1を再照合。generic wrapper 0x463280は0x405370比較結果AL=0の場合、0x463391へ分岐してn
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
 <a id="field-194"></a>
 ## new + 0x194
 
