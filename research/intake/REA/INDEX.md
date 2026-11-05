@@ -1144,3 +1144,8 @@ This new study is distinct from the earlier static-only recovery batches above. 
 ## REA-T015-OGG-REUSE-20261105 — playback v4 / DirectSound secondary volume isolation
 
 [追補](ogg_reuse_20261105/playback_v4/REPORT.md): host 0x5D16C0/0x5D0F70/0x5D12E0/0x5CFE00 → full PCM → DLL-owned DS secondaryの実機成功。2音・個別volume・停止、同一session前後不変。起動時から残る約5%共有音量はv3由来の保存設定と整合、本人による復元未確認。DAT未統合、一般安全性/全WAV共存は未認定。出典・SHA・parserを追補内保全。curator採録待ち。
+
+
+## REA-T015-OGG-REUSE-20261105 — Core plugin candidate / 2026-11-06
+
+[Candidate report and regression evidence](ogg_reuse_20261105/product_v1/REPORT.md), [implementation design snapshot](ogg_reuse_20261105/product_v1/DESIGN.md). User restored normal game volume; supersedes playback-v4 restoration-unconfirmed only. Method B implemented against HakushinExtensions Core ABI1: DAT path snapshot → FIFO → native Vorbis → independent DS secondary. Local product source 92c832e64c1da213c4872bcafad3550b758588d4, DLL SHA256 da159ae750ad9010acc0a5153c0de7fba825d3290f4262d5c73710fce33a0164. O0/O2 synthetic and actual-Core wrong-host/disabled tests PASS; authorized isolated-copy installation/restore verified. **DAT runtime acceptance pending; NOT_CURATED, not general native safety or all-WAV compatibility proof.** Planned later full-WAV conversion play test requires separate original sound/voice routing work. No original assets/binaries/raw logs or shared dictionaries uploaded.
