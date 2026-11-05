@@ -10,6 +10,7 @@ import hmac
 import json
 import math
 import re
+from decimal import Decimal, InvalidOperation
 import unittest
 
 
@@ -27,15 +28,31 @@ def _reject_nonfinite(value):
 
 
 def _finite_float(token):
-    """Reject JSON exponent overflow to inf (parse_constant cannot catch 1e309)."""
-    value = float(token)
-    if not math.isfinite(value):
-        raise ValueError("nonfinite JSON exponent/float")
-    return value
+    """Preserve JSON decimal precision while rejecting overflow and underflow.
+
+    Converting straight to float conflates e.g. 0.10000000000000001 and 0.1.
+    The receipt can only attest the scalar it actually contains.
+    """
+    try:
+        exact = Decimal(token)
+        approximate = float(exact)
+    except (InvalidOperation, OverflowError, ValueError) as exc:
+        raise ValueError("invalid JSON decimal") from exc
+    if not math.isfinite(approximate) or (approximate == 0.0 and exact != 0):
+        raise ValueError("nonfinite or underflowing JSON decimal")
+    return exact
 
 
 def _typed_equal(a, b):
-    """Recursive exact equality; Python's True == 1 must not pass."""
+    """Recursive JSON-value equality with strict bool/int/decimal boundaries.
+
+    A parsed JSON decimal retains its exact value; a supplied Python float
+    receipt is compared to its shortest round-trip decimal representation.
+    This deliberately rejects extra precision absent from the receipt.
+    """
+    if type(a) is Decimal:
+        return (type(b) is float and math.isfinite(b) and
+                a == Decimal(str(b)))
     if type(a) is not type(b):
         return False
     if isinstance(a, dict):
@@ -190,6 +207,31 @@ class ProjectionBindingTests(unittest.TestCase):
     def test_normal_fractional_json_still_binds_synthetically(self):
         c = json.loads(json.dumps(self.capture))
         c["g2"]["deployed"][0]["order"] = 0.5
+        raw = json.dumps({"capture": c}, sort_keys=True).encode("utf-8")
+        r = check_projection(raw, hashlib.sha256(raw).hexdigest(), c)
+        self.assertEqual(r["status"], "SYNTHETIC_FIELD_BINDING_ONLY")
+        self.assertFalse(r["actual_golden_pass"] or r["strict_match"] or r["ready"])
+
+    def test_decimal_precision_must_not_alias_float_receipt(self):
+        # float('0.10000000000000001') would silently round to 0.1.
+        raw = self.raw.replace(b'"order": 0', b'"order": 0.10000000000000001')
+        self.assertNotEqual(raw, self.raw)
+        c = json.loads(json.dumps(self.capture))
+        c["g2"]["deployed"][0]["order"] = 0.1
+        self.assertEqual(self.result(raw=raw, digest=hashlib.sha256(raw).hexdigest(),
+                                     receipt=c)["status"], "SOURCE_RECEIPT_UNBOUND")
+
+    def test_decimal_exponent_underflow_is_invalid(self):
+        raw = self.raw.replace(b'"order": 0', b'"order": 1e-400')
+        self.assertNotEqual(raw, self.raw)
+        c = json.loads(json.dumps(self.capture))
+        c["g2"]["deployed"][0]["order"] = 0.0
+        self.assertEqual(self.result(raw=raw, digest=hashlib.sha256(raw).hexdigest(),
+                                     receipt=c)["status"], "SOURCE_JSON_INVALID")
+
+    def test_finite_scientific_decimal_roundtrip_synthetic_only(self):
+        c = json.loads(json.dumps(self.capture))
+        c["g2"]["deployed"][0]["order"] = 1e-300
         raw = json.dumps({"capture": c}, sort_keys=True).encode("utf-8")
         r = check_projection(raw, hashlib.sha256(raw).hexdigest(), c)
         self.assertEqual(r["status"], "SYNTHETIC_FIELD_BINDING_ONLY")
