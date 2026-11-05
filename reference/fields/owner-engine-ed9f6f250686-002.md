@@ -251,7 +251,7 @@
 ## engine + 0x1EEDB8
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 464](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L464-L464) — 2. 先頭レベルの各要素について、0x436530 で `__RTDynamicCast(ScriptElement → ScriptIF)` を試す。キャストできたもの**だけ**を 0x5299E0 で **std::list（engine+0x1EEDB8 = battle{} のルートと同じリスト）の末尾に追加
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/script_topics/T010_EVENT_SCHEDULER.md 行 29](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L29-L29) — 4. ScriptIFだけを battle root active list（engine +0x1EEDB8）へ登録する。
   制約・訂正　Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded

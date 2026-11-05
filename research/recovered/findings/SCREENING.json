@@ -3,7 +3,7 @@
   "source_sha256": "9e5ceec9635f2c0306c9417bef1648722f8c354c382a3049986507fc7bbb5c34",
   "source_lines": 4683,
   "destination": "research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md",
-  "destination_sha256": "6c61b104076363710e09535c6db62daedbe0f0ee159a6ce3240aceb4f417d2d8",
+  "destination_sha256": "af1da13e6b95ec75af7ed758679eb6740e8ad90e9d00d032c5ee3374589864d8",
   "scope": "SCREENED_PARTIAL_REDACTED_NOT_FULLY_MANUALLY_REVIEWED",
   "omitted_ranges": [
     {
@@ -162,6 +162,18 @@
     "95": "f-95",
     "96": "f-96"
   },
-  "retained_original_lines": 4124,
-  "checked_date": "2026-11-05"
+  "retained_original_lines": 4123,
+  "checked_date": "2026-11-05",
+  "additional_saved_line_redactions": [
+    {
+      "previous_destination_sha256": "6c61b104076363710e09535c6db62daedbe0f0ee159a6ce3240aceb4f417d2d8",
+      "saved_start_line": 3182,
+      "saved_end_line": 3182,
+      "reason": "existing_held_579290_internal_contract",
+      "replacement": "one table-row placeholder, physical LF positions preserved",
+      "source_line_estimate": 3105,
+      "source_line_estimate_method": "Saved scaffold arithmetic only; original bytes not reread. 3182-intro5-prioranchors82-priorplaceholderlines21+prioromittedoriginal31.",
+      "original_byte_mapping_verified": false
+    }
+  ]
 }

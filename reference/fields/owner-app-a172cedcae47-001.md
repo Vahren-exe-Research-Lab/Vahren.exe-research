@@ -8,18 +8,18 @@
 ## app + 0xC
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1824](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1824-L1824) — 2. **GM+0x1EEC3C == 2 なら**、3陣営 GM+0x1E8630 / +0x1E8634 / +0x1E8638 の vf05 をこの順で呼ぶ（Unit ベクタ順に 0x575110 → LvUp、§36）。その後 0x4C21F0(app+0xC, 25)。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 <a id="field-74"></a>
 ## app + 0x74
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1825](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1825-L1825) — - **0x4C21F0 の正体**: フレーム周期の設定。app+0x74 = 25、app+0x78 = chop(1000/25 + 0.5) = 40ms。ゲームの状態には影響しない。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 <a id="field-78"></a>
 ## app + 0x78
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1825](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1825-L1825) — - **0x4C21F0 の正体**: フレーム周期の設定。app+0x74 = 25、app+0x78 = chop(1000/25 + 0.5) = 40ms。ゲームの状態には影響しない。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

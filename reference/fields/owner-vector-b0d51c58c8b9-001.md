@@ -8,7 +8,7 @@
 ## vector + 0xC
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 652](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L652-L652) — - +0x1CC = 部隊の先頭 Unit の def（部隊の vector +0xC/+0x10 の先頭）。部隊が NULL、空、先頭が NULL のときは自分の def。つまり **+0x1CC = リーダーの def**、`+0x1C8 == +0x1CC` は「自分がリーダー」。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 <a id="field-48"></a>
 ## vector + 0x48

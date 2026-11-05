@@ -8,12 +8,12 @@
 ## vec + 0xA8
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3108](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3108-L3108) — \| next / next2 / next3 / next4? / pair_next \| +0x8C（長さ +0x9C）/ vec +0xA8 / vec +0xB8 / +0xC8（長さ +0xD8）/ +0xE4（長さ +0xF4） \| 文字列 \| — \|
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 <a id="field-b8"></a>
 ## vec + 0xB8
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3108](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3108-L3108) — \| next / next2 / next3 / next4? / pair_next \| +0x8C（長さ +0x9C）/ vec +0xA8 / vec +0xB8 / +0xC8（長さ +0xD8）/ +0xE4（長さ +0xF4） \| 文字列 \| — \|
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

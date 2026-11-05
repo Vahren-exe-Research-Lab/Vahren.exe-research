@@ -47,7 +47,7 @@
 ## GameManager + 0x1EF144
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3836](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3836-L3836) — - **タイトル画面**: base+0x6AD434（GameManager+0x1EF144）は場面番号。0＝タイトル（0x48AD30、'title_name'）、1＝ワールド、2＝戦闘・マップイベント、4＝シナリオ選択、5＝シナリオ開始、6＝ロード、7＝マップテスト。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0434_T014_SHEET_SELECTOR_LATCH_AUDIT.md 行 34](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0434_T014_SHEET_SELECTOR_LATCH_AUDIT.md?plain=1#L34-L34) — ## 3. 増分B：`GameManager+0x1EF144`が8分岐のセレクター
   制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion

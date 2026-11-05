@@ -146,7 +146,7 @@ Sources: `dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md` (runtime
 
 ### 別の実装報告との相違・確認範囲
 
-[F§64.2・1671–1678行](research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1671-L1678)は「実装した関数」の `unit_strength_587cc0` を説明し、fv_*係数の各積をchopしてdef+0x1C4へ格納すると記述する。[F§75・2702–2708行](research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L2702-L2708)にも引数1の返値を使う評価式がある。固定保存版FのSHA256は `6c61b104076363710e09535c6db62daedbe0f0ee159a6ce3240aceb4f417d2d8`。これは参照すべき実装・静的対応の著者報告として残す。
+[F§64.2・1671–1678行](research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1671-L1678)は「実装した関数」の `unit_strength_587cc0` を説明し、fv_*係数の各積をchopしてdef+0x1C4へ格納すると記述する。[F§75・2702–2708行](research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L2702-L2708)にも引数1の返値を使う評価式がある。固定保存版FのSHA256は `af1da13e6b95ec75af7ed758679eb6740e8ad90e9d00d032c5ee3374589864d8`。これは参照すべき実装・静的対応の著者報告として残す。
 
 ただし、この実装説明の引用箇所は原作calleeの完全な命令列・内部store位置を提示していない。節固有の観測日時も不明で、文書題名の日付だけでT011との新旧を決めない。「内部書込未証明」はT011§17の限定取得範囲に対する記録であり、すべての研究に格納報告が存在しないという主張ではない。Fのstrengthという命名・式・格納と、原作callee/callerの帰属・完全な返値・副作用は未照合。今回、その報告を新しいwrite関係や確定用途へ自動採用せず、保留された後半も取得しない。
 
@@ -162,3 +162,12 @@ Sources: `dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md` (runtime
 同じ数値のオフセットを型同一性・同じ間接参照段数の証明にしない。cacheの468Bという大きさは[別の構造導出](research/recovered/json_exp_exe1/reports/19_EXP_STRING_CACHE_ABI_EVIDENCE_20261021.json)358–369行（SHA256 `8440b0057d6983d291a151217af7f5a60839d14c9e1f4cd7e9acaf97f1aebb6e`）の限定された著者報告であり、完全なC++宣言型や実行時動作を確定しない。keyやowner全体の型・別場面の同一性は追加採録していない。
 
 元報告の静的・未実行・VERIFYの区分を保つ。全save経路が同じwriterを使うこと、召喚EXPがsave以前に移されないこと、全間接CALLを網羅したことは証明していない。正式レイアウトへの部分採録と、実機確認・ゲーム結果の保証を分ける。
+
+
+## 制作時の注意：実HP変化と経験値の入力を分ける
+
+保存済み[EXP研究 CP22–CP24](research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md#cp22攻撃側hpへ渡すダメージとexp分子は別の値)は、攻撃・回復・複数項目回復の入力を区別しています。攻撃0x550E70の確認経路では、HP用補正値とは別に保持した計算値を0x551167から渡します。実際に減ったHPだけで経験値を求め直しません。分母はHP処理から戻った後のUnitData+0x178読み出しです。
+
+回復0x551490も、上限まで実際に回復できた量に差し替えず、元の計算量を0x551C6Aから渡します。heal(kind3)は共通helper0x551E50で固定2%の枝を選ぶため、回復量への単純比例ではありません。add_all経路で同じcontextを使い続け、外部resetがなければ、context+0xCのgateにより項目数ぶん再加算されません。全弾・全対象で1回という一般化や、満タンへの発動・経験値稼ぎの成立は未確認です。
+
+これは保存済み著者の局所静的報告を事典へ反映したものです。今回の原作再解析・合成コード実行・実機再検証はありません。古い研究の未解決事項と後日の実機報告は、それぞれ対象と確認範囲を保って読みます。

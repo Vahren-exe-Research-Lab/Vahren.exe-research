@@ -4,8 +4,29 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-288"></a>
+## Skill + 0x288
+
+- [research/recovered/json_sources1/reports/data/B_T012_PRESENCE_TAIL_CFG_EVIDENCE_OFFLINE_20261024_18H.json 行 151](../../research/recovered/json_sources1/reports/data/B_T012_PRESENCE_TAIL_CFG_EVIDENCE_OFFLINE_20261024_18H.json?plain=1#L151-L151) — "not_new": "0x004645B3 AL=1, 0x0046457A AL=0, 50-bound, Skill+0x288 default, earlier 17H already established.",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
+- [research/recovered/json_sources1/reports/data/B_T012_PRESENCE_TAIL_CFG_EVIDENCE_OFFLINE_20261024_18H.json 行 172](../../research/recovered/json_sources1/reports/data/B_T012_PRESENCE_TAIL_CFG_EVIDENCE_OFFLINE_20261024_18H.json?plain=1#L172-L172) — "golden": "Unmodified PE/DAT, same SAVE/MAP/seed/input; direct/parent/absent/explicit-zero str_ratio; capture Skill+0x288 and damage/HP/tick."
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
+- [research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md 行 531](../../research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md?plain=1#L531-L531) — [SAVED NATIVE EXACT] mode5は0x550E31選択→0x550E36でC=[0x63B0B0]をload、0x550E3CでR=[Skill+0x288]を引き、0x550E42でUnit+0xACを乗算。0x550E48/4Eで別Unit+0xA0にRを乗算、0x550E54で両項加算、0x5
+  制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
+
+- [research/recovered/rea_batch14/reports/SOURCE_RECOVERY_TYPED_DAMAGE_20261011.md 行 15](../../research/recovered/rea_batch14/reports/SOURCE_RECOVERY_TYPED_DAMAGE_20261011.md?plain=1#L15-L15) — - 数値A=Unit+0x98、B=+0xA0、C=+0xAC、R=Skill+0x288、S=Skill+0x280とした数学式（実際のx87中間丸めとは別）：
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
 <a id="field-290"></a>
 ## Skill + 0x290
+
+- [research/recovered/b_batch9/data/T013_RUSH_RECORD_54F990_CONTRACT_20261013.md 行 6](../../research/recovered/b_batch9/data/T013_RUSH_RECORD_54F990_CONTRACT_20261013.md?plain=1#L6-L6) — [KIND4] Skill+0x40==4 reaches 0x54FA3F onward for angular/distance selection. Depending on provided coordinate pointer & optional command ref, calculates dx²+dy
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/b_reports/T012_SUMMON_CORE_54E7B0_CONTRACT_20261013.md 行 6](../../research/recovered/b_reports/T012_SUMMON_CORE_54E7B0_CONTRACT_20261013.md?plain=1#L6-L6) — [ORIENTATION/NUMERIC] 0x54E8C0..以降はUnit+0x18688方位候補をreadしglobal0x68B2B8等で変換、Skill+0x290や+0x??を含む位置・方向計算に0x5E3B70/0x5D1B80/0x5E41E0/0x5E40B0を使用。実FP環境と数値丸めはWRQ-B-
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail; historical READY-STATIC-BODY label is not a new current READY admission
 
 - [research/recovered/dev_reports/DEVLAB_HANDOFF_20261011_MODE6_DISTANCE_233.md 行 13](../../research/recovered/dev_reports/DEVLAB_HANDOFF_20261011_MODE6_DISTANCE_233.md?plain=1#L13-L13) — 3. `exe/T012_DAMAGE_CORE_DUMP.txt` VA0x55103D..0x5510D7: Skill+0x250=0なら距離減衰をskips。非zeroはsource/target座標+0x214/+0x218のsigned32差・2×IMUL・ADD、0x5E3B70 sqrt、(Skill+
   制約・訂正　Historical STATIC/INFERRED/VERIFY and synthetic-test claims; no new native/runtime verification; referenced raw assets/probes/archives not recovered; no Golden/READY promotion
@@ -65,7 +86,7 @@
   制約・訂正　Historical STATIC/INFERRED/VERIFY and synthetic-test claims; no new native/runtime verification; referenced raw assets/probes/archives not recovered; no Golden/READY promotion; attack mixed-stat expression later corrected to2-R in MAIN_DECOMP_STAGE; mode6 refined in MODE6_DISTANCE
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 4175](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L4175-L4175) — - 0x551E50 が加算しない条件（先頭）: 技能の exp_per=off（Skill+0x2A8 が −123456.0）、actor+0x1D0（部隊）＝0、actor+0x18614≠0、context+0xC≠0（同じ攻撃で加算済み）。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/kb_section9.md 行 10](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/kb_section9.md?plain=1#L10-L10) — - **EXP write:** `0x551FB2 add [edi+0x16C], edx` (bytes `01 97 6C 01 00 00`) inside `0x551E50`; EDI = destination UnitData (= actor `+0x1C8`), EDX = amount, ESI
   制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
@@ -183,6 +204,15 @@
 
 - [research/recovered/b_batch7/data/T012_HEAL_EFFECT_RECORD_4DFBB0_CONTRACT_20261013.md 行 4](../../research/recovered/b_batch7/data/T012_HEAL_EFFECT_RECORD_4DFBB0_CONTRACT_20261013.md?plain=1#L4-L4) — [CALLER ABI] B保存exe/T012_HEAL_ATTR_PROBE.txt 0x551C8D..0x551CED。Unit+0x1867C=0・+8D=0・Skill+248 signed>0・ctx+E!=0でUnit+185F8をincrement modulo8、そのindex*0x264をUnit
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/chat_context_remainder2/messages/ebf82892-6bb3-4d89-a410-e870669cc768.md 行 101](../../research/recovered/chat_context_remainder2/messages/ebf82892-6bb3-4d89-a410-e870669cc768.md?plain=1#L101-L101) — Workは現在、回復技能 `m_heal` の `flash=5` から `Skill+0x6F0` の未解決処理へ進み、そこで停止しています。
+  制約・訂正　Connector agentMessage Unicode encoded UTF8, not service database bytes. Historical Work parser/synthetic/static-reachability claims; no new native/runtime/type/Golden/READY credit. Full original DAT/property corpus and linked JSON not acquired.
+
+- [research/recovered/chat_context_remainder2/messages/ebf82892-6bb3-4d89-a410-e870669cc768.md 行 127](../../research/recovered/chat_context_remainder2/messages/ebf82892-6bb3-4d89-a410-e870669cc768.md?plain=1#L127-L127) — - `Skill+0x6F0` が未設定でも `0x551CF2` へ進む
+  制約・訂正　Connector agentMessage Unicode encoded UTF8, not service database bytes. Historical Work parser/synthetic/static-reachability claims; no new native/runtime/type/Golden/READY credit. Full original DAT/property corpus and linked JSON not acquired.
+
+- [research/recovered/chat_context_remainder2/messages/ebf82892-6bb3-4d89-a410-e870669cc768.md 行 149](../../research/recovered/chat_context_remainder2/messages/ebf82892-6bb3-4d89-a410-e870669cc768.md?plain=1#L149-L149) — \| `Skill+0x6F0`（効果レコード数） \| 2 \| **合成入力**。原作データからの生成根拠が未確定 \|
+  制約・訂正　Connector agentMessage Unicode encoded UTF8, not service database bytes. Historical Work parser/synthetic/static-reachability claims; no new native/runtime/type/Golden/READY credit. Full original DAT/property corpus and linked JSON not acquired.
 
 - [research/recovered/outside_reports1/reports/wiki/WIKI_WORK_P0_ACTION_PACKET_20261013.md 行 15](../../research/recovered/outside_reports1/reports/wiki/WIKI_WORK_P0_ACTION_PACKET_20261013.md?plain=1#L15-L15) — - Work現行resume_selected_support_core_flashはコンパイル済みSkill+0x248<=0で0x551CF2へ進み、Skill+0x6F0読取・4DFBB0は未呼出。今回の局所試験は原DAT実効flash=-4を手動Skill+248へ束縛して3/3PASS、対象Unitは変更せず
   制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain

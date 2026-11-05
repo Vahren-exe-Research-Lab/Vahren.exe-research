@@ -52,7 +52,7 @@
 0x58A400	func	UnitDef_ExpNext	次のレベルに必要な経験値の計算（符号なし）	静的確認	F§31
 0x58A650	func	UnitDef_LevelUpLoop	def 単体のレベルアップのループ	静的確認	F§31
 0x575110	func	Unit_LevelUpLoop	Unit 版のレベルアップ	静的確認	F§31
-0x551E50	func	Hit_LinkedAward	戦闘中の経験値の付与	静的確認	F§35, 旧symbols
+0x551E50	func	Hit_LinkedAward	戦闘中の経験値付与。確認経路ではcontext+0xCの重複防止gateを持つ。heal(kind3)の割合は固定2%で、実回復量への単純比例ではない。対象選別・所属・exp_per等の条件は別に残る。	静的確認	F§35, 旧symbols; EXP_ENDTRANSFER CP22-24 [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md; 保存済み著者報告、今回の原作/実機再検証なし]
 0x584970	func	UnitDef_GetChipName	キャラチップ名を決める（image / sub_image / tkool を考慮）。thiscall: ECX=def、引数 (std::string* out, flag=1)、ret 8	実機確認	F§92, W(dat_ui_v4_visuals.h)
 0x5846A0	func	UnitDef_GetDisplayName	表示名を作る。ECX=def、EDX=std::string* out	実機確認	W(work_selector_native_detail.h), F§91
 0x583CF0	func	UnitDef_GetAffiliation	ユニットがいる場所を返す。放浪中（+0x94≠0）なら放浪先 +0x84 を 0x467E90 で引き、そうでなければ ctx+0x2F0 の一覧から探す（後半は疑似コードからの推定）。同じ勢力でもユニットごとに値が違った	実機確認	C(§93)
@@ -134,7 +134,7 @@
 0x544290	func	Battle_CreateSimpleUnit	SimpleUnit の戦闘用オブジェクトを生成する入口。初期化で Unit+0x8C/0x8D を通常型として設定する。	静的確認	T013§primary/fallback poolのRTTI同定, T011§14
 0x545740	func	Unit_UpdateSimpleFrame	SimpleUnit 側の戦闘更新経路。探索カウンタ Unit+0x1E534 を増やし、ノックバック判定より前に行動処理を進める。	静的確認	T012§11, T013§target search cadence
 0x57AA00	func	Unit_UpdateBattleFrame	もう一方の Unit 戦闘更新経路。探索カウンタを加算し、0x57ABB2 付近でノックバック状態を判定する。	静的確認	T012§11, T013§target search cadence
-0x57EB40	func	Unit_DispatchBattleAction	探索更新後の行動候補を処理し、戻り値 AL の成功・失敗で上位側が分岐する。呼び出し側には mode 0 と mode 1 の経路がある。	静的確認	T012§61, T013§B-20261011-0211-01
+0x57EB40	func	Unit_DispatchBattleAction	探索更新後の行動候補を処理し、ALを上位分岐に使う。保存済み著者報告では射撃ラッチ2を設定してAL=0で早期returnし、後続MP減算へ進まない経路がある。ALだけを攻撃成功/失敗へ一律対応させない。mode0/1のcaller経路は別。	静的確認	T012§61, T013§B-20261011-0211-01; B-20261013-0151-01/02/03 [recovered=research/recovered/chat_b_remainder2/reports/B_20261013_SKILL_HANDLERS_CHAT.md; 著者静的短報、今回の原作/実機再検証なし]
 0x57E1D0	func	Unit_ExecuteActionRoute	Unit の戦闘行動処理経路の一つ。ダメージ計算 0x550E70 への呼び出し元を含む。	静的確認	T012§16, T013§2026-10-12 19:16
 0x57E4E0	func	Unit_RefreshActionSearch	Unit+0x1E534 を探索閾値にして 0x57B870 を呼び、ターゲット再探索を強制する経路を持つ。	静的確認	T013§target search cadence, T012§61
 0x40E220	func	SimpleBattle_CommitResult	原作x86のモード・候補分岐後、0x40E2F0の戻り値が非ゼロなら0x493630/0x40F000/0x48ABF0を呼ぶ。G4外部結果反映・実機勝敗の成立は未検証。	静的確認	EXP_SIMPLEBATTLE_LIFECYCLE§CP04, T010§battle finish resultFlag
@@ -154,8 +154,8 @@
 0x546F70	func	Skill_ExecuteMissile	missile 技能の処理本体。Skill+0x44 の allfunc が有効なら 0x547DB0 側へ分岐する。	静的確認	T012§21, T011§18
 0x547DB0	func	Skill_ExecuteMissileAllTargets	missile + allfunc の対象処理経路。従来の未確定扱いは T012§21 で解消された。	静的確認	T012§21
 0x547AF0	func	Skill_ExecuteHealAllTargets	heal + allfunc の支援候補を距離・確率などで判定し、対象ごとに 0x551490 を実行する。	静的確認	T012§22, T013§support-skill secondary candidate pipeline
-0x551490	func	Skill_ApplyHealStatus	回復・状態変更の共通処理。Skill+0x158 の add2 由来リストを参照する経路を持つ。	静的確認	T012§23, T011§14
-0x550E70	func	Damage_ComputeAttackDefense	攻撃と防御に別々の乱数を掛けて差を求め、耐性・距離・最低値の特殊分岐を処理する中核。耐性10はゼロ、耐性0は特殊な大値となる。	静的確認	T012§3/§4, F§35
+0x551490	func	Skill_ApplyHealStatus	回復・状態変更の共通処理。Skill+0x158のadd2由来リストを参照する経路を持つ。EXPへは上限調整前の計算量を渡す。同一contextを再利用する複数項目処理は、外部resetがなければ項目数ぶんの再加算にはならない。	静的確認	T012§23, T011§14; EXP_ENDTRANSFER CP22-24 [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md; 保存済み著者報告、今回の原作/実機再検証なし]
+0x550E70	func	Damage_ComputeAttackDefense	攻撃と防御に別々の乱数を掛け、耐性・距離・最低値の分岐を処理する中核。確認経路ではHP用補正値とEXPへ渡す保持計算値を分ける。実際に減ったHPだけからEXPを再計算する処理ではない。耐性10はゼロ、耐性0は特殊な大値。	静的確認	T012§3/§4, F§35; EXP_ENDTRANSFER CP22-24 [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md; 保存済み著者報告、今回の原作/実機再検証なし]
 0x550D80	func	Damage_ComputeSkillStrength	Skill+0x27C の str mode 1〜5を解釈し、Unit能力値と +0x280/+0x288 の係数から攻撃基礎値を作る。	静的確認	T012§3 str helper
 0x578B70	func	Status_ApplyGaugeReduction	状態異常ゲージを減算し、unit_status_min を下限として制限する。EXP吸収分岐もこの関数内にある。	静的確認	T012§6, EXP_ENDTRANSFER_AND_SUMMON_GATES§CP06
 0x57DF90	func	Status_ApplyNaturalRecovery	行動カウントに連動して HP/MP と7つの状態ゲージを回復し、unit_status_hp をゲージ上限にする。	静的確認	T012§6/§26
@@ -542,8 +542,8 @@
 0x416220	func	Tree_EraseRangePartialNode	Original x86 partial-range tree-node erase: invalid iterator gate; capacity>=16 heap string release, node free, nonzero count decrement. Full-tree cleanup/owner/game effects VERIFY	静的確認	B-20261030-0215-T028-SPOT-TREE-ERASE-STRING-RELEASE-01; REF_BATTLE_AI_MORALE.md; data/T028_SPOT_TREE_ERASE_STRING_RELEASE_NATIVE_20261030_02H.md lines 2,17 [locator-only; recovered=research/recovered/b_batch11/data/T028_SPOT_TREE_ERASE_STRING_RELEASE_NATIVE_20261030_02H.md; sha256=1c95d49a632f3c27b800c774e6ca738a4cf58116d96709587fdc8823225f5aaf]
 0x416870	func	Tree_ClearFullRangeNodes	Original x86 full-tree recursive/iterative node destructor with nil guard and conditional heap string free. Caller 0x415CF0 resets header links and count=0; ownership/Spot+0xB8/game effects VERIFY	静的確認	B-20261030-0308-T028-FULL-TREE-CLEAR-POSTORDER-01; REF_BATTLE_AI_MORALE.md; data/T028_SPOT_FULL_TREE_CLEAR_RECURSIVE_DESTRUCTOR_NATIVE_20261030_03H.md lines 2,10 [locator-only; recovered=research/recovered/b_batch11/data/T028_SPOT_FULL_TREE_CLEAR_RECURSIVE_DESTRUCTOR_NATIVE_20261030_03H.md; sha256=2ce7a4f828c2d749e30e63e7b78a46a8a5b3dec06e535f5a79f1db2fb201ab52]
 # ---- 2026-11-04 attack/status events, simple-battle links (Claude REF_UNIT_EXP_SUMMON §11) ----
-0x551167	code	Damage_ExpAwardCall	ダメージ処理 0x550E70 内の 0x551E50(victim, damage, victim最大HP) 呼び出し。攻撃した側は [ctx]、スキルは [ctx+8]。1 ヒットごとに必ず通る（exp_per=off でも）。	実機確認	REF_UNIT_EXP_SUMMON §11
-0x551C6A	code	StatusSkill_ExpAwardCall	0x551490 内の 0x551E50(receiver, amount, …) 呼び出し。補助スキルが 1 体に効くごとに通る。	実機確認	REF_UNIT_EXP_SUMMON §11
+0x551167	code	Damage_ExpAwardCall	0x550E70内の経験値helper呼出位置。確認経路ではHP変更後、保持した攻撃計算値EDIと対象UnitData+0x178を渡す。実HP減少量へ分子を切り詰めない。actor=[ctx]、skill=[ctx+8]、獲得可否のgateはcallee側。	静的確認	REF_UNIT_EXP_SUMMON §11; EXP_ENDTRANSFER CP22-24 [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md; 保存済み著者報告、今回の原作/実機再検証なし] [CALL位置の既報実機確認は旧REFに保持。今回の入力/gate追補は静的報告として採録]
+0x551C6A	code	StatusSkill_ExpAwardCall	0x551490の回復・状態変更経路から経験値helperを呼ぶ位置。元の計算量を渡し、実回復量への差替えではない。同一context再使用時の重複防止gateはcallee側にあり、項目ごとの呼出を獲得回数と同一視しない。	静的確認	REF_UNIT_EXP_SUMMON §11; EXP_ENDTRANSFER CP22-24 [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md; 保存済み著者報告、今回の原作/実機再検証なし] [CALL位置の既報実機確認は旧REFに保持。今回の入力/gate追補は静的報告として採録]
 0x5479F0	code	Summon_LinkChildCall_Simple	簡易戦闘の召喚 0x547490（ECX=スキル）内の 0x5774A0 呼び出し。スキルは呼び出し元 [esp+0x18]（呼ばれた側 [esp+0x24]）。	実機確認	REF_UNIT_EXP_SUMMON §11
 0x5537BF	code	Summon_LinkChildCall_Missile	簡易戦闘のミサイル経由の召喚 0x553390（ECX=スキル、親=ミサイル+0x78）内の 0x5774A0 呼び出し。スキルは呼び出し元 [esp+0x2c]（呼ばれた側 [esp+0x38]）。	実機確認	REF_UNIT_EXP_SUMMON §11
 0x433203	code	Event_InstallPhaseFrames	phase dispatcher 内のフレーム設定位置。4本の並列 VM vector に追加または先頭挿入する。	静的確認	data/T010_EVENT_SCHEDULER.md lines229-259
@@ -569,3 +569,5 @@
 0x5C35E6	code	CRT_LocalUnwind4_Callsite_5C35D6	0x5C35D6のcaller内と報告されたE8 site。callerの独立関数ABIは未確定。 呼出先は0x5C3500。	静的確認（著者の限定E8照合報告。完全ABI・今回の原作再検証なし）	REA-LOCAL-20261101-21H-P0-UNWIND-FOUR-CALLERS-NLG-STATIC-01; rea_lab/decomp_task/REA_20261101_21H_P0_UNWIND_CALLERS_STATIC.md lines9-13 [recovered=research/recovered/rea_batch3/reports/REA_20261101_21H_P0_UNWIND_CALLERS_STATIC.md; sha256=89314b1069e2a57a928c1320a4c80dc79d6c2c4a3fa65137f082b7634351f2d6]
 0x5C3646	code	CRT_LocalUnwind4_Callsite_ExceptUnwind	0x5C363B内のE8 site。先行20Hにも記載済みで、新しい独立経路の発見とは数えない。 呼出先は0x5C3500。	静的確認（著者の限定E8照合報告。完全ABI・今回の原作再検証なし）	REA-LOCAL-20261101-21H-P0-UNWIND-FOUR-CALLERS-NLG-STATIC-01; rea_lab/decomp_task/REA_20261101_21H_P0_UNWIND_CALLERS_STATIC.md lines9-13 [recovered=research/recovered/rea_batch3/reports/REA_20261101_21H_P0_UNWIND_CALLERS_STATIC.md; sha256=89314b1069e2a57a928c1320a4c80dc79d6c2c4a3fa65137f082b7634351f2d6]
 0x5D1D33	code	CRT_LocalUnwind4_Callsite_Fsopen	__fsopen(0x5D1CB1)内のE8 site。空ファイル名のエラー経路との対応はV9擬似Cの推定で、native条件・FILE所有権は未確認。 呼出先は0x5C3500。	静的確認（著者の限定E8照合報告。完全ABI・今回の原作再検証なし）	REA-LOCAL-20261101-21H-P0-UNWIND-FOUR-CALLERS-NLG-STATIC-01; rea_lab/decomp_task/REA_20261101_21H_P0_UNWIND_CALLERS_STATIC.md lines9-13 [recovered=research/recovered/rea_batch3/reports/REA_20261101_21H_P0_UNWIND_CALLERS_STATIC.md; sha256=89314b1069e2a57a928c1320a4c80dc79d6c2c4a3fa65137f082b7634351f2d6]
+0x4E04F0	func	RetreatVoice_Update	RetreatVoiceのTask更新という保存チャットの著者報告。+0x70の負/0/正で待機・再配置・上移動を分け、正のcounterが64を超えると0へ戻す。+0x5Cは減算後0へclamp。表示/音声の実機対応・全ABIは未確認。	推定	research/recovered/chat_rea_remainder2/messages/b31243e0-a304-4265-b43f-7866611b9172.md lines18-35; version/VA binding: research/recovered/chat_rea_remainder2/FOLLOWUP.tsv (ver0.67保存RTTIとvtable slot対応。挙動は著者局所報告)
+0x55B030	func	SimpleStaticUnit_Disable	SimpleStaticUnitのvirtual+0x58に対応する無効化処理。保存済み局所報告ではUnit+0x1867Cが非0なら復帰し、0なら1を設定して0x49D9F0、0x4E4F60を呼ぶ。各calleeの全副作用、型/実機動作は未確認。	推定	research/recovered/b_batch11/data/T028_SIMPLESTATIC_SPATIAL_TREE_ERASE_NATIVE_20261026_08H.md lines4-5; RTTI/version: research/recovered/b_batch11/data/T028_VTABLE70_FOURCLASS_DEATH_DISPATCH_RTTI_NATIVE_20261024_0912.md lines4,10

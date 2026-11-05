@@ -1,0 +1,18 @@
+thread_id	message_id	state	limits
+6ae96da1-b364-83e8-837b-c374ddd44971		USER_ONLY_LATEST_TURN_NO_CURSOR_FOLLOW	Do not infer full transcript completeness, deletion or original-source absence. No broader window acquired.
+6adadc63-dfe4-83e8-899f-8a874548e601	301c9529-ce78-4cde-bec8-3b6924e289c8	RETURNED_TEXT_AT1200_CAP_NO_FULL_REVIEW	Do not infer full transcript completeness, deletion or original-source absence. No broader window acquired.
+6ad112da-ef80-83e8-96b0-fc863a1ea725	cea85078-f6fd-4452-b663-9ab89a5383de	RETURNED_TEXT_AT1200_CAP_NO_FULL_REVIEW	Do not infer full transcript completeness, deletion or original-source absence. No broader window acquired.
+6acd9e5c-191c-83ee-af0a-09044a76572a	17f18219-e698-43f3-9ae8-086b5b6232fe	RETURNED_TEXT_AT1200_CAP_NO_FULL_REVIEW	Do not infer full transcript completeness, deletion or original-source absence. No broader window acquired.
+6acd9ab8-2a04-83ee-a56e-72ff61cb4cd6	802e4d91-fe42-47b0-ba6f-03c1a2362d7a	RETURNED_TEXT_AT1200_CAP_NO_FULL_REVIEW	Do not infer full transcript completeness, deletion or original-source absence. No broader window acquired.
+6acd9965-6430-83ee-b68b-f482c6386be8	fa01ed3e-d6bd-48ec-a2d8-1fc90396f028	RETURNED_TEXT_AT1200_CAP_NO_FULL_REVIEW	Do not infer full transcript completeness, deletion or original-source absence. No broader window acquired.
+6acd8139-58e0-83ee-96d3-98d045b1a355		USER_ONLY_LATEST_TURN_NO_CURSOR_FOLLOW	Do not infer full transcript completeness, deletion or original-source absence. No broader window acquired.
+6ac95e43-6f34-83e8-923f-a6bd5e5bc4e0	63020782-7828-4f04-b9a4-3be218bf092f	RETURNED_TEXT_AT1200_CAP_NO_FULL_REVIEW	Do not infer full transcript completeness, deletion or original-source absence. No broader window acquired.
+6ac96244-c8a8-83ee-b0f5-b1d2883d271b	8c088753-d976-46f8-a6f1-03d1abed1eb1	RETURNED_TEXT_AT1200_CAP_NO_FULL_REVIEW	Do not infer full transcript completeness, deletion or original-source absence. No broader window acquired.
+6ac96285-0b3c-83ee-82ea-d58b4d2e92b1	73f5d86f-3a10-4ac4-9692-e84ade059eed	RETURNED_TEXT_AT1200_CAP_NO_FULL_REVIEW	Do not infer full transcript completeness, deletion or original-source absence. No broader window acquired.
+6ac96837-6630-83e8-b54f-075380cc6e96	d486aeb1-f582-42c6-a041-973abc2e6e5e	RETURNED_TEXT_AT1200_CAP_NO_FULL_REVIEW	Do not infer full transcript completeness, deletion or original-source absence. No broader window acquired.
+6ac5cfbc-84cc-83ec-bbac-22d17a0810a3	85b8b303-2449-4e63-9d6f-169b272bc470	RETURNED_TEXT_AT1200_CAP_NO_FULL_REVIEW	Do not infer full transcript completeness, deletion or original-source absence. No broader window acquired.
+6acb146a-2e24-83ee-bf21-4cdc2a209a47		USER_ONLY_LATEST_TURN_NO_CURSOR_FOLLOW	Do not infer full transcript completeness, deletion or original-source absence. No broader window acquired.
+6ac72c20-d704-83e8-8f04-eeca6cfee598	053b413e-d882-4e4b-b80f-f790727b279d	RETURNED_TEXT_AT1200_CAP_NO_FULL_REVIEW	Do not infer full transcript completeness, deletion or original-source absence. No broader window acquired.
+6ac72546-1e10-83e8-a4fc-ee767db0dccd	50910733-a573-4448-a148-536126a82284	RETURNED_TEXT_AT1200_CAP_NO_FULL_REVIEW	Do not infer full transcript completeness, deletion or original-source absence. No broader window acquired.
+6ac72a7c-e11c-83ee-adaa-88edec78dbc7	989b9c84-52d9-4091-905b-2864450e06c8	RETURNED_TEXT_AT1200_CAP_NO_FULL_REVIEW	Do not infer full transcript completeness, deletion or original-source absence. No broader window acquired.
+6ac72931-0d58-83e8-9f16-ccdb9a38035b	91f708a1-907e-427c-987a-b046135b2c62	RETURNED_TEXT_AT1200_CAP_NO_FULL_REVIEW	Do not infer full transcript completeness, deletion or original-source absence. No broader window acquired.

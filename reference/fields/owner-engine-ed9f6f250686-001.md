@@ -239,7 +239,7 @@
 ## engine + 0x1E8630
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 124](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L124-L124) — - ~~`wait()` が判定するUIオブジェクトの意味~~ → **解決**: 引数なしの wait は、次のものが終わるまで待つ。(a) 0x520280: メイン画面（engine+0x1E8630）でスクロールや移動の要求が残っている（+0x438 ≠ 0x80000008、または +0x468 ≠ +0x4
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 1273](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L1273-L1273) — [CONFIRMED SAVED ASM] owner exe/T010_BATTLE_FRAME_ORDER.md末尾新節。A保存 exe/T031_RESEED_CALL_XREFS.txt TARGET 005001B0 / CALL 0049B191: 0x49B18B lea EDI,[EBP+0x14]→0
   制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
@@ -302,7 +302,7 @@
 ## engine + 0x1E863C
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 220](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L220-L220) — - **文字列の解決（0x49C450）**: `@名前` は文字列リスト変数（engine+0x1E863C）の先頭要素。存在しない、または空なら `""` で、変数は作られない。`@`で始まらない名前はその文字列自体。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 97](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L97-L97) — [CAVEAT / VERIFY] `0x49C950`は文字列`@`特別経路とengine+0x1E863C名前検索からの候補vector返却を持つ。`0x49E780`はengine+0x1EEBECの検索とUnit状態byte+0x1867C確認を含む。これらがどの勢力・チーム・召喚unitを候補に含めるかは未確
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
@@ -347,7 +347,7 @@
 ## engine + 0x1EEC3C
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3543](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3543-L3543) — \| **E = engine = G+0x504** \| VA 0x8BE7F4 \| 戦闘・戦略の資料にある「GM / engine + 0x1EEC3C、+0x1EEC44、+0x1E8630 …」の全部 \| 静的初期化 `0x553F60(&0x8BE7F4)`。Unit 初期化で `Unit+0x1E0 = G+
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 1314](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L1314-L1314) — [ROOT/DELTA] `exe/T006_TARGET_DISPATCH.md`同ID節に保存/読戻し。新たにA既存 `exe/T010_FRAME_HELPER_PROBE.txt` 0x433C3C/433C4Cからglobal ScriptIF frame+0x1EED98（[engine+0x1EEC3C]
   制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain

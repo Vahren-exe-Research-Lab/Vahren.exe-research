@@ -8,7 +8,7 @@
 ## unit + 0x8C
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 4191](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L4191-L4191) — 3. unit+0x8C≠0（簡易戦闘）なら、ud+0x16C ≧ ud+0x170 のとき 0x58A650(ECX=ud) を呼ぶ。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/kb_section9.md 行 13](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/kb_section9.md?plain=1#L13-L13) — - **Give-EXP contract (design, not implemented):** in battle, `ud = unit+0x1C8`; `ud+0x16C += n` (saturate at `0xFFFFFFFF` in a DLL; original has no overflow gu
   制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
@@ -20,7 +20,7 @@
 ## unit + 0x1C8
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 4189](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L4189-L4189) — 1. ud = unit+0x1C8。0 なら何もしない。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 - [research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/kb_section9.md 行 13](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/kb_section9.md?plain=1#L13-L13) — - **Give-EXP contract (design, not implemented):** in battle, `ud = unit+0x1C8`; `ud+0x16C += n` (saturate at `0xFFFFFFFF` in a DLL; original has no overflow gu
   制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.

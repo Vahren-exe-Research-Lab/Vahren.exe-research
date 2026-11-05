@@ -1,7 +1,7 @@
 <!-- SCREENED PARTIAL HISTORICAL RESEARCH. See RECOVERY_LEDGER.tsv and SCREENING.json. -->
 # 主要解析記録の部分回収版
 
-原本の個人パスを含む段落、保留対象への言及を含む段落、未確認の付録を除外した。本文の確認区分は著者の当時の記述であり、今回原作を再検証した結果ではない。ファイル全体に自動スクリーニングを実施したが、全478KBの意味とプライバシーの手動確認は未完了。省略範囲は同じフォルダーのSCREENING.jsonを参照する。
+原本の個人パスを含む段落、保留対象への言及を含む段落、未確認の付録を除外した。本文の確認区分は著者の当時の記述であり、今回原作を再検証した結果ではない。ファイル全体に自動スクリーニングを実施したが、全478KBの意味とプライバシーの手動確認は未完了。省略範囲は同じフォルダーのSCREENING.jsonを参照する。 2026-11-05に、既存保留範囲に重なる旧保存版3182行を追加除外した。原本は保持する。
 
 # PEER_SCRIPT01 解析記録 — イベントVM・フロー制御・戦闘イベント (2026-10-11)
 
@@ -3179,7 +3179,7 @@ T0 は Unit::vf31 が sw_karate0 で 1 を返すユニット tick とする。
 | **R3 root のダメージ** | T0 | damage(0)≥0 かつ str mode1≠0 | **Damage_Core_0x550E70(context=Unit+0x7C, 標的) を倍率 0.0 で呼ぶ**。exp_per=off なので EXP は早期 return | core 内の rand（Work の compute_resolved_damage では2回） | vf31 0x57E7E5、B T012 §292・§971 |
 | R4 効果音 | T0 | root に sound リストがあるとき | FUN_004b9f70。inputs にはリストがないので鳴らない | — | vf31 0x57E89F |
 | R5 連撃の生成 | T0 | next_first=on、子 joi の rush=2、root の homing=0 | 0x54F720(joi, 0, &角度)。Rush+0x1F4 = 4（interval） | — | vf31 0x57EA48..5D、0x54F990 |
-| R6 突進の設定 | T0 | slide 0.9、slide_speed 0.16、slide_delay 0、func=1 | vf32 0x579290: 距離 = min(√(dx²+dy²)×0.9, 1.5×Unit+0x228)。片道 = ceil(1/0.16)=7（slide_speed 指定時は距離に依存しない）。Unit+0x186D8 = **14 経路フレーム**（往復）。中間点での子生成はない（param_5=0） | — | 0x579290、0x5B6ED0 は ceil |
+| 既存保留範囲のため非収録（旧保存版3182行） | | | | | |
 | R7 pair_next | T0 | karate_pr0、rush=0 | 580280 で生成（**VERIFY**） | 580280 内部は VERIFY | vf31 末尾 |
 | R8 後処理 | T0 | — | 0x57BE30 を呼び、1 を返す | VERIFY | vf31 |
 | S0 / S1 連撃 | Rush の tick 1 と tick 5（+e） | rush_degree=0、rush_random_degree≠0 | 弾ごとに rand() 1回 → 580280(joi, …, 序数)。2発目で 0x4C22B0 を呼んで非活性化 | **弾ごとに CRT rand 1回**（Work の resume_rush_direction 0x55022A→0x55037F） | RushMissile::vf01 0x5501A0、B1218 |

@@ -8,6 +8,6 @@
 ## SpotElm + 0x88
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1573](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1573-L1573) — - **0x4807E0（隣接判定）**: p の各 spot のうち可視（SpotElm+0x88 = vf25）のものについて、0x5AAEC0(mode 0, 距離 1, 勢力 q) が空でなければ真。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification; 2026-11-05 additional held-scope row removed from prior saved LF3182; source original retained; historical 683d readback applies to superseded derivative only
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)
