@@ -4,11 +4,23 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-34"></a>
+## offsets + 0x34
+
+- [research/recovered/plugin_reports1/reports/T024_5421D0_DISTANCE8_SENTINEL_WRITER_NATIVE_20261102_01H.md 行 20](../../research/recovered/plugin_reports1/reports/T024_5421D0_DISTANCE8_SENTINEL_WRITER_NATIVE_20261102_01H.md?plain=1#L20-L20) — knowledge/kb.py addr 0x5421D0 and research 0x5421D0 --task T024 returned no registered symbol or indexed report at run time, but this is not complete cross-lane
+  制約・訂正　Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=B_STATIC_CANDIDATE_ERRATUM
+
 <a id="field-77"></a>
 ## offsets + 0x77
 
 - [research/recovered/ac_tests6/reports/T020_T028_POINTER_TYPED_LOYAL_DOWN_GATE_20261028_06H.md 行 13](../../research/recovered/ac_tests6/reports/T020_T028_POINTER_TYPED_LOYAL_DOWN_GATE_20261028_06H.md?plain=1#L13-L13) — - B06 locates nonmember candidate loops at 0x494931 and 0x4958C1, guards byte offsets +0x77==0, +0x75!=0, +0x7A==0, signed dword+0x80<3, followed by [candidate+
   制約・訂正　Historical authored claims/instructions are inert data; current curated REF priority; no linked evidence, native/runtime/READY/Golden/VERIFIED validation; role=HISTORICAL_STATIC_SYNTHETIC_ACCEPTANCE_REPORT
+
+<a id="field-430"></a>
+## offsets + 0x430
+
+- [research/recovered/plugin_reports1/reports/T024_DUAL_CALLER_FACTOR_PROVENANCE_STATIC_20261101_22H.md 行 16](../../research/recovered/plugin_reports1/reports/T024_DUAL_CALLER_FACTOR_PROVENANCE_STATIC_20261101_22H.md?plain=1#L16-L16) — KB_CANDIDATE: VAs 0x5271A0,0x5272AB,0x528870,0x528A04,0x528DB0,0x52727A,0x52893D; owner offsets +0x430/+0x18C/+0x45D/+0x34C/+0x364/+0x368/+0x478; param producer
+  制約・訂正　Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=B_STATIC_CANDIDATE_ERRATUM
 
 <a id="field-a0c"></a>
 ## offsets + 0xA0C

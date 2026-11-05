@@ -16,4 +16,16 @@
 - [research/recovered/b_batch9/data/T013_PERSON_POOL_PLAYER_RESET_JOIN_20261023_1313.md 行 5](../../research/recovered/b_batch9/data/T013_PERSON_POOL_PLAYER_RESET_JOIN_20261023_1313.md?plain=1#L5-L5) — [CALLEE] 0x005149C0はPerson様containerの+0x48/+0x4C、+0x58/+0x5C、+0x38/+0x3Cのvector終端を先頭へ戻し、tree +0x2C/+0x30、+0x24、+0x08もresetするGhidra静的C。単一vector専用関数ではない。
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
+<a id="field-68"></a>
+## tree + 0x68
+
+- [research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md 行 34](../../research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md?plain=1#L34-L34) — - prefixはstring +0、bytes +0x1C/+0x1D、dword +0x5C、strings +0x24/+0x40、dwords +0x20/+0x60、string +0x74。RB-tree +0x68 names/empty終端、28-byte vector +0x90/+0x94 name
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
+<a id="field-a4"></a>
+## tree + 0xA4
+
+- [research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md 行 34](../../research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md?plain=1#L34-L34) — - prefixはstring +0、bytes +0x1C/+0x1D、dword +0x5C、strings +0x24/+0x40、dwords +0x20/+0x60、string +0x74。RB-tree +0x68 names/empty終端、28-byte vector +0x90/+0x94 name
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

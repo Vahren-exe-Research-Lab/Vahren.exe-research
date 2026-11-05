@@ -16,6 +16,12 @@
 - [research/recovered/b_batch2/T028_ROSTER_VECTOR_DUAL_SET_PRODUCER_NATIVE_20261028_10H.md 行 9](../../research/recovered/b_batch2/T028_ROSTER_VECTOR_DUAL_SET_PRODUCER_NATIVE_20261028_10H.md?plain=1#L9-L9) — - 0x493A95 LEA ECX,[ESP+0xFC] / 0x493A9C PUSH ECX / 0x493A9D PUSH EDI / 0x493A9E CALL 0x5882F0。既07H原作ASMで解明済みの0x5882F0は元オブジェクト自身を先頭seedし、source+0xD4..D8の0x1C幅名レ
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 
+<a id="field-1d0"></a>
+## source + 0x1D0
+
+- [research/recovered/rea_batch14/reports/STATIC_SPATIAL_EVENT_MISSILE_20261010.md 行 10](../../research/recovered/rea_batch14/reports/STATIC_SPATIAL_EVENT_MISSILE_20261010.md?plain=1#L10-L10) — - 一セルbranchは候補+0x65非0、候補+0x1AE==0、候補+0x1D0 != source+0x1D0、候補+0x1D4 == source+0x1D4の全4条件で1、それ以外0。**このbranch内に距離比較は無い**。所属関連offsetは数字のまま保存し、人間向け「敵」「同陣営」を確定名として与え
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
 <a id="field-3cb0"></a>
 ## source + 0x3CB0
 

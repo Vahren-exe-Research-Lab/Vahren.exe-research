@@ -1,0 +1,12 @@
+# Stage16 一時停止・Task検証補助の停止記録
+- 作業ID: BRIDGE-20261022-RC16-PAUSE-01
+- 日付: 2026-10-22 JST（正確な拒否秒は未取得）
+- 対象: search_index/research_stage16_pause_classes_20261022.py を実行し、原本PEのTask vtable gateを追加照合して BATTLE_STAGE16_TASK_GATE_NATIVE_20261022.json を作る補助作業。
+- 実施した試行: Local Compact の start_process から Python -B の解析スクリプト起動。
+- 結果: ツール呼出がOpenAI安全性チェックで拒否。実行成功を示す出力はなく、新JSONが生成されたとは主張しない。
+- 未完了: 当該追加スクリプトの実行・JSON検証。スクリプトのソース保存は成功済みだが未実行と扱う。
+- 利用可能な独立証拠: 同回の別の許可された読取で原本0x431910=B0 01 C3(AL1)、0x43B5A0=32 C0 C3(AL0)と複数vtable+0C/+10を静的照合。先行Stage5にはGameTask gateの研究がある。
+- 影響: 本補助結果を追加テストPASSに数えない。メインの別プログラムで成功した31命令・2実戦8RAW分析とは混同しない。
+- 再試行: 同じ内容を別ツール・経路・Remote等へ切替えて迂回していない。
+- 再開条件: 拒否の理由を適切な正規窓口で確認できる場合のみ再評価。いまは既存保存証拠だけで文書研究を継続。
+- 安全性: 原作プロセス・EXE・DAT・save・現行GUI/採取v7・他レーン・MASTERは変更なし。Work未使用。

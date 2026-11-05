@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-50"></a>
+## write + 0x50
+
+- [research/recovered/plugin_reports1/reports/T024_5421D0_DISTANCE8_SENTINEL_WRITER_NATIVE_20261102_01H.md 行 15](../../research/recovered/plugin_reports1/reports/T024_5421D0_DISTANCE8_SENTINEL_WRITER_NATIVE_20261102_01H.md?plain=1#L15-L15) — In normal finite, non-overflowing case, square-root distance >8.0 causes sentinel write +0x50=10000.0; <=8.0 takes 0x54220E JP and does not write +0x50 here. Na
+  制約・訂正　Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=B_STATIC_CANDIDATE_ERRATUM
+
 <a id="field-186c8"></a>
 ## write + 0x186C8
 

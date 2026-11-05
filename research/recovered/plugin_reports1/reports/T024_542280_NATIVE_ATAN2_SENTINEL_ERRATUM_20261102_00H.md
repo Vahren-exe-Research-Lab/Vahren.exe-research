@@ -1,0 +1,19 @@
+# B/T024 2026-11-02 00H｜0x542280 元ASM確認：10000.0 sentinel・二軸 atan2・+π（23H訂正）
+research_id: B-20261102-00H-T024-542280-NATIVE-ATAN2-SENTINEL-ERRATUM-01
+owner: B; tasks: T024 (T013最終ターゲット未確証); prior_id: B-20261101-23H-T024-542280-OPTIONAL-DOUBLE-FALLBACK-01; cross_reference_existing: B-20261026-20H-T028-ATAN2-TRUNC-DISPATCH-01
+status: STATIC_NATIVE / STATIC_V9 / INFERRED / VERIFY / NOT READY; original_Golden_PASS=0; strict_MATCH=0; DYNAMIC=0; new_READY=0.
+## Source and reproducibility
+Authorized PC Local Compact ONLINE. MASTER/PROTOCOL/B HANDOFF、knowledge README/SYNC_STATUS、PRIVATE GitHub develop curation/intake rules、V9 standalone CLIを確認。旧search_index README/BUILD_MANIFEST ENOENTは既知V9移行（接続拒否ではない）。
+original source: ver0.67 Vahren.exe, SHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187 (THIS RUN native read-only rehashed; not executed).
+V9 source: rea_lab/headless_analysis/search_index/HAKUSHIN067_UNIFIED_V9_20261023.sqlite (previous manifest SHA256 2629CB2F03ECEC9927E89892C77F847E4CDBA381AB718825C1CA8CFEEEF00EDE; this run not fully rehashed); CLI search_unified_v9_20261023.py function/callers 0x542280 / function 0x5E743A / 0x5E4F10. Ghidra pseudo ABI UNVERIFIED.
+original PE function [0x542280,0x5422BC] 61 bytes SHA256 2B3A75529CDEF9BDADCF051B86A9A3BE62DFC4B370A7A873DE0A46D177A0443A; B-owned verifier data/B_20261102_00H_T024_542280_NATIVE_READONLY_VERIFY.py.
+## New native machine-code branch (not pseudo-C)
+0x542281 FLD qword [ECX+0x50]; 0x542284 FLD qword [0x63B0B8]; 0x54228A FUCOMPP; 0x54228C FNSTSW AX; 0x54228E TEST AH,0x44; 0x542291 JNP 0x542298; 0x542293 FLD qword [ECX+0x50]; 0x542297 RET.
+Original PE 0x63B0B8 bytes 000000000088C340 = IEEE754 double 10000.0. C3/C2 status selected by TEST AH,44 means ordered equal sets exactly one masked bit => JNP to fallback; ordinary ordered unequal returns +0x50; unordered NaN sets both masked bits => direct +0x50 (masked FP exceptions assumed; exception behavior VERIFY).
+fallback: 0x542298 MOV EAX,[ECX+0x3C]; 0x54229B SUB EAX,[ECX+0x34]; 0x54229E MOV EDX,[ECX+0x40]; 0x5422A1 SUB EDX,[ECX+0x38]; 0x5422A4 MOV [ESP],EAX; 0x5422A7 FILD dword [ESP]; 0x5422AA MOV [ESP],EDX; 0x5422AD FILD dword [ESP].
+0x5422B0 E8 85 51 0A 00 CALL 0x5E743A; 0x5422B5 FADD qword [0x62A190]; 0x5422BC RET. PE 0x62A190 bytes 00000060FB210940 => double 3.1415927410125732 (float-rounded π, not exact mathematical π).
+Existing B/T028 2026-10-26 already established 0x5E743A descriptor 0x63B400='atan2' and 0x5E743F E9 tail JMP 0x5E4F10 CRT dispatcher. First FILD=(+0x3C-+0x34), second FILD=(+0x40-+0x38); x87 ST0=second, ST1=first, strongly supports atan2(dy,dx)+π as angle fallback. Native stack ABI/FP control/actual direction interpretation remain VERIFY.
+## Correction, duplicates, safety
+23H Ghidra pseudo-C only showed (+0x40-+0x38) as one argument to 0x5E743A. This is incomplete: native ASM has TWO independent integer differences (+0x3C-+0x34 AND +0x40-+0x38) fed via FILD. Preserve 23H as original candidate and append ERRATUM; do not count 26 Oct atan2 discovery as new. The sentinel numerical value 10000.0 and actual two-argument FP path are the new evidence.
+Unresolved: +0x50 writer/sentinel lifetime, NaN/FP exceptions, direction range, 0x5271A0 callers 0x52722F/258/28B/29C/3BA, actual 0x528DB0/0x569730/Unit final decision. Next safe search writers of +0x50 outside denied areas and 0x5271A0 consumer; do not touch rejected VA 0x5710C0..0x571500 or refused 0x5769B0 XREF.
+Recovery: 03H save UNKNOWN; 07H core4 missing; 10/25 source/54-byte conflict OPEN; historical safety HOLD21 unchanged; SAFE134 old snapshot not reaudited. Game not executed; strict Golden requires original unmodified DAT/MAP/SAVE/RNG/ticks and explicit conditional +0x50 observations at equality, unequal, NaN, downstream behavior. KB_CANDIDATE only; curator exclusively updates develop/REF/symbols/structs.

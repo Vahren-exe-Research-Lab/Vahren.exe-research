@@ -1,0 +1,31 @@
+# Managed x86 CALL patch component
+
+Standalone HKCP manager for exactly five bytes, opcode E8 + rel32. No Core ABI, plugin migration, callback lifecycle, game, UI, EXE inspection, deployment or trampoline is implemented.
+
+A fresh zero-initialized manager is initialized once with the shared HKH registry. The caller supplies stable nonzero instance owner tokens; only a trusted Core adapter should assign these. Handles contain slot and monotonic generation, scoped to one manager lifetime. Registry and manager must stay at fixed addresses, must not be copied/reset/edited, and all operations must be serialized. Maximum 64 records; exhausted generations retire slots. The registry must outlive the manager and reservations, and must not be released behind its back. Manual overlapping HKH reservations collide with HKCP reservations.
+
+The caller must guarantee no thread can execute or mutate the entire affected span during every install/restore, and must establish target ABI and lifetime separately. This does not suspend threads, drain callbacks, prove unload safety or identify an EXE. The replacement target is an explicit nonzero uint32 address; rel32 uses x86 modulo-2^32 arithmetic. The manager rejects an overflowing next-IP calculation instead of wrapping address+5.
+
+Installation requires explicit exact expected five bytes beginning E8. The production x86 Win32 backend checks committed, readable executable, non-guard memory and a single-page span. PAGE_EXECUTE alone is rejected. It reads using ReadProcessMemory, changes protection, compares again immediately before writing, writes, flushes the instruction cache and restores saved protection. Target validity/ABI is a caller responsibility. Windows memory queries and mutations are not atomic; caller quiescence is essential.
+
+HKCP_OK and HKCP_RECOVER from install return a usable handle. Pre-protection failures leave output unchanged and release any new reservation. Once protection changes, the record is retained conservatively on any failure, including partial write, flush, protection restoration or byte verification. HKCP_OwnerBusy remains true for every retained record. A failure never authorizes unloading code.
+
+Restore accepts only exact owned replacement or exact original bytes (for cleanup after a partial failure). Unknown bytes fail closed and keep ownership; no blind overwrite occurs. Restore writes original bytes, flushes and restores the originally saved protection; only successful byte verification and reservation release clear the record. It may be retried with the same handle after recoverable errors. Partial write leaving unknown bytes needs separately authorized external repair; this API has no force/reset/release-all operation. Ownership is metadata, not a security boundary against callers editing public implementation storage.
+
+The trusted backend interface exists for deterministic failure fixtures; its query must enforce the same memory contract, read/write handle exactly five bytes, protect must leave protection unchanged on failure, and write failure may mutate bytes. Backend state must outlive the manager. Production default uses VirtualQuery, VirtualProtect, ReadProcessMemory, WriteProcessMemory and FlushInstructionCache on current-process memory only. Built for x86 Windows; no x64 implementation.
+
+## Verification and limits
+
+build_call_patch_test.ps1 compiles x86 with Zig 0.14.1 and -Wall -Wextra -Werror. Its executable is fixture_call_ownership.exe because an unmanifested filename containing "patch" triggers Windows installer elevation heuristics. Tests use only synthetic injected storage and a private VirtualAlloc page. The callable synthetic function returns 7, then 9 with installed CALL, then 7 after restoration. Tests cover shared overlap, owner/stale handles, reuse, capacity, expected-byte mismatch, invalid endpoint, prewrite protect failure, postwrite write/flush/protection failures, retry cleanup and unknown partial-write refusal; real backend tests reject cross-page, read-only and guard spans.
+
+Initial scaffold was written before implementation, but the first attempted RED execution was blocked by Windows installer heuristics and produced misleading empty tool output. After discovering this, a temporary scaffold was compiled with the corrected executable name and failed the first install assertion (exit 1); implementation was restored and passed (exit 0). Thus tests were authored first, but the initial valid RED observation occurred after implementation had been drafted. This limitation is recorded rather than claiming a strict uninterrupted TDD sequence.
+
+No broader project/game tests were run because these independent files do not integrate into Core or the recruit DLL. Parent review remains required. Generation exhaustion and concurrent mutation are contract/code-reviewed limits, not simulated by editing manager internals.
+
+## Review correction
+
+A post-writable reread mismatch/read failure attempts to restore the saved original protection before returning. Failed protection rollback now returns HKCP_RECOVER; HKCP_MISMATCH is returned only when that rollback succeeds. Both retain record and reservation. A sequenced-read regression first failed this recover assertion against the prior code (exit 1), then passed after the correction. It exercises both rollback outcomes, verifies owner busy and overlapping reservation rejection, and retries restoration successfully with exact original bytes and protection before reservation release.
+
+## Claude addendum (2026-10-26)
+
+Sharing or chaining one five-byte CALL between owners is not supported: an overlapping reservation is refused (HKCP_CONFLICT). Aligned 32-bit pointer/data slots use the separate HKPP manager (hakushin_ptr_patch.c, Core extension HK_EXTENSION_PTR_PATCH=4, v1): single LOCK CMPXCHG write, same reservation registry, status values 32..39 that never overlap HKH/HKCP/HKX.

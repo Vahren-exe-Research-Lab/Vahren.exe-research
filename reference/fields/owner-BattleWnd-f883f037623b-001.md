@@ -4,6 +4,18 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-190"></a>
+## BattleWnd + 0x190
+
+- [research/recovered/search_reports1/reports/BATTLE_TAKEOVER_RESEARCH_STAGE6_20261021.md 行 9](../../research/recovered/search_reports1/reports/BATTLE_TAKEOVER_RESEARCH_STAGE6_20261021.md?plain=1#L9-L9) — - ECX: 通常/scriptでは [GameEvent E+0x1EED1C] の値、BattleWndでは [BattleWnd+0x190] の値。
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
+<a id="field-194"></a>
+## BattleWnd + 0x194
+
+- [research/recovered/search_reports1/reports/BATTLE_TAKEOVER_RESEARCH_STAGE6_20261021.md 行 10](../../research/recovered/search_reports1/reports/BATTLE_TAKEOVER_RESEARCH_STAGE6_20261021.md?plain=1#L10-L10) — - EDX: 通常/scriptでは &E+0x1EED20、BattleWndでは [BattleWnd+0x194] の値。
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
 <a id="field-248"></a>
 ## BattleWnd + 0x248
 

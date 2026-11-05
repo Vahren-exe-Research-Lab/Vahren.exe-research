@@ -49,6 +49,12 @@
 - [research/recovered/b_batch9/data/T013_GROUP_SPACING_569360_CALLBACK_GATE_V3_20261023_1618.md 行 7](../../research/recovered/b_batch9/data/T013_GROUP_SPACING_569360_CALLBACK_GATE_V3_20261023_1618.md?plain=1#L7-L7) — 今回増分1: 0x00569360 は同一Group候補 param_1+0x0C/+0x10 の構成員vectorを走査し、param_1+0x34（0x569280算出値）を実際に読み取る後段consumer。
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
+<a id="field-3c"></a>
+## param_1 + 0x3C
+
+- [research/recovered/rea_batch14/reports/WAVE3_FINDINGS_20261010.md 行 29](../../research/recovered/rea_batch14/reports/WAVE3_FINDINGS_20261010.md?plain=1#L29-L29) — - **T012/T013 `0x4E7ED0`:** 返値0/1の判定helperには `param_1+0x3C` による2つのアルゴリズム分岐がある。一方は `param_2` の座標+0x214/+0x218を中心とする空間グリッドを走査し、候補のenable byte+0x65、除外状態+0x1AE、powe
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
 <a id="field-48"></a>
 ## param_1 + 0x48
 

@@ -1,0 +1,55 @@
+{
+  "checked_utc": "2026-11-05T00:30:02.969613+00:00",
+  "base": "2a6af7b389d82a92b85bef475aaf981d31d1990d",
+  "open_prs": 13,
+  "open_issues": 6,
+  "pr_path_records": 1695,
+  "unique_blobs": 1145,
+  "discovery_states": {
+    "EXACT_ALREADY_DEVELOP": 709,
+    "AVAILABLE_QUEUE_ONLY": 951,
+    "SAME_PATH_CHANGED": 35
+  },
+  "path_changes": {
+    "UNCHANGED": 1686,
+    "BLOB_CHANGED": 7,
+    "ADDED": 2
+  },
+  "exact_ledger_pr_links": 99,
+  "fetched_tree_prs": [
+    16,
+    17,
+    18
+  ],
+  "cached_immutable_heads": 10,
+  "changed_heads": [
+    {
+      "pr": 16,
+      "previous": "35dfcb14b70940ded4a5dcfeca8347ae009694a1",
+      "current": "68c5ec9ec766776f027ac27e77c8b50d0f3b80de"
+    },
+    {
+      "pr": 17,
+      "previous": "c6abc1e0c065280125d7122659a7ee7a4360c12a",
+      "current": "f22c89d3a691ab6b431cbfaa56cbcdd01ea593d2"
+    },
+    {
+      "pr": 18,
+      "previous": "144f93f6ebe1adc1c0706d31ac20300fad0b8cbe",
+      "current": "885ad7a069a2b67cf3ba378e7241341ad951128b"
+    }
+  ],
+  "method": "Read-only gh GraphQL with explicit metadata fields; changed fixed-head trees via recursive REST metadata, unchanged-head trees reused from previous complete immutable catalog. No PR/Issue body/content or linked script/native payload in this metadata pass.",
+  "repository_private": true,
+  "default_branch": "develop",
+  "pull_request_has_next_page": false,
+  "issue_has_next_page": false,
+  "fetched_trees_truncated": false,
+  "metadata_hashes": {
+    "GITHUB_QUEUE.tsv": "884723559ba933bb1bc1a8142457a4054fe1195b21693a0f64236625f969b91d",
+    "GITHUB_SOURCE_CATALOG.tsv": "b01f7aec4919c7fa7c8103b0fd1648359201ba2169750cc826c7812a58273d7b",
+    "GITHUB_DISCOVERY_DIFF.tsv": "26afd4d3dd7c3f601a942a77d1a7cc496f67be8db7ffc5b3c8c9baf8fe46b721",
+    "GITHUB_EXACT_BODY_LINKS.tsv": "8092080be4f1737920875b6327b435618843af6a77a448a7009de2ca9ce1b7f7"
+  },
+  "scope": "1695 research blob locations are entire pinned PR research trees, not PR-only added diffs. Recovered links compare saved Git blob identity, not original whole-body identity or semantic curation. Separate selected PR source recovery, if any, is documented under pr_crosswalk1 and is outside this metadata-only pass."
+}

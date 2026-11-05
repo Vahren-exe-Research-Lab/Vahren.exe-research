@@ -8,7 +8,7 @@
 
 文書結果は回収台帳での初出順で最大20件です。省略時は一致総数を表示します。全件の出典・制約は一覧または各詳細ページに掲載しています。研究ID・題名で絞り込めます。アドレス・所有者＋オフセット検索は従来の専用結果を返します。
 
-全 1368 文書。各詳細ページは最大100文書で、出典行・SHA256・回収台帳・制約を保持しています。
+全 1518 文書。各詳細ページは最大100文書で、出典行・SHA256・回収台帳・制約を保持しています。
 
 | 詳細ページ | 文書数 | 最初の題名 | 最後の題名 |
 |---|---:|---|---|
@@ -25,6 +25,8 @@
 | [11](documents/page-011.md) | 100 | B-20261016-1110-01｜T024 AI移動・待機Skillの同一block内 far/func 重複宣言と継承辺 | T028 原作retreat_ok後段：退却先未発見→メッセージ返却→mode1分配抑止（21H） |
 | [12](documents/page-012.md) | 100 | T028 退却先選択：Spot候補の容量・予約計数のstrict gate（22H） | 迫真戦記 ver0.67 REA独立静的研究｜GameManager仮想CALLのライフサイクル制約・ガード監査 |
 | [13](documents/page-013.md) | 100 | 迫真戦記 ver0.67｜REA P0・T014 静的増分：GameManagerモード選択とFadeSheet停止ラッチ | 2026-10-28 21時台 REA 独立読み戻し記録 |
-| [14](documents/page-014.md) | 68 | 迫真戦記 ver0.67｜REA 2026-10-28 21時台：Oggシリアル配列の早期return時の所有権・解放非対称性 | 追加解析で確認できた点 |
+| [14](documents/page-014.md) | 100 | 迫真戦記 ver0.67｜REA 2026-10-28 21時台：Oggシリアル配列の早期return時の所有権・解放非対称性 | REA Wave3 保存済みGhidra静的証拠の独立照合（2026-10-10） |
+| [15](documents/page-015.md) | 100 | REA Wave 3候補（未着手・Wave2全件照合後にキュー化） | Reservation extension integration plan |
+| [16](documents/page-016.md) | 18 | Bounded manifest planning layer | 雇用関係優先表示 V4　研究・実装・監査台帳 |
 
 [事典の入口](README.md)

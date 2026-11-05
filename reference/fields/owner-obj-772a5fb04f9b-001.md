@@ -28,6 +28,15 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3742](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3742-L3742) — - +4（slot 1）: 0x42E74E / 0x43A3DD / 0x4709D0 の 3 箇所。いずれも iostream の sentry で、`[[obj]+4]+obj+0x38` の streambuf の vf1 を呼んでいる。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+- [research/recovered/plugin_reports1/reports/T024_OPTIONAL_DOUBLE_FALLBACK_THUNK_V9_STATIC_20261101_23H.md 行 10](../../research/recovered/plugin_reports1/reports/T024_OPTIONAL_DOUBLE_FALLBACK_THUNK_V9_STATIC_20261101_23H.md?plain=1#L10-L10) — V9 function 0x542280 body [0x542280,0x5422BC] 61B（pseudoc帰属）。Ghidra表示: if (global double [0x63B0B8] != *(double *)(obj+0x50)) return *(double *)(obj+0x50); else
+  制約・訂正　Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=B_STATIC_CANDIDATE_ERRATUM
+
+<a id="field-40"></a>
+## obj + 0x40
+
+- [research/recovered/plugin_reports1/reports/T024_OPTIONAL_DOUBLE_FALLBACK_THUNK_V9_STATIC_20261101_23H.md 行 10](../../research/recovered/plugin_reports1/reports/T024_OPTIONAL_DOUBLE_FALLBACK_THUNK_V9_STATIC_20261101_23H.md?plain=1#L10-L10) — V9 function 0x542280 body [0x542280,0x5422BC] 61B（pseudoc帰属）。Ghidra表示: if (global double [0x63B0B8] != *(double *)(obj+0x50)) return *(double *)(obj+0x50); else
+  制約・訂正　Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=B_STATIC_CANDIDATE_ERRATUM
+
 <a id="field-48"></a>
 ## obj + 0x48
 
@@ -39,6 +48,12 @@
 
 - [research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md 行 8](../../research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md?plain=1#L8-L8) — - 原PE 0x515076 LEA EAX,[ECX+0x88] / 0x51507C [+0x88]=0 / 0x51507E [ECX+0x8C]=0。0x515084/87 [obj+0x4C]-[obj+0x48] を SAR 2し、0以下ならloopなし。
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+<a id="field-50"></a>
+## obj + 0x50
+
+- [research/recovered/plugin_reports1/reports/T024_OPTIONAL_DOUBLE_FALLBACK_THUNK_V9_STATIC_20261101_23H.md 行 10](../../research/recovered/plugin_reports1/reports/T024_OPTIONAL_DOUBLE_FALLBACK_THUNK_V9_STATIC_20261101_23H.md?plain=1#L10-L10) — V9 function 0x542280 body [0x542280,0x5422BC] 61B（pseudoc帰属）。Ghidra表示: if (global double [0x63B0B8] != *(double *)(obj+0x50)) return *(double *)(obj+0x50); else
+  制約・訂正　Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=B_STATIC_CANDIDATE_ERRATUM
 
 <a id="field-88"></a>
 ## obj + 0x88

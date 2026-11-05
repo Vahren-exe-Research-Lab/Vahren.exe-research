@@ -1,0 +1,23 @@
+# REA復旧資料・最終独立読み戻し記録（2026-10-29）
+- Recovery ID: REA-RESTORE-20261029-LIBRARY-ALL-166-01
+- 結果: **PC側166/166保存、個別ハッシュ全件一致、合計1,286,485バイト**。
+- 原本Libraryで確認した未同期件数: 20261021=5、22=41、23=48、24=36、25=10、28=26。
+- 個別 `filename<TAB>SHA256_UPPER<LF>` （Ordinal順）の集約SHA256:
+  `20D28FBF45EC7AAD520263ED438D7E37F502D563D600C31650EFB2E726C53081`
+- 上記集約SHA256はLibrary回収元とWindows上の復旧後で完全一致。
+- PC側 `files/` に166原本、`staging/` に受領用JSONL 34パートを保管。
+- `RECOVERY_MANIFEST.json`: 166件のファイル名・元Library ID・個別SHA・サイズ・保全状態を保存、再読込166件成功。
+- PCマニフェストSHA256（由来ID補完後）: `51907F80B1B9D48E247B7633DEE1E7AF44A4BB3E88D77AC6FDD15A0AC0E548A3`
+- PC側 `REA_OFFLINE_RECOVERED_20261029.zip`: 168エントリ（資料166＋README＋manifest）、584,486バイト。
+- PC ZIP SHA256: `01FFBDAE92314335E60D9C1E2889E9E9B9BF5D52E17C7610DFCEB0A961186A9A`
+- Library側 `REA_OFFLINE_UNSYNCED_20261029_ALL_166.zip`: 167エントリ（資料166＋manifest）、582,526バイト。
+- Library ZIP SHA256: `9B355D642B17B292510A6539F292182F8F0E623BA9839489549DEC09BBEB0527`
+- Library ZIPを実際に再取得しSHA256一致・ZipFile.testzip=正常、確認済み。
+- ZIP同士のハッシュ差は格納内容/エントリ構成の違いによる。全166資料の個別ハッシュは一致。
+- 新規正式REA VERIFIED=0。旧64件は歴史的報告値であり今回の新規計上なし。
+- ゲームGolden実行=0、strict MATCH=NOT RUN、完全複製率=未測定。
+- 復旧済み監査用PythonやREA/Ghidra/原作ゲームの新規実行は行っていない。保存と実行を混同しない。
+- 正式QUEUE/PROGRESS/MASTER、他レーン、原本EXE/ZIP/SAVE、Git/公開・スケジュールは変更していない。
+- 一時転送中断はpartを照合して不足分のみ再開。検証用SHA計算ミスのpartはPC資料化前に訂正済み。
+- 状態: PC-ARCHIVED / FORMAL-UNSYNCED / STATIC / VERIFY / NOT READY。
+- 次回: 最新owner/lock、QUEUE/PROGRESS、既存IDを確認後に重複排除して正式統合。未実行テストは別途計画する。
