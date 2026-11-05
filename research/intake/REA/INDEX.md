@@ -1121,3 +1121,11 @@ Historical 8 IDs, not new Verified functions; curator-only knowledge adoption. G
 ## 2026-11-02 REA old pre-ID source archive D
 
 - [14 old REA owner research/QC/Wave reports with source hashes, safe bounded static observations and correction/safety flags](REA_20261010_31_LEGACY_UNKEYED_AND_CORRECTION_D.md) — UNKEYED_SOURCE or existing-ID ERRATUM/BLOCKED. Do not add document count as native VERIFIED count or claim original Golden PASS.
+
+## 2026-11-05 OGG reuse design intake
+
+| Research ID | Search keys | Report | Status |
+| --- | --- | --- | --- |
+| REA-T015-OGG-REUSE-20261105 | 0x5D16C0 / 0x5D12E0 / 0x5CFE00 / 0x4C0E50 / DAT routine bus / OGG SE voice | [call paths, ABI candidates, WAV comparison, A/B/C design](ogg_reuse_20261105/REPORT.md) | OWNER_INTAKE / NOT_CURATED; static + user-operated installed-game observation; DLL reuse untested |
+
+This new study is distinct from the earlier static-only recovery batches above. The runtime session is not certified as an isolated diagnostic copy. [Manifest](ogg_reuse_20261105/MANIFEST.tsv), [source receipts](ogg_reuse_20261105/SOURCE_RECEIPTS.tsv), [address-searchable call edges](ogg_reuse_20261105/audit_01/CALL_EDGES.tsv). Shared dictionaries and develop are unchanged by this intake. No raw log, executable, DAT, audio, or local absolute paths included.

@@ -1,0 +1,72 @@
+{
+  "research_id": "REA-T015-OGG-REUSE-20261105",
+  "raw_log_sha256": "1693420efdca2794e69669817ef6c59177705dd78e6230dc3b829db3bf8677cf",
+  "raw_log_bytes": 3102306,
+  "raw_line_count": 78133,
+  "probe_counts": {
+    "BEGIN": 1,
+    "OPEN_ENTRY_SNAPSHOT": 1,
+    "ARMED": 1,
+    "OPEN_RETURN": 5,
+    "READ_CALL": 64,
+    "READ_RETURN": 64,
+    "FILL_RETURN": 64,
+    "WORKER_ENTRY": 5,
+    "SE_ENTRY": 64,
+    "CLEAR_ENTRY": 5
+  },
+  "observed_thread_roles": {
+    "BEGIN": {
+      "main": 1
+    },
+    "OPEN_RETURN": {
+      "main": 5
+    },
+    "READ_CALL": {
+      "main": 50,
+      "worker": 14
+    },
+    "READ_RETURN": {
+      "main": 50,
+      "worker": 14
+    },
+    "FILL_RETURN": {
+      "main": 3,
+      "worker": 61
+    },
+    "WORKER_ENTRY": {
+      "worker": 5
+    },
+    "SE_ENTRY": {
+      "main": 64
+    },
+    "CLEAR_ENTRY": {
+      "main": 5
+    }
+  },
+  "matched_read_pairs": 64,
+  "unmatched_read_returns": 0,
+  "read_return_histogram_hex": {
+    "0x900": 6,
+    "0x1000": 43,
+    "0x200": 13,
+    "0xa10": 1,
+    "0x5f0": 1
+  },
+  "read_negative": 0,
+  "read_zero": 0,
+  "read_exceeds_request": 0,
+  "open_return_histogram": {
+    "0": 5
+  },
+  "normal_exit_zero_text_observed": true,
+  "end_marker_observed": false,
+  "limitations": [
+    "64-hit sampling; not whole playback coverage",
+    "No PCM sample bytes or DirectSound HRESULTs recorded",
+    "One user-operated installed-game session; isolated-copy provenance not established",
+    "No DLL-created decoder or simultaneous new decoder test",
+    "V1 logging caps did not disable breakpoints; plugin emitted repeated notifications",
+    "Cleanup entry is not proof of completed cleanup"
+  ]
+}

@@ -1,0 +1,62 @@
+// REA-T015-OGG-REUSE-20261105 v2. Diagnostic copy only.
+// Replaces v1: each probe DISABLES itself after 64 hits. No target calls.
+LogRedirect "x32dbg_ogg_probe_02.log"
+log "[OGGPROBE] BEGIN base={Vahren.exe} cip={cip} tid={tid()} esp={esp}"
+bp Vahren.exe+10203D,"OGGPROBE_OPEN_RETURN"
+SetBreakpointCondition Vahren.exe+10203D,0
+SetBreakpointLog Vahren.exe+10203D,"[OGGPROBE] OPEN_RETURN tid={tid()} eip={eip} esp={esp} eax={eax} decoder={esi} ctx={esi+118}"
+SetBreakpointLogCondition Vahren.exe+10203D,"$breakpointcounter<=.64"
+SetBreakpointCommand Vahren.exe+10203D,"bpd Vahren.exe+10203D"
+SetBreakpointCommandCondition Vahren.exe+10203D,"$breakpointcounter==.64"
+SetBreakpointFastResume Vahren.exe+10203D,0
+bp Vahren.exe+101F91,"OGGPROBE_READ_CALL"
+SetBreakpointCondition Vahren.exe+101F91,0
+SetBreakpointLog Vahren.exe+101F91,"[OGGPROBE] READ_CALL tid={tid()} eip={eip} esp={esp} ctx={[esp]} out={[esp+4]} requested={[esp+8]} bigendian={[esp+C]} word={[esp+10]} signed={[esp+14]} sectionptr={[esp+18]}"
+SetBreakpointLogCondition Vahren.exe+101F91,"$breakpointcounter<=.64"
+SetBreakpointCommand Vahren.exe+101F91,"bpd Vahren.exe+101F91"
+SetBreakpointCommandCondition Vahren.exe+101F91,"$breakpointcounter==.64"
+SetBreakpointFastResume Vahren.exe+101F91,0
+bp Vahren.exe+101F96,"OGGPROBE_READ_RETURN"
+SetBreakpointCondition Vahren.exe+101F96,0
+SetBreakpointLog Vahren.exe+101F96,"[OGGPROBE] READ_RETURN tid={tid()} eip={eip} esp={esp} eax={eax} ctx={[esp]} out={[esp+4]} requested={[esp+8]} section={ReadDword(ReadDword(esp+18))}"
+SetBreakpointLogCondition Vahren.exe+101F96,"$breakpointcounter<=.64"
+SetBreakpointCommand Vahren.exe+101F96,"bpd Vahren.exe+101F96"
+SetBreakpointCommandCondition Vahren.exe+101F96,"$breakpointcounter==.64"
+SetBreakpointFastResume Vahren.exe+101F96,0
+bp Vahren.exe+101FE8,"OGGPROBE_FILL_RETURN"
+SetBreakpointCondition Vahren.exe+101FE8,0
+SetBreakpointLog Vahren.exe+101FE8,"[OGGPROBE] FILL_RETURN tid={tid()} eip={eip} esp={esp} actual={edi} requested={[ebp+C]}"
+SetBreakpointLogCondition Vahren.exe+101FE8,"$breakpointcounter<=.64"
+SetBreakpointCommand Vahren.exe+101FE8,"bpd Vahren.exe+101FE8"
+SetBreakpointCommandCondition Vahren.exe+101FE8,"$breakpointcounter==.64"
+SetBreakpointFastResume Vahren.exe+101FE8,0
+bp Vahren.exe+1023E0,"OGGPROBE_WORKER_ENTRY"
+SetBreakpointCondition Vahren.exe+1023E0,0
+SetBreakpointLog Vahren.exe+1023E0,"[OGGPROBE] WORKER_ENTRY tid={tid()} eip={eip} esp={esp} stream={[esp+4]}"
+SetBreakpointLogCondition Vahren.exe+1023E0,"$breakpointcounter<=.64"
+SetBreakpointCommand Vahren.exe+1023E0,"bpd Vahren.exe+1023E0"
+SetBreakpointCommandCondition Vahren.exe+1023E0,"$breakpointcounter==.64"
+SetBreakpointFastResume Vahren.exe+1023E0,0
+bp Vahren.exe+1CFE00,"OGGPROBE_CLEAR_ENTRY"
+SetBreakpointCondition Vahren.exe+1CFE00,0
+SetBreakpointLog Vahren.exe+1CFE00,"[OGGPROBE] CLEAR_ENTRY tid={tid()} eip={eip} esp={esp} ctx={[esp+4]}"
+SetBreakpointLogCondition Vahren.exe+1CFE00,"$breakpointcounter<=.64"
+SetBreakpointCommand Vahren.exe+1CFE00,"bpd Vahren.exe+1CFE00"
+SetBreakpointCommandCondition Vahren.exe+1CFE00,"$breakpointcounter==.64"
+SetBreakpointFastResume Vahren.exe+1CFE00,0
+bp Vahren.exe+C0050,"OGGPROBE_SE_ENTRY"
+SetBreakpointCondition Vahren.exe+C0050,0
+SetBreakpointLog Vahren.exe+C0050,"[OGGPROBE] SE_ENTRY tid={tid()} eip={eip} esp={esp} manager={ecx} nameptr={[esp+4]}"
+SetBreakpointLogCondition Vahren.exe+C0050,"$breakpointcounter<=.64"
+SetBreakpointCommand Vahren.exe+C0050,"bpd Vahren.exe+C0050"
+SetBreakpointCommandCondition Vahren.exe+C0050,"$breakpointcounter==.64"
+SetBreakpointFastResume Vahren.exe+C0050,0
+bp Vahren.exe+C01A0,"OGGPROBE_VOICE_ENTRY"
+SetBreakpointCondition Vahren.exe+C01A0,0
+SetBreakpointLog Vahren.exe+C01A0,"[OGGPROBE] VOICE_ENTRY tid={tid()} eip={eip} esp={esp} manager={[esp+4]} nameptr={[esp+8]} mode={[esp+C]}"
+SetBreakpointLogCondition Vahren.exe+C01A0,"$breakpointcounter<=.64"
+SetBreakpointCommand Vahren.exe+C01A0,"bpd Vahren.exe+C01A0"
+SetBreakpointCommandCondition Vahren.exe+C01A0,"$breakpointcounter==.64"
+SetBreakpointFastResume Vahren.exe+C01A0,0
+log "[OGGPROBE] ARMED - use normal playback, pause, run stop script"
+ret

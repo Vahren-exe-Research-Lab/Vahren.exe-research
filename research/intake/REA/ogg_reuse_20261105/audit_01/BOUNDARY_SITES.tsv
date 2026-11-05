@@ -1,0 +1,31 @@
+site_va	mnemonic	operands	fresh_pe_check
+0x005D16C3	mov	eax, dword ptr [ebp + 8]	MATCH
+0x005D16F1	mov	ecx, dword ptr [ebp + 0xc]	MATCH
+0x005D172A	mov	eax, esi	MATCH
+0x005D172F	ret		MATCH
+0x005D1303	call	0x5d0fb0	MATCH
+0x005D1308	add	esp, 0x24	MATCH
+0x005D130C	ret		MATCH
+0x005CFE04	mov	esi, dword ptr [ebp + 8]	MATCH
+0x005CFEF3	push	0x2d0	MATCH
+0x005CFF08	ret		MATCH
+0x005D0F73	mov	ecx, dword ptr [ebp + 8]	MATCH
+0x005D0F7C	mov	eax, dword ptr [ebp + 0xc]	MATCH
+0x005D0FB7	mov	esi, dword ptr [ebp + 8]	MATCH
+0x005D0FF8	mov	eax, esi	MATCH
+0x005D0FFA	call	0x5cfa10	MATCH
+0x005CFA19	mov	esi, eax	MATCH
+0x005CF970	mov	eax, dword ptr [esi + 0x58]	MATCH
+0x005D1046	idiv	dword ptr [ebp - 0x1c]	MATCH
+0x005D1143	fmul	qword ptr [0x60cdd8]	MATCH
+0x005D114F	fistp	dword ptr [ebp - 0x10]	MATCH
+0x005D1171	mov	word ptr [edx], cx	MATCH
+0x005D128D	call	0x5d5790	MATCH
+0x005D12BA	imul	eax, ebx	MATCH
+0x005D12CF	xor	eax, eax	MATCH
+0x00501F91	call	0x5d12e0	MATCH
+0x00501F98	add	esp, 0x1c	MATCH
+0x00501FC2	add	edi, esi	MATCH
+0x00501FC6	jae	0x501fdf	MATCH
+0x00501FF0	ret	0x10	MATCH
+0x00502071	mov	dword ptr [esi + 0x110], 0x10	MATCH

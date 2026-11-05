@@ -1,0 +1,11 @@
+bc Vahren.exe+10203D
+bc Vahren.exe+101F91
+bc Vahren.exe+101F96
+bc Vahren.exe+101FE8
+bc Vahren.exe+1023E0
+bc Vahren.exe+1CFE00
+bc Vahren.exe+C0050
+bc Vahren.exe+C01A0
+log "[OGGPROBE] END"
+LogRedirectStop
+ret

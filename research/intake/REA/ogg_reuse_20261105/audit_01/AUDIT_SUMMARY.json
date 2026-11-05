@@ -1,0 +1,73 @@
+{
+  "research_id": "REA-T015-OGG-REUSE-20261105",
+  "pe_sha256": "e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187",
+  "v9_sha256": "2629cb2f03ecec9927e89892c77f847e4cdba381ab718825c1ca8cfeeef00ede",
+  "function_range_rows": 50,
+  "matched_direct_edges": 340,
+  "matched_boundary_sites": 30,
+  "synthetic_cases": 11,
+  "synthetic_results": [
+    {
+      "case": "native_half_44100_2",
+      "half": 88200,
+      "align": 4,
+      "unaligned": false
+    },
+    {
+      "case": "native_half_48000_1",
+      "half": 48000,
+      "align": 2,
+      "unaligned": false
+    },
+    {
+      "case": "native_half_11025_1",
+      "half": 11025,
+      "align": 2,
+      "unaligned": true
+    },
+    {
+      "case": "native_half_11025_2",
+      "half": 22050,
+      "align": 4,
+      "unaligned": true
+    },
+    {
+      "case": "native_half_44101_2",
+      "half": 88202,
+      "align": 4,
+      "unaligned": true
+    },
+    {
+      "case": "native_first_read_-131",
+      "unsigned_complete": true
+    },
+    {
+      "case": "native_first_read_-137",
+      "unsigned_complete": true
+    },
+    {
+      "case": "native_first_read_-3",
+      "unsigned_complete": true
+    },
+    {
+      "case": "native_first_read_0",
+      "unsigned_complete": false
+    },
+    {
+      "case": "native_first_read_128",
+      "unsigned_complete": false
+    },
+    {
+      "case": "native_first_read_4096",
+      "unsigned_complete": true
+    }
+  ],
+  "game_execution_by_audit": 0,
+  "dll_calls": 0,
+  "status": "STATIC_AND_SYNTHETIC_ONLY_NOT_CURATED",
+  "limitations": [
+    "Inherited V9 boundaries; not a new full image analysis",
+    "Selected ABI facts, not runtime proof",
+    "Indirect edges require vtable/instance evidence"
+  ]
+}
