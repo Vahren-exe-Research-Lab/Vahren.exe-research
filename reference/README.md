@@ -210,7 +210,7 @@
 | 0x5050EE | [ScriptData_SuperEntryInsertCallSite](symbols/005050EE.md) | code | Original x86/V9 E8 to 0x463280 within conditional super ScriptData producer; duplicate keys and gameplay VERIFY. |
 | 0x50B220 | [Script_Loader](symbols/0050B220.md) | func | スクリプト読込器 |
 | 0x514AA0 | [Battle_ReleaseSideUnitVectors](symbols/00514AA0.md) | func | 陣営オブジェクトの +0x48・+0x58・+0x38 の3配列をたどり、非NULLユニットの仮想デストラクタに flag=1 を渡す。 |
-| 0x514C80 | [Battle_SideRemains](symbols/00514C80.md) | func | 残っているユニットの判定 |
+| 0x514C80 | [Battle_SideRemains](symbols/00514C80.md) | func | side+0x48..+0x4Cの適格候補を探索し、候補が見つかればAL0、なければAL1。isAllDead命令の最終boolや、同じ陣営の全型の全滅判定とは区別する。 |
 | 0x514D60 | [Ai_SelectNearestTarget](symbols/00514D60.md) | func | SimpleUnit と SimpleStaticUnit の二系統候補を距離で調べる。通常型の候補には Unit+0x1C0 の stealth% に応じた確率的除外がある。 |
 | 0x514F10 | [Ai_BuildSupportTargets](symbols/00514F10.md) | func | 生存する SimpleUnit 候補を列挙し、距離付き24バイトレコードを作る。通常分岐では candidate+0x1D0==0 を除外する。 |
 | 0x515060 | [Ai_SumSupportUnitValues](symbols/00515060.md) | func | SimpleUnit 配列を走査し、特定の Unit+0x1D0 条件によって値を集計する補助。集計値の厳密な名称は未確定。 |
@@ -355,7 +355,7 @@
 | 0x584970 | [UnitDef_GetChipName](symbols/00584970.md) | func | キャラチップ名を決める（image / sub_image / tkool を考慮）。thiscall: ECX=def、引数 (std::string* out, flag=1)、ret 8 |
 | 0x585AD0 | [UnitDef_GetField](symbols/00585AD0.md) | func | ユニット定義の DAT プロパティ（"level"、"noremove_unit" など）を、ユニット ID とクラスをたどって引く |
 | 0x586320 | [UnitDef_GetFriendSet](symbols/00586320.md) | func | friend 集合の遅延生成（def+0x158） |
-| 0x587CC0 | [Unit_ResetLinkedRuntimeFlags](symbols/00587CC0.md) | func | 戦闘 SimpleUnit 生成時などに参照元オブジェクトの状態を変更する補助。複数の状態 setter からも呼ばれるため、生成専用ではない。 |
+| 0x587CC0 | [Unit_CachedValueOrAggregate](symbols/00587CC0.md) | func | 引数0では Unit+0x1C4 のキャッシュを返す。非0経路は重み付き入力集計の先頭区間のみ確認済み。最終返値・関数内部の書込・全体の副作用は未確認。状態setterや戦闘生成から呼ばれる。 |
 | 0x588470 | [UnitData_ResolveTypedDefinition](symbols/00588470.md) | func | Unit/クラス等の名前・種別の階層検索に関わる補助。参照先型に応じたプロパティ取得を含む。 |
 | 0x58A400 | [UnitDef_ExpNext](symbols/0058A400.md) | func | 次のレベルに必要な経験値の計算（符号なし） |
 | 0x58A540 | [UnitDef_ExpTotal](symbols/0058A540.md) | func | 経験値の累計計算（符号付き） |
@@ -522,6 +522,6 @@
 
 [登録関数間の直接CALL採録条件](static_calls_source.json) — 2373箇所。各関数ページで呼び出し元・先を参照でき、`callers VA --json` / `callees VA --json` でも検索できます。
 
-[訂正履歴](CORRECTIONS.md) — 13 件。訂正済みの旧解釈と現在の解釈を出典行付きで確認できます。
+[訂正履歴](CORRECTIONS.md) — 15 件。訂正済みの旧解釈と現在の解釈を出典行付きで確認できます。
 
 [回収済み研究文書の題名・本文](DOCUMENTS.md) — 1585 文書。題名・ファイル名・研究ID・本文の通常文字列を検索できます。

@@ -74,4 +74,14 @@
   - → 現在の解釈　Power_FindByName。CtxのPower表を名前検索し、返却Powerの+0xE0にCtxを設定する。Spotの名前解決は別関数0x467E90。
   - 確度　静的確認（回収済み著述資料の記述。今回の原作再検証・実行なし）。対象　迫真戦記 ver0.67 / Vahren.exe image base 0x400000。[訂正の根拠](../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L142-L142)
 
+- [Unit_CachedValueOrAggregate](symbols/00587CC0.md) · `CORRECTION-UNIT-CACHED-VALUE-NOT-RESET` · `corrected`。T011§15/§16段階のreset・変更の断定を、後日の§17で記録された分岐と未確認範囲へ限定する。callerによるキャッシュstoreをcalleeの内部writeと混同しない。非0経路が純粋readであるとも断定しない。
+  - 訂正済みの旧解釈（履歴）　Unit_ResetLinkedRuntimeFlags。戦闘 SimpleUnit 生成時などに参照元オブジェクトの状態を変更する補助。複数の状態 setter からも呼ばれるため、生成専用ではない。
+  - → 現在の解釈　Unit_CachedValueOrAggregate。引数0では Unit+0x1C4 のキャッシュを返す。非0経路は重み付き入力集計の先頭区間のみ確認済み。最終返値・関数内部の書込・全体の副作用は未確認。状態setterや戦闘生成から呼ばれる。
+  - 確度　静的確認（保存済み著述報告の範囲。今回の原作再検証・実行なし）。対象　迫真戦記 ver0.67 / Vahren.exe image base 0x400000。[訂正の根拠](../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L300-L308)
+
+- [Battle_SideRemains](symbols/00514C80.md) · `CORRECTION-RTS-EMPTY-SIDE-NOT-ALWAYS-FALSE` · `corrected`。旧RTS要約のempty候補=falseという一般化を、後日のT030§72の条件付きreturnで訂正する。helperのAL、命令の最終bool、全型の陣営全滅・勝敗を分ける。
+  - 訂正済みの旧解釈（履歴）　REF_RTS_SCENARIO.md §1: Native isAllDead resolves its own candidate set and returns false for empty candidates.
+  - → 現在の解釈　helper0x514C80は適格候補が見つかればAL0、なければAL1。AL1後のisAllDead命令の局所returnはmode別のraw DWORDゼロ判定に依存する。通常setup後・後続writerなし・mode2・対象outer解決成功・helper AL1ならbool1となる条件例があり、emptyなら常にfalseともtrueとも一般化しない。AL0/outer未解決時の共通tail最終bool、実2v2勝敗は未確認。
+  - 確度　静的確認（保存済み著述報告の範囲。今回の原作再検証・実行なし）。対象　迫真戦記 ver0.67 / Vahren.exe image base 0x400000。[訂正の根拠](../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L633-L640)
+
 [事典の入口](README.md)
