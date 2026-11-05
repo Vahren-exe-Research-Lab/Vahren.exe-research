@@ -1,0 +1,22 @@
+{
+  "base": "24d3f3bfb1598d0b6ee1777f75ad59c5f079085a",
+  "selected_paths": 24,
+  "accepted_source_rows": 22,
+  "new_bodies": 22,
+  "exact_bodies": 19,
+  "lossless_encoding_variants": 3,
+  "generated_native_probe_metadata_deferrals": 2,
+  "new_code_positions": 3,
+  "functions_unchanged": 362,
+  "symbols": 498,
+  "fields": 120,
+  "relations": 159,
+  "corrections": 15,
+  "root_ledger_rows": 1877,
+  "searchable_documents": 1836,
+  "document_origins": 1856,
+  "field_mentions": 6021,
+  "old_opcode_disagreements": 2,
+  "new_native_runtime_tests": 0,
+  "original_cleanup": "NOT_PERFORMED"
+}

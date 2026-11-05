@@ -193,6 +193,9 @@
 - [research/recovered/e_reports/T020_E_T013_KIND8_PREQUEUE_ACCEPTANCE_20261031_15H.md 行 21](../../research/recovered/e_reports/T020_E_T013_KIND8_PREQUEUE_ACCEPTANCE_20261031_15H.md?plain=1#L21-L21) — - `KB_CANDIDATE` (do not auto-promote): B/T013 ID above and E/T020 ID in title, VA 0x577D82/0x577DCB/0x577ADE/0x577B27/0x5A3DF0/0x5A3E55/0x5A3E78/0x579EB0/0x579
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
 
+- [research/recovered/json_evidence2/archive/B_OFFLINE_20261101_12H_MODE3_DUAL_LIST_EVIDENCE.json 行 126](../../research/recovered/json_evidence2/archive/B_OFFLINE_20261101_12H_MODE3_DUAL_LIST_EVIDENCE.json?plain=1#L126-L126) — "meaning": "record+0x28 receives 8-byte FPU value"
+  制約・訂正　Historical saved author observations/claims only; native windows and PASS counts not independently validated; no new runtime/Golden/READY/ABI; referenced payloads unopened
+
 - [research/recovered/knowledge_history1/reports/knowledge/README.md 行 12](../../research/recovered/knowledge_history1/reports/knowledge/README.md?plain=1#L12-L12) — \| 戦闘AIの候補生成→ソート→ヘッド分岐 \| `REF_BATTLE_AI_MORALE.md` 冒頭の source map \| B/T013 12〜21H：`+0xA14` と `record+0x28` を混同しない \|
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
 
@@ -380,9 +383,6 @@
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 - [research/recovered/b_batch7/data/T012_RUSH_COMPILED_INTERVAL_ATTEMPT_LINK_NATIVE_20261027_19H.md 行 15](../../research/recovered/b_batch7/data/T012_RUSH_COMPILED_INTERVAL_ATTEMPT_LINK_NATIVE_20261027_19H.md?plain=1#L15-L15) — [GOLDEN DESIGNED/NOT RUN] 未改変ver0.67 EXE、KARATE_X20以前DAT、同一SAVE/MAP/input/RNGでraw rush_interval=-1/0/2、rush上限0/1/4、通常発動と生成失敗の合法条件、GameTask M flags/Rush+0x210を観測
-  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
-
-- [research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md 行 13](../../research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md?plain=1#L13-L13) — 2. `0x0054F990` 擬似Cで `record=param_3` とすると、**`record+0x1D0=1`（active候補）、`record+0x1D4=in_EAX`（定義候補）、`record+0x1F0=0`（試行番号）、`record+0x1F8=0`（リンク先候補）、`record+0x1F
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

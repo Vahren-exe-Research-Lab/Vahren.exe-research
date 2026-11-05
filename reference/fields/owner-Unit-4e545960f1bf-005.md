@@ -7,6 +7,15 @@
 <a id="field-1d0"></a>
 ## Unit + 0x1D0
 
+- [research/recovered/b_batch8/data/T013_CASE8_LIVE_FILTER_TREE_ORDER_VECTOR_ABI_20261024_0110.md 行 11](../../research/recovered/b_batch8/data/T013_CASE8_LIVE_FILTER_TREE_ORDER_VECTOR_ABI_20261024_0110.md?plain=1#L11-L11) — [CROSSJOIN] 先行00:15のvisited-setはUnit+0x1D0 pointer候補をkeyとし一度のみ0x569530へmode値を渡す。今回のcase8ではalive filtered tree range順がvisited-set適用順の入力。treeキー/recordの式・複数Troopの実
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/b_batch9/data/T013_MODE1_UPSTREAM_FOUR_CALLER_GROUP_FILTER_NATIVE_20261029_17H.md 行 25](../../research/recovered/b_batch9/data/T013_MODE1_UPSTREAM_FOUR_CALLER_GROUP_FILTER_NATIVE_20261029_17H.md?plain=1#L25-L25) — - NEXT：manager[+0x38] group生産・+0x48空判定の型、0x49D1B0副作用、4入口のx87 ST/provenanceとUnit+0x1D0型、T024通常AI/T028士気・敗走、T011召喚EXP/T012 damage P0。原本/MASTER/他lane/REA/dev_lab/G
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/b_batch9/data/T013_RUSH_FACTORY_54F720_CONTRACT_20261013.md 行 10](../../research/recovered/b_batch9/data/T013_RUSH_FACTORY_54F720_CONTRACT_20261013.md?plain=1#L10-L10) — [GOLDEN-DESIGNED/NOT RUN] 同一合法rush/summon系Skillの連続2回使用、pool begin/end空/満、対象Unit+0x1D0=0/非0、同seedで表示投射・効果レコード・移動/HP/MP/RNGの差を旧実機/新で比較。内部ptr/capacityのみの観測はINELIGI
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 - [research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md 行 72](../../research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md?plain=1#L72-L72) — 同一原作EXE SHA / 同一DAT / SAVE / MAP / 入力 / RNG seed と状態で、合法な `allfunc` ミサイル技能を採り、候補vectorが0/1/2/3件の場合と、2件中1件不適格・index10/非10・Skill+0x2A8 sentinel/zero・Unit+0x1D0 nu
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
@@ -348,14 +357,5 @@
 
 - [research/recovered/b_batch3/T024_TEMP_SELECTION_UI_ADAPTER_NATIVE_20261025_22H.md 行 23](../../research/recovered/b_batch3/T024_TEMP_SELECTION_UI_ADAPTER_NATIVE_20261025_22H.md?plain=1#L23-L23) — Next P0: discover producer for Troop+0x1D/+0x1C and Unit+0x45D=1, 0x528700 owner+358 alias/lifetime, 0x56BA80 virtual-slot effects, and source-level AI target s
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_reports/T024_UNIT_ACTION_PRIORITY_CHAIN_NATIVE_20261025_17H.md 行 13](../../research/recovered/b_reports/T024_UNIT_ACTION_PRIORITY_CHAIN_NATIVE_20261025_17H.md?plain=1#L13-L13) — - 0x527716/722 は Unit+0x430==0x80000008（sentinel）かつUnit+0x45D==0でなければAL0。Unit+0x18Cの+0x50/51及び+0x26/27の各ペアに少なくとも1つ非0が必要。
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
-
-- [research/recovered/outside_kb1/reports/knowledge_validation_20261030/CATALOG.md 行 339](../../research/recovered/outside_kb1/reports/knowledge_validation_20261030/CATALOG.md?plain=1#L339-L339) — \| 2026-10-25 \| `data/T024_TROOP_CLEANUP_GATES_INPUT_NATIVE_20261025_20H.md` \| T024｜Troop候補整理と入力座標経路からUnit+0x45D解除への入口条件（2026-10-25 20時台） \|
-  制約・訂正　Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
-
-- [research/recovered/outside_kb1/reports/knowledge_validation_20261030/CATALOG.md 行 340](../../research/recovered/outside_kb1/reports/knowledge_validation_20261030/CATALOG.md?plain=1#L340-L340) — \| 2026-10-25 \| `data/T024_UNIT45D_EMPTY_CONTAINER_RESET_NATIVE_20261025_19H.md` \| T024｜Unit+0x45D解除の二つの空コンテナ経路（2026-10-25 19時台） \|
-  制約・訂正　Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

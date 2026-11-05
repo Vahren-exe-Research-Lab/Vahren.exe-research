@@ -88,6 +88,18 @@
 - [research/recovered/b_batch9/data/T013_SKILL_LIST_FILTER_CONTRACT_20261013.md 行 17](../../research/recovered/b_batch9/data/T013_SKILL_LIST_FILTER_CONTRACT_20261013.md?plain=1#L17-L17) — 属性flagのどれも合格しない場合、元callerのdefault (8,0)を保持してSkill+0x40==8で絞る。属性名の一致以外の親継承、特殊Skill初期化、実戦到達は別VERIFY。
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
+- [research/recovered/dev_evidence/reports/NATIVE_SKILL_CAPABILITY_SUBSET_20261011.json 行 27](../../research/recovered/dev_evidence/reports/NATIVE_SKILL_CAPABILITY_SUBSET_20261011.json?plain=1#L27-L27) — "action_dispatch_preconditions": "Skill+0x40==8, Skill+0x120!=0, Unit capability byte!=0",
+  制約・訂正　Authored bounded model/test or static audit JSON; original native source not bundled; tests are synthetic and not gameplay parity
+
+- [research/recovered/dev_evidence/src/hakushin_compat/native_skill_capability_subset.py 行 7](../../research/recovered/dev_evidence/src/hakushin_compat/native_skill_capability_subset.py?plain=1#L7-L7) — Skill+0x40 kinds 5/6 have special paths (including +0x130 pointer writer)
+  制約・訂正　Authored bounded model/test or static audit JSON; original native source not bundled; tests are synthetic and not gameplay parity
+
+- [research/recovered/dev_evidence/src/hakushin_compat/native_skill_capability_subset.py 行 77](../../research/recovered/dev_evidence/src/hakushin_compat/native_skill_capability_subset.py?plain=1#L77-L77) — _raw_s32(kind_40,"Skill+0x40")
+  制約・訂正　Authored bounded model/test or static audit JSON; original native source not bundled; tests are synthetic and not gameplay parity
+
+- [research/recovered/dev_evidence/src/hakushin_compat/native_skill_capability_subset.py 行 107](../../research/recovered/dev_evidence/src/hakushin_compat/native_skill_capability_subset.py?plain=1#L107-L107) — This disassembly segment first checks Skill+0x40==8 and
+  制約・訂正　Authored bounded model/test or static audit JSON; original native source not bundled; tests are synthetic and not gameplay parity
+
 - [research/recovered/exp/EXP_KIND4_DISPATCH_PRODUCERS_20261021.md 行 18](../../research/recovered/exp/EXP_KIND4_DISPATCH_PRODUCERS_20261021.md?plain=1#L18-L18) — - [STATIC] 前2つの生成入口はいずれも実際の `Skill+0x40==4` 分岐につながり、同型のR mapを利用する。3つめの `0x54E7B0` 召喚coreと合計3系統。
   制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md
 
@@ -208,6 +220,9 @@
 - [research/recovered/b_batch8/data/T012_T011_SPCANNON_CHAIN_RANGE_OVERRIDE_20261018.md 行 7](../../research/recovered/b_batch8/data/T012_T011_SPCANNON_CHAIN_RANGE_OVERRIDE_20261018.md?plain=1#L7-L7) — [PRE-SAVED EXE XREF] target EXE SHA256 e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187（既保存値）。既T012§32 native loader VA0x59CDA3..0x59CDFB（str/ra
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
+- [research/recovered/dev_evidence/src/hakushin_compat/native_skill_capability_subset.py 行 79](../../research/recovered/dev_evidence/src/hakushin_compat/native_skill_capability_subset.py?plain=1#L79-L79) — _raw_s32(raw_4c,"Skill+0x4C")
+  制約・訂正　Authored bounded model/test or static audit JSON; original native source not bundled; tests are synthetic and not gameplay parity
+
 - [research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/kb_section9.md 行 8](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/kb_section9.md?plain=1#L8-L8) — - **Summon cap:** parent `+0x168` is compared with the vector size in `0x57F190`, `0x577600`, `0x577EE0` (when `Skill+0x4C==0`). Because the vector never shrink
   制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
 
@@ -312,23 +327,5 @@
 
 - [research/recovered/search_reports1/reports/_history_20261029/P0_SUMMON_EXP_OWNER_REPORT_20261021.md 行 22](../../research/recovered/search_reports1/reports/_history_20261029/P0_SUMMON_EXP_OWNER_REPORT_20261021.md?plain=1#L22-L22) — \| 0x57F190 **0x57F484** \| ECX=0 / EDX=EBX(skill) \| EBP=発動元戦闘Unit \| 0 \| Skill+0x74=0、座標sentinel \|
   制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
-
-- [research/recovered/search_reports1/reports/_history_20261029/P0_SUMMON_EXP_OWNER_REPORT_20261021.md 行 23](../../research/recovered/search_reports1/reports/_history_20261029/P0_SUMMON_EXP_OWNER_REPORT_20261021.md?plain=1#L23-L23) — \| 0x57F190 **0x57F492** \| ECX=&stack座標 / EDX=EBX(skill) \| EBP=発動元戦闘Unit \| 0 \| Skill+0x74=0、座標有 \|
-  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
-
-- [research/recovered/tests_batch5/T020_T012_RUSH_INTERVAL_SEED_BURST_NEGATIVE_GATE_20261027_18H.md 行 6](../../research/recovered/tests_batch5/T020_T012_RUSH_INTERVAL_SEED_BURST_NEGATIVE_GATE_20261027_18H.md?plain=1#L6-L6) — [ASM CROSSWALK FROM B] Skill+0x78 copied into Rush+0x1F4 at 0x54F9D4. 0x5501AE increments then 0x5501C4 signed JL, 0x5501CA resets on threshold. 0x5503BE increm
-  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
-
-- [research/recovered/tests_batch5/T020_T012_RUSH_RAW_COMPILED_ATTEMPT_SEPARATION_20261027_19H.md 行 7](../../research/recovered/tests_batch5/T020_T012_RUSH_RAW_COMPILED_ATTEMPT_SEPARATION_20261027_19H.md?plain=1#L7-L7) — [BOUNDARY] Native comparison to Skill+0x74 occurs after the first attempt; for compiled zero and nonpositive limit zero, the bounded normal-return model emits o
-  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
-
-- [research/recovered/tests_batch5/T020_T012_RUSH_RAW_COMPILED_ATTEMPT_SEPARATION_20261027_19H.md 行 14](../../research/recovered/tests_batch5/T020_T012_RUSH_RAW_COMPILED_ATTEMPT_SEPARATION_20261027_19H.md?plain=1#L14-L14) — [NEXT] C-NB02 same-battle legal G0/G1/G2 evidence remains P0. On lawful same-run Rush observation, pair raw definition and compiled Skill+0x78, Skill+0x74, perm
-  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
-
-<a id="field-78"></a>
-## Skill + 0x78
-
-- [research/recovered/b_batch3/T012_RUSH_SKILL_INTERVAL_FIRST_TICK_BURST_NATIVE_20261027_18H.md 行 5](../../research/recovered/b_batch3/T012_RUSH_SKILL_INTERVAL_FIRST_TICK_BURST_NATIVE_20261027_18H.md?plain=1#L5-L5) — [NEW ASM/SEED] 0x54F990 の record=EBP / Skill=EAX。0x54F9AC MOV [EBP+0x1D4],EAX、0x54F9D1 MOV EDX,[EAX+0x78]、0x54F9D4 MOV [EBP+0x1F4],EDX。したがって初期record.counterは0でな
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

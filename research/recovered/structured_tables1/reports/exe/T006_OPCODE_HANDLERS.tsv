@@ -1,0 +1,81 @@
+﻿opcode	handler	commands
+0	004A1317	
+1	004A1430	routine
+2	004A148D	return
+3	004A1549	break
+4	004A166E	continue
+5	004A174A	win
+6	004A1770	terminate
+7	004A17C8	save
+8	004A1429	next
+9	004A17D8	wait
+10	004A18B1	battleEvent
+11	004A1978	
+12	004A1BE7	font
+13	004A1D3D	fontc
+14	004A1DB9	select
+15	004A1E15	choice
+16	004A1F48	erase
+17	004A1F5B	dialog/dialogF
+18	004A20AD	setbcg/bg
+19	004A2192	title/title2
+20	004A2265	fadeout
+21	004A22D7	fadein
+22	004A2376	darkness
+23	004A2502	shadow
+24	004A2793	worldskin
+25	004A27B7	shake
+26	004A2850	showBlind/hideBlind
+27	004A2892	zoom
+28	004A28C5	backScroll
+29	004A28E4	scrollSpeed
+30	004A290A	scroll/scroll2
+31	004A2ABC	locate
+32	004A2C13	focus
+33	004A2CD4	playSE
+34	004A2D04	playBGM/play
+35	004A2DC8	stopBGM/stop
+36	004A2DDF	volume
+37	004A2E09	loopBGM
+38	004A2EA0	playWorld
+39	004A2EAD	playBattle
+40	004A2EBA	setWorldMusic
+41	004A2EC8	resetWorldMusic
+42	004A2ED6	showSpot
+43	004A304A	hideSpot
+44	004A30F5	linkSpot/linkEscape
+45	004A36C0	hideLink/hideEscape
+46	004A3984	spotmark/showSpotMark/hideSpotMark
+47	004A3BFE	image/face/picture/picture2
+48	004A41D6	face2
+49	004A4885	showImage/showFace/showPict
+50	004A4D57	hideImage
+51	004A4E4E	showChara
+52	004A51B5	hideChara
+53	004A523A	reverseChara
+54	004A529F	showPicture
+55	004A56A8	hidePicture
+56	004A56F7	doskill
+57	004A5AF1	reloadMenu
+58	004A5BA2	showPolitics
+59	004A5BF9	showCamp
+60	004A5C50	resetZone
+61	004A6323	
+62	004A5CC4	doGameEnding
+63	004A5CD3	setGameClear
+64	004A5CEF	exit
+65	004A6323	
+66	004A6323	
+67	004A6323	
+68	004A6323	
+69	004A6323	
+70	004A5E24	ppl1
+71	004A6323	
+72	004A6323	
+73	004A5C70	showDungeon
+74	004A5971	cutin
+75	004A1B72	vc
+76	004A5F53	gread
+77	004A60D1	gwrite
+78	004A1EEB	choiceTitle
+registry_count 57 opcode_count 57

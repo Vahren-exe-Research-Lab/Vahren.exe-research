@@ -304,118 +304,94 @@
 - [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 557](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L557-L557) — [CONFIRMED-SAVED-C DISPATCH] engine+0x1EEF60 dispatcher内 case (int *)0x23 に op35:addSkill/addSkill2 の保存C注記。第一引数から対象候補列を0x49C950で構築。各候補は実行context==2なら0x49E6B0→未解
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 
-- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 634](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L634-L634) — - 別のレジストリinitializer `0x4A6E40` はengine+0x1EEF60へ命令名/識別番号を挿入し、dispatcher `0x4A7AD9..0x4A7B2E`が同mapからopcodeを得て`0x00..0x33` switchへ分岐する。
-  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 4](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L4-L4) — engine+0x1EEF60	setLeague		0x4a6e45	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
-<a id="field-1eef70"></a>
-## engine + 0x1EEF70
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 5](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L5-L5) — engine+0x1EEF60	resetLeague		0x4a6e7b	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
-- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 20](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L20-L20) — 確定: script実行では通常command table engine+0x1EEF50に加えてengine+0x1EEF60（0x4A7AD9 numeric/data-operation family）とengine+0x1EEF70（0x4AE145 numeric/string-variable operat
-  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 6](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L6-L6) — engine+0x1EEF60	setTruce		0x4a6ea5	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
-- [research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md 行 915](../../research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md?plain=1#L915-L915) — - CONFIRMED-SAVED-REGISTRATION：engine+0x1EEF60のeraseSkill=36/removeSkill=37/setDone=39/changeSpotImage=40/changeMap=44と、別family engine+0x1EEF70のsetv=36/addv=37/
-  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 7](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L7-L7) — engine+0x1EEF60	resetTruce		0x4a6ed4	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
-- [research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md 行 829](../../research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md?plain=1#L829-L829) — [CONFIRMED-SAVED-REGISTRATION] A所有 exe/T006_SECONDARY_REGISTRY_INDEX.tsv（95行）のengine+0x1EEF60には eraseSkill=36, removeSkill=37, setDone=39, changeSpotImage=40, c
-  制約・訂正　Full authored historical composite; no substantive known held payload found; current REF/corrections priority; no native/runtime/Golden/READY/semantic promotion
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 8](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L8-L8) — engine+0x1EEF60	addDiplo		0x4a6efe	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
-- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 480](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L480-L480) — [CONFIRMED-MULTIFAMILY COLLISION] A既存exe/T006_SECONDARY_REGISTRY_INDEX.tsvのengine+0x1EEF70ではpushRand=decimal14（registration 0x4AD1F9）。さらにexe/T006_TROOP_REGISTRY
-  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 9](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L9-L9) — engine+0x1EEF60	setDiplo		0x4a6f2d	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
-- [research/recovered/remaining_md1/reports/data/T024_HAKUSHIN_BATTLE_AI.md 行 151](../../research/recovered/remaining_md1/reports/data/T024_HAKUSHIN_BATTLE_AI.md?plain=1#L151-L151) — - 既存§17–18ではa_r/a_l/a_c_kaimetsu全scriptで明示0 resetなし。レーンAのREADY引継ぎ `A-20261008-1405-02` は通常commandとは別のengine+0x1EEF70 registryで `set=op5/add=op6/pushRand=op14` を
-  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 10](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L10-L10) — engine+0x1EEF60	setEnemyPower		0x4a6f57	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
-- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 251](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L251-L251) — - 変数/list命令registry engine+0x1EEF70のdispatcher入口は0x4AE145、opcode取得/dispatchは0x4AE191 (table 0x4B37EC)。saved xrefではこのlarge handler領域の複数siteが numeric writer 0x463
-  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 11](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L11-L11) — engine+0x1EEF60	resetEnemyPower		0x4a6f85	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
-- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 635](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L635-L635) — - さらにinitializer `0x4ACF10` はengine+0x1EEF70を構築し、dispatcher `0x4AE145..0x4AE191`が同mapからopcodeを得て`0x00..0x53` switchへ分岐する。
-  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 12](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L12-L12) — engine+0x1EEF60	setArbeit		0x4a6fb3	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
-- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 677](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L677-L677) — [CONFIRMED-TARGET / saved initializer source] `exe/T031_REGISTRY_CONTEXT.txt` 004ACF10..004AD8FCの完了した`0x463280`登録を順番照合した結果、engine+0x1EEF70に少なくとも56件のname→opcode登
-  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 13](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L13-L13) — engine+0x1EEF60	addPower		0x4a6fe1	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
-<a id="field-1eef80"></a>
-## engine + 0x1EEF80
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 14](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L14-L14) — engine+0x1EEF60	erasePower		0x4a700f	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
-- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 51](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L51-L51) — 発見[CONFIRMED-TARGET]: builtin registryは従来判明の3系統だけでなく、troop/battle-command専用の4つ目engine+0x1EEF80を持つ。
-  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 15](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L15-L15) — engine+0x1EEF60	addSpot		0x4a703d	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
-- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 322](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L322-L322) — [CONFIRMED-SAVED-REGISTRY / A READ-ONLY] A所有`exe/T006_SECONDARY_REGISTRY_INDEX.tsv:43-44`は `addSkill` と `addSkill2` をengine+0x1EEF60 registryで登録（addSkill xref V
-  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 16](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L16-L16) — engine+0x1EEF60	removeSpot		0x4a706b	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
-- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 480](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L480-L480) — [CONFIRMED-MULTIFAMILY COLLISION] A既存exe/T006_SECONDARY_REGISTRY_INDEX.tsvのengine+0x1EEF70ではpushRand=decimal14（registration 0x4AD1F9）。さらにexe/T006_TROOP_REGISTRY
-  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 17](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L17-L17) — engine+0x1EEF60	addUnit		0x4a7099	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
-- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 85](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L85-L85) — - 通常command registry (+0x1EEF50)とは別に、battle-scene command registry が engine +0x1EEF80 に存在し、dispatcher VA 0x4B4710 が0x00..0x10をswitchする。
-  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 18](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L18-L18) — engine+0x1EEF60	eraseUnit		0x4a70c7	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
-- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 646](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L646-L646) — - 従前の「通常command +2 registry = 少なくとも3系列」は非網羅。さらに engine+0x1EEF80 の独立命令レジストリを確認。
-  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 19](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L19-L19) — engine+0x1EEF60	eraseUnitTroop		0x4a70f5	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
-<a id="field-1ef140"></a>
-## engine + 0x1EF140
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 20](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L20-L20) — engine+0x1EEF60	roamUnit		0x4a7123	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
-- [research/recovered/rea_batch11/reports/REA_20261019_0335_DEATH_TROOP_SEMANTIC_RESUME_DRIFT_QC.md 行 7](../../research/recovered/rea_batch11/reports/REA_20261019_0335_DEATH_TROOP_SEMANTIC_RESUME_DRIFT_QC.md?plain=1#L7-L7) — - [NEW POSTSELECTION MODE2] continue_semantic_troop_selection_uiは0x56852D→0x527ED0→0x568532と0x5685F8→0x527ED0→0x5685FDを区別し、後者では選択解除後にengine+0x1EF140を再読、mode==2時
-  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 21](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L21-L21) — engine+0x1EEF60	eraseUnit2		0x4a717c	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
-- [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 137](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L137-L137) — - `isWorld` opcode3 -> VA 0x44F59F: `engine+0x1EF140 == 1`
-  制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 22](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L22-L22) — engine+0x1EEF60	unionPower		0x4a71aa	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
-- [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 138](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L138-L138) — - `isMap/isEvent` opcode4 -> VA 0x44F5B0: `engine+0x1EF140 == 2`
-  制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 23](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L23-L23) — engine+0x1EEF60	changePowerName		0x4a71d8	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
-<a id="field-1ef148"></a>
-## engine + 0x1EF148
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 24](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L24-L24) — engine+0x1EEF60	changePowerFlag		0x4a7206	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
-- [research/recovered/b_batch3/T013_TROOP_RTTI_HALF_RATIO_GATE_V9_20261023_1708.md 行 11](../../research/recovered/b_batch3/T013_TROOP_RTTI_HALF_RATIO_GATE_V9_20261023_1708.md?plain=1#L11-L11) — Troop 0x0056AB20は+0x1Cが非zero、またはengine+0x1EF148が0なら周期更新へ進まない。通過時Troop+0x3Cを増加、`%100==0`の条件付き経路で0x0056ADC1/0x0056AE85→0x00569360を使用（他gateあり）。
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 25](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L25-L25) — engine+0x1EEF60	changePowerFix		0x4a7234	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
-- [research/recovered/b_batch9/data/T013_GROUP_SPACING_569360_CALLBACK_GATE_V3_20261023_1618.md 行 11](../../research/recovered/b_batch9/data/T013_GROUP_SPACING_569360_CALLBACK_GATE_V3_20261023_1618.md?plain=1#L11-L11) — 今回増分5: 0x0056AB20 は Group+0x3Cを増分後、%100==0 の条件付きブロックから2 CALLを評価する。外側の +0x1C と engine+0x1EF148 の条件があるので100tick無条件実行とはいえない。
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 26](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L26-L26) — engine+0x1EEF60	changeMaster		0x4a7262	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
-<a id="field-1ef175"></a>
-## engine + 0x1EF175
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 27](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L27-L27) — engine+0x1EEF60	changePlayer		0x4a7290	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 445](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L445-L445) — - 同じ switch で、id 7 isNewTurn は engine+0x1EF4C1 のバイト、id 8 isWorldMusicStop は (engine+0x1EF175 == 0) を返す。どちらもエンジンの状態なので未実装。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 28](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L28-L28) — engine+0x1EEF60	erasePowerMerce		0x4a72be	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
-<a id="field-1ef4b4"></a>
-## engine + 0x1EF4B4
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 29](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L29-L29) — engine+0x1EEF60	erasePowerStaff		0x4a72ec	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
-- [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 391](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L391-L391) — [CONFIRMED / NEW BRANCH] A保存 `exe/T031_PHASE_PREDICATE_HANDLERS.txt` 0x44F6A8..0x44F6DE。既知T031のisComTurn opcode12/engine+0x1EF4C4入口readerを精密化。入口は`cmp byte[esi+0
-  制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 30](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L30-L30) — engine+0x1EEF60	addPowerMerce2		0x4a7349	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
-- [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 398](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L398-L398) — [ADJACENT SAVED WINDOW / CAUTION] 別保存exe/T031_PHASE_STATE_RANGE.txt 0x44F6FD..0x44F717にはpush ecx/edx→EAXをthisに0x49C450→engine+0x1EF4B4の0x471DC0結果をEDXへ移しtestする命令
-  制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 31](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L31-L31) — engine+0x1EEF60	addPowerStaff2		0x4a73a2	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
-- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 254](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L254-L254) — - 近傍 `+0x1EF4B8..+0x1EF4C3` には +0x1EF4BD/+BF/+C0/+BC 等のbyte writerが存在するが、+BE writerは無い。さらに common base `engine+0x1EF4B4` を `lea/add` で作る33箇所について、その後の同register `
-  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 32](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L32-L32) — engine+0x1EEF60	setTraining		0x4a73fb	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
-<a id="field-1ef4be"></a>
-## engine + 0x1EF4BE
-
-- [research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md 行 1344](../../research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md?plain=1#L1344-L1344) — - [VERIFY/NOT OBSERVED] Yield後の同World frame継続/scene終了、後続画像・dialog・setupキュー・Done、engine+0x1EF4BE flag writer、合法turn1勝利の成立と旧EXE実効果は未確認。原作BUG認定0、旧原作Gameplay Golden
-  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
-
-- [research/recovered/other_reports/T025_GAMECLEAR_YIELD_AFTER_VICTORY_GATE_20261015.md 行 8](../../research/recovered/other_reports/T025_GAMECLEAR_YIELD_AFTER_VICTORY_GATE_20261015.md?plain=1#L8-L8) — [VERIFY / NOT OBSERVED] Yieldから同じWorld frameへいつ/そもそも復帰するか、scene transitionで停止/破棄されるか、ED固有の後段BGM/画像や観戦dialogの到達、firstsetupのenqueue/Done/reentry、GameClear flag en
-  制約・訂正　Historical authored static claims only; no new native/runtime validation; referenced evidence omitted; Golden/READY unchanged
-
-- [research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md 行 164](../../research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md?plain=1#L164-L164) — - `isGameClear` はcondition opcode 0で、evaluator case0 VA 0x44F530は `engine+0x1EF4BE` byteをboolとして返す。flag writer/transition timingはVERIFY継続。
-  制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
-
-- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 238](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L238-L238) — - condition registryでは `isGameClear` = condition opcode 0。evaluator VA 0x44F470 のcase0 VA 0x44F530は `engine+0x1EF4BE` のbyteをそのままbool結果として返す。flagのexact writer/tr
-  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
-
-- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 255](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L255-L255) — - 従って `setGameClear()` のshort helper直後に `engine+0x1EF4BE=1` を単純storeする実装はnative証拠が無い。writerはalias/helper/scene transition/serialized state更新のいずれかで、exact 0→1 tim
-  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
-
-<a id="field-1ef4c1"></a>
-## engine + 0x1EF4C1
-
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 445](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L445-L445) — - 同じ switch で、id 7 isNewTurn は engine+0x1EF4C1 のバイト、id 8 isWorldMusicStop は (engine+0x1EF175 == 0) を返す。どちらもエンジンの状態なので未実装。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
-
-- [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 139](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L139-L139) — - `isNewTurn` opcode7 -> VA 0x44F63C: byte `engine+0x1EF4C1`
-  制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
+- [research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv 行 33](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L33-L33) — engine+0x1EEF60	addTrainingUp		0x4a7425	REGISTRATION_XREF_ONLY
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

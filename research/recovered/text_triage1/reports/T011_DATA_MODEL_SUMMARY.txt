@@ -1,0 +1,1565 @@
+{
+  "record_count": 25275,
+  "summary": {
+    "unit": {
+      "count": 4586,
+      "inherit": 4281,
+      "unique_keys": 111,
+      "top_keys": [
+        [
+          "face",
+          2201
+        ],
+        [
+          "name",
+          1820
+        ],
+        [
+          "image",
+          1267
+        ],
+        [
+          "help",
+          997
+        ],
+        [
+          "dead_event",
+          840
+        ],
+        [
+          "level",
+          802
+        ],
+        [
+          "class",
+          721
+        ],
+        [
+          "member",
+          692
+        ],
+        [
+          "price",
+          606
+        ],
+        [
+          "hp",
+          553
+        ],
+        [
+          "skill",
+          538
+        ],
+        [
+          "skill2",
+          516
+        ],
+        [
+          "dead",
+          466
+        ],
+        [
+          "voice_type",
+          460
+        ],
+        [
+          "race",
+          438
+        ],
+        [
+          "friend",
+          436
+        ],
+        [
+          "sex",
+          422
+        ],
+        [
+          "staff",
+          391
+        ],
+        [
+          "join",
+          389
+        ],
+        [
+          "delskill",
+          357
+        ]
+      ],
+      "variant_keys": [
+        [
+          "price",
+          262
+        ],
+        [
+          "member",
+          207
+        ],
+        [
+          "level",
+          160
+        ],
+        [
+          "home",
+          26
+        ],
+        [
+          "enable",
+          10
+        ],
+        [
+          "dead_event",
+          10
+        ],
+        [
+          "enemy",
+          7
+        ],
+        [
+          "finance",
+          7
+        ],
+        [
+          "fix",
+          6
+        ],
+        [
+          "enable_select",
+          2
+        ],
+        [
+          "picture",
+          2
+        ],
+        [
+          "merce",
+          2
+        ],
+        [
+          "friend",
+          1
+        ]
+      ],
+      "explicit_null": [
+        [
+          "member",
+          267
+        ],
+        [
+          "skill2",
+          207
+        ],
+        [
+          "help",
+          132
+        ],
+        [
+          "learn",
+          97
+        ],
+        [
+          "skill",
+          86
+        ],
+        [
+          "leader_skill",
+          75
+        ],
+        [
+          "voice_type",
+          73
+        ],
+        [
+          "price",
+          60
+        ],
+        [
+          "break",
+          59
+        ],
+        [
+          "dead_event",
+          58
+        ],
+        [
+          "face",
+          47
+        ],
+        [
+          "loyal",
+          39
+        ],
+        [
+          "delskill",
+          27
+        ],
+        [
+          "power_name",
+          25
+        ],
+        [
+          "join",
+          22
+        ],
+        [
+          "value",
+          20
+        ],
+        [
+          "radius",
+          19
+        ],
+        [
+          "no_escape",
+          19
+        ],
+        [
+          "exp",
+          19
+        ],
+        [
+          "dead",
+          18
+        ]
+      ],
+      "duplicate_extra": [
+        [
+          "price",
+          199
+        ],
+        [
+          "level",
+          163
+        ],
+        [
+          "member",
+          147
+        ],
+        [
+          "dead_event",
+          10
+        ],
+        [
+          "enemy",
+          6
+        ],
+        [
+          "finance",
+          5
+        ],
+        [
+          "escape_range",
+          5
+        ],
+        [
+          "race",
+          4
+        ],
+        [
+          "face",
+          4
+        ],
+        [
+          "brave",
+          3
+        ],
+        [
+          "learn",
+          3
+        ],
+        [
+          "radius",
+          3
+        ],
+        [
+          "line",
+          2
+        ],
+        [
+          "no_knock",
+          2
+        ],
+        [
+          "merce",
+          2
+        ],
+        [
+          "enable_select",
+          1
+        ],
+        [
+          "magic",
+          1
+        ],
+        [
+          "delskill",
+          1
+        ],
+        [
+          "fix",
+          1
+        ],
+        [
+          "picture",
+          1
+        ]
+      ]
+    },
+    "skill": {
+      "count": 16554,
+      "inherit": 13049,
+      "unique_keys": 169,
+      "top_keys": [
+        [
+          "w",
+          5290
+        ],
+        [
+          "h",
+          5192
+        ],
+        [
+          "next3",
+          4784
+        ],
+        [
+          "image",
+          4775
+        ],
+        [
+          "time",
+          4051
+        ],
+        [
+          "a",
+          3978
+        ],
+        [
+          "range",
+          3697
+        ],
+        [
+          "color",
+          3211
+        ],
+        [
+          "damage",
+          3198
+        ],
+        [
+          "speed",
+          2945
+        ],
+        [
+          "rush",
+          2877
+        ],
+        [
+          "attr",
+          2863
+        ],
+        [
+          "str",
+          2773
+        ],
+        [
+          "d360",
+          2732
+        ],
+        [
+          "next",
+          2593
+        ],
+        [
+          "joint_skill",
+          2591
+        ],
+        [
+          "resize_a",
+          2502
+        ],
+        [
+          "icon",
+          2348
+        ],
+        [
+          "resize_interval",
+          2290
+        ],
+        [
+          "help",
+          2227
+        ]
+      ],
+      "variant_keys": [
+        [
+          "msg",
+          1567
+        ],
+        [
+          "picture",
+          143
+        ]
+      ],
+      "explicit_null": [
+        [
+          "image",
+          503
+        ],
+        [
+          "sound",
+          396
+        ],
+        [
+          "next",
+          336
+        ],
+        [
+          "attr",
+          283
+        ],
+        [
+          "next3",
+          263
+        ],
+        [
+          "rush",
+          256
+        ],
+        [
+          "str",
+          221
+        ],
+        [
+          "anime",
+          174
+        ],
+        [
+          "knock",
+          166
+        ],
+        [
+          "knock_speed",
+          164
+        ],
+        [
+          "knock_power",
+          164
+        ],
+        [
+          "anime_interval",
+          159
+        ],
+        [
+          "a",
+          142
+        ],
+        [
+          "next_first",
+          114
+        ],
+        [
+          "pair_next",
+          95
+        ],
+        [
+          "rush_interval",
+          77
+        ],
+        [
+          "bright",
+          71
+        ],
+        [
+          "color",
+          68
+        ],
+        [
+          "just_next",
+          51
+        ],
+        [
+          "add",
+          51
+        ]
+      ],
+      "duplicate_extra": [
+        [
+          "msg",
+          1169
+        ],
+        [
+          "picture",
+          84
+        ],
+        [
+          "wait_time",
+          62
+        ],
+        [
+          "d360",
+          27
+        ],
+        [
+          "sortkey",
+          18
+        ],
+        [
+          "range",
+          17
+        ],
+        [
+          "direct",
+          14
+        ],
+        [
+          "attr",
+          12
+        ],
+        [
+          "center",
+          12
+        ],
+        [
+          "resize_a",
+          12
+        ],
+        [
+          "next3",
+          11
+        ],
+        [
+          "color",
+          11
+        ],
+        [
+          "exp_per",
+          10
+        ],
+        [
+          "time",
+          10
+        ],
+        [
+          "start_degree_type",
+          9
+        ],
+        [
+          "speed",
+          9
+        ],
+        [
+          "slow_per",
+          8
+        ],
+        [
+          "shake",
+          8
+        ],
+        [
+          "far",
+          6
+        ],
+        [
+          "sound",
+          6
+        ]
+      ]
+    },
+    "class": {
+      "count": 4080,
+      "inherit": 3256,
+      "unique_keys": 96,
+      "top_keys": [
+        [
+          "name",
+          2279
+        ],
+        [
+          "merce",
+          1875
+        ],
+        [
+          "fkey",
+          1575
+        ],
+        [
+          "change",
+          1571
+        ],
+        [
+          "skill",
+          1362
+        ],
+        [
+          "member",
+          1293
+        ],
+        [
+          "image",
+          1228
+        ],
+        [
+          "skill2",
+          1116
+        ],
+        [
+          "same_friend",
+          1051
+        ],
+        [
+          "same_call",
+          1042
+        ],
+        [
+          "unique",
+          1038
+        ],
+        [
+          "level",
+          802
+        ],
+        [
+          "price",
+          772
+        ],
+        [
+          "summon_max",
+          658
+        ],
+        [
+          "element_lost",
+          587
+        ],
+        [
+          "exp_mul",
+          491
+        ],
+        [
+          "hp",
+          367
+        ],
+        [
+          "consti",
+          337
+        ],
+        [
+          "move",
+          334
+        ],
+        [
+          "magic",
+          320
+        ]
+      ],
+      "variant_keys": [
+        [
+          "member",
+          8
+        ]
+      ],
+      "explicit_null": [
+        [
+          "change",
+          396
+        ],
+        [
+          "skill2",
+          153
+        ],
+        [
+          "merce",
+          134
+        ],
+        [
+          "skill",
+          101
+        ],
+        [
+          "member",
+          62
+        ],
+        [
+          "learn",
+          58
+        ],
+        [
+          "break",
+          40
+        ],
+        [
+          "sex",
+          14
+        ],
+        [
+          "staff",
+          10
+        ],
+        [
+          "name",
+          9
+        ],
+        [
+          "movetype",
+          8
+        ],
+        [
+          "scream",
+          6
+        ],
+        [
+          "friend",
+          6
+        ],
+        [
+          "no_regular",
+          6
+        ],
+        [
+          "exp_mul",
+          6
+        ],
+        [
+          "no_escape",
+          6
+        ],
+        [
+          "summon_max",
+          3
+        ],
+        [
+          "race",
+          3
+        ],
+        [
+          "image",
+          3
+        ],
+        [
+          "no_knock",
+          2
+        ]
+      ],
+      "duplicate_extra": [
+        [
+          "merce",
+          7
+        ],
+        [
+          "skill2",
+          2
+        ],
+        [
+          "price",
+          2
+        ],
+        [
+          "line",
+          2
+        ],
+        [
+          "radius_press",
+          2
+        ],
+        [
+          "radius",
+          2
+        ],
+        [
+          "member",
+          1
+        ],
+        [
+          "change",
+          1
+        ],
+        [
+          "no_knock",
+          1
+        ],
+        [
+          "break",
+          1
+        ],
+        [
+          "hasexp",
+          1
+        ],
+        [
+          "yorozu",
+          1
+        ],
+        [
+          "skill",
+          1
+        ],
+        [
+          "exp_mul",
+          1
+        ]
+      ]
+    },
+    "attribute": {
+      "count": 1,
+      "inherit": 0,
+      "unique_keys": 66,
+      "top_keys": [
+        [
+          "sw",
+          1
+        ],
+        [
+          "pl",
+          1
+        ],
+        [
+          "ch",
+          1
+        ],
+        [
+          "ar",
+          1
+        ],
+        [
+          "gn",
+          1
+        ],
+        [
+          "cn",
+          1
+        ],
+        [
+          "fire",
+          1
+        ],
+        [
+          "wate",
+          1
+        ],
+        [
+          "wind",
+          1
+        ],
+        [
+          "eart",
+          1
+        ],
+        [
+          "thun",
+          1
+        ],
+        [
+          "ligh",
+          1
+        ],
+        [
+          "dark",
+          1
+        ],
+        [
+          "mgc",
+          1
+        ],
+        [
+          "drain",
+          1
+        ],
+        [
+          "at_atomic0",
+          1
+        ],
+        [
+          "at_udk0",
+          1
+        ],
+        [
+          "at_udk1",
+          1
+        ],
+        [
+          "at_udk2",
+          1
+        ],
+        [
+          "at_knn0",
+          1
+        ]
+      ],
+      "variant_keys": [],
+      "explicit_null": [],
+      "duplicate_extra": []
+    },
+    "movetype": {
+      "count": 33,
+      "inherit": 0,
+      "unique_keys": 3,
+      "top_keys": [
+        [
+          "name",
+          33
+        ],
+        [
+          "help",
+          33
+        ],
+        [
+          "consti",
+          33
+        ]
+      ],
+      "variant_keys": [],
+      "explicit_null": [],
+      "duplicate_extra": []
+    },
+    "race": {
+      "count": 21,
+      "inherit": 20,
+      "unique_keys": 5,
+      "top_keys": [
+        [
+          "consti",
+          21
+        ],
+        [
+          "name",
+          16
+        ],
+        [
+          "align",
+          16
+        ],
+        [
+          "brave",
+          16
+        ],
+        [
+          "movetype",
+          16
+        ]
+      ],
+      "variant_keys": [],
+      "explicit_null": [
+        [
+          "name",
+          1
+        ]
+      ],
+      "duplicate_extra": []
+    }
+  },
+  "inheritance_validation": {
+    "unit": {
+      "missing_parent": [
+        {
+          "child": "amhsich",
+          "parent": "amhsi4",
+          "file": "10_ユニット\\B_2222_レイノアレフ.dat",
+          "line": 276
+        },
+        {
+          "child": "baddrskr",
+          "parent": "drskr",
+          "file": "11_表情差分\\F差分_22_玉兎賊.dat",
+          "line": 142
+        },
+        {
+          "child": "ippanriri",
+          "parent": "a230",
+          "file": "11_表情差分\\F差分_23_リュージ騎士団.dat",
+          "line": 2
+        },
+        {
+          "child": "denreiriri",
+          "parent": "a230",
+          "file": "11_表情差分\\F差分_23_リュージ騎士団.dat",
+          "line": 11
+        },
+        {
+          "child": "atud_af",
+          "parent": "atud",
+          "file": "11_表情差分\\F差分_25_オーバック.dat",
+          "line": 10
+        },
+        {
+          "child": "atud_bf",
+          "parent": "atud",
+          "file": "11_表情差分\\F差分_25_オーバック.dat",
+          "line": 16
+        },
+        {
+          "child": "atud_cf",
+          "parent": "atud",
+          "file": "11_表情差分\\F差分_25_オーバック.dat",
+          "line": 22
+        },
+        {
+          "child": "snjtng1",
+          "parent": "a0703",
+          "file": "20_クラス\\1919_その他.dat",
+          "line": 615
+        },
+        {
+          "child": "snjtng2",
+          "parent": "a0703",
+          "file": "20_クラス\\1919_その他.dat",
+          "line": 624
+        },
+        {
+          "child": "snjhhi",
+          "parent": "a0003",
+          "file": "20_クラス\\1919_その他.dat",
+          "line": 633
+        },
+        {
+          "child": "snjym1",
+          "parent": "a00b3",
+          "file": "20_クラス\\1919_その他.dat",
+          "line": 642
+        },
+        {
+          "child": "snjym2",
+          "parent": "a00b3",
+          "file": "20_クラス\\1919_その他.dat",
+          "line": 651
+        },
+        {
+          "child": "snjasi",
+          "parent": "a0093",
+          "file": "20_クラス\\1919_その他.dat",
+          "line": 660
+        },
+        {
+          "child": "snjsmn",
+          "parent": "a00a3",
+          "file": "20_クラス\\1919_その他.dat",
+          "line": 669
+        },
+        {
+          "child": "snjtng11",
+          "parent": "a070",
+          "file": "20_クラス\\1919_その他.dat",
+          "line": 679
+        },
+        {
+          "child": "snjtng22",
+          "parent": "a070",
+          "file": "20_クラス\\1919_その他.dat",
+          "line": 687
+        },
+        {
+          "child": "snjhhi2",
+          "parent": "a000",
+          "file": "20_クラス\\1919_その他.dat",
+          "line": 695
+        },
+        {
+          "child": "snjym11",
+          "parent": "a00b",
+          "file": "20_クラス\\1919_その他.dat",
+          "line": 703
+        },
+        {
+          "child": "snjym22",
+          "parent": "a00b",
+          "file": "20_クラス\\1919_その他.dat",
+          "line": 711
+        },
+        {
+          "child": "snjasi2",
+          "parent": "a009",
+          "file": "20_クラス\\1919_その他.dat",
+          "line": 719
+        },
+        {
+          "child": "snjsmn2",
+          "parent": "a00a",
+          "file": "20_クラス\\1919_その他.dat",
+          "line": 727
+        },
+        {
+          "child": "snjhhi22",
+          "parent": "a000",
+          "file": "20_クラス\\1919_その他.dat",
+          "line": 735
+        },
+        {
+          "child": "snjym111",
+          "parent": "a00b",
+          "file": "20_クラス\\1919_その他.dat",
+          "line": 743
+        },
+        {
+          "child": "snjym222",
+          "parent": "a00b",
+          "file": "20_クラス\\1919_その他.dat",
+          "line": 751
+        },
+        {
+          "child": "snjasi22",
+          "parent": "a009",
+          "file": "20_クラス\\1919_その他.dat",
+          "line": 759
+        },
+        {
+          "child": "snjsmn22",
+          "parent": "a00a",
+          "file": "20_クラス\\1919_その他.dat",
+          "line": 767
+        },
+        {
+          "child": "unit_aow_100_ene_w3_3",
+          "parent": "unit_aow_100_ene_w1_2",
+          "file": "4000_AoW\\unit_aow_100.dat",
+          "line": 191
+        },
+        {
+          "child": "tiger_264a",
+          "parent": "tiger3",
+          "file": "4000_AoW\\unit_aow_264.dat",
+          "line": 663
+        },
+        {
+          "child": "sss101264_264",
+          "parent": "ss101264",
+          "file": "4000_AoW\\unit_aow_264.dat",
+          "line": 745
+        },
+        {
+          "child": "sss103264_264",
+          "parent": "ss103264",
+          "file": "4000_AoW\\unit_aow_264.dat",
+          "line": 754
+        },
+        {
+          "child": "head",
+          "parent": "a004",
+          "file": "50_その他新システム\\headquarters.dat",
+          "line": 71
+        },
+        {
+          "child": "kobune1",
+          "parent": "a005",
+          "file": "50_その他新システム\\ship.dat",
+          "line": 16
+        },
+        {
+          "child": "rtsplayer1",
+          "parent": "rtsplayer1c",
+          "file": "8000_RTSシナリオ\\RTSbuilding.dat",
+          "line": 109
+        },
+        {
+          "child": "rtsplayer2",
+          "parent": "rtsplayer2c",
+          "file": "8000_RTSシナリオ\\RTSbuilding.dat",
+          "line": 113
+        },
+        {
+          "child": "rtsplayer3",
+          "parent": "rtsplayer3c",
+          "file": "8000_RTSシナリオ\\RTSbuilding.dat",
+          "line": 117
+        },
+        {
+          "child": "rtsplayer4",
+          "parent": "rtsplayer2c",
+          "file": "8000_RTSシナリオ\\RTSbuilding.dat",
+          "line": 121
+        }
+      ],
+      "cycles": [],
+      "max_chain_edges": 6,
+      "max_chain_example": [
+        "inmukun003_pwpk",
+        "inmukun003",
+        "inmukun001",
+        "inmukun000",
+        "inmukun",
+        "base1",
+        "base"
+      ]
+    },
+    "skill": {
+      "missing_parent": [
+        {
+          "child": "summon_togashi_0",
+          "parent": "summon_togashi_base",
+          "file": "10_ユニット\\110_イベント人材.dat",
+          "line": 1945
+        },
+        {
+          "child": "giant_swing_counta00",
+          "parent": "giant_swing_countaxx_base",
+          "file": "116_仮設ランダムイベント61-70\\skill_giant_swing_chain.dat",
+          "line": 3
+        },
+        {
+          "child": "giant_swing_countb00",
+          "parent": "giant_swing_countbxx_base",
+          "file": "116_仮設ランダムイベント61-70\\skill_giant_swing_chain.dat",
+          "line": 8
+        },
+        {
+          "child": "giant_swing_counta01",
+          "parent": "giant_swing_countaxx_base",
+          "file": "116_仮設ランダムイベント61-70\\skill_giant_swing_chain.dat",
+          "line": 13
+        },
+        {
+          "child": "giant_swing_countb01",
+          "parent": "giant_swing_countbxx_base",
+          "file": "116_仮設ランダムイベント61-70\\skill_giant_swing_chain.dat",
+          "line": 18
+        },
+        {
+          "child": "giant_swing_counta02",
+          "parent": "giant_swing_countaxx_base",
+          "file": "116_仮設ランダムイベント61-70\\skill_giant_swing_chain.dat",
+          "line": 23
+        },
+        {
+          "child": "giant_swing_countb02",
+          "parent": "giant_swing_countbxx_base",
+          "file": "116_仮設ランダムイベント61-70\\skill_giant_swing_chain.dat",
+          "line": 28
+        },
+        {
+          "child": "giant_swing_counta03",
+          "parent": "giant_swing_countaxx_base",
+          "file": "116_仮設ランダムイベント61-70\\skill_giant_swing_chain.dat",
+          "line": 34
+        },
+        {
+          "child": "giant_swing_countb03",
+          "parent": "giant_swing_countbxx_base",
+          "file": "116_仮設ランダムイベント61-70\\skill_giant_swing_chain.dat",
+          "line": 39
+        },
+        {
+          "child": "giant_swing_countafix",
+          "parent": "giant_swing_countbxx_base",
+          "file": "116_仮設ランダムイベント61-70\\skill_giant_swing_chain.dat",
+          "line": 47
+        },
+        {
+          "child": "giant_swing_countbfix",
+          "parent": "giant_swing_countbxx_base",
+          "file": "116_仮設ランダムイベント61-70\\skill_giant_swing_chain.dat",
+          "line": 52
+        },
+        {
+          "child": "stove_fire_wave_mag",
+          "parent": "stove_fire_at",
+          "file": "116_仮設ランダムイベント61-70\\skill_stove.dat",
+          "line": 747
+        },
+        {
+          "child": "m_mrandom_nt1_2",
+          "parent": "m_ligh_js",
+          "file": "30_スキル\\F10_missile.dat",
+          "line": 4539
+        },
+        {
+          "child": "watecannon_pr3",
+          "parent": "watecannon_pr1",
+          "file": "30_スキル\\F10_missile_砲撃リニューアル.dat",
+          "line": 767
+        },
+        {
+          "child": "rmla_ch_old_yari_pr",
+          "parent": "rmla_yari_pr",
+          "file": "30_スキル\\F12_charge.dat",
+          "line": 1300
+        },
+        {
+          "child": "ss_rmla_ch_old_yari_pr",
+          "parent": "ss_rmla_yari_pr",
+          "file": "30_スキル\\F12_charge.dat",
+          "line": 2074
+        },
+        {
+          "child": "heal_clown_mprec",
+          "parent": "sing_mprec",
+          "file": "30_スキル\\F13_heal_support.dat",
+          "line": 1398
+        },
+        {
+          "child": "syokubumper_arm_nt1",
+          "parent": "sk_ns",
+          "file": "30_スキル\\F20_summon.dat",
+          "line": 15055
+        },
+        {
+          "child": "shakespeare_fire_wave_mag",
+          "parent": "shakespeare_fire_at",
+          "file": "30_スキル\\F51_榴弾・延焼_プレッツヒェン.dat",
+          "line": 433
+        },
+        {
+          "child": "aqua_times_pr3",
+          "parent": "aqua_times_pr1",
+          "file": "31_ユニットスキル\\U_1_5_マリナーズ～革命企画.dat",
+          "line": 2418
+        },
+        {
+          "child": "m_magickbs_nt1_2",
+          "parent": "m_ligh_js",
+          "file": "31_ユニットスキル\\U_26_30_原理～イースター.dat",
+          "line": 1650
+        },
+        {
+          "child": "sp_tusk_act1_kn",
+          "parent": "tusk_gun_kn",
+          "file": "31_ユニットスキル\\U_必殺_21_25_材料屋～二軍.dat",
+          "line": 2292
+        },
+        {
+          "child": "watecannon_w_pr3",
+          "parent": "watecannon_w_pr1",
+          "file": "32_ボススキル\\B_2222_レイノアレフ.dat",
+          "line": 514
+        },
+        {
+          "child": "sp_gogogo",
+          "parent": "sp_nannkasugoino",
+          "file": "32_ボススキル\\B_505_閉店の日.dat",
+          "line": 369
+        },
+        {
+          "child": "astk_kirakira_pr2",
+          "parent": "astk_kirakira_pr",
+          "file": "32_ボススキル\\B_5151_古代アステカ王国.dat",
+          "line": 1925
+        },
+        {
+          "child": "astk_kirakira_pr3",
+          "parent": "astk_kirakira_pr",
+          "file": "32_ボススキル\\B_5151_古代アステカ王国.dat",
+          "line": 1930
+        },
+        {
+          "child": "asasin_cream_weapon_glove_mag",
+          "parent": "asasin_cream_weapon_grove_base",
+          "file": "33_仮設アサシン\\skill_asasin_cream_weapon_glove.dat",
+          "line": 145
+        },
+        {
+          "child": "hanzo_cream_weapon_glove_mag",
+          "parent": "hanzo_cream_weapon_grove_base",
+          "file": "35_仮設半造\\skill_hanzo_cream_weapon_glove.dat",
+          "line": 154
+        },
+        {
+          "child": "s_defbarboat_nt2",
+          "parent": "s_defbar_nt2",
+          "file": "45_内政_防衛兵器\\siege_skill.dat",
+          "line": 3146
+        },
+        {
+          "child": "s_defbarboat_nt3",
+          "parent": "s_defbar_nt3",
+          "file": "45_内政_防衛兵器\\siege_skill.dat",
+          "line": 3160
+        },
+        {
+          "child": "demo1_range2",
+          "parent": "demo_range1",
+          "file": "50_その他新システム\\siki.dat",
+          "line": 153
+        },
+        {
+          "child": "testskill",
+          "parent": "sp_nannkasugoino",
+          "file": "6000_スキルテスト\\skill_00_test.dat",
+          "line": 1
+        },
+        {
+          "child": "hqreireteicpu",
+          "parent": "hqreifretei",
+          "file": "8000_RTSシナリオ\\RTSenemybuild.dat",
+          "line": 342
+        },
+        {
+          "child": "re_cannon_rts_nt1",
+          "parent": "re_cannon_nt1",
+          "file": "8000_RTSシナリオ\\RTSskill.dat",
+          "line": 545
+        },
+        {
+          "child": "re_cannon_rts_nt3",
+          "parent": "re_cannon_nt3",
+          "file": "8000_RTSシナリオ\\RTSskill.dat",
+          "line": 551
+        },
+        {
+          "child": "rtstocsamsp3_hub",
+          "parent": "rtstocsamsp5",
+          "file": "8000_RTSシナリオ\\RTSsummon.dat",
+          "line": 637
+        },
+        {
+          "child": "rtstocsam_mugen_nt",
+          "parent": "rtstocsam",
+          "file": "8000_RTSシナリオ\\RTSsummon.dat",
+          "line": 653
+        }
+      ],
+      "cycles": [],
+      "max_chain_edges": 5,
+      "max_chain_example": [
+        "harimiko_gun_ex_nt2b",
+        "harimiko_gun_ex_nt2",
+        "harimiko_gun_nt2",
+        "b_gun_nt2",
+        "b_gun_nt1",
+        "sk_ms"
+      ]
+    },
+    "class": {
+      "missing_parent": [
+        {
+          "child": "c_honsha",
+          "parent": "a159",
+          "file": "10_ユニット\\110_イベント人材.dat",
+          "line": 221
+        },
+        {
+          "child": "c_honsha2",
+          "parent": "a1592",
+          "file": "10_ユニット\\110_イベント人材.dat",
+          "line": 232
+        },
+        {
+          "child": "c_honsha3",
+          "parent": "a1593",
+          "file": "10_ユニット\\110_イベント人材.dat",
+          "line": 243
+        },
+        {
+          "child": "c_5goisgod2",
+          "parent": "a5002",
+          "file": "10_ユニット\\B_11_閉店の日.dat",
+          "line": 84
+        },
+        {
+          "child": "c_boss_alc2",
+          "parent": "a5002",
+          "file": "10_ユニット\\B_1_クレイジーサイコレズ.dat",
+          "line": 85
+        },
+        {
+          "child": "c_chuboss_alc2",
+          "parent": "a5002",
+          "file": "10_ユニット\\B_1_クレイジーサイコレズ.dat",
+          "line": 334
+        },
+        {
+          "child": "c_boss_toono2",
+          "parent": "a8102",
+          "file": "10_ユニット\\B_2_クレイジーサイコホモ.dat",
+          "line": 84
+        },
+        {
+          "child": "c_chuboss_toono2",
+          "parent": "a8102",
+          "file": "10_ユニット\\B_2_クレイジーサイコホモ.dat",
+          "line": 193
+        },
+        {
+          "child": "c_goisgod2",
+          "parent": "a5002",
+          "file": "10_ユニット\\B_50_神の国.dat",
+          "line": 82
+        },
+        {
+          "child": "c_ncncbase",
+          "parent": "base1",
+          "file": "10_ユニット\\B_525_神聖UNEI帝国.dat",
+          "line": 73
+        },
+        {
+          "child": "c_ncncbase2",
+          "parent": "base1",
+          "file": "10_ユニット\\B_525_神聖UNEI帝国.dat",
+          "line": 176
+        },
+        {
+          "child": "c_jirachi2",
+          "parent": "a5002",
+          "file": "10_ユニット\\B_5_土屋稲荷大社.dat",
+          "line": 82
+        },
+        {
+          "child": "c_kankure_po52",
+          "parent": "a5002",
+          "file": "10_ユニット\\B_5_土屋稲荷大社.dat",
+          "line": 192
+        },
+        {
+          "child": "harpoon2rts",
+          "parent": "harpoon2",
+          "file": "8000_RTSシナリオ\\RTSclass.dat",
+          "line": 72
+        },
+        {
+          "child": "sichosharts",
+          "parent": "sichosha",
+          "file": "8000_RTSシナリオ\\RTSclass.dat",
+          "line": 99
+        },
+        {
+          "child": "sichosha2rts",
+          "parent": "sichosha2",
+          "file": "8000_RTSシナリオ\\RTSclass.dat",
+          "line": 104
+        },
+        {
+          "child": "sichosha3rts",
+          "parent": "sichosha3",
+          "file": "8000_RTSシナリオ\\RTSclass.dat",
+          "line": 109
+        },
+        {
+          "child": "sichosha4rts",
+          "parent": "sichosha4",
+          "file": "8000_RTSシナリオ\\RTSclass.dat",
+          "line": 114
+        }
+      ],
+      "cycles": [],
+      "max_chain_edges": 6,
+      "max_chain_example": [
+        "ss101264",
+        "self_ss1013",
+        "ss1013",
+        "ss101",
+        "a101",
+        "base",
+        "base_kn"
+      ]
+    },
+    "attribute": {
+      "missing_parent": [],
+      "cycles": [],
+      "max_chain_edges": 0,
+      "max_chain_example": []
+    },
+    "movetype": {
+      "missing_parent": [],
+      "cycles": [],
+      "max_chain_edges": 0,
+      "max_chain_example": []
+    },
+    "race": {
+      "missing_parent": [],
+      "cycles": [],
+      "max_chain_edges": 2,
+      "max_chain_example": [
+        "r0_hm_build",
+        "r0_hm",
+        "hm"
+      ]
+    }
+  }
+}

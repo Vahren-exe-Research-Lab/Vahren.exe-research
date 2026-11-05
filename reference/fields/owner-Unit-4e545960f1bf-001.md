@@ -118,6 +118,12 @@
 - [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 305](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L305-L305) — - 別helper 0x571B70..0x571CC7の先頭sampleでは、[battle Unit+0x1C8]の元Unitに対する0x584970呼出、0x585AD0の返値参照、battle Unit+0x40/+0x44/+0x48/+0x4Cの位置・大きさ様の値の補正が見える。しかし後半未取得なので+0x
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 
+- [research/recovered/structured_tables1/reports/data/T024_KB_CURATION_SOURCE_MAP_20261101_19H.tsv 行 5](../../research/recovered/structured_tables1/reports/data/T024_KB_CURATION_SOURCE_MAP_20261101_19H.tsv?plain=1#L5-L5) — B-OFFLINE-20261101-13H-T011-T024-DISTANCE-SORT-MODE-GATE-01	T011,T024	0x529DC0;0x52AD00;0x526030	0x5296A8->0x529DC0;0x529868->0x529DC0;0x52AD35->0x526030	Unit+0
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption
+
+- [research/recovered/structured_tables1/reports/data/T024_KB_CURATION_SOURCE_MAP_20261101_19H.tsv 行 8](../../research/recovered/structured_tables1/reports/data/T024_KB_CURATION_SOURCE_MAP_20261101_19H.tsv?plain=1#L8-L8) — B-OFFLINE-20261101-16H-T011-T024-MIDPOINT-SAR-ROUNDING-OVERFLOW-01	T011,T024	0x526030	0x52607D;0x52607F;0x526081	Unit+0x40/48	signed SAR midpoint floor semantic
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption
+
 <a id="field-48"></a>
 ## Unit + 0x48
 
@@ -345,11 +351,5 @@
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1014](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1014-L1014) — \| 0x575110 ゲート \| Unit+0x8C≠0→即return（0x576660なし）。+0x1D0==0 または +0x18614≠0 → ループなしで 0x576660(1)。終了時 +0x186C0/C4/C8/CC=0x80000008, +0x186BC=0 \| CONFIRMED \|
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
-
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1084](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1084-L1084) — \| 直後のLvUp \| Unit+0x8C≠0（SimpleUnit/SimpleStaticUnit）かつ exp≥next の時だけ 0x58A650＋"t_levelup"/"levelup" \| CONFIRMED \|
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
-
-- [research/recovered/knowledge_history1/reports/knowledge/REF_BATTLE_AI_MORALE.md 行 93](../../research/recovered/knowledge_history1/reports/knowledge/REF_BATTLE_AI_MORALE.md?plain=1#L93-L93) — - In the `0x577A20` callee the native gates inspect `Unit+0x8C/+0x1F8/+0x1F9` and branch on dispatch kind 8. This confirms a **static per-Unit kind-8 call contr
-  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

@@ -1,5 +1,7 @@
 # 回収した研究本文
 
+[構造化表・旧文字形式の22本文とメモリ検索](intake_structured_20261105/README.md)：3処理位置と既存waitを出典へ接続し、旧opcode表の相違を明示した。UTF16の3原本は内容を変えずUTF8完全版へ移し、raw native/probe 2件は本文未保存とした。
+
 [未コミット文書・GitHub・研究チャットの16本文と接続](intake_open_sources_20261105/README.md)：1関数の限定採録、[起動障害の研究案内](../../REF_STARTUP_LOADING.md)、14元Library報告と4回収集約の違い、未取得範囲を整理した。
 
 [従来一覧外の135出典・127本文と6関数の採録](intake_outside_map_20261105/README.md)：[139候補の対応表](intake_outside_map_20261105/CURRENT_DISPOSITIONS.tsv)で受入・重複・保留・対象外を確認できる。原文書・作業コピーの削除はまだ行わない。

@@ -406,6 +406,41 @@ class ReferenceTests(unittest.TestCase):
         self.assertEqual([row["owner_text"] for row in data["field_mentions"]], ["Unit", "engine"])
         self.assertEqual(report.read_bytes(), payload)
 
+    def test_non_markdown_memory_lookup_preserves_literal_source_and_limits(self):
+        report, ledger = self.add_recovery_ledger()
+        bodies = {
+            "txt": "header\r\nengine+0x1EEF60 eax+0x20\r\n",
+            "tsv": "owner\tcommand\r\nengine+0x1EEF60\tsetLeague\r\n",
+            "csv": "owner,command\r\nengine+0x1EEF60,setLeague\r\n",
+            "json": '{\r\n"owner":"engine+0x1EEF60", "register":"eax+0x20"\r\n}\r\n',
+            "jsonl": '{"header":true}\r\n{"owner":"engine+0x1EEF60"}\r\n',
+            "py": '# source only\r\nlabel = "engine+0x1EEF60"; raise AssertionError("never execute")\r\n',
+        }
+        entries = ["destination\tdestination_sha256\tlimitations\n"]
+        expected = {}
+        for suffix, body in bodies.items():
+            path = report.with_suffix("." + suffix)
+            payload = body.encode("utf-8")
+            path.write_bytes(payload)
+            digest = hashlib.sha256(payload).hexdigest()
+            relative = path.relative_to(self.root).as_posix()
+            entries.append(f"{relative}\t{digest}\tLocal spelling only; type and writes unproved\n")
+            expected[relative] = (digest, payload)
+        ledger.write_text("".join(entries), encoding="utf-8")
+        data = reference.load(self.root)
+        hits = reference.search(data, "engine+0x1EEF60")
+        self.assertEqual(len(hits), len(bodies))
+        for hit in hits:
+            self.assertEqual(hit["kind"], "field_mention")
+            source = hit["source"]
+            digest, payload = expected[source["path"]]
+            self.assertEqual(source, dict(path=source["path"], sha256=digest, start_line=2, end_line=2))
+            self.assertIn("type and writes unproved", hit["recovery"]["limitations"])
+            self.assertEqual((self.root / source["path"]).read_bytes(), payload)
+        self.assertFalse(reference.search(data, "eax+0x20"))
+        self.assertEqual(len(data["fields"]), 1)
+        self.assertEqual(len(data["relations"]), 1)
+
     def test_field_index_links_context_is_stable_and_honors_aliases(self):
         report = self.add_field_report()
         self.add_layout_alias(["TempStatusWnd"])

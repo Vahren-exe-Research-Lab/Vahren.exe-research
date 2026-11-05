@@ -156,7 +156,9 @@
 | 0x4AE0F0 | [Script_DispatchVarCommand](symbols/004AE0F0.md) | func | VARIABLE 命令の分岐 |
 | 0x4AEDDA | [Random_DispatchPushRand](symbols/004AEDDA.md) | code | pushRand（opcode14）で0〜99の乱数を生成し、スクリプト数値変数へ書き込む命令入口。 |
 | 0x4B044F | [Random_DispatchShuffle](symbols/004B044F.md) | code | shuffle（opcode40）で文字列ベクトルの存在を確認し、0x479740 から並び替えを実行する位置。 |
+| 0x4B4645 | [Battle_SkillTroopRegistrationSite](symbols/004B4645.md) | code | 部隊/battle builtin登録表ではskillTroopをdecimal opcode14へ結ぶ登録位置。処理handler位置0x4B608Fとは別。原表の対応を採録し、完全関数境界・引数ABI・効果を確定しない。 |
 | 0x4B47FC | [Event_ResetBattleClock](symbols/004B47FC.md) | code | resetTime 命令の処理位置。engine+0x1EED60 だけを0にし、interval時計+0x1EED64は変更しない。 |
+| 0x4B608F | [Battle_SkillTroopHandlerSite](symbols/004B608F.md) | code | 部隊命令表のhex0E(decimal14) skillTroopに対応するhandler位置。登録位置0x4B4645と区別し、main命令の同じ番号と混同しない。関数入口・引数ABI・副作用は未確認。 |
 | 0x4B9930 | [Scene_DispatchGameMode](symbols/004B9930.md) | func | GameManager が場面番号 +0x1EF144 の0〜7に応じて処理を分岐する経路。World 側は 0x48C880 へつながる。 |
 | 0x4B9AA0 | [Input_HandleEscapeExit](symbols/004B9AA0.md) | func | Esc の押下とアクティブ状態を検査し、ウィンドウ表示モードに応じた終了・確認処理へ進む。 |
 | 0x4B9AD0 | [Title_Continue](symbols/004B9AD0.md) | code | タイトルの「続きから」側の分岐（DLL のタイトル判定で使用） |
@@ -208,6 +210,7 @@
 | 0x5023E0 | [Bgm_StreamThread](symbols/005023E0.md) | func | BGM ストリーム再生のスレッド |
 | 0x502DD0 | [Lexer_NextToken](symbols/00502DD0.md) | func | スクリプトの字句解析 |
 | 0x5050EE | [ScriptData_SuperEntryInsertCallSite](symbols/005050EE.md) | code | Original x86/V9 E8 to 0x463280 within conditional super ScriptData producer; duplicate keys and gameplay VERIFY. |
+| 0x50A5E0 | [Script_IfRifParserCallbackBinding](symbols/0050A5E0.md) | code | 制御構文if/rifの登録対応表で共通callback pointerと報告された位置。個々の登録site 0x50ECD2/0x50ED1Cとは別。完全関数境界・公開ABI・構文条件の実動作は未確認。 |
 | 0x50B220 | [Script_Loader](symbols/0050B220.md) | func | スクリプト読込器 |
 | 0x514AA0 | [Battle_ReleaseSideUnitVectors](symbols/00514AA0.md) | func | 陣営オブジェクトの +0x48・+0x58・+0x38 の3配列をたどり、非NULLユニットの仮想デストラクタに flag=1 を渡す。 |
 | 0x514C80 | [Battle_SideRemains](symbols/00514C80.md) | func | side+0x48..+0x4Cの適格候補を探索し、候補が見つかればAL0、なければAL1。isAllDead命令の最終boolや、同じ陣営の全型の全滅判定とは区別する。 |
@@ -508,7 +511,7 @@
 
 ## 構造体・フィールド
 
-[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 5892 件。型や意味の正式登録前の局所表記も検索できます。
+[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 6021 件。型や意味の正式登録前の局所表記も検索できます。
 
 - [Ctx](structs/Ctx.md)
 - [FrameWnd](structs/FrameWnd.md)
@@ -523,12 +526,12 @@
 - [UnitDef](structs/UnitDef.md)
 - [UnitRuntime](structs/UnitRuntime.md)
 
-辞書項目 495 件、フィールド 120 件、根拠付き関係 159 件。
+辞書項目 498 件、フィールド 120 件、根拠付き関係 159 件。
 
-回収済み文書のVA言及・取得記録 55236 件を検索対象に含みます。辞書未登録のVAも検索できます。
+回収済み文書のVA言及・取得記録 55722 件を検索対象に含みます。辞書未登録のVAも検索できます。
 
 [登録関数間の直接CALL採録条件](static_calls_source.json) — 2373箇所。各関数ページで呼び出し元・先を参照でき、`callers VA --json` / `callees VA --json` でも検索できます。
 
 [訂正履歴](CORRECTIONS.md) — 15 件。訂正済みの旧解釈と現在の解釈を出典行付きで確認できます。
 
-[回収済み研究文書の題名・本文](DOCUMENTS.md) — 1814 文書。題名・ファイル名・研究ID・本文の通常文字列を検索できます。
+[回収済み研究文書の題名・本文](DOCUMENTS.md) — 1836 文書。題名・ファイル名・研究ID・本文の通常文字列を検索できます。

@@ -7,6 +7,15 @@
 <a id="field-18654"></a>
 ## Unit + 0x18654
 
+- [research/recovered/symbol_sources/T013_KIND8_RANDOM_PAYLOAD_QUEUE_NATIVE_20261031_15H.md 行 19](../../research/recovered/symbol_sources/T013_KIND8_RANDOM_PAYLOAD_QUEUE_NATIVE_20261031_15H.md?plain=1#L19-L19) — [NEXT P0] 0x579EB0→0x57A830分配処理とUnit+0x18654の構造体定義・件数更新producer、0x5A3E78結果の永続consumerと実標的分離、T011召喚EXP→親、T012通常damage、T024通常AI、T028士気/敗走。原作Golden実測前READYに昇格しない。
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation
+
+- [research/recovered/symbol_sources/T013_UNIT18654_LIST_WRITER_ERASE_NATIVE_20261031_20H.md 行 1](../../research/recovered/symbol_sources/T013_UNIT18654_LIST_WRITER_ERASE_NATIVE_20261031_20H.md?plain=1#L1-L1) — # B-20261031-20H-T013-UNIT18654-LIST-WRITER-REMOVE-01｜Unit+0x18654の登録・削除・初期化経路を原作機械語で確認
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation
+
+- [research/recovered/symbol_sources/T013_UNIT18654_LIST_WRITER_ERASE_NATIVE_20261031_20H.md 行 10](../../research/recovered/symbol_sources/T013_UNIT18654_LIST_WRITER_ERASE_NATIVE_20261031_20H.md?plain=1#L10-L10) — [INIT AND DOWNSTREAM] V9 0x56F880擬似CではUnit+0x18654の4byteがゼロ初期化され、+0x18650に空リストheadを用意。既B15H/16H/17Hの0x579EB0はcountを参照し対象listをソート類似処理へ渡す。このcounterは候補一覧の要素数と整合するが
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation
+
 - [research/recovered/tests_batch5/T020_E_T013_RNG_CONTEXT_TRANSFER_ACCEPTANCE_20261031_18H.md 行 16](../../research/recovered/tests_batch5/T020_E_T013_RNG_CONTEXT_TRANSFER_ACCEPTANCE_20261031_18H.md?plain=1#L16-L16) — - **Next:** original G0→G1→G2 receipts remain P0. B-owned future search for actual +0x28 consumers, Unit+0x18654 writer and final target; E-owned future regress
   制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
 
@@ -241,6 +250,15 @@
 - [research/recovered/search_reports1/reports/_history_20261029/EXP_SUMMON_DEATH_RESEARCH_20261021.md 行 88](../../research/recovered/search_reports1/reports/_history_20261029/EXP_SUMMON_DEATH_RESEARCH_20261021.md?plain=1#L88-L88) — 5. K4 death：HP0前後→Unit+0x1867C/linked+0x1B1→0x575A60/575DF0/5684B0条件付きCALL→既存pointerの再利用/破棄をフレーム境界で観測。
   制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
 
+- [research/recovered/structured_tables1/reports/data/T024_KB_CURATION_SOURCE_MAP_20261101_19H.tsv 行 2](../../research/recovered/structured_tables1/reports/data/T024_KB_CURATION_SOURCE_MAP_20261101_19H.tsv?plain=1#L2-L2) — B-OFFLINE-20261101-10H-T011-T024-GROUP34-PROXIMITY-GATE-01	T011,T024	0x569360	0x56ADC1->0x569360;0x56AE85->0x569360	group+0x34;Unit+0x1867C/E	proximity ratio th
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption
+
+- [research/recovered/structured_tables1/reports/data/T024_KB_CURATION_SOURCE_MAP_20261101_19H.tsv 行 3](../../research/recovered/structured_tables1/reports/data/T024_KB_CURATION_SOURCE_MAP_20261101_19H.tsv?plain=1#L3-L3) — B-OFFLINE-20261101-11H-T011-T024-GROUP34-DUAL-BUCKET-GATE-01	T011,T024	0x528DB0;0x569610	0x5290A7;0x5290DD	Unit+0x1867C/E;group+0x34	two distinct group accumula
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption
+
+- [research/recovered/structured_tables1/reports/data/T024_KB_CURATION_SOURCE_MAP_20261101_19H.tsv 行 6](../../research/recovered/structured_tables1/reports/data/T024_KB_CURATION_SOURCE_MAP_20261101_19H.tsv?plain=1#L6-L6) — B-OFFLINE-20261101-14H-T011-T024-DISTANCE-COMPARE-BOUNDARY-01	T011,T024	0x526030	0x52608E;0x526091;0x526094;0x526117	signed32 distance-squared;Unit+0x1867C/E	in
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption
+
 - [research/recovered/symbol_sources/T013_KIND8_RANDOM_PAYLOAD_QUEUE_NATIVE_20261031_15H.md 行 5](../../research/recovered/symbol_sources/T013_KIND8_RANDOM_PAYLOAD_QUEUE_NATIVE_20261031_15H.md?plain=1#L5-L5) — [PREDECESSOR/DEDUP] 14H既知の0x44982B/0x44999D→0x577A20（ECX=Unit、EDX=8）とUnit+0x1867C gate、12/13Hのscore/rankと修正は再成果計上0。kb.py research 0x5A3DF0/0x579EB0 のT013/全task結
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation
 
@@ -297,23 +315,5 @@
 
 - [research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md 行 32](../../research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md?plain=1#L32-L32) — - `0x5284A0`では入力Unitが非NULLで `Unit+0x8C==0`、`Unit+0x1F8!=0`、`Unit+0x1867C==0`、`Unit+0x1D0!=0`、`Unit+0x1867E==0`、`Unit+0x1FA==0` の条件で `0x5284E2→0x568710` の後 `0x52
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_batch3/T013_MODE2_ALT_DUALFLAG_AND_MODE3_NATIVE_20261030_15H.md 行 13](../../research/recovered/b_batch3/T013_MODE2_ALT_DUALFLAG_AND_MODE3_NATIVE_20261030_15H.md?plain=1#L13-L13) — 0x44BFA1 CMP BYTE [Unit+0x1867C],0 / 0x44BFAA CMP BYTE [Unit+0x1867E],0: both zero needed to take 0x44BFB1 JE 0x44BFCA. At 0x44BFCA selected pointer (or EAX=0 a
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_batch3/T013_MODE2_ALT_DUALFLAG_AND_MODE3_NATIVE_20261030_15H.md 行 20](../../research/recovered/b_batch3/T013_MODE2_ALT_DUALFLAG_AND_MODE3_NATIVE_20261030_15H.md?plain=1#L20-L20) — Unit+0x1867E / +0x8C/+0x1F8/+0x1F9 meanings, 0x56F130 and 0x565780/0x5158E0 side effects, sentinel provenance, [ESP+0x4C] producer, first Unit NULL safety and l
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_batch4/data/B_T012_T024_VOICE_EXPIRY_ROUTING_OFFLINE_20261022_1210.md 行 15](../../research/recovered/b_batch4/data/B_T012_T024_VOICE_EXPIRY_ROUTING_OFFLINE_20261022_1210.md?plain=1#L15-L15) — 3. `FUN_0057B380` の外側の入場条件は単純な無条件実行ではない。少なくとも `Unit+0x1867E == 0`、32-bit符号付き `Unit+0xC0 >=0`、`Unit+0xD0 >=0` が必要で、さらに `+0x8C!=0`、`+0x1F8==0`、`+0x1F9!=0`、`+0x186
-  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
-
-- [research/recovered/b_batch9/data/T013_DUAL_TICK_SEARCH_HP_VTABLE_EXIT_20261015.md 行 4](../../research/recovered/b_batch9/data/T013_DUAL_TICK_SEARCH_HP_VTABLE_EXIT_20261015.md?plain=1#L4-L4) — [FIRST ROUTE] VA0x545B14..0x545B2F はUnit+0x1E54Cの正値減算・非正時+0x1E550=1.0、0x545B2F..0x545B40 はUnit+0x1E558正値減算。0x545B40 EAX=ESI(Unit)→0x545B42 CALL 0x57B870→0x545B4
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/b_reports/T011_T024_GROUP34_DUAL_BUCKET_ELIGIBILITY_NATIVE_20261101_11H.md 行 25](../../research/recovered/b_reports/T011_T024_GROUP34_DUAL_BUCKET_ELIGIBILITY_NATIVE_20261101_11H.md?plain=1#L25-L25) — \| Unit+0x1867E \| `0x56964E` \| byte == 0 \|
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
-
-- [research/recovered/b_reports/T011_T024_GROUP34_PROXIMITY_RATIO_100TICK_NATIVE_20261101_10H.sanitized.md 行 17](../../research/recovered/b_reports/T011_T024_GROUP34_PROXIMITY_RATIO_100TICK_NATIVE_20261101_10H.sanitized.md?plain=1#L17-L17) — 関数入口 `VA 0x569360`（原作PEのE8入口実体、Ghidra `functions/0056/00569360.c`、ファイルSHA-256 `309A88BD46955E9873936F91AF03731C50156A1B2476FAAA18EEE9F5696AAF1C`）。グループを第1引数、比率do
-  制約・訂正　Privacy derivative: one personal research-root prefix replaced with <research-root> plus explicit recovery annotation; full technical content retained; reversible byte reconstruction matches source SHA; historical STATIC/INFERRED/VERIFY only; no linked payload read or Golden/READY promotion
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

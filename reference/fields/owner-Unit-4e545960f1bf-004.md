@@ -7,6 +7,15 @@
 <a id="field-178"></a>
 ## Unit + 0x178
 
+- [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/STAND_SPEC.md 行 10](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/STAND_SPEC.md?plain=1#L10-L10) — [USER_FIXED] **スタンドは別枠で厳密に管理**。既存DATの召喚・攻撃・耐性・衛星追従を最大限利用し、DATのみでは保証できない不変条件だけ最小の戦闘アダプタで補う。原作には Unit+0x178～0x180 の親→子ベクタがあるので独自親子台帳を作り直さない。
+  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+
+- [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/STAND_SPEC.md 行 100](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/STAND_SPEC.md?plain=1#L100-L100) — - [ON-STAND-010 STATIC CONFIRMED] 原作 Unit+0x178 begin / +0x17C end / +0x180 capacity は既存召喚子ポインタvector。0x005774A0が登録、0x00577600が子数と召喚上限比較、0x005445E0/0x00575A60がe
+  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+
+- [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/SUMMON_DISC_REMOVAL_POLICY_20261026.md 行 43](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/SUMMON_DISC_REMOVAL_POLICY_20261026.md?plain=1#L43-L43) — 6. 誰が何体の一般召喚物を出したかを追うためだけに新DLL／独自親子台帳は作らない。既存EXEには親Unit+0x178～+0x180の召喚子vectorがある。将来必要な場合だけ利用検討。
+  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+
 - [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/TNOK_CHIKORITA_RECALL_20261025.md 行 9](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/TNOK_CHIKORITA_RECALL_20261025.md?plain=1#L9-L9) — 【2026-10-25 ON-STAND-010訂正】原作EXEに術者Unit+0x178～0x17Cの**召喚子Unitポインタ一覧**が存在し、登録・召喚枠上限判定・術者死亡時のelement_lost消滅に使用されていることを既存Ghidra V9から確認。下記の『独立召喚所有台帳』は仕様テスト用であり、本番で親
   制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
 
@@ -335,15 +344,6 @@
   制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
 
 - [research/recovered/b_batch8/data/T013_CASE8_LEXICAL_TREE_COMPARATOR_NATIVE_V9_20261024_0217.md 行 11](../../research/recovered/b_batch8/data/T013_CASE8_LEXICAL_TREE_COMPARATOR_NATIVE_V9_20261024_0217.md?plain=1#L11-L11) — [EXISTING-CROSSJOIN] 01:10の0x49E8B0 alive filter +1867C、tree successor、global vector 0xB050E0と00:15のUnit+0x1D0 visited-Troop dedupは既知として再計数0。今回の差分はtree比較の実byte・
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/b_batch8/data/T013_CASE8_LIVE_FILTER_TREE_ORDER_VECTOR_ABI_20261024_0110.md 行 11](../../research/recovered/b_batch8/data/T013_CASE8_LIVE_FILTER_TREE_ORDER_VECTOR_ABI_20261024_0110.md?plain=1#L11-L11) — [CROSSJOIN] 先行00:15のvisited-setはUnit+0x1D0 pointer候補をkeyとし一度のみ0x569530へmode値を渡す。今回のcase8ではalive filtered tree range順がvisited-set適用順の入力。treeキー/recordの式・複数Troopの実
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/b_batch9/data/T013_MODE1_UPSTREAM_FOUR_CALLER_GROUP_FILTER_NATIVE_20261029_17H.md 行 25](../../research/recovered/b_batch9/data/T013_MODE1_UPSTREAM_FOUR_CALLER_GROUP_FILTER_NATIVE_20261029_17H.md?plain=1#L25-L25) — - NEXT：manager[+0x38] group生産・+0x48空判定の型、0x49D1B0副作用、4入口のx87 ST/provenanceとUnit+0x1D0型、T024通常AI/T028士気・敗走、T011召喚EXP/T012 damage P0。原本/MASTER/他lane/REA/dev_lab/G
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/b_batch9/data/T013_RUSH_FACTORY_54F720_CONTRACT_20261013.md 行 10](../../research/recovered/b_batch9/data/T013_RUSH_FACTORY_54F720_CONTRACT_20261013.md?plain=1#L10-L10) — [GOLDEN-DESIGNED/NOT RUN] 同一合法rush/summon系Skillの連続2回使用、pool begin/end空/満、対象Unit+0x1D0=0/非0、同seedで表示投射・効果レコード・移動/HP/MP/RNGの差を旧実機/新で比較。内部ptr/capacityのみの観測はINELIGI
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)
