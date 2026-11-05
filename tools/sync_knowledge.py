@@ -2307,6 +2307,12 @@ FILES = (
     'research/recovered/text_triage1/REPORT_LEDGER.tsv',
     'research/recovered/text_triage1/REVIEW_IDENTITY.tsv',
     'research/recovered/text_triage1/reports/T011_DATA_MODEL_SUMMARY.txt',
+    'research/recovered/intake_structured_20261105/CURRENT_NATIVE_STATUS.tsv',
+    'research/recovered/text_summary2/DEFERRED.tsv',
+    'research/recovered/text_summary2/OUTPUT_MANIFEST.tsv',
+    'research/recovered/text_summary2/README.md',
+    'research/recovered/text_summary2/REPORT_LEDGER.tsv',
+    'research/recovered/text_summary2/REVIEW_IDENTITY.tsv',
 )
 # Reviewed portable reference and recovered research paths.
 FILES += (
