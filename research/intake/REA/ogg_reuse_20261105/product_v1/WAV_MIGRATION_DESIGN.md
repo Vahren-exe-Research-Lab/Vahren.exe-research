@@ -1,6 +1,7 @@
 # OGG-only test-copy migration — follow-up design, 2026-11-06
 
-Status: ASSET_CONVERSION_VERIFIED / SUBSET_SE_SINGLE_ACCEPTED_BATTLE_PENDING.
+Status: ASSET_CONVERSION_VERIFIED / SUBSET_SE_SINGLE_BATTLE_ACCEPTED / BATTLE_VOLUME_MAX_ZERO_CONFIRMED.
+Later dated sections supersede the historical pending statuses below.
 The original DAT-path plugin's world-event playback has passed bounded runtime/user acceptance.
 This separate follow-up is authorized by the user's request to convert all WAV files and play the isolated copy. Permission to delete original WAVs is present, but deletion is not useful until existing callers are routed successfully.
 
@@ -214,3 +215,28 @@ Identity: product source c78b09647579bcd1aae7440f2c7caed8de811174; DLL9c8b87c31f
 - No mapped error/poison events. Process exit0 does not independently prove every original cached buffer's Release path; active patch lifetime remains process-scoped.
 
 Next trial uses the unchanged DLL, map, event and launcher. User was instructed to enter one battle, issue movement/attack commands, check battle voices/effects/BGM and category-volume behavior, then exit normally. Full map/WAV removal remains gated on the battle trial. No new game mutation or rebuild was needed for this continuation.
+
+
+## Battle and category-volume acceptance (2026-11-06 JST)
+
+Status: SUBSET_SE_SINGLE_BATTLE_ACCEPTED / BATTLE_VOLUME_MAX_AND_ZERO_USER_CONFIRMED.
+
+The same candidate DLL and 63-entry map were retained for three further normal runs. All exited with code 0, collected both logs without errors, installed all four patches successfully, and recorded BRIDGE_ACTIVE=4. These counts are playback requests, not distinct asset coverage.
+
+| Run (JST) | SE route 3 | SINGLE route 1 | BATTLE route 2 | Successful decode/clear/buffer cycles | OGG log SHA256 |
+|---|---:|---:|---:|---:|---|
+| 02:25:54–02:29:10 | 28 | 1 | 15 | 44 | 44a11913aca5a8a737b851daf3894a1f30287e696e43478d9c1bcdb55687343d |
+| 02:30:43–02:33:30 | 26 | 1 | 13 | 40 | 6dc16de8b1c584eea31676c0030be5d299d81d603394cf0a2a29fdd6945ca1f2 |
+| 02:34:59–02:36:56 | 2 | 1 | 0 | 3 | cb40ce7b356d1ef185d9d1c4c2ac8b1600b65fc6a213ba98a32627f26f02df9d |
+
+Every counted cycle has OPEN_RETURN=0, DECODE_EOF, CLEAR_RETURN=0 and BRIDGE_RESULT=0. First battle run had native unmapped fallback counts SE35/BATTLE21/SINGLE1; maximum-volume run SE29/BATTLE20. These are expected with a subset manifest; filenames are not logged, so individual missing-map causes cannot be attributed.
+
+User acceptance and correction history:
+- First battle: actual voices/effects audible; BGM and operation fine. The initial claim that volume was checked was explicitly corrected to “not checked.” Do not use that run as category-volume acceptance.
+- Next run: user set battle voice to maximum, replayed, and explicitly confirmed it sounded louder.
+- Final run: user set the same setting to 0 and confirmed the sound disappeared. No BATTLE factory calls were logged. This is consistent with an original upstream volume gate, but does not independently measure gain, identify the gate address, or prove all other audio categories muted.
+- User confirmed the game was closed before full migration.
+
+Full migration preflight independently rehashed all 5972 WAV/OGG pairs against conversion receipt d813381ab9df283715454df8fb40136fb2878bcb526162b89a1652145d2d94ef and checked exact full-map coverage (bcaae783842326bef6aa4365cf95674c25e2c16cd1cbfdbb2d81220ff9d55ca1). No mismatches. This establishes current asset identity, not native decoding of every OGG or comprehensive playthrough acceptance.
+
+The bounded subset acceptance gate is satisfied. Proceed to full-map trial with original WAVs absent from active directories, preserving a local rollback journal. Full-game coverage, rare formats, long sessions, save/load and scene transitions remain to be exercised. No formal function dictionary changes.
