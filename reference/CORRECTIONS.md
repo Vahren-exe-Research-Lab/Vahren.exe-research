@@ -74,9 +74,9 @@
   - → 現在の解釈　Power_FindByName。CtxのPower表を名前検索し、返却Powerの+0xE0にCtxを設定する。Spotの名前解決は別関数0x467E90。
   - 確度　静的確認（回収済み著述資料の記述。今回の原作再検証・実行なし）。対象　迫真戦記 ver0.67 / Vahren.exe image base 0x400000。[訂正の根拠](../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L142-L142)
 
-- [Unit_CachedValueOrAggregate](symbols/00587CC0.md) · `CORRECTION-UNIT-CACHED-VALUE-NOT-RESET` · `corrected`。T011§15/§16段階のreset・変更の断定を、後日の§17で記録された分岐と未確認範囲へ限定する。callerによるキャッシュstoreをcalleeの内部writeと混同しない。非0経路が純粋readであるとも断定しない。
+- [Unit_CachedValueOrAggregate](symbols/00587CC0.md) · `CORRECTION-UNIT-CACHED-VALUE-NOT-RESET` · `corrected`。T011§15/§16段階のreset・変更の断定を、§17の限定取得区間で確認した分岐へ限定する。F§64.2にはキャッシュ格納、§75には返値利用の実装・静的対応報告があるが、原作callee/callerへの帰属は未照合。非0経路が純粋readであるとも、他資料に格納報告がないとも断定しない。
   - 訂正済みの旧解釈（履歴）　Unit_ResetLinkedRuntimeFlags。戦闘 SimpleUnit 生成時などに参照元オブジェクトの状態を変更する補助。複数の状態 setter からも呼ばれるため、生成専用ではない。
-  - → 現在の解釈　Unit_CachedValueOrAggregate。引数0では Unit+0x1C4 のキャッシュを返す。非0経路は重み付き入力集計の先頭区間のみ確認済み。最終返値・関数内部の書込・全体の副作用は未確認。状態setterや戦闘生成から呼ばれる。
+  - → 現在の解釈　Unit_CachedValueOrAggregate。T011§17では引数0はUnit+0x1C4のキャッシュ返却。非0は重み付き入力集計の先頭区間までの確認で、最終返値・内部書込・全体副作用は同区間では未証明。Fの格納・返値利用の実装報告との原作帰属照合は未実施。
   - 確度　静的確認（保存済み著述報告の範囲。今回の原作再検証・実行なし）。対象　迫真戦記 ver0.67 / Vahren.exe image base 0x400000。[訂正の根拠](../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L300-L308)
 
 - [Battle_SideRemains](symbols/00514C80.md) · `CORRECTION-RTS-EMPTY-SIDE-NOT-ALWAYS-FALSE` · `corrected`。旧RTS要約のempty候補=falseという一般化を、後日のT030§72の条件付きreturnで訂正する。helperのAL、命令の最終bool、全型の陣営全滅・勝敗を分ける。

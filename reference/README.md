@@ -355,7 +355,7 @@
 | 0x584970 | [UnitDef_GetChipName](symbols/00584970.md) | func | キャラチップ名を決める（image / sub_image / tkool を考慮）。thiscall: ECX=def、引数 (std::string* out, flag=1)、ret 8 |
 | 0x585AD0 | [UnitDef_GetField](symbols/00585AD0.md) | func | ユニット定義の DAT プロパティ（"level"、"noremove_unit" など）を、ユニット ID とクラスをたどって引く |
 | 0x586320 | [UnitDef_GetFriendSet](symbols/00586320.md) | func | friend 集合の遅延生成（def+0x158） |
-| 0x587CC0 | [Unit_CachedValueOrAggregate](symbols/00587CC0.md) | func | 引数0では Unit+0x1C4 のキャッシュを返す。非0経路は重み付き入力集計の先頭区間のみ確認済み。最終返値・関数内部の書込・全体の副作用は未確認。状態setterや戦闘生成から呼ばれる。 |
+| 0x587CC0 | [Unit_CachedValueOrAggregate](symbols/00587CC0.md) | func | T011§17では引数0はUnit+0x1C4のキャッシュ返却。非0は重み付き入力集計の先頭区間までの確認で、最終返値・内部書込・全体副作用は同区間では未証明。Fの格納・返値利用の実装報告との原作帰属照合は未実施。 |
 | 0x588470 | [UnitData_ResolveTypedDefinition](symbols/00588470.md) | func | Unit/クラス等の名前・種別の階層検索に関わる補助。参照先型に応じたプロパティ取得を含む。 |
 | 0x58A400 | [UnitDef_ExpNext](symbols/0058A400.md) | func | 次のレベルに必要な経験値の計算（符号なし） |
 | 0x58A540 | [UnitDef_ExpTotal](symbols/0058A540.md) | func | 経験値の累計計算（符号付き） |

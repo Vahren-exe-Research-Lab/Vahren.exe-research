@@ -131,7 +131,7 @@ Sources: `dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md` (runtime
 - **Cost (ACTUAL):** per EXP change 2.9-3.1 us average over 4k-32k changes; per DAT routine call 0.28-0.35 ms.
 
 
-## 9. 0x587CC0：キャッシュ返却と確認済みの集計経路（2026-11-05 訂正）
+## 12. 0x587CC0：キャッシュ返却と確認済みの集計経路（2026-11-05 訂正）
 
 `Unit_CachedValueOrAggregate` は確認済みの分岐を表す調査用名。旧名 `Unit_ResetLinkedRuntimeFlags` と「参照元の状態を変更する」という旧説明は、[後日のT011§17・300–308行](research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L300-L308)の範囲へ限定し直す。対象は迫真戦記ver0.67、VA 0x587CC0。
 
@@ -142,3 +142,10 @@ Sources: `dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md` (runtime
 出典は固定保存版 `research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md`、SHA256 `2848bfdf9cf9c47cdb5174385d3626140207dd726ce2078982f5486e6ed3c14b`、主根拠300–308行、callerの補助根拠293行。[関数ページ](reference/symbols/00587CC0.md)と[訂正履歴](reference/CORRECTIONS.md)の `CORRECTION-UNIT-CACHED-VALUE-NOT-RESET` から辿れる。静的区分は元報告の範囲を維持し、今回の原作再解析・実機確認はない。
 
 未取得の後半は取得し直していない。Unitの具体型・UnitRuntimeとの同一性、キャッシュの論理用途、戦闘跨ぎのbuff寿命、完全なABI・副作用は未確認のまま。新しいフィールド型やcalleeのwrite関係は採録しない。
+
+
+### 別の実装報告との相違・確認範囲
+
+[F§64.2・1671–1678行](research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1671-L1678)は「実装した関数」の `unit_strength_587cc0` を説明し、fv_*係数の各積をchopしてdef+0x1C4へ格納すると記述する。[F§75・2702–2708行](research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L2702-L2708)にも引数1の返値を使う評価式がある。固定保存版FのSHA256は `6c61b104076363710e09535c6db62daedbe0f0ee159a6ce3240aceb4f417d2d8`。これは参照すべき実装・静的対応の著者報告として残す。
+
+ただし、この実装説明の引用箇所は原作calleeの完全な命令列・内部store位置を提示していない。節固有の観測日時も不明で、文書題名の日付だけでT011との新旧を決めない。「内部書込未証明」はT011§17の限定取得範囲に対する記録であり、すべての研究に格納報告が存在しないという主張ではない。Fのstrengthという命名・式・格納と、原作callee/callerの帰属・完全な返値・副作用は未照合。今回、その報告を新しいwrite関係や確定用途へ自動採用せず、保留された後半も取得しない。
