@@ -1,0 +1,14 @@
+{
+  "hakushin_ogg.c": "f23b67f4dead2095f64ef87a947900e156df3d1546f0071155a0adf7d6b46d15",
+  "hakushin_ogg.h": "6b12a957cd6fee4a1084a805e26fac7313c927f44b5d5c955d5afe84435a4ed9",
+  "decode_policy.h": "58efd5cd8c1983916ba1f0c8e03a4adbe39b2f36f808564aee13a2796b4b3177",
+  "probe_decode.h": "6d5428d409933e1367e2db4a5f95ef45e9d88022ad439dc5e44e63c5381f4fdf",
+  "probe_thread.h": "c88b9037dba297fa0665d9a6d4d305088125f3f7a69027bb5d347b33c2d9a6a4",
+  "run_probe.c": "111231ab0079a8b1479e59002b22bdfd3bc886cd138778313505fefed2db1e87",
+  "exports.def": "ecef9ec8011c22e20fed67170a82ee883965a108f93e2c0dc5a9cb8d0aeee25c",
+  "build.ps1": "9297a356b4fe0b5549ef01c13e9805b95cca1639842f05ab3529da56bbebfe71",
+  "test_decode.c": "f8b796ad36e4c185a8e166a19eee433644c943e160dbdb7df00afb5f48614bf3",
+  "test_guard.c": "8a6676135e583fd78d0ca6b7dac5a9770ca96df72ae8cb7d010a755d8fb15bc8",
+  "test_lifetime.c": "da702d7cbb37026b2909bb1b101f283e8470656f8088e64b9da2ade2c417d5e5",
+  "test_probe.c": "537ae8fc7e8914ec0de54f5bacf0b9e36f7feedde810cce5e1771d83628918d0"
+}

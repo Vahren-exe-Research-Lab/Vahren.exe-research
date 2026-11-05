@@ -1,0 +1,78 @@
+{
+  "research_id": "REA-T015-OGG-REUSE-20261105",
+  "status": "DLL_NEW_CONTEXT_BOUNDED_DECODE_OBSERVED_NOT_PRODUCT_READY",
+  "raw_log_sha256": "925881aa1b791fa9c113ede5d9afc859e93ca796d5c3c01b64d5b33b77846b9c",
+  "raw_log_bytes": 12347,
+  "events": 232,
+  "game_sha256": "e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187",
+  "dll_sha256": "400f7795e0fce63d96e4f460c52cb30a0818c48e2856c0471d77cf0695c8681a",
+  "source_sha256": "ca05fe21c6dea8c6288a7c2e60d0a620823ca61d837356bd0f63289c68af9b76",
+  "attempts": [
+    {
+      "attempt": 1,
+      "reads": [
+        2304,
+        4096,
+        4096,
+        4096,
+        2304,
+        512,
+        512,
+        512,
+        512,
+        2304,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096
+      ],
+      "pcm_bytes": 45824,
+      "fnv1a32": 1439854910,
+      "channels": 2,
+      "rate": 44100,
+      "bits": 16,
+      "clear_return": 0,
+      "outer_zero": true
+    },
+    {
+      "attempt": 2,
+      "reads": [
+        2304,
+        4096,
+        4096,
+        4096,
+        2304,
+        512,
+        512,
+        512,
+        512,
+        2304,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096,
+        4096
+      ],
+      "pcm_bytes": 45824,
+      "fnv1a32": 1439854910,
+      "channels": 2,
+      "rate": 44100,
+      "bits": 16,
+      "clear_return": 0,
+      "outer_zero": true
+    }
+  ],
+  "worker_threads": 1,
+  "end_recorded": true,
+  "user_report": "Game remained operable after diagnostic; uninterrupted BGM during diagnostic not confirmed.",
+  "limitations": [
+    "One normal OGG, prefix only, no EOF/error-path execution",
+    "FNV1a equality is not PCM byte-for-byte or reference decoder proof",
+    "Same outer backing reused sequentially, not two simultaneous DLL contexts",
+    "No actual audio output, volume, stop, loop or DAT integration tested",
+    "No leak/handle balance measurement"
+  ]
+}
