@@ -6,6 +6,7 @@ Run `python tools/reference.py search 解雇 --json`, `build`, or `check`.
 import argparse
 import csv
 import hashlib
+import html
 from functools import lru_cache
 import json
 from pathlib import Path
@@ -177,6 +178,7 @@ def load_mentions(root, documents=None):
         return []
     mentions = []
     seen_sources = {}
+    source_documents = {}
     pattern = re.compile(r"0x([0-9a-f]{6,8})(?![0-9a-f])", re.I)
     with ledger.open(encoding="utf-8-sig", newline="") as stream:
         reader = csv.DictReader(stream, delimiter="\t")
@@ -196,7 +198,15 @@ def load_mentions(root, documents=None):
                 digest = hashlib.sha256(payload).hexdigest()
             if digest.lower() != row["destination_sha256"].lower():
                 raise ValueError(f"Stale recovered source checksum: {row['destination']}")
+            origin = None
+            if row.get("source_path", "").strip():
+                origin = {key: row.get(key, "") for key in
+                          ("source_path", "source_sha256", "coverage_state", "prior_coverage", "limitations")}
+                origin["ledger"] = {"path": ledger.relative_to(root).as_posix(),
+                                    "start_line": ledger_start, "end_line": reader.line_num}
             if source in seen_sources:
+                if origin is not None and source in source_documents:
+                    source_documents[source]["origins"].append(origin)
                 continue
             seen_sources[source] = (payload, digest)
             path = source.relative_to(root).as_posix()
@@ -213,11 +223,14 @@ def load_mentions(root, documents=None):
                                 for number, value in enumerate(lines, 1)
                                 if (match := re.match(r"^ {0,3}#{1,6}\s+(.+?)(?:\s+#+)?\s*$", value))), None) if source.suffix.lower() == ".md" else None
                 title_line, title = heading if heading else (1, source.name)
-                documents.append({"id": f"document:{path}", "name": title,
+                document = {"id": f"document:{path}", "name": title,
                                   "title_line": title_line, "lines": lines,
+                                  "origins": [origin] if origin is not None else [],
                                   "recovery": recovery,
                                   "source": {"path": path, "sha256": digest,
-                                             "start_line": title_line, "end_line": title_line}})
+                                             "start_line": title_line, "end_line": title_line}}
+                documents.append(document)
+                source_documents[source] = document
             for line, content in enumerate(lines, 1):
                 if source.suffix.lower() == ".md":
                     mentions.extend(local_field_mentions(content, path, digest, recovery, line))
@@ -455,7 +468,7 @@ def search(data, query):
 
 
 def document_matches(documents, query):
-    """Rank filename, title, then body matches; retain ledger ties and cap at 20."""
+    """Rank saved filename, source label, title, body; retain ledger ties before cap."""
     needle = query.casefold()
     if not needle.strip():
         return []
@@ -464,7 +477,11 @@ def document_matches(documents, query):
         lines = document["lines"]
         title_hit = needle in document["name"].casefold()
         filename_hit = needle in Path(document["source"]["path"]).name.casefold()
-        if title_hit or filename_hit:
+        origins = [origin for origin in document.get("origins", [])
+                   if needle in origin["source_path"].casefold()]
+        match_kind = ("filename" if filename_hit else "source_label" if origins
+                      else "title" if title_hit else "body")
+        if title_hit or filename_hit or origins:
             line = document["title_line"]
         else:
             line = next((i for i, value in enumerate(lines, 1) if needle in value.casefold()), None)
@@ -483,13 +500,18 @@ def document_matches(documents, query):
                 folded_position += len(character.casefold())
         start = max(0, min(position - max(0, (400 - len(query)) // 2), len(content) - 400))
         excerpt = content[start:start + 400]
+        recovery = ({key: origins[0][key] for key in
+                     ("coverage_state", "prior_coverage", "limitations", "ledger")}
+                    if match_kind == "source_label" else document["recovery"])
         matches.append({"id": document["id"], "kind": "document_match", "name": document["name"],
-                        "summary": excerpt, "confidence": "研究本文の一致（意味・動作の検証なし）",
-                        "recovery": document["recovery"],
+                        "match_kind": match_kind, "matched_origins": origins,
+                        "summary": excerpt, "confidence": ("回収台帳の元パス一致（本文中の一致・意味・動作の検証なし）"
+                                                           if match_kind == "source_label" else "研究本文の一致（意味・動作の検証なし）"),
+                        "recovery": recovery,
                         "source": dict(document["source"], start_line=line, end_line=line)})
     # Stable lexical ranking precedes the cap; equal ranks retain ledger order.
-    matches.sort(key=lambda match: 0 if needle in Path(match["source"]["path"]).name.casefold()
-                 else 1 if needle in match["name"].casefold() else 2)
+    ranks = {"filename": 0, "source_label": 1, "title": 2, "body": 3}
+    matches.sort(key=lambda match: ranks[match["match_kind"]])
     for match in matches[:20]:
         match["total_document_matches"] = len(matches)
         match["document_matches_truncated"] = len(matches) > 20
@@ -693,8 +715,8 @@ def render(root, data):
 def document_intro():
     return ["# 回収済み研究文書の題名・本文", "", "<!-- Generated by tools/reference.py. -->", "",
              "回収台帳でSHAを照合したMarkdown・TXT・JSON・JSONL・TSV・CSV・Pythonコードの本文だけを対象にします。研究本文の一致（意味・動作の検証なし）です。各文書の対象・部分回収・保留・訂正の制約を確認してください。", "",
-             "通常の文字列検索は題名・ファイル名・研究ID・本文を対象に、1文書につき最初の一致行の最大400文字を表示します。題名・ファイル名の一致はMarkdownの見出し行（見出しがなければ先頭行）を表示します。その他の形式はファイル名を題名とし、元の文字列表現を検索します。RUN_RESULT.jsonは従来の構造化run索引で扱います。", "",
-             "文書検索結果はファイル名の一致、題名の一致、本文だけの一致の順で最大20件です。同じ区分内は回収台帳での初出順です。省略時は一致総数を表示します。全件の出典・制約は一覧または各詳細ページに掲載しています。研究ID・題名で絞り込めます。アドレス・所有者＋オフセット検索は従来の専用結果を返します。", ""]
+             "通常の文字列検索は題名・保存ファイル名・回収台帳の元パスや出典URI・研究ID・本文を対象に、1文書につき最大400文字を表示します。本文一致は最初の一致行、題名・ファイル名・元パスの一致はMarkdownの見出し行（なければ先頭行）を表示します。元パス一致は台帳の対応であり、一致した元パスごとの出典SHA・制約・台帳行を確認できます。その他の形式はファイル名を題名とし、元の文字列表現を検索します。RUN_RESULT.jsonは従来の構造化run索引で扱います。", "",
+             "文書検索結果は保存ファイル名、元パス・出典URI、題名、本文だけの一致の順で最大20件です。同じ区分内は回収台帳での初出順です。省略時は一致総数を表示します。全件の出典・制約は一覧または各詳細ページに掲載しています。研究ID・題名で絞り込めます。アドレス・所有者＋オフセット検索は従来の専用結果を返します。", ""]
 
 
 def render_documents(documents, prefix="../", navigation=None):
@@ -711,6 +733,13 @@ def render_documents(documents, prefix="../", navigation=None):
                   f"  回収状態 {text(recovery['coverage_state'])}。以前の収録状況 {text(recovery['prior_coverage'])}。[回収台帳]({ledger_link})。制約・訂正 {text(recovery['limitations'])}"]
         if navigation:
             lines.append(f"  本文 SHA256 `{source['sha256']}`")
+        for origin in document.get("origins", []):
+            origin_ledger = origin["ledger"]
+            origin_link = prefix + quote(origin_ledger["path"], safe="/") + f"?plain=1#L{origin_ledger['start_line']}-L{origin_ledger['end_line']}"
+            detail = (f" {text(origin['coverage_state'])}。制約・訂正 {text(origin['limitations'])}"
+                      if origin_ledger != ledger else "")
+            lines.append(f"  元パス <code>{html.escape(origin['source_path'])}</code>。"
+                         f"[対応する台帳]({origin_link})。{detail}")
         lines.append("")
     lines += [navigation or "[事典の入口](README.md)", ""]
     return "\n".join(lines)
@@ -814,7 +843,7 @@ def main():
             else:
                 document_hit = next((row for row in matches if row.get("kind") == "document_match"), None)
                 if document_hit and document_hit["document_matches_truncated"]:
-                    print(f"文書一致 {document_hit['total_document_matches']}件中、先頭20件を表示（ファイル名、題名、本文の順。同じ区分内は台帳の初出順）。研究ID・題名で絞り込めます。")
+                    print(f"文書一致 {document_hit['total_document_matches']}件中、先頭20件を表示（保存ファイル名、元パス・出典URI、題名、本文の順。同じ区分内は台帳の初出順）。研究ID・題名で絞り込めます。")
                 for row in matches:
                     print(f"{row['id']}  {row.get('name', row.get('predicate', row.get('kind')))}  {row['summary']}  [{row['confidence']}]")
                     if row.get("kind") == "document_match":
@@ -822,6 +851,12 @@ def main():
                         print(f"  根拠 {source['path']}:{source['start_line']}-{source['end_line']} / SHA256 {source['sha256']}")
                         ledger = row["recovery"]["ledger"]
                         print(f"  回収台帳 {ledger['path']}:{ledger['start_line']}-{ledger['end_line']}")
+                        if row["match_kind"] == "source_label":
+                            print("  一致箇所: 回収台帳の元パス。保存版の見出しを表示。")
+                        for origin in row["matched_origins"]:
+                            origin_ledger = origin["ledger"]
+                            print(f"  元パス {origin['source_path']} / 出典記録SHA256 {origin['source_sha256'] or '未記録'}")
+                            print(f"  対応する台帳 {origin_ledger['path']}:{origin_ledger['start_line']}-{origin_ledger['end_line']} / {origin['coverage_state']} / {origin['limitations']}")
                     if row.get("kind") == "correction":
                         print(f"  訂正済みの旧解釈（履歴） {row['previous_interpretation']}")
                         print(f"  → 現在の解釈 {row['current_interpretation']} / 対象 {row['target_version']}")

@@ -672,6 +672,91 @@ class ReferenceTests(unittest.TestCase):
         self.assertNotIn("reported_status", docs[0])
         self.assertEqual(len(data["documents"]), 1)
 
+    def test_original_source_label_search_keeps_alias_specific_provenance(self):
+        report, ledger = self.add_prose_report()
+        digest = hashlib.sha256(report.read_bytes()).hexdigest()
+        with ledger.open("a", encoding="utf-8") as stream:
+            stream.write(f"missing/original-context.md\tresearch/recovered/{report.name}\t{digest}"
+                         "\tPARTIAL_SCHEMA\told\tValues excluded for this origin\n")
+        data = reference.load(self.root)
+        self.assertEqual(len(data["documents"]), 1)
+        hits = reference.search(data, "missing/original-context.md")
+        self.assertEqual(len(hits), 1)
+        hit = hits[0]
+        self.assertEqual(hit["match_kind"], "source_label")
+        self.assertEqual(hit["source"]["path"], "research/recovered/" + report.name)
+        self.assertEqual(hit["source"]["sha256"], digest)
+        self.assertEqual(hit["source"]["start_line"], 2)
+        self.assertEqual(hit["summary"], "# 夢世界の防御調査")
+        self.assertEqual(hit["recovery"]["coverage_state"], "PARTIAL_SCHEMA")
+        self.assertEqual(hit["recovery"]["limitations"], "Values excluded for this origin")
+        self.assertEqual(hit["recovery"]["ledger"]["start_line"], 4)
+        self.assertEqual(hit["matched_origins"][0]["source_path"], "missing/original-context.md")
+        self.assertEqual(len(data["documents"][0]["origins"]), 3)
+        page = reference.render(self.root, data)["reference/DOCUMENTS.md"]
+        self.assertEqual(page.count("Historical partial prose"), 1)
+        self.assertIn("Values excluded for this origin", page)
+        # Bare original filename works without the original directory or file.
+        self.assertEqual(reference.search(data, "ORIGINAL-CONTEXT.MD")[0], hit)
+        self.assertEqual(report.read_bytes().decode("utf-8").count("original-context"), 0)
+
+    def test_source_labels_rank_before_incidental_text_and_before_cap(self):
+        report, ledger = self.add_prose_report()
+        sample = reference.load(self.root)["documents"][0]
+        query = "original-target.md"
+        earlier = [dict(sample, id=f"incidental:{i}", name="ordinary", title_line=1,
+                        lines=["mentions " + query], origins=[]) for i in range(22)]
+        origin = {"source_path": "old/" + query, "source_sha256": "a" * 64,
+                  "coverage_state": "PARTIAL", "prior_coverage": "old", "limitations": "partial",
+                  "ledger": {"path": "research/recovered/RECOVERY_LEDGER.tsv", "start_line": 3, "end_line": 3}}
+        alias = dict(sample, id="alias", origins=[origin])
+        filename = dict(sample, id="filename", source=dict(sample["source"], path=query), origins=[])
+        hits = reference.document_matches(earlier + [alias, filename], query)
+        self.assertEqual([x["id"] for x in hits[:2]], ["filename", "alias"])
+        self.assertEqual(len(hits), 20)
+        self.assertTrue(all(x["total_document_matches"] == 24 for x in hits))
+        self.assertEqual(hits[1]["match_kind"], "source_label")
+
+    def test_source_uri_metadata_search_and_literal_rendering_do_not_read_origins(self):
+        report, ledger = self.add_prose_report()
+        digest = hashlib.sha256(report.read_bytes()).hexdigest()
+        label = "chatgpt://absent/messages/<old>[name]`entry"
+        with ledger.open("a", encoding="utf-8") as stream:
+            stream.write(f"{label}\tresearch/recovered/{report.name}\t{digest}"
+                         "\tHISTORICAL\told\tHistorical origin only\n")
+        data = reference.load(self.root)
+        hit = reference.search(data, label)[0]
+        self.assertEqual(hit["match_kind"], "source_label")
+        self.assertEqual(hit["matched_origins"][0]["source_path"], label)
+        self.assertEqual(hit["matched_origins"][0]["source_sha256"], "")
+        page = reference.render(self.root, data)["reference/DOCUMENTS.md"]
+        self.assertIn("chatgpt://absent/messages/&lt;old&gt;[name]`entry", page)
+        self.assertIn("Historical origin only", page)
+        self.assertIn("#L4-L4", page)
+        tool = Path(reference.__file__)
+        result = subprocess.run([sys.executable, "-B", str(tool), "--root", str(self.root),
+                                 "search", label], capture_output=True, text=True, encoding="utf-8")
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn("元パス", result.stdout)
+        self.assertIn(label, result.stdout)
+
+    def test_origin_keeps_original_checksum_and_rejects_stale_duplicate_destination(self):
+        report, ledger = self.add_prose_report()
+        saved = hashlib.sha256(report.read_bytes()).hexdigest()
+        original = hashlib.sha256(b"unpublished original version").hexdigest()
+        ledger.write_text("source_path\tsource_sha256\tdestination\tdestination_sha256\tcoverage_state\tlimitations\n"
+                          f"not-present/renamed.md\t{original}\tresearch/recovered/{report.name}\t{saved}"
+                          "\tPARTIAL\tOnly a partial saved version\n", encoding="utf-8")
+        hit = reference.search(reference.load(self.root), "not-present/renamed.md")[0]
+        self.assertEqual(hit["source"]["sha256"], saved)
+        self.assertEqual(hit["matched_origins"][0]["source_sha256"], original)
+        self.assertEqual(hit["matched_origins"][0]["coverage_state"], "PARTIAL")
+        with ledger.open("a", encoding="utf-8") as stream:
+            stream.write(f"another/label.md\t{original}\tresearch/recovered/{report.name}\t"
+                         + "0" * 64 + "\tPARTIAL\tStale duplicate\n")
+        with self.assertRaisesRegex(ValueError, "Stale"):
+            reference.load(self.root)
+
     def test_document_search_finds_title_id_filename_and_body_with_cited_excerpt(self):
         report, _ = self.add_prose_report()
         data = reference.load(self.root)
