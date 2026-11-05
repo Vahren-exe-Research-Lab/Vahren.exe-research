@@ -237,6 +237,6 @@ ctx（Power 解決 0x467F40 も書く）
 - 出典 [F§58](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-58)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L73)
 
-読み手・書き手の個別採録は未実施です。
+- [Power_FindByName](../symbols/00467F40.md) → `writes` → [Power + 0xE0 ctx](../structs/Power.md#field-e0)。CtxのPower表を名前で検索し、返却するPowerの+0xE0にCtxへの逆参照を書き込む。保存報告の直接記述による。完全なABI・例外・実機動作は未検証。 （静的確認（回収済み著述資料の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L142-L142) · `MEM3-POWER-RESOLVER-WRITE-CTX`
 
 [事典の入口](../README.md)

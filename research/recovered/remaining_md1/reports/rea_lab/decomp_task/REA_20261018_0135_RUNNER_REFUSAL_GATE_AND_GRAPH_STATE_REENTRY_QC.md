@@ -1,0 +1,16 @@
+# REA-20261018-0135-RUNNER-REFUSAL-GATE-AND-GRAPH-STATE-01｜実行ガードと死亡graph再開境界
+- [OWNER/STATUS] 独立REA / 2026-10-18 01時台 JST / T010,T012,T013・Wave6。既存コードのLocal read-only検証のみ。新規逆コンパイルなし。判定: STATIC SOURCE OBSERVATION + FUTURE SAFETY RISK/VERIFY。
+- [INITIAL READ] MASTER_LEDGER latest checkpoint178、ANALYSIS_LANES_PROTOCOL、decomp_task README/QUEUE/PROGRESS、latest runs/20261011T153309850Z/RUN_RESULT.json、latest logs/progress_sync_20261011T153958076Z.json、既存ND-GRAPH・Wave6拒否監査を確認。
+- [RUNNER DIRECT CODE] run_batch.mjs冒頭の exclude は Set(['0x5710C0','0x571B70']) の文字列完全一致。pending=QUEUE内 status==='TODO' かつ !exclude.has(address) に依存する。承認済みSHA照合と既往VERIFIEDスキップは別に存在する。
+- [SAFETY GAP/CONDITIONAL] ユーザー指定禁止区間0x5710C0..0x571500全体、Wave6既往拒否0x515750/0x515790/0x5159B0/0x57D180は上記Setでは直接除外されない。現在QUEUEにWave6未登録なので現時点で禁止VAを起動した事実はない。将来status TODOで登録された場合、runner自身の除外Setだけでは拒否を防げない。既存Wave6拒否4件も再実行不可。
+- [SAFE DECISION] runner・QUEUE・PROGRESSを書き換えず、新規Waveを登録・実行しない。必要なら正規ownerが事前に禁止範囲/拒否IDをQUEUE選定とruntime guard双方で検査し、拒否済み操作自体は再試行しない。別shell/tool/path/Remoteによる迂回は禁止。
+- [GRAPH SOURCE] dev_lab/src/hakushin_compat/native_battle_runner.py run_fixture は各呼出で LegacyRng(request['seed'])・新BattleSessionを構築。normal_disable_graph_resolved actionは session.continue_resolved_normal_disable_graph を1回呼び、continuationをactionsへ出した直後 break。
+- [GRAPH RESULT BOUNDARY] 同runnerは normal_disable_continuation=asdict(session._normal_disable_frame)を出力可能だが、読んだrun_fixture入口・action dispatchには当該出力から既存session/graph・登録済みTask/World状態を復元する入口を確認できない。次回呼出で新sessionを生成するため、単なるcontinuation JSONの再投入は同一live frameの継続証拠にならない。
+- [DELTA VS 0035] REA_20261018_0035_NORMAL_GRAPH_REENTRY_GATE_QC.mdでは同session内のnext_va 575C52→575E16/4DDD97の再入guard不一致を報告済み。今回の増分は『出力はcursor情報だが、別run_fixture呼出はsession/RNGを新規構築するためdurable resumeではない』という受渡し境界、およびrunnerの拒否除外Setが部分的である点。両者は原作nativeの新発見ではない。
+- [NATIVE STAGE/VA] 0x575A60→0x575DF0→0x5684B0 (T010/T012/T013); graph first virtual 0x4DDD97または0x575E16。既存ND-GRAPHが基準。正常callee帰還・全window/Task/Render/Spatial/親RETURNはVERIFY継続、擬似正常return禁止。
+- [EVIDENCE] 今回新規のinfo/pseudo/assembly/callers/callees evidence IDs=0。既存ND-GRAPH=REA-ND-20261013-001、およびRUN_RESULT 20261011T153309850Zの検証済み5方法を再利用。新規関数境界VERIFIED=0。
+- [PROGRESS] Saved sync W1=16/16 W2=10/10 W3=10/10 W4=12/12 W5=16/16、累計64/64（P0=29/29,P1=35/35）、今回+0。Wave6正式0/16、暫定P0=5/P1=11、TODO12・安全拒否BLOCKED4・関数結果VERIFY0。QUEUE/PROGRESSの旧表示はrename EPERM、更新せず。
+- [MASTER/GOLDEN] 最新MASTER checkpoint178、研究DONE9/34・IN_PROGRESS21・VERIFY4。旧EXE実機golden PASS0、新旧strict MATCH0。ゲーム再実装率は測定していない。
+- [PC/GATE] Local接続成功。list_processesはCPU使用率n/aで低負荷確認不能、空きRAM未測定、decomp_task一覧にactive.lockは見えないが原子的lock検査PASSと断定しない。承認済みコピーの今回SHA再計算なし（保存runの前後SHA一致）。現runner REA6.4.0と成功run REA6.1.0/Ghidra12.1.4が不一致、Wave6未登録、EPERM継続につきrun_decompile.ps1/sync_progress.mjs未実行。Ghidra新規実行0秒、軽量調査総時間未計測。
+- [NEXT] WRQ-20261013-REA-DEATHをP0維持。許可済み保存証拠でgraph虚関数の正常帰還receiptとsession跨ぎ継続の必要状態(生Unit・World・Task/Render/Spatial・RNG)をread-onlyで照合。Wave6は合法P0候補0x470980/0x42E700の既存xref確認のみ。
+- [LIMIT/NOCHANGE] 単一MCP、最大4関数/回、Ghidra900000ms/request960000ms。安全拒否済みVA区間/4VA、拒否済みREAテキスト抽出、旧21H/23H拒否操作は再試行0。原本ZIP/EXE/SAVE、A-E/MASTER/T018、Work、Git/push、MCP設定、スケジュール/automation、runner/QUEUE/PROGRESSを変更しない。

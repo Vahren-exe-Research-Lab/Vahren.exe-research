@@ -25,6 +25,12 @@
 - [research/recovered/rea_batch3/reports/REA_20261031_13H_P0_VORBIS_COUPLED_ARRAY_CLEANUP_STATIC.md 行 31](../../research/recovered/rea_batch3/reports/REA_20261031_13H_P0_VORBIS_COUPLED_ARRAY_CLEANUP_STATIC.md?plain=1#L31-L31) — - 既存 `REF_AUDIO_VORBIS.md` の12Hまでの記載を先行根拠とし、重複しない「outer+0x08 / outer+0x0C cleanup条件依存」だけを統合専任へ候補として残す。新規symbols確定は行わない。
   制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
 
+<a id="field-10"></a>
+## outer + 0x10
+
+- [research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md 行 155](../../research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md?plain=1#L155-L155) — - STATIC new distinction: `0x428680` wrapper subobject outer+0x10 yields nested pointer outer+0x48, `0x4293D0` wrapper subobject outer+4 yields nested pointer o
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+
 <a id="field-38"></a>
 ## outer + 0x38
 
@@ -39,6 +45,9 @@
 
 - [research/recovered/rea_batch2/reports/REA_20261103_22H_P0_EH3_STREAMBUF_FINALIZER_PROVENANCE_STATIC.md 行 17](../../research/recovered/rea_batch2/reports/REA_20261103_22H_P0_EH3_STREAMBUF_FINALIZER_PROVENANCE_STATIC.md?plain=1#L17-L17) — - Curator: compare outer+0x48 vs outer+0x3C and wrapper-specific destructor masks against A/T014 save-load, existing `REF_SAVE_PERSISTENCE` and `REF_SAVE_FORMAT
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
+
+- [research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md 行 155](../../research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md?plain=1#L155-L155) — - STATIC new distinction: `0x428680` wrapper subobject outer+0x10 yields nested pointer outer+0x48, `0x4293D0` wrapper subobject outer+4 yields nested pointer o
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
 
 <a id="field-40"></a>
 ## outer + 0x40
@@ -90,6 +99,9 @@
 
 - [research/recovered/rea_batch4/reports/REA_20261030_23H_P0_OGG_CLEANUP_POINTER_OWNER_STATIC.md 行 11](../../research/recovered/rea_batch4/reports/REA_20261030_23H_P0_OGG_CLEANUP_POINTER_OWNER_STATIC.md?plain=1#L11-L11) — - malloc/callocが成功し通常heap契約が保たれる限り、`outer+0x48/+0x4C` の2つの生存heapブロックとouter自身は別allocationであり、直接のフィールド別名参照は生じない。一方NULL返却、破損ポインタ、サイズ・リンク数不整合、free後使用、再入による状態変化は否定でき
   制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md 行 155](../../research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md?plain=1#L155-L155) — - STATIC new distinction: `0x428680` wrapper subobject outer+0x10 yields nested pointer outer+0x48, `0x4293D0` wrapper subobject outer+4 yields nested pointer o
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
 
 <a id="field-4c"></a>
 ## outer + 0x4C

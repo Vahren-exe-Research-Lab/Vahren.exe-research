@@ -1,0 +1,5 @@
+role	input_name	bytes	sha256	base_commit	base_note
+approved_selection	hakushin-remaining_md1-approved.tsv	6096	eabcbf8695e1f2e616efd39dbe591bd5cebd01bb0258f4a64df8e151a46fedff	60bffac58f4b55d56374ab3f15513b468224c5c0	Coordinator supplied base; exact metadata version used; no Git query/write
+baseline_manifest	SOURCE_MANIFEST.tsv	442251	7df710be1a67da5e5fd676aecd0afd819d417de28a57e3b516a617bf008c2337	60bffac58f4b55d56374ab3f15513b468224c5c0	Coordinator supplied base; exact metadata version used; no Git query/write
+baseline_catalog	RESEARCH_SOURCE_CATALOG.tsv	350283	f14e3bd401a836039f678e9238c6490e2200385efb0fbb602e62f626ec679cf4	60bffac58f4b55d56374ab3f15513b468224c5c0	Coordinator supplied base; exact metadata version used; no Git query/write
+baseline_recovery_ledger	RECOVERY_LEDGER.tsv	1075187	ae8d220d38c52ec571b0a0a280f00d731b1f8ad983914dfb2dca9f5d3aa60dd1	60bffac58f4b55d56374ab3f15513b468224c5c0	Coordinator supplied base; exact metadata version used; no Git query/write

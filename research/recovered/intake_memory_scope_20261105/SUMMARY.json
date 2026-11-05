@@ -1,0 +1,26 @@
+{
+  "base": "60bffac58f4b55d56374ab3f15513b468224c5c0",
+  "accepted_bodies": 31,
+  "markdown": 23,
+  "json": 7,
+  "text": 1,
+  "exact_original_bodies": 23,
+  "complete_privacy_variants": 8,
+  "privacy_edits": 21,
+  "whole_markdown_deferrals": 3,
+  "root_ledger_rows": 1576,
+  "source_bytes": 800932,
+  "destination_bytes": 800836,
+  "catalog_comparison": {
+    "NOT_IN_OLD_CATALOG": 7,
+    "OLD_CATALOG_SOURCE_SHA_MATCH": 21,
+    "CURRENT_SOURCE_REVISION_DIFFERS_FROM_OLD_CATALOG": 3
+  },
+  "inventory": {
+    "RECOVERY_RECEIPT_PRESENT": 1482,
+    "UNREVIEWED_CURRENT_PATH": 18,
+    "KNOWN_REVIEW_HOLD": 90,
+    "DEFERRED_OTHER_OR_PENDING": 10
+  },
+  "scope": "Only31accepted literal originals reread byparent;3held originals notopened. JSON syntax checked without reserialization. Metadata audit1115 isfixedbaseline/no-body census, not current SHA or fullPC recovery. No original cleanup/native/runtime."
+}

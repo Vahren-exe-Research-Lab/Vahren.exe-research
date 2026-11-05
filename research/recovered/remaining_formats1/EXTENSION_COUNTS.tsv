@@ -1,0 +1,7 @@
+extension	selected_paths	present_regular	size_equal_content_unverified	size_changed_revision_candidate	missing_or_unknown	EXISTING_HOLD_METADATA	EXISTING_OTHER_OR_PENDING	NON_MARKDOWN_UNREVIEWED_METADATA_ONLY	OLD_MARKDOWN_OUTSIDE_CURRENT_SCOPES	UNREVIEWED_CURRENT_MARKDOWN
+.csv	7	7	7	0	0	0	0	7	0	0
+.json	555	555	555	0	0	6	0	549	0	0
+.jsonl	12	12	12	0	0	0	0	12	0	0
+.md	129	129	120	9	0	65	10	0	24	30
+.tsv	20	20	20	0	0	0	0	20	0	0
+.txt	392	392	392	0	0	0	0	392	0	0

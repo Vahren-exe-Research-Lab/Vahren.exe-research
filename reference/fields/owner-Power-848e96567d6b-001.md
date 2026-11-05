@@ -19,6 +19,9 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1029](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1029-L1029) — \| 0x467579 \| flag=1（push 1）、level obj=EAX=0（直前 test eax,eax で0確定） \| 0x4673B0（addPower op6 0x4A8B53、シナリオ開始 0x45BE10×2）。Power（ctor 0x590560）+0x24 の名前が 0x467DE0 で見
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+- [research/recovered/remaining_md1/reports/dev_lab/docs/PROJECT_HANDOFF_MASTER_20261011.md 行 176](../../research/recovered/remaining_md1/reports/dev_lab/docs/PROJECT_HANDOFF_MASTER_20261011.md?plain=1#L176-L176) — - 保存済みnative writer (0x460000 / 0x58EFD0 / 0x598CE0 / 0x596AA0 / 0x471D20 / 0x435C10 + vtable 0x5A93F0/0x5B0600)、Ghidra全関数疑似C、ユーザー原作実savを照合。Unitメモリbyte+0x74..7A
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+
 <a id="field-1d"></a>
 ## Power + 0x1D
 
@@ -33,6 +36,12 @@
 
 - [REF_SAVE_FORMAT.md 行 204](../../REF_SAVE_FORMAT.md?plain=1#L204-L204) — \| 本書の初版（同日） \| Unit+0x38 などを「意味未確認」、Power+0x24 を「再確認が必要」、能力値+0x174 を「予備」 \| FINDINGS に静的確認済みの意味があった（§4〜§7） \| 本版で書き直し \|
   制約・訂正　Existing full body linked; catalog revision differs
+
+- [research/recovered/remaining_md1/reports/dev_lab/docs/CHATGPT_CURRENT_HANDOFF.md 行 120](../../research/recovered/remaining_md1/reports/dev_lab/docs/CHATGPT_CURRENT_HANDOFF.md?plain=1#L120-L120) — - 既存研究の訂正（2026-11-01夜、Claude）：T014 の「外交状態」はターン進行オブジェクト（+0x14 経過ターン、+0x38 phase、手番順の勢力列）、「第5コンテナ」+0x32C は放浪集合、Unit+0x94 は放浪先の文字列長。T014 冒頭に訂正一覧を追記。knowledge の Uni
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+
+- [research/recovered/remaining_md1/reports/dev_lab/docs/PROJECT_HANDOFF_MASTER_20261011.md 行 202](../../research/recovered/remaining_md1/reports/dev_lab/docs/PROJECT_HANDOFF_MASTER_20261011.md?plain=1#L202-L202) — - src/hakushin_compat/native_saved_scene_transition.py（7/7 PASS）：save1→save2の共通UnitのSpot格納先変更170、Spot構成変更40、新Spot登録key1413、旧Spot登録から消えたkey4、common Unit vector0リ
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
 
 <a id="field-68"></a>
 ## Power + 0x68

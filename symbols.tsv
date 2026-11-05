@@ -61,7 +61,7 @@
 0x460E90	func	UnitDef_SetRoaming	ユニットを放浪させる（def+0x84 に放浪先、ctx+0x32C の集合へ追加）	静的確認	F§26
 0x460F10	func	UnitDef_ClearRoaming	放浪を解除する	静的確認	F§26
 0x461DA0	func	World_MonthlyRoamMove	月次の放浪移動	静的確認	F§52
-0x467F40	func	Spot_FindByName	スポット（領地）を名前で引く（推定）	推定	F§49
+0x467F40	func	Power_FindByName	保存済み報告ではCtxのPower表を名前検索し、返却Power+0xE0にCtxを設定する。旧Spot名はF§49の未確定な解釈。完全ABI・実機動作は未検証。	静的確認（回収済み著述資料の記述。今回の原作再検証・実行なし）	F§49 (old inferred name retained as correction history); dev_lab/docs/PEER_SCRIPT01_FINDINGS_20261011.md F§79.3/F§79.8; data/T014_GLOBAL_SAVE.md line142; REF_SAVE_FORMAT.md line10
 0x5AAEC0	func	Spot_Search	スポットの探索	静的確認	F§51
 0x597B00	func	Affiliation_GetPower	所属先から勢力オブジェクトを返す。返り値の +0x1D がプレイヤー勢力の印	実機確認	C(§93)
 # ---- 戦略・ターン ----
@@ -550,3 +550,5 @@
 0x4339B1	code	Script_FetchCurrentFrame	インタプリタ内部で4本の並列 VM vector の末尾要素を現在フレームとして読む位置。	静的確認	data/T010_EVENT_SCHEDULER.md lines249-256
 0x433A2A	code	Script_PopCompletedFrame	フレーム終了処理 0x433A2A..0x433A80 の内部位置。4本の vector の end pointer を各4バイト戻す。	静的確認	data/T010_EVENT_SCHEDULER.md line344
 0x4335FA	code	Event_TestBattleActiveGate	mode2 の内部分岐。engine+0x1EEC44 の byte を読み、戦闘更新後も再検査して VM runner を分岐する。	静的確認	data/T010_EVENT_SCHEDULER.md lines375-376
+0x492960	code	Event_SetBattleExecutionMode_ReportedSite	回収済みT010報告が戦闘setupとして示す位置。engine+0x1EEC3Cに2を設定すると記載。関数入口ではなく、命令位置・境界の原作再検証なし。	静的確認	data/T010_EVENT_SCHEDULER.md lines227-232; REF_SCRIPT_VM_CONTEXT.md lines3-4
+0x467E90	func	Spot_FindByName	保存済み報告が独立したSpot名前解決関数として示す。CtxのSpot表を検索し、見つかったSpot+0xB0にCtxを設定して返す。未発見はnull。今回の原作再検証なし。	静的確認（回収済み著述資料の記述。今回の原作再検証・実行なし）	data/T014_GLOBAL_SAVE.md lines571-572; dev_lab/docs/PEER_SCRIPT01_FINDINGS_20261011.md F§49/F§79.3; REF_SAVE_FORMAT.md line10

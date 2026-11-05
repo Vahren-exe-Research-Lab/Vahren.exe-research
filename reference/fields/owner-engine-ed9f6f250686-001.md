@@ -277,6 +277,9 @@
 <a id="field-1eed6c"></a>
 ## engine + 0x1EED6C
 
+- [research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md 行 71](../../research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md?plain=1#L71-L71) — - Next lawful cursor: native vptr+0 producer/construction/target identity and lifespan for engine +0x1EED6C/+70 relative to the three Side receivers; do not inf
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+
 - [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 270](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L270-L270) — - opcode22 `darkness`: 0引数ならactive overlay `engine+0x1EED6C` をremove/freeして0化しContinue。引数ありでは既存overlayを置換し、色overlay objectを作る。handlerは最大5個までargument slotを読む構造で、
   制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
 

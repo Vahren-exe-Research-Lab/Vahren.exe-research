@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-30"></a>
+## window + 0x30
+
+- [research/recovered/remaining_md1/reports/dev_lab/docs/SELECTOR_LOADER_RESEARCH_INDEX.md 行 181](../../research/recovered/remaining_md1/reports/dev_lab/docs/SELECTOR_LOADER_RESEARCH_INDEX.md?plain=1#L181-L181) — - 重要:521A00→521560→window+0x30→455CF0→StatusWnd+0x44(561120)、clearは+0x34→455D20→+0x48(562140)。521560は879823を検査せず、5233A0より先に実行。したがってEnableWindow(FALSE)や879823=0で
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+
 <a id="field-168"></a>
 ## window + 0x168
 

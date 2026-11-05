@@ -1,0 +1,13 @@
+# REA-20261020-20H-RUNNER-VERSION-REFUSAL-FIREWALL-01｜REA実体版・拒否VA境界・Wave6起動ゲート
+- [OWNER/STATE] 独立REA／T014 P0・T010/T012 P0参照。Desktop Commander Local CompactのみでREAD-ONLYを実施。STATIC PREFLIGHT QC、ゲーム・Ghidra/REA新規起動なし。
+- [TARGET] read-only Get-FileHash: rea_lab/targets/hakushin067_Vahren.exe SHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187一致。原本ZIP/EXEの実行・編集なし。
+- [ACTUAL INSTALLED REA] rea_lab/toolchain/node_modules/rea-agents/package.json は version=6.4.0、rea_env.ps1先頭も6.4.0、decomp_task/run_batch.mjs のreport.reaも6.4.0。一方、最後の成功RUN_RESULT (20261011T153309850Z) は rea=6.1.0/ghidra=12.1.4。指示版6.1.0と現在インストール版6.4.0は一致しない。単なるREADMEの表示差とは限らない。
+- [SAFETY FIREWALL] 現run_batch.mjs const exclude=new Set(['0x5710C0','0x571B70']) は拒否範囲0x5710C0..0x571500の範囲フィルタではなく、Wave6既拒否4VA 0x515750/0x515790/0x5159B0/0x57D180も含まない。現Wave6はQUEUE未登録なので直ちに実行されないが、将来の登録時には安全拒否の誤再試行を防ぐ明示的guardが必須。
+- [MAX BATCH] run_decompile.ps1 は node run_batch.mjs --max=4を渡すが、run_batch.mjs単体はMath.min(6,...)で--max=5/6も許す。指定の最大4件は標準PS経路では満たすが、runner内部で強制されていない。
+- [QUEUE] 保存run/最新sync 20261011T153958076Z はW1=16/16,W2=10/10,W3=10/10,W4=12/12,W5=16/16＝64/64 VERIFIED (P0 29/29,P1 35/35)。新Ghidra証拠ID0・新VERIFIED0。QUEUE/PROGRESS rawは過去のEPERMでstale、更新失敗の再試行不可。
+- [WAVE6] 正式0/16、暫定16件(P0 5/P1 11)、安全拒否BLOCKED4(P0 3/P1 1)、未着手TODO12(P0 2/P1 10)、関数結果VERIFY0。0x470980・0x42E700（T014 P0）は既存VERIFIED親のcallee xrefsのみであり子の入口・Ghidra5方法未取得。既存evidence ID：ev_661507e7456c44d65dd153fff0f2c6b8de0e33a9519370d794118fae0def6743／ev_3f9a89a60c30eee71f662be8ef197b9016cfe610caae887926287dcb5d131286。
+- [LOAD] 2026-10-20 20:37 JST Local実測CPU7.7％、空きRAM16.97GiB／総30.78GiB、active.lock=false、java/ghidra検出なし。瞬間測定のみ。
+- [NO RUN] 版差・拒否VAフィルタ不足・正式Wave6未登録・既往QUEUE/PROGRESS EPERMがあるためrun_decompile.ps1/sync_progress.mjsは非実行。新規Ghidra時間0秒。軽量調査全体時間未計測。ユーザー指定はREA6.1.0/Ghidra12.1.4、単一MCP、最大4関数/回、起動900000ms/要求960000ms。REA setup・追加インストール・runner修正は行わない。
+- [MASTER/GOLDEN] 本run確認MASTER最終checkpoint195、研究DONE9/34・IN_PROGRESS21・VERIFY4、旧EXE実機golden PASS0・新旧strict MATCH0。ゲーム再実装率は測定していない。MASTER末尾のE READY候補は今回のREA数に含めない。
+- [RECOVERY-ID/NEXT] REA-RC-20261020-20H-REA-VERSION-REFUSAL-GATE-01：未完了は指定REA6.1.0と実装6.4.0の整合検証、拒否範囲/Wave6四VAの実行除外、runner最大4件内部強制、正式Wave6安全16候補とQUEUE更新経路。拒否操作を別shell/tool/pathで迂回せず、認可済み独立read-only解析を継続。版・guard・キューの安全整合が証明されるまでは新規run禁止。
+- [OWNERSHIP] 原本、A-E、MASTER/T018、既存QUEUE/PROGRESS、dev/Work、Git/push、MCP設定、スケジュール、既往拒否済みREA exporterに変更なし。この新規独立REA QC資料のみ書込・readbackを行う。

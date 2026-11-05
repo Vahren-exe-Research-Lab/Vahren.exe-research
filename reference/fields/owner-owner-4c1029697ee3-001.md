@@ -211,6 +211,12 @@
 - [research/recovered/b_reports/T024_FALLBACK_FLAG_LATCH_FOURWAY_NATIVE_20261025_23H.md 行 16](../../research/recovered/b_reports/T024_FALLBACK_FLAG_LATCH_FOURWAY_NATIVE_20261025_23H.md?plain=1#L16-L16) — - Golden必要条件：無改変同EXE・20倍強化前DAT・同SAVE/MAP/input/RNGで個別pair単独/複数同時、owner+0x334 / +0x14・state+0x18C各WORD・候補span前後・call 0x4C7040各ECX・次tick/可視行動を比較。未実施、Golden PASS0
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail; source addendum limits missing-call claim to legacy20261021 DB, not V3
 
+<a id="field-348"></a>
+## owner + 0x348
+
+- [research/recovered/remaining_md1/reports/data/T024_HAKUSHIN_BATTLE_AI.md 行 438](../../research/recovered/remaining_md1/reports/data/T024_HAKUSHIN_BATTLE_AI.md?plain=1#L438-L438) — [CROSSJOIN] 20H既知の0x528E86→0x569730呼出し・+0x1C適格条件に対し、21H追加の原作Native上位owner+0x34C非0、owner+0x474==0、owner+0x348 list非空、nonzero candidate skip後も0x528E93 JNE0x528E67
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+
 <a id="field-34c"></a>
 ## owner + 0x34C
 
@@ -243,6 +249,12 @@
 
 - [research/recovered/plugin_reports1/reports/T024_DUAL_CALLER_FACTOR_PROVENANCE_STATIC_20261101_22H.md 行 10](../../research/recovered/plugin_reports1/reports/T024_DUAL_CALLER_FACTOR_PROVENANCE_STATIC_20261101_22H.md?plain=1#L10-L10) — V9 functions/0052/005271A0.c 相当: entry 0x5271A0、body [0x5271A0,0x5276BF] 1312B。0x5272AB E8 00 1B 00 00 -> 0x528DB0 は検証済みdirect CALL。直前に0x542280を呼び返値由来のdoubleを第3
   制約・訂正　Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=B_STATIC_CANDIDATE_ERRATUM
+
+<a id="field-474"></a>
+## owner + 0x474
+
+- [research/recovered/remaining_md1/reports/data/T024_HAKUSHIN_BATTLE_AI.md 行 438](../../research/recovered/remaining_md1/reports/data/T024_HAKUSHIN_BATTLE_AI.md?plain=1#L438-L438) — [CROSSJOIN] 20H既知の0x528E86→0x569730呼出し・+0x1C適格条件に対し、21H追加の原作Native上位owner+0x34C非0、owner+0x474==0、owner+0x348 list非空、nonzero candidate skip後も0x528E93 JNE0x528E67
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
 
 <a id="field-3ca0"></a>
 ## owner + 0x3CA0
@@ -279,6 +291,9 @@
 
 - [research/recovered/rea_batch2/reports/REA_20261103_17H_P0_LOAD_SEH_FRAME_V9_FRAGMENT_SEAM_STATIC.md 行 19](../../research/recovered/rea_batch2/reports/REA_20261103_17H_P0_LOAD_SEH_FRAME_V9_FRAGMENT_SEAM_STATIC.md?plain=1#L19-L19) — - **STATIC:** bytes, exact disassembly, original fall-through `0x45EABE→0x45EAC0`, SEH installation/removal instruction order, V9 ranges/labels, two direct E8 m
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
+
+- [research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md 行 111](../../research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md?plain=1#L111-L111) — - Same-run next-cursor clarification: native `0x45F5DB+90` (SHA `B44A3BBC...7696D83E0`) confirms BL store to `[owner+0x1EEE18]` at `0x45F606` only after normal
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
 
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 593](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L593-L593) — [CONFIRMED-SAVED-NATIVE / A60 INCREMENT] A所有 `exe/T014_NORMAL_LOAD_PROBE.txt` VA0x45F5B2..0x45F633。既知のPower/Unit first-match pointer復元を終えた後、owner=[edi]の基底+0x2Cか
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation

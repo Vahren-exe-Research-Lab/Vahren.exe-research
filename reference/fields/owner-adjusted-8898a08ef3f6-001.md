@@ -16,4 +16,10 @@
 - [research/recovered/rea_batch2/reports/REA_20261104_01H_P0_STREAMBUF_POSTCALL_SAME_RECEIVER_STATIC.md 行 9](../../research/recovered/rea_batch2/reports/REA_20261104_01H_P0_STREAMBUF_POSTCALL_SAME_RECEIVER_STATIC.md?plain=1#L9-L9) — - `0x428DAB` occurs in a loop (`0x428DB0 dec esi; 0x428DB1 jne 0x428DA4`). At `0x4294DD` the callee takes `BL=CL` (caller `xor cl,cl`); `0x4294DD-0x4294E5` rece
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
 
+- [research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md 行 184](../../research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md?plain=1#L184-L184) — - Rehashed read-only original PE `E8DAC301…767187` and V9 `2629CB2F…00EDE`; SQLite `quick_check=ok`. Native `0x42A2B0 ret 8` shows 0x428D94 and 0x428DAB use the
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+
+- [research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md 行 198](../../research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md?plain=1#L198-L198) — - Native EH handler `0x5EB99A` -> FuncInfo `0x646314` has 5 unwind states/1 try. Unwind state0/4 action `0x42E830` conditionally uses adjusted +0x38 nested vptr
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

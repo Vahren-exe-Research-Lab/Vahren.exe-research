@@ -10,6 +10,12 @@
 - [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0647_T014_TIMING_VSLOT20_AUDIT.md 行 53](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0647_T014_TIMING_VSLOT20_AUDIT.md?plain=1#L53-L53) — `0x4C21F0`側は `0x4C2203 MOV [ECX+0x74],EAX`、`0x4C222C MOV [ECX+0x78],EDX`。従って呼出元が用意した **ECX=receiver+0x0C** を代入すると、実際の更新先は `receiver+0x80` と `receiver+0x84`。前節の2
   制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
 
+- [research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md 行 226](../../research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md?plain=1#L226-L226) — - Read-only original PE `E8DAC301…767187` / unified V9 `2629CB2F…00EDE` SHA matched, V9 `quick_check=ok`. Original x86/Capstone to V9 newly selected 6 direct E8
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+
+- [research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md 行 233](../../research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md?plain=1#L233-L233) — - STATIC: AND EAX,0x17 -> receiver+0x0C write; intersect with receiver+0x10 mask -> conditional path with stack byte gate and three badbit/failbit/eofbit litera
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+
 <a id="field-10"></a>
 ## receiver + 0x10
 
@@ -18,6 +24,9 @@
 
 - [research/recovered/rea_batch2/reports/REA_20261104_05H_P0_IOS_FLAGS_EXCEPTION_GATE_STATIC.md 行 11](../../research/recovered/rea_batch2/reports/REA_20261104_05H_P0_IOS_FLAGS_EXCEPTION_GATE_STATIC.md?plain=1#L11-L11) — 1. V9 function range `0x00426E00..0x00426EF5` (246 bytes); direct PE bytes SHA256 `7E2C7FE5AEF2A92D59A5A78B81D14825E58AB50EFEE9869DE7D71E7C56529080`. At `0x426E
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
+
+- [research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md 行 233](../../research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md?plain=1#L233-L233) — - STATIC: AND EAX,0x17 -> receiver+0x0C write; intersect with receiver+0x10 mask -> conditional path with stack byte gate and three badbit/failbit/eofbit litera
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
 
 <a id="field-20"></a>
 ## receiver + 0x20
@@ -42,6 +51,15 @@
 
 - [research/recovered/rea_batch2/reports/REA_20261103_23H_P0_STREAMBUF_NESTED_PRODUCER_STATIC.md 行 9](../../research/recovered/rea_batch2/reports/REA_20261103_23H_P0_STREAMBUF_NESTED_PRODUCER_STATIC.md?plain=1#L9-L9) — - Link to 22H cleanup: `0x4296E5` reads `[receiver+0x38]` into EBX; when non-null reads `[EBX]` to EDI, decrements guarded `[EDI+4]`, then conditionally `0x4297
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
+
+- [research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md 行 158](../../research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md?plain=1#L158-L158) — - **Next lawful cursor:** bounded constructor-side provenance of `[receiver+0x38]` and nested EDI vptr in istringstream/ostringstream (using only eligible pre-e
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+
+- [research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md 行 163](../../research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md?plain=1#L163-L163) — - NEW bounded STATIC: 0x42AB20 allocates 4-byte nested pointer, saves [receiver+0x38]=EDI, obtains its [EDI] via 0x5B6087 returning global/default pointer; 0x42
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+
+- [research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md 行 166](../../research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md?plain=1#L166-L166) — - NEXT lawful cursor: distinguish bounded upstream source of 0x42A4C0 stack-supplied [receiver+0x38] from 0x42AB20 heap-wrapped global producer; if no independe
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
 
 <a id="field-74"></a>
 ## receiver + 0x74

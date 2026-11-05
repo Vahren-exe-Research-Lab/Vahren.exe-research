@@ -82,4 +82,128 @@
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_CATALOG_SNAPSHOT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1546-L1546)。制約・訂正 Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=PLUGIN_SYNTHETIC_CONTRACT_OR_HISTORY
   本文 SHA256 `204f8f9e3426ced154e7d24772c7281551817b170d04a15e48c0c968049ec458`
 
+- [迫真戦記 再開発 研究資料の地図（最初に読む）](../../research/recovered/remaining_md1/reports/00_START_HERE.md?plain=1#L5-L5) — `research/recovered/remaining_md1/reports/00_START_HERE.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 UNREVIEWED_CURRENT_PATH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1547-L1547)。制約・訂正 Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+  本文 SHA256 `44c143c7d3477105bc381e98fa392ae415dcc674fd37e7c523cc16f98e36eafc`
+
+- [迫真戦記 ver0.67｜研究B 固定マイクロタスク台帳（T012/T013共同管理）](../../research/recovered/remaining_md1/reports/data/T012_T013_B_RESEARCH_TASKBOARD_20261013.md?plain=1#L1-L1) — `research/recovered/remaining_md1/reports/data/T012_T013_B_RESEARCH_TASKBOARD_20261013.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 UNREVIEWED_CURRENT_PATH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1548-L1548)。制約・訂正 Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+  本文 SHA256 `28d73824364fb187be1b0425e616c7f074f889e618f9463e508903d8bb0df29c`
+
+- [研究B｜WRQ-20261013-B-SKILL｜Work接続索引（2026-10-13 11:50 JST）](../../research/recovered/remaining_md1/reports/data/T012_T013_WRQ_SKILL_INTEGRATION_BRIDGE_20261013.md?plain=1#L1-L1) — `research/recovered/remaining_md1/reports/data/T012_T013_WRQ_SKILL_INTEGRATION_BRIDGE_20261013.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 UNREVIEWED_CURRENT_PATH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1549-L1549)。制約・訂正 Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+  本文 SHA256 `3ea319ccaba0869a3a326ea56042bb0fcdd4307a5f4d37def4485f27bed60d32`
+
+- [T024 迫真戦記 戦闘AI上乗せ仕様](../../research/recovered/remaining_md1/reports/data/T024_HAKUSHIN_BATTLE_AI.md?plain=1#L1-L1) — `research/recovered/remaining_md1/reports/data/T024_HAKUSHIN_BATTLE_AI.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 UNREVIEWED_CURRENT_PATH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1550-L1550)。制約・訂正 Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+  本文 SHA256 `274e99c04df0b9484e7f9f8cb2b2a2d2d7906337de90ef7724c09641720570cd`
+
+- [迫真戦記 ver0.67 戦闘モード最優先の再開発計画](../../research/recovered/remaining_md1/reports/dev_lab/docs/BATTLE_MODE_FIRST_WBS_20261011.md?plain=1#L1-L1) — `research/recovered/remaining_md1/reports/dev_lab/docs/BATTLE_MODE_FIRST_WBS_20261011.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 UNREVIEWED_CURRENT_PATH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1551-L1551)。制約・訂正 Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+  本文 SHA256 `c7d70b191bd81d5ef331799166ae8b3f01fd950b2c084cf2d9c2f234bc66c7da`
+
+- [現在の状況](../../research/recovered/remaining_md1/reports/dev_lab/docs/CHATGPT_CURRENT_HANDOFF.md?plain=1#L1-L1) — `research/recovered/remaining_md1/reports/dev_lab/docs/CHATGPT_CURRENT_HANDOFF.md`
+  回収状態 CONTENT_REVIEWED_PRIVACY_FULL_VARIANT。以前の収録状況 UNREVIEWED_CURRENT_PATH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1552-L1552)。制約・訂正 Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+  本文 SHA256 `1cf3f8e56c994da7e7bda538e50dcc394c1eaa588fa727cb9fe5b58708967718`
+
+- [最優先・迫真戦記再開発 引継ぎ（常にこのファイルを先に読む）](../../research/recovered/remaining_md1/reports/dev_lab/docs/CURRENT_HANDOFF_BATTLE.md?plain=1#L1-L1) — `research/recovered/remaining_md1/reports/dev_lab/docs/CURRENT_HANDOFF_BATTLE.md`
+  回収状態 CONTENT_REVIEWED_PRIVACY_FULL_VARIANT。以前の収録状況 UNREVIEWED_CURRENT_PATH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1553-L1553)。制約・訂正 Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+  本文 SHA256 `cba0dc39a4d100d5b0a8ddc64505d27e716adb076aa08d7d7bf7bba265d37617`
+
+- [DAT明示呼出・3候補の往復実証 Implementation Plan](../../research/recovered/remaining_md1/reports/dev_lab/docs/DAT_GENERIC_UI_SPIKE_PLAN_20261026.md?plain=1#L1-L1) — `research/recovered/remaining_md1/reports/dev_lab/docs/DAT_GENERIC_UI_SPIKE_PLAN_20261026.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 UNREVIEWED_CURRENT_PATH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1554-L1554)。制約・訂正 Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+  本文 SHA256 `edf515673eaf0a36f497808a03a0b3687d172a3cc1656362faef5e8cc59afc77`
+
+- [汎用ユニット一覧の用途別統合と受入確認](../../research/recovered/remaining_md1/reports/dev_lab/docs/DAT_UI_INTEGRATION_ACCEPTANCE.md?plain=1#L1-L1) — `research/recovered/remaining_md1/reports/dev_lab/docs/DAT_UI_INTEGRATION_ACCEPTANCE.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 UNREVIEWED_CURRENT_PATH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1555-L1555)。制約・訂正 Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+  本文 SHA256 `c9bb2c5a3a80b8b070a770fa4691e9e7458aafb7f591be8762444441f325ec83`
+
+- [迫真戦記 再開発・逆コンパイル実装タスク台帳（正本・可変WBS）](../../research/recovered/remaining_md1/reports/dev_lab/docs/DECOMP_TASK_LEDGER_20261011.md?plain=1#L1-L1) — `research/recovered/remaining_md1/reports/dev_lab/docs/DECOMP_TASK_LEDGER_20261011.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 UNREVIEWED_CURRENT_PATH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1556-L1556)。制約・訂正 Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+  本文 SHA256 `2f612b9bdc88640f628df0a5b35134c1448e2d7f858bae2416f76fa836782dac`
+
+- [迫真戦記 再開発 — DEVLAB午後開発checkpoint / 2026-10-10](../../research/recovered/remaining_md1/reports/dev_lab/docs/DEVLAB_HANDOFF_20261010_PM.md?plain=1#L1-L1) — `research/recovered/remaining_md1/reports/dev_lab/docs/DEVLAB_HANDOFF_20261010_PM.md`
+  回収状態 CONTENT_REVIEWED_PRIVACY_FULL_VARIANT。以前の収録状況 UNREVIEWED_CURRENT_PATH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1557-L1557)。制約・訂正 Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+  本文 SHA256 `18b8801a5f08fbd38fc14c5dac4d090a10ac77da640c7366515acaf214e4f960`
+
+- [迫真戦記 ver0.67 完全互換再開発 — 新チャット用マスター引き継ぎ](../../research/recovered/remaining_md1/reports/dev_lab/docs/PROJECT_HANDOFF_MASTER_20261011.md?plain=1#L1-L1) — `research/recovered/remaining_md1/reports/dev_lab/docs/PROJECT_HANDOFF_MASTER_20261011.md`
+  回収状態 CONTENT_REVIEWED_PRIVACY_FULL_VARIANT。以前の収録状況 UNREVIEWED_CURRENT_PATH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1558-L1558)。制約・訂正 Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+  本文 SHA256 `ba7fff3e85e7ae79f6d99d1d8f9748be13077d30b7d8115819c6b628988dca7d`
+
+- [最初に読む：現在の再開位置（2026-10-26）](../../research/recovered/remaining_md1/reports/dev_lab/docs/SELECTOR_LOADER_RESEARCH_INDEX.md?plain=1#L2-L2) — `research/recovered/remaining_md1/reports/dev_lab/docs/SELECTOR_LOADER_RESEARCH_INDEX.md`
+  回収状態 CONTENT_REVIEWED_PRIVACY_FULL_VARIANT。以前の収録状況 UNREVIEWED_CURRENT_PATH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1559-L1559)。制約・訂正 Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+  本文 SHA256 `a19fd36b0c3416ab3710ff6721c34fc3860a9231627996977fd34f75be6e872d`
+
+- [迫真戦記 5レーン定期解析・競合防止（2026-10-08）](../../research/recovered/remaining_md1/reports/evidence/ANALYSIS_LANES_PROTOCOL.md?plain=1#L1-L1) — `research/recovered/remaining_md1/reports/evidence/ANALYSIS_LANES_PROTOCOL.md`
+  回収状態 CONTENT_REVIEWED_PRIVACY_FULL_VARIANT。以前の収録状況 UNREVIEWED_CURRENT_PATH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1560-L1560)。制約・訂正 Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+  本文 SHA256 `3952068ab898392c09e6c64568a995f43bbad515909ba50b33601de764ded0ab`
+
+- [T020 更新履歴・作者調整方針の回帰候補（Lane E、2026-10-08）](../../research/recovered/remaining_md1/reports/evidence/T020_CHANGELOG_REGRESSION_TRIAGE.md?plain=1#L1-L1) — `research/recovered/remaining_md1/reports/evidence/T020_CHANGELOG_REGRESSION_TRIAGE.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 UNREVIEWED_CURRENT_PATH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1561-L1561)。制約・訂正 Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+  本文 SHA256 `c2636e6b154f80df60609b95d2ec4a3e4be7c36e4c6d16b65f85e3abe9c97f07`
+
+- [Vahren701 encrypted script .dat format](../../research/recovered/remaining_md1/reports/evidence/VAHREN701_DAT_FORMAT.md?plain=1#L1-L1) — `research/recovered/remaining_md1/reports/evidence/VAHREN701_DAT_FORMAT.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 UNREVIEWED_CURRENT_PATH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1562-L1562)。制約・訂正 Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+  本文 SHA256 `180a51b826e944c1dbf037dd7713f9324ecff7b169b6c871253e9ff6afa94854`
+
+- [迫真戦記 REA/Ghidra 逆コンパイル進捗](../../research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md?plain=1#L1-L1) — `research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 UNREVIEWED_CURRENT_PATH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1563-L1563)。制約・訂正 Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+  本文 SHA256 `b9f981586413f9e487f255307f2930e525c0a1a4a6a460b964cc37920e8fe91e`
+
+- [REA-20261017-W6-P0-REFUSAL-FIREWALL-01｜Wave6候補の安全対象抽出・独立QC](../../research/recovered/remaining_md1/reports/rea_lab/decomp_task/REA_20261017_WAVE6_PRIORITY_REFUSAL_FIREWALL_QC.md?plain=1#L1-L1) — `research/recovered/remaining_md1/reports/rea_lab/decomp_task/REA_20261017_WAVE6_PRIORITY_REFUSAL_FIREWALL_QC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 UNREVIEWED_CURRENT_PATH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1564-L1564)。制約・訂正 Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+  本文 SHA256 `95a362d3169f3b018840a10144e4ea9d2fe82852055374d082e31f8f8b57dc10`
+
+- [REA-20261018-0135-RUNNER-REFUSAL-GATE-AND-GRAPH-STATE-01｜実行ガードと死亡graph再開境界](../../research/recovered/remaining_md1/reports/rea_lab/decomp_task/REA_20261018_0135_RUNNER_REFUSAL_GATE_AND_GRAPH_STATE_REENTRY_QC.md?plain=1#L1-L1) — `research/recovered/remaining_md1/reports/rea_lab/decomp_task/REA_20261018_0135_RUNNER_REFUSAL_GATE_AND_GRAPH_STATE_REENTRY_QC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 UNREVIEWED_CURRENT_PATH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1565-L1565)。制約・訂正 Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+  本文 SHA256 `719829fd1168fcb69d6842fec063b061ba63cf74c0b3607dbd5d3ff91af8cfe3`
+
+- [REA-20261020-20H-RUNNER-VERSION-REFUSAL-FIREWALL-01｜REA実体版・拒否VA境界・Wave6起動ゲート](../../research/recovered/remaining_md1/reports/rea_lab/decomp_task/REA_20261020_20H_RUNNER_VERSION_REFUSAL_FIREWALL_QC.md?plain=1#L1-L1) — `research/recovered/remaining_md1/reports/rea_lab/decomp_task/REA_20261020_20H_RUNNER_VERSION_REFUSAL_FIREWALL_QC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 UNREVIEWED_CURRENT_PATH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1566-L1566)。制約・訂正 Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+  本文 SHA256 `0c6fa06220dddd5c701f03387ffa476d15cacd82f1aeccd6024ba79caa9d6647`
+
+- [REA 16H｜最終追加ハッシュ確認の安全拒否・再開記録](../../research/recovered/remaining_md1/reports/rea_lab/decomp_task/REA_20261031_16H_P0_FINAL_READBACK_REFUSAL_RECOVERY.md?plain=1#L1-L1) — `research/recovered/remaining_md1/reports/rea_lab/decomp_task/REA_20261031_16H_P0_FINAL_READBACK_REFUSAL_RECOVERY.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 UNREVIEWED_CURRENT_PATH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1567-L1567)。制約・訂正 Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+  本文 SHA256 `8d1edd0a4ff375ae76cffadd0c7e3fef0c9e14f2d7ccbdc46c2ef9a59edb2346`
+
+- [REA拒否・失敗履歴の再照合（2026-10-11）](../../research/recovered/remaining_md1/reports/rea_lab/decomp_task/REA_REFUSAL_RECOVERY_AUDIT_20261011.md?plain=1#L1-L1) — `research/recovered/remaining_md1/reports/rea_lab/decomp_task/REA_REFUSAL_RECOVERY_AUDIT_20261011.md`
+  回収状態 CONTENT_REVIEWED_PRIVACY_FULL_VARIANT。以前の収録状況 UNREVIEWED_CURRENT_PATH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1568-L1568)。制約・訂正 Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+  本文 SHA256 `f1d56e62de158416d7f280723abe48df356adce789509b05b774c47fa611e647`
+
+- [OBSOLETE / task-ID correction](../../research/recovered/remaining_md1/reports/tests/T028_GOLDEN_CORPUS.md?plain=1#L1-L1) — `research/recovered/remaining_md1/reports/tests/T028_GOLDEN_CORPUS.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 UNREVIEWED_CURRENT_PATH。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1569-L1569)。制約・訂正 Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+  本文 SHA256 `b383619a2ee77c1318080fed5d4c6c8fa05a97a4a8fd2a896b0254b73e9c11fa`
+
+- [T020_E_CAPTURE_FAILURE_TAXONOMY_READBACK_20261029_12H.json](../../research/recovered/other_texts2/reports/tests/T020_E_CAPTURE_FAILURE_TAXONOMY_READBACK_20261029_12H.json?plain=1#L1-L1) — `research/recovered/other_texts2/reports/tests/T020_E_CAPTURE_FAILURE_TAXONOMY_READBACK_20261029_12H.json`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 FILENAME_ONLY_LEAD_NOW_EXPLICIT_BOUNDED_REVIEW。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1570-L1570)。制約・訂正 Historical authored receipt/audit only; counts/source claims not newly validated; current curated REF priority; filename/schema/readback name is not semantic approval; linked payloads excluded; no native/runtime/READY/Golden increment
+  本文 SHA256 `a795330f2469e06712533d8e6430ab3522756b03e3f5664f9b4060dc70c3d79d`
+
+- [T020_E_COMPARATOR_KIND_READBACK_20261029_07H.json](../../research/recovered/other_texts2/reports/tests/T020_E_COMPARATOR_KIND_READBACK_20261029_07H.json?plain=1#L1-L1) — `research/recovered/other_texts2/reports/tests/T020_E_COMPARATOR_KIND_READBACK_20261029_07H.json`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 FILENAME_ONLY_LEAD_NOW_EXPLICIT_BOUNDED_REVIEW。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1571-L1571)。制約・訂正 Historical authored receipt/audit only; counts/source claims not newly validated; current curated REF priority; filename/schema/readback name is not semantic approval; linked payloads excluded; no native/runtime/READY/Golden increment
+  本文 SHA256 `d52fdeac9fbced90034b1cdb411a2a08b441ad5716ba556231518a189d2ce324`
+
+- [T020_E_ARCHIVED_CAPTURE_PROVENANCE_RECEIPT_20261029_16H.json](../../research/recovered/other_texts2/reports/tests/T020_E_ARCHIVED_CAPTURE_PROVENANCE_RECEIPT_20261029_16H.json?plain=1#L1-L1) — `research/recovered/other_texts2/reports/tests/T020_E_ARCHIVED_CAPTURE_PROVENANCE_RECEIPT_20261029_16H.json`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 FILENAME_ONLY_LEAD_NOW_EXPLICIT_BOUNDED_REVIEW。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1572-L1572)。制約・訂正 Historical authored receipt/audit only; counts/source claims not newly validated; current curated REF priority; filename/schema/readback name is not semantic approval; linked payloads excluded; no native/runtime/READY/Golden increment
+  本文 SHA256 `716b80cfe9df73717b4ae1d1c5fe3f3326b8a90da70d5c05abe8b9cc6545566e`
+
+- [T020_E21_G2_SCHEMA_BRIDGE_READBACK_RECEIPT_20261028_22H.json](../../research/recovered/other_texts2/reports/tests/T020_E21_G2_SCHEMA_BRIDGE_READBACK_RECEIPT_20261028_22H.json?plain=1#L1-L1) — `research/recovered/other_texts2/reports/tests/T020_E21_G2_SCHEMA_BRIDGE_READBACK_RECEIPT_20261028_22H.json`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 FILENAME_ONLY_LEAD_NOW_EXPLICIT_BOUNDED_REVIEW。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1573-L1573)。制約・訂正 Historical authored receipt/audit only; counts/source claims not newly validated; current curated REF priority; filename/schema/readback name is not semantic approval; linked payloads excluded; no native/runtime/READY/Golden increment
+  本文 SHA256 `3901c123009d176ca121593b3f8738256cff4b58c30b56d61a11d0a4f537051a`
+
+- [T020_E23_TYPED_PROJECTION_READBACK_20261029_01H.json](../../research/recovered/other_texts2/reports/tests/T020_E23_TYPED_PROJECTION_READBACK_20261029_01H.json?plain=1#L1-L1) — `research/recovered/other_texts2/reports/tests/T020_E23_TYPED_PROJECTION_READBACK_20261029_01H.json`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 FILENAME_ONLY_LEAD_NOW_EXPLICIT_BOUNDED_REVIEW。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1574-L1574)。制約・訂正 Historical authored receipt/audit only; counts/source claims not newly validated; current curated REF priority; filename/schema/readback name is not semantic approval; linked payloads excluded; no native/runtime/READY/Golden increment
+  本文 SHA256 `f2be200f536f916fad63b0d955b20dbeb1b9aff01258e999215aa09c726a337e`
+
+- [B_RC_20261028_22H_T028_VECTOR_PAIR_READBACK.json](../../research/recovered/other_texts2/reports/data/B_RC_20261028_22H_T028_VECTOR_PAIR_READBACK.json?plain=1#L1-L1) — `research/recovered/other_texts2/reports/data/B_RC_20261028_22H_T028_VECTOR_PAIR_READBACK.json`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 FILENAME_ONLY_LEAD_NOW_EXPLICIT_BOUNDED_REVIEW。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1575-L1575)。制約・訂正 Historical authored receipt/audit only; counts/source claims not newly validated; current curated REF priority; filename/schema/readback name is not semantic approval; linked payloads excluded; no native/runtime/READY/Golden increment
+  本文 SHA256 `bf1a3cc6b252dc51e39a55b5f3d2ebd9e2cf1e71a7a89f12c7c68daed95161e6`
+
+- [T031_RANDOM_SCHEDULER_AUDIT.json](../../research/recovered/other_texts2/reports/evidence/T031_RANDOM_SCHEDULER_AUDIT.json?plain=1#L1-L1) — `research/recovered/other_texts2/reports/evidence/T031_RANDOM_SCHEDULER_AUDIT.json`
+  回収状態 CONTENT_REVIEWED_PRIVACY_VARIANT。以前の収録状況 FILENAME_ONLY_LEAD_NOW_EXPLICIT_BOUNDED_REVIEW。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1576-L1576)。制約・訂正 Historical authored receipt/audit only; counts/source claims not newly validated; current curated REF priority; filename/schema/readback name is not semantic approval; linked payloads excluded; no native/runtime/READY/Golden increment
+  本文 SHA256 `9fc74a1c49ef71fc8b625af178a088222b3e848bfc2943850c15e49ae110d846`
+
+- [T017_BGM_REFERENCE_AUDIT.txt](../../research/recovered/other_texts2/reports/data/T017_BGM_REFERENCE_AUDIT.txt?plain=1#L1-L1) — `research/recovered/other_texts2/reports/data/T017_BGM_REFERENCE_AUDIT.txt`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 FILENAME_ONLY_LEAD_NOW_EXPLICIT_BOUNDED_REVIEW。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1577-L1577)。制約・訂正 Historical authored receipt/audit only; counts/source claims not newly validated; current curated REF priority; filename/schema/readback name is not semantic approval; linked payloads excluded; no native/runtime/READY/Golden increment
+  本文 SHA256 `47bf3070babdd02d76c0ba8430358673699bad6c568a4b9c9e636d49f3d0b032`
+
 [前のページ](page-015.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md)

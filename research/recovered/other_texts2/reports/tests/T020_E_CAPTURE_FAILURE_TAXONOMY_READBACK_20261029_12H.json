@@ -1,0 +1,61 @@
+{
+  "research_id": "E-AUDIT-20261029-12H-T018-T020-CAPTURE-FAILURE-TAXONOMY-01",
+  "owner": "E/T018/T020",
+  "source": "PC Local Compact E-owned tests + read-only archived B/REA artifacts",
+  "file_sha256": {
+    "t020_e_capture_failure_taxonomy_20261029_12H.py": "D87B4AD9AAC8AEF996B53B0AF9514F59211C4A427C05692B89DF5994533EFB87",
+    "T020_E_CAPTURE_FAILURE_TAXONOMY_FIXTURE_20261029_12H.json": "1E8DD24289DF018F4CF10D73A1A37171C929AC151CC0AAEBBC292586C537A2F3",
+    "T020_E_CAPTURE_FAILURE_TAXONOMY_AUDIT_20261029_12H.md": "908F66A0DEFEAAD9B22CEF7DF46F51F38E7BE384CF830B32E10C3671476C931A"
+  },
+  "source_independent_hash_counts": {
+    "summary": 3,
+    "failure": 5,
+    "collector_code": 2
+  },
+  "archive_capture_distribution": {
+    "v6": {
+      "raw": 0,
+      "failed": 3
+    },
+    "v7": {
+      "raw": 8,
+      "failed": 2
+    }
+  },
+  "executed_regression": {
+    "new_pass": 8,
+    "old_stage8_pass": 6,
+    "old_v7_slot_pass": 8,
+    "total_pass": 22,
+    "fail": 0
+  },
+  "master": {
+    "last_official_checkpoint": 196,
+    "last_official_ready_total": 596,
+    "ready_new_integrations": 0,
+    "queue_34_task_independently_parsed": true,
+    "done": 9,
+    "in_progress": 21,
+    "verify": 4
+  },
+  "original_gameplay": {
+    "dynamic_observed_new": 0,
+    "actual_golden_pass_new": 0,
+    "strict_match_new": 0
+  },
+  "status": "STATIC_ARCHIVED_SOURCE_AUDIT_SYNTHETIC_EXECUTED_VERIFY_NOT_READY",
+  "not_performed": [
+    "new native gameplay",
+    "modification to archive capture source",
+    "unsafe refused session join",
+    "MASTER write",
+    "Git push",
+    "Work use",
+    "schedule change"
+  ],
+  "recovery": {
+    "kind": "OTHER_RECOVERED",
+    "detail": "PowerShell nested quoting ParserError in first read-only source hash command; independent native Get-FileHash succeeded. No new safety refusal.",
+    "new_safety_refusal": 0
+  }
+}

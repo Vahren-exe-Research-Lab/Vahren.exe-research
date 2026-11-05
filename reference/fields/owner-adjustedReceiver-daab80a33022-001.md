@@ -10,4 +10,7 @@
 - [research/recovered/rea_batch2/reports/REA_20261104_00H_P0_STREAMBUF_CALLER_ARGUMENT_ORIGIN_STATIC.md 行 16](../../research/recovered/rea_batch2/reports/REA_20261104_00H_P0_STREAMBUF_CALLER_ARGUMENT_ORIGIN_STATIC.md?plain=1#L16-L16) — - **STATIC:** within `0x42A2B0 -> 0x42A4C0` the pushed interior pointer `outer+4` supplies the derived subobject `[adjustedReceiver+0x38]`; **INFERRED:** the im
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
 
+- [research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md 行 171](../../research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md?plain=1#L171-L171) — - STATIC: original `0x42A2B0` pushes `outer ESI+4` and then `outer ESI` to `0x42A4C0`, which derives a vtable-adjusted subobject and stores the supplied interio
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

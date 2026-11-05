@@ -91,7 +91,8 @@
 | 0x466BA0 | [UnitData_CopyRecordPayload](symbols/00466BA0.md) | func | UnitData 相当の値オブジェクトをコピーして召喚記録の引数や木ノードに構築する。 |
 | 0x466F60 | [UnitDef_CreateMember](symbols/00466F60.md) | func | member（配下）の def を再帰的に生成 |
 | 0x467DE0 | [UnitData_FindPersistentRecord](symbols/00467DE0.md) | func | 永続化側の context+0x300 の木を検索し、node+0x28 に格納された UnitData* を返す。 |
-| 0x467F40 | [Spot_FindByName](symbols/00467F40.md) | func | スポット（領地）を名前で引く（推定） |
+| 0x467E90 | [Spot_FindByName](symbols/00467E90.md) | func | 保存済み報告が独立したSpot名前解決関数として示す。CtxのSpot表を検索し、見つかったSpot+0xB0にCtxを設定して返す。未発見はnull。今回の原作再検証なし。 |
+| 0x467F40 | [Power_FindByName](symbols/00467F40.md) | func | 保存済み報告ではCtxのPower表を名前検索し、返却Power+0xE0にCtxを設定する。旧Spot名はF§49の未確定な解釈。完全ABI・実機動作は未検証。 |
 | 0x470550 | [Save_ReadSlotHeader](symbols/00470550.md) | func | 通常セーブの見出しを読む。文字列 2 本の後の u32 を第 3 引数へ、続く u32 4 個を SYSTEMTIME の wMonth・wDay・wHour・wMinute へ入れる。呼出元は通常ロード 0x45E2D8 と 0x45ECBB・0x4CFC2A・0x539364 |
 | 0x4705F0 | [Save_ReadPrintableString](symbols/004705F0.md) | func | 保存ストリームからNUL終端の印字可能文字列を読み取る。数値mapのキー・補助文字列にも使われる。 |
 | 0x470700 | [Save_ReadInt32Value](symbols/00470700.md) | func | 通常セーブの数値map復元時に32bit値を読むヘルパー。文字列2本の直後に呼ばれる。 |
@@ -127,6 +128,7 @@
 | 0x4922A0 | [Battle_Begin](symbols/004922A0.md) | func | 戦闘の開始（簡易戦闘の後に fight）。通常は 0x4922A0(GM, skip) から |
 | 0x492710 | [Event_InitializeBattleClock](symbols/00492710.md) | func | 戦闘開始時に engine+0x1EED60（resetTime対象）と +0x1EED64（interval基準）を両方0へ戻す。 |
 | 0x492890 | [BattleEvent_InstallBattleBlock](symbols/00492890.md) | func | ScriptBattle の処理 |
+| 0x492960 | [Event_SetBattleExecutionMode_ReportedSite](symbols/00492960.md) | code | 回収済みT010報告が戦闘setupとして示す位置。engine+0x1EEC3Cに2を設定すると記載。関数入口ではなく、命令位置・境界の原作再検証なし。 |
 | 0x492D80 | [Event_ProcessBattleTick](symbols/00492D80.md) | func | 戦闘の進行に合わせた処理経路。自然終了判定と ScriptVM の再開に関連する入口として参照される。 |
 | 0x4930C0 | [Event_EvaluateBattleIfRoots](symbols/004930C0.md) | func | 戦闘に登録された if/rif のroot条件を評価する。真の通常ifは実行後に集合から除去し、rifは残す。 |
 | 0x49356A | [Script_ExecEntry_Battle](symbols/0049356A.md) | code | 0x4A1250 への CALL。戦闘中の battleEvent と dead_event の命令はここを通る。dead_event は倒れたその場で実行。 |
@@ -499,7 +501,7 @@
 
 ## 構造体・フィールド
 
-[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 3539 件。型や意味の正式登録前の局所表記も検索できます。
+[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 3611 件。型や意味の正式登録前の局所表記も検索できます。
 
 - [Ctx](structs/Ctx.md)
 - [FrameWnd](structs/FrameWnd.md)
@@ -514,12 +516,12 @@
 - [UnitDef](structs/UnitDef.md)
 - [UnitRuntime](structs/UnitRuntime.md)
 
-辞書項目 486 件、フィールド 120 件、根拠付き関係 155 件。
+辞書項目 488 件、フィールド 120 件、根拠付き関係 159 件。
 
-回収済み文書のVA言及・取得記録 47725 件を検索対象に含みます。辞書未登録のVAも検索できます。
+回収済み文書のVA言及・取得記録 48661 件を検索対象に含みます。辞書未登録のVAも検索できます。
 
 [登録関数間の直接CALL採録条件](static_calls_source.json) — 2373箇所。各関数ページで呼び出し元・先を参照でき、`callers VA --json` / `callees VA --json` でも検索できます。
 
-[訂正履歴](CORRECTIONS.md) — 12 件。訂正済みの旧解釈と現在の解釈を出典行付きで確認できます。
+[訂正履歴](CORRECTIONS.md) — 13 件。訂正済みの旧解釈と現在の解釈を出典行付きで確認できます。
 
-[回収済み研究文書の題名・本文](DOCUMENTS.md) — 1518 文書。題名・ファイル名・研究ID・本文の通常文字列を検索できます。
+[回収済み研究文書の題名・本文](DOCUMENTS.md) — 1549 文書。題名・ファイル名・研究ID・本文の通常文字列を検索できます。

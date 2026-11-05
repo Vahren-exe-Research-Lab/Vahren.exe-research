@@ -135,6 +135,6 @@ ctx（Spot 解決 0x467E90 も書く）
 - 出典 [F§58](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-58)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L104)
 
-読み手・書き手の個別採録は未実施です。
+- [Spot_FindByName](../symbols/00467E90.md) → `writes` → [Spot + 0xB0 ctx](../structs/Spot.md#field-b0)。CtxのSpot表を名前で検索し、見つかったSpotの+0xB0にCtxへの逆参照を書き込んで返す。見つからなければnull。保存報告の直接記述であり、今回の原作再検証はない。 （静的確認（回収済み著述資料の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L571-L572) · `MEM3-SPOT-RESOLVER-WRITE-CTX`
 
 [事典の入口](../README.md)

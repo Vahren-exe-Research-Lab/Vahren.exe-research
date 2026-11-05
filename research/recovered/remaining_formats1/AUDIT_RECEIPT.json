@@ -1,0 +1,17 @@
+{
+  "baseline": "60bffac58f4b55d56374ab3f15513b468224c5c0",
+  "catalog_rows": 1937,
+  "current_markdown_rows": 1600,
+  "root_receipt_rows": 1545,
+  "selected_rows": 1115,
+  "unresolved_markdown": 129,
+  "outside_current_markdown": 24,
+  "filename_leads": 8,
+  "original_body_reads": 0,
+  "original_hashes_measured": 0,
+  "original_lstat_calls_including_guard_ancestors": 1135,
+  "metadata_stat_utc": "2026-11-05T00:54:49.185626+00:00",
+  "selection_path_sha256": "E4575C66BAA99714CBBF8CF3530B8DB59BBDF711D445B3909CFCE5975DAE588F",
+  "selection_order": "COVERAGE.tsv order; only CATALOG_ONLY_UNRESOLVED",
+  "inputs_baseline_match": true
+}

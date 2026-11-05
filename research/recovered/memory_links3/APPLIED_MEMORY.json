@@ -1,0 +1,29 @@
+{
+  "base": "60bffac58f4b55d56374ab3f15513b468224c5c0",
+  "symbols": 488,
+  "functions": 355,
+  "fields": 120,
+  "relations": 159,
+  "corrections": 13,
+  "old_symbols_sha256": "21021b3c0aaf0a3a758bb1fb087c35a0131ea7e2f02d040bbbde3449b80e6252",
+  "new_symbols_sha256": "210283e53cf585a551f7080ac6ac34fa15918c7b7a72cd65e063aecdb40b068a",
+  "changed_existing_line": 64,
+  "old_line_sha256": "17cb6b6d975091467fa2a75ea3155960c6beac219a04eb89d17739ae9f0e9047",
+  "new_line_sha256": "3d79793761a2ac0b0628b08c69139a01822dde34c6ef862da7bb5869312e1f28",
+  "all_other_old_symbol_lines_unchanged": true,
+  "new_symbol_ids": [
+    "va:0x00492960",
+    "va:0x00467E90"
+  ],
+  "new_relationship_ids": [
+    "MEM3-VM-SETUP-WRITE-MODE",
+    "MEM3-VM-WAIT-READ-MODE",
+    "MEM3-POWER-RESOLVER-WRITE-CTX",
+    "MEM3-SPOT-RESOLVER-WRITE-CTX"
+  ],
+  "new_correction_id": "CORRECTION-POWER-NAME-RESOLVER",
+  "prior_cited_ranges_preserved": 4,
+  "no_new_fields_or_width_changes": true,
+  "all_three_symbol_sources_resolve": true,
+  "no_native_runtime_execution": true
+}

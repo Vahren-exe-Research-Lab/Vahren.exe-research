@@ -1,0 +1,108 @@
+full_bgm_assets=434 unique_stems=433
+simple_direct_args=2923 unique=272 matched_unique=268 missing_unique=4
+missing_top=[('none', 896), ('指定ないです', 2), ('サスライガー神社', 1), ('バクシンガー神社', 1)]
+matched_multi_ext=[]
+direct_args_containing_dot=0 sample=[]
+by_command={'playBGM': 2899, 'loopBGM': 24}
+static_bgm_property_refs=167 unique=90 missing_unique=2
+property_missing=[('@', 23), ('none', 6)]
+property_multi_ext=[('スーパーカズヤのテーマを耳コピしてみた', 3, [('スーパーカズヤのテーマを耳コピしてみた.mp3', '.mp3'), ('スーパーカズヤのテーマを耳コピしてみた.ogg', '.ogg')])]
+property_name_counts=[('bgm', 144), ('battle_bgm', 12), ('world_bgm', 10), ('title_bgm', 1)]
+property_file_counts=[('a_default\\script\\spot.dat', 81), ('a_default\\script\\3000_淫ドリームマッチ\\dr_spot.dat', 30), ('a_default\\script\\context.dat', 23), ('a_default\\script\\116_仮設ランダムイベント61-70\\randomev61_70_spot_add.dat', 17), ('a_default\\script\\6000_スキルテスト\\skilltest.dat', 5), ('a_default\\script\\50_その他新システム\\qa_001.dat', 3), ('a_default\\script\\1000_チュートリアル\\tuto_event1.dat', 1), ('a_default\\script\\10_ユニット\\B_525_神聖UNEI帝国.dat', 1), ('a_default\\script\\2023_イベント_リュージ騎士団\\event_23_RPG.dat', 1), ('a_default\\script\\4000_AoW\\event_aow_100.dat', 1), ('a_default\\script\\4000_AoW\\event_aow_264.dat', 1), ('a_default\\script\\40_内政\\politic_sakenomi.dat', 1), ('a_default\\script\\44_内政_迫真の世紀\\kaiso_26_battle.dat', 1), ('a_default\\script\\2026_イベント_旧版クッキー☆原理主義党\\battle\\event_26_battle.dat', 1)]
+PROPERTY_SENTINEL @ count=23 examples=[('bgm', '@', 'a_default\\script\\116_仮設ランダムイベント61-70\\randomev61_70_spot_add.dat', 7), ('bgm', '@', 'a_default\\script\\116_仮設ランダムイベント61-70\\randomev61_70_spot_add.dat', 19), ('bgm', '@', 'a_default\\script\\116_仮設ランダムイベント61-70\\randomev61_70_spot_add.dat', 30), ('bgm', '@', 'a_default\\script\\116_仮設ランダムイベント61-70\\randomev61_70_spot_add.dat', 41), ('bgm', '@', 'a_default\\script\\116_仮設ランダムイベント61-70\\randomev61_70_spot_add.dat', 52), ('bgm', '@', 'a_default\\script\\116_仮設ランダムイベント61-70\\randomev61_70_spot_add.dat', 67), ('bgm', '@', 'a_default\\script\\116_仮設ランダムイベント61-70\\randomev61_70_spot_add.dat', 78), ('bgm', '@', 'a_default\\script\\116_仮設ランダムイベント61-70\\randomev61_70_spot_add.dat', 89), ('bgm', '@', 'a_default\\script\\116_仮設ランダムイベント61-70\\randomev61_70_spot_add.dat', 100), ('bgm', '@', 'a_default\\script\\116_仮設ランダムイベント61-70\\randomev61_70_spot_add.dat', 224), ('bgm', '@', 'a_default\\script\\116_仮設ランダムイベント61-70\\randomev61_70_spot_add.dat', 242), ('bgm', '@', 'a_default\\script\\3000_淫ドリームマッチ\\dr_spot.dat', 35), ('bgm', '@', 'a_default\\script\\3000_淫ドリームマッチ\\dr_spot.dat', 55), ('bgm', '@', 'a_default\\script\\3000_淫ドリームマッチ\\dr_spot.dat', 71), ('bgm', '@', 'a_default\\script\\3000_淫ドリームマッチ\\dr_spot.dat', 89), ('bgm', '@', 'a_default\\script\\3000_淫ドリームマッチ\\dr_spot.dat', 124), ('bgm', '@', 'a_default\\script\\3000_淫ドリームマッチ\\dr_spot.dat', 142), ('bgm', '@', 'a_default\\script\\3000_淫ドリームマッチ\\dr_spot.dat', 157), ('bgm', '@', 'a_default\\script\\3000_淫ドリームマッチ\\dr_spot.dat', 215), ('bgm', '@', 'a_default\\script\\3000_淫ドリームマッチ\\dr_spot.dat', 232), ('bgm', '@', 'a_default\\script\\3000_淫ドリームマッチ\\dr_spot.dat', 250), ('bgm', '@', 'a_default\\script\\3000_淫ドリームマッチ\\dr_spot.dat', 266), ('bgm', '@', 'a_default\\script\\3000_淫ドリームマッチ\\dr_spot.dat', 281)]
+PROPERTY_SENTINEL none count=6 examples=[('bgm', 'none', 'a_default\\script\\2023_イベント_リュージ騎士団\\event_23_RPG.dat', 16), ('bgm', 'none', 'a_default\\script\\4000_AoW\\event_aow_100.dat', 189), ('bgm', 'none', 'a_default\\script\\4000_AoW\\event_aow_264.dat', 425), ('bgm', 'none', 'a_default\\script\\40_内政\\politic_sakenomi.dat', 263), ('bgm', 'none', 'a_default\\script\\44_内政_迫真の世紀\\kaiso_26_battle.dat', 9), ('bgm', 'none', 'a_default\\script\\2026_イベント_旧版クッキー☆原理主義党\\battle\\event_26_battle.dat', 9)]
+PROPERTY_SENTINEL 600 count=0 examples=[]
+property_excluding_sound_dat=167 unique=90 missing_unique=2
+property_missing_excluding_sound_dat=[('@', 23), ('none', 6)]
+MISSING 896x none class=intentional-missing-path example=('playBGM', 'none', 'a_default\\script\\100_イベント汎用\\event_00_共通イベント.dat', 1040)
+MISSING 2x 指定ないです class=intentional-missing-path example=('playBGM', '指定ないです', 'a_default\\script\\2000_勢力ストーリー\\po19_event.dat', 196)
+MISSING 1x サスライガー神社 class=skill-test-only example=('playBGM', 'サスライガー神社', 'a_default\\script\\6000_スキルテスト\\event_test.dat', 435)
+MISSING 1x バクシンガー神社 class=skill-test-only example=('playBGM', 'バクシンガー神社', 'a_default\\script\\6000_スキルテスト\\event_test.dat', 429)
+production_unresolved_direct=[]
+
+NATIVE_PROPERTY_CONSUMER_2026-10-07:
+- event bgm: playBattleCore 0x48F342 requests event/bgm via 0x4647D0; non-empty result enters custom playback at 0x48F473 -> 0x4BDE40.
+- event bgm=none: no dedicated none comparison in the event branch. FULL has no none stem, so normal dotless resolution fails MID>MP3>OGG and follows the known DirectMusic failure/reset path.
+- spot bgm: 0x48F3CE requests bgm through 0x597A20 -> 0x4693F0. The helper probes scenario-qualified bgm@<variant> before base bgm.
+- RHS @ is the script grammar explicit-null token (also used by map/image/member etc.), while native 0x4693F0 separately uses literal '@' as a property-key qualifier separator.
+- remaining VERIFY: exact target merge order for inherited/base/scenario ExplicitNull and whether spot bgm=@ is observed by playback as empty at runtime.
+- evidence: exe/T017_BGM_PROPERTY_SEMANTICS.md, exe/T017_BGM_PROPERTY_CONSUMER.txt, exe/T017_BGM_PROPERTY_FALLBACK.txt
+
+## 2026-10-10 EXTENSION COLLISION: three concrete spot fixtures
+[CONFIRMED-SCRIPT] EXTENSIONLESS BGM stem `スーパーカズヤのテーマを耳コピしてみた` は有効な `bgm =` として本編`spot.dat:867`の`spot sp42`(なんばパークス)、同:896の`spot sp44`(新日暮里)、テスト用`6000_スキルテスト/skilltest.dat:227`の`spot sp_st3`(ホーテン市)の3箇所にあり、いずれも隣接する`volume=35`を持つ。`context.dat:18`の別出現はコメント内で、有効BGM宣言に含めない。
+[CONFIRMED-ASSET + SAVED-NATIVE] FULL版BGM一覧には同stemの`.mp3`と`.ogg`の双方があり`.mid`は未収録。旧EXE`0x4BDE40`のsuffix resolverは `.mid -> .mp3 -> .ogg`先着順であるため、両ファイルが登録・解決できる環境では3 spotとも **MP3（DirectShow）経路**を選ぶ。OGGが存在することだけを根拠にOGG decoder側のEOF不具合と判断しない。
+[VERIFY] 正常な実ゲームで各spotのBGM consumerがいつ呼ばれるか、候補のresolver成功/失敗、spot-level volume=35の最終gain、master音量0での各codec再開停止時刻は未観測。
+[GOLDEN/NOT RUN] 本編sp42/sp44の同stem MP3再生時にUI master volume 100→0→100と、OGG-only曲を採用した既知spotを同条件で比較。DirectShow GetEvent/HRESULT/EC_COMPLETE、player+0x0A、stop/reopenを別々に観測。実機PASS0。
+[EVIDENCE] Local normalized `spot.dat:862-899`, `skilltest.dat:221-231`, `context.dat:11-19`; D所有`data/T017_AUDIO_ASSET_INVENTORY.txt`, `data/T017_BGM_REFERENCE_AUDIT.txt`; read-only A保存`exe/T006_AUDIO_CODEC_RESOLUTION.txt`, `exe/T006_AUDIO_BACKEND_EOF.md`。禁止TSV/原本未使用。
+
+## 2026-10-10 10:35 D OWNED CROSSCHECK: SPOT @ STATUS SYNCHRONIZATION
+[CONFIRMED-SAVED-NATIVE / STATUS CORRECTION] 上部 `NATIVE_PROPERTY_CONSUMER_2026-10-07`の `spot bgm=@ ... VERIFY` は旧調査段階の記述。既存D evidence `exe/T017_BGM_PROPERTY_SEMANTICS.md` によりparser→qualified/base lookup→consumerの局所経路はnative静的に確定済み（MASTER T017でも既に統合済み）。過去履歴を削除せずここで限定訂正。
+[CONFIRMED-SAVED-NATIVE] RHS `@`のliteralはfield nodeのstringに残り、`+0x20=0`。lookup 0x4693F0 はscenario-qualified propertyを優先し、見つかったExplicitNullはbase/super fallbackを止める。0x4647D0は`@`を空文字へ変換しないためbattle spot consumer経由で再生core0x4BDE40に文字`@`が渡る。
+[CONFIRMED-ASSET+SAVED-NATIVE] FULLにstem `@`のBGMはなく、suffix probe失敗→DirectMusic fail/resetに進む。したがってparser/merge/consumerでの`@`の取り扱いを`@`=emptyと実装するのはstrict互換違反。ただし最終可聴/曲復帰/AudioStateは旧EXE動的fixture未取得でVERIFY。
+[SCOPE] 今回は既存保存native証拠とMASTER現行TASK QUEUEの記載をread-only再照合した台帳精度の改善であり、新たなnative逆コンパイル・実機互換PASSではない。`data/T015_UI_RENDER_INPUT_AUDIO.md`の今回追加 `volume(0)`資料とは別API。
+[REIMPLEMENT/GOLDEN NOT RUN] Spot `bgm=@` (ExplicitNull) vs `bgm=none` vs `playBGM(none)` vs `volume(0)` + `playBGM(指定ないです)` は parser表現・consumer・transport reset・音量stateを分離してfixture化。E所有T018は不変更。
+[HANDOFF] 既往D handoff append SAFETY_REFUSALを別手段で回避しない。この項目は既統合知見の資料更新で、新規D ID/READYを加算しない。
+
+## 2026-10-10 12:34 新D / T017: 同一spot定義群のMP3/OGG自然比較fixture（D-20261010-1234-01 / NOT READY）
+[CONFIRMED-SCRIPT] 正規化済み `a_default/script/spot.dat` の連続3spotをLocalで直接再読した。sp42「なんばパークス」は `bgm=スーパーカズヤのテーマを耳コピしてみた` (:867), `volume=35` (:868)、sp43「デビルレイク」は `bgm=半漁人のテーマ（？）を耳コピしてみた` (:882), `volume=65` (:883)、sp44「新日暮里」はsp42と同stem (:896), `volume=35` (:897)。
+[CONFIRMED-FULL-ZIP-MANIFEST] Dとは別のT001所有 `evidence/ZIP_ENTRIES.csv` をread-onlyで対象の2stemのみ照合。FULL版BGMにはスーパーカズヤstemのmp3=1,304,240 bytes/ogg=1,967,829 bytesが共存し、半漁人stemはogg=1,996,645 bytesの1entryのみを確認。`data/T017_AUDIO_ASSET_INVENTORY.txt`のFULL BGMはogg396/mp3 38、basename多拡張はスーパーカズヤ1件という既存全件集計とも整合する。
+[CONFIRMED-SAVED-NATIVE / CONDITIONAL] ドット無し曲名のtarget `0x4BDE40` はmid→mp3→oggの順に解決、MP3はDirectShow、OGGはOggDecoderを選ぶ。全ファイルが正常に見つかる条件でsp42/44=MP3、sp43=OGGとなるため、隣接する原作スポット定義だけでcodec差を観測できる。実際のスポット入場時のresolver/再生成功は未観測。
+[TEST DESIGN / NOT RUN] フル版の原本を変更せず通常起動し、各spotのBGM開始を確認したうえでUI master volume 100→0→100、無操作数十秒、spot再入場を同手順で採取。再生開始/停止時刻・再開回数・MP3 GetEvent HRESULT/EC_COMPLETE、OGG wrapper +0x54/+0x58、player+0x09/+0x0Aを区別。sp42とsp44のMP3同stemも比較してspot固有の差を切り分ける。
+[IMPORTANT CONTROL] sp42/44はspot自身のvolume=35、sp43は65と異なる。音量差や聞こえ方だけでcodecの問題と判断せず、比較項目はstream state/stop/reopen/再生区間とし、両spot値はtraceへ併記する。`volume(0)` scriptとUI master volume0を混同しない。
+[VERIFY] UI volume0がなぜloop再開を誘発するか、spot BGM property consumer到達、選択されたcodecとDirectShow/OGG EOFの実イベント、sp43のOGGロード成否はいずれも未実機。旧EXE actual golden PASS0。根本原因の確定やコード修正の根拠にはしない。
+[SAFETY / HANDOFF] Local Compactの既存normalized spot.datと既存ZIP manifest、保存済みA `exe/T006_AUDIO_CODEC_RESOLUTION.txt`/`T006_AUDIO_BACKEND_EOF.md`、D-owned inventoryのみ。原本ZIP/EXE/snapshot、A-E他資料、T018、MASTER、rea/dev/Git/Remote/automation変更なし。D handoffの過去append安全拒否を迂回せず、IDは**D資料内のみ・未登録/NOT READY**。後続は安全な引継ぎ経路が確保された際に証拠精査のうえEへ提出。
+
+
+## 2026-10-10 22:42 T017: RTS worldの`loopBGM`はコメント内、全sourceのplaylist callを区別（D-20261010-2242-02）
+[CONFIRMED-SOURCE-SEARCH] ver0.67 normalized `a_default/script/**/*.dat`全域でliteral `loopBGM(` content-searchがCOMPLETED、7出現。対象はRTSscenario.dat:523、event_battle.dat:365、free_ev_battle.dat:222、ev_rnd.dat:1102、event_test.dat:416、politic_sakenomi.dat:319/:341。
+[CONFIRMED-SCRIPT / COMMENT SCOPE] RTSscenario.dat:521-527の`if(isWorldMusicStop()==1 && isGameClear()==0){loopBGM(strbgm1..strbgm30);volume(40)}`は全体が`/* ... */`でコメント化され、同ファイルの当該world初期化では実行命令に含まれない。`strbgm1..30`をRTSの自動playlistとして実装へ復活させない。RTS外の残る6出現は直接再読した周辺でコメント化されず、ただし条件・scenario到達や実再生はVERIFY。
+[CONFIRMED-SOURCE-CROSSCHECK] RTS外では`event_battle.dat:365`・`free_ev_battle.dat:222`・`ev_rnd.dat:1102`・`event_test.dat:416`がr_hzn関連の条件付き`loopBGM(戦闘曲17神社,ボス06神社,ボス08神社)`を記載。`politic_sakenomi.dat:319/:341`は7候補のplaylistをそれぞれ別分岐で記述。これは宣言上の一覧であり、7回の実呼出を意味しない。
+[REIMPLEMENT] `loopBGM`のコメント内テキストと実効callsite、battle/政治イベントの条件付きplaylistとspot自動BGM、MP3/OGG EOF、UI master volume0を異なる層として保持。既存A保存`exe/T006_AUDIO_BACKEND_EOF.md`によれば`loopBGM`は通常`playBGM`と異なるplayer+0x0A値とEOF遷移を持つため、未実行のRTS playlistで音量0再開ループを説明しない。
+[VERIFY / GOLDEN NOT RUN] 標準RTS開始直後の曲選択を観測し、RTSscenarioのcomment内playlistが実発火しないという期待をaudio command traceと照合。別途r_hznの合法battle eventでplaylist遷移・UI master100→0→100・DirectShowイベントの対応を採取する。旧EXE actual PASS0、音量0再生/停止ループの根因は未確定。
+[EVIDENCE] 上記literal7件のsearch COMPLETED、正規化RTSscenario.dat:519-529、event_battle.dat:361-368、free_ev_battle.dat:218-225、ev_rnd.dat:1097-1105、event_test.dat:412-419、politic_sakenomi.dat:313-343、A保存read-only`exe/T006_AUDIO_COMMAND_GROUP.txt`/`T006_AUDIO_BACKEND_EOF.md`。原本/他レーン/禁止途中TSV・拒否EXE processに書込・再実行なし。
+
+
+## 2026-10-10 23:37 T017: RTS専用9スクリプトに有効な明示BGM制御なし（D-20261010-2337-01）
+[CONFIRMED-SOURCE-SEARCH] normalized ver0.67 `a_default/script/8000_RTSシナリオ/`直下の9 `.dat`（RTSbuilding,RTSclass,RTSeasymode,RTSenemybuild,RTSnew,RTSpowerspot,RTSscenario,RTSskill,RTSsummon）をLocal Compactで `playBGM\s*\(|loopBGM\s*\(|stopBGM\s*\(|volume\s*\(|bgm\s*=` のcontent regexで全域検索。COMPLETED、実際のmatchは2件（RTSscenario.dat:523 loopBGM、:524 volume）で、どちらも:521-526の `/* ... */` 内。したがって当該9ファイルには有効な上記明示BGMコマンド/`bgm=`宣言がない（列挙した字句形・当該directoryに限る）。
+[CONFIRMED-SCRIPT] `RTSpowerspot.dat:1-97` を直接再読。RTS world入口2spot `rts_b1`（:3-11）と`rts_b2`（:14-23）の宣言はmap/member/gain等を持つが `bgm`/`volume`は明示しない。`RTSscenario.dat`のscenario rts (:480-531)、world rts (:534-609)にも有効な明示BGM操作は見られない。
+[REIMPLEMENT/IMPACT] RTS専用スクリプトのコメント化BGM playlistを起動時に復活させず、RTSの音楽が聞こえた場合はネイティブのシナリオ/spot BGM選択、共通script event、引継ぎ中のplayer状態等を別候補として追跡。『RTSでBGMは一切鳴らない』とは主張しない。前回D-2242-02のRTSscenario単一コメントscopeを専用フォルダ全体へ拡張した確認。
+[VERIFY] 共通battle/event scriptからの実BGM呼出、nativeのbgm既定・fallback、前sceneからの持越し、codec/EOFの実時刻、UI master=0時の繰返し停止再開は未観測。RTSの音量0不具合の原因を特定したわけではない。
+[GOLDEN/NOT RUN] 原本変更なしの合法RTS 1v1/2v2初回進入/再入場で、scene切替前後のcurrent stem・codec・playBGM/loopBGM/stopBGM呼出由来・stream state・UI master100→0→100・stop/reopen時刻を収集。script command、native autoplay、既存track引継ぎを分離し、観測不能内部状態はINELIGIBLE。旧EXE actual PASS0/new strict MATCH0。
+[EVIDENCE/SAFETY] Local Compact content search session COMPLETED（2 matches、周辺contextは計6行表示）、normalized `RTSscenario.dat:480-609` と `RTSpowerspot.dat:1-97` read-only。T017 D資料への追加のみでA-E他owner、禁止途中T030 TSV、既往拒否EXE操作、原本/REA/dev/Git/Remoteは不変更。READY候補、E統合前。
+
+
+## 2026-10-11 02:35 T017: RTS音源候補となる共通world_bgmの11曲・FULL音源11件と旧監査件数差（D-20261011-0235-01）
+[CONFIRMED-NORMALIZED-SCRIPT] target ver0.67の`a_default/script/context.dat:9-11,21-22`では有効`battle_bgm`が12候補、`world_bgm`が11候補、`title_bgm`が1曲。world/battle_volumeはいずれも40。11件はworld_bgmの同一行のカンマ区切りを個別に数えた結果（未展開の環境別分岐はこの行にはない）。
+[CONFIRMED-FULL-MANIFEST] `evidence/ZIP_ENTRIES.csv`のFULL版（豪華版.zip）`a_default/bgm/`を11名のexact stemで照合し、全11名について各1件の`.ogg`を確認。該当manifest行8903,8920,9088,9111,9169,9182,9184,9228,9229,9234,9262。これはZIP目録の静的照合であり、runtime decode成功/発音を保証しない。
+[INVENTORY RECONCILIATION/VERIFY] D保存済み`T017_BGM_REFERENCE_AUDIT.txt`冒頭の旧集計`property_name_counts`は`world_bgm=10`、`battle_bgm=12`と記載するが、現行context原文はworld11/battle12。旧集計の対象・regex・候補抽出方法を再点検する必要があり、`world_bgm=10`をゲームの上限や音源欠損と断定しない。元集計は書き換えず差分をここに記録する。
+[RTS CONNECTOR/VERIFY] D-20261010-2337-01でRTS専用9datに有効な明示BGM指定が無いことを確認済み。共通context世界曲11件はRTSで鳴る音源の候補集合だが、実際にworld_bgmをRTSで参照するかはnative scene routing・自動再生・音楽state継承を要検証。RTS無音/11曲すべて再生とも断定しない。
+[REIMPLEMENT] sourceの共通world_bgm11候補・battle_bgm12候補を宣言順に保持し、過去の集計値10で切り捨てたり、RTS専用のcomment済30曲playlistへ置換しない。全11曲OGGという資産形式だけから0音量BGM停止再開ループをOGG専用バグと決めない。
+[GOLDEN/NOT RUN] 通常worldとRTS 1v1/2v2の初回入場で使用playlistの由来、曲名とOGG codec、scene開始時のstream state、master100→0→100、終了/再open時刻を別々に観測。開始曲が他由来ならcontext11曲は候補に留める。旧EXE actual golden PASS0、新strict MATCH0。
+[EVIDENCE/SAFETY] Local Compact read-only `context.dat:9-11,21-22`、FULL `ZIP_ENTRIES.csv`上記11行、既存D T017 inventory/referenceと`RTSscenario.dat`/`RTSpowerspot.dat`、保存済みA `exe/T006_AUDIO_BACKEND_EOF.md`。原本・他レーン・MASTER/T018・rea/dev・Git/Remote/設定/スケジュール不変更。禁止未完成T030 TSVおよび既往拒否EXE操作は非使用。正式READYはhandoff追記/再読後に限る。
+
+## 2026-10-11 03:32 新D / T017: world_bgm旧集計10対原文11の原因を特定（D-20261011-0332-01）
+[CONFIRMED-SCRIPT + AUDITOR] normalized `a_default/script/context.dat:10`の有効world_bgmカンマ区切りは11曲。D所有`data/t017_bgm_reference_audit.py` 36-44行付近はprop RHSをsplit(',')してから `simple = re.compile(r"^[^\s,()]+$")` でfilterするため、名前に空白を含む第6曲 `Shintong for Explorer` を除外する。実際の旧監査 `T017_BGM_REFERENCE_AUDIT.txt` には `property_name_counts world_bgm=10`。今回、旧集計と原文の差1件をこの正規表現による脱落として再現した。
+[CONFIRMED-ASSET] 他レーン所有のread-only `evidence/ZIP_ENTRIES.csv:8903`はFULL版 `a_default/bgm/Shintong for Explorer.ogg` 1件を記載。原文world11曲にZIP目録上欠落はなく、当該楽曲は監査集計時のfilterで漏れたもので、資産欠落・原作script欠落ではない。
+[SCOPE/LIMIT] 旧auditはdirect-call側にも同じsimple filterを使用しており、空白を含む*引数*があれば件数から脱落し得る。ただし今回、全direct callの漏れ件数は再集計していない。旧`static_bgm_property_refs=167`・`world_bgm=10`は「空白を含まない単純引数の抽出数」であり、全有効BGM宣言数やnative playlist長ではない。原文のbattle_bgm=12,title_bgm=1は既読sourceと一致。既存audit出力冒頭を上書き・再生成しない。
+[REIMPLEMENT/NEXT] strictのworld playlistは原文11曲の宣言順を保持する。後日T017監査器を改修する場合は、空白入り曲名を許容する構文境界と、追記済み監査履歴を再実行で消さない出力方式を別途設計する。RTSがworld_bgmを自動選択するか、音量0で繰返し停止・再開する原因はVERIFYのまま。
+[GOLDEN NOT RUN] 通常worldとRTS1v1/2v2の曲選択結果に `Shintong for Explorer` が選ばれるか、codec/EOF/master100→0→100を元EXEと比較。actual PASS0 / strict MATCH0。根拠はD監査py(読取のみ)、context.dat:10、FULL ZIP_ENTRIES.csv:8903、旧監査冒頭。禁止途中T030 TSV・既往拒否EXE解析不使用。
+
+
+## 2026-10-11 04:33 新D / T017: 空白を含むBGM直接引数109件・属性9件が旧監査から脱落（D-20261011-0433-01）
+[CONFIRMED-AUDITOR / SCOPE] D所有の未実行監査器 data/t017_bgm_reference_audit.py は direct playBGM/loopBGM のカンマ分割引数と bgm/battle_bgm/world_bgm/title_bgm のRHSカンマ分割引数へ共通 regex ^[^\s,()]+$ を適用するため、空白を含む原作名をスキップする。今回この監査器は実行・書換せず、別の軽量read-only PowerShellで現役normalized ver0.67 a_default/script/**/*.datを走査し、block commentと//行コメントを除外した。入れ子・動的式の完全parserではなく、旧auditと同じliteral regexにおける照合。
+[CONFIRMED-SCAN / DIRECT] playBGM/loopBGMの正規表現マッチ4047箇所から得たカンマ分割非空引数は3032件＝旧監査simple_direct_args=2923件＋空白入り109件（playBGM107、loopBGM2）。109件は13 distinct原文名、例 event_battle.dat:217「Epic Sax Guy WYKO Remix」、po14_event.dat:2927「The Last Crusade」、po2_event.dat:324「I Can't Wait Powermix」。旧direct集計は全非空引数数ではない。
+[CONFIRMED-SCAN / PROPERTY] 有効行の bgm/battle_bgm/world_bgm/title_bgm カンマ分割非空引数は176件＝旧static_bgm_property_refs=167＋空白入り9件。9件の内訳は context.dat:10(world_bgm 1)、spot.dat:439/573/654/738/1149/1304 (bgm 6)、3000_淫ドリームマッチ/dr_spot.dat:316/414 (bgm 2)。既知の Shintong for Explorer 1件（D-20261011-0332-01）を含むため、その1件を新発見として重複計上しない。
+[CONFIRMED-FULL-MANIFEST] 他ownerのread-only evidence/ZIP_ENTRIES.csv のFULL版a_default/bgm/ .mid/.mp3/.ogg目録と原文stemを大小文字を区別せず照合。追加のdirect109/109、property9/9が対応する音源名を持ち、これら118参照に関してFULL目録上の音源欠落0。ただし同一曲の重複参照を含み、118曲という意味ではない。ファイル実decode、play可否、engineの空白名パース、旧auditの他漏れはVERIFY。
+[IMPACT/REIMPLEMENT] strictのBGM抽出・資産管理を旧監査のsimple件数に依存して組むと、存在する空白名のBGM参照を捨てる。source引数名（空白を含む）・属性名・参照位置とmanifestの対応を保持する。一方、旧EXEが各空白名を実際に受理するかは未実機なので、音源存在と再生成功を混同しない。監査器の旧出力を再生成・上書きしない。
+[GOLDEN/NOT RUN] 直接playBGM(Epic Sax Guy WYKO Remix / The Last Crusade)とspot bgm(Shantae Burning Town Arrangement等)を合法なシナリオ導線で選択し、音源名の解決、backend、再生開始、master100→0→100とEOF/stopを区別して記録。旧EXE actual PASS0／新strict MATCH0。T015音量0停止再開ループの原因は本発見のみでは説明できない。
+[SAFETY/NEXT] Local Compactの軽量read-only source scan3回・FULLの既存CSV照合、監査pyは読取のみ。原本zip/exe/snapshot・禁制T030_RTS_PRODUCTION_GRAPH.tsv・過去拒否EXE操作は非使用・非迂回。次は旧BGM監査の構文境界（nested/dynamic、コメントと括弧）、原作BGM実機選択・codec/音量0をVERIFY、E/T018はread-onlyで参照依頼。READYはhandoff追記・再読後にのみ成立。
+
+
+## 2026-10-11 05:39 新D / T017: 空白入りBGM参照群のFULL目録上codec候補はOGG-only（D-20261011-0539-01）
+[CONFIRMED-SOURCE / 増分範囲] normalized ver0.67 a_default/script/**/*.datを軽量read-only再走査し、旧監査と同じblock/line comment除外・playBGM/loopBGM引数・bgm属性処理で前回D-20261011-0433-01の空白入りdirect109参照（13 distinct名、play107/loop2）およびproperty9参照（9 distinct名）を拡張子別に照合。109/9自体は既知であり、今回の新発見として再計上しない。
+[CONFIRMED-FULL-MANIFEST] FULL既存evidence/ZIP_ENTRIES.csvのa_default/bgm/にある.mid/.mp3/.oggをcasefold stemで比較。前記direct109/109およびproperty9/9に対応資産名があり、対象名の拡張子集合はすべて{.ogg}だけで、同stemの.mid/.mp3候補は0。118は参照回数で、独立した楽曲数ではない。
+[具体例] I Can't Waitdeath techno remixはdirect24件（playBGM22/loopBGM2）＋property1件、Epic Sax Guy WYKO Remixはdirect13件＋property1件、Shintong for Explorerはcontext.dat:10のworld_bgm属性1件。いずれもFULL manifest照合ではOGG-only。ソース箇所にはevent_battle.dat:217、po14_event.dat:2927、spot.dat:439等がある。
+[CONFIRMED-SAVED-NATIVE→DERIVED/条件付き] A所有exe/T006_AUDIO_CODEC_RESOLUTION.txtをread-only参照。bundled target再生core VA0x4BDE40はdotless nameの候補を.mid→.mp3→.oggの順に解決し、.oggはcustom OggDecoderへ進む。従って空白名を原作parser/resolverが正常に受理・解決する場合、本109+9参照はOGG backendの検証候補となる。別の既知同stem .mp3/.ogg併存曲「スーパーカズヤのテーマを耳コピしてみた」はMP3優先であり、対照群になる。
+[REIMPLEMENT] 空白を含む原文曲名・コマンド種別とOGG-only資産対応を保持し、legacy simple regexに基づく脱落・任意の拡張子選択を避ける。実際に音源が解決・再生されること、OGGが音量0再開停止ループの原因であることは断定しない。
+[VERIFY/GOLDEN NOT RUN] 旧EXEで合法導線の空白名OGG候補と上記MP3優先曲を100→0→100のmaster volumeで対照し、発行call/選択曲/codec/EOF/stop/reopen/再生可否を個別観測。画面・再生が未観測なので旧EXE actual PASS0・new strict MATCH0。
+[安全・処理限界] D所有の既存監査pyは再実行・改変せず（追記履歴を上書きするため）、normalized sourceと保存済みFULL CSV、Aの保存済証拠のみ照合。初回read-only PowerShell構文エラー1回は同Localの通常文法修正で解消（安全拒否ではない）。原本ZIP/EXE、禁止された不完全T030_RTS_PRODUCTION_GRAPH.tsv、既往拒否操作、MASTER/T018/他レーン、rea/dev、Git/push、Remote、MCP設定、automationに変更なし。T015音量0/focus、T030 isAllDead/no-target/production/AI timingは継続VERIFY。

@@ -1,0 +1,16 @@
+# REA-20261017-W6-P0-REFUSAL-FIREWALL-01｜Wave6候補の安全対象抽出・独立QC
+- [OWNER/CLASS] 独立REA / Wave6候補キュー整合監査、T013・T014・T005参照。WRQ-20261013-REA-DEATHの通常死亡P0は別途未完のまま。新規Ghidra関数取得・旧ゲーム実行・正式キュー登録・MASTER統合は行わない。
+- [PRIMARY READBACK] 既存 QUEUE.json 全668行をLocal read_file→JSON構文parseで再照合。function_queue=64件、waveメタデータは1～5のみ（Wave6なし）、raw status VERIFIED16/TODO48。Wave5 metadataはIN_PROGRESSのまま。これらは古いraw表示であり完成度を表さない。
+- [AUTHORITATIVE RUN/SYNC] runs/20261011T153309850Z/RUN_RESULT.json は完走、source/end SHA E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187、REA6.1.0/Ghidra12.1.4。logs/progress_sync_20261011T153958076Z.json はWave1～5=16/16+10/10+10/10+12/12+16/16=64/64、P0=29/29、P1=35/35。旧表示の原因はQUEUE rename EPERM/PROGRESS SKIPPED_QUEUE_STALE。
+- [REFUSAL EVIDENCE] 既存 REA_WAVE6_ABI_BOUNDARY_AUDIT_20261012_0236.md の REA-RC-20261013-1538-W6-STATIC-PROBE-01 と REA_20261016_1240_CALLSITE_ABI_AND_WAVE6_REFUSAL_RECONCILIATION.md を先読。新規小範囲取得が拒否された 0x515750(T013/P0),0x515790(T013/P0),0x5159B0(T013/P1),0x57D180(T013/P0) は元拒否の再試行・代替解析なし、BLOCKED。
+- [NEW QC/PRIORITY SPLIT] Wave6暫定16候補=P0 5件/P1 11件のうち、既往拒否P0=3件/P1=1件を安全除外。現時点で新規取得試行をしていない候補はP0 2件/P1 10件、合計12件TODO。拒否4件はBLOCKED、5方法が不完了の結果VERIFY=0件、Wave6正式VERIFIED=0/16。
+- [P0 SAFE TODO] T014 0x470980（保存済み0x4705F0 callee ID ev_661507e7456c44d65dd153fff0f2c6b8de0e33a9519370d794118fae0def6743）、0x42E700（保存済み0x470700 callee ID ev_3f9a89a60c30eee71f662be8ef197b9016cfe610caae887926287dcb5d131286）。callee xrefは入口/境界VERIFIEDを意味しない。
+- [P1 EXPLORATION ORDER] T014 0x436680（保存済み親9件）→0x436560（同8件）をread-onlyの既存xrefクロスウォーク優先候補とする。親件数は REA_WAVE6_XREF_ELIGIBILITY_AUDIT_20261012_0140.md 由来。0x402C40は17親あるが既存T005比較処理との重複審査優先。いずれも未実行・機能意味/関数入口/priorityの正式承認はVERIFY。
+- [ACTIONABLE QUEUE GATE] 暫定16候補に拒否済み4件を含むため、そのまま正式Wave6に採用しない。正規QUEUE更新可能・許可確認が成立するまでは非拒否12件の候補整理のみ。新規16件の分母にするなら拒否4件の代わりに根拠付き未重複4候補を正規に選別し、旧Wave1～5分母は凍結維持。QUEUE/PROGRESSのrename EPERM回避・ACL変更・tmp強制移設を行わない。
+- [WORK LINK] 死亡正常経路0x575A60→0x575DF0→0x5684B0の外側callbackは既存 SOURCE_RECOVERY_DAMAGE_STATUS_20261011.md に段階別の静的契約があり、vtable/Task/Spatial/実RETURNが不足。再解析・推測で正常returnを偽装せずT012/T013のVERIFYを継続。
+- [MASTER/GOLDEN] 今回読取最新MASTER checkpoint171、34Task DONE9/IN_PROGRESS21/VERIFY4。旧原作EXE gameplay golden PASS0、新旧strict MATCH0。ゲーム再実装率は測定していない。今回新規Ghidra5方法evidence ID=0、静的VERIFIED増0、本REA独立キュー監査1件。
+- [PREFLIGHT] 2026-10-17 17:38:23 JST Local CPU42%、空きRAM13.43GiB、Java/Ghidra/REA一致プロセス0、active.lock=false、承認済コピーSHA256一致。heavy runner/syncはWave6未登録・版6.4.0/6.1.0差・更新EPERM・拒否4件により起動0、Ghidra解析時間0秒、軽量総経過未計測。
+- [LIMIT/SCOPE] 単一MCPセッション、最大4関数/回、Ghidra900000ms/request960000ms。0x5710C0..0x571500・拒否済みREA exporter・Wave6拒否4VA・過去拒否writeの再試行/別tool,path,shell,Remote迂回0。原本ZIP/EXE/SAVE、研究A～E、MASTER、T018、Work/WRQ、Git/push、MCP設定、automationの変更操作なし。
+- [NEXT] 最優先WRQ-20261013-REA-DEATHの保存済み帰還契約/未解決正常calleeをread-only精査。その後Wave6のP0残2候補の元xrefを安全に検証する。今後の新規逆コンパイル開始はキュー正式登録と全安全条件が整った時のみ。
+
+- [RECOVERY REA-RC-20261017-T012-SUPPOSED-C-PATH-01 / OTHER / RESOLVED] 非正規の推測ファイル名 dev_lab/recovered_source/ghidra_c_pseudocode/FUN_00547FC0.c をLocal get_file_infoで1回照会しENOENT。対象は存在せず読取・書込・新逆解析0。同パス再試行をやめ、既存exe/T012_DAMAGE_CALLER_CONTEXTS.txtの保存済みcallee入口0x547FC0..0x548099だけを正規にread-only照合。第三引数[EBP+0x10]と全帰還は引き続きVERIFY、資料欠損と偽称しない。今回の調査成果として新VERIFIEDには数えない。
