@@ -41,7 +41,7 @@ Local native excerpt SHA256 4a43f8ce81bf711a1c18697e31619f5c23d16c145ef5428ef658
 
 ### Path selection is a separate gate
 
-Existing4C0960 constructs sound/name + suffix and calls4C27190 before the factory. V9 function4C27190 first builds a path using global prefix68B370, checks FindFirstFileA, and if missing rebuilds using fallback prefix68B38C. It returns shared scratch AC2018.
+Existing4C0960 constructs sound/name + suffix and calls00427190 before the factory. V9 function00427190 first builds a path using global prefix68B370, checks FindFirstFileA, and if missing rebuilds using fallback prefix68B38C. It returns shared scratch AC2018.
 Thus simply deleting WAVs and swapping .wav to .ogg after the resolver may choose a different source root. Explicit manifest resolution must reconstruct the original search precedence using existing OGG availability, or the affected resolver callers must also be adapted. Copy scratch path before later engine calls. Do not globally hook the shared resolver without enumerating its non-audio users.
 Voice preprocessing flag1 also remains relevant to unmapped/native assets. Mapped converted normal OGGs bypass that WAV preprocessing; unmapped inputs should preserve original behavior.
 
@@ -88,3 +88,56 @@ Revised local observation scripts (v2, NOT runtime-verified):
 - No bridge implementation, WAV deletion or forced internal call was performed. SINGLE/BATTLE observations remain pending.
 
 Debugger behavior references: [exception breakpoint scope](https://help.x64dbg.com/en/latest/commands/breakpoint-control/SetExceptionBPX.html), [condition](https://help.x64dbg.com/en/latest/commands/conditional-breakpoint-control/SetExceptionBreakpointCondition.html), [fast resume](https://help.x64dbg.com/en/latest/commands/conditional-breakpoint-control/SetExceptionBreakpointFastResume.html). Pass-through behavior additionally crosschecked against current upstream debugger.cpp: default DBG_EXCEPTION_NOT_HANDLED in cbDebugEvent and early false-condition fast-resume return in cbGenericBreakpoint, without continuation-status override. Actual installed-version behavior still requires the next user run.
+
+
+## v2 runtime observation: SE and battle factory contract (2026-11-06)
+
+Status: SE_AND_BATTLE_FACTORY_ABI_OBSERVED / SINGLE_RUNTIME_PENDING / BRIDGE_NOT_IMPLEMENTED.
+
+The user completed another normal-play diagnostic. The saved capture contains 32 SE CALL/RETURN pairs and 32 BATTLE CALL/RETURN pairs (the configured per-site cap); no SINGLE pairs. This validates the original WAV factory behavior, not playback of converted OGG assets through the proposed bridge.
+
+Evidence: local wav-bridge-v2.log SHA256 e98133b282c696c31862808681bd2d84a02429e1c6bae764c8719912c2a5e667, 2188136 bytes, 40329 lines. Original EXE SHA256 was checked again and remains e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187. Raw logs, screenshots, original assets and private machine paths are not uploaded.
+
+### Observed contract
+
+| Property | SE (32 pairs) | Battle (32 pairs) |
+|---|---|---|
+| Factory CALL / return RVA | C0B81 / C0B86 | C082F / C0834 |
+| Captured thread ID | 604 | 604 |
+| manager | ABE3A0 | ABE3A0 |
+| manager+0 device | 035B0848 | 035B0848 |
+| third stack argument | 0 | 1 |
+| ESP after minus before CALL | +0C in all32 | +0C in all32 |
+| EBX, EBP, ESI, EDI | preserved in all32 | preserved in all32 |
+| EAX non-null | 31 | 32 |
+| first DWORD of non-null result | 65B01568 | 65B01568 |
+
+Addresses other than RVAs are run-specific. User's x32dbg screenshot labels main thread1540 decimal (=604 hex), matching all observed factory calls. This does not establish thread safety for arbitrary DLL callers. Combined with the static three stack arguments and ret0C, observations support the stdcall-compatible factory adapter; they do not permit reusing an unrelated decoder ABI.
+
+One SE call at capture lines954/956 requests a_default/sound/none.wav and returns EAX0, with the same +0C stack cleanup and preserved registers. Both none.wav and none.ogg are absent in the diagnostic copy at inspection. Preserve the factory's null-result behavior; do not fabricate an audio buffer or treat every missing map entry as a decoder fault. This evidence does not establish a special built-in meaning for the string 'none'.
+
+The log includes battle voice paths with advance/join/dead names. Names alone are not a full classification of user-visible behavior. No fresh user audibility/volume acceptance claim is inferred from these pointer observations. Existing accepted DAT playback evidence remains separate.
+
+### Debugger and capture limits
+
+No old OGGPROBE records or E06D7363 notifications appear in this capture. One explicit debugger pause follows the manual pause message near the end. Fast resume suppresses exception reporting, so absence of those notifications does NOT prove no handled C++ exceptions occurred. Other researchers' NAME2UNIT/SETTLE probes remain present and were not changed.
+
+The saved file does not contain END. After cleanup was requested, the user supplied a screenshot of stop script line17 failing because the E06D7363 exception breakpoint no longer exists. This is after the script's log-close command; it is not a game/decoder error. Do not require another combat run or infer missing observations from this repeated-cleanup error. Durable log END and complete cleanup are not independently proved by the captured file; absence of the temporary exception breakpoint is directly shown in the UI evidence. Future capture tooling should use a separate durable cleanup receipt rather than rely exclusively on a log line immediately before closing redirection.
+
+### Additional static work and correction
+
+Correction to the earlier path-selection paragraph: the resolver is **00427190**, not the mistyped **04C27190**. V9 entry0x00427190 contains the two-prefix FindFirstFileA logic, and the pseudocode for004C0960 calls FUN_00427190. Prefix addresses68B370/68B38C and scratch AC2018 are unchanged. This is a report correction, not a formal dictionary update.
+
+SINGLE runtime remains unobserved, but its next investigation targets are narrowed:
+- native CALL00434D8D ->004C01A0 (containing function00434CC0);
+- native CALL004A1BD0 ->004C01A0 (VM dispatcher004A1250; V9 places the call in case0x4B with a volume/global-enable gate; command identity still requires corroboration);
+- native CALL00578737 ->004C01A0 (containing function00578370; V9 shows flag1 and a separate volume/global-enable gate).
+These direct CALL bytes, the three factory CALLs and ret0C were rechecked against the exact EXE. Local native excerpt SHA256 c9c073fbeed6e35108a58dbbd8fdc54734d219be99af0eb698b712863ae89d2f.
+
+V9 for004C01A0 shows the single-slot behavior: stop/release old manager+34 buffer, clear slot; create through004C0E50 with flag1; if non-null, set volume and Play, then store interface at manager+34 and volume at manager+38. This is static supporting evidence, not a completed SINGLE runtime trial.
+
+### Effect on implementation plan
+
+SE and battle observation gates are now satisfied for the bounded captured paths, including a native null-result case. Keep the same factory signature candidate, borrowed original device, and one stopped Buffer8 reference transferred to the original caller. Keep Play/volume/later Release with the original caller. Do not replace the existing eight-voice DAT API with this synchronous factory interface.
+
+Before all-WAV removal: resolve scenario-root precedence with absent WAVs; confirm installation before relevant cache fills; implement bounded worker decode requests and cancellation/ownership; validate returned original-device buffers and failure paths; then test the currently unobserved SINGLE route. No bridge code or live patch was installed by this observation.
