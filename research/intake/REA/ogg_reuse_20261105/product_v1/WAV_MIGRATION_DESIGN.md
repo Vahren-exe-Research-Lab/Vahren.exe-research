@@ -1,6 +1,6 @@
 # OGG-only test-copy migration — follow-up design, 2026-11-06
 
-Status: ASSET_CONVERSION_VERIFIED / BRIDGE_CANDIDATE_BUILT_RUNTIME_PENDING.
+Status: ASSET_CONVERSION_VERIFIED / SUBSET_SE_SINGLE_ACCEPTED_BATTLE_PENDING.
 The original DAT-path plugin's world-event playback has passed bounded runtime/user acceptance.
 This separate follow-up is authorized by the user's request to convert all WAV files and play the isolated copy. Permission to delete original WAVs is present, but deletion is not useful until existing callers are routed successfully.
 
@@ -194,3 +194,23 @@ The broader existing Python discovery had16 errors from missing tools/claude_lec
 A separate launcher checks EXE/DLL/map hashes, archives previous OGG/loader logs, starts the game normally and collects fresh logs plus exit receipt after normal exit. The authored one-shot world event uses vc for SINGLE coverage. User checks short battle, BGM, effects/voices and category volume. No x32dbg, screenshots or repeated breakpoints are required.
 
 Pending: observed BRIDGE_ACTIVE=4 before relevant sound creation; native decode of actual subset assets; SINGLE/BATTLE/SE result0 and user audibility; original category volume/cache/duplicate behavior; no regression in BGM/game operation. Only after subset acceptance should the full map and WAV-removal phase proceed. Formal function-dictionary adoption remains curator-owned.
+
+
+## First subset runtime: SE + SINGLE accepted, battle pending (2026-11-06 JST)
+
+Status: SUBSET_SE_SINGLE_RUNTIME_ACCEPTED / BATTLE_RUNTIME_PENDING.
+
+User completed a normal launcher run from02:22:02 to02:22:42 JST, PID40604, exit code0. They explicitly confirmed the test voice was audible and BGM/effects/game operation had no problem; they had NOT entered a battle. This is bounded acceptance of the exercised paths, not acceptance of all63 mapped clips or all5972 converted assets.
+
+Identity: product source c78b09647579bcd1aae7440f2c7caed8de811174; DLL9c8b87c31fa168850869a704232edb5888ffbf9d71f00a321075de1f06e28225;63-entry map34599cd8ff6b636aa03bcbfbffb4ba7c417144a3d210d884aaea03e4406d95b1. Fresh OGG log SHA2566eac1cd32a5a3d6984b1a3d03013c7babd9fbd11a18c1f14af4a32a26407ecf5,4499 bytes,86 lines; loader log ab09735865300776213836274949ed7a4c78c2eb6b0abf66d2db8843289ca3ed. Launcher collected both without missing logs or collection errors. Private paths/raw logs remain local.
+
+- Four BRIDGE_PATCH_RESULT=0, then BRIDGE_ACTIVE=4 before first mapped call: early integration succeeded in this run.
+- Six mapped SE calls (route3), one mapped SINGLE call (route1); zero battle calls (route2).
+- All seven native opens returned0, reached EOF and cleared once with return0.
+- All seven bridge buffer results returned0; total decoded PCM366354 bytes. Formats observed: mono22050/44100 and stereo44100.
+- Patch installation thread42584, decoder thread31248, factory caller thread36716 (decimal runtime IDs). This concretely confirms the design's separate initialization/decoder/game-thread roles; an init-thread-equals-UI gate would have been wrong.
+- Six coarse elapsed tick readings were0ms and one16ms. These GetTickCount observations do not prove zero decode latency or establish load-test performance.
+- One original SE fallback (BRIDGE_NATIVE route3) occurred. Its filename is not logged, so do not identify it as none.wav without evidence.
+- No mapped error/poison events. Process exit0 does not independently prove every original cached buffer's Release path; active patch lifetime remains process-scoped.
+
+Next trial uses the unchanged DLL, map, event and launcher. User was instructed to enter one battle, issue movement/attack commands, check battle voices/effects/BGM and category-volume behavior, then exit normally. Full map/WAV removal remains gated on the battle trial. No new game mutation or rebuild was needed for this continuation.
