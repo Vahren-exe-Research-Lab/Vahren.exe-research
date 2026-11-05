@@ -1,0 +1,47 @@
+{
+  "research_id": "E-AUDIT-20261101-02H-T020-T013-OFF-EXACT-VSLOT-BRANCH-01",
+  "owner": "E",
+  "task": "T020",
+  "evidence_status": "STATIC_BYTE_VERIFIED_AND_CONDITIONAL_SYNTHETIC_VERIFY_NOT_READY",
+  "pc_connection": "ONLINE",
+  "original_exe_executed": false,
+  "B_source_id": "B-20261101-02H-T013-VIEW-OFF-COMPARE-VSLOT5C-01",
+  "B_source_sha256": "389341F1F321CF412D6930B743807941476C97F4E15F63CACF0EAA552146F61A",
+  "native_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "native_window_sha256_match": "4/4",
+  "direct_e8_bytes_match": "2/2",
+  "indirect_ffd0_bytes_match": "1/1",
+  "unit_tests_pass": "6/6",
+  "synthetic_cases": 392,
+  "unique_ids": 392,
+  "files": [
+    {
+      "relative_path": "tests/T020_E_T013_OFF_EXACT_VSLOT_ACCEPTANCE_20261101_02H.md",
+      "bytes": 5674,
+      "sha256": "E1E5B9646175A9BB0A4578F19BC8F8BC21BE77ED8CCC9D9B77B5601593F18F6B"
+    },
+    {
+      "relative_path": "tests/T020_E_T013_OFF_EXACT_VSLOT_CASES_20261101_02H.json",
+      "bytes": 228505,
+      "sha256": "C52A17E3E1221057D7AC8CA4B1FCB5482AADB27192D8C9B1614DA813312D1144"
+    },
+    {
+      "relative_path": "tests/t020_e_t013_view_off_vslot_branch_20261101_02H.py",
+      "bytes": 3874,
+      "sha256": "9009123EF652346F8E1EAF4EB6CE813CD69233BD55F325CA51BB641B7FF17F68"
+    },
+    {
+      "relative_path": "tests/t020_e_t013_off_exact_native_window_20261101_02H.py",
+      "bytes": 1953,
+      "sha256": "108D1B51F1DBC7619DF7FD66C0113029729C377607C0D2270F9AEB10F3FD268B"
+    }
+  ],
+  "official_ready_integrated_new": 0,
+  "checkpoint_last_confirmed": 196,
+  "official_ready_last_confirmed": 596,
+  "gameplay_dynamic_observed": 0,
+  "actual_golden_pass": 0,
+  "strict_match": 0,
+  "readback_status": "files_independently_read_and_hashed;receipt_direct_readback_success",
+  "blocked_legacy_operations_retried": false
+}

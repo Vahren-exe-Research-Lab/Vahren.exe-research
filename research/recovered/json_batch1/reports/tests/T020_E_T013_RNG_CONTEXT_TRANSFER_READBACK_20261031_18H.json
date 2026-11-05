@@ -1,0 +1,22 @@
+{
+  "research_id":"E-AUDIT-20261031-18H-T020-T013-RNG-CONTEXT-NEGATIVE-INFERENCE-01",
+  "owner":"E/T020",
+  "source_type":"PC_LOCAL_INDEPENDENT_SHA_READBACK",
+  "native_static_checks_pass":26,
+  "design_fixture_schema_checks_pass":6,
+  "old_game_dynamic_observed":0,
+  "actual_golden_pass":0,
+  "strict_match":0,
+  "python_exit_code":0,
+  "files":[
+    {"path":"tests/t020_e_t013_rng_context_transfer_gate_20261031_18H.py","bytes":3637,"sha256":"379E1DEBF740CD2ADADFE77E20FF75DB9646AED34DC0689F5C51102461AB4D79"},
+    {"path":"tests/T020_E_T013_RNG_CONTEXT_TRANSFER_CASES_20261031_18H.json","bytes":2132,"sha256":"D0DC05D7535FC2B00DE19C1DFF3C513942716962EB0804582F4B70DA8FA49D26"},
+    {"path":"tests/T020_E_T013_RNG_CONTEXT_TRANSFER_ACCEPTANCE_20261031_18H.md","bytes":4878,"sha256":"64284126FCF35988CF0969BDA8F89C29864440201C3C641701FA5B90E952B2AF"},
+    {"path":"data/T013_RNG_CONTEXT_CARRY_NO_DIRECT_CMP_NATIVE_20261031_18H.md","bytes":6818,"sha256":"6EACB969DDEC6E7F40408A342D17FD32A9401B9664C21F8A7071C05DB70298F3"}
+  ],
+  "master_checkpoint_last_confirmed":196,
+  "ready_last_confirmed":596,
+  "ready_added":0,
+  "sync":"KB_CANDIDATE_ONLY_NOT_PUBLISHED",
+  "status":"STATIC / VERIFY / NOT READY"
+}

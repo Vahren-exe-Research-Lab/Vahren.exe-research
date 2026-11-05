@@ -1,0 +1,43 @@
+{
+  "research_id": "E-AUDIT-20261101-01H-T020-T013-VIEWFLAG-PRODUCER-CONSUMER-01",
+  "owner": "E",
+  "task": "T020",
+  "timestamp_jst": "2026-11-01 01H",
+  "state": "STATIC_SOURCE_REVIEW_SYNTHETIC_VERIFY_NOT_READY",
+  "readback_method": "Desktop Commander Local Compact direct read_file/get_file_info plus independent PowerShell Get-FileHash/JSON parse",
+  "files": [
+    {
+      "name": "t020_e_t013_view_flag_writer_chain_20261101_01H.py",
+      "bytes": 3546,
+      "sha256": "EA17586EC823F6394817C53BDFE271710C6AE4A501F05591AEF5BE0668F6D1F6"
+    },
+    {
+      "name": "T020_E_T013_VIEWFLAG_CHAIN_CASES_20261101_01H.json",
+      "bytes": 14663,
+      "sha256": "30A4C717B9B52C4138B53346097B984791FC49E4911C5AB7132612891EAFABE7"
+    },
+    {
+      "name": "T020_E_T013_VIEWFLAG_CHAIN_ACCEPTANCE_20261101_01H.md",
+      "bytes": 5352,
+      "sha256": "20895EEE1230762FDA5938A80A235ED5FBAEB50CD9E26AFE3744547C89664862"
+    }
+  ],
+  "regression": {
+    "unittest_pass": 4,
+    "unittest_fail": 0,
+    "exit_code": 0,
+    "fixture_count": 32,
+    "unique_id_count": 32,
+    "route_raw": 20,
+    "route_d3dx_not_run": 12,
+    "original_gameplay_pass": 0,
+    "strict_match": 0
+  },
+  "formal_ready_new": 0,
+  "master_checkpoint_old": 196,
+  "master_ready_old": 596,
+  "blocked_prior_kept": true,
+  "new_safety_refusal": 0,
+  "new_connection_error": 0,
+  "kb_candidate_not_published": true
+}

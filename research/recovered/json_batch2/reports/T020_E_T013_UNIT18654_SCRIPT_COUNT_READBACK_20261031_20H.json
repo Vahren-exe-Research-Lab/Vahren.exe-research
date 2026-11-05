@@ -1,0 +1,32 @@
+﻿{
+    "windows":  2,
+    "completed_at":  "2026-10-31T21:08:28+09:00",
+    "calls":  2,
+    "research_id":  "E-AUDIT-20261031-20H-T020-T013-SCRIPT-LIST-COUNTER-GATE-01",
+    "case_count":  704,
+    "state":  "READBACK_PASS_SYNTHETIC_NOT_READY",
+    "instructions":  9,
+    "unique_case_ids":  704,
+    "files":  [
+                  {
+                      "path":  "tests\\t020_e_t013_unit18654_script_count_gate_20261031_20H.py",
+                      "sha256":  "7823D3F786005B34A13ED4094D02F6653CF83494A5CF9C94677335EF842452E2",
+                      "bytes":  5223
+                  },
+                  {
+                      "path":  "tests\\T020_E_T013_UNIT18654_SCRIPT_COUNT_CASES_20261031_20H.json",
+                      "sha256":  "4FC0C20038FF5A31551362C6863B21D3DC3251E8811522DED48049590550B844",
+                      "bytes":  694512
+                  },
+                  {
+                      "path":  "tests\\T020_E_T013_UNIT18654_SCRIPT_COUNT_ACCEPTANCE_20261031_20H.md",
+                      "sha256":  "728237C261D6A096BF8A8DAAF0BA05920C37BB1D31DF83D16853425571EC1D2B",
+                      "bytes":  6168
+                  },
+                  {
+                      "path":  "data\\T013_UNIT18654_LIST_WRITER_ERASE_NATIVE_20261031_20H.md",
+                      "sha256":  "29E577D5E43D9AD047B211F42AAD20BB80ED813C69BC8B4177CD2072AE1FE05B",
+                      "bytes":  4942
+                  }
+              ]
+}

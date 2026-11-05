@@ -1,0 +1,15 @@
+{
+  "base": "b9ce5e523d56076c1ebf7ea32a2499da43bebfc9",
+  "selected": 30,
+  "accepted": 30,
+  "whole_file_deferred": 0,
+  "root_ledger_rows": 1649,
+  "searchable_documents": 1621,
+  "field_mentions": 5557,
+  "symbols": 488,
+  "fields": 120,
+  "relations": 159,
+  "corrections": 15,
+  "new_native_tests": 0,
+  "original_cleanup": "NOT_PERFORMED"
+}

@@ -1,0 +1,33 @@
+{
+    "id":  "E-AUDIT-20261031-15H-T020-T013-KIND8-PREQUEUE-RNG-GATE-01",
+    "owner":  "E",
+    "task":  "T020",
+    "check":  "INDEPENDENT_FILE_READBACK",
+    "passed":  80,
+    "expected":  80,
+    "golden_pass":  0,
+    "strict_match":  0,
+    "formal_ready_added":  0,
+    "files":  [
+                  {
+                      "relative_path":  "tests/t020_e_t013_kind8_pregate_rng_contract_20261031_15H.py",
+                      "bytes":  5391,
+                      "sha256":  "01789D161B7BE7937214C16CB1BA82EAD466E0220F1D181DD6E78127899E5FD3"
+                  },
+                  {
+                      "relative_path":  "tests/T020_E_T013_KIND8_PREQUEUE_CASES_20261031_15H.json",
+                      "bytes":  48691,
+                      "sha256":  "E7ADE4C1AD5E0FE4069EE0519E47AE5031266093A62524982FCC1948FE1D58FA"
+                  },
+                  {
+                      "relative_path":  "tests/T020_E_T013_KIND8_PREQUEUE_ACCEPTANCE_20261031_15H.md",
+                      "bytes":  6209,
+                      "sha256":  "EDB29972F9CC7A6FAB72A94BBE531A18EFD3FB83896DBB0F8117BD4D3E1A1339"
+                  },
+                  {
+                      "relative_path":  "data/T013_KIND8_RANDOM_PAYLOAD_QUEUE_NATIVE_20261031_15H.md",
+                      "bytes":  6548,
+                      "sha256":  "FAEF6FDEF83E746CD0F27A5E601A6662D97A23ECF7757F2A3FD1F7C94F58C03B"
+                  }
+              ]
+}

@@ -1,0 +1,41 @@
+{
+  "research_id": "E-AUDIT-20261031-13H-T020-T013-FIXED-ANCHOR-CORRECTION-01",
+  "owner": "E/T020",
+  "state": "STATIC_BYTE_VERIFIED/CONDITIONAL_SYNTHETIC_EXECUTED/VERIFY/NOT_READY",
+  "original_pe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "b_source_sha256": "6C09EA760DEB4FDD6C6793648833D22C2B246A94A8AEB82BB8C9FB6FAFA9CB18",
+  "source_owner_id": "B-20261031-13H-T013-SORT-ANCHOR-TIE-CORRECTION-01",
+  "files": [
+    {
+      "name": "t020_e_t013_fixed_anchor_rank_gate_20261031_13H.py",
+      "bytes": 6095,
+      "sha256": "D907B19B4F75285BAE7AC2A7692F2D13E5279EE2637D51B2EE303B9FBADA996C"
+    },
+    {
+      "name": "T020_E_T013_FIXED_ANCHOR_CASES_20261031_13H.json",
+      "bytes": 465126,
+      "sha256": "750F0C6BE1CE4BD08E07C5CE258471006767E016546C4EA5D63BF84A8AD9C174"
+    },
+    {
+      "name": "T020_E_T013_FIXED_ANCHOR_CORRECTION_ACCEPTANCE_20261031_13H.md",
+      "bytes": 4909,
+      "sha256": "157AD16C3163FDB6124564113BDF2BF63E9CA655146B25C784246C36F6D82785"
+    }
+  ],
+  "verification": {
+    "original_pe_sha_match": true,
+    "sha_windows": 6,
+    "direct_e8_calls": 3,
+    "synthetic_test_cases": 4032,
+    "synthetic_pass": 4032,
+    "obsolete_prev_score_counterexamples": 1044,
+    "exit_code": 0,
+    "original_game_executed": false,
+    "golden_pass": 0,
+    "strict_match": 0
+  },
+  "new_ready": [],
+  "master_written": false,
+  "knowledge_git_written": false,
+  "readback_status": "SHA256 and byte size independently computed; JSON readback to be verified"
+}

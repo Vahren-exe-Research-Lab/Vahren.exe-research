@@ -1,0 +1,55 @@
+{
+  "research_id": "E-AUDIT-20261031-23H-T020-T013-RECT-INSET-WINAPI-01",
+  "owner": "E/T020",
+  "status": "STATIC_PE_BYTE_VERIFIED; WIN32_API_SYNTHETIC_PASS; VERIFY; NOT_READY",
+  "test_command": "python -B tests/t020_e_t013_rect_bool_winapi_gate_20261031_23H.py",
+  "test_exit_code": 0,
+  "test_result": {
+    "bounded_PE_regions": "2/2",
+    "direct_E8": "3/3",
+    "win32_inflate_ptinrect": "480/480",
+    "unique_case_ids": 480,
+    "original_gameplay_runs": 0,
+    "golden_pass": 0,
+    "strict_match": 0
+  },
+  "artifacts": [
+    {
+      "path": "tests/t020_e_t013_rect_bool_winapi_gate_20261031_23H.py",
+      "size": 3776,
+      "sha256": "1FD03E5051AC43FFDCFCAC1B652B4E2165D7FA6D959D441528DBE2AAED0BDBCD"
+    },
+    {
+      "path": "tests/T020_E_T013_RECT_BOOL_WINAPI_CASES_20261031_23H.json",
+      "size": 149562,
+      "sha256": "5F42D516F6101617F3EC3381A1CAF8EEF0E2CEE431160F94F9B5620C783D3D72"
+    },
+    {
+      "path": "tests/T020_E_T013_RECT_BOOL_WINAPI_ACCEPTANCE_20261031_23H.md",
+      "size": 5104,
+      "sha256": "31385B25564A61D9DDD4F80E83DD9473E6A643599A5FDB9413E187F71BA1DD19"
+    }
+  ],
+  "source_B_report_sha256": "356C4A947976A349342CAF1B6819A2E363FCE129E9F1996AC445283B57B321BB",
+  "source_PE_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "master_checkpoint_inherited": 196,
+  "ready_inherited": 596,
+  "ready_integrated_new": 0,
+  "tasks_old": {
+    "done": 9,
+    "in_progress": 21,
+    "verify": 4
+  },
+  "blocked_unchanged": [
+    "prior E T018 table boundary",
+    "E note refusals",
+    "C T026/T032",
+    "D T030",
+    "forbidden 0x5710C0..0x571500",
+    "B HOLD21",
+    "missing 10/25 raw text",
+    "OFFLINE-UNSYNCED"
+  ],
+  "limits": "Win32 API only, not 0x4C1690 input transform, vtable effects, original game, final target, or legal G0-G2",
+  "next": "Lawful G0/G1/G2 same-run evidence first; then authorized read-only 0x4C1690 / 0x57D9A9."
+}

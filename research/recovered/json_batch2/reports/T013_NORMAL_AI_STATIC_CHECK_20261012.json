@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "timestamp_jst": "2026-10-12T20:20:55.743242+09:00",
+  "evidence_class": "SAVED_SOURCE_SHAPE_AND_BRANCH_MODEL_NOT_NATIVE_EXECUTION",
+  "source_sha256": "a8ffd295a1d5cc0569eb162c6984b9411edc5504343bbd21aca393308abb2d13",
+  "script_sha256": "2211389b10c9143a9a966019d3c51b2b433a4a8741f9a19896c2e5814a99ca73",
+  "source_target_sha256_label": "e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187",
+  "target_reopened_or_executed": false,
+  "source_native_instruction_count": 1344,
+  "groups": [
+    {
+      "group": "saved_byte_ranges_and_callback_boundaries",
+      "checks": 3873
+    },
+    {
+      "group": "571A40_all_byte_pairs_branch_model",
+      "checks": 65539
+    },
+    {
+      "group": "HP_MP_ordered_x87_branch_model_not_precision_emulation",
+      "checks": 2025
+    },
+    {
+      "group": "signed_stat_status_mode_and_secondary_rng_models",
+      "checks": 4378
+    },
+    {
+      "group": "nearby_tables_strict_boundary_and_direct_rng",
+      "checks": 41
+    }
+  ],
+  "checks": 75856,
+  "failures": [],
+  "status": "PASS",
+  "original_gameplay_golden_pass": 0,
+  "new_engine_strict_matches": 0,
+  "limits": [
+    "No original EXE execution or fresh decompilation.",
+    "Branch models check interpretation, not observed game behaviour.",
+    "Fraction comparisons are not x87 precision emulation.",
+    "No claim about RNG inside unresolved callees.",
+    "Callback full header range has trailing partial instruction; only complete callback functions counted."
+  ]
+}

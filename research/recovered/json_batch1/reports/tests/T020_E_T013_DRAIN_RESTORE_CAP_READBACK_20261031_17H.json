@@ -1,0 +1,36 @@
+{
+  "research_id": "E-AUDIT-20261031-17H-T020-T013-DRAIN-RESTORE-CAP-GATE-01",
+  "status": "STATIC_SYNTHETIC_VERIFY_NOT_READY",
+  "synthetic_cases": 79,
+  "synthetic_pass": 79,
+  "capacity_cases": 70,
+  "drain_cases": 9,
+  "native_windows": 5,
+  "direct_e8_calls": 4,
+  "old_dynamic": 0,
+  "actual_golden_pass": 0,
+  "strict_match": 0,
+  "new_ready": 0,
+  "file_checks": [
+    {
+      "relative_path": "tests/t020_e_t013_input_drain_capacity_gate_20261031_17H.py",
+      "size": 8428,
+      "sha256": "9DC6F458DF80A8FB764D124E4004022DE9D4C2BD1041596B3912B2D236BB6213"
+    },
+    {
+      "relative_path": "tests/T020_E_T013_DRAIN_RESTORE_CAP_CASES_20261031_17H.json",
+      "size": 31077,
+      "sha256": "D2D1B0ADEDCA4B3AA063952E1CB03C904C316B4BB084CDEA677F12072F6AE012"
+    },
+    {
+      "relative_path": "tests/T020_E_T013_DRAIN_RESTORE_CAP_ACCEPTANCE_20261031_17H.md",
+      "size": 3433,
+      "sha256": "4EE430EE7CB14AFF2B44BB8F3AB3338B5CBD233E9C8FE5296DC8D1079D42CD7B"
+    },
+    {
+      "relative_path": "data/T013_INPUT_DRAIN_RESTORE_LIST_CAP_NATIVE_20261031_17H.md",
+      "size": 6765,
+      "sha256": "A655D75FFAE3F45B8C824ADD5E6254678A420775AF0BC47C6EF9CD8A17B0E317"
+    }
+  ]
+}
