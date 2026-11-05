@@ -52,7 +52,8 @@ def _typed_equal(a, b):
     """
     if type(a) is Decimal:
         return (type(b) is float and math.isfinite(b) and
-                a == Decimal(str(b)))
+                a == Decimal(str(b)) and
+                (not a.is_zero() or a.is_signed() == (math.copysign(1.0, b) < 0)))
     if type(a) is not type(b):
         return False
     if isinstance(a, dict):
@@ -228,6 +229,31 @@ class ProjectionBindingTests(unittest.TestCase):
         c["g2"]["deployed"][0]["order"] = 0.0
         self.assertEqual(self.result(raw=raw, digest=hashlib.sha256(raw).hexdigest(),
                                      receipt=c)["status"], "SOURCE_JSON_INVALID")
+
+    def test_negative_zero_decimal_must_not_alias_positive_float_receipt(self):
+        raw = self.raw.replace(b'"order": 0', b'"order": -0.0')
+        self.assertNotEqual(raw, self.raw)
+        c = json.loads(json.dumps(self.capture))
+        c["g2"]["deployed"][0]["order"] = 0.0
+        self.assertEqual(self.result(raw=raw, digest=hashlib.sha256(raw).hexdigest(),
+                                     receipt=c)["status"], "SOURCE_RECEIPT_UNBOUND")
+
+    def test_positive_zero_decimal_must_not_alias_negative_float_receipt(self):
+        raw = self.raw.replace(b'"order": 0', b'"order": 0.0')
+        self.assertNotEqual(raw, self.raw)
+        c = json.loads(json.dumps(self.capture))
+        c["g2"]["deployed"][0]["order"] = -0.0
+        self.assertEqual(self.result(raw=raw, digest=hashlib.sha256(raw).hexdigest(),
+                                     receipt=c)["status"], "SOURCE_RECEIPT_UNBOUND")
+
+    def test_matching_negative_zero_remains_synthetic_only(self):
+        raw = self.raw.replace(b'"order": 0', b'"order": -0.0')
+        self.assertNotEqual(raw, self.raw)
+        c = json.loads(json.dumps(self.capture))
+        c["g2"]["deployed"][0]["order"] = -0.0
+        r = self.result(raw=raw, digest=hashlib.sha256(raw).hexdigest(), receipt=c)
+        self.assertEqual(r["status"], "SYNTHETIC_FIELD_BINDING_ONLY")
+        self.assertFalse(r["actual_golden_pass"] or r["strict_match"] or r["ready"])
 
     def test_finite_scientific_decimal_roundtrip_synthetic_only(self):
         c = json.loads(json.dumps(self.capture))
