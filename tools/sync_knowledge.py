@@ -51,6 +51,7 @@ FILES = (
     "research/rea/REA_20261101_19H_P0_FTELL_SEH4_SCOPE_STATIC.md",
     "research/rea/REA_20261101_20H_P0_EH4_DISPATCH_PHASE_STATIC.md",
     "research/intake/README.md",
+    "research/intake/CLAUDE/INDEX.md", "research/intake/CLAUDE/CLAUDE-20261103-F96-SUMMON-EXP-DAT-BRIDGE-01.md", "research/intake/CLAUDE/EXP_DAT_DESIGN_20261103.md",
     "research/intake/B/B-20261013-1110-01.md", "research/intake/B/B-20261013-1134-01.md", "research/intake/B/B-20261013-1141-01.md", "research/intake/B/B-20261013-1146-01.md",
     "research/intake/B/B-20261023-20H-T013-TROOP-SORT-1BC-NATIVE-01.md",
     "research/intake/B/B-20261023-22H-T013-TROOP-FORM-MODE-SETTER-01.md",
