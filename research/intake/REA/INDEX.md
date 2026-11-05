@@ -1139,3 +1139,8 @@ This new study is distinct from the earlier static-only recovery batches above. 
 ## 2026-11-05 playback-v3 | audible output and volume-isolation correction
 
 **REA-T015-OGG-REUSE-20261105** — [report/correction](ogg_reuse_20261105/playback_v3/REPORT.md), [runtime summary](ogg_reuse_20261105/playback_v3/RUNTIME_SUMMARY.json), [volume audit](ogg_reuse_20261105/playback_v3/volume_audit/SUMMARY.json), [receipts](ogg_reuse_20261105/playback_v3/SOURCE_RECEIPTS.tsv). **PUBLISHED_INTAKE / NOT_CURATED.** 0x5D16C0 / 0x5D0F70 / 0x5D12E0 / 0x5CFE00: two sequential full decodes, each 1,007,616 bytes / 251,904 frames, 472 positive reads + EOF0, clear0; two output voices, volume/stop0, END0. User heard added audio/BGM continuity/stop but suspected quieter BGM. Post-session master≈0.0499885567 matches quantized DLL5%; before unknown, exclusive causation unproven. Independent silent two-waveOut test observed shared volume. **Volume return0 is not independent voice control; v3 sink fails BGM-isolation gate, DAT work must wait.** Separate silent DirectSound secondary test changed first buffer0→-3000 with second0/session master1 unchanged; candidate only, not game-integrated verification. Earlier untested claims superseded only for this bounded scenario. Golden/READY not established.
+
+
+## REA-T015-OGG-REUSE-20261105 — playback v4 / DirectSound secondary volume isolation
+
+[追補](ogg_reuse_20261105/playback_v4/REPORT.md): host 0x5D16C0/0x5D0F70/0x5D12E0/0x5CFE00 → full PCM → DLL-owned DS secondaryの実機成功。2音・個別volume・停止、同一session前後不変。起動時から残る約5%共有音量はv3由来の保存設定と整合、本人による復元未確認。DAT未統合、一般安全性/全WAV共存は未認定。出典・SHA・parserを追補内保全。curator採録待ち。

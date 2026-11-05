@@ -1,0 +1,101 @@
+{
+  "research_id": "REA-T015-OGG-REUSE-20261105",
+  "status": "HOST_DECODE_DS_SECONDARY_PLAYBACK_AND_VOLUME_ISOLATION_OBSERVED_LIMITED_RUN",
+  "raw_log_sha256": "b9416567cf3700f8a2fe13959193a4a76fbafc313d815bd96cf93b4f8b27244c",
+  "raw_log_bytes": 56926,
+  "events": 1043,
+  "session_before_log_sha256": "899e7e29603f513473e79b3378284675c49e67c1030208baa9ab9fba620bb47a",
+  "session_after_log_sha256": "899e7e29603f513473e79b3378284675c49e67c1030208baa9ab9fba620bb47a",
+  "identities": {
+    "game_sha256": "e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187",
+    "dll_sha256": "46316a6f0b645a7ff8bcefdcd9c1abc50b56c2c88faea48d1c93c6fa7fb83bad",
+    "runner_sha256": "7c0d7c21b3ff00c8fec2b5fd7cdd929c2666ea13d02d16f4f56b01111b4220b2",
+    "source_sha256": "ca05fe21c6dea8c6288a7c2e60d0a620823ca61d837356bd0f63289c68af9b76",
+    "audit_sha256": "e5cbb881ac67e9c441d52f75188b48568df524da23f75b8f9b6c5dacac11dea5"
+  },
+  "decode_cycles": 2,
+  "pcm_bytes_per_cycle": 1007616,
+  "frames_per_cycle": 251904,
+  "channels": 2,
+  "rate": 44100,
+  "bits": 16,
+  "positive_reads_per_cycle": [
+    472,
+    472
+  ],
+  "eof_and_clear_success": true,
+  "samples": [
+    {
+      "handle": 1,
+      "cursor_bytes": 525672,
+      "status": 5,
+      "volume_db100": -1046
+    },
+    {
+      "handle": 1,
+      "cursor_bytes": 94884,
+      "status": 5,
+      "volume_db100": -1046
+    },
+    {
+      "handle": 2,
+      "cursor_bytes": 525672,
+      "status": 5,
+      "volume_db100": -1398
+    },
+    {
+      "handle": 1,
+      "cursor_bytes": 625848,
+      "status": 5,
+      "volume_db100": -2602
+    },
+    {
+      "handle": 2,
+      "cursor_bytes": 49020,
+      "status": 5,
+      "volume_db100": -1398
+    },
+    {
+      "handle": 2,
+      "cursor_bytes": 401820,
+      "status": 5,
+      "volume_db100": -1398
+    }
+  ],
+  "live_voices": [
+    1,
+    2,
+    2,
+    1
+  ],
+  "same_session": true,
+  "session_before": {
+    "master": 0.0499885567,
+    "mute": 0,
+    "channels": [
+      1.0,
+      1.0
+    ]
+  },
+  "session_after": {
+    "master": 0.0499885567,
+    "mute": 0,
+    "channels": [
+      1.0,
+      1.0
+    ]
+  },
+  "user_report": {
+    "bgm_volume_unchanged_during_v4": true,
+    "game_quiet_since_startup": true,
+    "v4_additional_audio_and_operability_separately_reconfirmed": false,
+    "volume_restoration_confirmed": false
+  },
+  "interpretation": "Persistent session attenuation from v3 is consistent with pre-v4 master about 0.05; pre-v3 baseline unknown.",
+  "limitations": [
+    "One normal OGG and one short v4 run",
+    "Snapshots do not exclude transient session changes",
+    "Cursor wrap/status are API observations, not proof of gapless audible loops",
+    "No malformed-input, leak, all-WAV coexistence, device-loss or DAT integration test"
+  ]
+}

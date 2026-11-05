@@ -1,0 +1,49 @@
+{
+  "status": "BUILT_NOT_RUN_IN_GAME",
+  "research_id": "REA-T015-OGG-REUSE-20261105",
+  "prior_evidence_commit": "6337820cd5dda49fdec79e650d1c3913114c0238",
+  "backend": "DLL-owned DirectSound secondary buffers; no session/primary volume calls",
+  "tests": [
+    "test_decode",
+    "test_guard",
+    "test_probe",
+    "test_playback",
+    "test_volume_isolation",
+    "test_audit_validation"
+  ],
+  "test_result": "PASS",
+  "review": "No core sink blocker; fail-open audit finding corrected with RED/GREEN validation and complete-read errors",
+  "hashes": {
+    "game_sha256": "e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187",
+    "source_sha256": "ca05fe21c6dea8c6288a7c2e60d0a620823ca61d837356bd0f63289c68af9b76",
+    "dll_sha256": "46316a6f0b645a7ff8bcefdcd9c1abc50b56c2c88faea48d1c93c6fa7fb83bad",
+    "runner_sha256": "7c0d7c21b3ff00c8fec2b5fd7cdd929c2666ea13d02d16f4f56b01111b4220b2",
+    "audit_sha256": "e5cbb881ac67e9c441d52f75188b48568df524da23f75b8f9b6c5dacac11dea5"
+  },
+  "exports": [
+    "HkOggInitialize",
+    "HkOggPlay",
+    "HkOggPlaybackThread",
+    "HkOggProbeThread",
+    "HkOggSetVolume",
+    "HkOggShutdown",
+    "HkOggStop"
+  ],
+  "imports": [
+    "dsound.dll",
+    "user32.dll",
+    "advapi32.dll",
+    "api-ms-win-crt-math-l1-1-0.dll",
+    "api-ms-win-crt-runtime-l1-1-0.dll",
+    "api-ms-win-crt-string-l1-1-0.dll",
+    "kernel32.dll",
+    "api-ms-win-crt-stdio-l1-1-0.dll",
+    "api-ms-win-crt-heap-l1-1-0.dll"
+  ],
+  "limitations": [
+    "No original-game v4 playback yet",
+    "Before/after session snapshots do not prove transient invariance",
+    "Device-loss and all COM failures not fault-injected",
+    "No malformed OGG/leak/DAT integration test"
+  ]
+}
