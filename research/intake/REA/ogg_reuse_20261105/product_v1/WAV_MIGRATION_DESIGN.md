@@ -64,3 +64,27 @@ No bridge code, live CALL patch or original-manager call has been executed in th
 
 5972/5972 succeeded,0failed; output 245471643 bytes versus 2348958298 source bytes (89.55% reduction). Every output passed format/duration and full FFmpeg decode checks. Manifest SHA256 d813381ab9df283715454df8fb40136fb2878bcb526162b89a1652145d2d94ef; converter SHA256 1dd6ddcddaeb790ff577b83ad38cb92a0f9bdad69eb04896c598762f0ea6ed4f. Original source WAVs remain pending bridge integration. No assertion that the game uses these outputs yet.
 V9 source database SHA256 freshly checked:2629cb2f03ecec9927e89892c77f847e4cdba381ab718825c1ca8cfeeef00ede.
+
+## Partial loader observation and debugger correction (2026-11-06)
+
+User stopped the observation before combat because x32dbg repeatedly paused. This is a partial run, not a successful battle/voice trial. Raw local log SHA256 c7883fb34374d43bad2d39e4eb1d31092afada94f06088388cb38cb9cad4faea (6583 bytes); raw logs and user-specific paths are not uploaded.
+
+At module base600000, thread8868, the SE factory CALL/RETURN pair (RVA C0B81/C0B86) was observed twice, for cursor8.wav and decide1.wav:
+- manager ABE3A0, manager+0 device1B40848, flag0.
+- ESP10FF590 before CALL ->10FF59C after return: +0C, supporting three callee-cleaned stack arguments.
+- EBP ABE3A0 / EBX0 / ESI CC2019 / EDI10 unchanged across both calls.
+- Non-null EAX17B6E880 and17B9D830 respectively; both first DWORDs67671568.
+These are run-specific addresses. The pointer/vtable observations alone do not prove the COM IID; Buffer8 identification remains supported by the separate static QI GUID evidence above. The two SE observations do not establish all voice-path ABI, concurrency, ownership or shutdown behavior.
+
+Explicit pause records repeatedly identify E06D7363 CPP_EH_EXCEPTION, first chance. Some exception metadata references UIAutomationCore. This identifies the immediate debugger pause trigger, not the ultimate exception cause or a game crash. Older OGGPROBE FILL_RETURN/SE_ENTRY probes were also active. Their log-only breakpoint hit notifications must not be counted as proof of debugger pauses. The v1 log ends after one breakpoint deletion, without END or LogRedirectStop; complete cleanup is not established.
+
+Revised local observation scripts (v2, NOT runtime-verified):
+- Disable only the five known old OGG probes at RVAs C0050/C01A0/101FE8/1023E0/1CFE00, retaining their definitions.
+- User creates the E06D7363 first-chance exception breakpoint once from the command bar, outside the script, to avoid duplicate-creation aborting script execution.
+- Set its break condition to ex.firstchance()==0 and fast resume1. First-chance notifications pass to the debuggee; unhandled/second-chance notifications and unrelated exception codes retain stopping behavior.
+- Keep six WAV probes log-only, fast resume0, silent1, maximum32 logs per site.
+- Stop script ensures each software probe exists before deleting it, closes the capture before deleting the temporary exception breakpoint. Therefore a missing exception breakpoint on repeated cleanup cannot leave the log redirect open.
+- Start SHA256 f4445241684a521520b751f39155fa75edacfb35cb40a0f90e158153eefa7d49; stop SHA256 e8d963b928fca8edb257abdad5c2ad2dfdabae5b474d8702020f362d9eae9ec5.
+- No bridge implementation, WAV deletion or forced internal call was performed. SINGLE/BATTLE observations remain pending.
+
+Debugger behavior references: [exception breakpoint scope](https://help.x64dbg.com/en/latest/commands/breakpoint-control/SetExceptionBPX.html), [condition](https://help.x64dbg.com/en/latest/commands/conditional-breakpoint-control/SetExceptionBreakpointCondition.html), [fast resume](https://help.x64dbg.com/en/latest/commands/conditional-breakpoint-control/SetExceptionBreakpointFastResume.html). Pass-through behavior additionally crosschecked against current upstream debugger.cpp: default DBG_EXCEPTION_NOT_HANDLED in cbDebugEvent and early false-condition fast-resume return in cbGenericBreakpoint, without continuation-status override. Actual installed-version behavior still requires the next user run.
