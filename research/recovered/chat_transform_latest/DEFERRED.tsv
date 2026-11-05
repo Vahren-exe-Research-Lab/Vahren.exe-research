@@ -1,0 +1,2 @@
+source_path	source_sha256	reason	boundary
+chatgpt://6ae9ba95-fe50-83ec-8c2c-ead09632b436/messages/c557b032-4f82-46b1-ac36-319487de0acd	E1423EA03A9382D3FC0F0A88FAC1B9EFF19D07A67AC0FFAD1AC191CDF670E926	Whole selected reply contains code blocks explicitly presented as distribution-original game DAT definitions, not clearly author-created test snippets; original-game-asset payload boundary unresolved. No partial excerpt, reconstruction, or body destination.	WHOLE_SELECTED_REPLY_METADATA_ONLY

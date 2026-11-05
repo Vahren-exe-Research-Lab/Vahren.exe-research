@@ -1,0 +1,11 @@
+# Archived E latest reply
+
+One selected latest assistant reply from archived ChatGPT chat 6ae476db-ed9c-83ec-9209-45d071932044, title 迫真戦記 新E｜互換・統合, is preserved in LATEST_REPLY.md. The chat was read without unarchiving or changing it. No schedule was changed.
+
+The read used turnLimit=1, includeOutputs=false, maxOutputCharsPerItem=12000. The returned page contained one turn and one agentMessage. Only that last agentMessage was selected and fully reviewed. The user item and thread preview were not extracted as separate sources. Earlier pages remain pending; pagination metadata is retained without fetching their message bodies elsewhere. No tool output or attachment body was retrieved.
+
+The exact selected Unicode text was encoded as UTF8 without BOM, added header, newline conversion or final newline. Transfer used a fixed base64 chunk below 7,000 characters, avoiding shell interpolation of chat text. Its SHA256 describes selected UTF8 text rather than internal service database bytes. No privacy transformation was necessary. CAPTURE_RECEIPT.tsv records message identity, retrieval settings, source/hash semantics and pagination. REPORT_LEDGER.tsv follows the root nine-column schema; DEFERRED.tsv has only its source_path-based header because this selected reply needed no deferral.
+
+This reply reports historical research/operations claims: citation checks, VA mention-index counts, duplicate-file comparison and asset metadata inventory. It contains no substantive held helper/erase/native payload. Such counts and historical GitHub activity remain author claims. They establish no new native/runtime observation, READY admission, actual Golden PASS or strict compatibility match.
+
+CORRELATION.tsv records metadata-only checks at fixed Git base d214fec648b3d15007bb9b81626a97ab34d2c641. Both exact linked filenames exist as blobs at that base; their bodies were not opened. PR status, branch state, body contents and the claimed counts were not independently validated. The selected reply contains no individual research ID. No linked website, original PC evidence, tool output, attachments, scripts, native binaries, archive bodies or SQLite were opened or executed. Only this new directory was written; Git commands were read-only.

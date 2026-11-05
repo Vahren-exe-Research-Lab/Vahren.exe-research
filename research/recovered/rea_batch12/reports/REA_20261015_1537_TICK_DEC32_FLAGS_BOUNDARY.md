@@ -1,0 +1,15 @@
+# REA-20261015-1537-TICK-DEC32-FLAGS-01｜Unit+1E520 counterのx86 DEC32境界
+- [OWNER/REQUEST] 独立REA / WRQ-20261013-REA-DEATH / T012主・T005/T013参照。前回REA-20261015-1440の追加増分は32bit整数境界と分岐根拠不足。既存保存済x86限定、原本/製品/他レーンはread-only。
+- [SOURCE] exe/T005_REGISTRY_INSERT_CALLERS.txt 0x57B7DD..0x57B7F0、exe/T012_STATUS_CORE_DUMP.txt 0x57B800..0x57B822、data/T013_OWNER_CANDIDATES_NUMERIC_CONTRACT_20261013_0031.md（405440と別tree比較）、REA_20261015_1440_TICK_EXPIRY_TREE_ERASE_VS_ADVANCE.md。承認コピー実測SHA256=E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187。
+- [EXACT X86] 0x57B7DDはUnit+1E520のheadを取り、0x57B7E9 headと先頭nodeを比較。非空経路の0x57B7F0は「DEC DWORD PTR [EAX+28]」。この命令が実行されたnodeでは、旧値をsigned clampせず32bit modulo 2^32で1減算する。
+- [EDGE CASES; CONDITIONAL INPUTS] 旧0x00000001→新0x00000000(ZF=1)、旧0x00000000→新0xFFFFFFFF(ZF=0,SF=1)、旧0x80000000→新0x7FFFFFFF(OF=1)、旧0xFFFFFFFF→新0xFFFFFFFE。これはx86命令意味の導出であり、それぞれの旧値の合法ゲーム内到達は未証明。
+- [FLAGS] DECはZF/SF/OF等を更新するがCFを変えない。0x57B7F4..0x57B7FFの命令が未保存なので、後続条件分岐がZF/OF/比較命令のどれを採用するかはVERIFY。旧値1→0で消去する、または旧値0でretainする等は確定させない。
+- [CONTINUATION] 保存済み0x57B800はCALL 0x510030→0x57B805 MOV EAX,[EAX]→stack cursor更新、別の0x57B80DはCALL 0x405440(&cursor)→cursor read。両経路とも0x57B81Aのhead比較へ合流。DECは両経路の直前にあるため、callee内部未完時に0x57B7F0を無条件再実行させずnode/cursorと更新済み状態を保存する必要がある（有効呼出到達はVERIFY）。
+- [DISTINCT TREE] 研究BのUnit+1E540走査はpositive-only DECであり、Unit+1E520の保存断片ではDEC直前の同等の正値gateは確認できない。二つのコンテナを同じclamp-on-zero実装へ統合しない。
+- [SEARCH COMPLETED/BOUNDARY] Local Compactによる既存exe/テキスト限定literal search「57B7F」は3 matches、「0051012」は1 matchで、0x57B7F4..FFの完全命令と0x510030後段RETは取得できず。検索対象外ファイルや原EXEの非存在を意味しない。以前の拒否済みREA exporter/新規バイナリ取得の代替実行ではない。
+- [RECOVERY REA-RC-20261015-1537-EXISTING-PSEUDO-ENOENT-01 / VERIFY] 保存済みファイル有無だけをread_fileで確認した dev_lab/recovered_source/ghidra_c_pseudocode/FUN_0057B380.c はENOENT。新規解析結果は得られず再試行なし。対象パス自体の存在を仮定せず、次回は既存のREA成果・原作x86保管資料から継続する。
+- [EVIDENCE IDs] 新規5種Ghidra evidence ID0件、新規STATIC VERIFIED0件。再利用：0x463280 callers ev_cd55b9172146b1b73b06b54bbd571550221ca05419457de972262d896ecbf0b0、0x40ED80 callers ev_fcaab3749388b92aabc79016efbbda7d48d5fb29ace7cc6bfc5d46d2dca4f6f3。0x57B380/0x510030/0x405440は新たに5種VERIFIEDへ加算しない。
+- [METRICS] 保存21runs+20261011T153958076Z sync=Wave1-5累計64/64、Wave5 16/16、P0=29/29・P1=35/35、今回+0。Wave6正式0/16、候補P0=5/P1=11、正式未着手16/関数結果VERIFY0、既往拒否4/未試行12。MASTER cp151（最新読み戻し）、研究DONE9/34・IN_PROGRESS21/VERIFY4。旧EXE未改変実機golden PASS0、旧新strict MATCH0。ゲーム再実装率は測定していない。
+- [PREFLIGHT/LIMIT] Local Compact 2026-10-15T15:37:25+09:00 CPU51%、空きRAM13.64GiB、Java/Ghidra0、active.lock無、承認済copy SHA一致。新規Ghidra実行0秒、軽量総時間未計測。REA旧成功6.1.0/Ghidra12.1.4に対し現runner6.4.0、Wave6未登録、QUEUE/PROGRESS rename EPERMが継続。単一MCP・最大4関数/回・Ghidra900000ms/request960000ms変更なし。
+- [NEXT] P0死亡graph 575A60→575DF0→5684B0の正常return/Task callback帰還を既存保存証拠から優先。タイマーloopは0x57B7F4..FFの保存済み許可根拠が見つかる場合だけbranchを決める。実ゲームカウンタ0/1/負境界の観測・同条件Goldenは未実施。推測でdeleteや正常returnを確定させない。
+- [NO TOUCH] 原本ZIP/EXE実行・変更0、他A-E/MASTER/T018/Work/WRQ/Git/push/公開/MCP設定/既存automation変更0。既拒否0x5710C0..571500/REA exporter/Wave6拒否4件の再試行・別shell/tool/path迂回0。

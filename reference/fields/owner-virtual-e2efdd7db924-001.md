@@ -40,6 +40,12 @@
 - [research/recovered/b_batch10/data/T013_SUPPORT_THREE_VECTOR_RETURN_CHAIN_20261013.md 行 5](../../research/recovered/b_batch10/data/T013_SUPPORT_THREE_VECTOR_RETURN_CHAIN_20261013.md?plain=1#L5-L5) — [VECTOR #2 — POST-CORE RANDOM TEXT] 54E317 CALL551490; **on NORMAL callee ret4**, next callerPC=54E31C; EBX=Skill originally stored in effect+0x80. 54E31C/1F co
   制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
+<a id="field-34"></a>
+## virtual + 0x34
+
+- [research/recovered/rea_batch12/reports/REA_20261015_0345_REGEN_V70_NORMALVT_BRIDGE.md 行 6](../../research/recovered/rea_batch12/reports/REA_20261015_0345_REGEN_V70_NORMALVT_BRIDGE.md?plain=1#L6-L6) — - [CONDITIONAL CHAIN] live Unit vptrが0x63A9E4で維持されたケースに限り、0x57E04D→0x578370が静的dispatch先。578370側の致死条件・付随afterdeath/効果が成立し、0x5789F0まで到達した場合はnormal +0x58 0x575A60→
+  制約・訂正　Historical STATIC/SAVED/DERIVED/SYNTHETIC/VERIFY and progress claims only; current curated REF priority; no new native/runtime/READY/Golden validation; linked payloads excluded
+
 <a id="field-54"></a>
 ## virtual + 0x54
 
@@ -78,5 +84,8 @@
 
 - [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md 行 202](../../research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md?plain=1#L202-L202) — - HP処理は0x551151 PUSH ECX→0x551154 virtual+0x70。SimpleUnitの同slotは0x544790で、0x5447F7 SUB [target+0x90],ECXがHPを減らす。これは先行のvtable型対応と結合した限定経路。
   制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
+
+- [research/recovered/rea_batch12/reports/REA_20261015_0345_REGEN_V70_NORMALVT_BRIDGE.md 行 5](../../research/recovered/rea_batch12/reports/REA_20261015_0345_REGEN_V70_NORMALVT_BRIDGE.md?plain=1#L5-L5) — - [EXISTING VTABLE EVIDENCE] 同REA所有SOURCE_RECOVERY_DAMAGE_STATUS_20261011.md「ND-LETHAL」(旧保存証拠) は通常Unit vtable=0x63A9E4、virtual+0x70=0x578370と既に確定記載。ND-ENTRYは同VT
+  制約・訂正　Historical STATIC/SAVED/DERIVED/SYNTHETIC/VERIFY and progress claims only; current curated REF priority; no new native/runtime/READY/Golden validation; linked payloads excluded
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

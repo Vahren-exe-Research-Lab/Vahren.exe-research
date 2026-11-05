@@ -4,8 +4,23 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-1f4"></a>
+## manager + 0x1F4
+
+- [research/recovered/b_batch6/data/T012_5501A0_QUOTA_EDGE_AND_INDIRECT_COVERAGE_OFFLINE_20261021_1215.md 行 17](../../research/recovered/b_batch6/data/T012_5501A0_QUOTA_EDGE_AND_INDIRECT_COVERAGE_OFFLINE_20261021_1215.md?plain=1#L17-L17) — - 正のintervalに関しては、呼出ごとの周期ゲート・上限未達後returnというモデル上の差。`manager+0x1F4`（周期カウンタ）と`manager+0x1F0`（試行数）を同一変数にしてはならない。32-bit整数符号、型、activeフラグ入口チェックや副作用、RNG総数は今回証明なし。
+  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
+
+- [research/recovered/b_batch7/data/T012_MODE4_EMPTY_CANDIDATE_QUOTA_CROSSGATE_OFFLINE_20261021_1110.md 行 12](../../research/recovered/b_batch7/data/T012_MODE4_EMPTY_CANDIDATE_QUOTA_CROSSGATE_OFFLINE_20261021_1110.md?plain=1#L12-L12) — - `0x5501A0`：`manager+0x1F4`を先に+1し、`def=*(manager+0x1D4)` の `def+0x78` 以下なら初期化して生成loopへ。`def+0x40 == 4` のとき **site `0x550219 → 0x54E7B0`**、それ以外は `0x55037F → 0x5
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md 行 14](../../research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md?plain=1#L14-L14) — 3. `0x005501A0` 擬似C：引数 `manager+0x1F4` を先に1加算し、`def=*(manager+0x1D4)`・`def+0x78 <= manager+0x1F4` のゲート成立時にカウンタ `+0x1F4=0`、dispatch、`manager+0x1F0` を+1。kind4は **
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
 <a id="field-1f8"></a>
 ## manager + 0x1F8
+
+- [research/recovered/b_batch6/data/T012_5501A0_MODE4_RESULT_LINK_ABI_VERIFY_OFFLINE_20261021_1015.md 行 11](../../research/recovered/b_batch6/data/T012_5501A0_MODE4_RESULT_LINK_ABI_VERIFY_OFFLINE_20261021_1015.md?plain=1#L11-L11) — 2. 定義 `def+0x1D0 != 0` の場合、`iVar3!=0 && manager+0x1F8!=0` のときだけ `new+0x194=oldHead` と `oldHead+0x198=new` を実行し、**その後の `manager+0x1F8=iVar3` 自体は毎回実行**する。従って擬似Cを字
+  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
 
 - [research/recovered/b_batch6/data/T012_5501A0_MODE4_RESULT_LINK_ABI_VERIFY_OFFLINE_20261021_1015.md 行 29](../../research/recovered/b_batch6/data/T012_5501A0_MODE4_RESULT_LINK_ABI_VERIFY_OFFLINE_20261021_1015.md?plain=1#L29-L29) — - 検証は合法的に発火させた同一旧原作 ver0.67 EXE SHA / DAT SHA / SAVE SHA / map /入力 /tick /可能ならseedと、新実装build SHAを分離して採る。mode=4/非4、def+0x1D0=0/1、既存 `manager+0x1F8` NULL/nonnull、
   制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only

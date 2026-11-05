@@ -1,0 +1,16 @@
+# REA-20261015-1640-LETHAL-POST-DISABLE-BRANCH-01｜通常致死のdisable後も残るhandler帰還
+- [OWNER/REQUEST] REA専用 / WRQ-20261013-REA-DEATH / T012/T013（T010参照）。既存READ-ONLY証拠の独立接続。旧成果REA-ND-20261013-001とDEATH-21/22の『5789F2以降に続きがある』から、新規分岐条件/最終RETまで限定増分。原本/他owner/Work/Git変更なし。
+- [SOURCES] exe/T012_STR_AFTERDEATH_PROBE.txt lines 1349-1450（saved x86 VA5789E9..578B5F）、REA所有SOURCE_RECOVERY_DAMAGE_STATUS_20261011.mdのND-LETHAL/ND-VERIFICATION/DEATH-21/22、保存run21とlatest sync 20261011T153958076Z。承認済copy SHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187。
+- [PARENT CALL/RETURN] 5789E9 MOV EDX,[Unit]→5789EB MOV EAX,[vtable+58]→5789EE ECX=Unit→5789F0 CALL EAX。通常vtable+58=575A60（既ND契約）、その正常帰還PCは5789F2。575D0DでUnit解除が終わってもhit handlerはまだ完走していない。
+- [NEW LIVE GATE] 5789F2 CMP DWORD [Unit+0x1862C],0→5789F9 JE 578AFA。0なら追加handler分岐をskip。比較はvirtual+58帰還の後なので、事前snapshotを使わず同じlive Unitの値を再読する。+1862Cの人間向け意味・上流writer・合法到達はVERIFY。
+- [NONZERO STRING/RAW PREDICATE] 5789FF EDI=&Unit+0x1861C、578A05 ECX=0x627DAC、578A0A CALL 0x40B200、578A0F TEST AL,AL。AL非0なら578A13 ECX=[Unit+0x1E0]、578A19 ESI=Unit、578A1B CALL0x49CF20→578A20 JMP578AFA。文字列0x627DACの実バイト・0x40B200の等価規則・0x49CF20の副作用はVERIFY。
+- [RAW PREDICATE FALSE] AL=0なら578A25以降に進む。578A28 CMP DWORD [ESP+0x38],0から578A31/578A5Cの2通りの文字列準備、578A91 CALL0x49CD60、578ACD CALL0x49CD60、578AF5 CALL0x4321B0の順へ。途中4051D0/402670などのcalleeがある。各関数の意味や全副作用/例外経路は未確定で、成功no-op代用禁止。
+- [JOIN/RET] 5789F9直skip・578A20からのjump・578AF5後のfallthroughは578AFAへ合流し、578B3A MOV AL,1→578B5F RET 0x10へ到達し得る。全下位calleeの正常帰還と必要なcleanupが前提。RET16はhandler自身の引数4DWORDを除去し、575D0Dのdisable用RETとは別境界。
+- [WORK STAGING] 5789F0以降の正しい継続は virtual+58 inflight→5789F2 fresh gate→(skip/0x49CF20/0x49CD60×2→0x4321B0)→578AFA cleanup→578B5F hit return。disable再入、子/owner/衝突/Task削除の二重適用、未帰還calleeへのAL1注入、5789F2未実行をhit完了扱いしない。旧原作実機trace未実施。
+- [NOT CLAIMED] 0x40B200がstrcmpかどうか、0x49CF20/0x49CD60/0x4321B0の具体的なゲーム効果、0x627DAC文字列、最後のcallerがGameTaskへ正常復帰する条件、旧EXE合法ヒット到達はVERIFY。既存NDの単なる『5789F2へ戻る』記述をVERIFIED増分として再計上しない。
+- [EVIDENCE/COUNTS] 新規5種Ghidra info/pseudo/assembly/callers/callees evidence ID=0・新STATIC VERIFIED=0。既存Ghidra結果由来64/64（Wave5 16/16、P0 29/29、P1 35/35）。Wave6正式0/16、候補P0 5/P1 11、正式未着手16、候補既往拒否4・未試行12、関数結果VERIFY0。QUEUE/PROGRESS旧rename EPERMで古い表示を根拠に二重取得しない。
+- [MASTER/GOLDEN] 2026-10-15 Local読取MASTER checkpoint151、研究DONE9/34・IN_PROGRESS21/VERIFY4。旧EXE実機golden PASS0、新旧strict MATCH0。ゲーム再実装率は測定していない。
+- [PC/PREFLIGHT] Desktop Commander Local Compact 2026-10-15T16:39:41+09:00: CPU Load48%、空きRAM16.59GiB、Java/Ghidra0、active.lock無し、承認済copy SHA一致。preflight process exit0/runtime2.44s。新規Ghidra実行0秒、read-only証拠照合の総所要未計測。
+- [BLOCKERS] Wave6は未正式登録、QUEUE/PROGRESS Node rename EPERM、既存成功REA6.1.0対現runner pinned6.4.0。run_decompile.ps1とsync_progress.mjsはこの回実行していない。単一MCP・4関数/回・Ghidra900000ms・request960000msは不変更。
+- [NEXT P0] 保存済み安全な呼出証拠で5789F2後の0x40B200戻り条件・0x49CF20/0x49CD60/0x4321B0と外側hit callerの関係を重複排除して特定。死亡graphの575C52後embedded各vtable・4BC9C0 ownerも依然VERIFY。動的挙動と復帰完了は推測しない。
+- [NO TOUCH] 原本ZIP/EXE/DAT実行編集0、A～E/MASTER/T018/WRQ/Work製品/T018/他owner/Git/push/MCP設定/既存automation変更0。拒否済0x5710C0..571500・REA exporter・Wave6既拒否4VA・その他拒否済payloadの別shell/tool/path再実行0。

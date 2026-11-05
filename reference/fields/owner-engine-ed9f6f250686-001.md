@@ -4,8 +4,17 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-8"></a>
+## engine + 0x8
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1134_T014_NEWMODEL_ENGINE_BACKREF_AUDIT.md 行 28](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1134_T014_NEWMODEL_ENGINE_BACKREF_AUDIT.md?plain=1#L28-L28) — この関数の通常のエンジン初期化経路では、`[engine+0x08]`が`GameWindow`（静的アドレス`0x008BE378`）を指す。GameWindowの`+0x08`、つまり`0x008BE380`は別のポインタ格納先である。
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
 <a id="field-c"></a>
 ## engine + 0xC
+
+- [research/recovered/rea_legacy1/reports/REA_EVENT_FLAG_SLOT_MATRIX_20261011_0236.md 行 7](../../research/recovered/rea_legacy1/reports/REA_EVENT_FLAG_SLOT_MATRIX_20261011_0236.md?plain=1#L7-L7) — - 0x4329B6..0x4329DB: 2入力参照を個別にNULL補完。NULLなら[engine+0xC]+0x58を代入、非NULLは元値を維持。0x4329E1で+0x1EED54/55の2byteを0、+0x1EED56を0にする。
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
 
 - [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 139](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L139-L139) — - opcode7 `save` (VA 0x4A17C8) は engine +0x0C を 0x45F960 へ渡して `AL=1` (Yield)。save codec/layout自体はT014で扱う。
   制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
@@ -100,6 +109,9 @@
 - [research/recovered/rea_batch2/reports/REA_20261103_08H_P0_TRIPLE_PLAYER_ALLOC_NULL_SIGNAL_GATES_STATIC.md 行 11](../../research/recovered/rea_batch2/reports/REA_20261103_08H_P0_TRIPLE_PLAYER_ALLOC_NULL_SIGNAL_GATES_STATIC.md?plain=1#L11-L11) — - Allocation 1: `0x48A934 cmp eax,ebx; 0x48A936 je 0x48A944` skips `0x48A93D -> 0x51E100` and sets EAX=0 at `0x48A944`; `0x48A952` stores result/NULL into `[eng
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
 
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1033_T014_SCRIPTBATTLE_PLAYER_VSLOT0C_AUDIT.md 行 86](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1033_T014_SCRIPTBATTLE_PLAYER_VSLOT0C_AUDIT.md?plain=1#L86-L86) — \| `engine+0x1E8630` \| `0x0048A93D CALL 0x0051E100` Player \| `0x0048A952` \| `0x00639B08` \| **`0x0051EF80`** \|
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
 - [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 138](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L138-L138) — - opcode5 `win` (VA 0x4A174A) は engine +0x1E8630 に対し 0x52BFF0 を呼び、続けて +0x1EED1C/+0x1EED20 を用いて 0x493630 を呼んだ後、`AL=1` (Yield)。呼出先の論理副作用名は継続解析する。
   制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
 
@@ -115,11 +127,17 @@
 - [research/recovered/rea_batch2/reports/REA_20261103_08H_P0_TRIPLE_PLAYER_ALLOC_NULL_SIGNAL_GATES_STATIC.md 行 12](../../research/recovered/rea_batch2/reports/REA_20261103_08H_P0_TRIPLE_PLAYER_ALLOC_NULL_SIGNAL_GATES_STATIC.md?plain=1#L12-L12) — - Allocation 2: `0x48A96C cmp eax,ebx; 0x48A96E je 0x48A97E` skips `0x48A977 -> 0x447280` and zeroes EAX at `0x48A97E`; `0x48A989` stores result/NULL into `[eng
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
 
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1033_T014_SCRIPTBATTLE_PLAYER_VSLOT0C_AUDIT.md 行 87](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1033_T014_SCRIPTBATTLE_PLAYER_VSLOT0C_AUDIT.md?plain=1#L87-L87) — \| `engine+0x1E8634` \| `0x0048A977 CALL 0x00447280` （引数2） \| `0x0048A989` \| `0x00638B60` \| **`0x00447810`** \|
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
 <a id="field-1e8638"></a>
 ## engine + 0x1E8638
 
 - [research/recovered/rea_batch2/reports/REA_20261103_08H_P0_TRIPLE_PLAYER_ALLOC_NULL_SIGNAL_GATES_STATIC.md 行 13](../../research/recovered/rea_batch2/reports/REA_20261103_08H_P0_TRIPLE_PLAYER_ALLOC_NULL_SIGNAL_GATES_STATIC.md?plain=1#L13-L13) — - Allocation 3: `0x48A99F cmp eax,ebx; 0x48A9A1 je 0x48A9B1` skips `0x48A9AA -> 0x447280` and zeroes EAX at `0x48A9B1`; `0x48A9B8` stores result/NULL into `[eng
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1033_T014_SCRIPTBATTLE_PLAYER_VSLOT0C_AUDIT.md 行 88](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1033_T014_SCRIPTBATTLE_PLAYER_VSLOT0C_AUDIT.md?plain=1#L88-L88) — \| `engine+0x1E8638` \| `0x0048A9AA CALL 0x00447280` （引数4） \| `0x0048A9B8` \| `0x00638B60` \| **`0x00447810`** \|
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
 
 <a id="field-1e863c"></a>
 ## engine + 0x1E863C
@@ -178,8 +196,17 @@
 <a id="field-1eed18"></a>
 ## engine + 0x1EED18
 
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1134_T014_NEWMODEL_ENGINE_BACKREF_AUDIT.md 行 63](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1134_T014_NEWMODEL_ENGINE_BACKREF_AUDIT.md?plain=1#L63-L63) — `engine+0x1EED18`と以前解明したGameManagerの`+0x1EF144`は**異なる基点・異なるフィールド**である。混同しない。
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
 - [research/recovered/script_topics/T010_EVENT_SCHEDULER.md 行 384](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L384-L384) — [CONFIRMED-SAVED-NATIVE / A69 INCREMENT] A所有 exe/T006_FLOW_CONTROL_PROBE.txt 0x4335FA..0x433607 はmode2 battle-active時に push 0→EAX=engine→call 0x492D80。保存callee
   制約・訂正　Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
+
+<a id="field-1eed40"></a>
+## engine + 0x1EED40
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1134_T014_NEWMODEL_ENGINE_BACKREF_AUDIT.md 行 57](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1134_T014_NEWMODEL_ENGINE_BACKREF_AUDIT.md?plain=1#L57-L57) — `0x00492A35`で`engine+0x1EED40`を判定し、非ゼロの場合のみ`0x00492A3E`から`0x0049D6A0`を呼ぶ。静的疑似C上は単位群の座標`>>5`やマップ領域を巡回・登録する処理であり、3つの仮想CALL直前の準備処理として位置付く。ただし全副作用やvptr不変性は未確定。
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
 
 <a id="field-1eed4c"></a>
 ## engine + 0x1EED4C

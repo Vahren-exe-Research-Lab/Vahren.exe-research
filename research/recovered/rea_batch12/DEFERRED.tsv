@@ -1,0 +1,20 @@
+subject	state	approved_body_dependency	handling	source_path
+REA-20261015-0940-UNIT-TICK-CALLBACK-ORDER-01	WHOLE_BODY_DEFERRED	Unresolved dependency on historical0833 owner-write refusal named by this tick-entry/timer composite; acquisition refusal is not inferred; entire body held pending scope resolution.	No report body, excerpt, rewrite, privacy derivative or alias emitted; no retry or linked read	rea_lab/decomp_task/REA_20261015_0940_UNIT_TICK_CALLBACK_ORDER.md
+REA-20261015-0732-AUX-TIMER-STICKY-ZERO-01	WHOLE_BODY_DEFERRED	Substantive dual-caller postreturn comparison may depend on historical0645 DualCall owner-write payload refusal named in same body; no native acquisition refusal inferred; whole body held.	No report body, excerpt, rewrite, privacy derivative or alias emitted; no retry or linked read	rea_lab/decomp_task/REA_20261015_0732_AUX_TIMER_STICKY_ZERO.md
+5710C0..571500	METADATA_ONLY_HELD_SCOPE	NO_SUBSTANTIVE_BODY_RECOVERED	Opaque history only; no retry, linked payload read, reconstruction or acquisition/owner-write conflation	
+58021E..580340	METADATA_ONLY_HELD_SCOPE	NO_SUBSTANTIVE_BODY_RECOVERED	Opaque history only; no retry, linked payload read, reconstruction or acquisition/owner-write conflation	
+5769B0	METADATA_ONLY_HELD_SCOPE	NO_SUBSTANTIVE_BODY_RECOVERED	Opaque history only; no retry, linked payload read, reconstruction or acquisition/owner-write conflation	
+downstream5767B0	METADATA_ONLY_HELD_SCOPE	NO_SUBSTANTIVE_BODY_RECOVERED	Opaque history only; no retry, linked payload read, reconstruction or acquisition/owner-write conflation	
+wholeFUN00580280	METADATA_ONLY_HELD_SCOPE	NO_SUBSTANTIVE_BODY_RECOVERED	Opaque history only; no retry, linked payload read, reconstruction or acquisition/owner-write conflation	
+rsc3/rsc4tables	METADATA_ONLY_HELD_SCOPE	NO_SUBSTANTIVE_BODY_RECOVERED	Opaque history only; no retry, linked payload read, reconstruction or acquisition/owner-write conflation	
+T029postbattlecastle	METADATA_ONLY_HELD_SCOPE	NO_SUBSTANTIVE_BODY_RECOVERED	Opaque history only; no retry, linked payload read, reconstruction or acquisition/owner-write conflation	
+4C28D0activelist	METADATA_ONLY_HELD_SCOPE	NO_SUBSTANTIVE_BODY_RECOVERED	Opaque history only; no retry, linked payload read, reconstruction or acquisition/owner-write conflation	
+4BC9C0ArmyChip	METADATA_ONLY_HELD_SCOPE	NO_SUBSTANTIVE_BODY_RECOVERED	Opaque history only; no retry, linked payload read, reconstruction or acquisition/owner-write conflation	
+429620	METADATA_ONLY_HELD_SCOPE	NO_SUBSTANTIVE_BODY_RECOVERED	Opaque history only; no retry, linked payload read, reconstruction or acquisition/owner-write conflation	
+5BC860	METADATA_ONLY_HELD_SCOPE	NO_SUBSTANTIVE_BODY_RECOVERED	Opaque history only; no retry, linked payload read, reconstruction or acquisition/owner-write conflation	
+547FC0saved-prefix	METADATA_ONLY_HELD_SCOPE	NO_SUBSTANTIVE_BODY_RECOVERED	Opaque history only; no retry, linked payload read, reconstruction or acquisition/owner-write conflation	
+579290owner-writepayload	METADATA_ONLY_HELD_SCOPE	NO_SUBSTANTIVE_BODY_RECOVERED	Opaque history only; no retry, linked payload read, reconstruction or acquisition/owner-write conflation	
+4C5CC0prior-refusedhelper	METADATA_ONLY_HELD_SCOPE	NO_SUBSTANTIVE_BODY_RECOVERED	Opaque history only; no retry, linked payload read, reconstruction or acquisition/owner-write conflation	
+Wave6fourVA	METADATA_ONLY_HELD_SCOPE	NO_SUBSTANTIVE_BODY_RECOVERED	Opaque history only; no retry, linked payload read, reconstruction or acquisition/owner-write conflation	
+REAexporter	METADATA_ONLY_HELD_SCOPE	NO_SUBSTANTIVE_BODY_RECOVERED	Opaque history only; no retry, linked payload read, reconstruction or acquisition/owner-write conflation	
+1840dualstringwrite	METADATA_ONLY_HELD_SCOPE	NO_SUBSTANTIVE_BODY_RECOVERED	Opaque history only; no retry, linked payload read, reconstruction or acquisition/owner-write conflation	

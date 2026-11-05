@@ -1,0 +1,13 @@
+# Authored acceptance reports, batch 5
+
+This batch preserves an exact, approved selection of 45 authored Markdown source paths. It contains 40 byte-identical report bodies, one additional source alias pointing to an accepted canonical body, and four whole-body deferrals with blank destinations. No report was shortened, paraphrased, or privacy-edited.
+
+INPUT_SELECTION.tsv is the exact approved input list (45 paths), not a research body. IDENTITY.tsv records each original source path, measured source SHA256 and byte count, approval pin when present, destination and role. REPORT_LEDGER.tsv uses the root RECOVERY_LEDGER nine-column schema. TRANSFORMS.tsv is header-only because there were no transformations. DEFERRED.tsv records original source paths and held scope reasons without recovered payload. VERIFICATION.md records the independent output checks.
+
+The two offline dialog-route source paths have identical complete bytes and SHA256. Only the E_OFFLINE_SYNC source body is stored; the OFFLINE_UNSYNCED source path is independently retained in the identity and report ledgers, pointing to that same canonical destination. The alias row is a provenance relationship, not a second research body or an additional finding.
+
+The four differently named authored MD reports containing substantive 4C28D0 manager/dispatch or 4BC9C0 unregister payload are deferred in full. They were encountered during bounded review of the authorized Markdown list; their bodies were not recovered or repackaged. Other protected payloads remain excluded. Clock-hour coincidence does not make the independent T028 415CF0/510850 tree studies equivalent to the held T011 09H/10H/11H bulk/partial/successor-erase studies.
+
+Review was limited to this approved Markdown selection, the approved selection metadata, repo-root SOURCE_MANIFEST.tsv and RESEARCH_SOURCE_CATALOG.tsv, and root research/recovered/RECOVERY_LEDGER.tsv metadata. No linked native binaries, scripts, JSON, logs, SQLite, HANDOFF or archive bodies were read or executed. The read-only original source tree was not modified. Only this new batch directory was written.
+
+Original author statements about static checks, synthetic PASS, prior native examination, historical GitHub status, previous READY totals and current-at-author-time REF limits remain historical source statements. Recovery checks establish document identity only. They do not establish new native/runtime behavior, execute tests, qualify Golden receipts, resolve held scopes, or promote any READY/Golden/strict-MATCH state. Receipt and recovery notes remain receipt/index/history roles even when they mention other reports; links were not followed.

@@ -1,0 +1,5 @@
+"source_path"	"source_sha256"	"bytes"	"reason"	"destination"
+"tests/T020_T012_RUSH_GAMETASK_VIRTUAL_GATE_CROSSWALK_20261027_17H.md"	"90988940882928b6ef1325edf1febf97606e75db62ecfbbaf361a6bf05ad771e"	"4949"	"4C28D0 manager/dispatch same-study payload"	""
+"tests/T020_T013_HEAL_PENDING_TICK_ACCEPTANCE_20261027_09H.md"	"dc341c8967aa5ff4a487a08f9a58dab833ecf7881ba7d46392605b9efe20e566"	"4213"	"4C28D0 manager/dispatch same-study payload"	""
+"tests/T020_T013_HEAL_TEARDOWN_POOL_REUSE_GATE_20261027_10H.md"	"08c90d1ba3ec1867696e14d088ea97fd4f52faf46cf242d69215980c41737a2a"	"4745"	"4BC9C0 registry/unregister same-study payload"	""
+"tests/T020_T013_MANAGER_IDENTITY_PROVENANCE_GATE_20261027_11H.md"	"cf5615b1e0c7b4aba42bde8fed043c8c410028f78e6b4c49767b062be3ae7a15"	"4440"	"4C28D0 manager/dispatch same-study payload"	""

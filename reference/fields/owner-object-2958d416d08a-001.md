@@ -67,6 +67,21 @@
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 190](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L190-L190) — 1. `string object+0x6C`
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
 
+<a id="field-74"></a>
+## object + 0x74
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_0937_T014_WIRE4_UNIT7_CANONICAL_AUDIT.md 行 11](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_0937_T014_WIRE4_UNIT7_CANONICAL_AUDIT.md?plain=1#L11-L11) — **1. Unit reader `0x0058E870`の7連続byte**：保存済みGhidra疑似Cが `0x4707D0`に `object+0x74`、`+0x75`、`+0x76`、`+0x77`、`+0x78`、`+0x79`、`+0x7A`をこの順に渡す。直接CALL索引 sites は `0x58E8
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1034_T014_BYTEWIRE_ABI_ASM_AUDIT.md 行 20](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1034_T014_BYTEWIRE_ABI_ASM_AUDIT.md?plain=1#L20-L20) — \| `+0x74` \| `0x58F038` \| `0x58F03D` \| `0x58E8F3` \| AL←EDI+0x74、EDX←EBX / dest object+0x74 \|
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+<a id="field-80"></a>
+## object + 0x80
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_0937_T014_WIRE4_UNIT7_CANONICAL_AUDIT.md 行 11](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_0937_T014_WIRE4_UNIT7_CANONICAL_AUDIT.md?plain=1#L11-L11) — **1. Unit reader `0x0058E870`の7連続byte**：保存済みGhidra疑似Cが `0x4707D0`に `object+0x74`、`+0x75`、`+0x76`、`+0x77`、`+0x78`、`+0x79`、`+0x7A`をこの順に渡す。直接CALL索引 sites は `0x58E8
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
 <a id="field-88"></a>
 ## object + 0x88
 

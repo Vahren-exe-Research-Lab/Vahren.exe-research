@@ -85,6 +85,12 @@
 - [research/recovered/rea_batch10/reports/REA_20261022_0443_T014_SINGLEBYTE_EOF_ESI3_STATE_ABI_STATIC.md 行 23](../../research/recovered/rea_batch10/reports/REA_20261022_0443_T014_SINGLEBYTE_EOF_ESI3_STATE_ABI_STATIC.md?plain=1#L23-L23) — - 情報の出典VA/CALL: 0x470611→0x470980、0x4709D5→0x42EC60、0x470A1B computed vtable+0x18、0x470A2F→0x470AAC（GhidraはCALLと登録、実ASMはJMP）、0x470AC5→0x426E00。**索引CALL分類とASMに不一
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
 
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1533_T014_INNER_VCALL_GUARD_AUDIT.md 行 23](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1533_T014_INNER_VCALL_GUARD_AUDIT.md?plain=1#L23-L23) — 重複回避：先行 `REA-OFFLINE-20261022-1433-T014-UPSTREAM-CATCH-VCALL-STATIC-01` は `0x43400E → FadeOutSheet vtable+0x18 → 0x543AE0` を**条件付き**で特定済み。E/T020 `E-OFFLINE-2026
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1836_T014_CONTEXT_ALIAS_ABI_AUDIT.md 行 77](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1836_T014_CONTEXT_ALIAS_ABI_AUDIT.md?plain=1#L77-L77) — `0x43400E→FadeOutSheet vtable+0x18→0x543AE0`の先行条件付き特定、`0x5433D0`での登録順序、11件の同形CALLはいずれも**過去成果**であり今回の新規カウントに含めない。`0x5AA6E0`ジャンプテーブル警告も未解決のまま、勝手に12件目に加えない。
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
 - [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 606](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L606-L606) — - `IDirectMusicSegment8` vtable +0x18 receives repeat 0/1000 depending on playback mode; interface layout identifies this slot as SetRepeats.
   制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
 
@@ -93,6 +99,12 @@
 
 - [research/recovered/rea_batch8/reports/REA_20261026_08H_P0_DSHOW_IID_CHAIN_STATIC.md 行 22](../../research/recovered/rea_batch8/reports/REA_20261026_08H_P0_DSHOW_IID_CHAIN_STATIC.md?plain=1#L22-L22) — - 成功時は0x004BEE61のIGraphBuilder vtable+0x34（RenderFile相当）、続いて0x004BEE6BのIMediaControl vtable+0x1C（Run相当）へ進む。
   制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_2035_T014_11SITE_KEY_GUARD_AUDIT.md 行 68](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_2035_T014_11SITE_KEY_GUARD_AUDIT.md?plain=1#L68-L68) — - `context+0x10`の実際のwriter、動的型、vptr設定、`vtable+0x1C`実装先VAは**未解決（VERIFY）**。関数先を推測で埋めない。
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0233_T014_CONTEXT_SELFRECEIVER_AUDIT.md 行 31](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0233_T014_CONTEXT_SELFRECEIVER_AUDIT.md?plain=1#L31-L31) — ## 増分発見B: vptr設定と`vtable+0x1C`の具体的関数VAが解決候補に
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
 
 - [research/recovered/rng_audio/T006_AUDIO_BACKEND_EOF.md 行 6](../../research/recovered/rng_audio/T006_AUDIO_BACKEND_EOF.md?plain=1#L6-L6) — - audioApplyVolume 0x4BF630 calls IBasicAudio vtable +0x1C = put_Volume for the DirectShow branch.
   制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
@@ -105,6 +117,12 @@
 
 - [research/recovered/rea_batch10/reports/REA_20261022_0737_T014_STREAMBUF_VIRTUAL_SLOT_SEMANTICS_ABI_STATIC.md 行 17](../../research/recovered/rea_batch10/reports/REA_20261022_0737_T014_STREAMBUF_VIRTUAL_SLOT_SEMANTICS_ABI_STATIC.md?plain=1#L17-L17) — - 0x42ECF0→vtable+0x20 CALLsite0x42ED07、0x42E700→0x42ECF0 CALLsite0x42E77F。0x42E700 codeSHA=E50363BD394C5A7820AADE195D5B53B5B02CF000DA9C4AE12D6EB29C168C8A76。
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0736_T014_UIOWNER_GATE_ALIAS_AUDIT.md 行 99](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0736_T014_UIOWNER_GATE_ALIAS_AUDIT.md?plain=1#L99-L99) — 次のP0として、`[owner+0x188]`がどの条件で`0x008BE7F4`を指すかを`0x48A5B0`の登録元/`0x51EF80`の受信者作成経路から調べ、次いで`+0x1EF148`の別名writerを探索する。別件の`vtable+0x20`実行時CALL siteもVERIFYとして継続。全関数再抽出
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0933_T014_EMPTY_SHEET_VSLOT20_AUDIT.md 行 129](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0933_T014_EMPTY_SHEET_VSLOT20_AUDIT.md?plain=1#L129-L129) — **先行との差分**：06:47には`vtable+0x20→0x004B9DC0`が既知、08:36にはPlayer→GameWindow→GameManagerの参照関係が既知。今回初めて具体的な仮想CALL site `0x004C26BB`、pending/primaryの二段ゲート、`0x004B9930→0
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
 
 <a id="field-24"></a>
 ## vtable + 0x24

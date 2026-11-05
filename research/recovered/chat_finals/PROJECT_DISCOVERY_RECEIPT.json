@@ -1,0 +1,24 @@
+{
+  "checked_date": "2026-11-05",
+  "source": "chatgpt",
+  "target_project_id": "g-p-6ac2cd94e3ec81918581f7710c715c76",
+  "criterion": "Explicit research/audit title OR exact project membership; no bodies reviewed",
+  "passes": {
+    "active": {
+      "pages": 7,
+      "examined": 324,
+      "hasMore": false,
+      "candidates": 82
+    },
+    "archived": {
+      "pages": 3,
+      "examined": 109,
+      "hasMore": false,
+      "candidates": 11
+    }
+  },
+  "unique_candidates": 93,
+  "candidate_sha256": "394f59e21d67d8f2c63be989cd0ad15a80157cbf6fda42cd16525db3863876c2",
+  "scope": "Metadata paging ended for these mutable-service passes only. No conversation body, user input, tool output or attachment reviewed by this discovery pass. Research/audit title and exact-project context leads are not automatically saved research results. Separate capture receipts describe selected assistant messages; not whole-history recovery.",
+  "private_cursors": "Not included"
+}

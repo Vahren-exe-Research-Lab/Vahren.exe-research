@@ -34,6 +34,9 @@
 - [research/recovered/b_batch7/data/T012_RUSH_COMPILED_INTERVAL_ATTEMPT_LINK_NATIVE_20261027_19H.md 行 8](../../research/recovered/b_batch7/data/T012_RUSH_COMPILED_INTERVAL_ATTEMPT_LINK_NATIVE_20261027_19H.md?plain=1#L8-L8) — [NEW ATTEMPT ACCOUNTING] 原作ASM 0x5501D4 XOR EBP,EBP; summon type==4時 0x550219 CALL0x54E7B0→0x55021E JMP0x550386。別効果種では0x55037F CALL (callee領域は既拒否のため未解析)→0x55038
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
+- [research/recovered/tests_batch5/T020_T012_RUSH_RAW_COMPILED_ATTEMPT_SEPARATION_20261027_19H.md 行 6](../../research/recovered/tests_batch5/T020_T012_RUSH_RAW_COMPILED_ATTEMPT_SEPARATION_20261027_19H.md?plain=1#L6-L6) — [ATTEMPT VS EFFECT] 0x5503BE increments Rush+0x1F0 after returning from an effect-body call, without a preceding success test on return value on the described p
+  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
+
 <a id="field-1f4"></a>
 ## Rush + 0x1F4
 
@@ -42,6 +45,12 @@
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3181](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3181-L3181) — \| R5 連撃の生成 \| T0 \| next_first=on、子 joi の rush=2、root の homing=0 \| 0x54F720(joi, 0, &角度)。Rush+0x1F4 = 4（interval） \| — \| vf31 0x57EA48..5D、0x54F990 \|
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+- [research/recovered/tests_batch5/T020_T012_RUSH_INTERVAL_SEED_BURST_NEGATIVE_GATE_20261027_18H.md 行 6](../../research/recovered/tests_batch5/T020_T012_RUSH_INTERVAL_SEED_BURST_NEGATIVE_GATE_20261027_18H.md?plain=1#L6-L6) — [ASM CROSSWALK FROM B] Skill+0x78 copied into Rush+0x1F4 at 0x54F9D4. 0x5501AE increments then 0x5501C4 signed JL, 0x5501CA resets on threshold. 0x5503BE increm
+  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
+
+- [research/recovered/tests_batch5/T020_T012_RUSH_INTERVAL_SEED_BURST_NEGATIVE_GATE_20261027_18H.md 行 18](../../research/recovered/tests_batch5/T020_T012_RUSH_INTERVAL_SEED_BURST_NEGATIVE_GATE_20261027_18H.md?plain=1#L18-L18) — [NEXT] Seek lawful same-run G0/G1/G2 with pre-X20 DAT and real capture IDs. If B confirms live Rush +0x1F4/+0x1F0 and Skill+0x78/+0x74 values under same manager
+  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
 
 <a id="field-1f8"></a>
 ## Rush + 0x1F8
@@ -54,6 +63,9 @@
 
 - [research/recovered/b_batch7/data/T012_RUSH_COMPILED_INTERVAL_ATTEMPT_LINK_NATIVE_20261027_19H.md 行 10](../../research/recovered/b_batch7/data/T012_RUSH_COMPILED_INTERVAL_ATTEMPT_LINK_NATIVE_20261027_19H.md?plain=1#L10-L10) — [NEW OPTIONAL LINKAGE] 0x55038F CMP DWORD[Skill+0x1D0],0、非0時0x550398 EBP(result)の非NULLを確認し、Rush+0x1F8 old非NULLなら0x5503A6 [result+0x194]=old、0x5503B2 [old+0x198]
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/tests_batch5/T020_T012_RUSH_RAW_COMPILED_ATTEMPT_SEPARATION_20261027_19H.md 行 6](../../research/recovered/tests_batch5/T020_T012_RUSH_RAW_COMPILED_ATTEMPT_SEPARATION_20261027_19H.md?plain=1#L6-L6) — [ATTEMPT VS EFFECT] 0x5503BE increments Rush+0x1F0 after returning from an effect-body call, without a preceding success test on return value on the described p
+  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
 
 <a id="field-210"></a>
 ## Rush + 0x210

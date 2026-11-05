@@ -76,6 +76,9 @@
 - [research/recovered/exp/EXP_KIND4_DISPATCH_PRODUCERS_20261021.md 行 18](../../research/recovered/exp/EXP_KIND4_DISPATCH_PRODUCERS_20261021.md?plain=1#L18-L18) — - [STATIC] 前2つの生成入口はいずれも実際の `Skill+0x40==4` 分岐につながり、同型のR mapを利用する。3つめの `0x54E7B0` 召喚coreと合計3系統。
   制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md
 
+- [research/recovered/tests_batch5/T020_T011_SOURCE_TRIAD_SENTINEL_NEGATIVE_GATE_20261027_16H.md 行 6](../../research/recovered/tests_batch5/T020_T011_SOURCE_TRIAD_SENTINEL_NEGATIVE_GATE_20261027_16H.md?plain=1#L6-L6) — [NEW B CONTRACT] 0x5501DC..0x550219: Skill+0x40==4に限って、[ESI+0x1D8]由来の+0x65非ゼロならS=attached、零なら[ESI+0x6D]非ゼロでS=ESI+8、それも零ならS=[ESI+0x80]。優先順位3種はネイティブ静的。実体class、呼出可
+  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
+
 <a id="field-44"></a>
 ## Skill + 0x44
 
@@ -154,6 +157,15 @@
 - [research/recovered/exp/EXP_KIND4_DISPATCH_PRODUCERS_20261021.md 行 20](../../research/recovered/exp/EXP_KIND4_DISPATCH_PRODUCERS_20261021.md?plain=1#L20-L20) — - [VERIFY] `Skill+0x74` 反復が合法ゲームで何回実行されるか、親／生成cache keyが同一か、既存RのEXPを共有するか、個々の子のXP帰属、表示件数との一致、終了時のR寿命を未観測。
   制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md
 
+- [research/recovered/tests_batch5/T020_T012_RUSH_INTERVAL_SEED_BURST_NEGATIVE_GATE_20261027_18H.md 行 6](../../research/recovered/tests_batch5/T020_T012_RUSH_INTERVAL_SEED_BURST_NEGATIVE_GATE_20261027_18H.md?plain=1#L6-L6) — [ASM CROSSWALK FROM B] Skill+0x78 copied into Rush+0x1F4 at 0x54F9D4. 0x5501AE increments then 0x5501C4 signed JL, 0x5501CA resets on threshold. 0x5503BE increm
+  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
+
+- [research/recovered/tests_batch5/T020_T012_RUSH_RAW_COMPILED_ATTEMPT_SEPARATION_20261027_19H.md 行 7](../../research/recovered/tests_batch5/T020_T012_RUSH_RAW_COMPILED_ATTEMPT_SEPARATION_20261027_19H.md?plain=1#L7-L7) — [BOUNDARY] Native comparison to Skill+0x74 occurs after the first attempt; for compiled zero and nonpositive limit zero, the bounded normal-return model emits o
+  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
+
+- [research/recovered/tests_batch5/T020_T012_RUSH_RAW_COMPILED_ATTEMPT_SEPARATION_20261027_19H.md 行 14](../../research/recovered/tests_batch5/T020_T012_RUSH_RAW_COMPILED_ATTEMPT_SEPARATION_20261027_19H.md?plain=1#L14-L14) — [NEXT] C-NB02 same-battle legal G0/G1/G2 evidence remains P0. On lawful same-run Rush observation, pair raw definition and compiled Skill+0x78, Skill+0x74, perm
+  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
+
 <a id="field-78"></a>
 ## Skill + 0x78
 
@@ -174,6 +186,15 @@
 
 - [research/recovered/b_batch9/data/T013_RUSH_RECORD_54F990_CONTRACT_20261013.md 行 4](../../research/recovered/b_batch9/data/T013_RUSH_RECORD_54F990_CONTRACT_20261013.md?plain=1#L4-L4) — [ABI/RECEIPT] 0x54F995 EBP=[stack record*]、0x54F99A record+0x1DC=entry ECX、0x54F9AC record+0x1D4=entry EAX（Skill候補）、0x54F9B2 record+0x1D8=entry EDX（actor候補）。0x5
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/tests_batch5/T020_T012_RUSH_INTERVAL_SEED_BURST_NEGATIVE_GATE_20261027_18H.md 行 6](../../research/recovered/tests_batch5/T020_T012_RUSH_INTERVAL_SEED_BURST_NEGATIVE_GATE_20261027_18H.md?plain=1#L6-L6) — [ASM CROSSWALK FROM B] Skill+0x78 copied into Rush+0x1F4 at 0x54F9D4. 0x5501AE increments then 0x5501C4 signed JL, 0x5501CA resets on threshold. 0x5503BE increm
+  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
+
+- [research/recovered/tests_batch5/T020_T012_RUSH_INTERVAL_SEED_BURST_NEGATIVE_GATE_20261027_18H.md 行 18](../../research/recovered/tests_batch5/T020_T012_RUSH_INTERVAL_SEED_BURST_NEGATIVE_GATE_20261027_18H.md?plain=1#L18-L18) — [NEXT] Seek lawful same-run G0/G1/G2 with pre-X20 DAT and real capture IDs. If B confirms live Rush +0x1F4/+0x1F0 and Skill+0x78/+0x74 values under same manager
+  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
+
+- [research/recovered/tests_batch5/T020_T012_RUSH_RAW_COMPILED_ATTEMPT_SEPARATION_20261027_19H.md 行 14](../../research/recovered/tests_batch5/T020_T012_RUSH_RAW_COMPILED_ATTEMPT_SEPARATION_20261027_19H.md?plain=1#L14-L14) — [NEXT] C-NB02 same-battle legal G0/G1/G2 evidence remains P0. On lawful same-run Rush observation, pair raw definition and compiled Skill+0x78, Skill+0x74, perm
+  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
 
 <a id="field-7c"></a>
 ## Skill + 0x7C
@@ -346,37 +367,13 @@
 - [research/recovered/b_batch7/data/T012_RUSH_COMPILED_INTERVAL_ATTEMPT_LINK_NATIVE_20261027_19H.md 行 10](../../research/recovered/b_batch7/data/T012_RUSH_COMPILED_INTERVAL_ATTEMPT_LINK_NATIVE_20261027_19H.md?plain=1#L10-L10) — [NEW OPTIONAL LINKAGE] 0x55038F CMP DWORD[Skill+0x1D0],0、非0時0x550398 EBP(result)の非NULLを確認し、Rush+0x1F8 old非NULLなら0x5503A6 [result+0x194]=old、0x5503B2 [old+0x198]
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
+- [research/recovered/tests_batch5/T020_T011_FOLLOW_COMPILER_RESULT_NONIDENTITY_GATE_20261027_20H.md 行 5](../../research/recovered/tests_batch5/T020_T011_FOLLOW_COMPILER_RESULT_NONIDENTITY_GATE_20261027_20H.md?plain=1#L5-L5) — [NEW T020 BOUNDARY] 原作VA0x59B928/0x59B962/0x59B999: raw follow「on」の比較真経路はcompiled Skill+0x1D0=1。その他はnative numeric getter経由。raw off、raw 0、raw 20/30/48をcompiler後
+  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
+
 <a id="field-1d8"></a>
 ## Skill + 0x1D8
 
 - [research/recovered/b_batch3/T012_UNIT_VIRTUAL80_579290_CONTRACT_20261013.md 行 6](../../research/recovered/b_batch3/T012_UNIT_VIRTUAL80_579290_CONTRACT_20261013.md?plain=1#L6-L6) — [STATE WRITERS] 0x5792A3 Unit+0x1E49C=[EBP+0x1C]、0x5792A9 Unit byte+0x186D0=1、0x5792B2/+BB Unit+0x1E4A4/+0x1E4A8=pointB X/Y、0x5792C4 Unit+0x186D4=0、0x5792D4 Uni
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-<a id="field-1fd"></a>
-## Skill + 0x1FD
-
-- [research/recovered/b_batch3/B_T011_T012_T013_OFFSET_TREES_OFFLINE_20261022_2310.md 行 49](../../research/recovered/b_batch3/B_T011_T012_T013_OFFSET_TREES_OFFLINE_20261022_2310.md?plain=1#L49-L49) — 前回の`Skill+0x1FD != 0` → `0x00515420` の後続を調べた。
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_batch3/B_T012_T013_COLLISION_CLEANUP_OWNER_OFFLINE_20261023_0009.md 行 79](../../research/recovered/b_batch3/B_T012_T013_COLLISION_CLEANUP_OWNER_OFFLINE_20261023_0009.md?plain=1#L79-L79) — `0x515477`は`Skill+0x134 == 0`なら局所候補検索を終了する一方、`0x51542D`と`0x55204E`は`Skill+0x1FD != 0`を**清掃実行条件**とする。前日確認した`offset=on`単独の正規化では`+0x134=0`、`+0x1FD=1`が同時に成立可能。よって、*
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_batch3/B_T012_T013_COLLISION_CLEANUP_OWNER_OFFLINE_20261023_0009.md 行 91](../../research/recovered/b_batch3/B_T012_T013_COLLISION_CLEANUP_OWNER_OFFLINE_20261023_0009.md?plain=1#L91-L91) — - **T011:** manager/owner/Skillの正式型、`Skill+0x1FD`の全writer・スクリプト変更の可否。
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_reports/B_T011_T012_T013_OFFSET_ATTR_GATE_OFFLINE_20261022_2245.sanitized.md 行 44](../../research/recovered/b_reports/B_T011_T012_T013_OFFSET_ATTR_GATE_OFFLINE_20261022_2245.sanitized.md?plain=1#L44-L44) — さらに `offset` の集合構築後、`0x0059CA61` は `[Skill+0x134]` を検査し、0でないとき `0x0059CA6A` で **`[Skill+0x1FD]=1`** に設定する。これは前段の `offset_on` 値とは別の有効化条件である。`+0x1FD` と `+0x134` を
-  制約・訂正　Privacy derivative: one personal research-root prefix replaced with <research-root> plus explicit recovery annotation; full technical content retained; reversible byte reconstruction matches source SHA; historical STATIC/INFERRED/VERIFY only; no linked payload read or Golden/READY promotion
-
-- [research/recovered/b_reports/B_T011_T012_T013_OFFSET_ATTR_GATE_OFFLINE_20261022_2245.sanitized.md 行 66](../../research/recovered/b_reports/B_T011_T012_T013_OFFSET_ATTR_GATE_OFFLINE_20261022_2245.sanitized.md?plain=1#L66-L66) — - 別関数 `0x00515420` は `0x0051542D` で参照先 `Skill+0x1FD` を確認。非0のときにだけ `0x00515445 → 0x00579AA0` と `0x0051545A → 0x00510850` を通る**管理treeの対象範囲探索・更新／消去候補**処理へ進む。`+0x13
-  制約・訂正　Privacy derivative: one personal research-root prefix replaced with <research-root> plus explicit recovery annotation; full technical content retained; reversible byte reconstruction matches source SHA; historical STATIC/INFERRED/VERIFY only; no linked payload read or Golden/READY promotion
-
-- [research/recovered/b_reports/B_T011_T012_T013_OFFSET_ATTR_GATE_OFFLINE_20261022_2245.sanitized.md 行 78](../../research/recovered/b_reports/B_T011_T012_T013_OFFSET_ATTR_GATE_OFFLINE_20261022_2245.sanitized.md?plain=1#L78-L78) — 対象スキル定義に `offset_on=on`、`offset=on`、複数 `offset` キー、候補Skillの `attr` 値が一致・不一致、矩形端接触、同時複数候補を用い、原作で **(A) `Skill+0x134` (B) `Skill+0x1FD` (C) treeに格納されたキー (D) `0x51
-  制約・訂正　Privacy derivative: one personal research-root prefix replaced with <research-root> plus explicit recovery annotation; full technical content retained; reversible byte reconstruction matches source SHA; historical STATIC/INFERRED/VERIFY only; no linked payload read or Golden/READY promotion
-
-- [research/recovered/b_reports/B_T012_T013_BATTLEWND_ACTIVE_TREE_INSERT_OFFLINE_20261023_0417.sanitized.md 行 37](../../research/recovered/b_reports/B_T012_T013_BATTLEWND_ACTIVE_TREE_INSERT_OFFLINE_20261023_0417.sanitized.md?plain=1#L37-L37) — 従来Bが確認したowner索引（既知・**再計上しない**）は、生成時 `Skill+0x1FD != 0` の条件下で `owner → +0x1D4 → manager +0x68` へ登録：`0x00581FA6→0x565780`, `0x00581FB0→0x5158E0`、別の生成経路は `0x00549E
-  制約・訂正　Privacy derivative: one personal research-root prefix replaced with <research-root> plus explicit recovery annotation; full technical content retained; reversible byte reconstruction matches source SHA; historical STATIC/INFERRED/VERIFY only; no linked payload read or Golden/READY promotion
-
-- [research/recovered/b_reports/B_T012_T013_BATTLEWND_ACTIVE_TREE_INSERT_OFFLINE_20261023_0417.sanitized.md 行 103](../../research/recovered/b_reports/B_T012_T013_BATTLEWND_ACTIVE_TREE_INSERT_OFFLINE_20261023_0417.sanitized.md?plain=1#L103-L103) — 1. **今回固有のVERIFY:** `0x00581FB9 [esp+0x1B]` と `0x00549EC3 [esp+0x5B]` が立つ生成条件を、呼出引数と初期化元から遡及。`Skill+0x1FD`との異同を確認。
-  制約・訂正　Privacy derivative: one personal research-root prefix replaced with <research-root> plus explicit recovery annotation; full technical content retained; reversible byte reconstruction matches source SHA; historical STATIC/INFERRED/VERIFY only; no linked payload read or Golden/READY promotion
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

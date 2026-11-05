@@ -16,6 +16,18 @@
 - [research/recovered/rea_batch10/reports/REA_20261020_0035_T013_T031_STEALTH_RNG_CARDINALITY_QC.md 行 8](../../research/recovered/rea_batch10/reports/REA_20261020_0035_T013_T031_STEALTH_RNG_CARDINALITY_QC.md?plain=1#L8-L8) — - [POOL 2] 第1配列を全て走査後、距離/範囲条件で0x514E69から早期RET、そうでなければ0x514E75から第2配列(base+0x58,+0x5C)走査。第2ループ0x514E8C..0x514EE8には直接0x5B6EAB呼出なし。第2配列にも別callee間接作用が無いとは未証明。
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
 
+<a id="field-64"></a>
+## base + 0x64
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1633_T014_SHEET_REGISTRATION_AUDIT.md 行 28](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1633_T014_SHEET_REGISTRATION_AUDIT.md?plain=1#L28-L28) — `0x4C2240`の格納先は入力EAXをbaseとして`[base+0x64]`/`[base+0x68]`/`[base+0x6C]`（begin/end/capacity型の配置）であり、`0x4C229E mov [eax],ecx`と`0x4C22A0 add [esi+0x68],4`、またはエイリアス対応
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+<a id="field-68"></a>
+## base + 0x68
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1633_T014_SHEET_REGISTRATION_AUDIT.md 行 28](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1633_T014_SHEET_REGISTRATION_AUDIT.md?plain=1#L28-L28) — `0x4C2240`の格納先は入力EAXをbaseとして`[base+0x64]`/`[base+0x68]`/`[base+0x6C]`（begin/end/capacity型の配置）であり、`0x4C229E mov [eax],ecx`と`0x4C22A0 add [esi+0x68],4`、またはエイリアス対応
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
 <a id="field-6c"></a>
 ## base + 0x6C
 
@@ -24,6 +36,9 @@
 
 - [research/recovered/rea_batch11/reports/REA_20261018_14H_DEATH_DETACH_CALLSITE_RETURN_PC_GATE_QC.md 行 5](../../research/recovered/rea_batch11/reports/REA_20261018_14H_DEATH_DETACH_CALLSITE_RETURN_PC_GATE_QC.md?plain=1#L5-L5) — - [NATIVE SAVED FLASH LOOP] UnitFlash i=0..7、base=U+0x928+i*0x264、active=byte(base+0x78)。active=0なら41E160をskip、非0ならowner=mem32(base+0x6C)、activeを先に0にして0x575F54
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1633_T014_SHEET_REGISTRATION_AUDIT.md 行 28](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1633_T014_SHEET_REGISTRATION_AUDIT.md?plain=1#L28-L28) — `0x4C2240`の格納先は入力EAXをbaseとして`[base+0x64]`/`[base+0x68]`/`[base+0x6C]`（begin/end/capacity型の配置）であり、`0x4C229E mov [eax],ecx`と`0x4C22A0 add [esi+0x68],4`、またはエイリアス対応
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
 
 <a id="field-74"></a>
 ## base + 0x74

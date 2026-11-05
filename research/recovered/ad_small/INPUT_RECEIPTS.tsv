@@ -1,0 +1,5 @@
+role	input_path	sha256	bytes	interpretation
+approved_selection	hakushin-ad-small-approved.tsv	9728C49A22976AB4D1BF44279673FD7926DF8701DB69C82ED95B61B4597E9E1A	1154	Read-only base metadata/selection; no unpublished batch ledger read; source SHA agreement is identity not native validation
+source_manifest	SOURCE_MANIFEST.tsv	8CC476EB0A1B20F8DED47927237BB85A08E4D1B62B818DCB47F236D13EAD8325	359468	Read-only base metadata/selection; no unpublished batch ledger read; source SHA agreement is identity not native validation
+source_catalog	RESEARCH_SOURCE_CATALOG.tsv	F14E3BD401A836039F678E9238C6490E2200385EFB0FBB602E62F626EC679CF4	350283	Read-only base metadata/selection; no unpublished batch ledger read; source SHA agreement is identity not native validation
+root_recovery_ledger	research/recovered/RECOVERY_LEDGER.tsv	A03AC552B3B9E7A38D8DD7867CF736B23E8736603AE32739101FCAB395339450	844260	Read-only base metadata/selection; no unpublished batch ledger read; source SHA agreement is identity not native validation

@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-4"></a>
+## S + 0x4
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0933_T014_EMPTY_SHEET_VSLOT20_AUDIT.md 行 57](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0933_T014_EMPTY_SHEET_VSLOT20_AUDIT.md?plain=1#L57-L57) — \| `S+0x04` \| `G+0x10` \| 仮想関数の受信者ポインタ（通常の初期化ではG） \|
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
 <a id="field-8"></a>
 ## S + 0x8
 
@@ -24,6 +30,15 @@
 
 - [research/recovered/rea_batch4/reports/REA_20261030_04H_P0_DSLOCK_PAIR_FIRSTREGION_STATIC.md 行 11](../../research/recovered/rea_batch4/reports/REA_20261030_04H_P0_DSLOCK_PAIR_FIRSTREGION_STATIC.md?plain=1#L11-L11) — `0x0050235B..0x00502387` のpushとLEA（pushによるESP変位を考慮）よりLock引数は `(stream+8, offset=0, bytes=0, &ptr1[S+0x0C], &bytes1[S+0x08], &ptr2[S+0x14], &bytes2[S+0x10], flag
   制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0933_T014_EMPTY_SHEET_VSLOT20_AUDIT.md 行 58](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0933_T014_EMPTY_SHEET_VSLOT20_AUDIT.md?plain=1#L58-L58) — \| `S+0x0C` \| `G+0x18` \| primary sheet map本体 \|
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/tests_batch5/T020_T011_SUMMON_GROUP_PARENT_NONIDENTITY_20261027_15H.md 行 6](../../research/recovered/tests_batch5/T020_T011_SUMMON_GROUP_PARENT_NONIDENTITY_20261027_15H.md?plain=1#L6-L6) — [CONCRETE DELTA] B静的経路ではsource Sは第1stack引数で、SummonFlash+0x7Cへ同Sが格納され得る。holder H=[S+0xC]は管理参照、child+0x1D0は分岐によりGroup pointerを保持し得る。4 caller VA=0x54DF4B/0x550219/
+  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
+
+- [research/recovered/tests_batch5/T020_T013_BACKLINK_NONUNIQUE_AUDIT_20261027_12H.md 行 7](../../research/recovered/tests_batch5/T020_T013_BACKLINK_NONUNIQUE_AUDIT_20261027_12H.md?plain=1#L7-L7) — [STRICT NEGATIVE] 異なる3種のHが同一Mainを指し得るため、M_register==M_tick を確認しても S+0xC にどのHが入るかは一意にならない。「backlink一致」「manager数値一致」「Unit→holder出典」「初期化段階」「同一run/generation」「合法原作採
+  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
 
 <a id="field-10"></a>
 ## S + 0x10
@@ -55,6 +70,9 @@
 - [research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md 行 15](../../research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md?plain=1#L15-L15) — workerの `S` を0x005023EFでPUSH EDI完了時のESPと定義。出力localは `[S+0x14]=ptr1, [S+0x10]=bytes1, [S+0x1C]=ptr2, [S+0x18]=bytes2`。
   制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
 
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0933_T014_EMPTY_SHEET_VSLOT20_AUDIT.md 行 59](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0933_T014_EMPTY_SHEET_VSLOT20_AUDIT.md?plain=1#L59-L59) — \| `S+0x14` \| `G+0x20` \| primary map要素数 \|
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
 <a id="field-18"></a>
 ## S + 0x18
 
@@ -76,6 +94,18 @@
 - [research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md 行 15](../../research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md?plain=1#L15-L15) — workerの `S` を0x005023EFでPUSH EDI完了時のESPと定義。出力localは `[S+0x14]=ptr1, [S+0x10]=bytes1, [S+0x1C]=ptr2, [S+0x18]=bytes2`。
   制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
 
+<a id="field-20"></a>
+## S + 0x20
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0933_T014_EMPTY_SHEET_VSLOT20_AUDIT.md 行 60](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0933_T014_EMPTY_SHEET_VSLOT20_AUDIT.md?plain=1#L60-L60) — \| `S+0x20` \| `G+0x2C` \| pending mapの先頭/番兵参照 \|
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+<a id="field-24"></a>
+## S + 0x24
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0933_T014_EMPTY_SHEET_VSLOT20_AUDIT.md 行 61](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0933_T014_EMPTY_SHEET_VSLOT20_AUDIT.md?plain=1#L61-L61) — \| `S+0x24` \| `G+0x30` \| pending map要素数 \|
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
 <a id="field-2c"></a>
 ## S + 0x2C
 
@@ -88,11 +118,17 @@
 - [research/recovered/b_batch11/data/T028_POSTRET_FULLRANGE_CALLER_ARGUMENT_PROOF_NATIVE_20261030_09H.md 行 10](../../research/recovered/b_batch11/data/T028_POSTRET_FULLRANGE_CALLER_ARGUMENT_PROOF_NATIVE_20261030_09H.md?plain=1#L10-L10) — PUSH×2後ESP=S-8。0x5AC609 LEA ESI,[ESP+0x38]でESI=S+0x30（out iterator）、0x5AC60D LEA EAX,[ESP+0x3C]でEAX=S+0x34（tree localを指す）。0x5AC611 CALL 0x510850。
   制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
+- [research/recovered/tests_batch5/T020_E_T028_CALLER_FULLRANGE_STACK_ACCEPTANCE_20261030_09H.md 行 12](../../research/recovered/tests_batch5/T020_E_T028_CALLER_FULLRANGE_STACK_ACCEPTANCE_20261030_09H.md?plain=1#L12-L12) — callee入力はSを呼出前ESPとしたときP=[S+0x38]（tree head）、B=[P]、begin=B/end=P。PUSH2個後はESP=S-8、ESI=S+0x30、EAX=S+0x34。calleeのEAX=[EDI+4]=PゆえCMP(B,[P])一致・CMP(P,P)一致。
+  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
+
 <a id="field-34"></a>
 ## S + 0x34
 
 - [research/recovered/b_batch11/data/T028_POSTRET_FULLRANGE_CALLER_ARGUMENT_PROOF_NATIVE_20261030_09H.md 行 10](../../research/recovered/b_batch11/data/T028_POSTRET_FULLRANGE_CALLER_ARGUMENT_PROOF_NATIVE_20261030_09H.md?plain=1#L10-L10) — PUSH×2後ESP=S-8。0x5AC609 LEA ESI,[ESP+0x38]でESI=S+0x30（out iterator）、0x5AC60D LEA EAX,[ESP+0x3C]でEAX=S+0x34（tree localを指す）。0x5AC611 CALL 0x510850。
   制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/tests_batch5/T020_E_T028_CALLER_FULLRANGE_STACK_ACCEPTANCE_20261030_09H.md 行 12](../../research/recovered/tests_batch5/T020_E_T028_CALLER_FULLRANGE_STACK_ACCEPTANCE_20261030_09H.md?plain=1#L12-L12) — callee入力はSを呼出前ESPとしたときP=[S+0x38]（tree head）、B=[P]、begin=B/end=P。PUSH2個後はESP=S-8、ESI=S+0x30、EAX=S+0x34。calleeのEAX=[EDI+4]=PゆえCMP(B,[P])一致・CMP(P,P)一致。
+  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
 
 <a id="field-38"></a>
 ## S + 0x38
@@ -102,6 +138,9 @@
 
 - [research/recovered/b_batch11/data/T028_POSTRET_FULLRANGE_CALLER_ARGUMENT_PROOF_NATIVE_20261030_09H.md 行 11](../../research/recovered/b_batch11/data/T028_POSTRET_FULLRANGE_CALLER_ARGUMENT_PROOF_NATIVE_20261030_09H.md?plain=1#L11-L11) — callee 0x510850 PUSH ECX、0x510851 MOV ECX,[ESP+8]でECX=B、0x510855 MOV EDX,[ESP+0xC]でEDX=P。0x51085A MOV EDI,EAX、0x51085C MOV EAX,[EDI+4]でEAX=[S+0x38]=P。
   制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/tests_batch5/T020_E_T028_CALLER_FULLRANGE_STACK_ACCEPTANCE_20261030_09H.md 行 12](../../research/recovered/tests_batch5/T020_E_T028_CALLER_FULLRANGE_STACK_ACCEPTANCE_20261030_09H.md?plain=1#L12-L12) — callee入力はSを呼出前ESPとしたときP=[S+0x38]（tree head）、B=[P]、begin=B/end=P。PUSH2個後はESP=S-8、ESI=S+0x30、EAX=S+0x34。calleeのEAX=[EDI+4]=PゆえCMP(B,[P])一致・CMP(P,P)一致。
+  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
 
 <a id="field-cc"></a>
 ## S + 0xCC

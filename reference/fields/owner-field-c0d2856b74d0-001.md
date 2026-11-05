@@ -16,6 +16,12 @@
 - [research/recovered/b_batch5/data/T011_T012_MISSILE_SPECIAL_MP_UNIT_FIXTURE_20261013.md 行 21](../../research/recovered/b_batch5/data/T011_T012_MISSILE_SPECIAL_MP_UNIT_FIXTURE_20261013.md?plain=1#L21-L21) — [CROSS-LANE-NOTE-20261013-1906 / VERIFY ONLY / SAME B-20261013-1856-02] A owner read-only `data/T005_FORMAL_GRAMMAR.md` generic parser `0x505210` treats literal
   制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
 
+<a id="field-28"></a>
+## field + 0x28
+
+- [research/recovered/tests_batch5/T020_E_T013_RNG_CONTEXT_TRANSFER_ACCEPTANCE_20261031_18H.md 行 15](../../research/recovered/tests_batch5/T020_E_T013_RNG_CONTEXT_TRANSFER_ACCEPTANCE_20261031_18H.md?plain=1#L15-L15) — - **KB_CANDIDATE:** E-AUDIT-20261031-18H-T020-T013-RNG-CONTEXT-NEGATIVE-INFERENCE-01; owner E/T020; B antecedent as above; VA/CALL 0x5A3E78,0x577DC4/0x577DC8,0x
+  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
+
 <a id="field-70"></a>
 ## field + 0x70
 
