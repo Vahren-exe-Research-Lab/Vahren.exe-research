@@ -1,0 +1,19 @@
+{
+  "repository": "ButaMonky/Hakushin067-Research-Knowledge",
+  "commit": "a2ae9a28386bcf6bec03c55cd06aa31ab5994057",
+  "source_path": "research/intake/E/repro/t020_e_t028_retreat_strict_type_admission_20261105.py",
+  "source_uri": "https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/a2ae9a28386bcf6bec03c55cd06aa31ab5994057/research/intake/E/repro/t020_e_t028_retreat_strict_type_admission_20261105.py",
+  "expected_bytes": 4090,
+  "expected_git_blob_sha1": "c0cb654d7e911e64bbf162b8b227895838d1713b",
+  "provider_git_blob_sha1": "c0cb654d7e911e64bbf162b8b227895838d1713b",
+  "measured_git_blob_sha1": "c0cb654d7e911e64bbf162b8b227895838d1713b",
+  "measured_bytes": 4090,
+  "measured_sha256": "f54476ec1e0980599676f3d93228a6030a3ebfbe4f9df96db7cc88f89aff3215",
+  "physical_lf": 78,
+  "encoding": "strict UTF8 provider text; re-encoded bytes prove exact raw Git blob via SHA1",
+  "metadata_path_hold_check": "Exact path in prior PR17 catalogs; no exact path in current metadata DEFERRED search. Generic retreat label not blanket hold.",
+  "full_review": "ALL_RETURNED_SOURCE_TEXT; finite authored schema/type validator, no concrete held/native payload",
+  "privacy": "No private path/credential; no transformation",
+  "code_execution": "NONE: no import, compile, main, test or fixture fetch",
+  "source_scope": "exact one file only; adjacent JSON/native/body not acquired"
+}

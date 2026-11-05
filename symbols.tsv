@@ -247,7 +247,7 @@
 0x45E7F0	func	Save_LoadFullState	通常セーブの復元経路。ファイルを復号した後、既存の数値変数の木を解放し、保存グループを再構築する。	静的確認	T014§2026-10-08 A14, §normal save reader
 0x45EAC0	func	Save_LoadStoredGroups	通常ロード中の保存グループを解析する処理。script数値変数の木を含む複数のコンテナを読み直す。	静的確認	T014§2026-10-08 A14, §2026-10-12 A57
 0x45E1E0	func	Save_LoadReaderCore	通常 .sav のロード時に Unit・Spot などの一時領域を初期化し、見出し→数値変数→Unit→Spot→Power→ターン進行→世界地図グラフの順に読む。グラフ 0x435550 の後で戻り、残りのバイトは見ない。	静的確認	T014§2026-10-13 A78, §normal save tail, S1101§3
-0x460000	func	Save_WriteFullState	通常 .sav のエンジン状態をグループ順に直列化し、0x427040 の共通エンベロープで暗号化して書き込む。OPEN_ALWAYS で切り詰めないため、既存ファイルより短く書くと古い末尾が残る（実セーブ save3・auto で実測）。	静的確認	T014§通常 .sav writer, §file rewrite behavior, S1101§3
+0x460000	func	Save_WriteFullState	通常 .sav のエンジン状態をグループ順に直列化し、0x427040 の共通エンベロープで暗号化して書き込む。OPEN_ALWAYS で切り詰めないため、既存ファイルより短く書くと古い末尾が残る（実セーブ save3・auto で実測）。 保存済み著者の局所静的報告ではstream状態mask非0でもWriteFileへ至る分岐が残る。実行時bytecount・書込成功・破損・上位通知は未確認。	静的確認	T014§通常 .sav writer, §file rewrite behavior, S1101§3; rea_lab/decomp_task/REA_T014_STREAM_FAIL_STATE_TO_WRITE_AUDIT_20261011_1036.md LF11-20 (historical local static report; no new native/runtime validation)
 0x45F960	func	Save_PrepareFullMetadata	通常保存用のメタデータと状態を組み立て、0x460000 の writer に渡す。	静的確認	T014§通常 .sav writer
 0x428710	func	Save_WriteGlobalVariables	global.sav の既存レコードを読み、キーの値を upsert して全体を再直列化する。ゼロ値を書いてもキー削除とはならない。	静的確認	T014§gwrite logical semantics, §file rewrite behavior
 0x428010	func	Save_ReadGlobalVariables	global.sav を開いてバイト列を読み、復号・record 木への展開 0x429C60 に渡す。gread 命令から使われる。	静的確認	T014§global.sav load model, §command -> native core
@@ -462,11 +462,11 @@
 0x423D70	func	Image_GetChipRect	ECX=char* チップ名、ESI=出力RECT。0x879E68の要素+0x28〜+0x34を写す（無ければ0x8BE2E0〜の既定値）	静的確認	R1101§2
 0x4BE388	global	g_InputReceiver	入力pollの受け手。vtable 0x6394A0、vtable+4 が0x4EE170、+8 がDirectInputの消費側。DLLの入力保護がこの呼出しの後で動く	実機確認	R1101§4, W(dat_ui_input_provider.h)
 0x626D5C	string	str_face	"face"。0x584830が顔画像名の取得に使う	静的確認	R1101§2
-0x4708D0	func	Save_WriteSlotHeader	通常セーブ先頭の見出しを書く。並びは @gamemode の値、シナリオ名、勢力名、外交+0x14、保存日時（年を詰めた月・日・時・分を各 u32）。時・分の部分 0x470945〜0x47096E は保存命令で確認、全体の並びは読込 0x470550 と実セーブ 4 件で照合	静的確認	S1101§2
+0x4708D0	func	Save_WriteSlotHeader	通常セーブ先頭の見出しを書く。並びは @gamemode の値、シナリオ名、勢力名、ターン進行+0x14、保存日時（年を詰めた月・日・時・分を各 u32）。時・分の部分 0x470945〜0x47096E は保存命令で確認、全体の並びは読込 0x470550 と実セーブ 4 件で照合	静的確認	S1101§2
 0x470550	func	Save_ReadSlotHeader	通常セーブの見出しを読む。文字列 2 本の後の u32 を第 3 引数へ、続く u32 4 個を SYSTEMTIME の wMonth・wDay・wHour・wMinute へ入れる。呼出元は通常ロード 0x45E2D8 と 0x45ECBB・0x4CFC2A・0x539364	静的確認	S1101§2
 0x45FD3E	code	Save_HeaderGetLocalTime	保存の見出し用に GetLocalTime を呼ぶ位置。直後に wMonth の上位 8 ビットへ (wYear+0x30) を詰める（2026 年 10 月 → 0x1A0A）	静的確認	S1101§2
 0x45E5F0	func	Save_LoadFileAndDecode	セーブファイル全体を読み（GetFileSize→ReadFile）0x4270F0 で復号して 0x45E1E0 へ渡す。ファイル長と本体の長さを比べない。開けないときは LoadException を投げる	静的確認	S1101§3
-0x4708A0	func	Save_WriteByteAsU32	1 バイトの値をゼロ拡張して 4 バイトで保存ストリームへ書く（Unit+0x74〜0x7A・+0xE8、Power+0x1C・+0x1D、外交+0x09・+0x0A など）	静的確認	S1101§1
+0x4708A0	func	Save_WriteByteAsU32	1 バイトの値をゼロ拡張して 4 バイトで保存ストリームへ書く（Unit+0x74〜0x7A・+0xE8、Power+0x1C・+0x1D、ターン進行+0x09・+0x0A など）	静的確認	S1101§1
 0x58E870	func	Save_ReadUnitDataRecord	通常ロードで Unit レコード 1 件を読む。書出し 0x58EFD0 と対	静的確認	T014§normal save reader group order
 0x598980	func	Save_ReadSpotGroupRecord	通常ロードで Spot レコード 1 件を読む。書出し 0x598CE0 と対	静的確認	T014§normal save reader group order
 0x5964C0	func	Save_ReadPowerGroupRecord	通常ロードで Power レコード 1 件を読む。書出し 0x596AA0 と対	静的確認	T014§normal save reader group order

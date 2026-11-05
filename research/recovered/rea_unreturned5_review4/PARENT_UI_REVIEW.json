@@ -1,0 +1,19 @@
+{
+  "browser": "Existing logged-in Chrome research tab",
+  "threads": [
+    "6aea0154-96fc-83ee-96d3-0b8dec4210c5"
+  ],
+  "selected_message_ids": [
+    "c9a3ca3a-96a9-429a-8b0e-296e871f4c12",
+    "43e4557c-4beb-4add-93c4-ed83a75d7f29",
+    "0572518b-1c60-4b29-b7d8-08d1402148fc",
+    "f779c4e3-bd83-4336-bd59-9d6d9c484b9a",
+    "637a4d94-718e-4ad2-8627-125692aa1c2e"
+  ],
+  "full_selected_ui_text_reviewed": 5,
+  "raw_markdown_captured": 0,
+  "chat_bodies_saved": 0,
+  "method": "Only exact message-ID assistant text nodes selected while using normal visible history navigation; other assistant/user/tool bodies not selected; source tab restored to project URL.",
+  "source_representation": "Rendered innerText, not raw API Markdown. Counts are observed UTF16 units; no fabricated byteSHA.",
+  "additional_lookup": "Only saved public-ready metadata/staticCALL and bounded accepted primary paragraphs; no linked newnative/crosswalk body"
+}

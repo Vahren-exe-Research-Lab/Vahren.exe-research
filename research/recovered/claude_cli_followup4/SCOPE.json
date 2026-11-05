@@ -1,0 +1,23 @@
+{
+  "default_store": ".claude/projects",
+  "current_jsonl_files": 32,
+  "current_stat_bytes": 8109693,
+  "prior_jsonl_files": 32,
+  "prior_bytes": 8109693,
+  "related_fixed_sessions": 9,
+  "unrelated_body_unreviewed": 23,
+  "assistant_text_nodes": 27,
+  "full_short_text_nodes": 20,
+  "raw_diagnostic_whole_metadata_only": 7,
+  "selected_source_bytes": 2530410,
+  "selected_source_hash_matches_to_prior": 9,
+  "new_report_candidates": 0,
+  "new_saved_bodies": 0,
+  "source_user_tool_transcripts_exported": 0,
+  "tool_or_native_execution": 0,
+  "root_ledger_rows": 2447,
+  "root_ledger_sha256": "03d54beffdf1b7fd1d699b479329ee202b5db1e0311284af250d0e71f55e42db",
+  "triage_receipt_sha256": "9ea05659a5764bd909c2de292a4e97c60c1b01cd0d9700f740b0f5ec8022d1f3",
+  "metadata_receipt_sha256": "9472bf36d4aa6c0664893c463c32ef53a0b7681a1f8298768a1a9b7f96ad99dd",
+  "limits": "Metadata count of32 uses paths/stat only; only fixed9 file bytes parsed for assistant role selection. JSON syntax parsing necessarily locates record role; user/tool text not semantically reviewed/displayed/saved. No inference of no research elsewhere."
+}

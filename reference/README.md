@@ -79,7 +79,7 @@
 | 0x45F960 | [Save_PrepareFullMetadata](symbols/0045F960.md) | func | 通常保存用のメタデータと状態を組み立て、0x460000 の writer に渡す。 |
 | 0x45FD3E | [Save_HeaderGetLocalTime](symbols/0045FD3E.md) | code | 保存の見出し用に GetLocalTime を呼ぶ位置。直後に wMonth の上位 8 ビットへ (wYear+0x30) を詰める（2026 年 10 月 → 0x1A0A） |
 | 0x45FF4B | [Save_WriteAutosaveSlot](symbols/0045FF4B.md) | code | auto.sav を作る保存経路で通常 writer 0x460000 にファイル名を渡す位置。 |
-| 0x460000 | [Save_WriteFullState](symbols/00460000.md) | func | 通常 .sav のエンジン状態をグループ順に直列化し、0x427040 の共通エンベロープで暗号化して書き込む。OPEN_ALWAYS で切り詰めないため、既存ファイルより短く書くと古い末尾が残る（実セーブ save3・auto で実測）。 |
+| 0x460000 | [Save_WriteFullState](symbols/00460000.md) | func | 通常 .sav のエンジン状態をグループ順に直列化し、0x427040 の共通エンベロープで暗号化して書き込む。OPEN_ALWAYS で切り詰めないため、既存ファイルより短く書くと古い末尾が残る（実セーブ save3・auto で実測）。 保存済み著者の局所静的報告ではstream状態mask非0でもWriteFileへ至る分岐が残る。実行時bytecount・書込成功・破損・上位通知は未確認。 |
 | 0x46065C | [Save_EncryptStreamBeforeWrite](symbols/0046065C.md) | code | 通常セーブのファイル書込み直前に共通エンコーダ 0x427040 を呼ぶ位置。 |
 | 0x460E90 | [UnitDef_SetRoaming](symbols/00460E90.md) | func | ユニットを放浪させる（def+0x84 に放浪先、ctx+0x32C の集合へ追加） |
 | 0x460F10 | [UnitDef_ClearRoaming](symbols/00460F10.md) | func | 放浪を解除する |
@@ -99,8 +99,8 @@
 | 0x4705F0 | [Save_ReadPrintableString](symbols/004705F0.md) | func | 保存ストリームからNUL終端の印字可能文字列を読み取る。数値mapのキー・補助文字列にも使われる。 |
 | 0x470700 | [Save_ReadInt32Value](symbols/00470700.md) | func | 通常セーブの数値map復元時に32bit値を読むヘルパー。文字列2本の直後に呼ばれる。 |
 | 0x470830 | [Save_WritePrintableString](symbols/00470830.md) | func | 0x20〜0x7F の文字を検査してNUL終端の文字列を保存ストリームへ出す。 |
-| 0x4708A0 | [Save_WriteByteAsU32](symbols/004708A0.md) | func | 1 バイトの値をゼロ拡張して 4 バイトで保存ストリームへ書く（Unit+0x74〜0x7A・+0xE8、Power+0x1C・+0x1D、外交+0x09・+0x0A など） |
-| 0x4708D0 | [Save_WriteSlotHeader](symbols/004708D0.md) | func | 通常セーブ先頭の見出しを書く。並びは @gamemode の値、シナリオ名、勢力名、外交+0x14、保存日時（年を詰めた月・日・時・分を各 u32）。時・分の部分 0x470945〜0x47096E は保存命令で確認、全体の並びは読込 0x470550 と実セーブ 4 件で照合 |
+| 0x4708A0 | [Save_WriteByteAsU32](symbols/004708A0.md) | func | 1 バイトの値をゼロ拡張して 4 バイトで保存ストリームへ書く（Unit+0x74〜0x7A・+0xE8、Power+0x1C・+0x1D、ターン進行+0x09・+0x0A など） |
+| 0x4708D0 | [Save_WriteSlotHeader](symbols/004708D0.md) | func | 通常セーブ先頭の見出しを書く。並びは @gamemode の値、シナリオ名、勢力名、ターン進行+0x14、保存日時（年を詰めた月・日・時・分を各 u32）。時・分の部分 0x470945〜0x47096E は保存命令で確認、全体の並びは読込 0x470550 と実セーブ 4 件で照合 |
 | 0x4716C0 | [Turn_Init](symbols/004716C0.md) | func | ターンの初期化 |
 | 0x471AF0 | [Save_ReadTurnState](symbols/00471AF0.md) | func | 通常セーブの後段でターン進行オブジェクト（G+0x1EF4B4）の +0x09・+0x0A・+0x14（経過ターン）・+0x38（phase）と手番順の勢力列を読む。旧名 Save_ReadDiplomacyState は誤り。 |
 | 0x471D20 | [Save_WriteTurnState](symbols/00471D20.md) | func | 通常セーブの後段でターン進行オブジェクト（G+0x1EF4B4）を書く。0x471AF0 と対。旧名 Save_WriteDiplomacyState は誤り。 |
@@ -542,10 +542,10 @@
 
 辞書項目 510 件、フィールド 122 件、根拠付き関係 165 件。
 
-回収済み文書のVA言及・取得記録 75646 件を検索対象に含みます。辞書未登録のVAも検索できます。
+回収済み文書のVA言及・取得記録 75648 件を検索対象に含みます。辞書未登録のVAも検索できます。
 
 [登録関数間の直接CALL採録条件](static_calls_source.json) — 2373箇所。各関数ページで呼び出し元・先を参照でき、`callers VA --json` / `callees VA --json` でも検索できます。
 
 [訂正履歴](CORRECTIONS.md) — 17 件。訂正済みの旧解釈と現在の解釈を出典行付きで確認できます。
 
-[回収済み研究文書の題名・本文](DOCUMENTS.md) — 2401 文書。題名・ファイル名・研究ID・本文の通常文字列を検索できます。
+[回収済み研究文書の題名・本文](DOCUMENTS.md) — 2402 文書。題名・ファイル名・研究ID・本文の通常文字列を検索できます。

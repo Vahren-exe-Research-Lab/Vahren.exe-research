@@ -1,0 +1,19 @@
+# Browser回収E短報5件の限定対応確認
+
+入力は親がUIで回収したthread6ae923ae-a704-83ee-abd8-4130624c63bdの固定5IDとlocator事実。親報告の文字数361/491/551/637/603はUI表現で、旧UNAVAILABLEのUTF16長とは指標/表現が異なる。本文原bytesやrawMarkdownのSHA/完全同一性は本担当で確認・推定しない。5本文自体を再取得・保存せず、親のlocator事実と既存metadata・safe acceptedhelperのごく短い対応箇所だけを見た。
+
+結果: E14のunknownflow/string/bool厳格化は既受理practical_pr15 helperに具体対応。E21は既保存E21/E23原報告familyと後日のprojection erratumに対応するが、当時86f commitのJavaScript独立検査をPython実行済みと読み替えない。retreat型厳格化はコメント103の既存a2ae locatorと4090B/blobc0cb654d...のPR17metadataがある一方、root台帳で本文の保存対応を特定できず、未収録訂正実装の具体locatorとして残す。新たな取得はしていない。
+
+Oct31 E09/10/11の2短報は既存PR17 tree/保留metadataに対応する入庫/byte検証/owner-write履歴の案内。specific同研究body・11H本文・pairedcasesを開かず、保留を解除しない。保存/索引更新や28/28著者syntheticは、新研究・原作native実測・Golden成功ではない。
+
+safe acceptedhelperはheaderと関連strict型/flow行だけをtextとして限定確認。コード実行、freshnetwork/browser/original/Library/native/linkedbody取得、Git/core/shared編集は0。元の保留bodyは引用/再構成しない。初回metadata段階のaccepted本文追加は0、newresearch0。STATUSのcounterpartsはlocator/role対応であり、同bytes/完全な意味同一性・現在実行結果の証明ではない。
+
+初回出力はprivate4metadata票。原UI本文の取得receiptやbody採録は親側の作業と分離し、OUTPUT_MANIFESTは自身を除く3票をhashする。
+
+## 明示承認後の1ファイル限定回収
+
+親が594a strictretreat helperのexact a2ae9a28386bcf6bec03c55cd06aa31ab5994057/pathだけの取得を明示承認した。GitHub primaryfile pluginで1ファイルを取得し、UTF8 bytes4090B/Git blob SHA1c0cb654d7e911e64bbf162b8b227895838d1713bを独立再計算してprovider/pinへ一致。rawSHA256 f54476ec1e0980599676f3d93228a6030a3ebfbe4f9df96db7cc88f89aff3215。原bytesをreportsへ保存し、1REPORT_LEDGER行を準備した。Git統合済みとはしない。
+
+全sourceをscope/privacy reviewし、独立した有限schema/type validatorとして受理可。type boolの2入力、boolをintとして扱わないuint32 callee値、20 negative/controlcaseという著者codeで、native内部の証明ではない。隣接JSONの読み込みはmain内の未実行指示として保持し、JSON/別code/nativeは一切取得せず、import/実行/compile/テスト0。author28/28は歴史報告のまま。known E09/10/11 holdはそのまま未取得。ほか4statusのlocator/保留分類は変更しない。
+
+最新はSTATUS/RETRIEVAL_RECEIPT/REPORT_LEDGER。OUTPUT_MANIFESTは自身を除く6ファイル（5票+1原bytes）をhashする。新研究0、新native/Golden0。
