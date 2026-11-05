@@ -34,6 +34,9 @@
 - [research/recovered/b_batch7/data/T012_RUSH_COMPILED_INTERVAL_ATTEMPT_LINK_NATIVE_20261027_19H.md 行 8](../../research/recovered/b_batch7/data/T012_RUSH_COMPILED_INTERVAL_ATTEMPT_LINK_NATIVE_20261027_19H.md?plain=1#L8-L8) — [NEW ATTEMPT ACCOUNTING] 原作ASM 0x5501D4 XOR EBP,EBP; summon type==4時 0x550219 CALL0x54E7B0→0x55021E JMP0x550386。別効果種では0x55037F CALL (callee領域は既拒否のため未解析)→0x55038
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
+- [research/recovered/b_batch7/data/T012_RUSH_COMPILED_INTERVAL_ATTEMPT_LINK_NATIVE_20261027_19H.md 行 9](../../research/recovered/b_batch7/data/T012_RUSH_COMPILED_INTERVAL_ATTEMPT_LINK_NATIVE_20261027_19H.md?plain=1#L9-L9) — [NEW ZERO/NEGATIVE LIMIT BOUNDARY] 初期Rush+0x1F0=0(0x54F9BF)の通常経路でSkill+0x74<=0なら、先に1回発動試行/INCで1となり、0x5503D0/CMP→0x5503D3 JGEで終了する。したがって上限0も『0回試行』には直結しない。合法DATとコ
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
 - [research/recovered/tests_batch5/T020_T012_RUSH_RAW_COMPILED_ATTEMPT_SEPARATION_20261027_19H.md 行 6](../../research/recovered/tests_batch5/T020_T012_RUSH_RAW_COMPILED_ATTEMPT_SEPARATION_20261027_19H.md?plain=1#L6-L6) — [ATTEMPT VS EFFECT] 0x5503BE increments Rush+0x1F0 after returning from an effect-body call, without a preceding success test on return value on the described p
   制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
 
@@ -64,11 +67,23 @@
 - [research/recovered/b_batch7/data/T012_RUSH_COMPILED_INTERVAL_ATTEMPT_LINK_NATIVE_20261027_19H.md 行 10](../../research/recovered/b_batch7/data/T012_RUSH_COMPILED_INTERVAL_ATTEMPT_LINK_NATIVE_20261027_19H.md?plain=1#L10-L10) — [NEW OPTIONAL LINKAGE] 0x55038F CMP DWORD[Skill+0x1D0],0、非0時0x550398 EBP(result)の非NULLを確認し、Rush+0x1F8 old非NULLなら0x5503A6 [result+0x194]=old、0x5503B2 [old+0x198]
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 779](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L779-L779) — 原作 0x59C889..59C89E raw rush_interval=-1→Skill+0x78=0、raw0→5（B-20261013-1930-01既知）を、0x5503D9 compiled0 burst・0x5503BE処理試行回数加算（今回T012）に接続。原DAT F21 tb_whip_nt4:sk
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+- [research/recovered/tests_batch5/T020_T011_FOLLOW_COMPILER_RESULT_NONIDENTITY_GATE_20261027_20H.md 行 6](../../research/recovered/tests_batch5/T020_T011_FOLLOW_COMPILER_RESULT_NONIDENTITY_GATE_20261027_20H.md?plain=1#L6-L6) — [RESULT LINK] VA0x55038F follow!=0 gateを経てもresult EBPがNULLなら有効なリンク先は得られない。非NULL時のRush+0x1F8、result+0x194、previous+0x198は条件付き効果オブジェクト参照であり、Unit召喚親ID、同一生成世代、EXP配分
+  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
+
 - [research/recovered/tests_batch5/T020_T012_RUSH_RAW_COMPILED_ATTEMPT_SEPARATION_20261027_19H.md 行 6](../../research/recovered/tests_batch5/T020_T012_RUSH_RAW_COMPILED_ATTEMPT_SEPARATION_20261027_19H.md?plain=1#L6-L6) — [ATTEMPT VS EFFECT] 0x5503BE increments Rush+0x1F0 after returning from an effect-body call, without a preceding success test on return value on the described p
   制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
 
 <a id="field-210"></a>
 ## Rush + 0x210
+
+- [research/recovered/b_batch2/T012_RUSH_GAMETASK_VIRTUAL_STATUS_GATE_NATIVE_20261027_17H.md 行 8](../../research/recovered/b_batch2/T012_RUSH_GAMETASK_VIRTUAL_STATUS_GATE_NATIVE_20261027_17H.md?plain=1#L8-L8) — [PREEXISTING / DO NOT RECOUNT] B-OFFLINE-20261021-1608-01はRushMissile主vtable 0x63A6B4のslot+4 @0x63A6B8 → 0x5501A0を原作PE/HIGHLOWで証明済み。B-20261021-1714-01はslot+0xC/
+  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+- [research/recovered/b_batch2/T012_RUSH_GAMETASK_VIRTUAL_STATUS_GATE_NATIVE_20261027_17H.md 行 13](../../research/recovered/b_batch2/T012_RUSH_GAMETASK_VIRTUAL_STATUS_GATE_NATIVE_20261027_17H.md?plain=1#L13-L13) — [RUSH GETTER ASM] Rush vtable +0x0C と +0x10 は両方0x54E0A0。元PE 0x54E0A0 MOV AL,BYTE PTR[ECX+0x210]; 0x54E0A6 RET。Rush+0x210は既存0x54F990 initializer内0x54F9C5 / 0x54F
+  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 
 - [research/recovered/b_batch2/T012_RUSH_GAMETASK_VIRTUAL_STATUS_GATE_NATIVE_20261027_17H.md 行 14](../../research/recovered/b_batch2/T012_RUSH_GAMETASK_VIRTUAL_STATUS_GATE_NATIVE_20261027_17H.md?plain=1#L14-L14) — [STATIC/INFERRED GATE] active vector内の非NULL正規Rushについて、このGameTask走査でのupdate到達条件は (M+8==0 AND DWORD[M+0x14]==0) OR (Rush+0x210 != 0)。後者はMフラグの片方が立つ場合のgetter結果。gett
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
@@ -76,10 +91,19 @@
 - [research/recovered/b_batch2/T012_RUSH_GAMETASK_VIRTUAL_STATUS_GATE_NATIVE_20261027_17H.md 行 19](../../research/recovered/b_batch2/T012_RUSH_GAMETASK_VIRTUAL_STATUS_GATE_NATIVE_20261027_17H.md?plain=1#L19-L19) — [GOLDEN] 無改変原作ver0.67＋20倍強化前DAT、同一SAVE/MAP/Skill/input/RNGを使用し、Rush+0x210=0/非0とM+8/M+0x14を合法な原作状態から観測する。実tick間隔、summon数、UI・HP/MP/状態/exp/next RNGを記録し新実装と比較。DESIG
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 
+- [research/recovered/b_batch2/T012_RUSH_GAMETASK_VIRTUAL_STATUS_GATE_NATIVE_20261027_17H.md 行 20](../../research/recovered/b_batch2/T012_RUSH_GAMETASK_VIRTUAL_STATUS_GATE_NATIVE_20261027_17H.md?plain=1#L20-L20) — [SAFETY/NEXT] 既拒否0x5710C0..0x571500・0x58021E..0x580340および拒否済みSQL/証拠を再試行・別shell/tool/path/Remote/ZIP迂回なし。新安全拒否0。次はB許可資料でRush+0x210のwriter実状態とM flags producer/実Ma
+  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+- [research/recovered/b_batch7/data/T012_RUSH_COMPILED_INTERVAL_ATTEMPT_LINK_NATIVE_20261027_19H.md 行 15](../../research/recovered/b_batch7/data/T012_RUSH_COMPILED_INTERVAL_ATTEMPT_LINK_NATIVE_20261027_19H.md?plain=1#L15-L15) — [GOLDEN DESIGNED/NOT RUN] 未改変ver0.67 EXE、KARATE_X20以前DAT、同一SAVE/MAP/input/RNGでraw rush_interval=-1/0/2、rush上限0/1/4、通常発動と生成失敗の合法条件、GameTask M flags/Rush+0x210を観測
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
 - [research/recovered/b_batch8/data/T012_RUSH_VTABLE_SLOT2345_STATUS_GETTER_STATIC_20261021_1714.md 行 9](../../research/recovered/b_batch8/data/T012_RUSH_VTABLE_SLOT2345_STATUS_GETTER_STATIC_20261021_1714.md?plain=1#L9-L9) — [ASM JOIN] 保存済B owner exe/T013_RUSH_RECORD_54F990_NATIVE_20261013.txt。0x54F9C5: byte[Rush+0x210]=0；0x54F9DA actor byte+0x65==0なら0x54F9E2 CALL 54FD50後、0x54F9ED a
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
 - [research/recovered/b_batch8/data/T012_RUSH_VTABLE_SLOT2345_STATUS_GETTER_STATIC_20261021_1714.md 行 10](../../research/recovered/b_batch8/data/T012_RUSH_VTABLE_SLOT2345_STATUS_GETTER_STATIC_20261021_1714.md?plain=1#L10-L10) — [ASM JOIN CONT] actor byte+0x65!=0なら0x54F9FB→0x54FA01: [actor+0x1C8]+0x1A8 byte→Rush+0x210（0x54FA07）。両枝は0x54FA0Dに合流。
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/b_batch8/data/T012_RUSH_VTABLE_SLOT2345_STATUS_GETTER_STATIC_20261021_1714.md 行 11](../../research/recovered/b_batch8/data/T012_RUSH_VTABLE_SLOT2345_STATUS_GETTER_STATIC_20261021_1714.md?plain=1#L11-L11) — [CROSS] slot3/4 getterが読むRush+0x210はinitializerがactor状態からコピーする値。これはstatic owner-state snapshot候補であり、後続の書換え有無・virtual呼出時刻は未確認。
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

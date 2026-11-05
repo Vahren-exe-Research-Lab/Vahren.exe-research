@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-20"></a>
+## Attack + 0x20
+
+- [research/recovered/search_reports1/reports/BATTLE_TAKEOVER_RESEARCH_STAGE8_20261021.md 行 15](../../research/recovered/search_reports1/reports/BATTLE_TAKEOVER_RESEARCH_STAGE8_20261021.md?plain=1#L15-L15) — 旧Stage7 collectorは外側Attack +0x20/Help+0x18/内側Def+0x10を_Isnilだと誤認。それらは実際はColor byteで、次の+1が_Isnil。黒root color1/nil0がunexpected nil tree node扱いになった。失敗数28、原作の破損とは判定
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
 <a id="field-21"></a>
 ## Attack + 0x21
 

@@ -4,6 +4,15 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-90"></a>
+## Player + 0x90
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 1381](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L1381-L1381) — [NEW DELTA/EVIDENCE] `data/T031_RANDOM_EVENT_SCHEDULER.md`同ID節。保存 `exe/T031_RESEED_CALL_XREFS.txt` VA0x48EACD..0x48EAF0で、mode7設定→0x4C1FC0 central reset/reseed→0
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+- [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 387](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L387-L387) — [VERIFY / STRICT IMPACT] virtual+4の意味・返値、pushしたPlayer+0x90の受け手、合法scene名、RNGへの追加影響、returnは不明。strict再実装ではcaller7の`mode7→centralReseed→0x4C2240→Player.vslot4→subob
+  制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
+
 <a id="field-188"></a>
 ## Player + 0x188
 
@@ -55,10 +64,19 @@
 - [research/recovered/plugin_reports1/reports/recruit_sort_v4/docs/RELEASE_HakushinUI_v1.0.md 行 9](../../research/recovered/plugin_reports1/reports/recruit_sort_v4/docs/RELEASE_HakushinUI_v1.0.md?plain=1#L9-L9) — - 説明表示: ゲーム自身のマウス座標（Player+0x324/0x328）を使用、D3DProxyWindow を素通し（フルスクリーン）
   制約・訂正　Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=PLUGIN_SYNTHETIC_CONTRACT_OR_HISTORY
 
+- [research/recovered/remaining_md1/reports/dev_lab/docs/DAT_UI_INTEGRATION_ACCEPTANCE.md 行 196](../../research/recovered/remaining_md1/reports/dev_lab/docs/DAT_UI_INTEGRATION_ACCEPTANCE.md?plain=1#L196-L196) — - 全画面：D3Dが同プロセスのD3DProxyWindowをゲーム窓の上に置くため説明表示を常に断っていた（hover_route reason=3）。これを素通しにし、位置はゲーム自身のマウス座標Player+0x324/+0x328。全画面・通常とも説明表示を実機確認（ユーザー）。
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+
 <a id="field-348"></a>
 ## Player + 0x348
 
 - [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 541](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L541-L541) — [SAVED-C GUI JOIN] 既存保存Ghidra C（dev_lab/recovered_source/peer_script01_ghidra_named_decomp_20261011.zip内decomp_0052xxxx.c/0056xxxx.c、D T015 D-20261013-0943-01）に
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+<a id="field-1e8630"></a>
+## Player + 0x1E8630
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 968](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L968-L968) — [DELTA / GLOBAL ROOT EXHAUSTION] 同A所有 `exe/T010_FRAME_HELPER_PROBE.txt` 0x433A86..0x433AA5、0x433DA7..0x433E15。自然frame pop後、+0x1EED98 mode vector が空（begin==end）に
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

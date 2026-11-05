@@ -85,6 +85,12 @@
 - [research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md 行 20](../../research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md?plain=1#L20-L20) — - 今回新たに確認した `0x00583DC0` は `*(char*)(param_1+0x78)==0 && *(int*)(param_1+0x94)==0` の場合、`*(int*)(param_1+0x1A4)` を取り、さらにその `+0x300` を参照してtreeを走査する。この読み取りは**`+0x1
   制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
 
+<a id="field-c0"></a>
+## param_1 + 0xC0
+
+- [research/recovered/b_batch11/data/T028_SHARED_FALLBACK_INIT_C4_EDI_GATE_NATIVE_20261028_08H.md 行 8](../../research/recovered/b_batch11/data/T028_SHARED_FALLBACK_INIT_C4_EDI_GATE_NATIVE_20261028_08H.md?plain=1#L8-L8) — - 0x582AA0の原作x86-32 ASM：0x582C1E MOV EAX,0x64、0x582C23 MOV [ESI+0xC0],EAX、0x582C29 MOV [ESI+0xC4],EAX。引数ESI=0xB05A28で初期化されればfallback+0xC0=100・+0xC4=100。Ghidra擬似
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 <a id="field-dc"></a>
 ## param_1 + 0xDC
 
@@ -114,6 +120,18 @@
 
 - [research/recovered/b_batch7/data/T012_RUSH_VTABLE_LOGICAL_VS_PHYSICAL_LIFETIME_OFFLINE_20261021_1509.md 行 16](../../research/recovered/b_batch7/data/T012_RUSH_VTABLE_LOGICAL_VS_PHYSICAL_LIFETIME_OFFLINE_20261021_1509.md?plain=1#L16-L16) — 4. `0x005501A0` 擬似Cの生成回数上限到達側は **CALL site `0x005503F9 → 0x004C22B0(param_1,0)`** の後、 `*(byte *)(param_1+0x1D0)=0`。`0x004C22B0` 擬似Cは管理配列からポインタを0にする、別配列で要素を詰める等の
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+<a id="field-1d4"></a>
+## param_1 + 0x1D4
+
+- [research/recovered/b_batch6/data/T012_5501A0_PERIODIC_DISPATCH_STATIC_20261021_0910.md 行 5](../../research/recovered/b_batch6/data/T012_5501A0_PERIODIC_DISPATCH_STATIC_20261021_0910.md?plain=1#L5-L5) — - STATIC: effect-like param_1+0x1D4から定義参照。param_1+0x1F4をincrementし、[definition+0x78] <= counterでcounterを0に戻して分配処理へ進む。負値、0周期、overflowのnative semanticsはVERIFY。
+  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
+
+<a id="field-1f4"></a>
+## param_1 + 0x1F4
+
+- [research/recovered/b_batch6/data/T012_5501A0_PERIODIC_DISPATCH_STATIC_20261021_0910.md 行 5](../../research/recovered/b_batch6/data/T012_5501A0_PERIODIC_DISPATCH_STATIC_20261021_0910.md?plain=1#L5-L5) — - STATIC: effect-like param_1+0x1D4から定義参照。param_1+0x1F4をincrementし、[definition+0x78] <= counterでcounterを0に戻して分配処理へ進む。負値、0周期、overflowのnative semanticsはVERIFY。
+  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
 
 <a id="field-280"></a>
 ## param_1 + 0x280
@@ -153,5 +171,11 @@
 
 - [research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1530_P0_DIPLO_HELP_HANDOFF_AUDIT.md 行 85](../../research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1530_P0_DIPLO_HELP_HANDOFF_AUDIT.md?plain=1#L85-L85) — これにより**待避／名前付きイベント要求／名前付きイベント検査／条件付きの通常経路呼出し**という静的接続候補を得た。`0x00521D90`側の条件は文字列判定成立と`DAT_0087F6F0 != 1`。Ghidra疑似Cでも`*(param_1+0x4a8)=0; FUN_00490590();`を確認した。両文
   制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
+<a id="field-1eec71"></a>
+## param_1 + 0x1EEC71
+
+- [research/recovered/e_batch4/T020_FASTSIM_TAIL_MULTIENTRY_CROSSWALK_20261023_2153.md 行 11](../../research/recovered/e_batch4/T020_FASTSIM_TAIL_MULTIENTRY_CROSSWALK_20261023_2153.md?plain=1#L11-L11) — この外側gateと、0x0048EEE0内のparam_1+0x1EEC71を0/1へ更新する枝は異なるfield／異なるポインタ基点。数字が近いというだけで同一状態フラグとみなさない。
+  制約・訂正　Historical authored claims only; referenced payloads not opened or executed; actual INELIGIBLE/NOT RUN and historical counts preserved; no new native/runtime/Golden/strict MATCH/READY; excluded composites remain deferred outside this subset
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

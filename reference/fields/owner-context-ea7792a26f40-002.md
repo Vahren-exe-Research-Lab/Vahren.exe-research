@@ -4,8 +4,104 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-2c0"></a>
+## context + 0x2C0
+
+- [research/recovered/rea_batch8/reports/REA_20261025_17H_P0_FILE_CLOSE_CALLBACK_STATIC.md 行 12](../../research/recovered/rea_batch8/reports/REA_20261025_17H_P0_FILE_CLOSE_CALLBACK_STATIC.md?plain=1#L12-L12) — - 0x005D1490は[EBP+0x10]由来をcontext+0x2C0、[EBP+0x14]を+0x2C4、[EBP+0x18]を+0x2C8、[EBP+0x1C]を+0x2CCに保存（0x005D14DD/E5/EE/F5）。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+<a id="field-2c8"></a>
+## context + 0x2C8
+
+- [research/recovered/rea_batch8/reports/REA_20261025_17H_P0_FILE_CLOSE_CALLBACK_STATIC.md 行 13](../../research/recovered/rea_batch8/reports/REA_20261025_17H_P0_FILE_CLOSE_CALLBACK_STATIC.md?plain=1#L13-L13) — - したがってこの呼出系列でcontext+0x2C8へ格納される関数ポインタは0x005B7A4E（_fclose）。0x005CFEEEのCALL EAXは、当該系列の格納値が変更されず、gateを満たしていれば_fclose(FILE*)を実行する。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+<a id="field-2f0"></a>
+## context + 0x2F0
+
+- [research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md 行 14](../../research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md?plain=1#L14-L14) — \| `0x00467E90` \| `context+0x2F0` \| 結果node != headで`node+0x28`のrecordを返却、missでは0 \| **`record+0xB0 = context`** \| `0x004C1200`（site `0x00467ECC`） \|
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+- [research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md 行 21](../../research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md?plain=1#L21-L21) — - 擬似C入口の条件：`*(int*)(in_EAX+0x94)==0`のとき、`context=*(int*)(in_EAX+0x1A4)`、`head=*(int*)(context+0x2F0)`としてheadを起点に走査。ループの対象recordは`node+0x28`、そこから`record+0x20`を参照
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+- [research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md 行 30](../../research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md?plain=1#L30-L30) — - **実装影響（INFERRED）:** `+0x1A4` と `+0xB0` の2つの検索由来参照、および`context+0x2F0`と`context+0x300`の異なるindexを区別し、`0x583CF0`の早期return・フォールバック失敗0・lookup成功の境界を保持する。いずれも原作の可視目的、
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+<a id="field-2fc"></a>
+## context + 0x2FC
+
+- [research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md 行 13](../../research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md?plain=1#L13-L13) — - `0x00463280` 冒頭で `puVar3=*(param_1+4)`、`puVar7=(*(param_1+4))[1]` を用いてtreeを探索し、挿入候補／重複候補を分岐する。callerからの加算により、参照されるポインタスロットは **`(context+0x2FC)+4 = context+0x3
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
+<a id="field-300"></a>
+## context + 0x300
+
+- [research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md 行 13](../../research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md?plain=1#L13-L13) — \| `0x00467DE0` \| `context+0x300` \| 結果node != headで`node+0x28`のrecordを返却、missでは0 \| `record+0x1A4 = context` \| `0x004C1200`（site `0x00467E1C`） \|
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+- [research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md 行 30](../../research/recovered/b_batch4/data/T011_DUAL_OWNER_LOOKUP_FALLBACK_OFFLINE_20261021_0810.md?plain=1#L30-L30) — - **実装影響（INFERRED）:** `+0x1A4` と `+0xB0` の2つの検索由来参照、および`context+0x2F0`と`context+0x300`の異なるindexを区別し、`0x583CF0`の早期return・フォールバック失敗0・lookup成功の境界を保持する。いずれも原作の可視目的、
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+- [research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md 行 13](../../research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md?plain=1#L13-L13) — - `0x00463280` 冒頭で `puVar3=*(param_1+4)`、`puVar7=(*(param_1+4))[1]` を用いてtreeを探索し、挿入候補／重複候補を分岐する。callerからの加算により、参照されるポインタスロットは **`(context+0x2FC)+4 = context+0x3
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
+- [research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md 行 14](../../research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md?plain=1#L14-L14) — - `0x00467DE0` の既知lookupでは `local_10 != *(context+0x300)` をhit判定の一部に使用し、hit時に `*(returned_record+0x1A4)=context` を書く。したがって `+0x2FC` はtreeオブジェクトの起点候補、`+0x300`はその
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
+- [research/recovered/exp/EXP_SIMPLEBATTLE_LIFECYCLE_20261022.md 行 39](../../research/recovered/exp/EXP_SIMPLEBATTLE_LIFECYCLE_20261022.md?plain=1#L39-L39) — - 0x467DE0はcontext+0x300の永続登録ツリーを検索し、node+0x28に格納されたUnitData*を返す。0x467E3B MOV ESI,[EAX+0x28]→0x467E4D MOV EAX,ESI。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md
+
+<a id="field-504"></a>
+## context + 0x504
+
+- [research/recovered/plugin_reports1/reports/recruit_sort_v4/docs/EXP_PLUGIN.md 行 11](../../research/recovered/plugin_reports1/reports/recruit_sort_v4/docs/EXP_PLUGIN.md?plain=1#L11-L11) — - 名前は原作の戦闘中ユニットの名前表（評価器＝context+0x504 の +0x1EEBEC）を読み取りで引く。同名なら生存を優先（原作 0x49E780 と同じ）。
+  制約・訂正　Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=PLUGIN_VERSIONED_GUIDE_AND_OWN_CODE_EXAMPLES
+
+<a id="field-1e8630"></a>
+## context + 0x1E8630
+
+- [research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1530_P0_DIPLO_HELP_HANDOFF_AUDIT.md 行 89](../../research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1530_P0_DIPLO_HELP_HANDOFF_AUDIT.md?plain=1#L89-L89) — 候補・除外集合をバイナリ境界で受渡しするだけでなく、**呼出時の所有状態と生存期間**も調査する必要がある。今回見つけた`context+0x1E8630`の受信オブジェクト、`state+0x4AC/0x4B0`の利用先、`0x0052CCF0`のイベント起動処理、`0x00521D90`の「同一インスタンスか」、`
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
+<a id="field-1eebec"></a>
+## context + 0x1EEBEC
+
+- [research/recovered/b_batch8/data/T013_CASE8_KEY_PRODUCER_EVAL_ORDER_NATIVE_20261024_0317.md 行 10](../../research/recovered/b_batch8/data/T013_CASE8_KEY_PRODUCER_EVAL_ORDER_NATIVE_20261024_0317.md?plain=1#L10-L10) — [NEW-5 TREE JOIN] 0x0049E954～0x0049E962でEDX文字列のNUL終端長を計算、0x0049E966→0x00402800でlocal stringへ複製、0x0049E975でcontext+0x1EEBECを指定して0x0049E980→0x0049F410の範囲検索へ到達。前回の
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+<a id="field-1eed20"></a>
+## context + 0x1EED20
+
+- [research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1334_P0_SET_WRITER_AUDIT.md 行 105](../../research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1334_P0_SET_WRITER_AUDIT.md?plain=1#L105-L105) — 3. `context+0x1EED30`に**実際に挿入/消去するwriter**の呼出siteとコンテナ引数別名関係を追加調査。今回見つけた3 CALLは`context+0x1EED20`側のwriter候補であり、除外集合writerに誤計上しない。
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
+- [research/recovered/rea_batch9/reports/REA_20261024_06H_P0_F9E0_SOURCE_ABI_STATIC.md 行 23](../../research/recovered/rea_batch9/reports/REA_20261024_06H_P0_F9E0_SOURCE_ABI_STATIC.md?plain=1#L23-L23) — - 0x48FB9B→0x48FBC7は出力コンテナcontext+0x1EED20の旧要素破棄・header self-link・count=0初期化（05H証拠と重複、再計上なし）。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; held bodies not recovered
+
 <a id="field-1eed30"></a>
 ## context + 0x1EED30
+
+- [research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1334_P0_SET_WRITER_AUDIT.md 行 105](../../research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1334_P0_SET_WRITER_AUDIT.md?plain=1#L105-L105) — 3. `context+0x1EED30`に**実際に挿入/消去するwriter**の呼出siteとコンテナ引数別名関係を追加調査。今回見つけた3 CALLは`context+0x1EED20`側のwriter候補であり、除外集合writerに誤計上しない。
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
+- [research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1435_P0_THREEWAY_EXCLUSION_AUDIT.md 行 54](../../research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1435_P0_THREEWAY_EXCLUSION_AUDIT.md?plain=1#L54-L54) — 反対に、`0x004F9000`（重複判定付き挿入ヘルパー）は`0x4F70BA`と`0x4F7127`で呼ばれるが、両site直前の`EBX`はそれぞれ**`LEA EBX,[ESP+0xF0]`**と**`LEA EBX,[ESP+0x100]`**であり、**スタック上の一時コンテナ**を指している。したがってこ
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
+- [research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1530_P0_DIPLO_HELP_HANDOFF_AUDIT.md 行 89](../../research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1530_P0_DIPLO_HELP_HANDOFF_AUDIT.md?plain=1#L89-L89) — 候補・除外集合をバイナリ境界で受渡しするだけでなく、**呼出時の所有状態と生存期間**も調査する必要がある。今回見つけた`context+0x1E8630`の受信オブジェクト、`state+0x4AC/0x4B0`の利用先、`0x0052CCF0`のイベント起動処理、`0x00521D90`の「同一インスタンスか」、`
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
+- [research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1633_P0_DEFERRED_EXCLUSION_WRITER_AUDIT.md 行 51](../../research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1633_P0_DEFERRED_EXCLUSION_WRITER_AUDIT.md?plain=1#L51-L51) — **重要な境界:** `0x0052EB20` は、グローバル木 `DAT_008BA6F8` が空の場合 `0x0052EB72` から処理後半へ飛ぶ。上記の書込みはそのループが実際に回り、新規キーがあるときだけ成立する。実行時の正本 `context+0x1EED30` との同一オブジェクト性、寿命、全書込元の網羅
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
+- [research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1633_P0_DEFERRED_EXCLUSION_WRITER_AUDIT.md 行 73](../../research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1633_P0_DEFERRED_EXCLUSION_WRITER_AUDIT.md?plain=1#L73-L73) — - `state+0x4B0` が元の `context+0x1EED30` と同一ポインタで保たれる実行時条件と、解除/寿命/破棄の順序。
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
+- [research/recovered/rea_batch2/reports/REA_20261102_10H_P0_F720_ARG2_KEY_ORIGIN_ERRATUM_STATIC.md 行 22](../../research/recovered/rea_batch2/reports/REA_20261102_10H_P0_F720_ARG2_KEY_ORIGIN_ERRATUM_STATIC.md?plain=1#L22-L22) — - **errata_of:** 09H `unresolved/source of [ESP+0xE0]`; not a replacement of 09H's unsigned/sentinel/return facts. **Next cursor:** derive the comparison tree `
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
+
+- [research/recovered/rea_batch2/reports/REA_20261102_11H_P0_F720_EXCLUSION_TREE_INDIRECT_CALLFRAME_STATIC.md 行 28](../../research/recovered/rea_batch2/reports/REA_20261102_11H_P0_F720_EXCLUSION_TREE_INDIRECT_CALLFRAME_STATIC.md?plain=1#L28-L28) — - **Next lawful cursor:** limited original x86 inspection of `0x489630` sixth argument's use and mutation callees; reconcile two sentinel offsets and verify whe
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
 
 - [research/recovered/rea_batch2/reports/REA_20261102_12H_P0_F720_EXCLUSION_TREE_FILTER_ARG8_STATIC.md 行 14](../../research/recovered/rea_batch2/reports/REA_20261102_12H_P0_F720_EXCLUSION_TREE_FILTER_ARG8_STATIC.md?plain=1#L14-L14) — - **Bounded negative evidence only:** inspected direct dereferences of the sixth/arg8 tree-container pointer are reads/comparisons; **no direct store through th
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
@@ -52,6 +148,9 @@
 - [research/recovered/rea_batch9/reports/REA_20261024_09H_P0_THREE_TREE_PREDICATE_STATIC.md 行 14](../../research/recovered/rea_batch9/reports/REA_20261024_09H_P0_THREE_TREE_PREDICATE_STATIC.md?plain=1#L14-L14) — \| 除外対象tree（context+0x1EED30、headは+0x1EED34） \| node+0x19 \| node+0x0C \| 0x48F73C / 0x48F747 / 0x48F760 \|
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; held bodies not recovered
 
+- [research/recovered/rea_batch9/reports/REA_20261024_09H_P0_THREE_TREE_PREDICATE_STATIC.md 行 40](../../research/recovered/rea_batch9/reports/REA_20261024_09H_P0_THREE_TREE_PREDICATE_STATIC.md?plain=1#L40-L40) — 2. context+0x1EED30比較treeへの書込・消去元、0x47D9B6到達前のkey集合を追い、0x48F720採択条件が満たされるかを判定。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; held bodies not recovered
+
 - [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261024_1234_P0_EXCLUSION_SET_AUDIT.md 行 22](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261024_1234_P0_EXCLUSION_SET_AUDIT.md?plain=1#L22-L22) — 今回の新規追跡は、その**比較用コンテナ構造体のアドレス `context+0x1EED30` がどの上位呼出へ渡されるか**にある。
   制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
 
@@ -78,6 +177,9 @@
 
 - [research/recovered/rea_batch2/reports/REA_20261102_16H_P0_F720_TREE_HEADER_READER_CROSSWALK_STATIC.md 行 17](../../research/recovered/rea_batch2/reports/REA_20261102_16H_P0_F720_TREE_HEADER_READER_CROSSWALK_STATIC.md?plain=1#L17-L17) — - **Correction to search plan, not to previously verified meaning:** direct `context+0x1EED34` field mentions in these four functions are reader/comparator evid
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
+
+- [research/recovered/rea_batch9/reports/REA_20261024_06H_P0_F9E0_SOURCE_ABI_STATIC.md 行 27](../../research/recovered/rea_batch9/reports/REA_20261024_06H_P0_F9E0_SOURCE_ABI_STATIC.md?plain=1#L27-L27) — - 出力が非空でも0x48F78Aで候補+0x18を検査し、比較側context+0x1EED34のtree条件で採否を判定。したがって非空リストだけではF720非NULLを保証できない。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; held bodies not recovered
 
 - [research/recovered/rea_batch9/reports/REA_20261024_08H_P0_NESTED_MAP_COUNT_TRANSFER_STATIC.md 行 42](../../research/recovered/rea_batch9/reports/REA_20261024_08H_P0_NESTED_MAP_COUNT_TRANSFER_STATIC.md?plain=1#L42-L42) — - 0x48F720で使用する比較tree（context+0x1EED34）の要素と、0x47D770で構築した外側keyの対応を追い、正常到達で候補が除外されない条件を特定。
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; held bodies not recovered
@@ -108,6 +210,9 @@
 
 - [research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1530_P0_DIPLO_HELP_HANDOFF_AUDIT.md 行 40](../../research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1530_P0_DIPLO_HELP_HANDOFF_AUDIT.md?plain=1#L40-L40) — 呼出元`0x00490180`は、`0x4901DB TEST EAX,EAX`などで事前条件を検査してから`0x49021A CALL 0x00488290`を呼び、`0x49021F MOV [ESP+0x17],AL`でこの結果を保持する。入口ガードには`0x00597A50()>0`、`[context+0x1
   制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
+- [research/recovered/rea_batch9/reports/REA_20261024_20H_P0_ARMYCHIP_CHILD_VCALL_ORDER_STATIC.md 行 39](../../research/recovered/rea_batch9/reports/REA_20261024_20H_P0_ARMYCHIP_CHILD_VCALL_ORDER_STATIC.md?plain=1#L39-L39) — (3) 0x00491870のcontext+0x1EED4C/+0x1EED50に関する既存MASTER・担当成果と照合しGolden条件設計（NOT RUN）。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; held bodies not recovered
 
 - [research/recovered/recovery_corpus1/reports/REA_OFFLINE_20261024_18H_ARMYCHIP_FLAG_CONSUMER_REPORT.md 行 38](../../research/recovered/recovery_corpus1/reports/REA_OFFLINE_20261024_18H_ARMYCHIP_FLAG_CONSUMER_REPORT.md?plain=1#L38-L38) — フラグ非0の経路は `context+0x1EED4C` を読み、0の経路は `context+0x1EED50` を読み、各経路で `0x005911D0` に渡すCALLが存在する。主要なCALL siteは `0x00491A11`/`0x00491A42`、後段 `0x00491B42`/`0x00491B66
   制約・訂正　Historical authored STATIC/readback/test claims only; no new native/runtime/READY/VERIFIED/Golden/strictMATCH or PC sync; linked evidence not acquired

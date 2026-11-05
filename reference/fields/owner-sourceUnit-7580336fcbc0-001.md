@@ -4,6 +4,18 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-178"></a>
+## sourceUnit + 0x178
+
+- [research/recovered/b_batch6/data/T012_5501A0_MODE23_ATTEMPT_INDEX_TROOP_JOIN_OFFLINE_20261021_1310.md 行 20](../../research/recovered/b_batch6/data/T012_5501A0_MODE23_ATTEMPT_INDEX_TROOP_JOIN_OFFLINE_20261021_1310.md?plain=1#L20-L20) — - `0x54E7B0` の検索DB擬似C（`search.py function 0x54E7B0 --max-chars 12000 --limit 6`）では`local_24c=param_4`。選択モード `local_284 >= 2` かつ`sourceUnit+0x1D0 != NULL`の場合に、`l
+  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
+
+<a id="field-1c8"></a>
+## sourceUnit + 0x1C8
+
+- [research/recovered/search_reports1/reports/_history_20261029/P0_SUMMON_EXP_OWNER_REPORT_20261021.md 行 61](../../research/recovered/search_reports1/reports/_history_20261029/P0_SUMMON_EXP_OWNER_REPORT_20261021.md?plain=1#L61-L61) — \| 召喚元Unitに一定比率でEXP分配 \| **条件付き** \| 生成時coreのsourceUnit actor→sourceUnit+0x1C8を捕捉。+0x1CCをowner IDと誤認しない。ネスト召喚/複数子ではR共有を考慮。 \|
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
 <a id="field-1d0"></a>
 ## sourceUnit + 0x1D0
 

@@ -10,7 +10,22 @@
 - [research/recovered/knowledge_history1/reports/knowledge/REF_UNIT_EXP_SUMMON.md 行 20](../../research/recovered/knowledge_history1/reports/knowledge/REF_UNIT_EXP_SUMMON.md?plain=1#L20-L20) — - The observed static holder flow is source S+0xC -> SummonFlash+0xC -> child Unit+0xC.
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
 
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 766](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L766-L766) — [NEW] 0x54ED51 EAX=S、0x54ED70 ECX=[S+0xC]→0x54ED89 PUSH H→0x54ED8A CALL0x550580(SummonFlash factory)。新規vtable=0x63A65C、slot+0x18=0x455FA0→0x455FABがSummonFlash+0
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
 - [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 767](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L767-L767) — [CORRECTION] 13Hの未解明EBXは召喚親Unit直接ではなくSummonFlash効果文脈。参照の伝播は S+0xC→SummonFlash+0xC→child+0xC。これは召喚親の一意識別情報を証明しない。元PE E8 site3/3一致、RTTI/静的vtable照合。詳細 data/T011_SU
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+<a id="field-7c"></a>
+## SummonFlash + 0x7C
+
+- [research/recovered/b_batch3/T011_SUMMON_CALLER_GROUP_PROVENANCE_NATIVE_20261027_15H.md 行 6](../../research/recovered/b_batch3/T011_SUMMON_CALLER_GROUP_PROVENANCE_NATIVE_20261027_15H.md?plain=1#L6-L6) — [EFFECT ARG] 0x54ED89 PUSH H→0x54ED8A CALL0x550580でSummonFlash構築。0x54ED8F EBX=effect。5引数PUSH中は元source slot +0x2C が +0x40へ移動し、0x54ED95 MOV EAX,[ESP+0x40]→[EBX+0x
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 771](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L771-L771) — [NEW] 原作0x54E7F0でfirst stack arg=[EBP+8]をsource Unit-like Sとして保存、0x54ED51→0x54ED70 S+0xCからholder H取得、0x54ED95でSummonFlash+0x7Cへ同S格納。0x54DF4B/0x550219/0x57F484/0
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+- [research/recovered/tests_batch5/T020_T011_SUMMON_GROUP_PARENT_NONIDENTITY_20261027_15H.md 行 6](../../research/recovered/tests_batch5/T020_T011_SUMMON_GROUP_PARENT_NONIDENTITY_20261027_15H.md?plain=1#L6-L6) — [CONCRETE DELTA] B静的経路ではsource Sは第1stack引数で、SummonFlash+0x7Cへ同Sが格納され得る。holder H=[S+0xC]は管理参照、child+0x1D0は分岐によりGroup pointerを保持し得る。4 caller VA=0x54DF4B/0x550219/
+  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

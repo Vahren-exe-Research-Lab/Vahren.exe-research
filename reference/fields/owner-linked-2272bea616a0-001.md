@@ -28,16 +28,52 @@
 - [research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md 行 5](../../research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md?plain=1#L5-L5) — [ENTRY/KEY] 4DFD80はEDI=Unit+0x800 container-like structure、stack arg1 status-index DWORD（RET4）。4DFD96 call565780 and4DFDA0 call479760の戻・byte initializeを経て4DFDA5
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
+<a id="field-78"></a>
+## linked + 0x78
+
+- [research/recovered/b_batch11/data/T028_SPOT_FULL_TREE_CLEAR_RECURSIVE_DESTRUCTOR_NATIVE_20261030_03H.md 行 25](../../research/recovered/b_batch11/data/T028_SPOT_FULL_TREE_CLEAR_RECURSIVE_DESTRUCTOR_NATIVE_20261030_03H.md?plain=1#L25-L25) — 次は0x495580後のUnit+0x1B4参照寿命／0x597A50 linked +0x78型（T028）、0x44CF80からT024 AIへの接続、T011 summon EXP、T012 damage、T013 final target。原本/MASTER/他lane/REA/dev_lab/Git/Work
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch11/data/T028_SPOT_TREE_ERASE_STRING_RELEASE_NATIVE_20261030_02H.md 行 27](../../research/recovered/b_batch11/data/T028_SPOT_TREE_ERASE_STRING_RELEASE_NATIVE_20261030_02H.md?plain=1#L27-L27) — 新規B READY0、E MASTER統合0、Task DONE0、STATIC/INFERRED/VERIFY/NOT READY。次は 0x416870 full-clear destruct順、0x495580後のUnit+0x1B4寿命、0x597A50 linked+0x78意味、T011召喚/経験値・T01
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch11/data/T028_SPOT_VECTOR_HELPER_FLAG_SPLIT_NATIVE_20261030_00H.md 行 25](../../research/recovered/b_batch11/data/T028_SPOT_VECTOR_HELPER_FLAG_SPLIT_NATIVE_20261030_00H.md?plain=1#L25-L25) — NEXT：0x416080 /0x415CF0の+0x1C collection copy副作用と0x495544の後続参照更新の因果、0x5AC5E3到達CFG、linked+0x78型。他B P0（T011召喚/EXP、T012ダメージ、T013対象選択、T024通常AI）継続。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch3/T028_RETREAT_SPOT_RESERVATION_RELEASE_NATIVE_20261029_23H.md 行 25](../../research/recovered/b_batch3/T028_RETREAT_SPOT_RESERVATION_RELEASE_NATIVE_20261029_23H.md?plain=1#L25-L25) — Golden DESIGNED_NOT_RUN：未改変EXEとx20前DAT、同SAVE/MAP/input/RNGでUnit+0x1B4既存/NULL、Spot+0xB8確保/解放、linked+0x78有無、容量-1/等号/+1、0x598450副作用、可視退却と次tickを計測。Gameplay PASS0/st
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+<a id="field-168"></a>
+## linked + 0x168
+
+- [research/recovered/search_reports1/reports/_history_20261029/P0_SUMMON_EXP_OWNER_REPORT_20261021.md 行 29](../../research/recovered/search_reports1/reports/_history_20261029/P0_SUMMON_EXP_OWNER_REPORT_20261021.md?plain=1#L29-L29) — 3. **miss時**：[STATIC VERIFIED] `0x54EF3E CALL 0x58B7F0` が召喚用UnitData相当の能力値を生成する。入力にはSkill+0x238が非0ならその値、未指定時には発動元のlinked+0x168レベルと倍率関連値が用いられる枝を含む。初期EXP、倍率丸めの全条件
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
 <a id="field-16c"></a>
 ## linked + 0x16C
+
+- [research/recovered/b_batch7/data/T012_KARATE_ROOT_CHILD_EXPPER_SPLIT_20261014.md 行 11](../../research/recovered/b_batch7/data/T012_KARATE_ROOT_CHILD_EXPPER_SPLIT_20261014.md?plain=1#L11-L11) — [CONSUMER/RESULT] B既存T012§59/75/77-81の0x551E50 hit-side helperにはSkill+0x2A8 sentinel=-123456.0の早期exit gateがある。上記原文とnative consumerを直結できるのは条件付き予測のみ。child collisi
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/b_batch7/data/T012_KARATE_ROOT_CHILD_EXPPER_SPLIT_20261014.md 行 13](../../research/recovered/b_batch7/data/T012_KARATE_ROOT_CHILD_EXPPER_SPLIT_20261014.md?plain=1#L13-L13) — [REIMPLEMENT] 各Skillノードのraw propertyとeffective +0x2A8を個別保持し、runtime child factory/jobに実使用Skill pointer、hit context+D、HP virtual結果、0x551E50呼出/早期gate、linked+0x16C
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
 - [research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md 行 72](../../research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md?plain=1#L72-L72) — 同一原作EXE SHA / 同一DAT / SAVE / MAP / 入力 / RNG seed と状態で、合法な `allfunc` ミサイル技能を採り、候補vectorが0/1/2/3件の場合と、2件中1件不適格・index10/非10・Skill+0x2A8 sentinel/zero・Unit+0x1D0 nu
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
+- [research/recovered/dev_reports/DEVLAB_HANDOFF_20261011_TYPED_DAMAGE_215.md 行 22](../../research/recovered/dev_reports/DEVLAB_HANDOFF_20261011_TYPED_DAMAGE_215.md?plain=1#L22-L22) — - src/hakushin_compat/hit_linked_award_subset.py + tests/test_hit_linked_award_subset.py: 9 PASS。hit once、ratio上限、skill+0x2A8の異なる変換/最低10、linked+0x16C符号なし加算/leve
+  制約・訂正　Historical STATIC/INFERRED/VERIFY and synthetic-test claims; no new native/runtime verification; referenced raw assets/probes/archives not recovered; no Golden/READY promotion; attack mixed-stat expression later corrected to2-R in MAIN_DECOMP_STAGE; mode6 refined in MODE6_DISTANCE
+
 - [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 329](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L329-L329) — ## 20. linked+0x16C/+0x170はUnit serializerで4-byte個別出力される（2026-10-10 新B）
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 
+- [research/recovered/rea_batch14/reports/SOURCE_RECOVERY_TYPED_DAMAGE_20261011.md 行 47](../../research/recovered/rea_batch14/reports/SOURCE_RECOVERY_TYPED_DAMAGE_20261011.md?plain=1#L47-L47) — - VA0x551FB2でlinked+0x16CへのDWORD加算、0x551FC9ではlinked+0x170をunsignedで比較し、閾値成立で0x58A650を呼ぶ。ここから先のlevel-up実作用/UIはVERIFY。
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
 - [research/recovered/search_reports1/reports/_history_20261029/EXP_SUMMON_DEATH_RESEARCH_20261021.md 行 23](../../research/recovered/search_reports1/reports/_history_20261029/EXP_SUMMON_DEATH_RESEARCH_20261021.md?plain=1#L23-L23) — - [STATIC VERIFIED] linked=[actor+0x1C8]、`0x551FB2` で `linked+0x16C += amount`。ctx+0xCにより同一contextでの二重加算を局所的に抑えるが、別context間の防止は別問題。
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
+- [research/recovered/search_reports1/reports/_history_20261029/EXP_SUMMON_DEATH_RESEARCH_20261021.md 行 24](../../research/recovered/search_reports1/reports/_history_20261029/EXP_SUMMON_DEATH_RESEARCH_20261021.md?plain=1#L24-L24) — - [STATIC VERIFIED] actor+0x8C非0かつlinked+0x16C>=+0x170なら `0x551FD3 CALL 0x58A650`。追加のctx+0xE・`0x571A40` 条件を満たすと `t_levelup` と仮想 `levelup` 通知が実行される。
   制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
 
 - [research/recovered/search_reports1/reports/_history_20261029/EXP_SUMMON_DEATH_RESEARCH_20261021.md 行 64](../../research/recovered/search_reports1/reports/_history_20261029/EXP_SUMMON_DEATH_RESEARCH_20261021.md?plain=1#L64-L64) — - [VERIFY] 死亡→変身→再生成が `linked+0x16C` をどう継ぐかは一般化できない。T024で確認済みfake EU proxyの移動/削除/遅延復帰は特別なscript経路であり、一般的なtransformルールではない。
@@ -46,10 +82,28 @@
 - [research/recovered/search_reports1/reports/_history_20261029/EXP_SUMMON_DEATH_RESEARCH_20261021.md 行 85](../../research/recovered/search_reports1/reports/_history_20261029/EXP_SUMMON_DEATH_RESEARCH_20261021.md?plain=1#L85-L85) — 2. K1 通常の単発命中：同一contextの複数副作用と別context2回を区別。551E50入口gate +0xC、linked+0x16C pre/post、+0x170、LvとUI通知が一致するか。
   制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
 
+<a id="field-170"></a>
+## linked + 0x170
+
+- [research/recovered/rea_batch14/reports/SOURCE_RECOVERY_TYPED_DAMAGE_20261011.md 行 47](../../research/recovered/rea_batch14/reports/SOURCE_RECOVERY_TYPED_DAMAGE_20261011.md?plain=1#L47-L47) — - VA0x551FB2でlinked+0x16CへのDWORD加算、0x551FC9ではlinked+0x170をunsignedで比較し、閾値成立で0x58A650を呼ぶ。ここから先のlevel-up実作用/UIはVERIFY。
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
+- [research/recovered/remaining_md1/reports/dev_lab/docs/PROJECT_HANDOFF_MASTER_20261011.md 行 72](../../research/recovered/remaining_md1/reports/dev_lab/docs/PROJECT_HANDOFF_MASTER_20261011.md?plain=1#L72-L72) — - `0x551E50`: context once +0xC先行store、Unit+0x1C8 linked objectの+0x16Cへ加算。Skill+0x2A8 sentinel、ratio mode3/4/5、linked+0x170閾値 unsigned 比較と0x58A650呼出までは局所再現。実レベル
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+
 <a id="field-1b1"></a>
 ## linked + 0x1B1
 
+- [research/recovered/search_reports1/reports/_history_20261029/EXP_SUMMON_DEATH_RESEARCH_20261021.md 行 56](../../research/recovered/search_reports1/reports/_history_20261029/EXP_SUMMON_DEATH_RESEARCH_20261021.md?plain=1#L56-L56) — - [STATIC VERIFIED] `0x575A60` はUnit+0x1867C未設定時に設定し、linked+0x1B1を立て、Unit+0x90を0にする。MissileFlash等と複数virtual呼出を経由し、Unitをある戦闘内管理配列から除去する。
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
 - [research/recovered/search_reports1/reports/_history_20261029/EXP_SUMMON_DEATH_RESEARCH_20261021.md 行 88](../../research/recovered/search_reports1/reports/_history_20261029/EXP_SUMMON_DEATH_RESEARCH_20261021.md?plain=1#L88-L88) — 5. K4 death：HP0前後→Unit+0x1867C/linked+0x1B1→0x575A60/575DF0/5684B0条件付きCALL→既存pointerの再利用/破棄をフレーム境界で観測。
   制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
+<a id="field-1c4"></a>
+## linked + 0x1C4
+
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 338](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L338-L338) — ## 21. B-20261011-0610-02｜Unit+0x1D8の外部表indexを+0x1B8へ写し、linked+0x1C4をindex別集計（T011/T013）
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

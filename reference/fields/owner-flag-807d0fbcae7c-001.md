@@ -28,11 +28,23 @@
 - [research/recovered/b_batch6/data/T011_TRAINING_PARTIAL_RANGE_SUCCESSOR_PRESERVE_NATIVE_20261031_11H.md 行 16](../../research/recovered/b_batch6/data/T011_TRAINING_PARTIAL_RANGE_SUCCESSOR_PRESERVE_NATIVE_20261031_11H.md?plain=1#L16-L16) — [KB_CANDIDATE] 本ID / B/T011 / 0x4DEF6A,0x4DEF74,0x4DEF78,0x4DEF9A,0x4DEFB0,0x4DEFC4,0x4DEFCF,0x4DEFD4,0x4DEFDC / CALL0x4DEFCF→0x4DEC70 / left+0,right+8,parent+4
   制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
 
+<a id="field-44"></a>
+## flag + 0x44
+
+- [research/recovered/rea_batch8/reports/REA_20261025_19H_P0_OGG_STREAM_GATE_STATIC.md 行 34](../../research/recovered/rea_batch8/reports/REA_20261025_19H_P0_OGG_STREAM_GATE_STATIC.md?plain=1#L34-L34) — 2. 破損Ogg／存在しないOgg：ctorポインタ非NULLでもdecoder+5=0、stream側flag+0x44=0、失敗cleanupまでの到達回数。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
 <a id="field-75"></a>
 ## flag + 0x75
 
 - [research/recovered/b_batch4/data/T011_B_REENTRY_LOCAL429_RECOVERY_20261021_0510.md 行 5](../../research/recovered/b_batch4/data/T011_B_REENTRY_LOCAL429_RECOVERY_20261021_0510.md?plain=1#L5-L5) — - 許可された独立作業: 添付済オフラインZIP34 entry CRC PASS、manifest-SQLite SHA一致、既保存Ghidra擬似CとCALL関係のみ静的照合。新規研究候補 `B-OFFLINE-20261021-0510-01`（T011 0x582D90 member→0x466F60→0x58
   制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+<a id="field-1867c"></a>
+## flag + 0x1867C
+
+- [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md 行 91](../../research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md?plain=1#L91-L91) — - 対象除去flag+0x1867C、静的型+0x8D、属性・確率・抵抗等のgateは残る。とどめで常に吸える/吸えない、任意技能が合法にdrainを持てる等は未証明。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
 
 <a id="field-1eec44"></a>
 ## flag + 0x1EEC44

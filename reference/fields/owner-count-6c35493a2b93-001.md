@@ -25,8 +25,17 @@
 <a id="field-334"></a>
 ## count + 0x334
 
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 442](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L442-L442) — [CONFIRMED-SAVED-NATIVE] `exe/T014_VAR_CALLSITE_PROBE.txt` 0x45C152..0x45C16Eは第5container sentinel+0x330を自己参照に戻しcount+0x334をzero化。直後0x45C189 @gamemode writer→0x
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 566](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L566-L566) — [REIMPLEMENT / VERIFY] load後のflag計算は上記前提で `nozone_record_value==1 ? 1 : (owner[+0x33C]==owner[+0x340] ? 1 : 0)`。第5tree(+0x32C head+0x330 count+0x334)と隣接+0x33C/+
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+<a id="field-34c"></a>
+## count + 0x34C
+
+- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 541](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L541-L541) — [SAVED-C GUI JOIN] 既存保存Ghidra C（dev_lab/recovered_source/peer_script01_ghidra_named_decomp_20261011.zip内decomp_0052xxxx.c/0056xxxx.c、D T015 D-20261013-0943-01）に
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 
 <a id="field-186b4"></a>
 ## count + 0x186B4
@@ -42,5 +51,11 @@
 
 - [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 929](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L929-L929) — [CONFIRMED-SAVED-NATIVE] A保存`exe/T014_NORMAL_LOAD_PROBE.txt` 0x45EC24..0x45EC66はECX=owner+0x32C→0x4ED240のnode erase・+0x330 head self-link・+0x334 count=0。A保存`exe
   制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+<a id="field-65eb60"></a>
+## count + 0x65EB60
+
+- [research/recovered/b_batch10/data/T024_MODE_PARAM_FILTER_TWO_CALLERS_NATIVE_20261026_03H.md 行 24](../../research/recovered/b_batch10/data/T024_MODE_PARAM_FILTER_TWO_CALLERS_NATIVE_20261026_03H.md?plain=1#L24-L24) — Golden条件は無改変原作EXE、20倍前DAT、同SAVE/MAP/input/RNGで global0/1×param0/1×owner+1C0/1×inner空/非空、候補count+0x65EB60・UI通知・次tick比較。DESIGNED_NOT_RUN / Gameplay PASS0 / strict
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

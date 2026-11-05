@@ -7,10 +7,19 @@
 <a id="field-14"></a>
 ## builder + 0x14
 
+- [research/recovered/rea_batch9/reports/REA_20261024_2137_P0_ARMYCHIP_CHILD_RTTI_SLOT_STATIC.md 行 15](../../research/recovered/rea_batch9/reports/REA_20261024_2137_P0_ARMYCHIP_CHILD_RTTI_SLOT_STATIC.md?plain=1#L15-L15) — 0x005B0C88で作成結果をESIへ、0x005B0CC3でbuilder+0x14のvector先頭、0x005B0CC9で一時格納した子ポインタのアドレスを指定、0x005B0CCD CALL 0x004C1290。callee擬似Cはポインタをvector末尾へ書いてendを+4進める。成功経路のコンテナ連結
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; held bodies not recovered
+
+- [research/recovered/rea_batch9/reports/REA_20261024_2137_P0_ARMYCHIP_CHILD_RTTI_SLOT_STATIC.md 行 34](../../research/recovered/rea_batch9/reports/REA_20261024_2137_P0_ARMYCHIP_CHILD_RTTI_SLOT_STATIC.md?plain=1#L34-L34) — 次はこの型以外がbuilder+0x14配列に入る経路、登録時のvptr再設定・解放と配列変更による呼出順を限定調査。実機は別担当Golden条件として、ArmyChip子要素の正常経路で flag0 の0x004C22B0と0x004C2440を観測し、0x004C3E40/+0x6Cゼロ化を不実行と期待（NOT R
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; held bodies not recovered
+
 - [research/recovered/rea_batch9/reports/REA_20261024_22H_P0_ARMYCHIP_VECTOR_LIFETIME_STATIC.md 行 15](../../research/recovered/rea_batch9/reports/REA_20261024_22H_P0_ARMYCHIP_VECTOR_LIFETIME_STATIC.md?plain=1#L15-L15) — - 親生成 `0x005B0880` の命令 `0x005B08BE/0x005B08C1/0x005B08C4` は `builder+0x14/+0x18/+0x1C` をそれぞれゼロ初期化。これらは子ポインタvectorのbegin/end/capacityに相当する。
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; held bodies not recovered
 
 - [research/recovered/rea_batch9/reports/REA_20261024_22H_P0_ARMYCHIP_VECTOR_LIFETIME_STATIC.md 行 16](../../research/recovered/rea_batch9/reports/REA_20261024_22H_P0_ARMYCHIP_VECTOR_LIFETIME_STATIC.md?plain=1#L16-L16) — - 親 `0x005B0A50` 内で `0x005B0C83` →子生成 `0x005B0EA0`、`0x005B0CC3` にて `builder+0x14`、`0x005B0CCD` →汎用vector挿入 `0x004C1290`。既存2137の生成・追加経路を別途限定再照合。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; held bodies not recovered
+
+- [research/recovered/rea_batch9/reports/REA_20261024_23H_P0_ARMYCHIP_CHILD_DTOR_READBACK.md 行 19](../../research/recovered/rea_batch9/reports/REA_20261024_23H_P0_ARMYCHIP_CHILD_DTOR_READBACK.md?plain=1#L19-L19) — 再開: `0x005B1310` の間接仮想destructorの実際のcaller/owner、および親builder+0x14配列からの子所有権の移管・解放経路。
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; held bodies not recovered
 
 <a id="field-24"></a>
@@ -20,6 +29,21 @@
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; held bodies not recovered
 
 - [research/recovered/rea_batch9/reports/REA_20261025_01H_P0_ARMYCHIP_MANAGER_GATE_STATIC.md 行 11](../../research/recovered/rea_batch9/reports/REA_20261025_01H_P0_ARMYCHIP_MANAGER_GATE_STATIC.md?plain=1#L11-L11) — - `0x005B0B42/45`: builder処理でも`EDI=[ [builder+0x24] + 0x0C]`を取得。`0x005B0B9D/A1/A4`で`EAX=[EDI+4]+0x0C`を介して`0x004C2440`に子を渡す。この呼び出しはmanager Mの`+0x44/+0x48` vector
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; held bodies not recovered
+
+- [research/recovered/rea_batch9/reports/REA_20261025_01H_P0_ARMYCHIP_MANAGER_GATE_STATIC.md 行 12](../../research/recovered/rea_batch9/reports/REA_20261025_01H_P0_ARMYCHIP_MANAGER_GATE_STATIC.md?plain=1#L12-L12) — - よって**builder+0x24のownerと中間ポインタが不変なら、生成時の親登録と後の子破棄予約は同じMを使用する**。この範囲のレジスタ命令列を原作PEで独立照合。途中のowner/vptr変更や別インスタンス混入は未否定。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; held bodies not recovered
+
+- [research/recovered/rea_batch9/reports/REA_20261025_02H_P0_OWNER_ARG_STATIC.md 行 11](../../research/recovered/rea_batch9/reports/REA_20261025_02H_P0_OWNER_ARG_STATIC.md?plain=1#L11-L11) — **呼出規約上の重要点**: `0x005B06AB MOV EBX,ECX`、`0x005B06E2 MOV ESI,[ESP+0x40]`、`0x005B06EA MOV [EDI+0x24],ESI`、`0x005B06ED MOV [EDI+0x28],EBX`を照合。両callerの第2スタック引数がbuil
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; held bodies not recovered
+
+- [research/recovered/rea_batch9/reports/REA_20261025_02H_P0_OWNER_ARG_STATIC.md 行 17](../../research/recovered/rea_batch9/reports/REA_20261025_02H_P0_OWNER_ARG_STATIC.md?plain=1#L17-L17) — 既知: builder+0x24がowner Xを保持し、builder処理`0x005B0B05/08/0B/0E`で`R=[[X+0x0C]+4]`、manager候補`M=R+0x0C`を参照する。main経路`0x00555E35 MOV ECX,0x008BE2F0`→`0x004B9930`→`0x004C
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; held bodies not recovered
+
+<a id="field-28"></a>
+## builder + 0x28
+
+- [research/recovered/rea_batch9/reports/REA_20261025_02H_P0_OWNER_ARG_STATIC.md 行 11](../../research/recovered/rea_batch9/reports/REA_20261025_02H_P0_OWNER_ARG_STATIC.md?plain=1#L11-L11) — **呼出規約上の重要点**: `0x005B06AB MOV EBX,ECX`、`0x005B06E2 MOV ESI,[ESP+0x40]`、`0x005B06EA MOV [EDI+0x24],ESI`、`0x005B06ED MOV [EDI+0x28],EBX`を照合。両callerの第2スタック引数がbuil
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; held bodies not recovered
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

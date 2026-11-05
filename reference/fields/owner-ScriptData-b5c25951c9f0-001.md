@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-4"></a>
+## ScriptData + 0x4
+
+- [research/recovered/b_batch5/data/T011_T012_SUPER_PARENT_STRING_OUTPARAM_MOVE_NATIVE_20261025_00H.md 行 13](../../research/recovered/b_batch5/data/T011_T012_SUPER_PARENT_STRING_OUTPARAM_MOVE_NATIVE_20261025_00H.md?plain=1#L13-L13) — 既21Hの属性検索0x00464290 @0x0046452C と値取得0x004647D0 @0x00464B19 にある [EAX+0x14]==0 停止gateは、今回確認したScriptData+0x4 string長の配置と構造的に一致。これが同一オブジェクトを必ず辿るか・合法DATでの値はINFERRED/
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
 <a id="field-14"></a>
 ## ScriptData + 0x14
 
@@ -15,5 +21,11 @@
 
 - [research/recovered/b_batch4/data/B_T012_STR_STACK_ALIAS_LOOKUP_OFFLINE_20261024_15H.md 行 24](../../research/recovered/b_batch4/data/B_T012_STR_STACK_ALIAS_LOOKUP_OFFLINE_20261024_15H.md?plain=1#L24-L24) — `0x004647D0` 本体（擬似C SHA256 `ADA8EC2EBDA2F55D78E17C4349C04824E6B60007F23EDCACE7ACC7F9FA2B5E05`）の出力先 `param_4` では、L80/L112/L145/L176でいずれも `param_4[8] = local_4c;`
   制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+- [research/recovered/b_batch4/data/B_T012_STR_STACK_ALIAS_LOOKUP_OFFLINE_20261024_15H.md 行 39](../../research/recovered/b_batch4/data/B_T012_STR_STACK_ALIAS_LOOKUP_OFFLINE_20261024_15H.md?plain=1#L39-L39) — 2. 未拒否領域で原作DATの`str`が現在ノード／`super`ノード／両方欠損／明示0／負数にある例を抽出し、ScriptData+0x20とSkill+0x280の連結を確認。拒否済み本文・コマンド・アドレスを別経路で再試行しない。
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+- [research/recovered/b_batch8/data/T012_STRRATIO_PARENT_SUPER_EMPTY_GATE_NATIVE_20261024_21H.md 行 13](../../research/recovered/b_batch8/data/T012_STRRATIO_PARENT_SUPER_EMPTY_GATE_NATIVE_20261024_21H.md?plain=1#L13-L13) — 存在判定の失敗復帰は0x0046457A XOR AL,AL、成功復帰は0x004645B3 MOV AL,1（既17/18H成果）。値取得の失敗経路0x00464B4F..0x00464B7Cは出力オブジェクトの+0x20へデフォルト数値0をコピー。成功経路0x00464BDD..0x00464C1Fは候補Scrip
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

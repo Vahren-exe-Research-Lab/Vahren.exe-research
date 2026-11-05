@@ -10,6 +10,18 @@
 - [research/recovered/b_batch10/data/T024_MODE_PARAM_FILTER_TWO_CALLERS_NATIVE_20261026_03H.md 行 10](../../research/recovered/b_batch10/data/T024_MODE_PARAM_FILTER_TWO_CALLERS_NATIVE_20261026_03H.md?plain=1#L10-L10) — 通過後は0x41F043 [ECX+ESI*4] → 0x41F046/49 inner+0xC/+0x10 vector、空なら0x41F04E XOR EAX,EAX / 0x41F050 JMP 0x41F054。
   制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
+- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 532](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L532-L532) — [MEMBER WRITER] 同保存native 0x4B5D94..0x4B5E6Eの候補resolver・型一致後にinner+0x0C..0x10を走査し、member pointerごとに0x4B5E62..65でそのALを[member+0x1FA]へ格納する。通常のunctrlTroop literal一
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 568](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L568-L568) — [NATIVE SUBJECT AND GATES] 入力名前解決0x49C450→candidate 0x49E8B0→vectorが空なら0x4B5AEEから0x4B5BBC cleanupへ。各outer+0x1D0 inner非NULL・0x44D070型照合一致した場合のみ内側の分岐を実行。AL[-0x76]
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+<a id="field-48"></a>
+## inner + 0x48
+
+- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 569](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L569-L569) — [NATIVE WRITER ORDER] 上のsubject gate通過後、0x4B5B6E..0x4B5B84でinner+0x48=0、inner+0x4C/0x50=0x80000008を設定し、0x5686A0(0)へcallする。その後0x565780/0x5158E0等後処理を行い、次候補へ。個別分岐c
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
 <a id="field-4c"></a>
 ## inner + 0x4C
 
@@ -25,7 +37,22 @@
 <a id="field-70"></a>
 ## inner + 0x70
 
+- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 516](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L516-L516) — [READER EXACT] isActive caseは文字列→0x49C450→0x49E780でouter対象を解決し、outer非nullなら [outer+0x1D0] をeaxへ取り、そのinner+0x70を比較（0x451BC7..0x451BD5）。innerが非nullでbyte+0x70==0なら
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 525](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L525-L525) — [WRITER GATES] 非空でも各outer+0x1D0 nullなら0x4B5C92→0x4B5CDBでskip、0x44D070の比較結果が不一致でも0x4B5CB3→同skip。条件合格時のみ0x4B5CBAのinner+0x70 writer、直後0x5158E0側へ進む。既知§10/§60の+0x70
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
 - [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 532](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L532-L532) — [MEMBER WRITER] 同保存native 0x4B5D94..0x4B5E6Eの候補resolver・型一致後にinner+0x0C..0x10を走査し、member pointerごとに0x4B5E62..65でそのALを[member+0x1FA]へ格納する。通常のunctrlTroop literal一
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 534](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L534-L534) — [REIMPLEMENT / GOLDEN NOT RUN] script別registry+opcode+subject filter、inner+0x70とmember+0x1FAを分ける。合法導線にctrl/unctrlがあれば可視命令時点の操作可否・部隊状態を旧/new対照、RTSではwave起動前後の+0x7
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 543](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L543-L543) — [STRICT / GOLDEN NOT RUN] opcode10 active/sleepのinner+0x70とopcode11 ctrl/unctrlのUnit+0x1FA＋条件付きPlayer selection clearを分離。RTS直下waveにctrl/unctrlの直接callが有る証拠は既存検索0
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 654](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L654-L654) — [CONFIRMED-SAVED-X86 / NEW CROSS-HANDLER] A保管のread-only exe/T006_BATTLE_STATE_PROBE.txt VA0x4B5C70..0x4B5CDEを再読。activeTroop/sleepTroopは対象vector/outer+0x1D0/0x44
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 
 - [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 707](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L707-L707) — [CALLEEの限定片 / CONFIRMED] 既保存exe/T010_RUNTIME_PROBE.txt VA0x565780..0x56579Bで0x565783 push0x14→0x565785 call0x5B6C2B、戻値非NULL枝では[esi+4]由来DWORDを[EAX]および[EAX+4]へ書く。

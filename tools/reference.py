@@ -147,7 +147,9 @@ def run_records(content, path, digest, recovery):
 
 
 def local_field_mentions(content, path, digest, recovery, line):
-    pattern = r"(?<![\w:])([A-Za-z_]\w*(?:::[A-Za-z_]\w*)*)\s*\+\s*(0x[0-9a-f]+)(?![\w])"
+    # Owner/offset tokens are ASCII identifiers; adjacent Japanese is report prose.
+    # Keep whitespace Unicode-aware so full-width spaces remain valid separators.
+    pattern = r"(?a:(?<![\w:])([A-Za-z_]\w*(?:::[A-Za-z_]\w*)*))\s*\+\s*(0x[0-9a-f]+)(?a:(?!\w))"
     registers = {"eax", "ebx", "ecx", "edx", "esi", "edi", "esp", "ebp", "eip",
                  "rax", "rbx", "rcx", "rdx", "rsi", "rdi", "rsp", "rbp", "rip",
                  "ax", "bx", "cx", "dx", "si", "di", "sp", "bp"}

@@ -4,10 +4,25 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-14"></a>
+## manager + 0x14
+
+- [research/recovered/b_batch11/data/T028_T013_SELECTOR_D0_SENTINEL_RNG_GATE_NATIVE_20261030_11H.md 行 22](../../research/recovered/b_batch11/data/T028_T013_SELECTOR_D0_SENTINEL_RNG_GATE_NATIVE_20261030_11H.md?plain=1#L22-L22) — 無改変原作EXEとx20変更前DAT、同SAVE/MAP/input/RNGでselector NULL/nonnull、Unit+0x1AD=0/1、manager+0x14先+0x10=0/非0、[ESP+0x1B]変化、0x447C6E/0x447E1AのRAND呼出し回数、manager+0xD0実double
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 <a id="field-18"></a>
 ## manager + 0x18
 
+- [research/recovered/b_batch8/data/T013_BTL_LIMIT_EFFECTIVE_DAT_AND_GETTER_CACHE_NATIVE_20261031_03H.md 行 15](../../research/recovered/b_batch8/data/T013_BTL_LIMIT_EFFECTIVE_DAT_AND_GETTER_CACHE_NATIVE_20261031_03H.md?plain=1#L15-L15) — - manager+0x98>10かつ入力category1/7の場合：flag0はK<260で6、K>=260で入力保持。flag非0はK<300で一旦6、ただし既知0x4495BF..D7でmanager+0x18==0なら6→7、非0なら6維持。K>=300は入力保持。manager+0x98<=10の非0入力は
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 - [research/recovered/b_batch8/data/T013_BTL_LIMIT_EFFECTIVE_DAT_AND_GETTER_CACHE_NATIVE_20261031_03H.md 行 18](../../research/recovered/b_batch8/data/T013_BTL_LIMIT_EFFECTIVE_DAT_AND_GETTER_CACHE_NATIVE_20261031_03H.md?plain=1#L18-L18) — - 原作Golden要件：無改変EXE+20倍化前DAT、同SAVE/MAP/input/RNG、context原作1300/1500・一時的なmissing/explicit0（合法fixture限定）、manager+0x98=10/11、groupflag=0/1、manager+0x18=0/非0、K=T-1/
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/b_batch9/data/T013_MODE3_EBX_CATEGORY_PRODUCER_NATIVE_20261031_05H.md 行 11](../../research/recovered/b_batch9/data/T013_MODE3_EBX_CATEGORY_PRODUCER_NATIVE_20261031_05H.md?plain=1#L11-L11) — - 0x44C74Fのmanager+0x18非零または0x44C75Eのmanager+0xA5非零なら0x49D1B0をskip。両方0なら0x44C755..0x44C767でESI=[manager+4]+0x504をセットしCALL0x49D1B0。その関数はvectorを巡回しvtable+0x58間接CA
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/b_batch9/data/T013_MODE3_EBX_CATEGORY_PRODUCER_NATIVE_20261031_05H.md 行 13](../../research/recovered/b_batch9/data/T013_MODE3_EBX_CATEGORY_PRODUCER_NATIVE_20261031_05H.md?plain=1#L13-L13) — - 0x449500の元PE 0x449500..0x4495D7 SHA256=8EE452BCE82BF92A932692E18BE9E567537F197F2B62DFB97AE709427B6E384A。manager+0x78==+0x7C（Unit配列空）なら0x44950F→0x4496EDでこの関数のU
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
 - [research/recovered/b_batch9/data/T013_SPECIAL_BTL_LIMIT_C_CATEGORY_CLOCK_NATIVE_20261031_02H.md 行 12](../../research/recovered/b_batch9/data/T013_SPECIAL_BTL_LIMIT_C_CATEGORY_CLOCK_NATIVE_20261031_02H.md?plain=1#L12-L12) — - 0x4495BF→0x4495D7: group+0x1EF244!=0、manager+0x18==0、category==6が全成立ならcategory7へ再変更（以前23Hの一般分岐をnativeで再照合、二重計上なし）。
@@ -15,6 +30,12 @@
 
 - [research/recovered/b_batch9/data/T013_SPECIAL_BTL_LIMIT_C_CATEGORY_CLOCK_NATIVE_20261031_02H.md 行 17](../../research/recovered/b_batch9/data/T013_SPECIAL_BTL_LIMIT_C_CATEGORY_CLOCK_NATIVE_20261031_02H.md?plain=1#L17-L17) — - Golden設計: 無改変原作EXE+20倍化前DAT、同SAVE/MAP/input/RNGで manager+0x98境界10/11、入力category0/1/7、group+0x1EF244=0/1、manager+0x18=0/非0、btl_limit[_c] 500、start/cur finite/s
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/b_reports/T013_MODE2_CATEGORY_LABEL_AND_UNIT_WRITER_NATIVE_20261030_23H.md 行 12](../../research/recovered/b_reports/T013_MODE2_CATEGORY_LABEL_AND_UNIT_WRITER_NATIVE_20261030_23H.md?plain=1#L12-L12) — - vector非空かつ[manager+0x98]<=10の場合、0x44952D..39で入力2!=0→0x4495B7で内部category=6(advance)へ変更。その後、[manager+4]+0x1EF244!=0かつmanager+0x18==0なら0x4495D7でcategory=7(even)へ
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
+
+- [research/recovered/b_reports/T013_MODE2_POSTREFILL_SCORE_DISPATCH_NATIVE_20261030_21H.md 行 16](../../research/recovered/b_reports/T013_MODE2_POSTREFILL_SCORE_DISPATCH_NATIVE_20261030_21H.md?plain=1#L16-L16) — - 0x44C7A9 manager+0x98と0x44C7BE [[manager+4]+0x1EF244]、0x44C7C7 manager+0x18からlocal categoryを0/6/7/8などに設定。0x44C7E8 JMP DWORD [EAX*4+0x44CD28] は9エントリのswitch（ran
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
 - [research/recovered/e_reports/T020_E_T013_BTLLIMIT_CLOCK_ACCEPTANCE_20261031_02H.md 行 10](../../research/recovered/e_reports/T020_E_T013_BTLLIMIT_CLOCK_ACCEPTANCE_20261031_02H.md?plain=1#L10-L10) — - 224 synthetic cases span category {0,1,6,7}, manager+0x98 {10,11}, groupflag {0,1}, manager+0x18 {0,1}, and seven timer pairs including zero/zero, 99/100/101
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
@@ -28,6 +49,9 @@
 - [research/recovered/e_reports/T020_E_T013_EFFECTIVE_CONTEXT_ACCEPTANCE_20261031_03H.md 行 15](../../research/recovered/e_reports/T020_E_T013_EFFECTIVE_CONTEXT_ACCEPTANCE_20261031_03H.md?plain=1#L15-L15) — - Boundary matrix K=T-1, K=T, K=T+1; category1/7; manager+0x98=10/11; flag=0/1; manager+0x18=0/1; three property states. 144 synthetic cases; intermediate categ
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
 
+- [research/recovered/e_reports/T020_E_T013_MODE3_EBX_ACCEPTANCE_20261031_05H.md 行 13](../../research/recovered/e_reports/T020_E_T013_MODE3_EBX_ACCEPTANCE_20261031_05H.md?plain=1#L13-L13) — - 非空Unit配列の場合の限定モデル：manager+0x98>10なら3(push)、<=10なら6(advance)、さらにgroupflag!=0かつmanager+0x18==0で7(even)。空配列はUnit書戻しなし。0x49D1B0呼出gateはmanager+0x18==0 AND manager+
+  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
+
 - [research/recovered/e_reports/T020_E_T013_MODE3_EBX_ACCEPTANCE_20261031_05H.md 行 17](../../research/recovered/e_reports/T020_E_T013_MODE3_EBX_ACCEPTANCE_20261031_05H.md?plain=1#L17-L17) — - vector長0/1/4 × manager+0x98=9/10/11 × groupflag0/1 × manager+0x18=0/1 × manager+0xA5=0/1 = 72件。合成出力はUnit書込なし24、category3=16、category6=24、category7=8件。72/72 PA
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
 
@@ -35,6 +59,9 @@
 ## manager + 0x1C
 
 - [research/recovered/b_batch3/B_T012_T013_COLLISION_CLEANUP_OWNER_OFFLINE_20261023_0009.md 行 31](../../research/recovered/b_batch3/B_T012_T013_COLLISION_CLEANUP_OWNER_OFFLINE_20261023_0009.md?plain=1#L31-L31) — candidate_context = *(manager + 0x1C)
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch3/B_T012_T013_COLLISION_CLEANUP_OWNER_OFFLINE_20261023_0009.md 行 38](../../research/recovered/b_batch3/B_T012_T013_COLLISION_CLEANUP_OWNER_OFFLINE_20261023_0009.md?plain=1#L38-L38) — 対して清掃側`0x515438: lea edi,[edx+0x68]`は、同一の`manager`引数から**直接**`manager+0x68`へ進み、`0x515445 → 0x579AA0`（キー範囲探索）、`0x51545A → 0x510850`（その範囲の削除）を呼ぶ。前回までの研究は数値treeの消去を
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 - [research/recovered/b_batch3/B_T012_T013_COLLISION_CLEANUP_OWNER_OFFLINE_20261023_0009.md 行 92](../../research/recovered/b_batch3/B_T012_T013_COLLISION_CLEANUP_OWNER_OFFLINE_20261023_0009.md?plain=1#L92-L92) — - **T012/T013:** `manager+0x68`ポインタキー索引の登録元、`[manager+0x1C]+0x68`候補treeの実体/ソートキー、管理者へのaliasの有無、tree消去が戦闘中の候補集合に与える副作用、命中→HP・状態・RNGの最後の接続。
@@ -58,8 +85,23 @@
 - [research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md 行 17](../../research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md?plain=1#L17-L17) — - 原PE 0x44C99E FCOMPP / 0x44C9A0 FNSTSW AX / 0x44C9A2 TEST AH,0x41 / 0x44C9A5 JNE0x44C9B4。非ジャンプ側0x44C9A7 PUSH2、0x44C9A9 PUSH EBX→0x44C9AA CALL0x449500、0x44C9AF
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+- [research/recovered/b_batch9/data/T013_MODE2_PRIMARY_UNIT_MODE3_GATE_NATIVE_20261030_14H.md 行 14](../../research/recovered/b_batch9/data/T013_MODE2_PRIMARY_UNIT_MODE3_GATE_NATIVE_20261030_14H.md?plain=1#L14-L14) — 13H既知の0x44A084 MOV ECX,[EDI-0x70]はmanager=EDI-0x90ゆえ同じmanager+0x20をdispatch modeとして読む。よって条件成立ならmode2処理内部で次回dispatchをmode3へ移す書き込みが存在する（STATIC）。実tickで遷移すること・calle
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/b_batch9/data/T013_MODE2_PRIMARY_UNIT_MODE3_GATE_NATIVE_20261030_14H.md 行 20](../../research/recovered/b_batch9/data/T013_MODE2_PRIMARY_UNIT_MODE3_GATE_NATIVE_20261030_14H.md?plain=1#L20-L20) — Golden必須：無改変原作EXE・20倍変更前DAT・同一SAVE/MAP/入力/RNG、mode2 caller実到達、各group+0xC0/+0xC4/+0xB8、Unit+0x1867C=0/非0/空群、[ESP+0x68]・+0x1EF22C両値、翌tickのmanager+0x20と実選択・行動を原作同r
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 - [research/recovered/b_batch9/data/T013_MODE3_EBX_CATEGORY_PRODUCER_NATIVE_20261031_05H.md 行 9](../../research/recovered/b_batch9/data/T013_MODE3_EBX_CATEGORY_PRODUCER_NATIVE_20261031_05H.md?plain=1#L9-L9) — - 0x44C70F～0x44C71Aのx87結果ゲートを通ると、0x44C71C manager=[ESP+0xC8]、0x44C72B MOV EBX,3、0x44C730 MOV [manager+0x20],EBX。ここでmode3設定とcategory引数producerが同一値3を共有。
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/b_reports/T013_MODE2_CATEGORY_LABEL_AND_UNIT_WRITER_NATIVE_20261030_23H.md 行 11](../../research/recovered/b_reports/T013_MODE2_CATEGORY_LABEL_AND_UNIT_WRITER_NATIVE_20261030_23H.md?plain=1#L11-L11) — - 22Hで確認した0x44C9A7 PUSH2→0x44C9AA CALL0x449500の呼出は、manager+0x20へのモード2書込ではない。0x449500は[manager+0x78/7C] vector空なら0x44950F→0x4496ED直帰。
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
+
+- [research/recovered/b_reports/T013_MODE2_POSTREFILL_SCORE_DISPATCH_NATIVE_20261030_21H.md 行 13](../../research/recovered/b_reports/T013_MODE2_POSTREFILL_SCORE_DISPATCH_NATIVE_20261030_21H.md?plain=1#L13-L13) — - 既知 0x44C6F2/0x44C701→0x44C705 CALL0x44CF80 は2026-10-29 17H既分析のため新規再計上0。その後0x44C70F～0x44C71Aが第二x87比較（AH,0x41）を行い、分岐不成立時0x44C730でmanager+0x20=3を書き、group+0x1C=0候
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
+
+- [research/recovered/b_reports/T013_MODE2_POSTREFILL_SCORE_DISPATCH_NATIVE_20261030_21H.md 行 15](../../research/recovered/b_reports/T013_MODE2_POSTREFILL_SCORE_DISPATCH_NATIVE_20261030_21H.md?plain=1#L15-L15) — - 0x44C778 FLD [ESP+0x2C]→0x44C77C FCOM ST(1)、0x44C780 TEST AH,5 / 0x44C783 JP0x44C99E。非ジャンプ側は0x44C789でmanager+0x20=1。mode3分岐と異なる値の更新がある（同一run到達未確認）。
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
 - [research/recovered/b_reports/T013_MODE2_POSTREFILL_SCORE_DISPATCH_NATIVE_20261030_21H.md 行 23](../../research/recovered/b_reports/T013_MODE2_POSTREFILL_SCORE_DISPATCH_NATIVE_20261030_21H.md?plain=1#L23-L23) — - Goldenは未改変原作EXEとx20前DAT、同一SAVE/MAP/input/RNGの合法runで、mode2候補数・[ESP+CC]・2tree cleanup・0x515060結果・FPU status・manager+0x20/+0xD0、category/Unit全フラグ・RNG消費・Unit+0x1E
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
@@ -79,14 +121,29 @@
 - [research/recovered/rea_batch8/reports/REA_20261026_05H_P0_OGG_EOF_CONSUMER_STATIC.md 行 14](../../research/recovered/rea_batch8/reports/REA_20261026_05H_P0_OGG_EOF_CONSUMER_STATIC.md?plain=1#L14-L14) — 7. 0x004BE220: 0x004BE29Dで0x004BF780をCALLしAL==0で0x004BE2AB cleanup、0x004BE2CAで曲インデックスを加算、0x004BE307で0x004BDE40をCALLし次曲処理へ。ほかのゲート(manager+0x24、backend+0x38、param
   制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
 
+- [research/recovered/rea_batch8/reports/REA_20261026_06H_P0_AUDIO_TICK_GATE_STATIC.md 行 12](../../research/recovered/rea_batch8/reports/REA_20261026_06H_P0_AUDIO_TICK_GATE_STATIC.md?plain=1#L12-L12) — 5. 0x004BE28Aのmanager+0x24ゲートが0なら曲送りへ進まない。0x004BE297はstream+0x38が0なら0x004BF780を飛ばして後続の停止/次曲処理へ進む。非0なら0x004BE29Dで継続判定を呼び、ALが非0なら0x004BE2A4で次曲処理を回避する。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
 - [research/recovered/rea_batch8/reports/REA_20261026_06H_P0_AUDIO_TICK_GATE_STATIC.md 行 19](../../research/recovered/rea_batch8/reports/REA_20261026_06H_P0_AUDIO_TICK_GATE_STATIC.md?plain=1#L19-L19) — - 通常ルートでEOFが32ゲート通過直後に変化すれば、次の評価まで最大31回のカウンタ更新を待つ可能性。ただし切替条件にはstream+0x38 / manager+0x24 / 0x004BF6A0 / 再生位置判定があり、実時間の上限や実際の遅延は保証できない。
   制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+<a id="field-28"></a>
+## manager + 0x28
+
+- [research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md 行 279](../../research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md?plain=1#L279-L279) — - loop core 0x4BDCB0はvectorをmanager +0x28/+0x2Cへ順序保持copyし、index +0x38=0から先頭を直ちに再生する。
+  制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
 
 <a id="field-2c"></a>
 ## manager + 0x2C
 
 - [research/recovered/rea_batch9/reports/REA_20261025_01H_P0_ARMYCHIP_MANAGER_GATE_STATIC.md 行 16](../../research/recovered/rea_batch9/reports/REA_20261025_01H_P0_ARMYCHIP_MANAGER_GATE_STATIC.md?plain=1#L16-L16) — - `0x004C2980/83`: `manager+0x64/+0x68`の待機vectorが非空か判定。`0x004C2996/99`: `manager+0x2C`を第1ベクタの入口として`0x004FAA60`を呼ぶ。V9擬似Cの同関数はsource範囲要素をvectorへ挿入する構造。ABI正式検証は未了。
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; held bodies not recovered
+
+<a id="field-30"></a>
+## manager + 0x30
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1633_T014_SHEET_REGISTRATION_AUDIT.md 行 36](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1633_T014_SHEET_REGISTRATION_AUDIT.md?plain=1#L36-L36) — `0x4C3D30`のEBXは実際には **manager = *(context+0x94)**。`0x4C3D44` はノードの+0x08が子ポインタと等しいか比較し、一致ノードをunlink・freeして件数を減らす。その後 `0x4C3D73` が新しいノードを挿入し、`0x4C3DA4 mov [eax+0x
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
 
 <a id="field-34"></a>
 ## manager + 0x34
@@ -97,11 +154,23 @@
 <a id="field-38"></a>
 ## manager + 0x38
 
+- [research/recovered/b_batch9/data/T013_MODE2_PRIMARY_UNIT_MODE3_GATE_NATIVE_20261030_14H.md 行 13](../../research/recovered/b_batch9/data/T013_MODE2_PRIMARY_UNIT_MODE3_GATE_NATIVE_20261030_14H.md?plain=1#L13-L13) — group走査後、0x44BDE8 CMP DWORD PTR [ESP+0x68],0が非0なら0x44BEC5へ。0の経路は0x44BDF5で[[EBP+4]+0x1EF22C]を確認し、その値が非0の場合0x44BE0A MOV DWORD PTR [EBP+0x20],3。続いてmanager+0x38..3C
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/b_batch9/data/T013_MODE3_EBX_CATEGORY_PRODUCER_NATIVE_20261031_05H.md 行 10](../../research/recovered/b_batch9/data/T013_MODE3_EBX_CATEGORY_PRODUCER_NATIVE_20261031_05H.md?plain=1#L10-L10) — - 0x44C733..0x44C74D はmanager+0x38/+0x3CのUnit*配列を巡回し、各要素+0x1C==0なら0x44C73F PUSH0 /0x44C741 PUSH0 /0x44C743 CALL0x5690C0。先行04Hの行動指示writer0x577220とは別処理。
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/symbol_sources/T011_TRAINING_CACHE_INIT_ERASE_DUPLICATE_NATIVE_20261031_08H.md 行 8](../../research/recovered/symbol_sources/T011_TRAINING_CACHE_INIT_ERASE_DUPLICATE_NATIVE_20261031_08H.md?plain=1#L8-L8) — [CLEANUP CALLSITE] 0x4726AB ECX=[ESP+0x98] (local sentinel候補)→0x4726B2 EAX=[ECX] (first node候補)、0x4726B4/15 PUSH sentinel/first、0x4726BA EAX=&[ESP+0x9C] (引数push
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation; full-range bulk erase and partial node erase distinct; partial helper not required in normal full cleanup
+
 - [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 568](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L568-L568) — - first playbackはplaylist element 0を直接選び、indexを+1してcount到達で0へwrap。stream transition path around 0x4BE250も `manager+0x38` のelementを0x40AFB0で取得→index++→modulo wra
   制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
 
 <a id="field-3c"></a>
 ## manager + 0x3C
+
+- [research/recovered/b_batch11/data/T028_DIRECTION_PERM_ROTATION_NATIVE_20261026_18H.md 行 8](../../research/recovered/b_batch11/data/T028_DIRECTION_PERM_ROTATION_NATIVE_20261026_18H.md?plain=1#L8-L8) — [NEW ASM ALT mode0] 0x4E7CBC→0x4E7CBE 開始引数、0x4E7CC5 加算、0x4E7CC9 signed remainder mask、0x4E7CD5/0x4E7CDCで同方向表参照。manager+0x3Cの両モードともPの回転順を採用する経路。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
 - [research/recovered/b_batch3/T028_ALT_GRID_EIGHT_DIRECTION_CLEARANCE_NATIVE_20261026_14H.md 行 6](../../research/recovered/b_batch3/T028_ALT_GRID_EIGHT_DIRECTION_CLEARANCE_NATIVE_20261026_14H.md?plain=1#L6-L6) — - NEW-1 [STATIC]: 0x4E504A manager+0x3C ==0 -> 0x4E50A4（多対象の評価経路）。非0側0x4E5051..0x4E507Cは座標を32単位のセルへ変換して有界検査、範囲外は0x4E5098 XOR EAX,EAX -> RET0x14。
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
@@ -130,6 +199,12 @@
 - [research/recovered/b_batch3/T028_SPATIAL_INSERT_TWO_MODES_NATIVE_20261026_10H.md 行 10](../../research/recovered/b_batch3/T028_SPATIAL_INSERT_TWO_MODES_NATIVE_20261026_10H.md?plain=1#L10-L10) — - [MODE !=0] 0x4E4EB0..0x4E4EC4 x/yを負値補正付き32除算でセル座標にする。0x4E4EC7..0x4E4EDBは0<=x<manager+0x40、0<=y<manager+0x44。範囲外→0x4E4F51 RET8、Unit+0x220/+0x224も未更新。
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 541](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L541-L541) — - opcode36 `volume(value)` はhandlerでinteger valueをaudio manager core 0x4BE3E0へ渡す。value>0なら `value * 0.01` をscale helper 0x4BD1C0へ通し、value<=0ならraw integerをmanage
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 543](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L543-L543) — - volume coreはmanager+0x40へ変換値/raw dBを保存し、manager+0x50のbase offsetを加えたeffective valueをさらに `[-9600, 0]` へclampしてactive soundへ適用する。constructor pathでは+0x50=0。
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
 <a id="field-44"></a>
 ## manager + 0x44
 
@@ -145,6 +220,9 @@
 - [research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md 行 41](../../research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md?plain=1#L41-L41) — A系列: actor+0x1D4 → manager, vector [manager+0x48, manager+0x4C)
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+- [research/recovered/b_batch3/T028_SPATIAL_INSERT_TWO_MODES_NATIVE_20261026_10H.md 行 11](../../research/recovered/b_batch3/T028_SPATIAL_INSERT_TWO_MODES_NATIVE_20261026_10H.md?plain=1#L11-L11) — - [MODE !=0] 0x4E4EDD..0x4E4EE3: manager+0x48の行ポインタから[cell]へEBXを無条件STORE。既存cell pointerとの一致/空き検査はこの関数にはない。0x4E4EE6/0x4E4EEDでUnit座標を更新。セル衝突の合法到達はVERIFY。
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 - [research/recovered/b_reports/T013_RANK_CLEANUP_TO_PERUNIT_EVENT_CALLCHAIN_NATIVE_20261031_14H.md 行 6](../../research/recovered/b_reports/T013_RANK_CLEANUP_TO_PERUNIT_EVENT_CALLCHAIN_NATIVE_20261031_14H.md?plain=1#L6-L6) — [PRIMARY NEW-2: SCHEDULER-A] 0x449792 CALL0x448E90（rank処理）直後、0x449797/9A manager+0x48/+0x4C相当のUnit* vector全件走査へ。0x4497B7 CMP BYTE[Unit+0x1867C],0→非zeroは0x449830
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
@@ -154,17 +232,38 @@
 - [research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md 行 41](../../research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md?plain=1#L41-L41) — A系列: actor+0x1D4 → manager, vector [manager+0x48, manager+0x4C)
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+- [research/recovered/b_batch3/T028_SPATIAL_INSERT_TWO_MODES_NATIVE_20261026_10H.md 行 13](../../research/recovered/b_batch3/T028_SPATIAL_INSERT_TWO_MODES_NATIVE_20261026_10H.md?plain=1#L13-L13) — - [MODE ==0] 0x4E4F2D..0x4E4F38: manager+0x4C行配列とセル16B header、0x4E4F07でstackにEBXを保存、0x4E4F3C E8 CALL0x4C1290（原作Opcode E84FC3FDFF）。0x4E4F41/4BでUnit座標を更新。単一ポインタmo
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+<a id="field-50"></a>
+## manager + 0x50
+
+- [research/recovered/b_batch3/T028_SPATIAL_INSERT_TWO_MODES_NATIVE_20261026_10H.md 行 12](../../research/recovered/b_batch3/T028_SPATIAL_INSERT_TWO_MODES_NATIVE_20261026_10H.md?plain=1#L12-L12) — - [MODE ==0] 0x4E4F00..0x4E4F18 x/y負値を0へマスクし、manager+0x5Cシフト量で除算。0x4E4F1C..0x4E4F2Aではmanager+0x50以上の座標をmax-1へclamp。max>0等の生成時保証はVERIFY。
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 543](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L543-L543) — - volume coreはmanager+0x40へ変換値/raw dBを保存し、manager+0x50のbase offsetを加えたeffective valueをさらに `[-9600, 0]` へclampしてactive soundへ適用する。constructor pathでは+0x50=0。
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
 <a id="field-54"></a>
 ## manager + 0x54
 
 - [research/recovered/rea_batch9/reports/REA_20261025_01H_P0_ARMYCHIP_MANAGER_GATE_STATIC.md 行 21](../../research/recovered/rea_batch9/reports/REA_20261025_01H_P0_ARMYCHIP_MANAGER_GATE_STATIC.md?plain=1#L21-L21) — - `0x004C278C`: 条件付きキュー `manager+0x54/+0x58` の走査開始。`0x004C27C1`: vtable`+0x14`述語を確認した要素について削除フラグ1の仮想destructor。
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; held bodies not recovered
 
+<a id="field-5c"></a>
+## manager + 0x5C
+
+- [research/recovered/b_batch3/T028_SPATIAL_INSERT_TWO_MODES_NATIVE_20261026_10H.md 行 12](../../research/recovered/b_batch3/T028_SPATIAL_INSERT_TWO_MODES_NATIVE_20261026_10H.md?plain=1#L12-L12) — - [MODE ==0] 0x4E4F00..0x4E4F18 x/y負値を0へマスクし、manager+0x5Cシフト量で除算。0x4E4F1C..0x4E4F2Aではmanager+0x50以上の座標をmax-1へclamp。max>0等の生成時保証はVERIFY。
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 <a id="field-64"></a>
 ## manager + 0x64
 
 - [research/recovered/b_batch10/data/T013_TASK_PENDING_APPEND_4C2240_CONTRACT_20261013.md 行 5](../../research/recovered/b_batch10/data/T013_TASK_PENDING_APPEND_4C2240_CONTRACT_20261013.md?plain=1#L5-L5) — [PENDING VECTOR] 4C2243 EAX=[manager+0x68] end。4C224E ECX=[manager+0x64] begin、4C2261 capacity=[manager+0x6C]。入力のpointerslot&argが既存[begin,end)領域を指す場合4C2259..4C2
   制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch3/T013_HEAL_DEFERRED_TICK_DISPATCH_NATIVE_20261027_09H.md 行 14](../../research/recovered/b_batch3/T013_HEAL_DEFERRED_TICK_DISPATCH_NATIVE_20261027_09H.md?plain=1#L14-L14) — [QUEUE DRAIN] 0x4C28D0はactive listの今回のiterationを終えた後、0x4C2980..0x4C2999 CALL0x4FAA60でmanager+0x64..+0x68のpending rangeをactive listへ挿入、+0x68をbeginへ戻す。従ってこのcallで追
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 - [research/recovered/b_batch6/data/T012_DUAL_RUSH_BRANCH_SPECIFIC_REGISTRATION_CROSSJOIN_20261017.md 行 5](../../research/recovered/b_batch6/data/T012_DUAL_RUSH_BRANCH_SPECIFIC_REGISTRATION_CROSSJOIN_20261017.md?plain=1#L5-L5) — [REUSE REGISTRATION] 54F720 VA54F749→54F74Cのpool pointer+0x1D0==0なら54F7D0→54F7DD CALL54F990(init byte+1D0=1)、54F7EC CALL4C2240(manager+0x64/+0x68 pending vector
   制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
@@ -220,6 +319,9 @@
 <a id="field-78"></a>
 ## manager + 0x78
 
+- [research/recovered/b_batch8/data/T013_CATEGORY_LABEL_WEIGHT_VECTOR_FANOUT_NATIVE_20261031_04H.md 行 13](../../research/recovered/b_batch8/data/T013_CATEGORY_LABEL_WEIGHT_VECTOR_FANOUT_NATIVE_20261031_04H.md?plain=1#L13-L13) — - 0x44963B/3Eでmanager+0x78..+0x7CのUnit*ベクタ、0x449643 SAR2で長さ、0x449646 EBP=0。0x44964Aは空なら終了。0x449658は Unit*[EBP]を読む。
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 - [research/recovered/b_batch9/data/T013_MODE3_EBX_CATEGORY_PRODUCER_NATIVE_20261031_05H.md 行 13](../../research/recovered/b_batch9/data/T013_MODE3_EBX_CATEGORY_PRODUCER_NATIVE_20261031_05H.md?plain=1#L13-L13) — - 0x449500の元PE 0x449500..0x4495D7 SHA256=8EE452BCE82BF92A932692E18BE9E567537F197F2B62DFB97AE709427B6E384A。manager+0x78==+0x7C（Unit配列空）なら0x44950F→0x4496EDでこの関数のU
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
@@ -262,7 +364,13 @@
 - [research/recovered/b_batch8/data/T013_BTL_LIMIT_EFFECTIVE_DAT_AND_GETTER_CACHE_NATIVE_20261031_03H.md 行 18](../../research/recovered/b_batch8/data/T013_BTL_LIMIT_EFFECTIVE_DAT_AND_GETTER_CACHE_NATIVE_20261031_03H.md?plain=1#L18-L18) — - 原作Golden要件：無改変EXE+20倍化前DAT、同SAVE/MAP/input/RNG、context原作1300/1500・一時的なmissing/explicit0（合法fixture限定）、manager+0x98=10/11、groupflag=0/1、manager+0x18=0/非0、K=T-1/
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
+- [research/recovered/b_batch9/data/T013_MODE3_EBX_CATEGORY_PRODUCER_NATIVE_20261031_05H.md 行 13](../../research/recovered/b_batch9/data/T013_MODE3_EBX_CATEGORY_PRODUCER_NATIVE_20261031_05H.md?plain=1#L13-L13) — - 0x449500の元PE 0x449500..0x4495D7 SHA256=8EE452BCE82BF92A932692E18BE9E567537F197F2B62DFB97AE709427B6E384A。manager+0x78==+0x7C（Unit配列空）なら0x44950F→0x4496EDでこの関数のU
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 - [research/recovered/b_batch9/data/T013_MODE3_EBX_CATEGORY_PRODUCER_NATIVE_20261031_05H.md 行 17](../../research/recovered/b_batch9/data/T013_MODE3_EBX_CATEGORY_PRODUCER_NATIVE_20261031_05H.md?plain=1#L17-L17) — - VERIFY: vtable間接CALL先のEBX保存と副作用、Unit配列空/非空の合法到達、manager+0x98/18/A5・groupflag実値、カテゴリ別RNG消費、Unit+0x1E4FC/+0x1E4F8書込と翌tick、間接/仮想経由の他のcategory4/5入力。
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/b_batch9/data/T013_SPECIAL_BTL_LIMIT_C_CATEGORY_CLOCK_NATIVE_20261031_02H.md 行 17](../../research/recovered/b_batch9/data/T013_SPECIAL_BTL_LIMIT_C_CATEGORY_CLOCK_NATIVE_20261031_02H.md?plain=1#L17-L17) — - Golden設計: 無改変原作EXE+20倍化前DAT、同SAVE/MAP/input/RNGで manager+0x98境界10/11、入力category0/1/7、group+0x1EF244=0/1、manager+0x18=0/非0、btl_limit[_c] 500、start/cur finite/s
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
 - [research/recovered/b_reports/T013_MODE2_CATEGORY_LABEL_AND_UNIT_WRITER_NATIVE_20261030_23H.md 行 12](../../research/recovered/b_reports/T013_MODE2_CATEGORY_LABEL_AND_UNIT_WRITER_NATIVE_20261030_23H.md?plain=1#L12-L12) — - vector非空かつ[manager+0x98]<=10の場合、0x44952D..39で入力2!=0→0x4495B7で内部category=6(advance)へ変更。その後、[manager+4]+0x1EF244!=0かつmanager+0x18==0なら0x4495D7でcategory=7(even)へ
@@ -273,125 +381,5 @@
 
 - [research/recovered/b_reports/T013_MODE2_CATEGORY_LABEL_AND_UNIT_WRITER_NATIVE_20261030_23H.md 行 24](../../research/recovered/b_reports/T013_MODE2_CATEGORY_LABEL_AND_UNIT_WRITER_NATIVE_20261030_23H.md?plain=1#L24-L24) — - Golden：原作無改変EXE+20倍化前DATで同SAVE/MAP/input/RNG、category入力2・manager+0x98(10/11)・+0x18・+0x1EF244・Unit5gate、乱数列、Unit+0x1E4FC/1E4F8と翌tick可視行動を旧新比較するまでDESIGNED_NOT_R
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
-
-- [research/recovered/e_reports/T020_E_T013_BTLLIMIT_CLOCK_ACCEPTANCE_20261031_02H.md 行 10](../../research/recovered/e_reports/T020_E_T013_BTLLIMIT_CLOCK_ACCEPTANCE_20261031_02H.md?plain=1#L10-L10) — - 224 synthetic cases span category {0,1,6,7}, manager+0x98 {10,11}, groupflag {0,1}, manager+0x18 {0,1}, and seven timer pairs including zero/zero, 99/100/101
-  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
-
-- [research/recovered/e_reports/T020_E_T013_BTLLIMIT_CLOCK_ACCEPTANCE_20261031_02H.md 行 11](../../research/recovered/e_reports/T020_E_T013_BTLLIMIT_CLOCK_ACCEPTANCE_20261031_02H.md?plain=1#L11-L11) — - In conditional model, threshold T=trunc(0.5+0.2*property). For manager+0x98>10 and category1/7, signed K<T changes to6, K>=T retains input; <=10 nonzero categ
-  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
-
-- [research/recovered/e_reports/T020_E_T013_CATEGORY_WRITER_ACCEPTANCE_20261030_23H.md 行 9](../../research/recovered/e_reports/T020_E_T013_CATEGORY_WRITER_ACCEPTANCE_20261030_23H.md?plain=1#L9-L9) — A: empty vector early exit; nonempty input category2 at manager+0x98 <=10 maps to 6, optionally to 7 if group+0x1EF244 nonzero and manager+0x18 zero; threshold
-  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
-
-- [research/recovered/e_reports/T020_E_T013_EFFECTIVE_CONTEXT_ACCEPTANCE_20261031_03H.md 行 15](../../research/recovered/e_reports/T020_E_T013_EFFECTIVE_CONTEXT_ACCEPTANCE_20261031_03H.md?plain=1#L15-L15) — - Boundary matrix K=T-1, K=T, K=T+1; category1/7; manager+0x98=10/11; flag=0/1; manager+0x18=0/1; three property states. 144 synthetic cases; intermediate categ
-  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
-
-- [research/recovered/e_reports/T020_E_T013_MODE3_EBX_ACCEPTANCE_20261031_05H.md 行 13](../../research/recovered/e_reports/T020_E_T013_MODE3_EBX_ACCEPTANCE_20261031_05H.md?plain=1#L13-L13) — - 非空Unit配列の場合の限定モデル：manager+0x98>10なら3(push)、<=10なら6(advance)、さらにgroupflag!=0かつmanager+0x18==0で7(even)。空配列はUnit書戻しなし。0x49D1B0呼出gateはmanager+0x18==0 AND manager+
-  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
-
-- [research/recovered/e_reports/T020_E_T013_MODE3_EBX_ACCEPTANCE_20261031_05H.md 行 17](../../research/recovered/e_reports/T020_E_T013_MODE3_EBX_ACCEPTANCE_20261031_05H.md?plain=1#L17-L17) — - vector長0/1/4 × manager+0x98=9/10/11 × groupflag0/1 × manager+0x18=0/1 × manager+0xA5=0/1 = 72件。合成出力はUnit書込なし24、category3=16、category6=24、category7=8件。72/72 PA
-  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
-
-- [research/recovered/knowledge_history1/reports/knowledge/REF_BATTLE_AI_MORALE.md 行 62](../../research/recovered/knowledge_history1/reports/knowledge/REF_BATTLE_AI_MORALE.md?plain=1#L62-L62) — - With eligible Units, the category-3 branch can select 'push' if manager+0x98>10, 'advance' (category 6) otherwise, and 'even' (category 7) under an additional
-  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
-
-<a id="field-a0"></a>
-## manager + 0xA0
-
-- [research/recovered/rea_batch8/reports/REA_20261026_05H_P0_OGG_EOF_CONSUMER_STATIC.md 行 13](../../research/recovered/rea_batch8/reports/REA_20261026_05H_P0_OGG_EOF_CONSUMER_STATIC.md?plain=1#L13-L13) — 6. 0x004BF780: manager+8==0・manager+9!=0のOGG分岐で[manager+0xA0]をESIへ置き、0x00502580をCALL。0x004BF7CD/CFはTEST AL / SETE AL。すなわちヘルパーAL=1で上位の継続判定はfalseになる。
-  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
-
-<a id="field-a5"></a>
-## manager + 0xA5
-
-- [research/recovered/b_batch9/data/T013_MODE1_PREPASS_CALLBACK_BREAK_DRAIN_NATIVE_20261029_18H.md 行 23](../../research/recovered/b_batch9/data/T013_MODE1_PREPASS_CALLBACK_BREAK_DRAIN_NATIVE_20261029_18H.md?plain=1#L23-L23) — - Golden必要条件：未改変原作EXE・x20改変前DAT、同一SAVE/MAP/入力/RNG、manager +0xA5/+0x18/+0x20、ESI派生元、queue begin/endと各vslot+0x58の前後、+0x1EEC3C=2/非2、break通知、group空/非空、下位vslot+0x68・
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/e_reports/T020_E_T013_MODE3_EBX_ACCEPTANCE_20261031_05H.md 行 13](../../research/recovered/e_reports/T020_E_T013_MODE3_EBX_ACCEPTANCE_20261031_05H.md?plain=1#L13-L13) — - 非空Unit配列の場合の限定モデル：manager+0x98>10なら3(push)、<=10なら6(advance)、さらにgroupflag!=0かつmanager+0x18==0で7(even)。空配列はUnit書戻しなし。0x49D1B0呼出gateはmanager+0x18==0 AND manager+
-  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
-
-- [research/recovered/e_reports/T020_E_T013_MODE3_EBX_ACCEPTANCE_20261031_05H.md 行 17](../../research/recovered/e_reports/T020_E_T013_MODE3_EBX_ACCEPTANCE_20261031_05H.md?plain=1#L17-L17) — - vector長0/1/4 × manager+0x98=9/10/11 × groupflag0/1 × manager+0x18=0/1 × manager+0xA5=0/1 = 72件。合成出力はUnit書込なし24、category3=16、category6=24、category7=8件。72/72 PA
-  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
-
-<a id="field-a7"></a>
-## manager + 0xA7
-
-- [research/recovered/b_batch9/data/T013_MODE2_PAIRWISE_DISTANCE_TREE_NATIVE_20261030_16H.md 行 11](../../research/recovered/b_batch9/data/T013_MODE2_PAIRWISE_DISTANCE_TREE_NATIVE_20261030_16H.md?plain=1#L11-L11) — 5. 0x44C1C8 manager+0xA7!=0、0x44C1D5 第一候補Unit+0x1A4==0、0x44C1EA 対候補Unit+0x1A4==2 の3条件成立時だけ、0x44C212 CALL0x44D630 / 0x44C221 CALL0x44D1C0の**第2挿入**を行う。0x44C1F7でEB
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/b_batch9/data/T013_MODE2_PRIMARY_UNIT_MODE3_GATE_NATIVE_20261030_14H.md 行 16](../../research/recovered/b_batch9/data/T013_MODE2_PRIMARY_UNIT_MODE3_GATE_NATIVE_20261030_14H.md?plain=1#L16-L16) — 0x44B240（mode1）は0x44B372～389でUnit+0x1867C==0のみUnitData=Unit+0x1C8の+0x1C4を合計し、0x44B393/3A2で分岐条件に応じて合計の最大/最小を更新。group中Unit+0x1A4==2の別集計が0x44B3CF..4BFに存在し、manager+
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/b_batch9/data/T013_MODE2_TWO_STAGE_CANDIDATE_SHUFFLE_RNG_NATIVE_20261030_17H.md 行 23](../../research/recovered/b_batch9/data/T013_MODE2_TWO_STAGE_CANDIDATE_SHUFFLE_RNG_NATIVE_20261030_17H.md?plain=1#L23-L23) — 原作Golden必要条件: 無改変EXE、x20改変前DAT、同SAVE/MAP/input/RNG、manager+0xA7 0/1、候補木0/1/2/複数・同/異距離、各シャッフル前後vector、0x5B6EAB draw回数/状態、0x5690C0実引数・選択Unitと翌tick。
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/e_reports/T020_E_T013_MODE2_RANGE_UNIT_ACCEPTANCE_20261030_18H.md 行 16](../../research/recovered/e_reports/T020_E_T013_MODE2_RANGE_UNIT_ACCEPTANCE_20261030_18H.md?plain=1#L16-L16) — - Vector gate 20/20 synthetic: range lengths 0/1/2/4/32768 and manager+0xA7 flag, first and reached-second stage; empty vector suppresses shuffle call; actual s
-  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
-
-- [research/recovered/e_reports/T020_E_T013_PAIRWISE_DISTANCE_ACCEPTANCE_20261030_16H.md 行 11](../../research/recovered/e_reports/T020_E_T013_PAIRWISE_DISTANCE_ACCEPTANCE_20261030_16H.md?plain=1#L11-L11) — - Secondary reverse-payload insert is gated by manager+0xA7!=0 AND first Unit+0x1A4==0 AND second Unit+0x1A4==2. This predicts whether code attempts a second in
-  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
-
-- [research/recovered/tests_batch5/T020_E_T013_TWO_STAGE_SHUFFLE_ACCEPTANCE_20261030_17H.md 行 13](../../research/recovered/tests_batch5/T020_E_T013_TWO_STAGE_SHUFFLE_ACCEPTANCE_20261030_17H.md?plain=1#L13-L13) — - The first shuffle attempt is gated by manager+0xA7 !=0; the second shuffle site is separately placed. The model only estimates per-stage local draw counts **c
-  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
-
-<a id="field-b0"></a>
-## manager + 0xB0
-
-- [research/recovered/b_reports/T013_MODE2_POSTREFILL_SCORE_DISPATCH_NATIVE_20261030_21H.md 行 12](../../research/recovered/b_reports/T013_MODE2_POSTREFILL_SCORE_DISPATCH_NATIVE_20261030_21H.md?plain=1#L12-L12) — - 非0経路は0x44C624へ進み、0x44C633 CALL0x591570、0x44C650/679/A0 CALL0x46F4C0で属性値を集め、0x44C6BD/0x44C6C7 CALL0x515060で二参照を取得、0x44C6CE [manager+0xB0]=結果側値に保存。0x44C6D6値0なら1
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
-
-- [research/recovered/tests_batch5/T020_E_T013_SUM88_BRANCH_ACCEPTANCE_20261030_22H.md 行 10](../../research/recovered/tests_batch5/T020_E_T013_SUM88_BRANCH_ACCEPTANCE_20261030_22H.md?plain=1#L10-L10) — After manager and group are separately accumulated, manager raw +0x88 is copied to manager+0xB0 **before** manager+0x88 is changed from 0 to 1 when zero. This z
-  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
-
-<a id="field-d0"></a>
-## manager + 0xD0
-
-- [research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md 行 15](../../research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md?plain=1#L15-L15) — - 0x44C6E1..F0 FILD manager+0x88(正規化済) / FILD group+0x88 / FDIV ST(1) / FILD group+0x8C / FDIVRP ST(2)。二つの集計比を作り、0x44C6F2 FLD [manager+0xD0]→0x44C6F8 FCOMP ST(2
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_batch9/data/T013_MODE1_UPSTREAM_FOUR_CALLER_GROUP_FILTER_NATIVE_20261029_17H.md 行 23](../../research/recovered/b_batch9/data/T013_MODE1_UPSTREAM_FOUR_CALLER_GROUP_FILTER_NATIVE_20261029_17H.md?plain=1#L23-L23) — - Golden必要条件：原作未改変PE＋2026-10-22 x20強化前DAT、同SAVE/MAP/input/RNG、4入口の比較時ST値/FPU status/manager+0xD0、グループ初Unit+0x8C/+0x1F8、候補+0x1867C/+0x18615/+0x1D0参照、下位+0x1867E/F
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-<a id="field-1d0"></a>
-## manager + 0x1D0
-
-- [research/recovered/b_batch6/data/T012_5501A0_QUOTA_EDGE_AND_INDIRECT_COVERAGE_OFFLINE_20261021_1215.md 行 15](../../research/recovered/b_batch6/data/T012_5501A0_QUOTA_EDGE_AND_INDIRECT_COVERAGE_OFFLINE_20261021_1215.md?plain=1#L15-L15) — - 下位から戻った上位では、保存済み擬似C上、**生成成功をチェックする前に**`manager+0x1F0`を加算し、`def+0x74`上限と比較する。達したら site `0x005503F9 → FUN_004C22B0(manager,0)`後`manager+0x1D0`byteを0にする。**生成成功数で
-  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
-
-- [research/recovered/b_batch7/data/T012_MODE4_EMPTY_CANDIDATE_QUOTA_CROSSGATE_OFFLINE_20261021_1110.md 行 15](../../research/recovered/b_batch7/data/T012_MODE4_EMPTY_CANDIDATE_QUOTA_CROSSGATE_OFFLINE_20261021_1110.md?plain=1#L15-L15) — - 新カウンタが上限に達すれば **site `0x5503F9 → 0x4C22B0(manager,0)`** の後 `manager+0x1D0` byteを0へ。上限未達なら `def+0x78 != 0` で今回return、`==0` なら同一呼出内でもう1回loopに進む（STATIC-PSEUDOC）。
-  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
-
-- [research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md 行 14](../../research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md?plain=1#L14-L14) — 3. `0x005501A0` 擬似C：引数 `manager+0x1F4` を先に1加算し、`def=*(manager+0x1D4)`・`def+0x78 <= manager+0x1F4` のゲート成立時にカウンタ `+0x1F4=0`、dispatch、`manager+0x1F0` を+1。kind4は **
-  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
-
-<a id="field-1d4"></a>
-## manager + 0x1D4
-
-- [research/recovered/b_batch7/data/T012_MODE4_EMPTY_CANDIDATE_QUOTA_CROSSGATE_OFFLINE_20261021_1110.md 行 12](../../research/recovered/b_batch7/data/T012_MODE4_EMPTY_CANDIDATE_QUOTA_CROSSGATE_OFFLINE_20261021_1110.md?plain=1#L12-L12) — - `0x5501A0`：`manager+0x1F4`を先に+1し、`def=*(manager+0x1D4)` の `def+0x78` 以下なら初期化して生成loopへ。`def+0x40 == 4` のとき **site `0x550219 → 0x54E7B0`**、それ以外は `0x55037F → 0x5
-  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
-
-- [research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md 行 14](../../research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md?plain=1#L14-L14) — 3. `0x005501A0` 擬似C：引数 `manager+0x1F4` を先に1加算し、`def=*(manager+0x1D4)`・`def+0x78 <= manager+0x1F4` のゲート成立時にカウンタ `+0x1F4=0`、dispatch、`manager+0x1F0` を+1。kind4は **
-  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
-
-<a id="field-1d8"></a>
-## manager + 0x1D8
-
-- [research/recovered/b_batch7/data/T012_MODE4_EMPTY_CANDIDATE_QUOTA_CROSSGATE_OFFLINE_20261021_1110.md 行 21](../../research/recovered/b_batch7/data/T012_MODE4_EMPTY_CANDIDATE_QUOTA_CROSSGATE_OFFLINE_20261021_1110.md?plain=1#L21-L21) — - `0x5501A0`擬似C内で `origin = *(manager+0x1D8)` から始まる局所条件。`origin+0x65 != 0` なら `iVar1=iVar2=origin`。
-  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
-
-<a id="field-1f0"></a>
-## manager + 0x1F0
-
-- [research/recovered/b_batch6/data/T012_5501A0_MODE4_RESULT_LINK_ABI_VERIFY_OFFLINE_20261021_1015.md 行 12](../../research/recovered/b_batch6/data/T012_5501A0_MODE4_RESULT_LINK_ABI_VERIFY_OFFLINE_20261021_1015.md?plain=1#L12-L12) — 3. 種類を問わず、上記枝の後で `manager+0x1F0` を +1 して `def+0x74` と比較する。すなわちローカル制御フロー上の **試行回数カウントは `iVar3` がNULLでも進む**。`def+0x78 != 0` なら上限未達時にreturn、`def+0x78 == 0` なら同じ呼出内
-  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
-
-- [research/recovered/b_batch6/data/T012_5501A0_QUOTA_EDGE_AND_INDIRECT_COVERAGE_OFFLINE_20261021_1215.md 行 15](../../research/recovered/b_batch6/data/T012_5501A0_QUOTA_EDGE_AND_INDIRECT_COVERAGE_OFFLINE_20261021_1215.md?plain=1#L15-L15) — - 下位から戻った上位では、保存済み擬似C上、**生成成功をチェックする前に**`manager+0x1F0`を加算し、`def+0x74`上限と比較する。達したら site `0x005503F9 → FUN_004C22B0(manager,0)`後`manager+0x1D0`byteを0にする。**生成成功数で
-  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
-
-- [research/recovered/b_batch6/data/T012_5501A0_QUOTA_EDGE_AND_INDIRECT_COVERAGE_OFFLINE_20261021_1215.md 行 17](../../research/recovered/b_batch6/data/T012_5501A0_QUOTA_EDGE_AND_INDIRECT_COVERAGE_OFFLINE_20261021_1215.md?plain=1#L17-L17) — - 正のintervalに関しては、呼出ごとの周期ゲート・上限未達後returnというモデル上の差。`manager+0x1F4`（周期カウンタ）と`manager+0x1F0`（試行数）を同一変数にしてはならない。32-bit整数符号、型、activeフラグ入口チェックや副作用、RNG総数は今回証明なし。
-  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
-
-- [research/recovered/b_batch7/data/T012_MODE4_EMPTY_CANDIDATE_QUOTA_CROSSGATE_OFFLINE_20261021_1110.md 行 14](../../research/recovered/b_batch7/data/T012_MODE4_EMPTY_CANDIDATE_QUOTA_CROSSGATE_OFFLINE_20261021_1110.md?plain=1#L14-L14) — - calleeから正常復帰した上位`0x5501A0`は、戻り値/生成個体確認の分岐を挟まずに `manager+0x1F0` を+1し、`def+0x74` 上限と比較する。**calleeが上記の空候補短絡でeffect生成を行わなくても、上位が試行枠を消費する条件付き経路と整合**する（STATIC-PSEUD
-  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

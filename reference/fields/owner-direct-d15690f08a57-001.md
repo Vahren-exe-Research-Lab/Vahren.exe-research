@@ -4,6 +4,15 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-14"></a>
+## direct + 0x14
+
+- [research/recovered/b_batch11/data/T028_TREE_FLAG_EXACT_MATCH_TO_BATTLE_SIDE_NATIVE_20261028_02H.md 行 17](../../research/recovered/b_batch11/data/T028_TREE_FLAG_EXACT_MATCH_TO_BATTLE_SIDE_NATIVE_20261028_02H.md?plain=1#L17-L17) — - 新規は「一次要素のキー+0x0Cで二次木+0x1EED34を等値探索し、node+0x14をF54/F55の入力にする経路」と「direct +0x14との二経路対比」。01Hの0x490A43は既知で再計上0。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch11/data/T028_TREE_FLAG_EXACT_MATCH_TO_BATTLE_SIDE_NATIVE_20261028_02H.md 行 20](../../research/recovered/b_batch11/data/T028_TREE_FLAG_EXACT_MATCH_TO_BATTLE_SIDE_NATIVE_20261028_02H.md?plain=1#L20-L20) — - P0残: 二木のオブジェクト型と構築/破棄、direct+0x14がいつ使われるか、F56の実際の役割、T028士気/敗走実計算、T013最終target/T024 AI、合法戦闘の実側表示・結果、RNG・実体同一性をVERIFY。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 <a id="field-50"></a>
 ## direct + 0x50
 

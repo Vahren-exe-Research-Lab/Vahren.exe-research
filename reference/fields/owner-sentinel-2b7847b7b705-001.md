@@ -4,6 +4,18 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-14"></a>
+## sentinel + 0x14
+
+- [research/recovered/symbol_sources/T011_TRAINING_CACHE_INIT_ERASE_DUPLICATE_NATIVE_20261031_08H.md 行 6](../../research/recovered/symbol_sources/T011_TRAINING_CACHE_INIT_ERASE_DUPLICATE_NATIVE_20261031_08H.md?plain=1#L6-L6) — [INIT CALLSITE] 0x472086 LEA ESI,[ESP+0x94] → 0x472091 CALL 0x49ED90。0x49ED95 [ESI+8]=0、0x49ED93 PUSH0x18/0x49ED9C CALL0x5B6C2Bで24B sentinel候補を割当、0x49EDA8 [ESI+
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation; full-range bulk erase and partial node erase distinct; partial helper not required in normal full cleanup
+
+<a id="field-330"></a>
+## sentinel + 0x330
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 442](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L442-L442) — [CONFIRMED-SAVED-NATIVE] `exe/T014_VAR_CALLSITE_PROBE.txt` 0x45C152..0x45C16Eは第5container sentinel+0x330を自己参照に戻しcount+0x334をzero化。直後0x45C189 @gamemode writer→0x
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
 <a id="field-186bc"></a>
 ## sentinel + 0x186BC
 

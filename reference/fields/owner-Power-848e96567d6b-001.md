@@ -25,14 +25,35 @@
 <a id="field-1d"></a>
 ## Power + 0x1D
 
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 871](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L871-L871) — [VERIFY / REIMPLEMENT] Power+0x1DとUnit+0x74の論理意味・対象owner+0x54/+0x50のUI可視作用は不明。単純にセーブされた選択pointerを再利用するのではなく、復元後tree first-match選別と未発見nullを区別。反復順序が見えるかはVERIFY。「プ
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
 - [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 1398](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L1398-L1398) — [IMPACT/VERIFY] Argumented isComTurn(power) must not be treated as zero-arg current selection predicate; arg0 evaluation independent, downstream callee/ABI/comp
   制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md 行 1167](../../research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md?plain=1#L1167-L1167) — - [STRICT/GOLDEN] phaseByte/DL、Power selector/byte、isComTurn zeroarg、COM3比較・early return、preboss/event・後段Worldを段階別trace。合法4 Worldの同COM再入/別COM、Power消失が可視化できるときの旧
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+- [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 405](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L405-L405) — [STRICT IMPLEMENT / TEST] `isComTurn()`無引数(既知選択Power+0x1D)と`isComTurn(arg)`を別経路にし、arg0評価helperの戻りを単なる数値/生のPower pointerに潰さず、name-like subfield+4と後続resolverの契約を保
+  制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
 
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 583](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L583-L583) — [VERIFY / REIMPLEMENT] Power+0x1D/Unit+0x74の意味、二つのowner pointerがUI上で何を選択するか、tree走査順とユーザーの直前選択状態の関係、空集合時の表示、0x432010/0x471980等後続の作用は未確定。「player faction」「active h
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
 
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 584](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L584-L584) — [GOLDEN NOT RUN / RESTART] 合法saveでPower+0x1D、Unit+0x74がある場合/ない場合と複数候補を用意し、ロード後の合法UI選択表示・操作・イベントを原作/newで比較。内部pointerは外部観測不能ならINELIGIBLE。旧EXE Gameplay PASS0、新stri
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
 <a id="field-24"></a>
 ## Power + 0x24
+
+- [research/recovered/dev_reports/DEVLAB_NATIVE_LOADER_STAGE_20261011.md 行 20](../../research/recovered/dev_reports/DEVLAB_NATIVE_LOADER_STAGE_20261011.md?plain=1#L20-L20) — \| Power+0x24欄のUnit名 \| 29 \| 29 \| すべて既存Unit \|
+  制約・訂正　Historical STATIC/INFERRED/VERIFY and synthetic-test claims; no new native/runtime verification; referenced raw assets/probes/archives not recovered; no Golden/READY promotion; old Diplomacy label ->TurnState in current REF_SAVE_FORMAT; byte agreement does not prove runtime object rebinding
+
+- [research/recovered/dev_reports/DEVLAB_NATIVE_LOADER_STAGE_20261011.md 行 23](../../research/recovered/dev_reports/DEVLAB_NATIVE_LOADER_STAGE_20261011.md?plain=1#L23-L23) — - 意味ラベルはVERIFY：SpotのUnit名参照は拠点構成を示す有力候補だが、現実にユニットが画面でそのSpotにいるか、Power+0x68が排他的領地か、Power+0x24が指揮官かは旧engine nativeと可視Goldenを要する。実験コードではneutralなoffset/serial field
+  制約・訂正　Historical STATIC/INFERRED/VERIFY and synthetic-test claims; no new native/runtime verification; referenced raw assets/probes/archives not recovered; no Golden/READY promotion; old Diplomacy label ->TurnState in current REF_SAVE_FORMAT; byte agreement does not prove runtime object rebinding
+
+- [research/recovered/dev_reports/DEVLAB_NATIVE_LOADER_STAGE_20261011.md 行 43](../../research/recovered/dev_reports/DEVLAB_NATIVE_LOADER_STAGE_20261011.md?plain=1#L43-L43) — - Power+0x68のSpot ID40、およびPower+0x24のUnit ID29は両保存で一件も変更なし。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY and synthetic-test claims; no new native/runtime verification; referenced raw assets/probes/archives not recovered; no Golden/READY promotion; old Diplomacy label ->TurnState in current REF_SAVE_FORMAT; byte agreement does not prove runtime object rebinding
 
 - [research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md 行 199](../../research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md?plain=1#L199-L199) — \| knowledge structs Power+0x24 \| 「勢力の名前」 \| 盟主の Unit の個体キー（出典 F§32 自体がそう書いている） \| KB 修正案 \|
   制約・訂正　Existing full body linked; catalog revision differs
@@ -43,17 +64,44 @@
 - [research/recovered/remaining_md1/reports/dev_lab/docs/CHATGPT_CURRENT_HANDOFF.md 行 120](../../research/recovered/remaining_md1/reports/dev_lab/docs/CHATGPT_CURRENT_HANDOFF.md?plain=1#L120-L120) — - 既存研究の訂正（2026-11-01夜、Claude）：T014 の「外交状態」はターン進行オブジェクト（+0x14 経過ターン、+0x38 phase、手番順の勢力列）、「第5コンテナ」+0x32C は放浪集合、Unit+0x94 は放浪先の文字列長。T014 冒頭に訂正一覧を追記。knowledge の Uni
   制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
 
+- [research/recovered/remaining_md1/reports/dev_lab/docs/PROJECT_HANDOFF_MASTER_20261011.md 行 199](../../research/recovered/remaining_md1/reports/dev_lab/docs/PROJECT_HANDOFF_MASTER_20261011.md?plain=1#L199-L199) — - src/hakushin_compat/native_saved_reference_audit.py → reports/ACTUAL_SAVE_REFERENCE_GRAPH_20261011.json（新規、capture3件SHA pin/exit0）。0x1Cテンプレート/技能文字列など、IDでない文字列
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+
 - [research/recovered/remaining_md1/reports/dev_lab/docs/PROJECT_HANDOFF_MASTER_20261011.md 行 202](../../research/recovered/remaining_md1/reports/dev_lab/docs/PROJECT_HANDOFF_MASTER_20261011.md?plain=1#L202-L202) — - src/hakushin_compat/native_saved_scene_transition.py（7/7 PASS）：save1→save2の共通UnitのSpot格納先変更170、Spot構成変更40、新Spot登録key1413、旧Spot登録から消えたkey4、common Unit vector0リ
   制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
 
 <a id="field-68"></a>
 ## Power + 0x68
 
+- [research/recovered/dev_reports/DEVLAB_NATIVE_LOADER_STAGE_20261011.md 行 19](../../research/recovered/dev_reports/DEVLAB_NATIVE_LOADER_STAGE_20261011.md?plain=1#L19-L19) — \| Power+0x68欄のSpot名 \| 40 \| 40 \| すべて既存Spot、Power間で重複なし \|
+  制約・訂正　Historical STATIC/INFERRED/VERIFY and synthetic-test claims; no new native/runtime verification; referenced raw assets/probes/archives not recovered; no Golden/READY promotion; old Diplomacy label ->TurnState in current REF_SAVE_FORMAT; byte agreement does not prove runtime object rebinding
+
+- [research/recovered/dev_reports/DEVLAB_NATIVE_LOADER_STAGE_20261011.md 行 23](../../research/recovered/dev_reports/DEVLAB_NATIVE_LOADER_STAGE_20261011.md?plain=1#L23-L23) — - 意味ラベルはVERIFY：SpotのUnit名参照は拠点構成を示す有力候補だが、現実にユニットが画面でそのSpotにいるか、Power+0x68が排他的領地か、Power+0x24が指揮官かは旧engine nativeと可視Goldenを要する。実験コードではneutralなoffset/serial field
+  制約・訂正　Historical STATIC/INFERRED/VERIFY and synthetic-test claims; no new native/runtime verification; referenced raw assets/probes/archives not recovered; no Golden/READY promotion; old Diplomacy label ->TurnState in current REF_SAVE_FORMAT; byte agreement does not prove runtime object rebinding
+
+- [research/recovered/dev_reports/DEVLAB_NATIVE_LOADER_STAGE_20261011.md 行 43](../../research/recovered/dev_reports/DEVLAB_NATIVE_LOADER_STAGE_20261011.md?plain=1#L43-L43) — - Power+0x68のSpot ID40、およびPower+0x24のUnit ID29は両保存で一件も変更なし。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY and synthetic-test claims; no new native/runtime verification; referenced raw assets/probes/archives not recovered; no Golden/READY promotion; old Diplomacy label ->TurnState in current REF_SAVE_FORMAT; byte agreement does not prove runtime object rebinding
+
 - [research/recovered/dev_reports/DEVLAB_WORLD_SCENE_BRIDGE_20261011.md 行 23](../../research/recovered/dev_reports/DEVLAB_WORLD_SCENE_BRIDGE_20261011.md?plain=1#L23-L23) — - Spot→Unit tree登録とUnit+0x84の別Spot名、Power+0x68/0x24とUnit vector0を勝手に「駐屯・領有・指揮官・戦闘参加者」と断定しない。
   制約・訂正　Historical STATIC/INFERRED/VERIFY and synthetic-test claims; no new native/runtime verification; referenced raw assets/probes/archives not recovered; no Golden/READY promotion; old Diplomacy label ->TurnState in current REF_SAVE_FORMAT; byte agreement does not prove runtime object rebinding
 
+- [research/recovered/e_batch2/reports/tests/T018_CNB02_G0_UI_ROUTE_TRIAGE_20261020_2348.md 行 6](../../research/recovered/e_batch2/reports/tests/T018_CNB02_G0_UI_ROUTE_TRIAGE_20261020_2348.md?plain=1#L6-L6) — [CROSSWALK] C保存 T025_WRQ_C_BATTLES_CAPTURE_REFERENCE_GATES_20261013.jsonをread-only再読。sp16のPower+0x68逆参照はsave1/auto/save2いずれも空。save1/save2 Spot.member Unit48。これら
+  制約・訂正　Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
 - [research/recovered/e_batch2/reports/tests/T020_BATTLE_RETURN_COMMIT_GATE_20261021_2147.md 行 12](../../research/recovered/e_batch2/reports/tests/T020_BATTLE_RETURN_COMMIT_GATE_20261021_2147.md?plain=1#L12-L12) — 6. Spot.member、Power+0x68、Unit+0x84等の保存参照は出撃/退却先/生存world rosterの実変化と別列。開始/終了で一対一のUnit instance対応を観測せずに数値だけから同一性を決めない。
   制約・訂正　Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md 行 953](../../research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md?plain=1#L953-L953) — - [CONFIRMED-TARGET-SAVE REF] 3captureのPower+0x68保存Spot参照逆索引はいずれもsp2=[po2]、sp2b=[]、sp16=[]、sp50=[po29]（po29保存Spot列はsp49/sp50）。一方sp2bは80 Unit、sp16は48 Unitがsave1/
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md 行 1016](../../research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md?plain=1#L1016-L1016) — - [SAVED ROSTER] 原作save1・save2のsp16には48 stored Unit ID、inyumeb root5組とu_inyume root1組、それぞれ7子Unit保存参照。sp2の保存IDにyaju。sp16のPower+0x68逆参照無しは保存参照事実であって、実storePowerOf
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+- [research/recovered/remaining_md1/reports/dev_lab/docs/PROJECT_HANDOFF_MASTER_20261011.md 行 199](../../research/recovered/remaining_md1/reports/dev_lab/docs/PROJECT_HANDOFF_MASTER_20261011.md?plain=1#L199-L199) — - src/hakushin_compat/native_saved_reference_audit.py → reports/ACTUAL_SAVE_REFERENCE_GRAPH_20261011.json（新規、capture3件SHA pin/exit0）。0x1Cテンプレート/技能文字列など、IDでない文字列
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+
+- [research/recovered/remaining_md1/reports/dev_lab/docs/PROJECT_HANDOFF_MASTER_20261011.md 行 202](../../research/recovered/remaining_md1/reports/dev_lab/docs/PROJECT_HANDOFF_MASTER_20261011.md?plain=1#L202-L202) — - src/hakushin_compat/native_saved_scene_transition.py（7/7 PASS）：save1→save2の共通UnitのSpot格納先変更170、Spot構成変更40、新Spot登録key1413、旧Spot登録から消えたkey4、common Unit vector0リ
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
 
 <a id="field-74"></a>
 ## Power + 0x74
@@ -64,7 +112,22 @@
 <a id="field-b0"></a>
 ## Power + 0xB0
 
+- [research/recovered/rea_batch11/reports/REA_20261019_0738_T014_POWER_GENERIC_NUMERIC_DC_SENTINEL_QC.md 行 5](../../research/recovered/rea_batch11/reports/REA_20261019_0738_T014_POWER_GENERIC_NUMERIC_DC_SENTINEL_QC.md?plain=1#L5-L5) — - [TREE RESET BEFORE TAG LOOP] 0x5966FE..0x59673FはPower+0xB0の既存tree headerを0x463070へ渡した後、関連header linksを自参照に戻しPower+0xB8へ0を書き、タグループへ進む。0x463070内部の厳密allocator副作用
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
 - [research/recovered/rea_batch11/reports/REA_20261019_0738_T014_POWER_GENERIC_NUMERIC_DC_SENTINEL_QC.md 行 6](../../research/recovered/rea_batch11/reports/REA_20261019_0738_T014_POWER_GENERIC_NUMERIC_DC_SENTINEL_QC.md?plain=1#L6-L6) — - [ADDITIONAL BRANCH] 0x59691Eはstring候補0x626AB0を0x40B200で判別し、非一致時0x596997へ分岐。そこではCALL0x470700で数値をstack scratchへ読み、0x5969B4 CALL0x436560→0x5969CF CALL0x436680→0x
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+<a id="field-b8"></a>
+## Power + 0xB8
+
+- [research/recovered/rea_batch11/reports/REA_20261019_0738_T014_POWER_GENERIC_NUMERIC_DC_SENTINEL_QC.md 行 5](../../research/recovered/rea_batch11/reports/REA_20261019_0738_T014_POWER_GENERIC_NUMERIC_DC_SENTINEL_QC.md?plain=1#L5-L5) — - [TREE RESET BEFORE TAG LOOP] 0x5966FE..0x59673FはPower+0xB0の既存tree headerを0x463070へ渡した後、関連header linksを自参照に戻しPower+0xB8へ0を書き、タグループへ進む。0x463070内部の厳密allocator副作用
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+<a id="field-c0"></a>
+## Power + 0xC0
+
+- [research/recovered/rea_batch11/reports/REA_20261019_0834_T014_POWER_HOME_SPOT_DUAL_TERMINATOR_QC.md 行 5](../../research/recovered/rea_batch11/reports/REA_20261019_0834_T014_POWER_HOME_SPOT_DUAL_TERMINATOR_QC.md?plain=1#L5-L5) — - [INNER LIST] 0x596930で文字列scratch(ESP+0x48)初期化、0x59694D CALL0x4705F0で次のnameを読み、0x596955で長さ0なら0x596984へ分岐。非空なら0x59695B..0x596969でPower+0xC0と文字列scratchを準備しCALL0x
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
 
 <a id="field-c4"></a>
@@ -73,17 +136,32 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1403](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1403-L1403) — - 勢力ごと（+0x1C が真のとき）: 0x595170 / 0x595320 / 0x49ED90、context 値（0x46F4C0）、Power+0xC4（100 上限で加算）、0x593550 で全 Unit を集め、各 Unit について:
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+<a id="field-d0"></a>
+## Power + 0xD0
+
+- [research/recovered/rea_batch11/reports/REA_20261019_06H_T014_POWER_TAG_DIRECT_VS_WRAPPER_READ_QC.md 行 6](../../research/recovered/rea_batch11/reports/REA_20261019_06H_T014_POWER_TAG_DIRECT_VS_WRAPPER_READ_QC.md?plain=1#L6-L6) — - [DIRECT FOUR-BYTE TAG A] 保存assembly 0x59679C..0x5967A6はPUSH 0/PUSH 4/PUSH 0xB060F0/PUSH EBX→CALL0x42E700。0x5967AB..0x5967C5のstream状態bit検査を通過して初めて0x5967CB..0x5
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
 <a id="field-d4"></a>
 ## Power + 0xD4
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1224](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1224-L1224) — \| Power+0xD4 / +0xD8 \| training_average / training_up \| CONFIRMED \|
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+- [research/recovered/rea_batch11/reports/REA_20261019_06H_T014_POWER_TAG_DIRECT_VS_WRAPPER_READ_QC.md 行 7](../../research/recovered/rea_batch11/reports/REA_20261019_06H_T014_POWER_TAG_DIRECT_VS_WRAPPER_READ_QC.md?plain=1#L7-L7) — - [DIRECT FOUR-BYTE TAG B] 同型0x596822..0x59682C CALL0x42E700→0x596831..0x59684B状態検査→正常0x596851..0x59685BでPower+0xD4にcommit。失敗は0x596A7AのLoadException経路。両CALLのGhi
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
 <a id="field-d8"></a>
 ## Power + 0xD8
 
 - [research/recovered/knowledge_history1/reports/knowledge/REF_UNIT_EXP_SUMMON.md 行 34](../../research/recovered/knowledge_history1/reports/knowledge/REF_UNIT_EXP_SUMMON.md?plain=1#L34-L34) — - Original PE SHA256 `E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187` was independently read back. Native E8 at `0x472081` calls `0x595320`; t
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
+
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 793](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L793-L793) — [NATIVE] 原作SHA E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187、0x47207C PUSH power →0x472081 E8 CALL0x595320(training_up)→0x47208D [ESP+0x24]=E
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+- [research/recovered/rea_batch11/reports/REA_20261019_06H_T014_POWER_TAG_DIRECT_VS_WRAPPER_READ_QC.md 行 8](../../research/recovered/rea_batch11/reports/REA_20261019_06H_T014_POWER_TAG_DIRECT_VS_WRAPPER_READ_QC.md?plain=1#L8-L8) — - [WRAPPER TAG C/D] tag別0x5968A8..0x5968B4はPower+0xD8をPUSHしCALL0x470700、0x596902..0x596914はPower+0xDCをPUSHしCALL0x470700。wrapperは保存済み別VERIFIED 0x470700の内側0x42E70
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
 
 <a id="field-dc"></a>
 ## Power + 0xDC
@@ -103,16 +181,49 @@
 - [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 1176](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L1176-L1176) — [CONFIRMED-SAVED-NATIVE / DERIVED-CONDITIONAL] A所有 `data/T014_GLOBAL_SAVE.md` A76節。`exe/T014_NORMAL_LOAD_PROBE.txt` Power fallback 0x45F6AF..0x45F6EE（Power+0xDC
   制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
+- [research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md 行 798](../../research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md?plain=1#L798-L798) — - CONFIRMED-SAVED-NATIVE: Power deserialize後の+0xDCがsentinel 0x80000008の時だけ`@scenario`を取得し`scenario/base_level` property lookup(0x4647D0)のvalue+0x20をPower+0xDCへ書
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md 行 799](../../research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md?plain=1#L799-L799) — - NEW CONDITIONAL: rsc2..rsc5文字列をpersistent `@scenario`から復元できても、それだけではPower+0xDC未設定時のproperty lookup・Power登録・World開始の成功を保証しない。未宣言IDを渡したnative失敗/null補完／default／例
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md 行 802](../../research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md?plain=1#L802-L802) — - VERIFY/NEXT: A T005/T014に0x4647D0 missing-scenario field処理・Power+0xDCの実save分布・normal-load control-flowを所有範囲で照会。T033旧ID選択経路/ロード到達性はIN_PROGRESS、P0未解決。T025 boss_
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
 - [research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md 行 1360](../../research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md?plain=1#L1360-L1360) — - [CONFIRMED-SAVED-NATIVE / NEW INCREMENT] A保存generic accessor0x4647D0の未登録structure名経路は0x4649C6..0x464A24で通常empty/default field resultを構築する局所fallback、ここで直接hard-
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md 行 1361](../../research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md?plain=1#L1361-L1361) — - [VERIFY/NOT OBSERVED] fallback戻値の+0x20とPower+0xDCの実格納、Power registry挿入/他validation、旧save合法ロードとWorld/Spot/Unit/legacy story到達、現行UI選択は未観測。T033全体IN_PROGRESS。原作EX
   制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
 - [research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md 行 1369](../../research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md?plain=1#L1369-L1369) — - [CONFIRMED-SAVED-NATIVE CROSSWALK / NEW C DELTA] Powerレコード群では0x45EF03→0x45F66E復元、Power+0xDC sentinel時0x45F6BBの`@scenario` numeric getter→0x4647D0 `scenario/ba
   制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
+- [research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md 行 472](../../research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md?plain=1#L472-L472) — [STATIC VERIFIED] 0x4649C2 cmp / 0x4649C4 jne と、missing-name側0x4649C6..0x464A24のempty/default fieldオブジェクト生成・cleanup命令を直接確認。したがって未登録structure名の当該generic accessor
+  制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
+
 - [research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md 行 473](../../research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md?plain=1#L473-L473) — [OPEN CONTRADICTION / DO NOT INFER] 宣言なしrsc2..rsc5、旧SAVEのscenario文字列復元可能性、generic lookupの欠落許容はそれぞれ別契約。後続のfield+0x20値、Power+0xDC、他のvalidation、World/Spot/Unit復帰、選
   制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
 
+- [research/recovered/rea_batch11/reports/REA_20261019_06H_T014_POWER_TAG_DIRECT_VS_WRAPPER_READ_QC.md 行 8](../../research/recovered/rea_batch11/reports/REA_20261019_06H_T014_POWER_TAG_DIRECT_VS_WRAPPER_READ_QC.md?plain=1#L8-L8) — - [WRAPPER TAG C/D] tag別0x5968A8..0x5968B4はPower+0xD8をPUSHしCALL0x470700、0x596902..0x596914はPower+0xDCをPUSHしCALL0x470700。wrapperは保存済み別VERIFIED 0x470700の内側0x42E70
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_batch11/reports/REA_20261019_0738_T014_POWER_GENERIC_NUMERIC_DC_SENTINEL_QC.md 行 8](../../research/recovered/rea_batch11/reports/REA_20261019_0738_T014_POWER_GENERIC_NUMERIC_DC_SENTINEL_QC.md?plain=1#L8-L8) — - [DC PRESENCE FLAG] 0x5965A2でlocal byteの0初期値があり、長さ10の専用tag D枝0x59690Fでbyte=1。全タグ読込後0x596A14で同flagを検査し、0の場合だけ0x596A1B..1FでPower+0xDC=0x80000008とする。D枝が実行された場合の値は
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_batch11/reports/REA_20261019_0834_T014_POWER_HOME_SPOT_DUAL_TERMINATOR_QC.md 行 7](../../research/recovered/rea_batch11/reports/REA_20261019_0834_T014_POWER_HOME_SPOT_DUAL_TERMINATOR_QC.md?plain=1#L7-L7) — - [SECOND EMPTY TOKEN / CONTROL FLOW] home_spot内終了後の外側tag再読は0x5969F9..0x596A05。0x596A0C TEST EDI→0x596A0E JNZ0x596756で非空だけ次tag処理へ戻す。2個目が空なら0x596A14のD-tag存在flag判
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 552](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L552-L552) — [CONFIRMED-SAVED-NATIVE] Powerのsave loader 0x45F66E..0x45F73Aでは0x5964C0で復元したobjectの+0xDCを0x45F6AFで未設定sentinel `0x80000008` と比較し、一致時だけ0x45F6BB..0x45F6EEで `@scena
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 553](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L553-L553) — [VERIFY / REIMPLEMENT] Power+0xDCの正確なゲーム用語、0x4647D0の引数解決・エラー枝、Spot+0x88に24上限clampがこのsave経路で追加されるかは未確認。通常script起動時のcapacity正規化とsav loadを無条件に同一化しない。再実装では「生seriali
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 662](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L662-L662) — [CONFIRMED-SAVED-NATIVE / CROSS-CONNECTION] A所有`exe/T014_NORMAL_LOAD_PROBE.txt` 0x45F6AF..0x45F6EEはPower復元時、Power+0xDC==0x80000008なら`@scenario`をキーとして`0x463CA0`を
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 666](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L666-L666) — [GOLDEN NOT RUN] 合法UIから受理可能な同一saveについてnumeric keyの有無とPower+0xDC sentinel/Spot+0x88 zeroを交差させ、load直後表示と再save numeric群のkey count/aux/valueを旧new比較。原本保存物はread-only、
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
 
 <a id="field-2dc"></a>

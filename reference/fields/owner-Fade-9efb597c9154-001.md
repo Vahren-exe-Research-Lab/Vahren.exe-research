@@ -16,7 +16,16 @@
 <a id="field-20"></a>
 ## Fade + 0x20
 
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1633_T014_SHEET_REGISTRATION_AUDIT.md 行 32](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1633_T014_SHEET_REGISTRATION_AUDIT.md?plain=1#L32-L32) — `0x5433E4 mov eax,[esi+0x20]`（Fade+0x20に保持する子ポインタ）、`0x5433E7 mov ecx,[esi+0x08]`、`0x5433EA mov ebx,[ecx+0x0C]`、`0x5433ED push eax`、`0x5433EE call 0x4C3D30`。
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
 - [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1633_T014_SHEET_REGISTRATION_AUDIT.md 行 34](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1633_T014_SHEET_REGISTRATION_AUDIT.md?plain=1#L34-L34) — 構築側 `0x543A63` は **Fade+4 = context**、`0x543A6B` は **Fade+8 = context+0x88** を書き込む。`0x543A90` で0x30バイト確保を要求し、`0x543AA1` から`0x542DB0`で子（`FadeSheetSkin`のvtable候補`
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+<a id="field-30"></a>
+## Fade + 0x30
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1533_T014_INNER_VCALL_GUARD_AUDIT.md 行 51](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1533_T014_INNER_VCALL_GUARD_AUDIT.md?plain=1#L51-L51) — - `0x543AE0`は`0x543AE9`でまず`0x5433D0`を呼び、その**後**`0x543AEE`からFade+0x30へ入力値を設定し、下限10へ補正する。一方 `0x543440`は0を渡して同じ`0x5433D0`を呼び、さらに`context+0x1EF150`へ1を書き込む。**`0x5433
   制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

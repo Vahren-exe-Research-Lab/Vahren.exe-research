@@ -34,6 +34,12 @@
 - [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 104](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L104-L104) — - Earlier 0x5D57F8 calls calloc(1,0x88) for the parent inner object; after storage in parent+0x68, 0x5D5820 writes through the returned pointer without a demons
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
 
+<a id="field-6c"></a>
+## parent + 0x6C
+
+- [research/recovered/b_batch7/data/T012_HEAL_CHILD_POOL_41E1D0_CONTRACT_20261013.md 行 4](../../research/recovered/b_batch7/data/T012_HEAL_CHILD_POOL_41E1D0_CONTRACT_20261013.md?plain=1#L4-L4) — [CALLER / INPUT] 前B-20261013-1400-01で確定の0x41E060 register helper→0x41E072 call0x41E1D0。ECX=dest subrecordをstack第1引数にpush、X-valueをstack第2として渡し、EAX=Y-value。0x41E1
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
 <a id="field-1e4b4"></a>
 ## parent + 0x1E4B4
 

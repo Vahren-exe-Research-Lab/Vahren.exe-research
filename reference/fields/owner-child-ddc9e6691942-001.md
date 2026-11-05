@@ -85,11 +85,23 @@
 <a id="field-1c8"></a>
 ## child + 0x1C8
 
+- [research/recovered/b_batch10/data/T024_CHILD_SPRITE_RESOLVER_OUTPTR_PALETTE_NATIVE_20261026_06H.md 行 9](../../research/recovered/b_batch10/data/T024_CHILD_SPRITE_RESOLVER_OUTPTR_PALETTE_NATIVE_20261026_06H.md?plain=1#L9-L9) — [STATIC NATIVE] 0x41F601 child取得→0x41F60C child+0x1C8をECXへ→0x41F612出力先push→0x41F613 E8 CALL 0x584970。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 - [research/recovered/b_batch10/data/T024_CHILD_SPRITE_RESOLVER_OUTPTR_PALETTE_NATIVE_20261026_06H.md 行 10](../../research/recovered/b_batch10/data/T024_CHILD_SPRITE_RESOLVER_OUTPTR_PALETTE_NATIVE_20261026_06H.md?plain=1#L10-L10) — [ABI] 0x584970の原作末尾0x5852F3 MOV EAX,[ESP+0x20]、0x58531A RET 8。ECX=child+0x1C8、stack第1引数=出力文字列バッファ、第2引数=1、EAX=第1引数バッファと静的整合。Ghidra pseudoのvoid表示はこのcaller契約と不一致。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch10/data/T024_CHILD_SPRITE_RESOLVER_OUTPTR_PALETTE_NATIVE_20261026_06H.md 行 14](../../research/recovered/b_batch10/data/T024_CHILD_SPRITE_RESOLVER_OUTPTR_PALETTE_NATIVE_20261026_06H.md?plain=1#L14-L14) — [SECOND PASS] 0x41F679 child+0x1C8再読→0x41F688 CALL 0x584970→0x41F6A5 CALL 0x423D70。0x423D70はGhidra上ESIで4×32bit出力に書き込み、画像領域の+0x28..+0x34またはデフォルト値を取得。直前0x41F6A1 E
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch10/data/T024_FIRST_ELIGIBLE_UI_COUNT_SPLIT_NATIVE_20261026_04H.md 行 12](../../research/recovered/b_batch10/data/T024_FIRST_ELIGIBLE_UI_COUNT_SPLIT_NATIVE_20261026_04H.md?plain=1#L12-L12) — 0x41F3BA CMP BYTE PTR [0x65EB64],DL → 0x41F3C0 JE 0x41F5AD（DLの値は近傍のゼロ初期化を前提とし、Ghidra擬似Cでもmode0枝）。mode0側0x41F5AD MOV EAX,[ESP+0x20]は0x41F0D8で保存した単一owner、0x41F5B9
   制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
 - [research/recovered/b_reports/T011_T012_EXP_TRAINING_DEATH_CROSSWALK_NATIVE_20261029.md 行 34](../../research/recovered/b_reports/T011_T012_EXP_TRAINING_DEATH_CROSSWALK_NATIVE_20261029.md?plain=1#L34-L34) — [SUMMON] 0x54EE82→0x577260 parent+0x1E4B4 cache、miss 0x54EF3E→0x58B7F0および0x54EF69→0x577310、0x54F07A→0x56F880 child+0x1C8=cache R。子RへのEXPと発動者EXPは別。
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail; DAT491 is direct source-line distribution, not491 effective units; training_up caller linkage remains VERIFY
+
+- [research/recovered/remaining_md1/reports/data/T024_HAKUSHIN_BATTLE_AI.md 行 394](../../research/recovered/remaining_md1/reports/data/T024_HAKUSHIN_BATTLE_AI.md?plain=1#L394-L394) — [DISPLAY] 0x41F3BA分岐でmode0は0x41F5AD→前記の単一owner、0x41F5B9..0x41F5C1 inner、0x41F5E6..0x41F60C child+0x1C8を参照。mode非0は0x41F3C6 outerを再走査。具体UI・下位描画/子の独立適格性はVERIFY。選択候
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
 
 <a id="field-1d0"></a>
 ## child + 0x1D0
@@ -100,7 +112,19 @@
 - [research/recovered/b_batch3/T011_SUMMON_CALLER_GROUP_PROVENANCE_NATIVE_20261027_15H.md 行 13](../../research/recovered/b_batch3/T011_SUMMON_CALLER_GROUP_PROVENANCE_NATIVE_20261027_15H.md?plain=1#L13-L13) — [GOLDEN] 無改変ver0.67 EXE・KARATE_X20改変前DAT・同一SAVE/MAP/input/RNGを固定。4 caller系の召喚条件別にS/H/effect+0x7C、child+0xC、selector、group EDI、child+0x1D0、group list、可視出現・EXP帰属を
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+- [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md 行 20](../../research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md?plain=1#L20-L20) — - constructorは0x5442C1でEDI=ECXを保持し、0x544380でchild+0x1D0=EDIを格納する。よって両生成経路の子は生成直後にTroop=NULL。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
+
 - [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 772](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L772-L772) — [NEW] child構築後、selector==1なら0x54F02F S+0x1D0、>=2なら0x567EE0 group新規またはS管理list末尾groupで候補EDI選択。EDI非NULLで0x54F093/0x54F096→0x568710にchild/Groupを渡し、group+0x1D==0側0x5
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+- [research/recovered/tests_batch5/T020_T011_SUMMON_GROUP_PARENT_NONIDENTITY_20261027_15H.md 行 6](../../research/recovered/tests_batch5/T020_T011_SUMMON_GROUP_PARENT_NONIDENTITY_20261027_15H.md?plain=1#L6-L6) — [CONCRETE DELTA] B静的経路ではsource Sは第1stack引数で、SummonFlash+0x7Cへ同Sが格納され得る。holder H=[S+0xC]は管理参照、child+0x1D0は分岐によりGroup pointerを保持し得る。4 caller VA=0x54DF4B/0x550219/
+  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
+
+<a id="field-1867d"></a>
+## child + 0x1867D
+
+- [research/recovered/b_batch3/T011_SUMMON_CALLER_GROUP_PROVENANCE_NATIVE_20261027_15H.md 行 9](../../research/recovered/b_batch3/T011_SUMMON_CALLER_GROUP_PROVENANCE_NATIVE_20261027_15H.md?plain=1#L9-L9) — [GROUP APPLY] 0x54F07A CALL0x56F880でnew childを構築した後、0x54F08F TEST EDI、非NULLなら0x54F093 PUSH EDI/0x54F094 MOV ECX,EAX(new child)/0x54F096 CALL0x568710。0x568752 CM
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

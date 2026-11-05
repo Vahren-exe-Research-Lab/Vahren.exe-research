@@ -7,6 +7,9 @@
 <a id="field-5c"></a>
 ## dword + 0x5C
 
+- [research/recovered/DEVLAB_NORMAL_SAVE_WIRE_COMPLETE_20261011.md 行 48](../../research/recovered/DEVLAB_NORMAL_SAVE_WIRE_COMPLETE_20261011.md?plain=1#L48-L48) — - Spot総数138維持、うち40個が書込tree_key_namesフィールド変化。Power総数29維持、29個のdword+0x5Cフィールドが変化。変数の人間向け意味はまだ確定させない。
+  制約・訂正　Historical author claims preserved; source hash verified; no new native or runtime validation; referenced local evidence not included; historical save terminology/counts require later REF_SAVE_FORMAT.md S1101 correction crosscheck; no current semantics promoted
+
 - [research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md 行 34](../../research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md?plain=1#L34-L34) — - prefixはstring +0、bytes +0x1C/+0x1D、dword +0x5C、strings +0x24/+0x40、dwords +0x20/+0x60、string +0x74。RB-tree +0x68 names/empty終端、28-byte vector +0x90/+0x94 name
   制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
 

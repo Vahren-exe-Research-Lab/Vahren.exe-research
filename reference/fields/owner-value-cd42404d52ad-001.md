@@ -10,4 +10,10 @@
 - [research/recovered/b_batch2/T011_TRAINING_LEADER_BONUS_MEMO_NATIVE_20261031_07H.md 行 14](../../research/recovered/b_batch2/T011_TRAINING_LEADER_BONUS_MEMO_NATIVE_20261031_07H.md?plain=1#L14-L14) — [KB_CANDIDATE] research_id=B-20261031-07H-T011-TRAINING-LEADER-BONUS-MEMO-01; owner=B/T011; primary VA=0x4722BE,0x4723A8,0x4723BC,0x4F8A80,0x4ED3B0,0x474A80; of
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 
+<a id="field-20"></a>
+## value + 0x20
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md 行 798](../../research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md?plain=1#L798-L798) — - CONFIRMED-SAVED-NATIVE: Power deserialize後の+0xDCがsentinel 0x80000008の時だけ`@scenario`を取得し`scenario/base_level` property lookup(0x4647D0)のvalue+0x20をPower+0xDCへ書
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

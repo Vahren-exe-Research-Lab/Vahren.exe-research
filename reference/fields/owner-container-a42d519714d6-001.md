@@ -16,6 +16,12 @@
 - [research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md 行 8](../../research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md?plain=1#L8-L8) — [COMMON RECT/GATE] At4E00C4..4E00D5 compute signed32 center/rectangle deltas and compare [container+0x80] against sentinel0x80000008. Sentinel equal→4E00E6 [con
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
+<a id="field-48"></a>
+## container + 0x48
+
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 339](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L339-L339) — [CONFIRMED-SAVED-NATIVE / runtime到達・表意味VERIFY] 保存済 `exe/T013_SUPPORT_BUILDER_FULL.txt` VA0x515150..0x5151C1と0x5150E0..0x51514Aを直接照合。0x515150はcontainer+0x48/+0x4
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
 <a id="field-70"></a>
 ## container + 0x70
 
@@ -49,6 +55,9 @@
 - [research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md 行 8](../../research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md?plain=1#L8-L8) — [SURVIVOR BRANCH] `container+0x78 !=0`の時`4E0362 EDX=[container+0x74]`→`4E0365 EAX=[EDX]`→`4E0367 ECX=[EAX+0xC]`→`4E036A PUSH ECX`→`4E036D CALL4DFD80`、4E0372共通ep
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
+- [research/recovered/b_batch7/data/T012_REFRESH_TREE_ERASE_510850_CONTRACT_20261013.md 行 7](../../research/recovered/b_batch7/data/T012_REFRESH_TREE_ERASE_510850_CONTRACT_20261013.md?plain=1#L7-L7) — [RETURN] 特殊または反復のどちらも、最終的なEAXは出力セルESI*であり、`[ESI]`に次iterator cursorを保存。元4E02A0はこの返値を直接HP/状態成功bool判定には使わず、CALL後にcontainer+0x78 countを参照して最後の状態除去/残存4DFD80を分岐する。`51
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
 <a id="field-80"></a>
 ## container + 0x80
 
@@ -63,5 +72,23 @@
 
 - [research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md 行 7](../../research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md?plain=1#L7-L7) — [7-WAY WRITERS] For each 0..6, corresponding bounded case runs0x423E80(first key)→copies 6 DWORD [returned] to container+0x84..+0x98, then0x423D70(second key)→c
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+<a id="field-88"></a>
+## container + 0x88
+
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 341](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L341-L341) — [DELTA] 既存T011§17のUnit+0x1C4重み計算に対し、別消費先の**index付き集計経路**と、Unit+0x1B8の対応付けwriterを初接続。B-20261011-0610-01のcontainer+0x88/+0x8C集計と別スロットで、同じ合計を暗黙複製しない。
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+<a id="field-32c"></a>
+## container + 0x32C
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 388](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L388-L388) — [RUN CAPACITY / SAFETY] Local Compact限定でMASTER cp67、運用規約22行、A handoff・所有資料、T006/T031/T014/T005の保存済nativeを読み取り。Local active terminal sessions0、重いjava/Ghidra/REA/
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 460](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L460-L460) — [NEXT] ①T005 0x5034E0 null条件/diagnostic文字列とspecial duplicate、②T031 0x4C2240実callee/scene別postreset state、③T006 variable/list op5/6 table DWORDと0x4B37CE tail、④T0
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 477](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L477-L477) — [NEXT] ①T031 0x4C2240 bodyとSpot virtual predicate ②T005 0x5034E0 null条件・special duplicates ③T006 variable/list op5/6 table payloadと0x4B37CE tail ④T014第五containe
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

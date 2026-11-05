@@ -7,7 +7,19 @@
 <a id="field-504"></a>
 ## worldbase + 0x504
 
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 1188](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L1188-L1188) — [CONFIRMED / VERIFY] 第1wrapper `exe/T014_NORMAL_LOAD_PROBE.txt` 0x45E73F..0x45E7B2はworldbase+0x504/+0x1EF4B4をcoreに渡し、戻り後0x45E766..773でbuffer pointer EBXを `0x5B7
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 146](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L146-L146) — - `0x435C10` は `worldbase+0x504` 配下のRB-tree (`+0x1EEBD0`) を走査し、RTTI dynamic_cast相当で `SpotElm` / `SpotEscapePath` / `SpotPath` を分類する。各分類ごとに name を書き、object vfunc
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 604](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L604-L604) — [VERIFY / LIMIT] 保存済み0x432010断片は0x43207Dで終わり、array begin/end reset、処理完了時の全状態・例外・解放対象の論理的なオブジェクト型は未確定。worldbase+0x504は既知のSpot/path graph tailと関連するが、この配列がそれ自体のPat
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 638](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L638-L638) — [CONFIRMED-SAVED-NATIVE / NEW CROSSWALK] `exe/T014_NORMAL_LOAD_PROBE.txt` の独立したentry 0x45E5F0..0x45E7B2 は、0x45E691でCreateFileA、0x45E69B..0x45E6BDでinvalid handle
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 673](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L673-L673) — [CONFIRMED / BUFFER STAGE] 第1wrapper `exe/T014_NORMAL_LOAD_PROBE.txt` 0x45E73F..0x45E75Eはworldbase+0x504/+0x1EF4B4をreader coreへ渡し、core帰還後0x45E766..0x45E773はRead
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
 
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 718](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L718-L718) — [CONFIRMED-SAVED-NATIVE / DISTINCT FROM A80] 第1readerは `exe/T014_NORMAL_LOAD_PROBE.txt` 0x45E547..0x45E54Cで `0x435550(worldbase+0x504, flag=1)` を呼ぶ。通常full-loadは

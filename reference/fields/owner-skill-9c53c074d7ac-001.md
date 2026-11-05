@@ -10,14 +10,26 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1079](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1079-L1079) — \| 係数f \| 種別(skill+0x40, 表0x55201C): 3→0.02、4→0.01、5→clamp(r,0.01,0.2)、その他→clamp(r,0.01,0.33)。r=a/b（b=0なら0.0） \| CONFIRMED \|
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+<a id="field-74"></a>
+## skill + 0x74
+
+- [research/recovered/rea_batch11/reports/REA_20261016_1430_AUX_POSTLOOP_VTABLE_STATUS.md 行 5](../../research/recovered/rea_batch11/reports/REA_20261016_1430_AUX_POSTLOOP_VTABLE_STATUS.md?plain=1#L5-L5) — - 0x546BD9 skill+0x74の符号付きDWORDを取り、0は1へ置換、0x546BE7 JLE 0x546C45で負の値は反復を省略する。0は反復1回となる（callee正常帰還を条件）。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
 <a id="field-1a0"></a>
 ## skill + 0x1A0
+
+- [research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md 行 106](../../research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md?plain=1#L106-L106) — - parserは `afterhit` をskill +0x1A0へ格納する。
+  制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
 
 - [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 175](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L175-L175) — - `afterhit` -> string object at skill +0x1A0（size/capacity側 +0x1B0周辺）。parser xref VA 0x59A9CA。
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 
 <a id="field-1b0"></a>
 ## skill + 0x1B0
+
+- [research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md 行 107](../../research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md?plain=1#L107-L107) — - 生存hit handler 2系統はskill +0x1B0（string size/capacity側）が非0なら +0x1A0 を取り出してafterhit派生処理を起動する。handler内部に `damage > 0` 判定はない。
+  制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
 
 - [research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md 行 134](../../research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md?plain=1#L134-L134) — object damage handler VA 0x55B060 はHPを減算し、HP>0のsurvivor branchで skill +0x1B0 を検査する。
   制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
@@ -28,6 +40,12 @@
 - [research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md 行 136](../../research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md?plain=1#L136-L136) — 同handlerのHP<=0 branchは skill +0x1BC bit1 を検査して +0x184 afterdeathをdispatchしてからobject破棄へ進む。
   制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
 
+<a id="field-230"></a>
+## skill + 0x230
+
+- [research/recovered/rea_batch14/reports/STATIC_EB40_NEGATIVE_HEAL_20261010.md 行 21](../../research/recovered/rea_batch14/reports/STATIC_EB40_NEGATIVE_HEAL_20261010.md?plain=1#L21-L21) — - 入口skill+0x230 <100なら0x5514E4 1回CRT draw→百分率相当へ整数化→roll>=chanceなら0x551E23早期ret。>=100ならその乱数消費なし。これは候補ごとではなく**当該core callにつき1回**。
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
 <a id="field-288"></a>
 ## skill + 0x288
 
@@ -36,6 +54,9 @@
 
 <a id="field-2a8"></a>
 ## skill + 0x2A8
+
+- [research/recovered/dev_reports/DEVLAB_HANDOFF_20261011_TYPED_DAMAGE_215.md 行 22](../../research/recovered/dev_reports/DEVLAB_HANDOFF_20261011_TYPED_DAMAGE_215.md?plain=1#L22-L22) — - src/hakushin_compat/hit_linked_award_subset.py + tests/test_hit_linked_award_subset.py: 9 PASS。hit once、ratio上限、skill+0x2A8の異なる変換/最低10、linked+0x16C符号なし加算/leve
+  制約・訂正　Historical STATIC/INFERRED/VERIFY and synthetic-test claims; no new native/runtime verification; referenced raw assets/probes/archives not recovered; no Golden/READY promotion; attack mixed-stat expression later corrected to2-R in MAIN_DECOMP_STAGE; mode6 refined in MODE6_DISTANCE
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1077](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1077-L1077) — \| 停止条件 \| skill+0x2A8 == −123456.0（exp_per=off）、Unit+0x1D0==NULL、Unit+0x18614≠0、record+0xC≠0（付与後1にする） \| CONFIRMED \|
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification

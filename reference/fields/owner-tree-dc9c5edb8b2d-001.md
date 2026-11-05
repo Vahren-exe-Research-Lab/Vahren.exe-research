@@ -10,8 +10,20 @@
 - [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 814](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L814-L814) — 0x4726C1→0x4DEF40の既知08H callerはbegin=[head] / end=headを渡す。0x4DEF4F/53双方一致の正常木では0x4DEF57→0x4ED030へ進み、0x4ED046→0x49F6A0(右subtree再帰＋左反復)、0x4ED04E node free、0x4ED06
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 819](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L819-L819) — [NEW PE] 0x4DEC74 CMP [iterator+0x15],0→0x4DEC78 JE正常枝。非正常時0x4DEC7F CALL0x5B5BBA (invalid iterator)。0x4DEC96/0x4DECA1で子候補+0x15を検査。0x4DEEBA/BB nodeを0x5B6BBBへfree
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+- [research/recovered/symbol_sources/T011_TRAINING_CACHE_FULL_RANGE_ERASE_NATIVE_20261031_09H.md 行 8](../../research/recovered/symbol_sources/T011_TRAINING_CACHE_FULL_RANGE_ERASE_NATIVE_20261031_09H.md?plain=1#L8-L8) — [BULK ERASER] 0x4ED030 内 0x4ED034/37でroot +0x15 sentinel判定、実nodeなら0x4ED040..46により右childを0x49F6A0へ渡し、0x4ED04Bで左へ進み0x4ED04E CALL0x5B6BBBでnodeをfreeし繰返す。完了後0x4ED061
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation; full-range bulk erase and partial node erase distinct; partial helper not required in normal full cleanup
+
 - [research/recovered/symbol_sources/T011_TRAINING_PARTIAL_ERASE_NATIVE_20261031_10H.md 行 15](../../research/recovered/symbol_sources/T011_TRAINING_PARTIAL_ERASE_NATIVE_20261031_10H.md?plain=1#L15-L15) — [KB_CANDIDATE] B-20261031-10H-T011-TRAINING-PARTIAL-ERASE-NATIVE-01 / owner B/T011 / source 上記PE window SHA / CALL 0x4DEFCF→0x4DEC70 / offsets node+0x15, tree+0
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation; full-range bulk erase and partial node erase distinct; partial helper not required in normal full cleanup
+
+<a id="field-20"></a>
+## tree + 0x20
+
+- [research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md 行 27](../../research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md?plain=1#L27-L27) — - 固定prefixはstring +0,+0x2C,+0x64 → raw DWORD +0x80,+0x84。続いてRB-tree +0x20の名前をin-orderでwrite。
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
 
 <a id="field-2c"></a>
 ## tree + 0x2C
@@ -31,10 +43,28 @@
 - [research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md 行 34](../../research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md?plain=1#L34-L34) — - prefixはstring +0、bytes +0x1C/+0x1D、dword +0x5C、strings +0x24/+0x40、dwords +0x20/+0x60、string +0x74。RB-tree +0x68 names/empty終端、28-byte vector +0x90/+0x94 name
   制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
 
+<a id="field-b4"></a>
+## tree + 0xB4
+
+- [research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md 行 34](../../research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md?plain=1#L34-L34) — - prefixはstring +0、bytes +0x1C/+0x1D、dword +0x5C、strings +0x24/+0x40、dwords +0x20/+0x60、string +0x74。RB-tree +0x68 names/empty終端、28-byte vector +0x90/+0x94 name
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
 <a id="field-32c"></a>
 ## tree + 0x32C
 
 - [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 1288](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L1288-L1288) — [NOT DONE] 原作旧EXE DYNAMIC0/Gameplay Golden PASS0、新strict MATCH0。T005 special duplicate優先、T006 op5/6 payload/Yield、T014 fifth tree+0x32C/変数寿命、T031 central reseed
   制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 1299](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L1299-L1299) — [GOLDEN/RESTART] 同一/異なるsavの合法連続loadで可視graph・再saveを比較（NOT RUN、旧Gameplay PASS0/新strict MATCH0）。再開はowner A83b 0x435644..0x435879とstatic guard reset、第五tree+0x32C。T0
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 1411](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L1411-L1411) — [INCREMENT/EVIDENCE] A所有`data/T014_GLOBAL_SAVE.md`同ID節。A保存`exe/T031_PHASE_OVERLAP_PROBE.txt` 0x4610B5..0x4610E0と0x46120B..0x46124Aは、対象obj+0x330 sentinelを介してノードを
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+- [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 426](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L426-L426) — [VERIFY / IMPLEMENT] [esp+0x94] の実引数origin・符号、ESIの型と初期化、record lifecycle／tree+0x32Cとの所属関係、overflow policy、読出callee、合法シーン・save/load・RNGは未確定。`record+0x1C = clock
+  制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 770](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L770-L770) — [CONFIRMED SAVED X86 / INDEPENDENT DELTA] A既存`exe/T031_PHASE_OVERLAP_PROBE.txt` VA0x4610B5..0x4610E0では入力obj=[esp+0x28]の+0x330 sentinel headをEBPへ、[EBP]をESIへ取り、ow
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

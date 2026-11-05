@@ -34,6 +34,12 @@
 <a id="field-40"></a>
 ## obj + 0x40
 
+- [research/recovered/b_batch10/data/T028_AL1_PREINSERT_DETACH_GEOMETRY_V9_20261029_06H.md 行 13](../../research/recovered/b_batch10/data/T028_AL1_PREINSERT_DETACH_GEOMETRY_V9_20261029_06H.md?plain=1#L13-L13) — 0x5A9CC0はその後ポインタobj+0x40/+0x44/+0x48/+0x4Cの矩形様四座標を書換え、既存幅/高さから中心位置を再算出する擬似C。中央寄せ・形状resetの意味はINFERRED、原native幅/符号・実画面位置はVERIFY。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch11/data/T028_LINKED_INNER_POINT_COLLAPSE_OUTER_CENTER_NATIVE_20261029_07H.md 行 12](../../research/recovered/b_batch11/data/T028_LINKED_INNER_POINT_COLLAPSE_OUTER_CENTER_NATIVE_20261029_07H.md?plain=1#L12-L12) — 0x5A9CC2 MOV ESI,EAX により関数引数I=L+0x160が確定。したがって同関数の I+0x40/+0x44/+0x48/+0x4C は **L+0x1A0/+0x1A4/+0x1A8/+0x1AC**。06Hの「obj+0x40矩形」をL本体+0x40と同一視しない。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 - [research/recovered/plugin_reports1/reports/T024_OPTIONAL_DOUBLE_FALLBACK_THUNK_V9_STATIC_20261101_23H.md 行 10](../../research/recovered/plugin_reports1/reports/T024_OPTIONAL_DOUBLE_FALLBACK_THUNK_V9_STATIC_20261101_23H.md?plain=1#L10-L10) — V9 function 0x542280 body [0x542280,0x5422BC] 61B（pseudoc帰属）。Ghidra表示: if (global double [0x63B0B8] != *(double *)(obj+0x50)) return *(double *)(obj+0x50); else
   制約・訂正　Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=B_STATIC_CANDIDATE_ERRATUM
 
@@ -55,14 +61,38 @@
 - [research/recovered/plugin_reports1/reports/T024_OPTIONAL_DOUBLE_FALLBACK_THUNK_V9_STATIC_20261101_23H.md 行 10](../../research/recovered/plugin_reports1/reports/T024_OPTIONAL_DOUBLE_FALLBACK_THUNK_V9_STATIC_20261101_23H.md?plain=1#L10-L10) — V9 function 0x542280 body [0x542280,0x5422BC] 61B（pseudoc帰属）。Ghidra表示: if (global double [0x63B0B8] != *(double *)(obj+0x50)) return *(double *)(obj+0x50); else
   制約・訂正　Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=B_STATIC_CANDIDATE_ERRATUM
 
+- [research/recovered/rea_batch10/reports/REA_20261023_1435_P0_BTL_AUTO_TRANSITION_GATE_STATIC.md 行 15](../../research/recovered/rea_batch10/reports/REA_20261023_1435_P0_BTL_AUTO_TRANSITION_GATE_STATIC.md?plain=1#L15-L15) — - その後、[ESI+0x14]+0x1D==0なら[ESI+0x194]を使い、関連obj+0x54==0 / +0x50!=0 / 別参照+0x38!=0 / +0x1EED54!=0 / obj+0x50の指先+0x79!=0という追加ゲート。途中失敗は0x52626Cのエピローグへ。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+<a id="field-54"></a>
+## obj + 0x54
+
+- [research/recovered/rea_batch10/reports/REA_20261023_1435_P0_BTL_AUTO_TRANSITION_GATE_STATIC.md 行 15](../../research/recovered/rea_batch10/reports/REA_20261023_1435_P0_BTL_AUTO_TRANSITION_GATE_STATIC.md?plain=1#L15-L15) — - その後、[ESI+0x14]+0x1D==0なら[ESI+0x194]を使い、関連obj+0x54==0 / +0x50!=0 / 別参照+0x38!=0 / +0x1EED54!=0 / obj+0x50の指先+0x79!=0という追加ゲート。途中失敗は0x52626Cのエピローグへ。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
 <a id="field-88"></a>
 ## obj + 0x88
+
+- [research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md 行 10](../../research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md?plain=1#L10-L10) — - 通過したUnitについて 0x5150BB..C7 が UnitData=[Unit+0x1C8] の +0x1C4 DWORDをobj+0x88へ加算。さらに Unit+0x1D0 !=0 のときだけ0x5150A9..B5で同じ値をobj+0x8Cへ加算。意味名/符号/overflow/合法NULLはVERIF
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 - [research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md 行 11](../../research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md?plain=1#L11-L11) — - 0x5150D7 CALL 0x5B6513 はsecurity cookie検査。native cookieの正常経路0x5B6513 CMP ECX,[0x65A220]→0x5B651B REPZ RETでEAXを変更しない。通常経路のEAXは 0x515076 で作った &obj+0x88 に保たれる。Gh
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 - [research/recovered/tests_batch5/T020_E_T013_SUM88_BRANCH_ACCEPTANCE_20261030_22H.md 行 9](../../research/recovered/tests_batch5/T020_E_T013_SUM88_BRANCH_ACCEPTANCE_20261030_22H.md?plain=1#L9-L9) — 0x515060 iterates obj vector and excludes Unit+0x1867C nonzero; UnitData+0x1C4 contributes to obj+0x88 and conditionally to +0x8C if Unit+0x1D0 nonzero. It is *
   制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
+
+<a id="field-8c"></a>
+## obj + 0x8C
+
+- [research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md 行 10](../../research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md?plain=1#L10-L10) — - 通過したUnitについて 0x5150BB..C7 が UnitData=[Unit+0x1C8] の +0x1C4 DWORDをobj+0x88へ加算。さらに Unit+0x1D0 !=0 のときだけ0x5150A9..B5で同じ値をobj+0x8Cへ加算。意味名/符号/overflow/合法NULLはVERIF
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+<a id="field-90"></a>
+## obj + 0x90
+
+- [research/recovered/rea_batch10/reports/REA_20261023_2033_P0_DEMOPERSON_STATE4_VIRTUAL_REACH_STATIC.md 行 17](../../research/recovered/rea_batch10/reports/REA_20261023_2033_P0_DEMOPERSON_STATE4_VIRTUAL_REACH_STATIC.md?plain=1#L17-L17) — - 0x449870 MOV EAX,[EDI-0x70] はthis=obj+0x90ならobject+0x20を読む。0x449876 TEST EAX、0x449878 JE 0x44988Dでstate0を0x44AE70へ送る。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
 
 <a id="field-c8"></a>
 ## obj + 0xC8
@@ -90,6 +120,9 @@
 
 <a id="field-330"></a>
 ## obj + 0x330
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 1411](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L1411-L1411) — [INCREMENT/EVIDENCE] A所有`data/T014_GLOBAL_SAVE.md`同ID節。A保存`exe/T031_PHASE_OVERLAP_PROBE.txt` 0x4610B5..0x4610E0と0x46120B..0x46124Aは、対象obj+0x330 sentinelを介してノードを
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 770](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L770-L770) — [CONFIRMED SAVED X86 / INDEPENDENT DELTA] A既存`exe/T031_PHASE_OVERLAP_PROBE.txt` VA0x4610B5..0x4610E0では入力obj=[esp+0x28]の+0x330 sentinel headをEBPへ、[EBP]をESIへ取り、ow
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation

@@ -16,4 +16,28 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 4189](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L4189-L4189) — 1. ud = unit+0x1C8。0 なら何もしない。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+<a id="field-220"></a>
+## unit + 0x220
+
+- [research/recovered/rea_batch14/reports/WAVE3_FINDINGS_20261010.md 行 29](../../research/recovered/rea_batch14/reports/WAVE3_FINDINGS_20261010.md?plain=1#L29-L29) — - **T012/T013 `0x4E7ED0`:** 返値0/1の判定helperには `param_1+0x3C` による2つのアルゴリズム分岐がある。一方は `param_2` の座標+0x214/+0x218を中心とする空間グリッドを走査し、候補のenable byte+0x65、除外状態+0x1AE、powe
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
+<a id="field-228"></a>
+## unit + 0x228
+
+- [research/recovered/b_batch9/data/T013_GROUP_SPACING_569360_CALLBACK_GATE_V3_20261023_1618.md 行 17](../../research/recovered/b_batch9/data/T013_GROUP_SPACING_569360_CALLBACK_GATE_V3_20261023_1618.md?plain=1#L17-L17) — 次回再開: 0x00639A30周囲のRTTI・vtable（読取のみ）で 0x56AB20 の所有クラスを確定→0x56AB20 +0x44 writer とparam1+0x34・unit+0x228の型を照合。拒否済み0x5710C0..0x571500/0x514C50/14:14保存等へ非介入。
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+<a id="field-1867e"></a>
+## unit + 0x1867E
+
+- [research/recovered/dev_reports/DEVLAB_HANDOFF_20261011_TYPED_DAMAGE_215.md 行 14](../../research/recovered/dev_reports/DEVLAB_HANDOFF_20261011_TYPED_DAMAGE_215.md?plain=1#L14-L14) — 4. damage final dispatch 0x5510E1..0x551156: resistance10ではdamage-handler virtualをcallせず後段hitへ。scale0はhandler(0)。mode6はordinary minを迂回（mode6値生成は別区画）。resistance0
+  制約・訂正　Historical STATIC/INFERRED/VERIFY and synthetic-test claims; no new native/runtime verification; referenced raw assets/probes/archives not recovered; no Golden/READY promotion; attack mixed-stat expression later corrected to2-R in MAIN_DECOMP_STAGE; mode6 refined in MODE6_DISTANCE
+
+<a id="field-18688"></a>
+## unit + 0x18688
+
+- [research/recovered/rea_batch14/reports/WAVE3_FINDINGS_20261010.md 行 29](../../research/recovered/rea_batch14/reports/WAVE3_FINDINGS_20261010.md?plain=1#L29-L29) — - **T012/T013 `0x4E7ED0`:** 返値0/1の判定helperには `param_1+0x3C` による2つのアルゴリズム分岐がある。一方は `param_2` の座標+0x214/+0x218を中心とする空間グリッドを走査し、候補のenable byte+0x65、除外状態+0x1AE、powe
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

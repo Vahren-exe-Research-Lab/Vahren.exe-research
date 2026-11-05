@@ -10,6 +10,12 @@
 - [research/recovered/symbol_sources/T011_TRAINING_CACHE_FULL_RANGE_ERASE_NATIVE_20261031_09H.md 行 14](../../research/recovered/symbol_sources/T011_TRAINING_CACHE_FULL_RANGE_ERASE_NATIVE_20261031_09H.md?plain=1#L14-L14) — [KB_CANDIDATE] 本見出しID; owner B/T011; VA 0x4726C1/0x4DEF40/0x4DEF57/0x4ED030/0x4ED046/0x49F6A0/0x4DEFCF/0x4DEC70; node sentinel byte +0x15, tree head +0x4, count
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation; full-range bulk erase and partial node erase distinct; partial helper not required in normal full cleanup
 
+<a id="field-11"></a>
+## head + 0x11
+
+- [research/recovered/rea_batch9/reports/REA_20261024_08H_P0_NESTED_MAP_COUNT_TRANSFER_STATIC.md 行 12](../../research/recovered/rea_batch9/reports/REA_20261024_08H_P0_NESTED_MAP_COUNT_TRANSFER_STATIC.md?plain=1#L12-L12) — - 0x47D86C XOR ESI,ESI、0x47D8B5の一時tree件数=0、0x47D8C9/D3/DAでhead自己リンク、0x47D8E8でhead+0x11=1。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; held bodies not recovered
+
 <a id="field-28"></a>
 ## head + 0x28
 
@@ -20,6 +26,12 @@
 ## head + 0x1AC
 
 - [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 913](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L913-L913) — [CONFIRMED-SAVED-NATIVE / INCREMENT] A所有`exe/T014_NORMAL_LOAD_PROBE.txt` 0x45F5B2..0x45F5D8で0x432010→0x471980→`EDI=0x87F458; call 0x43F240`。A所有`exe/T006_DIALOG_
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+<a id="field-2f0"></a>
+## head + 0x2F0
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 855](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L855-L855) — [CONFIRMED-SAVED-NATIVE] A所有`exe/T014_NORMAL_LOAD_PROBE.txt` VA0x45EF74..0x45EFB7のUnit+0x94非0→+0x84 name→call0x467E90を、A所有`exe/T014_RESOLVER_PROBE.txt` VA0x467E
   制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
 <a id="field-330"></a>
@@ -33,5 +45,8 @@
 
 - [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 929](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L929-L929) — [CONFIRMED-SAVED-NATIVE] A保存`exe/T014_NORMAL_LOAD_PROBE.txt` 0x45EC24..0x45EC66はECX=owner+0x32C→0x4ED240のnode erase・+0x330 head self-link・+0x334 count=0。A保存`exe
   制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 631](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L631-L631) — [CONFIRMED-SAVED-NATIVE / INCREMENT] 既知通常load `exe/T014_NORMAL_LOAD_PROBE.txt` 0x45EC24..0x45EC66はownerの+0x32CをECXへ渡して0x4ED240でtree nodeを消去し、+0x330 head自己参照化・+0
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

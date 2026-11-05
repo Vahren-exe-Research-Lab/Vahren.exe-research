@@ -19,4 +19,7 @@
 - [research/recovered/b_batch3/T013_GAMEMANAGER_GLOBAL_BACKLINKS_NATIVE_20261027_12H.md 行 7](../../research/recovered/b_batch3/T013_GAMEMANAGER_GLOBAL_BACKLINKS_NATIVE_20261027_12H.md?plain=1#L7-L7) — [NEW HOLDER B] 0x004B79D1 MOV EDI,0x008BE7F4→0x004B79D6 CALL0x0048A5B0。内部0x0048A5F4 MOV DWORD PTR[EDI+4],0x008BE2F0、0x0048A5FB [EDI+8]=0x008BE378。つまり Hscene=0x0
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+- [research/recovered/b_batch3/T013_GAMEMANAGER_GLOBAL_BACKLINKS_NATIVE_20261027_12H.md 行 12](../../research/recovered/b_batch3/T013_GAMEMANAGER_GLOBAL_BACKLINKS_NATIVE_20261027_12H.md?plain=1#L12-L12) — [INFERRED LIMIT] Main+0x504のGameEvent/scene名称やUnit holder実aliasは型推測であり、動的な合法Healをこの指標だけで証明できない。global初期化の失敗/所有権/再入/ゲームモード分岐も未確定。原作不具合は認定せず。
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

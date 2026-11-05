@@ -13,4 +13,10 @@
 - [research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md 行 304](../../research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md?plain=1#L304-L304) — - audio loop core 0x4BDCB0はfiltered listをmanager playlist vectorへrange-copy/insertし、current index +0x38=0を設定。初回はelement0を再生後index++。
   制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
 
+<a id="field-294"></a>
+## index + 0x294
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 784](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L784-L784) — [CONFIRMED-SAVED-NATIVE / NO-HIT RESOLUTION] `exe/T006_DIALOG_VMETHODS.txt` 0x441D40..0x441D78: hit-testで全候補不一致（または+0x184<=0）なら0x441D71でvptr=[ESI]、0x441D73でslot
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

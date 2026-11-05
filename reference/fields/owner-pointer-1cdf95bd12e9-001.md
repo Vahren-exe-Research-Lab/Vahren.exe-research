@@ -4,6 +4,15 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-28"></a>
+## pointer + 0x28
+
+- [research/recovered/b_batch6/data/T011_VARIABLE_WRITER_CALLS54_INSERT_FLAG_NATIVE_20261025_16H.md 行 17](../../research/recovered/b_batch6/data/T011_VARIABLE_WRITER_CALLS54_INSERT_FLAG_NATIVE_20261025_16H.md?plain=1#L17-L17) — - 旧14Hのwriter 0x4637A0はflag!=0で既存key検索し、既存時0x46386C erase→0x463896 fresh48B node→0x4638A2 insert（新32B値object生成は先行）。今回の独立増分は54サイトの原作rel32全件検証、7型復元callerのflag分布、挿
+  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
+
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 743](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L743-L743) — [NEW SOURCE] 0x4366AF PUSH0x30→0x4366B1 node48B確保、0x4366D2 ESI=EBX+0xC、0x4366FE/0x436701 [ESI+0x1C] = [EDI+0x1C]（node+0x28への32B値pointerコピー）。削除経路0x4BF8BF→0x51003
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
 <a id="field-90"></a>
 ## pointer + 0x90
 
@@ -21,5 +30,11 @@
 
 - [research/recovered/remaining_md1/reports/data/T012_T013_WRQ_SKILL_INTEGRATION_BRIDGE_20261013.md 行 53](../../research/recovered/remaining_md1/reports/data/T012_T013_WRQ_SKILL_INTEGRATION_BRIDGE_20261013.md?plain=1#L53-L53) — [INTEGRATION RECEIPT] Distinct fields: Unit pointer+0x185F8 ring cursor; Rptr, R.vtable,+54 writer order,+6C Unit self source; Lptr, L.active, L+4 Rptr, L globa
   制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+
+<a id="field-1eed44"></a>
+## pointer + 0x1EED44
+
+- [research/recovered/rea_batch14/reports/STATIC_SPATIAL_EVENT_MISSILE_20261010.md 行 23](../../research/recovered/rea_batch14/reports/STATIC_SPATIAL_EVENT_MISSILE_20261010.md?plain=1#L23-L23) — - +0x1EED54/55の組は到達可能なのが(1,0),(0,1),(0,0)だけ。この2フラグと3つの参照slot+0x1E8630/+34/+38から**別の2つのpointer+0x1EED44/+48**が作られる。branch mappingは次の通り：
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

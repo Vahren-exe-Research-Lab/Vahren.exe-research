@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-10"></a>
+## source + 0x10
+
+- [research/recovered/b_batch8/data/T013_CASE8_STRING_FIRST_ELEMENT_COPY_20261024_05H.md 行 8](../../research/recovered/b_batch8/data/T013_CASE8_STRING_FIRST_ELEMENT_COPY_20261024_05H.md?plain=1#L8-L8) — [NEW-3 SOURCE TYPE] 0x402710のnative 0x40271C source+0x10長を取得、0x402721 position範囲検査、0x40272F～0x402739でcopy長min(srcLen-pos,count)を生成。0x40276B/0x402785/0x4027B7でde
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 <a id="field-d4"></a>
 ## source + 0xD4
 
@@ -20,6 +26,24 @@
 ## source + 0x1D0
 
 - [research/recovered/rea_batch14/reports/STATIC_SPATIAL_EVENT_MISSILE_20261010.md 行 10](../../research/recovered/rea_batch14/reports/STATIC_SPATIAL_EVENT_MISSILE_20261010.md?plain=1#L10-L10) — - 一セルbranchは候補+0x65非0、候補+0x1AE==0、候補+0x1D0 != source+0x1D0、候補+0x1D4 == source+0x1D4の全4条件で1、それ以外0。**このbranch内に距離比較は無い**。所属関連offsetは数字のまま保存し、人間向け「敵」「同陣営」を確定名として与え
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
+<a id="field-1d4"></a>
+## source + 0x1D4
+
+- [research/recovered/rea_batch14/reports/STATIC_SPATIAL_EVENT_MISSILE_20261010.md 行 10](../../research/recovered/rea_batch14/reports/STATIC_SPATIAL_EVENT_MISSILE_20261010.md?plain=1#L10-L10) — - 一セルbranchは候補+0x65非0、候補+0x1AE==0、候補+0x1D0 != source+0x1D0、候補+0x1D4 == source+0x1D4の全4条件で1、それ以外0。**このbranch内に距離比較は無い**。所属関連offsetは数字のまま保存し、人間向け「敵」「同陣営」を確定名として与え
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
+<a id="field-210"></a>
+## source + 0x210
+
+- [research/recovered/b_batch3/T012_RUSH_SKILL_INTERVAL_FIRST_TICK_BURST_NATIVE_20261027_18H.md 行 19](../../research/recovered/b_batch3/T012_RUSH_SKILL_INTERVAL_FIRST_TICK_BURST_NATIVE_20261027_18H.md?plain=1#L19-L19) — [SAFETY/NEXT] 既拒否0x5710C0..0x571500、0x58021E..0x580340、過去の間接SQL・文書作成拒否は別tool/shell/path/Remote/ZIP迂回なし。全Ghidra/REA/原作ゲーム実行0、他owner/MASTER/rea_lab/dev_lab/原本/Wor
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+<a id="field-228"></a>
+## source + 0x228
+
+- [research/recovered/rea_batch14/reports/STATIC_SPATIAL_EVENT_MISSILE_20261010.md 行 11](../../research/recovered/rea_batch14/reports/STATIC_SPATIAL_EVENT_MISSILE_20261010.md?plain=1#L11-L11) — - p1+0x3C==0 → 0x4E7F99..0x4E8202 **複数セルのradius sweep**。入口でsource p2+0xB0/+0xA8が両方0かつaction counter p2+0x1E530 <global0x65BC5Cならsource effective radiusを0、それ以外では
   制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
 
 <a id="field-3cb0"></a>

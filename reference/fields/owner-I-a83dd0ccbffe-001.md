@@ -10,4 +10,7 @@
 - [research/recovered/b_batch11/data/T028_LINKED_INNER_POINT_COLLAPSE_OUTER_CENTER_NATIVE_20261029_07H.md 行 12](../../research/recovered/b_batch11/data/T028_LINKED_INNER_POINT_COLLAPSE_OUTER_CENTER_NATIVE_20261029_07H.md?plain=1#L12-L12) — 0x5A9CC2 MOV ESI,EAX により関数引数I=L+0x160が確定。したがって同関数の I+0x40/+0x44/+0x48/+0x4C は **L+0x1A0/+0x1A4/+0x1A8/+0x1AC**。06Hの「obj+0x40矩形」をL本体+0x40と同一視しない。
   制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
+- [research/recovered/b_batch11/data/T028_LINKED_INNER_POINT_COLLAPSE_OUTER_CENTER_NATIVE_20261029_07H.md 行 23](../../research/recovered/b_batch11/data/T028_LINKED_INNER_POINT_COLLAPSE_OUTER_CENTER_NATIVE_20261029_07H.md?plain=1#L23-L23) — EXE CALL site 0x5AA709 E8→0x5A9CC0は既06H確認済み、今回の新しいnative値は0x5AA703 EAX=L+0x160、I+0x40がL+0x1A0に写ること、およびI zero-extent とN外側中心配置の分離。未回収10/25・他lane全意味dedupはVERIFY。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

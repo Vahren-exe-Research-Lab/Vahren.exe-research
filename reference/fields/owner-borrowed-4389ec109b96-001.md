@@ -10,4 +10,10 @@
 - [research/recovered/rea_batch3/reports/REA_20261031_11H_P0_VORBIS_LOOK_CONVERSION_STATIC.md 行 14](../../research/recovered/rea_batch3/reports/REA_20261031_11H_P0_VORBIS_LOOK_CONVERSION_STATIC.md?plain=1#L14-L14) — ## 新規差分 A：borrowed +0x0C は正常変換前に初期化で消える
   制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
 
+- [research/recovered/rea_batch3/reports/REA_20261031_11H_P0_VORBIS_LOOK_CONVERSION_STATIC.md 行 16](../../research/recovered/rea_batch3/reports/REA_20261031_11H_P0_VORBIS_LOOK_CONVERSION_STATIC.md?plain=1#L16-L16) — - 同じlookレコードの変換は `0x005D5B51 E8 -> 0x005DA070`。後者入口の `0x005DA07C..0x005DA082` は `memset(look,0,0x38)` を行う。すなわち**通常の逐次変換に達した場合は旧borrowed +0x0Cをクリア**し、先行参照を引き継がない
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [research/recovered/rea_batch3/reports/REA_20261031_12H_P0_VORBIS_LOOK_ARRAY_CALLOC_STATIC.md 行 3](../../research/recovered/rea_batch3/reports/REA_20261031_12H_P0_VORBIS_LOOK_ARRAY_CALLOC_STATIC.md?plain=1#L3-L3) — 前回11H `REA-LOCAL-20261031-11H-P0-VORBIS-LOOK-CONVERSION-ALLOCATION-GATES-STATIC-01` と差分照合。11Hの内部4確保と旧borrowed+0x0C消去を重複新規計上しない。
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

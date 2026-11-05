@@ -16,6 +16,9 @@
 - [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0736_T014_UIOWNER_GATE_ALIAS_AUDIT.md 行 62](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0736_T014_UIOWNER_GATE_ALIAS_AUDIT.md?plain=1#L62-L62) — \| **`0x0067B328`** \| `Window+0x98` \| **`[owner+0x188]`（innerポインタ）** \|
   制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
 
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0836_T014_PLAYER_GAMEWINDOW_OWNERCHAIN_AUDIT.md 行 33](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0836_T014_PLAYER_GAMEWINDOW_OWNERCHAIN_AUDIT.md?plain=1#L33-L33) — この事実は前回07:36の`[owner+0x188]`が不明だった箇所を一段解決する。前回のWindow+0x98/+0x9C代入そのものは既知であり、新規実績に加算しない。
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
 <a id="field-9c"></a>
 ## Window + 0x9C
 

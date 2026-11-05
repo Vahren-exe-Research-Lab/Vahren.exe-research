@@ -10,6 +10,27 @@
 - [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md 行 202](../../research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md?plain=1#L202-L202) — - HP処理は0x551151 PUSH ECX→0x551154 virtual+0x70。SimpleUnitの同slotは0x544790で、0x5447F7 SUB [target+0x90],ECXがHPを減らす。これは先行のvtable型対応と結合した限定経路。
   制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
 
+- [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md 行 204](../../research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md?plain=1#L204-L204) — - 分母はHP callbackから戻った後に0x551156でtarget+0x1C8を読み、0x55115CでUnitData+0x178を読む。これはHP成長フィールド（成長名配列0x68D7D4→"hp"と先行UnitData対応）。target+0x90の現在HPではない。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
+
+<a id="field-d8"></a>
+## target + 0xD8
+
+- [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md 行 215](../../research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md?plain=1#L215-L215) — - 0x551C77/79では超過分と元量の差をtarget+0xD8へ反映。これは有効回復量相当を別の資源処理へ利用する経路で、EXP分子の差し替えではない。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
+
+<a id="field-dc"></a>
+## target + 0xDC
+
+- [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md 行 212](../../research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md?plain=1#L212-L212) — - HP項目の上限ポインタはtarget+0xDC。攻撃側の分母UnitData+0x178とは参照先が異なる。ただしfunc=heal(kind3)は共通EXP関数の固定2%枝を通るので、渡した分子/分母の比率自体を採用しない。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
+
+<a id="field-1c8"></a>
+## target + 0x1C8
+
+- [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md 行 204](../../research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md?plain=1#L204-L204) — - 分母はHP callbackから戻った後に0x551156でtarget+0x1C8を読み、0x55115CでUnitData+0x178を読む。これはHP成長フィールド（成長名配列0x68D7D4→"hp"と先行UnitData対応）。target+0x90の現在HPではない。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
+
 <a id="field-1d4"></a>
 ## target + 0x1D4
 
@@ -21,5 +42,11 @@
 
 - [research/recovered/b_batch7/data/T012_MODE0_LATE_MP_FALLBACK_POSTSELECT_CROSSJOIN_20261014.md 行 13](../../research/recovered/b_batch7/data/T012_MODE0_LATE_MP_FALLBACK_POSTSELECT_CROSSJOIN_20261014.md?plain=1#L13-L13) — [NEXT] 既保存証拠だけでearly MP gateとouter実Skill dispatchの合法reach、Unit+1863C次Skillのidentity、post+18654条件を検証。T013 target+0xA18/+A1C優先とT011 cross-kind継承、MP最終結果はOPEN。EのみMA
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+<a id="field-185fc"></a>
+## target + 0x185FC
+
+- [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md 行 24](../../research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md?plain=1#L24-L24) — - 重要な区別: NULL判定はcontext.actor側。報酬基準はtarget+0x185FC（0x551F2F）から別に読む。『召喚子自身が通常EXPを得ない』と『その子を攻撃する敵もEXPを得ない』は同義ではない。hasexpによる相手への報酬は別条件。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

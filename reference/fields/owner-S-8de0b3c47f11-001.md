@@ -28,6 +28,12 @@
 - [research/recovered/b_batch2/T028_RETREAT_OK_QUEUE_DRAIN_ELIGIBILITY_NATIVE_20261029_19H.md 行 11](../../research/recovered/b_batch2/T028_RETREAT_OK_QUEUE_DRAIN_ELIGIBILITY_NATIVE_20261029_19H.md?plain=1#L11-L11) — - 0x49D030原PEではDL=0時、参照S=[EBP+0x194], C=[S+0x0C]について [C+0x54]==0、[C+0x50]!=0、[[S+0x10]+0x38]!=0、[S+0x1EED54]!=0、[[C+0x50]+0x79]!=0 が揃ってAL=1の枝（0x49D030/33/39/43/
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 
+- [research/recovered/b_batch3/T013_GAMEMANAGER_GLOBAL_BACKLINKS_NATIVE_20261027_12H.md 行 9](../../research/recovered/b_batch3/T013_GAMEMANAGER_GLOBAL_BACKLINKS_NATIVE_20261027_12H.md?plain=1#L9-L9) — [FORMAL CROSS] 旧11H effect producer 0x54E11A H=[Unit様S+0xC]→0x550980→effect+0xC=H、0x54E2D7 EAX=[H+4]、0x54E2DB ADD EAX,0xC→0x54E2DE CALL0x4C2240。ゆえに M_register=[
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch3/T013_GAMEMANAGER_GLOBAL_BACKLINKS_NATIVE_20261027_12H.md 行 16](../../research/recovered/b_batch3/T013_GAMEMANAGER_GLOBAL_BACKLINKS_NATIVE_20261027_12H.md?plain=1#L16-L16) — [NEXT] Unit様S+0xCへの合法writerを元PEのB所有既存T011/T013材料で特定して Hwin/Hscene/Hauxのどれかを出典付きで接続。次にT013最終支援対象/tie、T012 0x551490早期returnとRNG、T024 AI決定順、T028本来の士気・敗走P0。元EXE/ZIP
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 - [research/recovered/knowledge_history1/reports/knowledge/REF_UNIT_EXP_SUMMON.md 行 20](../../research/recovered/knowledge_history1/reports/knowledge/REF_UNIT_EXP_SUMMON.md?plain=1#L20-L20) — - The observed static holder flow is source S+0xC -> SummonFlash+0xC -> child Unit+0xC.
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
 
@@ -35,6 +41,9 @@
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 
 - [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 767](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L767-L767) — [CORRECTION] 13Hの未解明EBXは召喚親Unit直接ではなくSummonFlash効果文脈。参照の伝播は S+0xC→SummonFlash+0xC→child+0xC。これは召喚親の一意識別情報を証明しない。元PE E8 site3/3一致、RTTI/静的vtable照合。詳細 data/T011_SU
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 771](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L771-L771) — [NEW] 原作0x54E7F0でfirst stack arg=[EBP+8]をsource Unit-like Sとして保存、0x54ED51→0x54ED70 S+0xCからholder H取得、0x54ED95でSummonFlash+0x7Cへ同S格納。0x54DF4B/0x550219/0x57F484/0
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 
 - [research/recovered/rea_batch4/reports/REA_20261030_04H_P0_DSLOCK_PAIR_FIRSTREGION_STATIC.md 行 11](../../research/recovered/rea_batch4/reports/REA_20261030_04H_P0_DSLOCK_PAIR_FIRSTREGION_STATIC.md?plain=1#L11-L11) — `0x0050235B..0x00502387` のpushとLEA（pushによるESP変位を考慮）よりLock引数は `(stream+8, offset=0, bytes=0, &ptr1[S+0x0C], &bytes1[S+0x08], &ptr2[S+0x14], &bytes2[S+0x10], flag
@@ -46,7 +55,16 @@
 - [research/recovered/tests_batch5/T020_T011_SUMMON_GROUP_PARENT_NONIDENTITY_20261027_15H.md 行 6](../../research/recovered/tests_batch5/T020_T011_SUMMON_GROUP_PARENT_NONIDENTITY_20261027_15H.md?plain=1#L6-L6) — [CONCRETE DELTA] B静的経路ではsource Sは第1stack引数で、SummonFlash+0x7Cへ同Sが格納され得る。holder H=[S+0xC]は管理参照、child+0x1D0は分岐によりGroup pointerを保持し得る。4 caller VA=0x54DF4B/0x550219/
   制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
 
+- [research/recovered/tests_batch5/T020_T013_BACKLINK_NONUNIQUE_AUDIT_20261027_12H.md 行 4](../../research/recovered/tests_batch5/T020_T013_BACKLINK_NONUNIQUE_AUDIT_20261027_12H.md?plain=1#L4-L4) — [BASELINE] 11H Eテストは M_register=[H+4]+0xC、M_tick=Main+0xC なので [H+4]=Main を必要条件とした。これは登録元HがUnit様S+0xC由来であることや同じruntime instanceの証明ではない。
+  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
+
 - [research/recovered/tests_batch5/T020_T013_BACKLINK_NONUNIQUE_AUDIT_20261027_12H.md 行 7](../../research/recovered/tests_batch5/T020_T013_BACKLINK_NONUNIQUE_AUDIT_20261027_12H.md?plain=1#L7-L7) — [STRICT NEGATIVE] 異なる3種のHが同一Mainを指し得るため、M_register==M_tick を確認しても S+0xC にどのHが入るかは一意にならない。「backlink一致」「manager数値一致」「Unit→holder出典」「初期化段階」「同一run/generation」「合法原作採
+  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
+
+- [research/recovered/tests_batch5/T020_T013_BACKLINK_NONUNIQUE_AUDIT_20261027_12H.md 行 9](../../research/recovered/tests_batch5/T020_T013_BACKLINK_NONUNIQUE_AUDIT_20261027_12H.md?plain=1#L9-L9) — [T020 LIMIT] この検証は合成fixtureの自己整合性テスト。B12H原作writerが当該Heal実行で到達したという主張ではなく、S+0xCのwriter実体・Hの型・動的Task登録先・効果/HPの観測はVERIFY。原作バグ認定0。
+  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
+
+- [research/recovered/tests_batch5/T020_T013_BACKLINK_NONUNIQUE_AUDIT_20261027_12H.md 行 15](../../research/recovered/tests_batch5/T020_T013_BACKLINK_NONUNIQUE_AUDIT_20261027_12H.md?plain=1#L15-L15) — [NEXT] B ownerが合法S+0xC writerを確定した後にHwin/Hscene/Hauxから識別し、同一runで登録/更新のmanagerと生成世代を照合。Eの優先はC-NB02合法G0→G1→G2 receipt確保。B READY後のみowner/hash/time/duplicate/競合確認し正
   制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
 
 <a id="field-10"></a>
@@ -54,6 +72,9 @@
 
 - [research/recovered/b_batch2/T028_RETREAT_OK_QUEUE_DRAIN_ELIGIBILITY_NATIVE_20261029_19H.md 行 11](../../research/recovered/b_batch2/T028_RETREAT_OK_QUEUE_DRAIN_ELIGIBILITY_NATIVE_20261029_19H.md?plain=1#L11-L11) — - 0x49D030原PEではDL=0時、参照S=[EBP+0x194], C=[S+0x0C]について [C+0x54]==0、[C+0x50]!=0、[[S+0x10]+0x38]!=0、[S+0x1EED54]!=0、[[C+0x50]+0x79]!=0 が揃ってAL=1の枝（0x49D030/33/39/43/
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+- [research/recovered/b_batch9/data/T013_MAP_INSERT_CLEANUP_STACK_OFFSET_NATIVE_20261025_07H.md 行 19](../../research/recovered/b_batch9/data/T013_MAP_INSERT_CLEANUP_STACK_OFFSET_NATIVE_20261025_07H.md?plain=1#L19-L19) — 0x49CE07 PUSH EAX / 0x49CE08 PUSH ESI によりCALL前ESP=S-8。0x49CE09 LEA EBX,[ESP+0x18] はS+0x10を指す。0x49CE0D CALL0x49F7D0のcallee RET8後ESP=Sに戻るため、出力結果は[ESP+0x10] iterat
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
 - [research/recovered/rea_batch11/reports/REA_20261017_1238_DIRECT_BRANCH_POINT_ORIGIN_CROSSWALK.md 行 7](../../research/recovered/rea_batch11/reports/REA_20261017_1238_DIRECT_BRANCH_POINT_ORIGIN_CROSSWALK.md?plain=1#L7-L7) — - [POINT B ORIGINAL WRITERS] 0x546A9A..A0はPEER=[EBP+0x1E570]の+0x40/+0x48/+0x4Cを使用し、0x546AA3/AA5/A7でX中点を算出。0x546AA9/AAAの2 PUSH後0x546AAB [ESP+0x18]=X、0x546AAF [ES
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
@@ -177,6 +198,9 @@
 
 <a id="field-1d0"></a>
 ## S + 0x1D0
+
+- [research/recovered/b_batch3/T011_SUMMON_CALLER_GROUP_PROVENANCE_NATIVE_20261027_15H.md 行 8](../../research/recovered/b_batch3/T011_SUMMON_CALLER_GROUP_PROVENANCE_NATIVE_20261027_15H.md?plain=1#L8-L8) — [GROUP SELECT] 0x54EF94 CMP EAX,2→0x54F02Aでselector==1なら0x54F02F source S+0x1D0をEDIへ。selector>=2では0x54EFA3→0x567EE0で新しいgroup様対象を生成する枝、または0x54F004..0x54F022でSの+0
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 - [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 772](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L772-L772) — [NEW] child構築後、selector==1なら0x54F02F S+0x1D0、>=2なら0x567EE0 group新規またはS管理list末尾groupで候補EDI選択。EDI非NULLで0x54F093/0x54F096→0x568710にchild/Groupを渡し、group+0x1D==0側0x5
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched

@@ -7,8 +7,20 @@
 <a id="field-4"></a>
 ## vslot + 0x4
 
+- [research/recovered/rea_batch10/reports/REA_20261023_1942_P0_PERSON_STATE4_WRITER_STATIC.md 行 27](../../research/recovered/rea_batch10/reports/REA_20261023_1942_P0_PERSON_STATE4_WRITER_STATIC.md?plain=1#L27-L27) — - 次P0: 0x44AE70/0x44B240/0x44BBB0/0x44CD70のEBX receiver originを原作ASMで追ってDemoPerson実体への到達を検証し、+0xA5/+0x18の定義とstate4→結果1/2への動的可到達性を分離する。続いてBattleWnd +0x28 vslot+0
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
 - [research/recovered/rea_batch8/reports/REA_20261026_02H_DS8_UNLOCK_CLEANUP_READBACK.md 行 16](../../research/recovered/rea_batch8/reports/REA_20261026_02H_DS8_UNLOCK_CLEANUP_READBACK.md?plain=1#L16-L16) — 再開：decoder vslot+0x04／Unlock二領域引数のABI、およびLock成否／Unlock成否／decoder戻値の独立Golden条件設計。
   制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+- [research/recovered/rea_batch8/reports/REA_20261026_02H_P0_DS8_UNLOCK_CLEANUP_STATIC.md 行 43](../../research/recovered/rea_batch8/reports/REA_20261026_02H_P0_DS8_UNLOCK_CLEANUP_STATIC.md?plain=1#L43-L43) — 次回P0：0x005023A0 decoder vslot+0x04の引数・戻り値型とバッファ書込サイズ。0x005023BF Unlock 4引数と二領域Lockの整合を確認。初期化0x00502220とshutdown 0x004BF2B0で同じ戻値をどう扱うか比較する。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+<a id="field-18"></a>
+## vslot + 0x18
+
+- [research/recovered/rea_batch10/reports/REA_20261023_1942_P0_PERSON_STATE4_WRITER_STATIC.md 行 9](../../research/recovered/rea_batch10/reports/REA_20261023_1942_P0_PERSON_STATE4_WRITER_STATIC.md?plain=1#L9-L9) — - 前回確定済みの0x005146E0=MOV EAX,[ECX+0x20];RET（DemoPerson等のvslot+0x18 state getter）および0x40E644/0x40E658・return1/2/500反復は既存成果であり二重加算しない。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
 
 <a id="field-1c"></a>
 ## vslot + 0x1C
@@ -28,19 +40,106 @@
 - [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0933_T014_EMPTY_SHEET_VSLOT20_AUDIT.md 行 36](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0933_T014_EMPTY_SHEET_VSLOT20_AUDIT.md?plain=1#L36-L36) — 0x004C26B8  mov eax,[edx+0x20]  ; vslot +0x20
   制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
 
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0933_T014_EMPTY_SHEET_VSLOT20_AUDIT.md 行 66](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0933_T014_EMPTY_SHEET_VSLOT20_AUDIT.md?plain=1#L66-L66) — 2. pendingに要素があれば`0x004C2661 CALL 0x00416080`、`0x004C2674 CALL 0x00415CF0`、`0x004C267D CALL 0x00415B90`、`0x004C2695 CALL 0x00416870`等の探索・削除・整理経路を通る。その後`0x004C26
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0933_T014_EMPTY_SHEET_VSLOT20_AUDIT.md 行 87](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0933_T014_EMPTY_SHEET_VSLOT20_AUDIT.md?plain=1#L87-L87) — `0x004B9DC0`自体にも`0x004B9DCB`に`[ECX+0x1EF148]`を判定する命令と`0x004B9DD1 JE 0x004B9E4B`がある。したがってvslot+0x20が実行されても、フラグ値によって書込を伴う更新は回避され得る。`+0x1EF148`の書込元は引き続きP0/VERIFYであ
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+<a id="field-2c"></a>
+## vslot + 0x2C
+
+- [research/recovered/rea_batch8/reports/REA_20261026_01H_P0_BUFFER_SHUTDOWN_STATIC.md 行 14](../../research/recovered/rea_batch8/reports/REA_20261026_01H_P0_BUFFER_SHUTDOWN_STATIC.md?plain=1#L14-L14) — - 0x00502354 buffer8 vslot+0x34呼出結果は未検査。0x00502387 vslot+0x2C呼出の後は0x00502389 TEST EAX / 0x0050238B JS 0x005023C9。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+<a id="field-34"></a>
+## vslot + 0x34
+
+- [research/recovered/rea_batch8/reports/REA_20261026_01H_P0_BUFFER_SHUTDOWN_STATIC.md 行 14](../../research/recovered/rea_batch8/reports/REA_20261026_01H_P0_BUFFER_SHUTDOWN_STATIC.md?plain=1#L14-L14) — - 0x00502354 buffer8 vslot+0x34呼出結果は未検査。0x00502387 vslot+0x2C呼出の後は0x00502389 TEST EAX / 0x0050238B JS 0x005023C9。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+<a id="field-38"></a>
+## vslot + 0x38
+
+- [research/recovered/b_batch3/B_T012_RENDER_ORDER_ROUTE_OFFLINE_20261022_1912.md 行 23](../../research/recovered/b_batch3/B_T012_RENDER_ORDER_ROUTE_OFFLINE_20261022_1912.md?plain=1#L23-L23) — **重要な解釈修正**: 18:13には `0x4C5910` のvslot+0x38/+0x3Cソート比較が確定していたが、**それをMissile通常登録経路の実ソートと直結させてはいけない**。同ソート関数が他経路からMissileに適用される可能性は残すが、この登録経路の直接到達はSTATIC上不可。vptr変
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_reports/B_T011_T012_MISSILE_VTABLE_SLOT38_OFFLINE_20261022_1813.sanitized.md 行 36](../../research/recovered/b_reports/B_T011_T012_MISSILE_VTABLE_SLOT38_OFFLINE_20261022_1813.sanitized.md?plain=1#L36-L36) — - vslot+0x38がこの2クラスなら、`0x0054D970`の返り値が**並べ替えの第一キー**、slot+0x3Cの`this+0x54`が**同値時第二キー**となる。+0x54は従来 `0x004BC920` 登録処理が設定する値でもある。ただし、**AIの最終対象選択/命中判定/ダメージ順序と同一のソー
+  制約・訂正　Privacy derivative: one personal research-root prefix replaced with <research-root> plus explicit recovery annotation; full technical content retained; reversible byte reconstruction matches source SHA; historical STATIC/INFERRED/VERIFY only; no linked payload read or Golden/READY promotion
+
+<a id="field-40"></a>
+## vslot + 0x40
+
+- [research/recovered/b_batch3/B_T012_RENDER_ORDER_ROUTE_OFFLINE_20261022_1912.md 行 49](../../research/recovered/b_batch3/B_T012_RENDER_ORDER_ROUTE_OFFLINE_20261022_1912.md?plain=1#L49-L49) — 両Missile系vslot+0x40は`0x00546A20`であり、`[this+0xB0]+0x28`を戻す（Skill候補への参照）。この値が0なら通常のバケット3ソートに入る静的条件を持つ。値の合法範囲、DATプロパティ名、他のbucket経路の描画順はVERIFY。
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch3/B_T012_RENDER_ORDER_ROUTE_OFFLINE_20261022_1912.md 行 53](../../research/recovered/b_batch3/B_T012_RENDER_ORDER_ROUTE_OFFLINE_20261022_1912.md?plain=1#L53-L53) — `Missile.sortKey`という抽象値だけを一個設け、全描画と戦闘の命中優先順に共通使用するのは不適切である。少なくとも（a）vslot+0x48に基づく描画投入経路の分岐、（b）vslot+0x40に3を加えたバケット分類、（c）バケット3の`(+0x04,+0x08)`符号付き辞書式整列、（d）`+0x48
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_reports/B_T011_T012_MISSILE_VTABLE_SLOT38_OFFLINE_20261022_1813.sanitized.md 行 34](../../research/recovered/b_reports/B_T011_T012_MISSILE_VTABLE_SLOT38_OFFLINE_20261022_1813.sanitized.md?plain=1#L34-L34) — - `0x004BC4F0` の `0x004BC67E/0x004BC693/0x004BC69F` でそれぞれ vslot `+0x40/+0x38/+0x3C` が呼ばれる。vslot+0x40の値に3を加えて3と比較（mod 2^32なので元が0の条件に等しい）し、通過するとslot+0x38の戻り値を、当該仮
+  制約・訂正　Privacy derivative: one personal research-root prefix replaced with <research-root> plus explicit recovery annotation; full technical content retained; reversible byte reconstruction matches source SHA; historical STATIC/INFERRED/VERIFY only; no linked payload read or Golden/READY promotion
+
 <a id="field-48"></a>
 ## vslot + 0x48
 
 - [research/recovered/b_batch3/B_T012_RENDER_ORDER_ROUTE_OFFLINE_20261022_1912.md 行 17](../../research/recovered/b_batch3/B_T012_RENDER_ORDER_ROUTE_OFFLINE_20261022_1912.md?plain=1#L17-L17) — ## 発見1：Missile系2種類の vslot+0x48 は常に0を返す
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+- [research/recovered/b_batch3/B_T012_RENDER_ORDER_ROUTE_OFFLINE_20261022_1912.md 行 53](../../research/recovered/b_batch3/B_T012_RENDER_ORDER_ROUTE_OFFLINE_20261022_1912.md?plain=1#L53-L53) — `Missile.sortKey`という抽象値だけを一個設け、全描画と戦闘の命中優先順に共通使用するのは不適切である。少なくとも（a）vslot+0x48に基づく描画投入経路の分岐、（b）vslot+0x40に3を加えたバケット分類、（c）バケット3の`(+0x04,+0x08)`符号付き辞書式整列、（d）`+0x48
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+<a id="field-58"></a>
+## vslot + 0x58
+
+- [research/recovered/b_batch9/data/T013_MODE1_PREPASS_CALLBACK_BREAK_DRAIN_NATIVE_20261029_18H.md 行 23](../../research/recovered/b_batch9/data/T013_MODE1_PREPASS_CALLBACK_BREAK_DRAIN_NATIVE_20261029_18H.md?plain=1#L23-L23) — - Golden必要条件：未改変原作EXE・x20改変前DAT、同一SAVE/MAP/入力/RNG、manager +0xA5/+0x18/+0x20、ESI派生元、queue begin/endと各vslot+0x58の前後、+0x1EEC3C=2/非2、break通知、group空/非空、下位vslot+0x68・
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+<a id="field-5c"></a>
+## vslot + 0x5C
+
+- [research/recovered/b_batch2/T013_GLOBAL65BD9E_QUOTA_QUARTER_WRITERS_NATIVE_20261101_01H.md 行 14](../../research/recovered/b_batch2/T013_GLOBAL65BD9E_QUOTA_QUARTER_WRITERS_NATIVE_20261101_01H.md?plain=1#L14-L14) — [NEXT P0] 同機能の0x402C40/0x42F860戻値の厳密比較意味、global0x65BD9Eの残り26直接xrefsと間接writer確認（拒否scope除外）、0x57D9A9 vslot+0x5C副作用、最終attack target consumer。T011 summon EXP/死亡、T01
+  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+- [research/recovered/b_batch9/data/T013_COORD_TRANSFORM_GATE_OUTPUT_ABI_NATIVE_20261101_00H.md 行 18](../../research/recovered/b_batch9/data/T013_COORD_TRANSFORM_GATE_OUTPUT_ABI_NATIVE_20261101_00H.md?plain=1#L18-L18) — [NEXT] 0x4C1690 global0x65BD9EとESI+0xE4の正当な状態設定元、0x4C1860の変換点実消費、0x57D9A9のvslot+0x5CとUnit+0x186C8/CCの後続consumer。T011召喚EXP、T012 damage/status、T024通常AI、T028士気/敗走の
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+<a id="field-64"></a>
+## vslot + 0x64
+
+- [research/recovered/b_batch11/data/T028_LINKED_INNER_POINT_COLLAPSE_OUTER_CENTER_NATIVE_20261029_07H.md 行 26](../../research/recovered/b_batch11/data/T028_LINKED_INNER_POINT_COLLAPSE_OUTER_CENTER_NATIVE_20261029_07H.md?plain=1#L26-L26) — 無改変同梱EXE・x20改変前の原DATを実バイト確認したうえで同一SAVE/MAP/input/RNG/同runを用意し、AL0/1×Lのvslot+0x64偽/真、I四座標・L外側四座標・N四座標の前後を分離して記録。表示/登録/士気・敗走と次tickも観測。DESIGNED_NOT_RUN。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch2/T028_EFFECT_ALFLAG_CALLSITE_SENTINEL_MATRIX_NATIVE_20261029_08H.md 行 26](../../research/recovered/b_batch2/T028_EFFECT_ALFLAG_CALLSITE_SENTINEL_MATRIX_NATIVE_20261029_08H.md?plain=1#L26-L26) — - 0x4A8ECE PUSH 0 / 0x4A8ED2 CALL wrapper は常にAL0。以上の3siteとも0x431BE7 vslot+0x64で真を返す条件が必要。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+- [research/recovered/b_batch2/T028_EFFECT_ALFLAG_CALLSITE_SENTINEL_MATRIX_NATIVE_20261029_08H.md 行 35](../../research/recovered/b_batch2/T028_EFFECT_ALFLAG_CALLSITE_SENTINEL_MATRIX_NATIVE_20261029_08H.md?plain=1#L35-L35) — - 次の合法検索先: 0x4A3AEB/0x4A3BA7のEBX・stack source、0x5AA6F8 L vslot+0x64の型、N+0x6C writer、0x48C8BE manager連結、T013最終target/T024 AI/T028士気・敗走本体。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+<a id="field-68"></a>
+## vslot + 0x68
+
+- [research/recovered/b_batch9/data/T013_MODE1_PREPASS_CALLBACK_BREAK_DRAIN_NATIVE_20261029_18H.md 行 16](../../research/recovered/b_batch9/data/T013_MODE1_PREPASS_CALLBACK_BREAK_DRAIN_NATIVE_20261029_18H.md?plain=1#L16-L16) — - 0x44CFA5..0x44CFABの既知`[EBX+0x48]==[EBX+0x4C]` group走査skipはこのprepassの後。したがってmode1 vslot+0x68候補実行が0件でも、manager前提条件次第で別queue callback / break送出 / drainは先行し得る（CON
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/b_batch9/data/T013_MODE1_PREPASS_CALLBACK_BREAK_DRAIN_NATIVE_20261029_18H.md 行 23](../../research/recovered/b_batch9/data/T013_MODE1_PREPASS_CALLBACK_BREAK_DRAIN_NATIVE_20261029_18H.md?plain=1#L23-L23) — - Golden必要条件：未改変原作EXE・x20改変前DAT、同一SAVE/MAP/入力/RNG、manager +0xA5/+0x18/+0x20、ESI派生元、queue begin/endと各vslot+0x58の前後、+0x1EEC3C=2/非2、break通知、group空/非空、下位vslot+0x68・
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 <a id="field-70"></a>
 ## vslot + 0x70
+
+- [research/recovered/b_batch4/data/B_T012_DAMAGE_X87_AH44_GATE_OFFLINE_20261024_13H.md 行 26](../../research/recovered/b_batch4/data/B_T012_DAMAGE_X87_AH44_GATE_OFFLINE_20261024_13H.md?plain=1#L26-L26) — 後続の条件も同じ保存hexで確認した。`0x005510E5 CMP EDX,0x0A`一致なら`0x5510EC JMP 0x551156`でvslot+0x70 CALL `0x551154`を飛ばす（これは以前からの抵抗10既存成果）。一致しなければ、上記x87ゲートでゼロ時はECX=0を設定し、`0x55114
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+- [research/recovered/b_reports/B_T012_T028_STATIC_RETPOINTER_BRANCH_ABI_OFFLINE_20261024_1209.md 行 60](../../research/recovered/b_reports/B_T012_T028_STATIC_RETPOINTER_BRANCH_ABI_OFFLINE_20261024_1209.md?plain=1#L60-L60) — ## 追加照合：既知3箇所のvslot+0x70 callerによる返却ALの消費
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail; historical refused-query incident is author disclosure only; report excludes that query output; no refused payload read
 
 - [research/recovered/b_reports/B_T012_T028_STATIC_RETURN_DEATHBRANCH_OFFLINE_20261024_1111.md 行 14](../../research/recovered/b_reports/B_T012_T028_STATIC_RETURN_DEATHBRANCH_OFFLINE_20261024_1111.md?plain=1#L14-L14) — ### 1. StaticUnit（vslot+0x70: `0x0055ABA0`）の死亡時「文字列長」分岐
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
 - [research/recovered/b_reports/B_T012_T028_STATIC_RETURN_DEATHBRANCH_OFFLINE_20261024_1111.md 行 24](../../research/recovered/b_reports/B_T012_T028_STATIC_RETURN_DEATHBRANCH_OFFLINE_20261024_1111.md?plain=1#L24-L24) — ### 2. SimpleStaticUnit（vslot+0x70: `0x0055B060`）との差
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
+
+- [research/recovered/b_reports/B_T012_T028_STATIC_RETURN_DEATHBRANCH_OFFLINE_20261024_1111.md 行 50](../../research/recovered/b_reports/B_T012_T028_STATIC_RETURN_DEATHBRANCH_OFFLINE_20261024_1111.md?plain=1#L50-L50) — 次回: `0x0055ABA0`/`0x0055B060`のvslot+0x70間接CALLから`AL`を実際に読む呼出元の有無、`0x0055AC2D`の文字列を作るロード/コピー元、`0x00578370`のdynamic receiver型、以前の拒否案件から独立した安全な読取だけ継続。
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

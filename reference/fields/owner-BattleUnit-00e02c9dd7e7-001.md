@@ -4,13 +4,61 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-7c"></a>
+## BattleUnit + 0x7C
+
+- [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md 行 27](../../research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md?plain=1#L27-L27) — - 0x547A68はEAX=親BattleUnit+0x7C（経験値context）、0x547A6Bはcontext.actor=親EBP、0x547A6Dはcontext.skill=EBXを設定する。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
+
 <a id="field-1c8"></a>
 ## BattleUnit + 0x1C8
+
+- [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md 行 123](../../research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md?plain=1#L123-L123) — - 明示的なBattleUnit+0x1C8書替候補の追加走査も行ったが、28命令にはUnitData内部の数値・UI窓・スライダー状態・技能構造などが混在。0x567210/567840はUI状態なので転送writerとして数えない。この補助探索は未分類残あり、完全なpointer不変証明には用いない。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
+
+- [research/recovered/exp/EXP_SAVE_TREE_POINTER_VS_INLINE_20261021.md 行 20](../../research/recovered/exp/EXP_SAVE_TREE_POINTER_VS_INLINE_20261021.md?plain=1#L20-L20) — 4. RはBattleUnit+0x1C8に参照され、通常のEXP helperはR+0x16Cへ加算（既REA P0確認）。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md
+
+- [research/recovered/exp/EXP_SIMPLEBATTLE_LIFECYCLE_20261022.md 行 41](../../research/recovered/exp/EXP_SIMPLEBATTLE_LIFECYCLE_20261022.md?plain=1#L41-L41) — - constructorは0x5442C3で当該stack引数をEBPへ取得し、0x54436EでBattleUnit+0x1C8へ保存。この参加兵経路はUnitDataの新規コピーではなく、取得した同じ参照を渡している。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md
+
+- [research/recovered/exp/EXP_SIMPLEBATTLE_LIFECYCLE_20261022.md 行 49](../../research/recovered/exp/EXP_SIMPLEBATTLE_LIFECYCLE_20261022.md?plain=1#L49-L49) — - 0x40F000はBattleWnd+0x1C8/+0x1CCの2陣営へvirtual+0x10を実行する。これらはUnitDataではなく陣営ポインタ。BattleUnit+0x1C8と同一視しない。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md
+
+- [research/recovered/exp/EXP_SUMMON_OWNER_RESEARCH.md 行 8](../../research/recovered/exp/EXP_SUMMON_OWNER_RESEARCH.md?plain=1#L8-L8) — 既知STATIC: ヒット経験値 writer 0x551E50 は攻撃BattleUnit+0x1C8を用い、紐づくUnit+0x16Cへ加算。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; early unresolved cache/lifetime questions refined by CACHE_STRING_KEY, ENDTRANSFER, LIFECYCLE; wiki refusal is metadata only, held draft not copied
 
 - [research/recovered/exp/EXP_SUMMON_OWNER_RESEARCH.md 行 9](../../research/recovered/exp/EXP_SUMMON_OWNER_RESEARCH.md?plain=1#L9-L9) — 既知STATIC: 0x56F880 が BattleUnit+0x1C8、+0x1CC、+0x1D0 を異なる参照として設定。
   制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; early unresolved cache/lifetime questions refined by CACHE_STRING_KEY, ENDTRANSFER, LIFECYCLE; wiki refusal is metadata only, held draft not copied
 
 - [research/recovered/exp/EXP_SUMMON_OWNER_RESEARCH.md 行 26](../../research/recovered/exp/EXP_SUMMON_OWNER_RESEARCH.md?plain=1#L26-L26) — [STATIC-ASM] 0x56FEAF BattleUnit+0x1C8=第三引数Unit（攻撃時の経験値加算先）。0x56FEBB +0x1D0=第六引数group。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; early unresolved cache/lifetime questions refined by CACHE_STRING_KEY, ENDTRANSFER, LIFECYCLE; wiki refusal is metadata only, held draft not copied
+
+- [research/recovered/exp/EXP_SUMMON_OWNER_RESEARCH.md 行 29](../../research/recovered/exp/EXP_SUMMON_OWNER_RESEARCH.md?plain=1#L29-L29) — [STATIC-PSEUDOC] 0x551E50はBattleUnit+0x1C8のUnit+0x16CへEXPを加算。+0x1CC経由の加算はこの関数にない。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; early unresolved cache/lifetime questions refined by CACHE_STRING_KEY, ENDTRANSFER, LIFECYCLE; wiki refusal is metadata only, held draft not copied
+
+- [research/recovered/exp/EXP_THREE_PRODUCER_CROSSJOIN_20261021.md 行 16](../../research/recovered/exp/EXP_THREE_PRODUCER_CROSSJOIN_20261021.md?plain=1#L16-L16) — - [BOUNDARY] 一時RへのEXP加算 `0x551E50`、node+0x28、BattleUnit+0x1C8の連結はP0既知。新しいEXP親転送の証明ではない。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md
+
+- [research/recovered/outside_reports1/reports/exp_research_20261021/EXP_WIKI_DRAFT_PC_20261021.md 行 45](../../research/recovered/outside_reports1/reports/exp_research_20261021/EXP_WIKI_DRAFT_PC_20261021.md?plain=1#L45-L45) — (2)召喚個体が攻撃する時: 召喚個体のBattleUnit+0x1C8が指すUnitに経験値を加算する。直接召喚者を参照するわけではない。
+  制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
+
+<a id="field-1d0"></a>
+## BattleUnit + 0x1D0
+
+- [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md 行 14](../../research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md?plain=1#L14-L14) — - parent BattleUnit+0x1D0がNULLならmodeを0へ戻す（0x54ED55..0x54ED5E）。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
+
+<a id="field-185fc"></a>
+## BattleUnit + 0x185FC
+
+- [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md 行 30](../../research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md?plain=1#L30-L30) — - targetは親自身なので、補正前の基礎値は親BattleUnit+0x185FC×1%。その後exp_per・rush等の既存補正と獲得gateが適用される。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
+
+<a id="field-1e4b8"></a>
+## BattleUnit + 0x1E4B8
+
+- [research/recovered/exp/EXP_SUMMON_OWNER_RESEARCH.md 行 20](../../research/recovered/exp/EXP_SUMMON_OWNER_RESEARCH.md?plain=1#L20-L20) — [STATIC-PSEUDOC] 0x577260はBattleUnit+0x1E4B8をsentinelとする検索結果を返す（命中はmap node+0x28、失敗0）。
   制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; early unresolved cache/lifetime questions refined by CACHE_STRING_KEY, ENDTRANSFER, LIFECYCLE; wiki refusal is metadata only, held draft not copied
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

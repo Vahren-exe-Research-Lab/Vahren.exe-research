@@ -10,11 +10,26 @@
 - [research/recovered/random_events/T032_RANDOM_EVENT_EFFECTS.md 行 101](../../research/recovered/random_events/T032_RANDOM_EVENT_EFFECTS.md?plain=1#L101-L101) — - randomev6の bare numeric var `cpo` はnormalized迫真script全体でこの1箇所しか参照されず、setterは0件。target numeric-var getter VA 0x463CA0 はmissing keyを新規record化し value field +0x1C
   制約・訂正　Historical CONFIRMED-SCRIPT/TARGET and conditional READY claims only; no new native/runtime/Golden validation; linked scripts/probes/assets not followed; original source prehistory refusal notices preserved; no omitted old section reconstructed
 
+- [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 424](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L424-L424) — ## 2026-10-14 02:11 JST｜A-20261014-0211-03｜T031/T014｜時計+offsetのrecord field+0x1C初期化経路（保存静的X86）
+  制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
+
 <a id="field-20"></a>
 ## field + 0x20
 
 - [research/recovered/b_batch5/data/T011_T012_MISSILE_SPECIAL_MP_UNIT_FIXTURE_20261013.md 行 21](../../research/recovered/b_batch5/data/T011_T012_MISSILE_SPECIAL_MP_UNIT_FIXTURE_20261013.md?plain=1#L21-L21) — [CROSS-LANE-NOTE-20261013-1906 / VERIFY ONLY / SAME B-20261013-1856-02] A owner read-only `data/T005_FORMAL_GRAMMAR.md` generic parser `0x505210` treats literal
   制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
+- [research/recovered/b_batch8/data/T012_T011_ZNM_BOOM_NEXT_INTERVAL_NEXTLAST_BRANCH_20261017.md 行 7](../../research/recovered/b_batch8/data/T012_T011_ZNM_BOOM_NEXT_INTERVAL_NEXTLAST_BRANCH_20261017.md?plain=1#L7-L7) — [SAVED VA/XREF] 既存B-owned data/T011_NEXT_ORDER_INTERVAL_NATIVE_20261013.md：保存済0x59C3EB raw next_interval property lookup→0x59C410 CALL0x4647D0→0x59C418 MOV [com
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 778](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L778-L778) — [VERIFY / IMPLEMENTATION] 0x416B90の通常EBX callee-save前提を検証要、field+0x20意味/0x453C20可視作用と合法UI到達は未知。Choiceに共通helperの無条件呼出を挿入せず、source snapshotと分岐を保持。set/add op5/6やfr
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+- [research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md 行 473](../../research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md?plain=1#L473-L473) — [OPEN CONTRADICTION / DO NOT INFER] 宣言なしrsc2..rsc5、旧SAVEのscenario文字列復元可能性、generic lookupの欠落許容はそれぞれ別契約。後続のfield+0x20値、Power+0xDC、他のvalidation、World/Spot/Unit復帰、選
+  制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
+
+- [research/recovered/rea_batch10/reports/REA_20261023_1833_P0_DEMOPERSON_VSLOT18_STATE4_STATIC.md 行 24](../../research/recovered/rea_batch10/reports/REA_20261023_1833_P0_DEMOPERSON_VSLOT18_STATE4_STATIC.md?plain=1#L24-L24) — - value4は現時点で **オブジェクトの+0x20に格納される状態コード** という意味まで確定。ゲーム上の『勝利/敗北/戦闘可能』等の名前は未確定。以前の『return4の意味不明』を『field+0x20が4』まで限定解決し、意味論はVERIFY。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
 
 <a id="field-28"></a>
 ## field + 0x28
@@ -22,16 +37,55 @@
 - [research/recovered/tests_batch5/T020_E_T013_RNG_CONTEXT_TRANSFER_ACCEPTANCE_20261031_18H.md 行 15](../../research/recovered/tests_batch5/T020_E_T013_RNG_CONTEXT_TRANSFER_ACCEPTANCE_20261031_18H.md?plain=1#L15-L15) — - **KB_CANDIDATE:** E-AUDIT-20261031-18H-T020-T013-RNG-CONTEXT-NEGATIVE-INFERENCE-01; owner E/T020; B antecedent as above; VA/CALL 0x5A3E78,0x577DC4/0x577DC8,0x
   制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
 
+<a id="field-38"></a>
+## field + 0x38
+
+- [research/recovered/rea_batch10/reports/REA_20261022_0137_T014_STRINGBUF_VTABLE_SLOT_GAP_STATIC.md 行 10](../../research/recovered/rea_batch10/reports/REA_20261022_0137_T014_STRINGBUF_VTABLE_SLOT_GAP_STATIC.md?plain=1#L10-L10) — - 0x470980 (code SHA256 850A2D2AFD2929E4228F1232AACC50394ECCE9C289CFA3D7834824FA96D8A446) はadjusted stream field +0x38からbufferを引き、buffer vptr経由でCALL。上記construct
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_batch10/reports/REA_20261022_0234_T014_GLOBAL_SAV_CTOR_TOKEN_CROSSCALL_STATIC.md 行 15](../../research/recovered/rea_batch10/reports/REA_20261022_0234_T014_GLOBAL_SAV_CTOR_TOKEN_CROSSCALL_STATIC.md?plain=1#L15-L15) — - 0x4705F0 CALL site 0x470611→0x470980（token読込→1byte読込）。0x470980疑似Cはstreamのadjusted field+0x38経由でbuffer pointerを取得し、vptr経由の+0x04/+0x18/+0x1Cを使う。cleanup 0x470AAC
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
 <a id="field-70"></a>
 ## field + 0x70
 
 - [research/recovered/b_batch7/data/T012_REFRESH_TREE_RANGE_4E1FA0_CONTRACT_20261013.md 行 10](../../research/recovered/b_batch7/data/T012_REFRESH_TREE_RANGE_4E1FA0_CONTRACT_20261013.md?plain=1#L10-L10) — [VERIFY/NEXT] exact tree field+0x70/+0x74 sentinel and lower/upper pair semantics、key producer、510850 pair removal/erase and 49ED30 initial presence cursor、valu
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
+<a id="field-84"></a>
+## field + 0x84
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md 行 954](../../research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md?plain=1#L954-L954) — - [SP50/ISAMA SPECIAL] save1はsp50 Spot.memberが0 Unitにもかかわらず、名簿外Unit isamaの別保存field+0x84はsp50を指す。save2ではsp50 Spot.memberが83 Unitとなりisamaが含まれ、isama Unit+0x84別参照は保
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+<a id="field-1c8"></a>
+## field + 0x1C8
+
+- [research/recovered/b_batch2/T028_DEAD_EVENT_CONTEXT_MAP_RANGE_REPLACE_NATIVE_20261024_07H.md 行 11](../../research/recovered/b_batch2/T028_DEAD_EVENT_CONTEXT_MAP_RANGE_REPLACE_NATIVE_20261024_07H.md?plain=1#L11-L11) — [CALL ORDER] 以上2経路の局所静的制御フローはdead_event_a更新→dead_event_d更新→0x4321B0。a/dのゲーム内での攻撃者/被害者identityや登録タイミングは未確定で、field+0x1C8を勝手に『名前』と固定しない。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+<a id="field-1d0"></a>
+## field + 0x1D0
+
+- [research/recovered/rea_batch14/reports/WAVE3_FINDINGS_20261010.md 行 29](../../research/recovered/rea_batch14/reports/WAVE3_FINDINGS_20261010.md?plain=1#L29-L29) — - **T012/T013 `0x4E7ED0`:** 返値0/1の判定helperには `param_1+0x3C` による2つのアルゴリズム分岐がある。一方は `param_2` の座標+0x214/+0x218を中心とする空間グリッドを走査し、候補のenable byte+0x65、除外状態+0x1AE、powe
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
 <a id="field-278"></a>
 ## field + 0x278
 
 - [research/recovered/b_batch5/data/T011_T012_MISSILE_SPECIAL_MP_UNIT_FIXTURE_20261013.md 行 9](../../research/recovered/b_batch5/data/T011_T012_MISSILE_SPECIAL_MP_UNIT_FIXTURE_20261013.md?plain=1#L9-L9) — [REIMPLEMENT] Source Skill graph `new_misairu:sk_ms`, child`new_misairu_mz:new_misairu`, child`sp_new_misairu:new_misairu` and Unit raw skill2/leader_skill/lear
   制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
+<a id="field-2b8"></a>
+## field + 0x2B8
+
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 696](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L696-L696) — ## B-20261019-0520-01｜T011保存済Skill候補field+0x2B8 writerと+0x2B9複合gate（T012/T013参照）
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+<a id="field-1eec71"></a>
+## field + 0x1EEC71
+
+- [research/recovered/e_batch3/T020_FASTSIM_NONZERO_RETURN_TAIL_CROSSWALK_20261023_2052.md 行 11](../../research/recovered/e_batch3/T020_FASTSIM_NONZERO_RETURN_TAIL_CROSSWALK_20261023_2052.md?plain=1#L11-L11) — 0x0048EEE0のpseudoCは global field +0x1EEC71更新と複数callを含むため、可視World/G4への副作用は未同定。後段存在だけで戦闘結果commit完了は宣言できない。
+  制約・訂正　Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

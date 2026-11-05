@@ -67,6 +67,9 @@
 - [research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md 行 206](../../research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md?plain=1#L206-L206) — 食い違いではなかったもの: T014 の「world-base+0x504」と structs の「GameManager+0x504＝スクリプトエンジン E」は同じ物。世界地図グラフは E の中の木（E+0x1EEBCC/+0x1EEBD0）。
   制約・訂正　Existing full body linked; catalog revision differs
 
+- [research/recovered/rea_batch13/reports/REA_T014_PREOPEN_SERIALIZER_SCOPE_AUDIT_20261011_0936.md 行 12](../../research/recovered/rea_batch13/reports/REA_T014_PREOPEN_SERIALIZER_SCOPE_AUDIT_20261011_0936.md?plain=1#L12-L12) — A所有data/T014_GLOBAL_SAVE.mdの「normal save tail」節では0x471D20をDiplomacy runtime状態writer、0x435C10をworld-base+0x504のSpotElm/SpotPath/SpotEscapePath graph serializerと同
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 11](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L11-L11) — - world-base+0x504 は FINDINGS §82 の E（スクリプトエンジン、G+0x504）と同じ。世界地図グラフはその中の木（E+0x1EEBCC/+0x1EEBD0）。
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
 
@@ -74,6 +77,9 @@
 ## base + 0x1E7E3
 
 - [research/recovered/handoff_scope1/reports/dev_lab/docs/archive/WORK_REQUEST_QUEUE_ARCHIVE_20261029.md 行 2932](../../research/recovered/handoff_scope1/reports/dev_lab/docs/archive/WORK_REQUEST_QUEUE_ARCHIVE_20261029.md?plain=1#L2932-L2932) — - Work / P0 / PARTIAL。停止VA=base+0x1E7E3 length5（既存generation CALL）。新規selector_plugin_adapterと専用build/fixture/docをcore内に追加。既存bridge/helperは変更せず、preview/stats/loc
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+- [research/recovered/handoff_scope1/reports/dev_lab/docs/archive/WORK_REQUEST_QUEUE_ARCHIVE_20261029.md 行 2964](../../research/recovered/handoff_scope1/reports/dev_lab/docs/archive/WORK_REQUEST_QUEUE_ARCHIVE_20261029.md?plain=1#L2964-L2964) — - 未完: 起動時helper連携、prewarm/低遅延更新検知、元一覧描画の抑止と復帰、詳細hoverの入力経路、確定/取消/強制選択の実機検証。停止VA未選定、既存generation base+0x1E7E3とnative detail成果から照合。
   制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
 - [research/recovered/plugin_reports1/reports/recruit_sort_v4/core/SELECTOR_PLUGIN.md 行 5](../../research/recovered/plugin_reports1/reports/recruit_sort_v4/core/SELECTOR_PLUGIN.md?plain=1#L5-L5) — Core reserves host base + 0x1E7E3, length 5, before scheduling installation. The bridge independently checks its exact executable SHA-256 and expected `E8 28 01

@@ -4,8 +4,17 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-4"></a>
+## decoder + 0x4
+
+- [research/recovered/rea_batch8/reports/REA_20261026_04H_P0_OGG_WORKER_PINGPONG_STATIC.md 行 11](../../research/recovered/rea_batch8/reports/REA_20261026_04H_P0_OGG_WORKER_PINGPONG_STATIC.md?plain=1#L11-L11) — - vtable+0x10を0x00502445（再生カーソル取得）、+0x2Cを0x00502479/0x0050250D（Lock）、decoder+0x04を0x0050249E/0x0050252E（Ogg設定なら0x00501F10）、+0x4Cを0x005024BD/0x0050254D（Unlock）で呼
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
 <a id="field-58"></a>
 ## decoder + 0x58
+
+- [research/recovered/rea_batch5/reports/REA_20261029_02H_P0_OGG_STATE_CLOSE_STATIC.md 行 10](../../research/recovered/rea_batch5/reports/REA_20261029_02H_P0_OGG_STATE_CLOSE_STATIC.md?plain=1#L10-L10) — - 非負値経路では初期配列を確保・初期化した後、`0x005D1609 MOV [ESI+0x58],1`。正常returnは`0x005D161D MOV EAX,EDI`。よって**return=0なら通常命令列ではdecoder+0x58が1にセット済み**。
+  制約・訂正　Historical author STATIC/VERIFY claims and audit counts only; current REF_AUDIO_VORBIS precedence; no new native/runtime/ABI/READY validation; linked evidence excluded
 
 - [research/recovered/rea_batch5/reports/REA_20261029_04H_P0_OGG_SEEKFAIL_REWIND_STATIC.md 行 18](../../research/recovered/rea_batch5/reports/REA_20261029_04H_P0_OGG_SEEKFAIL_REWIND_STATIC.md?plain=1#L18-L18) — - `0x005D04E0` は `0x005D0888`/`0x005D08E7`/`0x005D09DB`で同helperを呼ぶ。特に `0x005D08E7`直後、`0x005D08F3 MOV [EBP-0x10],EAX`、非0で `0x005D0B18` cleanupに進み、`0x005D0B39 MOV
   制約・訂正　Historical author STATIC/VERIFY claims and audit counts only; current REF_AUDIO_VORBIS precedence; no new native/runtime/ABI/READY validation; linked evidence excluded

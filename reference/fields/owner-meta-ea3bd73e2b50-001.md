@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-18"></a>
+## meta + 0x18
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 432](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L432-L432) — [EVIDENCE] `exe/T031_STRINGOP_HANDLERS.txt` 0x4B044F..0x4B04BD、`exe/T031_RNG_CORE_PROBE.txt` 0x479740..53、`exe/T031_SHUFFLE_CORE.txt` 0x479A62..0x479B27、`exe/T0
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
 <a id="field-16c"></a>
 ## meta + 0x16C
 

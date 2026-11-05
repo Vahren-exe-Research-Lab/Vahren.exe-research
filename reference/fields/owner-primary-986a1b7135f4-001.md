@@ -7,6 +7,9 @@
 <a id="field-84"></a>
 ## primary + 0x84
 
+- [research/recovered/e_batch3/T020_FASTSIM_PRESELECTOR_BRANCH_GATE_20261023_1952.md 行 9](../../research/recovered/e_batch3/T020_FASTSIM_PRESELECTOR_BRANCH_GATE_20261023_1952.md?plain=1#L9-L9) — 両mode一致でもsecondary+0x19Cのbyteが0なら何も実行せずreturn（擬似C分岐）。return0の描画制御byte primary+0x84とは別フィールド。
+  制約・訂正　Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
+
 - [research/recovered/e_batch4/T020_FASTSIM_RETURN0_PRIMARY_VTABLE_DRAW_GATE_20261023_1850.md 行 16](../../research/recovered/e_batch4/T020_FASTSIM_RETURN0_PRIMARY_VTABLE_DRAW_GATE_20261023_1850.md?plain=1#L16-L16) — 条件付き結論: return0からのarg2=1、受信者primary vptr=0x638074が不変なら、[primary+0xA4]==0x80000008 かつ [primary+0x84]!=0 の場合のみ描画body進入が許可される。
   制約・訂正　Historical authored claims only; referenced payloads not opened or executed; actual INELIGIBLE/NOT RUN and historical counts preserved; no new native/runtime/Golden/strict MATCH/READY; excluded composites remain deferred outside this subset
 
@@ -18,6 +21,18 @@
 
 - [research/recovered/e_batch4/T020_FASTSIM_RETURN0_PRIMARY_VTABLE_DRAW_GATE_20261023_1850.md 行 24](../../research/recovered/e_batch4/T020_FASTSIM_RETURN0_PRIMARY_VTABLE_DRAW_GATE_20261023_1850.md?plain=1#L24-L24) — 次: 実原作同一battle-windowでvptr・primary+0xA4/+0x84・描画到達とG3/G4を別receipt採取する。正式MASTER統合はowner/source hash/READY/重複競合を確認後のみ。
   制約・訂正　Historical authored claims only; referenced payloads not opened or executed; actual INELIGIBLE/NOT RUN and historical counts preserved; no new native/runtime/Golden/strict MATCH/READY; excluded composites remain deferred outside this subset
+
+- [research/recovered/e_batch4/T020_FASTSIM_RETURN0_PRIMARY_VTABLE_DRAW_GATE_20261023_1850.md 行 33](../../research/recovered/e_batch4/T020_FASTSIM_RETURN0_PRIMARY_VTABLE_DRAW_GATE_20261023_1850.md?plain=1#L33-L33) — 0x40E220 native 0x40E22CでEAX=0x80000008、0x40E231は[secondary+0x78]、0x40E23Aは[secondary+0x7C]と比較してから進む。後者はBattleWnd primary+0xA4に相当する。
+  制約・訂正　Historical authored claims only; referenced payloads not opened or executed; actual INELIGIBLE/NOT RUN and historical counts preserved; no new native/runtime/Golden/strict MATCH/READY; excluded composites remain deferred outside this subset
+
+- [research/recovered/e_batch4/T020_FASTSIM_RETURN0_PRIMARY_VTABLE_DRAW_GATE_20261023_1850.md 行 34](../../research/recovered/e_batch4/T020_FASTSIM_RETURN0_PRIMARY_VTABLE_DRAW_GATE_20261023_1850.md?plain=1#L34-L34) — しかし0x40E27Fの0x40E2F0呼出後、return0で0x40E28E→0x40D220へ進み、0x452D90がprimary+0xA4を再参照する。この間にmode値・vptr/flagが変化しない証拠は無い。
+  制約・訂正　Historical authored claims only; referenced payloads not opened or executed; actual INELIGIBLE/NOT RUN and historical counts preserved; no new native/runtime/Golden/strict MATCH/READY; excluded composites remain deferred outside this subset
+
+<a id="field-1c4"></a>
+## primary + 0x1C4
+
+- [research/recovered/rea_batch10/reports/REA_20261023_17H_P0_BATTLEWND_SECONDARY_VTABLE_FASTSIM_STATIC.md 行 19](../../research/recovered/rea_batch10/reports/REA_20261023_17H_P0_BATTLEWND_SECONDARY_VTABLE_FASTSIM_STATIC.md?plain=1#L19-L19) — - 0x40E220側の [ECX+0x78] / [ECX+0x7C] はprimaryからなら +0xA0/+0xA4、[ECX+0x19C]はprimary+0x1C4。オフセットの基準を混同しない。
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
 
 <a id="field-1c8"></a>
 ## primary + 0x1C8

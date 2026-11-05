@@ -7,6 +7,9 @@
 <a id="field-0"></a>
 ## stream + 0x0
 
+- [research/recovered/rea_batch8/reports/REA_20261026_02H_P0_DS8_UNLOCK_CLEANUP_STATIC.md 行 21](../../research/recovered/rea_batch8/reports/REA_20261026_02H_P0_DS8_UNLOCK_CLEANUP_STATIC.md?plain=1#L21-L21) — - 正常復帰時0x005021C2でstream+0x08=0、0x005021C5でstream+0x00=0、0x005021C7でstream+0x44=0とする。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
 - [research/recovered/rea_batch8/reports/REA_20261026_03H_P0_DECODER_FILL_STATIC.md 行 9](../../research/recovered/rea_batch8/reports/REA_20261026_03H_P0_DECODER_FILL_STATIC.md?plain=1#L9-L9) — - 原作機械語 0x00502391～0x005023A0：ECX=[stream+0x00]（Decoder this）、EDX=decoder.vptr[+0x04]、CALL EDX。
   制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
 
@@ -18,6 +21,18 @@
 
 - [research/recovered/rea_batch4/reports/REA_20261030_03H_P0_DSBUFFER_ALIAS_CURSOR_IID_STATIC.md 行 11](../../research/recovered/rea_batch4/reports/REA_20261030_03H_P0_DSBUFFER_ALIAS_CURSOR_IID_STATIC.md?plain=1#L11-L11) — 初期化側 `0x005022E7 MOV EAX,ESI` → `0x005022E9 CALL 0x00502330`、被呼出側 `0x00502334 MOV ESI,EAX`。その同一オブジェクトの `+0x08` を、SetCurrentPosition(+0x34, site `0x00502354`)、Lo
   制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [research/recovered/rea_batch8/reports/REA_20261026_02H_P0_DS8_UNLOCK_CLEANUP_STATIC.md 行 21](../../research/recovered/rea_batch8/reports/REA_20261026_02H_P0_DS8_UNLOCK_CLEANUP_STATIC.md?plain=1#L21-L21) — - 正常復帰時0x005021C2でstream+0x08=0、0x005021C5でstream+0x00=0、0x005021C7でstream+0x44=0とする。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+<a id="field-10"></a>
+## stream + 0x10
+
+- [research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md 行 20](../../research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md?plain=1#L20-L20) — - fade-out初期化0x004BF570：0x004BF5D9以降の経路は0x004BF5E5で現振幅を-15.0で割り、stream+0x20へ保存。stream+0x10には静音側の音量目標を保持する。
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
+- [research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md 行 21](../../research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md?plain=1#L21-L21) — - 0x004BF410は毎回stream+0x18 += stream+0x20を実行し、増加時は目標stream+0x10のdBに到達すると停止、減少時は振幅0.2で切る。15は更新回数計算用doubleであり15ミリ秒・15描画フレームと断定しない。
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
 
 <a id="field-14"></a>
 ## stream + 0x14
@@ -31,6 +46,21 @@
 - [research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md 行 12](../../research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md?plain=1#L12-L12) — - 原作静的double 0x0062FFA0 = 0.2（実バイト 9a9999999999c93f）。0x004BF485 FLD [0x62FFA0] と0x004BF48B FCOMP ST(1)がfade-out中の現在値 stream+0x18 と比較し、0x004BF492のJPでstream+0x18
   制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
 
+- [research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md 行 21](../../research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md?plain=1#L21-L21) — - 0x004BF410は毎回stream+0x18 += stream+0x20を実行し、増加時は目標stream+0x10のdBに到達すると停止、減少時は振幅0.2で切る。15は更新回数計算用doubleであり15ミリ秒・15描画フレームと断定しない。
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
+<a id="field-20"></a>
+## stream + 0x20
+
+- [research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md 行 13](../../research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md?plain=1#L13-L13) — - 終了経路は0x004BF4B5の音量反映、0x004BF4BEのvolume→amplitude逆変換、0x004BF4CBでstream+0x20=0、0x004BF4D0で0x004BF2B0 cleanup。stream+0x54が非0なら0x004BF4FDで0x004BDE40再openに進み、0x004
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
+- [research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md 行 20](../../research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md?plain=1#L20-L20) — - fade-out初期化0x004BF570：0x004BF5D9以降の経路は0x004BF5E5で現振幅を-15.0で割り、stream+0x20へ保存。stream+0x10には静音側の音量目標を保持する。
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
+- [research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md 行 21](../../research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md?plain=1#L21-L21) — - 0x004BF410は毎回stream+0x18 += stream+0x20を実行し、増加時は目標stream+0x10のdBに到達すると停止、減少時は振幅0.2で切る。15は更新回数計算用doubleであり15ミリ秒・15描画フレームと断定しない。
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
 <a id="field-28"></a>
 ## stream + 0x28
 
@@ -39,6 +69,21 @@
 
 - [research/recovered/rea_batch4/reports/REA_20261030_06H_P0_OGG_BUFFER_DURATION_EOF_EDGE_STATIC.md 行 15](../../research/recovered/rea_batch4/reports/REA_20261030_06H_P0_OGG_BUFFER_DURATION_EOF_EDGE_STATIC.md?plain=1#L15-L15) — `0x0050224F`でこのbuilderを呼び、`0x00502260`で`stream+0x14`の`nAvgBytesPerSec`を読み、`0x00502269`で`stream+0x28`（DSBUFFERDESC.dwBufferBytes）へ転記。バッファ生成は`0x005022C4`の間接CALL。
   制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [research/recovered/rea_batch8/reports/REA_20261026_04H_P0_OGG_WORKER_PINGPONG_STATIC.md 行 15](../../research/recovered/rea_batch8/reports/REA_20261026_04H_P0_OGG_WORKER_PINGPONG_STATIC.md?plain=1#L15-L15) — - 0x005023EC/0x005023F0：stream+0x28を2で割ってH=floor(N/2)とする。0x00502410：stream+0x4C終了要求なら終了。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+<a id="field-38"></a>
+## stream + 0x38
+
+- [research/recovered/rea_batch8/reports/REA_20261026_06H_P0_AUDIO_TICK_GATE_STATIC.md 行 12](../../research/recovered/rea_batch8/reports/REA_20261026_06H_P0_AUDIO_TICK_GATE_STATIC.md?plain=1#L12-L12) — 5. 0x004BE28Aのmanager+0x24ゲートが0なら曲送りへ進まない。0x004BE297はstream+0x38が0なら0x004BF780を飛ばして後続の停止/次曲処理へ進む。非0なら0x004BE29Dで継続判定を呼び、ALが非0なら0x004BE2A4で次曲処理を回避する。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+- [research/recovered/rea_batch8/reports/REA_20261026_06H_P0_AUDIO_TICK_GATE_STATIC.md 行 19](../../research/recovered/rea_batch8/reports/REA_20261026_06H_P0_AUDIO_TICK_GATE_STATIC.md?plain=1#L19-L19) — - 通常ルートでEOFが32ゲート通過直後に変化すれば、次の評価まで最大31回のカウンタ更新を待つ可能性。ただし切替条件にはstream+0x38 / manager+0x24 / 0x004BF6A0 / 再生位置判定があり、実時間の上限や実際の遅延は保証できない。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+- [research/recovered/rea_batch8/reports/REA_20261026_06H_P0_AUDIO_TICK_GATE_STATIC.md 行 31](../../research/recovered/rea_batch8/reports/REA_20261026_06H_P0_AUDIO_TICK_GATE_STATIC.md?plain=1#L31-L31) — - stream+0x38が非0なら再生カーソル・EOF戻り値により次曲が抑制されることを検証。0ならスキップ経路との比較を行う。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
 
 <a id="field-44"></a>
 ## stream + 0x44
@@ -52,6 +97,9 @@
 - [research/recovered/rea_batch8/reports/REA_20261025_21H_THREAD_HANDLE_STATIC.md 行 18](../../research/recovered/rea_batch8/reports/REA_20261025_21H_THREAD_HANDLE_STATIC.md?plain=1#L18-L18) — - 0x00502308: [stream+0x48]=EAX。直後0x0050230BでAL=1、0x0050230Eで[stream+0x44]=1。
   制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
 
+- [research/recovered/rea_batch8/reports/REA_20261026_02H_P0_DS8_UNLOCK_CLEANUP_STATIC.md 行 21](../../research/recovered/rea_batch8/reports/REA_20261026_02H_P0_DS8_UNLOCK_CLEANUP_STATIC.md?plain=1#L21-L21) — - 正常復帰時0x005021C2でstream+0x08=0、0x005021C5でstream+0x00=0、0x005021C7でstream+0x44=0とする。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
 <a id="field-48"></a>
 ## stream + 0x48
 
@@ -59,6 +107,18 @@
   制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
 
 - [research/recovered/rea_batch8/reports/REA_20261025_21H_THREAD_HANDLE_STATIC.md 行 18](../../research/recovered/rea_batch8/reports/REA_20261025_21H_THREAD_HANDLE_STATIC.md?plain=1#L18-L18) — - 0x00502308: [stream+0x48]=EAX。直後0x0050230BでAL=1、0x0050230Eで[stream+0x44]=1。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+- [research/recovered/rea_batch8/reports/REA_20261025_21H_THREAD_HANDLE_STATIC.md 行 27](../../research/recovered/rea_batch8/reports/REA_20261025_21H_THREAD_HANDLE_STATIC.md?plain=1#L27-L27) — - worker通常復帰に伴う__endthreadが、親stream+0x48と共通originのHANDLEをCRT側で先にCloseHandleする経路が確認できる。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+- [research/recovered/rea_batch8/reports/REA_20261025_21H_THREAD_HANDLE_STATIC.md 行 44](../../research/recovered/rea_batch8/reports/REA_20261025_21H_THREAD_HANDLE_STATIC.md?plain=1#L44-L44) — 1. __beginthreadが-1を返す失敗を注入し、stream+0x48の値・+0x44フラグ・再初期化判定が原作と一致するか確認。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+<a id="field-4c"></a>
+## stream + 0x4C
+
+- [research/recovered/rea_batch8/reports/REA_20261026_04H_P0_OGG_WORKER_PINGPONG_STATIC.md 行 15](../../research/recovered/rea_batch8/reports/REA_20261026_04H_P0_OGG_WORKER_PINGPONG_STATIC.md?plain=1#L15-L15) — - 0x005023EC/0x005023F0：stream+0x28を2で割ってH=floor(N/2)とする。0x00502410：stream+0x4C終了要求なら終了。
   制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
 
 <a id="field-50"></a>
@@ -70,11 +130,17 @@
 <a id="field-54"></a>
 ## stream + 0x54
 
+- [research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md 行 13](../../research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md?plain=1#L13-L13) — - 終了経路は0x004BF4B5の音量反映、0x004BF4BEのvolume→amplitude逆変換、0x004BF4CBでstream+0x20=0、0x004BF4D0で0x004BF2B0 cleanup。stream+0x54が非0なら0x004BF4FDで0x004BDE40再openに進み、0x004
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
 - [research/recovered/rea_batch4/reports/REA_20261029_23H_P0_OGG_VCALL_ERROR_GATE_STATIC.md 行 14](../../research/recovered/rea_batch4/reports/REA_20261029_23H_P0_OGG_VCALL_ERROR_GATE_STATIC.md?plain=1#L14-L14) — workerはReadのEAX/AL成否を直接判定せずUnlockへ進む（`0x005024BD` または `0x0050254D`）。その後 `0x005024C4/0x005024C8` または `0x00502551/0x00502555` が**EOF=0なら`0x00502565`へ飛ばす**。従って、この条
   制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
 
 - [research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md 行 20](../../research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md?plain=1#L20-L20) — `0x005024CE` は前半書込時EOFで `stream+0x58=2`、`0x00502557` は後半書込時EOFで `stream+0x58=1`、`0x00502562` は `stream+0x54=actualBytes` を保存。
   制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [research/recovered/rea_batch8/reports/REA_20261026_04H_P0_OGG_WORKER_PINGPONG_STATIC.md 行 27](../../research/recovered/rea_batch8/reports/REA_20261026_04H_P0_OGG_WORKER_PINGPONG_STATIC.md?plain=1#L27-L27) — - EOF=1で第1半分を書いた場合、0x005024CEでstream+0x58=2。第2半分を書いた場合、0x00502557でstream+0x58=1。どちらも0x0050255E/62でstream+0x54に実読込bytesを書き込む。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
 
 <a id="field-58"></a>
 ## stream + 0x58
@@ -84,6 +150,12 @@
 
 - [research/recovered/rea_batch4/reports/REA_20261030_10H_P0_ODD_RATE_SUBFRAME_REWIND_STATIC.md 行 21](../../research/recovered/rea_batch4/reports/REA_20261030_10H_P0_ODD_RATE_SUBFRAME_REWIND_STATIC.md?plain=1#L21-L21) — 10/26既存：`0x00502580`はEOF状態`stream+0x58`と再生カーソルを比較。呼出元は`0x004BF7C8`、さらに`0x004BE29D`から呼ばれ、32カウント等の条件成立時に次曲処理へ進む可能性がある。今回の**新規部分は小さなread要求→-131→累積減算・重複書込という奇数Hz固有の
   制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [research/recovered/rea_batch8/reports/REA_20261026_04H_P0_OGG_WORKER_PINGPONG_STATIC.md 行 27](../../research/recovered/rea_batch8/reports/REA_20261026_04H_P0_OGG_WORKER_PINGPONG_STATIC.md?plain=1#L27-L27) — - EOF=1で第1半分を書いた場合、0x005024CEでstream+0x58=2。第2半分を書いた場合、0x00502557でstream+0x58=1。どちらも0x0050255E/62でstream+0x54に実読込bytesを書き込む。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+- [research/recovered/rea_batch8/reports/REA_20261026_04H_P0_OGG_WORKER_PINGPONG_STATIC.md 行 41](../../research/recovered/rea_batch8/reports/REA_20261026_04H_P0_OGG_WORKER_PINGPONG_STATIC.md?plain=1#L41-L41) — P0次回：stream+0x58と+0x54のconsumer/クリアタイミングをxrefs/機械語で追跡し、EOFと停止・ループ・再生復帰の対応を確定する。通常Golden案：N=8192、H=4096でpos 5000→2000を跨ぐときLock(0,4096)→Lock(4096,8192)になるか、p2/len
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
 
 - [research/recovered/rea_batch8/reports/REA_20261026_04H_P0_WORKER_PINGPONG_READBACK.md 行 16](../../research/recovered/rea_batch8/reports/REA_20261026_04H_P0_WORKER_PINGPONG_READBACK.md?plain=1#L16-L16) — 次回位置：stream+0x58/+0x54のreaderを対象VA限定で逆引きし、EOF・停止遷移を立証。実機テストは別承認を要し現状NOT RUN。
   制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
@@ -99,6 +171,9 @@
 
 <a id="field-70"></a>
 ## stream + 0x70
+
+- [research/recovered/rea_batch7/reports/REA_20261026_10H_P0_DMUSIC_AUDIOPATH_STATIC.md 行 35](../../research/recovered/rea_batch7/reports/REA_20261026_10H_P0_DMUSIC_AUDIOPATH_STATIC.md?plain=1#L35-L35) — - 次P0: stream+0x70テーブル生成とDirectMusicPerformance8の実IID/実生成経路、GetDefaultAudioPathが返すAudioPathのRelease所有者、HRESULT失敗の伝搬。続いて極小volumeでのfade+0x20負値境界。新Ghidra全関数再解析は不要。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
 
 - [research/recovered/rea_batch7/reports/REA_20261026_11H_P0_DMUSIC_COM_CONSTRUCTION_STATIC.md 行 14](../../research/recovered/rea_batch7/reports/REA_20261026_11H_P0_DMUSIC_COM_CONSTRUCTION_STATIC.md?plain=1#L14-L14) — - `0x004BE4E0`はサイズ=`count*4`のテーブル領域確保、`0x004BE4EB`で`stream+0x70`へ保存、`0x004BE4F7/FA`で各スロットをゼロ初期化。
   制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
@@ -121,11 +196,23 @@
 <a id="field-78"></a>
 ## stream + 0x78
 
+- [research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md 行 32](../../research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md?plain=1#L32-L32) — - 0x004BF685はstream+0x78 vtable+0xCC経由で得たポインタからslot+0x14をCALL。この2段階vtableの実行時所有者は未解決、次のP0 VERIFY対象。
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
 - [research/recovered/rea_batch7/reports/REA_20261026_11H_P0_DMUSIC_COM_CONSTRUCTION_STATIC.md 行 19](../../research/recovered/rea_batch7/reports/REA_20261026_11H_P0_DMUSIC_COM_CONSTRUCTION_STATIC.md?plain=1#L19-L19) — - `0x004BE820`の`0x004BEF20/27/2F`は`stream+0x70`から要素を選び、`stream+0x78`へコピーする。10時台のGetDefaultAudioPath呼出オブジェクトに到達する。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+<a id="field-8c"></a>
+## stream + 0x8C
+
+- [research/recovered/rea_batch8/reports/REA_20261026_08H_P0_DSHOW_IID_CHAIN_STATIC.md 行 11](../../research/recovered/rea_batch8/reports/REA_20261026_08H_P0_DSHOW_IID_CHAIN_STATIC.md?plain=1#L11-L11) — - CoCreateInstanceの結果はstream+0x8Cに置かれる。次の4件のQueryInterfaceは同一IGraphBuilderのIUnknown vtable先頭スロット+0を使用。
   制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
 
 <a id="field-90"></a>
 ## stream + 0x90
+
+- [research/recovered/rea_batch8/reports/REA_20261026_07H_P0_DSHOW_EVENT_READBACK.md 行 16](../../research/recovered/rea_batch8/reports/REA_20261026_07H_P0_DSHOW_EVENT_READBACK.md?plain=1#L16-L16) — 次回再開位置：0x004BE820付近のQueryInterface IIDからstream+0x90/+0x94/+0x98を確定、0x004BF780のGetEvent失敗時データフローを局所追跡。Goldenは未実行のまま別設計。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
 
 - [research/recovered/rea_batch8/reports/REA_20261026_08H_P0_DSHOW_IID_CHAIN_STATIC.md 行 15](../../research/recovered/rea_batch8/reports/REA_20261026_08H_P0_DSHOW_IID_CHAIN_STATIC.md?plain=1#L15-L15) — \| 0x004BEDC6 \| 0x0060CD7C \| IMediaControl \| stream+0x90 \|
   制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
@@ -145,7 +232,16 @@
 <a id="field-9c"></a>
 ## stream + 0x9C
 
+- [research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md 行 30](../../research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md?plain=1#L30-L30) — - 0x004BF630の0x004BF64Aはstream+0x9C vtable+0x1C（08時台IIDよりIBasicAudio::put_Volumeに整合）。
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
 - [research/recovered/rea_batch8/reports/REA_20261026_08H_P0_DSHOW_IID_CHAIN_STATIC.md 行 18](../../research/recovered/rea_batch8/reports/REA_20261026_08H_P0_DSHOW_IID_CHAIN_STATIC.md?plain=1#L18-L18) — \| 0x004BEE49 \| 0x0060CD9C \| IBasicAudio \| stream+0x9C \|
   制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+<a id="field-a0"></a>
+## stream + 0xA0
+
+- [research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md 行 31](../../research/recovered/rea_batch13/reports/REA_20261026_09H_P0_AUDIO_FADE_THRESHOLD_TAILJMP_STATIC.md?plain=1#L31-L31) — - 0x004BF66Bはstream+0xA0内のインタフェース vtable+0x3C（DirectSoundBuffer8::SetVolumeに整合）。
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)
