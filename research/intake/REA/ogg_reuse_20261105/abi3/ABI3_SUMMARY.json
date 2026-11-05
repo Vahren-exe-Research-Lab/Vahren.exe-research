@@ -1,0 +1,56 @@
+{
+  "research_id": "REA-T015-OGG-REUSE-20261105",
+  "evidence": "ABI3_USER_NORMAL_BGM_TRANSITIONS",
+  "raw_log_sha256": "51c33e0de4c82c37262fc605fd7811e954a6e1b13e1cd5e645374c9323b63acf",
+  "raw_bytes": 68665,
+  "raw_lines": 1559,
+  "last_armed_line": 37,
+  "counts": {
+    "READ_CALL": 16,
+    "READ_RETURN": 16,
+    "CLEAR_CALL": 3,
+    "CLEAR_RETURN": 3,
+    "OPEN_CALL": 3,
+    "OPEN_RETURN": 3,
+    "INFO_CALL": 3,
+    "INFO_RETURN": 3,
+    "FORMAT": 3
+  },
+  "paired_counts": {
+    "READ": 16,
+    "CLEAR": 3,
+    "OPEN": 3,
+    "INFO": 3
+  },
+  "register_mismatches": 0,
+  "stable_argument_mismatches": 0,
+  "clear_arg_slot_changed": 3,
+  "formats": [
+    {
+      "channels": 2,
+      "rate": 44100,
+      "bits": 16
+    },
+    {
+      "channels": 2,
+      "rate": 44100,
+      "bits": 16
+    },
+    {
+      "channels": 2,
+      "rate": 44100,
+      "bits": 16
+    }
+  ],
+  "issues": [],
+  "pending_calls": 0,
+  "end_marker_in_file": false,
+  "limitations": [
+    "16-hit read sample; not whole playback",
+    "No DLL-created context or independent decoder concurrency tested",
+    "No open-failure path tested",
+    "No PCM byte validation or memory/handle leak test",
+    "END absent: complete capture/shutdown cannot be certified",
+    "Installed game used with explicit user permission"
+  ]
+}
