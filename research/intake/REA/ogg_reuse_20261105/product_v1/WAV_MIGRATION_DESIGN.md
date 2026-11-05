@@ -1,6 +1,6 @@
 # OGG-only test-copy migration — follow-up design, 2026-11-06
 
-Status: ASSET_CONVERSION_VERIFIED / SUBSET_SE_SINGLE_BATTLE_ACCEPTED / BATTLE_VOLUME_MAX_ZERO_CONFIRMED.
+Status: FULL_MAP_INSTALLED_RUNTIME_PENDING / SUBSET_SE_SINGLE_BATTLE_ACCEPTED / BATTLE_VOLUME_MAX_ZERO_CONFIRMED.
 Later dated sections supersede the historical pending statuses below.
 The original DAT-path plugin's world-event playback has passed bounded runtime/user acceptance.
 This separate follow-up is authorized by the user's request to convert all WAV files and play the isolated copy. Permission to delete original WAVs is present, but deletion is not useful until existing callers are routed successfully.
@@ -240,3 +240,23 @@ User acceptance and correction history:
 Full migration preflight independently rehashed all 5972 WAV/OGG pairs against conversion receipt d813381ab9df283715454df8fb40136fb2878bcb526162b89a1652145d2d94ef and checked exact full-map coverage (bcaae783842326bef6aa4365cf95674c25e2c16cd1cbfdbb2d81220ff9d55ca1). No mismatches. This establishes current asset identity, not native decoding of every OGG or comprehensive playthrough acceptance.
 
 The bounded subset acceptance gate is satisfied. Proceed to full-map trial with original WAVs absent from active directories, preserving a local rollback journal. Full-game coverage, rare formats, long sessions, save/load and scene transitions remain to be exercised. No formal function dictionary changes.
+
+
+## Full-map installation verified; runtime pending (2026-11-06 02:48 JST)
+
+Status: FULL_MAP_INSTALLED_RUNTIME_PENDING.
+
+After the user confirmed normal game exit, the isolated copy switched from the63-entry map to the5972-entry map. The candidate DLL is unchanged (9c8b87c31fa168850869a704232edb5888ffbf9d71f00a321075de1f06e28225). Installed map SHA256: bcaae783842326bef6aa4365cf95674c25e2c16cd1cbfdbb2d81220ff9d55ca1.
+
+All5972 original WAVs were moved, preserving relative paths, into a local backup outside active sound/voice directories; no original audio was published. A pre-move receipt, incremental move journal, both manifests and final state support restoration. The user authorized deletion/recycling too; reversible relocation was used.
+
+Post-switch independent readback verified:
+- all5972 original source paths absent, no WAVs in active sound/voice directories;
+- all5972 relocated WAV hashes and5972 OGG hashes match the conversion receipt;
+- exact EXE, unchanged DLL and installed full-map hashes,5972 map lines;
+- switch state=switched, moved=5972; execution exit0.
+WAV bytes2348958298 remain only in the local backup; active OGG bytes245471643. This is not a reduction of total disk usage while backups remain.
+
+Migration implementation source commit4f1266b; script SHA2568fbc31b3a67891369805ec1a4bdfeb4cacd198f12ba7a48f2c236434bbe192c8. Synthetic switch/restore/injected failure rollback/traversal/conflict tests and production WhatIf passed before execution. An independent agent reviewed path bounds and rollback. The launcher verifies full-map identity and absence of active WAVs; it collects fresh logs on normal exit. Previous subset launcher rejects the changed map.
+
+The full-map game has NOT yet been launched or accepted. Next: user restores battle-voice volume from0 to a normal audible value, starts the new full-trial launcher, plays battles with multiple units and exercises save/load and scene changes, then exits normally. Distinct native asset coverage and long-session behavior remain unverified; mapping5972 files is not proof that every file has been exercised.
