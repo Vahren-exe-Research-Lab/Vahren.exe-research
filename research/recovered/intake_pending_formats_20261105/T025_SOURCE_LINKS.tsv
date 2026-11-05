@@ -1,0 +1,3 @@
+entry_id	kind	existing_name	source_path	source_sha256	start_line	end_line	confidence	limits
+va:0x004A71AA	code	Power_RegisterUnionPower	research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md	ef18a3adff0c698a4244ffe0e8afa53646b211a7daf882b8f4fdf5f07382cdfa	188	191	LOCATOR_ONLY;NO_MEANING_OR_NATIVE_PROMOTION	Name registration xref only; handler entry and power-map mutation/runtime effects unproved
+va:0x004A6FE1	code	Power_RegisterAddPower	research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md	ef18a3adff0c698a4244ffe0e8afa53646b211a7daf882b8f4fdf5f07382cdfa	188	191	LOCATOR_ONLY;NO_MEANING_OR_NATIVE_PROMOTION	Name registration xref only; handler entry and power-map mutation/runtime effects unproved

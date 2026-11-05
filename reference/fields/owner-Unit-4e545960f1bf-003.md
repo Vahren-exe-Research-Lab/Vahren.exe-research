@@ -4,6 +4,18 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-d0"></a>
+## Unit + 0xD0
+
+- [research/recovered/b_reports/T011_T024_GROUP34_DUAL_BUCKET_ELIGIBILITY_NATIVE_20261101_11H.md 行 22](../../research/recovered/b_reports/T011_T024_GROUP34_DUAL_BUCKET_ELIGIBILITY_NATIVE_20261101_11H.md?plain=1#L22-L22) — \| Unit+0xD0 \| `0x569633` \| signed dword >= 0 \|
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
+
+<a id="field-d4"></a>
+## Unit + 0xD4
+
+- [research/recovered/b_batch9/data/T013_DUAL_TICK_SEARCH_HP_VTABLE_EXIT_20261015.md 行 4](../../research/recovered/b_batch9/data/T013_DUAL_TICK_SEARCH_HP_VTABLE_EXIT_20261015.md?plain=1#L4-L4) — [FIRST ROUTE] VA0x545B14..0x545B2F はUnit+0x1E54Cの正値減算・非正時+0x1E550=1.0、0x545B2F..0x545B40 はUnit+0x1E558正値減算。0x545B40 EAX=ESI(Unit)→0x545B42 CALL 0x57B870→0x545B4
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 <a id="field-d8"></a>
 ## Unit + 0xD8
 
@@ -375,11 +387,5 @@
 
 - [research/recovered/b_reports/T013_RANK_CLEANUP_TO_PERUNIT_EVENT_CALLCHAIN_NATIVE_20261031_14H.md 行 8](../../research/recovered/b_reports/T013_RANK_CLEANUP_TO_PERUNIT_EVENT_CALLCHAIN_NATIVE_20261031_14H.md?plain=1#L8-L8) — [CALLEE CONTRACT/BOUNDARY] 0x577A20 original 0x577A52 ESI=ECX、0x577A54 EDI=EDX、0x577A5E/67/70にUnit+0x8C/+0x1F8/+0x1F9 gate、0x577A79 [ESP+0x70] < 0x10なら別早期枝、0x57
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
-
-- [research/recovered/e_reports/T020_E_T013_PAIRWISE_DISTANCE_ACCEPTANCE_20261030_16H.md 行 11](../../research/recovered/e_reports/T020_E_T013_PAIRWISE_DISTANCE_ACCEPTANCE_20261030_16H.md?plain=1#L11-L11) — - Secondary reverse-payload insert is gated by manager+0xA7!=0 AND first Unit+0x1A4==0 AND second Unit+0x1A4==2. This predicts whether code attempts a second in
-  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
-
-- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 303](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L303-L303) — - 非0経路はUnit+0x180/+0x184/+0x188/+0x18C/+0x190の和をdouble[0x879788]で重み付けし、+0x198/+0x19C、+0x1A0、+0x194、+0x17C、+0x178の値もそれぞれglobal doubleを使い変換・加算。0x587DA3..0x587E41で
-  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

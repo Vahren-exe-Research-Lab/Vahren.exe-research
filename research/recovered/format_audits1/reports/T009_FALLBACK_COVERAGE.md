@@ -1,0 +1,171 @@
+# T009 native fallback coverage
+
+- target active unique keys: 203
+- keys seen at native integer lookup sites: 169
+- active keys with native lookup evidence: 151
+- active keys with at least one extracted numeric fallback: 137
+- native keys with conflicting extracted numeric fallbacks: 0
+- active scalar-integer keys: 153
+- scalar-integer keys with extracted native fallback: 136
+- numeric keys matching native fallback: 56
+- numeric keys overriding native fallback: 80
+- numeric keys still without extracted fallback: 17
+
+## Missing numeric fallback
+- _name: target=7
+- _powerselect2: target=6
+- _spot2: target=1
+- b_sound_count: target=3
+- b_sound_volume: target=-800
+- bgm_volume: target=50
+- btl_limit_c: target=1500
+- event_bg_size: target=985
+- neutral_max: target=4
+- neutral_member_max: target=7
+- neutral_member_min: target=7
+- neutral_min: target=4
+- sound_count: target=30
+- sound_volume: target=-1600
+- title_bgm_s: target=2000
+- title_volume: target=40
+- unit_hand_range: target=16
+
+## Conflicting numeric fallback candidates
+
+## Active override vs native fallback
+- actor_per: target=0, native_fallback=0, same
+- arbeit_gain: target=50, native_fallback=10, override
+- arbeit_gain_lose: target=0, native_fallback=0, same
+- arbeit_money_mini: target=4, native_fallback=0, override
+- arbeit_price_coe: target=45, native_fallback=33, override
+- arbeit_turn: target=2, native_fallback=3, override
+- arbeit_vassal_coe: target=500, native_fallback=1000, override
+- battle_volume: target=40, native_fallback=0, override
+- bold_escapepath: target=150, native_fallback=150, same
+- bold_spotpath: target=350, native_fallback=350, same
+- btl_attackmode: target=100, native_fallback=100, same
+- btl_auto: target=-1, native_fallback=100, override
+- btl_battlemode: target=100, native_fallback=100, same
+- btl_blind_alpha: target=160, native_fallback=160, same
+- btl_breast_width: target=15, native_fallback=15, same
+- btl_castle_lot: target=250, native_fallback=240, override
+- btl_chargemode: target=80, native_fallback=25, override
+- btl_counter: target=80, native_fallback=75, override
+- btl_gate_through: target=0, native_fallback=500, override
+- btl_healer: target=10, native_fallback=10, same
+- btl_intercept: target=50, native_fallback=50, same
+- btl_limit: target=1300, native_fallback=500, override
+- btl_lineshift: target=160, native_fallback=160, same
+- btl_min_damage: target=1, native_fallback=10, override
+- btl_mode_coe: target=33, native_fallback=33, same
+- btl_msgtime: target=75, native_fallback=50, override
+- btl_nocastle_bdr: target=70, native_fallback=50, override
+- btl_prepare_max: target=40, native_fallback=100, override
+- btl_prepare_min: target=30, native_fallback=50, override
+- btl_raidback: target=75, native_fallback=50, override
+- btl_replace_line: target=90, native_fallback=70, override
+- btl_standby: target=25, native_fallback=25, same
+- btl_unitmax: target=810, native_fallback=500, override
+- btl_wingmax: target=200, native_fallback=300, override
+- caution_adjust: target=10, native_fallback=30, override
+- circle_alpha_per: target=70, native_fallback=75, override
+- compati_bad: target=5, native_fallback=0, override
+- compati_vassal_bdr: target=65, native_fallback=50, override
+- dead_penalty: target=95, native_fallback=50, override
+- diplo_bestfriend: target=80, native_fallback=80, same
+- diplo_budget_per: target=10, native_fallback=33, override
+- diplo_cost_per: target=50, native_fallback=10, override
+- diplo_down: target=20, native_fallback=10, override
+- diplo_frd_down: target=10, native_fallback=10, same
+- diplo_frd_peace: target=1, native_fallback=2, override
+- diplo_frd_turndown: target=1, native_fallback=1, same
+- diplo_frd_up: target=20, native_fallback=20, same
+- diplo_league_up: target=4, native_fallback=6, override
+- diplo_mode_itv: target=12, native_fallback=12, same
+- diplo_most_power: target=5000, native_fallback=200, override
+- diplo_success_frd: target=1000, native_fallback=2000, override
+- diplo_success_leg: target=2000, native_fallback=2000, same
+- diplo_success_sup: target=100, native_fallback=2000, override
+- diplo_sup_turndown: target=1, native_fallback=1, same
+- diplo_sup_up: target=3, native_fallback=6, override
+- employ_price_coe: target=500, native_fallback=100, override
+- employ_range: target=2, native_fallback=1, override
+- executive_bdr: target=25, native_fallback=10, override
+- fv_attack_per: target=100, native_fallback=100, same
+- fv_consti_mul: target=10, native_fallback=10, same
+- fv_hp_per: target=10, native_fallback=10, same
+- fv_hprec_per: target=400, native_fallback=200, override
+- fv_level_per: target=1, native_fallback=10, override
+- fv_move_per: target=50, native_fallback=200, override
+- fv_mp_per: target=10, native_fallback=100, override
+- fv_speed_per: target=200, native_fallback=200, same
+- fv_summon_mul: target=25, native_fallback=20, override
+- gain_per: target=500, native_fallback=200, override
+- leave_period: target=2, native_fallback=5, override
+- loyal_border: target=60, native_fallback=50, override
+- loyal_down: target=10, native_fallback=10, same
+- loyal_escape_bdr: target=1, native_fallback=1, same
+- loyal_up: target=10, native_fallback=10, same
+- max_unit: target=1600, native_fallback=1000, override
+- member: target=8, native_fallback=8, same
+- merits_bonus: target=1000, native_fallback=100, override
+- movement_num: target=1, native_fallback=1, same
+- my_range: target=1, native_fallback=1, same
+- myhelp_range: target=1, native_fallback=1, same
+- notalent_down: target=100, native_fallback=100, same
+- picture_fade: target=24, native_fallback=16, override
+- raid_bdr: target=15, native_fallback=100, override
+- raid_coe: target=15, native_fallback=15, same
+- raid_max: target=20, native_fallback=50, override
+- raid_min: target=20, native_fallback=-50, override
+- raise_most_power: target=80, native_fallback=80, same
+- raise_yabo_bdr: target=0, native_fallback=0, same
+- senior_bdr: target=75, native_fallback=30, override
+- spot_capacity: target=8, native_fallback=8, same
+- support_gain: target=10, native_fallback=10, same
+- support_gain_lose: target=10, native_fallback=3, override
+- support_range: target=3, native_fallback=1, override
+- support_trust_bdr: target=70, native_fallback=75, override
+- target_way_coe: target=50, native_fallback=50, same
+- title_menu_right: target=-8, native_fallback=200, override
+- title_menu_space: target=65, native_fallback=50, override
+- title_menu_top: target=-35, native_fallback=50, override
+- training_average: target=100, native_fallback=100, same
+- trust_down_per: target=100, native_fallback=200, override
+- trust_down_support: target=20, native_fallback=40, override
+- trust_up: target=100, native_fallback=1, override
+- unit_action_bdr: target=4000, native_fallback=3500, override
+- unit_attack_range: target=600, native_fallback=300, override
+- unit_charge_slide: target=13, native_fallback=13, same
+- unit_confusion_miss: target=25, native_fallback=50, override
+- unit_drain_mul: target=5, native_fallback=5, same
+- unit_escape_range: target=350, native_fallback=300, override
+- unit_escape_run: target=100, native_fallback=100, same
+- unit_illusion_miss: target=66, native_fallback=50, override
+- unit_knock_speed: target=400, native_fallback=400, same
+- unit_level_max: target=100, native_fallback=100, same
+- unit_lifebar_height: target=100, native_fallback=50, override
+- unit_missile_slide: target=300, native_fallback=400, override
+- unit_poison_per: target=10, native_fallback=10, same
+- unit_retreat_damage: target=50, native_fallback=20, override
+- unit_retreat_speed: target=300, native_fallback=200, override
+- unit_search_bdr: target=100, native_fallback=100, same
+- unit_slow_per: target=80, native_fallback=75, override
+- unit_specialuse_per: target=80, native_fallback=10, override
+- unit_status_death: target=50, native_fallback=100, override
+- unit_status_hp: target=100, native_fallback=100, same
+- unit_status_min: target=-500, native_fallback=-500, same
+- unit_status_rec: target=10, native_fallback=10, same
+- unit_summon_level: target=25, native_fallback=25, same
+- unit_summon_min: target=0, native_fallback=1, override
+- unit_sword_slide: target=12, native_fallback=12, same
+- unit_use_coe: target=90, native_fallback=75, override
+- unit_view_range: target=16, native_fallback=16, same
+- vassal_price_coe: target=3000, native_fallback=1000, override
+- war_capacity: target=24, native_fallback=12, override
+- win_gain: target=50, native_fallback=50, same
+- wnd_alpha: target=100, native_fallback=100, same
+- wnd_button: target=5, native_fallback=-1, override
+- world_volume: target=40, native_fallback=0, override
+- zone_alpha: target=192, native_fallback=192, same
+- zone_radius: target=72, native_fallback=72, same

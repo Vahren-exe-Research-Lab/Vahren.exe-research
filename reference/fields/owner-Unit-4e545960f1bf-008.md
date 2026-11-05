@@ -7,6 +7,12 @@
 <a id="field-1868c"></a>
 ## Unit + 0x1868C
 
+- [research/recovered/b_batch7/data/T012_ILLUSION_POSTMP_DAMAGE_BRANCH_20261016.md 行 4](../../research/recovered/b_batch7/data/T012_ILLUSION_POSTMP_DAMAGE_BRANCH_20261016.md?plain=1#L4-L4) — [FACT-PRE] 保存命令0x57E74DではUnit+0x18688へ8方向インデックスをstore、0x57E753/0x57E759ではSkill+0x278 costをUnit+0x94 MPからsub、0x57E75FではUnit+0x1868C=0。これらは今回の0x57E788幻覚条件より前。
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/b_batch8/data/T012_T013_DAMAGE_CONTEXT_E_CALLER_FLAG_CROSSROUTE_20261019.md 行 7](../../research/recovered/b_batch8/data/T012_T013_DAMAGE_CONTEXT_E_CALLER_FLAG_CROSSROUTE_20261019.md?plain=1#L7-L7) — [E=0 PRE] 同callerの0x546D46でUnit+0x18688方向更新、0x546D52でUnit+0x94からSkill+0x278を減算、0x546D5FでUnit+0x1868C=0。これらは命中・HP効果保証でない。
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 - [research/recovered/b_batch8/data/T012_T013_DAMAGE_CONTEXT_E_CALLER_FLAG_CROSSROUTE_20261019.md 行 11](../../research/recovered/b_batch8/data/T012_T013_DAMAGE_CONTEXT_E_CALLER_FLAG_CROSSROUTE_20261019.md?plain=1#L11-L11) — [E=1 PRE] VA0x57E74D Unit+0x18688方向store→0x57E759 MP減算→0x57E75F Unit+0x1868C=0。+0x74>1では追加state書込の可能性。illusion gate時0x57E7EAへ逸れるため常時damage coreに到達しない。
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
@@ -371,12 +377,6 @@
   制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
 
 - [research/recovered/rea_batch14/reports/WAVE4_FINDINGS_20261010.md 行 54](../../research/recovered/rea_batch14/reports/WAVE4_FINDINGS_20261010.md?plain=1#L54-L54) — - [STATIC EVIDENCE] `0x57B870` (T013) の `runs/20261009T225741694Z/57B870_procedure_pseudo_code.json`、pseudo evidence `ev_4767a901e9f4b9ad1fc38d59a2f36a6a4a1ef4c
-  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
-
-- [research/recovered/rea_batch14/reports/WAVE4_FINDINGS_20261010.md 行 67](../../research/recovered/rea_batch14/reports/WAVE4_FINDINGS_20261010.md?plain=1#L67-L67) — - `Unit+0x1E534 >= unit_search_bdr`でfull-refresh側へ進んでも、`Unit+0x1E570` が**非NULLなら既存targetの距離を算出**し、`0x514D60` は呼ばない。**NULLのときだけ `0x514D60` を呼ぶ**。一方 `Unit+0x137 !
-  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
-
-- [research/recovered/rea_batch14/reports/WAVE4_FINDINGS_20261010.md 行 85](../../research/recovered/rea_batch14/reports/WAVE4_FINDINGS_20261010.md?plain=1#L85-L85) — - `0x57B87F/85`: `Unit+0x1E534 < unit_search_bdr` なら早期returnし、この関数での直接CRT rand呼出は**0回**。閾値到達時、`0x57B8FE: CALL 0x5B6EAB` によりjitter用の**1回は必ず行われる**。
   制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

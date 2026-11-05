@@ -61,6 +61,9 @@
 - [research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md 行 381](../../research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md?plain=1#L381-L381) — - [GOLDEN] tests/T018_GOLDEN_CORPUS.mdにRNG-SHUFFLE-REC24-META4をDESIGNED/NOT RUNで追加。内部state/fieldを合法に観測できなければ静的仕様のみであり、旧EXE actual PASSを付けない。A/T031へrecord+0x18 w
   制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
 
+- [research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md 行 400](../../research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md?plain=1#L400-L400) — [ID / T025 P0] C-20261010-2027-01。既存§38とC-20261010-1921-01の**追加検証**であり、A-20261010-1959-01の保存nativeを読取参照。CONFIRMED-SCRIPT＋CONFIRMED-SAVED-NATIVE（handler/core命令経路
+  制約・訂正　Full authored historical composite; no substantive known held payload found; current REF/corrections priority; no native/runtime/Golden/READY/semantic promotion
+
 <a id="field-1c"></a>
 ## record + 0x1C
 
@@ -390,12 +393,6 @@
 
 - [research/recovered/b_batch9/data/T013_RUSH_RECORD_54F990_CONTRACT_20261013.md 行 7](../../research/recovered/b_batch9/data/T013_RUSH_RECORD_54F990_CONTRACT_20261013.md?plain=1#L7-L7) — [NONKIND4] Skill+40!=4 at0x54FB84 goes through optional supplied angle input: if present sets byte+0x1FC=1, copies double record+0x200 and records sentinel coor
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/b_batch9/data/T013_RUSH_RECORD_54F990_CONTRACT_20261013.md 行 8](../../research/recovered/b_batch9/data/T013_RUSH_RECORD_54F990_CONTRACT_20261013.md?plain=1#L8-L8) — [FINAL] 0x54FCFB tests record+0x1E8 sentinel 0x80000008; non-sentinel uses coordinate deltas→0x54FD16 call0x5E743A and writes double angle to record+0x200 at0x5
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-<a id="field-208"></a>
-## record + 0x208
 
 - [research/recovered/b_batch9/data/T013_RUSH_RECORD_54F990_CONTRACT_20261013.md 行 8](../../research/recovered/b_batch9/data/T013_RUSH_RECORD_54F990_CONTRACT_20261013.md?plain=1#L8-L8) — [FINAL] 0x54FCFB tests record+0x1E8 sentinel 0x80000008; non-sentinel uses coordinate deltas→0x54FD16 call0x5E743A and writes double angle to record+0x200 at0x5
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered

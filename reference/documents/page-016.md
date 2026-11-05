@@ -350,4 +350,28 @@
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Issue2 pair source absent in fixedfed0edb1601 ledger。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1614-L1614)。制約・訂正 Historical33-check receipt for paired coverage JSON; not independent gameplay evidence or a fresh native rerun. Historical static authored claims only; no native/runtime/READY promotion; linked files not fetched.
   本文 SHA256 `a94cd61e3997dba1a75ee222e689386d9cd8a2441459af64851418019264ffdb`
 
+- [T005/T006 迫真戦記script機械inventory](../../research/recovered/format_audits1/reports/T005_T006_SCRIPT_INVENTORY.md?plain=1#L1-L1) — `research/recovered/format_audits1/reports/T005_T006_SCRIPT_INVENTORY.md`
+  回収状態 CONTENT_REVIEWED_EXACT_GENERATED_INVENTORY。以前の収録状況 DEFERRED_OTHER_OR_PENDING_GENERATED_PRIORITY。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1615-L1615)。制約・訂正 Generated historical counts/configuration/fallback inventory only; source labels/counts not new independent discoveries,parser/native/runtime/type/READY/Golden proof; linked source/asset/native targets not acquired
+  本文 SHA256 `57f023356837e7b30a39b8870c2347ef3bec901fad758ef7992d3749191162e1`
+
+- [T009 context.dat inventory](../../research/recovered/format_audits1/reports/T009_CONTEXT_KEYS.schema.md?plain=1#L1-L1) — `research/recovered/format_audits1/reports/T009_CONTEXT_KEYS.schema.md`
+  回収状態 PARTIAL_BODY_SCHEMA_ONLY_DERIVATIVE。以前の収録状況 DEFERRED_OTHER_OR_PENDING_GENERATED_PRIORITY。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1616-L1616)。制約・訂正 Whole active configuration-value reproduction excluded; schema-only technical derivative retains key/operator/source-line metadata while206literal-value spans are removed; not privacy-only or complete original body; no native/runtime/READY/Golden proof
+  本文 SHA256 `9246ae4eefd595815d008d65d631a2f54d5b28c31d2445157a4a47df4d3626f5`
+
+- [T009 native fallback coverage](../../research/recovered/format_audits1/reports/T009_FALLBACK_COVERAGE.md?plain=1#L1-L1) — `research/recovered/format_audits1/reports/T009_FALLBACK_COVERAGE.md`
+  回収状態 CONTENT_REVIEWED_EXACT_GENERATED_INVENTORY。以前の収録状況 DEFERRED_OTHER_OR_PENDING_GENERATED_PRIORITY。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1617-L1617)。制約・訂正 Generated historical counts/configuration/fallback inventory only; source labels/counts not new independent discoveries,parser/native/runtime/type/READY/Golden proof; linked source/asset/native targets not acquired
+  本文 SHA256 `65edab042e8748a935fead9bf51078794702ca2b400254299a5486ae69dc0d53`
+
+- [T025 戦略ターン・内政経済・勝利/進行](../../research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md?plain=1#L1-L1) — `research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 DEFERRED_OTHER_OR_PENDING: PENDING_FULL_REVIEW_CAPACITY: source current SHA checked; limited pattern scan only; full authored-text review outstanding; no safety verdict; no body copied。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1618-L1618)。制約・訂正 Full authored historical composite; no substantive known held payload found; current REF/corrections priority; no native/runtime/Golden/READY/semantic promotion
+  本文 SHA256 `ef18a3adff0c698a4244ffe0e8afa53646b211a7daf882b8f4fdf5f07382cdfa`
+
+- [T034 merged pointer](../../research/recovered/pending_models2/reports/data/T034_SHIMOKITANO_TEA.md?plain=1#L1-L1) — `research/recovered/pending_models2/reports/data/T034_SHIMOKITANO_TEA.md`
+  回収状態 POINTER_ONLY_REVIEWED_EXACT。以前の収録状況 DEFERRED_OTHER_OR_PENDING: POINTER_ONLY: three-line merged pointer to recovered T034 subgame body;BOUNDED_BATCH_NOT_FULLY_REVIEWED: metadata lead only; no safety or technical approval。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1619-L1619)。制約・訂正 Complete three-line merged pointer only; not new full study; primary already accepted; linked original not read
+  本文 SHA256 `47a83ec47fd0d0b25989503fbf0a906686a9ff2436da1018fa5c53343727170a`
+
+- [RTS scenario / wave / settlement — curated D/T030, A/T010 crosswalk](../../research/recovered/immutable_ref_versions1/REF_RTS_SCENARIO_PRE_CORRECTION_76819fcb.md?plain=1#L1-L1) — `research/recovered/immutable_ref_versions1/REF_RTS_SCENARIO_PRE_CORRECTION_76819fcb.md`
+  回収状態 HISTORICAL_GIT_REF_SNAPSHOT_SUPERSEDED_EXACT。以前の収録状況 Historical catalog knowledge/REF_RTS_SCENARIO.md matched mutable canonical bytes untilPR50。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1620-L1620)。制約・訂正 HISTORICAL_SUPERSEDED_REF; old empty-candidates=false claim corrected by CORRECTION-RTS-EMPTY-SIDE-NOT-ALWAYS-FALSE; current REF_RTS_SCENARIO.md section5 prevails; Git blob identity only, no current local original read or native proof
+  本文 SHA256 `27e76a62454f9d9ccc7e4cfd779ce1c4e9d67dfb7d4852aaf6ed3655daea7a60`
+
 [前のページ](page-015.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md)

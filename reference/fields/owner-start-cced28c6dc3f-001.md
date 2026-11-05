@@ -10,4 +10,7 @@
 - [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 428](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L428-L428) — [CONFIRMED-SAVED-NATIVE] core 0x479A68..0x479A74 は start+0x1C(28byte)==end（1要素）なら即0x479B27終了。従って有効な28byte record配列でN=0/1のときcoreのCRT rand消費0、N=2なら1 iteration、N=3
   制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
+- [research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md 行 402](../../research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md?plain=1#L402-L402) — [NATIVE HANDLER→CORE / A所有証拠をread-only直接照合] `exe/T031_STRINGOP_HANDLERS.txt` のvariable/list opcode40 `shuffle` handler VA0x4B044F..0x4B04BD：lookup nodeがsentinel
+  制約・訂正　Full authored historical composite; no substantive known held payload found; current REF/corrections priority; no native/runtime/Golden/READY/semantic promotion
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

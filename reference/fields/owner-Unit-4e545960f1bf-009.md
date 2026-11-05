@@ -7,6 +7,12 @@
 <a id="field-1e534"></a>
 ## Unit + 0x1E534
 
+- [research/recovered/rea_batch14/reports/WAVE4_FINDINGS_20261010.md 行 67](../../research/recovered/rea_batch14/reports/WAVE4_FINDINGS_20261010.md?plain=1#L67-L67) — - `Unit+0x1E534 >= unit_search_bdr`でfull-refresh側へ進んでも、`Unit+0x1E570` が**非NULLなら既存targetの距離を算出**し、`0x514D60` は呼ばない。**NULLのときだけ `0x514D60` を呼ぶ**。一方 `Unit+0x137 !
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
+- [research/recovered/rea_batch14/reports/WAVE4_FINDINGS_20261010.md 行 85](../../research/recovered/rea_batch14/reports/WAVE4_FINDINGS_20261010.md?plain=1#L85-L85) — - `0x57B87F/85`: `Unit+0x1E534 < unit_search_bdr` なら早期returnし、この関数での直接CRT rand呼出は**0回**。閾値到達時、`0x57B8FE: CALL 0x5B6EAB` によりjitter用の**1回は必ず行われる**。
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
 - [research/recovered/rea_batch14/reports/WAVE4_GOLDEN_DESIGNS_20261010.md 行 15](../../research/recovered/rea_batch14/reports/WAVE4_GOLDEN_DESIGNS_20261010.md?plain=1#L15-L15) — \| AI-SEARCH-TICK \| `unit_search_bdr=100`、同一seed、ターゲットあり/なし \| Unit+0x1E534閾値未満は既存target再利用、到達時だけ再選択＋counter jitter \| full scan tick列、reset値、乱数消費数、target ID \|
   制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
 

@@ -1,0 +1,6 @@
+role	input_path	sha256	bytes	scope
+approved_selection	hakushin-pending_models2-approved.tsv	be86c734fcc856a9a0e523441fc66fb77d37126d41e8837a4bfab44f03973c17	945	Read-only preparation snapshot; no original body beyond exact approved list
+baseline_root_ledger	research/recovered/RECOVERY_LEDGER.tsv	91d10967b9dd9ae2f3e401b01e5ed27625423826df20afdc96401f17c2173951	1119049	Read-only preparation snapshot; no original body beyond exact approved list
+current_inventory_metadata	research/recovered/current_inventory/CURRENT_MARKDOWN_PATHS.tsv	c495e3976efc2589c4b9613fe2ac281dd1f3ca5bc137a18aa1101ceb4ea21a4e	627272	Read-only preparation snapshot; no original body beyond exact approved list
+exact_approved_original	data/T025_STRATEGIC_PROGRESSION.md	ef18a3adff0c698a4244ffe0e8afa53646b211a7daf882b8f4fdf5f07382cdfa	355705	Full bounded approved authored body/pointer; original read only
+exact_approved_original	data/T034_SHIMOKITANO_TEA.md	47a83ec47fd0d0b25989503fbf0a906686a9ff2436da1018fa5c53343727170a	159	Full bounded approved authored body/pointer; original read only

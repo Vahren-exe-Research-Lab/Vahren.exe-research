@@ -34,6 +34,9 @@
 - [research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md 行 1167](../../research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md?plain=1#L1167-L1167) — - [STRICT/GOLDEN] phaseByte/DL、Power selector/byte、isComTurn zeroarg、COM3比較・early return、preboss/event・後段Worldを段階別trace。合法4 Worldの同COM再入/別COM、Power消失が可視化できるときの旧
   制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
+- [research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md 行 1021](../../research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md?plain=1#L1021-L1021) — [GOLDEN DESIGNED/NOT RUN] 合法sci1/sc_free/rsc/dreamで同COM同turn2回目、COM交替、power選択/消失が合法に可視化できる場面、Boss flag0/1、checktiming1/2を対照。旧UI/SAVEのイベント副作用、polip・power一覧・勝敗/退場
+  制約・訂正　Full authored historical composite; no substantive known held payload found; current REF/corrections priority; no native/runtime/Golden/READY/semantic promotion
+
 - [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 405](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L405-L405) — [STRICT IMPLEMENT / TEST] `isComTurn()`無引数(既知選択Power+0x1D)と`isComTurn(arg)`を別経路にし、arg0評価helperの戻りを単なる数値/生のPower pointerに潰さず、name-like subfield+4と後続resolverの契約を保
   制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
 
@@ -96,6 +99,12 @@
 
 - [research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md 行 1016](../../research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md?plain=1#L1016-L1016) — - [SAVED ROSTER] 原作save1・save2のsp16には48 stored Unit ID、inyumeb root5組とu_inyume root1組、それぞれ7子Unit保存参照。sp2の保存IDにyaju。sp16のPower+0x68逆参照無しは保存参照事実であって、実storePowerOf
   制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+- [research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md 行 878](../../research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md?plain=1#L878-L878) — [CONFIRMED-TARGET-SAVED-REFS] Power+0x68保存Spot名簿の逆参照は3capすべてsp2=[po2]、sp2b=[]、sp16=[]、sp50=[po29]。po29の保存Spot列はsp49,sp50。名簿0参照のsp2b/sp16でもSpot.member保存Unit数は各80
+  制約・訂正　Full authored historical composite; no substantive known held payload found; current REF/corrections priority; no native/runtime/Golden/READY/semantic promotion
+
+- [research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md 行 922](../../research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md?plain=1#L922-L922) — [ORIGINAL SAVE INPUTS] evidence/T025_NORMAL_BATTLE_SAVED_ROSTERS_20261013.json のsave1/save2でsp2にyaju ID、sp16 member48・derived root6（inyumeb系5組×8保存IDとu_inyume系1組
+  制約・訂正　Full authored historical composite; no substantive known held payload found; current REF/corrections priority; no native/runtime/Golden/READY/semantic promotion
 
 - [research/recovered/remaining_md1/reports/dev_lab/docs/PROJECT_HANDOFF_MASTER_20261011.md 行 199](../../research/recovered/remaining_md1/reports/dev_lab/docs/PROJECT_HANDOFF_MASTER_20261011.md?plain=1#L199-L199) — - src/hakushin_compat/native_saved_reference_audit.py → reports/ACTUAL_SAVE_REFERENCE_GRAPH_20261011.json（新規、capture3件SHA pin/exit0）。0x1Cテンプレート/技能文字列など、IDでない文字列
   制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
