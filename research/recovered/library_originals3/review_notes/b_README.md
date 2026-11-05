@@ -1,0 +1,9 @@
+# Library originals: reviewer B
+
+Exactly 08H-12H, five authored Markdown reports, 45,507 bytes. All 233 physical LF lines were completely reviewed in header-first bounded calls. SAFE=5; whole-deferred=0; privacy variants=0. Original SHA256 and sizes independently match CAPTURE_INDEX and historical compilation receipts. Exact UTF-8/BOM/newline bytes copied; no JSON reserialization or content edits. No current root source/destination SHA alias was found at the observed ledger snapshot.
+
+Library source names are recorded as ChatGPT Library/visible_filename. No canonical download URI is invented. Local staging is review_b/reports; ledger destinations name the proposed final research/recovered/library_originals3/reports locations, which this review did not write.
+
+08H and 09H describe bounded cached-stream producer/consumer paths; 10H cross-checks prior records; 11H-12H rely substantially on old Ghidra index/pseudocode and conditional arithmetic models. Their audit success, original-byte checks, acquisition commands and next-step instructions remain dated author claims, not actions performed now. No linked JSON/Python/EXE/ZIP/DB/native/library targets were acquired or executed. The reports contain selected short native witnesses, not a full source/material dump or known-held algorithm reconstruction.
+
+Limited comparison found the substantive results already represented in the existing recovery compilations, with selected later curated coverage. CANDIDATES lists three possible lookup improvements only; it does not promote ABI, type, runtime, fault reachability, VERIFIED, Golden or READY. Current symbols/REF statements that the 14 Library originals were not acquired describe the earlier compilation intake and should be contextualized after parent integration. No technical correction was established by this review. Shared/core/Git files were unchanged.

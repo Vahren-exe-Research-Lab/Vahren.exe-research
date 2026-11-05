@@ -10,6 +10,15 @@
 - [research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_06H_08H_MODE_CACHE_RECOVERY_STATIC.md 行 5](../../research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_06H_08H_MODE_CACHE_RECOVERY_STATIC.md?plain=1#L5-L5) — - **Bounded native:** setup parser `0x005D4160`; `0x005D435F/63` stores 6bit+1 mode count in `inner+0x08`; `0x005D4384` calls `0x005D1C71 _calloc(1,0x10)`, save
   制約・訂正　Authored REA recovery compilation, not full original Library bodies; STATIC/ABI/NOT_READY/Golden limits retained; linked evidence not acquired; no semantic/READY promotion.
 
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_06H_MODE_LIFECYCLE_REPORT.md 行 35](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_06H_MODE_LIFECYCLE_REPORT.md?plain=1#L35-L35) — \| `0x005D435F/0x005D4363` \| +1したmode数を `inner+0x08` に保存。正常6bit読取時は1～64 \|
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY/NOT READY only. No new native/runtime/ABI/formal VERIFIED/Golden/READY validation. Companion evidenceJSON/Python/PE/ZIP/DB/linked sources not acquired or executed. Source label is visible Library filename, not canonical URI.
+
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_06H_MODE_LIFECYCLE_REPORT.md 行 53](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_06H_MODE_LIFECYCLE_REPORT.md?plain=1#L53-L53) — `0x005D3DE0` は `outer+0x1C` からinnerを取得し、`inner+0x08 > 0` なら `inner+0x20` 以降の各modeポインタを走査する。`0x005D3E00..0x005D3E07` は**各スロットをNULL検査して非NULLだけfree**する。末尾の `0x005D
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY/NOT READY only. No new native/runtime/ABI/formal VERIFIED/Golden/READY validation. Companion evidenceJSON/Python/PE/ZIP/DB/linked sources not acquired or executed. Source label is visible Library filename, not canonical URI.
+
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_06H_MODE_LIFECYCLE_REPORT.md 行 75](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_06H_MODE_LIFECYCLE_REPORT.md?plain=1#L75-L75) — `KB_CANDIDATE` は `REA/T015`、本研究ID、VA `0x005D4160 / 0x005D3DE0 / 0x005CF010 / 0x005D57C0 / 0x005D5BD0 / 0x005CFA10 / 0x005CF970 / 0x005D1C71 / 0x005C303C`、CALL s
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY/NOT READY only. No new native/runtime/ABI/formal VERIFIED/Golden/READY validation. Companion evidenceJSON/Python/PE/ZIP/DB/linked sources not acquired or executed. Source label is visible Library filename, not canonical URI.
+
 <a id="field-c"></a>
 ## inner + 0xC
 
@@ -30,6 +39,18 @@
 
 - [research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_06H_08H_MODE_CACHE_RECOVERY_STATIC.md 行 11](../../research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_06H_08H_MODE_CACHE_RECOVERY_STATIC.md?plain=1#L11-L11) — - **Distinct from 06H:** `0x005CF06B -> 0x005D3DA0` calls init helper; `0x005D3DC4 -> 0x005D1C71` requests `calloc(1,0xE50)` and `0x005D3DCC` assigns result to
   制約・訂正　Authored REA recovery compilation, not full original Library bodies; STATIC/ABI/NOT_READY/Golden limits retained; linked evidence not acquired; no semantic/READY promotion.
+
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_06H_MODE_LIFECYCLE_REPORT.md 行 38](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_06H_MODE_LIFECYCLE_REPORT.md?plain=1#L38-L38) — \| **`0x005D438C`** \| 返値EAXを `inner+0x20+4*i` のmodeポインタスロットに保存 \|
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY/NOT READY only. No new native/runtime/ABI/formal VERIFIED/Golden/READY validation. Companion evidenceJSON/Python/PE/ZIP/DB/linked sources not acquired or executed. Source label is visible Library filename, not canonical URI.
+
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_06H_MODE_LIFECYCLE_REPORT.md 行 53](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_06H_MODE_LIFECYCLE_REPORT.md?plain=1#L53-L53) — `0x005D3DE0` は `outer+0x1C` からinnerを取得し、`inner+0x08 > 0` なら `inner+0x20` 以降の各modeポインタを走査する。`0x005D3E00..0x005D3E07` は**各スロットをNULL検査して非NULLだけfree**する。末尾の `0x005D
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY/NOT READY only. No new native/runtime/ABI/formal VERIFIED/Golden/READY validation. Companion evidenceJSON/Python/PE/ZIP/DB/linked sources not acquired or executed. Source label is visible Library filename, not canonical URI.
+
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_06H_MODE_LIFECYCLE_REPORT.md 行 75](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_06H_MODE_LIFECYCLE_REPORT.md?plain=1#L75-L75) — `KB_CANDIDATE` は `REA/T015`、本研究ID、VA `0x005D4160 / 0x005D3DE0 / 0x005CF010 / 0x005D57C0 / 0x005D5BD0 / 0x005CFA10 / 0x005CF970 / 0x005D1C71 / 0x005C303C`、CALL s
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY/NOT READY only. No new native/runtime/ABI/formal VERIFIED/Golden/READY validation. Companion evidenceJSON/Python/PE/ZIP/DB/linked sources not acquired or executed. Source label is visible Library filename, not canonical URI.
+
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_07H_MODE_SLOT_ZEROING_REPORT.md 行 26](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_07H_MODE_SLOT_ZEROING_REPORT.md?plain=1#L26-L26) — modeループは `0x005D4384` で各16バイトを確保し、`0x005D438C` で個別ポインタをスロットへ格納する。検証エラーが**通常のパーサabort経路**へ進むと `0x005D4401: call 0x005D3DE0`。cleanup側は `0x005D3DFC` で `inner+0x20`
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY/NOT READY only. No new native/runtime/ABI/formal VERIFIED/Golden/READY validation. Companion evidenceJSON/Python/PE/ZIP/DB/linked sources not acquired or executed. Source label is visible Library filename, not canonical URI.
 
 <a id="field-48"></a>
 ## inner + 0x48

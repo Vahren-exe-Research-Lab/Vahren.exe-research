@@ -1,0 +1,2 @@
+start_lf	end_lf	method	role	privacy	known_held	not_verified
+198	209	ALL_ADDED_PHYSICAL_LF_READ; strictUTF8; exact prior prefix verified	DATED_AUTHOR_RUNTIME_RECORDS14-15	No personal path/credential observed in added text	No specific known-held payload/dependency observed in added text	Author plugin/DAT/runtime observations; source log/DLL hashes remain opaque; not independently fetched or rerun

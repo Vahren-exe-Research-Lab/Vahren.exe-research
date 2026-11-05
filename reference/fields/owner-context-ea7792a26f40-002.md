@@ -100,11 +100,17 @@
 <a id="field-4c4"></a>
 ## context + 0x4C4
 
+- [research/recovered/claude_current_update3/reports/EXP_DAT_DESIGN_20261103.md 行 66](../../research/recovered/claude_current_update3/reports/EXP_DAT_DESIGN_20261103.md?plain=1#L66-L66) — - 根拠: 汎用一覧の `src/work_dat_ui_literal.h`（routine の引数の予約名照合）、`src/work_dat_ui_snapshot.h`（数値変数の木 context+0x4C4、文字列配列の木 context+0x1E8B40、値は record+0x1C）。
+  制約・訂正　Author dated runtime/ACTUAL claims only; not independently rerun. No original native/log/code/DLL/Library/linked acquisition or execution. Prior design/STATIC and runtime chronology retained. New version preserves old source; integration destination proposed, not yet in repo.
+
 - [research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md 行 66](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md?plain=1#L66-L66) — - 根拠: 汎用一覧の `src/work_dat_ui_literal.h`（routine の引数の予約名照合）、`src/work_dat_ui_snapshot.h`（数値変数の木 context+0x4C4、文字列配列の木 context+0x1E8B40、値は record+0x1C）。
   制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
 
 <a id="field-504"></a>
 ## context + 0x504
+
+- [research/recovered/claude_current_update3/reports/EXP_DAT_DESIGN_20261103.md 行 119](../../research/recovered/claude_current_update3/reports/EXP_DAT_DESIGN_20261103.md?plain=1#L119-L119) — - 直前の失敗（18:51、PID 11352）: 名前の表を context+0x1EEBEC と読み違え（件数 8,716,303 という無関係な値）。正しくは評価器（context+0x504）+0x1EEBEC。x32dbg の記録で 0x49E780 の EDX が評価器だったこと、動作中のメモリの読み取りで
+  制約・訂正　Author dated runtime/ACTUAL claims only; not independently rerun. No original native/log/code/DLL/Library/linked acquisition or execution. Prior design/STATIC and runtime chronology retained. New version preserves old source; integration destination proposed, not yet in repo.
 
 - [research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md 行 119](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md?plain=1#L119-L119) — - 直前の失敗（18:51、PID 11352）: 名前の表を context+0x1EEBEC と読み違え（件数 8,716,303 という無関係な値）。正しくは評価器（context+0x504）+0x1EEBEC。x32dbg の記録で 0x49E780 の EDX が評価器だったこと、動作中のメモリの読み取りで
   制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
@@ -121,17 +127,26 @@
 <a id="field-1e8b40"></a>
 ## context + 0x1E8B40
 
+- [research/recovered/claude_current_update3/reports/EXP_DAT_DESIGN_20261103.md 行 66](../../research/recovered/claude_current_update3/reports/EXP_DAT_DESIGN_20261103.md?plain=1#L66-L66) — - 根拠: 汎用一覧の `src/work_dat_ui_literal.h`（routine の引数の予約名照合）、`src/work_dat_ui_snapshot.h`（数値変数の木 context+0x4C4、文字列配列の木 context+0x1E8B40、値は record+0x1C）。
+  制約・訂正　Author dated runtime/ACTUAL claims only; not independently rerun. No original native/log/code/DLL/Library/linked acquisition or execution. Prior design/STATIC and runtime chronology retained. New version preserves old source; integration destination proposed, not yet in repo.
+
 - [research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md 行 66](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md?plain=1#L66-L66) — - 根拠: 汎用一覧の `src/work_dat_ui_literal.h`（routine の引数の予約名照合）、`src/work_dat_ui_snapshot.h`（数値変数の木 context+0x4C4、文字列配列の木 context+0x1E8B40、値は record+0x1C）。
   制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
 
 <a id="field-1eebdc"></a>
 ## context + 0x1EEBDC
 
+- [research/recovered/claude_current_update3/reports/EXP_DAT_DESIGN_20261103.md 行 89](../../research/recovered/claude_current_update3/reports/EXP_DAT_DESIGN_20261103.md?plain=1#L89-L89) — - 登録: `0x49E560`（BattleUnit を作る 0x56F880〔通常〕・0x544290〔簡易〕の両方から）。キーは UnitData+0x1C のタグ。**召喚獣も登録される**ので jocar などの名前でも引ける。同じ関数が context+0x1EEBDC（UnitData 側の表）にも登録す
+  制約・訂正　Author dated runtime/ACTUAL claims only; not independently rerun. No original native/log/code/DLL/Library/linked acquisition or execution. Prior design/STATIC and runtime chronology retained. New version preserves old source; integration destination proposed, not yet in repo.
+
 - [research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md 行 89](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md?plain=1#L89-L89) — - 登録: `0x49E560`（BattleUnit を作る 0x56F880〔通常〕・0x544290〔簡易〕の両方から）。キーは UnitData+0x1C のタグ。**召喚獣も登録される**ので jocar などの名前でも引ける。同じ関数が context+0x1EEBDC（UnitData 側の表）にも登録す
   制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
 
 <a id="field-1eebe0"></a>
 ## context + 0x1EEBE0
+
+- [research/recovered/claude_current_update3/reports/EXP_DAT_DESIGN_20261103.md 行 90](../../research/recovered/claude_current_update3/reports/EXP_DAT_DESIGN_20261103.md?plain=1#L90-L90) — - 消去: `0x48ABF0`（context+0x1EEBE0 と +0x1EEBF0 の木を空にする、戦闘の後片付けと推定。呼び出し 0x40D1E4／0x40E2C3／0x40F362／0x48AAEC）。台帳を空にする時点の候補。→ 要実機確認。
+  制約・訂正　Author dated runtime/ACTUAL claims only; not independently rerun. No original native/log/code/DLL/Library/linked acquisition or execution. Prior design/STATIC and runtime chronology retained. New version preserves old source; integration destination proposed, not yet in repo.
 
 - [research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md 行 90](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md?plain=1#L90-L90) — - 消去: `0x48ABF0`（context+0x1EEBE0 と +0x1EEBF0 の木を空にする、戦闘の後片付けと推定。呼び出し 0x40D1E4／0x40E2C3／0x40F362／0x48AAEC）。台帳を空にする時点の候補。→ 要実機確認。
   制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
@@ -141,6 +156,12 @@
 
 - [research/recovered/b_batch8/data/T013_CASE8_KEY_PRODUCER_EVAL_ORDER_NATIVE_20261024_0317.md 行 10](../../research/recovered/b_batch8/data/T013_CASE8_KEY_PRODUCER_EVAL_ORDER_NATIVE_20261024_0317.md?plain=1#L10-L10) — [NEW-5 TREE JOIN] 0x0049E954～0x0049E962でEDX文字列のNUL終端長を計算、0x0049E966→0x00402800でlocal stringへ複製、0x0049E975でcontext+0x1EEBECを指定して0x0049E980→0x0049F410の範囲検索へ到達。前回の
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/claude_current_update3/reports/EXP_DAT_DESIGN_20261103.md 行 87](../../research/recovered/claude_current_update3/reports/EXP_DAT_DESIGN_20261103.md?plain=1#L87-L87) — - context+0x1EEBEC の multimap（名前 → BattleUnit。ノード +0x28 が BattleUnit）を equal_range で引き、**生きている（+0x1867C=0）ものを優先、いなければ最初の倒れたもの**を返す（0x49E826〜0x49E889）。
+  制約・訂正　Author dated runtime/ACTUAL claims only; not independently rerun. No original native/log/code/DLL/Library/linked acquisition or execution. Prior design/STATIC and runtime chronology retained. New version preserves old source; integration destination proposed, not yet in repo.
+
+- [research/recovered/claude_current_update3/reports/EXP_DAT_DESIGN_20261103.md 行 119](../../research/recovered/claude_current_update3/reports/EXP_DAT_DESIGN_20261103.md?plain=1#L119-L119) — - 直前の失敗（18:51、PID 11352）: 名前の表を context+0x1EEBEC と読み違え（件数 8,716,303 という無関係な値）。正しくは評価器（context+0x504）+0x1EEBEC。x32dbg の記録で 0x49E780 の EDX が評価器だったこと、動作中のメモリの読み取りで
+  制約・訂正　Author dated runtime/ACTUAL claims only; not independently rerun. No original native/log/code/DLL/Library/linked acquisition or execution. Prior design/STATIC and runtime chronology retained. New version preserves old source; integration destination proposed, not yet in repo.
 
 - [research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md 行 87](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md?plain=1#L87-L87) — - context+0x1EEBEC の multimap（名前 → BattleUnit。ノード +0x28 が BattleUnit）を equal_range で引き、**生きている（+0x1867C=0）ものを優先、いなければ最初の倒れたもの**を返す（0x49E826〜0x49E889）。
   制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.

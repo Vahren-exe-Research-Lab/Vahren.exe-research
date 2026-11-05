@@ -7,6 +7,9 @@
 <a id="field-1e8"></a>
 ## record + 0x1E8
 
+- [research/recovered/b_batch9/data/T013_RUSH_RECORD_54F990_CONTRACT_20261013.md 行 7](../../research/recovered/b_batch9/data/T013_RUSH_RECORD_54F990_CONTRACT_20261013.md?plain=1#L7-L7) — [NONKIND4] Skill+40!=4 at0x54FB84 goes through optional supplied angle input: if present sets byte+0x1FC=1, copies double record+0x200 and records sentinel coor
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 - [research/recovered/b_batch9/data/T013_RUSH_RECORD_54F990_CONTRACT_20261013.md 行 8](../../research/recovered/b_batch9/data/T013_RUSH_RECORD_54F990_CONTRACT_20261013.md?plain=1#L8-L8) — [FINAL] 0x54FCFB tests record+0x1E8 sentinel 0x80000008; non-sentinel uses coordinate deltas→0x54FD16 call0x5E743A and writes double angle to record+0x200 at0x5
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 

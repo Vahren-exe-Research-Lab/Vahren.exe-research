@@ -8,7 +8,7 @@
 
 文書検索結果は保存ファイル名、元パス・出典URI、題名、本文だけの一致の順で最大20件です。同じ区分内は回収台帳での初出順です。省略時は一致総数を表示します。全件の出典・制約は一覧または各詳細ページに掲載しています。研究ID・題名で絞り込めます。アドレス・所有者＋オフセット検索は従来の専用結果を返します。
 
-[前のページ](page-023.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md)
+[前のページ](page-023.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md) · [次のページ](page-025.md)
 
 - [T013_SUPPORT_POSTCORE_RANDOM_4B9F70_NATIVE_20261013.txt](../../research/recovered/text_roles2/data/T013_SUPPORT_POSTCORE_RANDOM_4B9F70_NATIVE_20261013.txt?plain=1#L1-L1) — `research/recovered/text_roles2/data/T013_SUPPORT_POSTCORE_RANDOM_4B9F70_NATIVE_20261013.txt`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2348-L2348)。制約・訂正 Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result.
@@ -435,4 +435,79 @@
   本文 SHA256 `fc8c345c4d769cc7d782de127e479cab35bda5a73016db6083a64ffadecb0c95`
   元パス <code>chatgpt://6acdb64f-3fc8-83e8-88d8-bd76f5453244/messages/ebf82892-6bb3-4d89-a410-e870669cc768</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2432-L2432)。
 
-[前のページ](page-023.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md)
+- [迫真戦記 ver0.67｜REA P0 2026-11-01 03時台（JST）｜Vorbisコードブック次元数の二系統構築元](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_03H_CODEBOOK_DIMENSION_REPORT.md?plain=1#L1-L1) — `research/recovered/library_originals3/reports/REA_OFFLINE_20261101_03H_CODEBOOK_DIMENSION_REPORT.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Historical compilation receiptSHA matches downloaded report bytes; prior compilation is a summary, not byte-identical primary; no root source/destSHA body alias。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2433-L2433)。制約・訂正 Historical authored STATIC/INFERRED/VERIFY/NOT READY only. No new native/runtime/ABI/formal VERIFIED/Golden/READY validation. Companion evidenceJSON/Python/PE/ZIP/DB/linked sources not acquired or executed. Source label is visible Library filename, not canonical URI.
+  本文 SHA256 `d64f34432ff9deeb75c7d54da24c60812f98ea18c0e67121051954d4b5cf744b`
+  元パス <code>ChatGPT Library/REA_OFFLINE_20261101_03H_CODEBOOK_DIMENSION_REPORT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2433-L2433)。
+
+- [迫真戦記 ver0.67｜REA P0｜2026-11-01 04時台（JST）](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_04H_RESIDUE_POWER_BOUND_REPORT.md?plain=1#L1-L1) — `research/recovered/library_originals3/reports/REA_OFFLINE_20261101_04H_RESIDUE_POWER_BOUND_REPORT.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Historical compilation receiptSHA matches downloaded report bytes; prior compilation is a summary, not byte-identical primary; no root source/destSHA body alias。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2434-L2434)。制約・訂正 Historical authored STATIC/INFERRED/VERIFY/NOT READY only. No new native/runtime/ABI/formal VERIFIED/Golden/READY validation. Companion evidenceJSON/Python/PE/ZIP/DB/linked sources not acquired or executed. Source label is visible Library filename, not canonical URI.
+  本文 SHA256 `e97c8188341ee702e41475cbd87e5e4e64ed4a4974dd90ef0936d039481c3b91`
+  元パス <code>ChatGPT Library/REA_OFFLINE_20261101_04H_RESIDUE_POWER_BOUND_REPORT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2434-L2434)。
+
+- [迫真戦記 ver0.67｜REA T015｜2026-11-01 05時台（JST）](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_05H_RESIDUE_EOF_LATCH_REPORT.md?plain=1#L1-L1) — `research/recovered/library_originals3/reports/REA_OFFLINE_20261101_05H_RESIDUE_EOF_LATCH_REPORT.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Historical compilation receiptSHA matches downloaded report bytes; prior compilation is a summary, not byte-identical primary; no root source/destSHA body alias。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2435-L2435)。制約・訂正 Historical authored STATIC/INFERRED/VERIFY/NOT READY only. No new native/runtime/ABI/formal VERIFIED/Golden/READY validation. Companion evidenceJSON/Python/PE/ZIP/DB/linked sources not acquired or executed. Source label is visible Library filename, not canonical URI.
+  本文 SHA256 `a52b5a3c705d5180cb3fb88172cd0cb0675e5d2a7a85c4424ee35561a37a36af`
+  元パス <code>ChatGPT Library/REA_OFFLINE_20261101_05H_RESIDUE_EOF_LATCH_REPORT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2435-L2435)。
+
+- [迫真戦記 ver0.67｜REA独立静的研究｜2026-11-01 06時台（JST）](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_06H_MODE_LIFECYCLE_REPORT.md?plain=1#L1-L1) — `research/recovered/library_originals3/reports/REA_OFFLINE_20261101_06H_MODE_LIFECYCLE_REPORT.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Historical compilation receiptSHA matches downloaded report bytes; prior compilation is a summary, not byte-identical primary; no root source/destSHA body alias。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2436-L2436)。制約・訂正 Historical authored STATIC/INFERRED/VERIFY/NOT READY only. No new native/runtime/ABI/formal VERIFIED/Golden/READY validation. Companion evidenceJSON/Python/PE/ZIP/DB/linked sources not acquired or executed. Source label is visible Library filename, not canonical URI.
+  本文 SHA256 `bd5bb7c0c13d87ebd16ce268f773f31cab57cf6dfa40c73b81f851b7036f1888`
+  元パス <code>ChatGPT Library/REA_OFFLINE_20261101_06H_MODE_LIFECYCLE_REPORT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2436-L2436)。
+
+- [迫真戦記ver0.67｜REA独立静的研究｜2026-11-01 07時台（JST）](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_07H_MODE_SLOT_ZEROING_REPORT.md?plain=1#L1-L1) — `research/recovered/library_originals3/reports/REA_OFFLINE_20261101_07H_MODE_SLOT_ZEROING_REPORT.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Historical compilation receiptSHA matches downloaded report bytes; prior compilation is a summary, not byte-identical primary; no root source/destSHA body alias。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2437-L2437)。制約・訂正 Historical authored STATIC/INFERRED/VERIFY/NOT READY only. No new native/runtime/ABI/formal VERIFIED/Golden/READY validation. Companion evidenceJSON/Python/PE/ZIP/DB/linked sources not acquired or executed. Source label is visible Library filename, not canonical URI.
+  本文 SHA256 `424ba99bd5d95cca20332e60d2ac4720aca85a4652a921c8c5bfe4dfe4fe2b99`
+  元パス <code>ChatGPT Library/REA_OFFLINE_20261101_07H_MODE_SLOT_ZEROING_REPORT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2437-L2437)。
+
+- [迫真戦記 ver0.67｜REA/T015｜2026-11-01 08時台 P0独立静的研究](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_08H_CACHED_STREAM_STATE3_REPORT.md?plain=1#L1-L1) — `research/recovered/library_originals3/reports/REA_OFFLINE_20261101_08H_CACHED_STREAM_STATE3_REPORT.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 HISTORICAL_COMPILATION_RECEIPT_SHA_MATCH_FULL_ORIGINAL_NEWLY_CAPTURED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2438-L2438)。制約・訂正 Historical authored offline STATIC/INFERRED/VERIFY/NOT READY report; old-index and prior-record provenance retained; no new native/ABI/runtime/Golden/READY verification; linked evidence/code/EXE/ZIP/DB not acquired or executed in this review.
+  本文 SHA256 `b2d8ad564051c47cee757d833c2b038c63acf94d824fa66b1639249557232b1e`
+  元パス <code>ChatGPT Library/REA_OFFLINE_20261101_08H_CACHED_STREAM_STATE3_REPORT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2438-L2438)。
+
+- [迫真戦記 ver0.67｜REA/T015｜2026-11-01 09時台 P0静的研究](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_09H_CACHE_RECORD_REPORT.md?plain=1#L1-L1) — `research/recovered/library_originals3/reports/REA_OFFLINE_20261101_09H_CACHE_RECORD_REPORT.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 HISTORICAL_COMPILATION_RECEIPT_SHA_MATCH_FULL_ORIGINAL_NEWLY_CAPTURED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2439-L2439)。制約・訂正 Historical authored offline STATIC/INFERRED/VERIFY/NOT READY report; old-index and prior-record provenance retained; no new native/ABI/runtime/Golden/READY verification; linked evidence/code/EXE/ZIP/DB not acquired or executed in this review.
+  本文 SHA256 `93097debbddab9ca0aaddbf6cb9ec7aa71cea02f675d0a98387281d822f66f56`
+  元パス <code>ChatGPT Library/REA_OFFLINE_20261101_09H_CACHE_RECORD_REPORT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2439-L2439)。
+
+- [迫真戦記 ver0.67｜REA/T015｜2026-11-01 10時台 P0横断静的監査](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_10H_OGG_PUBLISH_BEFORE_ALLOC_REPORT.md?plain=1#L1-L1) — `research/recovered/library_originals3/reports/REA_OFFLINE_20261101_10H_OGG_PUBLISH_BEFORE_ALLOC_REPORT.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 HISTORICAL_COMPILATION_RECEIPT_SHA_MATCH_FULL_ORIGINAL_NEWLY_CAPTURED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2440-L2440)。制約・訂正 Historical authored offline STATIC/INFERRED/VERIFY/NOT READY report; old-index and prior-record provenance retained; no new native/ABI/runtime/Golden/READY verification; linked evidence/code/EXE/ZIP/DB not acquired or executed in this review.
+  本文 SHA256 `406e4fef079acd0ea3896313751bd429cda85cdbcc468fb6f4b9db7d137620dc`
+  元パス <code>ChatGPT Library/REA_OFFLINE_20261101_10H_OGG_PUBLISH_BEFORE_ALLOC_REPORT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2440-L2440)。
+
+- [迫真戦記 ver0.67｜REA/T015｜2026-11-01 11時台 P0 オフライン静的調査](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_11H_OGG_SEEK_CALLBACK_REPORT.md?plain=1#L1-L1) — `research/recovered/library_originals3/reports/REA_OFFLINE_20261101_11H_OGG_SEEK_CALLBACK_REPORT.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 HISTORICAL_COMPILATION_RECEIPT_SHA_MATCH_FULL_ORIGINAL_NEWLY_CAPTURED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2441-L2441)。制約・訂正 Historical authored offline STATIC/INFERRED/VERIFY/NOT READY report; old-index and prior-record provenance retained; no new native/ABI/runtime/Golden/READY verification; linked evidence/code/EXE/ZIP/DB not acquired or executed in this review.
+  本文 SHA256 `dd8cd77c49ba9b351d63b6e11f2748f2c48084028ec276c897029c8f548a30a0`
+  元パス <code>ChatGPT Library/REA_OFFLINE_20261101_11H_OGG_SEEK_CALLBACK_REPORT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2441-L2441)。
+
+- [迫真戦記 ver0.67｜REA/T015｜2026-11-01 12時台 P0静的研究](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_12H_OGG_SEEK_PREFLIGHT_REPORT.md?plain=1#L1-L1) — `research/recovered/library_originals3/reports/REA_OFFLINE_20261101_12H_OGG_SEEK_PREFLIGHT_REPORT.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 HISTORICAL_COMPILATION_RECEIPT_SHA_MATCH_FULL_ORIGINAL_NEWLY_CAPTURED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2442-L2442)。制約・訂正 Historical authored offline STATIC/INFERRED/VERIFY/NOT READY report; old-index and prior-record provenance retained; no new native/ABI/runtime/Golden/READY verification; linked evidence/code/EXE/ZIP/DB not acquired or executed in this review.
+  本文 SHA256 `098b2780179597439c748c3e4158cf0503d8432c2fe0037f30e5e60ab2f36724`
+  元パス <code>ChatGPT Library/REA_OFFLINE_20261101_12H_OGG_SEEK_PREFLIGHT_REPORT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2442-L2442)。
+
+- [迫真戦記 ver0.67｜REA/T015｜2026-11-01 13時台 P0静的研究](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_13H_TELL_CALLBACK_GAP_REPORT.md?plain=1#L1-L1) — `research/recovered/library_originals3/reports/REA_OFFLINE_20261101_13H_TELL_CALLBACK_GAP_REPORT.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 ORIGINAL_LIBRARY_BODY_NOT_CAPTURED;HISTORICAL_COMPILATION_METADATA_AVAILABLE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2443-L2443)。制約・訂正 Complete authored Library report rawbytes; linked ZIP/EXE/DB/code/evidence not acquired. HistoricalSTATIC/INFERRED/VERIFY claims, no new original-game/native/runtime/Golden/READY verification. Old V3 Label/function-gap claim is historical; current V9 repair and16/17H corrections must not be reverted.
+  本文 SHA256 `a856815b3c3724c8f9f317b3973969d4e2a3015eb60b899cc32147ad475b22d7`
+  元パス <code>ChatGPT Library/REA_OFFLINE_20261101_13H_TELL_CALLBACK_GAP_REPORT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2443-L2443)。
+
+- [迫真戦記 ver0.67｜REA/T015｜2026-11-01 14時台 P0静的解析](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_14H_CRT_FTELL_FRAGMENT_REPORT.md?plain=1#L1-L1) — `research/recovered/library_originals3/reports/REA_OFFLINE_20261101_14H_CRT_FTELL_FRAGMENT_REPORT.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 ORIGINAL_LIBRARY_BODY_NOT_CAPTURED;HISTORICAL_COMPILATION_METADATA_AVAILABLE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2444-L2444)。制約・訂正 Complete authored Library report rawbytes; linked ZIP/EXE/DB/code/evidence not acquired. HistoricalSTATIC/INFERRED/VERIFY claims, no new original-game/native/runtime/Golden/READY verification. Missing old indexed caller/unaff register does not prove independent ABI or mere fallthrough;16H directly-calling internal helper correction prevails.
+  本文 SHA256 `048194ee5cc0ec3de84d43bfe98623d7f24b10a1acfbefa97e1522099095df31`
+  元パス <code>ChatGPT Library/REA_OFFLINE_20261101_14H_CRT_FTELL_FRAGMENT_REPORT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2444-L2444)。
+
+- [迫真戦記 ver0.67｜REA/T015｜2026-11-01 15時台 P0独立静的調査](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_15H_OGG_SEEK64_TRUNCATION_REPORT.md?plain=1#L1-L1) — `research/recovered/library_originals3/reports/REA_OFFLINE_20261101_15H_OGG_SEEK64_TRUNCATION_REPORT.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 ORIGINAL_LIBRARY_BODY_NOT_CAPTURED;HISTORICAL_COMPILATION_METADATA_AVAILABLE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2445-L2445)。制約・訂正 Complete authored Library report rawbytes; linked ZIP/EXE/DB/code/evidence not acquired. HistoricalSTATIC/INFERRED/VERIFY claims, no new original-game/native/runtime/Golden/READY verification. Pseudo-C hypothesis is later locally native-supported by16H; no2GiB/4GiBfailure or arbitrary custom-callback claim.
+  本文 SHA256 `7b4c7f12e0bd507b67643ff07544c91170a84c95f671076a3e54382a7e7a9f1f`
+  元パス <code>ChatGPT Library/REA_OFFLINE_20261101_15H_OGG_SEEK64_TRUNCATION_REPORT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2445-L2445)。
+
+- [迫真戦記 ver0.67｜REA/T015｜2026-11-01 16時台 P0独立静的調査](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_16H_NATIVE_CALLBACK_REPORT.md?plain=1#L1-L1) — `research/recovered/library_originals3/reports/REA_OFFLINE_20261101_16H_NATIVE_CALLBACK_REPORT.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 ORIGINAL_LIBRARY_BODY_NOT_CAPTURED;HISTORICAL_COMPILATION_METADATA_AVAILABLE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2446-L2446)。制約・訂正 Complete authored Library report rawbytes; linked ZIP/EXE/DB/code/evidence not acquired. HistoricalSTATIC/INFERRED/VERIFY claims, no new original-game/native/runtime/Golden/READY verification. Reports original-x86 work from2026-11-01, not a new native test now. Tell caller/SEH/full exceptions and complete ABI remain limited; no Golden/READY promotion.
+  本文 SHA256 `c94760903a6167df8594b1cb733ed5acb7c46031f3c5000b3d107c5b06c22676`
+  元パス <code>ChatGPT Library/REA_OFFLINE_20261101_16H_NATIVE_CALLBACK_REPORT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2446-L2446)。
+
+- [経験値操作を DAT から使う設計メモ（Claude 2026-11-03、検討中・未実装）](../../research/recovered/claude_current_update3/reports/EXP_DAT_DESIGN_20261103.md?plain=1#L1-L1) — `research/recovered/claude_current_update3/reports/EXP_DAT_DESIGN_20261103.md`
+  回収状態 CONTENT_REVIEWED_EXACT_REVISION。以前の収録状況 Previous raw SHA072445be... full LF1-197 already accepted outside_design1; entire prior byte prefix identical; new LF198-209 append only。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2447-L2447)。制約・訂正 Author dated runtime/ACTUAL claims only; not independently rerun. No original native/log/code/DLL/Library/linked acquisition or execution. Prior design/STATIC and runtime chronology retained. New version preserves old source; integration destination proposed, not yet in repo.
+  本文 SHA256 `7ce0b3d49b87320499d7bdfac750c721d09120d9d81d317ff18e36d7911d56e6`
+  元パス <code>dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2447-L2447)。
+
+[前のページ](page-023.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md) · [次のページ](page-025.md)

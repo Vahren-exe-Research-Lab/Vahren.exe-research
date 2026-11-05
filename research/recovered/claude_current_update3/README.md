@@ -1,0 +1,13 @@
+# Claude現primaryの実用増分確認
+
+対象は明示承認されたprimary1literalのみ。current30679B/209LF/SHA7ce0b3d49b87320499d7bdfac750c721d09120d9d81d317ff18e36d7911d56e6。旧保存版28762B/197LF/SHA072445be4234927625ba840b2da45349b2e8b4ffd05070f8ef3eb1d5499e2000と比較し、**旧raw bytes全体がcurrentの完全同一prefix**、追加1917B（LF198–209）だけと確認した。元primaryはreadonly・stable size/mtime/SHA・literal containment/no-reparseを確認。
+
+追加LF198–209を欠落なくscope/privacy reviewした。研究者が記したruntime14/15の召喚・陣営制限・unit情報・撃破trigger・DAT hpの試験記録であり、追加段落に個人path/秘密や具体known-held payloadは見つからなかった。ログ/DLL名・hashはopaque provenanceであり、取得/実行していない。runtime12/13は旧保存済LF184–197に含まれる。旧197LFの全意味を再レビューせず、accepted reviewとexact prefix identityを再利用した。
+
+reportsの1ファイルは現在版raw exact snapshotであり、旧保存版を上書きしない。privacy変換・BOM/newline正規化なし。REPORT_LEDGERのdestinationは親が別途取り込む場合の提案relative pathで、repoへの収録済みとは主張しない。現存repo/台帳/core/Gitは変更していない。1新規版であって独立新発見数ではない。
+
+著者のACTUALは当時のプラグイン/原作観測報告として保持する。今回新たに実機・原作native・全ABI・型・general safetyを確認したものではない。原本log/code/DLL/game/Library/linked acquisition・実行は0。題名の旧「検討中・未実装」と後のruntime追記は日時別の履歴であり、一律の状態へ書き換えていない。
+
+現在REF_UNIT_EXP_SUMMONの新§12 LF177–182がruntime12–15を指す。実用修正候補として、既存LF134にも§12があるので節番号重複を解消すること、新LF178の0x4AE0F0をbattle-command executorではなく変数命令dispatcherと呼ぶことを親へ通知した。source primaryの内容修正や全技術検証ではない。
+
+INPUT_RECEIPTSはrawprefix/append proof、INCREMENT_REVIEWは追加範囲、RUNTIME_SOURCE_MAPは旧保存/新追加の区別を示す。OUTPUT_MANIFESTは自身を除く6ファイルをhashする。

@@ -7,6 +7,9 @@
 <a id="field-1c"></a>
 ## UnitData + 0x1C
 
+- [research/recovered/claude_current_update3/reports/EXP_DAT_DESIGN_20261103.md 行 89](../../research/recovered/claude_current_update3/reports/EXP_DAT_DESIGN_20261103.md?plain=1#L89-L89) — - 登録: `0x49E560`（BattleUnit を作る 0x56F880〔通常〕・0x544290〔簡易〕の両方から）。キーは UnitData+0x1C のタグ。**召喚獣も登録される**ので jocar などの名前でも引ける。同じ関数が context+0x1EEBDC（UnitData 側の表）にも登録す
+  制約・訂正　Author dated runtime/ACTUAL claims only; not independently rerun. No original native/log/code/DLL/Library/linked acquisition or execution. Prior design/STATIC and runtime chronology retained. New version preserves old source; integration destination proposed, not yet in repo.
+
 - [research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md 行 89](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md?plain=1#L89-L89) — - 登録: `0x49E560`（BattleUnit を作る 0x56F880〔通常〕・0x544290〔簡易〕の両方から）。キーは UnitData+0x1C のタグ。**召喚獣も登録される**ので jocar などの名前でも引ける。同じ関数が context+0x1EEBDC（UnitData 側の表）にも登録す
   制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
 

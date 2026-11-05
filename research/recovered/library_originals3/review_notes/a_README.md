@@ -1,0 +1,11 @@
+# Library原報告03H–07Hの全文レビュー
+
+担当はCAPTURE_INDEXの03/04/05/06/07Hの5MDだけ。全5件・45458B・299physical LFをheader-firstから残り全行まで切詰めなしで通読し、原bytes5件をreportsへ保存した。privacy変換0、whole保留0。個人path/認証情報、具体known-held payload依存、uninterpreted全面native/gameasset集合は見つからなかった。短い選別命令proof・著者分析・数学モデルと、成果物pointerは区別した。元EXE/ZIP/DB、companionJSON/Python、リンク先取得/実行0。
+
+5 sourceSHAはinbox rawbytesから独立計算しCAPTURE pinと一致、さらに既受理03–05/06–08 compilationに記録された元REPORT SHAとも一致を確認した（REVIEW_IDENTITYにexact保存SHA/receipt行）。これは親の取得が歴史receiptと同じreportであるidentityの証明であり、著者の原作命令/監査結果を今回再実証した証明ではない。取得票のUI経路は親の記録で、本担当がダウンロード操作自体を再実行したわけではない。source_pathはChatGPT Library/visiblefilenameというlabelであって正規file URIではない。
+
+03Hの局所overflow懸念は04Hの正常受理・未改変条件による上限証明と併記する。05HはEOF latch→次read拒否で前提を補う。06Hの個別mode record確保失敗と07Hのinner全体の初期化/slot解放は異なるobjectであり、後者で前者を解消しない。全ABI・alias・実到達・OOM/crash・音声type2実使用はVERIFY。旧81/100/170/186/117 PASSは歴史的著者静的監査、今回のtest/Golden/正式VERIFIEDではない。
+
+意味対応: 03–05の訂正連鎖は既存compilationに既に要約されるが、原報告の直接保存は今回初めて。06/07は現REF_AUDIO_VORBIS195–203とsymbolsの5D3DA0等に保持済みで新意味に数えない。CANDIDATESは03–05から最大3funcを提案し、正式field/relationsは提案しない。既存原著の再回収と辞書の意味採録を分け、親による独立レビュー前にcoreへ反映しない。
+
+REPORT_LEDGER destinationは将来のresearch/recovered/library_originals3/reports/各basenameを指定する。現在はprivate review_a内の保存でありGit統合済みとはしない。原本/共有/core/Git変更なし。OUTPUT_MANIFESTは自身を除く11ファイルをhashする。

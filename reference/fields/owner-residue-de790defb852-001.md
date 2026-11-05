@@ -4,8 +4,17 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-c"></a>
+## residue + 0xC
+
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_04H_RESIDUE_POWER_BOUND_REPORT.md 行 55](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_04H_RESIDUE_POWER_BOUND_REPORT.md?plain=1#L55-L55) — **KB_CANDIDATE（共有辞書へ自動採録しない）:** owner `REA/T015`、本研究ID、source旧SQLite `functions.code`/`calls` と原本PE（各SHA上記）、VA `0x005DA550 / 0x005E6E10 / 0x005DFE10 / 0x005DFFC
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY/NOT READY only. No new native/runtime/ABI/formal VERIFIED/Golden/READY validation. Companion evidenceJSON/Python/PE/ZIP/DB/linked sources not acquired or executed. Source label is visible Library filename, not canonical URI.
+
 <a id="field-10"></a>
 ## residue + 0x10
+
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_04H_RESIDUE_POWER_BOUND_REPORT.md 行 55](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_04H_RESIDUE_POWER_BOUND_REPORT.md?plain=1#L55-L55) — **KB_CANDIDATE（共有辞書へ自動採録しない）:** owner `REA/T015`、本研究ID、source旧SQLite `functions.code`/`calls` と原本PE（各SHA上記）、VA `0x005DA550 / 0x005E6E10 / 0x005DFE10 / 0x005DFFC
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY/NOT READY only. No new native/runtime/ABI/formal VERIFIED/Golden/READY validation. Companion evidenceJSON/Python/PE/ZIP/DB/linked sources not acquired or executed. Source label is visible Library filename, not canonical URI.
 
 - [research/recovered/rea_batch3/reports/REA_20261101_02H_P0_VORBIS_RESIDUE_FIRST_DIVISOR_EOF_LATCH_STATIC.md 行 18](../../research/recovered/rea_batch3/reports/REA_20261101_02H_P0_VORBIS_RESIDUE_FIRST_DIVISOR_EOF_LATCH_STATIC.md?plain=1#L18-L18) — - **次のP0**：`0x5DF7D0` 間接CALL `0x5DF991` で第2除数 `*[residue+0x10]` を生成する構造体の作成元、book dimensionの型・符号・0の許容性をV9/元機械語で追跡する。原本OGGのtype2使用有無は許可済静的資料のみを調べる。
   制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION

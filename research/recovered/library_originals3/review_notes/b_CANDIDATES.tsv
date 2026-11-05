@@ -1,0 +1,4 @@
+candidate	report_hour	physical_LF	scope	existing_coverage	limitation
+0x5D1310 initial seek/tell gate	11,12	11:21-27;12:24-28	Saved-index callback return asymmetry and tell=-1 model	09H-11H compilation35-37;12H-16H compilation24; no exact symbols entry in inspected table	Not new discovery; callback ABI/register lifetime/custom negative return reachability unverified
+0x5CF884 indexed indirect seek site	11	23,27,39	Code-position candidate, subsequent seek return -1 check	09H-11H compilation37; no exact symbols entry in inspected table	INDEX/pseudo only in this report; native window missing; not proven independent function
+0x5D14AC preflight and owner callback slots	12	18-22,28	Code-position/field-routing candidate +0x2C0/+0x2C4/+0x2C8/+0x2CC and conditional index call	12H-16H compilation24 already covers; close callback and later ftell mapping curated separately	Preflight actual arguments and ABI not resolved; no complete class/field-type inference

@@ -1,0 +1,83 @@
+{
+  "request": {
+    "threadId": "6ae476db-ed9c-83ec-9209-45d071932044",
+    "cursor": "f82ddb4f-7ab1-49bf-b6b3-f6e98e227ce6",
+    "turnLimit": 1,
+    "includeOutputs": false,
+    "maxOutputCharsPerItem": 1200
+  },
+  "thread_metadata": {
+    "id": "6ae476db-ed9c-83ec-9209-45d071932044",
+    "kind": "chatgpt",
+    "createdAt": 1793357534.986904,
+    "updatedAt": 1793559761.84118
+  },
+  "page": {
+    "order": "newest_first",
+    "limit": 1,
+    "nextCursor": "7b1f3d1c-a08d-4f13-b4de-e1d00c34bc18",
+    "hasMore": true
+  },
+  "turns": [
+    {
+      "id": "7b1f3d1c-a08d-4f13-b4de-e1d00c34bc18",
+      "status": "completed",
+      "startedAt": 1793555836.839,
+      "completedAt": 1793555955.211627,
+      "items": [
+        {
+          "id": "7b1f3d1c-a08d-4f13-b4de-e1d00c34bc18",
+          "type": "userMessage",
+          "returned_utf16": null
+        },
+        {
+          "id": "674e9e04-a48c-4ddc-8f04-9b2728cc7200",
+          "type": "agentMessage",
+          "returned_utf16": 1200
+        }
+      ]
+    }
+  ],
+  "receipt_utc": "2026-11-05T13:09:00.259805+00:00",
+  "root_rows": 2431,
+  "root_ledger_sha256": "992bd8400709bfcb3b8d09da13fb0ce23537c14d5d047d0892775db84fb47644",
+  "source_manifest_sha256": "24d9a765dc063f7c2bbf3cea4233883d5be905598bacdb1cfb234f944502924f",
+  "frozen_cursor_scope_metadata_sha256": "bea901f3b6e15f66a2aa1e1efffbabeef1747bb8008e9965193c148464298e58",
+  "read_thread_calls": 1,
+  "returned_agent_count": 1,
+  "returned_nonagent_count": 1,
+  "returned_prefix_utf8_sha256": "49aa4615d2eb368f42dd78ffc7bad2a7f4f038a3a9b053e954e1259db2c8ce64",
+  "returned_prefix_utf8_bytes": 2272,
+  "hash_scope": "Only returned capped agent text Unicode encoded UTF8; not full-message/serverDB/original-source hash",
+  "full_message_review": false,
+  "body_preserved": false,
+  "classification": "HISTORICAL_RECOVERY_ROLLUP_AND_EXISTING_COMPILATION_GUIDANCE",
+  "useful_independent_candidate_from_prefix": false,
+  "current_canonical_metadata_correspondence": [
+    {
+      "path": "research/intake/E/E-LEGACY-20261028-29-SOURCE-CROSSWALK-PART1-20261102.md",
+      "sha256": "F10D2CE90CE8AF0E5DC163FE34D9A6ADC6E13CAE4686235CBC63E08B03DE1038",
+      "bytes": "40958",
+      "current_file_presence": "EXISTS_STAT_ONLY",
+      "identity_scope": "Recorded manifest SHA256/size, not fresh linked-body read; author rollup not semantic proof"
+    },
+    {
+      "path": "research/intake/E/E-LEGACY-20261028-29-SOURCE-CROSSWALK-PART2-20261102.md",
+      "sha256": "EDA54D31A6A4A815E440835D6D21D81CC20C938057AEBDE030591255524EC3B7",
+      "bytes": "40310",
+      "current_file_presence": "EXISTS_STAT_ONLY",
+      "identity_scope": "Recorded manifest SHA256/size, not fresh linked-body read; author rollup not semantic proof"
+    }
+  ],
+  "existing_same_thread_capture": [
+    {
+      "source_uri": "chatgpt://6ae476db-ed9c-83ec-9209-45d071932044/messages/12ce19c9-641c-4838-bc46-1b9952b1b6ca",
+      "destination": "research/recovered/chat_e_archived_latest/LATEST_REPLY.md",
+      "sha256": "3894dafe38ec9bbe10ba3a011ac6a7a2b879bce9e285d6920826ef8d19c07bc1"
+    }
+  ],
+  "further_cursor_or_fuller_window_calls": 0,
+  "linked_original_native_library_code_body_acquisitions_or_execution": 0,
+  "source_core_shared_git_mutations": 0,
+  "limits": "At1200cap unseen remainder unreviewed. Recorded hasMore/nextCursor remain pending; one cursor executed is not complete archive/history recovery. Historical35/46/147/193counts and readback claims not rerun or promoted. No hold-release inferred from author exclusion claim. User/tool/attachment bodies not selected or saved."
+}

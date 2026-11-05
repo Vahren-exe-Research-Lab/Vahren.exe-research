@@ -1,0 +1,2 @@
+receipt_group	thread_id	selection	turn_limit	include_outputs	max_chars_per_item	recorded_returned_agent_count	recorded_has_more_or_older_flag	recorded_next_cursor	scope_limits
+chat_capture2	6aea0916-3ee4-83ec-b05f-2b3afe2d3f5d	LATEST_ONLY	1	false	12000	5	true	47a78203-d89b-40ac-9c91-368e7d10dcd2	4 known unselected agent IDs; 1 user item excluded; captured 2026-11-05T05:26:31Z. hasMore describes turns, not full messages.
