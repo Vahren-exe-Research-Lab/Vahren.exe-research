@@ -25,6 +25,9 @@
 - [research/recovered/other_reports/T009_CONTEXT_MODEL.md 行 86](../../research/recovered/other_reports/T009_CONTEXT_MODEL.md?plain=1#L86-L86) — - neutral_max: effective spot_capacity (`scenario/context +0x0C`) をfallbackに使用。
   制約・訂正　Historical authored static claims only; no new native/runtime validation; referenced evidence omitted; Golden/READY unchanged
 
+- [research/recovered/search_reports1/reports/_history_20261029/P0_SUMMON_EXP_OWNER_REPORT_20261021.md 行 51](../../research/recovered/search_reports1/reports/_history_20261029/P0_SUMMON_EXP_OWNER_REPORT_20261021.md?plain=1#L51-L51) — [STATIC VERIFIED] `0x551E50` はhit context actor+0x1D0非NULL、+0x18614=0、context+0xC=0、Skill+0x2A8 sentinelではない場合、context+0xCを先行1にセットし、そのactor+0x1C8の先 `R+0x16C` に量
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
 <a id="field-e"></a>
 ## context + 0xE
 
@@ -322,6 +325,12 @@
 - [research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md 行 14](../../research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md?plain=1#L14-L14) — - `0x00467DE0` の既知lookupでは `local_10 != *(context+0x300)` をhit判定の一部に使用し、hit時に `*(returned_record+0x1A4)=context` を書く。したがって `+0x2FC` はtreeオブジェクトの起点候補、`+0x300`はその
   制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
 
+<a id="field-504"></a>
+## context + 0x504
+
+- [research/recovered/plugin_reports1/reports/recruit_sort_v4/docs/EXP_PLUGIN.md 行 11](../../research/recovered/plugin_reports1/reports/recruit_sort_v4/docs/EXP_PLUGIN.md?plain=1#L11-L11) — - 名前は原作の戦闘中ユニットの名前表（評価器＝context+0x504 の +0x1EEBEC）を読み取りで引く。同名なら生存を優先（原作 0x49E780 と同じ）。
+  制約・訂正　Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=PLUGIN_VERSIONED_GUIDE_AND_OWN_CODE_EXAMPLES
+
 <a id="field-1e8630"></a>
 ## context + 0x1E8630
 
@@ -365,12 +374,6 @@
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
 
 - [research/recovered/rea_batch2/reports/REA_20261102_12H_P0_F720_EXCLUSION_TREE_RESET_WRITER_STATIC.md 行 8](../../research/recovered/rea_batch2/reports/REA_20261102_12H_P0_F720_EXCLUSION_TREE_RESET_WRITER_STATIC.md?plain=1#L8-L8) — - Clear end `0x4F8F01 MOV [EAX+4],EAX`, `0x4F8F07 MOV [EAX],EAX`, `0x4F8F0D MOV [EAX+8],EAX` sets the header links to itself; `0x4F8F10 MOV [EDI+8],0` sets cont
-  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
-
-- [research/recovered/rea_batch2/reports/REA_20261102_13H_P0_F720_EXCLUSION_TREE_SECOND_CALLER_DIPLO_STATIC.md 行 19](../../research/recovered/rea_batch2/reports/REA_20261102_13H_P0_F720_EXCLUSION_TREE_SECOND_CALLER_DIPLO_STATIC.md?plain=1#L19-L19) — - **Next legal cursor:** inspect only an independently warranted source writer/alias path for `context+0x1EED30/34` (not inferred from this read-only helper), a
-  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
-
-- [research/recovered/rea_batch2/reports/REA_20261102_14H_P0_F720_EXCLUSION_TREE_EH_FINALIZER_STATIC.md 行 19](../../research/recovered/rea_batch2/reports/REA_20261102_14H_P0_F720_EXCLUSION_TREE_EH_FINALIZER_STATIC.md?plain=1#L19-L19) — - **Next lawful cursor:** bounded original-x86 audit of `0x4F8C50` alternate iterator path and the owning FuncInfo call chain, then a distinct search for the st
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

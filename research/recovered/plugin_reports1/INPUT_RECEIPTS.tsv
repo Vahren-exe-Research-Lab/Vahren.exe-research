@@ -1,0 +1,5 @@
+role	input_path	sha256	bytes	interpretation
+approved_selection	hakushin-plugin_reports1-approved.tsv	6cbcfcf7f74532955ba346d34369911eeed013e4be0c0d2e2cef7352b73aefd6	7645	Read-only selection/base snapshot; catalog hashes are historical identity checks, not advance approval of new hashes
+source_manifest	SOURCE_MANIFEST.tsv	14ce1326eb35494f352f8e810992d29669140bf10c3ae95cfca58310e801a758	408808	Read-only selection/base snapshot; catalog hashes are historical identity checks, not advance approval of new hashes
+source_catalog	RESEARCH_SOURCE_CATALOG.tsv	f14e3bd401a836039f678e9238c6490e2200385efb0fbb602e62f626ec679cf4	350283	Read-only selection/base snapshot; catalog hashes are historical identity checks, not advance approval of new hashes
+root_recovery_ledger	research/recovered/RECOVERY_LEDGER.tsv	3dc9a404620d1f99ad10c47a5bd3e5ad6ddde2bb466e670792d7fa8406112d78	977249	Read-only selection/base snapshot; catalog hashes are historical identity checks, not advance approval of new hashes

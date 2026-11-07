@@ -1,0 +1,5 @@
+input_label	bytes	sha256	version	scope
+SOURCE_MANIFEST.tsv	408808	14CE1326EB35494F352F8E810992D29669140BF10C3AE95CFCA58310E801A758	Coordinator fixed main2a6af7b baseline metadata; rootledger1395 rows	Metadata only; no report blobs or native payloads read
+RESEARCH_SOURCE_CATALOG.tsv	350283	F14E3BD401A836039F678E9238C6490E2200385EFB0FBB602E62F626EC679CF4	Coordinator fixed main2a6af7b baseline metadata; rootledger1395 rows	Metadata only; no report blobs or native payloads read
+research/recovered/RECOVERY_LEDGER.tsv	977249	3DC9A404620D1F99AD10C47A5BD3E5AD6DDDE2BB466E670792D7FA8406112D78	Coordinator fixed main2a6af7b baseline metadata; rootledger1395 rows	Metadata only; no report blobs or native payloads read
+Exact selected GitHub blob	32354	D66F3E87AB0D000B58991D19D45F248B2FFEC0A7AF07BA8B7400348355531857	PR16 head68c5ec9ec766776f027ac27e77c8b50d0f3b80de / blob28e87d274af9d18189f5785dc4fee83738323a5f	Full bounded authored MD only; linked files not fetched; raw bytes remained in memory

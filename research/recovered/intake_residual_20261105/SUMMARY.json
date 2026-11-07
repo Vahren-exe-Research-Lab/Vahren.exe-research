@@ -1,0 +1,19 @@
+{
+  "base": "2a6af7b389d82a92b85bef475aaf981d31d1990d",
+  "selected_local_markdown_paths": 167,
+  "adopted_local_bodies": 150,
+  "exact_original_bodies": 136,
+  "complete_privacy_variants": 14,
+  "privacy_edits": 17,
+  "whole_local_deferrals": 17,
+  "external_pr_whole_deferrals": 1,
+  "body_aliases": 0,
+  "root_ledger_rows": 1545,
+  "inventory": {
+    "UNREVIEWED_CURRENT_PATH": 44,
+    "RECOVERY_RECEIPT_PRESENT": 1459,
+    "KNOWN_REVIEW_HOLD": 87,
+    "DEFERRED_OTHER_OR_PENDING": 10
+  },
+  "scope": "Only150accepted literal originals reread byparent;17held originals notopened. SelectedPRcrosswalk metadata only, no rootacceptedURI/body. No semantic/type/confidence/runtime promotion or original cleanup."
+}

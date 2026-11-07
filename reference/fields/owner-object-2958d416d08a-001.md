@@ -34,6 +34,12 @@
 - [research/recovered/b_batch9/data/T013_GROUP_AGGREGATE_LIFECYCLE_V3_20261023_1519.md 行 7](../../research/recovered/b_batch9/data/T013_GROUP_AGGREGATE_LIFECYCLE_V3_20261023_1519.md?plain=1#L7-L7) — V3 FUNCTION 0x00569280 (222 bytes, stored Ghidra pseudoC, ABI_UNVERIFIED): writes group-like object +0x34=0 on entry, walks [object+0x0C, +0x10) Unit pointers,
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
+<a id="field-50"></a>
+## object + 0x50
+
+- [research/recovered/plugin_reports1/reports/T024_OPTIONAL_DOUBLE_FALLBACK_THUNK_V9_STATIC_20261101_23H.md 行 16](../../research/recovered/plugin_reports1/reports/T024_OPTIONAL_DOUBLE_FALLBACK_THUNK_V9_STATIC_20261101_23H.md?plain=1#L16-L16) — KB_CANDIDATE: 0x542280 / E8 0x5422B0 -> 0x5E743A / E9 0x5E743F -> 0x5E4F10; object +0x50(double)/+0x40/+0x38; globals 0x63B0B8/0x62A190; caller 0x52722F/258/28B
+  制約・訂正　Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=B_STATIC_CANDIDATE_ERRATUM
+
 <a id="field-54"></a>
 ## object + 0x54
 

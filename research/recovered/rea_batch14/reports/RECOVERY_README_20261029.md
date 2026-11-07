@@ -1,0 +1,21 @@
+# REA過去オフライン研究資料の復旧・保存台帳（2026-10-29）
+- Recovery ID: REA-RESTORE-20261029-LIBRARY-ALL-166-01
+- Status: PC-ARCHIVED / FORMAL-UNSYNCED / STATIC / VERIFY / NOT READY
+- Source: ChatGPT Library `/迫真戦記再開発プロジェクト/REA_OFFLINE_UNSYNCED/`
+- Original target EXE SHA256: E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187
+- PC recovery folder: `files/`（新規専用フォルダ。既存研究の上書きなし）
+- Source files: **166件／1,286,485バイト**。日別 20261021=5、22=41、23=48、24=36、25=10、28=26。
+- Entire-file canonical SHA256 inventory digest: `20D28FBF45EC7AAD520263ED438D7E37F502D563D600C31650EFB2E726C53081`
+- Computation: filenameのOrdinal順に `filename<TAB>SHA256_UPPER<LF>` を連結し、そのUTF-8にSHA256。
+- 原本はLibraryの保存済みファイルと照合。PC復旧済み166件は**原本と全件ハッシュ一致**。
+- 手続き上の復旧保存と正式なREA証拠検証・正本統合は別。既存正式VERIFIEDの過去報告64件は再計上しない。
+- この復旧での新規正式VERIFIED=0、新規実機Golden PASS=0。strict MATCHと完全複製率は未測定。
+- 各研究報告にある元々のPASS数は、既往の静的検査の記録。今回再実行した値ではない。
+- 全スクリプトの実行・新Ghidra/REA実行・ゲーム実機テストは**NOT RUN**。未実行の結果を作成していない。
+- 保存済み旧run/QUEUE/PROGRESS/MASTER、A～E/T018、Git、原本ZIP/EXE/SAVE、公開先、スケジュールは変更なし。
+- 元資料の由来ID・個別ハッシュ・保存結果は `RECOVERY_MANIFEST.json` に保存済み。
+- 修復時の一時失敗: 呼出回数上限により転送が途中中断→保存済みpartを確認し、残りから再開。staging内ハッシュ算出の不備は原本復旧前に訂正、各ファイルSHA256照合で確認。
+- 過去のLocal通信429/Session terminatedは接続障害であり、安全拒否ではない。今回の作業で安全拒否経路の再試行は行っていない。
+- `staging/` は復旧用受領記録。正式統合が確認されるまで保存し、上書き・削除しない。
+- 次の安全な作業: owner/active.lock・最新MASTER/QUEUE/PROGRESS・既存ID・SHAを再照合し、重複しない成果だけ正式管理者に同期する。
+- 原本に存在しない未作成資料や未実行Golden結果は復元できないため、確認済み対象は上記Library166件に限定。

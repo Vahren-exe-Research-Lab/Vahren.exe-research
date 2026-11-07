@@ -7,6 +7,12 @@
 <a id="field-1eed30"></a>
 ## context + 0x1EED30
 
+- [research/recovered/rea_batch2/reports/REA_20261102_13H_P0_F720_EXCLUSION_TREE_SECOND_CALLER_DIPLO_STATIC.md 行 19](../../research/recovered/rea_batch2/reports/REA_20261102_13H_P0_F720_EXCLUSION_TREE_SECOND_CALLER_DIPLO_STATIC.md?plain=1#L19-L19) — - **Next legal cursor:** inspect only an independently warranted source writer/alias path for `context+0x1EED30/34` (not inferred from this read-only helper), a
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
+
+- [research/recovered/rea_batch2/reports/REA_20261102_14H_P0_F720_EXCLUSION_TREE_EH_FINALIZER_STATIC.md 行 19](../../research/recovered/rea_batch2/reports/REA_20261102_14H_P0_F720_EXCLUSION_TREE_EH_FINALIZER_STATIC.md?plain=1#L19-L19) — - **Next lawful cursor:** bounded original-x86 audit of `0x4F8C50` alternate iterator path and the owning FuncInfo call chain, then a distinct search for the st
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
+
 - [research/recovered/rea_batch2/reports/REA_20261102_14H_P0_F720_EXCLUSION_TREE_EH_FINALIZER_STATIC.md 行 26](../../research/recovered/rea_batch2/reports/REA_20261102_14H_P0_F720_EXCLUSION_TREE_EH_FINALIZER_STATIC.md?plain=1#L26-L26) — - **Correction/next:** the EH finalizer has both a full-range clear/reset branch and an alternate erase/decrement branch; exact iterator/balance invariants, exc
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
 

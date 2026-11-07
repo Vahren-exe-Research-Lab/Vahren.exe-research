@@ -196,11 +196,26 @@
 - [research/recovered/rea_batch11/reports/REA_20261015_2240_POSTLETHAL_EVENT_FLAG_ABI.md 行 9](../../research/recovered/rea_batch11/reports/REA_20261015_2240_POSTLETHAL_EVENT_FLAG_ABI.md?plain=1#L9-L9) — - EXACT GUARD: 0x4321F4 flag!=0 THEN 0x432209 CMP BYTE [engine+0x1EEC44],0。両方非0なら0x432216 battle-special routeへ進み、一般経路0x432306をskipする。flag=1でもengine battle flag
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
 
+- [research/recovered/rea_batch14/reports/STATIC_SPATIAL_EVENT_MISSILE_20261010.md 行 20](../../research/recovered/rea_batch14/reports/STATIC_SPATIAL_EVENT_MISSILE_20261010.md?plain=1#L20-L20) — - 入口`in_stack_0000002c !=0 && engine+0x1EEC44 !=0`はearly special route（0x4321B0のgeneral bodyをskip）。このbranchは同関数内数値writer`0x4637A0`のsite 0x432379、通常の`0x40B200`3
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
+- [research/recovered/rea_batch14/reports/WAVE4_FINDINGS_20261010.md 行 10](../../research/recovered/rea_batch14/reports/WAVE4_FINDINGS_20261010.md?plain=1#L10-L10) — - Ghidra疑似コードは `engine+0x1EEC44`（battle flag）とcallerからのflagにより、イベントblockの展開やqueue操作が分かれることを示す。`0x465060(...,"event",...)` / `0x4647D0` によるScriptBlock/field look
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
+- [research/recovered/rea_batch14/reports/WAVE4_FINDINGS_20261010.md 行 72](../../research/recovered/rea_batch14/reports/WAVE4_FINDINGS_20261010.md?plain=1#L72-L72) — - `in_stack_0000002c != 0 && engine+0x1EEC44 != 0` の早期特殊分岐は `0x465060` へのdispatchとcleanup側へ向かい、この関数内の **`0x4637A0` 呼出site 0x432379 を通らない**。他の経路では `0x4637A0`の数値変
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
 - [research/recovered/script_topics/T010_EVENT_SCHEDULER.md 行 375](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L375-L375) — [CONFIRMED-SAVED-NATIVE / NEW GATE] A所有 `exe/T006_FLOW_CONTROL_PROBE.txt` 0x4335E0..0x433621。`[engine+0x1EEC3C]`のmode分岐でmode1は0x433617を経て`0x4338D0`へ、mode6は0x433
   制約・訂正　Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
 
 - [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 169](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L169-L169) — - 0x493630 は `engine+0x1EEC44` battle-active byteを0へ戻し、+0x1EEC48、+0x1EED40/+0x1EED42をresetし、battleEvent active-root list `+0x1EEDB8` をclearする。executionMode==2では
   制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
+<a id="field-1eec4d"></a>
+## engine + 0x1EEC4D
+
+- [research/recovered/rea_batch14/reports/STATIC_SPATIAL_EVENT_MISSILE_20261010.md 行 27](../../research/recovered/rea_batch14/reports/STATIC_SPATIAL_EVENT_MISSILE_20261010.md?plain=1#L27-L27) — - 次に0x432B49で`engine+0x1EEC4D=1`を設定し、後続event lookup/scene sheet処理がある。これらのpointerがUIで何を表示するか、nested event後の復元順序はVERIFY。これは**scene reference selection contract**で
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
 
 <a id="field-1eec71"></a>
 ## engine + 0x1EEC71
@@ -270,6 +285,12 @@
 
 - [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 271](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L271-L271) — - opcode23 `shadow`: 0引数ならactive object `engine+0x1EED70`をremove/freeして0化。引数ありでは既存objectを置換し、direction/color/alpha/density系6値を使って0x8C-byte shadow objectを生成・regi
   制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
+<a id="field-1eed7c"></a>
+## engine + 0x1EED7C
+
+- [research/recovered/rea_batch14/reports/WAVE4_FINDINGS_20261010.md 行 10](../../research/recovered/rea_batch14/reports/WAVE4_FINDINGS_20261010.md?plain=1#L10-L10) — - Ghidra疑似コードは `engine+0x1EEC44`（battle flag）とcallerからのflagにより、イベントblockの展開やqueue操作が分かれることを示す。`0x465060(...,"event",...)` / `0x4647D0` によるScriptBlock/field look
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
 
 <a id="field-1eed8c"></a>
 ## engine + 0x1EED8C

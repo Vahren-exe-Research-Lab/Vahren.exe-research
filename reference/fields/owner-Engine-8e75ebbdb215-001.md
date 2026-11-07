@@ -10,6 +10,42 @@
 - [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1134_T014_NEWMODEL_ENGINE_BACKREF_AUDIT.md 行 48](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1134_T014_NEWMODEL_ENGINE_BACKREF_AUDIT.md?plain=1#L48-L48) — └─ [Engine+0x08] = 0x008BE378  (GameWindow)
   制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
 
+<a id="field-1e8630"></a>
+## Engine + 0x1E8630
+
+- [research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md 行 51](../../research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md?plain=1#L51-L51) — ## Engine +0x1E8630
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
+<a id="field-1e8634"></a>
+## Engine + 0x1E8634
+
+- [research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md 行 55](../../research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md?plain=1#L55-L55) — ## Engine +0x1E8634
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
+<a id="field-1e8638"></a>
+## Engine + 0x1E8638
+
+- [research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md 行 59](../../research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md?plain=1#L59-L59) — ## Engine +0x1E8638
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
+<a id="field-1eec3c"></a>
+## Engine + 0x1EEC3C
+
+- [research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md 行 31](../../research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md?plain=1#L31-L31) — ## Engine +0x1EEC3C
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
+<a id="field-1eec44"></a>
+## Engine + 0x1EEC44
+
+- [research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md 行 35](../../research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md?plain=1#L35-L35) — ## Engine +0x1EEC44
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
+<a id="field-1eec48"></a>
+## Engine + 0x1EEC48
+
+- [research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md 行 39](../../research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md?plain=1#L39-L39) — ## Engine +0x1EEC48
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
 <a id="field-1eecfc"></a>
 ## Engine + 0x1EECFC
 
@@ -43,6 +79,9 @@
 - [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md 行 88](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md?plain=1#L88-L88) — \| `param_3` stack \| `[Engine+0x1EED1C]` \|
   制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
 
+- [research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md 行 7](../../research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md?plain=1#L7-L7) — ## Engine +0x1EED1C
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
 <a id="field-1eed28"></a>
 ## Engine + 0x1EED28
 
@@ -52,6 +91,24 @@
 - [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md 行 69](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md?plain=1#L69-L69) — **(B) `Engine+0x1EED28!=0`：** `0x00492CDF`の`FUN_00597A20`の戻り値`+0x20`からEDI取得。EDI==0なら`0x00492D30: CALL 0x0046F4C0`により別途値を取得する経路がある。`0x00492D37`以降で共通の3引数pushへ。
   制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
 
+<a id="field-1eed40"></a>
+## Engine + 0x1EED40
+
+- [research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md 行 75](../../research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md?plain=1#L75-L75) — ## Engine +0x1EED40
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
+<a id="field-1eed42"></a>
+## Engine + 0x1EED42
+
+- [research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md 行 79](../../research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md?plain=1#L79-L79) — ## Engine +0x1EED42
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
+<a id="field-1eed43"></a>
+## Engine + 0x1EED43
+
+- [research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md 行 19](../../research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md?plain=1#L19-L19) — ## Engine +0x1EED43
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
 <a id="field-1eed44"></a>
 ## Engine + 0x1EED44
 
@@ -60,6 +117,9 @@
 
 - [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md 行 87](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md?plain=1#L87-L87) — \| `param_2` EDX \| `[Engine+0x1EED44]` \|
   制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md 行 23](../../research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md?plain=1#L23-L23) — ## Engine +0x1EED44
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
 
 <a id="field-1eed48"></a>
 ## Engine + 0x1EED48
@@ -73,6 +133,39 @@
 - [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md 行 89](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md?plain=1#L89-L89) — \| `param_4` stack \| `[Engine+0x1EED48]` \|
   制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
 
+- [research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md 行 27](../../research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md?plain=1#L27-L27) — ## Engine +0x1EED48
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
+<a id="field-1eed4c"></a>
+## Engine + 0x1EED4C
+
+- [research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md 行 11](../../research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md?plain=1#L11-L11) — ## Engine +0x1EED4C
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
+<a id="field-1eed50"></a>
+## Engine + 0x1EED50
+
+- [research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md 行 15](../../research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md?plain=1#L15-L15) — ## Engine +0x1EED50
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
+<a id="field-1eed60"></a>
+## Engine + 0x1EED60
+
+- [research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md 行 63](../../research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md?plain=1#L63-L63) — ## Engine +0x1EED60
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
+<a id="field-1eed64"></a>
+## Engine + 0x1EED64
+
+- [research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md 行 67](../../research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md?plain=1#L67-L67) — ## Engine +0x1EED64
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
+<a id="field-1eed68"></a>
+## Engine + 0x1EED68
+
+- [research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md 行 71](../../research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md?plain=1#L71-L71) — ## Engine +0x1EED68
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
 <a id="field-1eed6c"></a>
 ## Engine + 0x1EED6C
 
@@ -84,6 +177,30 @@
 
 - [research/recovered/rea_batch2/reports/REA_20261103_12H_P0_CLEANUP_VPTR_TARGET_AND_FLAG_ABI_STATIC.md 行 12](../../research/recovered/rea_batch2/reports/REA_20261103_12H_P0_CLEANUP_VPTR_TARGET_AND_FLAG_ABI_STATIC.md?plain=1#L12-L12) — 2. Distinct producer `0x542EF0` uses allocated pointer held in **ESI** (set by `0x4A2741`) and writes `[ESI] = 0x638CAC` at `0x542EF7`, then replaces it with **
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
+
+<a id="field-1eedb8"></a>
+## Engine + 0x1EEDB8
+
+- [research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md 行 43](../../research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md?plain=1#L43-L43) — ## Engine +0x1EEDB8
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
+<a id="field-1eedbc"></a>
+## Engine + 0x1EEDBC
+
+- [research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md 行 47](../../research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md?plain=1#L47-L47) — ## Engine +0x1EEDBC
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
+<a id="field-1eedc4"></a>
+## Engine + 0x1EEDC4
+
+- [research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md 行 83](../../research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md?plain=1#L83-L83) — ## Engine +0x1EEDC4
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
+<a id="field-1eedd4"></a>
+## Engine + 0x1EEDD4
+
+- [research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md 行 87](../../research/recovered/search_reports1/reports/BATTLE_BRIDGE_FIELD_XREFS_20261021.md?plain=1#L87-L87) — ## Engine +0x1EEDD4
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
 
 <a id="field-1eedf4"></a>
 ## Engine + 0x1EEDF4

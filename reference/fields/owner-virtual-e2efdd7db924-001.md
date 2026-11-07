@@ -10,6 +10,12 @@
 - [research/recovered/e_batch4/T020_FASTSIM_TAIL_MULTIENTRY_CROSSWALK_20261023_2153.md 行 10](../../research/recovered/e_batch4/T020_FASTSIM_TAIL_MULTIENTRY_CROSSWALK_20261023_2153.md?plain=1#L10-L10) — 0x0040E220 pseudoCでは ret!=0 の後、virtual +0x10→0x00493630→0x0040F000→0x0048ABF0 と進み、iVar1+0x1EF175のbyteが0なら 0x0040E2D2 からcalleeを呼ぶ。
   制約・訂正　Historical authored claims only; referenced payloads not opened or executed; actual INELIGIBLE/NOT RUN and historical counts preserved; no new native/runtime/Golden/strict MATCH/READY; excluded composites remain deferred outside this subset
 
+<a id="field-14"></a>
+## virtual + 0x14
+
+- [research/recovered/search_reports1/reports/BATTLE_TAKEOVER_FEASIBILITY_REVIEW_20261021.md 行 34](../../research/recovered/search_reports1/reports/BATTLE_TAKEOVER_FEASIBILITY_REVIEW_20261021.md?plain=1#L34-L34) — - 0x493630は3side virtual+0x14、戦闘active/時計/イベント列のclear、結果処理、退却/死亡/所属・勢力の変更、World再入を含み得る。通常呼出側のrawflag 0/1は単なる画面勝利boolでない。
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
 <a id="field-18"></a>
 ## virtual + 0x18
 

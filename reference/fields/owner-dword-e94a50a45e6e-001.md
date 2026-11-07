@@ -4,6 +4,18 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-5c"></a>
+## dword + 0x5C
+
+- [research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md 行 34](../../research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md?plain=1#L34-L34) — - prefixはstring +0、bytes +0x1C/+0x1D、dword +0x5C、strings +0x24/+0x40、dwords +0x20/+0x60、string +0x74。RB-tree +0x68 names/empty終端、28-byte vector +0x90/+0x94 name
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
+<a id="field-70"></a>
+## dword + 0x70
+
+- [research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md 行 9](../../research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md?plain=1#L9-L9) — - writerは string +0,+0x1C → raw dword +0x70 → string +0x38,+0x54 → 7 raw byte +0x74..+0x7A → dword +0x80 → string +0x84 → raw dword +0xC8,+0xCC,+0x174,+0xBC,+0x
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
 <a id="field-80"></a>
 ## dword + 0x80
 
@@ -12,5 +24,38 @@
 
 - [research/recovered/b_batch2/T028_LOYAL_DOWN_POINTER_KEY_GUARD_NATIVE_20261028_06H.md 行 12](../../research/recovered/b_batch2/T028_LOYAL_DOWN_POINTER_KEY_GUARD_NATIVE_20261028_06H.md?plain=1#L12-L12) — - 非memberかつ名前解決成功時 0x494931 CALL 0x5882F0→4byte参照配列を走査。0x494968..84で候補byte+0x77==0、byte+0x75!=0、byte+0x7A==0、signed dword+0x80<3 のゲートを満たす候補だけ0x494986で [candidat
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+- [research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md 行 9](../../research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md?plain=1#L9-L9) — - writerは string +0,+0x1C → raw dword +0x70 → string +0x38,+0x54 → 7 raw byte +0x74..+0x7A → dword +0x80 → string +0x84 → raw dword +0xC8,+0xCC,+0x174,+0xBC,+0x
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
+<a id="field-88"></a>
+## dword + 0x88
+
+- [research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md 行 28](../../research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md?plain=1#L28-L28) — - tree後には**明示的な空文字delimiterなし**で `capacity` literal（0x598E11）→raw dword +0x88、`castlebattle`→dword +0x8C、`fightvalue`→dword +0x90、`dunname`→string +0x48、最後にempt
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
+<a id="field-8c"></a>
+## dword + 0x8C
+
+- [research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md 行 28](../../research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md?plain=1#L28-L28) — - tree後には**明示的な空文字delimiterなし**で `capacity` literal（0x598E11）→raw dword +0x88、`castlebattle`→dword +0x8C、`fightvalue`→dword +0x90、`dunname`→string +0x48、最後にempt
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
+<a id="field-90"></a>
+## dword + 0x90
+
+- [research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md 行 28](../../research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md?plain=1#L28-L28) — - tree後には**明示的な空文字delimiterなし**で `capacity` literal（0x598E11）→raw dword +0x88、`castlebattle`→dword +0x8C、`fightvalue`→dword +0x90、`dunname`→string +0x48、最後にempt
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
+<a id="field-c8"></a>
+## dword + 0xC8
+
+- [research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md 行 9](../../research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md?plain=1#L9-L9) — - writerは string +0,+0x1C → raw dword +0x70 → string +0x38,+0x54 → 7 raw byte +0x74..+0x7A → dword +0x80 → string +0x84 → raw dword +0xC8,+0xCC,+0x174,+0xBC,+0x
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
+<a id="field-d0"></a>
+## dword + 0xD0
+
+- [research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md 行 35](../../research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md?plain=1#L35-L35) — - 上記treeの後は literal `fixtype` → raw dword +0xD0、`train_max`→ +0xD4、`train_up`→ +0xD8、`base_level`→ +0xDC、`home_spot`→ vector +0xC0/+0xC4 の順。home_spot vectorは28-
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

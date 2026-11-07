@@ -49,11 +49,20 @@
 - [research/recovered/b_batch4/data/B_T012_T013_PERSON_POOL_LIFECYCLE_OFFLINE_20261023_1215.md 行 44](../../research/recovered/b_batch4/data/B_T012_T013_PERSON_POOL_LIFECYCLE_OFFLINE_20261023_1215.md?plain=1#L44-L44) — **優先検索：** `callers/related 0x005149C0, 0x00514AA0`（一括クリアをいつ呼ぶか）、`callers 0x00514F10`、`function 0x00547DB0`の`owner+0x48/+0x4C`全writerと`+0x1D4`参照先のPerson同定、`0x005
   制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
 
+- [research/recovered/rea_batch14/reports/STATIC_DECOMP_COMPAT_CORRECTIONS_20261010.md 行 25](../../research/recovered/rea_batch14/reports/STATIC_DECOMP_COMPAT_CORRECTIONS_20261010.md?plain=1#L25-L25) — - primary SimpleUnit（owner+0x48）内ではstrict `newDistance<bestDistance`の時だけbestを更新、同距離で先勝ち。primary bestがcandidate+0x18C範囲内ならそのままfast return。
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
 <a id="field-4c"></a>
 ## owner + 0x4C
 
 - [research/recovered/b_batch8/data/T012_T013_4C60F0_DUAL_CALLSITE_CONTEXT_20261019.md 行 6](../../research/recovered/b_batch8/data/T012_T013_4C60F0_DUAL_CALLSITE_CONTEXT_20261019.md?plain=1#L6-L6) — [NEW CROSSSITE-B2] VA0x54E533で[ESI+0x9C]-=EDI。0x54E539..0x54E552でowner pointer [ESI+0x94]の+0x40/+0x48中点をECXに作り、EAX=[owner+0x4C]−[ESI+0x9C]を作る。0x54E554 PUSH [ESI
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+<a id="field-58"></a>
+## owner + 0x58
+
+- [research/recovered/rea_batch14/reports/STATIC_DECOMP_COMPAT_CORRECTIONS_20261010.md 行 26](../../research/recovered/rea_batch14/reports/STATIC_DECOMP_COMPAT_CORRECTIONS_20261010.md?plain=1#L26-L26) — - primaryが範囲外でも初期best pointer/distanceをresetせず、fallback SimpleStaticUnit（owner+0x58）は**今のbest距離より短い場合だけ**更新する。fallbackが同距離/遠い場合もnative helper出力bestは元primaryに残り得
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
 
 <a id="field-70"></a>
 ## owner + 0x70
@@ -202,6 +211,18 @@
 - [research/recovered/b_reports/T024_FALLBACK_FLAG_LATCH_FOURWAY_NATIVE_20261025_23H.md 行 16](../../research/recovered/b_reports/T024_FALLBACK_FLAG_LATCH_FOURWAY_NATIVE_20261025_23H.md?plain=1#L16-L16) — - Golden必要条件：無改変同EXE・20倍強化前DAT・同SAVE/MAP/input/RNGで個別pair単独/複数同時、owner+0x334 / +0x14・state+0x18C各WORD・候補span前後・call 0x4C7040各ECX・次tick/可視行動を比較。未実施、Golden PASS0
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail; source addendum limits missing-call claim to legacy20261021 DB, not V3
 
+<a id="field-34c"></a>
+## owner + 0x34C
+
+- [research/recovered/plugin_reports1/reports/T013_T024_MODE0_DISPATCH_UPSTREAM_GATES_NATIVE_20261101_21H.md 行 12](../../research/recovered/plugin_reports1/reports/T013_T024_MODE0_DISPATCH_UPSTREAM_GATES_NATIVE_20261101_21H.md?plain=1#L12-L12) — 0x528DF9 XOR ESI,ESI → 0x528DFB CMP DWORD [EBP+0x34C],ESI → 0x528E01 JE 0x5295BA。owner+0x34C==0では対象分岐全体へ進まない。
+  制約・訂正　Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=B_STATIC_CANDIDATE_ERRATUM
+
+- [research/recovered/plugin_reports1/reports/T013_T024_MODE0_DISPATCH_UPSTREAM_GATES_NATIVE_20261101_21H.md 行 21](../../research/recovered/plugin_reports1/reports/T013_T024_MODE0_DISPATCH_UPSTREAM_GATES_NATIVE_20261101_21H.md?plain=1#L21-L21) — KB_CANDIDATE：owner B/T013,T024、VA 0x528DB0/0x528DFB/0x528E01/0x528E45/0x528E4D/0x528E59/0x528E6A/0x528E86/0x528E93、off owner+0x34C/+0x474/+0x348,candidate+0x1C。
+  制約・訂正　Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=B_STATIC_CANDIDATE_ERRATUM
+
+- [research/recovered/plugin_reports1/reports/T013_T024_MODE0_DISPATCH_UPSTREAM_GATES_NATIVE_20261101_21H.md 行 22](../../research/recovered/plugin_reports1/reports/T013_T024_MODE0_DISPATCH_UPSTREAM_GATES_NATIVE_20261101_21H.md?plain=1#L22-L22) — 原作Golden要件：同一runの無改変原作EXE/DAT・SAVE/MAP/input/RNG、owner+0x34C=0/非0、mode0/他、list空/非空、candidate+0x1C=0/1/混在、それぞれのcall出現/候補順/翌tickの結果を独立観測。NOT RUN。
+  制約・訂正　Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=B_STATIC_CANDIDATE_ERRATUM
+
 <a id="field-364"></a>
 ## owner + 0x364
 
@@ -216,6 +237,12 @@
 
 - [research/recovered/rea_batch11/reports/REA_20261018_2340_DEATH_SELECTION_PREFIX_CONTRACT_CROSSCHECK_QC.md 行 6](../../research/recovered/rea_batch11/reports/REA_20261018_2340_DEATH_SELECTION_PREFIX_CONTRACT_CROSSCHECK_QC.md?plain=1#L6-L6) — - [STATIC CROSSCHECK 2] 解除後owner+0x34Cが0、かつ((owner+0x368-owner+0x364)&0xFFFFFFFC)==0の2条件でowner+0x45Dを0化。Work count=oldcount-len(selection)、bitmask比較、hide→+0x45D
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+<a id="field-430"></a>
+## owner + 0x430
+
+- [research/recovered/plugin_reports1/reports/T024_DUAL_CALLER_FACTOR_PROVENANCE_STATIC_20261101_22H.md 行 10](../../research/recovered/plugin_reports1/reports/T024_DUAL_CALLER_FACTOR_PROVENANCE_STATIC_20261101_22H.md?plain=1#L10-L10) — V9 functions/0052/005271A0.c 相当: entry 0x5271A0、body [0x5271A0,0x5276BF] 1312B。0x5272AB E8 00 1B 00 00 -> 0x528DB0 は検証済みdirect CALL。直前に0x542280を呼び返値由来のdoubleを第3
+  制約・訂正　Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=B_STATIC_CANDIDATE_ERRATUM
 
 <a id="field-3ca0"></a>
 ## owner + 0x3CA0

@@ -10,6 +10,12 @@
 - [research/recovered/b_reports/T013_T024_528E86_GROUP1C_GATE_DISPATCH_NATIVE_20261101_20H.md 行 6](../../research/recovered/b_reports/T013_T024_528E86_GROUP1C_GATE_DISPATCH_NATIVE_20261101_20H.md?plain=1#L6-L6) — 新発見を狭く限定: 既存の 0x528DB0 → 0x569730、二つの距離ソート後 CALL (0x529750/0x529921) と、10/23の T013 Troop 配送研究は先行成果。**今回の新規差分は先行 B 5-owner markdown/HANDOFF に字句未掲載の 0x528E86 入口と、
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
+- [research/recovered/plugin_reports1/reports/T013_T024_MODE0_DISPATCH_UPSTREAM_GATES_NATIVE_20261101_21H.md 行 21](../../research/recovered/plugin_reports1/reports/T013_T024_MODE0_DISPATCH_UPSTREAM_GATES_NATIVE_20261101_21H.md?plain=1#L21-L21) — KB_CANDIDATE：owner B/T013,T024、VA 0x528DB0/0x528DFB/0x528E01/0x528E45/0x528E4D/0x528E59/0x528E6A/0x528E86/0x528E93、off owner+0x34C/+0x474/+0x348,candidate+0x1C。
+  制約・訂正　Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=B_STATIC_CANDIDATE_ERRATUM
+
+- [research/recovered/plugin_reports1/reports/T013_T024_MODE0_DISPATCH_UPSTREAM_GATES_NATIVE_20261101_21H.md 行 22](../../research/recovered/plugin_reports1/reports/T013_T024_MODE0_DISPATCH_UPSTREAM_GATES_NATIVE_20261101_21H.md?plain=1#L22-L22) — 原作Golden要件：同一runの無改変原作EXE/DAT・SAVE/MAP/input/RNG、owner+0x34C=0/非0、mode0/他、list空/非空、candidate+0x1C=0/1/混在、それぞれのcall出現/候補順/翌tickの結果を独立観測。NOT RUN。
+  制約・訂正　Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=B_STATIC_CANDIDATE_ERRATUM
+
 <a id="field-40"></a>
 ## candidate + 0x40
 

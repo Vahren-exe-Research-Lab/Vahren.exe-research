@@ -16,6 +16,18 @@
 - [research/recovered/exp/EXP_SUMMON_DESTRUCTOR_NORMAL_VTABLE_20261022.md 行 23](../../research/recovered/exp/EXP_SUMMON_DESTRUCTOR_NORMAL_VTABLE_20261022.md?plain=1#L23-L23) — - 次の調査: side unit vector +0x48/+0x58との実unlink/解放の順、native battle exitでのvirtual slot0到達、Rと戦略UnitDataの別参照。
   制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md
 
+<a id="field-90"></a>
+## vector + 0x90
+
+- [research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md 行 34](../../research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md?plain=1#L34-L34) — - prefixはstring +0、bytes +0x1C/+0x1D、dword +0x5C、strings +0x24/+0x40、dwords +0x20/+0x60、string +0x74。RB-tree +0x68 names/empty終端、28-byte vector +0x90/+0x94 name
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
+<a id="field-c0"></a>
+## vector + 0xC0
+
+- [research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md 行 35](../../research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md?plain=1#L35-L35) — - 上記treeの後は literal `fixtype` → raw dword +0xD0、`train_max`→ +0xD4、`train_up`→ +0xD8、`base_level`→ +0xDC、`home_spot`→ vector +0xC0/+0xC4 の順。home_spot vectorは28-
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
 <a id="field-158"></a>
 ## vector + 0x158
 

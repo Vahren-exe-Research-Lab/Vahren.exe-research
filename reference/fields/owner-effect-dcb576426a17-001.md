@@ -49,6 +49,9 @@
 - [research/recovered/b_batch5/data/T011_SUMMON_CALLER_SOURCE_TRIAD_SENTINEL_NATIVE_20261027_16H.md 行 11](../../research/recovered/b_batch5/data/T011_SUMMON_CALLER_SOURCE_TRIAD_SENTINEL_NATIVE_20261027_16H.md?plain=1#L11-L11) — [REIMPLEMENT] 召喚要求のproducer_kind、source_unit_like参照S、holder H、effect+0x7C、Group、座標様ECX、子Unitを独立fieldで保持し、別S候補を推測で同一親へ正規化しない。召喚EXP還元先・真parent pointer・AI最終target・
   制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
 
+- [research/recovered/search_reports1/reports/_history_20261029/P0_SUMMON_EXP_OWNER_REPORT_20261021.md 行 27](../../research/recovered/search_reports1/reports/_history_20261029/P0_SUMMON_EXP_OWNER_REPORT_20261021.md?plain=1#L27-L27) — 1. **元Unitのツリーを使う**：[STATIC VERIFIED] `0x54EE7F MOV ECX,[effect+0x7C]` → `0x54EE82 CALL 0x577260`。`0x577260` は `sourceUnit+0x1E4B4` を検索し、`+0x1E4B8` と一致すればNULL（`
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
 <a id="field-80"></a>
 ## effect + 0x80
 

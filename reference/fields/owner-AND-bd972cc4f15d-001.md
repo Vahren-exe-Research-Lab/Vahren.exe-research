@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-40"></a>
+## AND + 0x40
+
+- [research/recovered/plugin_reports1/reports/T024_542280_NATIVE_ATAN2_SENTINEL_ERRATUM_20261102_00H.md 行 17](../../research/recovered/plugin_reports1/reports/T024_542280_NATIVE_ATAN2_SENTINEL_ERRATUM_20261102_00H.md?plain=1#L17-L17) — 23H Ghidra pseudo-C only showed (+0x40-+0x38) as one argument to 0x5E743A. This is incomplete: native ASM has TWO independent integer differences (+0x3C-+0x34 A
+  制約・訂正　Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=B_STATIC_CANDIDATE_ERRATUM
+
 <a id="field-75"></a>
 ## AND + 0x75
 

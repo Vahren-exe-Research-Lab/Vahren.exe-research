@@ -10,4 +10,10 @@
 - [research/recovered/b_batch6/data/T012_5501A0_MODE23_ATTEMPT_INDEX_TROOP_JOIN_OFFLINE_20261021_1310.md 行 20](../../research/recovered/b_batch6/data/T012_5501A0_MODE23_ATTEMPT_INDEX_TROOP_JOIN_OFFLINE_20261021_1310.md?plain=1#L20-L20) — - `0x54E7B0` の検索DB擬似C（`search.py function 0x54E7B0 --max-chars 12000 --limit 6`）では`local_24c=param_4`。選択モード `local_284 >= 2` かつ`sourceUnit+0x1D0 != NULL`の場合に、`l
   制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
 
+<a id="field-1e4b4"></a>
+## sourceUnit + 0x1E4B4
+
+- [research/recovered/search_reports1/reports/_history_20261029/P0_SUMMON_EXP_OWNER_REPORT_20261021.md 行 27](../../research/recovered/search_reports1/reports/_history_20261029/P0_SUMMON_EXP_OWNER_REPORT_20261021.md?plain=1#L27-L27) — 1. **元Unitのツリーを使う**：[STATIC VERIFIED] `0x54EE7F MOV ECX,[effect+0x7C]` → `0x54EE82 CALL 0x577260`。`0x577260` は `sourceUnit+0x1E4B4` を検索し、`+0x1E4B8` と一致すればNULL（`
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

@@ -70,6 +70,12 @@
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 11](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L11-L11) — - world-base+0x504 は FINDINGS §82 の E（スクリプトエンジン、G+0x504）と同じ。世界地図グラフはその中の木（E+0x1EEBCC/+0x1EEBD0）。
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
 
+<a id="field-1e7e3"></a>
+## base + 0x1E7E3
+
+- [research/recovered/plugin_reports1/reports/recruit_sort_v4/core/SELECTOR_PLUGIN.md 行 5](../../research/recovered/plugin_reports1/reports/recruit_sort_v4/core/SELECTOR_PLUGIN.md?plain=1#L5-L5) — Core reserves host base + 0x1E7E3, length 5, before scheduling installation. The bridge independently checks its exact executable SHA-256 and expected `E8 28 01
+  制約・訂正　Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=PLUGIN_SYNTHETIC_CONTRACT_OR_HISTORY
+
 <a id="field-479628"></a>
 ## base + 0x479628
 

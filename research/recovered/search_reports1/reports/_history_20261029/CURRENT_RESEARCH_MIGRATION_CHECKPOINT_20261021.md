@@ -1,0 +1,22 @@
+# 迫真戦記v0.67｜標準解析環境切替チェックポイント
+- ID: `REDEV-GHIDRA-CANONICAL-MIGRATION-20261021`
+- Date: 2026-10-21 JST
+- State: **ACTIVE STATIC VERIFIED; USER GAMEPLAY NOT RUN FOR THIS INDEX**
+- Current Ghidra: `headless_analysis/Hakushin067_FunctionRepair_20261021.gpr`.
+- Current index: `search_index/HAKUSHIN067_CURRENT_CANONICAL_20261021.sqlite`, SHA256 `282924553309C4778FF6C5D5346CCF5C2BCB1B6FD17E46DBBAE9031547453F8D`.
+- Default query: `search_index/search_current.py`.
+- Current versioned manifest: `search_index/CURRENT_ACTIVE_RESEARCH_STATE_20261021.json`. Verify first with `verify_active_research_state_20261021.py`.
+- Root signpost: `headless_analysis/00_START_HERE_ACTIVE_RESEARCH.md`; another copy inside `search_index/`.
+- Repaired Ghidra project fingerprint: `BBDC9D6F8AF7D4E42FEF243205FA2282BDF540144DC4FF732E87A26F31B524D5` (recursive SHA snapshot of .rep file names/sizes/content).
+- Originals: EXE `E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187`; original `search.sqlite` `0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF` — unchanged.
+- Full independent reconciliation: old function corpus10,456 unchanged outside10 corrected C, current internal10,274, external188, reference rows243,670/243,670, ranges10,274/10,274 (11,091 spans), PE57,921/57,921, verified ABI3, SQLite integrity=ok.
+- Difference original to repaired reference manager: added5 (4 conditional JUMP + 1 direct CALL), removed0; 1,107 event-sourced references assigned to`0x004A1250`.
+- Incorrect Stage5 Ghidra-body-short claim must be withdrawn: `0x0048D6A0` original Ghidra already includes `RET 0x0048EA5A`. Ghidra body is split across 2 VA ranges. 532/10,268 original functions have discontinuous bodies; 365 have RET beyond naive entry+size.
+- User report: recruit UI V2 FAILED in gameplay; this migration does not repair UI V2, do not claim otherwise.
+- Old Ghidra `Hakushin067_Index.gpr`, partial ABI clone, `search.sqlite`, `search.py`, earlier V2/V3/V4 index/AI_OFFLINE_PACK preserved as LEGACY, **not deleted, moved or rewritten**. New ACTIVE and LEGACY marker files are next to Ghidra project files.
+- Existing legacy path mentions found in 116 documentation/script files (`CURRENT_LEGACY_ENTRYPOINT_AUDIT_20261021.json`); 8 executable scripts outside search_index merit owner review. Do not bulk rewrite other A–E/Stage5-owned scripts.
+- Portable search ZIP (without Ghidra .rep / EXE / old DB): `HAKUSHIN067_CURRENT_AI_OFFLINE_PACK_20261021.zip`, 23,610,880 bytes, SHA256 `C66B86C75D019B3097D67B41D4E8A44949C4EBF2E9892E03AA35FEA9860F4960`, 34 entries with per-file SHA/CRC passed. Extracted offline selftests7/7 passed; source Ghidra can only be directly edited on PC with clone project.
+- Known limitation: The canonical DB is a **versioned snapshot**. If Ghidra project changes, run verify_active_research_state; if stale, generate a new version with explicit manifest. Never silently alias older Ghidra or assume full ABI correctness.
+- PC owners: Original EXE, DAT, SAVE, Ghidra original, MASTER, Work Queue, lane-owned files, Git never modified by this migration.
+- Recovery ID: `REDEV-CANONICAL-BUILD-STRINGS-LOOP-01` — initial new-DB build failed due tuple-unpack error in new script only; script corrected, unique .building artifact removed after exact-path check, re-run and independent verification passed. No original data changed.
+- Success condition: CURRENT indexed DB and project are verified as of this snapshot; global enforcement across separate AI chats is **not automatic**. Each AI must be pointed to this manifest and query CLI.

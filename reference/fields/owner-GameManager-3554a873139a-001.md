@@ -22,6 +22,9 @@
 - [REF_SAVE_FORMAT.md 行 206](../../REF_SAVE_FORMAT.md?plain=1#L206-L206) — 食い違いではなかったもの: T014 の「world-base+0x504」と structs の「GameManager+0x504＝スクリプトエンジン E」は同じ物。世界地図グラフは E の中の木（E+0x1EEBCC/+0x1EEBD0）。
   制約・訂正　Existing full body linked; catalog revision differs
 
+- [research/recovered/search_reports1/reports/BATTLE_TAKEOVER_RESEARCH_STAGE2_20261021.md 行 12](../../research/recovered/search_reports1/reports/BATTLE_TAKEOVER_RESEARCH_STAGE2_20261021.md?plain=1#L12-L12) — EはGameEvent=GameManager+0x504。以下E+はGameEvent基準（絶対アドレスでない）。
+  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
+
 <a id="field-1ef144"></a>
 ## GameManager + 0x1EF144
 

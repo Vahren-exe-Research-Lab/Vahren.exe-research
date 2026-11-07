@@ -1,0 +1,12 @@
+# REA復旧処理エラー・再開記録（2026-10-29）
+- ID: REA-RESTORE-20261029-LIBRARY-ALL-166-01
+- 対象: 過去REAオフライン研究保存済み資料166件。ユーザー指示は未保存資料の保全で、原作Golden実行ではない。
+- ERROR-01 / OTHER（ツール呼出し上限）: staged part_000～part_014までの成功を確認し、part_015以降のみ転送。最終34part、欠落0。
+- ERROR-02 / OTHER（監査コードのSHA計算誤り）: part_020～024の検証器だけが誤算し得る不備を検出。正式ファイル化する前に原本Libraryから再読み込みして正しいSHAに修正。全166ファイルの独立集約SHAが原本と一致。
+- ERROR-03 / CONNECTION（単独manifestのLibraryアップロード）: `container_session_unavailable`。単独アップロードは失敗。別の保存済みLibrary ZIPにmanifestを収録し、Libraryから再取得してSHA・ZIP整合性を確認済み。PC manifestも独立保存済み。
+- 過去の通信障害: Local HTTP429 / Session terminated は既往のオフライン保存記録に存在。本復旧ではWindows Local接続成功。
+- SAFETY_REFUSAL: 今回0件。拒否済みVAやWave6等の操作を迂回していない。
+- 保存未完了: 確認できたLibrary元資料166件については0件。
+- なお、過去に未生成だった資料・未実測のGolden結果は存在しないため保存対象にしない。
+- 最終復旧状態: PC-ARCHIVED / FORMAL-UNSYNCED / STATIC / VERIFY / NOT READY。
+- 次の合法な作業: 最新QUEUE/PROGRESS/MASTER・所有権・lock・既存IDを確認後に正式統合。研究やGoldenの再実行は別途要判断。
