@@ -1,0 +1,161 @@
+{
+  "runId": "20261011T124000308Z",
+  "started": "2026-10-11T12:40:00.417Z",
+  "source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "rea": "6.1.0",
+  "ghidra": "12.1.4",
+  "operation": "static_decompile_only",
+  "function_addresses": [
+    "0x45E5F0",
+    "0x429C60",
+    "0x471AF0",
+    "0x435550"
+  ],
+  "records": [
+    {
+      "address": "0x45E5F0",
+      "related_task": "T014",
+      "title": "通常saveロード上位wrapper",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_d7c804ce1c3462f758056dc1e7d2b4128f9bb10b2a3bc8daaf209022a9a34af9",
+          "entry": "0x45e5f0",
+          "length": 453
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_29fe3168d44fc597d7b5b1c0210707ba204efe3f6210065d55ca3edd4a23b0bc",
+          "result_chars": 2572
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_39a5d3cebc8c379184ad68fc56122c233a9e79f116292c17fb00ac7136f1481e",
+          "result_chars": 4171
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_e2a05ef353ada0703bf59be9140198de4aa9146e22cc35bdab302c3e7a00090d",
+          "result_count": 1
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_0d97bc021101da29359684151f6957c8a2d7c09359c6404f22a759b286767a17",
+          "result_count": 16
+        }
+      },
+      "failed_method": null
+    },
+    {
+      "address": "0x429C60",
+      "related_task": "T014",
+      "title": "save復号後stream構築",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_8312cb6bca27dbb970b203b5662842565ba7bed84058a2de6ac79267b57265d9",
+          "entry": "0x429c60",
+          "length": 200
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_ed408133cdcf3d24d551ddac53e38ecf5ebeaada67d0b29aa6f3fb4f27105e91",
+          "result_chars": 1150
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_d9db916775355d0947582ecffe891afb454c912468f15cbe81d43e2054c6f97d",
+          "result_chars": 1881
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_3b189f577e975db9f0692c6ed191db6bb3880d068e43613cc6c35f8e54390f5f",
+          "result_count": 11
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_c75d930512a509da465d57eb209598652041392d10ff29df3cb07bf63bc2b78e",
+          "result_count": 4
+        }
+      },
+      "failed_method": null
+    },
+    {
+      "address": "0x471AF0",
+      "related_task": "T014",
+      "title": "外交runtime save読込",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_29f03715d97de300e639f60e6e2ae24d400cd4bff3edb921ae126c14e4cb09b5",
+          "entry": "0x471af0",
+          "length": 559
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_1e776fb470e6e934d7fffa736600daa070a5e3e009552f7951f653edbc00f871",
+          "result_chars": 3145
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_f7d8db97a2ec936312735e2bb6c29f421ff95b1eeeccd1a089237dfda632947b",
+          "result_chars": 5104
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_d93aa1a41a30ac2e38f725cca78d4ede1f2ad1abca4c7f65bccdac59646695d6",
+          "result_count": 2
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_3f702d7a4eae72a3f3218e001755aa7599e6267bbd3eff317b5a558ff5acf934",
+          "result_count": 9
+        }
+      },
+      "failed_method": null
+    },
+    {
+      "address": "0x435550",
+      "related_task": "T014",
+      "title": "Spot経路graph save読込",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_8fc065296a08a2f672a520399680a38404d656f96ecd59f4747278ec964409a4",
+          "entry": "0x435550",
+          "length": 1672
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_7a9e58e9b0b538edf453aaf98e7755f5ebedda9102d81657c549716351eec905",
+          "result_chars": 7076
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_775c749267e95e4682d3e76c638e9a612068de9345aedb4557eabd74e6eaafe2",
+          "result_chars": 14781
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_d1841901f69673cb231af84c3fcf0492745639a21fe18d79f05fdff8a3fc5dec",
+          "result_count": 2
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_c4837ec9612a87de6e6c808ce950dde13e92ada453d6d4ac779eabc2d905b175",
+          "result_count": 17
+        }
+      },
+      "failed_method": null
+    }
+  ],
+  "completed": true,
+  "failure": null,
+  "no_game_execution": true,
+  "end_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "finished": "2026-10-11T12:46:24.254Z"
+}

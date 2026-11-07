@@ -1,0 +1,53 @@
+{
+  "runId": "20261011T114202395Z",
+  "started": "2026-10-11T11:42:02.447Z",
+  "source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "rea": "6.1.0",
+  "ghidra": "12.1.4",
+  "operation": "static_decompile_only",
+  "function_addresses": [
+    "0x432EE0"
+  ],
+  "records": [
+    {
+      "address": "0x432EE0",
+      "related_task": "T010",
+      "title": "world/fight/politics phase dispatcher",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_c97f4e962b1489302846931cefa60a172f2cfb249b372a5cb9d7f1dfd132615e",
+          "entry": "0x432ee0",
+          "length": 1663
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_9a8d40a12039ddb3d2876b7644bb5182e229138268bb4af87e0f64df9ad94e28",
+          "result_chars": 9561
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_10ab11de19b6a7f2b68a0776da8d3f12544384752ac74fb6cc1abbf2cc2d1322",
+          "result_chars": 13666
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_586a711d325329f445e5788d742d8bffb32677196d2b04cc8ad35a64bd9bbfb6",
+          "result_count": 9
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_3661abc5445d8faaab750d4e20ed0e952bfd8ea0b348e4ede70ac82c38f67276",
+          "result_count": 19
+        }
+      },
+      "failed_method": null
+    }
+  ],
+  "completed": true,
+  "failure": null,
+  "no_game_execution": true,
+  "end_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "finished": "2026-10-11T11:49:30.292Z"
+}

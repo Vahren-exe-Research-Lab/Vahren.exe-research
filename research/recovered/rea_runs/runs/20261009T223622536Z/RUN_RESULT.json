@@ -1,0 +1,161 @@
+{
+  "runId": "20261009T223622536Z",
+  "started": "2026-10-09T22:36:22.613Z",
+  "source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "rea": "6.1.0",
+  "ghidra": "12.1.4",
+  "operation": "static_decompile_only",
+  "function_addresses": [
+    "0x50A5E0",
+    "0x50A850",
+    "0x57DF90",
+    "0x58E870"
+  ],
+  "records": [
+    {
+      "address": "0x50A5E0",
+      "related_task": "T005/T006",
+      "title": "if/rif制御AST callback",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_000dd9bb5f64f0d6c775467e1a1730b5e6a0b8746f36d79986a5f6fb009f3d92",
+          "entry": "0x50a5e0",
+          "length": 616
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_259f7783cf82d6fbfb2de59b1114b6227d3be34fa3638a6323fe8be95fd31127",
+          "result_chars": 2906
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_9345b1f5a9b38524c07c2ed34752047d0a44184dd772561f0c57e0a9d7eb35cf",
+          "result_chars": 5528
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_78229a4c68cb2858eb117e530c14ca3925d30b0bc4c85a885b97cb291d34099f",
+          "result_count": 1
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_e072934a112188df5d14e32cd941d071980f9d55b5ad28fd43f762bc99eee6e6",
+          "result_count": 11
+        }
+      },
+      "failed_method": null
+    },
+    {
+      "address": "0x50A850",
+      "related_task": "T005/T006",
+      "title": "while制御構文解析",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_f416ed2007a818109728050d391fbc0a981084dd0ad20d27027200e6653aed67",
+          "entry": "0x50a850",
+          "length": 489
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_5a63e48f6fc8dfe19185dc54c9c7a81b5b245b5700bd57a67d660c7c4f5a0fdb",
+          "result_chars": 2245
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_70613dc75d4c444e7b1d113018a4e7850347fbba6eda1eca671999860c8b4715",
+          "result_chars": 4385
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_87ff07612c43df9d84c1a4a3b1b7190d1ea55fe912946ff35e66a4f60a4aaa4b",
+          "result_count": 0
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_79d98d314c84165c453c26da9d49c2c8bd90d655cbce6146d8d33202e78dc047",
+          "result_count": 9
+        }
+      },
+      "failed_method": null
+    },
+    {
+      "address": "0x57DF90",
+      "related_task": "T012",
+      "title": "HP・MP・状態異常の自然回復",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_0c8f9a4e1bd5870aaf62a2605bdd65c8b51600c87ee44869d6596b1b7f16f938",
+          "entry": "0x57df90",
+          "length": 484
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_5a3e17e1d68d81c9aa62213f2e77e5ca9d1c90c4e1fda186678a72e6a88684ce",
+          "result_chars": 2664
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_e50e0ad44fe14809a8e00c7e3754f2816f095b4d9686c6ba0d876d5ee0a337a1",
+          "result_chars": 3911
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_43c77a49fb73c68c10f047d7febdc2dfbed7b901365ef01e249b11bcff311fee",
+          "result_count": 3
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_e48cd61ab643e7cc8fb3ebe1a77fe3e379412db5f98273b0df7a59121d93a8e4",
+          "result_count": 3
+        }
+      },
+      "failed_method": null
+    },
+    {
+      "address": "0x58E870",
+      "related_task": "T014",
+      "title": "Unit save state reader",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_33909fa473951acda2a3c14f299fbb2dff3435097de657e01341c23127d91fe7",
+          "entry": "0x58e870",
+          "length": 1861
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_992508cdab86c44fc73e0f72aa80b7ab30679a2b84144a444f5afe7a7d80760d",
+          "result_chars": 6541
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_dd3a4fa049e9751b44ab874ad4dce5fdfbe23f8fc364274bf923e7a9cbebb839",
+          "result_chars": 14587
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_c7b4dd5f31351c2ca12e25c28685dfacf88fceb6ba9e9544f189071154a7d238",
+          "result_count": 2
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_a39c4f6666662e4b0feb20aacfa46a33278bfc2d4787d1388588d0ffb3bc9dd2",
+          "result_count": 18
+        }
+      },
+      "failed_method": null
+    }
+  ],
+  "completed": true,
+  "failure": null,
+  "no_game_execution": true,
+  "end_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "finished": "2026-10-09T22:42:47.143Z"
+}

@@ -1,0 +1,139 @@
+{
+  "runId": "20261009T225741694Z",
+  "started": "2026-10-09T22:57:41.776Z",
+  "source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "rea": "6.1.0",
+  "ghidra": "12.1.4",
+  "operation": "static_decompile_only",
+  "function_addresses": [
+    "0x4321B0",
+    "0x4930D0",
+    "0x45E1E0",
+    "0x57B870"
+  ],
+  "records": [
+    {
+      "address": "0x4321B0",
+      "related_task": "T006/T014",
+      "title": "イベント・routine共通実行とyet marker",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_b0baec02c8d12ecbd78d2700c4b72f41016dad1c8fd11c33be96aa29aa107dea",
+          "entry": "0x4321b0",
+          "length": 3124
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_6443778f30890c0e5cb33fc7bbabf54b8cd665a1424f7b354c6bd439dbac2051",
+          "result_chars": 13540
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_56f9a3557ec9eaa37a3dae138562b66cdde8d20a39e915d61d3e8c37709157db",
+          "result_chars": 23261
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_0794fd174f88daf043f78ebffa04ea6ebc0dd6598eb55eee4075f1bce00664ac",
+          "result_count": 3
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_a7a4d0b5de1642953e3949dce36374369bf2c5c14b77ff0611341f0a68fa9d8e",
+          "result_count": 25
+        }
+      },
+      "failed_method": null
+    },
+    {
+      "address": "0x4930D0",
+      "related_task": "T010",
+      "title": "battleEvent root if/rifの反復・消去",
+      "status": "VERIFY",
+      "methods": {
+        "procedure_info": {
+          "ok": false,
+          "error": "FUNCTION_BOUNDARY_MISMATCH"
+        }
+      },
+      "failed_method": "procedure_info"
+    },
+    {
+      "address": "0x45E1E0",
+      "related_task": "T014",
+      "title": "通常セーブの全group読込本体",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_5da50720924339f770fe37dd127f90a1d8faff1b1c9c80922819ec9f7c999ef0",
+          "entry": "0x45e1e0",
+          "length": 1028
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_9665848ba33f030a0214de8dfa2d30646837fe543cc223eba5f3363a8b86b52e",
+          "result_chars": 3836
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_69ab9492fa443fe12c5fb3e0d6230b5c7bb67fcca9fbc5c2915973a18d18e124",
+          "result_chars": 8252
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_25b1ebae191adb744c52e90f5c7faa796423ecd9edc00b29aa5a5b241415b65e",
+          "result_count": 1
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_1c6253652438f3553d6e578d8b3afdc47b832a780c4732bf2d4117a9ca1a3f42",
+          "result_count": 17
+        }
+      },
+      "failed_method": null
+    },
+    {
+      "address": "0x57B870",
+      "related_task": "T013",
+      "title": "戦闘AI target再探索とcounter",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_c4fcdda0f9486944ccdcfe1354a6d2e37f2b68761dfd2e47b7df9a11cd367612",
+          "entry": "0x57b870",
+          "length": 812
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_4767a901e9f4b9ad1fc38d59a2f36a6a4a1ef4cc22287abb8e74c97f094aa2dc",
+          "result_chars": 3609
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_89e3a86b53663da35b8cadf02226f2163996275f1d24f93e37e8009fc50f048c",
+          "result_chars": 6835
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_911883dad3560c441dc40b2e53fe8fb1e83d4b85c4cbf622e80eb7ed59e4a8c4",
+          "result_count": 3
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_5f69dc42c9b24ee6e1c0cf83c2fb4da210af2dda6c4e48b70cbf9ef185ea6203",
+          "result_count": 11
+        }
+      },
+      "failed_method": null
+    }
+  ],
+  "completed": true,
+  "failure": null,
+  "no_game_execution": true,
+  "end_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "finished": "2026-10-09T23:05:30.285Z"
+}

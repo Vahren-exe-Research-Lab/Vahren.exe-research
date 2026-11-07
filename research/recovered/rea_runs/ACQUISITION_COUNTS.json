@@ -1,0 +1,127 @@
+{
+  "kind": "historical_acquisition_metadata_reconciliation",
+  "checked_date": "2026-11-05",
+  "scope": "Only these21historical RUN_RESULT files and this queue snapshot; no original evidence payload or game verification",
+  "queue_path": "research/recovered/rea_runs/snapshots/QUEUE_20261105_READBACK.json",
+  "queue_sha256": "2266778eb792eb624d9d4647cad9ee50f5023c036ca6fdfa7558fc3ae92efad8",
+  "run_inputs": [
+    {
+      "path": "research/recovered/rea_runs/runs/20261009T193808151Z/RUN_RESULT.json",
+      "sha256": "62a7b2eb01b20c6e99a782591393b23a3c6f6feb2fc804cac1295652efb1d74e"
+    },
+    {
+      "path": "research/recovered/rea_runs/runs/20261009T194358486Z/RUN_RESULT.json",
+      "sha256": "b56f2aa9226dddc37c94ab58463f2dc0a50e861de81be8ca799a84e595a37df4"
+    },
+    {
+      "path": "research/recovered/rea_runs/runs/20261009T203528568Z/RUN_RESULT.json",
+      "sha256": "518ab4a8be6d4b219f5ed929ee5fb6857752ef7892a6d85dce66a2290b49ea49"
+    },
+    {
+      "path": "research/recovered/rea_runs/runs/20261009T211647219Z/RUN_RESULT.json",
+      "sha256": "dc3cd1413212965f9990009e0a6ea0a299ae775d50398cb3f9c4c2cb938b4602"
+    },
+    {
+      "path": "research/recovered/rea_runs/runs/20261009T212627835Z/RUN_RESULT.json",
+      "sha256": "3e557c208c384ebdd6145bb79d71a680de57da8d80de05f49f67b122fcba7f1e"
+    },
+    {
+      "path": "research/recovered/rea_runs/runs/20261009T213635897Z/RUN_RESULT.json",
+      "sha256": "a9a28e4741dff1de5343b80a328f2e8e8d7475489f6de376c921c5bf00187221"
+    },
+    {
+      "path": "research/recovered/rea_runs/runs/20261009T215200079Z/RUN_RESULT.json",
+      "sha256": "19dc002913b185fdfc89025e8749eadae9fa30a59425663f985839c576a71915"
+    },
+    {
+      "path": "research/recovered/rea_runs/runs/20261009T215905915Z/RUN_RESULT.json",
+      "sha256": "47b6da3b077b1cbf8f266efcdf6c5c80077d8785e651d0014e91bfdadc3a5ced"
+    },
+    {
+      "path": "research/recovered/rea_runs/runs/20261009T220712454Z/RUN_RESULT.json",
+      "sha256": "51b0339c6f69a998c1c3d7ff717c3fd70e0eafe7c3908b77fbc42a6fd6c4039d"
+    },
+    {
+      "path": "research/recovered/rea_runs/runs/20261009T221558628Z/RUN_RESULT.json",
+      "sha256": "0ed6a30548d22a43d483cc20b2f3d8f08c21af6d49991054664d505ed7186a37"
+    },
+    {
+      "path": "research/recovered/rea_runs/runs/20261009T222501703Z/RUN_RESULT.json",
+      "sha256": "3c76ed6d906bd9ce45cd8a8642d27d5c1e2cffafb146bff491bc79fe9f20e852"
+    },
+    {
+      "path": "research/recovered/rea_runs/runs/20261009T223622536Z/RUN_RESULT.json",
+      "sha256": "af7431217c25fbe15d18bb7f940efcaacbc8628c3e7d12c790edd988369f10e4"
+    },
+    {
+      "path": "research/recovered/rea_runs/runs/20261009T224617297Z/RUN_RESULT.json",
+      "sha256": "9ecab30520a331c167805560c50600c873474ff72823749c320fe5d9343afb6a"
+    },
+    {
+      "path": "research/recovered/rea_runs/runs/20261009T225741694Z/RUN_RESULT.json",
+      "sha256": "5bdca927230bd86ccc40e883a14b5e86372a4a36f09784d1d4e1a5d127cb0bfa"
+    },
+    {
+      "path": "research/recovered/rea_runs/runs/20261011T112315808Z/RUN_RESULT.json",
+      "sha256": "ca0689ab615709b6d34574f55879ce494376090d3ed88c06da5c22c4ba91acef"
+    },
+    {
+      "path": "research/recovered/rea_runs/runs/20261011T113414092Z/RUN_RESULT.json",
+      "sha256": "5d71ccf01e0212440b3c6bd00a90b027d19fe9c7d7bb08b043b6bc21ad70adbd"
+    },
+    {
+      "path": "research/recovered/rea_runs/runs/20261011T114202395Z/RUN_RESULT.json",
+      "sha256": "fa738c222370da48087dd94f007c70e68126b2311629bc6511bebaa46c683ae1"
+    },
+    {
+      "path": "research/recovered/rea_runs/runs/20261011T124000308Z/RUN_RESULT.json",
+      "sha256": "e66f593bfe1d0442c3d21177ee87c75ccf06a7470e67877c7a6ef07b90c4720b"
+    },
+    {
+      "path": "research/recovered/rea_runs/runs/20261011T133432356Z/RUN_RESULT.json",
+      "sha256": "e9445af6036b76eb385ea6f21037b17e8ac546a5c441ad066ba2d4ede895cdb7"
+    },
+    {
+      "path": "research/recovered/rea_runs/runs/20261011T144115307Z/RUN_RESULT.json",
+      "sha256": "bccb959accf89873f02ec1e43dc90ab95a23f729e3503592d134ff72f2bb1583"
+    },
+    {
+      "path": "research/recovered/rea_runs/runs/20261011T153309850Z/RUN_RESULT.json",
+      "sha256": "cd83a15bcbe6c00ea310198e56cbb3e7f35bca17153ae4bfb4bab4310c976c52"
+    }
+  ],
+  "run_count": 21,
+  "record_count": 67,
+  "distinct_addresses": 66,
+  "reported_verified_unique": 62,
+  "baseline_existing_verified": 2,
+  "baseline_addresses": [
+    "0x550E70",
+    "0x576E30"
+  ],
+  "queue_address_count": 64,
+  "queue_stored_status_counts": {
+    "VERIFIED": 16,
+    "TODO": 48
+  },
+  "candidate_replacements": [
+    {
+      "original": "0x4B044F",
+      "replacement": "0x479A30"
+    },
+    {
+      "original": "0x4B7900",
+      "replacement": "0x4B78C0"
+    },
+    {
+      "original": "0x433F20",
+      "replacement": "0x433E80"
+    },
+    {
+      "original": "0x4930D0",
+      "replacement": "0x4930C0"
+    }
+  ],
+  "numerical_set_equality": true,
+  "meaning_and_runtime_validation": false
+}

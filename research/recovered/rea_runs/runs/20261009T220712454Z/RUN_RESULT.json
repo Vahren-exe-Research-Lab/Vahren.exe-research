@@ -1,0 +1,103 @@
+{
+  "runId": "20261009T220712454Z",
+  "started": "2026-10-09T22:07:12.492Z",
+  "source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "rea": "6.1.0",
+  "ghidra": "12.1.4",
+  "operation": "static_decompile_only",
+  "function_addresses": [
+    "0x4B78C0",
+    "0x470830",
+    "0x433F20"
+  ],
+  "records": [
+    {
+      "address": "0x4B78C0",
+      "related_task": "T031",
+      "title": "起動処理全体（GetTickCount seedを含む関数入口）",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_dae232a2b49cb80f6e6c1c2a79a8a757daba1329e90bccb85f5fd7f422d4bd7f",
+          "entry": "0x4b78c0",
+          "length": 3452
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_ad5d3e781e3429d47a713953c0ff1edc5b23f3569ee2d65ddfdbc45d5ac9b990",
+          "result_chars": 16418
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_6e0c1369010c0de3ab8583d6bdbd4e564ba4da126f985847fab914f402f16099",
+          "result_chars": 25726
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_539dd8fb515bb88b3ae1de89aa032c1548e3aeb2b5f51cee8c31d1ab81123cac",
+          "result_count": 1
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_1a3494eda1b447665bb42b73903069bbae091b31b11b03066a3167030fa589fb",
+          "result_count": 44
+        }
+      },
+      "failed_method": null
+    },
+    {
+      "address": "0x470830",
+      "related_task": "T014",
+      "title": "セーブ直列化stream書込補助",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_f5a8158a6b43e2506ce3d112878862b8be232e8a7c08fc0fe9ec860f3c4f13b7",
+          "entry": "0x470830",
+          "length": 105
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_f4d406c9b915c36f64a7240ca52a5c0345099560a2e9dd81232283f7c17caeaa",
+          "result_chars": 625
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_1ffa032ec901cde47d6811b2e2941ff163adbcd1a68d9573bed5f6efe6b58d02",
+          "result_chars": 1261
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_8fd58bea9f3f6285fa73f9136ed4579d386ca9d352795c38d35e05fede16f880",
+          "result_count": 10
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_4be1ac4fd6e4af83c86e6b6cb48154a8d4a875b9350ce5c5bec15ea9fa4e1845",
+          "result_count": 1
+        }
+      },
+      "failed_method": null
+    },
+    {
+      "address": "0x433F20",
+      "related_task": "T005",
+      "title": "scenario.map参照のnative consumer",
+      "status": "VERIFY",
+      "methods": {
+        "procedure_info": {
+          "ok": false,
+          "error": "FUNCTION_BOUNDARY_MISMATCH"
+        }
+      },
+      "failed_method": "procedure_info"
+    }
+  ],
+  "completed": true,
+  "failure": null,
+  "no_game_execution": true,
+  "end_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "finished": "2026-10-09T22:14:02.453Z"
+}

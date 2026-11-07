@@ -1,0 +1,161 @@
+{
+  "runId": "20261011T112315808Z",
+  "started": "2026-10-11T11:23:15.955Z",
+  "source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "rea": "6.1.0",
+  "ghidra": "12.1.4",
+  "operation": "static_decompile_only",
+  "function_addresses": [
+    "0x4930C0",
+    "0x514D60",
+    "0x514F10",
+    "0x428010"
+  ],
+  "records": [
+    {
+      "address": "0x4930C0",
+      "related_task": "T010",
+      "title": "battleEvent root if/rifの反復・消去（正しい入口）",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_5e7a4f51a06fe52718dcbf6b0f806ddacb9a8016d9ab35890f9155b72b392a38",
+          "entry": "0x4930c0",
+          "length": 573
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_8aa8b81cd3955b77c22249c704311fb90352255a4a84739642ed31f10dfe67a2",
+          "result_chars": 4029
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_4c46561792995128b9d17e5cd1d7ceb1662f6631da24727b633408ae12eaf788",
+          "result_chars": 5100
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_de0da7e3557ba939f5de13b5b4a10cbd4da184ce4cbbc7245b7d32e3aea73bcb",
+          "result_count": 2
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_aa6331f70ed99a9acce9638064fc19dd1c06fee553c2b8d3806cdad43a010932",
+          "result_count": 6
+        }
+      },
+      "failed_method": null
+    },
+    {
+      "address": "0x514D60",
+      "related_task": "T013",
+      "title": "primary/fallback targeting選択",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_f226fab4a7e7d26e2bb121764eaf64e16316d159d37a71e261ae686aa8271fcf",
+          "entry": "0x514d60",
+          "length": 430
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_546797595e247c15b03ba9db41b6b39d4ec74adb567b2cbc9c018fc5db1359ec",
+          "result_chars": 1994
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_831f289aed1976eae433439e26ba5b76c17dca2dda7f83c4113d797b62f243bf",
+          "result_chars": 4098
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_1b4533a4c6033c3b029152348b85ea80c1ae2c8c92ed5f737097c4c05374bca5",
+          "result_count": 2
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_49469b2ef4015db25b8b54761336edc092a771c09c09286f7e803cdddde7c1de",
+          "result_count": 3
+        }
+      },
+      "failed_method": null
+    },
+    {
+      "address": "0x514F10",
+      "related_task": "T013",
+      "title": "補助候補リストの構築",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_292bf008de72c70d3863833b265452c21ff7b2ac04876910f8be305213044454",
+          "entry": "0x514f10",
+          "length": 234
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_bc777bb09b14585df2ad1dd1efd10786946a712b7efb3aaadc1dfa2eed5ff6d5",
+          "result_chars": 921
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_d691b012298940946906d69117039022e911b79572912f4cee27cdfe663d8027",
+          "result_chars": 2027
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_6ff7d1650f3ff9b9684e1149f8520ce797d7eff9c8227cd6472398251c29f83c",
+          "result_count": 1
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_163b1453d3b7089667d45419eb3a853a358c1772037c20b77ea400380b741469",
+          "result_count": 4
+        }
+      },
+      "failed_method": null
+    },
+    {
+      "address": "0x428010",
+      "related_task": "T014",
+      "title": "global.savのデコード・読込",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_212689d4988dd5b3b6be3d58f10475e98fea75aabed334c31630c767c276db3d",
+          "entry": "0x428010",
+          "length": 1640
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_7d8bf27f8f623acdc9c301d57fa247cf6372db3a769910b9ed7ad2099114e881",
+          "result_chars": 7886
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_8f357dc6b9e49591c6a5cec5ac76b4bd2c9019e4bc9cd61f15e5b3ba1bd55118",
+          "result_chars": 12039
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_151d934a93d634b89b7910b660a2971da9861cbb71aeebc6fdd3380223bdd4ac",
+          "result_count": 6
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_07f24af546c1e11d44644588a62d931db7509df49218935b2a9d8d7875bd3d21",
+          "result_count": 29
+        }
+      },
+      "failed_method": null
+    }
+  ],
+  "completed": true,
+  "failure": null,
+  "no_game_execution": true,
+  "end_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "finished": "2026-10-11T11:32:27.537Z"
+}

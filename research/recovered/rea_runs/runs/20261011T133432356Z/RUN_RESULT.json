@@ -1,0 +1,161 @@
+{
+  "runId": "20261011T133432356Z",
+  "started": "2026-10-11T13:34:32.461Z",
+  "source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "rea": "6.1.0",
+  "ghidra": "12.1.4",
+  "operation": "static_decompile_only",
+  "function_addresses": [
+    "0x598980",
+    "0x5964C0",
+    "0x4A6700",
+    "0x40B200"
+  ],
+  "records": [
+    {
+      "address": "0x598980",
+      "related_task": "T014",
+      "title": "Spot runtime読込",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_53ed1be96bc20ed0ffbc4d954ae100f1967fd59ebe9ce1884069085408de84aa",
+          "entry": "0x598980",
+          "length": 859
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_0acff01a3a0b32c2efc27bc4c2c113a5990bee48a71916922824806d419968ad",
+          "result_chars": 3456
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_66c1bf6fd99abcfd7034dc3de539e043f9ab1f39ea402827967a1ab418ca929b",
+          "result_chars": 7012
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_4d7481471a3b7dd25ba99a255743190483ec355ad0f0e6519faff740ac1a22e9",
+          "result_count": 2
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_6597562b214fb07ef9cf92fb2a7c26825f7f6c86082b307f37ef650e62a31f52",
+          "result_count": 11
+        }
+      },
+      "failed_method": null
+    },
+    {
+      "address": "0x5964C0",
+      "related_task": "T014",
+      "title": "Power runtime読込",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_105b1c184be5d868744bee92f4d32362e03bb147780923add1925cff2553acea",
+          "entry": "0x5964c0",
+          "length": 1489
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_9608d350a99e5ba1453392474e951d01a83321124085c78de8ef29ffc8ea96d9",
+          "result_chars": 6892
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_225abdeab1240aef12bae0642c86e2bc6494b630fee961f55233f5c29cbb5e25",
+          "result_chars": 12588
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_24c083a492c9b10125bdeecdfbc3db2f2d263a8cd19efd9d17513b9bc771efef",
+          "result_count": 2
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_ff3bf40913871207a524bdcdc61a67694df2d6300e9bcae944c544e93caf631d",
+          "result_count": 20
+        }
+      },
+      "failed_method": null
+    },
+    {
+      "address": "0x4A6700",
+      "related_task": "T005/T014",
+      "title": "数値・property共通tree primitive",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_f1a511812cc60f2d44928133ae37f2dd7702b5455677c9675e1f0387edef3654",
+          "entry": "0x4a6700",
+          "length": 478
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_11cd3d1b65fb7672cf0cc86955c08cd96acab2b7a8521e74a5d3020b89452acb",
+          "result_chars": 4081
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_29d636b279a7b1f14f59ba9fc63f0f425e7a9058d49f6eb9d34409590d4fb2f3",
+          "result_chars": 5561
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_ae28dc9e0f7124cd4b7d1aa288bbf1a5fd55c83a77381a63a72ef6bbc2b51f42",
+          "result_count": 5
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_43e13092422659aa0f51e6931f70295286d1642dbe32a8ac2c89a61e3e188ff6",
+          "result_count": 4
+        }
+      },
+      "failed_method": null
+    },
+    {
+      "address": "0x40B200",
+      "related_task": "T006/T010",
+      "title": "eventフラグ条件判定helper",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_ec2dd487c7478081fb26ce910a9b854f47c123371b542f12e59e6bdf5534439f",
+          "entry": "0x40b200",
+          "length": 84
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_d3b60611f4e0570c118727b471bbd19bd10cd6c9f187e0812023914cb8ccef61",
+          "result_chars": 500
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_80377536380b1f73406c409003776dc07da99b7a8d860e3f70dc06941a55541a",
+          "result_chars": 967
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_35291b767472758d4d578ad386e03faa8202014e9f2b0cbe76deb646f1cbfb7b",
+          "result_count": 87
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_f5bba603bb289fe46001acbd2e9227eb0df15c0d4b88f12e77e1f47cd0125ca6",
+          "result_count": 1
+        }
+      },
+      "failed_method": null
+    }
+  ],
+  "completed": true,
+  "failure": null,
+  "no_game_execution": true,
+  "end_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "finished": "2026-10-11T13:40:46.572Z"
+}

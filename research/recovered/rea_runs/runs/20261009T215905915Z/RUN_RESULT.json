@@ -1,0 +1,139 @@
+{
+  "runId": "20261009T215905915Z",
+  "started": "2026-10-09T21:59:05.961Z",
+  "source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "rea": "6.1.0",
+  "ghidra": "12.1.4",
+  "operation": "static_decompile_only",
+  "function_addresses": [
+    "0x5001B0",
+    "0x479740",
+    "0x4B7900",
+    "0x551E50"
+  ],
+  "records": [
+    {
+      "address": "0x5001B0",
+      "related_task": "T031",
+      "title": "マップ初期化とローカルseed",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_8c97c7969305a2bdc1f63e1cedbecc774a750818d81196222ec847ead1b46afa",
+          "entry": "0x5001b0",
+          "length": 4857
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_bc4a0d7d73f4811d15029931fc95c389b6f18e2f2997061dddde01c43408fe86",
+          "result_chars": 26744
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_7311a89c97f37b4f57e82b6847e9c1bbf8ac8963b227b95bd3004b1dc88e2d3f",
+          "result_chars": 41808
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_2a0f3854ef96324cf7abf1fdba92473a40fe4d2998c83ac4a67b4bf7f6cec428",
+          "result_count": 1
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_047620690fe43c7d792d2e5502656563fb351134da63d4c34d231bbabacb8583",
+          "result_count": 38
+        }
+      },
+      "failed_method": null
+    },
+    {
+      "address": "0x479740",
+      "related_task": "T031",
+      "title": "shuffle vector入口（本体への橋渡し）",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_e9705abfc92230c0e5a8816c3fd8159f61aaaef636c30f7477a05896e6afa705",
+          "entry": "0x479740",
+          "length": 20
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_cf652c5c009271870d214cade5fdd64b8df05bef588dde928d22c3f18767f31e",
+          "result_chars": 129
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_6324c0bf42d7519a8991cd75cbeb8f5c8b482b6708aae30edf0459eaf5a4fafa",
+          "result_chars": 205
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_9615e7139c4a93086611e8f1e75ee9119e03bbf52c05a2a0af62875a12bca929",
+          "result_count": 1
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_b4815d58633ab82ebe38cade4a500774464bb96e0c58462164b3ebda7d25b4d9",
+          "result_count": 1
+        }
+      },
+      "failed_method": null
+    },
+    {
+      "address": "0x4B7900",
+      "related_task": "T031",
+      "title": "起動時GetTickCount seed",
+      "status": "VERIFY",
+      "methods": {
+        "procedure_info": {
+          "ok": false,
+          "error": "FUNCTION_BOUNDARY_MISMATCH"
+        }
+      },
+      "failed_method": "procedure_info"
+    },
+    {
+      "address": "0x551E50",
+      "related_task": "T012",
+      "title": "ダメージ後の状態変化・callback補助",
+      "status": "VERIFIED",
+      "methods": {
+        "procedure_info": {
+          "ok": true,
+          "evidence_id": "ev_e9d1410bf8dcfaa6ae8d37edc3958691ee60bcaec2849b23f36ce01349a0474a",
+          "entry": "0x551e50",
+          "length": 457
+        },
+        "procedure_pseudo_code": {
+          "ok": true,
+          "evidence_id": "ev_34a65888631de68d06508d668f122e16f170b11c004f323f671ef6be2cf519a2",
+          "result_chars": 2006
+        },
+        "procedure_assembly": {
+          "ok": true,
+          "evidence_id": "ev_5fe4e642ce99c26ed34b161846fcdc98e281bf8524b7401583d05d2799b8cdea",
+          "result_chars": 4004
+        },
+        "procedure_callers": {
+          "ok": true,
+          "evidence_id": "ev_b8a8d4453c237b42b3649e70d02c44cc4b70682e0cb6f60c23e4a077e5dbcf50",
+          "result_count": 4
+        },
+        "procedure_callees": {
+          "ok": true,
+          "evidence_id": "ev_1fb68f94f409746b671f72f2f3de0abf172007ec5d8c0714d89c0d13792cb217",
+          "result_count": 5
+        }
+      },
+      "failed_method": null
+    }
+  ],
+  "completed": true,
+  "failure": null,
+  "no_game_execution": true,
+  "end_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "finished": "2026-10-09T22:05:43.023Z"
+}

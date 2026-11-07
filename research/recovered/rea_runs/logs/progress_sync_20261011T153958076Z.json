@@ -1,0 +1,46 @@
+{
+  "time": "2026-10-11T15:39:58.076Z",
+  "validated": 64,
+  "total": 64,
+  "percent": 100,
+  "newValidated": 48,
+  "pending": 0,
+  "verify": 0,
+  "reviewedRuns": 21,
+  "waveProgress": [
+    {
+      "wave": 1,
+      "total": 16,
+      "verified": 16,
+      "todo": 0
+    },
+    {
+      "wave": 2,
+      "total": 10,
+      "verified": 10,
+      "todo": 0
+    },
+    {
+      "wave": 3,
+      "total": 10,
+      "verified": 10,
+      "todo": 0
+    },
+    {
+      "wave": 4,
+      "total": 12,
+      "verified": 12,
+      "todo": 0
+    },
+    {
+      "wave": 5,
+      "total": 16,
+      "verified": 16,
+      "todo": 0
+    }
+  ],
+  "queueUpdate": "STALE_RENAME_DENIED",
+  "pendingQueueTemp": "<research-root>/rea_lab/decomp_task/.QUEUE_23256_1791733198079.tmp",
+  "humanReadableProgress": "SKIPPED_QUEUE_STALE",
+  "pendingProgressTemp": "<research-root>/rea_lab/decomp_task/.PROGRESS_23256_1791733198079.tmp"
+}

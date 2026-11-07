@@ -194,6 +194,144 @@ class ReferenceTests(unittest.TestCase):
         page = reference.render(self.root, data)["reference/structs/StatusWnd.md"]
         self.assertIn("[C(§95.2)](../../findings.md#f-95)", page)
 
+    def test_explicit_recovered_source_paths_link_all_variants_not_basenames(self):
+        report, ledger = self.add_recovery_ledger()
+        variant = report.with_name("native_variant.md")
+        variant.write_text("# Corrected historical variant\n0x55BC60\n", encoding="utf-8")
+        ledger.write_text(
+            "source_path\tdestination\tdestination_sha256\tlimitations\n"
+            f"data/native.md\tresearch/recovered/native.md\t{hashlib.sha256(report.read_bytes()).hexdigest()}\tOriginal report\n"
+            f"data/native.md\tresearch/recovered/native_variant.md\t{hashlib.sha256(variant.read_bytes()).hexdigest()}\tLater variant\n",
+            encoding="utf-8")
+        path = self.root / "symbols.tsv"
+        original = path.read_text(encoding="utf-8")
+        path.write_text(original.replace("F§95", "data/native.md"), encoding="utf-8")
+        data = reference.load(self.root)
+        links = data["symbols"][0]["source_links"]
+        self.assertEqual(len(links), 2)
+        self.assertEqual([row["anchor"] for row in links], ["", ""])
+        self.assertEqual(links[1]["limitations"], "Later variant")
+        tool = Path(__file__).with_name("reference.py")
+        result = subprocess.run(
+            [sys.executable, "-B", str(tool), "--root", str(self.root), "search", "0x55BC60", "--json"],
+            capture_output=True, text=True, encoding="utf-8")
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual(json.loads(result.stdout)[0]["source_links"], links)
+        page = reference.render(self.root, data)["reference/symbols/0055BC60.md"]
+        self.assertIn("[data/native.md](../../research/recovered/native.md)", page)
+        self.assertIn("[data/native.md](../../research/recovered/native_variant.md)", page)
+        self.assertNotIn("native.md#", page)
+        path.write_text(original.replace("F§95", "native.md, other/data/native.md, data/native.md.bak"), encoding="utf-8")
+        self.assertEqual(reference.load(self.root)["symbols"][0]["source_links"], [])
+        report.write_text("changed", encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "Stale"):
+            reference.load(self.root)
+        report.unlink()
+        with self.assertRaisesRegex(ValueError, "Missing"):
+            reference.load(self.root)
+
+    def add_field_report(self):
+        report, ledger = self.add_recovery_ledger()
+        report.write_text(
+            "# Report-local memory\nUnit+0x18654 stores a flag.\n"
+            "record + 0x28 differs from candidate+0xA14; record+0x28 repeated.\n"
+            "eax+0x20, ESP + 0x24, 0x28, 0x55BC60 + 0x28.\n", encoding="utf-8")
+        ledger.write_text(
+            "destination\tdestination_sha256\tlimitations\nresearch/recovered/native.md\t"
+            + hashlib.sha256(report.read_bytes()).hexdigest() + "\tHistorical local owner labels\n", encoding="utf-8")
+        return report
+
+    def test_report_local_field_lookup_works_without_registered_type(self):
+        self.add_field_report()
+        data = reference.load(self.root)
+        unit = reference.search(data, "Unit + 0x18654")
+        self.assertEqual(len(unit), 1)
+        self.assertEqual(unit[0]["kind"], "field_mention")
+        self.assertEqual(unit[0]["owner_text"], "Unit")
+        self.assertEqual(unit[0]["offset"], "0x18654")
+        self.assertIn("Historical", unit[0]["recovery"]["limitations"])
+        self.assertEqual(unit[0]["source"]["start_line"], 2)
+        self.assertEqual(len(reference.search(data, "record+0x28")), 1)
+        self.assertEqual(reference.search(data, "record+0xA14"), [])
+        self.assertEqual(reference.search(data, "candidate+0x28"), [])
+        self.assertEqual(len(reference.search(data, "candidate+0xa14")), 1)
+        self.assertFalse(reference.search(data, "eax+0x20"))
+        self.assertFalse(reference.search(data, "esp+0x24"))
+        self.assertEqual(len(data["field_mentions"]), 3)
+
+    def test_field_index_links_context_is_stable_and_honors_aliases(self):
+        report = self.add_field_report()
+        self.add_layout_alias(["TempStatusWnd"])
+        data = reference.load(self.root)
+        self.assertTrue(reference.search(data, "TempStatusWnd+0x1C6"))
+        pages = reference.render(self.root, data)
+        index = pages["reference/FIELD_MENTIONS.md"]
+        self.assertIn("Unit + 0x18654", index)
+        self.assertIn("native.md?plain=1#L2-L2", index)
+        self.assertIn("Historical local owner labels", index)
+        self.assertIn("FIELD_MENTIONS.md", pages["reference/README.md"])
+        self.assertEqual(pages, reference.render(self.root, reference.load(self.root)))
+        report.write_text("changed", encoding="utf-8")
+        with self.assertRaises(ValueError):
+            reference.load(self.root)
+
+    def add_run_results(self):
+        directory = self.root / "research/recovered"
+        directory.mkdir(parents=True)
+        ledger_rows = []
+        for run_id, status in (("first-run", "VERIFY"), ("second-run", "VERIFIED")):
+            relative = f"research/recovered/runs/{run_id}/RUN_RESULT.json"
+            path = self.root / relative
+            path.parent.mkdir(parents=True)
+            run = {"runId": run_id, "records": [{
+                "address": "0x55BC60", "related_task": "T012", "title": "攻撃値の調査",
+                "status": status, "methods": {"procedure_info": {"ok": status == "VERIFIED", "evidence_id": "ev_info"}}},
+                {"address": "0x550D80", "related_task": "T012", "title": "未知関数の調査",
+                 "status": status, "methods": {}}]}
+            path.write_text(json.dumps(run, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            digest = hashlib.sha256(path.read_bytes()).hexdigest()
+            ledger_rows.append(f"{relative}\t{digest}\tHistorical acquisition only\n")
+        ledger = directory / "RECOVERY_LEDGER.tsv"
+        ledger.write_text("destination\tdestination_sha256\tlimitations\n" + "".join(ledger_rows), encoding="utf-8")
+        return ledger
+
+    def test_run_title_and_unknown_va_search_preserve_both_attempts(self):
+        self.add_run_results()
+        data = reference.load(self.root)
+        hits = reference.search(data, "攻撃値")
+        self.assertEqual(len(hits), 2)
+        self.assertEqual([row["reported_status"] for row in hits], ["VERIFY", "VERIFIED"])
+        self.assertEqual([row["run_id"] for row in hits], ["first-run", "second-run"])
+        self.assertTrue(all(row["kind"] == "research_run_record" for row in hits))
+        self.assertEqual(hits[1]["methods"]["procedure_info"]["evidence_id"], "ev_info")
+        self.assertNotEqual(hits[1]["confidence"], "実機確認")
+        self.assertEqual(len(reference.search(data, "0x550D80")), 2)
+        self.assertFalse(any(row["kind"] == "source_mention" for row in data["mentions"]))
+        page = reference.render(self.root, data)["reference/symbols/0055BC60.md"]
+        self.assertIn("first-run", page)
+        self.assertIn("VERIFIED", page)
+        self.assertIn("ev_info", page)
+        self.assertIn("procedure_info", page)
+        self.assertIn("<details>", page)
+        source = hits[0]["source"]
+        lines = (self.root / source["path"]).read_text(encoding="utf-8").splitlines()
+        self.assertIn('"address": "0x55BC60"', lines[source["start_line"] - 1])
+
+    def test_run_records_must_have_methods_and_literal_address_location(self):
+        ledger = self.add_run_results()
+        report = self.root / "research/recovered/runs/first-run/RUN_RESULT.json"
+        payload = json.loads(report.read_text(encoding="utf-8"))
+        del payload["records"][0]["methods"]
+        report.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+        digest = hashlib.sha256(report.read_bytes()).hexdigest()
+        ledger.write_text("destination\tdestination_sha256\nresearch/recovered/runs/first-run/RUN_RESULT.json\t" + digest + "\n", encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "run record"):
+            reference.load(self.root)
+        payload["records"][0]["methods"] = {}
+        encoded = json.dumps(payload, ensure_ascii=False, indent=2).replace('"address"', '"\\u0061ddress"')
+        with self.assertRaisesRegex(ValueError, "address line"):
+            reference.run_records(encoded, "RUN_RESULT.json", "fixture", {})
+
     def test_recovered_ledger_rejects_stale_missing_and_escaping_sources(self):
         report, ledger = self.add_recovery_ledger()
         report.write_text("changed", encoding="utf-8")
