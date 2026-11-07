@@ -1,0 +1,41 @@
+{
+  "baseline": "525b37e43f26c7a95c2b3818f83ed9507a33d452",
+  "root_ledger_rows": 2384,
+  "audit_date": "2026-11-05",
+  "fresh_listing_calls": 0,
+  "fresh_read_thread_calls": 0,
+  "body_reads_or_new_captures": 0,
+  "reused_listing": {
+    "active": {
+      "pages": 7,
+      "examined": 324,
+      "hasMore": false,
+      "candidates": 82
+    },
+    "archived": {
+      "pages": 3,
+      "examined": 109,
+      "hasMore": false,
+      "candidates": 11
+    }
+  },
+  "candidate_threads": 93,
+  "candidate_roles": {
+    "RESEARCH_OR_AUDIT_TITLE_LEAD": 51,
+    "PROJECT_CONTEXT_TITLE_LEAD": 42
+  },
+  "threads_with_selected_message_metadata": 9,
+  "threads_with_published_selected_body": 8,
+  "candidate_threads_no_selected_message": 84,
+  "candidate_threads_no_published_body": 85,
+  "selected_unique_messages": 36,
+  "published_existing_captures": 30,
+  "recorded_whole_message_deferrals": 6,
+  "known_unselected_agent_ids": 22,
+  "known_unfollowed_cursor_threads": 2,
+  "original_library_bodies_not_captured_as_recorded": 14,
+  "accepted_compilations": 4,
+  "new_report_ledger_rows": 0,
+  "source_hash_definition": "Recorded selected Unicode UTF8 representation, not service DB/raw HTTP; existing body hashes not revalidated in this metadata-only audit",
+  "no_full_history_completion_claim": true
+}

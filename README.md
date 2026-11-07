@@ -2,7 +2,7 @@
 
 関数とメモリの意味を調べ、その根拠になった研究本文まで辿るための事典です。人がGitHubで読むページと、AIが検索するデータは同じ辞書・出典から生成しています。
 
-現在の正本はこの非公開リポジトリの `develop` です。公開に向けた整理とローカル文書の回収を進めています。全研究の移管・公開準備の完了を示すものではありません。
+現在の正本はこの非公開リポジトリの `develop` です。公開に向けた整理とローカル文書の回収を進めています。全研究の移管・公開準備の完了を示すものではありません。 **[現在の残作業と優先順位](REMAINING_WORK.md)** を全体監査から整理しています。
 
 ## まず調べる
 
@@ -19,7 +19,7 @@
 | 命令名から登録・処理位置を調べる | [命令対応と旧表の相違](research/recovered/intake_structured_20261105/COMMAND_BINDINGS.md)。登録site、handler、callbackと命令の文脈を区別する |
 | 呼び出し元・呼び出し先 | 各関数ページの静的CALL一覧。収録済みのV9直接CALLが対象で、間接CALLや全関数の網羅ではない |
 | 未回収・保留・原本との対応 | [回収状況](research/recovered/README.md)、[現在のローカル所在](research/recovered/current_inventory/README.md)、[元の目録と収録の照合](research/recovered/COVERAGE.md) |
-| PR・Issue・研究チャットに残る成果 | [GitHub所在の最新照合](research/recovered/github_reconcile2/README.md)、[今回の研究チャット3回答](research/recovered/chat_capture2/README.md)、[定期研究チャットの照合](research/recovered/SCHEDULE_CHAT_CHECK.md)、[旧チャットの回答保全](research/recovered/chat_finals/README.md)、[旧Aの研究報告と参照照合](research/recovered/chat_a_history/README.md)。いずれも取得時点の記録 |
+| PR・Issue・研究チャットに残る成果 | [今回のGitHub履歴・変更HEAD監査](research/recovered/remainder_github_audit1/README.md)、[チャットの回収範囲](research/recovered/remainder_chats_audit1/README.md)、[今回の限定回収と残作業](research/recovered/intake_remainder_audit_20261105/README.md)、[前回の本文所在照合](research/recovered/github_reconcile2/README.md)、[以前の照合と旧チャット案内](research/recovered/SCHEDULE_CHAT_CHECK.md)。取得時点と未取得範囲を区別して読む |
 
 GitHubだけでページと収録本文を読めます。通常の事典検索にも、元PCの大容量DBやゲーム本体は必要ありません。件数は更新されるため、現在値は[生成された事典](reference/README.md)と[本文一覧](reference/DOCUMENTS.md)を参照してください。
 

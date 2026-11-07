@@ -1,0 +1,9 @@
+# 残っていた7要約・失敗票の判定
+
+凍結済み監査票SHA `8beacb7ee85bb13c98684560c9cd50c617498ef1a2dc24a42b6e19fa21621bd8` から固定7literal/currentSHAをAPPROVED_INPUTSに列挙した。基準525b37e43f26c7a95c2b3818f83ed9507a33d452、root2384行SHA `7093c28d0be7b9e1a3bd0ba3e63b97bcbfc2caff70d795a66c11a2076ea45a84`。他の24memory/node/pointer collectionは再取得・展開していない。
+
+2件/4,124 bytesを元UTF8 raw bytesで完全保存。BATTLE_LIVE_READONLYはbefore/afterの選別scalar・counter・3sideのpointer/countと未観測項目の112LF、WAR_TREE_DECODEはpostbattleのpointer/countを選別した20LFのsummary。known Task算法/生buffer/全memory export依存を含まず、全文を確認した。既存root source/destinationSHA alias0。privacy/encoding変換0、strict JSON syntax・重複keyなし。報告のstable/verified等は当時の主張で、原作再実行やatomic/full battle/戦略writeback証明へ読み替えない。
+
+5failure票はraw_readsのaddress/length/hex配列を伴うraw memory collectionであり、全体metadataにした。最初に全7件の全文を一括表示する処理を走らせたため、bufferを含む大量出力が途中省略された。これは適切なschema-first停止ではなかった。本文ファイルは作成しておらず、その表示を全文意味review/全体privacy不在の証明にしない。以後はheader key/raw_reads開始境界だけを確認し、buffer値・recordsの再表示/抜粋/再構成をしていない。各票の実際に見えた断片・省略範囲・schema境界はDEFERRED/CAPTUREに明示。失敗status/opaque VAだけを拒否理由にはしていない。
+
+原本7件のstable pin SHA/size、literal containment/祖先no-reparse、identity読取前後size/mtimeと最終SHA一致を確認。保存2本文/REPORT_LEDGER宛先SHAとOUTPUT_MANIFESTを照合。元監査9ファイルはhash一致で凍結保持。原本・shared/root/core/code・Git・network変更なし。リンク先native/code/log/DB/game/asset/runtime/case取得実行なし。ケース/model実行・READY/Golden/core意味採録0。manifestは自身以外を一覧する。

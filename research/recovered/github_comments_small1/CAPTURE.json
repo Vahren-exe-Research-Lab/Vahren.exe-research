@@ -1,0 +1,51 @@
+{
+  "baseline": "525b37e43f26c7a95c2b3818f83ed9507a33d452",
+  "baseline_accepted_ledger_rows": 2384,
+  "baseline_ledger_sha256": "7093c28d0be7b9e1a3bd0ba3e63b97bcbfc2caff70d795a66c11a2076ea45a84",
+  "parent_metadata_sha256": "f06c60b3c49267d2e1b139caac5e500a577f113146f2b3c49c0ff8162ba04361",
+  "parent_metadata_bytes": 110140,
+  "parent_capture_sha256": "483131b32d0c158e1885e74a7d7640131e5d5c726fc09015a8cab4ee7c12e5da",
+  "parent_capture_time_utc": "2026-11-05T10:02:30.708120+00:00",
+  "receipt_time_utc": "2026-11-05T10:10:10.264831+00:00",
+  "connector_calls": {
+    "github_fetch_issue_comments": 2,
+    "github_fetch_pr_comments": 4
+  },
+  "selected_comment_ids": [
+    6558087837,
+    6558134851,
+    6560902476,
+    6561500773,
+    6561841621,
+    6604858514,
+    6558113832,
+    6559321042,
+    6559322061,
+    6604855886
+  ],
+  "returned_selected_counts": {
+    "issue3": 5,
+    "issue20": 1,
+    "pr5": 1,
+    "pr9": 1,
+    "pr12": 1,
+    "pr19": 1
+  },
+  "all_ids_urls_match_pinned_metadata": true,
+  "connector_timestamp_matches": 4,
+  "connector_timestamp_null": 6,
+  "full_selected_bodies_reviewed": 10,
+  "accepted_origins": 10,
+  "unique_new_bodies": 10,
+  "aliases": 0,
+  "whole_deferred": 0,
+  "privacy_variants": 0,
+  "exact_saved_utf8_body_bytes": 22635,
+  "source_byte_scope": "Exactly returned selected comment.body Unicode encoded UTF-8; no BOM/newline addition/normalization; not server DB bytes, HTML or complete edit history",
+  "transport_verification": "All10 on-disk base64 readbacks compared equal to UTF-8/base64 of in-memory connector Unicode bodies",
+  "remaining_snapshot_comments_not_reviewed": 103,
+  "linked_fetches": 0,
+  "native_execution": 0,
+  "messages_posted_or_github_mutations": 0,
+  "original_or_core_or_git_mutations": 0
+}

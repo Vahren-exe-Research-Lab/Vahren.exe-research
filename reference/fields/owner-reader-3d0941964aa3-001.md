@@ -10,6 +10,9 @@
 - [research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_03H_05H_OFFLINE_RESIDUE_CORRECTED_STATIC.md 行 24](../../research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_03H_05H_OFFLINE_RESIDUE_CORRECTED_STATIC.md?plain=1#L24-L24) — owner `REA/T015`、参照VA `0x5D9F40/0x5DA070/0x5DFE10/0x5DFFC0/0x5E0DC0/0x5E6E10`、CALL site `0x5DFE5C/0x5DFE68/0x5D5922/0x5D5B51`、offset `inner+0xB20`, `entry+0x00`
   制約・訂正　Authored REA recovery compilation, not full original Library bodies; STATIC/ABI/NOT_READY/Golden limits retained; linked evidence not acquired; no semantic/READY promotion.
 
+- [research/recovered/github_comments_small1/data/comment_6558134851.md 行 10](../../research/recovered/github_comments_small1/data/comment_6558134851.md?plain=1#L10-L10) — \| 05H \| `0x5E6E10, 0x5DFE10; reader+0xC` \| EOFラッチで分類数読込み失敗をparser側に接続 \| 10/31 07H単独EOFを新発見扱いしない \|
+  制約・訂正　Captured connector body Unicode encoded UTF-8, not server database bytes. Historical author claims only; no linked source acquisition/native rerun/semantic promotion. Current body timestamp binding unavailable; pinned timestamps are prior metadata.
+
 <a id="field-32c"></a>
 ## reader + 0x32C
 

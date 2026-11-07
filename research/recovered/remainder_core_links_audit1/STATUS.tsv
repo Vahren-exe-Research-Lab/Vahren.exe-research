@@ -1,0 +1,626 @@
+record_kind	id	name	kind	resolved_explicit_source_links	unresolved_section_labels	source_cell	confidence
+symbol	va:0x008BE2F0	g_GameManager	object	1		F§82, W(work_dat_ui_context.h), 自動(vtable 書込み 0x553ACB)	静的確認
+symbol	va:0x008BE7F4	g_Engine	global	1		F§82	静的確認
+symbol	va:0x00AAD434	g_GameManager_sceneId	global	0		W(dat_ui_selector_plugin.c)	静的確認
+symbol	va:0x0087983C	g_loadingFlag	global	1		W(dat_ui_selector_plugin.c), F§86/§90	実機確認
+symbol	va:0x00879628	g_loadingLock	global	0		W(dat_ui_selector_plugin.c)	静的確認
+symbol	va:0x008797FC	g_mainHwnd	global	0		W(work_selector_hover_*.h)	実機確認
+symbol	va:0x00879822	g_WindowActiveForInput	global	0		T015§Win32/D3D window mode, W(dat_ui_selector_plugin.c)	静的確認
+symbol	va:0x0065BEEC	g_screenWidth	global	0		T015§Win32/D3D window mode, W(test_dat_ui_v4_runtime.c)	静的確認
+symbol	va:0x00555AD0	Startup_LoaderThread	func	1		W(dat_ui_selector_plugin.c), F§83	静的確認
+symbol	va:0x00555D69	Startup_SetLoadingFlag	code	0		W	静的確認
+symbol	va:0x00555E15	Startup_ClearLoadingFlag	code	0		W	静的確認
+symbol	va:0x00555F19	Main_MessageLoop	code	1		W, F§83	静的確認
+symbol	va:0x0048AD30	Title_Handler	func	0		W(dat_ui_selector_plugin.c)	静的確認
+symbol	va:0x004B9AD0	Title_Continue	code	0		W(dat_ui_selector_runtime.h)	テストのみ
+symbol	va:0x004B9B73	Title_Return	code	0		W(dat_ui_selector_runtime.h)	テストのみ
+symbol	va:0x005023E0	Bgm_StreamThread	func	1		F§84, W	静的確認
+symbol	va:0x005DA930	Vorbis_CodebookDecode	func	1		F§84, Codex handoff 2026-10-27	静的確認
+symbol	va:0x005DA9F8	Crash_5DA9F8	code	0		Codex handoff 2026-10-27	実機確認
+symbol	va:0x004338D0	Script_RunPass	func	1		F§1.1	静的確認
+symbol	va:0x004A1250	Script_DispatchCommand	func	1		F§8.3	静的確認
+symbol	va:0x004A7A90	Script_DispatchWorldCommand	func	1		F§8.3	静的確認
+symbol	va:0x004AE0F0	Script_DispatchVarCommand	func	1		F§8.5	静的確認
+symbol	va:0x00432EE0	Script_FireGameHook	func	1		F§18	静的確認
+symbol	va:0x004A17D8	Script_Op_Wait	code	1		F§1.4; research/recovered/structured_tables1/reports/exe/T006_OPCODE_HANDLERS.tsv line11 [sha256=0ce74d044b619742aa0b33702ed185fa7133d264e01dfc1a264377c2a16abbd9; main opcode9 binding only; not full function/ABI proof]	静的確認
+symbol	va:0x00502DD0	Lexer_NextToken	func	1		F§13	静的確認
+symbol	va:0x0050B220	Script_Loader	func	1		F§15	静的確認
+symbol	va:0x00464290	Prop_LookupBase	func	1		F§22, 旧symbols	静的確認
+symbol	va:0x004647D0	Prop_LookupString	func	1		F§22, 旧symbols	静的確認
+symbol	va:0x00585AD0	UnitDef_GetField	func	2		F§22, C(§93)	静的確認
+symbol	va:0x0042F860	StdString_NotEqualsCStr	func	1		F§49	静的確認
+symbol	va:0x0040ED80	Rng_RangeInclusive	func	1		F§33	静的確認
+symbol	va:0x005B6E99	srand	func	1		F§25	静的確認
+symbol	va:0x005B6EAB	rand	func	0		旧symbols	静的確認
+symbol	va:0x005B6BBB	operator_delete	func	0		W(work_selector_native_detail.h)	静的確認
+symbol	va:0x005D1B80	ftol	func	0		F付録A	静的確認
+symbol	va:0x00582D90	UnitDef_Create	func	1		F§22, §25	静的確認
+symbol	va:0x0058B7F0	UnitDef_ComputeStats	func	1		F§22.3	静的確認
+symbol	va:0x00573BD0	Unit_CopyStatsFromDef	func	1		F§22.4	静的確認
+symbol	va:0x00466F60	UnitDef_CreateMember	func	1		F§25.1	静的確認
+symbol	va:0x0058C0E0	UnitDef_BuildSkillList	func	1		F§24.2	静的確認
+symbol	va:0x0058DA40	UnitDef_SkillListPostProcess	func	1		F§24.3	静的確認
+symbol	va:0x0058AFA0	UnitDef_ApplyClassSkills	func	1		F§24.5	静的確認
+symbol	va:0x00586320	UnitDef_GetFriendSet	func	1		F§30	静的確認
+symbol	va:0x00479A30	Native_VectorShuffle	func	1		F§30	静的確認
+symbol	va:0x0058A540	UnitDef_ExpTotal	func	1		F§31	静的確認
+symbol	va:0x0058A400	UnitDef_ExpNext	func	1		F§31	静的確認
+symbol	va:0x0058A650	UnitDef_LevelUpLoop	func	1		F§31	静的確認
+symbol	va:0x00575110	Unit_LevelUpLoop	func	1		F§31	静的確認
+symbol	va:0x00551E50	Hit_LinkedAward	func	1		F§35, 旧symbols	静的確認
+symbol	va:0x00584970	UnitDef_GetChipName	func	1		F§92, W(dat_ui_v4_visuals.h)	実機確認
+symbol	va:0x005846A0	UnitDef_GetDisplayName	func	1		W(work_selector_native_detail.h), F§91	実機確認
+symbol	va:0x00583CF0	UnitDef_GetAffiliation	func	1		C(§93)	実機確認
+symbol	va:0x00583DC0	UnitDef_FindLeaderOfVassal	func	1		C(§93)	推定
+symbol	va:0x00583A80	UnitDef_Predicate_583A80	func	1		F§49, §52	推定
+symbol	va:0x00460E90	UnitDef_SetRoaming	func	1		F§26	静的確認
+symbol	va:0x00460F10	UnitDef_ClearRoaming	func	1		F§26	静的確認
+symbol	va:0x00461DA0	World_MonthlyRoamMove	func	1		F§52	静的確認
+symbol	va:0x00467F40	Power_FindByName	func	5		F§49 (old inferred name retained as correction history); dev_lab/docs/PEER_SCRIPT01_FINDINGS_20261011.md F§79.3/F§79.8; data/T014_GLOBAL_SAVE.md line142; REF_SAVE_FORMAT.md line10	静的確認（回収済み著述資料の記述。今回の原作再検証・実行なし）
+symbol	va:0x005AAEC0	Spot_Search	func	1		F§51	静的確認
+symbol	va:0x00597B00	Affiliation_GetPower	func	1		C(§93)	実機確認
+symbol	va:0x0045B850	Game_Start	func	1		F§63.4	静的確認
+symbol	va:0x0045BE10	Scenario_InitialPlacement	func	1		F§33, §58	静的確認
+symbol	va:0x004716C0	Turn_Init	func	1		F§63.4	静的確認
+symbol	va:0x00471E80	Turn_Process	func	1		F§59, §64	静的確認
+symbol	va:0x00474F10	GameCtrl::vf01	func	1		F§64.1, 旧symbols	静的確認
+symbol	va:0x0047C280	Turn_Phase_47C280	func	1		F§64.1	推定
+symbol	va:0x00593890	Power_Personality	func	1		F§66	静的確認
+symbol	va:0x0047E3A0	PowerAI_SelectTarget	func	1		F§66	静的確認
+symbol	va:0x00481260	PowerAI_Diplomacy	func	1		F§69	静的確認
+symbol	va:0x0047A1A0	PowerAI_Reassign	func	1		F§70	静的確認
+symbol	va:0x00476D60	PowerAI_Hire	func	1		F§71	静的確認
+symbol	va:0x0047D770	Talent_WarStartAndDesert	func	1		F§75	静的確認
+symbol	va:0x00475C60	EmployHero_Answer	func	1		F§77	静的確認
+symbol	va:0x0048F9E0	War_Start	func	1		F§68	静的確認
+symbol	va:0x004922A0	Battle_Begin	func	1		F§18, §73	静的確認
+symbol	va:0x00492890	BattleEvent_InstallBattleBlock	func	1		F§1.1, 旧symbols	静的確認
+symbol	va:0x00493630	Battle_End	func	1		F§67	静的確認
+symbol	va:0x0040D0A0	BattleStatusWnd_Open	func	1		F§82	静的確認
+symbol	va:0x00514C80	Battle_SideRemains	func	2		F§67; data/T030_RTS_MODE.md lines547-550,633-640,727-731 [saved-static authored report; sha256=1e462ef63681ab1a57425c6b686af4534eb2a0e2f9a4180c8bdb6a167ffce0b7]; CORRECTION-RTS-EMPTY-SIDE-NOT-ALWAYS-FALSE	静的確認
+symbol	va:0x0068B568	g_StatusBtnRect_Dismiss	global	1		F§95	静的確認
+symbol	va:0x0068B578	g_StatusBtnRect_HireExtract	global	1		F§95	静的確認
+symbol	va:0x0068B588	g_StatusBtnRect_Item	global	1		F§95	静的確認
+symbol	va:0x0065BEA8	g_StatusBtnRectTable	global	1		F§95	静的確認
+symbol	va:0x00639CD4	vt_TempStatusWnd	global	1		F§95	静的確認
+symbol	va:0x00639C5C	vt_StatusWnd	global	1		F§95	静的確認
+symbol	va:0x008BB6D8	g_ChoiceWnd	object	0		W(work_dat_ui_choice.h), 自動(vtable)	実機確認
+symbol	va:0x008BA538	g_WarWnd	object	1		C(§93), 自動(vtable)	実機確認
+symbol	va:0x008BA5BC	g_WarWnd_shown	global	1		C(§93)	実機確認
+symbol	va:0x008BA5DC	g_WarWnd_state	global	1		C(§93)	実機確認
+symbol	va:0x005A4100	WarWnd_StaticInit	func	1		C(§93)	静的確認
+symbol	va:0x0067E978	g_StatusWnd	object	1		F§92, 自動(vtable)	静的確認
+symbol	va:0x0067EB30	g_StatusWnd_target	global	0		本セッション	静的確認
+symbol	va:0x008BCD48	g_TempStatusWnd	object	1		F§92, W(work_selector_native_detail.h)	実機確認
+symbol	va:0x008BCDCC	g_TempStatusWnd_visible	global	0		W(work_detail_cleanup.h)	テストのみ
+symbol	va:0x008BCDE0	g_TempStatusWnd_owner	global	0		W(work_selector_detail_hover.h)	テストのみ
+symbol	va:0x008BCF00	g_TempStatusWnd_target	global	0	R1101§2	W(work_detail_cleanup.h), R1101§2	実機確認
+symbol	va:0x008BCF10	g_TempStatusWnd_rects	global	0		W(work_selector_skill_hover.h)	テストのみ
+symbol	va:0x008BE040	g_TempStatusWnd_hoverCount	global	0		W(work_selector_skill_hover.h)	テストのみ
+symbol	va:0x0055BAB0	TempStatusWnd_OpenForUnit	func	1	R1101§2	F§92, W(work_selector_native_detail.h), R1101§2	実機確認
+symbol	va:0x0055B590	StatusWnd_Hide	func	1		F§92, 旧symbols	実機確認
+symbol	va:0x0055B5B0	StatusWnd_OpenForUnit	func	0		本セッション(x32dbg)	実機確認
+symbol	va:0x0055BC60	StatusWnd_Layout	func	1	R1101§2	C(§93), R1101§2	実機確認
+symbol	va:0x0055D712	StatusWnd_Layout_ButtonsA	code	1		C(§93)	実機確認
+symbol	va:0x0055D7FF	StatusWnd_Layout_ButtonsB	code	1		C(§93)	静的確認
+symbol	va:0x0055D8F6	StatusWnd_Layout_ButtonGate	code	1		C(§93)	実機確認
+symbol	va:0x0055D93A	StatusWnd_Layout_MakeHire	code	1		C(§93)	実機確認
+symbol	va:0x0055D95F	StatusWnd_Layout_MakeExtract	code	1		C(§93)	実機確認
+symbol	va:0x0055D99C	StatusWnd_Layout_MakeDismiss	code	1		C(§93)	実機確認
+symbol	va:0x0055D9DD	StatusWnd_Layout_MakeItem	code	1		C(§93)	静的確認
+symbol	va:0x0055D9FC	StatusWnd_Layout_ButtonsEnd	code	1		C(§93)	実機確認
+symbol	va:0x00455520	FrameWnd_DrawButtonText	func	1		F§95	静的確認
+symbol	va:0x00436870	Text_Prepare_436870	func	1		C(§93)	推定
+symbol	va:0x00560650	StatusWnd::vf15_shared2	func	1		F§95	静的確認
+symbol	va:0x00560CA0	StatusWnd::vf16_shared2	func	1		Codex handoff 2026-10-29, F§95	静的確認
+symbol	va:0x005606A2	StatusWnd_PressWarWndCheck	code	1		C(§93), V9 function_range	静的確認
+symbol	va:0x00561120	StatusWnd::vf17	func	0		本セッション, 旧symbols	静的確認
+symbol	va:0x00562140	StatusWnd::vf18_shared2	func	0		本セッション, 旧symbols	静的確認
+symbol	va:0x00455CF0	FrameWnd::vf12_shared43	func	0		本セッション, 旧symbols	静的確認
+symbol	va:0x00406E20	Nop_406E20	func	0		本セッション	静的確認
+symbol	va:0x0043B5A0	ExpresElement_IsString_False	func	0		本セッション, 旧symbols	静的確認
+symbol	va:0x00455D90	FrameWnd_ScreenToLocal	func	0		W(work_selector_skill_hover.h)	推定
+symbol	va:0x00521A00	Player::b144_vf01	func	0		本セッション, RTTI	静的確認
+symbol	va:0x00521560	Player_DispatchHover	func	0	R1101§3	本セッション, R1101§3	実機確認
+symbol	va:0x00521AF0	Player_HoverCallSite	code	0		W(work_selector_hover_integration.h)	静的確認
+symbol	va:0x00544290	Battle_CreateSimpleUnit	func	0	T011§14	T013§primary/fallback poolのRTTI同定, T011§14	静的確認
+symbol	va:0x00545740	Unit_UpdateSimpleFrame	func	0	T012§11	T012§11, T013§target search cadence	静的確認
+symbol	va:0x0057AA00	Unit_UpdateBattleFrame	func	0	T012§11	T012§11, T013§target search cadence	静的確認
+symbol	va:0x0057EB40	Unit_DispatchBattleAction	func	0	T012§61	T012§61, T013§B-20261011-0211-01	静的確認
+symbol	va:0x0057E1D0	Unit_ExecuteActionRoute	func	0	T012§16;T013§2026	T012§16, T013§2026-10-12 19:16	静的確認
+symbol	va:0x0057E4E0	Unit_RefreshActionSearch	func	0	T012§61	T013§target search cadence, T012§61	静的確認
+symbol	va:0x0040E220	SimpleBattle_CommitResult	func	0		EXP_SIMPLEBATTLE_LIFECYCLE§CP04, T010§battle finish resultFlag	静的確認
+symbol	va:0x0040E2F0	SimpleBattle_RunBoundedRounds	func	0		EXP_SIMPLEBATTLE_LIFECYCLE§CP05	静的確認
+symbol	va:0x0040F000	SimpleBattle_ReleaseSides	func	0		EXP_SIMPLEBATTLE_LIFECYCLE§CP01/CP04	静的確認
+symbol	va:0x0040F320	SimpleBattle_BuildUnitRoster	func	0		EXP_SIMPLEBATTLE_LIFECYCLE§CP02	静的確認
+symbol	va:0x00514AA0	Battle_ReleaseSideUnitVectors	func	0		EXP_SIMPLEBATTLE_LIFECYCLE§CP01	静的確認
+symbol	va:0x005769B0	Unit_ProcessKnockbackMotion	func	0	T012§92	T012§92, T015§通常戦闘GUI	静的確認
+symbol	va:0x004E4C70	Unit_ApplyKnockMovementHelper	func	0	T012§66	T012§66	推定
+symbol	va:0x004E53B0	Unit_RefreshTargetLatch	func	0	T012§39	T012§39	静的確認
+symbol	va:0x005501A0	Rush_UpdateFrame	func	0		T012§B-20261027-17H, T013§B-20261027-08H	静的確認
+symbol	va:0x00527EA0	Troop_CleanupCandidateUnits	func	0		T024§B-20261025-2008	静的確認
+symbol	va:0x00527ED0	Unit_ResetEmptySelectionState	func	0		T024§B-20261025-1910	静的確認
+symbol	va:0x0048D6A0	Battle_ConstructScene	func	0		BRIDGE Stage16§C, BATTLE_SCENE_BUILDER_EXTENDED_EPILOGUE_PE	静的確認
+symbol	va:0x00545CC0	Skill_DispatchUnitAbility	func	0	T012§21	T012§21, EXP_KIND4_DISPATCH_PRODUCERS	静的確認
+symbol	va:0x00546F70	Skill_ExecuteMissile	func	0	T012§21;T011§18	T012§21, T011§18	静的確認
+symbol	va:0x00547DB0	Skill_ExecuteMissileAllTargets	func	0	T012§21	T012§21	静的確認
+symbol	va:0x00547AF0	Skill_ExecuteHealAllTargets	func	0	T012§22	T012§22, T013§support-skill secondary candidate pipeline	静的確認
+symbol	va:0x00551490	Skill_ApplyHealStatus	func	0	T012§23;T011§14	T012§23, T011§14	静的確認
+symbol	va:0x00550E70	Damage_ComputeAttackDefense	func	1	T012§3	T012§3/§4, F§35	静的確認
+symbol	va:0x00550D80	Damage_ComputeSkillStrength	func	0	T012§3	T012§3 str helper	静的確認
+symbol	va:0x00578B70	Status_ApplyGaugeReduction	func	0	T012§6	T012§6, EXP_ENDTRANSFER_AND_SUMMON_GATES§CP06	静的確認
+symbol	va:0x0057DF90	Status_ApplyNaturalRecovery	func	0	T012§6	T012§6/§26	静的確認
+symbol	va:0x0057F570	Skill_EvaluateSupportCandidate	func	0		T013§support-skill secondary candidate pipeline	静的確認
+symbol	va:0x0057FC90	Skill_EvaluateSupportAlternative	func	0		T013§support-skill secondary candidate pipeline	静的確認
+symbol	va:0x0057FFD0	Skill_ExecuteAllfuncKind2	func	0		T013§B-20261013-0959-01, T011§B-20261013-1055	静的確認
+symbol	va:0x00580280	Skill_ExecuteLinkedEffect	func	0		T012§B-20261013-0959, T013§B-20261011-0408	静的確認
+symbol	va:0x0054ADA0	Skill_BuildSupportCandidateList	func	0	T012§37	T012§37, T013§support候補除外filter	静的確認
+symbol	va:0x0054A170	Skill_FilterSupportCandidates	func	0	T012§49	T012§49, T013§support候補除外filter	推定
+symbol	va:0x0054A1C0	Skill_PrepareLargeCandidateSet	func	0	T012§52	T012§52, T013§Skill+A18実引数	推定
+symbol	va:0x0054A660	Skill_RankCandidateCallback	func	0		T013§B-20261011-2213-02	推定
+symbol	va:0x0054A7B0	Skill_PrepareHealCandidateGroup	func	0		T013§補助候補の通常heal	推定
+symbol	va:0x0054B280	Skill_CompareSupportCandidates	func	0		T013§B-20261011-2314-01	静的確認
+symbol	va:0x0054E0B0	Skill_ExecuteSupportEffect	func	0		T013§B-20261011-0311-02	推定
+symbol	va:0x004E7ED0	Skill_CheckMissileRangeGate	func	0	T012§55	T012§55/§69	静的確認
+symbol	va:0x0054E420	Skill_UpdateEffectObject	func	0		T013§B-20261027-08H	静的確認
+symbol	va:0x005510E5	Damage_ZeroOnFullResistance	code	0	T012§4	T012§4	静的確認
+symbol	va:0x00551574	Skill_ReadAdd2RuntimeVector	code	0	T012§23	T012§23	静的確認
+symbol	va:0x00545EC5	Skill_DispatchKindJumpTable	code	0	T012§21	T012§21	静的確認
+symbol	va:0x005470FF	Skill_UpdateMissileStateField	code	0	T011§18	T011§18	静的確認
+symbol	va:0x0065BF18	g_DamageResistanceTable	global	0	T012§2	T012§2	静的確認
+symbol	va:0x0063B070	g_PercentToRatioFactor	global	0	T012§46	T012§46, T009§Runtime typed-consumer	静的確認
+symbol	va:0x0065BCFC	g_UnitStatusHpLimit	global	0	T012§6	T012§6	静的確認
+symbol	va:0x0065BD4C	g_UnitStatusMinValue	global	0	T012§6	T012§6	静的確認
+symbol	va:0x0065BD58	g_UnitStatusRecovery	global	0	T012§6	T012§6	静的確認
+symbol	va:0x0065BD5C	g_UnitStatusDeathThreshold	global	0	T012§6	T012§6	静的確認
+symbol	va:0x0057B870	Ai_SearchTargetCadence	func	0		T013§target search cadence	静的確認
+symbol	va:0x00514D60	Ai_SelectNearestTarget	func	0		T013§full target selection, §stealth, §primary/fallback pool	静的確認
+symbol	va:0x00514F10	Ai_BuildSupportTargets	func	0		T013§support-skill secondary candidate pipeline	静的確認
+symbol	va:0x0057CFA0	Ai_CopySupportTargetCache	func	0		T013§support-skill secondary candidate pipeline	静的確認
+symbol	va:0x0057CFD0	Ai_MergeSupportTargetCache	func	0		T013§support-skill secondary candidate pipeline	静的確認
+symbol	va:0x005154F0	Ai_AppendCandidateRecord	func	0		T013§full target selection, §support-skill secondary candidate pipeline	静的確認
+symbol	va:0x00515060	Ai_SumSupportUnitValues	func	0		T013§B-20261011-0610-01	推定
+symbol	va:0x00515150	Ai_ReadSupportUnitIndex	func	0	T011§21	T011§21 B-20261011-0610-02	推定
+symbol	va:0x005151D0	Ai_RebuildLiveUnitScoreMap	func	0		T013§B-20261011-0816-01	静的確認
+symbol	va:0x005158A0	Ai_CopySupportFallbackRecords	func	0		T013§B-20261011-0115-01	推定
+symbol	va:0x0057C9B0	Ai_CheckFacingSelection	func	0		T013§B-20261010-1716-02	推定
+symbol	va:0x0057D1D0	Ai_UpdateSpatialTargetLink	func	0		T013§Unit+0x1E594の生成後config writer	静的確認
+symbol	va:0x0057D8B0	Ai_AdjustSearchTargetCoordinates	func	1		T013§B-20261021-1914-01; B-20261029-1310-T013-POSTSELECT-DUAL-DISTANCE-FPU-GATE-01; B-20261029-15H-T013-CALLER-MODE-ENTRY-NATIVE-01; data/T013_POSTSELECT_FOUR_CALLER_MODE_NATIVE_20261029_15H.md lines 1,1 [locator-only; recovered=research/recovered/b_reports/T013_POSTSELECT_FOUR_CALLER_MODE_NATIVE_20261029_15H.md; sha256=e223128b8332cdd52a35368fdcd3640a8ff5e0edc089fb712b8385de66664e26]	推定
+symbol	va:0x00571A40	Ai_CheckOrientationGate	func	0		T013§B-20261010-1716-02	推定
+symbol	va:0x0041EF50	Ai_SelectFourwayBattleMode	func	0		T024§B-20261026-0115	静的確認
+symbol	va:0x004C7040	Ai_ApplyFourwayPairState	func	0		T024§B-20261025-2313	静的確認
+symbol	va:0x0044CF80	Ai_DispatchMode1UnitGroup	func	1		T013§B-20261029-1613; B-20261029-1613-T013-MODE1-VTABLE68-CLASS-DISPATCH-01; B-20261029-1713-T013-UPSTREAM-FOUR-CALL-GROUP-FILTER-01; data/T013_MODE1_UPSTREAM_FOUR_CALLER_GROUP_FILTER_NATIVE_20261029_17H.md lines 1,9 [locator-only; recovered=research/recovered/b_batch9/data/T013_MODE1_UPSTREAM_FOUR_CALLER_GROUP_FILTER_NATIVE_20261029_17H.md; sha256=db5fc5bb704e1095f382e0111fec49998717005a2c71cf6ef0a23bc9375e6aef]	静的確認
+symbol	va:0x0049E8B0	Ai_CollectAliveUnitsFromTree	func	0		T013§B-20261024-0110	静的確認
+symbol	va:0x0049CD60	Ai_UpdateKeyedUnitVector	func	0		T013§B-20261024-0616	推定
+symbol	va:0x0049F7D0	Ai_InsertKeyedVectorRecord	func	0		T013§B-20261024-0616	静的確認
+symbol	va:0x005E3B70	Ai_ComputeCandidateDistance	func	0		T013§同距離target候補のtie-break	推定
+symbol	va:0x004F93A0	Ai_ComputeBattleAreaTargetPoint	func	1		T013§B-20261021-1914-01; B-20261029-1112-T013-ANGLE-QUADRANT-CORRECTION-NATIVE-01; B-20261029-1216-T013-POSTSELECT-ATAN2-FLOOR-ABI-JOIN-01; data/T013_POSTSELECT_ATAN2_FLOOR_ABI_JOIN_NATIVE_20261029_12H.md lines 1,8 [locator-only; recovered=research/recovered/b_reports/T013_POSTSELECT_ATAN2_FLOOR_ABI_JOIN_NATIVE_20261029_12H.md; sha256=1feb0c9befb069674e3501f336bbdda2db6a33a01f370446db2d6709e6f2e64e]	推定
+symbol	va:0x0065BCAC	g_UnitSearchThreshold	global	0		T013§target search cadence	静的確認
+symbol	va:0x0087984F	g_SupportPresenceGateOverride	global	0		T013§support-skill secondary candidate pipeline	静的確認
+symbol	va:0x0065EB64	g_FourwayBattleModeFlag	global	0		T024§B-20261026-0115	推定
+symbol	va:0x0063A4BC	vt_SimpleUnit	object	0		T013§primary/fallback poolのRTTI同定, EXP_SIMPLEBATTLE_LIFECYCLE§CP01	静的確認
+symbol	va:0x0063A8E4	vt_SimpleStaticUnit	object	0		T013§primary/fallback poolのRTTI同定	静的確認
+symbol	va:0x0057BE30	Skill_PostActionUpdate	func	1		B-20261013-1110-01, REF_SKILL_POST_ACTION.md; data/T012_SKILL_POST_57BE30_CONTRACT_20261013.md lines 2,2 [locator-only; recovered=research/recovered/b_batch8/data/T012_SKILL_POST_57BE30_CONTRACT_20261013.md; sha256=718c89e4dbdff8bec49d77d05176c4059c6693929e67d5243d5f8b63d745c9cb]	静的確認
+symbol	va:0x0054E7B0	Summon_SpawnFromSkill	func	1	EXP_CACHE_STRING_KEY_RECORD_ABI§4	T011§召喚caller, EXP_KIND4_DISPATCH_PRODUCERS, EXP_CACHE_STRING_KEY_RECORD_ABI§4, B-20261013-1134-01, REF_UNIT_EXP_SUMMON.md; data/T012_SUMMON_CORE_54E7B0_CONTRACT_20261013.md lines 1,1 [locator-only; recovered=research/recovered/b_reports/T012_SUMMON_CORE_54E7B0_CONTRACT_20261013.md; sha256=553f52e6b55e4de0d7cca8612acfcf7a49da7e7723eb27ada5c231037d16b3a6]	静的確認
+symbol	va:0x00547490	Summon_ProcessSkillKind4	func	0	EXP_CACHE_STRING_KEY_RECORD_ABI§4	EXP_KIND4_DISPATCH_PRODUCERS, EXP_CACHE_STRING_KEY_RECORD_ABI§4	静的確認
+symbol	va:0x00553390	Summon_ProcessAlternativeKind4	func	0		EXP_KIND4_DISPATCH_PRODUCERS, EXP_COLLAB_STATUS	静的確認
+symbol	va:0x00552EF0	Summon_DispatchAlternativeSkill	func	0		EXP_KIND4_DISPATCH_PRODUCERS, EXP_COLLAB_STATUS	静的確認
+symbol	va:0x00577260	UnitData_FindSummonRecord	func	0	EXP_CACHE_STRING_KEY_RECORD_ABI§4	EXP_CACHE_STRING_KEY_RECORD_ABI§4	静的確認
+symbol	va:0x00577310	UnitData_InsertSummonRecord	func	0	EXP_CACHE_STRING_KEY_RECORD_ABI§4	EXP_CACHE_STRING_KEY_RECORD_ABI§4	静的確認
+symbol	va:0x0057A6E0	UnitData_CreateRecordNode	func	0	EXP_CACHE_STRING_KEY_RECORD_ABI§3	EXP_CACHE_STRING_KEY_RECORD_ABI§3, EXP_SAVE_TREE_POINTER_VS_INLINE	静的確認
+symbol	va:0x00543E00	Unit_DestroyBattleUnit	func	0		EXP_CACHED_RECORD_LIFETIME§機械的に追える配置	静的確認
+symbol	va:0x005450C0	UnitData_ReleaseRecordTree	func	0		EXP_CACHED_RECORD_LIFETIME§機械的に追える配置	静的確認
+symbol	va:0x005454D0	UnitData_ReleaseRecordNode	func	0		EXP_CACHED_RECORD_LIFETIME, EXP_SUMMON_DESTRUCTOR_NORMAL_VTABLE	静的確認
+symbol	va:0x00466BA0	UnitData_CopyRecordPayload	func	0	EXP_CACHE_STRING_KEY_RECORD_ABI§3	EXP_CACHE_STRING_KEY_RECORD_ABI§3/§4	静的確認
+symbol	va:0x0055A000	Unit_DestroyStaticVariant	func	0		EXP_CACHED_RECORD_LIFETIME§機械的に追える配置	静的確認
+symbol	va:0x0055B010	Unit_DeleteStaticVariant	func	0		EXP_CACHED_RECORD_LIFETIME§機械的に追える配置	静的確認
+symbol	va:0x00570C90	Unit_DeleteNormalVariant	func	0		EXP_SUMMON_DESTRUCTOR_NORMAL_VTABLE, EXP_SIMPLEBATTLE_LIFECYCLE§CP01	静的確認
+symbol	va:0x004591F0	UnitData_DestroyPayload	func	0		EXP_CACHED_RECORD_LIFETIME§機械的に追える配置	静的確認
+symbol	va:0x00467DE0	UnitData_FindPersistentRecord	func	0		EXP_SIMPLEBATTLE_LIFECYCLE§CP03	静的確認
+symbol	va:0x004E70E0	Summon_ProcessSharedQueue	func	0		T011§B-20261026-15H	静的確認
+symbol	va:0x0056F6F0	Unit_InitializeRuntimeHolder	func	0		T011§B-20261027-13H	静的確認
+symbol	va:0x0056F880	Unit_ConstructSummonedRuntime	func	1		T011§B-20261027-13H, EXP_SUMMON_DESTRUCTOR_NORMAL_VTABLE, B-20261013-1146-01, REF_UNIT_EXP_SUMMON.md; data/T011_SUMMON_RUNTIME_UNIT_56F880_CONTRACT_20261013.md lines 1,1 [locator-only; recovered=research/recovered/b_batch5/data/T011_SUMMON_RUNTIME_UNIT_56F880_CONTRACT_20261013.md; sha256=e97d9a38fd704f7799790cafdc1c1ee685e310a59cbf887ae81611dc4c30ee0a]	静的確認
+symbol	va:0x00571B70	Unit_InitializeBattleInstance	func	0	T011§13	T011§13/§15, T013§stealth	推定
+symbol	va:0x00587CC0	Unit_CachedValueOrAggregate	func	3	T011§15;T011§17	T011§15/§16; T011§17; data/T011_DATA_MODEL.md lines300-308 [saved-static authored report; sha256=2848bfdf9cf9c47cdb5174385d3626140207dd726ce2078982f5486e6ed3c14b]; CORRECTION-UNIT-CACHED-VALUE-NOT-RESET; F§64.2; F§75 [implementation/static-crosswalk claims; original callee write attribution not reconciled]	静的確認
+symbol	va:0x00579940	UnitData_CompareRecordKeys	func	0	EXP_CACHE_STRING_KEY_RECORD_ABI§1	EXP_CACHE_STRING_KEY_RECORD_ABI§1	静的確認
+symbol	va:0x00588470	UnitData_ResolveTypedDefinition	func	0		T011§B-20261013-1102	推定
+symbol	va:0x00402C40	UnitData_CompareRawStringKeys	func	0	EXP_CACHE_STRING_KEY_RECORD_ABI§1	EXP_CACHE_STRING_KEY_RECORD_ABI§1	静的確認
+symbol	va:0x0063A9E4	vt_UnitRuntime	object	0		EXP_SUMMON_DESTRUCTOR_NORMAL_VTABLE	静的確認
+symbol	va:0x0054ED95	Summon_SaveSourceUnitOnFlash	code	0		T011§B-20261027-1514	静的確認
+symbol	va:0x0054F074	Summon_ReadInheritedHolder	code	0		T011§B-20261027-13H	静的確認
+symbol	va:0x00577405	UnitData_ReturnInsertedRecord	code	0	EXP_CACHE_STRING_KEY_RECORD_ABI§4	EXP_CACHE_STRING_KEY_RECORD_ABI§4	静的確認
+symbol	va:0x0057A764	UnitData_AdvanceToPayload	code	0	EXP_CACHE_STRING_KEY_RECORD_ABI§3	EXP_CACHE_STRING_KEY_RECORD_ABI§3	静的確認
+symbol	va:0x0056F720	Unit_SetHolderField	code	0		T011§B-20261027-13H	静的確認
+symbol	va:0x0045E7F0	Save_LoadFullState	func	0	T014§2026	T014§2026-10-08 A14, §normal save reader	静的確認
+symbol	va:0x0045EAC0	Save_LoadStoredGroups	func	0	T014§2026	T014§2026-10-08 A14, §2026-10-12 A57	静的確認
+symbol	va:0x0045E1E0	Save_LoadReaderCore	func	0	T014§2026;S1101§3	T014§2026-10-13 A78, §normal save tail, S1101§3	静的確認
+symbol	va:0x00460000	Save_WriteFullState	func	0	S1101§3	T014§通常 .sav writer, §file rewrite behavior, S1101§3	静的確認
+symbol	va:0x0045F960	Save_PrepareFullMetadata	func	0		T014§通常 .sav writer	静的確認
+symbol	va:0x00428710	Save_WriteGlobalVariables	func	0		T014§gwrite logical semantics, §file rewrite behavior	静的確認
+symbol	va:0x00428010	Save_ReadGlobalVariables	func	0		T014§global.sav load model, §command -> native core	静的確認
+symbol	va:0x00427040	Save_EncodeAdditiveEnvelope	func	0	T031§20	T014§binary format / envelope, T031§20	静的確認
+symbol	va:0x004270F0	Save_DecodeAdditiveEnvelope	func	0		T014§binary format / envelope, §通常 .sav writer	静的確認
+symbol	va:0x00429C60	Save_DecodeGlobalRecords	func	0		T014§global.sav load model	推定
+symbol	va:0x004637A0	Variable_WriteNumericMap	func	0	T031§18	T014§通常save groupの意味同定, T031§18	静的確認
+symbol	va:0x00463CA0	Variable_GetOrCreateNumeric	func	0	T014§2026;T032§7.1	T014§2026-10-08 A5, T032§7.1	静的確認
+symbol	va:0x0041EBE0	Variable_ModifyNumericDirect	func	0	T014§2026	T014§2026-10-08 A9	静的確認
+symbol	va:0x00463610	Variable_WriteScenarioName	func	0	T014§2026	T014§2026-10-08 A12	静的確認
+symbol	va:0x0058F7E0	Variable_EraseOldMappedValue	func	0	T014§2026	T014§2026-10-08 A13, T011§B-20261025-1513	推定
+symbol	va:0x004C1200	Variable_FindTreeKey	func	0	T012§57;T014§2026	T012§57, T014§2026-10-08 A13	静的確認
+symbol	va:0x00470830	Save_WritePrintableString	func	0		T014§binary format / envelope	静的確認
+symbol	va:0x004705F0	Save_ReadPrintableString	func	0		T014§binary format, §normal save reader group order	静的確認
+symbol	va:0x00470700	Save_ReadInt32Value	func	0		T014§normal save reader group order	静的確認
+symbol	va:0x00471AF0	Save_ReadTurnState	func	1	S1101§7	T014§normal save tail, F§62.1, S1101§7	静的確認
+symbol	va:0x00471D20	Save_WriteTurnState	func	1	S1101§7	T014§normal save tail, F§62.1, S1101§7	静的確認
+symbol	va:0x00435550	Save_ReadWorldGraphState	func	0		T014§normal save tail: diplomacy state + spot graph/path state	静的確認
+symbol	va:0x00435C10	Save_WriteWorldGraphState	func	0		T014§normal save tail: diplomacy state + spot graph/path state	静的確認
+symbol	va:0x005B0400	Save_ReadSpotPathPayload	func	0		T014§SpotPath / SpotEscapePath shared payload	静的確認
+symbol	va:0x005B0600	Save_WriteSpotPathPayload	func	0		T014§SpotPath / SpotEscapePath shared payload	静的確認
+symbol	va:0x00596AA0	Save_WritePowerGroupRecord	func	0	S1101§6	T014§通常save plaintext state groups, S1101§6	静的確認
+symbol	va:0x00598CE0	Save_WriteSpotGroupRecord	func	0	S1101§5	T014§通常save plaintext state groups, S1101§5	静的確認
+symbol	va:0x0058EFD0	Save_WriteUnitDataRecord	func	0	T011§20	T011§20, T014§通常save plaintext state groups, EXP_SAVE_TREE_POINTER_VS_INLINE	静的確認
+symbol	va:0x0065CD28	g_SaveEmptyStringSeparator	global	0		T014§通常save plaintext state groups	静的確認
+symbol	va:0x004A5F53	Variable_DispatchGread	code	0		T014§command -> native core	静的確認
+symbol	va:0x004A60D1	Variable_DispatchGwrite	code	0		T014§command -> native core	静的確認
+symbol	va:0x004A17C8	Save_DispatchCommand	code	0		T014§通常 .sav writer	静的確認
+symbol	va:0x0045FF4B	Save_WriteAutosaveSlot	code	0		T014§通常 .sav writer	静的確認
+symbol	va:0x0046065C	Save_EncryptStreamBeforeWrite	code	0		T014§通常 .sav writer	静的確認
+symbol	va:0x00428F84	Save_WriteGlobalFileBytes	code	0		T014§file rewrite behavior	静的確認
+symbol	va:0x0044F470	Event_EvaluatePhasePredicate	func	0	T031§2026	T010§battle clock native semantics, T031§2026-10-13 phase predicates	推定
+symbol	va:0x004C1FC0	Random_InitializeMapSeed	func	0	T031§17	T031§17 Native reseed boundaries	静的確認
+symbol	va:0x004C2240	Random_ContinueMapSeedSetup	func	0	T031§2026	T031§2026-10-12 A51, §17	推定
+symbol	va:0x0048C880	Event_RunWorldPhase	func	0		T010§phase frameInstallMode=0 caller分類	静的確認
+symbol	va:0x0048B4A0	Scene_RunRngResetBranch	func	0	T031§17	T031§17 Native reseed boundaries	推定
+symbol	va:0x0048BF60	Scene_RunPhase5SeedSetup	func	0	T031§2026	T031§2026-10-12 A51	静的確認
+symbol	va:0x004335E0	Event_RunExecutionMode	func	0		T010§phase executionMode / frame-install contract	静的確認
+symbol	va:0x0044DCE0	Expression_EvaluateLogicalShortCircuit	func	0	T010§2026	T010§2026-10-10 A35	静的確認
+symbol	va:0x005001B0	Random_SetMapGenerationSeed	func	0	T031§17	T031§17 Native reseed boundaries	静的確認
+symbol	va:0x0044E3F0	Expression_RegisterConditionNames	func	0		T010§condition registry	静的確認
+symbol	va:0x004365F0	Event_InsertFrameKindZero	func	0		T010§phase executionMode / frame-install contract, §frameInstallMode vector transform	静的確認
+symbol	va:0x00436080	Event_TransformScriptFrame	func	0		T010§frameInstallMode vector transform	推定
+symbol	va:0x004930C0	Event_EvaluateBattleIfRoots	func	0		T010§if / rif lifecycle	静的確認
+symbol	va:0x00492D80	Event_ProcessBattleTick	func	0	T010§2026	T010§2026-10-12 A69, BATTLE_TAKEOVER_OBSERVABILITY_CONTRACT	推定
+symbol	va:0x0048BC70	Scene_RunPhase6SeedSetup	func	0	T031§2026	T031§2026-10-12 A51	静的確認
+symbol	va:0x00479740	Random_ShuffleStringVector	func	0	T031§16	T031§16 Native RNG / shuffle contract	静的確認
+symbol	va:0x00433E80	Event_ExecuteMode6Branch	func	0	T010§2026	T010§2026-10-12 A69	静的確認
+symbol	va:0x00492710	Event_InitializeBattleClock	func	0		T010§resettable time vs absolute interval clock	静的確認
+symbol	va:0x00565700	Event_UpdateBattleLimit	func	0		T010§battle clock native semantics	静的確認
+symbol	va:0x00565730	Event_GetBattleLimit	func	0		T010§battle clock native semantics	静的確認
+symbol	va:0x00565750	Event_GetElapsedLimitTime	func	0		T010§battle clock native semantics	静的確認
+symbol	va:0x004A18B1	Event_DispatchBattleEvent	code	0		T010§battleEvent root scheduler	静的確認
+symbol	va:0x004518FA	Expression_GetBattleTime	code	0		T010§battle clock native semantics	静的確認
+symbol	va:0x0045190B	Expression_GetBattleLimit	code	0		T010§battle clock native semantics	静的確認
+symbol	va:0x00451915	Expression_TestBattleInterval	code	0		T010§battle clock native semantics	静的確認
+symbol	va:0x004B47FC	Event_ResetBattleClock	code	0		T010§resettable time vs absolute interval clock	静的確認
+symbol	va:0x004AEDDA	Random_DispatchPushRand	code	0	T031§18	T031§18 pushRand出力のnative永続map	静的確認
+symbol	va:0x004B044F	Random_DispatchShuffle	code	0	T031§16	T031§16 Native RNG / shuffle contract	静的確認
+symbol	va:0x0067B938	g_BattleLimitMode	global	0		T010§battle clock native semantics	静的確認
+symbol	va:0x0067B93C	g_BattleLimitRemaining	global	0		T010§battle clock native semantics	静的確認
+symbol	va:0x0063B080	g_RandomUnitScale	global	0		T013§stealth, T014§binary format	静的確認
+symbol	va:0x0063B058	g_IntervalQuantum	global	0		T010§battle clock native semantics	静的確認
+symbol	va:0x0063B060	g_RandomPercentScale	global	0		T013§stealthによるprimary target除外	静的確認
+symbol	va:0x0063B100	g_SaveKeyRandomSpan	global	0		T014§binary format / envelope	静的確認
+symbol	va:0x005B47B0	World_RebuildSpotSkinCache	func	0		T015§worldskin / showSpot / hideSpot	静的確認
+symbol	va:0x005985C0	World_RebuildSingleSpotSkin	func	0		T015§worldskin / showSpot / hideSpot	推定
+symbol	va:0x005B5010	World_RefreshDerivedSkin	func	0		T015§worldskin / showSpot / hideSpot	推定
+symbol	va:0x005A8740	Spot_ShowRuntimeObject	func	0		T015§Spot表示objectのshow/hide契約	静的確認
+symbol	va:0x005A89A0	Spot_HideRuntimeObject	func	0		T015§Spot表示objectのshow/hide契約	静的確認
+symbol	va:0x005972E0	Spot_LoadRuntimeCapacity	func	0		T009§Capacity / range normalization correction	静的確認
+symbol	va:0x004B9930	Scene_DispatchGameMode	func	0		T010§phase frameInstallMode=0 caller分類	静的確認
+symbol	va:0x004A6E40	World_RegisterPowerCommands	func	0	T025§13	T025§13 World War 併合APIの登録	推定
+symbol	va:0x006385BC	vt_SpotDisplayObject	object	0		T015§Spot表示objectのshow/hide契約	静的確認
+symbol	va:0x004A2793	World_DispatchSkinRebuild	code	0		T015§worldskin / showSpot / hideSpot	静的確認
+symbol	va:0x004A2ED6	Spot_DispatchShowSpot	code	0		T015§worldskin / showSpot / hideSpot	静的確認
+symbol	va:0x004A304A	Spot_DispatchHideSpot	code	0		T015§worldskin / showSpot / hideSpot	静的確認
+symbol	va:0x004A71AA	Power_RegisterUnionPower	code	1	T025§13	T025§13 World War 併合APIの登録; data/T025_STRATEGIC_PROGRESSION.md lines188-191 [locator-only; recovered=research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md; sha256=ef18a3adff0c698a4244ffe0e8afa53646b211a7daf882b8f4fdf5f07382cdfa; registration site, not handler entry or power-map effects]	静的確認
+symbol	va:0x004A6FE1	Power_RegisterAddPower	code	1	T025§13	T025§13 World War 併合APIの登録; data/T025_STRATEGIC_PROGRESSION.md lines188-191 [locator-only; recovered=research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md; sha256=ef18a3adff0c698a4244ffe0e8afa53646b211a7daf882b8f4fdf5f07382cdfa; registration site, not handler entry or power-map effects]	静的確認
+symbol	va:0x005973AF	Spot_ApplyCapacityFallback	code	0		T009§Capacity / range normalization correction	静的確認
+symbol	va:0x00597412	Spot_ClampCapacityTo24	code	0		T009§Capacity / range normalization correction	静的確認
+symbol	va:0x005559B0	Window_HandleWin32Messages	func	0		T015§Win32/D3D window mode and buffered input	静的確認
+symbol	va:0x004BCF70	Input_PollGameMouse	func	0		T015§Win32/D3D window mode, §879822入力poll	静的確認
+symbol	va:0x004BD170	Input_FlushInactiveDevices	func	0		T015§非アクティブ遷移のDirectInput buffer flush	静的確認
+symbol	va:0x004EE110	Input_ResetNewGameMouse	func	0		T015§Esc/Space専用入力経路	静的確認
+symbol	va:0x004EE170	Input_ClearKeyEdgesBeforePoll	func	0		T015§NewGameMouse共有修飾キー	静的確認
+symbol	va:0x004EE1B0	Input_ProcessBufferedKeys	func	0		T015§NewGameMouse共有修飾キー	静的確認
+symbol	va:0x004BE220	Audio_AdvancePlaylistOnEnd	func	0		T015§BGM volume 0 / transport-loop interaction	静的確認
+symbol	va:0x004BDE40	Audio_StartBgmTrack	func	0		T015§BGM playback ABI / volume attenuation	静的確認
+symbol	va:0x004BE820	Audio_PrepareBgmPlayback	func	0		T015§D-20261014-1841-01	推定
+symbol	va:0x004BF410	Audio_ProcessFadeOutCompletion	func	0		T015§BGM volume 0 / transport-loop interaction	静的確認
+symbol	va:0x004BF2B0	Audio_StopResetCurrentTrack	func	0		T015§BGM volume 0 / transport-loop interaction	静的確認
+symbol	va:0x004BF780	Audio_TransitionPlaylistAfterEof	func	0		T015§Codec backend / EOF exact contract	推定
+symbol	va:0x004BF630	Audio_ApplyAttenuationToBackend	func	0		T015§BGM volume 0 / transport-loop interaction	静的確認
+symbol	va:0x004BF6A0	Audio_TestTrackTransitionGate	func	0		T015§loopBGM ordered playlist state	推定
+symbol	va:0x004BE340	Audio_UpdateMasterVolumeSlider	func	0		T015§BGM volume 0 / transport-loop interaction	静的確認
+symbol	va:0x004BE3E0	Audio_ApplyScriptVolume	func	0		T015§BGM playback ABI / volume attenuation	静的確認
+symbol	va:0x004BD2A0	Audio_RefreshMasterVolumeState	func	0		T015§D-20261015-0937-01	推定
+symbol	va:0x004BE480	Audio_OpenCodecBackend	func	0		T015§Codec backend / EOF exact contract, §D-20261015-0337	静的確認
+symbol	va:0x004B9AA0	Input_HandleEscapeExit	func	0		T015§Esc入力consumer・表示mode別のexit	静的確認
+symbol	va:0x004BBAE0	Input_DestroyMouseHost	func	0		T015§D-20261013-2234-01	静的確認
+symbol	va:0x004BF520	Audio_SetFadeTransitionState	func	0		T015§D-20261013-1952-02	推定
+symbol	va:0x004BF570	Audio_ResumeBgmTransition	func	0		T015§D-20261014-1841-01	推定
+symbol	va:0x004BF720	Audio_ResolveTransportBranch	func	0		T015§D-20261013-0241-02	推定
+symbol	va:0x004C24B0	Window_PumpGameLoop	func	0	T015§879822;R1101§1	T015§879822入力pollと879823別フレーム処理, R1101§1	静的確認
+symbol	va:0x004B9E50	Input_CreateNewGameMouseHost	func	0		T015§D-20261013-2038-01	静的確認
+symbol	va:0x004BCF20	Input_ReleaseGameMouseResource	func	0		T015§D-20261013-1834-01	推定
+symbol	va:0x004EE0C0	Input_ConstructNewGameMouse	func	0		T015§D-20261013-2038-01	静的確認
+symbol	va:0x0048F080	Audio_SelectBattleEventBgm	func	0		T015§Battle/event/spot BGM property consumer	静的確認
+symbol	va:0x0048EEE0	Audio_StartWorldPlaylist	func	0		T015§Audio playback / world-music flag, T010§frameInstallMode=0	静的確認
+symbol	va:0x00526510	Input_HandleBattlePauseRequest	func	0		T015§D-20261013-0943-01	静的確認
+symbol	va:0x00526A40	Input_HandleBattleSpeedShortcut	func	0		T015§D-20261013-0943-02, T024§B-20261025-1712	静的確認
+symbol	va:0x00526E50	Input_ProcessSelectedUnitCommand	func	0		T015§D-20261013-0943-01	推定
+symbol	va:0x00527710	Input_CheckBattleUiPriority	func	0		T015§D-20261013-0943-01, T024§B-20261025-1712	推定
+symbol	va:0x005271A0	Input_ResolveBattleWorldPoint	func	0		T015§D-20261013-0943-01	推定
+symbol	va:0x00527F60	Input_FilterSelectableUnits	func	0		T015§D-20261013-0943-01	静的確認
+symbol	va:0x00528320	Input_ClearUnitSelection	func	0		T015§D-20261013-0943-01	静的確認
+symbol	va:0x0065BEE4	g_WindowDisplayMode	global	0		T015§Win32/D3D window mode and buffered input	静的確認
+symbol	va:0x00879823	g_ActiveFrameGate	global	0	T015§879822	T015§879822入力pollと879823別フレーム処理	静的確認
+symbol	va:0x00879821	g_ForceWindowedPresent	global	0		T015§Win32/D3D window mode and buffered input	静的確認
+symbol	va:0x0065BEF0	g_ScreenHeight	global	0		T015§Win32/D3D window mode and buffered input	静的確認
+symbol	va:0x0065BD9F	g_NoactiveWindowOption	global	0		T015§noactive起動オプションとinactive時	静的確認
+symbol	va:0x00879820	g_TestmapStartupFlag	global	0		T015§testmap起動フラグとEsc	静的確認
+symbol	va:0x0087981D	g_MusicOffStartupFlag	global	0		T015§BGM volume 0 / transport-loop interaction	静的確認
+symbol	va:0x008BE388	g_NewGameMousePtr	global	0		T015§WM_ACTIVATE失焦時の部分入力クリア, §D-20261013-2234	静的確認
+symbol	va:0x008BE3A0	g_StartupVolumeMask	global	0		T015§D-20261015-2040-01	推定
+symbol	va:0x0065BED8	g_AudioBackendEntryCount	global	0		T015§D-20261015-2340-01	推定
+symbol	va:0x00879610	g_D3dPresentWindowedFlag	global	0		T015§Win32/D3D window mode and buffered input	静的確認
+symbol	va:0x00419938	SpotName_DrawTextReady	code	0		dev_lab/_work/v4_hover_20261029/location_name_actual_20261030.json	実機確認
+symbol	va:0x00597960	Spot_GetDisplayName	func	1		dev_lab/docs/DAT_UI_V4_STATUS_PANEL.md 2026-10-30 所在地名の取得経路を実機照合	実機確認
+symbol	va:0x00595320	Training_GetEffectiveUpCount	func	2		B-20261031-06H-T011-TRAINING-COUNT-PROVENANCE-01; dev_lab/docs/PEER_SCRIPT01_FINDINGS_20261011.md §61/§62.1; data/T011_TRAINING_COUNT_PROVENANCE_NATIVE_20261031_06H.md lines 1,5 [locator-only; recovered=research/recovered/b_batch2/T011_TRAINING_COUNT_PROVENANCE_NATIVE_20261031_06H.md; sha256=78ffb6534f0b999c734da7fb5e4040f0c4c8ae7ce1a74232b94b89d623b20d8a]	静的確認
+symbol	va:0x005D4030	VorbisComment_Type3_Parse	func	1		REA-LOCAL-20261031-05H-P0-VORBIS-CALLOC-NULL-GATE-STATIC-01; rea_lab/decomp_task/REA_20261031_05H_P0_VORBIS_CALLOC_NULL_GUARD_STATIC.md	静的確認
+symbol	va:0x0049ED90	TreeHeader_InitSentinel	func	1		B-20261031-08H-T011-TRAINING-CACHE-LIFECYCLE-01; data/T011_TRAINING_CACHE_INIT_ERASE_DUPLICATE_NATIVE_20261031_08H.md	静的確認
+symbol	va:0x004DEF40	Tree_EraseRange	func	1		B-20261031-09H-T011-TRAINING-CACHE-BULK-ERASE-NATIVE-01; B-20261031-11H-T011-PARTIAL-RANGE-SUCCESSOR-PRESERVE-01; data/T011_TRAINING_PARTIAL_RANGE_SUCCESSOR_PRESERVE_NATIVE_20261031_11H.md lines 1,5 [locator-only; recovered=research/recovered/b_batch6/data/T011_TRAINING_PARTIAL_RANGE_SUCCESSOR_PRESERVE_NATIVE_20261031_11H.md; sha256=c391e96e951c1c22e1d02f03c12ecd4e0f7c1f39f1e746316e201c04217f0631]	静的確認
+symbol	va:0x004ED030	Tree_ClearAllNodes	func	1		B-20261031-09H-T011-TRAINING-CACHE-BULK-ERASE-NATIVE-01; data/T011_TRAINING_CACHE_FULL_RANGE_ERASE_NATIVE_20261031_09H.md	静的確認
+symbol	va:0x004DEC70	Tree_EraseIteratorNode	func	1		B-20261031-10H-T011-TRAINING-PARTIAL-ERASE-NATIVE-01; data/T011_TRAINING_PARTIAL_ERASE_NATIVE_20261031_10H.md	静的確認
+symbol	va:0x00449500	BattleCategory_UpdateUnitCandidates	func	1		B-20261031-04H-T013-CATEGORY-LABEL-WEIGHT-FANOUT-01; B-20261031-05H-T013-EBX3-INPUT-01; REF_BATTLE_AI_MORALE.md; data/T013_MODE3_EBX_CATEGORY_PRODUCER_NATIVE_20261031_05H.md lines 1,12 [locator-only; recovered=research/recovered/b_batch9/data/T013_MODE3_EBX_CATEGORY_PRODUCER_NATIVE_20261031_05H.md; sha256=b215da79d04633e82714ffe8fbd5888f8b5758f507bf0fdcb1ba4ea7ed7187cf]	静的確認
+symbol	va:0x00448E90	ModeScoreRank_Process	func	1		B-20261031-12H-T013-DUAL-SCORE-COMPARATORS-01; data/T013_DUAL_SCORE_RANK_FIELD_NATIVE_20261031_12H.md	静的確認
+symbol	va:0x005D9F40	VorbisLook_InitBorrowedCodebook	func	0		REA-LOCAL-20261031-10H-P0-VORBIS-CODEBOOK-OWNERSHIP-TEARDOWN-STATIC-01; REF_AUDIO_VORBIS.md	静的確認
+symbol	va:0x005DA070	VorbisLook_ConvertRecord	func	0		REA-LOCAL-20261031-11H-P0-VORBIS-LOOK-CONVERSION-ALLOCATION-GATES-STATIC-01; REF_AUDIO_VORBIS.md	静的確認
+symbol	va:0x005D3D00	VorbisComment_FreeAndReset	func	1		REA-LOCAL-20261031-06H-P0-VORBIS-COMMENT-SENTINEL-TEARDOWN-STATIC-01; rea_lab/decomp_task/REA_20261031_06H_P0_VORBIS_COMMENT_SENTINEL_TEARDOWN_STATIC.md	静的確認
+symbol	va:0x005D9E70	VorbisCodebook_FreeOwnedFields	func	1		REA-LOCAL-20261031-09H-P0-VORBIS-CODEBOOK-MALLOC-CLEANUP-STATIC-01; rea_lab/decomp_task/REA_20261031_09H_P0_VORBIS_CODEBOOK_MALLOC_CLEANUP_STATIC.md	静的確認
+symbol	va:0x005E6CD0	VorbisBitreader_Initialize	func	1		REA-LOCAL-20261031-08H-P0-VORBIS-CODEBOOK-INIT-WIDTH-STATIC-01; rea_lab/decomp_task/REA_20261031_08H_P0_VORBIS_CODEBOOK_WIDTH_GUARD_STATIC.md	静的確認
+symbol	va:0x005E6E10	VorbisBitreader_ReadBitsOrEOF	func	1		REA-LOCAL-20261031-07H-P0-VORBIS-BITREADER-EOF-BOUND-STATIC-01; rea_lab/decomp_task/REA_20261031_07H_P0_VORBIS_BITREADER_EOF_BOUNDS_STATIC.md	静的確認
+symbol	va:0x005E6F10	VorbisBitreader_ConsumedBytesRoundedUp	func	1		REA-LOCAL-20261031-07H-P0-VORBIS-BITREADER-EOF-BOUND-STATIC-01; rea_lab/decomp_task/REA_20261031_07H_P0_VORBIS_BITREADER_EOF_BOUNDS_STATIC.md	静的確認
+symbol	va:0x005DA550	VorbisCodebook_ParseWidthBound	func	1		REA-LOCAL-20261031-08H-P0-VORBIS-CODEBOOK-INIT-WIDTH-STATIC-01; rea_lab/decomp_task/REA_20261031_08H_P0_VORBIS_CODEBOOK_WIDTH_GUARD_STATIC.md	静的確認
+symbol	va:0x005D16C0	OggFileWrapper_OpenWithCloseCallback	func	1		REA-LOCAL-20261031-00H-P0-OGG-FILE-CLOSE-CALLBACK-STATIC-01; rea_lab/decomp_task/REA_20261031_00H_P0_CALLBACK_ORIGIN_STATIC.md	静的確認
+symbol	va:0x005D4160	VorbisSetup_WriteTagArrays	func	1		REA-LOCAL-20261031-01H-P0-VORBIS-SETUP-TAG-BOUND-WRITER-STATIC-01; rea_lab/decomp_task/REA_20261031_01H_P0_TAG_WRITER_BOUNDS_STATIC.md	静的確認
+symbol	va:0x005D4420	VorbisHeader_Type1SignaturePrecheck	func	1		REA-LOCAL-20261031-02H-P0-VORBIS-HEADER-TYPE-ORDER-GATE-STATIC-01; rea_lab/decomp_task/REA_20261031_02H_P0_VORBIS_HEADER_ROUTER_STATIC.md	静的確認
+symbol	va:0x005D44C0	VorbisHeader_TypeOrderRouter	func	1		REA-LOCAL-20261031-02H-P0-VORBIS-HEADER-TYPE-ORDER-GATE-STATIC-01; rea_lab/decomp_task/REA_20261031_02H_P0_VORBIS_HEADER_ROUTER_STATIC.md	静的確認
+symbol	va:0x005D3F60	VorbisHeader_Type1Parse	func	1		REA-LOCAL-20261031-03H-P0-VORBIS-ID-COMMENT-TRANSITION-STATIC-01; rea_lab/decomp_task/REA_20261031_03H_P0_VORBIS_HEADER_TRANSITION_STATIC.md	静的確認
+symbol	va:0x0047BB50	ComparatorSort_SmallInsertionLargePartition	func	1		B-20261031-13H-T013-SORT-ANCHOR-TIE-CORRECTION-01; data/T013_DUAL_SCORE_SORT_ANCHOR_TIE_CORRECTION_NATIVE_20261031_13H.md	静的確認
+symbol	va:0x005A3DF0	BattleCandidate_ConstructTempRecord	func	1		B-20261031-15H-T013-KIND8-RANDOM-PAYLOAD-QUEUE-01; data/T013_KIND8_RANDOM_PAYLOAD_QUEUE_NATIVE_20261031_15H.md	静的確認
+symbol	va:0x00579EB0	BattleCandidate_MergeBucketLists	func	2		B-20261031-16H-T013-BUCKET-LIST-MERGE-COMPARATOR-01; B-20261031-17H-T013-INPUT-DRAIN-RETURN-LIST-CAP-01; data/T013_INPUT_DRAIN_RESTORE_LIST_CAP_NATIVE_20261031_17H.md lines 1,8 [locator-only; recovered=research/recovered/symbol_sources/T013_INPUT_DRAIN_RESTORE_LIST_CAP_NATIVE_20261031_17H.md; sha256=30c40ec353ab0f3560a266593a2d9af2aeddb99a74dd95a64daf803a1646a1f0]	静的確認
+symbol	va:0x0057A830	List_MergeWithNativeComparator	func	1		B-20261031-16H-T013-BUCKET-LIST-MERGE-COMPARATOR-01; data/T013_BUCKET_LIST_MERGE_COMPARATOR_NATIVE_20261031_16H.md	静的確認
+symbol	va:0x005A3EA0	BattleCandidate_CompareModeScoreAndSecondary	func	1		B-20261031-16H-T013-BUCKET-LIST-MERGE-COMPARATOR-01; B-20261031-18H-T013-RNG-CONTEXT-CARRY-NONUSE-01; data/T013_RNG_CONTEXT_CARRY_NO_DIRECT_CMP_NATIVE_20261031_18H.md lines 1,10 [locator-only; recovered=research/recovered/b_reports/T013_RNG_CONTEXT_CARRY_NO_DIRECT_CMP_NATIVE_20261031_18H.md; sha256=6eacb969ddec6e7f40408a342d17fd32a9401b9664c21f8a7071c05db70298f3]	静的確認
+symbol	va:0x004C5800	List_SpliceWithCapacityGuard	func	2		B-20261031-17H-T013-INPUT-DRAIN-RETURN-LIST-CAP-01; data/T013_INPUT_DRAIN_RESTORE_LIST_CAP_NATIVE_20261031_17H.md	静的確認
+symbol	va:0x005D4AE0	VorbisOuter_CleanupManagedArrays	func	1		REA-LOCAL-20261031-13H-P0-VORBIS-CLEANUP-COUPLED-ARRAY-GUARD-STATIC-01; rea_lab/decomp_task/REA_20261031_13H_P0_VORBIS_COUPLED_ARRAY_CLEANUP_STATIC.md	静的確認
+symbol	va:0x005D5BD0	VorbisHeader_InitializeWrapperReturn	func	0		REA-LOCAL-20261031-14H-P0-VORBIS-WRAPPER-DOUBLE-CLEANUP-GATE-STATIC-01; REA-LOCAL-20261031-15H-P0-VORBIS-POSTINIT-RETURN-LOSS-STATIC-01	静的確認
+symbol	va:0x005D4D20	VorbisHeader_PostInitializePointerGates	func	1		REA-LOCAL-20261031-15H-P0-VORBIS-POSTINIT-RETURN-LOSS-STATIC-01; rea_lab/decomp_task/REA_20261031_15H_P0_VORBIS_POSTINIT_RETURN_STATIC.md	静的確認
+symbol	va:0x005D4900	VorbisBitbuffer_CreateFifteenSlots	func	0		REA-LOCAL-20261031-16H-P0-VORBIS-POSTINIT-OTHER-CALLERS-STATIC-01; REA-LOCAL-20261031-17H-P0-VORBIS-BITBUFFER-TWOLAYER-ALLOC-STATIC-01	静的確認
+symbol	va:0x005E6C70	VorbisBitbuffer_InitializeSlotAndBuffer	func	1		REA-LOCAL-20261031-17H-P0-VORBIS-BITBUFFER-TWOLAYER-ALLOC-STATIC-01; rea_lab/decomp_task/REA_20261031_17H_P0_VORBIS_BITBUFFER_INIT_STATIC.md	静的確認
+symbol	va:0x005D4A60	VorbisBitbuffer_TeardownFifteenSlots	func	1		REA-LOCAL-20261031-18H-P0-VORBIS-BITBUFFER-TEARDOWN-NULL-SLOT-STATIC-01; rea_lab/decomp_task/REA_20261031_18H_P0_VORBIS_BITBUFFER_TEARDOWN_STATIC.md	静的確認
+symbol	va:0x005E6CA0	VorbisBitbuffer_FreeAndClearSlot	func	1		REA-LOCAL-20261031-18H-P0-VORBIS-BITBUFFER-TEARDOWN-NULL-SLOT-STATIC-01; rea_lab/decomp_task/REA_20261031_18H_P0_VORBIS_BITBUFFER_TEARDOWN_STATIC.md	静的確認
+symbol	va:0x0057A7D0	BattleCandidate_WritePerNodeRngScoreOffset	func	1		B-20261031-19H-T013-CANDIDATE-A14-PER-NODE-RNG-01; data/T013_CANDIDATE_A14_PER_NODE_RANDOM_SCORE_NATIVE_20261031_19H.md	静的確認
+symbol	va:0x00574D70	BattleCandidate_ScriptListInsertNode	func	1		B-20261031-20H-T013-UNIT18654-LIST-WRITER-REMOVE-01; data/T013_UNIT18654_LIST_WRITER_ERASE_NATIVE_20261031_20H.md	静的確認
+symbol	va:0x00574E30	BattleCandidate_ScriptListEraseMatchingNode	func	1		B-20261031-20H-T013-UNIT18654-LIST-WRITER-REMOVE-01; data/T013_UNIT18654_LIST_WRITER_ERASE_NATIVE_20261031_20H.md	静的確認
+symbol	va:0x0057DD10	BattleCandidate_HeadSentinelOrPairBranch	func	1		B-20261031-21H-T013-FIRST-NODE-SENTINEL-TO-COORD-01; data/T013_FIRST_HEAD_SENTINEL_COORD_BRANCH_NATIVE_20261031_21H.md	静的確認
+symbol	va:0x00577600	BattleCandidate_CountGatedStatusUpdate	func	1		B-20261031-21H-T013-FIRST-NODE-SENTINEL-TO-COORD-01; data/T013_FIRST_HEAD_SENTINEL_COORD_BRANCH_NATIVE_20261031_21H.md	静的確認
+symbol	va:0x005D49F0	VorbisGrow_FreeListAndOptionalRealloc	func	1		REA-LOCAL-20261031-19H-P0-VORBIS-REALLOC-OWNER-LOSS-STATIC-01; rea_lab/decomp_task/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATIC.md	静的確認
+symbol	va:0x005D4980	VorbisGrow_AlignAndAllocateBuffer	func	1		REA-LOCAL-20261031-20H-P0-VORBIS-GROWTH-NODE-GATE-STATIC-01; rea_lab/decomp_task/REA_20261031_20H_P0_VORBIS_GROWTH_NODE_GATE_STATIC.md	静的確認
+symbol	va:0x005E06C0	VorbisGrowCaller_ConditionalBufferWriter	func	1		REA-LOCAL-20261031-21H-P0-VORBIS-GROWTH-CALLER-DEREFERENCE-STATIC-01; rea_lab/decomp_task/REA_20261031_21H_P0_VORBIS_ALLOC_CALLER_STATIC.md	静的確認
+symbol	va:0x004C21F0	GameTask_SetFps	func	0	R1101§1	R1101§1	静的確認
+symbol	va:0x00AC0918	g_FrameStartTime	global	0	R1101§1	R1101§1, W(dat_ui_selector_plugin.c)	実機確認
+symbol	va:0x00AC0914	g_LastPresentResult	global	0	R1101§1	R1101§1	静的確認
+symbol	va:0x0087980C	g_D3DDevice	global	0	R1101§1	R1101§1	静的確認
+symbol	va:0x008795F0	g_D3DPresentParams	global	0	R1101§1	R1101§1	推定
+symbol	va:0x00584830	UnitDef_GetFaceBitmap	func	0	R1101§2	R1101§2	実機確認
+symbol	va:0x004243C0	Image_GetFaceCached	func	0	R1101§2	R1101§2	静的確認
+symbol	va:0x00879E48	g_FaceImageCache	global	0	R1101§2	R1101§2	静的確認
+symbol	va:0x00424C80	Image_GetChipSprite	func	0	R1101§2	R1101§2	静的確認
+symbol	va:0x0087A1B8	g_ChipSpriteCache	global	0	R1101§2	R1101§2	静的確認
+symbol	va:0x00879E68	g_ChipAtlasMap	global	0	R1101§2	R1101§2	静的確認
+symbol	va:0x00423D70	Image_GetChipRect	func	0	R1101§2	R1101§2	静的確認
+symbol	va:0x004BE388	g_InputReceiver	global	0	R1101§4	R1101§4, W(dat_ui_input_provider.h)	実機確認
+symbol	va:0x00626D5C	str_face	string	0	R1101§2	R1101§2	静的確認
+symbol	va:0x004708D0	Save_WriteSlotHeader	func	0	S1101§2	S1101§2	静的確認
+symbol	va:0x00470550	Save_ReadSlotHeader	func	0	S1101§2	S1101§2	静的確認
+symbol	va:0x0045FD3E	Save_HeaderGetLocalTime	code	0	S1101§2	S1101§2	静的確認
+symbol	va:0x0045E5F0	Save_LoadFileAndDecode	func	0	S1101§3	S1101§3	静的確認
+symbol	va:0x004708A0	Save_WriteByteAsU32	func	0	S1101§1	S1101§1	静的確認
+symbol	va:0x0058E870	Save_ReadUnitDataRecord	func	0		T014§normal save reader group order	静的確認
+symbol	va:0x00598980	Save_ReadSpotGroupRecord	func	0		T014§normal save reader group order	静的確認
+symbol	va:0x005964C0	Save_ReadPowerGroupRecord	func	0		T014§normal save reader group order	静的確認
+symbol	va:0x005B797C	CRT_ftell_SEH4_entry	func	0		REA-LOCAL-20261101-17H-P0-CRT-FTELL-FRAME-CROSSWALK-STATIC-01, REA-LOCAL-20261101-19H-P0-FTELL-SEH4-SCOPE-STATIC-01; research/rea/INDEX.md	静的確認
+symbol	va:0x005B79D7	CRT_ftell_shared_EBP_unlock_helper	func	0		REA-LOCAL-20261101-17H-P0-CRT-FTELL-FRAME-CROSSWALK-STATIC-01, REA-LOCAL-20261101-19H-P0-FTELL-SEH4-SCOPE-STATIC-01; research/rea/INDEX.md	静的確認
+symbol	va:0x005BB6E0	CRT_except_handler4_search_unwind	func	0		REA-LOCAL-20261101-20H-P0-EH4-DISPATCH-PHASE-STATIC-01; research/rea/INDEX.md	静的確認
+symbol	va:0x0048F720	ListTree_FindFirstNonmemberFlaggedRecord	func	1		REA-LOCAL-20261024-02H-P0-F720-MAP-FILTER-ABI-STATIC-01; rea_lab/decomp_task/REA_20261024_02H_P0_F720_FILTERED_LOOKUP_ABI_STATIC.md; SHA256 E8D60E3A7EABB1E6D8844BFED22E4E2D1C94070F6559CA2101B1EF7699014907; REA-LOCAL-20261024-08H-P0-NESTED-MAP-NONEMPTY-TRANSFER-STATIC-01 SHA256 AB0097FB066881AC46BD829D2DA131E14CCB2A5E734A127CD995DC325EF185CF; REA-LOCAL-20261024-09H-P0-THREE-RBTREE-UNSIGNED-KEYZERO-STATIC-01 SHA256 08CF585E54B45C6B917E41DA4BFD44BB6DF98474312F90803C5DC50714114F7D; REF_BATTLE_TAKEOVER.md section 9	静的確認
+symbol	va:0x00529DC0	GroupList_MergeBucketsForOrder	func	1		B-OFFLINE-20261101-13H-T011-T024-DISTANCE-SORT-MODE-GATE-01; data/T011_T024_NONMODE3_DISTANCE_ORDER_AND_MODE3_MEMBER_GRID_NATIVE_20261101_13H.md; SHA256 91C075A695E87CA039EE4DCE07281F56C0C893A4F6903AB83A02195C227E46B6	静的確認
+symbol	va:0x00526030	GroupFirstEligibleUnit_DistanceCompare	func	1		B-OFFLINE-20261101-13H-T011-T024-DISTANCE-SORT-MODE-GATE-01; B-OFFLINE-20261101-14H-T011-T024-DISTANCE-COMPARE-BOUNDARY-01; data/T011_T024_DISTANCE_COMPARATOR_BOUNDARY_CROSS_GATES_OFFLINE_20261101_14H.md; SHA256 2A6F516810D29B5B6E08AF683892CA8AD32300C7BDBF52C336E3D423064DAF63	静的確認
+symbol	va:0x005421D0	Ai_WriteDistance8AngleSentinel	func	0		B-20261102-01H-T024-5421D0-8DIST-SENTINEL-WRITER-01; REF_BATTLE_AI_MORALE.md	静的確認
+symbol	va:0x00542280	Ai_ReadAngleOrAtan2Fallback	func	0		B-20261102-00H-T024-542280-NATIVE-ATAN2-SENTINEL-ERRATUM-01; REF_BATTLE_AI_MORALE.md	静的確認
+symbol	va:0x005CF970	Vorbis_State3InitFromImplicitESI	func	0		REA-LOCAL-20261102-01H-P0-OGG-STATE3-DUAL-ENTRY-ESI-ABI-STATIC-01; REF_AUDIO_VORBIS.md	静的確認
+symbol	va:0x005D0B8A	Vorbis_State3EarlyInitCallsite	code	0		REA-LOCAL-20261102-01H-P0-OGG-STATE3-DUAL-ENTRY-ESI-ABI-STATIC-01; REF_AUDIO_VORBIS.md	静的確認
+symbol	va:0x00567EC0	SortCandidate_CompareSignedField1BC	func	1		B-20261023-20H-T013-TROOP-SORT-1BC-NATIVE-01; REF_BATTLE_AI_MORALE.md; data/T013_TROOP_SORT_1BC_COMPARATOR_NATIVE_20261023_20H.md lines 2,1 [locator-only; recovered=research/recovered/b_batch10/data/T013_TROOP_SORT_1BC_COMPARATOR_NATIVE_20261023_20H.md; sha256=066dc1a0ac235eb5984f63f883e454a0c44f7fd1e10761edb47e5aef8eb821a6]	静的確認
+symbol	va:0x00569530	Mode30_WriteAndConditionalDispatch	func	1		B-20261023-22H-T013-TROOP-FORM-MODE-SETTER-01; B-20261023-2317-T013-TROOP-MODE-SOURCE-CASE8-01; REF_BATTLE_AI_MORALE.md; data/T013_TROOP_MODE_SOURCE_CASE8_NATIVE_20261023_2317.md lines 2,9 [locator-only; recovered=research/recovered/b_batch10/data/T013_TROOP_MODE_SOURCE_CASE8_NATIVE_20261023_2317.md; sha256=8f600308b375b7221a1493bb396eb961421c2418d2b69e90452aebe5f5b1383a]	静的確認
+symbol	va:0x005D3DA0	VorbisSetup_InitInnerState	func	0		REA-OFFLINE-20261101-07H-P0-VORBIS-MODE-ZEROED-SLOT-CLEANUP-BOUND-STATIC-01; REF_AUDIO_VORBIS.md	静的確認
+symbol	va:0x00420900	TrigCosNegSinToTwoInts	func	0		B-20261021-2117-01; B-20261029-1410-T013-TRIG1000-OUTPUT-ALIAS-NATIVE-01; REF_BATTLE_AI_MORALE.md	静的確認
+symbol	va:0x00431FB0	FastSim_PreselectorRangeGate	func	0		E-AUDIT-20261023-1952-T020-FASTSIM-SELECTOR-PRIORITY-01; REF_BATTLE_TAKEOVER.md	静的確認
+symbol	va:0x00452D90	BattleWnd_PrimaryDrawEligibilityVCall	func	0		E-AUDIT-20261023-1850-T020-FASTSIM-DRAW-VSLOT-01; REF_BATTLE_TAKEOVER.md	静的確認
+symbol	va:0x004E4F60	SpatialCell_RemoveMatchingPointer	func	1		B-20261026-09H-T028-SPATIAL-GRID-DUAL-ERASE-01; original ver0.67 PE SHA256 E8DAC301; REF_BATTLE_AI_MORALE.md; data/T028_SPATIAL_GRID_DUAL_ERASE_AND_MOVE_NATIVE_20261026_09H.md lines 1,5 [locator-only; recovered=research/recovered/b_batch3/T028_SPATIAL_GRID_DUAL_ERASE_AND_MOVE_NATIVE_20261026_09H.md; sha256=bf211a3dfe9b0dc90024c6d3685c07ed193d0a21a8d625c11329065c17862010]	静的確認
+symbol	va:0x004EC1E0	RouteCache_ConditionalHitPromotion	func	0		B-20261027-01H-T028-ROUTE-CACHE-BOUNDED-PROMOTION-01; original ver0.67 PE SHA256 E8DAC301; REF_BATTLE_AI_MORALE.md	静的確認
+symbol	va:0x00576F10	SkillFlash_PostDamage_GatedRingDispatch	func	1		B-20261013-1440-01; B-20261013-1614-01; REF_SKILL_POST_ACTION.md; data/T012_FLASH_DAMAGE_WRAPPER_576F10_CONTRACT_20261013.md lines 1,1 [locator-only; recovered=research/recovered/b_batch6/data/T012_FLASH_DAMAGE_WRAPPER_576F10_CONTRACT_20261013.md; sha256=608d93925f6d994773ff71d9f429474cdcb5206bc0dd3d5e16f2eac0f640b462]	静的確認
+symbol	va:0x0059C3B5	Skill_StoreNextOrderParsedFlag	code	1		B-20261013-1951-01; REF_UNIT_EXP_SUMMON.md section 8; data/T011_NEXT_ORDER_INTERVAL_NATIVE_20261013.md lines 1,4 [locator-only; recovered=research/recovered/b_batch5/data/T011_NEXT_ORDER_INTERVAL_NATIVE_20261013.md; sha256=9b076b889a56b57b5174f24dc3f2308e09b477156284ec3ef365ab36bc2698cc]	静的確認
+symbol	va:0x0059C418	Skill_StoreNextIntervalParsedValue	code	1		B-20261013-1951-01; REF_UNIT_EXP_SUMMON.md section 8; data/T011_NEXT_ORDER_INTERVAL_NATIVE_20261013.md lines 1,3 [locator-only; recovered=research/recovered/b_batch5/data/T011_NEXT_ORDER_INTERVAL_NATIVE_20261013.md; sha256=9b076b889a56b57b5174f24dc3f2308e09b477156284ec3ef365ab36bc2698cc]	静的確認
+symbol	va:0x0046453F	ScriptData_SuperParentLookupPresenceSite	code	1		B-20261024-21H-T012-SUPER-EMPTY-GATE-STRRATIO-PARENT-01; REF_DAT_BEHAVIOR.md; data/T012_STRRATIO_PARENT_SUPER_EMPTY_GATE_NATIVE_20261024_21H.md lines 2,10 [locator-only; recovered=research/recovered/b_batch8/data/T012_STRRATIO_PARENT_SUPER_EMPTY_GATE_NATIVE_20261024_21H.md; sha256=745f097894bcbececbb45af98e6f2f9c5dc810825123303067915515a66dac6e]	静的確認
+symbol	va:0x005050EE	ScriptData_SuperEntryInsertCallSite	code	1		B-20261024-22H-T011-T012-SUPER-PARSER-PRODUCER-01; REF_DAT_BEHAVIOR.md; data/T011_T012_SUPER_SCRIPT_PARSER_PRODUCER_NATIVE_20261024_22H.md lines 2,12 [locator-only; recovered=research/recovered/b_batch3/T011_T012_SUPER_SCRIPT_PARSER_PRODUCER_NATIVE_20261024_22H.md; sha256=8cf0b616cdf9686aff9e7ce0026c4caad6de5e30de707196d1e2aa731208158d]	静的確認
+symbol	va:0x005774A0	Unit_AppendSummonChild	func	1		F§96, ON-STAND-010	静的確認
+symbol	va:0x00575A60	Unit_OnDefeated	func	1		F§96, ON-STAND-010	静的確認
+symbol	va:0x005445E0	SimpleUnit_OnDefeated	func	1		F§96, EXP_ENDTRANSFER CP04, ON-STAND-010	静的確認
+symbol	va:0x00551FB2	Hit_LinkedAward_AddExp	code	1		F§96, EXP_ENDTRANSFER CP17	静的確認
+symbol	va:0x005AA6E0	ResultFlag_StoreAndConditionalPrecall	func	1		B-20261029-0415-T028-ALTVECTOR-FIRE-REGISTRATION-JOIN-01; B-20261029-0515-T028-ALFLAG-ONE-SHOT-DRAIN-01; REF_BATTLE_AI_MORALE.md; data/T028_DUAL_VECTOR_ALFLAG_AND_DRAIN_NATIVE_V3_20261029_05H.md lines 1,9 [locator-only; recovered=research/recovered/b_batch11/data/T028_DUAL_VECTOR_ALFLAG_AND_DRAIN_NATIVE_V3_20261029_05H.md; sha256=b5d46e212bb9c9a93615e72bc0287110d3a685f649f64f4ea56844f7da875024]	静的確認
+symbol	va:0x00431BE0	ResultFlag_GatedStackALWrapper	func	1		B-20261029-08H-T028-EFFECT-ALFLAG-CALLSITE-SENTINEL-MATRIX-01; REF_BATTLE_AI_MORALE.md; data/T028_EFFECT_ALFLAG_CALLSITE_SENTINEL_MATRIX_NATIVE_20261029_08H.md lines 2,6 [locator-only; recovered=research/recovered/b_batch2/T028_EFFECT_ALFLAG_CALLSITE_SENTINEL_MATRIX_NATIVE_20261029_08H.md; sha256=063383411e15d31814918140040ecbba76f6945b75cca433caffe4d66475018a]	静的確認
+symbol	va:0x004DFBB0	SkillEffectRingRecord_InitializeAndDelegate	func	1		B-20261013-1356-01; B-20261013-1415-01 R/P/L correction; REF_SKILL_POST_ACTION.md; data/T012_EFFECT_LINK_RECORD_IDENTITY_CORRECTION_20261013.md lines 1,4 [locator-only; recovered=research/recovered/b_batch6/data/T012_EFFECT_LINK_RECORD_IDENTITY_CORRECTION_20261013.md; sha256=b1447290203ac805e2ccedf57609f0ab766280f1dcd689bfa3e9ca1219f412d8]	静的確認
+symbol	va:0x00577100	Unit_PostHpTierRegister	func	1		B-20261013-1850-01; REF_SKILL_POST_ACTION.md; data/T012_HEAL_HP_POST_577100_CONTRACT_20261013.md lines 1,1 [locator-only; recovered=research/recovered/b_batch7/data/T012_HEAL_HP_POST_577100_CONTRACT_20261013.md; sha256=aaf010aa4e1e4bb979f8cb8f11b5339a4a87bb79e011f76a0ece84d39b7eef51]	静的確認
+symbol	va:0x0049E780	Battle_FindUnitByName	func	0		REF_UNIT_EXP_SUMMON §10	実機確認
+symbol	va:0x0049E560	Battle_RegisterUnitName	func	0		REF_UNIT_EXP_SUMMON §10	静的確認
+symbol	va:0x0048ABF0	Battle_ClearUnitTables	func	0		REF_UNIT_EXP_SUMMON §10	静的確認
+symbol	va:0x00433B62	Script_ExecEntry_Field	code	0		REF_UNIT_EXP_SUMMON §10	実機確認
+symbol	va:0x0049356A	Script_ExecEntry_Battle	code	0		REF_UNIT_EXP_SUMMON §10	実機確認
+symbol	va:0x00433754	Script_ExecEntry_Other	code	0		REF_UNIT_EXP_SUMMON §10	静的確認
+symbol	va:0x0054F245	Summon_LinkChildCall	code	0		REF_UNIT_EXP_SUMMON §10	実機確認
+symbol	va:0x005A9CC0	T028_PreReg_ThreeHelperDispatch	func	1		B-20261029-0608-T028-AL1-PREREG-DETACH-GEOMETRY-01; REF_BATTLE_AI_MORALE.md; data/T028_AL1_PREINSERT_DETACH_GEOMETRY_V9_20261029_06H.md lines 1,9 [locator-only; recovered=research/recovered/b_batch10/data/T028_AL1_PREINSERT_DETACH_GEOMETRY_V9_20261029_06H.md; sha256=8cb629d68463bcc39faf8fbd2472446f21f61f03663cbfd8de3586a674f396a5]	静的確認
+symbol	va:0x004189B0	T028_ModeNonnegative_GatedSubobjectCall	func	1		B-20261029-0910-T028-SIGNED-MODE-TWO-EFFECT-SUBOBJECTS-01; REF_BATTLE_AI_MORALE.md; data/T028_SIGNED_MODE_TWO_EFFECT_SUBOBJECTS_NATIVE_20261029_09H.md lines 2,8 [locator-only; recovered=research/recovered/b_batch2/T028_SIGNED_MODE_TWO_EFFECT_SUBOBJECTS_NATIVE_20261029_09H.md; sha256=7c3bf46751c4c4bd550eb6dbd9cebb4cfdb4e7cd06c69d1ee7d4d4a70d49e0cf]	静的確認
+symbol	va:0x005AA130	T028_ModeTable_RegistrationGate	func	1		B-20261029-1016-T028-EFFECT-MODE-MATRIX-ONCE-REGISTER-01; REF_BATTLE_AI_MORALE.md; data/T028_EFFECT_MODE_PALETTE_REGISTRATION_GUARD_NATIVE_20261029_10H.md lines 2,11 [locator-only; recovered=research/recovered/b_batch11/data/T028_EFFECT_MODE_PALETTE_REGISTRATION_GUARD_NATIVE_20261029_10H.md; sha256=541dfce83c2d06559316a63ad624ebc38914bcf2035d6ba6c92adff4998f8396]	静的確認
+symbol	va:0x00598450	T028_VectorIndexCleanupFlagBranch	func	1		B-20261030-0010-T028-SPOT-VECTOR-FLAG-SPLIT-01; B-20261030-0113-T028-SPOT-INDEX-EQUALRANGE-ERASE-01; REF_BATTLE_AI_MORALE.md; data/T028_SPOT_INDEX_EQUAL_RANGE_ERASE_NATIVE_20261030_01H.md lines 2,18 [locator-only; recovered=research/recovered/b_batch11/data/T028_SPOT_INDEX_EQUAL_RANGE_ERASE_NATIVE_20261030_01H.md; sha256=98c6a37bf0ffdb2306ec939e3e262b7ae4a8091a6e71c4ea400e709244251b7e]	静的確認
+symbol	va:0x00415CF0	Tree_EraseIteratorRange	func	1		B-20261030-0113-T028-SPOT-INDEX-EQUALRANGE-ERASE-01; REF_BATTLE_AI_MORALE.md; data/T028_SPOT_INDEX_EQUAL_RANGE_ERASE_NATIVE_20261030_01H.md lines 2,11 [locator-only; recovered=research/recovered/b_batch11/data/T028_SPOT_INDEX_EQUAL_RANGE_ERASE_NATIVE_20261030_01H.md; sha256=98c6a37bf0ffdb2306ec939e3e262b7ae4a8091a6e71c4ea400e709244251b7e]	静的確認
+symbol	va:0x00597A50	T028_FilteredLinkedNodeCount	func	1		B-20261029-2315-T028-RETREAT-SPOT-RESERVATION-RELEASE-01; B-20261029-2213-T028-RETREAT-SPOT-CAPACITY-STRICT-GATE-01; REF_BATTLE_AI_MORALE.md; data/T028_RETREAT_SPOT_CAPACITY_STRICT_GATE_NATIVE_20261029_22H.md lines 2,13 [locator-only; recovered=research/recovered/b_batch11/data/T028_RETREAT_SPOT_CAPACITY_STRICT_GATE_NATIVE_20261029_22H.md; sha256=d2e746997c492ce294eff9bd9b61d7d45c14dbf5fe7030dac02c624be5ed26f6]	静的確認
+symbol	va:0x005681C0	T028_RetreatSpotOrFailureString	func	1		B-20261029-2112-T028-RETREAT-NO-SPOT-EARLY-FAIL-01; B-20261029-1908-T028-RETREAT-OK-DRAIN-ELIGIBILITY-01; REF_BATTLE_AI_MORALE.md; data/T028_RETREAT_NO_DESTINATION_EARLY_FAILURE_NATIVE_20261029_21H.md lines 2,17 [locator-only; recovered=research/recovered/b_batch11/data/T028_RETREAT_NO_DESTINATION_EARLY_FAILURE_NATIVE_20261029_21H.md; sha256=ee0831a672e0afa56d17f4ed278c1b49260c0d3120e47acb6abad4f02a01135a]	静的確認
+symbol	va:0x0049D1B0	Ai_Mode1PrepassVectorDrain	func	1		B-20261029-1813-T013-PREPASS-CALLBACK-BREAK-DRAIN-01; B-20261029-1713-T013-UPSTREAM-FOUR-CALL-GROUP-FILTER-01; REF_BATTLE_AI_MORALE.md; data/T013_MODE1_PREPASS_CALLBACK_BREAK_DRAIN_NATIVE_20261029_18H.md lines 1,11 [locator-only; recovered=research/recovered/b_batch9/data/T013_MODE1_PREPASS_CALLBACK_BREAK_DRAIN_NATIVE_20261029_18H.md; sha256=799811c9d888603f1e31dac30c6160c67df9a0e81bb32f16fe5f8bbf340b64ab]	静的確認
+symbol	va:0x00416220	Tree_EraseRangePartialNode	func	1		B-20261030-0215-T028-SPOT-TREE-ERASE-STRING-RELEASE-01; REF_BATTLE_AI_MORALE.md; data/T028_SPOT_TREE_ERASE_STRING_RELEASE_NATIVE_20261030_02H.md lines 2,17 [locator-only; recovered=research/recovered/b_batch11/data/T028_SPOT_TREE_ERASE_STRING_RELEASE_NATIVE_20261030_02H.md; sha256=1c95d49a632f3c27b800c774e6ca738a4cf58116d96709587fdc8823225f5aaf]	静的確認
+symbol	va:0x00416870	Tree_ClearFullRangeNodes	func	1		B-20261030-0308-T028-FULL-TREE-CLEAR-POSTORDER-01; REF_BATTLE_AI_MORALE.md; data/T028_SPOT_FULL_TREE_CLEAR_RECURSIVE_DESTRUCTOR_NATIVE_20261030_03H.md lines 2,10 [locator-only; recovered=research/recovered/b_batch11/data/T028_SPOT_FULL_TREE_CLEAR_RECURSIVE_DESTRUCTOR_NATIVE_20261030_03H.md; sha256=2ce7a4f828c2d749e30e63e7b78a46a8a5b3dec06e535f5a79f1db2fb201ab52]	静的確認
+symbol	va:0x00551167	Damage_ExpAwardCall	code	0		REF_UNIT_EXP_SUMMON §11	実機確認
+symbol	va:0x00551C6A	StatusSkill_ExpAwardCall	code	0		REF_UNIT_EXP_SUMMON §11	実機確認
+symbol	va:0x005479F0	Summon_LinkChildCall_Simple	code	0		REF_UNIT_EXP_SUMMON §11	実機確認
+symbol	va:0x005537BF	Summon_LinkChildCall_Missile	code	0		REF_UNIT_EXP_SUMMON §11	実機確認
+symbol	va:0x00433203	Event_InstallPhaseFrames	code	1		data/T010_EVENT_SCHEDULER.md lines229-259	静的確認
+symbol	va:0x004339B1	Script_FetchCurrentFrame	code	1		data/T010_EVENT_SCHEDULER.md lines249-256	静的確認
+symbol	va:0x00433A2A	Script_PopCompletedFrame	code	1		data/T010_EVENT_SCHEDULER.md line344	静的確認
+symbol	va:0x004335FA	Event_TestBattleActiveGate	code	1		data/T010_EVENT_SCHEDULER.md lines375-376	静的確認
+symbol	va:0x00492960	Event_SetBattleExecutionMode_ReportedSite	code	1		data/T010_EVENT_SCHEDULER.md lines227-232; REF_SCRIPT_VM_CONTEXT.md lines3-4	静的確認
+symbol	va:0x00467E90	Spot_FindByName	func	4		data/T014_GLOBAL_SAVE.md lines571-572; dev_lab/docs/PEER_SCRIPT01_FINDINGS_20261011.md F§49/F§79.3; REF_SAVE_FORMAT.md line10	静的確認（回収済み著述資料の記述。今回の原作再検証・実行なし）
+symbol	va:0x0056AB20	TroopVirtualSlot4_PeriodicCandidateRoutine	func	0		research/recovered/b_batch3/T013_TROOP_RTTI_HALF_RATIO_GATE_V9_20261023_1708.md lines7-11 [sha256=63f911cc923ff36f836d78aeb08ecb223c24c8e57666034d8a8d8c5720ec5537; SOURCE_STATIC/VERIFY; no new native/runtime acquisition]	保存済み原報告の静的解析・実動作未確認
+symbol	va:0x00569360	TroopFirstEligiblePartnerRatioGate	func	0		research/recovered/b_batch3/T013_TROOP_RTTI_HALF_RATIO_GATE_V9_20261023_1708.md lines12-18 [sha256=63f911cc923ff36f836d78aeb08ecb223c24c8e57666034d8a8d8c5720ec5537; SOURCE_STATIC/VERIFY; no new native/runtime acquisition]	保存済み原報告の静的解析・実動作未確認
+symbol	va:0x005699C0	TroopPositionCandidateScratchProducer	func	0		research/recovered/b_batch10/data/T013_TROOP_POSITION_SCRATCH_MODE_V3_20261023_1915.md lines5-14 [sha256=1e6970599923ed6962ec760aea6550a1a3ef6d0cb3655e3712084b8f8f2ceecf; SOURCE_STATIC/VERIFY; no new native/runtime acquisition]	保存済み原報告の静的解析・実動作未確認
+symbol	va:0x005D48E0	OggSeekPositionShiftGetter	func	0		research/recovered/rea_batch4/reports/REA_20261030_18H_P0_SEEK_FALLBACK_STATIC.md lines6-10 [sha256=732f8ee8e8c816eb85d1bf38cfc41ba4afd6449a4d7d84980dbb41d1b3cce6ae; SOURCE_STATIC/VERIFY; no new native/runtime acquisition]	保存済み原報告の静的解析・実動作未確認
+symbol	va:0x005CFF10	OggAggregateLinkLengthGetter	func	0		research/recovered/rea_batch4/reports/REA_20261030_19H_P0_SEEK_TOTALLEN_STATIC.md lines8-14 [sha256=4f0390932c314a095bbe84e318edea309e0e3a6b2cbbb45c4c328f2439f74052; SOURCE_STATIC/VERIFY; no new native/runtime acquisition]	保存済み原報告の静的解析・実動作未確認
+symbol	va:0x005CFA10	OggPageUpdateLocalStateWriter	func	0		research/recovered/rea_batch4/reports/REA_20261030_20H_P0_PAGE_STATE_MUTATION_STATIC.md lines6-10 [sha256=a6b3fd2023ce3ca7d75d401d8fd749a1d40bd01fc999b9c821610aa4abc391a5; SOURCE_STATIC/VERIFY; no new native/runtime acquisition]	保存済み原報告の静的解析・実動作未確認
+symbol	va:0x005CFDD0	Ogg_SeekCallbackLow32Boundary	func	0		research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_12H_16H_SEEK_FTELL_RECOVERY_STATIC.md lines30-32 [sha256=a66fbea282a1d1c452e0ff45ed5237f3efd19ab051b26fff3876e75b12d2991d; AUTHOR_RECOVERY_COMPILATION/NATIVE_REPORTED; no new original Library/native acquisition]	回収集約報告の限定静的記述・ABI/実動作未確認
+symbol	va:0x004B4645	Battle_SkillTroopRegistrationSite	code	0		research/recovered/structured_tables1/reports/exe/T006_TROOP_REGISTRY_INDEX.tsv lines26-26 [sha256=f62bb193504f20f6acc7d038cfed1db5f1679fbbd06e0f10793a4b65fb8658a5; AUTHOR_STATIC_TABLE_BINDING; code position, not proven function entry]	原表の登録・handler対応／関数境界・ABI未確認
+symbol	va:0x004B608F	Battle_SkillTroopHandlerSite	code	0		research/recovered/structured_tables1/reports/exe/T010_BATTLE_CMD_MAP.tsv lines15-15 [sha256=cb88fd0c69bcb4223ad1d7372982f34ab7dfca7a8fafc615746e742c692d2938; AUTHOR_STATIC_TABLE_BINDING; code position, not proven function entry]	原表の登録・handler対応／関数境界・ABI未確認
+symbol	va:0x0050A5E0	Script_IfRifParserCallbackBinding	code	0		research/recovered/structured_tables1/reports/exe/T005_SPECIAL_REGISTRY_CALLBACK_CROSSWALK.tsv lines7-8 [sha256=7b69a2d99930e27aa988aa9a317999a5187129d384fccecc2cc937d80063685a; AUTHOR_STATIC_TABLE_BINDING; code position, not proven function entry]	原表の登録・handler対応／関数境界・ABI未確認
+symbol	va:0x005C3500	CRT_LocalUnwind4	func	1		REA-LOCAL-20261101-21H-P0-UNWIND-FOUR-CALLERS-NLG-STATIC-01; rea_lab/decomp_task/REA_20261101_21H_P0_UNWIND_CALLERS_STATIC.md lines9-13 [recovered=research/recovered/rea_batch3/reports/REA_20261101_21H_P0_UNWIND_CALLERS_STATIC.md; sha256=89314b1069e2a57a928c1320a4c80dc79d6c2c4a3fa65137f082b7634351f2d6]	静的確認（著者の限定E8照合報告。完全ABI・今回の原作再検証なし）
+symbol	va:0x005C35BD	CRT_LocalUnwind4_Callsite_PEFragment	code	1		REA-LOCAL-20261101-21H-P0-UNWIND-FOUR-CALLERS-NLG-STATIC-01; rea_lab/decomp_task/REA_20261101_21H_P0_UNWIND_CALLERS_STATIC.md lines9-13 [recovered=research/recovered/rea_batch3/reports/REA_20261101_21H_P0_UNWIND_CALLERS_STATIC.md; sha256=89314b1069e2a57a928c1320a4c80dc79d6c2c4a3fa65137f082b7634351f2d6]	静的確認（著者の限定E8照合報告。完全ABI・今回の原作再検証なし）
+symbol	va:0x005C35E6	CRT_LocalUnwind4_Callsite_5C35D6	code	1		REA-LOCAL-20261101-21H-P0-UNWIND-FOUR-CALLERS-NLG-STATIC-01; rea_lab/decomp_task/REA_20261101_21H_P0_UNWIND_CALLERS_STATIC.md lines9-13 [recovered=research/recovered/rea_batch3/reports/REA_20261101_21H_P0_UNWIND_CALLERS_STATIC.md; sha256=89314b1069e2a57a928c1320a4c80dc79d6c2c4a3fa65137f082b7634351f2d6]	静的確認（著者の限定E8照合報告。完全ABI・今回の原作再検証なし）
+symbol	va:0x005C3646	CRT_LocalUnwind4_Callsite_ExceptUnwind	code	1		REA-LOCAL-20261101-21H-P0-UNWIND-FOUR-CALLERS-NLG-STATIC-01; rea_lab/decomp_task/REA_20261101_21H_P0_UNWIND_CALLERS_STATIC.md lines9-13 [recovered=research/recovered/rea_batch3/reports/REA_20261101_21H_P0_UNWIND_CALLERS_STATIC.md; sha256=89314b1069e2a57a928c1320a4c80dc79d6c2c4a3fa65137f082b7634351f2d6]	静的確認（著者の限定E8照合報告。完全ABI・今回の原作再検証なし）
+symbol	va:0x005D1D33	CRT_LocalUnwind4_Callsite_Fsopen	code	1		REA-LOCAL-20261101-21H-P0-UNWIND-FOUR-CALLERS-NLG-STATIC-01; rea_lab/decomp_task/REA_20261101_21H_P0_UNWIND_CALLERS_STATIC.md lines9-13 [recovered=research/recovered/rea_batch3/reports/REA_20261101_21H_P0_UNWIND_CALLERS_STATIC.md; sha256=89314b1069e2a57a928c1320a4c80dc79d6c2c4a3fa65137f082b7634351f2d6]	静的確認（著者の限定E8照合報告。完全ABI・今回の原作再検証なし）
+field	field:UnitDef:0x1C	tag		1	S1101§4	F§21, C(§93: 0x585AD0 が参照), S1101§4	静的確認
+field	field:UnitDef:0x74	isPlayerUnit		1	S1101§4	C(§93, x32dbg 0x55D98F), F§71.2, S1101§4	実機確認
+field	field:UnitDef:0x78	isLeader		1	S1101§4	F§26, §58, §62.1, S1101§4	静的確認
+field	field:UnitDef:0x7A	isVassal		0		C(§93, x32dbg 0x55D98F)	実機確認
+field	field:UnitDef:0x84	roamSpot		1	S1101§4	F§26, T014 A58, S1101§4	静的確認
+field	field:UnitDef:0xEC	skills		1		F§24	静的確認
+field	field:UnitDef:0x158	friendSet		1	S1101§4	F§30, S1101§4	静的確認
+field	field:UnitDef:0x160	friendSetSize		1		F§30	静的確認
+field	field:UnitDef:0x168	stats		2	S1101§4	F§91, W(dat_ui_v3_runtime.h), F§79.3, S1101§4	実機確認
+field	field:UnitDef:0x1A4	ctx		1		F§91	実機確認
+field	field:UnitDef:0x0	key		0	S1101§4	S1101§4	静的確認
+field	field:UnitDef:0x38	race		1		F§21	静的確認
+field	field:UnitDef:0x54	class		1		F§21	静的確認
+field	field:UnitDef:0x70	sex		1		F§71.2	静的確認
+field	field:UnitDef:0x75	isTalent		1		F§23.4	静的確認
+field	field:UnitDef:0x77	isPowerMaster		1	S1101§4	F§58, §62.1, S1101§4	静的確認
+field	field:UnitDef:0x79	flag_79		1		F§67.2, §68.4, §78	静的確認
+field	field:UnitDef:0x7C	arbeit		1	S1101§4	F§65, S1101§4	静的確認
+field	field:UnitDef:0x80	rank		1		F§62.1	静的確認
+field	field:UnitDef:0xA0	arbeitUser		1		F§71.2, §72.3	静的確認
+field	field:UnitDef:0xBC	merits		1		F§59, §62.1	静的確認
+field	field:UnitDef:0xC0	loyal		1		F§59, §62.1	静的確認
+field	field:UnitDef:0xC4	trust		1		F§62.1	静的確認
+field	field:UnitDef:0xC8	actedTurn		1		F§68.1, §79.8	静的確認
+field	field:UnitDef:0xCC	enableTurn		1		F§25.2, §49	静的確認
+field	field:UnitDef:0xD0	leaveTurn		1		F§59, §72.2	静的確認
+field	field:UnitDef:0xD4	members		1		F§25.2	静的確認
+field	field:UnitDef:0xE4	sortKey		1		F§58, §68.1, §71.3	静的確認
+field	field:UnitDef:0xE8	isFront		1		F§70.3	静的確認
+field	field:UnitDef:0xFC	skillsBack		1		F§24.2, §24.5	静的確認
+field	field:UnitDef:0x10C	skillsFront		1		F§24.2, §24.5	静的確認
+field	field:UnitDef:0x11C	items		1		F§79.5	静的確認
+field	field:UnitDef:0x130	map130		0	S1101§4	S1101§4	静的確認
+field	field:UnitDef:0x13C	movetype		1		F§24.4	静的確認
+field	field:GameManager:0x1B8	ctx		1		F§91	実機確認
+field	field:GameManager:0x4C4	numVars		1		W(work_dat_ui_context.h), F§90	実機確認
+field	field:GameManager:0x504	engine		1		F§82	静的確認
+field	field:GameManager:0x1EF144	sceneId		0		W(dat_ui_selector_plugin.c)	静的確認
+field	field:GameManager:0x1EF4EC	turnPhase		1	S1101§7	本セッション(0x55D70E), F§71.2, S1101§7	静的確認
+field	field:GameManager:0x10	turnState		1		F§79.2	静的確認
+field	field:GameManager:0x1EF4B4	turnState		1	S1101§7	F§59, §62.1, §71.2, S1101§7	静的確認
+field	field:GameManager:0x1EF4BE	gameClear		0		wiki/T019	静的確認
+field	field:GameManager:0x1EF4C8	turn		1		F§62.1	静的確認
+field	field:Ctx:0x2FC	unitDefs		1		F§91	実機確認
+field	field:Ctx:0x300	unitDefs_head		1		F§91	実機確認
+field	field:Ctx:0x304	unitDefs_size		1		F§91	実機確認
+field	field:Ctx:0x30C	varStore		1		F§63.1	静的確認
+field	field:Ctx:0x32C	roamingSet		1		F§26	静的確認
+field	field:Ctx:0x30	gamemode		0	S1101§2	T014 A60, S1101§2	静的確認
+field	field:Ctx:0x34	scenarioName		1	S1101§2	F§21, S1101§2	静的確認
+field	field:Ctx:0x50	playerUnit		1		F§79.2, T014 A60	静的確認
+field	field:Ctx:0x54	playerPower		1		F§79.2, T014 A60	静的確認
+field	field:Ctx:0x2DC	powers		1		F§58, T014 A57	静的確認
+field	field:Ctx:0x2EC	spots		1		F§58, T014 A57	静的確認
+field	field:Power:0x1D	isPlayer		1		C(§93)	実機確認
+field	field:Power:0x24	master		1	S1101§6	F§32, §58, S1101§6	静的確認
+field	field:Power:0x0	name		1		F§58	静的確認
+field	field:Power:0x1C	isActive		1		F§58, §62.1	静的確認
+field	field:Power:0x20	personality		1		F§66	静的確認
+field	field:Power:0x40	str40		1	S1101§6	F§58, S1101§6	推定
+field	field:Power:0x5C	money		1		F§58, §79.3	静的確認
+field	field:Power:0x60	turn60		1		F§62.1, §71.2	静的確認
+field	field:Power:0x64	territory		1		F§58, §62.1	静的確認
+field	field:Power:0x90	merce		1		F§58, §71.1	静的確認
+field	field:Power:0xA0	staff		1		F§58	静的確認
+field	field:Power:0xC0	home		1		F§66	静的確認
+field	field:Power:0xD0	fix		1		F§58	静的確認
+field	field:Power:0xD4	trainingAverage		1		F§45, §58	静的確認
+field	field:Power:0xD8	trainingUp		1		F§45, §58	静的確認
+field	field:Power:0xDC	baseLevel		1		F§45, T014 A57	静的確認
+field	field:Power:0xE0	ctx		1		F§58, T014§normal save tail	静的確認
+field	field:FrameWnd:0x8	left		0		W(work_selector_*.h)	テストのみ
+field	field:FrameWnd:0x10	right		0		W(work_selector_*.h)	テストのみ
+field	field:FrameWnd:0x84	shown		1		C(§93), W	実機確認
+field	field:FrameWnd:0xA4	state		1		C(§93)	実機確認
+field	field:FrameWnd:0xBC	name		1		C(§93)	静的確認
+field	field:StatusWnd:0x98	owner		0		W(DAT_UI_V4_STATUS_PANEL.md,2026-10-29)	実機確認
+field	field:StatusWnd:0x9C	anchor		0		W(work_selector_hover_context.h)	テストのみ
+field	field:StatusWnd:0x1B8	targetDef		1		C(§93), W	実機確認
+field	field:StatusWnd:0x1BC	pressedIndex		1		F§95	静的確認
+field	field:StatusWnd:0x1C4	btnHire		1		C(§93)	実機確認
+field	field:StatusWnd:0x1C5	btnExtract		1		C(§93)	静的確認
+field	field:StatusWnd:0x1C6	btnDismiss		1		C(§93)	実機確認
+field	field:StatusWnd:0x1C7	btnItem		1		C(§93)	静的確認
+field	field:StatusWnd:0x1C8	hoverRects		0		W(work_selector_skill_hover.h)	テストのみ
+field	field:StatusWnd:0x12F8	hoverCount		0		W(work_selector_skill_hover.h)	テストのみ
+field	field:Player:0x324	cursorX		0	R1101§3	本セッション, R1101§3	実機確認
+field	field:Player:0x328	cursorY		0	R1101§3	本セッション, R1101§3	実機確認
+field	field:Player:0x42C	hoverOwner		0		本セッション	静的確認
+field	field:GameTask:0x40	frameTime		0	R1101§1	R1101§1	静的確認
+field	field:GameTask:0x74	fps		0	R1101§1	R1101§1	静的確認
+field	field:GameTask:0x78	frameMs		0	R1101§1	R1101§1	静的確認
+field	field:Spot:0x0	name		1		F§58	静的確認
+field	field:Spot:0x1C	units		1	S1101§5	F§62.1, S1101§5	静的確認
+field	field:Spot:0x2C	map		1		F§58, §79.7	静的確認
+field	field:Spot:0x48	dungeon		1		F§58, §79.7	静的確認
+field	field:Spot:0x80	gain		1		F§58, §79.3	静的確認
+field	field:Spot:0x84	castle		1		F§58	静的確認
+field	field:Spot:0x88	capacity		1		F§58, T014 A57	静的確認
+field	field:Spot:0x8C	castleBattle		1		F§68.1, §68.2	静的確認
+field	field:Spot:0x90	value		1		F§58	静的確認
+field	field:Spot:0xB0	ctx		1		F§58, T014 A59	静的確認
+field	field:TurnState:0x9	endFlag09		1		wiki/T019, F§79.2	静的確認
+field	field:TurnState:0xA	gameClear		1		wiki/T019, F§78	静的確認
+field	field:TurnState:0x14	turn		1	S1101§2	F§62.1, S1101§2	静的確認
+field	field:TurnState:0x18	order		1		F§59, T014§normal save tail	静的確認
+field	field:TurnState:0x38	phase		1		F§59, §69.2, §76.2	静的確認
+field	field:ScriptEngine:0x1EED60	resettableElapsed		2		data/T010_EVENT_SCHEDULER.md lines108-133; F§82.1	静的確認
+field	field:ScriptEngine:0x1EED78	executionBlocks		2		data/T010_EVENT_SCHEDULER.md lines229-259,344; F§82.1	静的確認
+field	field:ScriptEngine:0x1EED88	executionPCs		2		data/T010_EVENT_SCHEDULER.md lines229-259,344; F§82.1	静的確認
+field	field:ScriptEngine:0x1EED98	executionModes		2		data/T010_EVENT_SCHEDULER.md lines229-259,344; F§82.1	静的確認
+field	field:ScriptEngine:0x1EEDA8	executionFrameKinds		2		data/T010_EVENT_SCHEDULER.md lines229-259,344; F§82.1	静的確認
+field	field:ScriptEngine:0x1EEC44	battleActive		2		data/T010_EVENT_SCHEDULER.md lines375-376; F§82.1	静的確認
+field	field:UnitRuntime:0x90	hp		1		data/T012_HEAL_HP_POST_577100_CONTRACT_20261013.md lines4-5; REF_SKILL_POST_ACTION.md lines69-71	静的確認
+field	field:UnitRuntime:0xDC	hpMax		1		data/T012_HEAL_HP_POST_577100_CONTRACT_20261013.md lines4-5; REF_SKILL_POST_ACTION.md lines69-71	静的確認
+field	field:UnitRuntime:0x738	hpTier		2		data/T012_HEAL_HP_POST_577100_CONTRACT_20261013.md lines4-5; data/T012_HP_LIFEBAR_TIMER_CROSSCALL_20261013.md line7	静的確認
+field	field:UnitRuntime:0x185F4	hpRegistrationCountdown		2		data/T012_HEAL_HP_POST_577100_CONTRACT_20261013.md lines4-6; data/T012_HP_LIFEBAR_TIMER_CROSSCALL_20261013.md lines4-7; REF_SKILL_POST_ACTION.md line72	静的確認
+field	field:ScriptEngine:0x1EED64	absoluteSchedulerCounter		1		data/T010_EVENT_SCHEDULER.md lines108-114,125-133; REF_SCRIPT_VM_CONTEXT.md lines3-4,17	静的確認
+field	field:ScriptEngine:0x1EED58	waitCounter		1		data/T010_EVENT_SCHEDULER.md lines97-104; REF_SCRIPT_VM_CONTEXT.md lines3-4,15	静的確認
+field	field:ScriptEngine:0x1EEC3C	currentExecutionMode		1		data/T010_EVENT_SCHEDULER.md lines227-235; REF_SCRIPT_VM_CONTEXT.md lines3-4	静的確認
+field	field:SaveUnitDataTreeNode:0x28	unitDataPointer		1		exp_research_20261021/EXP_SAVE_TREE_BOUNDARY_EVIDENCE_20261021.json lines26-29,50-53,74-78 [recovered=research/recovered/json_exp_exe1/reports/14_EXP_SAVE_TREE_BOUNDARY_EVIDENCE_20261021.json; sha256=9622a342f6b8ca7b023abc9b225b5020e952f8868fb253240bf8ac795b1052e4]	静的確認（保存済み著者の限定サイト解析。今回の原作再検証・実行なし）
+field	field:SummonRecordCacheNode:0x28	inlineUnitRecord		2		exp_research_20261021/EXP_SAVE_TREE_BOUNDARY_EVIDENCE_20261021.json lines26-29,50-53,74-78 [recovered=research/recovered/json_exp_exe1/reports/14_EXP_SAVE_TREE_BOUNDARY_EVIDENCE_20261021.json; sha256=9622a342f6b8ca7b023abc9b225b5020e952f8868fb253240bf8ac795b1052e4]; exp_research_20261021/EXP_STRING_CACHE_ABI_EVIDENCE_20261021.json lines358-369 [recovered=research/recovered/json_exp_exe1/reports/19_EXP_STRING_CACHE_ABI_EVIDENCE_20261021.json; sha256=8440b0057d6983d291a151217af7f5a60839d14c9e1f4cd7e9acaf97f1aebb6e]	静的確認（保存済み著者の限定サイト解析。今回の原作再検証・実行なし）

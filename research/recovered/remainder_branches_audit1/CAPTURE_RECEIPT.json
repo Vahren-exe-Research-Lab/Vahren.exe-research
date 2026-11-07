@@ -1,0 +1,23 @@
+{
+  "baseline": "525b37e43f26c7a95c2b3818f83ed9507a33d452",
+  "observed_work_head": "525b37e43f26c7a95c2b3818f83ed9507a33d452",
+  "capture_utc": "2026-11-05T10:01:49.694514+00:00",
+  "current_tree_entries": 4580,
+  "accepted_ledger_rows": 2384,
+  "all_accepted_destinations_resolve_to_current_git_blobs": true,
+  "pinned_pr_catalog_locations_input_rows_with_duplicate_snapshot_inputs": 3391,
+  "pinned_pr_distinct_locations": 2860,
+  "selected_heads": 3,
+  "changed_path_rows": 456,
+  "selection_lead_rows": 18,
+  "body_reads": 0,
+  "network_calls": 0,
+  "git_mutations": 0,
+  "original_mutations": 0,
+  "process_only_git_env": [
+    "GIT_OPTIONAL_LOCKS=0",
+    "GIT_ALTERNATE_OBJECT_DIRECTORIES=work/.git/objects"
+  ],
+  "complete_current_tree_metadata_sha256": "bc6681e1f2733b702cf8b87ca2699e58f48f0981b316e9be1a2ad719e444417e",
+  "git_hash_scope": "Git blob SHA1 from ls-tree; never equated with original-file SHA256"
+}
