@@ -5,11 +5,11 @@ RESEARCH_SOURCE_CATALOG.tsv の既存スナップショットを、Git管理対�
 
 | 状態 | 行数 | 意味 |
 |---|---:|---|
-| EXACT_BODY_AVAILABLE | 830 | 同じSHA256の本文をリポジトリ内で確認 |
+| EXACT_BODY_AVAILABLE | 829 | 同じSHA256の本文をリポジトリ内で確認 |
 | RECOVERED_REVIEWED_VARIANT | 37 | 元SHAと保存版SHAを持つレビュー済み別版を確認 |
 | PARTIAL_BODY_AVAILABLE | 0 | レビュー済みの抜粋を確認。本文全体の回収は未完了 |
 | SOURCE_REVISION_DIFFERS | 11 | 同じ原本相対パスの別SHAに対応する回収記録を確認。目録版の本文や全文回収を証明しない |
-| CATALOG_ONLY_UNRESOLVED | 1059 | 同じ本文やレビュー済み別版の対応を、この検査では確認できていない |
+| CATALOG_ONLY_UNRESOLVED | 1060 | 同じ本文やレビュー済み別版の対応を、この検査では確認できていない |
 
 対象は目録の 1937 行。未解決行にも別名の要約・訂正・出典参照が存在し得る。SHAの文字列が資料中に登場しただけでは本文収録と数えない。
 目録のSHAは採録時点の値。研究PCの現在の文書との一致、研究の確かさ、GitHubへの送信完了はこの表だけでは判定しない。
@@ -27,7 +27,7 @@ recovered_source_sha256 は対応する回収元のSHA。SOURCE_REVISION_DIFFERS
 | .csv | 7 | 0 | 0 | 0 | 0 | 7 |
 | .json | 574 | 27 | 1 | 0 | 0 | 546 |
 | .jsonl | 12 | 0 | 0 | 0 | 0 | 12 |
-| .md | 928 | 795 | 36 | 0 | 11 | 86 |
+| .md | 928 | 794 | 36 | 0 | 11 | 87 |
 | .tsv | 20 | 0 | 0 | 0 | 0 | 20 |
 | .txt | 396 | 8 | 0 | 0 | 0 | 388 |
 

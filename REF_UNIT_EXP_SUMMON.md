@@ -129,3 +129,23 @@ Sources: `dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md` (runtime
 - **Simple-battle summon links (STATIC + ACTUAL):** `0x547490` (thiscall ECX = skill, arg = summoner) keeps the skill at `[esp+0x18]` and links at `0x5479F0 -> 0x5774A0` (callee `[esp+0x24]`); `0x553390` (ECX = skill, arg = missile; parent = missile+0x78) keeps it at `[esp+0x2c]` and links at `0x5537BF` (callee `[esp+0x38]`). In game: s_inyume 12, s_iwana_nt 130/235, sp_abesan_nt2, sp_skrn_nt2 recorded in simple battles. The recorded key is the skill that actually summons (for a missile chain, the missile-side skill, e.g. `abesan_yari1_pr1b`).
 - **Simple battles run battleEvent (ACTUAL):** DAT routine calls from battleEvent reached the plugin in CPU-vs-CPU simple battles; the troopless dummy-troop loan also works there (inyume simple=1 gains).
 - **Cost (ACTUAL):** per EXP change 2.9-3.1 us average over 4k-32k changes; per DAT routine call 0.28-0.35 ms.
+
+
+## 12. 0x587CC0：キャッシュ返却と確認済みの集計経路（2026-11-05 訂正）
+
+`Unit_CachedValueOrAggregate` は確認済みの分岐を表す調査用名。旧名 `Unit_ResetLinkedRuntimeFlags` と「参照元の状態を変更する」という旧説明は、[後日のT011§17・300–308行](research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L300-L308)の範囲へ限定し直す。対象は迫真戦記ver0.67、VA 0x587CC0。
+
+- 保存済み静的報告の302行：stack byte引数が0なら、Unit+0x1C4のキャッシュをEAXへ読み、ret 4で返す。
+- 303–304行：非0経路では複数フィールドと要素列から重み付きの入力集計へ進むが、取得済みなのは先頭110命令の途中まで。非0経路の最終EAX、関数内部の+0x1C4書込、全体の副作用は未証明。一律のstat resetやbuff消去を証明するものではない。
+- 293行と304行：状態setter側のcallerは返却EAXをUnit+0x1C4へ保存する。callerのstoreをcallee自身のstoreと混同しない。戦闘生成callerと後段0x571B70も区別する。
+
+出典は固定保存版 `research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md`、SHA256 `2848bfdf9cf9c47cdb5174385d3626140207dd726ce2078982f5486e6ed3c14b`、主根拠300–308行、callerの補助根拠293行。[関数ページ](reference/symbols/00587CC0.md)と[訂正履歴](reference/CORRECTIONS.md)の `CORRECTION-UNIT-CACHED-VALUE-NOT-RESET` から辿れる。静的区分は元報告の範囲を維持し、今回の原作再解析・実機確認はない。
+
+未取得の後半は取得し直していない。Unitの具体型・UnitRuntimeとの同一性、キャッシュの論理用途、戦闘跨ぎのbuff寿命、完全なABI・副作用は未確認のまま。新しいフィールド型やcalleeのwrite関係は採録しない。
+
+
+### 別の実装報告との相違・確認範囲
+
+[F§64.2・1671–1678行](research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1671-L1678)は「実装した関数」の `unit_strength_587cc0` を説明し、fv_*係数の各積をchopしてdef+0x1C4へ格納すると記述する。[F§75・2702–2708行](research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L2702-L2708)にも引数1の返値を使う評価式がある。固定保存版FのSHA256は `6c61b104076363710e09535c6db62daedbe0f0ee159a6ce3240aceb4f417d2d8`。これは参照すべき実装・静的対応の著者報告として残す。
+
+ただし、この実装説明の引用箇所は原作calleeの完全な命令列・内部store位置を提示していない。節固有の観測日時も不明で、文書題名の日付だけでT011との新旧を決めない。「内部書込未証明」はT011§17の限定取得範囲に対する記録であり、すべての研究に格納報告が存在しないという主張ではない。Fのstrengthという命名・式・格納と、原作callee/callerの帰属・完全な返値・副作用は未照合。今回、その報告を新しいwrite関係や確定用途へ自動採用せず、保留された後半も取得しない。

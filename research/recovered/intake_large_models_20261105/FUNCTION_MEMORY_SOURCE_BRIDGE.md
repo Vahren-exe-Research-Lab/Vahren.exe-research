@@ -12,3 +12,5 @@
 |[absoluteSchedulerCounter](../../../reference/structs/ScriptEngine.md) `field:ScriptEngine:0x1EED64`|[T030_RTS_MODE.md 76–82行](../../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md#L76)|型unknownの幅・符号を補完しない。635行の初期化記録と現行REF17行を併読。|
 
 514C80は[T030の後日訂正633–640行](../principal_models1/reports/data/T030_RTS_MODE.md#L633)と[型の境界727–731行](../principal_models1/reports/data/T030_RTS_MODE.md#L727)も読む。古い「pointer」呼称をraw DWORD以上に型確定せず、587CC0の既存名から一律状態リセットを推論しない。保存・検索できることと、完全な実装契約が確定したことは別に扱う。
+
+0x587CC0の表中名はPR47作成時点の旧登録名。後日、[現行の関数説明](../../../reference/symbols/00587CC0.md)と[訂正一覧](../../../reference/CORRECTIONS.md)の `CORRECTION-UNIT-CACHED-VALUE-NOT-RESET` で `Unit_CachedValueOrAggregate` へ限定し直した。TSVの existing_name も作成時点の値であり、現行名・意味・確度はリンク先の辞書を優先する。
