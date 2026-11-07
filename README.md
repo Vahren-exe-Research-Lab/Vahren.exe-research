@@ -31,13 +31,14 @@ python -B tools/reference.py search 0x0055D8F6
 python -B tools/reference.py search Vahren.exe+15D8F6
 python -B tools/reference.py search ScriptEngine+0x1EED60
 python -B tools/reference.py search T014 --json
+python -B tools/reference.py search data/T009_CONTEXT_KEYS.md --json
 python -B tools/reference.py callers 0x0055BC60 --json
 python -B tools/reference.py callees 0x0055BC60 --json
 ```
 
 アドレスはver0.67のVA、`Vahren.exe+...` は基準0x400000からの相対位置です。構造体と位置は `構造体名+0xオフセット` と書きます。`ScriptEngine` は研究用のレイアウト名で、原作のC++クラス名ではありません。古い本文の `Unit+185F4` のように `0x` を省いた表記は、`python -B tools/reference.py search Unit+185F4` と元の表記で本文検索します。構造体＋オフセット検索は、正式な辞書項目と本文の `0x` 付き局所表記が対象です。
 
-`--json` は人向けページと同じ根拠・確度・制約を返します。通常の文字列検索は、回収済み研究本文・JSON証拠票・Pythonコードの内容も対象とします。コードは実行しません。文書ごとの最初の一致行を表示します。文書はファイル名、題名、本文だけの一致の順で最大20件を表示し、同じ区分内は台帳の初出順です。表示が省略されたら研究IDや題名で絞ってください。詳細は[検索と追加・訂正の手順](reference/UPDATING.md)にあります。
+`--json` は人向けページと同じ根拠・確度・制約を返します。通常の文字列検索は、回収済み研究本文・JSON証拠票・Pythonコードの内容も対象とします。コードは実行しません。元の相対パスや出典URIから、名前が変わった保存版も探せます。本文一致は最初の一致行、ファイル名・題名・元パスの一致は保存版の見出しを表示します。元パス一致には対応する台帳・出典の記録SHA・その記録の制約を付けます。文書は保存ファイル名、元パス・出典URI、題名、本文だけの一致の順で最大20件を表示し、同じ区分内は台帳の初出順です。表示が省略されたら研究IDや題名で絞ってください。詳細は[検索と追加・訂正の手順](reference/UPDATING.md)にあります。
 
 ## 根拠と未確認事項を読む
 

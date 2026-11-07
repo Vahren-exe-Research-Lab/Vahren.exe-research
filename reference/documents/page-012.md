@@ -4,410 +4,510 @@
 
 回収台帳でSHAを照合したMarkdown・TXT・JSON・JSONL・TSV・CSV・Pythonコードの本文だけを対象にします。研究本文の一致（意味・動作の検証なし）です。各文書の対象・部分回収・保留・訂正の制約を確認してください。
 
-通常の文字列検索は題名・ファイル名・研究ID・本文を対象に、1文書につき最初の一致行の最大400文字を表示します。題名・ファイル名の一致はMarkdownの見出し行（見出しがなければ先頭行）を表示します。その他の形式はファイル名を題名とし、元の文字列表現を検索します。RUN_RESULT.jsonは従来の構造化run索引で扱います。
+通常の文字列検索は題名・保存ファイル名・回収台帳の元パスや出典URI・研究ID・本文を対象に、1文書につき最大400文字を表示します。本文一致は最初の一致行、題名・ファイル名・元パスの一致はMarkdownの見出し行（なければ先頭行）を表示します。元パス一致は台帳の対応であり、一致した元パスごとの出典SHA・制約・台帳行を確認できます。その他の形式はファイル名を題名とし、元の文字列表現を検索します。RUN_RESULT.jsonは従来の構造化run索引で扱います。
 
-文書検索結果はファイル名の一致、題名の一致、本文だけの一致の順で最大20件です。同じ区分内は回収台帳での初出順です。省略時は一致総数を表示します。全件の出典・制約は一覧または各詳細ページに掲載しています。研究ID・題名で絞り込めます。アドレス・所有者＋オフセット検索は従来の専用結果を返します。
+文書検索結果は保存ファイル名、元パス・出典URI、題名、本文だけの一致の順で最大20件です。同じ区分内は回収台帳での初出順です。省略時は一致総数を表示します。全件の出典・制約は一覧または各詳細ページに掲載しています。研究ID・題名で絞り込めます。アドレス・所有者＋オフセット検索は従来の専用結果を返します。
 
 [前のページ](page-011.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md) · [次のページ](page-013.md)
 
 - [T028 退却先選択：Spot候補の容量・予約計数のstrict gate（22H）](../../research/recovered/b_batch11/data/T028_RETREAT_SPOT_CAPACITY_STRICT_GATE_NATIVE_20261029_22H.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_RETREAT_SPOT_CAPACITY_STRICT_GATE_NATIVE_20261029_22H.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1128-L1128)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
   本文 SHA256 `d2e746997c492ce294eff9bd9b61d7d45c14dbf5fe7030dac02c624be5ed26f6`
+  元パス <code>data/T028_RETREAT_SPOT_CAPACITY_STRICT_GATE_NATIVE_20261029_22H.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1128-L1128)。
 
 - [B-20261028-08H-T028-FALLBACK-C4-EDI-GATE-01｜名前解決fallback既定値とloyal_down補正条件](../../research/recovered/b_batch11/data/T028_SHARED_FALLBACK_INIT_C4_EDI_GATE_NATIVE_20261028_08H.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_SHARED_FALLBACK_INIT_C4_EDI_GATE_NATIVE_20261028_08H.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1129-L1129)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
   本文 SHA256 `a10faad5cab918a546c36c47cb44b6aee13a235865618e88f988e8ecfc61e7ca`
+  元パス <code>data/T028_SHARED_FALLBACK_INIT_C4_EDI_GATE_NATIVE_20261028_08H.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1129-L1129)。
 
 - [B-20261028-0913-T028-FALLBACK-ROSTER-BACKLINK-REBIND-01｜T028共有fallbackの空候補範囲とmiss時のowner再束縛](../../research/recovered/b_batch11/data/T028_SHARED_FALLBACK_ROSTER_BACKLINK_REBIND_NATIVE_20261028_09H.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_SHARED_FALLBACK_ROSTER_BACKLINK_REBIND_NATIVE_20261028_09H.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1130-L1130)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
   本文 SHA256 `5ab6bf97a5edf07ce097b25b59932ab058fb421d538a277f8d0dbfa5ef7f80dc`
+  元パス <code>data/T028_SHARED_FALLBACK_ROSTER_BACKLINK_REBIND_NATIVE_20261028_09H.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1130-L1130)。
 
 - [B-20261026-0816-T028-SIMPLESTATIC-SPATIAL-TREE-ERASE-01｜SimpleStaticUnit死亡後の空間キー探索・削除](../../research/recovered/b_batch11/data/T028_SIMPLESTATIC_SPATIAL_TREE_ERASE_NATIVE_20261026_08H.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_SIMPLESTATIC_SPATIAL_TREE_ERASE_NATIVE_20261026_08H.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1131-L1131)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
   本文 SHA256 `89866e1688ac3440b2c8e6c4123204bebd8c02f30194f690a8ec76814c177d2b`
+  元パス <code>data/T028_SIMPLESTATIC_SPATIAL_TREE_ERASE_NATIVE_20261026_08H.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1131-L1131)。
 
 - [T028｜退却Spot索引の全木削除：再帰／反復デストラクタとヘッダ復位（03H）](../../research/recovered/b_batch11/data/T028_SPOT_FULL_TREE_CLEAR_RECURSIVE_DESTRUCTOR_NATIVE_20261030_03H.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_SPOT_FULL_TREE_CLEAR_RECURSIVE_DESTRUCTOR_NATIVE_20261030_03H.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1132-L1132)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
   本文 SHA256 `2ce7a4f828c2d749e30e63e7b78a46a8a5b3dec06e535f5a79f1db2fb201ab52`
+  元パス <code>data/T028_SPOT_FULL_TREE_CLEAR_RECURSIVE_DESTRUCTOR_NATIVE_20261030_03H.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1132-L1132)。
 
 - [T028 退却ベクタ補助の実副作用：RB-tree key範囲削除（flag0も削除）](../../research/recovered/b_batch11/data/T028_SPOT_INDEX_EQUAL_RANGE_ERASE_NATIVE_20261030_01H.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_SPOT_INDEX_EQUAL_RANGE_ERASE_NATIVE_20261030_01H.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1133-L1133)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
   本文 SHA256 `98c6a37bf0ffdb2306ec939e3e262b7ae4a8091a6e71c4ea400e709244251b7e`
+  元パス <code>data/T028_SPOT_INDEX_EQUAL_RANGE_ERASE_NATIVE_20261030_01H.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1133-L1133)。
 
 - [T028｜退却Spot index eraseのキー比較入口とノード破棄・長さ境界（02H）](../../research/recovered/b_batch11/data/T028_SPOT_TREE_ERASE_STRING_RELEASE_NATIVE_20261030_02H.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_SPOT_TREE_ERASE_STRING_RELEASE_NATIVE_20261030_02H.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1134-L1134)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
   本文 SHA256 `1c95d49a632f3c27b800c774e6ca738a4cf58116d96709587fdc8823225f5aaf`
+  元パス <code>data/T028_SPOT_TREE_ERASE_STRING_RELEASE_NATIVE_20261030_02H.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1134-L1134)。
 
 - [T028 退却Spot選別後のベクタ更新：0x598450フラグ別副作用](../../research/recovered/b_batch11/data/T028_SPOT_VECTOR_HELPER_FLAG_SPLIT_NATIVE_20261030_00H.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_SPOT_VECTOR_HELPER_FLAG_SPLIT_NATIVE_20261030_00H.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1135-L1135)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
   本文 SHA256 `6f972cfb462306b9df4620768e3c212e391a4153d6110f5f5f6eec30dd53c9c6`
+  元パス <code>data/T028_SPOT_VECTOR_HELPER_FLAG_SPLIT_NATIVE_20261030_00H.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1135-L1135)。
 
 - [迫真戦記 B T028/T012｜方向整数化CRT SSE2判定フラグの設定元（2026-10-26 21H）](../../research/recovered/b_batch11/data/T028_SSE2_FEATURE_INIT_PROVENANCE_NATIVE_20261026_21H.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_SSE2_FEATURE_INIT_PROVENANCE_NATIVE_20261026_21H.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1136-L1136)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
   本文 SHA256 `6bba66859d592034877657cf42eb223d481611287170e3a2396b7fa5cc24f599`
+  元パス <code>data/T028_SSE2_FEATURE_INIT_PROVENANCE_NATIVE_20261026_21H.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1136-L1136)。
 
 - [B-20261030-1115-T028-T013-SELECTOR-D0-SENTINEL-RNG-GATE-01｜selector条件から管理値+0xD0の巨大sentinel・RNG分岐へ接続](../../research/recovered/b_batch11/data/T028_T013_SELECTOR_D0_SENTINEL_RNG_GATE_NATIVE_20261030_11H.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_T013_SELECTOR_D0_SENTINEL_RNG_GATE_NATIVE_20261030_11H.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1137-L1137)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
   本文 SHA256 `6a6ae20a74a4cb05e8139cdd285ceeca7c61f2364ad8844ce0660d8923ab3385`
+  元パス <code>data/T028_T013_SELECTOR_D0_SENTINEL_RNG_GATE_NATIVE_20261030_11H.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1137-L1137)。
 
 - [B-20261028-0317-T028-TREEFLAG-DUAL-CONTAINER-GATE-01｜T028 二次木+0x14によるキー範囲処理先の0/1/2分類（03H）](../../research/recovered/b_batch11/data/T028_TREEFLAG_TEMP_MAP_DUAL_UPDATE_NATIVE_20261028_03H.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_TREEFLAG_TEMP_MAP_DUAL_UPDATE_NATIVE_20261028_03H.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1138-L1138)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
   本文 SHA256 `4018f36f45b1a73efbbdb2727702c8ac24a6be5e96f685df573a3b0729f58f81`
+  元パス <code>data/T028_TREEFLAG_TEMP_MAP_DUAL_UPDATE_NATIVE_20261028_03H.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1138-L1138)。
 
 - [B-20261028-0214-T028-TREE-FLAG-F54-F55-01｜T028 参加者索引照合と戦闘モード三状態の旗生成（2026-10-28 02H）](../../research/recovered/b_batch11/data/T028_TREE_FLAG_EXACT_MATCH_TO_BATTLE_SIDE_NATIVE_20261028_02H.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_TREE_FLAG_EXACT_MATCH_TO_BATTLE_SIDE_NATIVE_20261028_02H.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1139-L1139)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
   本文 SHA256 `8bb642ab3a4b9180bf06597de9f48074b2bd809908db1393fcc1b51be717050c`
+  元パス <code>data/T028_TREE_FLAG_EXACT_MATCH_TO_BATTLE_SIDE_NATIVE_20261028_02H.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1139-L1139)。
 
 - [B-20261028-0114-T028-TRIFLAG-SIDE-MODE-PRODUCER-01｜T028 三状態分岐とbattle mode producer（2026-10-28 01H）](../../research/recovered/b_batch11/data/T028_TRIFLAG_SIDE_MODE_PRODUCER_NATIVE_20261028_01H.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_TRIFLAG_SIDE_MODE_PRODUCER_NATIVE_20261028_01H.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1140-L1140)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
   本文 SHA256 `e2b8a6ac9d364ed314e247885d6b37ba7a1f8dee22041b577eb1802ee98c5a5a`
+  元パス <code>data/T028_TRIFLAG_SIDE_MODE_PRODUCER_NATIVE_20261028_01H.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1140-L1140)。
 
 - [B-20261024-0912-T028-VTABLE70-DEATH-DISPATCH-RTTI-01｜4系統UnitのHP/死亡入口vtable+0x70と旧型ラベル訂正](../../research/recovered/b_batch11/data/T028_VTABLE70_FOURCLASS_DEATH_DISPATCH_RTTI_NATIVE_20261024_0912.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_VTABLE70_FOURCLASS_DEATH_DISPATCH_RTTI_NATIVE_20261024_0912.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1141-L1141)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
   本文 SHA256 `dee9d0671b79f2f37ebd6b8a8e4243722b1de941d1fb6b3b78e0dabe9f1fca5a`
+  元パス <code>data/T028_VTABLE70_FOURCLASS_DEATH_DISPATCH_RTTI_NATIVE_20261024_0912.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1141-L1141)。
 
 - [B-20261016-1313-01｜T028/T011 Web姉貴本編とランシナのUnit・Class・死亡イベント原文連結](../../research/recovered/b_batch11/data/T028_WEB_VARIANT_UNIT_CLASS_DEAD_EVENT_SOURCE_20261016.md?plain=1#L1-L1) — `research/recovered/b_batch11/data/T028_WEB_VARIANT_UNIT_CLASS_DEAD_EVENT_SOURCE_20261016.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY; no exact baseline hash alias; semantic dedup not claimed。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1142-L1142)。制約・訂正 Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
   本文 SHA256 `a20da0a287ba31d5d98a1e49da9044f42d0f4b198eef5b4fdc125f825c5f2205`
+  元パス <code>data/T028_WEB_VARIANT_UNIT_CLASS_DEAD_EVENT_SOURCE_20261016.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1142-L1142)。
 
 - [REA-20261019-1835-TROOP-SELECTION-OWNER-REBIND-GATE-01｜死亡部隊選択の所有者変更時の再束縛制約](../../research/recovered/rea_batch11/reports/REA_20261019_1835_TROOP_SELECTION_OWNER_REBIND_GATE_QC.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261019_1835_TROOP_SELECTION_OWNER_REBIND_GATE_QC.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1143-L1143)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `af482a210cb30ec4598fb5275635292e8974e3e094ede04c8d50a26178b9dcc1`
+  元パス <code>rea_lab/decomp_task/REA_20261019_1835_TROOP_SELECTION_OWNER_REBIND_GATE_QC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1143-L1143)。
 
 - [REA-20261019-1739-T014-T031-SAVE-RNG-VECTOR-01｜セーブ鍵生成の再実装用決定的入力ベクトル](../../research/recovered/rea_batch11/reports/REA_20261019_1739_T014_T031_SAVE_RNG_REFERENCE_VECTORS_QC.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261019_1739_T014_T031_SAVE_RNG_REFERENCE_VECTORS_QC.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1144-L1144)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `11019054506a169a32b796ea5fff5a24e7d66c8db42ca5191f9fd22962a61781`
+  元パス <code>rea_lab/decomp_task/REA_20261019_1739_T014_T031_SAVE_RNG_REFERENCE_VECTORS_QC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1144-L1144)。
 
 - [REA-20261019-0834-T014-POWER-HOMESPOT-DUAL-END-01｜Power home_spot読込と二重空tokenの消費境界](../../research/recovered/rea_batch11/reports/REA_20261019_0834_T014_POWER_HOME_SPOT_DUAL_TERMINATOR_QC.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261019_0834_T014_POWER_HOME_SPOT_DUAL_TERMINATOR_QC.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1145-L1145)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `1671399c1d6101665023415de95763a6e26be77d994147118058891ff0e9febd`
+  元パス <code>rea_lab/decomp_task/REA_20261019_0834_T014_POWER_HOME_SPOT_DUAL_TERMINATOR_QC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1145-L1145)。
 
 - [REA-20261019-0738-T014-POWER-GENERIC-NUMERIC-DC-SENTINEL-01｜Power readerの未分類数値タグと+DC省略既定](../../research/recovered/rea_batch11/reports/REA_20261019_0738_T014_POWER_GENERIC_NUMERIC_DC_SENTINEL_QC.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261019_0738_T014_POWER_GENERIC_NUMERIC_DC_SENTINEL_QC.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1146-L1146)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `afd076998a45d968b604509111e1a7b91892ff11b88e5e29f16ee44f0ab05971`
+  元パス <code>rea_lab/decomp_task/REA_20261019_0738_T014_POWER_GENERIC_NUMERIC_DC_SENTINEL_QC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1146-L1146)。
 
 - [REA-20261019-06H-T014-POWER-TAG-READER-DUALPATH-01｜Power readerの数値タグ4枝の読取／commit境界](../../research/recovered/rea_batch11/reports/REA_20261019_06H_T014_POWER_TAG_DIRECT_VS_WRAPPER_READ_QC.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261019_06H_T014_POWER_TAG_DIRECT_VS_WRAPPER_READ_QC.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1147-L1147)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `ae7256857e3dcaea709a3b87434ce64e2b6466785ac73cdf08e1d13b26f004e0`
+  元パス <code>rea_lab/decomp_task/REA_20261019_06H_T014_POWER_TAG_DIRECT_VS_WRAPPER_READ_QC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1147-L1147)。
 
 - [REA-20261019-0535-T014-PARENT-IO-COMMIT-01｜Wave6 P0未着手calleeの保存済み親関数ABI／出力確定境界](../../research/recovered/rea_batch11/reports/REA_20261019_0535_T014_PARENT_IO_COMMIT_GATE_QC.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261019_0535_T014_PARENT_IO_COMMIT_GATE_QC.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1148-L1148)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `ae238201fae1f265df761a75aa6c5a1eb5f9ce405d6bf0bd907dbceda4979ddd`
+  元パス <code>rea_lab/decomp_task/REA_20261019_0535_T014_PARENT_IO_COMMIT_GATE_QC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1148-L1148)。
 
 - [REA-20261019-0335-DEATH-TROOP-SEMANTIC-RESUME-DRIFT-01｜死亡二部隊継続のWorkコード更新再監査](../../research/recovered/rea_batch11/reports/REA_20261019_0335_DEATH_TROOP_SEMANTIC_RESUME_DRIFT_QC.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261019_0335_DEATH_TROOP_SEMANTIC_RESUME_DRIFT_QC.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1149-L1149)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `02a53f6a14fd72fc9c5891d1625e34f946a211ad037efe38cdbc6b62d6850c1a`
+  元パス <code>rea_lab/decomp_task/REA_20261019_0335_DEATH_TROOP_SEMANTIC_RESUME_DRIFT_QC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1149-L1149)。
 
 - [REA-20261019-0230-CP187-W1-STALE-REPEAT-01｜E checkpoint187のREA初期16件旧表示を再発見・独立証拠照合](../../research/recovered/rea_batch11/reports/REA_20261019_0230_CP187_W1_STALE_COUNT_RECONCILIATION_QC.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261019_0230_CP187_W1_STALE_COUNT_RECONCILIATION_QC.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1150-L1150)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `540f567b1003d211ef54333614f3910c1b9f9a5ee3a0aa9521dc5d497030ea20`
+  元パス <code>rea_lab/decomp_task/REA_20261019_0230_CP187_W1_STALE_COUNT_RECONCILIATION_QC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1150-L1150)。
 
 - [REA-20261019-0133-TROOP-CALLFRAME-METADATA-01｜死亡経由TroopUpdateの呼出元PCとABI情報の欠落監査](../../research/recovered/rea_batch11/reports/REA_20261019_0133_TROOP_CALLFRAME_METADATA_QC.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261019_0133_TROOP_CALLFRAME_METADATA_QC.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1151-L1151)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `260e6979a877e4829c0dfdce21e30095d20fffcfe01647b31bbd4f9f4962b594`
+  元パス <code>rea_lab/decomp_task/REA_20261019_0133_TROOP_CALLFRAME_METADATA_QC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1151-L1151)。
 
 - [REA-20261018-2340-DEATH-SELECTION-PREFIX-CROSSCHECK-01｜選択解除の前半書込とWork静的整合](../../research/recovered/rea_batch11/reports/REA_20261018_2340_DEATH_SELECTION_PREFIX_CONTRACT_CROSSCHECK_QC.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261018_2340_DEATH_SELECTION_PREFIX_CONTRACT_CROSSCHECK_QC.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1152-L1152)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `9265729f4a71d0ebf690a0cb52ceca912f42860b0d5460ba155e3cb2d9715fad`
+  元パス <code>rea_lab/decomp_task/REA_20261018_2340_DEATH_SELECTION_PREFIX_CONTRACT_CROSSCHECK_QC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1152-L1152)。
 
 - [REA-20261018-21H-TROOP-MODE2-AFTER-SELECTION-01｜527ED0帰還後に残るmode2 Task解除](../../research/recovered/rea_batch11/reports/REA_20261018_21H_TROOP_MODE2_AFTER_SELECTION_CONTINUATION_QC.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261018_21H_TROOP_MODE2_AFTER_SELECTION_CONTINUATION_QC.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1153-L1153)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `8cd0cf743d76ea8ff81fd832787d7c69e73707e0610195add059705a63a6bd9e`
+  元パス <code>rea_lab/decomp_task/REA_20261018_21H_TROOP_MODE2_AFTER_SELECTION_CONTINUATION_QC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1153-L1153)。
 
 - [REA-20261018-2034-TROOP-HEAD-FLAG-SECOND-UPDATE-01｜死亡後段の部隊先頭・選択フラグ再読の静的接続](../../research/recovered/rea_batch11/reports/REA_20261018_2034_TROOP_HEAD_FLAG_SECOND_UPDATE_QC.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261018_2034_TROOP_HEAD_FLAG_SECOND_UPDATE_QC.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1154-L1154)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `4a6e65eee19cab8b21c5519eccfaaf8af3087683028d2d4d2163ef1919189516`
+  元パス <code>rea_lab/decomp_task/REA_20261018_2034_TROOP_HEAD_FLAG_SECOND_UPDATE_QC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1154-L1154)。
 
 - [REA-20261018-1935-TROOP-SELECTION-SINGLE-BINDING-01 \| 選択解除bindingの寿命と二度目の呼出条件](../../research/recovered/rea_batch11/reports/REA_20261018_1935_TROOP_SELECTION_SINGLE_BINDING_QC.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261018_1935_TROOP_SELECTION_SINGLE_BINDING_QC.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1155-L1155)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `f95d357f4ea5671998679a2da28e7809889ccb1ff35e7caec9e9a466a3cd9fc7`
+  元パス <code>rea_lab/decomp_task/REA_20261018_1935_TROOP_SELECTION_SINGLE_BINDING_QC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1155-L1155)。
 
 - [REA-20261018-1833-TROOP-UI-PHASE-DEADEND-01｜死亡後段の部隊UI解除・復帰階層](../../research/recovered/rea_batch11/reports/REA_20261018_1833_TROOP_UI_SELECTION_PHASE_DEADEND_QC.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261018_1833_TROOP_UI_SELECTION_PHASE_DEADEND_QC.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1156-L1156)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `0c21172736db9d44fb8132b1fa539a7a0dab1babb0a17f59a7ac796cb1ee5313`
+  元パス <code>rea_lab/decomp_task/REA_20261018_1833_TROOP_UI_SELECTION_PHASE_DEADEND_QC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1156-L1156)。
 
 - [REA-20261018-1530-DEATH-DETACH-NOHIT-SCOPE-01｜41E160非一致と外側死亡処理の完了範囲](../../research/recovered/rea_batch11/reports/REA_20261018_1530_DEATH_DETACH_NOHIT_SCOPE_QC.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261018_1530_DEATH_DETACH_NOHIT_SCOPE_QC.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1157-L1157)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `24e7a780481a30265f58fbffe60bcb366f8bbcb2b4bf94b4cfbd5948778b1ea9`
+  元パス <code>rea_lab/decomp_task/REA_20261018_1530_DEATH_DETACH_NOHIT_SCOPE_QC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1157-L1157)。
 
 - [REA-20261018-14H-DEATH-DETACH-CALLSITE-PC-01｜死亡後段41E160呼出元復帰PCと既存UnitWindowRegistryの別契約](../../research/recovered/rea_batch11/reports/REA_20261018_14H_DEATH_DETACH_CALLSITE_RETURN_PC_GATE_QC.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261018_14H_DEATH_DETACH_CALLSITE_RETURN_PC_GATE_QC.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1158-L1158)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `98782235e090b3e56a36ae4090cad413ea81ef0936def803c921578e48a5c1cb`
+  元パス <code>rea_lab/decomp_task/REA_20261018_14H_DEATH_DETACH_CALLSITE_RETURN_PC_GATE_QC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1158-L1158)。
 
 - [REA-20261018-1335-DEATH-UNITFLASH8-REGISTRY-COVERAGE-01｜死亡後段UnitFlash8枠とWork window登録の対応未証明](../../research/recovered/rea_batch11/reports/REA_20261018_1335_DEATH_UNITFLASH8_REGISTRY_COVERAGE_QC.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261018_1335_DEATH_UNITFLASH8_REGISTRY_COVERAGE_QC.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1159-L1159)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `ef6669100f265d444ecff58377f8272644df596349b0ec030ff5f2549586c26d`
+  元パス <code>rea_lab/decomp_task/REA_20261018_1335_DEATH_UNITFLASH8_REGISTRY_COVERAGE_QC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1159-L1159)。
 
 - [REA-20261018-0936-DEATH-MANAGER-PREBIND-GATE-01｜通常死亡graphでTask/Render/Spatial registryを後付けできない境界](../../research/recovered/rea_batch11/reports/REA_20261018_0936_DEATH_MANAGER_PREBIND_GATE_QC.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261018_0936_DEATH_MANAGER_PREBIND_GATE_QC.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1160-L1160)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `4397886494d69dd6774019f50c263dab4a0073405924965f98086f77ed73e05d`
+  元パス <code>rea_lab/decomp_task/REA_20261018_0936_DEATH_MANAGER_PREBIND_GATE_QC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1160-L1160)。
 
 - [REA-20261018-0833-DEATH-GRAPH-PHASE-CROSSAPI-01｜通常死亡graphのセッション位相と既存解除APIの接続境界](../../research/recovered/rea_batch11/reports/REA_20261018_0833_GRAPH_PHASE_API_COMPOSITION_GATE_QC.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261018_0833_GRAPH_PHASE_API_COMPOSITION_GATE_QC.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1161-L1161)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `c7571ac74904f0ab9eb868bc1cc0b7d0666288257afcfa9df8228d4ffa09a6bf`
+  元パス <code>rea_lab/decomp_task/REA_20261018_0833_GRAPH_PHASE_API_COMPOSITION_GATE_QC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1161-L1161)。
 
 - [REA-20261018-0730-POSTLETHAL-PROBE-RECOVERY-01｜独立REA 許可済み証拠監査と失敗記録](../../research/recovered/rea_batch11/reports/REA_20261018_0730_POSTLETHAL_LITERAL_PROBE_RECOVERY_AND_PROGRESS_QC.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261018_0730_POSTLETHAL_LITERAL_PROBE_RECOVERY_AND_PROGRESS_QC.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1162-L1162)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `35e8ab43f18eac35bf496400e48d0d348c079d71779ab5bafa39d8d8b9d9ce38`
+  元パス <code>rea_lab/decomp_task/REA_20261018_0730_POSTLETHAL_LITERAL_PROBE_RECOVERY_AND_PROGRESS_QC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1162-L1162)。
 
 - [REA-20261018-0638-T014-GWRITE-OPENFAIL-VM-CONTINUE-01](../../research/recovered/rea_batch11/reports/REA_20261018_0638_T014_GWRITE_OPENFAIL_VM_CONTINUE_QC.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261018_0638_T014_GWRITE_OPENFAIL_VM_CONTINUE_QC.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1163-L1163)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `0df7f2cd9e321ecfc892fdcf703e988803b975f3ed506db33dd7804ab9fe13cf`
+  元パス <code>rea_lab/decomp_task/REA_20261018_0638_T014_GWRITE_OPENFAIL_VM_CONTINUE_QC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1163-L1163)。
 
 - [REA-20261018-0536-T014-OPEN-FAIL-ASYMMETRY-01｜global.sav reader/writerのopen失敗分岐](../../research/recovered/rea_batch11/reports/REA_20261018_0536_GLOBAL_SAV_OPEN_FAILURE_ASYMMETRY_QC.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261018_0536_GLOBAL_SAV_OPEN_FAILURE_ASYMMETRY_QC.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1164-L1164)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `321d048682ae2a513eaa6cedcc49ef0481061dfd9c889c8053e1ac0aed2074ee`
+  元パス <code>rea_lab/decomp_task/REA_20261018_0536_GLOBAL_SAV_OPEN_FAILURE_ASYMMETRY_QC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1164-L1164)。
 
 - [REA-20261018-0236-DOT54-OWNER-RETURN-GATE-01｜死亡GraphのDot v+54復帰契約](../../research/recovered/rea_batch11/reports/REA_20261018_0236_DOT54_OWNER_RETURN_GATE_QC.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261018_0236_DOT54_OWNER_RETURN_GATE_QC.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1165-L1165)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `3487f23d8c267b9eb7fac98a7cd27bd4882a8bee5eaf0f63ae17570fb4a31968`
+  元パス <code>rea_lab/decomp_task/REA_20261018_0236_DOT54_OWNER_RETURN_GATE_QC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1165-L1165)。
 
 - [REA-20261018-0035-DEATH-GRAPH-REENTRY-GATE-01｜通常死亡graph継続APIの再入条件不一致](../../research/recovered/rea_batch11/reports/REA_20261018_0035_NORMAL_GRAPH_REENTRY_GATE_QC.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261018_0035_NORMAL_GRAPH_REENTRY_GATE_QC.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1166-L1166)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `7794c22617bca519aee8377739bdc4c08289344214950ab8c9d2573c7c65d486`
+  元パス <code>rea_lab/decomp_task/REA_20261018_0035_NORMAL_GRAPH_REENTRY_GATE_QC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1166-L1166)。
 
 - [REA-20261017-18H-T014-470700-EAX-OUTPUT-01｜数値readerの正常帰還レジスタを既保存証拠で照合](../../research/recovered/rea_batch11/reports/REA_20261017_T014_NUMERIC_OUTPUT_RETURN_REGISTER_QC.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261017_T014_NUMERIC_OUTPUT_RETURN_REGISTER_QC.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1167-L1167)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `391d7a95b1920002a8e70d34a54dd1613de04276672c7bb28aa9c3aa97f1d3a2`
+  元パス <code>rea_lab/decomp_task/REA_20261017_T014_NUMERIC_OUTPUT_RETURN_REGISTER_QC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1167-L1167)。
 
 - [REA-20261017-2335-CP176-COUNT-AND-PREFLIGHT-01｜最新E表示とREA保存runの差分確認](../../research/recovered/rea_batch11/reports/REA_20261017_2335_CP176_STALE_PROGRESS_AND_PREFLIGHT_GATE_QC.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261017_2335_CP176_STALE_PROGRESS_AND_PREFLIGHT_GATE_QC.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1168-L1168)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `2c927be1d4a73ee125ba530755b6eb353d5774a95a418f37d2f0f63845d643a6`
+  元パス <code>rea_lab/decomp_task/REA_20261017_2335_CP176_STALE_PROGRESS_AND_PREFLIGHT_GATE_QC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1168-L1168)。
 
 - [REA-20261017-22H-DEATH-WORLD-RECAPTURE-01 \| Normal death three embedded windows: world-pointer capture stages](../../research/recovered/rea_batch11/reports/REA_20261017_22H_DEATH_WINDOW_WORLD_RECAPTURE_QC.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261017_22H_DEATH_WINDOW_WORLD_RECAPTURE_QC.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1169-L1169)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `ac12aaa61efc4fae071ee5d4b8e07232f6f8ed0dc7d497ed5dcf4892204569a8`
+  元パス <code>rea_lab/decomp_task/REA_20261017_22H_DEATH_WINDOW_WORLD_RECAPTURE_QC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1169-L1169)。
 
 - [REA-20261017-2033-TASK-UNREGISTER-NOOP-RECEIPT-01｜Work task解除actionの無変更成功ログ境界](../../research/recovered/rea_batch11/reports/REA_20261017_2033_TASK_UNREGISTER_NOOP_RECEIPT_QC.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261017_2033_TASK_UNREGISTER_NOOP_RECEIPT_QC.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1170-L1170)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `ec9fc7b751f80a8688aee06acd5a344bac7a385c54bc8108456d53ca5c0a6099`
+  元パス <code>rea_lab/decomp_task/REA_20261017_2033_TASK_UNREGISTER_NOOP_RECEIPT_QC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1170-L1170)。
 
 - [REA-20261017-1936-W6-DEATH-TREE-01｜Wave6共通tree候補と通常死亡FlashObj callerの独立接続](../../research/recovered/rea_batch11/reports/REA_20261017_1936_WAVE6_SHARED_TREE_CALLERS_QC.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261017_1936_WAVE6_SHARED_TREE_CALLERS_QC.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1171-L1171)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `9a5b3699ba498135b0cad8c3273c966b1084ef7acba90b9b1d01406df8c81818`
+  元パス <code>rea_lab/decomp_task/REA_20261017_1936_WAVE6_SHARED_TREE_CALLERS_QC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1171-L1171)。
 
 - [REA-20261017-1635-CP170-COUNT-QC-01｜MASTER checkpoint170のREA旧表示と保存済み静的証拠の差](../../research/recovered/rea_batch11/reports/REA_20261017_1635_MASTER170_STATIC_COUNT_RECONCILIATION.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261017_1635_MASTER170_STATIC_COUNT_RECONCILIATION.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1172-L1172)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `865e5d0b0fb245644a2fde49c33a2f57d0ddcbe17820c1cc6f9c38591de34e3a`
+  元パス <code>rea_lab/decomp_task/REA_20261017_1635_MASTER170_STATIC_COUNT_RECONCILIATION.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1172-L1172)。
 
 - [REA-20261017-1340-447150-STACK-REUSE-01｜447150の別callerにおける戻りqwordとstack-slot再利用](../../research/recovered/rea_batch11/reports/REA_20261017_1340_447150_STACK_REUSE_CROSSCALL.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261017_1340_447150_STACK_REUSE_CROSSCALL.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1173-L1173)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `958a309674d18257ee4c0ddaf838111373540766aa9f0905ef217a4226cd5eb5`
+  元パス <code>rea_lab/decomp_task/REA_20261017_1340_447150_STACK_REUSE_CROSSCALL.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1173-L1173)。
 
 - [REA-20261017-1238-DIRECT-POINT-ORIGIN-01｜virtual+0x80直行枝の2点入力の元データ](../../research/recovered/rea_batch11/reports/REA_20261017_1238_DIRECT_BRANCH_POINT_ORIGIN_CROSSWALK.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261017_1238_DIRECT_BRANCH_POINT_ORIGIN_CROSSWALK.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1174-L1174)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `f46d88652c3c65baed5a868f61d3858a77043126fe5d8adf352579a79a3c5f63`
+  元パス <code>rea_lab/decomp_task/REA_20261017_1238_DIRECT_BRANCH_POINT_ORIGIN_CROSSWALK.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1174-L1174)。
 
 - [REA-20261017-1133-AUX-POINT-447150-QWORD-01｜補助枝point A/B→447150→547FC0のcaller側データ経路](../../research/recovered/rea_batch11/reports/REA_20261017_1133_AUX_GEOMETRY_QWORD_CALLSITE_CROSSWALK.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261017_1133_AUX_GEOMETRY_QWORD_CALLSITE_CROSSWALK.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1175-L1175)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `abe729812798280b4a7ac09be85360891f37c23c8aef9be85f6a5fb33d65466c`
+  元パス <code>rea_lab/decomp_task/REA_20261017_1133_AUX_GEOMETRY_QWORD_CALLSITE_CROSSWALK.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1175-L1175)。
 
 - [REA-20261016-1430-AUX-POSTLOOP-STATUS-01｜補助反復後のvirtual継続と戻り値](../../research/recovered/rea_batch11/reports/REA_20261016_1430_AUX_POSTLOOP_VTABLE_STATUS.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261016_1430_AUX_POSTLOOP_VTABLE_STATUS.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1176-L1176)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `ec9ec0781ee5b709f6c1c7d030518959a0484cffa457fdc1ef50b6c062a7d366`
+  元パス <code>rea_lab/decomp_task/REA_20261016_1430_AUX_POSTLOOP_VTABLE_STATUS.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1176-L1176)。
 
 - [REA-20261016-1034-REPEAT-ARITY-01 \| T012/T013](../../research/recovered/rea_batch11/reports/REA_20261016_1034_REPEAT_ABI_BRANCH_AUDIT.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261016_1034_REPEAT_ABI_BRANCH_AUDIT.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1177-L1177)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `070e32b44d289fce35cc803da623919ecd728e3a702c87f15b34bfb754843f4d`
+  元パス <code>rea_lab/decomp_task/REA_20261016_1034_REPEAT_ABI_BRANCH_AUDIT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1177-L1177)。
 
 - [REA-20261016-0040-PREV58-AUX-GATE-CROSSCALL-01](../../research/recovered/rea_batch11/reports/REA_20261016_0040_PRE_V58_AUX_GATE_CROSSCALL.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261016_0040_PRE_V58_AUX_GATE_CROSSCALL.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1178-L1178)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `e49c33943e2846387baca55a2f0ed959d43426e99e28e880f42cccf19862ac2f`
+  元パス <code>rea_lab/decomp_task/REA_20261016_0040_PRE_V58_AUX_GATE_CROSSCALL.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1178-L1178)。
 
 - [REA-20261015-COUNT-LITERAL-ALIAS-CORRECTION-01](../../research/recovered/rea_batch11/reports/REA_20261015_COUNT_LITERAL_ALIAS_CORRECTION.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261015_COUNT_LITERAL_ALIAS_CORRECTION.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1179-L1179)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `ac2b87dfdf14d6e39fec2cafbbc2fda8596d1c0ad07c36221fbb8e99b2f509b1`
+  元パス <code>rea_lab/decomp_task/REA_20261015_COUNT_LITERAL_ALIAS_CORRECTION.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1179-L1179)。
 
 - [REA-20261015-2240-POSTLETHAL-EVENT-FLAG-ABI-01](../../research/recovered/rea_batch11/reports/REA_20261015_2240_POSTLETHAL_EVENT_FLAG_ABI.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261015_2240_POSTLETHAL_EVENT_FLAG_ABI.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1180-L1180)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `453e9adb53c7c42109f6d4efa92ac3fef38acebd2d48a6d05c7b85fd58c0c9ae`
+  元パス <code>rea_lab/decomp_task/REA_20261015_2240_POSTLETHAL_EVENT_FLAG_ABI.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1180-L1180)。
 
 - [REA-20261015-2137-POSTLETHAL-STACK-STRING-EPILOGUE-01](../../research/recovered/rea_batch11/reports/REA_20261015_2137_POSTLETHAL_STACK_STRING_EPILOGUE.md?plain=1#L1-L1) — `research/recovered/rea_batch11/reports/REA_20261015_2137_POSTLETHAL_STACK_STRING_EPILOGUE.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1181-L1181)。制約・訂正 Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
   本文 SHA256 `fb37001640b826fc469a0124244cf5e905d8df6db050df58250ef7d0217a9329`
+  元パス <code>rea_lab/decomp_task/REA_20261015_2137_POSTLETHAL_STACK_STRING_EPILOGUE.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1181-L1181)。
 
 - [B_OFFLINE_20261101_08H_GROUP1E_CALLSITE_EVIDENCE.json](../../research/recovered/json_evidence2/archive/B_OFFLINE_20261101_08H_GROUP1E_CALLSITE_EVIDENCE.json?plain=1#L1-L1) — `research/recovered/json_evidence2/archive/B_OFFLINE_20261101_08H_GROUP1E_CALLSITE_EVIDENCE.json`
   回収状態 LOCAL_EXACT_JSON_RECOVERY_VERIFIED。以前の収録状況 CATALOG_AND_JSON_RECEIPT_LINK_ONLY_BASE_691bd90e。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1182-L1182)。制約・訂正 Historical saved author observations/claims only; native windows and PASS counts not independently validated; no new runtime/Golden/READY/ABI; referenced payloads unopened
   本文 SHA256 `da11de92b73d127824d99a8d42e89c4747312d339c0f47b64981a2fea066aac3`
+  元パス <code>data/B_OFFLINE_20261101_08H_GROUP1E_CALLSITE_EVIDENCE.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1182-L1182)。
 
 - [B_OFFLINE_20261101_09H_GROUP34_WEIGHTED_SQRT_EVIDENCE.json](../../research/recovered/json_evidence2/archive/B_OFFLINE_20261101_09H_GROUP34_WEIGHTED_SQRT_EVIDENCE.json?plain=1#L1-L1) — `research/recovered/json_evidence2/archive/B_OFFLINE_20261101_09H_GROUP34_WEIGHTED_SQRT_EVIDENCE.json`
   回収状態 LOCAL_EXACT_JSON_RECOVERY_VERIFIED。以前の収録状況 CATALOG_AND_JSON_RECEIPT_LINK_ONLY_BASE_691bd90e。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1183-L1183)。制約・訂正 Historical saved author observations/claims only; native windows and PASS counts not independently validated; no new runtime/Golden/READY/ABI; referenced payloads unopened
   本文 SHA256 `6af7899aa29f10acf63be9806d1a30c79644615dbcd717af2f435017d678a1ac`
+  元パス <code>data/B_OFFLINE_20261101_09H_GROUP34_WEIGHTED_SQRT_EVIDENCE.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1183-L1183)。
 
 - [B_OFFLINE_20261101_10H_GROUP34_PROXIMITY_EVIDENCE.json](../../research/recovered/json_evidence2/archive/B_OFFLINE_20261101_10H_GROUP34_PROXIMITY_EVIDENCE.json?plain=1#L1-L1) — `research/recovered/json_evidence2/archive/B_OFFLINE_20261101_10H_GROUP34_PROXIMITY_EVIDENCE.json`
   回収状態 LOCAL_EXACT_JSON_RECOVERY_VERIFIED。以前の収録状況 CATALOG_AND_JSON_RECEIPT_LINK_ONLY_BASE_691bd90e。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1184-L1184)。制約・訂正 Historical saved author observations/claims only; native windows and PASS counts not independently validated; no new runtime/Golden/READY/ABI; referenced payloads unopened
   本文 SHA256 `562415c00b07730547e0bfc92f693503414cc742453c60f95bff8a7e2cb1ce9d`
+  元パス <code>data/B_OFFLINE_20261101_10H_GROUP34_PROXIMITY_EVIDENCE.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1184-L1184)。
 
 - [B_OFFLINE_20261101_11H_GROUP34_DUAL_BUCKET_EVIDENCE.json](../../research/recovered/json_evidence2/archive/B_OFFLINE_20261101_11H_GROUP34_DUAL_BUCKET_EVIDENCE.json?plain=1#L1-L1) — `research/recovered/json_evidence2/archive/B_OFFLINE_20261101_11H_GROUP34_DUAL_BUCKET_EVIDENCE.json`
   回収状態 LOCAL_EXACT_JSON_RECOVERY_VERIFIED。以前の収録状況 CATALOG_AND_JSON_RECEIPT_LINK_ONLY_BASE_691bd90e。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1185-L1185)。制約・訂正 Historical saved author observations/claims only; native windows and PASS counts not independently validated; no new runtime/Golden/READY/ABI; referenced payloads unopened
   本文 SHA256 `c3e4c3e609e31622a0e4f3b41b2b55f1b0a100909f77b533905fb726d64eec48`
+  元パス <code>data/B_OFFLINE_20261101_11H_GROUP34_DUAL_BUCKET_EVIDENCE.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1185-L1185)。
 
 - [B_OFFLINE_20261101_12H_MODE3_DUAL_LIST_EVIDENCE.json](../../research/recovered/json_evidence2/archive/B_OFFLINE_20261101_12H_MODE3_DUAL_LIST_EVIDENCE.json?plain=1#L1-L1) — `research/recovered/json_evidence2/archive/B_OFFLINE_20261101_12H_MODE3_DUAL_LIST_EVIDENCE.json`
   回収状態 LOCAL_EXACT_JSON_RECOVERY_VERIFIED。以前の収録状況 CATALOG_AND_JSON_RECEIPT_LINK_ONLY_BASE_691bd90e。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1186-L1186)。制約・訂正 Historical saved author observations/claims only; native windows and PASS counts not independently validated; no new runtime/Golden/READY/ABI; referenced payloads unopened
   本文 SHA256 `67bec765d345a0b1023605517790b18e0efd711ec39f95662a8fb96f56fe47fe`
+  元パス <code>data/B_OFFLINE_20261101_12H_MODE3_DUAL_LIST_EVIDENCE.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1186-L1186)。
 
 - [B_OFFLINE_20261101_13H_DISTANCE_SORT_EVIDENCE.json](../../research/recovered/json_evidence2/archive/B_OFFLINE_20261101_13H_DISTANCE_SORT_EVIDENCE.json?plain=1#L1-L1) — `research/recovered/json_evidence2/archive/B_OFFLINE_20261101_13H_DISTANCE_SORT_EVIDENCE.json`
   回収状態 LOCAL_EXACT_JSON_RECOVERY_VERIFIED。以前の収録状況 CATALOG_AND_JSON_RECEIPT_LINK_ONLY_BASE_691bd90e。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1187-L1187)。制約・訂正 Historical saved author observations/claims only; native windows and PASS counts not independently validated; no new runtime/Golden/READY/ABI; referenced payloads unopened
   本文 SHA256 `1c2030f7a1d8eb12a5e97f51509c70fa1ba25add600c271a5da23516939a0205`
+  元パス <code>data/B_OFFLINE_20261101_13H_DISTANCE_SORT_EVIDENCE.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1187-L1187)。
 
 - [B_OFFLINE_20261101_14H_DISTANCE_BOUNDARY_EVIDENCE.json](../../research/recovered/json_evidence2/archive/B_OFFLINE_20261101_14H_DISTANCE_BOUNDARY_EVIDENCE.json?plain=1#L1-L1) — `research/recovered/json_evidence2/archive/B_OFFLINE_20261101_14H_DISTANCE_BOUNDARY_EVIDENCE.json`
   回収状態 LOCAL_EXACT_JSON_RECOVERY_VERIFIED。以前の収録状況 CATALOG_AND_JSON_RECEIPT_LINK_ONLY_BASE_691bd90e。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1188-L1188)。制約・訂正 Historical saved author observations/claims only; native windows and PASS counts not independently validated; no new runtime/Golden/READY/ABI; referenced payloads unopened
   本文 SHA256 `9941de16cb1eb58d894edcdca4846e058976ee4093c6d4c2a604512124ebb392`
+  元パス <code>data/B_OFFLINE_20261101_14H_DISTANCE_BOUNDARY_EVIDENCE.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1188-L1188)。
 
 - [B_OFFLINE_20261101_15H_NAN_COMPARATOR_ORDER_EVIDENCE.json](../../research/recovered/json_evidence2/archive/B_OFFLINE_20261101_15H_NAN_COMPARATOR_ORDER_EVIDENCE.json?plain=1#L1-L1) — `research/recovered/json_evidence2/archive/B_OFFLINE_20261101_15H_NAN_COMPARATOR_ORDER_EVIDENCE.json`
   回収状態 LOCAL_EXACT_JSON_RECOVERY_VERIFIED。以前の収録状況 CATALOG_AND_JSON_RECEIPT_LINK_ONLY_BASE_691bd90e。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1189-L1189)。制約・訂正 Historical saved author observations/claims only; native windows and PASS counts not independently validated; no new runtime/Golden/READY/ABI; referenced payloads unopened
   本文 SHA256 `8c9924cec3099c2e1f018ce9c227b679aadc6ae5c1aebf33ceeb8758975cb1aa`
+  元パス <code>data/B_OFFLINE_20261101_15H_NAN_COMPARATOR_ORDER_EVIDENCE.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1189-L1189)。
 
 - [B_OFFLINE_20261101_16H_MIDPOINT_SAR_EVIDENCE.json](../../research/recovered/json_evidence2/archive/B_OFFLINE_20261101_16H_MIDPOINT_SAR_EVIDENCE.json?plain=1#L1-L1) — `research/recovered/json_evidence2/archive/B_OFFLINE_20261101_16H_MIDPOINT_SAR_EVIDENCE.json`
   回収状態 LOCAL_EXACT_JSON_RECOVERY_VERIFIED。以前の収録状況 CATALOG_AND_JSON_RECEIPT_LINK_ONLY_BASE_691bd90e。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1190-L1190)。制約・訂正 Historical saved author observations/claims only; native windows and PASS counts not independently validated; no new runtime/Golden/READY/ABI; referenced payloads unopened
   本文 SHA256 `b5418108b0016a83a90dd0480e3a1cb5bf7694bf42fb9ad2af31d87492290219`
+  元パス <code>data/B_OFFLINE_20261101_16H_MIDPOINT_SAR_EVIDENCE.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1190-L1190)。
 
 - [REA-20261015-1945-STATUS-GATE-01｜独立REAの更新前提と作業再開境界](../../research/recovered/rea_batch12/reports/REA_20261015_1945_STATUS_AND_NEXT_CHECKPOINT.md?plain=1#L1-L1) — `research/recovered/rea_batch12/reports/REA_20261015_1945_STATUS_AND_NEXT_CHECKPOINT.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1191-L1191)。制約・訂正 Historical STATIC/SAVED/DERIVED/SYNTHETIC/VERIFY and progress claims only; current curated REF priority; no new native/runtime/READY/Golden validation; linked payloads excluded
   本文 SHA256 `11b1c3a91634d3a86b919c7137b560afd1c86ee80428e2dd28ec5c17f083e0ac`
+  元パス <code>rea_lab/decomp_task/REA_20261015_1945_STATUS_AND_NEXT_CHECKPOINT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1191-L1191)。
 
 - [REA-20261015-1734-POSTLETHAL-STRING-EQUALITY-01｜死亡後hit処理の文字列等価ゲート](../../research/recovered/rea_batch12/reports/REA_20261015_1734_POSTLETHAL_STRING_EQUALITY_GATE.md?plain=1#L1-L1) — `research/recovered/rea_batch12/reports/REA_20261015_1734_POSTLETHAL_STRING_EQUALITY_GATE.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1192-L1192)。制約・訂正 Historical STATIC/SAVED/DERIVED/SYNTHETIC/VERIFY and progress claims only; current curated REF priority; no new native/runtime/READY/Golden validation; linked payloads excluded
   本文 SHA256 `ab2631905c4c05bfb7716f2d47d2e96eb1270761c306e1495cbd74bc48bdb83a`
+  元パス <code>rea_lab/decomp_task/REA_20261015_1734_POSTLETHAL_STRING_EQUALITY_GATE.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1192-L1192)。
 
 - [REA-20261015-1640-LETHAL-POST-DISABLE-BRANCH-01｜通常致死のdisable後も残るhandler帰還](../../research/recovered/rea_batch12/reports/REA_20261015_1640_LETHAL_POST_DISABLE_BRANCH.md?plain=1#L1-L1) — `research/recovered/rea_batch12/reports/REA_20261015_1640_LETHAL_POST_DISABLE_BRANCH.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1193-L1193)。制約・訂正 Historical STATIC/SAVED/DERIVED/SYNTHETIC/VERIFY and progress claims only; current curated REF priority; no new native/runtime/READY/Golden validation; linked payloads excluded
   本文 SHA256 `2945bb59358cb2a6db7e117ab16aeab36a048dec34f7a25d01a82e866d34b4c8`
+  元パス <code>rea_lab/decomp_task/REA_20261015_1640_LETHAL_POST_DISABLE_BRANCH.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1193-L1193)。
 
 - [REA-20261015-1537-TICK-DEC32-FLAGS-01｜Unit+1E520 counterのx86 DEC32境界](../../research/recovered/rea_batch12/reports/REA_20261015_1537_TICK_DEC32_FLAGS_BOUNDARY.md?plain=1#L1-L1) — `research/recovered/rea_batch12/reports/REA_20261015_1537_TICK_DEC32_FLAGS_BOUNDARY.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1194-L1194)。制約・訂正 Historical STATIC/SAVED/DERIVED/SYNTHETIC/VERIFY and progress claims only; current curated REF priority; no new native/runtime/READY/Golden validation; linked payloads excluded
   本文 SHA256 `a6786725df20e596b5eeee8f2cc7c8320da9d95267c06e5843fe7647a8087884`
+  元パス <code>rea_lab/decomp_task/REA_20261015_1537_TICK_DEC32_FLAGS_BOUNDARY.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1194-L1194)。
 
 - [REA-20261015-1440-TICK-EXPIRY-TREE-ERASE-VS-ADVANCE-01｜0x57B380木iteratorの変更/削除経路の区別](../../research/recovered/rea_batch12/reports/REA_20261015_1440_TICK_EXPIRY_TREE_ERASE_VS_ADVANCE.md?plain=1#L1-L1) — `research/recovered/rea_batch12/reports/REA_20261015_1440_TICK_EXPIRY_TREE_ERASE_VS_ADVANCE.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1195-L1195)。制約・訂正 Historical STATIC/SAVED/DERIVED/SYNTHETIC/VERIFY and progress claims only; current curated REF priority; no new native/runtime/READY/Golden validation; linked payloads excluded
   本文 SHA256 `2b626fcb4691ce73bdce88d2f23f51339e163ed78e9d12ddf60466ccfda47fa0`
+  元パス <code>rea_lab/decomp_task/REA_20261015_1440_TICK_EXPIRY_TREE_ERASE_VS_ADVANCE.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1195-L1195)。
 
 - [REA-20261015-1340-TICK-EXPIRY-MAP-INSERT-XREF-01｜0x57B380保存済み中間呼出の照合](../../research/recovered/rea_batch12/reports/REA_20261015_1340_TICK_EXPIRY_MAP_INSERT_XREF.md?plain=1#L1-L1) — `research/recovered/rea_batch12/reports/REA_20261015_1340_TICK_EXPIRY_MAP_INSERT_XREF.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1196-L1196)。制約・訂正 Historical STATIC/SAVED/DERIVED/SYNTHETIC/VERIFY and progress claims only; current curated REF priority; no new native/runtime/READY/Golden validation; linked payloads excluded
   本文 SHA256 `38bbece74914ba3ca8c689ca889b009b9b496bb2a13001b2f099355706e724ab`
+  元パス <code>rea_lab/decomp_task/REA_20261015_1340_TICK_EXPIRY_MAP_INSERT_XREF.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1196-L1196)。
 
 - [REA-20261015-1238-TICK-EXPIRY-EARLY-RETURN-GATES-01｜0x57B380保存済み早期returnゲート](../../research/recovered/rea_batch12/reports/REA_20261015_1238_TICK_EXPIRY_EARLY_RETURN_GATES.md?plain=1#L1-L1) — `research/recovered/rea_batch12/reports/REA_20261015_1238_TICK_EXPIRY_EARLY_RETURN_GATES.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1197-L1197)。制約・訂正 Historical STATIC/SAVED/DERIVED/SYNTHETIC/VERIFY and progress claims only; current curated REF priority; no new native/runtime/READY/Golden validation; linked payloads excluded
   本文 SHA256 `43bf0c3229c6dd695b5618b0fbad3c9c13b7093f251dd71d6c6d31d7cc9c7ba5`
+  元パス <code>rea_lab/decomp_task/REA_20261015_1238_TICK_EXPIRY_EARLY_RETURN_GATES.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1197-L1197)。
 
 - [REA-20261015-1140-TICK-EXPIRY-XREF-CONTRACT-01｜Unit周期期限切れcallbackの既存Ghidra xrefs](../../research/recovered/rea_batch12/reports/REA_20261015_1140_TICK_EXPIRY_XREF_CONTRACT.md?plain=1#L1-L1) — `research/recovered/rea_batch12/reports/REA_20261015_1140_TICK_EXPIRY_XREF_CONTRACT.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1198-L1198)。制約・訂正 Historical STATIC/SAVED/DERIVED/SYNTHETIC/VERIFY and progress claims only; current curated REF priority; no new native/runtime/READY/Golden validation; linked payloads excluded
   本文 SHA256 `10fcf6f0adf8ce3a97ee8031b4cb542a00b718f6230561f497e4c6d8d8843975`
+  元パス <code>rea_lab/decomp_task/REA_20261015_1140_TICK_EXPIRY_XREF_CONTRACT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1198-L1198)。
 
 - [REA-20261015-1040-TICK-POSTCALL-TIMER-ORDER-01｜57AAFD以降のtimer ladderと副作用順序](../../research/recovered/rea_batch12/reports/REA_20261015_1040_TICK_POSTCALL_TIMER_ORDER.md?plain=1#L1-L1) — `research/recovered/rea_batch12/reports/REA_20261015_1040_TICK_POSTCALL_TIMER_ORDER.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1199-L1199)。制約・訂正 Historical STATIC/SAVED/DERIVED/SYNTHETIC/VERIFY and progress claims only; current curated REF priority; no new native/runtime/READY/Golden validation; linked payloads excluded
   本文 SHA256 `86f92cb8565e33df7f870f0fc395a0bdeeb1008a2bb47690052e7183c5a2964b`
+  元パス <code>rea_lab/decomp_task/REA_20261015_1040_TICK_POSTCALL_TIMER_ORDER.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1199-L1199)。
 
 - [REA-20261015-0540-REGEN-SENTINEL-AUX-GATE-01｜自然HP致死時のUnit+1E568・4E1950条件分岐](../../research/recovered/rea_batch12/reports/REA_20261015_0540_REGEN_SENTINEL_AUX_GATE.md?plain=1#L1-L1) — `research/recovered/rea_batch12/reports/REA_20261015_0540_REGEN_SENTINEL_AUX_GATE.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1200-L1200)。制約・訂正 Historical STATIC/SAVED/DERIVED/SYNTHETIC/VERIFY and progress claims only; current curated REF priority; no new native/runtime/READY/Golden validation; linked payloads excluded
   本文 SHA256 `c6e5f8007633d1238dd78de7729639e972f4bcc1f33a9ecc0d38fc97df4cf90b`
+  元パス <code>rea_lab/decomp_task/REA_20261015_0540_REGEN_SENTINEL_AUX_GATE.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1200-L1200)。
 
 - [REA-20261015-0435-REGEN-SENTINEL-INT32-EDGE-01｜自然HP負値→通常Unit hitのsigned32境界](../../research/recovered/rea_batch12/reports/REA_20261015_0435_REGEN_SENTINEL_INT32_EDGE.md?plain=1#L1-L1) — `research/recovered/rea_batch12/reports/REA_20261015_0435_REGEN_SENTINEL_INT32_EDGE.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1201-L1201)。制約・訂正 Historical STATIC/SAVED/DERIVED/SYNTHETIC/VERIFY and progress claims only; current curated REF priority; no new native/runtime/READY/Golden validation; linked payloads excluded
   本文 SHA256 `06728cac22eb9a82f1bc8911e37fd1417902dd2bd75e6649588a6fe65c078491`
+  元パス <code>rea_lab/decomp_task/REA_20261015_0435_REGEN_SENTINEL_INT32_EDGE.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1201-L1201)。
 
 - [REA-20261015-0345-REGEN-V70-NORMALVT-BRIDGE-01｜自然HP減少→通常Unit hit virtualの保存済み証拠クロスウォーク](../../research/recovered/rea_batch12/reports/REA_20261015_0345_REGEN_V70_NORMALVT_BRIDGE.md?plain=1#L1-L1) — `research/recovered/rea_batch12/reports/REA_20261015_0345_REGEN_V70_NORMALVT_BRIDGE.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1202-L1202)。制約・訂正 Historical STATIC/SAVED/DERIVED/SYNTHETIC/VERIFY and progress claims only; current curated REF priority; no new native/runtime/READY/Golden validation; linked payloads excluded
   本文 SHA256 `a3c426aac3069f9df95c58b504a4560bf29d8ef6685ef2cbd3d4b5301b5f5a8d`
+  元パス <code>rea_lab/decomp_task/REA_20261015_0345_REGEN_V70_NORMALVT_BRIDGE.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1202-L1202)。
 
 - [REA-20261015-0240-UNIT-REGEN-V70-ABI-01｜既存GhidraによるUnit自然HP減少の間接call ABI限定確認](../../research/recovered/rea_batch12/reports/REA_20261015_0240_UNIT_REGEN_V70_CALL_ABI.md?plain=1#L1-L1) — `research/recovered/rea_batch12/reports/REA_20261015_0240_UNIT_REGEN_V70_CALL_ABI.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1203-L1203)。制約・訂正 Historical STATIC/SAVED/DERIVED/SYNTHETIC/VERIFY and progress claims only; current curated REF priority; no new native/runtime/READY/Golden validation; linked payloads excluded
   本文 SHA256 `4dfb590294d1c9d8fcaa011b0e38cd113570c59926b5728f505b6a997f887258`
+  元パス <code>rea_lab/decomp_task/REA_20261015_0240_UNIT_REGEN_V70_CALL_ABI.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1203-L1203)。
 
 - [REA-20261015-0034-UNIT-DISABLED-TASK-LIFETIME-01｜通常Unit死亡中のTask受理条件の独立クロスウォーク](../../research/recovered/rea_batch12/reports/REA_20261015_0034_UNIT_DISABLED_TASK_LIFETIME_REVIEW.md?plain=1#L1-L1) — `research/recovered/rea_batch12/reports/REA_20261015_0034_UNIT_DISABLED_TASK_LIFETIME_REVIEW.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1204-L1204)。制約・訂正 Historical STATIC/SAVED/DERIVED/SYNTHETIC/VERIFY and progress claims only; current curated REF priority; no new native/runtime/READY/Golden validation; linked payloads excluded
   本文 SHA256 `c3103a2f9e9e23e2b628760e4d39a48c0188ca0f55613583fb3058a4f4a874e1`
+  元パス <code>rea_lab/decomp_task/REA_20261015_0034_UNIT_DISABLED_TASK_LIFETIME_REVIEW.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1204-L1204)。
 
 - [REA保存済み証拠の独立監査：event参加参照の三分岐slot選択 (2026-10-11 02時台 JST)](../../research/recovered/rea_legacy1/reports/REA_EVENT_FLAG_SLOT_MATRIX_20261011_0236.md?plain=1#L1-L1) — `research/recovered/rea_legacy1/reports/REA_EVENT_FLAG_SLOT_MATRIX_20261011_0236.md`
   回収状態 RECOVERED_COMPLETE_BYTE_IDENTICAL。以前の収録状況 NOT_IN_CATALOG_SNAPSHOT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1205-L1205)。制約・訂正 Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
   本文 SHA256 `98ac7e0e8c3d3a92f9c703411cfb83f9e23a3a1a2dbdde4b1a879d7196b82c78`
+  元パス <code>rea_lab/decomp_task/REA_EVENT_FLAG_SLOT_MATRIX_20261011_0236.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1205-L1205)。
 
 - [REA / eventシーンオブジェクト生成分岐の静的監査（2026-10-11 05時台 JST）](../../research/recovered/rea_legacy1/reports/REA_EVENT_SCENE_OBJECT_BRANCH_AUDIT_20261011_0534.md?plain=1#L1-L1) — `research/recovered/rea_legacy1/reports/REA_EVENT_SCENE_OBJECT_BRANCH_AUDIT_20261011_0534.md`
   回収状態 RECOVERED_COMPLETE_BYTE_IDENTICAL。以前の収録状況 NOT_IN_CATALOG_SNAPSHOT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1206-L1206)。制約・訂正 Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
   本文 SHA256 `1b1159747cb1574e7b73aef1a2c96b98adea0a0698a1e28f93397d0bdf6b7e56`
+  元パス <code>rea_lab/decomp_task/REA_EVENT_SCENE_OBJECT_BRANCH_AUDIT_20261011_0534.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1206-L1206)。
 
 - [迫真戦記 ver0.67｜REA独立STATIC監査（2026-10-21 15時台）](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261021_1530_T014_STREAM_BLOCK_COUNT_ASYMMETRY_AUDIT.md?plain=1#L1-L1) — `research/recovered/rea_legacy1/reports/REA_OFFLINE_20261021_1530_T014_STREAM_BLOCK_COUNT_ASYMMETRY_AUDIT.md`
   回収状態 RECOVERED_COMPLETE_BYTE_IDENTICAL。以前の収録状況 NOT_IN_CATALOG_SNAPSHOT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1207-L1207)。制約・訂正 Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
   本文 SHA256 `18b180ceb5ebbb67e40789ebd014c2536403ad5d2dcfd3744aab9a1172b6e4fb`
+  元パス <code>rea_lab/decomp_task/REA_OFFLINE_RECOVERED_20261029/files/REA_OFFLINE_20261021_1530_T014_STREAM_BLOCK_COUNT_ASYMMETRY_AUDIT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1207-L1207)。
 
 - [迫真戦記 ver0.67｜REA独立オフライン静的監査（2026年10月21日 16時台）](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261021_1633_T014_OSTREAM_EPILOGUE_THROW_GATE_AUDIT.md?plain=1#L1-L1) — `research/recovered/rea_legacy1/reports/REA_OFFLINE_20261021_1633_T014_OSTREAM_EPILOGUE_THROW_GATE_AUDIT.md`
   回収状態 RECOVERED_COMPLETE_BYTE_IDENTICAL。以前の収録状況 NOT_IN_CATALOG_SNAPSHOT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1208-L1208)。制約・訂正 Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
   本文 SHA256 `2bc611c4020138df5e6b350be5630e45b1e269fbc5e5540690c0a5b30f04403c`
+  元パス <code>rea_lab/decomp_task/REA_OFFLINE_RECOVERED_20261029/files/REA_OFFLINE_20261021_1633_T014_OSTREAM_EPILOGUE_THROW_GATE_AUDIT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1208-L1208)。
 
 - [迫真戦記 ver0.67 / REA独立T014：byte→DWORDセーブ形式のUnit 7連続フィールドと非正規wire再書込の境界](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_0937_T014_WIRE4_UNIT7_CANONICAL_AUDIT.md?plain=1#L1-L1) — `research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_0937_T014_WIRE4_UNIT7_CANONICAL_AUDIT.md`
   回収状態 RECOVERED_COMPLETE_BYTE_IDENTICAL。以前の収録状況 NOT_IN_CATALOG_SNAPSHOT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1209-L1209)。制約・訂正 Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
   本文 SHA256 `e99fd9d175a99805929f981a5c8ca5e68333ced6e439178051a31c940f3a7f40`
+  元パス <code>rea_lab/decomp_task/REA_OFFLINE_RECOVERED_20261029/files/REA_OFFLINE_20261022_0937_T014_WIRE4_UNIT7_CANONICAL_AUDIT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1209-L1209)。
 
 - [迫真戦記 ver0.67｜REA独立T014・byte wire4の実機械語ABIとUnit 7フィールド対称性](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1034_T014_BYTEWIRE_ABI_ASM_AUDIT.md?plain=1#L1-L1) — `research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1034_T014_BYTEWIRE_ABI_ASM_AUDIT.md`
   回収状態 RECOVERED_COMPLETE_BYTE_IDENTICAL。以前の収録状況 NOT_IN_CATALOG_SNAPSHOT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1210-L1210)。制約・訂正 Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
   本文 SHA256 `5a5282e6165f7d448644f4e58449a8068a4afbecf9a69aa9a0e1cd1fb2e4f191`
+  元パス <code>rea_lab/decomp_task/REA_OFFLINE_RECOVERED_20261029/files/REA_OFFLINE_20261022_1034_T014_BYTEWIRE_ABI_ASM_AUDIT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1210-L1210)。
 
 - [迫真戦記 ver0.67｜REA独立T014：連続byte読込の部分更新条件と呼出元所有権の静的確認](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1134_T014_PARTIAL_READ_OWNER_AUDIT.md?plain=1#L1-L1) — `research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1134_T014_PARTIAL_READ_OWNER_AUDIT.md`
   回収状態 RECOVERED_COMPLETE_BYTE_IDENTICAL。以前の収録状況 NOT_IN_CATALOG_SNAPSHOT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1211-L1211)。制約・訂正 Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
   本文 SHA256 `e252975fe1195295c5c28b8350e0b7075aba10e791056381e351be879b50b224`
+  元パス <code>rea_lab/decomp_task/REA_OFFLINE_RECOVERED_20261029/files/REA_OFFLINE_20261022_1134_T014_PARTIAL_READ_OWNER_AUDIT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1211-L1211)。
 
 - [迫真戦記 ver0.67｜REA独立T014：MSVC例外アンワインド／ヒープ読込失敗の局所証拠](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1230_T014_MSVC_EH_AUDIT.md?plain=1#L1-L1) — `research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1230_T014_MSVC_EH_AUDIT.md`
   回収状態 RECOVERED_COMPLETE_BYTE_IDENTICAL。以前の収録状況 NOT_IN_CATALOG_SNAPSHOT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1212-L1212)。制約・訂正 Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
   本文 SHA256 `a0abc5ebcdf32cef412c0cf8887976cc59fc1a9d6a22ecf6169dc91cc184fec3`
+  元パス <code>rea_lab/decomp_task/REA_OFFLINE_RECOVERED_20261029/files/REA_OFFLINE_20261022_1230_T014_MSVC_EH_AUDIT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1212-L1212)。
 
 - [迫真戦記 ver0.67｜REA独立T014：スタック所有オブジェクトの読込失敗時EH破棄経路](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1338_T014_STACK_EH_AUDIT.md?plain=1#L1-L1) — `research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1338_T014_STACK_EH_AUDIT.md`
   回収状態 RECOVERED_COMPLETE_BYTE_IDENTICAL。以前の収録状況 NOT_IN_CATALOG_SNAPSHOT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1213-L1213)。制約・訂正 Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
   本文 SHA256 `5896fa4ef41c3fc27969fd75e77388164629984628b88f4e024603fa8ab29858`
+  元パス <code>rea_lab/decomp_task/REA_OFFLINE_RECOVERED_20261029/files/REA_OFFLINE_20261022_1338_T014_STACK_EH_AUDIT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1213-L1213)。
 
 - [迫真戦記 ver0.67｜REA/T014 上位例外捕捉と仮想CALLの独立静的解析](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1433_T014_UPSTREAM_CATCH_AUDIT.md?plain=1#L1-L1) — `research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1433_T014_UPSTREAM_CATCH_AUDIT.md`
   回収状態 RECOVERED_COMPLETE_BYTE_IDENTICAL。以前の収録状況 NOT_IN_CATALOG_SNAPSHOT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1214-L1214)。制約・訂正 Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
   本文 SHA256 `359a3204956517b9ec4b019c183a2cc24a01d0fcf3723a6406620a1a6d48127d`
+  元パス <code>rea_lab/decomp_task/REA_OFFLINE_RECOVERED_20261029/files/REA_OFFLINE_20261022_1433_T014_UPSTREAM_CATCH_AUDIT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1214-L1214)。
 
 - [迫真戦記 ver0.67｜REA/T014 `0x543428` 間接CALLの条件・受信オブジェクトの独立検証](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1533_T014_INNER_VCALL_GUARD_AUDIT.md?plain=1#L1-L1) — `research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1533_T014_INNER_VCALL_GUARD_AUDIT.md`
   回収状態 RECOVERED_COMPLETE_BYTE_IDENTICAL。以前の収録状況 NOT_IN_CATALOG_SNAPSHOT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1215-L1215)。制約・訂正 Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
   本文 SHA256 `568e35c44ff37faa872897ca8ce5fd7b3200438f68a1b2b0ab1133b74cf257e1`
+  元パス <code>rea_lab/decomp_task/REA_OFFLINE_RECOVERED_20261029/files/REA_OFFLINE_20261022_1533_T014_INNER_VCALL_GUARD_AUDIT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1215-L1215)。
 
 - [迫真戦記 ver0.67｜REA/T014：Fade系登録処理の先行副作用と非冪等性（静的証拠）](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1633_T014_SHEET_REGISTRATION_AUDIT.md?plain=1#L1-L1) — `research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1633_T014_SHEET_REGISTRATION_AUDIT.md`
   回収状態 RECOVERED_COMPLETE_BYTE_IDENTICAL。以前の収録状況 NOT_IN_CATALOG_SNAPSHOT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1216-L1216)。制約・訂正 Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
   本文 SHA256 `e63b33a97723f076e60ed2dddf908addb1e94f3e641856bfbf35933e6235d662`
+  元パス <code>rea_lab/decomp_task/REA_OFFLINE_RECOVERED_20261029/files/REA_OFFLINE_20261022_1633_T014_SHEET_REGISTRATION_AUDIT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1216-L1216)。
 
 - [迫真戦記ver0.67｜REA独立T014 P0・木構造更新後の共通仮想CALL横断解析（2026-10-22 17時台）](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1735_T014_KEYED_TREE_VCALL_AUDIT.md?plain=1#L1-L1) — `research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1735_T014_KEYED_TREE_VCALL_AUDIT.md`
   回収状態 RECOVERED_COMPLETE_BYTE_IDENTICAL。以前の収録状況 NOT_IN_CATALOG_SNAPSHOT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1217-L1217)。制約・訂正 Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
   本文 SHA256 `754a758a13af34048ffc0e1a1c123df121277e8db4267f23ceecc59500748e29`
+  元パス <code>rea_lab/decomp_task/REA_OFFLINE_RECOVERED_20261029/files/REA_OFFLINE_20261022_1735_T014_KEYED_TREE_VCALL_AUDIT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1217-L1217)。
 
 - [迫真戦記ver0.67｜REA独立T014 P0・間接CALLのcontext別名追跡と呼出ABI補正（2026-10-22 18時台）](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1836_T014_CONTEXT_ALIAS_ABI_AUDIT.md?plain=1#L1-L1) — `research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1836_T014_CONTEXT_ALIAS_ABI_AUDIT.md`
   回収状態 RECOVERED_COMPLETE_BYTE_IDENTICAL。以前の収録状況 NOT_IN_CATALOG_SNAPSHOT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1218-L1218)。制約・訂正 Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
   本文 SHA256 `a17525fd2dc33b5128ffba32dc8dc245e140f475fe5f1352e39988efe90f5915`
+  元パス <code>rea_lab/decomp_task/REA_OFFLINE_RECOVERED_20261029/files/REA_OFFLINE_20261022_1836_T014_CONTEXT_ALIAS_ABI_AUDIT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1218-L1218)。
 
 - [迫真戦記 ver0.67｜REA独立T014 P0：「ガード」の正体はキー登録木の件数（2026-10-22 19時台）](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1946_T014_MAP_COUNT_FIRST_INSERT_AUDIT.md?plain=1#L1-L1) — `research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1946_T014_MAP_COUNT_FIRST_INSERT_AUDIT.md`
   回収状態 RECOVERED_COMPLETE_BYTE_IDENTICAL。以前の収録状況 NOT_IN_CATALOG_SNAPSHOT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1219-L1219)。制約・訂正 Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
   本文 SHA256 `5bccf91003dcbd971a1fd6eec6c507fe2ddffaa9017c004ed718e9056ead4799`
+  元パス <code>rea_lab/decomp_task/REA_OFFLINE_RECOVERED_20261029/files/REA_OFFLINE_20261022_1946_T014_MAP_COUNT_FIRST_INSERT_AUDIT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1219-L1219)。
 
 - [迫真戦記 ver0.67 — REA独立・T014/P0 11サイトの登録前map件数ガードとキー文字列再同定](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_2035_T014_11SITE_KEY_GUARD_AUDIT.md?plain=1#L1-L1) — `research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_2035_T014_11SITE_KEY_GUARD_AUDIT.md`
   回収状態 RECOVERED_COMPLETE_BYTE_IDENTICAL。以前の収録状況 NOT_IN_CATALOG_SNAPSHOT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1220-L1220)。制約・訂正 Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
   本文 SHA256 `43dfbc6e06bc4f11a1fee3031d1d5b56b9c2f31f856fbdc0cb9d044156c8d7ba`
+  元パス <code>rea_lab/decomp_task/REA_OFFLINE_RECOVERED_20261029/files/REA_OFFLINE_20261022_2035_T014_11SITE_KEY_GUARD_AUDIT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1220-L1220)。
 
 - [迫真戦記 ver0.67｜REA独立 P0：choice 仮想CALL直後の例外的な分岐幅](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_2137_T014_CHOICE_BRANCH_SPAN_AUDIT.md?plain=1#L1-L1) — `research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_2137_T014_CHOICE_BRANCH_SPAN_AUDIT.md`
   回収状態 RECOVERED_COMPLETE_BYTE_IDENTICAL。以前の収録状況 NOT_IN_CATALOG_SNAPSHOT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1221-L1221)。制約・訂正 Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
   本文 SHA256 `a113aab7ddbe7f54c237e3d7a1a235514a5250d692abf68cfe94ad5617ad2784`
+  元パス <code>rea_lab/decomp_task/REA_OFFLINE_RECOVERED_20261029/files/REA_OFFLINE_20261022_2137_T014_CHOICE_BRANCH_SPAN_AUDIT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1221-L1221)。
 
 - [迫真戦記 ver0.67｜REA独立・choice 13バイト分岐の原本機械語解決](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_2236_T014_CHOICE_DUALPATH_ABI_AUDIT.md?plain=1#L1-L1) — `research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_2236_T014_CHOICE_DUALPATH_ABI_AUDIT.md`
   回収状態 RECOVERED_COMPLETE_BYTE_IDENTICAL。以前の収録状況 NOT_IN_CATALOG_SNAPSHOT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1222-L1222)。制約・訂正 Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
   本文 SHA256 `2c4b57d42011f904c1404934c2beb0b5afdba19b261a1efb8b0467427c6807ae`
+  元パス <code>rea_lab/decomp_task/REA_OFFLINE_RECOVERED_20261029/files/REA_OFFLINE_20261022_2236_T014_CHOICE_DUALPATH_ABI_AUDIT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1222-L1222)。
 
 - [迫真戦記 ver0.67｜REA T014 P0・キー登録重複処理の独立静的監査](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0000_T014_MAP_INSERT_DUPLICATE_AUDIT.md?plain=1#L1-L1) — `research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0000_T014_MAP_INSERT_DUPLICATE_AUDIT.md`
   回収状態 RECOVERED_COMPLETE_BYTE_IDENTICAL。以前の収録状況 NOT_IN_CATALOG_SNAPSHOT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1223-L1223)。制約・訂正 Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
   本文 SHA256 `6eaa78526cd706ee6fe90dbc34773b3fc8c06ef52f0114bd623e97deabe7ea21`
+  元パス <code>rea_lab/decomp_task/REA_OFFLINE_RECOVERED_20261029/files/REA_OFFLINE_20261023_0000_T014_MAP_INSERT_DUPLICATE_AUDIT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1223-L1223)。
 
 - [迫真戦記ver0.67 REA独立解析｜T014 map挿入結果ABI 監査](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0033_T014_MAP_OUTPARAM_ABI_AUDIT.md?plain=1#L1-L1) — `research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0033_T014_MAP_OUTPARAM_ABI_AUDIT.md`
   回収状態 RECOVERED_COMPLETE_BYTE_IDENTICAL。以前の収録状況 NOT_IN_CATALOG_SNAPSHOT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1224-L1224)。制約・訂正 Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
   本文 SHA256 `ca267a78732475101967f260828824026b5a820d0693d2679719afbecfcf4f83`
+  元パス <code>rea_lab/decomp_task/REA_OFFLINE_RECOVERED_20261029/files/REA_OFFLINE_20261023_0033_T014_MAP_OUTPARAM_ABI_AUDIT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1224-L1224)。
 
 - [迫真戦記 ver0.67 REA独立監査｜T014 `spot_fire` 仮想尾部ジャンプの発見](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0141_T014_SPOTFIRE_TAILJMP_AUDIT.md?plain=1#L1-L1) — `research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0141_T014_SPOTFIRE_TAILJMP_AUDIT.md`
   回収状態 RECOVERED_COMPLETE_BYTE_IDENTICAL。以前の収録状況 NOT_IN_CATALOG_SNAPSHOT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1225-L1225)。制約・訂正 Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
   本文 SHA256 `7471ba7a523bfbfa143893e243d09a7f9b5054571df7514c93b7cd4b09031c79`
+  元パス <code>rea_lab/decomp_task/REA_OFFLINE_RECOVERED_20261029/files/REA_OFFLINE_20261023_0141_T014_SPOTFIRE_TAILJMP_AUDIT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1225-L1225)。
 
 - [迫真戦記ver0.67 REA独立静的監査 — GameManager初期化と仮想CALLの具体的候補](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0233_T014_CONTEXT_SELFRECEIVER_AUDIT.md?plain=1#L1-L1) — `research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0233_T014_CONTEXT_SELFRECEIVER_AUDIT.md`
   回収状態 RECOVERED_COMPLETE_BYTE_IDENTICAL。以前の収録状況 NOT_IN_CATALOG_SNAPSHOT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1226-L1226)。制約・訂正 Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
   本文 SHA256 `abe5b2576f407291c200486ee10e5a2ca3c6f1992593001081a5c2e5d0250645`
+  元パス <code>rea_lab/decomp_task/REA_OFFLINE_RECOVERED_20261029/files/REA_OFFLINE_20261023_0233_T014_CONTEXT_SELFRECEIVER_AUDIT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1226-L1226)。
 
 - [迫真戦記 ver0.67 REA独立静的研究｜GameManager仮想CALLのライフサイクル制約・ガード監査](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0331_T014_VPTR_LIFECYCLE_FLAGGATE_AUDIT.md?plain=1#L1-L1) — `research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0331_T014_VPTR_LIFECYCLE_FLAGGATE_AUDIT.md`
   回収状態 RECOVERED_COMPLETE_BYTE_IDENTICAL。以前の収録状況 NOT_IN_CATALOG_SNAPSHOT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1227-L1227)。制約・訂正 Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
   本文 SHA256 `71868466c21d10f13e153be64dca6bc17b429efbfaa952bfd76239ab26a432d5`
+  元パス <code>rea_lab/decomp_task/REA_OFFLINE_RECOVERED_20261029/files/REA_OFFLINE_20261023_0331_T014_VPTR_LIFECYCLE_FLAGGATE_AUDIT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1227-L1227)。
 
 [前のページ](page-011.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md) · [次のページ](page-013.md)
