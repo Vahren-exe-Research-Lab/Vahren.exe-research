@@ -1,0 +1,152 @@
+file	line	kind	name	parent	add	next	next2	next3	mp	mprec	rush	special	wait_time	summon_level	check	skill
+RTSsummon.dat	2	skill	s_rts												9999	
+RTSsummon.dat	23	skill	hqkarate				hqkarate_nt1, hqkarate_nt2, hqkarate_nt3, hqkarate_nt4		3000000		4	on			99000	
+RTSsummon.dat	43	skill	hqkarate_nt1	s_rts	hqkarate											
+RTSsummon.dat	51	skill	hqkarate_nt2	s_rts	hqinfkarate											
+RTSsummon.dat	59	skill	hqkarate_nt3	s_rts	hqcavkarate											
+RTSsummon.dat	67	skill	hqkarate_nt4	s_rts	hqgunkarate											
+RTSsummon.dat	75	skill	hqmarina	hqkarate			hqmarina_nt1, hqmarina_nt2, hqmarina_nt3, hqmarina_nt4									
+RTSsummon.dat	83	skill	hqmarina_nt1	s_rts	hqmarina											
+RTSsummon.dat	91	skill	hqmarina_nt2	s_rts	hqreimarina											
+RTSsummon.dat	99	skill	hqmarina_nt3	s_rts	hqcavmarina											
+RTSsummon.dat	107	skill	hqmarina_nt4	s_rts	hqmagmarina											
+RTSsummon.dat	116	skill	hqretei	hqkarate			hqretei_nt1, hqretei_nt2, hqretei_nt3, hqretei_nt4									
+RTSsummon.dat	124	skill	hqretei_nt1	s_rts	hqretei											
+RTSsummon.dat	132	skill	hqretei_nt2	s_rts	hqreiretei											
+RTSsummon.dat	140	skill	hqretei_nt3	s_rts	hqinfretei											
+RTSsummon.dat	148	skill	hqretei_nt4	s_rts	hqartretei											
+RTSsummon.dat	157	skill	hqkimo	hqkarate			hqkimo_nt1, hqkimo_nt2, hqkimo_nt3, hqkimo_nt4									
+RTSsummon.dat	165	skill	hqkimo_nt1	s_rts	hqkimo											
+RTSsummon.dat	173	skill	hqkimo_nt2	s_rts	hqinfkimo											
+RTSsummon.dat	181	skill	hqkimo_nt3	s_rts	hqcavkimo											
+RTSsummon.dat	189	skill	hqkimo_nt4	s_rts	hqreakimo											
+RTSsummon.dat	198	skill	hqhono	hqkarate			hqhono_nt1, hqhono_nt2, hqhono_nt3, hqhono_nt4									
+RTSsummon.dat	206	skill	hqhono_nt1	s_rts	hqhono											
+RTSsummon.dat	214	skill	hqhono_nt2	s_rts	hqreihono											
+RTSsummon.dat	222	skill	hqhono_nt3	s_rts	hqreahono											
+RTSsummon.dat	230	skill	hqhono_nt4	s_rts	hqarthono											
+RTSsummon.dat	239	skill	hqgenri	hqkarate			hqgenri_nt1, hqgenri_nt2, hqgenri_nt3, hqgenri_nt4									
+RTSsummon.dat	247	skill	hqgenri_nt1	s_rts	hqgenri											
+RTSsummon.dat	255	skill	hqgenri_nt2	s_rts	hqreigenri											
+RTSsummon.dat	263	skill	hqgenri_nt3	s_rts	hqcavgenri											
+RTSsummon.dat	271	skill	hqgenri_nt4	s_rts	hqreagenri											
+RTSsummon.dat	279	skill	hqunion	hqkarate			hqunion_nt1, hqunion_nt2, hqunion_nt3, hqunion_nt4									
+RTSsummon.dat	287	skill	hqunion_nt1	s_rts	hqoback											
+RTSsummon.dat	295	skill	hqunion_nt2	s_rts	hqokasi											
+RTSsummon.dat	303	skill	hqunion_nt3	s_rts	hqinfoback											
+RTSsummon.dat	311	skill	hqunion_nt4	s_rts	hqreaokasi											
+RTSsummon.dat	318	skill	hqkouma	hqkarate			hqkouma_nt1, hqkouma_nt2, hqkouma_nt3, hqkouma_nt4									
+RTSsummon.dat	326	skill	hqkouma_nt1	s_rts	hqkouma											
+RTSsummon.dat	334	skill	hqkouma_nt2	s_rts	hqinfkouma											
+RTSsummon.dat	342	skill	hqkouma_nt3	s_rts	hqreakouma											
+RTSsummon.dat	350	skill	hqkouma_nt4	s_rts	hqreikouma											
+RTSsummon.dat	357	skill	hqsamson	hqkarate			hqsamson_nt1, hqsamson_nt2, hqsamson_nt3, hqsamson_nt4									
+RTSsummon.dat	365	skill	hqsamson_nt1	s_rts	hqsamson											
+RTSsummon.dat	373	skill	hqsamson_nt2	s_rts	hqinfsamson											
+RTSsummon.dat	381	skill	hqsamson_nt3	s_rts	hqreasamson											
+RTSsummon.dat	389	skill	hqsamson_nt4	s_rts	hqdefsamson											
+RTSsummon.dat	399	skill	hqdef	s_rts	hqdef				160							
+RTSsummon.dat	409	skill	hqdefkarate	s_rts	hqdefkarate				160							
+RTSsummon.dat	420	skill	hqdefmarina	hqdefkarate	hqdefmarina											
+RTSsummon.dat	425	skill	hqdefretei	hqdefkarate	hqdefretei											
+RTSsummon.dat	430	skill	hqdefkimo	hqdefkarate	hqdefkimo											
+RTSsummon.dat	435	skill	hqdefhono	hqdefkarate	hqdefhono											
+RTSsummon.dat	440	skill	hqdefgenri	hqdefkarate	hqdefgenri											
+RTSsummon.dat	445	skill	hqdefoback	hqdefkarate	hqdefoback											
+RTSsummon.dat	451	skill	hqdefokasi	hqdefkarate	hqdefokasi											
+RTSsummon.dat	457	skill	hqdefkouma	hqdefkarate	hqdefkouma											
+RTSsummon.dat	462	skill	hqdefsamson	hqdefkarate	hqdefsamson											
+RTSsummon.dat	467	skill	rtssent	s_rts	sentrts				25							
+RTSsummon.dat	479	skill	rtstur	s_rts	turrts				25							
+RTSsummon.dat	491	skill	rtsart	s_rts	artrts				50							
+RTSsummon.dat	504	skill	rtsramen	s_rts	ramenrts				50							
+RTSsummon.dat	517	skill	rtsmisamari	s_rts	misamarirts				50							
+RTSsummon.dat	530	skill	rtscannon	s_rts	cannonrts				50							
+RTSsummon.dat	543	skill	rtskuso	s_rts	kusorts				50							
+RTSsummon.dat	556	skill	rtsharimiko	s_rts	harimikorts				50							
+RTSsummon.dat	569	skill	rtsharpoon	s_rts	harpoonrts				50							
+RTSsummon.dat	582	skill	rtsichigo	s_rts	ichigorts				50							
+RTSsummon.dat	595	skill	hqgene	s_rts	hqgene				140							
+RTSsummon.dat	607	skill	hqgeneadv	s_rts	hqgeneadv				140							
+RTSsummon.dat	618	skill	hqheal	s_rts	hqheal				150							
+RTSsummon.dat	629	skill	hqtame	s_rts	hqtame				150							
+RTSsummon.dat	640	skill	rtstocsamsp3_hub	rtstocsamsp5							3				450	
+RTSsummon.dat	647	skill	rtstocsam_mugen	ra0002		rtstocsam_mugen_nt			500						450	
+RTSsummon.dat	656	skill	rtstocsam_mugen_nt	rtstocsam	@						1			100		
+RTSsummon.dat	669	skill	hqbaseoback	s_rts	hqbaseoback				150							
+RTSsummon.dat	679	skill	hqbaseokasi	s_rts	hqbaseokasi				150							
+RTSsummon.dat	690	skill	hqprefab	sk_ms		hqprefab_nt			300			1				
+RTSsummon.dat	704	skill	hqprefab_nt	s_rts	hqprefab											
+RTSsummon.dat	711	skill	hqzairyoya	sk_ms		hqzairyoya_nt			300			1				
+RTSsummon.dat	725	skill	hqzairyoya_nt	s_rts	hqzairyoya											
+RTSsummon.dat	732	skill	s_harpoon_rts	s_rts	harpoonrts				0		3	1	120			
+RTSsummon.dat	748	skill	s_milk_rts	s_rts	osmilkrts				0		32	1				
+RTSsummon.dat	763	skill	hqbidairobo	s_rts	bidairoborts				200					150		
+RTSsummon.dat	776	skill	hqtiger	s_rts	rtiger3				200					130		
+RTSsummon.dat	787	skill	hqtadora	s_rts	ra2652				150					130		
+RTSsummon.dat	799	skill	rtssamkohe	ra0002		rtssamkohe_nt			500							
+RTSsummon.dat	807	skill	rtssamkohe_nt	ra0002_nt	a3293rts						1					
+RTSsummon.dat	814	skill	hqbasesam	s_rts	hqbasesamson							on			500	
+RTSsummon.dat	828	skill	rtssambase	hqkarate			rtssambase_nt1, rtssambase_nt2, rtssambase_nt3		0		3	1				
+RTSsummon.dat	842	skill	rtssambase_nt1	s_rts	tochkarts											
+RTSsummon.dat	846	skill	rtssambase_nt2	s_rts	tursam1rts											
+RTSsummon.dat	850	skill	rtssambase_nt3	s_rts	tursam2rts											
+RTSsummon.dat	856	skill	hqinfkarate	s_rts	hqinfkarate				200							
+RTSsummon.dat	867	skill	hqcavkarate	hqinfkarate	hqcavkarate											
+RTSsummon.dat	875	skill	hqgunkarate	hqinfkarate	hqgunkarate											
+RTSsummon.dat	883	skill	hqmagkarate	hqinfkarate	hqmagkarate											
+RTSsummon.dat	891	skill	hqartkarate	hqinfkarate	hqartkarate											
+RTSsummon.dat	902	skill	hqinfmarina	hqinfkarate	hqinfmarina				160							
+RTSsummon.dat	911	skill	hqcavmarina	hqinfkarate	hqcavmarina				160							
+RTSsummon.dat	920	skill	hqmagmarina	hqinfkarate	hqmagmarina				160							
+RTSsummon.dat	929	skill	hqartmarina	hqinfkarate	hqartmarina				160							
+RTSsummon.dat	938	skill	hqreimarina	hqinfkarate	hqreimarina				160							
+RTSsummon.dat	948	skill	hqinfretei	hqinfkarate	hqinfretei											
+RTSsummon.dat	956	skill	hqcavretei	hqinfkarate	hqcavretei											
+RTSsummon.dat	964	skill	hqrearetei	hqinfkarate	hqrearetei											
+RTSsummon.dat	972	skill	hqartretei	hqinfkarate	hqartretei											
+RTSsummon.dat	980	skill	hqreiretei	hqinfkarate	hqreiretei											
+RTSsummon.dat	988	skill	hqinfkimo	hqinfkarate	hqinfkimo											
+RTSsummon.dat	996	skill	hqcavkimo	hqinfkarate	hqcavkimo											
+RTSsummon.dat	1004	skill	hqreakimo	hqinfkarate	hqreakimo											
+RTSsummon.dat	1012	skill	hqartkimo	hqinfkarate	hqartkimo											
+RTSsummon.dat	1020	skill	hqoldkimo	hqinfkarate	hqoldkimo											
+RTSsummon.dat	1028	skill	hqinfhono	hqinfkarate	hqinfhono											
+RTSsummon.dat	1036	skill	hqreahono	hqinfkarate	hqreahono											
+RTSsummon.dat	1044	skill	hqarthono	hqinfkarate	hqarthono											
+RTSsummon.dat	1052	skill	hqinqhono	hqinfkarate	hqinqhono											
+RTSsummon.dat	1060	skill	hqmarhono	hqinfkarate	hqmarhono											
+RTSsummon.dat	1068	skill	hqoldhono	hqinfkarate	hqoldhono											
+RTSsummon.dat	1076	skill	hqreihono	hqinfkarate	hqreihono											
+RTSsummon.dat	1086	skill	hqinfgenri	hqinfkarate	hqinfgenri											
+RTSsummon.dat	1094	skill	hqcavgenri	hqinfkarate	hqcavgenri											
+RTSsummon.dat	1102	skill	hqreagenri	hqinfkarate	hqreagenri											
+RTSsummon.dat	1110	skill	hqartgenri	hqinfkarate	hqartgenri											
+RTSsummon.dat	1118	skill	hqreigenri	hqinfkarate	hqreigenri											
+RTSsummon.dat	1129	skill	hqinfoback	hqinfkarate	hqinfoback											
+RTSsummon.dat	1137	skill	hqcavoback	hqinfkarate	hqcavoback											
+RTSsummon.dat	1145	skill	hqreaoback	hqinfkarate	hqreaoback											
+RTSsummon.dat	1153	skill	hqartoback	hqinfkarate	hqartoback											
+RTSsummon.dat	1161	skill	hqinfokasi	hqinfkarate	hqinfokasi											
+RTSsummon.dat	1169	skill	hqcavokasi	hqinfkarate	hqcavokasi											
+RTSsummon.dat	1177	skill	hqreaokasi	hqinfkarate	hqreaokasi											
+RTSsummon.dat	1185	skill	hqartokasi	hqinfkarate	hqartokasi											
+RTSsummon.dat	1193	skill	hqinfkouma	hqinfkarate	hqinfkouma											
+RTSsummon.dat	1201	skill	hqreakouma	hqinfkarate	hqreakouma											
+RTSsummon.dat	1209	skill	hqreikouma	hqinfkarate	hqreikouma											
+RTSsummon.dat	1217	skill	hqinfsamson	hqinfkarate	hqinfsamson											
+RTSsummon.dat	1225	skill	hqreasamson	hqinfkarate	hqreasamson											
+RTSsummon.dat	1233	skill	ra0002			ra0002_nt			300						10000	
+RTSsummon.dat	1247	skill	ra0002_nt	s_rts	ra0002						8					
+RTSsummon.dat	1255	class	ra0002	self_a0002												
+RTSsummon.dat	1260	skill	ra0012	ra0002		ra0012_nt										
+RTSsummon.dat	1267	skill	ra0012_nt	ra0002_nt	ra0012						8					
+RTSsummon.dat	1272	class	ra0012	self_a0012												
+RTSsummon.dat	1276	skill	ra0022	ra0002		ra0022_nt										
+RTSsummon.dat	1283	skill	ra0022_nt	ra0002_nt	ra0022						8					
+RTSsummon.dat	1288	class	ra0022	self_a0022												
+RTSsummon.dat	1292	skill	ra0032	ra0002		ra0032_nt										
+RTSsummon.dat	1299	skill	ra0032_nt	ra0002_nt	ra0032						8					
+RTSsummon.dat	1304	class	ra0032	self_a0032												
+RTSsummon.dat	1308	skill	ra0042	ra0002		ra0042_nt										
+RTSsummon.dat	1315	skill	ra0042_nt	ra0002_nt	ra0042						8					

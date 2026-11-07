@@ -80,4 +80,114 @@
   本文 SHA256 `0eda856416eb6b91a251f64e4ea05dc4e5dc11721fc80abf936f9786eb1bad1c`
   元パス <code>https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/300a3c0666961b390006be08a72d89a5ea4bee7b/research/STARTUP_DAT_FILE_LOCK_20261103.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1856-L1856)。
 
+- [T013_T024_KB_CANDIDATE_528E86_GATE_20261101_20H.tsv](../../research/recovered/structured_tables1/reports/data/T013_T024_KB_CANDIDATE_528E86_GATE_20261101_20H.tsv?plain=1#L1-L1) — `research/recovered/structured_tables1/reports/data/T013_T024_KB_CANDIDATE_528E86_GATE_20261101_20H.tsv`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Current hash matches historical catalog pin; root1855 source/destination SHA match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1857-L1857)。制約・訂正 Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption
+  本文 SHA256 `4a98a93225813f944b0562d7861043c5653b6340963ee4debba4b7691baaf118`
+  元パス <code>data/T013_T024_KB_CANDIDATE_528E86_GATE_20261101_20H.tsv</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1857-L1857)。
+
+- [T024_KB_CANDIDATE_REF_FTOL_YFLIP_20261101_19H.tsv](../../research/recovered/structured_tables1/reports/data/T024_KB_CANDIDATE_REF_FTOL_YFLIP_20261101_19H.tsv?plain=1#L1-L1) — `research/recovered/structured_tables1/reports/data/T024_KB_CANDIDATE_REF_FTOL_YFLIP_20261101_19H.tsv`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Current hash matches historical catalog pin; root1855 source/destination SHA match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1858-L1858)。制約・訂正 Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption
+  本文 SHA256 `4f32843d860fa96b04e4a20bba6e31750d77ce95e41d773bca8094b3670d0cb8`
+  元パス <code>data/T024_KB_CANDIDATE_REF_FTOL_YFLIP_20261101_19H.tsv</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1858-L1858)。
+
+- [T024_KB_CURATION_SOURCE_MAP_20261101_19H.tsv](../../research/recovered/structured_tables1/reports/data/T024_KB_CURATION_SOURCE_MAP_20261101_19H.tsv?plain=1#L1-L1) — `research/recovered/structured_tables1/reports/data/T024_KB_CURATION_SOURCE_MAP_20261101_19H.tsv`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Current hash matches historical catalog pin; root1855 source/destination SHA match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1859-L1859)。制約・訂正 Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption
+  本文 SHA256 `5737e420adbd5d2fe5b1a80c33e431dcc8f58d6d3808e8d78cf824643d957d7e`
+  元パス <code>data/T024_KB_CURATION_SOURCE_MAP_20261101_19H.tsv</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1859-L1859)。
+
+- [T024_FAKE_CLEANUP_CALLERS.tsv](../../research/recovered/structured_tables1/reports/evidence/T024_FAKE_CLEANUP_CALLERS.tsv?plain=1#L1-L1) — `research/recovered/structured_tables1/reports/evidence/T024_FAKE_CLEANUP_CALLERS.tsv`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Current hash matches historical catalog pin; root1855 source/destination SHA match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1860-L1860)。制約・訂正 Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption
+  本文 SHA256 `c3283d58a529a3be4b783705218fc54c439000f5640b795b3bdc65c4ed37618c`
+  元パス <code>evidence/T024_FAKE_CLEANUP_CALLERS.tsv</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1860-L1860)。
+
+- [T024_SKILL_SWAP_MATRIX.tsv](../../research/recovered/structured_tables1/reports/evidence/T024_SKILL_SWAP_MATRIX.tsv?plain=1#L1-L1) — `research/recovered/structured_tables1/reports/evidence/T024_SKILL_SWAP_MATRIX.tsv`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Current hash matches historical catalog pin; root1855 source/destination SHA match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1861-L1861)。制約・訂正 Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption
+  本文 SHA256 `6577afcda7ad8ad2a8c8672d391e659769f9ca0745fc9b179d1d58a8d425990f`
+  元パス <code>evidence/T024_SKILL_SWAP_MATRIX.tsv</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1861-L1861)。
+
+- [T025_BOSS_WW_GUARD_CARTESIAN_20261013.jsonl](../../research/recovered/structured_tables1/reports/evidence/T025_BOSS_WW_GUARD_CARTESIAN_20261013.jsonl?plain=1#L1-L1) — `research/recovered/structured_tables1/reports/evidence/T025_BOSS_WW_GUARD_CARTESIAN_20261013.jsonl`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Current hash matches historical catalog pin; root1855 source/destination SHA match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1862-L1862)。制約・訂正 Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption
+  本文 SHA256 `a25ecaab53388a25a00e5625c807628937c9c6ca95b1f75ca389de44d47a878b`
+  元パス <code>evidence/T025_BOSS_WW_GUARD_CARTESIAN_20261013.jsonl</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1862-L1862)。
+
+- [T026_EDUCATION_DIRECT_ID_INVENTORY.tsv](../../research/recovered/structured_tables1/reports/evidence/T026_EDUCATION_DIRECT_ID_INVENTORY.tsv?plain=1#L1-L1) — `research/recovered/structured_tables1/reports/evidence/T026_EDUCATION_DIRECT_ID_INVENTORY.tsv`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Current hash matches historical catalog pin; root1855 source/destination SHA match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1863-L1863)。制約・訂正 Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption
+  本文 SHA256 `2e9c21327a4c85388ba44e24525214af127855d2fec6de211ec4457de9bb4fc9`
+  元パス <code>evidence/T026_EDUCATION_DIRECT_ID_INVENTORY.tsv</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1863-L1863)。
+
+- [T027_MERCHANT_COMMON_PURCHASE_MATRIX.tsv](../../research/recovered/structured_tables1/reports/evidence/T027_MERCHANT_COMMON_PURCHASE_MATRIX.tsv?plain=1#L1-L1) — `research/recovered/structured_tables1/reports/evidence/T027_MERCHANT_COMMON_PURCHASE_MATRIX.tsv`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Current hash matches historical catalog pin; root1855 source/destination SHA match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1864-L1864)。制約・訂正 Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption
+  本文 SHA256 `51a994e00ea4faee9f5518942731c095afec879c772ced6d35091a7a588fbd98`
+  元パス <code>evidence/T027_MERCHANT_COMMON_PURCHASE_MATRIX.tsv</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1864-L1864)。
+
+- [T029_DEFENSE_POWER_SKILL_MATRIX.tsv](../../research/recovered/structured_tables1/reports/evidence/T029_DEFENSE_POWER_SKILL_MATRIX.tsv?plain=1#L1-L1) — `research/recovered/structured_tables1/reports/evidence/T029_DEFENSE_POWER_SKILL_MATRIX.tsv`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Current hash matches historical catalog pin; root1855 source/destination SHA match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1865-L1865)。制約・訂正 Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption
+  本文 SHA256 `88292ffef877ccaf74fd6f859f045df8c4caa2a181419e429aad15393022e884`
+  元パス <code>evidence/T029_DEFENSE_POWER_SKILL_MATRIX.tsv</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1865-L1865)。
+
+- [T029_SKILLTROOP_CALLSITES.tsv](../../research/recovered/structured_tables1/reports/evidence/T029_SKILLTROOP_CALLSITES.tsv?plain=1#L1-L1) — `research/recovered/structured_tables1/reports/evidence/T029_SKILLTROOP_CALLSITES.tsv`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Current hash matches historical catalog pin; root1855 source/destination SHA match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1866-L1866)。制約・訂正 Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; nearest guard fields are heuristic, not verified full path predicates; explicit branch interpretation is separate matrix
+  本文 SHA256 `d25bfa87472183983a72b49fee03c2f53aa12aeac00d2c7445f673de3b877027`
+  元パス <code>evidence/T029_SKILLTROOP_CALLSITES.tsv</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1866-L1866)。
+
+- [T030_RTS_PRODUCTION_GRAPH.tsv](../../research/recovered/structured_tables1/reports/evidence/T030_RTS_PRODUCTION_GRAPH.tsv?plain=1#L1-L1) — `research/recovered/structured_tables1/reports/evidence/T030_RTS_PRODUCTION_GRAPH.tsv`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Current hash matches historical catalog pin; root1855 source/destination SHA match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1867-L1867)。制約・訂正 Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption
+  本文 SHA256 `f735225d719cfe1773ff60ece8c42bbea4be4febfeec0874bc4ac4aa7a7c7bf6`
+  元パス <code>evidence/T030_RTS_PRODUCTION_GRAPH.tsv</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1867-L1867)。
+
+- [T005_SPECIAL_REGISTRY_CALLBACK_CROSSWALK.tsv](../../research/recovered/structured_tables1/reports/exe/T005_SPECIAL_REGISTRY_CALLBACK_CROSSWALK.tsv?plain=1#L1-L1) — `research/recovered/structured_tables1/reports/exe/T005_SPECIAL_REGISTRY_CALLBACK_CROSSWALK.tsv`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Current hash matches historical catalog pin; root1855 source/destination SHA match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1868-L1868)。制約・訂正 Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration callback pointers do not prove per-key merge/duplicate/rule semantics or public ABI
+  本文 SHA256 `7b69a2d99930e27aa988aa9a317999a5187129d384fccecc2cc937d80063685a`
+  元パス <code>exe/T005_SPECIAL_REGISTRY_CALLBACK_CROSSWALK.tsv</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1868-L1868)。
+
+- [T006_HANDLER_RETURN_CFG.tsv](../../research/recovered/structured_tables1/reports/exe/T006_HANDLER_RETURN_CFG.tsv?plain=1#L1-L1) — `research/recovered/structured_tables1/reports/exe/T006_HANDLER_RETURN_CFG.tsv`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Current hash matches historical catalog pin; root1855 source/destination SHA match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1869-L1869)。制約・訂正 Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; handler positions are code locations, not automatically independent function entries; states/U/footer retained literally
+  本文 SHA256 `e938f92077fd656a4f98bcf8d468879248c67ef505e4a061b165aa45c760bef7`
+  元パス <code>exe/T006_HANDLER_RETURN_CFG.tsv</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1869-L1869)。
+
+- [T006_OPCODE_HANDLERS.tsv](../../research/recovered/structured_tables1/reports/exe/T006_OPCODE_HANDLERS.tsv?plain=1#L1-L1) — `research/recovered/structured_tables1/reports/exe/T006_OPCODE_HANDLERS.tsv`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Current hash matches historical catalog pin; root1855 source/destination SHA match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1870-L1870)。制約・訂正 Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; handler positions are code locations, not automatically independent function entries; states/U/footer retained literally
+  本文 SHA256 `0ce74d044b619742aa0b33702ed185fa7133d264e01dfc1a264377c2a16abbd9`
+  元パス <code>exe/T006_OPCODE_HANDLERS.tsv</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1870-L1870)。
+
+- [T006_REGISTRY_RECOVERED.tsv](../../research/recovered/structured_tables1/reports/exe/T006_REGISTRY_RECOVERED.tsv?plain=1#L1-L1) — `research/recovered/structured_tables1/reports/exe/T006_REGISTRY_RECOVERED.tsv`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Current hash matches historical catalog pin; root1855 source/destination SHA match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1871-L1871)。制約・訂正 Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; unreconciled opcode differences versus OPCODE_HANDLERS preserved (e.g. fadein22 vs21); do not auto-adopt
+  本文 SHA256 `07f6a01ec047b41936f99c70990a598d1118120c72dfa2cf5ea6ddde981c7d9a`
+  元パス <code>exe/T006_REGISTRY_RECOVERED.tsv</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1871-L1871)。
+
+- [T006_SECONDARY_REGISTRY_INDEX.tsv](../../research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv?plain=1#L1-L1) — `research/recovered/structured_tables1/reports/exe/T006_SECONDARY_REGISTRY_INDEX.tsv`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Current hash matches historical catalog pin; root1855 source/destination SHA match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1872-L1872)。制約・訂正 Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; registration_VA is name registration xref, NOT handler; blank opcode unknown
+  本文 SHA256 `3d034f9c37520a6629f6e60335542a8a28e8ca0df2b8092fafe14ac6fd130731`
+  元パス <code>exe/T006_SECONDARY_REGISTRY_INDEX.tsv</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1872-L1872)。
+
+- [T006_TROOP_REGISTRY_INDEX.tsv](../../research/recovered/structured_tables1/reports/exe/T006_TROOP_REGISTRY_INDEX.tsv?plain=1#L1-L1) — `research/recovered/structured_tables1/reports/exe/T006_TROOP_REGISTRY_INDEX.tsv`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Current hash matches historical catalog pin; root1855 source/destination SHA match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1873-L1873)。制約・訂正 Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption
+  本文 SHA256 `f62bb193504f20f6acc7d038cfed1db5f1679fbbd06e0f10793a4b65fb8658a5`
+  元パス <code>exe/T006_TROOP_REGISTRY_INDEX.tsv</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1873-L1873)。
+
+- [T009_NATIVE_INT_FALLBACKS.tsv](../../research/recovered/structured_tables1/reports/exe/T009_NATIVE_INT_FALLBACKS.tsv?plain=1#L1-L1) — `research/recovered/structured_tables1/reports/exe/T009_NATIVE_INT_FALLBACKS.tsv`
+  回収状態 CONTENT_REVIEWED_ENCODING_VARIANT。以前の収録状況 Current hash matches historical catalog pin; root1855 source/destination SHA match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1874-L1874)。制約・訂正 Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; None/unresolved extracted fallback entries are unknown, not numeric defaults; zero does not imply effective zero damage
+  本文 SHA256 `76dee20d0718ac294a69312e881d953c818b6cbf1a5e2e2d514abb97d4414f8c`
+  元パス <code>exe/T009_NATIVE_INT_FALLBACKS.tsv</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1874-L1874)。
+
+- [T009_TARGET_INIT_FALLBACKS.tsv](../../research/recovered/structured_tables1/reports/exe/T009_TARGET_INIT_FALLBACKS.tsv?plain=1#L1-L1) — `research/recovered/structured_tables1/reports/exe/T009_TARGET_INIT_FALLBACKS.tsv`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Current hash matches historical catalog pin; root1855 source/destination SHA match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1875-L1875)。制約・訂正 Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; None/unresolved extracted fallback entries are unknown, not numeric defaults; zero does not imply effective zero damage
+  本文 SHA256 `26b2ee2c344a5051867dcdcce7c1fe71948504b19b44d6af6cac09b44fc2f057`
+  元パス <code>exe/T009_TARGET_INIT_FALLBACKS.tsv</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1875-L1875)。
+
+- [T010_BATTLE_CMD_MAP.tsv](../../research/recovered/structured_tables1/reports/exe/T010_BATTLE_CMD_MAP.tsv?plain=1#L1-L1) — `research/recovered/structured_tables1/reports/exe/T010_BATTLE_CMD_MAP.tsv`
+  回収状態 CONTENT_REVIEWED_ENCODING_VARIANT。以前の収録状況 Current hash matches historical catalog pin; root1855 source/destination SHA match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1876-L1876)。制約・訂正 Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption; handler positions are code locations, not automatically independent function entries; states/U/footer retained literally
+  本文 SHA256 `cb88fd0c69bcb4223ad1d7372982f34ab7dfca7a8fafc615746e742c692d2938`
+  元パス <code>exe/T010_BATTLE_CMD_MAP.tsv</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1876-L1876)。
+
+- [T033_SCENARIO_LITERAL_CLASSIFY.tsv](../../research/recovered/structured_tables1/reports/exe/T033_SCENARIO_LITERAL_CLASSIFY.tsv?plain=1#L1-L1) — `research/recovered/structured_tables1/reports/exe/T033_SCENARIO_LITERAL_CLASSIFY.tsv`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Current hash matches historical catalog pin; root1855 source/destination SHA match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1877-L1877)。制約・訂正 Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption
+  本文 SHA256 `737828c690eac0d4606ae8d73064108ed7f41b5cc58768fafc8fb8b95966aad1`
+  元パス <code>exe/T033_SCENARIO_LITERAL_CLASSIFY.tsv</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1877-L1877)。
+
+- [T011_DATA_MODEL_SUMMARY.txt](../../research/recovered/text_triage1/reports/T011_DATA_MODEL_SUMMARY.txt?plain=1#L1-L1) — `research/recovered/text_triage1/reports/T011_DATA_MODEL_SUMMARY.txt`
+  回収状態 CONTENT_REVIEWED_ENCODING_VARIANT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1878-L1878)。制約・訂正 Generated DAT key-frequency/inheritance identifier inventory; historical not independent semantic findings or native/runtime validation. Lossless UTF-16LE BOM to UTF-8 no-BOM representation, exact Unicode/newlines; no privacy edits or linked DAT/assets opened.
+  本文 SHA256 `057d3200af49654ba746726fff98274ae475776122d5d6159d77cf20d735a56c`
+  元パス <code>evidence/T011_DATA_MODEL_SUMMARY.txt</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1878-L1878)。
+
 [前のページ](page-018.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md)

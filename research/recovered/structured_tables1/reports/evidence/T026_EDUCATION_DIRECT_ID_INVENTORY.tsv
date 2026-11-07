@@ -1,0 +1,25 @@
+course	bonus_side	same_side_ids	opposite_side_ids	same_side_id_count	opposite_side_id_count	source
+ev01	teacher	mgr,yuh,snj,kbtit,yaju,toono,snnn,sww,gosaku,zngm,pochama,png,hangyo,superswk,masahiko		15	0	ev01_swim.dat
+ev01	student	mgr,yuh,snj,kbtit,yaju,toono,snnn,sww,gosaku,zngm,pochama,png,hangyo,hideshine,achamo,hitokage,syokupanman		17	0	ev01_swim.dat
+ev02	teacher	kbtit,azs,suzu,mgr,vvan,ykp,znm,nsdr,toono,ymns,sik,van,geruch,nikumaru,ytr,joker,abesan,mot,kusomusume,trn,flour,milk,haggar,skr,hirano,yn,ru,udk,pojiko,astk,ri,snnn,hideshine,inu,diyusi,flnsca,kantouc,mdcn		38	0	ev02_sing.dat
+ev02	student	kbtit,azs,suzu,mgr,vvan,ykp,znm,nsdr,toono,ymns,sik,van,geruch,nikumaru,ytr,joker,abesan,mot,kusomusume,trn		20	0	ev02_sing.dat
+ev03	teacher	yaju,akys,mur,knn,alc,higekuma,yuk,rensan,aniki,kazuya,hori,nikuoja,sudou,ktgi,osni,kmr,mirn		17	0	ev03_karate.dat
+ev03	student	yaju,akys,mur,knn,mirn,bio,hori,ymns	kmr	8	1	ev03_karate.dat
+ev04	teacher	kuso,kusomusume,ibrg,uto,ymns,sik,nel,kmr,yaju,majimekun,jnpi,mhr,kbtit,ondisk,udk,ri,nrk,ttm,kantoukure,abesan,isama,yyiusg,balrog		23	0	ev04_kuso.dat
+ev04	student	kuso,kusomusume,ibrg,uto,ymns,nel,kmr,yaju,majimekun,gashuin,hideshine,ondisk,charao,johnny,ru,nrk,ttm,kantoukure,abesan,isama,yyiusg,balrog		22	0	ev04_kuso.dat
+ev05	teacher	snnn,snnnkis,abesan,ytr,nsdr,kacho,tns,knk,superswk,sww,inigi,cyberz2,higekuma,snj,tdn,yaju,ondisk,alc,azs,fmrim,vvan,krkntn,tis,toono,ymns,ymnp,sik,tisa,geruch,skrnbu,ri,mot,luna,kim,mugi,kantoukure,satoshi,kinako,isama,mantaro,nisehsi,esk,tknuc,nakanokun,htn,poitero,kbtit,flour,milk,haggar,knn,skr,yn,ru,udk,pojiko,astk,ndk,kimihiko,mz,inu,gandoha,flnsca,intyo,nagatanien,mdcn		66	0	ev05_voicedrama.dat
+ev05	student	snnn,snnnkis,abesan,kacho,tns,knk,sww,inigi,cyberz2,higekuma,snj,tdn,yaju,ondisk,alc,azs,fmrim,vvan,krkntn,ymnu,toono,ymns,ymnp,ymnc,ymny,bnkrg,geruch,skrnbu,ri,mot,ssrn,nynkrn,luna,kim,mugi,kantoukure,satoshi,kinako,isama,mantaro		40	0	ev05_voicedrama.dat
+ev06	teacher	yaju,hirano,snj,kankure,rensan,rikyu,ru,alc,ymns,sik,nagatanien,udk		12	0	ev06_sadou.dat
+ev06	student	yaju,hirano,snj,kankure,rensan,rikyu,ru,alc,udk,ymns,sik,nagatanien,toono,nakanokun,daichikun,gkuma	akys,tnok,hori,udk,knn	16	5	ev06_sadou.dat
+ev07	teacher	kbtit,hirano,senpai,masahiko,rensan,higekuma,van,yuk,ondisk,snnn,suzu,nel,mz,okuo,asasin,hanzo,megadeath,nagatanien,balrog,ttm,satoshi		21	0	ev07_tyokyotame.dat
+ev07	student	hideshine,poitero,daichikun,jnpi,van,mhr,ondisk,bnkrg,udk,akabuta,shirobuta,gashuin,kinkaku,ginkaku,tns,tdn,tis,ru,sknm,hsnm,msnm,nairu,asasin,gt,syunga,kskswn,genba,akn,ttm,gkuma,kantoukure,mantaro,snj,shimada		34	0	ev07_tyokyotame.dat
+ev08	teacher	batman,manager,ondisk,yaju,rensan,aniki,mur,nktidksg,akys,majimekun,yw,znm,kankure,kzy,van,snnn,geruch,tdn,skrn,httn		20	0	ev08_interview.dat
+ev08	student	batman,ondisk,yaju,rensan,aniki,mur,nktidksg,akys,majimekun,yw,znm,kankure,kzy,van,snnn,geruch,tdn,htn	skrn	18	1	ev08_interview.dat
+ev09	teacher	kensuke,gt,aknm,db,ixa,skrnbu,kazuya,kbtit		8	0	ev09_amefoot.dat
+ev09	student	kensuke,gt,aknm,db,ixa,skrnbu,kazuya,kbtit		8	0	ev09_amefoot.dat
+ev10	teacher	tdn,yaju,rensan,aniki,db,htn,akys,snj,mz,ixa,kmr,nktidksg,bnkrg,ondisk,diyusi,kim,kbtit,annyui,iws,tanaka,udrgn23		21	0	ev10_baseball.dat
+ev10	student	tdn,yaju,rensan,aniki,db,htn,akys,snj,mz,ixa,kmr,nktidksg,bnkrg,ondisk,diyusi,kim,kbtit,annyui,iws		19	0	ev10_baseball.dat
+ev11	teacher	htn,annyui,rrm,kinkaku,ginkaku,tanaka,udrgn23,bio,aniki,fmrim,fmrim3,rensan,tisa,yaju,akys,johnny,charao,tns,batman,kuso,ixa,httn,mnr,balrog,ymns,sik,genba,ototo,astk,mantaro,mugi		31	0	ev11_onani.dat
+ev11	student	htn,annyui,rrm,kinkaku,ginkaku,tanaka,udrgn23,bio,aniki,fmrim,fmrim3,rensan,tisa,yaju,akys,johnny,charao,tns,batman,kuso,httn,intyo,balrog,ymns,sik,genba,ototo,astk,mantaro		29	0	ev11_onani.dat
+ev12	teacher	astk,bio,nanachi,web,esk,rensan,kbtit,ryuma,sakuma,suzu,singen,yaju,diyusi,gandoha,akys,tanaka,nisehsi,nrk,biim,bluebiim,ginryu23,udrgn23,hnd,yuk,ymns,rrm,scavenger,sik,icr,yurujiro		30	0	ev12_kendou.dat
+ev12	student	astk,bio,nanachi,web,esk,rensan,kbtit,ryuma,sakuma,suzu,singen,yaju,diyusi,gandoha,akys,tanaka,nisehsi,nrk,biim,bluebiim,ginryu23,udrgn23,hnd,yuk,ymns,rrm,scavenger,sik,metalhsi,icr,yurujiro		31	0	ev12_kendou.dat

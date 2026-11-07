@@ -1,0 +1,79 @@
+00	004A1317		states=1	exits=004A633C	paths=1
+01	004A1430	routine	states=0	exits=004A633C	paths=1
+02	004A148D	return	states=1	exits=004A633C	paths=1
+03	004A1549	break	states=0/1	exits=004A633C	paths=2
+04	004A166E	continue	states=0/1	exits=004A633C	paths=2
+05	004A174A	win	states=1	exits=004A633C	paths=1
+06	004A1770	terminate	states=1	exits=004A633C	paths=1
+07	004A17C8	save	states=1	exits=004A633C	paths=1
+08	004A1429	next	states=1	exits=004A633C	paths=1
+09	004A17D8	wait	states=1	exits=004A633C	paths=1
+10	004A18B1	battleEvent	states=1	exits=004A633C	paths=1
+11	004A1978		states=1	exits=004A633C	paths=1
+12	004A1BE7	font	states=0	exits=004A633C	paths=1
+13	004A1D3D	fontc	states=0	exits=004A633C	paths=1
+14	004A1DB9	select	states=1	exits=004A633C	paths=1
+15	004A1E15	choice	states=1	exits=004A633C	paths=1
+16	004A1F48	erase	states=0	exits=004A633C	paths=1
+17	004A1F5B		states=1	exits=004A633C	paths=1
+18	004A20AD		states=0	exits=004A633C	paths=1
+19	004A2192		states=U	exits=004A633C	paths=1
+20	004A2265	fadeout	states=1	exits=004A633C	paths=1
+21	004A22D7	fadein	states=1	exits=004A633C	paths=1
+22	004A2376	darkness	states=0	exits=004A633C	paths=1
+23	004A2502	shadow	states=0	exits=004A633C	paths=1
+24	004A2793	worldskin	states=0	exits=004A633C	paths=1
+25	004A27B7	shake	states=0	exits=004A633C	paths=1
+26	004A2850		states=0	exits=004A633C	paths=1
+27	004A2892	zoom	states=0	exits=004A633C	paths=1
+28	004A28C5	backScroll	states=0	exits=004A633C	paths=1
+29	004A28E4	scrollSpeed	states=0	exits=004A633C	paths=1
+30	004A290A		states=0	exits=004A633C	paths=1
+31	004A2ABC	locate	states=0	exits=004A633C	paths=1
+32	004A2C13	focus	states=0	exits=004A633C	paths=1
+33	004A2CD4	playSE	states=0	exits=004A633C	paths=1
+34	004A2D04		states=0	exits=004A633C	paths=1
+35	004A2DC8		states=0	exits=004A633C	paths=1
+36	004A2DDF	volume	states=0	exits=004A633C	paths=1
+37	004A2E09	loopBGM	states=0	exits=004A633C	paths=1
+38	004A2EA0	playWorld	states=0	exits=004A633C	paths=1
+39	004A2EAD	playBattle	states=0	exits=004A633C	paths=1
+40	004A2EBA	setWorldMusic	states=0	exits=004A633C	paths=1
+41	004A2EC8	resetWorldMusic	states=0	exits=004A633C	paths=1
+42	004A2ED6	showSpot	states=0	exits=004A633C	paths=1
+43	004A304A	hideSpot	states=0	exits=004A633C	paths=1
+44	004A30F5		states=0	exits=004A633C	paths=1
+45	004A36C0		states=0	exits=004A633C	paths=1
+46	004A3984		states=0	exits=004A633C	paths=1
+47	004A3BFE		states=0	exits=004A633C	paths=1
+48	004A41D6	face2	states=0	exits=004A633C	paths=1
+49	004A4885		states=0	exits=004A633C	paths=1
+50	004A4D57	hideImage	states=0	exits=004A633C	paths=1
+51	004A4E4E	showChara	states=0	exits=004A633C	paths=1
+52	004A51B5	hideChara	states=0	exits=004A633C	paths=1
+53	004A523A	reverseChara	states=0	exits=004A633C	paths=1
+54	004A529F	showPicture	states=0	exits=004A633C	paths=1
+55	004A56A8	hidePicture	states=0	exits=004A633C	paths=1
+56	004A56F7	doskill	states=0	exits=004A633C	paths=1
+57	004A5AF1	reloadMenu	states=0	exits=004A633C	paths=1
+58	004A5BA2	showPolitics	states=0	exits=004A633C	paths=1
+59	004A5BF9	showCamp	states=0	exits=004A633C	paths=1
+60	004A5C50	resetZone	states=0	exits=004A633C	paths=1
+61	004A6323		states=U	exits=004A6323	paths=1
+62	004A5CC4	doGameEnding	states=1	exits=004A633C	paths=1
+63	004A5CD3	setGameClear	states=1	exits=004A633C	paths=1
+64	004A5CEF	exit	states=1	exits=004A633C	paths=1
+65	004A6323		states=U	exits=004A6323	paths=1
+66	004A6323		states=U	exits=004A6323	paths=1
+67	004A6323		states=U	exits=004A6323	paths=1
+68	004A6323		states=U	exits=004A6323	paths=1
+69	004A6323		states=U	exits=004A6323	paths=1
+70	004A5E24	ppl1	states=1	exits=004A633C	paths=1
+71	004A6323		states=U	exits=004A6323	paths=1
+72	004A6323		states=U	exits=004A6323	paths=1
+73	004A5C70	showDungeon	states=0	exits=004A633C	paths=1
+74	004A5971	cutin	states=0	exits=004A633C	paths=1
+75	004A1B72	vc	states=0	exits=004A633C	paths=1
+76	004A5F53	gread	states=0	exits=004A633C	paths=1
+77	004A60D1	gwrite	states=0	exits=004A633C	paths=1
+78	004A1EEB	choiceTitle	states=0	exits=004A633C	paths=1

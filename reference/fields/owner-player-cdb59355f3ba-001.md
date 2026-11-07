@@ -4,8 +4,20 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-9"></a>
+## player + 0x9
+
+- [research/recovered/other_texts2/reports/data/T017_BGM_REFERENCE_AUDIT.txt 行 50](../../research/recovered/other_texts2/reports/data/T017_BGM_REFERENCE_AUDIT.txt?plain=1#L50-L50) — [TEST DESIGN / NOT RUN] フル版の原本を変更せず通常起動し、各spotのBGM開始を確認したうえでUI master volume 100→0→100、無操作数十秒、spot再入場を同手順で採取。再生開始/停止時刻・再開回数・MP3 GetEvent HRESULT/EC_COMPLETE、OGG
+  制約・訂正　Historical authored receipt/audit only; counts/source claims not newly validated; current curated REF priority; filename/schema/readback name is not semantic approval; linked payloads excluded; no native/runtime/READY/Golden increment
+
 <a id="field-a"></a>
 ## player + 0xA
+
+- [research/recovered/other_texts2/reports/data/T017_BGM_REFERENCE_AUDIT.txt 行 35](../../research/recovered/other_texts2/reports/data/T017_BGM_REFERENCE_AUDIT.txt?plain=1#L35-L35) — [GOLDEN/NOT RUN] 本編sp42/sp44の同stem MP3再生時にUI master volume 100→0→100と、OGG-only曲を採用した既知spotを同条件で比較。DirectShow GetEvent/HRESULT/EC_COMPLETE、player+0x0A、stop/reope
+  制約・訂正　Historical authored receipt/audit only; counts/source claims not newly validated; current curated REF priority; filename/schema/readback name is not semantic approval; linked payloads excluded; no native/runtime/READY/Golden increment
+
+- [research/recovered/other_texts2/reports/data/T017_BGM_REFERENCE_AUDIT.txt 行 60](../../research/recovered/other_texts2/reports/data/T017_BGM_REFERENCE_AUDIT.txt?plain=1#L60-L60) — [REIMPLEMENT] `loopBGM`のコメント内テキストと実効callsite、battle/政治イベントの条件付きplaylistとspot自動BGM、MP3/OGG EOF、UI master volume0を異なる層として保持。既存A保存`exe/T006_AUDIO_BACKEND_EOF.md`によ
+  制約・訂正　Historical authored receipt/audit only; counts/source claims not newly validated; current curated REF priority; filename/schema/readback name is not semantic approval; linked payloads excluded; no native/runtime/READY/Golden increment
 
 - [research/recovered/rng_audio/T006_AUDIO_BACKEND_EOF.md 行 9](../../research/recovered/rng_audio/T006_AUDIO_BACKEND_EOF.md?plain=1#L9-L9) — - Normal playBGM passes playback arg3=1, stored as player +0x0A=1; therefore MP3 EC_COMPLETE is consumed by predicateA and current track is restarted in-place.
   制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence

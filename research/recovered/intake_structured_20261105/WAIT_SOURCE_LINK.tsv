@@ -1,0 +1,2 @@
+va	source_path	source_sha256	start_line	end_line	scope
+0x4A17D8	research/recovered/structured_tables1/reports/exe/T006_OPCODE_HANDLERS.tsv	0ce74d044b619742aa0b33702ed185fa7133d264e01dfc1a264377c2a16abbd9	11	11	SOURCE_LOCATOR_ONLY;EXISTING_NAME_MEANING_CONFIDENCE_UNCHANGED

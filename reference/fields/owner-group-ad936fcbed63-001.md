@@ -55,6 +55,9 @@
 - [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md 行 79](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md?plain=1#L79-L79) — Immediate native successor partition also rechecked: of 21 AL=0 sites, **18** directly proceed via PUSH ESI / E8 `0x568FB0`, and **3** (`0x420269/0x528356/0x528
   制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
 
+- [research/recovered/json_evidence2/archive/B_OFFLINE_20261101_08H_GROUP1E_CALLSITE_EVIDENCE.json 行 413](../../research/recovered/json_evidence2/archive/B_OFFLINE_20261101_08H_GROUP1E_CALLSITE_EVIDENCE.json?plain=1#L413-L413) — "group+0x1C, group+0x1D, group+0x1E are separate byte fields",
+  制約・訂正　Historical saved author observations/claims only; native windows and PASS counts not independently validated; no new runtime/Golden/READY/ABI; referenced payloads unopened
+
 <a id="field-1d"></a>
 ## group + 0x1D
 
@@ -103,6 +106,12 @@
 - [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md 行 79](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md?plain=1#L79-L79) — Immediate native successor partition also rechecked: of 21 AL=0 sites, **18** directly proceed via PUSH ESI / E8 `0x568FB0`, and **3** (`0x420269/0x528356/0x528
   制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
 
+- [research/recovered/json_evidence2/archive/B_OFFLINE_20261101_08H_GROUP1E_CALLSITE_EVIDENCE.json 行 412](../../research/recovered/json_evidence2/archive/B_OFFLINE_20261101_08H_GROUP1E_CALLSITE_EVIDENCE.json?plain=1#L412-L412) — "0x568FB0 executes its body only when group+0x1D !=0 and is not equivalent to 0x568460",
+  制約・訂正　Historical saved author observations/claims only; native windows and PASS counts not independently validated; no new runtime/Golden/READY/ABI; referenced payloads unopened
+
+- [research/recovered/json_evidence2/archive/B_OFFLINE_20261101_08H_GROUP1E_CALLSITE_EVIDENCE.json 行 413](../../research/recovered/json_evidence2/archive/B_OFFLINE_20261101_08H_GROUP1E_CALLSITE_EVIDENCE.json?plain=1#L413-L413) — "group+0x1C, group+0x1D, group+0x1E are separate byte fields",
+  制約・訂正　Historical saved author observations/claims only; native windows and PASS counts not independently validated; no new runtime/Golden/READY/ABI; referenced payloads unopened
+
 - [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 772](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L772-L772) — [NEW] child構築後、selector==1なら0x54F02F S+0x1D0、>=2なら0x567EE0 group新規またはS管理list末尾groupで候補EDI選択。EDI非NULLで0x54F093/0x54F096→0x568710にchild/Groupを渡し、group+0x1D==0側0x5
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 
@@ -117,6 +126,9 @@
 
 - [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md 行 79](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md?plain=1#L79-L79) — Immediate native successor partition also rechecked: of 21 AL=0 sites, **18** directly proceed via PUSH ESI / E8 `0x568FB0`, and **3** (`0x420269/0x528356/0x528
   制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
+- [research/recovered/json_evidence2/archive/B_OFFLINE_20261101_08H_GROUP1E_CALLSITE_EVIDENCE.json 行 413](../../research/recovered/json_evidence2/archive/B_OFFLINE_20261101_08H_GROUP1E_CALLSITE_EVIDENCE.json?plain=1#L413-L413) — "group+0x1C, group+0x1D, group+0x1E are separate byte fields",
+  制約・訂正　Historical saved author observations/claims only; native windows and PASS counts not independently validated; no new runtime/Golden/READY/ABI; referenced payloads unopened
 
 - [research/recovered/outside_kb1/reports/knowledge/CATALOG.md 行 101](../../research/recovered/outside_kb1/reports/knowledge/CATALOG.md?plain=1#L101-L101) — \| 2026-11-01 \| `data/T011_T013_GROUP1E_ALL25_CALLER_AL_POSTCALL_NATIVE_20261101_08H.md` \| 迫真戦記 ver0.67｜新B 2026-11-01 08H｜group+0x1E setter全25直接CALLのAL入力と直後の処理分類
   制約・訂正　Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
@@ -235,6 +247,15 @@
 - [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/research/intake/README.md 行 61](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/research/intake/README.md?plain=1#L61-L61) — De-dup: B09H already concerned group+0x34 calculations. B10H/11H proximity and buckets are not independent re-discoveries of that earlier calculation; B12H foll
   制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
 
+- [research/recovered/json_evidence2/archive/B_OFFLINE_20261101_11H_GROUP34_DUAL_BUCKET_EVIDENCE.json 行 271](../../research/recovered/json_evidence2/archive/B_OFFLINE_20261101_11H_GROUP34_DUAL_BUCKET_EVIDENCE.json?plain=1#L271-L271) — "claim_static": "0x569610 is a 5-predicate eligible-group-unit existence check; 0x528DB0 splits group+0x34 into two distinct stack accumulators depending on 0x5
+  制約・訂正　Historical saved author observations/claims only; native windows and PASS counts not independently validated; no new runtime/Golden/READY/ABI; referenced payloads unopened
+
+- [research/recovered/json_evidence2/archive/B_OFFLINE_20261101_12H_MODE3_DUAL_LIST_EVIDENCE.json 行 24](../../research/recovered/json_evidence2/archive/B_OFFLINE_20261101_12H_MODE3_DUAL_LIST_EVIDENCE.json?plain=1#L24-L24) — "meaning": "A sum += group+0x34"
+  制約・訂正　Historical saved author observations/claims only; native windows and PASS counts not independently validated; no new runtime/Golden/READY/ABI; referenced payloads unopened
+
+- [research/recovered/json_evidence2/archive/B_OFFLINE_20261101_12H_MODE3_DUAL_LIST_EVIDENCE.json 行 36](../../research/recovered/json_evidence2/archive/B_OFFLINE_20261101_12H_MODE3_DUAL_LIST_EVIDENCE.json?plain=1#L36-L36) — "meaning": "B sum += group+0x34"
+  制約・訂正　Historical saved author observations/claims only; native windows and PASS counts not independently validated; no new runtime/Golden/READY/ABI; referenced payloads unopened
+
 - [research/recovered/outside_kb1/reports/knowledge/CATALOG.md 行 107](../../research/recovered/outside_kb1/reports/knowledge/CATALOG.md?plain=1#L107-L107) — \| 2026-11-01 \| `data/T011_T024_GROUP34_DUAL_BUCKET_ELIGIBILITY_NATIVE_20261101_11H.md` \| 迫真戦記 ver0.67｜B/T011・T024：group+0x34 の二系統集計と適格Unit判定（2026-11-01 11H JST）
   制約・訂正　Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
 
@@ -246,6 +267,12 @@
 
 - [research/recovered/outside_kb1/reports/knowledge/CATALOG.md 行 326](../../research/recovered/outside_kb1/reports/knowledge/CATALOG.md?plain=1#L326-L326) — \| 2026-11-01 \| `data/T011_T024_GROUP34_PROXIMITY_RATIO_100TICK_NATIVE_20261101_10H.md` \| 迫真戦記 ver0.67｜新B T011/T024：group+0x34 の空間的近接判定への使用と100tick再評価（2026-11-01
   制約・訂正　Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+
+- [research/recovered/structured_tables1/reports/data/T024_KB_CURATION_SOURCE_MAP_20261101_19H.tsv 行 2](../../research/recovered/structured_tables1/reports/data/T024_KB_CURATION_SOURCE_MAP_20261101_19H.tsv?plain=1#L2-L2) — B-OFFLINE-20261101-10H-T011-T024-GROUP34-PROXIMITY-GATE-01	T011,T024	0x569360	0x56ADC1->0x569360;0x56AE85->0x569360	group+0x34;Unit+0x1867C/E	proximity ratio th
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption
+
+- [research/recovered/structured_tables1/reports/data/T024_KB_CURATION_SOURCE_MAP_20261101_19H.tsv 行 3](../../research/recovered/structured_tables1/reports/data/T024_KB_CURATION_SOURCE_MAP_20261101_19H.tsv?plain=1#L3-L3) — B-OFFLINE-20261101-11H-T011-T024-GROUP34-DUAL-BUCKET-GATE-01	T011,T024	0x528DB0;0x569610	0x5290A7;0x5290DD	Unit+0x1867C/E;group+0x34	two distinct group accumula
+  制約・訂正　Historical authored extraction/candidate/audit table only; source-reported STATIC/INFERRED and unknown ABI/types retained; identifiers/short selected clauses are not full original game scripts/assets or native/Ghidra dumps; linked inputs not acquired; no new native/runtime/READY/Golden/semantic adoption
 
 <a id="field-38"></a>
 ## group + 0x38
@@ -317,42 +344,6 @@
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 - [research/recovered/b_batch9/data/T013_MODE2_PRIMARY_UNIT_MODE3_GATE_NATIVE_20261030_14H.md 行 11](../../research/recovered/b_batch9/data/T013_MODE2_PRIMARY_UNIT_MODE3_GATE_NATIVE_20261030_14H.md?plain=1#L11-L11) — 0x44BD9A MOV [EBX+0xB8],ESI。非NULLなら0x44BDAD CALL0x565780、0x44BDBB CALL0x5158E0へ、NULLなら0x44BDC0へ。group+0xB8はこの経路の選択Unit参照と静的推定。+0x1867Cの論理名と下位の実副作用はVERIFY。
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/e_reports/T020_E_T013_MODE2_DUALGATE_ACCEPTANCE_20261030_15H.md 行 6](../../research/recovered/e_reports/T020_E_T013_MODE2_DUALGATE_ACCEPTANCE_20261030_15H.md?plain=1#L6-L6) — - Independent Capstone x86 decoding matched 14/14 exact instruction + operand pairs, including 0x44BDEC JNE 0x44BEC5, 0x44BED1 CALL 0x56F130, 0x44BFA1/AA dual-b
-  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
-
-- [research/recovered/e_reports/T020_E_T013_MODE2_DUALGATE_ACCEPTANCE_20261030_15H.md 行 9](../../research/recovered/e_reports/T020_E_T013_MODE2_DUALGATE_ACCEPTANCE_20261030_15H.md?plain=1#L9-L9) — - Second-phase nonnull group+0xB8 selection does not prove the selected pointer is the group's first Unit; +0x8C/+0x1F8/+0x1F9 tests use the first group Unit an
-  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
-
-- [research/recovered/e_reports/T020_E_T013_MODE2_PRIMARY_ACCEPTANCE_20261030_14H.md 行 8](../../research/recovered/e_reports/T020_E_T013_MODE2_PRIMARY_ACCEPTANCE_20261030_14H.md?plain=1#L8-L8) — - At 0x44BD7A/0x44BD81, Unit+0x1867C==0 is a candidate gate; 0x44BD9A stores the first matching Unit pointer to group+0xB8, or NULL when none. No claimed gamepl
-  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
-
-<a id="field-c0"></a>
-## group + 0xC0
-
-- [research/recovered/b_batch9/data/T013_MODE2_PRIMARY_UNIT_MODE3_GATE_NATIVE_20261030_14H.md 行 20](../../research/recovered/b_batch9/data/T013_MODE2_PRIMARY_UNIT_MODE3_GATE_NATIVE_20261030_14H.md?plain=1#L20-L20) — Golden必須：無改変原作EXE・20倍変更前DAT・同一SAVE/MAP/入力/RNG、mode2 caller実到達、各group+0xC0/+0xC4/+0xB8、Unit+0x1867C=0/非0/空群、[ESP+0x68]・+0x1EF22C両値、翌tickのmanager+0x20と実選択・行動を原作同r
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/e_reports/T020_E_T013_MODE2_PRIMARY_ACCEPTANCE_20261030_14H.md 行 11](../../research/recovered/e_reports/T020_E_T013_MODE2_PRIMARY_ACCEPTANCE_20261030_14H.md?plain=1#L11-L11) — - B original discusses group+0xC0 tree reinit/+0xC4 zero and nonnull 0x565780/0x5158E0 calls. These are not modeled as proven heap ownership, actual deletion, o
-  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
-
-<a id="field-1b8"></a>
-## group + 0x1B8
-
-- [research/recovered/b_batch9/data/T013_SPECIAL_BTL_LIMIT_C_CATEGORY_CLOCK_NATIVE_20261031_02H.md 行 8](../../research/recovered/b_batch9/data/T013_SPECIAL_BTL_LIMIT_C_CATEGORY_CLOCK_NATIVE_20261031_02H.md?plain=1#L8-L8) — - 0x449549 CMP BYTE [group ESI+0x1EF244],0。非0ならECX=0x6357B8の原作ASCII 'btl_limit_c'、0ならECX=0x6357C4の'btl_limit'。0x44955E PUSH500、0x449563 PUSH EAX(group+0x1B8)、0x
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-<a id="field-1ef244"></a>
-## group + 0x1EF244
-
-- [research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md 行 18](../../research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md?plain=1#L18-L18) — - 分岐側0x44C9B4..C3は [EBX+0x78] と[EBX+0x7C]のvector空チェック（同値→0x44CC23）、非空側0x44C9C9 manager+0x98・0x44C9E1 group+0x1EF244を評価し、0x44CA82 JMP [EDX*4+0x44CD4C] 9-wayへ。0x4
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_batch8/data/T013_BTL_LIMIT_EFFECTIVE_DAT_AND_GETTER_CACHE_NATIVE_20261031_03H.md 行 13](../../research/recovered/b_batch8/data/T013_BTL_LIMIT_EFFECTIVE_DAT_AND_GETTER_CACHE_NATIVE_20261031_03H.md?plain=1#L13-L13) — - 02H既知0x449549（group+0x1EF244分岐）: flag0→'btl_limit'、非0→'btl_limit_c'。0x44955E PUSH500、0x449564 CALL0x46F4C0、0x449569..81 は T=Convert(0.5+0.2L)。既知0x4495B3 CMP K
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/b_batch8/data/T013_BTL_LIMIT_EFFECTIVE_DAT_AND_GETTER_CACHE_NATIVE_20261031_03H.md 行 19](../../research/recovered/b_batch8/data/T013_BTL_LIMIT_EFFECTIVE_DAT_AND_GETTER_CACHE_NATIVE_20261031_03H.md?plain=1#L19-L19) — - 次回：0x4495D7～0x4496C9のwriter後段と実行カテゴリ保持先、group+0x1EF244のproducer（B境界のみ）、T011召喚EXP/T012 damage/T024通常AI/T028敗走。旧安全拒否（0x5710C0..0x571500等）には接触しない。原本/MASTER/他lane
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

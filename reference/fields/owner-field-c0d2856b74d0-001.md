@@ -82,6 +82,12 @@
 - [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 696](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L696-L696) — ## B-20261019-0520-01｜T011保存済Skill候補field+0x2B8 writerと+0x2B9複合gate（T012/T013参照）
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 
+<a id="field-474"></a>
+## field + 0x474
+
+- [research/recovered/json_evidence2/archive/B_OFFLINE_20261101_12H_MODE3_DUAL_LIST_EVIDENCE.json 行 72](../../research/recovered/json_evidence2/archive/B_OFFLINE_20261101_12H_MODE3_DUAL_LIST_EVIDENCE.json?plain=1#L72-L72) — "meaning": "mode field +0x474 equals 3 gate"
+  制約・訂正　Historical saved author observations/claims only; native windows and PASS counts not independently validated; no new runtime/Golden/READY/ABI; referenced payloads unopened
+
 <a id="field-1eec71"></a>
 ## field + 0x1EEC71
 

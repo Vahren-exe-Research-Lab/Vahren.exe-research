@@ -1,0 +1,9 @@
+# T014 function-summary role refinement
+
+Only `exe/T014_SAVE_FUNCTION_SUMMARY.txt` was explicitly reselected. Current identity is 5,768 bytes, SHA-256 `98d4bc935e23352cff036b07aff517de8adbc1fa3169cf79e43e914241a3ced1`, exactly matching the historical pin. Encoding is UTF-16LE with BOM, 116 decoded physical LF-delimited lines. Literal containment and every ancestor's no-reparse/no-symlink guard passed. No other original or linked target was read.
+
+The earlier lines 1–8 established only function/identifier/count metadata and were insufficient alone for exclusion. This follow-up reviewed lines 9–35 (caller and imported-call identifiers), then a bounded chunk 36–65. In the STRING REFS section at 37–64, quoted native byte-derived literal fragments appear, including code-target references with binary/garbled decoded characters. The file therefore extends beyond an identifier/count inventory. Review stopped after line65; 66–116 remains unreviewed. Cumulative coverage is 1–65, not a full-body review. No payload fragment is copied or quoted in these outputs.
+
+Disposition: whole-file metadata deferral for observed native literal payload outside authored-body recovery scope. This is a refinement of the earlier insufficient header classification, not a new acquisition refusal or a claim that every remaining line is native assembly. No specific held dependency is inferred from opaque identifiers; all existing holds remain binding. No body, excerpt, UTF-8 derivative or reconstruction was saved. REPORT_LEDGER is header-only and DEFERRED contains the one exact path.
+
+The earlier text_triage1 records remain unchanged. No T031 revisit, native/script/linked execution, network access, core/shared/Git write or semantic/runtime/Golden/READY promotion occurred. Only this new folder was written. OUTPUT_MANIFEST pins every other output.

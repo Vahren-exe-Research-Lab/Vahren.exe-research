@@ -1,0 +1,68 @@
+file	line	power_argument	immediate_followup	kind_or_comment
+2000_勢力ストーリー\po9_event.dat	125	po8		source-level; reachability not established
+2000_勢力ストーリー\po8_event.dat	265	po9		source-level; reachability not established
+2000_勢力ストーリー\po5_event.dat	167	po26	erasePower(po26)	source-level; reachability not established
+2000_勢力ストーリー\po3_event.dat	764	po18	unionPower(po3,po18)	source-level; reachability not established
+2000_勢力ストーリー\po3_event.dat	798	po18	unionPower(po3,po18)	source-level; reachability not established
+2000_勢力ストーリー\po3_event.dat	1250	po18		source-level; reachability not established
+2000_勢力ストーリー\po2_event.dat	1103	po4		source-level; reachability not established
+2000_勢力ストーリー\po25_event.dat	478	po11	erasePower(po11)	source-level; reachability not established
+2000_勢力ストーリー\po25_event.dat	543	po11	erasePower(po11)	source-level; reachability not established
+2000_勢力ストーリー\po22_event.dat	1133	po21	erasePower(po21)	source-level; reachability not established
+2000_勢力ストーリー\po22_event.dat	2632	po223		source-level; reachability not established
+2000_勢力ストーリー\po22_event.dat	4047	po2525		source-level; reachability not established
+2000_勢力ストーリー\po14_システム部分.dat	85	po22	scroll(sp35)	source-level; reachability not established
+2000_勢力ストーリー\po14_システム部分.dat	812	po1414		source-level; reachability not established
+2000_勢力ストーリー\po14_event.dat	829	po13		source-level; reachability not established
+2000_勢力ストーリー\po14_event.dat	2737	po2	storeLeaderOfPower(po2,@aaa)	source-level; reachability not established
+2000_勢力ストーリー\po1_event.dat	506	po5		source-level; reachability not established
+2000_勢力ストーリー\po18_event.dat	372	po3		source-level; reachability not established
+2000_勢力ストーリー\po13_event.dat	216	po14		source-level; reachability not established
+2001_イベント_ボス\event_51_ボス死亡時.dat	177	po141919		source-level; reachability not established
+2001_イベント_ボス\event_51_ボス死亡時.dat	217	po2323		source-level; reachability not established
+2001_イベント_ボス\event_51_ボス死亡時.dat	431	rndm8	erasePower(rndm8)	source-level; reachability not established
+2001_イベント_ボス\event_51_ボス死亡時.dat	499	@dead_boss_power		source-level; reachability not established
+2001_イベント_ボス\event_51_ボス死亡時.dat	516	@union_boss_power		source-level; reachability not established
+2001_イベント_ボス\EB_5151_古代アステカ王国.dat	572	po5151	select(select,イベント：Maerchen$$（「決定」で閲覧、「取消」でスキップ）)	source-level; reachability not established
+2000_勢力ストーリー\po10_event.dat	192	po5		source-level; reachability not established
+2000_勢力ストーリー\po11_event.dat	3437	po1		source-level; reachability not established
+2000_勢力ストーリー\po11_event.dat	3492	po4		source-level; reachability not established
+2000_勢力ストーリー\po11_event.dat	3546	po16		source-level; reachability not established
+2026_イベント_旧版クッキー☆原理主義党\po26_event_7.dat	1267	po260	erasePower(po260)	source-level; reachability not established
+2026_イベント_旧版クッキー☆原理主義党\boss\po26_event_10.dat	220	po2		source-level; reachability not established
+2023_イベント_リュージ騎士団\po23_event.dat	2018	po21	storeLeaderOfPower(po21,@aaa)	source-level; reachability not established
+2023_イベント_リュージ騎士団\po23_event.dat	2043	po21	storeLeaderOfPower(po21,@aaa)	source-level; reachability not established
+2023_イベント_リュージ騎士団\po23_event_11_B.dat	108	po1423		source-level; reachability not established
+2023_イベント_リュージ騎士団\po23_event_15_C.dat	26	po423		source-level; reachability not established
+3000_淫ドリームマッチ\ev_bossdead.dat	191	pdhzn		source-level; reachability not established
+3000_淫ドリームマッチ\ev_bossdead.dat	229	pd1		source-level; reachability not established
+3000_淫ドリームマッチ\ev_bossdead.dat	269	pd2		source-level; reachability not established
+3000_淫ドリームマッチ\ev_bossdead.dat	316	pd3		source-level; reachability not established
+3000_淫ドリームマッチ\ev_bossdead.dat	367	pd519		source-level; reachability not established
+3000_淫ドリームマッチ\ev_bossdead.dat	410	pd5		source-level; reachability not established
+3000_淫ドリームマッチ\ev_bossdead.dat	454	pd11		source-level; reachability not established
+3000_淫ドリームマッチ\ev_bossdead.dat	526	pd14		source-level; reachability not established
+3000_淫ドリームマッチ\ev_bossdead.dat	563	pd22		source-level; reachability not established
+3000_淫ドリームマッチ\ev_bossdead.dat	606	pd25		source-level; reachability not established
+3000_淫ドリームマッチ\ev_bossdead.dat	649	pd26		source-level; reachability not established
+3000_淫ドリームマッチ\ev_bossdead.dat	685	pd51		source-level; reachability not established
+3000_淫ドリームマッチ\ev_bossdead.dat	750	pd264	wait(40)	source-level; reachability not established
+3000_淫ドリームマッチ\ev_bossdead.dat	830	pd1423		source-level; reachability not established
+3000_淫ドリームマッチ\ev_bossdead.dat	872	pd423		source-level; reachability not established
+3000_淫ドリームマッチ\ev_bossdead.dat	984	pd6423		source-level; reachability not established
+3000_淫ドリームマッチ\ev_bossdead.dat	1023	pd259		source-level; reachability not established
+2023_イベント_リュージ騎士団\po23_event_18_C_google_drive_is_god.dat	374	po6323		source-level; reachability not established
+2023_イベント_リュージ騎士団\po23_event_2.dat	952	po29	erasePower(po29)	source-level; reachability not established
+2023_イベント_リュージ騎士団\po23_event_2.dat	962	po2	eraseUnit(yaju)	source-level; reachability not established
+2023_イベント_リュージ騎士団\po23_event_4.dat	389	po13	changeSpotImage(sp13,_shirob)	source-level; reachability not established
+2023_イベント_リュージ騎士団\po23_event_3.dat	104	po18	unionPower(po3,po18)	source-level; reachability not established
+2023_イベント_リュージ騎士団\po23_event_20_Chapter_Change.dat	62	po6	erasePower(po6)	source-level; reachability not established
+2023_イベント_リュージ騎士団\po23_event_20_Chapter_Change.dat	75	po7	erasePower(po7)	source-level; reachability not established
+2023_イベント_リュージ騎士団\po23_event_20_Chapter_Change.dat	87	po20	erasePower(po20)	source-level; reachability not established
+2023_イベント_リュージ騎士団\po23_event_20_Chapter_Change.dat	98	po22	erasePower(po22)	source-level; reachability not established
+2023_イベント_リュージ騎士団\po23_event_20_Chapter_Change.dat	111	po24	erasePower(po24)	source-level; reachability not established
+2023_イベント_リュージ騎士団\po23_event_20_Chapter_Change.dat	122	po31	erasePower(po31)	source-level; reachability not established
+2023_イベント_リュージ騎士団\po23_event_20_Chapter_Change.dat	134	po33	erasePower(po33)	source-level; reachability not established
+2023_イベント_リュージ騎士団\po23_event_20_Chapter_Change.dat	250	po17	eraseUnit(toono)	source-level; reachability not established
+2023_イベント_リュージ騎士団\po23_event_20_Chapter_Change.dat	262	po25	erasePower(po25)	source-level; reachability not established
+2023_イベント_リュージ騎士団\po23_event_20_Chapter_Change.dat	273	po12	erasePower(po12)	source-level; reachability not established

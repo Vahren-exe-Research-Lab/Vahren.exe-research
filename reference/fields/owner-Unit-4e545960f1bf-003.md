@@ -4,6 +4,15 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-c8"></a>
+## Unit + 0xC8
+
+- [research/recovered/rea_batch14/reports/WAVE4_FINDINGS_20261010.md 行 86](../../research/recovered/rea_batch14/reports/WAVE4_FINDINGS_20261010.md?plain=1#L86-L86) — - `0x57B930` cached primary target `Unit+0x1E570 == 0` かつ `0x57B938` confusion gauge `Unit+0xC8 < 0` の時だけ、`0x57B940: CALL 0x5B6EAB` を追加1回。抽選結果と `unit_confusion_
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
+- [research/recovered/rea_batch14/reports/WAVE4_FINDINGS_20261010.md 行 87](../../research/recovered/rea_batch14/reports/WAVE4_FINDINGS_20261010.md?plain=1#L87-L87) — - `0x57B9F4` support capability `Unit+0x137 != 0` かつ `0x57BA07` confusion gauge `Unit+0xC8 < 0` の時だけ、**独立の**`0x57BA10: CALL 0x5B6EAB` を追加1回。比較結果によりsupport build
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
 <a id="field-cc"></a>
 ## Unit + 0xCC
 
@@ -84,6 +93,9 @@
 
 - [research/recovered/DEVLAB_NATIVE_SKILL_CAPABILITY_20261011.md 行 13](../../research/recovered/DEVLAB_NATIVE_SKILL_CAPABILITY_20261011.md?plain=1#L13-L13) — - kind5は先行0x573975..0x57398DのUnit+0x130ポインタ保持処理へ、kind6は0x57396Fから別経路へ分岐する。kind5/6・その他を簡易flag計算へ無条件流さずUNKNOWNで停止する。
   制約・訂正　Historical author claims preserved; source hash verified; no new native or runtime validation; referenced local evidence not included
+
+- [research/recovered/dev_evidence/src/hakushin_compat/native_skill_capability_subset.py 行 80](../../research/recovered/dev_evidence/src/hakushin_compat/native_skill_capability_subset.py?plain=1#L80-L80) — # Kind 5 writes the first pointer at Unit+0x130 and kind 6 branches
+  制約・訂正　Authored bounded model/test or static audit JSON; original native source not bundled; tests are synthetic and not gameplay parity
 
 - [research/recovered/dev_reports/DEVLAB_HANDOFF_20261010_16H_STATIC_UNIT_SAVE.md 行 26](../../research/recovered/dev_reports/DEVLAB_HANDOFF_20261010_16H_STATIC_UNIT_SAVE.md?plain=1#L26-L26) — - 優先T014: `0x58E480` Unit marker後の特殊ロード、`0x598980` Spot reader、`0x5964C0` Power readerを**合法な新たな解析が許可された場合のみ**精密確認。あとUnit+0x130 tree marker0x68B9D0の実文字列、Power最後の
   制約・訂正　Historical STATIC/INFERRED/VERIFY and synthetic-test claims; no new native/runtime verification; referenced raw assets/probes/archives not recovered; no Golden/READY promotion; old Diplomacy label ->TurnState in current REF_SAVE_FORMAT; byte agreement does not prove runtime object rebinding
@@ -371,15 +383,6 @@
   制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
 
 - [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/STAND_DISC_GENERIC_TRANSFER_FEASIBILITY_20261025.md 行 35](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/STAND_DISC_GENERIC_TRANSFER_FEASIBILITY_20261025.md?plain=1#L35-L35) — Unit+0x178/17C/180 に原作の召喚子Unitベクタを確認。登録処理0x005774A0、召喚可能数検査0x00577600、術者死亡時のelement_lost処理0x005445E0/0x00575A60。親子管理を新規開発する必要はない。**ただしDATの親別・技能別子取得/生存中の親からの子だけ消
-  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
-
-- [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/STAND_SPEC.md 行 10](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/STAND_SPEC.md?plain=1#L10-L10) — [USER_FIXED] **スタンドは別枠で厳密に管理**。既存DATの召喚・攻撃・耐性・衛星追従を最大限利用し、DATのみでは保証できない不変条件だけ最小の戦闘アダプタで補う。原作には Unit+0x178～0x180 の親→子ベクタがあるので独自親子台帳を作り直さない。
-  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
-
-- [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/STAND_SPEC.md 行 100](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/STAND_SPEC.md?plain=1#L100-L100) — - [ON-STAND-010 STATIC CONFIRMED] 原作 Unit+0x178 begin / +0x17C end / +0x180 capacity は既存召喚子ポインタvector。0x005774A0が登録、0x00577600が子数と召喚上限比較、0x005445E0/0x00575A60がe
-  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
-
-- [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/SUMMON_DISC_REMOVAL_POLICY_20261026.md 行 43](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/SUMMON_DISC_REMOVAL_POLICY_20261026.md?plain=1#L43-L43) — 6. 誰が何体の一般召喚物を出したかを追うためだけに新DLL／独自親子台帳は作らない。既存EXEには親Unit+0x178～+0x180の召喚子vectorがある。将来必要な場合だけ利用検討。
   制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

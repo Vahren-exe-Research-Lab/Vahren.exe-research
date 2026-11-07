@@ -16,6 +16,7 @@
 | 訂正された説明 | [訂正一覧](reference/CORRECTIONS.md)で旧解釈・現在の解釈・根拠を比較する。各関数・フィールドからも辿れる |
 | 研究ID・題名・本文 | [回収済み全文書](reference/DOCUMENTS.md)、[JSON証拠票と本文の対応](research/recovered/json_receipts1/README.md)。本文と回収制約を確認する。手元のコピーでは下の検索も使える |
 | 起動直後に終了・DATファイルロック | [起動障害の研究記録](REF_STARTUP_LOADING.md)。当時の再現条件と未確認事項を確認する |
+| 命令名から登録・処理位置を調べる | [命令対応と旧表の相違](research/recovered/intake_structured_20261105/COMMAND_BINDINGS.md)。登録site、handler、callbackと命令の文脈を区別する |
 | 呼び出し元・呼び出し先 | 各関数ページの静的CALL一覧。収録済みのV9直接CALLが対象で、間接CALLや全関数の網羅ではない |
 | 未回収・保留・原本との対応 | [回収状況](research/recovered/README.md)、[現在のローカル所在](research/recovered/current_inventory/README.md)、[元の目録と収録の照合](research/recovered/COVERAGE.md) |
 | PR・Issue・研究チャットに残る成果 | [GitHub所在の最新照合](research/recovered/github_reconcile2/README.md)、[今回の研究チャット3回答](research/recovered/chat_capture2/README.md)、[定期研究チャットの照合](research/recovered/SCHEDULE_CHAT_CHECK.md)、[旧チャットの回答保全](research/recovered/chat_finals/README.md)、[旧Aの研究報告と参照照合](research/recovered/chat_a_history/README.md)。いずれも取得時点の記録 |

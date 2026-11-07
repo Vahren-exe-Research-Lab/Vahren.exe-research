@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-130"></a>
+## including + 0x130
+
+- [research/recovered/dev_evidence/src/hakushin_compat/native_skill_capability_subset.py 行 7](../../research/recovered/dev_evidence/src/hakushin_compat/native_skill_capability_subset.py?plain=1#L7-L7) — Skill+0x40 kinds 5/6 have special paths (including +0x130 pointer writer)
+  制約・訂正　Authored bounded model/test or static audit JSON; original native source not bundled; tests are synthetic and not gameplay parity
+
 <a id="field-18654"></a>
 ## including + 0x18654
 
