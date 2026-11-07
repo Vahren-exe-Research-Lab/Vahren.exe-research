@@ -16,6 +16,12 @@
 - [research/recovered/e_batch2/reports/tests/E_OFFLINE_SYNC_20261029/T020_DIALOG_PREDISPATCH_GOLDEN_RUN_ID_AUDIT_20261028_1849.md 行 17](../../research/recovered/e_batch2/reports/tests/E_OFFLINE_SYNC_20261029/T020_DIALOG_PREDISPATCH_GOLDEN_RUN_ID_AUDIT_20261028_1849.md?plain=1#L17-L17) — - `0x0049C450` は `param_1+0x14` の非0を見て、`0x0042F860`判定に失敗した場合に`0x0049ECA0`へ進む経路を持つ。次の`local_34`が特殊値か、対象の`+0x28/+0x2C`が空区間であれば`DAT_0068B3A8`を選ぶ。そうでなければ`local_34+0
   制約・訂正　Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
 
+<a id="field-1c"></a>
+## param_1 + 0x1C
+
+- [research/recovered/b_batch6/data/T011_VALUE_POINTER_NODE_ERASE_20261025_15H.md 行 16](../../research/recovered/b_batch6/data/T011_VALUE_POINTER_NODE_ERASE_20261025_15H.md?plain=1#L16-L16) — - Ghidra既存擬似C crosscheck: FUN_00436680の(pcVar1+0x28)=*(param_1+0x1c)、FUN_00510030とFUN_00463070のfreeはkey文字列とnodeに限定。戻り値/レジスタ推定はASM優先（STATIC-GHIDRAは補助）。
+  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
+
 <a id="field-48"></a>
 ## param_1 + 0x48
 

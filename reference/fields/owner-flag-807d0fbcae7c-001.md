@@ -16,6 +16,12 @@
 - [research/recovered/rea_batch2/reports/REA_20261104_03H_P0_STREAMBUF_STATE1_GATE_STATIC.md 行 10](../../research/recovered/rea_batch2/reports/REA_20261104_03H_P0_STREAMBUF_STATE1_GATE_STATIC.md?plain=1#L10-L10) — 3. At 0x42AA80 (V9 function 0x42AA80..0x42AB0F), a virtual-adjusted receiver flag +0x14 bit 2 gates a subpath. If the adjusted +0x0C flags masked by 6 are zero,
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
 
+<a id="field-15"></a>
+## flag + 0x15
+
+- [research/recovered/b_batch6/data/T011_TRAINING_PARTIAL_RANGE_SUCCESSOR_PRESERVE_NATIVE_20261031_11H.md 行 16](../../research/recovered/b_batch6/data/T011_TRAINING_PARTIAL_RANGE_SUCCESSOR_PRESERVE_NATIVE_20261031_11H.md?plain=1#L16-L16) — [KB_CANDIDATE] 本ID / B/T011 / 0x4DEF6A,0x4DEF74,0x4DEF78,0x4DEF9A,0x4DEFB0,0x4DEFC4,0x4DEFCF,0x4DEFD4,0x4DEFDC / CALL0x4DEFCF→0x4DEC70 / left+0,right+8,parent+4
+  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
+
 <a id="field-75"></a>
 ## flag + 0x75
 

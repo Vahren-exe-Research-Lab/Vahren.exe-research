@@ -1,0 +1,20 @@
+# E-AUDIT-20261024-23H-T018-T019-T020-WORK-OBS-DECLARATION-01
+Owner E / T018 T019 T020. 2026-10-24 23時台 JST. STATIC direct-file read / source-scope crosswalk / VERIFY / NOT READY.
+## Primary read-only evidence
+- Installed: a_default/script/6000_スキルテスト/work_observation.dat, 2,100 bytes / 115 lines. Local get_file_info: modified 2026-10-14 02:05:28 JST, directly reread this run.
+- Prior E 22H audit: installed-only SHA256 64E1796E9FD8BC04C67A5B21A3BD79B58EBAF70E9D3858E41868755AD6807228, archive 590/590 same bytes and 1 extra. This run did NOT independently rehash archive or installed file.
+- All ten added top-level declarations were observed by reading the 115-line installed DAT: class work_obs_class (1); unit work_obs_actor/work_obs_target (2); spot work_obs_home/work_obs_field (2); power work_obs_player/work_obs_enemy (2); event work_obs_world/work_obs_fight (2); scenario work_obs_scenario (1). 1+2+2+2+2+1=10.
+- Every new declaration ID uses work_obs_ prefix. The 22H archive-byte audit found zero occurrences of work_obs_ in the 590 archived script DAT (old evidence reused, NOT a new cross-archive scan): no explicit same-name text collision with these ten names in the scanned set.
+- New declarations reference EXISTING types/data: class parent c_yaju; unit parent yaju; spot parent spc; power parent p_t; skill sw_karate0; map s1919. References to original definitions do NOT establish runtime independence.
+- scenario work_obs_scenario has sortkey=998, world=work_obs_world, fight=work_obs_fight, power=work_obs_player,work_obs_enemy, spot=work_obs_home,work_obs_field; both named event bodies are empty. CP932 Japanese display strings were not semantically decoded in this read; ASCII IDs and keywords only are used.
+## Golden and contradiction boundary
+- CONFIRMED: installed-only source introduces one separately named scenario and nine supporting declarations, not an explicit redeclaration of an existing named work_obs_ symbol. This refines the single EXTRA DAT finding; do not count ten new source-drift files.
+- VERIFY: directory enumeration, parser acceptance, global registry effects, menu sort/visibility, other symbol collisions, failed-parent impact, process loaded epoch, actual sci1 battle effect. Unique names and empty event bodies do NOT prove inertness.
+- T018 eligibility keeps separate gates: (A) exact archive-590 source-set purity FAIL for present installed 591; (B) scenario-specific original-behavior equivalence UNKNOWN until legitimate loader/scene and same-run receipts. Do not auto-reject historical 2026-10-21 captures due to later source observation without lineage evidence.
+- T020 designed-only comparisons: archive-only startup vs archive+extra startup; observe scenario list visibility/order and sci1 selection without modifying original; bind EXE/DAT-set/SAVE/launcher PID/reload/case G0-G2. No fixture executed; no new synthetic or gameplay PASS.
+- T019 new Wiki/DAT/EXE behavioral contradictions=0; existing installation-vs-archive source drift=1 (same prior finding, not added again).
+## Status, safety, restart
+- Legal C-NB02 G0 UI/source-target Spot, G1 same-run prebattle SAVE/input and time-domain proof, G2 actual MAP/three sides/ordered Unit-Troop all missing; G3/G4 missing. New DYNAMIC OBSERVED=0, actual Golden PASS=0, strict MATCH=0.
+- Last formally reported MASTER checkpoint196/READY596 (A115/B229/C136/D116), 34 tasks DONE9/IN_PROGRESS21/VERIFY4 (old, not recounted). New formal READY=0, offline candidates still not mass integrated.
+- Prior E T018 table, refused E T020 writes, C T026/T032, D T030 TSV, prohibited 0x5710C0 remain BLOCKED; no denied action retried via another route. No source game/other owner/REA/dev_lab/MASTER/Git/Work/schedule modifications.
+- Next: legal original process/source epoch and scenario menu observation, then G0/G1/G2 primary receipts; only merge uniquely owned READY evidence into current MASTER after ID/source SHA/time/conflict checks.

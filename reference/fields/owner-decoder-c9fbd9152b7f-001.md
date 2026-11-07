@@ -4,6 +4,33 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-58"></a>
+## decoder + 0x58
+
+- [research/recovered/rea_batch5/reports/REA_20261029_04H_P0_OGG_SEEKFAIL_REWIND_STATIC.md 行 18](../../research/recovered/rea_batch5/reports/REA_20261029_04H_P0_OGG_SEEKFAIL_REWIND_STATIC.md?plain=1#L18-L18) — - `0x005D04E0` は `0x005D0888`/`0x005D08E7`/`0x005D09DB`で同helperを呼ぶ。特に `0x005D08E7`直後、`0x005D08F3 MOV [EBP-0x10],EAX`、非0で `0x005D0B18` cleanupに進み、`0x005D0B39 MOV
+  制約・訂正　Historical author STATIC/VERIFY claims and audit counts only; current REF_AUDIO_VORBIS precedence; no new native/runtime/ABI/READY validation; linked evidence excluded
+
+<a id="field-68"></a>
+## decoder + 0x68
+
+- [research/recovered/rea_batch5/reports/REA_20261029_10H_P0_OGG_CODEBOOK_OWNERSHIP_STATIC.md 行 16](../../research/recovered/rea_batch5/reports/REA_20261029_10H_P0_OGG_CODEBOOK_OWNERSHIP_STATIC.md?plain=1#L16-L16) — - 一方 `0x005D4AE0` はdecoder instance側の領域 `decoder+0x68` と関連一時資産の後始末であり、**同じ共有表を通常decoder cleanupと二重解放するとは断定できない**。各間接destructorの副作用は未検証。
+  制約・訂正　Historical author STATIC/VERIFY claims and audit counts only; current REF_AUDIO_VORBIS precedence; no new native/runtime/ABI/READY validation; linked evidence excluded
+
+- [research/recovered/rea_batch5/reports/REA_20261029_10H_P0_OGG_CODEBOOK_OWNERSHIP_STATIC.md 行 18](../../research/recovered/rea_batch5/reports/REA_20261029_10H_P0_OGG_CODEBOOK_OWNERSHIP_STATIC.md?plain=1#L18-L18) — - `0x005D4D20` はcodebook自体のconsumer **ではない**。decoder+0x68・stream+4・codec+0x1Cを非NULL確認してdecoderのoffset/状態を初期化し、成功0、失敗-1を返す。wrapper `0x005D5BD0` はそのCALL `0x005D5B
+  制約・訂正　Historical author STATIC/VERIFY claims and audit counts only; current REF_AUDIO_VORBIS precedence; no new native/runtime/ABI/READY validation; linked evidence excluded
+
+<a id="field-2c4"></a>
+## decoder + 0x2C4
+
+- [research/recovered/rea_batch5/reports/REA_20261029_04H_P0_OGG_SEEKFAIL_REWIND_STATIC.md 行 13](../../research/recovered/rea_batch5/reports/REA_20261029_04H_P0_OGG_SEEKFAIL_REWIND_STATIC.md?plain=1#L13-L13) — - コールバック `decoder+0x2C4` がNULL、または間接CALL `0x005CEB53 CALL EAX` の返値が **-1** なら `0x005CEB78 MOV EAX,0xFFFFFF80`、戻り値 **-128**。`0x005CEB4E/50/51/52` は `0, high32, l
+  制約・訂正　Historical author STATIC/VERIFY claims and audit counts only; current REF_AUDIO_VORBIS precedence; no new native/runtime/ABI/READY validation; linked evidence excluded
+
+<a id="field-2c8"></a>
+## decoder + 0x2C8
+
+- [research/recovered/rea_batch5/reports/REA_20261029_02H_P0_OGG_STATE_CLOSE_STATIC.md 行 14](../../research/recovered/rea_batch5/reports/REA_20261029_02H_P0_OGG_STATE_CLOSE_STATIC.md?plain=1#L14-L14) — - `0x005D1701 MOV ESI,0x005B7A4E`（保存索引で`_fclose`、VS2010 CRT）、`0x005D170B MOV [EAX+8],ESI`でov_callbacksのcloseスロットへ設定。`0x005D14EE MOV [decoder+0x2C8],ECX`でDecoder
+  制約・訂正　Historical author STATIC/VERIFY claims and audit counts only; current REF_AUDIO_VORBIS precedence; no new native/runtime/ABI/READY validation; linked evidence excluded
+
 <a id="field-520"></a>
 ## decoder + 0x520
 

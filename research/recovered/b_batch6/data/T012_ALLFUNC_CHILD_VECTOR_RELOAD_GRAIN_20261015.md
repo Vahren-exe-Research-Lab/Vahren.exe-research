@@ -1,0 +1,15 @@
+# B-20261015-1210-01 | T012 allfunc 子技能配列の内外二重反復と再読タイミング
+- STATUS: B OWNER STATIC SAVED-X86 CANDIDATE / E FORMAL PENDING / original Gameplay PASS0 / new-old strict MATCH0 / Task DONE+0。
+- 対象: 迫真戦記同梱Vahren.exeの保存済み隔離対応SHA256 e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187。原本EXE非実行・非編集。
+- PRIMARY: B保存 exe/T012_ALLFUNC_FLOW_PROBE.txt のVA 0x5472E7..0x547474をread-only照合。新規binary抽出/逆解析なし。
+- 0x5472E7/0x5472ED: Skill+0x100/+0x104 begin/end取得、0x5472F3..0x54730Eはstride0x1Cでchild件数算出し0件なら0x547468(AL=1)へ。
+- 0x547318..0x547350: child ordinalに応じた28B要素を一時コピー(0x402710)、0x4678A0へ渡しresult Skill+0x74を得る。
+- 0x54735A..0x547370: rush上限の0→1 fallback、signed上限<=0は0x547431へ移動。
+- 0x547376..0x54742B: 正のrush上限の間、同一解決済み子Skillについて0x547FC0を呼び、EDIを増分・比較する内側loop。ここにはSkill+100/+104を再読む命令なし。
+- 0x547431/0x547437: 内側rush loop完了後またはskip後にSkill+100/+104を再取得。0x547441は28Bの外側child ordinal-offset増分、0x547446..0x547462で現在件数を再計算し次のchildを判断。
+- [CONFIRMED SAVED STATIC] 全子配列を一度だけ固定するのではなく「1子レコードのrush反復終了後」に配列を再読。各0x547FC0呼出直後ごとに再読するとは言えない。
+- [VERIFY] 0x547FC0/0x4678A0/別calleeによる実際の配列変更、再配置時のcursor有効性、合法Skillのrun到達、発射/命中/HP/MP/RNG・正常RET。
+- [DEDUP] T012§56はallfuncの主/子+74回数とAL、§58は+7C/+80による乱数。B-20261015-0709-01は別のkind2 57F077/7D per-child再読、B-20261015-1120-01は異なる+74 dispatch。今回の増分はallfunc側の外側childと内側rushの**再読粒度**だけ。
+- [REIMPLEMENT] allfunc child ordinalとchild cursor-offset、現在begin/end、child解決済みSkill、内側rush indexを分離。子の全rush実行後にbegin/end+件数を読み直す段階を記録する。通常kind2の各factory後再読と共通化する際は境界差を維持。
+- [GOLDEN DESIGNED/NOT RUN] 合法allfunc Skill子0/1/2、rush値0/1/2/-1、子vector可視変動が実行可能なら同旧SAVE SHA/seed/操作と新実装で可視投射時刻/数・HP/MP/次tickを比較。不可視配列だけの比較はINELIGIBLE。原作Gameplay PASS0・strict MATCH0。
+- [NEXT] 原作DATの子定義とSkill+100/+104のnative setterは未結合。保存済みB parser候補/継承資料でproducerを探す。T012最終発射・latch+1E560/方向+18688、T013対象優先と+A18/A1C、T011継承はOPEN。

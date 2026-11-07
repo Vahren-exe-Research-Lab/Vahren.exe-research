@@ -225,3 +225,5 @@ python -B knowledge\tools\research_index.py --check
 **VMの型付きメモリと追加回収（2026-11-05）:** [ScriptEngine事典](reference/structs/ScriptEngine.md)に6項目・18関係を採録。型が不明な時計は未登録のまま区別した。[E/REAの追加回収](research/recovered/README.md)は新しい本文82件と別名対応8件を記録した。
 
 **時間制限の読み書きと追加回収（2026-11-05）:** [時間制限のメモリ関係](research/recovered/BATTLE_LIMIT_MEMORY_REVIEW.md)に6関係を採録。取得ヘルパーが読む値と、更新ヘルパーが書く値を辿れる。E・REAの研究本文90件も全文回収した。
+
+**追加回収と旧研究チャット（2026-11-05）:** [回収入口](research/recovered/README.md)に研究本文127件を追加。[旧A/C/Dの選択回答](research/recovered/chat_finals/README.md)3件は、解析成果ではなく障害・再開位置の記録として保全した。

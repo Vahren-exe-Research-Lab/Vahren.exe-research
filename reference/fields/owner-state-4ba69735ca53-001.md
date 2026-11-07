@@ -22,6 +22,12 @@
 - [research/recovered/rea_batch4/reports/REA_20261030_08H_P0_OGG_FIXED16_PRODUCER_STATIC.md 行 32](../../research/recovered/rea_batch4/reports/REA_20261030_08H_P0_OGG_FIXED16_PRODUCER_STATIC.md?plain=1#L32-L32) — 独立Golden試験案：11,025Hz mono16/stereo16の有効Oggと44,100Hz stereo16対照を用意し、Lock HRESULT/返却領域サイズ、OvRead返却byte数、Unlock成否、PCM境界、state+0x54/+0x58、停止時刻を採取する。今回実ゲーム観測は0件。
   制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
 
+<a id="field-b20"></a>
+## state + 0xB20
+
+- [research/recovered/rea_batch5/reports/REA_20261029_10H_P0_OGG_CODEBOOK_OWNERSHIP_STATIC.md 行 13](../../research/recovered/rea_batch5/reports/REA_20261029_10H_P0_OGG_CODEBOOK_OWNERSHIP_STATIC.md?plain=1#L13-L13) — - `0x005D57C0` は解析済みストリームの共有コードブック表を **codec state +0xB20** に保持する。0なら `calloc(book_count, 0x38)` で作成し、各入力について **CALL `0x005D5B51` → `0x005DA070`** が表中の0x38-byte
+  制約・訂正　Historical author STATIC/VERIFY claims and audit counts only; current REF_AUDIO_VORBIS precedence; no new native/runtime/ABI/READY validation; linked evidence excluded
+
 <a id="field-1ef144"></a>
 ## state + 0x1EF144
 

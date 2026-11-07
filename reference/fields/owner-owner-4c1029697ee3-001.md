@@ -31,6 +31,12 @@
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 622](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L622-L622) — [CONFIRMED-SAVED-NATIVE / NEW CALLERS] A62で既知のload末尾0x45F5B2..0x45F5BB（ESI=[owner+0x2C]+0x504）→0x432010に加え、D所有read-only `exe/T015_WINDOW_INPUT_GLOBAL_XREFS.txt`
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
 
+<a id="field-30"></a>
+## owner + 0x30
+
+- [research/recovered/b_batch6/data/T012_EFFECT_REGISTRATION_DUAL_SINK_20261013.md 行 5](../../research/recovered/b_batch6/data/T012_EFFECT_REGISTRATION_DUAL_SINK_20261013.md?plain=1#L5-L5) — [4C3DC0 STATE] ECX=manager-like owner, EAX=child task-like ptr。0x4C3DC5 [owner+0x30]+=10、0x4C3DCE [child+0x54]=更新値。その後child vtable+0x38を呼び戻EAXがsigned負ならowner+0x
+  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
+
 <a id="field-48"></a>
 ## owner + 0x48
 

@@ -10,4 +10,10 @@
 - [research/recovered/rea_batch2/reports/REA_20261103_09H_P0_THREE_SIDE_VCALL_PRENULL_GUARD_ORDER_STATIC.md 行 12](../../research/recovered/rea_batch2/reports/REA_20261103_09H_P0_THREE_SIDE_VCALL_PRENULL_GUARD_ORDER_STATIC.md?plain=1#L12-L12) — - **Important guard-order distinction:** later at `0x48D913..927`, `0x48DA05..19`, and `0x48DAF7..DB0B`, the respective same three slots *are* tested against ze
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
 
+<a id="field-1d0"></a>
+## pointer + 0x1D0
+
+- [research/recovered/b_batch6/data/T012_DUAL_RUSH_BRANCH_SPECIFIC_REGISTRATION_CROSSJOIN_20261017.md 行 5](../../research/recovered/b_batch6/data/T012_DUAL_RUSH_BRANCH_SPECIFIC_REGISTRATION_CROSSJOIN_20261017.md?plain=1#L5-L5) — [REUSE REGISTRATION] 54F720 VA54F749→54F74Cのpool pointer+0x1D0==0なら54F7D0→54F7DD CALL54F990(init byte+1D0=1)、54F7EC CALL4C2240(manager+0x64/+0x68 pending vector
+  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

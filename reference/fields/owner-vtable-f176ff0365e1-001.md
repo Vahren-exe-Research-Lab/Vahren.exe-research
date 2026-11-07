@@ -16,11 +16,20 @@
 - [research/recovered/e_batch3/T020_FASTSIM_PRESELECTOR_BRANCH_GATE_20261023_1952.md 行 19](../../research/recovered/e_batch3/T020_FASTSIM_PRESELECTOR_BRANCH_GATE_20261023_1952.md?plain=1#L19-L19) — 前18:50版のprimary vtable +0x0C/0x452D90、+0xA4/+0x84判定は既知として加算せず、今回追加したのはそれ以前の3段階ゲート（mode・+19C・0x431FB0）である。
   制約・訂正　Historical authored claims only; referenced payloads not opened or executed; no new native/runtime/Golden/strict MATCH/READY; related excluded body composites remain deferred
 
+- [research/recovered/e_batch4/T020_FASTSIM_RETURN0_PRIMARY_VTABLE_DRAW_GATE_20261023_1850.md 行 10](../../research/recovered/e_batch4/T020_FASTSIM_RETURN0_PRIMARY_VTABLE_DRAW_GATE_20261023_1850.md?plain=1#L10-L10) — primary vtable+0x0C、PE VA 0x00638080に原EXE実ポインタ 0x00452D90 を確認。secondary+0x04は別の 0x0040E220 であり混同禁止。
+  制約・訂正　Historical authored claims only; referenced payloads not opened or executed; actual INELIGIBLE/NOT RUN and historical counts preserved; no new native/runtime/Golden/strict MATCH/READY; excluded composites remain deferred outside this subset
+
 <a id="field-10"></a>
 ## vtable + 0x10
 
 - [research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md 行 10](../../research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md?plain=1#L10-L10) — `h=[stream+0x28]>>1`（0x005023EC/0x005023F0）。workerは `0x00502445` でGetCurrentPosition（vtable+0x10）を呼ぶ。
   制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [research/recovered/rea_batch5/reports/REA_20261028_09H_P0_OGG_VTABLE_READBACK.md 行 4](../../research/recovered/rea_batch5/reports/REA_20261028_09H_P0_OGG_VTABLE_READBACK.md?plain=1#L4-L4) — 対象: OggDecoder ctor vptr 0x006395CC / indirect CALL site 0x0050202A / vtable+0x10 target 0x00501EB0。
+  制約・訂正　Historical author STATIC/VERIFY claims and audit counts only; current REF_AUDIO_VORBIS precedence; no new native/runtime/ABI/READY validation; linked evidence excluded; held VA appears solely in explicit historical no-retry instruction, retained without analysis
+
+- [research/recovered/rea_batch5/reports/REA_20261028_09H_P0_OGG_VTABLE_STATIC.md 行 16](../../research/recovered/rea_batch5/reports/REA_20261028_09H_P0_OGG_VTABLE_STATIC.md?plain=1#L16-L16) — - 従って、**このコンストラクタから渡されたvptrが維持される経路**に限り、間接CALL `0x0050202A` は `0x00501EB0`（vtable+0x10）に解決する。一般の仮想呼出し全体を解決したわけではない。
+  制約・訂正　Historical author STATIC/VERIFY claims and audit counts only; current REF_AUDIO_VORBIS precedence; no new native/runtime/ABI/READY validation; linked evidence excluded
 
 <a id="field-1c"></a>
 ## vtable + 0x1C
@@ -36,6 +45,9 @@
 
 <a id="field-28"></a>
 ## vtable + 0x28
+
+- [research/recovered/b_batch6/data/T011_UNIT_EFFECT_RING_OWNER_4DFB00_20261013.md 行 6](../../research/recovered/b_batch6/data/T011_UNIT_EFFECT_RING_OWNER_4DFB00_20261013.md?plain=1#L6-L6) — [R INITIAL FIELDS] 4DFB0C/0F R+40/+44=0、4DFB17/1A R+48/+4C=0x20(32)、+50/+54/+58=0、+5C=0xFF、+60=0xFFFFFF、byte+64=0、0x4DFB3E `call [R.vtable+0x28]`（vtableは入場時既存、当
+  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
 
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 424](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L424-L424) — [VERIFY] vtable+0x28 concrete target、mask0x6の各bitの意味/branch reachability、fallback globalのbuffer境界と0x42A340の入出力、WriteFile error/short writeの実効。ゲーム側の正常saveで各経路が起こ
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation

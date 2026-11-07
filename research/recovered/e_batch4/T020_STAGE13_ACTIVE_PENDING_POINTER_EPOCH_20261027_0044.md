@@ -1,0 +1,23 @@
+# E-AUDIT-20261027-0044-T020-ACTIVE-PENDING-EPOCH-01
+Owner: E / T018,T020. Snapshot: 2026-10-27 00:44 JST. STATIC / ARCHIVED ORIGINAL BYTE REPLAY / VERIFY / NOT READY / GAMEPLAY NOT RUN.
+## Sources and independent new delta
+Local Compact: MASTER_LEDGER.md, ANALYSIS_LANES_PROTOCOL.md, A-D HANDOFF, E T018/T019/T020, dev_lab/docs/IMPLEMENTATION_PLAN.md, REA README, search_index README + BUILD_MANIFEST, and Stage13 archived original RAW and SUMMARY. No original EXE, Ghidra, Java, Work or modified DAT execution.
+EXE identifier (source metadata, NOT newly rehashed): E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187.
+RAW sessions: 2026-10-21T16:31:00Z PID28432 (S1) and T16:46:22Z PID32468 (S2), B-owned. Independent SHA256(bytes) versus each archived SUMMARY and EXE identifier check PASS 8/8. Cross-pool check uses M=game_manager_base+0xC; active vector M+0x2C and pending M+0x64, all pointers 32-bit; bounded captured memory only.
+Across all eight RAW records, intersection of nonzero active Task-slot pointer values and nonzero pending Task-slot pointer values is exactly 0 (8/8). Within each vector no duplicate nonzero pointer values. This is an empirical bound for these RAW only, NOT a native invariant for every frame or task identity proof.
+S1: RAW01 active=939,pending=167; RAW02 active=1209,pending=4; RAW03 active=1635,pending=0; RAW05 active=1373,pending=0 (nonzero counts).
+S2: RAW01 active=949,pending=157; RAW02 active=1269,pending=0; RAW04 active=1804,pending=0; RAW05 active=1542,pending=0 (nonzero counts).
+## New temporal pointer-value crosswalk
+Consecutive retained RAWs: S1 #01 pending to #02 active =48/167 pointer values; S1 #02 pending to #03 active=4/4; S2 #01 pending to #02 active=82/157. In all inspected adjacent pairs, previous pending to current pending intersection=0.
+Other retained adjacent pairs had prior pending=0. S1 #04 and S2 #03 are FAILED capture attempts with no complete pointer-array payload; #03->#05 and #02->#04 cannot be treated as consecutive atomic frames.
+The 48,4,82 overlaps are repeated 32-bit address values, not confirmed identical Task objects, same generation, enqueue/dequeue causality, or a native promise that pending entries move to active. Allocator reuse, intermediate lifecycle and time gaps remain VERIFY.
+## E acceptance/regression contract
+Do not add active+pending slot counts to infer independent live Tasks or deployed Unit/Troop count without zero/alias handling; per-snapshot sampled active/pending disjointness is evidence-specific, not a universal rule. For G2 require actual ordered Unit/Troop and role/map provenance of the SAME legally opened battle, not these task pools.
+Script: tests/t020_stage13_active_pending_alias_audit_20261027_0044.py (SHA256 DE99824214A96E6846A9CE2EB7A7D4A54014E221F9B1ABE18D65102FA319E6C2). PASS archived RAW 8/8; zero claim of new original-game execution or old/new strict match. New test was executed twice after an E-owned-only improvement; latest execution PASS.
+Next B/REA recommendation (no changes made to B/REA): if investigating task transitions, capture stable Task identity/generation and bounded fields at the same well-defined pause boundary; raw pointers across time are insufficient.
+## Integration, regressions, recovery
+MASTER last formal checkpoint196, READY596=A115/B229/C136/D116 (confirmed ledger inherited; all READY IDs not re-enumerated); 34 Task DONE9/IN_PROGRESS21/VERIFY4 is 2026-10-26 23:55 verification inherited, not recounted here. New formal READY ID 0.
+Legal C-NB02 G0 actual UI route + source/target Spot, G1 same-run immediately prior SAVE bytes/SHA and input, G2 real MAP + three-side participation/deployed Unit/Troop, G3 result, G4 World delta: all NOT QUALIFIED. New E DYNAMIC OBSERVED0 / actual Golden PASS0 / strict MATCH0.
+T019 newly confirmed contradictions0. GameClear DAT13/TXT2 scope discrepancy RESOLVED; script2 precedence, phase flags, TXT runtime loading, gwrite return VERIFY. No new actual game regression run; previous Golden/strict counts remain 0.
+Prior T018 table-boundary and E safety refusals, C T026/T032, D T030 TSV, prohibited 0x5710C0 remain BLOCKED without retry, reroute or bypass. Earlier OFFLINE-UNSYNCED remains unintegrated. No new safety refusals; no original/MASTER/A-D/REA/dev_lab/Git/Work/settings/automations changes.
+Resume: prioritize lawful same-battle G0/G1/G2 receipts before further archived pointer diagnostics; verify MASTER latest checkpoint, ownership, ID duplicates, READY source SHA and conflicts before any one-time formal merge.
