@@ -4,8 +4,29 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-16c"></a>
+## Unit + 0x16C
+
+- [research/recovered/exp/EXP_SUMMON_OWNER_RESEARCH.md 行 29](../../research/recovered/exp/EXP_SUMMON_OWNER_RESEARCH.md?plain=1#L29-L29) — [STATIC-PSEUDOC] 0x551E50はBattleUnit+0x1C8のUnit+0x16CへEXPを加算。+0x1CC経由の加算はこの関数にない。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; early unresolved cache/lifetime questions refined by CACHE_STRING_KEY, ENDTRANSFER, LIFECYCLE; wiki refusal is metadata only, held draft not copied
+
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 332](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L332-L332) — - 既往T012§59の0x551E50はhit context one-shot後、battle Unit+0x1C8のlinked Unit+0x16Cを増分し+0x170と閾値比較する。今回、同offset群のUnit serializer出力側が別証拠で揃った。ただし0x551E50のlinked対象とwrit
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+<a id="field-170"></a>
+## Unit + 0x170
+
+- [research/recovered/b_batch5/data/T011_LEVELUP_11FIELD_RECALC_CACHE_GATE_20261021_17H.md 行 8](../../research/recovered/b_batch5/data/T011_LEVELUP_11FIELD_RECALC_CACHE_GATE_20261021_17H.md?plain=1#L8-L8) — 1. `0x58A650`入口はGhidra擬似Cで`*(uint*)(Unit+0x170) <= *(uint*)(Unit+0x16C)`の**unsigned**閾値判定。従来T011 03:09資料の既存知見で再計上しない。
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
 <a id="field-178"></a>
 ## Unit + 0x178
+
+- [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/HANDOFF.md 行 49](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/HANDOFF.md?plain=1#L49-L49) — - **[ON-STAND-010新発見] SUMMON_PARENT_NATIVE_DAT_BOUNDARY_20261025.md**：既存Ghidra V9で召喚親子リンクを検証。親Unit+0x178/17C/180＝子ポインタ一覧、0x5774A0＝子登録、0x577600＝子数を用いた召喚上限判定、0x54
+  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+
+- [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/STAND_DISC_GENERIC_TRANSFER_FEASIBILITY_20261025.md 行 35](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/STAND_DISC_GENERIC_TRANSFER_FEASIBILITY_20261025.md?plain=1#L35-L35) — Unit+0x178/17C/180 に原作の召喚子Unitベクタを確認。登録処理0x005774A0、召喚可能数検査0x00577600、術者死亡時のelement_lost処理0x005445E0/0x00575A60。親子管理を新規開発する必要はない。**ただしDATの親別・技能別子取得/生存中の親からの子だけ消
+  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
 
 - [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/STAND_SPEC.md 行 10](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/STAND_SPEC.md?plain=1#L10-L10) — [USER_FIXED] **スタンドは別枠で厳密に管理**。既存DATの召喚・攻撃・耐性・衛星追従を最大限利用し、DATのみでは保証できない不変条件だけ最小の戦闘アダプタで補う。原作には Unit+0x178～0x180 の親→子ベクタがあるので独自親子台帳を作り直さない。
   制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
@@ -330,20 +351,5 @@
 
 - [research/recovered/b_batch10/data/T013_TROOP_MODE_EXPR_RTTI_DEDUP_NATIVE_20261024_0015.md 行 21](../../research/recovered/b_batch10/data/T013_TROOP_MODE_EXPR_RTTI_DEDUP_NATIVE_20261024_0015.md?plain=1#L21-L21) — [VERIFY] ExpresStringからmap entryの実数値、欠損名追加時の副作用、0x49CCA0の例外とESI引数保証、Unit+0x1D0の所有/共有、候補順、+0x5158E0例外時状態、DAT命令名と実ゲーム行動、RNG。
   制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
-
-- [research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md 行 32](../../research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md?plain=1#L32-L32) — - `0x5284A0`では入力Unitが非NULLで `Unit+0x8C==0`、`Unit+0x1F8!=0`、`Unit+0x1867C==0`、`Unit+0x1D0!=0`、`Unit+0x1867E==0`、`Unit+0x1FA==0` の条件で `0x5284E2→0x568710` の後 `0x52
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md 行 10](../../research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md?plain=1#L10-L10) — - 通過したUnitについて 0x5150BB..C7 が UnitData=[Unit+0x1C8] の +0x1C4 DWORDをobj+0x88へ加算。さらに Unit+0x1D0 !=0 のときだけ0x5150A9..B5で同じ値をobj+0x8Cへ加算。意味名/符号/overflow/合法NULLはVERIF
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_batch4/data/B_T012_T024_VOICE_EXPIRY_ROUTING_OFFLINE_20261022_1210.md 行 15](../../research/recovered/b_batch4/data/B_T012_T024_VOICE_EXPIRY_ROUTING_OFFLINE_20261022_1210.md?plain=1#L15-L15) — 3. `FUN_0057B380` の外側の入場条件は単純な無条件実行ではない。少なくとも `Unit+0x1867E == 0`、32-bit符号付き `Unit+0xC0 >=0`、`Unit+0xD0 >=0` が必要で、さらに `+0x8C!=0`、`+0x1F8==0`、`+0x1F9!=0`、`+0x186
-  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
-
-- [research/recovered/b_batch6/data/T011_T012_T013_T024_T028_UNSYNCED_RECOVERY_REGISTER_20261020.md 行 43](../../research/recovered/b_batch6/data/T011_T012_T013_T024_T028_UNSYNCED_RECOVERY_REGISTER_20261020.md?plain=1#L43-L43) — \| `B-OFFLINE-20261020-0908-03` \| T013 \| 支援能力、混乱、`unit_element_heal`、`Unit+0x1D0`の16合成条件 \| 候補収集と実際の支援技能成功を区別 \|
-  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
-
-- [research/recovered/b_batch8/data/T013_CASE8_LEXICAL_TREE_COMPARATOR_NATIVE_V9_20261024_0217.md 行 11](../../research/recovered/b_batch8/data/T013_CASE8_LEXICAL_TREE_COMPARATOR_NATIVE_V9_20261024_0217.md?plain=1#L11-L11) — [EXISTING-CROSSJOIN] 01:10の0x49E8B0 alive filter +1867C、tree successor、global vector 0xB050E0と00:15のUnit+0x1D0 visited-Troop dedupは既知として再計数0。今回の差分はtree比較の実byte・
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

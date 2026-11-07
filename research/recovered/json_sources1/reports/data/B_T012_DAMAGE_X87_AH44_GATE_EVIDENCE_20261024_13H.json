@@ -1,0 +1,104 @@
+{
+  "research_id": "B-OFFLINE-20261024-13H-T012-DAMAGE-X87-FLAG-GATE-01",
+  "recovery_id": "B-RC-20261024-13H-LOCAL-SESSION-LIBRARY-DELTA-01",
+  "source": "2026-10-24 11:11 existing B saved PE-hex evidence only; NOT newly accessed EXE",
+  "original_exe_sha256_prior_only": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "source_artifact": "B_T012_T028_STATIC_RETURN_DEATHBRANCH_EVIDENCE_20261024_1111.json",
+  "source_research_id": "B-OFFLINE-20261024-1111-T012-T028-STATIC-RETURN-DEATHBRANCH-01",
+  "window": {
+    "start_va": "0x005510E1",
+    "end_va_exclusive": "0x00551156",
+    "byte_count": 117,
+    "sha256": "BDB6A82E2E265E72DC8323CC2855694F456532DB208C6DD82507A9010D9458DB",
+    "hex": "8B54241083FA0A750433FFEB688B7508DD86800200008BCFD9EEDAE9DFE0F6C4447A0433C9EB3B837C24180675048BCFEB3085D27507B940420F00EB2580BB7E860100007411DB442448DC0D80BD6500E84A0A08008BC8A1A4BD65003BC87D028BC88B45048B138B5270508B45005650518BCBFFD2"
+  },
+  "disassembler": "GNU objdump binary i386 Intel syntax",
+  "disassembly": "5510e1:\t8b 54 24 10          \tmov    edx,DWORD PTR [esp+0x10]\n  5510e5:\t83 fa 0a             \tcmp    edx,0xa\n  5510e8:\t75 04                \tjne    0x5510ee\n  5510ea:\t33 ff                \txor    edi,edi\n  5510ec:\teb 68                \tjmp    0x551156\n  5510ee:\t8b 75 08             \tmov    esi,DWORD PTR [ebp+0x8]\n  5510f1:\tdd 86 80 02 00 00    \tfld    QWORD PTR [esi+0x280]\n  5510f7:\t8b cf                \tmov    ecx,edi\n  5510f9:\td9 ee                \tfldz\n  5510fb:\tda e9                \tfucompp\n  5510fd:\tdf e0                \tfnstsw ax\n  5510ff:\tf6 c4 44             \ttest   ah,0x44\n  551102:\t7a 04                \tjp     0x551108\n  551104:\t33 c9                \txor    ecx,ecx\n  551106:\teb 3b                \tjmp    0x551143\n  551108:\t83 7c 24 18 06       \tcmp    DWORD PTR [esp+0x18],0x6\n  55110d:\t75 04                \tjne    0x551113\n  55110f:\t8b cf                \tmov    ecx,edi\n  551111:\teb 30                \tjmp    0x551143\n  551113:\t85 d2                \ttest   edx,edx\n  551115:\t75 07                \tjne    0x55111e\n  551117:\tb9 40 42 0f 00       \tmov    ecx,0xf4240\n  55111c:\teb 25                \tjmp    0x551143\n  55111e:\t80 bb 7e 86 01 00 00 \tcmp    BYTE PTR [ebx+0x1867e],0x0\n  551125:\t74 11                \tje     0x551138\n  551127:\tdb 44 24 48          \tfild   DWORD PTR [esp+0x48]\n  55112b:\tdc 0d 80 bd 65 00    \tfmul   QWORD PTR ds:0x65bd80\n  551131:\te8 4a 0a 08 00       \tcall   0x5d1b80\n  551136:\t8b c8                \tmov    ecx,eax\n  551138:\ta1 a4 bd 65 00       \tmov    eax,ds:0x65bda4\n  55113d:\t3b c8                \tcmp    ecx,eax\n  55113f:\t7d 02                \tjge    0x551143\n  551141:\t8b c8                \tmov    ecx,eax\n  551143:\t8b 45 04             \tmov    eax,DWORD PTR [ebp+0x4]\n  551146:\t8b 13                \tmov    edx,DWORD PTR [ebx]\n  551148:\t8b 52 70             \tmov    edx,DWORD PTR [edx+0x70]\n  55114b:\t50                   \tpush   eax\n  55114c:\t8b 45 00             \tmov    eax,DWORD PTR [ebp+0x0]\n  55114f:\t56                   \tpush   esi\n  551150:\t50                   \tpush   eax\n  551151:\t51                   \tpush   ecx\n  551152:\t8b cb                \tmov    ecx,ebx\n  551154:\tff d2                \tcall   edx",
+  "flag_cases": [
+    {
+      "case": "ordered 0<value",
+      "C3": 0,
+      "C2": 0,
+      "C0": 1,
+      "AH_mask_0x44": "0x00",
+      "JP_taken": true,
+      "next_va": "0x00551108"
+    },
+    {
+      "case": "ordered 0>value",
+      "C3": 0,
+      "C2": 0,
+      "C0": 0,
+      "AH_mask_0x44": "0x00",
+      "JP_taken": true,
+      "next_va": "0x00551108"
+    },
+    {
+      "case": "ordered 0=value",
+      "C3": 1,
+      "C2": 0,
+      "C0": 0,
+      "AH_mask_0x44": "0x40",
+      "JP_taken": false,
+      "next_va": "0x00551104"
+    },
+    {
+      "case": "unordered (NaN)",
+      "C3": 1,
+      "C2": 1,
+      "C0": 1,
+      "AH_mask_0x44": "0x44",
+      "JP_taken": true,
+      "next_va": "0x00551108"
+    }
+  ],
+  "key_sites": {
+    "scale_double": "0x005510F1 [ESI+0x280]",
+    "fucompp": "0x005510FB",
+    "fnstsw": "0x005510FD",
+    "test_ah": "0x005510FF TEST AH,0x44",
+    "jp": "0x00551102 JP 0x00551108",
+    "zero_case": "0x00551104 XOR ECX,ECX",
+    "zero_branch_to_call": "0x00551106 JMP 0x00551143",
+    "resist10_skip": "0x005510E5 CMP EDX,0x0A / 0x005510EC JMP 0x00551156",
+    "mode6": "0x00551108 CMP DWORD PTR [ESP+0x18],6",
+    "resist0_sentinel": "0x00551117 MOV ECX,0xF4240",
+    "signed_floor": "0x0055113D CMP ECX,EAX / 0x0055113F JGE",
+    "vcall": "0x00551154 CALL EDX"
+  },
+  "not_proven": [
+    "game executable re-hashed this run",
+    "NaN reachability in legal DAT",
+    "FPU exception masking",
+    "dynamic per-unit dispatch",
+    "gameplay golden match",
+    "current PC duplication status"
+  ],
+  "dedup_reused": [
+    "T012 resistance 10 skip and minimum damage route existing",
+    "B-20261015-1817-01 unrelated x87 NaN distance test",
+    "2026-10-24 10:16/11:11/12:09 B reports original CALL sites"
+  ],
+  "pc_connection_attempt_error": "INVALID_ARGUMENT: McpServerError: Session terminated",
+  "connection_class": "CONNECTION",
+  "pc_read_write": false,
+  "new_ready": 0,
+  "golden_pass": 0,
+  "strict_match": 0,
+  "state": [
+    "OFFLINE-UNSYNCED",
+    "STATIC-RECORDED-PE",
+    "ISA-DERIVED",
+    "VERIFY",
+    "NOT READY"
+  ],
+  "recovery_status": {
+    "old_1209_library_full_version": "RESTORED_READBACK_2_OF_2",
+    "md_sha256": "54732BCAFE3B469B2B4F8CDB46F6F6C7A291D080565149391C1CA76E9D5BE1D3",
+    "json_sha256": "02F90F3BDDFD4EAB4B733A82297073033ED9F4F3C3F04DB36ED371BF0813931F",
+    "transport_error": "container_session_unavailable on container_path",
+    "fallback": "existing conversation source_file_ref snapshot",
+    "pc_synced": false,
+    "new_13h_files": "CONTAINER_ONLY_LIBRARY_NOT_SYNCED"
+  }
+}

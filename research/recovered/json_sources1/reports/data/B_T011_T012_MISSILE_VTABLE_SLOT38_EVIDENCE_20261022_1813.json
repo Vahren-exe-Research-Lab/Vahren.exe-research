@@ -1,0 +1,318 @@
+{
+  "research_id": "B-OFFLINE-20261022-1813-T011-T012-MISSILE-VTABLE-SLOT38-01",
+  "recovery_id": "B-RC-20261022-1813-LOCAL-SESSION-TERMINATED-01",
+  "owner": [
+    "T011",
+    "T012"
+  ],
+  "classification": "OFFLINE-UNSYNCED / STATIC-ASM / STATIC-SYMBOL / INFERRED / VERIFY / NOT READY",
+  "source": {
+    "library_archive": "/HAKUSHIN067_AI_OFFLINE_PACK_20261021.zip",
+    "sha256_zip": "911E5E37A3F9BD5B36F929AF94B0D1E2CD1CD5CF34E3E2F16C8FC800ABF5F7C2",
+    "file_count": 34,
+    "zip_crc": "PASS",
+    "manifest_sqlite_sha256": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF",
+    "sqlite_integrity": "ok",
+    "exe_library": "/Vahren.exe",
+    "exe_sha256_direct": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+    "exe_executed": false,
+    "pc_latest_master_verified": false
+  },
+  "vtables": {
+    "Missile": {
+      "base": "0x0063A544",
+      "rtti_col": "0x0063F7C8",
+      "slots": {
+        "+0x00": {
+          "entry_va": "0x0063A544",
+          "function_va": "0x0051E550"
+        },
+        "+0x04": {
+          "entry_va": "0x0063A548",
+          "function_va": "0x0054BA00"
+        },
+        "+0x24": {
+          "entry_va": "0x0063A568",
+          "function_va": "0x0054D8E0"
+        },
+        "+0x30": {
+          "entry_va": "0x0063A574",
+          "function_va": "0x0054D940"
+        },
+        "+0x38": {
+          "entry_va": "0x0063A57C",
+          "function_va": "0x0054D970"
+        },
+        "+0x3C": {
+          "entry_va": "0x0063A580",
+          "function_va": "0x00402CD0"
+        },
+        "+0x40": {
+          "entry_va": "0x0063A584",
+          "function_va": "0x00546A20"
+        },
+        "+0x54": {
+          "entry_va": "0x0063A598",
+          "function_va": "0x0054DB60"
+        },
+        "+0x58": {
+          "entry_va": "0x0063A59C",
+          "function_va": "0x0054DCA0"
+        }
+      }
+    },
+    "SimpleMissile": {
+      "base": "0x0063A5A4",
+      "rtti_col": "0x0063F76C",
+      "slots": {
+        "+0x00": {
+          "entry_va": "0x0063A5A4",
+          "function_va": "0x0051E550"
+        },
+        "+0x04": {
+          "entry_va": "0x0063A5A8",
+          "function_va": "0x00552030"
+        },
+        "+0x24": {
+          "entry_va": "0x0063A5C8",
+          "function_va": "0x0054D8E0"
+        },
+        "+0x30": {
+          "entry_va": "0x0063A5D4",
+          "function_va": "0x0054D940"
+        },
+        "+0x38": {
+          "entry_va": "0x0063A5DC",
+          "function_va": "0x0054D970"
+        },
+        "+0x3C": {
+          "entry_va": "0x0063A5E0",
+          "function_va": "0x00402CD0"
+        },
+        "+0x40": {
+          "entry_va": "0x0063A5E4",
+          "function_va": "0x00546A20"
+        },
+        "+0x54": {
+          "entry_va": "0x0063A5F8",
+          "function_va": "0x00552E60"
+        },
+        "+0x58": {
+          "entry_va": "0x0063A5FC",
+          "function_va": "0x00552EF0"
+        }
+      }
+    }
+  },
+  "method_function_meta": {
+    "0x004BC4F0": {
+      "name": "FUN_004bc4f0",
+      "code_chars": 9023,
+      "code_sha256": "5D98485DAE1278516AD00AFDEE3ADDF19F7CE2EA686B802FBBACF89F8F7F6F5A"
+    },
+    "0x004C5910": {
+      "name": "FUN_004c5910",
+      "code_chars": 1572,
+      "code_sha256": "BF597452DE28C467495DDE82BF8F4839566F52E3D5C6E5408E33FFE7FF8D2CE6"
+    },
+    "0x00582240": {
+      "name": "FUN_00582240",
+      "code_chars": 7149,
+      "code_sha256": "F22B035809566DCDAF978AE585B8C0EC93E6B1FE2D6317CC3C7165E30FE93235"
+    },
+    "0x0054A1F0": {
+      "name": "FUN_0054a1f0",
+      "code_chars": 7167,
+      "code_sha256": "0A93B75A7C633D09FC92BD8A5F78DD04CC8E4B8BFC30B252AAA1E5B9ADAEC865"
+    },
+    "0x0054D970": {
+      "name": "FUN_0054d970",
+      "code_chars": 539,
+      "code_sha256": "1965DE111833CB45A584E660CE15250F23DEF5ECDFB5CA7A6AF470BB934CEE20"
+    },
+    "0x0054D8E0": {
+      "name": "FUN_0054d8e0",
+      "code_chars": 920,
+      "code_sha256": "AA8229C1A54669AB785C8C1DF361673E1161DF5BFB11DA2AEB3881ABDB383A2F"
+    },
+    "0x0054D940": {
+      "name": "FUN_0054d940",
+      "code_chars": 566,
+      "code_sha256": "4098E8D5C43C1925BD9CD681F070BE2235A0B834F44749B391C0CD3A0D0EE609"
+    },
+    "0x00402CD0": {
+      "name": "FUN_00402cd0",
+      "code_chars": 347,
+      "code_sha256": "C67E50A12371516CF3AF36FF940ED6E401FFB2757FA9BE8E61E5F7FCE3123E6A"
+    },
+    "0x00546A20": {
+      "name": "FUN_00546a20",
+      "code_chars": 365,
+      "code_sha256": "DDD9602E264A36E503EB82E7C93EA1F1E577561B17B11397AE086E3ADC910B29"
+    }
+  },
+  "prior_index_blindspot": [
+    {
+      "function_va": "0x0054D970",
+      "db_direct_caller_count": 0,
+      "db_pointer_refs_count": 0,
+      "pe_rdata_raw_little_endian_locations": [
+        "0x0063A57C",
+        "0x0063A5DC"
+      ]
+    },
+    {
+      "function_va": "0x0054D940",
+      "db_direct_caller_count": 0,
+      "db_pointer_refs_count": 0,
+      "pe_rdata_raw_little_endian_locations": [
+        "0x0063A574",
+        "0x0063A5D4"
+      ]
+    },
+    {
+      "function_va": "0x0054D8E0",
+      "db_direct_caller_count": 0,
+      "db_pointer_refs_count": 0,
+      "pe_rdata_raw_little_endian_locations": [
+        "0x0063A568",
+        "0x0063A5C8"
+      ]
+    }
+  ],
+  "direct_calls_to_generic_consumers": {
+    "0x004C5910": [
+      {
+        "caller_va": "0x004C55A0",
+        "call_site_va": "0x004C567B"
+      },
+      {
+        "caller_va": "0x004C55A0",
+        "call_site_va": "0x004C56C2"
+      },
+      {
+        "caller_va": "0x004C55A0",
+        "call_site_va": "0x004C5725"
+      }
+    ],
+    "0x004BC4F0": [
+      {
+        "caller_va": "0x004C3EB0",
+        "call_site_va": "0x004C4142"
+      }
+    ]
+  },
+  "original_native_byte_assertions": [
+    {
+      "va": "0x005823FB",
+      "native_hex": "C7 06 44 A5 63 00",
+      "pass": true
+    },
+    {
+      "va": "0x0054A3AB",
+      "native_hex": "C7 06 A4 A5 63 00",
+      "pass": true
+    },
+    {
+      "va": "0x004BC67E",
+      "native_hex": "8B 42 40",
+      "pass": true
+    },
+    {
+      "va": "0x004BC693",
+      "native_hex": "8B 42 38",
+      "pass": true
+    },
+    {
+      "va": "0x004BC69F",
+      "native_hex": "8B 42 3C",
+      "pass": true
+    },
+    {
+      "va": "0x004C5950",
+      "native_hex": "8B 50 38",
+      "pass": true
+    },
+    {
+      "va": "0x004C596D",
+      "native_hex": "8B 50 3C",
+      "pass": true
+    },
+    {
+      "va": "0x004C5991",
+      "native_hex": "0F 9C C0",
+      "pass": true
+    },
+    {
+      "va": "0x0054D985",
+      "native_hex": "8B 81 E4 00 00 00",
+      "pass": true
+    },
+    {
+      "va": "0x0054D997",
+      "native_hex": "25 40 42 0F 00",
+      "pass": true
+    },
+    {
+      "va": "0x0054D930",
+      "native_hex": "FF E0",
+      "pass": true
+    }
+  ],
+  "virtual_dispatch": [
+    {
+      "site_va": "0x004BC67E",
+      "slot": "+0x40",
+      "description": "candidate filter; +3 == 3, effectively returned 0 for 32-bit modulo"
+    },
+    {
+      "site_va": "0x004BC693",
+      "slot": "+0x38",
+      "description": "writes dispatched object +0x04 after filter"
+    },
+    {
+      "site_va": "0x004BC69F",
+      "slot": "+0x3C",
+      "description": "writes dispatched object +0x08 after filter"
+    },
+    {
+      "site_va": "0x004C5950",
+      "slot": "+0x38",
+      "description": "first virtual sort key fetch"
+    },
+    {
+      "site_va": "0x004C596D",
+      "slot": "+0x3C",
+      "description": "tie-breaker key fetch when +0x38 equal"
+    },
+    {
+      "site_va": "0x004C5991",
+      "opcode": "setl al",
+      "description": "signed-less-than comparison for order"
+    }
+  ],
+  "method_models": {
+    "slot38": "if skill+0x28 == 0 and byte(skill+0x9F5) != 0: return obj+0xE4; else: return (byte(skill+0x9F4) != 0 ? 1000000 : 0)",
+    "slot3C": "return *(int32*)(this+0x54)",
+    "slot40": "return *(int32*)(*(void**)(this+0xB0)+0x28)",
+    "slot24": "0x54D8E0: three branches, can tail-jump *(*(this+0x78)+0x24) depending skill flags",
+    "slot30": "0x54D940: variable indexed value skill+0x3C8 + index*4 or base dword"
+  },
+  "known_duplicates": [
+    "B-OFFLINE-20261022-1715-T011-T012-SKILL9F5-WRITER-CONSUMER-01",
+    "B-OFFLINE-20261022-1609-T012-MISSILE-POSTREGISTER-01"
+  ],
+  "novel_delta": "vtable two-class method addresses, concrete native indirect call sites, comparator signedness and inherited method polymorphism, SQL pointer index blind spot",
+  "golden_pass": 0,
+  "strict_match": 0,
+  "new_ready": 0,
+  "master_integration": 0,
+  "task_done": 0,
+  "unresolved": [
+    "No dynamic confirmation spatial/sort objects are this class",
+    "No final combat target/damage equivalence",
+    "Potential negative signed sort keys and duplicate handling",
+    "Class-dependent +0x04/+0x54/+0x58 methods",
+    "Snapshot vs latest PC sync conflict"
+  ]
+}

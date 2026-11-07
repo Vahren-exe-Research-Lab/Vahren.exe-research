@@ -1,0 +1,315 @@
+{
+  "bundle": "/mnt/data/files/HAKUSHIN067_AI_OFFLINE_PACK_20261021.zip",
+  "bundle_sha256": "911E5E37A3F9BD5B36F929AF94B0D1E2CD1CD5CF34E3E2F16C8FC800ABF5F7C2",
+  "evidence_class": "STATIC-GHIDRA",
+  "original_exe_directly_checked": false,
+  "zip_members": 34,
+  "zip_crc_pass": true,
+  "sqlite_sha256": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF",
+  "manifest_exe_sha256_expected": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "manifest_excerpt": "{\"task_id\": \"HAKUSHIN-AI-SEARCH-20261021\", \"utc\": \"2026-10-20T15:32:24.383481+00:00\", \"status\": \"PASS\", \"errors\": [], \"file_inventory\": {\"CALLGRAPH.jsonl\": {\"bytes\": 21331963, \"rows\": 10268, \"sha256\": \"0736D4EDA76767235BD37BBF3C0CB387FF0AA59D1B8ED1744DD77CDFCACEAF6F\"}, \"DATA_REFS.jsonl\": {\"bytes\": 29681051, \"rows\": 107934, \"sha256\": \"7839753644268454C9092A7B2F977CAE178DF5C91580C5DBA0AE627049515713\"}, \"DATA_POINTER_REFS.jsonl\": {\"bytes\": 1407059, \"rows\": 4358, \"sha256\": \"6D539BF79DCB23219290F7AD523B8969F65E5E33DAF0020C0651E122DB3E17B5\"}, \"STRING_INDEX.jsonl\": {\"bytes\": 825268, \"rows\": 4298, \"sha256\": \"4C2FB873681742E21245255CE3DD177CBFE2B34406139A81DC3452EFC91CFBD1\"}, \"SYMBOLS.jsonl\": {\"bytes\": 11400037, \"rows\": 79148, \"sha256\": \"E35A534856EC2E1B3BEBF4DA3D0A581FD3ABF9DC7BE85950DC67AC9E3E4A9738\"}, \"search.sqlite\": {\"bytes\": 53927936, \"sha256\": \"0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E5",
+  "sqlite_integrity_check": "ok",
+  "functions": {
+    "0x00514740": {
+      "name": "FUN_00514740",
+      "size_bytes": 308,
+      "code_sha256": "4B2F2ECA3F4E15756BD3ED079D6019566A73F3495FBA3377193295EDE75AC90D"
+    },
+    "0x005148A0": {
+      "name": "FUN_005148a0",
+      "size_bytes": 274,
+      "code_sha256": "912BC5F1ADBD657D21483A75F86868DEF31B2299D8AF0C4F8BBF720116D1DA79"
+    },
+    "0x005149C0": {
+      "name": "FUN_005149c0",
+      "size_bytes": 189,
+      "code_sha256": "5AD66C33A5F4F841CD05EF814B3C19F90C29A954668366829E457B6C7BEE16BC"
+    },
+    "0x00514AA0": {
+      "name": "FUN_00514aa0",
+      "size_bytes": 424,
+      "code_sha256": "A1CF7FCE61280A693E14B24B3A92A5B211E95248750D39D007380132A621E917"
+    },
+    "0x00514F10": {
+      "name": "FUN_00514f10",
+      "size_bytes": 234,
+      "code_sha256": "6F7E1A17DB03EA9D2CBAE33C3C0335BFC61ED1306E3D0C0C7AA06837762D5C3B"
+    },
+    "0x00547DB0": {
+      "name": "FUN_00547db0",
+      "size_bytes": 513,
+      "code_sha256": "47A697D2EFCBD96569B45A4FA6286BB3C7E59490FA35FDC8491C608A92B85447"
+    },
+    "0x0051E6F0": {
+      "name": "FUN_0051e6f0",
+      "size_bytes": 2156,
+      "code_sha256": "1731FA302DF2ED85BA2087D03394D0BA396AAE7A163F4F0FD1509635E6A0CDBF"
+    },
+    "0x004C22B0": {
+      "name": "FUN_004c22b0",
+      "size_bytes": 341,
+      "code_sha256": "81B9E77BDA1168CD3469ECD9F1CB6A067CBD7DB7E84563D95B1629EFCCCBCF9C"
+    },
+    "0x005684B0": {
+      "name": "FUN_005684b0",
+      "size_bytes": 356,
+      "code_sha256": "4DA38B7FDF3E44290C1E12A50D90179F677CB6C01BB3002A3D419F665B957B4F"
+    },
+    "0x00575DF0": {
+      "name": "FUN_00575df0",
+      "size_bytes": 422,
+      "code_sha256": "1C6B30912AEFC939FDCCB3AE9E92CF682D7DB855F519196F8236592C02021C81"
+    },
+    "0x00550E70": {
+      "name": "FUN_00550e70",
+      "size_bytes": 1566,
+      "code_sha256": "4F0ADBF3458EA25BAF3EE64A8D3E38DBDBFC2E282E167FAD57E5DCAD20299869"
+    },
+    "0x00578370": {
+      "name": "FUN_00578370",
+      "size_bytes": 2034,
+      "code_sha256": "1C6630B2505F9A9C720E2FB980DD070C410582D6DB74EE32E00402BDEA81F051"
+    },
+    "0x00544790": {
+      "name": "FUN_00544790",
+      "size_bytes": 1395,
+      "code_sha256": "6E8673F8A5A104E87D0AB3B58625E2DABB7B0EBD56633BF6C19069F4CF689997"
+    },
+    "0x0055ABA0": {
+      "name": "FUN_0055aba0",
+      "size_bytes": 475,
+      "code_sha256": "8A087ADE9ED33360A304AA4E1B55441F00E1B7A9A0E8022B7995FDE269C3F1ED"
+    },
+    "0x0055B060": {
+      "name": "FUN_0055b060",
+      "size_bytes": 223,
+      "code_sha256": "1371DA09748938A4F277FC374D3AEB7B32D3761330BAB9CEAAB6EB7C00091F28"
+    }
+  },
+  "pseudoc_hash_pass": 15,
+  "pseudoc_hash_total": 15,
+  "field_or_branch_markers": [
+    {
+      "va": "0x00514740",
+      "marker": "Person::vftable",
+      "match": true
+    },
+    {
+      "va": "0x00514740",
+      "marker": "param_1[0x12] = 0",
+      "match": true
+    },
+    {
+      "va": "0x00514740",
+      "marker": "param_1[0x13] = 0",
+      "match": true
+    },
+    {
+      "va": "0x00514740",
+      "marker": "param_1[0x14] = 0",
+      "match": true
+    },
+    {
+      "va": "0x005148A0",
+      "marker": "Person::vftable",
+      "match": true
+    },
+    {
+      "va": "0x005148A0",
+      "marker": "FUN_00514aa0",
+      "match": true
+    },
+    {
+      "va": "0x005148A0",
+      "marker": "param_1[0x12]",
+      "match": true
+    },
+    {
+      "va": "0x005148A0",
+      "marker": "FUN_005b6bbb",
+      "match": true
+    },
+    {
+      "va": "0x005149C0",
+      "marker": "param_1 + 0x48",
+      "match": true
+    },
+    {
+      "va": "0x005149C0",
+      "marker": "param_1 + 0x4c",
+      "match": true
+    },
+    {
+      "va": "0x005149C0",
+      "marker": "*(void **)(param_1 + 0x4c) = pvVar1",
+      "match": true
+    },
+    {
+      "va": "0x005149C0",
+      "marker": "param_1 + 0x58",
+      "match": true
+    },
+    {
+      "va": "0x005149C0",
+      "marker": "param_1 + 0x38",
+      "match": true
+    },
+    {
+      "va": "0x00514AA0",
+      "marker": "param_1 + 0x48",
+      "match": true
+    },
+    {
+      "va": "0x00514AA0",
+      "marker": "param_1 + 0x4c",
+      "match": true
+    },
+    {
+      "va": "0x00514AA0",
+      "marker": "(*(code *)**(undefined4 **)*piVar5)(1)",
+      "match": true
+    },
+    {
+      "va": "0x00514AA0",
+      "marker": "*(void **)(param_1 + 0x4c) = pvVar3",
+      "match": true
+    },
+    {
+      "va": "0x00514F10",
+      "marker": "param_1 + 0x48",
+      "match": true
+    },
+    {
+      "va": "0x00514F10",
+      "marker": "param_1 + 0x4c",
+      "match": true
+    },
+    {
+      "va": "0x00514F10",
+      "marker": "iVar2 + 0x1867c",
+      "match": true
+    },
+    {
+      "va": "0x00547DB0",
+      "marker": "uVar1 + 0x1d4",
+      "match": true
+    },
+    {
+      "va": "0x00547DB0",
+      "marker": "iVar2 + 0x48",
+      "match": true
+    },
+    {
+      "va": "0x00547DB0",
+      "marker": "iVar2 + 0x4c",
+      "match": true
+    },
+    {
+      "va": "0x00547DB0",
+      "marker": "iVar4 + 0x1867c",
+      "match": true
+    },
+    {
+      "va": "0x00547DB0",
+      "marker": "FUN_00550e70",
+      "match": true
+    },
+    {
+      "va": "0x00547DB0",
+      "marker": "uVar5 = uVar5 + 1",
+      "match": true
+    },
+    {
+      "va": "0x004C22B0",
+      "marker": "in_EAX + 0x2c",
+      "match": true
+    },
+    {
+      "va": "0x004C22B0",
+      "marker": "in_EAX + 0x68",
+      "match": true
+    },
+    {
+      "va": "0x004C22B0",
+      "marker": "in_EAX + 100",
+      "match": true
+    },
+    {
+      "va": "0x005684B0",
+      "marker": "unaff_EDI + 0xc",
+      "match": true
+    },
+    {
+      "va": "0x005684B0",
+      "marker": "unaff_EDI + 0x10",
+      "match": true
+    },
+    {
+      "va": "0x005684B0",
+      "marker": "0x1867c",
+      "match": true
+    }
+  ],
+  "direct_call_evidence": [
+    {
+      "caller_va": "0x0051E6F0",
+      "site_va": "0x0051E729",
+      "callee_va": "0x005149C0",
+      "sqlite_direct_ref_match": 1
+    },
+    {
+      "caller_va": "0x005148A0",
+      "site_va": "0x005148DB",
+      "callee_va": "0x00514AA0",
+      "sqlite_direct_ref_match": 1
+    },
+    {
+      "caller_va": "0x00547DB0",
+      "site_va": "0x00547F60",
+      "callee_va": "0x00550E70",
+      "sqlite_direct_ref_match": 1
+    },
+    {
+      "caller_va": "0x00575DF0",
+      "site_va": "0x00575F6C",
+      "callee_va": "0x005684B0",
+      "sqlite_direct_ref_match": 1
+    },
+    {
+      "caller_va": "0x00575DF0",
+      "site_va": "0x00575F8C",
+      "callee_va": "0x005684B0",
+      "sqlite_direct_ref_match": 1
+    },
+    {
+      "caller_va": "0x00575DF0",
+      "site_va": "0x00575E2E",
+      "callee_va": "0x004C22B0",
+      "sqlite_direct_ref_match": 1
+    }
+  ],
+  "direct_call_pass": 6,
+  "no_direct_caller_to_person_lifecycle_in_selected_five": true,
+  "direct_refs_found_between_selected_five_and_person_lifecycle": [],
+  "callers_of_lifecycle": {
+    "0x005149C0": [
+      {
+        "caller_va": "0x0051E6F0",
+        "site_va": "0x0051E729"
+      }
+    ],
+    "0x00514AA0": [
+      {
+        "caller_va": "0x005148A0",
+        "site_va": "0x005148DB"
+      }
+    ]
+  },
+  "status": "PASS",
+  "interpretive_warnings": [
+    "SQLite Ghidra pseudoC is static secondary evidence, not a new original EXE/ASM validation.",
+    "Do not infer immediate Person+0x48 erasure from group+0x0C/+0x10 or manager+0x64 mutators.",
+    "No direct CALL does not rule out indirect/vtable or transitive routes.",
+    "Game Golden PASS=0, strict MATCH=0; latest PC MASTER not checked."
+  ]
+}

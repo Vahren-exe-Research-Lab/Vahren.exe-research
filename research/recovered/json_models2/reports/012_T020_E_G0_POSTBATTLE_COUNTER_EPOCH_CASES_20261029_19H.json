@@ -1,0 +1,49 @@
+{
+  "research_id": "E-AUDIT-20261029-19H-T018-T020-ATTACK-COUNT-EPOCH-BINDING-01",
+  "source_status": "REAL_ARCHIVED_READONLY_AND_DESIGN_NOT_RUN",
+  "test_status": "DESIGNED_NOT_RUN",
+  "negative_cases": [
+    {
+      "id": "AC01",
+      "case": "same PID plus attack_count=2 across post-return watch heartbeat",
+      "expected": "REJECT_G1_G2_NO_SAVE_MAP_ROSTER"
+    },
+    {
+      "id": "AC02",
+      "case": "G0 active attack_count=2 and later postbattle capture attack_count=1",
+      "expected": "NON_ATOMIC_CROSS_PHASE_NOT_JOINABLE"
+    },
+    {
+      "id": "AC03",
+      "case": "postbattle war_outer_nodes=1 and nested_def_count=12",
+      "expected": "NOT_DEPLOYED_TROOP_ROSTER"
+    },
+    {
+      "id": "AC04",
+      "case": "V5 filename timestamp 14:45:51 without payload capture_utc",
+      "expected": "FILENAME_TIME_NOT_CAPTURE_PROOF"
+    },
+    {
+      "id": "AC05",
+      "case": "old G0 watch successful complete packets=0 but decoder attempts=28",
+      "expected": "CAPTURE_FAILURE_NOT_GOLDEN"
+    },
+    {
+      "id": "AC06",
+      "case": "G0 user-attested route plus V5 postbattle attack pointer",
+      "expected": "SPOT_ID_AND_MAP_UNVERIFIED"
+    }
+  ],
+  "required_for_eligibility": [
+    "same_run_receipt_hash",
+    "original_exe_sha",
+    "original_dat_epoch",
+    "prebattle_save_byte_sha",
+    "input_events_timestamps",
+    "actual_map_byte_sha",
+    "attack_defense_help_identity",
+    "ordered_unit_troop_deployment"
+  ],
+  "actual_golden_pass": 0,
+  "strict_match": 0
+}

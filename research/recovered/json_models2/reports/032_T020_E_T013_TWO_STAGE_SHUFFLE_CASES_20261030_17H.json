@@ -1,0 +1,604 @@
+{
+  "research_id": "E-AUDIT-20261030-17H-T020-T013-TWO-STAGE-SHUFFLE-GATE-01",
+  "owner": "E/T020",
+  "scope": "STATIC_SYNTHETIC_ONLY",
+  "original_game": "NOT_RUN",
+  "cases": [
+    {
+      "id": "B0-0-0",
+      "kind": "budget",
+      "manager_a7": 0,
+      "first_vector_count": 0,
+      "second_vector_count": 0,
+      "second_stage_assumed_reached": true,
+      "expected_first_draws": 0,
+      "expected_second_draws": 0
+    },
+    {
+      "id": "B0-0-1",
+      "kind": "budget",
+      "manager_a7": 0,
+      "first_vector_count": 0,
+      "second_vector_count": 1,
+      "second_stage_assumed_reached": true,
+      "expected_first_draws": 0,
+      "expected_second_draws": 0
+    },
+    {
+      "id": "B0-0-2",
+      "kind": "budget",
+      "manager_a7": 0,
+      "first_vector_count": 0,
+      "second_vector_count": 2,
+      "second_stage_assumed_reached": true,
+      "expected_first_draws": 0,
+      "expected_second_draws": 1
+    },
+    {
+      "id": "B0-0-4",
+      "kind": "budget",
+      "manager_a7": 0,
+      "first_vector_count": 0,
+      "second_vector_count": 4,
+      "second_stage_assumed_reached": true,
+      "expected_first_draws": 0,
+      "expected_second_draws": 3
+    },
+    {
+      "id": "B0-1-0",
+      "kind": "budget",
+      "manager_a7": 0,
+      "first_vector_count": 1,
+      "second_vector_count": 0,
+      "second_stage_assumed_reached": true,
+      "expected_first_draws": 0,
+      "expected_second_draws": 0
+    },
+    {
+      "id": "B0-1-1",
+      "kind": "budget",
+      "manager_a7": 0,
+      "first_vector_count": 1,
+      "second_vector_count": 1,
+      "second_stage_assumed_reached": true,
+      "expected_first_draws": 0,
+      "expected_second_draws": 0
+    },
+    {
+      "id": "B0-1-2",
+      "kind": "budget",
+      "manager_a7": 0,
+      "first_vector_count": 1,
+      "second_vector_count": 2,
+      "second_stage_assumed_reached": true,
+      "expected_first_draws": 0,
+      "expected_second_draws": 1
+    },
+    {
+      "id": "B0-1-4",
+      "kind": "budget",
+      "manager_a7": 0,
+      "first_vector_count": 1,
+      "second_vector_count": 4,
+      "second_stage_assumed_reached": true,
+      "expected_first_draws": 0,
+      "expected_second_draws": 3
+    },
+    {
+      "id": "B0-2-0",
+      "kind": "budget",
+      "manager_a7": 0,
+      "first_vector_count": 2,
+      "second_vector_count": 0,
+      "second_stage_assumed_reached": true,
+      "expected_first_draws": 0,
+      "expected_second_draws": 0
+    },
+    {
+      "id": "B0-2-1",
+      "kind": "budget",
+      "manager_a7": 0,
+      "first_vector_count": 2,
+      "second_vector_count": 1,
+      "second_stage_assumed_reached": true,
+      "expected_first_draws": 0,
+      "expected_second_draws": 0
+    },
+    {
+      "id": "B0-2-2",
+      "kind": "budget",
+      "manager_a7": 0,
+      "first_vector_count": 2,
+      "second_vector_count": 2,
+      "second_stage_assumed_reached": true,
+      "expected_first_draws": 0,
+      "expected_second_draws": 1
+    },
+    {
+      "id": "B0-2-4",
+      "kind": "budget",
+      "manager_a7": 0,
+      "first_vector_count": 2,
+      "second_vector_count": 4,
+      "second_stage_assumed_reached": true,
+      "expected_first_draws": 0,
+      "expected_second_draws": 3
+    },
+    {
+      "id": "B0-4-0",
+      "kind": "budget",
+      "manager_a7": 0,
+      "first_vector_count": 4,
+      "second_vector_count": 0,
+      "second_stage_assumed_reached": true,
+      "expected_first_draws": 0,
+      "expected_second_draws": 0
+    },
+    {
+      "id": "B0-4-1",
+      "kind": "budget",
+      "manager_a7": 0,
+      "first_vector_count": 4,
+      "second_vector_count": 1,
+      "second_stage_assumed_reached": true,
+      "expected_first_draws": 0,
+      "expected_second_draws": 0
+    },
+    {
+      "id": "B0-4-2",
+      "kind": "budget",
+      "manager_a7": 0,
+      "first_vector_count": 4,
+      "second_vector_count": 2,
+      "second_stage_assumed_reached": true,
+      "expected_first_draws": 0,
+      "expected_second_draws": 1
+    },
+    {
+      "id": "B0-4-4",
+      "kind": "budget",
+      "manager_a7": 0,
+      "first_vector_count": 4,
+      "second_vector_count": 4,
+      "second_stage_assumed_reached": true,
+      "expected_first_draws": 0,
+      "expected_second_draws": 3
+    },
+    {
+      "id": "B1-0-0",
+      "kind": "budget",
+      "manager_a7": 1,
+      "first_vector_count": 0,
+      "second_vector_count": 0,
+      "second_stage_assumed_reached": true,
+      "expected_first_draws": 0,
+      "expected_second_draws": 0
+    },
+    {
+      "id": "B1-0-1",
+      "kind": "budget",
+      "manager_a7": 1,
+      "first_vector_count": 0,
+      "second_vector_count": 1,
+      "second_stage_assumed_reached": true,
+      "expected_first_draws": 0,
+      "expected_second_draws": 0
+    },
+    {
+      "id": "B1-0-2",
+      "kind": "budget",
+      "manager_a7": 1,
+      "first_vector_count": 0,
+      "second_vector_count": 2,
+      "second_stage_assumed_reached": true,
+      "expected_first_draws": 0,
+      "expected_second_draws": 1
+    },
+    {
+      "id": "B1-0-4",
+      "kind": "budget",
+      "manager_a7": 1,
+      "first_vector_count": 0,
+      "second_vector_count": 4,
+      "second_stage_assumed_reached": true,
+      "expected_first_draws": 0,
+      "expected_second_draws": 3
+    },
+    {
+      "id": "B1-1-0",
+      "kind": "budget",
+      "manager_a7": 1,
+      "first_vector_count": 1,
+      "second_vector_count": 0,
+      "second_stage_assumed_reached": true,
+      "expected_first_draws": 0,
+      "expected_second_draws": 0
+    },
+    {
+      "id": "B1-1-1",
+      "kind": "budget",
+      "manager_a7": 1,
+      "first_vector_count": 1,
+      "second_vector_count": 1,
+      "second_stage_assumed_reached": true,
+      "expected_first_draws": 0,
+      "expected_second_draws": 0
+    },
+    {
+      "id": "B1-1-2",
+      "kind": "budget",
+      "manager_a7": 1,
+      "first_vector_count": 1,
+      "second_vector_count": 2,
+      "second_stage_assumed_reached": true,
+      "expected_first_draws": 0,
+      "expected_second_draws": 1
+    },
+    {
+      "id": "B1-1-4",
+      "kind": "budget",
+      "manager_a7": 1,
+      "first_vector_count": 1,
+      "second_vector_count": 4,
+      "second_stage_assumed_reached": true,
+      "expected_first_draws": 0,
+      "expected_second_draws": 3
+    },
+    {
+      "id": "B1-2-0",
+      "kind": "budget",
+      "manager_a7": 1,
+      "first_vector_count": 2,
+      "second_vector_count": 0,
+      "second_stage_assumed_reached": true,
+      "expected_first_draws": 1,
+      "expected_second_draws": 0
+    },
+    {
+      "id": "B1-2-1",
+      "kind": "budget",
+      "manager_a7": 1,
+      "first_vector_count": 2,
+      "second_vector_count": 1,
+      "second_stage_assumed_reached": true,
+      "expected_first_draws": 1,
+      "expected_second_draws": 0
+    },
+    {
+      "id": "B1-2-2",
+      "kind": "budget",
+      "manager_a7": 1,
+      "first_vector_count": 2,
+      "second_vector_count": 2,
+      "second_stage_assumed_reached": true,
+      "expected_first_draws": 1,
+      "expected_second_draws": 1
+    },
+    {
+      "id": "B1-2-4",
+      "kind": "budget",
+      "manager_a7": 1,
+      "first_vector_count": 2,
+      "second_vector_count": 4,
+      "second_stage_assumed_reached": true,
+      "expected_first_draws": 1,
+      "expected_second_draws": 3
+    },
+    {
+      "id": "B1-4-0",
+      "kind": "budget",
+      "manager_a7": 1,
+      "first_vector_count": 4,
+      "second_vector_count": 0,
+      "second_stage_assumed_reached": true,
+      "expected_first_draws": 3,
+      "expected_second_draws": 0
+    },
+    {
+      "id": "B1-4-1",
+      "kind": "budget",
+      "manager_a7": 1,
+      "first_vector_count": 4,
+      "second_vector_count": 1,
+      "second_stage_assumed_reached": true,
+      "expected_first_draws": 3,
+      "expected_second_draws": 0
+    },
+    {
+      "id": "B1-4-2",
+      "kind": "budget",
+      "manager_a7": 1,
+      "first_vector_count": 4,
+      "second_vector_count": 2,
+      "second_stage_assumed_reached": true,
+      "expected_first_draws": 3,
+      "expected_second_draws": 1
+    },
+    {
+      "id": "B1-4-4",
+      "kind": "budget",
+      "manager_a7": 1,
+      "first_vector_count": 4,
+      "second_vector_count": 4,
+      "second_stage_assumed_reached": true,
+      "expected_first_draws": 3,
+      "expected_second_draws": 3
+    },
+    {
+      "id": "S2-zero",
+      "kind": "shuffle",
+      "count": 2,
+      "raw_draws": [
+        0
+      ],
+      "expected_permutation": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "S2-max_low15",
+      "kind": "shuffle",
+      "count": 2,
+      "raw_draws": [
+        -1
+      ],
+      "expected_permutation": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "S3-zero",
+      "kind": "shuffle",
+      "count": 3,
+      "raw_draws": [
+        0,
+        0
+      ],
+      "expected_permutation": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "S3-max_low15",
+      "kind": "shuffle",
+      "count": 3,
+      "raw_draws": [
+        -1,
+        -1
+      ],
+      "expected_permutation": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "S4-zero",
+      "kind": "shuffle",
+      "count": 4,
+      "raw_draws": [
+        0,
+        0,
+        0
+      ],
+      "expected_permutation": [
+        3,
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "S4-max_low15",
+      "kind": "shuffle",
+      "count": 4,
+      "raw_draws": [
+        -1,
+        -1,
+        -1
+      ],
+      "expected_permutation": [
+        0,
+        2,
+        1,
+        3
+      ]
+    },
+    {
+      "id": "S5-zero",
+      "kind": "shuffle",
+      "count": 5,
+      "raw_draws": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_permutation": [
+        4,
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "S5-max_low15",
+      "kind": "shuffle",
+      "count": 5,
+      "raw_draws": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "expected_permutation": [
+        0,
+        2,
+        4,
+        3,
+        1
+      ]
+    },
+    {
+      "id": "S6-zero",
+      "kind": "shuffle",
+      "count": 6,
+      "raw_draws": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_permutation": [
+        5,
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "S6-max_low15",
+      "kind": "shuffle",
+      "count": 6,
+      "raw_draws": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "expected_permutation": [
+        0,
+        5,
+        4,
+        3,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "S7-zero",
+      "kind": "shuffle",
+      "count": 7,
+      "raw_draws": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_permutation": [
+        6,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "S7-max_low15",
+      "kind": "shuffle",
+      "count": 7,
+      "raw_draws": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "expected_permutation": [
+        6,
+        5,
+        4,
+        3,
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "N00",
+      "kind": "unsupported_claim",
+      "claim": "stage1_always_called_if_manager_a7_zero",
+      "reject": true
+    },
+    {
+      "id": "N01",
+      "kind": "unsupported_claim",
+      "claim": "stage2_suppressed_when_manager_a7_zero",
+      "reject": true
+    },
+    {
+      "id": "N02",
+      "kind": "unsupported_claim",
+      "claim": "both_stages_proven_same_vector_identity",
+      "reject": true
+    },
+    {
+      "id": "N03",
+      "kind": "unsupported_claim",
+      "claim": "n_gt_32767_always_n_minus_one_draws",
+      "reject": true
+    },
+    {
+      "id": "N04",
+      "kind": "unsupported_claim",
+      "claim": "modulo_proves_exact_uniform_distribution",
+      "reject": true
+    },
+    {
+      "id": "N05",
+      "kind": "unsupported_claim",
+      "claim": "both_downstream_helpers_always_called",
+      "reject": true
+    },
+    {
+      "id": "N06",
+      "kind": "unsupported_claim",
+      "claim": "sorted_tree_order_proves_final_target",
+      "reject": true
+    },
+    {
+      "id": "N07",
+      "kind": "unsupported_claim",
+      "claim": "equal_distance_keys_both_retained",
+      "reject": true
+    },
+    {
+      "id": "N08",
+      "kind": "unsupported_claim",
+      "claim": "pseudoc_void_proves_exact_native_abi",
+      "reject": true
+    },
+    {
+      "id": "N09",
+      "kind": "unsupported_claim",
+      "claim": "old_new_rng_state_proven_equivalent",
+      "reject": true
+    },
+    {
+      "id": "N10",
+      "kind": "unsupported_claim",
+      "claim": "hidden_internal_draws_proven_from_call_sites",
+      "reject": true
+    },
+    {
+      "id": "N11",
+      "kind": "unsupported_claim",
+      "claim": "original_gameplay_golden_pass_from_static",
+      "reject": true
+    }
+  ]
+}

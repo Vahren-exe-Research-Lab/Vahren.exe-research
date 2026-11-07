@@ -151,4 +151,10 @@
 - [research/recovered/rea_batch3/reports/REA_20261031_12H_P0_VORBIS_LOOK_ARRAY_CALLOC_STATIC.md 行 33](../../research/recovered/rea_batch3/reports/REA_20261031_12H_P0_VORBIS_LOOK_ARRAY_CALLOC_STATIC.md?plain=1#L33-L33) — - 新規差分: `0x5D58E7`/`0x5D5B12` は異なるモードの `calloc(count,0x38)` から同じ `inner+0xB20` を初期化。count>0でcalleeの0x38 memsetへ進むため確保失敗時のNULL使用が局所条件付きで推定される。別の先行構造体 `0x5D57F8 c
   制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
 
+<a id="field-1eec71"></a>
+## inner + 0x1EEC71
+
+- [research/recovered/json_models2/reports/044_T020_FASTSIM_TAIL_MULTIENTRY_NEGATIVES_20261023_2153.json 行 1](../../research/recovered/json_models2/reports/044_T020_FASTSIM_TAIL_MULTIENTRY_NEGATIVES_20261023_2153.json?plain=1#L1-L1) — {"research_id":"E-AUDIT-20261023-2153-T020-FASTSIM-TAIL-MULTIENTRY-01","stage":"STATIC_V9_FIXTURE_DESIGNED_NOT_RUN","exe_source_sha256":"E8DAC301050C8E630D7E0CE
+  制約・訂正　Historical finite model/source metadata; no execution or validation of source PASS/native/Golden/READY claims, semantic correctness, ABI/types or complete gameplay. Linked payloads unopened.
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

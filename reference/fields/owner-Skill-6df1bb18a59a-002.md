@@ -163,6 +163,15 @@
 - [research/recovered/b_batch9/data/T013_SKILL_LIST_FILTER_CONTRACT_20261013.md 行 8](../../research/recovered/b_batch9/data/T013_SKILL_LIST_FILTER_CONTRACT_20261013.md?plain=1#L8-L8) — \| Skill+0x110文字列 \| 必要なUnitフラグ \| 渡す(mode,submode) \| 579BA0側の確認済み局所gate \|
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
+- [research/recovered/json_sources1/reports/data/B_T011_T012_T013_OFFSET_ATTR_GATE_EVIDENCE_OFFLINE_20261022_2245.json 行 394](../../research/recovered/json_sources1/reports/data/B_T011_T012_T013_OFFSET_ATTR_GATE_EVIDENCE_OFFLINE_20261022_2245.json?plain=1#L394-L394) — "Skill+0x110 candidate property source is attr",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
+- [research/recovered/json_sources1/reports/data/B_T012_T013_COLLISION_ATTRMAP_ORDER_EVIDENCE_20261022_2113.json 行 37](../../research/recovered/json_sources1/reports/data/B_T012_T013_COLLISION_ATTRMAP_ORDER_EVIDENCE_20261022_2113.json?plain=1#L37-L37) — "interpretation": "source Skill+0x12C tree lookup with candidate Skill+0x110 string; compare iterator to source Skill+0x130 end; missing entry skips AABB",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
+- [research/recovered/json_sources1/reports/data/B_T012_T013_COLLISION_ATTRMAP_ORDER_EVIDENCE_20261022_2113.json 行 43](../../research/recovered/json_sources1/reports/data/B_T012_T013_COLLISION_ATTRMAP_ORDER_EVIDENCE_20261022_2113.json?plain=1#L43-L43) — "interpretation": "script key attr via 0x6248BC; consumer stores string at Skill+0x110",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
 - [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 358](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L358-L358) — [EXE-CROSSREF / STATUS] T012既存§25のVA0x59A57Aはscript attr→Skill+0x110の保存済み静的証拠。別の保存済みB表はVA0x59FA40..0x59FAE3で19名を参照するが、B-20261012-0108-01はHANDOFFにおいて**NOT READY*
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 
@@ -193,6 +202,24 @@
 - [research/recovered/b_batch4/data/B_T012_T013_COLLISION_ATTRMAP_ORDER_OFFLINE_20261022_2113.md 行 38](../../research/recovered/b_batch4/data/B_T012_T013_COLLISION_ATTRMAP_ORDER_OFFLINE_20261022_2113.md?plain=1#L38-L38) — したがって **元Skill+0x12C の文字列集合に、接触候補Skill+0x110 の属性が存在することが、矩形判定より前の独立条件**。具体的な属性名の集合・DATの集合指定キー・敵味方や同属性に対するゲーム意味は未確定。これは全スキル一般のT013最終ターゲット選別だとの主張ではない。
   制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
 
+- [research/recovered/json_sources1/reports/data/B_T011_T012_T013_OFFSET_ATTR_GATE_EVIDENCE_OFFLINE_20261022_2245.json 行 393](../../research/recovered/json_sources1/reports/data/B_T011_T012_T013_OFFSET_ATTR_GATE_EVIDENCE_OFFLINE_20261022_2245.json?plain=1#L393-L393) — "Skill+0x12C script source is offset, not attr",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
+- [research/recovered/json_sources1/reports/data/B_T012_T013_COLLISION_ATTRMAP_ORDER_EVIDENCE_20261022_2113.json 行 37](../../research/recovered/json_sources1/reports/data/B_T012_T013_COLLISION_ATTRMAP_ORDER_EVIDENCE_20261022_2113.json?plain=1#L37-L37) — "interpretation": "source Skill+0x12C tree lookup with candidate Skill+0x110 string; compare iterator to source Skill+0x130 end; missing entry skips AABB",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
+- [research/recovered/json_sources1/reports/data/B_T012_T013_COLLISION_ATTRMAP_ORDER_EVIDENCE_20261022_2113.json 行 316](../../research/recovered/json_sources1/reports/data/B_T012_T013_COLLISION_ATTRMAP_ORDER_EVIDENCE_20261022_2113.json?plain=1#L316-L316) — "source Skill+0x12C map script declaration and runtime contents",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
+<a id="field-130"></a>
+## Skill + 0x130
+
+- [research/recovered/json_sources1/reports/data/B_T012_T013_COLLISION_ATTRMAP_ORDER_EVIDENCE_20261022_2113.json 行 25](../../research/recovered/json_sources1/reports/data/B_T012_T013_COLLISION_ATTRMAP_ORDER_EVIDENCE_20261022_2113.json?plain=1#L25-L25) — "interpretation": "Skill+0x134 zero-initialized; Skill+0x130 stores allocated 0x2C-byte map-head node",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
+- [research/recovered/json_sources1/reports/data/B_T012_T013_COLLISION_ATTRMAP_ORDER_EVIDENCE_20261022_2113.json 行 37](../../research/recovered/json_sources1/reports/data/B_T012_T013_COLLISION_ATTRMAP_ORDER_EVIDENCE_20261022_2113.json?plain=1#L37-L37) — "interpretation": "source Skill+0x12C tree lookup with candidate Skill+0x110 string; compare iterator to source Skill+0x130 end; missing entry skips AABB",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
 <a id="field-134"></a>
 ## Skill + 0x134
 
@@ -219,6 +246,24 @@
 
 - [research/recovered/b_reports/B_T011_T012_T013_OFFSET_ATTR_GATE_OFFLINE_20261022_2245.sanitized.md 行 78](../../research/recovered/b_reports/B_T011_T012_T013_OFFSET_ATTR_GATE_OFFLINE_20261022_2245.sanitized.md?plain=1#L78-L78) — 対象スキル定義に `offset_on=on`、`offset=on`、複数 `offset` キー、候補Skillの `attr` 値が一致・不一致、矩形端接触、同時複数候補を用い、原作で **(A) `Skill+0x134` (B) `Skill+0x1FD` (C) treeに格納されたキー (D) `0x51
   制約・訂正　Privacy derivative: one personal research-root prefix replaced with <research-root> plus explicit recovery annotation; full technical content retained; reversible byte reconstruction matches source SHA; historical STATIC/INFERRED/VERIFY only; no linked payload read or Golden/READY promotion
+
+- [research/recovered/json_sources1/reports/data/B_T011_T012_T013_OFFSET_ATTR_GATE_EVIDENCE_OFFLINE_20261022_2245.json 行 397](../../research/recovered/json_sources1/reports/data/B_T011_T012_T013_OFFSET_ATTR_GATE_EVIDENCE_OFFLINE_20261022_2245.json?plain=1#L397-L397) — "offset singleton on erases tree and zeroes Skill+0x134",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
+- [research/recovered/json_sources1/reports/data/B_T012_T013_COLLISION_ATTRMAP_ORDER_EVIDENCE_20261022_2113.json 行 25](../../research/recovered/json_sources1/reports/data/B_T012_T013_COLLISION_ATTRMAP_ORDER_EVIDENCE_20261022_2113.json?plain=1#L25-L25) — "interpretation": "Skill+0x134 zero-initialized; Skill+0x130 stores allocated 0x2C-byte map-head node",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
+- [research/recovered/json_sources1/reports/data/B_T012_T013_COLLISION_ATTRMAP_ORDER_EVIDENCE_20261022_2113.json 行 31](../../research/recovered/json_sources1/reports/data/B_T012_T013_COLLISION_ATTRMAP_ORDER_EVIDENCE_20261022_2113.json?plain=1#L31-L31) — "interpretation": "Skill+0x134==0 returns null collision candidate; consistent with map size, not general projectile enable flag",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
+- [research/recovered/json_sources1/reports/data/B_T012_T013_COLLISION_CLEANUP_OWNER_EVIDENCE_20261023_0009.json 行 74](../../research/recovered/json_sources1/reports/data/B_T012_T013_COLLISION_CLEANUP_OWNER_EVIDENCE_20261023_0009.json?plain=1#L74-L74) — "candidate_gate": "Skill+0x134 != 0",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
+- [research/recovered/json_sources1/reports/data/B_T012_T013_COLLISION_CLEANUP_OWNER_EVIDENCE_20261023_0009.json 行 215](../../research/recovered/json_sources1/reports/data/B_T012_T013_COLLISION_CLEANUP_OWNER_EVIDENCE_20261023_0009.json?plain=1#L215-L215) — "meaning": "candidate gate Skill+0x134 == 0",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
+- [research/recovered/json_sources1/reports/data/B_T012_T013_RENDER_COLLISION_BOUNDARY_EVIDENCE_20261023_0808.json 行 167](../../research/recovered/json_sources1/reports/data/B_T012_T013_RENDER_COLLISION_BOUNDARY_EVIDENCE_20261023_0808.json?plain=1#L167-L167) — "note": "Skill+0x134 collision gate"
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
 
 <a id="field-13c"></a>
 ## Skill + 0x13C
@@ -315,56 +360,5 @@
 
 - [research/recovered/b_reports/B_T012_T028_STATIC_RETURN_DEATHBRANCH_OFFLINE_20261024_1111.md 行 26](../../research/recovered/b_reports/B_T012_T028_STATIC_RETURN_DEATHBRANCH_OFFLINE_20261024_1111.md?plain=1#L26-L26) — `0x0055B07D`でHP減算、`0x0055B083/8D`で生存・死亡を分岐。生存時は`Skill+0x1B0`条件で`0x55B0D7 CALL 0x547FC0`。死亡時は`Skill+0x1BC bit1`と`+0x194!=0`条件で`0x55B124 CALL 0x547FC0`、最後に`0x55B1
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
-
-<a id="field-1bc"></a>
-## Skill + 0x1BC
-
-- [research/recovered/b_batch10/data/T013_TROOP_SORT_1BC_COMPARATOR_NATIVE_20261023_20H.md 行 20](../../research/recovered/b_batch10/data/T013_TROOP_SORT_1BC_COMPARATOR_NATIVE_20261023_20H.md?plain=1#L20-L20) — T011_DATA_MODEL §16 に Unit+0x1BC writer→0x587CC0系列の既存STATICがあるが、+0x1BC のゲーム内名称や実効値・更新時機は未確定。「移動速度順／隊列優先順」などと命名しない。Skill+0x1BC等の別型にも安易に流用しない。
-  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
-
-- [research/recovered/b_reports/B_T012_T028_STATIC_RETURN_DEATHBRANCH_OFFLINE_20261024_1111.md 行 22](../../research/recovered/b_reports/B_T012_T028_STATIC_RETURN_DEATHBRANCH_OFFLINE_20261024_1111.md?plain=1#L22-L22) — - 両側合流後`Skill+0x1BC bit1`と`Skill+0x194 !=0`によって `0x55AD5F CALL 0x580280` へ進む **afterdeath候補** があり、`0x55AD6E`で `this` のvtable+0x58を呼ぶ。効果発火・オブジェクトの寿命はVERIFY。
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
-
-- [research/recovered/b_reports/B_T012_T028_STATIC_RETURN_DEATHBRANCH_OFFLINE_20261024_1111.md 行 26](../../research/recovered/b_reports/B_T012_T028_STATIC_RETURN_DEATHBRANCH_OFFLINE_20261024_1111.md?plain=1#L26-L26) — `0x0055B07D`でHP減算、`0x0055B083/8D`で生存・死亡を分岐。生存時は`Skill+0x1B0`条件で`0x55B0D7 CALL 0x547FC0`。死亡時は`Skill+0x1BC bit1`と`+0x194!=0`条件で`0x55B124 CALL 0x547FC0`、最後に`0x55B1
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
-
-- [research/recovered/b_reports/B_T012_T028_STATIC_RETURN_DEATHBRANCH_OFFLINE_20261024_1111.md 行 48](../../research/recovered/b_reports/B_T012_T028_STATIC_RETURN_DEATHBRANCH_OFFLINE_20261024_1111.md?plain=1#L48-L48) — 対象EXEと無改変DATのSHA、SAVE/MAP/同一入力・RNGを固定し、原作実測で4つのRTTIクラス（生存HP正/0/負、既死亡状態、1000000/1000001）を比較。StaticUnitの文字列長0/非0と戻りオブジェクト+0x74の0/非0、`Skill+0x1BC bit1`/`+0x194`も変化
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
-
-<a id="field-1c4"></a>
-## Skill + 0x1C4
-
-- [research/recovered/b_batch6/data/T012_DAMAGE_CALLER_54DAE0_POSTCORE_GATES_20261019.md 行 6](../../research/recovered/b_batch6/data/T012_DAMAGE_CALLER_54DAE0_POSTCORE_GATES_20261019.md?plain=1#L6-L6) — [FACT 3] 0x54DB25..3CでSkill byte+0x1CC !=0なら[ESI+0xF8]=1かつ[ESI+0x1A4]=0xF4240。0x54DB46..4FでSkill+0x1C4 ==0なら[ESI+0xF8]=1。0x54DB55..56でret。
-  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
-
-<a id="field-1d0"></a>
-## Skill + 0x1D0
-
-- [research/recovered/b_batch3/T011_FOLLOW_COMPILER_RUSH_RESULT_LINK_NATIVE_20261027_20H.md 行 6](../../research/recovered/b_batch3/T011_FOLLOW_COMPILER_RUSH_RESULT_LINK_NATIVE_20261027_20H.md?plain=1#L6-L6) — [COMPILATION ON BRANCH] 0x59B967 TEST AL / 0x59B969 JE 0x59B972。比較真は0x59B96B MOV EAX,1→0x59B970 JMP 0x59B994→0x59B999 MOV [EBP+0x1D0],EAX。したがってraw follow=onのこのc
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_batch3/T011_FOLLOW_COMPILER_RUSH_RESULT_LINK_NATIVE_20261027_20H.md 行 7](../../research/recovered/b_batch3/T011_FOLLOW_COMPILER_RUSH_RESULT_LINK_NATIVE_20261027_20H.md?plain=1#L7-L7) — [COMPILATION OTHER BRANCH] 比較偽は0x59B972 PUSH "skill"(0x624C48)・0x59B980 EDX="follow"(0x624C40)→0x59B987 CALL 0x4647D0、0x59B991 EAX=[returned+0x20]→0x59B999 [Ski
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_batch3/T011_FOLLOW_COMPILER_RUSH_RESULT_LINK_NATIVE_20261027_20H.md 行 14](../../research/recovered/b_batch3/T011_FOLLOW_COMPILER_RUSH_RESULT_LINK_NATIVE_20261027_20H.md?plain=1#L14-L14) — [DEDUP] 2026-10-27 19HはSkill+0x1D0の論理名UNKNOWNと+0x194/+0x198リンクだけ既知。今回増分は+0x1D0の原作follow rawキー／on特殊処理／その他numeric getter／実DAT18用例へのcross-join。事前T011/T012/T013 own
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_batch3/T011_FOLLOW_COMPILER_RUSH_RESULT_LINK_NATIVE_20261027_20H.md 行 15](../../research/recovered/b_batch3/T011_FOLLOW_COMPILER_RUSH_RESULT_LINK_NATIVE_20261027_20H.md?plain=1#L15-L15) — [P0 STILL OPEN] final target/HP/MP/status/RNG、follow numeric効果・他consumer、結果ポインタ実型とvalid lifetime、Skill+0x1D0の全writer/継承/@、召喚親子固有ID/EXP、T024戦闘AI、T028士気敗走は未解明。既拒否
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_batch7/data/T012_RUSH_COMPILED_INTERVAL_ATTEMPT_LINK_NATIVE_20261027_19H.md 行 10](../../research/recovered/b_batch7/data/T012_RUSH_COMPILED_INTERVAL_ATTEMPT_LINK_NATIVE_20261027_19H.md?plain=1#L10-L10) — [NEW OPTIONAL LINKAGE] 0x55038F CMP DWORD[Skill+0x1D0],0、非0時0x550398 EBP(result)の非NULLを確認し、Rush+0x1F8 old非NULLなら0x5503A6 [result+0x194]=old、0x5503B2 [old+0x198]
-  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
-
-- [research/recovered/b_batch7/data/T012_RUSH_COMPILED_INTERVAL_ATTEMPT_LINK_NATIVE_20261027_19H.md 行 16](../../research/recovered/b_batch7/data/T012_RUSH_COMPILED_INTERVAL_ATTEMPT_LINK_NATIVE_20261027_19H.md?plain=1#L16-L16) — [NEXT] B T012/T011で合法装備経路・原作DAT runtime parser effective値、失敗と試行回数の分離、Skill+0x1D0の型と効果オブジェクトの非拒否範囲producerを優先。T013最終対象、T024本来AI、T028士気/敗走もP0として維持。公式READY0/MASTER
-  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
-
-- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 782](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L782-L782) — [NATIVE] 原作0x59B91A/0x59B928でskill/follow lookup→0x59B94D 0x4647D0、0x59B955 "on" literal比較→0x59B962 0x40B200。真なら0x59B96B EAX=1、偽なら0x59B972..0x59B991 follow数値get
-  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
-
-- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 783](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L783-L783) — [CONSUMER] Rush 0x55038FはSkill+0x1D0非0時のみ結果オブジェクトを+0x194/+0x198で条件付連結（既19H追跡、今回再計数0）。raw DAT follow=on/off/0/48/30/20の18設定を読取確認。詳細 data/T011_FOLLOW_COMPILER_RUS
-  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
-
-- [research/recovered/tests_batch5/T020_T011_FOLLOW_COMPILER_RESULT_NONIDENTITY_GATE_20261027_20H.md 行 5](../../research/recovered/tests_batch5/T020_T011_FOLLOW_COMPILER_RESULT_NONIDENTITY_GATE_20261027_20H.md?plain=1#L5-L5) — [NEW T020 BOUNDARY] 原作VA0x59B928/0x59B962/0x59B999: raw follow「on」の比較真経路はcompiled Skill+0x1D0=1。その他はnative numeric getter経由。raw off、raw 0、raw 20/30/48をcompiler後
-  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

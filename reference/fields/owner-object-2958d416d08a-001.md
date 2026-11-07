@@ -10,6 +10,15 @@
 - [research/recovered/b_batch4/data/B_T012_T013_RENDER_COLLISION_BOUNDARY_OFFLINE_20261023_0808.md 行 31](../../research/recovered/b_batch4/data/B_T012_T013_RENDER_COLLISION_BOUNDARY_OFFLINE_20261023_0808.md?plain=1#L31-L31) — \| `0x004BC691..0x004BC6A6` \| 戻り値0の特別分岐では仮想スロット `+0x38/+0x3C` の値を `object+0x04/+0x08` に保存 \| ASM \|
   制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
 
+- [research/recovered/json_sources1/reports/data/B_T011_T012_MISSILE_VTABLE_SLOT38_EVIDENCE_20261022_1813.json 行 271](../../research/recovered/json_sources1/reports/data/B_T011_T012_MISSILE_VTABLE_SLOT38_EVIDENCE_20261022_1813.json?plain=1#L271-L271) — "description": "writes dispatched object +0x04 after filter"
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
+<a id="field-8"></a>
+## object + 0x8
+
+- [research/recovered/json_sources1/reports/data/B_T011_T012_MISSILE_VTABLE_SLOT38_EVIDENCE_20261022_1813.json 行 276](../../research/recovered/json_sources1/reports/data/B_T011_T012_MISSILE_VTABLE_SLOT38_EVIDENCE_20261022_1813.json?plain=1#L276-L276) — "description": "writes dispatched object +0x08 after filter"
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
 <a id="field-c"></a>
 ## object + 0xC
 
@@ -109,6 +118,12 @@
 - [research/recovered/b_batch4/data/B_T012_T013_RENDER_COLLISION_BOUNDARY_OFFLINE_20261023_0808.md 行 64](../../research/recovered/b_batch4/data/B_T012_T013_RENDER_COLLISION_BOUNDARY_OFFLINE_20261023_0808.md?plain=1#L64-L64) — 3. **T011**：`object+0x54` stampのreader群と `grid+0x28`マスク初期化、Skill `+0x134/+0x1FD`のwriter範囲。
   制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
 
+<a id="field-64"></a>
+## object + 0x64
+
+- [research/recovered/json_sources1/reports/data/B_T012_T013_RENDER_COLLISION_BOUNDARY_EVIDENCE_20261023_0808.json 行 41](../../research/recovered/json_sources1/reports/data/B_T012_T013_RENDER_COLLISION_BOUNDARY_EVIDENCE_20261023_0808.json?plain=1#L41-L41) — "note": "object +0x64 gating"
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
 <a id="field-6c"></a>
 ## object + 0x6C
 
@@ -147,6 +162,12 @@
 
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 480](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L480-L480) — [CONFIRMED-SAVED-NATIVE] `exe/T009_CAPACITY_CLAMP_PROBE.txt` の0x528A85..0x528AB2では、`[esi+0x32C]`と`[esi+0x330]`を2値として取得し、双方をそれぞれ`+1`した2値と併せた4要素をstackに並べ、`[esi+0x
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+<a id="field-78"></a>
+## object + 0x78
+
+- [research/recovered/json_sources1/reports/data/B_T011_T012_T013_OFFSET_TREES_EVIDENCE_20261022_2310.json 行 372](../../research/recovered/json_sources1/reports/data/B_T011_T012_T013_OFFSET_TREES_EVIDENCE_20261022_2310.json?plain=1#L372-L372) — "evidence": "0x005525D2/D5/DB derives manager pointer from object+0x78 then +0x1D4; 0x00515438 uses manager+0x68",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
 
 <a id="field-80"></a>
 ## object + 0x80

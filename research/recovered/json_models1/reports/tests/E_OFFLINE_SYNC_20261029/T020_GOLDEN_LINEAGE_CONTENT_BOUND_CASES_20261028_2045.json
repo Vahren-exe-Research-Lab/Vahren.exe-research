@@ -1,0 +1,616 @@
+{
+  "research_id": "E-OFFLINE-20261028-2045-T018-T020-GOLDEN-LINEAGE-CONTENT-BOUND-01",
+  "source_zip_sha256": "911E5E37A3F9BD5B36F929AF94B0D1E2CD1CD5CF34E3E2F16C8FC800ABF5F7C2",
+  "previous_test_sha256": "E84E3941E3E0AF77F38E1DBC7C6FADBBD5A71178D8C88465DDE36D2E8677ABE7",
+  "previous_fixture_sha256": "C61E0128498B58AD0933D671E85BE3D896E5FB77A15EB1C2722E8723FEA53411",
+  "base": {
+    "capture_source": "SYNTHETIC",
+    "g0": {
+      "run_id": "rA-001",
+      "scenario": "sci1",
+      "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+      "at": 200,
+      "ui_legal": true,
+      "started": true,
+      "capture_sha": "A9EB123F2FD6CCFB3299BB850224A73F9B6BD0AC4CBCC8E9CBF685222E340F97",
+      "capture_b64": "c3ludGhldGljLW9ubHktZzAtYm9keS12MQ==",
+      "event_seq": 11,
+      "previous_capture_sha": "E3C3DCEF7C54B96D88500981F91E1F824B174D11691AFC64143E87A15C750EC3"
+    },
+    "g1": {
+      "run_id": "rA-001",
+      "scenario": "sci1",
+      "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+      "at": 190,
+      "unmodified_save": true,
+      "save_sha": "3355A527AB4B09FC8B34A729AE159461D3D0617E8619B6361F40658DD8289C37",
+      "input_sha": "9CC18F71798340FC14C06F613B9DFDA10FD1BDB76EBBF707C99899C1F6352AAC",
+      "capture_sha": "E3C3DCEF7C54B96D88500981F91E1F824B174D11691AFC64143E87A15C750EC3",
+      "capture_b64": "c3ludGhldGljLW9ubHktZzEtYm9keS12MQ==",
+      "save_b64": "ZmFrZS11bm1vZGlmaWVkLXNhdmU=",
+      "input_b64": "ZmFrZS11c2VyLWlucHV0cw==",
+      "event_seq": 10
+    },
+    "g2": {
+      "run_id": "rA-001",
+      "scenario": "sci1",
+      "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+      "at": 201,
+      "map_sha": "E1920B8FC15DC44AC4D8C5F92724BB455C0F8576358EEF9086DAF1CCB18C19F5",
+      "capture_sha": "5E617EB36D5D7EAC53EAADF0822EBC1983978C79C8E002425964C01CD824D367",
+      "sides": [
+        {
+          "role": "attack",
+          "id": "A"
+        },
+        {
+          "role": "defend",
+          "id": "D"
+        },
+        {
+          "role": "support",
+          "id": "S"
+        }
+      ],
+      "deployed": [
+        {
+          "order": 0,
+          "side_id": "A",
+          "troop": "t1",
+          "unit": "u1",
+          "x": 10,
+          "y": 20
+        },
+        {
+          "order": 1,
+          "side_id": "S",
+          "troop": "t3",
+          "unit": "u5",
+          "x": 12,
+          "y": 30
+        }
+      ],
+      "capture_b64": "c3ludGhldGljLW9ubHktZzItYm9keS12MQ==",
+      "map_b64": "ZmFrZS1tYXAtYnl0ZXM=",
+      "event_seq": 12,
+      "previous_capture_sha": "A9EB123F2FD6CCFB3299BB850224A73F9B6BD0AC4CBCC8E9CBF685222E340F97"
+    },
+    "native_receipt_verified": false
+  },
+  "cases": [
+    {
+      "case": "whitespace_run_id",
+      "changes": [
+        [
+          [
+            "g0",
+            "run_id"
+          ],
+          "   "
+        ],
+        [
+          [
+            "g1",
+            "run_id"
+          ],
+          "   "
+        ],
+        [
+          [
+            "g2",
+            "run_id"
+          ],
+          "   "
+        ]
+      ],
+      "old_accept": true,
+      "hardened_accept": false
+    },
+    {
+      "case": "whitespace_scenario",
+      "changes": [
+        [
+          [
+            "g0",
+            "scenario"
+          ],
+          "   "
+        ],
+        [
+          [
+            "g1",
+            "scenario"
+          ],
+          "   "
+        ],
+        [
+          [
+            "g2",
+            "scenario"
+          ],
+          "   "
+        ]
+      ],
+      "old_accept": true,
+      "hardened_accept": false
+    },
+    {
+      "case": "whitespace_side_id",
+      "changes": [
+        [
+          [
+            "g2",
+            "sides",
+            0,
+            "id"
+          ],
+          "   "
+        ],
+        [
+          [
+            "g2",
+            "deployed",
+            0,
+            "side_id"
+          ],
+          "   "
+        ]
+      ],
+      "old_accept": true,
+      "hardened_accept": false
+    },
+    {
+      "case": "whitespace_unit",
+      "changes": [
+        [
+          [
+            "g2",
+            "deployed",
+            0,
+            "unit"
+          ],
+          "  "
+        ]
+      ],
+      "old_accept": true,
+      "hardened_accept": false
+    },
+    {
+      "case": "bool_x_coordinate",
+      "changes": [
+        [
+          [
+            "g2",
+            "deployed",
+            0,
+            "x"
+          ],
+          true
+        ]
+      ],
+      "old_accept": true,
+      "hardened_accept": false
+    },
+    {
+      "case": "bool_y_coordinate",
+      "changes": [
+        [
+          [
+            "g2",
+            "deployed",
+            1,
+            "y"
+          ],
+          false
+        ]
+      ],
+      "old_accept": true,
+      "hardened_accept": false
+    },
+    {
+      "case": "bool_sequence_index_order",
+      "changes": [
+        [
+          [
+            "g2",
+            "deployed",
+            0,
+            "order"
+          ],
+          false
+        ]
+      ],
+      "old_accept": true,
+      "hardened_accept": false
+    },
+    {
+      "case": "negative_sorted_timestamps",
+      "changes": [
+        [
+          [
+            "g1",
+            "at"
+          ],
+          -30
+        ],
+        [
+          [
+            "g0",
+            "at"
+          ],
+          -20
+        ],
+        [
+          [
+            "g2",
+            "at"
+          ],
+          -10
+        ]
+      ],
+      "old_accept": true,
+      "hardened_accept": false
+    },
+    {
+      "case": "lexical_time_strings",
+      "changes": [
+        [
+          [
+            "g1",
+            "at"
+          ],
+          "A"
+        ],
+        [
+          [
+            "g0",
+            "at"
+          ],
+          "B"
+        ],
+        [
+          [
+            "g2",
+            "at"
+          ],
+          "C"
+        ]
+      ],
+      "old_accept": true,
+      "hardened_accept": false
+    },
+    {
+      "case": "floating_time",
+      "changes": [
+        [
+          [
+            "g1",
+            "at"
+          ],
+          190.0
+        ],
+        [
+          [
+            "g0",
+            "at"
+          ],
+          200.0
+        ],
+        [
+          [
+            "g2",
+            "at"
+          ],
+          201.0
+        ]
+      ],
+      "old_accept": true,
+      "hardened_accept": false
+    },
+    {
+      "case": "capture_digest_not_content_bound",
+      "changes": [
+        [
+          [
+            "g0",
+            "capture_sha"
+          ],
+          "0000000000000000000000000000000000000000000000000000000000000000"
+        ]
+      ],
+      "old_accept": true,
+      "hardened_accept": false
+    },
+    {
+      "case": "save_digest_not_content_bound",
+      "changes": [
+        [
+          [
+            "g1",
+            "save_sha"
+          ],
+          "1111111111111111111111111111111111111111111111111111111111111111"
+        ]
+      ],
+      "old_accept": true,
+      "hardened_accept": false
+    },
+    {
+      "case": "input_digest_not_content_bound",
+      "changes": [
+        [
+          [
+            "g1",
+            "input_sha"
+          ],
+          "2222222222222222222222222222222222222222222222222222222222222222"
+        ]
+      ],
+      "old_accept": true,
+      "hardened_accept": false
+    },
+    {
+      "case": "map_digest_not_content_bound",
+      "changes": [
+        [
+          [
+            "g2",
+            "map_sha"
+          ],
+          "3333333333333333333333333333333333333333333333333333333333333333"
+        ]
+      ],
+      "old_accept": true,
+      "hardened_accept": false
+    },
+    {
+      "case": "g1_capture_tampered_bytes",
+      "changes": [
+        [
+          [
+            "g1",
+            "capture_b64"
+          ],
+          "YQ=="
+        ]
+      ],
+      "old_accept": true,
+      "hardened_accept": false
+    },
+    {
+      "case": "g2_map_tampered_bytes",
+      "changes": [
+        [
+          [
+            "g2",
+            "map_b64"
+          ],
+          "YQ=="
+        ]
+      ],
+      "old_accept": true,
+      "hardened_accept": false
+    },
+    {
+      "case": "g0_previous_digest_wrong",
+      "changes": [
+        [
+          [
+            "g0",
+            "previous_capture_sha"
+          ],
+          "9999999999999999999999999999999999999999999999999999999999999999"
+        ]
+      ],
+      "old_accept": true,
+      "hardened_accept": false
+    },
+    {
+      "case": "g2_previous_digest_wrong",
+      "changes": [
+        [
+          [
+            "g2",
+            "previous_capture_sha"
+          ],
+          "8888888888888888888888888888888888888888888888888888888888888888"
+        ]
+      ],
+      "old_accept": true,
+      "hardened_accept": false
+    },
+    {
+      "case": "sequence_duplicate",
+      "changes": [
+        [
+          [
+            "g0",
+            "event_seq"
+          ],
+          10
+        ]
+      ],
+      "old_accept": true,
+      "hardened_accept": false
+    },
+    {
+      "case": "sequence_reversed",
+      "changes": [
+        [
+          [
+            "g0",
+            "event_seq"
+          ],
+          9
+        ]
+      ],
+      "old_accept": true,
+      "hardened_accept": false
+    },
+    {
+      "case": "sequence_bool",
+      "changes": [
+        [
+          [
+            "g0",
+            "event_seq"
+          ],
+          true
+        ]
+      ],
+      "old_accept": true,
+      "hardened_accept": false
+    },
+    {
+      "case": "capture_b64_invalid",
+      "changes": [
+        [
+          [
+            "g2",
+            "capture_b64"
+          ],
+          "@@invalid@@"
+        ]
+      ],
+      "old_accept": true,
+      "hardened_accept": false
+    },
+    {
+      "case": "capture_b64_empty",
+      "changes": [
+        [
+          [
+            "g2",
+            "capture_b64"
+          ],
+          ""
+        ]
+      ],
+      "old_accept": true,
+      "hardened_accept": false
+    },
+    {
+      "case": "map_b64_missing",
+      "changes": [
+        [
+          [
+            "g2",
+            "map_b64"
+          ],
+          null
+        ]
+      ],
+      "old_accept": true,
+      "hardened_accept": false
+    },
+    {
+      "case": "scenario_mismatch_control",
+      "changes": [
+        [
+          [
+            "g2",
+            "scenario"
+          ],
+          "wrong"
+        ]
+      ],
+      "old_accept": false,
+      "hardened_accept": false
+    },
+    {
+      "case": "duplicate_side_control",
+      "changes": [
+        [
+          [
+            "g2",
+            "sides",
+            1,
+            "id"
+          ],
+          "A"
+        ]
+      ],
+      "old_accept": false,
+      "hardened_accept": false
+    },
+    {
+      "case": "native_source_control",
+      "changes": [
+        [
+          [
+            "capture_source"
+          ],
+          "NATIVE"
+        ]
+      ],
+      "old_accept": false,
+      "hardened_accept": false
+    },
+    {
+      "case": "valid_equal_timestamps_with_monotone_sequence",
+      "changes": [
+        [
+          [
+            "g1",
+            "at"
+          ],
+          200
+        ],
+        [
+          [
+            "g0",
+            "at"
+          ],
+          200
+        ],
+        [
+          [
+            "g2",
+            "at"
+          ],
+          200
+        ]
+      ],
+      "old_accept": true,
+      "hardened_accept": true
+    },
+    {
+      "case": "valid_zero_x_coordinate",
+      "changes": [
+        [
+          [
+            "g2",
+            "deployed",
+            0,
+            "x"
+          ],
+          0
+        ]
+      ],
+      "old_accept": true,
+      "hardened_accept": true
+    },
+    {
+      "case": "valid_negative_x_coordinate_without_map_bounds",
+      "changes": [
+        [
+          [
+            "g2",
+            "deployed",
+            0,
+            "x"
+          ],
+          -1
+        ]
+      ],
+      "old_accept": true,
+      "hardened_accept": true
+    }
+  ],
+  "native_observed": 0,
+  "actual_golden_pass": 0,
+  "strict_match": 0
+}

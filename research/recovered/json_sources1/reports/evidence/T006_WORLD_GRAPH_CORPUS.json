@@ -1,0 +1,194 @@
+{
+  "linkSpot": {
+    "count": 787,
+    "samples": [
+      {
+        "file": "a_default\\script\\scenario1.dat",
+        "line": 175,
+        "text": "linkSpot(spfight, sp52)"
+      },
+      {
+        "file": "a_default\\script\\scenario1.dat",
+        "line": 215,
+        "text": "linkSpot(sp1, sp18) linkSpot(sp1, sp67)"
+      },
+      {
+        "file": "a_default\\script\\scenario1.dat",
+        "line": 216,
+        "text": "linkSpot(sp2, sp2b) linkSpot(sp2, sp16)"
+      },
+      {
+        "file": "a_default\\script\\scenario1.dat",
+        "line": 217,
+        "text": "linkSpot(sp2b, sp50) linkSpot(sp2b, sp66)"
+      },
+      {
+        "file": "a_default\\script\\scenario1.dat",
+        "line": 218,
+        "text": "linkSpot(sp4, sp62)"
+      },
+      {
+        "file": "a_default\\script\\scenario1.dat",
+        "line": 219,
+        "text": "linkSpot(sp5, sp19) linkSpot(sp5, sp27) linkSpot(sp5, sp68) linkSpot(sp5, sp68a)"
+      },
+      {
+        "file": "a_default\\script\\scenario1.dat",
+        "line": 220,
+        "text": "linkSpot(sp6, sp6b) linkSpot(sp6, sp26)"
+      },
+      {
+        "file": "a_default\\script\\scenario1.dat",
+        "line": 221,
+        "text": "linkSpot(sp6b, sp26) linkSpot(sp6b, sp55)"
+      }
+    ]
+  },
+  "linkEscape": {
+    "count": 53,
+    "samples": [
+      {
+        "file": "a_default\\script\\scenario1.dat",
+        "line": 323,
+        "text": "linkEscape(sp11, sp11b)"
+      },
+      {
+        "file": "a_default\\script\\scenario1.dat",
+        "line": 324,
+        "text": "linkEscape(sp21, sp68b)"
+      },
+      {
+        "file": "a_default\\script\\scenario1.dat",
+        "line": 325,
+        "text": "linkEscape(sp25, sp6)"
+      },
+      {
+        "file": "a_default\\script\\scenario1.dat",
+        "line": 326,
+        "text": "linkEscape(sp38b, sp8) linkEscape(sp38b, sp41)"
+      },
+      {
+        "file": "a_default\\script\\scenario1.dat",
+        "line": 327,
+        "text": "linkEscape(sp45, sp3)"
+      },
+      {
+        "file": "a_default\\script\\scenario1.dat",
+        "line": 328,
+        "text": "linkEscape(sp61, sp76)"
+      },
+      {
+        "file": "a_default\\script\\scenario1.dat",
+        "line": 329,
+        "text": "linkEscape(sp68b, sp19)"
+      },
+      {
+        "file": "a_default\\script\\scenario1.dat",
+        "line": 330,
+        "text": "linkEscape(sp71, sp63b)"
+      }
+    ]
+  },
+  "hideLink": {
+    "count": 299,
+    "samples": [
+      {
+        "file": "a_default\\script\\116_仮設ランダムイベント61-70\\randomev64_b.dat",
+        "line": 196,
+        "text": "hideLink(@randomev64_HideLinkSpot_Pick, @randomev64_HideLinkPair_LinkCheck)"
+      },
+      {
+        "file": "a_default\\script\\116_仮設ランダムイベント61-70\\randomev64_b.dat",
+        "line": 358,
+        "text": "hideLink(@randomev64_HideLinkSpot_Pick, @randomev64_HideLinkPair_LinkCheck)"
+      },
+      {
+        "file": "a_default\\script\\116_仮設ランダムイベント61-70\\randomev64_b.dat",
+        "line": 459,
+        "text": "hideLink(@randomev64_HideLinkSpot_Pick_No0, @randomev64_HideLinkPair_No0)"
+      },
+      {
+        "file": "a_default\\script\\116_仮設ランダムイベント61-70\\randomev64_b.dat",
+        "line": 474,
+        "text": "hideLink(@randomev64_HideLinkSpot_Pick_No1, @randomev64_HideLinkPair_No1)"
+      },
+      {
+        "file": "a_default\\script\\116_仮設ランダムイベント61-70\\randomev64_b.dat",
+        "line": 489,
+        "text": "hideLink(@randomev64_HideLinkSpot_Pick_No2, @randomev64_HideLinkPair_No2)"
+      },
+      {
+        "file": "a_default\\script\\116_仮設ランダムイベント61-70\\randomev64_b.dat",
+        "line": 504,
+        "text": "hideLink(@randomev64_HideLinkSpot_Pick_No3, @randomev64_HideLinkPair_No3)"
+      },
+      {
+        "file": "a_default\\script\\116_仮設ランダムイベント61-70\\randomev64_b.dat",
+        "line": 519,
+        "text": "hideLink(@randomev64_HideLinkSpot_Pick_No4, @randomev64_HideLinkPair_No4)"
+      },
+      {
+        "file": "a_default\\script\\116_仮設ランダムイベント61-70\\randomev64_b.dat",
+        "line": 534,
+        "text": "hideLink(@randomev64_HideLinkSpot_Pick_No5, @randomev64_HideLinkPair_No5)"
+      }
+    ]
+  },
+  "hideEscape": {
+    "count": 0,
+    "samples": []
+  },
+  "spotmark": {
+    "count": 3860,
+    "samples": [
+      {
+        "file": "a_default\\script\\1000_チュートリアル\\tuto_event2.dat",
+        "line": 92,
+        "text": "spotmark()"
+      },
+      {
+        "file": "a_default\\script\\1000_チュートリアル\\tuto_event2.dat",
+        "line": 93,
+        "text": "spotmark(sp2)"
+      },
+      {
+        "file": "a_default\\script\\1000_チュートリアル\\tuto_event2.dat",
+        "line": 102,
+        "text": "spotmark()"
+      },
+      {
+        "file": "a_default\\script\\1000_チュートリアル\\tuto_event2.dat",
+        "line": 202,
+        "text": "spotmark()"
+      },
+      {
+        "file": "a_default\\script\\1000_チュートリアル\\tuto_event2.dat",
+        "line": 203,
+        "text": "spotmark(sp7)"
+      },
+      {
+        "file": "a_default\\script\\1000_チュートリアル\\tuto_event2.dat",
+        "line": 208,
+        "text": "spotmark()"
+      },
+      {
+        "file": "a_default\\script\\1000_チュートリアル\\tuto_event2.dat",
+        "line": 209,
+        "text": "spotmark(sp46)"
+      },
+      {
+        "file": "a_default\\script\\1000_チュートリアル\\tuto_event2.dat",
+        "line": 228,
+        "text": "spotmark()"
+      }
+    ]
+  },
+  "showSpotMark": {
+    "count": 0,
+    "samples": []
+  },
+  "hideSpotMark": {
+    "count": 0,
+    "samples": []
+  }
+}

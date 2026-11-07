@@ -1,0 +1,132 @@
+{
+  "research_id": "B-OFFLINE-20261024-15H-T012-STR-STACK-ALIAS-LOOKUP-01",
+  "recovery_id": "B-RC-20261024-15H-LOCAL-SESSION-01",
+  "owner": "B",
+  "task": "T012",
+  "time_jst": "2026-10-24 15:16頃",
+  "status": [
+    "OFFLINE-UNSYNCED",
+    "STATIC-GHIDRA",
+    "VERIFY",
+    "NOT READY"
+  ],
+  "pc_connection": {
+    "tool": "Desktop Commander Local Compact",
+    "attempt": "read_multiple_files MASTER_LEDGER / ANALYSIS_LANES_PROTOCOL / LANE_B_HANDOFF",
+    "result": "INVALID_ARGUMENT: Error code: INVALID_ARGUMENT; Error: McpServerError: Session terminated",
+    "classification": "CONNECTION",
+    "safety_refusal_new": 0
+  },
+  "source": {
+    "archive_name": "HAKUSHIN067_AI_OFFLINE_PACK_20261021.zip",
+    "archive_sha256": "911E5E37A3F9BD5B36F929AF94B0D1E2CD1CD5CF34E3E2F16C8FC800ABF5F7C2",
+    "zip_member_count": 34,
+    "crc": "PASS",
+    "sqlite_sha256": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF",
+    "sqlite_manifest_match": true,
+    "sqlite_quick_check": "ok",
+    "original_exe_present_in_zip": false,
+    "original_exe_sha256_manifest_only": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187"
+  },
+  "functions": {
+    "0x00599BD0": {
+      "sha256_pseudoc": "94F69BED55F2E76978B831CCF1179B94987DE2C655B7B861B4E8B49A99588C64",
+      "lines": {
+        "local_declaration": 137,
+        "getter_output_call": 2136,
+        "scale_write": 2173
+      },
+      "callsite_to_getter": "0x0059CCC6",
+      "target_field": "Skill+0x280"
+    },
+    "0x004647D0": {
+      "sha256_pseudoc": "ADA8EC2EBDA2F55D78E17C4349C04824E6B60007F23EDCACE7ACC7F9FA2B5E05",
+      "lines": {
+        "default_zero": 51,
+        "source_numeric_load": 139,
+        "output_numeric_writes": [
+          80,
+          112,
+          145,
+          176
+        ],
+        "super_lookup": 157,
+        "loop_bound": 170
+      },
+      "result_field_offset": "+0x20",
+      "numeric_source_read_offset": "+0x20"
+    }
+  },
+  "lookup_stack_alias": {
+    "output_stack_symbol": "auStack_1628",
+    "numeric_stack_symbol": "iStack_1608",
+    "difference_hex": "0x20",
+    "same_record_alias": "STATIC-DERIVED",
+    "direct_assignment_in_parser_pseudoc": false,
+    "not_uninitialized_proof": true
+  },
+  "database_evidence": {
+    "direct_callsite": {
+      "site": "0x0059CCC6",
+      "target": "0x004647D0",
+      "ref_type": "UNCONDITIONAL_CALL"
+    },
+    "key_ref": {
+      "site": "0x0059CCA5",
+      "data_address": "0x00624FF8",
+      "symbol": "DAT_00624ff8",
+      "raw_key_bytes": "UNAVAILABLE"
+    },
+    "adjacent_confirmed_strings": [
+      [
+        "0x00624FFC",
+        "skill"
+      ],
+      [
+        "0x00625040",
+        "str_ratio"
+      ],
+      [
+        "0x00625054",
+        "str_ratio"
+      ]
+    ]
+  },
+  "source_snapshot_dedupe": {
+    "files_checked": [
+      "research_snapshot/data/T011_DATA_MODEL.md",
+      "research_snapshot/data/T012_BATTLE_CALC.md",
+      "research_snapshot/evidence/LANE_B_HANDOFF.md"
+    ],
+    "terms_checked": [
+      "iStack_1608",
+      "auStack_1628",
+      "59CCC6"
+    ],
+    "exact_hit_count": 0,
+    "latest_pc_handoff_unavailable": true
+  },
+  "interpretation": {
+    "existing_generic_getter_known": true,
+    "new_contribution": "Skill parser iStack_1608 offset equals ScriptData getter output +0x20, connects caller and callee numeric def-use",
+    "no_property_in_current_or_super": "getter output numeric defaults zero in shown branches, so +0x280 becomes 0 times constant in this parser path",
+    "preceding_copy": "0x0046FB00 copies +0x280 before parser, but parser unconditional store can replace copy",
+    "key_raw_bytes": "VERIFY, likely str from prior T012, direct bytes not present"
+  },
+  "golden": {
+    "original_actual_PASS": 0,
+    "strict_MATCH": 0,
+    "not_run": true,
+    "required": "unmodified EXE+DAT/SAVE/MAP with no str/current only/parent only/explicit0/positive/negative; compare scale downstream HP/MP/next tick and afterhit"
+  },
+  "changes": {
+    "original_exe": 0,
+    "git": 0,
+    "master": 0,
+    "other_lanes": 0,
+    "pc_write": 0,
+    "pc_readback": 0,
+    "work": 0,
+    "schedule": 0
+  }
+}

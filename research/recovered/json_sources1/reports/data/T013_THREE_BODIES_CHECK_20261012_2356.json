@@ -1,0 +1,1417 @@
+{
+  "timestamp_jst": "2026-10-13T00:14:00.188907+09:00",
+  "classification": "STATIC_BYTES_CFG_STACK_AND_MODELS_NOT_GAME_EXECUTION",
+  "checks": 347,
+  "failures": [],
+  "source_sha256": {
+    "T013_NORMAL_AI_THREE_BODIES_20261012_235640.txt": "b76e4a4a6e47e85985859ed6146a28bcf77f63e8f4fb05e1a3209bb27bd76705",
+    "T013_NORMAL_AI_THREE_DEPS_20261012_235741.txt": "d0922e50ea162c23af113693d367f7ad12fb26fd8c9cd81d3e30f496bd55ad83",
+    "T013_NORMAL_AI_THREE_BINDINGS_20261012_235935.txt": "792909d99f997bb599d605f9c55c6c94255cde515199a459d0f5e68b16168554",
+    "T013_NORMAL_AI_THREE_VIRTUALS_20261013_000010.txt": "09fb44d60251fa60b3040c6948afb5370f609e0b5ace4018cdb07149ca3a19a7"
+  },
+  "original_executed": false,
+  "gameplay_pass": 0,
+  "strict_match": 0,
+  "limitations": [
+    "not original gameplay",
+    "x87 precision not emulated",
+    "allocator/exception/virtual tails remain bounded as documented"
+  ],
+  "results": [
+    {
+      "check": "range_57DBB0_57DC60",
+      "pass": true
+    },
+    {
+      "check": "range_5799D0_579AB0",
+      "pass": true
+    },
+    {
+      "check": "range_576450_5765A0",
+      "pass": true
+    },
+    {
+      "check": "range_579AA0_579C30",
+      "pass": true
+    },
+    {
+      "check": "overlap_579AA0",
+      "pass": true
+    },
+    {
+      "check": "overlap_579AA1",
+      "pass": true
+    },
+    {
+      "check": "overlap_579AA2",
+      "pass": true
+    },
+    {
+      "check": "overlap_579AA6",
+      "pass": true
+    },
+    {
+      "check": "overlap_579AA9",
+      "pass": true
+    },
+    {
+      "check": "overlap_579AAC",
+      "pass": true
+    },
+    {
+      "check": "range_4E2D90_4E2E30",
+      "pass": true
+    },
+    {
+      "check": "range_4C52D0_4C53A0",
+      "pass": true
+    },
+    {
+      "check": "range_627C58_627C60",
+      "pass": true
+    },
+    {
+      "check": "range_4FC920_4FC970",
+      "pass": true
+    },
+    {
+      "check": "range_5B6BBB_5B6C40",
+      "pass": true
+    },
+    {
+      "check": "range_5E80F0_5E8100",
+      "pass": true
+    },
+    {
+      "check": "range_63AA4C_63AA54",
+      "pass": true
+    },
+    {
+      "check": "range_63A524_63A52C",
+      "pass": true
+    },
+    {
+      "check": "range_63A94C_63A954",
+      "pass": true
+    },
+    {
+      "check": "range_578110_578370",
+      "pass": true
+    },
+    {
+      "check": "range_544D10_544E40",
+      "pass": true
+    },
+    {
+      "check": "range_5B6C2B_5B6C80",
+      "pass": true
+    },
+    {
+      "check": "overlap_5B6C2B",
+      "pass": true
+    },
+    {
+      "check": "overlap_5B6C2D",
+      "pass": true
+    },
+    {
+      "check": "overlap_5B6C2E",
+      "pass": true
+    },
+    {
+      "check": "overlap_5B6C30",
+      "pass": true
+    },
+    {
+      "check": "overlap_5B6C33",
+      "pass": true
+    },
+    {
+      "check": "overlap_5B6C35",
+      "pass": true
+    },
+    {
+      "check": "overlap_5B6C38",
+      "pass": true
+    },
+    {
+      "check": "overlap_5B6C3D",
+      "pass": true
+    },
+    {
+      "check": "overlap_5B6C3E",
+      "pass": true
+    },
+    {
+      "check": "range_5B71E8_5B7250",
+      "pass": true
+    },
+    {
+      "check": "range_5E80F0_5E8120",
+      "pass": true
+    },
+    {
+      "check": "overlap_5E80F0",
+      "pass": true
+    },
+    {
+      "check": "overlap_5E80F4",
+      "pass": true
+    },
+    {
+      "check": "overlap_5E80F7",
+      "pass": true
+    },
+    {
+      "check": "overlap_5E80FA",
+      "pass": true
+    },
+    {
+      "check": "entry_57DBB0",
+      "pass": true
+    },
+    {
+      "check": "contiguous_57DBB0",
+      "pass": true
+    },
+    {
+      "check": "all_RET_57DBB0",
+      "pass": true
+    },
+    {
+      "check": "branch_target_57DBB7",
+      "pass": true
+    },
+    {
+      "check": "branch_target_57DBCA",
+      "pass": true
+    },
+    {
+      "check": "branch_target_57DBD3",
+      "pass": true
+    },
+    {
+      "check": "branch_target_57DBEC",
+      "pass": true
+    },
+    {
+      "check": "branch_target_57DC03",
+      "pass": true
+    },
+    {
+      "check": "branch_target_57DC0C",
+      "pass": true
+    },
+    {
+      "check": "branch_target_57DC1E",
+      "pass": true
+    },
+    {
+      "check": "branch_target_57DC27",
+      "pass": true
+    },
+    {
+      "check": "branch_target_57DC48",
+      "pass": true
+    },
+    {
+      "check": "entry_5799D0",
+      "pass": true
+    },
+    {
+      "check": "contiguous_5799D0",
+      "pass": true
+    },
+    {
+      "check": "all_RET_5799D0",
+      "pass": true
+    },
+    {
+      "check": "entry_579AA0",
+      "pass": true
+    },
+    {
+      "check": "contiguous_579AA0",
+      "pass": true
+    },
+    {
+      "check": "all_RET_579AA0",
+      "pass": true
+    },
+    {
+      "check": "branch_target_579AB3",
+      "pass": true
+    },
+    {
+      "check": "branch_target_579ABD",
+      "pass": true
+    },
+    {
+      "check": "branch_target_579AC2",
+      "pass": true
+    },
+    {
+      "check": "branch_target_579AC8",
+      "pass": true
+    },
+    {
+      "check": "branch_target_579ACC",
+      "pass": true
+    },
+    {
+      "check": "branch_target_579AD8",
+      "pass": true
+    },
+    {
+      "check": "branch_target_579ADF",
+      "pass": true
+    },
+    {
+      "check": "branch_target_579AE7",
+      "pass": true
+    },
+    {
+      "check": "branch_target_579AEF",
+      "pass": true
+    },
+    {
+      "check": "branch_target_579AF6",
+      "pass": true
+    },
+    {
+      "check": "branch_target_579AFC",
+      "pass": true
+    },
+    {
+      "check": "branch_target_579B05",
+      "pass": true
+    },
+    {
+      "check": "entry_4E2D90",
+      "pass": true
+    },
+    {
+      "check": "contiguous_4E2D90",
+      "pass": true
+    },
+    {
+      "check": "all_RET_4E2D90",
+      "pass": true
+    },
+    {
+      "check": "branch_target_4E2D9B",
+      "pass": true
+    },
+    {
+      "check": "branch_target_4E2DA5",
+      "pass": true
+    },
+    {
+      "check": "branch_target_4E2DAE",
+      "pass": true
+    },
+    {
+      "check": "branch_target_4E2DB8",
+      "pass": true
+    },
+    {
+      "check": "branch_target_4E2DC8",
+      "pass": true
+    },
+    {
+      "check": "branch_target_4E2DCA",
+      "pass": true
+    },
+    {
+      "check": "branch_target_4E2DD3",
+      "pass": true
+    },
+    {
+      "check": "branch_target_4E2DD8",
+      "pass": true
+    },
+    {
+      "check": "branch_target_4E2DE7",
+      "pass": true
+    },
+    {
+      "check": "branch_target_4E2DF1",
+      "pass": true
+    },
+    {
+      "check": "entry_576450",
+      "pass": true
+    },
+    {
+      "check": "contiguous_576450",
+      "pass": true
+    },
+    {
+      "check": "all_RET_576450",
+      "pass": true
+    },
+    {
+      "check": "branch_target_576464",
+      "pass": true
+    },
+    {
+      "check": "branch_target_576476",
+      "pass": true
+    },
+    {
+      "check": "entry_5764A0",
+      "pass": true
+    },
+    {
+      "check": "contiguous_5764A0",
+      "pass": true
+    },
+    {
+      "check": "all_RET_5764A0",
+      "pass": true
+    },
+    {
+      "check": "branch_target_5764DB",
+      "pass": true
+    },
+    {
+      "check": "branch_target_5764E3",
+      "pass": true
+    },
+    {
+      "check": "branch_target_576503",
+      "pass": true
+    },
+    {
+      "check": "branch_target_576523",
+      "pass": true
+    },
+    {
+      "check": "branch_target_57652B",
+      "pass": true
+    },
+    {
+      "check": "branch_target_576545",
+      "pass": true
+    },
+    {
+      "check": "entry_4FC920",
+      "pass": true
+    },
+    {
+      "check": "contiguous_4FC920",
+      "pass": true
+    },
+    {
+      "check": "all_RET_4FC920",
+      "pass": true
+    },
+    {
+      "check": "branch_target_4FC92C",
+      "pass": true
+    },
+    {
+      "check": "entry_4C52D0",
+      "pass": true
+    },
+    {
+      "check": "contiguous_4C52D0",
+      "pass": true
+    },
+    {
+      "check": "all_RET_4C52D0",
+      "pass": true
+    },
+    {
+      "check": "branch_target_4C52DF",
+      "pass": true
+    },
+    {
+      "check": "branch_target_4C52F3",
+      "pass": true
+    },
+    {
+      "check": "no_call_579AA0",
+      "pass": true
+    },
+    {
+      "check": "no_call_4E2D90",
+      "pass": true
+    },
+    {
+      "check": "5799D0_only_two_closed_helpers",
+      "pass": true
+    },
+    {
+      "check": "5764A0_fifth_argument_not_read",
+      "pass": true
+    },
+    {
+      "check": "576450_RET_12",
+      "pass": true
+    },
+    {
+      "check": "5799D0_RET_4",
+      "pass": true
+    },
+    {
+      "check": "576450_clear_before_rebuild",
+      "pass": true
+    },
+    {
+      "check": "third_arg_never_loaded",
+      "pass": true
+    },
+    {
+      "check": "forwarded_five_args",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_0_0",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_0_1",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_0_2",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_0_3",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_0_4",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_0_7",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_0_12",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_0_13",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_0_2147483647",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_0_2147483648",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_0_4294967295",
+      "pass": true
+    },
+    {
+      "check": "tree_readonly_0",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_1_0",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_1_1",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_1_2",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_1_3",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_1_4",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_1_7",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_1_12",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_1_13",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_1_2147483647",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_1_2147483648",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_1_4294967295",
+      "pass": true
+    },
+    {
+      "check": "tree_readonly_1",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_2_0",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_2_1",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_2_2",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_2_3",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_2_4",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_2_7",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_2_12",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_2_13",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_2_2147483647",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_2_2147483648",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_2_4294967295",
+      "pass": true
+    },
+    {
+      "check": "tree_readonly_2",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_3_0",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_3_1",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_3_2",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_3_3",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_3_4",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_3_7",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_3_12",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_3_13",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_3_2147483647",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_3_2147483648",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_3_4294967295",
+      "pass": true
+    },
+    {
+      "check": "tree_readonly_3",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_4_0",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_4_1",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_4_2",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_4_3",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_4_4",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_4_7",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_4_12",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_4_13",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_4_2147483647",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_4_2147483648",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_4_4294967295",
+      "pass": true
+    },
+    {
+      "check": "tree_readonly_4",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_5_0",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_5_1",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_5_2",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_5_3",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_5_4",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_5_7",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_5_12",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_5_13",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_5_2147483647",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_5_2147483648",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_5_4294967295",
+      "pass": true
+    },
+    {
+      "check": "tree_readonly_5",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_6_0",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_6_1",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_6_2",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_6_3",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_6_4",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_6_7",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_6_12",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_6_13",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_6_2147483647",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_6_2147483648",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_6_4294967295",
+      "pass": true
+    },
+    {
+      "check": "tree_readonly_6",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_7_0",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_7_1",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_7_2",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_7_3",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_7_4",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_7_7",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_7_12",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_7_13",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_7_2147483647",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_7_2147483648",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_7_4294967295",
+      "pass": true
+    },
+    {
+      "check": "tree_readonly_7",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_8_0",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_8_1",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_8_2",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_8_3",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_8_4",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_8_7",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_8_12",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_8_13",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_8_2147483647",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_8_2147483648",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_8_4294967295",
+      "pass": true
+    },
+    {
+      "check": "tree_readonly_8",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_9_0",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_9_1",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_9_2",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_9_3",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_9_4",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_9_7",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_9_12",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_9_13",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_9_2147483647",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_9_2147483648",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_9_4294967295",
+      "pass": true
+    },
+    {
+      "check": "tree_readonly_9",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_10_0",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_10_1",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_10_2",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_10_3",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_10_4",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_10_7",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_10_12",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_10_13",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_10_2147483647",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_10_2147483648",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_10_4294967295",
+      "pass": true
+    },
+    {
+      "check": "tree_readonly_10",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_11_0",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_11_1",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_11_2",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_11_3",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_11_4",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_11_7",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_11_12",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_11_13",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_11_2147483647",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_11_2147483648",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_11_4294967295",
+      "pass": true
+    },
+    {
+      "check": "tree_readonly_11",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_12_0",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_12_1",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_12_2",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_12_3",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_12_4",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_12_7",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_12_12",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_12_13",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_12_2147483647",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_12_2147483648",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_12_4294967295",
+      "pass": true
+    },
+    {
+      "check": "tree_readonly_12",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_13_0",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_13_1",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_13_2",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_13_3",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_13_4",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_13_7",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_13_12",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_13_13",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_13_2147483647",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_13_2147483648",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_13_4294967295",
+      "pass": true
+    },
+    {
+      "check": "tree_readonly_13",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_14_0",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_14_1",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_14_2",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_14_3",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_14_4",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_14_7",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_14_12",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_14_13",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_14_2147483647",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_14_2147483648",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_14_4294967295",
+      "pass": true
+    },
+    {
+      "check": "tree_readonly_14",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_15_0",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_15_1",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_15_2",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_15_3",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_15_4",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_15_7",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_15_12",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_15_13",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_15_2147483647",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_15_2147483648",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_15_4294967295",
+      "pass": true
+    },
+    {
+      "check": "tree_readonly_15",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_16_0",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_16_1",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_16_2",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_16_3",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_16_4",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_16_7",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_16_12",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_16_13",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_16_2147483647",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_16_2147483648",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_16_4294967295",
+      "pass": true
+    },
+    {
+      "check": "tree_readonly_16",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_17_0",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_17_1",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_17_2",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_17_3",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_17_4",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_17_7",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_17_12",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_17_13",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_17_2147483647",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_17_2147483648",
+      "pass": true
+    },
+    {
+      "check": "equal_key_count_17_4294967295",
+      "pass": true
+    },
+    {
+      "check": "tree_readonly_17",
+      "pass": true
+    },
+    {
+      "check": "mask05_less",
+      "pass": true
+    },
+    {
+      "check": "mask05_equal",
+      "pass": true
+    },
+    {
+      "check": "mask05_greater",
+      "pass": true
+    },
+    {
+      "check": "mask05_unordered",
+      "pass": true
+    },
+    {
+      "check": "57DBB0_gate_model_0",
+      "pass": true
+    },
+    {
+      "check": "57DBB0_gate_model_1",
+      "pass": true
+    },
+    {
+      "check": "57DBB0_gate_model_2",
+      "pass": true
+    },
+    {
+      "check": "57DBB0_gate_model_3",
+      "pass": true
+    },
+    {
+      "check": "57DBB0_gate_model_4",
+      "pass": true
+    },
+    {
+      "check": "57DBB0_gate_model_5",
+      "pass": true
+    },
+    {
+      "check": "57DBB0_gate_model_6",
+      "pass": true
+    },
+    {
+      "check": "57DBB0_gate_model_7",
+      "pass": true
+    },
+    {
+      "check": "627C58_exact_double",
+      "pass": true
+    },
+    {
+      "check": "contract_unique_01",
+      "pass": true
+    },
+    {
+      "check": "handoff_unique_01",
+      "pass": true
+    },
+    {
+      "check": "contract_unique_02",
+      "pass": true
+    },
+    {
+      "check": "handoff_unique_02",
+      "pass": true
+    },
+    {
+      "check": "contract_unique_03",
+      "pass": true
+    },
+    {
+      "check": "handoff_unique_03",
+      "pass": true
+    }
+  ],
+  "status": "PASS",
+  "final_document_sha256": {
+    "data/T013_WORK_NORMAL_AI_CONTRACT_20261012.md": "e85decf719bb586c20fa313942d2ea78a853c54a7a88db3a384bbf10e0dce5aa",
+    "evidence/LANE_B_HANDOFF.md": "b484c570bd6fe500cb905e6131a6600691a9900ab29161a5d964e98798688264",
+    "exe/T013_THREE_BODIES_CHECK_20261012_2356.py": "35f7c305703c34db91b897e479ff7a7c7c2e09f4a159c8ebe84cb91fac8e0eeb"
+  },
+  "final_handoff_checked": true
+}

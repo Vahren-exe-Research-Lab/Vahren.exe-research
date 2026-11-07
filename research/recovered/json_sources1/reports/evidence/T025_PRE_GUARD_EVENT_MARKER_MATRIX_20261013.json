@@ -1,0 +1,25 @@
+{
+  "evidence_id": "C-20261013-0628-01",
+  "task_ids": ["T025", "T016", "T032"],
+  "classification": "CONFIRMED_TARGET_SAVE_NUMERIC_PLUS_ORIGINAL_SOURCE__GAMEPLAY_NOT_READY",
+  "original_scope": "ver0.67 normalized a_default/script; save1/save2 stored numeric(key,aux,value); not actual event body execution",
+  "sources": ["event_world.dat:55-76", "7000_その他シナリオ/free_ev_world.dat:10-35", "5000_ランダムシナリオ/ev_rnd.dat:35-45", "2001_イベント_ボス/EB_5151_古代アステカ王国.dat:553-557,702-709", "2001_イベント_ボス/event_51_ボス死亡時.dat:143-159,211-242"],
+  "save1": {
+    "sha256": "15776d294a0c4f66568e7964331d60990b704f2ca324c568c49560561ae1947a",
+    "scenario": "sci1", "player_power": "po2", "numeric_record_count": 1958,
+    "markers": {"@evtend_boss_dead": 1, "@evtend_tdnastk_dead": 1, "@evtend_kuroknn141919_dead": 1},
+    "gates": {"bossdead": 0, "tdnastkdead": 0, "clearflag": 0, "checkturn": 1, "checktiming": 1, "kuroknndeadpo": "ABSENT_EXACT_KEY"}
+  },
+  "save2": {
+    "sha256": "45ccef306b56bf66810726436365207ca18b63d7cc0e432e784034d196fa5635",
+    "scenario": "sci1", "player_power": "po2", "numeric_record_count": 2591,
+    "markers": {"@evtend_boss_dead": 1, "@evtend_tdnastk_dead": 1, "@evtend_kuroknn141919_dead": 1},
+    "gates": {"bossdead": 0, "tdnastkdead": 0, "clearflag": 0, "checkturn": 2, "checktiming": 1, "kuroknndeadpo": "ABSENT_EXACT_KEY"}
+  },
+  "source_callsite_note": "sci1 and sc_free register boss_dead -> tdnastk_dead -> kuroknn141919_dead before turn re-entry guard; rsc registers only boss_dead -> tdnastk_dead in this pre-guard group",
+  "limitations": "Marker=1 is invocation history, not death/cleanup; absent numeric key does not prove native zero; event queue, Done, body execution, valid boss kills and strict game match remain unobserved",
+  "evidence_reuse": "A-owned 0x4321B0 marker writer precedes property lookup (existing C-20261013-0520-01); original T025 section 76 covered boss_dead only",
+  "golden": "Under legal sci1 save1/save2 path, compare first World, post-boss death, World re-entry, next turn, persisted 3 markers versus tdnastkdead/bossdead/kuroknndeadpo and actual unit/power outcomes. sc_free/rsc only if valid legal captures exist.",
+  "original_executable_launched": false, "gameplay_golden_pass": 0, "strict_new_engine_match": 0,
+  "handoff": "STATIC READY; gameplay NOT READY"
+}

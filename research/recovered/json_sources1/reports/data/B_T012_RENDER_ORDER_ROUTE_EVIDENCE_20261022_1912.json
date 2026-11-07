@@ -1,0 +1,224 @@
+{
+  "id": "B-OFFLINE-20261022-1912-T012-RENDER-ORDER-ROUTE-01",
+  "state": "OFFLINE-UNSYNCED/STATIC-ASM/STATIC-SAVED-PSEUDOC/INFERRED/VERIFY/NOT READY",
+  "offline_pack_sha256": "911E5E37A3F9BD5B36F929AF94B0D1E2CD1CD5CF34E3E2F16C8FC800ABF5F7C2",
+  "sqlite_sha256": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF",
+  "exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "zip_crc": "PASS",
+  "sqlite_quick_check": "ok",
+  "vtable_slots": {
+    "Missile": {
+      "+0x1C": "0x0054D480",
+      "+0x20": "0x00418430",
+      "+0x24": "0x0054D8E0",
+      "+0x38": "0x0054D970",
+      "+0x3C": "0x00402CD0",
+      "+0x40": "0x00546A20",
+      "+0x48": "0x0043B5A0",
+      "+0x4C": "0x0043B5A0",
+      "+0x54": "0x0054DB60"
+    },
+    "SimpleMissile": {
+      "+0x1C": "0x0054D480",
+      "+0x20": "0x00418430",
+      "+0x24": "0x0054D8E0",
+      "+0x38": "0x0054D970",
+      "+0x3C": "0x00402CD0",
+      "+0x40": "0x00546A20",
+      "+0x48": "0x0043B5A0",
+      "+0x4C": "0x0043B5A0",
+      "+0x54": "0x00552E60"
+    }
+  },
+  "asm_opcode_proofs": {
+    "0x0043B5A0": "32c0c3",
+    "0x00418430": "33c0c21400",
+    "0x004C5C9C": "8b5048",
+    "0x004C5CA5": "740a",
+    "0x004C5CAC": "e80fe1ffff",
+    "0x004C3DD3": "8b5038",
+    "0x004C3DE0": "782d",
+    "0x004C3E2C": "e86f170000",
+    "0x004C4142": "e8a983ffff",
+    "0x004C419E": "33c0",
+    "0x004C41A0": "e8ab060000",
+    "0x004BC67E": "8b4240",
+    "0x004BC693": "8b4238",
+    "0x004BC69F": "8b423c",
+    "0x004BBC71": "750d",
+    "0x004BBC7C": "0f9cc0",
+    "0x004BBC84": "0f9cc0",
+    "0x004C5910": "8b542404",
+    "0x004C598B": "3bf0",
+    "0x004C5991": "0f9cc0"
+  },
+  "direct_call_proofs": [
+    {
+      "caller": "0x004C5C80",
+      "site": "0x004C5CAC",
+      "callee": "0x004C3DC0",
+      "opcode": "e80fe1ffff",
+      "ref_type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0x004C3DC0",
+      "site": "0x004C3E2C",
+      "callee": "0x004C55A0",
+      "opcode": "e86f170000",
+      "ref_type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0x004C3EB0",
+      "site": "0x004C4142",
+      "callee": "0x004BC4F0",
+      "opcode": "e8a983ffff",
+      "ref_type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0x004C3EB0",
+      "site": "0x004C41A0",
+      "callee": "0x004C4850",
+      "opcode": "e8ab060000",
+      "ref_type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0x004C3EB0",
+      "site": "0x004C422A",
+      "callee": "0x004C4850",
+      "opcode": "e821060000",
+      "ref_type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0x004C3EB0",
+      "site": "0x004C42A8",
+      "callee": "0x004C4850",
+      "opcode": "e8a3050000",
+      "ref_type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0x004C3EB0",
+      "site": "0x004C4352",
+      "callee": "0x004C4850",
+      "opcode": "e8f9040000",
+      "ref_type": "UNCONDITIONAL_CALL"
+    },
+    {
+      "caller": "0x004BC4F0",
+      "site": "0x004BC8E9",
+      "callee": "0x0047BB50",
+      "opcode": "e862f2fbff",
+      "ref_type": "UNCONDITIONAL_CALL"
+    }
+  ],
+  "function_code_hashes": {
+    "0x004C3DC0": {
+      "code_sha256": "41A4FB018506FC0BB9EFC9EE5F5C45B237E59AABF98B4A9E47E54AC95D366AD0",
+      "size_bytes": 117
+    },
+    "0x004C55A0": {
+      "code_sha256": "786C8C4AC6993A4B505B56B7021280014317EF47F75566268B84B24680339601",
+      "size_bytes": 595
+    },
+    "0x004C5910": {
+      "code_sha256": "BF597452DE28C467495DDE82BF8F4839566F52E3D5C6E5408E33FFE7FF8D2CE6",
+      "size_bytes": 218
+    },
+    "0x004BC4F0": {
+      "code_sha256": "5D98485DAE1278516AD00AFDEE3ADDF19F7CE2EA686B802FBBACF89F8F7F6F5A",
+      "size_bytes": 1052
+    },
+    "0x004C3EB0": {
+      "code_sha256": "B4A3A7B3221C7F34301FD2B9BA6ABF5AF9AF215A33A9BFCA6C1D3F062235E5FC",
+      "size_bytes": 1384
+    },
+    "0x004C4850": {
+      "code_sha256": "44E72287CCFD5650A4850966782CF4CC1830B55D6B4ED92AFCAB2C0CBC520246",
+      "size_bytes": 278
+    },
+    "0x004C5C80": {
+      "code_sha256": "507EB8A8320418417B1F2788BB3B8845DF6A8F26F56A8E58528699060694B5A7",
+      "size_bytes": 61
+    },
+    "0x0054D970": {
+      "code_sha256": "1965DE111833CB45A584E660CE15250F23DEF5ECDFB5CA7A6AF470BB934CEE20",
+      "size_bytes": 45
+    },
+    "0x00546A20": {
+      "code_sha256": "DDD9602E264A36E503EB82E7C93EA1F1E577561B17B11397AE086E3ADC910B29",
+      "size_bytes": 10
+    },
+    "0x0043B5A0": {
+      "code_sha256": "14E8060041B69411309A4044035A2CC110BEB7018144D02F53B5080878B1F18E",
+      "size_bytes": 3
+    },
+    "0x0054D480": {
+      "code_sha256": "E42254F7FDA53D9FD5ADAAE5F5E6FC00E6879EA760E15772B0C7B8335FC31B05",
+      "size_bytes": 1114
+    },
+    "0x0047BB50": {
+      "code_sha256": "9BE030318BC087DAC0FBC4DB1DA23B26808193A09FD5E8D7D09CC5D138CDDCDC",
+      "size_bytes": 237
+    }
+  },
+  "local_comparator": "0x004BBC60 (not an indexed functions.entry_va; verified native opcode: signed setl on +0x04, then +0x08 if equal)",
+  "conclusions": [
+    "Missile and SimpleMissile vslot+0x48 = 0x43B5A0 -> AL=0 always when native vptr is intact",
+    "0x4C5C80 only enters 0x4C3DC0 and 0x4C55A0 branch if vslot+0x48 nonzero, hence concrete missile classes skip this registered-list sort path",
+    "0x4BC4F0 uses vslot+0x40+3 as bucket; +0x40==0 bucket3 gets signed two-key sort via 0x47BB50/0x4BBC60, then render path invokes 0x4C4850",
+    "0x4C4850 uses object vslot+0x48 false and vslot+0x1C for writing render vertex records, D3D state confirms render consumer",
+    "For concrete missile classes, vslot+0x40 = 0x546A20 returns skill_candidate+0x28, vslot+0x38 = 0x54D970, +0x3C = 0x402CD0",
+    "The 18:13 virtual sort comparator via 0x4C5910 is verified generic, but ordinary missile insertion into that path is blocked by concrete vslot+0x48=0; any alternative caller/vptr change remains VERIFY."
+  ],
+  "synthetic_comparison_examples": [
+    {
+      "left": [
+        0,
+        9
+      ],
+      "right": [
+        0,
+        10
+      ],
+      "signed_lex_less": true
+    },
+    {
+      "left": [
+        1000000,
+        1
+      ],
+      "right": [
+        0,
+        100
+      ],
+      "signed_lex_less": false
+    },
+    {
+      "left": [
+        -1,
+        9
+      ],
+      "right": [
+        0,
+        0
+      ],
+      "signed_lex_less": true
+    },
+    {
+      "left": [
+        0,
+        1
+      ],
+      "right": [
+        0,
+        1
+      ],
+      "signed_lex_less": false
+    }
+  ],
+  "golden": {
+    "original_runtime_runs": 0,
+    "strict_match": 0
+  },
+  "master_merged": false,
+  "pc_synced": false
+}

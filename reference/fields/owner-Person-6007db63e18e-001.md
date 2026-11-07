@@ -25,4 +25,7 @@
 - [research/recovered/b_batch9/data/T013_PERSON_POOL_PLAYER_RESET_JOIN_20261023_1313.md 行 14](../../research/recovered/b_batch9/data/T013_PERSON_POOL_PLAYER_RESET_JOIN_20261023_1313.md?plain=1#L14-L14) — [NEXT] 許可済みB証拠からPerson+0x48 vector writerと0x547DB0参照管理実体の同一性、0x5149C0 this pointerを原作ASMで独立確認。拒否済0x514C50には介入しない。T024/T028未解決維持。
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
+- [research/recovered/json_sources1/reports/data/B_T012_T013_PERSON_POOL_LIFECYCLE_EVIDENCE_20261023_1215.json 行 311](../../research/recovered/json_sources1/reports/data/B_T012_T013_PERSON_POOL_LIFECYCLE_EVIDENCE_20261023_1215.json?plain=1#L311-L311) — "Do not infer immediate Person+0x48 erasure from group+0x0C/+0x10 or manager+0x64 mutators.",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

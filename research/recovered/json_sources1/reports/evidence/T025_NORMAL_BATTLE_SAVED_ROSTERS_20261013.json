@@ -1,0 +1,1378 @@
+{
+  "schema": 1,
+  "evidence_id": "C-20261013-0036-01",
+  "classification": "ACTUAL_SAVE_STORED_ID_REFERENCES_NOT_BATTLE_SPAWN",
+  "original_game_executed": false,
+  "native_troop_side_position_verified": false,
+  "captures": {
+    "save1": {
+      "source_relative": "dev_lab\\_work\\target_actual_20261011_save1.sav",
+      "sha256": "15776d294a0c4f66568e7964331d60990b704f2ca324c568c49560561ae1947a",
+      "spots": {
+        "sp2": {
+          "member_count": 32,
+          "members": [
+            "a020+0",
+            "a020+1",
+            "a020+2",
+            "a020+3",
+            "a020+4",
+            "a020+5",
+            "a020+6",
+            "a024+0",
+            "a024+1",
+            "a024+2",
+            "a024+3",
+            "a024+4",
+            "a024+5",
+            "a024+6",
+            "a999+0",
+            "a999+1",
+            "a999+10",
+            "a999+11",
+            "a999+12",
+            "a999+2",
+            "a999+3",
+            "a999+4",
+            "a999+5",
+            "a999+6",
+            "a999+7",
+            "a999+8",
+            "a999+9",
+            "kmr",
+            "mur",
+            "murpo",
+            "rma",
+            "yaju"
+          ],
+          "power68_refs": [
+            "po2"
+          ],
+          "capacity_88": 16,
+          "castlebattle_8c": 0,
+          "fightvalue_90": 0,
+          "vector0_roots_derived": [
+            "kmr",
+            "mur",
+            "rma",
+            "yaju"
+          ],
+          "roots_are_not_verified_native_troops": true
+        },
+        "sp2b": {
+          "member_count": 80,
+          "members": [
+            "0inju+0",
+            "0inju+1",
+            "0inju+2",
+            "0inju+3",
+            "0inju+4",
+            "0inju+5",
+            "0inju+6",
+            "0inju+7",
+            "a022+0",
+            "a022+1",
+            "a022+2",
+            "a022+3",
+            "a022+4",
+            "a022+5",
+            "a022+6",
+            "ken",
+            "self_a020+0",
+            "self_a020+1",
+            "self_a020+10",
+            "self_a020+11",
+            "self_a020+12",
+            "self_a020+13",
+            "self_a020+14",
+            "self_a020+15",
+            "self_a020+16",
+            "self_a020+17",
+            "self_a020+18",
+            "self_a020+19",
+            "self_a020+2",
+            "self_a020+20",
+            "self_a020+21",
+            "self_a020+22",
+            "self_a020+23",
+            "self_a020+3",
+            "self_a020+4",
+            "self_a020+5",
+            "self_a020+6",
+            "self_a020+7",
+            "self_a020+8",
+            "self_a020+9",
+            "self_a024+0",
+            "self_a024+1",
+            "self_a024+10",
+            "self_a024+11",
+            "self_a024+12",
+            "self_a024+13",
+            "self_a024+14",
+            "self_a024+15",
+            "self_a024+16",
+            "self_a024+17",
+            "self_a024+18",
+            "self_a024+19",
+            "self_a024+2",
+            "self_a024+20",
+            "self_a024+21",
+            "self_a024+22",
+            "self_a024+23",
+            "self_a024+3",
+            "self_a024+4",
+            "self_a024+5",
+            "self_a024+6",
+            "self_a024+7",
+            "self_a024+8",
+            "self_a024+9",
+            "self_a999+0",
+            "self_a999+1",
+            "self_a999+10",
+            "self_a999+11",
+            "self_a999+12",
+            "self_a999+13",
+            "self_a999+14",
+            "self_a999+15",
+            "self_a999+2",
+            "self_a999+3",
+            "self_a999+4",
+            "self_a999+5",
+            "self_a999+6",
+            "self_a999+7",
+            "self_a999+8",
+            "self_a999+9"
+          ],
+          "power68_refs": [],
+          "capacity_88": 16,
+          "castlebattle_8c": 0,
+          "fightvalue_90": 0,
+          "vector0_roots_derived": [
+            "0inju+0",
+            "ken",
+            "self_a020+0",
+            "self_a020+16",
+            "self_a020+8",
+            "self_a024+0",
+            "self_a024+16",
+            "self_a024+8",
+            "self_a999+0",
+            "self_a999+8"
+          ],
+          "roots_are_not_verified_native_troops": true
+        },
+        "sp16": {
+          "member_count": 48,
+          "members": [
+            "inyume+0",
+            "inyume+1",
+            "inyume+2",
+            "inyume+3",
+            "inyume+4",
+            "inyume+5",
+            "inyume+6",
+            "inyumeb+0",
+            "inyumeb+1",
+            "inyumeb+10",
+            "inyumeb+11",
+            "inyumeb+12",
+            "inyumeb+13",
+            "inyumeb+14",
+            "inyumeb+15",
+            "inyumeb+16",
+            "inyumeb+17",
+            "inyumeb+18",
+            "inyumeb+19",
+            "inyumeb+2",
+            "inyumeb+20",
+            "inyumeb+21",
+            "inyumeb+22",
+            "inyumeb+23",
+            "inyumeb+24",
+            "inyumeb+25",
+            "inyumeb+26",
+            "inyumeb+27",
+            "inyumeb+28",
+            "inyumeb+29",
+            "inyumeb+3",
+            "inyumeb+30",
+            "inyumeb+31",
+            "inyumeb+32",
+            "inyumeb+33",
+            "inyumeb+34",
+            "inyumeb+35",
+            "inyumeb+36",
+            "inyumeb+37",
+            "inyumeb+38",
+            "inyumeb+39",
+            "inyumeb+4",
+            "inyumeb+5",
+            "inyumeb+6",
+            "inyumeb+7",
+            "inyumeb+8",
+            "inyumeb+9",
+            "u_inyume"
+          ],
+          "power68_refs": [],
+          "capacity_88": 16,
+          "castlebattle_8c": 0,
+          "fightvalue_90": 0,
+          "vector0_roots_derived": [
+            "inyumeb+0",
+            "inyumeb+16",
+            "inyumeb+24",
+            "inyumeb+32",
+            "inyumeb+8",
+            "u_inyume"
+          ],
+          "roots_are_not_verified_native_troops": true
+        },
+        "sp50": {
+          "member_count": 0,
+          "members": [],
+          "power68_refs": [
+            "po29"
+          ],
+          "capacity_88": 16,
+          "castlebattle_8c": 0,
+          "fightvalue_90": 0,
+          "vector0_roots_derived": [],
+          "roots_are_not_verified_native_troops": true
+        },
+        "sp0": {
+          "member_count": 8,
+          "members": [
+            "a020+10",
+            "a020+11",
+            "a020+12",
+            "a020+13",
+            "a020+7",
+            "a020+8",
+            "a020+9",
+            "akys"
+          ],
+          "power68_refs": [],
+          "capacity_88": 8,
+          "castlebattle_8c": 0,
+          "fightvalue_90": 0,
+          "vector0_roots_derived": [
+            "akys"
+          ],
+          "roots_are_not_verified_native_troops": true
+        }
+      },
+      "unit_vectors": {
+        "kmr": {
+          "listed_by_spot": "sp2",
+          "vector0": [
+            "a024+0",
+            "a024+1",
+            "a024+2",
+            "a024+3",
+            "a024+4",
+            "a024+5",
+            "a024+6"
+          ]
+        },
+        "mur": {
+          "listed_by_spot": "sp2",
+          "vector0": [
+            "murpo",
+            "a999+0",
+            "a999+1",
+            "a999+2",
+            "a999+3",
+            "a999+4",
+            "a999+5"
+          ]
+        },
+        "rma": {
+          "listed_by_spot": "sp2",
+          "vector0": [
+            "a999+6",
+            "a999+7",
+            "a999+8",
+            "a999+9",
+            "a999+10",
+            "a999+11",
+            "a999+12"
+          ]
+        },
+        "yaju": {
+          "listed_by_spot": "sp2",
+          "vector0": [
+            "a020+0",
+            "a020+1",
+            "a020+2",
+            "a020+3",
+            "a020+4",
+            "a020+5",
+            "a020+6"
+          ]
+        },
+        "0inju+0": {
+          "listed_by_spot": "sp2b",
+          "vector0": [
+            "0inju+1",
+            "0inju+2",
+            "0inju+3",
+            "0inju+4",
+            "0inju+5",
+            "0inju+6",
+            "0inju+7"
+          ]
+        },
+        "ken": {
+          "listed_by_spot": "sp2b",
+          "vector0": [
+            "a022+0",
+            "a022+1",
+            "a022+2",
+            "a022+3",
+            "a022+4",
+            "a022+5",
+            "a022+6"
+          ]
+        },
+        "self_a020+0": {
+          "listed_by_spot": "sp2b",
+          "vector0": [
+            "self_a020+1",
+            "self_a020+2",
+            "self_a020+3",
+            "self_a020+4",
+            "self_a020+5",
+            "self_a020+6",
+            "self_a020+7"
+          ]
+        },
+        "self_a020+16": {
+          "listed_by_spot": "sp2b",
+          "vector0": [
+            "self_a020+17",
+            "self_a020+18",
+            "self_a020+19",
+            "self_a020+20",
+            "self_a020+21",
+            "self_a020+22",
+            "self_a020+23"
+          ]
+        },
+        "self_a020+8": {
+          "listed_by_spot": "sp2b",
+          "vector0": [
+            "self_a020+9",
+            "self_a020+10",
+            "self_a020+11",
+            "self_a020+12",
+            "self_a020+13",
+            "self_a020+14",
+            "self_a020+15"
+          ]
+        },
+        "self_a024+0": {
+          "listed_by_spot": "sp2b",
+          "vector0": [
+            "self_a024+1",
+            "self_a024+2",
+            "self_a024+3",
+            "self_a024+4",
+            "self_a024+5",
+            "self_a024+6",
+            "self_a024+7"
+          ]
+        },
+        "self_a024+16": {
+          "listed_by_spot": "sp2b",
+          "vector0": [
+            "self_a024+17",
+            "self_a024+18",
+            "self_a024+19",
+            "self_a024+20",
+            "self_a024+21",
+            "self_a024+22",
+            "self_a024+23"
+          ]
+        },
+        "self_a024+8": {
+          "listed_by_spot": "sp2b",
+          "vector0": [
+            "self_a024+9",
+            "self_a024+10",
+            "self_a024+11",
+            "self_a024+12",
+            "self_a024+13",
+            "self_a024+14",
+            "self_a024+15"
+          ]
+        },
+        "self_a999+0": {
+          "listed_by_spot": "sp2b",
+          "vector0": [
+            "self_a999+1",
+            "self_a999+2",
+            "self_a999+3",
+            "self_a999+4",
+            "self_a999+5",
+            "self_a999+6",
+            "self_a999+7"
+          ]
+        },
+        "self_a999+8": {
+          "listed_by_spot": "sp2b",
+          "vector0": [
+            "self_a999+9",
+            "self_a999+10",
+            "self_a999+11",
+            "self_a999+12",
+            "self_a999+13",
+            "self_a999+14",
+            "self_a999+15"
+          ]
+        },
+        "inyumeb+0": {
+          "listed_by_spot": "sp16",
+          "vector0": [
+            "inyumeb+1",
+            "inyumeb+2",
+            "inyumeb+3",
+            "inyumeb+4",
+            "inyumeb+5",
+            "inyumeb+6",
+            "inyumeb+7"
+          ]
+        },
+        "inyumeb+16": {
+          "listed_by_spot": "sp16",
+          "vector0": [
+            "inyumeb+17",
+            "inyumeb+18",
+            "inyumeb+19",
+            "inyumeb+20",
+            "inyumeb+21",
+            "inyumeb+22",
+            "inyumeb+23"
+          ]
+        },
+        "inyumeb+24": {
+          "listed_by_spot": "sp16",
+          "vector0": [
+            "inyumeb+25",
+            "inyumeb+26",
+            "inyumeb+27",
+            "inyumeb+28",
+            "inyumeb+29",
+            "inyumeb+30",
+            "inyumeb+31"
+          ]
+        },
+        "inyumeb+32": {
+          "listed_by_spot": "sp16",
+          "vector0": [
+            "inyumeb+33",
+            "inyumeb+34",
+            "inyumeb+35",
+            "inyumeb+36",
+            "inyumeb+37",
+            "inyumeb+38",
+            "inyumeb+39"
+          ]
+        },
+        "inyumeb+8": {
+          "listed_by_spot": "sp16",
+          "vector0": [
+            "inyumeb+9",
+            "inyumeb+10",
+            "inyumeb+11",
+            "inyumeb+12",
+            "inyumeb+13",
+            "inyumeb+14",
+            "inyumeb+15"
+          ]
+        },
+        "u_inyume": {
+          "listed_by_spot": "sp16",
+          "vector0": [
+            "inyume+0",
+            "inyume+1",
+            "inyume+2",
+            "inyume+3",
+            "inyume+4",
+            "inyume+5",
+            "inyume+6"
+          ]
+        },
+        "akys": {
+          "listed_by_spot": "sp0",
+          "vector0": [
+            "a020+7",
+            "a020+8",
+            "a020+9",
+            "a020+10",
+            "a020+11",
+            "a020+12",
+            "a020+13"
+          ]
+        }
+      }
+    },
+    "save2": {
+      "source_relative": "dev_lab\\_work\\target_actual_20261011_save2.sav",
+      "sha256": "45ccef306b56bf66810726436365207ca18b63d7cc0e432e784034d196fa5635",
+      "spots": {
+        "sp2": {
+          "member_count": 48,
+          "members": [
+            "a0062+10",
+            "a0062+11",
+            "a0062+12",
+            "a0062+13",
+            "a0062+14",
+            "a0062+15",
+            "a0062+16",
+            "a0062+17",
+            "a0062+18",
+            "a0062+19",
+            "a0062+20",
+            "a0062+7",
+            "a0062+8",
+            "a0062+9",
+            "a020+0",
+            "a020+1",
+            "a020+2",
+            "a020+3",
+            "a020+4",
+            "a020+5",
+            "a020+6",
+            "a024+0",
+            "a024+1",
+            "a024+2",
+            "a024+3",
+            "a024+4",
+            "a024+5",
+            "a024+6",
+            "a999+0",
+            "a999+1",
+            "a999+10",
+            "a999+11",
+            "a999+12",
+            "a999+2",
+            "a999+3",
+            "a999+4",
+            "a999+5",
+            "a999+6",
+            "a999+7",
+            "a999+8",
+            "a999+9",
+            "inmukun600",
+            "inmukun601",
+            "kmr",
+            "mur",
+            "murpo",
+            "rma",
+            "yaju"
+          ],
+          "power68_refs": [
+            "po2"
+          ],
+          "capacity_88": 16,
+          "castlebattle_8c": 0,
+          "fightvalue_90": 0,
+          "vector0_roots_derived": [
+            "inmukun600",
+            "inmukun601",
+            "kmr",
+            "mur",
+            "rma",
+            "yaju"
+          ],
+          "roots_are_not_verified_native_troops": true
+        },
+        "sp2b": {
+          "member_count": 80,
+          "members": [
+            "0inju+0",
+            "0inju+1",
+            "0inju+2",
+            "0inju+3",
+            "0inju+4",
+            "0inju+5",
+            "0inju+6",
+            "0inju+7",
+            "a022+0",
+            "a022+1",
+            "a022+2",
+            "a022+3",
+            "a022+4",
+            "a022+5",
+            "a022+6",
+            "ken",
+            "self_a020+0",
+            "self_a020+1",
+            "self_a020+10",
+            "self_a020+11",
+            "self_a020+12",
+            "self_a020+13",
+            "self_a020+14",
+            "self_a020+15",
+            "self_a020+16",
+            "self_a020+17",
+            "self_a020+18",
+            "self_a020+19",
+            "self_a020+2",
+            "self_a020+20",
+            "self_a020+21",
+            "self_a020+22",
+            "self_a020+23",
+            "self_a020+3",
+            "self_a020+4",
+            "self_a020+5",
+            "self_a020+6",
+            "self_a020+7",
+            "self_a020+8",
+            "self_a020+9",
+            "self_a024+0",
+            "self_a024+1",
+            "self_a024+10",
+            "self_a024+11",
+            "self_a024+12",
+            "self_a024+13",
+            "self_a024+14",
+            "self_a024+15",
+            "self_a024+16",
+            "self_a024+17",
+            "self_a024+18",
+            "self_a024+19",
+            "self_a024+2",
+            "self_a024+20",
+            "self_a024+21",
+            "self_a024+22",
+            "self_a024+23",
+            "self_a024+3",
+            "self_a024+4",
+            "self_a024+5",
+            "self_a024+6",
+            "self_a024+7",
+            "self_a024+8",
+            "self_a024+9",
+            "self_a999+0",
+            "self_a999+1",
+            "self_a999+10",
+            "self_a999+11",
+            "self_a999+12",
+            "self_a999+13",
+            "self_a999+14",
+            "self_a999+15",
+            "self_a999+2",
+            "self_a999+3",
+            "self_a999+4",
+            "self_a999+5",
+            "self_a999+6",
+            "self_a999+7",
+            "self_a999+8",
+            "self_a999+9"
+          ],
+          "power68_refs": [],
+          "capacity_88": 16,
+          "castlebattle_8c": 0,
+          "fightvalue_90": 0,
+          "vector0_roots_derived": [
+            "0inju+0",
+            "ken",
+            "self_a020+0",
+            "self_a020+16",
+            "self_a020+8",
+            "self_a024+0",
+            "self_a024+16",
+            "self_a024+8",
+            "self_a999+0",
+            "self_a999+8"
+          ],
+          "roots_are_not_verified_native_troops": true
+        },
+        "sp16": {
+          "member_count": 48,
+          "members": [
+            "inyume+0",
+            "inyume+1",
+            "inyume+2",
+            "inyume+3",
+            "inyume+4",
+            "inyume+5",
+            "inyume+6",
+            "inyumeb+0",
+            "inyumeb+1",
+            "inyumeb+10",
+            "inyumeb+11",
+            "inyumeb+12",
+            "inyumeb+13",
+            "inyumeb+14",
+            "inyumeb+15",
+            "inyumeb+16",
+            "inyumeb+17",
+            "inyumeb+18",
+            "inyumeb+19",
+            "inyumeb+2",
+            "inyumeb+20",
+            "inyumeb+21",
+            "inyumeb+22",
+            "inyumeb+23",
+            "inyumeb+24",
+            "inyumeb+25",
+            "inyumeb+26",
+            "inyumeb+27",
+            "inyumeb+28",
+            "inyumeb+29",
+            "inyumeb+3",
+            "inyumeb+30",
+            "inyumeb+31",
+            "inyumeb+32",
+            "inyumeb+33",
+            "inyumeb+34",
+            "inyumeb+35",
+            "inyumeb+36",
+            "inyumeb+37",
+            "inyumeb+38",
+            "inyumeb+39",
+            "inyumeb+4",
+            "inyumeb+5",
+            "inyumeb+6",
+            "inyumeb+7",
+            "inyumeb+8",
+            "inyumeb+9",
+            "u_inyume"
+          ],
+          "power68_refs": [],
+          "capacity_88": 16,
+          "castlebattle_8c": 0,
+          "fightvalue_90": 0,
+          "vector0_roots_derived": [
+            "inyumeb+0",
+            "inyumeb+16",
+            "inyumeb+24",
+            "inyumeb+32",
+            "inyumeb+8",
+            "u_inyume"
+          ],
+          "roots_are_not_verified_native_troops": true
+        },
+        "sp50": {
+          "member_count": 83,
+          "members": [
+            "a002+0",
+            "a002+1",
+            "a002+2",
+            "a002+3",
+            "a002+4",
+            "a002+5",
+            "a002+6",
+            "a007+39",
+            "a007+40",
+            "a007+41",
+            "a007+42",
+            "a007+43",
+            "a007+44",
+            "a007+45",
+            "a007+46",
+            "a007+47",
+            "a007+48",
+            "a007+49",
+            "a007+50",
+            "a007+51",
+            "a007+52",
+            "a007+53",
+            "a007+54",
+            "a008+15",
+            "a008+16",
+            "a008+17",
+            "a008+18",
+            "a008+19",
+            "a008+20",
+            "a008+21",
+            "a008+22",
+            "a008+23",
+            "a008+24",
+            "a008+25",
+            "a008+26",
+            "a008+27",
+            "a008+28",
+            "a008+29",
+            "a008+30",
+            "a009+97",
+            "a010+32",
+            "a010+33",
+            "a010+34",
+            "a010+35",
+            "a010+36",
+            "a010+37",
+            "a010+38",
+            "a290+10",
+            "a290+11",
+            "a290+12",
+            "a290+13",
+            "a290+14",
+            "a290+15",
+            "a290+16",
+            "a290+17",
+            "a290+18",
+            "a290+19",
+            "a290+20",
+            "a290+42",
+            "a290+43",
+            "a290+44",
+            "a290+45",
+            "a290+46",
+            "a290+47",
+            "a290+48",
+            "a290+49",
+            "a290+7",
+            "a290+8",
+            "a290+9",
+            "a295+0",
+            "a295+1",
+            "a295+2",
+            "a295+3",
+            "a295+4",
+            "a295+5",
+            "a295+6",
+            "a295+7",
+            "a295+8",
+            "ibrg",
+            "isama",
+            "kuso",
+            "kusomusume",
+            "uto"
+          ],
+          "power68_refs": [
+            "po29"
+          ],
+          "capacity_88": 16,
+          "castlebattle_8c": 0,
+          "fightvalue_90": 0,
+          "vector0_roots_derived": [
+            "a007+39",
+            "a007+47",
+            "a008+15",
+            "a008+23",
+            "a009+97",
+            "a290+42",
+            "a295+7",
+            "ibrg",
+            "isama",
+            "kuso",
+            "kusomusume",
+            "uto"
+          ],
+          "roots_are_not_verified_native_troops": true
+        },
+        "sp0": {
+          "member_count": 8,
+          "members": [
+            "a020+10",
+            "a020+11",
+            "a020+12",
+            "a020+13",
+            "a020+7",
+            "a020+8",
+            "a020+9",
+            "akys"
+          ],
+          "power68_refs": [],
+          "capacity_88": 8,
+          "castlebattle_8c": 0,
+          "fightvalue_90": 0,
+          "vector0_roots_derived": [
+            "akys"
+          ],
+          "roots_are_not_verified_native_troops": true
+        }
+      },
+      "unit_vectors": {
+        "inmukun600": {
+          "listed_by_spot": "sp2",
+          "vector0": [
+            "a0062+7",
+            "a0062+8",
+            "a0062+9",
+            "a0062+10",
+            "a0062+11",
+            "a0062+12",
+            "a0062+13"
+          ]
+        },
+        "inmukun601": {
+          "listed_by_spot": "sp2",
+          "vector0": [
+            "a0062+14",
+            "a0062+15",
+            "a0062+16",
+            "a0062+17",
+            "a0062+18",
+            "a0062+19",
+            "a0062+20"
+          ]
+        },
+        "kmr": {
+          "listed_by_spot": "sp2",
+          "vector0": [
+            "a024+0",
+            "a024+1",
+            "a024+2",
+            "a024+3",
+            "a024+4",
+            "a024+5",
+            "a024+6"
+          ]
+        },
+        "mur": {
+          "listed_by_spot": "sp2",
+          "vector0": [
+            "murpo",
+            "a999+0",
+            "a999+1",
+            "a999+2",
+            "a999+3",
+            "a999+4",
+            "a999+5"
+          ]
+        },
+        "rma": {
+          "listed_by_spot": "sp2",
+          "vector0": [
+            "a999+6",
+            "a999+7",
+            "a999+8",
+            "a999+9",
+            "a999+10",
+            "a999+11",
+            "a999+12"
+          ]
+        },
+        "yaju": {
+          "listed_by_spot": "sp2",
+          "vector0": [
+            "a020+0",
+            "a020+1",
+            "a020+2",
+            "a020+3",
+            "a020+4",
+            "a020+5",
+            "a020+6"
+          ]
+        },
+        "0inju+0": {
+          "listed_by_spot": "sp2b",
+          "vector0": [
+            "0inju+1",
+            "0inju+2",
+            "0inju+3",
+            "0inju+4",
+            "0inju+5",
+            "0inju+6",
+            "0inju+7"
+          ]
+        },
+        "ken": {
+          "listed_by_spot": "sp2b",
+          "vector0": [
+            "a022+0",
+            "a022+1",
+            "a022+2",
+            "a022+3",
+            "a022+4",
+            "a022+5",
+            "a022+6"
+          ]
+        },
+        "self_a020+0": {
+          "listed_by_spot": "sp2b",
+          "vector0": [
+            "self_a020+1",
+            "self_a020+2",
+            "self_a020+3",
+            "self_a020+4",
+            "self_a020+5",
+            "self_a020+6",
+            "self_a020+7"
+          ]
+        },
+        "self_a020+16": {
+          "listed_by_spot": "sp2b",
+          "vector0": [
+            "self_a020+17",
+            "self_a020+18",
+            "self_a020+19",
+            "self_a020+20",
+            "self_a020+21",
+            "self_a020+22",
+            "self_a020+23"
+          ]
+        },
+        "self_a020+8": {
+          "listed_by_spot": "sp2b",
+          "vector0": [
+            "self_a020+9",
+            "self_a020+10",
+            "self_a020+11",
+            "self_a020+12",
+            "self_a020+13",
+            "self_a020+14",
+            "self_a020+15"
+          ]
+        },
+        "self_a024+0": {
+          "listed_by_spot": "sp2b",
+          "vector0": [
+            "self_a024+1",
+            "self_a024+2",
+            "self_a024+3",
+            "self_a024+4",
+            "self_a024+5",
+            "self_a024+6",
+            "self_a024+7"
+          ]
+        },
+        "self_a024+16": {
+          "listed_by_spot": "sp2b",
+          "vector0": [
+            "self_a024+17",
+            "self_a024+18",
+            "self_a024+19",
+            "self_a024+20",
+            "self_a024+21",
+            "self_a024+22",
+            "self_a024+23"
+          ]
+        },
+        "self_a024+8": {
+          "listed_by_spot": "sp2b",
+          "vector0": [
+            "self_a024+9",
+            "self_a024+10",
+            "self_a024+11",
+            "self_a024+12",
+            "self_a024+13",
+            "self_a024+14",
+            "self_a024+15"
+          ]
+        },
+        "self_a999+0": {
+          "listed_by_spot": "sp2b",
+          "vector0": [
+            "self_a999+1",
+            "self_a999+2",
+            "self_a999+3",
+            "self_a999+4",
+            "self_a999+5",
+            "self_a999+6",
+            "self_a999+7"
+          ]
+        },
+        "self_a999+8": {
+          "listed_by_spot": "sp2b",
+          "vector0": [
+            "self_a999+9",
+            "self_a999+10",
+            "self_a999+11",
+            "self_a999+12",
+            "self_a999+13",
+            "self_a999+14",
+            "self_a999+15"
+          ]
+        },
+        "inyumeb+0": {
+          "listed_by_spot": "sp16",
+          "vector0": [
+            "inyumeb+1",
+            "inyumeb+2",
+            "inyumeb+3",
+            "inyumeb+4",
+            "inyumeb+5",
+            "inyumeb+6",
+            "inyumeb+7"
+          ]
+        },
+        "inyumeb+16": {
+          "listed_by_spot": "sp16",
+          "vector0": [
+            "inyumeb+17",
+            "inyumeb+18",
+            "inyumeb+19",
+            "inyumeb+20",
+            "inyumeb+21",
+            "inyumeb+22",
+            "inyumeb+23"
+          ]
+        },
+        "inyumeb+24": {
+          "listed_by_spot": "sp16",
+          "vector0": [
+            "inyumeb+25",
+            "inyumeb+26",
+            "inyumeb+27",
+            "inyumeb+28",
+            "inyumeb+29",
+            "inyumeb+30",
+            "inyumeb+31"
+          ]
+        },
+        "inyumeb+32": {
+          "listed_by_spot": "sp16",
+          "vector0": [
+            "inyumeb+33",
+            "inyumeb+34",
+            "inyumeb+35",
+            "inyumeb+36",
+            "inyumeb+37",
+            "inyumeb+38",
+            "inyumeb+39"
+          ]
+        },
+        "inyumeb+8": {
+          "listed_by_spot": "sp16",
+          "vector0": [
+            "inyumeb+9",
+            "inyumeb+10",
+            "inyumeb+11",
+            "inyumeb+12",
+            "inyumeb+13",
+            "inyumeb+14",
+            "inyumeb+15"
+          ]
+        },
+        "u_inyume": {
+          "listed_by_spot": "sp16",
+          "vector0": [
+            "inyume+0",
+            "inyume+1",
+            "inyume+2",
+            "inyume+3",
+            "inyume+4",
+            "inyume+5",
+            "inyume+6"
+          ]
+        },
+        "a007+39": {
+          "listed_by_spot": "sp50",
+          "vector0": [
+            "a007+40",
+            "a007+41",
+            "a007+42",
+            "a007+43",
+            "a007+44",
+            "a007+45",
+            "a007+46"
+          ]
+        },
+        "a007+47": {
+          "listed_by_spot": "sp50",
+          "vector0": [
+            "a007+48",
+            "a007+49",
+            "a007+50",
+            "a007+51",
+            "a007+52",
+            "a007+53",
+            "a007+54"
+          ]
+        },
+        "a008+15": {
+          "listed_by_spot": "sp50",
+          "vector0": [
+            "a008+16",
+            "a008+17",
+            "a008+18",
+            "a008+19",
+            "a008+20",
+            "a008+21",
+            "a008+22"
+          ]
+        },
+        "a008+23": {
+          "listed_by_spot": "sp50",
+          "vector0": [
+            "a008+24",
+            "a008+25",
+            "a008+26",
+            "a008+27",
+            "a008+28",
+            "a008+29",
+            "a008+30"
+          ]
+        },
+        "a290+42": {
+          "listed_by_spot": "sp50",
+          "vector0": [
+            "a290+43",
+            "a290+44",
+            "a290+45",
+            "a290+46",
+            "a290+47",
+            "a290+48",
+            "a290+49"
+          ]
+        },
+        "a295+7": {
+          "listed_by_spot": "sp50",
+          "vector0": [
+            "a295+8"
+          ]
+        },
+        "ibrg": {
+          "listed_by_spot": "sp50",
+          "vector0": [
+            "a290+7",
+            "a290+8",
+            "a290+9",
+            "a290+10",
+            "a290+11",
+            "a290+12",
+            "a290+13"
+          ]
+        },
+        "isama": {
+          "listed_by_spot": "sp50",
+          "vector0": [
+            "a010+32",
+            "a010+33",
+            "a010+34",
+            "a010+35",
+            "a010+36",
+            "a010+37",
+            "a010+38"
+          ]
+        },
+        "kuso": {
+          "listed_by_spot": "sp50",
+          "vector0": [
+            "a290+14",
+            "a290+15",
+            "a290+16",
+            "a290+17",
+            "a290+18",
+            "a290+19",
+            "a290+20"
+          ]
+        },
+        "kusomusume": {
+          "listed_by_spot": "sp50",
+          "vector0": [
+            "a002+0",
+            "a002+1",
+            "a002+2",
+            "a002+3",
+            "a002+4",
+            "a002+5",
+            "a002+6"
+          ]
+        },
+        "uto": {
+          "listed_by_spot": "sp50",
+          "vector0": [
+            "a295+0",
+            "a295+1",
+            "a295+2",
+            "a295+3",
+            "a295+4",
+            "a295+5",
+            "a295+6"
+          ]
+        },
+        "akys": {
+          "listed_by_spot": "sp0",
+          "vector0": [
+            "a020+7",
+            "a020+8",
+            "a020+9",
+            "a020+10",
+            "a020+11",
+            "a020+12",
+            "a020+13"
+          ]
+        }
+      }
+    }
+  },
+  "checks": [
+    {
+      "capture": "save1",
+      "spot": "sp2",
+      "members": 32,
+      "roots": 4,
+      "duplicate_ids": 0,
+      "missing_or_cross_spot_member_refs": 0
+    },
+    {
+      "capture": "save1",
+      "spot": "sp2b",
+      "members": 80,
+      "roots": 10,
+      "duplicate_ids": 0,
+      "missing_or_cross_spot_member_refs": 0
+    },
+    {
+      "capture": "save1",
+      "spot": "sp16",
+      "members": 48,
+      "roots": 6,
+      "duplicate_ids": 0,
+      "missing_or_cross_spot_member_refs": 0
+    },
+    {
+      "capture": "save1",
+      "spot": "sp50",
+      "members": 0,
+      "roots": 0,
+      "duplicate_ids": 0,
+      "missing_or_cross_spot_member_refs": 0
+    },
+    {
+      "capture": "save1",
+      "spot": "sp0",
+      "members": 8,
+      "roots": 1,
+      "duplicate_ids": 0,
+      "missing_or_cross_spot_member_refs": 0
+    },
+    {
+      "capture": "save2",
+      "spot": "sp2",
+      "members": 48,
+      "roots": 6,
+      "duplicate_ids": 0,
+      "missing_or_cross_spot_member_refs": 0
+    },
+    {
+      "capture": "save2",
+      "spot": "sp2b",
+      "members": 80,
+      "roots": 10,
+      "duplicate_ids": 0,
+      "missing_or_cross_spot_member_refs": 0
+    },
+    {
+      "capture": "save2",
+      "spot": "sp16",
+      "members": 48,
+      "roots": 6,
+      "duplicate_ids": 0,
+      "missing_or_cross_spot_member_refs": 0
+    },
+    {
+      "capture": "save2",
+      "spot": "sp50",
+      "members": 83,
+      "roots": 12,
+      "duplicate_ids": 0,
+      "missing_or_cross_spot_member_refs": 0
+    },
+    {
+      "capture": "save2",
+      "spot": "sp0",
+      "members": 8,
+      "roots": 1,
+      "duplicate_ids": 0,
+      "missing_or_cross_spot_member_refs": 0
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "E-T020-20261021-1247-GAMECLEAR-SCOPE-01",
+  "source_kind": "NORMALIZED_STATIC",
+  "scenario": "hakushin067",
+  "source_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "source_root": "data/normalized/hakushin067_core/a_default/script",
+  "expected": {
+    "event_world.dat": [
+      292,
+      305
+    ],
+    "7000_その他シナリオ/free_ev_world.dat": [
+      126,
+      139
+    ],
+    "5000_ランダムシナリオ/ev_rnd.dat": [
+      574,
+      601
+    ],
+    "3000_淫ドリームマッチ/ev_dream.dat": [
+      624,
+      651
+    ],
+    "2000_勢力ストーリー/po25_event.dat": [
+      11158
+    ],
+    "2023_イベント_リュージ騎士団/po23_event_12_ED_A.dat": [
+      96
+    ],
+    "2023_イベント_リュージ騎士団/po23_event_12_ED_B_B.dat": [
+      49
+    ],
+    "2023_イベント_リュージ騎士団/po23_event_12_ED_B_S.dat": [
+      49
+    ],
+    "2023_イベント_リュージ騎士団/po23_event_19_ED_C.dat": [
+      101
+    ],
+    "7000_その他シナリオ/踏ん切り付けるための避難所.txt": [
+      175,
+      188
+    ]
+  },
+  "buckets": {
+    "DAT": {
+      "matches": 13,
+      "files": 9
+    },
+    "TXT": {
+      "matches": 2,
+      "files": 1
+    },
+    "TOTAL": {
+      "matches": 15,
+      "files": 10
+    }
+  },
+  "sha256": {
+    "7000_その他シナリオ/free_ev_world.dat": "65FC28C64F95CAB0ECED9522D2AC0C98D65BC1BE0B4968A56D78BA190492DD08",
+    "7000_その他シナリオ/踏ん切り付けるための避難所.txt": "5B3A5213B65509852F4FA5F56A0A84E1AAA143569EF80483570C9A96313E1B4E"
+  },
+  "acceptance": "STATIC_SCOPE_ONLY",
+  "gameplay_dynamic": "NOT_RUN",
+  "golden_actual_pass": 0,
+  "strict_match": 0,
+  "unresolved": [
+    "TXT_LOADER_INCLUSION",
+    "POST_YIELD_GWRITE_RUNTIME",
+    "LEGAL_OLD_SAVES"
+  ]
+}

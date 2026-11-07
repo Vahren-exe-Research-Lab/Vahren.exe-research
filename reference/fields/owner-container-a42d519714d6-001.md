@@ -67,6 +67,9 @@
 - [research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md 行 8](../../research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md?plain=1#L8-L8) — [COMMON RECT/GATE] At4E00C4..4E00D5 compute signed32 center/rectangle deltas and compare [container+0x80] against sentinel0x80000008. Sentinel equal→4E00E6 [con
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
+- [research/recovered/json_sources1/reports/data/T012_HEAL_REFRESH_STATUS_CHAIN_20261013.json 行 1](../../research/recovered/json_sources1/reports/data/T012_HEAL_REFRESH_STATUS_CHAIN_20261013.json?plain=1#L1-L1) — {"schema":"B-T012-STATUS-REFRESH-STATIC-CROSSWALK-V1","source":{"isolated_exe_sha256":"e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187","origin
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
 <a id="field-84"></a>
 ## container + 0x84
 

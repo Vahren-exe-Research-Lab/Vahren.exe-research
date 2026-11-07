@@ -1,0 +1,51 @@
+{
+  "research_id": "E-OFFLINE-20261028-1849-T020-PREDIALOG-EXPR-GOLDEN-RUN-ID-GATE-01",
+  "snapshot": "2026-10-21",
+  "observed_at": "2026-10-28 18:49 JST",
+  "offline_pack_sha256": "911E5E37A3F9BD5B36F929AF94B0D1E2CD1CD5CF34E3E2F16C8FC800ABF5F7C2",
+  "index_sha256": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF",
+  "exe_manifest_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "code_hashes": {
+    "0x0043F470": "07C974DFCD0D8191E6A7D7B2486BF726AF44472B87873A96A51EA0DB9928F52E",
+    "0x0049C450": "CCDDAF474CBCB8EBF5F273A418B5B9D4AF2431867DBE3E2F8D50C8A38C248DE5",
+    "0x0052CF50": "48C20B956C4ECEA1E89E12615D34C2EFD25B6EBEA8BC342EE739F00F1EEF3BC7"
+  },
+  "positive_edges": [
+    ["0x0052CF50", "0x0052D047", "0x0043F470"],
+    ["0x0043F470", "0x0043F5A4", "0x0049C450"],
+    ["0x0043F470", "0x0043F72F", "0x00416E80"],
+    ["0x0043F470", "0x0043F73F", "0x00416B90"],
+    ["0x0049C450", "0x0049C4BE", "0x0042F860"],
+    ["0x0049C450", "0x0049C52E", "0x0049ECA0"],
+    ["0x0049C450", "0x0049C589", "0x00402710"]
+  ],
+  "negative_edges": [
+    ["0x0043F470", "0x0043F5A4", "0x00416B90"],
+    ["0x0043F470", "0x0043F72F", "0x0049C450"],
+    ["0x0049C450", "0x0049C52E", "0x00416B90"],
+    ["0x0052CF50", "0x0052D047", "0x0049C450"]
+  ],
+  "synthetic_resolver_cases": [
+    {"case":"no_hint","hint_nonzero":false,"predicate_zero":null,"owner_is_special":null,"range_empty":null,"expected":"direct_param1_plus4"},
+    {"case":"hint_predicate_true","hint_nonzero":true,"predicate_zero":false,"owner_is_special":null,"range_empty":null,"expected":"direct_param1_plus4"},
+    {"case":"hint_predicate_false_owner_special","hint_nonzero":true,"predicate_zero":true,"owner_is_special":true,"range_empty":false,"expected":"fallback_DAT_0068B3A8"},
+    {"case":"hint_predicate_false_empty","hint_nonzero":true,"predicate_zero":true,"owner_is_special":false,"range_empty":true,"expected":"fallback_DAT_0068B3A8"},
+    {"case":"hint_predicate_false_nonempty","hint_nonzero":true,"predicate_zero":true,"owner_is_special":false,"range_empty":false,"expected":"range_begin_plus28"},
+    {"case":"hint_predicate_false_both","hint_nonzero":true,"predicate_zero":true,"owner_is_special":true,"range_empty":true,"expected":"fallback_DAT_0068B3A8"},
+    {"case":"hint_predicate_true_irrelevant_owner","hint_nonzero":true,"predicate_zero":false,"owner_is_special":true,"range_empty":true,"expected":"direct_param1_plus4"}
+  ],
+  "synthetic_golden_cases": [
+    {"case":"same_run_schema_only","rank":"SYNTHETIC","run_ids":["SIM-A","SIM-A","SIM-A"],"raw_save":true,"input":true,"map":true,"three_sides":true,"ordered_units":true,"unmodified":true,"sha_valid":true,"schema_expected":true,"actual_expected":false},
+    {"case":"mixed_run_ids","rank":"NATIVE_OBSERVED","run_ids":["RUN-A","RUN-B","RUN-A"],"raw_save":true,"input":true,"map":true,"three_sides":true,"ordered_units":true,"unmodified":true,"sha_valid":true,"schema_expected":false,"actual_expected":false},
+    {"case":"all_null_run_ids","rank":"NATIVE_OBSERVED","run_ids":[null,null,null],"raw_save":true,"input":true,"map":true,"three_sides":true,"ordered_units":true,"unmodified":true,"sha_valid":true,"schema_expected":false,"actual_expected":false},
+    {"case":"single_missing_map","rank":"NATIVE_OBSERVED","run_ids":["RUN-C","RUN-C","RUN-C"],"raw_save":true,"input":true,"map":false,"three_sides":true,"ordered_units":true,"unmodified":true,"sha_valid":true,"schema_expected":false,"actual_expected":false},
+    {"case":"different_or_unknown_sha","rank":"NATIVE_OBSERVED","run_ids":["RUN-D","RUN-D","RUN-D"],"raw_save":true,"input":true,"map":true,"three_sides":true,"ordered_units":true,"unmodified":true,"sha_valid":false,"schema_expected":false,"actual_expected":false},
+    {"case":"modified_save","rank":"NATIVE_OBSERVED","run_ids":["RUN-E","RUN-E","RUN-E"],"raw_save":true,"input":true,"map":true,"three_sides":true,"ordered_units":true,"unmodified":false,"sha_valid":true,"schema_expected":false,"actual_expected":false},
+    {"case":"partial_roster","rank":"NATIVE_OBSERVED","run_ids":["RUN-F","RUN-F","RUN-F"],"raw_save":true,"input":true,"map":true,"three_sides":true,"ordered_units":false,"unmodified":true,"sha_valid":true,"schema_expected":false,"actual_expected":false},
+    {"case":"not_live_evidence","rank":"STATIC_INDEX","run_ids":["SIM-B","SIM-B","SIM-B"],"raw_save":true,"input":true,"map":true,"three_sides":true,"ordered_units":true,"unmodified":true,"sha_valid":true,"schema_expected":true,"actual_expected":false}
+  ],
+  "claimed_native_observed": 0,
+  "claimed_actual_golden_pass": 0,
+  "claimed_strict_match": 0,
+  "limitations": ["Ghidra pseudo-C only, no independent ASM for arguments; direct call edges from 2026-10-21 SQLite", "No native game run or original G0/G1/G2 capture", "Resolver synthetic model is branch simulation, not original execution", "The global _DAT_0087f6f8 reset is static but its semantic meaning is unproven", "PC current MASTER and ownership/READY not verified, do not integrate"]
+}

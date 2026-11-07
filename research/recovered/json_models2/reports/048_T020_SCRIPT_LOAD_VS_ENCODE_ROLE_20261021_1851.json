@@ -1,0 +1,25 @@
+{
+  "id": "E-AUDIT-20261021-1851-SCRIPT-ENCODE-VS-LOAD-01",
+  "kind": "STATIC_EVIDENCE_GATE / DESIGNED_NOT_RUN",
+  "owner": "E",
+  "created_jst": "2026-10-21 18:51 +09:00",
+  "source_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "source": "Ghidra search_index/search.sqlite, search.py function/callers/strings, PC read-only; decompilation is provisional",
+  "baseline": {
+    "checkpoint": 195,
+    "ready": 595,
+    "done": 9,
+    "in_progress": 21,
+    "verify": 4
+  },
+  "functions": [
+    {
+      "va": "0x00558000",
+      "role": "debug_paper.txt processing / encode dispatch candidate",
+      "call_site": "0x0055884F",
+      "target": "0x00557240",
+      "string": "encode"
+    },
+    {
+      "va": "0x00557240",
+      "role": "DAT enumeration plus potential in-place encode/write",

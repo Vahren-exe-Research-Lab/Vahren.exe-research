@@ -1,0 +1,545 @@
+{
+  "research_id": "E-AUDIT-20261030-05H-T020-T028-RETRY-MODE1-CFG-01",
+  "owner": "E",
+  "source_owner": "B",
+  "source_status": "VERIFY_NOT_READY",
+  "source_sha256": "9510EAE2532D8DFE854EFB46DBC393E5C61EF5F2AA4553E355C27A156374727A",
+  "scope": "STATIC_SYNTHETIC_NOT_GAMEPLAY",
+  "target_observed": 0,
+  "actual_golden_pass": 0,
+  "strict_match": 0,
+  "cases": [
+    {
+      "id": "A0000",
+      "input": {
+        "kind": "attempt",
+        "saved_spot": false,
+        "first_found": false,
+        "unit77": 0,
+        "second_found": false
+      },
+      "expected": [
+        "STATIC_LOCAL_ATTEMPT",
+        [
+          0
+        ],
+        "SECOND_SKIPPED_FLAG77_ZERO"
+      ]
+    },
+    {
+      "id": "A0001",
+      "input": {
+        "kind": "attempt",
+        "saved_spot": false,
+        "first_found": false,
+        "unit77": 0,
+        "second_found": true
+      },
+      "expected": [
+        "STATIC_LOCAL_ATTEMPT",
+        [
+          0
+        ],
+        "SECOND_SKIPPED_FLAG77_ZERO"
+      ]
+    },
+    {
+      "id": "A0010",
+      "input": {
+        "kind": "attempt",
+        "saved_spot": false,
+        "first_found": false,
+        "unit77": 1,
+        "second_found": false
+      },
+      "expected": [
+        "STATIC_LOCAL_ATTEMPT",
+        [
+          0,
+          1
+        ],
+        "BOTH_SEARCHES_NULL"
+      ]
+    },
+    {
+      "id": "A0011",
+      "input": {
+        "kind": "attempt",
+        "saved_spot": false,
+        "first_found": false,
+        "unit77": 1,
+        "second_found": true
+      },
+      "expected": [
+        "STATIC_LOCAL_ATTEMPT",
+        [
+          0,
+          1
+        ],
+        "SECOND_FOUND"
+      ]
+    },
+    {
+      "id": "A0100",
+      "input": {
+        "kind": "attempt",
+        "saved_spot": false,
+        "first_found": true,
+        "unit77": 0,
+        "second_found": false
+      },
+      "expected": [
+        "STATIC_LOCAL_ATTEMPT",
+        [
+          0
+        ],
+        "FIRST_FOUND"
+      ]
+    },
+    {
+      "id": "A0101",
+      "input": {
+        "kind": "attempt",
+        "saved_spot": false,
+        "first_found": true,
+        "unit77": 0,
+        "second_found": true
+      },
+      "expected": [
+        "STATIC_LOCAL_ATTEMPT",
+        [
+          0
+        ],
+        "FIRST_FOUND"
+      ]
+    },
+    {
+      "id": "A0110",
+      "input": {
+        "kind": "attempt",
+        "saved_spot": false,
+        "first_found": true,
+        "unit77": 1,
+        "second_found": false
+      },
+      "expected": [
+        "STATIC_LOCAL_ATTEMPT",
+        [
+          0
+        ],
+        "FIRST_FOUND"
+      ]
+    },
+    {
+      "id": "A0111",
+      "input": {
+        "kind": "attempt",
+        "saved_spot": false,
+        "first_found": true,
+        "unit77": 1,
+        "second_found": true
+      },
+      "expected": [
+        "STATIC_LOCAL_ATTEMPT",
+        [
+          0
+        ],
+        "FIRST_FOUND"
+      ]
+    },
+    {
+      "id": "A1000",
+      "input": {
+        "kind": "attempt",
+        "saved_spot": true,
+        "first_found": false,
+        "unit77": 0,
+        "second_found": false
+      },
+      "expected": [
+        "STATIC_LOCAL_ATTEMPT",
+        [],
+        "REUSE_SAVED_SPOT"
+      ]
+    },
+    {
+      "id": "A1001",
+      "input": {
+        "kind": "attempt",
+        "saved_spot": true,
+        "first_found": false,
+        "unit77": 0,
+        "second_found": true
+      },
+      "expected": [
+        "STATIC_LOCAL_ATTEMPT",
+        [],
+        "REUSE_SAVED_SPOT"
+      ]
+    },
+    {
+      "id": "A1010",
+      "input": {
+        "kind": "attempt",
+        "saved_spot": true,
+        "first_found": false,
+        "unit77": 1,
+        "second_found": false
+      },
+      "expected": [
+        "STATIC_LOCAL_ATTEMPT",
+        [],
+        "REUSE_SAVED_SPOT"
+      ]
+    },
+    {
+      "id": "A1011",
+      "input": {
+        "kind": "attempt",
+        "saved_spot": true,
+        "first_found": false,
+        "unit77": 1,
+        "second_found": true
+      },
+      "expected": [
+        "STATIC_LOCAL_ATTEMPT",
+        [],
+        "REUSE_SAVED_SPOT"
+      ]
+    },
+    {
+      "id": "A1100",
+      "input": {
+        "kind": "attempt",
+        "saved_spot": true,
+        "first_found": true,
+        "unit77": 0,
+        "second_found": false
+      },
+      "expected": [
+        "STATIC_LOCAL_ATTEMPT",
+        [],
+        "REUSE_SAVED_SPOT"
+      ]
+    },
+    {
+      "id": "A1101",
+      "input": {
+        "kind": "attempt",
+        "saved_spot": true,
+        "first_found": true,
+        "unit77": 0,
+        "second_found": true
+      },
+      "expected": [
+        "STATIC_LOCAL_ATTEMPT",
+        [],
+        "REUSE_SAVED_SPOT"
+      ]
+    },
+    {
+      "id": "A1110",
+      "input": {
+        "kind": "attempt",
+        "saved_spot": true,
+        "first_found": true,
+        "unit77": 1,
+        "second_found": false
+      },
+      "expected": [
+        "STATIC_LOCAL_ATTEMPT",
+        [],
+        "REUSE_SAVED_SPOT"
+      ]
+    },
+    {
+      "id": "A1111",
+      "input": {
+        "kind": "attempt",
+        "saved_spot": true,
+        "first_found": true,
+        "unit77": 1,
+        "second_found": true
+      },
+      "expected": [
+        "STATIC_LOCAL_ATTEMPT",
+        [],
+        "REUSE_SAVED_SPOT"
+      ]
+    },
+    {
+      "id": "CFG_00",
+      "input": {
+        "kind": "cfg",
+        "candidate77": 0,
+        "candidate75": 0
+      },
+      "expected": [
+        "STATIC_LOCAL_CFG_ONLY",
+        1,
+        "JUMP_0x5AC5E3"
+      ]
+    },
+    {
+      "id": "CFG_01",
+      "input": {
+        "kind": "cfg",
+        "candidate77": 0,
+        "candidate75": 1
+      },
+      "expected": [
+        "STATIC_LOCAL_CFG_ONLY",
+        0,
+        "NOT_THIS_JUMP"
+      ]
+    },
+    {
+      "id": "CFG_10",
+      "input": {
+        "kind": "cfg",
+        "candidate77": 1,
+        "candidate75": 0
+      },
+      "expected": [
+        "STATIC_LOCAL_CFG_ONLY",
+        0,
+        "NOT_THIS_JUMP"
+      ]
+    },
+    {
+      "id": "CFG_11",
+      "input": {
+        "kind": "cfg",
+        "candidate77": 1,
+        "candidate75": 1
+      },
+      "expected": [
+        "STATIC_LOCAL_CFG_ONLY",
+        0,
+        "NOT_THIS_JUMP"
+      ]
+    },
+    {
+      "id": "A_FLAG77_2",
+      "input": {
+        "kind": "attempt",
+        "saved_spot": false,
+        "first_found": false,
+        "unit77": 2,
+        "second_found": false
+      },
+      "expected": [
+        "STATIC_LOCAL_ATTEMPT",
+        [
+          0,
+          1
+        ],
+        "BOTH_SEARCHES_NULL"
+      ]
+    },
+    {
+      "id": "A_FLAG77_255",
+      "input": {
+        "kind": "attempt",
+        "saved_spot": false,
+        "first_found": false,
+        "unit77": 255,
+        "second_found": false
+      },
+      "expected": [
+        "STATIC_LOCAL_ATTEMPT",
+        [
+          0,
+          1
+        ],
+        "BOTH_SEARCHES_NULL"
+      ]
+    },
+    {
+      "id": "A_MISSING_FIRST",
+      "input": {
+        "kind": "attempt",
+        "saved_spot": false,
+        "unit77": 1,
+        "second_found": false
+      },
+      "expected": [
+        "VERIFY_MISSING_INPUT",
+        null,
+        null
+      ]
+    },
+    {
+      "id": "A_UNIT77_BOOL",
+      "input": {
+        "kind": "attempt",
+        "saved_spot": false,
+        "first_found": false,
+        "unit77": true,
+        "second_found": false
+      },
+      "expected": [
+        "REJECT_INPUT",
+        null,
+        null
+      ]
+    },
+    {
+      "id": "A_UNIT77_NEG",
+      "input": {
+        "kind": "attempt",
+        "saved_spot": false,
+        "first_found": false,
+        "unit77": -1,
+        "second_found": false
+      },
+      "expected": [
+        "REJECT_INPUT",
+        null,
+        null
+      ]
+    },
+    {
+      "id": "A_UNIT77_256",
+      "input": {
+        "kind": "attempt",
+        "saved_spot": false,
+        "first_found": false,
+        "unit77": 256,
+        "second_found": false
+      },
+      "expected": [
+        "REJECT_INPUT",
+        null,
+        null
+      ]
+    },
+    {
+      "id": "A_SPOT_INT",
+      "input": {
+        "kind": "attempt",
+        "saved_spot": 0,
+        "first_found": false,
+        "unit77": 1,
+        "second_found": false
+      },
+      "expected": [
+        "REJECT_INPUT",
+        null,
+        null
+      ]
+    },
+    {
+      "id": "A_SECOND_TEXT",
+      "input": {
+        "kind": "attempt",
+        "saved_spot": false,
+        "first_found": false,
+        "unit77": 1,
+        "second_found": "yes"
+      },
+      "expected": [
+        "REJECT_INPUT",
+        null,
+        null
+      ]
+    },
+    {
+      "id": "CFG_NONZERO_77",
+      "input": {
+        "kind": "cfg",
+        "candidate77": 2,
+        "candidate75": 0
+      },
+      "expected": [
+        "STATIC_LOCAL_CFG_ONLY",
+        0,
+        "NOT_THIS_JUMP"
+      ]
+    },
+    {
+      "id": "CFG_NONZERO_75",
+      "input": {
+        "kind": "cfg",
+        "candidate77": 0,
+        "candidate75": 255
+      },
+      "expected": [
+        "STATIC_LOCAL_CFG_ONLY",
+        0,
+        "NOT_THIS_JUMP"
+      ]
+    },
+    {
+      "id": "CFG_MISSING",
+      "input": {
+        "kind": "cfg",
+        "candidate77": 0
+      },
+      "expected": [
+        "VERIFY_MISSING_INPUT",
+        null,
+        null
+      ]
+    },
+    {
+      "id": "CFG_BOOL",
+      "input": {
+        "kind": "cfg",
+        "candidate77": false,
+        "candidate75": 0
+      },
+      "expected": [
+        "REJECT_INPUT",
+        null,
+        null
+      ]
+    },
+    {
+      "id": "CFG_NEG",
+      "input": {
+        "kind": "cfg",
+        "candidate77": 0,
+        "candidate75": -1
+      },
+      "expected": [
+        "REJECT_INPUT",
+        null,
+        null
+      ]
+    },
+    {
+      "id": "STACK_SAME_SLOT_NOT_PROVEN",
+      "input": {
+        "kind": "stack"
+      },
+      "expected": [
+        "VERIFY_STACK_SLOT",
+        null,
+        null
+      ]
+    },
+    {
+      "id": "DYNAMIC_GOLDEN_PROHIBITED",
+      "input": {
+        "kind": "actual_golden"
+      },
+      "expected": [
+        "NOT_GAMEPLAY_PROOF",
+        null,
+        null
+      ]
+    },
+    {
+      "id": "UNKNOWN_KIND",
+      "input": {
+        "kind": "runtime_reach"
+      },
+      "expected": [
+        "REJECT_KIND",
+        null,
+        null
+      ]
+    }
+  ]
+}

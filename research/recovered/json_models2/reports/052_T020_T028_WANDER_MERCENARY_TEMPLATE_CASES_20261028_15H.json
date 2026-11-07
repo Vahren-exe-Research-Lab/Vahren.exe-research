@@ -1,0 +1,38 @@
+{
+  "research_id": "E-AUDIT-20261028-15H-T020-T028-WANDER-MERCENARY-TEMPLATE-BOUNDARY-01",
+  "owner": "E", "task": "T020", "status": "STATIC_SYNTHETIC_DESIGNED_VERIFY_NOT_READY",
+  "source": {"b_research_id":"B-20261028-1515-T028-WANDER-MERCENARY-TEMPLATE-DISPATCH-01","b_detail_path":"data/T028_WANDER_MERCENARY_TEMPLATE_DISPATCH_NATIVE_20261028_15H.md","b_detail_sha256_from_b_readback":"4573D1AF5621B501BC1C7A3B03BA73C489BFC9E0294E2069F4CA36A018407188","source_exe_sha256_claim":"E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187","e_independently_rehashed":false},
+  "native_static": {"A":{"manager_gate_va":"0x49891E","string_va":"0x63298C","template":"$$$は放浪しました","formatter_call":"0x4989BA","downstream_call":"0x4989E7"},"B":{"precheck_va":"0x498BB1","manager_gate_va":"0x498BC6","string_va":"0x6329BC","template":"$$$は傭兵になりました","formatter_call":"0x498C67","downstream_call":"0x498C95"},"common_formatter":"0x436BC0","common_downstream":"0x52CF50"},
+  "not_proven": ["live_message_display","unit_status_change","morale_or_retreat","identity_with_decide3_decide11_numeric_parameter","same_run_g0g1g2g3g4"],
+  "branch_cases": [
+    {"id":"a_mgr1","route":"A","manager_flag":1,"precheck_al":null,"expected":"PIPELINE_WANDER","actual_gameplay_observed":false},
+    {"id":"a_mgr0","route":"A","manager_flag":0,"precheck_al":null,"expected":"SKIP_MANAGER","actual_gameplay_observed":false},
+    {"id":"a_mgr2","route":"A","manager_flag":2,"precheck_al":null,"expected":"SKIP_MANAGER","actual_gameplay_observed":false},
+    {"id":"a_mgrminus","route":"A","manager_flag":-1,"precheck_al":null,"expected":"SKIP_MANAGER","actual_gameplay_observed":false},
+    {"id":"a_mgrunknown","route":"A","manager_flag":null,"precheck_al":null,"expected":"INDETERMINATE_MANAGER","actual_gameplay_observed":false},
+    {"id":"b_ok1","route":"B","manager_flag":1,"precheck_al":1,"expected":"PIPELINE_MERCENARY","actual_gameplay_observed":false},
+    {"id":"b_ok2","route":"B","manager_flag":1,"precheck_al":2,"expected":"PIPELINE_MERCENARY","actual_gameplay_observed":false},
+    {"id":"b_okminus","route":"B","manager_flag":1,"precheck_al":-1,"expected":"PIPELINE_MERCENARY","actual_gameplay_observed":false},
+    {"id":"b_precheck_zero","route":"B","manager_flag":1,"precheck_al":0,"expected":"SKIP_PRECHECK","actual_gameplay_observed":false},
+    {"id":"b_precheck_zero_mgr0","route":"B","manager_flag":0,"precheck_al":0,"expected":"SKIP_PRECHECK","actual_gameplay_observed":false},
+    {"id":"b_precheck_zero_mgrunknown","route":"B","manager_flag":null,"precheck_al":0,"expected":"SKIP_PRECHECK","actual_gameplay_observed":false},
+    {"id":"b_mgr0","route":"B","manager_flag":0,"precheck_al":1,"expected":"SKIP_MANAGER","actual_gameplay_observed":false},
+    {"id":"b_mgr2","route":"B","manager_flag":2,"precheck_al":1,"expected":"SKIP_MANAGER","actual_gameplay_observed":false},
+    {"id":"b_mgrunknown","route":"B","manager_flag":null,"precheck_al":1,"expected":"INDETERMINATE_MANAGER","actual_gameplay_observed":false},
+    {"id":"b_precheck_unknown","route":"B","manager_flag":1,"precheck_al":null,"expected":"INDETERMINATE_PRECHECK","actual_gameplay_observed":false},
+    {"id":"b_precheck_unknown_mgr0","route":"B","manager_flag":0,"precheck_al":null,"expected":"INDETERMINATE_PRECHECK","actual_gameplay_observed":false},
+    {"id":"b_bothunknown","route":"B","manager_flag":null,"precheck_al":null,"expected":"INDETERMINATE_PRECHECK","actual_gameplay_observed":false}
+  ],
+  "golden_cases": [
+    {"id":"static_only","g0":false,"g1":false,"g2":false,"g3":false,"g4":false,"source_clean":false,"same_run":false,"new_engine_compared":false,"ui_template_visible":false,"expected":"INELIGIBLE","is_hypothetical":true},
+    {"id":"orphan_text_screenshot","g0":false,"g1":false,"g2":false,"g3":false,"g4":false,"source_clean":false,"same_run":false,"new_engine_compared":false,"ui_template_visible":true,"expected":"INELIGIBLE","is_hypothetical":true},
+    {"id":"g0g1g2_message_only","g0":true,"g1":true,"g2":true,"g3":false,"g4":false,"source_clean":true,"same_run":true,"new_engine_compared":false,"ui_template_visible":true,"expected":"INELIGIBLE","is_hypothetical":true},
+    {"id":"g0g1g2g3_but_no_world","g0":true,"g1":true,"g2":true,"g3":true,"g4":false,"source_clean":true,"same_run":true,"new_engine_compared":false,"ui_template_visible":true,"expected":"INELIGIBLE","is_hypothetical":true},
+    {"id":"full_gates_modified_dat","g0":true,"g1":true,"g2":true,"g3":true,"g4":true,"source_clean":false,"same_run":true,"new_engine_compared":true,"ui_template_visible":true,"expected":"INELIGIBLE","is_hypothetical":true},
+    {"id":"full_gates_separate_runs","g0":true,"g1":true,"g2":true,"g3":true,"g4":true,"source_clean":true,"same_run":false,"new_engine_compared":true,"ui_template_visible":true,"expected":"INELIGIBLE","is_hypothetical":true},
+    {"id":"full_gates_no_new_compare","g0":true,"g1":true,"g2":true,"g3":true,"g4":true,"source_clean":true,"same_run":true,"new_engine_compared":false,"ui_template_visible":true,"expected":"INELIGIBLE","is_hypothetical":true},
+    {"id":"all_conditions_hypothetical","g0":true,"g1":true,"g2":true,"g3":true,"g4":true,"source_clean":true,"same_run":true,"new_engine_compared":true,"ui_template_visible":false,"expected":"ELIGIBLE_ONLY","is_hypothetical":true}
+  ],
+  "golden_counters": {"dynamic_observed":0,"actual_pass":0,"strict_match":0},
+  "t019_new_confirmed_contradictions": 0
+}

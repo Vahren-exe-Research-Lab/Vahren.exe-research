@@ -13,6 +13,12 @@
 - [research/recovered/b_batch9/data/T013_RUSH_RECORD_54F990_CONTRACT_20261013.md 行 7](../../research/recovered/b_batch9/data/T013_RUSH_RECORD_54F990_CONTRACT_20261013.md?plain=1#L7-L7) — [NONKIND4] Skill+40!=4 at0x54FB84 goes through optional supplied angle input: if present sets byte+0x1FC=1, copies double record+0x200 and records sentinel coor
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
+<a id="field-7c"></a>
+## actor + 0x7C
+
+- [research/recovered/json_sources1/reports/data/B_T012_T013_DUAL_POOL_RANGE_FANOUT_EVIDENCE_20261023_0909.json 行 159](../../research/recovered/json_sources1/reports/data/B_T012_T013_DUAL_POOL_RANGE_FANOUT_EVIDENCE_20261023_0909.json?plain=1#L159-L159) — "note": "prepare actor+0x7C dispatch packet",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
 <a id="field-8c"></a>
 ## actor + 0x8C
 
@@ -40,6 +46,9 @@
 - [research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md 行 54](../../research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md?plain=1#L54-L54) — 以上により、候補Aでヘルパーが`context+C=1`を設定しても、候補Bの配送準備 `0x547F4E`で同じ場所を0へ**再初期化**する。条件を満たす複数候補に対してlinked+`0x16C`加算を複数回実行できる**静的経路**がある。一方`actor+0x94`の減算は配送全体で一回のみで、かつ`0x54
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
+- [research/recovered/json_sources1/reports/data/B_T012_T013_DUAL_POOL_RANGE_FANOUT_EVIDENCE_20261023_0909.json 行 40](../../research/recovered/json_sources1/reports/data/B_T012_T013_DUAL_POOL_RANGE_FANOUT_EVIDENCE_20261023_0909.json?plain=1#L40-L40) — "note": "actor+0x94 versus cost gate",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
 <a id="field-c0"></a>
 ## actor + 0xC0
 
@@ -49,11 +58,17 @@
 - [research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md 行 71](../../research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md?plain=1#L71-L71) — **Golden必要条件**：同一SHA EXE・DAT・SAVE・MAP・入力・RNG/tickを揃え、`controller+0x278`=0/正数、`actor+0xC0/C4/C8/CC`正負、A/B vectorが空/1/2候補、距離帯の内外・境界、`candidate+0x1867C`、2回の確率分岐、各候
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+- [research/recovered/json_sources1/reports/data/B_T012_T013_DUAL_POOL_RANGE_FANOUT_EVIDENCE_20261023_0909.json 行 19](../../research/recovered/json_sources1/reports/data/B_T012_T013_DUAL_POOL_RANGE_FANOUT_EVIDENCE_20261023_0909.json?plain=1#L19-L19) — "note": "actor+0xC0 eligibility guard",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
 <a id="field-c4"></a>
 ## actor + 0xC4
 
 - [research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md 行 32](../../research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md?plain=1#L32-L32) — - `0x00547DD7`：`actor+0xC4<0` かつ `controller+0x278!=0` なら戻る。
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/json_sources1/reports/data/B_T012_T013_DUAL_POOL_RANGE_FANOUT_EVIDENCE_20261023_0909.json 行 33](../../research/recovered/json_sources1/reports/data/B_T012_T013_DUAL_POOL_RANGE_FANOUT_EVIDENCE_20261023_0909.json?plain=1#L33-L33) — "note": "actor+0xC4 second eligibility guard",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
 
 <a id="field-c8"></a>
 ## actor + 0xC8
@@ -64,11 +79,17 @@
 - [research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md 行 66](../../research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md?plain=1#L66-L66) — 2. **T013**：`0x00546F70` を呼ぶさらに上位の動作ゲート、2系列vectorのwriter、`actor+0xC8/+0xCC`を設定するDAT/ゲーム実体、`controller+0x278`の意味と `+0x290/+0x298`の単位を検証。
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+- [research/recovered/json_sources1/reports/data/B_T012_T013_DUAL_POOL_RANGE_FANOUT_EVIDENCE_20261023_0909.json 行 47](../../research/recovered/json_sources1/reports/data/B_T012_T013_DUAL_POOL_RANGE_FANOUT_EVIDENCE_20261023_0909.json?plain=1#L47-L47) — "note": "actor+0xC8 pool select gate",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
 <a id="field-cc"></a>
 ## actor + 0xCC
 
 - [research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md 行 52](../../research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md?plain=1#L52-L52) — - `0x00547F10`：`actor+0xCC<0` では候補ごとに再度 `0x005B6EAB`、`0x005D1B80` を呼び `DAT_0065BD60` と比較。入力によって候補がスキップされる。RNG実装・消費回数の全容はVERIFY。
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/json_sources1/reports/data/B_T012_T013_DUAL_POOL_RANGE_FANOUT_EVIDENCE_20261023_0909.json 行 145](../../research/recovered/json_sources1/reports/data/B_T012_T013_DUAL_POOL_RANGE_FANOUT_EVIDENCE_20261023_0909.json?plain=1#L145-L145) — "note": "actor+0xCC conditional per-target RNG",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
 
 <a id="field-108"></a>
 ## actor + 0x108
@@ -144,6 +165,12 @@
 
 - [research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md 行 42](../../research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md?plain=1#L42-L42) — B系列: actor+0x1D4 → manager → [manager+0x1C] → context,
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/json_sources1/reports/data/B_T012_T013_DUAL_POOL_RANGE_FANOUT_EVIDENCE_20261023_0909.json 行 61](../../research/recovered/json_sources1/reports/data/B_T012_T013_DUAL_POOL_RANGE_FANOUT_EVIDENCE_20261023_0909.json?plain=1#L61-L61) — "note": "pool A manager actor+0x1D4",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
+- [research/recovered/json_sources1/reports/data/B_T012_T013_DUAL_POOL_RANGE_FANOUT_EVIDENCE_20261023_0909.json 行 75](../../research/recovered/json_sources1/reports/data/B_T012_T013_DUAL_POOL_RANGE_FANOUT_EVIDENCE_20261023_0909.json?plain=1#L75-L75) — "note": "pool B manager actor+0x1D4",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
 
 <a id="field-18614"></a>
 ## actor + 0x18614

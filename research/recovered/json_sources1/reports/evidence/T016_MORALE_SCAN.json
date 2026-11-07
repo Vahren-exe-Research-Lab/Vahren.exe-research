@@ -1,0 +1,487 @@
+{
+  "event_count": 308,
+  "base_count": 263,
+  "kiraware_count": 24,
+  "addLimit4000_count": 2,
+  "levels": {
+    "1": {
+      "main": 50,
+      "dext": 5,
+      "w": 1500,
+      "h": 1500
+    },
+    "2": {
+      "main": 100,
+      "dext": 10,
+      "w": 1500,
+      "h": 1500
+    },
+    "3": {
+      "main": 150,
+      "dext": 15,
+      "w": 2000,
+      "h": 2000
+    },
+    "4": {
+      "main": 200,
+      "dext": 20,
+      "w": 2500,
+      "h": 2500
+    }
+  },
+  "kiraware_events": [
+    "mur_demoralization",
+    "jnpi_demoralization",
+    "mhr_demoralization",
+    "kankure_demoralization",
+    "tnok33_demoralization",
+    "inigi_demoralization",
+    "pinky_demoralization",
+    "hideshine_demoralization",
+    "vvan_demoralization",
+    "nyn_demoralization",
+    "icg_demoralization",
+    "milk_demoralization",
+    "flour_demoralization",
+    "suzu_demoralization",
+    "rrm_demoralization",
+    "superhayakuchi_demoralization",
+    "sgm_demoralization",
+    "genba_demoralization",
+    "syunga_demoralization",
+    "siriris_demoralization",
+    "ixa_demoralization",
+    "oyajiisan_demoralization",
+    "nanachi_demoralization",
+    "httn_demoralization"
+  ],
+  "neutral_or_custom_events": [
+    {
+      "name": "base_demoralization",
+      "base": false,
+      "kiraware": false,
+      "addLimit4000": false,
+      "skillTroop": [
+        "demoralization_level1",
+        "demoralization_level2",
+        "demoralization_level3",
+        "demoralization_level4"
+      ]
+    },
+    {
+      "name": "htn_demoralization",
+      "base": false,
+      "kiraware": false,
+      "addLimit4000": true,
+      "skillTroop": []
+    },
+    {
+      "name": "flnsca_demoralization",
+      "base": false,
+      "kiraware": false,
+      "addLimit4000": false,
+      "skillTroop": []
+    },
+    {
+      "name": "inu_demoralization",
+      "base": false,
+      "kiraware": false,
+      "addLimit4000": false,
+      "skillTroop": []
+    },
+    {
+      "name": "sakuma_demoralization",
+      "base": false,
+      "kiraware": false,
+      "addLimit4000": false,
+      "skillTroop": []
+    },
+    {
+      "name": "nonaka_demoralization",
+      "base": false,
+      "kiraware": false,
+      "addLimit4000": false,
+      "skillTroop": []
+    },
+    {
+      "name": "kakuryo1_demoralization",
+      "base": false,
+      "kiraware": false,
+      "addLimit4000": false,
+      "skillTroop": []
+    },
+    {
+      "name": "kakuryo2_demoralization",
+      "base": false,
+      "kiraware": false,
+      "addLimit4000": false,
+      "skillTroop": []
+    },
+    {
+      "name": "heitei_demoralization",
+      "base": false,
+      "kiraware": false,
+      "addLimit4000": false,
+      "skillTroop": []
+    },
+    {
+      "name": "majimekun_demoralization",
+      "base": false,
+      "kiraware": false,
+      "addLimit4000": false,
+      "skillTroop": []
+    },
+    {
+      "name": "aknm_demoralization",
+      "base": false,
+      "kiraware": false,
+      "addLimit4000": false,
+      "skillTroop": []
+    },
+    {
+      "name": "joker_demoralization",
+      "base": false,
+      "kiraware": false,
+      "addLimit4000": false,
+      "skillTroop": []
+    },
+    {
+      "name": "yusaku_demoralization",
+      "base": false,
+      "kiraware": false,
+      "addLimit4000": false,
+      "skillTroop": []
+    },
+    {
+      "name": "sasurai_demoralization",
+      "base": false,
+      "kiraware": false,
+      "addLimit4000": false,
+      "skillTroop": [
+        "demoralization_level1",
+        "demoralization_level2",
+        "demoralization_level3",
+        "demoralization_level4"
+      ]
+    },
+    {
+      "name": "sknm_demoralization",
+      "base": false,
+      "kiraware": false,
+      "addLimit4000": false,
+      "skillTroop": []
+    },
+    {
+      "name": "agcl_demoralization",
+      "base": false,
+      "kiraware": false,
+      "addLimit4000": false,
+      "skillTroop": []
+    },
+    {
+      "name": "hanzo_demoralization",
+      "base": false,
+      "kiraware": false,
+      "addLimit4000": false,
+      "skillTroop": []
+    },
+    {
+      "name": "fight_fly_demoralization",
+      "base": false,
+      "kiraware": false,
+      "addLimit4000": false,
+      "skillTroop": []
+    },
+    {
+      "name": "mdcn_demoralization",
+      "base": false,
+      "kiraware": false,
+      "addLimit4000": false,
+      "skillTroop": []
+    },
+    {
+      "name": "yyiusg_demoralization",
+      "base": false,
+      "kiraware": false,
+      "addLimit4000": false,
+      "skillTroop": []
+    },
+    {
+      "name": "nkfive_demoralization",
+      "base": false,
+      "kiraware": false,
+      "addLimit4000": false,
+      "skillTroop": []
+    }
+  ],
+  "special_skill_events": [
+    {
+      "name": "base_demoralization",
+      "base": false,
+      "kiraware": false,
+      "addLimit4000": false,
+      "skillTroop": [
+        "demoralization_level1",
+        "demoralization_level2",
+        "demoralization_level3",
+        "demoralization_level4"
+      ]
+    },
+    {
+      "name": "mur_demoralization",
+      "base": false,
+      "kiraware": true,
+      "addLimit4000": false,
+      "skillTroop": [
+        "demoralization_kiraware"
+      ]
+    },
+    {
+      "name": "jnpi_demoralization",
+      "base": false,
+      "kiraware": true,
+      "addLimit4000": false,
+      "skillTroop": [
+        "demoralization_kiraware"
+      ]
+    },
+    {
+      "name": "mhr_demoralization",
+      "base": false,
+      "kiraware": true,
+      "addLimit4000": false,
+      "skillTroop": [
+        "demoralization_kiraware"
+      ]
+    },
+    {
+      "name": "kankure_demoralization",
+      "base": false,
+      "kiraware": true,
+      "addLimit4000": false,
+      "skillTroop": [
+        "demoralization_kiraware"
+      ]
+    },
+    {
+      "name": "tnok33_demoralization",
+      "base": false,
+      "kiraware": true,
+      "addLimit4000": false,
+      "skillTroop": [
+        "demoralization_kiraware"
+      ]
+    },
+    {
+      "name": "inigi_demoralization",
+      "base": false,
+      "kiraware": true,
+      "addLimit4000": false,
+      "skillTroop": [
+        "demoralization_kiraware"
+      ]
+    },
+    {
+      "name": "pinky_demoralization",
+      "base": false,
+      "kiraware": true,
+      "addLimit4000": false,
+      "skillTroop": [
+        "demoralization_kiraware"
+      ]
+    },
+    {
+      "name": "hideshine_demoralization",
+      "base": false,
+      "kiraware": true,
+      "addLimit4000": false,
+      "skillTroop": [
+        "demoralization_kiraware"
+      ]
+    },
+    {
+      "name": "vvan_demoralization",
+      "base": false,
+      "kiraware": true,
+      "addLimit4000": false,
+      "skillTroop": [
+        "demoralization_kiraware"
+      ]
+    },
+    {
+      "name": "nyn_demoralization",
+      "base": false,
+      "kiraware": true,
+      "addLimit4000": false,
+      "skillTroop": [
+        "demoralization_kiraware",
+        "demoralization_level1",
+        "demoralization_level2",
+        "demoralization_level3",
+        "demoralization_level4"
+      ]
+    },
+    {
+      "name": "icg_demoralization",
+      "base": false,
+      "kiraware": true,
+      "addLimit4000": false,
+      "skillTroop": [
+        "demoralization_kiraware",
+        "demoralization_level1",
+        "demoralization_level2",
+        "demoralization_level3",
+        "demoralization_level4"
+      ]
+    },
+    {
+      "name": "milk_demoralization",
+      "base": false,
+      "kiraware": true,
+      "addLimit4000": false,
+      "skillTroop": [
+        "demoralization_kiraware",
+        "demoralization_level1",
+        "demoralization_level2",
+        "demoralization_level3",
+        "demoralization_level4"
+      ]
+    },
+    {
+      "name": "flour_demoralization",
+      "base": false,
+      "kiraware": true,
+      "addLimit4000": false,
+      "skillTroop": [
+        "demoralization_kiraware",
+        "demoralization_level1",
+        "demoralization_level2",
+        "demoralization_level3",
+        "demoralization_level4"
+      ]
+    },
+    {
+      "name": "suzu_demoralization",
+      "base": false,
+      "kiraware": true,
+      "addLimit4000": false,
+      "skillTroop": [
+        "demoralization_kiraware",
+        "demoralization_level1",
+        "demoralization_level2",
+        "demoralization_level3",
+        "demoralization_level4"
+      ]
+    },
+    {
+      "name": "rrm_demoralization",
+      "base": false,
+      "kiraware": true,
+      "addLimit4000": false,
+      "skillTroop": [
+        "demoralization_kiraware",
+        "demoralization_level1",
+        "demoralization_level2",
+        "demoralization_level3",
+        "demoralization_level4"
+      ]
+    },
+    {
+      "name": "superhayakuchi_demoralization",
+      "base": false,
+      "kiraware": true,
+      "addLimit4000": false,
+      "skillTroop": [
+        "demoralization_kiraware",
+        "demoralization_level1",
+        "demoralization_level2",
+        "demoralization_level3",
+        "demoralization_level4"
+      ]
+    },
+    {
+      "name": "sasurai_demoralization",
+      "base": false,
+      "kiraware": false,
+      "addLimit4000": false,
+      "skillTroop": [
+        "demoralization_level1",
+        "demoralization_level2",
+        "demoralization_level3",
+        "demoralization_level4"
+      ]
+    },
+    {
+      "name": "sgm_demoralization",
+      "base": false,
+      "kiraware": true,
+      "addLimit4000": false,
+      "skillTroop": [
+        "demoralization_kiraware"
+      ]
+    },
+    {
+      "name": "genba_demoralization",
+      "base": false,
+      "kiraware": true,
+      "addLimit4000": false,
+      "skillTroop": [
+        "demoralization_kiraware"
+      ]
+    },
+    {
+      "name": "syunga_demoralization",
+      "base": false,
+      "kiraware": true,
+      "addLimit4000": false,
+      "skillTroop": [
+        "demoralization_kiraware"
+      ]
+    },
+    {
+      "name": "siriris_demoralization",
+      "base": false,
+      "kiraware": true,
+      "addLimit4000": false,
+      "skillTroop": [
+        "demoralization_kiraware"
+      ]
+    },
+    {
+      "name": "ixa_demoralization",
+      "base": false,
+      "kiraware": true,
+      "addLimit4000": false,
+      "skillTroop": [
+        "demoralization_kiraware"
+      ]
+    },
+    {
+      "name": "oyajiisan_demoralization",
+      "base": false,
+      "kiraware": true,
+      "addLimit4000": false,
+      "skillTroop": [
+        "demoralization_kiraware"
+      ]
+    },
+    {
+      "name": "nanachi_demoralization",
+      "base": false,
+      "kiraware": true,
+      "addLimit4000": false,
+      "skillTroop": [
+        "demoralization_kiraware"
+      ]
+    },
+    {
+      "name": "httn_demoralization",
+      "base": false,
+      "kiraware": true,
+      "addLimit4000": false,
+      "skillTroop": [
+        "demoralization_kiraware"
+      ]
+    }
+  ]
+}

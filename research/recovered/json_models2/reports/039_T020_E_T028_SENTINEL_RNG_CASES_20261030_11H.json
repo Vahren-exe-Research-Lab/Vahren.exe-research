@@ -1,0 +1,567 @@
+{
+  "research_id": "E-AUDIT-20261030-11H-T020-T028-SENTINEL-BRANCH-RNG-01",
+  "classification": "STATIC_SYNTHETIC_NOT_GAMEPLAY",
+  "model_cases": 30,
+  "negative_cases": 10,
+  "case_count": 40,
+  "cases": [
+    {
+      "id": "S001",
+      "kind": "model",
+      "branch": "skip_clean",
+      "selector_called": false,
+      "selector_return": null,
+      "unit_1ad": [],
+      "pointee_plus10_nonzero": false,
+      "injected_score": 1.5,
+      "expected_flag": 1,
+      "expected_route": "sentinel",
+      "expected_d0": 1000000.0,
+      "expected_common_rng_site": 1,
+      "expected_conditional_rng_site": 0
+    },
+    {
+      "id": "S002",
+      "kind": "model",
+      "branch": "skip_clean",
+      "selector_called": false,
+      "selector_return": null,
+      "unit_1ad": [],
+      "pointee_plus10_nonzero": false,
+      "injected_score": 2.0,
+      "expected_flag": 1,
+      "expected_route": "sentinel",
+      "expected_d0": 1000000.0,
+      "expected_common_rng_site": 1,
+      "expected_conditional_rng_site": 0
+    },
+    {
+      "id": "S003",
+      "kind": "model",
+      "branch": "skip_clean",
+      "selector_called": false,
+      "selector_return": null,
+      "unit_1ad": [],
+      "pointee_plus10_nonzero": false,
+      "injected_score": 7.5,
+      "expected_flag": 1,
+      "expected_route": "sentinel",
+      "expected_d0": 1000000.0,
+      "expected_common_rng_site": 1,
+      "expected_conditional_rng_site": 0
+    },
+    {
+      "id": "S004",
+      "kind": "model",
+      "branch": "skip_clean",
+      "selector_called": false,
+      "selector_return": null,
+      "unit_1ad": [],
+      "pointee_plus10_nonzero": true,
+      "injected_score": 1.5,
+      "expected_flag": 1,
+      "expected_route": "computed",
+      "expected_d0": 2.0,
+      "expected_common_rng_site": 1,
+      "expected_conditional_rng_site": 1
+    },
+    {
+      "id": "S005",
+      "kind": "model",
+      "branch": "skip_clean",
+      "selector_called": false,
+      "selector_return": null,
+      "unit_1ad": [],
+      "pointee_plus10_nonzero": true,
+      "injected_score": 2.0,
+      "expected_flag": 1,
+      "expected_route": "computed",
+      "expected_d0": 2.0,
+      "expected_common_rng_site": 1,
+      "expected_conditional_rng_site": 1
+    },
+    {
+      "id": "S006",
+      "kind": "model",
+      "branch": "skip_clean",
+      "selector_called": false,
+      "selector_return": null,
+      "unit_1ad": [],
+      "pointee_plus10_nonzero": true,
+      "injected_score": 7.5,
+      "expected_flag": 1,
+      "expected_route": "computed",
+      "expected_d0": 7.5,
+      "expected_common_rng_site": 1,
+      "expected_conditional_rng_site": 1
+    },
+    {
+      "id": "S007",
+      "kind": "model",
+      "branch": "selector_null",
+      "selector_called": true,
+      "selector_return": 0,
+      "unit_1ad": [],
+      "pointee_plus10_nonzero": false,
+      "injected_score": 1.5,
+      "expected_flag": 0,
+      "expected_route": "sentinel",
+      "expected_d0": 1000000.0,
+      "expected_common_rng_site": 1,
+      "expected_conditional_rng_site": 0
+    },
+    {
+      "id": "S008",
+      "kind": "model",
+      "branch": "selector_null",
+      "selector_called": true,
+      "selector_return": 0,
+      "unit_1ad": [],
+      "pointee_plus10_nonzero": false,
+      "injected_score": 2.0,
+      "expected_flag": 0,
+      "expected_route": "sentinel",
+      "expected_d0": 1000000.0,
+      "expected_common_rng_site": 1,
+      "expected_conditional_rng_site": 0
+    },
+    {
+      "id": "S009",
+      "kind": "model",
+      "branch": "selector_null",
+      "selector_called": true,
+      "selector_return": 0,
+      "unit_1ad": [],
+      "pointee_plus10_nonzero": false,
+      "injected_score": 7.5,
+      "expected_flag": 0,
+      "expected_route": "sentinel",
+      "expected_d0": 1000000.0,
+      "expected_common_rng_site": 1,
+      "expected_conditional_rng_site": 0
+    },
+    {
+      "id": "S010",
+      "kind": "model",
+      "branch": "selector_null",
+      "selector_called": true,
+      "selector_return": 0,
+      "unit_1ad": [],
+      "pointee_plus10_nonzero": true,
+      "injected_score": 1.5,
+      "expected_flag": 0,
+      "expected_route": "sentinel",
+      "expected_d0": 1000000.0,
+      "expected_common_rng_site": 1,
+      "expected_conditional_rng_site": 0
+    },
+    {
+      "id": "S011",
+      "kind": "model",
+      "branch": "selector_null",
+      "selector_called": true,
+      "selector_return": 0,
+      "unit_1ad": [],
+      "pointee_plus10_nonzero": true,
+      "injected_score": 2.0,
+      "expected_flag": 0,
+      "expected_route": "sentinel",
+      "expected_d0": 1000000.0,
+      "expected_common_rng_site": 1,
+      "expected_conditional_rng_site": 0
+    },
+    {
+      "id": "S012",
+      "kind": "model",
+      "branch": "selector_null",
+      "selector_called": true,
+      "selector_return": 0,
+      "unit_1ad": [],
+      "pointee_plus10_nonzero": true,
+      "injected_score": 7.5,
+      "expected_flag": 0,
+      "expected_route": "sentinel",
+      "expected_d0": 1000000.0,
+      "expected_common_rng_site": 1,
+      "expected_conditional_rng_site": 0
+    },
+    {
+      "id": "S013",
+      "kind": "model",
+      "branch": "selector_clean",
+      "selector_called": true,
+      "selector_return": 7,
+      "unit_1ad": [
+        0,
+        0
+      ],
+      "pointee_plus10_nonzero": false,
+      "injected_score": 1.5,
+      "expected_flag": 1,
+      "expected_route": "sentinel",
+      "expected_d0": 1000000.0,
+      "expected_common_rng_site": 1,
+      "expected_conditional_rng_site": 0
+    },
+    {
+      "id": "S014",
+      "kind": "model",
+      "branch": "selector_clean",
+      "selector_called": true,
+      "selector_return": 7,
+      "unit_1ad": [
+        0,
+        0
+      ],
+      "pointee_plus10_nonzero": false,
+      "injected_score": 2.0,
+      "expected_flag": 1,
+      "expected_route": "sentinel",
+      "expected_d0": 1000000.0,
+      "expected_common_rng_site": 1,
+      "expected_conditional_rng_site": 0
+    },
+    {
+      "id": "S015",
+      "kind": "model",
+      "branch": "selector_clean",
+      "selector_called": true,
+      "selector_return": 7,
+      "unit_1ad": [
+        0,
+        0
+      ],
+      "pointee_plus10_nonzero": false,
+      "injected_score": 7.5,
+      "expected_flag": 1,
+      "expected_route": "sentinel",
+      "expected_d0": 1000000.0,
+      "expected_common_rng_site": 1,
+      "expected_conditional_rng_site": 0
+    },
+    {
+      "id": "S016",
+      "kind": "model",
+      "branch": "selector_clean",
+      "selector_called": true,
+      "selector_return": 7,
+      "unit_1ad": [
+        0,
+        0
+      ],
+      "pointee_plus10_nonzero": true,
+      "injected_score": 1.5,
+      "expected_flag": 1,
+      "expected_route": "computed",
+      "expected_d0": 2.0,
+      "expected_common_rng_site": 1,
+      "expected_conditional_rng_site": 1
+    },
+    {
+      "id": "S017",
+      "kind": "model",
+      "branch": "selector_clean",
+      "selector_called": true,
+      "selector_return": 7,
+      "unit_1ad": [
+        0,
+        0
+      ],
+      "pointee_plus10_nonzero": true,
+      "injected_score": 2.0,
+      "expected_flag": 1,
+      "expected_route": "computed",
+      "expected_d0": 2.0,
+      "expected_common_rng_site": 1,
+      "expected_conditional_rng_site": 1
+    },
+    {
+      "id": "S018",
+      "kind": "model",
+      "branch": "selector_clean",
+      "selector_called": true,
+      "selector_return": 7,
+      "unit_1ad": [
+        0,
+        0
+      ],
+      "pointee_plus10_nonzero": true,
+      "injected_score": 7.5,
+      "expected_flag": 1,
+      "expected_route": "computed",
+      "expected_d0": 7.5,
+      "expected_common_rng_site": 1,
+      "expected_conditional_rng_site": 1
+    },
+    {
+      "id": "S019",
+      "kind": "model",
+      "branch": "selector_flagged",
+      "selector_called": true,
+      "selector_return": 7,
+      "unit_1ad": [
+        0,
+        1
+      ],
+      "pointee_plus10_nonzero": false,
+      "injected_score": 1.5,
+      "expected_flag": 0,
+      "expected_route": "sentinel",
+      "expected_d0": 1000000.0,
+      "expected_common_rng_site": 1,
+      "expected_conditional_rng_site": 0
+    },
+    {
+      "id": "S020",
+      "kind": "model",
+      "branch": "selector_flagged",
+      "selector_called": true,
+      "selector_return": 7,
+      "unit_1ad": [
+        0,
+        1
+      ],
+      "pointee_plus10_nonzero": false,
+      "injected_score": 2.0,
+      "expected_flag": 0,
+      "expected_route": "sentinel",
+      "expected_d0": 1000000.0,
+      "expected_common_rng_site": 1,
+      "expected_conditional_rng_site": 0
+    },
+    {
+      "id": "S021",
+      "kind": "model",
+      "branch": "selector_flagged",
+      "selector_called": true,
+      "selector_return": 7,
+      "unit_1ad": [
+        0,
+        1
+      ],
+      "pointee_plus10_nonzero": false,
+      "injected_score": 7.5,
+      "expected_flag": 0,
+      "expected_route": "sentinel",
+      "expected_d0": 1000000.0,
+      "expected_common_rng_site": 1,
+      "expected_conditional_rng_site": 0
+    },
+    {
+      "id": "S022",
+      "kind": "model",
+      "branch": "selector_flagged",
+      "selector_called": true,
+      "selector_return": 7,
+      "unit_1ad": [
+        0,
+        1
+      ],
+      "pointee_plus10_nonzero": true,
+      "injected_score": 1.5,
+      "expected_flag": 0,
+      "expected_route": "sentinel",
+      "expected_d0": 1000000.0,
+      "expected_common_rng_site": 1,
+      "expected_conditional_rng_site": 0
+    },
+    {
+      "id": "S023",
+      "kind": "model",
+      "branch": "selector_flagged",
+      "selector_called": true,
+      "selector_return": 7,
+      "unit_1ad": [
+        0,
+        1
+      ],
+      "pointee_plus10_nonzero": true,
+      "injected_score": 2.0,
+      "expected_flag": 0,
+      "expected_route": "sentinel",
+      "expected_d0": 1000000.0,
+      "expected_common_rng_site": 1,
+      "expected_conditional_rng_site": 0
+    },
+    {
+      "id": "S024",
+      "kind": "model",
+      "branch": "selector_flagged",
+      "selector_called": true,
+      "selector_return": 7,
+      "unit_1ad": [
+        0,
+        1
+      ],
+      "pointee_plus10_nonzero": true,
+      "injected_score": 7.5,
+      "expected_flag": 0,
+      "expected_route": "sentinel",
+      "expected_d0": 1000000.0,
+      "expected_common_rng_site": 1,
+      "expected_conditional_rng_site": 0
+    },
+    {
+      "id": "S025",
+      "kind": "model",
+      "branch": "skip_flagged",
+      "selector_called": false,
+      "selector_return": null,
+      "unit_1ad": [
+        1
+      ],
+      "pointee_plus10_nonzero": false,
+      "injected_score": 1.5,
+      "expected_flag": 0,
+      "expected_route": "sentinel",
+      "expected_d0": 1000000.0,
+      "expected_common_rng_site": 1,
+      "expected_conditional_rng_site": 0
+    },
+    {
+      "id": "S026",
+      "kind": "model",
+      "branch": "skip_flagged",
+      "selector_called": false,
+      "selector_return": null,
+      "unit_1ad": [
+        1
+      ],
+      "pointee_plus10_nonzero": false,
+      "injected_score": 2.0,
+      "expected_flag": 0,
+      "expected_route": "sentinel",
+      "expected_d0": 1000000.0,
+      "expected_common_rng_site": 1,
+      "expected_conditional_rng_site": 0
+    },
+    {
+      "id": "S027",
+      "kind": "model",
+      "branch": "skip_flagged",
+      "selector_called": false,
+      "selector_return": null,
+      "unit_1ad": [
+        1
+      ],
+      "pointee_plus10_nonzero": false,
+      "injected_score": 7.5,
+      "expected_flag": 0,
+      "expected_route": "sentinel",
+      "expected_d0": 1000000.0,
+      "expected_common_rng_site": 1,
+      "expected_conditional_rng_site": 0
+    },
+    {
+      "id": "S028",
+      "kind": "model",
+      "branch": "skip_flagged",
+      "selector_called": false,
+      "selector_return": null,
+      "unit_1ad": [
+        1
+      ],
+      "pointee_plus10_nonzero": true,
+      "injected_score": 1.5,
+      "expected_flag": 0,
+      "expected_route": "sentinel",
+      "expected_d0": 1000000.0,
+      "expected_common_rng_site": 1,
+      "expected_conditional_rng_site": 0
+    },
+    {
+      "id": "S029",
+      "kind": "model",
+      "branch": "skip_flagged",
+      "selector_called": false,
+      "selector_return": null,
+      "unit_1ad": [
+        1
+      ],
+      "pointee_plus10_nonzero": true,
+      "injected_score": 2.0,
+      "expected_flag": 0,
+      "expected_route": "sentinel",
+      "expected_d0": 1000000.0,
+      "expected_common_rng_site": 1,
+      "expected_conditional_rng_site": 0
+    },
+    {
+      "id": "S030",
+      "kind": "model",
+      "branch": "skip_flagged",
+      "selector_called": false,
+      "selector_return": null,
+      "unit_1ad": [
+        1
+      ],
+      "pointee_plus10_nonzero": true,
+      "injected_score": 7.5,
+      "expected_flag": 0,
+      "expected_route": "sentinel",
+      "expected_d0": 1000000.0,
+      "expected_common_rng_site": 1,
+      "expected_conditional_rng_site": 0
+    },
+    {
+      "id": "N031",
+      "kind": "anti_overclaim",
+      "claim": "selector_skipped_implies_flag_zero",
+      "must_reject": true
+    },
+    {
+      "id": "N032",
+      "kind": "anti_overclaim",
+      "claim": "nonnull_selector_guarantees_flag_one",
+      "must_reject": true
+    },
+    {
+      "id": "N033",
+      "kind": "anti_overclaim",
+      "claim": "unit_1ad_is_confirmed_death",
+      "must_reject": true
+    },
+    {
+      "id": "N034",
+      "kind": "anti_overclaim",
+      "claim": "sentinel_means_damage",
+      "must_reject": true
+    },
+    {
+      "id": "N035",
+      "kind": "anti_overclaim",
+      "claim": "sentinel_means_retreat",
+      "must_reject": true
+    },
+    {
+      "id": "N036",
+      "kind": "anti_overclaim",
+      "claim": "local_rng_sites_equal_total_rng",
+      "must_reject": true
+    },
+    {
+      "id": "N037",
+      "kind": "anti_overclaim",
+      "claim": "computed_input_is_native_observed",
+      "must_reject": true
+    },
+    {
+      "id": "N038",
+      "kind": "anti_overclaim",
+      "claim": "d0_producer_and_all_consumers_same_instance",
+      "must_reject": true
+    },
+    {
+      "id": "N039",
+      "kind": "anti_overclaim",
+      "claim": "synthetic_pass_is_golden",
+      "must_reject": true
+    },
+    {
+      "id": "N040",
+      "kind": "anti_overclaim",
+      "claim": "unmodified_original_dat_epoch_is_proven",
+      "must_reject": true
+    }
+  ]
+}

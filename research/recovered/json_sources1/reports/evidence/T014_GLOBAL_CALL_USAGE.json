@@ -1,0 +1,76 @@
+{
+  "gread": {
+    "counts": {
+      "2": 440
+    },
+    "examples3": []
+  },
+  "gwrite": {
+    "counts": {
+      "2": 441,
+      "3": 22
+    },
+    "examples3": [
+      {
+        "argc": 3,
+        "call": "gwrite(mark@po14,1,clearsww.png)",
+        "file": "a_default\\script\\2000_勢力ストーリー\\po14_event.dat"
+      },
+      {
+        "argc": 3,
+        "call": "gwrite(mark@psr,1,psrikisugi.png)",
+        "file": "a_default\\script\\2000_勢力ストーリー\\po14_システム部分.dat"
+      },
+      {
+        "argc": 3,
+        "call": "gwrite(mark@po1,1,clearudk.png)",
+        "file": "a_default\\script\\2000_勢力ストーリー\\po1_event.dat"
+      },
+      {
+        "argc": 3,
+        "call": "gwrite(mark@ri,1,clearri.png)",
+        "file": "a_default\\script\\2000_勢力ストーリー\\po1_event.dat"
+      },
+      {
+        "argc": 3,
+        "call": "gwrite(mark@po22,1,clearhsi.png)",
+        "file": "a_default\\script\\2000_勢力ストーリー\\po22_event.dat"
+      },
+      {
+        "argc": 3,
+        "call": "gwrite(mark@psr,1,psrikisugi.png)",
+        "file": "a_default\\script\\2000_勢力ストーリー\\po25_event.dat"
+      },
+      {
+        "argc": 3,
+        "call": "gwrite(mark@po25,1,clearnkdk.png)",
+        "file": "a_default\\script\\2000_勢力ストーリー\\po25_event.dat"
+      },
+      {
+        "argc": 3,
+        "call": "gwrite(mark@po2,1,clearkiss.png)",
+        "file": "a_default\\script\\2000_勢力ストーリー\\po2_event.dat"
+      },
+      {
+        "argc": 3,
+        "call": "gwrite(mark@po5,1,clearmztis.png)",
+        "file": "a_default\\script\\2000_勢力ストーリー\\po5_event.dat"
+      },
+      {
+        "argc": 3,
+        "call": "gwrite(mark@mz,1,clearpkmn.png)",
+        "file": "a_default\\script\\2000_勢力ストーリー\\po5_event.dat"
+      },
+      {
+        "argc": 3,
+        "call": "gwrite(mark@tdn,1,cleartdn.png)",
+        "file": "a_default\\script\\2001_イベント_ボス\\EB_5151_古代アステカ王国.dat"
+      },
+      {
+        "argc": 3,
+        "call": "gwrite(mark@astk,1,clearastk.png)",
+        "file": "a_default\\script\\2001_イベント_ボス\\EB_5151_古代アステカ王国.dat"
+      }
+    ]
+  }
+}

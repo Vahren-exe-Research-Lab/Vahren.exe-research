@@ -1,0 +1,20 @@
+{
+  "research_id": "E-AUDIT-20261028-23H-T018-T020-E21-ARTIFACT-BYTE-ATTESTATION-01",
+  "owner": "E",
+  "source_class": "SYNTHETIC",
+  "source_not_pc_synced": true,
+  "source": "Chat conversation attachment E_20261028_2149/T020_GOLDEN_CAPTURE_SEMANTIC_BIND_CASES_20261028_2149.json",
+  "chat_artifact_sha256": "7D574FF25175C4BAB3BF1C2CCDE6744482C05142717DAA8CC82E06F55F04CCAA",
+  "source_rehash_scope": "ChatGPT sandbox container, not PC source bytes",
+  "native_original_exe_source": "2026-10-21 Ghidra BUILD_MANIFEST only",
+  "required_golden": [
+    "G0 legal UI receipt",
+    "G1 same run immediate original SAVE and input",
+    "G2 actual MAP and 3-side ordered deployment",
+    "G3 battle outcome",
+    "G4 world delta"
+  ],
+  "verdict": "VERIFY/NOT READY",
+  "actual_golden_pass": 0,
+  "strict_match": 0
+}

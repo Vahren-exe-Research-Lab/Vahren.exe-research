@@ -1,0 +1,2 @@
+source_path	source_sha256	source_bytes	physical_lines	reviewed_bounds	method	reason	destination
+tests/T020_T028_NULL_ECX_CALLSITE_CASES_20261028_13H.json	8b2bc684cd380c9be195783506dbbce50a032a12ad0821f2622f97de97a37029	2958	23	complete LF1-6; partial LF7; first600 Unicode characters only	HEADER_PREFIX_SUBJECT_TRIAGE_ONLY; all source bytes hashed but case array not parsed/reviewed	Header explicitly identifies known-held E Oct28_13H NULL-ECX callsite study; whole-file defer; no case-array expansion or body saved	

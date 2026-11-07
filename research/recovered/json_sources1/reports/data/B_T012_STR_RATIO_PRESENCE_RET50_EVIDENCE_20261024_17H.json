@@ -1,0 +1,197 @@
+{
+  "research_id": "B-OFFLINE-20261024-17H-T012-STR-RATIO-PRESENCE-RET50-01",
+  "recovery_id": "B-RC-20261024-1718-LOCAL429-OFFLINE-01",
+  "owner": "B",
+  "task": "T012",
+  "status": [
+    "OFFLINE-UNSYNCED",
+    "ORIGINAL-PE-ASM",
+    "STATIC-GHIDRA",
+    "STATIC-DERIVED",
+    "VERIFY",
+    "NOT READY"
+  ],
+  "connection_attempt": {
+    "tool": "Desktop Commander Local Compact read_file MASTER_LEDGER.md",
+    "error": "UNAVAILABLE: Error code: UNAVAILABLE; Error: McpServerError: MCP SSE probe returned 429 from openai.org",
+    "classification": "CONNECTION",
+    "pc_current_ledger_read": false,
+    "pc_b_handoff_updated": false
+  },
+  "sources": {
+    "archive_name": "HAKUSHIN067_AI_OFFLINE_PACK_20261021.zip",
+    "archive_sha256": "911E5E37A3F9BD5B36F929AF94B0D1E2CD1CD5CF34E3E2F16C8FC800ABF5F7C2",
+    "zip_entry_count": 34,
+    "crc_pass": true,
+    "sqlite_sha256": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF",
+    "sqlite_manifest_match": true,
+    "sqlite_quick_check": "ok",
+    "pe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+    "pe_original_sha_match": true,
+    "snapshot_date": "2026-10-21",
+    "latest_pc_checkpoint_verified": false
+  },
+  "functions": {
+    "0x00464290": {
+      "size_bytes": 802,
+      "ghidra_code_sha256": "68EBE29629531DA6FB5AA44E315BBF120DD5AACB8F7400AC5619845748E5BB56"
+    },
+    "0x004647D0": {
+      "size_bytes": 1157,
+      "ghidra_code_sha256": "ADA8EC2EBDA2F55D78E17C4349C04824E6B60007F23EDCACE7ACC7F9FA2B5E05"
+    },
+    "0x00599BD0": {
+      "size_bytes": 24124,
+      "ghidra_code_sha256": "94F69BED55F2E76978B831CCF1179B94987DE2C655B7B861B4E8B49A99588C64"
+    }
+  },
+  "call_edges": {
+    "0x0059CDCA": [
+      [
+        "0x00599BD0",
+        "0x0059CDCA",
+        "0x00464290",
+        "UNCONDITIONAL_CALL",
+        "GHIDRA_FUNCTION_RESOLVED"
+      ]
+    ],
+    "0x0059CDE8": [
+      [
+        "0x00599BD0",
+        "0x0059CDE8",
+        "0x004647D0",
+        "UNCONDITIONAL_CALL",
+        "GHIDRA_FUNCTION_RESOLVED"
+      ]
+    ]
+  },
+  "native_windows": [
+    {
+      "label": "presence_counter_init",
+      "start_va": "0x00464442",
+      "size": 7,
+      "hex": "8b7028895c2414",
+      "sha256": "9CA1172ABB150D2E3766667B66D4FF6B5A6A31A496ADFDB5CA9A45DE98FE5D7E"
+    },
+    {
+      "label": "presence_counter_limit",
+      "start_va": "0x00464550",
+      "size": 18,
+      "hex": "8b442414408944241483f8320f8ceefeffff",
+      "sha256": "9FF443A5B4C67A0D02212E536FE0FE2A35BA4C1C0EE739A15838C600C547CBC7"
+    },
+    {
+      "label": "presence_no",
+      "start_va": "0x0046457A",
+      "size": 2,
+      "hex": "32c0",
+      "sha256": "35B660100ACAC77A09EED3BDD6B22A8DB7B27C1E8C4C4ED44BD52D51C9084B03"
+    },
+    {
+      "label": "presence_yes",
+      "start_va": "0x004645B3",
+      "size": 2,
+      "hex": "b001",
+      "sha256": "90EF8690A679D25D77655565CE4AD197255F49A3EAA58F9A96FC2AA903FE72A2"
+    },
+    {
+      "label": "presence_ret08",
+      "start_va": "0x0046459D",
+      "size": 3,
+      "hex": "c20800",
+      "sha256": "1D10894625976BCA9D8906F3ECF1E766B94E9219EC3BF1C30E02FEEA5E18E45A"
+    },
+    {
+      "label": "parser_ratio_default",
+      "start_va": "0x0059CDC2",
+      "size": 8,
+      "hex": "d9e8dd9d88020000",
+      "sha256": "A4C6905ABBB47AFA6F19AD4F5A5FB7CF02FAFE4BEB863051379B45B3F095945E"
+    },
+    {
+      "label": "parser_presence_call_test",
+      "start_va": "0x0059CDCA",
+      "size": 9,
+      "hex": "e8c174ecff84c07467",
+      "sha256": "14935B55723AC8C776F22BEEABCAB72650D3B043E79FF5E70CD6420608FD766F"
+    },
+    {
+      "label": "parser_ratio_getter_fild",
+      "start_va": "0x0059CDE8",
+      "size": 8,
+      "hex": "e8e379ecffdb4020",
+      "sha256": "605F72FA2FBC922CBF8B30FFB93FB9CD08F47080F99981158B93F53F13DA2DA1"
+    },
+    {
+      "label": "parser_ratio_store",
+      "start_va": "0x0059CDFB",
+      "size": 6,
+      "hex": "dd9d88020000",
+      "sha256": "0D6A6841D0AA7DBD04F8965462DF819718DEB69C211AE0F244709982783DCBC2"
+    },
+    {
+      "label": "getter_counter_limit",
+      "start_va": "0x00464B3D",
+      "size": 18,
+      "hex": "8b442414408944241483f8320f8ce1feffff",
+      "sha256": "D39AF0F3736F96209D3288F74C83D7C0B2BB491996960061342FD5E947A4A5C8"
+    },
+    {
+      "label": "literal_str_ratio_probe",
+      "start_va": "0x00625040",
+      "size": 10,
+      "hex": "7374725f726174696f00",
+      "sha256": "A397AAF2B906AF6470EFFCB96F18199AE20A82C479974133F5DA22CFB079FDFB"
+    },
+    {
+      "label": "literal_skill_probe",
+      "start_va": "0x0062504C",
+      "size": 6,
+      "hex": "736b696c6c00",
+      "sha256": "6935CB85BF6646AF59215032F19A990508FD1CB6DAA2C02312300C66468244B3"
+    },
+    {
+      "label": "literal_str_ratio_getter",
+      "start_va": "0x00625054",
+      "size": 10,
+      "hex": "7374725f726174696f00",
+      "sha256": "A397AAF2B906AF6470EFFCB96F18199AE20A82C479974133F5DA22CFB079FDFB"
+    },
+    {
+      "label": "literal_skill_getter",
+      "start_va": "0x00625060",
+      "size": 6,
+      "hex": "736b696c6c00",
+      "sha256": "6935CB85BF6646AF59215032F19A990508FD1CB6DAA2C02312300C66468244B3"
+    }
+  ],
+  "findings": {
+    "presence_function_va": "0x00464290",
+    "presence_returns_false": "0x0046457A XOR AL,AL",
+    "presence_returns_true": "0x004645B3 MOV AL,1",
+    "presence_ret": "0x0046459D RET 8",
+    "caller_test": "0x0059CDCA CALL 0x00464290; 0x0059CDCF TEST AL,AL; 0x0059CDD1 JE 0x0059CE3A",
+    "presence_parent_bound": "0x00464559 CMP EAX,0x32; 0x0046455C JL 0x00464450",
+    "getter_parent_bound": "0x00464B46 CMP EAX,0x32; 0x00464B49 JL 0x00464A30",
+    "ratio_default": "0x0059CDC2 FLD1; 0x0059CDC4 FSTP [EBP+0x288]",
+    "ratio_present": "0x0059CDE8 getter; 0x0059CDED FILD [EAX+0x20]; 0x0059CDF5 FMUL constant; 0x0059CDFB FSTP [EBP+0x288]",
+    "scope": "This is a local branch contract, not a proof of legal DAT parent chain or gameplay side effects."
+  },
+  "safety": {
+    "avoid": [
+      "0x005710C0..0x00571500",
+      "0x0058021E..0x00580340",
+      "0x00624A1C and previously refused payloads"
+    ],
+    "new_safety_refusal": 0,
+    "retries_of_prior_refusals": 0
+  },
+  "result": {
+    "new_ready": 0,
+    "golden_pass": 0,
+    "strict_match": 0,
+    "master_integration": 0,
+    "task_done": 0,
+    "pc_sync": false
+  }
+}

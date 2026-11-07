@@ -10,4 +10,10 @@
 - [research/recovered/outside_dev1/reports/017_WORK_V4_REVIEW_LOCATION_CUSTOM_COLUMNS_20261029.md 行 114](../../research/recovered/outside_dev1/reports/017_WORK_V4_REVIEW_LOCATION_CUSTOM_COLUMNS_20261029.md?plain=1#L114-L114) — - Existing skill-only hover adapter is useful but is not full ordinary StatusWnd behavior. It rejects seven generic rectangles, validates ownership, converts co
   制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Only personal profile prefix substitutions; byte spans and all unchanged gaps proven.
 
+<a id="field-40"></a>
+## dispatch + 0x40
+
+- [research/recovered/json_sources1/reports/data/B_T012_T013_RENDER_COLLISION_BOUNDARY_EVIDENCE_20261023_0808.json 行 55](../../research/recovered/json_sources1/reports/data/B_T012_T013_RENDER_COLLISION_BOUNDARY_EVIDENCE_20261023_0808.json?plain=1#L55-L55) — "note": "virtual dispatch +0x40"
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

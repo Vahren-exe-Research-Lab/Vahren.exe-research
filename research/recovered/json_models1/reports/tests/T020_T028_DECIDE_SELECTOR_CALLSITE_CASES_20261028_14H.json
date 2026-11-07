@@ -1,0 +1,29 @@
+{
+  "research_id": "E-AUDIT-20261028-14H-T020-T028-DECIDE-BRANCH-CROSSWALK-01",
+  "status": "STATIC_SYNTHETIC_DESIGNED",
+  "source": {"b_id":"B-20261028-14H-T028-DECIDE-SELECTOR-FLAG-WEIGHT-01","b_sha_claim":"0C7954EC4979F19E2D74EE80BF9E0DCE7B189D00BEAAE32CCBEC5A21ACDBF046","exe_sha_claim":"E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187","independently_hashed":false},
+  "rule": "arrival hypothetical; both flags zero => null cleanup/vector append; otherwise candidate+74 => decide3/500 or decide11/10|25; numbers are NOT morale/death counters",
+  "cases": [
+    {"id":"null_base","site":"0x494233","flag75":0,"flag77":0,"flag74":null,"other1d":null,"expected":"LOCAL_CLEANUP_CALL","actual_gameplay_observed":false},
+    {"id":"vector_base","site":"0x494618","flag75":0,"flag77":0,"flag74":null,"other1d":null,"expected":"LOCAL_VECTOR_APPEND","actual_gameplay_observed":false},
+    {"id":"resolver_skip","site":"0x495120","flag75":0,"flag77":0,"flag74":null,"other1d":null,"expected":"SKIP_AT_CALLER","actual_gameplay_observed":false,"resolver_hit":false},
+    {"id":"resolver_unknown","site":"0x495120","flag75":0,"flag77":0,"flag74":null,"other1d":null,"expected":"INDETERMINATE_CALLER","actual_gameplay_observed":false,"resolver_hit":null},
+    {"id":"resolver_hit","site":"0x495120","flag75":0,"flag77":0,"flag74":null,"other1d":null,"expected":"LOCAL_CLEANUP_CALL","actual_gameplay_observed":false,"resolver_hit":true},
+    {"id":"vector_second","site":"0x49516A","flag75":0,"flag77":0,"flag74":null,"other1d":null,"expected":"LOCAL_VECTOR_APPEND","actual_gameplay_observed":false},
+    {"id":"7a_skip","site":"0x497781","flag75":0,"flag77":0,"flag74":null,"other1d":null,"expected":"SKIP_AT_CALLER","actual_gameplay_observed":false,"flag7a":1},
+    {"id":"7a_unknown","site":"0x497781","flag75":0,"flag77":0,"flag74":null,"other1d":null,"expected":"INDETERMINATE_CALLER","actual_gameplay_observed":false,"flag7a":null},
+    {"id":"7a_clean","site":"0x497781","flag75":0,"flag77":0,"flag74":null,"other1d":null,"expected":"LOCAL_CLEANUP_CALL","actual_gameplay_observed":false,"flag7a":0},
+    {"id":"7a_prewrite_not_destroy","site":"0x497781","flag75":1,"flag77":0,"flag74":1,"other1d":null,"expected":"DECIDE3_500","actual_gameplay_observed":false,"flag7a":0},
+    {"id":"upper_clean","site":"0x49BCF6","flag75":0,"flag77":0,"flag74":null,"other1d":null,"expected":"LOCAL_CLEANUP_CALL","actual_gameplay_observed":false},
+    {"id":"upper_decide11_10","site":"0x49BCF6","flag75":0,"flag77":1,"flag74":0,"other1d":0,"expected":"DECIDE11_10","actual_gameplay_observed":false},
+    {"id":"upper_decide11_25","site":"0x49BCF6","flag75":0,"flag77":1,"flag74":0,"other1d":1,"expected":"DECIDE11_25","actual_gameplay_observed":false},
+    {"id":"null_site_decide3","site":"0x494233","flag75":1,"flag77":0,"flag74":1,"other1d":null,"expected":"DECIDE3_500","actual_gameplay_observed":false},
+    {"id":"vector_site_decide11","site":"0x494618","flag75":0,"flag77":1,"flag74":0,"other1d":0,"expected":"DECIDE11_10","actual_gameplay_observed":false},
+    {"id":"vector_second_decide11","site":"0x49516A","flag75":1,"flag77":0,"flag74":0,"other1d":1,"expected":"DECIDE11_25","actual_gameplay_observed":false},
+    {"id":"selector_unknown","site":"0x49516A","flag75":1,"flag77":0,"flag74":null,"other1d":0,"expected":"INDETERMINATE_SELECTOR","actual_gameplay_observed":false},
+    {"id":"flag_unknown","site":"0x494233","flag75":null,"flag77":0,"flag74":null,"other1d":null,"expected":"INDETERMINATE_FLAGS","actual_gameplay_observed":false},
+    {"id":"param_unknown","site":"0x49516A","flag75":0,"flag77":1,"flag74":0,"other1d":null,"expected":"INDETERMINATE_PARAM","actual_gameplay_observed":false},
+    {"id":"7a_decide11","site":"0x497781","flag75":1,"flag77":0,"flag74":0,"other1d":1,"expected":"DECIDE11_25","actual_gameplay_observed":false,"flag7a":0}
+  ],
+  "golden": {"G0":false,"G1":false,"G2":false,"G3":false,"G4":false,"dynamic_observed":0,"actual_pass":0,"strict_match":0}
+}

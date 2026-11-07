@@ -1,0 +1,2262 @@
+{
+  "summary": {
+    "files": 250,
+    "decoded": 250,
+    "encrypted": 250,
+    "roundtrip_exact": 250,
+    "cp932_strict_ok": 250,
+    "failures": []
+  },
+  "files": [
+    {
+      "file": "7fz\\(7fz)dungeon.dat",
+      "encrypted": true,
+      "size": 3126,
+      "plain_size": 3094,
+      "roundtrip_exact": true,
+      "plain_sha256": "32466519409370200356c1af4854734f6e854c66ee647fff72dc994961563eaf",
+      "text_chars": 3061
+    },
+    {
+      "file": "7fz\\(7fz)event.dat",
+      "encrypted": true,
+      "size": 114112,
+      "plain_size": 114080,
+      "roundtrip_exact": true,
+      "plain_sha256": "8a332ddb7aa4a450967b8e75432cb1c40264e0ba32f04fb54bbe3b69d2015b41",
+      "text_chars": 95607
+    },
+    {
+      "file": "7fz\\(7fz)event_battle.dat",
+      "encrypted": true,
+      "size": 24124,
+      "plain_size": 24092,
+      "roundtrip_exact": true,
+      "plain_sha256": "cd2a769051348351b3c62b8accbbc44f2bd1bf7741516ba43ab538db42d393f7",
+      "text_chars": 21775
+    },
+    {
+      "file": "7fz\\(7fz)event_battle_rmk.dat",
+      "encrypted": true,
+      "size": 3088,
+      "plain_size": 3056,
+      "roundtrip_exact": true,
+      "plain_sha256": "a7feed157dd485625a411392f1bf860e40c1ad5105415eea1c2473ca333e57c5",
+      "text_chars": 2838
+    },
+    {
+      "file": "7fz\\(7fz)omake.dat",
+      "encrypted": true,
+      "size": 442,
+      "plain_size": 410,
+      "roundtrip_exact": true,
+      "plain_sha256": "6c1e9067f3f33bf046db1e3824bb6e3b1d195522ed7af9db8f648831323ae00d",
+      "text_chars": 345
+    },
+    {
+      "file": "7fz\\(7fz)power.dat",
+      "encrypted": true,
+      "size": 11405,
+      "plain_size": 11373,
+      "roundtrip_exact": true,
+      "plain_sha256": "f6491edcd722fa4dbe217f066101d41fb65eb4e321f483c1d02db59e1c3df08a",
+      "text_chars": 9337
+    },
+    {
+      "file": "7fz\\(7fz)sinaworld.dat",
+      "encrypted": true,
+      "size": 14823,
+      "plain_size": 14791,
+      "roundtrip_exact": true,
+      "plain_sha256": "468c8cf61e0dd02c173fda450c1e1c71d15e079fe51ca2893425489cd546f85e",
+      "text_chars": 12407
+    },
+    {
+      "file": "7fz\\(7fz)skill.dat",
+      "encrypted": true,
+      "size": 24395,
+      "plain_size": 24363,
+      "roundtrip_exact": true,
+      "plain_sha256": "a363b6ac1e0c55470e646098dd09c50708fe647dcd9583fc37c8b49f52516be8",
+      "text_chars": 23213
+    },
+    {
+      "file": "7fz\\(7fz)spot.dat",
+      "encrypted": true,
+      "size": 13957,
+      "plain_size": 13925,
+      "roundtrip_exact": true,
+      "plain_sha256": "5ec081d8fc0ab457064f4a83906743af84ed2d1f300172831e932c99e648bbda",
+      "text_chars": 13521
+    },
+    {
+      "file": "7fz\\(7fz)unit.dat",
+      "encrypted": true,
+      "size": 21342,
+      "plain_size": 21310,
+      "roundtrip_exact": true,
+      "plain_sha256": "0962d18c6a2e46326c5d2fbb35c1d6cb7584dd83061783ab1e03d4e7f98f1963",
+      "text_chars": 19770
+    },
+    {
+      "file": "7fz\\(7fzg)data.dat",
+      "encrypted": true,
+      "size": 6090,
+      "plain_size": 6058,
+      "roundtrip_exact": true,
+      "plain_sha256": "03bc4ec6b561d0fd3184854c5d436de69220dba3c3cd42d67dabd040c35a1d17",
+      "text_chars": 5500
+    },
+    {
+      "file": "7fz\\(7fzg)event.dat",
+      "encrypted": true,
+      "size": 60871,
+      "plain_size": 60839,
+      "roundtrip_exact": true,
+      "plain_sha256": "d9f5d6da7d5eb32e3cb848bcecbd9ee6c6b444f075163347dbb4a780ae877117",
+      "text_chars": 47127
+    },
+    {
+      "file": "7fz\\(7fzg)event_battle.dat",
+      "encrypted": true,
+      "size": 13300,
+      "plain_size": 13268,
+      "roundtrip_exact": true,
+      "plain_sha256": "aae7a8dac0d5de44904638cc02c76fe196f0e7e6caa6d3f68cb67cdd45e49d5d",
+      "text_chars": 12518
+    },
+    {
+      "file": "7fz\\(7fzg)spot.dat",
+      "encrypted": true,
+      "size": 14280,
+      "plain_size": 14248,
+      "roundtrip_exact": true,
+      "plain_sha256": "c4e27aacd6e84b1007c80876297ec47160707d292cf9ff3726c338248168d12d",
+      "text_chars": 13840
+    },
+    {
+      "file": "7fz\\(7fzg)story.dat",
+      "encrypted": true,
+      "size": 12303,
+      "plain_size": 12271,
+      "roundtrip_exact": true,
+      "plain_sha256": "d2f1dd4933eb841de04411a46e0cccf5466fae66ffb8244daef2ce1d1f826e87",
+      "text_chars": 11081
+    },
+    {
+      "file": "7fz\\(7fzgc)data.dat",
+      "encrypted": true,
+      "size": 1529,
+      "plain_size": 1497,
+      "roundtrip_exact": true,
+      "plain_sha256": "4695d14d70977762a18ee9a2c748885ad8faebd2fefcca82847a7eca979b11f5",
+      "text_chars": 1459
+    },
+    {
+      "file": "7fz\\(7fzgc)data2.dat",
+      "encrypted": true,
+      "size": 48,
+      "plain_size": 16,
+      "roundtrip_exact": true,
+      "plain_sha256": "dfb23411a6872447e75541e6b3067026d10ebc8f76f427a5f69d795498e117f9",
+      "text_chars": 16
+    },
+    {
+      "file": "7fz\\(7fzgc)event.dat",
+      "encrypted": true,
+      "size": 61321,
+      "plain_size": 61289,
+      "roundtrip_exact": true,
+      "plain_sha256": "f2dab3eb787ce1f5f2cb94d34d9b99f26a8dc3cf4f27130fefb85d002a9eb1b5",
+      "text_chars": 48152
+    },
+    {
+      "file": "7fz\\(7fzgc)event_battle.dat",
+      "encrypted": true,
+      "size": 20166,
+      "plain_size": 20134,
+      "roundtrip_exact": true,
+      "plain_sha256": "7c51a637b825d7888eb75a561571824c0612853d4a8342de2e979e33a1005ede",
+      "text_chars": 18597
+    },
+    {
+      "file": "7fz\\(7fzgc)story.dat",
+      "encrypted": true,
+      "size": 13059,
+      "plain_size": 13027,
+      "roundtrip_exact": true,
+      "plain_sha256": "3d98a8f57241923616dbf12fe09435cb499682511e4157cfe311ff6b3341eb94",
+      "text_chars": 12231
+    },
+    {
+      "file": "7fz\\(7gzn)ôαÉ¡event.dat",
+      "encrypted": true,
+      "size": 99004,
+      "plain_size": 98972,
+      "roundtrip_exact": true,
+      "plain_sha256": "acf02639a5256a2c29a6e441ba13e81ceb3322dc4acfacb4fcd973d16d63a1dd",
+      "text_chars": 89881
+    },
+    {
+      "file": "7fz\\(7gzn)ôαÉ¡help.dat",
+      "encrypted": true,
+      "size": 8068,
+      "plain_size": 8036,
+      "roundtrip_exact": true,
+      "plain_sha256": "b0919fb1432733fa4328205214398177155e8ef9c54225cb585092361a6159a8",
+      "text_chars": 5138
+    },
+    {
+      "file": "7fz\\(7gzn)ôαÉ¡unitèOû▒în.dat",
+      "encrypted": true,
+      "size": 6953,
+      "plain_size": 6921,
+      "roundtrip_exact": true,
+      "plain_sha256": "7eae3e00c185495cf74daed6abe0a60e54c9c8605b98df8755b948c553a143e7",
+      "text_chars": 6546
+    },
+    {
+      "file": "7fz\\(7gzn)ôαÉ¡unitÉlì▐în.dat",
+      "encrypted": true,
+      "size": 6117,
+      "plain_size": 6085,
+      "roundtrip_exact": true,
+      "plain_sha256": "e25c8268848af75c36f3401acc171d2050ca0d48ca9ef0a3a3e9b1df22004e4c",
+      "text_chars": 5649
+    },
+    {
+      "file": "7fz\\(7gzn)ôαÉ¡unitù╠Ænîn.dat",
+      "encrypted": true,
+      "size": 11424,
+      "plain_size": 11392,
+      "roundtrip_exact": true,
+      "plain_sha256": "11e09fc4f29bd0ca40f571a2d1ea9039fd996743f6401ec7706022b711df4f2e",
+      "text_chars": 10974
+    },
+    {
+      "file": "7fz\\(7gzn)ôαÉ¡è╓îWevent.dat",
+      "encrypted": true,
+      "size": 7832,
+      "plain_size": 7800,
+      "roundtrip_exact": true,
+      "plain_sha256": "58d6ff11891963fafc9008dacd2cff342a3962aa50c26406c53d7d399415029b",
+      "text_chars": 7191
+    },
+    {
+      "file": "7fz\\(7gzn)ô┴ÄΩî┘ùp.dat",
+      "encrypted": true,
+      "size": 2124,
+      "plain_size": 2092,
+      "roundtrip_exact": true,
+      "plain_sha256": "33186409ed6490eda69cfefd93296ecb2e4c828f6e3b6f73f7121350e728005c",
+      "text_chars": 1990
+    },
+    {
+      "file": "atr11\\class(atr).dat",
+      "encrypted": true,
+      "size": 11517,
+      "plain_size": 11485,
+      "roundtrip_exact": true,
+      "plain_sha256": "0b8e7e4bd7a5a81f5f88d248a1d67d87b6679937aa17d533c37f9289c44b04dc",
+      "text_chars": 11283
+    },
+    {
+      "file": "atr11\\class(atr_dun).dat",
+      "encrypted": true,
+      "size": 57455,
+      "plain_size": 57423,
+      "roundtrip_exact": true,
+      "plain_sha256": "7e2da842e1f489ac138b14b521d53dcfa3792c18eeeccfa146f6decff1e6d94d",
+      "text_chars": 56532
+    },
+    {
+      "file": "atr11\\detail_spot(atr).dat",
+      "encrypted": true,
+      "size": 3084,
+      "plain_size": 3052,
+      "roundtrip_exact": true,
+      "plain_sha256": "9b6b29c11396996fee07fc37c1092a3ad5edb54c3f23825168fc85ddaee3c21c",
+      "text_chars": 1763
+    },
+    {
+      "file": "atr11\\detail_unit(atr).dat",
+      "encrypted": true,
+      "size": 51437,
+      "plain_size": 51405,
+      "roundtrip_exact": true,
+      "plain_sha256": "c7357669b6a3e8952c90711c1d99f2a6baf3558c9cbd8992e93d404ae7f602ba",
+      "text_chars": 28549
+    },
+    {
+      "file": "atr11\\dungeon(atr).dat",
+      "encrypted": true,
+      "size": 26116,
+      "plain_size": 26084,
+      "roundtrip_exact": true,
+      "plain_sha256": "07c3eeebc7182d4ee11144b60e26f78d397cdd8ed04d680a6657d95342a71ea5",
+      "text_chars": 25914
+    },
+    {
+      "file": "atr11\\ed_comment(atr).dat",
+      "encrypted": true,
+      "size": 27753,
+      "plain_size": 27721,
+      "roundtrip_exact": true,
+      "plain_sha256": "b07779190aa7c19cc68a95ee36c9ca40fd51b9a3a27b3714a30b8185e1f08919",
+      "text_chars": 21362
+    },
+    {
+      "file": "atr11\\ed_comment2(atr).dat",
+      "encrypted": true,
+      "size": 24088,
+      "plain_size": 24056,
+      "roundtrip_exact": true,
+      "plain_sha256": "27be30b580e6e3a730c2b689294567898c2fccf3c1741e717beb72853c25fe8f",
+      "text_chars": 19255
+    },
+    {
+      "file": "atr11\\event(atr_dun).dat",
+      "encrypted": true,
+      "size": 4102,
+      "plain_size": 4070,
+      "roundtrip_exact": true,
+      "plain_sha256": "4f1a68de0f0dc6a036ed2c14953298178ae75b247088a574a17e6b835dd23fa0",
+      "text_chars": 3778
+    },
+    {
+      "file": "atr11\\event_battle(atr).dat",
+      "encrypted": true,
+      "size": 329867,
+      "plain_size": 329835,
+      "roundtrip_exact": true,
+      "plain_sha256": "ca08b292393f81117a8df133020ac14d105b329cd321476dc13296c7d45c5f11",
+      "text_chars": 263651
+    },
+    {
+      "file": "atr11\\event_ed(atr).dat",
+      "encrypted": true,
+      "size": 381324,
+      "plain_size": 381292,
+      "roundtrip_exact": true,
+      "plain_sha256": "073fde25ae756bb45751eab5aec307cfe8e572638430463daa2b4ce2c312e93d",
+      "text_chars": 274228
+    },
+    {
+      "file": "atr11\\event_etc(atr).dat",
+      "encrypted": true,
+      "size": 19495,
+      "plain_size": 19463,
+      "roundtrip_exact": true,
+      "plain_sha256": "fcb6ed565f4ab26c344b127ac4c831f0c777e23f38ccaa050128dee31efda956",
+      "text_chars": 15317
+    },
+    {
+      "file": "atr11\\event_haruto(atr).dat",
+      "encrypted": true,
+      "size": 26505,
+      "plain_size": 26473,
+      "roundtrip_exact": true,
+      "plain_sha256": "677203f43514b1a66480ecd41d40bf7f941be23af7624daa02c64d4186d449ab",
+      "text_chars": 20629
+    },
+    {
+      "file": "atr11\\event_lastboss(atr).dat",
+      "encrypted": true,
+      "size": 18830,
+      "plain_size": 18798,
+      "roundtrip_exact": true,
+      "plain_sha256": "66dccdfcdf5f8bc031cb1318723262d6e052ca3ff81034e5c3f19642a8dbf8fc",
+      "text_chars": 17593
+    },
+    {
+      "file": "atr11\\event_op1(atr).dat",
+      "encrypted": true,
+      "size": 66880,
+      "plain_size": 66848,
+      "roundtrip_exact": true,
+      "plain_sha256": "000d51824b36eee3ee7dccb3244ef53210cb69c8371ccbf644922704e60c9530",
+      "text_chars": 47897
+    },
+    {
+      "file": "atr11\\event_op2(atr).dat",
+      "encrypted": true,
+      "size": 67152,
+      "plain_size": 67120,
+      "roundtrip_exact": true,
+      "plain_sha256": "2057890a497ed0bea0305665e711a0cd1c78263a2ea1f4a187dda45fb488df73",
+      "text_chars": 46836
+    },
+    {
+      "file": "atr11\\event_op3(atr).dat",
+      "encrypted": true,
+      "size": 142114,
+      "plain_size": 142082,
+      "roundtrip_exact": true,
+      "plain_sha256": "465e4514f2fbb75e31d193a70d7cf8de4d11afa10589e719906e25bcc73e2da8",
+      "text_chars": 99157
+    },
+    {
+      "file": "atr11\\event_op4(atr).dat",
+      "encrypted": true,
+      "size": 220315,
+      "plain_size": 220283,
+      "roundtrip_exact": true,
+      "plain_sha256": "d015603dd1e23f93e706854adf0a2bf19455405e8da11d13847ddd553fd3be8a",
+      "text_chars": 154191
+    },
+    {
+      "file": "atr11\\event_s1,s2(atr).dat",
+      "encrypted": true,
+      "size": 248544,
+      "plain_size": 248512,
+      "roundtrip_exact": true,
+      "plain_sha256": "091beb829497c90d5cc6e52651718793216f13d4aa2bdb4d2b2dcb80655df7bf",
+      "text_chars": 198309
+    },
+    {
+      "file": "atr11\\event_s2(atr).dat",
+      "encrypted": true,
+      "size": 10620,
+      "plain_size": 10588,
+      "roundtrip_exact": true,
+      "plain_sha256": "7d8c66fac05f788037bc16ce95603c6a074020c01afc1b36a1900775b0c7167b",
+      "text_chars": 9463
+    },
+    {
+      "file": "atr11\\event_s3(atr).dat",
+      "encrypted": true,
+      "size": 212888,
+      "plain_size": 212856,
+      "roundtrip_exact": true,
+      "plain_sha256": "4ef029cf100887e55eda21d6cb8c1f3652e504a2476c76685850a35231238b0a",
+      "text_chars": 172773
+    },
+    {
+      "file": "atr11\\event_s4(atr).dat",
+      "encrypted": true,
+      "size": 126250,
+      "plain_size": 126218,
+      "roundtrip_exact": true,
+      "plain_sha256": "237b83fc851facd6e36893b42280027f011eea254e9fd569a0e58cb954749b12",
+      "text_chars": 107125
+    },
+    {
+      "file": "atr11\\event_vs(atr).dat",
+      "encrypted": true,
+      "size": 120572,
+      "plain_size": 120540,
+      "roundtrip_exact": true,
+      "plain_sha256": "0e6b7d4603e3335e72a4f26c84789ab881040297ec3f8175f01d57ab1733bf1c",
+      "text_chars": 99063
+    },
+    {
+      "file": "atr11\\event_vs(atr_dun).dat",
+      "encrypted": true,
+      "size": 9084,
+      "plain_size": 9052,
+      "roundtrip_exact": true,
+      "plain_sha256": "d1a5339a104c5dcd11bfabbe004aca4aaeee94b85c05fd59f54b90ac389d9ead",
+      "text_chars": 7896
+    },
+    {
+      "file": "atr11\\politics(atr).dat",
+      "encrypted": true,
+      "size": 17526,
+      "plain_size": 17494,
+      "roundtrip_exact": true,
+      "plain_sha256": "0df93ca547c159a4224a76c61529a365864078b499b41f6f473181180607de77",
+      "text_chars": 15172
+    },
+    {
+      "file": "atr11\\power(s1_atr).dat",
+      "encrypted": true,
+      "size": 17761,
+      "plain_size": 17729,
+      "roundtrip_exact": true,
+      "plain_sha256": "b4b19590e778fe78ec4578f2886d08d730d2a800dc4735020c8f909b2a83e405",
+      "text_chars": 14256
+    },
+    {
+      "file": "atr11\\power(s2_atr).dat",
+      "encrypted": true,
+      "size": 9794,
+      "plain_size": 9762,
+      "roundtrip_exact": true,
+      "plain_sha256": "db410d48402b018e0f73f39827d9ed8310a34c1a422c9dd821b33701957a0b47",
+      "text_chars": 7735
+    },
+    {
+      "file": "atr11\\power(s3_atr).dat",
+      "encrypted": true,
+      "size": 8364,
+      "plain_size": 8332,
+      "roundtrip_exact": true,
+      "plain_sha256": "745232bf34b4cc0148c0973416aa8d6b034198f519bb0dc3f6d1ca6fc570cd3c",
+      "text_chars": 6938
+    },
+    {
+      "file": "atr11\\power(s4_atr).dat",
+      "encrypted": true,
+      "size": 8435,
+      "plain_size": 8403,
+      "roundtrip_exact": true,
+      "plain_sha256": "e71b0ae15a7033e50cdedc569be6361d1553c4c24756ac6ce7db54f410647092",
+      "text_chars": 7118
+    },
+    {
+      "file": "atr11\\scenario(s1_atr).dat",
+      "encrypted": true,
+      "size": 12210,
+      "plain_size": 12178,
+      "roundtrip_exact": true,
+      "plain_sha256": "592944838ffc9674c52ed82837159b4730a432d67b03219d54dda7b9edc51a8e",
+      "text_chars": 11314
+    },
+    {
+      "file": "atr11\\scenario(s2_atr).dat",
+      "encrypted": true,
+      "size": 11875,
+      "plain_size": 11843,
+      "roundtrip_exact": true,
+      "plain_sha256": "40e0e8cc8e9ae667016711001b92bed6425db69e6feed17b3cd9f107cf72ad75",
+      "text_chars": 10926
+    },
+    {
+      "file": "atr11\\scenario(s3_atr).dat",
+      "encrypted": true,
+      "size": 13114,
+      "plain_size": 13082,
+      "roundtrip_exact": true,
+      "plain_sha256": "dd0506cf701a79c374358e5c96c625b2962df1f60f2e5c552809f6d1ff126fd4",
+      "text_chars": 12289
+    },
+    {
+      "file": "atr11\\scenario(s4_atr).dat",
+      "encrypted": true,
+      "size": 14351,
+      "plain_size": 14319,
+      "roundtrip_exact": true,
+      "plain_sha256": "2ab98ad0df8532887bae76366ee83d26d89d8f148f87a9806373ec490c80e632",
+      "text_chars": 13404
+    },
+    {
+      "file": "atr11\\skill(atr).dat",
+      "encrypted": true,
+      "size": 64663,
+      "plain_size": 64631,
+      "roundtrip_exact": true,
+      "plain_sha256": "4ec0e32202ac0e81f132f32a9dc97f87dfd0f745f0fc8db86050a424867d8226",
+      "text_chars": 61060
+    },
+    {
+      "file": "atr11\\skill2(atr).dat",
+      "encrypted": true,
+      "size": 27446,
+      "plain_size": 27414,
+      "roundtrip_exact": true,
+      "plain_sha256": "284bd001b462ea5a3775d7bd5fc23ce14a1b47b68531754bfb0ce855fdf8c2c0",
+      "text_chars": 26848
+    },
+    {
+      "file": "atr11\\skill3(atr).dat",
+      "encrypted": true,
+      "size": 48747,
+      "plain_size": 48715,
+      "roundtrip_exact": true,
+      "plain_sha256": "a354a33171da2f4b1a57e756e08153524d98b80d22cf1dfcbe50261e2b3b8a3d",
+      "text_chars": 47576
+    },
+    {
+      "file": "atr11\\skill4(atr).dat",
+      "encrypted": true,
+      "size": 16049,
+      "plain_size": 16017,
+      "roundtrip_exact": true,
+      "plain_sha256": "e7f286ab3ba6e9f6887a53c7c6ded36599d967ca2a81f6f1624d6f3f2443e3d3",
+      "text_chars": 14175
+    },
+    {
+      "file": "atr11\\spot(atr).dat",
+      "encrypted": true,
+      "size": 25651,
+      "plain_size": 25619,
+      "roundtrip_exact": true,
+      "plain_sha256": "98b57bca63333cdb46fc63abba3b1a1f25d2940021f5d799edf8f114e95e4ac0",
+      "text_chars": 25208
+    },
+    {
+      "file": "atr11\\story(atr).dat",
+      "encrypted": true,
+      "size": 20165,
+      "plain_size": 20133,
+      "roundtrip_exact": true,
+      "plain_sha256": "aefb5e12d842b95c93939bd4df77e1b7966499bd8eaf9201da75a3fefb00e28c",
+      "text_chars": 16291
+    },
+    {
+      "file": "atr11\\unit(atr).dat",
+      "encrypted": true,
+      "size": 72208,
+      "plain_size": 72176,
+      "roundtrip_exact": true,
+      "plain_sha256": "0088b152ba3089a5ddbeb49ea00cabb83b47d15e4a84990e5ef0c74e4fd390ea",
+      "text_chars": 70325
+    },
+    {
+      "file": "atr11\\voice(atr).dat",
+      "encrypted": true,
+      "size": 1678,
+      "plain_size": 1646,
+      "roundtrip_exact": true,
+      "plain_sha256": "5a4d3899202b549afda97cc5e8ac419536b8fc1640d836d4f34e756e19b6fe8a",
+      "text_chars": 1187
+    },
+    {
+      "file": "endless_v3.51\\class(gj).dat",
+      "encrypted": true,
+      "size": 654,
+      "plain_size": 622,
+      "roundtrip_exact": true,
+      "plain_sha256": "55b7d910dc9cc9d69674938f121fe8fe34ac825cf6f1511de48adc6f9e188b98",
+      "text_chars": 545
+    },
+    {
+      "file": "endless_v3.51\\dungeon(gj).dat",
+      "encrypted": true,
+      "size": 5297,
+      "plain_size": 5265,
+      "roundtrip_exact": true,
+      "plain_sha256": "dcc900a6eb9618f6e1187bfad7f2ea4c39338be525ba7ee7091753abbc597def",
+      "text_chars": 5182
+    },
+    {
+      "file": "endless_v3.51\\event\\stage01-27(gj).dat",
+      "encrypted": true,
+      "size": 36987,
+      "plain_size": 36955,
+      "roundtrip_exact": true,
+      "plain_sha256": "57abc8ef8c64b88c13ba4203c09fdbd307bb7ea58915743e09ebd1a06ef89a10",
+      "text_chars": 35615
+    },
+    {
+      "file": "endless_v3.51\\event\\stage100-(gj).dat",
+      "encrypted": true,
+      "size": 9353,
+      "plain_size": 9321,
+      "roundtrip_exact": true,
+      "plain_sha256": "6e8d9fe9461f372a920a5e407ae1f0f5445d517e0802086c9d4fc3bd3432ba8f",
+      "text_chars": 9118
+    },
+    {
+      "file": "endless_v3.51\\event\\stage28-32(gj).dat",
+      "encrypted": true,
+      "size": 10839,
+      "plain_size": 10807,
+      "roundtrip_exact": true,
+      "plain_sha256": "66e45fe9f16beea86eeb4fa6d95f199f0a12fa46a5b9bfd9bbc9ba0e340ff44b",
+      "text_chars": 10472
+    },
+    {
+      "file": "endless_v3.51\\event\\stage33-37(gj).dat",
+      "encrypted": true,
+      "size": 7826,
+      "plain_size": 7794,
+      "roundtrip_exact": true,
+      "plain_sha256": "a400d8f99e60dda371f782cc81bedbf3fb24e09e3568411d3f0f0767f1d28874",
+      "text_chars": 7572
+    },
+    {
+      "file": "endless_v3.51\\event\\start(gj).dat",
+      "encrypted": true,
+      "size": 21613,
+      "plain_size": 21581,
+      "roundtrip_exact": true,
+      "plain_sha256": "ba9780245395a506d553327c34d480b3aa334dbd926496c00fc3df30023a1f7e",
+      "text_chars": 20306
+    },
+    {
+      "file": "endless_v3.51\\event\\triggar(gj).dat",
+      "encrypted": true,
+      "size": 11782,
+      "plain_size": 11750,
+      "roundtrip_exact": true,
+      "plain_sha256": "3dd7340dac20a5e2baaf7404102ce3b1ccd69c38b092078ad28921b5125f7062",
+      "text_chars": 11154
+    },
+    {
+      "file": "endless_v3.51\\power(gj).dat",
+      "encrypted": true,
+      "size": 17365,
+      "plain_size": 17333,
+      "roundtrip_exact": true,
+      "plain_sha256": "c37e144714f84f503ead990f83921abd8e20cca028dff12f27f26dc39158bb77",
+      "text_chars": 16996
+    },
+    {
+      "file": "endless_v3.51\\power2(gj).dat",
+      "encrypted": true,
+      "size": 3503,
+      "plain_size": 3471,
+      "roundtrip_exact": true,
+      "plain_sha256": "522bac2e2b02b11d932f3dbdda95e39832272efe170dca085d2af6c064c9753a",
+      "text_chars": 3471
+    },
+    {
+      "file": "endless_v3.51\\scenario(gj).dat",
+      "encrypted": true,
+      "size": 7298,
+      "plain_size": 7266,
+      "roundtrip_exact": true,
+      "plain_sha256": "adc35384b283ba44aedf21dedebcd8dc0a978e2807b0bed656bd10ba33066d73",
+      "text_chars": 6786
+    },
+    {
+      "file": "endless_v3.51\\spot(gj).dat",
+      "encrypted": true,
+      "size": 5195,
+      "plain_size": 5163,
+      "roundtrip_exact": true,
+      "plain_sha256": "bb41fd532eda1ad8489ea9ccf4d5808ec6b316f0b0fa44305066103036f50c34",
+      "text_chars": 4566
+    },
+    {
+      "file": "endless_v3.51\\status\\army.dat",
+      "encrypted": true,
+      "size": 8332,
+      "plain_size": 8300,
+      "roundtrip_exact": true,
+      "plain_sha256": "4f9c8797cfdd0bbbdc5706ebbf97d7e2333f9902d36587ae26cef7bf5274fa96",
+      "text_chars": 8014
+    },
+    {
+      "file": "endless_v3.51\\status\\army3.dat",
+      "encrypted": true,
+      "size": 12178,
+      "plain_size": 12146,
+      "roundtrip_exact": true,
+      "plain_sha256": "9d08132f08bec204fb2f3e90413841943cdfa4fe312828257fafcfbd71f21eb0",
+      "text_chars": 12139
+    },
+    {
+      "file": "endless_v3.51\\status\\armyb.dat",
+      "encrypted": true,
+      "size": 1747,
+      "plain_size": 1715,
+      "roundtrip_exact": true,
+      "plain_sha256": "d801697f895eb46132db55aa54bcf7630a846fe82eeffbbdd3d15be82380ef67",
+      "text_chars": 1707
+    },
+    {
+      "file": "endless_v3.51\\status\\buildwall.dat",
+      "encrypted": true,
+      "size": 1319,
+      "plain_size": 1287,
+      "roundtrip_exact": true,
+      "plain_sha256": "192cebf75488bfe5b62c73ff22574bccc6c6b787d6ef232502ab9f4be239c77f",
+      "text_chars": 1181
+    },
+    {
+      "file": "endless_v3.51\\status\\get_skill.dat",
+      "encrypted": true,
+      "size": 20323,
+      "plain_size": 20291,
+      "roundtrip_exact": true,
+      "plain_sha256": "648fcac14b188bc6d48402f7f61de82003114f632c1efb70ee37e57b82737566",
+      "text_chars": 18608
+    },
+    {
+      "file": "endless_v3.51\\status\\get_skill_beast.dat",
+      "encrypted": true,
+      "size": 1683,
+      "plain_size": 1651,
+      "roundtrip_exact": true,
+      "plain_sha256": "7457b313299c56abc07260e390e1d1bcd83364765988e0bc6ffe3daff5a42b83",
+      "text_chars": 1510
+    },
+    {
+      "file": "endless_v3.51\\status\\new_skill.dat",
+      "encrypted": true,
+      "size": 15672,
+      "plain_size": 15640,
+      "roundtrip_exact": true,
+      "plain_sha256": "75e06d9513134c4d7b11af631baf1dbd02ab128d8a977b754020881b5349e89f",
+      "text_chars": 14967
+    },
+    {
+      "file": "endless_v3.51\\status\\ssj.dat",
+      "encrypted": true,
+      "size": 24815,
+      "plain_size": 24783,
+      "roundtrip_exact": true,
+      "plain_sha256": "8327dc943ea35864cb98264f0db7bce29098444b64e2dcd12423a090cf63d908",
+      "text_chars": 22114
+    },
+    {
+      "file": "endless_v3.51\\status\\up_att.dat",
+      "encrypted": true,
+      "size": 5800,
+      "plain_size": 5768,
+      "roundtrip_exact": true,
+      "plain_sha256": "2e8b9d61f1c6ea52e7f7ea47025065550d77429959f57072a46ce77b34dd44e6",
+      "text_chars": 5541
+    },
+    {
+      "file": "endless_v3.51\\status\\up_def.dat",
+      "encrypted": true,
+      "size": 5923,
+      "plain_size": 5891,
+      "roundtrip_exact": true,
+      "plain_sha256": "d918c7712de9529905ac7ca3e4752e053232e200289a500cd6887d2642218c39",
+      "text_chars": 5664
+    },
+    {
+      "file": "endless_v3.51\\status\\up_dext.dat",
+      "encrypted": true,
+      "size": 5551,
+      "plain_size": 5519,
+      "roundtrip_exact": true,
+      "plain_sha256": "bd3d259ccb5451819b967c8e626a9899d79038e2d13e13fbd6e36940fd73cdbd",
+      "text_chars": 5292
+    },
+    {
+      "file": "endless_v3.51\\status\\up_hp.dat",
+      "encrypted": true,
+      "size": 5224,
+      "plain_size": 5192,
+      "roundtrip_exact": true,
+      "plain_sha256": "e0a6e015f46f40c2b3f700786c0c487e454e93bcaa571245f50c4df0c42bbbd3",
+      "text_chars": 4989
+    },
+    {
+      "file": "endless_v3.51\\status\\up_magic.dat",
+      "encrypted": true,
+      "size": 5626,
+      "plain_size": 5594,
+      "roundtrip_exact": true,
+      "plain_sha256": "7d7171892c2a796ae4d87b7343e475af700c1a509c7d0221ff27f64041d685f8",
+      "text_chars": 5391
+    },
+    {
+      "file": "endless_v3.51\\status\\up_mdef.dat",
+      "encrypted": true,
+      "size": 5856,
+      "plain_size": 5824,
+      "roundtrip_exact": true,
+      "plain_sha256": "3cf0154203e48bac4c2a3a41b6c9f0c17c56a90010501fc72250db82c001878b",
+      "text_chars": 5573
+    },
+    {
+      "file": "endless_v3.51\\status\\up_mov.dat",
+      "encrypted": true,
+      "size": 5517,
+      "plain_size": 5485,
+      "roundtrip_exact": true,
+      "plain_sha256": "eb9b6d8b20b2b79ebd7f9f5ec6f3baa12c958d700597c3a905a18445e93e8573",
+      "text_chars": 5272
+    },
+    {
+      "file": "endless_v3.51\\status\\up_mp.dat",
+      "encrypted": true,
+      "size": 5251,
+      "plain_size": 5219,
+      "roundtrip_exact": true,
+      "plain_sha256": "1a555781b84e3243484cd9a3b03148447e6ce154f275946cfab635ae987646b5",
+      "text_chars": 5016
+    },
+    {
+      "file": "endless_v3.51\\status\\up_spd.dat",
+      "encrypted": true,
+      "size": 5680,
+      "plain_size": 5648,
+      "roundtrip_exact": true,
+      "plain_sha256": "c9f0cdc0cc91609179ab00971b3a72f42d44926d834776f38103bc9567f5c47d",
+      "text_chars": 5411
+    },
+    {
+      "file": "endless_v3.51\\status\\up_summon.dat",
+      "encrypted": true,
+      "size": 5659,
+      "plain_size": 5627,
+      "roundtrip_exact": true,
+      "plain_sha256": "176e7f53667292ae41e55163871533b46c9d7d156c18eb7e6430a3be064436d0",
+      "text_chars": 5435
+    },
+    {
+      "file": "endless_v3.51\\status\\up_wis.dat",
+      "encrypted": true,
+      "size": 3268,
+      "plain_size": 3236,
+      "roundtrip_exact": true,
+      "plain_sha256": "bd7e867dfd0dfde41679c85992df4a689dbfff376bb34f2a3dc98b4889e7a0b2",
+      "text_chars": 2916
+    },
+    {
+      "file": "endless_v3.51\\test.dat",
+      "encrypted": true,
+      "size": 5036,
+      "plain_size": 5004,
+      "roundtrip_exact": true,
+      "plain_sha256": "5707723766497fecc016837a36f57d8ba4c623be89a94ab2d99dc5a14ea6bc43",
+      "text_chars": 4749
+    },
+    {
+      "file": "endless_v3.51\\unit_enemy(gj).dat",
+      "encrypted": true,
+      "size": 18728,
+      "plain_size": 18696,
+      "roundtrip_exact": true,
+      "plain_sha256": "7cce544c37db342f48f49d3d6dc9410518ec50805b73fb20feb6174e10b39e71",
+      "text_chars": 16296
+    },
+    {
+      "file": "endless_v3.51\\unit_pc(gj).dat",
+      "encrypted": true,
+      "size": 35388,
+      "plain_size": 35356,
+      "roundtrip_exact": true,
+      "plain_sha256": "7edfe843348e405330efb4d51782cb1ae0ce2c15d538d376f39569093f630426",
+      "text_chars": 33668
+    },
+    {
+      "file": "endless_v3.51\\unit_uni.dat",
+      "encrypted": true,
+      "size": 2513,
+      "plain_size": 2481,
+      "roundtrip_exact": true,
+      "plain_sha256": "9ede859dc824f48d918ca94a38a2f8e1f74ac9c82ec863eab52773a639e2264f",
+      "text_chars": 2019
+    },
+    {
+      "file": "endless_v3.51\\zgj_x(gj).dat",
+      "encrypted": true,
+      "size": 14514,
+      "plain_size": 14482,
+      "roundtrip_exact": true,
+      "plain_sha256": "3d8d876fab0bb23ab688bb2d50356c18817fa05252027129771ff12c9f6adefa",
+      "text_chars": 14373
+    },
+    {
+      "file": "endless_v3.51\\zgj_y(gj).dat",
+      "encrypted": true,
+      "size": 4021,
+      "plain_size": 3989,
+      "roundtrip_exact": true,
+      "plain_sha256": "e5f619c50caa7987456d8b4196854c88f6688c7e7500d469b4b73f2281c85182",
+      "text_chars": 3989
+    },
+    {
+      "file": "main\\class1.dat",
+      "encrypted": true,
+      "size": 17041,
+      "plain_size": 17009,
+      "roundtrip_exact": true,
+      "plain_sha256": "f693901dee9ec8fa7fe43a477ae00b5cc4c81c50410b7f2cfe297a4f07322346",
+      "text_chars": 16590
+    },
+    {
+      "file": "main\\class2.dat",
+      "encrypted": true,
+      "size": 6954,
+      "plain_size": 6922,
+      "roundtrip_exact": true,
+      "plain_sha256": "317db6f48089546214610bbc8db259399d037fba47d753fe43bc2a96de8e702a",
+      "text_chars": 6709
+    },
+    {
+      "file": "main\\class3.dat",
+      "encrypted": true,
+      "size": 7081,
+      "plain_size": 7049,
+      "roundtrip_exact": true,
+      "plain_sha256": "eaffbe121e32e3b3bba4db8289a2127c3b6dfd4e6ebbb686fd69da55091dae34",
+      "text_chars": 6864
+    },
+    {
+      "file": "main\\class4.dat",
+      "encrypted": true,
+      "size": 5948,
+      "plain_size": 5916,
+      "roundtrip_exact": true,
+      "plain_sha256": "694a465e50504cea316026ae2e9d4e600def1d72bdb2472e46f27bcf8f6e20dd",
+      "text_chars": 5826
+    },
+    {
+      "file": "main\\class5.dat",
+      "encrypted": true,
+      "size": 6816,
+      "plain_size": 6784,
+      "roundtrip_exact": true,
+      "plain_sha256": "357bcbfceed1cfc3ac3d3baf700d0690bb6b5f05de8df123ac4a78d1495f8cbc",
+      "text_chars": 6616
+    },
+    {
+      "file": "main\\class6.dat",
+      "encrypted": true,
+      "size": 2175,
+      "plain_size": 2143,
+      "roundtrip_exact": true,
+      "plain_sha256": "f63e3e69e630b26909f0822430556add4ff8bb452097e4559f552aff9a5c9086",
+      "text_chars": 2072
+    },
+    {
+      "file": "main\\context.dat",
+      "encrypted": true,
+      "size": 7102,
+      "plain_size": 7070,
+      "roundtrip_exact": true,
+      "plain_sha256": "39864969cc23e7e929414e1c4fe946a44c8c9953f48e4bf82708fcee6282abeb",
+      "text_chars": 6981
+    },
+    {
+      "file": "main\\detail_power.dat",
+      "encrypted": true,
+      "size": 21126,
+      "plain_size": 21094,
+      "roundtrip_exact": true,
+      "plain_sha256": "2c7153c63ba32caf921243af8c20df89c06df988613dd9feef6e0677eaf2f005",
+      "text_chars": 11211
+    },
+    {
+      "file": "main\\detail_spot.dat",
+      "encrypted": true,
+      "size": 4625,
+      "plain_size": 4593,
+      "roundtrip_exact": true,
+      "plain_sha256": "9fac26842bc71a37ddda5c3869a16b0558d7f298c0e8d783f6191e16bb592d08",
+      "text_chars": 2589
+    },
+    {
+      "file": "main\\detail_unit.dat",
+      "encrypted": true,
+      "size": 74523,
+      "plain_size": 74491,
+      "roundtrip_exact": true,
+      "plain_sha256": "d2a9a73e76a58699d179565923a8c6bcf0a35df08b9aace96a411fafa33cab96",
+      "text_chars": 39736
+    },
+    {
+      "file": "main\\dungeon.dat",
+      "encrypted": true,
+      "size": 6206,
+      "plain_size": 6174,
+      "roundtrip_exact": true,
+      "plain_sha256": "89fdca832d01f0d4634964fe474e16377a0720f0fab18dcce9c9d828bf3404b1",
+      "text_chars": 6105
+    },
+    {
+      "file": "main\\dungeon2.dat",
+      "encrypted": true,
+      "size": 2049,
+      "plain_size": 2017,
+      "roundtrip_exact": true,
+      "plain_sha256": "710072decb694f6e9cd47f36aa450f453e9b91fb8d14853c9886d384f3d09b7c",
+      "text_chars": 2012
+    },
+    {
+      "file": "main\\dungeon3.dat",
+      "encrypted": true,
+      "size": 3213,
+      "plain_size": 3181,
+      "roundtrip_exact": true,
+      "plain_sha256": "c3ec13eeabe096afb968a1a8973d4cc228b242838c6f9d55aa8b95a69196f7df",
+      "text_chars": 3009
+    },
+    {
+      "file": "main\\endingroll.dat",
+      "encrypted": true,
+      "size": 2634,
+      "plain_size": 2602,
+      "roundtrip_exact": true,
+      "plain_sha256": "920d8eca7fc0d81a372b2b272d0ef36b56fccfd0cdd3db8201ba3a338710ff3e",
+      "text_chars": 1962
+    },
+    {
+      "file": "main\\evt_control.dat",
+      "encrypted": true,
+      "size": 3491,
+      "plain_size": 3459,
+      "roundtrip_exact": true,
+      "plain_sha256": "7595ccc87fc1d29ead1d7c54261e753c57ae8f5e0fb7259cdb821b74b90e3a47",
+      "text_chars": 3382
+    },
+    {
+      "file": "main\\evt_ending.dat",
+      "encrypted": true,
+      "size": 2661,
+      "plain_size": 2629,
+      "roundtrip_exact": true,
+      "plain_sha256": "d383b6e1def349fbf98d8139fe13638b71a549adf2eb21ffed13777a6a41181e",
+      "text_chars": 1667
+    },
+    {
+      "file": "main\\evt_haruto.dat",
+      "encrypted": true,
+      "size": 10103,
+      "plain_size": 10071,
+      "roundtrip_exact": true,
+      "plain_sha256": "cc13dbf4624798a5192203d40741b561f36db2a26886eed3a9ab5afcc4abbb57",
+      "text_chars": 8204
+    },
+    {
+      "file": "main\\evt_northport.dat",
+      "encrypted": true,
+      "size": 5603,
+      "plain_size": 5571,
+      "roundtrip_exact": true,
+      "plain_sha256": "0e518e4358ff7963b43688d04c817cf9f062eedf11bbe2da835768eb7f3562de",
+      "text_chars": 4968
+    },
+    {
+      "file": "main\\evt_opening.dat",
+      "encrypted": true,
+      "size": 45055,
+      "plain_size": 45023,
+      "roundtrip_exact": true,
+      "plain_sha256": "cecce028ee344979911b3ea5539390db9d28fb631b7808ed253e823b48b78c03",
+      "text_chars": 31054
+    },
+    {
+      "file": "main\\evt_s7.dat",
+      "encrypted": true,
+      "size": 20626,
+      "plain_size": 20594,
+      "roundtrip_exact": true,
+      "plain_sha256": "7458e77c7c5c9146b1d5d7e8dd220d1148a768150b7e906c78d69224981ee33f",
+      "text_chars": 15571
+    },
+    {
+      "file": "main\\evt_story.dat",
+      "encrypted": true,
+      "size": 19596,
+      "plain_size": 19564,
+      "roundtrip_exact": true,
+      "plain_sha256": "f3620abf2f0cc6c73b0dbbac4d665ea13626dc058a1190ebacda2ea24418424a",
+      "text_chars": 14097
+    },
+    {
+      "file": "main\\field.dat",
+      "encrypted": true,
+      "size": 5715,
+      "plain_size": 5683,
+      "roundtrip_exact": true,
+      "plain_sha256": "81e345b63f7a5eb5422dbdbcf7c9a5c4944d328452d009fc14ae82737ac0ab52",
+      "text_chars": 5643
+    },
+    {
+      "file": "main\\power(1).dat",
+      "encrypted": true,
+      "size": 6992,
+      "plain_size": 6960,
+      "roundtrip_exact": true,
+      "plain_sha256": "a44eab3662d687bd25fff1c5e33f103f2e28075dfd166ef24d02dd652fbee9d7",
+      "text_chars": 5226
+    },
+    {
+      "file": "main\\power(2).dat",
+      "encrypted": true,
+      "size": 5810,
+      "plain_size": 5778,
+      "roundtrip_exact": true,
+      "plain_sha256": "38f5b7a494939fe24d43248c11de9e7b84c3543a8b3350af72ff1c475fd56b63",
+      "text_chars": 4447
+    },
+    {
+      "file": "main\\power(3).dat",
+      "encrypted": true,
+      "size": 3386,
+      "plain_size": 3354,
+      "roundtrip_exact": true,
+      "plain_sha256": "9b0c341f851fc561be4aa7e9b12194dc85bc7bf2407c32d35d91c3589efd2e0d",
+      "text_chars": 3058
+    },
+    {
+      "file": "main\\power(4).dat",
+      "encrypted": true,
+      "size": 2793,
+      "plain_size": 2761,
+      "roundtrip_exact": true,
+      "plain_sha256": "795449dfe8f4bc585947015e3e09d03bc9dc46b13cfe4748cd4b234361b22264",
+      "text_chars": 2678
+    },
+    {
+      "file": "main\\power(5).dat",
+      "encrypted": true,
+      "size": 4497,
+      "plain_size": 4465,
+      "roundtrip_exact": true,
+      "plain_sha256": "9c0d8158000e42543dec764086f1f9b6ca399ff6e453ef0a45be739c9bac67b2",
+      "text_chars": 4284
+    },
+    {
+      "file": "main\\power(6).dat",
+      "encrypted": true,
+      "size": 3974,
+      "plain_size": 3942,
+      "roundtrip_exact": true,
+      "plain_sha256": "6d51298dba45b561a4e475bc1cf17079fce0e81087e1733d4afbfcea55865f40",
+      "text_chars": 3773
+    },
+    {
+      "file": "main\\power(7).dat",
+      "encrypted": true,
+      "size": 9045,
+      "plain_size": 9013,
+      "roundtrip_exact": true,
+      "plain_sha256": "b4089755b2fcce8d6f89ea04ec05ebcbabaf1592b54590a49e57ad9ea355bd53",
+      "text_chars": 7479
+    },
+    {
+      "file": "main\\race.dat",
+      "encrypted": true,
+      "size": 3783,
+      "plain_size": 3751,
+      "roundtrip_exact": true,
+      "plain_sha256": "7cba394736e413865f28066cbd515141cbbeadfcc45686d238985134bcff19a3",
+      "text_chars": 3481
+    },
+    {
+      "file": "main\\scenario(1).dat",
+      "encrypted": true,
+      "size": 8061,
+      "plain_size": 8029,
+      "roundtrip_exact": true,
+      "plain_sha256": "b0d712bdd035435c1e3a009bc6b4f3befe944cf72f4c401e10f190ed14f8d3fe",
+      "text_chars": 7683
+    },
+    {
+      "file": "main\\scenario(2).dat",
+      "encrypted": true,
+      "size": 2737,
+      "plain_size": 2705,
+      "roundtrip_exact": true,
+      "plain_sha256": "f76205c2eb745015d52c9bf946d4dfcea3669756bcb62f3c637beefb377717c1",
+      "text_chars": 2427
+    },
+    {
+      "file": "main\\scenario(3).dat",
+      "encrypted": true,
+      "size": 3005,
+      "plain_size": 2973,
+      "roundtrip_exact": true,
+      "plain_sha256": "39a8771c49c6318f82d8895323edf3cb1a2776767298495d07b90f564096e532",
+      "text_chars": 2612
+    },
+    {
+      "file": "main\\scenario(4).dat",
+      "encrypted": true,
+      "size": 3216,
+      "plain_size": 3184,
+      "roundtrip_exact": true,
+      "plain_sha256": "7c856b0c284723b492bc88c17bde056143b4982d1e298753075fb9d7c9f19a71",
+      "text_chars": 2753
+    },
+    {
+      "file": "main\\scenario(5).dat",
+      "encrypted": true,
+      "size": 4123,
+      "plain_size": 4091,
+      "roundtrip_exact": true,
+      "plain_sha256": "d39bcc54ebe79ec7fd1b2b9b27fe23c7b39fc8f7a4df8e6d84fee7e81b8fd633",
+      "text_chars": 3221
+    },
+    {
+      "file": "main\\scenario(6).dat",
+      "encrypted": true,
+      "size": 4130,
+      "plain_size": 4098,
+      "roundtrip_exact": true,
+      "plain_sha256": "2126fdc835ccd3433002d200c6416094a7fd1e75e175c883c17e19339fdeeba0",
+      "text_chars": 3086
+    },
+    {
+      "file": "main\\scenario(7).dat",
+      "encrypted": true,
+      "size": 1433,
+      "plain_size": 1401,
+      "roundtrip_exact": true,
+      "plain_sha256": "31752943c1103310790b2c7531e070e3ff2bedf796b59a49b6cf75637647d4d9",
+      "text_chars": 1335
+    },
+    {
+      "file": "main\\skill1.dat",
+      "encrypted": true,
+      "size": 17166,
+      "plain_size": 17134,
+      "roundtrip_exact": true,
+      "plain_sha256": "18bed90519211097517e8b6498828ec9ca239c2f122d150380b112edab08b627",
+      "text_chars": 16782
+    },
+    {
+      "file": "main\\skill11.dat",
+      "encrypted": true,
+      "size": 10850,
+      "plain_size": 10818,
+      "roundtrip_exact": true,
+      "plain_sha256": "c0ac2288315c04954fb088da18d5a1f7c3958fd47ced622374811be0cfc6e850",
+      "text_chars": 10378
+    },
+    {
+      "file": "main\\skill2.dat",
+      "encrypted": true,
+      "size": 15601,
+      "plain_size": 15569,
+      "roundtrip_exact": true,
+      "plain_sha256": "3da7618ad5f3888340b04fb31d38cd97f4139a5b54b3c165fa5db921fce93b27",
+      "text_chars": 14981
+    },
+    {
+      "file": "main\\skill3.dat",
+      "encrypted": true,
+      "size": 11168,
+      "plain_size": 11136,
+      "roundtrip_exact": true,
+      "plain_sha256": "20a5c5900d7ac03c0646f1963448bca4c941bf5cfa578c204e2f5b5752a8280a",
+      "text_chars": 10872
+    },
+    {
+      "file": "main\\skill4.dat",
+      "encrypted": true,
+      "size": 7357,
+      "plain_size": 7325,
+      "roundtrip_exact": true,
+      "plain_sha256": "ae2ea391846e88d4d6263f47e99737241245d8b3d69f75055015dd813b55dd85",
+      "text_chars": 7108
+    },
+    {
+      "file": "main\\skill44.dat",
+      "encrypted": true,
+      "size": 7972,
+      "plain_size": 7940,
+      "roundtrip_exact": true,
+      "plain_sha256": "0da36bc7b177ec941f47e8ff5b3d8b2591c29539a5bd9090254196cb592b533f",
+      "text_chars": 7722
+    },
+    {
+      "file": "main\\skill5.dat",
+      "encrypted": true,
+      "size": 7120,
+      "plain_size": 7088,
+      "roundtrip_exact": true,
+      "plain_sha256": "bb5767086bff3f4cfe8b1498eeb9f883d671e2b0270d7c54f81beb0e5a987e2f",
+      "text_chars": 6859
+    },
+    {
+      "file": "main\\skill6.dat",
+      "encrypted": true,
+      "size": 14169,
+      "plain_size": 14137,
+      "roundtrip_exact": true,
+      "plain_sha256": "72bcfa0522968f51589eb94109fb871bbfbd8ff9b33e99f1628611241d8bd76a",
+      "text_chars": 13578
+    },
+    {
+      "file": "main\\skill7.dat",
+      "encrypted": true,
+      "size": 13440,
+      "plain_size": 13408,
+      "roundtrip_exact": true,
+      "plain_sha256": "762adefa881781b8304b6cffd20af037105c83c33da17daca636a5369805fab4",
+      "text_chars": 12876
+    },
+    {
+      "file": "main\\skill8.dat",
+      "encrypted": true,
+      "size": 7222,
+      "plain_size": 7190,
+      "roundtrip_exact": true,
+      "plain_sha256": "bc31e6e1fcd23ffdfa70d1933bf18e7ba5c9a5d463ebd11db7bfc305cc87352f",
+      "text_chars": 6916
+    },
+    {
+      "file": "main\\skill9.dat",
+      "encrypted": true,
+      "size": 13814,
+      "plain_size": 13782,
+      "roundtrip_exact": true,
+      "plain_sha256": "f9e5392c4d3007d64ed8427fe033abea222b67d3cb6bab8c9288fc698ba4160f",
+      "text_chars": 13264
+    },
+    {
+      "file": "main\\skill99.dat",
+      "encrypted": true,
+      "size": 7200,
+      "plain_size": 7168,
+      "roundtrip_exact": true,
+      "plain_sha256": "eb7a5dade4caa64acf7afd6686edcbe69d3681b1179cdae36f2324cc7521c0f8",
+      "text_chars": 6951
+    },
+    {
+      "file": "main\\skillset.dat",
+      "encrypted": true,
+      "size": 5004,
+      "plain_size": 4972,
+      "roundtrip_exact": true,
+      "plain_sha256": "f85fcfe9c5100e0cba2342e7e6b952431b8533cfbd19a154879d0d11a92b1a5f",
+      "text_chars": 4808
+    },
+    {
+      "file": "main\\sound.dat",
+      "encrypted": true,
+      "size": 680,
+      "plain_size": 648,
+      "roundtrip_exact": true,
+      "plain_sha256": "74a9fc6eb632fe9c92b4885a1974c0954f08a3cfa2691a6235b5ea5dabf50c43",
+      "text_chars": 648
+    },
+    {
+      "file": "main\\spot.dat",
+      "encrypted": true,
+      "size": 21418,
+      "plain_size": 21386,
+      "roundtrip_exact": true,
+      "plain_sha256": "b3b1fb979caae987d3b7a628006d880816394908e0116966ffbf5fd76200c8ad",
+      "text_chars": 20978
+    },
+    {
+      "file": "main\\story.dat",
+      "encrypted": true,
+      "size": 25029,
+      "plain_size": 24997,
+      "roundtrip_exact": true,
+      "plain_sha256": "5f4bac6d01160b4ceaa8e773f8ac369059b45f0f6149d032a0c07203656b6c1c",
+      "text_chars": 18304
+    },
+    {
+      "file": "main\\toko_voice.dat",
+      "encrypted": true,
+      "size": 7952,
+      "plain_size": 7920,
+      "roundtrip_exact": true,
+      "plain_sha256": "1f2c1e603146ea58f15ea25911f671d30e7c24729db83f269452c1880cf3ad3f",
+      "text_chars": 5470
+    },
+    {
+      "file": "main\\unit1.dat",
+      "encrypted": true,
+      "size": 23145,
+      "plain_size": 23113,
+      "roundtrip_exact": true,
+      "plain_sha256": "a166463f0b406c22264b72aa5cf42e0e8d1af871cb7ba768f748018f9b5d5eba",
+      "text_chars": 21083
+    },
+    {
+      "file": "main\\unit2.dat",
+      "encrypted": true,
+      "size": 24237,
+      "plain_size": 24205,
+      "roundtrip_exact": true,
+      "plain_sha256": "1923115ac92c9ff156d0266c9fd54416f55deb494306111adc472fa54d7bada1",
+      "text_chars": 22247
+    },
+    {
+      "file": "main\\unit3.dat",
+      "encrypted": true,
+      "size": 39154,
+      "plain_size": 39122,
+      "roundtrip_exact": true,
+      "plain_sha256": "e16084b415819e8efcb7586c196c5309dc1d275d612b0d893d2bb9bc555aaa2e",
+      "text_chars": 35676
+    },
+    {
+      "file": "main\\unit4.dat",
+      "encrypted": true,
+      "size": 32797,
+      "plain_size": 32765,
+      "roundtrip_exact": true,
+      "plain_sha256": "bf34bbcd450ed49e58d0c880ad51ab38c516c7cb358e7c91a3ab3591dbdb0558",
+      "text_chars": 30142
+    },
+    {
+      "file": "main\\unit5.dat",
+      "encrypted": true,
+      "size": 3563,
+      "plain_size": 3531,
+      "roundtrip_exact": true,
+      "plain_sha256": "3ce2fe6f83bcfaf44b580de43e14825f5aefc05d1a73f613af8ef3c6cd2e0f3c",
+      "text_chars": 3298
+    },
+    {
+      "file": "main\\voice1.dat",
+      "encrypted": true,
+      "size": 17180,
+      "plain_size": 17148,
+      "roundtrip_exact": true,
+      "plain_sha256": "c37cd7169b036fc74ee3ea2d0335eeab2f652af4916a704ea615bf4c66ecb92d",
+      "text_chars": 12167
+    },
+    {
+      "file": "main\\voice2.dat",
+      "encrypted": true,
+      "size": 16917,
+      "plain_size": 16885,
+      "roundtrip_exact": true,
+      "plain_sha256": "58c7f33b8e95e0f25ce9a9029fe8a6b3b0387f2fb2ed27c49fd888c7f8e582d6",
+      "text_chars": 10708
+    },
+    {
+      "file": "main\\voice3.dat",
+      "encrypted": true,
+      "size": 7756,
+      "plain_size": 7724,
+      "roundtrip_exact": true,
+      "plain_sha256": "4d72b903df7f4319f669ab2071bd2ae8d4620f4e62fca5c86b80786961d6c60f",
+      "text_chars": 4854
+    },
+    {
+      "file": "main\\voice4.dat",
+      "encrypted": true,
+      "size": 7122,
+      "plain_size": 7090,
+      "roundtrip_exact": true,
+      "plain_sha256": "40622785173876a8205c8d81d8790a627d8057614d1dfff44fe44dc7b8251f66",
+      "text_chars": 4882
+    },
+    {
+      "file": "tsume\\battle.dat",
+      "encrypted": true,
+      "size": 21929,
+      "plain_size": 21897,
+      "roundtrip_exact": true,
+      "plain_sha256": "5df2d544e2686b424105c094a9e4ef17de2cb7bdf56b8b98edb577358fa7af83",
+      "text_chars": 19044
+    },
+    {
+      "file": "tsume\\tsume.dat",
+      "encrypted": true,
+      "size": 61180,
+      "plain_size": 61148,
+      "roundtrip_exact": true,
+      "plain_sha256": "7b7d052d852e7d390cea65045a069c818dd5658875522a5ccfaf75b46d548ebc",
+      "text_chars": 57296
+    },
+    {
+      "file": "tsume\\tsumeunit.dat",
+      "encrypted": true,
+      "size": 51219,
+      "plain_size": 51187,
+      "roundtrip_exact": true,
+      "plain_sha256": "de1149e1ee538236674b7e793303fd89b7968620c6d98376e8312b94677808bf",
+      "text_chars": 50765
+    },
+    {
+      "file": "user_event\\battle_pf8_pf21.dat",
+      "encrypted": true,
+      "size": 4029,
+      "plain_size": 3997,
+      "roundtrip_exact": true,
+      "plain_sha256": "295bfcb863ccc073f71ae3eae3af4081ff081566bdc3540272625f9fbef698eb",
+      "text_chars": 3097
+    },
+    {
+      "file": "user_event\\class(7x).dat",
+      "encrypted": true,
+      "size": 342,
+      "plain_size": 310,
+      "roundtrip_exact": true,
+      "plain_sha256": "216ca279ccd7b6f63261f498cd5a5a022d8e433e6789e3052cb43699dbf85bce",
+      "text_chars": 308
+    },
+    {
+      "file": "user_event\\class(holy_d).dat",
+      "encrypted": true,
+      "size": 420,
+      "plain_size": 388,
+      "roundtrip_exact": true,
+      "plain_sha256": "2561da74ccba5f89b5cf33ddb9429c4c3e34da2863ed082b037c503c3e67170e",
+      "text_chars": 354
+    },
+    {
+      "file": "user_event\\darknisuru.dat",
+      "encrypted": true,
+      "size": 1972,
+      "plain_size": 1940,
+      "roundtrip_exact": true,
+      "plain_sha256": "4108517405b438c35672e8580bfe115947bf3d71deac4a5da08ed2c4f2c90cb6",
+      "text_chars": 1843
+    },
+    {
+      "file": "user_event\\detail_spot2.dat",
+      "encrypted": true,
+      "size": 2193,
+      "plain_size": 2161,
+      "roundtrip_exact": true,
+      "plain_sha256": "b9f2ad7c930d06cfc1e952bcf7404d4473cf529e733d015030d593fc6bab4e16",
+      "text_chars": 1216
+    },
+    {
+      "file": "user_event\\detail_unit(7x).dat",
+      "encrypted": true,
+      "size": 4112,
+      "plain_size": 4080,
+      "roundtrip_exact": true,
+      "plain_sha256": "ad13d4ba0082297c25a183568d45cd8d5edaa642077795e260c5056c338e1c5c",
+      "text_chars": 2199
+    },
+    {
+      "file": "user_event\\ed_p3.dat",
+      "encrypted": true,
+      "size": 5204,
+      "plain_size": 5172,
+      "roundtrip_exact": true,
+      "plain_sha256": "3eca2740bbccfd014772a59544fd14b54477566616b0cd5527b82f5c96d68708",
+      "text_chars": 3480
+    },
+    {
+      "file": "user_event\\ed_snea.dat",
+      "encrypted": true,
+      "size": 3561,
+      "plain_size": 3529,
+      "roundtrip_exact": true,
+      "plain_sha256": "844f14e05aba253b7597fbee0b32760605bb8648b7600003f8974b628661a230",
+      "text_chars": 2367
+    },
+    {
+      "file": "user_event\\ed_zoma.dat",
+      "encrypted": true,
+      "size": 2094,
+      "plain_size": 2062,
+      "roundtrip_exact": true,
+      "plain_sha256": "e29ae6aee8378b8798209ef6924807b96e9e792998a516871f2bf995f1c7c0a8",
+      "text_chars": 1273
+    },
+    {
+      "file": "user_event\\ed_âWâIâÇ.dat",
+      "encrypted": true,
+      "size": 7486,
+      "plain_size": 7454,
+      "roundtrip_exact": true,
+      "plain_sha256": "d383750671e537e530930a2a06aafa8bf2c437861291d7954e1323425cd35312",
+      "text_chars": 4989
+    },
+    {
+      "file": "user_event\\ev_tesu_wish.dat",
+      "encrypted": true,
+      "size": 3073,
+      "plain_size": 3041,
+      "roundtrip_exact": true,
+      "plain_sha256": "aa1a8932c477a48f93b1e71d8b3a4e3f7cbdb3a19bc92f41c5a9aed8fcb9184a",
+      "text_chars": 2199
+    },
+    {
+      "file": "user_event\\event(7x).dat",
+      "encrypted": true,
+      "size": 15476,
+      "plain_size": 15444,
+      "roundtrip_exact": true,
+      "plain_sha256": "0bcde913af1a8c2fdf57e7ecce917e80f1d4d977c262c6246b341fdd61e2c74e",
+      "text_chars": 10735
+    },
+    {
+      "file": "user_event\\event_akuma.dat",
+      "encrypted": true,
+      "size": 19086,
+      "plain_size": 19054,
+      "roundtrip_exact": true,
+      "plain_sha256": "a4eb96f6878a3a252cfca61cc0039e36beedd57bfbfa373c131f1873701888d3",
+      "text_chars": 12701
+    },
+    {
+      "file": "user_event\\event_ed_buredo.dat",
+      "encrypted": true,
+      "size": 10555,
+      "plain_size": 10523,
+      "roundtrip_exact": true,
+      "plain_sha256": "6372da0b8981d96a9707d9964cc3a329c0f009fcf043f25b595b62c271ad1930",
+      "text_chars": 7532
+    },
+    {
+      "file": "user_event\\event_ed_pf13.dat",
+      "encrypted": true,
+      "size": 7893,
+      "plain_size": 7861,
+      "roundtrip_exact": true,
+      "plain_sha256": "b0887bfa98253a60528027a3493b9ac9f6accf5fc5521a9c16909f4c56f7379e",
+      "text_chars": 5281
+    },
+    {
+      "file": "user_event\\event_end_p1.dat",
+      "encrypted": true,
+      "size": 7724,
+      "plain_size": 7692,
+      "roundtrip_exact": true,
+      "plain_sha256": "f3601f62609856565c5a682cf200236923841f057c876b9c0771058db25d5077",
+      "text_chars": 5239
+    },
+    {
+      "file": "user_event\\event_felil.dat",
+      "encrypted": true,
+      "size": 15761,
+      "plain_size": 15729,
+      "roundtrip_exact": true,
+      "plain_sha256": "2fcad14e5195f21c56bb1dd667fffdc076a4302e61a86490e574c27418424c68",
+      "text_chars": 10903
+    },
+    {
+      "file": "user_event\\event_felilunion_hoata.dat",
+      "encrypted": true,
+      "size": 4290,
+      "plain_size": 4258,
+      "roundtrip_exact": true,
+      "plain_sha256": "2f2929db6205278da9bb5e21a90d42531d6d366694737e0106daf90a3518d165",
+      "text_chars": 2718
+    },
+    {
+      "file": "user_event\\event_goto.dat",
+      "encrypted": true,
+      "size": 15895,
+      "plain_size": 15863,
+      "roundtrip_exact": true,
+      "plain_sha256": "00a9fc1d53d4ada148d86245e8b1f026dc2c1cfa37905c820eff67048b31c115",
+      "text_chars": 12285
+    },
+    {
+      "file": "user_event\\event_iona.dat",
+      "encrypted": true,
+      "size": 104182,
+      "plain_size": 104150,
+      "roundtrip_exact": true,
+      "plain_sha256": "f893aea0857fd0c4a864ebf892de46981965a40d3fd8187bae7a7c7b92850762",
+      "text_chars": 72508
+    },
+    {
+      "file": "user_event\\event_merutoa_kyure.dat",
+      "encrypted": true,
+      "size": 5273,
+      "plain_size": 5241,
+      "roundtrip_exact": true,
+      "plain_sha256": "c7d9e957d7196f4f3ab5ef704482b81e231b39f7c5e52926ebf91101106fb716",
+      "text_chars": 4286
+    },
+    {
+      "file": "user_event\\event_mutenberu.dat",
+      "encrypted": true,
+      "size": 11389,
+      "plain_size": 11357,
+      "roundtrip_exact": true,
+      "plain_sha256": "6f3b08fd286174a5dc753dec5040c6da2c8f447a258dd161a9eb1002ed43db0f",
+      "text_chars": 8605
+    },
+    {
+      "file": "user_event\\event_nisuru.dat",
+      "encrypted": true,
+      "size": 70960,
+      "plain_size": 70928,
+      "roundtrip_exact": true,
+      "plain_sha256": "90aabf93f44b1d5a17aff20f4c2151c76711b27c3e1bfc82ca477e3e1987bc3b",
+      "text_chars": 50626
+    },
+    {
+      "file": "user_event\\event_op2.dat",
+      "encrypted": true,
+      "size": 18909,
+      "plain_size": 18877,
+      "roundtrip_exact": true,
+      "plain_sha256": "68bd6b2edb6c21e5a8a7ee9d5676d1a491ea70fb3ab31016b9d61c86d1423790",
+      "text_chars": 12079
+    },
+    {
+      "file": "user_event\\event_op3.dat",
+      "encrypted": true,
+      "size": 24804,
+      "plain_size": 24772,
+      "roundtrip_exact": true,
+      "plain_sha256": "68d223783001173ac570aa6f262e0f87f057fef4c300d5836a358b930ebbfd99",
+      "text_chars": 18578
+    },
+    {
+      "file": "user_event\\event_op4.dat",
+      "encrypted": true,
+      "size": 33738,
+      "plain_size": 33706,
+      "roundtrip_exact": true,
+      "plain_sha256": "05505f767be22511ec629b3f18d192c8a6e16233b0e2ec6d04c9f2bfbedfd57d",
+      "text_chars": 22360
+    },
+    {
+      "file": "user_event\\event_op6_narudia.dat",
+      "encrypted": true,
+      "size": 3422,
+      "plain_size": 3390,
+      "roundtrip_exact": true,
+      "plain_sha256": "3ebb9aa97cbf98330fc8f2b3dc138425b343a3f128ec4ab763c0d2c2b564acf1",
+      "text_chars": 2214
+    },
+    {
+      "file": "user_event\\event_op7(haruto).dat",
+      "encrypted": true,
+      "size": 5373,
+      "plain_size": 5341,
+      "roundtrip_exact": true,
+      "plain_sha256": "bfae0f86852d5b27eff70e77c306e5ef78b39e8639568efa14303599877c7896",
+      "text_chars": 3612
+    },
+    {
+      "file": "user_event\\event_op_ruwenda.dat",
+      "encrypted": true,
+      "size": 2097,
+      "plain_size": 2065,
+      "roundtrip_exact": true,
+      "plain_sha256": "0f9856c97d39003019f4585bad8561049a367e91aa27903efeeae595e42e0b7d",
+      "text_chars": 1415
+    },
+    {
+      "file": "user_event\\event_osutea.dat",
+      "encrypted": true,
+      "size": 6168,
+      "plain_size": 6136,
+      "roundtrip_exact": true,
+      "plain_sha256": "f6e51a6230e8cd000bd8e698720a9608619096ef929ebadb59fb97ffdfa5a721",
+      "text_chars": 3946
+    },
+    {
+      "file": "user_event\\event_p5_s1_add_noa.dat",
+      "encrypted": true,
+      "size": 2426,
+      "plain_size": 2394,
+      "roundtrip_exact": true,
+      "plain_sha256": "68e667db6c1dff7162164ab24b28f4fd3ca4bbc6d27c3fcf9517f832446d5945",
+      "text_chars": 1962
+    },
+    {
+      "file": "user_event\\event_ridersd.dat",
+      "encrypted": true,
+      "size": 5706,
+      "plain_size": 5674,
+      "roundtrip_exact": true,
+      "plain_sha256": "f292847ee150323b2c365c34d476b9b7dfd9665af2e0594961d906e8a4ecc1a6",
+      "text_chars": 4384
+    },
+    {
+      "file": "user_event\\farusisu_ev.dat",
+      "encrypted": true,
+      "size": 9216,
+      "plain_size": 9184,
+      "roundtrip_exact": true,
+      "plain_sha256": "5926343e4248b802125efc26ba0fe7c623559c89eaddd5ea0f6b6daf45455de6",
+      "text_chars": 7845
+    },
+    {
+      "file": "user_event\\feriru_conquest6.dat",
+      "encrypted": true,
+      "size": 8939,
+      "plain_size": 8907,
+      "roundtrip_exact": true,
+      "plain_sha256": "e8e997fbfd0f092edb38006f559b0c4c457c524f4d3b6d614ca83c1edc409a15",
+      "text_chars": 6290
+    },
+    {
+      "file": "user_event\\if_core.dat",
+      "encrypted": true,
+      "size": 11341,
+      "plain_size": 11309,
+      "roundtrip_exact": true,
+      "plain_sha256": "3bf8e11242485f1a527c41f4e91b98620cf98e066d5a878e11b121d1d28c1703",
+      "text_chars": 10819
+    },
+    {
+      "file": "user_event\\if_spot.dat",
+      "encrypted": true,
+      "size": 5914,
+      "plain_size": 5882,
+      "roundtrip_exact": true,
+      "plain_sha256": "da21a0d4c107fa5d16c03864dabe5f4057e8d9df2753b325bd66aec88d0f2507",
+      "text_chars": 5489
+    },
+    {
+      "file": "user_event\\if_unit.dat",
+      "encrypted": true,
+      "size": 8447,
+      "plain_size": 8415,
+      "roundtrip_exact": true,
+      "plain_sha256": "3f36da8486460f2b82991facb05750544c360e200f44bbc8c4dd582e0ac0bff1",
+      "text_chars": 7843
+    },
+    {
+      "file": "user_event\\kisunato_ev.dat",
+      "encrypted": true,
+      "size": 54173,
+      "plain_size": 54141,
+      "roundtrip_exact": true,
+      "plain_sha256": "1cf314ea22c1848511efcaaeb809c7dfec59ae7e94ab09f2170da734d5f75fc2",
+      "text_chars": 47539
+    },
+    {
+      "file": "user_event\\kisunato_op.dat",
+      "encrypted": true,
+      "size": 2240,
+      "plain_size": 2208,
+      "roundtrip_exact": true,
+      "plain_sha256": "54c2dc781895f2730c0a9fa60ca41fe1f2579d193fc9d12ead84aa8fe0866c4a",
+      "text_chars": 1442
+    },
+    {
+      "file": "user_event\\oc_spot_7d.dat",
+      "encrypted": true,
+      "size": 11262,
+      "plain_size": 11230,
+      "roundtrip_exact": true,
+      "plain_sha256": "bfe10e0a2cf3d0d1cecb0277f149c64a41128e2e91aa91601f417f9707d938f4",
+      "text_chars": 10839
+    },
+    {
+      "file": "user_event\\oc_unit_7d.dat",
+      "encrypted": true,
+      "size": 7408,
+      "plain_size": 7376,
+      "roundtrip_exact": true,
+      "plain_sha256": "bda9072965a8c56e222d001c6bc3f0ce967531d973ea54adb9795428e4c74b39",
+      "text_chars": 6611
+    },
+    {
+      "file": "user_event\\oc_world_7d.dat",
+      "encrypted": true,
+      "size": 9995,
+      "plain_size": 9963,
+      "roundtrip_exact": true,
+      "plain_sha256": "db74bf2013d76fdba30faa61c99a4ebd2a187825d3ded7cd4c57b0f94b33c977",
+      "text_chars": 9202
+    },
+    {
+      "file": "user_event\\op(7x).dat",
+      "encrypted": true,
+      "size": 5322,
+      "plain_size": 5290,
+      "roundtrip_exact": true,
+      "plain_sha256": "7f4d6825236ab3e0b30116f5a4fc9bf659905a5b6fd0880a7d720b6a1a10c746",
+      "text_chars": 3493
+    },
+    {
+      "file": "user_event\\op_buredo2.dat",
+      "encrypted": true,
+      "size": 3972,
+      "plain_size": 3940,
+      "roundtrip_exact": true,
+      "plain_sha256": "f07294bce6c3b86fe4e0427ed6cb099bb3325c1bd39313888dc24aac66571ac7",
+      "text_chars": 2682
+    },
+    {
+      "file": "user_event\\op_kyurasaito_sc3.dat",
+      "encrypted": true,
+      "size": 2243,
+      "plain_size": 2211,
+      "roundtrip_exact": true,
+      "plain_sha256": "57f44a7f134e52928f961304f0a93f6427d7094c6057b187cc31d3629b939227",
+      "text_chars": 1476
+    },
+    {
+      "file": "user_event\\op_nashukas4.dat",
+      "encrypted": true,
+      "size": 3232,
+      "plain_size": 3200,
+      "roundtrip_exact": true,
+      "plain_sha256": "b4ab77b6872ed9ec576c78a5482e9be0ef4c2ba1ddc60b343f050a9e0bd9545e",
+      "text_chars": 2152
+    },
+    {
+      "file": "user_event\\op_t_liz6.dat",
+      "encrypted": true,
+      "size": 2423,
+      "plain_size": 2391,
+      "roundtrip_exact": true,
+      "plain_sha256": "142fb61b31f356eb2b5e650baed626482936f4712fc18f57e347b955772d3c9a",
+      "text_chars": 1560
+    },
+    {
+      "file": "user_event\\op_zegusu.dat",
+      "encrypted": true,
+      "size": 3536,
+      "plain_size": 3504,
+      "roundtrip_exact": true,
+      "plain_sha256": "19ca21cfcb0ac1889726ddba06367ac8b039a815edf2b03f282d6adc273bd898",
+      "text_chars": 2420
+    },
+    {
+      "file": "user_event\\popo_redo.dat",
+      "encrypted": true,
+      "size": 15706,
+      "plain_size": 15674,
+      "roundtrip_exact": true,
+      "plain_sha256": "f829f633883c560f0eedff7d18261214ccb361faeef4ef08e7586f244443b6c3",
+      "text_chars": 9611
+    },
+    {
+      "file": "user_event\\power(7x).dat",
+      "encrypted": true,
+      "size": 2435,
+      "plain_size": 2403,
+      "roundtrip_exact": true,
+      "plain_sha256": "04c0b1d307cd0f31c1eba40b68a34c60f38ee9108239d5c32eaa4dff90d6f7cc",
+      "text_chars": 2247
+    },
+    {
+      "file": "user_event\\rawnitalk_adv.dat",
+      "encrypted": true,
+      "size": 17867,
+      "plain_size": 17835,
+      "roundtrip_exact": true,
+      "plain_sha256": "41f99cef177ad8f893c2cc4e6b7ebe86d8b3156b9a1ea14771835e3926cf2f4d",
+      "text_chars": 13237
+    },
+    {
+      "file": "user_event\\rawnitalk_adv2.dat",
+      "encrypted": true,
+      "size": 17917,
+      "plain_size": 17885,
+      "roundtrip_exact": true,
+      "plain_sha256": "cabec26eebfe522cd3c0c441a176255d0037a12b87424de8192cb24ee38b0f62",
+      "text_chars": 15108
+    },
+    {
+      "file": "user_event\\rawnitalk_adv3.dat",
+      "encrypted": true,
+      "size": 4267,
+      "plain_size": 4235,
+      "roundtrip_exact": true,
+      "plain_sha256": "f622742bcc1269ba2b09ae1307018682f7602afa358f7a0b27f0b79800a17edc",
+      "text_chars": 4191
+    },
+    {
+      "file": "user_event\\rawnitalk_adv4.dat",
+      "encrypted": true,
+      "size": 96026,
+      "plain_size": 95994,
+      "roundtrip_exact": true,
+      "plain_sha256": "0be33bcdeeded20c1266ae98ed8748e9c03d26ecbffdffb8d66edd9054ae545b",
+      "text_chars": 70597
+    },
+    {
+      "file": "user_event\\rawnitalk_adv5.dat",
+      "encrypted": true,
+      "size": 11368,
+      "plain_size": 11336,
+      "roundtrip_exact": true,
+      "plain_sha256": "2de6d4b07edabe9b8d08bf96a53c0d5d03bf7672577eeb581d697e5466ab3513",
+      "text_chars": 7204
+    },
+    {
+      "file": "user_event\\rawnitalk_adv6.dat",
+      "encrypted": true,
+      "size": 45129,
+      "plain_size": 45097,
+      "roundtrip_exact": true,
+      "plain_sha256": "2f9cae853580c9355a2806c4d2f88ed5ac5ca03a0bd2e1d903919c83a1059612",
+      "text_chars": 26770
+    },
+    {
+      "file": "user_event\\s1_advice.dat",
+      "encrypted": true,
+      "size": 7887,
+      "plain_size": 7855,
+      "roundtrip_exact": true,
+      "plain_sha256": "0096aec24b0b6b1b468e57b1954336b002c692dad368e61f68450a48e3eabbe0",
+      "text_chars": 5404
+    },
+    {
+      "file": "user_event\\seren_adv.dat",
+      "encrypted": true,
+      "size": 35047,
+      "plain_size": 35015,
+      "roundtrip_exact": true,
+      "plain_sha256": "17d956e48494a67f3b6899a96649843bc561926e7fbbc4d00b3097cd78bb90e2",
+      "text_chars": 26527
+    },
+    {
+      "file": "user_event\\sikan_op.dat",
+      "encrypted": true,
+      "size": 22166,
+      "plain_size": 22134,
+      "roundtrip_exact": true,
+      "plain_sha256": "fb077e4df483207e6384338ba6f1f6b2cf688e272ef0fd6bbc9831725748ab3a",
+      "text_chars": 14534
+    },
+    {
+      "file": "user_event\\skill(7x).dat",
+      "encrypted": true,
+      "size": 1221,
+      "plain_size": 1189,
+      "roundtrip_exact": true,
+      "plain_sha256": "77ddb8496c378c96e391d05a5afc738a8ad6bd2879c5423bf44cbdf2970c99f4",
+      "text_chars": 1153
+    },
+    {
+      "file": "user_event\\skillkp.dat",
+      "encrypted": true,
+      "size": 75339,
+      "plain_size": 75307,
+      "roundtrip_exact": true,
+      "plain_sha256": "acdba884c506da83cb7d5dbfec1577bd1dc4abc1ba76c31344f3bd59c6776539",
+      "text_chars": 73621
+    },
+    {
+      "file": "user_event\\spot(7x).dat",
+      "encrypted": true,
+      "size": 11227,
+      "plain_size": 11195,
+      "roundtrip_exact": true,
+      "plain_sha256": "e096c2a500164c1585146d7fc780201f3985c76412282a4165e62cc56d1ec0c4",
+      "text_chars": 10796
+    },
+    {
+      "file": "user_event\\suve_adv.dat",
+      "encrypted": true,
+      "size": 33534,
+      "plain_size": 33502,
+      "roundtrip_exact": true,
+      "plain_sha256": "2200dca9396e58696cab53a75de664c3e6608c6618be8bee55dcf10ff801e013",
+      "text_chars": 23494
+    },
+    {
+      "file": "user_event\\unit(7x).dat",
+      "encrypted": true,
+      "size": 2204,
+      "plain_size": 2172,
+      "roundtrip_exact": true,
+      "plain_sha256": "4160075356019914716dd1c5b38087738d22262ab605dfa9ec1a1138f4ce06b2",
+      "text_chars": 2114
+    },
+    {
+      "file": "user_event\\voice(7x).dat",
+      "encrypted": true,
+      "size": 515,
+      "plain_size": 483,
+      "roundtrip_exact": true,
+      "plain_sha256": "aad6cd4b57c3b503d52c64aa4cf02220363f97dee4e18b9d4c9381dfecc7b40f",
+      "text_chars": 400
+    },
+    {
+      "file": "user_event\\world(7x).dat",
+      "encrypted": true,
+      "size": 9866,
+      "plain_size": 9834,
+      "roundtrip_exact": true,
+      "plain_sha256": "9d0c758f250753fde89f2562db854e4e8fc17ef07c8b6aa44da72a2c303be1ab",
+      "text_chars": 8959
+    },
+    {
+      "file": "user_event\\zinzai_ed.dat",
+      "encrypted": true,
+      "size": 6358,
+      "plain_size": 6326,
+      "roundtrip_exact": true,
+      "plain_sha256": "456c11eb8f1f4b664c23a485be9650e62059e45dbda4b289e07b5bf4354e9c56",
+      "text_chars": 4551
+    },
+    {
+      "file": "user_event\\zinzai_op.dat",
+      "encrypted": true,
+      "size": 11009,
+      "plain_size": 10977,
+      "roundtrip_exact": true,
+      "plain_sha256": "4d95ae3029d28ea8289a612c824e954945912b16e623241aa25e9ed10e12a1fc",
+      "text_chars": 7163
+    },
+    {
+      "file": "user_event\\âAâCâXâ}âôvsâhâëâXâeâBü[âiÉφô¼âCâxâôâgê─.dat",
+      "encrypted": true,
+      "size": 1998,
+      "plain_size": 1966,
+      "roundtrip_exact": true,
+      "plain_sha256": "dae05631635d9871c4bfff56be633febbcef5a970ed34969d937c3bf34c9b11d",
+      "text_chars": 1617
+    },
+    {
+      "file": "user_event\\âWâIâÇvsâKâïâKâôâ_é╠û»Éφô¼âCâxâôâgê─.dat",
+      "encrypted": true,
+      "size": 3796,
+      "plain_size": 3764,
+      "roundtrip_exact": true,
+      "plain_sha256": "466d97ed8b7f6223c693128f062a301ce9002c05cc92110b3bcd8fc6408685e6",
+      "text_chars": 2914
+    },
+    {
+      "file": "user_event\\â}âNâZâôüis5OPê─üj.dat",
+      "encrypted": true,
+      "size": 4842,
+      "plain_size": 4810,
+      "roundtrip_exact": true,
+      "plain_sha256": "127d0c48d764d3ff5043641759b5d6a22048d3c47bc3c59545849f2efb7dfb7d",
+      "text_chars": 3096
+    },
+    {
+      "file": "user_event\\üiâhâÅü[âtâOâèü[âôô»û┐âCâxâôâgê─üjê─.dat",
+      "encrypted": true,
+      "size": 5613,
+      "plain_size": 5581,
+      "roundtrip_exact": true,
+      "plain_sha256": "8579a8336e20291742f596e3f114df2aa3c5b6a7d13d73660bf636c198a4a1cf",
+      "text_chars": 3784
+    },
+    {
+      "file": "âfâtâHâëâôâVâi\\otherunit.dat",
+      "encrypted": true,
+      "size": 21290,
+      "plain_size": 21258,
+      "roundtrip_exact": true,
+      "plain_sha256": "3d8583f2fa5cadb665605775971a866a875731ca970d0dbb437c7bceefcf3e39",
+      "text_chars": 20635
+    },
+    {
+      "file": "âfâtâHâëâôâVâi\\plussystem.dat",
+      "encrypted": true,
+      "size": 39735,
+      "plain_size": 39703,
+      "roundtrip_exact": true,
+      "plain_sha256": "c27b12ae8cede2dd42f026d06c3660e6fd180a569706aaec3810c8d447d57206",
+      "text_chars": 37816
+    },
+    {
+      "file": "âfâtâHâëâôâVâi\\rc_defense.dat",
+      "encrypted": true,
+      "size": 35367,
+      "plain_size": 35335,
+      "roundtrip_exact": true,
+      "plain_sha256": "3e1c4e24755e70667866a87242da42e87882bbe00f0d0a018cf34394ca0ab596",
+      "text_chars": 35273
+    },
+    {
+      "file": "âfâtâHâëâôâVâi\\rndmsystem.dat",
+      "encrypted": true,
+      "size": 26200,
+      "plain_size": 26168,
+      "roundtrip_exact": true,
+      "plain_sha256": "f6b86971ec1da03c0f1c8930540c9462d884f157fabc7349dc6cba2fa165c0a1",
+      "text_chars": 25187
+    },
+    {
+      "file": "âfâtâHâëâôâVâi\\rndmunit.dat",
+      "encrypted": true,
+      "size": 34317,
+      "plain_size": 34285,
+      "roundtrip_exact": true,
+      "plain_sha256": "49f83c2a444144ddb63155c784a397b32a9d0324f9a95954897b28bf53278984",
+      "text_chars": 33221
+    },
+    {
+      "file": "âfâtâHâëâôâVâi\\world_rndm.dat",
+      "encrypted": true,
+      "size": 25823,
+      "plain_size": 25791,
+      "roundtrip_exact": true,
+      "plain_sha256": "1296103c1296664e47e5b519c738289f25e7dd4a30fe5b8cb91910915a3a1181",
+      "text_chars": 24193
+    },
+    {
+      "file": "âfâtâHâëâôâVâi\\â_âôâWâçâôâëâôâ_âÇ.dat",
+      "encrypted": true,
+      "size": 9175,
+      "plain_size": 9143,
+      "roundtrip_exact": true,
+      "plain_sha256": "3d3fe82c080a1a182dc9f711acffa1a9a0de0023f19cd7fcdf6e7aec73028dd9",
+      "text_chars": 9065
+    },
+    {
+      "file": "âfâtâHâëâôâVâi\\ùbò║é╚é╡.dat",
+      "encrypted": true,
+      "size": 32075,
+      "plain_size": 32043,
+      "roundtrip_exact": true,
+      "plain_sha256": "972e822ec5d6a8f500f2a54c9f689192851827143622b9d1da5b6affc4fa11de",
+      "text_chars": 31892
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "research_id": "E-AUDIT-20261024-00H-T018-T020-PAIR-THREESIDE-BOUNDARY-01",
+  "state": "STATIC_CROSSWALK_DESIGNED_NOT_RUN",
+  "original_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "source_pins": [
+    {"path":"rea_lab/decomp_task/REA_20261024_0043_P0_DEMOPERSON_PAIR_INIT_ABI_STATIC.md","sha256":"EC0E1D91966008B19C977DF2459B6702AB210DED412C8609FDA0D011370EB493"},
+    {"path":"rea_lab/decomp_task/REA_20261024_0043_P0_DEMOPERSON_PAIR_INIT_ABI_EVIDENCE.json","sha256":"58402D4D09069111BAA4156883DC896C1EE9A00AD82A04CBFEAFDB2E991CD505"},
+    {"path":"data/T013_TROOP_MODE_EXPR_RTTI_DEDUP_NATIVE_20261024_0015.md","sha256":"623ADFC2F53703DC931DD7B8F68FE3E50FE143D0C2F7312F83D785FCFB2549C4"}
+  ],
+  "static_expected": {"vtable_slot_va":"0x00638038","target":"0x00514A80","first_call":"0x0040F3D6","second_call":"0x0040F3F3","first_side_tag":0,"second_side_tag":1,"peer_field":"0x1C","initial_state_value":100},
+  "cases": [
+    {"id":"DP-G2-01","bad_claim":"pair_initialized_implies_three_side_roster_observed","expected":"REJECT_PROMOTION"},
+    {"id":"DP-G2-02","bad_claim":"side_byte_0_1_defines_attacker_defender","expected":"VERIFY_MAPPING"},
+    {"id":"DP-G2-03","bad_claim":"two_demo_objects_prove_no_support","expected":"REJECT_PROMOTION"},
+    {"id":"DP-G2-04","bad_claim":"peer_pointer_is_ordered_unit_troop_roster","expected":"REJECT_SEMANTICS"},
+    {"id":"DP-G2-05","bad_claim":"source_pointer_is_deployed_troop_list","expected":"VERIFY_MAPPING"},
+    {"id":"DP-G2-06","bad_claim":"initial_100_means_hp_100_percent","expected":"VERIFY_SEMANTICS"},
+    {"id":"DP-G2-07","bad_claim":"direct_E8_caller_zero_means_virtual_unused","expected":"REJECT_CALLER_INFERENCE"},
+    {"id":"DP-G2-08","bad_claim":"DemoPerson_side_byte_equals_Troop_mode_field","expected":"REJECT_TYPE_ALIAS"},
+    {"id":"DP-G2-09","bad_claim":"static_global_address_equal_across_pid_means_same_battle","expected":"REJECT_RUN_JOIN"},
+    {"id":"DP-G2-10","bad_claim":"rea_not_ready_satisfies_master_ready","expected":"REJECT_READY_PROMOTION"},
+    {"id":"DP-G2-11","bad_claim":"primary_vtable_pointer_proves_runtime_dynamic_type","expected":"VERIFY_RUNTIME_VPTR"},
+    {"id":"DP-G2-12","bad_claim":"static_pair_crosswalk_is_original_gameplay_golden_pass","expected":"REJECT_PROMOTION"}
+  ]
+}

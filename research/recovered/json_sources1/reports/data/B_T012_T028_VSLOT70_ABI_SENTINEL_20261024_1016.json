@@ -1,0 +1,168 @@
+{
+  "research_id": "B-OFFLINE-20261024-1016-T012-T028-VSLOT70-ABI-SENTINEL-JOIN-01",
+  "source_class": "OFFLINE_STATIC",
+  "pc_status": "LOCAL_UNAVAILABLE_SSE_429",
+  "error_exact": "McpServerError: MCP SSE probe returned 429 from openai.org",
+  "bundle_sha256": "911E5E37A3F9BD5B36F929AF94B0D1E2CD1CD5CF34E3E2F16C8FC800ABF5F7C2",
+  "exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "db_sha256": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF",
+  "db_integrity_check": "ok",
+  "pc_master_verified_now": false,
+  "previous_pc_reported_checkpoint": 196,
+  "previous_pc_reported_ready": 596,
+  "source_snapshot_is_stale": true,
+  "source_content_owner": "B T012 T028",
+  "vtable_entries": [
+    {
+      "type": "SimpleUnit",
+      "vtable_va": "0x0063A4BC",
+      "slot_va": "0x0063A52C",
+      "method_va": "0x00544790",
+      "pointer_bytes": "90475400",
+      "status": "STATIC-PE-MATCH"
+    },
+    {
+      "type": "Unit",
+      "vtable_va": "0x0063A9E4",
+      "slot_va": "0x0063AA54",
+      "method_va": "0x00578370",
+      "pointer_bytes": "70835700",
+      "status": "STATIC-PE-MATCH"
+    },
+    {
+      "type": "StaticUnit",
+      "vtable_va": "0x0063A85C",
+      "slot_va": "0x0063A8CC",
+      "method_va": "0x0055ABA0",
+      "pointer_bytes": "A0AB5500",
+      "status": "STATIC-PE-MATCH"
+    },
+    {
+      "type": "SimpleStaticUnit",
+      "vtable_va": "0x0063A8E4",
+      "slot_va": "0x0063A954",
+      "method_va": "0x0055B060",
+      "pointer_bytes": "60B05500",
+      "status": "STATIC-PE-MATCH"
+    }
+  ],
+  "call_sites": [
+    {
+      "site_va": "0x00551154",
+      "owner_function_va": "0x00550E70",
+      "bytes": "FFD2",
+      "indirect_index_row": "CALL EDX",
+      "status": "STATIC-PE-SQLITE-MATCH"
+    },
+    {
+      "site_va": "0x00578E1E",
+      "owner_function_va": "0x00578B70",
+      "bytes": "FFD2",
+      "indirect_index_row": "CALL EDX",
+      "status": "STATIC-PE-SQLITE-MATCH"
+    },
+    {
+      "site_va": "0x0057E04D",
+      "owner_function_va": "0x0057DF90",
+      "bytes": "FFD2",
+      "indirect_index_row": "CALL EDX",
+      "status": "STATIC-PE-SQLITE-MATCH"
+    }
+  ],
+  "pe_sections": [
+    {
+      "start_va": "0x00551143",
+      "end_va_exclusive": "0x00551156",
+      "sha256": "24D28AB7EF691B35F639E2EA026E33DD20AAAD479F0A1A26721DBB6B69508C64"
+    },
+    {
+      "start_va": "0x00578E09",
+      "end_va_exclusive": "0x00578E20",
+      "sha256": "2150C70379AF00295F7229BF750FB37B32BD1C3DF173210DFEADB4161AADAF3C"
+    },
+    {
+      "start_va": "0x0057DFFF",
+      "end_va_exclusive": "0x0057E04F",
+      "sha256": "96943C484AA190E7B8F70983F66EAEA9BE31956DD1BD741F50D12C040F83B0DD"
+    },
+    {
+      "start_va": "0x005783D4",
+      "end_va_exclusive": "0x005783F6",
+      "sha256": "A076759E5E9A1EA1C25AA21ECC4F23202304B6486CA6A8EFA68F150D2472855F"
+    },
+    {
+      "start_va": "0x005785A3",
+      "end_va_exclusive": "0x005785C0",
+      "sha256": "1F38BAC9FC529B98E35AA4D34843FA22B5A2BEFC8F2B69E83E6A9F4DB29AF0D6"
+    }
+  ],
+  "critical_immediates": [
+    {
+      "site_va": "0x00551117",
+      "value": 1000000,
+      "route": "damage core conditional"
+    },
+    {
+      "site_va": "0x00578E17",
+      "value": 1000001,
+      "route": "status death gated"
+    },
+    {
+      "site_va": "0x0057E046",
+      "value": 1000001,
+      "route": "HP regen underzero"
+    },
+    {
+      "site_va": "0x005783D7",
+      "value": 1000001,
+      "route": "Unit-specific discriminator"
+    }
+  ],
+  "synthetic_comparisons": [
+    {
+      "initial_aux": 42,
+      "amount": 1000000,
+      "aux_after_hit": -999958,
+      "would_call_negative_aux_helper_on_lethal_unit_branch": true,
+      "dynamic_run": false
+    },
+    {
+      "initial_aux": 42,
+      "amount": 1000001,
+      "aux_after_hit": 0,
+      "would_call_negative_aux_helper_on_lethal_unit_branch": false,
+      "dynamic_run": false
+    },
+    {
+      "initial_aux": 1200000,
+      "amount": 1000000,
+      "aux_after_hit": 200000,
+      "would_call_negative_aux_helper_on_lethal_unit_branch": false,
+      "dynamic_run": false
+    },
+    {
+      "initial_aux": 1200000,
+      "amount": 1000001,
+      "aux_after_hit": 0,
+      "would_call_negative_aux_helper_on_lethal_unit_branch": false,
+      "dynamic_run": false
+    }
+  ],
+  "actual_gameplay_golden_pass": 0,
+  "strict_match": 0,
+  "new_ready": 0,
+  "new_done": 0,
+  "work_used": false,
+  "native_game_executed": false,
+  "source_files_modified": false,
+  "owner_pc_files_written": false,
+  "pc_readback": false,
+  "not_included_in_formal_master": true,
+  "status": [
+    "OFFLINE-UNSYNCED",
+    "STATIC",
+    "INFERRED",
+    "VERIFY",
+    "NOT READY"
+  ]
+}

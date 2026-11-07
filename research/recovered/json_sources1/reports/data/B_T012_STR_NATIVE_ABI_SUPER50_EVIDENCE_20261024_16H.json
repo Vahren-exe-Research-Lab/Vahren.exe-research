@@ -1,0 +1,236 @@
+{
+  "research_id": "B-OFFLINE-20261024-16H-T012-STR-NATIVE-ABI-SUPER50-01",
+  "recovery_id": "B-RC-20261024-16H-LOCAL-SESSION-01",
+  "time_jst": "2026-10-24 16時台",
+  "owner": "B",
+  "task": "T012",
+  "status": [
+    "OFFLINE-UNSYNCED",
+    "STATIC-ORIGINAL-PE-ASM",
+    "STATIC-GHIDRA",
+    "VERIFY",
+    "NOT READY"
+  ],
+  "connection": {
+    "tool": "Desktop Commander Local Compact read_multiple_files",
+    "error": "INVALID_ARGUMENT: Error code: INVALID_ARGUMENT; Error: McpServerError: Session terminated",
+    "class": "CONNECTION",
+    "latest_pc_checked": false,
+    "new_safety_refusal": 0
+  },
+  "source": {
+    "archive_sha256": "911E5E37A3F9BD5B36F929AF94B0D1E2CD1CD5CF34E3E2F16C8FC800ABF5F7C2",
+    "archive_entries": 34,
+    "crc_ok": true,
+    "db_sha256": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF",
+    "db_manifest_match": true,
+    "db_quick_check": "ok",
+    "pe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+    "pe_matches_original": true
+  },
+  "target": {
+    "parser": "0x00599BD0",
+    "getter": "0x004647D0",
+    "callsite_for_str": "0x0059CCC6",
+    "callsite_for_str_ratio": "0x0059CDE8",
+    "str_literal_va": "0x00624FF8",
+    "skill_literal_va": "0x00624FFC",
+    "ratio_literal_va": "0x00625054",
+    "ratio_property_gate": "0x0059CDCA",
+    "value_field_offset_hex": "0x20",
+    "parent_loop_count_limit": 50
+  },
+  "native_abi": {
+    "caller_push_stack_args": [
+      "ESI",
+      "pointer to stack result",
+      "literal skill"
+    ],
+    "caller_register_args": {
+      "ECX": "EBX",
+      "EDX": "0x00624FF8 (str)"
+    },
+    "callee_ret": "0x00464BDA RET 0x000C",
+    "callee_returns_output_pointer": "0x00464BB1 MOV EAX,EBP; EBP initialized from second stack argument",
+    "result_int": "0x0059CDA3 FILD DWORD PTR [ESP+0x320]",
+    "stack_abi_proof": "pointer LEA [ESP+0x304] calculated with 1 preceding PUSH => effective base S+0x300; GETTER RET 0xC pops three arguments; FILD at S+0x320, difference +0x20",
+    "confidence": "STATIC-ORIGINAL-PE"
+  },
+  "super_bound": {
+    "initial_zero": "0x00464A2C MOV [ESP+0x14],EBX (EBX=0)",
+    "counter_inc": "0x00464B41 INC EAX",
+    "counter_store": "0x00464B42 MOV [ESP+0x14],EAX",
+    "compare": "0x00464B46 CMP EAX,0x32",
+    "branch": "0x00464B49 JL 0x00464A30",
+    "result_default": "0x00464B73 MOV ECX,[ESP+0x68]; 0x00464B77 MOV [EBP+0x20],ECX; verified zero init in native earlier paths and Ghidra local_4c=0",
+    "max_nodes_candidate": 50,
+    "caveat": "The precise semantics of ScriptData ancestry and cycles are NOT dynamically tested."
+  },
+  "scale_constant_double": "0.01",
+  "prior_research_preserved": [
+    "B-OFFLINE-20261024-15H-T012-STR-STACK-ALIAS-LOOKUP-01",
+    "B-OFFLINE-20261024-14H-T012-SCALE-INIT-PARSER-COPY-X87-01",
+    "T012 §32 previous native parser key/scale/ratio"
+  ],
+  "new_contribution": [
+    "source PE proves exact str literal and native ABI/alias, upgrading preceding VERIFY",
+    "native bounded super property lookup compare 0x32, early absence result default candidate"
+  ],
+  "denied_scope_avoided": [
+    "0x005710C0..0x00571500",
+    "0x0058021E..0x00580340",
+    "0x00624A1C literal"
+  ],
+  "proof_windows": [
+    {
+      "name": "parser_str_call_abi",
+      "start_va": "0x0059CC95",
+      "end_exclusive": "0x0059CCD3",
+      "size": 62,
+      "sha256": "ED69E57E23AB4DD81C3C6B69214EAB7A085DD21246E1AF07C29228792A3B44FA",
+      "hex": "68fc4f62008d8c24040300005133ff56baf84f62008bcbc784247c0800000f00000089bc2478080000c684246808000000e8057becffc684242419000041"
+    },
+    {
+      "name": "parser_mode_to_scale",
+      "start_va": "0x0059CD84",
+      "end_exclusive": "0x0059CDC2",
+      "size": 62,
+      "sha256": "5F2E60AEEDD742FB214AE67A096354347721C48B6A866815BEE4956C684D2567",
+      "hex": "b93c5062008dbc2404030000e86be4e6ff84c0740ac7857c02000006000000db8424200300005356ba40506200dc0d70b06300b94c506200dd9d80020000"
+    },
+    {
+      "name": "parser_optional_ratio",
+      "start_va": "0x0059CDC2",
+      "end_exclusive": "0x0059CDFE",
+      "size": 60,
+      "sha256": "4E018E1F32E7670EC9A742BE1ED6B609B86B3DA2A18DC90DE1739C32F4D6B66A",
+      "hex": "d9e8dd9d88020000e8c174ecff84c0746768605062008d9424a40800005256ba545062008bcbe8e379ecffdb4020bf10000000dc0d70b06300dd9d88"
+    },
+    {
+      "name": "getter_parent_loop_entry",
+      "start_va": "0x00464A29",
+      "end_exclusive": "0x00464A30",
+      "size": 7,
+      "sha256": "9CA1172ABB150D2E3766667B66D4FF6B5A6A31A496ADFDB5CA9A45DE98FE5D7E",
+      "hex": "8b7028895c2414"
+    },
+    {
+      "name": "getter_parent_chain_guard",
+      "start_va": "0x00464B09",
+      "end_exclusive": "0x00464B4F",
+      "size": 70,
+      "sha256": "96D03A23F1D79E5B1A737EED492470F1FCCD031F1C590A297D34313489583B28",
+      "hex": "8b4424203b4604743d8b40283bc3743639581474318b7424188d4c241c8d7804518bc6e8cfc605008b44241c3b460474158b70288b442414408944241483f8320f8ce1feffff"
+    },
+    {
+      "name": "getter_missing_default_return",
+      "start_va": "0x00464B4F",
+      "end_exclusive": "0x00464BDA",
+      "size": 139,
+      "sha256": "012C4CFFFB5FB4BE610784B9CE15037AA9FE89DBA392A739B49A1D3993BC0B74",
+      "hex": "6aff8d4d04c745001c8d6300538d442454be0f000000897114895910508819e89ddbf9ff8b4c2468bf10000000894d20397c2440720d8b54242c52e82c20150083c40489742440895c243c885c242c397c2460720d8b44244c50e80d20150083c4048bc58b8c24a800000064890d00000000595f5e5d5b8b8c249000000033cce83f19150081c4a0000000"
+    },
+    {
+      "name": "getter_found_result_copy",
+      "start_va": "0x00464BDD",
+      "end_exclusive": "0x00464C22",
+      "size": 69,
+      "sha256": "3B9ED0085C0BFF1FC9E1C8D080ABDE0BFCF0BDC73D0FC95529EDA0BAEA160449",
+      "hex": "8b70286aff538d5604528d4c2458e820dbf9ff8b46206aff8d4d04c745001c8d6300538d542454be0f00000089442470897114895910528819e8f5daf9ff8b442468894520"
+    },
+    {
+      "name": "native_string_key",
+      "start_va": "0x00624FF8",
+      "end_exclusive": "0x00625063",
+      "size": 107,
+      "sha256": "1C831B7D2E036993A9E93ED1A3E4C9A8517C77269C022861349BC8411F4EF8FC",
+      "hex": "73747200736b696c6c00000061747461636b00006d6167696300000061747461636b5f6d616769630000000061747461636b5f64657874006d616769635f646578740000666978007374725f726174696f000000736b696c6c0000007374725f726174696f000000736b69"
+    },
+    {
+      "name": "scale_double_constant",
+      "start_va": "0x0063B070",
+      "end_exclusive": "0x0063B078",
+      "size": 8,
+      "sha256": "C738DD99FADA954A0BE83CB94069E65973256ED5A199CD293841C789AD3B0910",
+      "hex": "7b14ae47e17a843f"
+    }
+  ],
+  "pseudoc": {
+    "0x004647D0": {
+      "size_bytes": 1157,
+      "sha256_pseudoc": "ADA8EC2EBDA2F55D78E17C4349C04824E6B60007F23EDCACE7ACC7F9FA2B5E05"
+    },
+    "0x00599BD0": {
+      "size_bytes": 24124,
+      "sha256_pseudoc": "94F69BED55F2E76978B831CCF1179B94987DE2C655B7B861B4E8B49A99588C64"
+    }
+  },
+  "sqlite_direct_call_rows": {
+    "0x0059CCC6": [
+      [
+        "0x00599BD0",
+        "0x0059CCC6",
+        "0x004647D0",
+        "UNCONDITIONAL_CALL",
+        "GHIDRA_FUNCTION_RESOLVED"
+      ]
+    ],
+    "0x0059CDE8": [
+      [
+        "0x00599BD0",
+        "0x0059CDE8",
+        "0x004647D0",
+        "UNCONDITIONAL_CALL",
+        "GHIDRA_FUNCTION_RESOLVED"
+      ]
+    ]
+  },
+  "abstract_fixture_not_golden": [
+    {
+      "property_present_at_index": 0,
+      "found_by_bounded_50_checks": true
+    },
+    {
+      "property_present_at_index": 1,
+      "found_by_bounded_50_checks": true
+    },
+    {
+      "property_present_at_index": 48,
+      "found_by_bounded_50_checks": true
+    },
+    {
+      "property_present_at_index": 49,
+      "found_by_bounded_50_checks": true
+    },
+    {
+      "property_present_at_index": 50,
+      "found_by_bounded_50_checks": false
+    },
+    {
+      "property_present_at_index": 51,
+      "found_by_bounded_50_checks": false
+    }
+  ],
+  "unresolved": [
+    "PC latest B/E MASTER synchronization and owner/dedupe",
+    "gameplay skill inheritance reaching 50-level chain",
+    "loader/parser legality for parent-cycle and property-not-found",
+    "exception/short-circuit details when 50th traversal resolved",
+    "original gameplay golden dynamic tests"
+  ],
+  "golden_pass": 0,
+  "strict_match": 0,
+  "new_ready": 0,
+  "master_integration": 0,
+  "task_done_delta": 0,
+  "writes": {
+    "PC": 0,
+    "PC_readback": 0,
+    "Git": 0,
+    "original_PE": 0,
+    "other_lane": 0,
+    "MASTER": 0,
+    "Work": 0,
+    "schedule": 0
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "research_id": "E-AUDIT-20261029-12H-T018-T020-CAPTURE-FAILURE-TAXONOMY-01",
+  "owner": "E/T018/T020",
+  "status": "ARCHIVED_SOURCE_BYTE_AUDIT_SYNTHETIC_GATE_NOT_NATIVE",
+  "exe_sha256_claim": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "collector_sha256": {
+    "v6": "28799AF6FFF5059B2C53A7EB6BD4D0416FAA6084D902623A4C7849060327276F",
+    "v7": "C8E590CB1ECD69CD18E30164F7DEA74BC6DB29D80C9FCB57991A3F567053126F"
+  },
+  "sessions": [
+    {
+      "summary": "BATTLE_USER_20261021T154713970636Z_1e19867b_SUMMARY.json",
+      "summary_sha256": "C57FA886369FDD0EC99D5C69D963D2C31AD7A9F9036B29DAF326F6A22118112C",
+      "pid": 13620,
+      "collector": "v6",
+      "structural_captures": 0,
+      "capture_failures": 3
+    },
+    {
+      "summary": "BATTLE_USER_20261021T163100686424Z_9cddfc86_SUMMARY.json",
+      "summary_sha256": "51B05D0C964897B875F5F81B282CBEBB2DC46E674BA2EC0294E8017C0658CF7D",
+      "pid": 28432,
+      "collector": "v7",
+      "structural_captures": 4,
+      "capture_failures": 1
+    },
+    {
+      "summary": "BATTLE_USER_20261021T164622798833Z_b8419f5d_SUMMARY.json",
+      "summary_sha256": "9E0FEC62DE5604E9BA991E155A629BDB2CE2969D293CBBA75A187AB3CF90568F",
+      "pid": 32468,
+      "collector": "v7",
+      "structural_captures": 4,
+      "capture_failures": 1
+    }
+  ],
+  "failures": [
+    {
+      "file": "BATTLE_USER_20261021T154713970636Z_1e19867b_FAILURE_01.json",
+      "sha256": "F2878B502BB27B3CCE42FC5C6C3442DFDAD8EC1E7A54FC5B5A98DFC92D2C94E7",
+      "reason": "vector contains null object pointer",
+      "classification": "COLLECTOR_NULL_SLOT_REJECTION",
+      "is_old_gameplay_bug_proven": false,
+      "g2_eligible": false
+    },
+    {
+      "file": "BATTLE_USER_20261021T154713970636Z_1e19867b_FAILURE_02.json",
+      "sha256": "280C5BEFB8549F0E53C1B6BEE839148AFD42DD9ADBC9201CC51193614BE54402",
+      "reason": "vector contains null object pointer",
+      "classification": "COLLECTOR_NULL_SLOT_REJECTION",
+      "is_old_gameplay_bug_proven": false,
+      "g2_eligible": false
+    },
+    {
+      "file": "BATTLE_USER_20261021T154713970636Z_1e19867b_FAILURE_03.json",
+      "sha256": "E327882D17B5A0107A0C6F8E17B046D16BDB3EB6D0E782461F6BE4D54AD5F157",
+      "reason": "vector contains null object pointer",
+      "classification": "COLLECTOR_NULL_SLOT_REJECTION",
+      "is_old_gameplay_bug_proven": false,
+      "g2_eligible": false
+    },
+    {
+      "file": "BATTLE_USER_20261021T163100686424Z_9cddfc86_FAILURE_04.json",
+      "sha256": "F7FBC52248ACA34A97A325450E829E72453C30AA6121231B4BF8A81A780D4286",
+      "reason": "native vector count beyond configured limit",
+      "classification": "COLLECTOR_VECTOR_SLOT_LIMIT",
+      "is_old_gameplay_bug_proven": false,
+      "g2_eligible": false
+    },
+    {
+      "file": "BATTLE_USER_20261021T164622798833Z_b8419f5d_FAILURE_03.json",
+      "sha256": "75C0DD4DC066E9FC002630F803D673F52D7793B2E309E9F2C0B6B368C0FA16BF",
+      "reason": "native vector count beyond configured limit",
+      "classification": "COLLECTOR_VECTOR_SLOT_LIMIT",
+      "is_old_gameplay_bug_proven": false,
+      "g2_eligible": false
+    }
+  ],
+  "golden": {
+    "dynamic_observed_this_run": 0,
+    "actual_golden_pass": 0,
+    "strict_match": 0
+  },
+  "limitations": [
+    "Per-attempt failure diagnosis is collector/source scoped, not native engine fault",
+    "V7 null-slot allowance does not prove that V6 failures would succeed in the same original frame",
+    "V7 count bound is slot count not proven live Task count",
+    "No same-battle G0/G1/G2 proof, no source DAT loaded-epoch proof",
+    "Never reconstruct missing RAW from neighboring captures"
+  ]
+}

@@ -1,0 +1,386 @@
+{
+  "id": "B-OFFLINE-20261023-0009-T012-T013-COLLISION-CLEANUP-OWNER-01",
+  "time_jst": "2026-10-23T00:09:01+09:00",
+  "owner": [
+    "B",
+    "T011",
+    "T012",
+    "T013"
+  ],
+  "status": [
+    "OFFLINE-UNSYNCED",
+    "STATIC-ASM",
+    "STATIC-DERIVED",
+    "INFERRED",
+    "VERIFY",
+    "NOT READY"
+  ],
+  "sources": {
+    "exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+    "zip_sha256": "911E5E37A3F9BD5B36F929AF94B0D1E2CD1CD5CF34E3E2F16C8FC800ABF5F7C2",
+    "db_sha256": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF",
+    "sqlite_quick_check": "ok",
+    "latest_pc_master_read": false,
+    "zip_snapshot_checkpoint": 195
+  },
+  "connection": {
+    "tool": "Desktop Commander Local Compact read_multiple_files",
+    "result": "UNAVAILABLE: Error code: UNAVAILABLE; Error: McpServerError: MCP SSE probe returned 429 from openai.org",
+    "classification": "CONNECTION",
+    "safety_refusal_bypass_attempts": 0,
+    "recovery_id": "B-RC-20261023-0009-LOCAL429-01"
+  },
+  "findings": [
+    {
+      "title": "two tree address expressions",
+      "evidence": [
+        "0x0054C97D",
+        "0x0055268A",
+        "0x00515484",
+        "0x00515438"
+      ],
+      "candidate_tree": "(*( *(missile+0x78)+0x1D4 +0x1C))+0x68",
+      "cleanup_tree": "(*( *(missile+0x78)+0x1D4 ))+0x68",
+      "classification": "STATIC-ASM",
+      "alias_whether_distinct_at_runtime": "VERIFY"
+    },
+    {
+      "title": "six callsites to shared cleanup helper",
+      "sites": [
+        "0x0054C1AC",
+        "0x0054C20B",
+        "0x0054C295",
+        "0x0054D452",
+        "0x005525DC",
+        "0x00552E41"
+      ],
+      "classification": "STATIC-ASM"
+    },
+    {
+      "title": "inlined SimpleMissile cleanup at function entry",
+      "gate": [
+        "0x0055203F",
+        "0x0055204E"
+      ],
+      "range_lookup": "0x00552071",
+      "range_erase": "0x00552086",
+      "vector_update": "0x00552092",
+      "flag_clear": "0x00552097",
+      "classification": "STATIC-ASM",
+      "gameplay_side_effect": "VERIFY"
+    },
+    {
+      "title": "two independently gated operations",
+      "candidate_gate": "Skill+0x134 != 0",
+      "cleanup_gate": "Skill+0x1FD != 0",
+      "offset_on_sentinel_example": "offset=on can yield count0 flag1",
+      "classification": "STATIC-DERIVED"
+    }
+  ],
+  "mechanical_verification": {
+    "exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+    "db_sha256": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF",
+    "sqlite_quick_check": "ok",
+    "direct_calls": [
+      {
+        "site": "0x0054C1AC",
+        "target": "0x00515420",
+        "bytes": "E86F92FCFF",
+        "source": "Missile",
+        "argument_register": "EBX",
+        "sqlite_call": "0x0054BA00",
+        "pass": true
+      },
+      {
+        "site": "0x0054C20B",
+        "target": "0x00515420",
+        "bytes": "E81092FCFF",
+        "source": "Missile",
+        "argument_register": "EBX",
+        "sqlite_call": "0x0054BA00",
+        "pass": true
+      },
+      {
+        "site": "0x0054C295",
+        "target": "0x00515420",
+        "bytes": "E88691FCFF",
+        "source": "Missile",
+        "argument_register": "EBX",
+        "sqlite_call": "0x0054BA00",
+        "pass": true
+      },
+      {
+        "site": "0x0054D452",
+        "target": "0x00515420",
+        "bytes": "E8C97FFCFF",
+        "source": "Missile",
+        "argument_register": "EBX",
+        "sqlite_call": "0x0054BA00",
+        "pass": true
+      },
+      {
+        "site": "0x005525DC",
+        "target": "0x00515420",
+        "bytes": "E83F2EFCFF",
+        "source": "SimpleMissile",
+        "argument_register": "EBP",
+        "sqlite_call": "0x00552030",
+        "pass": true
+      },
+      {
+        "site": "0x00552E41",
+        "target": "0x00515420",
+        "bytes": "E8DA25FCFF",
+        "source": "SimpleMissile",
+        "argument_register": "EBP",
+        "sqlite_call": "0x00552030",
+        "pass": true
+      },
+      {
+        "site": "0x0054C97D",
+        "target": "0x00515470",
+        "bytes": "E8EE8AFCFF",
+        "source": "Missile candidate",
+        "argument_register": "EBX",
+        "sqlite_call": "0x0054BA00",
+        "pass": true
+      },
+      {
+        "site": "0x0055268A",
+        "target": "0x00515470",
+        "bytes": "E8E12DFCFF",
+        "source": "SimpleMissile candidate",
+        "argument_register": "EBP",
+        "sqlite_call": "0x00552030",
+        "pass": true
+      },
+      {
+        "site": "0x00515489",
+        "target": "0x004E6D10",
+        "bytes": "E88218FDFF",
+        "source": "candidate tree query",
+        "argument_register": null,
+        "sqlite_call": "0x00515470",
+        "pass": true
+      },
+      {
+        "site": "0x00515445",
+        "target": "0x00579AA0",
+        "bytes": "E856460600",
+        "source": "cleanup helper range lookup",
+        "argument_register": null,
+        "sqlite_call": "0x00515420",
+        "pass": true
+      },
+      {
+        "site": "0x0051545A",
+        "target": "0x00510850",
+        "bytes": "E8F1B3FFFF",
+        "source": "cleanup helper range erase",
+        "argument_register": null,
+        "sqlite_call": "0x00515420",
+        "pass": true
+      },
+      {
+        "site": "0x00552071",
+        "target": "0x00579AA0",
+        "bytes": "E82A7A0200",
+        "source": "SimpleMissile inline range lookup",
+        "argument_register": null,
+        "sqlite_call": "0x00552030",
+        "pass": true
+      },
+      {
+        "site": "0x00552086",
+        "target": "0x00510850",
+        "bytes": "E8C5E7FBFF",
+        "source": "SimpleMissile inline range erase",
+        "argument_register": null,
+        "sqlite_call": "0x00552030",
+        "pass": true
+      },
+      {
+        "site": "0x00552092",
+        "target": "0x0040E700",
+        "bytes": "E869C6EBFF",
+        "source": "SimpleMissile post-cleanup vector update",
+        "argument_register": null,
+        "sqlite_call": "0x00552030",
+        "pass": true
+      }
+    ],
+    "opcode_fragments": [
+      {
+        "site": "0x00515477",
+        "meaning": "candidate gate Skill+0x134 == 0",
+        "expected": "83B93401000000",
+        "actual": "83B93401000000",
+        "pass": true
+      },
+      {
+        "site": "0x00515484",
+        "meaning": "candidate_context+0x68",
+        "expected": "83C268",
+        "actual": "83C268",
+        "pass": true
+      },
+      {
+        "site": "0x0051542D",
+        "meaning": "cleanup gate Skill+0x1FD == 0",
+        "expected": "80B9FD01000000",
+        "actual": "80B9FD01000000",
+        "pass": true
+      },
+      {
+        "site": "0x00515438",
+        "meaning": "manager+0x68",
+        "expected": "8D7A68",
+        "actual": "8D7A68",
+        "pass": true
+      },
+      {
+        "site": "0x00515441",
+        "meaning": "helper search key points to entry argument",
+        "expected": "8D44241C",
+        "actual": "8D44241C",
+        "pass": true
+      },
+      {
+        "site": "0x0054C978",
+        "meaning": "Missile candidate context = [manager+0x1C]",
+        "expected": "8B501C",
+        "actual": "8B501C",
+        "pass": true
+      },
+      {
+        "site": "0x00552685",
+        "meaning": "SimpleMissile candidate context = [manager+0x1C]",
+        "expected": "8B511C",
+        "actual": "8B511C",
+        "pass": true
+      },
+      {
+        "site": "0x0055203F",
+        "meaning": "SimpleMissile already-completed gate",
+        "expected": "80BDF800000000",
+        "actual": "80BDF800000000",
+        "pass": true
+      },
+      {
+        "site": "0x0055204E",
+        "meaning": "inline cleanup Skill+0x1FD gate",
+        "expected": "80B8FD01000000",
+        "actual": "80B8FD01000000",
+        "pass": true
+      },
+      {
+        "site": "0x00552055",
+        "meaning": "inline key base saved EBP",
+        "expected": "896C2430",
+        "actual": "896C2430",
+        "pass": true
+      },
+      {
+        "site": "0x00552064",
+        "meaning": "inline output iterator address",
+        "expected": "8D542438",
+        "actual": "8D542438",
+        "pass": true
+      },
+      {
+        "site": "0x00552069",
+        "meaning": "inline manager+0x68",
+        "expected": "83C768",
+        "actual": "83C768",
+        "pass": true
+      },
+      {
+        "site": "0x0055206D",
+        "meaning": "inline key pointer after two pushes",
+        "expected": "8D442438",
+        "actual": "8D442438",
+        "pass": true
+      },
+      {
+        "site": "0x00552097",
+        "meaning": "SimpleMissile post-cleanup+0x6C clear",
+        "expected": "C6456C00",
+        "actual": "C6456C00",
+        "pass": true
+      },
+      {
+        "site": "0x00579AB8",
+        "meaning": "tree node+0x0C numeric key",
+        "expected": "8B710C",
+        "actual": "8B710C",
+        "pass": true
+      },
+      {
+        "site": "0x00579ABD",
+        "meaning": "unsigned comparison jump JAE",
+        "expected": "7305",
+        "actual": "7305",
+        "pass": true
+      }
+    ],
+    "pseudocodes": {
+      "0x00515420": {
+        "present": true,
+        "code_sha256_match": true
+      },
+      "0x00515470": {
+        "present": true,
+        "code_sha256_match": true
+      },
+      "0x004E6D10": {
+        "present": true,
+        "code_sha256_match": true
+      },
+      "0x0054BA00": {
+        "present": true,
+        "code_sha256_match": true
+      },
+      "0x00552030": {
+        "present": true,
+        "code_sha256_match": true
+      },
+      "0x00579AA0": {
+        "present": true,
+        "code_sha256_match": true
+      },
+      "0x00510850": {
+        "present": true,
+        "code_sha256_match": true
+      },
+      "0x0040E700": {
+        "present": true,
+        "code_sha256_match": true
+      }
+    },
+    "pass": true,
+    "warning": "This is static byte/index verification, not original runtime Golden evidence."
+  },
+  "counters": {
+    "source_call_pass": 14,
+    "source_call_total": 14,
+    "opcode_pass": 16,
+    "opcode_total": 16,
+    "pseudoc_sha_pass": 8,
+    "pseudoc_total": 8,
+    "golden_pass": 0,
+    "strict_match": 0,
+    "new_ready": 0,
+    "master_integration": 0,
+    "task_done_increment": 0
+  },
+  "next": [
+    "find producer/insertion sites of manager+0x68 tree",
+    "prove origin of manager+0x1C candidate_context",
+    "dynamic alias and Golden with no EXE mutation"
+  ],
+  "warnings": [
+    "Indirect and data-structure semantic equivalence still VERIFY",
+    "Do not import to PC MASTER without owner and conflict check",
+    "This record does not establish runtime hit order or damage effects"
+  ]
+}

@@ -10,4 +10,7 @@
 - [research/recovered/b_batch3/B_T012_T013_COLLISION_CLEANUP_OWNER_OFFLINE_20261023_0009.md 行 32](../../research/recovered/b_batch3/B_T012_T013_COLLISION_CLEANUP_OWNER_OFFLINE_20261023_0009.md?plain=1#L32-L32) — candidate_tree_address = candidate_context + 0x68
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+- [research/recovered/json_sources1/reports/data/B_T012_T013_COLLISION_CLEANUP_OWNER_EVIDENCE_20261023_0009.json 行 222](../../research/recovered/json_sources1/reports/data/B_T012_T013_COLLISION_CLEANUP_OWNER_EVIDENCE_20261023_0009.json?plain=1#L222-L222) — "meaning": "candidate_context+0x68",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

@@ -1,0 +1,48 @@
+{
+  "research_id": "E-AUDIT-20261030-13H-T020-T013-DUAL-SCHEDULER-STATIC-GATE-01",
+  "owner": "E/T020",
+  "evidence_status": "STATIC / SYNTHETIC EXECUTED / VERIFY / NOT READY",
+  "run_date_jst": "2026-10-30",
+  "native_pe_sha_windows_pass": 3,
+  "jump_table_entries_pass": 4,
+  "synthetic_cases_pass": 56,
+  "synthetic_case_classes": {
+    "scheduler_a": 24,
+    "scheduler_b": 24,
+    "negative": 8
+  },
+  "independent_reexecution": "PASS (exit code 0 independently confirmed)",
+  "original_game_started": false,
+  "original_dynamic_observed": 0,
+  "actual_golden_pass": 0,
+  "strict_match": 0,
+  "new_ready_integration_ids": [],
+  "master_checkpoint_last_confirmed": 196,
+  "master_ready_last_confirmed": 596,
+  "master_task_statuses": {
+    "DONE": 9,
+    "IN_PROGRESS": 21,
+    "VERIFY": 4
+  },
+  "master_sha256_readonly": "E7329C9C6368E67BE191A4ABF45156319E32826FF039FB2B9E226DEDDAC6B6B3",
+  "readbacks": [
+    {
+      "file": "t020_e_t013_dual_scheduler_dispatch_gate_20261030_13H.py",
+      "bytes": 4968,
+      "sha256": "B9A67AEB3D3AB3D93BF980B22D6F6F178EFA3E6295583297AFCE5B2AFBD05144"
+    },
+    {
+      "file": "T020_E_T013_DUAL_SCHEDULER_CASES_20261030_13H.json",
+      "bytes": 12414,
+      "sha256": "7D0722EC12F0ADCD783FD0C8CC86C2BE709572BD2963795061E7B5E4EAC7816B"
+    },
+    {
+      "file": "T020_E_T013_DUAL_SCHEDULER_ACCEPTANCE_20261030_13H.md",
+      "bytes": 3924,
+      "sha256": "0FA0982522AC9357936DDDD29FD4A19D5C104A98C319059C19F5986E338243B6"
+    }
+  ],
+  "blocked_prior_safety_refusal": "B-RC-20261030-1115-T028-T013-APPEND-SAFETY-01 (3 B-owned append notes still unreflected)",
+  "offline_unsynced": "prior E artifacts not fully reconciled; this run's E artifacts saved on PC",
+  "next": "B mode0/mode1 optional callee guards, manager identity and original same-run G0/G1/G2; E code/receipt hash completed"
+}

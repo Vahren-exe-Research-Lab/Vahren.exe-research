@@ -1,0 +1,666 @@
+[
+  {
+    "name": "routine",
+    "opcode": 1
+  },
+  {
+    "name": "return",
+    "opcode": 2
+  },
+  {
+    "name": "break",
+    "opcode": 3
+  },
+  {
+    "name": "continue",
+    "opcode": 4
+  },
+  {
+    "name": "win",
+    "opcode": 5
+  },
+  {
+    "name": "terminate",
+    "opcode": 6
+  },
+  {
+    "name": "save",
+    "opcode": 7
+  },
+  {
+    "name": "next",
+    "opcode": 8
+  },
+  {
+    "name": "wait",
+    "opcode": 9
+  },
+  {
+    "name": "battleEvent",
+    "opcode": 10
+  },
+  {
+    "name": "msg",
+    "opcode": 11
+  },
+  {
+    "name": "msg2",
+    "opcode": 11
+  },
+  {
+    "name": "talk",
+    "opcode": 11
+  },
+  {
+    "name": "talk2",
+    "opcode": 11
+  },
+  {
+    "name": "chat",
+    "opcode": 11
+  },
+  {
+    "name": "chat2",
+    "opcode": 11
+  },
+  {
+    "name": "font",
+    "opcode": 12
+  },
+  {
+    "name": "fontc",
+    "opcode": 13
+  },
+  {
+    "name": "select",
+    "opcode": 14
+  },
+  {
+    "name": "choice",
+    "opcode": 15
+  },
+  {
+    "name": "erase",
+    "opcode": 16
+  },
+  {
+    "name": "dialog",
+    "opcode": 17
+  },
+  {
+    "name": "setbcg",
+    "opcode": 18
+  },
+  {
+    "name": "bg",
+    "opcode": 18
+  },
+  {
+    "name": "title",
+    "opcode": 19
+  },
+  {
+    "name": "title2",
+    "opcode": 19
+  },
+  {
+    "name": "fadeout",
+    "opcode": 20
+  },
+  {
+    "name": "darkness",
+    "opcode": 22
+  },
+  {
+    "name": "shadow",
+    "opcode": 23
+  },
+  {
+    "name": "worldskin",
+    "opcode": 24
+  },
+  {
+    "name": "shake",
+    "opcode": 25
+  },
+  {
+    "name": "showBlind",
+    "opcode": 26
+  },
+  {
+    "name": "hideBlind",
+    "opcode": 26
+  },
+  {
+    "name": "zoom",
+    "opcode": 27
+  },
+  {
+    "name": "backScroll",
+    "opcode": 28
+  },
+  {
+    "name": "scrollSpeed",
+    "opcode": 29
+  },
+  {
+    "name": "scroll",
+    "opcode": 30
+  },
+  {
+    "name": "scroll2",
+    "opcode": 30
+  },
+  {
+    "name": "locate",
+    "opcode": 31
+  },
+  {
+    "name": "focus",
+    "opcode": 32
+  },
+  {
+    "name": "playSE",
+    "opcode": 33
+  },
+  {
+    "name": "playBGM",
+    "opcode": 34
+  },
+  {
+    "name": "play",
+    "opcode": 34
+  },
+  {
+    "name": "stopBGM",
+    "opcode": 35
+  },
+  {
+    "name": "stop",
+    "opcode": 35
+  },
+  {
+    "name": "volume",
+    "opcode": 36
+  },
+  {
+    "name": "loopBGM",
+    "opcode": 37
+  },
+  {
+    "name": "playWorld",
+    "opcode": 38
+  },
+  {
+    "name": "playBattle",
+    "opcode": 39
+  },
+  {
+    "name": "setWorldMusic",
+    "opcode": 40
+  },
+  {
+    "name": "resetWorldMusic",
+    "opcode": 41
+  },
+  {
+    "name": "showSpot",
+    "opcode": 42
+  },
+  {
+    "name": "hideSpot",
+    "opcode": 43
+  },
+  {
+    "name": "linkSpot",
+    "opcode": 44
+  },
+  {
+    "name": "linkEscape",
+    "opcode": 44
+  },
+  {
+    "name": "hideLink",
+    "opcode": 45
+  },
+  {
+    "name": "hideEscape",
+    "opcode": 45
+  },
+  {
+    "name": "spotmark",
+    "opcode": 46
+  },
+  {
+    "name": "showSpotMark",
+    "opcode": 46
+  },
+  {
+    "name": "hideSpotMark",
+    "opcode": 46
+  },
+  {
+    "name": "image",
+    "opcode": 47
+  },
+  {
+    "name": "face",
+    "opcode": 47
+  },
+  {
+    "name": "picture",
+    "opcode": 47
+  },
+  {
+    "name": "picture2",
+    "opcode": 47
+  },
+  {
+    "name": "face2",
+    "opcode": 48
+  },
+  {
+    "name": "showImage",
+    "opcode": 49
+  },
+  {
+    "name": "showFace",
+    "opcode": 49
+  },
+  {
+    "name": "showPict",
+    "opcode": 49
+  },
+  {
+    "name": "hideImage",
+    "opcode": 50
+  },
+  {
+    "name": "hideChara",
+    "opcode": 52
+  },
+  {
+    "name": "reverseChara",
+    "opcode": 53
+  },
+  {
+    "name": "showPicture",
+    "opcode": 54
+  },
+  {
+    "name": "hidePicture",
+    "opcode": 55
+  },
+  {
+    "name": "doskill",
+    "opcode": 56
+  },
+  {
+    "name": "reloadMenu",
+    "opcode": 57
+  },
+  {
+    "name": "showPolitics",
+    "opcode": 58
+  },
+  {
+    "name": "showCamp",
+    "opcode": 59
+  },
+  {
+    "name": "resetZone",
+    "opcode": 60
+  },
+  {
+    "name": "doGameEnding",
+    "opcode": 62
+  },
+  {
+    "name": "setGameClear",
+    "opcode": 63
+  },
+  {
+    "name": "exit",
+    "opcode": 64
+  },
+  {
+    "name": "ppl1",
+    "opcode": 70
+  },
+  {
+    "name": "showDungeon",
+    "opcode": 73
+  },
+  {
+    "name": "cutin",
+    "opcode": 74
+  },
+  {
+    "name": "vc",
+    "opcode": 75
+  },
+  {
+    "name": "gread",
+    "opcode": 76
+  },
+  {
+    "name": "gwrite",
+    "opcode": 77
+  },
+  {
+    "name": "choiceTitle",
+    "opcode": 78
+  },
+  {
+    "name": "isGameClear",
+    "opcode": 0
+  },
+  {
+    "name": "isPeace",
+    "opcode": 1
+  },
+  {
+    "name": "isNPM",
+    "opcode": 2
+  },
+  {
+    "name": "isWatching",
+    "opcode": 2
+  },
+  {
+    "name": "isWorld",
+    "opcode": 3
+  },
+  {
+    "name": "isMap",
+    "opcode": 4
+  },
+  {
+    "name": "isEvent",
+    "opcode": 4
+  },
+  {
+    "name": "yet",
+    "opcode": 5
+  },
+  {
+    "name": "rand",
+    "opcode": 6
+  },
+  {
+    "name": "isNewTurn",
+    "opcode": 7
+  },
+  {
+    "name": "isWorldMusicStop",
+    "opcode": 8
+  },
+  {
+    "name": "isPlayerTurn",
+    "opcode": 9
+  },
+  {
+    "name": "isPlayerEnd",
+    "opcode": 10
+  },
+  {
+    "name": "isScenario",
+    "opcode": 11
+  },
+  {
+    "name": "isComTurn",
+    "opcode": 12
+  },
+  {
+    "name": "isSelect",
+    "opcode": 13
+  },
+  {
+    "name": "istoWorld",
+    "opcode": 14
+  },
+  {
+    "name": "isPlayer",
+    "opcode": 100
+  },
+  {
+    "name": "isAlive",
+    "opcode": 102
+  },
+  {
+    "name": "isMaster",
+    "opcode": 103
+  },
+  {
+    "name": "isRoamer",
+    "opcode": 104
+  },
+  {
+    "name": "isEnemy",
+    "opcode": 105
+  },
+  {
+    "name": "isLeader",
+    "opcode": 106
+  },
+  {
+    "name": "isVassal",
+    "opcode": 107
+  },
+  {
+    "name": "isRoamLeader",
+    "opcode": 108
+  },
+  {
+    "name": "isTalent",
+    "opcode": 109
+  },
+  {
+    "name": "isEnable",
+    "opcode": 110
+  },
+  {
+    "name": "isSameArmy",
+    "opcode": 111
+  },
+  {
+    "name": "isArbeit",
+    "opcode": 112
+  },
+  {
+    "name": "isDone",
+    "opcode": 113
+  },
+  {
+    "name": "isFriend",
+    "opcode": 114
+  },
+  {
+    "name": "getTurn",
+    "opcode": 200
+  },
+  {
+    "name": "countSpot",
+    "opcode": 201
+  },
+  {
+    "name": "countForce",
+    "opcode": 202
+  },
+  {
+    "name": "countGain",
+    "opcode": 203
+  },
+  {
+    "name": "countMoney",
+    "opcode": 204
+  },
+  {
+    "name": "getMode",
+    "opcode": 205
+  },
+  {
+    "name": "countPower",
+    "opcode": 206
+  },
+  {
+    "name": "inPower",
+    "opcode": 300
+  },
+  {
+    "name": "inSpot",
+    "opcode": 301
+  },
+  {
+    "name": "inBattle",
+    "opcode": 302
+  },
+  {
+    "name": "inRoamSpot",
+    "opcode": 303
+  },
+  {
+    "name": "isWar",
+    "opcode": 401
+  },
+  {
+    "name": "isLeague",
+    "opcode": 402
+  },
+  {
+    "name": "isInvade",
+    "opcode": 403
+  },
+  {
+    "name": "isDungeon",
+    "opcode": 404
+  },
+  {
+    "name": "getClearFloor",
+    "opcode": 405
+  },
+  {
+    "name": "isNext",
+    "opcode": 406
+  },
+  {
+    "name": "isNowSpot",
+    "opcode": 407
+  },
+  {
+    "name": "countVar",
+    "opcode": 500
+  },
+  {
+    "name": "count",
+    "opcode": 500
+  },
+  {
+    "name": "inVar",
+    "opcode": 501
+  },
+  {
+    "name": "has",
+    "opcode": 501
+  },
+  {
+    "name": "conVar",
+    "opcode": 502
+  },
+  {
+    "name": "amount",
+    "opcode": 502
+  },
+  {
+    "name": "reckon",
+    "opcode": 502
+  },
+  {
+    "name": "eqVar",
+    "opcode": 503
+  },
+  {
+    "name": "equal",
+    "opcode": 503
+  },
+  {
+    "name": "isDead",
+    "opcode": 600
+  },
+  {
+    "name": "isAllDead",
+    "opcode": 601
+  },
+  {
+    "name": "getTime",
+    "opcode": 602
+  },
+  {
+    "name": "getLimit",
+    "opcode": 603
+  },
+  {
+    "name": "isInterval",
+    "opcode": 604
+  },
+  {
+    "name": "getDistance",
+    "opcode": 605
+  },
+  {
+    "name": "isWhoDead",
+    "opcode": 606
+  },
+  {
+    "name": "isAnyDead",
+    "opcode": 606
+  },
+  {
+    "name": "isActive",
+    "opcode": 607
+  },
+  {
+    "name": "getLifePer",
+    "opcode": 608
+  },
+  {
+    "name": "getLife",
+    "opcode": 608
+  },
+  {
+    "name": "countUnit",
+    "opcode": 609
+  },
+  {
+    "name": "isRedAlive",
+    "opcode": 610
+  },
+  {
+    "name": "isBlueAlive",
+    "opcode": 611
+  },
+  {
+    "name": "getRedCount",
+    "opcode": 612
+  },
+  {
+    "name": "getBlueCount",
+    "opcode": 613
+  },
+  {
+    "name": "isPostIn",
+    "opcode": 614
+  },
+  {
+    "name": "countSkill",
+    "opcode": 615
+  },
+  {
+    "name": "countPost",
+    "opcode": 616
+  },
+  {
+    "name": "ptest",
+    "opcode": 900
+  }
+]

@@ -7,6 +7,9 @@
 <a id="field-b8"></a>
 ## group + 0xB8
 
+- [research/recovered/b_batch9/data/T013_MODE2_PRIMARY_UNIT_MODE3_GATE_NATIVE_20261030_14H.md 行 11](../../research/recovered/b_batch9/data/T013_MODE2_PRIMARY_UNIT_MODE3_GATE_NATIVE_20261030_14H.md?plain=1#L11-L11) — 0x44BD9A MOV [EBX+0xB8],ESI。非NULLなら0x44BDAD CALL0x565780、0x44BDBB CALL0x5158E0へ、NULLなら0x44BDC0へ。group+0xB8はこの経路の選択Unit参照と静的推定。+0x1867Cの論理名と下位の実副作用はVERIFY。
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 - [research/recovered/e_reports/T020_E_T013_MODE2_DUALGATE_ACCEPTANCE_20261030_15H.md 行 6](../../research/recovered/e_reports/T020_E_T013_MODE2_DUALGATE_ACCEPTANCE_20261030_15H.md?plain=1#L6-L6) — - Independent Capstone x86 decoding matched 14/14 exact instruction + operand pairs, including 0x44BDEC JNE 0x44BEC5, 0x44BED1 CALL 0x56F130, 0x44BFA1/AA dual-b
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
 

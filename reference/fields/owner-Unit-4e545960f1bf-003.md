@@ -7,6 +7,21 @@
 <a id="field-c8"></a>
 ## Unit + 0xC8
 
+- [research/recovered/rea_batch10/reports/REA_20261020_0035_T013_T031_STEALTH_RNG_CARDINALITY_QC.md 行 12](../../research/recovered/rea_batch10/reports/REA_20261020_0035_T013_T031_STEALTH_RNG_CARDINALITY_QC.md?plain=1#L12-L12) — - [COMBINED KNOWN DIRECT CALL COUNT] C=counterReached,T=(cachedTarget==0),N=(signed Unit+0xC8<0),S=(byte Unit+0x137!=0)。R_parent=C?(1+int(T&&N)+int(S&&N)):0（前回Q
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_batch13/reports/REA_T013_SUPPORT_VECTOR_REFRESH_GUARD_20261010_2336.md 行 9](../../research/recovered/rea_batch13/reports/REA_T013_SUPPORT_VECTOR_REFRESH_GUARD_20261010_2336.md?plain=1#L9-L9) — - 0x57BA07..0x57BA34ではUnit+0xC8<0なら独立CRT乱数と境界比較を行い、一方の選択時だけ0x57BA3Fの0x514F10を経て0x57BA53 CALL 0x57CFA0→0x57BA58 JMP 0x57BA9C。この経路では下記0x5158A0や0x57CFD0を呼ばない。
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
+- [research/recovered/rea_batch13/reports/REA_T013_SUPPORT_VECTOR_REFRESH_GUARD_20261010_2336.md 行 16](../../research/recovered/rea_batch13/reports/REA_T013_SUPPORT_VECTOR_REFRESH_GUARD_20261010_2336.md?plain=1#L16-L16) — - [TEST DESIGNED/NOT RUN] full refresh、Unit+0x137={0,1}、Unit+0xC8={負,非負}、乱数比較={成否}、vector begin=end/!=endで、3 calleeの呼数・+0x1E588・可視ターゲット・乱数系列を独立trace。
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
+- [research/recovered/rea_batch14/reports/REA_SOURCE_RECOVERY_T013_POOL_ARGUMENTS_20261011.md 行 13](../../research/recovered/rea_batch14/reports/REA_SOURCE_RECOVERY_T013_POOL_ARGUMENTS_20261011.md?plain=1#L13-L13) — - `0x57B938..0x57B964`: Unit+0xC8<0のときだけ主target側の独立rand15+native変換を行い、`roll < [0x65BD64]`で分岐。
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
+- [research/recovered/rea_batch14/reports/STATIC_DECOMP_COMPAT_CORRECTIONS_20261010.md 行 38](../../research/recovered/rea_batch14/reports/STATIC_DECOMP_COMPAT_CORRECTIONS_20261010.md?plain=1#L38-L38) — - 直接CALL site: `0x57B8FE` jitter、cachedTarget=NULLかつUnit+0xC8<0のみ `0x57B940` primary confusion、Unit+0x137非0かつ+0xC8<0のみ`0x57BA10`support confusion。これらのほかcallee内の
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
 - [research/recovered/rea_batch14/reports/WAVE4_FINDINGS_20261010.md 行 86](../../research/recovered/rea_batch14/reports/WAVE4_FINDINGS_20261010.md?plain=1#L86-L86) — - `0x57B930` cached primary target `Unit+0x1E570 == 0` かつ `0x57B938` confusion gauge `Unit+0xC8 < 0` の時だけ、`0x57B940: CALL 0x5B6EAB` を追加1回。抽選結果と `unit_confusion_
   制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
 
@@ -363,26 +378,5 @@
 
 - [research/recovered/exp/EXP_SUMMON_OWNER_RESEARCH.md 行 8](../../research/recovered/exp/EXP_SUMMON_OWNER_RESEARCH.md?plain=1#L8-L8) — 既知STATIC: ヒット経験値 writer 0x551E50 は攻撃BattleUnit+0x1C8を用い、紐づくUnit+0x16Cへ加算。
   制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; early unresolved cache/lifetime questions refined by CACHE_STRING_KEY, ENDTRANSFER, LIFECYCLE; wiki refusal is metadata only, held draft not copied
-
-- [research/recovered/exp/EXP_SUMMON_OWNER_RESEARCH.md 行 29](../../research/recovered/exp/EXP_SUMMON_OWNER_RESEARCH.md?plain=1#L29-L29) — [STATIC-PSEUDOC] 0x551E50はBattleUnit+0x1C8のUnit+0x16CへEXPを加算。+0x1CC経由の加算はこの関数にない。
-  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; early unresolved cache/lifetime questions refined by CACHE_STRING_KEY, ENDTRANSFER, LIFECYCLE; wiki refusal is metadata only, held draft not copied
-
-- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 332](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L332-L332) — - 既往T012§59の0x551E50はhit context one-shot後、battle Unit+0x1C8のlinked Unit+0x16Cを増分し+0x170と閾値比較する。今回、同offset群のUnit serializer出力側が別証拠で揃った。ただし0x551E50のlinked対象とwrit
-  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
-
-<a id="field-170"></a>
-## Unit + 0x170
-
-- [research/recovered/b_batch5/data/T011_LEVELUP_11FIELD_RECALC_CACHE_GATE_20261021_17H.md 行 8](../../research/recovered/b_batch5/data/T011_LEVELUP_11FIELD_RECALC_CACHE_GATE_20261021_17H.md?plain=1#L8-L8) — 1. `0x58A650`入口はGhidra擬似Cで`*(uint*)(Unit+0x170) <= *(uint*)(Unit+0x16C)`の**unsigned**閾値判定。従来T011 03:09資料の既存知見で再計上しない。
-  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
-
-<a id="field-178"></a>
-## Unit + 0x178
-
-- [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/HANDOFF.md 行 49](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/HANDOFF.md?plain=1#L49-L49) — - **[ON-STAND-010新発見] SUMMON_PARENT_NATIVE_DAT_BOUNDARY_20261025.md**：既存Ghidra V9で召喚親子リンクを検証。親Unit+0x178/17C/180＝子ポインタ一覧、0x5774A0＝子登録、0x577600＝子数を用いた召喚上限判定、0x54
-  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
-
-- [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/STAND_DISC_GENERIC_TRANSFER_FEASIBILITY_20261025.md 行 35](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/STAND_DISC_GENERIC_TRANSFER_FEASIBILITY_20261025.md?plain=1#L35-L35) — Unit+0x178/17C/180 に原作の召喚子Unitベクタを確認。登録処理0x005774A0、召喚可能数検査0x00577600、術者死亡時のelement_lost処理0x005445E0/0x00575A60。親子管理を新規開発する必要はない。**ただしDATの親別・技能別子取得/生存中の親からの子だけ消
-  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

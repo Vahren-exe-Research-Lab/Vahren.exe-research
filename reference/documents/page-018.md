@@ -10,505 +10,505 @@
 
 [前のページ](page-017.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md) · [次のページ](page-019.md)
 
-- [Bounded v2 implementation — 2026-10-27](../../research/recovered/outside_dev1/reports/005_WORK_GENERIC_V2_IMPLEMENTATION_20261027.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/005_WORK_GENERIC_V2_IMPLEMENTATION_20261027.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1740-L1740)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
-  本文 SHA256 `650466eac9db1ffb5d9ceeed9cf5684c83d9d8a7baf149c4eee277b244394adc`
-  元パス <code>dev_lab/_work/claude_loader_patches_20261026/WORK_GENERIC_V2_IMPLEMENTATION_20261027.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1740-L1740)。
-
 - [Auto-arm integration checkpoint — 2026-10-28](../../research/recovered/outside_dev1/reports/006_WORK_AUTO_ARM_INTEGRATION_20261028.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/006_WORK_AUTO_ARM_INTEGRATION_20261028.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1741-L1741)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1740-L1740)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `d5df53c3596c5428a98ea8be57ce18d61ac07af431391406cb26e68bf125d680`
-  元パス <code>dev_lab/_work/claude_loader_patches_20261026/auto_arm/WORK_AUTO_ARM_INTEGRATION_20261028.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1741-L1741)。
+  元パス <code>dev_lab/_work/claude_loader_patches_20261026/auto_arm/WORK_AUTO_ARM_INTEGRATION_20261028.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1740-L1740)。
 
 - [DAT 汎用 UI v3 の呼び出し仕様（Claude 2026-10-28、FINDINGS §88）](../../research/recovered/outside_dev1/reports/007_dat_ui_v3_SPEC.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/007_dat_ui_v3_SPEC.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1742-L1742)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1741-L1741)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `3157ac41407678335440b20427c83dff774fc4adcbdf592672a6d571b16b69cc`
-  元パス <code>dev_lab/_work/claude_loader_patches_20261026/dat_ui_v3_SPEC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1742-L1742)。
+  元パス <code>dev_lab/_work/claude_loader_patches_20261026/dat_ui_v3_SPEC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1741-L1741)。
 
 - [DAT 連携型・汎用ユニット一覧選択（profile v4）仕様](../../research/recovered/outside_dev1/reports/008_DAT_UI_V4_SPEC.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/008_DAT_UI_V4_SPEC.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1743-L1743)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1742-L1742)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `845c7919c6448a965326273271e1815bb9d0b584c91db4f0a6f7e5a83d4cd3c1`
-  元パス <code>dev_lab/_work/claude_loader_patches_20261026/v4/DAT_UI_V4_SPEC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1743-L1743)。
-  元パス <code>dev_lab/_work/startup_clean_20261025/新約迫真戦記―ほのぼの神話ver0.67 豪華版/HakushinUI_v1.0/DAT_UI_V4_SPEC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1792-L1792)。 FULL_BODY_EXACT_ALIAS。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  元パス <code>dev_lab/_work/claude_loader_patches_20261026/v4/DAT_UI_V4_SPEC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1742-L1742)。
+  元パス <code>dev_lab/_work/startup_clean_20261025/新約迫真戦記―ほのぼの神話ver0.67 豪華版/HakushinUI_v1.0/DAT_UI_V4_SPEC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1791-L1791)。 FULL_BODY_EXACT_ALIAS。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
 
 - [Work v4/v5 build integration — 2026-10-29](../../research/recovered/outside_dev1/reports/009_WORK_BUILD_INTEGRATION_20261029.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/009_WORK_BUILD_INTEGRATION_20261029.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1744-L1744)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1743-L1743)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `0744bacda07b251f3e5b2baa8ea46d355284a677d91e2177b2f9a9577c7d06b0`
-  元パス <code>dev_lab/_work/claude_loader_patches_20261026/v4/WORK_BUILD_INTEGRATION_20261029.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1744-L1744)。
+  元パス <code>dev_lab/_work/claude_loader_patches_20261026/v4/WORK_BUILD_INTEGRATION_20261029.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1743-L1743)。
 
 - [Windows Core/loader regression — 2026-10-29](../../research/recovered/outside_dev1/reports/010_WORK_CORE_REGRESSION_20261029.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/010_WORK_CORE_REGRESSION_20261029.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1745-L1745)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1744-L1744)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `99dca9de2bdc1e7092ef9cc42971d00081607a964a2ca3ccd92b2e314bd09785`
-  元パス <code>dev_lab/_work/claude_loader_patches_20261026/v4/WORK_CORE_REGRESSION_20261029.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1745-L1745)。
+  元パス <code>dev_lab/_work/claude_loader_patches_20261026/v4/WORK_CORE_REGRESSION_20261029.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1744-L1744)。
 
 - [Optional location column — Work 2026-10-29](../../research/recovered/outside_dev1/reports/011_WORK_GRID_LOCATION_20261029.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/011_WORK_GRID_LOCATION_20261029.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1746-L1746)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1745-L1745)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `c6ab15667ed5435e6309149ed0840e6bf66d6ef9a5c6bccef2880e428b39d288`
-  元パス <code>dev_lab/_work/claude_loader_patches_20261026/v4/WORK_GRID_LOCATION_20261029.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1746-L1746)。
+  元パス <code>dev_lab/_work/claude_loader_patches_20261026/v4/WORK_GRID_LOCATION_20261029.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1745-L1745)。
 
 - [Legacy selector/hover regression recovery — 2026-10-29](../../research/recovered/outside_dev1/reports/012_WORK_LEGACY_BOUNDARIES_20261029_RECOVERY.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/012_WORK_LEGACY_BOUNDARIES_20261029_RECOVERY.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1747-L1747)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1746-L1746)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `ffcd548c4a3e5da0be865a28e75d1a41ae3a37f9f2fed1c82a8e4944b054acca`
-  元パス <code>dev_lab/_work/claude_loader_patches_20261026/v4/WORK_LEGACY_BOUNDARIES_20261029_RECOVERY.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1747-L1747)。
+  元パス <code>dev_lab/_work/claude_loader_patches_20261026/v4/WORK_LEGACY_BOUNDARIES_20261029_RECOVERY.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1746-L1746)。
 
 - [Pinned Temp non-action hover: isolated helper handoff](../../research/recovered/outside_dev1/reports/013_WORK_PINNED_TEMP_HOVER_SPIKE_20261029.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/013_WORK_PINNED_TEMP_HOVER_SPIKE_20261029.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1748-L1748)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1747-L1747)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `a72530094b3886ecfb3039c9fe7880e1fd8060d88104c77d9fe814c6b6601b68`
-  元パス <code>dev_lab/_work/claude_loader_patches_20261026/v4/WORK_PINNED_TEMP_HOVER_SPIKE_20261029.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1748-L1748)。
+  元パス <code>dev_lab/_work/claude_loader_patches_20261026/v4/WORK_PINNED_TEMP_HOVER_SPIKE_20261029.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1747-L1747)。
 
 - [Runtime custom columns + location integration — 2026-10-29](../../research/recovered/outside_dev1/reports/014_WORK_RUNTIME_CUSTOM_LOCATION_GREEN_20261029.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/014_WORK_RUNTIME_CUSTOM_LOCATION_GREEN_20261029.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1749-L1749)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1748-L1748)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `496bef76f33ffc2e5153040002e476415e421a21eed022317c5bfdc1291c569b`
-  元パス <code>dev_lab/_work/claude_loader_patches_20261026/v4/WORK_RUNTIME_CUSTOM_LOCATION_GREEN_20261029.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1749-L1749)。
+  元パス <code>dev_lab/_work/claude_loader_patches_20261026/v4/WORK_RUNTIME_CUSTOM_LOCATION_GREEN_20261029.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1748-L1748)。
 
 - [v4 case A Cancel path review — 2026-10-29](../../research/recovered/outside_dev1/reports/015_WORK_V4_CANCEL_PATH_REVIEW_20261029.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/015_WORK_V4_CANCEL_PATH_REVIEW_20261029.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1750-L1750)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1749-L1749)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `6838a222f80f117327a142c2062fa850ace88dd409023b3a6dda5ba639111563`
-  元パス <code>dev_lab/_work/claude_loader_patches_20261026/v4/WORK_V4_CANCEL_PATH_REVIEW_20261029.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1750-L1750)。
+  元パス <code>dev_lab/_work/claude_loader_patches_20261026/v4/WORK_V4_CANCEL_PATH_REVIEW_20261029.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1749-L1749)。
 
 - [Independent v4 custom numeric reader review — 2026-10-29](../../research/recovered/outside_dev1/reports/016_WORK_V4_CUSTOM_READER_REVIEW_20261029.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/016_WORK_V4_CUSTOM_READER_REVIEW_20261029.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1751-L1751)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1750-L1750)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `c32122788c9829b99398e7f7c1037a84578d870cdb2fd45f782d64ee9840a39e`
-  元パス <code>dev_lab/_work/claude_loader_patches_20261026/v4/WORK_V4_CUSTOM_READER_REVIEW_20261029.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1751-L1751)。
+  元パス <code>dev_lab/_work/claude_loader_patches_20261026/v4/WORK_V4_CUSTOM_READER_REVIEW_20261029.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1750-L1750)。
 
 - [v4 readonly review: location and DAT-defined numeric columns](../../research/recovered/outside_dev1/reports/017_WORK_V4_REVIEW_LOCATION_CUSTOM_COLUMNS_20261029.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/017_WORK_V4_REVIEW_LOCATION_CUSTOM_COLUMNS_20261029.md`
-  回収状態 FULL_BODY_PRIVACY_VARIANT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1752-L1752)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Only personal profile prefix substitutions; byte spans and all unchanged gaps proven.
+  回収状態 FULL_BODY_PRIVACY_VARIANT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1751-L1751)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Only personal profile prefix substitutions; byte spans and all unchanged gaps proven.
   本文 SHA256 `40ce5dd574dce7611bd52acf8b626566b436de391e1dfd2d554de1726f279685`
-  元パス <code>dev_lab/_work/claude_loader_patches_20261026/v4/WORK_V4_REVIEW_LOCATION_CUSTOM_COLUMNS_20261029.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1752-L1752)。
+  元パス <code>dev_lab/_work/claude_loader_patches_20261026/v4/WORK_V4_REVIEW_LOCATION_CUSTOM_COLUMNS_20261029.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1751-L1751)。
 
 - [Bootstrap implementation plan](../../research/recovered/outside_dev1/reports/018_BOOTSTRAP.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/018_BOOTSTRAP.md`
-  回収状態 FULL_BODY_PRIVACY_VARIANT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1753-L1753)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Only personal profile prefix substitutions; byte spans and all unchanged gaps proven.
+  回収状態 FULL_BODY_PRIVACY_VARIANT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1752-L1752)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Only personal profile prefix substitutions; byte spans and all unchanged gaps proven.
   本文 SHA256 `ccae37e8b71d55d20071f0804e2455ef52028e43f7a2e3501fa354ea7787a8cc`
-  元パス <code>dev_lab/_work/claude_loader_patches_20261026/work_preapply_20261027/core/BOOTSTRAP.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1753-L1753)。
+  元パス <code>dev_lab/_work/claude_loader_patches_20261026/work_preapply_20261027/core/BOOTSTRAP.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1752-L1752)。
 
 - [Managed x86 CALL patch component](../../research/recovered/outside_dev1/reports/019_CALL_PATCH.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/019_CALL_PATCH.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1754-L1754)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1753-L1753)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `16025bf73aca7a671ed5f487c159c0833a13c2e764757edef79c22111eefca17`
-  元パス <code>dev_lab/_work/claude_loader_patches_20261026/work_preapply_20261027/core/CALL_PATCH.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1754-L1754)。
+  元パス <code>dev_lab/_work/claude_loader_patches_20261026/work_preapply_20261027/core/CALL_PATCH.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1753-L1753)。
 
 - [Nonblocking Core ownership gate](../../research/recovered/outside_dev1/reports/020_CORE_THREADS.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/020_CORE_THREADS.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1755-L1755)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1754-L1754)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `12fdf3d05055154a338cbb5d685e3d89ae30f4c9602227bed55170a5ddded253`
-  元パス <code>dev_lab/_work/claude_loader_patches_20261026/work_preapply_20261027/core/CORE_THREADS.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1755-L1755)。
+  元パス <code>dev_lab/_work/claude_loader_patches_20261026/work_preapply_20261027/core/CORE_THREADS.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1754-L1754)。
 
 - [Reservation extension integration plan](../../research/recovered/outside_dev1/reports/021_HOOK_EXTENSION.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/021_HOOK_EXTENSION.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1756-L1756)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1755-L1755)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `f6aab6ca4f9ea6bfe42f99cb700c8e05cc499e7ecfbade179e054466f16e472c`
-  元パス <code>dev_lab/_work/claude_loader_patches_20261026/work_preapply_20261027/core/HOOK_EXTENSION.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1756-L1756)。
+  元パス <code>dev_lab/_work/claude_loader_patches_20261026/work_preapply_20261027/core/HOOK_EXTENSION.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1755-L1755)。
 
 - [Bounded manifest planning layer](../../research/recovered/outside_dev1/reports/022_MANIFEST.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/022_MANIFEST.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1757-L1757)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1756-L1756)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `4cc36f3bd75aa026f48ab135f0b844db1bad87561c25083bba684d0031efe4fa`
-  元パス <code>dev_lab/_work/claude_loader_patches_20261026/work_preapply_20261027/core/MANIFEST.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1757-L1757)。
+  元パス <code>dev_lab/_work/claude_loader_patches_20261026/work_preapply_20261027/core/MANIFEST.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1756-L1756)。
 
 - [Hakushin Core x86 ABI fixture](../../research/recovered/outside_dev1/reports/023_README.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/023_README.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1758-L1758)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1757-L1757)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `a59b4df253a3f45c66a5d3214e7b2aa51e26695d9027720f41e032832651b522`
-  元パス <code>dev_lab/_work/claude_loader_patches_20261026/work_preapply_20261027/core/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1758-L1758)。
+  元パス <code>dev_lab/_work/claude_loader_patches_20261026/work_preapply_20261027/core/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1757-L1757)。
 
 - [Transitional recruitment Core adapter](../../research/recovered/outside_dev1/reports/024_RECRUIT_PLUGIN.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/024_RECRUIT_PLUGIN.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1759-L1759)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1758-L1758)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `5d4293102ef8d1b080b71138f100230e354d22c0b8cd523816ac3aa3f7ebf82d`
-  元パス <code>dev_lab/_work/claude_loader_patches_20261026/work_preapply_20261027/core/RECRUIT_PLUGIN.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1759-L1759)。
+  元パス <code>dev_lab/_work/claude_loader_patches_20261026/work_preapply_20261027/core/RECRUIT_PLUGIN.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1758-L1758)。
 
 - [Display-only selector Core research adapter](../../research/recovered/outside_dev1/reports/025_SELECTOR_PLUGIN.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/025_SELECTOR_PLUGIN.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1760-L1760)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1759-L1759)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `d237bd1808c02c9d03ee084021537115fc71aa72b38f22a33cd3b7e710e1fe3a`
-  元パス <code>dev_lab/_work/claude_loader_patches_20261026/work_preapply_20261027/core/SELECTOR_PLUGIN.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1760-L1760)。
+  元パス <code>dev_lab/_work/claude_loader_patches_20261026/work_preapply_20261027/core/SELECTOR_PLUGIN.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1759-L1759)。
 
 - [Opt-in startup integration plan](../../research/recovered/outside_dev1/reports/026_STARTUP.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/026_STARTUP.md`
-  回収状態 FULL_BODY_PRIVACY_VARIANT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1761-L1761)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Only personal profile prefix substitutions; byte spans and all unchanged gaps proven.
+  回収状態 FULL_BODY_PRIVACY_VARIANT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1760-L1760)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Only personal profile prefix substitutions; byte spans and all unchanged gaps proven.
   本文 SHA256 `6aa10ee2af16118e9c35c8b0412a81525a36aacabf99424306eb21845466d897`
-  元パス <code>dev_lab/_work/claude_loader_patches_20261026/work_preapply_20261027/core/STARTUP.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1761-L1761)。
+  元パス <code>dev_lab/_work/claude_loader_patches_20261026/work_preapply_20261027/core/STARTUP.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1760-L1760)。
 
 - [フルスクリーンの説明表示その2（2026-11-01 Claude）](../../research/recovered/outside_dev1/reports/027_README.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/027_README.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1762-L1762)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1761-L1761)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `2e253f152aca265459b1a2cb6bf4a3401ee862b8be383a56d0c21f17bc9da6e3`
-  元パス <code>dev_lab/_work/d3dproxy_20261101/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1762-L1762)。
+  元パス <code>dev_lab/_work/d3dproxy_20261101/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1761-L1761)。
 
 - [教育の生徒一覧を「補正合計」にする（Claude 2026-10-31、ユーザー判断）](../../research/recovered/outside_dev1/reports/028_README.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/028_README.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1763-L1763)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1762-L1762)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `7049eaa9f472b8d85d05a3cc1e15e06bf8b1bcf12876eb870a4ff9d38ee8111a`
-  元パス <code>dev_lab/_work/edu_total_20261031/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1763-L1763)。
+  元パス <code>dev_lab/_work/edu_total_20261031/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1762-L1762)。
 
 - [Bootstrap implementation plan](../../research/recovered/outside_dev1/reports/029_core__BOOTSTRAP.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/029_core__BOOTSTRAP.md`
-  回収状態 FULL_BODY_PRIVACY_VARIANT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1764-L1764)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Only personal profile prefix substitutions; byte spans and all unchanged gaps proven.
+  回収状態 FULL_BODY_PRIVACY_VARIANT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1763-L1763)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Only personal profile prefix substitutions; byte spans and all unchanged gaps proven.
   本文 SHA256 `1a46b95cb98592b14a90e76ff4604aef90101338a43e3e34b0f0a679df752068`
-  元パス <code>dev_lab/_work/ext_repo_20261101/before/core__BOOTSTRAP.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1764-L1764)。
+  元パス <code>dev_lab/_work/ext_repo_20261101/before/core__BOOTSTRAP.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1763-L1763)。
 
 - [Hook reservation metadata plan](../../research/recovered/outside_dev1/reports/030_core__HOOKS.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/030_core__HOOKS.md`
-  回収状態 FULL_BODY_PRIVACY_VARIANT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1765-L1765)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Only personal profile prefix substitutions; byte spans and all unchanged gaps proven.
+  回収状態 FULL_BODY_PRIVACY_VARIANT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1764-L1764)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Only personal profile prefix substitutions; byte spans and all unchanged gaps proven.
   本文 SHA256 `ecb3ea5c9033f7eee294af3b6ede62e20fa1a0f99854ad925f9ca1067d5e96a6`
-  元パス <code>dev_lab/_work/ext_repo_20261101/before/core__HOOKS.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1765-L1765)。
+  元パス <code>dev_lab/_work/ext_repo_20261101/before/core__HOOKS.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1764-L1764)。
 
 - [DirectInput8 forwarding fixture plan](../../research/recovered/outside_dev1/reports/031_core__PROXY.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/031_core__PROXY.md`
-  回収状態 FULL_BODY_PRIVACY_VARIANT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1766-L1766)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Only personal profile prefix substitutions; byte spans and all unchanged gaps proven.
+  回収状態 FULL_BODY_PRIVACY_VARIANT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1765-L1765)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Only personal profile prefix substitutions; byte spans and all unchanged gaps proven.
   本文 SHA256 `b771b81862ddb4a6bd6f9523b16c30c4bd42f4861a2a7e6640f376bf3d2a12e7`
-  元パス <code>dev_lab/_work/ext_repo_20261101/before/core__PROXY.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1766-L1766)。
+  元パス <code>dev_lab/_work/ext_repo_20261101/before/core__PROXY.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1765-L1765)。
 
 - [Opt-in startup integration plan](../../research/recovered/outside_dev1/reports/032_core__STARTUP.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/032_core__STARTUP.md`
-  回収状態 FULL_BODY_PRIVACY_VARIANT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1767-L1767)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Only personal profile prefix substitutions; byte spans and all unchanged gaps proven.
+  回収状態 FULL_BODY_PRIVACY_VARIANT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1766-L1766)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Only personal profile prefix substitutions; byte spans and all unchanged gaps proven.
   本文 SHA256 `d75633ff3c7243e78a2ae53a3e3e048b9903222feed40c6b5b900d2c3fb1d609`
-  元パス <code>dev_lab/_work/ext_repo_20261101/before/core__STARTUP.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1767-L1767)。
+  元パス <code>dev_lab/_work/ext_repo_20261101/before/core__STARTUP.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1766-L1766)。
 
 - [Verification — 2026-10-25](../../research/recovered/outside_dev1/reports/033_core__TEST_RESULTS.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/033_core__TEST_RESULTS.md`
-  回収状態 FULL_BODY_PRIVACY_VARIANT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1768-L1768)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Only personal profile prefix substitutions; byte spans and all unchanged gaps proven.
+  回収状態 FULL_BODY_PRIVACY_VARIANT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1767-L1767)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Only personal profile prefix substitutions; byte spans and all unchanged gaps proven.
   本文 SHA256 `56eeb5fb37e8863d176c5888267102951a63e8dc37648931422d8d36507bdef6`
-  元パス <code>dev_lab/_work/ext_repo_20261101/before/core__TEST_RESULTS.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1768-L1768)。
+  元パス <code>dev_lab/_work/ext_repo_20261101/before/core__TEST_RESULTS.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1767-L1767)。
 
 - [フルスクリーンで説明表示が出ない件の調査版（2026-10-31 Claude）](../../research/recovered/outside_dev1/reports/034_README.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/034_README.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1769-L1769)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1768-L1768)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `462240055a516392dbfcea5429f6df93f244fe2dbf57e608a380063445829b94`
-  元パス <code>dev_lab/_work/hoverdiag_20261031/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1769-L1769)。
+  元パス <code>dev_lab/_work/hoverdiag_20261031/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1768-L1768)。
 
 - [フルスクリーンの説明表示（2026-10-31 Claude）](../../research/recovered/outside_dev1/reports/035_README.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/035_README.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1770-L1770)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1769-L1769)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `f3e9ad485bb6a52ee99fc29e4570869a0f4f7f1b9660c0cc91de8ccf4eef613a`
-  元パス <code>dev_lab/_work/hoverfs_20261031/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1770-L1770)。
+  元パス <code>dev_lab/_work/hoverfs_20261031/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1769-L1769)。
 
 - [DAT の挙動事典（手書き。2026-10-29 Claude）](../../research/recovered/outside_dev1/reports/036_REF_DAT_BEHAVIOR.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/036_REF_DAT_BEHAVIOR.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1771-L1771)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1770-L1770)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `0a6392578ae51db4c25db0b81eb1d417565c2570342154cba28bb77e389d1900`
-  元パス <code>dev_lab/_work/kb_datui_20261101/before/REF_DAT_BEHAVIOR.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1771-L1771)。
+  元パス <code>dev_lab/_work/kb_datui_20261101/before/REF_DAT_BEHAVIOR.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1770-L1770)。
 
 - [DAT の挙動事典（手書き。2026-10-29 Claude）](../../research/recovered/outside_dev1/reports/038_conflict_REF_DAT_BEHAVIOR.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/038_conflict_REF_DAT_BEHAVIOR.md`
-  回収状態 FULL_BODY_PRIVACY_VARIANT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1773-L1773)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Unresolved merge-conflict artifact; both competing branches and markers retained. Only personal profile prefix substitutions; byte spans and all unchanged gaps proven.
+  回収状態 FULL_BODY_PRIVACY_VARIANT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1772-L1772)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Unresolved merge-conflict artifact; both competing branches and markers retained. Only personal profile prefix substitutions; byte spans and all unchanged gaps proven.
   本文 SHA256 `35950a87467dbd27f400197a1184f438dc7d16e845ac28244df50c4dc9efb9e1`
-  元パス <code>dev_lab/_work/kb_datui_20261101/conflict_REF_DAT_BEHAVIOR.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1773-L1773)。
+  元パス <code>dev_lab/_work/kb_datui_20261101/conflict_REF_DAT_BEHAVIOR.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1772-L1772)。
 
 - [DAT の挙動事典（手書き。2026-10-29 Claude）](../../research/recovered/outside_dev1/reports/039_REF_DAT_BEHAVIOR.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/039_REF_DAT_BEHAVIOR.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1774-L1774)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1773-L1773)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `ceafd12397d9d05921ccd0fa441a23a6512c6a783c59359b7e5389558bea6d66`
-  元パス <code>dev_lab/_work/kb_datui_20261101/new/REF_DAT_BEHAVIOR.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1774-L1774)。
+  元パス <code>dev_lab/_work/kb_datui_20261101/new/REF_DAT_BEHAVIOR.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1773-L1773)。
 
 - [UI の仕組み（手書き。2026-10-29 Claude）](../../research/recovered/outside_dev1/reports/040_REF_UI_SYSTEM.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/040_REF_UI_SYSTEM.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1775-L1775)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1774-L1774)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `657781d377f4dc52c3d7c6a048258417e8baa97378eff891dde7ce59d932a11c`
-  元パス <code>dev_lab/_work/kb_datui_20261101/new/REF_UI_SYSTEM.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1775-L1775)。
+  元パス <code>dev_lab/_work/kb_datui_20261101/new/REF_UI_SYSTEM.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1774-L1774)。
 
 - [セーブ形式の知識ベース更新案（2026-11-01 Claude、出典 S1101）](../../research/recovered/outside_dev1/reports/041_README.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/041_README.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1776-L1776)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1775-L1775)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `c43a38e4c167d2579ffafa12baafd282d630c72621394904db82c4916ce4d145`
-  元パス <code>dev_lab/_work/kb_save_20261101/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1776-L1776)。
+  元パス <code>dev_lab/_work/kb_save_20261101/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1775-L1775)。
 
 - [通常セーブ（.sav）形式の事典（2026-11-01 Claude。出典ID S1101）](../../research/recovered/outside_dev1/reports/042_REF_SAVE_FORMAT.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/042_REF_SAVE_FORMAT.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1777-L1777)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1776-L1776)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `53f1bb6853f1ee4bab3ca2b383f7d72df41fde44cedaa2942f6ac6646a1fea88`
-  元パス <code>dev_lab/_work/kb_save_20261101/new/REF_SAVE_FORMAT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1777-L1777)。
+  元パス <code>dev_lab/_work/kb_save_20261101/new/REF_SAVE_FORMAT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1776-L1776)。
 
 - [「お前クビや」の候補の絞り込みと連続解雇（Claude 2026-10-31、ユーザー要望）](../../research/recovered/outside_dev1/reports/043_README.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/043_README.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1778-L1778)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1777-L1777)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `1cbf12f0d3010865f4d15ce394aed47f9ff9a3c7e560013b1344fb6f40e003e3`
-  元パス <code>dev_lab/_work/kubi_20261031/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1778-L1778)。
+  元パス <code>dev_lab/_work/kubi_20261031/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1777-L1777)。
 
 - [一覧の窓を動かせる・大きさを変えられるようにする（Claude 2026-10-31、ユーザー要望）](../../research/recovered/outside_dev1/reports/044_README.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/044_README.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1779-L1779)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1778-L1778)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `fb0ce2257e5760d614838f1c5b13f1c9b0bd4d53e7bafcdfe2614116022c13a4`
-  元パス <code>dev_lab/_work/movable_20261031/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1779-L1779)。
+  元パス <code>dev_lab/_work/movable_20261031/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1778-L1778)。
 
 - [顔画像の先読み（計測付き、2026-10-31 Claude）](../../research/recovered/outside_dev1/reports/045_README.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/045_README.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1780-L1780)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1779-L1779)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `ca235dc380f3e00cd52ecf0fd4a79318c5364b0571c5488414941a7126ffcbed`
-  元パス <code>dev_lab/_work/prefetch_20261031/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1780-L1780)。
+  元パス <code>dev_lab/_work/prefetch_20261031/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1779-L1779)。
 
 - [タイトル画面の 10 秒待ちをなくす（Claude 2026-10-31）](../../research/recovered/outside_dev1/reports/046_README.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/046_README.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1781-L1781)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1780-L1780)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `876b3822c5a6b868287f9d68b529b6e1c4bca7512c4ae27ff05402bbf7f2594c`
-  元パス <code>dev_lab/_work/quick_arm_20261031/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1781-L1781)。
+  元パス <code>dev_lab/_work/quick_arm_20261031/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1780-L1780)。
 
 - [閉じた直後の反応しづらさ対策（2026-10-31 Claude）](../../research/recovered/outside_dev1/reports/047_README.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/047_README.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1782-L1782)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1781-L1781)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `1c1387416270d311161b9ae8f36c32acec6e54b239e5841342d5531bbaada118`
-  元パス <code>dev_lab/_work/quiet_20261031/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1782-L1782)。
+  元パス <code>dev_lab/_work/quiet_20261031/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1781-L1781)。
 
 - [後ろのボタン対策その2（2026-10-31 Claude）](../../research/recovered/outside_dev1/reports/048_README.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/048_README.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1783-L1783)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1782-L1782)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `ea214b246caa55b61aa7ae50d61c2277bb28f18071c71be2690fa3ae32d98af6`
-  元パス <code>dev_lab/_work/refresh_20261031/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1783-L1783)。
+  元パス <code>dev_lab/_work/refresh_20261031/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1782-L1782)。
 
 - [現在の状況](../../research/recovered/outside_dev1/reports/050_CHATGPT_CURRENT_HANDOFF.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/050_CHATGPT_CURRENT_HANDOFF.md`
-  回収状態 FULL_BODY_PRIVACY_VARIANT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1785-L1785)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Only personal profile prefix substitutions; byte spans and all unchanged gaps proven.
+  回収状態 FULL_BODY_PRIVACY_VARIANT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1784-L1784)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Only personal profile prefix substitutions; byte spans and all unchanged gaps proven.
   本文 SHA256 `c7e55e0e64285f7d94e64e7630213e6d709f96d0591a49fae323cb8dc7aabf91`
-  元パス <code>dev_lab/_work/release_20261101/before_docs/CHATGPT_CURRENT_HANDOFF.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1785-L1785)。
+  元パス <code>dev_lab/_work/release_20261101/before_docs/CHATGPT_CURRENT_HANDOFF.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1784-L1784)。
 
 - [汎用ユニット一覧の用途別統合と受入確認](../../research/recovered/outside_dev1/reports/051_DAT_UI_INTEGRATION_ACCEPTANCE.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/051_DAT_UI_INTEGRATION_ACCEPTANCE.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1786-L1786)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1785-L1785)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `0006418e81b5789f37996c6c2562640ac72747dfb6e52aae8686d60f57dbb9df`
-  元パス <code>dev_lab/_work/release_20261101/before_docs/DAT_UI_INTEGRATION_ACCEPTANCE.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1786-L1786)。
+  元パス <code>dev_lab/_work/release_20261101/before_docs/DAT_UI_INTEGRATION_ACCEPTANCE.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1785-L1785)。
 
 - [DAT 連携型・汎用ユニット一覧選択（profile v4）仕様](../../research/recovered/outside_dev1/reports/052_DAT_UI_V4_SPEC.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/052_DAT_UI_V4_SPEC.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1787-L1787)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1786-L1786)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `12447e1e759461f1dd58cb8dcd7d259e5e57d8d19cf34d48d7b1a56f680d2f1d`
-  元パス <code>dev_lab/_work/release_20261101/before_docs/DAT_UI_V4_SPEC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1787-L1787)。
+  元パス <code>dev_lab/_work/release_20261101/before_docs/DAT_UI_V4_SPEC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1786-L1786)。
 
 - [未完の依頼](../../research/recovered/outside_dev1/reports/053_WORK_REQUEST_QUEUE.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/053_WORK_REQUEST_QUEUE.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1788-L1788)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1787-L1787)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `7df70ef1041d8dde00528c380d202f58eb87014f9eba5e6dbe04e772d027323b`
-  元パス <code>dev_lab/_work/release_20261101/before_docs/WORK_REQUEST_QUEUE.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1788-L1788)。
+  元パス <code>dev_lab/_work/release_20261101/before_docs/WORK_REQUEST_QUEUE.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1787-L1787)。
 
 - [セーブ解析 途中メモ（2026-11-01、Claude）](../../research/recovered/outside_dev1/reports/054_SAVE_ANALYSIS_NOTE_20261101.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/054_SAVE_ANALYSIS_NOTE_20261101.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1789-L1789)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1788-L1788)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `12dbed5cb215e12d58c551db4e3a3e0d3c716907b84203eeb02b21e11600bbce`
-  元パス <code>dev_lab/_work/save_20261101/SAVE_ANALYSIS_NOTE_20261101.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1789-L1789)。
+  元パス <code>dev_lab/_work/save_20261101/SAVE_ANALYSIS_NOTE_20261101.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1788-L1788)。
 
 - [一覧をすぐ出す修正（Claude 2026-10-31、ユーザー判断）](../../research/recovered/outside_dev1/reports/055_README.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/055_README.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1790-L1790)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1789-L1789)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `b0173df93ff4473a65aa0d4dc85f50489c04420d4d9b9660ee7a4fb85d8d3993`
-  元パス <code>dev_lab/_work/show_grace_20261031/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1790-L1790)。
+  元パス <code>dev_lab/_work/show_grace_20261031/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1789-L1789)。
 
 - [専門学校送り・オーディションの取消を選択肢へ戻す（Claude 2026-10-31、ユーザー判断）](../../research/recovered/outside_dev1/reports/056_README.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/056_README.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1791-L1791)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1790-L1790)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `58fb36c7b9016cf522aef68d080934256c8cf0754297d253eb4a20a2d30f8e82`
-  元パス <code>dev_lab/_work/specialschool_cancel_20261031/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1791-L1791)。
+  元パス <code>dev_lab/_work/specialschool_cancel_20261031/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1790-L1790)。
 
 - [計測2回目＋後ろのボタン対策（2026-10-31 Claude）](../../research/recovered/outside_dev1/reports/058_README.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/058_README.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1793-L1793)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1792-L1792)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `d7e9bb207ef664b669c38dbcb9fc61417f35b82cdc369a46f3cb166fadbf3572`
-  元パス <code>dev_lab/_work/timing2_20261031/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1793-L1793)。
+  元パス <code>dev_lab/_work/timing2_20261031/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1792-L1792)。
 
 - [選択からパネル表示までの時間計測（診断版、2026-10-31 Claude）](../../research/recovered/outside_dev1/reports/059_README.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/059_README.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1794-L1794)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1793-L1793)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `a85013acecb60e366213666b6720545c9407da6a3e3e8f9117b77f21e95545ed`
-  元パス <code>dev_lab/_work/timing_20261031/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1794-L1794)。
+  元パス <code>dev_lab/_work/timing_20261031/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1793-L1793)。
 
 - [新約迫真戦記 ver0.67 変身スキル・形態移行のDAT全件調査](../../research/recovered/outside_dev1/reports/060_TRANSFORMATION_SKILL_AUDIT_20261103.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/060_TRANSFORMATION_SKILL_AUDIT_20261103.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1795-L1795)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Static DAT-derived authored classification with selected technical clauses, not a full asset copy; counts differ by documented historical scan scope.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1794-L1794)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Static DAT-derived authored classification with selected technical clauses, not a full asset copy; counts differ by documented historical scan scope.
   本文 SHA256 `7dfd4538c8b12ea8d02197305f30b325b78e2c24cd00ebb74fbf1c842747cbbe`
-  元パス <code>dev_lab/_work/transform_skill_audit_20261103/TRANSFORMATION_SKILL_AUDIT_20261103.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1795-L1795)。
+  元パス <code>dev_lab/_work/transform_skill_audit_20261103/TRANSFORMATION_SKILL_AUDIT_20261103.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1794-L1794)。
 
 - [新約迫真戦記 ver0.67：召喚された変身形態が死亡・終了時に何を召喚するか（全件監査）](../../research/recovered/outside_dev1/reports/061_TRANSFORM_REVERSION_FULL_AUDIT_20261103.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/061_TRANSFORM_REVERSION_FULL_AUDIT_20261103.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1796-L1796)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Static DAT-derived authored classification with selected technical clauses, not a full asset copy; counts differ by documented historical scan scope.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1795-L1795)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Static DAT-derived authored classification with selected technical clauses, not a full asset copy; counts differ by documented historical scan scope.
   本文 SHA256 `ba41fbd86ea9b36f976da4f0f6aca6988f7dd4ff6046ea79f4c4eb1ae000a1f9`
-  元パス <code>dev_lab/_work/transform_skill_audit_20261103/reversion/TRANSFORM_REVERSION_FULL_AUDIT_20261103.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1796-L1796)。
+  元パス <code>dev_lab/_work/transform_skill_audit_20261103/reversion/TRANSFORM_REVERSION_FULL_AUDIT_20261103.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1795-L1795)。
 
 - [表示中も入力保護を整え続ける（Claude 2026-10-31）](../../research/recovered/outside_dev1/reports/062_README.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/062_README.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1797-L1797)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1796-L1796)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `df394b8d438382546dc91e34c4517f8ef20e1be809054e118cc64f628f821f6f`
-  元パス <code>dev_lab/_work/visible_protect_20261031/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1797-L1797)。
+  元パス <code>dev_lab/_work/visible_protect_20261031/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1796-L1796)。
 
 - [一覧の窓の設定（移動・大きさ変更の可否、最初の大きさ）と表示の修正（Claude 2026-10-31、ユーザー要望）](../../research/recovered/outside_dev1/reports/063_README.md?plain=1#L1-L1) — `research/recovered/outside_dev1/reports/063_README.md`
-  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1798-L1798)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+  回収状態 FULL_BODY_EXACT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1797-L1797)。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
   本文 SHA256 `9e9df0be175d5b2fe60a7329f8321714567d30dbbbe803ec6782b2d88c3f3d78`
-  元パス <code>dev_lab/_work/winopt_20261031/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1798-L1798)。
+  元パス <code>dev_lab/_work/winopt_20261031/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1797-L1797)。
 
 - [ChatGPT への依頼：きっかけルール（ダメージ・補助スキル）の試験（Claude 作成 2026-11-04）](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/CHATGPT_REQUEST_EVENT_RULES_TEST_20261104.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/CHATGPT_REQUEST_EVENT_RULES_TEST_20261104.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1799-L1799)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1798-L1798)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `c416415bd8b575508665be307f8d5437de57a28f4757459a94e72d724552fdf7`
-  元パス <code>dev_lab/_work/summon_exp_20261103/CHATGPT_REQUEST_EVENT_RULES_TEST_20261104.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1799-L1799)。
+  元パス <code>dev_lab/_work/summon_exp_20261103/CHATGPT_REQUEST_EVENT_RULES_TEST_20261104.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1798-L1798)。
 
 - [ChatGPT への依頼：簡易戦闘（CPU 同士）の試験シナリオ（Claude 作成 2026-11-04）](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/CHATGPT_REQUEST_SIMPLE_BATTLE_TEST_20261104.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/CHATGPT_REQUEST_SIMPLE_BATTLE_TEST_20261104.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1800-L1800)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1799-L1799)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `fdc3cc587fca9f8de58b4ae81f33eda700af57be7e190dd27d461b4b117a17de`
-  元パス <code>dev_lab/_work/summon_exp_20261103/CHATGPT_REQUEST_SIMPLE_BATTLE_TEST_20261104.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1800-L1800)。
+  元パス <code>dev_lab/_work/summon_exp_20261103/CHATGPT_REQUEST_SIMPLE_BATTLE_TEST_20261104.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1799-L1799)。
 
 - [ChatGPT への依頼：スキル → 召喚ユニットの関数の試験（Claude 作成 2026-11-04）](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/CHATGPT_REQUEST_VANISH_TEST_20261104.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/CHATGPT_REQUEST_VANISH_TEST_20261104.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1801-L1801)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1800-L1800)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `5c2176fd1ce6a88774c998c570447318b5a4349eb7d3512b47c30bec94d1ccee`
-  元パス <code>dev_lab/_work/summon_exp_20261103/CHATGPT_REQUEST_VANISH_TEST_20261104.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1801-L1801)。
+  元パス <code>dev_lab/_work/summon_exp_20261103/CHATGPT_REQUEST_VANISH_TEST_20261104.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1800-L1800)。
 
 - [Codex への依頼: DAT の予約名 routine を共通基盤のイベントで流す（案 A）](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/CODEX_REQUEST_DAT_ROUTINE_BUS_20261103.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/CODEX_REQUEST_DAT_ROUTINE_BUS_20261103.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1802-L1802)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1801-L1801)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `530e5f3b102a448307917f1e4ee6323ea1b1a7dfb5e450e8f2760fae19125452`
-  元パス <code>dev_lab/_work/summon_exp_20261103/CODEX_REQUEST_DAT_ROUTINE_BUS_20261103.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1802-L1802)。
+  元パス <code>dev_lab/_work/summon_exp_20261103/CODEX_REQUEST_DAT_ROUTINE_BUS_20261103.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1801-L1801)。
 
 - [きっかけルール試験DAT — 作業完了報告](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/EVENT_RULES_TEST_COMPLETION_20261104.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/EVENT_RULES_TEST_COMPLETION_20261104.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1803-L1803)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1802-L1802)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `1e5402a802ba7ee94a2b3147b8f6a13449f4bbe84531b5bea00ca2574316024e`
-  元パス <code>dev_lab/_work/summon_exp_20261103/EVENT_RULES_TEST_COMPLETION_20261104.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1803-L1803)。
+  元パス <code>dev_lab/_work/summon_exp_20261103/EVENT_RULES_TEST_COMPLETION_20261104.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1802-L1802)。
 
 - [きっかけルール試験・実機確認手順（2026-11-04）](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/EVENT_RULES_TEST_RUNBOOK_20261104.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/EVENT_RULES_TEST_RUNBOOK_20261104.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1804-L1804)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1803-L1803)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `3d4efba33af6a15c222bbe1f76397eac32982576eba4252b77cd5006f8e29643`
-  元パス <code>dev_lab/_work/summon_exp_20261103/EVENT_RULES_TEST_RUNBOOK_20261104.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1804-L1804)。
+  元パス <code>dev_lab/_work/summon_exp_20261103/EVENT_RULES_TEST_RUNBOOK_20261104.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1803-L1803)。
 
 - [経験値操作を DAT から使う設計メモ（Claude 2026-11-03、検討中・未実装）](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1805-L1805)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1804-L1804)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `072445be4234927625ba840b2da45349b2e8b4ffd05070f8ef3eb1d5499e2000`
-  元パス <code>dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1805-L1805)。
+  元パス <code>dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1804-L1804)。
 
 - [Failure log — EVENT-RULES-20261104](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/FAILURE_LOG_EVENT_RULES_TEST_20261104.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/FAILURE_LOG_EVENT_RULES_TEST_20261104.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1806-L1806)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1805-L1805)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `06023b2bd5306996fec8b882abe8acfb306a155329ce790394db28fa086290da`
-  元パス <code>dev_lab/_work/summon_exp_20261103/FAILURE_LOG_EVENT_RULES_TEST_20261104.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1806-L1806)。
+  元パス <code>dev_lab/_work/summon_exp_20261103/FAILURE_LOG_EVENT_RULES_TEST_20261104.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1805-L1805)。
 
 - [Lv99無抵抗標的：戦闘が即終了する不具合（2026-11-03）](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/HS_DUMMY_INSTANT_END_20261103.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/HS_DUMMY_INSTANT_END_20261103.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1807-L1807)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1806-L1806)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `77d90d93602d21445094ccc67c50c02826042f94ba5f313c63ec29b22cc0f552`
-  元パス <code>dev_lab/_work/summon_exp_20261103/HS_DUMMY_INSTANT_END_20261103.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1807-L1807)。
+  元パス <code>dev_lab/_work/summon_exp_20261103/HS_DUMMY_INSTANT_END_20261103.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1806-L1806)。
 
 - [2026-11-04 CPU簡易戦闘＋通常戦闘・試験シナリオ（追加版）](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/HS_SIMPLE_BATTLE_TEST_IMPLEMENTED_20261104.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/HS_SIMPLE_BATTLE_TEST_IMPLEMENTED_20261104.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1808-L1808)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1807-L1807)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `e2048710440243d73d823274879bc640f6fad9582c46fd46768a859b739a7cbc`
-  元パス <code>dev_lab/_work/summon_exp_20261103/HS_SIMPLE_BATTLE_TEST_IMPLEMENTED_20261104.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1808-L1808)。
+  元パス <code>dev_lab/_work/summon_exp_20261103/HS_SIMPLE_BATTLE_TEST_IMPLEMENTED_20261104.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1807-L1807)。
 
 - [HS_Summon_Test DAT 編集障害 (2026-11-04)](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/HS_SUMMON_PATCH_BLOCKED_20261104.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/HS_SUMMON_PATCH_BLOCKED_20261104.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1809-L1809)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1808-L1808)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `9a94c0e14850bf4d4ea2ef8525425aef68a5c48dfb4fbc47fa8b8d0091372706`
-  元パス <code>dev_lab/_work/summon_exp_20261103/HS_SUMMON_PATCH_BLOCKED_20261104.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1809-L1809)。
+  元パス <code>dev_lab/_work/summon_exp_20261103/HS_SUMMON_PATCH_BLOCKED_20261104.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1808-L1808)。
 
 - [召喚EXPテスト：アイテム付与・イワナ坊主追加修正（2026-11-04）](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/ITEM_AND_IWANA_FIX_20261104.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/ITEM_AND_IWANA_FIX_20261104.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1810-L1810)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1809-L1809)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `6c03eb87ff752152aea1fb6751318b7863d3838d5c63b62b9c8aecdbc91d326c`
-  元パス <code>dev_lab/_work/summon_exp_20261103/ITEM_AND_IWANA_FIX_20261104.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1810-L1810)。
+  元パス <code>dev_lab/_work/summon_exp_20261103/ITEM_AND_IWANA_FIX_20261104.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1809-L1809)。
 
 - [ChatGPT への依頼：ゲームが起動直後に終了する問題（Claude 作成 2026-11-03 20:2x）](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/STARTUP_EXIT_FOR_CHATGPT_20261103.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/STARTUP_EXIT_FOR_CHATGPT_20261103.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1811-L1811)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1810-L1810)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `f81601e8dd450c494ebc5973ab616988df26c7e4a89dc2adb372a9dddd4c33af`
-  元パス <code>dev_lab/_work/summon_exp_20261103/STARTUP_EXIT_FOR_CHATGPT_20261103.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1811-L1811)。
+  元パス <code>dev_lab/_work/summon_exp_20261103/STARTUP_EXIT_FOR_CHATGPT_20261103.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1810-L1810)。
 
 - [起動直後終了の再発とファイルロック修復（2026-11-04）](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/STARTUP_LOCK_RECURRENCE_REPAIR_20261104.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/STARTUP_LOCK_RECURRENCE_REPAIR_20261104.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1812-L1812)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1811-L1811)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `a7e4fbfa8c8719deda182bc914b0f6911b2e43f5d676071ef1d4c62d411bc92f`
-  元パス <code>dev_lab/_work/summon_exp_20261103/STARTUP_LOCK_RECURRENCE_REPAIR_20261104.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1812-L1812)。
+  元パス <code>dev_lab/_work/summon_exp_20261103/STARTUP_LOCK_RECURRENCE_REPAIR_20261104.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1811-L1811)。
 
 - [迫真戦記 起動直後終了の原因・修復報告（2026-11-03）](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/STARTUP_LOCK_ROOT_CAUSE_20261103.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/STARTUP_LOCK_ROOT_CAUSE_20261103.md`
-  回収状態 CONTENT_REVIEWED_PRIVACY_FULL_VARIANT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1813-L1813)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_PRIVACY_FULL_VARIANT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1812-L1812)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `bcfd19928f256674b2d14345e01be9decc1fa34fb989e5a82d43ac7fc6908a59`
-  元パス <code>dev_lab/_work/summon_exp_20261103/STARTUP_LOCK_ROOT_CAUSE_20261103.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1813-L1813)。
+  元パス <code>dev_lab/_work/summon_exp_20261103/STARTUP_LOCK_ROOT_CAUSE_20261103.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1812-L1812)。
 
 - [召喚EXPテスト：戦闘終了時Lv100不具合・原因と修復（2026-11-03）](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/SUMMON_EXP_LV100_ROOT_CAUSE_20261103.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/SUMMON_EXP_LV100_ROOT_CAUSE_20261103.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1814-L1814)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1813-L1813)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `8a47c5ae01fcf1065e39915bede4f86d7fd484e7d19147b7a0a976669a656c09`
-  元パス <code>dev_lab/_work/summon_exp_20261103/SUMMON_EXP_LV100_ROOT_CAUSE_20261103.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1814-L1814)。
+  元パス <code>dev_lab/_work/summon_exp_20261103/SUMMON_EXP_LV100_ROOT_CAUSE_20261103.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1813-L1813)。
 
 - [召喚・変身EXPテスト拡張（2026-11-03）](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/SUMMON_TRANSFORM_TEST_EXPANSION_20261103.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/SUMMON_TRANSFORM_TEST_EXPANSION_20261103.md`
-  回収状態 CONTENT_REVIEWED_PRIVACY_FULL_VARIANT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1815-L1815)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_PRIVACY_FULL_VARIANT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1814-L1814)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `34c8401e0bb9cb4a642126b2719840742c66a206f23043f727a1215d29ea10cc`
-  元パス <code>dev_lab/_work/summon_exp_20261103/SUMMON_TRANSFORM_TEST_EXPANSION_20261103.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1815-L1815)。
+  元パス <code>dev_lab/_work/summon_exp_20261103/SUMMON_TRANSFORM_TEST_EXPANSION_20261103.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1814-L1814)。
 
 - [召喚スキル別EXP・召喚ユニット消滅試験の追加（2026-11-04）](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/VANISH_TEST_20261104.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/VANISH_TEST_20261104.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1816-L1816)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1815-L1815)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `e75a0030cfdf5217f2eb085d9fdc53de6de32fc7e6748a3e5a7fecfc5ee70e28`
-  元パス <code>dev_lab/_work/summon_exp_20261103/VANISH_TEST_20261104.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1816-L1816)。
+  元パス <code>dev_lab/_work/summon_exp_20261103/VANISH_TEST_20261104.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1815-L1815)。
 
 - [9. Summon parent/child link, EXP write site and a give-EXP contract (Claude PEER_SCRIPT01, 2026-11-03)](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/kb_section9.md?plain=1#L2-L2) — `research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/kb_section9.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1817-L1817)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1816-L1816)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `5817a2b97bfbb5d66db439650d741729024b7ce556519166e3d9039424ef5a2d`
-  元パス <code>dev_lab/_work/summon_exp_20261103/kb_section9.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1817-L1817)。
+  元パス <code>dev_lab/_work/summon_exp_20261103/kb_section9.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1816-L1816)。
 
 - [§96 Claude（2026-11-03）: 召喚の親子関係と経験値の流れ（任意ユニットへの経験値付与・親への分配スキルの下準備）](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/section96.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/section96.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1818-L1818)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1817-L1817)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `3eaf160a515058a93b53c950cc263f37098871d0c0b50def77851a8338761bd3`
-  元パス <code>dev_lab/_work/summon_exp_20261103/section96.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1818-L1818)。
+  元パス <code>dev_lab/_work/summon_exp_20261103/section96.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1817-L1817)。
 
 - [§96.6 実機の記録（2026-11-03 09:31、ユーザーのプレイ、x32dbg の記録だけ）](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/section96_6.md?plain=1#L2-L2) — `research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/section96_6.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1819-L1819)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1818-L1818)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `799444aeae8496a585f5dc47edb1d20c4e142a0c928c5db94ae9efe3679c2d50`
-  元パス <code>dev_lab/_work/summon_exp_20261103/section96_6.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1819-L1819)。
+  元パス <code>dev_lab/_work/summon_exp_20261103/section96_6.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1818-L1818)。
 
 - [ON-AI-001｜迫真戦記ver0.67 戦闘AI構成／DATとEXEの責任分界（2026-10-25）](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/BATTLE_AI_ARCHITECTURE_20261025.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/story/ONDISK/BATTLE_AI_ARCHITECTURE_20261025.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1820-L1820)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1819-L1819)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `3184c622852d6774311806516c963d3fac96d243f1dd1430de0a0a4520b47ac3`
-  元パス <code>dev_lab/story/ONDISK/BATTLE_AI_ARCHITECTURE_20261025.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1820-L1820)。
+  元パス <code>dev_lab/story/ONDISK/BATTLE_AI_ARCHITECTURE_20261025.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1819-L1819)。
 
 - [ONDISK｜人物台帳（原作と創作を分離）](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/CHARACTERS.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/story/ONDISK/CHARACTERS.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1821-L1821)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1820-L1820)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `9be51bf611c164bee805bfe818027388835a9d53faf02bac58891a09d0486882`
-  元パス <code>dev_lab/story/ONDISK/CHARACTERS.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1821-L1821)。
+  元パス <code>dev_lab/story/ONDISK/CHARACTERS.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1820-L1820)。
 
 - [ON-STAND-005｜DAT優先でのスタンド自動発現と奪取：実証境界](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/DAT_FIRST_STAND_FEASIBILITY_20261025.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/story/ONDISK/DAT_FIRST_STAND_FEASIBILITY_20261025.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1822-L1822)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1821-L1821)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `918f66999627180c5c443b8fc0e662a2c3114ea9402ca70fe947251cb5d55629`
-  元パス <code>dev_lab/story/ONDISK/DAT_FIRST_STAND_FEASIBILITY_20261025.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1822-L1822)。
+  元パス <code>dev_lab/story/ONDISK/DAT_FIRST_STAND_FEASIBILITY_20261025.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1821-L1821)。
 
 - [ON-STAND-FOLLOW｜召喚術者への追従とCPU AI制御の調査](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/FOLLOW_AI_RESEARCH_20261025.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/story/ONDISK/FOLLOW_AI_RESEARCH_20261025.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1823-L1823)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1822-L1822)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `d6a75edc8f8e73da32cd549fed978b106169e122bc2c68eb04b8db0e49bdd8ec`
-  元パス <code>dev_lab/story/ONDISK/FOLLOW_AI_RESEARCH_20261025.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1823-L1823)。
+  元パス <code>dev_lab/story/ONDISK/FOLLOW_AI_RESEARCH_20261025.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1822-L1822)。
 
 - [ONDISK編｜CURRENT HANDOFF](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/HANDOFF.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/story/ONDISK/HANDOFF.md`
-  回収状態 CONTENT_REVIEWED_PRIVACY_FULL_VARIANT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1824-L1824)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_PRIVACY_FULL_VARIANT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1823-L1823)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `e23c81526572c47cdf20ec1f238f2fe4603bf8b07723dd2594ff58128c75c94c`
-  元パス <code>dev_lab/story/ONDISK/HANDOFF.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1824-L1824)。
+  元パス <code>dev_lab/story/ONDISK/HANDOFF.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1823-L1823)。
 
 - [ONDISK長編｜企画の正本 v0.1](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/MASTER.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/story/ONDISK/MASTER.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1825-L1825)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1824-L1824)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `b24fd3757341ad72bc0216adfca867613a249d6cccda04fc2ecbfa968d8997c1`
-  元パス <code>dev_lab/story/ONDISK/MASTER.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1825-L1825)。
+  元パス <code>dev_lab/story/ONDISK/MASTER.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1824-L1824)。
 
 - [ON-STAND-015｜放置すると永続的に強化されるボス（候補案）](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/PERSISTENT_BOSS_ESCALATION_PROPOSAL_20261026.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/story/ONDISK/PERSISTENT_BOSS_ESCALATION_PROPOSAL_20261026.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1826-L1826)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1825-L1825)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `8e27daa65367de525d7b56dea4b7920a42aae64c218dfbc30419044737a00b1d`
-  元パス <code>dev_lab/story/ONDISK/PERSISTENT_BOSS_ESCALATION_PROPOSAL_20261026.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1826-L1826)。
+  元パス <code>dev_lab/story/ONDISK/PERSISTENT_BOSS_ESCALATION_PROPOSAL_20261026.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1825-L1825)。
 
 - [ONDISK｜粗筋・伏線](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/PLOT.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/story/ONDISK/PLOT.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1827-L1827)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1826-L1826)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `8db341a8dd149841a51a7d0782c8b9a685dd1b8ecedeba7cffa95779245511af`
-  元パス <code>dev_lab/story/ONDISK/PLOT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1827-L1827)。
+  元パス <code>dev_lab/story/ONDISK/PLOT.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1826-L1826)。
 
 - [ON-STAND-016｜CPU同士の簡略戦闘でもDISC奪取・永続成長するボス（研究）](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/SIMPLIFIED_CPU_BATTLE_DISC_RESEARCH_20261026.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/story/ONDISK/SIMPLIFIED_CPU_BATTLE_DISC_RESEARCH_20261026.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1828-L1828)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1827-L1827)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `744bd2627d25f7b32ac2e2ed013b354ac38150c344a00ee669244f7e0558e9bb`
-  元パス <code>dev_lab/story/ONDISK/SIMPLIFIED_CPU_BATTLE_DISC_RESEARCH_20261026.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1828-L1828)。
+  元パス <code>dev_lab/story/ONDISK/SIMPLIFIED_CPU_BATTLE_DISC_RESEARCH_20261026.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1827-L1827)。
 
 - [ON-STAND-014｜戦闘中限定スキル操作と永続技能の違い（2026-10-26）](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/SKILL_BATTLE_SCOPE_NATIVE_DAT_20261026.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/story/ONDISK/SKILL_BATTLE_SCOPE_NATIVE_DAT_20261026.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1829-L1829)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1828-L1828)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `fef98d6fa990f5e380fa87debff2694b749eb6825e39aa65e07497273dc0e4e0`
-  元パス <code>dev_lab/story/ONDISK/SKILL_BATTLE_SCOPE_NATIVE_DAT_20261026.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1829-L1829)。
+  元パス <code>dev_lab/story/ONDISK/SKILL_BATTLE_SCOPE_NATIVE_DAT_20261026.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1828-L1828)。
 
 - [ON-STAND-013｜戦闘中の技能奪取・付与とユニット情報パネルの同期](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/SKILL_THEFT_UI_SYNC_SPEC_20261026.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/story/ONDISK/SKILL_THEFT_UI_SYNC_SPEC_20261026.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1830-L1830)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1829-L1829)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `c1b26615e0d502376c4c15df999b2f2d911d05426c3e4845d73cc9e67ccff220`
-  元パス <code>dev_lab/story/ONDISK/SKILL_THEFT_UI_SYNC_SPEC_20261026.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1830-L1830)。
+  元パス <code>dev_lab/story/ONDISK/SKILL_THEFT_UI_SYNC_SPEC_20261026.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1829-L1829)。
 
 - [ON-STAND-006｜スタンド専用打撃属性と物理無効：正本](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/STAND_DAMAGE_MATRIX_20261025.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/story/ONDISK/STAND_DAMAGE_MATRIX_20261025.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1831-L1831)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1830-L1830)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `af3a90c349eed0946375063e3d76f84f23c6c94384673a2478a314fd91a79258`
-  元パス <code>dev_lab/story/ONDISK/STAND_DAMAGE_MATRIX_20261025.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1831-L1831)。
+  元パス <code>dev_lab/story/ONDISK/STAND_DAMAGE_MATRIX_20261025.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1830-L1830)。
 
 - [ON-STAND-008｜汎用・戦闘限定スキル奪取／譲渡と既存召喚技の非改変利用](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/STAND_DISC_GENERIC_TRANSFER_FEASIBILITY_20261025.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/story/ONDISK/STAND_DISC_GENERIC_TRANSFER_FEASIBILITY_20261025.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1832-L1832)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1831-L1831)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `cd64f66db81a835c4451874aefd28e1eb702709ab601c02f357ed627e01f6b25`
-  元パス <code>dev_lab/story/ONDISK/STAND_DISC_GENERIC_TRANSFER_FEASIBILITY_20261025.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1832-L1832)。
+  元パス <code>dev_lab/story/ONDISK/STAND_DISC_GENERIC_TRANSFER_FEASIBILITY_20261025.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1831-L1831)。
 
 - [ON-STAND-007｜DATによる自動スタンド発現と「遠野→別の味方」へのDISC能力譲渡](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/STAND_DISC_TRANSFER_DAT_20261025.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/story/ONDISK/STAND_DISC_TRANSFER_DAT_20261025.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1833-L1833)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1832-L1832)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `64f86d63c2fd94ccf8358890491a035c2c720b76488aa4f07494b1294245f377`
-  元パス <code>dev_lab/story/ONDISK/STAND_DISC_TRANSFER_DAT_20261025.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1833-L1833)。
+  元パス <code>dev_lab/story/ONDISK/STAND_DISC_TRANSFER_DAT_20261025.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1832-L1832)。
 
 - [STAND-001｜スタンド戦闘ルール・実装仕様](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/STAND_SPEC.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/story/ONDISK/STAND_SPEC.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1834-L1834)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1833-L1833)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `ee76ff4f7a5ec166d7f1963a945c874dc99af4fe013502a522a3849d26de15d7`
-  元パス <code>dev_lab/story/ONDISK/STAND_SPEC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1834-L1834)。
+  元パス <code>dev_lab/story/ONDISK/STAND_SPEC.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1833-L1833)。
 
 - [ON-STAND-011｜DISC奪取時の召喚トークン削除方針：固有と量産を分離](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/SUMMON_DISC_REMOVAL_POLICY_20261026.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/story/ONDISK/SUMMON_DISC_REMOVAL_POLICY_20261026.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1835-L1835)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1834-L1834)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `0b23b2697d584e6afa21973dab16b5989aca2b3238966dc261621887d82c0353`
-  元パス <code>dev_lab/story/ONDISK/SUMMON_DISC_REMOVAL_POLICY_20261026.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1835-L1835)。
+  元パス <code>dev_lab/story/ONDISK/SUMMON_DISC_REMOVAL_POLICY_20261026.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1834-L1834)。
 
 - [ON-STAND-010｜原作召喚親子リンクとDAT・DLLの役割分担](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/SUMMON_PARENT_NATIVE_DAT_BOUNDARY_20261025.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/story/ONDISK/SUMMON_PARENT_NATIVE_DAT_BOUNDARY_20261025.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1836-L1836)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1835-L1835)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `eb233c40411e31aa7511590ac8fe045d7a1f73f7103ba4326fea64c4fd3439c8`
-  元パス <code>dev_lab/story/ONDISK/SUMMON_PARENT_NATIVE_DAT_BOUNDARY_20261025.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1836-L1836)。
+  元パス <code>dev_lab/story/ONDISK/SUMMON_PARENT_NATIVE_DAT_BOUNDARY_20261025.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1835-L1835)。
 
 - [ONDISK｜タスク・未解決](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/TASKS.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/story/ONDISK/TASKS.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1837-L1837)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1836-L1836)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `d80f3c691891acac1d1a7437b32e40bec9d60f586a8c60aaf754642d21e68f10`
-  元パス <code>dev_lab/story/ONDISK/TASKS.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1837-L1837)。
+  元パス <code>dev_lab/story/ONDISK/TASKS.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1836-L1836)。
 
 - [ON-STAND-009｜TNOKのチコリータ召喚を、技能奪取と同時に安全に解除](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/TNOK_CHIKORITA_RECALL_20261025.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/story/ONDISK/TNOK_CHIKORITA_RECALL_20261025.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1838-L1838)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1837-L1837)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `74b46083bb07907218f6abb2a564bc1361f0db96c7aa4decba70d3c3b46bded2`
-  元パス <code>dev_lab/story/ONDISK/TNOK_CHIKORITA_RECALL_20261025.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1838-L1838)。
+  元パス <code>dev_lab/story/ONDISK/TNOK_CHIKORITA_RECALL_20261025.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1837-L1837)。
 
 - [STAND-001｜スタンド戦闘ルール（独立試作）](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/stand_proto/README.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/story/ONDISK/stand_proto/README.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1839-L1839)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1838-L1838)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `467d2d1d04123d08c6b4108c93abb4f1bfc70ac69cd654c6b336e94ba05800ff`
-  元パス <code>dev_lab/story/ONDISK/stand_proto/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1839-L1839)。
+  元パス <code>dev_lab/story/ONDISK/stand_proto/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1838-L1838)。
 
 - [迫真戦記｜追加ストーリー正本](../../research/recovered/outside_design1/reports/dev_lab/story/README.md?plain=1#L1-L1) — `research/recovered/outside_design1/reports/dev_lab/story/README.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1840-L1840)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_ROOT_LEDGER_SOURCE_PATH_ABSENT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1839-L1839)。制約・訂正 Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
   本文 SHA256 `0727720087a7fe3d1a2d315ffb9eae4c331cf77a6cd376ccee1fc29f7bfef391`
-  元パス <code>dev_lab/story/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1840-L1840)。
+  元パス <code>dev_lab/story/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1839-L1839)。
 
 - [Battle, targeting, AI and morale: curated source map (T012/T013/T024/T028)](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md?plain=1#L1-L1) — `research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Unregistered current SHA; root1839 source/destination match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1841-L1841)。制約・訂正 Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Unregistered current SHA; root1839 source/destination match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1840-L1840)。制約・訂正 Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
   本文 SHA256 `b03b85afb0c4a4ba1dd2f58c2bb52672a3b6dde6dd4cd2dce8f3510d09aefd81`
-  元パス <code>knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1841-L1841)。
+  元パス <code>knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1840-L1840)。
 
 - [研究知識ベース同期状態](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/SYNC_STATUS.md?plain=1#L1-L1) — `research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/SYNC_STATUS.md`
-  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Unregistered current SHA; root1839 source/destination match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1842-L1842)。制約・訂正 Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Unregistered current SHA; root1839 source/destination match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1841-L1841)。制約・訂正 Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
   本文 SHA256 `32b172cba0e1d828aecb580ae758730b0f12ad6c3687e6913220e8c1c789ccd1`
-  元パス <code>knowledge/.worktrees/kb-curate-b-skillpost-20261102/SYNC_STATUS.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1842-L1842)。
+  元パス <code>knowledge/.worktrees/kb-curate-b-skillpost-20261102/SYNC_STATUS.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1841-L1841)。
+
+- [Private research intake — owner ID/source links](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b17b18-20261102-0625/research/intake/README.md?plain=1#L1-L1) — `research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b17b18-20261102-0625/research/intake/README.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Unregistered current SHA; root1839 source/destination match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1842-L1842)。制約・訂正 Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+  本文 SHA256 `2eec21a8aff21869c65a43aeb1457eef4a7814634d0ca2953316756a863cc9c3`
+  元パス <code>knowledge/.worktrees/kb-curate-b17b18-20261102-0625/research/intake/README.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1842-L1842)。
 
 [前のページ](page-017.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md) · [次のページ](page-019.md)

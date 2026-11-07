@@ -1,0 +1,51 @@
+{
+  "research_id": "B-OFFLINE-20261021-1509-01",
+  "source_zip_sha256": "911E5E37A3F9BD5B36F929AF94B0D1E2CD1CD5CF34E3E2F16C8FC800ABF5F7C2",
+  "db_sha256": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF",
+  "source_exe_sha256_manifest": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "vtable_address": "0x0063A6B4",
+  "vtable_first_slot_target": "0x0054F910",
+  "indexed_slots_in_0x63A6B4_to_0x63A6CC": [
+    {
+      "site_va": "0x0063A6B4",
+      "target_va": "0x0054F910",
+      "reference_type": "DATA",
+      "is_computed": false,
+      "is_indirect": false,
+      "is_read": false,
+      "is_write": false,
+      "target_function_va": "0x0054F910",
+      "target_function_name": "FUN_0054f910",
+      "target_function_is_external": false,
+      "target_symbol": "FUN_0054f910",
+      "kind": "STATIC_DATA_REFERENCE_NOT_CALL",
+      "source_data_va": "0x0063A6B4"
+    }
+  ],
+  "code_sha256": {
+    "0x0054F720": "383700346A877CECCCACCBBA9A53A147359D2FC1F0490A3AAB7AF9189783CE0C",
+    "0x0054F910": "552564DD97DBCECC97711A8354FEBF550AA2D290E747AEDDE40B56A5AC39C5CA",
+    "0x0054F990": "2EBA1181BDCCDA466333601F13D5A5EC4DC7FBBAB7A39FBA9891C04F17A99160",
+    "0x005501A0": "1687A2EB67E5D43881EE8E1BCA397AB1089B23168D02AA5D7E86E13DA932CB31",
+    "0x004C22B0": "81B9E77BDA1168CD3469ECD9F1CB6A067CBD7DB7E84563D95B1629EFCCCBCF9C",
+    "0x005B6BBB": "874E8539C8B125BE8C93C5BF1BA67689FFFFC21E6801E5FAA5BB80117CA90922"
+  },
+  "assertions": {
+    "vtable_rush_base_to_delete_cand": true,
+    "vtable_rtti_col_at_minus_four": true,
+    "vtable_only_one_indexed_pointer_6b4_to_6cc": true,
+    "vtable_update_not_indexed": true,
+    "update_direct_callers_zero": true,
+    "reuse_factory_two_init_sites": true,
+    "logical_end_unregister_call": true,
+    "physically_free_conditional_call": true,
+    "free_wrapper_calls_free": true,
+    "expire_marks_record_inactive": true,
+    "reuse_checks_inactive": true,
+    "deleting_bit1_gate": true
+  },
+  "passed": 12,
+  "total": 12,
+  "status": "STATIC-INDEX-ONLY / no original EXE binary validation / no gameplay golden",
+  "test_limit": "Assertions validate extraction consistency; not runtime semantics."
+}

@@ -1,0 +1,30 @@
+{
+  "source_id": "B-20261027-1010-T013-HEAL-FINISH-UNREGISTER-POOL-REUSE-01",
+  "exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "status": "STATIC_SYNTHETIC_VERIFY_NOT_READY",
+  "native_pool_reuse_observed": false,
+  "old_gameplay_observed": false,
+  "actual_golden_pass": false,
+  "strict_match": false,
+  "ready_for_master": false,
+  "before": {
+    "address": "0x10002000",
+    "generation_receipt": "g1"
+  },
+  "after_unknown": {
+    "address": "0x10002000"
+  },
+  "after_reuse": {
+    "address": "0x10002000",
+    "generation_receipt": "g2"
+  },
+  "after_other": {
+    "address": "0x10002010",
+    "generation_receipt": "g2"
+  },
+  "cautions": [
+    "source model is conditional; not a complete simulation",
+    "no proof that Heal manager instance matches Stage13 live RAW",
+    "no dynamic identity or generation scheme inferred from native"
+  ]
+}

@@ -1,5 +1,8 @@
 # B authored-report recovery batch 3
 
+**2026-11-05 current scope correction:** the original 41-body acceptance below is historical. One exact Heal report was reclassified under an existing 4C28D0 scope hold and removed from the current tree and accepted ledger. Current batch: 40 accepted bodies / 5 whole deferrals. [Correction and dependency audit](../intake_json_20261105/LEGACY_SCOPE_CORRECTION.md). Original and private Git history retained; this is not permission to recover the held body from history.
+
+
 This bounded archival review covers the 45 literal authored Markdown paths selected by the parent curator from catalog metadata. Forty exact bodies and one complete privacy-only derivative are preserved (237,224 destination bytes); four reports are conservatively deferred. All 45 current source SHA256 values and byte counts match the approved catalog records. No accepted source path already occurs in the root recovery ledger, and none of the accepted original bodies matches committed Git HEAD Markdown. This is historical preservation, not new discovery or a publication assertion.
 
 [REPORT_LEDGER.tsv](REPORT_LEDGER.tsv) uses the root nine-column schema and neutral CONTENT_REVIEWED_EXACT / CONTENT_REVIEWED_VARIANT states. Every report body was reviewed in full for safety independence, personal paths, secrets and raw payload content. Original research files remain read-only. A personal absolute root prefix in the dual-pool report was replaced while preserving its full research text; [TRANSFORMATIONS.json](TRANSFORMATIONS.json) records original/catalog/current hashes, byte offsets, annotation, and the verified inverse using the locally retained original private span. The private prefix is not published.
@@ -28,7 +31,6 @@ Each entry below links to its complete reviewed body; original relative provenan
 - [T028_SPATIAL_GRID_CTOR_FLAG_PROVENANCE_NATIVE_20261026_11H.md](T028_SPATIAL_GRID_CTOR_FLAG_PROVENANCE_NATIVE_20261026_11H.md)
 - [B_T012_RENDER_ORDER_ROUTE_OFFLINE_20261022_1912.md](B_T012_RENDER_ORDER_ROUTE_OFFLINE_20261022_1912.md)
 - [B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md](B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md)
-- [T013_HEAL_DEFERRED_TICK_DISPATCH_NATIVE_20261027_09H.md](T013_HEAL_DEFERRED_TICK_DISPATCH_NATIVE_20261027_09H.md)
 - [T013_TROOP_RTTI_HALF_RATIO_GATE_V9_20261023_1708.md](T013_TROOP_RTTI_HALF_RATIO_GATE_V9_20261023_1708.md)
 - [T028_ALT_GRID_EIGHT_DIRECTION_CLEARANCE_NATIVE_20261026_14H.md](T028_ALT_GRID_EIGHT_DIRECTION_CLEARANCE_NATIVE_20261026_14H.md)
 - [T028_RETREAT_SPOT_RESERVATION_RELEASE_NATIVE_20261029_23H.md](T028_RETREAT_SPOT_RESERVATION_RELEASE_NATIVE_20261029_23H.md)

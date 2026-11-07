@@ -112,6 +112,9 @@
 - [research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md 行 1016](../../research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md?plain=1#L1016-L1016) — - [SAVED ROSTER] 原作save1・save2のsp16には48 stored Unit ID、inyumeb root5組とu_inyume root1組、それぞれ7子Unit保存参照。sp2の保存IDにyaju。sp16のPower+0x68逆参照無しは保存参照事実であって、実storePowerOf
   制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
+- [research/recovered/json_sources1/reports/evidence/T025_WRQ_C_BATTLES_CAPTURE_REFERENCE_GATES_20261013.json 行 1](../../research/recovered/json_sources1/reports/evidence/T025_WRQ_C_BATTLES_CAPTURE_REFERENCE_GATES_20261013.json?plain=1#L1-L1) — {"schema":"T025_C_BATTLES_CAPTURE_REFERENCE_GATES_V1","evidence_id":"C-20261013-1002-01","request_id":"WRQ-20261013-C-BATTLES","source_kind":"ORIGINAL_TARGET_SA
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
 - [research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md 行 878](../../research/recovered/pending_models2/reports/data/T025_STRATEGIC_PROGRESSION.md?plain=1#L878-L878) — [CONFIRMED-TARGET-SAVED-REFS] Power+0x68保存Spot名簿の逆参照は3capすべてsp2=[po2]、sp2b=[]、sp16=[]、sp50=[po29]。po29の保存Spot列はsp49,sp50。名簿0参照のsp2b/sp16でもSpot.member保存Unit数は各80
   制約・訂正　Full authored historical composite; no substantive known held payload found; current REF/corrections priority; no native/runtime/Golden/READY/semantic promotion
 

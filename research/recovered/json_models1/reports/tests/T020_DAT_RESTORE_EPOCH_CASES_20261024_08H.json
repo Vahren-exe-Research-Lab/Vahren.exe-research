@@ -1,0 +1,65 @@
+[
+  {
+    "id": "DAT-01",
+    "exe_ok": true,
+    "time_ok": true,
+    "phase": "pre_mod",
+    "changed_dat_hashes_ok": false,
+    "all_dat_pinned": false,
+    "expect": "X20_NOT_CAUSAL_BY_TIME_G1G2_PENDING"
+  },
+  {
+    "id": "DAT-02",
+    "exe_ok": true,
+    "time_ok": true,
+    "phase": "modified",
+    "changed_dat_hashes_ok": false,
+    "all_dat_pinned": false,
+    "expect": "X20_MODIFIED_EXCLUDE"
+  },
+  {
+    "id": "DAT-03",
+    "exe_ok": true,
+    "time_ok": true,
+    "phase": "restored",
+    "changed_dat_hashes_ok": true,
+    "all_dat_pinned": false,
+    "expect": "EIGHT_ONLY_NOT_FULL_DAT_BASELINE"
+  },
+  {
+    "id": "DAT-04",
+    "exe_ok": true,
+    "time_ok": true,
+    "phase": "restored",
+    "changed_dat_hashes_ok": false,
+    "all_dat_pinned": false,
+    "expect": "DAT_HASH_CONFLICT"
+  },
+  {
+    "id": "DAT-05",
+    "exe_ok": true,
+    "time_ok": false,
+    "phase": "pre_mod",
+    "changed_dat_hashes_ok": true,
+    "all_dat_pinned": false,
+    "expect": "PROVENANCE_TIME_UNVERIFIED"
+  },
+  {
+    "id": "DAT-06",
+    "exe_ok": false,
+    "time_ok": true,
+    "phase": "pre_mod",
+    "changed_dat_hashes_ok": true,
+    "all_dat_pinned": false,
+    "expect": "EXE_MISMATCH"
+  },
+  {
+    "id": "DAT-07",
+    "exe_ok": true,
+    "time_ok": true,
+    "phase": "restored",
+    "changed_dat_hashes_ok": true,
+    "all_dat_pinned": true,
+    "expect": "SOURCE_CANDIDATE_NOT_GOLDEN"
+  }
+]

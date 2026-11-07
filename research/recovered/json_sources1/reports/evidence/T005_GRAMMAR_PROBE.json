@@ -1,0 +1,1584 @@
+{
+  "files": 590,
+  "type_counts": [
+    [
+      "event",
+      49
+    ],
+    [
+      "unit",
+      26
+    ],
+    [
+      "spot",
+      10
+    ],
+    [
+      "detail",
+      9
+    ],
+    [
+      "skill",
+      1
+    ]
+  ],
+  "tagged": {
+    "event": 49,
+    "spot": 10,
+    "skill": 1,
+    "unit": 26
+  },
+  "tagless": {
+    "detail": 9
+  },
+  "inheritance": {
+    "unit": 5
+  },
+  "comment_counts": {
+    "line_slash": 20334,
+    "block_c": 392,
+    "block_plus": 2058
+  },
+  "qualified_key_counts": [
+    [
+      "member",
+      7
+    ],
+    [
+      "cmd_skill_freeicg",
+      2
+    ],
+    [
+      "cmd_skill_freetiger",
+      2
+    ],
+    [
+      "cmd_skill_freeharpoon",
+      2
+    ],
+    [
+      "merce",
+      2
+    ]
+  ],
+  "key_counts": [
+    [
+      "name",
+      32
+    ],
+    [
+      "politics",
+      29
+    ],
+    [
+      "image",
+      24
+    ],
+    [
+      "merce",
+      22
+    ],
+    [
+      "member",
+      14
+    ],
+    [
+      "map",
+      4
+    ],
+    [
+      "handle",
+      4
+    ],
+    [
+      "btl_unitmax",
+      4
+    ],
+    [
+      "limit",
+      4
+    ],
+    [
+      "unit_battle_cram",
+      4
+    ],
+    [
+      "disperse",
+      4
+    ],
+    [
+      "blind",
+      4
+    ],
+    [
+      "cmd_skill_freeicg",
+      3
+    ],
+    [
+      "cmd_skill_freetiger",
+      3
+    ],
+    [
+      "cmd_skill_freeharpoon",
+      3
+    ],
+    [
+      "x",
+      2
+    ],
+    [
+      "y",
+      2
+    ],
+    [
+      "no_home",
+      2
+    ],
+    [
+      "no_raise",
+      2
+    ],
+    [
+      "d360",
+      1
+    ],
+    [
+      "range",
+      1
+    ],
+    [
+      "speed",
+      1
+    ],
+    [
+      "anime",
+      1
+    ],
+    [
+      "anime_interval",
+      1
+    ],
+    [
+      "color",
+      1
+    ],
+    [
+      "w",
+      1
+    ],
+    [
+      "h",
+      1
+    ],
+    [
+      "resize_x",
+      1
+    ],
+    [
+      "resize_y",
+      1
+    ],
+    [
+      "resize_interval",
+      1
+    ],
+    [
+      "a",
+      1
+    ],
+    [
+      "str",
+      1
+    ],
+    [
+      "attr",
+      1
+    ],
+    [
+      "hard2",
+      1
+    ],
+    [
+      "hard",
+      1
+    ],
+    [
+      "bom",
+      1
+    ],
+    [
+      "exp_per",
+      1
+    ],
+    [
+      "offset",
+      1
+    ],
+    [
+      "add2",
+      1
+    ],
+    [
+      "add_per",
+      1
+    ],
+    [
+      "cmd_you_special",
+      1
+    ],
+    [
+      "cmd_you_skill",
+      1
+    ],
+    [
+      "cmd_you_troop",
+      1
+    ],
+    [
+      "cmd_heiki_koyou",
+      1
+    ],
+    [
+      "cmd_00hotaruda",
+      1
+    ],
+    [
+      "sichosha_koyou",
+      1
+    ],
+    [
+      "cmd_skill_sichosha",
+      1
+    ],
+    [
+      "cmd_change_dpsr",
+      1
+    ],
+    [
+      "cmd_change_dpsr2",
+      1
+    ],
+    [
+      "cmd_change_dpsr3",
+      1
+    ],
+    [
+      "cmd_change_dtswk",
+      1
+    ],
+    [
+      "cmd_change_dtswk2",
+      1
+    ],
+    [
+      "cmd_skill_whiteknn0",
+      1
+    ],
+    [
+      "cmd_skill_whiteknn1",
+      1
+    ],
+    [
+      "cmd_skill_boss_yuh0",
+      1
+    ],
+    [
+      "cmd_ginryu23_level",
+      1
+    ],
+    [
+      "cmd_udrgn23_level",
+      1
+    ],
+    [
+      "youhei_samson",
+      1
+    ],
+    [
+      "cmd_a3203",
+      1
+    ],
+    [
+      "cmd_a3253",
+      1
+    ],
+    [
+      "cmd_a3233",
+      1
+    ],
+    [
+      "cmd_a3293",
+      1
+    ],
+    [
+      "poli400_naisei",
+      1
+    ],
+    [
+      "cmd500_matsuei",
+      1
+    ],
+    [
+      "fix500_matsuei",
+      1
+    ],
+    [
+      "cmd200_roam",
+      1
+    ],
+    [
+      "cmd300_buypoli",
+      1
+    ],
+    [
+      "cmd310_salepoli",
+      1
+    ],
+    [
+      "cmd_gc_nyn_d",
+      1
+    ],
+    [
+      "cmd_gc_nyn_p",
+      1
+    ],
+    [
+      "cmd_skill_ndk0",
+      1
+    ],
+    [
+      "cmd_skill_udk0",
+      1
+    ],
+    [
+      "cmd_skill_yaju_rsc0",
+      1
+    ],
+    [
+      "cmd_skill_knn0",
+      1
+    ],
+    [
+      "cmd_skill_azs0",
+      1
+    ],
+    [
+      "cmd_skill_ru0",
+      1
+    ],
+    [
+      "cmd_skill_ru02",
+      1
+    ],
+    [
+      "cmd_skill_van0",
+      1
+    ],
+    [
+      "cmd_skill_ymnu0",
+      1
+    ],
+    [
+      "cmd_skill_ken0",
+      1
+    ],
+    [
+      "cmd_skill_geruch0",
+      1
+    ],
+    [
+      "cmd_skill_geruch02",
+      1
+    ],
+    [
+      "cmd_skill_geruch03",
+      1
+    ],
+    [
+      "cmd_skill_machinegeruch0",
+      1
+    ],
+    [
+      "cmd_skill_machinegeruch02",
+      1
+    ],
+    [
+      "cmd_skill_machinegeruch03",
+      1
+    ],
+    [
+      "cmd_skill_stown",
+      1
+    ],
+    [
+      "cmd_skill_kuso_toukou1",
+      1
+    ],
+    [
+      "cmd_skill_kuso_toukou2",
+      1
+    ],
+    [
+      "cmd_skill_kuso_toukou5",
+      1
+    ],
+    [
+      "zairyo_kentiku",
+      1
+    ],
+    [
+      "cmd_skill_zairyo",
+      1
+    ],
+    [
+      "cmd_poke_mz1",
+      1
+    ],
+    [
+      "cmd_poke_mz2",
+      1
+    ],
+    [
+      "cmd_poke_mz3",
+      1
+    ],
+    [
+      "cmd_poke_mz4",
+      1
+    ],
+    [
+      "cmd_poke_mz5",
+      1
+    ],
+    [
+      "cmd_poke_mz6",
+      1
+    ],
+    [
+      "cmd_poke_mz7",
+      1
+    ],
+    [
+      "cmd_family_kbtit1",
+      1
+    ],
+    [
+      "cmd_family_kbtit2",
+      1
+    ],
+    [
+      "cmd_family_kbtit3",
+      1
+    ],
+    [
+      "cmd_family_kbtit4",
+      1
+    ],
+    [
+      "cmd_family_kbtit5",
+      1
+    ],
+    [
+      "cmd000_bidai_ca",
+      1
+    ],
+    [
+      "cmd001_bidai_df",
+      1
+    ],
+    [
+      "cmd002_bidai_md",
+      1
+    ],
+    [
+      "cmd003_bidai_fly",
+      1
+    ],
+    [
+      "cmd004_bidai_god",
+      1
+    ],
+    [
+      "cmd005_bidai_hp",
+      1
+    ],
+    [
+      "cmd006_bidai_kaihuku",
+      1
+    ],
+    [
+      "cmd007_bidai_once",
+      1
+    ],
+    [
+      "cmd001_sakerobo_df",
+      1
+    ],
+    [
+      "cmd002_sakerobo_md",
+      1
+    ],
+    [
+      "cmd005_sakerobo_hp",
+      1
+    ],
+    [
+      "cmd007_sakerobo_once",
+      1
+    ],
+    [
+      "cmd001_sakerobog_df",
+      1
+    ],
+    [
+      "cmd002_sakerobog_md",
+      1
+    ],
+    [
+      "cmd005_sakerobog_hp",
+      1
+    ],
+    [
+      "cmd007_sakerobog_once",
+      1
+    ],
+    [
+      "poli100_win",
+      1
+    ],
+    [
+      "cmdwin100",
+      1
+    ],
+    [
+      "poli200_action",
+      1
+    ],
+    [
+      "cmd_kane200",
+      1
+    ],
+    [
+      "cmdwin150",
+      1
+    ],
+    [
+      "cmdwin200",
+      1
+    ],
+    [
+      "poli550_spyouhei",
+      1
+    ],
+    [
+      "cmd_00asasin",
+      1
+    ],
+    [
+      "cmd_00okuo",
+      1
+    ],
+    [
+      "cmd_12poyon",
+      1
+    ],
+    [
+      "cmd_12stkn",
+      1
+    ],
+    [
+      "cmd_12shirou",
+      1
+    ],
+    [
+      "cmd_12sm",
+      1
+    ],
+    [
+      "cmd_12rir",
+      1
+    ],
+    [
+      "cmd_20nynkrn",
+      1
+    ],
+    [
+      "cmd_20abesan",
+      1
+    ],
+    [
+      "cmd_20nagatanien",
+      1
+    ],
+    [
+      "cmd_rikkyo",
+      1
+    ],
+    [
+      "cmd_rikkyo2",
+      1
+    ],
+    [
+      "spptest",
+      1
+    ],
+    [
+      "polip",
+      1
+    ],
+    [
+      "seihap",
+      1
+    ],
+    [
+      "inu_hakuro",
+      1
+    ],
+    [
+      "cmd_hakuro_inu",
+      1
+    ],
+    [
+      "cmd_hakuro_miji",
+      1
+    ],
+    [
+      "cmd_hakuro_skrn",
+      1
+    ],
+    [
+      "poli500_youhei",
+      1
+    ],
+    [
+      "cmd_a000",
+      1
+    ],
+    [
+      "cmd_a001",
+      1
+    ],
+    [
+      "cmd_a002",
+      1
+    ],
+    [
+      "cmd_a003",
+      1
+    ],
+    [
+      "cmd_a004",
+      1
+    ],
+    [
+      "cmd_a075",
+      1
+    ],
+    [
+      "cmd_a005",
+      1
+    ],
+    [
+      "cmd_a006",
+      1
+    ],
+    [
+      "cmd_a007",
+      1
+    ],
+    [
+      "cmd_a008",
+      1
+    ],
+    [
+      "cmd_a009",
+      1
+    ],
+    [
+      "cmd_a00b",
+      1
+    ],
+    [
+      "cmd_aaaa_turnx",
+      1
+    ],
+    [
+      "cmd_aaaa_hyuk",
+      1
+    ],
+    [
+      "cmd_aaaa_inju",
+      1
+    ],
+    [
+      "cmd_a00a",
+      1
+    ],
+    [
+      "poli450_policy",
+      1
+    ],
+    [
+      "cmd_farm",
+      1
+    ],
+    [
+      "cmd_treasure",
+      1
+    ]
+  ],
+  "semicolon_by_key": {
+    "x": {
+      "no_semicolon": 2,
+      "semicolon": 0
+    },
+    "y": {
+      "no_semicolon": 2,
+      "semicolon": 0
+    },
+    "no_home": {
+      "no_semicolon": 2,
+      "semicolon": 0
+    },
+    "no_raise": {
+      "no_semicolon": 2,
+      "semicolon": 0
+    },
+    "d360": {
+      "no_semicolon": 1,
+      "semicolon": 0
+    },
+    "range": {
+      "no_semicolon": 1,
+      "semicolon": 0
+    },
+    "speed": {
+      "no_semicolon": 1,
+      "semicolon": 0
+    },
+    "image": {
+      "no_semicolon": 24,
+      "semicolon": 0
+    },
+    "anime": {
+      "no_semicolon": 1,
+      "semicolon": 0
+    },
+    "anime_interval": {
+      "no_semicolon": 1,
+      "semicolon": 0
+    },
+    "color": {
+      "no_semicolon": 1,
+      "semicolon": 0
+    },
+    "w": {
+      "no_semicolon": 1,
+      "semicolon": 0
+    },
+    "h": {
+      "no_semicolon": 1,
+      "semicolon": 0
+    },
+    "resize_x": {
+      "no_semicolon": 1,
+      "semicolon": 0
+    },
+    "resize_y": {
+      "no_semicolon": 1,
+      "semicolon": 0
+    },
+    "resize_interval": {
+      "no_semicolon": 1,
+      "semicolon": 0
+    },
+    "a": {
+      "no_semicolon": 1,
+      "semicolon": 0
+    },
+    "str": {
+      "no_semicolon": 1,
+      "semicolon": 0
+    },
+    "attr": {
+      "no_semicolon": 1,
+      "semicolon": 0
+    },
+    "hard2": {
+      "no_semicolon": 1,
+      "semicolon": 0
+    },
+    "hard": {
+      "no_semicolon": 1,
+      "semicolon": 0
+    },
+    "bom": {
+      "no_semicolon": 1,
+      "semicolon": 0
+    },
+    "exp_per": {
+      "no_semicolon": 1,
+      "semicolon": 0
+    },
+    "offset": {
+      "no_semicolon": 1,
+      "semicolon": 0
+    },
+    "add2": {
+      "no_semicolon": 1,
+      "semicolon": 0
+    },
+    "add_per": {
+      "no_semicolon": 1,
+      "semicolon": 0
+    },
+    "cmd_you_special": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_you_skill": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_you_troop": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_heiki_koyou": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_skill_freeicg": {
+      "no_semicolon": 3,
+      "semicolon": 0
+    },
+    "cmd_skill_freetiger": {
+      "no_semicolon": 3,
+      "semicolon": 0
+    },
+    "cmd_skill_freeharpoon": {
+      "no_semicolon": 3,
+      "semicolon": 0
+    },
+    "cmd_00hotaruda": {
+      "no_semicolon": 1,
+      "semicolon": 0
+    },
+    "sichosha_koyou": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_skill_sichosha": {
+      "no_semicolon": 1,
+      "semicolon": 0
+    },
+    "cmd_change_dpsr": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_change_dpsr2": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_change_dpsr3": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_change_dtswk": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_change_dtswk2": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_skill_whiteknn0": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_skill_whiteknn1": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_skill_boss_yuh0": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_ginryu23_level": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_udrgn23_level": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "youhei_samson": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_a3203": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_a3253": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_a3233": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_a3293": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "politics": {
+      "no_semicolon": 29,
+      "semicolon": 0
+    },
+    "name": {
+      "no_semicolon": 32,
+      "semicolon": 0
+    },
+    "member": {
+      "no_semicolon": 14,
+      "semicolon": 0
+    },
+    "merce": {
+      "no_semicolon": 22,
+      "semicolon": 0
+    },
+    "poli400_naisei": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd500_matsuei": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "fix500_matsuei": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd200_roam": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd300_buypoli": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd310_salepoli": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_gc_nyn_d": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_gc_nyn_p": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_skill_ndk0": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_skill_udk0": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_skill_yaju_rsc0": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_skill_knn0": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_skill_azs0": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_skill_ru0": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_skill_ru02": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_skill_van0": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_skill_ymnu0": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_skill_ken0": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_skill_geruch0": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_skill_geruch02": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_skill_geruch03": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_skill_machinegeruch0": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_skill_machinegeruch02": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_skill_machinegeruch03": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_skill_stown": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_skill_kuso_toukou1": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_skill_kuso_toukou2": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_skill_kuso_toukou5": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "zairyo_kentiku": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_skill_zairyo": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_poke_mz1": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_poke_mz2": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_poke_mz3": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_poke_mz4": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_poke_mz5": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_poke_mz6": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_poke_mz7": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_family_kbtit1": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_family_kbtit2": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_family_kbtit3": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_family_kbtit4": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_family_kbtit5": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd000_bidai_ca": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd001_bidai_df": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd002_bidai_md": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd003_bidai_fly": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd004_bidai_god": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd005_bidai_hp": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd006_bidai_kaihuku": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd007_bidai_once": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd001_sakerobo_df": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd002_sakerobo_md": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd005_sakerobo_hp": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd007_sakerobo_once": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd001_sakerobog_df": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd002_sakerobog_md": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd005_sakerobog_hp": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd007_sakerobog_once": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "poli100_win": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmdwin100": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "poli200_action": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_kane200": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmdwin150": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmdwin200": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "poli550_spyouhei": {
+      "no_semicolon": 1,
+      "semicolon": 0
+    },
+    "cmd_00asasin": {
+      "no_semicolon": 1,
+      "semicolon": 0
+    },
+    "cmd_00okuo": {
+      "no_semicolon": 1,
+      "semicolon": 0
+    },
+    "cmd_12poyon": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_12stkn": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_12shirou": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_12sm": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_12rir": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_20nynkrn": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_20abesan": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_20nagatanien": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_rikkyo": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_rikkyo2": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "spptest": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "polip": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "seihap": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "inu_hakuro": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_hakuro_inu": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_hakuro_miji": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_hakuro_skrn": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "poli500_youhei": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_a000": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_a001": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_a002": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_a003": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_a004": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_a075": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_a005": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_a006": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_a007": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_a008": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_a009": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_a00b": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_aaaa_turnx": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_aaaa_hyuk": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_aaaa_inju": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "cmd_a00a": {
+      "no_semicolon": 0,
+      "semicolon": 1
+    },
+    "poli450_policy": {
+      "no_semicolon": 1,
+      "semicolon": 0
+    },
+    "cmd_farm": {
+      "no_semicolon": 1,
+      "semicolon": 0
+    },
+    "cmd_treasure": {
+      "no_semicolon": 1,
+      "semicolon": 0
+    },
+    "map": {
+      "no_semicolon": 4,
+      "semicolon": 0
+    },
+    "handle": {
+      "no_semicolon": 4,
+      "semicolon": 0
+    },
+    "btl_unitmax": {
+      "no_semicolon": 4,
+      "semicolon": 0
+    },
+    "limit": {
+      "no_semicolon": 4,
+      "semicolon": 0
+    },
+    "unit_battle_cram": {
+      "no_semicolon": 4,
+      "semicolon": 0
+    },
+    "disperse": {
+      "no_semicolon": 4,
+      "semicolon": 0
+    },
+    "blind": {
+      "no_semicolon": 4,
+      "semicolon": 0
+    }
+  },
+  "duplicate_assignments": [
+    {
+      "type": "detail",
+      "tag": null,
+      "key": "cmd_skill_freeicg",
+      "count": 3,
+      "file": "40_内政\\CC_heiki.dat",
+      "line": 41
+    },
+    {
+      "type": "detail",
+      "tag": null,
+      "key": "cmd_skill_freetiger",
+      "count": 3,
+      "file": "40_内政\\CC_heiki.dat",
+      "line": 41
+    },
+    {
+      "type": "detail",
+      "tag": null,
+      "key": "cmd_skill_freeharpoon",
+      "count": 3,
+      "file": "40_内政\\CC_heiki.dat",
+      "line": 41
+    },
+    {
+      "type": "spot",
+      "tag": "spp0",
+      "key": "member",
+      "count": 7,
+      "file": "40_内政\\politic_ev_spot.dat",
+      "line": 454
+    },
+    {
+      "type": "spot",
+      "tag": "spp0t",
+      "key": "member",
+      "count": 2,
+      "file": "40_内政\\politic_ev_spot.dat",
+      "line": 471
+    },
+    {
+      "type": "unit",
+      "tag": "poli100_win",
+      "key": "merce",
+      "count": 3,
+      "file": "40_内政\\politic_ev_spot.dat",
+      "line": 521
+    }
+  ],
+  "examples": {
+    "event": [
+      {
+        "file": "102_ランダムイベント\\randomev71-80.dat",
+        "line": 688,
+        "tag": "purchase_randomev75",
+        "parent": null
+      },
+      {
+        "file": "102_ランダムイベント\\randomev71-80.dat",
+        "line": 699,
+        "tag": "randomev75_fluctuation",
+        "parent": null
+      },
+      {
+        "file": "3000_淫ドリームマッチ\\ev_dream.dat",
+        "line": 599,
+        "tag": "drev",
+        "parent": null
+      },
+      {
+        "file": "3000_淫ドリームマッチ\\sc_dream_sys.dat",
+        "line": 51,
+        "tag": "op_dream",
+        "parent": null
+      },
+      {
+        "file": "3000_淫ドリームマッチ\\sc_dream_sys.dat",
+        "line": 134,
+        "tag": "member_serect_dr",
+        "parent": null
+      }
+    ],
+    "spot": [
+      {
+        "file": "3000_淫ドリームマッチ\\sc_dream_sys.dat",
+        "line": 126,
+        "tag": "rndms100dr",
+        "parent": null
+      },
+      {
+        "file": "40_内政\\graphic_change.dat",
+        "line": 1,
+        "tag": "spp1",
+        "parent": null
+      },
+      {
+        "file": "40_内政\\politic_ev_spot.dat",
+        "line": 448,
+        "tag": "spptest",
+        "parent": null
+      },
+      {
+        "file": "40_内政\\politic_ev_spot.dat",
+        "line": 454,
+        "tag": "spp0",
+        "parent": null
+      },
+      {
+        "file": "40_内政\\politic_ev_spot.dat",
+        "line": 471,
+        "tag": "spp0t",
+        "parent": null
+      }
+    ],
+    "skill": [
+      {
+        "file": "31_ユニットスキル\\U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 2345,
+        "tag": "sp_mimi_sw",
+        "parent": null
+      }
+    ],
+    "detail": [
+      {
+        "file": "40_内政\\CC_chara_create.dat",
+        "line": 28,
+        "tag": null,
+        "parent": null
+      },
+      {
+        "file": "40_内政\\CC_heiki.dat",
+        "line": 41,
+        "tag": null,
+        "parent": null
+      },
+      {
+        "file": "40_内政\\CC_sichosha.dat",
+        "line": 16,
+        "tag": null,
+        "parent": null
+      },
+      {
+        "file": "40_内政\\CC_sichosha.dat",
+        "line": 20,
+        "tag": null,
+        "parent": null
+      },
+      {
+        "file": "40_内政\\CC_unit_change.dat",
+        "line": 124,
+        "tag": null,
+        "parent": null
+      }
+    ],
+    "unit": [
+      {
+        "file": "40_内政\\politic_ev_spot.dat",
+        "line": 443,
+        "tag": "cmd",
+        "parent": null
+      },
+      {
+        "file": "40_内政\\politic_ev_spot.dat",
+        "line": 478,
+        "tag": "poli400_naisei",
+        "parent": null
+      },
+      {
+        "file": "40_内政\\politic_ev_spot.dat",
+        "line": 484,
+        "tag": "poli400_naisei_b",
+        "parent": null
+      },
+      {
+        "file": "40_内政\\politic_ev_spot.dat",
+        "line": 521,
+        "tag": "poli100_win",
+        "parent": null
+      },
+      {
+        "file": "40_内政\\politic_ev_spot.dat",
+        "line": 530,
+        "tag": "poli100_rscwin",
+        "parent": "poli100_win"
+      }
+    ]
+  }
+}

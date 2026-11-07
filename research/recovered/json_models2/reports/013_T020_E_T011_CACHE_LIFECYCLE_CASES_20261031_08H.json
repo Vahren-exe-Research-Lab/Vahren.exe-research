@@ -1,0 +1,2474 @@
+{
+  "id": "E-AUDIT-20261031-08H-T020-T011-CACHE-DUPLICATE-CLEANUP-01",
+  "source_id": "B-20261031-08H-T011-TRAINING-CACHE-LIFECYCLE-01",
+  "classification": "CONDITIONAL_SYNTHETIC_ONLY",
+  "normal_path_order": [
+    "INIT_SENTINEL",
+    "PROCESS_UNIT",
+    "REQUEST_RANGE_ERASE",
+    "FREE_SENTINEL",
+    "NEXT_MANAGER_ITERATION"
+  ],
+  "unknown_not_run": [
+    "SENTINEL_ALLOCATION_FAILURE",
+    "ERASE_EXCEPTION",
+    "EARLY_EXIT",
+    "MID_SCOPE_POINTER_RECYCLE",
+    "DUPLICATE_NATIVE_REACHABILITY"
+  ],
+  "assumptions": [
+    "allocator succeeds for synthetic distinct-key insert",
+    "tree invariant holds",
+    "no key recycling within one scope"
+  ],
+  "cases": [
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": -3,
+      "proposed_bonus": -3,
+      "base": -2,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": -5,
+        "cached_after": -3,
+        "next_same_leader": -5,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": -3,
+      "proposed_bonus": -3,
+      "base": 0,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": -3,
+        "cached_after": -3,
+        "next_same_leader": -3,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": -3,
+      "proposed_bonus": -3,
+      "base": 1,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": -2,
+        "cached_after": -3,
+        "next_same_leader": -2,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": -3,
+      "proposed_bonus": -3,
+      "base": 3,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 0,
+        "cached_after": -3,
+        "next_same_leader": 0,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": -3,
+      "proposed_bonus": 0,
+      "base": -2,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": -2,
+        "cached_after": -3,
+        "next_same_leader": -5,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": -3,
+      "proposed_bonus": 0,
+      "base": 0,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 0,
+        "cached_after": -3,
+        "next_same_leader": -3,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": -3,
+      "proposed_bonus": 0,
+      "base": 1,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 1,
+        "cached_after": -3,
+        "next_same_leader": -2,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": -3,
+      "proposed_bonus": 0,
+      "base": 3,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 3,
+        "cached_after": -3,
+        "next_same_leader": 0,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": -3,
+      "proposed_bonus": 9,
+      "base": -2,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 7,
+        "cached_after": -3,
+        "next_same_leader": -5,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": -3,
+      "proposed_bonus": 9,
+      "base": 0,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 9,
+        "cached_after": -3,
+        "next_same_leader": -3,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": -3,
+      "proposed_bonus": 9,
+      "base": 1,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 10,
+        "cached_after": -3,
+        "next_same_leader": -2,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": -3,
+      "proposed_bonus": 9,
+      "base": 3,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 12,
+        "cached_after": -3,
+        "next_same_leader": 0,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": 0,
+      "proposed_bonus": -3,
+      "base": -2,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": -5,
+        "cached_after": 0,
+        "next_same_leader": -2,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": 0,
+      "proposed_bonus": -3,
+      "base": 0,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": -3,
+        "cached_after": 0,
+        "next_same_leader": 0,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": 0,
+      "proposed_bonus": -3,
+      "base": 1,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": -2,
+        "cached_after": 0,
+        "next_same_leader": 1,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": 0,
+      "proposed_bonus": -3,
+      "base": 3,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 0,
+        "cached_after": 0,
+        "next_same_leader": 3,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": 0,
+      "proposed_bonus": 0,
+      "base": -2,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": -2,
+        "cached_after": 0,
+        "next_same_leader": -2,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": 0,
+      "proposed_bonus": 0,
+      "base": 0,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 0,
+        "cached_after": 0,
+        "next_same_leader": 0,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": 0,
+      "proposed_bonus": 0,
+      "base": 1,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 1,
+        "cached_after": 0,
+        "next_same_leader": 1,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": 0,
+      "proposed_bonus": 0,
+      "base": 3,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 3,
+        "cached_after": 0,
+        "next_same_leader": 3,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": 0,
+      "proposed_bonus": 9,
+      "base": -2,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 7,
+        "cached_after": 0,
+        "next_same_leader": -2,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": 0,
+      "proposed_bonus": 9,
+      "base": 0,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 9,
+        "cached_after": 0,
+        "next_same_leader": 0,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": 0,
+      "proposed_bonus": 9,
+      "base": 1,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 10,
+        "cached_after": 0,
+        "next_same_leader": 1,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": 0,
+      "proposed_bonus": 9,
+      "base": 3,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 12,
+        "cached_after": 0,
+        "next_same_leader": 3,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": 4,
+      "proposed_bonus": -3,
+      "base": -2,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": -5,
+        "cached_after": 4,
+        "next_same_leader": 2,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": 4,
+      "proposed_bonus": -3,
+      "base": 0,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": -3,
+        "cached_after": 4,
+        "next_same_leader": 4,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": 4,
+      "proposed_bonus": -3,
+      "base": 1,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": -2,
+        "cached_after": 4,
+        "next_same_leader": 5,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": 4,
+      "proposed_bonus": -3,
+      "base": 3,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 0,
+        "cached_after": 4,
+        "next_same_leader": 7,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": 4,
+      "proposed_bonus": 0,
+      "base": -2,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": -2,
+        "cached_after": 4,
+        "next_same_leader": 2,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": 4,
+      "proposed_bonus": 0,
+      "base": 0,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 0,
+        "cached_after": 4,
+        "next_same_leader": 4,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": 4,
+      "proposed_bonus": 0,
+      "base": 1,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 1,
+        "cached_after": 4,
+        "next_same_leader": 5,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": 4,
+      "proposed_bonus": 0,
+      "base": 3,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 3,
+        "cached_after": 4,
+        "next_same_leader": 7,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": 4,
+      "proposed_bonus": 9,
+      "base": -2,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 7,
+        "cached_after": 4,
+        "next_same_leader": 2,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": 4,
+      "proposed_bonus": 9,
+      "base": 0,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 9,
+        "cached_after": 4,
+        "next_same_leader": 4,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": 4,
+      "proposed_bonus": 9,
+      "base": 1,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 10,
+        "cached_after": 4,
+        "next_same_leader": 5,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 4096,
+      "stored_bonus": 4,
+      "proposed_bonus": 9,
+      "base": 3,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 12,
+        "cached_after": 4,
+        "next_same_leader": 7,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": -3,
+      "proposed_bonus": -3,
+      "base": -2,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": -5,
+        "cached_after": -3,
+        "next_same_leader": -5,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": -3,
+      "proposed_bonus": -3,
+      "base": 0,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": -3,
+        "cached_after": -3,
+        "next_same_leader": -3,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": -3,
+      "proposed_bonus": -3,
+      "base": 1,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": -2,
+        "cached_after": -3,
+        "next_same_leader": -2,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": -3,
+      "proposed_bonus": -3,
+      "base": 3,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 0,
+        "cached_after": -3,
+        "next_same_leader": 0,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": -3,
+      "proposed_bonus": 0,
+      "base": -2,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": -2,
+        "cached_after": -3,
+        "next_same_leader": -5,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": -3,
+      "proposed_bonus": 0,
+      "base": 0,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 0,
+        "cached_after": -3,
+        "next_same_leader": -3,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": -3,
+      "proposed_bonus": 0,
+      "base": 1,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 1,
+        "cached_after": -3,
+        "next_same_leader": -2,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": -3,
+      "proposed_bonus": 0,
+      "base": 3,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 3,
+        "cached_after": -3,
+        "next_same_leader": 0,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": -3,
+      "proposed_bonus": 9,
+      "base": -2,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 7,
+        "cached_after": -3,
+        "next_same_leader": -5,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": -3,
+      "proposed_bonus": 9,
+      "base": 0,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 9,
+        "cached_after": -3,
+        "next_same_leader": -3,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": -3,
+      "proposed_bonus": 9,
+      "base": 1,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 10,
+        "cached_after": -3,
+        "next_same_leader": -2,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": -3,
+      "proposed_bonus": 9,
+      "base": 3,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 12,
+        "cached_after": -3,
+        "next_same_leader": 0,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": 0,
+      "proposed_bonus": -3,
+      "base": -2,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": -5,
+        "cached_after": 0,
+        "next_same_leader": -2,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": 0,
+      "proposed_bonus": -3,
+      "base": 0,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": -3,
+        "cached_after": 0,
+        "next_same_leader": 0,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": 0,
+      "proposed_bonus": -3,
+      "base": 1,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": -2,
+        "cached_after": 0,
+        "next_same_leader": 1,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": 0,
+      "proposed_bonus": -3,
+      "base": 3,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 0,
+        "cached_after": 0,
+        "next_same_leader": 3,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": 0,
+      "proposed_bonus": 0,
+      "base": -2,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": -2,
+        "cached_after": 0,
+        "next_same_leader": -2,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": 0,
+      "proposed_bonus": 0,
+      "base": 0,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 0,
+        "cached_after": 0,
+        "next_same_leader": 0,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": 0,
+      "proposed_bonus": 0,
+      "base": 1,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 1,
+        "cached_after": 0,
+        "next_same_leader": 1,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": 0,
+      "proposed_bonus": 0,
+      "base": 3,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 3,
+        "cached_after": 0,
+        "next_same_leader": 3,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": 0,
+      "proposed_bonus": 9,
+      "base": -2,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 7,
+        "cached_after": 0,
+        "next_same_leader": -2,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": 0,
+      "proposed_bonus": 9,
+      "base": 0,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 9,
+        "cached_after": 0,
+        "next_same_leader": 0,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": 0,
+      "proposed_bonus": 9,
+      "base": 1,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 10,
+        "cached_after": 0,
+        "next_same_leader": 1,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": 0,
+      "proposed_bonus": 9,
+      "base": 3,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 12,
+        "cached_after": 0,
+        "next_same_leader": 3,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": 4,
+      "proposed_bonus": -3,
+      "base": -2,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": -5,
+        "cached_after": 4,
+        "next_same_leader": 2,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": 4,
+      "proposed_bonus": -3,
+      "base": 0,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": -3,
+        "cached_after": 4,
+        "next_same_leader": 4,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": 4,
+      "proposed_bonus": -3,
+      "base": 1,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": -2,
+        "cached_after": 4,
+        "next_same_leader": 5,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": 4,
+      "proposed_bonus": -3,
+      "base": 3,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 0,
+        "cached_after": 4,
+        "next_same_leader": 7,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": 4,
+      "proposed_bonus": 0,
+      "base": -2,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": -2,
+        "cached_after": 4,
+        "next_same_leader": 2,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": 4,
+      "proposed_bonus": 0,
+      "base": 0,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 0,
+        "cached_after": 4,
+        "next_same_leader": 4,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": 4,
+      "proposed_bonus": 0,
+      "base": 1,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 1,
+        "cached_after": 4,
+        "next_same_leader": 5,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": 4,
+      "proposed_bonus": 0,
+      "base": 3,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 3,
+        "cached_after": 4,
+        "next_same_leader": 7,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": 4,
+      "proposed_bonus": 9,
+      "base": -2,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 7,
+        "cached_after": 4,
+        "next_same_leader": 2,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": 4,
+      "proposed_bonus": 9,
+      "base": 0,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 9,
+        "cached_after": 4,
+        "next_same_leader": 4,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": 4,
+      "proposed_bonus": 9,
+      "base": 1,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 10,
+        "cached_after": 4,
+        "next_same_leader": 5,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4294967295,
+      "incoming_key": 4294967295,
+      "stored_bonus": 4,
+      "proposed_bonus": 9,
+      "base": 3,
+      "expected": {
+        "insert_flag": 0,
+        "incoming_discarded": true,
+        "computed_current": 12,
+        "cached_after": 4,
+        "next_same_leader": 7,
+        "node_count_after": 1,
+        "kind": "DUPLICATE_INJECTED"
+      },
+      "admission": "LOW_LEVEL_INJECTION_ONLY"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": -3,
+      "proposed_bonus": -3,
+      "base": -2,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": -5,
+        "cached_after": -3,
+        "next_same_leader": -5,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": -3,
+      "proposed_bonus": -3,
+      "base": 0,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": -3,
+        "cached_after": -3,
+        "next_same_leader": -3,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": -3,
+      "proposed_bonus": -3,
+      "base": 1,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": -2,
+        "cached_after": -3,
+        "next_same_leader": -2,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": -3,
+      "proposed_bonus": -3,
+      "base": 3,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 0,
+        "cached_after": -3,
+        "next_same_leader": 0,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": -3,
+      "proposed_bonus": 0,
+      "base": -2,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": -2,
+        "cached_after": 0,
+        "next_same_leader": -2,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": -3,
+      "proposed_bonus": 0,
+      "base": 0,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 0,
+        "cached_after": 0,
+        "next_same_leader": 0,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": -3,
+      "proposed_bonus": 0,
+      "base": 1,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 1,
+        "cached_after": 0,
+        "next_same_leader": 1,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": -3,
+      "proposed_bonus": 0,
+      "base": 3,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 3,
+        "cached_after": 0,
+        "next_same_leader": 3,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": -3,
+      "proposed_bonus": 9,
+      "base": -2,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 7,
+        "cached_after": 9,
+        "next_same_leader": 7,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": -3,
+      "proposed_bonus": 9,
+      "base": 0,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 9,
+        "cached_after": 9,
+        "next_same_leader": 9,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": -3,
+      "proposed_bonus": 9,
+      "base": 1,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 10,
+        "cached_after": 9,
+        "next_same_leader": 10,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": -3,
+      "proposed_bonus": 9,
+      "base": 3,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 12,
+        "cached_after": 9,
+        "next_same_leader": 12,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": 0,
+      "proposed_bonus": -3,
+      "base": -2,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": -5,
+        "cached_after": -3,
+        "next_same_leader": -5,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": 0,
+      "proposed_bonus": -3,
+      "base": 0,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": -3,
+        "cached_after": -3,
+        "next_same_leader": -3,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": 0,
+      "proposed_bonus": -3,
+      "base": 1,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": -2,
+        "cached_after": -3,
+        "next_same_leader": -2,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": 0,
+      "proposed_bonus": -3,
+      "base": 3,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 0,
+        "cached_after": -3,
+        "next_same_leader": 0,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": 0,
+      "proposed_bonus": 0,
+      "base": -2,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": -2,
+        "cached_after": 0,
+        "next_same_leader": -2,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": 0,
+      "proposed_bonus": 0,
+      "base": 0,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 0,
+        "cached_after": 0,
+        "next_same_leader": 0,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": 0,
+      "proposed_bonus": 0,
+      "base": 1,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 1,
+        "cached_after": 0,
+        "next_same_leader": 1,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": 0,
+      "proposed_bonus": 0,
+      "base": 3,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 3,
+        "cached_after": 0,
+        "next_same_leader": 3,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": 0,
+      "proposed_bonus": 9,
+      "base": -2,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 7,
+        "cached_after": 9,
+        "next_same_leader": 7,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": 0,
+      "proposed_bonus": 9,
+      "base": 0,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 9,
+        "cached_after": 9,
+        "next_same_leader": 9,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": 0,
+      "proposed_bonus": 9,
+      "base": 1,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 10,
+        "cached_after": 9,
+        "next_same_leader": 10,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": 0,
+      "proposed_bonus": 9,
+      "base": 3,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 12,
+        "cached_after": 9,
+        "next_same_leader": 12,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": 4,
+      "proposed_bonus": -3,
+      "base": -2,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": -5,
+        "cached_after": -3,
+        "next_same_leader": -5,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": 4,
+      "proposed_bonus": -3,
+      "base": 0,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": -3,
+        "cached_after": -3,
+        "next_same_leader": -3,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": 4,
+      "proposed_bonus": -3,
+      "base": 1,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": -2,
+        "cached_after": -3,
+        "next_same_leader": -2,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": 4,
+      "proposed_bonus": -3,
+      "base": 3,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 0,
+        "cached_after": -3,
+        "next_same_leader": 0,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": 4,
+      "proposed_bonus": 0,
+      "base": -2,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": -2,
+        "cached_after": 0,
+        "next_same_leader": -2,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": 4,
+      "proposed_bonus": 0,
+      "base": 0,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 0,
+        "cached_after": 0,
+        "next_same_leader": 0,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": 4,
+      "proposed_bonus": 0,
+      "base": 1,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 1,
+        "cached_after": 0,
+        "next_same_leader": 1,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": 4,
+      "proposed_bonus": 0,
+      "base": 3,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 3,
+        "cached_after": 0,
+        "next_same_leader": 3,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": 4,
+      "proposed_bonus": 9,
+      "base": -2,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 7,
+        "cached_after": 9,
+        "next_same_leader": 7,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": 4,
+      "proposed_bonus": 9,
+      "base": 0,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 9,
+        "cached_after": 9,
+        "next_same_leader": 9,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": 4,
+      "proposed_bonus": 9,
+      "base": 1,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 10,
+        "cached_after": 9,
+        "next_same_leader": 10,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 4096,
+      "incoming_key": 2147483648,
+      "stored_bonus": 4,
+      "proposed_bonus": 9,
+      "base": 3,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 12,
+        "cached_after": 9,
+        "next_same_leader": 12,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": -3,
+      "proposed_bonus": -3,
+      "base": -2,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": -5,
+        "cached_after": -3,
+        "next_same_leader": -5,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": -3,
+      "proposed_bonus": -3,
+      "base": 0,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": -3,
+        "cached_after": -3,
+        "next_same_leader": -3,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": -3,
+      "proposed_bonus": -3,
+      "base": 1,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": -2,
+        "cached_after": -3,
+        "next_same_leader": -2,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": -3,
+      "proposed_bonus": -3,
+      "base": 3,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 0,
+        "cached_after": -3,
+        "next_same_leader": 0,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": -3,
+      "proposed_bonus": 0,
+      "base": -2,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": -2,
+        "cached_after": 0,
+        "next_same_leader": -2,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": -3,
+      "proposed_bonus": 0,
+      "base": 0,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 0,
+        "cached_after": 0,
+        "next_same_leader": 0,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": -3,
+      "proposed_bonus": 0,
+      "base": 1,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 1,
+        "cached_after": 0,
+        "next_same_leader": 1,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": -3,
+      "proposed_bonus": 0,
+      "base": 3,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 3,
+        "cached_after": 0,
+        "next_same_leader": 3,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": -3,
+      "proposed_bonus": 9,
+      "base": -2,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 7,
+        "cached_after": 9,
+        "next_same_leader": 7,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": -3,
+      "proposed_bonus": 9,
+      "base": 0,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 9,
+        "cached_after": 9,
+        "next_same_leader": 9,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": -3,
+      "proposed_bonus": 9,
+      "base": 1,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 10,
+        "cached_after": 9,
+        "next_same_leader": 10,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": -3,
+      "proposed_bonus": 9,
+      "base": 3,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 12,
+        "cached_after": 9,
+        "next_same_leader": 12,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": 0,
+      "proposed_bonus": -3,
+      "base": -2,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": -5,
+        "cached_after": -3,
+        "next_same_leader": -5,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": 0,
+      "proposed_bonus": -3,
+      "base": 0,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": -3,
+        "cached_after": -3,
+        "next_same_leader": -3,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": 0,
+      "proposed_bonus": -3,
+      "base": 1,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": -2,
+        "cached_after": -3,
+        "next_same_leader": -2,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": 0,
+      "proposed_bonus": -3,
+      "base": 3,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 0,
+        "cached_after": -3,
+        "next_same_leader": 0,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": 0,
+      "proposed_bonus": 0,
+      "base": -2,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": -2,
+        "cached_after": 0,
+        "next_same_leader": -2,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": 0,
+      "proposed_bonus": 0,
+      "base": 0,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 0,
+        "cached_after": 0,
+        "next_same_leader": 0,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": 0,
+      "proposed_bonus": 0,
+      "base": 1,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 1,
+        "cached_after": 0,
+        "next_same_leader": 1,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": 0,
+      "proposed_bonus": 0,
+      "base": 3,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 3,
+        "cached_after": 0,
+        "next_same_leader": 3,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": 0,
+      "proposed_bonus": 9,
+      "base": -2,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 7,
+        "cached_after": 9,
+        "next_same_leader": 7,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": 0,
+      "proposed_bonus": 9,
+      "base": 0,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 9,
+        "cached_after": 9,
+        "next_same_leader": 9,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": 0,
+      "proposed_bonus": 9,
+      "base": 1,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 10,
+        "cached_after": 9,
+        "next_same_leader": 10,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": 0,
+      "proposed_bonus": 9,
+      "base": 3,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 12,
+        "cached_after": 9,
+        "next_same_leader": 12,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": 4,
+      "proposed_bonus": -3,
+      "base": -2,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": -5,
+        "cached_after": -3,
+        "next_same_leader": -5,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": 4,
+      "proposed_bonus": -3,
+      "base": 0,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": -3,
+        "cached_after": -3,
+        "next_same_leader": -3,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": 4,
+      "proposed_bonus": -3,
+      "base": 1,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": -2,
+        "cached_after": -3,
+        "next_same_leader": -2,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": 4,
+      "proposed_bonus": -3,
+      "base": 3,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 0,
+        "cached_after": -3,
+        "next_same_leader": 0,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": 4,
+      "proposed_bonus": 0,
+      "base": -2,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": -2,
+        "cached_after": 0,
+        "next_same_leader": -2,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": 4,
+      "proposed_bonus": 0,
+      "base": 0,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 0,
+        "cached_after": 0,
+        "next_same_leader": 0,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": 4,
+      "proposed_bonus": 0,
+      "base": 1,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 1,
+        "cached_after": 0,
+        "next_same_leader": 1,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": 4,
+      "proposed_bonus": 0,
+      "base": 3,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 3,
+        "cached_after": 0,
+        "next_same_leader": 3,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": 4,
+      "proposed_bonus": 9,
+      "base": -2,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 7,
+        "cached_after": 9,
+        "next_same_leader": 7,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": 4,
+      "proposed_bonus": 9,
+      "base": 0,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 9,
+        "cached_after": 9,
+        "next_same_leader": 9,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": 4,
+      "proposed_bonus": 9,
+      "base": 1,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 10,
+        "cached_after": 9,
+        "next_same_leader": 10,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    },
+    {
+      "existing_key": 2147483648,
+      "incoming_key": 4096,
+      "stored_bonus": 4,
+      "proposed_bonus": 9,
+      "base": 3,
+      "expected": {
+        "insert_flag": 1,
+        "incoming_discarded": false,
+        "computed_current": 12,
+        "cached_after": 9,
+        "next_same_leader": 12,
+        "node_count_after": 2,
+        "kind": "DISTINCT_KEY_ASSUMED"
+      },
+      "admission": "ALLOC_SUCCESS_ASSUMED"
+    }
+  ]
+}

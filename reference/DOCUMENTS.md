@@ -8,28 +8,30 @@
 
 文書検索結果は保存ファイル名、元パス・出典URI、題名、本文だけの一致の順で最大20件です。同じ区分内は回収台帳での初出順です。省略時は一致総数を表示します。全件の出典・制約は一覧または各詳細ページに掲載しています。研究ID・題名で絞り込めます。アドレス・所有者＋オフセット検索は従来の専用結果を返します。
 
-全 1836 文書。各詳細ページは最大100文書で、出典行・SHA256・回収台帳・制約を保持しています。
+全 2023 文書。各詳細ページは最大100文書で、出典行・SHA256・回収台帳・制約を保持しています。
 
 | 詳細ページ | 文書数 | 最初の題名 | 最後の題名 |
 |---|---:|---|---|
 | [1](documents/page-001.md) | 100 | DEV 独立解析：原作 MiniMapWnd の静的レンダリング・入力契約（2026-10-11） | 迫真戦記 ver0.67｜新B：`offset`・`offset_on`・`attr` の独立ゲートと単独 `on` 正規化 |
-| [2](documents/page-002.md) | 100 | B-20261024-0808-T028-DUAL-DEATH-ENTRY-SENTINEL-01｜死亡処理2入口のHP・特殊値・event前処理差 | 迫真戦記 ver0.67｜B/T012・T013｜HP virtual+0x70のRTTI別実装とallfunc live-vector走査 |
-| [3](documents/page-003.md) | 100 | 迫真戦記 新B / T011｜member展開から生成helperへ戻る条件付きCALL cycle（2026-10-21 05:10 JST） | 迫真戦記 新B｜26候補の旧I18と既存owner仕様の重複照合（2026-10-21 00時台） |
-| [4](documents/page-004.md) | 100 | REA 2026-11-04 05H \| ios flags intersection and exception dispatch (bounded STATIC) | 2026-11-01 02H REA P0 二除数検証・独立読戻し受領 |
-| [5](documents/page-005.md) | 100 | REA｜2026-11-01 02時台 追加差分：residue2 の第2除数をparser→book初期化まで追跡 | 迫真戦記 REA｜2026-10-30 07H：Ogg PCM形式の16bit切詰めと32bit積の境界 |
-| [6](documents/page-006.md) | 100 | 迫真戦記 REA｜2026-10-30 06H：Oggの実バッファ長と半周Lock境界 | E-AUDIT-20261026-01H-T018-T020-V7-TROOP-MEMBER-EPOCH-CLOSURE-01 |
-| [7](documents/page-007.md) | 100 | T018/T020｜BattleWndとDemoPersonのvtable名前空間・簡略戦闘2側dispatch受入ゲート | REA 07H｜P0 CRT __chsize_nolock 独立読み戻し記録 |
-| [8](documents/page-008.md) | 100 | REA 06H｜P0 __write_nolock 保存後独立読み戻し | B-20261017-1517-01｜T012/T011 MP回復healと列車砲missileの同一raw gun_delayキー（限定SOURCE） |
-| [9](documents/page-009.md) | 100 | B-20261017-2017-01｜ZNMブーメランの子Skill分岐とMP回復宣言（限定ORIGINAL SOURCE） | B-20261013-1158-01｜WRQ-B-SKILL 54FD50 Rush状態コピー全本体（T013/T012） |
-| [10](documents/page-010.md) | 100 | B-20261013-1200-01｜WRQ-B-SKILL：55_00E0＋54FD50 copy chainのコピー対象421byteと非対象32byte（T013） | T024｜0x52AD00 連結リスト・マージ同距離分岐（2026-11-01 17H JST） |
-| [11](documents/page-011.md) | 100 | B-20261016-1110-01｜T024 AI移動・待機Skillの同一block内 far/func 重複宣言と継承辺 | T028 原作retreat_ok後段：退却先未発見→メッセージ返却→mode1分配抑止（21H） |
-| [12](documents/page-012.md) | 100 | T028 退却先選択：Spot候補の容量・予約計数のstrict gate（22H） | 迫真戦記 ver0.67 REA独立静的研究｜GameManager仮想CALLのライフサイクル制約・ガード監査 |
-| [13](documents/page-013.md) | 100 | 迫真戦記 ver0.67｜REA P0・T014 静的増分：GameManagerモード選択とFadeSheet停止ラッチ | 2026-10-28 21時台 REA 独立読み戻し記録 |
-| [14](documents/page-014.md) | 100 | 迫真戦記 ver0.67｜REA 2026-10-28 21時台：Oggシリアル配列の早期return時の所有権・解放非対称性 | REA Wave3 保存済みGhidra静的証拠の独立照合（2026-10-10） |
-| [15](documents/page-015.md) | 100 | REA Wave 3候補（未着手・Wave2全件照合後にキュー化） | Reservation extension integration plan |
-| [16](documents/page-016.md) | 100 | Bounded manifest planning layer | T020_E_T013_VIEWFLAG_CHAIN_READBACK_20261101_01H.json |
-| [17](documents/page-017.md) | 100 | T020_E_T013_POSTREFILL_READBACK_20261030_21H.json | Claude ローダー修正パッチ（2026-10-26）— Codex（Work）向け取り込み手順 |
-| [18](documents/page-018.md) | 100 | Bounded v2 implementation — 2026-10-27 | 研究知識ベース同期状態 |
-| [19](documents/page-019.md) | 36 | Private research intake — owner ID/source links | T011_DATA_MODEL_SUMMARY.txt |
+| [2](documents/page-002.md) | 100 | B-20261024-0808-T028-DUAL-DEATH-ENTRY-SENTINEL-01｜死亡処理2入口のHP・特殊値・event前処理差 | 迫真戦記 新B / T011｜member展開から生成helperへ戻る条件付きCALL cycle（2026-10-21 05:10 JST） |
+| [3](documents/page-003.md) | 100 | B-20261027-2114-T028-COUNT-DEATH-EVENT-COLOR-QUEUE-01｜T028 特殊dead_event=countの別経路（2026-10-27 21H） | REA 2026-11-04 05H \| ios flags intersection and exception dispatch (bounded STATIC) |
+| [4](documents/page-004.md) | 100 | REA 2026-11-04 04H \| CRT TLS-backed gate and streambuf error-flag ABI (bounded original x86/V9 STATIC) | REA｜2026-11-01 02時台 追加差分：residue2 の第2除数をparser→book初期化まで追跡 |
+| [5](documents/page-005.md) | 100 | REA｜2026-11-01 02時台 P0：residue2第1除数のパーサ正常終了条件を再評価 | 迫真戦記 REA｜2026-10-30 06H：Oggの実バッファ長と半周Lock境界 |
+| [6](documents/page-006.md) | 100 | 迫真戦記 REA｜2026-10-30 05H：DirectSound workerの半周Lockと第2領域の受渡し | T018/T020｜BattleWndとDemoPersonのvtable名前空間・簡略戦闘2側dispatch受入ゲート |
+| [7](documents/page-007.md) | 100 | E-AUDIT-20261024-07H-T018-T020-WAR-ANCHOR-EPOCH-01｜戦闘前の候補揺動と終了後の残存ポインタ | REA 06H｜P0 __write_nolock 保存後独立読み戻し |
+| [8](documents/page-008.md) | 100 | 迫真戦記 ver0.67｜REA 2026-10-28 06H P0 CRT __write_nolock 静的監査 | B-20261017-2017-01｜ZNMブーメランの子Skill分岐とMP回復宣言（限定ORIGINAL SOURCE） |
+| [9](documents/page-009.md) | 100 | B-20261017-2114-01｜ZNMブーメラン子分岐のnext_interval・next_last・onehit宣言（T012主/T011補助） | B-20261013-1200-01｜WRQ-B-SKILL：55_00E0＋54FD50 copy chainのコピー対象421byteと非対象32byte（T013） |
+| [10](documents/page-010.md) | 100 | B-20261013-1130-01｜WRQ-B-SKILL・0x54F720共有オブジェクトpoolと登録経路の静的復元 | B-20261016-1110-01｜T024 AI移動・待機Skillの同一block内 far/func 重複宣言と継承辺 |
+| [11](documents/page-011.md) | 100 | B-20261020-0109-01｜T024 砲兵一時集団のbattle側clear支配とindexed槽との非対称 | T028 退却先選択：Spot候補の容量・予約計数のstrict gate（22H） |
+| [12](documents/page-012.md) | 100 | B-20261028-08H-T028-FALLBACK-C4-EDI-GATE-01｜名前解決fallback既定値とloyal_down補正条件 | 迫真戦記 ver0.67｜REA P0・T014 静的増分：GameManagerモード選択とFadeSheet停止ラッチ |
+| [13](documents/page-013.md) | 100 | 迫真戦記 ver0.67｜REA T014 局所静的証拠：`GameManager+0x1EF150`の解除経路と遮断先 | 迫真戦記 ver0.67｜REA 2026-10-28 21時台：Oggシリアル配列の早期return時の所有権・解放非対称性 |
+| [14](documents/page-014.md) | 100 | 22時台：独立読み戻し・再監査記録 | REA Wave 3候補（未着手・Wave2全件照合後にキュー化） |
+| [15](documents/page-015.md) | 100 | Wave4 独立監査：event参照フラグの評価順序（2026-10-10） | Bounded manifest planning layer |
+| [16](documents/page-016.md) | 100 | Core ABI handshake fixture | T020_E_T013_POSTREFILL_READBACK_20261030_21H.json |
+| [17](documents/page-017.md) | 100 | T020_E_T013_KIND8_PREQUEUE_READBACK_20261031_15H.json | Bounded v2 implementation — 2026-10-27 |
+| [18](documents/page-018.md) | 100 | Auto-arm integration checkpoint — 2026-10-28 | Private research intake — owner ID/source links |
+| [19](documents/page-019.md) | 100 | Private research intake — owner ID/source links | 018_T020_E_T013_BTLLIMIT_CLOCK_CASES_20261031_02H.json |
+| [20](documents/page-020.md) | 100 | 019_T020_E_T013_BUCKET_MERGE_CASES_20261031_16H.json | T025_BOSS_EVENT_MARKER_SAVE_CROSSWALK_20261013.json |
+| [21](documents/page-021.md) | 23 | T025_BOSS_POWER_SAVE_PRESENCE_20261013.json | VAHREN_ZIP_TOPOLOGY.json |
 
 [事典の入口](README.md)

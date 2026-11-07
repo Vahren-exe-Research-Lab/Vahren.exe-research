@@ -1,0 +1,25 @@
+{
+  "schema": "E-T020-MANAGER-IDENTITY-v1",
+  "source_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "source_b_id": "B-20261027-11H-T013-GAMETASK-MAINLOOP-MANAGER-PROVENANCE-01",
+  "base": {
+    "main": 4096, "holder_owner": 4096, "tick_manager": 4108,
+    "register_manager": 4108, "source_kind": "STATIC_ASM",
+    "synthetic": true, "register_session": "runA", "tick_session": "runA",
+    "register_frame": 12, "tick_frame": 12, "register_generation": 1,
+    "tick_generation": 1, "evidence_sha256": null,
+    "source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187"
+  },
+  "cases": [
+    {"id": "STATIC_EQUAL", "override": {}, "expected": "STATIC_EQUALITY_UNPROVEN"},
+    {"id": "STATIC_DIFFERENT", "override": {"holder_owner": 8192, "register_manager": 8204}, "expected": "DIFFERENT_MANAGERS"},
+    {"id": "NO_HOLDER", "override": {"holder_owner": null}, "expected": "MISSING_POINTER"},
+    {"id": "BAD_TICK_DERIVATION", "override": {"tick_manager": 4109}, "expected": "INVALID_DERIVATION"},
+    {"id": "BAD_REGISTER_DERIVATION", "override": {"register_manager": 4109}, "expected": "INVALID_DERIVATION"},
+    {"id": "SOURCE_MISMATCH", "override": {"source_sha256": "UNRELATED"}, "expected": "SOURCE_MISMATCH"},
+    {"id": "RUNTIME_SYNTHETIC", "override": {"source_kind": "ORIGINAL_RUNTIME"}, "expected": "SYNTHETIC_NOT_OBSERVED"},
+    {"id": "CROSS_SESSION", "override": {"register_session": "runB"}, "expected": "CONTEXT_MISMATCH"},
+    {"id": "CROSS_FRAME", "override": {"register_frame": 11}, "expected": "CONTEXT_MISMATCH"},
+    {"id": "POOL_GENERATION_CHANGE", "override": {"tick_generation": 2}, "expected": "CONTEXT_MISMATCH"}
+  ]
+}

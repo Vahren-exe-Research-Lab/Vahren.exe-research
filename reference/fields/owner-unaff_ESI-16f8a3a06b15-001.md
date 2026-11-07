@@ -16,6 +16,9 @@
 - [research/recovered/b_batch4/data/B_T012_SCALE_INIT_PARSER_COPY_OFFLINE_20261024_14H.md 行 19](../../research/recovered/b_batch4/data/B_T012_SCALE_INIT_PARSER_COPY_OFFLINE_20261024_14H.md?plain=1#L19-L19) — *(undefined8 *)(unaff_ESI + 0x280) = 0;
   制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
 
+- [research/recovered/json_sources1/reports/data/B_T012_SCALE_INIT_PARSER_COPY_OFFLINE_20261024_14H.json 行 83](../../research/recovered/json_sources1/reports/data/B_T012_SCALE_INIT_PARSER_COPY_OFFLINE_20261024_14H.json?plain=1#L83-L83) — "evidence": "0x00599900 pseudoc *(undefined8*)(unaff_ESI+0x280)=0; +0x288=0x3FF0000000000000; +0x27C=0",
+  制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
+
 <a id="field-288"></a>
 ## unaff_ESI + 0x288
 

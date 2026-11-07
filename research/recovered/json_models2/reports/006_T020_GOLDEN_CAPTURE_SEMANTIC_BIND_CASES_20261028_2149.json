@@ -1,0 +1,450 @@
+{
+  "research_id": "E-OFFLINE-20261028-2149-T018-T020-SEMANTIC-CAPTURE-BINDING-01",
+  "parent_research_id": "E-OFFLINE-20261028-2045-T018-T020-GOLDEN-LINEAGE-CONTENT-BOUND-01",
+  "parent_fixture_sha256": "71C09CCCACCF878A7B04C695565EB2C316BA895FDB72B8C9E852CC05101B24F9",
+  "parent_gate_sha256": "9F1A4586F77408D4067A1CE77E86CB2F1215CE6DD53B0D2F5A3E2993534E376B",
+  "source_zip_sha256": "911E5E37A3F9BD5B36F929AF94B0D1E2CD1CD5CF34E3E2F16C8FC800ABF5F7C2",
+  "sqlite_sha256": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF",
+  "schema": "hakushin-synthetic-capture/v1",
+  "base": {
+    "capture_source": "SYNTHETIC",
+    "g0": {
+      "run_id": "rA-001",
+      "scenario": "sci1",
+      "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+      "at": 200,
+      "ui_legal": true,
+      "started": true,
+      "capture_sha": "31E22431B9BBD6F8A3581FBB1D9E08CDFA9C1D84EFE45B53D4C22B342D5D1F19",
+      "capture_b64": "eyJmaWVsZHMiOnsiYXQiOjIwMCwiZGF0X3NoYSI6IkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkIiLCJldmVudF9zZXEiOjExLCJleGVfc2hhIjoiQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQSIsInByZXZpb3VzX2NhcHR1cmVfc2hhIjoiMjk2MUZDNTI5REQ4NDE1QTA1ODY2QzUxQkE3ODhGQjExN0Q4RkM3ODE2RUI0NzBERUY3NDI5MTQwMkIyMDJBQiIsInJ1bl9pZCI6InJBLTAwMSIsInNjZW5hcmlvIjoic2NpMSIsInN0YXJ0ZWQiOnRydWUsInVpX2xlZ2FsIjp0cnVlfSwiZm9ybWF0IjoiaGFrdXNoaW4tc3ludGhldGljLWNhcHR1cmUvdjEiLCJzdGFnZSI6ImcwIn0=",
+      "event_seq": 11,
+      "previous_capture_sha": "2961FC529DD8415A05866C51BA788FB117D8FC7816EB470DEF74291402B202AB"
+    },
+    "g1": {
+      "run_id": "rA-001",
+      "scenario": "sci1",
+      "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+      "at": 190,
+      "unmodified_save": true,
+      "save_sha": "3355A527AB4B09FC8B34A729AE159461D3D0617E8619B6361F40658DD8289C37",
+      "input_sha": "9CC18F71798340FC14C06F613B9DFDA10FD1BDB76EBBF707C99899C1F6352AAC",
+      "capture_sha": "2961FC529DD8415A05866C51BA788FB117D8FC7816EB470DEF74291402B202AB",
+      "capture_b64": "eyJmaWVsZHMiOnsiYXQiOjE5MCwiZGF0X3NoYSI6IkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkIiLCJldmVudF9zZXEiOjEwLCJleGVfc2hhIjoiQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQSIsImlucHV0X2I2NCI6IlptRnJaUzExYzJWeUxXbHVjSFYwY3c9PSIsImlucHV0X3NoYSI6IjlDQzE4RjcxNzk4MzQwRkMxNEMwNkY2MTNCOURGREExMEZEMUJEQjc2RUJCRjcwN0M5OTg5OUMxRjYzNTJBQUMiLCJydW5faWQiOiJyQS0wMDEiLCJzYXZlX2I2NCI6IlptRnJaUzExYm0xdlpHbG1hV1ZrTFhOaGRtVT0iLCJzYXZlX3NoYSI6IjMzNTVBNTI3QUI0QjA5RkM4QjM0QTcyOUFFMTU5NDYxRDNEMDYxN0U4NjE5QjYzNjFGNDA2NThERDgyODlDMzciLCJzY2VuYXJpbyI6InNjaTEiLCJ1bm1vZGlmaWVkX3NhdmUiOnRydWV9LCJmb3JtYXQiOiJoYWt1c2hpbi1zeW50aGV0aWMtY2FwdHVyZS92MSIsInN0YWdlIjoiZzEifQ==",
+      "save_b64": "ZmFrZS11bm1vZGlmaWVkLXNhdmU=",
+      "input_b64": "ZmFrZS11c2VyLWlucHV0cw==",
+      "event_seq": 10
+    },
+    "g2": {
+      "run_id": "rA-001",
+      "scenario": "sci1",
+      "exe_sha": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "dat_sha": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+      "at": 201,
+      "map_sha": "E1920B8FC15DC44AC4D8C5F92724BB455C0F8576358EEF9086DAF1CCB18C19F5",
+      "capture_sha": "BC54F83CC95F73637BA7B47A0C366DAE76EC6F02407959717049F44F1BA04C97",
+      "sides": [
+        {
+          "role": "attack",
+          "id": "A"
+        },
+        {
+          "role": "defend",
+          "id": "D"
+        },
+        {
+          "role": "support",
+          "id": "S"
+        }
+      ],
+      "deployed": [
+        {
+          "order": 0,
+          "side_id": "A",
+          "troop": "t1",
+          "unit": "u1",
+          "x": 10,
+          "y": 20
+        },
+        {
+          "order": 1,
+          "side_id": "S",
+          "troop": "t3",
+          "unit": "u5",
+          "x": 12,
+          "y": 30
+        }
+      ],
+      "capture_b64": "eyJmaWVsZHMiOnsiYXQiOjIwMSwiZGF0X3NoYSI6IkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkIiLCJkZXBsb3llZCI6W3sib3JkZXIiOjAsInNpZGVfaWQiOiJBIiwidHJvb3AiOiJ0MSIsInVuaXQiOiJ1MSIsIngiOjEwLCJ5IjoyMH0seyJvcmRlciI6MSwic2lkZV9pZCI6IlMiLCJ0cm9vcCI6InQzIiwidW5pdCI6InU1IiwieCI6MTIsInkiOjMwfV0sImV2ZW50X3NlcSI6MTIsImV4ZV9zaGEiOiJBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBIiwibWFwX2I2NCI6IlptRnJaUzF0WVhBdFlubDBaWE09IiwibWFwX3NoYSI6IkUxOTIwQjhGQzE1REM0NEFDNEQ4QzVGOTI3MjRCQjQ1NUMwRjg1NzYzNThFRUY5MDg2REFGMUNDQjE4QzE5RjUiLCJwcmV2aW91c19jYXB0dXJlX3NoYSI6IjMxRTIyNDMxQjlCQkQ2RjhBMzU4MUZCQjFEOUUwOENERkE5QzFEODRFRkU0NUI1M0Q0QzIyQjM0MkQ1RDFGMTkiLCJydW5faWQiOiJyQS0wMDEiLCJzY2VuYXJpbyI6InNjaTEiLCJzaWRlcyI6W3siaWQiOiJBIiwicm9sZSI6ImF0dGFjayJ9LHsiaWQiOiJEIiwicm9sZSI6ImRlZmVuZCJ9LHsiaWQiOiJTIiwicm9sZSI6InN1cHBvcnQifV19LCJmb3JtYXQiOiJoYWt1c2hpbi1zeW50aGV0aWMtY2FwdHVyZS92MSIsInN0YWdlIjoiZzIifQ==",
+      "map_b64": "ZmFrZS1tYXAtYnl0ZXM=",
+      "event_seq": 12,
+      "previous_capture_sha": "31E22431B9BBD6F8A3581FBB1D9E08CDFA9C1D84EFE45B53D4C22B342D5D1F19"
+    },
+    "native_receipt_verified": false
+  },
+  "allowed_keys": {
+    "g0": [
+      "at",
+      "capture_b64",
+      "capture_sha",
+      "dat_sha",
+      "event_seq",
+      "exe_sha",
+      "previous_capture_sha",
+      "run_id",
+      "scenario",
+      "started",
+      "ui_legal"
+    ],
+    "g1": [
+      "at",
+      "capture_b64",
+      "capture_sha",
+      "dat_sha",
+      "event_seq",
+      "exe_sha",
+      "input_b64",
+      "input_sha",
+      "run_id",
+      "save_b64",
+      "save_sha",
+      "scenario",
+      "unmodified_save"
+    ],
+    "g2": [
+      "at",
+      "capture_b64",
+      "capture_sha",
+      "dat_sha",
+      "deployed",
+      "event_seq",
+      "exe_sha",
+      "map_b64",
+      "map_sha",
+      "previous_capture_sha",
+      "run_id",
+      "scenario",
+      "sides"
+    ]
+  },
+  "cases": [
+    {
+      "case": "g0_time_changed_unbound",
+      "mode": "changes",
+      "changes": [
+        [
+          [
+            "g0",
+            "at"
+          ],
+          201
+        ]
+      ],
+      "prior_accept": true,
+      "semantic_accept": false,
+      "why": ""
+    },
+    {
+      "case": "g1_time_changed_unbound",
+      "mode": "changes",
+      "changes": [
+        [
+          [
+            "g1",
+            "at"
+          ],
+          191
+        ]
+      ],
+      "prior_accept": true,
+      "semantic_accept": false,
+      "why": ""
+    },
+    {
+      "case": "g2_time_changed_unbound",
+      "mode": "changes",
+      "changes": [
+        [
+          [
+            "g2",
+            "at"
+          ],
+          202
+        ]
+      ],
+      "prior_accept": true,
+      "semantic_accept": false,
+      "why": ""
+    },
+    {
+      "case": "g1_event_order_changed_unbound",
+      "mode": "changes",
+      "changes": [
+        [
+          [
+            "g1",
+            "event_seq"
+          ],
+          9
+        ]
+      ],
+      "prior_accept": true,
+      "semantic_accept": false,
+      "why": ""
+    },
+    {
+      "case": "g2_event_order_changed_unbound",
+      "mode": "changes",
+      "changes": [
+        [
+          [
+            "g2",
+            "event_seq"
+          ],
+          13
+        ]
+      ],
+      "prior_accept": true,
+      "semantic_accept": false,
+      "why": ""
+    },
+    {
+      "case": "g0_ui_true_replaced_with_int_1",
+      "mode": "changes",
+      "changes": [
+        [
+          [
+            "g0",
+            "ui_legal"
+          ],
+          1
+        ]
+      ],
+      "prior_accept": false,
+      "semantic_accept": false,
+      "why": ""
+    },
+    {
+      "case": "g1_save_claim_true_replaced_with_int_1",
+      "mode": "changes",
+      "changes": [
+        [
+          [
+            "g1",
+            "unmodified_save"
+          ],
+          1
+        ]
+      ],
+      "prior_accept": false,
+      "semantic_accept": false,
+      "why": ""
+    },
+    {
+      "case": "g0_run_id_changed_all",
+      "mode": "changes",
+      "changes": [
+        [
+          [
+            "g0",
+            "run_id"
+          ],
+          "other-run"
+        ],
+        [
+          [
+            "g1",
+            "run_id"
+          ],
+          "other-run"
+        ],
+        [
+          [
+            "g2",
+            "run_id"
+          ],
+          "other-run"
+        ]
+      ],
+      "prior_accept": true,
+      "semantic_accept": false,
+      "why": ""
+    },
+    {
+      "case": "scenario_changed_all",
+      "mode": "changes",
+      "changes": [
+        [
+          [
+            "g0",
+            "scenario"
+          ],
+          "other-scenario"
+        ],
+        [
+          [
+            "g1",
+            "scenario"
+          ],
+          "other-scenario"
+        ],
+        [
+          [
+            "g2",
+            "scenario"
+          ],
+          "other-scenario"
+        ]
+      ],
+      "prior_accept": true,
+      "semantic_accept": false,
+      "why": ""
+    },
+    {
+      "case": "exe_sha_changed_all",
+      "mode": "changes",
+      "changes": [
+        [
+          [
+            "g0",
+            "exe_sha"
+          ],
+          "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC"
+        ],
+        [
+          [
+            "g1",
+            "exe_sha"
+          ],
+          "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC"
+        ],
+        [
+          [
+            "g2",
+            "exe_sha"
+          ],
+          "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC"
+        ]
+      ],
+      "prior_accept": true,
+      "semantic_accept": false,
+      "why": ""
+    },
+    {
+      "case": "dat_sha_changed_all",
+      "mode": "changes",
+      "changes": [
+        [
+          [
+            "g0",
+            "dat_sha"
+          ],
+          "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
+        ],
+        [
+          [
+            "g1",
+            "dat_sha"
+          ],
+          "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
+        ],
+        [
+          [
+            "g2",
+            "dat_sha"
+          ],
+          "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
+        ]
+      ],
+      "prior_accept": true,
+      "semantic_accept": false,
+      "why": ""
+    },
+    {
+      "case": "g2_first_unit_changed",
+      "mode": "changes",
+      "changes": [
+        [
+          [
+            "g2",
+            "deployed",
+            "0",
+            "unit"
+          ],
+          "uNEW"
+        ]
+      ],
+      "prior_accept": true,
+      "semantic_accept": false,
+      "why": ""
+    },
+    {
+      "case": "g2_second_unit_changed",
+      "mode": "changes",
+      "changes": [
+        [
+          [
+            "g2",
+            "deployed",
+            "1",
+            "unit"
+          ],
+          "uNEW2"
+        ]
+      ],
+      "prior_accept": true,
+      "semantic_accept": false,
+      "why": ""
+    },
+    {
+      "case": "g2_first_troop_changed",
+      "mode": "changes",
+      "changes": [
+        [
+          [
+            "g2",
+            "deployed",
+            "0",
+            "troop"
+          ],
+          "tNEW"
+        ]
+      ],
+      "prior_accept": true,
+      "semantic_accept": false,
+      "why": ""
+    },
+    {
+      "case": "g2_second_troop_changed",
+      "mode": "changes",
+      "changes": [
+        [
+          [
+            "g2",
+            "deployed",
+            "1",
+            "troop"
+          ],
+          "tNEW2"
+        ]
+      ],
+      "prior_accept": true,
+      "semantic_accept": false,
+      "why": ""
+    },
+    {
+      "case": "g2_first_x_changed",
+      "mode": "changes",
+      "changes": [
+        [
+          [
+            "g2",
+            "deployed",
+            "0",
+            "x"
+          ],
+          500
+        ]
+      ],
+      "prior_accept": true,

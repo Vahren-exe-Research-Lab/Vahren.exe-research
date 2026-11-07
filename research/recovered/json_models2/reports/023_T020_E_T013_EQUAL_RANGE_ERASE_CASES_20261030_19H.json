@@ -1,0 +1,1492 @@
+{
+  "research_id": "E-AUDIT-20261030-19H-T020-T013-EQUAL-RANGE-ERASE-GATE-01",
+  "owner": "E/T020",
+  "b_owner_id": "B-20261030-19H-T013-EQUAL-RANGE-ERASE-01",
+  "b_source_sha256": "034EEBC1521C16F9EB77F500E9579CCF4C7DB3744F82BF478A1F858E41B705E8",
+  "pe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "scope": "conditional unsigned-key sorted-list model, NOT native tree execution",
+  "cases": [
+    {
+      "id": "R000",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [],
+      "probe_u32": 0,
+      "expected": {
+        "begin": 0,
+        "end": 0,
+        "remaining": [],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R001",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [],
+      "probe_u32": 1,
+      "expected": {
+        "begin": 0,
+        "end": 0,
+        "remaining": [],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R002",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [],
+      "probe_u32": 3,
+      "expected": {
+        "begin": 0,
+        "end": 0,
+        "remaining": [],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R003",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [],
+      "probe_u32": 5,
+      "expected": {
+        "begin": 0,
+        "end": 0,
+        "remaining": [],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R004",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [],
+      "probe_u32": 2147483648,
+      "expected": {
+        "begin": 0,
+        "end": 0,
+        "remaining": [],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R005",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [],
+      "probe_u32": 4294967295,
+      "expected": {
+        "begin": 0,
+        "end": 0,
+        "remaining": [],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R006",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [
+        0
+      ],
+      "probe_u32": 0,
+      "expected": {
+        "begin": 0,
+        "end": 1,
+        "remaining": [],
+        "erase_gate": "FULL_RANGE_ELIGIBLE"
+      }
+    },
+    {
+      "id": "R007",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [
+        0
+      ],
+      "probe_u32": 1,
+      "expected": {
+        "begin": 1,
+        "end": 1,
+        "remaining": [
+          0
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R008",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [
+        0
+      ],
+      "probe_u32": 3,
+      "expected": {
+        "begin": 1,
+        "end": 1,
+        "remaining": [
+          0
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R009",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [
+        0
+      ],
+      "probe_u32": 5,
+      "expected": {
+        "begin": 1,
+        "end": 1,
+        "remaining": [
+          0
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R010",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [
+        0
+      ],
+      "probe_u32": 2147483648,
+      "expected": {
+        "begin": 1,
+        "end": 1,
+        "remaining": [
+          0
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R011",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [
+        0
+      ],
+      "probe_u32": 4294967295,
+      "expected": {
+        "begin": 1,
+        "end": 1,
+        "remaining": [
+          0
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R012",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [
+        5
+      ],
+      "probe_u32": 0,
+      "expected": {
+        "begin": 0,
+        "end": 0,
+        "remaining": [
+          5
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R013",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [
+        5
+      ],
+      "probe_u32": 1,
+      "expected": {
+        "begin": 0,
+        "end": 0,
+        "remaining": [
+          5
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R014",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [
+        5
+      ],
+      "probe_u32": 3,
+      "expected": {
+        "begin": 0,
+        "end": 0,
+        "remaining": [
+          5
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R015",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [
+        5
+      ],
+      "probe_u32": 5,
+      "expected": {
+        "begin": 0,
+        "end": 1,
+        "remaining": [],
+        "erase_gate": "FULL_RANGE_ELIGIBLE"
+      }
+    },
+    {
+      "id": "R016",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [
+        5
+      ],
+      "probe_u32": 2147483648,
+      "expected": {
+        "begin": 1,
+        "end": 1,
+        "remaining": [
+          5
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R017",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [
+        5
+      ],
+      "probe_u32": 4294967295,
+      "expected": {
+        "begin": 1,
+        "end": 1,
+        "remaining": [
+          5
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R018",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [
+        0,
+        5,
+        5,
+        9
+      ],
+      "probe_u32": 0,
+      "expected": {
+        "begin": 0,
+        "end": 1,
+        "remaining": [
+          5,
+          5,
+          9
+        ],
+        "erase_gate": "PARTIAL_RANGE_ELIGIBLE"
+      }
+    },
+    {
+      "id": "R019",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [
+        0,
+        5,
+        5,
+        9
+      ],
+      "probe_u32": 1,
+      "expected": {
+        "begin": 1,
+        "end": 1,
+        "remaining": [
+          0,
+          5,
+          5,
+          9
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R020",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [
+        0,
+        5,
+        5,
+        9
+      ],
+      "probe_u32": 3,
+      "expected": {
+        "begin": 1,
+        "end": 1,
+        "remaining": [
+          0,
+          5,
+          5,
+          9
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R021",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [
+        0,
+        5,
+        5,
+        9
+      ],
+      "probe_u32": 5,
+      "expected": {
+        "begin": 1,
+        "end": 3,
+        "remaining": [
+          0,
+          9
+        ],
+        "erase_gate": "PARTIAL_RANGE_ELIGIBLE"
+      }
+    },
+    {
+      "id": "R022",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [
+        0,
+        5,
+        5,
+        9
+      ],
+      "probe_u32": 2147483648,
+      "expected": {
+        "begin": 4,
+        "end": 4,
+        "remaining": [
+          0,
+          5,
+          5,
+          9
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R023",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [
+        0,
+        5,
+        5,
+        9
+      ],
+      "probe_u32": 4294967295,
+      "expected": {
+        "begin": 4,
+        "end": 4,
+        "remaining": [
+          0,
+          5,
+          5,
+          9
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R024",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [
+        0,
+        2147483647,
+        2147483648,
+        4294967295
+      ],
+      "probe_u32": 0,
+      "expected": {
+        "begin": 0,
+        "end": 1,
+        "remaining": [
+          2147483647,
+          2147483648,
+          4294967295
+        ],
+        "erase_gate": "PARTIAL_RANGE_ELIGIBLE"
+      }
+    },
+    {
+      "id": "R025",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [
+        0,
+        2147483647,
+        2147483648,
+        4294967295
+      ],
+      "probe_u32": 1,
+      "expected": {
+        "begin": 1,
+        "end": 1,
+        "remaining": [
+          0,
+          2147483647,
+          2147483648,
+          4294967295
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R026",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [
+        0,
+        2147483647,
+        2147483648,
+        4294967295
+      ],
+      "probe_u32": 3,
+      "expected": {
+        "begin": 1,
+        "end": 1,
+        "remaining": [
+          0,
+          2147483647,
+          2147483648,
+          4294967295
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R027",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [
+        0,
+        2147483647,
+        2147483648,
+        4294967295
+      ],
+      "probe_u32": 5,
+      "expected": {
+        "begin": 1,
+        "end": 1,
+        "remaining": [
+          0,
+          2147483647,
+          2147483648,
+          4294967295
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R028",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [
+        0,
+        2147483647,
+        2147483648,
+        4294967295
+      ],
+      "probe_u32": 2147483648,
+      "expected": {
+        "begin": 2,
+        "end": 3,
+        "remaining": [
+          0,
+          2147483647,
+          4294967295
+        ],
+        "erase_gate": "PARTIAL_RANGE_ELIGIBLE"
+      }
+    },
+    {
+      "id": "R029",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [
+        0,
+        2147483647,
+        2147483648,
+        4294967295
+      ],
+      "probe_u32": 4294967295,
+      "expected": {
+        "begin": 3,
+        "end": 4,
+        "remaining": [
+          0,
+          2147483647,
+          2147483648
+        ],
+        "erase_gate": "PARTIAL_RANGE_ELIGIBLE"
+      }
+    },
+    {
+      "id": "R030",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [
+        1,
+        1,
+        1,
+        2,
+        3,
+        3
+      ],
+      "probe_u32": 0,
+      "expected": {
+        "begin": 0,
+        "end": 0,
+        "remaining": [
+          1,
+          1,
+          1,
+          2,
+          3,
+          3
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R031",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [
+        1,
+        1,
+        1,
+        2,
+        3,
+        3
+      ],
+      "probe_u32": 1,
+      "expected": {
+        "begin": 0,
+        "end": 3,
+        "remaining": [
+          2,
+          3,
+          3
+        ],
+        "erase_gate": "PARTIAL_RANGE_ELIGIBLE"
+      }
+    },
+    {
+      "id": "R032",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [
+        1,
+        1,
+        1,
+        2,
+        3,
+        3
+      ],
+      "probe_u32": 3,
+      "expected": {
+        "begin": 4,
+        "end": 6,
+        "remaining": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "erase_gate": "PARTIAL_RANGE_ELIGIBLE"
+      }
+    },
+    {
+      "id": "R033",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [
+        1,
+        1,
+        1,
+        2,
+        3,
+        3
+      ],
+      "probe_u32": 5,
+      "expected": {
+        "begin": 6,
+        "end": 6,
+        "remaining": [
+          1,
+          1,
+          1,
+          2,
+          3,
+          3
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R034",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [
+        1,
+        1,
+        1,
+        2,
+        3,
+        3
+      ],
+      "probe_u32": 2147483648,
+      "expected": {
+        "begin": 6,
+        "end": 6,
+        "remaining": [
+          1,
+          1,
+          1,
+          2,
+          3,
+          3
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R035",
+      "kind": "model",
+      "stage": "A",
+      "keys_u32": [
+        1,
+        1,
+        1,
+        2,
+        3,
+        3
+      ],
+      "probe_u32": 4294967295,
+      "expected": {
+        "begin": 6,
+        "end": 6,
+        "remaining": [
+          1,
+          1,
+          1,
+          2,
+          3,
+          3
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R036",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [],
+      "probe_u32": 0,
+      "expected": {
+        "begin": 0,
+        "end": 0,
+        "remaining": [],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R037",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [],
+      "probe_u32": 1,
+      "expected": {
+        "begin": 0,
+        "end": 0,
+        "remaining": [],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R038",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [],
+      "probe_u32": 3,
+      "expected": {
+        "begin": 0,
+        "end": 0,
+        "remaining": [],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R039",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [],
+      "probe_u32": 5,
+      "expected": {
+        "begin": 0,
+        "end": 0,
+        "remaining": [],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R040",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [],
+      "probe_u32": 2147483648,
+      "expected": {
+        "begin": 0,
+        "end": 0,
+        "remaining": [],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R041",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [],
+      "probe_u32": 4294967295,
+      "expected": {
+        "begin": 0,
+        "end": 0,
+        "remaining": [],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R042",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [
+        0
+      ],
+      "probe_u32": 0,
+      "expected": {
+        "begin": 0,
+        "end": 1,
+        "remaining": [],
+        "erase_gate": "FULL_RANGE_ELIGIBLE"
+      }
+    },
+    {
+      "id": "R043",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [
+        0
+      ],
+      "probe_u32": 1,
+      "expected": {
+        "begin": 1,
+        "end": 1,
+        "remaining": [
+          0
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R044",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [
+        0
+      ],
+      "probe_u32": 3,
+      "expected": {
+        "begin": 1,
+        "end": 1,
+        "remaining": [
+          0
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R045",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [
+        0
+      ],
+      "probe_u32": 5,
+      "expected": {
+        "begin": 1,
+        "end": 1,
+        "remaining": [
+          0
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R046",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [
+        0
+      ],
+      "probe_u32": 2147483648,
+      "expected": {
+        "begin": 1,
+        "end": 1,
+        "remaining": [
+          0
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R047",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [
+        0
+      ],
+      "probe_u32": 4294967295,
+      "expected": {
+        "begin": 1,
+        "end": 1,
+        "remaining": [
+          0
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R048",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [
+        5
+      ],
+      "probe_u32": 0,
+      "expected": {
+        "begin": 0,
+        "end": 0,
+        "remaining": [
+          5
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R049",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [
+        5
+      ],
+      "probe_u32": 1,
+      "expected": {
+        "begin": 0,
+        "end": 0,
+        "remaining": [
+          5
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R050",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [
+        5
+      ],
+      "probe_u32": 3,
+      "expected": {
+        "begin": 0,
+        "end": 0,
+        "remaining": [
+          5
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R051",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [
+        5
+      ],
+      "probe_u32": 5,
+      "expected": {
+        "begin": 0,
+        "end": 1,
+        "remaining": [],
+        "erase_gate": "FULL_RANGE_ELIGIBLE"
+      }
+    },
+    {
+      "id": "R052",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [
+        5
+      ],
+      "probe_u32": 2147483648,
+      "expected": {
+        "begin": 1,
+        "end": 1,
+        "remaining": [
+          5
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R053",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [
+        5
+      ],
+      "probe_u32": 4294967295,
+      "expected": {
+        "begin": 1,
+        "end": 1,
+        "remaining": [
+          5
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R054",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [
+        0,
+        5,
+        5,
+        9
+      ],
+      "probe_u32": 0,
+      "expected": {
+        "begin": 0,
+        "end": 1,
+        "remaining": [
+          5,
+          5,
+          9
+        ],
+        "erase_gate": "PARTIAL_RANGE_ELIGIBLE"
+      }
+    },
+    {
+      "id": "R055",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [
+        0,
+        5,
+        5,
+        9
+      ],
+      "probe_u32": 1,
+      "expected": {
+        "begin": 1,
+        "end": 1,
+        "remaining": [
+          0,
+          5,
+          5,
+          9
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R056",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [
+        0,
+        5,
+        5,
+        9
+      ],
+      "probe_u32": 3,
+      "expected": {
+        "begin": 1,
+        "end": 1,
+        "remaining": [
+          0,
+          5,
+          5,
+          9
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R057",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [
+        0,
+        5,
+        5,
+        9
+      ],
+      "probe_u32": 5,
+      "expected": {
+        "begin": 1,
+        "end": 3,
+        "remaining": [
+          0,
+          9
+        ],
+        "erase_gate": "PARTIAL_RANGE_ELIGIBLE"
+      }
+    },
+    {
+      "id": "R058",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [
+        0,
+        5,
+        5,
+        9
+      ],
+      "probe_u32": 2147483648,
+      "expected": {
+        "begin": 4,
+        "end": 4,
+        "remaining": [
+          0,
+          5,
+          5,
+          9
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R059",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [
+        0,
+        5,
+        5,
+        9
+      ],
+      "probe_u32": 4294967295,
+      "expected": {
+        "begin": 4,
+        "end": 4,
+        "remaining": [
+          0,
+          5,
+          5,
+          9
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R060",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [
+        0,
+        2147483647,
+        2147483648,
+        4294967295
+      ],
+      "probe_u32": 0,
+      "expected": {
+        "begin": 0,
+        "end": 1,
+        "remaining": [
+          2147483647,
+          2147483648,
+          4294967295
+        ],
+        "erase_gate": "PARTIAL_RANGE_ELIGIBLE"
+      }
+    },
+    {
+      "id": "R061",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [
+        0,
+        2147483647,
+        2147483648,
+        4294967295
+      ],
+      "probe_u32": 1,
+      "expected": {
+        "begin": 1,
+        "end": 1,
+        "remaining": [
+          0,
+          2147483647,
+          2147483648,
+          4294967295
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R062",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [
+        0,
+        2147483647,
+        2147483648,
+        4294967295
+      ],
+      "probe_u32": 3,
+      "expected": {
+        "begin": 1,
+        "end": 1,
+        "remaining": [
+          0,
+          2147483647,
+          2147483648,
+          4294967295
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R063",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [
+        0,
+        2147483647,
+        2147483648,
+        4294967295
+      ],
+      "probe_u32": 5,
+      "expected": {
+        "begin": 1,
+        "end": 1,
+        "remaining": [
+          0,
+          2147483647,
+          2147483648,
+          4294967295
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R064",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [
+        0,
+        2147483647,
+        2147483648,
+        4294967295
+      ],
+      "probe_u32": 2147483648,
+      "expected": {
+        "begin": 2,
+        "end": 3,
+        "remaining": [
+          0,
+          2147483647,
+          4294967295
+        ],
+        "erase_gate": "PARTIAL_RANGE_ELIGIBLE"
+      }
+    },
+    {
+      "id": "R065",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [
+        0,
+        2147483647,
+        2147483648,
+        4294967295
+      ],
+      "probe_u32": 4294967295,
+      "expected": {
+        "begin": 3,
+        "end": 4,
+        "remaining": [
+          0,
+          2147483647,
+          2147483648
+        ],
+        "erase_gate": "PARTIAL_RANGE_ELIGIBLE"
+      }
+    },
+    {
+      "id": "R066",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [
+        1,
+        1,
+        1,
+        2,
+        3,
+        3
+      ],
+      "probe_u32": 0,
+      "expected": {
+        "begin": 0,
+        "end": 0,
+        "remaining": [
+          1,
+          1,
+          1,
+          2,
+          3,
+          3
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R067",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [
+        1,
+        1,
+        1,
+        2,
+        3,
+        3
+      ],
+      "probe_u32": 1,
+      "expected": {
+        "begin": 0,
+        "end": 3,
+        "remaining": [
+          2,
+          3,
+          3
+        ],
+        "erase_gate": "PARTIAL_RANGE_ELIGIBLE"
+      }
+    },
+    {
+      "id": "R068",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [
+        1,
+        1,
+        1,
+        2,
+        3,
+        3
+      ],
+      "probe_u32": 3,
+      "expected": {
+        "begin": 4,
+        "end": 6,
+        "remaining": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "erase_gate": "PARTIAL_RANGE_ELIGIBLE"
+      }
+    },
+    {
+      "id": "R069",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [
+        1,
+        1,
+        1,
+        2,
+        3,
+        3
+      ],
+      "probe_u32": 5,
+      "expected": {
+        "begin": 6,
+        "end": 6,
+        "remaining": [
+          1,
+          1,
+          1,
+          2,
+          3,
+          3
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R070",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [
+        1,
+        1,
+        1,
+        2,
+        3,
+        3
+      ],
+      "probe_u32": 2147483648,
+      "expected": {
+        "begin": 6,
+        "end": 6,
+        "remaining": [
+          1,
+          1,
+          1,
+          2,
+          3,
+          3
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "R071",
+      "kind": "model",
+      "stage": "B",
+      "keys_u32": [
+        1,
+        1,
+        1,
+        2,
+        3,
+        3
+      ],
+      "probe_u32": 4294967295,
+      "expected": {
+        "begin": 6,
+        "end": 6,
+        "remaining": [
+          1,
+          1,
+          1,
+          2,
+          3,
+          3
+        ],
+        "erase_gate": "EMPTY_RANGE"
+      }
+    },
+    {
+      "id": "N072",
+      "kind": "negative",
+      "claim": "real_tree_duplicate_key_policy_is_known",
+      "expected": "UNKNOWN_OR_INELIGIBLE"
+    },
+    {
+      "id": "N073",
+      "kind": "negative",
+      "claim": "all_mode2_erases_are_full_range",
+      "expected": "UNKNOWN_OR_INELIGIBLE"
+    },
+    {
+      "id": "N074",
+      "kind": "negative",
+      "claim": "all_mode2_erases_are_partial_range",
+      "expected": "UNKNOWN_OR_INELIGIBLE"
+    },
+    {
+      "id": "N075",
+      "kind": "negative",
+      "claim": "equal_range_is_tree_insertion",
+      "expected": "UNKNOWN_OR_INELIGIBLE"
+    },
+    {
+      "id": "N076",
+      "kind": "negative",
+      "claim": "caller_A_and_B_trees_are_same_object",
+      "expected": "UNKNOWN_OR_INELIGIBLE"
+    },
+    {
+      "id": "N077",
+      "kind": "negative",
+      "claim": "tree_payload_is_confirmed_unit_pointer",
+      "expected": "UNKNOWN_OR_INELIGIBLE"
+    },
+    {
+      "id": "N078",
+      "kind": "negative",
+      "claim": "EAX_key_is_signed_int",
+      "expected": "UNKNOWN_OR_INELIGIBLE"
+    },
+    {
+      "id": "N079",
+      "kind": "negative",
+      "claim": "no_match_implies_normal_gameplay_completion",
+      "expected": "UNKNOWN_OR_INELIGIBLE"
+    },
+    {
+      "id": "N080",
+      "kind": "negative",
+      "claim": "after_erase_node_ownership_is_known",
+      "expected": "UNKNOWN_OR_INELIGIBLE"
+    },
+    {
+      "id": "N081",
+      "kind": "negative",
+      "claim": "mode2_target_after_erase_is_known",
+      "expected": "UNKNOWN_OR_INELIGIBLE"
+    },
+    {
+      "id": "N082",
+      "kind": "negative",
+      "claim": "0x56F130_side_effect_is_known",
+      "expected": "UNKNOWN_OR_INELIGIBLE"
+    },
+    {
+      "id": "N083",
+      "kind": "negative",
+      "claim": "synthetic_model_is_original_golden_pass",
+      "expected": "UNKNOWN_OR_INELIGIBLE"
+    }
+  ]
+}
