@@ -1,0 +1,19 @@
+{
+  "base": "b9ce5e523d56076c1ebf7ea32a2499da43bebfc9",
+  "selected": 10,
+  "accepted_exact_raw_json": 10,
+  "source_bytes": 15840,
+  "destination_bytes": 15840,
+  "unique_destinations": 10,
+  "whole_body_deferrals": 0,
+  "baseline_aliases": 0,
+  "within_batch_aliases": 0,
+  "privacy_edits": 0,
+  "physical_lf_lines": 395,
+  "bom_preserved_files": 1,
+  "crlf_files": 3,
+  "baseline_root_ledger": 1619,
+  "optional_existing_lookup_pointers": 2,
+  "linked_payloads_opened": 0,
+  "native_runtime_or_authored_commands_executed": 0
+}

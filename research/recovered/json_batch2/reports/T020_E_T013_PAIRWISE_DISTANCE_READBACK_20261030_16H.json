@@ -1,0 +1,56 @@
+{
+  "research_id": "E-AUDIT-20261030-16H-T020-T013-PAIRWISE-DISTANCE-01",
+  "owner": "E/T020",
+  "status": "STATIC_NATIVE_BYTE_SYNTHETIC_EXECUTED_VERIFY_NOT_READY",
+  "source_reference": "B-20261030-1615-T013-MODE2-PAIRWISE-DISTANCE-TREE-01",
+  "source_sha256": "AF6FD09492BFBF89084AD2DAA49FE80CE89FD2ABBB67606507D5345000DEE282",
+  "artifacts": [
+    {
+      "path": "tests/t020_e_t013_pairwise_distance_boundary_gate_20261030_16H.py",
+      "bytes": 6298,
+      "sha256": "A949845F62EF40658389780D7E5B51D011C5A3B34D559CBCB2A7C68F2DE1C598"
+    },
+    {
+      "path": "tests/T020_E_T013_PAIRWISE_DISTANCE_CASES_20261030_16H.json",
+      "bytes": 11842,
+      "sha256": "1E67303C2C4F962E23401CD233F4BD902258E8A5B61A76BFF5492C550D46AE09"
+    },
+    {
+      "path": "tests/T020_E_T013_PAIRWISE_DISTANCE_ACCEPTANCE_20261030_16H.md",
+      "bytes": 4690,
+      "sha256": "3ED00094157D7F72EB88F1015BEC64E5AFBABEDF7BD2FC9FA0BA740FF098EE81"
+    }
+  ],
+  "validation": {
+    "new_synthetic_pass": 60,
+    "prior15h_rerun_pass": 79,
+    "prior14h_rerun_pass": 42,
+    "native_windows": 3,
+    "native_calls": 5,
+    "node_size_verified": 40,
+    "case_ids_unique": 60,
+    "original_gameplay": "NOT_RUN",
+    "dynamic_observed": 0,
+    "actual_golden_pass": 0,
+    "strict_match": 0
+  },
+  "master": {
+    "checkpoint": 196,
+    "ready_total": 596,
+    "task_counts": {
+      "DONE": 9,
+      "IN_PROGRESS": 21,
+      "VERIFY": 4
+    },
+    "sha256": "E7329C9C6368E67BE191A4ABF45156319E32826FF039FB2B9E226DEDDAC6B6B3",
+    "new_ready": 0
+  },
+  "safety": {
+    "new_refusal": 0,
+    "old_refusals": "BLOCKED",
+    "offline_unsynced": "OPEN",
+    "other_owner_writes": 0,
+    "git_writes": 0,
+    "master_writes": 0
+  }
+}

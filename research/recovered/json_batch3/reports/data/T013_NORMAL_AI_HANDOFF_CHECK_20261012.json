@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "timestamp_jst": "2026-10-12T20:20:56.163394+09:00",
+  "status": "PASS",
+  "errors": [],
+  "ids": [
+    {
+      "id": "B-20261012-1916-01",
+      "contract_headers": 1,
+      "handoff_headers": 1,
+      "canonical": "contract"
+    },
+    {
+      "id": "B-20261012-1916-02",
+      "contract_headers": 1,
+      "handoff_headers": 1,
+      "canonical": "contract"
+    },
+    {
+      "id": "B-20261012-1920-01",
+      "contract_headers": 1,
+      "handoff_headers": 1,
+      "canonical": "contract"
+    },
+    {
+      "id": "B-20261012-1920-02",
+      "contract_headers": 1,
+      "handoff_headers": 1,
+      "canonical": "contract"
+    },
+    {
+      "id": "B-20261012-2002-01",
+      "contract_headers": 1,
+      "handoff_headers": 1,
+      "canonical": "contract"
+    },
+    {
+      "id": "B-20261012-2002-02",
+      "contract_headers": 1,
+      "handoff_headers": 1,
+      "canonical": "contract"
+    },
+    {
+      "id": "B-20261012-0108-01",
+      "index_headers": 1,
+      "handoff_headers": 1,
+      "recovered_not_new": true
+    }
+  ],
+  "canonical_contract": "data\\T013_WORK_NORMAL_AI_CONTRACT_20261012.md",
+  "sha256": {
+    "contract": "07abd1cc453a2af21c48586fc775ac4f1098f825d59a0a033b21de7581b49bf2",
+    "handoff": "37a3f1f93b99b81901ca8de0f343d893ab8cc1188ea762a35b4b7f95e96e7356",
+    "index": "ba039bb26dd150a0d8c664180460cc4970326caa24b8e5c6c4c214b64f663965",
+    "validation": "31dac3d8d1a7e4c35cb8265ddc155964e28bb6c88d4fd6efa33b1982610b8235",
+    "raw": "a8ffd295a1d5cc0569eb162c6984b9411edc5504343bbd21aca393308abb2d13"
+  },
+  "static_checks": 75856,
+  "old_gameplay_golden": 0,
+  "strict_match": 0,
+  "blocked": [
+    "B-RC-20261012-1920-XREF",
+    "B-RC-20261012-2002-T012DOC",
+    "constructor_5710C0_571500"
+  ],
+  "alias_policy": {
+    "T013_AI_1920-01_entry": "B-20261012-1916-01",
+    "T012_section98_1920-02_secondary": "B-20261012-1916-02"
+  },
+  "note": "Canonical contract overrides historical ID collisions. T012 mirror update was refused and not retried."
+}

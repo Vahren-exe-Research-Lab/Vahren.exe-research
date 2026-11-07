@@ -8,7 +8,7 @@
 
 文書検索結果は保存ファイル名、元パス・出典URI、題名、本文だけの一致の順で最大20件です。同じ区分内は回収台帳での初出順です。省略時は一致総数を表示します。全件の出典・制約は一覧または各詳細ページに掲載しています。研究ID・題名で絞り込めます。アドレス・所有者＋オフセット検索は従来の専用結果を返します。
 
-[前のページ](page-015.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md)
+[前のページ](page-015.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md) · [次のページ](page-017.md)
 
 - [Bounded manifest planning layer](../../research/recovered/plugin_reports1/reports/recruit_sort_v4/core/MANIFEST.md?plain=1#L1-L1) — `research/recovered/plugin_reports1/reports/recruit_sort_v4/core/MANIFEST.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_CATALOG_SNAPSHOT。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1529-L1529)。制約・訂正 Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=PLUGIN_SYNTHETIC_CONTRACT_OR_HISTORY
@@ -465,4 +465,49 @@
   本文 SHA256 `27e76a62454f9d9ccc7e4cfd779ce1c4e9d67dfb7d4852aaf6ed3655daea7a60`
   元パス <code>https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/76819fcb21efbcf53045eec21fcfcb8c55f65543/REF_RTS_SCENARIO.md</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1620-L1620)。
 
-[前のページ](page-015.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md)
+- [T013_SKILL_HANDLER_BOUNDARY_CHECK_20261013.json](../../research/recovered/json_batch1/reports/data/T013_SKILL_HANDLER_BOUNDARY_CHECK_20261013.json?plain=1#L1-L1) — `research/recovered/json_batch1/reports/data/T013_SKILL_HANDLER_BOUNDARY_CHECK_20261013.json`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY; root1619 source/destination SHA match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1621-L1621)。制約・訂正 Authored historical HISTORICAL_BOUNDARY_CHECK_SUMMARY only; recorded PASS/counts/hash/READY are not newly executed or verified; no linked runner/cases/native/source body fetched; no semantic/native/runtime/type/ABI promotion
+  本文 SHA256 `06ec9ecf9b0db37c501c90321948677dac54c7eac4de8357a52d1fe9e8477bff`
+  元パス <code>data/T013_SKILL_HANDLER_BOUNDARY_CHECK_20261013.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1621-L1621)。
+
+- [T020_E_T011_TRAINING_BRANCH_READBACK_20261031_06H.json](../../research/recovered/json_batch1/reports/tests/T020_E_T011_TRAINING_BRANCH_READBACK_20261031_06H.json?plain=1#L1-L1) — `research/recovered/json_batch1/reports/tests/T020_E_T011_TRAINING_BRANCH_READBACK_20261031_06H.json`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY; root1619 source/destination SHA match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1622-L1622)。制約・訂正 Authored historical HISTORICAL_AUDIT_READBACK_RECEIPT only; recorded PASS/counts/hash/READY are not newly executed or verified; no linked runner/cases/native/source body fetched; no semantic/native/runtime/type/ABI promotion
+  本文 SHA256 `2ae709768587e2bb57a68242e7a95671424beb31804d827d35b091b807f9d7f7`
+  元パス <code>tests/T020_E_T011_TRAINING_BRANCH_READBACK_20261031_06H.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1622-L1622)。
+
+- [T020_E_T013_DUAL_SCORE_SIGNED_READBACK_20261031_12H.json](../../research/recovered/json_batch1/reports/tests/T020_E_T013_DUAL_SCORE_SIGNED_READBACK_20261031_12H.json?plain=1#L1-L1) — `research/recovered/json_batch1/reports/tests/T020_E_T013_DUAL_SCORE_SIGNED_READBACK_20261031_12H.json`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY; root1619 source/destination SHA match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1623-L1623)。制約・訂正 Authored historical HISTORICAL_AUDIT_READBACK_RECEIPT only; recorded PASS/counts/hash/READY are not newly executed or verified; no linked runner/cases/native/source body fetched; no semantic/native/runtime/type/ABI promotion
+  本文 SHA256 `6482d57431a2f5c70307448357ff62348a9c1e4a37c1c3417828be1bb4b93724`
+  元パス <code>tests/T020_E_T013_DUAL_SCORE_SIGNED_READBACK_20261031_12H.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1623-L1623)。
+
+- [T020_E_T011_LEADER_CACHE_READBACK_20261031_07H.json](../../research/recovered/json_batch1/reports/tests/T020_E_T011_LEADER_CACHE_READBACK_20261031_07H.json?plain=1#L1-L1) — `research/recovered/json_batch1/reports/tests/T020_E_T011_LEADER_CACHE_READBACK_20261031_07H.json`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY; root1619 source/destination SHA match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1624-L1624)。制約・訂正 Authored historical HISTORICAL_AUDIT_READBACK_RECEIPT only; recorded PASS/counts/hash/READY are not newly executed or verified; no linked runner/cases/native/source body fetched; no semantic/native/runtime/type/ABI promotion
+  本文 SHA256 `afb22b0aad46bd9ee9ba3dcf1d08be4af57043b7e4799a1824b93217aa39f8d9`
+  元パス <code>tests/T020_E_T011_LEADER_CACHE_READBACK_20261031_07H.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1624-L1624)。
+
+- [T020_E_T011_CACHE_LIFECYCLE_READBACK_20261031_08H.json](../../research/recovered/json_batch1/reports/tests/T020_E_T011_CACHE_LIFECYCLE_READBACK_20261031_08H.json?plain=1#L1-L1) — `research/recovered/json_batch1/reports/tests/T020_E_T011_CACHE_LIFECYCLE_READBACK_20261031_08H.json`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY; root1619 source/destination SHA match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1625-L1625)。制約・訂正 Authored historical HISTORICAL_AUDIT_READBACK_RECEIPT only; recorded PASS/counts/hash/READY are not newly executed or verified; no linked runner/cases/native/source body fetched; no semantic/native/runtime/type/ABI promotion
+  本文 SHA256 `91a74d50ec73dfc0f14a3d36b05b8ce110d272147a7a64680514f69ac2bded8b`
+  元パス <code>tests/T020_E_T011_CACHE_LIFECYCLE_READBACK_20261031_08H.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1625-L1625)。
+
+- [T020_E_T013_BUCKET_MERGE_READBACK_20261031_16H.json](../../research/recovered/json_batch1/reports/tests/T020_E_T013_BUCKET_MERGE_READBACK_20261031_16H.json?plain=1#L1-L1) — `research/recovered/json_batch1/reports/tests/T020_E_T013_BUCKET_MERGE_READBACK_20261031_16H.json`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY; root1619 source/destination SHA match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1626-L1626)。制約・訂正 Authored historical HISTORICAL_AUDIT_READBACK_RECEIPT only; recorded PASS/counts/hash/READY are not newly executed or verified; no linked runner/cases/native/source body fetched; no semantic/native/runtime/type/ABI promotion
+  本文 SHA256 `3e767cc0df666698e58c993e49c5abb536df3f24ab815b345d4e92b9dc9b52ba`
+  元パス <code>tests/T020_E_T013_BUCKET_MERGE_READBACK_20261031_16H.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1626-L1626)。
+
+- [T020_E_T013_RNG_CONTEXT_TRANSFER_READBACK_20261031_18H.json](../../research/recovered/json_batch1/reports/tests/T020_E_T013_RNG_CONTEXT_TRANSFER_READBACK_20261031_18H.json?plain=1#L1-L1) — `research/recovered/json_batch1/reports/tests/T020_E_T013_RNG_CONTEXT_TRANSFER_READBACK_20261031_18H.json`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY; root1619 source/destination SHA match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1627-L1627)。制約・訂正 Authored historical HISTORICAL_AUDIT_READBACK_RECEIPT only; recorded PASS/counts/hash/READY are not newly executed or verified; no linked runner/cases/native/source body fetched; no semantic/native/runtime/type/ABI promotion
+  本文 SHA256 `c5d4036c9ea40e556e54227903066bba8197c9f827c73958d9c691b3bf434401`
+  元パス <code>tests/T020_E_T013_RNG_CONTEXT_TRANSFER_READBACK_20261031_18H.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1627-L1627)。
+
+- [T020_E_T013_DRAIN_RESTORE_CAP_READBACK_20261031_17H.json](../../research/recovered/json_batch1/reports/tests/T020_E_T013_DRAIN_RESTORE_CAP_READBACK_20261031_17H.json?plain=1#L1-L1) — `research/recovered/json_batch1/reports/tests/T020_E_T013_DRAIN_RESTORE_CAP_READBACK_20261031_17H.json`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY; root1619 source/destination SHA match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1628-L1628)。制約・訂正 Authored historical HISTORICAL_AUDIT_READBACK_RECEIPT only; recorded PASS/counts/hash/READY are not newly executed or verified; no linked runner/cases/native/source body fetched; no semantic/native/runtime/type/ABI promotion
+  本文 SHA256 `0f4094f95e923aa200ca1aae09ca1303df79b1e4367d8c355a1573d4018edf56`
+  元パス <code>tests/T020_E_T013_DRAIN_RESTORE_CAP_READBACK_20261031_17H.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1628-L1628)。
+
+- [T020_E_T013_VIEWFLAG_CHAIN_READBACK_20261101_01H.json](../../research/recovered/json_batch1/reports/tests/T020_E_T013_VIEWFLAG_CHAIN_READBACK_20261101_01H.json?plain=1#L1-L1) — `research/recovered/json_batch1/reports/tests/T020_E_T013_VIEWFLAG_CHAIN_READBACK_20261101_01H.json`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_METADATA_ONLY; root1619 source/destination SHA match NONE。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1629-L1629)。制約・訂正 Authored historical HISTORICAL_AUDIT_READBACK_RECEIPT only; recorded PASS/counts/hash/READY are not newly executed or verified; no linked runner/cases/native/source body fetched; no semantic/native/runtime/type/ABI promotion
+  本文 SHA256 `55a65acb8d20a354f6b51c9f794a666db4e1dbfe193ae83e9d5be544e615c5ba`
+  元パス <code>tests/T020_E_T013_VIEWFLAG_CHAIN_READBACK_20261101_01H.json</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1629-L1629)。
+
+[前のページ](page-015.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md) · [次のページ](page-017.md)

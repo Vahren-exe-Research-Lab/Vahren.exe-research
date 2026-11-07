@@ -1,0 +1,13 @@
+{
+  "source": "B-owned saved static raw windows",
+  "source_sha256": "e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187",
+  "check_count": 210,
+  "failed": [],
+  "status": "PASS",
+  "file_sha256": "f879d5bb4b7ebdbe64adb1fd84ce8596b94f4b9d0700eb7a05f8acefc77145a7",
+  "doc_sha256": "d47a51e970b34260bb72e6b2177a8f1b1fd397edecec51b8495f1dc1c0b17c78",
+  "gameplay_golden_pass": 0,
+  "strict_match": 0,
+  "original_executed": false,
+  "coverage": "kind2/4 contiguous instruction windows and kind3 entry prefix; not all callee/exception/effect paths"
+}

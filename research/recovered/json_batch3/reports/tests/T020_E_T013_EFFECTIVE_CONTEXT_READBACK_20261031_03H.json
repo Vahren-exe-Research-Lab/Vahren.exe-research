@@ -1,0 +1,54 @@
+{
+  "research_id": "E-AUDIT-20261031-03H-T020-T013-EFFECTIVE-CONTEXT-BOUNDARY-01",
+  "owner": "E/T020",
+  "datetime": "2026-10-31 03H JST",
+  "classification": "STATIC / CONDITIONAL_SYNTHETIC / VERIFY / NOT_READY",
+  "sources": {
+    "original_pe": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+    "original_context_dat": "C87F523F8B3DC41112132B48917FFAE2E2435B30EAB61EC87C96679CDA7B3547",
+    "b_03h_detail": "7955FA4E9D75300BFA7C89F5C87265975C55113586586EC73ACAEAB4E8436E57",
+    "v9_db": "2629CB2F03ECEC9927E89892C77F847E4CDBA381AB718825C1CA8CFEEEF00EDE",
+    "master_before_after": "E7329C9C6368E67BE191A4ABF45156319E32826FF039FB2B9E226DEDDAC6B6B3"
+  },
+  "files": [
+    {
+      "name": "t020_e_t013_effective_context_boundary_gate_20261031_03H.py",
+      "bytes": 5828,
+      "sha256": "3FEA82935B487D2F6E9C3B2119420769FCAA7F45A335242314A0C192FAC2C91D"
+    },
+    {
+      "name": "T020_E_T013_EFFECTIVE_CONTEXT_CASES_20261031_03H.json",
+      "bytes": 69407,
+      "sha256": "229DE96503750E365BCFA858549B7B5D815D87FD1BB3D957FFA541C0C089AE19"
+    },
+    {
+      "name": "T020_E_T013_EFFECTIVE_CONTEXT_ACCEPTANCE_20261031_03H.md",
+      "bytes": 4575,
+      "sha256": "E21922AC96C28527218B2CBC62A07E19ED731B9F6F879CCD163695F55801AD30"
+    }
+  ],
+  "test": {
+    "first_pass": 144,
+    "independent_replay": 144,
+    "prior_02h_replay": 224,
+    "current_total": 368,
+    "original_game_executed": 0,
+    "return_code": 0
+  },
+  "state": {
+    "checkpoint": 196,
+    "ready": 596,
+    "new_ready": 0,
+    "tasks": {
+      "done": 9,
+      "in_progress": 21,
+      "verify": 4
+    },
+    "dynamic_observed": 0,
+    "actual_golden_pass": 0,
+    "strict_match": 0,
+    "safety_refusal_new": 0,
+    "offline_unsynced": "NOT_RECONCILED",
+    "prior_refusals": "BLOCKED"
+  }
+}

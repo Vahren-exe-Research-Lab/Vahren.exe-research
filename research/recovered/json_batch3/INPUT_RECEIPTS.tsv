@@ -1,0 +1,3 @@
+input_role	input_path	sha256	bytes	notes
+APPROVED_SELECTION	private-approved-selection/hakushin-json_batch3-approved.tsv	3d29ca726cfb9a5b4ad69c2b9c14d1bcf1b9abcab9d3a43ab760827ffa0d3415	2047	10 literal paths; original private root intentionally omitted
+BASELINE_AND_CURRENT_LEDGER	research/recovered/RECOVERY_LEDGER.tsv	44ebc3d6c3cbd0959146b9bc5fa176b44a46be84a1420055c964137de0562b64	1123426	1619 rows; baseline b9ce5e523d56076c1ebf7ea32a2499da43bebfc9 equals current ledger at intake

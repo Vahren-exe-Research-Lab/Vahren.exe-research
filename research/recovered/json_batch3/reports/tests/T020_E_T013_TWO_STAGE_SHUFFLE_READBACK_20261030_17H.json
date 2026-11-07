@@ -1,0 +1,44 @@
+{
+  "research_id": "E-AUDIT-20261030-17H-T020-T013-TWO-STAGE-SHUFFLE-GATE-01",
+  "owner": "E/T020",
+  "snapshot_jst": "2026-10-30 17H",
+  "status": "STATIC_NATIVE_E8_VERIFIED_SYNTHETIC_EXECUTED_VERIFY_NOT_READY",
+  "b17_source_id": "B-20261030-17H-T013-MODE2-TWO-STAGE-SHUFFLE-RNG-01",
+  "b17_source_sha256": "894C6202401D61570D03F4EC5455B06D4AEAD927943EEB9F1FFA02174F1A1CCF",
+  "original_research_pe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "artifacts": [
+    {"path": "tests/t020_e_t013_two_stage_shuffle_gate_20261030_17H.py", "bytes": 5810, "sha256": "39A7968DA8D84DC682AE7D854FCA9EDC6A196130D8570A304DF31C0A04E2AF5B"},
+    {"path": "tests/T020_E_T013_TWO_STAGE_SHUFFLE_CASES_20261030_17H.json", "bytes": 13557, "sha256": "F79077B5E05D981F5D6592CF58C45411E00D347ECC2B7DEF19F5008909B99F93"},
+    {"path": "tests/T020_E_T013_TWO_STAGE_SHUFFLE_ACCEPTANCE_20261030_17H.md", "bytes": 5243, "sha256": "DBF66247380C48F776542049DCD5F41B600B1A1E5492295801E2B39EB65124AB"}
+  ],
+  "validation": {
+    "new_fixture_cases": 56,
+    "new_pass": 56,
+    "new_independent_rerun_pass": 56,
+    "prior16h_rerun_pass": 60,
+    "this_run_synthetic_pass": 116,
+    "original_pe_direct_e8_calls": 10,
+    "gameplay_not_run": true,
+    "dynamic_observed": 0,
+    "actual_golden_pass": 0,
+    "strict_match": 0
+  },
+  "master": {
+    "checkpoint": 196,
+    "ready_total": 596,
+    "by_lane": {"A": 115, "B": 229, "C": 136, "D": 116},
+    "tasks": {"DONE": 9, "IN_PROGRESS": 21, "VERIFY": 4},
+    "sha256_before_after": "E7329C9C6368E67BE191A4ABF45156319E32826FF039FB2B9E226DEDDAC6B6B3",
+    "new_ready": 0,
+    "wrote_master": false
+  },
+  "safety": {
+    "new_safety_refusals": 0,
+    "old_refusals": "BLOCKED_NOT_RETRIED",
+    "offline_unsynced": "OPEN",
+    "other_owner_writes": 0,
+    "git_push": 0,
+    "work": 0
+  },
+  "next": "native 0x44D730 vector ABI/stage-reachability and legal G0-G1-G2 receipts"
+}

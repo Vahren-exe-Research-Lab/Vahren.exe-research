@@ -1,0 +1,35 @@
+{
+  "research_id": "E-AUDIT-20261031-16H-T020-T013-BUCKET-MERGE-SIGNED-GATE-01",
+  "status": "STATIC_SYNTHETIC_VERIFY_NOT_READY",
+  "synthetic_cases": 198,
+  "synthetic_pass": 198,
+  "native_windows": 3,
+  "direct_e8_calls": 10,
+  "instruction_anchors": 14,
+  "old_dynamic": 0,
+  "actual_golden_pass": 0,
+  "strict_match": 0,
+  "ready_new": 0,
+  "file_checks": [
+    {
+      "relative_path": "tests/t020_e_t013_bucket_merge_contract_20261031_16H.py",
+      "size": 9068,
+      "sha256": "67F244F52A63E77DC2EEEB2D91570C344F35AE1D26BB0D366E24790B9C056C4A"
+    },
+    {
+      "relative_path": "tests/T020_E_T013_BUCKET_MERGE_CASES_20261031_16H.json",
+      "size": 63634,
+      "sha256": "8EB0F107F4A48C0D65DCF8C2365EB87386131360B8A25EED0B3A074AFB5318E1"
+    },
+    {
+      "relative_path": "tests/T020_E_T013_BUCKET_MERGE_ACCEPTANCE_20261031_16H.md",
+      "size": 3046,
+      "sha256": "D3FD0A6CC920785B335FF13B96637E518301646FD31EA8F44D87BD2C8E30588A"
+    },
+    {
+      "relative_path": "data/T013_BUCKET_LIST_MERGE_COMPARATOR_NATIVE_20261031_16H.md",
+      "size": 6468,
+      "sha256": "C9E9AE4017DB40F4810E32CB45419EE2390028757BBE38843DC0E1AE3A8CA621"
+    }
+  ]
+}

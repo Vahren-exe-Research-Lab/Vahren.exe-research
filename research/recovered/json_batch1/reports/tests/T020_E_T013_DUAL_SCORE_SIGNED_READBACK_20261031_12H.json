@@ -1,0 +1,19 @@
+{
+  "research_id": "E-AUDIT-20261031-12H-T020-T013-SIGNED-DUAL-FIELD-GATE-01",
+  "files": {
+    "T020_E_T013_DUAL_SCORE_SIGNED_CASES_20261031_12H.json": {
+      "sha256": "438F9FCDDB7C1FE89F4D6184B24DDA0D25F5BACD177BD3555459FB9AE6036A54",
+      "bytes": 63300
+    },
+    "T020_E_T013_DUAL_SCORE_SIGNED_ACCEPTANCE_20261031_12H.md": {
+      "sha256": "AAA0FC6F03E48B25CCACBEF62CEB439976D0F6FB4BFF0F19977BBDC07BD2150F",
+      "bytes": 2300
+    }
+  },
+  "native_windows_checked": 3,
+  "synthetic_cases": 252,
+  "pass": 252,
+  "golden_pass": 0,
+  "strict_match": 0,
+  "readback": "INDEPENDENT_SHA_SIZE_JSON_VERIFIED_20261031_12H"
+}
