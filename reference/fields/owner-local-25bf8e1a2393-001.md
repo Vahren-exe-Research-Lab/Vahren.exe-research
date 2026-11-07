@@ -19,7 +19,10 @@
 <a id="field-94"></a>
 ## local + 0x94
 
-- [research/recovered/symbol_sources/T011_TRAINING_CACHE_INIT_ERASE_DUPLICATE_NATIVE_20261031_08H.md 行 13](../../research/recovered/symbol_sources/T011_TRAINING_CACHE_INIT_ERASE_DUPLICATE_NATIVE_20261031_08H.md?plain=1#L13-L13) — [KB_CANDIDATE] research_id=B-20261031-08H-T011-TRAINING-CACHE-LIFECYCLE-01; owner=B/T011; VA0x472091/0x49ED90/0x4726C1/0x4DEF40/0x4726D9/0x474B30; offset local 
+- [research/recovered/b_batch2/T011_TRAINING_LEADER_BONUS_MEMO_NATIVE_20261031_07H.md 行 14](../../research/recovered/b_batch2/T011_TRAINING_LEADER_BONUS_MEMO_NATIVE_20261031_07H.md?plain=1#L14-L14) — [KB_CANDIDATE] research_id=B-20261031-07H-T011-TRAINING-LEADER-BONUS-MEMO-01; owner=B/T011; primary VA=0x4722BE,0x4723A8,0x4723BC,0x4F8A80,0x4ED3B0,0x474A80; of
+  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+- [research/recovered/symbol_sources/T011_TRAINING_CACHE_INIT_ERASE_DUPLICATE_NATIVE_20261031_08H.md 行 13](../../research/recovered/symbol_sources/T011_TRAINING_CACHE_INIT_ERASE_DUPLICATE_NATIVE_20261031_08H.md?plain=1#L13-L13) — [KB_CANDIDATE] research_id=B-20261031-08H-T011-TRAINING-CACHE-LIFECYCLE-01; owner=B/T011; VA0x472091/0x49ED90/0x4726C1/0x4DEF40/0x4726D9/0x474B30; offset local
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation; full-range bulk erase and partial node erase distinct; partial helper not required in normal full cleanup
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

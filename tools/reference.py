@@ -483,7 +483,7 @@ def render_field_pages(mentions):
                 source = mention["source"]
                 source_link = "../../" + quote(source["path"], safe="/")
                 source_link += f"?plain=1#L{source['start_line']}-L{source['end_line']}"
-                page += [f"- [{text(source['path'])} 行 {source['start_line']}]({source_link}) — {text(mention['summary'][:160])}",
+                page += [f"- [{text(source['path'])} 行 {source['start_line']}]({source_link}) — {text(mention['summary'][:160]).rstrip()}",
                          f"  制約・訂正　{text(mention['recovery']['limitations'])}", ""]
             page += ["[所有者＋オフセット索引](../FIELD_MENTIONS.md)", ""]
             files["reference/fields/" + filename] = "\n".join(page)

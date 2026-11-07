@@ -1,0 +1,14 @@
+# C-20261015-1329-01 — World War @ccc の二つの用途と明示clear境界
+- Task: T025 P0 / T016。状態: READY（原作ver0.67 SCRIPT上の変数lifetime crosswalk限定）。旧EXE Gameplay/Native は VERIFY・NOT READY。
+- 一次原本相対: `a_default/script/40_内政/ev_worldwar.dat:5-6,27-33,36-53,58-65,86-94`。調査は正規化済みread-onlyコピー。
+- CONFIRMED-SCRIPT 1: `:6` の `storePlayerPower(@ccc)` は敵代表選出・COM逐次union後、メッセージとwait(10)を越え、`:32-33` の `setLeague(@ccc,@enemyleader,1)` と `setDiplo(@ccc,@enemyleader,0)` に渡る。
+- CONFIRMED-SCRIPT 2: 放浪者のaddUnit反復の終了後、`:51-53` は `clear(@aaa); clear(@bbb); clear(@ccc)` を明示実行。したがって同じ `@ccc` の先行player用内容は、このclearより後のステージでそのまま保持されるとは仮定できない。
+- CONFIRMED-SCRIPT 3: その後 `:58-65` は `storeUnitOfPower(@enemyleader,@aaa)` → `storeAllTalent(@bbb)` → `setv(@ccc,@bbb)` → `subv(@ccc,@aaa)` → `subv(@bbb,@ccc)` を記述。ここで `@ccc` はplayer ID入れ物ではなく、敵所属人材を絞る差集合の一時引数として再使用される。
+- CONFIRMED-SCRIPT 4: 末尾 `:89-94` でも `clear(@ccc)` する。命令順は player snapshot →外交writer → roam移籍 → clear → talent差集合 → Lv補正 →末尾clear。前段playerと後段差集合の用途を固定した単一immutable IDへ短絡できない。
+- 新規性/DEDUP: T025§19は差集合の3命令とLv25、§99はwait越えのplayer `@ccc`/index `ii` を個別に既存記録。本証拠は両者の**間の明示clear と同一名前の役割切替**を一つのdef-clear-rebind契約として接続する限定差分。既存元命令やAのレジストリ解析を新発見として再計上しない。
+- VERIFY/未観測: `clear` op39の旧Nativeでの寿命/alias消去、`setv` op36の置換/共有、`subv`比較・vector alias、途中Yieldでの介入、旧saveの合法WW到達、Power/Unit/Lvの実結果。登録opcodeは保存A資料で確認済みだがhandler副作用ではない。
+- 再実装への影響: WWイベント内のsource変数slot `@ccc` を段階追跡し、外交終了後の明示clearを省略しない。後段では敵所属Talent差分の一時slotとして利用。独自の不変`playerId`補助保持は可能でも、同じVM変数`@ccc`が常にplayer IDだと仮定する互換実装は禁止。実イベントの変数共有/aliasはA T006/T014/T031の確証待ち。
+- GOLDEN DESIGNED / NOT RUN: 合法sci1/sc_free WW押下前→COM union→メッセージ/wait後の外交→roam addUnit後→Talent選別/Lv25化→次Worldで、旧原作SAVE SHA・Power roster/外交/対象Unit・Lv・可視Trainingを新実装と同入力比較。`@ccc`内部値が非可視ならそのfieldはINELIGIBLE。旧原作Gameplay PASS0、新旧strict MATCH0。
+- 未解決依存: boss_deadのsetv/clear/erasePowerとunionPower inactive/self、sc_free queue、T029城壁5回周期・50000 sentinel、T026教師生徒一時値、T027 wallet/stock境界、T033 legacy旧save到達はVERIFY。T034 DONE維持。
+- 統合/安全: E MASTER直近checkpoint151/正式536件。C-20261015-0824-01 HANDOFF拒否とT026/T032の旧安全拒否、E cp152拒否は別BLOCKED継続。元拒否操作の再試行・経路変更なし。Eのみ正式統合可能。
+- RUN CAPACITY: Local Compact read-only照合とC証拠保存のみ。複数先行blocked sessionsへ介入せず、CPU実率は不明。重量Java/Ghidra/REA/原作EXE/テスト起動なし。原本、他owner、MASTER/T018、Git/Remote/MCP/自動化変更なし。

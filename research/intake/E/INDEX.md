@@ -1,5 +1,12 @@
 # E/T018–T020 source preservation and review index (2026-11-02)
 
+## 追加回収した全文と選別記録
+
+[受入検証28本文](../../recovered/e_reports/README.md)から、既存の要約に対応する原本一致本文を参照できる。[選別処理の修正記録](../../recovered/e_reports/SCOPE_AUDIT.md)と保留理由も保持する。合成テストのPASS・静的確認・原作実機の観測を区別し、当時の取得や自己評価を新しい確度へ昇格させない。
+
+[GitHub受付と本文所在の照合](../../recovered/GITHUB_SOURCES.md)には、取得時点のPR/Issueと固定HEADを記録している。
+
+
 This is the entrypoint for E-owned PRIVATE intake material. **PUBLISHED_INTAKE / NOT_CURATED**: neither original-game Golden nor confirmed compatibility. A provenance crosswalk is a condensed source map, not a replacement for full authorized original-owner reports or native byte witnesses.
 
 ## Verified historic PC research batch

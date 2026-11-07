@@ -1,0 +1,14 @@
+# T020 E 12H — dual-score signed comparator acceptance (STATIC / VERIFY)
+- ID: E-AUDIT-20261031-12H-T020-T013-SIGNED-DUAL-FIELD-GATE-01; E/T020; source B/T013 B-20261031-12H-T013-DUAL-SCORE-COMPARATORS-01; not an additional B finding.
+- Native original PE SHA256: E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187. Checked directly, read-only. Source B detail SHA256: 0889CC0A8F6BCE872EFB23748E8784D09BEE65B007F46DF64CAB829929CB7781.
+- Exact x86 read-only window SHA: two_comparators 0x447240..0x44727A (exclusive), score_reset 0x448FA6..0x448FC9, rank_gate 0x449296..0x4492CA: 3/3 equal to B proof.
+- New synthetic comparator cases: 196/196 PASS across mode 0/1/2/3, signed INT32 extremes, ties and deliberately opposed +0xA0C/+0xA10 fields.
+- New synthetic signed-rank-write gate cases: 56/56 PASS, with threshold -2147483547 and score-change guard; total 252/252 PASS.
+- These gates do NOT prove 0x47BB50 sorting, stable tie ordering, mode semantics, true target selection, ABI, no overflow, or actual rank counter; all VERIFY.
+- T019: no new confirmed source contradiction or game bug. V9 NOT_FOUND of two comparator codelets is an indexing limitation, not missing native bytes.
+- T018: C-NB02 legal same-run G0 battle UI, G1 unmodified pre-battle SAVE+input, G2 real MAP/three sides/ordered Unit/Troop still need primary receipts; G3/G4 pending.
+- Required original golden for this rank path: unchanged EXE/DAT/SAVE/MAP/input, same run/tick, eligible mode2/non2, tied/different scores, legal visible candidate identity, target and next-tick trace; unknown native values remain INELIGIBLE.
+- DYNAMIC OBSERVED=0; actual Golden PASS=0; strict MATCH=0; new READY=0. Synthetic only; no executable gameplay run.
+- KB_CANDIDATE: source B-ID above; E validation only, VA 0x448E90, compare 0x447240/260, field offsets +0xA0C/+0xA10, callsite 0x449276->0x47BB50, source SHA above, STATIC/VERIFY/NOT READY. Dedicated KB curator decides publication.
+- Not changed: MASTER, A-D, REA, dev_lab, Git, shared knowledge, source EXE/DAT/SAVE/ZIP, schedules. Older safety holds retained; no prohibited VA inspected.
+- Next: read-only inspect 0x47BB50's comparator calling convention, and acquire lawful same-run G0/G1/G2; do not infer stable sort or accept READY until original target is observed.

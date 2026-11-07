@@ -68,3 +68,11 @@ REAのQUEUE/PROGRESSは保存失敗で古い場合がある。次回はRUN_RESUL
 ## 第5回の取得コピー検証
 
 [収録コミットb28f876](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/b28f87638ebab651594c79d3924e6bc8b4db3378)を別クローンへ取得し、1004項目のマニフェスト、回収台帳121行の保存版SHA、原本一致109行、今回の個人パス整形6本文を検査した。整形版は注記と個人パス接頭辞の置換以外の技術本文を保持する。652生成ページはWindowsでもパス衝突がなく、最大ページ100KB未満、946件の局所フィールド表記と実データの主要検索を確認した。検索25試験、同期10試験も成功。[PR #25](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/25)に追加57本文と検証範囲を記録している。全資料回収と公開準備レビューは継続中。
+
+## 第2追加バッチとGitHub所在の照合
+
+[Bの27本文](b_batch2/README.md)、[戦略・文脈の15本文](ac_batch2/README.md)、[E受入検証28本文](e_reports/README.md)を追加した。全70本文は原本一致で保存し、当時の確認区分・訂正・未検証条件を維持している。CONTENT_REVIEWEDは保存・レビュー状態を表し、意味の確定や実機確認は本文の根拠に従う。
+
+[PR/Issueと研究本文の所在](GITHUB_SOURCES.md) は固定HEAD・blob識別子で追跡する。本文が複数PRにある場合の対応も、同一バイト列の検査として記録した。
+
+E資料の選別では、除外指定した3報告が一括読み取りに含まれる操作ミスがあった。対象3件を収録物・検証・抽出の対象から除外し、許可済み28パスだけでコピーと照合を行った。[操作監査](e_reports/SCOPE_AUDIT.md)に対象名と修正を記録する。

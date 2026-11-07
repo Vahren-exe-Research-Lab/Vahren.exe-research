@@ -7,7 +7,7 @@
 <a id="field-324"></a>
 ## Player + 0x324
 
-- [research/DAT_UI_V4_RESEARCH_20261101.md 行 33](../../research/DAT_UI_V4_RESEARCH_20261101.md?plain=1#L33-L33) — - 実機確認：Player+0x324 / +0x328 はゲームの座標でのマウス位置（Player_DispatchHover 0x521560 がウィンドウの矩形と PtInRect で比べる値）。全画面ではウィンドウがモニター全体（例 1920×1200）になるため、画面の点の位置をそのまま使うとずれる。DLL 
+- [research/DAT_UI_V4_RESEARCH_20261101.md 行 33](../../research/DAT_UI_V4_RESEARCH_20261101.md?plain=1#L33-L33) — - 実機確認：Player+0x324 / +0x328 はゲームの座標でのマウス位置（Player_DispatchHover 0x521560 がウィンドウの矩形と PtInRect で比べる値）。全画面ではウィンドウがモニター全体（例 1920×1200）になるため、画面の点の位置をそのまま使うとずれる。DLL
   制約・訂正　Existing full body linked; not duplicated
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

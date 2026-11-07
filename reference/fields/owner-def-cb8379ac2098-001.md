@@ -121,7 +121,7 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 721](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L721-L721) — 5. 0x585890（talent の getter）、def+0x78 / +0x94 の writer の意味、0x575110（レベルアップ時の再計算）。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 788](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L788-L788) — - tnok は talent = on なので notalent は掛からない。部隊のリーダー自身・配下なしとすると、c_cv1（type 1、direct、yorozu attack*50 / defense*25 / magic*50 / move*10）が効き、attack 928 / defense 663 
+- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 788](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L788-L788) — - tnok は talent = on なので notalent は掛からない。部隊のリーダー自身・配下なしとすると、c_cv1（type 1、direct、yorozu attack*50 / defense*25 / magic*50 / move*10）が効き、attack 928 / defense 663
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 794](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L794-L794) — 2. def+0x78 / def+0x94 の意味と writer（0x460C76、0x46FD8A など）: type 2 技能を自分に適用するかどうか。
@@ -148,10 +148,10 @@
 <a id="field-84"></a>
 ## def + 0x84
 
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 879](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L879-L879) — **結論（C）**: def+0x94 は単独のフラグではなかった。**def+0x84 にある std::string（在野・放浪先のスポット名）の長さ**である。根拠はコンストラクタ 0x582AA0（0x582AF8..0x582B04: +0x98 = 容量 0xF、+0x94 = 長さ 0、+0x84 先頭 
+- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 879](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L879-L879) — **結論（C）**: def+0x94 は単独のフラグではなかった。**def+0x84 にある std::string（在野・放浪先のスポット名）の長さ**である。根拠はコンストラクタ 0x582AA0（0x582AF8..0x582B04: +0x98 = 容量 0xF、+0x94 = 長さ 0、+0x84 先頭
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 885](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L885-L885) — \| def+0x84 / +0x94 \| 放浪先スポット名。**書込み**: 0x460E90（放浪させる。0x460ED4 で代入、ctx+0x32C の集合へ追加）、0x461DA0（乱数でスポットを選んで代入 0x4620B9 / 0x4620DD、0x40ED80 を使う）、def のコピー（0x4664F6 
+- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 885](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L885-L885) — \| def+0x84 / +0x94 \| 放浪先スポット名。**書込み**: 0x460E90（放浪させる。0x460ED4 で代入、ctx+0x32C の集合へ追加）、0x461DA0（乱数でスポットを選んで代入 0x4620B9 / 0x4620DD、0x40ED80 を使う）、def のコピー（0x4664F6
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1265](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1265-L1265) — - 0x583A80(def) が真、def+0xA0 の文字列が非空、かつ "fix" ≠ "home"（0x42F860 は「不一致なら真」）→ 0x467F40(def+0xA0) の +0x128 ベクタ（0x1C 文字列）から 0x40ED80(n, 0) で1件選び（rand 1回）、spot として解決で
@@ -202,7 +202,7 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 878](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L878-L878) — ## 26. def+0x78 / def+0x94 の正体 — 「独立部隊のリーダー」判定（フェーズ1）
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 879](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L879-L879) — **結論（C）**: def+0x94 は単独のフラグではなかった。**def+0x84 にある std::string（在野・放浪先のスポット名）の長さ**である。根拠はコンストラクタ 0x582AA0（0x582AF8..0x582B04: +0x98 = 容量 0xF、+0x94 = 長さ 0、+0x84 先頭 
+- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 879](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L879-L879) — **結論（C）**: def+0x94 は単独のフラグではなかった。**def+0x84 にある std::string（在野・放浪先のスポット名）の長さ**である。根拠はコンストラクタ 0x582AA0（0x582AF8..0x582B04: +0x98 = 容量 0xF、+0x94 = 長さ 0、+0x84 先頭
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 2691](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L2691-L2691) — ### 75.2 放浪中の人材（def+0x94 ≠ 0）: 戦争（CONFIRMED 0x47D98A..0x47DA01）
@@ -322,7 +322,7 @@
 <a id="field-ec"></a>
 ## def + 0xEC
 
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 645](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L645-L645) — - 未解明のまま残るのは**入力側**だけ: 各 def の技能リスト def+0xEC を作る 0x58C0E0（skill/skill2・skillset 展開・乱数を含む）、`@mode_sdown`、`notalent_down`、`unit_status_hp`、consti map の初期値、レベル補正の 
+- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 645](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L645-L645) — - 未解明のまま残るのは**入力側**だけ: 各 def の技能リスト def+0xEC を作る 0x58C0E0（skill/skill2・skillset 展開・乱数を含む）、`@mode_sdown`、`notalent_down`、`unit_status_hp`、consti map の初期値、レベル補正の
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 662](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L662-L662) — - 集合と vector は周ごとに空にする（0x573EA4..0x573F0A）。そのため周2の順序は**文字列昇順で重複なし**（std::less = バイト比較 0x402C40）。周0/1 は def+0xEC の順序。
@@ -343,7 +343,7 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 740](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L740-L740) — - 開始時に、それまでの def+0xEC を集合 S に入れてから空にする（0x58C17B..0x58C1C3）。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 768](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L768-L768) — - **item**: unit の `item`（`@シナリオ` / 素の名前）、なければ class。数値の項目でグループが切り替わる（最初は front）。front の項目は def+0x10C と def+0xEC の先頭（1つずつ先頭に入れるので逆順）、back の項目は def+0xFC と末尾。最後に 
+- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 768](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L768-L768) — - **item**: unit の `item`（`@シナリオ` / 素の名前）、なければ class。数値の項目でグループが切り替わる（最初は front）。front の項目は def+0x10C と def+0xEC の先頭（1つずつ先頭に入れるので逆順）、back の項目は def+0xFC と末尾。最後に
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 786](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L786-L786) — - def+0xEC = ch0, charge_new, a_dash, sp_chikorita1, ch1, h_gun, sp_speed, seiretsu, pes_knock, c_cv1, ps_hp, ps_at, ps_df, ps_sp3, ps_mv3, ps_pl, ps_eart, ps_w
@@ -355,7 +355,7 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 750](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L750-L750) — 7. def+0xFC、def+0x10C（item の技能）を末尾に追加 → 0x58DA40。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 768](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L768-L768) — - **item**: unit の `item`（`@シナリオ` / 素の名前）、なければ class。数値の項目でグループが切り替わる（最初は front）。front の項目は def+0x10C と def+0xEC の先頭（1つずつ先頭に入れるので逆順）、back の項目は def+0xFC と末尾。最後に 
+- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 768](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L768-L768) — - **item**: unit の `item`（`@シナリオ` / 素の名前）、なければ class。数値の項目でグループが切り替わる（最初は front）。front の項目は def+0x10C と def+0xEC の先頭（1つずつ先頭に入れるので逆順）、back の項目は def+0xFC と末尾。最後に
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
 <a id="field-10c"></a>

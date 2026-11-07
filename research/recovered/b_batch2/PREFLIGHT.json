@@ -1,0 +1,397 @@
+{
+  "eligible_remaining_count": 429,
+  "selected": [
+    {
+      "path": "data/T028_DUAL_DEATH_ENTRY_SENTINEL_HP_GATE_NATIVE_20261024_0808.md",
+      "sha256": "2348421196eb85e204de76502cd6ed75906550f2ad64df4f4a56774a57e50206",
+      "bytes": "6532",
+      "lines": "20",
+      "va_mentions": "89",
+      "owner": "B",
+      "tasks": "T028",
+      "domain": "MORALE_RETREAT",
+      "research_id": "B-20261024-0808-T028-DUAL-DEATH-ENTRY-SENTINEL-01"
+    },
+    {
+      "path": "data/T028_DEAD_EVENT_CONTEXT_MAP_RANGE_REPLACE_NATIVE_20261024_07H.md",
+      "sha256": "55221e3c283164072a32166b57ea6505f90b8a8a983bf8d1b4629906c82a1634",
+      "bytes": "6340",
+      "lines": "23",
+      "va_mentions": "84",
+      "owner": "B",
+      "tasks": "T028",
+      "domain": "MORALE_RETREAT",
+      "research_id": "B-20261024-07H-T028-DEAD-EVENT-CONTEXT-REPLACE-01"
+    },
+    {
+      "path": "data/T028_RETREAT_OK_POSTPASS_VTABLE68_NATIVE_20261029_20H.md",
+      "sha256": "7aa4478339b0fef283ec9846a867a8e963a7e34e9d4b3030fdde015c53ffe316",
+      "bytes": "5776",
+      "lines": "23",
+      "va_mentions": "84",
+      "owner": "B",
+      "tasks": "T028",
+      "domain": "MORALE_RETREAT",
+      "research_id": "B-20261029-2013-T028-RETREAT-POSTPASS-VTABLE68-01"
+    },
+    {
+      "path": "data/T028_CANDIDATE_VECTOR_VS_SECOND_SET_NATIVE_20261028_11H.md",
+      "sha256": "999b59cbd7ea8c833bec209d9242cadcbfcafdf987425e4b4f36585c3acae166",
+      "bytes": "4809",
+      "lines": "19",
+      "va_mentions": "77",
+      "owner": "B",
+      "tasks": "T028",
+      "domain": "MORALE_RETREAT",
+      "research_id": "B-20261028-11H-T028-CANDIDATE-VECTOR-VS-SECOND-SET-01"
+    },
+    {
+      "path": "data/T028_ROUTE_CACHE_PAYLOAD_ERASE_FULLCLEAR_NATIVE_20261027_02H.md",
+      "sha256": "22ad7eb17b8619678c8e874129b808b066e05eaf4bbc5b0b926b9245dd189070",
+      "bytes": "5997",
+      "lines": "30",
+      "va_mentions": "77",
+      "owner": "B",
+      "tasks": "T028",
+      "domain": "MORALE_RETREAT",
+      "research_id": "B-20261027-0216-T028-CACHE-ERASE-PAYLOAD-OWNER-01"
+    },
+    {
+      "path": "data/T028_SIGNED_MODE_TWO_EFFECT_SUBOBJECTS_NATIVE_20261029_09H.md",
+      "sha256": "7c3bf46751c4c4bd550eb6dbd9cebb4cfdb4e7cd06c69d1ee7d4d4a70d49e0cf",
+      "bytes": "5140",
+      "lines": "29",
+      "va_mentions": "77",
+      "owner": "B",
+      "tasks": "T028",
+      "domain": "MORALE_RETREAT",
+      "research_id": "B-20261029-0910-T028-SIGNED-MODE-TWO-EFFECT-SUBOBJECTS-01"
+    },
+    {
+      "path": "data/T028_STATIC_DEATH_POSTHP_VTABLE58_SPLIT_NATIVE_20261026_07H.md",
+      "sha256": "0389b6c9e582da20739f41d8fbac5e0b557f1cd59d3a6ac9a02f0094bf6fc832",
+      "bytes": "6093",
+      "lines": "19",
+      "va_mentions": "77",
+      "owner": "B",
+      "tasks": "T028",
+      "domain": "MORALE_RETREAT",
+      "research_id": "B-20261026-07H-T028-STATICUNIT-DEATH-VTABLE58-SPLIT-01"
+    },
+    {
+      "path": "data/T028_EFFECT_ALFLAG_CALLSITE_SENTINEL_MATRIX_NATIVE_20261029_08H.md",
+      "sha256": "063383411e15d31814918140040ecbba76f6945b75cca433caffe4d66475018a",
+      "bytes": "5426",
+      "lines": "36",
+      "va_mentions": "76",
+      "owner": "B",
+      "tasks": "T028",
+      "domain": "MORALE_RETREAT",
+      "research_id": "B-20261029-08H-T028-EFFECT-ALFLAG-CALLSITE-SENTINEL-MATRIX-01"
+    },
+    {
+      "path": "data/T028_COUNT_QUEUE_MODE_BRANCH_NATIVE_20261027_23H.md",
+      "sha256": "8c7354ab542866963c555805c04bddb2790f2b1e88d3570eb702f2c36ff7fb17",
+      "bytes": "5099",
+      "lines": "25",
+      "va_mentions": "73",
+      "owner": "B",
+      "tasks": "T028",
+      "domain": "MORALE_RETREAT",
+      "research_id": "B-20261027-2315-T028-COUNT-QUEUE-MODE-BRANCH-01"
+    },
+    {
+      "path": "data/T028_LOYAL_DOWN_POINTER_KEY_GUARD_NATIVE_20261028_06H.md",
+      "sha256": "fbe3a2b423ef0acca72f502c34ee4b6a6257e778bed12d4eec6eae741c2ae9ca",
+      "bytes": "5072",
+      "lines": "24",
+      "va_mentions": "71",
+      "owner": "B",
+      "tasks": "T028",
+      "domain": "MORALE_RETREAT",
+      "research_id": "B-20261028-06H-T028-LOYAL-DOWN-POINTER-KEY-GATE-01"
+    },
+    {
+      "path": "data/T028_ROUTE_LIST_RANGE_ABI_CORRECTION_NATIVE_20261027_00H.md",
+      "sha256": "661203d0139037d26b3c7c61d80cb5b7042c4937d40d918b76a6accf1cd09f76",
+      "bytes": "5667",
+      "lines": "20",
+      "va_mentions": "71",
+      "owner": "B",
+      "tasks": "T028",
+      "domain": "MORALE_RETREAT",
+      "research_id": "B-20261027-0013-T028-ROUTE-LIST-RANGE-ABI-CORRECTION-01"
+    },
+    {
+      "path": "data/T028_ROSTER_VECTOR_DUAL_SET_PRODUCER_NATIVE_20261028_10H.md",
+      "sha256": "d13eda3a41dfc3f0ba40b59a039c407b0aae263768e3ae5f26bc2565839fcc37",
+      "bytes": "5514",
+      "lines": "24",
+      "va_mentions": "70",
+      "owner": "B",
+      "tasks": "T028",
+      "domain": "MORALE_RETREAT",
+      "research_id": "B-20261028-10H-T028-ROSTER-VECTOR-DUAL-SET-PRODUCER-01"
+    },
+    {
+      "path": "data/T028_DEQUE_FIFO_ALT_SPAWN_SHARED_NATIVE_20261026_15H.md",
+      "sha256": "548a56497537fae3168ceadef56457bdfde994dddad58c57377b1c599cc21460",
+      "bytes": "5816",
+      "lines": "17",
+      "va_mentions": "69",
+      "owner": "B",
+      "tasks": "T028",
+      "domain": "MORALE_RETREAT",
+      "research_id": "B-20261026-15H-T028-DEQUE-FIFO-ALT-SPAWN-01"
+    },
+    {
+      "path": "data/T028_RESULT_TUPLE_18CALLERS_INDEX3_NULL_SINK_NATIVE_20261029_01H.md",
+      "sha256": "618cfa867ac3982893ead0e1dff4f9cb8e237411d66b5a10ec52c6209e2a0926",
+      "bytes": "5275",
+      "lines": "43",
+      "va_mentions": "69",
+      "owner": "B",
+      "tasks": "T028",
+      "domain": "MORALE_RETREAT",
+      "research_id": "B-20261029-0113-T028-RESULT-18CALLER-INDEX3-NULL-SINK-01"
+    },
+    {
+      "path": "data/T028_VISITED_TREE_DEDUPE_QUEUE_PRECHECK_NATIVE_20261026_16H.md",
+      "sha256": "9489c57e37bc1fbd14f8a368216568925d838e9fed24f01713513cab2d0a2e6d",
+      "bytes": "4860",
+      "lines": "21",
+      "va_mentions": "69",
+      "owner": "B",
+      "tasks": "T028",
+      "domain": "MORALE_RETREAT",
+      "research_id": "B-20261026-1614-T028-VISITED-TREE-DEDUPE-01"
+    },
+    {
+      "path": "data/T028_NULL_VECTOR_CANDIDATE_DESTRUCTION_NATIVE_20261028_12H.md",
+      "sha256": "890db7a710ba6747b9b29f7a0a6485081a062c7dcac99d3c8747a8e05772d13b",
+      "bytes": "4713",
+      "lines": "21",
+      "va_mentions": "68",
+      "owner": "B",
+      "tasks": "T028",
+      "domain": "MORALE_RETREAT",
+      "research_id": "B-20261028-1217-T028-NULL-VECTOR-CANDIDATE-DESTRUCTION-01"
+    },
+    {
+      "path": "data/T028_NAMED_RESOLVER_SENTINEL_ROSTER_SEED_NATIVE_20261028_07H.md",
+      "sha256": "04fe1739a9f93f06b724e1454da4e936e8e604c334585adda3ab6f2a7e904863",
+      "bytes": "5581",
+      "lines": "21",
+      "va_mentions": "67",
+      "owner": "B",
+      "tasks": "T028",
+      "domain": "MORALE_RETREAT",
+      "research_id": "B-20261028-07H-T028-NAMED-RESOLVER-SENTINEL-ROSTER-SEED-01"
+    },
+    {
+      "path": "data/T028_WANDER_MERCENARY_TEMPLATE_DISPATCH_NATIVE_20261028_15H.md",
+      "sha256": "4573d1af5621b501bc1c7a3b03ba73c489bfc9e0294e2069f4ca36a018407188",
+      "bytes": "5399",
+      "lines": "27",
+      "va_mentions": "67",
+      "owner": "B",
+      "tasks": "T028",
+      "domain": "MORALE_RETREAT",
+      "research_id": "B-20261028-1515-T028-WANDER-MERCENARY-TEMPLATE-DISPATCH-01"
+    },
+    {
+      "path": "data/B_T028_WANDER_MERCENARY_DUAL_RESULT_SINK_OFFLINE_20261028_21H.md",
+      "sha256": "e26426d09bc68b25f7ef7fbab76f124f2bfe9b98115e7493f9ebd408aaebdcb9",
+      "bytes": "7402",
+      "lines": "69",
+      "va_mentions": "66",
+      "owner": "B",
+      "tasks": "T028",
+      "domain": "MORALE_RETREAT",
+      "research_id": "B-OFFLINE-20261028-21H-T028-WANDER-MERCENARY-DUAL-RESULT-SINK-01"
+    },
+    {
+      "path": "data/T011_TRAINING_LEADER_BONUS_MEMO_NATIVE_20261031_07H.md",
+      "sha256": "fa2e1295e2c93a15482f6db4a3b4af3f03935054ef5959e6f3d1d2ab2167499c",
+      "bytes": "6210",
+      "lines": "17",
+      "va_mentions": "65",
+      "owner": "B",
+      "tasks": "T011",
+      "domain": "UNIT_SKILL_EXP",
+      "research_id": "B-20261031-07H-T011-TRAINING-LEADER-BONUS-MEMO-01"
+    },
+    {
+      "path": "data/T024_ACTION_STATE45D_AL0_BRANCH_NATIVE_20261025_18H.md",
+      "sha256": "6283030439255b029e6fc14520148c267e19c768f49956a7372d9ee9a15e76e4",
+      "bytes": "4589",
+      "lines": "17",
+      "va_mentions": "65",
+      "owner": "B",
+      "tasks": "T024",
+      "domain": "AI_TARGET",
+      "research_id": "B-20261025-1811-T024-AL0-STATE45D-SELECTOR-01"
+    },
+    {
+      "path": "data/T028_RETREAT_OK_QUEUE_DRAIN_ELIGIBILITY_NATIVE_20261029_19H.md",
+      "sha256": "feb24e7672fc8edf35a8173d3ff52f0aef7d3dcd895d57ae2a437c3c4e3719b0",
+      "bytes": "5822",
+      "lines": "24",
+      "va_mentions": "65",
+      "owner": "B",
+      "tasks": "T028",
+      "domain": "MORALE_RETREAT",
+      "research_id": "B-20261029-1908-T028-RETREAT-OK-DRAIN-ELIGIBILITY-01"
+    },
+    {
+      "path": "data/T028_TEMP_SET_INSERT_ABI_NATIVE_20261028_04H.md",
+      "sha256": "ab31afd5b811219e62525f053f0aa08b100b6935db776551eea297adceede76c",
+      "bytes": "4455",
+      "lines": "21",
+      "va_mentions": "65",
+      "owner": "B",
+      "tasks": "T028",
+      "domain": "MORALE_RETREAT",
+      "research_id": "B-20261028-0410-T028-TEMP-SET-INSERT-ABI-01"
+    },
+    {
+      "path": "data/T012_RUSH_GAMETASK_VIRTUAL_STATUS_GATE_NATIVE_20261027_17H.md",
+      "sha256": "fba05552a822fd52f337fd68b51e7241bb96a287e2e6a4d1244ee5dbf648ebad",
+      "bytes": "5017",
+      "lines": "20",
+      "va_mentions": "64",
+      "owner": "B",
+      "tasks": "T012",
+      "domain": "BATTLE_DAMAGE",
+      "research_id": "B-20261027-17H-T012-RUSH-GAMETASK-VIRTUAL-GATE-JOIN-01"
+    },
+    {
+      "path": "data/T013_GLOBAL65BD9E_QUOTA_QUARTER_WRITERS_NATIVE_20261101_01H.md",
+      "sha256": "35babf2be5c00b052bdcdc907431a96398349a15163c03629aad008819e81b8e",
+      "bytes": "5082",
+      "lines": "15",
+      "va_mentions": "64",
+      "owner": "B",
+      "tasks": "T013",
+      "domain": "AI_TARGET",
+      "research_id": "B-20261101-01H-T013-QUOTA-QUARTER-FLAG-WRITERS-01"
+    },
+    {
+      "path": "data/T024_FIRST_UNIT_SHARED_GATE_TWO_CALLERS_NATIVE_20261026_02H.md",
+      "sha256": "733bd7208b6b6a193c0263f350b0bf70918119b30f4a842b764fc6eebfab26f2",
+      "bytes": "3807",
+      "lines": "18",
+      "va_mentions": "64",
+      "owner": "B",
+      "tasks": "T024",
+      "domain": "AI_TARGET",
+      "research_id": "B-20261026-0212-T024-TWO-CALLSITE-FIRST-UNIT-GATE-01"
+    },
+    {
+      "path": "data/T024_GROUP_REF_FTOL_YFLIP_NATIVE_20261101_19H.md",
+      "sha256": "f5d08c97adda0dc3ace943d158fe0ca5ba2ff7b8ab6cb32ef6798dbfdf9302ac",
+      "bytes": "5530",
+      "lines": "24",
+      "va_mentions": "64",
+      "owner": "B",
+      "tasks": "T024",
+      "domain": "AI_TARGET",
+      "research_id": "B-20261101-19H-T024-GROUP-REF-FTOL-YFLIP-CROSSJOIN-01"
+    },
+    {
+      "path": "data/B_T012_T013_SPATIAL_CELL_MIGRATION_OFFLINE_20261023_0716.md",
+      "sha256": "cc577aa73ff3605141215512a015210223fc3831b1b5d5e1d8198731ac8ba35d",
+      "bytes": "9712",
+      "lines": "72",
+      "va_mentions": "63",
+      "owner": "B",
+      "tasks": "T012,T013",
+      "domain": "BATTLE_DAMAGE",
+      "research_id": "B-OFFLINE-20261023-0716-T012-T013-SPATIAL-CELL-MIGRATION-01"
+    },
+    {
+      "path": "data/T011_TRAINING_COUNT_PROVENANCE_NATIVE_20261031_06H.md",
+      "sha256": "78ffb6534f0b999c734da7fb5e4040f0c4c8ae7ce1a74232b94b89d623b20d8a",
+      "bytes": "6472",
+      "lines": "21",
+      "va_mentions": "63",
+      "owner": "B",
+      "tasks": "T011",
+      "domain": "UNIT_SKILL_EXP",
+      "research_id": "B-20261031-06H-T011-TRAINING-COUNT-PROVENANCE-01"
+    },
+    {
+      "path": "data/T013_BATTLE_AI_DUAL_MODE_DISPATCH_JUMPTABLE_NATIVE_20261030_13H.md",
+      "sha256": "937ad21872e14ae302e3852cae487b60344842510a84e30fdcb72eefc5dab2f1",
+      "bytes": "4702",
+      "lines": "24",
+      "va_mentions": "63",
+      "owner": "B",
+      "tasks": "T013",
+      "domain": "AI_TARGET",
+      "research_id": "B-20261030-13H-T013-DUAL-SCHEDULER-MODE-JUMPTABLE-01"
+    }
+  ],
+  "deferred": [
+    {
+      "source_path": "data/B_T028_ARBEIT_RNG_GATE_OFFLINE_20261028_20H.md",
+      "reason": "HOLD21_NAME_OR_SAME_STEM_METADATA_ONLY",
+      "review_scope": "Filename/catalog metadata only; body not opened"
+    },
+    {
+      "source_path": "data/B_T028_MERCENARY_ELIGIBILITY_BOOL_OFFLINE_20261028_17H.md",
+      "reason": "HOLD21_NAME_OR_SAME_STEM_METADATA_ONLY",
+      "review_scope": "Filename/catalog metadata only; body not opened"
+    },
+    {
+      "source_path": "data/B_T028_TYPE2_FIELD_LIFECYCLE_CONTRACT_OFFLINE_20261028_19H.md",
+      "reason": "HOLD21_NAME_OR_SAME_STEM_METADATA_ONLY",
+      "review_scope": "Filename/catalog metadata only; body not opened"
+    },
+    {
+      "source_path": "data/B_T028_TYPE2_NESTED_POINTER_CONTRACT_OFFLINE_20261028_18H.md",
+      "reason": "HOLD21_NAME_OR_SAME_STEM_METADATA_ONLY",
+      "review_scope": "Filename/catalog metadata only; body not opened"
+    },
+    {
+      "source_path": "data/T011_SUMMONFLASH_HOLDER_CHAIN_NATIVE_20261027_14H.md",
+      "reason": "PROTECTED_OR_REFUSAL_FILENAME_METADATA_ONLY",
+      "review_scope": "Filename/catalog metadata only; body not opened"
+    },
+    {
+      "source_path": "data/T011_SUMMON_UNIT_HOLDER_INHERITANCE_NATIVE_20261027_13H.md",
+      "reason": "PROTECTED_OR_REFUSAL_FILENAME_METADATA_ONLY",
+      "review_scope": "Filename/catalog metadata only; body not opened"
+    },
+    {
+      "source_path": "data/T011_T012_T013_T024_T028_OFFLINE_RECOVERY_INDEX_20261020_1117.md",
+      "reason": "HOLD21_NAME_OR_SAME_STEM_METADATA_ONLY",
+      "review_scope": "Filename/catalog metadata only; body not opened"
+    },
+    {
+      "source_path": "data/T012_T013_54E420_MODE0_THRESHOLD_AND_A4_INDEX_20261019.md",
+      "reason": "PROTECTED_OR_REFUSAL_FILENAME_METADATA_ONLY",
+      "review_scope": "Filename/catalog metadata only; body not opened"
+    },
+    {
+      "source_path": "data/T013_514D60_57DA1F_AUX_NULLNESS_CROSSJOIN_OFFLINE_20261019.md",
+      "reason": "HOLD21_NAME_OR_SAME_STEM_METADATA_ONLY",
+      "review_scope": "Filename/catalog metadata only; body not opened"
+    },
+    {
+      "source_path": "data/T013_57DA1F_AUX_NULL_REACQUIRE_GUARD_20261019.md",
+      "reason": "HOLD21_NAME_OR_SAME_STEM_METADATA_ONLY",
+      "review_scope": "Filename/catalog metadata only; body not opened"
+    },
+    {
+      "source_path": "data/T013_SAVED_REA_ARCHIVE_COVERAGE_GAP_OFFLINE_20261020_1408.md",
+      "reason": "HOLD21_NAME_OR_SAME_STEM_METADATA_ONLY",
+      "review_scope": "Filename/catalog metadata only; body not opened"
+    },
+    {
+      "source_path": "data/T028_ROUTE_CACHE_THRESHOLD_PROMOTION_NATIVE_20261027_01H.md",
+      "reason": "PROTECTED_OR_REFUSAL_FILENAME_METADATA_ONLY",
+      "review_scope": "Filename/catalog metadata only; body not opened"
+    }
+  ]
+}

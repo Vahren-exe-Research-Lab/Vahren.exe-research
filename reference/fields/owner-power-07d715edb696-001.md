@@ -52,6 +52,15 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1742](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1742-L1742) — - H を決める: power+0xC0（`@@@@@` が1件だけなら空）。+0xC0 が空なら、勢力の `home` リストを使う。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+<a id="field-d8"></a>
+## power + 0xD8
+
+- [research/recovered/b_batch2/T011_TRAINING_COUNT_PROVENANCE_NATIVE_20261031_06H.md 行 7](../../research/recovered/b_batch2/T011_TRAINING_COUNT_PROVENANCE_NATIVE_20261031_06H.md?plain=1#L7-L7) — [KNOWN HELPER RECONFIRMED] 0x595333 [power+0xD8]非零なら値採用、零なら0x59535F 'training_up' (PE VA0x626984)と'scenario'(0x626990)→0x595364 E8 CALL0x4647D0→0x595369 [node+0
+  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+- [research/recovered/e_reports/T020_E_T011_TRAINING_BRANCH_ACCEPTANCE_20261031_06H.md 行 9](../../research/recovered/e_reports/T020_E_T011_TRAINING_BRANCH_ACCEPTANCE_20261031_06H.md?plain=1#L9-L9) — - CONDITIONAL MODEL ONLY: power+0xD8 != 0 selects power, otherwise scenario; chosen raw <0 maps to 0, raw 0 maps to 1. This is normalized before any reported bo
+  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
+
 <a id="field-108"></a>
 ## power + 0x108
 

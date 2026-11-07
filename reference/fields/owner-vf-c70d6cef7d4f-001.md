@@ -22,7 +22,7 @@
 <a id="field-18"></a>
 ## vf + 0x18
 
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 136](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L136-L136) — 4. +0x1EED28 が0でなければ、両陣営の判定をする。主体（+0x1EED44）の vf+0x18 == 4 かつ相手（+0x1EED48）の vf+0x18 ≠ 4 か、0x514C80（残っているユニットの判定）で勝ちなら `0x493630(engine, 1)`、それ以外は `(engine, 0)` 
+- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 136](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L136-L136) — 4. +0x1EED28 が0でなければ、両陣営の判定をする。主体（+0x1EED44）の vf+0x18 == 4 かつ相手（+0x1EED48）の vf+0x18 ≠ 4 か、0x514C80（残っているユニットの判定）で勝ちなら `0x493630(engine, 1)`、それ以外は `(engine, 0)`
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)
