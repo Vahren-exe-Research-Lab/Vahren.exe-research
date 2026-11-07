@@ -211,3 +211,5 @@ python -B knowledge\tools\research_index.py --check
 - [EレーンのGolden G0–G2・T019/T020の根拠付き要約](research/intake/E/E-PC-20261101-GOLDEN-G012-AND-KB-BACKLOG.md): 元研究ID/相対source path/SHA・未検証事項。現物SHAのないものを確定扱いにしない。
 
 **Historical E evidence search (2026-11-02):** See [E 193-ID provenance and correction index](research/intake/E/INDEX.md) and [shared intake/status ledger](research/intake/README.md). These are PUBLISHED_INTAKE / VERIFY by default, not 193 original native facts. Three independently reviewed synthetic/source-policy corrections are cross-linked in [battle REF](REF_BATTLE_TAKEOVER.md) and [DAT REF](REF_DAT_BEHAVIOR.md). Original same-battle G0/G1/G2, external G4 commit and actual strict Golden remain unproven.
+
+**登録関数の呼び出し関係と追加回収（2026-11-05）:** [関数・メモリの参照入口](reference/README.md)から、V9静的索引の登録関数間2,373 CALL箇所・872組を双方向に参照できる。[B追加研究41件](research/recovered/b_batch3/README.md)も本文・元の確度・訂正・出典ハッシュを保存した。過去の静的索引や研究者の主張を新たな実機確認には格上げしない。

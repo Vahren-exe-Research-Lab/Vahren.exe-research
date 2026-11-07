@@ -58,4 +58,10 @@
 - [research/recovered/symbol_sources/T013_CANDIDATE_A14_PER_NODE_RANDOM_SCORE_NATIVE_20261031_19H.md 行 8](../../research/recovered/symbol_sources/T013_CANDIDATE_A14_PER_NODE_RANDOM_SCORE_NATIVE_20261031_19H.md?plain=1#L8-L8) — [NEW RNG+SCORE WRITER] 0x57A7E3 CALL0x5B6EAB→0x57A7E8 raw RNG保存→0x57A7EC FILD→0x57A7F0 FMUL qword[0x63B080]=1/32768→0x57A7F6 FMUL qword[0x63B090]=-8.0→0x57A7FC
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY report; no new native/gameplay validation; referenced probes/windows not recovered; current REF_BATTLE_AI_MORALE.md or REF_UNIT_EXP_SUMMON.md remains curated interpretation; -4..+3 relies on normal truncation conditions, actual FP state/distribution unverified; record+0x28 is distinct
 
+<a id="field-1867c"></a>
+## candidate + 0x1867C
+
+- [research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md 行 71](../../research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md?plain=1#L71-L71) — **Golden必要条件**：同一SHA EXE・DAT・SAVE・MAP・入力・RNG/tickを揃え、`controller+0x278`=0/正数、`actor+0xC0/C4/C8/CC`正負、A/B vectorが空/1/2候補、距離帯の内外・境界、`candidate+0x1867C`、2回の確率分岐、各候
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

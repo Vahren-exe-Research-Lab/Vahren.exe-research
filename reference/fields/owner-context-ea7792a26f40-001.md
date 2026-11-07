@@ -46,6 +46,18 @@
 - [research/recovered/b_reports/T013_RNG_CONTEXT_CARRY_NO_DIRECT_CMP_NATIVE_20261031_18H.md 行 16](../../research/recovered/b_reports/T013_RNG_CONTEXT_CARRY_NO_DIRECT_CMP_NATIVE_20261031_18H.md?plain=1#L16-L16) — [KB_CANDIDATE] ID=B-20261031-18H-T013-RNG-CONTEXT-CARRY-NONUSE-01; owner=B/T013; VA=0x5A3DF0/0x577A20/0x579EB0/0x57A830/0x5A3EA0; CALL site=0x577D82/0x577DCB/0x
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
+<a id="field-48"></a>
+## context + 0x48
+
+- [research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md 行 43](../../research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md?plain=1#L43-L43) — vector [context+0x48, context+0x4C)
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+<a id="field-4c"></a>
+## context + 0x4C
+
+- [research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md 行 43](../../research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md?plain=1#L43-L43) — vector [context+0x48, context+0x4C)
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 <a id="field-e4"></a>
 ## context + 0xE4
 

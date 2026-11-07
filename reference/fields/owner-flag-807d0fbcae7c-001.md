@@ -10,4 +10,10 @@
 - [research/recovered/e_reports/T020_E_T011_CACHE_LIFECYCLE_ACCEPTANCE_20261031_08H.md 行 17](../../research/recovered/e_reports/T020_E_T011_CACHE_LIFECYCLE_ACCEPTANCE_20261031_08H.md?plain=1#L17-L17) — - KB_CANDIDATE: ID above; owner E/T020, linked B-20261031-08H-T011-TRAINING-CACHE-LIFECYCLE-01 B/T011; VA 0x472091/0x49ED90/0x4726C1/0x4DEF40/0x4726D9/0x474B09/
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
 
+<a id="field-1eed55"></a>
+## flag + 0x1EED55
+
+- [research/recovered/b_batch3/T028_BATTLE_MODE_CONFIG_PRODUCER_NATIVE_20261028_00H.md 行 11](../../research/recovered/b_batch3/T028_BATTLE_MODE_CONFIG_PRODUCER_NATIVE_20261028_00H.md?plain=1#L11-L11) — - したがってこのwriterの条件式は mode = NOT enemy_battle（AL==0 && manager.flag+0x1EED55==0）、それ以外は NOT player_battle。設定が未指定なら前者mode1、後者mode0の静的規則。ALの上流意味・flag+0x1EED55の名称はVE
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

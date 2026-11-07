@@ -67,4 +67,10 @@
 - [research/recovered/b_batch2/T028_NULL_VECTOR_CANDIDATE_DESTRUCTION_NATIVE_20261028_12H.md 行 11](../../research/recovered/b_batch2/T028_NULL_VECTOR_CANDIDATE_DESTRUCTION_NATIVE_20261028_12H.md?plain=1#L11-L11) — 同一key該当時、0x461038のowner+0x32Cを使って0x46103E CALL0x510C20（木ノードerase）を実行し、0x46104E [record+0x94]=0、0x461055 heap/inline分岐、0x46105C [record+0x84]=0でstringを空にする。非該当は次
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 
+<a id="field-1f0"></a>
+## record + 0x1F0
+
+- [research/recovered/b_batch3/T012_RUSH_SKILL_INTERVAL_FIRST_TICK_BURST_NATIVE_20261027_18H.md 行 5](../../research/recovered/b_batch3/T012_RUSH_SKILL_INTERVAL_FIRST_TICK_BURST_NATIVE_20261027_18H.md?plain=1#L5-L5) — [NEW ASM/SEED] 0x54F990 の record=EBP / Skill=EAX。0x54F9AC MOV [EBP+0x1D4],EAX、0x54F9D1 MOV EDX,[EAX+0x78]、0x54F9D4 MOV [EBP+0x1F4],EDX。したがって初期record.counterは0でな
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

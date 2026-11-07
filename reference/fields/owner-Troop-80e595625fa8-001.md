@@ -7,6 +7,9 @@
 <a id="field-1d"></a>
 ## Troop + 0x1D
 
+- [research/recovered/b_batch3/T024_TEMP_SELECTION_UI_ADAPTER_NATIVE_20261025_22H.md 行 23](../../research/recovered/b_batch3/T024_TEMP_SELECTION_UI_ADAPTER_NATIVE_20261025_22H.md?plain=1#L23-L23) — Next P0: discover producer for Troop+0x1D/+0x1C and Unit+0x45D=1, 0x528700 owner+358 alias/lifetime, 0x56BA80 virtual-slot effects, and source-level AI target s
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 - [research/recovered/b_reports/T024_FALLBACK_FLAG_LATCH_FOURWAY_NATIVE_20261025_23H.md 行 17](../../research/recovered/b_reports/T024_FALLBACK_FLAG_LATCH_FOURWAY_NATIVE_20261025_23H.md?plain=1#L17-L17) — - 未解明P0：pair群の設定位点/ゲーム語義、0x4C7040 4分岐効果、+0x45D=1生成側、Troop+0x1D/+0x1C writer、間接/vtableおよび実機Golden。次回は 0x4C7040 caller欠落の同種索引負例や+0x18C pair setterをread-only限定検索。
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail; source addendum limits missing-call claim to legacy20261021 DB, not V3
 
@@ -15,5 +18,11 @@
 
 - [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md 行 148](../../research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md?plain=1#L148-L148) — - 追加上書き: Troop+0x1F!=0なら0x572765で+0x18614/+0x18615を同時に1へ設定する。共通EXP helperだけでなく通常型の遅延Lv判定0x575110も前者を検査する。
   制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
+
+<a id="field-44"></a>
+## Troop + 0x44
+
+- [research/recovered/b_batch3/T013_TROOP_RTTI_HALF_RATIO_GATE_V9_20261023_1708.md 行 23](../../research/recovered/b_batch3/T013_TROOP_RTTI_HALF_RATIO_GATE_V9_20261023_1708.md?plain=1#L23-L23) — GOLDEN DESIGNED/NOT RUN: 無改変同一EXE/DAT/SAVE/MAP/入力・RNGで適格Unit 0/1/2/3/4、+1867C/+1867E、座標距離が境界±1、Troop+0x44=0/1、+0x3C 99/100/101。可視命令/配置/移動・HP/MP・候補順/ターンを時系列照合。
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

@@ -19,4 +19,10 @@
 - [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md 行 39](../../research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md?plain=1#L39-L39) — - SimpleUnitのvirtual+0x58は0x5445E0（既存実測PE）。保存擬似Cでは非除去状態なら除去flag、UnitData+0x1B1、HP相当+0x90=0、陣営個体数減少を処理する。
   制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
 
+<a id="field-1c4"></a>
+## UnitData + 0x1C4
+
+- [research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md 行 22](../../research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md?plain=1#L22-L22) — - Golden条件: x20前DATと無改変原EXEの同SAVE/MAP/input/RNGで、managerとgroupのUnit vector(0/1/複数)、Unit+0x1867C/+0x1D0、UnitData+0x1C4、前後+0x88/+0x8C/+0xB0/+0xD0、FPU status、0x449
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

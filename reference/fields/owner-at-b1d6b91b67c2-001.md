@@ -4,6 +4,30 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-40"></a>
+## at + 0x40
+
+- [research/recovered/b_batch3/T028_SPATIAL_GRID_CTOR_FLAG_PROVENANCE_NATIVE_20261026_11H.md 行 15](../../research/recovered/b_batch3/T028_SPATIAL_GRID_CTOR_FLAG_PROVENANCE_NATIVE_20261026_11H.md?plain=1#L15-L15) — - [ORIGINAL ASM] 0x4E4B64 TEST BL,BL: mode0 stores abs(bounds right-left) at +0x40 and abs(bottom-top) at +0x44 (0x4E4B68/0x4E4B98). mode1 shifts both nonnegati
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+<a id="field-44"></a>
+## at + 0x44
+
+- [research/recovered/b_batch3/T028_SPATIAL_GRID_CTOR_FLAG_PROVENANCE_NATIVE_20261026_11H.md 行 15](../../research/recovered/b_batch3/T028_SPATIAL_GRID_CTOR_FLAG_PROVENANCE_NATIVE_20261026_11H.md?plain=1#L15-L15) — - [ORIGINAL ASM] 0x4E4B64 TEST BL,BL: mode0 stores abs(bounds right-left) at +0x40 and abs(bottom-top) at +0x44 (0x4E4B68/0x4E4B98). mode1 shifts both nonnegati
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+<a id="field-48"></a>
+## at + 0x48
+
+- [research/recovered/b_batch3/T028_SPATIAL_GRID_CTOR_FLAG_PROVENANCE_NATIVE_20261026_11H.md 行 16](../../research/recovered/b_batch3/T028_SPATIAL_GRID_CTOR_FLAG_PROVENANCE_NATIVE_20261026_11H.md?plain=1#L16-L16) — - [ORIGINAL ASM] 0x4E4B9F..0x4E4C03 loops over +0x50 x +0x50 16B cell vectors at +0x4C resetting their ends, and 0x4E4C10..0x4E4C59 clears separate pointer-tabl
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+<a id="field-4c"></a>
+## at + 0x4C
+
+- [research/recovered/b_batch3/T028_SPATIAL_GRID_CTOR_FLAG_PROVENANCE_NATIVE_20261026_11H.md 行 16](../../research/recovered/b_batch3/T028_SPATIAL_GRID_CTOR_FLAG_PROVENANCE_NATIVE_20261026_11H.md?plain=1#L16-L16) — - [ORIGINAL ASM] 0x4E4B9F..0x4E4C03 loops over +0x50 x +0x50 16B cell vectors at +0x4C resetting their ends, and 0x4E4C10..0x4E4C59 clears separate pointer-tabl
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 <a id="field-186cc"></a>
 ## at + 0x186CC
 

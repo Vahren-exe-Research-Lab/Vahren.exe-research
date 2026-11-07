@@ -7,6 +7,12 @@
 <a id="field-c"></a>
 ## effect + 0xC
 
+- [research/recovered/b_batch3/T013_GAMEMANAGER_GLOBAL_BACKLINKS_NATIVE_20261027_12H.md 行 9](../../research/recovered/b_batch3/T013_GAMEMANAGER_GLOBAL_BACKLINKS_NATIVE_20261027_12H.md?plain=1#L9-L9) — [FORMAL CROSS] 旧11H effect producer 0x54E11A H=[Unit様S+0xC]→0x550980→effect+0xC=H、0x54E2D7 EAX=[H+4]、0x54E2DB ADD EAX,0xC→0x54E2DE CALL0x4C2240。ゆえに M_register=[
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch3/T013_GAMEMANAGER_GLOBAL_BACKLINKS_NATIVE_20261027_12H.md 行 14](../../research/recovered/b_batch3/T013_GAMEMANAGER_GLOBAL_BACKLINKS_NATIVE_20261027_12H.md?plain=1#L14-L14) — [GOLDEN DESIGNED_NOT_RUN] 無改変同梱EXE/20倍変更前DAT、同一SAVE/MAP/input/RNG。合法Heal発動を同一runで Unit+0xC、[H+4]、effect+0xC、pending append時 EAX、tick時 ECX/EBP、対象Unit、MP/HP/statu
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 - [research/recovered/b_reports/T013_HEAL_FINISH_UNREGISTER_POOL_REUSE_NATIVE_20261027_10H.md 行 6](../../research/recovered/b_reports/T013_HEAL_FINISH_UNREGISTER_POOL_REUSE_NATIVE_20261027_10H.md?plain=1#L6-L6) — [OWNER REGISTRATION] 0x54E11A/0x54E11E→0x550980 factory。factory 0x550C53 virtual+0x18→0x455FA0、0x455FAB MOV [object+0xC],holder。0x54E2CC holder=[effect+0xC]、0x5
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
@@ -18,6 +24,12 @@
 
 - [research/recovered/b_reports/T013_HEAL_FINISH_UNREGISTER_POOL_REUSE_NATIVE_20261027_10H.md 行 8](../../research/recovered/b_reports/T013_HEAL_FINISH_UNREGISTER_POOL_REUSE_NATIVE_20261027_10H.md?plain=1#L8-L8) — [FINISH B] 0x54E59A..0x54E5EE：同じ仮想slot+0x34/+8/+0x48/+0x44経路。0x54E5B3 [holder+4]→0x54E5B8 ADD EAX,0xC、0x54E5B6 PUSH EBX=0 / 0x54E5B7 PUSH ESI→0x54E5BB CALL0x4C2
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
+
+<a id="field-7c"></a>
+## effect + 0x7C
+
+- [research/recovered/b_batch3/T011_SUMMON_CALLER_GROUP_PROVENANCE_NATIVE_20261027_15H.md 行 13](../../research/recovered/b_batch3/T011_SUMMON_CALLER_GROUP_PROVENANCE_NATIVE_20261027_15H.md?plain=1#L13-L13) — [GOLDEN] 無改変ver0.67 EXE・KARATE_X20改変前DAT・同一SAVE/MAP/input/RNGを固定。4 caller系の召喚条件別にS/H/effect+0x7C、child+0xC、selector、group EDI、child+0x1D0、group list、可視出現・EXP帰属を
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 <a id="field-9c"></a>
 ## effect + 0x9C

@@ -1,0 +1,21 @@
+# B-20261026-09H-T028-SPATIAL-GRID-DUAL-ERASE-01｜死亡後Unitグリッド登録解除と移動更新
+- owner: B/T028（T012との接続は参照のみ）。2026-10-26 09H JST。状態: STATIC-ORIGINAL-PE-ASM / STATIC-GHIDRA / INFERRED / VERIFY / NOT READY。
+- source: `rea_lab/targets/hakushin067_Vahren.exe` SHA256 `E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187`（PC現物計算一致）。旧 `search.sqlite` SHA256 `0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF`（現物一致）、URI読取専用 quick_check=ok。
+- 先読: MASTER正式cp196/READY596（Eの最後の正式値）・ANALYSIS_LANES_PROTOCOL・LANE_B_HANDOFF・B5 owner・未同期回収索引/旧拒否、search_index README/BUILD_MANIFEST。active.lock2箇所なし、既存Vahren PID4972に介入なし。Ghidra/REA再解析・元EXE起動なし。
+- 新関数: `0x004E4F60` 222 bytes、元PE SHA256 `DDC9BAC7A00E30882650BB9070B7BAA40DF6C4BEA10704C57040CED433C1CA51`。Capstone x86 86命令、終端 `0x004E503E` と元関数長が一致。
+- 入力契約（STATIC）: ESI=対象Unit、EAX=管理オブジェクト；`0x4E4F63 MOV EDI,EAX`、`0x4E4F65 CMP BYTE [EDI+0x3C],0`、Unit`+0x220/+0x224`から座標取得。ゲーム内フィールドの正式型・占有効果はVERIFY。
+- mode非0（単一ポインタ格子）: `0x4E4F69..0x4E4F87` はx/yの負数を0方向へ丸める32分割、`0x4E4F8A..0x4E4FA6`で0<=座標<管理+0x40/+0x44を厳密判定。範囲外は0x4E503Aへ即抜け。
+- mode非0（条件付き解除）: `0x4E4FAC`は+0x48から行テーブル取得、`0x4E4FB2 CMP [cell],ESI`、一致のみ`0x4E4FBE MOV [ECX],0`。別Unit登録なら解除しない（STATIC）；異なるセルの他の効果は保証なし。
+- mode0（可変長ポインタ列）: `0x4E4FC8`は管理+0x5Cシフト量、負座標を0へ補正してから右シフト、管理+0x50を上限としてwidth-1へclamp。+0x4Cから行配列と16Bセルヘッダを取得。
+- mode0（対象一致だけ消去）: `0x4E5007..0x4E501D`でセルvectorのbegin/endを比較・Unitポインタを線形探索。見つかれば`0x4E502E CALL 0x5B6720`で後続ポインタを前詰めコピーし`0x4E5036 [cell+4]-=4`。見つからなければ長さ不変（STATIC）；0x5B6720はGhidra名FID_conflict__memcpy、overlap/例外は未検証。
+- 死亡経路: SimpleStaticUnit `0x55B043 Unit+0x1867C=1` → `0x55B04A CALL 0x49D9F0`（既08H tree削除） → `0x55B04F EAX=[[Unit+0xC]+8]` → `0x55B055 CALL 0x4E4F60`。後者は別の占有格子解除と推測。二つを同じ削除処理にまとめない。
+- StaticUnit `0x55AA50`も`0x55AB25`と`0x55AB86`の二経路から`0x4E4F60`。先行07Hの2クラスfinalizer差に加え、空間格子解除の共通性を接続。死亡の可視挙動はVERIFY。
+- 全直接CALL: Ghidra `callers 0x4E4F60` は6 site：0x4E4C82/0x544741/0x55AB25/0x55AB86/0x55B055/0x575C43。原作PEのE8 rel32を各5bytes独立確認し6/6が0x004E4F60一致。関数埋込表示の上位5件と別の `callers` 出力6件を区別。間接CALLの網羅は主張しない。
+- 移動経路の新接続: `0x4E4C70` 322B SHA256 `51AFF00D68D1E4252852FB9281ED48162F49B43098A2B362963DCAAA3806BEBD`、128命令/終端0x4E4DB2。mode!=0は `0x4E4C82 CALL 0x4E4F60` → `0x4E4C95 CALL 0x4E4EA0`。mode0は`+0x58`maskが同セルを示せば座標更新のみ、異なる場合vectorから前詰め→`0x4E4D96 CALL 0x4C1290`で次セル登録へ。更新成功/衝突時結果はVERIFY。
+- B先行差分: 07Hでfinalizer/vtable+58、08Hで `0x49D9F0` 16セル/木ノード消去と `0x4E4F60`のCALL存在だけ既知。新規成果は`0x4E4F60`原作ASM全86命令の２表現、セル同一性による無変更、配列前詰め、move `0x4E4C70`との接続、6 siteのNative一致。T028 owner内で0x4E4F60は旧参照1行のみ、主命令VAは先行直接なし。旧10/25 14H OFFLINE全文・他lane/Library含む意味重複全件確認はVERIFY。
+- 境界: `0x49D9F0`は周辺キー木の削除、`0x4E4F60`は1セル内Unit登録の解除（INFERRED）。双方が必ずゲーム上の衝突/選択/士気を制御するとは断定しない。二重削除、セルサイズ0、管理オブジェクトの寿命、誤座標、同じポインタ重複や別Unitへの効果はVERIFY。BUG認定0。
+- Golden設計（NOT RUN）: 未改変対象EXE・20倍強化前DAT・同SAVE/MAP/input/RNGでStaticUnit/SimpleStaticUnit×mode0/非0×死亡前セルvector/単独pointer、座標端/負数/移動同セル/越境を合法原作で観測。両格子/木の内容、次tickの判定、可視死亡・戦略復帰を旧新比較するまでGameplay PASS0・strict MATCH0。
+- 優先P0: `0x4E4EA0`および`0x4C1290`の挿入契約、`0x55AA50`の分岐到達・`0x575C43`一般死亡entry、管理オブジェクト`+0x3C/+0x40/+0x44/+0x50/+0x5C`生成元、`0x49D9F0`が更新する木との具体的整合性。
+- 復旧ID `B-RC-20261026-09H-CMD-PY-QUOTING-01`：PowerShell内 python -c 引用符脱落→SyntaxError。失敗したSQLite結果は証拠採用せず、同一許可済DBを別の標準入力ASCII here-string Python `-B` でro quick_check=okとして回復。OTHER/RECOVERED、安全拒否ではない。
+- 復旧ID `B-RC-20261026-09H-UNICODE-PATH-01`：PowerShell標準入力への日本語パスが????化しPython OSError Errno22。日本語パスのUnicode escapeで同じ正規Local経路を正しく表現して回復。OTHER/RECOVERED、安全拒否ではない。
+- 境界と所有権: 原本EXE/ZIP/DAT/SAVE、MASTER/他lane/REA/dev_lab/Git/Work/設定/automationは未変更。既拒否0x5710C0..0x571500ほか旧拒否操作を再試行・別経路迂回しない。B新READY0／E MASTER統合0／Task DONE0。旧14H全文はOFFLINE-UNSYNCED。

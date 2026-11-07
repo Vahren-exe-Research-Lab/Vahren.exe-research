@@ -16,4 +16,13 @@
 - [research/recovered/b_batch2/T028_RESULT_TUPLE_18CALLERS_INDEX3_NULL_SINK_NATIVE_20261029_01H.md 行 30](../../research/recovered/b_batch2/T028_RESULT_TUPLE_18CALLERS_INDEX3_NULL_SINK_NATIVE_20261029_01H.md?plain=1#L30-L30) — - 0x48CD04 MOV EAX,[ESP+0x20]、0x48CD0D LEA ESI,[ESI+EAX+0x1C]：begin+0x38+0x1C=begin+0x54=index3×0x1C。
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 
+- [research/recovered/b_batch3/T028_QUEUE_SINK_SHARED_DIALOG_ARITY_GUARDS_NATIVE_20261029_02H.md 行 12](../../research/recovered/b_batch3/T028_QUEUE_SINK_SHARED_DIALOG_ARITY_GUARDS_NATIVE_20261029_02H.md?plain=1#L12-L12) — 0x48CD08 cap比較・0x48CD0D index3位置=begin+0x54、0x48CD13 heap ptr/0x48CD1B inline ptrをold[ESP+0x30]へ保存（旧01H既知）。今回新たに0x48CD4F cap比較・0x48CD54 index4位置=begin+0x70、0x48
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+<a id="field-70"></a>
+## begin + 0x70
+
+- [research/recovered/b_batch3/T028_QUEUE_SINK_SHARED_DIALOG_ARITY_GUARDS_NATIVE_20261029_02H.md 行 12](../../research/recovered/b_batch3/T028_QUEUE_SINK_SHARED_DIALOG_ARITY_GUARDS_NATIVE_20261029_02H.md?plain=1#L12-L12) — 0x48CD08 cap比較・0x48CD0D index3位置=begin+0x54、0x48CD13 heap ptr/0x48CD1B inline ptrをold[ESP+0x30]へ保存（旧01H既知）。今回新たに0x48CD4F cap比較・0x48CD54 index4位置=begin+0x70、0x48
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

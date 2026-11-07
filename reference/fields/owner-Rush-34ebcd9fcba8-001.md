@@ -4,17 +4,47 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-1d0"></a>
+## Rush + 0x1D0
+
+- [research/recovered/b_batch3/T012_RUSH_SKILL_INTERVAL_FIRST_TICK_BURST_NATIVE_20261027_18H.md 行 8](../../research/recovered/b_batch3/T012_RUSH_SKILL_INTERVAL_FIRST_TICK_BURST_NATIVE_20261027_18H.md?plain=1#L8-L8) — [NEW ASM/FINISH] 0x5503F9 CALL 0x4C22B0（Task解除）、0x5503FE MOV BYTE[Rush+0x1D0],0（再利用可能フラグ）。回復効果の終了経路は旧10H既存、RushのこのSkill+0x74上限分岐と0間隔loopを新たに結合。
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+<a id="field-1d4"></a>
+## Rush + 0x1D4
+
+- [research/recovered/b_batch3/T012_RUSH_SKILL_INTERVAL_FIRST_TICK_BURST_NATIVE_20261027_18H.md 行 6](../../research/recovered/b_batch3/T012_RUSH_SKILL_INTERVAL_FIRST_TICK_BURST_NATIVE_20261027_18H.md?plain=1#L6-L6) — [NEW ASM/TICK] 0x5501AC ESI=Rush、0x5501AE INC DWORD[Rush+0x1F4]、0x5501BB EDI=[Rush+0x1D4]=Skill、0x5501C1 CMP EAX,[EDI+0x78]、0x5501C4 JL 0x550405（未達ならこの回はreturn）
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 <a id="field-1d8"></a>
 ## Rush + 0x1D8
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3445](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3445-L3445) — \| 発動者 \| 弾 +0x78 と Rush +0x1D8 が同じポインタ \| フィールドの意味を実測で確定 \|
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+<a id="field-1f0"></a>
+## Rush + 0x1F0
+
+- [research/recovered/b_batch3/T012_RUSH_SKILL_INTERVAL_FIRST_TICK_BURST_NATIVE_20261027_18H.md 行 7](../../research/recovered/b_batch3/T012_RUSH_SKILL_INTERVAL_FIRST_TICK_BURST_NATIVE_20261027_18H.md?plain=1#L7-L7) — [NEW ASM/REPEAT] 0x5503BE INC DWORD[Rush+0x1F0]、0x5503D0 CMP EAX,[Skill+0x74]、0x5503D3 JGE 0x5503E7（上限到達なら解除）。上限未満なら0x5503D5 CMP DWORD[Skill+0x78],0→0x5503D9 JE
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 <a id="field-1f4"></a>
 ## Rush + 0x1F4
 
+- [research/recovered/b_batch3/T012_RUSH_SKILL_INTERVAL_FIRST_TICK_BURST_NATIVE_20261027_18H.md 行 6](../../research/recovered/b_batch3/T012_RUSH_SKILL_INTERVAL_FIRST_TICK_BURST_NATIVE_20261027_18H.md?plain=1#L6-L6) — [NEW ASM/TICK] 0x5501AC ESI=Rush、0x5501AE INC DWORD[Rush+0x1F4]、0x5501BB EDI=[Rush+0x1D4]=Skill、0x5501C1 CMP EAX,[EDI+0x78]、0x5501C4 JL 0x550405（未達ならこの回はreturn）
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3181](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3181-L3181) — \| R5 連撃の生成 \| T0 \| next_first=on、子 joi の rush=2、root の homing=0 \| 0x54F720(joi, 0, &角度)。Rush+0x1F4 = 4（interval） \| — \| vf31 0x57EA48..5D、0x54F990 \|
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+<a id="field-1f8"></a>
+## Rush + 0x1F8
+
+- [research/recovered/b_batch3/T011_FOLLOW_COMPILER_RUSH_RESULT_LINK_NATIVE_20261027_20H.md 行 9](../../research/recovered/b_batch3/T011_FOLLOW_COMPILER_RUSH_RESULT_LINK_NATIVE_20261027_20H.md?plain=1#L9-L9) — [CONSUMER CROSS-JOIN] Rush update 0x55038F CMP DWORD [EAX+0x1D0],0（EAX=Skill ptr）；zero→0x5503BEでリンク処理skip。nonzeroなら結果ポインタEBPが非NULLかを0x550398/39Aで調べ、旧Rush+0x1F8が
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch3/T011_FOLLOW_COMPILER_RUSH_RESULT_LINK_NATIVE_20261027_20H.md 行 16](../../research/recovered/b_batch3/T011_FOLLOW_COMPILER_RUSH_RESULT_LINK_NATIVE_20261027_20H.md?plain=1#L16-L16) — [GOLDEN] 無改変旧EXE＋KARATE_X20前DAT、同一SAVE/MAP/input/RNGで合法follow=on/off/0/20/30/48 skill使用を採取。compiled +0x1D0、0x55038F分岐、Rush+0x1F8、結果+0x194/+0x198、visible effect/
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 <a id="field-210"></a>
 ## Rush + 0x210

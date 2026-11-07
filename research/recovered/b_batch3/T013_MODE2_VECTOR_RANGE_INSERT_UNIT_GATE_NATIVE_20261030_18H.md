@@ -1,0 +1,24 @@
+# B-20261030-18H-T013-MODE2-RANGE-INSERT-UNIT-GATE-01 | 2026-10-30 18H JST | T013/T024 mode2候補vector化ABIとUnit条件ゲート
+STATUS: STATIC / INFERRED / VERIFY / NOT READY。原作実機Golden PASS0 / strict MATCH0 / 新B正式READY0。B所有の独立増分。
+[SOURCE] Local Compact PC ONLINE。原作解析コピー rea_lab/targets/hakushin067_Vahren.exe 実SHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187、サイズ2910720B。原本ゲーム非実行。
+[INDEX] V9 DB実SHA256 2629CB2F03ECEC9927E89892C77F847E4CDBA381AB718825C1CA8CFEEEF00EDE、既存verifyのV9_INDEPENDENT_READBACK_PASS。PC標準V3は無変更。
+[BOUNDARY] 17H既知0x44C310/0x44C43B→0x44D730、0x44C323/0x44C44E→0x501CA0は再計上0。今回はその実引数・calleeの分岐と後続0x5690C0の副作用を増分検証。
+## NEW A: 0x44D730は木イテレータ範囲を4byte要素vectorへ挿入するnative関数
+0x44C303..310: PUSH ESI, PUSH EDX, PUSH EAX, PUSH 0 の4個の引数、ECX=LEA [ESP+0x80]でlocal vector先を渡す。二段目も0x44C42E..43Bで同型4PUSH。
+0x44D75B MOV EDI,ECX。0x44D75D/0x44D763からend=[EBP+0x10]、begin=[EBP+0x0C]を取得、0x44D773 CALL0x4634F0で範囲長をローカル整数へ集計。
+0x44D77E TEST ESI,ESI→0x44D780 JE0x44D8C9: 件数0は追加なし。非zeroはvector capacity判定0x44D7B2/0x44D7B4、足りなければ0x44D7E3 CALL0x42AC20等の再確保経路。
+0x44D893側は容量足りる時の挿入処理。0x44D8DA bytes C2 10 00 = RET 0x10で4引数をcallee cleanup。擬似Cの3引数/単純1CALL本体はABI・到達枝の忠実な表現ではない。
+0x44C315/319はvector begin/end=[ESP+0x70]/[ESP+0x74]比較、非空のみ0x44C323 shuffle。同型0x44C440/444→0x44C44E。空vectorではshufflerへのCALLなし。
+## NEW B: 0x5690C0の候補登録はUnit状態によって書込み・RNGが分岐
+Native thiscall ECX=recipient manager/group型、stack[EBP+8]=候補Unit pointer、[EBP+0xC]=byte flag。0x56927D bytes C2 08 00 = RET 8。
+第1段0x44C3BA MOV EDX,[ESI+0xB8]→0x44C3C0 PUSH1/0x44C3C2 PUSH EDX/0x44C3C3 CALL0x5690C0。第2段0x44C531 MOV EDX,[EDI+0xB8]、0x44C537 ECX=[ESP+0x80]、同様0x44C53E PUSH1/0x44C540 PUSH EDX/0x44C541 CALL。
+0x5690DE Unit+0x8C==0、0x5690E7 Unit+0x1F8!=0の両条件成立時、0x5690FA Unit+0x1F9==0なら0x569101 JE0x569277で+0x48を書かず早期RET。
+同じ二条件でもUnit+0x1F9!=0なら0x569107..113でrecipient+0x48=候補Unitを保存後RET。二条件が非成立なら0x569116..119で先に+0x48=候補を保存し、NULLか否かで後続枝が異なる。
+非NULL候補の深い枝では0x5691AD..1F5で先頭資格Unitと候補の+0x214/+0x218座標を照合・距離様値を計算、0x5691F9 CALL0x5B6EABでRNG消費、0x569212 CALL0x5D1B80。
+0x56921B/21E/221/224でrecipient+0x58, +0x68(double), +0x60, +0x5Cへ更新。0x569264 Unit+0x186B4==0なら0x56926C recipient+0x58=0、また0x56926Fでflag==0なら同クリア。mode2両CALLのflag実引数は1。
+[CAUTION] +0x48/+0x58の意味名、0x5690C0でのrecipient ECXの全producer、0x5E743Aの数式、早期RET時の既存値残存、NULL/空group安全性・最終対象反映はVERIFY。raw pseudocの型をhook ABIとして採用しない。
+[PE WINDOW SHA] 0x44D730..0x44D875 SHA256 65CFBA51FC736C8169F2730E586C6D255CCEB283453F255A67F5D84BE00877A9; 0x5690C0..0x56913C SHA256 9959940835B8511ED4AFC92FAB7861E95B27165FA636C87B9B84980E4E9FC219。
+[DEDUP] 5 B owner文書+HANDOFF+17H詳細で新site 0x44D75B/773/77E、0x569101/10A/119/1F9/21B/262及び本ID事前literal0。10/25原文・他laneを含む意味的全重複はVERIFY。
+[GOLDEN] 無改変原作EXE・20倍前DAT、同SAVE/MAP/入力/seedでvector 0/1/2+、各Unitフラグ(+8C/+1F8/+1F9/+186B4)、+0x48/+0x58/+0x5C/+0x60/+0x68、RNG消費・翌tick対象を同一合法runで比較。DESIGNED_NOT_RUN。
+[RECOVERY/NEXT] 旧11H拒否済要約3件はBLOCKED維持・再試行/迂回なし。旧SAFE134/HOLD21、B Library54 byte差、10/25欠落原文OPEN。次は0x5690C0呼出者ECX producer・0x579AA0の範囲登録、副作用、T011召喚EXP/T012 damage/T024通常AI/T028士気P0。
+[BOUNDARY] 原本/MASTER/他lane/REA/dev_lab/Git/Work/設定/既存automationへの書込みなし。PC保存とreadbackは別receiptで要検証。

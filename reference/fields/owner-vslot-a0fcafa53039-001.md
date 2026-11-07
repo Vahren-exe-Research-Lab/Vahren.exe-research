@@ -4,6 +4,18 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-1c"></a>
+## vslot + 0x1C
+
+- [research/recovered/b_batch3/B_T012_RENDER_ORDER_ROUTE_OFFLINE_20261022_1912.md 行 35](../../research/recovered/b_batch3/B_T012_RENDER_ORDER_ROUTE_OFFLINE_20261022_1912.md?plain=1#L35-L35) — `0x004C4850`は、対象のslot+0x48が0である場合だけslot+0x1Cを呼び出し、頂点バッファ候補へ出力する。Missile / SimpleMissile vslot+0x1C はどちらも`0x0054D480`（既存Ghidra本文には頂点座標計算が存在）である。つまり **`+0x48=0`は非
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+<a id="field-48"></a>
+## vslot + 0x48
+
+- [research/recovered/b_batch3/B_T012_RENDER_ORDER_ROUTE_OFFLINE_20261022_1912.md 行 17](../../research/recovered/b_batch3/B_T012_RENDER_ORDER_ROUTE_OFFLINE_20261022_1912.md?plain=1#L17-L17) — ## 発見1：Missile系2種類の vslot+0x48 は常に0を返す
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 <a id="field-70"></a>
 ## vslot + 0x70
 
