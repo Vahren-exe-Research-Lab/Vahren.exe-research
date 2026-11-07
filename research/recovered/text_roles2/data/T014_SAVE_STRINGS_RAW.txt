@@ -1,0 +1,33 @@
+00228E54 a_system/load.png
+00229AEF @save
+00229AF8 .sav
+00229B00 save
+00229B10 auto save
+00229B1C no save
+0022AF58 no_autosave
+0022B0F4 no_autosave
+0022E72F @load
+0022E738 auto.sav
+0022E744 .sav
+0022E74C save
+0022E770 no auto save
+0022E780 no save
+002308B4 save
+00230B70 reloadMenu
+00231FC0 load*
+00231FD0 a_system/load.png
+00232D80 no_autosave
+00234338 auto.sav
+00235964 global.sav
+0023597C global.sav
+00235988 global.sav
+00257FD8 D3DXLoadSurfaceFromFileInMemory
+0025801E D3DXLoadSurfaceFromMemory
+0025826C LoadImageA
+002583D8 LoadCursorFromFileA
+00258400 LoadCursorA
+00258476 LoadIconA
+00258B32 LoadLibraryW
+0028ACF8 .?AVLoadException@@
+0028B508 .?AVLoadWnd@@
+0028BB60 .?AVSaveWnd@@

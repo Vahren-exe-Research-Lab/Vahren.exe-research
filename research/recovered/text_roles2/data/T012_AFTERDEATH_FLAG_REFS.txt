@@ -1,0 +1,37 @@
+00544B64 test     byte ptr [esi + 0x1bc], 1
+00548A0B mov      dword ptr [ebx + 0x1bc], 0x80000008
+0054975B mov      dword ptr [ebx + 0x1bc], edx
+00549961 mov      dword ptr [ebx + 0x1bc], edx
+0054D4C7 cmp      dword ptr [edi + 0x1bc], 0x80000008
+0054D4D1 lea      eax, [edi + 0x1bc]
+005500B7 mov      eax, dword ptr [edi + 0x1bc]
+005500BD mov      dword ptr [esi + 0x1bc], eax
+0055AD23 test     byte ptr [eax + 0x1bc], 2
+0055B0E9 test     byte ptr [eax + 0x1bc], 2
+0055B335 mov      dword ptr [esi + 0x1bc], eax
+00560692 cmp      dword ptr [esi + 0x1bc], eax
+005607FC mov      dword ptr [esi + 0x1bc], edi
+00560CDC mov      edi, dword ptr [esi + 0x1bc]
+00560D13 mov      dword ptr [esi + 0x1bc], 0x80000008
+00567D47 cmp      dword ptr [esi + 0x1bc], ebx
+00567D61 mov      dword ptr [esi + 0x1bc], ebx
+00567D77 cmp      dword ptr [esi + 0x1bc], edi
+00567D7F mov      dword ptr [esi + 0x1bc], edi
+00567DC3 cmp      dword ptr [esi + 0x1bc], 0x80000008
+00567DE2 mov      dword ptr [esi + 0x1bc], 0x80000008
+00567EC4 mov      ecx, dword ptr [eax + 0x1bc]
+00567ED0 cmp      ecx, dword ptr [edx + 0x1bc]
+0056B5AE mov      edx, dword ptr [edx + 0x1bc]
+0056B5B4 cmp      edx, dword ptr [edi + 0x1bc]
+0056FE69 mov      dword ptr [ebp + 0x1bc], ebx
+00571684 mov      dword ptr [edi + 0x1bc], ebx
+005726B3 mov      dword ptr [ebx + 0x1bc], eax
+0057898E test     byte ptr [eax + 0x1bc], 1
+00579FAC mov      eax, dword ptr [esp + 0x1bc]
+0057A045 mov      eax, dword ptr [esp + 0x1bc]
+0057A101 mov      edx, dword ptr [esp + 0x1bc]
+00580BA2 mov      dword ptr [ebp + 0x1bc], 0x80000008
+005818A3 mov      dword ptr [ebp + 0x1bc], edx
+00581A84 mov      dword ptr [ebp + 0x1bc], edx
+00582CF3 mov      dword ptr [esi + 0x1bc], ebx
+HITS 00544B64,00548A0B,0054975B,00549961,0054D4C7,0054D4D1,005500B7,005500BD,0055AD23,0055B0E9,0055B335,00560692,005607FC,00560CDC,00560D13,00567D47,00567D61,00567D77,00567D7F,00567DC3,00567DE2,00567EC4,00567ED0,0056B5AE,0056B5B4,0056FE69,00571684,005726B3,0057898E,00579FAC,0057A045,0057A101,00580BA2,005818A3,00581A84,00582CF3

@@ -4,6 +4,15 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-38"></a>
+## increments + 0x38
+
+- [research/recovered/text_roles1/reports/exe/T006_LOOPBGM_PROBE.txt 行 20](../../research/recovered/text_roles1/reports/exe/T006_LOOPBGM_PROBE.txt?plain=1#L20-L20) — - first playback uses playlist element 0, then increments +0x38 and wraps modulo count.
+  制約・訂正　Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+
+- [research/recovered/text_roles1/reports/exe/T006_LOOPBGM_PROBE.txt 行 25](../../research/recovered/text_roles1/reports/exe/T006_LOOPBGM_PROBE.txt?plain=1#L25-L25) — - increments +0x38 and wraps to 0 at count.
+  制約・訂正　Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+
 <a id="field-1f0"></a>
 ## increments + 0x1F0
 

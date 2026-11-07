@@ -1,0 +1,33 @@
+T013 confusion target-pool routing evidence
+
+[context]
+0x65BD64 is loaded from key `unit_confusion_miss` with fallback 50:
+0045ADD0 push 0x32
+0045ADD3 mov ecx, 0x634540 ; unit_confusion_miss
+0045ADDD call 0x46F4C0
+0045ADEA mov [0x65BD64], eax
+
+[full attack target selection in search core]
+0057B938 cmp dword ptr [Unit+0xC8], 0
+0057B93E jge normal_opponent
+0057B940..0057B959 RNG -> integer 0..99
+0057B95E cmp eax, [unit_confusion_miss]
+0057B964 jge normal_opponent
+0057B966 mov eax, [Unit+0x1D4]      ; owner/self side container
+0057B972 call 0x514D60              ; confusion-miss route: same-side pool
+normal_opponent:
+0057B974 mov ecx, [Unit+0x1D4]
+0057B97A mov eax, [ecx+0x1C]       ; opposite-side container
+0057B983 call 0x514D60
+
+[support candidate routing]
+Unit+0x137 gates support builder.
+If Unit+0xC8<0 and RNG0_99 < unit_confusion_miss:
+0057BA36 mov ecx, [Unit+0x1D4]
+0057BA3C mov ecx, [ecx+0x1C]       ; opposite side
+0057BA41 call 0x514F10              ; confused support targets enemy candidates
+otherwise:
+0057BA5A mov ecx, [Unit+0x1D4]      ; same side
+0057BA62 call 0x514F10
+
+Conclusion: Unit+0xC8 is the confusion status gauge in this routing path; negative=confused. Default unit_confusion_miss=50 gives 50% pool inversion. Attack normally uses opponent, support normally uses own side; the miss branch swaps those roles.

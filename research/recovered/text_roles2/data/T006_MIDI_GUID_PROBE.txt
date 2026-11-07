@@ -1,0 +1,11 @@
+CLSID_DirectMusicPerformance d2ac2881-b39b-11d1-8704-00600893b1bd: ['0x60970c']
+IID_IDirectMusicPerformance8 679c4137-c62e-4147-b2b4-9d569acb254c: ['0x6096bc']
+CLSID_DirectMusicLoader d2ac2892-b39b-11d1-8704-00600893b1bd: ['0x6096ec']
+IID_IDirectMusicLoader8 19e7c08c-0a44-4e6a-a116-595a7cd5de8c: ['0x6096cc']
+CLSID_DirectMusicSegment d2ac2882-b39b-11d1-8704-00600893b1bd: ['0x6096fc']
+IID_IDirectMusicSegment8 c6784488-41a3-418f-aa15-b35093ba42d4: ['0x6096ac']
+GUID_StandardMIDIFile 06621075-e92e-11d1-a8c5-00c04fa3726e: ['0x6096dc']
+LITERAL 00630028: 'ogg'
+LITERAL 0063002C: 'mp3'
+LITERAL 00630030: 'a_system/reset.mid'
+LITERAL 006248CA: ''

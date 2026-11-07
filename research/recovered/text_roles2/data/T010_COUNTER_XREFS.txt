@@ -1,0 +1,2 @@
+00451900 mov     eax, dword ptr [eax + 0x1eed60]
+0045194B mov     eax, dword ptr [edx + 0x1eed64]

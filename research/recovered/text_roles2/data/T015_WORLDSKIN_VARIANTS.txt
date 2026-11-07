@@ -1,0 +1,10 @@
+新約迫真戦記―ほのぼの神話ver0.67 豪華版(画像・音声削除版).zip
+worldskin 1 ['0x23097c']
+world_skin 0 []
+world skin 0 []
+skinworld 0 []
+Vahren701.zip
+worldskin 1 ['0x22bf04']
+world_skin 0 []
+world skin 0 []
+skinworld 0 []

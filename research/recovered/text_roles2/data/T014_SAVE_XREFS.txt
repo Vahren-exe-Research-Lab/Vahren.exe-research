@@ -1,0 +1,39 @@
+TARGET @save            VA=0062A6EF fileoff=00229AEF
+TARGET .sav#1           VA=0062A6F8 fileoff=00229AF8
+TARGET save#1           VA=0062A700 fileoff=00229B00
+TARGET auto save        VA=0062A710 fileoff=00229B10
+TARGET no save#1        VA=0062A71C fileoff=00229B1C
+TARGET @load            VA=0062F32F fileoff=0022E72F
+TARGET auto.sav         VA=0062F338 fileoff=0022E738
+TARGET .sav#2           VA=0062F344 fileoff=0022E744
+TARGET save#2           VA=0062F34C fileoff=0022E74C
+TARGET no auto save     VA=0062F370 fileoff=0022E770
+TARGET no save#2        VA=0062F380 fileoff=0022E780
+TARGET load*            VA=00632BC0 fileoff=00231FC0
+TARGET auto.sav#2       VA=00634F38 fileoff=00234338
+
+[@save] 0062A6EF
+
+[.sav#1] 0062A6F8
+
+[save#1] 0062A700
+
+[auto save] 0062A710
+
+[no save#1] 0062A71C
+
+[@load] 0062F32F
+
+[auto.sav] 0062F338
+
+[.sav#2] 0062F344
+
+[save#2] 0062F34C
+
+[no auto save] 0062F370
+
+[no save#2] 0062F380
+
+[load*] 00632BC0
+
+[auto.sav#2] 00634F38

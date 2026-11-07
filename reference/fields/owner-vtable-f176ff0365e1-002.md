@@ -4,8 +4,29 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-24"></a>
+## vtable + 0x24
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 761](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L761-L761) — [CONFIRMED-SAVED-NATIVE / NOTIFICATION LITERALS] commit後半VA0x44140B..0x441447はvtable+0x10 call後に+0x184>1を検査し、+0x298==1なら0x635DC8、他なら0x635DD4を選択。`exe/T006_SELECT
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
 <a id="field-28"></a>
 ## vtable + 0x28
+
+- [research/recovered/b_batch6/data/T011_UNIT_EFFECT_RING_OWNER_4DFB00_20261013.md 行 6](../../research/recovered/b_batch6/data/T011_UNIT_EFFECT_RING_OWNER_4DFB00_20261013.md?plain=1#L6-L6) — [R INITIAL FIELDS] 4DFB0C/0F R+40/+44=0、4DFB17/1A R+48/+4C=0x20(32)、+50/+54/+58=0、+5C=0xFF、+60=0xFFFFFF、byte+64=0、0x4DFB3E `call [R.vtable+0x28]`（vtableは入場時既存、当
+  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
+
+- [research/recovered/b_batch7/data/T012_HEAL_EFFECT_RECORD_4DFBB0_CONTRACT_20261013.md 行 3](../../research/recovered/b_batch7/data/T012_HEAL_EFFECT_RECORD_4DFBB0_CONTRACT_20261013.md?plain=1#L3-L3) — [SOURCE/PROOF] B exe/T012_HEAL_EFFECT_RECORD_4DFBB0_NATIVE_20261013.txtをLocal readback。isolate read-only target SHA256=e8dac301050c8e630d7e0ce93aeefd95e641207d9
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/b_batch7/data/T012_HEAL_EFFECT_RECORD_4DFBB0_CONTRACT_20261013.md 行 5](../../research/recovered/b_batch7/data/T012_HEAL_EFFECT_RECORD_4DFBB0_CONTRACT_20261013.md?plain=1#L5-L5) — [RELEASE/RESET] 0x4DFBBA byte[EDI+0x78] !=0ならEDI+0x6CをESIへ、0x4DFBC4 byte[EDI+0x78]=0→0x4DFBC7 call0x41E160。旧レコードの登録解除・所有者解放までの正確な意味はcallee UNKNOWN。0x4DFBD0..0x4
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 244](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L244-L244) — [CONFIRMED-SAVED-NATIVE] 通常sav writerの0x4605EAでstatus/mode byteのbit0x6をtestし、zeroならstream-like object vtable+0x28(0x46060A)をcallして2出力を取得、nonzeroならglobal 0x6098B
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 249](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L249-L249) — [NEXT] vtable+0x28具体実体、T014 numeric map battle・RTS scene scope、T006 set/add op5/6 case payload、T005 ExplicitNull consumer。Eが既存ID重複照合後にMASTER統合。READY
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
 - [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 255](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L255-L255) — [CROSS-CHECK] T014通常save 0x4605F1..0x460638とglobal writer 0x428F02..0x428F33はvtable+0x28 / global fallbackの類似二経路。具体vtableとmode意味はVERIFY。T005 0x505381..0x5053C3の
   制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
@@ -96,6 +117,9 @@
 
 - [research/recovered/b_batch6/data/T012_EFFECT_REGISTRATION_DUAL_SINK_20261013.md 行 5](../../research/recovered/b_batch6/data/T012_EFFECT_REGISTRATION_DUAL_SINK_20261013.md?plain=1#L5-L5) — [4C3DC0 STATE] ECX=manager-like owner, EAX=child task-like ptr。0x4C3DC5 [owner+0x30]+=10、0x4C3DCE [child+0x54]=更新値。その後child vtable+0x38を呼び戻EAXがsigned負ならowner+0x
   制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
+
+- [research/recovered/text_roles1/reports/exe/T006_AUDIO_CODEC_RESOLUTION.txt 行 56](../../research/recovered/text_roles1/reports/exe/T006_AUDIO_CODEC_RESOLUTION.txt?plain=1#L56-L56) — - DirectMusic loader vtable +0x38 receives CLSID_DirectMusicSegment, IID_IDirectMusicSegment8, wide filename and output pointer; this matches LoadObjectFromFile
+  制約・訂正　Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
 
 <a id="field-3c"></a>
 ## vtable + 0x3C
@@ -330,26 +354,5 @@
 
 - [research/recovered/b_batch11/data/T028_VTABLE70_FOURCLASS_DEATH_DISPATCH_RTTI_NATIVE_20261024_0912.md 行 14](../../research/recovered/b_batch11/data/T028_VTABLE70_FOURCLASS_DEATH_DISPATCH_RTTI_NATIVE_20261024_0912.md?plain=1#L14-L14) — [EXISTING JOIN] 前08HのSimpleUnit 0x544790とUnit 0x578370の+0x1867C/HP・Unit限定0xF4241/+0x1E568分岐は既存、死亡イベントdead_event_a/dは07H既存。今回新しいのは正確なRTTI→vtable+0x70→入口の4系統区別とSt
   制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
-
-- [research/recovered/b_batch11/data/T028_VTABLE70_FOURCLASS_DEATH_DISPATCH_RTTI_NATIVE_20261024_0912.md 行 20](../../research/recovered/b_batch11/data/T028_VTABLE70_FOURCLASS_DEATH_DISPATCH_RTTI_NATIVE_20261024_0912.md?plain=1#L20-L20) — [OWNER/STATE/NEXT] 本回B限定所有資料とB HANDOFFへの記録のみ。MASTER/E・他lane・REA・dev_lab・Git・原作ZIP/EXE/DAT/SAVE・設定・スケジュール変更0。今回B READY0、MASTER統合0、Task DONE0。次はvtable+0x70を実際にCAL
-  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
-
-- [research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md 行 65](../../research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md?plain=1#L65-L65) — 1. **T013/T012最優先**：`0x00550E70` の `candidate.vtable+0x70` の派生先、`0x00551E50` の結果反映（候補のHP/回復/状態、死亡判定）の実経路。以前拒否されたVAやコマンドに立ち入らず、許可済み証拠からのみ絞る。
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_batch4/data/B_T012_T028_VSLOT70_ABI_SENTINEL_20261024_1016.md 行 11](../../research/recovered/b_batch4/data/B_T012_T028_VSLOT70_ABI_SENTINEL_20261024_1016.md?plain=1#L11-L11) — ### 1. `vtable+0x70` の3 CALL siteは *同じ4スタック引数* を異なる文脈から渡す（PE+SQLite照合）
-  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
-
-- [research/recovered/b_batch4/data/B_T012_T028_VSLOT70_ABI_SENTINEL_20261024_1016.md 行 19](../../research/recovered/b_batch4/data/B_T012_T028_VSLOT70_ABI_SENTINEL_20261024_1016.md?plain=1#L19-L19) — 3 siteとも`FF D2`（CALL EDX）の実バイトを確認。各直前にreceiverのvtableから`[vtable+0x70]`をロードする。関数群の署名は少なくとも`this=ECX + 4 stack args`と整合するが、各引数の厳密なゲーム意味/所有権はVERIFY。3 siteは旧研究に登場済み
-  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
-
-- [research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md 行 41](../../research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md?plain=1#L41-L41) — - `0x5510E5: cmp edx,10`。等しい場合 `0x5510EA: xor edi,edi`、`0x5510EC: jmp 0x551156`。この経路は通常のtarget `vtable+0x70`（`0x551154: call edx`）をskipする。
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
-
-- [research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md 行 74](../../research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md?plain=1#L74-L74) — 次のP0は `0x00550E70` の **target vtable+0x70 の実派生先**と対象HP/状態書換えの接続、`0x00547DB0` の候補vector writer・途中増減（loopでbegin/end再取得）、EXP flagが二次呼出で変更される副作用、T024のAIが選ぶ行動との合流。T0
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
-
-- [research/recovered/b_reports/B_T012_T028_STATIC_RETPOINTER_BRANCH_ABI_OFFLINE_20261024_1209.md 行 10](../../research/recovered/b_reports/B_T012_T028_STATIC_RETPOINTER_BRANCH_ABI_OFFLINE_20261024_1209.md?plain=1#L10-L10) — StaticUnitの vtable+0x70 = `0x0055ABA0` の死亡・文字列非空経路では、`0x0055AC35 SUB ESP,0x1C` で28バイトの一時文字列用領域を確保。`0x0055AC54 CALL 0x00402710`で`Unit+0x1E7F8`から文字列を複製し、`0x0055AC
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail; historical refused-query incident is author disclosure only; report excludes that query output; no refused payload read
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

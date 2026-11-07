@@ -1,0 +1,39 @@
+0049368B	mov dword ptr [esp + 0x28], 0x6321a0	006321A0	battle
+00493C7C	push 0x6321a8	006321A8	decide3
+00493C8E	mov esi, 0x6321b0	006321B0	友好国に攻め込んだので信用度が下がりました
+00493D2B	push 0x6321dc	006321DC	decide3
+00493D38	mov esi, 0x6321e4	006321E4	友好国に攻め込んだので信用度が下がりました
+00493DB6	mov ecx, 0x632210	00632210	diplo_down
+00493DC6	mov ecx, 0x63221c	0063221C	diplo_bestfriend
+00493E74	push 0x632230	00632230	war
+00493EC2	mov ecx, 0x632234	00632234	@battlefield
+00493EF3	mov ecx, 0x632244	00632244	@battleattack
+00493F24	mov ecx, 0x632254	00632254	@battledefense
+0049468D	mov dword ptr [esp + 0x20], 0x632264	00632264	btlevent
+0049486C	mov ecx, 0x632270	00632270	loyal_down
+00494A96	mov edx, 0x63227c	0063227C	$$$に敗れました
+00494B1A	mov esi, 0x63228c	0063228C	時間切れです
+00494BC8	mov edx, 0x63229c	0063229C	$$$の勝利です
+00494D26	mov edx, 0x6322ac	006322AC	$$$は###を防衛しました
+00494E46	mov edx, 0x6322c4	006322C4	world
+004955EE	push 0x6322cc	006322CC	decide11
+00495660	mov edx, 0x6322d8	006322D8	$$$は###へ退却しました
+00495705	push 0x6322f0	006322F0	decide11
+0049574B	mov edx, 0x6322fc	006322FC	$$$は###へ退却しました
+004957AE	mov ecx, 0x632314	00632314	win_gain
+004957E4	mov ecx, 0x632320	00632320	loyal_up
+00495800	mov ecx, 0x63232c	0063232C	loyal_down
+00495BCD	mov edx, 0x632338	00632338	$$$を占領しました
+00495C55	mov edx, 0x63234c	0063234C	$$$の勝利です
+00495DB3	mov edx, 0x63235c	0063235C	$$$が###を占領しました
+00495E5A	push 0x632374	00632374	decide11
+00495E65	push 0x632380	00632380	従軍した全人材に合計%%%を支払いました
+00495EDB	push 0x6323a8	006323A8	decide11
+00495EF0	push 0x6323b4	006323B4	従軍した全人材に合計%%%を支払いました
+00495F81	push 0x6323dc	006323DC	decide2
+00495F98	push 0x6323e4	006323E4	報酬として金%%%を受け取りました
+00496006	push 0x632404	00632404	decide2
+0049601F	push 0x63240c	0063240C	報酬として金%%%を受け取りました
+004960F1	push 0x637e04	00637E04	invalid vector<T> subscript
+0049611A	mov edx, 0x63242c	0063242C	world
+004962E8	mov ecx, 0x632434	00632434	support_gain_lose

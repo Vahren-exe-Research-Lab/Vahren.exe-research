@@ -1,0 +1,16 @@
+.?AUScriptBattle@@
+.?AUScriptBlock@@
+.?AUScriptData@@
+.?AUScriptElement@@
+.?AUScriptFunc@@
+.?AUScriptIF@@
+.?AUScriptSet@@
+.?AUScriptWhile@@
+.?AVFieldData@@
+.?AVNoDeletedObject@@
+.?AVSimpleStaticUnit@@
+.?AVSimpleUnit@@
+.?AVStaticUnit@@
+.?AVUnit@@
+.?AVUnitFlash@@
+.?AV__non_rtti_object@std@@

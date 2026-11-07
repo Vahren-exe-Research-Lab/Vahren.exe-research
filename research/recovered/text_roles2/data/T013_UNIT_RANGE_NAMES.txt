@@ -1,0 +1,8 @@
+0x628084 'unit_attack_range'
+0x628098 'escape_range'
+0x6280a8 'unit_escape_range'
+0x6280bc 'escape_run'
+0x6280c8 'unit_escape_run'
+0x6280d8 'hand_range'
+0x6280e4 'unit_hand_range'
+0x628074 'attack_range'

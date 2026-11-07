@@ -1,0 +1,75 @@
+# B T012 native tree erase range 510850..5108F7 exclusive; bounded caller helper
+isolated_sha256=e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187
+window_sha256=7ac47ca161c713136acf3f0defb41a2decf52575ae844288e953fd6ce0ec7298
+byte_count=167
+instruction_count=64
+ret_sites=[('0x510877', '8'), ('0x5108f4', '8')]
+original_game_executed=false
+original_game_modified=false
+old_gameplay_pass=0
+strict_match=0
+
+00510850 push     ecx
+00510851 mov      ecx, dword ptr [esp + 8]
+00510855 mov      edx, dword ptr [esp + 0xc]
+00510859 push     edi
+0051085A mov      edi, eax
+0051085C mov      eax, dword ptr [edi + 4]
+0051085F cmp      ecx, dword ptr [eax]
+00510861 jne      0x51087a
+00510863 cmp      edx, eax
+00510865 jne      0x51087a
+00510867 call     0x44d0d0
+0051086C mov      eax, dword ptr [edi + 4]
+0051086F mov      ecx, dword ptr [eax]
+00510871 mov      eax, esi
+00510873 mov      dword ptr [esi], ecx
+00510875 pop      edi
+00510876 pop      ecx
+00510877 ret      8
+0051087A cmp      ecx, edx
+0051087C je       0x5108ee
+0051087E mov      edi, edi
+00510880 cmp      byte ptr [ecx + 0x11], 0
+00510884 mov      edx, ecx
+00510886 jne      0x5108d8
+00510888 mov      eax, dword ptr [ecx + 8]
+0051088B cmp      byte ptr [eax + 0x11], 0
+0051088F jne      0x5108b0
+00510891 mov      ecx, eax
+00510893 mov      eax, dword ptr [ecx]
+00510895 cmp      byte ptr [eax + 0x11], 0
+00510899 jne      0x5108aa
+0051089B jmp      0x5108a0
+0051089D lea      ecx, [ecx]
+005108A0 mov      ecx, eax
+005108A2 mov      eax, dword ptr [ecx]
+005108A4 cmp      byte ptr [eax + 0x11], 0
+005108A8 je       0x5108a0
+005108AA mov      dword ptr [esp + 0xc], ecx
+005108AE jmp      0x5108d8
+005108B0 mov      eax, dword ptr [ecx + 4]
+005108B3 cmp      byte ptr [eax + 0x11], 0
+005108B7 jne      0x5108d4
+005108B9 lea      esp, [esp]
+005108C0 cmp      ecx, dword ptr [eax + 8]
+005108C3 jne      0x5108d4
+005108C5 mov      ecx, eax
+005108C7 mov      dword ptr [esp + 0xc], ecx
+005108CB mov      eax, dword ptr [eax + 4]
+005108CE cmp      byte ptr [eax + 0x11], 0
+005108D2 je       0x5108c0
+005108D4 mov      dword ptr [esp + 0xc], eax
+005108D8 push     edx
+005108D9 lea      edx, [esp + 8]
+005108DD push     edx
+005108DE push     edi
+005108DF call     0x510c20
+005108E4 mov      ecx, dword ptr [esp + 0xc]
+005108E8 cmp      ecx, dword ptr [esp + 0x10]
+005108EC jne      0x510880
+005108EE mov      eax, esi
+005108F0 mov      dword ptr [esi], ecx
+005108F2 pop      edi
+005108F3 pop      ecx
+005108F4 ret      8

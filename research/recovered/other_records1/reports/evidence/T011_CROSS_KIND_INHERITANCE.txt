@@ -1,0 +1,140 @@
+unit amhsich : amhsi4  (10_ユニット\B_2222_レイノアレフ.dat:276)
+ parent kinds: [('class', '20_クラス\\B_14_ヌエバ・デスパセーニャ.dat', 3)]
+ child assignments: [('race', None, 'r11_sin'), ('name', None, 'メタル化HSI'), ('image', None, 'hsi_metal'), ('class', None, 'c_amhsich'), ('fkey', None, 'amhsi4'), ('level', None, '30'), ('dext', None, '50'), ('dead_event', None, 'timeamhsich1'), ('no_escape', None, 'on')]
+
+class c_ncncbase : base1  (10_ユニット\B_525_神聖UNEI帝国.dat:73)
+ parent kinds: [('unit', '10_ユニット\\00_base.dat', 37)]
+ child assignments: [('name', None, '帝城フォン＝シャ'), ('image', None, 'honsya'), ('fkey', None, 'c_ncncbase'), ('unique', None, 'on'), ('same_friend', None, 'off'), ('same_call', None, 'off'), ('heal_max', None, '-100'), ('merce', None, 'r2_hu,a525_0,a525_2,a525_3,a525_4,a525_9,a525_a9'), ('staff', None, 'r2_hu,a525_0,a525_2,a525_3,a525_4,a525_9,a525_a9'), ('exp_mul', None, '2525'), ('radius', None, '40'), ('skill', None, '@'), ('skill2', None, '@'), ('learn', None, '@'), ('multi', None, '0, attack, defense, magic, magdef, dext, hp, mp, hprec, mprec'), ('attack_max', None, '100'), ('defense_max', None, '100'), ('magic_max', None, '100'), ('magdef_max', None, '100'), ('speed_max', None, '100'), ('dext_max', None, '100'), ('move_max', None, '100'), ('hprec_max', None, '100'), ('mprec_max', None, '100')]
+
+class c_ncncbase2 : base1  (10_ユニット\B_525_神聖UNEI帝国.dat:176)
+ parent kinds: [('unit', '10_ユニット\\00_base.dat', 37)]
+ child assignments: [('name', None, '権利者'), ('image', None, '525kenriking'), ('fkey', None, 'c_ncncbase2'), ('unique', None, 'on'), ('same_friend', None, 'off'), ('same_call', None, 'off'), ('heal_max', None, '-100'), ('merce', None, 'r2_hu,a525_0,a525_2,a525_3,a525_4,a525_9,a525_a9'), ('staff', None, 'r2_hu,a525_0,a525_2,a525_3,a525_4,a525_9,a525_a9'), ('exp_mul', None, '2525'), ('radius', None, '40'), ('skill', None, '@'), ('skill2', None, '@'), ('learn', None, '@'), ('hp', None, '525252'), ('mp', None, '25'), ('attack', None, '1525'), ('magic', None, '1525'), ('defense', None, '1252'), ('magdef', None, '1'), ('dext', None, '125'), ('speed', None, '90'), ('hprec', None, '25'), ('mprec', None, '25'), ('move', None, '125'), ('summon_max', None, '2525'), ('multi', None, '0, attack, defense, magic, magdef, dext, hp, mp, hprec, mprec'), ('attack_max', None, '100'), ('defense_max', None, '100'), ('magic_max', None, '100'), ('magdef_max', None, '100'), ('speed_max', None, '100'), ('dext_max', None, '100'), ('move_max', None, '100'), ('hprec_max', None, '100'), ('mprec_max', None, '100'), ('change', None, 'c_ncncbase22 * 35')]
+
+unit ippanriri : a230  (11_表情差分\F差分_23_リュージ騎士団.dat:2)
+ parent kinds: [('class', '20_クラス\\21_23_材料屋_HSI_リュージ.dat', 761)]
+ child assignments: [('help', None, 'リュージ騎士団\u3000一般兵'), ('name', None, '一般走者騎士'), ('face', None, 'riri')]
+
+unit denreiriri : a230  (11_表情差分\F差分_23_リュージ騎士団.dat:11)
+ parent kinds: [('class', '20_クラス\\21_23_材料屋_HSI_リュージ.dat', 761)]
+ child assignments: [('help', None, 'リュージ騎士団\u3000伝令'), ('name', None, '一般走者騎士'), ('face', None, 'riri')]
+
+unit snjtng1 : a0703  (20_クラス\1919_その他.dat:615)
+ parent kinds: [('class', '20_クラス\\07_10_TNOK_レ_VAN_スカ.dat', 53)]
+ child assignments: [('name', None, '893天狗'), ('image', None, 'gun8933'), ('level', None, '25'), ('class', None, 'a0703'), ('member', 'sci1', 'a0703*7')]
+
+unit snjtng2 : a0703  (20_クラス\1919_その他.dat:624)
+ parent kinds: [('class', '20_クラス\\07_10_TNOK_レ_VAN_スカ.dat', 53)]
+ child assignments: [('name', None, '893天狗'), ('image', None, 'gun8933'), ('level', None, '25'), ('class', None, 'a0703'), ('member', 'sci1', 'a0703*7')]
+
+unit snjhhi : a0003  (20_クラス\1919_その他.dat:633)
+ parent kinds: [('class', '20_クラス\\00_汎用兵科.dat', 109)]
+ child assignments: [('name', None, 'インムペリアル・ガード'), ('image', None, 'inmusw3'), ('level', None, '25'), ('class', None, 'a0003'), ('member', 'sci1', 'a0003*7')]
+
+unit snjym1 : a00b3  (20_クラス\1919_その他.dat:642)
+ parent kinds: [('class', '20_クラス\\00_汎用兵科.dat', 829)]
+ child assignments: [('name', None, 'ダーク・ウィッチッパ'), ('image', None, 'inmuda3'), ('level', None, '25'), ('class', None, 'a00b3'), ('member', 'sci1', 'a00b3*7')]
+
+unit snjym2 : a00b3  (20_クラス\1919_その他.dat:651)
+ parent kinds: [('class', '20_クラス\\00_汎用兵科.dat', 829)]
+ child assignments: [('name', None, 'ダーク・ウィッチッパ'), ('image', None, 'inmuda3'), ('level', None, '25'), ('class', None, 'a00b3'), ('member', 'sci1', 'a00b3*7')]
+
+unit snjasi : a0093  (20_クラス\1919_その他.dat:660)
+ parent kinds: [('class', '20_クラス\\00_汎用兵科.dat', 706)]
+ child assignments: [('name', None, 'アリガト・ナース'), ('image', None, 'inmuns3'), ('level', None, '25'), ('class', None, 'a0093'), ('member', 'sci1', 'a0093*7')]
+
+unit snjsmn : a00a3  (20_クラス\1919_その他.dat:669)
+ parent kinds: [('class', '20_クラス\\00_汎用兵科.dat', 769)]
+ child assignments: [('name', None, 'サモン・ウィッチッパ'), ('image', None, 'inmusu3'), ('level', None, '25'), ('class', None, 'a00a3'), ('member', 'sci1', 'a00a3*7')]
+
+unit snjtng11 : a070  (20_クラス\1919_その他.dat:679)
+ parent kinds: [('class', '20_クラス\\07_10_TNOK_レ_VAN_スカ.dat', 13)]
+ child assignments: [('name', None, 'チャカ893'), ('image', None, 'gun893'), ('class', None, 'a070'), ('member', 'sci1', 'a070*7')]
+
+unit snjtng22 : a070  (20_クラス\1919_その他.dat:687)
+ parent kinds: [('class', '20_クラス\\07_10_TNOK_レ_VAN_スカ.dat', 13)]
+ child assignments: [('name', None, 'チャカ893'), ('image', None, 'gun893'), ('class', None, 'a070'), ('member', 'sci1', 'a070*7')]
+
+unit snjhhi2 : a000  (20_クラス\1919_その他.dat:695)
+ parent kinds: [('class', '20_クラス\\00_汎用兵科.dat', 69)]
+ child assignments: [('name', None, '帝国歩兵'), ('image', None, 'inmusw'), ('class', None, 'a000'), ('member', 'sci1', 'a000*7')]
+
+unit snjym11 : a00b  (20_クラス\1919_その他.dat:703)
+ parent kinds: [('class', '20_クラス\\00_汎用兵科.dat', 784)]
+ child assignments: [('name', None, '帝国闇術師'), ('image', None, 'inmuda'), ('class', None, 'a00b'), ('member', 'sci1', 'a00b*7')]
+
+unit snjym22 : a00b  (20_クラス\1919_その他.dat:711)
+ parent kinds: [('class', '20_クラス\\00_汎用兵科.dat', 784)]
+ child assignments: [('name', None, '帝国闇術師'), ('image', None, 'inmuda'), ('class', None, 'a00b'), ('member', 'sci1', 'a00b*7')]
+
+unit snjasi2 : a009  (20_クラス\1919_その他.dat:719)
+ parent kinds: [('class', '20_クラス\\00_汎用兵科.dat', 654)]
+ child assignments: [('name', None, '帝国衛生兵'), ('image', None, 'inmuns'), ('class', None, 'a009'), ('member', 'sci1', 'a009*7')]
+
+unit snjsmn2 : a00a  (20_クラス\1919_その他.dat:727)
+ parent kinds: [('class', '20_クラス\\00_汎用兵科.dat', 721)]
+ child assignments: [('name', None, '帝国口寄師'), ('image', None, 'inmusu'), ('class', None, 'a00a'), ('member', 'sci1', 'a00a*7')]
+
+unit snjhhi22 : a000  (20_クラス\1919_その他.dat:735)
+ parent kinds: [('class', '20_クラス\\00_汎用兵科.dat', 69)]
+ child assignments: [('name', None, '帝国歩兵'), ('image', None, 'inmusw'), ('class', None, 'a000'), ('member', 'sci1', 'a000*7')]
+
+unit snjym111 : a00b  (20_クラス\1919_その他.dat:743)
+ parent kinds: [('class', '20_クラス\\00_汎用兵科.dat', 784)]
+ child assignments: [('name', None, '帝国闇術師'), ('image', None, 'inmuda'), ('class', None, 'a00b'), ('member', 'sci1', 'a00b*7')]
+
+unit snjym222 : a00b  (20_クラス\1919_その他.dat:751)
+ parent kinds: [('class', '20_クラス\\00_汎用兵科.dat', 784)]
+ child assignments: [('name', None, '帝国闇術師'), ('image', None, 'inmuda'), ('class', None, 'a00b'), ('member', 'sci1', 'a00b*7')]
+
+unit snjasi22 : a009  (20_クラス\1919_その他.dat:759)
+ parent kinds: [('class', '20_クラス\\00_汎用兵科.dat', 654)]
+ child assignments: [('name', None, '帝国衛生兵'), ('image', None, 'inmuns'), ('class', None, 'a009'), ('member', 'sci1', 'a009*7')]
+
+unit snjsmn22 : a00a  (20_クラス\1919_その他.dat:767)
+ parent kinds: [('class', '20_クラス\\00_汎用兵科.dat', 721)]
+ child assignments: [('name', None, '帝国口寄師'), ('image', None, 'inmusu'), ('class', None, 'a00a'), ('member', 'sci1', 'a00a*7')]
+
+unit tiger_264a : tiger3  (4000_AoW\unit_aow_264.dat:663)
+ parent kinds: [('class', '20_クラス\\24_26_ONDISK_二軍_原理.dat', 1260)]
+ child assignments: [('class', None, 'tiger264'), ('name', None, '第19.19SS装甲師団'), ('level', None, '35'), ('speed', None, '60'), ('member', None, '@'), ('line', None, 'front'), ('movetype', None, 'wheel'), ('escape_range', None, '400')]
+
+unit sss101264_264 : ss101264  (4000_AoW\unit_aow_264.dat:745)
+ parent kinds: [('class', '4000_AoW\\unit_aow_264.dat', 771)]
+ child assignments: [('class', None, 'ss101264'), ('name', None, '第19.19SS装甲師団'), ('level', None, '35'), ('escape_range', None, '400'), ('member', None, 'ss101264*7')]
+
+unit sss103264_264 : ss103264  (4000_AoW\unit_aow_264.dat:754)
+ parent kinds: [('class', '4000_AoW\\unit_aow_264.dat', 782)]
+ child assignments: [('class', None, 'ss103264'), ('name', None, '第19.19SS装甲師団'), ('level', None, '35'), ('escape_range', None, '400'), ('member', None, 'ss103264*7')]
+
+unit head : a004  (50_その他新システム\headquarters.dat:71)
+ parent kinds: [('class', '20_クラス\\00_汎用兵科.dat', 294)]
+ child assignments: [('image', None, 'knn_ship'), ('help', None, '@'), ('name', None, '伝令'), ('face', None, '@'), ('race', None, 'r0_hm'), ('sex', None, '@'), ('class', None, 'c_head'), ('kosen', None, '100'), ('brave', None, '100'), ('level', None, '25'), ('consti', None, 'sw*5, pl*5, ch*3, ar*5, gn*5, fire*3, wate*10, wind*2, eart*5, thun*2, ligh*5,'), ('hp', None, '5000'), ('defense', None, '40'), ('hprec', None, '20'), ('no_regular', None, 'on'), ('no_escape', None, 'on'), ('skill', None, 'seiretsu'), ('skill2', None, '@'), ('friend', None, 'allrace,'), ('staff', None, 'r0_hm,r10_hm,r1_co,r20_re,r2_hu,r3_ei,'), ('join', None, '@'), ('dead', None, '@'), ('member', None, '@'), ('no_knock', None, '@'), ('talent', None, 'on')]
+
+unit kobune1 : a005  (50_その他新システム\ship.dat:16)
+ parent kinds: [('class', '20_クラス\\00_汎用兵科.dat', 351)]
+ child assignments: [('help', None, '@'), ('name', None, 'トライＲＩＭ船'), ('face', None, '@'), ('race', None, 'r0_hm'), ('sex', None, '@'), ('class', None, 'c_ship'), ('kosen', None, '100'), ('brave', None, '100'), ('level', None, '5'), ('consti', None, 'sw*5, pl*5, ch*3, ar*5, gn*5, fire*3, wate*10, wind*2, eart*5, thun*2, ligh*5,'), ('hp', None, '15000'), ('defense', None, '400'), ('speed', None, '10'), ('hprec', None, '20'), ('no_regular', None, 'on'), ('no_escape', None, 'on'), ('skill', None, 's_kaizoku'), ('friend', None, 'allrace'), ('staff', None, 'r0_hm,r10_hm,r1_co,r20_re,r2_hu,r3_ei'), ('no_regular', None, 'on'), ('join', None, '@'), ('dead', None, '@'), ('member', None, '@'), ('no_knock', None, '@'), ('break', None, '@')]
+
+unit rtsplayer1 : rtsplayer1c  (8000_RTSシナリオ\RTSbuilding.dat:109)
+ parent kinds: [('class', '8000_RTSシナリオ\\RTSbuilding.dat', 59)]
+ child assignments: [('class', None, 'rtsplayer1c')]
+
+unit rtsplayer2 : rtsplayer2c  (8000_RTSシナリオ\RTSbuilding.dat:113)
+ parent kinds: [('class', '8000_RTSシナリオ\\RTSbuilding.dat', 82)]
+ child assignments: [('class', None, 'rtsplayer2c')]
+
+unit rtsplayer3 : rtsplayer3c  (8000_RTSシナリオ\RTSbuilding.dat:117)
+ parent kinds: [('class', '8000_RTSシナリオ\\RTSbuilding.dat', 95)]
+ child assignments: [('class', None, 'rtsplayer3c')]
+
+unit rtsplayer4 : rtsplayer2c  (8000_RTSシナリオ\RTSbuilding.dat:121)
+ parent kinds: [('class', '8000_RTSシナリオ\\RTSbuilding.dat', 82)]
+ child assignments: [('class', None, 'rtsplayer2c')]
+
+class harpoon2rts : harpoon2  (8000_RTSシナリオ\RTSclass.dat:72)
+ parent kinds: [('skill', '30_スキル\\F10_missile_砲撃リニューアル.dat', 1478)]
+ child assignments: [('delskill', None, 'self_harpoon2'), ('magic', None, '40'), ('speed', None, '80')]
+
+class sichosharts : sichosha  (8000_RTSシナリオ\RTSclass.dat:99)
+ parent kinds: [('unit', '11_表情差分\\F差分_25_オーバック.dat', 44)]
+ child assignments: [('delskill', None, 'self_sichosha')]
+

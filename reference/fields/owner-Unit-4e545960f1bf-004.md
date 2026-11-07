@@ -4,8 +4,23 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-168"></a>
+## Unit + 0x168
+
+- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 769](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L769-L769) — - Unit+0x168 summon_max = 0x585AD0(def, "summon_max")。0 なら `unit_summon_min`（0x46F4C0、既定値 1）、負なら 0（0x5729C0..0x572A28）。
+  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+- [research/recovered/outside_reports1/reports/exp_research_20261021/EXP_WIKI_DRAFT_PC_20261021.md 行 12](../../research/recovered/outside_reports1/reports/exp_research_20261021/EXP_WIKI_DRAFT_PC_20261021.md?plain=1#L12-L12) — 内部ではUnit+0x168=Lv、+0x16C=累積EXP、+0x170=次の閾値候補。
+  制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
+
 <a id="field-16c"></a>
 ## Unit + 0x16C
+
+- [research/recovered/b_batch5/data/T011_LEVELUP_11FIELD_RECALC_CACHE_GATE_20261021_17H.md 行 8](../../research/recovered/b_batch5/data/T011_LEVELUP_11FIELD_RECALC_CACHE_GATE_20261021_17H.md?plain=1#L8-L8) — 1. `0x58A650`入口はGhidra擬似Cで`*(uint*)(Unit+0x170) <= *(uint*)(Unit+0x16C)`の**unsigned**閾値判定。従来T011 03:09資料の既存知見で再計上しない。
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
+- [research/recovered/exp/EXP_SUMMON_OWNER_RESEARCH.md 行 8](../../research/recovered/exp/EXP_SUMMON_OWNER_RESEARCH.md?plain=1#L8-L8) — 既知STATIC: ヒット経験値 writer 0x551E50 は攻撃BattleUnit+0x1C8を用い、紐づくUnit+0x16Cへ加算。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; early unresolved cache/lifetime questions refined by CACHE_STRING_KEY, ENDTRANSFER, LIFECYCLE; wiki refusal is metadata only, held draft not copied
 
 - [research/recovered/exp/EXP_SUMMON_OWNER_RESEARCH.md 行 29](../../research/recovered/exp/EXP_SUMMON_OWNER_RESEARCH.md?plain=1#L29-L29) — [STATIC-PSEUDOC] 0x551E50はBattleUnit+0x1C8のUnit+0x16CへEXPを加算。+0x1CC経由の加算はこの関数にない。
   制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; early unresolved cache/lifetime questions refined by CACHE_STRING_KEY, ENDTRANSFER, LIFECYCLE; wiki refusal is metadata only, held draft not copied
@@ -333,17 +348,5 @@
 
 - [research/recovered/search_reports1/reports/_history_20261029/EXP_SUMMON_DEATH_RESEARCH_20261021.md 行 41](../../research/recovered/search_reports1/reports/_history_20261029/EXP_SUMMON_DEATH_RESEARCH_20261021.md?plain=1#L41-L41) — - `0x578DC1..DCA`: 発生源の `[Unit+0x1C8]+0x16C` に **実減算量に関係なく q 全量**を加算。
   制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
-
-- [research/recovered/search_reports1/reports/_history_20261029/EXP_SUMMON_DEATH_RESEARCH_20261021.md 行 48](../../research/recovered/search_reports1/reports/_history_20261029/EXP_SUMMON_DEATH_RESEARCH_20261021.md?plain=1#L48-L48) — - [STATIC VERIFIED] 生成時 `0x56F880` は Unit+0x1C8=param3、+0x1D4=param5、+0x1D0=param6、+0x1CC=0。param6非NULLなら部隊リストから先頭Unitの+0x1C8を採る条件枝があり+0x1CCへ格納する。
-  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
-
-- [research/recovered/search_reports1/reports/_history_20261029/P0_SUMMON_EXP_OWNER_REPORT_20261021.md 行 31](../../research/recovered/search_reports1/reports/_history_20261029/P0_SUMMON_EXP_OWNER_REPORT_20261021.md?plain=1#L31-L31) — 5. **コンストラクタへの接続**：[STATIC VERIFIED] hit側 `0x54EE87` の保存位置とmiss側 `0x54EF71` の保存位置は、途中pushを差し引くと同じローカル枠。`0x54F06D/0x54F06E` で2pushした後 `0x54F06F MOV ECX,[ESP+0x2C
-  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
-
-- [research/recovered/search_reports1/reports/_history_20261029/P0_SUMMON_EXP_OWNER_REPORT_20261021.md 行 44](../../research/recovered/search_reports1/reports/_history_20261029/P0_SUMMON_EXP_OWNER_REPORT_20261021.md?plain=1#L44-L44) — - `0x56FEAF`: Unit+0x1C8 = param3（検索/生成済R）。
-  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
-
-- [research/recovered/tests_batch5/T020_E_T013_T028_D0_SORT_IDENTITY_ACCEPTANCE_20261030_12H.md 行 12](../../research/recovered/tests_batch5/T020_E_T013_T028_D0_SORT_IDENTITY_ACCEPTANCE_20261030_12H.md?plain=1#L12-L12) — 直後の配列sort callbackはUnit+0x1C8先の+0xE4 signed less-than。+0xD0を比較キーとはみなさない。
-  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

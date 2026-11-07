@@ -1,0 +1,77 @@
+# B T011 Unit-owned eight effect records ring initialization
+source_sha256=e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187
+window_sha256=319cbe6c79d988a46aa0ea743bad2dd5cf4015369c0ddf3f3ea1d258401b0dd9
+bytes=161
+instructions=66
+normal_returns=[('0x4dfba0', '')]
+original_exe_executed=false
+original_exe_modified=false
+gameplay_pass=0
+strict_match=0
+
+004DFB00 push     ebx
+004DFB01 push     edi
+004DFB02 mov      edi, eax
+004DFB04 mov      eax, dword ptr [edi + 0xc]
+004DFB07 mov      dword ptr [esi + 0xc], eax
+004DFB0A xor      ebx, ebx
+004DFB0C mov      dword ptr [esi + 0x40], ebx
+004DFB0F mov      dword ptr [esi + 0x44], ebx
+004DFB12 mov      eax, 0x20
+004DFB17 mov      dword ptr [esi + 0x48], eax
+004DFB1A mov      dword ptr [esi + 0x4c], eax
+004DFB1D mov      edx, dword ptr [esi]
+004DFB1F mov      eax, dword ptr [edx + 0x28]
+004DFB22 mov      ecx, esi
+004DFB24 mov      dword ptr [esi + 0x50], ebx
+004DFB27 mov      dword ptr [esi + 0x54], ebx
+004DFB2A mov      dword ptr [esi + 0x58], ebx
+004DFB2D mov      dword ptr [esi + 0x5c], 0xff
+004DFB34 mov      dword ptr [esi + 0x60], 0xffffff
+004DFB3B mov      byte ptr [esi + 0x64], bl
+004DFB3E call     eax
+004DFB40 mov      dword ptr [esi + 0x6c], edi
+004DFB43 mov      byte ptr [esi + 0x78], bl
+004DFB46 mov      dword ptr [esi + 0x7c], ebx
+004DFB49 mov      eax, dword ptr [edi + 0x4c]
+004DFB4C sub      eax, dword ptr [edi + 0x44]
+004DFB4F mov      ebx, dword ptr [esi + 0x4c]
+004DFB52 cdq      
+004DFB53 mov      ecx, eax
+004DFB55 mov      eax, dword ptr [edi + 0x48]
+004DFB58 sub      eax, dword ptr [edi + 0x40]
+004DFB5B xor      ecx, edx
+004DFB5D sub      ecx, edx
+004DFB5F cdq      
+004DFB60 mov      edi, eax
+004DFB62 mov      eax, dword ptr [esi + 0x48]
+004DFB65 sub      eax, dword ptr [esi + 0x40]
+004DFB68 sub      ebx, dword ptr [esi + 0x44]
+004DFB6B xor      edi, edx
+004DFB6D sub      edi, edx
+004DFB6F cdq      
+004DFB70 xor      eax, edx
+004DFB72 sub      eax, edx
+004DFB74 sub      edi, eax
+004DFB76 mov      eax, edi
+004DFB78 cdq      
+004DFB79 sub      eax, edx
+004DFB7B sar      eax, 1
+004DFB7D mov      dword ptr [esi + 0x70], eax
+004DFB80 mov      eax, ebx
+004DFB82 cdq      
+004DFB83 mov      edi, eax
+004DFB85 xor      edi, edx
+004DFB87 sub      edi, edx
+004DFB89 mov      eax, ecx
+004DFB8B sub      eax, edi
+004DFB8D cdq      
+004DFB8E sub      eax, edx
+004DFB90 sar      eax, 1
+004DFB92 mov      dword ptr [esi + 0x74], eax
+004DFB95 mov      ecx, dword ptr [esi + 0x6c]
+004DFB98 mov      dl, byte ptr [ecx + 0x64]
+004DFB9B pop      edi
+004DFB9C mov      byte ptr [esi + 0x64], dl
+004DFB9F pop      ebx
+004DFBA0 ret      

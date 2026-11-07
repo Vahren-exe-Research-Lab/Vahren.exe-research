@@ -1,0 +1,24 @@
+﻿T009 remaining special-key triage — 2026-10-06
+
+[TARGET CONTEXT]
+event_bg_size = 985
+_name = 7
+_spot2 = 1
+_powerselect2 = 6
+
+[TARGET EXE RAW STRING SCAN]
+_name: exact ASCII occurrence present (file offset 2251265).
+_spot2: exact ASCII/UTF-16LE occurrence absent.
+_powerselect2: exact ASCII/UTF-16LE occurrence absent.
+event_bg_size: exact ASCII/UTF-16LE occurrence absent.
+
+[CLASSIFICATION]
+_name / _spot2 / _powerselect2 are UI-window skin/config fields, not ordinary scalar runtime integer keys.
+Their single-number source form is shorthand/partial UI-window configuration and must not be counted as unresolved scalar fallback.
+event_bg_size is a later-generation context key; current Wiki documents default=768 and it is absent as an exact literal from the bundled target EXE.
+Given the target's 2016-era fingerprint, event_bg_size=985 is a high-confidence forward-version/inert assignment candidate, but remains VERIFY until consumer/behavior is proven absent.
+
+[REIMPLEMENT]
+Keep raw context assignments, but compile UI-window controls through a dedicated UI config path.
+Do not invent a numeric native fallback for the three underscore window fields.
+Gate event_bg_size by engine profile until target-native acceptance/consumer behavior is confirmed.

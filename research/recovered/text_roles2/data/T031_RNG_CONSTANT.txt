@@ -1,0 +1,22 @@
+CONST_63B080 3.0517578125e-05 000000000000003f
+=== 005B6EAB ===
+005B6EAB call     0x5bc6a9
+005B6EB0 mov      ecx, eax
+005B6EB2 mov      eax, dword ptr [ecx + 0x14]
+005B6EB5 imul     eax, eax, 0x343fd
+005B6EBB add      eax, 0x269ec3
+005B6EC0 mov      dword ptr [ecx + 0x14], eax
+005B6EC3 shr      eax, 0x10
+005B6EC6 and      eax, 0x7fff
+005B6ECB ret      
+=== 005D1B80 ===
+005D1B80 cmp      dword ptr [0xb14a40], 0
+005D1B87 je       0x5d1bb6
+005D1B89 push     ebp
+005D1B8A mov      ebp, esp
+005D1B8C sub      esp, 8
+005D1B8F and      esp, 0xfffffff8
+005D1B92 fstp     qword ptr [esp]
+005D1B95 cvttsd2si eax, qword ptr [esp]
+005D1B9A leave    
+005D1B9B ret      

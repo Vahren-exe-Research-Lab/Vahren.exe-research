@@ -1,0 +1,70 @@
+target: bundled 迫真戦記 Vahren.exe (read-only ZIP member)
+scope: BGM path resolution / extension precedence / codec-facing branch
+
+[CONFIRMED-TARGET] playback core 0x4BDE40
+- input filename is copied to local string.
+- 0x426490 searches for literal '.' (0x630000).
+- when no dot is present, core iterates pointer table 0x68C7D0..0x68C7D8 in this exact order:
+  0x68C7D0 -> 0x630004 = .mid
+  0x68C7D4 -> 0x63000C = .mp3
+  0x68C7D8 -> 0x630014 = .ogg
+- each candidate is formed by appending the suffix, then resolver 0x4BDAF0 is called.
+- resolver result string length/non-empty state is tested; first successful candidate stops the loop.
+- therefore extensionless basename precedence is: .mid first, then .mp3, then .ogg.
+- if all three fail, playback continues with unresolved/original local state through the common later path; exact user-visible failure/no-op is still VERIFY.
+
+[CONFIRMED-TARGET] explicit extension handling
+- after resolution, core again searches for '.' using literal 0x63001C='.'.
+- it extracts 3 chars after the dot and compares them against 0x630020='mp3'.
+- this establishes an explicit MP3-special branch in the common playback core.
+- exact downstream backend object chosen by that flag is not yet fully labeled; do not infer more than an MP3-specialized path.
+
+[CONFIRMED-TARGET] BGM registry/file scan
+- audio initialization enumerates `bgm/*` with Win32 FindFirstFileA/FindNextFileA and constructs `bgm/<name>` strings.
+- startup also checks `a_system/reset.mid`.
+- target PE/RTTI/import survey contains OggDecoder, PCMDecoder, `.ogg`, `OggS`, `WAVE`, DirectSound and WINMM mmioOpenA/mmioRead evidence.
+
+[CORPUS]
+- normalized 迫真0.67 script has no literal `.mid`, `.mp3`, or `.ogg` strings in script calls/properties found by exact extension search; content normally relies on extensionless identifiers.
+
+[WIKI-CROSSCHECK]
+- current Vahren Wiki documents BGM as extensionless MID and says MP3 should include its extension.
+- bundled target is broader: extensionless names also probe `.mp3` and `.ogg` after `.mid`.
+- treat this as a target compatibility/documentation gap; target resolver behavior is authoritative for strict reimplementation.
+
+[REIMPLEMENT]
+- strict BGM resolver should not delegate to host filesystem with arbitrary extension order.
+- for names with no dot, probe exactly [`.mid`, `.mp3`, `.ogg`] and choose first resolvable candidate.
+- preserve explicit `.mp3` special-path detection separately from extensionless resolution.
+
+[VERIFY]
+- all-candidates-missing final observable behavior (silent no-op/error/state retention).
+- exact backend mapping: .mid vs .mp3 vs .ogg -> PCMDecoder/OggDecoder/DirectSound/WINMM objects.
+- OGG comment metadata LOOPSTART/LOOPLENGTH parsing/support in bundled target.
+- whether filenames containing a non-extension dot bypass candidate probing exactly as current 0x426490 search suggests.
+
+[EVIDENCE]
+- expanded `exe/T006_AUDIO_HELPERS.txt`
+- `exe/t006_audio_helpers.py`
+- `exe/t006_scene_literal_probe.py`
+- `exe/T004_PE_SURVEY.json`
+- `exe/T004_ANCHOR_XREFS.txt`
+[CONFIRMED-TARGET] backend mapping refinement (checkpoint 15)
+- Literal probes fix branch labels: 0x630028=`ogg`, 0x63002C=`mp3`, 0x630030=`a_system/reset.mid`.
+- `.ogg` enters custom OggDecoder; `.mp3` enters DirectShow FilterGraph; every other extension/no-extension path enters legacy DirectMusic8.
+- DirectMusic8 identity is native-confirmed by CLSID/IID constants for Loader8, Performance8, Segment8 and GUID_StandardMIDIFile plus CoCreateInstance use.
+- DirectMusic loader vtable +0x38 receives CLSID_DirectMusicSegment, IID_IDirectMusicSegment8, wide filename and output pointer; this matches LoadObjectFromFile.
+- Segment +0x18 is SetRepeats by interface layout; target passes 0 or 1000 according to playback repeat mode.
+
+[CONFIRMED-TARGET] missing candidate / dot quirks
+- If `.mid/.mp3/.ogg` all fail for an extensionless name, the original extensionless request survives the suffix loop and falls into the generic DirectMusic path.
+- The second resolver returns empty, DirectMusic segment load fails, and target calls `audioStopOrReset(1)`; command execution does not Yield.
+- Automatic suffix probing is skipped whenever the requested string contains any `.`.
+- The post-resolution codec test uses the index of the first found dot and compares exactly the next three characters to `mp3`.
+- Therefore a multi-dot name such as `foo.bar.mp3` is not recognized by this branch as MP3 (`bar` is tested) and falls into the generic DirectMusic path. Preserve this target quirk in strict profile.
+
+[REIMPLEMENT]
+- Use deterministic resolver + codec dispatch: no-dot => MID>MP3>OGG probe; resolved `ogg` => OggDecoder semantics; resolved `mp3` => DirectShow semantics; otherwise => DirectMusic semantics.
+- Keep missing-file reset behavior and first-dot codec parsing behind strict-compatibility tests rather than normalizing with modern path-extension helpers.
+
+[EVIDENCE] `T006_MIDI_BACKEND.md`, `T006_MIDI_GUID_PROBE.txt`, `T006_AUDIO_HELPERS.txt`, `T015_IMPORT_MAP_608F_6099.txt`.

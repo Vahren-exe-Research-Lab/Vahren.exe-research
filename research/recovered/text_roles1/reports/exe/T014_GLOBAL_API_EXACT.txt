@@ -1,0 +1,27 @@
+# T014 global API exact aux/default semantics
+調査日: 2026-10-07
+
+[CONFIRMED-TARGET]
+- gread handler: VA 0x4A5F53. global read core: VA 0x428010.
+- 0x428010 resets the default result record before file lookup: aux string empty, int32 value 0.
+- If global.sav is absent or the requested key is absent, the returned logical record therefore remains {aux="", value=0}.
+- If the key exists, 0x428010 copies mapped int32 (+0x1C) into the default result record and copies the mapped aux std::string into the result string.
+- gread always assigns the numeric value to argument 2. When argc>=3, the handler also assigns the returned aux string to argument 3.
+
+[CONFIRMED-TARGET]
+- gwrite handler: VA 0x4A60D1. global mutate/write core: VA 0x428710.
+- The handler initializes its local aux string to empty before checking argument count.
+- When argc>=3, argument 3 is evaluated as a string and copied into that local aux value.
+- Therefore gwrite(key,value) passes an empty aux string; gwrite(key,value,aux) passes the supplied aux.
+- Existing-key update path 0x428C40..0x428C58 overwrites BOTH mapped int32 (+0x1C) and mapped aux string.
+- Strict consequence: a 2-argument gwrite does not preserve a previously stored aux string; it clears aux to empty while updating the numeric value.
+
+[HAKUSEN CORPUS]
+- normalized 0.67 corpus: gread argc2 = 440, argc3 = 0.
+- gwrite argc2 = 441, argc3 = 22.
+- All observed 3-argument gwrite examples use the third string as a clear/mark PNG name, e.g. gwrite(mark@po14,1,clearsww.png).
+
+[EVIDENCE]
+- exe/T014_GLOBAL_ARG3_PROBE.txt
+- exe/T014_GLOBAL_DISASM.txt
+- evidence/T014_GLOBAL_CALL_USAGE.json

@@ -1,0 +1,61 @@
+# B T012 status refresh tree iterator range4E1FA0..4E2016 exclusive
+original_isolate_sha256=e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187
+window_sha256=00542d0f322caf68d1697c2218f80c10e1063922ded63d433780c206d6dede89
+bytes=118
+instructions=50
+returns=[('0x4e2013', '8')]
+old_gameplay_pass=0
+strict_match=0
+original_executable_executed=false
+original_executable_modified=false
+
+004E1FA0 push     ebx
+004E1FA1 push     ebp
+004E1FA2 mov      ebp, dword ptr [esp + 0xc]
+004E1FA6 mov      edx, dword ptr [ebp + 4]
+004E1FA9 mov      ecx, dword ptr [edx + 4]
+004E1FAC cmp      byte ptr [ecx + 0x11], 0
+004E1FB0 push     esi
+004E1FB1 mov      ebx, edx
+004E1FB3 jne      0x4e1fdb
+004E1FB5 push     edi
+004E1FB6 mov      edi, dword ptr [eax]
+004E1FB8 mov      esi, dword ptr [ecx + 0xc]
+004E1FBB cmp      esi, edi
+004E1FBD jge      0x4e1fc4
+004E1FBF mov      ecx, dword ptr [ecx + 8]
+004E1FC2 jmp      0x4e1fd4
+004E1FC4 cmp      byte ptr [edx + 0x11], 0
+004E1FC8 je       0x4e1fd0
+004E1FCA cmp      edi, esi
+004E1FCC jge      0x4e1fd0
+004E1FCE mov      edx, ecx
+004E1FD0 mov      ebx, ecx
+004E1FD2 mov      ecx, dword ptr [ecx]
+004E1FD4 cmp      byte ptr [ecx + 0x11], 0
+004E1FD8 je       0x4e1fb8
+004E1FDA pop      edi
+004E1FDB cmp      byte ptr [edx + 0x11], 0
+004E1FDF je       0x4e1fe9
+004E1FE1 mov      ecx, dword ptr [ebp + 4]
+004E1FE4 mov      ecx, dword ptr [ecx + 4]
+004E1FE7 jmp      0x4e1feb
+004E1FE9 mov      ecx, dword ptr [edx]
+004E1FEB cmp      byte ptr [ecx + 0x11], 0
+004E1FEF jne      0x4e2007
+004E1FF1 mov      esi, dword ptr [eax]
+004E1FF3 cmp      esi, dword ptr [ecx + 0xc]
+004E1FF6 jge      0x4e1ffe
+004E1FF8 mov      edx, ecx
+004E1FFA mov      ecx, dword ptr [ecx]
+004E1FFC jmp      0x4e2001
+004E1FFE mov      ecx, dword ptr [ecx + 8]
+004E2001 cmp      byte ptr [ecx + 0x11], 0
+004E2005 je       0x4e1ff3
+004E2007 mov      eax, dword ptr [esp + 0x14]
+004E200B pop      esi
+004E200C pop      ebp
+004E200D mov      dword ptr [eax], ebx
+004E200F mov      dword ptr [eax + 4], edx
+004E2012 pop      ebx
+004E2013 ret      8

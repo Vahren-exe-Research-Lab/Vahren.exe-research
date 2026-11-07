@@ -1,0 +1,13 @@
+# text_roles2 — bounded historical TXT role intake
+
+Fixed selection: 192 literal paths, baseline `5ab625346ef4bc32a6389d6236bc1e76e7a730d9` (2266 accepted rows). All current source SHA256/size pins match; every literal path and ancestor passed containment/no-reparse checks, and stat identity was stable across reading. Original files remain unchanged. Only this folder is written.
+
+Accepted: 57 origins / 57 unique bodies: 37 exact raw UTF-8, 19 lossless UTF-16 BOM→UTF-8 representations, and 1 UTF-8 privacy variant (2 compiler-profile home-prefix replacements). Privacy and encoding variants do not overlap. No baseline or within-batch aliases. Whole metadata deferrals: 135. Source pins, roles and accurate physical-LF/prefix review bounds are in REVIEW_IDENTITY; no deferred body is retained.
+
+This is a role audit. Identifier/keyword/count/xref inventories, author analysis, and short selected proof windows with provenance are distinguished from large standalone uninterpreted full-function/window collections. A complete short helper or generated TXT alone is not excluded. All accepted stored text was visited using structured line review; every unique clause/label and numeric/address domain was reviewed. This is not a claim of manual reading of every LF, executing a model, or verifying native behavior. Original-asset keywords and selected short witnesses are not whole game assets or configuration exports.
+
+The 135 deferred composites were classified by bounded format/subject prefixes, with only specified section-heading/first-native-row format metadata inspected where necessary. Index119 concretely identifies the known-held 5767B0 body range in section metadata. Other raw-role deferrals do not assert an acquisition refusal. Opaque addresses, neighboring functions, names such as Task/ArmyChip, historical owner-write failure, and hashes alone do not establish held identity. Existing holds remain binding; no linked targets or unselected native/game/script/log/code/DB/archive material was fetched.
+
+ENCODING_RECEIPTS proves strict Unicode/newline equality and BOM/endian full raw roundtrip. Privacy offsets are zero-based half-open UTF-8 byte offsets; token hashes and unchanged prefix/inter-span/suffix gaps are recorded without exposing removed profile tokens. Exact bytes/BOM/newlines are otherwise preserved; no normalization or reserialization is performed.
+
+Historical PASS/native/READY/Golden claims remain source claims. No new function/type/memory semantics, runtime correctness, execution result or canonical promotion is asserted. Baseline dedup was SHA metadata only and does not lift current holds. OUTPUT_MANIFEST lists every other output file.

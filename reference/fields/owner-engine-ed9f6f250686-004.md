@@ -7,6 +7,15 @@
 <a id="field-1ef6b4"></a>
 ## engine + 0x1EF6B4
 
+- [research/recovered/DEVLAB_MINIMAP_NATIVE_CONTRACT_20261011.md 行 17](../../research/recovered/DEVLAB_MINIMAP_NATIVE_CONTRACT_20261011.md?plain=1#L17-L17) — - `engine = *(DAT_0087F798+4)` 候補の `engine+0x1EF6B4` からvector-of-vector様のDWORD値グリッドを取り出し、外側が行、内側が列として周回。`pCVar6` を `SetDCBrushColor` に渡し、`FillRect` でセル色矩形を塗る。
+  制約・訂正　Historical author claims preserved; source hash verified; no new native or runtime validation; referenced local evidence not included
+
+- [research/recovered/DEVLAB_MINIMAP_NATIVE_CONTRACT_20261011.md 行 36](../../research/recovered/DEVLAB_MINIMAP_NATIVE_CONTRACT_20261011.md?plain=1#L36-L36) — 1. **色グリッドproducer**：map初期化 0x4F0BE0 側の engine+0x1EF6B4 所有者、spot/field/raw paletteとの接続をnative writer+calleeの局所証拠から確認。これはD/T015へリンクする依頼候補であり他レーン資料は編集不可。
+  制約・訂正　Historical author claims preserved; source hash verified; no new native or runtime validation; referenced local evidence not included
+
+- [research/recovered/DEVLAB_MINIMAP_NATIVE_CONTRACT_20261011.md 行 57](../../research/recovered/DEVLAB_MINIMAP_NATIVE_CONTRACT_20261011.md?plain=1#L57-L57) — - `0x48D6A0` battle/stage setupは`0x4F0BE0` stage readerの後に`0x4DD8C0`を呼ぶ保存静的順序。だが前者が直接engine+0x1EF6B4を生成するわけではなく、各calleeのポインタ引数/副作用はVERIFY。原作の通常battleだけでなく他scene
+  制約・訂正　Historical author claims preserved; source hash verified; no new native or runtime validation; referenced local evidence not included
+
 - [research/recovered/DEVLAB_MINIMAP_NATIVE_CONTRACT_20261011.md 行 70](../../research/recovered/DEVLAB_MINIMAP_NATIVE_CONTRACT_20261011.md?plain=1#L70-L70) — - **NEXT**：①`0x4F0BE0` caller/calleeのpointer aliasを保存済み逆コンパイルで辿り、`engine+0x1EF6B4` producerを探す ②flag`+0x1EEEE0` writer/初期状態を別保存命令で調査 ③`engine+0x1EEE4C` subobjec
   制約・訂正　Historical author claims preserved; source hash verified; no new native or runtime validation; referenced local evidence not included
 

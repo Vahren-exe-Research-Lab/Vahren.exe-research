@@ -1,0 +1,30 @@
+00635DF4 raw=b'diplo_friendly_test'
+  cp932 diplo_friendly_test
+  utf-8 diplo_friendly_test
+  latin1 diplo_friendly_test
+00635E18 raw=b'diplo_league_test'
+  cp932 diplo_league_test
+  utf-8 diplo_league_test
+  latin1 diplo_league_test
+00635E50 raw=b'\x8aO\x8c\xf0\x92\x86\x81E\x81E\x81E'
+  cp932 外交中・・・
+  latin1 0068B3A8 raw=b''
+  cp932 
+  utf-8 
+  latin1 
+0065CD28 raw=b''
+  cp932 
+  utf-8 
+  latin1 
+00641904 raw=b''
+  cp932 
+  utf-8 
+  latin1 
+00604AA0 raw=b'h\xb8(\xb1'
+  cp932 hｸ(ｱ
+  latin1 00604A90 raw=b'V\xbex&\xb1'
+  cp932 Vｾx&ｱ
+  latin1 00604A80 raw=b'V\xbe8$\xb1'
+  cp932 Vｾ8$ｱ
+  latin1 00604A50 raw=b'\x83=,$\xb1'
+  latin1 

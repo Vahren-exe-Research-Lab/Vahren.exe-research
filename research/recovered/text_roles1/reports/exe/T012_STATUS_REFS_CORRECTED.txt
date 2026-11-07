@@ -1,0 +1,26 @@
+
+=== unit_status_hp 0065BCFC ===
+0045AD80 mov      dword ptr [0x65bcfc], eax
+0045ADB7 mov      ecx, dword ptr [0x65bcfc]
+00574783 mov      edx, dword ptr [0x65bcfc]
+00574CD4 mov      eax, dword ptr [0x65bcfc]
+0057E0B5 mov      eax, dword ptr [0x65bcfc]
+
+=== unit_status_min 0065BD4C ===
+0045AD92 mov      dword ptr [0x65bd4c], eax
+00578BBB mov      ecx, dword ptr [0x65bd4c]
+00578BEC mov      ecx, dword ptr [0x65bd4c]
+00578C1D mov      ecx, dword ptr [0x65bd4c]
+00578C4E mov      ecx, dword ptr [0x65bd4c]
+00578C7F mov      ecx, dword ptr [0x65bd4c]
+00578CB0 mov      ecx, dword ptr [0x65bd4c]
+00578CE1 mov      ecx, dword ptr [0x65bd4c]
+
+=== unit_status_rec 0065BD58 ===
+0045ADA4 mov      dword ptr [0x65bd58], eax
+0057E0AF mov      ecx, dword ptr [0x65bd58]
+
+=== unit_status_death 0065BD5C ===
+0045ADAE mov      dword ptr [0x65bd5c], eax
+0045ADBD mov      dword ptr [0x65bd5c], ecx
+00578DE8 cmp      ebx, dword ptr [0x65bd5c]

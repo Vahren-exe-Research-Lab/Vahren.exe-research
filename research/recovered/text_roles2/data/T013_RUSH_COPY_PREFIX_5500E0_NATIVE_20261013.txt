@@ -1,0 +1,72 @@
+# B T013 5500E0..55019A exclusive record prefix copy
+source_sha256=e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187
+window_sha256=f957ec6624d9fdc4492feb3f0df9b3ae348d80d81b5cb6188fefe910270529df
+byte_count=186
+instruction_count=61
+ret_va=0x550199
+original_gameplay_pass=0
+new_strict_match=0
+original_exe_executed=false
+original_exe_modified=false
+
+005500E0 mov      edx, dword ptr [ecx + 4]
+005500E3 mov      dword ptr [eax + 4], edx
+005500E6 mov      edx, dword ptr [ecx + 8]
+005500E9 mov      dword ptr [eax + 8], edx
+005500EC mov      edx, dword ptr [ecx + 0xc]
+005500EF mov      dword ptr [eax + 0xc], edx
+005500F2 mov      edx, dword ptr [ecx + 0x10]
+005500F5 mov      dword ptr [eax + 0x10], edx
+005500F8 mov      edx, dword ptr [ecx + 0x14]
+005500FB mov      dword ptr [eax + 0x14], edx
+005500FE mov      edx, dword ptr [ecx + 0x18]
+00550101 mov      dword ptr [eax + 0x18], edx
+00550104 mov      edx, dword ptr [ecx + 0x1c]
+00550107 mov      dword ptr [eax + 0x1c], edx
+0055010A mov      edx, dword ptr [ecx + 0x20]
+0055010D mov      dword ptr [eax + 0x20], edx
+00550110 mov      edx, dword ptr [ecx + 0x24]
+00550113 mov      dword ptr [eax + 0x24], edx
+00550116 mov      edx, dword ptr [ecx + 0x28]
+00550119 mov      dword ptr [eax + 0x28], edx
+0055011C mov      edx, dword ptr [ecx + 0x2c]
+0055011F mov      dword ptr [eax + 0x2c], edx
+00550122 mov      edx, dword ptr [ecx + 0x30]
+00550125 mov      dword ptr [eax + 0x30], edx
+00550128 mov      edx, dword ptr [ecx + 0x34]
+0055012B mov      dword ptr [eax + 0x34], edx
+0055012E mov      edx, dword ptr [ecx + 0x38]
+00550131 mov      dword ptr [eax + 0x38], edx
+00550134 mov      edx, dword ptr [ecx + 0x3c]
+00550137 mov      dword ptr [eax + 0x3c], edx
+0055013A mov      edx, dword ptr [ecx + 0x40]
+0055013D mov      dword ptr [eax + 0x40], edx
+00550140 mov      edx, dword ptr [ecx + 0x44]
+00550143 mov      dword ptr [eax + 0x44], edx
+00550146 mov      edx, dword ptr [ecx + 0x48]
+00550149 mov      dword ptr [eax + 0x48], edx
+0055014C mov      edx, dword ptr [ecx + 0x4c]
+0055014F mov      dword ptr [eax + 0x4c], edx
+00550152 mov      edx, dword ptr [ecx + 0x50]
+00550155 mov      dword ptr [eax + 0x50], edx
+00550158 mov      edx, dword ptr [ecx + 0x54]
+0055015B mov      dword ptr [eax + 0x54], edx
+0055015E mov      edx, dword ptr [ecx + 0x58]
+00550161 mov      dword ptr [eax + 0x58], edx
+00550164 mov      edx, dword ptr [ecx + 0x5c]
+00550167 mov      dword ptr [eax + 0x5c], edx
+0055016A mov      edx, dword ptr [ecx + 0x60]
+0055016D mov      dword ptr [eax + 0x60], edx
+00550170 movzx    edx, byte ptr [ecx + 0x64]
+00550174 mov      byte ptr [eax + 0x64], dl
+00550177 movzx    edx, byte ptr [ecx + 0x65]
+0055017B mov      byte ptr [eax + 0x65], dl
+0055017E movzx    edx, byte ptr [ecx + 0x66]
+00550182 mov      byte ptr [eax + 0x66], dl
+00550185 movzx    edx, byte ptr [ecx + 0x67]
+00550189 mov      byte ptr [eax + 0x67], dl
+0055018C movzx    edx, byte ptr [ecx + 0x68]
+00550190 mov      byte ptr [eax + 0x68], dl
+00550193 mov      cl, byte ptr [ecx + 0x69]
+00550196 mov      byte ptr [eax + 0x69], cl
+00550199 ret      

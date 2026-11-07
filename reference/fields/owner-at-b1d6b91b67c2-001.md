@@ -10,6 +10,12 @@
 - [research/recovered/rea_batch2/reports/REA_20261102_10H_P0_F720_ARG2_KEY_ORIGIN_ERRATUM_STATIC.md 行 11](../../research/recovered/rea_batch2/reports/REA_20261102_10H_P0_F720_ARG2_KEY_ORIGIN_ERRATUM_STATIC.md?plain=1#L11-L11) — - `0x47D8F2 PUSH EAX` and E8 `0x47D8FE→0x565780` transmit its address. In callee: `0x5657AF MOV EDX,[ESP+0x10]`, `0x5657B3 MOV EDX,[EDX]`, `0x5657B5 MOV [ECX],E
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
 
+<a id="field-28"></a>
+## at + 0x28
+
+- [research/recovered/text_roles1/reports/exe/T006_LOOPBGM_PROBE.txt 行 15](../../research/recovered/text_roles1/reports/exe/T006_LOOPBGM_PROBE.txt?plain=1#L15-L15) — - copies/inserts supplied string range into audio-manager playlist vector at +0x28..+0x30 using 0x479B50.
+  制約・訂正　Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+
 <a id="field-40"></a>
 ## at + 0x40
 
@@ -138,5 +144,11 @@
 
 - [research/recovered/rea_legacy1/reports/REA_EVENT_FLAG_SLOT_MATRIX_20261011_0236.md 行 13](../../research/recovered/rea_legacy1/reports/REA_EVENT_FLAG_SLOT_MATRIX_20261011_0236.md?plain=1#L13-L13) — \| 0 \| 0 \| value at +0x1E8634 \| value at +0x1E8638 \|
   制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+<a id="field-1eedb8"></a>
+## at + 0x1EEDB8
+
+- [research/recovered/text_roles2/data/T006_WIN_SEMANTICS.txt 行 7](../../research/recovered/text_roles2/data/T006_WIN_SEMANTICS.txt?plain=1#L7-L7) — - 0x493630 performs battle teardown: clears engine+0x1EEC44 (battle-active), +0x1EEC48, +0x1EED40/+0x1EED42, clears battleEvent active-root list at +0x1EEDB8, a
+  制約・訂正　Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result.
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

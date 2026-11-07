@@ -1,0 +1,29 @@
+# T012 bounded C++ exception helper 5B5BBA..5B5BEA exclusive
+source_sha256=e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187
+window_sha256=f1dda59e2535124292873d0e72bfb038aa95644149e81f6bbfbab810f557a781
+bytes=48
+instructions=16
+normal_ret_in_window=none
+terminal_opcode=0x5B5BE9 int3
+message_va=0x637E04 invalid vector<T> subscript
+source_executed=false
+source_modified=false
+old_gameplay_pass=0
+new_strict_match=0
+
+005B5BBA mov      edi, edi
+005B5BBC push     ebp
+005B5BBD mov      ebp, esp
+005B5BBF sub      esp, 0xc
+005B5BC2 mov      eax, dword ptr [ebp + 8]
+005B5BC5 mov      dword ptr [ebp + 8], eax
+005B5BC8 lea      eax, [ebp + 8]
+005B5BCB push     eax
+005B5BCC lea      ecx, [ebp - 0xc]
+005B5BCF call     0x5b65bb
+005B5BD4 push     0x641a34
+005B5BD9 lea      eax, [ebp - 0xc]
+005B5BDC push     eax
+005B5BDD mov      dword ptr [ebp - 0xc], 0x6097e8
+005B5BE4 call     0x5b864e
+005B5BE9 int3     

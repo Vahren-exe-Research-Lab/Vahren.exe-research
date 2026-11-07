@@ -16,4 +16,10 @@
 - [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 71](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L71-L71) — - 0x005D44DF calls 0x005E6CD0 to initialize a 20-byte reader: cursor and bitOffset +0/+4=0, packet base/current pointer +8/+0xC, byte length +0x10. This is a pr
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
 
+<a id="field-120"></a>
+## length + 0x120
+
+- [research/recovered/text_roles2/data/T013_A18_A1C_CALLBACK_MAP_20261012.txt 行 5](../../research/recovered/text_roles2/data/T013_A18_A1C_CALLBACK_MAP_20261012.txt?plain=1#L5-L5) — Indices EB P=0..18: table key compared against Skill string+0x110 (length+0x120, SSO cap+0x124).
+  制約・訂正　Historical authored/generated evidence only; no linked acquisition, native rerun, runtime correctness, Golden/READY or semantic adoption. Short selected proof, not an independently rerun native result. Callback predicate bodies explicitly were not acquired; registry metadata does not waive that boundary.
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

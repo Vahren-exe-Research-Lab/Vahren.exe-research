@@ -1,0 +1,8 @@
+0x624d64 b'off' off
+0x624d68 b'slow_per' slow_per
+0x624d74 b'skill' skill
+0x624d7c b'on' on
+0x624d80 b'slow_per' slow_per
+0x624d8c b'skill' skill
+0x624d94 b'slow_time' slow_time
+0x624da0 b'skill' skill

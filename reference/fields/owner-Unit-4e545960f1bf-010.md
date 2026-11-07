@@ -4,8 +4,38 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-1e560"></a>
+## Unit + 0x1E560
+
+- [research/recovered/b_batch8/data/T012_ZNM_BOOM_HELP_VS_CHILD_COEF_20261017.md 行 12](../../research/recovered/b_batch8/data/T012_ZNM_BOOM_HELP_VS_CHILD_COEF_20261017.md?plain=1#L12-L12) — [OPEN/NEXT] 最優先T012 0x580280実作用、0x4E7ED0→射撃結果、Unit+0x1E560/0x18688、MP fallback、発射/HP/MP、T013 target優先、T011 parent継承はOPEN。本件だけで実HP結果は閉じない。
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/dev_reports/DEVLAB_HANDOFF_20261010_SPATIAL_EVENT_156.md 行 14](../../research/recovered/dev_reports/DEVLAB_HANDOFF_20261010_SPATIAL_EVENT_156.md?plain=1#L14-L14) — 3. **`0x546F70`**／T012 saved native `exe/T012_ALLFUNC_FLOW_PROBE.txt` VA0x54714E..0x5471A6。先行skill/scene gate通過後Unit+0x1E560が2ならspatial無しでAL0早期ret、0なら`0x4E7ED0`
+  制約・訂正　Historical STATIC/INFERRED/VERIFY and synthetic-test claims; no new native/runtime verification; referenced raw assets/probes/archives not recovered; no Golden/READY promotion
+
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 315](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L315-L315) — - 次の `0x54714E..0x54718F` にはさらに`Unit+0x1E560==2`や`0x4E7ED0`判定によるAL0 returnがある。これらは上記+0x18688書込の**後**なので、Skill+0x2D0!=7なら後段で不発帰路へ進んでも当該field値が変更済みの可能性がある。別のteard
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 320](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L320-L320) — ## 19. Unit+0x1E560のctor/setup明示ゼロ化と2 target cache同時reset（2026-10-10 新B）
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 322](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L322-L322) — - 保存済 exe/T013_UNIT_CTOR_8D_PROBE.txt のbase Unit constructor 0x571834/0x57183Aは+0x1E574/+0x1E580へ0(EBX)、0x571864は同じEBX(0)をUnit+0x1E560へ格納。ctor内+0x18688=4 (0x571
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+- [research/recovered/rea_batch14/reports/STATIC_SPATIAL_EVENT_MISSILE_20261010.md 行 33](../../research/recovered/rea_batch14/reports/STATIC_SPATIAL_EVENT_MISSILE_20261010.md?plain=1#L33-L33) — - 前提となる複数の上位skill/scene gates（+0x1FC、+0x1EED40等）を通過した局所経路だけを扱う。Unit+0x1E560が2なら0x547157から即0x547480側へ出て、0x4E7ED0を呼ばない。
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
+- [research/recovered/rea_batch14/reports/WAVE3_FINDINGS_20261010.md 行 30](../../research/recovered/rea_batch14/reports/WAVE3_FINDINGS_20261010.md?plain=1#L30-L30) — - **Bへの確認依頼 / VERIFY**: `0x547161..0x547196` callerが0x4E7ED0のALを読んでUnit+0x1E560 latch=2と0->1の経路を分け、MP debit前に戻り得る。これは既存T012の静的観測と整合。ただしfilter fieldの正式論理名、全候補空間範
+  制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
+
 <a id="field-1e568"></a>
 ## Unit + 0x1E568
+
+- [research/recovered/b_batch2/T028_DUAL_DEATH_ENTRY_SENTINEL_HP_GATE_NATIVE_20261024_0808.md 行 6](../../research/recovered/b_batch2/T028_DUAL_DEATH_ENTRY_SENTINEL_HP_GATE_NATIVE_20261024_0808.md?plain=1#L6-L6) — [PATH 1 / 0x544790] 0x5447F4 MOV ECX,[EBP+8]、0x5447F7 SUB DWORD [EBX+0x90],ECX、0x5447FD CMP DWORD [EBX+0x90],0、0x544804 JLE 0x5449C0。残HP>0なら別の非死亡処理、<=0なら死亡側の後段へ
+  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+- [research/recovered/b_batch3/B_T012_T013_VSLOT70_LIVE_VECTOR_OFFLINE_20261023_1109.md 行 41](../../research/recovered/b_batch3/B_T012_T013_VSLOT70_LIVE_VECTOR_OFFLINE_20261023_1109.md?plain=1#L41-L41) — `Unit`の`0x5783D7`には特別値`0xF4241`（1,000,001）の比較があり、通常枝`0x5783DE`では`Unit+0x1E568`から入力値を減算、特別値枝`0x5783E6`では同フィールドを0へ設定する。その後`0x5783F0`で`Unit+0x90`から同入力値を減算する。これは既B保
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 - [research/recovered/b_batch4/data/B_T012_T028_VSLOT70_ABI_SENTINEL_20261024_1016.md 行 25](../../research/recovered/b_batch4/data/B_T012_T028_VSLOT70_ABI_SENTINEL_20261024_1016.md?plain=1#L25-L25) — - `Unit` vtable `0x0063A9E4+0x70 → 0x00578370` の実装では`0x005783D7 CMP EAX,0xF4241`。一致時は`0x005783E6`で`Unit+0x1E568 = 0`、不一致では`0x005783DE`で`Unit+0x1E568 -= amount`し
   制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence

@@ -1,0 +1,102 @@
+# B-T012 isolated bounded numeric CRT slow path 0x5BCF71..0x5BD049 exclusive
+target_sha256=e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187
+window_sha256=42b6b450b3a4508b18782af3ec78ded9f49be8764ee67d230b6142f989b6b2ef
+bytes=216
+instructions=91
+ret=[('0x5bd048', '')]
+original_executed=false
+original_modified=false
+original_gameplay_pass=0
+strict_match=0
+
+005BCF71 mov      edi, edi
+005BCF73 push     ebp
+005BCF74 mov      ebp, esp
+005BCF76 push     ecx
+005BCF77 push     ecx
+005BCF78 push     ebx
+005BCF79 push     esi
+005BCF7A mov      esi, 0xffff
+005BCF7F push     esi
+005BCF80 push     dword ptr [0x65ab20]
+005BCF86 call     0x5c9467
+005BCF8B fld      qword ptr [ebp + 8]
+005BCF8E pop      ecx
+005BCF8F pop      ecx
+005BCF90 movzx    ecx, word ptr [ebp + 0xe]
+005BCF94 mov      ebx, eax
+005BCF96 mov      eax, 0x7ff0
+005BCF9B and      ecx, eax
+005BCF9D push     ecx
+005BCF9E push     ecx
+005BCF9F fstp     qword ptr [esp]
+005BCFA2 cmp      cx, ax
+005BCFA5 jne      0x5bcffc
+005BCFA7 call     0x5c931d
+005BCFAC pop      ecx
+005BCFAD pop      ecx
+005BCFAE test     eax, eax
+005BCFB0 jle      0x5bcfdf
+005BCFB2 cmp      eax, 2
+005BCFB5 jle      0x5bcfd1
+005BCFB7 cmp      eax, 3
+005BCFBA jne      0x5bcfdf
+005BCFBC fld      qword ptr [ebp + 8]
+005BCFBF push     ebx
+005BCFC0 push     ecx
+005BCFC1 push     ecx
+005BCFC2 fstp     qword ptr [esp]
+005BCFC5 push     0xc
+005BCFC7 call     0x5c9082
+005BCFCC add      esp, 0x10
+005BCFCF jmp      0x5bd045
+005BCFD1 push     esi
+005BCFD2 push     ebx
+005BCFD3 call     0x5c9467
+005BCFD8 fld      qword ptr [ebp + 8]
+005BCFDB pop      ecx
+005BCFDC pop      ecx
+005BCFDD jmp      0x5bd045
+005BCFDF fld      qword ptr [ebp + 8]
+005BCFE2 push     ebx
+005BCFE3 fadd     qword ptr [0x63b048]
+005BCFE9 sub      esp, 0x10
+005BCFEC fstp     qword ptr [esp + 8]
+005BCFF0 fld      qword ptr [ebp + 8]
+005BCFF3 fstp     qword ptr [esp]
+005BCFF6 push     0xc
+005BCFF8 push     8
+005BCFFA jmp      0x5bd03d
+005BCFFC call     0x5c92dc
+005BD001 fstp     qword ptr [ebp - 8]
+005BD004 fld      qword ptr [ebp - 8]
+005BD007 pop      ecx
+005BD008 fld      qword ptr [ebp + 8]
+005BD00B pop      ecx
+005BD00C fucompp  
+005BD00E fnstsw   ax
+005BD010 test     ah, 0x44
+005BD013 jp       0x5bd023
+005BD015 push     esi
+005BD016 push     ebx
+005BD017 call     0x5c9467
+005BD01C fld      qword ptr [ebp - 8]
+005BD01F pop      ecx
+005BD020 pop      ecx
+005BD021 jmp      0x5bd045
+005BD023 test     bl, 0x20
+005BD026 jne      0x5bd015
+005BD028 fld      qword ptr [ebp - 8]
+005BD02B push     ebx
+005BD02C sub      esp, 0x10
+005BD02F fstp     qword ptr [esp + 8]
+005BD033 fld      qword ptr [ebp + 8]
+005BD036 fstp     qword ptr [esp]
+005BD039 push     0xc
+005BD03B push     0x10
+005BD03D call     0x5c9138
+005BD042 add      esp, 0x1c
+005BD045 pop      esi
+005BD046 pop      ebx
+005BD047 leave    
+005BD048 ret      

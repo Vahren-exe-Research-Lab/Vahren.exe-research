@@ -1,0 +1,3 @@
+004282B0 -> 004270F0 decode_add28
+004289D9 -> 004270F0 decode_add28
+00428F59 -> 00427040 encode_add28

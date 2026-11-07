@@ -1,0 +1,488 @@
+0050B05C push     0x62cf2c
+  0062CF2C 'battle文の始めで { を書き忘れてます'
+0050B1B5 jae      0x50b1bb
+  0050B1BB 'ｹPﾏb'
+0050B1BB mov      ecx, 0x62cf50
+  0062CF50 '*/'
+0050B331 jae      0x50b338
+  0050B338 'Sh\x80'
+0050B3C2 call     0x512ad0
+  00512AD0 'j\uf8f3h｢ﾈ^'
+0050B44C call     0x429c60
+  00429C60 'j\uf8f3hgﾙ^'
+0050B4EE push     0x62cf54
+  0062CF54 '@'
+0050B5D7 jae      0x50b5de
+  0050B5DE '蕎$ﾔ'
+0050B7C0 je       0x50b878
+  0050B878 '鵠$ﾄ'
+0050B8AE call     0x504400
+  00504400 'j\uf8f3h5$_'
+0050B8C1 jne      0x50b8f3
+  0050B8F3 'ｸDﾛe'
+0050B8FF je       0x50b913
+  0050B913 'ｹXﾏb'
+0050B913 mov      ecx, 0x62cf58
+  0062CF58 'context'
+0050B924 je       0x50b95d
+  0050B95D 'ｹ`ﾏb'
+0050B95D mov      ecx, 0x62cf60
+  0062CF60 'workspace'
+0050B96E je       0x50b997
+  0050B997 'ｹlﾏb'
+0050B985 call     0x4051d0
+  004051D0 'j\uf8f3j'
+0050B997 mov      ecx, 0x62cf6c
+  0062CF6C 'detail'
+0050B9A8 je       0x50b9d1
+  0050B9D1 'ｹtﾏb'
+0050B9BF call     0x4051d0
+  004051D0 'j\uf8f3j'
+0050B9C4 call     0x507110
+  00507110 'j\uf8f3hn _'
+0050B9D1 mov      ecx, 0x62cf74
+  0062CF74 'attribute'
+0050B9F9 call     0x4051d0
+  004051D0 'j\uf8f3j'
+0050B9FE call     0x506ad0
+  00506AD0 'j\uf8f3h*!_'
+0050BA3A call     0x4051d0
+  004051D0 'j\uf8f3j'
+0050BA56 call     0x4051d0
+  004051D0 'j\uf8f3j'
+0050BA5D call     0x505210
+  00505210 'j\uf8f3hﾕ"_'
+0050BAB5 jb       0x50bac7
+  0050BAC7 '控$$SR轟$ﾌ'
+0050BAF0 jne      0x50b4c0
+  0050B4C0 'j\uf8f3S鵠$ﾌ'
+0050BAFE jb       0x50bb10
+  0050BB10 '広$$仮$ﾘ'
+0050BB7F jb       0x50bb91
+  0050BB91 '広$$俺$ﾘ'
+0050BC5B call     0x416970
+  00416970 'j\uf8f3h)ｼ^'
+0050BC61 mov      eax, 0x62cfac
+  0062CFAC 'ファイル名：'
+0050BCA9 mov      eax, 0x62cfbc
+  0062CFBC '行：'
+0050BD66 jb       0x50bd78
+  0050BD78 '荻$ｴ'
+0050BE4D jb       0x50be5f
+  0050BE5F '荻$ﾐ'
+0050BFCB push     0x62cfc8
+  0062CFC8 '.'
+0050C015 push     0x62cfcc
+  0062CFCC '..'
+0050C05E push     0x62cfd0
+  0062CFD0 'main'
+0050C0F2 call     0x4420a0
+  004420A0 'j\uf8f3h｡ｴ^'
+0050C1CB jae      0x50c1d4
+  0050C1D4 '鵠$ﾌ'
+0050C1DC push     0x62cfd8
+  0062CFD8 '*.dat'
+0050C209 jne      0x50c2a9
+  0050C2A9 '鵠$ﾌ'
+0050C295 jb       0x50c2a7
+  0050C2A7 '3ﾛ鵠$ﾌ'
+0050C2B7 je       0x50c201
+  0050C201 '\ue4ab$ﾌ'
+0050C304 call     0x479b50
+  00479B50 'U駆j\uf8f3h\ue0ae^'
+0050C32E jae      0x50c337
+  0050C337 '鵠$ﾌ'
+0050C376 jae      0x50c37f
+  0050C37F 'Sh猾b'
+0050C380 push     0x62cfe0
+  0062CFE0 '/'
+0050C498 jae      0x50c4a1
+  0050C4A1 '鵠$ﾌ'
+0050C4A9 push     0x62cfe4
+  0062CFE4 '*'
+0050C538 jne      0x50c7bf
+  0050C7BF '亀$0轟$ﾌ'
+0050C586 jne      0x50c7bf
+  0050C7BF '亀$0轟$ﾌ'
+0050C5D4 jne      0x50c7bf
+  0050C7BF '亀$0轟$ﾌ'
+0050C5F6 jae      0x50c5ff
+  0050C5FF 'Sh靠b'
+0050C600 push     0x62cfe8
+  0062CFE8 '/'
+0050C699 je       0x50c939
+  0050C939 '広$8Q轟$\x80'
+0050C6E9 jb       0x50c7bf
+  0050C7BF '亀$0轟$ﾌ'
+0050C6FF jmp      0x50c7bf
+  0050C7BF '亀$0轟$ﾌ'
+0050C71E push     0x62cfec
+  0062CFEC 'unicode.txt'
+0050C7B6 je       0x50c7bf
+  0050C7BF '亀$0轟$ﾌ'
+0050C9E2 push     0x62cff8
+  0062CFF8 'script2'
+0050C9FD call     0x416970
+  00416970 'j\uf8f3h)ｼ^'
+0050CA71 push     0x62d000
+  0062D000 'script/'
+0050CA85 call     0x416970
+  00416970 'j\uf8f3h)ｼ^'
+0050CA91 call     0x50bf60
+  0050BF60 'j\uf8f3h{P_'
+0050CAAF push     0x62d008
+  0062D008 'ファイルがありません'
+0050CAD1 mov      ecx, 0x62d020
+  0062D020 'no file'
+0050CB11 mov      dword ptr [esp + 0x34], 0x639634
+  00639634 'ﾀoB'
+0050CB9D call     0x50b220
+  0050B220 'j\uf8f3hﾑﾁ_'
+0050CC36 push     0x637e04
+  00637E04 'invalid vector<T> subscript'
+0050CC70 mov      dword ptr [esp + 0x34], 0x639634
+  00639634 'ﾀoB'
+0050CCB7 push     0x62d028
+  0062D028 'script2/'
+0050CCC8 call     0x416970
+  00416970 'j\uf8f3h)ｼ^'
+0050CCD4 call     0x50bf60
+  0050BF60 'j\uf8f3h{P_'
+0050CCF2 push     0x62d034
+  0062D034 'ファイルがありません'
+0050CD14 mov      ecx, 0x62d04c
+  0062D04C 'no file'
+0050CD54 mov      dword ptr [esp + 0x34], 0x639634
+  00639634 'ﾀoB'
+0050CDD8 call     0x50b220
+  0050B220 'j\uf8f3hﾑﾁ_'
+0050CE66 push     0x62d054
+  0062D054 'script/'
+0050CE7A call     0x416970
+  00416970 'j\uf8f3h)ｼ^'
+0050CE86 call     0x50bf60
+  0050BF60 'j\uf8f3h{P_'
+0050CF16 push     0x62d05c
+  0062D05C 'ファイルがありません'
+0050CF38 mov      ecx, 0x62d074
+  0062D074 'no file'
+0050CF79 mov      dword ptr [esp + 0x34], 0x639634
+  00639634 'ﾀoB'
+0050CFA7 push     0x637e04
+  00637E04 'invalid vector<T> subscript'
+0050CFE2 mov      dword ptr [esp + 0x34], 0x639634
+  00639634 'ﾀoB'
+0050D06E call     0x50b220
+  0050B220 'j\uf8f3hﾑﾁ_'
+0050D10F push     0x62d07c
+  0062D07C 'attribute'
+0050D178 push     0x62d088
+  0062D088 'attribute'
+0050D1EC je       0x50d274
+  0050D274 '3\uf8f3彊ﾜﾌh'
+0050D1F2 mov      dword ptr [eax], 0x638d1c
+  00638D1C 'ﾐｻK'
+0050D20A jmp      0x50d276
+  0050D276 '彊ﾜﾌh'
+0050D22D push     0x637e04
+  00637E04 'invalid vector<T> subscript'
+0050D267 mov      dword ptr [esp + 0x34], 0x639634
+  00639634 'ﾀoB'
+0050D276 mov      ebp, dword ptr [esi + 0x68ccdc]
+  0068CCDC '靤b'
+0050D29D mov      eax, dword ptr [esi + 0x68ccac]
+  0068CCAC '頒b'
+0050D2B6 call     0x4528e0
+  004528E0 'U駆j\uf8f3h!録'
+0050D33D mov      dword ptr [esi], 0x639634
+  00639634 'ﾀoB'
+0050D3F7 call     0x415530
+  00415530 'j\uf8f3h籤^'
+0050D4B3 call     0x50b220
+  0050B220 'j\uf8f3hﾑﾁ_'
+0050D4BF push     0x62d144
+  0062D144 ', '
+0050D4CA call     0x416970
+  00416970 'j\uf8f3h)ｼ^'
+0050D514 jb       0x50d5b0
+  0050D5B0 '広$,j'
+0050D51E jmp      0x50d5b4
+  0050D5B4 'j'
+0050D527 push     0x637e04
+  00637E04 'invalid vector<T> subscript'
+0050D5B8 push     0x62d148
+  0062D148 'の再解析が終了しました'
+0050D6D0 mov      ecx, dword ptr [ebp + 0x65bf98]
+  0065BF98 'Pﾆb'
+0050D73E jb       0x50d6d0
+  0050D6D0 '牛仭e'
+0050D750 mov      edi, dword ptr [ebp + 0x65bffc]
+  0065BFFC 'ｴﾆb'
+0050D796 call     0x4529d0
+  004529D0 'U駆j\uf8f3h瞶^'
+0050D7C6 mov      edi, dword ptr [ebp + 0x65bffc]
+  0065BFFC 'ｴﾆb'
+0050D88D mov      dword ptr [esp + 0x20], 0x62d160
+  0062D160 '('
+0050D89D call     0x4528e0
+  004528E0 'U駆j\uf8f3h!録'
+0050D938 push     0x62d164
+  0062D164 'workspace'
+0050DA51 push     0x62d170
+  0062D170 'context'
+0050DB6A push     0x62d178
+  0062D178 'sound'
+0050DC83 push     0x62d180
+  0062D180 'attribute'
+0050DD9C push     0x62d18c
+  0062D18C 'detail'
+0050DEB5 push     0x62d194
+  0062D194 'scenario'
+0050DFCE push     0x62d1a0
+  0062D1A0 'story'
+0050E0E7 push     0x62d1a8
+  0062D1A8 'event'
+0050E200 push     0x62d1b0
+  0062D1B0 'power'
+0050E2EC push     0x62d1b8
+  0062D1B8 'spot'
+0050E3D8 push     0x62d1c0
+  0062D1C0 'unit'
+0050E4C4 push     0x62d1c8
+  0062D1C8 'race'
+0050E5B0 push     0x62d1d0
+  0062D1D0 'class'
+0050E69C push     0x62d1d8
+  0062D1D8 'object'
+0050E788 push     0x62d1e0
+  0062D1E0 'field'
+0050E874 push     0x62d1e8
+  0062D1E8 'voice'
+0050E960 push     0x62d1f0
+  0062D1F0 'movetype'
+0050EA4C push     0x62d1fc
+  0062D1FC 'skillset'
+0050EB38 push     0x62d208
+  0062D208 'skill'
+0050EC24 push     0x62d210
+  0062D210 'dungeon'
+0050ECAD jb       0x50ecbc
+  0050ECBC 'ｿ爭P'
+0050ECBC mov      edi, 0x50a5e0
+  0050A5E0 'j\uf8f3h&Q_'
+0050ECE1 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050ED2B call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050ED62 mov      dword ptr [esp + 0x14], 0x50a850
+  0050A850 'j\uf8f3hﾖP_'
+0050ED79 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050EDC7 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050EDFE mov      dword ptr [esp + 0x14], 0x507110
+  00507110 'j\uf8f3hn _'
+0050EE15 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050EE30 jb       0x50ee3f
+  0050EE3F 'ｿ0wP'
+0050EE64 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050EEAE call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050EEF8 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050EF42 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050EF8C call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050EFD6 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050F020 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050F06A call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050F0B4 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050F0FE call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050F148 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050F192 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050F1C1 mov      dword ptr [esp + 0x20], 0x62d218
+  0062D218 'poli'
+0050F1CD call     0x5118e0
+  005118E0 'U駆j\uf8f3h｡型'
+0050F1E2 mov      dword ptr [esp + 0x20], 0x62d220
+  0062D220 'camp'
+0050F1EE call     0x5118e0
+  005118E0 'U駆j\uf8f3h｡型'
+0050F223 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050F26D call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050F2B7 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050F301 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050F34B call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050F395 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050F3DF call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050F429 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050F473 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050F4BD call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050F4EC mov      dword ptr [esp + 0x20], 0x62d228
+  0062D228 'item_sale'
+0050F4F8 call     0x5118e0
+  005118E0 'U駆j\uf8f3h｡型'
+0050F50D mov      dword ptr [esp + 0x20], 0x62d234
+  0062D234 'item_hold'
+0050F519 call     0x5118e0
+  005118E0 'U駆j\uf8f3h｡型'
+0050F54E call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050F598 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050F5E2 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050F62C call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050F676 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050F6C0 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050F70A call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050F725 jb       0x50f734
+  0050F734 'ｿ`\x7fP'
+0050F759 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050F7A3 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050F7ED call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050F837 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050F881 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050F8CB call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050F915 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050F95F call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050F9A9 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050F9F3 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050FA3D call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050FA87 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050FAA2 jb       0x50fab1
+  0050FAB1 'ｿﾐjP'
+0050FAB1 mov      edi, 0x506ad0
+  00506AD0 'j\uf8f3h*!_'
+0050FAD6 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050FB20 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050FB6A call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050FBB4 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050FBFE call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050FC48 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050FC92 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050FCDC call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050FD0B mov      dword ptr [esp + 0x20], 0x62d240
+  0062D240 'afterdeath'
+0050FD17 call     0x5118e0
+  005118E0 'U駆j\uf8f3h｡型'
+0050FD4C call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050FD96 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0050FDE0 call     0x511800
+  00511800 'U駆j\uf8f3h※^'
+0051003A push     0x637ee8
+  00637EE8 'invalid map/set<T> iterator'
+0051005F jmp      0x510079
+  00510079 '\x80\x7f-'
+0051006C jmp      0x510079
+  00510079 '\x80\x7f-'
+005100FC jne      0x510102
+  00510102 '\x80\x7f-'
+0051017D jne      0x5101f5
+  005101F5 '\x80y,'
+00510186 jne      0x51019e
+  0051019E '\x80y-'
+005101B5 je       0x510225
+  00510225 'ﾆA,'
+005101F9 jne      0x510210
+  00510210 '\x80y-'
+005102F4 push     0x637ed4
+  00637ED4 'list<T> too long'
+0051042A push     0x637ee8
+  00637EE8 'invalid map/set<T> iterator'
+00510700 jne      0x510745
+  00510745 ';ﾊtt墾$'
+00510704 jne      0x510745
+  00510745 ';ﾊtt墾$'
+005107BB jne      0x510750
+  00510750 '\x80y-'
+00510832 jmp      0x51083a
+  0051083A '\x80\x7f-'
+005109AA push     0x637ee8
+  00637EE8 'invalid map/set<T> iterator'
+005109CF jmp      0x5109e9
+  005109E9 '\x80\x7f-'
+005109DC jmp      0x5109e9
+  005109E9 '\x80\x7f-'
+00510A73 jne      0x510a79
+  00510A79 '\x80\x7f-'
+00510AED jne      0x510b4f
+  00510B4F '\x80y,'
+00510AF6 jne      0x510b09
+  00510B09 '\x80y-'
+00510B1C je       0x510b7a
+  00510B7A 'ﾆA,'
+00510B53 jne      0x510b65
+  00510B65 '\x80y-'
+00510C2A push     0x637ee8
+  00637EE8 'invalid map/set<T> iterator'
+00511155 jmp      0x51115a
+  0051115A '\x80}-'
+0051123A push     0x637f04
+  00637F04 'map/set<T> too long'
+0051145C push     0x637f04
+  00637F04 'map/set<T> too long'
+00511702 call     0x511a50
+  00511A50 'j\uf8f3h'
+005117A6 call     0x5122c0
+  005122C0 'j\uf8f3hﾘﾈ^'
+005117DC call     0x512100
+  00512100 'j\uf8f3hﾘﾈ^'
+005119EB je       0x511a45
+  00511A45 '^ﾃﾌﾌﾌﾌﾌﾌﾌﾌﾌj\uf8f3h'
+00511F73 call     0x418350
+  00418350 'j\uf8f3h\x80ｻ^'
+00511F9B call     0x418350
+  00418350 'j\uf8f3h\x80ｻ^'
+00511FB9 call     0x418350
+  00418350 'j\uf8f3h\x80ｻ^'
+00511FD3 call     0x418350
+  00418350 'j\uf8f3h\x80ｻ^'
+00511FEF call     0x418350
+  00418350 'j\uf8f3h\x80ｻ^'

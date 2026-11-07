@@ -1,0 +1,32 @@
+B lane / 2026-10-11 23:14 JST / T012,T013 / read-only bounded native static evidence
+SOURCE: CORE ZIP internal Vahren.exe read-only, Capstone x86; no EXE execution/alteration.
+EVIDENCE SCRIPT: existing exe/t013_support_sort_helpers.py (read-only, Capstone) plus bounded one-shot VA windows 0x54A7B0..0x54A890, 0x54B280..0x54B340, 0x54A890..0x54A950.
+CALLERS: saved B exe/T013_SUPPORT_EVAL_FOCUS.txt 0x5460AE..0x5460F2 (normal heal), 0x57F84B..0x57F893 (support_ai_a fallback). When Skill+0xA18 !=0, 0x54A1C0 invoked; only post-call count>4 invokes 0x54A7B0(begin,begin+0x60).
+WRAPPER: saved B exe/T012_T011_HELPER_FOCUS_20261009.txt 0x54A1C0..0x54A1EF. EAX=Skill+0xA18 carried unmodified into fourth argument of 0x54A660(begin,end,count,callback).
+0054A660 sub esp,0xc                   ; candidate reorder dispatcher
+0054A66F mov ecx,edi
+0054A671 sub ecx,ebx                  ; end-begin
+0054A673 mov eax,0x2aaaaaab           ; n=(end-begin)/0x18
+0054A684 cmp eax,0x20                 ; 32-element split
+0054A687 jle 0x54a73e                 ; small-array path
+0054A6A5 call 0x54a890               ; large-array partition path
+0054A703 call 0x54a660               ; recurse
+0054A74E call 0x54b280               ; small-array in-place sort-like helper
+0054B2C7 mov edi,ebx
+0054B2D1 call dword ptr [esp+0x3c]   ; two-record callback supplied via Skill+0xA18 wrapper
+0054A8EF call ebp                     ; same opaque two-record callback in large-array helper
+0054A900 call ebp
+0054A7B6 mov esi,dword ptr [esp+0x2c]; prefix shuffler start pointer
+0054A7BA add esi,0x18                 ; start at second 24-byte record
+0054A7BE mov edi,2
+0054A7D5 call 0x5b6eab               ; RNG once for each loop index=2,3,4
+0054A803 mov ebp,dword ptr [esi+0xc]
+0054A80A div edi                      ; select index by unsigned remainder
+0054A829 lea eax,[edx+edx*2]        ; random index x24
+0054A832 lea eax,[ecx+eax*8]        ; address of selected 24-byte record
+0054A838..0x54A873 six DWORD in-place record swap (24 bytes total)
+0054A876 cmp esi,dword ptr [esp+0x34]
+0054A87A jne 0x54a7d0
+0054A887 ret
+SCOPE: caller shuffles only 4-record prefix when total count>4. Exactly 3 direct calls of 0x5B6EAB for length4 (i=2,3,4); additional random draws elsewhere, callback semantics/order/ties, real game reachability NOT established.
+OLD EXE gameplay golden PASS0; new strict MATCH0. Evidence IDs assigned in T013 owner doc/HANDOFF only.

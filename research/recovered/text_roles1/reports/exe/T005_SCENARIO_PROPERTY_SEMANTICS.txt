@@ -1,0 +1,46 @@
+T005 scenario generic-property / duplicate / control-block harvesting evidence
+Target: bundled Vahren.exe in 迫真戦記 0.67 CORE (read-only static analysis)
+
+[1] Current structure -> per-structure field table
+Structure dispatcher 0x504400 selects/creates the current named structure in RB tree global 0x8797DC.
+Existing structure path:
+  00504841 mov eax,[ebp+0x28]
+  00504844 mov [0x8797E0],eax
+Likewise 0x5049C0/0x5049C3 loads node payload +0x28 into 0x8797E0.
+New structure path allocates a table (0x462C70), stores it in 0x8797E0, wraps structure name with 0x510F40, then inserts into 0x8797DC via 0x463280.
+Therefore 0x8797E0 is the current structure's property/field table pointer.
+
+[2] Generic fallback property parser
+Main/body parse core looks up a token-specific callback. When registry lookup misses, it calls 0x505210:
+  0050BA24 cmp edi,[0x87A4FC]
+  0050BA2A je  0x50BA49
+  ... registered callback path ...
+  0050BA49 ...
+  0050BA5D call 0x505210
+Thus 0x505210 is the generic fallback assignment/property parser.
+
+[3] Generic field insertion is insert-if-absent
+Inside 0x505210:
+  005055AC mov edx,[0x8797E0]
+  005055B2 mov ecx,eax
+  005055B6 call 0x436680   ; create RB node/key wrapper
+  005055C1 push esi        ; current field table
+  005055C2 call 0x463280   ; RB insert helper
+0x463280 was independently reverse-engineered as insert-if-absent: existing key returns existing node and does not replace payload.
+Therefore duplicate generic properties within one structure are first-insertion-wins.
+
+[4] scenario `map` uses the generic path
+Exact target `map` string/xref inventory contains runtime/accessor consumers but no special-parser registration.
+Special parser registry global-string map resolves registered keys including if/rif/while/battle, text, skill, skill2, color, ray, home, multi, learn, activenum, weapon/weapon2, joint, friend_ex, member, merce, add2, next2, next3, just_next, monster, item, sound, castle_guard, friend/enemy/staff/offset/delskill/delskill2/voice_type, etc.; `map` is absent.
+Hence scenario map=... falls through 0x505210 and is inserted into current field table with first-insertion-wins semantics.
+
+[5] map inside runtime-false if is still structurally harvested
+`if/rif` parser callback 0x50A5E0 constructs ScriptIF parse nodes and manipulates the global parse-stack 0x87A518..0x87A51C. It does not swap or clear globals 0x8797DC/0x8797E0.
+Subsequent tokens in the brace body continue through the same main/body dispatcher; an unregistered `map` token therefore still reaches 0x505210 and inserts into the same current structure field table during parse time. Runtime condition evaluation occurs later and cannot suppress this parse-time side effect.
+
+Strict-target conclusions:
+- scenario `map` is a structural property even when textually placed inside an if/rif body.
+- duplicate scenario `map` assignments are first-wins at parse/property-table level.
+- Reimplementation must separate structural property harvesting from runtime VM control flow for generic assignments that mutate the structure field table.
+
+Evidence files: T005_CURRENT_TABLES_XREFS.txt, T005_TABLE_HELPERS.txt, T005_PARSE_ATTACH_PROBE.txt, T005_ASSIGNMENT_BUILDER_PROBE.txt, T005_FIELD_LOOKUP_FULL.txt, T005_SCENARIO_MAP_PROBE.txt, T005_SPECIAL_REGISTRY_LIST.txt, T005_STRING_GLOBAL_MAP.txt, T005_CONTROL_PARSER_CALLBACKS.txt.

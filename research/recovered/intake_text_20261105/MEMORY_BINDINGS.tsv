@@ -1,0 +1,3 @@
+struct	offset	type	relation	function	source_path	source_sha256	start_line	end_line	limits
+SaveUnitDataTreeNode	0x28	ptr	reads	0x00460000	research/recovered/json_exp_exe1/reports/14_EXP_SAVE_TREE_BOUNDARY_EVIDENCE_20261021.json	9622a342f6b8ca7b023abc9b225b5020e952f8868fb253240bf8ac795b1052e4	26	78	Partial research layout; not all save paths/lifetimes/complete class identity
+SummonRecordCacheNode	0x28	unknown	returns_address_of	0x00577260	research/recovered/json_exp_exe1/reports/14_EXP_SAVE_TREE_BOUNDARY_EVIDENCE_20261021.json	9622a342f6b8ca7b023abc9b225b5020e952f8868fb253240bf8ac795b1052e4	50	78	Embedded record address, not pointer slot; reported468B not declaration type or dynamic proof

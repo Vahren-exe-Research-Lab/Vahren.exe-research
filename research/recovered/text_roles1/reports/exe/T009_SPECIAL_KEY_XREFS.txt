@@ -1,0 +1,8 @@
+
+### _name strings 0x626601 0x62dcb9 0x6319fd 0x632aa5 0x63484d 0x63486d 0x634ed9 0x634ef9
+
+### _powerselect2 strings
+
+### _spot2 strings
+
+### event_bg_size strings

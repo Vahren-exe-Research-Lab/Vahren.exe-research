@@ -13,4 +13,10 @@
 - [research/recovered/rea_batch13/reports/REA_T014_GLOBAL_SAV_UPSERT_BRANCH_AUDIT_20261012_0937.md 行 14](../../research/recovered/rea_batch13/reports/REA_T014_GLOBAL_SAV_UPSERT_BRANCH_AUDIT_20261012_0937.md?plain=1#L14-L14) — - 0x428C62..0x428CD9: tree lookupの結果がsentinel（未登録）の場合、0x20-byte candidateを作り、payload+0x1Cへ値を格納し、`0x436560 -> 0x436680 -> 0x4A69B0` によって**新規挿入経路**へ進む。
   制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
 
+<a id="field-28"></a>
+## payload + 0x28
+
+- [research/recovered/text_roles1/reports/exe/T005_SCENARIO_PROPERTY_SEMANTICS.txt 行 9](../../research/recovered/text_roles1/reports/exe/T005_SCENARIO_PROPERTY_SEMANTICS.txt?plain=1#L9-L9) — Likewise 0x5049C0/0x5049C3 loads node payload +0x28 into 0x8797E0.
+  制約・訂正　Dated authored/static source record only; no new native/runtime/ABI/type/class-identity/correctness/Golden/READY promotion or dictionary adoption. Unknowns, failed probes, guessed callbacks, garbled readings and comparison-version distinctions retained. Current REF/corrections prevail. Linked targets not read/executed.
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

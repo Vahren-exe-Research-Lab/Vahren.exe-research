@@ -1,0 +1,30 @@
+﻿T023 target-engine chronology fingerprint — 2026-10-06
+
+[TARGET BINARY]
+SHA-256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187
+Size 2,910,720 bytes
+PE timestamp 2016-10-18 12:08:57 UTC
+LinkerVersion 10.0 / Visual Studio 2010 PDB
+quickreload exact ASCII/UTF-16LE: absent
+offset_on exact ASCII: present
+unit_suck_limit exact ASCII/UTF-16LE: absent
+
+[EXTERNAL VERSION TIMELINE]
+2016-07-29: contemporary thread calls 6.85e the latest build.
+2016-11-23: Vahren Wiki one-line report explicitly says Ver6.85o.
+2017-03-27: contemporary report explicitly says Ver6.85p.
+2017-06-05: 6.85T posted/reported.
+2017-06-08: 6.85U posted/reported.
+2017-06-17: standard data gains `quickreload = on` in 愛の吸精.
+2017-06-29: contemporary report says 6.85V.
+2017-07-02: ver7.00 release announced.
+2017-10-12: 7.00-era build adds/uses unit_suck_limit=25 in public notes.
+
+[INFERENCE]
+The bundled target is not credibly a 2017-10-12 7.00 binary. Its compile timestamp and toolchain are much older, and its keyword fingerprint retains offset_on while lacking quickreload and unit_suck_limit.
+The best current label is: 6.85-family / pre-6.85o-era binary, compiled 2016-10-18, exact letter unknown.
+Because PE timestamps can be stale or preserved, exact letter/version remains VERIFY until a period Vahren.exe binary matches size/hash/sections/PDB/behavior.
+Do not identify the target as 7.00 solely from the 迫真戦記 update-history wording; strict compatibility authority is the bundled binary itself.
+
+[HIGH-VALUE NEXT LEAD]
+The current Vahren scenario list says `戦いの序幕・Restructure` had a 6.85o-bundled executable. The surviving uploader entry `vt_restructure.zip` dated 2017-03-21 is only 23.2 KB, so it appears to be a small scenario/update package rather than the promised full engine bundle. Search historical/older package copies rather than assuming this file contains Vahren.exe.

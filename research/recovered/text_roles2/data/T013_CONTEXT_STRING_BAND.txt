@@ -1,0 +1,13 @@
+0x634620 forcefire
+0x63462c on
+0x634630 off
+0x634634 unit_keep_form
+0x634644 on
+0x634648 off
+0x63464c unit_image_right
+0x634660 on
+0x634664 off
+0x634668 unit_element_heal
+0x63467c unit_sword_slide
+0x634690 unit_charge_slide
+0x6346a4 unit_missile_slide

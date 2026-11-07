@@ -1,0 +1,31 @@
+# T013 / B-20261012-0108-01 / Skill callback registry (static only)
+Source: saved isolated target rea_lab/targets/hakushin067_Vahren.exe, read-only; no target execution or modification.
+Native VA: 0x59FA40..0x59FAE3; tables: 0x65BC60 (strings), 0x65BCB0 (+A18), 0x65BD00 (+A1C).
+Function entry clears Skill+0xA18/+0xA1C to null at 0x59FA4A/0x59FA50.
+Indices EB P=0..18: table key compared against Skill string+0x110 (length+0x120, SSO cap+0x124).
+VA 0x59FA60..0x59FAB4: lookup via 0x402C40 and exact-length checks; branch to next on mismatch.
+On match: 0x59FACE stores tbl_A18[index] and 0x59FADC stores tbl_A1C[index]; returns.
+On no match all 19 entries: +A18 and +A1C remain null.
+Index | raw key | +0xA18 comparator pointer | +0xA1C filter pointer
+00 | hp      | 0x598FF0 | 0x599330
+01 | mp      | 0x599060 | 0x599360
+02 | attack  | 0x5990D0 | 0x599380
+03 | defense | 0x599110 | 0x5993A0
+04 | magic   | 0x599150 | 0x5993C0
+05 | magdef  | 0x599190 | 0x5993E0
+06 | speed   | 0x5991D0 | 0x599400
+07 | dext    | 0x599210 | 0x599420
+08 | move    | 0x599250 | 0x599440
+09 | hprec   | 0x599290 | 0x599460
+10 | mprec   | 0x5992D0 | 0x599480
+11 | poi     | 0x599310 | 0x5994A0
+12 | para    | 0x599310 | 0x5994C0
+13 | sil     | 0x599310 | 0x5994E0
+14 | conf    | 0x599310 | 0x599500
+15 | ill     | 0x599310 | 0x599520
+16 | stone   | 0x599310 | 0x599540
+17 | fear    | 0x599310 | 0x599560
+18 | all     | 0x599310 | 0x599580
+Boundary: 19 entries, not 20 (index19 table memory is not a valid entry).
+Scope: table values and pointer wiring only. Predicate implementations, match-case behavior, script property name, legal runtime reachability and tie rules = VERIFY.
+Safety: attempted separate detailed callback-body disassembly 0x598FF0..0x599590 was refused; NOT performed. No alternate tooling or range to retry.

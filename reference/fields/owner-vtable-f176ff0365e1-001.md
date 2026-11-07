@@ -310,31 +310,28 @@
 - [research/recovered/b_reports/T024_FOURWAY_LOOKUP_TWOMODE_ABI_NATIVE_20261026_00H.md 行 15](../../research/recovered/b_reports/T024_FOURWAY_LOOKUP_TWOMODE_ABI_NATIVE_20261026_00H.md?plain=1#L15-L15) — 0x4C714D/0x4C71DE は下位CALL後に戻値でなく stack +0x1B を1にする。0x4C722Fにて同byteを判定、非0なら0x4C7241/46/4B vtable+0x24 に文字列 'change' と0を渡す。**通知条件はhelperを呼んだこと**であり、実際に登録変更が発生した証明
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
+- [research/recovered/other_records1/reports/data/T017_AUDIO_ASSET_INVENTORY.txt 行 66](../../research/recovered/other_records1/reports/data/T017_AUDIO_ASSET_INVENTORY.txt?plain=1#L66-L66) — [CONFIRMED-SAVED-NATIVE / NEW BOUNDARY] A所有read-only exe/T006_AUDIO_COMMAND_GROUP.txt:0x4A2CD4..0x4A2CFFをDが静的再読。playSEは0x415750→0x452860で第1引数を文字列として解決し（0x4A2CE4
+  制約・訂正　Audio archive counts and dated source/native-boundary analysis with short selected proof clauses; original full audio/config/script bodies absent. Historical refused actions/status remain inert. Saved authored analysis/metadata/event receipt only. Historical PASS/READY/native observations remain source claims, not new execution, ABI/type, Golden/strict/legal-gameplay proof. Linked source paths/scripts/capture files are inert identifiers and were not acquired/executed.
+
+- [research/recovered/other_records1/reports/data/T017_AUDIO_ASSET_INVENTORY.txt 行 69](../../research/recovered/other_records1/reports/data/T017_AUDIO_ASSET_INVENTORY.txt?plain=1#L69-L69) — [VERIFY] vtable+0x24の実callee、managerの具体型、sound.dat time-key参照位置、WAV/voice相対pathの検索優先順・asset alias・fallback、失敗時の可視/可聴結果は未同定。A/T006のVM引数/scene契約はread-only参照のみ、他ow
+  制約・訂正　Audio archive counts and dated source/native-boundary analysis with short selected proof clauses; original full audio/config/script bodies absent. Historical refused actions/status remain inert. Saved authored analysis/metadata/event receipt only. Historical PASS/READY/native observations remain source claims, not new execution, ABI/type, Golden/strict/legal-gameplay proof. Linked source paths/scripts/capture files are inert identifiers and were not acquired/executed.
+
+- [research/recovered/other_records1/reports/data/T017_AUDIO_ASSET_INVENTORY.txt 行 75](../../research/recovered/other_records1/reports/data/T017_AUDIO_ASSET_INVENTORY.txt?plain=1#L75-L75) — [CONFIRMED-SAVED-NATIVE / INCREMENT] A所有read-only exe/T006_AUDIO_COMMAND_GROUP.txt VA0x4A2CEF..0x4A2CFF：manager=[esi+4]、vtable=[manager]、0x4A2CF4 push edi→0x4A2
+  制約・訂正　Audio archive counts and dated source/native-boundary analysis with short selected proof clauses; original full audio/config/script bodies absent. Historical refused actions/status remain inert. Saved authored analysis/metadata/event receipt only. Historical PASS/READY/native observations remain source claims, not new execution, ABI/type, Golden/strict/legal-gameplay proof. Linked source paths/scripts/capture files are inert identifiers and were not acquired/executed.
+
+- [research/recovered/other_records1/reports/data/T017_AUDIO_ASSET_INVENTORY.txt 行 83](../../research/recovered/other_records1/reports/data/T017_AUDIO_ASSET_INVENTORY.txt?plain=1#L83-L83) — [OWNER/T017][CONFIRMED-SAVED-NATIVE / NEW CROSS-FUNCTION] A保存exe/T006_DISPATCH_PROBE.txt VA0x4A1302 `xor edi,edi` →0x4A1310 opcode jump-tableへ到達。A保存exe/T006_AUD
+  制約・訂正　Audio archive counts and dated source/native-boundary analysis with short selected proof clauses; original full audio/config/script bodies absent. Historical refused actions/status remain inert. Saved authored analysis/metadata/event receipt only. Historical PASS/READY/native observations remain source claims, not new execution, ABI/type, Golden/strict/legal-gameplay proof. Linked source paths/scripts/capture files are inert identifiers and were not acquired/executed.
+
+- [research/recovered/other_records1/reports/data/T017_AUDIO_ASSET_INVENTORY.txt 行 85](../../research/recovered/other_records1/reports/data/T017_AUDIO_ASSET_INVENTORY.txt?plain=1#L85-L85) — [IMPACT] script playSE traceで通常dispatcher pathの第2引数をunknown扱いせずraw0と保持可能。一方でvtable+0x24の実callee、WAV/voice別名/探索、sound.dat duration、7名13参照の実再生失敗は引き続きVERIFYで、BGM r
+  制約・訂正　Audio archive counts and dated source/native-boundary analysis with short selected proof clauses; original full audio/config/script bodies absent. Historical refused actions/status remain inert. Saved authored analysis/metadata/event receipt only. Historical PASS/READY/native observations remain source claims, not new execution, ABI/type, Golden/strict/legal-gameplay proof. Linked source paths/scripts/capture files are inert identifiers and were not acquired/executed.
+
+- [research/recovered/other_records1/reports/data/T017_AUDIO_ASSET_INVENTORY.txt 行 94](../../research/recovered/other_records1/reports/data/T017_AUDIO_ASSET_INVENTORY.txt?plain=1#L94-L94) — [IMPACT / REIMPLEMENT] soundの原文宣言順と符号付きinteger値を保持し、負値を自動で0/100等にclampしない、重複キーを黙って消したうえで原文痕跡を失わない。Native sound resolver/SE manager vtable+0x24がsound.datの-100をどの
+  制約・訂正　Audio archive counts and dated source/native-boundary analysis with short selected proof clauses; original full audio/config/script bodies absent. Historical refused actions/status remain inert. Saved authored analysis/metadata/event receipt only. Historical PASS/READY/native observations remain source claims, not new execution, ABI/type, Golden/strict/legal-gameplay proof. Linked source paths/scripts/capture files are inert identifiers and were not acquired/executed.
+
 - [research/recovered/remaining_md1/reports/data/T024_HAKUSHIN_BATTLE_AI.md 行 373](../../research/recovered/remaining_md1/reports/data/T024_HAKUSHIN_BATTLE_AI.md?plain=1#L373-L373) — [GATE] 0x5284A0では+8C/+1F8/+1867C/+1D0/+1867E/+1FAを確認して+358に対する0x568710/0x5695B0。0x5282C0では+1C・子+1FAと既登録同一ポインタ探索後、0x5299E0/0x5695B0/0x529B60。helper呼出時点で[ESP+1B]=
   制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
 
 - [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 749](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L749-L749) — [CONFIRMED-SAVED-NATIVE / CALLBACK GATE] 同VA0x44140B..0x44144FでEDI vtable+0x10を引数1で実行。さらに[EDI+0x184]>1の時だけ、stage[+0x298]==1ならliteral 0x635DC8、そうでなければ0x635DD4を選択
   制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
-
-- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 761](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L761-L761) — [CONFIRMED-SAVED-NATIVE / NOTIFICATION LITERALS] commit後半VA0x44140B..0x441447はvtable+0x10 call後に+0x184>1を検査し、+0x298==1なら0x635DC8、他なら0x635DD4を選択。`exe/T006_SELECT
-  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
-
-<a id="field-28"></a>
-## vtable + 0x28
-
-- [research/recovered/b_batch6/data/T011_UNIT_EFFECT_RING_OWNER_4DFB00_20261013.md 行 6](../../research/recovered/b_batch6/data/T011_UNIT_EFFECT_RING_OWNER_4DFB00_20261013.md?plain=1#L6-L6) — [R INITIAL FIELDS] 4DFB0C/0F R+40/+44=0、4DFB17/1A R+48/+4C=0x20(32)、+50/+54/+58=0、+5C=0xFF、+60=0xFFFFFF、byte+64=0、0x4DFB3E `call [R.vtable+0x28]`（vtableは入場時既存、当
-  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
-
-- [research/recovered/b_batch7/data/T012_HEAL_EFFECT_RECORD_4DFBB0_CONTRACT_20261013.md 行 3](../../research/recovered/b_batch7/data/T012_HEAL_EFFECT_RECORD_4DFBB0_CONTRACT_20261013.md?plain=1#L3-L3) — [SOURCE/PROOF] B exe/T012_HEAL_EFFECT_RECORD_4DFBB0_NATIVE_20261013.txtをLocal readback。isolate read-only target SHA256=e8dac301050c8e630d7e0ce93aeefd95e641207d9
-  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
-
-- [research/recovered/b_batch7/data/T012_HEAL_EFFECT_RECORD_4DFBB0_CONTRACT_20261013.md 行 5](../../research/recovered/b_batch7/data/T012_HEAL_EFFECT_RECORD_4DFBB0_CONTRACT_20261013.md?plain=1#L5-L5) — [RELEASE/RESET] 0x4DFBBA byte[EDI+0x78] !=0ならEDI+0x6CをESIへ、0x4DFBC4 byte[EDI+0x78]=0→0x4DFBC7 call0x41E160。旧レコードの登録解除・所有者解放までの正確な意味はcallee UNKNOWN。0x4DFBD0..0x4
-  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
-
-- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 244](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L244-L244) — [CONFIRMED-SAVED-NATIVE] 通常sav writerの0x4605EAでstatus/mode byteのbit0x6をtestし、zeroならstream-like object vtable+0x28(0x46060A)をcallして2出力を取得、nonzeroならglobal 0x6098B
-  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
-
-- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 249](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L249-L249) — [NEXT] vtable+0x28具体実体、T014 numeric map battle・RTS scene scope、T006 set/add op5/6 case payload、T005 ExplicitNull consumer。Eが既存ID重複照合後にMASTER統合。READY
-  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)
