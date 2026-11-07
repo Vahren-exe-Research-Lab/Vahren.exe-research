@@ -1,0 +1,41 @@
+{
+  "research_id": "E-AUDIT-20261029-15H-T020-V9-POINTER-PATH-BINDING-01",
+  "owner": "E/T020",
+  "snapshot_jst": "2026-10-29 15H JST",
+  "mode": "PC_LOCAL_STATIC_SYNTHETIC_VERIFY_NOT_READY",
+  "source_code": "tests/t020_e_v9_pointer_literal_binding_20261029_15H.py",
+  "code_sha256": "7A9FC79C2D09CB268429B7FA156B376FFAC9024BF9197C410EC41CEE3BE9F26C",
+  "active_pointer": "rea_lab/headless_analysis/CURRENT_ACTIVE_RESEARCH_STATE_LATEST.json",
+  "prior_gate": "tests/t020_e_v9_source_epoch_gate_20261029_14H.py",
+  "old_gate_wrong_db_alias_accepted": true,
+  "old_gate_wrong_cli_alias_accepted": true,
+  "literal_bound_rejects_both": true,
+  "tests_new": {
+    "passed": 13,
+    "failed": 0
+  },
+  "tests_prior": {
+    "passed": 10,
+    "failed": 0
+  },
+  "formal_ready_added": 0,
+  "checkpoint_old": 196,
+  "ready_total_old": 596,
+  "tasks_old": {
+    "DONE": 9,
+    "IN_PROGRESS": 21,
+    "VERIFY": 4
+  },
+  "golden": {
+    "dynamic_observed": 0,
+    "actual_pass": 0,
+    "strict_match": 0
+  },
+  "source_exe_sha256_claim": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "exe_rehashed_this_run": false,
+  "native_executed": false,
+  "state": "SOURCE_PIN_ONLY_NOT_NATIVE",
+  "refusal_new": 0,
+  "old_refusals": "BLOCKED",
+  "offline_sync_complete": false
+}

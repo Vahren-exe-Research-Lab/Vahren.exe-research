@@ -1,0 +1,96 @@
+{
+  "research_id": "E-OFFLINE-20261028-2149-T018-T020-SEMANTIC-CAPTURE-BINDING-01",
+  "snapshot_jst": "2026-10-28 21:49",
+  "old_analysis_snapshot": "2026-10-21",
+  "status": "OFFLINE-UNSYNCED / STATIC-OLD-INDEX / SYNTHETIC EXECUTED / VERIFY / NOT READY",
+  "destination": "/迫真戦記/E_OFFLINE_UNSYNCED",
+  "artifacts": [
+    {
+      "filename": "T020_GOLDEN_CAPTURE_SEMANTIC_BINDING_AUDIT_20261028_2149.md",
+      "library_file_id": "file_00000000718081f7ab273c045f4f4461",
+      "sha256": "D46C9DEF81CA661559717EE274D3782B97D16403D1F8B02F00C22B1225D5A56B",
+      "readback_sha256": "D46C9DEF81CA661559717EE274D3782B97D16403D1F8B02F00C22B1225D5A56B",
+      "byte_identical": true,
+      "byte_length": 8480
+    },
+    {
+      "filename": "T020_GOLDEN_CAPTURE_SEMANTIC_BIND_CASES_20261028_2149.json",
+      "library_file_id": "file_00000000c934820e9d18293cf8131c0b",
+      "sha256": "7D574FF25175C4BAB3BF1C2CCDE6744482C05142717DAA8CC82E06F55F04CCAA",
+      "readback_sha256": "7D574FF25175C4BAB3BF1C2CCDE6744482C05142717DAA8CC82E06F55F04CCAA",
+      "byte_identical": true,
+      "byte_length": 20943
+    },
+    {
+      "filename": "t020_golden_capture_semantic_binding_gate_20261028_2149.py",
+      "library_file_id": "file_000000006ac0820db89d811488399dea",
+      "sha256": "65751BBA567B612ABE0D3794E2109DDCE6C1DD0F10B8E18EC6F12B16B5BD6847",
+      "readback_sha256": "65751BBA567B612ABE0D3794E2109DDCE6C1DD0F10B8E18EC6F12B16B5BD6847",
+      "byte_identical": true,
+      "byte_length": 6939
+    }
+  ],
+  "source_zip_sha256": "911E5E37A3F9BD5B36F929AF94B0D1E2CD1CD5CF34E3E2F16C8FC800ABF5F7C2",
+  "source_sqlite_sha256": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF",
+  "exe_sha256_manifest_only": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "run_results": {
+    "new_cases": 36,
+    "former_accepted_now_rejected": 31,
+    "new_test_total": 45,
+    "previous_tests": 204,
+    "total": 249,
+    "failures": 0,
+    "library_readback_retest": 45
+  },
+  "new_tests_initial_error": {
+    "classification": "OTHER / RECOVERED",
+    "reason": "fixture paths with list positions were not converted from strings to integer indices",
+    "initial_cases_error": 12,
+    "action": "changed new E-only fixture path applicator; reran all tests; no prior files modified",
+    "final": "45/45 PASS"
+  },
+  "master": {
+    "read": false,
+    "last_known_as_of": "2026-10-28 12H",
+    "checkpoint": 196,
+    "ready": 596,
+    "A": 115,
+    "B": 229,
+    "C": 136,
+    "D": 116,
+    "task_total": 34,
+    "done": 9,
+    "in_progress": 21,
+    "verify": 4,
+    "duplicate_id_last_known": 0,
+    "new_ready_integration": 0
+  },
+  "golden": {
+    "dynamic_observed": 0,
+    "actual_golden_pass": 0,
+    "strict_match": 0
+  },
+  "T019_new_confirmed_contradictions": 0,
+  "connection": {
+    "id": "E-RC-20261028-2149-LOCAL-SESSION-TERMINATED-01",
+    "attempt": "Desktop Commander Local Compact list_directory _REDEV_RESEARCH",
+    "result": "Session terminated",
+    "classification": "CONNECTION",
+    "saved": "new E-only offline artifacts in Library",
+    "not_saved": "Windows MASTER / PC E T018 runner sync / current READY snapshot",
+    "next_allowed": "when connection naturally recovers, check permitted latest E-owned files and compare duplicate/owner/READY/competition, excluding refused operations"
+  },
+  "preserved_refusals": [
+    "E-RC-20261028-1353-READONLY-PS-SAFETY-01",
+    "E-RC-20261028-13H-E13-REPORT-APPEND-SAFETY-02",
+    "T018 table/session-join",
+    "T019 refused XREF",
+    "C T026/T032",
+    "D T030 TSV",
+    "0x5710C0"
+  ],
+  "old_offline_unsynced_20261025": true,
+  "original_game_executed": false,
+  "git_or_schedule_changes": false,
+  "library_readback_verified": true
+}

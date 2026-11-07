@@ -1,0 +1,42 @@
+{
+  "research_id": "E-OFFLINE-20261028-1745-T020-DIALOG-REGISTRY-FALLBACK-GATE-01",
+  "readback_class": "LIBRARY RAW_FILE BYTE_EQUAL",
+  "files": [
+    {
+      "name": "T020_DIALOG_REGISTRY_FALLBACK_BRANCH_AUDIT_20261028_1745.md",
+      "library_file_id": "file_00000000ec0481f5b2838871ed1ab51a",
+      "library_path": "/迫真戦記/E_OFFLINE_UNSYNCED/T020_DIALOG_REGISTRY_FALLBACK_BRANCH_AUDIT_20261028_1745.md",
+      "bytes": 10242,
+      "sha256": "34051DA502F9B430B02A74874EBC9992441850513944E5903B9EBCD7AAA987CB",
+      "readback_match": true
+    },
+    {
+      "name": "T020_DIALOG_REGISTRY_BRANCH_CASES_20261028_1745.json",
+      "library_file_id": "file_00000000f1f881f5989ece5ce5342888",
+      "library_path": "/迫真戦記/E_OFFLINE_UNSYNCED/T020_DIALOG_REGISTRY_BRANCH_CASES_20261028_1745.json",
+      "bytes": 4816,
+      "sha256": "B67358CA20A71D9630A11C680D5DF9F4EAF0F999F3EDAA66F46171895DF894A0",
+      "readback_match": true
+    },
+    {
+      "name": "t020_dialog_registry_branch_gate_20261028_1745.py",
+      "library_file_id": "file_00000000a18881f5b84b13753df90f3f",
+      "library_path": "/迫真戦記/E_OFFLINE_UNSYNCED/t020_dialog_registry_branch_gate_20261028_1745.py",
+      "bytes": 5449,
+      "sha256": "4C194DA855F365191789307F3A8BB9BBCF17F957C7C39B0D23D34BDB3E05D1B8",
+      "readback_match": true
+    }
+  ],
+  "validation": {
+    "new_46_tests": "PASS 46/46",
+    "prior_28_tests": "PASS 28/28",
+    "new_readback_rerun": "PASS 46/46",
+    "native_gameplay": "NOT RUN",
+    "golden_actual_pass": 0,
+    "strict_match": 0
+  },
+  "pc_sync": "NOT DONE",
+  "master_integration": "NOT DONE",
+  "connection_error_id": "E-RC-20261028-1745-LOCAL-SESSION-TERMINATED-01",
+  "safety_refusals_bypassed": false
+}

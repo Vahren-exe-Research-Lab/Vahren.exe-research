@@ -1,0 +1,207 @@
+{
+  "id": "B-20261013-0023-01",
+  "kind": "SAVED_NATIVE_CROSS_CALLER_STATIC",
+  "checks": 43,
+  "failures": [],
+  "source": {
+    "caller": {
+      "sha256": "ce1ff9d65200bd8a2f0a6efdbc213e77319224228e979490091379bdf5fca69b",
+      "lines": 989
+    },
+    "refresh": {
+      "sha256": "3b55961d6a0653bbb61e90678b2f81faddf67fa6ebde7c74e1795045a7fc5e94",
+      "lines": 350
+    },
+    "body": {
+      "sha256": "b76e4a4a6e47e85985859ed6146a28bcf77f63e8f4fb05e1a3209bb27bd76705",
+      "lines": 318
+    },
+    "virtual": {
+      "sha256": "09fb44d60251fa60b3040c6948afb5370f609e0b5ace4018cdb07149ca3a19a7",
+      "lines": 389
+    }
+  },
+  "old_gameplay_pass": 0,
+  "strict_matches": 0,
+  "effect_complete": false,
+  "limits": [
+    "57B870 full branch and poison/577100 may not return normally",
+    "real HP delta, original x87 and legal reach unobserved",
+    "base/static v6C tail 4E0490 and 57DC60 unresolved",
+    "synthetic branch checks are not original gameplay"
+  ],
+  "results": [
+    {
+      "name": "caller_0057afc2",
+      "ok": true
+    },
+    {
+      "name": "caller_0057afc9",
+      "ok": true
+    },
+    {
+      "name": "caller_0057afce",
+      "ok": true
+    },
+    {
+      "name": "caller_0057afd0",
+      "ok": true
+    },
+    {
+      "name": "caller_0057afd6",
+      "ok": true
+    },
+    {
+      "name": "caller_0057afdc",
+      "ok": true
+    },
+    {
+      "name": "caller_0057afe2",
+      "ok": true
+    },
+    {
+      "name": "caller_0057afe9",
+      "ok": true
+    },
+    {
+      "name": "caller_0057aff1",
+      "ok": true
+    },
+    {
+      "name": "caller_0057aff6",
+      "ok": true
+    },
+    {
+      "name": "caller_0057aff8",
+      "ok": true
+    },
+    {
+      "name": "refresh_0057b87f",
+      "ok": true
+    },
+    {
+      "name": "refresh_0057bad8",
+      "ok": true
+    },
+    {
+      "name": "refresh_0057bb00",
+      "ok": true
+    },
+    {
+      "name": "refresh_0057bb19",
+      "ok": true
+    },
+    {
+      "name": "refresh_0057bb21",
+      "ok": true
+    },
+    {
+      "name": "body_0057dbd5",
+      "ok": true
+    },
+    {
+      "name": "body_0057dbdb",
+      "ok": true
+    },
+    {
+      "name": "body_0057dbf7",
+      "ok": true
+    },
+    {
+      "name": "body_0057dbf9",
+      "ok": true
+    },
+    {
+      "name": "body_0057dc29",
+      "ok": true
+    },
+    {
+      "name": "body_0057dc2f",
+      "ok": true
+    },
+    {
+      "name": "body_0057dc51",
+      "ok": true
+    },
+    {
+      "name": "body_0057dc53",
+      "ok": true
+    },
+    {
+      "name": "virtual_00544dc5",
+      "ok": true
+    },
+    {
+      "name": "virtual_00544de8",
+      "ok": true
+    },
+    {
+      "name": "virtual_00544e07",
+      "ok": true
+    },
+    {
+      "name": "virtual_00578315",
+      "ok": true
+    },
+    {
+      "name": "virtual_00578333",
+      "ok": true
+    },
+    {
+      "name": "virtual_0057835d",
+      "ok": true
+    },
+    {
+      "name": "body_ranges_present",
+      "ok": true
+    },
+    {
+      "name": "body_all_range_hashes",
+      "ok": true
+    },
+    {
+      "name": "virtual_ranges_present",
+      "ok": true
+    },
+    {
+      "name": "virtual_all_range_hashes",
+      "ok": true
+    },
+    {
+      "name": "prior_action_sha",
+      "ok": true
+    },
+    {
+      "name": "prior_refresh_sha",
+      "ok": true
+    },
+    {
+      "name": "outer_branch_model_0",
+      "ok": true
+    },
+    {
+      "name": "outer_branch_model_1",
+      "ok": true
+    },
+    {
+      "name": "outer_branch_model_2",
+      "ok": true
+    },
+    {
+      "name": "outer_branch_model_3",
+      "ok": true
+    },
+    {
+      "name": "outer_branch_model_4",
+      "ok": true
+    },
+    {
+      "name": "outer_branch_model_5",
+      "ok": true
+    },
+    {
+      "name": "synthetic_refresh_can_flip_ratio_gate",
+      "ok": true
+    }
+  ]
+}

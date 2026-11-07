@@ -1,0 +1,46 @@
+{
+  "research_id": "E-AUDIT-20261030-01H-T020-T028-PREFLAG-ERASE-PROVENANCE-01",
+  "classification": "STATIC_SOURCE_PINNED_SYNTHETIC_EXECUTED_VERIFY_NOT_READY",
+  "original_gameplay": "NOT_RUN",
+  "actual_golden_pass": 0,
+  "strict_match": 0,
+  "ready_new_integrated": 0,
+  "files": [
+    {
+      "file": "T020_E_T028_PREFLAG_ERASE_CASES_20261030_01H.json",
+      "bytes": 5186,
+      "sha256": "AA0F0C40D189C62A194EA4CC7DF4C44B37D180D053BE73EA5469D0C1D64D32A5",
+      "readback": "PASS",
+      "json_parse": "PASS",
+      "cases": 22
+    },
+    {
+      "file": "t020_e_t028_preflag_erase_gate_20261030_01H.py",
+      "bytes": 2528,
+      "sha256": "2E5AC59FBBB8ECFB7EE5E8F84D63A348364FD1347D1751B26B6EAF101455FBA1",
+      "readback": "PASS"
+    },
+    {
+      "file": "T020_E_T028_PREFLAG_ERASE_ACCEPTANCE_20261030_01H.md",
+      "bytes": 3493,
+      "sha256": "8B5E744F978F609967253B3D9D366B300E2B2496DBCBB821D4B7DFAF6B1EBF3F",
+      "readback": "PASS"
+    }
+  ],
+  "tests": {
+    "new_synthetic": "22/22 PASS",
+    "previous_mode": "18/18 PASS",
+    "previous_reservation": "21/21 PASS",
+    "previous_capacity": "18/18 PASS",
+    "total_synthetic": "79/79 PASS",
+    "source_pins_current": "2/2 PASS"
+  },
+  "master_checkpoint_older_verified": 196,
+  "master_ready_older_verified": 596,
+  "task_status_older_verified": {
+    "DONE": 9,
+    "IN_PROGRESS": 21,
+    "VERIFY": 4
+  },
+  "note": "Test pass refers to synthetic control-flow contracts only; no original game execution or Golden comparison."
+}

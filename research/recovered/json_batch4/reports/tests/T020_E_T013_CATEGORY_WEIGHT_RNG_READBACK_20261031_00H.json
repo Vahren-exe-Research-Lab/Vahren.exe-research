@@ -1,0 +1,76 @@
+{
+  "research_id": "E-AUDIT-20261031-00H-T020-T013-WEIGHT-RNG-ABSTRACT-01",
+  "owner": "E",
+  "tasks": [
+    "T020",
+    "T018",
+    "T019"
+  ],
+  "snapshot_jst": "2026-10-31 00H",
+  "classification": "STATIC_NATIVE_BYTE_PIN_AND_CONDITIONAL_SYNTHETIC_EXECUTED_VERIFY_NOT_READY",
+  "original_source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "b00_source_sha256": "419771CB57F66152D8BD7AF92E69F0A40CDDFEF59F473F6290032D9499102CAA",
+  "b00_owner_status": "VERIFY_NOT_READY",
+  "native_windows_verified": 4,
+  "native_e8_calls_verified": 12,
+  "new_synthetic_initial_pass": 101,
+  "new_synthetic_independent_rerun_pass": 101,
+  "previous_e23_independent_rerun_pass": 98,
+  "this_run_rerun_or_initial_pass": 199,
+  "report_only_cumulative_synthetic": 1462,
+  "game_dynamic_observed": 0,
+  "actual_golden_pass": 0,
+  "strict_match": 0,
+  "formal_new_ready_integrations": 0,
+  "master_last_formal_checkpoint": 196,
+  "master_ready_total": 596,
+  "master_ready_by_lane": {
+    "A": 115,
+    "B": 229,
+    "C": 136,
+    "D": 116
+  },
+  "task_states_last_verified": {
+    "DONE": 9,
+    "IN_PROGRESS": 21,
+    "VERIFY": 4
+  },
+  "task_state_recount_this_run": false,
+  "master_sha256": "E7329C9C6368E67BE191A4ABF45156319E32826FF039FB2B9E226DEDDAC6B6B3",
+  "files": [
+    {
+      "relative_path": "tests/t020_e_t013_category_weight_rng_gate_20261031_00H.py",
+      "bytes": 6193,
+      "sha256": "B8ABAC40ED6791B4C4431179CA3D079C12DE742129854B06242F90BDDD9ABAC4"
+    },
+    {
+      "relative_path": "tests/T020_E_T013_CATEGORY_WEIGHT_CASES_20261031_00H.json",
+      "bytes": 13257,
+      "sha256": "E88BDBFFE53A4C70389A5DCF3E1C43318C47CA19B18BB792FE2CBBDF767519FD"
+    },
+    {
+      "relative_path": "tests/T020_E_T013_CATEGORY_WEIGHT_RNG_ACCEPTANCE_20261031_00H.md",
+      "bytes": 5165,
+      "sha256": "51A3EAF36879E2F2B7B9A920DDF823C9EB340BC98C29769DF3956BA870D8F5DB"
+    }
+  ],
+  "recovered_operational_errors": [
+    {
+      "recovery_id": "E-RC-20261031-00H-LOCAL-MULTIREAD-TIMEOUT-01",
+      "kind": "CONNECTION",
+      "action": "Local parallel multi-read A/C/D/T018/T019/dev",
+      "result": "Transient timeout; serial Local reads recovered",
+      "unsaved_content": "No file changes or data loss"
+    },
+    {
+      "recovery_id": "E-RC-20261031-00H-WINDOW-LENGTH-OTHER-01",
+      "kind": "OTHER",
+      "action": "E00 fixture first native SHA gate",
+      "result": "Initial half-open window 157 bytes failed; report defines inclusive 158; corrected E-only verifier and passed 4 windows and 101 fixtures",
+      "unsaved_content": "No original or B source changes"
+    }
+  ],
+  "historic_safety_refusals": "BLOCKED unchanged; no attempts to bypass or re-submit",
+  "offline_unsynced": "OPEN",
+  "next": "Read-only original-proof of 0x5D1BB6 conversion and 0x63B050 score; same-session legal G0-G1-G2 source receipts; source and owner READY dedup before formal integration"
+}

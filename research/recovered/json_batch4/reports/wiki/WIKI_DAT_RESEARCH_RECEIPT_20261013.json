@@ -1,0 +1,31 @@
+{
+  "status": "STATIC VERIFICATION ONLY; ORIGINAL GAMEPLAY GOLDEN 0; STRICT MATCH 0",
+  "results": {
+    "wiki_976": true,
+    "zip_three": true,
+    "dat_590": true,
+    "skill_16554": true,
+    "parent_13049": true,
+    "missing_parent_37": true,
+    "just_next_14": true,
+    "eight_fixtures_not_run": true,
+    "one_original_hash": true,
+    "orphan_triage_37": true,
+    "negative_mp_32": true,
+    "numeric_skill_16554": true,
+    "crosswalk_9sections": true,
+    "golden_explicit_not_run": true
+  },
+  "passed": 14,
+  "total": 14,
+  "original_dat_sha256": "a1dac7209fca6fbf7d05d956054047b4c36e5149eb100434bf796ccb94970423",
+  "source_files": [
+    "WIKI_BATTLE_SOURCE_INDEX_20261013.json",
+    "WIKI_DAT_STRUCTURE_AUDIT_20261013.json",
+    "WIKI_DAT_BATTLE_P0_FIXTURES_20261013.json",
+    "WIKI_DAT_REFERENCE_TRIAGE_20261013.json",
+    "WIKI_DAT_NUMERIC_SENTINELS_20261013.json"
+  ],
+  "crosswalk": "WIKI_DAT_BATTLE_CROSSWALK_20261013.md",
+  "note": "Does not test original EXE or new Work product"
+}

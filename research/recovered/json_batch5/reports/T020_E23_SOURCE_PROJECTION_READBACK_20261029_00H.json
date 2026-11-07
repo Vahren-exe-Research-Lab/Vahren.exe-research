@@ -1,0 +1,37 @@
+{
+  "research_id": "E-AUDIT-20261029-00H-T018-T020-E23-SOURCE-PROJECTION-BINDING-01",
+  "owner": "E",
+  "status": "STATIC_SYNTHETIC_EXECUTED_VERIFY_NOT_READY",
+  "source_provenance": "E21 chat upload byte hash computed in ChatGPT container; Windows E21 bytes not present",
+  "e21_raw_sha256": "7D574FF25175C4BAB3BF1C2CCDE6744482C05142717DAA8CC82E06F55F04CCAA",
+  "e21_projection_canonical_sha256": "47DBFC9455DD9FC478B02F498A17848458EA610BD246494C0E21A38B303A58B1",
+  "pc_e22_fixture_sha256": "F2E509FE99AA91A9466FA40533B392B61AEBB0B34DBE582699AB2586D34DFCE7",
+  "pc_e23_old_gate_sha256": "EF4A7767688E633A189632CEEDF1224D41C37865A75F17B01A9FF40E87AFE83B",
+  "pc_e00_new_gate_sha256": "6557F0F57BD782EBA4C342D1ADBFF88F4EFFAA22738DB325CDBE171B2D246709",
+  "pc_e00_report_sha256": "13C682425FC7115899C7B0D1E5F1B480B3248F1CDBFE34FFAE147F92915BB9C0",
+  "new_tests": {
+    "passed": 20,
+    "failed": 0
+  },
+  "this_run_total": {
+    "passed": 64,
+    "failed": 0
+  },
+  "readback": {
+    "new_gate_tail": "SUCCESS",
+    "report_tail": "SUCCESS",
+    "pc_sha256": "SUCCESS"
+  },
+  "golden": {
+    "dynamic_observed": 0,
+    "actual_pass": 0,
+    "strict_match": 0
+  },
+  "official_ready_added": 0,
+  "official_checkpoint_last_known": 196,
+  "official_ready_last_known": 596,
+  "offline_unsynced": true,
+  "master_updated": false,
+  "source_e21_pc_byte_rehash": "NOT RUN",
+  "prior_safety_refusals": "BLOCKED_UNCHANGED"
+}

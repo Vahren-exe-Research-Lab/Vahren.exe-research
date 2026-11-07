@@ -1,0 +1,53 @@
+{
+  "research_id": "E-OFFLINE-20261028-1949-T020-DIALOG-WRAPPER-FINGERPRINT-AND-GOLDEN-LINEAGE-01",
+  "checked_at_jst": "2026-10-28 19:49",
+  "source_zip_sha256": "911E5E37A3F9BD5B36F929AF94B0D1E2CD1CD5CF34E3E2F16C8FC800ABF5F7C2",
+  "source_sqlite_sha256": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF",
+  "source_exe_sha256_manifest_only": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "classification": "OFFLINE-UNSYNCED/STATIC/SYNTHETIC EXECUTED/VERIFY/NOT READY",
+  "tests_executed": {
+    "new": 58,
+    "reused_1849": 36,
+    "reused_1745": 46,
+    "reused_1645": 28,
+    "total": 168,
+    "failed_in_final": 0,
+    "original_game_executions": 0
+  },
+  "official_ready_integrations": [],
+  "actual_golden_pass": 0,
+  "strict_match": 0,
+  "dynamic_observed": 0,
+  "pc_state": "CONNECTION_FAIL; original MASTER NOT READ, NOT EDITED",
+  "hashes": {
+    "T020_DIALOG_WRAPPER_FINGERPRINT_GOLDEN_LINEAGE_AUDIT_20261028_1949.md": "2DE0F9214821EF76AB6C9335D21568BD214220BFFDF4A7485BB17E0424F99FB9",
+    "T020_DIALOG_WRAPPER_FINGERPRINT_GOLDEN_LINEAGE_CASES_20261028_1949.json": "C61E0128498B58AD0933D671E85BE3D896E5FB77A15EB1C2722E8723FEA53411",
+    "t020_dialog_wrapper_fingerprint_golden_lineage_gate_20261028_1949.py": "E84E3941E3E0AF77F38E1DBC7C6FADBBD5A71178D8C88465DDE36D2E8677ABE7"
+  },
+  "library_save": "SUCCEEDED: three independent E files",
+  "library_readback": "SUCCEEDED: three file hashes match local source, rematerialized code 58/58 PASS",
+  "library_path": "/迫真戦記/E_OFFLINE_UNSYNCED/",
+  "library_ids": {
+    "report": "libfile_4c5a8018b85c8191a480dcd8a9e06558",
+    "fixture": "libfile_86c83995bf5c8191bbfa4c9e3e5e8ee5",
+    "python": "libfile_e83980912fdc81919fd27b9e39405ea9"
+  },
+  "readback_error_recovered": "First fixture materialize returned NOT VISIBLE despite successful Library upload; verified via Library list, retried after visibility established, then hash MATCH and rerun PASS. This is not SAFETY_REFUSAL.",
+  "recoveries": [
+    {
+      "id": "E-RC-20261028-1949-LOCAL-SESSION-TERMINATED-01",
+      "type": "CONNECTION",
+      "state": "PC-UNSYNCED"
+    },
+    {
+      "id": "E-RC-20261028-1949-LOCAL-TEST-SCHEMA-OTHER-RECOVERED-01",
+      "type": "OTHER",
+      "state": "RECOVERED 58/58 PASS"
+    },
+    {
+      "id": "E-RC-20261028-1949-LIBRARY-VISIBILITY-OTHER-RECOVERED-01",
+      "type": "OTHER",
+      "state": "RECOVERED hash MATCH"
+    }
+  ]
+}

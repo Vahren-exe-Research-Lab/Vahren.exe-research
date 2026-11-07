@@ -1,0 +1,61 @@
+{
+  "research_id": "E-AUDIT-20261031-22H-T020-T013-ALT-LIST-RESET-ORDER-GATE-01",
+  "owner": "E/T020",
+  "date_jst": "2026-10-31",
+  "status": "STATIC_BYTE_VERIFIED_SYNTHETIC_VERIFY_NOT_READY",
+  "original_pe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "b_owner": "B/T013",
+  "b_id": "B-20261031-22H-T013-ALT-LIST-DRAIN-RESET-ORDER-01",
+  "files": [
+    {
+      "path": "tests/t020_e_t013_alt_list_reset_gate_20261031_22H.py",
+      "bytes": 5132,
+      "sha256": "578B4D15FFF2FAC7F2320CA97B411464D4348A23003261E3EA9CFED8E68A7A44"
+    },
+    {
+      "path": "tests/T020_E_T013_ALT_LIST_RESET_CASES_20261031_22H.json",
+      "bytes": 157202,
+      "sha256": "14AAC8E8E6B679762A31522933C5A73BC67EF5F1E6588F79AB3EC244B21443E8"
+    },
+    {
+      "path": "tests/T020_E_T013_ALT_LIST_RESET_ACCEPTANCE_20261031_22H.md",
+      "bytes": 6348,
+      "sha256": "4F76F4503C9DE72DCC0DB90185B1D9BC4FDAACF93C06DAF99C14A13AE1A8DC2B"
+    },
+    {
+      "path": "data/T013_22H_DOUBLE_RESET_CHAIN_NATIVE_20261031.md",
+      "bytes": 5084,
+      "sha256": "5F449D9340F19A8F2A67B154CDC207B499EB2E402301E7695D2825C560DBF464"
+    }
+  ],
+  "result": {
+    "native_regions": "3/3",
+    "e8": "4/4",
+    "e9": "1/1",
+    "fixtures": "192/192",
+    "conditional_valid": "168/168",
+    "ineligible": 24,
+    "postclear_gate_cases": 15,
+    "duplicate_ids": 0,
+    "exit_code": 0,
+    "json_readback": true
+  },
+  "v9_sha256": "2629CB2F03ECEC9927E89892C77F847E4CDBA381AB718825C1CA8CFEEEF00EDE",
+  "github_develop_remote_sha": "0225b2e1cd5c710137a3d921f593d158df06624a",
+  "github_local_head_not_checked": true,
+  "master_checkpoint_inherited": 196,
+  "ready_inherited": 596,
+  "tasks_inherited": "DONE9/IN_PROGRESS21/VERIFY4",
+  "new_ready_merged": 0,
+  "dynamic_observed": 0,
+  "actual_golden_pass": 0,
+  "strict_match": 0,
+  "safety_refusal_this_run": 0,
+  "connection_failures_this_run": 0,
+  "old_safety_holds": "BLOCKED_UNCHANGED",
+  "offline_unsynced": "UNRESOLVED_UNCHANGED",
+  "original_game_execution": false,
+  "git_push_by_e": false,
+  "master_write_by_e": false,
+  "next": "Legal original G0/G1/G2 joint receipt; authorized read-only 0x4C1860 and C8/CC consumers; curator reviews KB_CANDIDATE."
+}

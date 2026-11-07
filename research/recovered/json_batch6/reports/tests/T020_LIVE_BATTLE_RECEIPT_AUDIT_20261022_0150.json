@@ -1,0 +1,188 @@
+{
+  "id": "E-AUDIT-20261022-0150-LIVE-STRUCTURAL-NON-GOLDEN-01",
+  "source_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "source_owner": "REA/B battle recorder evidence, read-only",
+  "classification": "NATIVE_STRUCTURAL_OBSERVED_NOT_E_GOLDEN",
+  "sessions": [
+    {
+      "session": "BATTLE_USER_20261021T163100686424Z_9cddfc86",
+      "pid": 28432,
+      "summary_sha256": "51B05D0C964897B875F5F81B282CBEBB2DC46E674BA2EC0294E8017C0658CF7D",
+      "events_sha256": "BDF3F4757D4E22C712432B788AF7FD7110736AF9A4E7E0F9521A7E0782A0DD26",
+      "listed_file_hashes_verified": 6,
+      "structural_snapshots": 4,
+      "failures": 1,
+      "battle_state_detected": true,
+      "scene_return_detected": true,
+      "snapshots": [
+        {
+          "name": "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_01.json",
+          "captured_utc": "2026-10-21T16:31:11.100428+00:00",
+          "unit_refs_by_slot": [
+            192,
+            192,
+            0
+          ],
+          "troops_by_slot": [
+            24,
+            24,
+            0
+          ],
+          "stable_guard": false,
+          "atomic": false,
+          "gameplay_verified": false
+        },
+        {
+          "name": "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_02.json",
+          "captured_utc": "2026-10-21T16:31:13.254313+00:00",
+          "unit_refs_by_slot": [
+            377,
+            192,
+            0
+          ],
+          "troops_by_slot": [
+            24,
+            24,
+            0
+          ],
+          "stable_guard": false,
+          "atomic": false,
+          "gameplay_verified": false
+        },
+        {
+          "name": "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_03.json",
+          "captured_utc": "2026-10-21T16:31:16.083509+00:00",
+          "unit_refs_by_slot": [
+            377,
+            192,
+            0
+          ],
+          "troops_by_slot": [
+            24,
+            24,
+            0
+          ],
+          "stable_guard": false,
+          "atomic": false,
+          "gameplay_verified": false
+        },
+        {
+          "name": "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_05.json",
+          "captured_utc": "2026-10-21T16:31:18.883088+00:00",
+          "unit_refs_by_slot": [
+            377,
+            192,
+            0
+          ],
+          "troops_by_slot": [
+            24,
+            24,
+            0
+          ],
+          "stable_guard": false,
+          "atomic": false,
+          "gameplay_verified": false
+        }
+      ],
+      "E_G0_through_G4": "NOT_QUALIFIED",
+      "golden_dynamic_observed": 0,
+      "actual_golden_pass": 0,
+      "strict_match": 0,
+      "reason": "No legal UI / same-run prebattle SAVE and input / selected MAP or finalized roster / postbattle world result. Non-atomic snapshots."
+    },
+    {
+      "session": "BATTLE_USER_20261021T164622798833Z_b8419f5d",
+      "pid": 32468,
+      "summary_sha256": "9E0FEC62DE5604E9BA991E155A629BDB2CE2969D293CBBA75A187AB3CF90568F",
+      "events_sha256": "5B61ECAC3477EA762F951D8ADD74D751517402DA98D683BDFAE5CDDB801D62B9",
+      "listed_file_hashes_verified": 6,
+      "structural_snapshots": 4,
+      "failures": 1,
+      "battle_state_detected": true,
+      "scene_return_detected": true,
+      "snapshots": [
+        {
+          "name": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_01.json",
+          "captured_utc": "2026-10-21T16:46:32.953122+00:00",
+          "unit_refs_by_slot": [
+            192,
+            192,
+            0
+          ],
+          "troops_by_slot": [
+            24,
+            24,
+            0
+          ],
+          "stable_guard": false,
+          "atomic": false,
+          "gameplay_verified": false
+        },
+        {
+          "name": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_02.json",
+          "captured_utc": "2026-10-21T16:46:34.507005+00:00",
+          "unit_refs_by_slot": [
+            377,
+            192,
+            0
+          ],
+          "troops_by_slot": [
+            24,
+            24,
+            0
+          ],
+          "stable_guard": false,
+          "atomic": false,
+          "gameplay_verified": false
+        },
+        {
+          "name": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_04.json",
+          "captured_utc": "2026-10-21T16:46:37.507167+00:00",
+          "unit_refs_by_slot": [
+            377,
+            192,
+            0
+          ],
+          "troops_by_slot": [
+            24,
+            24,
+            0
+          ],
+          "stable_guard": false,
+          "atomic": false,
+          "gameplay_verified": false
+        },
+        {
+          "name": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_05.json",
+          "captured_utc": "2026-10-21T16:46:39.178232+00:00",
+          "unit_refs_by_slot": [
+            377,
+            200,
+            0
+          ],
+          "troops_by_slot": [
+            24,
+            24,
+            0
+          ],
+          "stable_guard": false,
+          "atomic": false,
+          "gameplay_verified": false
+        }
+      ],
+      "E_G0_through_G4": "NOT_QUALIFIED",
+      "golden_dynamic_observed": 0,
+      "actual_golden_pass": 0,
+      "strict_match": 0,
+      "reason": "No legal UI / same-run prebattle SAVE and input / selected MAP or finalized roster / postbattle world result. Non-atomic snapshots."
+    }
+  ],
+  "total_sessions": 2,
+  "total_snapshots": 8,
+  "total_failures": 2,
+  "total_sha_receipts_verified": 12,
+  "E_golden_dynamic_observed": 0,
+  "actual_golden_pass": 0,
+  "strict_match": 0,
+  "status": "STATIC_AUDIT_OF_SAVED_DYNAMIC_NONATOMIC_EVIDENCE"
+}

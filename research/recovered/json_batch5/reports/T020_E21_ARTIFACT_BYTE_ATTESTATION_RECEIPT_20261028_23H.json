@@ -1,0 +1,43 @@
+{
+  "research_id": "E-AUDIT-20261028-23H-T018-T020-E21-ARTIFACT-BYTE-ATTESTATION-01",
+  "owner": "E",
+  "source": "PC current 22H cross-schema + E21 ChatGPT conversation artifact",
+  "artifact_sha_source": "ChatGPT sandbox rehash (not PC original file)",
+  "source_artifact_sha256": "7D574FF25175C4BAB3BF1C2CCDE6744482C05142717DAA8CC82E06F55F04CCAA",
+  "tests": {
+    "E23_new": "20/20 PASS",
+    "E22_rerun": "24/24 PASS",
+    "current_sum": "44/44 PASS",
+    "old_gameplay": "NOT RUN"
+  },
+  "files_sha256": {
+    "T020_E21_SOURCE_ATTESTATION_CASES_20261028_23H.json": "51D5B0DFA98A27D5D2816B37197081C4955EBB7F747A0BD783E4B9DF4D49E8B7",
+    "t020_e21_source_attestation_gate_20261028_23H.py": "EF4A7767688E633A189632CEEDF1224D41C37865A75F17B01A9FF40E87AFE83B",
+    "T020_E21_ARTIFACT_BYTE_ATTESTATION_AUDIT_20261028_23H.md": "58FA92D44F38FC4F128A77C66A3EFDA90026622F838BFB439CD084D3B3C4E3AB"
+  },
+  "master_checkpoint_last_known": 196,
+  "master_ready_last_known": 596,
+  "owner_ready_last_known": {
+    "A": 115,
+    "B": 229,
+    "C": 136,
+    "D": 116
+  },
+  "tasks_last_known": {
+    "TOTAL": 34,
+    "DONE": 9,
+    "IN_PROGRESS": 21,
+    "VERIFY": 4
+  },
+  "new_formal_ready": 0,
+  "actual_golden_pass": 0,
+  "strict_match": 0,
+  "status": [
+    "STATIC",
+    "SYNTHETIC_EXECUTED",
+    "READBACK",
+    "VERIFY",
+    "NOT_READY"
+  ],
+  "restrictions": "Prior safety refusals preserved; no A-D/REA/DEV/MASTER/Git/Work/schedule writes"
+}

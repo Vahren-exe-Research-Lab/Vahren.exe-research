@@ -1,0 +1,70 @@
+{
+  "research_id": "E-AUDIT-20261029-10H-T018-T020-DAT-EPOCH-BASELINE-PIN-01",
+  "evidence_class": "STATIC_CURRENT_BYTES_VS_20261022_PREPATCH_MANIFEST",
+  "manifest_sha256": "85b418a60f9d2873cade38e05574c70a0d969e3b3e274842111087be9f2fc412",
+  "claimed_restore_state": "RESTORED",
+  "claimed_restore_at": "2026-10-22T04:46:19.660325+09:00",
+  "pin_count": 591,
+  "modified_file_count": 8,
+  "counts": {
+    "MATCH": 590,
+    "DRIFT": 0,
+    "MISSING": 1,
+    "INVALID_PIN": 0,
+    "INVALID_ACTUAL": 0,
+    "UNSAFE_PATH": 0
+  },
+  "current_dat_count": 590,
+  "untracked_files": [],
+  "nonmissing_source_set_sha256": "8256a6bfe879a5e2fdc2665b845c3f5d6c8aef0bf8323e52c4d2e23f507b31b3",
+  "prior_20261025_590_source_set_sha256": "8256A6BFE879A5E2FDC2665B845C3F5D6C8AEF0BF8323E52C4D2E23F507B31B3",
+  "matches_prior_590_fingerprint": true,
+  "modified_pins": {
+    "10_\u30e6\u30cb\u30c3\u30c8\\02_\u8feb\u771f\u7a7a\u624b\u9053\u5834.dat": {
+      "baseline": "MATCH",
+      "still_patched": false
+    },
+    "10_\u30e6\u30cb\u30c3\u30c8\\110_\u30a4\u30d9\u30f3\u30c8\u4eba\u6750.dat": {
+      "baseline": "MATCH",
+      "still_patched": false
+    },
+    "10_\u30e6\u30cb\u30c3\u30c8\\19_\u6b63\u7d71\u30b9\u30ab\u30fc\u30ec\u30c3\u30c8\u5bb6.dat": {
+      "baseline": "MATCH",
+      "still_patched": false
+    },
+    "10_\u30e6\u30cb\u30c3\u30c8\\90_\u653e\u6d6a_\u30db\u30e2\u30d3.dat": {
+      "baseline": "MATCH",
+      "still_patched": false
+    },
+    "10_\u30e6\u30cb\u30c3\u30c8\\94_\u653e\u6d6a_\u30db\u30e2\u30ac\u30ad\u30fb\u990a\u6b96.dat": {
+      "baseline": "MATCH",
+      "still_patched": false
+    },
+    "20_\u30af\u30e9\u30b9\\01_03_\u30de\u30ea\u30ca\u30fc\u30ba_\u7a7a\u624b\u90e8_\u30ad\u30e2\u30c6\u30a3\u30ab.dat": {
+      "baseline": "MATCH",
+      "still_patched": false
+    },
+    "8000_RTS\u30b7\u30ca\u30ea\u30aa\\RTSclass.dat": {
+      "baseline": "MATCH",
+      "still_patched": false
+    },
+    "8000_RTS\u30b7\u30ca\u30ea\u30aa\\RTSsummon.dat": {
+      "baseline": "MATCH",
+      "still_patched": false
+    }
+  },
+  "difference_sample": [
+    {
+      "relative_path": "6000_\u30b9\u30ad\u30eb\u30c6\u30b9\u30c8\\work_observation.dat",
+      "reason": "MISSING",
+      "current_sha256": null
+    }
+  ],
+  "difference_count": 1,
+  "verdict": "CURRENT_590_MATCHES_PRIOR_STATIC_SET_NOT_ARCHIVE_PROOF",
+  "original_dynamic_observed": 0,
+  "actual_golden_pass": 0,
+  "strict_match": 0,
+  "ready": false,
+  "gate_source_sha256": "da0416d7939beb6ed1c001cf9fa25cf32696ff30ad56792d75332fce76cf9d74"
+}

@@ -1,0 +1,46 @@
+{
+  "research_id": "E-AUDIT-20261030-00H-T020-T028-VECTOR-HELPER-MODE-SOURCE-GATE-01",
+  "scope": "E/T020 readback; no MASTER adoption; 2026-10-30 00H JST",
+  "source_owner_id": "B-20261030-0010-T028-SPOT-VECTOR-FLAG-SPLIT-01",
+  "source_state": "VERIFY_NOT_READY",
+  "source_detail_sha256": "6F972CFB462306B9DF4620768E3C212E391A4153D6110F5F5F6EEC30DD53C9C6",
+  "results": {
+    "source_pins": "2/2 PASS",
+    "new_synthetic": "18/18 PASS",
+    "old_23H": "21/21 PASS",
+    "old_22H": "18/18 PASS",
+    "all_process_exit_codes": [
+      0,
+      0,
+      0
+    ],
+    "original_gameplay": "NOT RUN",
+    "actual_golden_pass": 0,
+    "strict_match": 0,
+    "new_ready": 0
+  },
+  "files": [
+    {
+      "name": "t020_e_t028_vector_helper_mode_gate_20261030_00H.py",
+      "bytes": 2402,
+      "sha256": "F68E64DDE7BFD41BCD898B8ED7A87303A166BCF08E7EE0614D1BACDC21359C93"
+    },
+    {
+      "name": "T020_E_T028_VECTOR_HELPER_MODE_CASES_20261030_00H.json",
+      "bytes": 2453,
+      "sha256": "8F2E28F641F60D061F4F4A3EAE7B213284141E2135A14BAE2602480932AAD4B9"
+    },
+    {
+      "name": "T020_E_T028_VECTOR_HELPER_MODE_ACCEPTANCE_20261030_00H.md",
+      "bytes": 3453,
+      "sha256": "C39E7A54F8B4DA3E2519CF4CBE51FA671922FFCD0E7FA89D839B936BD76A13F6"
+    }
+  ],
+  "readback": "Desktop Commander individual read_file; PowerShell Get-FileHash and JSON parse; 3/3",
+  "checkpoint_prior_confirmed": 196,
+  "ready_prior_confirmed": 596,
+  "task_status_prior": "DONE9/IN_PROGRESS21/VERIFY4; NOT RECOUNTED",
+  "offline_unsynced": "OPEN",
+  "safety_refusals_new": 0,
+  "old_safety_refusals": "BLOCKED"
+}

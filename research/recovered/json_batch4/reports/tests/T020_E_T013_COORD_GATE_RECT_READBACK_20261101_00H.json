@@ -1,0 +1,60 @@
+{
+  "research_id": "E-AUDIT-20261101-00H-T020-T013-COORD-GATE-RECT-01",
+  "owner": "E/T020",
+  "status": "STATIC_BYTE_VERIFIED; SYNTHETIC_RAW_API_PASS; VERIFY; NOT_READY",
+  "source": "Local Compact PC; B-20261101-00H-T013-COORD-TRANSFORM-GATE-OUTPUT-ABI-01",
+  "source_pe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "outcomes": {
+    "test_exit_code": 0,
+    "pe_region": "1/1",
+    "direct_e8": "1/1",
+    "branch_abi": "8 checks",
+    "raw_win32_composed": "120/120",
+    "d3dx_cases_not_run": 40,
+    "case_total": 160,
+    "case_id_duplicates": 0,
+    "gameplay_dynamic_observed": 0,
+    "actual_golden_pass": 0,
+    "strict_match": 0,
+    "ready_new": 0
+  },
+  "verified_artifacts": [
+    {
+      "path": "tests/t020_e_t013_coord_gate_rect_composition_20261101_00H.py",
+      "bytes": 4925,
+      "sha256": "9E55D7EF80C125CA42A867FBBF9140EEF9B3EE10D3153CE4FE51067E9F2ABEEB"
+    },
+    {
+      "path": "tests/T020_E_T013_COORD_GATE_RECT_CASES_20261101_00H.json",
+      "bytes": 65021,
+      "sha256": "947929916910F83AFF4AA6C90BBA48753B69127F3652080294C6B6670A7831BD"
+    },
+    {
+      "path": "tests/T020_E_T013_COORD_GATE_RECT_ACCEPTANCE_20261101_00H.md",
+      "bytes": 4704,
+      "sha256": "93E90360A4D70632782915540020430806B9E11A1813598AD3472A96E57AB250"
+    },
+    {
+      "path": "data/T013_COORD_TRANSFORM_GATE_OUTPUT_ABI_NATIVE_20261101_00H.md",
+      "bytes": 5127,
+      "sha256": "022EFBC353968A50C1C6B91473279042BA9E139BB759C9D21417CC7DE8C4951C"
+    }
+  ],
+  "master": {
+    "checkpoint_last_confirmed": 196,
+    "ready_inherited": 596,
+    "A": 115,
+    "B": 229,
+    "C": 136,
+    "D": 116,
+    "tasks_old": {
+      "done": 9,
+      "in_progress": 21,
+      "verify": 4
+    }
+  },
+  "golden_gates": "G0/G1/G2 missing, G3/G4 not complete",
+  "owner_constraints": "No MASTER or other-owner, shared KB, Git, REA, dev_lab, originals or automation modifications",
+  "safety": "No new refusals. Prior prohibited scope, HOLD21 and OFFLINE-UNSYNCED untouched",
+  "next": "Require lawful original same-run G0/G1/G2 and eligible 0x4C1690 transform result before strict comparison"
+}

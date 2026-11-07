@@ -1,0 +1,61 @@
+{
+  "research_id": "E-AUDIT-20261030-23H-T020-T013-CATEGORY-LABEL-WRITER-01",
+  "owner": "E",
+  "tasks": [
+    "T020",
+    "T018",
+    "T019"
+  ],
+  "snapshot_jst": "2026-10-30 23H",
+  "classification": "STATIC_NATIVE_VERIFIED_SYNTHETIC_EXECUTED_VERIFY_NOT_READY",
+  "source_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "source_B23_note_sha256": "4FDCF334197B1B61D8A867DB0A92ED8618354472E5FF0A4D9F07094CAEF13FE0",
+  "native_windows_verified": 6,
+  "native_E8_call_targets_verified": 4,
+  "synthetic_new_pass": 98,
+  "synthetic_old22h_rerun_pass": 90,
+  "synthetic_this_run_pass": 188,
+  "original_dynamic_observed": 0,
+  "actual_golden_pass": 0,
+  "strict_match": 0,
+  "new_READY_integrations": 0,
+  "master_checkpoint": 196,
+  "master_READY": 596,
+  "master_sha256": "E7329C9C6368E67BE191A4ABF45156319E32826FF039FB2B9E226DEDDAC6B6B3",
+  "task_status_counts": {
+    "DONE": 9,
+    "IN_PROGRESS": 21,
+    "VERIFY": 4
+  },
+  "files": [
+    {
+      "relative_path": "tests/t020_e_t013_category_native_probe_20261030_23H.py",
+      "bytes": 3107,
+      "sha256": "D7F44A74E5DBB4C9FD8589AB7738C2E95E0FF5FE329EB9FBDCB93AAEBC7D796E"
+    },
+    {
+      "relative_path": "tests/t020_e_t013_category_writer_gate_20261030_23H.py",
+      "bytes": 6961,
+      "sha256": "FF22F9BCB7B422FC99F93CB70250AA3FEC6354D5801F9E074EB8232AF8CE1E85"
+    },
+    {
+      "relative_path": "tests/T020_E_T013_CATEGORY_CASES_20261030_23H.json",
+      "bytes": 17064,
+      "sha256": "CDDBE51518A5812DA8BCBB127FF2311F8630E205A9A09C70768D706F6019E536"
+    },
+    {
+      "relative_path": "tests/T020_E_T013_CATEGORY_WRITER_ACCEPTANCE_20261030_23H.md",
+      "bytes": 5119,
+      "sha256": "AEA4DF4B5866597B19DDCA621AED0BA23B8EA6D04A2D38BEDDBF1CDCA670C534"
+    }
+  ],
+  "fixture_count": 98,
+  "fixture_unique_ids": 98,
+  "B19_metadata_mismatch": "OPEN_OWNER_B",
+  "B21_metadata_mismatch": "NOW_MATCHES_READONLY_NOT_MODIFIED_BY_E",
+  "old_safety_refusals": "BLOCKED_UNTOUCHED",
+  "offline_unsynced": "OPEN",
+  "next": "B23 RNG coefficient/0x577220 ABI; legal same-run original G0/G1/G2/G3/G4 receipts",
+  "no_git_or_schedule_changes": true
+}
+

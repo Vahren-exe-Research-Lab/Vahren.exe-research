@@ -1,0 +1,45 @@
+{
+  "research_id": "E-AUDIT-20261029-09H-T018-T020-NATIVE-CNB02-JOIN-PREFLIGHT-01",
+  "owner": "E/T018,T020",
+  "source_kind": "PC_LOCAL_READONLY_STATIC",
+  "source_runner_sha256": "2F1BBFDA6A3C935564AEF5A9FAD6DA10085A1C87B5C093BED4CAAF551250A5F9",
+  "new_code": {
+    "name": "t020_e_native_cnb02_join_preflight_20261029_09H.py",
+    "sha256": "C5DF46AC81E92F1DEC024A7528E2BE322F3B75241D925B53DA4BEB1F9915D538",
+    "tests": 22,
+    "failures": 0
+  },
+  "report": {
+    "name": "T020_E_NATIVE_CNB02_JOIN_PREFLIGHT_20261029_09H.md",
+    "sha256": "EC23B00CD61DE2EEF28C15593E370EA224B36083CA4B508EFF0511C7260CE331"
+  },
+  "rerun": [
+    {
+      "name": "08H-native",
+      "tests": 19,
+      "failures": 0
+    },
+    {
+      "name": "07H-comparator",
+      "tests": 15,
+      "failures": 0
+    }
+  ],
+  "total_test_count": 56,
+  "test_kind": "STATIC_SYNTHETIC_ONLY",
+  "old_game_run": "NOT_RUN",
+  "dynamic_observed": 0,
+  "actual_golden_pass": 0,
+  "strict_match": 0,
+  "new_ready_integrations": 0,
+  "last_formal_checkpoint": 196,
+  "last_formal_ready": 596,
+  "task_counts_previous_only": {
+    "DONE": 9,
+    "IN_PROGRESS": 21,
+    "VERIFY": 4
+  },
+  "offline_unsynced": "VERIFY_NOT_FULLY_RECONCILED",
+  "blocked_previous_refusals": "HELD_NOT_RETRIED",
+  "readback_state": "LOCAL_JSON_AND_SHA256_READBACK_VERIFIED"
+}

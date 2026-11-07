@@ -1,0 +1,47 @@
+{
+  "research_id": "E-AUDIT-20261030-03H-T020-T028-FULLTREE-CLEAR-SPLIT-01",
+  "state": "STATIC_SYNTHETIC_VERIFY_NOT_READY",
+  "owner": "E",
+  "source_owner": "B",
+  "source_B03H_sha256": "2CE7A4F828C2D749E30E63E7B78A46A8A5B3DEC06E535F5A79F1DB2FB201AB52",
+  "file_sha256": {
+    "tests/t020_e_t028_full_tree_clear_gate_20261030_03H.py": "A17551C1954DCC1F3084FBF77A6E74FE0D8541CF8340EC83DABF155CCECA1502",
+    "tests/T020_E_T028_FULL_TREE_CLEAR_CASES_20261030_03H.json": "A873A6E31F65E4B2D5AEC1E31F36F4BA9CB639A57AB571E3B58B0E2C1959D023",
+    "tests/T020_E_T028_FULL_TREE_CLEAR_ACCEPTANCE_20261030_03H.md": "B35B7C60AD5F280A0B51DB14C9A486AB481E1A6D2EAC184FC16A3DE57DF56849"
+  },
+  "new_synthetic": {
+    "pass": 30,
+    "total": 30
+  },
+  "prior_synthetic": {
+    "pass": 115,
+    "total": 115
+  },
+  "all_synthetic": {
+    "pass": 145,
+    "total": 145
+  },
+  "source_pins": {
+    "pass": 2,
+    "total": 2
+  },
+  "test_exit_codes": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "fixture_unique_ids": 30,
+  "master_checkpoint_previous_verified": 196,
+  "ready_previous_verified": 596,
+  "formal_ready_added": 0,
+  "golden_dynamic_observed": 0,
+  "actual_golden_pass": 0,
+  "strict_match": 0,
+  "gameplay": "NOT_RUN",
+  "offline_unsynced": "OPEN",
+  "note": "Readback and SHA256 measured from PC after saving. No changes to MASTER, other owners, Git or schedules."
+}

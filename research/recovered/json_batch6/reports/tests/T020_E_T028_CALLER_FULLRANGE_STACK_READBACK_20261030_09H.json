@@ -1,0 +1,62 @@
+{
+  "research_id": "E-AUDIT-20261030-09H-T020-T028-CALLER-FULLRANGE-STACK-01",
+  "snapshot": "2026-10-30 09H JST",
+  "status": "STATIC_SOURCE_NATIVE_BYTE_VERIFIED_SYNTHETIC_EXECUTED_VERIFY_NOT_READY",
+  "files": [
+    {
+      "name": "t020_e_t028_caller_fullrange_stack_gate_20261030_09H.py",
+      "bytes": 3804,
+      "sha256": "A1D19C62F7A1EF731BB8F2284A36CD94788344D58F6AA6F5EF668DF382B06AE9"
+    },
+    {
+      "name": "T020_E_T028_CALLER_FULLRANGE_STACK_CASES_20261030_09H.json",
+      "bytes": 19194,
+      "sha256": "4EC2915D8CBCF7DD1A764736B7DD01A004AD5408A7C2E3C1FF63EC16353F2B52"
+    },
+    {
+      "name": "T020_E_T028_CALLER_FULLRANGE_STACK_ACCEPTANCE_20261030_09H.md",
+      "bytes": 4412,
+      "sha256": "169B731EA50A243A546705600087ECE3BCA62EE55B147A2D54FA20568F962186"
+    },
+    {
+      "name": "t020_e_t028_fullrange_byte_diagnostic_20261030_09H.py",
+      "bytes": 871,
+      "sha256": "93427F47B307DCF4AEC800E5B06BCE92C0847BF8EC9BEEF3898C621AC21EA228"
+    }
+  ],
+  "evidence": {
+    "b_detail_sha256": "4C892AA112D27DE3EBBC3D02C8154BD306BA422AE363A7E11102EC32D4CDFECD",
+    "pe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+    "master_sha256": "E7329C9C6368E67BE191A4ABF45156319E32826FF039FB2B9E226DEDDAC6B6B3"
+  },
+  "tests": {
+    "new_synthetic": {
+      "passed": 36,
+      "total": 36
+    },
+    "suite_gate_files": {
+      "passed": 13,
+      "total": 13
+    },
+    "synth_cases_total": 372,
+    "provenance_checks_separate": 3,
+    "original_game": "NOT_RUN",
+    "dynamic_observed": 0,
+    "actual_golden_pass": 0,
+    "strict_match": 0
+  },
+  "checkpoint": {
+    "number": 196,
+    "ready": 596,
+    "task_count": 34,
+    "done": 9,
+    "in_progress": 21,
+    "verify": 4,
+    "new_ready_integrated": 0
+  },
+  "blocked": {
+    "old_refusal_unchanged": true,
+    "offline_unsynced_dedup_incomplete": true
+  },
+  "next": "E independent GOLDEN G0/G1/G2 per-run receipts; B 0x5AC5BD consumer and caller-specific full/partial boundary. No E official integration without READY owner source/time/hash conflict check."
+}

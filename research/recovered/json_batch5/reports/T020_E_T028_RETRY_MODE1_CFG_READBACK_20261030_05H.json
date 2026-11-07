@@ -1,0 +1,56 @@
+{
+  "research_id": "E-AUDIT-20261030-05H-T020-T028-RETRY-MODE1-CFG-01",
+  "owner": "E",
+  "run_hour_jst": "2026-10-30 05H",
+  "source_owner_id": "B-20261030-0515-T028-DUAL-RETRY-POSTRET-MODE1-JUMP-01",
+  "source_sha256": "9510EAE2532D8DFE854EFB46DBC393E5C61EF5F2AA4553E355C27A156374727A",
+  "source_status": "VERIFY_NOT_READY",
+  "files": [
+    {
+      "name": "t020_e_t028_retry_mode1_cfg_gate_20261030_05H.py",
+      "length_bytes": 6314,
+      "sha256": "839C30F5AF3A4114DF1A7E5C4B6F75CAA16E9705322459E0A26BE04F78DBCF9D",
+      "id_occurrences": 1
+    },
+    {
+      "name": "T020_E_T028_RETRY_MODE1_CFG_CASES_20261030_05H.json",
+      "length_bytes": 10783,
+      "sha256": "B9574891AF1A8CA5474653F9E25C63D0583D2619A86FA4624F3E60D88ED396E8",
+      "id_occurrences": 1
+    },
+    {
+      "name": "T020_E_T028_RETRY_MODE1_CFG_ACCEPTANCE_20261030_05H.md",
+      "length_bytes": 4315,
+      "sha256": "7979D4DA779261F42D0B9EC9161C368440B56F38E2DA05EB471354DA5F761AC6",
+      "id_occurrences": 1
+    }
+  ],
+  "pc_readback": "THREE_FILES_DIRECT_READ_AND_SHA_VERIFIED",
+  "new_synthetic": {
+    "passed": 36,
+    "total": 36
+  },
+  "previous_synthetic": {
+    "passed": 191,
+    "total": 191
+  },
+  "combined_synthetic": {
+    "passed": 227,
+    "total": 227
+  },
+  "original_gameplay": "NOT_RUN",
+  "dynamic_observed": 0,
+  "actual_golden_pass": 0,
+  "strict_match": 0,
+  "master_checkpoint_previous_confirmed": 196,
+  "ready_total_previous_confirmed": 596,
+  "new_ready_integrated": 0,
+  "master_sha256": "E7329C9C6368E67BE191A4ABF45156319E32826FF039FB2B9E226DEDDAC6B6B3",
+  "task_queue": {
+    "done": 9,
+    "in_progress": 21,
+    "verify": 4
+  },
+  "offline_unsynced": "OPEN",
+  "new_safety_refusal": 0
+}
