@@ -1,0 +1,344 @@
+{
+  "status": "WORK_PARSER_SYNTHETIC_ONLY; NO ORIGINAL GAMEPLAY",
+  "fixture_source": "skill baseline\n{\nmp = 165\nspecial = on\nrange_min = 200\nnext3 = fx_a,fx_b\nadd2 = hp,mp\ngun_delay = group*2\n}\nskill child_absent:baseline\n{\nname = inherit\n}\nskill child_at:baseline\n{\nmp = @\nspecial = @\nrange_min = @\nnext3 = @\nadd2 = @\ngun_delay = @\n}\nskill child_normal:baseline\n{\nmp = 0\nspecial = off\nnext3 = fx_c\n}\nskill child_duplicate_list:baseline\n{\nnext3 = fx_c\nnext3 = @\n}\nskill child_duplicate_list_reverse:baseline\n{\nnext3 = @\nnext3 = fx_c\n}\nskill child_duplicate_scalar:baseline\n{\nmp = 77\nmp = @\n}\nskill child_duplicate_scalar_reverse:baseline\n{\nmp = @\nmp = 77\n}\n",
+  "parsed_decl_count": 8,
+  "assertions": 9,
+  "all_passed": true,
+  "results": {
+    "baseline": {
+      "mp": {
+        "kind": "scalar",
+        "found": true,
+        "text": "165",
+        "number": 165
+      },
+      "special": {
+        "kind": "scalar",
+        "found": true,
+        "text": "on",
+        "number": 0
+      },
+      "range_min": {
+        "kind": "scalar",
+        "found": true,
+        "text": "200",
+        "number": 200
+      },
+      "next3": {
+        "kind": "keyword_list",
+        "items": [
+          "fx_a",
+          "fx_b"
+        ],
+        "present": true
+      },
+      "add2": {
+        "kind": "keyword_list",
+        "items": [
+          "hp",
+          "mp"
+        ],
+        "present": true
+      },
+      "gun_delay": {
+        "kind": "keyword_list",
+        "items": [
+          "group*2"
+        ],
+        "present": true
+      }
+    },
+    "child_absent": {
+      "mp": {
+        "kind": "scalar",
+        "found": true,
+        "text": "165",
+        "number": 165
+      },
+      "special": {
+        "kind": "scalar",
+        "found": true,
+        "text": "on",
+        "number": 0
+      },
+      "range_min": {
+        "kind": "scalar",
+        "found": true,
+        "text": "200",
+        "number": 200
+      },
+      "next3": {
+        "kind": "keyword_list",
+        "items": [
+          "fx_a",
+          "fx_b"
+        ],
+        "present": true
+      },
+      "add2": {
+        "kind": "keyword_list",
+        "items": [
+          "hp",
+          "mp"
+        ],
+        "present": true
+      },
+      "gun_delay": {
+        "kind": "keyword_list",
+        "items": [
+          "group*2"
+        ],
+        "present": true
+      }
+    },
+    "child_at": {
+      "mp": {
+        "kind": "scalar",
+        "found": true,
+        "text": "",
+        "number": 0
+      },
+      "special": {
+        "kind": "scalar",
+        "found": true,
+        "text": "",
+        "number": 0
+      },
+      "range_min": {
+        "kind": "scalar",
+        "found": true,
+        "text": "",
+        "number": 0
+      },
+      "next3": {
+        "kind": "keyword_list",
+        "items": [],
+        "present": true
+      },
+      "add2": {
+        "kind": "keyword_list",
+        "items": [],
+        "present": true
+      },
+      "gun_delay": {
+        "kind": "keyword_list",
+        "items": [],
+        "present": true
+      }
+    },
+    "child_normal": {
+      "mp": {
+        "kind": "scalar",
+        "found": true,
+        "text": "0",
+        "number": 0
+      },
+      "special": {
+        "kind": "scalar",
+        "found": true,
+        "text": "off",
+        "number": 0
+      },
+      "range_min": {
+        "kind": "scalar",
+        "found": true,
+        "text": "200",
+        "number": 200
+      },
+      "next3": {
+        "kind": "keyword_list",
+        "items": [
+          "fx_c"
+        ],
+        "present": true
+      },
+      "add2": {
+        "kind": "keyword_list",
+        "items": [
+          "hp",
+          "mp"
+        ],
+        "present": true
+      },
+      "gun_delay": {
+        "kind": "keyword_list",
+        "items": [
+          "group*2"
+        ],
+        "present": true
+      }
+    },
+    "child_duplicate_list": {
+      "mp": {
+        "kind": "scalar",
+        "found": true,
+        "text": "165",
+        "number": 165
+      },
+      "special": {
+        "kind": "scalar",
+        "found": true,
+        "text": "on",
+        "number": 0
+      },
+      "range_min": {
+        "kind": "scalar",
+        "found": true,
+        "text": "200",
+        "number": 200
+      },
+      "next3": {
+        "kind": "keyword_list",
+        "items": [
+          "fx_c"
+        ],
+        "present": true
+      },
+      "add2": {
+        "kind": "keyword_list",
+        "items": [
+          "hp",
+          "mp"
+        ],
+        "present": true
+      },
+      "gun_delay": {
+        "kind": "keyword_list",
+        "items": [
+          "group*2"
+        ],
+        "present": true
+      }
+    },
+    "child_duplicate_list_reverse": {
+      "mp": {
+        "kind": "scalar",
+        "found": true,
+        "text": "165",
+        "number": 165
+      },
+      "special": {
+        "kind": "scalar",
+        "found": true,
+        "text": "on",
+        "number": 0
+      },
+      "range_min": {
+        "kind": "scalar",
+        "found": true,
+        "text": "200",
+        "number": 200
+      },
+      "next3": {
+        "kind": "keyword_list",
+        "items": [],
+        "present": true
+      },
+      "add2": {
+        "kind": "keyword_list",
+        "items": [
+          "hp",
+          "mp"
+        ],
+        "present": true
+      },
+      "gun_delay": {
+        "kind": "keyword_list",
+        "items": [
+          "group*2"
+        ],
+        "present": true
+      }
+    },
+    "child_duplicate_scalar": {
+      "mp": {
+        "kind": "scalar",
+        "found": true,
+        "text": "77",
+        "number": 77
+      },
+      "special": {
+        "kind": "scalar",
+        "found": true,
+        "text": "on",
+        "number": 0
+      },
+      "range_min": {
+        "kind": "scalar",
+        "found": true,
+        "text": "200",
+        "number": 200
+      },
+      "next3": {
+        "kind": "keyword_list",
+        "items": [
+          "fx_a",
+          "fx_b"
+        ],
+        "present": true
+      },
+      "add2": {
+        "kind": "keyword_list",
+        "items": [
+          "hp",
+          "mp"
+        ],
+        "present": true
+      },
+      "gun_delay": {
+        "kind": "keyword_list",
+        "items": [
+          "group*2"
+        ],
+        "present": true
+      }
+    },
+    "child_duplicate_scalar_reverse": {
+      "mp": {
+        "kind": "scalar",
+        "found": true,
+        "text": "",
+        "number": 0
+      },
+      "special": {
+        "kind": "scalar",
+        "found": true,
+        "text": "on",
+        "number": 0
+      },
+      "range_min": {
+        "kind": "scalar",
+        "found": true,
+        "text": "200",
+        "number": 200
+      },
+      "next3": {
+        "kind": "keyword_list",
+        "items": [
+          "fx_a",
+          "fx_b"
+        ],
+        "present": true
+      },
+      "add2": {
+        "kind": "keyword_list",
+        "items": [
+          "hp",
+          "mp"
+        ],
+        "present": true
+      },
+      "gun_delay": {
+        "kind": "keyword_list",
+        "items": [
+          "group*2"
+        ],
+        "present": true
+      }
+    }
+  },
+  "method": "parse_script_text + NativeRegistries.add/lookup/lookup_list; no Skill+0x4C/+278 compiler",
+  "native_caution": "Work current registry's duplicate/override outcomes need separate validation for original special callback builder",
+  "original_Gameplay_Golden": 0,
+  "new_strict_MATCH": 0
+}

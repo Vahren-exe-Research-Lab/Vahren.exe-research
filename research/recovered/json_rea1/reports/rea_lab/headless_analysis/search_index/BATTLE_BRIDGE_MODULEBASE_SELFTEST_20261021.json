@@ -1,0 +1,12 @@
+{
+  "id": "BRIDGE-LIVE-READONLY-MODULEBASE-SELFTEST",
+  "status": "SUCCESS_ON_PYTHON_64BIT_SELF_PROCESS_ONLY",
+  "self_exe": "python.exe",
+  "self_pid": 26368,
+  "self_load_base": "0x7FF671AF0000",
+  "self_MZ_header": "4D5A",
+  "original_game_process_touched": false,
+  "original_game_exe_launched": false,
+  "native_battle_memory_captured": false,
+  "limitation": "Self module enumeration succeeds on 64-bit Python; WOW64 Vahren.exe enumeration not observed yet"
+}

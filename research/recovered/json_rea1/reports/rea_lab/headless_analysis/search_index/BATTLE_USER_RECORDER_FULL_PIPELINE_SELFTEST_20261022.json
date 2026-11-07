@@ -1,0 +1,30 @@
+{
+  "test": "REAL_WIN32_CHILD_FULL_CAPTURE",
+  "original_game_touched": false,
+  "passed": true,
+  "counts": {
+    "units": [
+      2,
+      1,
+      0
+    ],
+    "troops": [
+      1,
+      1,
+      0
+    ],
+    "attack_entries": 1,
+    "help_entries": 1
+  },
+  "task_count": 305,
+  "read_sizes_verified": [
+    84,
+    128,
+    1220
+  ],
+  "summary_file": "BATTLE_USER_20261021T153712415645Z_b9a0e3d6_SUMMARY.json",
+  "raw_file": "BATTLE_USER_20261021T153712415645Z_b9a0e3d6_RAW_01.json",
+  "raw_sha256": "38071A564C49611D6181C49164650DD64F23936C8A12A93E7E5063F750C694ED",
+  "full_G1_proven": false,
+  "game_memory_written": false
+}

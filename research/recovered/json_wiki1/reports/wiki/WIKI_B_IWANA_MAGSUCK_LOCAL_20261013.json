@@ -1,0 +1,91 @@
+{
+  "status": "SYNTHETIC local native arithmetic, NOT b_iwana gameplay reachability",
+  "evidence": "saved 0x578D6F..0x578D86, Work main_decomp_status_special_subset.py",
+  "raw_dat": "b_iwana add=magsuck; native add-to-callee dispatch not yet established",
+  "cases": [
+    {
+      "case": "base",
+      "source_skill": "b_iwana",
+      "label_from_dat": "magsuck",
+      "caster_mp_before": 30,
+      "target_mp_before": 40,
+      "effect_amount": 10,
+      "same_unit": false,
+      "caster_mp_after": 40,
+      "target_mp_after": 30,
+      "downstream_completed": false,
+      "expected_caster": 40,
+      "expected_target": 30,
+      "pass": true
+    },
+    {
+      "case": "no_local_max_clamp",
+      "source_skill": "b_iwana",
+      "label_from_dat": "magsuck",
+      "caster_mp_before": 100,
+      "target_mp_before": 10,
+      "effect_amount": 20,
+      "same_unit": false,
+      "caster_mp_after": 120,
+      "target_mp_after": -10,
+      "downstream_completed": false,
+      "expected_caster": 120,
+      "expected_target": -10,
+      "pass": true
+    },
+    {
+      "case": "negative_amount",
+      "source_skill": "b_iwana",
+      "label_from_dat": "magsuck",
+      "caster_mp_before": 100,
+      "target_mp_before": 10,
+      "effect_amount": -5,
+      "same_unit": false,
+      "caster_mp_after": 95,
+      "target_mp_after": 15,
+      "downstream_completed": false,
+      "expected_caster": 95,
+      "expected_target": 15,
+      "pass": true
+    },
+    {
+      "case": "same_unit_alias",
+      "source_skill": "b_iwana",
+      "label_from_dat": "magsuck",
+      "caster_mp_before": 100,
+      "target_mp_before": 100,
+      "effect_amount": 20,
+      "same_unit": true,
+      "caster_mp_after": 100,
+      "target_mp_after": 100,
+      "downstream_completed": false,
+      "expected_caster": 100,
+      "expected_target": 100,
+      "pass": true
+    },
+    {
+      "case": "signed_wrap",
+      "source_skill": "b_iwana",
+      "label_from_dat": "magsuck",
+      "caster_mp_before": 2147483647,
+      "target_mp_before": 0,
+      "effect_amount": 1,
+      "same_unit": false,
+      "caster_mp_after": -2147483648,
+      "target_mp_after": -1,
+      "downstream_completed": false,
+      "expected_caster": -2147483648,
+      "expected_target": -1,
+      "pass": true
+    }
+  ],
+  "missing": [
+    "effect_amount from real b_iwana hit",
+    "skill.add=magsuck -> correct native dispatcher path",
+    "later gauge/visual helpers 4DFD80 / 4E13F0",
+    "cost60 timing and hit RNG",
+    "old normal gameplay"
+  ],
+  "original_gameplay_golden": 0,
+  "strict_match": 0
+}

@@ -1,0 +1,210 @@
+{
+  "id": "BRIDGE-CRT-RNG-EXTERNAL-20261021-01",
+  "status": "SYNTHETIC_EXTERNAL_PROCESS / ORIGINAL GAME NOT RUN",
+  "pe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "worker_exe": "BATTLE_BRIDGE_RNG_WORKER_20261021.exe",
+  "worker_sha256": "80000218308650688889BC78BD595FFDBD261EE1AB6EDB6E62DB75A580DA4AC7",
+  "evidence": "BATTLE_CRT_RNG_ABI_PE_20261021.json",
+  "positive_cases": [
+    {
+      "seed": "00000000",
+      "steps": 0,
+      "pass": true
+    },
+    {
+      "seed": "00000000",
+      "steps": 1,
+      "pass": true
+    },
+    {
+      "seed": "00000000",
+      "steps": 2,
+      "pass": true
+    },
+    {
+      "seed": "00000000",
+      "steps": 31,
+      "pass": true
+    },
+    {
+      "seed": "00000000",
+      "steps": 100,
+      "pass": true
+    },
+    {
+      "seed": "00000001",
+      "steps": 0,
+      "pass": true
+    },
+    {
+      "seed": "00000001",
+      "steps": 1,
+      "pass": true
+    },
+    {
+      "seed": "00000001",
+      "steps": 2,
+      "pass": true
+    },
+    {
+      "seed": "00000001",
+      "steps": 31,
+      "pass": true
+    },
+    {
+      "seed": "00000001",
+      "steps": 100,
+      "pass": true
+    },
+    {
+      "seed": "7FFFFFFF",
+      "steps": 0,
+      "pass": true
+    },
+    {
+      "seed": "7FFFFFFF",
+      "steps": 1,
+      "pass": true
+    },
+    {
+      "seed": "7FFFFFFF",
+      "steps": 2,
+      "pass": true
+    },
+    {
+      "seed": "7FFFFFFF",
+      "steps": 31,
+      "pass": true
+    },
+    {
+      "seed": "7FFFFFFF",
+      "steps": 100,
+      "pass": true
+    },
+    {
+      "seed": "80000000",
+      "steps": 0,
+      "pass": true
+    },
+    {
+      "seed": "80000000",
+      "steps": 1,
+      "pass": true
+    },
+    {
+      "seed": "80000000",
+      "steps": 2,
+      "pass": true
+    },
+    {
+      "seed": "80000000",
+      "steps": 31,
+      "pass": true
+    },
+    {
+      "seed": "80000000",
+      "steps": 100,
+      "pass": true
+    },
+    {
+      "seed": "FFFFFFFF",
+      "steps": 0,
+      "pass": true
+    },
+    {
+      "seed": "FFFFFFFF",
+      "steps": 1,
+      "pass": true
+    },
+    {
+      "seed": "FFFFFFFF",
+      "steps": 2,
+      "pass": true
+    },
+    {
+      "seed": "FFFFFFFF",
+      "steps": 31,
+      "pass": true
+    },
+    {
+      "seed": "FFFFFFFF",
+      "steps": 100,
+      "pass": true
+    },
+    {
+      "seed": "DEADBEEF",
+      "steps": 0,
+      "pass": true
+    },
+    {
+      "seed": "DEADBEEF",
+      "steps": 1,
+      "pass": true
+    },
+    {
+      "seed": "DEADBEEF",
+      "steps": 2,
+      "pass": true
+    },
+    {
+      "seed": "DEADBEEF",
+      "steps": 31,
+      "pass": true
+    },
+    {
+      "seed": "DEADBEEF",
+      "steps": 100,
+      "pass": true
+    },
+    {
+      "seed": "12345678",
+      "steps": 0,
+      "pass": true
+    },
+    {
+      "seed": "12345678",
+      "steps": 1,
+      "pass": true
+    },
+    {
+      "seed": "12345678",
+      "steps": 2,
+      "pass": true
+    },
+    {
+      "seed": "12345678",
+      "steps": 31,
+      "pass": true
+    },
+    {
+      "seed": "12345678",
+      "steps": 100,
+      "pass": true
+    }
+  ],
+  "negative_cases": [
+    {
+      "case": "REJECT_LIVE_SOURCE",
+      "pass": true
+    },
+    {
+      "case": "REJECT_VERSION",
+      "pass": true
+    },
+    {
+      "case": "REJECT_STATE_HEX",
+      "pass": true
+    },
+    {
+      "case": "REJECT_DRAW_LIMIT",
+      "pass": true
+    }
+  ],
+  "positive_pass": 35,
+  "positive_total": 35,
+  "negative_pass": 4,
+  "negative_total": 4,
+  "all_pass": true,
+  "original_runtime_holdrand_captured": false,
+  "conclusion": "External EXE can continue this CRT arithmetic from supplied 32-bit state; actual same-thread state transfer not tested"
+}

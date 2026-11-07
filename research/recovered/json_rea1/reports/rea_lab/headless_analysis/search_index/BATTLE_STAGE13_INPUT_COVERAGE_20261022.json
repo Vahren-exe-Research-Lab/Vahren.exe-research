@@ -1,0 +1,2102 @@
+{
+  "research_id": "BRIDGE-20261022-RESEARCH-13",
+  "source_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "status": "EIGHT_REAL_RETAINED_SNAPSHOTS_AUDITED_WITH_NATIVE_STATIC_BINDINGS",
+  "capture_reports": [
+    {
+      "session": "BATTLE_USER_20261021T163100686424Z_9cddfc86",
+      "file": "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_01.json",
+      "sha256": "7C0A7BD05FFAB908A90BBBEC0863FCE040A99A33A17E75520C9CC19094565332",
+      "pid": 28432,
+      "role_bindings": [
+        {
+          "slot": 0,
+          "class": "Player",
+          "side_ptr": "0x157275f8",
+          "power_ptr": "0x1bfbcbd8",
+          "side_flag_byte18": 1,
+          "opposite_side_ptr": "0x16426010",
+          "power_role": "attack"
+        },
+        {
+          "slot": 1,
+          "class": "Enemy",
+          "side_ptr": "0x16426010",
+          "power_ptr": "0x1bfb9db8",
+          "side_flag_byte18": 0,
+          "opposite_side_ptr": "0x157275f8",
+          "power_role": "defense"
+        },
+        {
+          "slot": 2,
+          "class": "Enemy",
+          "side_ptr": "0x1b5c6c30",
+          "power_ptr": "0x0",
+          "side_flag_byte18": 0,
+          "opposite_side_ptr": "0x0",
+          "power_role": "other_or_empty"
+        }
+      ],
+      "battle_attack_power": "0x1bfbcbd8",
+      "battle_defense_power": "0x1bfb9db8",
+      "outcome_side_pair_indices": [
+        1,
+        0
+      ],
+      "help_powers_equal_defense": [
+        true
+      ],
+      "unit_coverage": {
+        "record_reference": {
+          "offset": "0x1c8",
+          "size": 4,
+          "unit_observations": 384,
+          "status_counts": {
+            "PRESENT": 384
+          }
+        },
+        "troop_reference": {
+          "offset": "0x1d0",
+          "size": 4,
+          "unit_observations": 384,
+          "status_counts": {
+            "PRESENT": 384
+          }
+        },
+        "leader_record_reference": {
+          "offset": "0x1cc",
+          "size": 4,
+          "unit_observations": 384,
+          "status_counts": {
+            "ABSENT": 384
+          }
+        },
+        "runtime_HP_MP": {
+          "offset": "0x90",
+          "size": 8,
+          "unit_observations": 384,
+          "status_counts": {
+            "ABSENT": 384
+          }
+        },
+        "runtime_stats_status": {
+          "offset": "0x98",
+          "size": 76,
+          "unit_observations": 384,
+          "status_counts": {
+            "ABSENT": 384
+          }
+        },
+        "position_candidates": {
+          "offset": "0x214",
+          "size": 28,
+          "unit_observations": 384,
+          "status_counts": {
+            "ABSENT": 384
+          }
+        },
+        "source_child_list_header": {
+          "offset": "0x178",
+          "size": 12,
+          "unit_observations": 384,
+          "status_counts": {
+            "ABSENT": 384
+          }
+        },
+        "summon_cache_header": {
+          "offset": "0x1e4b4",
+          "size": 12,
+          "unit_observations": 384,
+          "status_counts": {
+            "ABSENT": 384
+          }
+        },
+        "generation_owner_link": {
+          "offset": "0x1e594",
+          "size": 4,
+          "unit_observations": 384,
+          "status_counts": {
+            "ABSENT": 384
+          }
+        },
+        "owning_side_reference": {
+          "offset": "0x1d4",
+          "size": 4,
+          "unit_observations": 384,
+          "status_counts": {
+            "ABSENT": 384
+          }
+        }
+      },
+      "event_coverage": {
+        "battle_side_pair": {
+          "offset": "0x1eed44",
+          "required_bytes": 8,
+          "present_bytes": 8,
+          "status": "PRESENT"
+        },
+        "battle_power_pair": {
+          "offset": "0x1eed4c",
+          "required_bytes": 8,
+          "present_bytes": 8,
+          "status": "PRESENT"
+        },
+        "elapsed_and_absolute_tick": {
+          "offset": "0x1eed60",
+          "required_bytes": 8,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "outcome_gate": {
+          "offset": "0x1eed68",
+          "required_bytes": 4,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "vm_block_stack_header": {
+          "offset": "0x1eed78",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "vm_PC_stack_header": {
+          "offset": "0x1eed88",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "vm_mode_stack_header": {
+          "offset": "0x1eed98",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "vm_kind_stack_header": {
+          "offset": "0x1eeda8",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "battle_event_roots": {
+          "offset": "0x1eedb4",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "pending_event_bodies": {
+          "offset": "0x1eedc0",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "map_request_object_candidate": {
+          "offset": "0x1eecc4",
+          "required_bytes": 28,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "special_scene_context": {
+          "offset": "0x1eed18",
+          "required_bytes": 4,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        }
+      },
+      "map_manager_coverage": {
+        "map_manager_candidate_header": {
+          "offset": "0x1ef570",
+          "required_bytes": 536,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        }
+      },
+      "global_coverage": {
+        "crt_slot_index_global": {
+          "offset": "0x25a9a4",
+          "required_bytes": 4,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "native_limit_tag_and_current": {
+          "offset": "0x27b938",
+          "required_bytes": 8,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        }
+      },
+      "task_pass_range": [
+        63,
+        89
+      ],
+      "observed_task_pass_delta": 26,
+      "synchronous_start_proven": false,
+      "full_G1_proven": false
+    },
+    {
+      "session": "BATTLE_USER_20261021T163100686424Z_9cddfc86",
+      "file": "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_02.json",
+      "sha256": "D7662477F8D136EBD98541061A9E896F9B535193046CB0C0F01F95FDC826D9C8",
+      "pid": 28432,
+      "role_bindings": [
+        {
+          "slot": 0,
+          "class": "Player",
+          "side_ptr": "0x157275f8",
+          "power_ptr": "0x1bfbcbd8",
+          "side_flag_byte18": 1,
+          "opposite_side_ptr": "0x16426010",
+          "power_role": "attack"
+        },
+        {
+          "slot": 1,
+          "class": "Enemy",
+          "side_ptr": "0x16426010",
+          "power_ptr": "0x1bfb9db8",
+          "side_flag_byte18": 0,
+          "opposite_side_ptr": "0x157275f8",
+          "power_role": "defense"
+        },
+        {
+          "slot": 2,
+          "class": "Enemy",
+          "side_ptr": "0x1b5c6c30",
+          "power_ptr": "0x0",
+          "side_flag_byte18": 0,
+          "opposite_side_ptr": "0x0",
+          "power_role": "other_or_empty"
+        }
+      ],
+      "battle_attack_power": "0x1bfbcbd8",
+      "battle_defense_power": "0x1bfb9db8",
+      "outcome_side_pair_indices": [
+        1,
+        0
+      ],
+      "help_powers_equal_defense": [
+        true
+      ],
+      "unit_coverage": {
+        "record_reference": {
+          "offset": "0x1c8",
+          "size": 4,
+          "unit_observations": 569,
+          "status_counts": {
+            "PRESENT": 569
+          }
+        },
+        "troop_reference": {
+          "offset": "0x1d0",
+          "size": 4,
+          "unit_observations": 569,
+          "status_counts": {
+            "PRESENT": 569
+          }
+        },
+        "leader_record_reference": {
+          "offset": "0x1cc",
+          "size": 4,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        },
+        "runtime_HP_MP": {
+          "offset": "0x90",
+          "size": 8,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        },
+        "runtime_stats_status": {
+          "offset": "0x98",
+          "size": 76,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        },
+        "position_candidates": {
+          "offset": "0x214",
+          "size": 28,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        },
+        "source_child_list_header": {
+          "offset": "0x178",
+          "size": 12,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        },
+        "summon_cache_header": {
+          "offset": "0x1e4b4",
+          "size": 12,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        },
+        "generation_owner_link": {
+          "offset": "0x1e594",
+          "size": 4,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        },
+        "owning_side_reference": {
+          "offset": "0x1d4",
+          "size": 4,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        }
+      },
+      "event_coverage": {
+        "battle_side_pair": {
+          "offset": "0x1eed44",
+          "required_bytes": 8,
+          "present_bytes": 8,
+          "status": "PRESENT"
+        },
+        "battle_power_pair": {
+          "offset": "0x1eed4c",
+          "required_bytes": 8,
+          "present_bytes": 8,
+          "status": "PRESENT"
+        },
+        "elapsed_and_absolute_tick": {
+          "offset": "0x1eed60",
+          "required_bytes": 8,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "outcome_gate": {
+          "offset": "0x1eed68",
+          "required_bytes": 4,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "vm_block_stack_header": {
+          "offset": "0x1eed78",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "vm_PC_stack_header": {
+          "offset": "0x1eed88",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "vm_mode_stack_header": {
+          "offset": "0x1eed98",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "vm_kind_stack_header": {
+          "offset": "0x1eeda8",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "battle_event_roots": {
+          "offset": "0x1eedb4",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "pending_event_bodies": {
+          "offset": "0x1eedc0",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "map_request_object_candidate": {
+          "offset": "0x1eecc4",
+          "required_bytes": 28,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "special_scene_context": {
+          "offset": "0x1eed18",
+          "required_bytes": 4,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        }
+      },
+      "map_manager_coverage": {
+        "map_manager_candidate_header": {
+          "offset": "0x1ef570",
+          "required_bytes": 536,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        }
+      },
+      "global_coverage": {
+        "crt_slot_index_global": {
+          "offset": "0x25a9a4",
+          "required_bytes": 4,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "native_limit_tag_and_current": {
+          "offset": "0x27b938",
+          "required_bytes": 8,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        }
+      },
+      "task_pass_range": [
+        99,
+        118
+      ],
+      "observed_task_pass_delta": 19,
+      "synchronous_start_proven": false,
+      "full_G1_proven": false
+    },
+    {
+      "session": "BATTLE_USER_20261021T163100686424Z_9cddfc86",
+      "file": "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_03.json",
+      "sha256": "4806E392CBC3ED29756C5C3BCDC65ABD40B176DF6AFFC80CE6C420A5F66CA088",
+      "pid": 28432,
+      "role_bindings": [
+        {
+          "slot": 0,
+          "class": "Player",
+          "side_ptr": "0x157275f8",
+          "power_ptr": "0x1bfbcbd8",
+          "side_flag_byte18": 1,
+          "opposite_side_ptr": "0x16426010",
+          "power_role": "attack"
+        },
+        {
+          "slot": 1,
+          "class": "Enemy",
+          "side_ptr": "0x16426010",
+          "power_ptr": "0x1bfb9db8",
+          "side_flag_byte18": 0,
+          "opposite_side_ptr": "0x157275f8",
+          "power_role": "defense"
+        },
+        {
+          "slot": 2,
+          "class": "Enemy",
+          "side_ptr": "0x1b5c6c30",
+          "power_ptr": "0x0",
+          "side_flag_byte18": 0,
+          "opposite_side_ptr": "0x0",
+          "power_role": "other_or_empty"
+        }
+      ],
+      "battle_attack_power": "0x1bfbcbd8",
+      "battle_defense_power": "0x1bfb9db8",
+      "outcome_side_pair_indices": [
+        1,
+        0
+      ],
+      "help_powers_equal_defense": [
+        true
+      ],
+      "unit_coverage": {
+        "record_reference": {
+          "offset": "0x1c8",
+          "size": 4,
+          "unit_observations": 569,
+          "status_counts": {
+            "PRESENT": 569
+          }
+        },
+        "troop_reference": {
+          "offset": "0x1d0",
+          "size": 4,
+          "unit_observations": 569,
+          "status_counts": {
+            "PRESENT": 569
+          }
+        },
+        "leader_record_reference": {
+          "offset": "0x1cc",
+          "size": 4,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        },
+        "runtime_HP_MP": {
+          "offset": "0x90",
+          "size": 8,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        },
+        "runtime_stats_status": {
+          "offset": "0x98",
+          "size": 76,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        },
+        "position_candidates": {
+          "offset": "0x214",
+          "size": 28,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        },
+        "source_child_list_header": {
+          "offset": "0x178",
+          "size": 12,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        },
+        "summon_cache_header": {
+          "offset": "0x1e4b4",
+          "size": 12,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        },
+        "generation_owner_link": {
+          "offset": "0x1e594",
+          "size": 4,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        },
+        "owning_side_reference": {
+          "offset": "0x1d4",
+          "size": 4,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        }
+      },
+      "event_coverage": {
+        "battle_side_pair": {
+          "offset": "0x1eed44",
+          "required_bytes": 8,
+          "present_bytes": 8,
+          "status": "PRESENT"
+        },
+        "battle_power_pair": {
+          "offset": "0x1eed4c",
+          "required_bytes": 8,
+          "present_bytes": 8,
+          "status": "PRESENT"
+        },
+        "elapsed_and_absolute_tick": {
+          "offset": "0x1eed60",
+          "required_bytes": 8,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "outcome_gate": {
+          "offset": "0x1eed68",
+          "required_bytes": 4,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "vm_block_stack_header": {
+          "offset": "0x1eed78",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "vm_PC_stack_header": {
+          "offset": "0x1eed88",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "vm_mode_stack_header": {
+          "offset": "0x1eed98",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "vm_kind_stack_header": {
+          "offset": "0x1eeda8",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "battle_event_roots": {
+          "offset": "0x1eedb4",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "pending_event_bodies": {
+          "offset": "0x1eedc0",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "map_request_object_candidate": {
+          "offset": "0x1eecc4",
+          "required_bytes": 28,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "special_scene_context": {
+          "offset": "0x1eed18",
+          "required_bytes": 4,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        }
+      },
+      "map_manager_coverage": {
+        "map_manager_candidate_header": {
+          "offset": "0x1ef570",
+          "required_bytes": 536,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        }
+      },
+      "global_coverage": {
+        "crt_slot_index_global": {
+          "offset": "0x25a9a4",
+          "required_bytes": 4,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "native_limit_tag_and_current": {
+          "offset": "0x27b938",
+          "required_bytes": 8,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        }
+      },
+      "task_pass_range": [
+        128,
+        196
+      ],
+      "observed_task_pass_delta": 68,
+      "synchronous_start_proven": false,
+      "full_G1_proven": false
+    },
+    {
+      "session": "BATTLE_USER_20261021T163100686424Z_9cddfc86",
+      "file": "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_05.json",
+      "sha256": "77B29DC80A2CA84BD347A56D63E3830D54044358599961D0C7D0678B6352F9E7",
+      "pid": 28432,
+      "role_bindings": [
+        {
+          "slot": 0,
+          "class": "Player",
+          "side_ptr": "0x157275f8",
+          "power_ptr": "0x1bfbcbd8",
+          "side_flag_byte18": 1,
+          "opposite_side_ptr": "0x16426010",
+          "power_role": "attack"
+        },
+        {
+          "slot": 1,
+          "class": "Enemy",
+          "side_ptr": "0x16426010",
+          "power_ptr": "0x1bfb9db8",
+          "side_flag_byte18": 0,
+          "opposite_side_ptr": "0x157275f8",
+          "power_role": "defense"
+        },
+        {
+          "slot": 2,
+          "class": "Enemy",
+          "side_ptr": "0x1b5c6c30",
+          "power_ptr": "0x0",
+          "side_flag_byte18": 0,
+          "opposite_side_ptr": "0x0",
+          "power_role": "other_or_empty"
+        }
+      ],
+      "battle_attack_power": "0x1bfbcbd8",
+      "battle_defense_power": "0x1bfb9db8",
+      "outcome_side_pair_indices": [
+        1,
+        0
+      ],
+      "help_powers_equal_defense": [
+        true
+      ],
+      "unit_coverage": {
+        "record_reference": {
+          "offset": "0x1c8",
+          "size": 4,
+          "unit_observations": 569,
+          "status_counts": {
+            "PRESENT": 569
+          }
+        },
+        "troop_reference": {
+          "offset": "0x1d0",
+          "size": 4,
+          "unit_observations": 569,
+          "status_counts": {
+            "PRESENT": 569
+          }
+        },
+        "leader_record_reference": {
+          "offset": "0x1cc",
+          "size": 4,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        },
+        "runtime_HP_MP": {
+          "offset": "0x90",
+          "size": 8,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        },
+        "runtime_stats_status": {
+          "offset": "0x98",
+          "size": 76,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        },
+        "position_candidates": {
+          "offset": "0x214",
+          "size": 28,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        },
+        "source_child_list_header": {
+          "offset": "0x178",
+          "size": 12,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        },
+        "summon_cache_header": {
+          "offset": "0x1e4b4",
+          "size": 12,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        },
+        "generation_owner_link": {
+          "offset": "0x1e594",
+          "size": 4,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        },
+        "owning_side_reference": {
+          "offset": "0x1d4",
+          "size": 4,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        }
+      },
+      "event_coverage": {
+        "battle_side_pair": {
+          "offset": "0x1eed44",
+          "required_bytes": 8,
+          "present_bytes": 8,
+          "status": "PRESENT"
+        },
+        "battle_power_pair": {
+          "offset": "0x1eed4c",
+          "required_bytes": 8,
+          "present_bytes": 8,
+          "status": "PRESENT"
+        },
+        "elapsed_and_absolute_tick": {
+          "offset": "0x1eed60",
+          "required_bytes": 8,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "outcome_gate": {
+          "offset": "0x1eed68",
+          "required_bytes": 4,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "vm_block_stack_header": {
+          "offset": "0x1eed78",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "vm_PC_stack_header": {
+          "offset": "0x1eed88",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "vm_mode_stack_header": {
+          "offset": "0x1eed98",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "vm_kind_stack_header": {
+          "offset": "0x1eeda8",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "battle_event_roots": {
+          "offset": "0x1eedb4",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "pending_event_bodies": {
+          "offset": "0x1eedc0",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "map_request_object_candidate": {
+          "offset": "0x1eecc4",
+          "required_bytes": 28,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "special_scene_context": {
+          "offset": "0x1eed18",
+          "required_bytes": 4,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        }
+      },
+      "map_manager_coverage": {
+        "map_manager_candidate_header": {
+          "offset": "0x1ef570",
+          "required_bytes": 536,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        }
+      },
+      "global_coverage": {
+        "crt_slot_index_global": {
+          "offset": "0x25a9a4",
+          "required_bytes": 4,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "native_limit_tag_and_current": {
+          "offset": "0x27b938",
+          "required_bytes": 8,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        }
+      },
+      "task_pass_range": [
+        238,
+        293
+      ],
+      "observed_task_pass_delta": 55,
+      "synchronous_start_proven": false,
+      "full_G1_proven": false
+    },
+    {
+      "session": "BATTLE_USER_20261021T164622798833Z_b8419f5d",
+      "file": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_01.json",
+      "sha256": "9DE328DA5FBFF98151ED2A26133FC123EABE6972DF1C6588F0DC4AB26098A034",
+      "pid": 32468,
+      "role_bindings": [
+        {
+          "slot": 0,
+          "class": "Player",
+          "side_ptr": "0x1e4d9870",
+          "power_ptr": "0x153c4a70",
+          "side_flag_byte18": 1,
+          "opposite_side_ptr": "0x1daa4d60",
+          "power_role": "attack"
+        },
+        {
+          "slot": 1,
+          "class": "Enemy",
+          "side_ptr": "0x1daa4d60",
+          "power_ptr": "0x153c4d00",
+          "side_flag_byte18": 0,
+          "opposite_side_ptr": "0x1e4d9870",
+          "power_role": "defense"
+        },
+        {
+          "slot": 2,
+          "class": "Enemy",
+          "side_ptr": "0x1de86c28",
+          "power_ptr": "0x0",
+          "side_flag_byte18": 0,
+          "opposite_side_ptr": "0x0",
+          "power_role": "other_or_empty"
+        }
+      ],
+      "battle_attack_power": "0x153c4a70",
+      "battle_defense_power": "0x153c4d00",
+      "outcome_side_pair_indices": [
+        1,
+        0
+      ],
+      "help_powers_equal_defense": [
+        true
+      ],
+      "unit_coverage": {
+        "record_reference": {
+          "offset": "0x1c8",
+          "size": 4,
+          "unit_observations": 384,
+          "status_counts": {
+            "PRESENT": 384
+          }
+        },
+        "troop_reference": {
+          "offset": "0x1d0",
+          "size": 4,
+          "unit_observations": 384,
+          "status_counts": {
+            "PRESENT": 384
+          }
+        },
+        "leader_record_reference": {
+          "offset": "0x1cc",
+          "size": 4,
+          "unit_observations": 384,
+          "status_counts": {
+            "ABSENT": 384
+          }
+        },
+        "runtime_HP_MP": {
+          "offset": "0x90",
+          "size": 8,
+          "unit_observations": 384,
+          "status_counts": {
+            "ABSENT": 384
+          }
+        },
+        "runtime_stats_status": {
+          "offset": "0x98",
+          "size": 76,
+          "unit_observations": 384,
+          "status_counts": {
+            "ABSENT": 384
+          }
+        },
+        "position_candidates": {
+          "offset": "0x214",
+          "size": 28,
+          "unit_observations": 384,
+          "status_counts": {
+            "ABSENT": 384
+          }
+        },
+        "source_child_list_header": {
+          "offset": "0x178",
+          "size": 12,
+          "unit_observations": 384,
+          "status_counts": {
+            "ABSENT": 384
+          }
+        },
+        "summon_cache_header": {
+          "offset": "0x1e4b4",
+          "size": 12,
+          "unit_observations": 384,
+          "status_counts": {
+            "ABSENT": 384
+          }
+        },
+        "generation_owner_link": {
+          "offset": "0x1e594",
+          "size": 4,
+          "unit_observations": 384,
+          "status_counts": {
+            "ABSENT": 384
+          }
+        },
+        "owning_side_reference": {
+          "offset": "0x1d4",
+          "size": 4,
+          "unit_observations": 384,
+          "status_counts": {
+            "ABSENT": 384
+          }
+        }
+      },
+      "event_coverage": {
+        "battle_side_pair": {
+          "offset": "0x1eed44",
+          "required_bytes": 8,
+          "present_bytes": 8,
+          "status": "PRESENT"
+        },
+        "battle_power_pair": {
+          "offset": "0x1eed4c",
+          "required_bytes": 8,
+          "present_bytes": 8,
+          "status": "PRESENT"
+        },
+        "elapsed_and_absolute_tick": {
+          "offset": "0x1eed60",
+          "required_bytes": 8,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "outcome_gate": {
+          "offset": "0x1eed68",
+          "required_bytes": 4,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "vm_block_stack_header": {
+          "offset": "0x1eed78",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "vm_PC_stack_header": {
+          "offset": "0x1eed88",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "vm_mode_stack_header": {
+          "offset": "0x1eed98",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "vm_kind_stack_header": {
+          "offset": "0x1eeda8",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "battle_event_roots": {
+          "offset": "0x1eedb4",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "pending_event_bodies": {
+          "offset": "0x1eedc0",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "map_request_object_candidate": {
+          "offset": "0x1eecc4",
+          "required_bytes": 28,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "special_scene_context": {
+          "offset": "0x1eed18",
+          "required_bytes": 4,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        }
+      },
+      "map_manager_coverage": {
+        "map_manager_candidate_header": {
+          "offset": "0x1ef570",
+          "required_bytes": 536,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        }
+      },
+      "global_coverage": {
+        "crt_slot_index_global": {
+          "offset": "0x25a9a4",
+          "required_bytes": 4,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "native_limit_tag_and_current": {
+          "offset": "0x27b938",
+          "required_bytes": 8,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        }
+      },
+      "task_pass_range": [
+        73,
+        94
+      ],
+      "observed_task_pass_delta": 21,
+      "synchronous_start_proven": false,
+      "full_G1_proven": false
+    },
+    {
+      "session": "BATTLE_USER_20261021T164622798833Z_b8419f5d",
+      "file": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_02.json",
+      "sha256": "285F30D088752016F1792800EE8DD7E32E630BB5523C464FEC737DA7D4B7C614",
+      "pid": 32468,
+      "role_bindings": [
+        {
+          "slot": 0,
+          "class": "Player",
+          "side_ptr": "0x1e4d9870",
+          "power_ptr": "0x153c4a70",
+          "side_flag_byte18": 1,
+          "opposite_side_ptr": "0x1daa4d60",
+          "power_role": "attack"
+        },
+        {
+          "slot": 1,
+          "class": "Enemy",
+          "side_ptr": "0x1daa4d60",
+          "power_ptr": "0x153c4d00",
+          "side_flag_byte18": 0,
+          "opposite_side_ptr": "0x1e4d9870",
+          "power_role": "defense"
+        },
+        {
+          "slot": 2,
+          "class": "Enemy",
+          "side_ptr": "0x1de86c28",
+          "power_ptr": "0x0",
+          "side_flag_byte18": 0,
+          "opposite_side_ptr": "0x0",
+          "power_role": "other_or_empty"
+        }
+      ],
+      "battle_attack_power": "0x153c4a70",
+      "battle_defense_power": "0x153c4d00",
+      "outcome_side_pair_indices": [
+        1,
+        0
+      ],
+      "help_powers_equal_defense": [
+        true
+      ],
+      "unit_coverage": {
+        "record_reference": {
+          "offset": "0x1c8",
+          "size": 4,
+          "unit_observations": 569,
+          "status_counts": {
+            "PRESENT": 569
+          }
+        },
+        "troop_reference": {
+          "offset": "0x1d0",
+          "size": 4,
+          "unit_observations": 569,
+          "status_counts": {
+            "PRESENT": 569
+          }
+        },
+        "leader_record_reference": {
+          "offset": "0x1cc",
+          "size": 4,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        },
+        "runtime_HP_MP": {
+          "offset": "0x90",
+          "size": 8,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        },
+        "runtime_stats_status": {
+          "offset": "0x98",
+          "size": 76,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        },
+        "position_candidates": {
+          "offset": "0x214",
+          "size": 28,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        },
+        "source_child_list_header": {
+          "offset": "0x178",
+          "size": 12,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        },
+        "summon_cache_header": {
+          "offset": "0x1e4b4",
+          "size": 12,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        },
+        "generation_owner_link": {
+          "offset": "0x1e594",
+          "size": 4,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        },
+        "owning_side_reference": {
+          "offset": "0x1d4",
+          "size": 4,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        }
+      },
+      "event_coverage": {
+        "battle_side_pair": {
+          "offset": "0x1eed44",
+          "required_bytes": 8,
+          "present_bytes": 8,
+          "status": "PRESENT"
+        },
+        "battle_power_pair": {
+          "offset": "0x1eed4c",
+          "required_bytes": 8,
+          "present_bytes": 8,
+          "status": "PRESENT"
+        },
+        "elapsed_and_absolute_tick": {
+          "offset": "0x1eed60",
+          "required_bytes": 8,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "outcome_gate": {
+          "offset": "0x1eed68",
+          "required_bytes": 4,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "vm_block_stack_header": {
+          "offset": "0x1eed78",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "vm_PC_stack_header": {
+          "offset": "0x1eed88",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "vm_mode_stack_header": {
+          "offset": "0x1eed98",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "vm_kind_stack_header": {
+          "offset": "0x1eeda8",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "battle_event_roots": {
+          "offset": "0x1eedb4",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "pending_event_bodies": {
+          "offset": "0x1eedc0",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "map_request_object_candidate": {
+          "offset": "0x1eecc4",
+          "required_bytes": 28,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "special_scene_context": {
+          "offset": "0x1eed18",
+          "required_bytes": 4,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        }
+      },
+      "map_manager_coverage": {
+        "map_manager_candidate_header": {
+          "offset": "0x1ef570",
+          "required_bytes": 536,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        }
+      },
+      "global_coverage": {
+        "crt_slot_index_global": {
+          "offset": "0x25a9a4",
+          "required_bytes": 4,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "native_limit_tag_and_current": {
+          "offset": "0x27b938",
+          "required_bytes": 8,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        }
+      },
+      "task_pass_range": [
+        100,
+        134
+      ],
+      "observed_task_pass_delta": 34,
+      "synchronous_start_proven": false,
+      "full_G1_proven": false
+    },
+    {
+      "session": "BATTLE_USER_20261021T164622798833Z_b8419f5d",
+      "file": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_04.json",
+      "sha256": "BC5C91413202D1F2512EFEE679B7DA08CD8DA0CA4E86AFCCED288E4BD051056A",
+      "pid": 32468,
+      "role_bindings": [
+        {
+          "slot": 0,
+          "class": "Player",
+          "side_ptr": "0x1e4d9870",
+          "power_ptr": "0x153c4a70",
+          "side_flag_byte18": 1,
+          "opposite_side_ptr": "0x1daa4d60",
+          "power_role": "attack"
+        },
+        {
+          "slot": 1,
+          "class": "Enemy",
+          "side_ptr": "0x1daa4d60",
+          "power_ptr": "0x153c4d00",
+          "side_flag_byte18": 0,
+          "opposite_side_ptr": "0x1e4d9870",
+          "power_role": "defense"
+        },
+        {
+          "slot": 2,
+          "class": "Enemy",
+          "side_ptr": "0x1de86c28",
+          "power_ptr": "0x0",
+          "side_flag_byte18": 0,
+          "opposite_side_ptr": "0x0",
+          "power_role": "other_or_empty"
+        }
+      ],
+      "battle_attack_power": "0x153c4a70",
+      "battle_defense_power": "0x153c4d00",
+      "outcome_side_pair_indices": [
+        1,
+        0
+      ],
+      "help_powers_equal_defense": [
+        true
+      ],
+      "unit_coverage": {
+        "record_reference": {
+          "offset": "0x1c8",
+          "size": 4,
+          "unit_observations": 569,
+          "status_counts": {
+            "PRESENT": 569
+          }
+        },
+        "troop_reference": {
+          "offset": "0x1d0",
+          "size": 4,
+          "unit_observations": 569,
+          "status_counts": {
+            "PRESENT": 569
+          }
+        },
+        "leader_record_reference": {
+          "offset": "0x1cc",
+          "size": 4,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        },
+        "runtime_HP_MP": {
+          "offset": "0x90",
+          "size": 8,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        },
+        "runtime_stats_status": {
+          "offset": "0x98",
+          "size": 76,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        },
+        "position_candidates": {
+          "offset": "0x214",
+          "size": 28,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        },
+        "source_child_list_header": {
+          "offset": "0x178",
+          "size": 12,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        },
+        "summon_cache_header": {
+          "offset": "0x1e4b4",
+          "size": 12,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        },
+        "generation_owner_link": {
+          "offset": "0x1e594",
+          "size": 4,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        },
+        "owning_side_reference": {
+          "offset": "0x1d4",
+          "size": 4,
+          "unit_observations": 569,
+          "status_counts": {
+            "ABSENT": 569
+          }
+        }
+      },
+      "event_coverage": {
+        "battle_side_pair": {
+          "offset": "0x1eed44",
+          "required_bytes": 8,
+          "present_bytes": 8,
+          "status": "PRESENT"
+        },
+        "battle_power_pair": {
+          "offset": "0x1eed4c",
+          "required_bytes": 8,
+          "present_bytes": 8,
+          "status": "PRESENT"
+        },
+        "elapsed_and_absolute_tick": {
+          "offset": "0x1eed60",
+          "required_bytes": 8,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "outcome_gate": {
+          "offset": "0x1eed68",
+          "required_bytes": 4,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "vm_block_stack_header": {
+          "offset": "0x1eed78",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "vm_PC_stack_header": {
+          "offset": "0x1eed88",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "vm_mode_stack_header": {
+          "offset": "0x1eed98",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "vm_kind_stack_header": {
+          "offset": "0x1eeda8",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "battle_event_roots": {
+          "offset": "0x1eedb4",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "pending_event_bodies": {
+          "offset": "0x1eedc0",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "map_request_object_candidate": {
+          "offset": "0x1eecc4",
+          "required_bytes": 28,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "special_scene_context": {
+          "offset": "0x1eed18",
+          "required_bytes": 4,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        }
+      },
+      "map_manager_coverage": {
+        "map_manager_candidate_header": {
+          "offset": "0x1ef570",
+          "required_bytes": 536,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        }
+      },
+      "global_coverage": {
+        "crt_slot_index_global": {
+          "offset": "0x25a9a4",
+          "required_bytes": 4,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "native_limit_tag_and_current": {
+          "offset": "0x27b938",
+          "required_bytes": 8,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        }
+      },
+      "task_pass_range": [
+        176,
+        253
+      ],
+      "observed_task_pass_delta": 77,
+      "synchronous_start_proven": false,
+      "full_G1_proven": false
+    },
+    {
+      "session": "BATTLE_USER_20261021T164622798833Z_b8419f5d",
+      "file": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_05.json",
+      "sha256": "72FF106B32D2AF20384685A0F45D8DB587EE5EFC9F3F93C75F43E31EB77A3108",
+      "pid": 32468,
+      "role_bindings": [
+        {
+          "slot": 0,
+          "class": "Player",
+          "side_ptr": "0x1e4d9870",
+          "power_ptr": "0x153c4a70",
+          "side_flag_byte18": 1,
+          "opposite_side_ptr": "0x1daa4d60",
+          "power_role": "attack"
+        },
+        {
+          "slot": 1,
+          "class": "Enemy",
+          "side_ptr": "0x1daa4d60",
+          "power_ptr": "0x153c4d00",
+          "side_flag_byte18": 0,
+          "opposite_side_ptr": "0x1e4d9870",
+          "power_role": "defense"
+        },
+        {
+          "slot": 2,
+          "class": "Enemy",
+          "side_ptr": "0x1de86c28",
+          "power_ptr": "0x0",
+          "side_flag_byte18": 0,
+          "opposite_side_ptr": "0x0",
+          "power_role": "other_or_empty"
+        }
+      ],
+      "battle_attack_power": "0x153c4a70",
+      "battle_defense_power": "0x153c4d00",
+      "outcome_side_pair_indices": [
+        1,
+        0
+      ],
+      "help_powers_equal_defense": [
+        true
+      ],
+      "unit_coverage": {
+        "record_reference": {
+          "offset": "0x1c8",
+          "size": 4,
+          "unit_observations": 577,
+          "status_counts": {
+            "PRESENT": 577
+          }
+        },
+        "troop_reference": {
+          "offset": "0x1d0",
+          "size": 4,
+          "unit_observations": 577,
+          "status_counts": {
+            "PRESENT": 577
+          }
+        },
+        "leader_record_reference": {
+          "offset": "0x1cc",
+          "size": 4,
+          "unit_observations": 577,
+          "status_counts": {
+            "ABSENT": 577
+          }
+        },
+        "runtime_HP_MP": {
+          "offset": "0x90",
+          "size": 8,
+          "unit_observations": 577,
+          "status_counts": {
+            "ABSENT": 577
+          }
+        },
+        "runtime_stats_status": {
+          "offset": "0x98",
+          "size": 76,
+          "unit_observations": 577,
+          "status_counts": {
+            "ABSENT": 577
+          }
+        },
+        "position_candidates": {
+          "offset": "0x214",
+          "size": 28,
+          "unit_observations": 577,
+          "status_counts": {
+            "ABSENT": 577
+          }
+        },
+        "source_child_list_header": {
+          "offset": "0x178",
+          "size": 12,
+          "unit_observations": 577,
+          "status_counts": {
+            "ABSENT": 577
+          }
+        },
+        "summon_cache_header": {
+          "offset": "0x1e4b4",
+          "size": 12,
+          "unit_observations": 577,
+          "status_counts": {
+            "ABSENT": 577
+          }
+        },
+        "generation_owner_link": {
+          "offset": "0x1e594",
+          "size": 4,
+          "unit_observations": 577,
+          "status_counts": {
+            "ABSENT": 577
+          }
+        },
+        "owning_side_reference": {
+          "offset": "0x1d4",
+          "size": 4,
+          "unit_observations": 577,
+          "status_counts": {
+            "ABSENT": 577
+          }
+        }
+      },
+      "event_coverage": {
+        "battle_side_pair": {
+          "offset": "0x1eed44",
+          "required_bytes": 8,
+          "present_bytes": 8,
+          "status": "PRESENT"
+        },
+        "battle_power_pair": {
+          "offset": "0x1eed4c",
+          "required_bytes": 8,
+          "present_bytes": 8,
+          "status": "PRESENT"
+        },
+        "elapsed_and_absolute_tick": {
+          "offset": "0x1eed60",
+          "required_bytes": 8,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "outcome_gate": {
+          "offset": "0x1eed68",
+          "required_bytes": 4,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "vm_block_stack_header": {
+          "offset": "0x1eed78",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "vm_PC_stack_header": {
+          "offset": "0x1eed88",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "vm_mode_stack_header": {
+          "offset": "0x1eed98",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "vm_kind_stack_header": {
+          "offset": "0x1eeda8",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "battle_event_roots": {
+          "offset": "0x1eedb4",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "pending_event_bodies": {
+          "offset": "0x1eedc0",
+          "required_bytes": 12,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "map_request_object_candidate": {
+          "offset": "0x1eecc4",
+          "required_bytes": 28,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "special_scene_context": {
+          "offset": "0x1eed18",
+          "required_bytes": 4,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        }
+      },
+      "map_manager_coverage": {
+        "map_manager_candidate_header": {
+          "offset": "0x1ef570",
+          "required_bytes": 536,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        }
+      },
+      "global_coverage": {
+        "crt_slot_index_global": {
+          "offset": "0x25a9a4",
+          "required_bytes": 4,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        },
+        "native_limit_tag_and_current": {
+          "offset": "0x27b938",
+          "required_bytes": 8,
+          "present_bytes": 0,
+          "status": "ABSENT"
+        }
+      },
+      "task_pass_range": [
+        272,
+        373
+      ],
+      "observed_task_pass_delta": 101,
+      "synchronous_start_proven": false,
+      "full_G1_proven": false
+    }
+  ],
+  "total_unit_observations": 4190,
+  "source_files_verified": [
+    {
+      "name": "BATTLE_USER_20261021T163100686424Z_9cddfc86_READY.json",
+      "sha256": "684F89126C51E8879605A5FF14ABFCA268CA2B781D3C2D3FCE3F58664DD53490"
+    },
+    {
+      "name": "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_01.json",
+      "sha256": "7C0A7BD05FFAB908A90BBBEC0863FCE040A99A33A17E75520C9CC19094565332"
+    },
+    {
+      "name": "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_02.json",
+      "sha256": "D7662477F8D136EBD98541061A9E896F9B535193046CB0C0F01F95FDC826D9C8"
+    },
+    {
+      "name": "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_03.json",
+      "sha256": "4806E392CBC3ED29756C5C3BCDC65ABD40B176DF6AFFC80CE6C420A5F66CA088"
+    },
+    {
+      "name": "BATTLE_USER_20261021T163100686424Z_9cddfc86_FAILURE_04.json",
+      "sha256": "F7FBC52248ACA34A97A325450E829E72453C30AA6121231B4BF8A81A780D4286"
+    },
+    {
+      "name": "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_05.json",
+      "sha256": "77B29DC80A2CA84BD347A56D63E3830D54044358599961D0C7D0678B6352F9E7"
+    },
+    {
+      "name": "BATTLE_USER_20261021T164622798833Z_b8419f5d_READY.json",
+      "sha256": "8FBD74A1642B6A57B29A99DDC6CB9742EAE581E11B78A0595903CA452540DDCE"
+    },
+    {
+      "name": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_01.json",
+      "sha256": "9DE328DA5FBFF98151ED2A26133FC123EABE6972DF1C6588F0DC4AB26098A034"
+    },
+    {
+      "name": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_02.json",
+      "sha256": "285F30D088752016F1792800EE8DD7E32E630BB5523C464FEC737DA7D4B7C614"
+    },
+    {
+      "name": "BATTLE_USER_20261021T164622798833Z_b8419f5d_FAILURE_03.json",
+      "sha256": "75C0DD4DC066E9FC002630F803D673F52D7793B2E309E9F2C0B6B368C0FA16BF"
+    },
+    {
+      "name": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_04.json",
+      "sha256": "BC5C91413202D1F2512EFEE679B7DA08CD8DA0CA4E86AFCCED288E4BD051056A"
+    },
+    {
+      "name": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_05.json",
+      "sha256": "72FF106B32D2AF20384685A0F45D8DB587EE5EFC9F3F93C75F43E31EB77A3108"
+    }
+  ],
+  "protected_source_hashes": {
+    "BATTLE_USER_20261021T163100686424Z_9cddfc86_SUMMARY.json": "51B05D0C964897B875F5F81B282CBEBB2DC46E674BA2EC0294E8017C0658CF7D",
+    "BATTLE_USER_20261021T163100686424Z_9cddfc86_EVENTS.jsonl": "BDF3F4757D4E22C712432B788AF7FD7110736AF9A4E7E0F9521A7E0782A0DD26",
+    "battle_user_recorder_core_20261022.py": "DE4D60A4697E104BF4D7A75FE30DF9640089313D9AF40BB2A4703F593785CACC",
+    "battle_native_detached_capture_v7_20261022.py": "C8E590CB1ECD69CD18E30164F7DEA74BC6DB29D80C9FCB57991A3F567053126F",
+    "battle_native_war_tree_decoder_v5_20261021.py": "0DD7C9EBD0BF97E4BA421FEC02909A44A9B6ABDA4A3538239B479530D909EB6A",
+    "battle_native_readonly_live_probe_stage6_20261021.py": "E64634E6B18DCFD06CFE9740F0C80B7AACD8FA8CAD8D686288C6DD02ED32F685",
+    "BATTLE_USER_20261021T163100686424Z_9cddfc86_READY.json": "684F89126C51E8879605A5FF14ABFCA268CA2B781D3C2D3FCE3F58664DD53490",
+    "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_01.json": "7C0A7BD05FFAB908A90BBBEC0863FCE040A99A33A17E75520C9CC19094565332",
+    "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_02.json": "D7662477F8D136EBD98541061A9E896F9B535193046CB0C0F01F95FDC826D9C8",
+    "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_03.json": "4806E392CBC3ED29756C5C3BCDC65ABD40B176DF6AFFC80CE6C420A5F66CA088",
+    "BATTLE_USER_20261021T163100686424Z_9cddfc86_FAILURE_04.json": "F7FBC52248ACA34A97A325450E829E72453C30AA6121231B4BF8A81A780D4286",
+    "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_05.json": "77B29DC80A2CA84BD347A56D63E3830D54044358599961D0C7D0678B6352F9E7",
+    "BATTLE_USER_20261021T164622798833Z_b8419f5d_SUMMARY.json": "9E0FEC62DE5604E9BA991E155A629BDB2CE2969D293CBBA75A187AB3CF90568F",
+    "BATTLE_USER_20261021T164622798833Z_b8419f5d_EVENTS.jsonl": "5B61ECAC3477EA762F951D8ADD74D751517402DA98D683BDFAE5CDDB801D62B9",
+    "BATTLE_USER_20261021T164622798833Z_b8419f5d_READY.json": "8FBD74A1642B6A57B29A99DDC6CB9742EAE581E11B78A0595903CA452540DDCE",
+    "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_01.json": "9DE328DA5FBFF98151ED2A26133FC123EABE6972DF1C6588F0DC4AB26098A034",
+    "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_02.json": "285F30D088752016F1792800EE8DD7E32E630BB5523C464FEC737DA7D4B7C614",
+    "BATTLE_USER_20261021T164622798833Z_b8419f5d_FAILURE_03.json": "75C0DD4DC066E9FC002630F803D673F52D7793B2E309E9F2C0B6B368C0FA16BF",
+    "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_04.json": "BC5C91413202D1F2512EFEE679B7DA08CD8DA0CA4E86AFCCED288E4BD051056A",
+    "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_05.json": "72FF106B32D2AF20384685A0F45D8DB587EE5EFC9F3F93C75F43E31EB77A3108"
+  },
+  "native_exact_instruction_evidence": [
+    {
+      "function": "0x493630",
+      "site": "0x493ecc",
+      "bytes": "8b8550ed1e00",
+      "instruction": "mov eax, dword ptr [ebp + 0x1eed50]"
+    },
+    {
+      "function": "0x493630",
+      "site": "0x493ef3",
+      "bytes": "b944226300",
+      "instruction": "mov ecx, 0x632244"
+    },
+    {
+      "function": "0x493630",
+      "site": "0x493efd",
+      "bytes": "8b854ced1e00",
+      "instruction": "mov eax, dword ptr [ebp + 0x1eed4c]"
+    },
+    {
+      "function": "0x493630",
+      "site": "0x493f24",
+      "bytes": "b954226300",
+      "instruction": "mov ecx, 0x632254"
+    },
+    {
+      "function": "0x514a80",
+      "site": "0x514a88",
+      "bytes": "894114",
+      "instruction": "mov dword ptr [ecx + 0x14], eax"
+    },
+    {
+      "function": "0x514a80",
+      "site": "0x514a8f",
+      "bytes": "885118",
+      "instruction": "mov byte ptr [ecx + 0x18], dl"
+    },
+    {
+      "function": "0x514a80",
+      "site": "0x514a92",
+      "bytes": "89411c",
+      "instruction": "mov dword ptr [ecx + 0x1c], eax"
+    },
+    {
+      "function": "0x48d6a0",
+      "site": "0x48d801",
+      "bytes": "8d9070f51e00",
+      "instruction": "lea edx, [eax + 0x1ef570]"
+    },
+    {
+      "function": "0x48d6a0",
+      "site": "0x48e15a",
+      "bytes": "8d83c4ec1e00",
+      "instruction": "lea eax, [ebx + 0x1eecc4]"
+    },
+    {
+      "function": "0x48d6a0",
+      "site": "0x48e180",
+      "bytes": "e85b2a0600",
+      "instruction": "call 0x4f0be0"
+    },
+    {
+      "function": "0x4338d0",
+      "site": "0x4339b1",
+      "bytes": "8b8e78ed1e00",
+      "instruction": "mov ecx, dword ptr [esi + 0x1eed78]"
+    },
+    {
+      "function": "0x4338d0",
+      "site": "0x4339c3",
+      "bytes": "8bbe9ced1e00",
+      "instruction": "mov edi, dword ptr [esi + 0x1eed9c]"
+    },
+    {
+      "function": "0x4338d0",
+      "site": "0x4339d5",
+      "bytes": "8b868ced1e00",
+      "instruction": "mov eax, dword ptr [esi + 0x1eed8c]"
+    },
+    {
+      "function": "0x4338d0",
+      "site": "0x4339e4",
+      "bytes": "8bbeaced1e00",
+      "instruction": "mov edi, dword ptr [esi + 0x1eedac]"
+    },
+    {
+      "function": "0x5bc630",
+      "site": "0x5bc63a",
+      "bytes": "ff35a4a96500",
+      "instruction": "push dword ptr [0x65a9a4]"
+    },
+    {
+      "function": "0x5bc630",
+      "site": "0x5bc64f",
+      "bytes": "6814020000",
+      "instruction": "push 0x214"
+    },
+    {
+      "function": "0x5bc630",
+      "site": "0x5bc656",
+      "bytes": "e898e9ffff",
+      "instruction": "call 0x5baff3"
+    },
+    {
+      "function": "0x5bc630",
+      "site": "0x5bc690",
+      "bytes": "8906",
+      "instruction": "mov dword ptr [esi], eax"
+    }
+  ],
+  "native_variable_name_strings": {
+    "0x632234": "@battlefield",
+    "0x632244": "@battleattack",
+    "0x632254": "@battledefense"
+  },
+  "native_map_setup_calls": [
+    {
+      "site": "0x48dffd",
+      "target": "0x4f08e0",
+      "bytes": "e8de280600"
+    },
+    {
+      "site": "0x48e0ec",
+      "target": "0x4f08e0",
+      "bytes": "e8ef270600"
+    },
+    {
+      "site": "0x48e180",
+      "target": "0x4f0be0",
+      "bytes": "e85b2a0600"
+    }
+  ],
+  "runtime_HP_MP_access_evidence": [
+    {
+      "function": "0x57df90",
+      "site": "0x57dfca",
+      "bytes": "8b8690000000",
+      "instruction": "mov eax, dword ptr [esi + 0x90]"
+    },
+    {
+      "function": "0x57df90",
+      "site": "0x57dfe9",
+      "bytes": "898690000000",
+      "instruction": "mov dword ptr [esi + 0x90], eax"
+    },
+    {
+      "function": "0x57df90",
+      "site": "0x57dff5",
+      "bytes": "898690000000",
+      "instruction": "mov dword ptr [esi + 0x90], eax"
+    },
+    {
+      "function": "0x57df90",
+      "site": "0x57e074",
+      "bytes": "8b8694000000",
+      "instruction": "mov eax, dword ptr [esi + 0x94]"
+    },
+    {
+      "function": "0x57df90",
+      "site": "0x57e093",
+      "bytes": "898694000000",
+      "instruction": "mov dword ptr [esi + 0x94], eax"
+    },
+    {
+      "function": "0x57df90",
+      "site": "0x57e0a9",
+      "bytes": "898694000000",
+      "instruction": "mov dword ptr [esi + 0x94], eax"
+    }
+  ],
+  "pseudocode_source_hashes": {
+    "00493630.c": "84E072807338F6011CEDD50D458C9257F13B45FC72605FDC9406B2FCEBE8DAAE",
+    "00514A80.c": "8169903FF3643E1609303BCF7DFBE58EF7B90D7FC6204568FC16B8CEF4528858",
+    "0048D6A0.c": "9D81A949846FDED4F736C0C85D1621C6B43CB78F3FC7317E5EAB07DADA0F49D0",
+    "004338D0.c": "CFE8567B3763634927305043F87DB89B54B1C95D6C890032A9160B565B825563",
+    "005BC630.c": "EFFA6ACFF12FF41E3DEF77419FBB4B2C2A46F16EC350919511FF0F7244B637C4",
+    "0057DF90.c": "6919FC81D3C6CBD245FEE7BFEFE9E7753C42296D872A921DA191BA3D3772ECDB"
+  },
+  "full_G1_proven": false,
+  "work_used": false,
+  "recorder_modified": false,
+  "native_process_accessed": false,
+  "critical_boundaries": [
+    "Side role is proven for these samples only; Player is not universally the attacker.",
+    "A present pointer does not mean its referenced payload or stable identity was captured.",
+    "All eight Task counters changed, and first observations are not before the first native Task pass.",
+    "Map file format known is not the actual selected/generated runtime terrain.",
+    "CRT __getptd_noexit may allocate per-thread/fiber data; do not call it as a read-only accessor.",
+    "Coverage of selected ranges is a lower-bound audit, not an exhaustive list of all engine state."
+  ]
+}

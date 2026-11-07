@@ -1,0 +1,15 @@
+# Selected EXP/exe JSON evidence
+
+Baseline `a9f7fc663148f47d924c6753b3c5953416d96181`, accepted ledger2069 (SHA256 `c87eec223543ae5356e6cfa64b8f1a20282d41acac681398234d72eb0f2c4eff`). Exactly26 approved literal paths / 1,290,191 current bytes. APPROVED_INPUTS exact SHA256 `8d8beb26b020e100eed03397eb713f5cba7afcfffdc57ace5e4051741544d468`. All current source SHA/size pins match. Every literal path and ancestor passed containment/no-reparse/no-symlink checks; before/after size/mtime stable. No baseline aliases.
+
+24 accepted source origins / 24 unique saved bodies (583,290 bytes):23 exact and1 complete privacy variant. Two whole-file role deferrals: standalone unreviewed raw Capstone full-window export, and systematic1972-row original DAT property-value export. DEFERRED accurately records header/schema-only scope rather than full review. Neither role decision invents a new acquisition refusal. No held body is reconstructed.
+
+Accepted material is PE/import/RTTI/API identifier metadata and authored analysis with finite selected native assertions, short pseudocode clauses, census matches, static validation receipts and short selected DAT examples. Complete structured review parsed/visited 18,170 nodes and inspected all unique clauses/keys, opaque identifier/hash classes, numeric domains and array/schema populations. No duplicate JSON keys or parse failures were found. This was not manual all-LF reading, model execution, native replay or fresh game evidence.
+
+The9/4/4 DAT examples in hit-input, settlement-owner and summon-gate analyses are selected4–25LF witnesses, not complete original files or systematic property-corpus redistribution. They retain original provenance and limited source-parser/inheritance coverage. Balanced definition braces alone are not an exclusion rule. No additional DAT file or archive was opened. The drain inventory is a selected attribute/source-location family crosswalk rather than full original definitions.
+
+Known held names in accepted files are opaque callee/exclusion/hash/empty-match metadata, not lifted holds. The writer census's two sites attributed to547FC0 are5488ED/548989, beyond the named prefix through548000; this does not qualify the held prefix or whole function. Prior accepted report presence is not hold authorization.
+
+Raw UTF8 bytes/BOM/newlines are preserved except2 escaped personal-profile-prefix substitutions in RTTI_MAP. PRIVACY_SPANS includes zero-based half-open source/destination byte spans, original token SHA, prefix/suffix SHA and replacement bytes/hash; UNCHANGED_GAPS proves all3 remaining byte regions unchanged. JSON was never reserialized. No UTF16 source was encountered and no encoding derivative was needed.
+
+PRIMARY_STATEMENT_LEADS contains only3 historical author-statement pointers with exact source/saved SHA and physical LF. These are candidates, not semantic adoption, type confirmation or core writes. Historical PASS/static/native/READY language remains author claims. No linked native/code/script/log/DB/game/archive/asset acquisition, execution, network, shared/core/Git edit or new agent occurred. OUTPUT_MANIFEST pins every other output.

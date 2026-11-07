@@ -1,0 +1,160 @@
+{
+  "status": "ORIGINAL PE + Ghidra CRT CONTRACT STATIC; SEQUENCES SYNTHETIC",
+  "sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "seed_callee": "0x005B6E99",
+  "draw_callee": "0x005B6EAB",
+  "state_owner": "MSVC CRT __getptd()->_holdrand (thread-local)",
+  "transition": "state=(state*0x343FD+0x269EC3) & 0xFFFFFFFF",
+  "return": "(state >> 16) & 0x7FFF",
+  "seed_instruction": "__getptd()->_holdrand = arg",
+  "pe_seed": [
+    {
+      "va": "0x005B6E99",
+      "asm": "mov edi, edi",
+      "hex": "8bff"
+    },
+    {
+      "va": "0x005B6E9B",
+      "asm": "push ebp",
+      "hex": "55"
+    },
+    {
+      "va": "0x005B6E9C",
+      "asm": "mov ebp, esp",
+      "hex": "8bec"
+    },
+    {
+      "va": "0x005B6E9E",
+      "asm": "call 0x5bc6a9",
+      "hex": "e806580000"
+    },
+    {
+      "va": "0x005B6EA3",
+      "asm": "mov ecx, dword ptr [ebp + 8]",
+      "hex": "8b4d08"
+    },
+    {
+      "va": "0x005B6EA6",
+      "asm": "mov dword ptr [eax + 0x14], ecx",
+      "hex": "894814"
+    },
+    {
+      "va": "0x005B6EA9",
+      "asm": "pop ebp",
+      "hex": "5d"
+    },
+    {
+      "va": "0x005B6EAA",
+      "asm": "ret ",
+      "hex": "c3"
+    }
+  ],
+  "pe_draw": [
+    {
+      "va": "0x005B6EAB",
+      "asm": "call 0x5bc6a9",
+      "hex": "e8f9570000"
+    },
+    {
+      "va": "0x005B6EB0",
+      "asm": "mov ecx, eax",
+      "hex": "8bc8"
+    },
+    {
+      "va": "0x005B6EB2",
+      "asm": "mov eax, dword ptr [ecx + 0x14]",
+      "hex": "8b4114"
+    },
+    {
+      "va": "0x005B6EB5",
+      "asm": "imul eax, eax, 0x343fd",
+      "hex": "69c0fd430300"
+    },
+    {
+      "va": "0x005B6EBB",
+      "asm": "add eax, 0x269ec3",
+      "hex": "05c39e2600"
+    },
+    {
+      "va": "0x005B6EC0",
+      "asm": "mov dword ptr [ecx + 0x14], eax",
+      "hex": "894114"
+    },
+    {
+      "va": "0x005B6EC3",
+      "asm": "shr eax, 0x10",
+      "hex": "c1e810"
+    },
+    {
+      "va": "0x005B6EC6",
+      "asm": "and eax, 0x7fff",
+      "hex": "25ff7f0000"
+    },
+    {
+      "va": "0x005B6ECB",
+      "asm": "ret ",
+      "hex": "c3"
+    }
+  ],
+  "synthetic_sequences": {
+    "0x00000000": {
+      "draws": [
+        38,
+        7719,
+        21238,
+        2437,
+        8855,
+        11797,
+        8365,
+        32285
+      ],
+      "state_after_8": "0x7E1DBEC8"
+    },
+    "0x00000001": {
+      "draws": [
+        41,
+        18467,
+        6334,
+        26500,
+        19169,
+        15724,
+        11478,
+        29358
+      ],
+      "state_after_8": "0x72AE7869"
+    },
+    "0x0000002A": {
+      "draws": [
+        175,
+        400,
+        17869,
+        30056,
+        16083,
+        12879,
+        8016,
+        7644
+      ],
+      "state_after_8": "0x9DDC3332"
+    },
+    "0xFFFFFFFF": {
+      "draws": [
+        35,
+        29739,
+        3374,
+        11141,
+        31308,
+        7870,
+        5253,
+        2445
+      ],
+      "state_after_8": "0x898D0527"
+    }
+  },
+  "constraints": [
+    "Thread-local state: never assume the same seed across unrelated threads",
+    "Need to capture the executing native game thread's current holdrand at handoff, not only the seed",
+    "Other RNG functions or reseed calls may coexist; this is only the CRT rand stream",
+    "Cloning state in external EXE does not advance original CRT state unless explicitly reconciled",
+    "Original game path after battle can consume RNG in end handlers; native comparison still required"
+  ]
+}

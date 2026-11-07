@@ -1,0 +1,241 @@
+{
+  "status": "STATIC ORIGINAL PE AND SOURCE VERIFIED / GAME NOT RUN",
+  "source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "rng_before_build": {
+    "caller": "0x0048D6A0",
+    "site": "0x0048D810",
+    "callee": "0x004C1FC0",
+    "reseeding_tail": "indirect tick getter at 0x4C20B0 then seed helper at 0x4C20B7",
+    "byte_windows": {
+      "caller": [
+        {
+          "va": "0x0048D7F2",
+          "mnemonic": "add",
+          "operand": "byte ptr [eax], al",
+          "bytes": "0000"
+        },
+        {
+          "va": "0x0048D7F4",
+          "mnemonic": "add",
+          "operand": "byte ptr [edi + 0x75], cl",
+          "bytes": "004f75"
+        },
+        {
+          "va": "0x0048D7F7",
+          "mnemonic": "out",
+          "operand": "dx, al",
+          "bytes": "ee"
+        },
+        {
+          "va": "0x0048D7F8",
+          "mnemonic": "mov",
+          "operand": "eax, dword ptr [ebx + 8]",
+          "bytes": "8b4308"
+        },
+        {
+          "va": "0x0048D7FB",
+          "mnemonic": "mov",
+          "operand": "ecx, dword ptr [eax + 8]",
+          "bytes": "8b4808"
+        },
+        {
+          "va": "0x0048D7FE",
+          "mnemonic": "mov",
+          "operand": "eax, dword ptr [ebx + 4]",
+          "bytes": "8b4304"
+        },
+        {
+          "va": "0x0048D801",
+          "mnemonic": "lea",
+          "operand": "edx, [eax + 0x1ef570]",
+          "bytes": "8d9070f51e00"
+        },
+        {
+          "va": "0x0048D807",
+          "mnemonic": "lea",
+          "operand": "esi, [eax + 0xc]",
+          "bytes": "8d700c"
+        },
+        {
+          "va": "0x0048D80A",
+          "mnemonic": "mov",
+          "operand": "dword ptr [ebp - 0x80], ecx",
+          "bytes": "894d80"
+        },
+        {
+          "va": "0x0048D80D",
+          "mnemonic": "mov",
+          "operand": "dword ptr [ebp - 0x78], edx",
+          "bytes": "895588"
+        },
+        {
+          "va": "0x0048D810",
+          "mnemonic": "call",
+          "operand": "0x4c1fc0",
+          "bytes": "e8ab470300"
+        },
+        {
+          "va": "0x0048D815",
+          "mnemonic": "mov",
+          "operand": "esi, dword ptr [ebx + 4]",
+          "bytes": "8b7304"
+        },
+        {
+          "va": "0x0048D818",
+          "mnemonic": "mov",
+          "operand": "eax, dword ptr [esi + 0x74]",
+          "bytes": "8b4674"
+        },
+        {
+          "va": "0x0048D81B",
+          "mnemonic": "add",
+          "operand": "esi, 0x70",
+          "bytes": "83c670"
+        }
+      ],
+      "tail": [
+        {
+          "va": "0x004C20AD",
+          "mnemonic": "mov",
+          "operand": "dword ptr [esi + 0x68], ebx",
+          "bytes": "895e68"
+        },
+        {
+          "va": "0x004C20B0",
+          "mnemonic": "call",
+          "operand": "dword ptr [0x609164]",
+          "bytes": "ff1564916000"
+        },
+        {
+          "va": "0x004C20B6",
+          "mnemonic": "push",
+          "operand": "eax",
+          "bytes": "50"
+        },
+        {
+          "va": "0x004C20B7",
+          "mnemonic": "call",
+          "operand": "0x5b6e99",
+          "bytes": "e8dd4d0f00"
+        },
+        {
+          "va": "0x004C20BC",
+          "mnemonic": "add",
+          "operand": "esp, 4",
+          "bytes": "83c404"
+        },
+        {
+          "va": "0x004C20BF",
+          "mnemonic": "pop",
+          "operand": "edi",
+          "bytes": "5f"
+        },
+        {
+          "va": "0x004C20C0",
+          "mnemonic": "pop",
+          "operand": "ebx",
+          "bytes": "5b"
+        },
+        {
+          "va": "0x004C20C1",
+          "mnemonic": "ret",
+          "operand": "",
+          "bytes": "c3"
+        },
+        {
+          "va": "0x004C20C2",
+          "mnemonic": "int3",
+          "operand": "",
+          "bytes": "cc"
+        },
+        {
+          "va": "0x004C20C3",
+          "mnemonic": "int3",
+          "operand": "",
+          "bytes": "cc"
+        },
+        {
+          "va": "0x004C20C4",
+          "mnemonic": "int3",
+          "operand": "",
+          "bytes": "cc"
+        },
+        {
+          "va": "0x004C20C5",
+          "mnemonic": "int3",
+          "operand": "",
+          "bytes": "cc"
+        },
+        {
+          "va": "0x004C20C6",
+          "mnemonic": "int3",
+          "operand": "",
+          "bytes": "cc"
+        },
+        {
+          "va": "0x004C20C7",
+          "mnemonic": "int3",
+          "operand": "",
+          "bytes": "cc"
+        },
+        {
+          "va": "0x004C20C8",
+          "mnemonic": "int3",
+          "operand": "",
+          "bytes": "cc"
+        },
+        {
+          "va": "0x004C20C9",
+          "mnemonic": "int3",
+          "operand": "",
+          "bytes": "cc"
+        },
+        {
+          "va": "0x004C20CA",
+          "mnemonic": "int3",
+          "operand": "",
+          "bytes": "cc"
+        },
+        {
+          "va": "0x004C20CB",
+          "mnemonic": "int3",
+          "operand": "",
+          "bytes": "cc"
+        },
+        {
+          "va": "0x004C20CC",
+          "mnemonic": "int3",
+          "operand": "",
+          "bytes": "cc"
+        },
+        {
+          "va": "0x004C20CD",
+          "mnemonic": "int3",
+          "operand": "",
+          "bytes": "cc"
+        },
+        {
+          "va": "0x004C20CE",
+          "mnemonic": "int3",
+          "operand": "",
+          "bytes": "cc"
+        },
+        {
+          "va": "0x004C20CF",
+          "mnemonic": "int3",
+          "operand": "",
+          "bytes": "cc"
+        }
+      ]
+    },
+    "meaning": "Battle setup resets the original RNG before scene Unit generation and placement; the final state must be observed at handoff. No assertion about exact seed value or draws."
+  },
+  "unit_links": {
+    "ctor": "0x0056F880",
+    "Unit_plus_1C8": "param_3 shared record candidate",
+    "Unit_plus_1D0": "param_6 Troop* candidate",
+    "Unit_plus_1CC": "first Troop member linked record or own record",
+    "note": "Raw runtime pointer is not a portable ID; no full identity proof."
+  },
+  "next": "Observe RNG state/draw cursor and script VM after scene registration, before first battle tick; compare same-run snapshots."
+}

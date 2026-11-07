@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-8"></a>
+## state + 0x8
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE4_OWNER_ABI_PE_20261021.json 行 14](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE4_OWNER_ABI_PE_20261021.json?plain=1#L14-L14) — "Manager state+0x08 is not the raw battle result flag"
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
 <a id="field-20"></a>
 ## state + 0x20
 

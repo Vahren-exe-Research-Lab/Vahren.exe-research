@@ -1,0 +1,18 @@
+{
+  "status": "SELFTEST_COMPLETE",
+  "origin": "SYNTHETIC_CHILD_WIN32_READONLY",
+  "utc": "2026-10-21T15:37:12.446747+00:00",
+  "structural_captures": 1,
+  "capture_failures": 0,
+  "attempts": 1,
+  "files": [
+    {
+      "name": "BATTLE_USER_20261021T153712415645Z_b9a0e3d6_RAW_01.json",
+      "sha256": "38071A564C49611D6181C49164650DD64F23936C8A12A93E7E5063F750C694ED"
+    }
+  ],
+  "event_log": "BATTLE_USER_20261021T153712415645Z_b9a0e3d6_EVENTS.jsonl",
+  "full_G1_proven": false,
+  "external_game_roundtrip_proven": false,
+  "game_memory_written": false
+}

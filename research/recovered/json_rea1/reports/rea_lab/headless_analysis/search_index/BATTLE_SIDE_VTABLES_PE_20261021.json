@@ -1,0 +1,398 @@
+{
+  "sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "status": "STATIC PE POINTERS ONLY",
+  "evidence": {
+    "0x0051E100": {
+      "hits": [
+        {
+          "va": "0x0051E115",
+          "text": "mov eax, dword ptr [0x65a220]"
+        },
+        {
+          "va": "0x0051E13E",
+          "text": "mov dword ptr [edi], 0x639b08"
+        },
+        {
+          "va": "0x0051E144",
+          "text": "mov dword ptr [edi + 0x90], 0x639b2c"
+        },
+        {
+          "va": "0x0051E14E",
+          "text": "mov ecx, 0x638cac"
+        },
+        {
+          "va": "0x0051E1AF",
+          "text": "mov dword ptr [edi + 0x198], 0x63a2e8"
+        },
+        {
+          "va": "0x0051E20D",
+          "text": "mov dword ptr [edi + 0x1e0], 0x63a2f8"
+        },
+        {
+          "va": "0x0051E21D",
+          "text": "mov dword ptr [ebp + 0x65], ebx"
+        },
+        {
+          "va": "0x0051E220",
+          "text": "mov byte ptr [ebp + 0x69], bl"
+        },
+        {
+          "va": "0x0051E245",
+          "text": "mov dword ptr [ebp + 0x60], esi"
+        },
+        {
+          "va": "0x0051E248",
+          "text": "mov byte ptr [ebp + 0x64], bl"
+        },
+        {
+          "va": "0x0051E253",
+          "text": "mov dword ptr [ebp + 0x6c], ebx"
+        },
+        {
+          "va": "0x0051E256",
+          "text": "mov dword ptr [ebp], 0x63a30c"
+        },
+        {
+          "va": "0x0051E2C1",
+          "text": "mov dword ptr [edi + 0x2b4], 0x639aac"
+        },
+        {
+          "va": "0x0051E41A",
+          "text": "mov dword ptr [esp + 0x20], 0x609840"
+        },
+        {
+          "va": "0x0051E443",
+          "text": "mov dword ptr [esp + 0x20], 0x609840"
+        },
+        {
+          "va": "0x0051E46C",
+          "text": "mov dword ptr [esp + 0x2c], 0x609840"
+        }
+      ]
+    },
+    "0x00447280": {
+      "hits": [
+        {
+          "va": "0x00447294",
+          "text": "mov eax, dword ptr [0x65a220]"
+        },
+        {
+          "va": "0x004472BB",
+          "text": "mov dword ptr [esi + 0x90], 0x637f74"
+        },
+        {
+          "va": "0x004472CB",
+          "text": "mov dword ptr [esi], 0x638b60"
+        },
+        {
+          "va": "0x004472D1",
+          "text": "mov dword ptr [esi + 0x90], 0x638b84"
+        },
+        {
+          "va": "0x0044763A",
+          "text": "mov dword ptr [esp + 0x1c], 0x609840"
+        },
+        {
+          "va": "0x00447663",
+          "text": "mov dword ptr [esp + 0x28], 0x609840"
+        },
+        {
+          "va": "0x0044768C",
+          "text": "mov dword ptr [esp + 0x1c], 0x609840"
+        },
+        {
+          "va": "0x004476B5",
+          "text": "mov dword ptr [esp + 0x28], 0x609840"
+        },
+        {
+          "va": "0x004476DE",
+          "text": "mov dword ptr [esp + 0x1c], 0x609840"
+        },
+        {
+          "va": "0x00447707",
+          "text": "mov dword ptr [esp + 0x28], 0x609840"
+        },
+        {
+          "va": "0x00447730",
+          "text": "mov dword ptr [esp + 0x1c], 0x609840"
+        },
+        {
+          "va": "0x00447759",
+          "text": "mov dword ptr [esp + 0x28], 0x609840"
+        },
+        {
+          "va": "0x00447782",
+          "text": "mov dword ptr [esp + 0x1c], 0x609840"
+        },
+        {
+          "va": "0x004477AB",
+          "text": "mov dword ptr [esp + 0x28], 0x609840"
+        },
+        {
+          "va": "0x004477D4",
+          "text": "mov dword ptr [esp + 0x1c], 0x609840"
+        }
+      ]
+    },
+    "0x00514740": {
+      "hits": [
+        {
+          "va": "0x00514754",
+          "text": "mov eax, dword ptr [0x65a220]"
+        },
+        {
+          "va": "0x0051476A",
+          "text": "mov dword ptr [esi], 0x6396e0"
+        },
+        {
+          "va": "0x005147C2",
+          "text": "mov dword ptr [esi + 0x60], edi"
+        },
+        {
+          "va": "0x005147DF",
+          "text": "mov dword ptr [esi + 0x6c], eax"
+        },
+        {
+          "va": "0x005147E4",
+          "text": "mov eax, dword ptr [esi + 0x6c]"
+        },
+        {
+          "va": "0x005147EA",
+          "text": "mov eax, dword ptr [esi + 0x6c]"
+        },
+        {
+          "va": "0x005147F0",
+          "text": "mov edx, dword ptr [esi + 0x6c]"
+        },
+        {
+          "va": "0x005147F6",
+          "text": "mov eax, dword ptr [esi + 0x6c]"
+        },
+        {
+          "va": "0x0051483E",
+          "text": "mov dword ptr [esp + 0x1c], 0x609840"
+        },
+        {
+          "va": "0x00514867",
+          "text": "mov dword ptr [esp + 0x1c], 0x609840"
+        }
+      ]
+    },
+    "vtable_00609840": {
+      "address": "0x00609840",
+      "entries": [
+        "0x00401010",
+        "0x005B6550",
+        "0x74736F69",
+        "0x6D616572",
+        "0x00000000",
+        "0x0063BF04",
+        "0x005B5C99",
+        "0x005B5C77",
+        "0x005B5CDE",
+        "0x005B5C7F",
+        "0x005B5C58",
+        "0x005B5C37"
+      ],
+      "code_targets": 8
+    },
+    "vtable_00637F74": {
+      "address": "0x00637F74",
+      "entries": [
+        "0x0051E550",
+        "0x004BBBD0",
+        "0x00431910",
+        "0x0043B5A0",
+        "0x0043B5A0",
+        "0x0043B5A0",
+        "0x0063C478",
+        "0x00405C80",
+        "0x00405820",
+        "0x00418430",
+        "0x0063C464",
+        "0x00406CE0"
+      ],
+      "code_targets": 10
+    },
+    "vtable_00638B60": {
+      "address": "0x00638B60",
+      "entries": [
+        "0x004477F0",
+        "0x005149C0",
+        "0x00514A80",
+        "0x00447810",
+        "0x00514AA0",
+        "0x00514C50",
+        "0x005146E0",
+        "0x0040C930",
+        "0x0063D708",
+        "0x0044D8E0",
+        "0x004498E0",
+        "0x00431910"
+      ],
+      "code_targets": 11
+    },
+    "vtable_00638B84": {
+      "address": "0x00638B84",
+      "entries": [
+        "0x0044D8E0",
+        "0x004498E0",
+        "0x00431910",
+        "0x0043B5A0",
+        "0x0043B5A0",
+        "0x0043B5A0",
+        "0x00000000",
+        "0x0063D730",
+        "0x00426FC0",
+        "0x005B6550",
+        "0x00000000",
+        "0x0063D7F8"
+      ],
+      "code_targets": 8
+    },
+    "vtable_00638CAC": {
+      "address": "0x00638CAC",
+      "entries": [
+        "0x0051DD60",
+        "0x00405820",
+        "0x00418430",
+        "0x0063D890",
+        "0x00542B40",
+        "0x004BBBD0",
+        "0x00431910",
+        "0x0043B5A0",
+        "0x0043B5A0",
+        "0x00431910",
+        "0x00418440",
+        "0x00418740"
+      ],
+      "code_targets": 11
+    },
+    "vtable_006396E0": {
+      "address": "0x006396E0",
+      "entries": [
+        "0x00514880",
+        "0x005149C0",
+        "0x00514A80",
+        "0x005B72FE",
+        "0x00514AA0",
+        "0x00514C50",
+        "0x005146E0",
+        "0x00431910",
+        "0x61826082",
+        "0x63826282",
+        "0x65826482",
+        "0x67826682"
+      ],
+      "code_targets": 8
+    },
+    "vtable_00639AAC": {
+      "address": "0x00639AAC",
+      "entries": [
+        "0x0051E550",
+        "0x004BBBD0",
+        "0x0043B5A0",
+        "0x0043B5A0",
+        "0x0043B5A0",
+        "0x00431910",
+        "0x00418440",
+        "0x00418740",
+        "0x00418430",
+        "0x0051CB40",
+        "0x00418490",
+        "0x0043B5A0"
+      ],
+      "code_targets": 12
+    },
+    "vtable_00639B08": {
+      "address": "0x00639B08",
+      "entries": [
+        "0x0051E480",
+        "0x0051E6F0",
+        "0x00514A80",
+        "0x0051EF80",
+        "0x00514AA0",
+        "0x005200A0",
+        "0x005146E0",
+        "0x0040C930",
+        "0x0063F2E0",
+        "0x00521450",
+        "0x00521A00",
+        "0x00431910"
+      ],
+      "code_targets": 11
+    },
+    "vtable_00639B2C": {
+      "address": "0x00639B2C",
+      "entries": [
+        "0x00521450",
+        "0x00521A00",
+        "0x00431910",
+        "0x00431910",
+        "0x00431910",
+        "0x0043B5A0",
+        "0x0063F294",
+        "0x0051DD60",
+        "0x00405820",
+        "0x00418430",
+        "0x0063F248",
+        "0x0051DD60"
+      ],
+      "code_targets": 10
+    },
+    "vtable_0063A2E8": {
+      "address": "0x0063A2E8",
+      "entries": [
+        "0x0051DD60",
+        "0x0051CB40",
+        "0x00542020",
+        "0x0063EAB4",
+        "0x0051DD60",
+        "0x0051CB40",
+        "0x005422C0",
+        "0x00000000",
+        "0x0063EA5C",
+        "0x00542B40",
+        "0x005429D0",
+        "0x00431910"
+      ],
+      "code_targets": 9
+    },
+    "vtable_0063A2F8": {
+      "address": "0x0063A2F8",
+      "entries": [
+        "0x0051DD60",
+        "0x0051CB40",
+        "0x005422C0",
+        "0x00000000",
+        "0x0063EA5C",
+        "0x00542B40",
+        "0x005429D0",
+        "0x00431910",
+        "0x0043B5A0",
+        "0x0043B5A0",
+        "0x00431910",
+        "0x00418440"
+      ],
+      "code_targets": 10
+    },
+    "vtable_0063A30C": {
+      "address": "0x0063A30C",
+      "entries": [
+        "0x00542B40",
+        "0x005429D0",
+        "0x00431910",
+        "0x0043B5A0",
+        "0x0043B5A0",
+        "0x00431910",
+        "0x00418440",
+        "0x00418740",
+        "0x00418430",
+        "0x005428A0",
+        "0x00418490",
+        "0x0043B5A0"
+      ],
+      "code_targets": 12
+    }
+  }
+}

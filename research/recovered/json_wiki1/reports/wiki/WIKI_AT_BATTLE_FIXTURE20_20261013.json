@@ -1,0 +1,1119 @@
+{
+  "status": "RAW ORIGINAL DAT @ + WORK_PARSER_INHERITANCE / NOT RUNTIME",
+  "source_audit": "WIKI_AT_NULL_INHERITANCE_20261013.json",
+  "case_count": 20,
+  "missing_requests": [],
+  "cases": [
+    {
+      "case_id": "WDF-AT-01",
+      "field": "mp",
+      "skill_tag": "sp_new_misairu",
+      "dat_origin": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_0_共用.dat",
+        "declaration_line": 146,
+        "property_line": 158
+      },
+      "parent_tag": "new_misairu",
+      "parent_property_value": {
+        "text": "165",
+        "number": 165,
+        "found": true
+      },
+      "parser_effective_value": {
+        "found": true,
+        "text": "",
+        "number": 0
+      },
+      "source_literal_at": [
+        "@"
+      ],
+      "present_empty": true,
+      "parent_nonempty_blocked": true,
+      "static_witness": {
+        "root_tag": "sp_new_misairu",
+        "root_grants": [
+          {
+            "owner": "unit:rrm",
+            "source": "a_default/script/10_ユニット/21_お菓子作りの材料屋さん.dat",
+            "line": 214,
+            "field": "learn"
+          },
+          {
+            "owner": "unit:hsi",
+            "source": "a_default/script/10_ユニット/22_玉兎賊.dat",
+            "line": 2,
+            "field": "learn"
+          },
+          {
+            "owner": "class:hsis",
+            "source": "a_default/script/32_ボススキル/B_26old_第二革命企画.dat",
+            "line": 603,
+            "field": "skill"
+          }
+        ],
+        "static_chain": [
+          "sp_new_misairu"
+        ],
+        "edge_count": 0
+      },
+      "old_gameplay": "NOT RUN",
+      "new_strict": "NOT RUN"
+    },
+    {
+      "case_id": "WDF-AT-02",
+      "field": "mp",
+      "skill_tag": "comfy_mist",
+      "dat_origin": {
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "declaration_line": 14301,
+        "property_line": 14307
+      },
+      "parent_tag": "sik_mist",
+      "parent_property_value": {
+        "text": "80",
+        "number": 80,
+        "found": true
+      },
+      "parser_effective_value": {
+        "found": true,
+        "text": "",
+        "number": 0
+      },
+      "source_literal_at": [
+        "@"
+      ],
+      "present_empty": true,
+      "parent_nonempty_blocked": true,
+      "static_witness": {
+        "root_tag": "comfy_mist",
+        "root_grants": [
+          {
+            "owner": "unit:comfy",
+            "source": "a_default/script/10_ユニット/91_放浪_クッキー☆.dat",
+            "line": 1104,
+            "field": "skill"
+          },
+          {
+            "owner": "unit:comfy",
+            "source": "a_default/script/10_ユニット/91_放浪_クッキー☆.dat",
+            "line": 1104,
+            "field": "leader_skill"
+          }
+        ],
+        "static_chain": [
+          "comfy_mist"
+        ],
+        "edge_count": 0
+      },
+      "old_gameplay": "NOT RUN",
+      "new_strict": "NOT RUN"
+    },
+    {
+      "case_id": "WDF-AT-03",
+      "field": "mp",
+      "skill_tag": "m_star_pr1",
+      "dat_origin": {
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "declaration_line": 4789,
+        "property_line": 4798
+      },
+      "parent_tag": "m_star",
+      "parent_property_value": {
+        "text": "100",
+        "number": 100,
+        "found": true
+      },
+      "parser_effective_value": {
+        "found": true,
+        "text": "",
+        "number": 0
+      },
+      "source_literal_at": [
+        "@"
+      ],
+      "present_empty": true,
+      "parent_nonempty_blocked": true,
+      "static_witness": {
+        "root_tag": "m_star",
+        "root_grants": [
+          {
+            "owner": "unit:togepi",
+            "source": "a_default/script/10_ユニット/05_ヴォイス・ドラマ革命企画.dat",
+            "line": 1250,
+            "field": "skill2"
+          }
+        ],
+        "static_chain": [
+          "m_star",
+          "m_star_pr0",
+          "m_star_pr1"
+        ],
+        "edge_count": 2
+      },
+      "old_gameplay": "NOT RUN",
+      "new_strict": "NOT RUN"
+    },
+    {
+      "case_id": "WDF-AT-04",
+      "field": "special",
+      "skill_tag": "new_misairu_mz",
+      "dat_origin": {
+        "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+        "declaration_line": 3346,
+        "property_line": 3351
+      },
+      "parent_tag": "new_misairu",
+      "parent_property_value": {
+        "text": "on",
+        "number": 0,
+        "found": true
+      },
+      "parser_effective_value": {
+        "found": true,
+        "text": "",
+        "number": 0
+      },
+      "source_literal_at": [
+        "@"
+      ],
+      "present_empty": true,
+      "parent_nonempty_blocked": true,
+      "static_witness": {
+        "root_tag": "new_misairu_mz",
+        "root_grants": [
+          {
+            "owner": "unit:mz",
+            "source": "a_default/script/10_ユニット/05_ヴォイス・ドラマ革命企画.dat",
+            "line": 82,
+            "field": "skill2"
+          }
+        ],
+        "static_chain": [
+          "new_misairu_mz"
+        ],
+        "edge_count": 0
+      },
+      "old_gameplay": "NOT RUN",
+      "new_strict": "NOT RUN"
+    },
+    {
+      "case_id": "WDF-AT-05",
+      "field": "special",
+      "skill_tag": "kuso_mugen",
+      "dat_origin": {
+        "file": "a_default/script/30_スキル/F10_missile_砲撃リニューアル.dat",
+        "declaration_line": 2142,
+        "property_line": 2146
+      },
+      "parent_tag": "sp_kuso",
+      "parent_property_value": {
+        "text": "on",
+        "number": 0,
+        "found": true
+      },
+      "parser_effective_value": {
+        "found": true,
+        "text": "",
+        "number": 0
+      },
+      "source_literal_at": [
+        "@"
+      ],
+      "present_empty": true,
+      "parent_nonempty_blocked": true,
+      "static_witness": {
+        "root_tag": "kuso_mugen",
+        "root_grants": [
+          {
+            "owner": "class:a295",
+            "source": "a_default/script/20_クラス/27_30_岡山.dat",
+            "line": 258,
+            "field": "skill"
+          },
+          {
+            "owner": "class:a2952",
+            "source": "a_default/script/20_クラス/27_30_岡山.dat",
+            "line": 290,
+            "field": "skill"
+          },
+          {
+            "owner": "class:a2953",
+            "source": "a_default/script/20_クラス/27_30_岡山.dat",
+            "line": 305,
+            "field": "skill"
+          },
+          {
+            "owner": "class:defcankimo",
+            "source": "a_default/script/45_内政_防衛兵器/siege_class.dat",
+            "line": 564,
+            "field": "skill"
+          },
+          {
+            "owner": "class:defcankimo2",
+            "source": "a_default/script/45_内政_防衛兵器/siege_class.dat",
+            "line": 573,
+            "field": "skill"
+          },
+          {
+            "owner": "class:defcankimo3",
+            "source": "a_default/script/45_内政_防衛兵器/siege_class.dat",
+            "line": 582,
+            "field": "skill"
+          }
+        ],
+        "static_chain": [
+          "kuso_mugen"
+        ],
+        "edge_count": 0
+      },
+      "old_gameplay": "NOT RUN",
+      "new_strict": "NOT RUN"
+    },
+    {
+      "case_id": "WDF-AT-06",
+      "field": "add2",
+      "skill_tag": "baishu_ef",
+      "dat_origin": {
+        "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+        "declaration_line": 2078,
+        "property_line": 2087
+      },
+      "parent_tag": "baishu",
+      "parent_property_value": {
+        "items": [
+          "conf",
+          "ill",
+          "para",
+          "sil"
+        ]
+      },
+      "parser_effective_value": {
+        "items": []
+      },
+      "source_literal_at": [
+        "@"
+      ],
+      "present_empty": true,
+      "parent_nonempty_blocked": true,
+      "static_witness": {
+        "root_tag": "baishu",
+        "root_grants": [
+          {
+            "owner": "unit:nonaka",
+            "source": "a_default/script/10_ユニット/23_リュージ騎士団.dat",
+            "line": 429,
+            "field": "skill"
+          },
+          {
+            "owner": "unit:nonaka",
+            "source": "a_default/script/10_ユニット/23_リュージ騎士団.dat",
+            "line": 429,
+            "field": "leader_skill"
+          },
+          {
+            "owner": "unit:nisendoru",
+            "source": "a_default/script/10_ユニット/90_放浪_ホモビ.dat",
+            "line": 1187,
+            "field": "skill"
+          },
+          {
+            "owner": "unit:nisendoru",
+            "source": "a_default/script/10_ユニット/90_放浪_ホモビ.dat",
+            "line": 1187,
+            "field": "leader_skill"
+          }
+        ],
+        "static_chain": [
+          "baishu",
+          "baishu_ef"
+        ],
+        "edge_count": 1
+      },
+      "old_gameplay": "NOT RUN",
+      "new_strict": "NOT RUN"
+    },
+    {
+      "case_id": "WDF-AT-07",
+      "field": "add2",
+      "skill_tag": "s_hiari",
+      "dat_origin": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "declaration_line": 1730,
+        "property_line": 1735
+      },
+      "parent_tag": "s_ari",
+      "parent_property_value": {
+        "items": [
+          "s_a220",
+          "s_a220l",
+          "s_a220r"
+        ]
+      },
+      "parser_effective_value": {
+        "items": []
+      },
+      "source_literal_at": [
+        "@"
+      ],
+      "present_empty": true,
+      "parent_nonempty_blocked": true,
+      "static_witness": {
+        "root_tag": "s_hiari",
+        "root_grants": [
+          {
+            "owner": "unit:hsiorn",
+            "source": "a_default/script/10_ユニット/05_ヴォイス・ドラマ革命企画.dat",
+            "line": 665,
+            "field": "skill"
+          }
+        ],
+        "static_chain": [
+          "s_hiari"
+        ],
+        "edge_count": 0
+      },
+      "old_gameplay": "NOT RUN",
+      "new_strict": "NOT RUN"
+    },
+    {
+      "case_id": "WDF-AT-08",
+      "field": "next",
+      "skill_tag": "gun_kata",
+      "dat_origin": {
+        "file": "a_default/script/31_ユニットスキル/U_16_20_ALC一派～VVAN.dat",
+        "declaration_line": 2504,
+        "property_line": 2512
+      },
+      "parent_tag": "e893zan0",
+      "parent_property_value": {
+        "text": "e893zan0_joi",
+        "number": 0,
+        "found": true
+      },
+      "parser_effective_value": {
+        "found": true,
+        "text": "",
+        "number": 0
+      },
+      "source_literal_at": [
+        "@"
+      ],
+      "present_empty": true,
+      "parent_nonempty_blocked": true,
+      "static_witness": {
+        "root_tag": "gun_kata",
+        "root_grants": [
+          {
+            "owner": "unit:vvan",
+            "source": "a_default/script/10_ユニット/20_VVANグループ.dat",
+            "line": 1,
+            "field": "skill"
+          }
+        ],
+        "static_chain": [
+          "gun_kata"
+        ],
+        "edge_count": 0
+      },
+      "old_gameplay": "NOT RUN",
+      "new_strict": "NOT RUN"
+    },
+    {
+      "case_id": "WDF-AT-09",
+      "field": "next2",
+      "skill_tag": "a_jyaken1",
+      "dat_origin": {
+        "file": "a_default/script/6000_スキルテスト/jyaken.dat",
+        "declaration_line": 1,
+        "property_line": 25
+      },
+      "parent_tag": "zan1",
+      "parent_property_value": {
+        "items": [
+          "zan1_nt0",
+          "zan0_joi2"
+        ]
+      },
+      "parser_effective_value": {
+        "items": []
+      },
+      "source_literal_at": [
+        "@"
+      ],
+      "present_empty": true,
+      "parent_nonempty_blocked": true,
+      "static_witness": {
+        "root_tag": "a_jyaken1",
+        "root_grants": [
+          {
+            "owner": "unit:yaju",
+            "source": "a_default/script/10_ユニット/02_迫真空手道場.dat",
+            "line": 1,
+            "field": "learn"
+          }
+        ],
+        "static_chain": [
+          "a_jyaken1"
+        ],
+        "edge_count": 0
+      },
+      "old_gameplay": "NOT RUN",
+      "new_strict": "NOT RUN"
+    },
+    {
+      "case_id": "WDF-AT-10",
+      "field": "next3",
+      "skill_tag": "sp_icg_hou",
+      "dat_origin": {
+        "file": "a_default/script/30_スキル/C_必殺_クラス専用.dat",
+        "declaration_line": 1419,
+        "property_line": 1442
+      },
+      "parent_tag": "re_cannon",
+      "parent_property_value": {
+        "items": [
+          "tuyo_cannon_nt1",
+          "tuyo_cannon_nt2",
+          "tuyo_cannon_pr1",
+          "tuyo_cannon_pr2",
+          "battering_cannon_nt0"
+        ]
+      },
+      "parser_effective_value": {
+        "items": []
+      },
+      "source_literal_at": [
+        "@"
+      ],
+      "present_empty": true,
+      "parent_nonempty_blocked": true,
+      "static_witness": {
+        "root_tag": "sp_icg_hou",
+        "root_grants": [
+          {
+            "owner": "class:a215",
+            "source": "a_default/script/20_クラス/21_23_材料屋_HSI_リュージ.dat",
+            "line": 76,
+            "field": "skill"
+          },
+          {
+            "owner": "class:a2152",
+            "source": "a_default/script/20_クラス/21_23_材料屋_HSI_リュージ.dat",
+            "line": 119,
+            "field": "skill"
+          },
+          {
+            "owner": "class:a2153",
+            "source": "a_default/script/20_クラス/21_23_材料屋_HSI_リュージ.dat",
+            "line": 134,
+            "field": "skill"
+          }
+        ],
+        "static_chain": [
+          "sp_icg_hou"
+        ],
+        "edge_count": 0
+      },
+      "old_gameplay": "NOT RUN",
+      "new_strict": "NOT RUN"
+    },
+    {
+      "case_id": "WDF-AT-11",
+      "field": "just_next",
+      "skill_tag": "110jaku_gun_nt0a",
+      "dat_origin": {
+        "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+        "declaration_line": 3030,
+        "property_line": 3038
+      },
+      "parent_tag": "b_gun",
+      "parent_property_value": {
+        "items": [
+          "seiretsu_b"
+        ]
+      },
+      "parser_effective_value": {
+        "items": []
+      },
+      "source_literal_at": [
+        "@"
+      ],
+      "present_empty": true,
+      "parent_nonempty_blocked": true,
+      "static_witness": {
+        "root_tag": "110jaku_gun",
+        "root_grants": [
+          {
+            "owner": "unit:nktidksg",
+            "source": "a_default/script/10_ユニット/25_オーバック・カンパニー.dat",
+            "line": 3,
+            "field": "skill2"
+          }
+        ],
+        "static_chain": [
+          "110jaku_gun",
+          "110jaku_gun_nt0",
+          "110jaku_gun_nt0a"
+        ],
+        "edge_count": 2
+      },
+      "old_gameplay": "NOT RUN",
+      "new_strict": "NOT RUN"
+    },
+    {
+      "case_id": "WDF-AT-12",
+      "field": "pair_next",
+      "skill_tag": "comfy_mist",
+      "dat_origin": {
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "declaration_line": 14301,
+        "property_line": 14312
+      },
+      "parent_tag": "sik_mist",
+      "parent_property_value": {
+        "text": "ef_magic",
+        "number": 0,
+        "found": true
+      },
+      "parser_effective_value": {
+        "found": true,
+        "text": "",
+        "number": 0
+      },
+      "source_literal_at": [
+        "@"
+      ],
+      "present_empty": true,
+      "parent_nonempty_blocked": true,
+      "static_witness": {
+        "root_tag": "comfy_mist",
+        "root_grants": [
+          {
+            "owner": "unit:comfy",
+            "source": "a_default/script/10_ユニット/91_放浪_クッキー☆.dat",
+            "line": 1104,
+            "field": "skill"
+          },
+          {
+            "owner": "unit:comfy",
+            "source": "a_default/script/10_ユニット/91_放浪_クッキー☆.dat",
+            "line": 1104,
+            "field": "leader_skill"
+          }
+        ],
+        "static_chain": [
+          "comfy_mist"
+        ],
+        "edge_count": 0
+      },
+      "old_gameplay": "NOT RUN",
+      "new_strict": "NOT RUN"
+    },
+    {
+      "case_id": "WDF-AT-13",
+      "field": "gun_delay",
+      "skill_tag": "cure_sponge",
+      "dat_origin": {
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "declaration_line": 4989,
+        "property_line": 4996
+      },
+      "parent_tag": "b_all",
+      "parent_property_value": {
+        "items": [
+          "b_all*3"
+        ]
+      },
+      "parser_effective_value": {
+        "items": []
+      },
+      "source_literal_at": [
+        "@"
+      ],
+      "present_empty": true,
+      "parent_nonempty_blocked": true,
+      "static_witness": {
+        "root_tag": "cure_sponge",
+        "root_grants": [
+          {
+            "owner": "unit:himn",
+            "source": "a_default/script/10_ユニット/110_イベント人材.dat",
+            "line": 777,
+            "field": "delskill"
+          },
+          {
+            "owner": "unit:sponge",
+            "source": "a_default/script/10_ユニット/91_放浪_クッキー☆.dat",
+            "line": 294,
+            "field": "skill"
+          },
+          {
+            "owner": "unit:sponge",
+            "source": "a_default/script/10_ユニット/91_放浪_クッキー☆.dat",
+            "line": 294,
+            "field": "leader_skill"
+          },
+          {
+            "owner": "class:sk009",
+            "source": "a_default/script/30_スキル/F20_summon.dat",
+            "line": 3231,
+            "field": "skill"
+          },
+          {
+            "owner": "class:sk0092",
+            "source": "a_default/script/30_スキル/F20_summon.dat",
+            "line": 3264,
+            "field": "skill"
+          },
+          {
+            "owner": "class:sk0093",
+            "source": "a_default/script/30_スキル/F20_summon.dat",
+            "line": 3277,
+            "field": "skill"
+          }
+        ],
+        "static_chain": [
+          "cure_sponge"
+        ],
+        "edge_count": 0
+      },
+      "old_gameplay": "NOT RUN",
+      "new_strict": "NOT RUN"
+    },
+    {
+      "case_id": "WDF-AT-14",
+      "field": "attr",
+      "skill_tag": "b_mrandom",
+      "dat_origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "declaration_line": 645,
+        "property_line": 651
+      },
+      "parent_tag": "b_ligh",
+      "parent_property_value": {
+        "text": "ligh",
+        "number": 0,
+        "found": true
+      },
+      "parser_effective_value": {
+        "found": true,
+        "text": "",
+        "number": 0
+      },
+      "source_literal_at": [
+        "@"
+      ],
+      "present_empty": true,
+      "parent_nonempty_blocked": true,
+      "static_witness": {
+        "root_tag": "b_mrandom",
+        "root_grants": [
+          {
+            "owner": "unit:fried",
+            "source": "a_default/script/10_ユニット/1000_傭兵.dat",
+            "line": 242,
+            "field": "delskill"
+          },
+          {
+            "owner": "unit:alc",
+            "source": "a_default/script/10_ユニット/16_ALC一派.dat",
+            "line": 2,
+            "field": "delskill"
+          },
+          {
+            "owner": "unit:skrnbu",
+            "source": "a_default/script/10_ユニット/16_ALC一派.dat",
+            "line": 93,
+            "field": "delskill"
+          },
+          {
+            "owner": "unit:jgn",
+            "source": "a_default/script/10_ユニット/16_ALC一派.dat",
+            "line": 177,
+            "field": "delskill"
+          },
+          {
+            "owner": "unit:tisa",
+            "source": "a_default/script/10_ユニット/16_ALC一派.dat",
+            "line": 265,
+            "field": "delskill"
+          },
+          {
+            "owner": "unit:icg",
+            "source": "a_default/script/10_ユニット/21_お菓子作りの材料屋さん.dat",
+            "line": 322,
+            "field": "delskill"
+          }
+        ],
+        "static_chain": [
+          "b_mrandom"
+        ],
+        "edge_count": 0
+      },
+      "old_gameplay": "NOT RUN",
+      "new_strict": "NOT RUN"
+    },
+    {
+      "case_id": "WDF-AT-15",
+      "field": "str",
+      "skill_tag": "b_kamaitachi_pr2",
+      "dat_origin": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "declaration_line": 8388,
+        "property_line": 8396
+      },
+      "parent_tag": "b_kamaitachi_nt0",
+      "parent_property_value": {
+        "items": [
+          "attack * 100"
+        ]
+      },
+      "parser_effective_value": {
+        "items": []
+      },
+      "source_literal_at": [
+        "@"
+      ],
+      "present_empty": true,
+      "parent_nonempty_blocked": true,
+      "static_witness": {
+        "root_tag": "b_kamaitachi",
+        "root_grants": [
+          {
+            "owner": "unit:esk",
+            "source": "a_default/script/10_ユニット/20_VVANグループ.dat",
+            "line": 85,
+            "field": "skill2"
+          },
+          {
+            "owner": "unit:astk",
+            "source": "a_default/script/10_ユニット/93_放浪_ノンケ・東方・アステカ.dat",
+            "line": 1,
+            "field": "skill2"
+          },
+          {
+            "owner": "class:astks",
+            "source": "a_default/script/32_ボススキル/B_26old_第二革命企画.dat",
+            "line": 664,
+            "field": "skill"
+          }
+        ],
+        "static_chain": [
+          "b_kamaitachi",
+          "b_kamaitachi_pr2"
+        ],
+        "edge_count": 1
+      },
+      "old_gameplay": "NOT RUN",
+      "new_strict": "NOT RUN"
+    },
+    {
+      "case_id": "WDF-AT-16",
+      "field": "range_min",
+      "skill_tag": "sp_new_misairu",
+      "dat_origin": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_0_共用.dat",
+        "declaration_line": 146,
+        "property_line": 161
+      },
+      "parent_tag": "new_misairu",
+      "parent_property_value": {
+        "text": "200",
+        "number": 200,
+        "found": true
+      },
+      "parser_effective_value": {
+        "found": true,
+        "text": "",
+        "number": 0
+      },
+      "source_literal_at": [
+        "@"
+      ],
+      "present_empty": true,
+      "parent_nonempty_blocked": true,
+      "static_witness": {
+        "root_tag": "sp_new_misairu",
+        "root_grants": [
+          {
+            "owner": "unit:rrm",
+            "source": "a_default/script/10_ユニット/21_お菓子作りの材料屋さん.dat",
+            "line": 214,
+            "field": "learn"
+          },
+          {
+            "owner": "unit:hsi",
+            "source": "a_default/script/10_ユニット/22_玉兎賊.dat",
+            "line": 2,
+            "field": "learn"
+          },
+          {
+            "owner": "class:hsis",
+            "source": "a_default/script/32_ボススキル/B_26old_第二革命企画.dat",
+            "line": 603,
+            "field": "skill"
+          }
+        ],
+        "static_chain": [
+          "sp_new_misairu"
+        ],
+        "edge_count": 0
+      },
+      "old_gameplay": "NOT RUN",
+      "new_strict": "NOT RUN"
+    },
+    {
+      "case_id": "WDF-AT-17",
+      "field": "flash",
+      "skill_tag": "sp_move_nt2",
+      "dat_origin": {
+        "file": "a_default/script/30_スキル/F13_heal_support.dat",
+        "declaration_line": 693,
+        "property_line": 697
+      },
+      "parent_tag": "seiretsu3",
+      "parent_property_value": {
+        "text": "3",
+        "number": 3,
+        "found": true
+      },
+      "parser_effective_value": {
+        "found": true,
+        "text": "",
+        "number": 0
+      },
+      "source_literal_at": [
+        "@"
+      ],
+      "present_empty": true,
+      "parent_nonempty_blocked": true,
+      "static_witness": {
+        "root_tag": "sp_move",
+        "root_grants": [
+          {
+            "owner": "unit:udk",
+            "source": "a_default/script/10_ユニット/01_マリナーズ傭兵団.dat",
+            "line": 2,
+            "field": "skill"
+          },
+          {
+            "owner": "unit:bidairobo_udk5",
+            "source": "a_default/script/10_ユニット/05_ヴォイス・ドラマ革命企画.dat",
+            "line": 1336,
+            "field": "skill"
+          },
+          {
+            "owner": "unit:udrgn23",
+            "source": "a_default/script/10_ユニット/120_スペシャル人材.dat",
+            "line": 499,
+            "field": "skill"
+          },
+          {
+            "owner": "unit:rensan",
+            "source": "a_default/script/10_ユニット/18_虐待専従0J_13部隊.dat",
+            "line": 2,
+            "field": "skill"
+          },
+          {
+            "owner": "unit:tanaka",
+            "source": "a_default/script/10_ユニット/23_リュージ騎士団.dat",
+            "line": 90,
+            "field": "skill"
+          },
+          {
+            "owner": "class:udks",
+            "source": "a_default/script/32_ボススキル/B_26old_第二革命企画.dat",
+            "line": 134,
+            "field": "skill"
+          }
+        ],
+        "static_chain": [
+          "sp_move",
+          "sp_move_nt1",
+          "sp_move_nt2"
+        ],
+        "edge_count": 2
+      },
+      "old_gameplay": "NOT RUN",
+      "new_strict": "NOT RUN"
+    },
+    {
+      "case_id": "WDF-AT-18",
+      "field": "delay",
+      "skill_tag": "boss_alc_wave",
+      "dat_origin": {
+        "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+        "declaration_line": 121,
+        "property_line": 129
+      },
+      "parent_tag": "sp_pojiko",
+      "parent_property_value": {
+        "text": "2",
+        "number": 2,
+        "found": true
+      },
+      "parser_effective_value": {
+        "found": true,
+        "text": "",
+        "number": 0
+      },
+      "source_literal_at": [
+        "@"
+      ],
+      "present_empty": true,
+      "parent_nonempty_blocked": true,
+      "static_witness": {
+        "root_tag": "boss_alc_wave",
+        "root_grants": [
+          {
+            "owner": "unit:boss_alc",
+            "source": "a_default/script/10_ユニット/B_1_クレイジーサイコレズ.dat",
+            "line": 1,
+            "field": "skill"
+          },
+          {
+            "owner": "unit:chuboss_alc",
+            "source": "a_default/script/10_ユニット/B_1_クレイジーサイコレズ.dat",
+            "line": 251,
+            "field": "skill"
+          },
+          {
+            "owner": "unit:boss_alc_r",
+            "source": "a_default/script/5000_ランダムシナリオ/RB_ボス人材.dat",
+            "line": 127,
+            "field": "skill"
+          }
+        ],
+        "static_chain": [
+          "boss_alc_wave"
+        ],
+        "edge_count": 0
+      },
+      "old_gameplay": "NOT RUN",
+      "new_strict": "NOT RUN"
+    },
+    {
+      "case_id": "WDF-AT-19",
+      "field": "rush",
+      "skill_tag": "sp_kaminari",
+      "dat_origin": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "declaration_line": 3967,
+        "property_line": 3990
+      },
+      "parent_tag": "atmu_thun",
+      "parent_property_value": {
+        "text": "60",
+        "number": 60,
+        "found": true
+      },
+      "parser_effective_value": {
+        "found": true,
+        "text": "",
+        "number": 0
+      },
+      "source_literal_at": [
+        "@"
+      ],
+      "present_empty": true,
+      "parent_nonempty_blocked": true,
+      "static_witness": {
+        "root_tag": "sp_kaminari",
+        "root_grants": [
+          {
+            "owner": "unit:piknn",
+            "source": "a_default/script/10_ユニット/04_ほのぼの神道.dat",
+            "line": 463,
+            "field": "skill2"
+          }
+        ],
+        "static_chain": [
+          "sp_kaminari"
+        ],
+        "edge_count": 0
+      },
+      "old_gameplay": "NOT RUN",
+      "new_strict": "NOT RUN"
+    },
+    {
+      "case_id": "WDF-AT-20",
+      "field": "knock",
+      "skill_tag": "alc_eart_nt2",
+      "dat_origin": {
+        "file": "a_default/script/31_ユニットスキル/U_16_20_ALC一派～VVAN.dat",
+        "declaration_line": 44,
+        "property_line": 53
+      },
+      "parent_tag": "alc_eart_nt1",
+      "parent_property_value": {
+        "text": "50",
+        "number": 50,
+        "found": true
+      },
+      "parser_effective_value": {
+        "found": true,
+        "text": "",
+        "number": 0
+      },
+      "source_literal_at": [
+        "@"
+      ],
+      "present_empty": true,
+      "parent_nonempty_blocked": true,
+      "static_witness": {
+        "root_tag": "alc_eart",
+        "root_grants": [
+          {
+            "owner": "unit:alc",
+            "source": "a_default/script/10_ユニット/16_ALC一派.dat",
+            "line": 2,
+            "field": "skill2"
+          },
+          {
+            "owner": "class:a1604",
+            "source": "a_default/script/20_クラス/16_20_ALC_遠野_おじさん_正統_VVAN.dat",
+            "line": 107,
+            "field": "skill"
+          },
+          {
+            "owner": "class:a1604a",
+            "source": "a_default/script/20_クラス/B_1_クレイジーサイコレズ.dat",
+            "line": 119,
+            "field": "skill"
+          },
+          {
+            "owner": "class:a1604b",
+            "source": "a_default/script/20_クラス/B_1_クレイジーサイコレズ.dat",
+            "line": 132,
+            "field": "skill"
+          },
+          {
+            "owner": "class:alcs",
+            "source": "a_default/script/32_ボススキル/B_26old_第二革命企画.dat",
+            "line": 532,
+            "field": "skill"
+          }
+        ],
+        "static_chain": [
+          "alc_eart",
+          "alc_eart_nt0",
+          "alc_eart_nt2"
+        ],
+        "edge_count": 2
+      },
+      "old_gameplay": "NOT RUN",
+      "new_strict": "NOT RUN"
+    }
+  ],
+  "static_direct_skill_root_count": 14,
+  "static_root_reachable_count": 20,
+  "instructions": [
+    "When defining Skill, store property existence separately from empty text / zero numeric",
+    "For list @, empty vector blocks parent in Work parser; do not replace with parent vector",
+    "For raw mp/special, runtime compiled Skill+278/+4C is still separate evidence",
+    "List duplicate native callback first/last/append remains VERIFY",
+    "For real gameplay use only legal Unit/Class roster; parent graph reachability is static only"
+  ],
+  "golden_original": 0,
+  "strict_new": 0
+}

@@ -1,0 +1,76 @@
+{
+  "research_id": "BRIDGE-20261022-RESEARCH-11-CROSSRUN-VALIDATION",
+  "status": "SAVED_ORIGINAL_RUNTIME_REPLAY_NOT_FULL_G1",
+  "checks": {
+    "SHA_9cddfc86_READY.json": true,
+    "SHA_9cddfc86_RAW_01.json": true,
+    "SHA_9cddfc86_RAW_02.json": true,
+    "SHA_9cddfc86_RAW_03.json": true,
+    "SHA_9cddfc86_FAILURE_04.json": true,
+    "SHA_9cddfc86_RAW_05.json": true,
+    "code_battle_user_recorder_core_20261022.py": true,
+    "code_battle_native_detached_capture_v7_20261022.py": true,
+    "code_battle_native_war_tree_decoder_v5_20261021.py": true,
+    "code_battle_native_readonly_live_probe_stage6_20261021.py": true,
+    "replay_BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_01.json": true,
+    "replay_BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_02.json": true,
+    "replay_BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_03.json": true,
+    "replay_BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_05.json": true,
+    "partial_28432": true,
+    "SHA_b8419f5d_READY.json": true,
+    "SHA_b8419f5d_RAW_01.json": true,
+    "SHA_b8419f5d_RAW_02.json": true,
+    "SHA_b8419f5d_FAILURE_03.json": true,
+    "SHA_b8419f5d_RAW_04.json": true,
+    "SHA_b8419f5d_RAW_05.json": true,
+    "replay_BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_01.json": true,
+    "replay_BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_02.json": true,
+    "replay_BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_04.json": true,
+    "replay_BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_05.json": true,
+    "partial_32468": true,
+    "eight_replayed": true,
+    "twelve_native_source_hashes": true,
+    "independent_sessions": true,
+    "limits_2211_and_2138": true,
+    "all_counter_changes_preserved": true,
+    "fourteen_RTTI_types": true,
+    "all_analysis_internal_checks": true,
+    "ledger_unique": true,
+    "crossrun_finding_saved": true,
+    "all_current_evidence_present": true,
+    "not_full_G1": true,
+    "no_live_or_recorder_changes": true,
+    "index_updated": true,
+    "work_gates_unchanged": true
+  },
+  "passed": 40,
+  "total": 40,
+  "source_hashes_checked": 12,
+  "native_saved_captures_replayed": 8,
+  "failed_partial_structures_recovered": 2,
+  "native_live_process_opened": false,
+  "recorder_modified": false,
+  "full_G1_proven": false,
+  "external_game_roundtrip_proven": false,
+  "work_gate_passes": 3,
+  "work_gate_total": 9,
+  "work_used": false,
+  "evidence": [
+    {
+      "name": "BATTLE_STAGE11_CROSSRUN_ANALYSIS_20261022.json",
+      "sha256": "DC65D29948A1E5057ACF2BC40CB54539F9C3AEC42B8B05413838DE425E039ADB"
+    },
+    {
+      "name": "BATTLE_STAGE11_TWO_RUNS_REPORT_20261022.md",
+      "sha256": "C8FFA77D652D5FCAF56EB6FA439B54E7D412359D110816016863EFD59C5E48DB"
+    },
+    {
+      "name": "BATTLE_BRIDGE_RESEARCH_INDEX.md",
+      "sha256": "A88135CC5CFFF00D1B3E6797C23A2B760241F5D635159FDE2DCF1ED8317F113B"
+    },
+    {
+      "name": "BATTLE_BRIDGE_FINDINGS_LEDGER.jsonl",
+      "sha256": "4063A51F377D97642E70614E971EC253E1A6D8DA6AD87C10898DE6750FCA7DDA"
+    }
+  ]
+}

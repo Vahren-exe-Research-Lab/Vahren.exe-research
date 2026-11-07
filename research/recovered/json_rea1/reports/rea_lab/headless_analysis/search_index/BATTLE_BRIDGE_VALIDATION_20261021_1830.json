@@ -1,0 +1,61 @@
+{
+  "research_id": "B-20261021-1830-BOUNDARY-03",
+  "source_functions": 10268,
+  "checks": [
+    {
+      "check": "Ghidra source indexed functions=10268",
+      "passed": true
+    },
+    {
+      "check": "XREF writer intersection +1eed1c",
+      "passed": true
+    },
+    {
+      "check": "XREF writer intersection +1eed4c",
+      "passed": true
+    },
+    {
+      "check": "XREF writer intersection +1eed50",
+      "passed": true
+    },
+    {
+      "check": "DAT dispatcher includes command simplebattle and war",
+      "passed": true
+    },
+    {
+      "check": "three constructed object slots and sizes",
+      "passed": true
+    },
+    {
+      "check": "script writer stores map/attack/defense slots",
+      "passed": true
+    },
+    {
+      "check": "war-init writer invokes both Power selection funcs",
+      "passed": true
+    },
+    {
+      "check": "native end has E+1EED28 gate and flag path",
+      "passed": true
+    },
+    {
+      "check": "research report has distinct B-03 id and peer B-02 dedup",
+      "passed": true
+    },
+    {
+      "check": "protocol draft keeps replacement unproven",
+      "passed": true
+    }
+  ],
+  "checks_passed": 11,
+  "checks_total": 11,
+  "file_sha256": {
+    "battle_bridge_field_xrefs_20261021.py": "FA70CFFD3EDFCA944BEE7CA7E71D00BFA2B5771CAD04422A268DFF2CE563E527",
+    "BATTLE_BRIDGE_FIELD_XREFS_20261021.json": "382FF43DFA9AAD2F14FD2E1ABC93DD63077C9D28291A30B36CA6E131AAA79519",
+    "BATTLE_BRIDGE_FIELD_XREFS_20261021.md": "7726A8C6DA4B75EAF7E84BB0EEE75EE0F1011119962F880132275C2D64B9A3B3",
+    "BATTLE_BRIDGE_NEW_FINDINGS_20261021_1830.md": "E91D0381D337694DBCBC71F8C448E3DE423D220AD1FB6D1BE113EE7B4F683BA4",
+    "BATTLE_BRIDGE_PROTOCOL_DRAFT_20261021.json": "16D3B9FE404C28A4BB97DE2280276F0BC7C04F810AD9F8CD9FD6CBB3110B2448"
+  },
+  "original_game_golden": "NOT_RUN",
+  "native_hook": "NOT_RUN"
+}

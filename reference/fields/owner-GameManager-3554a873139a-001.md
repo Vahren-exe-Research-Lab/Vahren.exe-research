@@ -4,8 +4,20 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-8"></a>
+## GameManager + 0x8
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE4_OWNER_ABI_PE_20261021.json 行 8](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE4_OWNER_ABI_PE_20261021.json?plain=1#L8-L8) — "task_engine": "At 0x4C24B7, first stack argument GameTask* loaded to EBP; +0x04 is GameManager*; at 0x4C24C3 clears GameManager+0x08 state",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE4_OWNER_ABI_PE_20261021.json 行 9](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE4_OWNER_ABI_PE_20261021.json?plain=1#L9-L9) — "scene_dispatch_exit": "After message pump returns, GameManager+0x08 compared to 2; if different, loop dispatches next scene at 0x4B9970. Do NOT equate this sta
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
 <a id="field-c"></a>
 ## GameManager + 0xC
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE4_OWNER_ABI_PE_20261021.json 行 7](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE4_OWNER_ABI_PE_20261021.json?plain=1#L7-L7) — "game_task": "GameManager +0x0C stored in EDI at 0x4B996B, pushed at 0x4B99DF to 0x4C24B0",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
 
 - [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0933_T014_EMPTY_SHEET_VSLOT20_AUDIT.md 行 47](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0933_T014_EMPTY_SHEET_VSLOT20_AUDIT.md?plain=1#L47-L47) — 0x004B996B  lea edi,[esi+0x0C]   ; S = GameManager + 0x0C
   制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
@@ -18,6 +30,9 @@
 
 <a id="field-504"></a>
 ## GameManager + 0x504
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE4_OWNER_ABI_PE_20261021.json 行 6](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_STAGE4_OWNER_ABI_PE_20261021.json?plain=1#L6-L6) — "game_event": "GameManager +0x504 passed in ECX at 0x4B99C7 to 0x48D6A0 at 0x4B99CD",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
 
 - [research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md 行 206](../../research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md?plain=1#L206-L206) — 食い違いではなかったもの: T014 の「world-base+0x504」と structs の「GameManager+0x504＝スクリプトエンジン E」は同じ物。世界地図グラフは E の中の木（E+0x1EEBCC/+0x1EEBD0）。
   制約・訂正　Existing full body linked; catalog revision differs

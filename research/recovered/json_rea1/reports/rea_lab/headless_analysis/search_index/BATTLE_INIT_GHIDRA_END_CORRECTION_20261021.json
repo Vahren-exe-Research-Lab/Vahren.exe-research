@@ -1,0 +1,42 @@
+{
+  "status": "CONFIRMED_FALSE_POSITIVE_GHIDRA_END_TRUNCATION",
+  "correct_ghidra_function_entry": "0x0048D6A0",
+  "correct_body_max_va": "0x0048EA5A",
+  "ret_at": "0x0048EA5A",
+  "ranges": [
+    {
+      "first": "0x0048D6A0",
+      "last": "0x0048E964",
+      "bytes": 4805
+    },
+    {
+      "first": "0x0048E988",
+      "last": "0x0048EA5A",
+      "bytes": 211
+    }
+  ],
+  "body_size_bytes": 5016,
+  "bad_derived_naive_end": "0x0048EA37",
+  "stage5_claim_to_retract": "0x48EA5A RET0 extends past 0x48EA38 exported function range",
+  "stage5_checks_to_revise": [
+    {
+      "stage5_check": "ghidra_declared_end_short",
+      "original_value": true,
+      "correct_value": false,
+      "reason": "Original Ghidra Function.getBody().getMaxAddress() is 0x0048EA5A, not start+size."
+    },
+    {
+      "stage5_check": "actual_ret_outside_ghidra",
+      "original_value": true,
+      "correct_value": false,
+      "reason": "Original Ghidra FunctionManager owns RET at 0x0048EA5A and SEH cleanup before it."
+    }
+  ],
+  "split_functions": 532,
+  "functions_with_ret_beyond_size_assumed_end": 365,
+  "original_Ghidra_body_error_for_this_function": false,
+  "original_byte_ret_c3": "c3",
+  "pe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "original_search_db_sha256": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF",
+  "note": "Only false positive is the interpretation of size as contiguous end. Native call and epilogue bytes remain valid evidence; ABI still needs caller/register review."
+}

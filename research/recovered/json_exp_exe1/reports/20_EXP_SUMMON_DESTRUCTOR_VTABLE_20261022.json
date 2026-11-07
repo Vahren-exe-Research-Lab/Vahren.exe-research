@@ -1,0 +1,89 @@
+{
+  "id": "EXP-LIFETIME-20261022-01",
+  "status": "STATIC_NATIVE_SOURCE / NO_RUNTIME_CALL_TIME",
+  "exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "vtable_va": "0x0063A9E4",
+  "vtable_slot_zero": "0x00570C90",
+  "native_assertions": [
+    {
+      "func": "0x0056F880",
+      "site": "0x0056F8DD",
+      "mnemonic": "mov",
+      "operands": "dword ptr [ebp], 0x63a9e4",
+      "bytes": "c74500e4a96300",
+      "pass": true
+    },
+    {
+      "func": "0x00570C90",
+      "site": "0x00570C94",
+      "mnemonic": "call",
+      "operands": "0x543e00",
+      "bytes": "e86731fdff",
+      "pass": true
+    },
+    {
+      "func": "0x00570C90",
+      "site": "0x00570CA1",
+      "mnemonic": "call",
+      "operands": "0x5b6bbb",
+      "bytes": "e8155f0400",
+      "pass": true
+    },
+    {
+      "func": "0x00543E00",
+      "site": "0x00543F04",
+      "mnemonic": "lea",
+      "operands": "esi, [ebp + 0x1e4b4]",
+      "bytes": "8db5b4e40100",
+      "pass": true
+    },
+    {
+      "func": "0x00543E00",
+      "site": "0x00543F21",
+      "mnemonic": "call",
+      "operands": "0x5450c0",
+      "bytes": "e89a110000",
+      "pass": true
+    },
+    {
+      "func": "0x005450C0",
+      "site": "0x005450DA",
+      "mnemonic": "call",
+      "operands": "0x5454d0",
+      "bytes": "e8f1030000",
+      "pass": true
+    },
+    {
+      "func": "0x005454D0",
+      "site": "0x00545525",
+      "mnemonic": "call",
+      "operands": "0x4591f0",
+      "bytes": "e8c63cf1ff",
+      "pass": true
+    }
+  ],
+  "verified_direct_edges": [
+    {
+      "caller": "0x00570C90",
+      "callee": "0x00543E00",
+      "site": "0x00570C94"
+    },
+    {
+      "caller": "0x00543E00",
+      "callee": "0x005450C0",
+      "site": "0x00543F21"
+    },
+    {
+      "caller": "0x005450C0",
+      "callee": "0x005454D0",
+      "site": "0x005450DA"
+    },
+    {
+      "caller": "0x005454D0",
+      "callee": "0x004591F0",
+      "site": "0x00545525"
+    }
+  ],
+  "interpretation": "The normal unit constructed by 0x56F880 has virtual slot0 deleting destructor 0x570C90, which invokes tree cleanup 0x543E00. Cleanup reaches node payload destructor 0x4591F0.",
+  "open": "Battle finish call timing, indirect dispatch sites, transfer-to-strategy prior to destructor, all subtype behavior"
+}

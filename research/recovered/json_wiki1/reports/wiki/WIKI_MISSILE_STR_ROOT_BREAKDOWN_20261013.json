@@ -1,0 +1,435 @@
+{
+  "status": "STATIC reasons for NOT passing narrow Work damage adapter",
+  "table": {
+    "other/empty/no str list": 4606,
+    "direct_unit_class_grant/empty/no str list": 1421,
+    "other/unsupported str mode": 301,
+    "other/no multiplication operator": 34,
+    "direct_unit_class_grant/unsupported str mode": 4
+  },
+  "samples": {
+    "other/empty/no str list": [
+      {
+        "tag": "ef_degit",
+        "classification": "empty/no str list",
+        "raw_terms": []
+      },
+      {
+        "tag": "ef_degit_nt2",
+        "classification": "empty/no str list",
+        "raw_terms": []
+      },
+      {
+        "tag": "ef_degit_nt3",
+        "classification": "empty/no str list",
+        "raw_terms": []
+      },
+      {
+        "tag": "ef_degit_nt4",
+        "classification": "empty/no str list",
+        "raw_terms": []
+      },
+      {
+        "tag": "tuto_masupa",
+        "classification": "empty/no str list",
+        "raw_terms": []
+      },
+      {
+        "tag": "ef_winter_nt",
+        "classification": "empty/no str list",
+        "raw_terms": []
+      },
+      {
+        "tag": "ef_winter_nt1",
+        "classification": "empty/no str list",
+        "raw_terms": []
+      },
+      {
+        "tag": "ef_winter_nt2",
+        "classification": "empty/no str list",
+        "raw_terms": []
+      },
+      {
+        "tag": "loop_winter",
+        "classification": "empty/no str list",
+        "raw_terms": []
+      },
+      {
+        "tag": "s_dtpsr1",
+        "classification": "empty/no str list",
+        "raw_terms": []
+      },
+      {
+        "tag": "s_dtpsr2",
+        "classification": "empty/no str list",
+        "raw_terms": []
+      },
+      {
+        "tag": "nisehsiwaru_kasoku",
+        "classification": "empty/no str list",
+        "raw_terms": []
+      },
+      {
+        "tag": "s_b_biim",
+        "classification": "empty/no str list",
+        "raw_terms": []
+      },
+      {
+        "tag": "s_b_biim2",
+        "classification": "empty/no str list",
+        "raw_terms": []
+      },
+      {
+        "tag": "s_dtswk1",
+        "classification": "empty/no str list",
+        "raw_terms": []
+      },
+      {
+        "tag": "s_dtswk2",
+        "classification": "empty/no str list",
+        "raw_terms": []
+      }
+    ],
+    "direct_unit_class_grant/empty/no str list": [
+      {
+        "tag": "ef_winter",
+        "classification": "empty/no str list",
+        "raw_terms": []
+      },
+      {
+        "tag": "sp_hokyu_azs",
+        "classification": "empty/no str list",
+        "raw_terms": []
+      },
+      {
+        "tag": "sp_ruida",
+        "classification": "empty/no str list",
+        "raw_terms": []
+      },
+      {
+        "tag": "sp_ranbu_rensan",
+        "classification": "empty/no str list",
+        "raw_terms": []
+      },
+      {
+        "tag": "self_a00a66r",
+        "classification": "empty/no str list",
+        "raw_terms": []
+      },
+      {
+        "tag": "self_a00a66r2",
+        "classification": "empty/no str list",
+        "raw_terms": []
+      },
+      {
+        "tag": "self_a00a66r3",
+        "classification": "empty/no str list",
+        "raw_terms": []
+      },
+      {
+        "tag": "masupa_GGG",
+        "classification": "empty/no str list",
+        "raw_terms": []
+      },
+      {
+        "tag": "sahen",
+        "classification": "empty/no str list",
+        "raw_terms": []
+      },
+      {
+        "tag": "giant_swing",
+        "classification": "empty/no str list",
+        "raw_terms": []
+      },
+      {
+        "tag": "sp_hznkani",
+        "classification": "empty/no str list",
+        "raw_terms": []
+      },
+      {
+        "tag": "hzn_firehamachi",
+        "classification": "empty/no str list",
+        "raw_terms": []
+      },
+      {
+        "tag": "hzn_wate26",
+        "classification": "empty/no str list",
+        "raw_terms": []
+      },
+      {
+        "tag": "hzn_beam26",
+        "classification": "empty/no str list",
+        "raw_terms": []
+      },
+      {
+        "tag": "cyclops_b",
+        "classification": "empty/no str list",
+        "raw_terms": []
+      },
+      {
+        "tag": "sp_knnhzn",
+        "classification": "empty/no str list",
+        "raw_terms": []
+      }
+    ],
+    "other/unsupported str mode": [
+      {
+        "tag": "sp_893_nt",
+        "classification": "unsupported str mode",
+        "raw_terms": [
+          "none * 0"
+        ]
+      },
+      {
+        "tag": "letsu_beam_nt3",
+        "classification": "unsupported str mode",
+        "raw_terms": [
+          "none * 0"
+        ]
+      },
+      {
+        "tag": "letsu_beam_nt4b",
+        "classification": "unsupported str mode",
+        "raw_terms": [
+          "none * 0"
+        ]
+      },
+      {
+        "tag": "m_fire_pr2",
+        "classification": "unsupported str mode",
+        "raw_terms": [
+          "none * 0"
+        ]
+      },
+      {
+        "tag": "m_fire_pr2b",
+        "classification": "unsupported str mode",
+        "raw_terms": [
+          "none * 0"
+        ]
+      },
+      {
+        "tag": "m_fire_pr3",
+        "classification": "unsupported str mode",
+        "raw_terms": [
+          "none * 0"
+        ]
+      },
+      {
+        "tag": "m_fire_pr4",
+        "classification": "unsupported str mode",
+        "raw_terms": [
+          "none * 0"
+        ]
+      },
+      {
+        "tag": "m_fire_pr5",
+        "classification": "unsupported str mode",
+        "raw_terms": [
+          "none * 0"
+        ]
+      },
+      {
+        "tag": "dfire_cannon_pr1",
+        "classification": "unsupported str mode",
+        "raw_terms": [
+          "none * 0"
+        ]
+      },
+      {
+        "tag": "dfire_cannon_pr2b",
+        "classification": "unsupported str mode",
+        "raw_terms": [
+          "none * 0"
+        ]
+      },
+      {
+        "tag": "dfire_cannon_pr3",
+        "classification": "unsupported str mode",
+        "raw_terms": [
+          "none * 0"
+        ]
+      },
+      {
+        "tag": "dfire_cannon_pr4b",
+        "classification": "unsupported str mode",
+        "raw_terms": [
+          "none * 0"
+        ]
+      },
+      {
+        "tag": "m_wate_pr2",
+        "classification": "unsupported str mode",
+        "raw_terms": [
+          "none * 0"
+        ]
+      },
+      {
+        "tag": "m_wate_pr2b",
+        "classification": "unsupported str mode",
+        "raw_terms": [
+          "none * 0"
+        ]
+      },
+      {
+        "tag": "m_wate_pr4",
+        "classification": "unsupported str mode",
+        "raw_terms": [
+          "none * 0"
+        ]
+      },
+      {
+        "tag": "m_wate_pr4b",
+        "classification": "unsupported str mode",
+        "raw_terms": [
+          "none * 0"
+        ]
+      }
+    ],
+    "other/no multiplication operator": [
+      {
+        "tag": "reitoumgs_nt5",
+        "classification": "no multiplication operator",
+        "raw_terms": [
+          "none"
+        ]
+      },
+      {
+        "tag": "reitoumg_nt5",
+        "classification": "no multiplication operator",
+        "raw_terms": [
+          "none"
+        ]
+      },
+      {
+        "tag": "reitoubiim_nt4",
+        "classification": "no multiplication operator",
+        "raw_terms": [
+          "none"
+        ]
+      },
+      {
+        "tag": "reitoubiim_nt4_1",
+        "classification": "no multiplication operator",
+        "raw_terms": [
+          "none"
+        ]
+      },
+      {
+        "tag": "reitoubiim_nt4_2",
+        "classification": "no multiplication operator",
+        "raw_terms": [
+          "none"
+        ]
+      },
+      {
+        "tag": "reitoubiim_nt4_3",
+        "classification": "no multiplication operator",
+        "raw_terms": [
+          "none"
+        ]
+      },
+      {
+        "tag": "reitoubiim_nt4_4",
+        "classification": "no multiplication operator",
+        "raw_terms": [
+          "none"
+        ]
+      },
+      {
+        "tag": "reitoubiim_nt4_5",
+        "classification": "no multiplication operator",
+        "raw_terms": [
+          "none"
+        ]
+      },
+      {
+        "tag": "reitoubiim_nt4_6",
+        "classification": "no multiplication operator",
+        "raw_terms": [
+          "none"
+        ]
+      },
+      {
+        "tag": "reitoubiim_nt4_7",
+        "classification": "no multiplication operator",
+        "raw_terms": [
+          "none"
+        ]
+      },
+      {
+        "tag": "reitoubiim_nt5",
+        "classification": "no multiplication operator",
+        "raw_terms": [
+          "none"
+        ]
+      },
+      {
+        "tag": "q_dskr_nt1_c",
+        "classification": "no multiplication operator",
+        "raw_terms": [
+          "0"
+        ]
+      },
+      {
+        "tag": "q_dskr_nt2_c",
+        "classification": "no multiplication operator",
+        "raw_terms": [
+          "0"
+        ]
+      },
+      {
+        "tag": "sp_murpo_reitoubiim_nt4",
+        "classification": "no multiplication operator",
+        "raw_terms": [
+          "none"
+        ]
+      },
+      {
+        "tag": "sp_murpo_reitoubiim_nt4_1",
+        "classification": "no multiplication operator",
+        "raw_terms": [
+          "none"
+        ]
+      },
+      {
+        "tag": "sp_murpo_reitoubiim_nt4_2",
+        "classification": "no multiplication operator",
+        "raw_terms": [
+          "none"
+        ]
+      }
+    ],
+    "direct_unit_class_grant/unsupported str mode": [
+      {
+        "tag": "rmla_yari2",
+        "classification": "unsupported str mode",
+        "raw_terms": [
+          "none*0"
+        ]
+      },
+      {
+        "tag": "yari_swing",
+        "classification": "unsupported str mode",
+        "raw_terms": [
+          "none*0"
+        ]
+      },
+      {
+        "tag": "yari_swing_min1",
+        "classification": "unsupported str mode",
+        "raw_terms": [
+          "none*0"
+        ]
+      },
+      {
+        "tag": "bombarrow",
+        "classification": "unsupported str mode",
+        "raw_terms": [
+          "none * 0"
+        ]
+      }
+    ]
+  },
+  "caveat": "A missile tagged Skill can be a visual/effect setup with intentionally absent str. Do not fill defaults."
+}

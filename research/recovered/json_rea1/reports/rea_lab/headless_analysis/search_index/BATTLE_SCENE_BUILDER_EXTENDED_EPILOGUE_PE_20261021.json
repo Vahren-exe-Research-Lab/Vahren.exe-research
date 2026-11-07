@@ -1,0 +1,120 @@
+{
+  "status": "STATIC ORIGINAL PE / Ghidra BODY BOUNDARY OVERFLOW",
+  "sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "body_va": "0x0048D6A0",
+  "body_bytes_exported": 5016,
+  "exported_body_end_va": "0x0048EA38",
+  "observed_epilogue_window": [
+    {
+      "va": "0x0048EA3F",
+      "bytes": "8b4df4",
+      "asm": "mov ecx, dword ptr [ebp - 0xc]"
+    },
+    {
+      "va": "0x0048EA42",
+      "bytes": "64890d00000000",
+      "asm": "mov dword ptr fs:[0], ecx"
+    },
+    {
+      "va": "0x0048EA49",
+      "bytes": "59",
+      "asm": "pop ecx"
+    },
+    {
+      "va": "0x0048EA4A",
+      "bytes": "5f",
+      "asm": "pop edi"
+    },
+    {
+      "va": "0x0048EA4B",
+      "bytes": "5e",
+      "asm": "pop esi"
+    },
+    {
+      "va": "0x0048EA4C",
+      "bytes": "5b",
+      "asm": "pop ebx"
+    },
+    {
+      "va": "0x0048EA4D",
+      "bytes": "8b4dec",
+      "asm": "mov ecx, dword ptr [ebp - 0x14]"
+    },
+    {
+      "va": "0x0048EA50",
+      "bytes": "33cd",
+      "asm": "xor ecx, ebp"
+    },
+    {
+      "va": "0x0048EA52",
+      "bytes": "e8bc7a1200",
+      "asm": "call 0x5b6513"
+    },
+    {
+      "va": "0x0048EA57",
+      "bytes": "8be5",
+      "asm": "mov esp, ebp"
+    },
+    {
+      "va": "0x0048EA59",
+      "bytes": "5d",
+      "asm": "pop ebp"
+    },
+    {
+      "va": "0x0048EA5A",
+      "bytes": "c3",
+      "asm": "ret "
+    },
+    {
+      "va": "0x0048EA5B",
+      "bytes": "cc",
+      "asm": "int3 "
+    },
+    {
+      "va": "0x0048EA5C",
+      "bytes": "cc",
+      "asm": "int3 "
+    },
+    {
+      "va": "0x0048EA5D",
+      "bytes": "cc",
+      "asm": "int3 "
+    },
+    {
+      "va": "0x0048EA5E",
+      "bytes": "cc",
+      "asm": "int3 "
+    },
+    {
+      "va": "0x0048EA5F",
+      "bytes": "cc",
+      "asm": "int3 "
+    },
+    {
+      "va": "0x0048EA60",
+      "bytes": "55",
+      "asm": "push ebp"
+    },
+    {
+      "va": "0x0048EA61",
+      "bytes": "8bec",
+      "asm": "mov ebp, esp"
+    },
+    {
+      "va": "0x0048EA63",
+      "bytes": "83e4f8",
+      "asm": "and esp, 0xfffffff8"
+    },
+    {
+      "va": "0x0048EA66",
+      "bytes": "6aff",
+      "asm": "push -1"
+    },
+    {
+      "va": "0x0048EA68",
+      "bytes": "6861805f00",
+      "asm": "push 0x5f8061"
+    }
+  ],
+  "warning": "Disassembly beyond exported body may include a new function after epilogue. CFG identity to be verified before calling ABI certain."
+}

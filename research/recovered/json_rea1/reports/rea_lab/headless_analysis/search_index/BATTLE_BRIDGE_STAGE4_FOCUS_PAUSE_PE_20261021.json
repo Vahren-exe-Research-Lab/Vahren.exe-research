@@ -1,0 +1,112 @@
+{
+  "research_id": "BRIDGE-FOCUS-PAUSE-20261021",
+  "status": "PE + GHIDRA STATIC ONLY / ORIGINAL_GAME_NOT_RUN",
+  "source_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "semantics": [
+    "WM_ACTIVATE (uMsg 6), active value 1 or 2 sets both focus flags (0x879822/0x879823) to 1",
+    "Inactive WM_ACTIVATE clears 0x879823, and normally clears 0x879822 except a setting-gated branch (0x65BD9F/0xAAD430)",
+    "When 0x879822==0 and the message queue is empty, 0x4C24B0 executes Sleep(10) rather than the time/Task update branch",
+    "0x4BCF70 input event collector also tests 0x879822",
+    "Simply launching an external fullscreen window may pause the original by focus loss, but only conditionally; focus alone is NOT a stable battle handoff protocol"
+  ],
+  "raw_xrefs": [
+    {
+      "source_function_va": "0x004B9AA0",
+      "site_va": "0x004B9AC3",
+      "target_va": "0x00879822",
+      "read_access": 1,
+      "write_access": 0,
+      "ref_type": "READ"
+    },
+    {
+      "source_function_va": "0x004BCF70",
+      "site_va": "0x004BCF71",
+      "target_va": "0x00879822",
+      "read_access": 1,
+      "write_access": 0,
+      "ref_type": "READ"
+    },
+    {
+      "source_function_va": "0x004C0960",
+      "site_va": "0x004C0D9A",
+      "target_va": "0x00879822",
+      "read_access": 1,
+      "write_access": 0,
+      "ref_type": "READ"
+    },
+    {
+      "source_function_va": "0x004C24B0",
+      "site_va": "0x004C2558",
+      "target_va": "0x00879822",
+      "read_access": 1,
+      "write_access": 0,
+      "ref_type": "READ"
+    },
+    {
+      "source_function_va": "0x005559B0",
+      "site_va": "0x005559FB",
+      "target_va": "0x00879822",
+      "read_access": 0,
+      "write_access": 1,
+      "ref_type": "WRITE"
+    },
+    {
+      "source_function_va": "0x005559B0",
+      "site_va": "0x00555A1F",
+      "target_va": "0x00879822",
+      "read_access": 0,
+      "write_access": 1,
+      "ref_type": "WRITE"
+    }
+  ],
+  "pe_windows": {
+    "wndproc": [
+      {
+        "va": "0x005559FB",
+        "hex": "880d22988700",
+        "asm": "mov byte ptr [0x879822], cl"
+      },
+      {
+        "va": "0x00555A07",
+        "hex": "880d23988700",
+        "asm": "mov byte ptr [0x879823], cl"
+      },
+      {
+        "va": "0x00555A1F",
+        "hex": "a222988700",
+        "asm": "mov byte ptr [0x879822], al"
+      },
+      {
+        "va": "0x00555A24",
+        "hex": "a223988700",
+        "asm": "mov byte ptr [0x879823], al"
+      }
+    ],
+    "mainloop": [
+      {
+        "va": "0x004C2558",
+        "hex": "381d22988700",
+        "asm": "cmp byte ptr [0x879822], bl"
+      },
+      {
+        "va": "0x004C2714",
+        "hex": "e8b7010000",
+        "asm": "call 0x4c28d0"
+      }
+    ],
+    "inputs": [
+      {
+        "va": "0x004BCF71",
+        "hex": "803d2298870000",
+        "asm": "cmp byte ptr [0x879822], 0"
+      }
+    ]
+  },
+  "risk": [
+    "If focus returns or a background-run setting keeps 0x879822 enabled, native battle task execution resumes",
+    "Modifying the global focus flag changes input behavior and is not a safe production pause mechanism",
+    "Blocking Windows UI thread inside 0x4B9930 detour prevents native GetMessage/PeekMessage loop from running",
+    "Live behavior depends on exact WM_ACTIVATE, configuration and game loop state; not observed"
+  ],
+  "next": "Do not patch focus flag. Compare legal old gameplay with external window focus lost/returned and explicit task gating only after the input/Task lifecycle is understood."
+}

@@ -1,0 +1,68 @@
+{
+  "id": "BRIDGE-20261021-SAVED-WIRE-IPC-01",
+  "status": "ORIGINAL_SAVED_WIRE_EXTERNAL_IPC / ORIGINAL_GAME_NOT_RUN",
+  "source_save_sha256": "45CCEF306B56BF66810726436365207CA18B63D7CC0E432E784034D196FA5635",
+  "source": "byte-exact verified original save2.sav",
+  "same_run_original_game_memory_capture": false,
+  "original_game_exe_executed": false,
+  "native_result_committed": false,
+  "source_unit_count": 48,
+  "target_unit_count": 48,
+  "candidate_route": "sp16+sp2",
+  "scenarios": [
+    {
+      "case": "real_save_spot_roster_roundtrip",
+      "expected": "PASS_SAVED_WIRE_ECHO",
+      "actual": "PASS_SAVED_WIRE_ECHO",
+      "pass": true,
+      "worker_exit": 0
+    },
+    {
+      "case": "reject_forged_save_sha",
+      "expected": "REJECT_SAVE_HASH",
+      "actual": "REJECT_SAVE_HASH",
+      "pass": true,
+      "worker_exit": 3
+    },
+    {
+      "case": "reject_payload_integrity_failure",
+      "expected": "REJECT_BODY_HASH",
+      "actual": "REJECT_BODY_HASH",
+      "pass": true,
+      "worker_exit": 3
+    },
+    {
+      "case": "reject_live_process_input",
+      "expected": "REJECT_NOT_SAVED_WIRE",
+      "actual": "REJECT_NOT_SAVED_WIRE",
+      "pass": true,
+      "worker_exit": 3
+    },
+    {
+      "case": "reject_wrong_terrain_route",
+      "expected": "REJECT_WRONG_CANDIDATE",
+      "actual": "REJECT_WRONG_CANDIDATE",
+      "pass": true,
+      "worker_exit": 3
+    },
+    {
+      "case": "reject_cross_side_duplicate",
+      "expected": "REJECT_DUPLICATE_UNIT",
+      "actual": "REJECT_DUPLICATE_UNIT",
+      "pass": true,
+      "worker_exit": 3
+    },
+    {
+      "case": "reject_missing_unit",
+      "expected": "REJECT_ROSTER",
+      "actual": "REJECT_ROSTER",
+      "pass": true,
+      "worker_exit": 3
+    }
+  ],
+  "cases_passed": 7,
+  "cases_total": 7,
+  "source_payload_sha256": "61EFB8F98E7D6A004C72941B5B4420C063EFD6874494F3E66B9E4C66493661AB",
+  "worker_sha256": "1E97697DD1945D1547EE3710FDFC135CB4DA2D6A4CBBD3D06DDCF9CAE55CF5B2",
+  "warning": "This is a save-wire roster IPC transport test, NOT an old EXE -> external EXE -> old EXE battle handoff."
+}

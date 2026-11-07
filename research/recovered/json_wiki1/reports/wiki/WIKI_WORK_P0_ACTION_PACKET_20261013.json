@@ -1,0 +1,261 @@
+{
+  "schema": "WIKI_TO_WORK_P0_ACTION_PACKET_V1",
+  "request": "WRQ-20261013-B-SKILL",
+  "baseline_note": "E cp121/430; Work1041 synthetic wide 1041/0fail, own result core_return 54E31C",
+  "source_hashes": {
+    "native_unit_ai": "0fe33d84360657798fda6815b30ed0f1bd4910132c7420f9e02c3d74cefceb11",
+    "core_return_fixture": "0ef107cf866c5b372d66d2bee56f24b5648cf2d5c3c84a116093eaef684bc155",
+    "core_return_result": "22f10b0265fe4d6a301b8363a24c483365c2ee1112d53c34cabae6fc750cebdd"
+  },
+  "actions": [
+    {
+      "existing_wdf_id": "WDF-01",
+      "subcase": "SRC-FLASH-NEG4",
+      "owner": "Work runtime / B compiler / C E legal scene",
+      "status": "SOURCE_READY_SYNTHETIC_STAGE_PASS_ONLY",
+      "source_unit": {
+        "tag": "fmrim",
+        "DAT_file": "a_default/script/10_ユニット/26_クッキー☆原理主義党.dat",
+        "line": 413,
+        "name": "ＦＭＲＩＭ",
+        "level_decl": 8,
+        "magic_decl": 750,
+        "MP_decl": 500,
+        "class": "c_fmrim"
+      },
+      "source_event": {
+        "file": "a_default/script/5000_ランダムシナリオ/sc_rnd_sys.dat",
+        "line": 331,
+        "text": "addSkill2(fmrim,sp_fmrim_joker)",
+        "event": "push_rndm_routine",
+        "scene": "5000_ランダムシナリオ",
+        "runtime_reachability": "NOT RUN"
+      },
+      "skill_variants": [
+        {
+          "tag": "sp_fmrim_heal",
+          "raw_flash": "-4",
+          "raw_spell_attr": "hp",
+          "inherited_cost": 80,
+          "source_graph": {
+            "root": "sp_fmrim_joker",
+            "root_class": "event",
+            "steps": [
+              {
+                "skill": "sp_fmrim_joker",
+                "from": null,
+                "edge": null,
+                "link_source_tag": null
+              },
+              {
+                "skill": "sp_fmrim_joker_nt0",
+                "from": "sp_fmrim_joker",
+                "edge": "next",
+                "link_source_tag": "sp_fmrim_joker"
+              },
+              {
+                "skill": "sp_fmrim_joker_nt1",
+                "from": "sp_fmrim_joker_nt0",
+                "edge": "next",
+                "link_source_tag": "sp_fmrim_joker_nt0"
+              },
+              {
+                "skill": "sp_fmrim_joker_nt2",
+                "from": "sp_fmrim_joker_nt1",
+                "edge": "next3",
+                "link_source_tag": "sp_fmrim_joker_nt1"
+              },
+              {
+                "skill": "sp_fmrim_joker_nt7b",
+                "from": "sp_fmrim_joker_nt2",
+                "edge": "next3",
+                "link_source_tag": "sp_fmrim_joker_nt2"
+              },
+              {
+                "skill": "sp_fmrim_joker_nt8b",
+                "from": "sp_fmrim_joker_nt7b",
+                "edge": "next3",
+                "link_source_tag": "sp_fmrim_joker_nt7b"
+              },
+              {
+                "skill": "sp_fmrim_joker_biim23_summon_nt0_joi",
+                "from": "sp_fmrim_joker_nt8b",
+                "edge": "next3",
+                "link_source_tag": "sp_fmrim_joker_nt8b"
+              },
+              {
+                "skill": "sp_fmrim_joker_biim23_summon_nt0",
+                "from": "sp_fmrim_joker_biim23_summon_nt0_joi",
+                "edge": "next2",
+                "link_source_tag": "sp_fmrim_joker_biim23_summon_nt0_joi"
+              },
+              {
+                "skill": "sp_fmrim_joker_eliz_hokyu_nt1",
+                "from": "sp_fmrim_joker_biim23_summon_nt0",
+                "edge": "next3",
+                "link_source_tag": "sp_fmrim_joker_biim23_summon_nt0"
+              },
+              {
+                "skill": "sp_fmrim_heal",
+                "from": "sp_fmrim_joker_eliz_hokyu_nt1",
+                "edge": "next3",
+                "link_source_tag": "sp_fmrim_joker_eliz_hokyu_nt1"
+              }
+            ],
+            "root_grants": []
+          }
+        },
+        {
+          "tag": "sp_fmrim_heal2",
+          "raw_flash": "-4",
+          "raw_spell_attr": "hp",
+          "inherited_cost": 80,
+          "source_graph": {
+            "root": "sp_fmrim_joker",
+            "root_class": "event",
+            "steps": [
+              {
+                "skill": "sp_fmrim_joker",
+                "from": null,
+                "edge": null,
+                "link_source_tag": null
+              },
+              {
+                "skill": "sp_fmrim_joker_nt0",
+                "from": "sp_fmrim_joker",
+                "edge": "next",
+                "link_source_tag": "sp_fmrim_joker"
+              },
+              {
+                "skill": "sp_fmrim_joker_nt1",
+                "from": "sp_fmrim_joker_nt0",
+                "edge": "next",
+                "link_source_tag": "sp_fmrim_joker_nt0"
+              },
+              {
+                "skill": "sp_fmrim_joker_nt2",
+                "from": "sp_fmrim_joker_nt1",
+                "edge": "next3",
+                "link_source_tag": "sp_fmrim_joker_nt1"
+              },
+              {
+                "skill": "sp_fmrim_joker_nt7b",
+                "from": "sp_fmrim_joker_nt2",
+                "edge": "next3",
+                "link_source_tag": "sp_fmrim_joker_nt2"
+              },
+              {
+                "skill": "sp_fmrim_joker_nt8b",
+                "from": "sp_fmrim_joker_nt7b",
+                "edge": "next3",
+                "link_source_tag": "sp_fmrim_joker_nt7b"
+              },
+              {
+                "skill": "sp_fmrim_joker_biim23_summon_nt0_joi",
+                "from": "sp_fmrim_joker_nt8b",
+                "edge": "next3",
+                "link_source_tag": "sp_fmrim_joker_nt8b"
+              },
+              {
+                "skill": "sp_fmrim_joker_biim23_summon_nt2",
+                "from": "sp_fmrim_joker_biim23_summon_nt0_joi",
+                "edge": "next2",
+                "link_source_tag": "sp_fmrim_joker_biim23_summon_nt0_joi"
+              },
+              {
+                "skill": "sp_fmrim_joker_eliz_hokyu_nt3",
+                "from": "sp_fmrim_joker_biim23_summon_nt2",
+                "edge": "next3",
+                "link_source_tag": "sp_fmrim_joker_biim23_summon_nt2"
+              },
+              {
+                "skill": "sp_fmrim_heal2",
+                "from": "sp_fmrim_joker_eliz_hokyu_nt3",
+                "edge": "next3",
+                "link_source_tag": "sp_fmrim_joker_eliz_hokyu_nt3"
+              }
+            ],
+            "root_grants": []
+          }
+        },
+        {
+          "tag": "sp_fmrim_heal3",
+          "raw_flash": "-4",
+          "raw_spell_attr": "hp",
+          "inherited_cost": 80,
+          "source_graph": null
+        }
+      ],
+      "preexisting_test": "SupportCoreFlashTests has 0/-1 branch already",
+      "new_own_smoke": "WIKI_WORK_FLASH_NEGATIVE3_SMOKE_20261013.json (3/3)",
+      "compiled_precondition": "Skill+0x248<=0; matching Unit/Skill/context D1E1",
+      "Work_expected": "551C7F->551CF2; Skill+6F0 and 4DFBB0 not reached",
+      "checks": [
+        "Read raw flash=-4 in the two original DAT skills plus one child",
+        "Manual Skill+248=-4 binding is SYNTHETIC ONLY; never claim compiler proven",
+        "Do not retag existing m_heal while keeping its flash5/caster identity",
+        "If testing wider Session, construct actual skill grant and eligible fmrim profile first",
+        "For old game, capture legal random-scene grant and animation/Unit results",
+        "No old_Gameplay Golden or whole Unit return is validated"
+      ],
+      "blocked": [
+        "original legal event reachability",
+        "compiled+248 writer",
+        "actual child heal dispatch",
+        "GUI effects and old/new strict match"
+      ]
+    },
+    {
+      "existing_wdf_id": "WDF-01",
+      "subcase": "MHEAL-FIELD-PROVENANCE",
+      "owner": "Work / B / A generic getter",
+      "status": "FIELD_PROVENANCE_AUDIT_READY",
+      "source": "WIKI_WORK_MHEAL_FIELD_PROVENANCE_20261013.json",
+      "source_confirmed": [
+        "mp80->Skill+278",
+        "flash5->Skill+248",
+        "attr hp->Skill+A1C",
+        "absent add_per native default chance100"
+      ],
+      "synthetic_or_unknown": [
+        "m_heal special ABSENT / Work+4C=3 synthetic",
+        "m_heal rush ABSENT / Work+74=0 synthetic; B-1930 confirms raw rush name",
+        "Work+6F0 count2 synthetic; Skill+6F4 source records not bound",
+        "Compiled Skill+268/+2A0/+2B4 conditional raw provenance unbound"
+      ],
+      "Work_current": "Core-return fixture hits 0x54E31C with blocked=True, not Unit return",
+      "next_steps": [
+        "Reuse existing 1041 HP/EXP/flash/core-return (do not rebuild)",
+        "Compare A/B saved generic getter absent/parent/@ against live m_heal Skill+4C/+74",
+        "Keep +6F0/+6F4 blocked without source and do not fake child success",
+        "Return from 54E31C and Unit next action requires independent proof"
+      ]
+    },
+    {
+      "existing_wdf_id": "WDF-18",
+      "subcase": "HEAL-ADD2-20",
+      "owner": "Work / B-MT-02",
+      "status": "DAT_SOURCE_INPUTS_ONLY",
+      "source": "WIKI_HEAL_ADD2_20FIXTURES_20261013.json",
+      "next_steps": [
+        "Single nonempty-name HP path already implemented, do not duplicate",
+        "Test full add_all 5515C4->4ACE30->479B50 and empty scratch551DEB",
+        "Use sp_ryuma_nt2 7 attributes and sp_move_nt2 3 attributes with source order",
+        "Preserve MP/PRNG already consumed and caller returnPC"
+      ]
+    }
+  ],
+  "no_new_B_READY": true,
+  "no_new_E_GOLDEN": true,
+  "no_product_edit": true,
+  "cross_chat_notification": false,
+  "acceptance": [
+    "flash-4 bounded stage 3/3 and no fake Unit return",
+    "Source scene grant and static graph identified without claiming legal execution",
+    "m_heal synthetic +4C,+74,+6F0 distinguished from DAT-confirmed +278,+248",
+    "existing Work core-return 54E31C reused; no duplicate implementation",
+    "all add2 remains open"
+  ],
+  "old_Gameplay_Golden_PASS": 0,
+  "new_strict_MATCH": 0
+}

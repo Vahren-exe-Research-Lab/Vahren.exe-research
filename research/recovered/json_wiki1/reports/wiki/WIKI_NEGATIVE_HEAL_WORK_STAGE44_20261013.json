@@ -1,0 +1,552 @@
+{
+  "status": "WORK SYNTHETIC stage guard confirmed, NOT proof of incorrect old game",
+  "heal_negative_skill_tested": 44,
+  "expected_safe_stop": 44,
+  "examples": [
+    {
+      "skill": "hamon_all",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "b_all",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "b_all_faroff",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "s_all",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "b_mp",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "b_mp_faroff",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "s_mp",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "oq_all",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "sp_hokyu_all",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "heal_clown_all",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    }
+  ],
+  "all_cases": [
+    {
+      "skill": "hamon_all",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "b_all",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "b_all_faroff",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "s_all",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "b_mp",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "b_mp_faroff",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "s_mp",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "oq_all",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "sp_hokyu_all",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "heal_clown_all",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "heal_clown_mp",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "heal_mint_all",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "b_yaku",
+      "cost": -10,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "tamakai_all",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "b_all_wood",
+      "cost": -20,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "yusakusanta_poi",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "b_zrkl_heal2",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "zonbi_all",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "medama_hokyu_heal1",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "sk_cure_sponge",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "santa_para",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "cure_sponge",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "santa_all",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "santa_stone",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "heal_ochan_all",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "bacon_smile_fear",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "b_trn_heal2",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "trn_buff_heal2",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "nkdks_aiki_all",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "sp_poptrain_mp",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "sp_poptrain_all",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "mur_hokyu_all",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "sp_nabe_all",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "sp_gyukomu_hokyu_all",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "kdance_mp",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "kdance_all",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "all_migo",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "mp_migo",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "inm_mp",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "inm_all",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "sp_inari_hokyu_all",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "b_all_item",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "chop_comedy_heal1",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    },
+    {
+      "skill": "santarts_all",
+      "cost": -1,
+      "Work_typed_dat_accepted": true,
+      "synthetic_stage_status": "BLOCKED",
+      "gap": "negative cost reachability VERIFY",
+      "stage_mp_after": 100,
+      "rng_draws": 0,
+      "pass": true
+    }
+  ],
+  "source": "WIKI_MP_NEGATIVE_EFFECTIVE_20261013.json",
+  "old_gameplay": 0,
+  "strict_match": 0
+}

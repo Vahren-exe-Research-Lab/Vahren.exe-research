@@ -1,0 +1,462 @@
+{
+  "schema": "WIKI_SPECIAL_MP_FIXTURE_V1",
+  "sources": [
+    "WIKI_SPECIAL_SKILL4C_MP_INPUT_20261013.json",
+    "B-20261013-1740-01 owned evidence (read-only)"
+  ],
+  "cases": [
+    {
+      "case_id": "SP-on-new_misairu",
+      "raw": "on",
+      "tag": "new_misairu",
+      "func": "missile",
+      "original_dat_source": {
+        "file": "a_default/script/30_スキル/C_必殺_クラス専用.dat",
+        "line": 209,
+        "parent": "sk_ms"
+      },
+      "special_field_owner": "new_misairu",
+      "mp_literal": 165,
+      "mp_input_boundary": [
+        164,
+        165
+      ],
+      "mprec_input": [
+        0,
+        1
+      ],
+      "native_property_contract": "special=on -> Skill+0x4C=1 on confirmed branch, numeric uses separate getter when reached",
+      "pre_admission_known": "normal heal/missile can early reject positive cost when Skill+4C > 0",
+      "post_admission_known": "late insufficient cost may yield MPREC AL without effect or MP debit",
+      "runtime_special_4C": "VERIFY",
+      "actual_gameplay": "NOT RUN",
+      "strict_match": "NOT RUN"
+    },
+    {
+      "case_id": "SP-on-sp_firero",
+      "raw": "on",
+      "tag": "sp_firero",
+      "func": "missile",
+      "original_dat_source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 4665,
+        "parent": "sk_ms"
+      },
+      "special_field_owner": "sp_firero",
+      "mp_literal": 40,
+      "mp_input_boundary": [
+        39,
+        40
+      ],
+      "mprec_input": [
+        0,
+        1
+      ],
+      "native_property_contract": "special=on -> Skill+0x4C=1 on confirmed branch, numeric uses separate getter when reached",
+      "pre_admission_known": "normal heal/missile can early reject positive cost when Skill+4C > 0",
+      "post_admission_known": "late insufficient cost may yield MPREC AL without effect or MP debit",
+      "runtime_special_4C": "VERIFY",
+      "actual_gameplay": "NOT RUN",
+      "strict_match": "NOT RUN"
+    },
+    {
+      "case_id": "SP-off-toono_death",
+      "raw": "off",
+      "tag": "toono_death",
+      "func": "missile",
+      "original_dat_source": {
+        "file": "a_default/script/30_スキル/C_必殺_クラス専用.dat",
+        "line": 1219,
+        "parent": "sk_ms"
+      },
+      "special_field_owner": "toono_death",
+      "mp_literal": 300,
+      "mp_input_boundary": [
+        299,
+        300
+      ],
+      "mprec_input": [
+        0,
+        1
+      ],
+      "native_property_contract": "special=on -> Skill+0x4C=1 on confirmed branch, numeric uses separate getter when reached",
+      "pre_admission_known": "normal heal/missile can early reject positive cost when Skill+4C > 0",
+      "post_admission_known": "late insufficient cost may yield MPREC AL without effect or MP debit",
+      "runtime_special_4C": "VERIFY",
+      "actual_gameplay": "NOT RUN",
+      "strict_match": "NOT RUN"
+    },
+    {
+      "case_id": "SP-off-ufo_summon",
+      "raw": "off",
+      "tag": "ufo_summon",
+      "func": "missile",
+      "original_dat_source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 6982,
+        "parent": "sk_ms"
+      },
+      "special_field_owner": "ufo_summon",
+      "mp_literal": 100,
+      "mp_input_boundary": [
+        99,
+        100
+      ],
+      "mprec_input": [
+        0,
+        1
+      ],
+      "native_property_contract": "special=on -> Skill+0x4C=1 on confirmed branch, numeric uses separate getter when reached",
+      "pre_admission_known": "normal heal/missile can early reject positive cost when Skill+4C > 0",
+      "post_admission_known": "late insufficient cost may yield MPREC AL without effect or MP debit",
+      "runtime_special_4C": "VERIFY",
+      "actual_gameplay": "NOT RUN",
+      "strict_match": "NOT RUN"
+    },
+    {
+      "case_id": "SP-1-s_yn_senyo1",
+      "raw": "1",
+      "tag": "s_yn_senyo1",
+      "func": "missile",
+      "original_dat_source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 6244,
+        "parent": "s_yn"
+      },
+      "special_field_owner": "s_yn_senyo1",
+      "mp_literal": 250,
+      "mp_input_boundary": [
+        249,
+        250
+      ],
+      "mprec_input": [
+        0,
+        1
+      ],
+      "native_property_contract": "special=on -> Skill+0x4C=1 on confirmed branch, numeric uses separate getter when reached",
+      "pre_admission_known": "normal heal/missile can early reject positive cost when Skill+4C > 0",
+      "post_admission_known": "late insufficient cost may yield MPREC AL without effect or MP debit",
+      "runtime_special_4C": "VERIFY",
+      "actual_gameplay": "NOT RUN",
+      "strict_match": "NOT RUN"
+    },
+    {
+      "case_id": "SP-1-s_yn_senyo2",
+      "raw": "1",
+      "tag": "s_yn_senyo2",
+      "func": "missile",
+      "original_dat_source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 6259,
+        "parent": "s_yn"
+      },
+      "special_field_owner": "s_yn_senyo2",
+      "mp_literal": 250,
+      "mp_input_boundary": [
+        249,
+        250
+      ],
+      "mprec_input": [
+        0,
+        1
+      ],
+      "native_property_contract": "special=on -> Skill+0x4C=1 on confirmed branch, numeric uses separate getter when reached",
+      "pre_admission_known": "normal heal/missile can early reject positive cost when Skill+4C > 0",
+      "post_admission_known": "late insufficient cost may yield MPREC AL without effect or MP debit",
+      "runtime_special_4C": "VERIFY",
+      "actual_gameplay": "NOT RUN",
+      "strict_match": "NOT RUN"
+    },
+    {
+      "case_id": "SP-3-s_yn",
+      "raw": "3",
+      "tag": "s_yn",
+      "func": "missile",
+      "original_dat_source": {
+        "file": "a_default/script/30_スキル/C_必殺_クラス専用.dat",
+        "line": 1073,
+        "parent": "sk_ms"
+      },
+      "special_field_owner": "s_yn",
+      "mp_literal": 250,
+      "mp_input_boundary": [
+        249,
+        250
+      ],
+      "mprec_input": [
+        0,
+        1
+      ],
+      "native_property_contract": "special=on -> Skill+0x4C=1 on confirmed branch, numeric uses separate getter when reached",
+      "pre_admission_known": "normal heal/missile can early reject positive cost when Skill+4C > 0",
+      "post_admission_known": "late insufficient cost may yield MPREC AL without effect or MP debit",
+      "runtime_special_4C": "VERIFY",
+      "actual_gameplay": "NOT RUN",
+      "strict_match": "NOT RUN"
+    },
+    {
+      "case_id": "SP-3-c_mprtsdiff",
+      "raw": "3",
+      "tag": "c_mprtsdiff",
+      "func": "heal",
+      "original_dat_source": {
+        "file": "a_default/script/8000_RTSシナリオ/RTSbuilding.dat",
+        "line": 180,
+        "parent": "c_mprts"
+      },
+      "special_field_owner": "c_mprtsdiff",
+      "mp_literal": 300,
+      "mp_input_boundary": [
+        299,
+        300
+      ],
+      "mprec_input": [
+        0,
+        1
+      ],
+      "native_property_contract": "special=on -> Skill+0x4C=1 on confirmed branch, numeric uses separate getter when reached",
+      "pre_admission_known": "normal heal/missile can early reject positive cost when Skill+4C > 0",
+      "post_admission_known": "late insufficient cost may yield MPREC AL without effect or MP debit",
+      "runtime_special_4C": "VERIFY",
+      "actual_gameplay": "NOT RUN",
+      "strict_match": "NOT RUN"
+    },
+    {
+      "case_id": "SP-6-a_wait300_3",
+      "raw": "6",
+      "tag": "a_wait300_3",
+      "func": "missile",
+      "original_dat_source": {
+        "file": "a_default/script/30_スキル/F30_死亡時スキル.dat",
+        "line": 1035,
+        "parent": "a_wait300_1"
+      },
+      "special_field_owner": "a_wait300_3",
+      "mp_literal": null,
+      "mp_input_boundary": null,
+      "mprec_input": [
+        0,
+        1
+      ],
+      "native_property_contract": "special=on -> Skill+0x4C=1 on confirmed branch, numeric uses separate getter when reached",
+      "pre_admission_known": "normal heal/missile can early reject positive cost when Skill+4C > 0",
+      "post_admission_known": "late insufficient cost may yield MPREC AL without effect or MP debit",
+      "runtime_special_4C": "VERIFY",
+      "actual_gameplay": "NOT RUN",
+      "strict_match": "NOT RUN"
+    },
+    {
+      "case_id": "SP-6-a_wait150_3",
+      "raw": "6",
+      "tag": "a_wait150_3",
+      "func": "missile",
+      "original_dat_source": {
+        "file": "a_default/script/30_スキル/F30_死亡時スキル.dat",
+        "line": 1051,
+        "parent": "a_wait150_1"
+      },
+      "special_field_owner": "a_wait150_3",
+      "mp_literal": null,
+      "mp_input_boundary": null,
+      "mprec_input": [
+        0,
+        1
+      ],
+      "native_property_contract": "special=on -> Skill+0x4C=1 on confirmed branch, numeric uses separate getter when reached",
+      "pre_admission_known": "normal heal/missile can early reject positive cost when Skill+4C > 0",
+      "post_admission_known": "late insufficient cost may yield MPREC AL without effect or MP debit",
+      "runtime_special_4C": "VERIFY",
+      "actual_gameplay": "NOT RUN",
+      "strict_match": "NOT RUN"
+    },
+    {
+      "case_id": "SP-9-a_wait1000_3",
+      "raw": "9",
+      "tag": "a_wait1000_3",
+      "func": "missile",
+      "original_dat_source": {
+        "file": "a_default/script/Ai戦闘制御_速度・待機スキル.dat",
+        "line": 131,
+        "parent": "a_wait1000_1"
+      },
+      "special_field_owner": "a_wait1000_3",
+      "mp_literal": null,
+      "mp_input_boundary": null,
+      "mprec_input": [
+        0,
+        1
+      ],
+      "native_property_contract": "special=on -> Skill+0x4C=1 on confirmed branch, numeric uses separate getter when reached",
+      "pre_admission_known": "normal heal/missile can early reject positive cost when Skill+4C > 0",
+      "post_admission_known": "late insufficient cost may yield MPREC AL without effect or MP debit",
+      "runtime_special_4C": "VERIFY",
+      "actual_gameplay": "NOT RUN",
+      "strict_match": "NOT RUN"
+    },
+    {
+      "case_id": "SP-999-tadora_cannon",
+      "raw": "999",
+      "tag": "tadora_cannon",
+      "func": "missile",
+      "original_dat_source": {
+        "file": "a_default/script/30_スキル/F10_missile_砲撃リニューアル.dat",
+        "line": 1691,
+        "parent": "sk_ms"
+      },
+      "special_field_owner": "tadora_cannon",
+      "mp_literal": 800,
+      "mp_input_boundary": [
+        799,
+        800
+      ],
+      "mprec_input": [
+        0,
+        1
+      ],
+      "native_property_contract": "special=on -> Skill+0x4C=1 on confirmed branch, numeric uses separate getter when reached",
+      "pre_admission_known": "normal heal/missile can early reject positive cost when Skill+4C > 0",
+      "post_admission_known": "late insufficient cost may yield MPREC AL without effect or MP debit",
+      "runtime_special_4C": "VERIFY",
+      "actual_gameplay": "NOT RUN",
+      "strict_match": "NOT RUN"
+    },
+    {
+      "case_id": "SP-999-sp_s_alison",
+      "raw": "999",
+      "tag": "sp_s_alison",
+      "func": "missile",
+      "original_dat_source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 934,
+        "parent": "s_alison"
+      },
+      "special_field_owner": "sp_s_alison",
+      "mp_literal": 300,
+      "mp_input_boundary": [
+        299,
+        300
+      ],
+      "mprec_input": [
+        0,
+        1
+      ],
+      "native_property_contract": "special=on -> Skill+0x4C=1 on confirmed branch, numeric uses separate getter when reached",
+      "pre_admission_known": "normal heal/missile can early reject positive cost when Skill+4C > 0",
+      "post_admission_known": "late insufficient cost may yield MPREC AL without effect or MP debit",
+      "runtime_special_4C": "VERIFY",
+      "actual_gameplay": "NOT RUN",
+      "strict_match": "NOT RUN"
+    },
+    {
+      "case_id": "SP-9999-s_iwana",
+      "raw": "9999",
+      "tag": "s_iwana",
+      "func": "missile",
+      "original_dat_source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 12123,
+        "parent": "sk_ms"
+      },
+      "special_field_owner": "s_iwana",
+      "mp_literal": 250,
+      "mp_input_boundary": [
+        249,
+        250
+      ],
+      "mprec_input": [
+        0,
+        1
+      ],
+      "native_property_contract": "special=on -> Skill+0x4C=1 on confirmed branch, numeric uses separate getter when reached",
+      "pre_admission_known": "normal heal/missile can early reject positive cost when Skill+4C > 0",
+      "post_admission_known": "late insufficient cost may yield MPREC AL without effect or MP debit",
+      "runtime_special_4C": "VERIFY",
+      "actual_gameplay": "NOT RUN",
+      "strict_match": "NOT RUN"
+    },
+    {
+      "case_id": "SP-9999-rs_iwana",
+      "raw": "9999",
+      "tag": "rs_iwana",
+      "func": "missile",
+      "original_dat_source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 13155,
+        "parent": "sk_ms"
+      },
+      "special_field_owner": "rs_iwana",
+      "mp_literal": 250,
+      "mp_input_boundary": [
+        249,
+        250
+      ],
+      "mprec_input": [
+        0,
+        1
+      ],
+      "native_property_contract": "special=on -> Skill+0x4C=1 on confirmed branch, numeric uses separate getter when reached",
+      "pre_admission_known": "normal heal/missile can early reject positive cost when Skill+4C > 0",
+      "post_admission_known": "late insufficient cost may yield MPREC AL without effect or MP debit",
+      "runtime_special_4C": "VERIFY",
+      "actual_gameplay": "NOT RUN",
+      "strict_match": "NOT RUN"
+    },
+    {
+      "case_id": "SP-2525-sp_scream",
+      "raw": "2525",
+      "tag": "sp_scream",
+      "func": "missile",
+      "original_dat_source": {
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 426,
+        "parent": "sk_ms"
+      },
+      "special_field_owner": "sp_scream",
+      "mp_literal": null,
+      "mp_input_boundary": null,
+      "mprec_input": [
+        0,
+        1
+      ],
+      "native_property_contract": "special=on -> Skill+0x4C=1 on confirmed branch, numeric uses separate getter when reached",
+      "pre_admission_known": "normal heal/missile can early reject positive cost when Skill+4C > 0",
+      "post_admission_known": "late insufficient cost may yield MPREC AL without effect or MP debit",
+      "runtime_special_4C": "VERIFY",
+      "actual_gameplay": "NOT RUN",
+      "strict_match": "NOT RUN"
+    },
+    {
+      "case_id": "SP-2525-sp_kenri_summon",
+      "raw": "2525",
+      "tag": "sp_kenri_summon",
+      "func": "missile",
+      "original_dat_source": {
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 945,
+        "parent": "sk_ms"
+      },
+      "special_field_owner": "sp_kenri_summon",
+      "mp_literal": null,
+      "mp_input_boundary": null,
+      "mprec_input": [
+        0,
+        1
+      ],
+      "native_property_contract": "special=on -> Skill+0x4C=1 on confirmed branch, numeric uses separate getter when reached",
+      "pre_admission_known": "normal heal/missile can early reject positive cost when Skill+4C > 0",
+      "post_admission_known": "late insufficient cost may yield MPREC AL without effect or MP debit",
+      "runtime_special_4C": "VERIFY",
+      "actual_gameplay": "NOT RUN",
+      "strict_match": "NOT RUN"
+    }
+  ],
+  "total": 17,
+  "limitations": [
+    "No live effective Unit Skill pointer bound",
+    "Do not assume special=off compiled as 0 without native parser callsite",
+    "B native gates vs actual return/MP/visual effect not yet replayed",
+    "No editor/battle product changes"
+  ],
+  "old_Golden": 0,
+  "new_strict": 0
+}

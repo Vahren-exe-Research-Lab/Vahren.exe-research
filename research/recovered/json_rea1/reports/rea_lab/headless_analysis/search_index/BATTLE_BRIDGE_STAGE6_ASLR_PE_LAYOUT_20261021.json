@@ -1,0 +1,55 @@
+{
+  "id": "BRIDGE-20261021-ASLR-IMAGE-BASE",
+  "status": "STATIC ORIGINAL PE HEADER VERIFIED / NO PROCESS BASE OBSERVED",
+  "original_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "preferred_image_base": "0x00400000",
+  "image_size": 7667712,
+  "DLLCharacteristics_hex": "0x8140",
+  "DYNAMIC_BASE": true,
+  "relocation_block_count": 582,
+  "runtime_address_rule": "actual module load base + RVA; do not assume preferred VA is the actual address",
+  "offsets": {
+    "GameManager": {
+      "preferred_va": "0x008BE2F0",
+      "rva": "0x004BE2F0"
+    },
+    "GameEvent": {
+      "preferred_va": "0x008BE7F4",
+      "rva": "0x004BE7F4"
+    },
+    "OriginalBattleInit": {
+      "preferred_va": "0x0048D6A0",
+      "rva": "0x0008D6A0"
+    },
+    "OriginalBattleFinish": {
+      "preferred_va": "0x00493630",
+      "rva": "0x00093630"
+    },
+    "PlayerPrimaryVTable": {
+      "preferred_va": "0x00639B08",
+      "rva": "0x00239B08"
+    },
+    "EnemyPrimaryVTable": {
+      "preferred_va": "0x00638B60",
+      "rva": "0x00238B60"
+    },
+    "TroopVTable": {
+      "preferred_va": "0x00639A30",
+      "rva": "0x00239A30"
+    },
+    "GameEventTaskVTable": {
+      "preferred_va": "0x0063A6D0",
+      "rva": "0x0023A6D0"
+    },
+    "UnitTaskVTable": {
+      "preferred_va": "0x0063A9E4",
+      "rva": "0x0023A9E4"
+    },
+    "BattleWndActionableVTable": {
+      "preferred_va": "0x006380CC",
+      "rva": "0x002380CC"
+    }
+  },
+  "implication": "Previous detached parsers validated hardcoded Player/Enemy/Troop vtable addresses; live captures must normalize or compare expected vtables after rebasing.",
+  "limits": "GameManager static VA does not verify live heap pointers or the runtime chosen module base; no native game process attached."
+}

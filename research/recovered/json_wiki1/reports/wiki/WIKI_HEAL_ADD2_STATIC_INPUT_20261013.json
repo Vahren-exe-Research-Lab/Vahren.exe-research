@@ -1,0 +1,4309 @@
+{
+  "status": "ORIGINAL DAT heal add2 parser lists; native Skill+158/+15C vector semantics verify",
+  "heal_total": 320,
+  "classifications": {
+    "NO_EFFECTIVE_ADD2": 300,
+    "ONLY_REGISTERED_ATTR_NAMES": 20
+  },
+  "known_attr_19": [
+    "all",
+    "attack",
+    "conf",
+    "defense",
+    "dext",
+    "fear",
+    "hp",
+    "hprec",
+    "ill",
+    "magdef",
+    "magic",
+    "move",
+    "mp",
+    "mprec",
+    "para",
+    "poi",
+    "sil",
+    "speed",
+    "stone"
+  ],
+  "top_raw_members": [
+    [
+      "dext",
+      9
+    ],
+    [
+      "hp",
+      7
+    ],
+    [
+      "all",
+      7
+    ],
+    [
+      "defense",
+      6
+    ],
+    [
+      "attack",
+      5
+    ],
+    [
+      "move",
+      3
+    ],
+    [
+      "para",
+      2
+    ],
+    [
+      "stone",
+      2
+    ],
+    [
+      "hprec",
+      1
+    ],
+    [
+      "mprec",
+      1
+    ],
+    [
+      "magic",
+      1
+    ],
+    [
+      "speed",
+      1
+    ]
+  ],
+  "rows": [
+    {
+      "skill": "nisehsiwaru_dext",
+      "attr": "dext",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "nisehsiwaru_speed",
+      "attr": "speed",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "new_misairu_target_nt",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "new_misairu_nt3",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "new_misairu_nt3b",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "new_misairu_nt3c",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "new_misairu_nt3d",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "new_misairu_nt3e",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "new_misairu_nt3ab",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "new_misairu_nt3bb",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "new_misairu_nt3cb",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "new_misairu_nt3db",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "new_misairu_nt3eb",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "new_misairu_nt3ac",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "new_misairu_nt3bc",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "new_misairu_nt3cc",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "new_misairu_nt3dc",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "new_misairu_nt3ec",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "s_power",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "s_power_yari",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "m_dark_new_nt1",
+      "attr": "dext",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "m_yaku_nt2_a4",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "m_yaku_nt2_b4",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "m_yaku_nt2_c4",
+      "attr": "ch",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "m_yaku_nt2_d4",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "rocket_ramen_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "burauni_gun_nt3_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "s_power_s",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "seiretsu",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "seiretsu2",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "seiretsu3",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "m_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "b_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "cook_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "s_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "hamon_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "hamon_all",
+      "attr": "all",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "b_all",
+      "attr": "all",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "b_all_faroff",
+      "attr": "all",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "s_all",
+      "attr": "all",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "b_mp",
+      "attr": "mp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "b_mp_faroff",
+      "attr": "mp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "mp_heal",
+      "attr": "mp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "pudding",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "s_mp",
+      "attr": "mp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "oq_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "oq_all",
+      "attr": "all",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_attack",
+      "attr": "attack",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_defense",
+      "attr": "defense",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_magic",
+      "attr": "magic",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_magdef",
+      "attr": "magdef",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_dext",
+      "attr": "dext",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_speed",
+      "attr": "speed",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_hprec",
+      "attr": "hprec",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_mprec",
+      "attr": "mprec",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_move_nt2",
+      "attr": "",
+      "raw_add2": [
+        "move",
+        "para",
+        "stone"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "move",
+          "name_candidate": "move",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "para",
+          "name_candidate": "para",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "stone",
+          "name_candidate": "stone",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "0",
+      "raw_add_all": "on"
+    },
+    {
+      "skill": "sp_heal_nt1",
+      "attr": "",
+      "raw_add2": [
+        "hp",
+        "all"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "hp",
+          "name_candidate": "hp",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "all",
+          "name_candidate": "all",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "",
+      "raw_add_all": "on"
+    },
+    {
+      "skill": "sp_heal_nt2",
+      "attr": "",
+      "raw_add2": [
+        "hp",
+        "all"
+      ],
+      "had_direct_add2": false,
+      "items": [
+        {
+          "raw": "hp",
+          "name_candidate": "hp",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "all",
+          "name_candidate": "all",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "",
+      "raw_add_all": "on"
+    },
+    {
+      "skill": "sp_knn_nt1",
+      "attr": "",
+      "raw_add2": [
+        "hp",
+        "all"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "hp",
+          "name_candidate": "hp",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "all",
+          "name_candidate": "all",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "",
+      "raw_add_all": "on"
+    },
+    {
+      "skill": "sp_hokyu_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_hokyu_all",
+      "attr": "all",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "buff_iwana_atk",
+      "attr": "attack",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "buff_iwana_def",
+      "attr": "defense",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "buff_iwana_mag",
+      "attr": "magic",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "buff_iwana_dex",
+      "attr": "dext",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sk_heal_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "heal_clown_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "heal_clown_all",
+      "attr": "all",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "heal_clown_mp",
+      "attr": "mp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "heal_clown_move",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "heal_clown_attack",
+      "attr": "attack",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "heal_clown_defense",
+      "attr": "defense",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "heal_clown_magic",
+      "attr": "magic",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "heal_clown_dext",
+      "attr": "dext",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "heal_clown_speed",
+      "attr": "speed",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "heal_clown_hprec",
+      "attr": "hprec",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "heal_clown_mprec",
+      "attr": "",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "heal_mint_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "heal_mint_all",
+      "attr": "all",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "heal_mot_mint_slow",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sing",
+      "attr": "magic",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sing_attack",
+      "attr": "attack",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sing_defense",
+      "attr": "defense",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sing_magic",
+      "attr": "magic",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sing_dext",
+      "attr": "dext",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sing_speed",
+      "attr": "speed",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sing_hprec",
+      "attr": "hprec",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "buff_alison_atk",
+      "attr": "attack",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "buff_alison_def",
+      "attr": "defense",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "buff_alison_mag",
+      "attr": "magic",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "buff_alison_dex",
+      "attr": "dext",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "km_heal1",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "km_heal2",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "mp_move",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "musen_move",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "przm_def",
+      "attr": "defense",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "przm_dext",
+      "attr": "dext",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "przm_attack",
+      "attr": "attack",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "dango1",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "dango2",
+      "attr": "attack",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "b_yaku",
+      "attr": "all",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-10",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "tamakai_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "tamakai_all",
+      "attr": "all",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "bangi_narabe",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "b_inari_nt2a",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_smokecannon_nt3",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "b_all_wood",
+      "attr": "all",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-20",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_seiretsu",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "seiretsu_b_nt",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "anidesi_seiretsu",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "b_mdcn_nt2",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "c_mprts_syokupan",
+      "attr": "mp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "150",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "yusakusanta_poi",
+      "attr": "poi",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "megadeath_beam_FriendFire_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "megadeath_beam_FriendFire_heal_2",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "b_zrkl_heal1",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "b_zrkl_heal2",
+      "attr": "all",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "kbtit_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "buff_gashuin_atk",
+      "attr": "attack",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "buff_gashuin_def",
+      "attr": "defense",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "buff_gashuin_mag",
+      "attr": "magic",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "buff_gashuin_dex",
+      "attr": "dext",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "znm_boom_heal",
+      "attr": "mp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "bentou_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "charao_ball_heal",
+      "attr": "mp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "zonbi_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "zonbi_all",
+      "attr": "all",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "medama_hokyu_heal1",
+      "attr": "mp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "medama_hokyu_heal2",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "seiretsu_web_nt2",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "pinga_axe_nt3",
+      "attr": "defense",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_kusoinu_atk",
+      "attr": "attack",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_kusoinu_move",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "karaage_at3",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "bidai_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "seiretsu_abesan",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sk_cure_sponge",
+      "attr": "stone",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "santa_para",
+      "attr": "stone",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "cure_sponge",
+      "attr": "para",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "santa_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "santa_all",
+      "attr": "all",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "santa_stone",
+      "attr": "para",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "yaribsm_nt3",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "heal_ochan_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "heal_ochan_all",
+      "attr": "all",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "ad_sca_atk",
+      "attr": "attack",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "ad_sca_def",
+      "attr": "defense",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "ad_sca_mag",
+      "attr": "magic",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "ad_sca_dex",
+      "attr": "dext",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "son_voe_down2",
+      "attr": "",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "son_voe_down3",
+      "attr": "",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "son_voe_down4",
+      "attr": "",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "son_voe_down5",
+      "attr": "",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "son_voe_down6",
+      "attr": "",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "son_voe_down7",
+      "attr": "",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_zrklson_at",
+      "attr": "",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_zrklson_df",
+      "attr": "",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_zrklson_mg",
+      "attr": "",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_zrklson_dx",
+      "attr": "",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_zrklson_sp",
+      "attr": "",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_zrklson_hr",
+      "attr": "",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_zrklson_mr",
+      "attr": "",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_zrklson_mv",
+      "attr": "",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "b_hyuk_heal",
+      "attr": "mp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "chefswk_whip_hp",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "bacon_smile_fear",
+      "attr": "fear",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "b_intyo_nt3_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "intyo_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "160",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "intyo_heal_magic",
+      "attr": "magic",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "intyo_heal_dext",
+      "attr": "dext",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "senkyo_happy_nt1",
+      "attr": "",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "b_gkuma_nt4",
+      "attr": "attack",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "b_trn_heal1",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "b_trn_heal2",
+      "attr": "all",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "trn_buff_heal1",
+      "attr": "speed",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "trn_buff_heal2",
+      "attr": "all",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "ukaji_cannon_nt1b",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_biim_kamakura_nt1",
+      "attr": "",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_biim_kamakura_nt2",
+      "attr": "",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_biim_attack",
+      "attr": "attack",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_biim_defense",
+      "attr": "defense",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_biim_magic",
+      "attr": "magic",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_biim_dext",
+      "attr": "dext",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_biim_speed",
+      "attr": "speed",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "nkdks_aiki_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "nkdks_aiki_all",
+      "attr": "all",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "p_hokyu_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_jun_yaku_nt2_a4",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_jun_yaku_nt2_b4",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_jun_yaku_nt2_c4",
+      "attr": "ch",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_jun_yaku_nt2_d4",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_attack_max_clown",
+      "attr": "attack",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_hprec_max_clown",
+      "attr": "hprec",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_poptrain_mp",
+      "attr": "mp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_poptrain_all",
+      "attr": "all",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "mur_hokyu_all",
+      "attr": "all",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "kusari_at3",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_masahiko_slow",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "bnkrg_hokyu_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_nabe_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_nabe_all",
+      "attr": "all",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_nyn_down",
+      "attr": "",
+      "raw_add2": [
+        "hprec",
+        "mprec"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "hprec",
+          "name_candidate": "hprec",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "mprec",
+          "name_candidate": "mprec",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "",
+      "raw_add_all": "on"
+    },
+    {
+      "skill": "sp_gyukomu_hokyu_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_gyukomu_hokyu_all",
+      "attr": "all",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_ryuma_nt2",
+      "attr": "",
+      "raw_add2": [
+        "hp",
+        "all",
+        "attack",
+        "defense",
+        "magic",
+        "dext",
+        "speed"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "hp",
+          "name_candidate": "hp",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "all",
+          "name_candidate": "all",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "attack",
+          "name_candidate": "attack",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "defense",
+          "name_candidate": "defense",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "magic",
+          "name_candidate": "magic",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "dext",
+          "name_candidate": "dext",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "speed",
+          "name_candidate": "speed",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "0",
+      "raw_add_all": "on"
+    },
+    {
+      "skill": "sp_fmrim_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_fmrim_heal2",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_fmrim_heal3",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_ranbu_toukou_def",
+      "attr": "defense",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_ranbu_toukou_dext",
+      "attr": "dext",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_inu_nt2_4",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "kdance_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "kdance_mp",
+      "attr": "mp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "kdance_all",
+      "attr": "all",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "kdance_move",
+      "attr": "",
+      "raw_add2": [
+        "move",
+        "para",
+        "stone"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "move",
+          "name_candidate": "move",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "para",
+          "name_candidate": "para",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "stone",
+          "name_candidate": "stone",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "0",
+      "raw_add_all": "on"
+    },
+    {
+      "skill": "sp_vanban_at3",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "u_diplo_nt",
+      "attr": "",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "u_diplo_nt2",
+      "attr": "speed",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "u_diplo_nt3",
+      "attr": "dext",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "u_diplo_nt4",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "u_diplo_nt5",
+      "attr": "hprec",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "u_diplo_nt6",
+      "attr": "defense",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "web_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "9bantya_gun_nt3_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "m_qacl_add",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "heal_migo",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "all_migo",
+      "attr": "all",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "mp_migo",
+      "attr": "mp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_speeds",
+      "attr": "speed",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_dexts",
+      "attr": "dext",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_magics",
+      "attr": "magic",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_defenses",
+      "attr": "defense",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_attacks",
+      "attr": "attack",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_hprecs",
+      "attr": "hprec",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_attacksiks",
+      "attr": "attack",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_mprecs",
+      "attr": "mprec",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_heal2_nt1",
+      "attr": "",
+      "raw_add2": [
+        "hp",
+        "all"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "hp",
+          "name_candidate": "hp",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "all",
+          "name_candidate": "all",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "",
+      "raw_add_all": "on"
+    },
+    {
+      "skill": "sp_heal2_nt2",
+      "attr": "",
+      "raw_add2": [
+        "hp",
+        "all"
+      ],
+      "had_direct_add2": false,
+      "items": [
+        {
+          "raw": "hp",
+          "name_candidate": "hp",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "all",
+          "name_candidate": "all",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "",
+      "raw_add_all": "on"
+    },
+    {
+      "skill": "sp_heal_3_nt1",
+      "attr": "",
+      "raw_add2": [
+        "hp",
+        "all"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "hp",
+          "name_candidate": "hp",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "all",
+          "name_candidate": "all",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "",
+      "raw_add_all": "on"
+    },
+    {
+      "skill": "astk_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "40",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_eliz_hokyu_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "g_inmudash_heal",
+      "attr": "",
+      "raw_add2": [
+        "move"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "move",
+          "name_candidate": "move",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "0",
+      "raw_add_all": "on"
+    },
+    {
+      "skill": "inm_mp",
+      "attr": "mp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "inm_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "inm_all",
+      "attr": "all",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "inmuseiretsu",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "inmuseiretsu2",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_inari_hokyu_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_inari_hokyu_all",
+      "attr": "all",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "asasin_cream_protect_ability_1",
+      "attr": "",
+      "raw_add2": [
+        "defense"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "defense",
+          "name_candidate": "defense",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "asasin_cream_weapon_ability_self",
+      "attr": "",
+      "raw_add2": [
+        "attack",
+        "dext"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "attack",
+          "name_candidate": "attack",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "dext",
+          "name_candidate": "dext",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "",
+      "raw_add_all": "on"
+    },
+    {
+      "skill": "asasin_cream_weapon_ability_enemy",
+      "attr": "",
+      "raw_add2": [
+        "defense",
+        "dext"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "defense",
+          "name_candidate": "defense",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "dext",
+          "name_candidate": "dext",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "",
+      "raw_add_all": "on"
+    },
+    {
+      "skill": "asasin_cream_weapon_glove_ability_self",
+      "attr": "",
+      "raw_add2": [
+        "attack",
+        "dext"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "attack",
+          "name_candidate": "attack",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "dext",
+          "name_candidate": "dext",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "asasin_cream_weapon_glove_ability_enemy",
+      "attr": "",
+      "raw_add2": [
+        "defense",
+        "dext"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "defense",
+          "name_candidate": "defense",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "dext",
+          "name_candidate": "dext",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "hanzo_cream_weapon_ability_self",
+      "attr": "",
+      "raw_add2": [
+        "attack",
+        "dext"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "attack",
+          "name_candidate": "attack",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "dext",
+          "name_candidate": "dext",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "",
+      "raw_add_all": "on"
+    },
+    {
+      "skill": "hanzo_cream_weapon_ability_enemy",
+      "attr": "",
+      "raw_add2": [
+        "defense",
+        "dext"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "defense",
+          "name_candidate": "defense",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "dext",
+          "name_candidate": "dext",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "",
+      "raw_add_all": "on"
+    },
+    {
+      "skill": "hanzo_cream_weapon_glove_ability_self",
+      "attr": "",
+      "raw_add2": [
+        "attack",
+        "dext"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "attack",
+          "name_candidate": "attack",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "dext",
+          "name_candidate": "dext",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "hanzo_cream_weapon_glove_ability_enemy",
+      "attr": "",
+      "raw_add2": [
+        "defense",
+        "dext"
+      ],
+      "had_direct_add2": true,
+      "items": [
+        {
+          "raw": "defense",
+          "name_candidate": "defense",
+          "is_registered_attr": true
+        },
+        {
+          "raw": "dext",
+          "name_candidate": "dext",
+          "is_registered_attr": true
+        }
+      ],
+      "category": "ONLY_REGISTERED_ATTR_NAMES",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "spy_mprec",
+      "attr": "mprec",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "spd_attack",
+      "attr": "attack",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_sakamori_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "b_all_item",
+      "attr": "all",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_teki_at1",
+      "attr": "attack",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_teki_def1",
+      "attr": "defense",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_teki_mag1",
+      "attr": "magic",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_teki_dext1",
+      "attr": "dext",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_mikata_at1",
+      "attr": "attack",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_mikata_def1",
+      "attr": "defense",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_mikata_mag1",
+      "attr": "magic",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_mikata_dext1",
+      "attr": "dext",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_teki_at2",
+      "attr": "attack",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_teki_def2",
+      "attr": "defense",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_teki_mag2",
+      "attr": "magic",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_teki_dext2",
+      "attr": "dext",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_mikata_at2",
+      "attr": "attack",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_mikata_def2",
+      "attr": "defense",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_mikata_mag2",
+      "attr": "magic",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_mikata_dext2",
+      "attr": "dext",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_teki_at3",
+      "attr": "attack",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_teki_def3",
+      "attr": "defense",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_teki_mag3",
+      "attr": "magic",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_teki_dext3",
+      "attr": "dext",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_mikata_at3",
+      "attr": "attack",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_mikata_def3",
+      "attr": "defense",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_mikata_mag3",
+      "attr": "magic",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_mikata_dext3",
+      "attr": "dext",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_teki_at4",
+      "attr": "attack",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_teki_def4",
+      "attr": "defense",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_teki_mag4",
+      "attr": "magic",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_teki_dext4",
+      "attr": "dext",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_mikata_at4",
+      "attr": "attack",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_mikata_def4",
+      "attr": "defense",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_mikata_mag4",
+      "attr": "magic",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_mikata_dext4",
+      "attr": "dext",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_kiraware_at1",
+      "attr": "attack",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_kiraware_def1",
+      "attr": "defense",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_kiraware_mag1",
+      "attr": "magic",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "demo_kiraware_dext1",
+      "attr": "dext",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "icg_boom_heal",
+      "attr": "mp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "chop_comedy_heal1",
+      "attr": "conf",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "licker_zan_nt3",
+      "attr": "defense",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "buff_pinga_heal1",
+      "attr": "attack",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "c_mprtsdiff",
+      "attr": "mp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "300",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "c_mprtsdiff2",
+      "attr": "mp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "300",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "c_mprtsdiff3",
+      "attr": "mp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "300",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "c_mprts",
+      "attr": "mp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "300",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "c_mprts2",
+      "attr": "mp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "300",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "c_allhprts",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "65",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "c_allallrts",
+      "attr": "all",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "30",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "ketsudrum1",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "ketsudrum2",
+      "attr": "all",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "santarts_heal",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "80",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "santarts_all",
+      "attr": "all",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "-1",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "healhokyurts",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "healhokyurts_sam",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "curehokyurts_sam",
+      "attr": "all",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "curehokyurts",
+      "attr": "all",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "c_allhprtsc",
+      "attr": "hp",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "195",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "c_allallrtsc",
+      "attr": "all",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "90",
+      "raw_add_all": ""
+    },
+    {
+      "skill": "sp_kanraku_nt1",
+      "attr": "move",
+      "raw_add2": [],
+      "had_direct_add2": false,
+      "items": [],
+      "category": "NO_EFFECTIVE_ADD2",
+      "mp": "0",
+      "raw_add_all": ""
+    }
+  ],
+  "examples": {
+    "NO_EFFECTIVE_ADD2": [
+      {
+        "skill": "nisehsiwaru_dext",
+        "attr": "dext",
+        "raw_add2": [],
+        "had_direct_add2": false,
+        "items": [],
+        "category": "NO_EFFECTIVE_ADD2",
+        "mp": "",
+        "raw_add_all": ""
+      },
+      {
+        "skill": "nisehsiwaru_speed",
+        "attr": "speed",
+        "raw_add2": [],
+        "had_direct_add2": false,
+        "items": [],
+        "category": "NO_EFFECTIVE_ADD2",
+        "mp": "",
+        "raw_add_all": ""
+      },
+      {
+        "skill": "new_misairu_target_nt",
+        "attr": "hp",
+        "raw_add2": [],
+        "had_direct_add2": false,
+        "items": [],
+        "category": "NO_EFFECTIVE_ADD2",
+        "mp": "",
+        "raw_add_all": ""
+      },
+      {
+        "skill": "new_misairu_nt3",
+        "attr": "hp",
+        "raw_add2": [],
+        "had_direct_add2": false,
+        "items": [],
+        "category": "NO_EFFECTIVE_ADD2",
+        "mp": "",
+        "raw_add_all": ""
+      },
+      {
+        "skill": "new_misairu_nt3b",
+        "attr": "hp",
+        "raw_add2": [],
+        "had_direct_add2": false,
+        "items": [],
+        "category": "NO_EFFECTIVE_ADD2",
+        "mp": "",
+        "raw_add_all": ""
+      },
+      {
+        "skill": "new_misairu_nt3c",
+        "attr": "hp",
+        "raw_add2": [],
+        "had_direct_add2": false,
+        "items": [],
+        "category": "NO_EFFECTIVE_ADD2",
+        "mp": "",
+        "raw_add_all": ""
+      },
+      {
+        "skill": "new_misairu_nt3d",
+        "attr": "hp",
+        "raw_add2": [],
+        "had_direct_add2": false,
+        "items": [],
+        "category": "NO_EFFECTIVE_ADD2",
+        "mp": "",
+        "raw_add_all": ""
+      },
+      {
+        "skill": "new_misairu_nt3e",
+        "attr": "hp",
+        "raw_add2": [],
+        "had_direct_add2": false,
+        "items": [],
+        "category": "NO_EFFECTIVE_ADD2",
+        "mp": "",
+        "raw_add_all": ""
+      },
+      {
+        "skill": "new_misairu_nt3ab",
+        "attr": "hp",
+        "raw_add2": [],
+        "had_direct_add2": false,
+        "items": [],
+        "category": "NO_EFFECTIVE_ADD2",
+        "mp": "",
+        "raw_add_all": ""
+      },
+      {
+        "skill": "new_misairu_nt3bb",
+        "attr": "hp",
+        "raw_add2": [],
+        "had_direct_add2": false,
+        "items": [],
+        "category": "NO_EFFECTIVE_ADD2",
+        "mp": "",
+        "raw_add_all": ""
+      },
+      {
+        "skill": "new_misairu_nt3cb",
+        "attr": "hp",
+        "raw_add2": [],
+        "had_direct_add2": false,
+        "items": [],
+        "category": "NO_EFFECTIVE_ADD2",
+        "mp": "",
+        "raw_add_all": ""
+      },
+      {
+        "skill": "new_misairu_nt3db",
+        "attr": "hp",
+        "raw_add2": [],
+        "had_direct_add2": false,
+        "items": [],
+        "category": "NO_EFFECTIVE_ADD2",
+        "mp": "",
+        "raw_add_all": ""
+      },
+      {
+        "skill": "new_misairu_nt3eb",
+        "attr": "hp",
+        "raw_add2": [],
+        "had_direct_add2": false,
+        "items": [],
+        "category": "NO_EFFECTIVE_ADD2",
+        "mp": "",
+        "raw_add_all": ""
+      },
+      {
+        "skill": "new_misairu_nt3ac",
+        "attr": "hp",
+        "raw_add2": [],
+        "had_direct_add2": false,
+        "items": [],
+        "category": "NO_EFFECTIVE_ADD2",
+        "mp": "",
+        "raw_add_all": ""
+      },
+      {
+        "skill": "new_misairu_nt3bc",
+        "attr": "hp",
+        "raw_add2": [],
+        "had_direct_add2": false,
+        "items": [],
+        "category": "NO_EFFECTIVE_ADD2",
+        "mp": "",
+        "raw_add_all": ""
+      },
+      {
+        "skill": "new_misairu_nt3cc",
+        "attr": "hp",
+        "raw_add2": [],
+        "had_direct_add2": false,
+        "items": [],
+        "category": "NO_EFFECTIVE_ADD2",
+        "mp": "",
+        "raw_add_all": ""
+      },
+      {
+        "skill": "new_misairu_nt3dc",
+        "attr": "hp",
+        "raw_add2": [],
+        "had_direct_add2": false,
+        "items": [],
+        "category": "NO_EFFECTIVE_ADD2",
+        "mp": "",
+        "raw_add_all": ""
+      },
+      {
+        "skill": "new_misairu_nt3ec",
+        "attr": "hp",
+        "raw_add2": [],
+        "had_direct_add2": false,
+        "items": [],
+        "category": "NO_EFFECTIVE_ADD2",
+        "mp": "",
+        "raw_add_all": ""
+      },
+      {
+        "skill": "s_power",
+        "attr": "move",
+        "raw_add2": [],
+        "had_direct_add2": false,
+        "items": [],
+        "category": "NO_EFFECTIVE_ADD2",
+        "mp": "0",
+        "raw_add_all": ""
+      },
+      {
+        "skill": "s_power_yari",
+        "attr": "move",
+        "raw_add2": [],
+        "had_direct_add2": false,
+        "items": [],
+        "category": "NO_EFFECTIVE_ADD2",
+        "mp": "0",
+        "raw_add_all": ""
+      }
+    ],
+    "ONLY_REGISTERED_ATTR_NAMES": [
+      {
+        "skill": "sp_move_nt2",
+        "attr": "",
+        "raw_add2": [
+          "move",
+          "para",
+          "stone"
+        ],
+        "had_direct_add2": true,
+        "items": [
+          {
+            "raw": "move",
+            "name_candidate": "move",
+            "is_registered_attr": true
+          },
+          {
+            "raw": "para",
+            "name_candidate": "para",
+            "is_registered_attr": true
+          },
+          {
+            "raw": "stone",
+            "name_candidate": "stone",
+            "is_registered_attr": true
+          }
+        ],
+        "category": "ONLY_REGISTERED_ATTR_NAMES",
+        "mp": "0",
+        "raw_add_all": "on"
+      },
+      {
+        "skill": "sp_heal_nt1",
+        "attr": "",
+        "raw_add2": [
+          "hp",
+          "all"
+        ],
+        "had_direct_add2": true,
+        "items": [
+          {
+            "raw": "hp",
+            "name_candidate": "hp",
+            "is_registered_attr": true
+          },
+          {
+            "raw": "all",
+            "name_candidate": "all",
+            "is_registered_attr": true
+          }
+        ],
+        "category": "ONLY_REGISTERED_ATTR_NAMES",
+        "mp": "",
+        "raw_add_all": "on"
+      },
+      {
+        "skill": "sp_heal_nt2",
+        "attr": "",
+        "raw_add2": [
+          "hp",
+          "all"
+        ],
+        "had_direct_add2": false,
+        "items": [
+          {
+            "raw": "hp",
+            "name_candidate": "hp",
+            "is_registered_attr": true
+          },
+          {
+            "raw": "all",
+            "name_candidate": "all",
+            "is_registered_attr": true
+          }
+        ],
+        "category": "ONLY_REGISTERED_ATTR_NAMES",
+        "mp": "",
+        "raw_add_all": "on"
+      },
+      {
+        "skill": "sp_knn_nt1",
+        "attr": "",
+        "raw_add2": [
+          "hp",
+          "all"
+        ],
+        "had_direct_add2": true,
+        "items": [
+          {
+            "raw": "hp",
+            "name_candidate": "hp",
+            "is_registered_attr": true
+          },
+          {
+            "raw": "all",
+            "name_candidate": "all",
+            "is_registered_attr": true
+          }
+        ],
+        "category": "ONLY_REGISTERED_ATTR_NAMES",
+        "mp": "",
+        "raw_add_all": "on"
+      },
+      {
+        "skill": "sp_nyn_down",
+        "attr": "",
+        "raw_add2": [
+          "hprec",
+          "mprec"
+        ],
+        "had_direct_add2": true,
+        "items": [
+          {
+            "raw": "hprec",
+            "name_candidate": "hprec",
+            "is_registered_attr": true
+          },
+          {
+            "raw": "mprec",
+            "name_candidate": "mprec",
+            "is_registered_attr": true
+          }
+        ],
+        "category": "ONLY_REGISTERED_ATTR_NAMES",
+        "mp": "",
+        "raw_add_all": "on"
+      },
+      {
+        "skill": "sp_ryuma_nt2",
+        "attr": "",
+        "raw_add2": [
+          "hp",
+          "all",
+          "attack",
+          "defense",
+          "magic",
+          "dext",
+          "speed"
+        ],
+        "had_direct_add2": true,
+        "items": [
+          {
+            "raw": "hp",
+            "name_candidate": "hp",
+            "is_registered_attr": true
+          },
+          {
+            "raw": "all",
+            "name_candidate": "all",
+            "is_registered_attr": true
+          },
+          {
+            "raw": "attack",
+            "name_candidate": "attack",
+            "is_registered_attr": true
+          },
+          {
+            "raw": "defense",
+            "name_candidate": "defense",
+            "is_registered_attr": true
+          },
+          {
+            "raw": "magic",
+            "name_candidate": "magic",
+            "is_registered_attr": true
+          },
+          {
+            "raw": "dext",
+            "name_candidate": "dext",
+            "is_registered_attr": true
+          },
+          {
+            "raw": "speed",
+            "name_candidate": "speed",
+            "is_registered_attr": true
+          }
+        ],
+        "category": "ONLY_REGISTERED_ATTR_NAMES",
+        "mp": "0",
+        "raw_add_all": "on"
+      },
+      {
+        "skill": "kdance_move",
+        "attr": "",
+        "raw_add2": [
+          "move",
+          "para",
+          "stone"
+        ],
+        "had_direct_add2": true,
+        "items": [
+          {
+            "raw": "move",
+            "name_candidate": "move",
+            "is_registered_attr": true
+          },
+          {
+            "raw": "para",
+            "name_candidate": "para",
+            "is_registered_attr": true
+          },
+          {
+            "raw": "stone",
+            "name_candidate": "stone",
+            "is_registered_attr": true
+          }
+        ],
+        "category": "ONLY_REGISTERED_ATTR_NAMES",
+        "mp": "0",
+        "raw_add_all": "on"
+      },
+      {
+        "skill": "sp_heal2_nt1",
+        "attr": "",
+        "raw_add2": [
+          "hp",
+          "all"
+        ],
+        "had_direct_add2": true,
+        "items": [
+          {
+            "raw": "hp",
+            "name_candidate": "hp",
+            "is_registered_attr": true
+          },
+          {
+            "raw": "all",
+            "name_candidate": "all",
+            "is_registered_attr": true
+          }
+        ],
+        "category": "ONLY_REGISTERED_ATTR_NAMES",
+        "mp": "",
+        "raw_add_all": "on"
+      },
+      {
+        "skill": "sp_heal2_nt2",
+        "attr": "",
+        "raw_add2": [
+          "hp",
+          "all"
+        ],
+        "had_direct_add2": false,
+        "items": [
+          {
+            "raw": "hp",
+            "name_candidate": "hp",
+            "is_registered_attr": true
+          },
+          {
+            "raw": "all",
+            "name_candidate": "all",
+            "is_registered_attr": true
+          }
+        ],
+        "category": "ONLY_REGISTERED_ATTR_NAMES",
+        "mp": "",
+        "raw_add_all": "on"
+      },
+      {
+        "skill": "sp_heal_3_nt1",
+        "attr": "",
+        "raw_add2": [
+          "hp",
+          "all"
+        ],
+        "had_direct_add2": true,
+        "items": [
+          {
+            "raw": "hp",
+            "name_candidate": "hp",
+            "is_registered_attr": true
+          },
+          {
+            "raw": "all",
+            "name_candidate": "all",
+            "is_registered_attr": true
+          }
+        ],
+        "category": "ONLY_REGISTERED_ATTR_NAMES",
+        "mp": "",
+        "raw_add_all": "on"
+      },
+      {
+        "skill": "g_inmudash_heal",
+        "attr": "",
+        "raw_add2": [
+          "move"
+        ],
+        "had_direct_add2": true,
+        "items": [
+          {
+            "raw": "move",
+            "name_candidate": "move",
+            "is_registered_attr": true
+          }
+        ],
+        "category": "ONLY_REGISTERED_ATTR_NAMES",
+        "mp": "0",
+        "raw_add_all": "on"
+      },
+      {
+        "skill": "asasin_cream_protect_ability_1",
+        "attr": "",
+        "raw_add2": [
+          "defense"
+        ],
+        "had_direct_add2": true,
+        "items": [
+          {
+            "raw": "defense",
+            "name_candidate": "defense",
+            "is_registered_attr": true
+          }
+        ],
+        "category": "ONLY_REGISTERED_ATTR_NAMES",
+        "mp": "",
+        "raw_add_all": ""
+      },
+      {
+        "skill": "asasin_cream_weapon_ability_self",
+        "attr": "",
+        "raw_add2": [
+          "attack",
+          "dext"
+        ],
+        "had_direct_add2": true,
+        "items": [
+          {
+            "raw": "attack",
+            "name_candidate": "attack",
+            "is_registered_attr": true
+          },
+          {
+            "raw": "dext",
+            "name_candidate": "dext",
+            "is_registered_attr": true
+          }
+        ],
+        "category": "ONLY_REGISTERED_ATTR_NAMES",
+        "mp": "",
+        "raw_add_all": "on"
+      },
+      {
+        "skill": "asasin_cream_weapon_ability_enemy",
+        "attr": "",
+        "raw_add2": [
+          "defense",
+          "dext"
+        ],
+        "had_direct_add2": true,
+        "items": [
+          {
+            "raw": "defense",
+            "name_candidate": "defense",
+            "is_registered_attr": true
+          },
+          {
+            "raw": "dext",
+            "name_candidate": "dext",
+            "is_registered_attr": true
+          }
+        ],
+        "category": "ONLY_REGISTERED_ATTR_NAMES",
+        "mp": "",
+        "raw_add_all": "on"
+      },
+      {
+        "skill": "asasin_cream_weapon_glove_ability_self",
+        "attr": "",
+        "raw_add2": [
+          "attack",
+          "dext"
+        ],
+        "had_direct_add2": true,
+        "items": [
+          {
+            "raw": "attack",
+            "name_candidate": "attack",
+            "is_registered_attr": true
+          },
+          {
+            "raw": "dext",
+            "name_candidate": "dext",
+            "is_registered_attr": true
+          }
+        ],
+        "category": "ONLY_REGISTERED_ATTR_NAMES",
+        "mp": "",
+        "raw_add_all": ""
+      },
+      {
+        "skill": "asasin_cream_weapon_glove_ability_enemy",
+        "attr": "",
+        "raw_add2": [
+          "defense",
+          "dext"
+        ],
+        "had_direct_add2": true,
+        "items": [
+          {
+            "raw": "defense",
+            "name_candidate": "defense",
+            "is_registered_attr": true
+          },
+          {
+            "raw": "dext",
+            "name_candidate": "dext",
+            "is_registered_attr": true
+          }
+        ],
+        "category": "ONLY_REGISTERED_ATTR_NAMES",
+        "mp": "",
+        "raw_add_all": ""
+      },
+      {
+        "skill": "hanzo_cream_weapon_ability_self",
+        "attr": "",
+        "raw_add2": [
+          "attack",
+          "dext"
+        ],
+        "had_direct_add2": true,
+        "items": [
+          {
+            "raw": "attack",
+            "name_candidate": "attack",
+            "is_registered_attr": true
+          },
+          {
+            "raw": "dext",
+            "name_candidate": "dext",
+            "is_registered_attr": true
+          }
+        ],
+        "category": "ONLY_REGISTERED_ATTR_NAMES",
+        "mp": "",
+        "raw_add_all": "on"
+      },
+      {
+        "skill": "hanzo_cream_weapon_ability_enemy",
+        "attr": "",
+        "raw_add2": [
+          "defense",
+          "dext"
+        ],
+        "had_direct_add2": true,
+        "items": [
+          {
+            "raw": "defense",
+            "name_candidate": "defense",
+            "is_registered_attr": true
+          },
+          {
+            "raw": "dext",
+            "name_candidate": "dext",
+            "is_registered_attr": true
+          }
+        ],
+        "category": "ONLY_REGISTERED_ATTR_NAMES",
+        "mp": "",
+        "raw_add_all": "on"
+      },
+      {
+        "skill": "hanzo_cream_weapon_glove_ability_self",
+        "attr": "",
+        "raw_add2": [
+          "attack",
+          "dext"
+        ],
+        "had_direct_add2": true,
+        "items": [
+          {
+            "raw": "attack",
+            "name_candidate": "attack",
+            "is_registered_attr": true
+          },
+          {
+            "raw": "dext",
+            "name_candidate": "dext",
+            "is_registered_attr": true
+          }
+        ],
+        "category": "ONLY_REGISTERED_ATTR_NAMES",
+        "mp": "",
+        "raw_add_all": ""
+      },
+      {
+        "skill": "hanzo_cream_weapon_glove_ability_enemy",
+        "attr": "",
+        "raw_add2": [
+          "defense",
+          "dext"
+        ],
+        "had_direct_add2": true,
+        "items": [
+          {
+            "raw": "defense",
+            "name_candidate": "defense",
+            "is_registered_attr": true
+          },
+          {
+            "raw": "dext",
+            "name_candidate": "dext",
+            "is_registered_attr": true
+          }
+        ],
+        "category": "ONLY_REGISTERED_ATTR_NAMES",
+        "mp": "",
+        "raw_add_all": ""
+      }
+    ]
+  },
+  "original_gameplay": 0,
+  "strict_match": 0
+}

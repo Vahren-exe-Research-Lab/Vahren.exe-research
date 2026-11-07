@@ -1,0 +1,2669 @@
+{
+  "status": "STATIC LEXICAL ACTIVE-DAT REFERENCES / NO RUNTIME / NO NATIVE",
+  "origin_zip": "新約迫真戦記―ほのぼの神話ver0.67 豪華版(画像・音声削除版).zip",
+  "origin_sha256": "a1dac7209fca6fbf7d05d956054047b4c36e5149eb100434bf796ccb94970423",
+  "tag_count": 176,
+  "orphan_skill_triage": [
+    {
+      "orphan_skill": "stove_fire_wave_mag",
+      "missing_parent": "stove_fire_at",
+      "declaration": "a_default/script/116_仮設ランダムイベント61-70/skill_stove.dat:851",
+      "active_refs_excluding_own_decl": 7,
+      "site_kinds": {
+        "link_or_property": 7,
+        "skill_declaration": 1
+      },
+      "non_declaration_examples": [
+        {
+          "file": "a_default/script/116_仮設ランダムイベント61-70/skill_stove.dat",
+          "line": 469,
+          "kind": "link_or_property",
+          "raw": "next3 = stove_fire_wave_00, stove_fire_wave_at, stove_fire_wave_mag"
+        },
+        {
+          "file": "a_default/script/116_仮設ランダムイベント61-70/skill_stove_wave.dat",
+          "line": 9,
+          "kind": "link_or_property",
+          "raw": "next3 = stove_fire_wave_fin, stove_fire_wave_at, stove_fire_wave_mag, stove_fire_stop_eff, stove_fire_stop_at, stove_fire_stop_mag"
+        },
+        {
+          "file": "a_default/script/116_仮設ランダムイベント61-70/skill_stove_wave.dat",
+          "line": 21,
+          "kind": "link_or_property",
+          "raw": "next3 = stove_fire_wave_fin, stove_fire_wave_at, stove_fire_wave_mag, stove_fire_stop_eff, stove_fire_stop_at, stove_fire_stop_mag"
+        },
+        {
+          "file": "a_default/script/116_仮設ランダムイベント61-70/skill_stove_wave.dat",
+          "line": 33,
+          "kind": "link_or_property",
+          "raw": "next3 = stove_fire_wave_03, stove_fire_wave_at, stove_fire_wave_mag, stove_fire_stop_eff, stove_fire_stop_at, stove_fire_stop_mag"
+        },
+        {
+          "file": "a_default/script/116_仮設ランダムイベント61-70/skill_stove_wave.dat",
+          "line": 38,
+          "kind": "link_or_property",
+          "raw": "next3 = stove_fire_wave_04, stove_fire_wave_at, stove_fire_wave_mag, stove_fire_stop_eff, stove_fire_stop_at, stove_fire_stop_mag"
+        },
+        {
+          "file": "a_default/script/116_仮設ランダムイベント61-70/skill_stove_wave.dat",
+          "line": 43,
+          "kind": "link_or_property",
+          "raw": "next3 = stove_fire_wave_05, stove_fire_wave_at, stove_fire_wave_mag, stove_fire_stop_eff, stove_fire_stop_at, stove_fire_stop_mag"
+        },
+        {
+          "file": "a_default/script/116_仮設ランダムイベント61-70/skill_stove_wave.dat",
+          "line": 48,
+          "kind": "link_or_property",
+          "raw": "next3 = stove_fire_wave_fin, stove_fire_wave_at, stove_fire_wave_mag, stove_fire_stop_eff, stove_fire_stop_at, stove_fire_stop_mag"
+        }
+      ]
+    },
+    {
+      "orphan_skill": "Shakespeare_fire_wave_mag",
+      "missing_parent": "Shakespeare_fire_at",
+      "declaration": "a_default/script/30_スキル/F51_榴弾・延焼_プレッツヒェン.dat:482",
+      "active_refs_excluding_own_decl": 7,
+      "site_kinds": {
+        "link_or_property": 7,
+        "skill_declaration": 1
+      },
+      "non_declaration_examples": [
+        {
+          "file": "a_default/script/30_スキル/F51_榴弾・延焼_プレッツヒェン.dat",
+          "line": 107,
+          "kind": "link_or_property",
+          "raw": "next3 = Shakespeare_fire_wave_00, Shakespeare_fire_wave_at, Shakespeare_fire_wave_mag"
+        },
+        {
+          "file": "a_default/script/30_スキル/F51_榴弾・延焼_プレッツヒェン.dat",
+          "line": 969,
+          "kind": "link_or_property",
+          "raw": "next3 = Shakespeare_fire_wave_01, Shakespeare_fire_wave_at, Shakespeare_fire_wave_mag, Shakespeare_fire_stop_eff, Shakespeare_fire_stop_at, Shakespeare_fire_sto"
+        },
+        {
+          "file": "a_default/script/30_スキル/F51_榴弾・延焼_プレッツヒェン.dat",
+          "line": 981,
+          "kind": "link_or_property",
+          "raw": "next3 = Shakespeare_fire_wave_fin, Shakespeare_fire_wave_at, Shakespeare_fire_wave_mag, Shakespeare_fire_stop_eff, Shakespeare_fire_stop_at, Shakespeare_fire_st"
+        },
+        {
+          "file": "a_default/script/30_スキル/F51_榴弾・延焼_プレッツヒェン.dat",
+          "line": 993,
+          "kind": "link_or_property",
+          "raw": "next3 = Shakespeare_fire_wave_03, Shakespeare_fire_wave_at, Shakespeare_fire_wave_mag, Shakespeare_fire_stop_eff, Shakespeare_fire_stop_at, Shakespeare_fire_sto"
+        },
+        {
+          "file": "a_default/script/30_スキル/F51_榴弾・延焼_プレッツヒェン.dat",
+          "line": 998,
+          "kind": "link_or_property",
+          "raw": "next3 = Shakespeare_fire_wave_04, Shakespeare_fire_wave_at, Shakespeare_fire_wave_mag, Shakespeare_fire_stop_eff, Shakespeare_fire_stop_at, Shakespeare_fire_sto"
+        },
+        {
+          "file": "a_default/script/30_スキル/F51_榴弾・延焼_プレッツヒェン.dat",
+          "line": 1003,
+          "kind": "link_or_property",
+          "raw": "next3 = Shakespeare_fire_wave_05, Shakespeare_fire_wave_at, Shakespeare_fire_wave_mag, Shakespeare_fire_stop_eff, Shakespeare_fire_stop_at, Shakespeare_fire_sto"
+        },
+        {
+          "file": "a_default/script/30_スキル/F51_榴弾・延焼_プレッツヒェン.dat",
+          "line": 1008,
+          "kind": "link_or_property",
+          "raw": "next3 = Shakespeare_fire_wave_fin, Shakespeare_fire_wave_at, Shakespeare_fire_wave_mag, Shakespeare_fire_stop_eff, Shakespeare_fire_stop_at, Shakespeare_fire_st"
+        }
+      ]
+    },
+    {
+      "orphan_skill": "hqreireteicpu",
+      "missing_parent": "hqreifretei",
+      "declaration": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat:347",
+      "active_refs_excluding_own_decl": 4,
+      "site_kinds": {
+        "link_or_property": 3,
+        "skill_declaration": 1,
+        "other_active_source": 1
+      },
+      "non_declaration_examples": [
+        {
+          "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+          "line": 54,
+          "kind": "link_or_property",
+          "raw": "add = hqreireteicpu"
+        },
+        {
+          "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+          "line": 326,
+          "kind": "link_or_property",
+          "raw": "skill = hqcavreteicpu, hqinfreteicpu, hqreareteicpu, hqartreteicpu, hqreireteicpu, hqdefreteicpu, hqgenereteicpu"
+        },
+        {
+          "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+          "line": 350,
+          "kind": "link_or_property",
+          "raw": "add = hqreireteicpu"
+        },
+        {
+          "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+          "line": 921,
+          "kind": "other_active_source",
+          "raw": "class hqreireteicpu : hqreiretei"
+        }
+      ]
+    },
+    {
+      "orphan_skill": "giant_swing_CountAfix",
+      "missing_parent": "giant_swing_CountBXX_base",
+      "declaration": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat:50",
+      "active_refs_excluding_own_decl": 2,
+      "site_kinds": {
+        "link_or_property": 2,
+        "skill_declaration": 1
+      },
+      "non_declaration_examples": [
+        {
+          "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+          "line": 33,
+          "kind": "link_or_property",
+          "raw": "next3 = giant_swing_CountAfix"
+        },
+        {
+          "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+          "line": 44,
+          "kind": "link_or_property",
+          "raw": "next3 = giant_swing_CountAfix"
+        }
+      ]
+    },
+    {
+      "orphan_skill": "syokubumper_arm_nt1",
+      "missing_parent": "sk_ns",
+      "declaration": "a_default/script/30_スキル/F20_summon.dat:15300",
+      "active_refs_excluding_own_decl": 2,
+      "site_kinds": {
+        "link_or_property": 1,
+        "skill_declaration": 1,
+        "parent_reference": 1
+      },
+      "non_declaration_examples": [
+        {
+          "file": "a_default/script/30_スキル/F20_summon.dat",
+          "line": 15181,
+          "kind": "link_or_property",
+          "raw": "next3 = syokubumper_arm_nt1,syokubumper_arm_nt2"
+        },
+        {
+          "file": "a_default/script/30_スキル/F20_summon.dat",
+          "line": 15323,
+          "kind": "parent_reference",
+          "raw": "skill syokubumper_arm_nt2:syokubumper_arm_nt1"
+        }
+      ]
+    },
+    {
+      "orphan_skill": "summon_togashi_0",
+      "missing_parent": "summon_togashi_base",
+      "declaration": "a_default/script/10_ユニット/110_イベント人材.dat:1957",
+      "active_refs_excluding_own_decl": 1,
+      "site_kinds": {
+        "link_or_property": 1,
+        "skill_declaration": 1
+      },
+      "non_declaration_examples": [
+        {
+          "file": "a_default/script/10_ユニット/110_イベント人材.dat",
+          "line": 1954,
+          "kind": "link_or_property",
+          "raw": "next3 = summon_togashi_0"
+        }
+      ]
+    },
+    {
+      "orphan_skill": "giant_swing_CountA00",
+      "missing_parent": "giant_swing_CountAXX_base",
+      "declaration": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat:5",
+      "active_refs_excluding_own_decl": 1,
+      "site_kinds": {
+        "link_or_property": 1,
+        "skill_declaration": 1
+      },
+      "non_declaration_examples": [
+        {
+          "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing.dat",
+          "line": 394,
+          "kind": "link_or_property",
+          "raw": "next = giant_swing_CountA00"
+        }
+      ]
+    },
+    {
+      "orphan_skill": "giant_swing_CountB00",
+      "missing_parent": "giant_swing_CountBXX_base",
+      "declaration": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat:10",
+      "active_refs_excluding_own_decl": 1,
+      "site_kinds": {
+        "link_or_property": 1,
+        "skill_declaration": 1
+      },
+      "non_declaration_examples": [
+        {
+          "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+          "line": 7,
+          "kind": "link_or_property",
+          "raw": "next3 = giant_swing_CountB00,giant_swing_CountB_Eff"
+        }
+      ]
+    },
+    {
+      "orphan_skill": "giant_swing_CountA01",
+      "missing_parent": "giant_swing_CountAXX_base",
+      "declaration": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat:15",
+      "active_refs_excluding_own_decl": 1,
+      "site_kinds": {
+        "link_or_property": 1,
+        "skill_declaration": 1
+      },
+      "non_declaration_examples": [
+        {
+          "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+          "line": 12,
+          "kind": "link_or_property",
+          "raw": "next3 = giant_swing_CountA01"
+        }
+      ]
+    },
+    {
+      "orphan_skill": "giant_swing_CountB01",
+      "missing_parent": "giant_swing_CountBXX_base",
+      "declaration": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat:20",
+      "active_refs_excluding_own_decl": 1,
+      "site_kinds": {
+        "link_or_property": 1,
+        "skill_declaration": 1
+      },
+      "non_declaration_examples": [
+        {
+          "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+          "line": 17,
+          "kind": "link_or_property",
+          "raw": "next3 = giant_swing_CountB01,giant_swing_CountB_Eff"
+        }
+      ]
+    },
+    {
+      "orphan_skill": "giant_swing_CountA02",
+      "missing_parent": "giant_swing_CountAXX_base",
+      "declaration": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat:25",
+      "active_refs_excluding_own_decl": 1,
+      "site_kinds": {
+        "link_or_property": 1,
+        "skill_declaration": 1
+      },
+      "non_declaration_examples": [
+        {
+          "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+          "line": 22,
+          "kind": "link_or_property",
+          "raw": "next3 = giant_swing_CountA02"
+        }
+      ]
+    },
+    {
+      "orphan_skill": "giant_swing_CountB02",
+      "missing_parent": "giant_swing_CountBXX_base",
+      "declaration": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat:30",
+      "active_refs_excluding_own_decl": 1,
+      "site_kinds": {
+        "link_or_property": 1,
+        "skill_declaration": 1
+      },
+      "non_declaration_examples": [
+        {
+          "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+          "line": 27,
+          "kind": "link_or_property",
+          "raw": "next3 = giant_swing_CountB02,giant_swing_CountB_Eff"
+        }
+      ]
+    },
+    {
+      "orphan_skill": "giant_swing_CountB03",
+      "missing_parent": "giant_swing_CountBXX_base",
+      "declaration": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat:41",
+      "active_refs_excluding_own_decl": 1,
+      "site_kinds": {
+        "link_or_property": 1,
+        "skill_declaration": 1
+      },
+      "non_declaration_examples": [
+        {
+          "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+          "line": 38,
+          "kind": "link_or_property",
+          "raw": "next3 = giant_swing_CountB03"
+        }
+      ]
+    },
+    {
+      "orphan_skill": "giant_swing_CountBfix",
+      "missing_parent": "giant_swing_CountBXX_base",
+      "declaration": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat:55",
+      "active_refs_excluding_own_decl": 1,
+      "site_kinds": {
+        "link_or_property": 1,
+        "skill_declaration": 1
+      },
+      "non_declaration_examples": [
+        {
+          "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+          "line": 52,
+          "kind": "link_or_property",
+          "raw": "next3 = giant_swing_CountBfix"
+        }
+      ]
+    },
+    {
+      "orphan_skill": "m_mrandom_nt1_2",
+      "missing_parent": "m_ligh_js",
+      "declaration": "a_default/script/30_スキル/F10_missile.dat:4579",
+      "active_refs_excluding_own_decl": 1,
+      "site_kinds": {
+        "link_or_property": 1,
+        "skill_declaration": 1
+      },
+      "non_declaration_examples": [
+        {
+          "file": "a_default/script/30_スキル/F10_missile.dat",
+          "line": 4573,
+          "kind": "link_or_property",
+          "raw": "next3 = m_mrandom_nt1_1,m_mrandom_nt1_2,m_mrandom_nt1_3,m_mrandom_nt1_4,m_ligh_pr2,m_ligh_pr3"
+        }
+      ]
+    },
+    {
+      "orphan_skill": "m_magickbs_nt1_2",
+      "missing_parent": "m_ligh_js",
+      "declaration": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat:1668",
+      "active_refs_excluding_own_decl": 1,
+      "site_kinds": {
+        "link_or_property": 1,
+        "skill_declaration": 1
+      },
+      "non_declaration_examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat",
+          "line": 1645,
+          "kind": "link_or_property",
+          "raw": "next3 = m_magickbs_nt1_1,m_magickbs_nt1_2,m_magickbs_nt1_3,m_magickbs_nt1_4,m_ligh_pr2,m_ligh_pr3"
+        }
+      ]
+    },
+    {
+      "orphan_skill": "sp_tusk_act1_kn",
+      "missing_parent": "tusk_gun_kn",
+      "declaration": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat:2343",
+      "active_refs_excluding_own_decl": 1,
+      "site_kinds": {
+        "link_or_property": 1,
+        "skill_declaration": 1
+      },
+      "non_declaration_examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+          "line": 2329,
+          "kind": "link_or_property",
+          "raw": "next3 = sp_tusk_act1_nt1,sp_tusk_act1_nt2,sp_tusk_act1_kn,tusk_pr"
+        }
+      ]
+    },
+    {
+      "orphan_skill": "watecannon_w_pr3",
+      "missing_parent": "watecannon_w_pr1",
+      "declaration": "a_default/script/32_ボススキル/B_2222_レイノアレフ.dat:517",
+      "active_refs_excluding_own_decl": 1,
+      "site_kinds": {
+        "skill_declaration": 1,
+        "link_or_property": 1
+      },
+      "non_declaration_examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_2222_レイノアレフ.dat",
+          "line": 538,
+          "kind": "link_or_property",
+          "raw": "next3 = watecannon_w_pr3,watecannon_w_pr4b"
+        }
+      ]
+    },
+    {
+      "orphan_skill": "sp_gogogo",
+      "missing_parent": "sp_nannkasugoino",
+      "declaration": "a_default/script/32_ボススキル/B_505_閉店の日.dat:371",
+      "active_refs_excluding_own_decl": 1,
+      "site_kinds": {
+        "link_or_property": 1,
+        "skill_declaration": 1
+      },
+      "non_declaration_examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_505_閉店の日.dat",
+          "line": 365,
+          "kind": "link_or_property",
+          "raw": "next3 = sp_gogogo"
+        }
+      ]
+    },
+    {
+      "orphan_skill": "astk_kirakira_pr2",
+      "missing_parent": "astk_kirakira_pr",
+      "declaration": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat:1940",
+      "active_refs_excluding_own_decl": 1,
+      "site_kinds": {
+        "link_or_property": 1,
+        "skill_declaration": 1
+      },
+      "non_declaration_examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+          "line": 1923,
+          "kind": "link_or_property",
+          "raw": "next2 = astk_kirakira_pr1,astk_kirakira_pr2,astk_kirakira_pr3"
+        }
+      ]
+    },
+    {
+      "orphan_skill": "astk_kirakira_pr3",
+      "missing_parent": "astk_kirakira_pr",
+      "declaration": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat:1945",
+      "active_refs_excluding_own_decl": 1,
+      "site_kinds": {
+        "link_or_property": 1,
+        "skill_declaration": 1
+      },
+      "non_declaration_examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+          "line": 1923,
+          "kind": "link_or_property",
+          "raw": "next2 = astk_kirakira_pr1,astk_kirakira_pr2,astk_kirakira_pr3"
+        }
+      ]
+    },
+    {
+      "orphan_skill": "asasin_cream_weapon_glove_mag",
+      "missing_parent": "asasin_cream_weapon_grove_base",
+      "declaration": "a_default/script/33_仮設アサシン/skill_asasin_cream_weapon_glove.dat:174",
+      "active_refs_excluding_own_decl": 1,
+      "site_kinds": {
+        "link_or_property": 1,
+        "skill_declaration": 1
+      },
+      "non_declaration_examples": [
+        {
+          "file": "a_default/script/33_仮設アサシン/skill_asasin_cream_weapon_glove.dat",
+          "line": 116,
+          "kind": "link_or_property",
+          "raw": "next3 = asasin_cream_weapon_glove_ability_enemy , asasin_cream_weapon_glove_atk , asasin_cream_weapon_glove_mag"
+        }
+      ]
+    },
+    {
+      "orphan_skill": "hanzo_cream_weapon_glove_mag",
+      "missing_parent": "hanzo_cream_weapon_grove_base",
+      "declaration": "a_default/script/35_仮設半造/skill_hanzo_cream_weapon_glove.dat:184",
+      "active_refs_excluding_own_decl": 1,
+      "site_kinds": {
+        "link_or_property": 1,
+        "skill_declaration": 1
+      },
+      "non_declaration_examples": [
+        {
+          "file": "a_default/script/35_仮設半造/skill_hanzo_cream_weapon_glove.dat",
+          "line": 124,
+          "kind": "link_or_property",
+          "raw": "next3 = hanzo_cream_weapon_glove_ability_enemy , hanzo_cream_weapon_glove_atk , hanzo_cream_weapon_glove_mag"
+        }
+      ]
+    },
+    {
+      "orphan_skill": "demo1_range2",
+      "missing_parent": "demo_range1",
+      "declaration": "a_default/script/50_その他新システム/siki.dat:153",
+      "active_refs_excluding_own_decl": 1,
+      "site_kinds": {
+        "link_or_property": 1,
+        "skill_declaration": 1
+      },
+      "non_declaration_examples": [
+        {
+          "file": "a_default/script/50_その他新システム/siki.dat",
+          "line": 141,
+          "kind": "link_or_property",
+          "raw": "next3 = gekirei_nt,demo1_range1,demo1_range2"
+        }
+      ]
+    },
+    {
+      "orphan_skill": "testskill",
+      "missing_parent": "sp_nannkasugoino",
+      "declaration": "a_default/script/6000_スキルテスト/skill_00_test.dat:1",
+      "active_refs_excluding_own_decl": 1,
+      "site_kinds": {
+        "skill_declaration": 1,
+        "parent_reference": 1
+      },
+      "non_declaration_examples": [
+        {
+          "file": "a_default/script/6000_スキルテスト/skill_00_test.dat",
+          "line": 5,
+          "kind": "parent_reference",
+          "raw": "skill testskillb:testskill"
+        }
+      ]
+    },
+    {
+      "orphan_skill": "re_cannon_rts_nt1",
+      "missing_parent": "re_cannon_nt1",
+      "declaration": "a_default/script/8000_RTSシナリオ/RTSskill.dat:550",
+      "active_refs_excluding_own_decl": 1,
+      "site_kinds": {
+        "link_or_property": 1,
+        "skill_declaration": 1
+      },
+      "non_declaration_examples": [
+        {
+          "file": "a_default/script/8000_RTSシナリオ/RTSskill.dat",
+          "line": 548,
+          "kind": "link_or_property",
+          "raw": "next3=re_cannon_rts_nt1,b_cannon_nt2,b_cannon_pr1,b_cannon_pr2"
+        }
+      ]
+    },
+    {
+      "orphan_skill": "re_cannon_rts_nt3",
+      "missing_parent": "re_cannon_nt3",
+      "declaration": "a_default/script/8000_RTSシナリオ/RTSskill.dat:556",
+      "active_refs_excluding_own_decl": 1,
+      "site_kinds": {
+        "link_or_property": 1,
+        "skill_declaration": 1
+      },
+      "non_declaration_examples": [
+        {
+          "file": "a_default/script/8000_RTSシナリオ/RTSskill.dat",
+          "line": 554,
+          "kind": "link_or_property",
+          "raw": "next = re_cannon_rts_nt3"
+        }
+      ]
+    },
+    {
+      "orphan_skill": "rtstocsam_mugen_nt",
+      "missing_parent": "rtstocsam",
+      "declaration": "a_default/script/8000_RTSシナリオ/RTSsummon.dat:656",
+      "active_refs_excluding_own_decl": 1,
+      "site_kinds": {
+        "link_or_property": 1,
+        "skill_declaration": 1
+      },
+      "non_declaration_examples": [
+        {
+          "file": "a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+          "line": 654,
+          "kind": "link_or_property",
+          "raw": "next = rtstocsam_mugen_nt"
+        }
+      ]
+    },
+    {
+      "orphan_skill": "giant_swing_CountA03",
+      "missing_parent": "giant_swing_CountAXX_base",
+      "declaration": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat:36",
+      "active_refs_excluding_own_decl": 0,
+      "site_kinds": {
+        "skill_declaration": 1
+      },
+      "non_declaration_examples": []
+    },
+    {
+      "orphan_skill": "watecannon_pr3",
+      "missing_parent": "watecannon_pr1",
+      "declaration": "a_default/script/30_スキル/F10_missile_砲撃リニューアル.dat:779",
+      "active_refs_excluding_own_decl": 0,
+      "site_kinds": {
+        "skill_declaration": 1
+      },
+      "non_declaration_examples": []
+    },
+    {
+      "orphan_skill": "rmla_ch_old_yari_pr",
+      "missing_parent": "rmla_yari_pr",
+      "declaration": "a_default/script/30_スキル/F12_charge.dat:1318",
+      "active_refs_excluding_own_decl": 0,
+      "site_kinds": {
+        "skill_declaration": 1
+      },
+      "non_declaration_examples": []
+    },
+    {
+      "orphan_skill": "ss_rmla_ch_old_yari_pr",
+      "missing_parent": "ss_rmla_yari_pr",
+      "declaration": "a_default/script/30_スキル/F12_charge.dat:2098",
+      "active_refs_excluding_own_decl": 0,
+      "site_kinds": {
+        "skill_declaration": 1
+      },
+      "non_declaration_examples": []
+    },
+    {
+      "orphan_skill": "heal_clown_mprec",
+      "missing_parent": "sing_mprec",
+      "declaration": "a_default/script/30_スキル/F13_heal_support.dat:1441",
+      "active_refs_excluding_own_decl": 0,
+      "site_kinds": {
+        "skill_declaration": 1
+      },
+      "non_declaration_examples": []
+    },
+    {
+      "orphan_skill": "aqua_times_pr3",
+      "missing_parent": "aqua_times_pr1",
+      "declaration": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat:2448",
+      "active_refs_excluding_own_decl": 0,
+      "site_kinds": {
+        "skill_declaration": 1
+      },
+      "non_declaration_examples": []
+    },
+    {
+      "orphan_skill": "s_defbarboat_nt2",
+      "missing_parent": "s_defbar_nt2",
+      "declaration": "a_default/script/45_内政_防衛兵器/siege_skill.dat:3183",
+      "active_refs_excluding_own_decl": 0,
+      "site_kinds": {
+        "skill_declaration": 1
+      },
+      "non_declaration_examples": []
+    },
+    {
+      "orphan_skill": "s_defbarboat_nt3",
+      "missing_parent": "s_defbar_nt3",
+      "declaration": "a_default/script/45_内政_防衛兵器/siege_skill.dat:3197",
+      "active_refs_excluding_own_decl": 0,
+      "site_kinds": {
+        "skill_declaration": 1
+      },
+      "non_declaration_examples": []
+    },
+    {
+      "orphan_skill": "rtstocsamsp3_hub",
+      "missing_parent": "rtstocsamsp5",
+      "declaration": "a_default/script/8000_RTSシナリオ/RTSsummon.dat:640",
+      "active_refs_excluding_own_decl": 0,
+      "site_kinds": {
+        "skill_declaration": 1
+      },
+      "non_declaration_examples": []
+    }
+  ],
+  "undefined_chain_tag_triage": [
+    {
+      "missing_target": "b_whip_js",
+      "references": 6,
+      "site_kinds": {
+        "link_or_property": 6
+      },
+      "examples": [
+        {
+          "file": "a_default/script/30_スキル/F10_missile_鞭.dat",
+          "line": 22,
+          "kind": "link_or_property",
+          "raw": "just_next = b_whip_js"
+        },
+        {
+          "file": "a_default/script/30_スキル/F11_sword.dat",
+          "line": 5026,
+          "kind": "link_or_property",
+          "raw": "next3 = b_whip_pr0,b_whip_js,jtb_whip_nt1,jtb_whip_nt2,jtb_whip_nt3,jtb_whip_nt4"
+        },
+        {
+          "file": "a_default/script/30_スキル/F21_奴隷少年summon_鞭_突撃_斬撃.dat",
+          "line": 21,
+          "kind": "link_or_property",
+          "raw": "just_next = b_whip_js"
+        },
+        {
+          "file": "a_default/script/30_スキル/F21_奴隷少年summon_鞭_突撃_斬撃.dat",
+          "line": 154,
+          "kind": "link_or_property",
+          "raw": "just_next = b_whip_js"
+        },
+        {
+          "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+          "line": 2868,
+          "kind": "link_or_property",
+          "raw": "just_next = b_whip_js"
+        },
+        {
+          "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+          "line": 3520,
+          "kind": "link_or_property",
+          "raw": "just_next = b_whip_js"
+        }
+      ]
+    },
+    {
+      "missing_target": "eff_jinzaisp",
+      "references": 6,
+      "site_kinds": {
+        "link_or_property": 6
+      },
+      "examples": [
+        {
+          "file": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+          "line": 1340,
+          "kind": "link_or_property",
+          "raw": "next3 = sp_masupa5_pair_nt1, sp_masupa5_pair_nt2, sp_masupa5_pair_nt3, sp_masupa5_pair_nt4, sp_masupa5_pair_nt5, sp_masupa5_pair_nt6, sp_masupa5_pair_nt8, sp_ma"
+        },
+        {
+          "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+          "line": 3149,
+          "kind": "link_or_property",
+          "raw": "next3 = u23_pair_nt1, u23_pair_nt2, u23_pair_nt3,u23_pair_nt4, u23_pair_nt5, u23_pair_nt6, u23_pair_nt8, u23_pair_nt9, u23_pair_nt10, u23_pair_nt11, u23_pair_nt"
+        },
+        {
+          "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+          "line": 1647,
+          "kind": "link_or_property",
+          "raw": "next3 = bsp_masupa5_pair_nt1, bsp_masupa5_pair_nt2, bsp_masupa5_pair_nt3, bsp_masupa5_pair_nt4, bsp_masupa5_pair_nt5, bsp_masupa5_pair_nt6, bsp_masupa5_pair_nt8"
+        },
+        {
+          "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+          "line": 1334,
+          "kind": "link_or_property",
+          "raw": "next3 = sp_hnsthunder_pair_nt1, sp_hnsthunder_pair_nt2, sp_hnsthunder_pair_nt3, sp_hnsthunder_pair_nt4, sp_hnsthunder_pair_nt5, sp_hnsthunder_pair_nt6, sp_hnsth"
+        },
+        {
+          "file": "a_default/script/32_ボススキル/B_2323_リュージ騎士団.dat",
+          "line": 1523,
+          "kind": "link_or_property",
+          "raw": "next3 = udbsp_pair_nt1, udbsp_pair_nt2, udbsp_pair_nt3,udbsp_pair_nt4, udbsp_pair_nt5, udbsp_pair_nt6, udbsp_pair_nt8, udbsp_pair_nt9, udbsp_pair_nt10, udbsp_pa"
+        },
+        {
+          "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+          "line": 2696,
+          "kind": "link_or_property",
+          "raw": "next3 = snnm_beam_pair_nt1, snnm_beam_pair_nt2, snnm_beam_pair_nt3, snnm_beam_pair_nt4, snnm_beam_pair_nt5, snnm_beam_pair_nt6, snnm_beam_pair_nt8, snnm_beam_pa"
+        }
+      ]
+    },
+    {
+      "missing_target": "giant_swing_CountB_Eff",
+      "references": 3,
+      "site_kinds": {
+        "link_or_property": 3
+      },
+      "examples": [
+        {
+          "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+          "line": 7,
+          "kind": "link_or_property",
+          "raw": "next3 = giant_swing_CountB00,giant_swing_CountB_Eff"
+        },
+        {
+          "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+          "line": 17,
+          "kind": "link_or_property",
+          "raw": "next3 = giant_swing_CountB01,giant_swing_CountB_Eff"
+        },
+        {
+          "file": "a_default/script/116_仮設ランダムイベント61-70/skill_giant_swing_chain.dat",
+          "line": 27,
+          "kind": "link_or_property",
+          "raw": "next3 = giant_swing_CountB02,giant_swing_CountB_Eff"
+        }
+      ]
+    },
+    {
+      "missing_target": "ncnc_cannon_nt3_ef2",
+      "references": 3,
+      "site_kinds": {
+        "link_or_property": 3
+      },
+      "examples": [
+        {
+          "file": "a_default/script/20_クラス/B_525_神聖UNEI帝国.dat",
+          "line": 480,
+          "kind": "link_or_property",
+          "raw": "next3 = kenri_unei_nt3,kenri_unei_nt3_2,kenri_unei_nt3_ef,ncnc_cannon_nt3_ef2"
+        },
+        {
+          "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+          "line": 6238,
+          "kind": "link_or_property",
+          "raw": "next3 = ncnc_cannon_nt3,ncnc_cannon_nt3_2,ncnc_cannon_nt3_ef,ncnc_cannon_nt3_ef2"
+        },
+        {
+          "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+          "line": 6421,
+          "kind": "link_or_property",
+          "raw": "next3 = ncnc_cannon_nt3,ncnc_cannon_nt3_2,ncnc_cannon_nt3_ef,ncnc_cannon_nt3_ef2,sp_ncnc_cannon_nt4"
+        }
+      ]
+    },
+    {
+      "missing_target": "m_ligh_js",
+      "references": 3,
+      "site_kinds": {
+        "parent_reference": 2,
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/30_スキル/F10_missile.dat",
+          "line": 4579,
+          "kind": "parent_reference",
+          "raw": "skill m_mrandom_nt1_2:m_ligh_js"
+        },
+        {
+          "file": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat",
+          "line": 1668,
+          "kind": "parent_reference",
+          "raw": "skill m_magickbs_nt1_2:m_ligh_js"
+        },
+        {
+          "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+          "line": 10192,
+          "kind": "link_or_property",
+          "raw": "next3 = crystalgoh_ligh,m_ligh_js,m_ligh_pr1,m_ligh_pr2,m_ligh_pr3"
+        }
+      ]
+    },
+    {
+      "missing_target": "sakenomiga_summon_pr0",
+      "references": 2,
+      "site_kinds": {
+        "link_or_property": 2
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+          "line": 11983,
+          "kind": "link_or_property",
+          "raw": "pair_next = sakenomiga_summon_pr0"
+        },
+        {
+          "file": "a_default/script/5000_ランダムシナリオ/RB_ボススキル.dat",
+          "line": 559,
+          "kind": "link_or_property",
+          "raw": "pair_next = sakenomiga_summon_pr0"
+        }
+      ]
+    },
+    {
+      "missing_target": "s_cannon_pr4",
+      "references": 2,
+      "site_kinds": {
+        "link_or_property": 2
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+          "line": 9907,
+          "kind": "link_or_property",
+          "raw": "next3 = s_cannon_nt6,s_cannon_nt7,s_cannon_pr4"
+        },
+        {
+          "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+          "line": 9913,
+          "kind": "link_or_property",
+          "raw": "next3 = s_cannon_nt8,s_cannon_nt9,s_cannon_pr4"
+        }
+      ]
+    },
+    {
+      "missing_target": "monzetsu_fire_ensyou_mag",
+      "references": 2,
+      "site_kinds": {
+        "link_or_property": 2
+      },
+      "examples": [
+        {
+          "file": "a_default/script/30_スキル/F50_延焼_究極悶絶少年.dat",
+          "line": 306,
+          "kind": "link_or_property",
+          "raw": "next3 = monzetsu_fire_ensyou_eff_fake_at, monzetsu_fire_ensyou_mag"
+        },
+        {
+          "file": "a_default/script/30_スキル/F50_延焼_究極悶絶少年.dat",
+          "line": 624,
+          "kind": "link_or_property",
+          "raw": "next3 = monzetsu_fire_ensyou_at_fin, monzetsu_fire_ensyou_mag"
+        }
+      ]
+    },
+    {
+      "missing_target": "sp_bio_so",
+      "references": 2,
+      "site_kinds": {
+        "link_or_property": 2
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+          "line": 29,
+          "kind": "link_or_property",
+          "raw": "pair_next = sp_bio_so"
+        },
+        {
+          "file": "a_default/script/31_ユニットスキル/U_必殺_6_10_ヒゲクマ～スカーレット.dat",
+          "line": 712,
+          "kind": "link_or_property",
+          "raw": "pair_next = sp_bio_so"
+        }
+      ]
+    },
+    {
+      "missing_target": "diyushi_dam1",
+      "references": 2,
+      "site_kinds": {
+        "link_or_property": 2
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_必殺_31_32_ぢゆし～サムソン.dat",
+          "line": 638,
+          "kind": "link_or_property",
+          "raw": "next3 = diyusi_nt6_nt,diyushi_dam1,diyushi_dam1,diyusi_dam2,diyusi_dam2"
+        },
+        {
+          "file": "a_default/script/31_ユニットスキル/U_必殺_31_32_ぢゆし～サムソン.dat",
+          "line": 647,
+          "kind": "link_or_property",
+          "raw": "next3 = diyusi_nt8_nt,diyushi_dam1,diyushi_dam1,diyusi_dam2,diyusi_dam2"
+        }
+      ]
+    },
+    {
+      "missing_target": "e893zan1_nt0",
+      "references": 2,
+      "site_kinds": {
+        "link_or_property": 2
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_16_20_ALC一派～VVAN.dat",
+          "line": 2523,
+          "kind": "link_or_property",
+          "raw": "next2 = e893zan1_nt0,e893zan0_joi2,gun_kata_nt1"
+        },
+        {
+          "file": "a_default/script/31_ユニットスキル/U_16_20_ALC一派～VVAN.dat",
+          "line": 2530,
+          "kind": "link_or_property",
+          "raw": "next2 = e893zan1_nt0,e893zan0_joi2"
+        }
+      ]
+    },
+    {
+      "missing_target": "b_jibaku_pr4",
+      "references": 2,
+      "site_kinds": {
+        "link_or_property": 2
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_2222_レイノアレフ.dat",
+          "line": 1664,
+          "kind": "link_or_property",
+          "raw": "next3 = b_jibaku_nt6,b_jibaku_nt7,b_jibaku_pr4"
+        },
+        {
+          "file": "a_default/script/32_ボススキル/B_2222_レイノアレフ.dat",
+          "line": 1670,
+          "kind": "link_or_property",
+          "raw": "next3 = b_jibaku_nt8,b_jibaku_nt9,b_jibaku_pr4"
+        }
+      ]
+    },
+    {
+      "missing_target": "ef_rmla_yari0",
+      "references": 2,
+      "site_kinds": {
+        "link_or_property": 2
+      },
+      "examples": [
+        {
+          "file": "a_default/script/30_スキル/F12_charge.dat",
+          "line": 1239,
+          "kind": "link_or_property",
+          "raw": "next3 = ef_rmla_yari,ef_rmla_yari0"
+        },
+        {
+          "file": "a_default/script/30_スキル/F12_charge.dat",
+          "line": 2018,
+          "kind": "link_or_property",
+          "raw": "next3 = ef_rmla_yari,ef_rmla_yari0"
+        }
+      ]
+    },
+    {
+      "missing_target": "sake_rocket_bomber_pr4",
+      "references": 2,
+      "site_kinds": {
+        "link_or_property": 2
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+          "line": 11631,
+          "kind": "link_or_property",
+          "raw": "next3 = sake_rocket_bomber_nt6,sake_rocket_bomber_nt7,sake_rocket_bomber_pr4"
+        },
+        {
+          "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+          "line": 11637,
+          "kind": "link_or_property",
+          "raw": "next3 = sake_rocket_bomber_nt8,sake_rocket_bomber_nt9,sake_rocket_bomber_pr4"
+        }
+      ]
+    },
+    {
+      "missing_target": "s_cannon_pr2",
+      "references": 2,
+      "site_kinds": {
+        "link_or_property": 2
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+          "line": 9805,
+          "kind": "link_or_property",
+          "raw": "next3=s_cannon_nt1,s_cannon_nt2,s_cannon_pr1,s_cannon_pr2"
+        },
+        {
+          "file": "a_default/script/45_内政_防衛兵器/siege_skill_SP63_鎌倉.dat",
+          "line": 30,
+          "kind": "link_or_property",
+          "raw": "next3=s_cannon_nt1,s_cannon_nt2,s_cannon_pr1,s_cannon_pr2"
+        }
+      ]
+    },
+    {
+      "missing_target": "sp_vanban_nt4",
+      "references": 2,
+      "site_kinds": {
+        "link_or_property": 2
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_必殺_6_10_ヒゲクマ～スカーレット.dat",
+          "line": 1105,
+          "kind": "link_or_property",
+          "raw": "next3 = sp_vanban_nt2,sp_vanban_nt3,sp_vanban_nt3b,sp_vanban_nt4,sp_vanban_nt1c"
+        },
+        {
+          "file": "a_default/script/31_ユニットスキル/U_必殺_6_10_ヒゲクマ～スカーレット.dat",
+          "line": 1177,
+          "kind": "link_or_property",
+          "raw": "next3 = sp_vanban_nt2,sp_vanban_nt3,sp_vanban_nt3b,sp_vanban_nt4,sp_vanban_nt1c"
+        }
+      ]
+    },
+    {
+      "missing_target": "b_jibaku_kimihiko_pr4",
+      "references": 2,
+      "site_kinds": {
+        "link_or_property": 2
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+          "line": 410,
+          "kind": "link_or_property",
+          "raw": "next3 = b_jibaku_kimihiko_nt6,b_jibaku_kimihiko_nt7,b_jibaku_kimihiko_pr4"
+        },
+        {
+          "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+          "line": 416,
+          "kind": "link_or_property",
+          "raw": "next3 = b_jibaku_kimihiko_nt8,b_jibaku_kimihiko_nt9,b_jibaku_kimihiko_pr4"
+        }
+      ]
+    },
+    {
+      "missing_target": "b_tsuri_nt7e",
+      "references": 2,
+      "site_kinds": {
+        "link_or_property": 2
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+          "line": 5824,
+          "kind": "link_or_property",
+          "raw": "next3 = b_tsuri_nt4,sp_tsuri_nt5,sp_tsuri_nt6,b_tsuri_nt7_0,b_tsuri_nt7e,b_tsuri_nt8,b_tsuri_nt9"
+        },
+        {
+          "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+          "line": 5828,
+          "kind": "link_or_property",
+          "raw": "next3 = b_tsuri_nt4,sp_tsuri_nt5,sp_tsuri_nt6,b_tsuri_nt7_0,b_tsuri_nt7e,b_tsuri_nt8,b_tsuri_nt9"
+        }
+      ]
+    },
+    {
+      "missing_target": "re_cannon_nt1",
+      "references": 2,
+      "site_kinds": {
+        "link_or_property": 1,
+        "parent_reference": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/30_スキル/F31_死亡時エフェクト.dat",
+          "line": 61,
+          "kind": "link_or_property",
+          "raw": "next3=re_cannon_nt1,b_cannon_nt2,b_cannon_pr1,b_cannon_pr2 ,taiho_bom2"
+        },
+        {
+          "file": "a_default/script/8000_RTSシナリオ/RTSskill.dat",
+          "line": 550,
+          "kind": "parent_reference",
+          "raw": "skill re_cannon_rts_nt1 : re_cannon_nt1"
+        }
+      ]
+    },
+    {
+      "missing_target": "kuso_yari1_js3",
+      "references": 2,
+      "site_kinds": {
+        "link_or_property": 2
+      },
+      "examples": [
+        {
+          "file": "a_default/script/30_スキル/F11_sword.dat",
+          "line": 6509,
+          "kind": "link_or_property",
+          "raw": "next3 = kuso_yari1_nt0,kuso_yari1_js,new_yari1_js2,kuso_yari1_js3"
+        },
+        {
+          "file": "a_default/script/30_スキル/F11_sword.dat",
+          "line": 6522,
+          "kind": "link_or_property",
+          "raw": "next3 = kuso_yari1_nt0,kuso_yari1_js,new_yari1_js2,kuso_yari1_js3"
+        }
+      ]
+    },
+    {
+      "missing_target": "sww_whip_js",
+      "references": 2,
+      "site_kinds": {
+        "link_or_property": 2
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+          "line": 584,
+          "kind": "link_or_property",
+          "raw": "just_next = sww_whip_js"
+        },
+        {
+          "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+          "line": 16432,
+          "kind": "link_or_property",
+          "raw": "just_next = sww_whip_js"
+        }
+      ]
+    },
+    {
+      "missing_target": "stove_fire_chainA_00_00",
+      "references": 2,
+      "site_kinds": {
+        "link_or_property": 2
+      },
+      "examples": [
+        {
+          "file": "a_default/script/116_仮設ランダムイベント61-70/skill_stove.dat",
+          "line": 814,
+          "kind": "link_or_property",
+          "raw": "next = stove_fire_chainA_00_00"
+        },
+        {
+          "file": "a_default/script/116_仮設ランダムイベント61-70/skill_stove.dat",
+          "line": 875,
+          "kind": "link_or_property",
+          "raw": "next = stove_fire_chainA_00_00"
+        }
+      ]
+    },
+    {
+      "missing_target": "ef_rmla_yari",
+      "references": 2,
+      "site_kinds": {
+        "link_or_property": 2
+      },
+      "examples": [
+        {
+          "file": "a_default/script/30_スキル/F12_charge.dat",
+          "line": 1239,
+          "kind": "link_or_property",
+          "raw": "next3 = ef_rmla_yari,ef_rmla_yari0"
+        },
+        {
+          "file": "a_default/script/30_スキル/F12_charge.dat",
+          "line": 2018,
+          "kind": "link_or_property",
+          "raw": "next3 = ef_rmla_yari,ef_rmla_yari0"
+        }
+      ]
+    },
+    {
+      "missing_target": "u23_masupa5_nt5",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+          "line": 2738,
+          "kind": "link_or_property",
+          "raw": "next3 = u23_masupa5_nt1, u23_masupa5_nt2, u23_masupa5_nt3, u23_masupa5_nt4, u23_masupa5_nt5, u23_masupa5_nt6, u23_masupa5_nt1_b"
+        }
+      ]
+    },
+    {
+      "missing_target": "ssrn_sw_weak_6",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+          "line": 4379,
+          "kind": "link_or_property",
+          "raw": "next3 = ssrn_sw_weak_5,ssrn_sw_weak_5_2,ssrn_sw_weak_6,ssrn_sw_weak_6_2,ssrn_sw_weak_4,ssrn_sw_weak_4_2,ssrn_sw_7,ssrn_sw_7_2"
+        }
+      ]
+    },
+    {
+      "missing_target": "sp_masupa5_nt5",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+          "line": 723,
+          "kind": "link_or_property",
+          "raw": "next3 = sp_masupa5_nt1, sp_masupa5_nt1_b, sp_masupa5_nt1c,sp_masupa5_nt1d, sp_masupa5_nt2, sp_masupa5_nt3, sp_masupa5_nt4, sp_masupa5_nt5, sp_masupa5_nt6, sp_ma"
+        }
+      ]
+    },
+    {
+      "missing_target": "ninja_zan1_nt0",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/6000_スキルテスト/skill_人材追加mod.dat",
+          "line": 318,
+          "kind": "link_or_property",
+          "raw": "next2 = ninja_zan1_nt0,ninja_zan0_joi2"
+        }
+      ]
+    },
+    {
+      "missing_target": "sp_masahiko_pr0",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+          "line": 2562,
+          "kind": "link_or_property",
+          "raw": "pair_next = sp_masahiko_pr0"
+        }
+      ]
+    },
+    {
+      "missing_target": "sww_hand",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+          "line": 22089,
+          "kind": "link_or_property",
+          "raw": "next2 = sww_hand"
+        }
+      ]
+    },
+    {
+      "missing_target": "sp_rambu_nt3",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+          "line": 1974,
+          "kind": "link_or_property",
+          "raw": "next3 = sp_ranbu_toukou_nt1,sp_ranbu_toukou_nt2,sp_rambu_nt3"
+        }
+      ]
+    },
+    {
+      "missing_target": "b_jibaku_kimihiko_pr1",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+          "line": 337,
+          "kind": "link_or_property",
+          "raw": "next3 = b_jibaku_kimihiko_nt1,b_jibaku_kimihiko_nt2,b_jibaku_kimihiko_pr1,b_jibaku_kimihiko_pr2"
+        }
+      ]
+    },
+    {
+      "missing_target": "sp_fmrim_joker_biim23_summon_nt3",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+          "line": 187,
+          "kind": "link_or_property",
+          "raw": "next2 = sp_fmrim_joker_biim23_summon_nt0,sp_fmrim_joker_biim23_summon_nt0,sp_fmrim_joker_biim23_summon_nt2,sp_fmrim_joker_biim23_summon_nt3"
+        }
+      ]
+    },
+    {
+      "missing_target": "k_cannon_nt4_nt2",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+          "line": 1079,
+          "kind": "link_or_property",
+          "raw": "next3 = k_cannon_nt4_nt1,k_cannon_nt4_nt2"
+        }
+      ]
+    },
+    {
+      "missing_target": "new_misairu_miss_nt3b",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/30_スキル/C_必殺_クラス専用.dat",
+          "line": 352,
+          "kind": "link_or_property",
+          "raw": "next2=new_misairu_miss_nt3,new_misairu_miss_nt3,new_misairu_miss_nt3,new_misairu_miss_nt3,new_misairu_miss_nt3b,new_misairu_miss_nt3b,new_misairu_miss_nt3c,new_"
+        }
+      ]
+    },
+    {
+      "missing_target": "torpado_nt4",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+          "line": 5191,
+          "kind": "link_or_property",
+          "raw": "next = torpado_nt4"
+        }
+      ]
+    },
+    {
+      "missing_target": "sp_hnsthunder_pair_nt9",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+          "line": 1334,
+          "kind": "link_or_property",
+          "raw": "next3 = sp_hnsthunder_pair_nt1, sp_hnsthunder_pair_nt2, sp_hnsthunder_pair_nt3, sp_hnsthunder_pair_nt4, sp_hnsthunder_pair_nt5, sp_hnsthunder_pair_nt6, sp_hnsth"
+        }
+      ]
+    },
+    {
+      "missing_target": "b_cannon_apcr_ol",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/30_スキル/C_必殺_クラス専用.dat",
+          "line": 1460,
+          "kind": "link_or_property",
+          "raw": "next3 = b_cannon_apcr_sw,b_cannon_apcr_msw,b_cannon_apcr_ol,b_cannon_apcr_mpl,b_cannon_apcr_ch,b_cannon_apcr_mch"
+        }
+      ]
+    },
+    {
+      "missing_target": "secret_sww_hand_mask_join3",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+          "line": 22166,
+          "kind": "link_or_property",
+          "raw": "next3 = secret_sww_hand_mask_join3"
+        }
+      ]
+    },
+    {
+      "missing_target": "bsp_masupa5_nt5",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+          "line": 1242,
+          "kind": "link_or_property",
+          "raw": "next3 = bsp_masupa5_nt1, bsp_masupa5_nt2, bsp_masupa5_nt3, bsp_masupa5_nt4, bsp_masupa5_nt5, bsp_masupa5_nt6, bsp_masupa5_nt1_b"
+        }
+      ]
+    },
+    {
+      "missing_target": "bsp_masupa5_nt6",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+          "line": 1242,
+          "kind": "link_or_property",
+          "raw": "next3 = bsp_masupa5_nt1, bsp_masupa5_nt2, bsp_masupa5_nt3, bsp_masupa5_nt4, bsp_masupa5_nt5, bsp_masupa5_nt6, bsp_masupa5_nt1_b"
+        }
+      ]
+    },
+    {
+      "missing_target": "sp_masupa5_ef3",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+          "line": 522,
+          "kind": "link_or_property",
+          "raw": "next3 = sp_masupa5_ef1, sp_masupa5_ef2, sp_masupa5_ef3"
+        }
+      ]
+    },
+    {
+      "missing_target": "b_jibaku_kimihiko_pr2",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+          "line": 337,
+          "kind": "link_or_property",
+          "raw": "next3 = b_jibaku_kimihiko_nt1,b_jibaku_kimihiko_nt2,b_jibaku_kimihiko_pr1,b_jibaku_kimihiko_pr2"
+        }
+      ]
+    },
+    {
+      "missing_target": "udbsp_masupa5_nt5",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_2323_リュージ騎士団.dat",
+          "line": 1112,
+          "kind": "link_or_property",
+          "raw": "next3 = udbsp_masupa5_nt1, udbsp_masupa5_nt2, udbsp_masupa5_nt3, udbsp_masupa5_nt4, udbsp_masupa5_nt5, udbsp_masupa5_nt6, udbsp_masupa5_nt1_b"
+        }
+      ]
+    },
+    {
+      "missing_target": "sakenomiga_protect_pr0",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+          "line": 12331,
+          "kind": "link_or_property",
+          "raw": "pair_next = sakenomiga_protect_pr0"
+        }
+      ]
+    },
+    {
+      "missing_target": "sake_heaven_sec1919_right",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+          "line": 14280,
+          "kind": "link_or_property",
+          "raw": "next3 = sake_heaven_sec1_right,sake_heaven_sec1919_right"
+        }
+      ]
+    },
+    {
+      "missing_target": "b_jibaku_pr1",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_2222_レイノアレフ.dat",
+          "line": 1591,
+          "kind": "link_or_property",
+          "raw": "next3 = b_jibaku_nt1,b_jibaku_nt2,b_jibaku_pr1,b_jibaku_pr2"
+        }
+      ]
+    },
+    {
+      "missing_target": "sp_sun_2i",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_5151_古代アステカ王国.dat",
+          "line": 3072,
+          "kind": "link_or_property",
+          "raw": "next3 = sp_sun_2i"
+        }
+      ]
+    },
+    {
+      "missing_target": "ef_yuwaku",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/30_スキル/F20_summon.dat",
+          "line": 11727,
+          "kind": "link_or_property",
+          "raw": "next = ef_yuwaku"
+        }
+      ]
+    },
+    {
+      "missing_target": "icg_ch1_js",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/30_スキル/F11_sword.dat",
+          "line": 3600,
+          "kind": "link_or_property",
+          "raw": "next3 = icg_ch1,icg_ch1_js"
+        }
+      ]
+    },
+    {
+      "missing_target": "chefswk_whip_js",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+          "line": 12476,
+          "kind": "link_or_property",
+          "raw": "just_next = chefswk_whip_js"
+        }
+      ]
+    },
+    {
+      "missing_target": "sp_hnsthunder_pair_nt11",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+          "line": 1334,
+          "kind": "link_or_property",
+          "raw": "next3 = sp_hnsthunder_pair_nt1, sp_hnsthunder_pair_nt2, sp_hnsthunder_pair_nt3, sp_hnsthunder_pair_nt4, sp_hnsthunder_pair_nt5, sp_hnsthunder_pair_nt6, sp_hnsth"
+        }
+      ]
+    },
+    {
+      "missing_target": "art_smoke",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+          "line": 3099,
+          "kind": "link_or_property",
+          "raw": "next3 = kurukuru_nt_nt2_nt, commandBS_nt_nt_nt_nt_nt, art_smoke"
+        }
+      ]
+    },
+    {
+      "missing_target": "self_a2953_nt0",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/50_その他新システム/self_summon_skills.dat",
+          "line": 2967,
+          "kind": "link_or_property",
+          "raw": "next3 = self_a2953_nt0"
+        }
+      ]
+    },
+    {
+      "missing_target": "sp_hnsthunder_pair_nt10",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+          "line": 1334,
+          "kind": "link_or_property",
+          "raw": "next3 = sp_hnsthunder_pair_nt1, sp_hnsthunder_pair_nt2, sp_hnsthunder_pair_nt3, sp_hnsthunder_pair_nt4, sp_hnsthunder_pair_nt5, sp_hnsthunder_pair_nt6, sp_hnsth"
+        }
+      ]
+    },
+    {
+      "missing_target": "sp_masupa5_pair_o",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+          "line": 712,
+          "kind": "link_or_property",
+          "raw": "pair_next = sp_masupa5_pair_o"
+        }
+      ]
+    },
+    {
+      "missing_target": "biim23_summon_nt4bc",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+          "line": 2072,
+          "kind": "link_or_property",
+          "raw": "next3 = biim23_summon_nt4b,biim23_summon_nt4bc"
+        }
+      ]
+    },
+    {
+      "missing_target": "sake_heaven_mask0_denki",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+          "line": 14430,
+          "kind": "link_or_property",
+          "raw": "next3 = sake_heaven_sec0b2_denki,sake_heaven_mask0_denki"
+        }
+      ]
+    },
+    {
+      "missing_target": "b_jibaku_pr2",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_2222_レイノアレフ.dat",
+          "line": 1591,
+          "kind": "link_or_property",
+          "raw": "next3 = b_jibaku_nt1,b_jibaku_nt2,b_jibaku_pr1,b_jibaku_pr2"
+        }
+      ]
+    },
+    {
+      "missing_target": "sakenomiga_rocket_pr0",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+          "line": 10396,
+          "kind": "link_or_property",
+          "raw": "pair_next = sakenomiga_rocket_pr0"
+        }
+      ]
+    },
+    {
+      "missing_target": "k_cannon_nt5_nt2",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+          "line": 1108,
+          "kind": "link_or_property",
+          "raw": "next3 = k_cannon_nt5_nt1,k_cannon_nt5_nt2"
+        }
+      ]
+    },
+    {
+      "missing_target": "b_milk_nt3_3",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+          "line": 751,
+          "kind": "link_or_property",
+          "raw": "next3 = b_milk_nt3_2,b_milk_nt3_3"
+        }
+      ]
+    },
+    {
+      "missing_target": "udbsp_masupa5_nt6",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_2323_リュージ騎士団.dat",
+          "line": 1112,
+          "kind": "link_or_property",
+          "raw": "next3 = udbsp_masupa5_nt1, udbsp_masupa5_nt2, udbsp_masupa5_nt3, udbsp_masupa5_nt4, udbsp_masupa5_nt5, udbsp_masupa5_nt6, udbsp_masupa5_nt1_b"
+        }
+      ]
+    },
+    {
+      "missing_target": "muso_hq0_nt3",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/8000_RTSシナリオ/RTSskill.dat",
+          "line": 17,
+          "kind": "link_or_property",
+          "raw": "next3 = muso_hq0_nt1,muso_hq0_nt2,muso_hq0_nt3"
+        }
+      ]
+    },
+    {
+      "missing_target": "sp_masupa5_nt6",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+          "line": 723,
+          "kind": "link_or_property",
+          "raw": "next3 = sp_masupa5_nt1, sp_masupa5_nt1_b, sp_masupa5_nt1c,sp_masupa5_nt1d, sp_masupa5_nt2, sp_masupa5_nt3, sp_masupa5_nt4, sp_masupa5_nt5, sp_masupa5_nt6, sp_ma"
+        }
+      ]
+    },
+    {
+      "missing_target": "commandBS_nt_nt_nt_nt_nt",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+          "line": 3099,
+          "kind": "link_or_property",
+          "raw": "next3 = kurukuru_nt_nt2_nt, commandBS_nt_nt_nt_nt_nt, art_smoke"
+        }
+      ]
+    },
+    {
+      "missing_target": "k_cannon_nt6_nt2",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+          "line": 1137,
+          "kind": "link_or_property",
+          "raw": "next3 = k_cannon_nt6_nt1,k_cannon_nt6_nt2"
+        }
+      ]
+    },
+    {
+      "missing_target": "turu_whip_js",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+          "line": 4170,
+          "kind": "link_or_property",
+          "raw": "just_next = turu_whip_js"
+        }
+      ]
+    },
+    {
+      "missing_target": "ssrn_kidan_nt4",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+          "line": 3007,
+          "kind": "link_or_property",
+          "raw": "just_next = ssrn_kidan_nt1,ssrn_kidan_nt2,ssrn_kidan_nt7,ssrn_kidan_nt7_1,ssrn_kidan_nt3,ssrn_kidan_nt4"
+        }
+      ]
+    },
+    {
+      "missing_target": "snnm_beam_nt6",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+          "line": 2426,
+          "kind": "link_or_property",
+          "raw": "next3 = snnm_beam_nt1, snnm_beam_nt2, snnm_beam_nt3, snnm_beam_nt4, snnm_beam_nt5, snnm_beam_nt6"
+        }
+      ]
+    },
+    {
+      "missing_target": "_nt",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/8000_RTSシナリオ/RTSenemybuild.dat",
+          "line": 1233,
+          "kind": "link_or_property",
+          "raw": "next2 = ra2192,_nt, ra0092_nt"
+        }
+      ]
+    },
+    {
+      "missing_target": "sp_hnsthunder_pair_nt12",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_1_クレイジーサイコレズ.dat",
+          "line": 1334,
+          "kind": "link_or_property",
+          "raw": "next3 = sp_hnsthunder_pair_nt1, sp_hnsthunder_pair_nt2, sp_hnsthunder_pair_nt3, sp_hnsthunder_pair_nt4, sp_hnsthunder_pair_nt5, sp_hnsthunder_pair_nt6, sp_hnsth"
+        }
+      ]
+    },
+    {
+      "missing_target": "febfeb_beam_pr3",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+          "line": 7997,
+          "kind": "link_or_property",
+          "raw": "next3 = februar_beam_nt2,febfeb_beam_pr2,febfeb_beam_pr3"
+        }
+      ]
+    },
+    {
+      "missing_target": "ef_noel_zan",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+          "line": 857,
+          "kind": "link_or_property",
+          "raw": "next = ef_noel_zan"
+        }
+      ]
+    },
+    {
+      "missing_target": "ef_bokhohn_zan",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+          "line": 1979,
+          "kind": "link_or_property",
+          "raw": "next = ef_bokhohn_zan"
+        }
+      ]
+    },
+    {
+      "missing_target": "sp_ndk2_ef1_flash1_nt",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/30_スキル/F61_核兵器.dat",
+          "line": 526,
+          "kind": "link_or_property",
+          "raw": "next3 = sp_ndk2_ef1_flash1_nt,sp_ndk2_ef1_flash1_nt2,sp_ndk2_ef1_flash1_nt3,sp_ndk2_ef1_flash1_1"
+        }
+      ]
+    },
+    {
+      "missing_target": "s_ncnc_dead2_10",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/30_スキル/F20_summon.dat",
+          "line": 14094,
+          "kind": "link_or_property",
+          "raw": "next3 = s_ncnc_dead2_10,s_ncnc_ef"
+        }
+      ]
+    },
+    {
+      "missing_target": "jma_ligh_pr2",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+          "line": 7304,
+          "kind": "link_or_property",
+          "raw": "next3 = jma_ligh_nt1,jma_ligh_nt2,jma_ligh_pr1,jma_ligh_pr1b,jma_ligh_pr2,jma_ligh_pr3,ma_masupa5_pair_nt6"
+        }
+      ]
+    },
+    {
+      "missing_target": "uru_dash_nt3",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+          "line": 14776,
+          "kind": "link_or_property",
+          "raw": "next3 = uru_dash_nt1,uru_dash_nt3"
+        }
+      ]
+    },
+    {
+      "missing_target": "car_dead_nt8",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/30_スキル/F31_死亡時エフェクト.dat",
+          "line": 2265,
+          "kind": "link_or_property",
+          "raw": "next3 = sayonara_nt14_2,sayonara_nt14_3,car_dead_nt8"
+        }
+      ]
+    },
+    {
+      "missing_target": "hns_ganban_nt9",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_必殺_16_20_ALC一派～VVAN.dat",
+          "line": 552,
+          "kind": "link_or_property",
+          "raw": "next3 = sp_hns_act4_nt5,hns_ganban_nt6,hns_ganban_nt8,hns_ganban_nt9,sp_hns_kamahaeru_joi"
+        }
+      ]
+    },
+    {
+      "missing_target": "sp_star_dream_masupa_nt6",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+          "line": 6503,
+          "kind": "link_or_property",
+          "raw": "next3 = sp_star_dream_masupa_nt1, sp_star_dream_masupa_nt2, sp_star_dream_masupa_nt3, sp_star_dream_masupa_nt4, sp_star_dream_masupa_nt5, sp_star_dream_masupa_n"
+        }
+      ]
+    },
+    {
+      "missing_target": "ef_yari1",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+          "line": 3168,
+          "kind": "link_or_property",
+          "raw": "next = ef_yari1"
+        }
+      ]
+    },
+    {
+      "missing_target": "eff_sp_abesan_nt3_2c",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+          "line": 2349,
+          "kind": "link_or_property",
+          "raw": "next = eff_sp_abesan_nt3_2c"
+        }
+      ]
+    },
+    {
+      "missing_target": "rfire_cannon_pr2b",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/30_スキル/F20_summon.dat",
+          "line": 13098,
+          "kind": "link_or_property",
+          "raw": "next = rfire_cannon_pr2b"
+        }
+      ]
+    },
+    {
+      "missing_target": "sake_oraora_sound",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+          "line": 13578,
+          "kind": "link_or_property",
+          "raw": "next3 = sake_oraora_nt1_left,sake_oraora_sound"
+        }
+      ]
+    },
+    {
+      "missing_target": "hermit_whip_js",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/30_スキル/F10_missile_鞭.dat",
+          "line": 170,
+          "kind": "link_or_property",
+          "raw": "just_next = hermit_whip_js"
+        }
+      ]
+    },
+    {
+      "missing_target": "sake_heaven_sec1919_left",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+          "line": 14241,
+          "kind": "link_or_property",
+          "raw": "next3 = sake_heaven_sec1_left,sake_heaven_sec1919_left,sake_heaven_sound2"
+        }
+      ]
+    },
+    {
+      "missing_target": "ssrn_kidan_nt3",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+          "line": 3007,
+          "kind": "link_or_property",
+          "raw": "just_next = ssrn_kidan_nt1,ssrn_kidan_nt2,ssrn_kidan_nt7,ssrn_kidan_nt7_1,ssrn_kidan_nt3,ssrn_kidan_nt4"
+        }
+      ]
+    },
+    {
+      "missing_target": "ef_ssrmla_yari0",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/8000_RTSシナリオ/RTSskill.dat",
+          "line": 994,
+          "kind": "link_or_property",
+          "raw": "next3 = rtsrmlach_js,rtsrmlach_jsb,rtsrmlach_js2,ef_ch,rtsrmlach_js3,ef_ssrmla_yari0"
+        }
+      ]
+    },
+    {
+      "missing_target": "k_cannon_nt2",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+          "line": 1068,
+          "kind": "link_or_property",
+          "raw": "next3 = k_cannon_nt0,k_cannon_nt1,k_cannon_nt2,k_cannon_nt4"
+        }
+      ]
+    },
+    {
+      "missing_target": "febfeb_beam_pr2",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+          "line": 7997,
+          "kind": "link_or_property",
+          "raw": "next3 = februar_beam_nt2,febfeb_beam_pr2,febfeb_beam_pr3"
+        }
+      ]
+    },
+    {
+      "missing_target": "ssrmla_yari_pr",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/8000_RTSシナリオ/RTSskill.dat",
+          "line": 1045,
+          "kind": "link_or_property",
+          "raw": "next3 = rtsrmlach_nt,rtsrmlach_kage,ssrmla_yari_pr"
+        }
+      ]
+    },
+    {
+      "missing_target": "sp_cookie_kiss_pr0",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+          "line": 3865,
+          "kind": "link_or_property",
+          "raw": "pair_next = sp_cookie_kiss_pr0"
+        }
+      ]
+    },
+    {
+      "missing_target": "ef_rpgzan",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/2023_イベント_リュージ騎士団/event_23_RPG.dat",
+          "line": 16233,
+          "kind": "link_or_property",
+          "raw": "next = ef_rpgzan"
+        }
+      ]
+    },
+    {
+      "missing_target": "sp_icg_bomb0",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+          "line": 306,
+          "kind": "link_or_property",
+          "raw": "next = sp_icg_bomb0"
+        }
+      ]
+    },
+    {
+      "missing_target": "k_cannon_nt7_nt2",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+          "line": 1165,
+          "kind": "link_or_property",
+          "raw": "next3 = k_cannon_nt7_nt1,k_cannon_nt7_nt2"
+        }
+      ]
+    },
+    {
+      "missing_target": "sakenomiga_misairu_pr0",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+          "line": 12531,
+          "kind": "link_or_property",
+          "raw": "pair_next = sakenomiga_misairu_pr0"
+        }
+      ]
+    },
+    {
+      "missing_target": "ele_whip_js",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_2222_レイノアレフ.dat",
+          "line": 1281,
+          "kind": "link_or_property",
+          "raw": "just_next = ele_whip_js"
+        }
+      ]
+    },
+    {
+      "missing_target": "ssrn_sw_weak_ef_smoke",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+          "line": 4244,
+          "kind": "link_or_property",
+          "raw": "pair_next = ssrn_sw_weak_ef_smoke"
+        }
+      ]
+    },
+    {
+      "missing_target": "sp_star_dream_masupa_nt5",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+          "line": 6503,
+          "kind": "link_or_property",
+          "raw": "next3 = sp_star_dream_masupa_nt1, sp_star_dream_masupa_nt2, sp_star_dream_masupa_nt3, sp_star_dream_masupa_nt4, sp_star_dream_masupa_nt5, sp_star_dream_masupa_n"
+        }
+      ]
+    },
+    {
+      "missing_target": "sp_udk_pr1",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/30_スキル/F60_マスタースパーク.dat",
+          "line": 164,
+          "kind": "link_or_property",
+          "raw": "next3 = masu3_pr1,masu3_pr2,masu3_so,masu3_pr3,sp_udk_pr1"
+        }
+      ]
+    },
+    {
+      "missing_target": "asasin_cream_protect_ability",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/33_仮設アサシン/skill_asasin_00.dat",
+          "line": 356,
+          "kind": "link_or_property",
+          "raw": "next3 = pr_asasin_cream_protect_Eff_C , asasin_cream_protect_ability"
+        }
+      ]
+    },
+    {
+      "missing_target": "mcy_grenade_pr3",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+          "line": 11076,
+          "kind": "link_or_property",
+          "raw": "next3 = mcy_grenade_pr1,mcy_grenade_pr2,mcy_grenade_pr3"
+        }
+      ]
+    },
+    {
+      "missing_target": "kankure_ora_pr0",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_5_伏見稲荷大社.dat",
+          "line": 1186,
+          "kind": "link_or_property",
+          "raw": "pair_next = kankure_ora_pr0"
+        }
+      ]
+    },
+    {
+      "missing_target": "dsnch1_js",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/30_スキル/F11_sword.dat",
+          "line": 5133,
+          "kind": "link_or_property",
+          "raw": "next3 = dsnch1,dsnch1_js"
+        }
+      ]
+    },
+    {
+      "missing_target": "snnm_beam_nt5",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+          "line": 2426,
+          "kind": "link_or_property",
+          "raw": "next3 = snnm_beam_nt1, snnm_beam_nt2, snnm_beam_nt3, snnm_beam_nt4, snnm_beam_nt5, snnm_beam_nt6"
+        }
+      ]
+    },
+    {
+      "missing_target": "u23_masupa5_nt6",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+          "line": 2738,
+          "kind": "link_or_property",
+          "raw": "next3 = u23_masupa5_nt1, u23_masupa5_nt2, u23_masupa5_nt3, u23_masupa5_nt4, u23_masupa5_nt5, u23_masupa5_nt6, u23_masupa5_nt1_b"
+        }
+      ]
+    },
+    {
+      "missing_target": "ef_hzn_zan",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+          "line": 3255,
+          "kind": "link_or_property",
+          "raw": "next = ef_hzn_zan"
+        }
+      ]
+    },
+    {
+      "missing_target": "ssrn_sw_ef_smoke",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+          "line": 3744,
+          "kind": "link_or_property",
+          "raw": "pair_next = ssrn_sw_ef_smoke"
+        }
+      ]
+    },
+    {
+      "missing_target": "ingo_oldset_a",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat",
+          "line": 2537,
+          "kind": "link_or_property",
+          "raw": "next2 = ingo_oldset_a"
+        }
+      ]
+    },
+    {
+      "missing_target": "sp_icg_pr3",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+          "line": 335,
+          "kind": "link_or_property",
+          "raw": "next3 = sp_icg_pr1,sp_icg_pr2,sp_icg_pr3"
+        }
+      ]
+    },
+    {
+      "missing_target": "whip_js",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/30_スキル/F20_summon.dat",
+          "line": 7647,
+          "kind": "link_or_property",
+          "raw": "just_next = whip_js"
+        }
+      ]
+    },
+    {
+      "missing_target": "monzetsu_fire_ensyou_eff_fake_at",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/30_スキル/F50_延焼_究極悶絶少年.dat",
+          "line": 306,
+          "kind": "link_or_property",
+          "raw": "next3 = monzetsu_fire_ensyou_eff_fake_at, monzetsu_fire_ensyou_mag"
+        }
+      ]
+    },
+    {
+      "missing_target": "sp_clown_luna_pr0",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+          "line": 1733,
+          "kind": "link_or_property",
+          "raw": "pair_next = sp_clown_luna_pr0"
+        }
+      ]
+    },
+    {
+      "missing_target": "dmcabiim_nt1c",
+      "references": 1,
+      "site_kinds": {
+        "link_or_property": 1
+      },
+      "examples": [
+        {
+          "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+          "line": 1005,
+          "kind": "link_or_property",
+          "raw": "next3=dmcabiim_nt1,dmcabiim_nt1b,dmcabiim_nt1c,dmcabiim_nt2,dmcabiim_nt4,dmcabiim_nt4c,dmcabiim_kn"
+        }
+      ]
+    }
+  ],
+  "undeclared_parent_tags": [
+    "Shakespeare_fire_at",
+    "aqua_times_pr1",
+    "asasin_cream_weapon_grove_base",
+    "astk_kirakira_pr",
+    "demo_range1",
+    "giant_swing_CountAXX_base",
+    "giant_swing_CountBXX_base",
+    "hanzo_cream_weapon_grove_base",
+    "hqreifretei",
+    "m_ligh_js",
+    "re_cannon_nt1",
+    "re_cannon_nt3",
+    "rmla_yari_pr",
+    "rtstocsam",
+    "rtstocsamsp5",
+    "s_defbar_nt2",
+    "s_defbar_nt3",
+    "sing_mprec",
+    "sk_ns",
+    "sp_nannkasugoino",
+    "ss_rmla_yari_pr",
+    "stove_fire_at",
+    "summon_togashi_base",
+    "tusk_gun_kn",
+    "watecannon_pr1",
+    "watecannon_w_pr1"
+  ],
+  "method": "comment-stripped CP932 original script; includes script declarations and any active text",
+  "warning": "lexical reference counts do not imply runtime activation or valid execution"
+}

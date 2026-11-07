@@ -1,0 +1,147 @@
+{
+  "sources": [
+    {
+      "result_name": "support_flash",
+      "sha256": "3ad9bccc8d915a3c552e084a8571cd1e6c3211e82cb60064c7db76073ba17f8e",
+      "playable": false,
+      "golden": 0,
+      "strict": 0,
+      "traces": {
+        "ai_support_flash_continuation": {
+          "next_va": 5577889,
+          "callee_va": null,
+          "return_pc": null,
+          "blocked": true,
+          "skill_pointer": 7,
+          "target_pointer": 2,
+          "record_pointer": 12000,
+          "counter_after": null,
+          "missing_offsets": [
+            1776
+          ],
+          "flash": 5
+        },
+        "ai_support_award_continuation": {
+          "next_va": 5577855,
+          "return_pc": 5577839,
+          "blocked": true,
+          "skill_pointer": 7,
+          "target_pointer": 2,
+          "record_pointer": 12000
+        },
+        "task_continuation": {},
+        "execution_status": "VERIFY",
+        "verify": {
+          "length": 36,
+          "sample": [
+            "4C28D0 normal Unit virtual dispatch/order/compaction/pending merge connected; explicit fixed manager gates and successful allocation; other Task types, host cadence, unfinished child resume and whole battle AI remain VERIFY",
+            "4C22B0 unregister vectors connected; successful host allocation assumed;4C24B0 scheduling/deferred destruction and575DF0 graph caller remain VERIFY"
+          ]
+        }
+      }
+    },
+    {
+      "result_name": "support_hp_post",
+      "sha256": "84809669277d740259a2a6eac0bc977af483689763c23d08eb08e06968e75d0f",
+      "playable": false,
+      "golden": 0,
+      "strict": 0,
+      "traces": {
+        "ai_support_flash_continuation": {
+          "next_va": 5577970,
+          "callee_va": null,
+          "return_pc": null,
+          "blocked": true,
+          "skill_pointer": 7,
+          "target_pointer": 2,
+          "record_pointer": 12000,
+          "counter_after": null,
+          "missing_offsets": [],
+          "flash": 5
+        },
+        "ai_support_hp_post_continuation": {
+          "next_va": 5578048,
+          "callee_va": 5730560,
+          "return_pc": 5577987,
+          "blocked": true,
+          "skill_pointer": 7,
+          "target_pointer": 2,
+          "record_pointer": 12000,
+          "counter_after": 1084,
+          "attribute_index": 0,
+          "amount": 1084,
+          "runtime_fpu_unverified": true
+        },
+        "ai_support_award_continuation": {
+          "next_va": 5577855,
+          "return_pc": 5577839,
+          "blocked": true,
+          "skill_pointer": 7,
+          "target_pointer": 2,
+          "record_pointer": 12000
+        },
+        "task_continuation": {},
+        "execution_status": "VERIFY",
+        "verify": {
+          "length": 37,
+          "sample": [
+            "4C28D0 normal Unit virtual dispatch/order/compaction/pending merge connected; explicit fixed manager gates and successful allocation; other Task types, host cadence, unfinished child resume and whole battle AI remain VERIFY",
+            "4C22B0 unregister vectors connected; successful host allocation assumed;4C24B0 scheduling/deferred destruction and575DF0 graph caller remain VERIFY"
+          ]
+        }
+      }
+    },
+    {
+      "result_name": "support_core_return",
+      "sha256": "22f10b0265fe4d6a301b8363a24c483365c2ee1112d53c34cabae6fc750cebdd",
+      "playable": false,
+      "golden": 0,
+      "strict": 0,
+      "traces": {
+        "ai_support_flash_continuation": {
+          "next_va": 5577970,
+          "callee_va": null,
+          "return_pc": null,
+          "blocked": true,
+          "skill_pointer": 7,
+          "target_pointer": 2,
+          "record_pointer": 12000,
+          "counter_after": null,
+          "missing_offsets": [],
+          "flash": 5
+        },
+        "ai_support_hp_post_continuation": {
+          "next_va": 5578048,
+          "callee_va": 5730560,
+          "return_pc": 5577987,
+          "blocked": true,
+          "skill_pointer": 7,
+          "target_pointer": 2,
+          "record_pointer": 12000,
+          "counter_after": 1084,
+          "attribute_index": 0,
+          "amount": 1084,
+          "runtime_fpu_unverified": true
+        },
+        "ai_support_award_continuation": {
+          "next_va": 5577855,
+          "return_pc": 5577839,
+          "blocked": true,
+          "skill_pointer": 7,
+          "target_pointer": 2,
+          "record_pointer": 12000
+        },
+        "task_continuation": {},
+        "execution_status": "VERIFY",
+        "verify": {
+          "length": 38,
+          "sample": [
+            "4C28D0 normal Unit virtual dispatch/order/compaction/pending merge connected; explicit fixed manager gates and successful allocation; other Task types, host cadence, unfinished child resume and whole battle AI remain VERIFY",
+            "4C22B0 unregister vectors connected; successful host allocation assumed;4C24B0 scheduling/deferred destruction and575DF0 graph caller remain VERIFY"
+          ]
+        }
+      }
+    }
+  ],
+  "status": "READ_ONLY_SNAPSHOT"
+}

@@ -1,0 +1,4 @@
+role	path	sha256	bytes	notes
+APPROVED_SELECTION	private-approved-selection/hakushin-json_wiki1-approved.tsv	dd3fc52d7871455aecd1661829a3a75424f66438cc73c1405122133c74e070bc	8430	60 exact literals,8464466 historical bytes
+BASELINE_LEDGER	research/recovered/RECOVERY_LEDGER.tsv	c87eec223543ae5356e6cfa64b8f1a20282d41acac681398234d72eb0f2c4eff	1478909	2069 fixed Git baseline rows; source/destination SHA dedup no matches; within-batch SHA all unique
+CURRENT_ALIAS_LEDGER	research/recovered/RECOVERY_LEDGER.tsv	020c009035ea2ca06f85b8482f014a65c0fe8cccc1911f908fc020edfa44abfd	1479861	2070 current rows; exact2069 baseline byte prefix preserved; source/destination SHA lookup only, no matches

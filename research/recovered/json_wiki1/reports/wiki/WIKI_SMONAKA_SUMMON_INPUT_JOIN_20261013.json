@@ -1,0 +1,248 @@
+{
+  "status": "SOURCE EXPLICIT + WORK PARSER; SUMMON GAMEPLAY NOT RUN",
+  "skill": "s_monaka",
+  "source_file": "a_default/script/30_スキル/F20_summon.dat",
+  "source_line": 1596,
+  "check": 9999,
+  "range": 100,
+  "mp": 40,
+  "add2_storage": "keyword_list",
+  "candidate_list_raw": [
+    "mona0071",
+    "mona0072"
+  ],
+  "candidate_declared": {
+    "all": [
+      {
+        "tag": "mona0071",
+        "kind": "class",
+        "path": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 1626,
+        "header": "class mona0071 : base"
+      },
+      {
+        "tag": "mona0072",
+        "kind": "class",
+        "path": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 1665,
+        "header": "class mona0072 : mona0071"
+      }
+    ],
+    "by_target": {
+      "mona0071": [
+        {
+          "tag": "mona0071",
+          "kind": "class",
+          "path": "a_default/script/30_スキル/F20_summon.dat",
+          "line": 1626,
+          "header": "class mona0071 : base"
+        }
+      ],
+      "mona0072": [
+        {
+          "tag": "mona0072",
+          "kind": "class",
+          "path": "a_default/script/30_スキル/F20_summon.dat",
+          "line": 1665,
+          "header": "class mona0072 : mona0071"
+        }
+      ]
+    }
+  },
+  "unit_class_grants": [
+    {
+      "owner": "class:a219",
+      "source": "a_default/script/20_クラス/21_23_材料屋_HSI_リュージ.dat",
+      "line": 220,
+      "field": "skill"
+    },
+    {
+      "owner": "class:a2192",
+      "source": "a_default/script/20_クラス/21_23_材料屋_HSI_リュージ.dat",
+      "line": 260,
+      "field": "skill"
+    },
+    {
+      "owner": "class:a2193",
+      "source": "a_default/script/20_クラス/21_23_材料屋_HSI_リュージ.dat",
+      "line": 274,
+      "field": "skill"
+    }
+  ],
+  "active_text_mentions": [
+    {
+      "path": "a_default/script/10_ユニット/21_お菓子作りの材料屋さん.dat",
+      "line": 22,
+      "raw": "skill = sp_nyn,ps_hp2,ps_at,ps_mv,ps_hr,ps_gn,sp_nyn_summon,s_monaka_senyo,egg_cannon,pes_sikihendo"
+    },
+    {
+      "path": "a_default/script/10_ユニット/21_お菓子作りの材料屋さん.dat",
+      "line": 106,
+      "raw": "delskill = s_monaka_senyo,egg_cannon"
+    },
+    {
+      "path": "a_default/script/10_ユニット/21_お菓子作りの材料屋さん.dat",
+      "line": 119,
+      "raw": "delskill = s_monaka_senyo,egg_cannon"
+    },
+    {
+      "path": "a_default/script/10_ユニット/21_お菓子作りの材料屋さん.dat",
+      "line": 132,
+      "raw": "delskill = s_monaka_senyo,egg_cannon"
+    },
+    {
+      "path": "a_default/script/20_クラス/21_23_材料屋_HSI_リュージ.dat",
+      "line": 231,
+      "raw": "skill = s_monaka,b_all,seiretsu,km_heal1,km_heal2,pes_knock,c_sp1"
+    },
+    {
+      "path": "a_default/script/20_クラス/21_23_材料屋_HSI_リュージ.dat",
+      "line": 270,
+      "raw": "skill = s_monaka,b_all,seiretsu,km_heal1,km_heal2,pes_knock,c_sp2"
+    },
+    {
+      "path": "a_default/script/20_クラス/21_23_材料屋_HSI_リュージ.dat",
+      "line": 285,
+      "raw": "skill = s_monaka,b_all,seiretsu,pes_knock,km_heal1,km_heal2,c_sp3"
+    },
+    {
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 1588,
+      "raw": "skill s_monaka_senyo:s_monaka"
+    },
+    {
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "line": 1596,
+      "raw": "skill s_monaka"
+    },
+    {
+      "path": "a_default/script/4000_AoW/class_aow.dat",
+      "line": 1,
+      "raw": "class class_monaka:a117"
+    },
+    {
+      "path": "a_default/script/4000_AoW/class_aow.dat",
+      "line": 6,
+      "raw": "fkey = class_monaka"
+    },
+    {
+      "path": "a_default/script/4000_AoW/class_aow.dat",
+      "line": 10,
+      "raw": "change = class_monaka2 * 15"
+    },
+    {
+      "path": "a_default/script/4000_AoW/class_aow.dat",
+      "line": 12,
+      "raw": "class class_monaka2:a1172"
+    },
+    {
+      "path": "a_default/script/4000_AoW/class_aow.dat",
+      "line": 17,
+      "raw": "fkey = class_monaka"
+    },
+    {
+      "path": "a_default/script/4000_AoW/class_aow.dat",
+      "line": 21,
+      "raw": "change = class_monaka3 * 15"
+    },
+    {
+      "path": "a_default/script/4000_AoW/class_aow.dat",
+      "line": 23,
+      "raw": "class class_monaka3:a1173"
+    },
+    {
+      "path": "a_default/script/4000_AoW/class_aow.dat",
+      "line": 28,
+      "raw": "fkey = class_monaka"
+    },
+    {
+      "path": "a_default/script/4000_AoW/unit_aow_100.dat",
+      "line": 105,
+      "raw": "class = class_monaka3"
+    },
+    {
+      "path": "a_default/script/4000_AoW/unit_aow_100.dat",
+      "line": 107,
+      "raw": "member = class_monaka2*13,class_monaka*10,class_monacar*6"
+    },
+    {
+      "path": "a_default/script/4000_AoW/unit_aow_100.dat",
+      "line": 136,
+      "raw": "class = class_monaka3"
+    },
+    {
+      "path": "a_default/script/4000_AoW/unit_aow_100.dat",
+      "line": 164,
+      "raw": "member = a2202*5,a2242*12,class_monaka2*6"
+    },
+    {
+      "path": "a_default/script/4000_AoW/unit_aow_100.dat",
+      "line": 176,
+      "raw": "class = class_monaka3"
+    },
+    {
+      "path": "a_default/script/4000_AoW/unit_aow_100.dat",
+      "line": 185,
+      "raw": "member = class_monaka2*15,a2242*16"
+    },
+    {
+      "path": "a_default/script/4000_AoW/unit_aow_100.dat",
+      "line": 259,
+      "raw": "class = class_monaka3"
+    },
+    {
+      "path": "a_default/script/40_内政/CC_chara_create.dat",
+      "line": 379,
+      "raw": "member = s_a010,s_goeinomi,s_monaka,s_fuwausa,s_milk,s_yusakuhati,s_tsuri,s_musi,s_kbs_a,s_kbs_b,s_renown,s_tomeigirl"
+    },
+    {
+      "path": "a_default/script/40_内政/graphic_change.dat",
+      "line": 409,
+      "raw": "addSkill(nyn,s_monaka_senyo,egg_cannon)"
+    },
+    {
+      "path": "a_default/script/40_内政/graphic_change.dat",
+      "line": 438,
+      "raw": "eraseSkill(nyn,s_monaka_senyo,egg_cannon)"
+    },
+    {
+      "path": "a_default/script/8000_RTSシナリオ/RTSclass.dat",
+      "line": 131,
+      "raw": "skill = s_monaka_rts,b_all,seiretsu,pes_knock,hn_mg,hn_sm,self_a2192rts"
+    },
+    {
+      "path": "a_default/script/8000_RTSシナリオ/RTSclass.dat",
+      "line": 135,
+      "raw": "skill = s_monaka_rts,b_all,seiretsu,pes_knock,hn_mg,hn_sm"
+    },
+    {
+      "path": "a_default/script/8000_RTSシナリオ/RTSclass.dat",
+      "line": 150,
+      "raw": "skill s_monaka_rts : s_monaka"
+    },
+    {
+      "path": "a_default/script/8000_RTSシナリオ/RTSsummon.dat",
+      "line": 2725,
+      "raw": "skill = s_monaka_rts,b_all,seiretsu,pes_knock,c_sp2"
+    }
+  ],
+  "native_existing_contract": {
+    "handler_va": "0x57F190",
+    "core_va": "0x54E7B0",
+    "target_selection_key_direct": "Skill+0x14C",
+    "target_selection_vector": "Skill+0x158/+0x15C",
+    "selected_index_override": "Skill+0x270",
+    "effect_factory_va": "0x550580",
+    "owner_constructor_va": "0x56F880",
+    "core_normal_return_va": "0x54F458"
+  },
+  "unresolved": [
+    "DAT add2 list -> Skill+158 vector native constructor exact field mapping",
+    "candidate prefab target mode Unit vs Class vs Skill runtime",
+    "Skill+270 producer/branch actual value",
+    "native Unit ownership, MP charge, effects/Task and normal result",
+    "old native legal battle and strict new match"
+  ],
+  "original_gameplay_golden": 0,
+  "new_strict_match": 0
+}

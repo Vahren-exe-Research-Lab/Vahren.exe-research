@@ -1,0 +1,40 @@
+{
+  "id": "BRIDGE-20261021-STAGE7-SYNTHETIC-CAPTURE",
+  "source_type": "SYNTHETIC_MOCKED_NATIVE_MEMORY_ONLY",
+  "sample_sha256": "9E9086CB1A0165E5A9FD640A9544A5ECF93F2616FC3E3206029FF91A9D29CD82",
+  "sample_bytes": 5609,
+  "tasks": {
+    "active": [
+      {
+        "task_ptr": "0x10000000",
+        "vtable_ptr": "0x0FD7BEDC",
+        "type": "GameEvent",
+        "native_update_eligible": false
+      },
+      {
+        "task_ptr": "0x30001000",
+        "vtable_ptr": "0x0FD7C1F0",
+        "type": "Unit",
+        "native_update_eligible": false
+      }
+    ],
+    "pending": []
+  },
+  "guard_stable_but_non_atomic": true,
+  "attack_map_entries": 1,
+  "help_map_entries": 1,
+  "side_unit_counts": [
+    2,
+    1,
+    0
+  ],
+  "side_troop_counts": [
+    1,
+    1,
+    0
+  ],
+  "aslr_delta": 259266572,
+  "actual_original_game_captured": false,
+  "work_transfer_gate_status": "NO_CHANGE",
+  "notice": "Synthetic sample, NOT a real original-game battle packet or native strategy commit."
+}

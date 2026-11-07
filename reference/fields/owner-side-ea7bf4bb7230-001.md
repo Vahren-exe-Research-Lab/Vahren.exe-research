@@ -4,8 +4,17 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-38"></a>
+## side + 0x38
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_SIDE_LIFECYCLE_20261021.json 行 30](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_SIDE_LIFECYCLE_20261021.json?plain=1#L30-L30) — "runtime_troop_vector": "side +0x38 begin/+0x3c end (requires real snapshot)",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
 <a id="field-48"></a>
 ## side + 0x48
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_SIDE_LIFECYCLE_20261021.json 行 31](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_SIDE_LIFECYCLE_20261021.json?plain=1#L31-L31) — "runtime_unit_vector": "side +0x48 begin/+0x4c end (used also by outcome 0x514C80)"
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
 
 - [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 550](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L550-L550) — [2v2 SOURCE AND RESTRICTIONS] 原作正規化RTSscenario.dat:639-653（1v1）/928-948（2v2）でisAllDead(rtsplayer2)と(rtsplayer1)を順に検査し、3/4の名前を直接指定しないことは既知。helper side+0x48..+0x4
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched

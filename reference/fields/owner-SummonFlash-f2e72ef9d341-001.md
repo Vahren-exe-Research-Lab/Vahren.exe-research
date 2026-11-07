@@ -16,6 +16,12 @@
 - [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 767](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L767-L767) — [CORRECTION] 13Hの未解明EBXは召喚親Unit直接ではなくSummonFlash効果文脈。参照の伝播は S+0xC→SummonFlash+0xC→child+0xC。これは召喚親の一意識別情報を証明しない。元PE E8 site3/3一致、RTTI/静的vtable照合。詳細 data/T011_SU
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 
+<a id="field-78"></a>
+## SummonFlash + 0x78
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_STAGE12_GROWTH_CONSISTENCY_ANALYSIS_20261022.json 行 1439](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_STAGE12_GROWTH_CONSISTENCY_ANALYSIS_20261022.json?plain=1#L1439-L1439) — "effect_relation": "RTTI SummonFlash+0x78 Skill, +0x7C source Unit and +0x80 created Unit, with bounds and vtable checks.",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
 <a id="field-7c"></a>
 ## SummonFlash + 0x7C
 

@@ -1,0 +1,1036 @@
+[
+  {
+    "label": "v701",
+    "zip": "[USER_HOME]\\Documents\\迫真戦記\\Vahren701.zip",
+    "entry": "Vahren/Vahren.exe",
+    "sha256": "7813d61efd3be03cb838c54098b5dd7b162e0ec8e4375bc9e6b07c8a0236ce4f",
+    "results": [
+      {
+        "class": "ScriptBattle",
+        "found": true,
+        "type_desc_va": 7042160,
+        "name_va": 7042168,
+        "cols": [
+          {
+            "col_va": 6563376,
+            "offset": 0,
+            "cdOffset": 0,
+            "class_hierarchy": 6563416,
+            "vtables": [
+              {
+                "vtable_va": 6541456,
+                "methods": [
+                  4289440
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "class": "ScriptBlock",
+        "found": true,
+        "type_desc_va": 7041792,
+        "name_va": 7041800,
+        "cols": [
+          {
+            "col_va": 6561836,
+            "offset": 1,
+            "cdOffset": 6561932,
+            "class_hierarchy": 1,
+            "vtables": []
+          },
+          {
+            "col_va": 6561956,
+            "offset": 0,
+            "cdOffset": 0,
+            "class_hierarchy": 6561876,
+            "vtables": [
+              {
+                "vtable_va": 6540436,
+                "methods": [
+                  4289440
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "class": "ScriptData",
+        "found": true,
+        "type_desc_va": 7041764,
+        "name_va": 7041772,
+        "cols": [
+          {
+            "col_va": 6561800,
+            "offset": 0,
+            "cdOffset": 0,
+            "class_hierarchy": 6561940,
+            "vtables": [
+              {
+                "vtable_va": 6540460,
+                "methods": [
+                  4289440
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "class": "ScriptElement",
+        "found": true,
+        "type_desc_va": 7041504,
+        "name_va": 7041512,
+        "cols": [
+          {
+            "col_va": 6561964,
+            "offset": 7041792,
+            "cdOffset": 6561876,
+            "class_hierarchy": 0,
+            "vtables": []
+          }
+        ]
+      },
+      {
+        "class": "ScriptFunc",
+        "found": true,
+        "type_desc_va": 7041312,
+        "name_va": 7041320,
+        "cols": [
+          {
+            "col_va": 6563240,
+            "offset": 0,
+            "cdOffset": 0,
+            "class_hierarchy": 6563320,
+            "vtables": [
+              {
+                "vtable_va": 6541448,
+                "methods": [
+                  4289440
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "class": "ScriptIF",
+        "found": true,
+        "type_desc_va": 7042188,
+        "name_va": 7042196,
+        "cols": [
+          {
+            "col_va": 6564832,
+            "offset": 0,
+            "cdOffset": 0,
+            "class_hierarchy": 6564904,
+            "vtables": [
+              {
+                "vtable_va": 6542196,
+                "methods": [
+                  4289440
+                ]
+              }
+            ]
+          },
+          {
+            "col_va": 6565140,
+            "offset": 64,
+            "cdOffset": 6565040,
+            "class_hierarchy": 1,
+            "vtables": []
+          }
+        ]
+      },
+      {
+        "class": "ScriptSet",
+        "found": true,
+        "type_desc_va": 7041820,
+        "name_va": 7041828,
+        "cols": [
+          {
+            "col_va": 6562004,
+            "offset": 0,
+            "cdOffset": 0,
+            "class_hierarchy": 6562024,
+            "vtables": [
+              {
+                "vtable_va": 6540468,
+                "methods": [
+                  4289440
+                ]
+              }
+            ]
+          },
+          {
+            "col_va": 6562028,
+            "offset": 2,
+            "cdOffset": 6562068,
+            "class_hierarchy": 1,
+            "vtables": []
+          }
+        ]
+      },
+      {
+        "class": "ScriptWhile",
+        "found": true,
+        "type_desc_va": 7042240,
+        "name_va": 7042248,
+        "cols": [
+          {
+            "col_va": 6565104,
+            "offset": 0,
+            "cdOffset": 0,
+            "class_hierarchy": 6564920,
+            "vtables": [
+              {
+                "vtable_va": 6542096,
+                "methods": [
+                  4289440
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "class": "OggDecoder",
+        "found": true,
+        "type_desc_va": 7042676,
+        "name_va": 7042684,
+        "cols": [
+          {
+            "col_va": 6564696,
+            "offset": 1,
+            "cdOffset": 6564672,
+            "class_hierarchy": 1,
+            "vtables": []
+          },
+          {
+            "col_va": 6564736,
+            "offset": 0,
+            "cdOffset": 0,
+            "class_hierarchy": 6564784,
+            "vtables": [
+              {
+                "vtable_va": 6542048,
+                "methods": [
+                  5067648,
+                  5067792,
+                  5068080,
+                  5068128,
+                  5067696
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "class": "PCMDecoder",
+        "found": true,
+        "type_desc_va": 7042704,
+        "name_va": 7042712,
+        "cols": [
+          {
+            "col_va": 6564744,
+            "offset": 7042676,
+            "cdOffset": 6564784,
+            "class_hierarchy": 0,
+            "vtables": []
+          },
+          {
+            "col_va": 6564800,
+            "offset": 0,
+            "cdOffset": 0,
+            "class_hierarchy": 6564692,
+            "vtables": [
+              {
+                "vtable_va": 6542072,
+                "methods": [
+                  5068240,
+                  6059391,
+                  6059391,
+                  6059391,
+                  5068288
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "class": "SaveWnd",
+        "found": true,
+        "type_desc_va": 7043376,
+        "name_va": 7043384,
+        "cols": [
+          {
+            "col_va": 6567936,
+            "offset": 0,
+            "cdOffset": 0,
+            "class_hierarchy": 6567120,
+            "vtables": [
+              {
+                "vtable_va": 6543680,
+                "methods": [
+                  5155952,
+                  4292944,
+                  4289536,
+                  5780864,
+                  5781424,
+                  5780768,
+                  5780832,
+                  4289472,
+                  5154000,
+                  5780912,
+                  5792656,
+                  5794224,
+                  5794528,
+                  5794576,
+                  5794592,
+                  5957424,
+                  5957664,
+                  5959552,
+                  5839872,
+                  4289600,
+                  4289456
+                ]
+              }
+            ]
+          },
+          {
+            "col_va": 6568020,
+            "offset": 40,
+            "cdOffset": 0,
+            "class_hierarchy": 6567120,
+            "vtables": [
+              {
+                "vtable_va": 6545104,
+                "methods": [
+                  5179858,
+                  5781648,
+                  4289456,
+                  4289456,
+                  4289456,
+                  4289472
+                ]
+              }
+            ]
+          },
+          {
+            "col_va": 6569348,
+            "offset": 7043116,
+            "cdOffset": 6569416,
+            "class_hierarchy": 5,
+            "vtables": []
+          }
+        ]
+      },
+      {
+        "class": "LoadWnd",
+        "found": true,
+        "type_desc_va": 7043704,
+        "name_va": 7043712,
+        "cols": [
+          {
+            "col_va": 6566092,
+            "offset": 0,
+            "cdOffset": 0,
+            "class_hierarchy": 6566916,
+            "vtables": [
+              {
+                "vtable_va": 6545456,
+                "methods": [
+                  5156080,
+                  4292944,
+                  4289536,
+                  5780864,
+                  5781424,
+                  5780768,
+                  5780832,
+                  4289472,
+                  5154000,
+                  5780912,
+                  5792656,
+                  5794224,
+                  5794528,
+                  5794576,
+                  5794592,
+                  5838576,
+                  5838816,
+                  5839472,
+                  5839872,
+                  4289600,
+                  4289456
+                ]
+              }
+            ]
+          },
+          {
+            "col_va": 6570712,
+            "offset": 40,
+            "cdOffset": 0,
+            "class_hierarchy": 6566916,
+            "vtables": [
+              {
+                "vtable_va": 6544392,
+                "methods": [
+                  5179874,
+                  5781648,
+                  4289456,
+                  4289456,
+                  4289456,
+                  4289472
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "class": "SelectWnd",
+        "found": false
+      },
+      {
+        "class": "ScenarioSelectWnd",
+        "found": true,
+        "type_desc_va": 7043164,
+        "name_va": 7043172,
+        "cols": [
+          {
+            "col_va": 6567152,
+            "offset": 0,
+            "cdOffset": 0,
+            "class_hierarchy": 6569756,
+            "vtables": [
+              {
+                "vtable_va": 6547408,
+                "methods": [
+                  5158400,
+                  4292944,
+                  4289536,
+                  5780864,
+                  5781424,
+                  5780768,
+                  5780832,
+                  4289472,
+                  5154000,
+                  5780912,
+                  5792656,
+                  5794224,
+                  5794528,
+                  5794576,
+                  5794592,
+                  5964880,
+                  5965104,
+                  5965472,
+                  5779888,
+                  4289600,
+                  4289456
+                ]
+              }
+            ]
+          },
+          {
+            "col_va": 6567460,
+            "offset": 7043580,
+            "cdOffset": 6568900,
+            "class_hierarchy": 5,
+            "vtables": []
+          },
+          {
+            "col_va": 6568772,
+            "offset": 40,
+            "cdOffset": 0,
+            "class_hierarchy": 6569756,
+            "vtables": [
+              {
+                "vtable_va": 6547052,
+                "methods": [
+                  5179674,
+                  5781648,
+                  4289456,
+                  4289456,
+                  4289456,
+                  4289472
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "class": "GameWindow",
+        "found": true,
+        "type_desc_va": 7042592,
+        "name_va": 7042600,
+        "cols": [
+          {
+            "col_va": 6564436,
+            "offset": 64,
+            "cdOffset": 6564396,
+            "class_hierarchy": 0,
+            "vtables": []
+          },
+          {
+            "col_va": 6564484,
+            "offset": 0,
+            "cdOffset": 0,
+            "class_hierarchy": 6564504,
+            "vtables": [
+              {
+                "vtable_va": 6541872,
+                "methods": [
+                  4966048
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "class": "GameMouse",
+        "found": true,
+        "type_desc_va": 7042520,
+        "name_va": 7042528,
+        "cols": [
+          {
+            "col_va": 6564220,
+            "offset": 1,
+            "cdOffset": 6564180,
+            "class_hierarchy": 0,
+            "vtables": []
+          },
+          {
+            "col_va": 6564284,
+            "offset": 0,
+            "cdOffset": 0,
+            "class_hierarchy": 6564260,
+            "vtables": [
+              {
+                "vtable_va": 6541828,
+                "methods": [
+                  4928832,
+                  4928928,
+                  4356656
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "class": "NewGameMouse",
+        "found": true,
+        "type_desc_va": 7042648,
+        "name_va": 7042656,
+        "cols": [
+          {
+            "col_va": 6564596,
+            "offset": 0,
+            "cdOffset": 0,
+            "class_hierarchy": 6564644,
+            "vtables": [
+              {
+                "vtable_va": 6541972,
+                "methods": [
+                  5010672,
+                  5010736,
+                  5010800
+                ]
+              }
+            ]
+          },
+          {
+            "col_va": 6564604,
+            "offset": 7042648,
+            "cdOffset": 6564644,
+            "class_hierarchy": 1,
+            "vtables": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "label": "hakushin",
+    "zip": "[USER_HOME]\\Documents\\迫真戦記\\新約迫真戦記―ほのぼの神話ver0.67 豪華版(画像・音声削除版).zip",
+    "entry": "新約迫真戦記―ほのぼの神話ver0.67 豪華版/Vahren.exe",
+    "sha256": "e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187",
+    "results": [
+      {
+        "class": "ScriptBattle",
+        "found": true,
+        "type_desc_va": 6865564,
+        "name_va": 6865572,
+        "cols": [
+          {
+            "col_va": 6542164,
+            "offset": 0,
+            "cdOffset": 0,
+            "class_hierarchy": 6542184,
+            "vtables": [
+              {
+                "vtable_va": 6522412,
+                "methods": [
+                  4963280
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "class": "ScriptBlock",
+        "found": true,
+        "type_desc_va": 6865620,
+        "name_va": 6865628,
+        "cols": [
+          {
+            "col_va": 6543712,
+            "offset": 0,
+            "cdOffset": 0,
+            "class_hierarchy": 6543732,
+            "vtables": [
+              {
+                "vtable_va": 6524196,
+                "methods": [
+                  4963280
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "class": "ScriptData",
+        "found": true,
+        "type_desc_va": 6866288,
+        "name_va": 6866296,
+        "cols": [
+          {
+            "col_va": 6543788,
+            "offset": 0,
+            "cdOffset": 0,
+            "class_hierarchy": 6543808,
+            "vtables": [
+              {
+                "vtable_va": 6524188,
+                "methods": [
+                  4963280
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "class": "ScriptElement",
+        "found": true,
+        "type_desc_va": 6865484,
+        "name_va": 6865492,
+        "cols": []
+      },
+      {
+        "class": "ScriptFunc",
+        "found": true,
+        "type_desc_va": 6865512,
+        "name_va": 6865520,
+        "cols": [
+          {
+            "col_va": 6542088,
+            "offset": 0,
+            "cdOffset": 0,
+            "class_hierarchy": 6542108,
+            "vtables": [
+              {
+                "vtable_va": 6522420,
+                "methods": [
+                  4963280
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "class": "ScriptIF",
+        "found": true,
+        "type_desc_va": 6865540,
+        "name_va": 6865548,
+        "cols": [
+          {
+            "col_va": 6547516,
+            "offset": 0,
+            "cdOffset": 0,
+            "class_hierarchy": 6547536,
+            "vtables": [
+              {
+                "vtable_va": 6526508,
+                "methods": [
+                  4963280
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "class": "ScriptSet",
+        "found": true,
+        "type_desc_va": 6866332,
+        "name_va": 6866340,
+        "cols": [
+          {
+            "col_va": 6543864,
+            "offset": 0,
+            "cdOffset": 0,
+            "class_hierarchy": 6543884,
+            "vtables": [
+              {
+                "vtable_va": 6524204,
+                "methods": [
+                  4963280
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "class": "ScriptWhile",
+        "found": true,
+        "type_desc_va": 6865592,
+        "name_va": 6865600,
+        "cols": [
+          {
+            "col_va": 6547212,
+            "offset": 0,
+            "cdOffset": 0,
+            "class_hierarchy": 6547232,
+            "vtables": [
+              {
+                "vtable_va": 6526560,
+                "methods": [
+                  4963280
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "class": "OggDecoder",
+        "found": true,
+        "type_desc_va": 6868112,
+        "name_va": 6868120,
+        "cols": [
+          {
+            "col_va": 6547064,
+            "offset": 0,
+            "cdOffset": 0,
+            "class_hierarchy": 6547084,
+            "vtables": [
+              {
+                "vtable_va": 6526412,
+                "methods": [
+                  5250544,
+                  5250832,
+                  5251072,
+                  5251104,
+                  5250736
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "class": "PCMDecoder",
+        "found": true,
+        "type_desc_va": 6868084,
+        "name_va": 6868092,
+        "cols": [
+          {
+            "col_va": 6547192,
+            "offset": 0,
+            "cdOffset": 0,
+            "class_hierarchy": 6547140,
+            "vtables": [
+              {
+                "vtable_va": 6526436,
+                "methods": [
+                  5251216,
+                  5993214,
+                  5993214,
+                  5993214,
+                  5251264
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "class": "SaveWnd",
+        "found": true,
+        "type_desc_va": 6868824,
+        "name_va": 6868832,
+        "cols": [
+          {
+            "col_va": 6549524,
+            "offset": 40,
+            "cdOffset": 0,
+            "class_hierarchy": 6549564,
+            "vtables": [
+              {
+                "vtable_va": 6528420,
+                "methods": [
+                  5379184,
+                  4534256,
+                  4397328,
+                  4397328,
+                  4397328,
+                  4437408
+                ]
+              }
+            ]
+          },
+          {
+            "col_va": 6549544,
+            "offset": 0,
+            "cdOffset": 0,
+            "class_hierarchy": 6549564,
+            "vtables": [
+              {
+                "vtable_va": 6528332,
+                "methods": [
+                  5362128,
+                  4216864,
+                  4293680,
+                  4533648,
+                  4534112,
+                  4533568,
+                  4533616,
+                  4437408,
+                  4198464,
+                  4533696,
+                  4544320,
+                  4545440,
+                  4545776,
+                  4545824,
+                  4545840,
+                  5480528,
+                  5480704,
+                  5482400,
+                  5050288,
+                  4205920,
+                  4397328
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "class": "LoadWnd",
+        "found": true,
+        "type_desc_va": 6867200,
+        "name_va": 6867208,
+        "cols": [
+          {
+            "col_va": 6545532,
+            "offset": 40,
+            "cdOffset": 0,
+            "class_hierarchy": 6545572,
+            "vtables": [
+              {
+                "vtable_va": 6525116,
+                "methods": [
+                  5050560,
+                  4534256,
+                  4397328,
+                  4397328,
+                  4397328,
+                  4437408
+                ]
+              }
+            ]
+          },
+          {
+            "col_va": 6545552,
+            "offset": 0,
+            "cdOffset": 0,
+            "class_hierarchy": 6545572,
+            "vtables": [
+              {
+                "vtable_va": 6525028,
+                "methods": [
+                  5044016,
+                  4216864,
+                  4293680,
+                  4533648,
+                  4534112,
+                  4533568,
+                  4533616,
+                  4437408,
+                  4198464,
+                  4533696,
+                  4544320,
+                  4545440,
+                  4545776,
+                  4545824,
+                  4545840,
+                  5049088,
+                  5049280,
+                  5050112,
+                  5050288,
+                  4205920,
+                  4397328
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "class": "SelectWnd",
+        "found": false
+      },
+      {
+        "class": "ScenarioSelectWnd",
+        "found": true,
+        "type_desc_va": 6868668,
+        "name_va": 6868676,
+        "cols": [
+          {
+            "col_va": 6548864,
+            "offset": 40,
+            "cdOffset": 0,
+            "class_hierarchy": 6548904,
+            "vtables": [
+              {
+                "vtable_va": 6529140,
+                "methods": [
+                  5379168,
+                  4534256,
+                  4397328,
+                  4397328,
+                  4397328,
+                  4437408
+                ]
+              }
+            ]
+          },
+          {
+            "col_va": 6548884,
+            "offset": 0,
+            "cdOffset": 0,
+            "class_hierarchy": 6548904,
+            "vtables": [
+              {
+                "vtable_va": 6529052,
+                "methods": [
+                  5365232,
+                  4216864,
+                  4293680,
+                  4533648,
+                  4534112,
+                  4533568,
+                  4533616,
+                  4437408,
+                  4198464,
+                  4533696,
+                  4544320,
+                  4545440,
+                  4545776,
+                  4545824,
+                  4545840,
+                  5499328,
+                  5499520,
+                  5500112,
+                  4485392,
+                  4205920,
+                  4397328
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "class": "GameWindow",
+        "found": true,
+        "type_desc_va": 6867056,
+        "name_va": 6867064,
+        "cols": [
+          {
+            "col_va": 6545020,
+            "offset": 0,
+            "cdOffset": 0,
+            "class_hierarchy": 6545040,
+            "vtables": [
+              {
+                "vtable_va": 6524536,
+                "methods": [
+                  5003904
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "class": "GameMouse",
+        "found": true,
+        "type_desc_va": 6866872,
+        "name_va": 6866880,
+        "cols": [
+          {
+            "col_va": 6544804,
+            "offset": 0,
+            "cdOffset": 0,
+            "class_hierarchy": 6544824,
+            "vtables": [
+              {
+                "vtable_va": 6524504,
+                "methods": [
+                  4968224,
+                  4968304,
+                  4967872
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "class": "NewGameMouse",
+        "found": true,
+        "type_desc_va": 6867872,
+        "name_va": 6867880,
+        "cols": [
+          {
+            "col_va": 6546704,
+            "offset": 0,
+            "cdOffset": 0,
+            "class_hierarchy": 6546724,
+            "vtables": [
+              {
+                "vtable_va": 6526112,
+                "methods": [
+                  5169424,
+                  5169520,
+                  5169584
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

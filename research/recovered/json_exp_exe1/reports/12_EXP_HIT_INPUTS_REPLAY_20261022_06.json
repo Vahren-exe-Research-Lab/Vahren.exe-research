@@ -1,0 +1,11 @@
+{
+  "id": "EXP-HITINPUTS-20261022-06/REPLAY",
+  "result": "PASS",
+  "native_sites": 35,
+  "function_hashes": 5,
+  "literals": 4,
+  "dat_examples": 9,
+  "proof_sha256": "4D8A2605CB4BFF291AFA5A91BDC61D1D8144F652C37BB7CAA385D596EBC96B3C",
+  "source_files_unchanged": true,
+  "gameplay_tests": 0
+}

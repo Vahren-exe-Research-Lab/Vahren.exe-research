@@ -1,0 +1,1462 @@
+{
+  "status": "STATIC-DAT/DESIGNED/NOT RUN; NO NATIVE CONFIRMATION",
+  "original_dat_zip": "新約迫真戦記―ほのぼの神話ver0.67 豪華版(画像・音声削除版).zip",
+  "source_sha256": "a1dac7209fca6fbf7d05d956054047b4c36e5149eb100434bf796ccb94970423",
+  "source_skill_count": 8,
+  "skills": [
+    {
+      "id": "m_heal",
+      "parent_literal": null,
+      "path": "a_default/script/30_スキル/F13_heal_support.dat",
+      "start_line": 54,
+      "properties": {
+        "name": [
+          {
+            "raw": "ヒール",
+            "line": 56
+          }
+        ],
+        "icon": [
+          {
+            "raw": "skill_014.png,@ligh.png",
+            "line": 57
+          }
+        ],
+        "help": [
+          {
+            "raw": "$射程距離：500　（接敵時使用不可）$技中移動力：50％$―――――――――$[属性：補助・ＨＰ回復][魔力×200％]",
+            "line": 58
+          }
+        ],
+        "sound": [
+          {
+            "raw": "tm2_coin000",
+            "line": 59
+          }
+        ],
+        "image": [
+          {
+            "raw": "eff_d_heal",
+            "line": 60
+          }
+        ],
+        "anime": [
+          {
+            "raw": "3",
+            "line": 61
+          }
+        ],
+        "flash_image": [
+          {
+            "raw": "eff_d_heal",
+            "line": 62
+          }
+        ],
+        "flash_anime": [
+          {
+            "raw": "8",
+            "line": 63
+          }
+        ],
+        "attr": [
+          {
+            "raw": "hp",
+            "line": 64
+          }
+        ],
+        "w": [
+          {
+            "raw": "48",
+            "line": 65
+          }
+        ],
+        "h": [
+          {
+            "raw": "48",
+            "line": 66
+          }
+        ],
+        "a": [
+          {
+            "raw": "220",
+            "line": 67
+          }
+        ],
+        "func": [
+          {
+            "raw": "heal",
+            "line": 68
+          }
+        ],
+        "flash": [
+          {
+            "raw": "5",
+            "line": 69
+          }
+        ],
+        "speed": [
+          {
+            "raw": "500",
+            "line": 70
+          }
+        ],
+        "range": [
+          {
+            "raw": "500",
+            "line": 71
+          }
+        ],
+        "slow_per": [
+          {
+            "raw": "50",
+            "line": 72
+          }
+        ],
+        "str": [
+          {
+            "raw": "magic * 200",
+            "line": 74
+          }
+        ],
+        "mp": [
+          {
+            "raw": "80",
+            "line": 75
+          }
+        ],
+        "sortkey": [
+          {
+            "raw": "-500",
+            "line": 76
+          }
+        ],
+        "hide_help": [
+          {
+            "raw": "on",
+            "line": 78
+          }
+        ]
+      },
+      "raw_lines": [
+        "skill m_heal",
+        "{",
+        "\tname = ヒール",
+        "\ticon = skill_014.png,@ligh.png",
+        "\thelp = $射程距離：500　（接敵時使用不可）$技中移動力：50％$―――――――――$[属性：補助・ＨＰ回復][魔力×200％]",
+        "\tsound = tm2_coin000",
+        "\timage = eff_d_heal",
+        "\tanime = 3",
+        "\tflash_image = eff_d_heal",
+        "\tflash_anime = 8",
+        "\tattr = hp",
+        "\tw = 48",
+        "\th = 48",
+        "\ta=220",
+        "\tfunc = heal",
+        "\tflash = 5",
+        "\tspeed = 500",
+        "\trange = 500",
+        "\tslow_per = 50",
+        "\t",
+        "\tstr = magic * 200",
+        "\tmp = 80",
+        "\tsortkey = -500",
+        "",
+        "\thide_help = on",
+        "}"
+      ],
+      "end_line": 79
+    },
+    {
+      "id": "seiretsu",
+      "parent_literal": null,
+      "path": "a_default/script/30_スキル/F13_heal_support.dat",
+      "start_line": 5,
+      "properties": {
+        "name": [
+          {
+            "raw": "整列",
+            "line": 7
+          }
+        ],
+        "help": [
+          {
+            "raw": "$射程距離：自分のみ$技中移動力：100％$―――――――――$[属性：補助・移動力][固定値　20]$―――――――――$隊列を整える。",
+            "line": 8
+          }
+        ],
+        "sortkey": [
+          {
+            "raw": "10",
+            "line": 9
+          }
+        ],
+        "hide_help": [
+          {
+            "raw": "on",
+            "line": 10
+          }
+        ],
+        "fkey": [
+          {
+            "raw": "seiretsu*1",
+            "line": 11
+          }
+        ],
+        "icon": [
+          {
+            "raw": "boots_008.png,@buts.png",
+            "line": 12
+          }
+        ],
+        "flash_image": [
+          {
+            "raw": "u_up",
+            "line": 13
+          }
+        ],
+        "flash_anime": [
+          {
+            "raw": "5",
+            "line": 14
+          }
+        ],
+        "attr": [
+          {
+            "raw": "move",
+            "line": 15
+          }
+        ],
+        "func": [
+          {
+            "raw": "heal",
+            "line": 16
+          }
+        ],
+        "flash": [
+          {
+            "raw": "3",
+            "line": 17
+          }
+        ],
+        "range": [
+          {
+            "raw": "0",
+            "line": 19
+          }
+        ],
+        "slow_per": [
+          {
+            "raw": "100",
+            "line": 20
+          }
+        ],
+        "height": [
+          {
+            "raw": "0",
+            "line": 22
+          }
+        ],
+        "speed": [
+          {
+            "raw": "500",
+            "line": 23
+          }
+        ],
+        "movetype": [
+          {
+            "raw": "drop",
+            "line": 24
+          }
+        ],
+        "far": [
+          {
+            "raw": "off",
+            "line": 26
+          }
+        ],
+        "str": [
+          {
+            "raw": "fix * 20",
+            "line": 28
+          }
+        ],
+        "mp": [
+          {
+            "raw": "0",
+            "line": 29
+          }
+        ],
+        "exp_per": [
+          {
+            "raw": "off",
+            "line": 30
+          }
+        ]
+      },
+      "raw_lines": [
+        "skill seiretsu",
+        "{",
+        "\tname = 整列",
+        "\thelp = $射程距離：自分のみ$技中移動力：100％$―――――――――$[属性：補助・移動力][固定値　20]$―――――――――$隊列を整える。",
+        "\tsortkey = 10",
+        "\thide_help = on",
+        "\tfkey = seiretsu*1",
+        "\ticon = boots_008.png,@buts.png",
+        "\tflash_image = u_up",
+        "\tflash_anime = 5",
+        "\tattr = move",
+        "\tfunc = heal",
+        "\tflash = 3",
+        "",
+        "\trange = 0",
+        "\tslow_per = 100",
+        "",
+        "\theight = 0",
+        "\tspeed = 500",
+        "\tmovetype = drop",
+        "",
+        "\tfar = off",
+        "\t",
+        "\tstr = fix * 20",
+        "\tmp = 0",
+        "\texp_per = off",
+        "}"
+      ],
+      "end_line": 31
+    },
+    {
+      "id": "cook_heal",
+      "parent_literal": "m_heal",
+      "path": "a_default/script/30_スキル/F13_heal_support.dat",
+      "start_line": 89,
+      "properties": {
+        "name": [
+          {
+            "raw": "戦場料理",
+            "line": 91
+          }
+        ],
+        "help": [
+          {
+            "raw": "$射程距離：500　（接敵時使用不可）$技中移動力：35％$使用後、同スキル使用不能　（期間：通常のスキル3回分）$―――――――――$[属性：補助・ＨＰ回復][技術×3000％]$―――――――――$薬効作用のある料理を振舞う。$MPを消費しない。",
+            "line": 92
+          }
+        ],
+        "mp": [
+          {
+            "raw": "0",
+            "line": 93
+          }
+        ],
+        "gun_delay": [
+          {
+            "raw": "b_heal*3",
+            "line": 94
+          }
+        ],
+        "str": [
+          {
+            "raw": "magic_dext * 1500",
+            "line": 95
+          }
+        ],
+        "str_ratio": [
+          {
+            "raw": "0",
+            "line": 96
+          }
+        ],
+        "slow_per": [
+          {
+            "raw": "35",
+            "line": 97
+          }
+        ]
+      },
+      "raw_lines": [
+        "skill cook_heal : m_heal",
+        "{",
+        "\tname = 戦場料理",
+        "\thelp = $射程距離：500　（接敵時使用不可）$技中移動力：35％$使用後、同スキル使用不能　（期間：通常のスキル3回分）$―――――――――$[属性：補助・ＨＰ回復][技術×3000％]$―――――――――$薬効作用のある料理を振舞う。$MPを消費しない。",
+        "\tmp = 0",
+        "\tgun_delay = b_heal*3",
+        "\tstr = magic_dext * 1500",
+        "\tstr_ratio = 0",
+        "\tslow_per = 35",
+        "}"
+      ],
+      "end_line": 98
+    },
+    {
+      "id": "s_monaka",
+      "parent_literal": null,
+      "path": "a_default/script/30_スキル/F20_summon.dat",
+      "start_line": 1596,
+      "properties": {
+        "name": [
+          {
+            "raw": "チョコモナカジャンボだ！",
+            "line": 1598
+          }
+        ],
+        "icon": [
+          {
+            "raw": "skill_016.png*100,icon_monaka,@buts.png",
+            "line": 1599
+          }
+        ],
+        "sound": [
+          {
+            "raw": "tm2_sonic005",
+            "line": 1600
+          }
+        ],
+        "help": [
+          {
+            "raw": "$射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（チョコモナカジャンボ）]",
+            "line": 1601
+          }
+        ],
+        "hide_help": [
+          {
+            "raw": "on",
+            "line": 1602
+          }
+        ],
+        "sortkey": [
+          {
+            "raw": "-500",
+            "line": 1604
+          }
+        ],
+        "mp": [
+          {
+            "raw": "40",
+            "line": 1606
+          }
+        ],
+        "delay": [
+          {
+            "raw": "2",
+            "line": 1607
+          }
+        ],
+        "slow_per": [
+          {
+            "raw": "80",
+            "line": 1609
+          }
+        ],
+        "msg@nyn": [
+          {
+            "raw": "チョコモナカジャンボだ！@nyn_monaka",
+            "line": 1611
+          }
+        ],
+        "image": [
+          {
+            "raw": "s_fire",
+            "line": 1613
+          }
+        ],
+        "func": [
+          {
+            "raw": "summon",
+            "line": 1614
+          }
+        ],
+        "add2": [
+          {
+            "raw": "mona0071,mona0072",
+            "line": 1615
+          }
+        ],
+        "w": [
+          {
+            "raw": "64",
+            "line": 1616
+          }
+        ],
+        "h": [
+          {
+            "raw": "96",
+            "line": 1617
+          }
+        ],
+        "a": [
+          {
+            "raw": "160",
+            "line": 1618
+          }
+        ],
+        "anime": [
+          {
+            "raw": "7",
+            "line": 1619
+          }
+        ],
+        "anime_interval": [
+          {
+            "raw": "2",
+            "line": 1620
+          }
+        ],
+        "time": [
+          {
+            "raw": "12",
+            "line": 1621
+          }
+        ],
+        "range": [
+          {
+            "raw": "100",
+            "line": 1622
+          }
+        ],
+        "check": [
+          {
+            "raw": "9999",
+            "line": 1623
+          }
+        ]
+      },
+      "raw_lines": [
+        "skill s_monaka",
+        "{",
+        "\tname = チョコモナカジャンボだ！",
+        "\ticon = skill_016.png*100,icon_monaka,@buts.png",
+        "\tsound = tm2_sonic005",
+        "\thelp = $射程距離：9999（実質無限）$（自動行動時の発動射程であり実際のスキル範囲とは無関係）$技中移動力：80％$使用後行動不能　（期間：通常のスキル2回分）$―――――――――$[属性：召喚（チョコモナカジャンボ）]",
+        "\thide_help = on",
+        "",
+        "\tsortkey = -500",
+        "",
+        "\tmp = 40",
+        "\tdelay = 2",
+        "",
+        "\tslow_per = 80",
+        "\t",
+        "\tmsg@nyn = チョコモナカジャンボだ！@nyn_monaka",
+        "",
+        "\timage = s_fire",
+        "\tfunc = summon",
+        "\tadd2 = mona0071,mona0072",
+        "\tw = 64",
+        "\th = 96",
+        "\ta = 160",
+        "\tanime = 7",
+        "\tanime_interval = 2",
+        "\ttime = 12",
+        "\trange = 100",
+        "\tcheck = 9999",
+        "}"
+      ],
+      "end_line": 1624
+    },
+    {
+      "id": "b_iwana",
+      "parent_literal": "sk_ms",
+      "path": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+      "start_line": 6118,
+      "properties": {
+        "name": [
+          {
+            "raw": "イワナの瘴気",
+            "line": 6120
+          }
+        ],
+        "icon": [
+          {
+            "raw": "skill_019.png,@dark.png",
+            "line": 6121
+          }
+        ],
+        "help": [
+          {
+            "raw": "$射程距離：450　（接敵時使用不能）$技中移動力：50％$使用後、同スキル使用不能　（期間：通常のスキル2回分）$―――――――――$[属性：無][魔力× 10％][範囲攻撃：中]（貫通・15HIT）$―――――――――$追加効果$ＭＰ吸収$―――――――――$もしかしてこれって……デルティエじゃない……？",
+            "line": 6122
+          }
+        ],
+        "slow_per": [
+          {
+            "raw": "50",
+            "line": 6124
+          }
+        ],
+        "sound": [
+          {
+            "raw": "freeze02",
+            "line": 6125
+          }
+        ],
+        "w": [
+          {
+            "raw": "64",
+            "line": 6127
+          }
+        ],
+        "h": [
+          {
+            "raw": "64",
+            "line": 6128
+          }
+        ],
+        "bom": [
+          {
+            "raw": "on",
+            "line": 6129
+          }
+        ],
+        "hard": [
+          {
+            "raw": "3",
+            "line": 6130
+          }
+        ],
+        "str": [
+          {
+            "raw": "magic*10",
+            "line": 6131
+          }
+        ],
+        "range": [
+          {
+            "raw": "450",
+            "line": 6132
+          }
+        ],
+        "speed": [
+          {
+            "raw": "1000",
+            "line": 6133
+          }
+        ],
+        "add": [
+          {
+            "raw": "magsuck",
+            "line": 6134
+          }
+        ],
+        "mp": [
+          {
+            "raw": "60",
+            "line": 6136
+          }
+        ],
+        "gun_delay": [
+          {
+            "raw": "b_iwana*2",
+            "line": 6137
+          }
+        ],
+        "sortkey": [
+          {
+            "raw": "-510",
+            "line": 6139
+          }
+        ],
+        "next_interval": [
+          {
+            "raw": "2",
+            "line": 6141
+          }
+        ],
+        "next": [
+          {
+            "raw": "b_iwana_nt1",
+            "line": 6143
+          }
+        ],
+        "pair_next": [
+          {
+            "raw": "ef_magic",
+            "line": 6144
+          }
+        ]
+      },
+      "raw_lines": [
+        "skill b_iwana:sk_ms",
+        "{",
+        "\tname = イワナの瘴気",
+        "\ticon = skill_019.png,@dark.png",
+        "\thelp = $射程距離：450　（接敵時使用不能）$技中移動力：50％$使用後、同スキル使用不能　（期間：通常のスキル2回分）$―――――――――$[属性：無][魔力× 10％][範囲攻撃：中]（貫通・15HIT）$―――――――――$追加効果$ＭＰ吸収$―――――――――$もしかしてこれって……デルティエじゃない……？",
+        "",
+        "\tslow_per = 50",
+        "\tsound = freeze02",
+        "",
+        "\tw = 64",
+        "\th = 64",
+        "\tbom = on",
+        "\thard = 3",
+        "\tstr = magic*10",
+        "\trange = 450",
+        "\tspeed = 1000",
+        "\tadd = magsuck",
+        "",
+        "\tmp = 60",
+        "\tgun_delay = b_iwana*2",
+        "",
+        "\tsortkey = -510",
+        "",
+        "\tnext_interval = 2",
+        "\t//next3 = b_iwana_nt1,b_iwana_nt2",
+        "\tnext = b_iwana_nt1",
+        "\tpair_next = ef_magic",
+        "}"
+      ],
+      "end_line": 6145
+    },
+    {
+      "id": "spinfiremax",
+      "parent_literal": "sk_ms",
+      "path": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+      "start_line": 9318,
+      "properties": {
+        "name": [
+          {
+            "raw": "スピンファイヤーマックス",
+            "line": 9320
+          }
+        ],
+        "icon": [
+          {
+            "raw": "skill_075.png,other_022b.png*180,@wind.png",
+            "line": 9321
+          }
+        ],
+        "help": [
+          {
+            "raw": "$射程距離：150～600　[放物線軌道]$技中移動力：80％$―――――――――$[属性：砲撃][攻撃×100％][範囲攻撃：極大]$[属性：砲撃][魔力× 20％][範囲攻撃：極大]$[属性：砲撃][攻撃×100％][範囲攻撃：大]（12回）$[属性：砲撃][魔力× 20％][範囲攻撃：大]（12回）$―――――――――$追加効果$ノックバック（歩兵にも効く）",
+            "line": 9323
+          }
+        ],
+        "attr": [
+          {
+            "raw": "cn",
+            "line": 9325
+          }
+        ],
+        "str": [
+          {
+            "raw": "attack * 0",
+            "line": 9326
+          }
+        ],
+        "check": [
+          {
+            "raw": "600",
+            "line": 9327
+          }
+        ],
+        "range_min": [
+          {
+            "raw": "150",
+            "line": 9328
+          }
+        ],
+        "sortkey": [
+          {
+            "raw": "-450",
+            "line": 9329
+          }
+        ],
+        "mp": [
+          {
+            "raw": "80",
+            "line": 9330
+          }
+        ],
+        "shake": [
+          {
+            "raw": "10",
+            "line": 9331
+          }
+        ],
+        "pair_next": [
+          {
+            "raw": "b_cannon_pr0",
+            "line": 9333
+          }
+        ],
+        "slide": [
+          {
+            "raw": "0",
+            "line": 9335
+          }
+        ],
+        "just_next": [
+          {
+            "raw": "spinfiremax_nt1,spinfiremax_nt2,spinfiremax_nt3",
+            "line": 9337
+          }
+        ],
+        "far": [
+          {
+            "raw": "off",
+            "line": 9338
+          }
+        ],
+        "height": [
+          {
+            "raw": "1",
+            "line": 9340
+          }
+        ],
+        "w": [
+          {
+            "raw": "48",
+            "line": 9341
+          }
+        ],
+        "h": [
+          {
+            "raw": "48",
+            "line": 9342
+          }
+        ],
+        "image": [
+          {
+            "raw": "spinfiremax",
+            "line": 9343
+          }
+        ],
+        "d360": [
+          {
+            "raw": "on",
+            "line": 9344
+          }
+        ],
+        "anime": [
+          {
+            "raw": "2",
+            "line": 9345
+          }
+        ],
+        "anime_interval": [
+          {
+            "raw": "1",
+            "line": 9346
+          }
+        ],
+        "speed": [
+          {
+            "raw": "200",
+            "line": 9347
+          }
+        ],
+        "range": [
+          {
+            "raw": "600",
+            "line": 9348
+          }
+        ],
+        "movetype": [
+          {
+            "raw": "throw",
+            "line": 9349
+          }
+        ],
+        "resize_interval": [
+          {
+            "raw": "5",
+            "line": 9351
+          }
+        ],
+        "resize_s": [
+          {
+            "raw": "600",
+            "line": 9352
+          }
+        ],
+        "resize_s_max": [
+          {
+            "raw": "2200",
+            "line": 9353
+          }
+        ],
+        "sound": [
+          {
+            "raw": "sen_ge_misairu02",
+            "line": 9355
+          }
+        ],
+        "exp_per": [
+          {
+            "raw": "off",
+            "line": 9357
+          }
+        ]
+      },
+      "raw_lines": [
+        "skill spinfiremax:sk_ms",
+        "{",
+        "\tname = スピンファイヤーマックス",
+        "\ticon = skill_075.png,other_022b.png*180,@wind.png",
+        "//\thelp = $射程距離：100～600　[放物線軌道]$技中移動力：80％$使用後、同系統スキル（砲撃系）使用不能　（期間：通常のスキル3回分）$―――――――――$[属性：砲撃][攻撃×100％][範囲攻撃：極大]$[属性：砲撃][魔力× 20％][範囲攻撃：極大]$[属性：砲撃][攻撃×100％][範囲攻撃：大]（12回）$[属性：砲撃][魔力× 20％][範囲攻撃：大]（12回）$―――――――――$追加効果$ノックバック（歩兵にも効く）",
+        "\thelp = $射程距離：150～600　[放物線軌道]$技中移動力：80％$―――――――――$[属性：砲撃][攻撃×100％][範囲攻撃：極大]$[属性：砲撃][魔力× 20％][範囲攻撃：極大]$[属性：砲撃][攻撃×100％][範囲攻撃：大]（12回）$[属性：砲撃][魔力× 20％][範囲攻撃：大]（12回）$―――――――――$追加効果$ノックバック（歩兵にも効く）",
+        "",
+        "\tattr = cn",
+        "\tstr = attack * 0",
+        "\tcheck = 600",
+        "\trange_min = 150",
+        "\tsortkey = -450",
+        "\tmp = 80",
+        "\tshake = 10",
+        "",
+        "\tpair_next = b_cannon_pr0",
+        "",
+        "\tslide = 0",
+        "",
+        "just_next=spinfiremax_nt1,spinfiremax_nt2,spinfiremax_nt3",
+        "far = off",
+        "",
+        "\theight = 1",
+        "\tw = 48",
+        "\th = 48",
+        "\timage = spinfiremax",
+        "\td360 = on",
+        "\tanime = 2",
+        "\tanime_interval = 1",
+        "\tspeed = 200",
+        "\trange = 600",
+        "\tmovetype = throw",
+        "",
+        "resize_interval=5",
+        "resize_s = 600",
+        "resize_s_max = 2200",
+        "",
+        "sound = sen_ge_misairu02",
+        "",
+        "exp_per = off",
+        "}"
+      ],
+      "end_line": 9358
+    },
+    {
+      "id": "musen_move",
+      "parent_literal": null,
+      "path": "a_default/script/30_スキル/F13_heal_support.dat",
+      "start_line": 2069,
+      "properties": {
+        "name": [
+          {
+            "raw": "無線通信",
+            "line": 2071
+          }
+        ],
+        "help": [
+          {
+            "raw": "$射程距離：9999$技中移動力：100％$使用後、同スキル使用不能　（期間：通常のスキル1回分）$―――――――――$[属性：補助・移動力][最大限]$―――――――――$原理主義党が独自に開発した無線通信技術により、$高度かつ迅速な意思疎通を以て組織的な行動を補助する。",
+            "line": 2072
+          }
+        ],
+        "icon": [
+          {
+            "raw": "inst_002.png,_move.png,@buff1",
+            "line": 2073
+          }
+        ],
+        "gun_delay": [
+          {
+            "raw": "musen*2",
+            "line": 2074
+          }
+        ],
+        "hide_help": [
+          {
+            "raw": "on",
+            "line": 2075
+          }
+        ],
+        "slow_per": [
+          {
+            "raw": "100",
+            "line": 2076
+          }
+        ],
+        "image": [
+          {
+            "raw": "m_aeroballx06_",
+            "line": 2077
+          }
+        ],
+        "d360": [
+          {
+            "raw": "on",
+            "line": 2078
+          }
+        ],
+        "d360_adj": [
+          {
+            "raw": "180",
+            "line": 2079
+          }
+        ],
+        "anime": [
+          {
+            "raw": "8",
+            "line": 2083
+          }
+        ],
+        "sortkey": [
+          {
+            "raw": "10",
+            "line": 2084
+          }
+        ],
+        "sound": [
+          {
+            "raw": "meka_ge_toran1",
+            "line": 2085
+          }
+        ],
+        "w": [
+          {
+            "raw": "24",
+            "line": 2086
+          }
+        ],
+        "h": [
+          {
+            "raw": "48",
+            "line": 2087
+          }
+        ],
+        "a": [
+          {
+            "raw": "255",
+            "line": 2088
+          }
+        ],
+        "attr": [
+          {
+            "raw": "move",
+            "line": 2089
+          }
+        ],
+        "func": [
+          {
+            "raw": "heal",
+            "line": 2090
+          }
+        ],
+        "speed": [
+          {
+            "raw": "1000",
+            "line": 2091
+          }
+        ],
+        "str": [
+          {
+            "raw": "fix * 9999",
+            "line": 2092
+          }
+        ],
+        "range": [
+          {
+            "raw": "9999",
+            "line": 2093
+          }
+        ]
+      },
+      "raw_lines": [
+        "skill musen_move",
+        "{",
+        "\tname = 無線通信",
+        "\thelp = $射程距離：9999$技中移動力：100％$使用後、同スキル使用不能　（期間：通常のスキル1回分）$―――――――――$[属性：補助・移動力][最大限]$―――――――――$原理主義党が独自に開発した無線通信技術により、$高度かつ迅速な意思疎通を以て組織的な行動を補助する。",
+        "\ticon = inst_002.png,_move.png,@buff1",
+        "\tgun_delay = musen*2",
+        "\thide_help = on",
+        "\tslow_per = 100",
+        "\timage = m_aeroballx06_",
+        "\td360 = on",
+        "\td360_adj = 180",
+        "\t//movetype = arc",
+        "\t//height = -100",
+        "\t",
+        "\tanime = 8",
+        "\tsortkey = 10",
+        "\tsound = meka_ge_toran1",
+        "\tw = 24",
+        "\th = 48",
+        "\ta = 255",
+        "\tattr = move",
+        "\tfunc = heal",
+        "\tspeed = 1000",
+        "\tstr = fix * 9999",
+        "\trange = 9999",
+        "}"
+      ],
+      "end_line": 2094
+    },
+    {
+      "id": "b_all",
+      "parent_literal": null,
+      "path": "a_default/script/30_スキル/F13_heal_support.dat",
+      "start_line": 124,
+      "properties": {
+        "name": [
+          {
+            "raw": "キュア",
+            "line": 126
+          }
+        ],
+        "icon": [
+          {
+            "raw": "skill_013c.png,@ligh.png",
+            "line": 127
+          }
+        ],
+        "help": [
+          {
+            "raw": "$射程距離：400　（接敵時使用不可）$技中移動力：100％$使用後、同スキル使用不能　（期間：通常のスキル3回分）$―――――――――$[属性：補助・状態異常回復][技術×100％]$―――――――――$クラス習得以外でこのスキルを習得する者は、$・献身的な者$・規律を保つことに長ける者$が多い。",
+            "line": 128
+          }
+        ],
+        "sound": [
+          {
+            "raw": "tm2_mind000",
+            "line": 129
+          }
+        ],
+        "image": [
+          {
+            "raw": "u_hprec",
+            "line": 130
+          }
+        ],
+        "anime": [
+          {
+            "raw": "3",
+            "line": 131
+          }
+        ],
+        "flash_image": [
+          {
+            "raw": "c_all",
+            "line": 132
+          }
+        ],
+        "flash_anime": [
+          {
+            "raw": "8",
+            "line": 133
+          }
+        ],
+        "attr": [
+          {
+            "raw": "all",
+            "line": 134
+          }
+        ],
+        "w": [
+          {
+            "raw": "48",
+            "line": 135
+          }
+        ],
+        "h": [
+          {
+            "raw": "48",
+            "line": 136
+          }
+        ],
+        "a": [
+          {
+            "raw": "220",
+            "line": 137
+          }
+        ],
+        "func": [
+          {
+            "raw": "heal",
+            "line": 138
+          }
+        ],
+        "flash": [
+          {
+            "raw": "2",
+            "line": 139
+          }
+        ],
+        "speed": [
+          {
+            "raw": "500",
+            "line": 140
+          }
+        ],
+        "range": [
+          {
+            "raw": "400",
+            "line": 141
+          }
+        ],
+        "slow_per": [
+          {
+            "raw": "100",
+            "line": 142
+          }
+        ],
+        "str": [
+          {
+            "raw": "magic_dext * 50",
+            "line": 144
+          }
+        ],
+        "str_ratio": [
+          {
+            "raw": "0",
+            "line": 145
+          }
+        ],
+        "mp": [
+          {
+            "raw": "-1",
+            "line": 146
+          }
+        ],
+        "sortkey": [
+          {
+            "raw": "-400",
+            "line": 147
+          }
+        ],
+        "gun_delay": [
+          {
+            "raw": "b_all*3",
+            "line": 148
+          }
+        ],
+        "hide_help": [
+          {
+            "raw": "on",
+            "line": 150
+          }
+        ],
+        "fkey": [
+          {
+            "raw": "b_all*1",
+            "line": 151
+          }
+        ]
+      },
+      "raw_lines": [
+        "skill b_all",
+        "{",
+        "\tname = キュア",
+        "\ticon = skill_013c.png,@ligh.png",
+        "\thelp = $射程距離：400　（接敵時使用不可）$技中移動力：100％$使用後、同スキル使用不能　（期間：通常のスキル3回分）$―――――――――$[属性：補助・状態異常回復][技術×100％]$―――――――――$クラス習得以外でこのスキルを習得する者は、$・献身的な者$・規律を保つことに長ける者$が多い。",
+        "\tsound = tm2_mind000",
+        "\timage = u_hprec",
+        "\tanime = 3",
+        "\tflash_image = c_all",
+        "\tflash_anime = 8",
+        "\tattr = all",
+        "\tw = 48",
+        "\th = 48",
+        "\ta=220",
+        "\tfunc = heal",
+        "\tflash = 2",
+        "\tspeed = 500",
+        "\trange = 400",
+        "\tslow_per = 100",
+        "",
+        "\tstr = magic_dext * 50",
+        "\tstr_ratio = 0",
+        "\tmp = -1",
+        "\tsortkey = -400",
+        "\tgun_delay = b_all*3",
+        "",
+        "\thide_help = on",
+        "\tfkey = b_all*1",
+        "}"
+      ],
+      "end_line": 152
+    }
+  ],
+  "tests": [
+    {
+      "id": "WF-01",
+      "skill": "m_heal",
+      "inputs": [
+        "MP 79 / 80",
+        "target damaged / full HP"
+      ],
+      "goal": "heal HP vs early return",
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "native_effect": "VERIFY",
+      "capture_fields": [
+        "Skill identity and parent field provenance",
+        "actor / target and self flags",
+        "MP before/after + already debited",
+        "candidate order and range/check distance",
+        "RNG cursor + direct draw sites",
+        "effect/roster/status before and after",
+        "native branch + pending callee + normal return PC",
+        "visible old-vs-new state"
+      ]
+    },
+    {
+      "id": "WF-02",
+      "skill": "seiretsu",
+      "inputs": [
+        "self",
+        "movement debuff / at cap"
+      ],
+      "goal": "heal func with move attr, MP zero",
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "native_effect": "VERIFY",
+      "capture_fields": [
+        "Skill identity and parent field provenance",
+        "actor / target and self flags",
+        "MP before/after + already debited",
+        "candidate order and range/check distance",
+        "RNG cursor + direct draw sites",
+        "effect/roster/status before and after",
+        "native branch + pending callee + normal return PC",
+        "visible old-vs-new state"
+      ]
+    },
+    {
+      "id": "WF-03",
+      "skill": "cook_heal",
+      "inputs": [
+        "first use",
+        "cooldown revisit after 1 / 2 / 3 / 5 actions"
+      ],
+      "goal": "b_heal shared key vs Wiki CT5",
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "native_effect": "VERIFY",
+      "capture_fields": [
+        "Skill identity and parent field provenance",
+        "actor / target and self flags",
+        "MP before/after + already debited",
+        "candidate order and range/check distance",
+        "RNG cursor + direct draw sites",
+        "effect/roster/status before and after",
+        "native branch + pending callee + normal return PC",
+        "visible old-vs-new state"
+      ]
+    },
+    {
+      "id": "WF-04",
+      "skill": "s_monaka",
+      "inputs": [
+        "distance 99 / 100 / 101 / 9999",
+        "MP 39 / 40"
+      ],
+      "goal": "check vs range, summon intermediary and return",
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "native_effect": "VERIFY",
+      "capture_fields": [
+        "Skill identity and parent field provenance",
+        "actor / target and self flags",
+        "MP before/after + already debited",
+        "candidate order and range/check distance",
+        "RNG cursor + direct draw sites",
+        "effect/roster/status before and after",
+        "native branch + pending callee + normal return PC",
+        "visible old-vs-new state"
+      ]
+    },
+    {
+      "id": "WF-05",
+      "skill": "b_iwana",
+      "inputs": [
+        "MP 59 / 60",
+        "hit / miss target"
+      ],
+      "goal": "wiki MP0 vs DAT60; inherited func and effects",
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "native_effect": "VERIFY",
+      "capture_fields": [
+        "Skill identity and parent field provenance",
+        "actor / target and self flags",
+        "MP before/after + already debited",
+        "candidate order and range/check distance",
+        "RNG cursor + direct draw sites",
+        "effect/roster/status before and after",
+        "native branch + pending callee + normal return PC",
+        "visible old-vs-new state"
+      ]
+    },
+    {
+      "id": "WF-06",
+      "skill": "spinfiremax",
+      "inputs": [
+        "MP 79 / 80",
+        "distance 149 / 150 / 600 / 601"
+      ],
+      "goal": "range_min, child ordering and paired projectile",
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "native_effect": "VERIFY",
+      "capture_fields": [
+        "Skill identity and parent field provenance",
+        "actor / target and self flags",
+        "MP before/after + already debited",
+        "candidate order and range/check distance",
+        "RNG cursor + direct draw sites",
+        "effect/roster/status before and after",
+        "native branch + pending callee + normal return PC",
+        "visible old-vs-new state"
+      ]
+    },
+    {
+      "id": "WF-07",
+      "skill": "musen_move",
+      "inputs": [
+        "first use",
+        "cooldown at 1 / 2 actions"
+      ],
+      "goal": "Wiki CT1 and DAT musen*2",
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "native_effect": "VERIFY",
+      "capture_fields": [
+        "Skill identity and parent field provenance",
+        "actor / target and self flags",
+        "MP before/after + already debited",
+        "candidate order and range/check distance",
+        "RNG cursor + direct draw sites",
+        "effect/roster/status before and after",
+        "native branch + pending callee + normal return PC",
+        "visible old-vs-new state"
+      ]
+    },
+    {
+      "id": "WF-08",
+      "skill": "b_all",
+      "inputs": [
+        "MP 0 / 1 / max",
+        "abnormal / normal target"
+      ],
+      "goal": "negative MP sentinel; healing attr all",
+      "original_gameplay": "NOT RUN",
+      "new_strict_match": "NOT RUN",
+      "native_effect": "VERIFY",
+      "capture_fields": [
+        "Skill identity and parent field provenance",
+        "actor / target and self flags",
+        "MP before/after + already debited",
+        "candidate order and range/check distance",
+        "RNG cursor + direct draw sites",
+        "effect/roster/status before and after",
+        "native branch + pending callee + normal return PC",
+        "visible old-vs-new state"
+      ]
+    }
+  ],
+  "producer": "independent Wiki-DAT research; no changes to original/Work/B/F",
+  "notes": [
+    "parent-derived properties are not runtime effective values",
+    "Wiki cooldown and MP are separate, unconfirmed input hypotheses",
+    "do not mark any test as PASS without legal original-game observation"
+  ]
+}

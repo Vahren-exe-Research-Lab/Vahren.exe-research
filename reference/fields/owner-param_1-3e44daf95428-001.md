@@ -10,6 +10,54 @@
 - [research/recovered/b_batch9/data/T013_GROUP_SPACING_569360_CALLBACK_GATE_V3_20261023_1618.md 行 7](../../research/recovered/b_batch9/data/T013_GROUP_SPACING_569360_CALLBACK_GATE_V3_20261023_1618.md?plain=1#L7-L7) — 今回増分1: 0x00569360 は同一Group候補 param_1+0x0C/+0x10 の構成員vectorを走査し、param_1+0x34（0x569280算出値）を実際に読み取る後段consumer。
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 605](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L605-L605) — "before": "_DAT_00b09580 = *(undefined4 *)(param_1 + 0xc);",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 714](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L714-L714) — "after": "FUN_00463610(*(undefined4 *)(param_1 + 0xc));"
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 758](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L758-L758) — "before": "iVar3 = *(int *)(param_1 + 0xc) + 0x58;",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 1305](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L1305-L1305) — "after": "FUN_00463610(*(undefined4 *)(param_1 + 0xc));"
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 1424](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L1424-L1424) — "after": "FUN_00463610(*(undefined4 *)(param_1 + 0xc));"
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 1651](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L1651-L1651) — "after": "uStack_40 = *(undefined4 *)(param_1 + 0xc);"
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 1677](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L1677-L1677) — "before": "(*(int *)(*(int *)(param_1 + 0xc) + 0x50) == 0)) && (iVar1 = FUN_00469170(), iVar1 != 0)) &&",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 1695](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L1695-L1695) — "before": "if ((*(int *)(*(int *)(param_1 + 0xc) + 0x50) != 0) &&",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json 行 605](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json?plain=1#L605-L605) — "context_after": "FUN_004647d0(*(undefined4 *)(param_1 + 0xc),local_34,\"event\");"
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json 行 645](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json?plain=1#L645-L645) — "context_after": "FUN_004647d0(*(undefined4 *)(param_1 + 0xc),local_54,\"event\");"
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json 行 888](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json?plain=1#L888-L888) — "context_before": "_DAT_00b09580 = *(undefined4 *)(param_1 + 0xc);",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json 行 985](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json?plain=1#L985-L985) — "context_after": "FUN_00463610(*(undefined4 *)(param_1 + 0xc));"
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json 行 1024](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json?plain=1#L1024-L1024) — "context_before": "iVar3 = *(int *)(param_1 + 0xc) + 0x58;",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json 行 1693](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json?plain=1#L1693-L1693) — "context_after": "FUN_00463610(*(undefined4 *)(param_1 + 0xc));"
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json 行 1799](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json?plain=1#L1799-L1799) — "context_after": "FUN_00463610(*(undefined4 *)(param_1 + 0xc));"
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json 行 1889](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json?plain=1#L1889-L1889) — "context_after": "FUN_004647d0(*(undefined4 *)(param_1 + 0xc),local_5c,\"event\");"
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
 - [research/recovered/rea_batch10/reports/REA_20261021_2236_T014_STATE_MASK10_EPILOGUE_CROSSWALK_STATIC.md 行 8](../../research/recovered/rea_batch10/reports/REA_20261021_2236_T014_STATE_MASK10_EPILOGUE_CROSSWALK_STATIC.md?plain=1#L8-L8) — - `0x426E00`（code SHA 7BEBA43A38A9E3880B88EFBA64A11D7CE7087E53C03C0BCF4B846B3C828B1A43）疑似Cは、入力レジスタ値Sを `S & 0x17` にマスクし、ストリーム内のstate候補 `[param_1+0xC]` に代入。例外マスク候
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
 
@@ -19,6 +67,9 @@
 - [research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md 行 21](../../research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md?plain=1#L21-L21) — - 走査候補には `candidate+0x78!=0 \|\| candidate+0x94!=0` の入口条件があり、候補の `[+0xD4,+0xD8)` という0x1C strideの配列風領域から `+0x10` 相当の値を取り、元の `param_1+0x10` と `0x00402C40` comparato
   制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
 
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json 行 578](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json?plain=1#L578-L578) — "context_before": "if (*(int *)(*(int *)(param_1 + 0x10) + 0x38) == 0) {",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
 - [research/recovered/rea_batch10/reports/REA_20261021_2236_T014_STATE_MASK10_EPILOGUE_CROSSWALK_STATIC.md 行 8](../../research/recovered/rea_batch10/reports/REA_20261021_2236_T014_STATE_MASK10_EPILOGUE_CROSSWALK_STATIC.md?plain=1#L8-L8) — - `0x426E00`（code SHA 7BEBA43A38A9E3880B88EFBA64A11D7CE7087E53C03C0BCF4B846B3C828B1A43）疑似Cは、入力レジスタ値Sを `S & 0x17` にマスクし、ストリーム内のstate候補 `[param_1+0xC]` に代入。例外マスク候
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
 
@@ -27,6 +78,18 @@
 
 - [research/recovered/e_batch2/reports/tests/E_OFFLINE_SYNC_20261029/T020_DIALOG_PREDISPATCH_GOLDEN_RUN_ID_AUDIT_20261028_1849.md 行 17](../../research/recovered/e_batch2/reports/tests/E_OFFLINE_SYNC_20261029/T020_DIALOG_PREDISPATCH_GOLDEN_RUN_ID_AUDIT_20261028_1849.md?plain=1#L17-L17) — - `0x0049C450` は `param_1+0x14` の非0を見て、`0x0042F860`判定に失敗した場合に`0x0049ECA0`へ進む経路を持つ。次の`local_34`が特殊値か、対象の`+0x28/+0x2C`が空区間であれば`DAT_0068B3A8`を選ぶ。そうでなければ`local_34+0
   制約・訂正　Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 1922](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L1922-L1922) — "before": "*(int *)(param_1 + 0x1eed18) = param_1 + 0x14;",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 2153](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L2153-L2153) — "before": "*(int *)(param_1 + 0x1eed18) = param_1 + 0x14;",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json 行 797](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json?plain=1#L797-L797) — "code": "*(int *)(param_1 + 0x1eed18) = param_1 + 0x14;",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json 行 2076](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json?plain=1#L2076-L2076) — "context_before": "*(int *)(param_1 + 0x1eed18) = param_1 + 0x14;",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
 
 <a id="field-1c"></a>
 ## param_1 + 0x1C
@@ -52,6 +115,12 @@
 <a id="field-38"></a>
 ## param_1 + 0x38
 
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 539](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L539-L539) — "source": "(bVar4 = true, *(char *)(*(int *)(param_1 + 0x38) + 0x1eec44) != '\\0')) {",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 540](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L540-L540) — "before": "if ((*(int *)(param_1 + 0x38) == 0) \|\|",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
 - [research/recovered/json_sources1/reports/data/B_T012_T013_PERSON_POOL_LIFECYCLE_EVIDENCE_20261023_1215.json 行 154](../../research/recovered/json_sources1/reports/data/B_T012_T013_PERSON_POOL_LIFECYCLE_EVIDENCE_20261023_1215.json?plain=1#L154-L154) — "marker": "param_1 + 0x38",
   制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
 
@@ -61,11 +130,47 @@
 - [research/recovered/rea_batch14/reports/WAVE3_FINDINGS_20261010.md 行 29](../../research/recovered/rea_batch14/reports/WAVE3_FINDINGS_20261010.md?plain=1#L29-L29) — - **T012/T013 `0x4E7ED0`:** 返値0/1の判定helperには `param_1+0x3C` による2つのアルゴリズム分岐がある。一方は `param_2` の座標+0x214/+0x218を中心とする空間グリッドを走査し、候補のenable byte+0x65、除外状態+0x1AE、powe
   制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
 
+<a id="field-40"></a>
+## param_1 + 0x40
+
+- [research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json 行 465](../../research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json?plain=1#L465-L465) — "text": "local_e8 = (char *)((*(int *)(param_1 + 0x48) - *(int *)(param_1 + 0x40)) / 2);"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+<a id="field-44"></a>
+## param_1 + 0x44
+
+- [research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json 行 469](../../research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json?plain=1#L469-L469) — "text": "pcVar15 = (char *)((*(int *)(param_1 + 0x4c) - *(int *)(param_1 + 0x44)) / 2);"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
 <a id="field-48"></a>
 ## param_1 + 0x48
 
 - [research/recovered/b_batch4/data/B_T012_T013_PERSON_POOL_LIFECYCLE_OFFLINE_20261023_1215.md 行 19](../../research/recovered/b_batch4/data/B_T012_T013_PERSON_POOL_LIFECYCLE_OFFLINE_20261023_1215.md?plain=1#L19-L19) — \| `0x005149C0` \| `*(void **)(param_1+0x4C) = *(void **)(param_1+0x48)`、類似操作は`+0x38`群、`+0x58`群にも存在 \| **一括論理クリア：STATIC-GHIDRA**。要素毎の仮想デストラクタ呼出しはこの関数内に見えない。呼出site
   制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+- [research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json 行 465](../../research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json?plain=1#L465-L465) — "text": "local_e8 = (char *)((*(int *)(param_1 + 0x48) - *(int *)(param_1 + 0x40)) / 2);"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+- [research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json 行 1485](../../research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json?plain=1#L1485-L1485) — "text": "iVar1 = *(int *)(param_1 + 0x48);"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+- [research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json 行 1514](../../research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json?plain=1#L1514-L1514) — "text": "iVar10 = *(int *)(param_1 + 0x48);"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+- [research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json 行 2948](../../research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json?plain=1#L2948-L2948) — "text": "*(undefined4 *)(param_1 + 0x48) = 0;"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+- [research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json 行 3062](../../research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json?plain=1#L3062-L3062) — "text": "*(undefined4 *)(param_1 + 0x48) = 0;"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+- [research/recovered/json_exp_exe1/reports/17_EXP_SIMPLEBATTLE_LIFECYCLE_EVIDENCE_20261022.json 行 694](../../research/recovered/json_exp_exe1/reports/17_EXP_SIMPLEBATTLE_LIFECYCLE_EVIDENCE_20261022.json?plain=1#L694-L694) — "text": "  piVar5 = *(int **)(param_1 + 0x48);"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened.
+
+- [research/recovered/json_exp_exe1/reports/17_EXP_SIMPLEBATTLE_LIFECYCLE_EVIDENCE_20261022.json 行 702](../../research/recovered/json_exp_exe1/reports/17_EXP_SIMPLEBATTLE_LIFECYCLE_EVIDENCE_20261022.json?plain=1#L702-L702) — "text": "  pvVar3 = *(void **)(param_1 + 0x48);"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json 行 693](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json?plain=1#L693-L693) — "context_after": "piVar11 = *(int **)(param_1 + 0x48);"
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
 
 - [research/recovered/json_sources1/reports/data/B_T012_T013_PERSON_POOL_LIFECYCLE_EVIDENCE_20261023_1215.json 行 134](../../research/recovered/json_sources1/reports/data/B_T012_T013_PERSON_POOL_LIFECYCLE_EVIDENCE_20261023_1215.json?plain=1#L134-L134) — "marker": "param_1 + 0x48",
   制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
@@ -81,6 +186,27 @@
 
 - [research/recovered/b_batch4/data/B_T012_T013_PERSON_POOL_LIFECYCLE_OFFLINE_20261023_1215.md 行 19](../../research/recovered/b_batch4/data/B_T012_T013_PERSON_POOL_LIFECYCLE_OFFLINE_20261023_1215.md?plain=1#L19-L19) — \| `0x005149C0` \| `*(void **)(param_1+0x4C) = *(void **)(param_1+0x48)`、類似操作は`+0x38`群、`+0x58`群にも存在 \| **一括論理クリア：STATIC-GHIDRA**。要素毎の仮想デストラクタ呼出しはこの関数内に見えない。呼出site
   制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+- [research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json 行 469](../../research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json?plain=1#L469-L469) — "text": "pcVar15 = (char *)((*(int *)(param_1 + 0x4c) - *(int *)(param_1 + 0x44)) / 2);"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+- [research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json 行 1489](../../research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json?plain=1#L1489-L1489) — "text": "if (iVar1 != *(int *)(param_1 + 0x4c)) {"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+- [research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json 行 1493](../../research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json?plain=1#L1493-L1493) — "text": "} while (iVar1 != *(int *)(param_1 + 0x4c));"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+- [research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json 行 1518](../../research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json?plain=1#L1518-L1518) — "text": "if (iVar10 != *(int *)(param_1 + 0x4c)) {"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+- [research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json 行 1522](../../research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json?plain=1#L1522-L1522) — "text": "} while (iVar10 != *(int *)(param_1 + 0x4c));"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+- [research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json 行 2944](../../research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json?plain=1#L2944-L2944) — "text": "*(undefined4 *)(param_1 + 0x4c) = 0xf;"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+- [research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json 行 3058](../../research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json?plain=1#L3058-L3058) — "text": "*(undefined4 *)(param_1 + 0x4c) = 0xf;"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
 
 - [research/recovered/json_sources1/reports/data/B_T012_T013_PERSON_POOL_LIFECYCLE_EVIDENCE_20261023_1215.json 行 139](../../research/recovered/json_sources1/reports/data/B_T012_T013_PERSON_POOL_LIFECYCLE_EVIDENCE_20261023_1215.json?plain=1#L139-L139) — "marker": "param_1 + 0x4c",
   制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
@@ -100,6 +226,12 @@
 <a id="field-58"></a>
 ## param_1 + 0x58
 
+- [research/recovered/json_exp_exe1/reports/17_EXP_SIMPLEBATTLE_LIFECYCLE_EVIDENCE_20261022.json 行 698](../../research/recovered/json_exp_exe1/reports/17_EXP_SIMPLEBATTLE_LIFECYCLE_EVIDENCE_20261022.json?plain=1#L698-L698) — "text": "  piVar5 = *(int **)(param_1 + 0x58);"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened.
+
+- [research/recovered/json_exp_exe1/reports/17_EXP_SIMPLEBATTLE_LIFECYCLE_EVIDENCE_20261022.json 行 706](../../research/recovered/json_exp_exe1/reports/17_EXP_SIMPLEBATTLE_LIFECYCLE_EVIDENCE_20261022.json?plain=1#L706-L706) — "text": "  pvVar3 = *(void **)(param_1 + 0x58);"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened.
+
 - [research/recovered/json_sources1/reports/data/B_T012_T013_PERSON_POOL_LIFECYCLE_EVIDENCE_20261023_1215.json 行 149](../../research/recovered/json_sources1/reports/data/B_T012_T013_PERSON_POOL_LIFECYCLE_EVIDENCE_20261023_1215.json?plain=1#L149-L149) — "marker": "param_1 + 0x58",
   制約・訂正　Saved authored analysis/inventory/finite-model claims only; proposals/test/PASS/native/READY/ABI/type/Golden states not independently validated. Linked targets and original assets not acquired. No new runtime/correctness credit.
 
@@ -109,17 +241,59 @@
 - [research/recovered/rea_batch10/reports/REA_20261022_0843_T014_BYTE_WIRE4_PAIR_STATIC.md 行 15](../../research/recovered/rea_batch10/reports/REA_20261022_0843_T014_BYTE_WIRE4_PAIR_STATIC.md?plain=1#L15-L15) — - 読込親0x5964C0: 既存Ghidra擬似Cでは0x59650D CALL 0x4707D0に `param_1+0x1C`、0x59651D CALL 0x4707D0に `param_1+0x1D` を渡し、次の0x596529 CALL 0x470700には `param_1+0x5C` を渡す。後者のA
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
 
+<a id="field-70"></a>
+## param_1 + 0x70
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 594](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L594-L594) — "before": "if ((((iVar5 % 0x1e == 0) && (*(int *)(*(int *)(param_1 + 0x70) + 0x14) == 0)) &&",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
 <a id="field-78"></a>
 ## param_1 + 0x78
 
 - [research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md 行 20](../../research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md?plain=1#L20-L20) — - 今回新たに確認した `0x00583DC0` は `*(char*)(param_1+0x78)==0 && *(int*)(param_1+0x94)==0` の場合、`*(int*)(param_1+0x1A4)` を取り、さらにその `+0x300` を参照してtreeを走査する。この読み取りは**`+0x1
   制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
 
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 2751](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L2751-L2751) — "before": "iVar2 = *(int *)(param_1 + 0x78);",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+<a id="field-8c"></a>
+## param_1 + 0x8C
+
+- [research/recovered/json_exp_exe1/reports/15_EXP_SETTLEMENT_OWNER_AUDIT_20261022_04.json 行 606](../../research/recovered/json_exp_exe1/reports/15_EXP_SETTLEMENT_OWNER_AUDIT_20261022_04.json?plain=1#L606-L606) — "text": "  if (*(char *)(param_1 + 0x8c) == '\\0') {"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Short selected original-provenance DAT examples attached to authored analysis (9/4/4 examples,4-25LF each); not source-file or systematic property-corpus export, and no inheritance/runtime coverage inferred.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 1212](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L1212-L1212) — "before": "if ((*(char *)(param_1 + 0x8c) != '\\0') &&",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json 行 855](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json?plain=1#L855-L855) — "context_after": "(*(char *)(param_1 + 0x8c) == '\\0')) &&"
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json 行 1568](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json?plain=1#L1568-L1568) — "context_before": "if ((*(char *)(param_1 + 0x8c) != '\\0') &&",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
 <a id="field-94"></a>
 ## param_1 + 0x94
 
 - [research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md 行 20](../../research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md?plain=1#L20-L20) — - 今回新たに確認した `0x00583DC0` は `*(char*)(param_1+0x78)==0 && *(int*)(param_1+0x94)==0` の場合、`*(int*)(param_1+0x1A4)` を取り、さらにその `+0x300` を参照してtreeを走査する。この読み取りは**`+0x1
   制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
+<a id="field-a0"></a>
+## param_1 + 0xA0
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 2752](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L2752-L2752) — "after": "if (*(int *)(param_1 + 0xa0) == 1) {"
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json 行 741](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json?plain=1#L741-L741) — "context_after": "*(undefined4 *)(param_1 + 0xa0) = 1;"
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json 行 879](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json?plain=1#L879-L879) — "context_after": "*(undefined4 *)(param_1 + 0xa0) = 1;"
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+<a id="field-ac"></a>
+## param_1 + 0xAC
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 595](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L595-L595) — "after": "(piVar6 = (int *)**(int **)(param_1 + 0xac), piVar6 != *(int **)(param_1 + 0xac))) {"
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
 
 <a id="field-c0"></a>
 ## param_1 + 0xC0
@@ -136,82 +310,79 @@
 - [research/recovered/b_batch5/data/T011_LEVEL_ZERO_SENTINEL_CALLER_BRANCHES_OFFLINE_20261021_0413.md 行 13](../../research/recovered/b_batch5/data/T011_LEVEL_ZERO_SENTINEL_CALLER_BRANCHES_OFFLINE_20261021_0413.md?plain=1#L13-L13) — 3. callee `0x0058B7F0`の保存擬似Cは第3引数が`-0x7FFFFFF8`の場合、Unit候補`+0x1A4`の辞書からキー`class`の値を取り直して`+0x168`へ書き込む。それ以外では渡された数値を使用する。その後、別の`param_1`種別による`scenario`値または`param_
   制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
 
+<a id="field-e4"></a>
+## param_1 + 0xE4
+
+- [research/recovered/json_exp_exe1/reports/26_EXP_WRITER_CENSUS_20261022.json 行 624](../../research/recovered/json_exp_exe1/reports/26_EXP_WRITER_CENSUS_20261022.json?plain=1#L624-L624) — "*(undefined1 **)(param_1 + 0xe4) = &DAT_00002710;",
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+<a id="field-104"></a>
+## param_1 + 0x104
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 548](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L548-L548) — "source": "if (*(char *)(*(int *)(param_1 + 0x104) + 0x1eec44) != '\\0') {",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 558](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L558-L558) — "before": "(iVar5 = *(int *)(param_1 + 0x104), *(char *)(iVar5 + 0x1eec4c) == '\\0')) &&",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 2613](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L2613-L2613) — "source": "iVar5 = *(int *)(*(int *)(param_1 + 0x104) + 0x1eec3c);",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 2623](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L2623-L2623) — "before": "(iVar5 = *(int *)(param_1 + 0x104), *(char *)(iVar5 + 0x1eec4c) == '\\0')) &&",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+<a id="field-158"></a>
+## param_1 + 0x158
+
+- [research/recovered/json_exp_exe1/reports/26_EXP_WRITER_CENSUS_20261022.json 行 259](../../research/recovered/json_exp_exe1/reports/26_EXP_WRITER_CENSUS_20261022.json?plain=1#L259-L259) — "FUN_00415770(param_1 + 0x158,unaff_EDI + 0x158);",
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+<a id="field-168"></a>
+## param_1 + 0x168
+
+- [research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json 行 2838](../../research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json?plain=1#L2838-L2838) — "text": "*(undefined4 *)(param_1 + 0x168) = *(undefined4 *)(param_2 + 0x168);"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+- [research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json 行 2952](../../research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json?plain=1#L2952-L2952) — "text": "*(undefined4 *)(param_1 + 0x168) = *(undefined4 *)(unaff_EDI + 0x168);"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+- [research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json 行 3066](../../research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json?plain=1#L3066-L3066) — "text": "*(undefined4 *)(param_1 + 0x168) = 1;"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+- [research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json 行 3646](../../research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json?plain=1#L3646-L3646) — "text": "*(int *)(param_1 + 0x168) ="
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+- [research/recovered/json_exp_exe1/reports/15_EXP_SETTLEMENT_OWNER_AUDIT_20261022_04.json 行 656](../../research/recovered/json_exp_exe1/reports/15_EXP_SETTLEMENT_OWNER_AUDIT_20261022_04.json?plain=1#L656-L656) — "text": "    if ((local_64 == 0) \|\| (*(int *)(param_1 + 0x168) < local_18)) break;"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Short selected original-provenance DAT examples attached to authored analysis (9/4/4 examples,4-25LF each); not source-file or systematic property-corpus export, and no inheritance/runtime coverage inferred.
+
+- [research/recovered/json_exp_exe1/reports/15_EXP_SETTLEMENT_OWNER_AUDIT_20261022_04.json 行 660](../../research/recovered/json_exp_exe1/reports/15_EXP_SETTLEMENT_OWNER_AUDIT_20261022_04.json?plain=1#L660-L660) — "text": "         uVar9 = uStack_d8, (int)uVar10 <= *(int *)(param_1 + 0x168))) {"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Short selected original-provenance DAT examples attached to authored analysis (9/4/4 examples,4-25LF each); not source-file or systematic property-corpus export, and no inheritance/runtime coverage inferred.
+
+- [research/recovered/json_exp_exe1/reports/26_EXP_WRITER_CENSUS_20261022.json 行 26](../../research/recovered/json_exp_exe1/reports/26_EXP_WRITER_CENSUS_20261022.json?plain=1#L26-L26) — "*(undefined4 *)(param_1 + 0x168) = 0x80000008;"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+- [research/recovered/json_exp_exe1/reports/26_EXP_WRITER_CENSUS_20261022.json 行 242](../../research/recovered/json_exp_exe1/reports/26_EXP_WRITER_CENSUS_20261022.json?plain=1#L242-L242) — "*(undefined4 *)(param_1 + 0x168) = *(undefined4 *)(param_2 + 0x168);"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+- [research/recovered/json_exp_exe1/reports/26_EXP_WRITER_CENSUS_20261022.json 行 260](../../research/recovered/json_exp_exe1/reports/26_EXP_WRITER_CENSUS_20261022.json?plain=1#L260-L260) — "*(undefined4 *)(param_1 + 0x168) = *(undefined4 *)(unaff_EDI + 0x168);"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+- [research/recovered/json_exp_exe1/reports/26_EXP_WRITER_CENSUS_20261022.json 行 367](../../research/recovered/json_exp_exe1/reports/26_EXP_WRITER_CENSUS_20261022.json?plain=1#L367-L367) — "*(int *)(param_1 + 0x168) =",
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+- [research/recovered/json_exp_exe1/reports/26_EXP_WRITER_CENSUS_20261022.json 行 386](../../research/recovered/json_exp_exe1/reports/26_EXP_WRITER_CENSUS_20261022.json?plain=1#L386-L386) — "*(undefined4 *)(param_1 + 0x168) = 0x80000008;"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
+- [research/recovered/json_exp_exe1/reports/26_EXP_WRITER_CENSUS_20261022.json 行 625](../../research/recovered/json_exp_exe1/reports/26_EXP_WRITER_CENSUS_20261022.json?plain=1#L625-L625) — "*(undefined4 *)(param_1 + 0x168) = 1;"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
+
 <a id="field-16c"></a>
 ## param_1 + 0x16C
 
 - [research/recovered/b_batch4/data/T011_EXP_LEVEL_INIT_RECALC_OFFLINE_20261021_0309.md 行 13](../../research/recovered/b_batch4/data/T011_EXP_LEVEL_INIT_RECALC_OFFLINE_20261021_0309.md?plain=1#L13-L13) — 3. `0x58A540`: `param_1+0x16C=0`を書いた後、`+0x168 > 1`ならレベルに応じたループで`+0x16C`を再算出。`exp_max`と`exp_mul`という設定キーを参照し、成長の途中で`0x5D1B80`も呼ぶ。`+0x16C`は初期化経路で残存値を無条件に温存する領域ではない
   制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
 
-<a id="field-1a4"></a>
-## param_1 + 0x1A4
-
-- [research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md 行 20](../../research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md?plain=1#L20-L20) — - 今回新たに確認した `0x00583DC0` は `*(char*)(param_1+0x78)==0 && *(int*)(param_1+0x94)==0` の場合、`*(int*)(param_1+0x1A4)` を取り、さらにその `+0x300` を参照してtreeを走査する。この読み取りは**`+0x1
-  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
-
-- [research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md 行 23](../../research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md?plain=1#L23-L23) — - 直接CALL索引：`0x00583CF0` 内 `0x00583D82 -> 0x00583DC0`。`0x00583CF0`はまず `*(param_1+0x1A4)+0x2F0` を介した別の走査を行い、行き着かない場合に `0x583DC0` のフォールバックへ進む擬似Cがある。**`+0x2F0`と`+0x
-  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
-
-<a id="field-1d0"></a>
-## param_1 + 0x1D0
-
-- [research/recovered/b_batch7/data/T012_RUSH_VTABLE_LOGICAL_VS_PHYSICAL_LIFETIME_OFFLINE_20261021_1509.md 行 16](../../research/recovered/b_batch7/data/T012_RUSH_VTABLE_LOGICAL_VS_PHYSICAL_LIFETIME_OFFLINE_20261021_1509.md?plain=1#L16-L16) — 4. `0x005501A0` 擬似Cの生成回数上限到達側は **CALL site `0x005503F9 → 0x004C22B0(param_1,0)`** の後、 `*(byte *)(param_1+0x1D0)=0`。`0x004C22B0` 擬似Cは管理配列からポインタを0にする、別配列で要素を詰める等の
-  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
-
-<a id="field-1d4"></a>
-## param_1 + 0x1D4
-
-- [research/recovered/b_batch6/data/T012_5501A0_PERIODIC_DISPATCH_STATIC_20261021_0910.md 行 5](../../research/recovered/b_batch6/data/T012_5501A0_PERIODIC_DISPATCH_STATIC_20261021_0910.md?plain=1#L5-L5) — - STATIC: effect-like param_1+0x1D4から定義参照。param_1+0x1F4をincrementし、[definition+0x78] <= counterでcounterを0に戻して分配処理へ進む。負値、0周期、overflowのnative semanticsはVERIFY。
-  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
-
-<a id="field-1f4"></a>
-## param_1 + 0x1F4
-
-- [research/recovered/b_batch6/data/T012_5501A0_PERIODIC_DISPATCH_STATIC_20261021_0910.md 行 5](../../research/recovered/b_batch6/data/T012_5501A0_PERIODIC_DISPATCH_STATIC_20261021_0910.md?plain=1#L5-L5) — - STATIC: effect-like param_1+0x1D4から定義参照。param_1+0x1F4をincrementし、[definition+0x78] <= counterでcounterを0に戻して分配処理へ進む。負値、0周期、overflowのnative semanticsはVERIFY。
-  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
-
-<a id="field-280"></a>
-## param_1 + 0x280
-
-- [research/recovered/b_batch4/data/B_T012_SCALE_INIT_PARSER_COPY_OFFLINE_20261024_14H.md 行 42](../../research/recovered/b_batch4/data/B_T012_SCALE_INIT_PARSER_COPY_OFFLINE_20261024_14H.md?plain=1#L42-L42) — *(undefined8 *)(param_1 + 0x280) = *(undefined8 *)(param_2 + 0x280);
-  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
-
-<a id="field-288"></a>
-## param_1 + 0x288
-
-- [research/recovered/b_batch4/data/B_T012_SCALE_INIT_PARSER_COPY_OFFLINE_20261024_14H.md 行 43](../../research/recovered/b_batch4/data/B_T012_SCALE_INIT_PARSER_COPY_OFFLINE_20261024_14H.md?plain=1#L43-L43) — *(undefined8 *)(param_1 + 0x288) = *(undefined8 *)(param_2 + 0x288);
-  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
-
-<a id="field-2fc"></a>
-## param_1 + 0x2FC
-
-- [research/recovered/b_batch3/T011_MEMBER_FACTORY_REENTRY_GATE_OFFLINE_20261021_0510.md 行 20](../../research/recovered/b_batch3/T011_MEMBER_FACTORY_REENTRY_GATE_OFFLINE_20261021_0510.md?plain=1#L20-L20) — 2. `0x0046717E → 0x00582D90`へ戻る直接CALLを確認。続いて `0x0046718D → 0x00436560`、`0x004671A7 → 0x00436680`、`0x004671B3 → 0x00463280`の順が保存擬似Cに存在し、最後の呼出には`param_1 + 0x2FC`が
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_batch5/data/T011_MEMBER_LOOKUP_BACKLINK_AND_TREE_INSERT_OFFLINE_20261021_0610.md 行 21](../../research/recovered/b_batch5/data/T011_MEMBER_LOOKUP_BACKLINK_AND_TREE_INSERT_OFFLINE_20261021_0610.md?plain=1#L21-L21) — - `0x00466F60`の `0x004671B3 → 0x00463280` は `param_1+0x2FC` を第1引数とする（推定用途：当該コンテキスト内のtree管理。実体型VERIFY）。
-  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
-
-- [research/recovered/b_batch5/data/T011_MEMBER_LOOKUP_BACKLINK_AND_TREE_INSERT_OFFLINE_20261021_0610.md 行 25](../../research/recovered/b_batch5/data/T011_MEMBER_LOOKUP_BACKLINK_AND_TREE_INSERT_OFFLINE_20261021_0610.md?plain=1#L25-L25) — - 同じ`0x00463280`は既存T013研究でもtreeへの挿入helperとして言及済み。**今回のT011固有増分は、member lookupの書込と当該生成callerの`param_1+0x2FC` tree成否の接続**であり、汎用挿入helper自体を新発見として再計上しない。
-  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
-
-- [research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md 行 12](../../research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md?plain=1#L12-L12) — - 前回 `B-OFFLINE-20261021-0610-01` で確認済み：`0x00466F60` の直接CALL site `0x004671B3 -> 0x00463280` は第1引数として `param_1+0x2FC` を渡す。ここでは `param_1` を「当該callerのコンテキストポインタ」と
-  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
-
-<a id="field-300"></a>
-## param_1 + 0x300
-
-- [research/recovered/b_batch5/data/T011_MEMBER_LOOKUP_BACKLINK_AND_TREE_INSERT_OFFLINE_20261021_0610.md 行 14](../../research/recovered/b_batch5/data/T011_MEMBER_LOOKUP_BACKLINK_AND_TREE_INSERT_OFFLINE_20261021_0610.md?plain=1#L14-L14) — - `local_10 != *(int *)(param_1 + 0x300)` のhit分岐で、`*(int *)(*(int *)(local_10 + 0x28) + 0x1A4) = param_1` を実行し、続いて `uVar1 = *(undefined4 *)(local_10 + 0x28)` を返
-  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
-
-<a id="field-4a8"></a>
-## param_1 + 0x4A8
-
-- [research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1530_P0_DIPLO_HELP_HANDOFF_AUDIT.md 行 85](../../research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1530_P0_DIPLO_HELP_HANDOFF_AUDIT.md?plain=1#L85-L85) — これにより**待避／名前付きイベント要求／名前付きイベント検査／条件付きの通常経路呼出し**という静的接続候補を得た。`0x00521D90`側の条件は文字列判定成立と`DAT_0087F6F0 != 1`。Ghidra疑似Cでも`*(param_1+0x4a8)=0; FUN_00490590();`を確認した。両文
-  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
-
-<a id="field-1eec71"></a>
-## param_1 + 0x1EEC71
-
-- [research/recovered/e_batch4/T020_FASTSIM_TAIL_MULTIENTRY_CROSSWALK_20261023_2153.md 行 11](../../research/recovered/e_batch4/T020_FASTSIM_TAIL_MULTIENTRY_CROSSWALK_20261023_2153.md?plain=1#L11-L11) — この外側gateと、0x0048EEE0内のparam_1+0x1EEC71を0/1へ更新する枝は異なるfield／異なるポインタ基点。数字が近いというだけで同一状態フラグとみなさない。
-  制約・訂正　Historical authored claims only; referenced payloads not opened or executed; actual INELIGIBLE/NOT RUN and historical counts preserved; no new native/runtime/Golden/strict MATCH/READY; excluded composites remain deferred outside this subset
+- [research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json 行 1013](../../research/recovered/json_exp_exe1/reports/06_EXP_AI_EVIDENCE_20261021.json?plain=1#L1013-L1013) — "text": "if (*(uint *)(param_1 + 0x170) <= *(uint *)(param_1 + 0x16c)) {"
+  制約・訂正　Historical authored metadata/static proof claims only; no new native/runtime/Golden/READY/correctness/type/ABI promotion. Linked native/code/script/log/DB/archive/asset targets unopened. Held5710C0 entry is opaque hash/empty-match metadata only; no held payload adopted. Opaque callee/exclusion history does not lift any hold.
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

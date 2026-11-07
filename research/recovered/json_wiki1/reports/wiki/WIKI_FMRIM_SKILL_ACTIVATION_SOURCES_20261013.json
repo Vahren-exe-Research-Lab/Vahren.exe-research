@@ -1,0 +1,616 @@
+{
+  "status": "ORIGINAL 0.67 DAT STRING OCCURRENCES; NOT ACTIVE EVENT PROOF",
+  "tokens": [
+    "sp_fmrim_joker",
+    "sp_fmrim_heal",
+    "sp_fmrim_heal2",
+    "sp_fmrim_heal3"
+  ],
+  "occurrences": 43,
+  "rows": [
+    {
+      "file": "a_default/script/10_ユニット/26_クッキー☆原理主義党.dat",
+      "line": 433,
+      "text": "//sp_fmrim_joker",
+      "context_before": [
+        "\tskill = sp_magic,b_medama_n2,claw0,claw1,ps_hp2,ps_dx3,ps_mg2,ps_mr,ps_ligh2,pes_sikihendo",
+        "\tskill2 = sp_fmrim_fmi"
+      ],
+      "context_after": [
+        "\tdelskill = sam_rim,b_ligh",
+        "\t",
+        "\t//LS追加する場合は右に加筆すること　leader_skill = item_leader_skillset*1"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 5,
+      "text": "skill sp_fmrim_joker:sk_ms",
+      "context_before": [
+        "//　．FMRIM________________________________________________________",
+        "//無差別回復・KB"
+      ],
+      "context_after": [
+        "{",
+        "\tname = 雨になってしまえばいいのに",
+        "\ticon = _sp,fmrim_icon.png*100,icon_dare,@special.png"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 21,
+      "text": "gun_delay = sp_fmrim_joker*4",
+      "context_before": [
+        "\tmp = 500",
+        "\tdelay = 8"
+      ],
+      "context_after": [
+        "\tcheck = 1000",
+        "\t",
+        "\tmsg@fmrim = MAD作者もクッキー☆声優も、$大きな目線で見れば$同じ表現者なんだ。@sp_fmrim_joker"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 24,
+      "text": "msg@fmrim = MAD作者もクッキー☆声優も、$大きな目線で見れば$同じ表現者なんだ。@sp_fmrim_joker",
+      "context_before": [
+        "\tcheck = 1000",
+        "\t"
+      ],
+      "context_after": [
+        "\t",
+        "\t",
+        "\tnext = sp_fmrim_joker_nt0"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 27,
+      "text": "next = sp_fmrim_joker_nt0",
+      "context_before": [
+        "\t",
+        "\t"
+      ],
+      "context_after": [
+        "\tnext_last = on",
+        "\tpair_next = sp_fmrim_joker_pr0",
+        "}"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 29,
+      "text": "pair_next = sp_fmrim_joker_pr0",
+      "context_before": [
+        "\tnext = sp_fmrim_joker_nt0",
+        "\tnext_last = on"
+      ],
+      "context_after": [
+        "}",
+        "skill sp_fmrim_joker_pr0",
+        "{"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 31,
+      "text": "skill sp_fmrim_joker_pr0",
+      "context_before": [
+        "\tpair_next = sp_fmrim_joker_pr0",
+        "}"
+      ],
+      "context_after": [
+        "{",
+        "\tjoint_skill = on",
+        "\tnext3 = sp_fmrim_joker_pr1,sp_fmrim_joker_hude_pr0,fmrim_ufo_pr"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 34,
+      "text": "next3 = sp_fmrim_joker_pr1,sp_fmrim_joker_hude_pr0,fmrim_ufo_pr",
+      "context_before": [
+        "{",
+        "\tjoint_skill = on"
+      ],
+      "context_after": [
+        "}",
+        "//ここにかかる時間－８だけ後のwait_time にする",
+        "skill sp_fmrim_joker_hude_pr0"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 37,
+      "text": "skill sp_fmrim_joker_hude_pr0",
+      "context_before": [
+        "}",
+        "//ここにかかる時間－８だけ後のwait_time にする"
+      ],
+      "context_after": [
+        "{",
+        "sound = sei_ge_spen_kaku02",
+        "joint_skill = on"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 108,
+      "text": "skill sp_fmrim_joker_pr1",
+      "context_before": [
+        "}",
+        ""
+      ],
+      "context_after": [
+        "{",
+        "\tjoint_skill = on",
+        "\trange = 90"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 120,
+      "text": "skill sp_fmrim_joker_nt0",
+      "context_before": [
+        "}",
+        ""
+      ],
+      "context_after": [
+        "{",
+        "\tjoint_skill = on",
+        "\trange = 50"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 124,
+      "text": "next = sp_fmrim_joker_nt1",
+      "context_before": [
+        "\tjoint_skill = on",
+        "\trange = 50"
+      ],
+      "context_after": [
+        "}",
+        "skill sp_fmrim_joker_nt1:sp_fmrim_nt1",
+        "{"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 126,
+      "text": "skill sp_fmrim_joker_nt1:sp_fmrim_nt1",
+      "context_before": [
+        "\tnext = sp_fmrim_joker_nt1",
+        "}"
+      ],
+      "context_after": [
+        "{",
+        "\tnext3 = sp_fmrim_joker_nt2",
+        "}"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 128,
+      "text": "next3 = sp_fmrim_joker_nt2",
+      "context_before": [
+        "skill sp_fmrim_joker_nt1:sp_fmrim_nt1",
+        "{"
+      ],
+      "context_after": [
+        "}",
+        "skill sp_fmrim_joker_nt2:sp_fmrim_nt2",
+        "{"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 130,
+      "text": "skill sp_fmrim_joker_nt2:sp_fmrim_nt2",
+      "context_before": [
+        "\tnext3 = sp_fmrim_joker_nt2",
+        "}"
+      ],
+      "context_after": [
+        "{",
+        "\trotate = @",
+        "\td360 = off"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 143,
+      "text": "next3 = sp_fmrim_joker_nt7a,sp_fmrim_joker_nt7b,sp_fmrim_jocar_nt0",
+      "context_before": [
+        "\tresize_a = -30",
+        "\ttime = 508"
+      ],
+      "context_after": [
+        "\tnext_first = on",
+        "}",
+        "//ここのwait_time を変える"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 147,
+      "text": "skill sp_fmrim_joker_nt7a",
+      "context_before": [
+        "}",
+        "//ここのwait_time を変える"
+      ],
+      "context_after": [
+        "{",
+        "\twait_time = 28",
+        "\tjoint_skill = on"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 158,
+      "text": "skill sp_fmrim_joker_nt7b",
+      "context_before": [
+        "\tnext_order = on",
+        "}"
+      ],
+      "context_after": [
+        "{",
+        "\twait_time = 28",
+        "\tjoint_skill = on"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 163,
+      "text": "next3 = sp_fmrim_joker_nt8,sp_fmrim_joker_nt8b,sp_fmrim_joker_rainbow_joi0",
+      "context_before": [
+        "\tjoint_skill = on",
+        "\trange = 100"
+      ],
+      "context_after": [
+        "\t//,sp_fmrim_nt9",
+        "\t",
+        "\t//雨の効果音"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 171,
+      "text": "skill sp_fmrim_joker_nt8:sk_ms",
+      "context_before": [
+        "//猶予は88－wait_time",
+        "//雲から雨を降らす"
+      ],
+      "context_after": [
+        "{",
+        "\tdamage = -3",
+        "\tspeed = 300"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 179,
+      "text": "skill sp_fmrim_joker_nt8b:sp_fmrim_joker_nt8",
+      "context_before": [
+        "\tnext_interval = 10",
+        "}"
+      ],
+      "context_after": [
+        "{",
+        "\tnext3 = sp_fmrim_joker_biim23_summon_nt0_joi",
+        "\tnext_interval = 5"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 181,
+      "text": "next3 = sp_fmrim_joker_biim23_summon_nt0_joi",
+      "context_before": [
+        "skill sp_fmrim_joker_nt8b:sp_fmrim_joker_nt8",
+        "{"
+      ],
+      "context_after": [
+        "\tnext_interval = 5",
+        "}",
+        "skill sp_fmrim_joker_biim23_summon_nt0_joi"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 184,
+      "text": "skill sp_fmrim_joker_biim23_summon_nt0_joi",
+      "context_before": [
+        "\tnext_interval = 5",
+        "}"
+      ],
+      "context_after": [
+        "{",
+        "joint_skill = on",
+        "next2 = sp_fmrim_joker_biim23_summon_nt0,sp_fmrim_joker_biim23_summon_nt0,sp_fmrim_joker_biim23_summon_nt2,sp_fmrim_joker_biim23_summon_nt3"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 187,
+      "text": "next2 = sp_fmrim_joker_biim23_summon_nt0,sp_fmrim_joker_biim23_summon_nt0,sp_fmrim_joker_biim23_summon_nt2,sp_fmrim_joker_biim23_summon_nt3",
+      "context_before": [
+        "{",
+        "joint_skill = on"
+      ],
+      "context_after": [
+        "random_space = 90",
+        "rush = 40",
+        "rush_interval = 1"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 193,
+      "text": "skill sp_fmrim_joker_biim23_summon_nt0:sk_ms",
+      "context_before": [
+        "}",
+        ""
+      ],
+      "context_after": [
+        "{",
+        "damage = 0",
+        "movetype = drop"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 208,
+      "text": "next3 = sp_fmrim_joker_eliz_hokyu_nt1",
+      "context_before": [
+        "\ttime = 20",
+        "\tattack_us = 2"
+      ],
+      "context_after": [
+        "}",
+        "skill sp_fmrim_joker_eliz_hokyu_nt1:sk_ms",
+        "{"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 210,
+      "text": "skill sp_fmrim_joker_eliz_hokyu_nt1:sk_ms",
+      "context_before": [
+        "\tnext3 = sp_fmrim_joker_eliz_hokyu_nt1",
+        "}"
+      ],
+      "context_after": [
+        "{",
+        "exp_per = off",
+        "\tattack_us = 2"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 217,
+      "text": "next3 = sp_fmrim_heal",
+      "context_before": [
+        "\th = 32",
+        "\tbom = off"
+      ],
+      "context_after": [
+        "}",
+        "",
+        "skill sp_fmrim_heal:m_heal"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 220,
+      "text": "skill sp_fmrim_heal:m_heal",
+      "context_before": [
+        "}",
+        ""
+      ],
+      "context_after": [
+        "{",
+        "sound = @",
+        "\timage = m_rainbowball5"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 242,
+      "text": "skill sp_fmrim_joker_biim23_summon_nt2:sp_fmrim_joker_biim23_summon_nt0",
+      "context_before": [
+        "\texp_per = off",
+        "}"
+      ],
+      "context_after": [
+        "{",
+        "\tnext3 = sp_fmrim_joker_eliz_hokyu_nt3",
+        "}"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 244,
+      "text": "next3 = sp_fmrim_joker_eliz_hokyu_nt3",
+      "context_before": [
+        "skill sp_fmrim_joker_biim23_summon_nt2:sp_fmrim_joker_biim23_summon_nt0",
+        "{"
+      ],
+      "context_after": [
+        "}",
+        "skill sp_fmrim_joker_eliz_hokyu_nt3:sp_fmrim_joker_eliz_hokyu_nt1",
+        "{"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 246,
+      "text": "skill sp_fmrim_joker_eliz_hokyu_nt3:sp_fmrim_joker_eliz_hokyu_nt1",
+      "context_before": [
+        "\tnext3 = sp_fmrim_joker_eliz_hokyu_nt3",
+        "}"
+      ],
+      "context_after": [
+        "{",
+        "\tnext3 = sp_fmrim_heal2",
+        "}"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 248,
+      "text": "next3 = sp_fmrim_heal2",
+      "context_before": [
+        "skill sp_fmrim_joker_eliz_hokyu_nt3:sp_fmrim_joker_eliz_hokyu_nt1",
+        "{"
+      ],
+      "context_after": [
+        "}",
+        "skill sp_fmrim_heal2 : sp_fmrim_heal",
+        "{"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 250,
+      "text": "skill sp_fmrim_heal2 : sp_fmrim_heal",
+      "context_before": [
+        "\tnext3 = sp_fmrim_heal2",
+        "}"
+      ],
+      "context_after": [
+        "{",
+        "\timage = m_rainbowballx2_5",
+        "\tflash_image = m_rainbowball5"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 255,
+      "text": "skill sp_fmrim_joker_biim23_summon_nt4:sp_fmrim_joker_biim23_summon_nt0",
+      "context_before": [
+        "\tflash_image = m_rainbowball5",
+        "}"
+      ],
+      "context_after": [
+        "{",
+        "\tnext3 = sp_fmrim_joker_eliz_hokyu_nt5",
+        "}"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 257,
+      "text": "next3 = sp_fmrim_joker_eliz_hokyu_nt5",
+      "context_before": [
+        "skill sp_fmrim_joker_biim23_summon_nt4:sp_fmrim_joker_biim23_summon_nt0",
+        "{"
+      ],
+      "context_after": [
+        "}",
+        "skill sp_fmrim_joker_eliz_hokyu_nt5:sp_fmrim_joker_eliz_hokyu_nt1",
+        "{"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 259,
+      "text": "skill sp_fmrim_joker_eliz_hokyu_nt5:sp_fmrim_joker_eliz_hokyu_nt1",
+      "context_before": [
+        "\tnext3 = sp_fmrim_joker_eliz_hokyu_nt5",
+        "}"
+      ],
+      "context_after": [
+        "{",
+        "\tnext3 = sp_fmrim_heal3",
+        "}"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 261,
+      "text": "next3 = sp_fmrim_heal3",
+      "context_before": [
+        "skill sp_fmrim_joker_eliz_hokyu_nt5:sp_fmrim_joker_eliz_hokyu_nt1",
+        "{"
+      ],
+      "context_after": [
+        "}",
+        "skill sp_fmrim_heal3 : sp_fmrim_heal",
+        "{"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 263,
+      "text": "skill sp_fmrim_heal3 : sp_fmrim_heal",
+      "context_before": [
+        "\tnext3 = sp_fmrim_heal3",
+        "}"
+      ],
+      "context_after": [
+        "{",
+        "\timage = m_rainbowballx2_0",
+        "\tflash_image = m_rainbowball6"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 271,
+      "text": "skill sp_fmrim_joker_rainbow_joi0:sk_ms",
+      "context_before": [
+        "//虹の橋をかける　アフリカでは8色らしいんでそれでいく",
+        "//ネクストインターバル使う"
+      ],
+      "context_after": [
+        "{",
+        "\twait_time = 50",
+        "\tdamage = -3"
+      ]
+    },
+    {
+      "file": "a_default/script/31_ユニットスキル/U_必殺_26_30_原理～イースター.dat",
+      "line": 355,
+      "text": "skill sp_rainbow_joi_red:sp_fmrim_joker_nt8",
+      "context_before": [
+        "}",
+        ""
+      ],
+      "context_after": [
+        "{",
+        "\tjoint_skill = on",
+        "\tnext3 = joker_rainbow_red,joker_rainbow_kirakira_red,joker_rainbow_hikiyose"
+      ]
+    },
+    {
+      "file": "a_default/script/5000_ランダムシナリオ/sc_rnd_sys.dat",
+      "line": 331,
+      "text": "addSkill2(fmrim,sp_fmrim_joker)",
+      "context_before": [
+        "",
+        "//addSkill2(geruch,commandcn_ice)"
+      ],
+      "context_after": [
+        "addSkill(fmrim,b_fmrim_astk,b_fmrim_bb,b_medama)",
+        "",
+        "}"
+      ]
+    },
+    {
+      "file": "a_default/script/6000_スキルテスト/event_test.dat",
+      "line": 77,
+      "text": "addSkill2(fmrim,sp_fmrim_joker)",
+      "context_before": [
+        "addSkill(fmrim,b_fmrim_astk)",
+        "addSkill(fmrim,b_fmrim_bb)"
+      ],
+      "context_after": [
+        "",
+        "addSkill2(5goisgod,go_knn)",
+        "eraseSkill(5goisgod,go_summon)"
+      ]
+    }
+  ],
+  "old_gameplay_Golden": 0,
+  "strict_MATCH": 0
+}

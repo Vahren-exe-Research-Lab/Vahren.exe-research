@@ -1,0 +1,4719 @@
+{
+  "status": "STATIC FULL-LITERAL-ROOTS + WORK_PARSER_PARENT_LINKS / NOT LEGAL GAMEPLAY",
+  "corpus_files": 590,
+  "skill_nodes": 16554,
+  "direct_grant_root_tags": 2435,
+  "skillset_names_used": 44,
+  "skillset_grant_refs": 659,
+  "expanded_skillset_member_roots": 95,
+  "event_add_skill_literal_unique": 726,
+  "event_add_skill_literal_occurrences": 2691,
+  "direct_root": {
+    "own_next_only": 11953,
+    "inherited_next_projection": 12266
+  },
+  "direct_and_skillsets": {
+    "own_next_only": 12147,
+    "inherited_next_projection": 12456
+  },
+  "direct_sets_events": {
+    "own_next_only": 14098,
+    "inherited_next_projection": 14257,
+    "extra_reachable_from_parent_links": 159,
+    "remaining_not_in_literal_model": 2297
+  },
+  "additional_effective_func_counts": {
+    "UNSET": 55,
+    "missile": 104
+  },
+  "orphan_parent_declaration_reached_direct": 16,
+  "orphan_parent_declaration_reached_with_events": 17,
+  "new_event_parent_link_witnesses": [
+    {
+      "target": "asasin_glove_03_finger_atk_0",
+      "witness": {
+        "root": "asasin_glove_chack_100",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "asasin_glove_chack_100",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_check_100_join",
+            "from": "asasin_glove_chack_100",
+            "field": "next3",
+            "source_owner": "asasin_glove_chack_100",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_check_100_Eff_1",
+            "from": "asasin_glove_check_100_join",
+            "field": "next3",
+            "source_owner": "asasin_glove_check_100_join",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_random_join",
+            "from": "asasin_glove_check_100_Eff_1",
+            "field": "next3",
+            "source_owner": "asasin_glove_check_100_Eff_1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_03_join",
+            "from": "asasin_glove_random_join",
+            "field": "next2",
+            "source_owner": "asasin_glove_random_join",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_03_finger_set_0",
+            "from": "asasin_glove_03_join",
+            "field": "next3",
+            "source_owner": "asasin_glove_03_join",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_03_finger_set_1",
+            "from": "asasin_glove_03_finger_set_0",
+            "field": "next3",
+            "source_owner": "asasin_glove_03_finger_set_0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_03_finger_eff_0_a",
+            "from": "asasin_glove_03_finger_set_1",
+            "field": "next3",
+            "source_owner": "asasin_glove_03_finger_set_1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_03_finger_atk_0",
+            "from": "asasin_glove_03_finger_eff_0_a",
+            "field": "next3",
+            "source_owner": "asasin_glove_03_finger_Eff_A_base",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "asasin_glove_03_finger_atk_1",
+      "witness": {
+        "root": "asasin_glove_chack_100",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "asasin_glove_chack_100",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_check_100_join",
+            "from": "asasin_glove_chack_100",
+            "field": "next3",
+            "source_owner": "asasin_glove_chack_100",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_check_100_Eff_1",
+            "from": "asasin_glove_check_100_join",
+            "field": "next3",
+            "source_owner": "asasin_glove_check_100_join",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_random_join",
+            "from": "asasin_glove_check_100_Eff_1",
+            "field": "next3",
+            "source_owner": "asasin_glove_check_100_Eff_1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_03_join",
+            "from": "asasin_glove_random_join",
+            "field": "next2",
+            "source_owner": "asasin_glove_random_join",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_03_finger_set_0",
+            "from": "asasin_glove_03_join",
+            "field": "next3",
+            "source_owner": "asasin_glove_03_join",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_03_finger_set_1",
+            "from": "asasin_glove_03_finger_set_0",
+            "field": "next3",
+            "source_owner": "asasin_glove_03_finger_set_0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_03_finger_eff_0_c_1",
+            "from": "asasin_glove_03_finger_set_1",
+            "field": "next3",
+            "source_owner": "asasin_glove_03_finger_set_1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_03_finger_atk_1",
+            "from": "asasin_glove_03_finger_eff_0_c_1",
+            "field": "next3",
+            "source_owner": "asasin_glove_03_finger_Eff_C_base",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "asasin_glove_03_finger_mag_0",
+      "witness": {
+        "root": "asasin_glove_chack_100",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "asasin_glove_chack_100",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_check_100_join",
+            "from": "asasin_glove_chack_100",
+            "field": "next3",
+            "source_owner": "asasin_glove_chack_100",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_check_100_Eff_1",
+            "from": "asasin_glove_check_100_join",
+            "field": "next3",
+            "source_owner": "asasin_glove_check_100_join",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_random_join",
+            "from": "asasin_glove_check_100_Eff_1",
+            "field": "next3",
+            "source_owner": "asasin_glove_check_100_Eff_1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_03_join",
+            "from": "asasin_glove_random_join",
+            "field": "next2",
+            "source_owner": "asasin_glove_random_join",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_03_finger_set_0",
+            "from": "asasin_glove_03_join",
+            "field": "next3",
+            "source_owner": "asasin_glove_03_join",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_03_finger_set_1",
+            "from": "asasin_glove_03_finger_set_0",
+            "field": "next3",
+            "source_owner": "asasin_glove_03_finger_set_0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_03_finger_eff_0_a",
+            "from": "asasin_glove_03_finger_set_1",
+            "field": "next3",
+            "source_owner": "asasin_glove_03_finger_set_1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_03_finger_mag_0",
+            "from": "asasin_glove_03_finger_eff_0_a",
+            "field": "next3",
+            "source_owner": "asasin_glove_03_finger_Eff_A_base",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "asasin_glove_03_finger_mag_1",
+      "witness": {
+        "root": "asasin_glove_chack_100",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "asasin_glove_chack_100",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_check_100_join",
+            "from": "asasin_glove_chack_100",
+            "field": "next3",
+            "source_owner": "asasin_glove_chack_100",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_check_100_Eff_1",
+            "from": "asasin_glove_check_100_join",
+            "field": "next3",
+            "source_owner": "asasin_glove_check_100_join",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_random_join",
+            "from": "asasin_glove_check_100_Eff_1",
+            "field": "next3",
+            "source_owner": "asasin_glove_check_100_Eff_1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_03_join",
+            "from": "asasin_glove_random_join",
+            "field": "next2",
+            "source_owner": "asasin_glove_random_join",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_03_finger_set_0",
+            "from": "asasin_glove_03_join",
+            "field": "next3",
+            "source_owner": "asasin_glove_03_join",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_03_finger_set_1",
+            "from": "asasin_glove_03_finger_set_0",
+            "field": "next3",
+            "source_owner": "asasin_glove_03_finger_set_0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_03_finger_eff_0_c_1",
+            "from": "asasin_glove_03_finger_set_1",
+            "field": "next3",
+            "source_owner": "asasin_glove_03_finger_set_1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_03_finger_mag_1",
+            "from": "asasin_glove_03_finger_eff_0_c_1",
+            "field": "next3",
+            "source_owner": "asasin_glove_03_finger_Eff_C_base",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "asasin_glove_04_finger_atk",
+      "witness": {
+        "root": "asasin_glove_chack_100",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "asasin_glove_chack_100",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_check_100_join",
+            "from": "asasin_glove_chack_100",
+            "field": "next3",
+            "source_owner": "asasin_glove_chack_100",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_check_100_Eff_1",
+            "from": "asasin_glove_check_100_join",
+            "field": "next3",
+            "source_owner": "asasin_glove_check_100_join",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_random_join",
+            "from": "asasin_glove_check_100_Eff_1",
+            "field": "next3",
+            "source_owner": "asasin_glove_check_100_Eff_1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_04_join",
+            "from": "asasin_glove_random_join",
+            "field": "next2",
+            "source_owner": "asasin_glove_random_join",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_04_finger_set_0",
+            "from": "asasin_glove_04_join",
+            "field": "next3",
+            "source_owner": "asasin_glove_04_join",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_04_finger_set_1",
+            "from": "asasin_glove_04_finger_set_0",
+            "field": "next3",
+            "source_owner": "asasin_glove_04_finger_set_0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_04_finger_set_2_L",
+            "from": "asasin_glove_04_finger_set_1",
+            "field": "next2",
+            "source_owner": "asasin_glove_04_finger_set_1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_04_finger_set_3_L_0",
+            "from": "asasin_glove_04_finger_set_2_L",
+            "field": "next3",
+            "source_owner": "asasin_glove_04_finger_set_2_L",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_04_finger_Eff_0_L",
+            "from": "asasin_glove_04_finger_set_3_L_0",
+            "field": "next3",
+            "source_owner": "asasin_glove_04_finger_set_3_L_0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_04_finger_atk",
+            "from": "asasin_glove_04_finger_Eff_0_L",
+            "field": "next3",
+            "source_owner": "asasin_glove_04_finger_Eff_base",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "asasin_glove_04_finger_mag",
+      "witness": {
+        "root": "asasin_glove_chack_100",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "asasin_glove_chack_100",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_check_100_join",
+            "from": "asasin_glove_chack_100",
+            "field": "next3",
+            "source_owner": "asasin_glove_chack_100",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_check_100_Eff_1",
+            "from": "asasin_glove_check_100_join",
+            "field": "next3",
+            "source_owner": "asasin_glove_check_100_join",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_random_join",
+            "from": "asasin_glove_check_100_Eff_1",
+            "field": "next3",
+            "source_owner": "asasin_glove_check_100_Eff_1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_04_join",
+            "from": "asasin_glove_random_join",
+            "field": "next2",
+            "source_owner": "asasin_glove_random_join",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_04_finger_set_0",
+            "from": "asasin_glove_04_join",
+            "field": "next3",
+            "source_owner": "asasin_glove_04_join",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_04_finger_set_1",
+            "from": "asasin_glove_04_finger_set_0",
+            "field": "next3",
+            "source_owner": "asasin_glove_04_finger_set_0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_04_finger_set_2_L",
+            "from": "asasin_glove_04_finger_set_1",
+            "field": "next2",
+            "source_owner": "asasin_glove_04_finger_set_1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_04_finger_set_3_L_0",
+            "from": "asasin_glove_04_finger_set_2_L",
+            "field": "next3",
+            "source_owner": "asasin_glove_04_finger_set_2_L",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_04_finger_Eff_0_L",
+            "from": "asasin_glove_04_finger_set_3_L_0",
+            "field": "next3",
+            "source_owner": "asasin_glove_04_finger_set_3_L_0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "asasin_glove_04_finger_mag",
+            "from": "asasin_glove_04_finger_Eff_0_L",
+            "field": "next3",
+            "source_owner": "asasin_glove_04_finger_Eff_base",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "b_skrnboss_nt3",
+      "witness": {
+        "root": "sp_dantag",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "sp_dantag",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_toppa_boss_pr1",
+            "from": "sp_dantag",
+            "field": "pair_next",
+            "source_owner": "sp_toppa_boss",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "skrnboss_ana_nt1",
+            "from": "sp_toppa_boss_pr1",
+            "field": "next",
+            "source_owner": "sp_toppa_boss_pr1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "b_skrnboss_nt3",
+            "from": "skrnboss_ana_nt1",
+            "field": "next3",
+            "source_owner": "skrnboss_ana_nt1",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "b_skrnboss_nt4",
+      "witness": {
+        "root": "sp_dantag",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "sp_dantag",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_toppa_boss_pr1",
+            "from": "sp_dantag",
+            "field": "pair_next",
+            "source_owner": "sp_toppa_boss",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "skrnboss_ana_nt1",
+            "from": "sp_toppa_boss_pr1",
+            "field": "next",
+            "source_owner": "sp_toppa_boss_pr1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "b_skrnboss_nt4",
+            "from": "skrnboss_ana_nt1",
+            "field": "next3",
+            "source_owner": "skrnboss_ana_nt1",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "clown_torch_nt1",
+      "witness": {
+        "root": "sp_clown_luna",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "sp_clown_luna",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_clown_luna_nt0",
+            "from": "sp_clown_luna",
+            "field": "next3",
+            "source_owner": "sp_clown_luna",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_clown_luna_nt1",
+            "from": "sp_clown_luna_nt0",
+            "field": "next3",
+            "source_owner": "sp_clown_luna_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "clown_torch_nt0b",
+            "from": "sp_clown_luna_nt1",
+            "field": "next3",
+            "source_owner": "sp_clown_luna_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "clown_torch_nt1",
+            "from": "clown_torch_nt0b",
+            "field": "next3",
+            "source_owner": "clown_torch_nt0",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "clown_torch_nt2",
+      "witness": {
+        "root": "sp_clown_luna",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "sp_clown_luna",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_clown_luna_nt0",
+            "from": "sp_clown_luna",
+            "field": "next3",
+            "source_owner": "sp_clown_luna",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_clown_luna_nt1",
+            "from": "sp_clown_luna_nt0",
+            "field": "next3",
+            "source_owner": "sp_clown_luna_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "clown_torch_nt0b",
+            "from": "sp_clown_luna_nt1",
+            "field": "next3",
+            "source_owner": "sp_clown_luna_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "clown_torch_nt2",
+            "from": "clown_torch_nt0b",
+            "field": "next3",
+            "source_owner": "clown_torch_nt0",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "cm_cannon_nt1",
+      "witness": {
+        "root": "commandcn3",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "commandcn3",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "b_surps3",
+            "from": "commandcn3",
+            "field": "next",
+            "source_owner": "commandcn3",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "cm_cannon_nt1",
+            "from": "b_surps3",
+            "field": "next3",
+            "source_owner": "b_surps",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "cm_cannon_nt2",
+      "witness": {
+        "root": "commandcn3",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "commandcn3",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "b_surps3",
+            "from": "commandcn3",
+            "field": "next",
+            "source_owner": "commandcn3",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "cm_cannon_nt2",
+            "from": "b_surps3",
+            "field": "next3",
+            "source_owner": "b_surps",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "joker_rainbow_blue",
+      "witness": {
+        "root": "sp_fmrim_joker",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "sp_fmrim_joker",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt0",
+            "from": "sp_fmrim_joker",
+            "field": "next",
+            "source_owner": "sp_fmrim_joker",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt1",
+            "from": "sp_fmrim_joker_nt0",
+            "field": "next",
+            "source_owner": "sp_fmrim_joker_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt2",
+            "from": "sp_fmrim_joker_nt1",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt7b",
+            "from": "sp_fmrim_joker_nt2",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt2",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_rainbow_joi0",
+            "from": "sp_fmrim_joker_nt7b",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt7b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_rainbow_dclaw4",
+            "from": "sp_fmrim_joker_rainbow_joi0",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_rainbow_joi0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_rainbow_dclaw6",
+            "from": "sp_rainbow_dclaw4",
+            "field": "next2",
+            "source_owner": "sp_rainbow_dclaw4",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "joker_rainbow_blue",
+            "from": "sp_rainbow_dclaw6",
+            "field": "next3",
+            "source_owner": "sp_rainbow_joi_blue",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "joker_rainbow_green",
+      "witness": {
+        "root": "sp_fmrim_joker",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "sp_fmrim_joker",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt0",
+            "from": "sp_fmrim_joker",
+            "field": "next",
+            "source_owner": "sp_fmrim_joker",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt1",
+            "from": "sp_fmrim_joker_nt0",
+            "field": "next",
+            "source_owner": "sp_fmrim_joker_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt2",
+            "from": "sp_fmrim_joker_nt1",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt7b",
+            "from": "sp_fmrim_joker_nt2",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt2",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_rainbow_joi0",
+            "from": "sp_fmrim_joker_nt7b",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt7b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_rainbow_dclaw0",
+            "from": "sp_fmrim_joker_rainbow_joi0",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_rainbow_joi0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_rainbow_dclaw3",
+            "from": "sp_rainbow_dclaw0",
+            "field": "next2",
+            "source_owner": "sp_rainbow_dclaw0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "joker_rainbow_green",
+            "from": "sp_rainbow_dclaw3",
+            "field": "next3",
+            "source_owner": "sp_rainbow_joi_green",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "joker_rainbow_hikiyose",
+      "witness": {
+        "root": "sp_fmrim_joker",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "sp_fmrim_joker",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt0",
+            "from": "sp_fmrim_joker",
+            "field": "next",
+            "source_owner": "sp_fmrim_joker",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt1",
+            "from": "sp_fmrim_joker_nt0",
+            "field": "next",
+            "source_owner": "sp_fmrim_joker_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt2",
+            "from": "sp_fmrim_joker_nt1",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt7b",
+            "from": "sp_fmrim_joker_nt2",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt2",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_rainbow_joi0",
+            "from": "sp_fmrim_joker_nt7b",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt7b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_rainbow_dclaw0",
+            "from": "sp_fmrim_joker_rainbow_joi0",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_rainbow_joi0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_rainbow_dclaw2",
+            "from": "sp_rainbow_dclaw0",
+            "field": "next2",
+            "source_owner": "sp_rainbow_dclaw0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "joker_rainbow_hikiyose",
+            "from": "sp_rainbow_dclaw2",
+            "field": "next3",
+            "source_owner": "sp_rainbow_joi_yellow_green",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "joker_rainbow_indigo",
+      "witness": {
+        "root": "sp_fmrim_joker",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "sp_fmrim_joker",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt0",
+            "from": "sp_fmrim_joker",
+            "field": "next",
+            "source_owner": "sp_fmrim_joker",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt1",
+            "from": "sp_fmrim_joker_nt0",
+            "field": "next",
+            "source_owner": "sp_fmrim_joker_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt2",
+            "from": "sp_fmrim_joker_nt1",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt7b",
+            "from": "sp_fmrim_joker_nt2",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt2",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_rainbow_joi0",
+            "from": "sp_fmrim_joker_nt7b",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt7b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_rainbow_dclaw7",
+            "from": "sp_fmrim_joker_rainbow_joi0",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_rainbow_joi0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_rainbow_dclaw9",
+            "from": "sp_rainbow_dclaw7",
+            "field": "next2",
+            "source_owner": "sp_rainbow_dclaw7",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "joker_rainbow_indigo",
+            "from": "sp_rainbow_dclaw9",
+            "field": "next3",
+            "source_owner": "sp_rainbow_joi_indigo",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "joker_rainbow_kirakira_blue",
+      "witness": {
+        "root": "sp_fmrim_joker",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "sp_fmrim_joker",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt0",
+            "from": "sp_fmrim_joker",
+            "field": "next",
+            "source_owner": "sp_fmrim_joker",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt1",
+            "from": "sp_fmrim_joker_nt0",
+            "field": "next",
+            "source_owner": "sp_fmrim_joker_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt2",
+            "from": "sp_fmrim_joker_nt1",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt7b",
+            "from": "sp_fmrim_joker_nt2",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt2",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_rainbow_joi0",
+            "from": "sp_fmrim_joker_nt7b",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt7b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_rainbow_dclaw4",
+            "from": "sp_fmrim_joker_rainbow_joi0",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_rainbow_joi0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_rainbow_dclaw6",
+            "from": "sp_rainbow_dclaw4",
+            "field": "next2",
+            "source_owner": "sp_rainbow_dclaw4",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "joker_rainbow_kirakira_blue",
+            "from": "sp_rainbow_dclaw6",
+            "field": "next3",
+            "source_owner": "sp_rainbow_joi_blue",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "joker_rainbow_kirakira_green",
+      "witness": {
+        "root": "sp_fmrim_joker",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "sp_fmrim_joker",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt0",
+            "from": "sp_fmrim_joker",
+            "field": "next",
+            "source_owner": "sp_fmrim_joker",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt1",
+            "from": "sp_fmrim_joker_nt0",
+            "field": "next",
+            "source_owner": "sp_fmrim_joker_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt2",
+            "from": "sp_fmrim_joker_nt1",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt7b",
+            "from": "sp_fmrim_joker_nt2",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt2",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_rainbow_joi0",
+            "from": "sp_fmrim_joker_nt7b",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt7b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_rainbow_dclaw0",
+            "from": "sp_fmrim_joker_rainbow_joi0",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_rainbow_joi0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_rainbow_dclaw3",
+            "from": "sp_rainbow_dclaw0",
+            "field": "next2",
+            "source_owner": "sp_rainbow_dclaw0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "joker_rainbow_kirakira_green",
+            "from": "sp_rainbow_dclaw3",
+            "field": "next3",
+            "source_owner": "sp_rainbow_joi_green",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "joker_rainbow_kirakira_indigo",
+      "witness": {
+        "root": "sp_fmrim_joker",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "sp_fmrim_joker",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt0",
+            "from": "sp_fmrim_joker",
+            "field": "next",
+            "source_owner": "sp_fmrim_joker",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt1",
+            "from": "sp_fmrim_joker_nt0",
+            "field": "next",
+            "source_owner": "sp_fmrim_joker_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt2",
+            "from": "sp_fmrim_joker_nt1",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt7b",
+            "from": "sp_fmrim_joker_nt2",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt2",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_rainbow_joi0",
+            "from": "sp_fmrim_joker_nt7b",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt7b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_rainbow_dclaw7",
+            "from": "sp_fmrim_joker_rainbow_joi0",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_rainbow_joi0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_rainbow_dclaw9",
+            "from": "sp_rainbow_dclaw7",
+            "field": "next2",
+            "source_owner": "sp_rainbow_dclaw7",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "joker_rainbow_kirakira_indigo",
+            "from": "sp_rainbow_dclaw9",
+            "field": "next3",
+            "source_owner": "sp_rainbow_joi_indigo",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "joker_rainbow_kirakira_orange",
+      "witness": {
+        "root": "sp_fmrim_joker",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "sp_fmrim_joker",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt0",
+            "from": "sp_fmrim_joker",
+            "field": "next",
+            "source_owner": "sp_fmrim_joker",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt1",
+            "from": "sp_fmrim_joker_nt0",
+            "field": "next",
+            "source_owner": "sp_fmrim_joker_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt2",
+            "from": "sp_fmrim_joker_nt1",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt7b",
+            "from": "sp_fmrim_joker_nt2",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt2",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_rainbow_joi0",
+            "from": "sp_fmrim_joker_nt7b",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt7b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_rainbow_dclaw7",
+            "from": "sp_fmrim_joker_rainbow_joi0",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_rainbow_joi0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_rainbow_dclaw8",
+            "from": "sp_rainbow_dclaw7",
+            "field": "next2",
+            "source_owner": "sp_rainbow_dclaw7",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "joker_rainbow_kirakira_orange",
+            "from": "sp_rainbow_dclaw8",
+            "field": "next3",
+            "source_owner": "sp_rainbow_joi_orange",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "joker_rainbow_kirakira_purple",
+      "witness": {
+        "root": "sp_fmrim_joker",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "sp_fmrim_joker",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt0",
+            "from": "sp_fmrim_joker",
+            "field": "next",
+            "source_owner": "sp_fmrim_joker",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt1",
+            "from": "sp_fmrim_joker_nt0",
+            "field": "next",
+            "source_owner": "sp_fmrim_joker_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt2",
+            "from": "sp_fmrim_joker_nt1",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt7b",
+            "from": "sp_fmrim_joker_nt2",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt2",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_rainbow_joi0",
+            "from": "sp_fmrim_joker_nt7b",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt7b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_rainbow_dclaw10",
+            "from": "sp_fmrim_joker_rainbow_joi0",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_rainbow_joi0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_rainbow_dclaw12",
+            "from": "sp_rainbow_dclaw10",
+            "field": "next2",
+            "source_owner": "sp_rainbow_dclaw10",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "joker_rainbow_kirakira_purple",
+            "from": "sp_rainbow_dclaw12",
+            "field": "next3",
+            "source_owner": "sp_rainbow_joi_purple",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "joker_rainbow_kirakira_red",
+      "witness": {
+        "root": "sp_fmrim_joker",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "sp_fmrim_joker",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt0",
+            "from": "sp_fmrim_joker",
+            "field": "next",
+            "source_owner": "sp_fmrim_joker",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt1",
+            "from": "sp_fmrim_joker_nt0",
+            "field": "next",
+            "source_owner": "sp_fmrim_joker_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt2",
+            "from": "sp_fmrim_joker_nt1",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt7b",
+            "from": "sp_fmrim_joker_nt2",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt2",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_rainbow_joi0",
+            "from": "sp_fmrim_joker_nt7b",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt7b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_rainbow_dclaw10",
+            "from": "sp_fmrim_joker_rainbow_joi0",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_rainbow_joi0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_rainbow_dclaw11",
+            "from": "sp_rainbow_dclaw10",
+            "field": "next2",
+            "source_owner": "sp_rainbow_dclaw10",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "joker_rainbow_kirakira_red",
+            "from": "sp_rainbow_dclaw11",
+            "field": "next3",
+            "source_owner": "sp_rainbow_joi_red",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "joker_rainbow_kirakira_yellow",
+      "witness": {
+        "root": "sp_fmrim_joker",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "sp_fmrim_joker",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt0",
+            "from": "sp_fmrim_joker",
+            "field": "next",
+            "source_owner": "sp_fmrim_joker",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt1",
+            "from": "sp_fmrim_joker_nt0",
+            "field": "next",
+            "source_owner": "sp_fmrim_joker_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt2",
+            "from": "sp_fmrim_joker_nt1",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt7b",
+            "from": "sp_fmrim_joker_nt2",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt2",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_rainbow_joi0",
+            "from": "sp_fmrim_joker_nt7b",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt7b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_rainbow_dclaw4",
+            "from": "sp_fmrim_joker_rainbow_joi0",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_rainbow_joi0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_rainbow_dclaw5",
+            "from": "sp_rainbow_dclaw4",
+            "field": "next2",
+            "source_owner": "sp_rainbow_dclaw4",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "joker_rainbow_kirakira_yellow",
+            "from": "sp_rainbow_dclaw5",
+            "field": "next3",
+            "source_owner": "sp_rainbow_joi_yellow",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "joker_rainbow_kirakira_yellow_green",
+      "witness": {
+        "root": "sp_fmrim_joker",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "sp_fmrim_joker",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt0",
+            "from": "sp_fmrim_joker",
+            "field": "next",
+            "source_owner": "sp_fmrim_joker",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt1",
+            "from": "sp_fmrim_joker_nt0",
+            "field": "next",
+            "source_owner": "sp_fmrim_joker_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt2",
+            "from": "sp_fmrim_joker_nt1",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt7b",
+            "from": "sp_fmrim_joker_nt2",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt2",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_rainbow_joi0",
+            "from": "sp_fmrim_joker_nt7b",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt7b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_rainbow_dclaw0",
+            "from": "sp_fmrim_joker_rainbow_joi0",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_rainbow_joi0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_rainbow_dclaw2",
+            "from": "sp_rainbow_dclaw0",
+            "field": "next2",
+            "source_owner": "sp_rainbow_dclaw0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "joker_rainbow_kirakira_yellow_green",
+            "from": "sp_rainbow_dclaw2",
+            "field": "next3",
+            "source_owner": "sp_rainbow_joi_yellow_green",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "joker_rainbow_orange",
+      "witness": {
+        "root": "sp_fmrim_joker",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "sp_fmrim_joker",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt0",
+            "from": "sp_fmrim_joker",
+            "field": "next",
+            "source_owner": "sp_fmrim_joker",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt1",
+            "from": "sp_fmrim_joker_nt0",
+            "field": "next",
+            "source_owner": "sp_fmrim_joker_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt2",
+            "from": "sp_fmrim_joker_nt1",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt7b",
+            "from": "sp_fmrim_joker_nt2",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt2",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_rainbow_joi0",
+            "from": "sp_fmrim_joker_nt7b",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt7b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_rainbow_dclaw7",
+            "from": "sp_fmrim_joker_rainbow_joi0",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_rainbow_joi0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_rainbow_dclaw8",
+            "from": "sp_rainbow_dclaw7",
+            "field": "next2",
+            "source_owner": "sp_rainbow_dclaw7",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "joker_rainbow_orange",
+            "from": "sp_rainbow_dclaw8",
+            "field": "next3",
+            "source_owner": "sp_rainbow_joi_orange",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "joker_rainbow_purple",
+      "witness": {
+        "root": "sp_fmrim_joker",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "sp_fmrim_joker",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt0",
+            "from": "sp_fmrim_joker",
+            "field": "next",
+            "source_owner": "sp_fmrim_joker",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt1",
+            "from": "sp_fmrim_joker_nt0",
+            "field": "next",
+            "source_owner": "sp_fmrim_joker_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt2",
+            "from": "sp_fmrim_joker_nt1",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt7b",
+            "from": "sp_fmrim_joker_nt2",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt2",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_rainbow_joi0",
+            "from": "sp_fmrim_joker_nt7b",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt7b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_rainbow_dclaw10",
+            "from": "sp_fmrim_joker_rainbow_joi0",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_rainbow_joi0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_rainbow_dclaw12",
+            "from": "sp_rainbow_dclaw10",
+            "field": "next2",
+            "source_owner": "sp_rainbow_dclaw10",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "joker_rainbow_purple",
+            "from": "sp_rainbow_dclaw12",
+            "field": "next3",
+            "source_owner": "sp_rainbow_joi_purple",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "joker_rainbow_red",
+      "witness": {
+        "root": "sp_fmrim_joker",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "sp_fmrim_joker",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt0",
+            "from": "sp_fmrim_joker",
+            "field": "next",
+            "source_owner": "sp_fmrim_joker",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt1",
+            "from": "sp_fmrim_joker_nt0",
+            "field": "next",
+            "source_owner": "sp_fmrim_joker_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt2",
+            "from": "sp_fmrim_joker_nt1",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt7b",
+            "from": "sp_fmrim_joker_nt2",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt2",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_rainbow_joi0",
+            "from": "sp_fmrim_joker_nt7b",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt7b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_rainbow_dclaw10",
+            "from": "sp_fmrim_joker_rainbow_joi0",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_rainbow_joi0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_rainbow_dclaw11",
+            "from": "sp_rainbow_dclaw10",
+            "field": "next2",
+            "source_owner": "sp_rainbow_dclaw10",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "joker_rainbow_red",
+            "from": "sp_rainbow_dclaw11",
+            "field": "next3",
+            "source_owner": "sp_rainbow_joi_red",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "joker_rainbow_yellow",
+      "witness": {
+        "root": "sp_fmrim_joker",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "sp_fmrim_joker",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt0",
+            "from": "sp_fmrim_joker",
+            "field": "next",
+            "source_owner": "sp_fmrim_joker",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt1",
+            "from": "sp_fmrim_joker_nt0",
+            "field": "next",
+            "source_owner": "sp_fmrim_joker_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt2",
+            "from": "sp_fmrim_joker_nt1",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt7b",
+            "from": "sp_fmrim_joker_nt2",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt2",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_rainbow_joi0",
+            "from": "sp_fmrim_joker_nt7b",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt7b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_rainbow_dclaw4",
+            "from": "sp_fmrim_joker_rainbow_joi0",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_rainbow_joi0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_rainbow_dclaw5",
+            "from": "sp_rainbow_dclaw4",
+            "field": "next2",
+            "source_owner": "sp_rainbow_dclaw4",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "joker_rainbow_yellow",
+            "from": "sp_rainbow_dclaw5",
+            "field": "next3",
+            "source_owner": "sp_rainbow_joi_yellow",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "joker_rainbow_yellow_green",
+      "witness": {
+        "root": "sp_fmrim_joker",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "sp_fmrim_joker",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt0",
+            "from": "sp_fmrim_joker",
+            "field": "next",
+            "source_owner": "sp_fmrim_joker",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt1",
+            "from": "sp_fmrim_joker_nt0",
+            "field": "next",
+            "source_owner": "sp_fmrim_joker_nt0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt2",
+            "from": "sp_fmrim_joker_nt1",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_nt7b",
+            "from": "sp_fmrim_joker_nt2",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt2",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_fmrim_joker_rainbow_joi0",
+            "from": "sp_fmrim_joker_nt7b",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_nt7b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_rainbow_dclaw0",
+            "from": "sp_fmrim_joker_rainbow_joi0",
+            "field": "next3",
+            "source_owner": "sp_fmrim_joker_rainbow_joi0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_rainbow_dclaw2",
+            "from": "sp_rainbow_dclaw0",
+            "field": "next2",
+            "source_owner": "sp_rainbow_dclaw0",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "joker_rainbow_yellow_green",
+            "from": "sp_rainbow_dclaw2",
+            "field": "next3",
+            "source_owner": "sp_rainbow_joi_yellow_green",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "kmn_beam_nt1",
+      "witness": {
+        "root": "hzn_beam26",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "hzn_beam26",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "kmn_beam_nt1",
+            "from": "hzn_beam26",
+            "field": "next",
+            "source_owner": "kmn_beam",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "kmn_beam_pr0",
+      "witness": {
+        "root": "hzn_beam26",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "hzn_beam26",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "kmn_beam_pr0",
+            "from": "hzn_beam26",
+            "field": "pair_next",
+            "source_owner": "kmn_beam",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "pr_asasin_cream_protect",
+      "witness": {
+        "root": "sp_asasin_punch",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "sp_asasin_punch",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "pr_asasin_cream_protect",
+            "from": "sp_asasin_punch",
+            "field": "pair_next",
+            "source_owner": "sp_asasin_punch2",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "pr_asasin_cream_protect_Eff_A",
+      "witness": {
+        "root": "sp_asasin_punch",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "sp_asasin_punch",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "pr_asasin_cream_protect",
+            "from": "sp_asasin_punch",
+            "field": "pair_next",
+            "source_owner": "sp_asasin_punch2",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "pr_asasin_cream_protect_Eff_A",
+            "from": "pr_asasin_cream_protect",
+            "field": "next3",
+            "source_owner": "pr_asasin_cream_protect",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "pr_asasin_cream_protect_Eff_B",
+      "witness": {
+        "root": "sp_asasin_punch",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "sp_asasin_punch",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "pr_asasin_cream_protect",
+            "from": "sp_asasin_punch",
+            "field": "pair_next",
+            "source_owner": "sp_asasin_punch2",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "pr_asasin_cream_protect_Eff_B",
+            "from": "pr_asasin_cream_protect",
+            "field": "next3",
+            "source_owner": "pr_asasin_cream_protect",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "pr_asasin_cream_protect_Eff_C",
+      "witness": {
+        "root": "sp_asasin_punch",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "sp_asasin_punch",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "pr_asasin_cream_protect",
+            "from": "sp_asasin_punch",
+            "field": "pair_next",
+            "source_owner": "sp_asasin_punch2",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "pr_asasin_cream_protect_Eff_C_wait",
+            "from": "pr_asasin_cream_protect",
+            "field": "next3",
+            "source_owner": "pr_asasin_cream_protect",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "pr_asasin_cream_protect_Eff_C",
+            "from": "pr_asasin_cream_protect_Eff_C_wait",
+            "field": "next3",
+            "source_owner": "pr_asasin_cream_protect_Eff_C_wait",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "pr_asasin_cream_protect_Eff_C_wait",
+      "witness": {
+        "root": "sp_asasin_punch",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "sp_asasin_punch",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "pr_asasin_cream_protect",
+            "from": "sp_asasin_punch",
+            "field": "pair_next",
+            "source_owner": "sp_asasin_punch2",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "pr_asasin_cream_protect_Eff_C_wait",
+            "from": "pr_asasin_cream_protect",
+            "field": "next3",
+            "source_owner": "pr_asasin_cream_protect",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "s_gun_pr0",
+      "witness": {
+        "root": "sawedoff",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "sawedoff",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "s_gun_pr0",
+            "from": "sawedoff",
+            "field": "pair_next",
+            "source_owner": "s_gun_so",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "s_gun_pr_fire",
+      "witness": {
+        "root": "sawedoff",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "sawedoff",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "s_gun_pr0",
+            "from": "sawedoff",
+            "field": "pair_next",
+            "source_owner": "s_gun_so",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "s_gun_pr_fire",
+            "from": "s_gun_pr0",
+            "field": "next3",
+            "source_owner": "s_gun_pr0",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "s_gun_pr_hibana",
+      "witness": {
+        "root": "sawedoff",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "sawedoff",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "s_gun_pr0",
+            "from": "sawedoff",
+            "field": "pair_next",
+            "source_owner": "s_gun_so",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "s_gun_pr_hibana",
+            "from": "s_gun_pr0",
+            "field": "next3",
+            "source_owner": "s_gun_pr0",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "s_gun_pr_hibana2",
+      "witness": {
+        "root": "sawedoff",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "sawedoff",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "s_gun_pr0",
+            "from": "sawedoff",
+            "field": "pair_next",
+            "source_owner": "s_gun_so",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "s_gun_pr_hibana2",
+            "from": "s_gun_pr0",
+            "field": "next3",
+            "source_owner": "s_gun_pr0",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "s_gun_pr_smoke",
+      "witness": {
+        "root": "sawedoff",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "sawedoff",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "s_gun_pr0",
+            "from": "sawedoff",
+            "field": "pair_next",
+            "source_owner": "s_gun_so",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "s_gun_pr_smoke",
+            "from": "s_gun_pr0",
+            "field": "next3",
+            "source_owner": "s_gun_pr0",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "skrnboss_ana_nt1",
+      "witness": {
+        "root": "sp_dantag",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "sp_dantag",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_toppa_boss_pr1",
+            "from": "sp_dantag",
+            "field": "pair_next",
+            "source_owner": "sp_toppa_boss",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "skrnboss_ana_nt1",
+            "from": "sp_toppa_boss_pr1",
+            "field": "next",
+            "source_owner": "sp_toppa_boss_pr1",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "skrnboss_ana_nt2",
+      "witness": {
+        "root": "sp_dantag",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "sp_dantag",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_toppa_boss_pr1",
+            "from": "sp_dantag",
+            "field": "pair_next",
+            "source_owner": "sp_toppa_boss",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "skrnboss_ana_nt1",
+            "from": "sp_toppa_boss_pr1",
+            "field": "next",
+            "source_owner": "sp_toppa_boss_pr1",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "skrnboss_ana_nt2",
+            "from": "skrnboss_ana_nt1",
+            "field": "next3",
+            "source_owner": "skrnboss_ana_nt1",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_akys_fire_nt0b",
+      "witness": {
+        "root": "com_engine",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "com_engine",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_engine_nt1",
+            "from": "com_engine",
+            "field": "next2",
+            "source_owner": "sp_engine",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_nt0b",
+            "from": "sp_engine_nt1",
+            "field": "next",
+            "source_owner": "sp_akys_fire_nt0",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_akys_fire_nt1",
+      "witness": {
+        "root": "com_engine",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "com_engine",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_engine_nt1",
+            "from": "com_engine",
+            "field": "next2",
+            "source_owner": "sp_engine",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_nt0b",
+            "from": "sp_engine_nt1",
+            "field": "next",
+            "source_owner": "sp_akys_fire_nt0",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_nta",
+            "from": "sp_akys_fire_nt0b",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_nt0b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt1_joi",
+            "from": "sp_akys_fire_nta",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_nta",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt1",
+            "from": "sp_akys_fire_nt1_joi",
+            "field": "next3",
+            "source_owner": "sp_akys_fire_nt1_joi",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_akys_fire_nt1_damage",
+      "witness": {
+        "root": "com_engine",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "com_engine",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_engine_nt1",
+            "from": "com_engine",
+            "field": "next2",
+            "source_owner": "sp_engine",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_nt0b",
+            "from": "sp_engine_nt1",
+            "field": "next",
+            "source_owner": "sp_akys_fire_nt0",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_nta",
+            "from": "sp_akys_fire_nt0b",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_nt0b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt1_joi",
+            "from": "sp_akys_fire_nta",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_nta",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt1_damage",
+            "from": "sp_akys_fire_nt1_joi",
+            "field": "next3",
+            "source_owner": "sp_akys_fire_nt1_joi",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_akys_fire_nt1_joi",
+      "witness": {
+        "root": "com_engine",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "com_engine",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_engine_nt1",
+            "from": "com_engine",
+            "field": "next2",
+            "source_owner": "sp_engine",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_nt0b",
+            "from": "sp_engine_nt1",
+            "field": "next",
+            "source_owner": "sp_akys_fire_nt0",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_nta",
+            "from": "sp_akys_fire_nt0b",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_nt0b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt1_joi",
+            "from": "sp_akys_fire_nta",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_nta",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_akys_fire_nt2",
+      "witness": {
+        "root": "com_engine",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "com_engine",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_engine_nt1",
+            "from": "com_engine",
+            "field": "next2",
+            "source_owner": "sp_engine",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_nt0b",
+            "from": "sp_engine_nt1",
+            "field": "next",
+            "source_owner": "sp_akys_fire_nt0",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_nta",
+            "from": "sp_akys_fire_nt0b",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_nt0b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt2_joi",
+            "from": "sp_akys_fire_nta",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_nta",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt2",
+            "from": "sp_akys_fire_nt2_joi",
+            "field": "next3",
+            "source_owner": "sp_akys_fire_nt2_joi",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_akys_fire_nt2_joi",
+      "witness": {
+        "root": "com_engine",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "com_engine",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_engine_nt1",
+            "from": "com_engine",
+            "field": "next2",
+            "source_owner": "sp_engine",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_nt0b",
+            "from": "sp_engine_nt1",
+            "field": "next",
+            "source_owner": "sp_akys_fire_nt0",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_nta",
+            "from": "sp_akys_fire_nt0b",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_nt0b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt2_joi",
+            "from": "sp_akys_fire_nta",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_nta",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_akys_fire_nt3",
+      "witness": {
+        "root": "com_engine",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "com_engine",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_engine_nt1",
+            "from": "com_engine",
+            "field": "next2",
+            "source_owner": "sp_engine",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_nt0b",
+            "from": "sp_engine_nt1",
+            "field": "next",
+            "source_owner": "sp_akys_fire_nt0",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_ntb",
+            "from": "sp_akys_fire_nt0b",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_nt0b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt3_joi",
+            "from": "sp_akys_fire_ntb",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_ntb",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt3",
+            "from": "sp_akys_fire_nt3_joi",
+            "field": "next3",
+            "source_owner": "sp_akys_fire_nt3_joi",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_akys_fire_nt3_damage",
+      "witness": {
+        "root": "com_engine",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "com_engine",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_engine_nt1",
+            "from": "com_engine",
+            "field": "next2",
+            "source_owner": "sp_engine",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_nt0b",
+            "from": "sp_engine_nt1",
+            "field": "next",
+            "source_owner": "sp_akys_fire_nt0",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_ntb",
+            "from": "sp_akys_fire_nt0b",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_nt0b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt3_joi",
+            "from": "sp_akys_fire_ntb",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_ntb",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt3_damage",
+            "from": "sp_akys_fire_nt3_joi",
+            "field": "next3",
+            "source_owner": "sp_akys_fire_nt3_joi",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_akys_fire_nt3_joi",
+      "witness": {
+        "root": "com_engine",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "com_engine",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_engine_nt1",
+            "from": "com_engine",
+            "field": "next2",
+            "source_owner": "sp_engine",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_nt0b",
+            "from": "sp_engine_nt1",
+            "field": "next",
+            "source_owner": "sp_akys_fire_nt0",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_ntb",
+            "from": "sp_akys_fire_nt0b",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_nt0b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt3_joi",
+            "from": "sp_akys_fire_ntb",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_ntb",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_akys_fire_nt4",
+      "witness": {
+        "root": "com_engine",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "com_engine",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_engine_nt1",
+            "from": "com_engine",
+            "field": "next2",
+            "source_owner": "sp_engine",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_nt0b",
+            "from": "sp_engine_nt1",
+            "field": "next",
+            "source_owner": "sp_akys_fire_nt0",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_ntb",
+            "from": "sp_akys_fire_nt0b",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_nt0b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt4_joi",
+            "from": "sp_akys_fire_ntb",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_ntb",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt4",
+            "from": "sp_akys_fire_nt4_joi",
+            "field": "next3",
+            "source_owner": "sp_akys_fire_nt4_joi",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_akys_fire_nt4_joi",
+      "witness": {
+        "root": "com_engine",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "com_engine",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_engine_nt1",
+            "from": "com_engine",
+            "field": "next2",
+            "source_owner": "sp_engine",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_nt0b",
+            "from": "sp_engine_nt1",
+            "field": "next",
+            "source_owner": "sp_akys_fire_nt0",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_ntb",
+            "from": "sp_akys_fire_nt0b",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_nt0b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt4_joi",
+            "from": "sp_akys_fire_ntb",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_ntb",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_akys_fire_nt5",
+      "witness": {
+        "root": "com_engine",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "com_engine",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_engine_nt1",
+            "from": "com_engine",
+            "field": "next2",
+            "source_owner": "sp_engine",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_nt0b",
+            "from": "sp_engine_nt1",
+            "field": "next",
+            "source_owner": "sp_akys_fire_nt0",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_ntc",
+            "from": "sp_akys_fire_nt0b",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_nt0b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt5_joi",
+            "from": "sp_akys_fire_ntc",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_ntc",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt5",
+            "from": "sp_akys_fire_nt5_joi",
+            "field": "next3",
+            "source_owner": "sp_akys_fire_nt5_joi",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_akys_fire_nt5_damage",
+      "witness": {
+        "root": "com_engine",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "com_engine",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_engine_nt1",
+            "from": "com_engine",
+            "field": "next2",
+            "source_owner": "sp_engine",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_nt0b",
+            "from": "sp_engine_nt1",
+            "field": "next",
+            "source_owner": "sp_akys_fire_nt0",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_ntc",
+            "from": "sp_akys_fire_nt0b",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_nt0b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt5_joi",
+            "from": "sp_akys_fire_ntc",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_ntc",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt5_damage",
+            "from": "sp_akys_fire_nt5_joi",
+            "field": "next3",
+            "source_owner": "sp_akys_fire_nt5_joi",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_akys_fire_nt5_joi",
+      "witness": {
+        "root": "com_engine",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "com_engine",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_engine_nt1",
+            "from": "com_engine",
+            "field": "next2",
+            "source_owner": "sp_engine",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_nt0b",
+            "from": "sp_engine_nt1",
+            "field": "next",
+            "source_owner": "sp_akys_fire_nt0",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_ntc",
+            "from": "sp_akys_fire_nt0b",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_nt0b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt5_joi",
+            "from": "sp_akys_fire_ntc",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_ntc",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_akys_fire_nt6",
+      "witness": {
+        "root": "com_engine",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "com_engine",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_engine_nt1",
+            "from": "com_engine",
+            "field": "next2",
+            "source_owner": "sp_engine",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_nt0b",
+            "from": "sp_engine_nt1",
+            "field": "next",
+            "source_owner": "sp_akys_fire_nt0",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_ntc",
+            "from": "sp_akys_fire_nt0b",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_nt0b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt6_joi",
+            "from": "sp_akys_fire_ntc",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_ntc",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt6",
+            "from": "sp_akys_fire_nt6_joi",
+            "field": "next3",
+            "source_owner": "sp_akys_fire_nt6_joi",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_akys_fire_nt6_joi",
+      "witness": {
+        "root": "com_engine",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "com_engine",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_engine_nt1",
+            "from": "com_engine",
+            "field": "next2",
+            "source_owner": "sp_engine",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_nt0b",
+            "from": "sp_engine_nt1",
+            "field": "next",
+            "source_owner": "sp_akys_fire_nt0",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_ntc",
+            "from": "sp_akys_fire_nt0b",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_nt0b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt6_joi",
+            "from": "sp_akys_fire_ntc",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_ntc",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_akys_fire_nt7",
+      "witness": {
+        "root": "com_engine",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "com_engine",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_engine_nt1",
+            "from": "com_engine",
+            "field": "next2",
+            "source_owner": "sp_engine",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_nt0b",
+            "from": "sp_engine_nt1",
+            "field": "next",
+            "source_owner": "sp_akys_fire_nt0",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_ntd",
+            "from": "sp_akys_fire_nt0b",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_nt0b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt7_joi",
+            "from": "sp_akys_fire_ntd",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_ntd",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt7",
+            "from": "sp_akys_fire_nt7_joi",
+            "field": "next3",
+            "source_owner": "sp_akys_fire_nt7_joi",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_akys_fire_nt7_damage",
+      "witness": {
+        "root": "com_engine",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "com_engine",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_engine_nt1",
+            "from": "com_engine",
+            "field": "next2",
+            "source_owner": "sp_engine",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_nt0b",
+            "from": "sp_engine_nt1",
+            "field": "next",
+            "source_owner": "sp_akys_fire_nt0",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_ntd",
+            "from": "sp_akys_fire_nt0b",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_nt0b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt7_joi",
+            "from": "sp_akys_fire_ntd",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_ntd",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt7_damage",
+            "from": "sp_akys_fire_nt7_joi",
+            "field": "next3",
+            "source_owner": "sp_akys_fire_nt7_joi",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_akys_fire_nt7_joi",
+      "witness": {
+        "root": "com_engine",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "com_engine",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_engine_nt1",
+            "from": "com_engine",
+            "field": "next2",
+            "source_owner": "sp_engine",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_nt0b",
+            "from": "sp_engine_nt1",
+            "field": "next",
+            "source_owner": "sp_akys_fire_nt0",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_ntd",
+            "from": "sp_akys_fire_nt0b",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_nt0b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt7_joi",
+            "from": "sp_akys_fire_ntd",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_ntd",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_akys_fire_nt8",
+      "witness": {
+        "root": "com_engine",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "com_engine",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_engine_nt1",
+            "from": "com_engine",
+            "field": "next2",
+            "source_owner": "sp_engine",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_nt0b",
+            "from": "sp_engine_nt1",
+            "field": "next",
+            "source_owner": "sp_akys_fire_nt0",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_ntd",
+            "from": "sp_akys_fire_nt0b",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_nt0b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt8_joi",
+            "from": "sp_akys_fire_ntd",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_ntd",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt8",
+            "from": "sp_akys_fire_nt8_joi",
+            "field": "next3",
+            "source_owner": "sp_akys_fire_nt8_joi",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_akys_fire_nt8_joi",
+      "witness": {
+        "root": "com_engine",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "com_engine",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_engine_nt1",
+            "from": "com_engine",
+            "field": "next2",
+            "source_owner": "sp_engine",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_nt0b",
+            "from": "sp_engine_nt1",
+            "field": "next",
+            "source_owner": "sp_akys_fire_nt0",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_ntd",
+            "from": "sp_akys_fire_nt0b",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_nt0b",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_akys_fire_nt8_joi",
+            "from": "sp_akys_fire_ntd",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_ntd",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_akys_fire_nta",
+      "witness": {
+        "root": "com_engine",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "com_engine",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_engine_nt1",
+            "from": "com_engine",
+            "field": "next2",
+            "source_owner": "sp_engine",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_nt0b",
+            "from": "sp_engine_nt1",
+            "field": "next",
+            "source_owner": "sp_akys_fire_nt0",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_nta",
+            "from": "sp_akys_fire_nt0b",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_nt0b",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_akys_fire_ntb",
+      "witness": {
+        "root": "com_engine",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "com_engine",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_engine_nt1",
+            "from": "com_engine",
+            "field": "next2",
+            "source_owner": "sp_engine",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_nt0b",
+            "from": "sp_engine_nt1",
+            "field": "next",
+            "source_owner": "sp_akys_fire_nt0",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_ntb",
+            "from": "sp_akys_fire_nt0b",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_nt0b",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_akys_fire_ntc",
+      "witness": {
+        "root": "com_engine",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "com_engine",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_engine_nt1",
+            "from": "com_engine",
+            "field": "next2",
+            "source_owner": "sp_engine",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_nt0b",
+            "from": "sp_engine_nt1",
+            "field": "next",
+            "source_owner": "sp_akys_fire_nt0",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_ntc",
+            "from": "sp_akys_fire_nt0b",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_nt0b",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_akys_fire_ntd",
+      "witness": {
+        "root": "com_engine",
+        "root_source": "event",
+        "steps": [
+          {
+            "skill": "com_engine",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_engine_nt1",
+            "from": "com_engine",
+            "field": "next2",
+            "source_owner": "sp_engine",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_nt0b",
+            "from": "sp_engine_nt1",
+            "field": "next",
+            "source_owner": "sp_akys_fire_nt0",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_akys_fire_ntd",
+            "from": "sp_akys_fire_nt0b",
+            "field": "next2",
+            "source_owner": "sp_akys_fire_nt0b",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_asasin_punch2_nt2",
+      "witness": {
+        "root": "sp_asasin_punch",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "sp_asasin_punch",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_asasin_punch2_nt2",
+            "from": "sp_asasin_punch",
+            "field": "next3",
+            "source_owner": "sp_asasin_punch2",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_asasin_punch2_nt3",
+      "witness": {
+        "root": "sp_asasin_punch",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "sp_asasin_punch",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_asasin_punch2_nt2",
+            "from": "sp_asasin_punch",
+            "field": "next3",
+            "source_owner": "sp_asasin_punch2",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_asasin_punch2_nt3",
+            "from": "sp_asasin_punch2_nt2",
+            "field": "next3",
+            "source_owner": "sp_asasin_punch2_nt2",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_asasin_punch2_nt4",
+      "witness": {
+        "root": "sp_asasin_punch",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "sp_asasin_punch",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_asasin_punch2_nt2",
+            "from": "sp_asasin_punch",
+            "field": "next3",
+            "source_owner": "sp_asasin_punch2",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_asasin_punch2_nt4",
+            "from": "sp_asasin_punch2_nt2",
+            "field": "next3",
+            "source_owner": "sp_asasin_punch2_nt2",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_asasin_punch2_nt5",
+      "witness": {
+        "root": "sp_asasin_punch",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "sp_asasin_punch",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_asasin_punch2_nt5",
+            "from": "sp_asasin_punch",
+            "field": "next3",
+            "source_owner": "sp_asasin_punch2",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_asasin_punch2_nt6",
+      "witness": {
+        "root": "sp_asasin_punch",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "sp_asasin_punch",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_asasin_punch2_nt6",
+            "from": "sp_asasin_punch",
+            "field": "next3",
+            "source_owner": "sp_asasin_punch2",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_asasin_punch2_nt6b",
+      "witness": {
+        "root": "sp_asasin_punch",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "sp_asasin_punch",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_asasin_punch2_nt6",
+            "from": "sp_asasin_punch",
+            "field": "next3",
+            "source_owner": "sp_asasin_punch2",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_asasin_punch2_nt6b",
+            "from": "sp_asasin_punch2_nt6",
+            "field": "next2",
+            "source_owner": "sp_asasin_punch2_nt6",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_asasin_punch2_nt6c",
+      "witness": {
+        "root": "sp_asasin_punch",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "sp_asasin_punch",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_asasin_punch2_nt6",
+            "from": "sp_asasin_punch",
+            "field": "next3",
+            "source_owner": "sp_asasin_punch2",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_asasin_punch2_nt6c",
+            "from": "sp_asasin_punch2_nt6",
+            "field": "next2",
+            "source_owner": "sp_asasin_punch2_nt6",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_asasin_punch2_nt7",
+      "witness": {
+        "root": "sp_asasin_punch",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "sp_asasin_punch",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_asasin_punch2_nt6",
+            "from": "sp_asasin_punch",
+            "field": "next3",
+            "source_owner": "sp_asasin_punch2",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_asasin_punch2_nt6b",
+            "from": "sp_asasin_punch2_nt6",
+            "field": "next2",
+            "source_owner": "sp_asasin_punch2_nt6",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_asasin_punch2_nt7",
+            "from": "sp_asasin_punch2_nt6b",
+            "field": "next3",
+            "source_owner": "sp_asasin_punch2_nt6b",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_asasin_punch2_nt8a",
+      "witness": {
+        "root": "sp_asasin_punch",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "sp_asasin_punch",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_asasin_punch2_nt6",
+            "from": "sp_asasin_punch",
+            "field": "next3",
+            "source_owner": "sp_asasin_punch2",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_asasin_punch2_nt6b",
+            "from": "sp_asasin_punch2_nt6",
+            "field": "next2",
+            "source_owner": "sp_asasin_punch2_nt6",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_asasin_punch2_nt8a",
+            "from": "sp_asasin_punch2_nt6b",
+            "field": "next3",
+            "source_owner": "sp_asasin_punch2_nt6b",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_asasin_punch2_nt8b",
+      "witness": {
+        "root": "sp_asasin_punch",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "sp_asasin_punch",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_asasin_punch2_nt6",
+            "from": "sp_asasin_punch",
+            "field": "next3",
+            "source_owner": "sp_asasin_punch2",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_asasin_punch2_nt6c",
+            "from": "sp_asasin_punch2_nt6",
+            "field": "next2",
+            "source_owner": "sp_asasin_punch2_nt6",
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_asasin_punch2_nt8b",
+            "from": "sp_asasin_punch2_nt6c",
+            "field": "next3",
+            "source_owner": "sp_asasin_punch2_nt6c",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_asasin_punch2_pr3",
+      "witness": {
+        "root": "sp_asasin_punch",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "sp_asasin_punch",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_asasin_punch2_pr3",
+            "from": "sp_asasin_punch",
+            "field": "next3",
+            "source_owner": "sp_asasin_punch2",
+            "inheritance_hops": 1
+          }
+        ]
+      }
+    },
+    {
+      "target": "sp_asasin_punch2_pr3_nt1",
+      "witness": {
+        "root": "sp_asasin_punch",
+        "root_source": "direct",
+        "steps": [
+          {
+            "skill": "sp_asasin_punch",
+            "from": null,
+            "field": null,
+            "source_owner": null,
+            "inheritance_hops": 0
+          },
+          {
+            "skill": "sp_asasin_punch2_pr3",
+            "from": "sp_asasin_punch",
+            "field": "next3",
+            "source_owner": "sp_asasin_punch2",
+            "inheritance_hops": 1
+          },
+          {
+            "skill": "sp_asasin_punch2_pr3_nt1",
+            "from": "sp_asasin_punch2_pr3",
+            "field": "next2",
+            "source_owner": "sp_asasin_punch2_pr3",
+            "inheritance_hops": 0
+          }
+        ]
+      }
+    }
+  ],
+  "event_root_skill_tags": [
+    "a_dash",
+    "a_dash_item",
+    "a_wait1000_0",
+    "a_wait1000_1",
+    "a_wait1000_2",
+    "a_wait1000_999",
+    "a_wait1000_zinzai",
+    "anidesitalk",
+    "anidesitalk10",
+    "anidesitalk2",
+    "anidesitalk3",
+    "anidesitalk4",
+    "anidesitalk5",
+    "anidesitalk6",
+    "anidesitalk7",
+    "anidesitalk8",
+    "anidesitalk9",
+    "b_all_item",
+    "b_fmrim_astk",
+    "b_fmrim_bb",
+    "b_medama_n2",
+    "b_medama_n6",
+    "b_rocket_ramen",
+    "bakushin_talk",
+    "bidai_cannon",
+    "bidai_godhand",
+    "bidai_heal",
+    "bnkrg_hokyu",
+    "bnkrg_hokyu_23",
+    "bossdead",
+    "buff_isama2",
+    "buff_iwana2",
+    "burauni_gun_item",
+    "c_weed1",
+    "c_weed2",
+    "c_weed3",
+    "charge",
+    "com_alc",
+    "com_aniki",
+    "com_aok",
+    "com_azs",
+    "com_bankai",
+    "com_bnkrg",
+    "com_bnkrg2",
+    "com_bnkrg_png",
+    "com_clock",
+    "com_conf",
+    "com_conf_nyn",
+    "com_death",
+    "com_diyualc",
+    "com_diyusi",
+    "com_engine",
+    "com_fear",
+    "com_flour",
+    "com_ganban",
+    "com_gandoha",
+    "com_gosaku",
+    "com_grenade",
+    "com_gun",
+    "com_gyukomu_hokyu",
+    "com_hasami",
+    "com_heal",
+    "com_hitotachi",
+    "com_hokyu",
+    "com_hokyu_azs",
+    "com_hokyu_png",
+    "com_jaken",
+    "com_kasuga",
+    "com_kbs",
+    "com_knk_expand",
+    "com_knn",
+    "com_kusari",
+    "com_kusari_higekuma",
+    "com_kuso",
+    "com_majimekun",
+    "com_marimo",
+    "com_masupa",
+    "com_masupa5",
+    "com_masupa5b",
+    "com_mnr",
+    "com_move",
+    "com_mrmkrrrn",
+    "com_mrmkrrrn2",
+    "com_mur_hokyu",
+    "com_nabe",
+    "com_ndk",
+    "com_new_misairu",
+    "com_nyn",
+    "com_omochi",
+    "com_ondisk",
+    "com_pinky",
+    "com_pojiko",
+    "com_private",
+    "com_ranbu",
+    "com_rikkyotrio",
+    "com_rim",
+    "com_rukick",
+    "com_seiken",
+    "com_skrnbu",
+    "com_slide",
+    "com_sm",
+    "com_snnn",
+    "com_tea",
+    "com_tisa",
+    "com_tns",
+    "com_tsuri",
+    "com_tusk_act1",
+    "com_tusk_act2",
+    "com_tusk_act4",
+    "com_udk",
+    "com_van",
+    "com_yurujiro",
+    "com_zan",
+    "com_zkick",
+    "com_znm",
+    "com_zseiken",
+    "commandcn2_ice",
+    "commandcn3",
+    "commandcn3_ice",
+    "commandcn4",
+    "commandcn5",
+    "commandcn_ice",
+    "demoralization_kiraware",
+    "demoralization_level1",
+    "demoralization_level2",
+    "demoralization_level3",
+    "demoralization_level4",
+    "form_back",
+    "form_dash",
+    "form_dashb",
+    "form_forward",
+    "form_sankai_l3",
+    "form_sankai_l4",
+    "form_sankai_r3",
+    "form_sankai_r4",
+    "form_slow30",
+    "form_slow40",
+    "form_slow50",
+    "form_slow60",
+    "form_slow70",
+    "form_slow80",
+    "form_slow90",
+    "g264_pgaisensya_summon2",
+    "g264_prmla_summon2",
+    "giant_swing",
+    "go_attack",
+    "go_knn",
+    "go_warp",
+    "h_gun_item",
+    "hermit_whip",
+    "hqdefdd",
+    "hqdefhard",
+    "hqeasyempire",
+    "hqeasyempirecpu",
+    "hqgeneabyss",
+    "hqgenedd",
+    "hqgeneeasy",
+    "hqgenehard",
+    "hqgenricpu",
+    "hqhonocpu",
+    "hqkaratecpu",
+    "hqkimocpu",
+    "hqkoumacpu",
+    "hqmarinacpu",
+    "hqnewempire",
+    "hqnewempirecpu",
+    "hqreteicpu",
+    "hqsamson",
+    "hqsamsoncpu",
+    "hqunioncpu",
+    "i_dash",
+    "ingon3",
+    "ingon3_a27b",
+    "jtb_whip",
+    "jtbb_whip",
+    "kbtit_heal",
+    "knn_rush",
+    "konsuitantei",
+    "kusomusume_poi",
+    "ls_newbooster_oback_t1",
+    "ls_sea_s",
+    "ls_snow_s",
+    "m_sik",
+    "megadeath_beam",
+    "megadeath_beam_FriendFire",
+    "mohikan",
+    "mur_rush",
+    "muso_yari0",
+    "nisehsiwaru_kasoku",
+    "nyn_gun",
+    "oyakata_summon",
+    "oyakata_summon2",
+    "oyakata_summon3",
+    "oyakata_summon4",
+    "pes_5goisgod_hard",
+    "pes_5majimekun",
+    "pes_5majimekun_hard",
+    "pes_analbreak1",
+    "pes_analbreak2",
+    "pes_bidai_df",
+    "pes_bidai_fly",
+    "pes_bidai_hp",
+    "pes_bidai_md",
+    "pes_boss_alc",
+    "pes_boss_alc_hard",
+    "pes_boss_toono",
+    "pes_boss_toono_hard",
+    "pes_boss_toono_high",
+    "pes_burger1",
+    "pes_burger2",
+    "pes_burger3",
+    "pes_burger4",
+    "pes_ginryu",
+    "pes_ginryu_hard",
+    "pes_ginryu_normal",
+    "pes_haggar",
+    "pes_happy",
+    "pes_ill3",
+    "pes_interview",
+    "pes_jibunuri",
+    "pes_jirachi_anal",
+    "pes_jirachi_hard",
+    "pes_kankure_anal",
+    "pes_kankure_hard",
+    "pes_knock",
+    "pes_kuroknn_hard",
+    "pes_naikaku",
+    "pes_omoshiromi",
+    "pes_poi2",
+    "pes_poi5",
+    "pes_rikyu7tetsu",
+    "pes_superswk_easy",
+    "pes_syunga",
+    "pes_udrgn",
+    "pes_udrgn_hard",
+    "pes_udrgn_normal",
+    "pes_wate5",
+    "pes_zayryou_oback",
+    "pes_znmframe",
+    "ps_koyo",
+    "ps_sabo",
+    "ps_syunga",
+    "ps_winter1",
+    "ps_winter2",
+    "ps_winter3",
+    "ps_you_bara",
+    "ps_you_cookie",
+    "ps_you_easter",
+    "ps_you_god",
+    "ps_you_homo",
+    "ps_you_homogaki",
+    "ps_you_nk5",
+    "ps_you_nonke",
+    "ps_you_re",
+    "ps_you_sin",
+    "ps_you_toho",
+    "ps_you_unknown",
+    "s_akasan",
+    "s_akueri_ass",
+    "s_angelsuzu3",
+    "s_astk",
+    "s_astk2",
+    "s_astk3",
+    "s_astk4",
+    "s_beer_beer3",
+    "s_briefs",
+    "s_defalc",
+    "s_defalc2",
+    "s_defalc3",
+    "s_defalison",
+    "s_defalison2",
+    "s_defalison3",
+    "s_defarr",
+    "s_defarr2",
+    "s_defarr3",
+    "s_defbase",
+    "s_defboat",
+    "s_defboat2",
+    "s_defboat3",
+    "s_defboatalc",
+    "s_defboatalc2",
+    "s_defboatalc3",
+    "s_defboatalison",
+    "s_defboatalison2",
+    "s_defboatalison3",
+    "s_defboatdark",
+    "s_defboatdark2",
+    "s_defboatdark3",
+    "s_defboatgenri",
+    "s_defboatgenri2",
+    "s_defboatgenri3",
+    "s_defboatguc",
+    "s_defboatguc2",
+    "s_defboatguc3",
+    "s_defboathono",
+    "s_defboathono2",
+    "s_defboathono3",
+    "s_defboathsi",
+    "s_defboathsi2",
+    "s_defboathsi3",
+    "s_defboatinu",
+    "s_defboatinu2",
+    "s_defboatinu3",
+    "s_defboatkarate",
+    "s_defboatkarate2",
+    "s_defboatkarate3",
+    "s_defboatkimo",
+    "s_defboatkimo2",
+    "s_defboatkimo3",
+    "s_defboatkm",
+    "s_defboatkm2",
+    "s_defboatkm3",
+    "s_defboatkouma",
+    "s_defboatkouma2",
+    "s_defboatkouma3",
+    "s_defboatmarina",
+    "s_defboatmarina2",
+    "s_defboatmarina3",
+    "s_defboatoback",
+    "s_defboatoback2",
+    "s_defboatoback3",
+    "s_defboatokasi",
+    "s_defboatokasi2",
+    "s_defboatokasi3",
+    "s_defboatokayama",
+    "s_defboatokayama2",
+    "s_defboatokayama3",
+    "s_defboatondisk",
+    "s_defboatondisk2",
+    "s_defboatondisk3",
+    "s_defboatretei",
+    "s_defboatretei2",
+    "s_defboatretei3",
+    "s_defboatroudou",
+    "s_defboatroudou2",
+    "s_defboatroudou3",
+    "s_defboatryuji",
+    "s_defboatryuji2",
+    "s_defboatryuji3",
+    "s_defboatsam",
+    "s_defboatsam2",
+    "s_defboatsam3",
+    "s_defboatseitou",
+    "s_defboatseitou2",
+    "s_defboatseitou3",
+    "s_defboatsik",
+    "s_defboatsik2",
+    "s_defboatsik3",
+    "s_defboatsww",
+    "s_defboatsww2",
+    "s_defboatsww3",
+    "s_defboattis",
+    "s_defboattis2",
+    "s_defboattis3",
+    "s_defboattnok",
+    "s_defboattnok2",
+    "s_defboattnok3",
+    "s_defboattoono",
+    "s_defboattoono2",
+    "s_defboattoono3",
+    "s_defboatvvan",
+    "s_defboatvvan2",
+    "s_defboatvvan3",
+    "s_defcan",
+    "s_defcan2",
+    "s_defcan3",
+    "s_defcanguc",
+    "s_defcanguc2",
+    "s_defcanguc3",
+    "s_defcankarate",
+    "s_defcankarate2",
+    "s_defcankarate3",
+    "s_defcankimo",
+    "s_defcankimo2",
+    "s_defcankimo3",
+    "s_defcankm",
+    "s_defcankm2",
+    "s_defcankm3",
+    "s_defcanmarina",
+    "s_defcanmarina2",
+    "s_defcanmarina3",
+    "s_defcanoback",
+    "s_defcanoback2",
+    "s_defcanoback3",
+    "s_defcanokasi",
+    "s_defcanokasi2",
+    "s_defcanokasi3",
+    "s_defcanokayama",
+    "s_defcanokayama2",
+    "s_defcanokayama3",
+    "s_defcanretei",
+    "s_defcanretei2",
+    "s_defcanretei3",
+    "s_defdark",
+    "s_defdark2",
+    "s_defdark3",
+    "s_defemp",
+    "s_defemp2",
+    "s_defemp3",
+    "s_defgenri",
+    "s_defgenri2",
+    "s_defgenri3",
+    "s_defguc",
+    "s_defguc2",
+    "s_defguc3",
+    "s_defgun",
+    "s_defgun2",
+    "s_defgun3",
+    "s_defgunhono",
+    "s_defgunhono2",
+    "s_defgunhono3",
+    "s_defhono",
+    "s_defhono2",
+    "s_defhono3",
+    "s_defhsi",
+    "s_defhsi2",
+    "s_defhsi3",
+    "s_definu",
+    "s_definu2",
+    "s_definu3",
+    "s_defkarate",
+    "s_defkarate2",
+    "s_defkarate3",
+    "s_defkimo",
+    "s_defkimo2",
+    "s_defkimo3",
+    "s_defkm",
+    "s_defkm2",
+    "s_defkm3",
+    "s_defkouma",
+    "s_defkouma2",
+    "s_defkouma3",
+    "s_defmag",
+    "s_defmag2",
+    "s_defmag3",
+    "s_defmarina",
+    "s_defmarina2",
+    "s_defmarina3",
+    "s_defnavy",
+    "s_defnavy2",
+    "s_defnavy3",
+    "s_defnavykm",
+    "s_defnavykm2",
+    "s_defnavykm3",
+    "s_defoback",
+    "s_defoback2",
+    "s_defoback3",
+    "s_defojisan",
+    "s_defojisan2",
+    "s_defojisan3",
+    "s_defokasi",
+    "s_defokasi2",
+    "s_defokasi3",
+    "s_defokayama",
+    "s_defokayama2",
+    "s_defokayama3",
+    "s_defondisk",
+    "s_defondisk2",
+    "s_defondisk3",
+    "s_defretei",
+    "s_defretei2",
+    "s_defretei3",
+    "s_defroudou",
+    "s_defroudou2",
+    "s_defroudou3",
+    "s_defryuji",
+    "s_defryuji2",
+    "s_defryuji3",
+    "s_defsam",
+    "s_defsam2",
+    "s_defsam3",
+    "s_defseitou",
+    "s_defseitou2",
+    "s_defseitou3",
+    "s_defsik",
+    "s_defsik2",
+    "s_defsik3",
+    "s_defsww",
+    "s_defsww2",
+    "s_defsww3",
+    "s_deftis",
+    "s_deftis2",
+    "s_deftis3",
+    "s_deftnok",
+    "s_deftnok2",
+    "s_deftnok3",
+    "s_deftoono",
+    "s_deftoono2",
+    "s_deftoono3",
+    "s_defvvan",
+    "s_defvvan2",
+    "s_defvvan3",
+    "s_deka_makura",
+    "s_dokukesi3",
+    "s_head_disk1",
+    "s_head_disk2",
+    "s_head_disk3",
+    "s_head_drama1",
+    "s_head_drama2",
+    "s_head_drama3",
+    "s_head_genri1",
+    "s_head_genri2",
+    "s_head_genri3",
+    "s_head_knn1",
+    "s_head_knn2",
+    "s_head_knn3",
+    "s_head_toono1",
+    "s_head_toono2",
+    "s_head_toono3",
+    "s_head_tuyo1",
+    "s_head_tuyo2",
+    "s_head_tuyo3",
+    "s_head_vvan1",
+    "s_head_vvan2",
+    "s_head_vvan3",
+    "s_ika_kimchi3",
+    "s_inoti_isi",
+    "s_inyume_com0",
+    "s_inyume_com1",
+    "s_inyume_com2",
+    "s_itiziku_kancho3",
+    "s_kanyo_plant3",
+    "s_kenja_com0",
+    "s_kenja_com1",
+    "s_kenja_com2",
+    "s_kitune_udon3",
+    "s_kyou",
+    "s_mangetu3",
+    "s_mezame3",
+    "s_monaka_senyo",
+    "s_oback3",
+    "s_oil_nuro3",
+    "s_omutu",
+    "s_orange_juice3",
+    "s_orange_pant",
+    "s_po25pena1",
+    "s_po25pena2",
+    "s_po25pena3",
+    "s_sei",
+    "s_skrnb3",
+    "s_supernkdk",
+    "s_tororosoba",
+    "s_toshino_com0",
+    "s_toshino_com1",
+    "s_toshino_com2",
+    "s_weekly_peer",
+    "sakenomiga_summon",
+    "sasurai_talk",
+    "self_a010",
+    "self_a0102",
+    "self_a0103",
+    "self_a010b",
+    "self_a010b2",
+    "self_a010b3",
+    "shinegoisgod",
+    "shinesiksita",
+    "sichosha_zan0",
+    "sk_mgr",
+    "skk_santa",
+    "sp_3zuyari",
+    "sp_attack",
+    "sp_bangi",
+    "sp_bnkrg2",
+    "sp_conf",
+    "sp_defense",
+    "sp_dext",
+    "sp_fear",
+    "sp_flour",
+    "sp_fmrim1",
+    "sp_fmrim3",
+    "sp_fmrim4",
+    "sp_fmrim5",
+    "sp_fmrim5_r",
+    "sp_fmrim6",
+    "sp_fmrim6_r",
+    "sp_fmrim_joker",
+    "sp_gansohitotachi",
+    "sp_gansohitotachi_r",
+    "sp_geru2d",
+    "sp_go_nannkasugoino",
+    "sp_go_nannkasugoino2",
+    "sp_grenade",
+    "sp_gun_toukou",
+    "sp_gyukomu_hokyu",
+    "sp_heal_2",
+    "sp_heal_3",
+    "sp_hokyu",
+    "sp_hprec",
+    "sp_hsi_summon",
+    "sp_idol",
+    "sp_inu",
+    "sp_jibakub",
+    "sp_justtalk",
+    "sp_justtalk2",
+    "sp_justtalk3",
+    "sp_justtalk4",
+    "sp_justtalk5",
+    "sp_justtalk6",
+    "sp_kasuga_toukou",
+    "sp_kuso",
+    "sp_magic",
+    "sp_masupa",
+    "sp_masupa_azs",
+    "sp_mimi_mot",
+    "sp_nabe",
+    "sp_ndk",
+    "sp_nikuoja_hagyagi",
+    "sp_oyakohitotachi",
+    "sp_pinky",
+    "sp_pinky_2",
+    "sp_private",
+    "sp_ranbu",
+    "sp_ranbu_toukou",
+    "sp_rikkyotrio",
+    "sp_roadroller",
+    "sp_roadroller_anal",
+    "sp_ru",
+    "sp_ru_bite",
+    "sp_rukick",
+    "sp_s_alc",
+    "sp_sakamori",
+    "sp_sakenomi7",
+    "sp_sakenomi7_r",
+    "sp_sonae",
+    "sp_speed",
+    "sp_syokupanman_summon",
+    "sp_tdnastk",
+    "sp_tea",
+    "sp_udk_ass",
+    "sp_vanban",
+    "sp_vanban2",
+    "spd_attack",
+    "spy_mprec",
+    "stove",
+    "sw_karate1",
+    "syaberu_dake",
+    "syaberu_dake2",
+    "syaberu_dake3",
+    "syaberu_dake4",
+    "syaberu_dake_astk",
+    "syunga_throw",
+    "tb_whip",
+    "tbb_whip",
+    "tuto_masupa",
+    "v1rocket",
+    "wait_alc",
+    "wait_aniki",
+    "wait_aok",
+    "wait_bankai",
+    "wait_bnkrg",
+    "wait_bnkrg2",
+    "wait_bnkrg_png",
+    "wait_clock",
+    "wait_conf",
+    "wait_conf_nyn",
+    "wait_death",
+    "wait_diyualc",
+    "wait_diyusi",
+    "wait_engine",
+    "wait_fear",
+    "wait_flour",
+    "wait_ganban",
+    "wait_gandoha",
+    "wait_gosaku",
+    "wait_grenade",
+    "wait_gun",
+    "wait_gyukomu_hokyu",
+    "wait_hasami",
+    "wait_heal",
+    "wait_hitotachi",
+    "wait_hokyu",
+    "wait_hokyu_azs",
+    "wait_hokyu_png",
+    "wait_jaken",
+    "wait_kasuga",
+    "wait_kbs",
+    "wait_knk_expand",
+    "wait_knn",
+    "wait_kusari",
+    "wait_kuso",
+    "wait_kuso_b",
+    "wait_majimekun",
+    "wait_majimekun_b",
+    "wait_marimo",
+    "wait_masupa",
+    "wait_mnr",
+    "wait_move",
+    "wait_mrmkrrrn",
+    "wait_mrmkrrrn2",
+    "wait_mur_hokyu",
+    "wait_nabe",
+    "wait_ndk",
+    "wait_new_misairu",
+    "wait_nyn",
+    "wait_omochi",
+    "wait_ondisk",
+    "wait_pinky",
+    "wait_pojiko",
+    "wait_private",
+    "wait_ranbu",
+    "wait_rikkyotrio",
+    "wait_rim",
+    "wait_rukick",
+    "wait_seiken",
+    "wait_skrnbu",
+    "wait_slide",
+    "wait_sm",
+    "wait_snnn",
+    "wait_tea",
+    "wait_tisa",
+    "wait_tns",
+    "wait_tsuri",
+    "wait_tusk_act1",
+    "wait_tusk_act2",
+    "wait_tusk_act4",
+    "wait_van",
+    "wait_yurujiro",
+    "wait_zan",
+    "wait_zkick",
+    "wait_znm",
+    "wait_zseiken",
+    "yaju_rush",
+    "yamajunperfect",
+    "yuh_butigire",
+    "yuuh_sp_r",
+    "znm_board"
+  ],
+  "skillset_root_skill_tags": [
+    "a_dash_item",
+    "aniki_spank0",
+    "aniki_spank1",
+    "b_all_item",
+    "b_eart",
+    "b_fire",
+    "b_ligh",
+    "b_thun",
+    "b_wate",
+    "b_wind",
+    "bayonet0",
+    "bayonet1",
+    "burauni_gun_item",
+    "ch0",
+    "ch1",
+    "cop_zan0",
+    "cop_zan1",
+    "de_dokubari0",
+    "de_dokubari1",
+    "dokubari0",
+    "dokubari1",
+    "e893zan0",
+    "e893zan1",
+    "fire_yari0",
+    "fire_yari1",
+    "h_gun_item",
+    "hn_at2",
+    "hn_dx",
+    "hn_dx2",
+    "hn_hp2",
+    "hn_mg",
+    "hn_mg2",
+    "hn_mv2",
+    "hn_sm2",
+    "iron0",
+    "iron1",
+    "jiangshi_zan0",
+    "jiangshi_zan1",
+    "k_zan0",
+    "k_zan1",
+    "karaage_plate0",
+    "karaage_plate1",
+    "kuso_yari0",
+    "kuso_yari1",
+    "kusotrap",
+    "m_eart",
+    "m_fire",
+    "m_ligh",
+    "m_thun",
+    "m_wate",
+    "m_wind",
+    "milk_zan0",
+    "milk_zan1",
+    "mnr_zan0",
+    "mnr_zan1",
+    "morning0",
+    "morning1",
+    "mummy_zan0",
+    "mummy_zan1",
+    "new_kumade0",
+    "new_kumade1",
+    "new_yari0",
+    "new_yari1",
+    "ninja_zan0",
+    "ninja_zan1",
+    "nk5_zan0",
+    "nk5_zan1",
+    "nrim_zan0",
+    "nrim_zan1",
+    "poi_yari0",
+    "poi_yari1",
+    "s_green1",
+    "s_green2",
+    "sknkn_zan0",
+    "sknkn_zan1",
+    "sp_bio2",
+    "sp_dorobo",
+    "sp_flash",
+    "sp_gun",
+    "sp_jagi",
+    "sp_metal",
+    "sp_tomjeri",
+    "spank0",
+    "spank1",
+    "ssrn_zan0",
+    "ssrn_zan1",
+    "sw_karate0",
+    "sw_karate1",
+    "sw_vega0",
+    "sw_vega1",
+    "warp_door",
+    "y_zan0",
+    "y_zan1",
+    "zan0",
+    "zan1"
+  ],
+  "rootset_skillset_origin_count": {
+    "you_leader_skillset": 1,
+    "item_leader_skillset": 263,
+    "a_zan": 77,
+    "aniki_spank": 3,
+    "a_kumade": 4,
+    "set_wate": 9,
+    "a_ch": 155,
+    "a_spank": 6,
+    "a_yari": 30,
+    "sw_karate": 5,
+    "fire_yari": 5,
+    "a_karaage": 1,
+    "set_fire": 9,
+    "sknkn_zan": 2,
+    "k_zan": 7,
+    "ssrn_zan": 1,
+    "set_sm3": 1,
+    "set_ligh": 4,
+    "set_eart": 4,
+    "set_wind": 4,
+    "set_thun": 4,
+    "kuso_yari": 9,
+    "bayonet": 10,
+    "s_green": 3,
+    "e893_zan": 3,
+    "mnr_zan": 3,
+    "y_zan": 3,
+    "cop_zan": 3,
+    "morning": 3,
+    "ninja_zan": 2,
+    "nk5_zan": 3,
+    "iron": 3,
+    "poi_yari": 3,
+    "jiangshi_zan": 1,
+    "mummy_zan": 1,
+    "nrim_zan": 2,
+    "milk_zan": 2,
+    "de_dokubari": 1,
+    "dokubari": 1,
+    "sw_vega": 3,
+    "set_cv3": 1,
+    "set_cvb3": 2,
+    "set_mgb2": 1,
+    "set_mgb3": 1
+  },
+  "warning": [
+    "Skillset member keyword * count is only used for unique root membership here",
+    "Script event argument 1 literal is only a source candidate, not executed call",
+    "Native next-family compiler may not implement generic parent lookup exactly as Work registry",
+    "Original gameplay 0 / strict match 0"
+  ],
+  "golden": 0,
+  "strict": 0
+}

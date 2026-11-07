@@ -1,0 +1,3081 @@
+{
+  "status": "WIKI 2026-02-25 VERSUS ORIGINAL DAT 0.67; PROVISIONAL CONSTI SCALE, NOT NATIVE SPEED",
+  "wiki_archive": "HakushinWiki_002.zip",
+  "wiki_text": "texts/000485.txt",
+  "wiki_last_update_text": "最終更新：ID:pye/bjJS8A 2026年02月25日(水) 00:22:53履歴",
+  "wiki_table_rows": 29,
+  "terrain_columns": [
+    "草原",
+    "荒地",
+    "森林",
+    "海上",
+    "砂漠",
+    "山岳",
+    "沼地",
+    "雪原",
+    "路面"
+  ],
+  "compared_cells": 261,
+  "matched_cells": 245,
+  "mismatched_cells": 16,
+  "mismatch_types": {
+    "snow": 1,
+    "wheel": 1,
+    "water_wheel": 1,
+    "tank": 3,
+    "majime": 9,
+    "uneiw": 1
+  },
+  "discrepancies": [
+    {
+      "movetype": "snow",
+      "name": "雪原",
+      "unit_count_static": 0,
+      "class_count_static": 0,
+      "terrain": "沼地",
+      "source_key": "mersh",
+      "wiki_percent": 20,
+      "dat_explicit_coefficient": 3,
+      "dat_imputed_coefficient_if_absent": 3,
+      "dat_nominal_percent_HYPOTHESIS": -40,
+      "status": "MISMATCH",
+      "wiki_line": 21
+    },
+    {
+      "movetype": "wheel",
+      "name": "装輪",
+      "unit_count_static": 77,
+      "class_count_static": 117,
+      "terrain": "雪原",
+      "source_key": "snow",
+      "wiki_percent": 20,
+      "dat_explicit_coefficient": 7,
+      "dat_imputed_coefficient_if_absent": 7,
+      "dat_nominal_percent_HYPOTHESIS": 40,
+      "status": "MISMATCH",
+      "wiki_line": 25
+    },
+    {
+      "movetype": "water_wheel",
+      "name": "水陸両用",
+      "unit_count_static": 0,
+      "class_count_static": 4,
+      "terrain": "海上",
+      "source_key": "sea",
+      "wiki_percent": 60,
+      "dat_explicit_coefficient": 7,
+      "dat_imputed_coefficient_if_absent": 7,
+      "dat_nominal_percent_HYPOTHESIS": 40,
+      "status": "MISMATCH",
+      "wiki_line": 26
+    },
+    {
+      "movetype": "tank",
+      "name": "戦車",
+      "unit_count_static": 6,
+      "class_count_static": 26,
+      "terrain": "荒地",
+      "source_key": "mud",
+      "wiki_percent": 80,
+      "dat_explicit_coefficient": 8,
+      "dat_imputed_coefficient_if_absent": 8,
+      "dat_nominal_percent_HYPOTHESIS": 60,
+      "status": "MISMATCH",
+      "wiki_line": 35
+    },
+    {
+      "movetype": "tank",
+      "name": "戦車",
+      "unit_count_static": 6,
+      "class_count_static": 26,
+      "terrain": "海上",
+      "source_key": "sea",
+      "wiki_percent": -90,
+      "dat_explicit_coefficient": 1,
+      "dat_imputed_coefficient_if_absent": 1,
+      "dat_nominal_percent_HYPOTHESIS": -80,
+      "status": "MISMATCH",
+      "wiki_line": 35
+    },
+    {
+      "movetype": "tank",
+      "name": "戦車",
+      "unit_count_static": 6,
+      "class_count_static": 26,
+      "terrain": "雪原",
+      "source_key": "snow",
+      "wiki_percent": 20,
+      "dat_explicit_coefficient": 7,
+      "dat_imputed_coefficient_if_absent": 7,
+      "dat_nominal_percent_HYPOTHESIS": 40,
+      "status": "MISMATCH",
+      "wiki_line": 35
+    },
+    {
+      "movetype": "majime",
+      "name": "天使",
+      "unit_count_static": 6,
+      "class_count_static": 0,
+      "terrain": "草原",
+      "source_key": "grass",
+      "wiki_percent": -80,
+      "dat_explicit_coefficient": 2,
+      "dat_imputed_coefficient_if_absent": 2,
+      "dat_nominal_percent_HYPOTHESIS": -60,
+      "status": "MISMATCH",
+      "wiki_line": 42
+    },
+    {
+      "movetype": "majime",
+      "name": "天使",
+      "unit_count_static": 6,
+      "class_count_static": 0,
+      "terrain": "荒地",
+      "source_key": "mud",
+      "wiki_percent": -80,
+      "dat_explicit_coefficient": 2,
+      "dat_imputed_coefficient_if_absent": 2,
+      "dat_nominal_percent_HYPOTHESIS": -60,
+      "status": "MISMATCH",
+      "wiki_line": 42
+    },
+    {
+      "movetype": "majime",
+      "name": "天使",
+      "unit_count_static": 6,
+      "class_count_static": 0,
+      "terrain": "森林",
+      "source_key": "wood",
+      "wiki_percent": -80,
+      "dat_explicit_coefficient": 2,
+      "dat_imputed_coefficient_if_absent": 2,
+      "dat_nominal_percent_HYPOTHESIS": -60,
+      "status": "MISMATCH",
+      "wiki_line": 42
+    },
+    {
+      "movetype": "majime",
+      "name": "天使",
+      "unit_count_static": 6,
+      "class_count_static": 0,
+      "terrain": "海上",
+      "source_key": "sea",
+      "wiki_percent": -80,
+      "dat_explicit_coefficient": 2,
+      "dat_imputed_coefficient_if_absent": 2,
+      "dat_nominal_percent_HYPOTHESIS": -60,
+      "status": "MISMATCH",
+      "wiki_line": 42
+    },
+    {
+      "movetype": "majime",
+      "name": "天使",
+      "unit_count_static": 6,
+      "class_count_static": 0,
+      "terrain": "砂漠",
+      "source_key": "sand",
+      "wiki_percent": -80,
+      "dat_explicit_coefficient": 2,
+      "dat_imputed_coefficient_if_absent": 2,
+      "dat_nominal_percent_HYPOTHESIS": -60,
+      "status": "MISMATCH",
+      "wiki_line": 42
+    },
+    {
+      "movetype": "majime",
+      "name": "天使",
+      "unit_count_static": 6,
+      "class_count_static": 0,
+      "terrain": "山岳",
+      "source_key": "rock",
+      "wiki_percent": -80,
+      "dat_explicit_coefficient": 2,
+      "dat_imputed_coefficient_if_absent": 2,
+      "dat_nominal_percent_HYPOTHESIS": -60,
+      "status": "MISMATCH",
+      "wiki_line": 42
+    },
+    {
+      "movetype": "majime",
+      "name": "天使",
+      "unit_count_static": 6,
+      "class_count_static": 0,
+      "terrain": "沼地",
+      "source_key": "mersh",
+      "wiki_percent": -80,
+      "dat_explicit_coefficient": 2,
+      "dat_imputed_coefficient_if_absent": 2,
+      "dat_nominal_percent_HYPOTHESIS": -60,
+      "status": "MISMATCH",
+      "wiki_line": 42
+    },
+    {
+      "movetype": "majime",
+      "name": "天使",
+      "unit_count_static": 6,
+      "class_count_static": 0,
+      "terrain": "雪原",
+      "source_key": "snow",
+      "wiki_percent": -80,
+      "dat_explicit_coefficient": 2,
+      "dat_imputed_coefficient_if_absent": 2,
+      "dat_nominal_percent_HYPOTHESIS": -60,
+      "status": "MISMATCH",
+      "wiki_line": 42
+    },
+    {
+      "movetype": "majime",
+      "name": "天使",
+      "unit_count_static": 6,
+      "class_count_static": 0,
+      "terrain": "路面",
+      "source_key": "road",
+      "wiki_percent": -80,
+      "dat_explicit_coefficient": 2,
+      "dat_imputed_coefficient_if_absent": 2,
+      "dat_nominal_percent_HYPOTHESIS": -60,
+      "status": "MISMATCH",
+      "wiki_line": 42
+    },
+    {
+      "movetype": "uneiw",
+      "name": "削除",
+      "unit_count_static": 3,
+      "class_count_static": 12,
+      "terrain": "山岳",
+      "source_key": "rock",
+      "wiki_percent": 20,
+      "dat_explicit_coefficient": null,
+      "dat_imputed_coefficient_if_absent": 5,
+      "dat_nominal_percent_HYPOTHESIS": 0,
+      "status": "MISMATCH",
+      "wiki_line": 43
+    }
+  ],
+  "matrix": {
+    "normal": {
+      "name": "普通",
+      "wiki_line": 15,
+      "cells": [
+        {
+          "terrain": "草原",
+          "source_key": "grass",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 15
+        },
+        {
+          "terrain": "荒地",
+          "source_key": "mud",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 15
+        },
+        {
+          "terrain": "森林",
+          "source_key": "wood",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 15
+        },
+        {
+          "terrain": "海上",
+          "source_key": "sea",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 15
+        },
+        {
+          "terrain": "砂漠",
+          "source_key": "sand",
+          "wiki_percent": -20,
+          "dat_explicit_coefficient": 4,
+          "dat_imputed_coefficient_if_absent": 4,
+          "dat_nominal_percent_HYPOTHESIS": -20,
+          "status": "MATCH",
+          "wiki_line": 15
+        },
+        {
+          "terrain": "山岳",
+          "source_key": "rock",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 15
+        },
+        {
+          "terrain": "沼地",
+          "source_key": "mersh",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 15
+        },
+        {
+          "terrain": "雪原",
+          "source_key": "snow",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 15
+        },
+        {
+          "terrain": "路面",
+          "source_key": "road",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 15
+        }
+      ]
+    },
+    "grass": {
+      "name": "草原",
+      "wiki_line": 16,
+      "cells": [
+        {
+          "terrain": "草原",
+          "source_key": "grass",
+          "wiki_percent": 100,
+          "dat_explicit_coefficient": 10,
+          "dat_imputed_coefficient_if_absent": 10,
+          "dat_nominal_percent_HYPOTHESIS": 100,
+          "status": "MATCH",
+          "wiki_line": 16
+        },
+        {
+          "terrain": "荒地",
+          "source_key": "mud",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 16
+        },
+        {
+          "terrain": "森林",
+          "source_key": "wood",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 16
+        },
+        {
+          "terrain": "海上",
+          "source_key": "sea",
+          "wiki_percent": -60,
+          "dat_explicit_coefficient": 2,
+          "dat_imputed_coefficient_if_absent": 2,
+          "dat_nominal_percent_HYPOTHESIS": -60,
+          "status": "MATCH",
+          "wiki_line": 16
+        },
+        {
+          "terrain": "砂漠",
+          "source_key": "sand",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 16
+        },
+        {
+          "terrain": "山岳",
+          "source_key": "rock",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 16
+        },
+        {
+          "terrain": "沼地",
+          "source_key": "mersh",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 16
+        },
+        {
+          "terrain": "雪原",
+          "source_key": "snow",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 16
+        },
+        {
+          "terrain": "路面",
+          "source_key": "road",
+          "wiki_percent": 60,
+          "dat_explicit_coefficient": 8,
+          "dat_imputed_coefficient_if_absent": 8,
+          "dat_nominal_percent_HYPOTHESIS": 60,
+          "status": "MATCH",
+          "wiki_line": 16
+        }
+      ]
+    },
+    "wood": {
+      "name": "森林",
+      "wiki_line": 17,
+      "cells": [
+        {
+          "terrain": "草原",
+          "source_key": "grass",
+          "wiki_percent": 60,
+          "dat_explicit_coefficient": 8,
+          "dat_imputed_coefficient_if_absent": 8,
+          "dat_nominal_percent_HYPOTHESIS": 60,
+          "status": "MATCH",
+          "wiki_line": 17
+        },
+        {
+          "terrain": "荒地",
+          "source_key": "mud",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 17
+        },
+        {
+          "terrain": "森林",
+          "source_key": "wood",
+          "wiki_percent": 100,
+          "dat_explicit_coefficient": 10,
+          "dat_imputed_coefficient_if_absent": 10,
+          "dat_nominal_percent_HYPOTHESIS": 100,
+          "status": "MATCH",
+          "wiki_line": 17
+        },
+        {
+          "terrain": "海上",
+          "source_key": "sea",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 17
+        },
+        {
+          "terrain": "砂漠",
+          "source_key": "sand",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 17
+        },
+        {
+          "terrain": "山岳",
+          "source_key": "rock",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 17
+        },
+        {
+          "terrain": "沼地",
+          "source_key": "mersh",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 17
+        },
+        {
+          "terrain": "雪原",
+          "source_key": "snow",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 17
+        },
+        {
+          "terrain": "路面",
+          "source_key": "road",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 17
+        }
+      ]
+    },
+    "moor": {
+      "name": "荒地",
+      "wiki_line": 18,
+      "cells": [
+        {
+          "terrain": "草原",
+          "source_key": "grass",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 18
+        },
+        {
+          "terrain": "荒地",
+          "source_key": "mud",
+          "wiki_percent": 100,
+          "dat_explicit_coefficient": 10,
+          "dat_imputed_coefficient_if_absent": 10,
+          "dat_nominal_percent_HYPOTHESIS": 100,
+          "status": "MATCH",
+          "wiki_line": 18
+        },
+        {
+          "terrain": "森林",
+          "source_key": "wood",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 18
+        },
+        {
+          "terrain": "海上",
+          "source_key": "sea",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 18
+        },
+        {
+          "terrain": "砂漠",
+          "source_key": "sand",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 18
+        },
+        {
+          "terrain": "山岳",
+          "source_key": "rock",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 18
+        },
+        {
+          "terrain": "沼地",
+          "source_key": "mersh",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 18
+        },
+        {
+          "terrain": "雪原",
+          "source_key": "snow",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 18
+        },
+        {
+          "terrain": "路面",
+          "source_key": "road",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 18
+        }
+      ]
+    },
+    "sand": {
+      "name": "砂漠",
+      "wiki_line": 19,
+      "cells": [
+        {
+          "terrain": "草原",
+          "source_key": "grass",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 19
+        },
+        {
+          "terrain": "荒地",
+          "source_key": "mud",
+          "wiki_percent": 60,
+          "dat_explicit_coefficient": 8,
+          "dat_imputed_coefficient_if_absent": 8,
+          "dat_nominal_percent_HYPOTHESIS": 60,
+          "status": "MATCH",
+          "wiki_line": 19
+        },
+        {
+          "terrain": "森林",
+          "source_key": "wood",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 19
+        },
+        {
+          "terrain": "海上",
+          "source_key": "sea",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 19
+        },
+        {
+          "terrain": "砂漠",
+          "source_key": "sand",
+          "wiki_percent": 100,
+          "dat_explicit_coefficient": 10,
+          "dat_imputed_coefficient_if_absent": 10,
+          "dat_nominal_percent_HYPOTHESIS": 100,
+          "status": "MATCH",
+          "wiki_line": 19
+        },
+        {
+          "terrain": "山岳",
+          "source_key": "rock",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": 5,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 19
+        },
+        {
+          "terrain": "沼地",
+          "source_key": "mersh",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 19
+        },
+        {
+          "terrain": "雪原",
+          "source_key": "snow",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 19
+        },
+        {
+          "terrain": "路面",
+          "source_key": "road",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 19
+        }
+      ]
+    },
+    "rock": {
+      "name": "山岳",
+      "wiki_line": 20,
+      "cells": [
+        {
+          "terrain": "草原",
+          "source_key": "grass",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 20
+        },
+        {
+          "terrain": "荒地",
+          "source_key": "mud",
+          "wiki_percent": 60,
+          "dat_explicit_coefficient": 8,
+          "dat_imputed_coefficient_if_absent": 8,
+          "dat_nominal_percent_HYPOTHESIS": 60,
+          "status": "MATCH",
+          "wiki_line": 20
+        },
+        {
+          "terrain": "森林",
+          "source_key": "wood",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 20
+        },
+        {
+          "terrain": "海上",
+          "source_key": "sea",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 20
+        },
+        {
+          "terrain": "砂漠",
+          "source_key": "sand",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 20
+        },
+        {
+          "terrain": "山岳",
+          "source_key": "rock",
+          "wiki_percent": 100,
+          "dat_explicit_coefficient": 10,
+          "dat_imputed_coefficient_if_absent": 10,
+          "dat_nominal_percent_HYPOTHESIS": 100,
+          "status": "MATCH",
+          "wiki_line": 20
+        },
+        {
+          "terrain": "沼地",
+          "source_key": "mersh",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 20
+        },
+        {
+          "terrain": "雪原",
+          "source_key": "snow",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 20
+        },
+        {
+          "terrain": "路面",
+          "source_key": "road",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 20
+        }
+      ]
+    },
+    "snow": {
+      "name": "雪原",
+      "wiki_line": 21,
+      "cells": [
+        {
+          "terrain": "草原",
+          "source_key": "grass",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 21
+        },
+        {
+          "terrain": "荒地",
+          "source_key": "mud",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 21
+        },
+        {
+          "terrain": "森林",
+          "source_key": "wood",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 21
+        },
+        {
+          "terrain": "海上",
+          "source_key": "sea",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 21
+        },
+        {
+          "terrain": "砂漠",
+          "source_key": "sand",
+          "wiki_percent": -20,
+          "dat_explicit_coefficient": 4,
+          "dat_imputed_coefficient_if_absent": 4,
+          "dat_nominal_percent_HYPOTHESIS": -20,
+          "status": "MATCH",
+          "wiki_line": 21
+        },
+        {
+          "terrain": "山岳",
+          "source_key": "rock",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 21
+        },
+        {
+          "terrain": "沼地",
+          "source_key": "mersh",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MISMATCH",
+          "wiki_line": 21
+        },
+        {
+          "terrain": "雪原",
+          "source_key": "snow",
+          "wiki_percent": 100,
+          "dat_explicit_coefficient": 10,
+          "dat_imputed_coefficient_if_absent": 10,
+          "dat_nominal_percent_HYPOTHESIS": 100,
+          "status": "MATCH",
+          "wiki_line": 21
+        },
+        {
+          "terrain": "路面",
+          "source_key": "road",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 21
+        }
+      ]
+    },
+    "mersh": {
+      "name": "沼地",
+      "wiki_line": 22,
+      "cells": [
+        {
+          "terrain": "草原",
+          "source_key": "grass",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 22
+        },
+        {
+          "terrain": "荒地",
+          "source_key": "mud",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 22
+        },
+        {
+          "terrain": "森林",
+          "source_key": "wood",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 22
+        },
+        {
+          "terrain": "海上",
+          "source_key": "sea",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 22
+        },
+        {
+          "terrain": "砂漠",
+          "source_key": "sand",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 22
+        },
+        {
+          "terrain": "山岳",
+          "source_key": "rock",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 22
+        },
+        {
+          "terrain": "沼地",
+          "source_key": "mersh",
+          "wiki_percent": 100,
+          "dat_explicit_coefficient": 10,
+          "dat_imputed_coefficient_if_absent": 10,
+          "dat_nominal_percent_HYPOTHESIS": 100,
+          "status": "MATCH",
+          "wiki_line": 22
+        },
+        {
+          "terrain": "雪原",
+          "source_key": "snow",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 22
+        },
+        {
+          "terrain": "路面",
+          "source_key": "road",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 22
+        }
+      ]
+    },
+    "sea": {
+      "name": "海上",
+      "wiki_line": 23,
+      "cells": [
+        {
+          "terrain": "草原",
+          "source_key": "grass",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 23
+        },
+        {
+          "terrain": "荒地",
+          "source_key": "mud",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 23
+        },
+        {
+          "terrain": "森林",
+          "source_key": "wood",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 23
+        },
+        {
+          "terrain": "海上",
+          "source_key": "sea",
+          "wiki_percent": 80,
+          "dat_explicit_coefficient": 9,
+          "dat_imputed_coefficient_if_absent": 9,
+          "dat_nominal_percent_HYPOTHESIS": 80,
+          "status": "MATCH",
+          "wiki_line": 23
+        },
+        {
+          "terrain": "砂漠",
+          "source_key": "sand",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 23
+        },
+        {
+          "terrain": "山岳",
+          "source_key": "rock",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 23
+        },
+        {
+          "terrain": "沼地",
+          "source_key": "mersh",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 23
+        },
+        {
+          "terrain": "雪原",
+          "source_key": "snow",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 23
+        },
+        {
+          "terrain": "路面",
+          "source_key": "road",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 23
+        }
+      ]
+    },
+    "shinobi": {
+      "name": "強脚",
+      "wiki_line": 24,
+      "cells": [
+        {
+          "terrain": "草原",
+          "source_key": "grass",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 24
+        },
+        {
+          "terrain": "荒地",
+          "source_key": "mud",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 24
+        },
+        {
+          "terrain": "森林",
+          "source_key": "wood",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 24
+        },
+        {
+          "terrain": "海上",
+          "source_key": "sea",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 24
+        },
+        {
+          "terrain": "砂漠",
+          "source_key": "sand",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 24
+        },
+        {
+          "terrain": "山岳",
+          "source_key": "rock",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 24
+        },
+        {
+          "terrain": "沼地",
+          "source_key": "mersh",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 24
+        },
+        {
+          "terrain": "雪原",
+          "source_key": "snow",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 24
+        },
+        {
+          "terrain": "路面",
+          "source_key": "road",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 24
+        }
+      ]
+    },
+    "wheel": {
+      "name": "装輪",
+      "wiki_line": 25,
+      "cells": [
+        {
+          "terrain": "草原",
+          "source_key": "grass",
+          "wiki_percent": 80,
+          "dat_explicit_coefficient": 9,
+          "dat_imputed_coefficient_if_absent": 9,
+          "dat_nominal_percent_HYPOTHESIS": 80,
+          "status": "MATCH",
+          "wiki_line": 25
+        },
+        {
+          "terrain": "荒地",
+          "source_key": "mud",
+          "wiki_percent": 60,
+          "dat_explicit_coefficient": 8,
+          "dat_imputed_coefficient_if_absent": 8,
+          "dat_nominal_percent_HYPOTHESIS": 60,
+          "status": "MATCH",
+          "wiki_line": 25
+        },
+        {
+          "terrain": "森林",
+          "source_key": "wood",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 25
+        },
+        {
+          "terrain": "海上",
+          "source_key": "sea",
+          "wiki_percent": -60,
+          "dat_explicit_coefficient": 2,
+          "dat_imputed_coefficient_if_absent": 2,
+          "dat_nominal_percent_HYPOTHESIS": -60,
+          "status": "MATCH",
+          "wiki_line": 25
+        },
+        {
+          "terrain": "砂漠",
+          "source_key": "sand",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 25
+        },
+        {
+          "terrain": "山岳",
+          "source_key": "rock",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 25
+        },
+        {
+          "terrain": "沼地",
+          "source_key": "mersh",
+          "wiki_percent": -60,
+          "dat_explicit_coefficient": 2,
+          "dat_imputed_coefficient_if_absent": 2,
+          "dat_nominal_percent_HYPOTHESIS": -60,
+          "status": "MATCH",
+          "wiki_line": 25
+        },
+        {
+          "terrain": "雪原",
+          "source_key": "snow",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MISMATCH",
+          "wiki_line": 25
+        },
+        {
+          "terrain": "路面",
+          "source_key": "road",
+          "wiki_percent": 100,
+          "dat_explicit_coefficient": 10,
+          "dat_imputed_coefficient_if_absent": 10,
+          "dat_nominal_percent_HYPOTHESIS": 100,
+          "status": "MATCH",
+          "wiki_line": 25
+        }
+      ]
+    },
+    "water_wheel": {
+      "name": "水陸両用",
+      "wiki_line": 26,
+      "cells": [
+        {
+          "terrain": "草原",
+          "source_key": "grass",
+          "wiki_percent": 80,
+          "dat_explicit_coefficient": 9,
+          "dat_imputed_coefficient_if_absent": 9,
+          "dat_nominal_percent_HYPOTHESIS": 80,
+          "status": "MATCH",
+          "wiki_line": 26
+        },
+        {
+          "terrain": "荒地",
+          "source_key": "mud",
+          "wiki_percent": 60,
+          "dat_explicit_coefficient": 8,
+          "dat_imputed_coefficient_if_absent": 8,
+          "dat_nominal_percent_HYPOTHESIS": 60,
+          "status": "MATCH",
+          "wiki_line": 26
+        },
+        {
+          "terrain": "森林",
+          "source_key": "wood",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 26
+        },
+        {
+          "terrain": "海上",
+          "source_key": "sea",
+          "wiki_percent": 60,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MISMATCH",
+          "wiki_line": 26
+        },
+        {
+          "terrain": "砂漠",
+          "source_key": "sand",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": 5,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 26
+        },
+        {
+          "terrain": "山岳",
+          "source_key": "rock",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 26
+        },
+        {
+          "terrain": "沼地",
+          "source_key": "mersh",
+          "wiki_percent": -60,
+          "dat_explicit_coefficient": 2,
+          "dat_imputed_coefficient_if_absent": 2,
+          "dat_nominal_percent_HYPOTHESIS": -60,
+          "status": "MATCH",
+          "wiki_line": 26
+        },
+        {
+          "terrain": "雪原",
+          "source_key": "snow",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 26
+        },
+        {
+          "terrain": "路面",
+          "source_key": "road",
+          "wiki_percent": 100,
+          "dat_explicit_coefficient": 10,
+          "dat_imputed_coefficient_if_absent": 10,
+          "dat_nominal_percent_HYPOTHESIS": 100,
+          "status": "MATCH",
+          "wiki_line": 26
+        }
+      ]
+    },
+    "reppu": {
+      "name": "飛行装輪",
+      "wiki_line": 27,
+      "cells": [
+        {
+          "terrain": "草原",
+          "source_key": "grass",
+          "wiki_percent": 80,
+          "dat_explicit_coefficient": 9,
+          "dat_imputed_coefficient_if_absent": 9,
+          "dat_nominal_percent_HYPOTHESIS": 80,
+          "status": "MATCH",
+          "wiki_line": 27
+        },
+        {
+          "terrain": "荒地",
+          "source_key": "mud",
+          "wiki_percent": 60,
+          "dat_explicit_coefficient": 8,
+          "dat_imputed_coefficient_if_absent": 8,
+          "dat_nominal_percent_HYPOTHESIS": 60,
+          "status": "MATCH",
+          "wiki_line": 27
+        },
+        {
+          "terrain": "森林",
+          "source_key": "wood",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 27
+        },
+        {
+          "terrain": "海上",
+          "source_key": "sea",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 27
+        },
+        {
+          "terrain": "砂漠",
+          "source_key": "sand",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 27
+        },
+        {
+          "terrain": "山岳",
+          "source_key": "rock",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 27
+        },
+        {
+          "terrain": "沼地",
+          "source_key": "mersh",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 27
+        },
+        {
+          "terrain": "雪原",
+          "source_key": "snow",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 27
+        },
+        {
+          "terrain": "路面",
+          "source_key": "road",
+          "wiki_percent": 100,
+          "dat_explicit_coefficient": 10,
+          "dat_imputed_coefficient_if_absent": 10,
+          "dat_nominal_percent_HYPOTHESIS": 100,
+          "status": "MATCH",
+          "wiki_line": 27
+        }
+      ]
+    },
+    "hover": {
+      "name": "浮遊",
+      "wiki_line": 28,
+      "cells": [
+        {
+          "terrain": "草原",
+          "source_key": "grass",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 28
+        },
+        {
+          "terrain": "荒地",
+          "source_key": "mud",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 28
+        },
+        {
+          "terrain": "森林",
+          "source_key": "wood",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 28
+        },
+        {
+          "terrain": "海上",
+          "source_key": "sea",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 28
+        },
+        {
+          "terrain": "砂漠",
+          "source_key": "sand",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 28
+        },
+        {
+          "terrain": "山岳",
+          "source_key": "rock",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 28
+        },
+        {
+          "terrain": "沼地",
+          "source_key": "mersh",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 28
+        },
+        {
+          "terrain": "雪原",
+          "source_key": "snow",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 28
+        },
+        {
+          "terrain": "路面",
+          "source_key": "road",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 28
+        }
+      ]
+    },
+    "kairu": {
+      "name": "海洋浮遊",
+      "wiki_line": 29,
+      "cells": [
+        {
+          "terrain": "草原",
+          "source_key": "grass",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 29
+        },
+        {
+          "terrain": "荒地",
+          "source_key": "mud",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 29
+        },
+        {
+          "terrain": "森林",
+          "source_key": "wood",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 29
+        },
+        {
+          "terrain": "海上",
+          "source_key": "sea",
+          "wiki_percent": 60,
+          "dat_explicit_coefficient": 8,
+          "dat_imputed_coefficient_if_absent": 8,
+          "dat_nominal_percent_HYPOTHESIS": 60,
+          "status": "MATCH",
+          "wiki_line": 29
+        },
+        {
+          "terrain": "砂漠",
+          "source_key": "sand",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 29
+        },
+        {
+          "terrain": "山岳",
+          "source_key": "rock",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 29
+        },
+        {
+          "terrain": "沼地",
+          "source_key": "mersh",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 29
+        },
+        {
+          "terrain": "雪原",
+          "source_key": "snow",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 29
+        },
+        {
+          "terrain": "路面",
+          "source_key": "road",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 29
+        }
+      ]
+    },
+    "snowh": {
+      "name": "雪原浮遊",
+      "wiki_line": 30,
+      "cells": [
+        {
+          "terrain": "草原",
+          "source_key": "grass",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 30
+        },
+        {
+          "terrain": "荒地",
+          "source_key": "mud",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 30
+        },
+        {
+          "terrain": "森林",
+          "source_key": "wood",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 30
+        },
+        {
+          "terrain": "海上",
+          "source_key": "sea",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 30
+        },
+        {
+          "terrain": "砂漠",
+          "source_key": "sand",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 30
+        },
+        {
+          "terrain": "山岳",
+          "source_key": "rock",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 30
+        },
+        {
+          "terrain": "沼地",
+          "source_key": "mersh",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 30
+        },
+        {
+          "terrain": "雪原",
+          "source_key": "snow",
+          "wiki_percent": 100,
+          "dat_explicit_coefficient": 10,
+          "dat_imputed_coefficient_if_absent": 10,
+          "dat_nominal_percent_HYPOTHESIS": 100,
+          "status": "MATCH",
+          "wiki_line": 30
+        },
+        {
+          "terrain": "路面",
+          "source_key": "road",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 30
+        }
+      ]
+    },
+    "fly": {
+      "name": "飛行",
+      "wiki_line": 31,
+      "cells": [
+        {
+          "terrain": "草原",
+          "source_key": "grass",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 31
+        },
+        {
+          "terrain": "荒地",
+          "source_key": "mud",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 31
+        },
+        {
+          "terrain": "森林",
+          "source_key": "wood",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 31
+        },
+        {
+          "terrain": "海上",
+          "source_key": "sea",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 31
+        },
+        {
+          "terrain": "砂漠",
+          "source_key": "sand",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 31
+        },
+        {
+          "terrain": "山岳",
+          "source_key": "rock",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 31
+        },
+        {
+          "terrain": "沼地",
+          "source_key": "mersh",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 31
+        },
+        {
+          "terrain": "雪原",
+          "source_key": "snow",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 31
+        },
+        {
+          "terrain": "路面",
+          "source_key": "road",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 31
+        }
+      ]
+    },
+    "sam": {
+      "name": "雪原海兵",
+      "wiki_line": 32,
+      "cells": [
+        {
+          "terrain": "草原",
+          "source_key": "grass",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 32
+        },
+        {
+          "terrain": "荒地",
+          "source_key": "mud",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 32
+        },
+        {
+          "terrain": "森林",
+          "source_key": "wood",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 32
+        },
+        {
+          "terrain": "海上",
+          "source_key": "sea",
+          "wiki_percent": 100,
+          "dat_explicit_coefficient": 10,
+          "dat_imputed_coefficient_if_absent": 10,
+          "dat_nominal_percent_HYPOTHESIS": 100,
+          "status": "MATCH",
+          "wiki_line": 32
+        },
+        {
+          "terrain": "砂漠",
+          "source_key": "sand",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 32
+        },
+        {
+          "terrain": "山岳",
+          "source_key": "rock",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 32
+        },
+        {
+          "terrain": "沼地",
+          "source_key": "mersh",
+          "wiki_percent": -20,
+          "dat_explicit_coefficient": 4,
+          "dat_imputed_coefficient_if_absent": 4,
+          "dat_nominal_percent_HYPOTHESIS": -20,
+          "status": "MATCH",
+          "wiki_line": 32
+        },
+        {
+          "terrain": "雪原",
+          "source_key": "snow",
+          "wiki_percent": 80,
+          "dat_explicit_coefficient": 9,
+          "dat_imputed_coefficient_if_absent": 9,
+          "dat_nominal_percent_HYPOTHESIS": 80,
+          "status": "MATCH",
+          "wiki_line": 32
+        },
+        {
+          "terrain": "路面",
+          "source_key": "road",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 32
+        }
+      ]
+    },
+    "samh": {
+      "name": "飛行ソリ",
+      "wiki_line": 33,
+      "cells": [
+        {
+          "terrain": "草原",
+          "source_key": "grass",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 33
+        },
+        {
+          "terrain": "荒地",
+          "source_key": "mud",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 33
+        },
+        {
+          "terrain": "森林",
+          "source_key": "wood",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 33
+        },
+        {
+          "terrain": "海上",
+          "source_key": "sea",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 33
+        },
+        {
+          "terrain": "砂漠",
+          "source_key": "sand",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 33
+        },
+        {
+          "terrain": "山岳",
+          "source_key": "rock",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 33
+        },
+        {
+          "terrain": "沼地",
+          "source_key": "mersh",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 33
+        },
+        {
+          "terrain": "雪原",
+          "source_key": "snow",
+          "wiki_percent": 80,
+          "dat_explicit_coefficient": 9,
+          "dat_imputed_coefficient_if_absent": 9,
+          "dat_nominal_percent_HYPOTHESIS": 80,
+          "status": "MATCH",
+          "wiki_line": 33
+        },
+        {
+          "terrain": "路面",
+          "source_key": "road",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 33
+        }
+      ]
+    },
+    "yukkuri": {
+      "name": "ゆっくり",
+      "wiki_line": 34,
+      "cells": [
+        {
+          "terrain": "草原",
+          "source_key": "grass",
+          "wiki_percent": 80,
+          "dat_explicit_coefficient": 9,
+          "dat_imputed_coefficient_if_absent": 9,
+          "dat_nominal_percent_HYPOTHESIS": 80,
+          "status": "MATCH",
+          "wiki_line": 34
+        },
+        {
+          "terrain": "荒地",
+          "source_key": "mud",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 34
+        },
+        {
+          "terrain": "森林",
+          "source_key": "wood",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 34
+        },
+        {
+          "terrain": "海上",
+          "source_key": "sea",
+          "wiki_percent": -80,
+          "dat_explicit_coefficient": 1,
+          "dat_imputed_coefficient_if_absent": 1,
+          "dat_nominal_percent_HYPOTHESIS": -80,
+          "status": "MATCH",
+          "wiki_line": 34
+        },
+        {
+          "terrain": "砂漠",
+          "source_key": "sand",
+          "wiki_percent": -60,
+          "dat_explicit_coefficient": 2,
+          "dat_imputed_coefficient_if_absent": 2,
+          "dat_nominal_percent_HYPOTHESIS": -60,
+          "status": "MATCH",
+          "wiki_line": 34
+        },
+        {
+          "terrain": "山岳",
+          "source_key": "rock",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 34
+        },
+        {
+          "terrain": "沼地",
+          "source_key": "mersh",
+          "wiki_percent": -80,
+          "dat_explicit_coefficient": 1,
+          "dat_imputed_coefficient_if_absent": 1,
+          "dat_nominal_percent_HYPOTHESIS": -80,
+          "status": "MATCH",
+          "wiki_line": 34
+        },
+        {
+          "terrain": "雪原",
+          "source_key": "snow",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 34
+        },
+        {
+          "terrain": "路面",
+          "source_key": "road",
+          "wiki_percent": 80,
+          "dat_explicit_coefficient": 9,
+          "dat_imputed_coefficient_if_absent": 9,
+          "dat_nominal_percent_HYPOTHESIS": 80,
+          "status": "MATCH",
+          "wiki_line": 34
+        }
+      ]
+    },
+    "tank": {
+      "name": "戦車",
+      "wiki_line": 35,
+      "cells": [
+        {
+          "terrain": "草原",
+          "source_key": "grass",
+          "wiki_percent": 80,
+          "dat_explicit_coefficient": 9,
+          "dat_imputed_coefficient_if_absent": 9,
+          "dat_nominal_percent_HYPOTHESIS": 80,
+          "status": "MATCH",
+          "wiki_line": 35
+        },
+        {
+          "terrain": "荒地",
+          "source_key": "mud",
+          "wiki_percent": 80,
+          "dat_explicit_coefficient": 8,
+          "dat_imputed_coefficient_if_absent": 8,
+          "dat_nominal_percent_HYPOTHESIS": 60,
+          "status": "MISMATCH",
+          "wiki_line": 35
+        },
+        {
+          "terrain": "森林",
+          "source_key": "wood",
+          "wiki_percent": -80,
+          "dat_explicit_coefficient": 1,
+          "dat_imputed_coefficient_if_absent": 1,
+          "dat_nominal_percent_HYPOTHESIS": -80,
+          "status": "MATCH",
+          "wiki_line": 35
+        },
+        {
+          "terrain": "海上",
+          "source_key": "sea",
+          "wiki_percent": -90,
+          "dat_explicit_coefficient": 1,
+          "dat_imputed_coefficient_if_absent": 1,
+          "dat_nominal_percent_HYPOTHESIS": -80,
+          "status": "MISMATCH",
+          "wiki_line": 35
+        },
+        {
+          "terrain": "砂漠",
+          "source_key": "sand",
+          "wiki_percent": 60,
+          "dat_explicit_coefficient": 8,
+          "dat_imputed_coefficient_if_absent": 8,
+          "dat_nominal_percent_HYPOTHESIS": 60,
+          "status": "MATCH",
+          "wiki_line": 35
+        },
+        {
+          "terrain": "山岳",
+          "source_key": "rock",
+          "wiki_percent": -60,
+          "dat_explicit_coefficient": 2,
+          "dat_imputed_coefficient_if_absent": 2,
+          "dat_nominal_percent_HYPOTHESIS": -60,
+          "status": "MATCH",
+          "wiki_line": 35
+        },
+        {
+          "terrain": "沼地",
+          "source_key": "mersh",
+          "wiki_percent": -80,
+          "dat_explicit_coefficient": 1,
+          "dat_imputed_coefficient_if_absent": 1,
+          "dat_nominal_percent_HYPOTHESIS": -80,
+          "status": "MATCH",
+          "wiki_line": 35
+        },
+        {
+          "terrain": "雪原",
+          "source_key": "snow",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MISMATCH",
+          "wiki_line": 35
+        },
+        {
+          "terrain": "路面",
+          "source_key": "road",
+          "wiki_percent": 100,
+          "dat_explicit_coefficient": 10,
+          "dat_imputed_coefficient_if_absent": 10,
+          "dat_nominal_percent_HYPOTHESIS": 100,
+          "status": "MATCH",
+          "wiki_line": 35
+        }
+      ]
+    },
+    "toono": {
+      "name": "両生蜥蜴",
+      "wiki_line": 36,
+      "cells": [
+        {
+          "terrain": "草原",
+          "source_key": "grass",
+          "wiki_percent": 100,
+          "dat_explicit_coefficient": 10,
+          "dat_imputed_coefficient_if_absent": 10,
+          "dat_nominal_percent_HYPOTHESIS": 100,
+          "status": "MATCH",
+          "wiki_line": 36
+        },
+        {
+          "terrain": "荒地",
+          "source_key": "mud",
+          "wiki_percent": 100,
+          "dat_explicit_coefficient": 10,
+          "dat_imputed_coefficient_if_absent": 10,
+          "dat_nominal_percent_HYPOTHESIS": 100,
+          "status": "MATCH",
+          "wiki_line": 36
+        },
+        {
+          "terrain": "森林",
+          "source_key": "wood",
+          "wiki_percent": -60,
+          "dat_explicit_coefficient": 2,
+          "dat_imputed_coefficient_if_absent": 2,
+          "dat_nominal_percent_HYPOTHESIS": -60,
+          "status": "MATCH",
+          "wiki_line": 36
+        },
+        {
+          "terrain": "海上",
+          "source_key": "sea",
+          "wiki_percent": 80,
+          "dat_explicit_coefficient": 9,
+          "dat_imputed_coefficient_if_absent": 9,
+          "dat_nominal_percent_HYPOTHESIS": 80,
+          "status": "MATCH",
+          "wiki_line": 36
+        },
+        {
+          "terrain": "砂漠",
+          "source_key": "sand",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 36
+        },
+        {
+          "terrain": "山岳",
+          "source_key": "rock",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 36
+        },
+        {
+          "terrain": "沼地",
+          "source_key": "mersh",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 36
+        },
+        {
+          "terrain": "雪原",
+          "source_key": "snow",
+          "wiki_percent": -60,
+          "dat_explicit_coefficient": 2,
+          "dat_imputed_coefficient_if_absent": 2,
+          "dat_nominal_percent_HYPOTHESIS": -60,
+          "status": "MATCH",
+          "wiki_line": 36
+        },
+        {
+          "terrain": "路面",
+          "source_key": "road",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 36
+        }
+      ]
+    },
+    "hyouzan": {
+      "name": "屋上戦艦",
+      "wiki_line": 37,
+      "cells": [
+        {
+          "terrain": "草原",
+          "source_key": "grass",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 37
+        },
+        {
+          "terrain": "荒地",
+          "source_key": "mud",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 37
+        },
+        {
+          "terrain": "森林",
+          "source_key": "wood",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 37
+        },
+        {
+          "terrain": "海上",
+          "source_key": "sea",
+          "wiki_percent": 60,
+          "dat_explicit_coefficient": 8,
+          "dat_imputed_coefficient_if_absent": 8,
+          "dat_nominal_percent_HYPOTHESIS": 60,
+          "status": "MATCH",
+          "wiki_line": 37
+        },
+        {
+          "terrain": "砂漠",
+          "source_key": "sand",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 37
+        },
+        {
+          "terrain": "山岳",
+          "source_key": "rock",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 37
+        },
+        {
+          "terrain": "沼地",
+          "source_key": "mersh",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 37
+        },
+        {
+          "terrain": "雪原",
+          "source_key": "snow",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 37
+        },
+        {
+          "terrain": "路面",
+          "source_key": "road",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 37
+        }
+      ]
+    },
+    "kani": {
+      "name": "蟹歩き",
+      "wiki_line": 38,
+      "cells": [
+        {
+          "terrain": "草原",
+          "source_key": "grass",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 38
+        },
+        {
+          "terrain": "荒地",
+          "source_key": "mud",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": 5,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 38
+        },
+        {
+          "terrain": "森林",
+          "source_key": "wood",
+          "wiki_percent": 60,
+          "dat_explicit_coefficient": 8,
+          "dat_imputed_coefficient_if_absent": 8,
+          "dat_nominal_percent_HYPOTHESIS": 60,
+          "status": "MATCH",
+          "wiki_line": 38
+        },
+        {
+          "terrain": "海上",
+          "source_key": "sea",
+          "wiki_percent": 80,
+          "dat_explicit_coefficient": 9,
+          "dat_imputed_coefficient_if_absent": 9,
+          "dat_nominal_percent_HYPOTHESIS": 80,
+          "status": "MATCH",
+          "wiki_line": 38
+        },
+        {
+          "terrain": "砂漠",
+          "source_key": "sand",
+          "wiki_percent": 80,
+          "dat_explicit_coefficient": 9,
+          "dat_imputed_coefficient_if_absent": 9,
+          "dat_nominal_percent_HYPOTHESIS": 80,
+          "status": "MATCH",
+          "wiki_line": 38
+        },
+        {
+          "terrain": "山岳",
+          "source_key": "rock",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 38
+        },
+        {
+          "terrain": "沼地",
+          "source_key": "mersh",
+          "wiki_percent": 60,
+          "dat_explicit_coefficient": 8,
+          "dat_imputed_coefficient_if_absent": 8,
+          "dat_nominal_percent_HYPOTHESIS": 60,
+          "status": "MATCH",
+          "wiki_line": 38
+        },
+        {
+          "terrain": "雪原",
+          "source_key": "snow",
+          "wiki_percent": -60,
+          "dat_explicit_coefficient": 2,
+          "dat_imputed_coefficient_if_absent": 2,
+          "dat_nominal_percent_HYPOTHESIS": -60,
+          "status": "MATCH",
+          "wiki_line": 38
+        },
+        {
+          "terrain": "路面",
+          "source_key": "road",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": 5,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 38
+        }
+      ]
+    },
+    "swimmer": {
+      "name": "水泳部",
+      "wiki_line": 39,
+      "cells": [
+        {
+          "terrain": "草原",
+          "source_key": "grass",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 39
+        },
+        {
+          "terrain": "荒地",
+          "source_key": "mud",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 39
+        },
+        {
+          "terrain": "森林",
+          "source_key": "wood",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 39
+        },
+        {
+          "terrain": "海上",
+          "source_key": "sea",
+          "wiki_percent": 60,
+          "dat_explicit_coefficient": 8,
+          "dat_imputed_coefficient_if_absent": 8,
+          "dat_nominal_percent_HYPOTHESIS": 60,
+          "status": "MATCH",
+          "wiki_line": 39
+        },
+        {
+          "terrain": "砂漠",
+          "source_key": "sand",
+          "wiki_percent": -20,
+          "dat_explicit_coefficient": 4,
+          "dat_imputed_coefficient_if_absent": 4,
+          "dat_nominal_percent_HYPOTHESIS": -20,
+          "status": "MATCH",
+          "wiki_line": 39
+        },
+        {
+          "terrain": "山岳",
+          "source_key": "rock",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 39
+        },
+        {
+          "terrain": "沼地",
+          "source_key": "mersh",
+          "wiki_percent": 40,
+          "dat_explicit_coefficient": 7,
+          "dat_imputed_coefficient_if_absent": 7,
+          "dat_nominal_percent_HYPOTHESIS": 40,
+          "status": "MATCH",
+          "wiki_line": 39
+        },
+        {
+          "terrain": "雪原",
+          "source_key": "snow",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 39
+        },
+        {
+          "terrain": "路面",
+          "source_key": "road",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 39
+        }
+      ]
+    },
+    "zou": {
+      "name": "象",
+      "wiki_line": 40,
+      "cells": [
+        {
+          "terrain": "草原",
+          "source_key": "grass",
+          "wiki_percent": 80,
+          "dat_explicit_coefficient": 9,
+          "dat_imputed_coefficient_if_absent": 9,
+          "dat_nominal_percent_HYPOTHESIS": 80,
+          "status": "MATCH",
+          "wiki_line": 40
+        },
+        {
+          "terrain": "荒地",
+          "source_key": "mud",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 40
+        },
+        {
+          "terrain": "森林",
+          "source_key": "wood",
+          "wiki_percent": 60,
+          "dat_explicit_coefficient": 8,
+          "dat_imputed_coefficient_if_absent": 8,
+          "dat_nominal_percent_HYPOTHESIS": 60,
+          "status": "MATCH",
+          "wiki_line": 40
+        },
+        {
+          "terrain": "海上",
+          "source_key": "sea",
+          "wiki_percent": -20,
+          "dat_explicit_coefficient": 4,
+          "dat_imputed_coefficient_if_absent": 4,
+          "dat_nominal_percent_HYPOTHESIS": -20,
+          "status": "MATCH",
+          "wiki_line": 40
+        },
+        {
+          "terrain": "砂漠",
+          "source_key": "sand",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": 5,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 40
+        },
+        {
+          "terrain": "山岳",
+          "source_key": "rock",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 40
+        },
+        {
+          "terrain": "沼地",
+          "source_key": "mersh",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": 5,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 40
+        },
+        {
+          "terrain": "雪原",
+          "source_key": "snow",
+          "wiki_percent": -40,
+          "dat_explicit_coefficient": 3,
+          "dat_imputed_coefficient_if_absent": 3,
+          "dat_nominal_percent_HYPOTHESIS": -40,
+          "status": "MATCH",
+          "wiki_line": 40
+        },
+        {
+          "terrain": "路面",
+          "source_key": "road",
+          "wiki_percent": 60,
+          "dat_explicit_coefficient": 8,
+          "dat_imputed_coefficient_if_absent": 8,
+          "dat_nominal_percent_HYPOTHESIS": 60,
+          "status": "MATCH",
+          "wiki_line": 40
+        }
+      ]
+    },
+    "ship": {
+      "name": "船",
+      "wiki_line": 41,
+      "cells": [
+        {
+          "terrain": "草原",
+          "source_key": "grass",
+          "wiki_percent": -100,
+          "dat_explicit_coefficient": 0,
+          "dat_imputed_coefficient_if_absent": 0,
+          "dat_nominal_percent_HYPOTHESIS": -100,
+          "status": "MATCH",
+          "wiki_line": 41
+        },
+        {
+          "terrain": "荒地",
+          "source_key": "mud",
+          "wiki_percent": -100,
+          "dat_explicit_coefficient": 0,
+          "dat_imputed_coefficient_if_absent": 0,
+          "dat_nominal_percent_HYPOTHESIS": -100,
+          "status": "MATCH",
+          "wiki_line": 41
+        },
+        {
+          "terrain": "森林",
+          "source_key": "wood",
+          "wiki_percent": -100,
+          "dat_explicit_coefficient": 0,
+          "dat_imputed_coefficient_if_absent": 0,
+          "dat_nominal_percent_HYPOTHESIS": -100,
+          "status": "MATCH",
+          "wiki_line": 41
+        },
+        {
+          "terrain": "海上",
+          "source_key": "sea",
+          "wiki_percent": 0,
+          "dat_explicit_coefficient": 5,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MATCH",
+          "wiki_line": 41
+        },
+        {
+          "terrain": "砂漠",
+          "source_key": "sand",
+          "wiki_percent": -100,
+          "dat_explicit_coefficient": 0,
+          "dat_imputed_coefficient_if_absent": 0,
+          "dat_nominal_percent_HYPOTHESIS": -100,
+          "status": "MATCH",
+          "wiki_line": 41
+        },
+        {
+          "terrain": "山岳",
+          "source_key": "rock",
+          "wiki_percent": -100,
+          "dat_explicit_coefficient": 0,
+          "dat_imputed_coefficient_if_absent": 0,
+          "dat_nominal_percent_HYPOTHESIS": -100,
+          "status": "MATCH",
+          "wiki_line": 41
+        },
+        {
+          "terrain": "沼地",
+          "source_key": "mersh",
+          "wiki_percent": -100,
+          "dat_explicit_coefficient": 0,
+          "dat_imputed_coefficient_if_absent": 0,
+          "dat_nominal_percent_HYPOTHESIS": -100,
+          "status": "MATCH",
+          "wiki_line": 41
+        },
+        {
+          "terrain": "雪原",
+          "source_key": "snow",
+          "wiki_percent": -100,
+          "dat_explicit_coefficient": 0,
+          "dat_imputed_coefficient_if_absent": 0,
+          "dat_nominal_percent_HYPOTHESIS": -100,
+          "status": "MATCH",
+          "wiki_line": 41
+        },
+        {
+          "terrain": "路面",
+          "source_key": "road",
+          "wiki_percent": -100,
+          "dat_explicit_coefficient": 0,
+          "dat_imputed_coefficient_if_absent": 0,
+          "dat_nominal_percent_HYPOTHESIS": -100,
+          "status": "MATCH",
+          "wiki_line": 41
+        }
+      ]
+    },
+    "majime": {
+      "name": "天使",
+      "wiki_line": 42,
+      "cells": [
+        {
+          "terrain": "草原",
+          "source_key": "grass",
+          "wiki_percent": -80,
+          "dat_explicit_coefficient": 2,
+          "dat_imputed_coefficient_if_absent": 2,
+          "dat_nominal_percent_HYPOTHESIS": -60,
+          "status": "MISMATCH",
+          "wiki_line": 42
+        },
+        {
+          "terrain": "荒地",
+          "source_key": "mud",
+          "wiki_percent": -80,
+          "dat_explicit_coefficient": 2,
+          "dat_imputed_coefficient_if_absent": 2,
+          "dat_nominal_percent_HYPOTHESIS": -60,
+          "status": "MISMATCH",
+          "wiki_line": 42
+        },
+        {
+          "terrain": "森林",
+          "source_key": "wood",
+          "wiki_percent": -80,
+          "dat_explicit_coefficient": 2,
+          "dat_imputed_coefficient_if_absent": 2,
+          "dat_nominal_percent_HYPOTHESIS": -60,
+          "status": "MISMATCH",
+          "wiki_line": 42
+        },
+        {
+          "terrain": "海上",
+          "source_key": "sea",
+          "wiki_percent": -80,
+          "dat_explicit_coefficient": 2,
+          "dat_imputed_coefficient_if_absent": 2,
+          "dat_nominal_percent_HYPOTHESIS": -60,
+          "status": "MISMATCH",
+          "wiki_line": 42
+        },
+        {
+          "terrain": "砂漠",
+          "source_key": "sand",
+          "wiki_percent": -80,
+          "dat_explicit_coefficient": 2,
+          "dat_imputed_coefficient_if_absent": 2,
+          "dat_nominal_percent_HYPOTHESIS": -60,
+          "status": "MISMATCH",
+          "wiki_line": 42
+        },
+        {
+          "terrain": "山岳",
+          "source_key": "rock",
+          "wiki_percent": -80,
+          "dat_explicit_coefficient": 2,
+          "dat_imputed_coefficient_if_absent": 2,
+          "dat_nominal_percent_HYPOTHESIS": -60,
+          "status": "MISMATCH",
+          "wiki_line": 42
+        },
+        {
+          "terrain": "沼地",
+          "source_key": "mersh",
+          "wiki_percent": -80,
+          "dat_explicit_coefficient": 2,
+          "dat_imputed_coefficient_if_absent": 2,
+          "dat_nominal_percent_HYPOTHESIS": -60,
+          "status": "MISMATCH",
+          "wiki_line": 42
+        },
+        {
+          "terrain": "雪原",
+          "source_key": "snow",
+          "wiki_percent": -80,
+          "dat_explicit_coefficient": 2,
+          "dat_imputed_coefficient_if_absent": 2,
+          "dat_nominal_percent_HYPOTHESIS": -60,
+          "status": "MISMATCH",
+          "wiki_line": 42
+        },
+        {
+          "terrain": "路面",
+          "source_key": "road",
+          "wiki_percent": -80,
+          "dat_explicit_coefficient": 2,
+          "dat_imputed_coefficient_if_absent": 2,
+          "dat_nominal_percent_HYPOTHESIS": -60,
+          "status": "MISMATCH",
+          "wiki_line": 42
+        }
+      ]
+    },
+    "uneiw": {
+      "name": "削除",
+      "wiki_line": 43,
+      "cells": [
+        {
+          "terrain": "草原",
+          "source_key": "grass",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 43
+        },
+        {
+          "terrain": "荒地",
+          "source_key": "mud",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 43
+        },
+        {
+          "terrain": "森林",
+          "source_key": "wood",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 43
+        },
+        {
+          "terrain": "海上",
+          "source_key": "sea",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 43
+        },
+        {
+          "terrain": "砂漠",
+          "source_key": "sand",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 43
+        },
+        {
+          "terrain": "山岳",
+          "source_key": "rock",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": null,
+          "dat_imputed_coefficient_if_absent": 5,
+          "dat_nominal_percent_HYPOTHESIS": 0,
+          "status": "MISMATCH",
+          "wiki_line": 43
+        },
+        {
+          "terrain": "沼地",
+          "source_key": "mersh",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 43
+        },
+        {
+          "terrain": "雪原",
+          "source_key": "snow",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 43
+        },
+        {
+          "terrain": "路面",
+          "source_key": "road",
+          "wiki_percent": 20,
+          "dat_explicit_coefficient": 6,
+          "dat_imputed_coefficient_if_absent": 6,
+          "dat_nominal_percent_HYPOTHESIS": 20,
+          "status": "MATCH",
+          "wiki_line": 43
+        }
+      ]
+    }
+  },
+  "types_not_in_wiki": [
+    {
+      "tag": "city",
+      "name": "まちのなかだぁ",
+      "unit_declarations": 539,
+      "class_declarations": 9
+    },
+    {
+      "tag": "mt_dummy",
+      "name": "軍楽隊",
+      "unit_declarations": 0,
+      "class_declarations": 0
+    },
+    {
+      "tag": "rugger",
+      "name": "重装突撃",
+      "unit_declarations": 0,
+      "class_declarations": 0
+    },
+    {
+      "tag": "takutics",
+      "name": "水上歩行",
+      "unit_declarations": 0,
+      "class_declarations": 0
+    }
+  ],
+  "imputed_absent_consti_by_terrain": {
+    "mud": 5,
+    "snow": 10,
+    "rock": 6,
+    "road": 8,
+    "wood": 3,
+    "grass": 1,
+    "sand": 3,
+    "sea": 1,
+    "mersh": 1
+  },
+  "source_kind": "Wiki display percent and DAT coefficient independently proven; conversion to runtime percent still hypothesis",
+  "gameplay_golden": 0,
+  "strict_match": 0
+}

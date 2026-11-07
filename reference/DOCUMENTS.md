@@ -8,7 +8,7 @@
 
 文書検索結果は保存ファイル名、元パス・出典URI、題名、本文だけの一致の順で最大20件です。同じ区分内は回収台帳での初出順です。省略時は一致総数を表示します。全件の出典・制約は一覧または各詳細ページに掲載しています。研究ID・題名で絞り込めます。アドレス・所有者＋オフセット検索は従来の専用結果を返します。
 
-全 2023 文書。各詳細ページは最大100文書で、出典行・SHA256・回収台帳・制約を保持しています。
+全 2220 文書。各詳細ページは最大100文書で、出典行・SHA256・回収台帳・制約を保持しています。
 
 | 詳細ページ | 文書数 | 最初の題名 | 最後の題名 |
 |---|---:|---|---|
@@ -32,6 +32,8 @@
 | [18](documents/page-018.md) | 100 | Auto-arm integration checkpoint — 2026-10-28 | Private research intake — owner ID/source links |
 | [19](documents/page-019.md) | 100 | Private research intake — owner ID/source links | 018_T020_E_T013_BTLLIMIT_CLOCK_CASES_20261031_02H.json |
 | [20](documents/page-020.md) | 100 | 019_T020_E_T013_BUCKET_MERGE_CASES_20261031_16H.json | T025_BOSS_EVENT_MARKER_SAVE_CROSSWALK_20261013.json |
-| [21](documents/page-021.md) | 23 | T025_BOSS_POWER_SAVE_PRESENCE_20261013.json | VAHREN_ZIP_TOPOLOGY.json |
+| [21](documents/page-021.md) | 100 | T025_BOSS_POWER_SAVE_PRESENCE_20261013.json | BATTLE_INIT_ORIGINAL_GHIDRA_BODY_AUDIT_20261021.json |
+| [22](documents/page-022.md) | 100 | BATTLE_INIT_SCENE_NATIVE_ABI_20261021.json | WIKI_SKILL_DELAY_INHERITANCE_20261013.json |
+| [23](documents/page-023.md) | 20 | WIKI_SKILL_DELAY_UNRESOLVED14_20261013.json | WIKI_WORK_STAGE_SMOKE_20261013.json |
 
 [事典の入口](README.md)

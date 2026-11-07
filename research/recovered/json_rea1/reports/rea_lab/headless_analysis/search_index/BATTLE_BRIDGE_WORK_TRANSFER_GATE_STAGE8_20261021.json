@@ -1,0 +1,43 @@
+{
+  "id": "BRIDGE-20261021-WORK-GATE-V2-AFTER-REAL-G0",
+  "meaning_of_100_percent": "Ready to hand off a demonstrated safe external battle interface to Work to implement the new battle engine, not engine implementation complete",
+  "status": "RESEARCH_INCOMPLETE_WORK_NOT_STARTED",
+  "evaluation_time": "2026-10-21 JST",
+  "prior_work_gate_passes": 2,
+  "current_work_gate_passes": 3,
+  "work_gate_count": 9,
+  "objective_gates": {
+    "G0_PE_ABI_AND_SCENE_BOUNDARY_STATIC": true,
+    "G0_NATIVE_SAVE_ROUTE_FIXTURE": true,
+    "G0_LEGAL_NATIVE_ATTACK_UI_OBSERVED": true,
+    "G1_LIVE_BATTLE_START_PACKET_SAME_FRAME": false,
+    "G2_NATIVE_TASK_VM_SAFE_HOLD_RESUME": false,
+    "G3_OLD_NATIVE_TO_EXTERNAL_NOOP_TO_NATIVE": false,
+    "G4_NATIVE_FINISH_RESULT_ONCE": false,
+    "G5_STRATEGY_GOLDEN_RESULT_MATCH": false,
+    "G6_ABORT_CRASH_SAVE_LOAD_ROLLBACK": false
+  },
+  "unresolved_gates": [
+    "G1_LIVE_BATTLE_START_PACKET_SAME_FRAME",
+    "G2_NATIVE_TASK_VM_SAFE_HOLD_RESUME",
+    "G3_OLD_NATIVE_TO_EXTERNAL_NOOP_TO_NATIVE",
+    "G4_NATIVE_FINISH_RESULT_ONCE",
+    "G5_STRATEGY_GOLDEN_RESULT_MATCH",
+    "G6_ABORT_CRASH_SAVE_LOAD_ROLLBACK"
+  ],
+  "g0_provenance": {
+    "source_game_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+    "pid": 23272,
+    "original_game_transition_log_sha256": "9DF9A0D8C7D15958F4711478ED6DFF1F912E49313D6FC5BA5DCBC5B089E262A7",
+    "user_confirmed_attack": true,
+    "one_cpu_turn_passed_before_attack": true,
+    "runtime_named_source_spot_verified": false,
+    "runtime_named_target_spot_verified": false
+  },
+  "g1_start_packet_complete": false,
+  "original_to_external_to_original_roundtrip_pass": 0,
+  "native_finish_once_revalidated": false,
+  "not_recalculate_from_synthetic_tests": true,
+  "work_running": false,
+  "note": "This G0 is a user-attested native battle with SHA-matched GameEvent mode2/active1 and strategic scene return. Its exact territory pair and ordered native army list are NOT independently verified."
+}

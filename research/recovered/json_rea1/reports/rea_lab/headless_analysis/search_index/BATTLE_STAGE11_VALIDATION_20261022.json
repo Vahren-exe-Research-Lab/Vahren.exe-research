@@ -1,0 +1,65 @@
+{
+  "research_id": "BRIDGE-20261022-RESEARCH-11",
+  "status": "ACTUAL_SAVED_RUNTIME_REPLAY_VALIDATION_NOT_FULL_G1",
+  "checks": {
+    "source_sha_READY.json": true,
+    "source_sha_01.json": true,
+    "source_sha_02.json": true,
+    "source_sha_03.json": true,
+    "source_sha_04.json": true,
+    "source_sha_05.json": true,
+    "unchanged_battle_user_recorder_core_20261022.py": true,
+    "unchanged_battle_native_detached_capture_v7_20261022.py": true,
+    "unchanged_battle_native_war_tree_decoder_v5_20261021.py": true,
+    "unchanged_battle_native_readonly_live_probe_stage6_20261021.py": true,
+    "raw_1_replay": true,
+    "raw_2_replay": true,
+    "raw_4_replay": true,
+    "raw_5_replay": true,
+    "counter_changes_preserved": true,
+    "last_members_discrepancy_preserved": true,
+    "task_rtti_14_types": true,
+    "side_subobject_identity": true,
+    "failed_task_limit": true,
+    "partial_failure_recovered": true,
+    "partial_task_data_not_fabricated": true,
+    "native_game_not_run_or_mutated": true,
+    "full_G1_and_external_not_claimed": true,
+    "work_gate_still_3_of_9": true,
+    "ledger_unique": true,
+    "stage11_findings_five": true,
+    "stage11_evidence_exist": true,
+    "canonical_index_current": true
+  },
+  "passed": 28,
+  "total": 28,
+  "native_saved_raw_replayed": 4,
+  "failed_attempt_partial_recovered": 1,
+  "full_G1_proven": false,
+  "external_game_roundtrip_proven": false,
+  "work_used": false,
+  "recorder_changed": false,
+  "new_battle_requested": false,
+  "evidence": [
+    {
+      "name": "BATTLE_STAGE11_NATIVE_CAPTURE_ANALYSIS_20261022.json",
+      "sha256": "7895372C17F049F3A3A852354CCE7C88B7E23CAC4AED0B38219AE9F11F5949FC"
+    },
+    {
+      "name": "BATTLE_TAKEOVER_RESEARCH_STAGE11_20261022.md",
+      "sha256": "7AACA5E4BBC8501CCC198B1FD8EE58879865DBFEFC8BAE4A19343F82BC860B90"
+    },
+    {
+      "name": "BATTLE_STAGE11_RECOVERED_PARTIAL_03_20261022.json",
+      "sha256": "233A5A3B1CB9E90F01EC4C75D27D69AB308445606C892533EB1DB4BD87B2CB39"
+    },
+    {
+      "name": "BATTLE_BRIDGE_RESEARCH_INDEX.md",
+      "sha256": "4E205B48BD7732E253B866024D6C2FB438B291DA8E176EB9D66BF8F9989BF0EF"
+    },
+    {
+      "name": "BATTLE_BRIDGE_FINDINGS_LEDGER.jsonl",
+      "sha256": "3F83ED9ECCF9AA290B9FCF4D68E8D3C6012F4BA7B8A0B5E462CAA8099B4C2D3A"
+    }
+  ]
+}

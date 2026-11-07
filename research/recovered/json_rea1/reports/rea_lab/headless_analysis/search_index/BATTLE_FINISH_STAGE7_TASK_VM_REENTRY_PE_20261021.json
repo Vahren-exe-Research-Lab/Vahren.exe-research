@@ -1,0 +1,162 @@
+{
+  "id": "BRIDGE-20261021-VM-SAME-CALLBACK-ABI",
+  "source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "status": "STATIC ORIGINAL PE READ-ONLY; OWNER A/T010 EXISTING OBSERVATION CROSS-VALIDATED",
+  "GameEvent_task_vf4": "0x004335E0",
+  "clock_tick_arg0_callsite": [
+    {
+      "va": "0x00433607",
+      "bytes": "e874f70500",
+      "asm": "call 0x492d80"
+    }
+  ],
+  "VM_runner_callsite": [
+    {
+      "va": "0x0043361B",
+      "bytes": "e8b0020000",
+      "asm": "call 0x4338d0"
+    }
+  ],
+  "activity_flag_accesses": [
+    {
+      "va": "0x004335FA",
+      "bytes": "80be44ec1e0000",
+      "asm": "cmp byte ptr [esi + 0x1eec44], 0"
+    },
+    {
+      "va": "0x0043360C",
+      "bytes": "80be44ec1e0000",
+      "asm": "cmp byte ptr [esi + 0x1eec44], 0"
+    }
+  ],
+  "full_native_66byte_function": [
+    {
+      "va": "0x004335E0",
+      "bytes": "56",
+      "asm": "push esi"
+    },
+    {
+      "va": "0x004335E1",
+      "bytes": "8bf1",
+      "asm": "mov esi, ecx"
+    },
+    {
+      "va": "0x004335E3",
+      "bytes": "8b863cec1e00",
+      "asm": "mov eax, dword ptr [esi + 0x1eec3c]"
+    },
+    {
+      "va": "0x004335E9",
+      "bytes": "48",
+      "asm": "dec eax"
+    },
+    {
+      "va": "0x004335EA",
+      "bytes": "742b",
+      "asm": "je 0x433617"
+    },
+    {
+      "va": "0x004335EC",
+      "bytes": "48",
+      "asm": "dec eax"
+    },
+    {
+      "va": "0x004335ED",
+      "bytes": "740b",
+      "asm": "je 0x4335fa"
+    },
+    {
+      "va": "0x004335EF",
+      "bytes": "83e804",
+      "asm": "sub eax, 4"
+    },
+    {
+      "va": "0x004335F2",
+      "bytes": "752c",
+      "asm": "jne 0x433620"
+    },
+    {
+      "va": "0x004335F4",
+      "bytes": "5e",
+      "asm": "pop esi"
+    },
+    {
+      "va": "0x004335F5",
+      "bytes": "e986080000",
+      "asm": "jmp 0x433e80"
+    },
+    {
+      "va": "0x004335FA",
+      "bytes": "80be44ec1e0000",
+      "asm": "cmp byte ptr [esi + 0x1eec44], 0"
+    },
+    {
+      "va": "0x00433601",
+      "bytes": "6a00",
+      "asm": "push 0"
+    },
+    {
+      "va": "0x00433603",
+      "bytes": "7414",
+      "asm": "je 0x433619"
+    },
+    {
+      "va": "0x00433605",
+      "bytes": "8bc6",
+      "asm": "mov eax, esi"
+    },
+    {
+      "va": "0x00433607",
+      "bytes": "e874f70500",
+      "asm": "call 0x492d80"
+    },
+    {
+      "va": "0x0043360C",
+      "bytes": "80be44ec1e0000",
+      "asm": "cmp byte ptr [esi + 0x1eec44], 0"
+    },
+    {
+      "va": "0x00433613",
+      "bytes": "750b",
+      "asm": "jne 0x433620"
+    },
+    {
+      "va": "0x00433615",
+      "bytes": "8bce",
+      "asm": "mov ecx, esi"
+    },
+    {
+      "va": "0x00433617",
+      "bytes": "6a00",
+      "asm": "push 0"
+    },
+    {
+      "va": "0x00433619",
+      "bytes": "6a00",
+      "asm": "push 0"
+    },
+    {
+      "va": "0x0043361B",
+      "bytes": "e8b0020000",
+      "asm": "call 0x4338d0"
+    },
+    {
+      "va": "0x00433620",
+      "bytes": "5e",
+      "asm": "pop esi"
+    },
+    {
+      "va": "0x00433621",
+      "bytes": "c3",
+      "asm": "ret "
+    }
+  ],
+  "bridge_consequence": "After native finish clears E+1EEC44 inside 0x492D80, 0x4335E0 can dispatch 0x4338D0 during the same Task callback. An external result applied on a worker thread or after Task teardown would break native VM/scene timing.",
+  "requirements": [
+    "Only resume on the original game thread/context after native Task state is validated",
+    "Ensure game clock is not separately ticked twice",
+    "Result shall be committed exactly once before native VM resumes",
+    "No proof of actual game thread callback timing without G0-G5 original gameplay trace"
+  ],
+  "new_owner_A_ready_count": 0
+}

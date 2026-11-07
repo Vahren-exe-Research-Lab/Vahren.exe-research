@@ -1,0 +1,398 @@
+{
+  "document_kind": "research_design_not_native_abi",
+  "research_id": "B-20261021-1830-BOUNDARY-03",
+  "game": "迫真戦記 ver0.67",
+  "exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "state": [
+    "STATIC_GHIDRA",
+    "CROSS_LANE_READONLY",
+    "NOT_IMPLEMENTED",
+    "NOT_READY",
+    "GOLDEN_0"
+  ],
+  "evidence": {
+    "existing_b": [
+      "data/T012_STRATEGY_BATTLE_BOUNDARY_INTERFACE_20261021.md",
+      "data/T012_ENTRY_CONTEXT_FALLBACK_SUPPORT_AND_RESET_20261021.md"
+    ],
+    "existing_a": [
+      "exe/T010_BATTLE_FRAME_ORDER.md",
+      "exe/T010_BATTLE_FINISH_FULL.txt"
+    ],
+    "existing_c": [
+      "data/T025_NORMAL_BATTLE_INPUT_STRATEGY_CONTRACT_20261013.md"
+    ],
+    "new": [
+      "search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json",
+      "search_index/BATTLE_BRIDGE_NEW_FINDINGS_20261021_1830.md"
+    ]
+  },
+  "native_field_evidence": [
+    {
+      "offset": "0x1EED1C",
+      "label": "battlefield variable source (reference candidate)",
+      "producers": [
+        "0x004321B0",
+        "0x0048F9E0",
+        "0x0049AF10"
+      ],
+      "published_by": "0x004922A0",
+      "script_key": "@battlefield",
+      "resolved_identity": false
+    },
+    {
+      "offset": "0x1EED50",
+      "label": "battleattack variable source (Power reference candidate)",
+      "producers": [
+        "0x004321B0",
+        "0x0048F9E0",
+        "0x0049AF10"
+      ],
+      "published_by": "0x004922A0",
+      "script_key": "@battleattack",
+      "resolved_identity": false
+    },
+    {
+      "offset": "0x1EED4C",
+      "label": "battledefense variable source (Power reference candidate)",
+      "producers": [
+        "0x004321B0",
+        "0x0048F9E0",
+        "0x0049AF10"
+      ],
+      "published_by": "0x004922A0",
+      "script_key": "@battledefense",
+      "resolved_identity": false
+    },
+    {
+      "offset": "0x1EEC3C",
+      "label": "scene or VM mode, includes 2 for ScriptBattle",
+      "producers": [
+        "0x004338D0",
+        "0x00492890",
+        "0x00493630"
+      ],
+      "resolved_identity": false
+    },
+    {
+      "offset": "0x1EEC44",
+      "label": "battle active byte",
+      "producers": [
+        "0x00492710",
+        "0x00492890",
+        "0x00493630"
+      ],
+      "resolved_identity": true
+    },
+    {
+      "offset": "0x1EED28",
+      "label": "native finish ordinary strategy side-effects gate (nonzero path)",
+      "producers": [],
+      "resolved_identity": false
+    },
+    {
+      "offset": "0x1EED60",
+      "label": "clock counter (resettable candidate)",
+      "producers": [
+        "0x00492710",
+        "0x00492890",
+        "0x00492D80"
+      ],
+      "resolved_identity": false
+    },
+    {
+      "offset": "0x1EED64",
+      "label": "absolute battle clock counter (candidate)",
+      "producers": [
+        "0x00492710",
+        "0x00492890",
+        "0x00492D80"
+      ],
+      "resolved_identity": false
+    },
+    {
+      "offset": "0x1E8630",
+      "label": "0x4B8 bytes object constructed by 0x0051E100",
+      "producers": [
+        "0x0048A5B0"
+      ],
+      "resolved_identity": false
+    },
+    {
+      "offset": "0x1E8634",
+      "label": "0x188 bytes object constructed by 0x00447280(...,2)",
+      "producers": [
+        "0x0048A5B0"
+      ],
+      "resolved_identity": false
+    },
+    {
+      "offset": "0x1E8638",
+      "label": "0x188 bytes object constructed by 0x00447280(...,4)",
+      "producers": [
+        "0x0048A5B0"
+      ],
+      "resolved_identity": false
+    }
+  ],
+  "entry_dispatch": [
+    {
+      "command": "simplebattle",
+      "dispatcher": "0x00521D90",
+      "target": "0x004922A0",
+      "sites": [
+        "0x00522297",
+        "0x005222AA"
+      ],
+      "condition": "DAT_0087F6F0 == 1 implies param2=0; otherwise param2=1",
+      "confidence": "STATIC"
+    },
+    {
+      "command": "war",
+      "dispatcher": "0x00521D90",
+      "target": "0x0048F9E0",
+      "sites": [
+        "0x00522322"
+      ],
+      "condition": "DAT_0087F6F0 == 1 in saved pseudocode",
+      "confidence": "STATIC"
+    },
+    {
+      "command": "unknown_delayed",
+      "dispatcher": "0x00491870",
+      "target": "0x004922A0",
+      "sites": [
+        "0x004921CD"
+      ],
+      "condition": "multiple precondition flags and +1EED5C countdown",
+      "confidence": "STATIC"
+    },
+    {
+      "command": "script_battle_scene",
+      "dispatcher": "0x004338D0",
+      "target": "0x00492890",
+      "sites": [
+        "0x00433E58"
+      ],
+      "condition": "ScriptBattle RTTI node, VM progression",
+      "confidence": "STATIC"
+    },
+    {
+      "command": "separate_setup",
+      "dispatcher": "0x0040F320",
+      "target": "0x00492710",
+      "sites": [
+        "0x004103B1"
+      ],
+      "condition": "scene clock and limit setup, order against other entries unknown",
+      "confidence": "STATIC"
+    }
+  ],
+  "end_dispatch": [
+    {
+      "kind": "natural_tick",
+      "tick": "0x00492D80",
+      "target": "0x00493630",
+      "sites": [
+        "0x0049303A",
+        "0x00493082",
+        "0x004930A1"
+      ],
+      "native_flag_per_site": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "kind": "battle_window_loop",
+      "tick": "0x0040E2F0",
+      "caller": "0x0040E220",
+      "target": "0x00493630",
+      "flag": "derived from internal result, ABI still VERIFY"
+    },
+    {
+      "kind": "script_event",
+      "caller": "0x004A1250",
+      "target": "0x00493630",
+      "flag": "separate, do not assume natural result"
+    }
+  ],
+  "bridge_packet_design": {
+    "protocol_version": "0.1-research-only",
+    "start": {
+      "kind": "resolved_start_snapshot",
+      "required_fields": [
+        "battle_id",
+        "entry_kind",
+        "source_hashes",
+        "source_spot_id",
+        "target_spot_id",
+        "attacking_power_id",
+        "defending_power_id",
+        "real_map",
+        "ordered_rosters",
+        "units",
+        "time_and_limit",
+        "rng_state",
+        "vm_event_state"
+      ],
+      "fields": [
+        {
+          "name": "battle_id",
+          "type": "opaque stable string",
+          "proof": "DESIGN"
+        },
+        {
+          "name": "entry_kind",
+          "type": "enum nativeWar/datWar/datSimpleBattle/scriptBattle/mazeOrSpecial/unknown",
+          "proof": "DESIGN"
+        },
+        {
+          "name": "source_hashes",
+          "type": "exe,dats,save,map hashes",
+          "proof": "DESIGN"
+        },
+        {
+          "name": "real_map",
+          "type": "actual resolved map stable id/hash/marker/transform",
+          "proof": "UNRESOLVED"
+        },
+        {
+          "name": "ordered_rosters",
+          "type": "attacker,defender,support with troop order",
+          "proof": "UNRESOLVED"
+        },
+        {
+          "name": "units",
+          "type": "all participating instance id, shared def id, side, HP, MP, status, skills, initial facing and position",
+          "proof": "UNRESOLVED"
+        },
+        {
+          "name": "time_and_limit",
+          "type": "actual initialized clocks and battle limits",
+          "proof": "PARTIAL"
+        },
+        {
+          "name": "rng_state",
+          "type": "original PRNG seed/cursor and ownership, not a new seed",
+          "proof": "UNRESOLVED"
+        },
+        {
+          "name": "vm_event_state",
+          "type": "Task and VM/evaluation state, not native raw pointers",
+          "proof": "UNRESOLVED"
+        }
+      ],
+      "unknown_policy": "unknown native values must be null/UNKNOWN and produce a non-READY snapshot"
+    },
+    "end": {
+      "kind": "battle_end_delta",
+      "required_fields": [
+        "battle_id",
+        "result_code",
+        "native_result_flag",
+        "end_caller_va",
+        "end_reason",
+        "unit_deltas",
+        "side_changes",
+        "rng_and_script_effects",
+        "packet_hash"
+      ],
+      "fields": [
+        {
+          "name": "result_code",
+          "type": "nullable original branch outcome, not a player-win boolean",
+          "proof": "PARTIAL"
+        },
+        {
+          "name": "native_result_flag",
+          "type": "nullable native flag 0/1, branch-specific",
+          "proof": "PARTIAL"
+        },
+        {
+          "name": "end_reason",
+          "type": "win,loss,timeout,retreat,script,abort,unknown",
+          "proof": "DESIGN"
+        },
+        {
+          "name": "unit_deltas",
+          "type": "per-instance HP/MP/EXP/status/killed/retreat/spawn/summon/credit",
+          "proof": "UNRESOLVED"
+        },
+        {
+          "name": "rng_and_script_effects",
+          "type": "original state cursor plus pending event effects",
+          "proof": "UNRESOLVED"
+        }
+      ],
+      "unknown_policy": "cannot mark COMMITTABLE if required values or identity mapping are UNKNOWN"
+    },
+    "commit": {
+      "idempotence_key": "battle_id",
+      "supported_paths": [
+        "native_hydrate_then_native_finish_once_PROPOSED",
+        "new_strategy_host_apply_battle_end_once_PROPOSED"
+      ],
+      "forbidden": [
+        "execute_both_native_finish_and_new_strategy_api",
+        "treat_native_virtual_objects_as_three_equal_roster_vectors",
+        "pass_native_process_pointers_as_external_ids",
+        "synthesize_UNRESOLVED_units_or_rng",
+        "block_all_host_tasks_and_vm_blindly",
+        "reuse_one result boolean for every mode"
+      ],
+      "receipt": [
+        "battle_id",
+        "start_hash",
+        "end_hash",
+        "native_or_new_apply_method",
+        "commit_status",
+        "world_reentry_status",
+        "gameplay_golden_status"
+      ]
+    }
+  },
+  "golden": {
+    "state": "NOT_RUN",
+    "candidate": "C-NB02 legal strategy invasion",
+    "gates": [
+      "G0_pre_order",
+      "G1_dispatch",
+      "G2_resolved_scene_roster",
+      "G3_pre_first_tick",
+      "G4_pre_finish",
+      "G5_post_finish",
+      "G6_post_vm_world"
+    ],
+    "modes": [
+      "natural_attack_win",
+      "natural_defense_win",
+      "timeout",
+      "retreat",
+      "script",
+      "simplebattle",
+      "special"
+    ],
+    "compare": [
+      "unit_identity",
+      "HP",
+      "MP",
+      "EXP",
+      "Lv",
+      "retreat",
+      "ownership",
+      "money",
+      "loyalty",
+      "world_events",
+      "vm_task_cursor",
+      "rng_cursor"
+    ],
+    "strict_matches": 0
+  },
+  "status_restrictions": {
+    "original_game_binary_modified": false,
+    "full_takeover_proven": false,
+    "static_only": true
+  }
+}

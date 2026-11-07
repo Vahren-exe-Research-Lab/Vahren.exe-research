@@ -1,0 +1,124 @@
+{
+  "id": "BRIDGE-PREFRAME-20261021-01",
+  "pe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "status": "STATIC PE DISASSEMBLY ONLY / GAME NOT RUN",
+  "scene_dispatch": [
+    {
+      "va": "0x004B99AB",
+      "mnemonic": "lea",
+      "op": "edx, [esi + 0x504]",
+      "hex": "8d9604050000"
+    },
+    {
+      "va": "0x004B99B1",
+      "mnemonic": "push",
+      "op": "edx",
+      "hex": "52"
+    },
+    {
+      "va": "0x004B99B2",
+      "mnemonic": "call",
+      "op": "0x48bf60",
+      "hex": "e8a925fdff"
+    },
+    {
+      "va": "0x004B99B7",
+      "mnemonic": "jmp",
+      "op": "0x4b99df",
+      "hex": "eb26"
+    },
+    {
+      "va": "0x004B99B9",
+      "mnemonic": "lea",
+      "op": "eax, [esi + 0x504]",
+      "hex": "8d8604050000"
+    },
+    {
+      "va": "0x004B99BF",
+      "mnemonic": "push",
+      "op": "eax",
+      "hex": "50"
+    },
+    {
+      "va": "0x004B99C0",
+      "mnemonic": "call",
+      "op": "0x48c880",
+      "hex": "e8bb2efdff"
+    },
+    {
+      "va": "0x004B99C5",
+      "mnemonic": "jmp",
+      "op": "0x4b99df",
+      "hex": "eb18"
+    },
+    {
+      "va": "0x004B99C7",
+      "mnemonic": "lea",
+      "op": "ecx, [esi + 0x504]",
+      "hex": "8d8e04050000"
+    },
+    {
+      "va": "0x004B99CD",
+      "mnemonic": "call",
+      "op": "0x48d6a0",
+      "hex": "e8ce3cfdff"
+    },
+    {
+      "va": "0x004B99D2",
+      "mnemonic": "jmp",
+      "op": "0x4b99df",
+      "hex": "eb0b"
+    },
+    {
+      "va": "0x004B99D4",
+      "mnemonic": "lea",
+      "op": "ecx, [esi + 0x504]",
+      "hex": "8d8e04050000"
+    },
+    {
+      "va": "0x004B99DA",
+      "mnemonic": "call",
+      "op": "0x48ea60",
+      "hex": "e88150fdff"
+    },
+    {
+      "va": "0x004B99DF",
+      "mnemonic": "push",
+      "op": "edi",
+      "hex": "57"
+    },
+    {
+      "va": "0x004B99E0",
+      "mnemonic": "call",
+      "op": "0x4c24b0",
+      "hex": "e8cb8a0000"
+    },
+    {
+      "va": "0x004B99E5",
+      "mnemonic": "cmp",
+      "op": "dword ptr [esi + 8], 2",
+      "hex": "837e0802"
+    }
+  ],
+  "scene_init_call": "0x004B99CD -> 0x0048D6A0",
+  "battle_return_site": "0x004B99D2",
+  "host_loop_entry_call_site": "0x004B99E0 -> 0x004C24B0",
+  "scene_vm_calls": [
+    {
+      "va": "0x0048E9F0",
+      "mnemonic": "call",
+      "op": "0x4338d0",
+      "hex": "e8db4efaff"
+    }
+  ],
+  "scene_direct_clock_calls": [],
+  "call_chain": "0x4B9930 mode2 → 0x48D6A0 → conditional 0x4338D0 → maybe 0x492890 → return 0x4B99D2 → 0x4B99DF → 0x4C24B0",
+  "candidate_hook": "0x004B99D2 (only mode2 return path, guard scene+side state; do not run unconditionally)",
+  "limitations": [
+    "Ghidra/PE shows pre-host-loop boundary only, not the full VM/Task trace",
+    "ScriptBattle is conditional and can be absent or delayed; E+1EEC44 active must be validated",
+    "The scene may mutate RNG, Unit, Map and Task state before return",
+    "No live native function was hooked; freezing the UI thread is not proved safe",
+    "Need legal original battle trace before implementing a detour"
+  ]
+}

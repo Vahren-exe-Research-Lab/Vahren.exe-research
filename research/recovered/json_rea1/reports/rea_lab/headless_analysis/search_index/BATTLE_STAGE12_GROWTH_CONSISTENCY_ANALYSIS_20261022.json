@@ -1,0 +1,1451 @@
+{
+  "research_id": "BRIDGE-20261022-RESEARCH-12",
+  "status": "SAVED_ORIGINAL_RUNTIME_LINEAGE_WITH_STATIC_PE_CROSSWALK_NOT_FULL_G1",
+  "original_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "source_receipts": [
+    {
+      "name": "BATTLE_USER_20261021T163100686424Z_9cddfc86_READY.json",
+      "sha256": "684F89126C51E8879605A5FF14ABFCA268CA2B781D3C2D3FCE3F58664DD53490"
+    },
+    {
+      "name": "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_01.json",
+      "sha256": "7C0A7BD05FFAB908A90BBBEC0863FCE040A99A33A17E75520C9CC19094565332"
+    },
+    {
+      "name": "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_02.json",
+      "sha256": "D7662477F8D136EBD98541061A9E896F9B535193046CB0C0F01F95FDC826D9C8"
+    },
+    {
+      "name": "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_03.json",
+      "sha256": "4806E392CBC3ED29756C5C3BCDC65ABD40B176DF6AFFC80CE6C420A5F66CA088"
+    },
+    {
+      "name": "BATTLE_USER_20261021T163100686424Z_9cddfc86_FAILURE_04.json",
+      "sha256": "F7FBC52248ACA34A97A325450E829E72453C30AA6121231B4BF8A81A780D4286"
+    },
+    {
+      "name": "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_05.json",
+      "sha256": "77B29DC80A2CA84BD347A56D63E3830D54044358599961D0C7D0678B6352F9E7"
+    },
+    {
+      "name": "BATTLE_USER_20261021T164622798833Z_b8419f5d_READY.json",
+      "sha256": "8FBD74A1642B6A57B29A99DDC6CB9742EAE581E11B78A0595903CA452540DDCE"
+    },
+    {
+      "name": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_01.json",
+      "sha256": "9DE328DA5FBFF98151ED2A26133FC123EABE6972DF1C6588F0DC4AB26098A034"
+    },
+    {
+      "name": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_02.json",
+      "sha256": "285F30D088752016F1792800EE8DD7E32E630BB5523C464FEC737DA7D4B7C614"
+    },
+    {
+      "name": "BATTLE_USER_20261021T164622798833Z_b8419f5d_FAILURE_03.json",
+      "sha256": "75C0DD4DC066E9FC002630F803D673F52D7793B2E309E9F2C0B6B368C0FA16BF"
+    },
+    {
+      "name": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_04.json",
+      "sha256": "BC5C91413202D1F2512EFEE679B7DA08CD8DA0CA4E86AFCCED288E4BD051056A"
+    },
+    {
+      "name": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_05.json",
+      "sha256": "72FF106B32D2AF20384685A0F45D8DB587EE5EFC9F3F93C75F43E31EB77A3108"
+    }
+  ],
+  "supporting_sources": [
+    {
+      "name": "P0_SUMMON_EXP_OWNER_REPORT_20261021.md",
+      "sha256": "F0D5886DC89D12A0C977A8DC8FF67EFA7903B1AB89BE0B640F401C7B9050BCDA"
+    },
+    {
+      "name": "BATTLE_STAGE11_CROSSRUN_ANALYSIS_20261022.json",
+      "sha256": "DC65D29948A1E5057ACF2BC40CB54539F9C3AEC42B8B05413838DE425E039ADB"
+    },
+    {
+      "name": "battle_native_detached_capture_v7_20261022.py",
+      "sha256": "C8E590CB1ECD69CD18E30164F7DEA74BC6DB29D80C9FCB57991A3F567053126F"
+    },
+    {
+      "name": "battle_native_war_tree_decoder_v5_20261021.py",
+      "sha256": "0DD7C9EBD0BF97E4BA421FEC02909A44A9B6ABDA4A3538239B479530D909EB6A"
+    }
+  ],
+  "runs": [
+    {
+      "session": "BATTLE_USER_20261021T163100686424Z_9cddfc86",
+      "pid": 28432,
+      "captures": [
+        {
+          "file": "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_01.json",
+          "sha256": "7C0A7BD05FFAB908A90BBBEC0863FCE040A99A33A17E75520C9CC19094565332",
+          "counter_start": 63,
+          "counter_end": 89,
+          "counter_delta": 26,
+          "same_frame_claim": false,
+          "sides": [
+            {
+              "slot": 0,
+              "unit_count": 192,
+              "troop_count": 24,
+              "distinct_unit_records": 192,
+              "member_counts_histogram": {
+                "8": 24
+              },
+              "side_not_in_members": [],
+              "members_not_in_side": [],
+              "unit_to_troop_backlink_mismatches": [],
+              "side_units_not_in_captured_task_union": []
+            },
+            {
+              "slot": 1,
+              "unit_count": 192,
+              "troop_count": 24,
+              "distinct_unit_records": 192,
+              "member_counts_histogram": {
+                "8": 24
+              },
+              "side_not_in_members": [],
+              "members_not_in_side": [],
+              "unit_to_troop_backlink_mismatches": [],
+              "side_units_not_in_captured_task_union": []
+            },
+            {
+              "slot": 2,
+              "unit_count": 0,
+              "troop_count": 0,
+              "distinct_unit_records": 0,
+              "member_counts_histogram": {},
+              "side_not_in_members": [],
+              "members_not_in_side": [],
+              "unit_to_troop_backlink_mismatches": [],
+              "side_units_not_in_captured_task_union": []
+            }
+          ],
+          "source_link_coverage": {
+            "leader_record_1CC": {
+              "readable": 0,
+              "total": 384
+            },
+            "source_children_178_180": {
+              "readable": 0,
+              "total": 384
+            },
+            "source_cache_1E4B4": {
+              "readable": 0,
+              "total": 384
+            },
+            "conditional_source_link_1E594": {
+              "readable": 0,
+              "total": 384
+            }
+          },
+          "summon_effect_links": {
+            "0x78": {
+              "readable": 0,
+              "total": 97
+            },
+            "0x7c": {
+              "readable": 0,
+              "total": 97
+            },
+            "0x80": {
+              "readable": 0,
+              "total": 97
+            }
+          },
+          "delta_from_previous": []
+        },
+        {
+          "file": "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_02.json",
+          "sha256": "D7662477F8D136EBD98541061A9E896F9B535193046CB0C0F01F95FDC826D9C8",
+          "counter_start": 99,
+          "counter_end": 118,
+          "counter_delta": 19,
+          "same_frame_claim": false,
+          "sides": [
+            {
+              "slot": 0,
+              "unit_count": 377,
+              "troop_count": 24,
+              "distinct_unit_records": 377,
+              "member_counts_histogram": {
+                "15": 3,
+                "14": 2,
+                "16": 19
+              },
+              "side_not_in_members": [],
+              "members_not_in_side": [],
+              "unit_to_troop_backlink_mismatches": [],
+              "side_units_not_in_captured_task_union": [
+                343,
+                359,
+                367
+              ]
+            },
+            {
+              "slot": 1,
+              "unit_count": 192,
+              "troop_count": 24,
+              "distinct_unit_records": 192,
+              "member_counts_histogram": {
+                "8": 24
+              },
+              "side_not_in_members": [],
+              "members_not_in_side": [],
+              "unit_to_troop_backlink_mismatches": [],
+              "side_units_not_in_captured_task_union": []
+            },
+            {
+              "slot": 2,
+              "unit_count": 0,
+              "troop_count": 0,
+              "distinct_unit_records": 0,
+              "member_counts_histogram": {},
+              "side_not_in_members": [],
+              "members_not_in_side": [],
+              "unit_to_troop_backlink_mismatches": [],
+              "side_units_not_in_captured_task_union": []
+            }
+          ],
+          "source_link_coverage": {
+            "leader_record_1CC": {
+              "readable": 0,
+              "total": 569
+            },
+            "source_children_178_180": {
+              "readable": 0,
+              "total": 569
+            },
+            "source_cache_1E4B4": {
+              "readable": 0,
+              "total": 569
+            },
+            "conditional_source_link_1E594": {
+              "readable": 0,
+              "total": 569
+            }
+          },
+          "summon_effect_links": {
+            "0x78": {
+              "readable": 0,
+              "total": 15
+            },
+            "0x7c": {
+              "readable": 0,
+              "total": 15
+            },
+            "0x80": {
+              "readable": 0,
+              "total": 15
+            }
+          },
+          "delta_from_previous": [
+            {
+              "side": 0,
+              "added_addresses": 185,
+              "removed_addresses": 0,
+              "added_unit_record_count": 185,
+              "added_records_already_in_previous_roster": 0,
+              "old_roster_exact_prefix": true,
+              "troop_addresses_unchanged": true,
+              "added_per_troop_histogram": {
+                "7": 3,
+                "6": 2,
+                "8": 19
+              },
+              "old_members_exact_prefix": true,
+              "new_units_not_reciprocally_attached": [],
+              "unread_original_creation_path": true,
+              "summon_cause_proven": false
+            },
+            {
+              "side": 1,
+              "added_addresses": 0,
+              "removed_addresses": 0,
+              "added_unit_record_count": 0,
+              "added_records_already_in_previous_roster": 0,
+              "old_roster_exact_prefix": true,
+              "troop_addresses_unchanged": true,
+              "added_per_troop_histogram": {
+                "0": 24
+              },
+              "old_members_exact_prefix": true,
+              "new_units_not_reciprocally_attached": [],
+              "unread_original_creation_path": true,
+              "summon_cause_proven": false
+            },
+            {
+              "side": 2,
+              "added_addresses": 0,
+              "removed_addresses": 0,
+              "added_unit_record_count": 0,
+              "added_records_already_in_previous_roster": 0,
+              "old_roster_exact_prefix": true,
+              "troop_addresses_unchanged": true,
+              "added_per_troop_histogram": {},
+              "old_members_exact_prefix": true,
+              "new_units_not_reciprocally_attached": [],
+              "unread_original_creation_path": true,
+              "summon_cause_proven": false
+            }
+          ]
+        },
+        {
+          "file": "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_03.json",
+          "sha256": "4806E392CBC3ED29756C5C3BCDC65ABD40B176DF6AFFC80CE6C420A5F66CA088",
+          "counter_start": 128,
+          "counter_end": 196,
+          "counter_delta": 68,
+          "same_frame_claim": false,
+          "sides": [
+            {
+              "slot": 0,
+              "unit_count": 377,
+              "troop_count": 24,
+              "distinct_unit_records": 377,
+              "member_counts_histogram": {
+                "15": 3,
+                "14": 2,
+                "16": 19
+              },
+              "side_not_in_members": [],
+              "members_not_in_side": [],
+              "unit_to_troop_backlink_mismatches": [],
+              "side_units_not_in_captured_task_union": []
+            },
+            {
+              "slot": 1,
+              "unit_count": 192,
+              "troop_count": 24,
+              "distinct_unit_records": 192,
+              "member_counts_histogram": {
+                "8": 24
+              },
+              "side_not_in_members": [],
+              "members_not_in_side": [],
+              "unit_to_troop_backlink_mismatches": [],
+              "side_units_not_in_captured_task_union": []
+            },
+            {
+              "slot": 2,
+              "unit_count": 0,
+              "troop_count": 0,
+              "distinct_unit_records": 0,
+              "member_counts_histogram": {},
+              "side_not_in_members": [],
+              "members_not_in_side": [],
+              "unit_to_troop_backlink_mismatches": [],
+              "side_units_not_in_captured_task_union": []
+            }
+          ],
+          "source_link_coverage": {
+            "leader_record_1CC": {
+              "readable": 0,
+              "total": 569
+            },
+            "source_children_178_180": {
+              "readable": 0,
+              "total": 569
+            },
+            "source_cache_1E4B4": {
+              "readable": 0,
+              "total": 569
+            },
+            "conditional_source_link_1E594": {
+              "readable": 0,
+              "total": 569
+            }
+          },
+          "summon_effect_links": {
+            "0x78": {
+              "readable": 0,
+              "total": 0
+            },
+            "0x7c": {
+              "readable": 0,
+              "total": 0
+            },
+            "0x80": {
+              "readable": 0,
+              "total": 0
+            }
+          },
+          "delta_from_previous": [
+            {
+              "side": 0,
+              "added_addresses": 0,
+              "removed_addresses": 0,
+              "added_unit_record_count": 0,
+              "added_records_already_in_previous_roster": 0,
+              "old_roster_exact_prefix": true,
+              "troop_addresses_unchanged": true,
+              "added_per_troop_histogram": {
+                "0": 24
+              },
+              "old_members_exact_prefix": true,
+              "new_units_not_reciprocally_attached": [],
+              "unread_original_creation_path": true,
+              "summon_cause_proven": false
+            },
+            {
+              "side": 1,
+              "added_addresses": 0,
+              "removed_addresses": 0,
+              "added_unit_record_count": 0,
+              "added_records_already_in_previous_roster": 0,
+              "old_roster_exact_prefix": true,
+              "troop_addresses_unchanged": true,
+              "added_per_troop_histogram": {
+                "0": 24
+              },
+              "old_members_exact_prefix": true,
+              "new_units_not_reciprocally_attached": [],
+              "unread_original_creation_path": true,
+              "summon_cause_proven": false
+            },
+            {
+              "side": 2,
+              "added_addresses": 0,
+              "removed_addresses": 0,
+              "added_unit_record_count": 0,
+              "added_records_already_in_previous_roster": 0,
+              "old_roster_exact_prefix": true,
+              "troop_addresses_unchanged": true,
+              "added_per_troop_histogram": {},
+              "old_members_exact_prefix": true,
+              "new_units_not_reciprocally_attached": [],
+              "unread_original_creation_path": true,
+              "summon_cause_proven": false
+            }
+          ]
+        },
+        {
+          "file": "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_05.json",
+          "sha256": "77B29DC80A2CA84BD347A56D63E3830D54044358599961D0C7D0678B6352F9E7",
+          "counter_start": 238,
+          "counter_end": 293,
+          "counter_delta": 55,
+          "same_frame_claim": false,
+          "sides": [
+            {
+              "slot": 0,
+              "unit_count": 377,
+              "troop_count": 24,
+              "distinct_unit_records": 377,
+              "member_counts_histogram": {
+                "15": 3,
+                "14": 2,
+                "16": 19
+              },
+              "side_not_in_members": [],
+              "members_not_in_side": [],
+              "unit_to_troop_backlink_mismatches": [],
+              "side_units_not_in_captured_task_union": []
+            },
+            {
+              "slot": 1,
+              "unit_count": 192,
+              "troop_count": 24,
+              "distinct_unit_records": 192,
+              "member_counts_histogram": {
+                "8": 24
+              },
+              "side_not_in_members": [],
+              "members_not_in_side": [],
+              "unit_to_troop_backlink_mismatches": [],
+              "side_units_not_in_captured_task_union": []
+            },
+            {
+              "slot": 2,
+              "unit_count": 0,
+              "troop_count": 0,
+              "distinct_unit_records": 0,
+              "member_counts_histogram": {},
+              "side_not_in_members": [],
+              "members_not_in_side": [],
+              "unit_to_troop_backlink_mismatches": [],
+              "side_units_not_in_captured_task_union": []
+            }
+          ],
+          "source_link_coverage": {
+            "leader_record_1CC": {
+              "readable": 0,
+              "total": 569
+            },
+            "source_children_178_180": {
+              "readable": 0,
+              "total": 569
+            },
+            "source_cache_1E4B4": {
+              "readable": 0,
+              "total": 569
+            },
+            "conditional_source_link_1E594": {
+              "readable": 0,
+              "total": 569
+            }
+          },
+          "summon_effect_links": {
+            "0x78": {
+              "readable": 0,
+              "total": 0
+            },
+            "0x7c": {
+              "readable": 0,
+              "total": 0
+            },
+            "0x80": {
+              "readable": 0,
+              "total": 0
+            }
+          },
+          "delta_from_previous": [
+            {
+              "side": 0,
+              "added_addresses": 0,
+              "removed_addresses": 0,
+              "added_unit_record_count": 0,
+              "added_records_already_in_previous_roster": 0,
+              "old_roster_exact_prefix": true,
+              "troop_addresses_unchanged": true,
+              "added_per_troop_histogram": {
+                "0": 24
+              },
+              "old_members_exact_prefix": true,
+              "new_units_not_reciprocally_attached": [],
+              "unread_original_creation_path": true,
+              "summon_cause_proven": false
+            },
+            {
+              "side": 1,
+              "added_addresses": 0,
+              "removed_addresses": 0,
+              "added_unit_record_count": 0,
+              "added_records_already_in_previous_roster": 0,
+              "old_roster_exact_prefix": true,
+              "troop_addresses_unchanged": true,
+              "added_per_troop_histogram": {
+                "0": 24
+              },
+              "old_members_exact_prefix": true,
+              "new_units_not_reciprocally_attached": [],
+              "unread_original_creation_path": true,
+              "summon_cause_proven": false
+            },
+            {
+              "side": 2,
+              "added_addresses": 0,
+              "removed_addresses": 0,
+              "added_unit_record_count": 0,
+              "added_records_already_in_previous_roster": 0,
+              "old_roster_exact_prefix": true,
+              "troop_addresses_unchanged": true,
+              "added_per_troop_histogram": {},
+              "old_members_exact_prefix": true,
+              "new_units_not_reciprocally_attached": [],
+              "unread_original_creation_path": true,
+              "summon_cause_proven": false
+            }
+          ]
+        }
+      ],
+      "event_log_sha256": "BDF3F4757D4E22C712432B788AF7FD7110736AF9A4E7E0F9521A7E0782A0DD26",
+      "summary_sha256": "51B05D0C964897B875F5F81B282CBEBB2DC46E674BA2EC0294E8017C0658CF7D",
+      "sampled_active_task_headers": [
+        {
+          "utc": "2026-10-21T16:31:09.850922+00:00",
+          "counter": 63,
+          "slots": 523,
+          "begin": "0x16dc7028",
+          "end": "0x16dc7854"
+        },
+        {
+          "utc": "2026-10-21T16:31:09.851534+00:00",
+          "counter": 63,
+          "slots": 523,
+          "begin": "0x16dc7028",
+          "end": "0x16dc7854"
+        },
+        {
+          "utc": "2026-10-21T16:31:13.602349+00:00",
+          "counter": 128,
+          "slots": 1355,
+          "begin": "0x4a795f18",
+          "end": "0x4a797444"
+        },
+        {
+          "utc": "2026-10-21T16:31:19.174709+00:00",
+          "counter": 318,
+          "slots": 1637,
+          "begin": "0x4a81e918",
+          "end": "0x4a8202ac"
+        },
+        {
+          "utc": "2026-10-21T16:31:24.205535+00:00",
+          "counter": 672,
+          "slots": 2485,
+          "begin": "0x4eba45b8",
+          "end": "0x4eba6c8c"
+        },
+        {
+          "utc": "2026-10-21T16:31:29.230007+00:00",
+          "counter": 711,
+          "slots": 2485,
+          "begin": "0x4eba45b8",
+          "end": "0x4eba6c8c"
+        },
+        {
+          "utc": "2026-10-21T16:31:34.262421+00:00",
+          "counter": 931,
+          "slots": 5053,
+          "begin": "0x4e710b58",
+          "end": "0x4e715a4c"
+        },
+        {
+          "utc": "2026-10-21T16:31:39.289150+00:00",
+          "counter": 1114,
+          "slots": 11339,
+          "begin": "0x4f9e05b8",
+          "end": "0x4f9eb6e4"
+        },
+        {
+          "utc": "2026-10-21T16:31:44.334274+00:00",
+          "counter": 1227,
+          "slots": 6133,
+          "begin": "0x4ae5a008",
+          "end": "0x4ae5ffdc"
+        },
+        {
+          "utc": "2026-10-21T16:31:49.380135+00:00",
+          "counter": 1417,
+          "slots": 7452,
+          "begin": "0x4ae5a008",
+          "end": "0x4ae61478"
+        },
+        {
+          "utc": "2026-10-21T16:31:54.422143+00:00",
+          "counter": 1613,
+          "slots": 7844,
+          "begin": "0x4ae5a008",
+          "end": "0x4ae61a98"
+        },
+        {
+          "utc": "2026-10-21T16:31:59.464937+00:00",
+          "counter": 1837,
+          "slots": 10033,
+          "begin": "0x4ae5a008",
+          "end": "0x4ae63ccc"
+        },
+        {
+          "utc": "2026-10-21T16:32:04.491252+00:00",
+          "counter": 2034,
+          "slots": 5624,
+          "begin": "0x4ae5a008",
+          "end": "0x4ae5f7e8"
+        },
+        {
+          "utc": "2026-10-21T16:32:09.524432+00:00",
+          "counter": 2165,
+          "slots": 8481,
+          "begin": "0x4ae5a008",
+          "end": "0x4ae6248c"
+        },
+        {
+          "utc": "2026-10-21T16:32:14.567461+00:00",
+          "counter": 2376,
+          "slots": 8567,
+          "begin": "0x4ae5a008",
+          "end": "0x4ae625e4"
+        },
+        {
+          "utc": "2026-10-21T16:32:19.605439+00:00",
+          "counter": 2597,
+          "slots": 3861,
+          "begin": "0x4ae5a008",
+          "end": "0x4ae5dc5c"
+        },
+        {
+          "utc": "2026-10-21T16:32:24.630071+00:00",
+          "counter": 2811,
+          "slots": 4324,
+          "begin": "0x4ae5a008",
+          "end": "0x4ae5e398"
+        },
+        {
+          "utc": "2026-10-21T16:32:29.655909+00:00",
+          "counter": 3097,
+          "slots": 3779,
+          "begin": "0x4ae5a008",
+          "end": "0x4ae5db14"
+        },
+        {
+          "utc": "2026-10-21T16:32:34.688270+00:00",
+          "counter": 3352,
+          "slots": 2515,
+          "begin": "0x4ae5a008",
+          "end": "0x4ae5c754"
+        },
+        {
+          "utc": "2026-10-21T16:32:39.721036+00:00",
+          "counter": 3622,
+          "slots": 1114,
+          "begin": "0x4ae5a008",
+          "end": "0x4ae5b170"
+        }
+      ],
+      "largest_observed_task_header": {
+        "utc": "2026-10-21T16:31:39.289150+00:00",
+        "counter": 1114,
+        "slots": 11339,
+        "begin": "0x4f9e05b8",
+        "end": "0x4f9eb6e4"
+      },
+      "observed_headers_above_2048": 15,
+      "header_slots_include_nulls": true,
+      "header_sampling_atomic": false
+    },
+    {
+      "session": "BATTLE_USER_20261021T164622798833Z_b8419f5d",
+      "pid": 32468,
+      "captures": [
+        {
+          "file": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_01.json",
+          "sha256": "9DE328DA5FBFF98151ED2A26133FC123EABE6972DF1C6588F0DC4AB26098A034",
+          "counter_start": 73,
+          "counter_end": 94,
+          "counter_delta": 21,
+          "same_frame_claim": false,
+          "sides": [
+            {
+              "slot": 0,
+              "unit_count": 192,
+              "troop_count": 24,
+              "distinct_unit_records": 192,
+              "member_counts_histogram": {
+                "8": 24
+              },
+              "side_not_in_members": [],
+              "members_not_in_side": [],
+              "unit_to_troop_backlink_mismatches": [],
+              "side_units_not_in_captured_task_union": []
+            },
+            {
+              "slot": 1,
+              "unit_count": 192,
+              "troop_count": 24,
+              "distinct_unit_records": 192,
+              "member_counts_histogram": {
+                "8": 24
+              },
+              "side_not_in_members": [],
+              "members_not_in_side": [],
+              "unit_to_troop_backlink_mismatches": [],
+              "side_units_not_in_captured_task_union": []
+            },
+            {
+              "slot": 2,
+              "unit_count": 0,
+              "troop_count": 0,
+              "distinct_unit_records": 0,
+              "member_counts_histogram": {},
+              "side_not_in_members": [],
+              "members_not_in_side": [],
+              "unit_to_troop_backlink_mismatches": [],
+              "side_units_not_in_captured_task_union": []
+            }
+          ],
+          "source_link_coverage": {
+            "leader_record_1CC": {
+              "readable": 0,
+              "total": 384
+            },
+            "source_children_178_180": {
+              "readable": 0,
+              "total": 384
+            },
+            "source_cache_1E4B4": {
+              "readable": 0,
+              "total": 384
+            },
+            "conditional_source_link_1E594": {
+              "readable": 0,
+              "total": 384
+            }
+          },
+          "summon_effect_links": {
+            "0x78": {
+              "readable": 0,
+              "total": 100
+            },
+            "0x7c": {
+              "readable": 0,
+              "total": 100
+            },
+            "0x80": {
+              "readable": 0,
+              "total": 100
+            }
+          },
+          "delta_from_previous": []
+        },
+        {
+          "file": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_02.json",
+          "sha256": "285F30D088752016F1792800EE8DD7E32E630BB5523C464FEC737DA7D4B7C614",
+          "counter_start": 100,
+          "counter_end": 134,
+          "counter_delta": 34,
+          "same_frame_claim": false,
+          "sides": [
+            {
+              "slot": 0,
+              "unit_count": 377,
+              "troop_count": 24,
+              "distinct_unit_records": 377,
+              "member_counts_histogram": {
+                "15": 3,
+                "14": 2,
+                "16": 19
+              },
+              "side_not_in_members": [],
+              "members_not_in_side": [],
+              "unit_to_troop_backlink_mismatches": [],
+              "side_units_not_in_captured_task_union": [
+                314,
+                332,
+                335,
+                336,
+                340,
+                343,
+                344,
+                350,
+                351,
+                352,
+                358,
+                359,
+                360,
+                366,
+                367,
+                375,
+                376
+              ]
+            },
+            {
+              "slot": 1,
+              "unit_count": 192,
+              "troop_count": 24,
+              "distinct_unit_records": 192,
+              "member_counts_histogram": {
+                "8": 24
+              },
+              "side_not_in_members": [],
+              "members_not_in_side": [],
+              "unit_to_troop_backlink_mismatches": [],
+              "side_units_not_in_captured_task_union": []
+            },
+            {
+              "slot": 2,
+              "unit_count": 0,
+              "troop_count": 0,
+              "distinct_unit_records": 0,
+              "member_counts_histogram": {},
+              "side_not_in_members": [],
+              "members_not_in_side": [],
+              "unit_to_troop_backlink_mismatches": [],
+              "side_units_not_in_captured_task_union": []
+            }
+          ],
+          "source_link_coverage": {
+            "leader_record_1CC": {
+              "readable": 0,
+              "total": 569
+            },
+            "source_children_178_180": {
+              "readable": 0,
+              "total": 569
+            },
+            "source_cache_1E4B4": {
+              "readable": 0,
+              "total": 569
+            },
+            "conditional_source_link_1E594": {
+              "readable": 0,
+              "total": 569
+            }
+          },
+          "summon_effect_links": {
+            "0x78": {
+              "readable": 0,
+              "total": 46
+            },
+            "0x7c": {
+              "readable": 0,
+              "total": 46
+            },
+            "0x80": {
+              "readable": 0,
+              "total": 46
+            }
+          },
+          "delta_from_previous": [
+            {
+              "side": 0,
+              "added_addresses": 185,
+              "removed_addresses": 0,
+              "added_unit_record_count": 185,
+              "added_records_already_in_previous_roster": 0,
+              "old_roster_exact_prefix": true,
+              "troop_addresses_unchanged": true,
+              "added_per_troop_histogram": {
+                "7": 3,
+                "6": 2,
+                "8": 19
+              },
+              "old_members_exact_prefix": true,
+              "new_units_not_reciprocally_attached": [],
+              "unread_original_creation_path": true,
+              "summon_cause_proven": false
+            },
+            {
+              "side": 1,
+              "added_addresses": 0,
+              "removed_addresses": 0,
+              "added_unit_record_count": 0,
+              "added_records_already_in_previous_roster": 0,
+              "old_roster_exact_prefix": true,
+              "troop_addresses_unchanged": true,
+              "added_per_troop_histogram": {
+                "0": 24
+              },
+              "old_members_exact_prefix": true,
+              "new_units_not_reciprocally_attached": [],
+              "unread_original_creation_path": true,
+              "summon_cause_proven": false
+            },
+            {
+              "side": 2,
+              "added_addresses": 0,
+              "removed_addresses": 0,
+              "added_unit_record_count": 0,
+              "added_records_already_in_previous_roster": 0,
+              "old_roster_exact_prefix": true,
+              "troop_addresses_unchanged": true,
+              "added_per_troop_histogram": {},
+              "old_members_exact_prefix": true,
+              "new_units_not_reciprocally_attached": [],
+              "unread_original_creation_path": true,
+              "summon_cause_proven": false
+            }
+          ]
+        },
+        {
+          "file": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_04.json",
+          "sha256": "BC5C91413202D1F2512EFEE679B7DA08CD8DA0CA4E86AFCCED288E4BD051056A",
+          "counter_start": 176,
+          "counter_end": 253,
+          "counter_delta": 77,
+          "same_frame_claim": false,
+          "sides": [
+            {
+              "slot": 0,
+              "unit_count": 377,
+              "troop_count": 24,
+              "distinct_unit_records": 377,
+              "member_counts_histogram": {
+                "15": 3,
+                "14": 2,
+                "16": 19
+              },
+              "side_not_in_members": [],
+              "members_not_in_side": [],
+              "unit_to_troop_backlink_mismatches": [],
+              "side_units_not_in_captured_task_union": []
+            },
+            {
+              "slot": 1,
+              "unit_count": 192,
+              "troop_count": 24,
+              "distinct_unit_records": 192,
+              "member_counts_histogram": {
+                "8": 24
+              },
+              "side_not_in_members": [],
+              "members_not_in_side": [],
+              "unit_to_troop_backlink_mismatches": [],
+              "side_units_not_in_captured_task_union": []
+            },
+            {
+              "slot": 2,
+              "unit_count": 0,
+              "troop_count": 0,
+              "distinct_unit_records": 0,
+              "member_counts_histogram": {},
+              "side_not_in_members": [],
+              "members_not_in_side": [],
+              "unit_to_troop_backlink_mismatches": [],
+              "side_units_not_in_captured_task_union": []
+            }
+          ],
+          "source_link_coverage": {
+            "leader_record_1CC": {
+              "readable": 0,
+              "total": 569
+            },
+            "source_children_178_180": {
+              "readable": 0,
+              "total": 569
+            },
+            "source_cache_1E4B4": {
+              "readable": 0,
+              "total": 569
+            },
+            "conditional_source_link_1E594": {
+              "readable": 0,
+              "total": 569
+            }
+          },
+          "summon_effect_links": {
+            "0x78": {
+              "readable": 0,
+              "total": 0
+            },
+            "0x7c": {
+              "readable": 0,
+              "total": 0
+            },
+            "0x80": {
+              "readable": 0,
+              "total": 0
+            }
+          },
+          "delta_from_previous": [
+            {
+              "side": 0,
+              "added_addresses": 0,
+              "removed_addresses": 0,
+              "added_unit_record_count": 0,
+              "added_records_already_in_previous_roster": 0,
+              "old_roster_exact_prefix": true,
+              "troop_addresses_unchanged": true,
+              "added_per_troop_histogram": {
+                "0": 24
+              },
+              "old_members_exact_prefix": true,
+              "new_units_not_reciprocally_attached": [],
+              "unread_original_creation_path": true,
+              "summon_cause_proven": false
+            },
+            {
+              "side": 1,
+              "added_addresses": 0,
+              "removed_addresses": 0,
+              "added_unit_record_count": 0,
+              "added_records_already_in_previous_roster": 0,
+              "old_roster_exact_prefix": true,
+              "troop_addresses_unchanged": true,
+              "added_per_troop_histogram": {
+                "0": 24
+              },
+              "old_members_exact_prefix": true,
+              "new_units_not_reciprocally_attached": [],
+              "unread_original_creation_path": true,
+              "summon_cause_proven": false
+            },
+            {
+              "side": 2,
+              "added_addresses": 0,
+              "removed_addresses": 0,
+              "added_unit_record_count": 0,
+              "added_records_already_in_previous_roster": 0,
+              "old_roster_exact_prefix": true,
+              "troop_addresses_unchanged": true,
+              "added_per_troop_histogram": {},
+              "old_members_exact_prefix": true,
+              "new_units_not_reciprocally_attached": [],
+              "unread_original_creation_path": true,
+              "summon_cause_proven": false
+            }
+          ]
+        },
+        {
+          "file": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_05.json",
+          "sha256": "72FF106B32D2AF20384685A0F45D8DB587EE5EFC9F3F93C75F43E31EB77A3108",
+          "counter_start": 272,
+          "counter_end": 373,
+          "counter_delta": 101,
+          "same_frame_claim": false,
+          "sides": [
+            {
+              "slot": 0,
+              "unit_count": 377,
+              "troop_count": 24,
+              "distinct_unit_records": 377,
+              "member_counts_histogram": {
+                "15": 3,
+                "14": 2,
+                "16": 19
+              },
+              "side_not_in_members": [],
+              "members_not_in_side": [],
+              "unit_to_troop_backlink_mismatches": [],
+              "side_units_not_in_captured_task_union": []
+            },
+            {
+              "slot": 1,
+              "unit_count": 200,
+              "troop_count": 24,
+              "distinct_unit_records": 200,
+              "member_counts_histogram": {
+                "8": 16,
+                "9": 7,
+                "12": 1
+              },
+              "side_not_in_members": [],
+              "members_not_in_side": [
+                "0x4BA87520",
+                "0x4BAA5AC8",
+                "0x4BAC4070"
+              ],
+              "unit_to_troop_backlink_mismatches": [],
+              "side_units_not_in_captured_task_union": [
+                196,
+                197,
+                198,
+                199
+              ]
+            },
+            {
+              "slot": 2,
+              "unit_count": 0,
+              "troop_count": 0,
+              "distinct_unit_records": 0,
+              "member_counts_histogram": {},
+              "side_not_in_members": [],
+              "members_not_in_side": [],
+              "unit_to_troop_backlink_mismatches": [],
+              "side_units_not_in_captured_task_union": []
+            }
+          ],
+          "source_link_coverage": {
+            "leader_record_1CC": {
+              "readable": 0,
+              "total": 577
+            },
+            "source_children_178_180": {
+              "readable": 0,
+              "total": 577
+            },
+            "source_cache_1E4B4": {
+              "readable": 0,
+              "total": 577
+            },
+            "conditional_source_link_1E594": {
+              "readable": 0,
+              "total": 577
+            }
+          },
+          "summon_effect_links": {
+            "0x78": {
+              "readable": 0,
+              "total": 30
+            },
+            "0x7c": {
+              "readable": 0,
+              "total": 30
+            },
+            "0x80": {
+              "readable": 0,
+              "total": 30
+            }
+          },
+          "delta_from_previous": [
+            {
+              "side": 0,
+              "added_addresses": 0,
+              "removed_addresses": 0,
+              "added_unit_record_count": 0,
+              "added_records_already_in_previous_roster": 0,
+              "old_roster_exact_prefix": true,
+              "troop_addresses_unchanged": true,
+              "added_per_troop_histogram": {
+                "0": 24
+              },
+              "old_members_exact_prefix": true,
+              "new_units_not_reciprocally_attached": [],
+              "unread_original_creation_path": true,
+              "summon_cause_proven": false
+            },
+            {
+              "side": 1,
+              "added_addresses": 8,
+              "removed_addresses": 0,
+              "added_unit_record_count": 8,
+              "added_records_already_in_previous_roster": 0,
+              "old_roster_exact_prefix": true,
+              "troop_addresses_unchanged": true,
+              "added_per_troop_histogram": {
+                "0": 18,
+                "1": 5,
+                "3": 1
+              },
+              "old_members_exact_prefix": true,
+              "new_units_not_reciprocally_attached": [],
+              "unread_original_creation_path": true,
+              "summon_cause_proven": false
+            },
+            {
+              "side": 2,
+              "added_addresses": 0,
+              "removed_addresses": 0,
+              "added_unit_record_count": 0,
+              "added_records_already_in_previous_roster": 0,
+              "old_roster_exact_prefix": true,
+              "troop_addresses_unchanged": true,
+              "added_per_troop_histogram": {},
+              "old_members_exact_prefix": true,
+              "new_units_not_reciprocally_attached": [],
+              "unread_original_creation_path": true,
+              "summon_cause_proven": false
+            }
+          ]
+        }
+      ],
+      "event_log_sha256": "5B61ECAC3477EA762F951D8ADD74D751517402DA98D683BDFAE5CDDB801D62B9",
+      "summary_sha256": "9E0FEC62DE5604E9BA991E155A629BDB2CE2969D293CBBA75A187AB3CF90568F",
+      "sampled_active_task_headers": [
+        {
+          "utc": "2026-10-21T16:46:32.185603+00:00",
+          "counter": 73,
+          "slots": 523,
+          "begin": "0x1e60e020",
+          "end": "0x1e60e84c"
+        },
+        {
+          "utc": "2026-10-21T16:46:32.185603+00:00",
+          "counter": 73,
+          "slots": 523,
+          "begin": "0x1e60e020",
+          "end": "0x1e60e84c"
+        },
+        {
+          "utc": "2026-10-21T16:46:34.731950+00:00",
+          "counter": 143,
+          "slots": 1596,
+          "begin": "0x4b68b628",
+          "end": "0x4b68cf18"
+        },
+        {
+          "utc": "2026-10-21T16:46:39.775071+00:00",
+          "counter": 418,
+          "slots": 1308,
+          "begin": "0x4b73a6c8",
+          "end": "0x4b73bb38"
+        },
+        {
+          "utc": "2026-10-21T16:46:44.805194+00:00",
+          "counter": 794,
+          "slots": 4963,
+          "begin": "0x50059008",
+          "end": "0x5005dd94"
+        },
+        {
+          "utc": "2026-10-21T16:46:49.837454+00:00",
+          "counter": 1045,
+          "slots": 5848,
+          "begin": "0x504606c0",
+          "end": "0x50466220"
+        },
+        {
+          "utc": "2026-10-21T16:46:54.876121+00:00",
+          "counter": 1329,
+          "slots": 6629,
+          "begin": "0x504606c0",
+          "end": "0x50466e54"
+        },
+        {
+          "utc": "2026-10-21T16:46:59.914579+00:00",
+          "counter": 1540,
+          "slots": 5855,
+          "begin": "0x4bcc3010",
+          "end": "0x4bcc8b8c"
+        },
+        {
+          "utc": "2026-10-21T16:47:04.950375+00:00",
+          "counter": 1799,
+          "slots": 7730,
+          "begin": "0x4bcc3010",
+          "end": "0x4bcca8d8"
+        },
+        {
+          "utc": "2026-10-21T16:47:09.984322+00:00",
+          "counter": 2025,
+          "slots": 6558,
+          "begin": "0x4bcc3010",
+          "end": "0x4bcc9688"
+        },
+        {
+          "utc": "2026-10-21T16:47:15.020116+00:00",
+          "counter": 2330,
+          "slots": 5666,
+          "begin": "0x4bcc3010",
+          "end": "0x4bcc8898"
+        },
+        {
+          "utc": "2026-10-21T16:47:20.045794+00:00",
+          "counter": 2696,
+          "slots": 2120,
+          "begin": "0x4bcc3010",
+          "end": "0x4bcc5130"
+        },
+        {
+          "utc": "2026-10-21T16:47:25.068649+00:00",
+          "counter": 3060,
+          "slots": 848,
+          "begin": "0x4bcc3010",
+          "end": "0x4bcc3d50"
+        }
+      ],
+      "largest_observed_task_header": {
+        "utc": "2026-10-21T16:47:04.950375+00:00",
+        "counter": 1799,
+        "slots": 7730,
+        "begin": "0x4bcc3010",
+        "end": "0x4bcca8d8"
+      },
+      "observed_headers_above_2048": 8,
+      "header_slots_include_nulls": true,
+      "header_sampling_atomic": false
+    }
+  ],
+  "native_proof": {
+    "summon_route_sites": [
+      {
+        "site": "0x54ed8a",
+        "bytes": "e8f1170000",
+        "asm": "call 0x550580"
+      },
+      {
+        "site": "0x54ed95",
+        "bytes": "89437c",
+        "asm": "mov dword ptr [ebx + 0x7c], eax"
+      },
+      {
+        "site": "0x54ed98",
+        "bytes": "897378",
+        "asm": "mov dword ptr [ebx + 0x78], esi"
+      },
+      {
+        "site": "0x54f07a",
+        "bytes": "e801080200",
+        "asm": "call 0x56f880"
+      },
+      {
+        "site": "0x54f096",
+        "bytes": "e875960100",
+        "asm": "call 0x568710"
+      },
+      {
+        "site": "0x54f245",
+        "bytes": "e856820200",
+        "asm": "call 0x5774a0"
+      },
+      {
+        "site": "0x54f2c6",
+        "bytes": "898b80000000",
+        "asm": "mov dword ptr [ebx + 0x80], ecx"
+      }
+    ],
+    "source_relation_ops": [
+      {
+        "site": "0x5774aa",
+        "bytes": "8b857c010000",
+        "asm": "mov eax, dword ptr [ebp + 0x17c]"
+      },
+      {
+        "site": "0x5774b9",
+        "bytes": "8b8d78010000",
+        "asm": "mov ecx, dword ptr [ebp + 0x178]"
+      },
+      {
+        "site": "0x5774cf",
+        "bytes": "3b8580010000",
+        "asm": "cmp eax, dword ptr [ebp + 0x180]"
+      },
+      {
+        "site": "0x5774d7",
+        "bytes": "8d8578010000",
+        "asm": "lea eax, [ebp + 0x178]"
+      },
+      {
+        "site": "0x5774e2",
+        "bytes": "8b857c010000",
+        "asm": "mov eax, dword ptr [ebp + 0x17c]"
+      },
+      {
+        "site": "0x5774ec",
+        "bytes": "8b8d78010000",
+        "asm": "mov ecx, dword ptr [ebp + 0x178]"
+      },
+      {
+        "site": "0x5774fa",
+        "bytes": "3b8580010000",
+        "asm": "cmp eax, dword ptr [ebp + 0x180]"
+      },
+      {
+        "site": "0x577502",
+        "bytes": "8d8578010000",
+        "asm": "lea eax, [ebp + 0x178]"
+      },
+      {
+        "site": "0x57750d",
+        "bytes": "8b857c010000",
+        "asm": "mov eax, dword ptr [ebp + 0x17c]"
+      },
+      {
+        "site": "0x577519",
+        "bytes": "83857c01000004",
+        "asm": "add dword ptr [ebp + 0x17c], 4"
+      },
+      {
+        "site": "0x577520",
+        "bytes": "83bb94e5010000",
+        "asm": "cmp dword ptr [ebx + 0x1e594], 0"
+      },
+      {
+        "site": "0x577529",
+        "bytes": "89ab94e50100",
+        "asm": "mov dword ptr [ebx + 0x1e594], ebp"
+      }
+    ],
+    "troop_assignment_ops": [
+      {
+        "site": "0x568802",
+        "bytes": "89afd0010000",
+        "asm": "mov dword ptr [edi + 0x1d0], ebp"
+      }
+    ],
+    "existing_owner_source": "P0_SUMMON_EXP_OWNER_REPORT_20261021.md",
+    "note": "Known P0/A/B static routes reused; no new READY for their original discoveries."
+  },
+  "unproved": [
+    "Exact creation caller and summoner of the 185 newly observed addresses",
+    "Which Skill caused additions, and whether all were summons",
+    "Any actual HP/MP/coordinate/selected MAP/CRT state/event VM snapshot",
+    "Same-frame atomic capture and safe native pause/resume",
+    "Native result writeback/strategy Golden/rollback"
+  ],
+  "next_capture_contract": {
+    "core_record_links": "Read Unit+0x1C8..0x1D0 as one 12-byte span rather than skip +0x1CC; +1CC is NOT summoner ID.",
+    "source_relation": "Source Unit+0x178..0x180 vector, +0x1E4B4 cache; optional conditional child+0x1E594.",
+    "effect_relation": "RTTI SummonFlash+0x78 Skill, +0x7C source Unit and +0x80 created Unit, with bounds and vtable checks.",
+    "task_scaling": "Keep primary roster separate from optional Task-object walk; measure before choosing bounds. Do not remove read budget protections.",
+    "temporal": "Store per-phase counters/timestamps and structural cross-checks. No stable-counter or paused flag alone can certify G1.",
+    "deployment": "DESIGN_ONLY. Existing GUI/core/v7 unchanged; no native process or new battle requested."
+  },
+  "native_game_accessed": false,
+  "game_memory_written": false,
+  "recorder_changed": false,
+  "full_G1_proven": false,
+  "work_used": false,
+  "objective_gates_passed": 3,
+  "objective_gates_total": 9
+}

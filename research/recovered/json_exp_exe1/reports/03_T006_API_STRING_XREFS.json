@@ -1,0 +1,2985 @@
+{
+  "script_function_names": 322,
+  "matched_string_names": 260,
+  "unmatched": [
+    "GetTurn",
+    "HideLink",
+    "LinkSpot",
+    "Linkspot",
+    "PlayBGM",
+    "PlaySE",
+    "SkillTroop",
+    "UnionPower",
+    "addcastle",
+    "adddiplo",
+    "addfriend",
+    "addgain",
+    "addlevel",
+    "addmoney",
+    "addskill",
+    "addskill2",
+    "addstatus",
+    "addtrust",
+    "addunit",
+    "addvar",
+    "ammo",
+    "backscroll",
+    "changerace",
+    "chat3",
+    "choicetitle",
+    "countmoney",
+    "eras",
+    "fafeout",
+    "getturn",
+    "hideimage",
+    "hidespot",
+    "inpower",
+    "isNPC",
+    "isNewturn",
+    "isPlayerturn",
+    "isalive",
+    "ismaster",
+    "isplayer",
+    "iswar",
+    "linkspot",
+    "playbgm",
+    "playse",
+    "pushdiplo",
+    "pushspot",
+    "roamunit",
+    "sFriend",
+    "showspot",
+    "stopbgm",
+    "storeAllspot",
+    "storePowerofUnit",
+    "storeRaceofUnit",
+    "storeSkillofUnit",
+    "storeSpotofPower",
+    "storeSpotofUnit",
+    "storeSpotofpower",
+    "storeUnitofPower",
+    "storebaseClassOfUnit",
+    "storecompower",
+    "storeskillofunit",
+    "storespotofpower",
+    "storeunitofpower",
+    "subvar"
+  ],
+  "matched": [
+    {
+      "name": "activeTroop",
+      "string_vas": [
+        "0x63048c",
+        "0x630590"
+      ],
+      "xrefs": [
+        "0x4b4537",
+        "0x4b5c16"
+      ]
+    },
+    {
+      "name": "add",
+      "string_vas": [
+        "0x6248ec",
+        "0x6306ac",
+        "0x634d9d"
+      ],
+      "xrefs": [
+        "0x4ad05e",
+        "0x59a79b"
+      ]
+    },
+    {
+      "name": "addBaseLevel",
+      "string_vas": [
+        "0x63115c",
+        "0x6312f0"
+      ],
+      "xrefs": [
+        "0x4a79f8",
+        "0x4aaf8e"
+      ]
+    },
+    {
+      "name": "addCapa",
+      "string_vas": [
+        "0x6310ec",
+        "0x63138c"
+      ],
+      "xrefs": [
+        "0x4a7860",
+        "0x4ac5de"
+      ]
+    },
+    {
+      "name": "addCastle",
+      "string_vas": [
+        "0x6310d4",
+        "0x631380"
+      ],
+      "xrefs": [
+        "0x4a7807",
+        "0x4ac4f8"
+      ]
+    },
+    {
+      "name": "addDiplo",
+      "string_vas": [
+        "0x630e44",
+        "0x63121c",
+        "0x631228"
+      ],
+      "xrefs": [
+        "0x4a6efe",
+        "0x4a83ff",
+        "0x4a854b"
+      ]
+    },
+    {
+      "name": "addFriend",
+      "string_vas": [
+        "0x631144"
+      ],
+      "xrefs": [
+        "0x4a799f"
+      ]
+    },
+    {
+      "name": "addGain",
+      "string_vas": [
+        "0x6310c4",
+        "0x631378"
+      ],
+      "xrefs": [
+        "0x4a77ae",
+        "0x4ac412"
+      ]
+    },
+    {
+      "name": "addLevel",
+      "string_vas": [
+        "0x631034"
+      ],
+      "xrefs": [
+        "0x4a7590"
+      ]
+    },
+    {
+      "name": "addLimit",
+      "string_vas": [
+        "0x6303dc"
+      ],
+      "xrefs": [
+        "0x4b42ca"
+      ]
+    },
+    {
+      "name": "addMerits",
+      "string_vas": [
+        "0x631014"
+      ],
+      "xrefs": [
+        "0x4a7505"
+      ]
+    },
+    {
+      "name": "addMoney",
+      "string_vas": [
+        "0x630ff0",
+        "0x631300"
+      ],
+      "xrefs": [
+        "0x4a747e",
+        "0x4ab078"
+      ]
+    },
+    {
+      "name": "addPower",
+      "string_vas": [
+        "0x630e88"
+      ],
+      "xrefs": [
+        "0x4a6fe1"
+      ]
+    },
+    {
+      "name": "addPowerMerce2",
+      "string_vas": [
+        "0x630f88",
+        "0x6312a8"
+      ],
+      "xrefs": [
+        "0x4a7349",
+        "0x4aabf4"
+      ]
+    },
+    {
+      "name": "addPowerStaff2",
+      "string_vas": [
+        "0x630fa8",
+        "0x6312c0"
+      ],
+      "xrefs": [
+        "0x4a73a2",
+        "0x4aad5b"
+      ]
+    },
+    {
+      "name": "addSkill",
+      "string_vas": [
+        "0x631064"
+      ],
+      "xrefs": [
+        "0x4a7644"
+      ]
+    },
+    {
+      "name": "addSkill2",
+      "string_vas": [
+        "0x631070",
+        "0x63130c"
+      ],
+      "xrefs": [
+        "0x4a7673",
+        "0x4ab7fe"
+      ]
+    },
+    {
+      "name": "addSpot",
+      "string_vas": [
+        "0x630ea0"
+      ],
+      "xrefs": [
+        "0x4a703d"
+      ]
+    },
+    {
+      "name": "addStatus",
+      "string_vas": [
+        "0x631094",
+        "0x631318"
+      ],
+      "xrefs": [
+        "0x4a76f9",
+        "0x4ac03e"
+      ]
+    },
+    {
+      "name": "addTrainingUp",
+      "string_vas": [
+        "0x630fd0",
+        "0x6312e0"
+      ],
+      "xrefs": [
+        "0x4a7425",
+        "0x4aaea8"
+      ]
+    },
+    {
+      "name": "addTroop",
+      "string_vas": [
+        "0x6303e8"
+      ],
+      "xrefs": [
+        "0x4b42f4"
+      ]
+    },
+    {
+      "name": "addTrust",
+      "string_vas": [
+        "0x631020"
+      ],
+      "xrefs": [
+        "0x4a7533"
+      ]
+    },
+    {
+      "name": "addUnit",
+      "string_vas": [
+        "0x630eb4"
+      ],
+      "xrefs": [
+        "0x4a7099"
+      ]
+    },
+    {
+      "name": "addVar",
+      "string_vas": [
+        "0x630804"
+      ],
+      "xrefs": [
+        "0x4ad675"
+      ]
+    },
+    {
+      "name": "addstr",
+      "string_vas": [
+        "0x630b84"
+      ],
+      "xrefs": [
+        "0x4ae05b"
+      ]
+    },
+    {
+      "name": "addv",
+      "string_vas": [
+        "0x6307fc"
+      ],
+      "xrefs": [
+        "0x4ad646"
+      ]
+    },
+    {
+      "name": "aimTroop",
+      "string_vas": [
+        "0x6304e4"
+      ],
+      "xrefs": [
+        "0x4b4673"
+      ]
+    },
+    {
+      "name": "battleEvent",
+      "string_vas": [
+        "0x6314cc"
+      ],
+      "xrefs": [
+        "0x4a03d3"
+      ]
+    },
+    {
+      "name": "bg",
+      "string_vas": [
+        "0x631544",
+        "0x6361dc"
+      ],
+      "xrefs": [
+        "0x4324e0",
+        "0x4a0670"
+      ]
+    },
+    {
+      "name": "break",
+      "string_vas": [
+        "0x627d94",
+        "0x6299a4",
+        "0x62a2fc",
+        "0x62b2f0",
+        "0x62dab0",
+        "0x6314a0",
+        "0x631b78"
+      ],
+      "xrefs": [
+        "0x49d20d",
+        "0x4a0291",
+        "0x4ef71d",
+        "0x527164",
+        "0x544a12",
+        "0x55ad19",
+        "0x5787cf"
+      ]
+    },
+    {
+      "name": "changeClass",
+      "string_vas": [
+        "0x63104c"
+      ],
+      "xrefs": [
+        "0x4a75e8"
+      ]
+    },
+    {
+      "name": "changeMap",
+      "string_vas": [
+        "0x6310fc"
+      ],
+      "xrefs": [
+        "0x4a78b9"
+      ]
+    },
+    {
+      "name": "changeMaster",
+      "string_vas": [
+        "0x630f38"
+      ],
+      "xrefs": [
+        "0x4a7262"
+      ]
+    },
+    {
+      "name": "changePlayer",
+      "string_vas": [
+        "0x630f48"
+      ],
+      "xrefs": [
+        "0x4a7290"
+      ]
+    },
+    {
+      "name": "changePowerFix",
+      "string_vas": [
+        "0x630f28"
+      ],
+      "xrefs": [
+        "0x4a7234"
+      ]
+    },
+    {
+      "name": "changePowerFlag",
+      "string_vas": [
+        "0x630f18"
+      ],
+      "xrefs": [
+        "0x4a7206"
+      ]
+    },
+    {
+      "name": "changePowerName",
+      "string_vas": [
+        "0x630f08"
+      ],
+      "xrefs": [
+        "0x4a71d8"
+      ]
+    },
+    {
+      "name": "changeRace",
+      "string_vas": [
+        "0x631058"
+      ],
+      "xrefs": [
+        "0x4a7616"
+      ]
+    },
+    {
+      "name": "changeSpotImage",
+      "string_vas": [
+        "0x6310b4"
+      ],
+      "xrefs": [
+        "0x4a7780"
+      ]
+    },
+    {
+      "name": "chat",
+      "string_vas": [
+        "0x62c9e4",
+        "0x62caa4",
+        "0x6314f4"
+      ],
+      "xrefs": [
+        "0x4a04ae",
+        "0x5058ac",
+        "0x506165"
+      ]
+    },
+    {
+      "name": "choice",
+      "string_vas": [
+        "0x63151c",
+        "0x636918",
+        "0x636920"
+      ],
+      "xrefs": [
+        "0x41e6f0",
+        "0x41e898",
+        "0x4a058c"
+      ]
+    },
+    {
+      "name": "choiceTitle",
+      "string_vas": [
+        "0x6317fc"
+      ],
+      "xrefs": [
+        "0x4a121a"
+      ]
+    },
+    {
+      "name": "clear",
+      "string_vas": [
+        "0x63081c"
+      ],
+      "xrefs": [
+        "0x4ad6f8"
+      ]
+    },
+    {
+      "name": "continue",
+      "string_vas": [
+        "0x6313fc",
+        "0x632a58"
+      ],
+      "xrefs": [
+        "0x48a764",
+        "0x4a02bf"
+      ]
+    },
+    {
+      "name": "count",
+      "string_vas": [
+        "0x627dac",
+        "0x62a314",
+        "0x6353c4"
+      ],
+      "xrefs": [
+        "0x44eeb3",
+        "0x544bd9",
+        "0x578a05"
+      ]
+    },
+    {
+      "name": "countGain",
+      "string_vas": [
+        "0x63530c"
+      ],
+      "xrefs": [
+        "0x44eb2d"
+      ]
+    },
+    {
+      "name": "countMoney",
+      "string_vas": [
+        "0x635318"
+      ],
+      "xrefs": [
+        "0x44eb62"
+      ]
+    },
+    {
+      "name": "countPower",
+      "string_vas": [
+        "0x63532c"
+      ],
+      "xrefs": [
+        "0x44ebcc"
+      ]
+    },
+    {
+      "name": "countSpot",
+      "string_vas": [
+        "0x6352f4"
+      ],
+      "xrefs": [
+        "0x44eac3"
+      ]
+    },
+    {
+      "name": "countUnit",
+      "string_vas": [
+        "0x635478"
+      ],
+      "xrefs": [
+        "0x44f28b"
+      ]
+    },
+    {
+      "name": "countVar",
+      "string_vas": [
+        "0x6353b8"
+      ],
+      "xrefs": [
+        "0x44ee7d"
+      ]
+    },
+    {
+      "name": "ctrlTroop",
+      "string_vas": [
+        "0x6304b0"
+      ],
+      "xrefs": [
+        "0x4b45bf"
+      ]
+    },
+    {
+      "name": "darkness",
+      "string_vas": [
+        "0x631568"
+      ],
+      "xrefs": [
+        "0x4a074f"
+      ]
+    },
+    {
+      "name": "dialog",
+      "string_vas": [
+        "0x62ca04",
+        "0x6302e0",
+        "0x63152c",
+        "0x635cf0",
+        "0x635d04",
+        "0x635d0c",
+        "0x635d38",
+        "0x635dc0",
+        "0x635ddc",
+        "0x636910"
+      ],
+      "xrefs": [
+        "0x41e423",
+        "0x43ee13",
+        "0x43f71f",
+        "0x43f993",
+        "0x43feb6",
+        "0x4413f2",
+        "0x4415b6",
+        "0x4a05e8",
+        "0x4b74dd",
+        "0x5058f0"
+      ]
+    },
+    {
+      "name": "div",
+      "string_vas": [
+        "0x6306b8"
+      ],
+      "xrefs": [
+        "0x4ad0e8"
+      ]
+    },
+    {
+      "name": "doskill",
+      "string_vas": [
+        "0x631768"
+      ],
+      "xrefs": [
+        "0x4a0f96"
+      ]
+    },
+    {
+      "name": "equal",
+      "string_vas": [
+        "0x6353f8"
+      ],
+      "xrefs": [
+        "0x44f019"
+      ]
+    },
+    {
+      "name": "erase",
+      "string_vas": [
+        "0x626c78",
+        "0x631524",
+        "0x631a1c"
+      ],
+      "xrefs": [
+        "0x4a05ba",
+        "0x4a5e84",
+        "0x583a2e"
+      ]
+    },
+    {
+      "name": "eraseFriend",
+      "string_vas": [
+        "0x631150",
+        "0x6313b0"
+      ],
+      "xrefs": [
+        "0x4a79ce",
+        "0x4acb39"
+      ]
+    },
+    {
+      "name": "erasePower",
+      "string_vas": [
+        "0x630e94"
+      ],
+      "xrefs": [
+        "0x4a700f"
+      ]
+    },
+    {
+      "name": "erasePowerMerce",
+      "string_vas": [
+        "0x630f58"
+      ],
+      "xrefs": [
+        "0x4a72be"
+      ]
+    },
+    {
+      "name": "erasePowerStaff",
+      "string_vas": [
+        "0x630f68"
+      ],
+      "xrefs": [
+        "0x4a72ec"
+      ]
+    },
+    {
+      "name": "eraseSkill",
+      "string_vas": [
+        "0x63107c"
+      ],
+      "xrefs": [
+        "0x4a769d"
+      ]
+    },
+    {
+      "name": "eraseTroop",
+      "string_vas": [
+        "0x630400"
+      ],
+      "xrefs": [
+        "0x4b4351"
+      ]
+    },
+    {
+      "name": "eraseUnit",
+      "string_vas": [
+        "0x630ebc"
+      ],
+      "xrefs": [
+        "0x4a70c7"
+      ]
+    },
+    {
+      "name": "eraseUnit2",
+      "string_vas": [
+        "0x630ef0"
+      ],
+      "xrefs": [
+        "0x4a717c"
+      ]
+    },
+    {
+      "name": "eraseUnitTroop",
+      "string_vas": [
+        "0x630ec8"
+      ],
+      "xrefs": [
+        "0x4a70f5"
+      ]
+    },
+    {
+      "name": "event",
+      "string_vas": [
+        "0x626674",
+        "0x629038",
+        "0x62c73c",
+        "0x62d1a8",
+        "0x62d97c",
+        "0x62d990",
+        "0x62dc50",
+        "0x63147c",
+        "0x631810",
+        "0x632160",
+        "0x632cd8",
+        "0x632ce8",
+        "0x632cfc",
+        "0x632d08",
+        "0x632de4",
+        "0x632df4",
+        "0x63560c",
+        "0x6361a4",
+        "0x6361c8",
+        "0x6361d4",
+        "0x6361e0",
+        "0x6361f0",
+        "0x63620c",
+        "0x63621c",
+        "0x63623c",
+        "0x636258",
+        "0x6382bc"
+      ],
+      "xrefs": [
+        "0x41ee06",
+        "0x432237",
+        "0x432398",
+        "0x43242e",
+        "0x4324d2",
+        "0x43253a",
+        "0x4328bf",
+        "0x432a04",
+        "0x432b5c",
+        "0x432fa6",
+        "0x447a44",
+        "0x48c14c",
+        "0x48dd83",
+        "0x48de14",
+        "0x48df55",
+        "0x48df98",
+        "0x48f337",
+        "0x48f38a",
+        "0x492c92",
+        "0x4a01d5",
+        "0x4a18d1",
+        "0x4f11c0",
+        "0x4f64a2",
+        "0x4f661b",
+        "0x5044a5",
+        "0x50e0e7",
+        "0x524c03",
+        "0x5646c3",
+        "0x592295"
+      ]
+    },
+    {
+      "name": "exit",
+      "string_vas": [
+        "0x6317c4"
+      ],
+      "xrefs": [
+        "0x4a10d8"
+      ]
+    },
+    {
+      "name": "fadein",
+      "string_vas": [
+        "0x631560"
+      ],
+      "xrefs": [
+        "0x4a0721"
+      ]
+    },
+    {
+      "name": "fadeout",
+      "string_vas": [
+        "0x631558"
+      ],
+      "xrefs": [
+        "0x4a06f3"
+      ]
+    },
+    {
+      "name": "font",
+      "string_vas": [
+        "0x631504"
+      ],
+      "xrefs": [
+        "0x4a0502"
+      ]
+    },
+    {
+      "name": "fontc",
+      "string_vas": [
+        "0x63150c"
+      ],
+      "xrefs": [
+        "0x4a0530"
+      ]
+    },
+    {
+      "name": "freeTroop",
+      "string_vas": [
+        "0x630468"
+      ],
+      "xrefs": [
+        "0x4b44b4"
+      ]
+    },
+    {
+      "name": "getBlueCount",
+      "string_vas": [
+        "0x6354a8"
+      ],
+      "xrefs": [
+        "0x44f35f"
+      ]
+    },
+    {
+      "name": "getDistance",
+      "string_vas": [
+        "0x635434"
+      ],
+      "xrefs": [
+        "0x44f153"
+      ]
+    },
+    {
+      "name": "getLife",
+      "string_vas": [
+        "0x635470"
+      ],
+      "xrefs": [
+        "0x44f25a"
+      ]
+    },
+    {
+      "name": "getLimit",
+      "string_vas": [
+        "0x63541c"
+      ],
+      "xrefs": [
+        "0x44f0e9"
+      ]
+    },
+    {
+      "name": "getMode",
+      "string_vas": [
+        "0x635324"
+      ],
+      "xrefs": [
+        "0x44eb97"
+      ]
+    },
+    {
+      "name": "getTime",
+      "string_vas": [
+        "0x635414"
+      ],
+      "xrefs": [
+        "0x44f0b4"
+      ]
+    },
+    {
+      "name": "getTurn",
+      "string_vas": [
+        "0x6352ec"
+      ],
+      "xrefs": [
+        "0x44ea8e"
+      ]
+    },
+    {
+      "name": "gread",
+      "string_vas": [
+        "0x6317ec"
+      ],
+      "xrefs": [
+        "0x4a11be"
+      ]
+    },
+    {
+      "name": "gwrite",
+      "string_vas": [
+        "0x6317f4"
+      ],
+      "xrefs": [
+        "0x4a11ec"
+      ]
+    },
+    {
+      "name": "has",
+      "string_vas": [
+        "0x6353d4"
+      ],
+      "xrefs": [
+        "0x44ef1a"
+      ]
+    },
+    {
+      "name": "hideLink",
+      "string_vas": [
+        "0x631688",
+        "0x6318c4"
+      ],
+      "xrefs": [
+        "0x4a0c48",
+        "0x4a390b"
+      ]
+    },
+    {
+      "name": "hideSpot",
+      "string_vas": [
+        "0x631664"
+      ],
+      "xrefs": [
+        "0x4a0bc1"
+      ]
+    },
+    {
+      "name": "image",
+      "string_vas": [
+        "0x6240a4",
+        "0x6240ac",
+        "0x625574",
+        "0x626db8",
+        "0x626e28",
+        "0x62da60",
+        "0x62dba4",
+        "0x630e04",
+        "0x6316cc",
+        "0x634264",
+        "0x6342b8",
+        "0x635f9c",
+        "0x636030",
+        "0x63643a"
+      ],
+      "xrefs": [
+        "0x43e087",
+        "0x43ec44",
+        "0x459833",
+        "0x459d3e",
+        "0x4a0d24",
+        "0x4a6d7c",
+        "0x4eee28",
+        "0x4ef2fb",
+        "0x584bc8",
+        "0x58513e",
+        "0x59ebcb",
+        "0x5a856b",
+        "0x5a87f1"
+      ]
+    },
+    {
+      "name": "inBattle",
+      "string_vas": [
+        "0x635348"
+      ],
+      "xrefs": [
+        "0x44ec6b"
+      ]
+    },
+    {
+      "name": "inPower",
+      "string_vas": [
+        "0x635338"
+      ],
+      "xrefs": [
+        "0x44ec01"
+      ]
+    },
+    {
+      "name": "inSpot",
+      "string_vas": [
+        "0x635340"
+      ],
+      "xrefs": [
+        "0x44ec36"
+      ]
+    },
+    {
+      "name": "index",
+      "string_vas": [
+        "0x630844"
+      ],
+      "xrefs": [
+        "0x4ad7aa"
+      ]
+    },
+    {
+      "name": "isActive",
+      "string_vas": [
+        "0x635458"
+      ],
+      "xrefs": [
+        "0x44f1ef"
+      ]
+    },
+    {
+      "name": "isAlive",
+      "string_vas": [
+        "0x635258"
+      ],
+      "xrefs": [
+        "0x44e7dd"
+      ]
+    },
+    {
+      "name": "isAllDead",
+      "string_vas": [
+        "0x635408"
+      ],
+      "xrefs": [
+        "0x44f07f"
+      ]
+    },
+    {
+      "name": "isArbeit",
+      "string_vas": [
+        "0x6352cc"
+      ],
+      "xrefs": [
+        "0x44e9ef"
+      ]
+    },
+    {
+      "name": "isBlueAlive",
+      "string_vas": [
+        "0x635490"
+      ],
+      "xrefs": [
+        "0x44f2f5"
+      ]
+    },
+    {
+      "name": "isComTurn",
+      "string_vas": [
+        "0x635220"
+      ],
+      "xrefs": [
+        "0x44e6d4"
+      ]
+    },
+    {
+      "name": "isDead",
+      "string_vas": [
+        "0x635400"
+      ],
+      "xrefs": [
+        "0x44f04a"
+      ]
+    },
+    {
+      "name": "isDone",
+      "string_vas": [
+        "0x6352d8"
+      ],
+      "xrefs": [
+        "0x44ea24"
+      ]
+    },
+    {
+      "name": "isEvent",
+      "string_vas": [
+        "0x6351c4"
+      ],
+      "xrefs": [
+        "0x44e530"
+      ]
+    },
+    {
+      "name": "isFriend",
+      "string_vas": [
+        "0x6352e0"
+      ],
+      "xrefs": [
+        "0x44ea59"
+      ]
+    },
+    {
+      "name": "isGameClear",
+      "string_vas": [
+        "0x63518c"
+      ],
+      "xrefs": [
+        "0x44e3f4"
+      ]
+    },
+    {
+      "name": "isInterval",
+      "string_vas": [
+        "0x635428"
+      ],
+      "xrefs": [
+        "0x44f11e"
+      ]
+    },
+    {
+      "name": "isInvade",
+      "string_vas": [
+        "0x63537c"
+      ],
+      "xrefs": [
+        "0x44ed74"
+      ]
+    },
+    {
+      "name": "isJoin",
+      "string_vas": [
+        "0x635360"
+      ],
+      "xrefs": [
+        "0x44ecd5"
+      ]
+    },
+    {
+      "name": "isLeader",
+      "string_vas": [
+        "0x635280"
+      ],
+      "xrefs": [
+        "0x44e8b1"
+      ]
+    },
+    {
+      "name": "isLeague",
+      "string_vas": [
+        "0x635370"
+      ],
+      "xrefs": [
+        "0x44ed3f"
+      ]
+    },
+    {
+      "name": "isMaster",
+      "string_vas": [
+        "0x635260"
+      ],
+      "xrefs": [
+        "0x44e812"
+      ]
+    },
+    {
+      "name": "isNPM",
+      "string_vas": [
+        "0x6351a0"
+      ],
+      "xrefs": [
+        "0x44e45e"
+      ]
+    },
+    {
+      "name": "isNewTurn",
+      "string_vas": [
+        "0x6351d8"
+      ],
+      "xrefs": [
+        "0x44e5cb"
+      ]
+    },
+    {
+      "name": "isNext",
+      "string_vas": [
+        "0x6353a4"
+      ],
+      "xrefs": [
+        "0x44ee13"
+      ]
+    },
+    {
+      "name": "isNowSpot",
+      "string_vas": [
+        "0x6353ac"
+      ],
+      "xrefs": [
+        "0x44ee48"
+      ]
+    },
+    {
+      "name": "isPlayer",
+      "string_vas": [
+        "0x635244"
+      ],
+      "xrefs": [
+        "0x44e773"
+      ]
+    },
+    {
+      "name": "isPlayerEnd",
+      "string_vas": [
+        "0x635208"
+      ],
+      "xrefs": [
+        "0x44e66a"
+      ]
+    },
+    {
+      "name": "isPlayerTurn",
+      "string_vas": [
+        "0x6351f8"
+      ],
+      "xrefs": [
+        "0x44e635"
+      ]
+    },
+    {
+      "name": "isPostIn",
+      "string_vas": [
+        "0x6354b8"
+      ],
+      "xrefs": [
+        "0x44f394"
+      ]
+    },
+    {
+      "name": "isRedAlive",
+      "string_vas": [
+        "0x635484"
+      ],
+      "xrefs": [
+        "0x44f2c0"
+      ]
+    },
+    {
+      "name": "isRoamLeader",
+      "string_vas": [
+        "0x635298"
+      ],
+      "xrefs": [
+        "0x44e91b"
+      ]
+    },
+    {
+      "name": "isRoamer",
+      "string_vas": [
+        "0x63526c"
+      ],
+      "xrefs": [
+        "0x44e847"
+      ]
+    },
+    {
+      "name": "isSameArmy",
+      "string_vas": [
+        "0x6352c0"
+      ],
+      "xrefs": [
+        "0x44e9ba"
+      ]
+    },
+    {
+      "name": "isScenario",
+      "string_vas": [
+        "0x635214"
+      ],
+      "xrefs": [
+        "0x44e69f"
+      ]
+    },
+    {
+      "name": "isTalent",
+      "string_vas": [
+        "0x6352a8"
+      ],
+      "xrefs": [
+        "0x44e950"
+      ]
+    },
+    {
+      "name": "isVassal",
+      "string_vas": [
+        "0x63528c"
+      ],
+      "xrefs": [
+        "0x44e8e6"
+      ]
+    },
+    {
+      "name": "isWar",
+      "string_vas": [
+        "0x635368"
+      ],
+      "xrefs": [
+        "0x44ed0a"
+      ]
+    },
+    {
+      "name": "isWatching",
+      "string_vas": [
+        "0x6351a8"
+      ],
+      "xrefs": [
+        "0x44e494"
+      ]
+    },
+    {
+      "name": "isWorld",
+      "string_vas": [
+        "0x6351b4"
+      ],
+      "xrefs": [
+        "0x44e4c5"
+      ]
+    },
+    {
+      "name": "istoWorld",
+      "string_vas": [
+        "0x635238"
+      ],
+      "xrefs": [
+        "0x44e73e"
+      ]
+    },
+    {
+      "name": "linkEscape",
+      "string_vas": [
+        "0x63167c"
+      ],
+      "xrefs": [
+        "0x4a0c1e"
+      ]
+    },
+    {
+      "name": "linkSpot",
+      "string_vas": [
+        "0x631670",
+        "0x631854",
+        "0x63189c",
+        "0x6318b0"
+      ],
+      "xrefs": [
+        "0x4a0bef",
+        "0x4a3125",
+        "0x4a34c1",
+        "0x4a3556"
+      ]
+    },
+    {
+      "name": "locate",
+      "string_vas": [
+        "0x6315d8"
+      ],
+      "xrefs": [
+        "0x4a0943"
+      ]
+    },
+    {
+      "name": "loopBGM",
+      "string_vas": [
+        "0x631618"
+      ],
+      "xrefs": [
+        "0x4a0aad"
+      ]
+    },
+    {
+      "name": "mod",
+      "string_vas": [
+        "0x6306bc"
+      ],
+      "xrefs": [
+        "0x4ad116"
+      ]
+    },
+    {
+      "name": "moveTroop",
+      "string_vas": [
+        "0x63040c",
+        "0x63054c"
+      ],
+      "xrefs": [
+        "0x4b437b",
+        "0x4b4f52"
+      ]
+    },
+    {
+      "name": "moveTroopFix",
+      "string_vas": [
+        "0x630418"
+      ],
+      "xrefs": [
+        "0x4b43aa"
+      ]
+    },
+    {
+      "name": "msg",
+      "string_vas": [
+        "0x627cdc",
+        "0x62b1d4",
+        "0x62b1e8",
+        "0x62bf3c",
+        "0x62bf50",
+        "0x62c9d8",
+        "0x6314d8",
+        "0x63198c",
+        "0x6319a0"
+      ],
+      "xrefs": [
+        "0x4a0401",
+        "0x4a550f",
+        "0x4a552e",
+        "0x505886",
+        "0x51b2ff",
+        "0x51b311",
+        "0x52bdd5",
+        "0x52be8c",
+        "0x57c09b"
+      ]
+    },
+    {
+      "name": "mul",
+      "string_vas": [
+        "0x6306b4"
+      ],
+      "xrefs": [
+        "0x4ad0ba"
+      ]
+    },
+    {
+      "name": "next",
+      "string_vas": [
+        "0x6248cc",
+        "0x6314bc"
+      ],
+      "xrefs": [
+        "0x4a0377",
+        "0x59a63e"
+      ]
+    },
+    {
+      "name": "per",
+      "string_vas": [
+        "0x6306c0"
+      ],
+      "xrefs": [
+        "0x4ad144"
+      ]
+    },
+    {
+      "name": "picture",
+      "string_vas": [
+        "0x624040",
+        "0x626e48",
+        "0x62b12c",
+        "0x630214",
+        "0x6302b8",
+        "0x6302c8",
+        "0x6302d8",
+        "0x6316dc",
+        "0x6318f8",
+        "0x6366b4",
+        "0x6366c4",
+        "0x636764"
+      ],
+      "xrefs": [
+        "0x42126c",
+        "0x42129c",
+        "0x4223c3",
+        "0x4a0d7d",
+        "0x4a3eb6",
+        "0x4b683e",
+        "0x4b70be",
+        "0x4b71cb",
+        "0x4b734f",
+        "0x52b8d8",
+        "0x5853a4",
+        "0x5b0cef"
+      ]
+    },
+    {
+      "name": "picture2",
+      "string_vas": [
+        "0x6316e4",
+        "0x6318ec"
+      ],
+      "xrefs": [
+        "0x4a0da7",
+        "0x4a3e91"
+      ]
+    },
+    {
+      "name": "playBGM",
+      "string_vas": [
+        "0x6315f0"
+      ],
+      "xrefs": [
+        "0x4a09cd"
+      ]
+    },
+    {
+      "name": "playSE",
+      "string_vas": [
+        "0x6315e8"
+      ],
+      "xrefs": [
+        "0x4a099f"
+      ]
+    },
+    {
+      "name": "playWorld",
+      "string_vas": [
+        "0x631620"
+      ],
+      "xrefs": [
+        "0x4a0adb"
+      ]
+    },
+    {
+      "name": "ptest",
+      "string_vas": [
+        "0x6354dc"
+      ],
+      "xrefs": [
+        "0x44f433"
+      ]
+    },
+    {
+      "name": "pushBaseLevel",
+      "string_vas": [
+        "0x630b5c"
+      ],
+      "xrefs": [
+        "0x4adfd1"
+      ]
+    },
+    {
+      "name": "pushCapa",
+      "string_vas": [
+        "0x630744"
+      ],
+      "xrefs": [
+        "0x4ad369"
+      ]
+    },
+    {
+      "name": "pushCastle",
+      "string_vas": [
+        "0x630738"
+      ],
+      "xrefs": [
+        "0x4ad33b"
+      ]
+    },
+    {
+      "name": "pushCountPower",
+      "string_vas": [
+        "0x630704"
+      ],
+      "xrefs": [
+        "0x4ad283"
+      ]
+    },
+    {
+      "name": "pushDiplo",
+      "string_vas": [
+        "0x630750"
+      ],
+      "xrefs": [
+        "0x4ad397"
+      ]
+    },
+    {
+      "name": "pushGain",
+      "string_vas": [
+        "0x63072c"
+      ],
+      "xrefs": [
+        "0x4ad30d"
+      ]
+    },
+    {
+      "name": "pushLevel",
+      "string_vas": [
+        "0x630764"
+      ],
+      "xrefs": [
+        "0x4ad3f3"
+      ]
+    },
+    {
+      "name": "pushLimit",
+      "string_vas": [
+        "0x6307d8"
+      ],
+      "xrefs": [
+        "0x4ad591"
+      ]
+    },
+    {
+      "name": "pushMerits",
+      "string_vas": [
+        "0x63077c"
+      ],
+      "xrefs": [
+        "0x4ad44f"
+      ]
+    },
+    {
+      "name": "pushMoney",
+      "string_vas": [
+        "0x6306f8"
+      ],
+      "xrefs": [
+        "0x4ad255"
+      ]
+    },
+    {
+      "name": "pushRand",
+      "string_vas": [
+        "0x6306e0"
+      ],
+      "xrefs": [
+        "0x4ad1f9"
+      ]
+    },
+    {
+      "name": "pushRand2",
+      "string_vas": [
+        "0x6306ec"
+      ],
+      "xrefs": [
+        "0x4ad227"
+      ]
+    },
+    {
+      "name": "pushRank",
+      "string_vas": [
+        "0x630788"
+      ],
+      "xrefs": [
+        "0x4ad47d"
+      ]
+    },
+    {
+      "name": "pushSex",
+      "string_vas": [
+        "0x63075c"
+      ],
+      "xrefs": [
+        "0x4ad3c5"
+      ]
+    },
+    {
+      "name": "pushSpot",
+      "string_vas": [
+        "0x630714"
+      ],
+      "xrefs": [
+        "0x4ad2b1"
+      ]
+    },
+    {
+      "name": "pushStatus",
+      "string_vas": [
+        "0x6307a0"
+      ],
+      "xrefs": [
+        "0x4ad4d9"
+      ]
+    },
+    {
+      "name": "pushTrain",
+      "string_vas": [
+        "0x630b6c"
+      ],
+      "xrefs": [
+        "0x4adfff"
+      ]
+    },
+    {
+      "name": "pushTrainUp",
+      "string_vas": [
+        "0x630b78"
+      ],
+      "xrefs": [
+        "0x4ae02d"
+      ]
+    },
+    {
+      "name": "pushTurn",
+      "string_vas": [
+        "0x6306d4"
+      ],
+      "xrefs": [
+        "0x4ad1cb"
+      ]
+    },
+    {
+      "name": "pushv",
+      "string_vas": [
+        "0x6306c4"
+      ],
+      "xrefs": [
+        "0x4ad172"
+      ]
+    },
+    {
+      "name": "rand",
+      "string_vas": [
+        "0x6351d0"
+      ],
+      "xrefs": [
+        "0x44e596"
+      ]
+    },
+    {
+      "name": "reloadMenu",
+      "string_vas": [
+        "0x631770"
+      ],
+      "xrefs": [
+        "0x4a0fc4"
+      ]
+    },
+    {
+      "name": "removeSkill",
+      "string_vas": [
+        "0x631088"
+      ],
+      "xrefs": [
+        "0x4a76cb"
+      ]
+    },
+    {
+      "name": "removeSpot",
+      "string_vas": [
+        "0x630ea8"
+      ],
+      "xrefs": [
+        "0x4a706b"
+      ]
+    },
+    {
+      "name": "removeTroop",
+      "string_vas": [
+        "0x6303f4",
+        "0x630540"
+      ],
+      "xrefs": [
+        "0x4b4322",
+        "0x4b4dac"
+      ]
+    },
+    {
+      "name": "resetEnemyPower",
+      "string_vas": [
+        "0x630e6c"
+      ],
+      "xrefs": [
+        "0x4a6f85"
+      ]
+    },
+    {
+      "name": "resetLeague",
+      "string_vas": [
+        "0x630e20",
+        "0x631198"
+      ],
+      "xrefs": [
+        "0x4a6e7b",
+        "0x4a7b76"
+      ]
+    },
+    {
+      "name": "resetTruce",
+      "string_vas": [
+        "0x630e38",
+        "0x6311e0"
+      ],
+      "xrefs": [
+        "0x4a6ed4",
+        "0x4a7f44"
+      ]
+    },
+    {
+      "name": "resetWorldMusic",
+      "string_vas": [
+        "0x631648"
+      ],
+      "xrefs": [
+        "0x4a0b65"
+      ]
+    },
+    {
+      "name": "retreatTroop",
+      "string_vas": [
+        "0x6304bc"
+      ],
+      "xrefs": [
+        "0x4b45e9"
+      ]
+    },
+    {
+      "name": "return",
+      "string_vas": [
+        "0x631484"
+      ],
+      "xrefs": [
+        "0x4a0263"
+      ]
+    },
+    {
+      "name": "roamUnit",
+      "string_vas": [
+        "0x630ed8",
+        "0x631250"
+      ],
+      "xrefs": [
+        "0x4a7123",
+        "0x4a9a6e"
+      ]
+    },
+    {
+      "name": "routine",
+      "string_vas": [
+        "0x6313f4"
+      ],
+      "xrefs": [
+        "0x4a0235"
+      ]
+    },
+    {
+      "name": "save",
+      "string_vas": [
+        "0x62a6f0",
+        "0x62a700",
+        "0x62a715",
+        "0x62a71f",
+        "0x62f34c",
+        "0x62f378",
+        "0x62f383",
+        "0x6314b4"
+      ],
+      "xrefs": [
+        "0x4a0349",
+        "0x4cf552",
+        "0x538c03",
+        "0x538da2"
+      ]
+    },
+    {
+      "name": "scroll",
+      "string_vas": [
+        "0x6302a8",
+        "0x6315c8",
+        "0x63184c"
+      ],
+      "xrefs": [
+        "0x4a08ea",
+        "0x4a2915",
+        "0x4b6f69"
+      ]
+    },
+    {
+      "name": "scroll2",
+      "string_vas": [
+        "0x6315d0"
+      ],
+      "xrefs": [
+        "0x4a0919"
+      ]
+    },
+    {
+      "name": "select",
+      "string_vas": [
+        "0x62bf14",
+        "0x62ca14",
+        "0x62ca9c",
+        "0x631514"
+      ],
+      "xrefs": [
+        "0x4a055e",
+        "0x505912",
+        "0x506157",
+        "0x51b20a"
+      ]
+    },
+    {
+      "name": "set",
+      "string_vas": [
+        "0x6306a8",
+        "0x6383d1",
+        "0x6383ea",
+        "0x638401"
+      ],
+      "xrefs": [
+        "0x4ad030"
+      ]
+    },
+    {
+      "name": "setArbeit",
+      "string_vas": [
+        "0x630e7c"
+      ],
+      "xrefs": [
+        "0x4a6fb3"
+      ]
+    },
+    {
+      "name": "setBaseLevel",
+      "string_vas": [
+        "0x63116c"
+      ],
+      "xrefs": [
+        "0x4a7a27"
+      ]
+    },
+    {
+      "name": "setCapa",
+      "string_vas": [
+        "0x6310f4"
+      ],
+      "xrefs": [
+        "0x4a788f"
+      ]
+    },
+    {
+      "name": "setCastle",
+      "string_vas": [
+        "0x6310e0"
+      ],
+      "xrefs": [
+        "0x4a7836"
+      ]
+    },
+    {
+      "name": "setDiplo",
+      "string_vas": [
+        "0x630e50"
+      ],
+      "xrefs": [
+        "0x4a6f2d"
+      ]
+    },
+    {
+      "name": "setDone",
+      "string_vas": [
+        "0x6310ac"
+      ],
+      "xrefs": [
+        "0x4a7752"
+      ]
+    },
+    {
+      "name": "setEnemyPower",
+      "string_vas": [
+        "0x630e5c"
+      ],
+      "xrefs": [
+        "0x4a6f57"
+      ]
+    },
+    {
+      "name": "setGain",
+      "string_vas": [
+        "0x6310cc"
+      ],
+      "xrefs": [
+        "0x4a77dd"
+      ]
+    },
+    {
+      "name": "setGameClear",
+      "string_vas": [
+        "0x6317b4"
+      ],
+      "xrefs": [
+        "0x4a10aa"
+      ]
+    },
+    {
+      "name": "setLeague",
+      "string_vas": [
+        "0x630e0c",
+        "0x63118c",
+        "0x6311a4",
+        "0x6311b0",
+        "0x6311bc",
+        "0x6311c8"
+      ],
+      "xrefs": [
+        "0x4a6e45",
+        "0x4a7b40",
+        "0x4a7be6",
+        "0x4a7cfd",
+        "0x4a7dc3",
+        "0x4a7e94"
+      ]
+    },
+    {
+      "name": "setLevel",
+      "string_vas": [
+        "0x631040"
+      ],
+      "xrefs": [
+        "0x4a75ba"
+      ]
+    },
+    {
+      "name": "setLimit",
+      "string_vas": [
+        "0x6303d0",
+        "0x63050c",
+        "0x630518"
+      ],
+      "xrefs": [
+        "0x4b429b",
+        "0x4b4834",
+        "0x4b489b"
+      ]
+    },
+    {
+      "name": "setMoney",
+      "string_vas": [
+        "0x630ffc"
+      ],
+      "xrefs": [
+        "0x4a74ad"
+      ]
+    },
+    {
+      "name": "setPM",
+      "string_vas": [
+        "0x630b4c"
+      ],
+      "xrefs": [
+        "0x4adf75"
+      ]
+    },
+    {
+      "name": "setPowerHome",
+      "string_vas": [
+        "0x63117c"
+      ],
+      "xrefs": [
+        "0x4a7a51"
+      ]
+    },
+    {
+      "name": "setStatus",
+      "string_vas": [
+        "0x6310a0"
+      ],
+      "xrefs": [
+        "0x4a7728"
+      ]
+    },
+    {
+      "name": "setTraining",
+      "string_vas": [
+        "0x630fc4"
+      ],
+      "xrefs": [
+        "0x4a73fb"
+      ]
+    },
+    {
+      "name": "setTrainingUp",
+      "string_vas": [
+        "0x630fe0"
+      ],
+      "xrefs": [
+        "0x4a7454"
+      ]
+    },
+    {
+      "name": "setTruce",
+      "string_vas": [
+        "0x630e2c",
+        "0x6311d4",
+        "0x6311ec",
+        "0x6311f8",
+        "0x631204",
+        "0x631210"
+      ],
+      "xrefs": [
+        "0x4a6ea5",
+        "0x4a7f0e",
+        "0x4a7fb4",
+        "0x4a80cb",
+        "0x4a8191",
+        "0x4a8262"
+      ]
+    },
+    {
+      "name": "setWorldMusic",
+      "string_vas": [
+        "0x631638"
+      ],
+      "xrefs": [
+        "0x4a0b37"
+      ]
+    },
+    {
+      "name": "setud",
+      "string_vas": [
+        "0x63067c"
+      ],
+      "xrefs": [
+        "0x4acf15"
+      ]
+    },
+    {
+      "name": "setv",
+      "string_vas": [
+        "0x6307ec"
+      ],
+      "xrefs": [
+        "0x4ad5ed"
+      ]
+    },
+    {
+      "name": "shake",
+      "string_vas": [
+        "0x6249fc",
+        "0x624a0c",
+        "0x631588"
+      ],
+      "xrefs": [
+        "0x4a07d9",
+        "0x59ad4b",
+        "0x59adcf"
+      ]
+    },
+    {
+      "name": "shiftTroop",
+      "string_vas": [
+        "0x630444",
+        "0x630564"
+      ],
+      "xrefs": [
+        "0x4b442d",
+        "0x4b5759"
+      ]
+    },
+    {
+      "name": "showSpot",
+      "string_vas": [
+        "0x631658"
+      ],
+      "xrefs": [
+        "0x4a0b93"
+      ]
+    },
+    {
+      "name": "shuffle",
+      "string_vas": [
+        "0x630830"
+      ],
+      "xrefs": [
+        "0x4ad751"
+      ]
+    },
+    {
+      "name": "skillTroop",
+      "string_vas": [
+        "0x6304d8"
+      ],
+      "xrefs": [
+        "0x4b4645"
+      ]
+    },
+    {
+      "name": "sleepTroop",
+      "string_vas": [
+        "0x630498"
+      ],
+      "xrefs": [
+        "0x4b4566"
+      ]
+    },
+    {
+      "name": "smoveTroop",
+      "string_vas": [
+        "0x630428",
+        "0x630558"
+      ],
+      "xrefs": [
+        "0x4b43d4",
+        "0x4b52bb"
+      ]
+    },
+    {
+      "name": "speedTroop",
+      "string_vas": [
+        "0x6304cc"
+      ],
+      "xrefs": [
+        "0x4b4617"
+      ]
+    },
+    {
+      "name": "spotmark",
+      "string_vas": [
+        "0x6316a0"
+      ],
+      "xrefs": [
+        "0x4a0ca1"
+      ]
+    },
+    {
+      "name": "stopBGM",
+      "string_vas": [
+        "0x631600"
+      ],
+      "xrefs": [
+        "0x4a0a26"
+      ]
+    },
+    {
+      "name": "storeAliveUnit",
+      "string_vas": [
+        "0x630ae8"
+      ],
+      "xrefs": [
+        "0x4ade36"
+      ]
+    },
+    {
+      "name": "storeAllPower",
+      "string_vas": [
+        "0x630a0c"
+      ],
+      "xrefs": [
+        "0x4adc17"
+      ]
+    },
+    {
+      "name": "storeAllSpot",
+      "string_vas": [
+        "0x630a1c"
+      ],
+      "xrefs": [
+        "0x4adc45"
+      ]
+    },
+    {
+      "name": "storeAllTalent",
+      "string_vas": [
+        "0x630a50"
+      ],
+      "xrefs": [
+        "0x4adccf"
+      ]
+    },
+    {
+      "name": "storeAttackPower",
+      "string_vas": [
+        "0x630a98"
+      ],
+      "xrefs": [
+        "0x4add85"
+      ]
+    },
+    {
+      "name": "storeBaseClassOfUnit",
+      "string_vas": [
+        "0x6309ac",
+        "0x630c58"
+      ],
+      "xrefs": [
+        "0x4adb39",
+        "0x4b1b17"
+      ]
+    },
+    {
+      "name": "storeBattleSpot",
+      "string_vas": [
+        "0x630a74"
+      ],
+      "xrefs": [
+        "0x4add2c"
+      ]
+    },
+    {
+      "name": "storeClassOfUnit",
+      "string_vas": [
+        "0x630998"
+      ],
+      "xrefs": [
+        "0x4adb0a"
+      ]
+    },
+    {
+      "name": "storeComPower",
+      "string_vas": [
+        "0x6308b4"
+      ],
+      "xrefs": [
+        "0x4ad8e6"
+      ]
+    },
+    {
+      "name": "storeDefensePower",
+      "string_vas": [
+        "0x630ac0"
+      ],
+      "xrefs": [
+        "0x4addde"
+      ]
+    },
+    {
+      "name": "storeIndexVar",
+      "string_vas": [
+        "0x630858"
+      ],
+      "xrefs": [
+        "0x4ad803"
+      ]
+    },
+    {
+      "name": "storeLeaderOfPower",
+      "string_vas": [
+        "0x630910"
+      ],
+      "xrefs": [
+        "0x4ad9c8"
+      ]
+    },
+    {
+      "name": "storeLeaderOfSpot",
+      "string_vas": [
+        "0x630924"
+      ],
+      "xrefs": [
+        "0x4ad9f6"
+      ]
+    },
+    {
+      "name": "storeMasterOfPower",
+      "string_vas": [
+        "0x630984"
+      ],
+      "xrefs": [
+        "0x4adadc"
+      ]
+    },
+    {
+      "name": "storeMemberOfUnit",
+      "string_vas": [
+        "0x630970"
+      ],
+      "xrefs": [
+        "0x4adaae"
+      ]
+    },
+    {
+      "name": "storeNeutralSpot",
+      "string_vas": [
+        "0x630a2c"
+      ],
+      "xrefs": [
+        "0x4adc73"
+      ]
+    },
+    {
+      "name": "storeNextSpot",
+      "string_vas": [
+        "0x630a40"
+      ],
+      "xrefs": [
+        "0x4adca1"
+      ]
+    },
+    {
+      "name": "storeNowPower",
+      "string_vas": [
+        "0x6309fc"
+      ],
+      "xrefs": [
+        "0x4adbe9"
+      ]
+    },
+    {
+      "name": "storePlayerPower",
+      "string_vas": [
+        "0x63088c"
+      ],
+      "xrefs": [
+        "0x4ad889"
+      ]
+    },
+    {
+      "name": "storePlayerUnit",
+      "string_vas": [
+        "0x63087c"
+      ],
+      "xrefs": [
+        "0x4ad85b"
+      ]
+    },
+    {
+      "name": "storePowerOfForce",
+      "string_vas": [
+        "0x6309e8"
+      ],
+      "xrefs": [
+        "0x4adbbb"
+      ]
+    },
+    {
+      "name": "storePowerOfSpot",
+      "string_vas": [
+        "0x6308c4"
+      ],
+      "xrefs": [
+        "0x4ad910"
+      ]
+    },
+    {
+      "name": "storePowerOfUnit",
+      "string_vas": [
+        "0x6308d8"
+      ],
+      "xrefs": [
+        "0x4ad93e"
+      ]
+    },
+    {
+      "name": "storeRaceOfUnit",
+      "string_vas": [
+        "0x6309c4",
+        "0x630c70"
+      ],
+      "xrefs": [
+        "0x4adb63",
+        "0x4b1b46"
+      ]
+    },
+    {
+      "name": "storeRectUnit",
+      "string_vas": [
+        "0x630b18"
+      ],
+      "xrefs": [
+        "0x4adebd"
+      ]
+    },
+    {
+      "name": "storeRoamUnitOfSpot",
+      "string_vas": [
+        "0x63095c"
+      ],
+      "xrefs": [
+        "0x4ada80"
+      ]
+    },
+    {
+      "name": "storeSkillOfUnit",
+      "string_vas": [
+        "0x6309d4"
+      ],
+      "xrefs": [
+        "0x4adb8d"
+      ]
+    },
+    {
+      "name": "storeSkillset",
+      "string_vas": [
+        "0x630b08"
+      ],
+      "xrefs": [
+        "0x4ade8f"
+      ]
+    },
+    {
+      "name": "storeSpotOfPower",
+      "string_vas": [
+        "0x6308ec"
+      ],
+      "xrefs": [
+        "0x4ad96c"
+      ]
+    },
+    {
+      "name": "storeSpotOfUnit",
+      "string_vas": [
+        "0x630900"
+      ],
+      "xrefs": [
+        "0x4ad99a"
+      ]
+    },
+    {
+      "name": "storeUnitOfPower",
+      "string_vas": [
+        "0x630938"
+      ],
+      "xrefs": [
+        "0x4ada24"
+      ]
+    },
+    {
+      "name": "storeUnitOfSpot",
+      "string_vas": [
+        "0x63094c"
+      ],
+      "xrefs": [
+        "0x4ada52"
+      ]
+    },
+    {
+      "name": "storeud",
+      "string_vas": [
+        "0x6305f4"
+      ],
+      "xrefs": [
+        "0x4acf4d"
+      ]
+    },
+    {
+      "name": "sub",
+      "string_vas": [
+        "0x6306b0"
+      ],
+      "xrefs": [
+        "0x4ad08c"
+      ]
+    },
+    {
+      "name": "subVar",
+      "string_vas": [
+        "0x630814"
+      ],
+      "xrefs": [
+        "0x4ad6ce"
+      ]
+    },
+    {
+      "name": "subv",
+      "string_vas": [
+        "0x63080c"
+      ],
+      "xrefs": [
+        "0x4ad69f"
+      ]
+    },
+    {
+      "name": "talk",
+      "string_vas": [
+        "0x62b124",
+        "0x62c9dc",
+        "0x62ca84",
+        "0x6314e4"
+      ],
+      "xrefs": [
+        "0x4a045a",
+        "0x50589b",
+        "0x506112",
+        "0x52b885"
+      ]
+    },
+    {
+      "name": "terminate",
+      "string_vas": [
+        "0x6314a8"
+      ],
+      "xrefs": [
+        "0x4a031b"
+      ]
+    },
+    {
+      "name": "title",
+      "string_vas": [
+        "0x628f88",
+        "0x629030",
+        "0x62b594",
+        "0x631548",
+        "0x631838"
+      ],
+      "xrefs": [
+        "0x4a069a",
+        "0x4a2246",
+        "0x522870",
+        "0x5646d1",
+        "0x5679a4"
+      ]
+    },
+    {
+      "name": "title2",
+      "string_vas": [
+        "0x631550"
+      ],
+      "xrefs": [
+        "0x4a06c9"
+      ]
+    },
+    {
+      "name": "unctrlTroop",
+      "string_vas": [
+        "0x6304a4",
+        "0x63059c"
+      ],
+      "xrefs": [
+        "0x4b4590",
+        "0x4b5d20"
+      ]
+    },
+    {
+      "name": "unionPower",
+      "string_vas": [
+        "0x630efc"
+      ],
+      "xrefs": [
+        "0x4a71aa"
+      ]
+    },
+    {
+      "name": "volume",
+      "string_vas": [
+        "0x62b114",
+        "0x631610",
+        "0x632dd0",
+        "0x632dec",
+        "0x632e00"
+      ],
+      "xrefs": [
+        "0x48f2e8",
+        "0x48f395",
+        "0x48f416",
+        "0x4a0a7f",
+        "0x52b560"
+      ]
+    },
+    {
+      "name": "wait",
+      "string_vas": [
+        "0x6302b0",
+        "0x6314c4",
+        "0x6362a4",
+        "0x6362b4"
+      ],
+      "xrefs": [
+        "0x4346d9",
+        "0x43470c",
+        "0x4a03a5",
+        "0x4b6ff4"
+      ]
+    },
+    {
+      "name": "win",
+      "string_vas": [
+        "0x63148c"
+      ],
+      "xrefs": [
+        "0x4a02ed"
+      ]
+    },
+    {
+      "name": "yet",
+      "string_vas": [
+        "0x6351cc"
+      ],
+      "xrefs": [
+        "0x44e561"
+      ]
+    }
+  ],
+  "xref_bins": [
+    [
+      "0x4ad000",
+      67
+    ],
+    [
+      "0x4a7000",
+      58
+    ],
+    [
+      "0x4a0000",
+      49
+    ],
+    [
+      "0x44e000",
+      43
+    ],
+    [
+      "0x4b4000",
+      22
+    ],
+    [
+      "0x44f000",
+      15
+    ],
+    [
+      "0x4a6000",
+      11
+    ],
+    [
+      "0x432000",
+      10
+    ],
+    [
+      "0x4ac000",
+      7
+    ],
+    [
+      "0x4a1000",
+      6
+    ],
+    [
+      "0x4a3000",
+      6
+    ],
+    [
+      "0x48f000",
+      5
+    ],
+    [
+      "0x4a8000",
+      5
+    ],
+    [
+      "0x505000",
+      5
+    ],
+    [
+      "0x52b000",
+      5
+    ],
+    [
+      "0x41e000",
+      4
+    ],
+    [
+      "0x48d000",
+      4
+    ],
+    [
+      "0x4aa000",
+      4
+    ],
+    [
+      "0x4b5000",
+      4
+    ],
+    [
+      "0x4b7000",
+      4
+    ],
+    [
+      "0x59a000",
+      4
+    ],
+    [
+      "0x43e000",
+      3
+    ],
+    [
+      "0x43f000",
+      3
+    ],
+    [
+      "0x4a5000",
+      3
+    ],
+    [
+      "0x4b6000",
+      3
+    ],
+    [
+      "0x506000",
+      3
+    ],
+    [
+      "0x51b000",
+      3
+    ],
+    [
+      "0x421000",
+      2
+    ],
+    [
+      "0x434000",
+      2
+    ],
+    [
+      "0x441000",
+      2
+    ],
+    [
+      "0x459000",
+      2
+    ],
+    [
+      "0x4a2000",
+      2
+    ],
+    [
+      "0x4ab000",
+      2
+    ],
+    [
+      "0x4ae000",
+      2
+    ],
+    [
+      "0x4b1000",
+      2
+    ],
+    [
+      "0x4ef000",
+      2
+    ],
+    [
+      "0x4f6000",
+      2
+    ],
+    [
+      "0x538000",
+      2
+    ],
+    [
+      "0x544000",
+      2
+    ],
+    [
+      "0x564000",
+      2
+    ],
+    [
+      "0x578000",
+      2
+    ],
+    [
+      "0x585000",
+      2
+    ],
+    [
+      "0x5a8000",
+      2
+    ],
+    [
+      "0x422000",
+      1
+    ],
+    [
+      "0x447000",
+      1
+    ],
+    [
+      "0x48a000",
+      1
+    ],
+    [
+      "0x48c000",
+      1
+    ],
+    [
+      "0x492000",
+      1
+    ],
+    [
+      "0x49d000",
+      1
+    ],
+    [
+      "0x4a9000",
+      1
+    ],
+    [
+      "0x4cf000",
+      1
+    ],
+    [
+      "0x4ee000",
+      1
+    ],
+    [
+      "0x4f1000",
+      1
+    ],
+    [
+      "0x504000",
+      1
+    ],
+    [
+      "0x50e000",
+      1
+    ],
+    [
+      "0x522000",
+      1
+    ],
+    [
+      "0x524000",
+      1
+    ],
+    [
+      "0x527000",
+      1
+    ],
+    [
+      "0x55a000",
+      1
+    ],
+    [
+      "0x567000",
+      1
+    ],
+    [
+      "0x57c000",
+      1
+    ],
+    [
+      "0x583000",
+      1
+    ],
+    [
+      "0x584000",
+      1
+    ],
+    [
+      "0x592000",
+      1
+    ],
+    [
+      "0x59e000",
+      1
+    ],
+    [
+      "0x5b0000",
+      1
+    ]
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "preflight": {
+    "pid": 32468,
+    "sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+    "load_base": "0x00270000",
+    "Task_header_bytes": 128,
+    "Task_vector_bytes": 1212,
+    "sides": [
+      {
+        "slot": 0,
+        "bytes": 84
+      },
+      {
+        "slot": 1,
+        "bytes": 84
+      },
+      {
+        "slot": 2,
+        "bytes": 84
+      }
+    ],
+    "initial": {
+      "mode": 1,
+      "active": 0,
+      "attack_count": 0,
+      "battlefield_ptr": "0x00000000",
+      "world_mode": 0,
+      "scene_type": 1,
+      "frame_counter": 790,
+      "pause": 0,
+      "task_active_start_ptr": "0x1E60E020",
+      "task_active_end_ptr": "0x1E60E4DC"
+    },
+    "native_memory_writes": 0
+  },
+  "code_sha256": {
+    "battle_user_recorder_core_20261022.py": "DE4D60A4697E104BF4D7A75FE30DF9640089313D9AF40BB2A4703F593785CACC",
+    "battle_native_detached_capture_v7_20261022.py": "C8E590CB1ECD69CD18E30164F7DEA74BC6DB29D80C9FCB57991A3F567053126F",
+    "battle_native_war_tree_decoder_v5_20261021.py": "0DD7C9EBD0BF97E4BA421FEC02909A44A9B6ABDA4A3538239B479530D909EB6A",
+    "battle_native_readonly_live_probe_stage6_20261021.py": "E64634E6B18DCFD06CFE9740F0C80B7AACD8FA8CAD8D686288C6DD02ED32F685"
+  }
+}

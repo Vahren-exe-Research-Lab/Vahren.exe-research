@@ -1,0 +1,194 @@
+{
+  "id": "BRIDGE-STAGE7-NATIVE-FINISH-WRITE-SET-20261021",
+  "original_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "status": "STATIC ORIGINAL PE / DIRECT EBP DISP ONLY / GAME NOT RUN",
+  "original_function": "0x00493630",
+  "Ghidra_function_bytes": 11376,
+  "decoded_instructions": 3098,
+  "direct_GameEvent_large_offset_access_count": 97,
+  "direct_GameEvent_large_offset_write_count": 9,
+  "direct_GameEvent_large_offset_read_count": 88,
+  "EBP_register_modification_candidates": [
+    {
+      "va": "0x0049366B",
+      "asm": "mov ebp, dword ptr [esp + 0x130]"
+    },
+    {
+      "va": "0x0049478B",
+      "asm": "mov ebp, dword ptr [esp + 0x50]"
+    },
+    {
+      "va": "0x004947D5",
+      "asm": "mov ebp, dword ptr [esp + 0x60]"
+    },
+    {
+      "va": "0x0049483F",
+      "asm": "pop ebp"
+    }
+  ],
+  "writes_by_field": {
+    "0x001EEC3C": {
+      "writes": 1,
+      "sites": [
+        "0x004936D9"
+      ],
+      "phase_counts": {
+        "pre_result_guard": 1
+      }
+    },
+    "0x001EEC44": {
+      "writes": 1,
+      "sites": [
+        "0x00493746"
+      ],
+      "phase_counts": {
+        "pre_result_guard": 1
+      }
+    },
+    "0x001EEC48": {
+      "writes": 1,
+      "sites": [
+        "0x0049374C"
+      ],
+      "phase_counts": {
+        "pre_result_guard": 1
+      }
+    },
+    "0x001EED40": {
+      "writes": 1,
+      "sites": [
+        "0x00493752"
+      ],
+      "phase_counts": {
+        "pre_result_guard": 1
+      }
+    },
+    "0x001EED42": {
+      "writes": 1,
+      "sites": [
+        "0x00493759"
+      ],
+      "phase_counts": {
+        "pre_result_guard": 1
+      }
+    },
+    "0x001EEDC8": {
+      "writes": 1,
+      "sites": [
+        "0x0049378E"
+      ],
+      "phase_counts": {
+        "pre_result_guard": 1
+      }
+    },
+    "0x001EEDD8": {
+      "writes": 1,
+      "sites": [
+        "0x004937C3"
+      ],
+      "phase_counts": {
+        "pre_result_guard": 1
+      }
+    },
+    "0x001EEDBC": {
+      "writes": 1,
+      "sites": [
+        "0x004937E7"
+      ],
+      "phase_counts": {
+        "pre_result_guard": 1
+      }
+    },
+    "0x001EEC04": {
+      "writes": 1,
+      "sites": [
+        "0x00494064"
+      ],
+      "phase_counts": {
+        "pre_result_guard": 1
+      }
+    }
+  },
+  "direct_writes": [
+    {
+      "va": "0x004936D9",
+      "off": "0x001EEC3C",
+      "width_bytes": 4,
+      "operation": "mov",
+      "asm": "mov dword ptr [ebp + 0x1eec3c], eax",
+      "phase": "pre_result_guard"
+    },
+    {
+      "va": "0x00493746",
+      "off": "0x001EEC44",
+      "width_bytes": 1,
+      "operation": "mov",
+      "asm": "mov byte ptr [ebp + 0x1eec44], bl",
+      "phase": "pre_result_guard"
+    },
+    {
+      "va": "0x0049374C",
+      "off": "0x001EEC48",
+      "width_bytes": 4,
+      "operation": "mov",
+      "asm": "mov dword ptr [ebp + 0x1eec48], ebx",
+      "phase": "pre_result_guard"
+    },
+    {
+      "va": "0x00493752",
+      "off": "0x001EED40",
+      "width_bytes": 2,
+      "operation": "mov",
+      "asm": "mov word ptr [ebp + 0x1eed40], bx",
+      "phase": "pre_result_guard"
+    },
+    {
+      "va": "0x00493759",
+      "off": "0x001EED42",
+      "width_bytes": 1,
+      "operation": "mov",
+      "asm": "mov byte ptr [ebp + 0x1eed42], bl",
+      "phase": "pre_result_guard"
+    },
+    {
+      "va": "0x0049378E",
+      "off": "0x001EEDC8",
+      "width_bytes": 4,
+      "operation": "mov",
+      "asm": "mov dword ptr [ebp + 0x1eedc8], edi",
+      "phase": "pre_result_guard"
+    },
+    {
+      "va": "0x004937C3",
+      "off": "0x001EEDD8",
+      "width_bytes": 4,
+      "operation": "mov",
+      "asm": "mov dword ptr [ebp + 0x1eedd8], edi",
+      "phase": "pre_result_guard"
+    },
+    {
+      "va": "0x004937E7",
+      "off": "0x001EEDBC",
+      "width_bytes": 4,
+      "operation": "mov",
+      "asm": "mov dword ptr [ebp + 0x1eedbc], ebx",
+      "phase": "pre_result_guard"
+    },
+    {
+      "va": "0x00494064",
+      "off": "0x001EEC04",
+      "width_bytes": 4,
+      "operation": "mov",
+      "asm": "mov dword ptr [ebp + 0x1eec04], 0",
+      "phase": "pre_result_guard"
+    }
+  ],
+  "excluded_effects": [
+    "transitive writes inside callees",
+    "writes by aliases through EAX/ECX/EDX/ESI/EDI/ESP",
+    "heap/Unit/Spot/Power/Troop changes",
+    "indirect virtual dispatch effects",
+    "engine state as seen in an actual running original game"
+  ],
+  "warning": "Do not claim all native strategy effects are covered. Capturing only these offsets is insufficient for rollback."
+}

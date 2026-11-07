@@ -1,0 +1,74 @@
+{
+  "source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "status": "STATIC ORIGINAL PE + VTABLE / GAME NOT RUN",
+  "side_pointer_engine_offsets": [
+    "0x1E8630",
+    "0x1E8634",
+    "0x1E8638"
+  ],
+  "side_unit_vector_offsets": {
+    "begin": "0x48",
+    "end": "0x4C",
+    "stride": 4
+  },
+  "native_per_unit_levelup": "0x00575110",
+  "tables": {
+    "Player": {
+      "address": 6527752,
+      "expected_vf14": 5374112,
+      "function_size": 462,
+      "vf14": "0x005200A0",
+      "unit_levelup_sites": [
+        {
+          "site": "0x005200E2",
+          "before": [
+            "0x005200BA xor eax, esp",
+            "0x005200BC push eax",
+            "0x005200BD lea eax, [esp + 0x30]",
+            "0x005200C1 mov dword ptr fs:[0], eax",
+            "0x005200C7 mov ebx, ecx",
+            "0x005200C9 mov esi, dword ptr [ebx + 0x48]",
+            "0x005200CC mov eax, dword ptr [ebx + 0x46c]",
+            "0x005200D2 mov dword ptr [ebx + 0x470], eax",
+            "0x005200D8 cmp esi, dword ptr [ebx + 0x4c]",
+            "0x005200DB je 0x5200ef",
+            "0x005200DD lea ecx, [ecx]",
+            "0x005200E0 mov ecx, dword ptr [esi]"
+          ],
+          "after": [
+            "0x005200E7 add esi, 4",
+            "0x005200EA cmp esi, dword ptr [ebx + 0x4c]",
+            "0x005200ED jne 0x5200e0"
+          ]
+        }
+      ]
+    },
+    "Enemy": {
+      "address": 6523744,
+      "expected_vf14": 5327952,
+      "function_size": 34,
+      "vf14": "0x00514C50",
+      "unit_levelup_sites": [
+        {
+          "site": "0x00514C62",
+          "before": [
+            "0x00514C50 push esi",
+            "0x00514C51 push edi",
+            "0x00514C52 mov edi, ecx",
+            "0x00514C54 mov esi, dword ptr [edi + 0x48]",
+            "0x00514C57 cmp esi, dword ptr [edi + 0x4c]",
+            "0x00514C5A je 0x514c6f",
+            "0x00514C5C lea esp, [esp]",
+            "0x00514C60 mov ecx, dword ptr [esi]"
+          ],
+          "after": [
+            "0x00514C67 add esi, 4",
+            "0x00514C6A cmp esi, dword ptr [edi + 0x4c]",
+            "0x00514C6D jne 0x514c60"
+          ]
+        }
+      ]
+    }
+  },
+  "limitation": "Role & unit vector proven for constructor vtables only; runtime array completeness still needs game observation."
+}

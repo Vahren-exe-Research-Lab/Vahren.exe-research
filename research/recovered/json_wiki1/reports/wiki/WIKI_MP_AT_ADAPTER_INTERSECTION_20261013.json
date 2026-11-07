@@ -1,0 +1,284 @@
+{
+  "status": "ORIGINAL DAT mp @ Work typed adapter intersection; SYNTHETIC contrafactual separate",
+  "original_mp_at": 13,
+  "original_cases": [
+    {
+      "skill": "m_fire_pr1",
+      "declaration": "a_default/script/30_スキル/F10_missile.dat",
+      "declaration_line": 1602,
+      "direct_grant": false,
+      "parent_mp": {
+        "text": "",
+        "number": 0,
+        "found": false
+      },
+      "Work_lookup": {
+        "found": true,
+        "text": "",
+        "number": 0
+      },
+      "Work_typed_accepted": false,
+      "Work_typed_stop": "DatHealGap: nonliteral integer: mp"
+    },
+    {
+      "skill": "m_wate_pr1",
+      "declaration": "a_default/script/30_スキル/F10_missile.dat",
+      "declaration_line": 2136,
+      "direct_grant": false,
+      "parent_mp": {
+        "text": "",
+        "number": 0,
+        "found": false
+      },
+      "Work_lookup": {
+        "found": true,
+        "text": "",
+        "number": 0
+      },
+      "Work_typed_accepted": false,
+      "Work_typed_stop": "DatHealGap: nonliteral integer: mp"
+    },
+    {
+      "skill": "ms_wate_pr1",
+      "declaration": "a_default/script/30_スキル/F10_missile.dat",
+      "declaration_line": 2407,
+      "direct_grant": false,
+      "parent_mp": {
+        "text": "",
+        "number": 0,
+        "found": false
+      },
+      "Work_lookup": {
+        "found": true,
+        "text": "",
+        "number": 0
+      },
+      "Work_typed_accepted": false,
+      "Work_typed_stop": "DatHealGap: nonliteral integer: mp"
+    },
+    {
+      "skill": "m_eart_pr1",
+      "declaration": "a_default/script/30_スキル/F10_missile.dat",
+      "declaration_line": 2792,
+      "direct_grant": false,
+      "parent_mp": {
+        "text": "",
+        "number": 0,
+        "found": false
+      },
+      "Work_lookup": {
+        "found": true,
+        "text": "",
+        "number": 0
+      },
+      "Work_typed_accepted": false,
+      "Work_typed_stop": "DatHealGap: nonliteral integer: mp"
+    },
+    {
+      "skill": "m_wate_bad_pr1",
+      "declaration": "a_default/script/30_スキル/F10_missile.dat",
+      "declaration_line": 4509,
+      "direct_grant": false,
+      "parent_mp": {
+        "text": "",
+        "number": 0,
+        "found": false
+      },
+      "Work_lookup": {
+        "found": true,
+        "text": "",
+        "number": 0
+      },
+      "Work_typed_accepted": false,
+      "Work_typed_stop": "DatHealGap: nonliteral integer: mp"
+    },
+    {
+      "skill": "buchipa_pr1",
+      "declaration": "a_default/script/30_スキル/F10_missile.dat",
+      "declaration_line": 5770,
+      "direct_grant": false,
+      "parent_mp": {
+        "text": "",
+        "number": 0,
+        "found": false
+      },
+      "Work_lookup": {
+        "found": true,
+        "text": "",
+        "number": 0
+      },
+      "Work_typed_accepted": false,
+      "Work_typed_stop": "DatHealGap: nonliteral integer: mp"
+    },
+    {
+      "skill": "alc_eart_pr1",
+      "declaration": "a_default/script/31_ユニットスキル/U_16_20_ALC一派～VVAN.dat",
+      "declaration_line": 76,
+      "direct_grant": false,
+      "parent_mp": {
+        "text": "",
+        "number": 0,
+        "found": false
+      },
+      "Work_lookup": {
+        "found": true,
+        "text": "",
+        "number": 0
+      },
+      "Work_typed_accepted": false,
+      "Work_typed_stop": "DatHealGap: nonliteral integer: mp"
+    },
+    {
+      "skill": "zngm_wate_pr1",
+      "declaration": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+      "declaration_line": 4540,
+      "direct_grant": false,
+      "parent_mp": {
+        "text": "",
+        "number": 0,
+        "found": false
+      },
+      "Work_lookup": {
+        "found": true,
+        "text": "",
+        "number": 0
+      },
+      "Work_typed_accepted": false,
+      "Work_typed_stop": "DatHealGap: nonliteral integer: mp"
+    },
+    {
+      "skill": "m_star_pr1",
+      "declaration": "a_default/script/31_ユニットスキル/U_1_5_マリナーズ～革命企画.dat",
+      "declaration_line": 4789,
+      "direct_grant": false,
+      "parent_mp": {
+        "text": "100",
+        "number": 100,
+        "found": true
+      },
+      "Work_lookup": {
+        "found": true,
+        "text": "",
+        "number": 0
+      },
+      "Work_typed_accepted": false,
+      "Work_typed_stop": "DatHealGap: nonliteral integer: mp"
+    },
+    {
+      "skill": "mm_wate_pr1",
+      "declaration": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+      "declaration_line": 7508,
+      "direct_grant": false,
+      "parent_mp": {
+        "text": "",
+        "number": 0,
+        "found": false
+      },
+      "Work_lookup": {
+        "found": true,
+        "text": "",
+        "number": 0
+      },
+      "Work_typed_accepted": false,
+      "Work_typed_stop": "DatHealGap: nonliteral integer: mp"
+    },
+    {
+      "skill": "comfy_mist",
+      "declaration": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+      "declaration_line": 14301,
+      "direct_grant": true,
+      "parent_mp": {
+        "text": "80",
+        "number": 80,
+        "found": true
+      },
+      "Work_lookup": {
+        "found": true,
+        "text": "",
+        "number": 0
+      },
+      "Work_typed_accepted": false,
+      "Work_typed_stop": "DatHealGap: VERIFY str: one known mode * signed integer required"
+    },
+    {
+      "skill": "sp_new_misairu",
+      "declaration": "a_default/script/31_ユニットスキル/U_必殺_0_共用.dat",
+      "declaration_line": 146,
+      "direct_grant": true,
+      "parent_mp": {
+        "text": "165",
+        "number": 165,
+        "found": true
+      },
+      "Work_lookup": {
+        "found": true,
+        "text": "",
+        "number": 0
+      },
+      "Work_typed_accepted": false,
+      "Work_typed_stop": "DatHealGap: VERIFY str: one known mode * signed integer required"
+    },
+    {
+      "skill": "testskillb",
+      "declaration": "a_default/script/6000_スキルテスト/skill_00_test.dat",
+      "declaration_line": 5,
+      "direct_grant": false,
+      "parent_mp": {
+        "text": "",
+        "number": 0,
+        "found": false
+      },
+      "Work_lookup": {
+        "found": true,
+        "text": "",
+        "number": 0
+      },
+      "Work_typed_accepted": null,
+      "Work_typed_stop": "NON_TYPED_FUNC"
+    }
+  ],
+  "observed_adapter_stop_counts": {
+    "DatHealGap: nonliteral integer: mp": 10,
+    "DatHealGap: VERIFY str: one known mode * signed integer required": 2,
+    "NON_TYPED_FUNC": 1
+  },
+  "synthetic_fixture": "skill baseline\n{\nfunc = heal\nattr = hp\nstr = magic * 100\nmp = 165\n}\nskill child_no_key:baseline\n{\nname = child\n}\nskill child_at:baseline\n{\nmp = @\n}\nskill child_zero:baseline\n{\nmp = 0\n}\n",
+  "synthetic_typed_loader_outcomes": [
+    {
+      "tag": "baseline",
+      "field_found": true,
+      "raw_text": "165",
+      "numeric": 165,
+      "accepted": true,
+      "cost": 165
+    },
+    {
+      "tag": "child_no_key",
+      "field_found": true,
+      "raw_text": "165",
+      "numeric": 165,
+      "accepted": true,
+      "cost": 165
+    },
+    {
+      "tag": "child_at",
+      "field_found": true,
+      "raw_text": "",
+      "numeric": 0,
+      "accepted": false,
+      "stop": "nonliteral integer: mp"
+    },
+    {
+      "tag": "child_zero",
+      "field_found": true,
+      "raw_text": "0",
+      "numeric": 0,
+      "accepted": true,
+      "cost": 0
+    }
+  ],
+  "Native_mapping": "A/T005 505381..5053AD generic ScriptData @ is present empty numeric0; typed adapter may reject empty text",
+  "warning": "Work typed adapter parse failure does NOT demonstrate original 0.67 old EXE parser failure or actual zero MP",
+  "old_gameplay": 0,
+  "strict_match": 0
+}

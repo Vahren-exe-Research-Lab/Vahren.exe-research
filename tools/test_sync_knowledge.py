@@ -63,6 +63,35 @@ class KnowledgeSecurityTests(unittest.TestCase):
             issues,_=sync.safe_files(root)
             self.assertTrue(any("サイズ" in s for s in issues))
 
+    def test_large_reviewed_text_requires_exact_path_size_hash_and_other_guards(self):
+        approved = "research/recovered/reviewed-large.json"
+        other = "research/recovered/other-large.json"
+        files = ("symbols.tsv", "structs.tsv", ".gitignore", approved, other)
+        body = b'{"selected_analysis":"' + b"a" * 2_000_000 + b'"}\n'
+        pin = (sync.digest(body), len(body))
+        with tempfile.TemporaryDirectory() as td, patch.object(sync, "FILES", files), \
+             patch.object(sync, "REVIEWED_LARGE_TEXT", {approved: pin}, create=True):
+            root = Path(td)
+            self.fixture(root)
+            target = root / approved
+            target.write_bytes(body)
+            self.assertEqual(sync.safe_files(root)[0], [])
+            for changed in (body[:-1], body.replace(b"a", b"b", 1)):
+                with self.subTest(case="changed-content", size=len(changed)):
+                    target.write_bytes(changed)
+                    self.assertTrue(any("サイズ" in issue for issue in sync.safe_files(root)[0]))
+            target.write_bytes(body)
+            (root / other).write_bytes(body)
+            self.assertTrue(any(other in issue and "サイズ" in issue for issue in sync.safe_files(root)[0]))
+            (root / other).write_text("reviewed source\n", encoding="utf-8")
+            for invalid, expected in ((body + b"\x00", "バイナリ"),
+                                      (body + b"\xff", "UTF-8"),
+                                      (body + b"private" + bytes([64]) + b"example.invalid", "機密")):
+                with self.subTest(case=expected), patch.object(
+                        sync, "REVIEWED_LARGE_TEXT", {approved: (sync.digest(invalid), len(invalid))}):
+                    target.write_bytes(invalid)
+                    self.assertTrue(any(expected in issue for issue in sync.safe_files(root)[0]))
+
     def test_redacted_home_placeholder_retains_exact_research_bytes(self):
         with tempfile.TemporaryDirectory() as td, patch.object(
                 sync, "FILES", ("symbols.tsv", "structs.tsv", ".gitignore")):

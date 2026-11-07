@@ -228,3 +228,18 @@ This section independently reviews **three previously PUBLISHED_INTAKE IDs**, no
 [0x5CFDD0の事典](reference/symbols/005CFDD0.md)へ、[12–16H回収集約の30–32行](research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_12H_16H_SEEK_FTELL_RECOVERY_STATIC.md?plain=1#L30-L32)を根拠に標準FILE seek callback窓の報告を接続した。元Library報告の全文やnativeを今回取得・再実験したものではなく、完全ABI・他callback・2GiB/4GiBでの実故障は未確認である。低位32bitの局所境界の報告から、全入力の切捨て障害や安全性を一般化しない。
 
 同集約26–28行のftell旧索引欠落・fragment仮説は歴史的訂正として読み、現在の[ftell入口](reference/symbols/005B797C.md)と[親フレーム依存helper](reference/symbols/005B79D7.md)を重複して新規採録しない。[14研究IDと4回収集約の対応](research/recovered/intake_open_sources_20261105/REA_LIBRARY_STATUS.tsv)では、集約が読めることと元Library本文を取得したことを分けている。
+
+## 2026-11-01 21H — 局所unwindへの4経路を引く
+
+[Issue #6の保存版と現在の状態](research/recovered/issue6/README.md)を照合し、すでに保存されていた[21H著者報告](research/recovered/rea_batch3/reports/REA_20261101_21H_P0_UNWIND_CALLERS_STATIC.md)9–13行（SHA256 `89314b1069e2a57a928c1320a4c80dc79d6c2c4a3fa65137f082b7634351f2d6`）から、CALL位置とcalleeをつないだ。17H/19H/20Hの採録や旧V3訂正は上記の既存記録を優先し、重複して新発見と数えない。
+
+| E8命令位置 | 報告上のcaller文脈 | 呼出先 |
+|---|---|---|
+| 0x5C35BD | 0x5C3590 PE code fragment。独立ABI未確認 | 0x5C3500 |
+| 0x5C35E6 | 0x5C35D6。独立ABI未確認 | 0x5C3500 |
+| 0x5C3646 | 0x5C363B。20Hにも既記載 | 0x5C3500 |
+| 0x5D1D33 | 0x5D1CB1 __fsopen。エラー条件はV9推定 | 0x5C3500 |
+
+[局所unwindの項目](reference/symbols/005C3500.md)から4つの選別されたCALL関係と元の報告へ進める。これは既存のV9静的CALLスナップショットの再抽出ではなく、別の著述根拠を持つ手動関係。`callers`/`callees` のV9専用索引の収録数・対象は変更していない。4callerのうちfragmentを新しい独立関数とせず、4つのsiteはcode位置として登録した。
+
+著者の過去7/7限定照合（6 E8と3-byte trampoline）は保存済み報告の範囲であり、今回の原作再検証ではない。scope cursor書込・NLG副作用・全引数・FILE所有権・実例外配送と解放成功は未確認。18Hの部分証拠は保留のまま、追加取得・代替復元していない。

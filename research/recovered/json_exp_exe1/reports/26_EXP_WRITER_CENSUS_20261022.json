@@ -1,0 +1,803 @@
+{
+  "study_id": "EXP-CENSUS-20261022-001",
+  "status": "SOURCE_TEXT_CENSUS / NO_GAMEPLAY / NOT_ALL_NATIVE_WRITERS",
+  "db_sha256": "0BBF53E27253993A10A18C4EC9ED161CB5A27E4E0A2E532F83793404D11CAEFF",
+  "functions_with_literal_0x16c": 32,
+  "excluded_for_prior_restriction": [
+    "0x005710C0"
+  ],
+  "definitions": {
+    "writer_guess": "only syntactic LHS assignment, not full dataflow",
+    "type_safety": "0x16C may be other object types, not automatically Unit EXP"
+  },
+  "functions": [
+    {
+      "va": "0x004012F0",
+      "name": "FUN_004012f0",
+      "code_sha256": "2AF37F804E492EB6F5246BBB8BFFDAF74876A0B8A7DAC78604B7475A5714B6CE",
+      "mentions": 1,
+      "matches": [
+        {
+          "line_number": 78,
+          "line": "*(undefined4 *)(param_1 + 0x16c) = 0x80000008;",
+          "syntactic_lhs_assignment_candidate": true,
+          "preceding": [
+            "puVar11 = (undefined4 *)0x0;",
+            "*(undefined4 *)(param_1 + 0x168) = 0x80000008;"
+          ]
+        }
+      ],
+      "role": "CANDIDATE_ONLY_NO_TYPE_ASSERTION"
+    },
+    {
+      "va": "0x00402340",
+      "name": "FUN_00402340",
+      "code_sha256": "1552C4D9F3733E25C97706B2A44EDDDDDFA7499C87F0AB106B8CD1C208422201",
+      "mentions": 2,
+      "matches": [
+        {
+          "line_number": 52,
+          "line": "if (*(int *)(param_1 + 0x16c) == -0x7ffffff8) {",
+          "syntactic_lhs_assignment_candidate": false,
+          "preceding": [
+            "}",
+            "DAT_00660f70 = 0;"
+          ]
+        },
+        {
+          "line_number": 54,
+          "line": "*(undefined4 *)(param_1 + 0x16c) = 0;",
+          "syntactic_lhs_assignment_candidate": true,
+          "preceding": [
+            "if (*(int *)(param_1 + 0x16c) == -0x7ffffff8) {",
+            "FUN_004c82f0();"
+          ]
+        }
+      ],
+      "role": "CANDIDATE_ONLY_NO_TYPE_ASSERTION"
+    },
+    {
+      "va": "0x004024A0",
+      "name": "FUN_004024a0",
+      "code_sha256": "E086A7729FBE84D0D3084A6A656892DADB1D518278C6985805F3A035B060B57C",
+      "mentions": 2,
+      "matches": [
+        {
+          "line_number": 9,
+          "line": "if (*(int *)(param_1 + 0x16c) != -0x7ffffff8) {",
+          "syntactic_lhs_assignment_candidate": false,
+          "preceding": [
+            "",
+            "{"
+          ]
+        },
+        {
+          "line_number": 11,
+          "line": "*(undefined4 *)(param_1 + 0x16c) = 0x80000008;",
+          "syntactic_lhs_assignment_candidate": true,
+          "preceding": [
+            "if (*(int *)(param_1 + 0x16c) != -0x7ffffff8) {",
+            "FUN_00453ac0(1);"
+          ]
+        }
+      ],
+      "role": "CANDIDATE_ONLY_NO_TYPE_ASSERTION"
+    },
+    {
+      "va": "0x00407300",
+      "name": "FUN_00407300",
+      "code_sha256": "48A8EC8FE4661F213C288833ED30F9865BB665948A2E0460921AD682AEE2D477",
+      "mentions": 1,
+      "matches": [
+        {
+          "line_number": 649,
+          "line": "__ultoa(*(ulong *)(uVar17 + 0x16c),acStack_58,10);",
+          "syntactic_lhs_assignment_candidate": false,
+          "preceding": [
+            "iVar23 = DAT_0065c138;",
+            "(*pcVar21)();"
+          ]
+        }
+      ],
+      "role": "CANDIDATE_ONLY_NO_TYPE_ASSERTION"
+    },
+    {
+      "va": "0x0040C940",
+      "name": "FUN_0040c940",
+      "code_sha256": "14F72C7C5D023923E4D3C16AB80EA468BA91FEE31F730A55BFDB37A558CC77DE",
+      "mentions": 2,
+      "matches": [
+        {
+          "line_number": 23,
+          "line": "FUN_00510850(**(undefined4 **)(param_1 + 0x16c),*(undefined4 **)(param_1 + 0x16c));",
+          "syntactic_lhs_assignment_candidate": false,
+          "preceding": [
+            "FUN_005b6bbb(*(undefined4 *)(param_1 + 0x17c),uVar1);",
+            "local_4._0_1_ = 0xd;"
+          ]
+        },
+        {
+          "line_number": 24,
+          "line": "FUN_005b6bbb(*(undefined4 *)(param_1 + 0x16c));",
+          "syntactic_lhs_assignment_candidate": false,
+          "preceding": [
+            "local_4._0_1_ = 0xd;",
+            "FUN_00510850(**(undefined4 **)(param_1 + 0x16c),*(undefined4 **)(param_1 + 0x16c));"
+          ]
+        }
+      ],
+      "role": "CANDIDATE_ONLY_NO_TYPE_ASSERTION"
+    },
+    {
+      "va": "0x0041ECC0",
+      "name": "FUN_0041ecc0",
+      "code_sha256": "A1BB84EC79928604087CCC0A1E3F06F0423F520E7071ED56E140C2787EF20C90",
+      "mentions": 4,
+      "matches": [
+        {
+          "line_number": 25,
+          "line": "if (*(int *)(param_1 + 0x16c) != iVar2) {",
+          "syntactic_lhs_assignment_candidate": false,
+          "preceding": [
+            "BVar1 = PtInRect(lprc,pt);",
+            "if (BVar1 != 0) {"
+          ]
+        },
+        {
+          "line_number": 26,
+          "line": "*(int *)(param_1 + 0x16c) = iVar2;",
+          "syntactic_lhs_assignment_candidate": true,
+          "preceding": [
+            "if (BVar1 != 0) {",
+            "if (*(int *)(param_1 + 0x16c) != iVar2) {"
+          ]
+        },
+        {
+          "line_number": 35,
+          "line": "if (*(int *)(param_1 + 0x16c) != -0x7ffffff8) {",
+          "syntactic_lhs_assignment_candidate": false,
+          "preceding": [
+            "} while (iVar2 < *(int *)(param_1 + 0x170));",
+            "}"
+          ]
+        },
+        {
+          "line_number": 37,
+          "line": "*(undefined4 *)(param_1 + 0x16c) = 0x80000008;",
+          "syntactic_lhs_assignment_candidate": true,
+          "preceding": [
+            "if (*(int *)(param_1 + 0x16c) != -0x7ffffff8) {",
+            "FUN_004463f0();"
+          ]
+        }
+      ],
+      "role": "CANDIDATE_ONLY_NO_TYPE_ASSERTION"
+    },
+    {
+      "va": "0x0041ED70",
+      "name": "FUN_0041ed70",
+      "code_sha256": "346B6801EDD7B2432870E1A0D8F9C9F7848CF97B742834A40845BEF1E914BFF2",
+      "mentions": 2,
+      "matches": [
+        {
+          "line_number": 9,
+          "line": "if (*(int *)(param_1 + 0x16c) != -0x7ffffff8) {",
+          "syntactic_lhs_assignment_candidate": false,
+          "preceding": [
+            "",
+            "{"
+          ]
+        },
+        {
+          "line_number": 11,
+          "line": "*(undefined4 *)(param_1 + 0x16c) = 0x80000008;",
+          "syntactic_lhs_assignment_candidate": true,
+          "preceding": [
+            "if (*(int *)(param_1 + 0x16c) != -0x7ffffff8) {",
+            "FUN_004463f0();"
+          ]
+        }
+      ],
+      "role": "CANDIDATE_ONLY_NO_TYPE_ASSERTION"
+    },
+    {
+      "va": "0x0044A800",
+      "name": "FUN_0044a800",
+      "code_sha256": "69876E5FF0546025B3B4E336B25661B904566D87D0D5D03BBF6B45814DEB3CFC",
+      "mentions": 2,
+      "matches": [
+        {
+          "line_number": 158,
+          "line": "(piVar11 = (int *)**(int **)(param_1 + 0x16c), piVar11 != *(int **)(param_1 + 0x16c))) {",
+          "syntactic_lhs_assignment_candidate": false,
+          "preceding": [
+            "local_d8 = 0;",
+            "if ((local_cc != &local_d0) &&"
+          ]
+        },
+        {
+          "line_number": 229,
+          "line": "} while (piVar11 != *(int **)(param_1 + 0x16c));",
+          "syntactic_lhs_assignment_candidate": false,
+          "preceding": [
+            "}",
+            "}"
+          ]
+        }
+      ],
+      "role": "CANDIDATE_ONLY_NO_TYPE_ASSERTION"
+    },
+    {
+      "va": "0x00466470",
+      "name": "FUN_00466470",
+      "code_sha256": "8555CC87A3329FD9FB896C26AE52F4491B9990606502F1E011A5745CB94E7EEF",
+      "mentions": 1,
+      "matches": [
+        {
+          "line_number": 48,
+          "line": "*(undefined4 *)(param_1 + 0x16c) = *(undefined4 *)(param_2 + 0x16c);",
+          "syntactic_lhs_assignment_candidate": true,
+          "preceding": [
+            "}",
+            "*(undefined4 *)(param_1 + 0x168) = *(undefined4 *)(param_2 + 0x168);"
+          ]
+        }
+      ],
+      "role": "CANDIDATE_ONLY_NO_TYPE_ASSERTION"
+    },
+    {
+      "va": "0x00466BA0",
+      "name": "FUN_00466ba0",
+      "code_sha256": "AC5C0258E5A4ECBA35335F31BE6EB1DBD43CF2F40A136E9F21BE8872BAB2FCCB",
+      "mentions": 1,
+      "matches": [
+        {
+          "line_number": 85,
+          "line": "*(undefined4 *)(param_1 + 0x16c) = *(undefined4 *)(unaff_EDI + 0x16c);",
+          "syntactic_lhs_assignment_candidate": true,
+          "preceding": [
+            "FUN_00415770(param_1 + 0x158,unaff_EDI + 0x158);",
+            "*(undefined4 *)(param_1 + 0x168) = *(undefined4 *)(unaff_EDI + 0x168);"
+          ]
+        }
+      ],
+      "role": "CANDIDATE_ONLY_NO_TYPE_ASSERTION"
+    },
+    {
+      "va": "0x004A7A90",
+      "name": "FUN_004a7a90",
+      "code_sha256": "336FF666B5EC29D533F06691206E47D148FB2492267435EB4BF23B3A24BC96BC",
+      "mentions": 1,
+      "matches": [
+        {
+          "line_number": 2725,
+          "line": "*(undefined4 *)(iVar5 + 0x16c) = *(undefined4 *)(iVar5 + 0x170);",
+          "syntactic_lhs_assignment_candidate": true,
+          "preceding": [
+            "if (iVar5 != 0) {",
+            "for (iVar12 = 0; iVar12 < (int)local_61c; iVar12 = iVar12 + 1) {"
+          ]
+        }
+      ],
+      "role": "CANDIDATE_ONLY_NO_TYPE_ASSERTION"
+    },
+    {
+      "va": "0x004C72C0",
+      "name": "FUN_004c72c0",
+      "code_sha256": "CD5C45C5C5D0D123314443AFA8D08D510357D5CDD4EBCB949C8671DAC761FBD0",
+      "mentions": 5,
+      "matches": [
+        {
+          "line_number": 42,
+          "line": "if (*(int *)(param_1 + 0x16c) == 0) {",
+          "syntactic_lhs_assignment_candidate": false,
+          "preceding": [
+            "FUN_00455d90(param_4);",
+            "cVar2 = DAT_0065eb64;"
+          ]
+        },
+        {
+          "line_number": 61,
+          "line": "if (*(int *)(param_1 + 0x16c) != -0x7ffffff8) {",
+          "syntactic_lhs_assignment_candidate": false,
+          "preceding": [
+            "return 1;",
+            "}"
+          ]
+        },
+        {
+          "line_number": 125,
+          "line": "if (*(int *)(param_1 + 0x16c) != -0x7ffffff8) {",
+          "syntactic_lhs_assignment_candidate": false,
+          "preceding": [
+            "pRVar11 = pRVar11 + 1;",
+            "} while (uVar3 < 6);"
+          ]
+        },
+        {
+          "line_number": 138,
+          "line": "*(undefined4 *)(param_1 + 0x16c) = 0;",
+          "syntactic_lhs_assignment_candidate": true,
+          "preceding": [
+            "iVar7 = pRVar11->left;",
+            "*(undefined4 *)(param_1 + 400) = *(undefined4 *)(param_1 + 0x180);"
+          ]
+        },
+        {
+          "line_number": 155,
+          "line": "*(undefined4 *)(param_1 + 0x16c) = 1;",
+          "syntactic_lhs_assignment_candidate": true,
+          "preceding": [
+            "qrc = (LPRECT)&DAT_0087a3d8;",
+            "*(char *)(param_1 + 0x170) = param_2;"
+          ]
+        }
+      ],
+      "role": "CANDIDATE_ONLY_NO_TYPE_ASSERTION"
+    },
+    {
+      "va": "0x004C9620",
+      "name": "FUN_004c9620",
+      "code_sha256": "304C20C2450238123C8BE10B36641824BAA014D34D70FC30CAD4C73ED3E9AF76",
+      "mentions": 1,
+      "matches": [
+        {
+          "line_number": 198,
+          "line": "piVar4 = param_1 + uStack_f0 * 8 + 0x16c;",
+          "syntactic_lhs_assignment_candidate": false,
+          "preceding": [
+            "RStack_90.right = param_1[iVar9 * 8 + 2];",
+            "RStack_90.bottom = param_1[iVar9 * 8 + 3];"
+          ]
+        }
+      ],
+      "role": "CANDIDATE_ONLY_NO_TYPE_ASSERTION"
+    },
+    {
+      "va": "0x004DE410",
+      "name": "FUN_004de410",
+      "code_sha256": "B455A2CED1310DCD05E4FFA87AAE4A81857FBB4BB4325EEDC145208A7E623603",
+      "mentions": 1,
+      "matches": [
+        {
+          "line_number": 53,
+          "line": "*(int *)(param_1 + 0x16c) = ((local_1c.bottom - local_1c.top) / 2 + local_1c.top) - local_20",
+          "syntactic_lhs_assignment_candidate": true,
+          "preceding": [
+            "*(int *)(param_1 + 0x168) =",
+            "((local_1c.right - local_1c.left) / 2 + local_1c.left) - local_24;"
+          ]
+        }
+      ],
+      "role": "CANDIDATE_ONLY_NO_TYPE_ASSERTION"
+    },
+    {
+      "va": "0x004DE690",
+      "name": "FUN_004de690",
+      "code_sha256": "EC2642474FE18D4C3871916082D336EAE2C38A182CDBBCEAA9C22FA100D5F9D4",
+      "mentions": 1,
+      "matches": [
+        {
+          "line_number": 10,
+          "line": "*(undefined4 *)(param_1 + 0x16c) = 0x80000008;",
+          "syntactic_lhs_assignment_candidate": true,
+          "preceding": [
+            "{",
+            "*(undefined4 *)(param_1 + 0x168) = 0x80000008;"
+          ]
+        }
+      ],
+      "role": "CANDIDATE_ONLY_NO_TYPE_ASSERTION"
+    },
+    {
+      "va": "0x004F08E0",
+      "name": "FUN_004f08e0",
+      "code_sha256": "EFB8CDB0FB09E6D95292514410BB6D931BE8B2813861AB8A4292EBF27102E77F",
+      "mentions": 1,
+      "matches": [
+        {
+          "line_number": 73,
+          "line": "*(int *)(param_1 + 0x16c) =",
+          "syntactic_lhs_assignment_candidate": true,
+          "preceding": [
+            "FUN_004c1a30();",
+            "_memset((void *)(param_1 + 0x1a0),0,0x60);"
+          ]
+        }
+      ],
+      "role": "CANDIDATE_ONLY_NO_TYPE_ASSERTION"
+    },
+    {
+      "va": "0x00514670",
+      "name": "FUN_00514670",
+      "code_sha256": "EB02A22638545980D760E63695D16A00465474FFAC31B0850B06CC89B072CA83",
+      "mentions": 2,
+      "matches": [
+        {
+          "line_number": 9,
+          "line": "if (*(int *)(param_1 + 0x16c) != -0x7ffffff8) {",
+          "syntactic_lhs_assignment_candidate": false,
+          "preceding": [
+            "",
+            "{"
+          ]
+        },
+        {
+          "line_number": 10,
+          "line": "*(undefined4 *)(param_1 + 0x16c) = 0x80000008;",
+          "syntactic_lhs_assignment_candidate": true,
+          "preceding": [
+            "{",
+            "if (*(int *)(param_1 + 0x16c) != -0x7ffffff8) {"
+          ]
+        }
+      ],
+      "role": "CANDIDATE_ONLY_NO_TYPE_ASSERTION"
+    },
+    {
+      "va": "0x00543E00",
+      "name": "FUN_00543e00",
+      "code_sha256": "3AE900EA96F915E9045BB28E95B78C597B5864F733A032674ABB239B1AEAE713",
+      "mentions": 1,
+      "matches": [
+        {
+          "line_number": 89,
+          "line": "param_1[0x16c] = Actionable::vftable;",
+          "syntactic_lhs_assignment_candidate": true,
+          "preceding": [
+            "param_1[0x1b3] = Actionable::vftable;",
+            "param_1[0x18e] = Actionable::vftable;"
+          ]
+        }
+      ],
+      "role": "CANDIDATE_ONLY_NO_TYPE_ASSERTION"
+    },
+    {
+      "va": "0x0054FD50",
+      "name": "FUN_0054fd50",
+      "code_sha256": "90C72ED7AD6C9F250AFB32145BA74F5CD11443FFF05D5B13CA4C07E0C713B5D5",
+      "mentions": 1,
+      "matches": [
+        {
+          "line_number": 67,
+          "line": "*(undefined4 *)(unaff_ESI + 0x16c) = *(undefined4 *)(unaff_EDI + 0x16c);",
+          "syntactic_lhs_assignment_candidate": true,
+          "preceding": [
+            "*(undefined4 *)(unaff_ESI + 0x164) = *(undefined4 *)(unaff_EDI + 0x164);",
+            "*(undefined4 *)(unaff_ESI + 0x168) = *(undefined4 *)(unaff_EDI + 0x168);"
+          ]
+        }
+      ],
+      "role": "CANDIDATE_ONLY_NO_TYPE_ASSERTION"
+    },
+    {
+      "va": "0x00551E50",
+      "name": "FUN_00551e50",
+      "code_sha256": "6A57F71F09FCAAF4E1755AB65DF7737BAD6C1D8CD4E0757E8BBAC7C9D5FFAAD6",
+      "mentions": 2,
+      "matches": [
+        {
+          "line_number": 74,
+          "line": "*(int *)(iVar1 + 0x16c) = *(int *)(iVar1 + 0x16c) + iVar7;",
+          "syntactic_lhs_assignment_candidate": true,
+          "preceding": [
+            "iVar7 = FUN_005d1b80();",
+            "}"
+          ]
+        },
+        {
+          "line_number": 76,
+          "line": "(*(uint *)(iVar1 + 0x170) <= *(uint *)(iVar1 + 0x16c))) &&",
+          "syntactic_lhs_assignment_candidate": false,
+          "preceding": [
+            "*(int *)(iVar1 + 0x16c) = *(int *)(iVar1 + 0x16c) + iVar7;",
+            "if ((((*(char *)(*in_EAX + 0x8c) != '\\0') &&"
+          ]
+        }
+      ],
+      "role": "CANDIDATE_ONLY_NO_TYPE_ASSERTION"
+    },
+    {
+      "va": "0x0055BC60",
+      "name": "FUN_0055bc60",
+      "code_sha256": "CCD03C646F6CE9422B7AF5A311C994E6247EED0B3E38252B1165F464444AF3C4",
+      "mentions": 1,
+      "matches": [
+        {
+          "line_number": 606,
+          "line": "__ultoa(*(ulong *)(local_18c + 0x16c),acStack_54,10);",
+          "syntactic_lhs_assignment_candidate": false,
+          "preceding": [
+            "SetTextColor((HDC)*piVar1,DAT_0065c138);",
+            "iVar25 = local_18c;"
+          ]
+        }
+      ],
+      "role": "CANDIDATE_ONLY_NO_TYPE_ASSERTION"
+    },
+    {
+      "va": "0x0056B9B0",
+      "name": "FUN_0056b9b0",
+      "code_sha256": "FBCCBF9BB33E33FC9EFA675D79B94288D818103534A03DA4BEC6023BCDD78FC9",
+      "mentions": 1,
+      "matches": [
+        {
+          "line_number": 26,
+          "line": "*(undefined4 *)(in_EAX + 0x16c) = 0x80000008;",
+          "syntactic_lhs_assignment_candidate": true,
+          "preceding": [
+            "FUN_00453800(param_1,param_2);",
+            "h = DAT_00691114;"
+          ]
+        }
+      ],
+      "role": "CANDIDATE_ONLY_NO_TYPE_ASSERTION"
+    },
+    {
+      "va": "0x005710C0",
+      "status": "EXCLUDED_PRIOR_RESTRICTION",
+      "matches": []
+    },
+    {
+      "va": "0x00575110",
+      "name": "FUN_00575110",
+      "code_sha256": "F283F26289E0FD437B95BA614D83355358267B6FFDE0D6ADFF1DD86A9FE7BAA6",
+      "mentions": 2,
+      "matches": [
+        {
+          "line_number": 84,
+          "line": "*(uint *)(local_164 + 0x170) <= *(uint *)(local_164 + 0x16c))) {",
+          "syntactic_lhs_assignment_candidate": false,
+          "preceding": [
+            "if (((*(int *)(param_1 + 0x1d0) != 0) && (*(char *)(param_1 + 0x18614) == '\\0')) &&",
+            "(local_164 = *(int *)(param_1 + 0x1c8),"
+          ]
+        },
+        {
+          "line_number": 367,
+          "line": "} while (*(uint *)(iVar4 + 0x170) <= *(uint *)(iVar4 + 0x16c));",
+          "syntactic_lhs_assignment_candidate": false,
+          "preceding": [
+            "iStack_128 = 0;",
+            "uStack_124 = 0;"
+          ]
+        }
+      ],
+      "role": "CANDIDATE_ONLY_NO_TYPE_ASSERTION"
+    },
+    {
+      "va": "0x00578B70",
+      "name": "FUN_00578b70",
+      "code_sha256": "3DCF32B928DE7AA3D34CF8D515AF295C13C751B08359372DD160B16208094C18",
+      "mentions": 4,
+      "matches": [
+        {
+          "line_number": 52,
+          "line": "if (uVar3 < *(uint *)(iVar4 + 0x16c)) {",
+          "syntactic_lhs_assignment_candidate": false,
+          "preceding": [
+            "iVar4 = param_2[0x72];",
+            "uVar3 = DAT_0065bd6c * in_EAX;"
+          ]
+        },
+        {
+          "line_number": 53,
+          "line": "*(int *)(iVar4 + 0x16c) = *(int *)(iVar4 + 0x16c) - uVar3;",
+          "syntactic_lhs_assignment_candidate": true,
+          "preceding": [
+            "uVar3 = DAT_0065bd6c * in_EAX;",
+            "if (uVar3 < *(uint *)(iVar4 + 0x16c)) {"
+          ]
+        },
+        {
+          "line_number": 56,
+          "line": "*(undefined4 *)(iVar4 + 0x16c) = 0;",
+          "syntactic_lhs_assignment_candidate": true,
+          "preceding": [
+            "}",
+            "else {"
+          ]
+        },
+        {
+          "line_number": 58,
+          "line": "piVar1 = (int *)(*(int *)(*piVar1 + 0x1c8) + 0x16c);",
+          "syntactic_lhs_assignment_candidate": false,
+          "preceding": [
+            "*(undefined4 *)(iVar4 + 0x16c) = 0;",
+            "}"
+          ]
+        }
+      ],
+      "role": "CANDIDATE_ONLY_NO_TYPE_ASSERTION"
+    },
+    {
+      "va": "0x00582AA0",
+      "name": "FUN_00582aa0",
+      "code_sha256": "D77D5113F738D2AC85C88F29CF59FCB805E85DA2D8BAF9666E00FBFA3FCB0EB3",
+      "mentions": 1,
+      "matches": [
+        {
+          "line_number": 96,
+          "line": "*(undefined4 *)(param_1 + 0x16c) = 0;",
+          "syntactic_lhs_assignment_candidate": true,
+          "preceding": [
+            "*(undefined1 **)(param_1 + 0xe4) = &DAT_00002710;",
+            "*(undefined4 *)(param_1 + 0x168) = 1;"
+          ]
+        }
+      ],
+      "role": "CANDIDATE_ONLY_NO_TYPE_ASSERTION"
+    },
+    {
+      "va": "0x00588470",
+      "name": "FUN_00588470",
+      "code_sha256": "F498B3D81AAF1860EEA29189E2BDB596A6E89AE9FC3EC74613A75588BC201E25",
+      "mentions": 5,
+      "matches": [
+        {
+          "line_number": 87,
+          "line": "if (*(uint *)(param_2 + 0x170) <= *(uint *)(param_2 + 0x16c)) {",
+          "syntactic_lhs_assignment_candidate": false,
+          "preceding": [
+            "local_184 = param_1;",
+            "if ((*(char *)(param_2 + 0x77) != '\\0') || (*(char *)(param_2 + 0x75) != '\\0')) {"
+          ]
+        },
+        {
+          "line_number": 373,
+          "line": "} while (*(uint *)(param_2 + 0x170) <= *(uint *)(param_2 + 0x16c));",
+          "syntactic_lhs_assignment_candidate": false,
+          "preceding": [
+            "iStack_144 = 0;",
+            "uStack_140 = 0;"
+          ]
+        },
+        {
+          "line_number": 376,
+          "line": "dVar2 = (double)*(int *)(param_2 + 0x16c);",
+          "syntactic_lhs_assignment_candidate": false,
+          "preceding": [
+            "}",
+            "iVar6 = FUN_0046f4c0(*(undefined4 *)(param_2 + 0x1a4),0x32);"
+          ]
+        },
+        {
+          "line_number": 377,
+          "line": "if (*(int *)(param_2 + 0x16c) < 0) {",
+          "syntactic_lhs_assignment_candidate": false,
+          "preceding": [
+            "iVar6 = FUN_0046f4c0(*(undefined4 *)(param_2 + 0x1a4),0x32);",
+            "dVar2 = (double)*(int *)(param_2 + 0x16c);"
+          ]
+        },
+        {
+          "line_number": 383,
+          "line": "*(undefined4 *)(param_2 + 0x16c) = dStack_138._0_4_;",
+          "syntactic_lhs_assignment_candidate": true,
+          "preceding": [
+            "puStack_188 = (undefined4 *)(in_FPUControlWord | 0xc00);",
+            "dStack_138 = (double)(longlong)ROUND(dVar2 * (double)iVar6 * _DAT_0063b070 + _DAT_0063b050);"
+          ]
+        }
+      ],
+      "role": "CANDIDATE_ONLY_NO_TYPE_ASSERTION"
+    },
+    {
+      "va": "0x0058A400",
+      "name": "FUN_0058a400",
+      "code_sha256": "A3BD244F223D1765BB0F122D25D424BC7C524660DA763F5BB75AA687DD5BCEC8",
+      "mentions": 2,
+      "matches": [
+        {
+          "line_number": 74,
+          "line": "if ((uVar6 <= local_30) && (uVar7 < *(uint *)(param_1 + 0x16c))) {",
+          "syntactic_lhs_assignment_candidate": false,
+          "preceding": [
+            "}",
+            "*(uint *)(param_1 + 0x170) = uVar6;"
+          ]
+        },
+        {
+          "line_number": 75,
+          "line": "*(uint *)(param_1 + 0x16c) = uVar7;",
+          "syntactic_lhs_assignment_candidate": true,
+          "preceding": [
+            "*(uint *)(param_1 + 0x170) = uVar6;",
+            "if ((uVar6 <= local_30) && (uVar7 < *(uint *)(param_1 + 0x16c))) {"
+          ]
+        }
+      ],
+      "role": "CANDIDATE_ONLY_NO_TYPE_ASSERTION"
+    },
+    {
+      "va": "0x0058A540",
+      "name": "FUN_0058a540",
+      "code_sha256": "8B8F6EC30A565A9760B27883817B2A0C8D27FC6E30FD596BED767F97BD0E03D7",
+      "mentions": 2,
+      "matches": [
+        {
+          "line_number": 41,
+          "line": "*(undefined4 *)(param_1 + 0x16c) = 0;",
+          "syntactic_lhs_assignment_candidate": true,
+          "preceding": [
+            "}",
+            "iVar3 = 0;"
+          ]
+        },
+        {
+          "line_number": 46,
+          "line": "*(int *)(param_1 + 0x16c) = iVar3;",
+          "syntactic_lhs_assignment_candidate": true,
+          "preceding": [
+            "do {",
+            "iVar3 = iVar3 + iVar2;"
+          ]
+        }
+      ],
+      "role": "CANDIDATE_ONLY_NO_TYPE_ASSERTION"
+    },
+    {
+      "va": "0x0058A650",
+      "name": "FUN_0058a650",
+      "code_sha256": "6B530AC4D4372949EB50315A602773E539D3BAC1BB7308923AD87342CDF8F634",
+      "mentions": 2,
+      "matches": [
+        {
+          "line_number": 80,
+          "line": "if (*(uint *)(param_1 + 0x170) <= *(uint *)(param_1 + 0x16c)) {",
+          "syntactic_lhs_assignment_candidate": false,
+          "preceding": [
+            "ExceptionList = &local_4c;",
+            "local_15c = param_1;"
+          ]
+        },
+        {
+          "line_number": 363,
+          "line": "} while (*(uint *)(iVar4 + 0x170) <= *(uint *)(iVar4 + 0x16c));",
+          "syntactic_lhs_assignment_candidate": false,
+          "preceding": [
+            "iStack_138 = 0;",
+            "uStack_134 = 0;"
+          ]
+        }
+      ],
+      "role": "CANDIDATE_ONLY_NO_TYPE_ASSERTION"
+    },
+    {
+      "va": "0x0058E870",
+      "name": "FUN_0058e870",
+      "code_sha256": "6DA6821B4DD091F6F6BADE169E0CD7AC49CB8F7F2FD8DA371D98F742537E9CE7",
+      "mentions": 1,
+      "matches": [
+        {
+          "line_number": 176,
+          "line": "FUN_00470770(local_68 + 0x16c);",
+          "syntactic_lhs_assignment_candidate": false,
+          "preceding": [
+            "FUN_00470700(iVar2 + 0x168);",
+            "iVar2 = local_68;"
+          ]
+        }
+      ],
+      "role": "CANDIDATE_ONLY_NO_TYPE_ASSERTION"
+    },
+    {
+      "va": "0x0058EFD0",
+      "name": "FUN_0058efd0",
+      "code_sha256": "48EE29E392738F66450D2473ACDB27C00D617FFBE3270912381C21C1B800587A",
+      "mentions": 1,
+      "matches": [
+        {
+          "line_number": 471,
+          "line": "iStack_d4 = *(int *)(unaff_EDI + 0x16c);",
+          "syntactic_lhs_assignment_candidate": false,
+          "preceding": [
+            "iStack_e4 = param_1;",
+            "FUN_004628f0();"
+          ]
+        }
+      ],
+      "role": "CANDIDATE_ONLY_NO_TYPE_ASSERTION"
+    }
+  ]
+}

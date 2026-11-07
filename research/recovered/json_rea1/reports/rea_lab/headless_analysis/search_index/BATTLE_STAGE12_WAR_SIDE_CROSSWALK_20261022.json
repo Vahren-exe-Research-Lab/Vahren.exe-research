@@ -1,0 +1,2944 @@
+{
+  "research_id": "BRIDGE-20261022-RESEARCH-12-WAR-SIDE-CROSSWALK",
+  "status": "EIGHT_SAVED_ORIGINAL_SNAPSHOTS_POINTER_JOINS_NOT_ATOMIC",
+  "original_exe_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "captures": [
+    {
+      "session": "BATTLE_USER_20261021T163100686424Z_9cddfc86",
+      "source": "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_01.json",
+      "source_sha256": "7C0A7BD05FFAB908A90BBBEC0863FCE040A99A33A17E75520C9CC19094565332",
+      "runtime_side_classes": [
+        "Player",
+        "Enemy",
+        "Enemy"
+      ],
+      "troop_leader_counts": [
+        24,
+        24,
+        0
+      ],
+      "participation_entries": [
+        {
+          "spot_pointer": "0x4100F3A8",
+          "entry_definitions": 8,
+          "leader_record_matches_per_side": [
+            8,
+            0,
+            0
+          ],
+          "all_unit_record_matches_per_side": [
+            8,
+            0,
+            0
+          ],
+          "no_runtime_match": [],
+          "matching_help_entries": []
+        },
+        {
+          "spot_pointer": "0x41010128",
+          "entry_definitions": 16,
+          "leader_record_matches_per_side": [
+            16,
+            0,
+            0
+          ],
+          "all_unit_record_matches_per_side": [
+            16,
+            0,
+            0
+          ],
+          "no_runtime_match": [],
+          "matching_help_entries": []
+        },
+        {
+          "spot_pointer": "0x4106BB58",
+          "entry_definitions": 8,
+          "leader_record_matches_per_side": [
+            0,
+            8,
+            0
+          ],
+          "all_unit_record_matches_per_side": [
+            0,
+            8,
+            0
+          ],
+          "no_runtime_match": [],
+          "matching_help_entries": [
+            {
+              "spot_pointer": "0x4106BB58",
+              "power_pointer": "0x1BFB9DB8",
+              "side_byte": 1,
+              "help_tree_node": "0x2785EA30"
+            }
+          ]
+        }
+      ],
+      "troop_parent_checks": [
+        {
+          "troop": "0x4106A130",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC9A68",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106B138",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106B498",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106ADD8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A208",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106AB50",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A490",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A9A0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A7F0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A8C8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x41069B48",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A058",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106B210",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106AEB0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A2E0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x41069EA8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106AD00",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106AA78",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A3B8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x41069CF8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A640",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106AC28",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106B3C0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA560",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC9F78",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA710",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCADD0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCAEA8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA7E8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC9C18",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC9B40",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCB058",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA200",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA8C0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC98B8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC9CF0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCB130",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCAF80",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCB208",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA128",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA2D8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA638",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC9DC8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA3B0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC9EA0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA050",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC9990",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        }
+      ],
+      "atomic": false,
+      "territory_names_verified": false,
+      "all_entries_belong_to_Player_side": false
+    },
+    {
+      "session": "BATTLE_USER_20261021T163100686424Z_9cddfc86",
+      "source": "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_02.json",
+      "source_sha256": "D7662477F8D136EBD98541061A9E896F9B535193046CB0C0F01F95FDC826D9C8",
+      "runtime_side_classes": [
+        "Player",
+        "Enemy",
+        "Enemy"
+      ],
+      "troop_leader_counts": [
+        24,
+        24,
+        0
+      ],
+      "participation_entries": [
+        {
+          "spot_pointer": "0x4100F3A8",
+          "entry_definitions": 8,
+          "leader_record_matches_per_side": [
+            8,
+            0,
+            0
+          ],
+          "all_unit_record_matches_per_side": [
+            8,
+            0,
+            0
+          ],
+          "no_runtime_match": [],
+          "matching_help_entries": []
+        },
+        {
+          "spot_pointer": "0x41010128",
+          "entry_definitions": 16,
+          "leader_record_matches_per_side": [
+            16,
+            0,
+            0
+          ],
+          "all_unit_record_matches_per_side": [
+            16,
+            0,
+            0
+          ],
+          "no_runtime_match": [],
+          "matching_help_entries": []
+        },
+        {
+          "spot_pointer": "0x4106BB58",
+          "entry_definitions": 8,
+          "leader_record_matches_per_side": [
+            0,
+            8,
+            0
+          ],
+          "all_unit_record_matches_per_side": [
+            0,
+            8,
+            0
+          ],
+          "no_runtime_match": [],
+          "matching_help_entries": [
+            {
+              "spot_pointer": "0x4106BB58",
+              "power_pointer": "0x1BFB9DB8",
+              "side_byte": 1,
+              "help_tree_node": "0x2785EA30"
+            }
+          ]
+        }
+      ],
+      "troop_parent_checks": [
+        {
+          "troop": "0x4106A130",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC9A68",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106B138",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106B498",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106ADD8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A208",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106AB50",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A490",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A9A0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A7F0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A8C8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x41069B48",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A058",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106B210",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106AEB0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A2E0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x41069EA8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106AD00",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106AA78",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A3B8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x41069CF8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A640",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106AC28",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106B3C0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA560",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC9F78",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA710",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCADD0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCAEA8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA7E8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC9C18",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC9B40",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCB058",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA200",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA8C0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC98B8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC9CF0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCB130",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCAF80",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCB208",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA128",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA2D8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA638",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC9DC8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA3B0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC9EA0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA050",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC9990",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        }
+      ],
+      "atomic": false,
+      "territory_names_verified": false,
+      "all_entries_belong_to_Player_side": false
+    },
+    {
+      "session": "BATTLE_USER_20261021T163100686424Z_9cddfc86",
+      "source": "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_03.json",
+      "source_sha256": "4806E392CBC3ED29756C5C3BCDC65ABD40B176DF6AFFC80CE6C420A5F66CA088",
+      "runtime_side_classes": [
+        "Player",
+        "Enemy",
+        "Enemy"
+      ],
+      "troop_leader_counts": [
+        24,
+        24,
+        0
+      ],
+      "participation_entries": [
+        {
+          "spot_pointer": "0x4100F3A8",
+          "entry_definitions": 8,
+          "leader_record_matches_per_side": [
+            8,
+            0,
+            0
+          ],
+          "all_unit_record_matches_per_side": [
+            8,
+            0,
+            0
+          ],
+          "no_runtime_match": [],
+          "matching_help_entries": []
+        },
+        {
+          "spot_pointer": "0x41010128",
+          "entry_definitions": 16,
+          "leader_record_matches_per_side": [
+            16,
+            0,
+            0
+          ],
+          "all_unit_record_matches_per_side": [
+            16,
+            0,
+            0
+          ],
+          "no_runtime_match": [],
+          "matching_help_entries": []
+        },
+        {
+          "spot_pointer": "0x4106BB58",
+          "entry_definitions": 8,
+          "leader_record_matches_per_side": [
+            0,
+            8,
+            0
+          ],
+          "all_unit_record_matches_per_side": [
+            0,
+            8,
+            0
+          ],
+          "no_runtime_match": [],
+          "matching_help_entries": [
+            {
+              "spot_pointer": "0x4106BB58",
+              "power_pointer": "0x1BFB9DB8",
+              "side_byte": 1,
+              "help_tree_node": "0x2785EA30"
+            }
+          ]
+        }
+      ],
+      "troop_parent_checks": [
+        {
+          "troop": "0x4106A130",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC9A68",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106B138",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106B498",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106ADD8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A208",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106AB50",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A490",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A9A0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A7F0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A8C8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x41069B48",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A058",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106B210",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106AEB0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A2E0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x41069EA8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106AD00",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106AA78",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A3B8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x41069CF8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A640",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106AC28",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106B3C0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA560",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC9F78",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA710",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCADD0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCAEA8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA7E8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC9C18",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC9B40",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCB058",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA200",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA8C0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC98B8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC9CF0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCB130",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCAF80",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCB208",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA128",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA2D8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA638",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC9DC8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA3B0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC9EA0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA050",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC9990",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        }
+      ],
+      "atomic": false,
+      "territory_names_verified": false,
+      "all_entries_belong_to_Player_side": false
+    },
+    {
+      "session": "BATTLE_USER_20261021T163100686424Z_9cddfc86",
+      "source": "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_05.json",
+      "source_sha256": "77B29DC80A2CA84BD347A56D63E3830D54044358599961D0C7D0678B6352F9E7",
+      "runtime_side_classes": [
+        "Player",
+        "Enemy",
+        "Enemy"
+      ],
+      "troop_leader_counts": [
+        24,
+        24,
+        0
+      ],
+      "participation_entries": [
+        {
+          "spot_pointer": "0x4100F3A8",
+          "entry_definitions": 8,
+          "leader_record_matches_per_side": [
+            8,
+            0,
+            0
+          ],
+          "all_unit_record_matches_per_side": [
+            8,
+            0,
+            0
+          ],
+          "no_runtime_match": [],
+          "matching_help_entries": []
+        },
+        {
+          "spot_pointer": "0x41010128",
+          "entry_definitions": 16,
+          "leader_record_matches_per_side": [
+            16,
+            0,
+            0
+          ],
+          "all_unit_record_matches_per_side": [
+            16,
+            0,
+            0
+          ],
+          "no_runtime_match": [],
+          "matching_help_entries": []
+        },
+        {
+          "spot_pointer": "0x4106BB58",
+          "entry_definitions": 8,
+          "leader_record_matches_per_side": [
+            0,
+            8,
+            0
+          ],
+          "all_unit_record_matches_per_side": [
+            0,
+            8,
+            0
+          ],
+          "no_runtime_match": [],
+          "matching_help_entries": [
+            {
+              "spot_pointer": "0x4106BB58",
+              "power_pointer": "0x1BFB9DB8",
+              "side_byte": 1,
+              "help_tree_node": "0x2785EA30"
+            }
+          ]
+        }
+      ],
+      "troop_parent_checks": [
+        {
+          "troop": "0x4106A130",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC9A68",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106B138",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106B498",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106ADD8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A208",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106AB50",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A490",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A9A0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A7F0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A8C8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x41069B48",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A058",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106B210",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106AEB0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A2E0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x41069EA8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106AD00",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106AA78",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A3B8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x41069CF8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106A640",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106AC28",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4106B3C0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA560",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC9F78",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA710",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCADD0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCAEA8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA7E8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC9C18",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC9B40",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCB058",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA200",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA8C0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC98B8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC9CF0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCB130",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCAF80",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCB208",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA128",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA2D8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA638",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC9DC8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA3B0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC9EA0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DCA050",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42DC9990",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        }
+      ],
+      "atomic": false,
+      "territory_names_verified": false,
+      "all_entries_belong_to_Player_side": false
+    },
+    {
+      "session": "BATTLE_USER_20261021T164622798833Z_b8419f5d",
+      "source": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_01.json",
+      "source_sha256": "9DE328DA5FBFF98151ED2A26133FC123EABE6972DF1C6588F0DC4AB26098A034",
+      "runtime_side_classes": [
+        "Player",
+        "Enemy",
+        "Enemy"
+      ],
+      "troop_leader_counts": [
+        24,
+        24,
+        0
+      ],
+      "participation_entries": [
+        {
+          "spot_pointer": "0x420C6B38",
+          "entry_definitions": 8,
+          "leader_record_matches_per_side": [
+            8,
+            0,
+            0
+          ],
+          "all_unit_record_matches_per_side": [
+            8,
+            0,
+            0
+          ],
+          "no_runtime_match": [],
+          "matching_help_entries": []
+        },
+        {
+          "spot_pointer": "0x420C9058",
+          "entry_definitions": 16,
+          "leader_record_matches_per_side": [
+            16,
+            0,
+            0
+          ],
+          "all_unit_record_matches_per_side": [
+            16,
+            0,
+            0
+          ],
+          "no_runtime_match": [],
+          "matching_help_entries": []
+        },
+        {
+          "spot_pointer": "0x4211ECF0",
+          "entry_definitions": 8,
+          "leader_record_matches_per_side": [
+            0,
+            8,
+            0
+          ],
+          "all_unit_record_matches_per_side": [
+            0,
+            8,
+            0
+          ],
+          "no_runtime_match": [],
+          "matching_help_entries": [
+            {
+              "spot_pointer": "0x4211ECF0",
+              "power_pointer": "0x153C4D00",
+              "side_byte": 1,
+              "help_tree_node": "0x2792CA38"
+            }
+          ]
+        }
+      ],
+      "troop_parent_checks": [
+        {
+          "troop": "0x42120130",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42120EB0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4211FEA8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42120A78",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42120640",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x421208C8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42120208",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42120DD8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42120490",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x421218D0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x421203B8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42121720",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4211FF80",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x421217F8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42120D00",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42121D08",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42121EB8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42121B58",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C17E0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42121A80",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42121648",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42121C30",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42121DE0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x421219A8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1048",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1EA0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C0F70",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C0C10",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C18B8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C13A8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1708",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1990",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1DC8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1120",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1B40",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C2128",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1F78",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C2050",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C11F8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C23B0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C2488",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C0B38",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C0CE8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1C18",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C0DC0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1A68",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1CF0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C2200",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        }
+      ],
+      "atomic": false,
+      "territory_names_verified": false,
+      "all_entries_belong_to_Player_side": false
+    },
+    {
+      "session": "BATTLE_USER_20261021T164622798833Z_b8419f5d",
+      "source": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_02.json",
+      "source_sha256": "285F30D088752016F1792800EE8DD7E32E630BB5523C464FEC737DA7D4B7C614",
+      "runtime_side_classes": [
+        "Player",
+        "Enemy",
+        "Enemy"
+      ],
+      "troop_leader_counts": [
+        24,
+        24,
+        0
+      ],
+      "participation_entries": [
+        {
+          "spot_pointer": "0x420C6B38",
+          "entry_definitions": 8,
+          "leader_record_matches_per_side": [
+            8,
+            0,
+            0
+          ],
+          "all_unit_record_matches_per_side": [
+            8,
+            0,
+            0
+          ],
+          "no_runtime_match": [],
+          "matching_help_entries": []
+        },
+        {
+          "spot_pointer": "0x420C9058",
+          "entry_definitions": 16,
+          "leader_record_matches_per_side": [
+            16,
+            0,
+            0
+          ],
+          "all_unit_record_matches_per_side": [
+            16,
+            0,
+            0
+          ],
+          "no_runtime_match": [],
+          "matching_help_entries": []
+        },
+        {
+          "spot_pointer": "0x4211ECF0",
+          "entry_definitions": 8,
+          "leader_record_matches_per_side": [
+            0,
+            8,
+            0
+          ],
+          "all_unit_record_matches_per_side": [
+            0,
+            8,
+            0
+          ],
+          "no_runtime_match": [],
+          "matching_help_entries": [
+            {
+              "spot_pointer": "0x4211ECF0",
+              "power_pointer": "0x153C4D00",
+              "side_byte": 1,
+              "help_tree_node": "0x2792CA38"
+            }
+          ]
+        }
+      ],
+      "troop_parent_checks": [
+        {
+          "troop": "0x42120130",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42120EB0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4211FEA8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42120A78",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42120640",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x421208C8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42120208",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42120DD8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42120490",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x421218D0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x421203B8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42121720",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4211FF80",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x421217F8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42120D00",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42121D08",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42121EB8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42121B58",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C17E0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42121A80",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42121648",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42121C30",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42121DE0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x421219A8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1048",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1EA0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C0F70",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C0C10",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C18B8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C13A8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1708",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1990",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1DC8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1120",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1B40",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C2128",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1F78",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C2050",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C11F8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C23B0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C2488",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C0B38",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C0CE8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1C18",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C0DC0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1A68",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1CF0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C2200",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        }
+      ],
+      "atomic": false,
+      "territory_names_verified": false,
+      "all_entries_belong_to_Player_side": false
+    },
+    {
+      "session": "BATTLE_USER_20261021T164622798833Z_b8419f5d",
+      "source": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_04.json",
+      "source_sha256": "BC5C91413202D1F2512EFEE679B7DA08CD8DA0CA4E86AFCCED288E4BD051056A",
+      "runtime_side_classes": [
+        "Player",
+        "Enemy",
+        "Enemy"
+      ],
+      "troop_leader_counts": [
+        24,
+        24,
+        0
+      ],
+      "participation_entries": [
+        {
+          "spot_pointer": "0x420C6B38",
+          "entry_definitions": 8,
+          "leader_record_matches_per_side": [
+            8,
+            0,
+            0
+          ],
+          "all_unit_record_matches_per_side": [
+            8,
+            0,
+            0
+          ],
+          "no_runtime_match": [],
+          "matching_help_entries": []
+        },
+        {
+          "spot_pointer": "0x420C9058",
+          "entry_definitions": 16,
+          "leader_record_matches_per_side": [
+            16,
+            0,
+            0
+          ],
+          "all_unit_record_matches_per_side": [
+            16,
+            0,
+            0
+          ],
+          "no_runtime_match": [],
+          "matching_help_entries": []
+        },
+        {
+          "spot_pointer": "0x4211ECF0",
+          "entry_definitions": 8,
+          "leader_record_matches_per_side": [
+            0,
+            8,
+            0
+          ],
+          "all_unit_record_matches_per_side": [
+            0,
+            8,
+            0
+          ],
+          "no_runtime_match": [],
+          "matching_help_entries": [
+            {
+              "spot_pointer": "0x4211ECF0",
+              "power_pointer": "0x153C4D00",
+              "side_byte": 1,
+              "help_tree_node": "0x2792CA38"
+            }
+          ]
+        }
+      ],
+      "troop_parent_checks": [
+        {
+          "troop": "0x42120130",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42120EB0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4211FEA8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42120A78",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42120640",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x421208C8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42120208",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42120DD8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42120490",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x421218D0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x421203B8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42121720",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4211FF80",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x421217F8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42120D00",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42121D08",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42121EB8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42121B58",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C17E0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42121A80",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42121648",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42121C30",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42121DE0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x421219A8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1048",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1EA0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C0F70",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C0C10",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C18B8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C13A8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1708",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1990",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1DC8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1120",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1B40",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C2128",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1F78",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C2050",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C11F8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C23B0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C2488",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C0B38",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C0CE8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1C18",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C0DC0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1A68",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1CF0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C2200",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        }
+      ],
+      "atomic": false,
+      "territory_names_verified": false,
+      "all_entries_belong_to_Player_side": false
+    },
+    {
+      "session": "BATTLE_USER_20261021T164622798833Z_b8419f5d",
+      "source": "BATTLE_USER_20261021T164622798833Z_b8419f5d_RAW_05.json",
+      "source_sha256": "72FF106B32D2AF20384685A0F45D8DB587EE5EFC9F3F93C75F43E31EB77A3108",
+      "runtime_side_classes": [
+        "Player",
+        "Enemy",
+        "Enemy"
+      ],
+      "troop_leader_counts": [
+        24,
+        24,
+        0
+      ],
+      "participation_entries": [
+        {
+          "spot_pointer": "0x420C6B38",
+          "entry_definitions": 8,
+          "leader_record_matches_per_side": [
+            8,
+            0,
+            0
+          ],
+          "all_unit_record_matches_per_side": [
+            8,
+            0,
+            0
+          ],
+          "no_runtime_match": [],
+          "matching_help_entries": []
+        },
+        {
+          "spot_pointer": "0x420C9058",
+          "entry_definitions": 16,
+          "leader_record_matches_per_side": [
+            16,
+            0,
+            0
+          ],
+          "all_unit_record_matches_per_side": [
+            16,
+            0,
+            0
+          ],
+          "no_runtime_match": [],
+          "matching_help_entries": []
+        },
+        {
+          "spot_pointer": "0x4211ECF0",
+          "entry_definitions": 8,
+          "leader_record_matches_per_side": [
+            0,
+            8,
+            0
+          ],
+          "all_unit_record_matches_per_side": [
+            0,
+            8,
+            0
+          ],
+          "no_runtime_match": [],
+          "matching_help_entries": [
+            {
+              "spot_pointer": "0x4211ECF0",
+              "power_pointer": "0x153C4D00",
+              "side_byte": 1,
+              "help_tree_node": "0x2792CA38"
+            }
+          ]
+        }
+      ],
+      "troop_parent_checks": [
+        {
+          "troop": "0x42120130",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42120EB0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4211FEA8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42120A78",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42120640",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x421208C8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42120208",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42120DD8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42120490",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x421218D0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x421203B8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42121720",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x4211FF80",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x421217F8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42120D00",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42121D08",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42121EB8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42121B58",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C17E0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42121A80",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42121648",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42121C30",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x42121DE0",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x421219A8",
+          "side": 0,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1048",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1EA0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C0F70",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C0C10",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C18B8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C13A8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1708",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1990",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1DC8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1120",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1B40",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C2128",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1F78",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C2050",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C11F8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C23B0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C2488",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C0B38",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C0CE8",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1C18",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C0DC0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1A68",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C1CF0",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        },
+        {
+          "troop": "0x280C2200",
+          "side": 1,
+          "plus4_is_game_manager": true,
+          "plus8_is_side_object": true
+        }
+      ],
+      "atomic": false,
+      "territory_names_verified": false,
+      "all_entries_belong_to_Player_side": false
+    }
+  ],
+  "findings": {
+    "records_8_and_16_match_Player_24_leaders_in_all_eight": true,
+    "other_8_records_match_Enemy_side1_leaders_in_all_eight": true,
+    "Enemy_matching_entry_spot_equals_help_entry_with_side_byte1": true,
+    "all_384_observed_Troop_parent_pairs_match_GameManager_and_Side": true
+  },
+  "interpretation": "The historical AttackMap name is not an exclusive attacker-side list: in these runs it also includes the HelpMap-linked Enemy entry. Export raw provenance and observed side association separately.",
+  "not_proven": [
+    "Actual territory names and permanent unit IDs",
+    "All entries in all game modes follow the same association",
+    "Simultaneous-frame validity",
+    "Side ownership or outcome in an unrelated battle"
+  ],
+  "game_memory_accessed": false,
+  "recorder_changed": false,
+  "full_G1_proven": false,
+  "work_used": false
+}

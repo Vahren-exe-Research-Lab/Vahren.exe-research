@@ -1,0 +1,2719 @@
+{
+  "status": "STATIC WORK_NATIVEREGISTRIES ORIGINAL DAT, NOT LIVE BATTLE",
+  "corpus_files": 590,
+  "movetype_count": 33,
+  "unit_registry_count": 4586,
+  "class_registry_count": 4080,
+  "unit_origin_counts": {
+    "class/missing": 1720,
+    "class/has": 2360,
+    "unit/missing": 1992,
+    "unit/class_property": 1037,
+    "unit/unit_property": 1557
+  },
+  "wiki_DAT_mismatch_tags": [
+    "snow",
+    "wheel",
+    "water_wheel",
+    "tank",
+    "majime",
+    "uneiw"
+  ],
+  "wiki_only_missing_four_tags": [
+    "city",
+    "takutics",
+    "mt_dummy",
+    "rugger"
+  ],
+  "movement_types": {
+    "normal": {
+      "name": "普通",
+      "raw_consti": [
+        "grass*6",
+        "sand*4",
+        "wood*3",
+        "rock*3",
+        "mersh*3",
+        "sea*3",
+        "road*6"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_examples": [
+          {
+            "unit": "van",
+            "via": "class_property",
+            "class": "c_van"
+          },
+          {
+            "unit": "kinkaku",
+            "via": "class_property",
+            "class": "c_kinkaku"
+          },
+          {
+            "unit": "ginkaku",
+            "via": "class_property",
+            "class": "c_ginkaku"
+          },
+          {
+            "unit": "fried",
+            "via": "unit_property",
+            "class": "c_fried"
+          },
+          {
+            "unit": "robin",
+            "via": "class_property",
+            "class": "c_robin"
+          },
+          {
+            "unit": "saimon",
+            "via": "class_property",
+            "class": "c_saimon"
+          },
+          {
+            "unit": "nagatanien",
+            "via": "class_property",
+            "class": "c_nagatanien"
+          },
+          {
+            "unit": "haggar",
+            "via": "unit_property",
+            "class": "c_haggar"
+          },
+          {
+            "unit": "ondisk",
+            "via": "class_property",
+            "class": "c_ondisk"
+          },
+          {
+            "unit": "geruch",
+            "via": "unit_property",
+            "class": "c_geruch"
+          },
+          {
+            "unit": "genria",
+            "via": "unit_property",
+            "class": "c_sky"
+          },
+          {
+            "unit": "fmrim",
+            "via": "unit_property",
+            "class": "c_fmrim"
+          }
+        ],
+        "class_examples": [
+          "c_kskswn",
+          "c_kskswn2",
+          "c_kskswn3",
+          "c_van",
+          "c_van2",
+          "c_van3",
+          "c_kinkaku",
+          "c_kinkaku2",
+          "c_kinkaku3",
+          "c_ginkaku",
+          "c_ginkaku2",
+          "c_ginkaku3"
+        ],
+        "unit_count": 234,
+        "class_count": 467,
+        "unit_own_count": 197,
+        "class_direct_count": 31
+      }
+    },
+    "hover": {
+      "name": "浮遊",
+      "raw_consti": [
+        "grass*6",
+        "mud*6",
+        "sand*6",
+        "mersh*6",
+        "snow*6",
+        "sea*6",
+        "road*6",
+        "wood*3"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_examples": [
+          {
+            "unit": "rma",
+            "via": "unit_property",
+            "class": "c_rma"
+          },
+          {
+            "unit": "sknm",
+            "via": "unit_property",
+            "class": "c_sknm"
+          },
+          {
+            "unit": "sakerobog",
+            "via": "unit_property",
+            "class": "c_sakerobo"
+          },
+          {
+            "unit": "sakerobokaiwa",
+            "via": "unit_property",
+            "class": "c_sakerobo"
+          },
+          {
+            "unit": "sakerobo",
+            "via": "unit_property",
+            "class": "c_sakerobo"
+          },
+          {
+            "unit": "tis",
+            "via": "class_property",
+            "class": "c_tis"
+          },
+          {
+            "unit": "hsiorn",
+            "via": "unit_property",
+            "class": "c_hsiorn"
+          },
+          {
+            "unit": "aware",
+            "via": "class_property",
+            "class": "c_aware"
+          },
+          {
+            "unit": "ryg",
+            "via": "class_property",
+            "class": "c_ryg"
+          },
+          {
+            "unit": "aik",
+            "via": "class_property",
+            "class": "c_aik"
+          },
+          {
+            "unit": "honsha",
+            "via": "unit_property",
+            "class": "c_honsha"
+          },
+          {
+            "unit": "arowne",
+            "via": "class_property",
+            "class": "c_arowne"
+          }
+        ],
+        "class_examples": [
+          "c_tis",
+          "c_tis2",
+          "c_tis3",
+          "c_fried",
+          "c_fried2",
+          "c_fried3",
+          "c_aware",
+          "c_aware2",
+          "in000",
+          "in0002",
+          "c_atomic",
+          "c_atomic2"
+        ],
+        "unit_count": 356,
+        "class_count": 525,
+        "unit_own_count": 134,
+        "class_direct_count": 66
+      }
+    },
+    "kairu": {
+      "name": "海洋浮遊",
+      "raw_consti": [
+        "sea*8",
+        "mersh*7",
+        "grass*6",
+        "mud*6",
+        "sand*6",
+        "snow*6",
+        "road*6"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_examples": [
+          {
+            "unit": "tuto_snnn",
+            "via": "class_property",
+            "class": "c_snnn"
+          },
+          {
+            "unit": "murpo",
+            "via": "class_property",
+            "class": "c_murpo"
+          },
+          {
+            "unit": "snnn",
+            "via": "class_property",
+            "class": "c_snnn"
+          },
+          {
+            "unit": "snnnkis",
+            "via": "class_property",
+            "class": "c_snnnkis"
+          },
+          {
+            "unit": "mgr",
+            "via": "unit_property",
+            "class": "c_mgr"
+          },
+          {
+            "unit": "yuh",
+            "via": "unit_property",
+            "class": "c_yuh"
+          },
+          {
+            "unit": "subier",
+            "via": "unit_property",
+            "class": "a7sake"
+          },
+          {
+            "unit": "snnn_23",
+            "via": "class_property",
+            "class": "c_snnn"
+          },
+          {
+            "unit": "mgr_af",
+            "via": "unit_property",
+            "class": "c_mgr"
+          },
+          {
+            "unit": "yuh_af",
+            "via": "unit_property",
+            "class": "c_yuh"
+          },
+          {
+            "unit": "snnn23ed",
+            "via": "class_property",
+            "class": "c_snnn"
+          },
+          {
+            "unit": "snnn23ed_b",
+            "via": "class_property",
+            "class": "c_snnn"
+          }
+        ],
+        "class_examples": [
+          "c_murpo",
+          "c_murpo2",
+          "c_snnn",
+          "c_snnn2",
+          "c_snnn3",
+          "c_snnnkis",
+          "c_snnnkis2",
+          "c_snnnkis3",
+          "c_yuh",
+          "c_yuh2",
+          "c_yuh3",
+          "a042"
+        ],
+        "unit_count": 71,
+        "class_count": 66,
+        "unit_own_count": 20,
+        "class_direct_count": 7
+      }
+    },
+    "hyouzan": {
+      "name": "屋上戦艦",
+      "raw_consti": [
+        "sea*8",
+        "mersh*7",
+        "grass*6",
+        "mud*6",
+        "sand*6",
+        "snow*6",
+        "road*6",
+        "rock*3",
+        "wood*3"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_examples": [
+          {
+            "unit": "plazchen",
+            "via": "unit_property",
+            "class": "c_plazchen"
+          },
+          {
+            "unit": "plazchen_dr",
+            "via": "unit_property",
+            "class": "c_plazchen"
+          },
+          {
+            "unit": "plazchen_264",
+            "via": "unit_property",
+            "class": "c_plazchen"
+          },
+          {
+            "unit": "g_plazchen",
+            "via": "unit_property",
+            "class": "c_plazchen"
+          }
+        ],
+        "class_examples": [],
+        "unit_count": 4,
+        "class_count": 0,
+        "unit_own_count": 4,
+        "class_direct_count": 0
+      }
+    },
+    "shinobi": {
+      "name": "強脚",
+      "raw_consti": [
+        "grass*7",
+        "mersh*6",
+        "wood*7",
+        "rock*7",
+        "road*6"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_examples": [
+          {
+            "unit": "tuto_knn",
+            "via": "unit_property",
+            "class": "c_knn"
+          },
+          {
+            "unit": "asasin_sci",
+            "via": "unit_property",
+            "class": "c_asasin"
+          },
+          {
+            "unit": "asasin_non",
+            "via": "unit_property",
+            "class": "c_asasin"
+          },
+          {
+            "unit": "akys",
+            "via": "unit_property",
+            "class": "c_akys"
+          },
+          {
+            "unit": "leo",
+            "via": "unit_property",
+            "class": "c_leo"
+          },
+          {
+            "unit": "knn",
+            "via": "unit_property",
+            "class": "c_knn"
+          },
+          {
+            "unit": "piknn",
+            "via": "unit_property",
+            "class": "c_piknn"
+          },
+          {
+            "unit": "osni",
+            "via": "unit_property",
+            "class": "c_osni"
+          },
+          {
+            "unit": "scavenger",
+            "via": "unit_property",
+            "class": "c_scavenger"
+          },
+          {
+            "unit": "puck",
+            "via": "unit_property",
+            "class": "c_puck"
+          },
+          {
+            "unit": "cyberz1",
+            "via": "unit_property",
+            "class": "c_cyberz1"
+          },
+          {
+            "unit": "cyberz2",
+            "via": "unit_property",
+            "class": "c_cyberz2"
+          }
+        ],
+        "class_examples": [
+          "c_mur3",
+          "c_murpo3",
+          "c_piknn3",
+          "c_osni",
+          "c_osni2",
+          "c_osni3",
+          "c_aware3",
+          "in0003",
+          "c_ruida",
+          "c_ruida2",
+          "c_ruida3",
+          "c_pchr"
+        ],
+        "unit_count": 366,
+        "class_count": 184,
+        "unit_own_count": 305,
+        "class_direct_count": 30
+      }
+    },
+    "moor": {
+      "name": "荒地",
+      "raw_consti": [
+        "grass*7",
+        "rock*7",
+        "mud*10",
+        "sand*7",
+        "mersh*3",
+        "wood*3",
+        "sea*3"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_examples": [
+          {
+            "unit": "bidairobo",
+            "via": "unit_property",
+            "class": "c_bidairobo"
+          },
+          {
+            "unit": "jnpi",
+            "via": "unit_property",
+            "class": "c_jnpi"
+          },
+          {
+            "unit": "senpai",
+            "via": "unit_property",
+            "class": "c_senpai"
+          },
+          {
+            "unit": "bidairobo_udk5",
+            "via": "unit_property",
+            "class": "c_bidairobo_udk5"
+          },
+          {
+            "unit": "sadas",
+            "via": "class_property",
+            "class": "c_sadas"
+          },
+          {
+            "unit": "knk",
+            "via": "class_property",
+            "class": "c_knk"
+          },
+          {
+            "unit": "tns",
+            "via": "class_property",
+            "class": "c_tns"
+          },
+          {
+            "unit": "pojiko",
+            "via": "unit_property",
+            "class": "c_pojiko"
+          },
+          {
+            "unit": "zrkl",
+            "via": "unit_property",
+            "class": "c_zrkl"
+          },
+          {
+            "unit": "ryuma",
+            "via": "unit_property",
+            "class": "c_ryuma"
+          },
+          {
+            "unit": "gt",
+            "via": "class_property",
+            "class": "c_gt"
+          },
+          {
+            "unit": "aknm",
+            "via": "class_property",
+            "class": "c_aknm"
+          }
+        ],
+        "class_examples": [
+          "c_sadas",
+          "c_sadas2",
+          "c_sadas3",
+          "c_supernkdk",
+          "c_supernkdk2",
+          "c_supernkdk3",
+          "c_knk",
+          "c_knk2",
+          "c_knk3",
+          "c_tns",
+          "c_tns2",
+          "c_tns3"
+        ],
+        "unit_count": 81,
+        "class_count": 80,
+        "unit_own_count": 32,
+        "class_direct_count": 6
+      }
+    },
+    "fly": {
+      "name": "飛行",
+      "raw_consti": [
+        "grass*7",
+        "mud*7",
+        "sand*7",
+        "mersh*7",
+        "snow*7",
+        "sea*7",
+        "road*7",
+        "wood*3"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_examples": [
+          {
+            "unit": "tuto_udk",
+            "via": "class_property",
+            "class": "c_udk"
+          },
+          {
+            "unit": "tuto_e1",
+            "via": "class_property",
+            "class": "c_bidairobo"
+          },
+          {
+            "unit": "tuto_e2",
+            "via": "class_property",
+            "class": "c_bidairobo"
+          },
+          {
+            "unit": "tuto_bnkrg",
+            "via": "class_property",
+            "class": "c_bnkrg"
+          },
+          {
+            "unit": "tuto_ru",
+            "via": "class_property",
+            "class": "c_ru"
+          },
+          {
+            "unit": "ma_tuto_1",
+            "via": "class_property",
+            "class": "c_udk"
+          },
+          {
+            "unit": "udk",
+            "via": "class_property",
+            "class": "c_udk"
+          },
+          {
+            "unit": "batman",
+            "via": "unit_property",
+            "class": "c_batman"
+          },
+          {
+            "unit": "mhr",
+            "via": "unit_property",
+            "class": "c_mhr"
+          },
+          {
+            "unit": "ru",
+            "via": "class_property",
+            "class": "c_ru"
+          },
+          {
+            "unit": "bnkrg",
+            "via": "class_property",
+            "class": "c_bnkrg"
+          },
+          {
+            "unit": "nel",
+            "via": "class_property",
+            "class": "c_nel"
+          }
+        ],
+        "class_examples": [
+          "c_udk",
+          "c_udk2",
+          "c_udk3",
+          "c_bidairobo",
+          "c_bidairobo2",
+          "c_bidairobo3",
+          "c_knn",
+          "c_knn2",
+          "c_knn3",
+          "c_ru",
+          "c_ru2",
+          "c_ru3"
+        ],
+        "unit_count": 424,
+        "class_count": 255,
+        "unit_own_count": 130,
+        "class_direct_count": 25
+      }
+    },
+    "grass": {
+      "name": "草原",
+      "raw_consti": [
+        "grass*10",
+        "mud*7",
+        "wood*3",
+        "rock*3",
+        "sand*3",
+        "mersh*3",
+        "sea*2",
+        "road*8"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_examples": [
+          {
+            "unit": "inmukun200",
+            "via": "class_property",
+            "class": "a002"
+          },
+          {
+            "unit": "inmukun201",
+            "via": "class_property",
+            "class": "a002"
+          },
+          {
+            "unit": "inmukun202",
+            "via": "class_property",
+            "class": "a002"
+          },
+          {
+            "unit": "inmukun203",
+            "via": "class_property",
+            "class": "a002"
+          },
+          {
+            "unit": "inmukun204",
+            "via": "class_property",
+            "class": "a002"
+          },
+          {
+            "unit": "inmukun205",
+            "via": "class_property",
+            "class": "a002"
+          },
+          {
+            "unit": "piel",
+            "via": "class_property",
+            "class": "c_piel"
+          },
+          {
+            "unit": "nyn",
+            "via": "class_property",
+            "class": "c_nyn"
+          },
+          {
+            "unit": "johnny",
+            "via": "unit_property",
+            "class": "c_johnny"
+          },
+          {
+            "unit": "charao",
+            "via": "unit_property",
+            "class": "c_charao"
+          },
+          {
+            "unit": "elite_a525_2_1",
+            "via": "class_property",
+            "class": "c_elite2"
+          },
+          {
+            "unit": "elite_a525_2_2",
+            "via": "class_property",
+            "class": "c_elite2"
+          }
+        ],
+        "class_examples": [
+          "c_piel",
+          "c_piel2",
+          "c_piel3",
+          "c_bluebiim",
+          "c_bluebiim2",
+          "c_kakuryoaf",
+          "c_kakuryoaf2",
+          "c_nyn",
+          "c_nyn2",
+          "c_nyn3",
+          "c_biim",
+          "c_biim2"
+        ],
+        "unit_count": 43,
+        "class_count": 82,
+        "unit_own_count": 4,
+        "class_direct_count": 9
+      }
+    },
+    "yukkuri": {
+      "name": "ゆっくり",
+      "raw_consti": [
+        "grass*9",
+        "mud*6",
+        "wood*6",
+        "rock*6",
+        "sand*2",
+        "mersh*1",
+        "sea*1",
+        "road*9"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_examples": [
+          {
+            "unit": "biim",
+            "via": "unit_property",
+            "class": "c_biim"
+          },
+          {
+            "unit": "biim_af",
+            "via": "unit_property",
+            "class": "c_biim"
+          },
+          {
+            "unit": "biim_bf",
+            "via": "unit_property",
+            "class": "c_biim"
+          },
+          {
+            "unit": "biim_cf",
+            "via": "unit_property",
+            "class": "c_biim"
+          },
+          {
+            "unit": "biim_df",
+            "via": "unit_property",
+            "class": "c_biim"
+          },
+          {
+            "unit": "biim_ef",
+            "via": "unit_property",
+            "class": "c_biim"
+          },
+          {
+            "unit": "biim_ff",
+            "via": "unit_property",
+            "class": "c_biim"
+          },
+          {
+            "unit": "biim_gf",
+            "via": "unit_property",
+            "class": "c_biim"
+          },
+          {
+            "unit": "biim_o",
+            "via": "unit_property",
+            "class": "c_biim"
+          },
+          {
+            "unit": "ginryu23_af",
+            "via": "unit_property",
+            "class": "c_biim"
+          },
+          {
+            "unit": "ginryu23_bf",
+            "via": "unit_property",
+            "class": "c_biim"
+          },
+          {
+            "unit": "ginryu23_cf",
+            "via": "unit_property",
+            "class": "c_biim"
+          }
+        ],
+        "class_examples": [
+          "a230",
+          "a2302",
+          "a2303",
+          "ene_a230",
+          "ene_a2302",
+          "ene_a2303",
+          "self_a230",
+          "self_a2302",
+          "self_a2303"
+        ],
+        "unit_count": 31,
+        "class_count": 9,
+        "unit_own_count": 31,
+        "class_direct_count": 3
+      }
+    },
+    "sand": {
+      "name": "砂漠",
+      "raw_consti": [
+        "sand*10",
+        "grass*7",
+        "mud*8",
+        "wood*3",
+        "rock*5",
+        "mersh*3",
+        "sea*3"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_examples": [
+          {
+            "unit": "kbtit",
+            "via": "class_property",
+            "class": "c_kbtit"
+          },
+          {
+            "unit": "sinrin",
+            "via": "class_property",
+            "class": "c_kbtit"
+          },
+          {
+            "unit": "kbtit_t23ed",
+            "via": "class_property",
+            "class": "c_kbtit"
+          },
+          {
+            "unit": "kbtit_t23ed2",
+            "via": "class_property",
+            "class": "c_kbtit"
+          },
+          {
+            "unit": "kbtit_joy",
+            "via": "class_property",
+            "class": "c_kbtit"
+          },
+          {
+            "unit": "kbtit_rage",
+            "via": "class_property",
+            "class": "c_kbtit"
+          },
+          {
+            "unit": "kbtit_sad",
+            "via": "class_property",
+            "class": "c_kbtit"
+          },
+          {
+            "unit": "kbtit_gosh",
+            "via": "class_property",
+            "class": "c_kbtit"
+          },
+          {
+            "unit": "kbtit_conf",
+            "via": "class_property",
+            "class": "c_kbtit"
+          },
+          {
+            "unit": "kbtit_cum",
+            "via": "class_property",
+            "class": "c_kbtit"
+          },
+          {
+            "unit": "kbtit_dark",
+            "via": "class_property",
+            "class": "c_kbtit"
+          },
+          {
+            "unit": "kbtit_miss",
+            "via": "class_property",
+            "class": "c_kbtit"
+          }
+        ],
+        "class_examples": [
+          "c_kbtit",
+          "c_kbtit2",
+          "c_kbtit3",
+          "a032",
+          "a0322",
+          "a0323",
+          "a0324",
+          "ene_a032",
+          "ene_a0322",
+          "ene_a0323",
+          "self_a032",
+          "self_a0322"
+        ],
+        "unit_count": 16,
+        "class_count": 15,
+        "unit_own_count": 0,
+        "class_direct_count": 1
+      }
+    },
+    "sea": {
+      "name": "海上",
+      "raw_consti": [
+        "sea*9",
+        "mersh*7",
+        "wood*3",
+        "rock*3"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_examples": [
+          {
+            "unit": "tuto_mur",
+            "via": "class_property",
+            "class": "c_mur"
+          },
+          {
+            "unit": "mur",
+            "via": "class_property",
+            "class": "c_mur"
+          },
+          {
+            "unit": "masahiko",
+            "via": "unit_property",
+            "class": "c_masahiko"
+          },
+          {
+            "unit": "higekuma",
+            "via": "class_property",
+            "class": "c_higekuma"
+          },
+          {
+            "unit": "shirobuta",
+            "via": "class_property",
+            "class": "c_shirobuta"
+          },
+          {
+            "unit": "akabuta",
+            "via": "class_property",
+            "class": "c_akabuta"
+          },
+          {
+            "unit": "kskswn",
+            "via": "unit_property",
+            "class": "c_kskswn"
+          },
+          {
+            "unit": "mugi",
+            "via": "unit_property",
+            "class": "c_mugi"
+          },
+          {
+            "unit": "okuo",
+            "via": "class_property",
+            "class": "c_okuo"
+          },
+          {
+            "unit": "milk",
+            "via": "unit_property",
+            "class": "c_milk"
+          },
+          {
+            "unit": "cobra",
+            "via": "unit_property",
+            "class": "c_cobra"
+          },
+          {
+            "unit": "tsuri",
+            "via": "unit_property",
+            "class": "c_tsuri"
+          }
+        ],
+        "class_examples": [
+          "c_mur",
+          "c_mur2",
+          "c_rma",
+          "c_rma2",
+          "c_rma3",
+          "c_higekuma",
+          "c_higekuma2",
+          "c_higekuma3",
+          "c_shirobuta",
+          "c_shirobuta2",
+          "c_shirobuta3",
+          "c_akabuta"
+        ],
+        "unit_count": 66,
+        "class_count": 111,
+        "unit_own_count": 45,
+        "class_direct_count": 16
+      }
+    },
+    "rock": {
+      "name": "山岳",
+      "raw_consti": [
+        "grass*7",
+        "rock*10",
+        "mud*8",
+        "sand*6",
+        "snow*7",
+        "mersh*3",
+        "sea*3"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_examples": [
+          {
+            "unit": "inu",
+            "via": "unit_property",
+            "class": "c_inu"
+          },
+          {
+            "unit": "skrn",
+            "via": "unit_property",
+            "class": "c_skrn"
+          },
+          {
+            "unit": "skrn2",
+            "via": "unit_property",
+            "class": "c_ksinu"
+          },
+          {
+            "unit": "miji",
+            "via": "class_property",
+            "class": "c_miji"
+          },
+          {
+            "unit": "agcl_r",
+            "via": "class_property",
+            "class": "c_agcl_r"
+          },
+          {
+            "unit": "astk",
+            "via": "class_property",
+            "class": "c_astk"
+          },
+          {
+            "unit": "dantag",
+            "via": "unit_property",
+            "class": "a7sake"
+          },
+          {
+            "unit": "aztk",
+            "via": "class_property",
+            "class": "sastkn"
+          },
+          {
+            "unit": "inu_joy",
+            "via": "unit_property",
+            "class": "c_inu"
+          },
+          {
+            "unit": "inu_sad",
+            "via": "unit_property",
+            "class": "c_inu"
+          },
+          {
+            "unit": "inu_miss",
+            "via": "unit_property",
+            "class": "c_inu"
+          },
+          {
+            "unit": "skrn_joy",
+            "via": "unit_property",
+            "class": "c_skrn"
+          }
+        ],
+        "class_examples": [
+          "c_diyusi",
+          "c_diyusi2",
+          "c_diyusi3",
+          "c_inu",
+          "c_inu2",
+          "c_inu3",
+          "c_ksinu",
+          "c_miji",
+          "c_miji2",
+          "c_miji3",
+          "c_agcl_r",
+          "c_agcl_r2"
+        ],
+        "unit_count": 35,
+        "class_count": 46,
+        "unit_own_count": 19,
+        "class_direct_count": 5
+      }
+    },
+    "wood": {
+      "name": "森林",
+      "raw_consti": [
+        "wood*10",
+        "grass*8",
+        "sand*3",
+        "mersh*6",
+        "sea*3"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_examples": [
+          {
+            "unit": "aniki",
+            "via": "class_property",
+            "class": "c_aniki"
+          },
+          {
+            "unit": "kazuya",
+            "via": "class_property",
+            "class": "c_kazuya"
+          },
+          {
+            "unit": "bio",
+            "via": "class_property",
+            "class": "c_bio"
+          },
+          {
+            "unit": "ikeda",
+            "via": "class_property",
+            "class": "c_ikeda"
+          },
+          {
+            "unit": "snd",
+            "via": "unit_property",
+            "class": "c_snd"
+          },
+          {
+            "unit": "bacon",
+            "via": "class_property",
+            "class": "c_bacon"
+          },
+          {
+            "unit": "mot",
+            "via": "class_property",
+            "class": "c_mot"
+          },
+          {
+            "unit": "yuk",
+            "via": "unit_property",
+            "class": "c_yuk"
+          },
+          {
+            "unit": "superhayakuchi",
+            "via": "unit_property",
+            "class": "c_superhayakuchi"
+          },
+          {
+            "unit": "nynkrn",
+            "via": "class_property",
+            "class": "c_nynkrn"
+          },
+          {
+            "unit": "msnm",
+            "via": "unit_property",
+            "class": "c_msnm"
+          },
+          {
+            "unit": "youseiou",
+            "via": "unit_property",
+            "class": "c_youseiou"
+          }
+        ],
+        "class_examples": [
+          "c_piknn",
+          "c_piknn2",
+          "c_aniki",
+          "c_aniki2",
+          "c_aniki3",
+          "c_kazuya",
+          "c_kazuya2",
+          "c_kazuya3",
+          "c_bio",
+          "c_bio2",
+          "c_bio3",
+          "c_ikeda"
+        ],
+        "unit_count": 59,
+        "class_count": 120,
+        "unit_own_count": 18,
+        "class_direct_count": 10
+      }
+    },
+    "mersh": {
+      "name": "沼地",
+      "raw_consti": [
+        "mersh*10",
+        "grass*6",
+        "mud*6",
+        "sea*6",
+        "rock*3",
+        "sand*3",
+        "wood*6"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_count": 0,
+        "class_count": 0,
+        "unit_own_count": 0,
+        "class_direct_count": 0,
+        "unit_examples": [],
+        "class_examples": []
+      }
+    },
+    "snow": {
+      "name": "雪原",
+      "raw_consti": [
+        "snow*10",
+        "grass*6",
+        "mud*7",
+        "wood*7",
+        "sand*4",
+        "rock*7",
+        "sea*3",
+        "mersh*3"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_count": 0,
+        "class_count": 0,
+        "unit_own_count": 0,
+        "class_direct_count": 0,
+        "unit_examples": [],
+        "class_examples": []
+      }
+    },
+    "snowh": {
+      "name": "雪原浮遊",
+      "raw_consti": [
+        "snow*10",
+        "mud*7",
+        "wood*7",
+        "rock*7",
+        "grass*6",
+        "sand*6",
+        "mersh*6",
+        "sea*6",
+        "road*6"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_examples": [
+          {
+            "unit": "ymnc",
+            "via": "class_property",
+            "class": "c_ymnc"
+          },
+          {
+            "unit": "aiktw",
+            "via": "unit_property",
+            "class": "c_aiktw"
+          },
+          {
+            "unit": "ice",
+            "via": "unit_property",
+            "class": "c_ice"
+          },
+          {
+            "unit": "krkntn",
+            "via": "class_property",
+            "class": "c_krkntn"
+          },
+          {
+            "unit": "aiktw_joy",
+            "via": "unit_property",
+            "class": "c_aiktw"
+          },
+          {
+            "unit": "aiktw_rage",
+            "via": "unit_property",
+            "class": "c_aiktw"
+          },
+          {
+            "unit": "aiktw_dark",
+            "via": "unit_property",
+            "class": "c_aiktw"
+          },
+          {
+            "unit": "ice_joy",
+            "via": "unit_property",
+            "class": "c_ice"
+          },
+          {
+            "unit": "ice_gosh",
+            "via": "unit_property",
+            "class": "c_ice"
+          },
+          {
+            "unit": "ice_conf",
+            "via": "unit_property",
+            "class": "c_ice"
+          },
+          {
+            "unit": "unit_aow_100_ene_w1_1",
+            "via": "class_property",
+            "class": "class_monaka3"
+          },
+          {
+            "unit": "unit_aow_100_ene_w2_2",
+            "via": "class_property",
+            "class": "class_monaka3"
+          }
+        ],
+        "class_examples": [
+          "c_ymnc",
+          "c_ymnc2",
+          "c_ymnc3",
+          "c_krkntn",
+          "c_krkntn2",
+          "c_krkntn3",
+          "c_pr66_master",
+          "c_pr66_master2",
+          "c_pr66_master3",
+          "a117",
+          "a1172",
+          "a1173"
+        ],
+        "unit_count": 16,
+        "class_count": 27,
+        "unit_own_count": 8,
+        "class_direct_count": 4
+      }
+    },
+    "wheel": {
+      "name": "装輪",
+      "raw_consti": [
+        "grass*9",
+        "road*10",
+        "mud*8",
+        "snow*7",
+        "wood*3",
+        "rock*3",
+        "mersh*2",
+        "sea*2"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_examples": [
+          {
+            "unit": "yatai_k1",
+            "via": "class_property",
+            "class": "a022"
+          },
+          {
+            "unit": "yatai_k2",
+            "via": "class_property",
+            "class": "a022"
+          },
+          {
+            "unit": "hirano",
+            "via": "unit_property",
+            "class": "c_hirano"
+          },
+          {
+            "unit": "tnok",
+            "via": "class_property",
+            "class": "c_tnok"
+          },
+          {
+            "unit": "rikkyotrio",
+            "via": "class_property",
+            "class": "c_rikkyotrio"
+          },
+          {
+            "unit": "db",
+            "via": "class_property",
+            "class": "c_db"
+          },
+          {
+            "unit": "komusume",
+            "via": "class_property",
+            "class": "c_komusume"
+          },
+          {
+            "unit": "hasami",
+            "via": "unit_property",
+            "class": "c_hasami"
+          },
+          {
+            "unit": "nonaka",
+            "via": "class_property",
+            "class": "c_nonaka"
+          },
+          {
+            "unit": "nikuoja",
+            "via": "unit_property",
+            "class": "c_nikuoja"
+          },
+          {
+            "unit": "nonaka_last",
+            "via": "class_property",
+            "class": "c_nonaka"
+          },
+          {
+            "unit": "nonaka23ed",
+            "via": "class_property",
+            "class": "c_nonaka"
+          }
+        ],
+        "class_examples": [
+          "c_hirano",
+          "c_hirano2",
+          "c_hirano3",
+          "c_tnok",
+          "c_tnok2",
+          "c_tnok3",
+          "c_rikkyotrio",
+          "c_rikkyotrio2",
+          "c_rikkyotrio3",
+          "c_db",
+          "c_db2",
+          "c_db3"
+        ],
+        "unit_count": 77,
+        "class_count": 117,
+        "unit_own_count": 52,
+        "class_direct_count": 11
+      }
+    },
+    "water_wheel": {
+      "name": "水陸両用",
+      "raw_consti": [
+        "grass*9",
+        "mud*8",
+        "wood*3",
+        "sea*7",
+        "sand*5",
+        "rock*3",
+        "mersh*2",
+        "snow*6",
+        "road*10"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_examples": [],
+        "class_examples": [
+          "c_syokupanman_gou",
+          "c_syokupanman_gou2",
+          "c_syokupanman_gou3",
+          "syokupanman_gou_summon"
+        ],
+        "unit_count": 0,
+        "class_count": 4,
+        "unit_own_count": 0,
+        "class_direct_count": 1
+      }
+    },
+    "reppu": {
+      "name": "飛行装輪",
+      "raw_consti": [
+        "grass*9",
+        "mud*8",
+        "sand*7",
+        "mersh*7",
+        "snow*7",
+        "sea*7",
+        "road*10"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_count": 0,
+        "class_count": 0,
+        "unit_own_count": 0,
+        "class_direct_count": 0,
+        "unit_examples": [],
+        "class_examples": []
+      }
+    },
+    "majime": {
+      "name": "天使",
+      "raw_consti": [
+        "snow*2",
+        "mud*2",
+        "wood*2",
+        "rock*2",
+        "grass*2",
+        "sand*2",
+        "mersh*2",
+        "sea*2",
+        "road*2"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_examples": [
+          {
+            "unit": "majimekun",
+            "via": "unit_property",
+            "class": "c_majimekun"
+          },
+          {
+            "unit": "majimekun_joy",
+            "via": "unit_property",
+            "class": "c_majimekun"
+          },
+          {
+            "unit": "majimekun_sad",
+            "via": "unit_property",
+            "class": "c_majimekun"
+          },
+          {
+            "unit": "majimekun_miss",
+            "via": "unit_property",
+            "class": "c_majimekun"
+          },
+          {
+            "unit": "majimekun_pwpk",
+            "via": "unit_property",
+            "class": "c_majimekun"
+          },
+          {
+            "unit": "majimekun_dr",
+            "via": "unit_property",
+            "class": "c_majimekun"
+          }
+        ],
+        "class_examples": [],
+        "unit_count": 6,
+        "class_count": 0,
+        "unit_own_count": 6,
+        "class_direct_count": 0
+      }
+    },
+    "mt_dummy": {
+      "name": "軍楽隊",
+      "raw_consti": [
+        "grass*6",
+        "sand*5",
+        "wood*4",
+        "rock*4",
+        "mersh*4",
+        "sea*4",
+        "road*6"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_count": 0,
+        "class_count": 0,
+        "unit_own_count": 0,
+        "class_direct_count": 0,
+        "unit_examples": [],
+        "class_examples": []
+      }
+    },
+    "toono": {
+      "name": "両生蜥蜴",
+      "raw_consti": [
+        "grass*10",
+        "mud*10",
+        "sand*3",
+        "rock*7",
+        "wood*2",
+        "sea*9",
+        "snow*2"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_examples": [
+          {
+            "unit": "toono",
+            "via": "unit_property",
+            "class": "c_toono"
+          },
+          {
+            "unit": "goodtoono",
+            "via": "unit_property",
+            "class": "c_toono"
+          },
+          {
+            "unit": "ta1723",
+            "via": "class_property",
+            "class": "c_t1723"
+          },
+          {
+            "unit": "tb1723",
+            "via": "class_property",
+            "class": "c_t1723"
+          },
+          {
+            "unit": "tc1723",
+            "via": "class_property",
+            "class": "c_t1723"
+          },
+          {
+            "unit": "td1723",
+            "via": "class_property",
+            "class": "c_t1723"
+          },
+          {
+            "unit": "te1723",
+            "via": "class_property",
+            "class": "c_t1723"
+          },
+          {
+            "unit": "tf1723",
+            "via": "class_property",
+            "class": "c_t1723"
+          },
+          {
+            "unit": "tg1723",
+            "via": "class_property",
+            "class": "c_t1723"
+          },
+          {
+            "unit": "toono_rage",
+            "via": "unit_property",
+            "class": "c_toono"
+          },
+          {
+            "unit": "toono_sad",
+            "via": "unit_property",
+            "class": "c_toono"
+          },
+          {
+            "unit": "toono_gosh",
+            "via": "unit_property",
+            "class": "c_toono"
+          }
+        ],
+        "class_examples": [
+          "c_toono",
+          "c_toono2",
+          "c_toono3",
+          "c_t1723",
+          "a172",
+          "a1722",
+          "a1723",
+          "a1724",
+          "ene_a172",
+          "ene_a1722",
+          "ene_a1723",
+          "s_a172"
+        ],
+        "unit_count": 16,
+        "class_count": 18,
+        "unit_own_count": 9,
+        "class_direct_count": 4
+      }
+    },
+    "tank": {
+      "name": "戦車",
+      "raw_consti": [
+        "grass*9",
+        "road*10",
+        "mud*8",
+        "snow*7",
+        "wood*1",
+        "rock*2",
+        "mersh*1",
+        "sea*1",
+        "sand*8"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_examples": [
+          {
+            "unit": "shaman_u1",
+            "via": "class_property",
+            "class": "c_shaman_u"
+          },
+          {
+            "unit": "shaman_u2",
+            "via": "class_property",
+            "class": "c_shaman_u"
+          },
+          {
+            "unit": "shaman_u3",
+            "via": "class_property",
+            "class": "c_shaman_u"
+          },
+          {
+            "unit": "shaman_u4",
+            "via": "class_property",
+            "class": "c_shaman_u"
+          },
+          {
+            "unit": "shaman_u5",
+            "via": "class_property",
+            "class": "c_shaman_u"
+          },
+          {
+            "unit": "u_jagd",
+            "via": "class_property",
+            "class": "c_jagd"
+          }
+        ],
+        "class_examples": [
+          "c_shaman_u",
+          "c_jagd",
+          "a215",
+          "a2152",
+          "a2153",
+          "tiger",
+          "tiger2",
+          "tiger3",
+          "tiger4",
+          "shaman",
+          "shaman2",
+          "shaman3"
+        ],
+        "unit_count": 6,
+        "class_count": 26,
+        "unit_own_count": 0,
+        "class_direct_count": 4
+      }
+    },
+    "ship": {
+      "name": "船",
+      "raw_consti": [
+        "grass*0",
+        "sand*0",
+        "wood*0",
+        "rock*0",
+        "mersh*0",
+        "sea*5",
+        "road*0",
+        "snow*0",
+        "mud*0"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_examples": [
+          {
+            "unit": "drama_ashipA",
+            "via": "class_property",
+            "class": "c_ship3"
+          },
+          {
+            "unit": "drama_ashipB",
+            "via": "class_property",
+            "class": "c_ship3"
+          },
+          {
+            "unit": "drama_ashipC",
+            "via": "class_property",
+            "class": "c_ship3"
+          },
+          {
+            "unit": "kacho_ashipA",
+            "via": "class_property",
+            "class": "c_ship3"
+          },
+          {
+            "unit": "kacho_ashipB",
+            "via": "class_property",
+            "class": "c_ship3"
+          },
+          {
+            "unit": "zoku22",
+            "via": "class_property",
+            "class": "c_ship"
+          },
+          {
+            "unit": "zoku23",
+            "via": "class_property",
+            "class": "c_ship"
+          },
+          {
+            "unit": "zoku24",
+            "via": "class_property",
+            "class": "c_ship"
+          },
+          {
+            "unit": "zoku25",
+            "via": "class_property",
+            "class": "c_ship"
+          },
+          {
+            "unit": "zoku26",
+            "via": "class_property",
+            "class": "c_ship"
+          },
+          {
+            "unit": "zoku27",
+            "via": "class_property",
+            "class": "c_ship"
+          },
+          {
+            "unit": "zoku28",
+            "via": "class_property",
+            "class": "c_ship"
+          }
+        ],
+        "class_examples": [
+          "defboat0",
+          "defboat",
+          "defboat2",
+          "defboat3",
+          "defboatmarina",
+          "defboatmarina2",
+          "defboatmarina3",
+          "defboatkarate",
+          "defboatkarate2",
+          "defboatkarate3",
+          "defboatkimo",
+          "defboatkimo2"
+        ],
+        "unit_count": 132,
+        "class_count": 124,
+        "unit_own_count": 0,
+        "class_direct_count": 16
+      }
+    },
+    "zou": {
+      "name": "象",
+      "raw_consti": [
+        "grass*9",
+        "mud*6",
+        "wood*8",
+        "sea*4",
+        "sand*5",
+        "rock*3",
+        "mersh*5",
+        "snow*3",
+        "road*8"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_examples": [
+          {
+            "unit": "akagi",
+            "via": "class_property",
+            "class": "c_akagi"
+          }
+        ],
+        "class_examples": [
+          "c_akagi",
+          "c_akagi2",
+          "c_akagi3",
+          "zou",
+          "zou2",
+          "zou3"
+        ],
+        "unit_count": 1,
+        "class_count": 6,
+        "unit_own_count": 0,
+        "class_direct_count": 1
+      }
+    },
+    "kani": {
+      "name": "蟹歩き",
+      "raw_consti": [
+        "grass*6",
+        "mud*5",
+        "wood*8",
+        "sea*9",
+        "sand*9",
+        "rock*3",
+        "mersh*8",
+        "snow*2",
+        "road*5"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_examples": [
+          {
+            "unit": "gosaku",
+            "via": "unit_property",
+            "class": "c_gosaku"
+          }
+        ],
+        "class_examples": [
+          "c_gosaku",
+          "c_gosaku2",
+          "c_gosaku3",
+          "a092",
+          "a0922",
+          "a0923",
+          "self_a092",
+          "self_a0922",
+          "self_a0923",
+          "ra0922"
+        ],
+        "unit_count": 1,
+        "class_count": 10,
+        "unit_own_count": 1,
+        "class_direct_count": 1
+      }
+    },
+    "sam": {
+      "name": "雪原海兵",
+      "raw_consti": [
+        "snow*9",
+        "grass*6",
+        "mud*6",
+        "wood*3",
+        "sand*3",
+        "rock*3",
+        "sea*10",
+        "mersh*4",
+        "road*6"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_examples": [
+          {
+            "unit": "png",
+            "via": "class_property",
+            "class": "c_png"
+          },
+          {
+            "unit": "yurujiro",
+            "via": "class_property",
+            "class": "c_yurujiro"
+          },
+          {
+            "unit": "shimada",
+            "via": "class_property",
+            "class": "c_shimada"
+          },
+          {
+            "unit": "pinga",
+            "via": "class_property",
+            "class": "c_pinga"
+          },
+          {
+            "unit": "oyajiisan",
+            "via": "class_property",
+            "class": "c_oyajiisan"
+          },
+          {
+            "unit": "kachop",
+            "via": "class_property",
+            "class": "c_kachop"
+          },
+          {
+            "unit": "shimada_miss",
+            "via": "class_property",
+            "class": "c_shimada"
+          },
+          {
+            "unit": "png_pwpk",
+            "via": "class_property",
+            "class": "c_png"
+          },
+          {
+            "unit": "yurujiro_pwpk",
+            "via": "class_property",
+            "class": "c_yurujiro"
+          },
+          {
+            "unit": "oyajiisan_pwpk",
+            "via": "class_property",
+            "class": "c_oyajiisan"
+          },
+          {
+            "unit": "kachop_pwpk",
+            "via": "class_property",
+            "class": "c_kachop"
+          }
+        ],
+        "class_examples": [
+          "c_png",
+          "c_png2",
+          "c_png3",
+          "c_yurujiro",
+          "c_yurujiro2",
+          "c_yurujiro3",
+          "c_shimada",
+          "c_shimada2",
+          "c_shimada3",
+          "c_pinga",
+          "c_pinga2",
+          "c_pinga3"
+        ],
+        "unit_count": 11,
+        "class_count": 44,
+        "unit_own_count": 0,
+        "class_direct_count": 4
+      }
+    },
+    "samh": {
+      "name": "飛行ソリ",
+      "raw_consti": [
+        "snow*9",
+        "mud*7",
+        "wood*7",
+        "rock*7",
+        "grass*7",
+        "sand*7",
+        "mersh*7",
+        "sea*7",
+        "road*7"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_examples": [],
+        "class_examples": [
+          "a3293",
+          "self_a3293",
+          "a3293rts"
+        ],
+        "unit_count": 0,
+        "class_count": 3,
+        "unit_own_count": 0,
+        "class_direct_count": 1
+      }
+    },
+    "uneiw": {
+      "name": "削除",
+      "raw_consti": [
+        "grass*6",
+        "mud*6",
+        "sand*6",
+        "mersh*6",
+        "snow*6",
+        "sea*6",
+        "road*6",
+        "wood*6"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_examples": [
+          {
+            "unit": "ncncbase2",
+            "via": "unit_property",
+            "class": "c_ncncbase2"
+          },
+          {
+            "unit": "525_ssrhm",
+            "via": "unit_property",
+            "class": "c_525ssrhm"
+          },
+          {
+            "unit": "kenri_ssrhm",
+            "via": "unit_property",
+            "class": "c_525ssrhm"
+          }
+        ],
+        "class_examples": [
+          "spncnctv",
+          "kenri_unei",
+          "ncnctv",
+          "ncnctv2",
+          "ncnctv3",
+          "ncnctv4",
+          "ncnctv5",
+          "ncnctv6",
+          "ncnctv7",
+          "ncnctv8",
+          "ncnctv9",
+          "ncnctv10"
+        ],
+        "unit_count": 3,
+        "class_count": 12,
+        "unit_own_count": 3,
+        "class_direct_count": 2
+      }
+    },
+    "swimmer": {
+      "name": "水泳部",
+      "raw_consti": [
+        "grass*6",
+        "sand*4",
+        "wood*3",
+        "rock*3",
+        "mersh*7",
+        "sea*8",
+        "road*6"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_count": 0,
+        "class_count": 0,
+        "unit_own_count": 0,
+        "class_direct_count": 0,
+        "unit_examples": [],
+        "class_examples": []
+      }
+    },
+    "city": {
+      "name": "まちのなかだぁ",
+      "raw_consti": [
+        "grass*5",
+        "sand*5",
+        "wood*5",
+        "rock*5",
+        "mersh*5",
+        "sea*5",
+        "road*5"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_examples": [
+          {
+            "unit": "zihuku23ed",
+            "via": "unit_property",
+            "class": "a0423"
+          },
+          {
+            "unit": "dai1",
+            "via": "unit_property",
+            "class": "ru999"
+          },
+          {
+            "unit": "dai2",
+            "via": "unit_property",
+            "class": "ru999"
+          },
+          {
+            "unit": "dai3",
+            "via": "unit_property",
+            "class": "ru999"
+          },
+          {
+            "unit": "dai4",
+            "via": "unit_property",
+            "class": "ru999"
+          },
+          {
+            "unit": "dai5",
+            "via": "unit_property",
+            "class": "ru999"
+          },
+          {
+            "unit": "dai6",
+            "via": "unit_property",
+            "class": "ru999"
+          },
+          {
+            "unit": "dai7",
+            "via": "unit_property",
+            "class": "ru999"
+          },
+          {
+            "unit": "dai8",
+            "via": "unit_property",
+            "class": "ru999"
+          },
+          {
+            "unit": "dai9",
+            "via": "unit_property",
+            "class": "ru999"
+          },
+          {
+            "unit": "dai10",
+            "via": "unit_property",
+            "class": "ru999"
+          },
+          {
+            "unit": "base_s4h",
+            "via": "unit_property",
+            "class": "sk444"
+          }
+        ],
+        "class_examples": [
+          "sk444",
+          "sk44sk",
+          "sk44an",
+          "sk44pk",
+          "sk44yu",
+          "sk44kin",
+          "sk44ki",
+          "sk44tb",
+          "sk44de"
+        ],
+        "unit_count": 539,
+        "class_count": 9,
+        "unit_own_count": 539,
+        "class_direct_count": 9
+      }
+    },
+    "rugger": {
+      "name": "重装突撃",
+      "raw_consti": [
+        "grass*9",
+        "mud*8",
+        "wood*4",
+        "sand*3",
+        "mersh*3",
+        "sea*2",
+        "road*9",
+        "snow*4",
+        "rock*3"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_count": 0,
+        "class_count": 0,
+        "unit_own_count": 0,
+        "class_direct_count": 0,
+        "unit_examples": [],
+        "class_examples": []
+      }
+    },
+    "takutics": {
+      "name": "水上歩行",
+      "raw_consti": [
+        "grass*6",
+        "sand*6",
+        "wood*3",
+        "rock*3",
+        "mersh*6",
+        "sea*6",
+        "road*6",
+        "snow*6"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_count": 0,
+        "class_count": 0,
+        "unit_own_count": 0,
+        "class_direct_count": 0,
+        "unit_examples": [],
+        "class_examples": []
+      }
+    }
+  },
+  "mismatch_usage": {
+    "snow": {
+      "name": "雪原",
+      "raw_consti": [
+        "snow*10",
+        "grass*6",
+        "mud*7",
+        "wood*7",
+        "sand*4",
+        "rock*7",
+        "sea*3",
+        "mersh*3"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_count": 0,
+        "class_count": 0,
+        "unit_own_count": 0,
+        "class_direct_count": 0,
+        "unit_examples": [],
+        "class_examples": []
+      }
+    },
+    "wheel": {
+      "name": "装輪",
+      "raw_consti": [
+        "grass*9",
+        "road*10",
+        "mud*8",
+        "snow*7",
+        "wood*3",
+        "rock*3",
+        "mersh*2",
+        "sea*2"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_examples": [
+          {
+            "unit": "yatai_k1",
+            "via": "class_property",
+            "class": "a022"
+          },
+          {
+            "unit": "yatai_k2",
+            "via": "class_property",
+            "class": "a022"
+          },
+          {
+            "unit": "hirano",
+            "via": "unit_property",
+            "class": "c_hirano"
+          },
+          {
+            "unit": "tnok",
+            "via": "class_property",
+            "class": "c_tnok"
+          },
+          {
+            "unit": "rikkyotrio",
+            "via": "class_property",
+            "class": "c_rikkyotrio"
+          },
+          {
+            "unit": "db",
+            "via": "class_property",
+            "class": "c_db"
+          },
+          {
+            "unit": "komusume",
+            "via": "class_property",
+            "class": "c_komusume"
+          },
+          {
+            "unit": "hasami",
+            "via": "unit_property",
+            "class": "c_hasami"
+          },
+          {
+            "unit": "nonaka",
+            "via": "class_property",
+            "class": "c_nonaka"
+          },
+          {
+            "unit": "nikuoja",
+            "via": "unit_property",
+            "class": "c_nikuoja"
+          },
+          {
+            "unit": "nonaka_last",
+            "via": "class_property",
+            "class": "c_nonaka"
+          },
+          {
+            "unit": "nonaka23ed",
+            "via": "class_property",
+            "class": "c_nonaka"
+          }
+        ],
+        "class_examples": [
+          "c_hirano",
+          "c_hirano2",
+          "c_hirano3",
+          "c_tnok",
+          "c_tnok2",
+          "c_tnok3",
+          "c_rikkyotrio",
+          "c_rikkyotrio2",
+          "c_rikkyotrio3",
+          "c_db",
+          "c_db2",
+          "c_db3"
+        ],
+        "unit_count": 77,
+        "class_count": 117,
+        "unit_own_count": 52,
+        "class_direct_count": 11
+      }
+    },
+    "water_wheel": {
+      "name": "水陸両用",
+      "raw_consti": [
+        "grass*9",
+        "mud*8",
+        "wood*3",
+        "sea*7",
+        "sand*5",
+        "rock*3",
+        "mersh*2",
+        "snow*6",
+        "road*10"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_examples": [],
+        "class_examples": [
+          "c_syokupanman_gou",
+          "c_syokupanman_gou2",
+          "c_syokupanman_gou3",
+          "syokupanman_gou_summon"
+        ],
+        "unit_count": 0,
+        "class_count": 4,
+        "unit_own_count": 0,
+        "class_direct_count": 1
+      }
+    },
+    "tank": {
+      "name": "戦車",
+      "raw_consti": [
+        "grass*9",
+        "road*10",
+        "mud*8",
+        "snow*7",
+        "wood*1",
+        "rock*2",
+        "mersh*1",
+        "sea*1",
+        "sand*8"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_examples": [
+          {
+            "unit": "shaman_u1",
+            "via": "class_property",
+            "class": "c_shaman_u"
+          },
+          {
+            "unit": "shaman_u2",
+            "via": "class_property",
+            "class": "c_shaman_u"
+          },
+          {
+            "unit": "shaman_u3",
+            "via": "class_property",
+            "class": "c_shaman_u"
+          },
+          {
+            "unit": "shaman_u4",
+            "via": "class_property",
+            "class": "c_shaman_u"
+          },
+          {
+            "unit": "shaman_u5",
+            "via": "class_property",
+            "class": "c_shaman_u"
+          },
+          {
+            "unit": "u_jagd",
+            "via": "class_property",
+            "class": "c_jagd"
+          }
+        ],
+        "class_examples": [
+          "c_shaman_u",
+          "c_jagd",
+          "a215",
+          "a2152",
+          "a2153",
+          "tiger",
+          "tiger2",
+          "tiger3",
+          "tiger4",
+          "shaman",
+          "shaman2",
+          "shaman3"
+        ],
+        "unit_count": 6,
+        "class_count": 26,
+        "unit_own_count": 0,
+        "class_direct_count": 4
+      }
+    },
+    "majime": {
+      "name": "天使",
+      "raw_consti": [
+        "snow*2",
+        "mud*2",
+        "wood*2",
+        "rock*2",
+        "grass*2",
+        "sand*2",
+        "mersh*2",
+        "sea*2",
+        "road*2"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_examples": [
+          {
+            "unit": "majimekun",
+            "via": "unit_property",
+            "class": "c_majimekun"
+          },
+          {
+            "unit": "majimekun_joy",
+            "via": "unit_property",
+            "class": "c_majimekun"
+          },
+          {
+            "unit": "majimekun_sad",
+            "via": "unit_property",
+            "class": "c_majimekun"
+          },
+          {
+            "unit": "majimekun_miss",
+            "via": "unit_property",
+            "class": "c_majimekun"
+          },
+          {
+            "unit": "majimekun_pwpk",
+            "via": "unit_property",
+            "class": "c_majimekun"
+          },
+          {
+            "unit": "majimekun_dr",
+            "via": "unit_property",
+            "class": "c_majimekun"
+          }
+        ],
+        "class_examples": [],
+        "unit_count": 6,
+        "class_count": 0,
+        "unit_own_count": 6,
+        "class_direct_count": 0
+      }
+    },
+    "uneiw": {
+      "name": "削除",
+      "raw_consti": [
+        "grass*6",
+        "mud*6",
+        "sand*6",
+        "mersh*6",
+        "snow*6",
+        "sea*6",
+        "road*6",
+        "wood*6"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_examples": [
+          {
+            "unit": "ncncbase2",
+            "via": "unit_property",
+            "class": "c_ncncbase2"
+          },
+          {
+            "unit": "525_ssrhm",
+            "via": "unit_property",
+            "class": "c_525ssrhm"
+          },
+          {
+            "unit": "kenri_ssrhm",
+            "via": "unit_property",
+            "class": "c_525ssrhm"
+          }
+        ],
+        "class_examples": [
+          "spncnctv",
+          "kenri_unei",
+          "ncnctv",
+          "ncnctv2",
+          "ncnctv3",
+          "ncnctv4",
+          "ncnctv5",
+          "ncnctv6",
+          "ncnctv7",
+          "ncnctv8",
+          "ncnctv9",
+          "ncnctv10"
+        ],
+        "unit_count": 3,
+        "class_count": 12,
+        "unit_own_count": 3,
+        "class_direct_count": 2
+      }
+    }
+  },
+  "wiki_unlisted_usage": {
+    "city": {
+      "name": "まちのなかだぁ",
+      "raw_consti": [
+        "grass*5",
+        "sand*5",
+        "wood*5",
+        "rock*5",
+        "mersh*5",
+        "sea*5",
+        "road*5"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_examples": [
+          {
+            "unit": "zihuku23ed",
+            "via": "unit_property",
+            "class": "a0423"
+          },
+          {
+            "unit": "dai1",
+            "via": "unit_property",
+            "class": "ru999"
+          },
+          {
+            "unit": "dai2",
+            "via": "unit_property",
+            "class": "ru999"
+          },
+          {
+            "unit": "dai3",
+            "via": "unit_property",
+            "class": "ru999"
+          },
+          {
+            "unit": "dai4",
+            "via": "unit_property",
+            "class": "ru999"
+          },
+          {
+            "unit": "dai5",
+            "via": "unit_property",
+            "class": "ru999"
+          },
+          {
+            "unit": "dai6",
+            "via": "unit_property",
+            "class": "ru999"
+          },
+          {
+            "unit": "dai7",
+            "via": "unit_property",
+            "class": "ru999"
+          },
+          {
+            "unit": "dai8",
+            "via": "unit_property",
+            "class": "ru999"
+          },
+          {
+            "unit": "dai9",
+            "via": "unit_property",
+            "class": "ru999"
+          },
+          {
+            "unit": "dai10",
+            "via": "unit_property",
+            "class": "ru999"
+          },
+          {
+            "unit": "base_s4h",
+            "via": "unit_property",
+            "class": "sk444"
+          }
+        ],
+        "class_examples": [
+          "sk444",
+          "sk44sk",
+          "sk44an",
+          "sk44pk",
+          "sk44yu",
+          "sk44kin",
+          "sk44ki",
+          "sk44tb",
+          "sk44de"
+        ],
+        "unit_count": 539,
+        "class_count": 9,
+        "unit_own_count": 539,
+        "class_direct_count": 9
+      }
+    },
+    "takutics": {
+      "name": "水上歩行",
+      "raw_consti": [
+        "grass*6",
+        "sand*6",
+        "wood*3",
+        "rock*3",
+        "mersh*6",
+        "sea*6",
+        "road*6",
+        "snow*6"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_count": 0,
+        "class_count": 0,
+        "unit_own_count": 0,
+        "class_direct_count": 0,
+        "unit_examples": [],
+        "class_examples": []
+      }
+    },
+    "mt_dummy": {
+      "name": "軍楽隊",
+      "raw_consti": [
+        "grass*6",
+        "sand*5",
+        "wood*4",
+        "rock*4",
+        "mersh*4",
+        "sea*4",
+        "road*6"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_count": 0,
+        "class_count": 0,
+        "unit_own_count": 0,
+        "class_direct_count": 0,
+        "unit_examples": [],
+        "class_examples": []
+      }
+    },
+    "rugger": {
+      "name": "重装突撃",
+      "raw_consti": [
+        "grass*9",
+        "mud*8",
+        "wood*4",
+        "sand*3",
+        "mersh*3",
+        "sea*2",
+        "road*9",
+        "snow*4",
+        "rock*3"
+      ],
+      "declaration_parent": null,
+      "type": {
+        "unit_count": 0,
+        "class_count": 0,
+        "unit_own_count": 0,
+        "class_direct_count": 0,
+        "unit_examples": [],
+        "class_examples": []
+      }
+    }
+  },
+  "undeclared_movetype_usage": {},
+  "original_zip_sha256": "a1dac7209fca6fbf7d05d956054047b4c36e5149eb100434bf796ccb94970423",
+  "caveats": [
+    "Effective plain field resolution uses Unit -> Class in Work subset, not native gameplay proof.",
+    "No scenario-specific overrides, Unit instances, battle roster, or MAP terrain speed tested.",
+    "An unused in 590 static declarations type may be referenced by script runtime/changeClass.",
+    "Wiki's coefficient (value-5)*20 is hypothesis, not native speed formula."
+  ]
+}

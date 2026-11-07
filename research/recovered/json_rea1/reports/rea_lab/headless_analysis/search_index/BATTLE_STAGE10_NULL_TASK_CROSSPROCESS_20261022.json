@@ -1,0 +1,82 @@
+{
+  "id": "BRIDGE-STAGE10-NULL-TASK-REAL-WIN32-PIPELINE",
+  "scope": "Three synthetic child processes; real original null-slot patterns only",
+  "original_game_touched": false,
+  "passed": true,
+  "cases": [
+    {
+      "pattern_from_failure": 1,
+      "slots": 1107,
+      "null_slots": 163,
+      "passed": true,
+      "raw_file": "BATTLE_USER_20261021T155737652304Z_853418a3_RAW_01.json",
+      "summary": "BATTLE_USER_20261021T155737652304Z_853418a3_SUMMARY.json",
+      "raw_sha256": "27D2BB0CEA83CD970006D64BD1746A8ADDD4B428A1781534A7818E2410E5F77F",
+      "counts": {
+        "units": [
+          2,
+          1,
+          0
+        ],
+        "troops": [
+          1,
+          1,
+          0
+        ],
+        "attack_entries": 1,
+        "help_entries": 1
+      },
+      "original_game_touched": false
+    },
+    {
+      "pattern_from_failure": 2,
+      "slots": 1285,
+      "null_slots": 19,
+      "passed": true,
+      "raw_file": "BATTLE_USER_20261021T155738116005Z_f31a10dd_RAW_01.json",
+      "summary": "BATTLE_USER_20261021T155738116005Z_f31a10dd_SUMMARY.json",
+      "raw_sha256": "1B35D0A791A8A21E97EAB7990725276A39C0BBCCD96EC4C5A64B2F225F67937C",
+      "counts": {
+        "units": [
+          2,
+          1,
+          0
+        ],
+        "troops": [
+          1,
+          1,
+          0
+        ],
+        "attack_entries": 1,
+        "help_entries": 1
+      },
+      "original_game_touched": false
+    },
+    {
+      "pattern_from_failure": 3,
+      "slots": 1464,
+      "null_slots": 268,
+      "passed": true,
+      "raw_file": "BATTLE_USER_20261021T155738559198Z_26d34a1f_RAW_01.json",
+      "summary": "BATTLE_USER_20261021T155738559198Z_26d34a1f_SUMMARY.json",
+      "raw_sha256": "806BB9D60D7754008B5703CF7F6E436D25CD502D4D7B9021F9D5EC6318AA8636",
+      "counts": {
+        "units": [
+          2,
+          1,
+          0
+        ],
+        "troops": [
+          1,
+          1,
+          0
+        ],
+        "attack_entries": 1,
+        "help_entries": 1
+      },
+      "original_game_touched": false
+    }
+  ],
+  "full_G1_proven": false,
+  "external_game_roundtrip_proven": false
+}

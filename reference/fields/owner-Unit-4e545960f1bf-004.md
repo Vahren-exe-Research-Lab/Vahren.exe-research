@@ -22,6 +22,9 @@
 <a id="field-178"></a>
 ## Unit + 0x178
 
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_STAGE12_GROWTH_CONSISTENCY_ANALYSIS_20261022.json 行 1438](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_STAGE12_GROWTH_CONSISTENCY_ANALYSIS_20261022.json?plain=1#L1438-L1438) — "source_relation": "Source Unit+0x178..0x180 vector, +0x1E4B4 cache; optional conditional child+0x1E594.",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
 - [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/HANDOFF.md 行 49](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/HANDOFF.md?plain=1#L49-L49) — - **[ON-STAND-010新発見] SUMMON_PARENT_NATIVE_DAT_BOUNDARY_20261025.md**：既存Ghidra V9で召喚親子リンクを検証。親Unit+0x178/17C/180＝子ポインタ一覧、0x5774A0＝子登録、0x577600＝子数を用いた召喚上限判定、0x54
   制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
 
@@ -289,6 +292,15 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3335](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3335-L3335) — \| Unit の定義とタグ \| [Unit+0x1C8] → def、def+0x1C のタグ \| T011、§14 \|
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_SYNTHETIC_DECODED_SAMPLE_20261021.json 行 95](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_SYNTHETIC_DECODED_SAMPLE_20261021.json?plain=1#L95-L95) — "Unit+0x1c8 and +0x1d0 may be null or carry runtime-only references",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_DEFINITION_IDENTITY_PE_20261021.json 行 5](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_DEFINITION_IDENTITY_PE_20261021.json?plain=1#L5-L5) — "address_to_identity_candidate": "Unit+0x1C8 -> Def*; Def+0x1A4 -> owning definition registry; owner+0x300 -> std::map head; std::map node+0x28 -> Def*",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_STAGE12_GROWTH_CONSISTENCY_ANALYSIS_20261022.json 行 1437](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_STAGE12_GROWTH_CONSISTENCY_ANALYSIS_20261022.json?plain=1#L1437-L1437) — "core_record_links": "Read Unit+0x1C8..0x1D0 as one 12-byte span rather than skip +0x1CC; +1CC is NOT summoner ID.",
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
 - [research/recovered/outside_dev1/reports/001_README.md 行 47](../../research/recovered/outside_dev1/reports/001_README.md?plain=1#L47-L47) — - `hit_linked_award_subset.py`: 0x551E50のcontext+0xC一度きり、ratio／skill別上限、Unit+0x1C8のlinked値+0x16C更新とunsigned thresholdまで。level helper/UI実効果なし。
   制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
 
@@ -333,23 +345,5 @@
 
 - [research/recovered/tests_batch5/T020_E_T013_T028_D0_SORT_IDENTITY_ACCEPTANCE_20261030_12H.md 行 12](../../research/recovered/tests_batch5/T020_E_T013_T028_D0_SORT_IDENTITY_ACCEPTANCE_20261030_12H.md?plain=1#L12-L12) — 直後の配列sort callbackはUnit+0x1C8先の+0xE4 signed less-than。+0xD0を比較キーとはみなさない。
   制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
-
-<a id="field-1cc"></a>
-## Unit + 0x1CC
-
-- [research/recovered/search_reports1/reports/BATTLE_TAKEOVER_RESEARCH_STAGE12_20261022.md 行 32](../../research/recovered/search_reports1/reports/BATTLE_TAKEOVER_RESEARCH_STAGE12_20261022.md?plain=1#L32-L32) — 8RAW全てでUnit+0x1CC（部隊先頭の記録参照）、Unit+0x178..0x180（子一覧）、Unit+0x1E4B4（元Unitの記録キャッシュ）、Unit+0x1E594（条件付き関連参照）の実バイトは保存されていなかった。
-  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
-
-- [research/recovered/search_reports1/reports/_history_20261029/P0_SUMMON_EXP_OWNER_REPORT_20261021.md 行 47](../../research/recovered/search_reports1/reports/_history_20261029/P0_SUMMON_EXP_OWNER_REPORT_20261021.md?plain=1#L47-L47) — - `0x56FEC1`: Unit+0x1CC = NULL。Troopが非NULLなら、memberが空/NULLのとき自分のR、そうでなければ先頭memberの+0x1C8を `0x56FEE3` に書く。
-  制約・訂正　Historical authored research/design/ops/test claims only; no linked evidence read; no new native/runtime/READY/DONE/Golden credit; current REF limits remain
-
-<a id="field-1d0"></a>
-## Unit + 0x1D0
-
-- [research/recovered/b_batch10/data/T013_TROOP_MODE_EXPR_RTTI_DEDUP_NATIVE_20261024_0015.md 行 12](../../research/recovered/b_batch10/data/T013_TROOP_MODE_EXPR_RTTI_DEDUP_NATIVE_20261024_0015.md?plain=1#L12-L12) — [DEDUPE KEY] 候補 0x4B59C9 Unit pointer → 0x4B59CC [Unit+0x1D0] をEDIに読み、NULLならskip。EDIを[ebp-0x88]に保持し、0x4B59E2/0x4B59E8にてeax=&output,ecx=&tree、ebx=&keyのまま0x4B59EE
-  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
-
-- [research/recovered/b_batch10/data/T013_TROOP_MODE_EXPR_RTTI_DEDUP_NATIVE_20261024_0015.md 行 21](../../research/recovered/b_batch10/data/T013_TROOP_MODE_EXPR_RTTI_DEDUP_NATIVE_20261024_0015.md?plain=1#L21-L21) — [VERIFY] ExpresStringからmap entryの実数値、欠損名追加時の副作用、0x49CCA0の例外とESI引数保証、Unit+0x1D0の所有/共有、候補順、+0x5158E0例外時状態、DAT命令名と実ゲーム行動、RNG。
-  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

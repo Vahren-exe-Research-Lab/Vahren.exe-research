@@ -1,0 +1,2864 @@
+{
+  "status": "ORIGINAL DAT -> Work parent-inherited negative MP static only",
+  "all_skill_total": 16554,
+  "effective_negative_skill_count": 94,
+  "negative_mp_histogram": {
+    "-100": 1,
+    "-60": 1,
+    "-35": 2,
+    "-20": 3,
+    "-10": 1,
+    "-1": 86
+  },
+  "effective_negative_by_func": {
+    "missile": 49,
+    "sword": 1,
+    "heal": 44
+  },
+  "direct_unit_class_granted_effective_negative_by_func": {
+    "missile": 45,
+    "sword": 1,
+    "heal": 14
+  },
+  "directly_granted_negative_count": 60,
+  "records": [
+    {
+      "skill": "b_ligh",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 291,
+        "parent": "sk_ms"
+      },
+      "parent": "sk_ms",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:knn",
+          "source": "a_default/script/10_ユニット/04_ほのぼの神道.dat",
+          "line": 1,
+          "field": "delskill"
+        },
+        {
+          "owner": "unit:bnkrg",
+          "source": "a_default/script/10_ユニット/04_ほのぼの神道.dat",
+          "line": 186,
+          "field": "delskill"
+        },
+        {
+          "owner": "unit:nel",
+          "source": "a_default/script/10_ユニット/04_ほのぼの神道.dat",
+          "line": 552,
+          "field": "delskill"
+        },
+        {
+          "owner": "unit:hsiorn",
+          "source": "a_default/script/10_ユニット/05_ヴォイス・ドラマ革命企画.dat",
+          "line": 665,
+          "field": "delskill"
+        },
+        {
+          "owner": "unit:turnxtop",
+          "source": "a_default/script/10_ユニット/1001_傭兵_淫夢くん.dat",
+          "line": 688,
+          "field": "skill"
+        },
+        {
+          "owner": "unit:rrm",
+          "source": "a_default/script/10_ユニット/21_お菓子作りの材料屋さん.dat",
+          "line": 214,
+          "field": "delskill"
+        }
+      ]
+    },
+    {
+      "skill": "q_ligh",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 377,
+        "parent": "b_ligh"
+      },
+      "parent": "b_ligh",
+      "parent_chain_len": 3,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:ru",
+          "source": "a_default/script/10_ユニット/04_ほのぼの神道.dat",
+          "line": 99,
+          "field": "skill"
+        },
+        {
+          "owner": "unit:sknm",
+          "source": "a_default/script/10_ユニット/04_ほのぼの神道.dat",
+          "line": 379,
+          "field": "skill"
+        },
+        {
+          "owner": "unit:sknm",
+          "source": "a_default/script/10_ユニット/04_ほのぼの神道.dat",
+          "line": 379,
+          "field": "leader_skill"
+        },
+        {
+          "owner": "unit:gogogo",
+          "source": "a_default/script/10_ユニット/110_イベント人材.dat",
+          "line": 1751,
+          "field": "delskill"
+        },
+        {
+          "owner": "unit:ymnu",
+          "source": "a_default/script/10_ユニット/11_サセバトミサタ族.dat",
+          "line": 214,
+          "field": "skill2"
+        },
+        {
+          "owner": "unit:yuk",
+          "source": "a_default/script/10_ユニット/18_虐待専従0J_13部隊.dat",
+          "line": 170,
+          "field": "skill2"
+        }
+      ]
+    },
+    {
+      "skill": "b_fire",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 387,
+        "parent": "b_ligh"
+      },
+      "parent": "b_ligh",
+      "parent_chain_len": 3,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:bnkrg",
+          "source": "a_default/script/10_ユニット/04_ほのぼの神道.dat",
+          "line": 186,
+          "field": "skill2"
+        },
+        {
+          "owner": "unit:hsiorn",
+          "source": "a_default/script/10_ユニット/05_ヴォイス・ドラマ革命企画.dat",
+          "line": 665,
+          "field": "delskill"
+        },
+        {
+          "owner": "unit:okuo",
+          "source": "a_default/script/10_ユニット/1000_傭兵.dat",
+          "line": 3,
+          "field": "skill2"
+        },
+        {
+          "owner": "unit:okuo",
+          "source": "a_default/script/10_ユニット/1000_傭兵.dat",
+          "line": 3,
+          "field": "leader_skill"
+        },
+        {
+          "owner": "unit:siriris",
+          "source": "a_default/script/10_ユニット/26_クッキー☆原理主義党.dat",
+          "line": 580,
+          "field": "delskill"
+        },
+        {
+          "owner": "unit:ndk",
+          "source": "a_default/script/10_ユニット/91_放浪_クッキー☆.dat",
+          "line": 1,
+          "field": "delskill"
+        }
+      ]
+    },
+    {
+      "skill": "q_fire",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 418,
+        "parent": "b_fire"
+      },
+      "parent": "b_fire",
+      "parent_chain_len": 4,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:hsiorn",
+          "source": "a_default/script/10_ユニット/05_ヴォイス・ドラマ革命企画.dat",
+          "line": 665,
+          "field": "skill"
+        },
+        {
+          "owner": "unit:szk",
+          "source": "a_default/script/10_ユニット/13_アリソン・パクハイト.dat",
+          "line": 149,
+          "field": "skill2"
+        },
+        {
+          "owner": "unit:nakanokun",
+          "source": "a_default/script/10_ユニット/90_放浪_ホモビ.dat",
+          "line": 143,
+          "field": "skill"
+        },
+        {
+          "owner": "unit:ndk",
+          "source": "a_default/script/10_ユニット/91_放浪_クッキー☆.dat",
+          "line": 1,
+          "field": "skill"
+        },
+        {
+          "owner": "unit:luna",
+          "source": "a_default/script/10_ユニット/93_放浪_ノンケ・東方・アステカ.dat",
+          "line": 79,
+          "field": "skill2"
+        }
+      ]
+    },
+    {
+      "skill": "b_eart",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 428,
+        "parent": "b_ligh"
+      },
+      "parent": "b_ligh",
+      "parent_chain_len": 3,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:swwmi",
+          "source": "a_default/script/10_ユニット/110_イベント人材.dat",
+          "line": 1421,
+          "field": "delskill"
+        },
+        {
+          "owner": "unit:superswk",
+          "source": "a_default/script/10_ユニット/120_スペシャル人材.dat",
+          "line": 100,
+          "field": "delskill"
+        },
+        {
+          "owner": "unit:sww",
+          "source": "a_default/script/10_ユニット/14_SWW大社.dat",
+          "line": 1,
+          "field": "delskill"
+        },
+        {
+          "owner": "unit:toono",
+          "source": "a_default/script/10_ユニット/17_遠野の世界.dat",
+          "line": 1,
+          "field": "delskill"
+        },
+        {
+          "owner": "unit:yuk",
+          "source": "a_default/script/10_ユニット/18_虐待専従0J_13部隊.dat",
+          "line": 170,
+          "field": "delskill"
+        },
+        {
+          "owner": "unit:superhayakuchi",
+          "source": "a_default/script/10_ユニット/21_お菓子作りの材料屋さん.dat",
+          "line": 137,
+          "field": "delskill"
+        }
+      ]
+    },
+    {
+      "skill": "q_eart",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 462,
+        "parent": "b_eart"
+      },
+      "parent": "b_eart",
+      "parent_chain_len": 4,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:msnm",
+          "source": "a_default/script/10_ユニット/91_放浪_クッキー☆.dat",
+          "line": 598,
+          "field": "skill"
+        },
+        {
+          "owner": "unit:kbnm1",
+          "source": "a_default/script/2023_イベント_リュージ騎士団/event_23_RPG.dat",
+          "line": 19729,
+          "field": "delskill"
+        },
+        {
+          "owner": "class:a0kabi",
+          "source": "a_default/script/20_クラス/1919_その他.dat",
+          "line": 124,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a0kabi2",
+          "source": "a_default/script/20_クラス/1919_その他.dat",
+          "line": 160,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a0kabi3",
+          "source": "a_default/script/20_クラス/1919_その他.dat",
+          "line": 175,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "b_wate",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 472,
+        "parent": "b_ligh"
+      },
+      "parent": "b_ligh",
+      "parent_chain_len": 3,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:toono",
+          "source": "a_default/script/10_ユニット/17_遠野の世界.dat",
+          "line": 1,
+          "field": "skill2"
+        },
+        {
+          "owner": "unit:toono",
+          "source": "a_default/script/10_ユニット/17_遠野の世界.dat",
+          "line": 1,
+          "field": "leader_skill"
+        },
+        {
+          "owner": "unit:yuk",
+          "source": "a_default/script/10_ユニット/18_虐待専従0J_13部隊.dat",
+          "line": 170,
+          "field": "delskill"
+        },
+        {
+          "owner": "unit:superhayakuchi",
+          "source": "a_default/script/10_ユニット/21_お菓子作りの材料屋さん.dat",
+          "line": 137,
+          "field": "delskill"
+        },
+        {
+          "owner": "unit:syunga",
+          "source": "a_default/script/10_ユニット/26_クッキー☆原理主義党.dat",
+          "line": 656,
+          "field": "delskill"
+        },
+        {
+          "owner": "unit:tsuri",
+          "source": "a_default/script/10_ユニット/91_放浪_クッキー☆.dat",
+          "line": 151,
+          "field": "skill2"
+        }
+      ]
+    },
+    {
+      "skill": "q_wate",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 506,
+        "parent": "b_wate"
+      },
+      "parent": "b_wate",
+      "parent_chain_len": 4,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:snnn",
+          "source": "a_default/script/10_ユニット/04_ほのぼの神道.dat",
+          "line": 285,
+          "field": "delskill"
+        },
+        {
+          "owner": "class:c_snnnkis",
+          "source": "a_default/script/10_ユニット/05_ヴォイス・ドラマ革命企画.dat",
+          "line": 539,
+          "field": "skill"
+        },
+        {
+          "owner": "class:c_snnnkis2",
+          "source": "a_default/script/10_ユニット/05_ヴォイス・ドラマ革命企画.dat",
+          "line": 553,
+          "field": "skill"
+        },
+        {
+          "owner": "class:c_snnnkis3",
+          "source": "a_default/script/10_ユニット/05_ヴォイス・ドラマ革命企画.dat",
+          "line": 567,
+          "field": "skill"
+        },
+        {
+          "owner": "unit:gosaku",
+          "source": "a_default/script/10_ユニット/09_ダークホーム伯.dat",
+          "line": 199,
+          "field": "skill"
+        },
+        {
+          "owner": "class:snnns",
+          "source": "a_default/script/32_ボススキル/B_26old_第二革命企画.dat",
+          "line": 388,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "b_thun",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 515,
+        "parent": "b_ligh"
+      },
+      "parent": "b_ligh",
+      "parent_chain_len": 3,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:mkmk",
+          "source": "a_default/script/10_ユニット/05_ヴォイス・ドラマ革命企画.dat",
+          "line": 580,
+          "field": "delskill"
+        },
+        {
+          "owner": "unit:psr",
+          "source": "a_default/script/10_ユニット/14_SWW大社.dat",
+          "line": 166,
+          "field": "delskill"
+        },
+        {
+          "owner": "unit:rikyu",
+          "source": "a_default/script/10_ユニット/26_クッキー☆原理主義党.dat",
+          "line": 732,
+          "field": "delskill"
+        },
+        {
+          "owner": "unit:nsdr",
+          "source": "a_default/script/10_ユニット/93_放浪_ノンケ・東方・アステカ.dat",
+          "line": 228,
+          "field": "delskill"
+        },
+        {
+          "owner": "class:kenja_thun",
+          "source": "a_default/script/30_スキル/F20_summon.dat",
+          "line": 1136,
+          "field": "skill"
+        },
+        {
+          "owner": "unit:inari2",
+          "source": "a_default/script/30_スキル/F20_summon.dat",
+          "line": 4953,
+          "field": "delskill"
+        }
+      ]
+    },
+    {
+      "skill": "q_thun",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 549,
+        "parent": "b_thun"
+      },
+      "parent": "b_thun",
+      "parent_chain_len": 4,
+      "directly_granted_in_unit_or_class": false,
+      "grant_examples": []
+    },
+    {
+      "skill": "b_wind",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 558,
+        "parent": "b_ligh"
+      },
+      "parent": "b_ligh",
+      "parent_chain_len": 3,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:mkmk",
+          "source": "a_default/script/10_ユニット/05_ヴォイス・ドラマ革命企画.dat",
+          "line": 580,
+          "field": "delskill"
+        },
+        {
+          "owner": "unit:psr",
+          "source": "a_default/script/10_ユニット/14_SWW大社.dat",
+          "line": 166,
+          "field": "skill2"
+        },
+        {
+          "owner": "unit:rikyu",
+          "source": "a_default/script/10_ユニット/26_クッキー☆原理主義党.dat",
+          "line": 732,
+          "field": "delskill"
+        },
+        {
+          "owner": "unit:skrn",
+          "source": "a_default/script/10_ユニット/33_INU.dat",
+          "line": 87,
+          "field": "delskill"
+        },
+        {
+          "owner": "unit:nsdr",
+          "source": "a_default/script/10_ユニット/93_放浪_ノンケ・東方・アステカ.dat",
+          "line": 228,
+          "field": "delskill"
+        },
+        {
+          "owner": "class:a058",
+          "source": "a_default/script/20_クラス/04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+          "line": 871,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "q_wind",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 592,
+        "parent": "b_wind"
+      },
+      "parent": "b_wind",
+      "parent_chain_len": 4,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:yw",
+          "source": "a_default/script/10_ユニット/05_ヴォイス・ドラマ革命企画.dat",
+          "line": 268,
+          "field": "skill2"
+        },
+        {
+          "owner": "unit:yw",
+          "source": "a_default/script/10_ユニット/05_ヴォイス・ドラマ革命企画.dat",
+          "line": 268,
+          "field": "leader_skill"
+        },
+        {
+          "owner": "unit:mkmk",
+          "source": "a_default/script/10_ユニット/05_ヴォイス・ドラマ革命企画.dat",
+          "line": 580,
+          "field": "skill"
+        },
+        {
+          "owner": "unit:knk",
+          "source": "a_default/script/10_ユニット/14_SWW大社.dat",
+          "line": 83,
+          "field": "skill2"
+        },
+        {
+          "owner": "unit:knk",
+          "source": "a_default/script/10_ユニット/14_SWW大社.dat",
+          "line": 83,
+          "field": "leader_skill"
+        },
+        {
+          "owner": "unit:luna",
+          "source": "a_default/script/10_ユニット/93_放浪_ノンケ・東方・アステカ.dat",
+          "line": 79,
+          "field": "skill2"
+        }
+      ]
+    },
+    {
+      "skill": "b_dark",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 601,
+        "parent": "b_ligh"
+      },
+      "parent": "b_ligh",
+      "parent_chain_len": 3,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:rma",
+          "source": "a_default/script/10_ユニット/02_迫真空手道場.dat",
+          "line": 346,
+          "field": "skill2"
+        },
+        {
+          "owner": "unit:rma",
+          "source": "a_default/script/10_ユニット/02_迫真空手道場.dat",
+          "line": 346,
+          "field": "leader_skill"
+        },
+        {
+          "owner": "unit:nel",
+          "source": "a_default/script/10_ユニット/04_ほのぼの神道.dat",
+          "line": 552,
+          "field": "skill"
+        },
+        {
+          "owner": "unit:majimekun",
+          "source": "a_default/script/10_ユニット/13_アリソン・パクハイト.dat",
+          "line": 217,
+          "field": "skill"
+        },
+        {
+          "owner": "unit:tisa",
+          "source": "a_default/script/10_ユニット/16_ALC一派.dat",
+          "line": 265,
+          "field": "skill2"
+        },
+        {
+          "owner": "unit:tisa",
+          "source": "a_default/script/10_ユニット/16_ALC一派.dat",
+          "line": 265,
+          "field": "leader_skill"
+        }
+      ]
+    },
+    {
+      "skill": "q_dark",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 635,
+        "parent": "b_dark"
+      },
+      "parent": "b_dark",
+      "parent_chain_len": 4,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:jnpi",
+          "source": "a_default/script/10_ユニット/03_アークシェード銃士連隊.dat",
+          "line": 180,
+          "field": "skill2"
+        },
+        {
+          "owner": "unit:mrmkrrrn",
+          "source": "a_default/script/10_ユニット/93_放浪_ノンケ・東方・アステカ.dat",
+          "line": 151,
+          "field": "skill2"
+        },
+        {
+          "owner": "unit:mazin1h",
+          "source": "a_default/script/2023_イベント_リュージ騎士団/event_23_RPG.dat",
+          "line": 17702,
+          "field": "delskill"
+        },
+        {
+          "owner": "unit:slime",
+          "source": "a_default/script/2023_イベント_リュージ騎士団/event_23_RPG.dat",
+          "line": 17900,
+          "field": "delskill"
+        },
+        {
+          "owner": "unit:hei3",
+          "source": "a_default/script/2023_イベント_リュージ騎士団/event_23_RPG.dat",
+          "line": 18590,
+          "field": "delskill"
+        },
+        {
+          "owner": "class:a04b3",
+          "source": "a_default/script/20_クラス/04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+          "line": 627,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "b_mrandom",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 645,
+        "parent": "b_ligh"
+      },
+      "parent": "b_ligh",
+      "parent_chain_len": 3,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:fried",
+          "source": "a_default/script/10_ユニット/1000_傭兵.dat",
+          "line": 242,
+          "field": "delskill"
+        },
+        {
+          "owner": "unit:alc",
+          "source": "a_default/script/10_ユニット/16_ALC一派.dat",
+          "line": 2,
+          "field": "delskill"
+        },
+        {
+          "owner": "unit:skrnbu",
+          "source": "a_default/script/10_ユニット/16_ALC一派.dat",
+          "line": 93,
+          "field": "delskill"
+        },
+        {
+          "owner": "unit:jgn",
+          "source": "a_default/script/10_ユニット/16_ALC一派.dat",
+          "line": 177,
+          "field": "delskill"
+        },
+        {
+          "owner": "unit:tisa",
+          "source": "a_default/script/10_ユニット/16_ALC一派.dat",
+          "line": 265,
+          "field": "delskill"
+        },
+        {
+          "owner": "unit:icg",
+          "source": "a_default/script/10_ユニット/21_お菓子作りの材料屋さん.dat",
+          "line": 322,
+          "field": "delskill"
+        }
+      ]
+    },
+    {
+      "skill": "q_mrandom",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 716,
+        "parent": "b_mrandom"
+      },
+      "parent": "b_mrandom",
+      "parent_chain_len": 4,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:superhayakuchi",
+          "source": "a_default/script/10_ユニット/21_お菓子作りの材料屋さん.dat",
+          "line": 137,
+          "field": "skill2"
+        }
+      ]
+    },
+    {
+      "skill": "qketu_dark",
+      "effective_mp": -20,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 726,
+        "parent": "b_ligh"
+      },
+      "parent": "b_ligh",
+      "parent_chain_len": 3,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "class:a17b",
+          "source": "a_default/script/20_クラス/16_20_ALC_遠野_おじさん_正統_VVAN.dat",
+          "line": 232,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a17b2",
+          "source": "a_default/script/20_クラス/16_20_ALC_遠野_おじさん_正統_VVAN.dat",
+          "line": 272,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a17b3",
+          "source": "a_default/script/20_クラス/16_20_ALC_遠野_おじさん_正統_VVAN.dat",
+          "line": 287,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "kanyu",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 7441,
+        "parent": "sk_ms"
+      },
+      "parent": "sk_ms",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "class:a2593",
+          "source": "a_default/script/20_クラス/24_26_ONDISK_二軍_原理.dat",
+          "line": 516,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a2594",
+          "source": "a_default/script/20_クラス/24_26_ONDISK_二軍_原理.dat",
+          "line": 543,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a2599",
+          "source": "a_default/script/20_クラス/B_2525_町の小さなパン屋さんと化した二軍.dat",
+          "line": 56,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a2599_r",
+          "source": "a_default/script/5000_ランダムシナリオ/RB_ボスクラス.dat",
+          "line": 877,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a2599_r2",
+          "source": "a_default/script/5000_ランダムシナリオ/RB_ボスクラス.dat",
+          "line": 900,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a2599_r3",
+          "source": "a_default/script/5000_ランダムシナリオ/RB_ボスクラス.dat",
+          "line": 918,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "b_przm",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 9170,
+        "parent": "sk_ms"
+      },
+      "parent": "sk_ms",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "class:a201",
+          "source": "a_default/script/20_クラス/16_20_ALC_遠野_おじさん_正統_VVAN.dat",
+          "line": 567,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a2012",
+          "source": "a_default/script/20_クラス/16_20_ALC_遠野_おじさん_正統_VVAN.dat",
+          "line": 601,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "q_przm",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/30_スキル/F10_missile.dat",
+        "line": 9334,
+        "parent": "b_przm"
+      },
+      "parent": "b_przm",
+      "parent_chain_len": 3,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "class:a2013",
+          "source": "a_default/script/20_クラス/16_20_ALC_遠野_おじさん_正統_VVAN.dat",
+          "line": 616,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "alison_zan0",
+      "effective_mp": -35,
+      "effective_func": "sword",
+      "source": {
+        "file": "a_default/script/30_スキル/F11_sword.dat",
+        "line": 3580,
+        "parent": "zan0"
+      },
+      "parent": "zan0",
+      "parent_chain_len": 3,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:szk",
+          "source": "a_default/script/10_ユニット/13_アリソン・パクハイト.dat",
+          "line": 149,
+          "field": "delskill"
+        },
+        {
+          "owner": "class:a130",
+          "source": "a_default/script/20_クラス/11_15_サセバト_アリソン_SWW.dat",
+          "line": 514,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a1302",
+          "source": "a_default/script/20_クラス/11_15_サセバト_アリソン_SWW.dat",
+          "line": 543,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a1303",
+          "source": "a_default/script/20_クラス/11_15_サセバト_アリソン_SWW.dat",
+          "line": 559,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a130_s",
+          "source": "a_default/script/30_スキル/F20_summon.dat",
+          "line": 941,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "hamon_all",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/30_スキル/F13_heal_support.dat",
+        "line": 117,
+        "parent": "b_all"
+      },
+      "parent": "b_all",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:ondisk",
+          "source": "a_default/script/10_ユニット/24_ヒューマンダストクルセイダース.dat",
+          "line": 1,
+          "field": "delskill"
+        },
+        {
+          "owner": "class:a240",
+          "source": "a_default/script/20_クラス/24_26_ONDISK_二軍_原理.dat",
+          "line": 16,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a2402",
+          "source": "a_default/script/20_クラス/24_26_ONDISK_二軍_原理.dat",
+          "line": 50,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a2403",
+          "source": "a_default/script/20_クラス/24_26_ONDISK_二軍_原理.dat",
+          "line": 68,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "b_all",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/30_スキル/F13_heal_support.dat",
+        "line": 124,
+        "parent": null
+      },
+      "parent": null,
+      "parent_chain_len": 1,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:azs",
+          "source": "a_default/script/10_ユニット/01_マリナーズ傭兵団.dat",
+          "line": 100,
+          "field": "skill2"
+        },
+        {
+          "owner": "unit:azs",
+          "source": "a_default/script/10_ユニット/01_マリナーズ傭兵団.dat",
+          "line": 100,
+          "field": "leader_skill"
+        },
+        {
+          "owner": "unit:mur",
+          "source": "a_default/script/10_ユニット/02_迫真空手道場.dat",
+          "line": 77,
+          "field": "skill2"
+        },
+        {
+          "owner": "unit:mur",
+          "source": "a_default/script/10_ユニット/02_迫真空手道場.dat",
+          "line": 77,
+          "field": "leader_skill"
+        },
+        {
+          "owner": "unit:rma",
+          "source": "a_default/script/10_ユニット/02_迫真空手道場.dat",
+          "line": 346,
+          "field": "skill2"
+        },
+        {
+          "owner": "unit:hirano",
+          "source": "a_default/script/10_ユニット/03_アークシェード銃士連隊.dat",
+          "line": 78,
+          "field": "skill2"
+        }
+      ]
+    },
+    {
+      "skill": "b_all_faroff",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/30_スキル/F13_heal_support.dat",
+        "line": 153,
+        "parent": "b_all"
+      },
+      "parent": "b_all",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:skrn",
+          "source": "a_default/script/10_ユニット/33_INU.dat",
+          "line": 87,
+          "field": "skill"
+        },
+        {
+          "owner": "unit:skrn",
+          "source": "a_default/script/10_ユニット/33_INU.dat",
+          "line": 87,
+          "field": "leader_skill"
+        }
+      ]
+    },
+    {
+      "skill": "s_all",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/30_スキル/F13_heal_support.dat",
+        "line": 162,
+        "parent": "b_all"
+      },
+      "parent": "b_all",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "class:a142",
+          "source": "a_default/script/20_クラス/11_15_サセバト_アリソン_SWW.dat",
+          "line": 765,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a1422",
+          "source": "a_default/script/20_クラス/11_15_サセバト_アリソン_SWW.dat",
+          "line": 797,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a1423",
+          "source": "a_default/script/20_クラス/11_15_サセバト_アリソン_SWW.dat",
+          "line": 812,
+          "field": "skill"
+        },
+        {
+          "owner": "class:ene_a142",
+          "source": "a_default/script/20_クラス/Enemy_敵AI用クラス.dat",
+          "line": 251,
+          "field": "skill"
+        },
+        {
+          "owner": "class:ene_a1422",
+          "source": "a_default/script/20_クラス/Enemy_敵AI用クラス.dat",
+          "line": 260,
+          "field": "skill"
+        },
+        {
+          "owner": "class:ene_a1423",
+          "source": "a_default/script/20_クラス/Enemy_敵AI用クラス.dat",
+          "line": 269,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "b_mp",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/30_スキル/F13_heal_support.dat",
+        "line": 176,
+        "parent": null
+      },
+      "parent": null,
+      "parent_chain_len": 1,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:ri",
+          "source": "a_default/script/10_ユニット/01_マリナーズ傭兵団.dat",
+          "line": 194,
+          "field": "skill2"
+        },
+        {
+          "owner": "unit:ri",
+          "source": "a_default/script/10_ユニット/01_マリナーズ傭兵団.dat",
+          "line": 194,
+          "field": "leader_skill"
+        },
+        {
+          "owner": "unit:ykp",
+          "source": "a_default/script/10_ユニット/09_ダークホーム伯.dat",
+          "line": 268,
+          "field": "skill"
+        },
+        {
+          "owner": "unit:ykp",
+          "source": "a_default/script/10_ユニット/09_ダークホーム伯.dat",
+          "line": 268,
+          "field": "leader_skill"
+        },
+        {
+          "owner": "unit:psr",
+          "source": "a_default/script/10_ユニット/14_SWW大社.dat",
+          "line": 166,
+          "field": "skill2"
+        },
+        {
+          "owner": "unit:psr",
+          "source": "a_default/script/10_ユニット/14_SWW大社.dat",
+          "line": 166,
+          "field": "leader_skill"
+        }
+      ]
+    },
+    {
+      "skill": "b_mp_faroff",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/30_スキル/F13_heal_support.dat",
+        "line": 205,
+        "parent": "b_mp"
+      },
+      "parent": "b_mp",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:skrn",
+          "source": "a_default/script/10_ユニット/33_INU.dat",
+          "line": 87,
+          "field": "skill"
+        },
+        {
+          "owner": "unit:skrn",
+          "source": "a_default/script/10_ユニット/33_INU.dat",
+          "line": 87,
+          "field": "leader_skill"
+        }
+      ]
+    },
+    {
+      "skill": "s_mp",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/30_スキル/F13_heal_support.dat",
+        "line": 279,
+        "parent": null
+      },
+      "parent": null,
+      "parent_chain_len": 1,
+      "directly_granted_in_unit_or_class": false,
+      "grant_examples": []
+    },
+    {
+      "skill": "oq_all",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/30_スキル/F13_heal_support.dat",
+        "line": 336,
+        "parent": null
+      },
+      "parent": null,
+      "parent_chain_len": 1,
+      "directly_granted_in_unit_or_class": false,
+      "grant_examples": []
+    },
+    {
+      "skill": "sp_hokyu_all",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/30_スキル/F13_heal_support.dat",
+        "line": 1076,
+        "parent": "b_all"
+      },
+      "parent": "b_all",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": false,
+      "grant_examples": []
+    },
+    {
+      "skill": "heal_clown_all",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/30_スキル/F13_heal_support.dat",
+        "line": 1319,
+        "parent": "b_all"
+      },
+      "parent": "b_all",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": false,
+      "grant_examples": []
+    },
+    {
+      "skill": "heal_clown_mp",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/30_スキル/F13_heal_support.dat",
+        "line": 1334,
+        "parent": "b_mp"
+      },
+      "parent": "b_mp",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": false,
+      "grant_examples": []
+    },
+    {
+      "skill": "heal_mint_all",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/30_スキル/F13_heal_support.dat",
+        "line": 1719,
+        "parent": "b_all"
+      },
+      "parent": "b_all",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": false,
+      "grant_examples": []
+    },
+    {
+      "skill": "tadora_charge",
+      "effective_mp": -100,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/30_スキル/F13_heal_support.dat",
+        "line": 2038,
+        "parent": "sk_ms"
+      },
+      "parent": "sk_ms",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "class:a265",
+          "source": "a_default/script/20_クラス/24_26_ONDISK_二軍_原理.dat",
+          "line": 772,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a2652",
+          "source": "a_default/script/20_クラス/24_26_ONDISK_二軍_原理.dat",
+          "line": 804,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a2653",
+          "source": "a_default/script/20_クラス/24_26_ONDISK_二軍_原理.dat",
+          "line": 817,
+          "field": "skill"
+        },
+        {
+          "owner": "class:tadora_s",
+          "source": "a_default/script/30_スキル/F20_summon.dat",
+          "line": 11989,
+          "field": "skill"
+        },
+        {
+          "owner": "class:tadora2_s",
+          "source": "a_default/script/30_スキル/F20_summon.dat",
+          "line": 11997,
+          "field": "skill"
+        },
+        {
+          "owner": "class:tadora3_s",
+          "source": "a_default/script/30_スキル/F20_summon.dat",
+          "line": 12005,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "b_yaku",
+      "effective_mp": -10,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/30_スキル/F13_heal_support.dat",
+        "line": 2198,
+        "parent": "b_all"
+      },
+      "parent": "b_all",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "class:a333",
+          "source": "a_default/script/20_クラス/31_33_GUC_サムソン_白狼.dat",
+          "line": 476,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a3332",
+          "source": "a_default/script/20_クラス/31_33_GUC_サムソン_白狼.dat",
+          "line": 507,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a3333",
+          "source": "a_default/script/20_クラス/31_33_GUC_サムソン_白狼.dat",
+          "line": 521,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "tamakai_all",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 1519,
+        "parent": "b_all"
+      },
+      "parent": "b_all",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": false,
+      "grant_examples": []
+    },
+    {
+      "skill": "u_dash",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 2448,
+        "parent": "a_dash"
+      },
+      "parent": "a_dash",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:udk_ass",
+          "source": "a_default/script/30_スキル/F20_summon.dat",
+          "line": 2289,
+          "field": "skill2"
+        }
+      ]
+    },
+    {
+      "skill": "b_all_wood",
+      "effective_mp": -20,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/30_スキル/F20_summon.dat",
+        "line": 6952,
+        "parent": null
+      },
+      "parent": null,
+      "parent_chain_len": 1,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "class:mimimot_wood",
+          "source": "a_default/script/30_スキル/F20_summon.dat",
+          "line": 6910,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "yusakusanta_poi",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/30_スキル/F30_死亡時スキル.dat",
+        "line": 625,
+        "parent": "b_all"
+      },
+      "parent": "b_all",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": false,
+      "grant_examples": []
+    },
+    {
+      "skill": "a_dash",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/30_スキル/F40_移動_ワープ_バリア.dat",
+        "line": 1,
+        "parent": null
+      },
+      "parent": null,
+      "parent_chain_len": 1,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:yaju",
+          "source": "a_default/script/10_ユニット/02_迫真空手道場.dat",
+          "line": 1,
+          "field": "skill"
+        },
+        {
+          "owner": "unit:yaju",
+          "source": "a_default/script/10_ユニット/02_迫真空手道場.dat",
+          "line": 1,
+          "field": "leader_skill"
+        },
+        {
+          "owner": "unit:akys",
+          "source": "a_default/script/10_ユニット/02_迫真空手道場.dat",
+          "line": 264,
+          "field": "skill2"
+        },
+        {
+          "owner": "unit:batman",
+          "source": "a_default/script/10_ユニット/02_迫真空手道場.dat",
+          "line": 519,
+          "field": "skill"
+        },
+        {
+          "owner": "unit:knn",
+          "source": "a_default/script/10_ユニット/04_ほのぼの神道.dat",
+          "line": 1,
+          "field": "skill2"
+        },
+        {
+          "owner": "unit:osni",
+          "source": "a_default/script/10_ユニット/05_ヴォイス・ドラマ革命企画.dat",
+          "line": 764,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "g_dash",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/30_スキル/F40_移動_ワープ_バリア.dat",
+        "line": 54,
+        "parent": "a_dash"
+      },
+      "parent": "a_dash",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:leo",
+          "source": "a_default/script/10_ユニット/03_アークシェード銃士連隊.dat",
+          "line": 695,
+          "field": "delskill"
+        },
+        {
+          "owner": "unit:hassamu",
+          "source": "a_default/script/10_ユニット/05_ヴォイス・ドラマ革命企画.dat",
+          "line": 925,
+          "field": "delskill"
+        },
+        {
+          "owner": "unit:hitokage",
+          "source": "a_default/script/10_ユニット/05_ヴォイス・ドラマ革命企画.dat",
+          "line": 1005,
+          "field": "delskill"
+        },
+        {
+          "owner": "unit:asasin",
+          "source": "a_default/script/10_ユニット/110_イベント人材.dat",
+          "line": 1594,
+          "field": "delskill"
+        },
+        {
+          "owner": "unit:icr",
+          "source": "a_default/script/10_ユニット/91_放浪_クッキー☆.dat",
+          "line": 861,
+          "field": "delskill"
+        },
+        {
+          "owner": "class:a000",
+          "source": "a_default/script/20_クラス/00_汎用兵科.dat",
+          "line": 75,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "l_dash",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/30_スキル/F40_移動_ワープ_バリア.dat",
+        "line": 81,
+        "parent": "a_dash"
+      },
+      "parent": "a_dash",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": false,
+      "grant_examples": []
+    },
+    {
+      "skill": "h_dash",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/30_スキル/F40_移動_ワープ_バリア.dat",
+        "line": 100,
+        "parent": "a_dash"
+      },
+      "parent": "a_dash",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:akn",
+          "source": "a_default/script/10_ユニット/20_VVANグループ.dat",
+          "line": 318,
+          "field": "skill2"
+        },
+        {
+          "owner": "unit:akn",
+          "source": "a_default/script/10_ユニット/20_VVANグループ.dat",
+          "line": 318,
+          "field": "leader_skill"
+        },
+        {
+          "owner": "class:a012",
+          "source": "a_default/script/20_クラス/01_03_マリナーズ_空手部_キモティカ.dat",
+          "line": 77,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a0122",
+          "source": "a_default/script/20_クラス/01_03_マリナーズ_空手部_キモティカ.dat",
+          "line": 107,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a0123",
+          "source": "a_default/script/20_クラス/01_03_マリナーズ_空手部_キモティカ.dat",
+          "line": 122,
+          "field": "skill"
+        },
+        {
+          "owner": "class:ene_a012",
+          "source": "a_default/script/20_クラス/Enemy_敵AI用クラス.dat",
+          "line": 43,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "i_dash",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/30_スキル/F40_移動_ワープ_バリア.dat",
+        "line": 156,
+        "parent": "a_dash"
+      },
+      "parent": "a_dash",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "class:a999",
+          "source": "a_default/script/20_クラス/01_03_マリナーズ_空手部_キモティカ.dat",
+          "line": 526,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a9992",
+          "source": "a_default/script/20_クラス/01_03_マリナーズ_空手部_キモティカ.dat",
+          "line": 557,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a9993",
+          "source": "a_default/script/20_クラス/01_03_マリナーズ_空手部_キモティカ.dat",
+          "line": 572,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a9994",
+          "source": "a_default/script/20_クラス/01_03_マリナーズ_空手部_キモティカ.dat",
+          "line": 590,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a042",
+          "source": "a_default/script/20_クラス/04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+          "line": 169,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a0422",
+          "source": "a_default/script/20_クラス/04_06_ほのぼの神道_ヴォイドラ革命_ヒゲクマ.dat",
+          "line": 200,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "a160_dash",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/30_スキル/F40_移動_ワープ_バリア.dat",
+        "line": 227,
+        "parent": "a_dash"
+      },
+      "parent": "a_dash",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:alc",
+          "source": "a_default/script/10_ユニット/16_ALC一派.dat",
+          "line": 2,
+          "field": "skill2"
+        },
+        {
+          "owner": "unit:alc",
+          "source": "a_default/script/10_ユニット/16_ALC一派.dat",
+          "line": 2,
+          "field": "leader_skill"
+        },
+        {
+          "owner": "class:a1604a",
+          "source": "a_default/script/20_クラス/B_1_クレイジーサイコレズ.dat",
+          "line": 119,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a1604b",
+          "source": "a_default/script/20_クラス/B_1_クレイジーサイコレズ.dat",
+          "line": 132,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "p_dash",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/30_スキル/F40_移動_ワープ_バリア.dat",
+        "line": 337,
+        "parent": "a_dash"
+      },
+      "parent": "a_dash",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "class:a320",
+          "source": "a_default/script/20_クラス/31_33_GUC_サムソン_白狼.dat",
+          "line": 172,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a3202",
+          "source": "a_default/script/20_クラス/31_33_GUC_サムソン_白狼.dat",
+          "line": 196,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a3203",
+          "source": "a_default/script/20_クラス/31_33_GUC_サムソン_白狼.dat",
+          "line": 212,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "szk_zan",
+      "effective_mp": -20,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_11_15_サセバトミサタ～SWW.dat",
+        "line": 94,
+        "parent": "bnkrg_zan"
+      },
+      "parent": "bnkrg_zan",
+      "parent_chain_len": 3,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:szk",
+          "source": "a_default/script/10_ユニット/13_アリソン・パクハイト.dat",
+          "line": 149,
+          "field": "skill2"
+        },
+        {
+          "owner": "unit:szk",
+          "source": "a_default/script/10_ユニット/13_アリソン・パクハイト.dat",
+          "line": 149,
+          "field": "leader_skill"
+        }
+      ]
+    },
+    {
+      "skill": "b_zrkl_heal2",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_16_20_ALC一派～VVAN.dat",
+        "line": 2758,
+        "parent": "b_all"
+      },
+      "parent": "b_all",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": false,
+      "grant_examples": []
+    },
+    {
+      "skill": "zonbi_all",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_21_25_材料屋～二軍.dat",
+        "line": 2952,
+        "parent": null
+      },
+      "parent": null,
+      "parent_chain_len": 1,
+      "directly_granted_in_unit_or_class": false,
+      "grant_examples": []
+    },
+    {
+      "skill": "medama_hokyu_heal1",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat",
+        "line": 191,
+        "parent": "b_mp"
+      },
+      "parent": "b_mp",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": false,
+      "grant_examples": []
+    },
+    {
+      "skill": "b_magickbs",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_26_30_原理～イースター.dat",
+        "line": 1735,
+        "parent": "sk_ms"
+      },
+      "parent": "sk_ms",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:siriris",
+          "source": "a_default/script/10_ユニット/26_クッキー☆原理主義党.dat",
+          "line": 580,
+          "field": "skill"
+        },
+        {
+          "owner": "unit:syunga",
+          "source": "a_default/script/10_ユニット/26_クッキー☆原理主義党.dat",
+          "line": 656,
+          "field": "skill"
+        },
+        {
+          "owner": "unit:rikyu",
+          "source": "a_default/script/10_ユニット/26_クッキー☆原理主義党.dat",
+          "line": 732,
+          "field": "skill"
+        },
+        {
+          "owner": "unit:sangetsu",
+          "source": "a_default/script/10_ユニット/94_放浪_ホモガキ・養殖.dat",
+          "line": 561,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "b_wate_png",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_31_32_ぢゆし～サムソン.dat",
+        "line": 378,
+        "parent": "b_ligh"
+      },
+      "parent": "b_ligh",
+      "parent_chain_len": 3,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:rma",
+          "source": "a_default/script/10_ユニット/02_迫真空手道場.dat",
+          "line": 346,
+          "field": "skill"
+        },
+        {
+          "owner": "unit:mur_s4",
+          "source": "a_default/script/2023_イベント_リュージ騎士団/event_23_RPG.dat",
+          "line": 19293,
+          "field": "delskill"
+        }
+      ]
+    },
+    {
+      "skill": "sk_cure_sponge",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 4359,
+        "parent": "cure_sponge"
+      },
+      "parent": "cure_sponge",
+      "parent_chain_len": 3,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:himn",
+          "source": "a_default/script/10_ユニット/110_イベント人材.dat",
+          "line": 777,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "santa_para",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 4389,
+        "parent": "b_all"
+      },
+      "parent": "b_all",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": false,
+      "grant_examples": []
+    },
+    {
+      "skill": "cure_sponge",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 4989,
+        "parent": "b_all"
+      },
+      "parent": "b_all",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:himn",
+          "source": "a_default/script/10_ユニット/110_イベント人材.dat",
+          "line": 777,
+          "field": "delskill"
+        },
+        {
+          "owner": "unit:sponge",
+          "source": "a_default/script/10_ユニット/91_放浪_クッキー☆.dat",
+          "line": 294,
+          "field": "skill"
+        },
+        {
+          "owner": "unit:sponge",
+          "source": "a_default/script/10_ユニット/91_放浪_クッキー☆.dat",
+          "line": 294,
+          "field": "leader_skill"
+        },
+        {
+          "owner": "class:sk009",
+          "source": "a_default/script/30_スキル/F20_summon.dat",
+          "line": 3231,
+          "field": "skill"
+        },
+        {
+          "owner": "class:sk0092",
+          "source": "a_default/script/30_スキル/F20_summon.dat",
+          "line": 3264,
+          "field": "skill"
+        },
+        {
+          "owner": "class:sk0093",
+          "source": "a_default/script/30_スキル/F20_summon.dat",
+          "line": 3277,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "santa_all",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 5044,
+        "parent": "b_all"
+      },
+      "parent": "b_all",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": false,
+      "grant_examples": []
+    },
+    {
+      "skill": "santa_stone",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 5051,
+        "parent": "b_all"
+      },
+      "parent": "b_all",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": false,
+      "grant_examples": []
+    },
+    {
+      "skill": "b_ld",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 6303,
+        "parent": "b_ligh"
+      },
+      "parent": "b_ligh",
+      "parent_chain_len": 3,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:hsnm",
+          "source": "a_default/script/10_ユニット/91_放浪_クッキー☆.dat",
+          "line": 689,
+          "field": "skill"
+        },
+        {
+          "owner": "unit:hsnm",
+          "source": "a_default/script/10_ユニット/91_放浪_クッキー☆.dat",
+          "line": 689,
+          "field": "leader_skill"
+        },
+        {
+          "owner": "class:c_hsnm",
+          "source": "a_default/script/10_ユニット/91_放浪_クッキー☆.dat",
+          "line": 740,
+          "field": "skill"
+        },
+        {
+          "owner": "class:c_hsnm2",
+          "source": "a_default/script/10_ユニット/91_放浪_クッキー☆.dat",
+          "line": 754,
+          "field": "skill"
+        },
+        {
+          "owner": "class:c_hsnm3",
+          "source": "a_default/script/10_ユニット/91_放浪_クッキー☆.dat",
+          "line": 768,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "heal_ochan_all",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 7713,
+        "parent": "b_all"
+      },
+      "parent": "b_all",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": false,
+      "grant_examples": []
+    },
+    {
+      "skill": "a_dc2",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 10874,
+        "parent": "a_dash"
+      },
+      "parent": "a_dash",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "class:a142s",
+          "source": "a_default/script/20_クラス/11_15_サセバト_アリソン_SWW.dat",
+          "line": 890,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a142s2",
+          "source": "a_default/script/20_クラス/11_15_サセバト_アリソン_SWW.dat",
+          "line": 922,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a142s3",
+          "source": "a_default/script/20_クラス/11_15_サセバト_アリソン_SWW.dat",
+          "line": 936,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "bacon_smile_fear",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 12633,
+        "parent": "b_all"
+      },
+      "parent": "b_all",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": false,
+      "grant_examples": []
+    },
+    {
+      "skill": "b_trn_heal2",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 14936,
+        "parent": "b_all"
+      },
+      "parent": "b_all",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": false,
+      "grant_examples": []
+    },
+    {
+      "skill": "trn_buff",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 14994,
+        "parent": "sk_ms"
+      },
+      "parent": "sk_ms",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:trn",
+          "source": "a_default/script/10_ユニット/90_放浪_ホモビ.dat",
+          "line": 1487,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "trn_buff_heal2",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 15123,
+        "parent": "b_all"
+      },
+      "parent": "b_all",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": false,
+      "grant_examples": []
+    },
+    {
+      "skill": "kusogaki_dash_nt4",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 15229,
+        "parent": "b_wate"
+      },
+      "parent": "b_wate",
+      "parent_chain_len": 4,
+      "directly_granted_in_unit_or_class": false,
+      "grant_examples": []
+    },
+    {
+      "skill": "b_mrandom_trd",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_40_イベント_放浪_傭兵人材.dat",
+        "line": 15583,
+        "parent": "b_ligh"
+      },
+      "parent": "b_ligh",
+      "parent_chain_len": 3,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:hecate",
+          "source": "a_default/script/10_ユニット/90_放浪_ホモビ.dat",
+          "line": 1554,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "nkdks_aiki_all",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_50_スペシャル人材.dat",
+        "line": 4226,
+        "parent": "b_all"
+      },
+      "parent": "b_all",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": false,
+      "grant_examples": []
+    },
+    {
+      "skill": "q_dskr",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_6_10_ヒゲクマ～スカーレット.dat",
+        "line": 1187,
+        "parent": "b_ligh"
+      },
+      "parent": "b_ligh",
+      "parent_chain_len": 3,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:skr",
+          "source": "a_default/script/10_ユニット/10_スカーレット伯.dat",
+          "line": 1,
+          "field": "skill2"
+        },
+        {
+          "owner": "unit:skr",
+          "source": "a_default/script/10_ユニット/10_スカーレット伯.dat",
+          "line": 1,
+          "field": "leader_skill"
+        }
+      ]
+    },
+    {
+      "skill": "sp_poptrain_mp",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 3902,
+        "parent": "b_mp"
+      },
+      "parent": "b_mp",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": false,
+      "grant_examples": []
+    },
+    {
+      "skill": "sp_poptrain_all",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_11_15_サセバトミサタ～SWW.dat",
+        "line": 3908,
+        "parent": "b_all"
+      },
+      "parent": "b_all",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": false,
+      "grant_examples": []
+    },
+    {
+      "skill": "mur_hokyu_all",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 453,
+        "parent": "b_all"
+      },
+      "parent": "b_all",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": false,
+      "grant_examples": []
+    },
+    {
+      "skill": "sp_nabe_all",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_1_5_マリナーズ～革命企画.dat",
+        "line": 4670,
+        "parent": "b_all"
+      },
+      "parent": "b_all",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": false,
+      "grant_examples": []
+    },
+    {
+      "skill": "sp_gyukomu_hokyu_all",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_21_25_材料屋～二軍.dat",
+        "line": 921,
+        "parent": "b_all"
+      },
+      "parent": "b_all",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": false,
+      "grant_examples": []
+    },
+    {
+      "skill": "kdance_mp",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_6_10_ヒゲクマ～スカーレット.dat",
+        "line": 442,
+        "parent": "b_mp"
+      },
+      "parent": "b_mp",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": false,
+      "grant_examples": []
+    },
+    {
+      "skill": "kdance_all",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/31_ユニットスキル/U_必殺_6_10_ヒゲクマ～スカーレット.dat",
+        "line": 451,
+        "parent": "b_all"
+      },
+      "parent": "b_all",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": false,
+      "grant_examples": []
+    },
+    {
+      "skill": "b_psyco",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 1070,
+        "parent": "sk_ms"
+      },
+      "parent": "sk_ms",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:wagnas",
+          "source": "a_default/script/10_ユニット/B_23_リュージボス.dat",
+          "line": 1555,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "sp_musou_fuuin",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 4619,
+        "parent": null
+      },
+      "parent": null,
+      "parent_chain_len": 1,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:whiteknn23",
+          "source": "a_default/script/10_ユニット/B_23_リュージボス.dat",
+          "line": 503,
+          "field": "skill"
+        },
+        {
+          "owner": "unit:whiteknn_r",
+          "source": "a_default/script/5000_ランダムシナリオ/RB_ボス人材.dat",
+          "line": 1157,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "advent_ligh",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 7521,
+        "parent": "sk_ms"
+      },
+      "parent": "sk_ms",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "class:advent_c",
+          "source": "a_default/script/20_クラス/B_23_リュージボス.dat",
+          "line": 87,
+          "field": "skill"
+        },
+        {
+          "owner": "class:advent_c_r",
+          "source": "a_default/script/5000_ランダムシナリオ/RB_ボスクラス.dat",
+          "line": 343,
+          "field": "skill"
+        },
+        {
+          "owner": "class:advent_c_r2",
+          "source": "a_default/script/5000_ランダムシナリオ/RB_ボスクラス.dat",
+          "line": 361,
+          "field": "skill"
+        },
+        {
+          "owner": "class:advent_c_r3",
+          "source": "a_default/script/5000_ランダムシナリオ/RB_ボスクラス.dat",
+          "line": 376,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "dopyudopyu_summon",
+      "effective_mp": -35,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_23_リュージボス.dat",
+        "line": 15752,
+        "parent": "sk_ms"
+      },
+      "parent": "sk_ms",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "class:misya_hashira",
+          "source": "a_default/script/10_ユニット/B_23_リュージボス.dat",
+          "line": 1455,
+          "field": "skill"
+        },
+        {
+          "owner": "class:misya_hashira_r",
+          "source": "a_default/script/5000_ランダムシナリオ/RB_ボス人材.dat",
+          "line": 1045,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "b_qacl",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 3195,
+        "parent": "sk_ms"
+      },
+      "parent": "sk_ms",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "class:qacl4",
+          "source": "a_default/script/20_クラス/B_25_ジトメ秘密教団.dat",
+          "line": 62,
+          "field": "skill"
+        },
+        {
+          "owner": "class:qacl_r",
+          "source": "a_default/script/5000_ランダムシナリオ/RB_ボスクラス.dat",
+          "line": 1005,
+          "field": "skill"
+        },
+        {
+          "owner": "class:qacl_r2",
+          "source": "a_default/script/5000_ランダムシナリオ/RB_ボスクラス.dat",
+          "line": 1024,
+          "field": "skill"
+        },
+        {
+          "owner": "class:qacl_r3",
+          "source": "a_default/script/5000_ランダムシナリオ/RB_ボスクラス.dat",
+          "line": 1039,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "all_migo",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 3485,
+        "parent": "b_all"
+      },
+      "parent": "b_all",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "class:migo4",
+          "source": "a_default/script/20_クラス/B_25_ジトメ秘密教団.dat",
+          "line": 131,
+          "field": "skill"
+        },
+        {
+          "owner": "class:migo_r",
+          "source": "a_default/script/5000_ランダムシナリオ/RB_ボスクラス.dat",
+          "line": 1103,
+          "field": "skill"
+        },
+        {
+          "owner": "class:migo_r2",
+          "source": "a_default/script/5000_ランダムシナリオ/RB_ボスクラス.dat",
+          "line": 1122,
+          "field": "skill"
+        },
+        {
+          "owner": "class:migo_r3",
+          "source": "a_default/script/5000_ランダムシナリオ/RB_ボスクラス.dat",
+          "line": 1137,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "mp_migo",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_25_ジトメ秘密教団.dat",
+        "line": 3494,
+        "parent": "b_mp"
+      },
+      "parent": "b_mp",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "class:migo4",
+          "source": "a_default/script/20_クラス/B_25_ジトメ秘密教団.dat",
+          "line": 131,
+          "field": "skill"
+        },
+        {
+          "owner": "class:migo_r",
+          "source": "a_default/script/5000_ランダムシナリオ/RB_ボスクラス.dat",
+          "line": 1103,
+          "field": "skill"
+        },
+        {
+          "owner": "class:migo_r2",
+          "source": "a_default/script/5000_ランダムシナリオ/RB_ボスクラス.dat",
+          "line": 1122,
+          "field": "skill"
+        },
+        {
+          "owner": "class:migo_r3",
+          "source": "a_default/script/5000_ランダムシナリオ/RB_ボスクラス.dat",
+          "line": 1137,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "sp_midocha",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 2429,
+        "parent": "sp_inm_role"
+      },
+      "parent": "sp_inm_role",
+      "parent_chain_len": 3,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:midocha",
+          "source": "a_default/script/10_ユニット/B_525_神聖UNEI帝国.dat",
+          "line": 293,
+          "field": "skill2"
+        }
+      ]
+    },
+    {
+      "skill": "sp_midocha2",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 2459,
+        "parent": "sp_midocha"
+      },
+      "parent": "sp_midocha",
+      "parent_chain_len": 4,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:midocha",
+          "source": "a_default/script/10_ユニット/B_525_神聖UNEI帝国.dat",
+          "line": 293,
+          "field": "skill2"
+        },
+        {
+          "owner": "unit:kenri_midocha",
+          "source": "a_default/script/10_ユニット/B_525_神聖UNEI帝国.dat",
+          "line": 612,
+          "field": "skill2"
+        }
+      ]
+    },
+    {
+      "skill": "sp_midocha3",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 2469,
+        "parent": "sp_midocha"
+      },
+      "parent": "sp_midocha",
+      "parent_chain_len": 4,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "unit:midocha",
+          "source": "a_default/script/10_ユニット/B_525_神聖UNEI帝国.dat",
+          "line": 293,
+          "field": "skill2"
+        }
+      ]
+    },
+    {
+      "skill": "g_inmudash",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 4873,
+        "parent": "a_dash"
+      },
+      "parent": "a_dash",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "class:a525_0",
+          "source": "a_default/script/20_クラス/B_525_神聖UNEI帝国.dat",
+          "line": 16,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a525_02",
+          "source": "a_default/script/20_クラス/B_525_神聖UNEI帝国.dat",
+          "line": 42,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a525_03",
+          "source": "a_default/script/20_クラス/B_525_神聖UNEI帝国.dat",
+          "line": 52,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a525_2",
+          "source": "a_default/script/20_クラス/B_525_神聖UNEI帝国.dat",
+          "line": 62,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a525_22",
+          "source": "a_default/script/20_クラス/B_525_神聖UNEI帝国.dat",
+          "line": 93,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a525_23",
+          "source": "a_default/script/20_クラス/B_525_神聖UNEI帝国.dat",
+          "line": 104,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "inm_mp",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 5964,
+        "parent": "b_mp"
+      },
+      "parent": "b_mp",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "class:a525_a9",
+          "source": "a_default/script/20_クラス/B_525_神聖UNEI帝国.dat",
+          "line": 266,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a525_a92",
+          "source": "a_default/script/20_クラス/B_525_神聖UNEI帝国.dat",
+          "line": 298,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a525_a93",
+          "source": "a_default/script/20_クラス/B_525_神聖UNEI帝国.dat",
+          "line": 309,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a525_a93a",
+          "source": "a_default/script/20_クラス/B_525_神聖UNEI帝国.dat",
+          "line": 545,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a525_a93d",
+          "source": "a_default/script/20_クラス/B_525_神聖UNEI帝国.dat",
+          "line": 569,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "inm_all",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_525_神聖UNEI帝国.dat",
+        "line": 6018,
+        "parent": null
+      },
+      "parent": null,
+      "parent_chain_len": 1,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "class:a525_9",
+          "source": "a_default/script/20_クラス/B_525_神聖UNEI帝国.dat",
+          "line": 215,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a525_92",
+          "source": "a_default/script/20_クラス/B_525_神聖UNEI帝国.dat",
+          "line": 244,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a525_93",
+          "source": "a_default/script/20_クラス/B_525_神聖UNEI帝国.dat",
+          "line": 255,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a525_93a",
+          "source": "a_default/script/20_クラス/B_525_神聖UNEI帝国.dat",
+          "line": 541,
+          "field": "skill"
+        },
+        {
+          "owner": "class:a525_93d",
+          "source": "a_default/script/20_クラス/B_525_神聖UNEI帝国.dat",
+          "line": 563,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "sp_inari_hokyu_all",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_5_伏見稲荷大社.dat",
+        "line": 824,
+        "parent": "b_all"
+      },
+      "parent": "b_all",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": false,
+      "grant_examples": []
+    },
+    {
+      "skill": "boss_b_inari",
+      "effective_mp": -60,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/32_ボススキル/B_5_伏見稲荷大社.dat",
+        "line": 1655,
+        "parent": "sk_ms"
+      },
+      "parent": "sk_ms",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": true,
+      "grant_examples": [
+        {
+          "owner": "class:binari2",
+          "source": "a_default/script/20_クラス/B_5_土屋稲荷大社.dat",
+          "line": 47,
+          "field": "skill"
+        },
+        {
+          "owner": "class:binari3",
+          "source": "a_default/script/20_クラス/B_5_土屋稲荷大社.dat",
+          "line": 88,
+          "field": "skill"
+        },
+        {
+          "owner": "class:binari2_r",
+          "source": "a_default/script/5000_ランダムシナリオ/RB_ボスクラス.dat",
+          "line": 55,
+          "field": "skill"
+        },
+        {
+          "owner": "class:binari2_r2",
+          "source": "a_default/script/5000_ランダムシナリオ/RB_ボスクラス.dat",
+          "line": 73,
+          "field": "skill"
+        },
+        {
+          "owner": "class:binari2_r3",
+          "source": "a_default/script/5000_ランダムシナリオ/RB_ボスクラス.dat",
+          "line": 88,
+          "field": "skill"
+        },
+        {
+          "owner": "class:binari3_r",
+          "source": "a_default/script/5000_ランダムシナリオ/RB_ボスクラス.dat",
+          "line": 103,
+          "field": "skill"
+        }
+      ]
+    },
+    {
+      "skill": "a_dash_item",
+      "effective_mp": -1,
+      "effective_func": "missile",
+      "source": {
+        "file": "a_default/script/41_内政_アイテム/S_item_skillset.dat",
+        "line": 14,
+        "parent": "a_dash"
+      },
+      "parent": "a_dash",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": false,
+      "grant_examples": []
+    },
+    {
+      "skill": "b_all_item",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/41_内政_アイテム/S_item_skillset.dat",
+        "line": 19,
+        "parent": "b_all"
+      },
+      "parent": "b_all",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": false,
+      "grant_examples": []
+    },
+    {
+      "skill": "chop_comedy_heal1",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/6000_スキルテスト/skill_intyo.dat",
+        "line": 288,
+        "parent": "b_all"
+      },
+      "parent": "b_all",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": false,
+      "grant_examples": []
+    },
+    {
+      "skill": "santarts_all",
+      "effective_mp": -1,
+      "effective_func": "heal",
+      "source": {
+        "file": "a_default/script/8000_RTSシナリオ/RTSskill.dat",
+        "line": 397,
+        "parent": "b_all"
+      },
+      "parent": "b_all",
+      "parent_chain_len": 2,
+      "directly_granted_in_unit_or_class": false,
+      "grant_examples": []
+    }
+  ],
+  "raw_direct_negative_count_reference": 32,
+  "notes": [
+    "Previous direct declaration count 32; this includes inherited negative costs.",
+    "Definition cost sign not proof of gameplay MP addition: caller MP/debit/fallback may differ.",
+    "Native normal heal/missile/summon and postdamage side effects must be checked by owner B.",
+    "Work typed-heal loader may accept the negative literal even when its action rejects it.",
+    "No original gameplay, strict comparison, or runtime effect here."
+  ],
+  "gameplay": 0,
+  "strict_match": 0
+}

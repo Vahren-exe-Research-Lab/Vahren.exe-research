@@ -1,0 +1,34 @@
+{
+  "source_sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+  "status": "STATIC / VTABLE PE VERIFIED / GAME NOT RUN",
+  "slots": {
+    "Player": {
+      "vtable": "0x00639B08",
+      "slots": {
+        "+0x00": "0x0051E480",
+        "+0x08": "0x00514A80",
+        "+0x0C": "0x0051EF80",
+        "+0x14": "0x005200A0",
+        "+0x18": "0x005146E0"
+      }
+    },
+    "Enemy": {
+      "vtable": "0x00638B60",
+      "slots": {
+        "+0x00": "0x004477F0",
+        "+0x08": "0x00514A80",
+        "+0x0C": "0x00447810",
+        "+0x14": "0x00514C50",
+        "+0x18": "0x005146E0"
+      }
+    }
+  },
+  "meaning": {
+    "slot_0c": "battle initialization / 0x492890 calls all 3 virtuals",
+    "slot_14": "battle finishing prelude / 0x493630 calls all 3 virtuals",
+    "slot_18": "side state code accessor 0x5146E0 used in outcome gate",
+    "runtime_troop_vector": "side +0x38 begin/+0x3c end (requires real snapshot)",
+    "runtime_unit_vector": "side +0x48 begin/+0x4c end (used also by outcome 0x514C80)"
+  },
+  "caution": "Class vtable dispatch and static source paths are verified. Actual battle scene entry, Unit consistency, and pause safety not gameplay observed."
+}

@@ -1,0 +1,79 @@
+{
+  "status": "BATTLE_RETURNED",
+  "origin": "LIVE_ORIGINAL_READONLY",
+  "utc": "2026-10-21T16:32:49.548884+00:00",
+  "structural_captures": 4,
+  "capture_failures": 1,
+  "attempts": 5,
+  "files": [
+    {
+      "name": "BATTLE_USER_20261021T163100686424Z_9cddfc86_READY.json",
+      "sha256": "684F89126C51E8879605A5FF14ABFCA268CA2B781D3C2D3FCE3F58664DD53490"
+    },
+    {
+      "name": "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_01.json",
+      "sha256": "7C0A7BD05FFAB908A90BBBEC0863FCE040A99A33A17E75520C9CC19094565332"
+    },
+    {
+      "name": "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_02.json",
+      "sha256": "D7662477F8D136EBD98541061A9E896F9B535193046CB0C0F01F95FDC826D9C8"
+    },
+    {
+      "name": "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_03.json",
+      "sha256": "4806E392CBC3ED29756C5C3BCDC65ABD40B176DF6AFFC80CE6C420A5F66CA088"
+    },
+    {
+      "name": "BATTLE_USER_20261021T163100686424Z_9cddfc86_FAILURE_04.json",
+      "sha256": "F7FBC52248ACA34A97A325450E829E72453C30AA6121231B4BF8A81A780D4286"
+    },
+    {
+      "name": "BATTLE_USER_20261021T163100686424Z_9cddfc86_RAW_05.json",
+      "sha256": "77B29DC80A2CA84BD347A56D63E3830D54044358599961D0C7D0678B6352F9E7"
+    }
+  ],
+  "event_log": "BATTLE_USER_20261021T163100686424Z_9cddfc86_EVENTS.jsonl",
+  "full_G1_proven": false,
+  "external_game_roundtrip_proven": false,
+  "game_memory_written": false,
+  "preflight": {
+    "pid": 28432,
+    "sha256": "E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187",
+    "load_base": "0x00270000",
+    "Task_header_bytes": 128,
+    "Task_vector_bytes": 1212,
+    "sides": [
+      {
+        "slot": 0,
+        "bytes": 84
+      },
+      {
+        "slot": 1,
+        "bytes": 84
+      },
+      {
+        "slot": 2,
+        "bytes": 84
+      }
+    ],
+    "initial": {
+      "mode": 1,
+      "active": 0,
+      "attack_count": 0,
+      "battlefield_ptr": "0x00000000",
+      "world_mode": 0,
+      "scene_type": 1,
+      "frame_counter": 1056,
+      "pause": 0,
+      "task_active_start_ptr": "0x16DC7028",
+      "task_active_end_ptr": "0x16DC74E4"
+    },
+    "native_memory_writes": 0
+  },
+  "code_sha256": {
+    "battle_user_recorder_core_20261022.py": "DE4D60A4697E104BF4D7A75FE30DF9640089313D9AF40BB2A4703F593785CACC",
+    "battle_native_detached_capture_v7_20261022.py": "C8E590CB1ECD69CD18E30164F7DEA74BC6DB29D80C9FCB57991A3F567053126F",
+    "battle_native_war_tree_decoder_v5_20261021.py": "0DD7C9EBD0BF97E4BA421FEC02909A44A9B6ABDA4A3538239B479530D909EB6A",
+    "battle_native_readonly_live_probe_stage6_20261021.py": "E64634E6B18DCFD06CFE9740F0C80B7AACD8FA8CAD8D686288C6DD02ED32F685"
+  },
+  "battle_seen": true
+}
