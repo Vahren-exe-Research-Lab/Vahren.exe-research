@@ -1,0 +1,13 @@
+# 新B｜研究資料134件保全・GitHub復元不足の最優先監査（2026-10-31）
+- RECOVERY-ID: B-RC-20261031-1230-SAFE134-CLOUD-RESTORE-GAP-01 / owner B / T011,T012,T013,T024,T028 / RECOVERY METADATA / VERIFY / NOT READY
+- SOURCE: ChatGPT Library `/迫真戦記再開発プロジェクト/data/HAKUSHIN_B_LANE_SAFE_RECOVERY_20261029_V3.zip`。承認済み134資料、README+manifest各1、合計136 entries。
+- この回にLibraryの既存ZIPをraw取得して独立SHA256照合: 443904B、SHA256=059B91381C1B58214353769006E0F4049FCDE393A6B7970F4513602878A2B2C9。ZIP CRC PASS、個別manifest 134/134 sha256+bytes PASS。
+- PCとの134/134バイト一致は10/29の既存B検証記録に依拠。この回のPC全134件再ハッシュは未実施。PC最新11H/12Hの別個readbackはB HANDOFFにある。
+- HOLDS: 安全拒否/関連HOLD21件はV3不収録・原Library原本残存。内容の別tool/shell/path/Remote/ZIP/Git再送は禁止。PCで見つかっても実行・READY禁止。
+- LOST/OPEN: 2026-10-25 14H Bオフライン研究原文はLibrary同Bフォルダ185エントリの名前検索で該当0、Library全文検索でも未特定。PC B data/exeの日時ファイル名調査も13Hと15Hはあるが14H原文は未特定。内容を推測復元しない。
+- GITHUB: private ButaMonky/Hakushin067-Research-Knowledge develop にはREF_UNIT_EXP_SUMMON.mdとRESEARCH_SOURCE_CATALOG.tsv（索引1798件）があるが、data/T013_DUAL_SCORE_RANK_FIELD_NATIVE_20261031_12H.md と evidence/LANE_B_HANDOFF.md は未掲載(404)。索引は原文バックアップの代わりにならない。
+- NEW MANIFEST: モデル作業コンテナで B_SAFE134_RECOVERY_INVENTORY_20261031.json (28,552B, SHA256 ddbc67902afe6af3996710597e3a6ae232ceda430355a2d9817470173fcf42db) 作成、134安全資料の相対path/sha256/bytesを記載、拒否保留21件の本文を含めない。
+- CLOUD UPLOAD FAILURE: 上記新manifestをChatGPT Library B dataへfiles.manage_library uploadしたところ2/2回とも `container_session_unavailable: No active container session was found for container_path`。CONNECTION/OTHERでありSAFETY_REFUSALではない。Libraryへ新索引が保存されたとは主張しない。
+- CURATOR: 既存の「迫真戦記・研究知識ベース統合」タスクをrun_nowで臨時起動要求しsuccess=true（スケジュール変更0）。実行完了・GitHub commit/push/完全復元は未確認。知識統合担当のみGit変更を実施可能。
+- NEXT P0: 専任統合担当はGitHubとPCのprivate develop先端、clean、allowlist、機密、安全対象を照合。安全な原文の復元媒体とチェックサム/READMEを検討し、無審査の全件pushや共有knowledgeのB書込を行わない。必要なら新索引をコンテナから正式Libraryへ再アップロード（接続回復時のみ）。10/25原文探索と21 HOLD分類は安全境界を保ち継続。
+- LIMITS: 今回は解析新規0、原作Gameplay Golden PASS0、strict MATCH0、新B READY0、MASTER更新0。原本/他owner/REA/dev_lab/Git/設定/スケジュール変更0。

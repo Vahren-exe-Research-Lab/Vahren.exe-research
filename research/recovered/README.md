@@ -84,3 +84,7 @@ E資料の選別では、除外指定した3報告が一括読み取りに含ま
 ## 訂正と通常セーブの主要原本
 
 [旧解釈の訂正レビュー](CORRECTION_REVIEW.md)と[訂正一覧](../../reference/CORRECTIONS.md)から、訂正前の説明・現在の解釈・根拠を比較する。[T014通常セーブ研究](save_topic/README.md)は現在の772行を全文回収し、目録版との改版差を記録した。現在の形式・命名は[REF_SAVE_FORMAT.md](../../REF_SAVE_FORMAT.md)を先に確認する。
+
+## 追加回収と現在の所在
+
+[戦闘・AIの追加38報告](b_batch4/README.md)、[スクリプト文法・イベント実行の主要2文書](script_topics/README.md)、[防衛研究](defense_topic/README.md)を回収した。保留した7件は本文を収録せず理由だけ残す。[現在のMarkdown所在一覧](current_inventory/README.md)で、旧目録にないパス・回収台帳への対応・確認待ちを確認できる。名前だけのGitHub対応と本文一致を区別する。

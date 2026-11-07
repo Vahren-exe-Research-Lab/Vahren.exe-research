@@ -1,0 +1,11 @@
+# B-20261014-1409-01｜田所空手jointの開始角度・Rush角度揺らぎ・待機・homingの独立raw指定
+[DATE/TASK/STATUS] 2026-10-14 14:09 JST、T011 primary/T012・T013 secondary、WRQ-20261013-B-SKILL P0 PARTIAL。STATIC ORIGINAL SOURCE ONLY／B owner読戻し前はREADY未確定。原作Gameplay Golden PASS0、新旧strict MATCH0、Task DONE+0。
+[ORIGINAL] ver0.67 COREの正規化原文（原本は起動/改変なし）data/normalized/hakushin067_core/a_default/script/30_スキル/F11_sword.dat 1-based L1203-1214、skill sw_karate_js_joi の実宣言。
+[NEW RAW FIELDS] この単一joint節は homing=origin (L1205)、wait_time=6 (L1206)、start_random_degree=8 (L1207)、rush_random_degree=10 (L1208) をそれぞれ別キーで明示。raw「origin」を自動でtarget/caster中心へ翻訳せず、開始方向の8とRush毎の10を一つの乱数値として扱わない。
+[CONTEXT/DEDUP] 同jointのjoint_skill=on/rush=2/rush_interval=4/next3=sw_karate_js_joi2/next_order=onは既統合B-20261014-1017-01の範囲なので再採番しない。root0 next/root1 just_nextは既B-20261014-0211-01、pair_next二子は既B-20261014-1109-01。本IDの新規範囲は上記4 raw値の同一jointへの局在と既保存parserとの限定クロス照合のみ。
+[SAVED EXE VA/XREF] 既存B-20261013-1930-01のexe/T011_STRUCTURE_DISPATCH_PROBE.txt：0x59C7C8→0x59C7F5でraw rush_random_degree→compiled Skill+0x80、0x59C733→0x59C747 rush→+0x74、0x59C822→0x59C84F rush_interval→+0x78（0→5/-1→0）。既B-20261013-1951-01は0x59C376→0x59C3B5 next_order→byte+0x270。新たな原作EXE逆解析なし、今回の個別Skillインスタンスにwriter到達した証明でもない。
+[BOUNDARY/VERIFY] start_random_degree/homing/wait_timeのnative loader field・実効継承、+0x80と当該jointのruntime Skill ptr同一性、乱数抽選のsite/回数/順番、start/pair/main次段dispatch、wait単位、初期姿勢・座標・攻撃/MP/RNG/HP結果は未確定。「値8だから8回抽選」「wait6フレーム確定」「必ず2弾」等の解釈は禁止。
+[REIMPLEMENT] root→joint→childごとにraw Skill ID・親/next/pair edge・homing token・wait_time・start_random_degree・rush_random_degree・rush/interval・next_orderを別fieldで保持。実射出時はsource keyとcompiled value、angle-before/after、sample origin、RNG cursor、子弾発生frame、HP/MP/collisionを別receiptとし未知時はVERIFY/fail-closed。Work現行R6/R7等の推定値へ今回rawを実機測定値として流用しない。
+[GOLDEN DESIGNED/NOT RUN] 原作合法yajuでroot0/1の所持・joint出現をまず可視確認。同じ未改変原作SAVE/SHA・seed/位置・操作列で子弾開始角度、各rush弾角度・表示時刻・座標/エフェクト・HP/MP・RNGを旧/新比較。実原作Game PASS0、strict MATCH0、内部rawだけならINELIGIBLE。
+[NEXT/OWNER] T011 raw4キーの親解決・合法Unit接続、T013開始角度/最終選択の保存済証拠、T012射撃latch・MP不足fallback/攻撃結果を独立に継続。EのみMASTER/T018統合。新IDはdetail/T011本体/HANDOFFすべて保存読戻し後に限定READY、実効GameplayはVERIFY。
+[SAFETY/CAPACITY] 原本ZIP/EXE/SAV実行・変更0、既拒否VAや書込の迂回0、新重いREA/Ghidra0。MASTER/T018・他レーン・REA/dev_lab/Work/共有キュー/Git/push/Remote/設定/automation変更0。CPU実率n/aにつき余裕未証明。

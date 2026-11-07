@@ -217,3 +217,5 @@ python -B knowledge\tools\research_index.py --check
 **メモリの読み書き関係（2026-11-05）:** [関数・メモリ事典](reference/README.md)で、構造体＋オフセットから読み手・書き手の関数と根拠へ進める。[採録範囲と曖昧な主張の扱い](research/recovered/MEMORY_RELATION_REVIEW.md)を併記し、保存ファイルへの出力とメモリへの書込みを区別した。[研究チャットの保存先照合](research/recovered/SCHEDULE_CHAT_CHECK.md)も参照。
 
 **旧説明の訂正とセーブ原本（2026-11-05）:** [訂正履歴](reference/CORRECTIONS.md)に、旧説明・現在の解釈・根拠を11件採録。旧名称からも検索できる。[通常セーブの主要研究文書](research/recovered/save_topic/README.md)は現在版を全文保存し、目録版との改版差を記録した。
+
+**追加研究本文と現在の所在（2026-11-05）:** [回収本文の入口](research/recovered/README.md)に戦闘・AI38報告と文法・イベント・防衛の主要3文書を追加。[現在の文書所在](research/recovered/current_inventory/README.md)は旧目録にない場所も示す。本文未確認の所在を新発見や保存済みとは数えない。

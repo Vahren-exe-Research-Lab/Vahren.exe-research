@@ -1,0 +1,12 @@
+# B-20261013-2018-71｜T011 Unit→Class異種親参照とClass派生・change遷移の非同型グラフ
+[DATE/OWNER/STATUS] 2026-10-13 20時台 JST。T011 owner、WRQ-20261013-B-SKILL P0/PARTIAL、READY-STATIC-ORIGINAL-SOURCE-GRAPH-ONLY。原作Gameplay PASS0／新strict MATCH0、Task DONE+0。
+[PRIMARY SOURCE] 正規化原作 data/normalized/hakushin067_core/a_default/script/10_ユニット/00_base.dat:1,39 は unit base と unit base1:base。10_ユニット/B_525_神聖UNEI帝国.dat:100以降は unit ncncbase2:base1 を宣言し、class=c_ncncbase2、level=25、unit自身のskill=kenri_kidan,kenri_handとskill2=sp_kenrirush,sp_scream,sp_kenri_summon,sp_kenri_toppaを明示する。
+[CLASS SOURCE] 同B_525ファイル:176付近 class c_ncncbase2:base1 はunit base1を親名として参照し、skill=@ / skill2=@ / learn=@、hp=525252、attack=1525、magic=1525、change=c_ncncbase22 * 35 を宣言する。同ファイル:218付近 class c_ncncbase22:c_ncncbase2 はhp=825252、attack=2025、magic=2025、change=c_ncncbase23 * 55。同ファイル:233付近 class c_ncncbase23:c_ncncbase2 はhp=1525252、attack=2525、magic=2525と宣言。
+[NEW DELTA] 旧B-20261012-0412-01はc_ncncbase:base1のcross-kind edgeと@遮断を記録済み。本IDは別の現存unit ncncbase2から見える class c_ncncbase2 と2つの同親兄弟classを結合し、原文上の change列 c_ncncbase2→c_ncncbase22→c_ncncbase23 と継承辺 c_ncncbase22→c_ncncbase2 および c_ncncbase23→c_ncncbase2 が異なるグラフであることだけを追加する。c_ncncbase23の親はc_ncncbase22ではない。
+[NATIVE PRIOR/XREF] 既存B-20261013-1102-01の保存x86 VA5885CA..5886AA、58A7BE..58A861、57528F..575331 はUnit/Class typed lookupの参照点であり、本件の実際の親copyやchange実行を示すVAではない。再解析・追加バイナリ取得なし。
+[FACT/VERIFY] 上記タグ、親名、raw skill/@、数値、change指定の原文存在はCONFIRMED-SOURCE。parent namespaceの優先順位、class←unit fieldコピー成否、特殊list @の合成、Unit固有skillとの優先関係、change *35/*55の実行条件・段階実行・現在HPと上限への反映はVERIFY。宣言だけでLv35/55の実変身を確定しない。
+[REIMPLEMENT] inheritance-parent edgeとruntime change-target edgeを別型で保持する。c_ncncbase23へ進む際にc_ncncbase22を継承元に捏造しない。元Unit skill/skill2とclass @指定を単純な共有clearにせず、raw→resolved class→runtime capabilityを分離する。
+[GOLDEN] 合法原作におけるncncbase2の開始Lv25とchange閾値前後の可視class、HP/攻撃/魔力、技能一覧、MP、次動作を同seedの新EXEと比較する試験をDESIGNED/NOT RUN。原作動的観測0・strict MATCH0。閾値で変身しない場合も実測として残す。原文内部pointer/継承辺だけの照合はINELIGIBLE。
+[NEXT] B担当は許可済T011 native parent/change consumer保存証拠と原文の到達条件を別調査。EだけがMASTER/T018へ本限定SOURCE READYを重複排除の上統合。旧B-0412/1102の根拠やWork codeを再計上・変更しない。
+[SAFETY] 原本ZIP/EXEの改変・実行0。新Ghidra/REA/禁止VA再解析0。MASTER/T018/他lane/rea_lab/dev_lab/Work/共有キュー/Git/push/Remote/設定/automation変更0。
+[STATUS] READY（原作宣言グラフの非同型性のみ。実効継承・合法change・戦闘結果はNOT READY）

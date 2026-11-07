@@ -4,6 +4,42 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-48"></a>
+## param_1 + 0x48
+
+- [research/recovered/b_batch4/data/B_T012_T013_PERSON_POOL_LIFECYCLE_OFFLINE_20261023_1215.md 行 19](../../research/recovered/b_batch4/data/B_T012_T013_PERSON_POOL_LIFECYCLE_OFFLINE_20261023_1215.md?plain=1#L19-L19) — \| `0x005149C0` \| `*(void **)(param_1+0x4C) = *(void **)(param_1+0x48)`、類似操作は`+0x38`群、`+0x58`群にも存在 \| **一括論理クリア：STATIC-GHIDRA**。要素毎の仮想デストラクタ呼出しはこの関数内に見えない。呼出site
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+<a id="field-4c"></a>
+## param_1 + 0x4C
+
+- [research/recovered/b_batch4/data/B_T012_T013_PERSON_POOL_LIFECYCLE_OFFLINE_20261023_1215.md 行 19](../../research/recovered/b_batch4/data/B_T012_T013_PERSON_POOL_LIFECYCLE_OFFLINE_20261023_1215.md?plain=1#L19-L19) — \| `0x005149C0` \| `*(void **)(param_1+0x4C) = *(void **)(param_1+0x48)`、類似操作は`+0x38`群、`+0x58`群にも存在 \| **一括論理クリア：STATIC-GHIDRA**。要素毎の仮想デストラクタ呼出しはこの関数内に見えない。呼出site
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+<a id="field-dc"></a>
+## param_1 + 0xDC
+
+- [research/recovered/b_batch4/data/T011_EXP_LEVEL_INIT_RECALC_OFFLINE_20261021_0309.md 行 11](../../research/recovered/b_batch4/data/T011_EXP_LEVEL_INIT_RECALC_OFFLINE_20261021_0309.md?plain=1#L11-L11) — 1. `0x58B7F0`擬似C: 引数`param_3==-0x7FFFFFF8`のとき、`param_2+0x1A4`に関係する辞書の`class`値をレベル候補へ取得。それ以外は渡された`param_3`を用いる。`param_1==0x00AB42F8`では辞書`scenario`の値を加算、別の`param_
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+<a id="field-16c"></a>
+## param_1 + 0x16C
+
+- [research/recovered/b_batch4/data/T011_EXP_LEVEL_INIT_RECALC_OFFLINE_20261021_0309.md 行 13](../../research/recovered/b_batch4/data/T011_EXP_LEVEL_INIT_RECALC_OFFLINE_20261021_0309.md?plain=1#L13-L13) — 3. `0x58A540`: `param_1+0x16C=0`を書いた後、`+0x168 > 1`ならレベルに応じたループで`+0x16C`を再算出。`exp_max`と`exp_mul`という設定キーを参照し、成長の途中で`0x5D1B80`も呼ぶ。`+0x16C`は初期化経路で残存値を無条件に温存する領域ではない
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+<a id="field-280"></a>
+## param_1 + 0x280
+
+- [research/recovered/b_batch4/data/B_T012_SCALE_INIT_PARSER_COPY_OFFLINE_20261024_14H.md 行 42](../../research/recovered/b_batch4/data/B_T012_SCALE_INIT_PARSER_COPY_OFFLINE_20261024_14H.md?plain=1#L42-L42) — *(undefined8 *)(param_1 + 0x280) = *(undefined8 *)(param_2 + 0x280);
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+<a id="field-288"></a>
+## param_1 + 0x288
+
+- [research/recovered/b_batch4/data/B_T012_SCALE_INIT_PARSER_COPY_OFFLINE_20261024_14H.md 行 43](../../research/recovered/b_batch4/data/B_T012_SCALE_INIT_PARSER_COPY_OFFLINE_20261024_14H.md?plain=1#L43-L43) — *(undefined8 *)(param_1 + 0x288) = *(undefined8 *)(param_2 + 0x288);
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
 <a id="field-2fc"></a>
 ## param_1 + 0x2FC
 

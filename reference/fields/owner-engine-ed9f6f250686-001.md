@@ -97,11 +97,62 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3543](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3543-L3543) — \| **E = engine = G+0x504** \| VA 0x8BE7F4 \| 戦闘・戦略の資料にある「GM / engine + 0x1EEC3C、+0x1EEC44、+0x1E8630 …」の全部 \| 静的初期化 `0x553F60(&0x8BE7F4)`。Unit 初期化で `Unit+0x1E0 = G+
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+- [research/recovered/script_topics/T010_EVENT_SCHEDULER.md 行 375](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L375-L375) — [CONFIRMED-SAVED-NATIVE / NEW GATE] A所有 `exe/T006_FLOW_CONTROL_PROBE.txt` 0x4335E0..0x433621。`[engine+0x1EEC3C]`のmode分岐でmode1は0x433617を経て`0x4338D0`へ、mode6は0x433
+  制約・訂正　Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
+
+<a id="field-1eec44"></a>
+## engine + 0x1EEC44
+
+- [research/recovered/script_topics/T010_EVENT_SCHEDULER.md 行 375](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L375-L375) — [CONFIRMED-SAVED-NATIVE / NEW GATE] A所有 `exe/T006_FLOW_CONTROL_PROBE.txt` 0x4335E0..0x433621。`[engine+0x1EEC3C]`のmode分岐でmode1は0x433617を経て`0x4338D0`へ、mode6は0x433
+  制約・訂正　Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
+
+<a id="field-1eed18"></a>
+## engine + 0x1EED18
+
+- [research/recovered/script_topics/T010_EVENT_SCHEDULER.md 行 384](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L384-L384) — [CONFIRMED-SAVED-NATIVE / A69 INCREMENT] A所有 exe/T006_FLOW_CONTROL_PROBE.txt 0x4335FA..0x433607 はmode2 battle-active時に push 0→EAX=engine→call 0x492D80。保存callee
+  制約・訂正　Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
+
+<a id="field-1eed4c"></a>
+## engine + 0x1EED4C
+
+- [research/recovered/script_topics/T010_EVENT_SCHEDULER.md 行 290](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L290-L290) — - finish core内で `engine+0x1EED50` を `@battleattack`、`engine+0x1EED4C` を `@battledefense` としてscript-visible変数へ設定するため、両Power pointerの論理名をnative確定した。
+  制約・訂正　Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
+
+<a id="field-1eed50"></a>
+## engine + 0x1EED50
+
+- [research/recovered/script_topics/T010_EVENT_SCHEDULER.md 行 290](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L290-L290) — - finish core内で `engine+0x1EED50` を `@battleattack`、`engine+0x1EED4C` を `@battledefense` としてscript-visible変数へ設定するため、両Power pointerの論理名をnative確定した。
+  制約・訂正　Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
+
+- [research/recovered/script_topics/T010_EVENT_SCHEDULER.md 行 309](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L309-L309) — - `engine+0x1EED50=@battleattack` / `+0x1EED4C=@battledefense` mappingと併せ、**resultFlag 1 = attacker victory/capture, resultFlag 0 = defender victory/attack fail
+  制約・訂正　Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
+
+<a id="field-1eed60"></a>
+## engine + 0x1EED60
+
+- [research/recovered/script_topics/T010_EVENT_SCHEDULER.md 行 108](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L108-L108) — - getTime(opcode 0x25A) handler VA 0x4518FA は engine +0x1EED60 のint32をそのまま返す。
+  制約・訂正　Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
+
+- [research/recovered/script_topics/T010_EVENT_SCHEDULER.md 行 127](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L127-L127) — - battle setup VA 0x492710 は engine +0x1EED60 と +0x1EED64 をともに0へ初期化する。battleEvent setup VA 0x492890 も同様。
+  制約・訂正　Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
+
+- [research/recovered/script_topics/T010_EVENT_SCHEDULER.md 行 130](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L130-L130) — - resetTime はbattle-command registry opcode1、handler VA 0x4B47FC。実装は engine +0x1EED60 = 0 のみで、+0x1EED64は変更しない。
+  制約・訂正　Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
+
+<a id="field-1eed64"></a>
+## engine + 0x1EED64
+
+- [research/recovered/script_topics/T010_EVENT_SCHEDULER.md 行 111](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L111-L111) — - isInterval(opcode 0x25C) handler VA 0x451915 は正の引数 n を 10 * ceil(n/10) へ量子化し、engine +0x1EED64 をそのdivisorで割った余りが0なら1を返す。0x63B058=10.0、0x5B6ED0は正値に対してceil相当、0x5
+  制約・訂正　Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
+
 <a id="field-1eedb8"></a>
 ## engine + 0x1EEDB8
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 464](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L464-L464) — 2. 先頭レベルの各要素について、0x436530 で `__RTDynamicCast(ScriptElement → ScriptIF)` を試す。キャストできたもの**だけ**を 0x5299E0 で **std::list（engine+0x1EEDB8 = battle{} のルートと同じリスト）の末尾に追加
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+- [research/recovered/script_topics/T010_EVENT_SCHEDULER.md 行 29](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L29-L29) — 4. ScriptIFだけを battle root active list（engine +0x1EEDB8）へ登録する。
+  制約・訂正　Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
 
 <a id="field-1eee4c"></a>
 ## engine + 0x1EEE4C

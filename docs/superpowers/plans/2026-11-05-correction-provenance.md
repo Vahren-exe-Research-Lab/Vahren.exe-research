@@ -15,8 +15,8 @@ Review focus: missing optional registry remains compatible; unknown endpoints an
 - [x] Extend tools/reference.py loader/search/render with records {id, subject, status: corrected, previous_interpretation, current_interpretation, summary, confidence, target_version, source:{path,sha256,start_line,end_line}}. Normalize kind=correction. Render reference/CORRECTIONS.md and field/function-specific history. Existing search JSON returns same records.
 - [x] Curate only explicit already-published corrections with exact bounded evidence into reference/corrections.jsonl; write scope review; do not reconstruct absent old sources.
 - [x] Extend publication completeness guard for correction registry and sources; update reference/UPDATING.md and explicit allowlists.
-- [ ] Run relevant tests, real-data queries and generated checks; review diffs, preserve exact archival bytes, publish private branch and verify independent readback before develop integration.
+- [x] Run relevant tests, real-data queries and generated checks; review diffs, preserve exact archival bytes, publish private branch and verify independent readback before develop integration.
 
 User already authorized purpose-aligned autonomous implementation and agents. No new product or release scope is introduced.
 
-Review: 11 explicit corrections independently matched to bounded source excerpts; 48 focused tests passed; 742 generated pages and three real queries checked. Final portable readback remains the publication gate.
+Review: 11 explicit corrections independently matched to bounded source excerpts; 48 focused tests passed; 742 generated pages and three real queries checked. Final portable readback and develop integration passed at c1fcb51eb900f3b4d09cdbc82d0e90dade1b2d67; immutable verification receipt is recorded in GitHub PR #30.

@@ -10,4 +10,10 @@
 - [research/recovered/b_reports/T024_FALLBACK_FLAG_LATCH_FOURWAY_NATIVE_20261025_23H.md 行 7](../../research/recovered/b_reports/T024_FALLBACK_FLAG_LATCH_FOURWAY_NATIVE_20261025_23H.md?plain=1#L7-L7) — - consume-first：0x526A92/+0x526A9D は state+0x52/53 非0検査後WORD=0、成立時0x526AAE→0x520920。続く0x526ABE/+0x526AC9 は+0x54/55同様、成立時0x526AD8→0x520920。
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail; source addendum limits missing-call claim to legacy20261021 DB, not V3
 
+<a id="field-1ef144"></a>
+## state + 0x1EF144
+
+- [research/recovered/script_topics/T010_EVENT_SCHEDULER.md 行 326](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L326-L326) — - 0x48D615を含む関数entryは0x48C880。これは0x4B9930系scene state machineで `[state+0x1EF144]` の0..7 switchから選ばれる1 case（xref 0x4B99C0）で、関数末尾ではWorld phase dispatch後にscene/exe
+  制約・訂正　Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

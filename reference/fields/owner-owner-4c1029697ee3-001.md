@@ -25,6 +25,12 @@
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 622](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L622-L622) — [CONFIRMED-SAVED-NATIVE / NEW CALLERS] A62で既知のload末尾0x45F5B2..0x45F5BB（ESI=[owner+0x2C]+0x504）→0x432010に加え、D所有read-only `exe/T015_WINDOW_INPUT_GLOBAL_XREFS.txt`
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
 
+<a id="field-48"></a>
+## owner + 0x48
+
+- [research/recovered/b_batch4/data/B_T012_T013_PERSON_POOL_LIFECYCLE_OFFLINE_20261023_1215.md 行 44](../../research/recovered/b_batch4/data/B_T012_T013_PERSON_POOL_LIFECYCLE_OFFLINE_20261023_1215.md?plain=1#L44-L44) — **優先検索：** `callers/related 0x005149C0, 0x00514AA0`（一括クリアをいつ呼ぶか）、`callers 0x00514F10`、`function 0x00547DB0`の`owner+0x48/+0x4C`全writerと`+0x1D4`参照先のPerson同定、`0x005
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
 <a id="field-1b8"></a>
 ## owner + 0x1B8
 

@@ -10,6 +10,12 @@
 - [research/recovered/e_reports/T020_E_T011_CACHE_LIFECYCLE_ACCEPTANCE_20261031_08H.md 行 17](../../research/recovered/e_reports/T020_E_T011_CACHE_LIFECYCLE_ACCEPTANCE_20261031_08H.md?plain=1#L17-L17) — - KB_CANDIDATE: ID above; owner E/T020, linked B-20261031-08H-T011-TRAINING-CACHE-LIFECYCLE-01 B/T011; VA 0x472091/0x49ED90/0x4726C1/0x4DEF40/0x4726D9/0x474B09/
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
 
+<a id="field-75"></a>
+## flag + 0x75
+
+- [research/recovered/b_batch4/data/T011_B_REENTRY_LOCAL429_RECOVERY_20261021_0510.md 行 5](../../research/recovered/b_batch4/data/T011_B_REENTRY_LOCAL429_RECOVERY_20261021_0510.md?plain=1#L5-L5) — - 許可された独立作業: 添付済オフラインZIP34 entry CRC PASS、manifest-SQLite SHA一致、既保存Ghidra擬似CとCALL関係のみ静的照合。新規研究候補 `B-OFFLINE-20261021-0510-01`（T011 0x582D90 member→0x466F60→0x58
+  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
 <a id="field-1eed55"></a>
 ## flag + 0x1EED55
 
