@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-4"></a>
+## reader + 0x4
+
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_05H_RESIDUE_EOF_LATCH_REPORT.md 行 26](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_05H_RESIDUE_EOF_LATCH_REPORT.md?plain=1#L26-L26) — 3. reader自身の `0x005E6E4A` は残りバイト不足時に `0x005E6EE9` へ進む。`0x005E6EEC` で `reader+0x0C=NULL`、`0x005E6EF3` で `reader+0=totalLength`、`0x005E6EF5` で `reader+0x04=1` にし、
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY/NOT READY only. No new native/runtime/ABI/formal VERIFIED/Golden/READY validation. Companion evidenceJSON/Python/PE/ZIP/DB/linked sources not acquired or executed. Source label is visible Library filename, not canonical URI.
+
 <a id="field-c"></a>
 ## reader + 0xC
 
@@ -12,6 +18,9 @@
 
 - [research/recovered/github_comments_small1/data/comment_6558134851.md 行 10](../../research/recovered/github_comments_small1/data/comment_6558134851.md?plain=1#L10-L10) — \| 05H \| `0x5E6E10, 0x5DFE10; reader+0xC` \| EOFラッチで分類数読込み失敗をparser側に接続 \| 10/31 07H単独EOFを新発見扱いしない \|
   制約・訂正　Captured connector body Unicode encoded UTF-8, not server database bytes. Historical author claims only; no linked source acquisition/native rerun/semantic promotion. Current body timestamp binding unavailable; pinned timestamps are prior metadata.
+
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_05H_RESIDUE_EOF_LATCH_REPORT.md 行 26](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_05H_RESIDUE_EOF_LATCH_REPORT.md?plain=1#L26-L26) — 3. reader自身の `0x005E6E4A` は残りバイト不足時に `0x005E6EE9` へ進む。`0x005E6EEC` で `reader+0x0C=NULL`、`0x005E6EF3` で `reader+0=totalLength`、`0x005E6EF5` で `reader+0x04=1` にし、
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY/NOT READY only. No new native/runtime/ABI/formal VERIFIED/Golden/READY validation. Companion evidenceJSON/Python/PE/ZIP/DB/linked sources not acquired or executed. Source label is visible Library filename, not canonical URI.
 
 <a id="field-32c"></a>
 ## reader + 0x32C

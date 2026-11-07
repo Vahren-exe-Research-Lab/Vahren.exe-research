@@ -43,6 +43,15 @@
 - [research/recovered/issues_3_20/ISSUE_3_BODY.md 行 19](../../research/recovered/issues_3_20/ISSUE_3_BODY.md?plain=1#L19-L19) — \| `06H_MODE_LIFECYCLE` \| `REA-OFFLINE-20261101-06H-P0-VORBIS-MODE-ALLOC-LIFECYCLE-STATIC-01` \| Mode allocation/cleanup, `0x005D4160/0x005D3DE0/0x005CF010`, inne
   制約・訂正　Complete selected latest issue.body Unicode encoded UTF8; not serverDB raw bytes or full issue/comment history. Historical recovery/status/author test claims only; linked native/Library/PR/code/log/game data not fetched; no new native/runtime/READY/Golden promotion.
 
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_06H_MODE_LIFECYCLE_REPORT.md 行 53](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_06H_MODE_LIFECYCLE_REPORT.md?plain=1#L53-L53) — `0x005D3DE0` は `outer+0x1C` からinnerを取得し、`inner+0x08 > 0` なら `inner+0x20` 以降の各modeポインタを走査する。`0x005D3E00..0x005D3E07` は**各スロットをNULL検査して非NULLだけfree**する。末尾の `0x005D
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY/NOT READY only. No new native/runtime/ABI/formal VERIFIED/Golden/READY validation. Companion evidenceJSON/Python/PE/ZIP/DB/linked sources not acquired or executed. Source label is visible Library filename, not canonical URI.
+
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_06H_MODE_LIFECYCLE_REPORT.md 行 55](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_06H_MODE_LIFECYCLE_REPORT.md?plain=1#L55-L55) — 親の `0x005CF010` では `0x005CF160` によりrouterの呼出し直前に `state=3` を一時設定し、`0x005CF167: call 0x005D44C0` 後の非ゼロ返値は `0x005CF171` から失敗cleanup `0x005CF1F2 -> 0x005D3DE0` へ行き
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY/NOT READY only. No new native/runtime/ABI/formal VERIFIED/Golden/READY validation. Companion evidenceJSON/Python/PE/ZIP/DB/linked sources not acquired or executed. Source label is visible Library filename, not canonical URI.
+
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_06H_MODE_LIFECYCLE_REPORT.md 行 75](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_06H_MODE_LIFECYCLE_REPORT.md?plain=1#L75-L75) — `KB_CANDIDATE` は `REA/T015`、本研究ID、VA `0x005D4160 / 0x005D3DE0 / 0x005CF010 / 0x005D57C0 / 0x005D5BD0 / 0x005CFA10 / 0x005CF970 / 0x005D1C71 / 0x005C303C`、CALL s
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY/NOT READY only. No new native/runtime/ABI/formal VERIFIED/Golden/READY validation. Companion evidenceJSON/Python/PE/ZIP/DB/linked sources not acquired or executed. Source label is visible Library filename, not canonical URI.
+
 <a id="field-34"></a>
 ## outer + 0x34
 
@@ -54,6 +63,21 @@
 
 - [research/recovered/issues_3_20/ISSUE_3_BODY.md 行 22](../../research/recovered/issues_3_20/ISSUE_3_BODY.md?plain=1#L22-L22) — \| `09H_CACHE_RECORD` \| `REA-OFFLINE-20261101-09H-P0-OGG-CACHED-HEADER-SERIAL-INDEX-PRODUCER-BRIDGE-STATIC-01` \| Producer bridge for 08H; `0x005D1490/0x005D1310/
   制約・訂正　Complete selected latest issue.body Unicode encoded UTF8; not serverDB raw bytes or full issue/comment history. Historical recovery/status/author test claims only; linked native/Library/PR/code/log/game data not fetched; no new native/runtime/READY/Golden promotion.
+
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_08H_CACHED_STREAM_STATE3_REPORT.md 行 28](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_08H_CACHED_STREAM_STATE3_REPORT.md?plain=1#L28-L28) — `0x005D0B60` 内の `0x005D0D06` は状態2に戻し、`0x005D0D17: CALL 0x005D32A0` から次ページのシリアルを取得する。`0x005D0D1C/2A` は`outer+0x34`の登録数と`outer+0x40`の既知serial配列を読み、`0x005D0D30..3E
+  制約・訂正　Historical authored offline STATIC/INFERRED/VERIFY/NOT READY report; old-index and prior-record provenance retained; no new native/ABI/runtime/Golden/READY verification; linked evidence/code/EXE/ZIP/DB not acquired or executed in this review.
+
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_08H_CACHED_STREAM_STATE3_REPORT.md 行 48](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_08H_CACHED_STREAM_STATE3_REPORT.md?plain=1#L48-L48) — `KB_CANDIDATE`（**未確定**）: REA/T015、本研究ID、VA `0x005CFA10 / 0x005D0B60 / 0x005CF970 / 0x005CF010 / 0x005D5BD0`、状態遷移 `0x005CFC16 / 0x005D0D4B / 0x005CF9CC / 0x005CF
+  制約・訂正　Historical authored offline STATIC/INFERRED/VERIFY/NOT READY report; old-index and prior-record provenance retained; no new native/ABI/runtime/Golden/READY verification; linked evidence/code/EXE/ZIP/DB not acquired or executed in this review.
+
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_09H_CACHE_RECORD_REPORT.md 行 15](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_09H_CACHE_RECORD_REPORT.md?plain=1#L15-L15) — 初期関数 `0x005D1490` は `0x005D1539`で `outer+0x34=1`、`0x005D1540→0x005D1549`で32バイトの `outer+0x48` 初期ヘッダを確保し、`0x005D1572`でそのポインタを解析関数 `0x005CF010` に渡す。`0x005D15B1`で初期
+  制約・訂正　Historical authored offline STATIC/INFERRED/VERIFY/NOT READY report; old-index and prior-record provenance retained; no new native/ABI/runtime/Golden/READY verification; linked evidence/code/EXE/ZIP/DB not acquired or executed in this review.
+
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_09H_CACHE_RECORD_REPORT.md 行 17](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_09H_CACHE_RECORD_REPORT.md?plain=1#L17-L17) — 連結ストリーム索引生成 `0x005D1310→0x005CF4D0` の正常再帰では、葉で `outer+0x34=N` を確定し、`outer+0x40`を**4Nバイト**で再確保、ヘッダ配列 `outer+0x48`を**32Nバイト**へ再確保する。親iの成功復帰で `0x005CF65F`は `serial
+  制約・訂正　Historical authored offline STATIC/INFERRED/VERIFY/NOT READY report; old-index and prior-record provenance retained; no new native/ABI/runtime/Golden/READY verification; linked evidence/code/EXE/ZIP/DB not acquired or executed in this review.
+
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_09H_CACHE_RECORD_REPORT.md 行 38](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_09H_CACHE_RECORD_REPORT.md?plain=1#L38-L38) — `KB_CANDIDATE`（未確定）: REA/T015、本研究ID。主要VA `0x005D1490 / 0x005D1310 / 0x005CF4D0 / 0x005D0B60 / 0x005CFA10 / 0x005CF970`、重要CALL site `0x005D140D / 0x005CF628 / 0x
+  制約・訂正　Historical authored offline STATIC/INFERRED/VERIFY/NOT READY report; old-index and prior-record provenance retained; no new native/ABI/runtime/Golden/READY verification; linked evidence/code/EXE/ZIP/DB not acquired or executed in this review.
 
 <a id="field-38"></a>
 ## outer + 0x38
@@ -84,6 +108,24 @@
 
 - [research/recovered/issues_3_20/ISSUE_3_BODY.md 行 21](../../research/recovered/issues_3_20/ISSUE_3_BODY.md?plain=1#L21-L21) — \| `08H_CACHED_STREAM_STATE3` \| `REA-OFFLINE-20261101-08H-P0-VORBIS-CACHED-STREAM-STATE3-REENTRY-STATIC-01` \| Cached serial/state3 branch, `0x005CFA10/0x005D0B60
   制約・訂正　Complete selected latest issue.body Unicode encoded UTF8; not serverDB raw bytes or full issue/comment history. Historical recovery/status/author test claims only; linked native/Library/PR/code/log/game data not fetched; no new native/runtime/READY/Golden promotion.
+
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_08H_CACHED_STREAM_STATE3_REPORT.md 行 20](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_08H_CACHED_STREAM_STATE3_REPORT.md?plain=1#L20-L20) — `0x005CFBD9` は `0x005D32A0` でOggページのserialを取得する。`0x005CFBF0` は `outer+0x40` のシリアルテーブルの要素と比較し、`0x005CFBF5` は4バイトずつ移動、`0x005CFBFB/FD` で件数と一致しなければ処理ループへ戻る。**既知seri
+  制約・訂正　Historical authored offline STATIC/INFERRED/VERIFY/NOT READY report; old-index and prior-record provenance retained; no new native/ABI/runtime/Golden/READY verification; linked evidence/code/EXE/ZIP/DB not acquired or executed in this review.
+
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_08H_CACHED_STREAM_STATE3_REPORT.md 行 28](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_08H_CACHED_STREAM_STATE3_REPORT.md?plain=1#L28-L28) — `0x005D0B60` 内の `0x005D0D06` は状態2に戻し、`0x005D0D17: CALL 0x005D32A0` から次ページのシリアルを取得する。`0x005D0D1C/2A` は`outer+0x34`の登録数と`outer+0x40`の既知serial配列を読み、`0x005D0D30..3E
+  制約・訂正　Historical authored offline STATIC/INFERRED/VERIFY/NOT READY report; old-index and prior-record provenance retained; no new native/ABI/runtime/Golden/READY verification; linked evidence/code/EXE/ZIP/DB not acquired or executed in this review.
+
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_08H_CACHED_STREAM_STATE3_REPORT.md 行 52](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_08H_CACHED_STREAM_STATE3_REPORT.md?plain=1#L52-L52) — **次のP0:** ① `0x005D1490`周辺で複数ストリームレコード `outer+0x48` とserial配列 `outer+0x40` の対応関係を確認、② `0x005D0B60/0x005CFA10` のキャッシュ復帰先で `index<count` が必ず成立する上流条件を追跡、③ `0x005D5
+  制約・訂正　Historical authored offline STATIC/INFERRED/VERIFY/NOT READY report; old-index and prior-record provenance retained; no new native/ABI/runtime/Golden/READY verification; linked evidence/code/EXE/ZIP/DB not acquired or executed in this review.
+
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_09H_CACHE_RECORD_REPORT.md 行 15](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_09H_CACHE_RECORD_REPORT.md?plain=1#L15-L15) — 初期関数 `0x005D1490` は `0x005D1539`で `outer+0x34=1`、`0x005D1540→0x005D1549`で32バイトの `outer+0x48` 初期ヘッダを確保し、`0x005D1572`でそのポインタを解析関数 `0x005CF010` に渡す。`0x005D15B1`で初期
+  制約・訂正　Historical authored offline STATIC/INFERRED/VERIFY/NOT READY report; old-index and prior-record provenance retained; no new native/ABI/runtime/Golden/READY verification; linked evidence/code/EXE/ZIP/DB not acquired or executed in this review.
+
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_09H_CACHE_RECORD_REPORT.md 行 17](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_09H_CACHE_RECORD_REPORT.md?plain=1#L17-L17) — 連結ストリーム索引生成 `0x005D1310→0x005CF4D0` の正常再帰では、葉で `outer+0x34=N` を確定し、`outer+0x40`を**4Nバイト**で再確保、ヘッダ配列 `outer+0x48`を**32Nバイト**へ再確保する。親iの成功復帰で `0x005CF65F`は `serial
+  制約・訂正　Historical authored offline STATIC/INFERRED/VERIFY/NOT READY report; old-index and prior-record provenance retained; no new native/ABI/runtime/Golden/READY verification; linked evidence/code/EXE/ZIP/DB not acquired or executed in this review.
+
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_09H_CACHE_RECORD_REPORT.md 行 40](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_09H_CACHE_RECORD_REPORT.md?plain=1#L40-L40) — **残るP0**: ① `0x005D1310`の失敗分岐でヘッダ・serial双方が完全に維持されるか、②countが負になる正常入力/他生成経路の有無、③各consumer前の`outer+0x40/+0x48`のアロケータ失敗・alias/解放寿命、④`0x005D5BD0`失敗時のキャッシュ再利用契約。PC復帰
+  制約・訂正　Historical authored offline STATIC/INFERRED/VERIFY/NOT READY report; old-index and prior-record provenance retained; no new native/ABI/runtime/Golden/READY verification; linked evidence/code/EXE/ZIP/DB not acquired or executed in this review.
 
 - [research/recovered/rea_batch3/reports/REA_20261102_01H_P0_GITHUB_INTAKE_RECEIPT.md 行 19](../../research/recovered/rea_batch3/reports/REA_20261102_01H_P0_GITHUB_INTAKE_RECEIPT.md?plain=1#L19-L19) — - 次カーソル **09H** `REA-OFFLINE-20261101-09H-P0-OGG-CACHED-HEADER-SERIAL-INDEX-PRODUCER-BRIDGE-STATIC-01`、`0x005D1490` producer／`outer+0x40/+0x48` serial record、in
   制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
@@ -153,6 +195,21 @@
 
 - [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 136](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L136-L136) — - In this growth branch, `outer+0x50` accumulates the **previous used-byte count** (not capacity), feeding the 19H realloc/cleanup condition. `0x5D49C2` allocat
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
+
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_08H_CACHED_STREAM_STATE3_REPORT.md 行 22](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_08H_CACHED_STREAM_STATE3_REPORT.md?plain=1#L22-L22) — 状態3の再生ループ入口では `0x005CFA28` が複数ストリーム判定を行い、`0x005CFA34`でインデックス、`0x005CFA37`で32バイト単位の乗算、`0x005CFA3A`でヘッダレコード配列ベース`outer+0x48`を加える。`0x005CFA45`から**保存済みレコードを引数に**初期化
+  制約・訂正　Historical authored offline STATIC/INFERRED/VERIFY/NOT READY report; old-index and prior-record provenance retained; no new native/ABI/runtime/Golden/READY verification; linked evidence/code/EXE/ZIP/DB not acquired or executed in this review.
+
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_08H_CACHED_STREAM_STATE3_REPORT.md 行 30](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_08H_CACHED_STREAM_STATE3_REPORT.md?plain=1#L30-L30) — その `0x005CF970` は `0x005CF973` で状態3の条件を検査し、`0x005CF990..0x005CF996` で選択されたヘッダレコード `outer+0x48 + index*0x20` を組み立て、`0x005CF9A1: CALL 0x005D5BD0`で初期化する。戻り値が非0ならエラ
+  制約・訂正　Historical authored offline STATIC/INFERRED/VERIFY/NOT READY report; old-index and prior-record provenance retained; no new native/ABI/runtime/Golden/READY verification; linked evidence/code/EXE/ZIP/DB not acquired or executed in this review.
+
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_08H_CACHED_STREAM_STATE3_REPORT.md 行 52](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_08H_CACHED_STREAM_STATE3_REPORT.md?plain=1#L52-L52) — **次のP0:** ① `0x005D1490`周辺で複数ストリームレコード `outer+0x48` とserial配列 `outer+0x40` の対応関係を確認、② `0x005D0B60/0x005CFA10` のキャッシュ復帰先で `index<count` が必ず成立する上流条件を追跡、③ `0x005D5
+  制約・訂正　Historical authored offline STATIC/INFERRED/VERIFY/NOT READY report; old-index and prior-record provenance retained; no new native/ABI/runtime/Golden/READY verification; linked evidence/code/EXE/ZIP/DB not acquired or executed in this review.
+
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_09H_CACHE_RECORD_REPORT.md 行 15](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_09H_CACHE_RECORD_REPORT.md?plain=1#L15-L15) — 初期関数 `0x005D1490` は `0x005D1539`で `outer+0x34=1`、`0x005D1540→0x005D1549`で32バイトの `outer+0x48` 初期ヘッダを確保し、`0x005D1572`でそのポインタを解析関数 `0x005CF010` に渡す。`0x005D15B1`で初期
+  制約・訂正　Historical authored offline STATIC/INFERRED/VERIFY/NOT READY report; old-index and prior-record provenance retained; no new native/ABI/runtime/Golden/READY verification; linked evidence/code/EXE/ZIP/DB not acquired or executed in this review.
+
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_09H_CACHE_RECORD_REPORT.md 行 17](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_09H_CACHE_RECORD_REPORT.md?plain=1#L17-L17) — 連結ストリーム索引生成 `0x005D1310→0x005CF4D0` の正常再帰では、葉で `outer+0x34=N` を確定し、`outer+0x40`を**4Nバイト**で再確保、ヘッダ配列 `outer+0x48`を**32Nバイト**へ再確保する。親iの成功復帰で `0x005CF65F`は `serial
+  制約・訂正　Historical authored offline STATIC/INFERRED/VERIFY/NOT READY report; old-index and prior-record provenance retained; no new native/ABI/runtime/Golden/READY verification; linked evidence/code/EXE/ZIP/DB not acquired or executed in this review.
 
 - [research/recovered/rea_batch2/reports/REA_20261103_22H_P0_EH3_STREAMBUF_FINALIZER_PROVENANCE_STATIC.md 行 7](../../research/recovered/rea_batch2/reports/REA_20261103_22H_P0_EH3_STREAMBUF_FINALIZER_PROVENANCE_STATIC.md?plain=1#L7-L7) — - `0x428680` sets `EDI=incoming_ECX+0x58`, then `ESI=EDI-0x48=incoming_ECX+0x10`, writes `[ESI]=0x63848C`, calls context-ESI `0x42A9A0`, and calls `0x4296E0(ECX
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
@@ -259,6 +316,12 @@
 - [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 21](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L21-L21) — - Both branches converge on native cleanup calls `0x005CF1F2 -> 0x005D3DE0`, `0x005CF1FB -> 0x005D3D00`, with state `outer+0x58=2` at `0x005CF20A`. Separate pac
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
 
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_06H_MODE_LIFECYCLE_REPORT.md 行 75](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_06H_MODE_LIFECYCLE_REPORT.md?plain=1#L75-L75) — `KB_CANDIDATE` は `REA/T015`、本研究ID、VA `0x005D4160 / 0x005D3DE0 / 0x005CF010 / 0x005D57C0 / 0x005D5BD0 / 0x005CFA10 / 0x005CF970 / 0x005D1C71 / 0x005C303C`、CALL s
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY/NOT READY only. No new native/runtime/ABI/formal VERIFIED/Golden/READY validation. Companion evidenceJSON/Python/PE/ZIP/DB/linked sources not acquired or executed. Source label is visible Library filename, not canonical URI.
+
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_12H_OGG_SEEK_PREFLIGHT_REPORT.md 行 20](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_12H_OGG_SEEK_PREFLIGHT_REPORT.md?plain=1#L20-L20) — 2. **前段判定から索引生成への条件付き接続**。`FUN_005d1630`（コードSHA `6F5993B30D27A76F8A47166BF878D0FBC1BDF21A3D36FC3DF016E0A6C1A20266`）擬似C行12–28は、`0x005D165F -> 0x005D1490`成功後、stat
+  制約・訂正　Historical authored offline STATIC/INFERRED/VERIFY/NOT READY report; old-index and prior-record provenance retained; no new native/ABI/runtime/Golden/READY verification; linked evidence/code/EXE/ZIP/DB not acquired or executed in this review.
+
 - [research/recovered/rea_batch2/reports/REA_20261102_01H_P0_OGG_STATE3_DUAL_ENTRY_STATIC.md 行 6](../../research/recovered/rea_batch2/reports/REA_20261102_01H_P0_OGG_STATE3_DUAL_ENTRY_STATIC.md?plain=1#L6-L6) — 2. V9と一致する同じcalleeへの後段 `0x005D0D67 E804ECFFFF CALL 0x005CF970` は既存08H調査済み。前段で`0x005D0D48`に既知serial indexを`outer+0x60`へ、`0x005D0D4B`にstate=3を`outer+0x58`へ格納後に呼ぶ経
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
 
@@ -282,83 +345,5 @@
 
 - [research/recovered/rea_batch3/reports/REA_20261031_16H_P0_VORBIS_POSTINIT_CALLERS_STATIC.md 行 14](../../research/recovered/rea_batch3/reports/REA_20261031_16H_P0_VORBIS_POSTINIT_CALLERS_STATIC.md?plain=1#L14-L14) — - `0x005D04E0`（body V9: 0x5D04E0..0x5D0B57）は `0x5D092C cmp edi,[esi+0x60]`／`0x5D092F je 0x5D094B` で選択streamの一致を検査。一致時だけ `0x5D0952 -> 0x5D4D20` を実行し、直後 `add esp,
   制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
-
-<a id="field-60"></a>
-## outer + 0x60
-
-- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 207](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L207-L207) — - Original x86 `0x5D1539` initializes `outer+0x34=1`; `0x5D132B/31` saves an initial serial value; `0x5D140D` calls `0x5CF4D0`, and the nonnegative branch at `0
-  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
-
-- [research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_06H_08H_MODE_CACHE_RECOVERY_STATIC.md 行 17](../../research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_06H_08H_MODE_CACHE_RECOVERY_STATIC.md?plain=1#L17-L17) — - **Bounded paths:** `0x005CFA10` scans known serials `outer+0x40`, stores matching `outer+0x60` index, transitions `outer+0x58` to state3 at `0x005CFC16`; then
-  制約・訂正　Authored REA recovery compilation, not full original Library bodies; STATIC/ABI/NOT_READY/Golden limits retained; linked evidence not acquired; no semantic/READY promotion.
-
-- [research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_09H_11H_CACHE_SEEK_RECOVERY_STATIC.md 行 21](../../research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_09H_11H_CACHE_SEEK_RECOVERY_STATIC.md?plain=1#L21-L21) — Consumers `0x005D0B60` (site `0x005D0D48`) and `0x005CFA10` (site `0x005CFC03`) record selected serial index in `outer+0x60`. Cached-header accesses `0x005CF990
-  制約・訂正　Authored REA recovery compilation, not full original Library bodies; STATIC/ABI/NOT_READY/Golden limits retained; linked evidence not acquired; no semantic/READY promotion.
-
-- [research/recovered/rea_batch2/reports/REA_20261102_01H_P0_OGG_STATE3_DUAL_ENTRY_STATIC.md 行 6](../../research/recovered/rea_batch2/reports/REA_20261102_01H_P0_OGG_STATE3_DUAL_ENTRY_STATIC.md?plain=1#L6-L6) — 2. V9と一致する同じcalleeへの後段 `0x005D0D67 E804ECFFFF CALL 0x005CF970` は既存08H調査済み。前段で`0x005D0D48`に既知serial indexを`outer+0x60`へ、`0x005D0D4B`にstate=3を`outer+0x58`へ格納後に呼ぶ経
-  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
-
-<a id="field-68"></a>
-## outer + 0x68
-
-- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 126](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L126-L126) — - ID `REA-LOCAL-20261031-15H-P0-VORBIS-POSTINIT-RETURN-LOSS-STATIC-01`; source `rea_lab/decomp_task/REA_20261031_15H_P0_VORBIS_POSTINIT_RETURN_STATIC.md`. At `0
-  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
-
-- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 129](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L129-L129) — - ID `REA-LOCAL-20261031-16H-P0-VORBIS-POSTINIT-OTHER-CALLERS-STATIC-01`; source `rea_lab/decomp_task/REA_20261031_16H_P0_VORBIS_POSTINIT_CALLERS_STATIC.md`. Or
-  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
-
-- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md 行 135](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-rea-modecache-20261103/REF_AUDIO_VORBIS.md?plain=1#L135-L135) — - ID `REA-LOCAL-20261031-18H-P0-VORBIS-BITBUFFER-TEARDOWN-NULL-SLOT-STATIC-01`; source `rea_lab/decomp_task/REA_20261031_18H_P0_VORBIS_BITBUFFER_TEARDOWN_STATIC
-  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
-
-- [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 116](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L116-L116) — - ID `REA-LOCAL-20261031-15H-P0-VORBIS-POSTINIT-RETURN-LOSS-STATIC-01`; source `rea_lab/decomp_task/REA_20261031_15H_P0_VORBIS_POSTINIT_RETURN_STATIC.md`. At `0
-  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
-
-- [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 119](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L119-L119) — - ID `REA-LOCAL-20261031-16H-P0-VORBIS-POSTINIT-OTHER-CALLERS-STATIC-01`; source `rea_lab/decomp_task/REA_20261031_16H_P0_VORBIS_POSTINIT_CALLERS_STATIC.md`. Or
-  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
-
-- [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 125](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L125-L125) — - ID `REA-LOCAL-20261031-18H-P0-VORBIS-BITBUFFER-TEARDOWN-NULL-SLOT-STATIC-01`; source `rea_lab/decomp_task/REA_20261031_18H_P0_VORBIS_BITBUFFER_TEARDOWN_STATIC
-  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
-
-- [research/recovered/rea_batch3/reports/REA_20261031_15H_P0_VORBIS_POSTINIT_RETURN_STATIC.md 行 14](../../research/recovered/rea_batch3/reports/REA_20261031_15H_P0_VORBIS_POSTINIT_RETURN_STATIC.md?plain=1#L14-L14) — - `0x005D4D20` は入力outerの `+0x68`（`0x5D4D2A..2F`）、`+0x04`（`0x5D4D37..39`）、`[outer+4]+0x1C`（`0x5D4D3B..40`）の順にNULLを検査し、いずれか欠損なら `0x005D4D31` から **-1** で早期returnする
-  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
-
-- [research/recovered/rea_batch3/reports/REA_20261031_15H_P0_VORBIS_POSTINIT_RETURN_STATIC.md 行 19](../../research/recovered/rea_batch3/reports/REA_20261031_15H_P0_VORBIS_POSTINIT_RETURN_STATIC.md?plain=1#L19-L19) — - 上流 `0x005D57C0` は `0x005D57CA..0x005D57D8` でソース `+0x1C` を先に検査し、NULLならouter memset前に1を返す。非NULLならouter 0x70バイトを初期化、`0x005D57F8` calloc戻りを `0x005D5802` で outer+0
-  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
-
-- [research/recovered/rea_batch3/reports/REA_20261031_18H_P0_VORBIS_BITBUFFER_TEARDOWN_STATIC.md 行 12](../../research/recovered/rea_batch3/reports/REA_20261031_18H_P0_VORBIS_BITBUFFER_TEARDOWN_STATIC.md?plain=1#L12-L12) — - `0x5D4A68`で管理構造体 `outer+0x68` をEBXへ読込み、`0x5D4A6C`にてリスト後処理 `0x5D49F0` を実行。`0x5D4A77/79`で `outer+0x44` が非NULLならfreeする。`0x5D4A84/86`では**配列親EBXのみ**NULL判定し、NULLなら全
-  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
-
-<a id="field-80"></a>
-## outer + 0x80
-
-- [research/recovered/rea_batch4/reports/REA_20261030_21H_P0_TRANSITIVE_CLEANUP_ABI_STATIC.md 行 9](../../research/recovered/rea_batch4/reports/REA_20261030_21H_P0_TRANSITIVE_CLEANUP_ABI_STATIC.md?plain=1#L9-L9) — - 呼出元 `0x005CF11D` は `[EDI+0x78]`、`0x005CFC07` は `[ESI+0x78]` を渡す。従って通常の同一オブジェクトベースを前提にした直接書込先は `outer+0x80～+0x1DC` に限られ、状態ガード `outer+4/+0x34/+0x58` を直接変更しない。
-  制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
-
-<a id="field-88"></a>
-## outer + 0x88
-
-- [research/recovered/rea_batch2/reports/REA_20261104_01H_P0_STREAMBUF_POSTCALL_SAME_RECEIVER_STATIC.md 行 24](../../research/recovered/rea_batch2/reports/REA_20261104_01H_P0_STREAMBUF_POSTCALL_SAME_RECEIVER_STATIC.md?plain=1#L24-L24) — - Native .rdata at `0x6384E4` contains little-endian **0x50**, the adjustment read from `[outer vptr+4]` after `0x42A2DD mov [outer],0x6384E0`. Thus `0x42A4C0`
-  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
-
-<a id="field-1d0"></a>
-## outer + 0x1D0
-
-- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 515](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L515-L515) — [WRITER CROSSWALK] A保存exe/T006_BATTLE_STATE_PROBE.txt VA0x4B5C70..0x4B5CBAでは対象vector中の外側ptrを取得→[outer+0x1D0]をesiに取込→非nullかつ0x44D070照合一致時のみ[esi+0x70]へactiveTroop
-  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
-
-- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 516](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L516-L516) — [READER EXACT] isActive caseは文字列→0x49C450→0x49E780でouter対象を解決し、outer非nullなら [outer+0x1D0] をeaxへ取り、そのinner+0x70を比較（0x451BC7..0x451BD5）。innerが非nullでbyte+0x70==0なら
-  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
-
-- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 525](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L525-L525) — [WRITER GATES] 非空でも各outer+0x1D0 nullなら0x4B5C92→0x4B5CDBでskip、0x44D070の比較結果が不一致でも0x4B5CB3→同skip。条件合格時のみ0x4B5CBAのinner+0x70 writer、直後0x5158E0側へ進む。既知§10/§60の+0x70
-  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
-
-- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 542](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L542-L542) — [WRITER AND LIMIT] 0x4B5D94→0x49C450/0x49E8B0で対象候補vectorを解決し、outer+0x1D0・型gateを経たinner Unit member[+0x0C..+0x10]を走査し、0x4B5E62..65で[Unit+0x1FA]=unctrl1/ctrl0。前段0
-  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
-
-- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 568](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L568-L568) — [NATIVE SUBJECT AND GATES] 入力名前解決0x49C450→candidate 0x49E8B0→vectorが空なら0x4B5AEEから0x4B5BBC cleanupへ。各outer+0x1D0 inner非NULL・0x44D070型照合一致した場合のみ内側の分岐を実行。AL[-0x76]
-  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
-
-- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 654](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L654-L654) — [CONFIRMED-SAVED-X86 / NEW CROSS-HANDLER] A保管のread-only exe/T006_BATTLE_STATE_PROBE.txt VA0x4B5C70..0x4B5CDEを再読。activeTroop/sleepTroopは対象vector/outer+0x1D0/0x44
-  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

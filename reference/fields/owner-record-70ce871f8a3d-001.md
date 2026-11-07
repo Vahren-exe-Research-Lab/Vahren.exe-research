@@ -73,6 +73,9 @@
 - [research/recovered/chat_a_history/CHAT_A_20261014_02H_FINAL.md 行 61](../../research/recovered/chat_a_history/CHAT_A_20261014_02H_FINAL.md?plain=1#L61-L61) — [record + 0x1C] = EAX
   制約・訂正　Historical claims; PC save/readback not newly proven; no linked evidence read; no new READY/DONE/Golden/runtime credit
 
+- [research/recovered/claude_current_update3/reports/EXP_DAT_DESIGN_20261103.md 行 66](../../research/recovered/claude_current_update3/reports/EXP_DAT_DESIGN_20261103.md?plain=1#L66-L66) — - 根拠: 汎用一覧の `src/work_dat_ui_literal.h`（routine の引数の予約名照合）、`src/work_dat_ui_snapshot.h`（数値変数の木 context+0x4C4、文字列配列の木 context+0x1E8B40、値は record+0x1C）。
+  制約・訂正　Author dated runtime/ACTUAL claims only; not independently rerun. No original native/log/code/DLL/Library/linked acquisition or execution. Prior design/STATIC and runtime chronology retained. New version preserves old source; integration destination proposed, not yet in repo.
+
 - [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 109](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L109-L109) — 再実装/テスト: `0x463CA0`返却record+0x1Cへ直接書込む全callerも追跡。set/add/上位callerからの変更を別fixtureでbattle→save→reload比較（actual game PASS0）。
   制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
@@ -377,9 +380,6 @@
 ## record + 0x1E8
 
 - [research/recovered/b_batch9/data/T013_RUSH_RECORD_54F990_CONTRACT_20261013.md 行 6](../../research/recovered/b_batch9/data/T013_RUSH_RECORD_54F990_CONTRACT_20261013.md?plain=1#L6-L6) — [KIND4] Skill+0x40==4 reaches 0x54FA3F onward for angular/distance selection. Depending on provided coordinate pointer & optional command ref, calculates dx²+dy
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/b_batch9/data/T013_RUSH_RECORD_54F990_CONTRACT_20261013.md 行 7](../../research/recovered/b_batch9/data/T013_RUSH_RECORD_54F990_CONTRACT_20261013.md?plain=1#L7-L7) — [NONKIND4] Skill+40!=4 at0x54FB84 goes through optional supplied angle input: if present sets byte+0x1FC=1, copies double record+0x200 and records sentinel coor
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

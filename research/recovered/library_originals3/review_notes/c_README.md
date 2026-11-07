@@ -1,0 +1,11 @@
+# Library originals13–16H: full authored-report review
+
+Only4literal REPORT.md files selected from parent's CAPTURE_INDEX. All4raw SHA256/size match both downloaded-file metadata and historical report receipts. Complete physicalLF1–55/1–47/1–53/1–71 reviewed (226LF,34268B). SAFE for this authored-report intake: no privateprofile/credential or concreteknown-held payload dependency found; no transform required. Exact bytes copied into private review_c/reports, with final repository destinations recorded in the9-column ledger. No file-specific Library URI is invented: source_path is ChatGPT Library/visiblefilename; only16H has an observed file URL in capturedmetadata.
+
+13H/14H are authored old-index and fragment hypotheses,15H is a width-contract hypothesis with arithmetic models,16H adds the author's bounded original-x86 report and correction. Short annotated34byte callback/5byteE8 witnesses are part of that analysis; these are not standalone uninterpreted native exports or originalasset collections. Author claims about oldPE/ZIP/SQLite/objdump/41-67PASS remain historical. No companion JSON/Python/EXE/ZIP/DB/linked artifact was fetched or executed; no new original-game/native/runtime/Golden/READYverification.
+
+The4existing compilations were located via rootmetadata; relevant12–16HcompilationLF20–36, REF_AUDIO_VORBIS/symbols and fieldmetadata were narrowly compared. Major ftell/helper/seek meanings are already represented. The old13–14Hmissing-function gap is V3-era history, corrected by16/17H; it must not reopen currentV9missing-function claims. The helper is not mere linearfallthrough or an independentDLLABI. 15Hexamples do not prove actual2GiB/4GiBfailure or arbitrarycustom-callback behavior.
+
+CANDIDATES contains2small parenthandoffs: directly attach16Hreport provenance to the existing5CFDD0entry and date its oldcompilation-onlyacquisition caveat; optionally expose the localreceiver+2C4seekcallback pointer as a conditionalmemorylookup, without inventing an ownerclass/fullABI/adjacentslottypes. No newfunction or automaticcoreadoption is proposed.
+
+DEFERRED is header-only. Original files, CAPTURE_INDEX, sharedrepo/core/Git unchanged. OUTPUT_MANIFEST covers all other private review_coutputs.

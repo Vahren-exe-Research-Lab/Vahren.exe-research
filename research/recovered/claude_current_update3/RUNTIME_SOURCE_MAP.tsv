@@ -1,0 +1,5 @@
+record	source_lf	source_sha256	review_role	current_ref_lf	limit
+12	184-190	7ce0b3d49b87320499d7bdfac750c721d09120d9d81d317ff18e36d7911d56e6	EXISTING_REVIEWED_UNCHANGED_PREFIX	177-178	Array-helper/85-write report already inside accepted primary; this pass does not re-prove ABI or general memory safety
+13	191-197	7ce0b3d49b87320499d7bdfac750c721d09120d9d81d317ff18e36d7911d56e6	EXISTING_REVIEWED_UNCHANGED_PREFIX	177;182	Hit-record/child removal report already saved; no log/code acquisition
+14	199-204	7ce0b3d49b87320499d7bdfac750c721d09120d9d81d317ff18e36d7911d56e6	NEW_APPEND_FULL_REVIEW	177;180-181	Summon/side/unit-info author runtime claims; limited test observations, no universal side rule proof
+15	206-209	7ce0b3d49b87320499d7bdfac750c721d09120d9d81d317ff18e36d7911d56e6	NEW_APPEND_FULL_REVIEW	177;179;181	Single kill-trigger/test-HP example; not all kill modes or independent new ACTUAL confirmation

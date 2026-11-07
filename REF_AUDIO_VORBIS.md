@@ -225,7 +225,7 @@ This section independently reviews **three previously PUBLISHED_INTAKE IDs**, no
 
 ## オフライン回収報告とseek callbackの限定採録（2026-11-05）
 
-[0x5CFDD0の事典](reference/symbols/005CFDD0.md)へ、[12–16H回収集約の30–32行](research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_12H_16H_SEEK_FTELL_RECOVERY_STATIC.md?plain=1#L30-L32)を根拠に標準FILE seek callback窓の報告を接続した。元Library報告の全文やnativeを今回取得・再実験したものではなく、完全ABI・他callback・2GiB/4GiBでの実故障は未確認である。低位32bitの局所境界の報告から、全入力の切捨て障害や安全性を一般化しない。
+[0x5CFDD0の事典](reference/symbols/005CFDD0.md)へ、[12–16H回収集約の30–32行](research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_12H_16H_SEEK_FTELL_RECOVERY_STATIC.md?plain=1#L30-L32)を根拠に標準FILE seek callback窓の報告を接続した。この接続を行った時点では元Library報告の全文・nativeは未取得であり、完全ABI・他callback・2GiB/4GiBでの実故障は未確認である。低位32bitの局所境界の報告から、全入力の切捨て障害や安全性を一般化しない。
 
 同集約26–28行のftell旧索引欠落・fragment仮説は歴史的訂正として読み、現在の[ftell入口](reference/symbols/005B797C.md)と[親フレーム依存helper](reference/symbols/005B79D7.md)を重複して新規採録しない。[14研究IDと4回収集約の対応](research/recovered/intake_open_sources_20261105/REA_LIBRARY_STATUS.tsv)では、集約が読めることと元Library本文を取得したことを分けている。
 
@@ -243,3 +243,11 @@ This section independently reviews **three previously PUBLISHED_INTAKE IDs**, no
 [局所unwindの項目](reference/symbols/005C3500.md)から4つの選別されたCALL関係と元の報告へ進める。これは既存のV9静的CALLスナップショットの再抽出ではなく、別の著述根拠を持つ手動関係。`callers`/`callees` のV9専用索引の収録数・対象は変更していない。4callerのうちfragmentを新しい独立関数とせず、4つのsiteはcode位置として登録した。
 
 著者の過去7/7限定照合（6 E8と3-byte trampoline）は保存済み報告の範囲であり、今回の原作再検証ではない。scope cursor書込・NLG副作用・全引数・FILE所有権・実例外配送と解放成功は未確認。18Hの部分証拠は保留のまま、追加取得・代替復元していない。
+
+## Library原報告の回収と条件付き解釈（2026-11-05）
+
+[03–16Hの14原報告](research/recovered/library_originals3/README.md)を全文・原bytes一致で保存した。上の「未取得」は旧集約採録時点の記録であり、原報告本文の未取得は解消した。native・添付コード/JSON・ゲーム本体は新たに取得・実行していない。
+
+- [VorbisResidue_Parse 0x5DFE10](reference/symbols/005DFE10.md)、[VorbisResidue_Init 0x5DFFC0](reference/symbols/005DFFC0.md)、[VorbisResidue2_Decode 0x5E0DC0](reference/symbols/005E0DC0.md)を名称推定として索引化。03Hの局所的な懸念は04Hの正常reader・成功受理・未改変条件下のB>=1/D>=1/P<=Eの上限、05HのEOF負値拒否と併読する。任意の壊れたobject・allocator failure・全入口の安全を証明しない。
+- [0x5CFDD0](reference/symbols/005CFDD0.md)には16H原報告20–32/36–38行を直接接続。旧集約の局所静的説明を原報告へ辿れるようにしたもので、今回のnative再検証ではない。15Hの幅の懸念を2GiB/4GiBでの実故障へ一般化しない。
+- receiver+0x2C4のseek callback読取は局所報告として本文に残す。所有者クラス・全ABIが未確定なので、正式な構造体フィールドへ昇格しない。13–14Hの旧索引の穴と16Hの後続原作命令報告を混同しない。

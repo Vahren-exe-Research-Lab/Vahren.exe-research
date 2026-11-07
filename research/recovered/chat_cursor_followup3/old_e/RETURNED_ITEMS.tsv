@@ -1,0 +1,3 @@
+turn_id	id	type	returned_utf16	review_scope
+7b1f3d1c-a08d-4f13-b4de-e1d00c34bc18	7b1f3d1c-a08d-4f13-b4de-e1d00c34bc18	userMessage		Type/ID metadata only; body not selected
+7b1f3d1c-a08d-4f13-b4de-e1d00c34bc18	674e9e04-a48c-4ddc-8f04-9b2728cc7200	agentMessage	1200	Agent returned prefix only

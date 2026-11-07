@@ -4,8 +4,29 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-2fc"></a>
+## owner + 0x2FC
+
+- [research/recovered/b_batch2/T028_NULL_VECTOR_CANDIDATE_DESTRUCTION_NATIVE_20261028_12H.md 行 19](../../research/recovered/b_batch2/T028_NULL_VECTOR_CANDIDATE_DESTRUCTION_NATIVE_20261028_12H.md?plain=1#L19-L19) — 次は0x497BB0のECX=0の上流producer（0x494618/0x49516Aほか）、owner+0x2FCと+0x32Cのフィールド型、0x4591F0後の外部参照・第2RB set本当のconsumer、T028士気敗走/T013最終target/T024戦闘AI/T011召喚親子を優先。
+  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+- [research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md 行 10](../../research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md?plain=1#L10-L10) — ## 新規局所STATIC 1：`owner+0x2FC`と`owner+0x300`は同一treeオブジェクト内で連結
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
+- [research/recovered/rea_batch13/reports/REA_T014_FOUR_GROUP_SENTINEL_LOOPS_CORRECTION_20261012_1336.md 行 8](../../research/recovered/rea_batch13/reports/REA_T014_FOUR_GROUP_SENTINEL_LOOPS_CORRECTION_20261012_1336.md?plain=1#L8-L8) — \| 2 Unit runtime \| 0x45EDA5 / 0x45EDED \| 0x45EE0D→0x45F80E \| alloc 0x1D4 / init `0x582AA0` / reader `0x58E870`; `0x463280` at owner+0x2FC \| 0x45F89D→0x45ED98 \|
+  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
+
+- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 548](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L548-L548) — [CONFIRMED-SAVED-NATIVE] A所有`exe/T014_NORMAL_LOAD_PROBE.txt`のreaderは同一marker `0x65CD28` との文字列比較後、非markerの場合に群別construct枝へ進み、次レコードへ戻る。numeric: 0x45ED92→0x45F8A2(
+  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
 <a id="field-300"></a>
 ## owner + 0x300
+
+- [research/recovered/ad_small/reports/BATTLE_TAKEOVER_RESEARCH_STAGE3_20261021.md 行 25](../../research/recovered/ad_small/reports/BATTLE_TAKEOVER_RESEARCH_STAGE3_20261021.md?plain=1#L25-L25) — - Ghidra+原本PE 0x00467DE0ではmap node+0x28からDef*を読み、Def+0x1A4へ辞書所有者を格納、owner+0x300との照合がある。
+  制約・訂正　Historical authored claim only; current curated REF priority; linked payloads excluded; no native/runtime/READY/Golden increment; role=CORRECTED_STALE_BRIDGE_PROTOTYPE_AND_PLAN
+
+- [research/recovered/b_batch3/T028_FIRST_SET_EXCLUSION_RESOLVER_BACKLINK_NATIVE_20261028_05H.md 行 12](../../research/recovered/b_batch3/T028_FIRST_SET_EXCLUSION_RESOLVER_BACKLINK_NATIVE_20261028_05H.md?plain=1#L12-L12) — - 5つのgateの手前にはname/object解決 0x4948F8,0x494FF6,0x49524D,0x495888,0x4959FE CALL0x467DE0 があり、戻り値0なら少なくとも0x494903/905でskip。0x467DE0内部は0x467E1C CALL0x4C1200（名前木探索）→0
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 - [research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md 行 10](../../research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md?plain=1#L10-L10) — ## 新規局所STATIC 1：`owner+0x2FC`と`owner+0x300`は同一treeオブジェクト内で連結
   制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence

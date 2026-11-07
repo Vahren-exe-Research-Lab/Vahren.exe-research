@@ -1,0 +1,5 @@
+# E1153の証拠充足条件の訂正
+
+APIで個別取得できなかった発言を、同じmessage IDのブラウザ表示から回収。本文の表は表示テキストであり、原Markdownの完全複製ではない。添付T018_T020_WITNESS_COMPLETENESS_AUDIT_20261023_1153.mdはプレビュー失敗、1回の再試行も失敗し、ダウンロードの実体も得られなかった。
+
+利用する訂正は、必要な実CALLsite/vptr/run・戦闘ID・SAVE・入力SHA・MAP名簿等が不足する記録を、真偽フラグだけで設計充足と扱わないこと。不足はVERIFY_INCOMPLETE、矛盾はBLOCK_CONTRADICTIONに分け、unknown増援をcomplete G2へ昇格しない。45/45は当時の合成試験報告であり原作動作の証明ではない。関数の意味を新たに確定した発見には数えない。

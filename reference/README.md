@@ -18,6 +18,8 @@
 | 0x40ED80 | [Rng_RangeInclusive](symbols/0040ED80.md) | func | lo + ftol(rand/32768*(hi-lo))。rand を 1 回使う |
 | 0x40F000 | [SimpleBattle_ReleaseSides](symbols/0040F000.md) | func | 簡略戦闘の結果反映後に両陣営の virtual +0x10 を呼び、戦闘用ユニットを破棄する処理へ進む。 |
 | 0x40F320 | [SimpleBattle_BuildUnitRoster](symbols/0040F320.md) | func | 簡略戦闘用 SimpleUnit を生成し、更新対象の配列へ登録する経路を含む。 |
+| 0x4154F0 | [VecString_Clear](symbols/004154F0.md) | func | vector<std::string> の中身を壊して領域を返し、3 つのポインタを 0 にする（ECX=vector）。 内部契約は著者STATIC記述、実機区分は試験での使用成功に限定。 |
+| 0x415530 | [VecString_PushBack](symbols/00415530.md) | func | vector<std::string>::push_back。独自の呼び方: ECX=追加する std::string、EDI=vector。原作の確保関数で写す。setv/addv が配列変数を作るときに使う。 内部契約は著者STATIC記述、実機区分は試験での使用成功に限定。 |
 | 0x415CF0 | [Tree_EraseIteratorRange](symbols/00415CF0.md) | func | Original x86 bounded 182B code compares range endpoints, calls 0x416870 for full-tree range and 0x416220 per-node on partial range; iterator ABI, key ownership and gameplay effect VERIFY |
 | 0x416220 | [Tree_EraseRangePartialNode](symbols/00416220.md) | func | Original x86 partial-range tree-node erase: invalid iterator gate; capacity>=16 heap string release, node free, nonzero count decrement. Full-tree cleanup/owner/game effects VERIFY |
 | 0x416870 | [Tree_ClearFullRangeNodes](symbols/00416870.md) | func | Original x86 full-tree recursive/iterative node destructor with nil guard and conditional heap string free. Caller 0x415CF0 resets header links and count=0; ownership/Spot+0xB8/game effects VERIFY |
@@ -416,7 +418,7 @@
 | 0x5C3646 | [CRT_LocalUnwind4_Callsite_ExceptUnwind](symbols/005C3646.md) | code | 0x5C363B内のE8 site。先行20Hにも記載済みで、新しい独立経路の発見とは数えない。 呼出先は0x5C3500。 |
 | 0x5CF970 | [Vorbis_State3InitFromImplicitESI](symbols/005CF970.md) | func | Original native reads decoder state from ESI+0x58, conditionally initializes state3 via 0x5D5BD0 and writes state4. Early direct caller 0x5D0B8A supplements the pre-existing cached 0x5D0D67 call; full ABI/runtime VERIFY. |
 | 0x5CFA10 | [OggPageUpdateLocalStateWriter](symbols/005CFA10.md) | func | 原報告が列挙した自身の直接state書込はowner+0x58への4・EDI(ABI保存を前提に2)・3。callee・alias・再入・他スレッドによる間接変更は未確認。全プログラムの状態不変性や正常EOFを証明しない。 |
-| 0x5CFDD0 | [Ogg_SeekCallbackLow32Boundary](symbols/005CFDD0.md) | func | 回収集約報告が示す34byteの標準FILE seek callback窓。0x5CFDE8で_fseek側へFILE*/low32/originを渡し、その窓ではhigh32読込を未検出と報告する。元14原報告・nativeは今回未取得。完全ABI・他callback・大容量ファイルでの故障は未確認。 |
+| 0x5CFDD0 | [Ogg_SeekCallbackLow32Boundary](symbols/005CFDD0.md) | func | 標準FILE seek callbackの34byte窓。著者の16H原報告は0x5CFDE8で_fseek側へFILE*/low32/originを渡し、この窓のhigh32読込なしを報告。原報告は今回回収済み。完全ABI・他callback・大容量ファイルの実故障は未確認。 |
 | 0x5CFF10 | [OggAggregateLinkLengthGetter](symbols/005CFF10.md) | func | 原報告ではindex=-1時にリンクの64bit長を合算するgetter。安定したstate>=2・リンクmode・件数条件と無効時-131を分ける。正常EOFで-131になるとは断定せず、破損・再入・overflow等は未確認。 |
 | 0x5D0B8A | [Vorbis_State3EarlyInitCallsite](symbols/005D0B8A.md) | code | Original E8 direct call to 0x5CF970 after nonnegative upstream 0x5D04E0 return; ESI previously loaded from outer decoder pointer. Different from cached 0x5D0D67 call; only bounded static branch established. |
 | 0x5D16C0 | [OggFileWrapper_OpenWithCloseCallback](symbols/005D16C0.md) | func | 標準ファイル開閉経路でCRT _fclose候補をcallbackとして後続へ渡しouter+0x2C8へ保存させる。別caller/再入は未確認。 |
@@ -443,7 +445,10 @@
 | 0x5DA550 | [VorbisCodebook_ParseWidthBound](symbols/005DA550.md) | func | codebookのdimension/entry数、bit長合計<=24を判定する静的x86入口。calloc結果の局所NULL未検査があるが実ゲーム異常は未確認。 |
 | 0x5DA930 | [Vorbis_CodebookDecode](symbols/005DA930.md) | func | Vorbis のコードブック復号（ビット検索）。原因不明のクラッシュ 0x5DA9F8 はこの中 |
 | 0x5DA9F8 | [Crash_5DA9F8](symbols/005DA9F8.md) | code | 汎用UI 試験中に 1 回起きたアクセス違反の位置。原因未特定 |
+| 0x5DFE10 | [VorbisResidue_Parse](symbols/005DFE10.md) | func | residue分類数/次元数と反復積を検査するparser。正常reader/成功受理・未改変条件でB>=1,D>=1,P<=Eの制約を持ち、6bit EOFは次8bit負値拒否へ伝播するという著者報告。 正常reader/非負packet長/未改変成功recordに限定。全alias/入力/ABI/allocator failure/実機挙動を証明しない。 |
+| 0x5DFFC0 | [VorbisResidue_Init](symbols/005DFFC0.md) | func | compiled codebook entryからdimensionを取りresidue instanceへ対応づけ、正常未改変受理条件ではB^Dと確保要求/除数に上限・非ゼロの制約があるという著者報告。 03H局所懸念を04H条件付き訂正と併記。任意object/全入口/allocator failure安全を確定しない。 |
 | 0x5E06C0 | [VorbisGrowCaller_ConditionalBufferWriter](symbols/005E06C0.md) | func | 0x5E072Aで0x5D4980に確保を依頼し戻り値をstackに保持、別の数値条件を通るとポインタ加算後に書く。allocator失敗と零除算の実到達性は未検証。 |
+| 0x5E0DC0 | [VorbisResidue2_Decode](symbols/005E0DC0.md) | func | type2復号関数と報告された入口。instance+0x10のcompiled codebook先頭DWORDを除数として局所IDIVで使用する。 局所division経路だけ。fulldecoder ABI・全副作用・ゲームtype2使用・全除算安全を意味しない。 |
 | 0x5E3B70 | [Ai_ComputeCandidateDistance](symbols/005E3B70.md) | func | 候補選定で座標差の平方和を受ける平方根相当の距離計算補助として呼ばれる。 |
 | 0x5E6C70 | [VorbisBitbuffer_InitializeSlotAndBuffer](symbols/005E6C70.md) | func | slot本体へ0を初期化し内部256Bを確保して先頭書込。確保失敗の局所NULLガードは未確認で実故障は未実証。 |
 | 0x5E6CA0 | [VorbisBitbuffer_FreeAndClearSlot](symbols/005E6CA0.md) | func | slot+8内部bufferをNULL判定し必要ならfree後slot本体0x14を初期化。slot pointer自身を最初に検査しない。 |
@@ -518,7 +523,7 @@
 
 ## 構造体・フィールド
 
-[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 7798 件。型や意味の正式登録前の局所表記も検索できます。
+[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 7857 件。型や意味の正式登録前の局所表記も検索できます。
 
 - [Ctx](structs/Ctx.md)
 - [FrameWnd](structs/FrameWnd.md)
@@ -535,12 +540,12 @@
 - [UnitDef](structs/UnitDef.md)
 - [UnitRuntime](structs/UnitRuntime.md)
 
-辞書項目 505 件、フィールド 122 件、根拠付き関係 165 件。
+辞書項目 510 件、フィールド 122 件、根拠付き関係 165 件。
 
-回収済み文書のVA言及・取得記録 74903 件を検索対象に含みます。辞書未登録のVAも検索できます。
+回収済み文書のVA言及・取得記録 75646 件を検索対象に含みます。辞書未登録のVAも検索できます。
 
 [登録関数間の直接CALL採録条件](static_calls_source.json) — 2373箇所。各関数ページで呼び出し元・先を参照でき、`callers VA --json` / `callees VA --json` でも検索できます。
 
 [訂正履歴](CORRECTIONS.md) — 17 件。訂正済みの旧解釈と現在の解釈を出典行付きで確認できます。
 
-[回収済み研究文書の題名・本文](DOCUMENTS.md) — 2385 文書。題名・ファイル名・研究ID・本文の通常文字列を検索できます。
+[回収済み研究文書の題名・本文](DOCUMENTS.md) — 2401 文書。題名・ファイル名・研究ID・本文の通常文字列を検索できます。

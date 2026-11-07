@@ -13,4 +13,10 @@
 - [research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_03H_05H_OFFLINE_RESIDUE_CORRECTED_STATIC.md 行 24](../../research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_03H_05H_OFFLINE_RESIDUE_CORRECTED_STATIC.md?plain=1#L24-L24) — owner `REA/T015`、参照VA `0x5D9F40/0x5DA070/0x5DFE10/0x5DFFC0/0x5E0DC0/0x5E6E10`、CALL site `0x5DFE5C/0x5DFE68/0x5D5922/0x5D5B51`、offset `inner+0xB20`, `entry+0x00`
   制約・訂正　Authored REA recovery compilation, not full original Library bodies; STATIC/ABI/NOT_READY/Golden limits retained; linked evidence not acquired; no semantic/READY promotion.
 
+<a id="field-18"></a>
+## instance + 0x18
+
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_04H_RESIDUE_POWER_BOUND_REPORT.md 行 55](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_04H_RESIDUE_POWER_BOUND_REPORT.md?plain=1#L55-L55) — **KB_CANDIDATE（共有辞書へ自動採録しない）:** owner `REA/T015`、本研究ID、source旧SQLite `functions.code`/`calls` と原本PE（各SHA上記）、VA `0x005DA550 / 0x005E6E10 / 0x005DFE10 / 0x005DFFC
+  制約・訂正　Historical authored STATIC/INFERRED/VERIFY/NOT READY only. No new native/runtime/ABI/formal VERIFIED/Golden/READY validation. Companion evidenceJSON/Python/PE/ZIP/DB/linked sources not acquired or executed. Source label is visible Library filename, not canonical URI.
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

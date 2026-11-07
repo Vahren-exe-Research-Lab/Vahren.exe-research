@@ -106,6 +106,12 @@
 - [research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_09H_11H_CACHE_SEEK_RECOVERY_STATIC.md 行 27](../../research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_09H_11H_CACHE_SEEK_RECOVERY_STATIC.md?plain=1#L27-L27) — **Owner evidence:** 10H report lines 19–34, 38–44. `0x005CF73F` stores logical count `owner+0x34=N`; `0x005CF78A` and `0x005CF79D` call `0x005C30BE _realloc`, a
   制約・訂正　Authored REA recovery compilation, not full original Library bodies; STATIC/ABI/NOT_READY/Golden limits retained; linked evidence not acquired; no semantic/READY promotion.
 
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_10H_OGG_PUBLISH_BEFORE_ALLOC_REPORT.md 行 21](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_10H_OGG_PUBLISH_BEFORE_ALLOC_REPORT.md?plain=1#L21-L21) — \| `0x005CF73F` \| `89 4B 34` \| 解析中の `owner+0x34` に論理件数Nを保存。17H/19Hの既存分岐情報によると後続確保より前。 \|
+  制約・訂正　Historical authored offline STATIC/INFERRED/VERIFY/NOT READY report; old-index and prior-record provenance retained; no new native/ABI/runtime/Golden/READY verification; linked evidence/code/EXE/ZIP/DB not acquired or executed in this review.
+
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_10H_OGG_PUBLISH_BEFORE_ALLOC_REPORT.md 行 48](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_10H_OGG_PUBLISH_BEFORE_ALLOC_REPORT.md?plain=1#L48-L48) — `KB_CANDIDATE`: REA/T015、今回研究ID。owner=REA独立静的研究、主要VA `0x005CF4D0 / 0x005D1310 / 0x005CF970 / 0x005CFA10`、E8 CALL `0x005CF78A / 0x005CF79D / 0x005D140D`、構造体 `own
+  制約・訂正　Historical authored offline STATIC/INFERRED/VERIFY/NOT READY report; old-index and prior-record provenance retained; no new native/ABI/runtime/Golden/READY verification; linked evidence/code/EXE/ZIP/DB not acquired or executed in this review.
+
 <a id="field-48"></a>
 ## owner + 0x48
 
@@ -117,6 +123,12 @@
 
 - [research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_09H_11H_CACHE_SEEK_RECOVERY_STATIC.md 行 27](../../research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_09H_11H_CACHE_SEEK_RECOVERY_STATIC.md?plain=1#L27-L27) — **Owner evidence:** 10H report lines 19–34, 38–44. `0x005CF73F` stores logical count `owner+0x34=N`; `0x005CF78A` and `0x005CF79D` call `0x005C30BE _realloc`, a
   制約・訂正　Authored REA recovery compilation, not full original Library bodies; STATIC/ABI/NOT_READY/Golden limits retained; linked evidence not acquired; no semantic/READY promotion.
+
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_10H_OGG_PUBLISH_BEFORE_ALLOC_REPORT.md 行 23](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_10H_OGG_PUBLISH_BEFORE_ALLOC_REPORT.md?plain=1#L23-L23) — \| `0x005CF79A` \| `89 43 48` \| allocatorの戻り値を `owner+0x48` に保存。先行17Hでは直前の局所NULLガードを確認できていない。 \|
+  制約・訂正　Historical authored offline STATIC/INFERRED/VERIFY/NOT READY report; old-index and prior-record provenance retained; no new native/ABI/runtime/Golden/READY verification; linked evidence/code/EXE/ZIP/DB not acquired or executed in this review.
+
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_10H_OGG_PUBLISH_BEFORE_ALLOC_REPORT.md 行 27](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_10H_OGG_PUBLISH_BEFORE_ALLOC_REPORT.md?plain=1#L27-L27) — \| `0x005CF990–0x005CF996` \| `8B 46 60 / C1 E0 05 / 03 46 48` \| 保存済み `+0x60` インデックスを32倍し、`owner+0x48`ヘッダ基底へ加算。 \|
+  制約・訂正　Historical authored offline STATIC/INFERRED/VERIFY/NOT READY report; old-index and prior-record provenance retained; no new native/ABI/runtime/Golden/READY verification; linked evidence/code/EXE/ZIP/DB not acquired or executed in this review.
 
 - [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/BATTLE_AI_ARCHITECTURE_20261025.md 行 41](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/BATTLE_AI_ARCHITECTURE_20261025.md?plain=1#L41-L41) — - `0x514D60` primary（SimpleUnit、owner+0x48 vector）とfallback（SimpleStaticUnit、owner+0x58 vector）を別に走査。距離が同じなら通常は先に列挙された候補を保持。
   制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
@@ -141,6 +153,9 @@
 
 - [research/recovered/b_batch8/data/T012_T013_4C60F0_DUAL_CALLSITE_CONTEXT_20261019.md 行 6](../../research/recovered/b_batch8/data/T012_T013_4C60F0_DUAL_CALLSITE_CONTEXT_20261019.md?plain=1#L6-L6) — [NEW CROSSSITE-B2] VA0x54E533で[ESI+0x9C]-=EDI。0x54E539..0x54E552でowner pointer [ESI+0x94]の+0x40/+0x48中点をECXに作り、EAX=[owner+0x4C]−[ESI+0x9C]を作る。0x54E554 PUSH [ESI
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_10H_OGG_PUBLISH_BEFORE_ALLOC_REPORT.md 行 25](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_10H_OGG_PUBLISH_BEFORE_ALLOC_REPORT.md?plain=1#L25-L25) — \| `0x005CF7A5` \| `89 43 4C` \| allocatorの戻り値を `owner+0x4C` に保存。 \|
+  制約・訂正　Historical authored offline STATIC/INFERRED/VERIFY/NOT READY report; old-index and prior-record provenance retained; no new native/ABI/runtime/Golden/READY verification; linked evidence/code/EXE/ZIP/DB not acquired or executed in this review.
 
 <a id="field-50"></a>
 ## owner + 0x50
@@ -331,6 +346,9 @@
 - [research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_09H_11H_CACHE_SEEK_RECOVERY_STATIC.md 行 35](../../research/recovered/github_blob5/reports/research/intake/REA/REA_20261101_09H_11H_CACHE_SEEK_RECOVERY_STATIC.md?plain=1#L35-L35) — **Owner evidence:** 11H report lines 19–27, 31–41. Old `FUN_005d1310` pseudo lines 26, 33–34 reference seek `owner+0x2C4` and tell `owner+0x2CC`: initial `seek(
   制約・訂正　Authored REA recovery compilation, not full original Library bodies; STATIC/ABI/NOT_READY/Golden limits retained; linked evidence not acquired; no semantic/READY promotion.
 
+- [research/recovered/library_originals3/reports/REA_OFFLINE_20261101_11H_OGG_SEEK_CALLBACK_REPORT.md 行 39](../../research/recovered/library_originals3/reports/REA_OFFLINE_20261101_11H_OGG_SEEK_CALLBACK_REPORT.md?plain=1#L39-L39) — `KB_CANDIDATE`: owner `REA/T015`、ID上記、VA `0x005D1310 / 0x005CF4D0`、CALL site `0x005D136A/0x005D1375/0x005CF884`、保存フィールド `owner+0x2C4/+0x2CC`、直接CALL `0x005D140D/
+  制約・訂正　Historical authored offline STATIC/INFERRED/VERIFY/NOT READY report; old-index and prior-record provenance retained; no new native/ABI/runtime/Golden/READY verification; linked evidence/code/EXE/ZIP/DB not acquired or executed in this review.
+
 <a id="field-2cc"></a>
 ## owner + 0x2CC
 
@@ -396,26 +414,5 @@
 
 - [research/recovered/b_batch2/T028_NULL_VECTOR_CANDIDATE_DESTRUCTION_NATIVE_20261028_12H.md 行 9](../../research/recovered/b_batch2/T028_NULL_VECTOR_CANDIDATE_DESTRUCTION_NATIVE_20261028_12H.md?plain=1#L9-L9) — 0x463590の0x463594 EBP=[ESP+0x10] は上記ownerを取得。0x4635A0 ESI=owner+0x2FC、0x4635A7 CALL0x49F410で索引木内の範囲を求め、0x4635BA CALL0x4BF820で範囲内エントリを消す経路。厳密なkey/範囲境界・削除件数はVERIF
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
-
-- [research/recovered/b_batch2/T028_NULL_VECTOR_CANDIDATE_DESTRUCTION_NATIVE_20261028_12H.md 行 19](../../research/recovered/b_batch2/T028_NULL_VECTOR_CANDIDATE_DESTRUCTION_NATIVE_20261028_12H.md?plain=1#L19-L19) — 次は0x497BB0のECX=0の上流producer（0x494618/0x49516Aほか）、owner+0x2FCと+0x32Cのフィールド型、0x4591F0後の外部参照・第2RB set本当のconsumer、T028士気敗走/T013最終target/T024戦闘AI/T011召喚親子を優先。
-  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
-
-- [research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md 行 10](../../research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md?plain=1#L10-L10) — ## 新規局所STATIC 1：`owner+0x2FC`と`owner+0x300`は同一treeオブジェクト内で連結
-  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
-
-- [research/recovered/rea_batch13/reports/REA_T014_FOUR_GROUP_SENTINEL_LOOPS_CORRECTION_20261012_1336.md 行 8](../../research/recovered/rea_batch13/reports/REA_T014_FOUR_GROUP_SENTINEL_LOOPS_CORRECTION_20261012_1336.md?plain=1#L8-L8) — \| 2 Unit runtime \| 0x45EDA5 / 0x45EDED \| 0x45EE0D→0x45F80E \| alloc 0x1D4 / init `0x582AA0` / reader `0x58E870`; `0x463280` at owner+0x2FC \| 0x45F89D→0x45ED98 \|
-  制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
-
-- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 548](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L548-L548) — [CONFIRMED-SAVED-NATIVE] A所有`exe/T014_NORMAL_LOAD_PROBE.txt`のreaderは同一marker `0x65CD28` との文字列比較後、非markerの場合に群別construct枝へ進み、次レコードへ戻る。numeric: 0x45ED92→0x45F8A2(
-  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
-
-<a id="field-300"></a>
-## owner + 0x300
-
-- [research/recovered/ad_small/reports/BATTLE_TAKEOVER_RESEARCH_STAGE3_20261021.md 行 25](../../research/recovered/ad_small/reports/BATTLE_TAKEOVER_RESEARCH_STAGE3_20261021.md?plain=1#L25-L25) — - Ghidra+原本PE 0x00467DE0ではmap node+0x28からDef*を読み、Def+0x1A4へ辞書所有者を格納、owner+0x300との照合がある。
-  制約・訂正　Historical authored claim only; current curated REF priority; linked payloads excluded; no native/runtime/READY/Golden increment; role=CORRECTED_STALE_BRIDGE_PROTOTYPE_AND_PLAN
-
-- [research/recovered/b_batch3/T028_FIRST_SET_EXCLUSION_RESOLVER_BACKLINK_NATIVE_20261028_05H.md 行 12](../../research/recovered/b_batch3/T028_FIRST_SET_EXCLUSION_RESOLVER_BACKLINK_NATIVE_20261028_05H.md?plain=1#L12-L12) — - 5つのgateの手前にはname/object解決 0x4948F8,0x494FF6,0x49524D,0x495888,0x4959FE CALL0x467DE0 があり、戻り値0なら少なくとも0x494903/905でskip。0x467DE0内部は0x467E1C CALL0x4C1200（名前木探索）→0
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)
