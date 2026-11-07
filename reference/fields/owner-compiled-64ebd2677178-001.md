@@ -10,4 +10,10 @@
 - [research/recovered/b_batch3/T011_FOLLOW_COMPILER_RUSH_RESULT_LINK_NATIVE_20261027_20H.md 行 16](../../research/recovered/b_batch3/T011_FOLLOW_COMPILER_RUSH_RESULT_LINK_NATIVE_20261027_20H.md?plain=1#L16-L16) — [GOLDEN] 無改変旧EXE＋KARATE_X20前DAT、同一SAVE/MAP/input/RNGで合法follow=on/off/0/20/30/48 skill使用を採取。compiled +0x1D0、0x55038F分岐、Rush+0x1F8、結果+0x194/+0x198、visible effect/
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+<a id="field-288"></a>
+## compiled + 0x288
+
+- [research/recovered/b_batch5/data/T011_SUPER_COLON_TOKEN_CTOR_NATIVE_20261024_23H.md 行 19](../../research/recovered/b_batch5/data/T011_SUPER_COLON_TOKEN_CTOR_NATIVE_20261024_23H.md?plain=1#L19-L19) — 原DAT「32_ボススキル/B_14_ヌエバ・デスパセーニャ.dat」には u_diplo_nt3..nt6 : u_diplo_nt2 の親宣言がある。構文「:」→token string initializer→比較一致→super ScriptData生成はSTATICとINFERREDで接続。ただし各Skill
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

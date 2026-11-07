@@ -280,4 +280,16 @@
 - [research/recovered/b_batch2/T028_COUNT_QUEUE_MODE_BRANCH_NATIVE_20261027_23H.md 行 14](../../research/recovered/b_batch2/T028_COUNT_QUEUE_MODE_BRANCH_NATIVE_20261027_23H.md?plain=1#L14-L14) — - callee内 0x4923BA [manager+0x1EEFA4]=end、0x4923C0 [manager+0x1EEFA0]=begin、0x4923C6/C8 begin==endなら析構skip、非空なら0x4923D0 CALL 0x417160→0x4923E0 CALL 0x415A60→0x4
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 
+<a id="field-1ef140"></a>
+## manager + 0x1EF140
+
+- [research/recovered/rea_batch2/reports/REA_20261103_06H_P0_PLAYER194_ENGINE_ALIAS_CHAIN_STATIC.md 行 12](../../research/recovered/rea_batch2/reports/REA_20261103_06H_P0_PLAYER194_ENGINE_ALIAS_CHAIN_STATIC.md?plain=1#L12-L12) — - Separate loop entry `0x555E35 mov ecx,0x8BE2F0; 0x555E3D call 0x4B9930`; in its case-1 path `0x4B99B9 lea eax,[esi+0x504]` passes that same `0x8BE7F4` to `0x4
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
+
+<a id="field-1ef144"></a>
+## manager + 0x1EF144
+
+- [research/recovered/rea_batch2/reports/REA_20261103_06H_P0_PLAYER194_ENGINE_ALIAS_CHAIN_STATIC.md 行 12](../../research/recovered/rea_batch2/reports/REA_20261103_06H_P0_PLAYER194_ENGINE_ALIAS_CHAIN_STATIC.md?plain=1#L12-L12) — - Separate loop entry `0x555E35 mov ecx,0x8BE2F0; 0x555E3D call 0x4B9930`; in its case-1 path `0x4B99B9 lea eax,[esi+0x504]` passes that same `0x8BE7F4` to `0x4
+  制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

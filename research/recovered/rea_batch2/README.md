@@ -1,0 +1,19 @@
+# REA batch 2: current authored-report recovery
+
+Checked 2026-11-05. This local recovery preserves 45 complete authored Markdown inputs (252,616 source bytes), dated 2026-11-02 through 2026-11-04 by their report labels. All 45 were read completely in nine bounded five-report chunks, including same-run addenda and corrections. All 45 archives are byte-identical: 45 CONTENT_REVIEWED_EXACT, 0 VARIANT, 0 body deferrals, 0 baseline exact-body duplicates, 0 invented research IDs. This is source preservation, not independent semantic curation or new native research.
+
+- [Report ledger](REPORT_LEDGER.tsv): required nine-column source/archive crosswalk, content review, confidence and limitations.
+- [Identity receipts](IDENTITY_RECEIPTS.tsv): freshly measured source/archive SHA256 and lengths; inventory byte and timestamp comparison; report date label and Work ID where explicit. All 45 sizes match inventory and current stat. All 45 modification timestamps agree at the inventory's whole-second precision; fractional seconds are preserved separately.
+- [Supplemental current catalog](RESEARCH_SOURCE_CATALOG_SUPPLEMENT.tsv): the original nine-column catalog schema. All 45 inputs were absent from the supplied old-catalog snapshot. These SHA values were measured now; they are not old catalog SHA equality claims. Owner and task/ID values derive from explicit report headers. UNSET means no single header research ID/task or no explicit catalog domain. Receipt 03H lists five prior IDs, not a single new research ID; the two newest Work IDs are retrieval keys, not invented historical research IDs. Line count uses decoded splitlines; VA mentions count textual 0x addresses of six to eight hex digits, including repetitions.
+- [Deferred and precedence notes](DEFERRED.md): semantic collision, historical holds and unresolved scope.
+- [Batch verification](VERIFICATION.json): input inventory digest, baseline manifest digest and archive verification totals.
+
+The approved inventory supplies relative source paths, bytes, UTC modification times and NOT_IN_CATALOG_SNAPSHOT. Its metadata is a present file inventory, not evidence of an earlier content snapshot. Report observation dates and historical PE/V9/window hashes remain authored claims, independent of the current report hashes. Filesystem modification dates do not independently establish when the reported native observations occurred. Exact archival copies retain original formatting, date/confidence tags, historical publication caveats, STATIC/INFERRED/VERIFY distinctions, errata and next-cursor text; a preserved next-cursor instruction authorizes no further work here.
+
+Before copying, every current source SHA was compared with the existing SOURCE_MANIFEST.tsv: no match. Source bytes were copied directly with no decoding/re-encoding. IDENTITY_EXACT_BYTES is the complete transformation record: no material was removed or substituted, and no privacy-only derivative was needed. Authored references to native byte windows, opcodes and API names are preserved as textual claims; the linked artifacts were neither opened nor included.
+
+Only this batch directory was created. Source research, synced sources, root ledger, shared REF/dictionaries, code and build state were not edited. The preferred local connector returned HTTP 429; authorized local terminal fallback was used, with no Remote connection. No Git operations, original-game/native execution, REA/Ghidra rerun, SQLite access, linked payload, native EXE, raw log, probe, HANDOFF or source script read/execution occurred. No remote publication or earlier GitHub readback was revalidated. New runtime observations, native evidence, formal five-method verification, Golden PASS, strict MATCH and READY are all zero.
+
+## Navigation
+
+[Reviewed complete reports](reports/) · [Recovery ledger](REPORT_LEDGER.tsv)

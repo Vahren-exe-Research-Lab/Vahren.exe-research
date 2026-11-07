@@ -4,6 +4,18 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-dc"></a>
+## param_3 + 0xDC
+
+- [research/recovered/b_batch5/data/T011_LEVEL_ZERO_SENTINEL_CALLER_BRANCHES_OFFLINE_20261021_0413.md 行 18](../../research/recovered/b_batch5/data/T011_LEVEL_ZERO_SENTINEL_CALLER_BRANCHES_OFFLINE_20261021_0413.md?plain=1#L18-L18) — - 保存擬似C内の`bVar1`が真の場合、`0x00466A2E → 0x0058B7F0`へ`0x80000008`の番兵候補を渡す。一方、偽の場合は`FUN_004647D0(...,"class")`の読取値`iVar4`から出発し、`param_3 != NULL`かつ`param_3 != &DAT_00A
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
+- [research/recovered/b_batch5/data/T011_LEVEL_ZERO_SENTINEL_CALLER_BRANCHES_OFFLINE_20261021_0413.md 行 19](../../research/recovered/b_batch5/data/T011_LEVEL_ZERO_SENTINEL_CALLER_BRANCHES_OFFLINE_20261021_0413.md?plain=1#L19-L19) — - 擬似C上では`param_4 != 0`なら`bVar1=true`。`param_4==0`のときは別の`FUN_0040B200`結果にも依存する。`bVar1`のゲーム上の意味、`param_3+0xDC`のフィールド名、他modeの加算との重なりは未検証。
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
+- [research/recovered/b_batch5/data/T011_LEVEL_ZERO_SENTINEL_CALLER_BRANCHES_OFFLINE_20261021_0413.md 行 37](../../research/recovered/b_batch5/data/T011_LEVEL_ZERO_SENTINEL_CALLER_BRANCHES_OFFLINE_20261021_0413.md?plain=1#L37-L37) — - 同一EXE/DAT/SAVE/map/input/seed観測可否とcapture SHAを固定し、合法ゲーム内で`level`キーに由来する初期ユニットが確認可能なケースを`0`/正値/負値、`class`基準1/高値、scenario modifier有無、`param_3+0xDC`参照有無で可能な範囲だけ区
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
 <a id="field-280"></a>
 ## param_3 + 0x280
 

@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-20"></a>
+## return + 0x20
+
+- [research/recovered/b_batch5/data/T011_SPECIAL_PROPERTY_SKILL4C_20261013.md 行 5](../../research/recovered/b_batch5/data/T011_SPECIAL_PROPERTY_SKILL4C_20261013.md?plain=1#L5-L5) — [PARSER BRANCH B] local偽なら0x59A37B push `skill`,0x59A389 EDX=0x624878 `special`→0x59A390 CALL0x4647D0 numeric getter、0x59A395 ECX=[return+0x20]→0x59A398 Skill+0
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
 <a id="field-48"></a>
 ## return + 0x48
 

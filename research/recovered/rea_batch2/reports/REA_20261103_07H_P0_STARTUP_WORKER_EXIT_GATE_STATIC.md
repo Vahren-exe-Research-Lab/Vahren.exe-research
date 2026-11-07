@@ -1,0 +1,30 @@
+# REA 2026-11-03 07H | bounded startup worker, thread-exit gate, and roster request (STATIC / VERIFY)
+- **research_id:** `REA-LOCAL-20261024-09H-P0-THREE-RBTREE-UNSIGNED-KEYZERO-STATIC-01` (existing REA owner ID; same-ID addendum, new IDs **0**).
+- **owner/tasks:** REA, P0/T015; observed 2026-11-03 07H JST; original PE x86 and read-only Ghidra unified V9.
+- **source_relative_paths:** `rea_lab/targets/hakushin067_Vahren.exe`, `rea_lab/headless_analysis/search_index/HAKUSHIN067_UNIFIED_V9_20261023.sqlite`, prior `rea_lab/decomp_task/REA_20261103_06H_P0_PLAYER194_ENGINE_ALIAS_CHAIN_STATIC.md`.
+- **measured original PE SHA256:** `E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187`.
+- **measured V9 SHA256:** `2629CB2F03ECEC9927E89892C77F847E4CDBA381AB718825C1CA8CFEEEF00EDE`.
+- **status:** source-window STATIC, conditional call-order INFERRED, real runtime ordering/availability/NULL/exception/failed Win32 API calls VERIFY; intake publication is not curator adoption or READY.
+
+## Previously unresolved same-function call ordering
+- Native `0x555918 E8 -> 0x555CD0` is guarded by `0x555916 je 0x55591F` in caller `0x5554F0`; the initialization-and-request function is therefore conditionally called, not universally active.
+- At `0x555D75`, byte `[0x87981B]` selects two **different** initiation modes in `0x555CD0`. If nonzero, `0x555D7E push 0; 0x555D80 call 0x555AD0; 0x555D85 jmp 0x555DC2` (same-thread path).
+- If zero, `0x555D87..0x555D98` passes one zero argument and start-address `0x555AD0` to the imported `KERNEL32!CreateThread` at IAT `0x6090A4`. The returned thread handle is copied to EBX; in the shown window no handle-success test precedes the next API call.
+- `0x555DA5` invokes imported `KERNEL32!GetExitCodeThread` (IAT `0x60909C`) with EBX and `[ebp-0x14]` as output. `0x555DAB/DAE` reads the exit-code output and checks `0x103` (Windows STILL_ACTIVE).
+- While the returned code equals `0x103`, branch `0x555DB3 -> 0x555F19` follows a message/sleep pump and jumps back to `0x555DA0` (e.g. `0x555F69`, `0x555F78`, `0x555FBE`); there is no direct normal fallthrough to roster request on this STILL_ACTIVE branch.
+- When code differs from `0x103`, `0x555DBA mov edi,eax` preserves the observed worker-exit value and `0x555DBC` calls imported `KERNEL32!CloseHandle` (IAT `0x609088`), then rejoins `0x555DC2`.
+- Within the worker `0x555AD0`, `0x555C46 E8 -> 0x4B78C0` reaches the previously established manager/engine setup (and previous `0x4B79D6 E8 -> 0x48A5B0`). Under **normal return**, cleanup ends with `0x555C99 mov eax,1` and `0x555CAF ret 4`: one stack argument, callee cleans up. Thread-procedure Win32 ABI is consistent, but not a runtime ABI test.
+- This worker unconditionally sets EAX=1 at its normal epilogue, regardless of the return value from `0x4B78C0`, whose return is not checked locally. It thus **does not provide an independently validated successful constructor/Player+0x194 guarantee** even if a thread reports exit-code 1.
+- Common path `0x555E29 cmp edi,ebx` (EBX zeroed at `0x555E0E`): on zero, `0x555E2B je 0x555E56` skips request; otherwise `0x555E35 mov ecx,0x8BE2F0; 0x555E3D E8 -> 0x4B9930`. In the synchronous mode EDI stays 1, even though worker return EAX is ignored; in the asynchronous normal-completion mode EDI receives the worker exit code.
+- **Narrow new conclusion:** original x86 has a same-function, mode-sensitive initiation/worker-exit gate lexically and normally preceding `0x4B9930` request. This improves the 06H producer/consumer chronology but **does not** prove all initialization succeeds before any request, that `Player+0x194` remains valid, that exceptions cannot bypass the gate, or that engine and scene lifetime is safe.
+- **Error/ABI caveats:** `CreateThread` handle failure and `GetExitCodeThread` boolean failure are not checked in this bounded path before reading `[ebp-0x14]`. Potential NULL/invalid handle, unspecified output, early exits and exception effects remain VERIFY, not a demonstrated crash or exploitation condition.
+
+## Reproducible native receipts and duplicate handling
+- Native PE byte-range SHA256 `0x555D75+0x70`: `34C5249C106CA8BBA303F3555E8DBB1DD725E1FB7D5D6DC9FCE021357E366225`.
+- Native `0x555E21+0x38`: `5D1A01949BB1A2D98EDCE9DE8F7A6FC98380A169ED279DC46BDD31B3AD0B1002`; `0x555F19+0x35`: `60F1525D67F2023D1F107C9AFD851465DE972DB3425B4031BF046543A7BE756E`.
+- Native `0x555C3E+0x16`: `E6ABAB65BF649F7A2467A80DAD0CAE5144E8987FB5ED0DE592691810A5C8F382`; `0x555918+0x05`: `5A15EEE8830F8837D139EF92CB9F435BC91672046D6EEDD86429D8E7DCF416EA`.
+- V9 `native_callsite` rel32 and original PE match **5/5** selected E8: `555918->555CD0`, `555D80->555AD0`, `555C46->4B78C0`, `4B79D6->48A5B0`, `555E3D->4B9930`. Windows IAT labels independently derived from original PE import table. These are **not** 5 formal REA five-method evidence bundles.
+- **Existing meanings / correction:** 06H already linked `Player+0x194` to embedded engine on qualified constructor path; current report adds mode/thread/exit gate, not a duplicate study ID. Current develop `symbols.tsv` already names `0x8BE2F0` and `0x8BE7F4`; `REF_BATTLE_TAKEOVER.md` §9 partially curated historical 09H tree details. No new symbol or REF edit by REA.
+- **Curator checklist:** pin PE/V9/report SHA and actual REA owner PR HEAD, verify new normal-order/error-gate semantics against B/E/develop and original ASM; selectively adopt only distinct safe source facts in curator-owned latest-develop isolation; keep NULL and true runtime effects VERIFY. No owner-side develop merge.
+- **Formal status:** prior saved formal five-method evidence 64/64 **historical record only, not rerun**; this addendum new VERIFIED 0, original gameplay Golden PASS 0, strict MATCH 0, READY 0. No protected/safety-held target or previously refused evidence accessed.
+- **Next cursor:** bounded evidence for `0x48A5B0` allocation/failure propagation through `0x4B78C0` versus the worker's constant normal exit code, then request-side `Player+0x194` lifetime; do not escalate to gameplay guarantee without independent dynamic Golden.

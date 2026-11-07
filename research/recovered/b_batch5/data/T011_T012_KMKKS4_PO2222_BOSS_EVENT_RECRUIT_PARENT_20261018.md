@@ -1,0 +1,14 @@
+# B-20261018-2109-01｜T011主・T012参照：kmkks4の親Classとレイノアレフイベント配置／勢力雇用の原文接続
+[DATE/STATUS] 2026-10-18 21時台 JST。B新規限定 STATIC ORIGINAL SOURCE 候補。EXE新解析・原作実行0、原作Gameplay Golden PASS0、新旧strict MATCH0、Task DONE増0。B HANDOFF含む4点独立読み戻しまでREADY保留。
+[SOURCE-CLASS] normalized原作 20_クラス/B_2222_レイノアレフ.dat L4-14: class kmkks4:kmkks3、level=35、change=@、member=kmkks4*7、merce=kmkks4。kmkks4 blockはskillの直接指定を持たない。L69-120のkmkks:base／kmkks2:kmkks／kmkks3:kmkksはそれぞれ直接skill=rensha_watecannon,...。kmkks3の親はkmkks2でなくkmkksであり、kmkks4の実効skill継承はVERIFY。
+[SOURCE-BOSS EVENT] normalized 2001_イベント_ボス/EB_2222_レイノアレフ.dat L1..252、event boss_nisehsi内でL125以降にaddUnit(nisedrgn,sp35)、addUnit(kmkks4,sp35)を3回、addPower(po2222)、addSpot(sp35,po2222)の原文が存在。冒頭の選択・scenario条件と会話演出の後、L125以降の配置命令は局所的な会話ifブロック外。event起動条件／native addUnit成功／合法戦闘参加はVERIFY。
+[SOURCE-POWER] normalized power(1).dat L1262..1285：power po2222:p_t はmaster=nisedrgn、member=sp35、staff/merce双方にkmkks4を有効に列挙。3000_淫ドリームマッチ/dr_power.dat L153..165のpower pd22:p_tもmaster=nisedrgn_drでstaff/merceにkmkks4を直接列挙（別scenarioのraw宣言）。
+[SOURCE-UNIT-CLASS BOUNDARY] 10_ユニット/B_2222_レイノアレフ.dat のunit nisedrgn:base1／nisehsiwaru:base1はいずれもstaff=...kmkks4...を有効に記述し、各class c_nisedrgn／c_nisehsiwaruのmerceにもkmkks4が有効。両unitの //merce はコメント。ボス自身の直接skillと雇用可能Classのskillは別辺であり混ぜない。
+[PREVIOUS/DELTA] B-20261018-2021-02はkmkks/kmkks2/kmkks3の直接skillと連装Skill chainまで確定。新規増分はkmkks4→kmkks3の無直接skill段、boss_nisehsi内の有効addUnit 3命令、po2222/pd22の有効staff/merce crosswalk。前IDの技能定義は再READY計上しない。
+[EXE/VA LIMIT] 対象は同梱Vahren.exe既保存SHA256=e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187。既B VA0x59C1BA..0x59C253 Skill field getter、0x547096/0x5470A9通常射程gate、0x57E5D3→0x57EB40、0x550E70/0x580280は一般参照であり、今回のevent/Skillの実到達・xrefを直接立証しない。
+[REIMPLEMENT] Class.parentとClass.change、Class.directSkill有無とeffectiveSkill、Unit.staff／Class.merce／Power.merce／event.addUnit、出撃時runtime Unit所有Skillを型別に管理。kmkks4の直接skill未記載を明示skill=@と同一視せず、親技能自動継承も未確定に置く。
+[VERIFY] boss_nisehsi発火・三回addUnitの実生成数、同ID Unit複数生成のnative挙動、po2222設置・実雇用、kmkks4有効rensha_watecannon取得、native next→next2→next3、可視発射・対象・HP/MP・RNG・待機は未観測。
+[GOLDEN DESIGNED_NOT_RUN] 旧正規合法のboss_nisehsi前後sp35/po2222でイベント条件・Unit数/所属・kmkks4保有SkillをUIから可視確認。出撃が成立した場合のみ原作同梱EXE/DAT/SAVE/map/input/capture SHAと新実装同等条件で連装水弾・対象・HP/MP・待機・次tick比較。配置/有効保有が未実証なら戦闘fixtureはINELIGIBLE、実機PASS0・strict0。
+[NEXT] 同イベントの実際のトリガ・po2222出撃経路を許可済sourceから絞る。T012は既保存stage nativeだけで実弾・最終結果接続を継続。EのみMASTER/T018正式統合を実施。
+[SAFETY] 旧B-20261018-1813-01 HANDOFF拒否およびE-20261018-2053-B2021x2-MASTER-SAFETY-01はBLOCKED維持、元payloadの再送・別shell/path/tool/Remote迂回なし。原本ZIP/EXE/SAVE、新REA/Ghidra、他owner/MASTER/T018/dev_lab/Git/push/設定/automation変更0。
+[FILES/READY] 本detail＋data/T011_DATA_MODEL.md＋data/T012_BATTLE_CALC.md＋evidence/LANE_B_HANDOFF.mdの同IDを個別読み戻し後に限りB限定STATIC READY。E正式統合は別。

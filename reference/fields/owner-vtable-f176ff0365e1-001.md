@@ -13,6 +13,12 @@
 - [research/recovered/b_batch3/T013_HEAL_DEFERRED_TICK_DISPATCH_NATIVE_20261027_09H.md 行 11](../../research/recovered/b_batch3/T013_HEAL_DEFERRED_TICK_DISPATCH_NATIVE_20261027_09H.md?plain=1#L11-L11) — [SLOT GATES] 0x4C290B CMP BYTE[ESI+8],0。非0時0x4C2911/13は[EBX.vtable+0x0C]、0時task+0x14非0なら0x4C291F/21で+0x10を呼び0x4C2928 TEST AL→0なら0x4C2935 skip。0且つtask+0x14==0ならp
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+<a id="field-1c"></a>
+## vtable + 0x1C
+
+- [research/recovered/rng_audio/T006_AUDIO_BACKEND_EOF.md 行 6](../../research/recovered/rng_audio/T006_AUDIO_BACKEND_EOF.md?plain=1#L6-L6) — - audioApplyVolume 0x4BF630 calls IBasicAudio vtable +0x1C = put_Volume for the DirectShow branch.
+  制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
+
 <a id="field-24"></a>
 ## vtable + 0x24
 

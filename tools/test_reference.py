@@ -537,6 +537,142 @@ class ReferenceTests(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertEqual(len(json.loads(result.stdout)), 2)
 
+    def add_prose_report(self):
+        directory = self.root / "research/recovered"
+        directory.mkdir(parents=True)
+        report = directory / "T025_DREAM_GUARD.md"
+        report.write_text("preamble\n# 夢世界の防御調査\n研究番号 TASK-PROSE-025\n"
+                          + "前" * 600 + "本文だけの日本語照合" + "後" * 600
+                          + "\n末尾の目印\n", encoding="utf-8")
+        digest = hashlib.sha256(report.read_bytes()).hexdigest()
+        ledger = directory / "RECOVERY_LEDGER.tsv"
+        ledger.write_text("source_path\tdestination\tdestination_sha256\tcoverage_state\tprior_coverage\tlimitations\n"
+                          f"old/report.md\tresearch/recovered/{report.name}\t{digest}\tpartial\tmissing\tHistorical partial prose\n"
+                          f"alias/report.md\tresearch/recovered/{report.name}\t{digest}\tpartial\tmissing\talias\n",
+                          encoding="utf-8")
+        return report, ledger
+
+    def test_document_search_finds_title_id_filename_and_body_with_cited_excerpt(self):
+        report, _ = self.add_prose_report()
+        data = reference.load(self.root)
+        for query, line in (("夢世界の防御調査", 2), (report.name.lower(), 2),
+                            ("TASK-PROSE-025", 3), ("本文だけの日本語照合", 4), ("末尾の目印", 5)):
+            with self.subTest(query=query):
+                hits = reference.search(data, query)
+                self.assertEqual(len(hits), 1)
+                hit = hits[0]
+                self.assertEqual(hit["kind"], "document_match")
+                self.assertEqual(hit["name"], "夢世界の防御調査")
+                self.assertEqual(hit["confidence"], "研究本文の一致（意味・動作の検証なし）")
+                self.assertNotIn("target_version", hit)
+                source = hit["source"]
+                self.assertEqual(source["path"], "research/recovered/" + report.name)
+                self.assertEqual(source["sha256"], hashlib.sha256(report.read_bytes()).hexdigest())
+                self.assertEqual((source["start_line"], source["end_line"]), (line, line))
+                self.assertLessEqual(len(hit["summary"]), 400)
+                self.assertNotIn("lines", hit)
+                self.assertNotIn("body", hit)
+                self.assertEqual(hit["recovery"]["limitations"], "Historical partial prose")
+                self.assertEqual(hit["recovery"]["ledger"]["start_line"], 2)
+        body = reference.search(data, "本文だけの日本語照合")[0]["summary"]
+        self.assertIn("本文だけの日本語照合", body)
+        self.assertTrue(body.startswith("前") and body.endswith("後"))
+        self.assertEqual(reference.search(data, "存在しない調査文"), [])
+        self.assertEqual(reference.search(data, "Historical partial prose"), [])
+        self.assertEqual(len(data["documents"]), 1)
+        for section in ("symbols", "fields", "relations", "mentions", "field_mentions"):
+            self.assertNotIn("TASK-PROSE-025", json.dumps(data[section], ensure_ascii=False))
+
+    def test_document_search_cap_order_first_match_and_filename_fallback(self):
+        report, _ = self.add_prose_report()
+        data = reference.load(self.root)
+        sample = data["documents"][0]
+        data["documents"] = [dict(sample, id=f"document:{i}") for i in range(25)]
+        self.assertEqual([row["id"] for row in reference.search(data, "目印")],
+                         [f"document:{i}" for i in range(20)])
+        hits = reference.search(data, "目印")
+        self.assertTrue(all(row["total_document_matches"] == 25 and row["document_matches_truncated"] for row in hits))
+        report.write_text("first plain line\nsecond needle\nthird needle\n", encoding="utf-8")
+        ledger = report.parent / "RECOVERY_LEDGER.tsv"
+        ledger.write_text("destination\tdestination_sha256\nresearch/recovered/" + report.name
+                          + "\t" + hashlib.sha256(report.read_bytes()).hexdigest() + "\n", encoding="utf-8")
+        data = reference.load(self.root)
+        self.assertEqual(reference.search(data, report.name)[0]["source"]["start_line"], 1)
+        self.assertEqual(reference.search(data, "needle")[0]["source"]["start_line"], 2)
+
+    def test_document_overview_and_fresh_cli_show_sources_without_full_body(self):
+        report, _ = self.add_prose_report()
+        data = reference.load(self.root)
+        pages = reference.render(self.root, data)
+        overview = pages["reference/DOCUMENTS.md"]
+        self.assertIn("夢世界の防御調査", overview)
+        self.assertIn(report.name + "?plain=1#L2-L2", overview)
+        self.assertIn("Historical partial prose", overview)
+        self.assertIn("partial", overview)
+        self.assertIn("RECOVERY_LEDGER.tsv?plain=1#L2-L2", overview)
+        self.assertIn("20", overview)
+        self.assertIn("400", overview)
+        self.assertIn("DOCUMENTS.md", pages["reference/README.md"])
+        self.assertEqual(pages, reference.render(self.root, reference.load(self.root)))
+        command = [sys.executable, "-B", str(Path(reference.__file__)), "--root", str(self.root),
+                   "search", "本文だけの日本語照合"]
+        for option in ([], ["--json"]):
+            result = subprocess.run(command + option, capture_output=True, text=True, encoding="utf-8")
+            self.assertEqual(result.returncode, 0, result.stderr)
+            self.assertIn("Historical partial prose", result.stdout)
+            self.assertIn(report.name, result.stdout)
+            self.assertNotIn("前" * 500, result.stdout)
+            if option:
+                self.assertEqual(json.loads(result.stdout), reference.search(data, "本文だけの日本語照合"))
+            else:
+                self.assertIn(":4-4", result.stdout)
+                self.assertIn(hashlib.sha256(report.read_bytes()).hexdigest(), result.stdout)
+                self.assertIn("RECOVERY_LEDGER.tsv", result.stdout)
+
+    def test_document_cli_reports_cap_and_preserves_critical_recovery_limits(self):
+        report, ledger = self.add_prose_report()
+        limits = "Historical partial prose " + "context " * 70 + "HOLD_FOR_ID_RECONCILIATION"
+        entries = []
+        for number in range(24, -1, -1):
+            path = report.with_name(f"reviewed-{number:02d}.md")
+            path.write_text(f"# Shared lookup {number}\nbody\n", encoding="utf-8")
+            entries.append(f"research/recovered/{path.name}\t{hashlib.sha256(path.read_bytes()).hexdigest()}\t{limits}\n")
+        ledger.write_text("destination\tdestination_sha256\tlimitations\n" + "".join(entries), encoding="utf-8")
+        unreviewed = report.with_name("unreviewed.md")
+        unreviewed.write_text("# Unreviewed secret wording\n", encoding="utf-8")
+        data = reference.load(self.root)
+        self.assertEqual(reference.search(data, "secret wording"), [])
+        self.assertEqual(reference.search(data, "Shared lookup")[0]["name"], "Shared lookup 24")
+        self.assertIn("HOLD_FOR_ID_RECONCILIATION", reference.render(self.root, data)["reference/DOCUMENTS.md"])
+        command = [sys.executable, "-B", str(Path(reference.__file__)), "--root", str(self.root),
+                   "search", "Shared lookup"]
+        result = subprocess.run(command, capture_output=True, text=True, encoding="utf-8")
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn("25", result.stdout)
+        self.assertIn("20", result.stdout)
+        self.assertIn("HOLD_FOR_ID_RECONCILIATION", result.stdout)
+        result = subprocess.run(command + ["--json"], capture_output=True, text=True, encoding="utf-8")
+        self.assertEqual(result.returncode, 0, result.stderr)
+        hits = json.loads(result.stdout)
+        self.assertEqual(len(hits), 20)
+        self.assertTrue(all(hit["total_document_matches"] == 25 and hit["document_matches_truncated"] for hit in hits))
+        self.assertTrue(all(hit["recovery"]["limitations"] == limits for hit in hits))
+
+    def test_document_search_optional_ledger_and_rejects_bad_alias_hash_and_escape(self):
+        self.assertEqual(reference.load(self.root).get("documents"), [])
+        report, ledger = self.add_prose_report()
+        original = ledger.read_text(encoding="utf-8")
+        ledger.write_text(original.splitlines()[0] + "\n", encoding="utf-8")
+        self.assertEqual(reference.load(self.root)["documents"], [])
+        digest = hashlib.sha256(report.read_bytes()).hexdigest()
+        ledger.write_text(original.replace("alias/report.md\tresearch/recovered/" + report.name + "\t" + digest,
+                                           "alias/report.md\tresearch/recovered/" + report.name + "\t" + "0" * 64), encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "Stale"):
+            reference.load(self.root)
+        ledger.write_text("destination\tdestination_sha256\n../escape.md\t00\n", encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "escapes"):
+            reference.load(self.root)
+
     def add_layout_alias(self, aliases):
         with (self.root / "symbols.tsv").open("a", encoding="utf-8") as stream:
             stream.write("0x8BCD48\tobject\tg_TempStatusWnd\t一時パネル\t静的確認\tF§95\n")
