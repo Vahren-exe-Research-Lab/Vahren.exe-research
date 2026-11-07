@@ -16,10 +16,22 @@
 - [research/recovered/b_batch4/data/B_T012_T013_COLLISION_ATTRMAP_ORDER_OFFLINE_20261022_2113.md 行 16](../../research/recovered/b_batch4/data/B_T012_T013_COLLISION_ATTRMAP_ORDER_OFFLINE_20261022_2113.md?plain=1#L16-L16) — `0x00599600` 擬似Cで大きなSkill候補レコードの `+0x134=0` を初期化し、`+0x130` には0x2Cバイト確保したtree head/sentinelを格納する。head+0/4/8を自分へ接続し `head+0x28/+0x29=1` とする。これは旧MSVC treeのhead初期化レ
   制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
 
+<a id="field-1ac"></a>
+## head + 0x1AC
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 913](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L913-L913) — [CONFIRMED-SAVED-NATIVE / INCREMENT] A所有`exe/T014_NORMAL_LOAD_PROBE.txt` 0x45F5B2..0x45F5D8で0x432010→0x471980→`EDI=0x87F458; call 0x43F240`。A所有`exe/T006_DIALOG_
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
 <a id="field-330"></a>
 ## head + 0x330
 
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 566](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L566-L566) — [REIMPLEMENT / VERIFY] load後のflag計算は上記前提で `nozone_record_value==1 ? 1 : (owner[+0x33C]==owner[+0x340] ? 1 : 0)`。第5tree(+0x32C head+0x330 count+0x334)と隣接+0x33C/+
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+<a id="field-1eec00"></a>
+## head + 0x1EEC00
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 929](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L929-L929) — [CONFIRMED-SAVED-NATIVE] A保存`exe/T014_NORMAL_LOAD_PROBE.txt` 0x45EC24..0x45EC66はECX=owner+0x32C→0x4ED240のnode erase・+0x330 head self-link・+0x334 count=0。A保存`exe
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

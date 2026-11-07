@@ -76,6 +76,9 @@
 <a id="field-30c"></a>
 ## engine + 0x30C
 
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 117](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L117-L117) — 保存層との接続: `0x4637A0`は engine+0x30C/+0x310 numeric RB-treeへ書き、通常save group1は同じ+0x310を走査する。従って上記の予約変数群は通常save対象と同じnumeric state上にある。実際の再読込後最終値・mode旧値の消去はVERIFY。
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
 - [research/recovered/rea_batch13/reports/FINDINGS_20261010.md 行 9](../../research/recovered/rea_batch13/reports/FINDINGS_20261010.md?plain=1#L9-L9) — - `0x4637A0` はparam3で分岐し、`engine+0x30C` 側のマップを変更する呼出経路を持つ。既存A/T014/T006の数値変数mapの見解と整合。
   制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
 
@@ -106,6 +109,9 @@
 <a id="field-32c"></a>
 ## engine + 0x32C
 
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 160](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L160-L160) — [CONFIRMED-TARGET/static] 同梱EXEの保存済み `exe/T014_NORMAL_LOAD_PROBE.txt` 0x45EC13..0x45EC66を再確認。通常savロードのnumeric、Unit、Spot、Power各map clearの後、engine+0x32C/+0x330/+0
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
 - [research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md 行 192](../../research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md?plain=1#L192-L192) — \| T014 A16〜A85 \| engine+0x32C「第5コンテナ」の用途は不明 \| 放浪中の Unit の集合（F§26）。保存されずロード後に作り直す \| T014 冒頭と各節に注記 \|
   制約・訂正　Existing full body linked; catalog revision differs
 
@@ -127,6 +133,12 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 124](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L124-L124) — - ~~`wait()` が判定するUIオブジェクトの意味~~ → **解決**: 引数なしの wait は、次のものが終わるまで待つ。(a) 0x520280: メイン画面（engine+0x1E8630）でスクロールや移動の要求が残っている（+0x438 ≠ 0x80000008、または +0x468 ≠ +0x4
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 1273](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L1273-L1273) — [CONFIRMED SAVED ASM] owner exe/T010_BATTLE_FRAME_ORDER.md末尾新節。A保存 exe/T031_RESEED_CALL_XREFS.txt TARGET 005001B0 / CALL 0049B191: 0x49B18B lea EDI,[EBP+0x14]→0
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 1318](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L1318-L1318) — [ROOT/DELTA] `exe/T010_BATTLE_FRAME_ORDER.md`同ID節に保存/読戻し。従来A75で未収録のglobal ScriptBattle RTTI branch `exe/T010_FRAME_HELPER_PROBE.txt` 0x433E4A..433E6Fを回収。engine+
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
 - [research/recovered/rea_batch2/reports/REA_20261103_08H_P0_TRIPLE_PLAYER_ALLOC_NULL_SIGNAL_GATES_STATIC.md 行 11](../../research/recovered/rea_batch2/reports/REA_20261103_08H_P0_TRIPLE_PLAYER_ALLOC_NULL_SIGNAL_GATES_STATIC.md?plain=1#L11-L11) — - Allocation 1: `0x48A934 cmp eax,ebx; 0x48A936 je 0x48A944` skips `0x48A93D -> 0x51E100` and sets EAX=0 at `0x48A944`; `0x48A952` stores result/NULL into `[eng
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
 
@@ -144,6 +156,9 @@
 
 <a id="field-1e8634"></a>
 ## engine + 0x1E8634
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 1273](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L1273-L1273) — [CONFIRMED SAVED ASM] owner exe/T010_BATTLE_FRAME_ORDER.md末尾新節。A保存 exe/T031_RESEED_CALL_XREFS.txt TARGET 005001B0 / CALL 0049B191: 0x49B18B lea EDI,[EBP+0x14]→0
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
 - [research/recovered/rea_batch2/reports/REA_20261103_08H_P0_TRIPLE_PLAYER_ALLOC_NULL_SIGNAL_GATES_STATIC.md 行 12](../../research/recovered/rea_batch2/reports/REA_20261103_08H_P0_TRIPLE_PLAYER_ALLOC_NULL_SIGNAL_GATES_STATIC.md?plain=1#L12-L12) — - Allocation 2: `0x48A96C cmp eax,ebx; 0x48A96E je 0x48A97E` skips `0x48A977 -> 0x447280` and zeroes EAX at `0x48A97E`; `0x48A989` stores result/NULL into `[eng
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
@@ -166,6 +181,12 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 220](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L220-L220) — - **文字列の解決（0x49C450）**: `@名前` は文字列リスト変数（engine+0x1E863C）の先頭要素。存在しない、または空なら `""` で、変数は作られない。`@`で始まらない名前はその文字列自体。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+<a id="field-1e8640"></a>
+## engine + 0x1E8640
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 427](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L427-L427) — [CONFIRMED-SAVED-NATIVE] variable/list opcode40 shuffle の handler は `exe/T031_STRINGOP_HANDLERS.txt` 0x4B044F..0x4B04BD。0x4B0492 でlookup結果を engine+0x1E8640 のsen
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
 <a id="field-1eebcc"></a>
 ## engine + 0x1EEBCC
 
@@ -183,6 +204,9 @@
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3543](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3543-L3543) — \| **E = engine = G+0x504** \| VA 0x8BE7F4 \| 戦闘・戦略の資料にある「GM / engine + 0x1EEC3C、+0x1EEC44、+0x1E8630 …」の全部 \| 静的初期化 `0x553F60(&0x8BE7F4)`。Unit 初期化で `Unit+0x1E0 = G+
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 1314](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L1314-L1314) — [ROOT/DELTA] `exe/T006_TARGET_DISPATCH.md`同ID節に保存/読戻し。新たにA既存 `exe/T010_FRAME_HELPER_PROBE.txt` 0x433C3C/433C4Cからglobal ScriptIF frame+0x1EED98（[engine+0x1EEC3C]
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
 - [research/recovered/rea_batch2/reports/REA_20261103_06H_P0_PLAYER194_ENGINE_ALIAS_CHAIN_STATIC.md 行 12](../../research/recovered/rea_batch2/reports/REA_20261103_06H_P0_PLAYER194_ENGINE_ALIAS_CHAIN_STATIC.md?plain=1#L12-L12) — - Separate loop entry `0x555E35 mov ecx,0x8BE2F0; 0x555E3D call 0x4B9930`; in its case-1 path `0x4B99B9 lea eax,[esi+0x504]` passes that same `0x8BE7F4` to `0x4
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
@@ -238,17 +262,44 @@
 <a id="field-1eed18"></a>
 ## engine + 0x1EED18
 
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 1273](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L1273-L1273) — [CONFIRMED SAVED ASM] owner exe/T010_BATTLE_FRAME_ORDER.md末尾新節。A保存 exe/T031_RESEED_CALL_XREFS.txt TARGET 005001B0 / CALL 0049B191: 0x49B18B lea EDI,[EBP+0x14]→0
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
 - [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1134_T014_NEWMODEL_ENGINE_BACKREF_AUDIT.md 行 63](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1134_T014_NEWMODEL_ENGINE_BACKREF_AUDIT.md?plain=1#L63-L63) — `engine+0x1EED18`と以前解明したGameManagerの`+0x1EF144`は**異なる基点・異なるフィールド**である。混同しない。
   制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
 
 - [research/recovered/script_topics/T010_EVENT_SCHEDULER.md 行 384](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L384-L384) — [CONFIRMED-SAVED-NATIVE / A69 INCREMENT] A所有 exe/T006_FLOW_CONTROL_PROBE.txt 0x4335FA..0x433607 はmode2 battle-active時に push 0→EAX=engine→call 0x492D80。保存callee
   制約・訂正　Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
 
+<a id="field-1eed34"></a>
+## engine + 0x1EED34
+
+- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 440](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L440-L440) — [IMPACT / VERIFY] 再実装の isAllDead は名前に基づく単純「全所属チーム死亡」へ勝手に拡張せず、target引数/空collection/生存状態/所属チーム解決の4軸を独立にトレースする。A/T006/T010/T031担当には、既存保存証拠から0x45096A..0x450B67の合法な完
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
 <a id="field-1eed40"></a>
 ## engine + 0x1EED40
 
 - [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1134_T014_NEWMODEL_ENGINE_BACKREF_AUDIT.md 行 57](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1134_T014_NEWMODEL_ENGINE_BACKREF_AUDIT.md?plain=1#L57-L57) — `0x00492A35`で`engine+0x1EED40`を判定し、非ゼロの場合のみ`0x00492A3E`から`0x0049D6A0`を呼ぶ。静的疑似C上は単位群の座標`>>5`やマップ領域を巡回・登録する処理であり、3つの仮想CALL直前の準備処理として位置付く。ただし全副作用やvptr不変性は未確定。
   制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+<a id="field-1eed44"></a>
+## engine + 0x1EED44
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 1273](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L1273-L1273) — [CONFIRMED SAVED ASM] owner exe/T010_BATTLE_FRAME_ORDER.md末尾新節。A保存 exe/T031_RESEED_CALL_XREFS.txt TARGET 005001B0 / CALL 0049B191: 0x49B18B lea EDI,[EBP+0x14]→0
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 462](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L462-L462) — [CONFIRMED-LOCAL BRANCH] opcode0x267の0x451CBFではEAX=[engine+0x1EED48]、0x268の0x451CF9ではEAX=[engine+0x1EED44]を読み、共に0x451CC5 call 0x514C80へ進む。AL=0なら0x451CCC je 0x44
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+<a id="field-1eed48"></a>
+## engine + 0x1EED48
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 1273](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L1273-L1273) — [CONFIRMED SAVED ASM] owner exe/T010_BATTLE_FRAME_ORDER.md末尾新節。A保存 exe/T031_RESEED_CALL_XREFS.txt TARGET 005001B0 / CALL 0049B191: 0x49B18B lea EDI,[EBP+0x14]→0
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 462](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L462-L462) — [CONFIRMED-LOCAL BRANCH] opcode0x267の0x451CBFではEAX=[engine+0x1EED48]、0x268の0x451CF9ではEAX=[engine+0x1EED44]を読み、共に0x451CC5 call 0x514C80へ進む。AL=0なら0x451CCC je 0x44
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 
 <a id="field-1eed4c"></a>
 ## engine + 0x1EED4C
@@ -267,6 +318,9 @@
 
 <a id="field-1eed60"></a>
 ## engine + 0x1EED60
+
+- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 77](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L77-L77) — [CONFIRMED-TARGET-STATIC＋SCRIPT] A所有 `data/T010_EVENT_SCHEDULER.md`「battle clock native semantics」「resettable time vs absolute interval clock」をread-only照合。`getT
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 
 - [research/recovered/script_topics/T010_EVENT_SCHEDULER.md 行 108](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L108-L108) — - getTime(opcode 0x25A) handler VA 0x4518FA は engine +0x1EED60 のint32をそのまま返す。
   制約・訂正　Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
@@ -334,6 +388,12 @@
 - [research/recovered/DEVLAB_MINIMAP_NATIVE_CONTRACT_20261011.md 行 60](../../research/recovered/DEVLAB_MINIMAP_NATIVE_CONTRACT_20261011.md?plain=1#L60-L60) — - `0x4DD8C0` 内の追加条件は `*(engine+0x1EEEE0) != 0`。偽の場合は**この関数のメッシュ新規生成分岐をskip**。既存の別オーナーにあるoverlayを削除/消去したとまで断定しない。
   制約・訂正　Historical author claims preserved; source hash verified; no new native or runtime validation; referenced local evidence not included
 
+<a id="field-1eef60"></a>
+## engine + 0x1EEF60
+
+- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 557](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L557-L557) — [CONFIRMED-SAVED-C DISPATCH] engine+0x1EEF60 dispatcher内 case (int *)0x23 に op35:addSkill/addSkill2 の保存C注記。第一引数から対象候補列を0x49C950で構築。各候補は実行context==2なら0x49E6B0→未解
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
 <a id="field-1eef80"></a>
 ## engine + 0x1EEF80
 
@@ -373,52 +433,13 @@
 <a id="field-1ef4be"></a>
 ## engine + 0x1EF4BE
 
+- [research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md 行 1344](../../research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md?plain=1#L1344-L1344) — - [VERIFY/NOT OBSERVED] Yield後の同World frame継続/scene終了、後続画像・dialog・setupキュー・Done、engine+0x1EF4BE flag writer、合法turn1勝利の成立と旧EXE実効果は未確認。原作BUG認定0、旧原作Gameplay Golden
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
 - [research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md 行 164](../../research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md?plain=1#L164-L164) — - `isGameClear` はcondition opcode 0で、evaluator case0 VA 0x44F530は `engine+0x1EF4BE` byteをboolとして返す。flag writer/transition timingはVERIFY継続。
   制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
 
 - [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 238](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L238-L238) — - condition registryでは `isGameClear` = condition opcode 0。evaluator VA 0x44F470 のcase0 VA 0x44F530は `engine+0x1EF4BE` のbyteをそのままbool結果として返す。flagのexact writer/tr
   制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
-
-- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 255](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L255-L255) — - 従って `setGameClear()` のshort helper直後に `engine+0x1EF4BE=1` を単純storeする実装はnative証拠が無い。writerはalias/helper/scene transition/serialized state更新のいずれかで、exact 0→1 tim
-  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
-
-<a id="field-1ef4c1"></a>
-## engine + 0x1EF4C1
-
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 445](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L445-L445) — - 同じ switch で、id 7 isNewTurn は engine+0x1EF4C1 のバイト、id 8 isWorldMusicStop は (engine+0x1EF175 == 0) を返す。どちらもエンジンの状態なので未実装。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
-
-- [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 139](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L139-L139) — - `isNewTurn` opcode7 -> VA 0x44F63C: byte `engine+0x1EF4C1`
-  制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
-
-<a id="field-1ef4c2"></a>
-## engine + 0x1EF4C2
-
-- [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 140](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L140-L140) — - `isPlayerTurn` opcode9 -> VA 0x44F658: byte `engine+0x1EF4C2`
-  制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
-
-<a id="field-1ef4c3"></a>
-## engine + 0x1EF4C3
-
-- [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 141](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L141-L141) — - `isPlayerEnd` opcode10 -> VA 0x44F664: byte `engine+0x1EF4C3`
-  制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
-
-<a id="field-1ef4c4"></a>
-## engine + 0x1EF4C4
-
-- [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 142](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L142-L142) — - `isComTurn` opcode12 -> VA 0x44F6A8: byte `engine+0x1EF4C4` を入口gateとして追加power条件を評価
-  制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
-
-<a id="field-1ef6b4"></a>
-## engine + 0x1EF6B4
-
-- [research/recovered/DEVLAB_MINIMAP_NATIVE_CONTRACT_20261011.md 行 17](../../research/recovered/DEVLAB_MINIMAP_NATIVE_CONTRACT_20261011.md?plain=1#L17-L17) — - `engine = *(DAT_0087F798+4)` 候補の `engine+0x1EF6B4` からvector-of-vector様のDWORD値グリッドを取り出し、外側が行、内側が列として周回。`pCVar6` を `SetDCBrushColor` に渡し、`FillRect` でセル色矩形を塗る。
-  制約・訂正　Historical author claims preserved; source hash verified; no new native or runtime validation; referenced local evidence not included
-
-- [research/recovered/DEVLAB_MINIMAP_NATIVE_CONTRACT_20261011.md 行 36](../../research/recovered/DEVLAB_MINIMAP_NATIVE_CONTRACT_20261011.md?plain=1#L36-L36) — 1. **色グリッドproducer**：map初期化 0x4F0BE0 側の engine+0x1EF6B4 所有者、spot/field/raw paletteとの接続をnative writer+calleeの局所証拠から確認。これはD/T015へリンクする依頼候補であり他レーン資料は編集不可。
-  制約・訂正　Historical author claims preserved; source hash verified; no new native or runtime validation; referenced local evidence not included
-
-- [research/recovered/DEVLAB_MINIMAP_NATIVE_CONTRACT_20261011.md 行 70](../../research/recovered/DEVLAB_MINIMAP_NATIVE_CONTRACT_20261011.md?plain=1#L70-L70) — - **NEXT**：①`0x4F0BE0` caller/calleeのpointer aliasを保存済み逆コンパイルで辿り、`engine+0x1EF6B4` producerを探す ②flag`+0x1EEEE0` writer/初期状態を別保存命令で調査 ③`engine+0x1EEE4C` subobjec
-  制約・訂正　Historical author claims preserved; source hash verified; no new native or runtime validation; referenced local evidence not included
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

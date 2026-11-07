@@ -1,0 +1,18 @@
+{
+  "base_commit": "fed0edb892178834a2d777fe99fdfd3765257ce1",
+  "baseline_ledger_rows": 1601,
+  "selected": 7,
+  "selected_current_bytes": 5635024,
+  "complete_reviews": 3,
+  "partial_noncontiguous_reviews": 4,
+  "accepted": 3,
+  "deferred_whole_composites": 4,
+  "exact_accepted": 2,
+  "privacy_derivatives": 1,
+  "privacy_edits": 3,
+  "unchanged_gaps": 4,
+  "aliases": 0,
+  "catalog_sha_matches": 3,
+  "catalog_current_sha_changes": 2,
+  "catalog_absent": 2
+}

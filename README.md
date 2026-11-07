@@ -87,3 +87,5 @@ python -B tools/reference.py callees 0x0055BC60 --json
 Ghidra・x32dbgへのラベル反映、元SQLiteを使う全文索引の再生成などは、原作と専用データがある研究PC向けです。[従来のPC専用手順と作業履歴](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/b070349917d2692c6a4e6498dc62e9aa3e5097ae/README.md)を固定版として残しています。そこにある旧件数・過去の完了記録・旧更新ルールは当時の情報です。現在の事典の利用・更新には上の入口と現行手順を使ってください。
 
 拡張製品コードは関連する非公開 `HakushinExtensions`、研究知識とその根拠はこのリポジトリで管理します。
+
+今回固定保存したT011・T030から既存の関数・メモリ6項目へ進む[根拠案内](research/recovered/intake_large_models_20261105/FUNCTION_MEMORY_SOURCE_BRIDGE.md)と[機械可読の対応表](research/recovered/intake_large_models_20261105/FUNCTION_MEMORY_SOURCE_BRIDGE.tsv)があります。旧説明の留保・後日訂正も併記しています。

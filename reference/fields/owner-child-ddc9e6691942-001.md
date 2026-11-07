@@ -25,6 +25,12 @@
 - [research/recovered/b_batch7/data/T012_HEAL_CHILD_POOL_41E1D0_CONTRACT_20261013.md 行 6](../../research/recovered/b_batch7/data/T012_HEAL_CHILD_POOL_41E1D0_CONTRACT_20261013.md?plain=1#L6-L6) — [REUSE RETURN] 0x41E276 sourceDest [ESP+0x14]→ECX、record EAX(既存child)を保持し、0x41E27B [child+0x8]=X（EBP）、0x41E27F [child+0xC]=Y（EBX）、0x41E282 [child+0x4]=sourceDes
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 766](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L766-L766) — [NEW] 0x54ED51 EAX=S、0x54ED70 ECX=[S+0xC]→0x54ED89 PUSH H→0x54ED8A CALL0x550580(SummonFlash factory)。新規vtable=0x63A65C、slot+0x18=0x455FA0→0x455FABがSummonFlash+0
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 767](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L767-L767) — [CORRECTION] 13Hの未解明EBXは召喚親Unit直接ではなくSummonFlash効果文脈。参照の伝播は S+0xC→SummonFlash+0xC→child+0xC。これは召喚親の一意識別情報を証明しない。元PE E8 site3/3一致、RTTI/静的vtable照合。詳細 data/T011_SU
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
 <a id="field-14"></a>
 ## child + 0x14
 
@@ -93,5 +99,8 @@
 
 - [research/recovered/b_batch3/T011_SUMMON_CALLER_GROUP_PROVENANCE_NATIVE_20261027_15H.md 行 13](../../research/recovered/b_batch3/T011_SUMMON_CALLER_GROUP_PROVENANCE_NATIVE_20261027_15H.md?plain=1#L13-L13) — [GOLDEN] 無改変ver0.67 EXE・KARATE_X20改変前DAT・同一SAVE/MAP/input/RNGを固定。4 caller系の召喚条件別にS/H/effect+0x7C、child+0xC、selector、group EDI、child+0x1D0、group list、可視出現・EXP帰属を
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 772](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L772-L772) — [NEW] child構築後、selector==1なら0x54F02F S+0x1D0、>=2なら0x567EE0 group新規またはS管理list末尾groupで候補EDI選択。EDI非NULLで0x54F093/0x54F096→0x568710にchild/Groupを渡し、group+0x1D==0側0x5
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

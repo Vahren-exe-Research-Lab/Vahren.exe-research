@@ -10,11 +10,26 @@
 - [research/recovered/b_batch10/data/T024_MODE_PARAM_FILTER_TWO_CALLERS_NATIVE_20261026_03H.md 行 10](../../research/recovered/b_batch10/data/T024_MODE_PARAM_FILTER_TWO_CALLERS_NATIVE_20261026_03H.md?plain=1#L10-L10) — 通過後は0x41F043 [ECX+ESI*4] → 0x41F046/49 inner+0xC/+0x10 vector、空なら0x41F04E XOR EAX,EAX / 0x41F050 JMP 0x41F054。
   制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
+<a id="field-4c"></a>
+## inner + 0x4C
+
+- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 569](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L569-L569) — [NATIVE WRITER ORDER] 上のsubject gate通過後、0x4B5B6E..0x4B5B84でinner+0x48=0、inner+0x4C/0x50=0x80000008を設定し、0x5686A0(0)へcallする。その後0x565780/0x5158E0等後処理を行い、次候補へ。個別分岐c
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
 <a id="field-68"></a>
 ## inner + 0x68
 
 - [research/recovered/rea_batch3/reports/REA_20261031_16H_P0_VORBIS_POSTINIT_CALLERS_STATIC.md 行 19](../../research/recovered/rea_batch3/reports/REA_20261031_16H_P0_VORBIS_POSTINIT_CALLERS_STATIC.md?plain=1#L19-L19) — - 非NULL入力側は `0x5D492B -> 0x5D1C71 calloc(1,0x48)`、`0x5D4938`で戻り値を `inner+0x68` に格納し、`0x5D493B fstp [edi+4]` で書込。**この局所区間に確保結果のNULL検査は確認できない**。後続 `0x5D4952 callo
   制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+<a id="field-70"></a>
+## inner + 0x70
+
+- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 532](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L532-L532) — [MEMBER WRITER] 同保存native 0x4B5D94..0x4B5E6Eの候補resolver・型一致後にinner+0x0C..0x10を走査し、member pointerごとに0x4B5E62..65でそのALを[member+0x1FA]へ格納する。通常のunctrlTroop literal一
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 707](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L707-L707) — [CALLEEの限定片 / CONFIRMED] 既保存exe/T010_RUNTIME_PROBE.txt VA0x565780..0x56579Bで0x565783 push0x14→0x565785 call0x5B6C2B、戻値非NULL枝では[esi+4]由来DWORDを[EAX]および[EAX+4]へ書く。
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 
 <a id="field-720"></a>
 ## inner + 0x720

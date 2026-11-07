@@ -1,0 +1,20 @@
+# B-20261013-0718-02 | native post-action candidate Skill list filter 0x579BA0
+Owner B/T013 and T012 | 2026-10-13 JST | STATIC BOUNDED, gameplay VERIFY
+Input isolated read-only copy rea_lab/targets/hakushin067_Vahren.exe
+Source SHA256 e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187
+Bound VA 0x579BA0..0x579EA6 inclusive, 775 bytes (0x307), file offset 0x178FA0.
+Slice SHA256 1d1ad78636d9b35cb2d6fa6082e02268a09fd87c06069ae26bb93fb06159c267; Capstone x86 32-bit instructions 216.
+Normal exit 0x579E7A ret 0xC. Allocation failure branch 0x579E7D..0x579EA6 ends 0x5B864E/int3, no normal return confirmed there.
+[ENTRY] 0x579BC7 first stack arg=list, 0x579BCE..0x579BE3 list sentinel/start and Skill*=[node+8]. 0x579D3F second arg=mode; 0x579D58/0x579E09 third arg=submode.
+[LAZY] 0x579BE6..0x579C54 uses B052E4 guard, B040C0/C4 and B040BC global tree/map, init on first use; not guaranteed scope/reset.
+[RAW STATUS] 0x6262E4 poi; 0x6262E8 para; 0x6262F0 ill; 0x6262F4 conf; 0x6262FC sil; 0x626300 stone; 0x626308 fear; 0x626310 all; 0x626314 and 0x626318 hp.
+[TYPE-MATCH] 0x579E30..0x579E38 mode other than 2/3 compares [Skill+40] with mode and sets AL via setne; AL nonzero selects delete.
+[MODE2] 0x579E04..0x579E2E: submode1 requires Skill+278!=0; submode0 requires ==0; other submode does not apply cost partition; then requires Skill+40==2.
+[MODE3] 0x579D3F..0x579E04 requires Skill+40==3, uses Skill+120, Skill+110 attr, 0x402C40 comparison with literal hp, map/tree helper 0x415460, submode0/1/other distinct predicates. Meaning of 0x415460 membership is conditional on helper semantics.
+[MODE3/SUB0] 0x579D63..0x579DBD chooses attribute hp comparison and Skill+120 <2 vs >=2; 0x579E33 uses compare result to decide whether to remove. Effective hp+field120>=2 requires comparator returns 0 for equal.
+[MODE3/SUB1] 0x579DBF..0x579DE3 compares helper result [eax] with map sentinel B040C0; non-match AL selects delete.
+[MODE3/SUBOTHER] 0x579DE5..0x579E02 uses same map sentinel, then hp compare; excludes map-match and hp-match nodes in observed branches.
+[DELETE] 0x579E3A..0x579E55: unlink node using next/prev pointers, 0x5B6BBB free node, dec [list+4] (note stack includes temporarily pushed node); 0x579E5A preserves node and advances.
+[ITERATE] 0x579E5D..0x579E61 continues to saved list sentinel until 0x579E67 epilogue; order of surviving linked nodes not explicitly reversed.
+[CALLER TABLE] B-20261013-0718-01 VA0x577843..0x5779AC: sword->(1,0); bow->(2,0); magic->(2,1); heal->(3,0); care->(3,1); powerup->(3,2); summon->(4,0); default (8,0). These are global pair values supplied to 579BA0.
+[UNKNOWN] actual raw Skill constructor/owner, runtime valid map entries, external helper side effects, allocation/exception flow, exact gameplay reachable skill list and final target.

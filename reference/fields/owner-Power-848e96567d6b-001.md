@@ -25,6 +25,9 @@
 <a id="field-1d"></a>
 ## Power + 0x1D
 
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 1398](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L1398-L1398) — [IMPACT/VERIFY] Argumented isComTurn(power) must not be treated as zero-arg current selection predicate; arg0 evaluation independent, downstream callee/ABI/comp
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 583](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L583-L583) — [VERIFY / REIMPLEMENT] Power+0x1D/Unit+0x74の意味、二つのowner pointerがUI上で何を選択するか、tree走査順とユーザーの直前選択状態の関係、空集合時の表示、0x432010/0x471980等後続の作用は未確定。「player faction」「active h
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
 
@@ -96,6 +99,15 @@
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1343](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1343-L1343) — \| 仕様確定・未実装 \| Power+0xDC、戦闘終了LvUp・Unit生成と HP 初期化の規則（§36/§43）、雇用系生成入口（obj 型以外） \|
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 1176](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L1176-L1176) — [CONFIRMED-SAVED-NATIVE / DERIVED-CONDITIONAL] A所有 `data/T014_GLOBAL_SAVE.md` A76節。`exe/T014_NORMAL_LOAD_PROBE.txt` Power fallback 0x45F6AF..0x45F6EE（Power+0xDC
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md 行 1360](../../research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md?plain=1#L1360-L1360) — - [CONFIRMED-SAVED-NATIVE / NEW INCREMENT] A保存generic accessor0x4647D0の未登録structure名経路は0x4649C6..0x464A24で通常empty/default field resultを構築する局所fallback、ここで直接hard-
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md 行 1369](../../research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md?plain=1#L1369-L1369) — - [CONFIRMED-SAVED-NATIVE CROSSWALK / NEW C DELTA] Powerレコード群では0x45EF03→0x45F66E復元、Power+0xDC sentinel時0x45F6BBの`@scenario` numeric getter→0x4647D0 `scenario/ba
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
 - [research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md 行 473](../../research/recovered/outside_reports1/reports/wiki/T019_CONTRADICTIONS.md?plain=1#L473-L473) — [OPEN CONTRADICTION / DO NOT INFER] 宣言なしrsc2..rsc5、旧SAVEのscenario文字列復元可能性、generic lookupの欠落許容はそれぞれ別契約。後続のfield+0x20値、Power+0xDC、他のvalidation、World/Spot/Unit復帰、選
   制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain

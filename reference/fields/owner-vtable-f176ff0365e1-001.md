@@ -142,6 +142,9 @@
 - [research/recovered/b_batch7/data/T012_HEAL_EFFECT_RECORD_4DFBB0_CONTRACT_20261013.md 行 3](../../research/recovered/b_batch7/data/T012_HEAL_EFFECT_RECORD_4DFBB0_CONTRACT_20261013.md?plain=1#L3-L3) — [SOURCE/PROOF] B exe/T012_HEAL_EFFECT_RECORD_4DFBB0_NATIVE_20261013.txtをLocal readback。isolate read-only target SHA256=e8dac301050c8e630d7e0ce93aeefd95e641207d9
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 244](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L244-L244) — [CONFIRMED-SAVED-NATIVE] 通常sav writerの0x4605EAでstatus/mode byteのbit0x6をtestし、zeroならstream-like object vtable+0x28(0x46060A)をcallして2出力を取得、nonzeroならglobal 0x6098B
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
 - [research/recovered/remaining_md1/reports/dev_lab/docs/DAT_GENERIC_UI_SPIKE_PLAN_20261026.md 行 133](../../research/recovered/remaining_md1/reports/dev_lab/docs/DAT_GENERIC_UI_SPIKE_PLAN_20261026.md?plain=1#L133-L133) — - Saved exe/T015_INPUT_POLL_DISASM.txt: mouse call 0x4BCFBB and keyboard call 0x4BD0D5 use vtable+0x28 (GetDeviceData), cbObjectData=0x14, flags=0, maximum255/6
   制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
 
@@ -225,6 +228,9 @@
 
 <a id="field-54"></a>
 ## vtable + 0x54
+
+- [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 723](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L723-L723) — [CONFIRMED-SAVED-NATIVE] A所有`exe/T006_CHOICE_VMETHODS.txt` VA0x41EC1F pending+0x168=sentinel→0x41EC29 [0x609264]→0x41EC39 0x453C20→0x41EC59 [0x609268]再hit。EAX=0
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
 - [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 804](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L804-L804) — [CONFIRMED-SAVED-NATIVE / CHOICE] `exe/T006_CHOICE_VMETHODS.txt` 0x41EBED..0x41ECB7。pending+0x168がsentinel以外なら旧indexから候補pointerを作り、0x41EC1Fで+0x168をsentinelへ戻し、0
   制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read

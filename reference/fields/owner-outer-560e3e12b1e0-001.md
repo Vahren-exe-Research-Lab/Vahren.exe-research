@@ -244,6 +244,21 @@
 - [research/recovered/rea_batch2/reports/REA_20261104_01H_P0_STREAMBUF_POSTCALL_SAME_RECEIVER_STATIC.md 行 24](../../research/recovered/rea_batch2/reports/REA_20261104_01H_P0_STREAMBUF_POSTCALL_SAME_RECEIVER_STATIC.md?plain=1#L24-L24) — - Native .rdata at `0x6384E4` contains little-endian **0x50**, the adjustment read from `[outer vptr+4]` after `0x42A2DD mov [outer],0x6384E0`. Thus `0x42A4C0`
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
 
+<a id="field-1d0"></a>
+## outer + 0x1D0
+
+- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 515](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L515-L515) — [WRITER CROSSWALK] A保存exe/T006_BATTLE_STATE_PROBE.txt VA0x4B5C70..0x4B5CBAでは対象vector中の外側ptrを取得→[outer+0x1D0]をesiに取込→非nullかつ0x44D070照合一致時のみ[esi+0x70]へactiveTroop
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 516](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L516-L516) — [READER EXACT] isActive caseは文字列→0x49C450→0x49E780でouter対象を解決し、outer非nullなら [outer+0x1D0] をeaxへ取り、そのinner+0x70を比較（0x451BC7..0x451BD5）。innerが非nullでbyte+0x70==0なら
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 542](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L542-L542) — [WRITER AND LIMIT] 0x4B5D94→0x49C450/0x49E8B0で対象候補vectorを解決し、outer+0x1D0・型gateを経たinner Unit member[+0x0C..+0x10]を走査し、0x4B5E62..65で[Unit+0x1FA]=unctrl1/ctrl0。前段0
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 654](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L654-L654) — [CONFIRMED-SAVED-X86 / NEW CROSS-HANDLER] A保管のread-only exe/T006_BATTLE_STATE_PROBE.txt VA0x4B5C70..0x4B5CDEを再読。activeTroop/sleepTroopは対象vector/outer+0x1D0/0x44
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
 <a id="field-1e0"></a>
 ## outer + 0x1E0
 

@@ -10,4 +10,10 @@
 - [research/recovered/exp/EXP_SIMPLEBATTLE_LIFECYCLE_20261022.md 行 15](../../research/recovered/exp/EXP_SIMPLEBATTLE_LIFECYCLE_20261022.md?plain=1#L15-L15) — 6. 0x545CC0はSkill kind3の枝で0x551490を呼び、既知の共通EXP helper 0x551E50につながる。SimpleUnit+0x8C=1なら同helper内で条件付き即時Lv判定を行う。全攻撃種別の接続は追加確認中。
   制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md
 
+<a id="field-1c8"></a>
+## SimpleUnit + 0x1C8
+
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 287](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L287-L287) — [GOLDEN-VERIFY] 1戦目士気buff/debuff付与後に通常終了→同じcampaign unitで再戦→reload、`SimpleUnit+0x1C8`参照先pointer、参照先`+0x1B0/1B1/1B4`、battle instance`+0x90..+0xAC`、helper呼出順を別々にト
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

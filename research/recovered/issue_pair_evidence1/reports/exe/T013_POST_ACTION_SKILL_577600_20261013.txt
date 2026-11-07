@@ -1,0 +1,22 @@
+# B-20261013-0718-01 | bounded post-action skill selector 0x577600
+Owner B / T013+T012 / 2026-10-13 JST / STATIC ONLY
+Read-only source: rea_lab/targets/hakushin067_Vahren.exe (isolated copy).
+Source SHA256: e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187
+Bounded executable code: VA 0x577600..0x577A12 inclusive (0x413=1043 bytes); final ret8 starts at 0x577A10; file offset 0x176A00.
+Slice SHA256: ce32076d927618972832b76fcac923e0c451c3f12b7b69c6a69531cee15fce44
+Method: Capstone x86 32-bit fixed-byte disassembly, no Ghidra/REA run, no original EXE execution.
+[VA 577600..577623] Unit=[esp+10] before push esi/edi; +8C zero and +1F8 nonzero required.
+[VA 577627..577683] Skill+40==8, attr string at Skill+110, literal special@63AD28, Unit+139 gate.
+[VA 577661] 576450 call, then Unit+1863C=0xAAFBB8, Unit+18638=Skill, AL=1 ret8 @577683.
+[VA 577686..577706] type7/8 split; other kinds 44D070 -> Unit+18660 comparison, +4C/5799D0 and type4 availability gate. AL0 ret8 @57770D.
+[VA 577719..5777CE] type8 & Skill+120!=0 checks attr sword/bow/magic/heal/care/powerup/summon and Unit+134/135/136/137/138.
+[VA 5777F6..5777FD] separate type8 gate AL0 ret8.
+[VA 577800..57781D] normal continuation calls 576450 with Unit+18650 and 3 pushed values.
+[VA 577822..5779AC] type8 Skill+120!=0: globals B052FC/B05300 default (8,0); attr+Unit flag select one of (1,0)/(2,0)/(2,1)/(3,0)/(3,1)/(3,2)/(4,0); call 579BA0.
+[VA 5779B1..5779D9] Unit+18654==0 calls 576450 again, AL0 ret8 @5779D9.
+[VA 5779DC..5779ED] Skill+4C positive -> Unit+1E530=global[65BC5C].
+[VA 5779ED..577A10] old Unit+18638 Skill+4C positive -> +1863C=0xAAFBB8 else +1863C=old Unit+18638. Both set +18638=arg Skill, AL1 ret8 @577A10.
+[RAW STRING VA] 63AD28=special; 627D1C=sword; 627D24=bow; 627D28=magic; 627D30=heal; 627D38=care; 627D40=powerup; 627D48=summon.
+[RAW STRING VA ALT] 627D50=sword, 627D58=bow, 627D5C=magic, 627D64=heal, 627D6C=care, 627D74=powerup, 627D7C=summon.
+[CALLER CROSSREF] B-owned exe/T013_SEARCH_CORE.txt VA57E610..57E635: pushes [Unit+1863C], Unit; CALL577600; then CALL571A40. Caller does not test 577600's AL and returns AL1 after conditional 56BA80.
+[PRIOR NON-DUPLICATE] B-20261012-2356-01/02 cover 5799D0/576450 bodies, not this selector. 579BA0, 44D070 and final gameplay effects remain VERIFY.

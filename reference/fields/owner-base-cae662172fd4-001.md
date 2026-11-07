@@ -73,6 +73,9 @@
 <a id="field-1e7e3"></a>
 ## base + 0x1E7E3
 
+- [research/recovered/handoff_scope1/reports/dev_lab/docs/archive/WORK_REQUEST_QUEUE_ARCHIVE_20261029.md 行 2932](../../research/recovered/handoff_scope1/reports/dev_lab/docs/archive/WORK_REQUEST_QUEUE_ARCHIVE_20261029.md?plain=1#L2932-L2932) — - Work / P0 / PARTIAL。停止VA=base+0x1E7E3 length5（既存generation CALL）。新規selector_plugin_adapterと専用build/fixture/docをcore内に追加。既存bridge/helperは変更せず、preview/stats/loc
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
 - [research/recovered/plugin_reports1/reports/recruit_sort_v4/core/SELECTOR_PLUGIN.md 行 5](../../research/recovered/plugin_reports1/reports/recruit_sort_v4/core/SELECTOR_PLUGIN.md?plain=1#L5-L5) — Core reserves host base + 0x1E7E3, length 5, before scheduling installation. The bridge independently checks its exact executable SHA-256 and expected `E8 28 01
   制約・訂正　Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=PLUGIN_SYNTHETIC_CONTRACT_OR_HISTORY
 
@@ -87,6 +90,12 @@
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3835](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3835-L3835) — - **ローダー終了**: base+0x47983C は、起動ローダー（スレッド 0x555AD0。`a_system/xp.txt` があれば main で同期実行）を始める前に 0x555D69 で 1 になり（CS base+0x479628 の中）、ローダーが終わった後（GetExitCodeThread≠S
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+<a id="field-4bb6d8"></a>
+## base + 0x4BB6D8
+
+- [research/recovered/handoff_scope1/reports/dev_lab/docs/archive/WORK_REQUEST_QUEUE_ARCHIVE_20261029.md 行 2944](../../research/recovered/handoff_scope1/reports/dev_lab/docs/archive/WORK_REQUEST_QUEUE_ARCHIVE_20261029.md?plain=1#L2944-L2944) — - 自動表示試験は利用者「表示されない」。session28836はexit0/watcher_stoppedのみ、display_attemptなし。PID22984読取でpreview1/commit0/active0、epoch0、native visibility byte(base+0x4bb6d8+0x84
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
 
 <a id="field-6ad434"></a>
 ## base + 0x6AD434

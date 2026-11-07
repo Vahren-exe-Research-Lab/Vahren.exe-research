@@ -10,6 +10,12 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1079](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1079-L1079) — \| 係数f \| 種別(skill+0x40, 表0x55201C): 3→0.02、4→0.01、5→clamp(r,0.01,0.2)、その他→clamp(r,0.01,0.33)。r=a/b（b=0なら0.0） \| CONFIRMED \|
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+<a id="field-1a0"></a>
+## skill + 0x1A0
+
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 175](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L175-L175) — - `afterhit` -> string object at skill +0x1A0（size/capacity側 +0x1B0周辺）。parser xref VA 0x59A9CA。
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
 <a id="field-1b0"></a>
 ## skill + 0x1B0
 

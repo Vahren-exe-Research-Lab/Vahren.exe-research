@@ -100,6 +100,12 @@
 - [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 824](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L824-L824) — [CONFIRMED-SAVED-NATIVE / ORDER CONTRAST] A所有`exe/T006_DIALOG_VMETHODS.txt` 0x441DC3..0x441DDB は+0x294非sentinel時にEDI=[object+0x98]→0x4463F0→+0x294=sentinel。Choi
   制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
 
+<a id="field-1d0"></a>
+## object + 0x1D0
+
+- [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 61](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L61-L61) — - handlerは対象リストをループし、pointer `[object+0x1D0]` を取り、`0x44D070`による条件照合が一致する場合に `0x4B5CBA mov byte [esi+0x70],al` を実行する。具体的な作用は対象の参照先objectの`+0x70`へ1/0を書込むこと。`+0x70
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
 <a id="field-1e8"></a>
 ## object + 0x1E8
 

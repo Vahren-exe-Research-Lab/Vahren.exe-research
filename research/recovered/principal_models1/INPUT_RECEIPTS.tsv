@@ -1,0 +1,9 @@
+role	input_path	sha256	bytes	receipt_scope
+approved_selection	hakushin-principal_models1-approved.tsv	0ee20b4d3824c23d71f44ee4f76d540ef998c998a011630afc3cb18f797d81eb	1571	Preparation snapshot; original/root metadata read only
+baseline_root_ledger	research/recovered/RECOVERY_LEDGER.tsv	bb89e56cf62006f953ce891cdf95c33d689a7ecbdc6a6f4cdb6bbc0dc8ee1760	1111129	Preparation snapshot; original/root metadata read only
+exact_approved_original	data/T011_DATA_MODEL.md	2848bfdf9cf9c47cdb5174385d3626140207dd726ce2078982f5486e6ed3c14b	141768	Read-only approved original; full review only where coverage says FULL
+exact_approved_original	data/T012_BATTLE_CALC.md	ef8eb4e023cfdb7cafc24a46b6ab29ca791963438509186b35c6b31cfb37caeb	375836	Read-only approved original; full review only where coverage says FULL
+exact_approved_original	data/T013_AI.md	ec31ac6e321a375cb903672d12af30ae3f1690f123df3165661226f47f21b154	341597	Read-only approved original; full review only where coverage says FULL
+exact_approved_original	data/T015_UI_RENDER_INPUT_AUDIO.md	c8882f180173788e09007afeb545fc9d5abfb13e3848ab8d75e0dbd26101f08a	278156	Read-only approved original; full review only where coverage says FULL
+exact_approved_original	data/T028_MORALE.md	72035c77d2dcc4172d2f112b99bbb765c1746b4061ca9e46aa7d5ca4964e350a	152917	Read-only approved original; full review only where coverage says FULL
+exact_approved_original	data/T030_RTS_MODE.md	1e462ef63681ab1a57425c6b686af4534eb2a0e2f9a4180c8bdb6a167ffce0b7	212329	Read-only approved original; full review only where coverage says FULL

@@ -46,6 +46,9 @@
 - [research/recovered/c_topics/T027_MERCHANT_PRICE_PURCHASE.md 行 203](../../research/recovered/c_topics/T027_MERCHANT_PRICE_PURCHASE.md?plain=1#L203-L203) — [CONFIRMED-SAVED-NATIVE / CROSSWALK] 旧EXE ChoiceWnd vm16 0x41EBE0のcommitはpending index `+0x168` がsentinel 0x80000008ならcommitせず、非sentinel時にも0x41EC59のhit-test戻値が0
   制約・訂正　Historical source/static-native and synthetic arithmetic claims only; linked records not acquired; no new runtime validation or Golden/READY promotion
 
+- [research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md 行 734](../../research/recovered/handoff_scope1/reports/evidence/LANE_C_HANDOFF.md?plain=1#L734-L734) — - CONFIRMED-SAVED-NATIVE：ChoiceWndのpending +0x168は0x80000008 sentinelならwriter未実行。valid pendingでも0x41EC59 hit-test=0なら0x41EC61から数値writerをskip。hitでのみ0x41EC80 `0x4
+  制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
 - [research/recovered/rea_batch5/reports/REA_20261029_11H_P0_BITBOOK_SYMBOL_STATIC.md 行 12](../../research/recovered/rea_batch5/reports/REA_20261029_11H_P0_BITBOOK_SYMBOL_STATIC.md?plain=1#L12-L12) — - `0x005DA070` はcodebook entryを0x38バイトに初期化し、`0x005DA1AC`で `entry+0x14`（ソート済code境界の配列）、`0x005DA229`で `entry+0x18`（元symbol番号へのmap）、`0x005DA25F`で `entry+0x1C`（正cod
   制約・訂正　Historical author STATIC/VERIFY claims and audit counts only; current REF_AUDIO_VORBIS precedence; no new native/runtime/ABI/READY validation; linked evidence excluded
 
