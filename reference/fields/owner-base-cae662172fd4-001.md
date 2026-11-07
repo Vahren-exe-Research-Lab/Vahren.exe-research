@@ -67,6 +67,9 @@
 - [research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md 行 206](../../research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md?plain=1#L206-L206) — 食い違いではなかったもの: T014 の「world-base+0x504」と structs の「GameManager+0x504＝スクリプトエンジン E」は同じ物。世界地図グラフは E の中の木（E+0x1EEBCC/+0x1EEBD0）。
   制約・訂正　Existing full body linked; catalog revision differs
 
+- [research/recovered/outside_dev1/reports/042_REF_SAVE_FORMAT.md 行 206](../../research/recovered/outside_dev1/reports/042_REF_SAVE_FORMAT.md?plain=1#L206-L206) — 食い違いではなかったもの: T014 の「world-base+0x504」と structs の「GameManager+0x504＝スクリプトエンジン E」は同じ物。世界地図グラフは E の中の木（E+0x1EEBCC/+0x1EEBD0）。
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+
 - [research/recovered/rea_batch13/reports/REA_T014_PREOPEN_SERIALIZER_SCOPE_AUDIT_20261011_0936.md 行 12](../../research/recovered/rea_batch13/reports/REA_T014_PREOPEN_SERIALIZER_SCOPE_AUDIT_20261011_0936.md?plain=1#L12-L12) — A所有data/T014_GLOBAL_SAVE.mdの「normal save tail」節では0x471D20をDiplomacy runtime状態writer、0x435C10をworld-base+0x504のSpotElm/SpotPath/SpotEscapePath graph serializerと同
   制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
 
@@ -81,6 +84,9 @@
 
 - [research/recovered/handoff_scope1/reports/dev_lab/docs/archive/WORK_REQUEST_QUEUE_ARCHIVE_20261029.md 行 2964](../../research/recovered/handoff_scope1/reports/dev_lab/docs/archive/WORK_REQUEST_QUEUE_ARCHIVE_20261029.md?plain=1#L2964-L2964) — - 未完: 起動時helper連携、prewarm/低遅延更新検知、元一覧描画の抑止と復帰、詳細hoverの入力経路、確定/取消/強制選択の実機検証。停止VA未選定、既存generation base+0x1E7E3とnative detail成果から照合。
   制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
+
+- [research/recovered/outside_dev1/reports/025_SELECTOR_PLUGIN.md 行 5](../../research/recovered/outside_dev1/reports/025_SELECTOR_PLUGIN.md?plain=1#L5-L5) — Core reserves host base + 0x1E7E3, length 5, before scheduling installation. The bridge independently checks its exact executable SHA-256 and expected `E8 28 01
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
 
 - [research/recovered/plugin_reports1/reports/recruit_sort_v4/core/SELECTOR_PLUGIN.md 行 5](../../research/recovered/plugin_reports1/reports/recruit_sort_v4/core/SELECTOR_PLUGIN.md?plain=1#L5-L5) — Core reserves host base + 0x1E7E3, length 5, before scheduling installation. The bridge independently checks its exact executable SHA-256 and expected `E8 28 01
   制約・訂正　Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=PLUGIN_SYNTHETIC_CONTRACT_OR_HISTORY
@@ -97,6 +103,9 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3835](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3835-L3835) — - **ローダー終了**: base+0x47983C は、起動ローダー（スレッド 0x555AD0。`a_system/xp.txt` があれば main で同期実行）を始める前に 0x555D69 で 1 になり（CS base+0x479628 の中）、ローダーが終わった後（GetExitCodeThread≠S
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+- [research/recovered/outside_dev1/reports/004_README_APPLY.md 行 151](../../research/recovered/outside_dev1/reports/004_README_APPLY.md?plain=1#L151-L151) — \| `dat_ui_selector_auto_arm.diff` \| `core/dat_ui_selector_plugin.c`（mtime 1793032353209、SHA256 6e30fe0dd446e5c861fd139ffa957fe8bcc9dccb30ff2ff916e6021b11c6c187）
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+
 <a id="field-4bb6d8"></a>
 ## base + 0x4BB6D8
 
@@ -108,5 +117,8 @@
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3836](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3836-L3836) — - **タイトル画面**: base+0x6AD434（GameManager+0x1EF144）は場面番号。0＝タイトル（0x48AD30、'title_name'）、1＝ワールド、2＝戦闘・マップイベント、4＝シナリオ選択、5＝シナリオ開始、6＝ロード、7＝マップテスト。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+- [research/recovered/outside_dev1/reports/004_README_APPLY.md 行 151](../../research/recovered/outside_dev1/reports/004_README_APPLY.md?plain=1#L151-L151) — \| `dat_ui_selector_auto_arm.diff` \| `core/dat_ui_selector_plugin.c`（mtime 1793032353209、SHA256 6e30fe0dd446e5c861fd139ffa957fe8bcc9dccb30ff2ff916e6021b11c6c187）
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

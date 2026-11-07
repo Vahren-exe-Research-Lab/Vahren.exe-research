@@ -16,4 +16,7 @@
 - [research/DAT_UI_V4_RESEARCH_20261101.md 行 10](../../research/DAT_UI_V4_RESEARCH_20261101.md?plain=1#L10-L10) — - 静的確認：1 コマの順序は、timeGetTime → 前のコマからの経過が GameTask+0x78 に満たなければその差だけ Sleep → 0xAC0918 に（Sleep 前の）時刻を保存 → 更新（GameTask の vf+0xC など）→ 描画 0x4C3EB0 → Present。
   制約・訂正　Existing full body linked; not duplicated
 
+- [research/recovered/outside_dev1/reports/040_REF_UI_SYSTEM.md 行 57](../../research/recovered/outside_dev1/reports/040_REF_UI_SYSTEM.md?plain=1#L57-L57) — - 静的確認：メインループ 0x4C24B0 は、未処理のメッセージを全部処理してから 1 コマ進める。1 コマの長さは GameTask+0x78（0x4C21F0 が round(1000/fps)）。戦略画面は 25 コマ/秒（0x48AA00）、戦闘の速度で 100 に切り替わる。
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

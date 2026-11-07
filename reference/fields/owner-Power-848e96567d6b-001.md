@@ -19,6 +19,9 @@
 - [research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md 行 32](../../research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md?plain=1#L32-L32) — - RAM で 1 バイトの項目（Unit+0x74〜0x7A・+0xE8、Power+0x1C・+0x1D、ターン進行+0x09・+0x0A、経路+0x88）は 0x4708A0 で 4 バイト（u32）として書かれる。静的確認・実測。
   制約・訂正　Existing full body linked; catalog revision differs
 
+- [research/recovered/outside_dev1/reports/042_REF_SAVE_FORMAT.md 行 32](../../research/recovered/outside_dev1/reports/042_REF_SAVE_FORMAT.md?plain=1#L32-L32) — - RAM で 1 バイトの項目（Unit+0x74〜0x7A・+0xE8、Power+0x1C・+0x1D、ターン進行+0x09・+0x0A、経路+0x88）は 0x4708A0 で 4 バイト（u32）として書かれる。静的確認・実測。
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+
 - [research/recovered/remaining_md1/reports/dev_lab/docs/PROJECT_HANDOFF_MASTER_20261011.md 行 176](../../research/recovered/remaining_md1/reports/dev_lab/docs/PROJECT_HANDOFF_MASTER_20261011.md?plain=1#L176-L176) — - 保存済みnative writer (0x460000 / 0x58EFD0 / 0x598CE0 / 0x596AA0 / 0x471D20 / 0x435C10 + vtable 0x5A93F0/0x5B0600)、Ghidra全関数疑似C、ユーザー原作実savを照合。Unitメモリbyte+0x74..7A
   制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
 
@@ -63,6 +66,15 @@
 
 - [research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md 行 204](../../research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md?plain=1#L204-L204) — \| 本書の初版（同日） \| Unit+0x38 などを「意味未確認」、Power+0x24 を「再確認が必要」、能力値+0x174 を「予備」 \| FINDINGS に静的確認済みの意味があった（§4〜§7） \| 本版で書き直し \|
   制約・訂正　Existing full body linked; catalog revision differs
+
+- [research/recovered/outside_dev1/reports/041_README.md 行 13](../../research/recovered/outside_dev1/reports/041_README.md?plain=1#L13-L13) — \| rows_structs_replace.tsv \| 既存 8 行の誤りの修正・補足: UnitDef+0x1C（DAT の unit タグ）、+0x74（プレイヤー本人）、+0x78（隊長）、+0x84（+0x94 が長さ）、+0x158（std::set 本体）、+0x168（+0x174 は所持金）、Powe
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+
+- [research/recovered/outside_dev1/reports/042_REF_SAVE_FORMAT.md 行 199](../../research/recovered/outside_dev1/reports/042_REF_SAVE_FORMAT.md?plain=1#L199-L199) — \| knowledge structs Power+0x24 \| 「勢力の名前」 \| 盟主の Unit の個体キー（出典 F§32 自体がそう書いている） \| KB 修正案 \|
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+
+- [research/recovered/outside_dev1/reports/042_REF_SAVE_FORMAT.md 行 204](../../research/recovered/outside_dev1/reports/042_REF_SAVE_FORMAT.md?plain=1#L204-L204) — \| 本書の初版（同日） \| Unit+0x38 などを「意味未確認」、Power+0x24 を「再確認が必要」、能力値+0x174 を「予備」 \| FINDINGS に静的確認済みの意味があった（§4〜§7） \| 本版で書き直し \|
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
 
 - [research/recovered/remaining_md1/reports/dev_lab/docs/CHATGPT_CURRENT_HANDOFF.md 行 120](../../research/recovered/remaining_md1/reports/dev_lab/docs/CHATGPT_CURRENT_HANDOFF.md?plain=1#L120-L120) — - 既存研究の訂正（2026-11-01夜、Claude）：T014 の「外交状態」はターン進行オブジェクト（+0x14 経過ターン、+0x38 phase、手番順の勢力列）、「第5コンテナ」+0x32C は放浪集合、Unit+0x94 は放浪先の文字列長。T014 冒頭に訂正一覧を追記。knowledge の Uni
   制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
@@ -117,6 +129,9 @@
 
 - [research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md 行 208](../../research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md?plain=1#L208-L208) — 未確認のまま: Unit の +0x76・+0x130 の表、+0x79 の詳しい意味、Spot +0x64、Power +0x74・+0xB4、+0x40 の正体、auto（7 世代の残り）がゲームで読めるか（save3 は実機確認済み）。
   制約・訂正　Existing full body linked; catalog revision differs
+
+- [research/recovered/outside_dev1/reports/042_REF_SAVE_FORMAT.md 行 208](../../research/recovered/outside_dev1/reports/042_REF_SAVE_FORMAT.md?plain=1#L208-L208) — 未確認のまま: Unit の +0x76・+0x130 の表、+0x79 の詳しい意味、Spot +0x64、Power +0x74・+0xB4、+0x40 の正体、ゲームが古い残りのあるファイルを正しく読めるか。
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
 
 <a id="field-b0"></a>
 ## Power + 0xB0

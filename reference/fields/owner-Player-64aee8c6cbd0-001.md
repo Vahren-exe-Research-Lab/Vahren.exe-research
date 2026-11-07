@@ -31,6 +31,15 @@
 <a id="field-194"></a>
 ## Player + 0x194
 
+- [research/recovered/outside_dev1/reports/013_WORK_PINNED_TEMP_HOVER_SPIKE_20261029.md 行 65](../../research/recovered/outside_dev1/reports/013_WORK_PINNED_TEMP_HOVER_SPIKE_20261029.md?plain=1#L65-L65) — - `src/work_selector_hover_context.h`: Player anchor is Temp+0x9C; Player+4 is the owning VM and Player+0x194 is VM+0x504. Temp+0x98 is a different owner chain.
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+
+- [research/recovered/outside_dev1/reports/040_REF_UI_SYSTEM.md 行 54](../../research/recovered/outside_dev1/reports/040_REF_UI_SYSTEM.md?plain=1#L54-L54) — 実機確認：TempStatusWnd+0x98の所有者と、0x521AF0の受信者Playerは別オブジェクト。両者の+4は同じ文脈を指し、Player+0x194は文脈+0x504を指す。同一ポインタを要求すると一覧の説明処理を全拒否する。保存V9でも0x521AEEがPlayer本体をECXへ設定することを確認。出
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+
+- [research/recovered/outside_kb1/reports/knowledge_validation_20261030/REF_UI_SYSTEM.md 行 54](../../research/recovered/outside_kb1/reports/knowledge_validation_20261030/REF_UI_SYSTEM.md?plain=1#L54-L54) — 実機確認：TempStatusWnd+0x98の所有者と、0x521AF0の受信者Playerは別オブジェクト。両者の+4は同じ文脈を指し、Player+0x194は文脈+0x504を指す。同一ポインタを要求すると一覧の説明処理を全拒否する。保存V9でも0x521AEEがPlayer本体をECXへ設定することを確認。出
+  制約・訂正　Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+
 - [research/recovered/rea_batch2/reports/REA_20261103_06H_P0_PLAYER194_ENGINE_ALIAS_CHAIN_STATIC.md 行 1](../../research/recovered/rea_batch2/reports/REA_20261103_06H_P0_PLAYER194_ENGINE_ALIAS_CHAIN_STATIC.md?plain=1#L1-L1) — # REA 2026-11-03 06H \| bounded g_Engine / Player+0x194 alias chain (STATIC / VERIFY)
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
 
@@ -61,6 +70,12 @@
 - [research/DAT_UI_V4_RESEARCH_20261101.md 行 33](../../research/DAT_UI_V4_RESEARCH_20261101.md?plain=1#L33-L33) — - 実機確認：Player+0x324 / +0x328 はゲームの座標でのマウス位置（Player_DispatchHover 0x521560 がウィンドウの矩形と PtInRect で比べる値）。全画面ではウィンドウがモニター全体（例 1920×1200）になるため、画面の点の位置をそのまま使うとずれる。DLL
   制約・訂正　Existing full body linked; not duplicated
 
+- [research/recovered/outside_dev1/reports/035_README.md 行 2](../../research/recovered/outside_dev1/reports/035_README.md?plain=1#L2-L2) — - フルスクリーンでは窓の大きさ（1920x1200等）とゲームの解像度が違うため、説明表示の位置をゲーム自身のマウス座標（Player+0x324/+0x328）で渡すように変更。窓の大きさ一致の条件を外した。
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+
+- [research/recovered/outside_dev1/reports/040_REF_UI_SYSTEM.md 行 64](../../research/recovered/outside_dev1/reports/040_REF_UI_SYSTEM.md?plain=1#L64-L64) — - 実機確認：全画面ではウィンドウがモニター全体になる。説明表示の位置はゲーム座標の Player+0x324/+0x328 で判定すればずれない（Player_DispatchHover 0x521560 と同じ値）。
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+
 - [research/recovered/plugin_reports1/reports/recruit_sort_v4/docs/RELEASE_HakushinUI_v1.0.md 行 9](../../research/recovered/plugin_reports1/reports/recruit_sort_v4/docs/RELEASE_HakushinUI_v1.0.md?plain=1#L9-L9) — - 説明表示: ゲーム自身のマウス座標（Player+0x324/0x328）を使用、D3DProxyWindow を素通し（フルスクリーン）
   制約・訂正　Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=PLUGIN_SYNTHETIC_CONTRACT_OR_HISTORY
 
@@ -72,6 +87,15 @@
 
 - [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 541](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L541-L541) — [SAVED-C GUI JOIN] 既存保存Ghidra C（dev_lab/recovered_source/peer_script01_ghidra_named_decomp_20261011.zip内decomp_0052xxxx.c/0056xxxx.c、D T015 D-20261013-0943-01）に
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+<a id="field-42c"></a>
+## Player + 0x42C
+
+- [research/recovered/outside_dev1/reports/013_WORK_PINNED_TEMP_HOVER_SPIKE_20261029.md 行 80](../../research/recovered/outside_dev1/reports/013_WORK_PINNED_TEMP_HOVER_SPIKE_20261029.md?plain=1#L80-L80) — B. For the first opt-in native trial, allow **only skill regions>=7** after the above checks, retain generic3..6 as unsupported and action0..2 blocked. Prefer t
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+
+- [research/recovered/outside_dev1/reports/013_WORK_PINNED_TEMP_HOVER_SPIKE_20261029.md 行 126](../../research/recovered/outside_dev1/reports/013_WORK_PINNED_TEMP_HOVER_SPIKE_20261029.md?plain=1#L126-L126) — Before initial acquisition, Player+0x42C previous_hover and +0x428 capture must be clear (legacy context guard already checks this), and all relevant native too
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
 
 <a id="field-1e8630"></a>
 ## Player + 0x1E8630

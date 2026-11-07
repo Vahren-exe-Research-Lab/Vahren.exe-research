@@ -208,6 +208,12 @@
 - [research/recovered/b_batch8/data/T012_T011_SPCANNON_CHAIN_RANGE_OVERRIDE_20261018.md 行 7](../../research/recovered/b_batch8/data/T012_T011_SPCANNON_CHAIN_RANGE_OVERRIDE_20261018.md?plain=1#L7-L7) — [PRE-SAVED EXE XREF] target EXE SHA256 e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187（既保存値）。既T012§32 native loader VA0x59CDA3..0x59CDFB（str/ra
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
+- [research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/kb_section9.md 行 8](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/kb_section9.md?plain=1#L8-L8) — - **Summon cap:** parent `+0x168` is compared with the vector size in `0x57F190`, `0x577600`, `0x577EE0` (when `Skill+0x4C==0`). Because the vector never shrink
+  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+
+- [research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/section96.md 行 22](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/section96.md?plain=1#L22-L22) — - **召喚数の上限:** 親の +0x168 と子の数（(+0x17C−+0x178)/4）を比べる（0x57F190、0x577600、0x577EE0。Skill+0x4C==0 のとき）。一覧が減らないので、消えた子も数に入るように読める。→ 推定、要実機確認。
+  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+
 - [research/recovered/outside_reports1/reports/wiki/WIKI_DAT_NATIVE_DEEPDIVE_20261013.md 行 60](../../research/recovered/outside_reports1/reports/wiki/WIKI_DAT_NATIVE_DEEPDIVE_20261013.md?plain=1#L60-L60) — - [既存B-owner READY B-20261013-1622-01] 59A30E..59A39B固定x86はSkill+0x4Cへ、条件値によって1をstoreするwriterと property 0x4647D0の数値をstoreするwriterの2分岐を持つ。通常missile/healの早期MP不足re
   制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
 
@@ -323,12 +329,6 @@
 ## Skill + 0x78
 
 - [research/recovered/b_batch3/T012_RUSH_SKILL_INTERVAL_FIRST_TICK_BURST_NATIVE_20261027_18H.md 行 5](../../research/recovered/b_batch3/T012_RUSH_SKILL_INTERVAL_FIRST_TICK_BURST_NATIVE_20261027_18H.md?plain=1#L5-L5) — [NEW ASM/SEED] 0x54F990 の record=EBP / Skill=EAX。0x54F9AC MOV [EBP+0x1D4],EAX、0x54F9D1 MOV EDX,[EAX+0x78]、0x54F9D4 MOV [EBP+0x1F4],EDX。したがって初期record.counterは0でな
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_batch3/T012_RUSH_SKILL_INTERVAL_FIRST_TICK_BURST_NATIVE_20261027_18H.md 行 7](../../research/recovered/b_batch3/T012_RUSH_SKILL_INTERVAL_FIRST_TICK_BURST_NATIVE_20261027_18H.md?plain=1#L7-L7) — [NEW ASM/REPEAT] 0x5503BE INC DWORD[Rush+0x1F0]、0x5503D0 CMP EAX,[Skill+0x74]、0x5503D3 JGE 0x5503E7（上限到達なら解除）。上限未満なら0x5503D5 CMP DWORD[Skill+0x78],0→0x5503D9 JE
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_batch3/T012_RUSH_SKILL_INTERVAL_FIRST_TICK_BURST_NATIVE_20261027_18H.md 行 9](../../research/recovered/b_batch3/T012_RUSH_SKILL_INTERVAL_FIRST_TICK_BURST_NATIVE_20261027_18H.md?plain=1#L9-L9) — [CONDITIONAL CONSEQUENCE 1] Skill+0x78が通常の非負・overflowなし値Nなら初期counter=Nにより最初の許可された0x5501A0呼出でN+1>=Nとなり直ちに発動。次回からはcounter=0へ戻るのでN>0時は原則N回の許可された更新呼出で次の発動に到達（途中の外部w
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

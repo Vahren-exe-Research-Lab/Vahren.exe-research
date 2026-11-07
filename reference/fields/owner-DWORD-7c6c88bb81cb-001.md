@@ -16,4 +16,10 @@
 - [research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md 行 27](../../research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md?plain=1#L27-L27) — - 固定prefixはstring +0,+0x2C,+0x64 → raw DWORD +0x80,+0x84。続いてRB-tree +0x20の名前をin-orderでwrite。
   制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
 
+<a id="field-1bc"></a>
+## DWORD + 0x1BC
+
+- [research/recovered/outside_dev1/reports/017_WORK_V4_REVIEW_LOCATION_CUSTOM_COLUMNS_20261029.md 行 121](../../research/recovered/outside_dev1/reports/017_WORK_V4_REVIEW_LOCATION_CUSTOM_COLUMNS_20261029.md?plain=1#L121-L121) — At already established stops, record EIP and run-specific module base; at 0x55BC60 entry record ECX=self, [esp+4], [self+0x1B8] and owned/non-owned context. At
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Only personal profile prefix substitutions; byte spans and all unchanged gaps proven.
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

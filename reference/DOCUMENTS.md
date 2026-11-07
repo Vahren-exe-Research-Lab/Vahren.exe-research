@@ -8,7 +8,7 @@
 
 文書検索結果は保存ファイル名、元パス・出典URI、題名、本文だけの一致の順で最大20件です。同じ区分内は回収台帳での初出順です。省略時は一致総数を表示します。全件の出典・制約は一覧または各詳細ページに掲載しています。研究ID・題名で絞り込めます。アドレス・所有者＋オフセット検索は従来の専用結果を返します。
 
-全 1671 文書。各詳細ページは最大100文書で、出典行・SHA256・回収台帳・制約を保持しています。
+全 1798 文書。各詳細ページは最大100文書で、出典行・SHA256・回収台帳・制約を保持しています。
 
 | 詳細ページ | 文書数 | 最初の題名 | 最後の題名 |
 |---|---:|---|---|
@@ -28,6 +28,7 @@
 | [14](documents/page-014.md) | 100 | 迫真戦記 ver0.67｜REA 2026-10-28 21時台：Oggシリアル配列の早期return時の所有権・解放非対称性 | REA Wave3 保存済みGhidra静的証拠の独立照合（2026-10-10） |
 | [15](documents/page-015.md) | 100 | REA Wave 3候補（未着手・Wave2全件照合後にキュー化） | Reservation extension integration plan |
 | [16](documents/page-016.md) | 100 | Bounded manifest planning layer | T020_E_T013_VIEWFLAG_CHAIN_READBACK_20261101_01H.json |
-| [17](documents/page-017.md) | 71 | T020_E_T013_POSTREFILL_READBACK_20261030_21H.json | T020_E_G0_SAVE_RUN_SOURCE_SCOPE_RECEIPT_20261101_20H.json |
+| [17](documents/page-017.md) | 100 | T020_E_T013_POSTREFILL_READBACK_20261030_21H.json | Claude ローダー修正パッチ（2026-10-26）— Codex（Work）向け取り込み手順 |
+| [18](documents/page-018.md) | 98 | Bounded v2 implementation — 2026-10-27 | 迫真戦記｜追加ストーリー正本 |
 
 [事典の入口](README.md)

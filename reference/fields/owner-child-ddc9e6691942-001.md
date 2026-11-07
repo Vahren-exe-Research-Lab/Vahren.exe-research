@@ -127,4 +127,10 @@
 - [research/recovered/b_batch3/T011_SUMMON_CALLER_GROUP_PROVENANCE_NATIVE_20261027_15H.md 行 9](../../research/recovered/b_batch3/T011_SUMMON_CALLER_GROUP_PROVENANCE_NATIVE_20261027_15H.md?plain=1#L9-L9) — [GROUP APPLY] 0x54F07A CALL0x56F880でnew childを構築した後、0x54F08F TEST EDI、非NULLなら0x54F093 PUSH EDI/0x54F094 MOV ECX,EAX(new child)/0x54F096 CALL0x568710。0x568752 CM
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+<a id="field-1e594"></a>
+## child + 0x1E594
+
+- [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/SUMMON_PARENT_NATIVE_DAT_BOUNDARY_20261025.md 行 13](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/SUMMON_PARENT_NATIVE_DAT_BOUNDARY_20261025.md?plain=1#L13-L13) — - VA 0x005774A0: parent Unit の +0x178（子vectorのbegin）、+0x17C（end）、+0x180（capacity）へ child Unit* をappend。child+0x1E594が非0ならこの追従先にparentポインタを代入。child専用のvector生成ではな
+  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

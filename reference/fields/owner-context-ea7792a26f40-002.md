@@ -4,6 +4,33 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-e4"></a>
+## context + 0xE4
+
+- [research/recovered/e_reports/T020_E_T013_OFF_EXACT_VSLOT_ACCEPTANCE_20261101_02H.md 行 13](../../research/recovered/e_reports/T020_E_T013_OFF_EXACT_VSLOT_ACCEPTANCE_20261101_02H.md?plain=1#L13-L13) — [KB_CANDIDATE] E/T020 this ID crosschecks B/T013 source with original PE SHA; VA 0x45A26F/0x45A296/0x45A2C6/0x42F860/0x57D994/0x57D99B/0x57D99F/0x57D9A9; global
+  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
+
+- [research/recovered/tests_batch5/T020_E_T013_VIEWFLAG_CHAIN_ACCEPTANCE_20261101_01H.md 行 9](../../research/recovered/tests_batch5/T020_E_T013_VIEWFLAG_CHAIN_ACCEPTANCE_20261101_01H.md?plain=1#L9-L9) — [COMPOSITION] Downstream B00 consumer 0x4C1690: if final flag=0 OR context+0xE4 nonzero, modeled RAW_PASSTHROUGH; otherwise D3DX_REQUIRED. Route selection is no
+  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
+
+<a id="field-1b8"></a>
+## context + 0x1B8
+
+- [research/recovered/outside_dev1/reports/017_WORK_V4_REVIEW_LOCATION_CUSTOM_COLUMNS_20261029.md 行 86](../../research/recovered/outside_dev1/reports/017_WORK_V4_REVIEW_LOCATION_CUSTOM_COLUMNS_20261029.md?plain=1#L86-L86) — 3. Owner chain self+0x98 -> owner+4 -> context is relevant to detail text and hover. The visible definition self+0x1B8 is distinct from context+0x1B8 used by or
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Only personal profile prefix substitutions; byte spans and all unchanged gaps proven.
+
+- [research/recovered/outside_dev1/reports/017_WORK_V4_REVIEW_LOCATION_CUSTOM_COLUMNS_20261029.md 行 169](../../research/recovered/outside_dev1/reports/017_WORK_V4_REVIEW_LOCATION_CUSTOM_COLUMNS_20261029.md?plain=1#L169-L169) — - 0x56117A reads owner=[self+0x98], context=[owner+4], and stores ADDRESS context+0x1B8 as a text-expansion context. This is distinct from the unit definition a
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Only personal profile prefix substitutions; byte spans and all unchanged gaps proven.
+
+- [research/recovered/outside_dev1/reports/017_WORK_V4_REVIEW_LOCATION_CUSTOM_COLUMNS_20261029.md 行 171](../../research/recovered/outside_dev1/reports/017_WORK_V4_REVIEW_LOCATION_CUSTOM_COLUMNS_20261029.md?plain=1#L171-L171) — - Current work_selector_skill_hover.h rejects all seven generic regions. Its context+0x1B8 read only proves bounded readability, not equality with the active re
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Only personal profile prefix substitutions; byte spans and all unchanged gaps proven.
+
+<a id="field-208"></a>
+## context + 0x208
+
+- [research/recovered/outside_dev1/reports/017_WORK_V4_REVIEW_LOCATION_CUSTOM_COLUMNS_20261029.md 行 98](../../research/recovered/outside_dev1/reports/017_WORK_V4_REVIEW_LOCATION_CUSTOM_COLUMNS_20261029.md?plain=1#L98-L98) — Saved 0x55BC60 line 99 clears the DWORD at self+0x1C4, then final button paths draw via 0x455520 and set individual bytes. The four flags are +0x1C4 employment,
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Only personal profile prefix substitutions; byte spans and all unchanged gaps proven.
+
 <a id="field-2c0"></a>
 ## context + 0x2C0
 
@@ -52,8 +79,17 @@
 - [research/recovered/exp/EXP_SIMPLEBATTLE_LIFECYCLE_20261022.md 行 39](../../research/recovered/exp/EXP_SIMPLEBATTLE_LIFECYCLE_20261022.md?plain=1#L39-L39) — - 0x467DE0はcontext+0x300の永続登録ツリーを検索し、node+0x28に格納されたUnitData*を返す。0x467E3B MOV ESI,[EAX+0x28]→0x467E4D MOV EAX,ESI。
   制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md
 
+<a id="field-4c4"></a>
+## context + 0x4C4
+
+- [research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md 行 66](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md?plain=1#L66-L66) — - 根拠: 汎用一覧の `src/work_dat_ui_literal.h`（routine の引数の予約名照合）、`src/work_dat_ui_snapshot.h`（数値変数の木 context+0x4C4、文字列配列の木 context+0x1E8B40、値は record+0x1C）。
+  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+
 <a id="field-504"></a>
 ## context + 0x504
+
+- [research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md 行 119](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md?plain=1#L119-L119) — - 直前の失敗（18:51、PID 11352）: 名前の表を context+0x1EEBEC と読み違え（件数 8,716,303 という無関係な値）。正しくは評価器（context+0x504）+0x1EEBEC。x32dbg の記録で 0x49E780 の EDX が評価器だったこと、動作中のメモリの読み取りで
+  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
 
 - [research/recovered/plugin_reports1/reports/recruit_sort_v4/docs/EXP_PLUGIN.md 行 11](../../research/recovered/plugin_reports1/reports/recruit_sort_v4/docs/EXP_PLUGIN.md?plain=1#L11-L11) — - 名前は原作の戦闘中ユニットの名前表（評価器＝context+0x504 の +0x1EEBEC）を読み取りで引く。同名なら生存を優先（原作 0x49E780 と同じ）。
   制約・訂正　Historical authored research/plugin contracts/examples only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; instructions inert; linked artifacts excluded; role=PLUGIN_VERSIONED_GUIDE_AND_OWN_CODE_EXAMPLES
@@ -64,11 +100,35 @@
 - [research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1530_P0_DIPLO_HELP_HANDOFF_AUDIT.md 行 89](../../research/recovered/rea_batch13/reports/REA_OFFLINE_20261024_1530_P0_DIPLO_HELP_HANDOFF_AUDIT.md?plain=1#L89-L89) — 候補・除外集合をバイナリ境界で受渡しするだけでなく、**呼出時の所有状態と生存期間**も調査する必要がある。今回見つけた`context+0x1E8630`の受信オブジェクト、`state+0x4AC/0x4B0`の利用先、`0x0052CCF0`のイベント起動処理、`0x00521D90`の「同一インスタンスか」、`
   制約・訂正　Historical authored static/derived/synthetic/audit/Library claims only; linked payloads excluded; no newnative/runtime/Golden/READY/formalVERIFIED
 
+<a id="field-1e8b40"></a>
+## context + 0x1E8B40
+
+- [research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md 行 66](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md?plain=1#L66-L66) — - 根拠: 汎用一覧の `src/work_dat_ui_literal.h`（routine の引数の予約名照合）、`src/work_dat_ui_snapshot.h`（数値変数の木 context+0x4C4、文字列配列の木 context+0x1E8B40、値は record+0x1C）。
+  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+
+<a id="field-1eebdc"></a>
+## context + 0x1EEBDC
+
+- [research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md 行 89](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md?plain=1#L89-L89) — - 登録: `0x49E560`（BattleUnit を作る 0x56F880〔通常〕・0x544290〔簡易〕の両方から）。キーは UnitData+0x1C のタグ。**召喚獣も登録される**ので jocar などの名前でも引ける。同じ関数が context+0x1EEBDC（UnitData 側の表）にも登録す
+  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+
+<a id="field-1eebe0"></a>
+## context + 0x1EEBE0
+
+- [research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md 行 90](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md?plain=1#L90-L90) — - 消去: `0x48ABF0`（context+0x1EEBE0 と +0x1EEBF0 の木を空にする、戦闘の後片付けと推定。呼び出し 0x40D1E4／0x40E2C3／0x40F362／0x48AAEC）。台帳を空にする時点の候補。→ 要実機確認。
+  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+
 <a id="field-1eebec"></a>
 ## context + 0x1EEBEC
 
 - [research/recovered/b_batch8/data/T013_CASE8_KEY_PRODUCER_EVAL_ORDER_NATIVE_20261024_0317.md 行 10](../../research/recovered/b_batch8/data/T013_CASE8_KEY_PRODUCER_EVAL_ORDER_NATIVE_20261024_0317.md?plain=1#L10-L10) — [NEW-5 TREE JOIN] 0x0049E954～0x0049E962でEDX文字列のNUL終端長を計算、0x0049E966→0x00402800でlocal stringへ複製、0x0049E975でcontext+0x1EEBECを指定して0x0049E980→0x0049F410の範囲検索へ到達。前回の
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md 行 87](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md?plain=1#L87-L87) — - context+0x1EEBEC の multimap（名前 → BattleUnit。ノード +0x28 が BattleUnit）を equal_range で引き、**生きている（+0x1867C=0）ものを優先、いなければ最初の倒れたもの**を返す（0x49E826〜0x49E889）。
+  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+
+- [research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md 行 119](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/EXP_DAT_DESIGN_20261103.md?plain=1#L119-L119) — - 直前の失敗（18:51、PID 11352）: 名前の表を context+0x1EEBEC と読み違え（件数 8,716,303 という無関係な値）。正しくは評価器（context+0x504）+0x1EEBEC。x32dbg の記録で 0x49E780 の EDX が評価器だったこと、動作中のメモリの読み取りで
+  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
 
 <a id="field-1eed20"></a>
 ## context + 0x1EED20

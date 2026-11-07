@@ -34,6 +34,12 @@
 - [research/recovered/other_reports/T009_CONTEXT_MODEL.md 行 86](../../research/recovered/other_reports/T009_CONTEXT_MODEL.md?plain=1#L86-L86) — - neutral_max: effective spot_capacity (`scenario/context +0x0C`) をfallbackに使用。
   制約・訂正　Historical authored static claims only; no new native/runtime validation; referenced evidence omitted; Golden/READY unchanged
 
+- [research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/section96.md 行 28](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/section96.md?plain=1#L28-L28) — - 0x551E50 が加算しない条件（先頭）: 技能の exp_per=off（Skill+0x2A8 が −123456.0）、actor+0x1D0（部隊）＝0、actor+0x18614≠0、context+0xC≠0（同じ攻撃で加算済み）。
+  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+
+- [research/recovered/outside_dev1/reports/001_README.md 行 47](../../research/recovered/outside_dev1/reports/001_README.md?plain=1#L47-L47) — - `hit_linked_award_subset.py`: 0x551E50のcontext+0xC一度きり、ratio／skill別上限、Unit+0x1C8のlinked値+0x16C更新とunsigned thresholdまで。level helper/UI実効果なし。
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
+
 - [research/recovered/outside_reports1/reports/exp_research_20261021/EXP_RESEARCH_PROGRESS_20261022.md 行 15](../../research/recovered/outside_reports1/reports/exp_research_20261021/EXP_RESEARCH_PROGRESS_20261022.md?plain=1#L15-L15) — \| P1 \| 複数技能の経験値重複 \| hit context+0xC、連射回数、成功判定 \| 複数hit/0EXP/skill offを元EXEで比較 \|
   制約・訂正　Historical authored static/synthetic/ops/draft claims only; linked payloads not acquired; no new native/runtime/READY/DONE/Golden/strict MATCH; current REF and prior held scopes remain
 
@@ -354,11 +360,5 @@
 
 - [research/recovered/e_reports/T020_E_T013_OFF_EXACT_VSLOT_ACCEPTANCE_20261101_02H.md 行 9](../../research/recovered/e_reports/T020_E_T013_OFF_EXACT_VSLOT_ACCEPTANCE_20261101_02H.md?plain=1#L9-L9) — [T020 FIXTURE] 7 synthetic ASCII returned values ('off','on','offx','off ','of','OFF','') x 7 second-key values x context+0xE4 {0,1} x PtInRect AL {0,1} x ESI {
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
-
-- [research/recovered/e_reports/T020_E_T013_OFF_EXACT_VSLOT_ACCEPTANCE_20261101_02H.md 行 13](../../research/recovered/e_reports/T020_E_T013_OFF_EXACT_VSLOT_ACCEPTANCE_20261101_02H.md?plain=1#L13-L13) — [KB_CANDIDATE] E/T020 this ID crosschecks B/T013 source with original PE SHA; VA 0x45A26F/0x45A296/0x45A2C6/0x42F860/0x57D994/0x57D99B/0x57D99F/0x57D9A9; global
-  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
-
-- [research/recovered/tests_batch5/T020_E_T013_VIEWFLAG_CHAIN_ACCEPTANCE_20261101_01H.md 行 9](../../research/recovered/tests_batch5/T020_E_T013_VIEWFLAG_CHAIN_ACCEPTANCE_20261101_01H.md?plain=1#L9-L9) — [COMPOSITION] Downstream B00 consumer 0x4C1690: if final flag=0 OR context+0xE4 nonzero, modeled RAW_PASSTHROUGH; otherwise D3DX_REQUIRED. Route selection is no
-  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

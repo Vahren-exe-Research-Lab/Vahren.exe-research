@@ -10,4 +10,10 @@
 - [research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md 行 58](../../research/recovered/knowledge_history1/reports/knowledge/REF_AUDIO_VORBIS.md?plain=1#L58-L58) — - Native E8 0x005DA604/0x005DA6D6 both call CRT allocator 0x005B9BC8 and store codebook +0x08; E8 0x005DA811 similarly stores +0x20. Under positive element coun
   制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
 
+<a id="field-e0"></a>
+## stores + 0xE0
+
+- [research/recovered/outside_dev1/reports/017_WORK_V4_REVIEW_LOCATION_CUSTOM_COLUMNS_20261029.md 行 163](../../research/recovered/outside_dev1/reports/017_WORK_V4_REVIEW_LOCATION_CUSTOM_COLUMNS_20261029.md?plain=1#L163-L163) — Current core/dat_ui_v4_visuals.h and work_selector_native_detail.h still open 0x55BAB0/Temp, using EAX display value 0x80000008, ECX y, EDX x, stack definition.
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Only personal profile prefix substitutions; byte spans and all unchanged gaps proven.
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

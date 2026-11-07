@@ -64,6 +64,9 @@
 - [research/recovered/dev_reports/DEVLAB_HANDOFF_20261011_TYPED_DAMAGE_215.md 行 22](../../research/recovered/dev_reports/DEVLAB_HANDOFF_20261011_TYPED_DAMAGE_215.md?plain=1#L22-L22) — - src/hakushin_compat/hit_linked_award_subset.py + tests/test_hit_linked_award_subset.py: 9 PASS。hit once、ratio上限、skill+0x2A8の異なる変換/最低10、linked+0x16C符号なし加算/leve
   制約・訂正　Historical STATIC/INFERRED/VERIFY and synthetic-test claims; no new native/runtime verification; referenced raw assets/probes/archives not recovered; no Golden/READY promotion; attack mixed-stat expression later corrected to2-R in MAIN_DECOMP_STAGE; mode6 refined in MODE6_DISTANCE
 
+- [research/recovered/outside_kb1/reports/dev_lab/recovered_source/SOURCE_RECONSTRUCTION_ROADMAP.md 行 34](../../research/recovered/outside_kb1/reports/dev_lab/recovered_source/SOURCE_RECONSTRUCTION_ROADMAP.md?plain=1#L34-L34) — \| `0x551E50` \| `hit_linked_award_subset.py` \| hit context一回flag、linked+0x16C更新、ratio/skill固定倍率、unsigned thresholdをvirtual level helper前まで分離。経験値の実効果・level-upは未検証
+  制約・訂正　Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+
 - [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 329](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L329-L329) — ## 20. linked+0x16C/+0x170はUnit serializerで4-byte個別出力される（2026-10-10 新B）
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 

@@ -4,6 +4,15 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-8c"></a>
+## Unit + 0x8C
+
+- [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 239](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L239-L239) — - `Unit+0x8C` 単独bitの意味（SimpleUnit family markerまでは高確度、player-facing semanticsは未命名）。
+  制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
+
+- [research/recovered/remaining_md1/reports/data/T024_HAKUSHIN_BATTLE_AI.md 行 393](../../research/recovered/remaining_md1/reports/data/T024_HAKUSHIN_BATTLE_AI.md?plain=1#L393-L393) — [NEW ORIGINAL ASM] 0x41F007 JE0x41F07E: mode0はouter ownerを順走査し先頭Unit+0x8C==0/+0x1F8!=0の最初のownerで0x41F0C1→0x41F0CF/0x41F0DF「そのownerのinner length +3」を計算して0x41F0E2
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+
 <a id="field-8d"></a>
 ## Unit + 0x8D
 
@@ -126,6 +135,9 @@
 
 - [research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md 行 193](../../research/recovered/knowledge_history1/reports/knowledge/REF_SAVE_FORMAT.md?plain=1#L193-L193) — \| T014 A58・A59 \| Unit+0x94 の意味は不明 \| +0x84 の文字列の長さ（F§26） \| 同上 \|
   制約・訂正　Existing full body linked; catalog revision differs
+
+- [research/recovered/outside_dev1/reports/042_REF_SAVE_FORMAT.md 行 193](../../research/recovered/outside_dev1/reports/042_REF_SAVE_FORMAT.md?plain=1#L193-L193) — \| T014 A58・A59 \| Unit+0x94 の意味は不明 \| +0x84 の文字列の長さ（F§26） \| 同上 \|
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion.
 
 - [research/recovered/principal_models1/reports/data/T030_RTS_MODE.md 行 678](../../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L678-L678) — [COMPILED +4C AND MP GATE / CONDITIONAL] B保存VA0x59A2DA..59A398はraw special=onをSkill+0x4C signed1へ書込み、on以外をnumeric getterへ渡す分岐（格納値の親effectiveはVERIFY）。B/T012保存の通常
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
@@ -336,17 +348,5 @@
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3178](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3178-L3178) — \| R2 混乱による外れ \| T0 \| Unit+0xCC<0 のときだけ \| 判定値 < DAT_0065bd60 なら標的点を乱数でずらし、R3 を飛ばす \| Rng_RangeInclusive 1回。外れたらさらに rand() 1回 \| vf31 0x57E79D/0x57E7FF。フィールド名は VERIF
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
-
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3266](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3266-L3266) — - Unit+0xCC / +0xC8 の正式名と閾値 DAT_0065bd60 / 0065bd64。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
-
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3293](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3293-L3293) — 5. Unit+0xCC / +0xC8、DAT_0065bd60 / 64、0x57BE30、対象+0x66。いずれも保存済み B / REA の該当 VA が必要。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
-
-<a id="field-d0"></a>
-## Unit + 0xD0
-
-- [research/recovered/b_batch4/data/B_T012_T024_VOICE_EXPIRY_ROUTING_OFFLINE_20261022_1210.md 行 15](../../research/recovered/b_batch4/data/B_T012_T024_VOICE_EXPIRY_ROUTING_OFFLINE_20261022_1210.md?plain=1#L15-L15) — 3. `FUN_0057B380` の外側の入場条件は単純な無条件実行ではない。少なくとも `Unit+0x1867E == 0`、32-bit符号付き `Unit+0xC0 >=0`、`Unit+0xD0 >=0` が必要で、さらに `+0x8C!=0`、`+0x1F8==0`、`+0x1F9!=0`、`+0x186
-  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

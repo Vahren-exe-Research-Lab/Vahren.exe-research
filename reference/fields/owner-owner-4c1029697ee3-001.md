@@ -106,6 +106,9 @@
 - [research/recovered/b_reports/T024_FALLBACK_FLAG_LATCH_FOURWAY_NATIVE_20261025_23H.md 行 9](../../research/recovered/b_reports/T024_FALLBACK_FLAG_LATCH_FOURWAY_NATIVE_20261025_23H.md?plain=1#L9-L9) — - +0x3E/3F（0x526B8B/0x526B96）成立時はowner+0x48..0x4CのUnitポインタspanを走査し、Unit+0x1867C==0、+0x8C==0、+0x1F8!=0を満たす要素へ 0x526BCF Unit+0x18684=2、0x526BD9→0x576660、0x526BE3→
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail; source addendum limits missing-call claim to legacy20261021 DB, not V3
 
+- [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/BATTLE_AI_ARCHITECTURE_20261025.md 行 41](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/BATTLE_AI_ARCHITECTURE_20261025.md?plain=1#L41-L41) — - `0x514D60` primary（SimpleUnit、owner+0x48 vector）とfallback（SimpleStaticUnit、owner+0x58 vector）を別に走査。距離が同じなら通常は先に列挙された候補を保持。
+  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+
 - [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 230](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L230-L230) — - battle owner/containerへの登録でも `+0x8D` がcollection splitに使われ、SimpleUnitは `owner+0x48` vector、SimpleStaticUnitは `owner+0x58` vectorへ入る。
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 
@@ -159,6 +162,9 @@
 
 - [research/recovered/b_batch3/T012_ENTRY_CONTEXT_FALLBACK_SUPPORT_AND_RESET_20261021.md 行 30](../../research/recovered/b_batch3/T012_ENTRY_CONTEXT_FALLBACK_SUPPORT_AND_RESET_20261021.md?plain=1#L30-L30) — 15. VERIFY P0: 0x597860実戻りABI、0x597B00/0x583C70のin_EAX元、0x415460比較値、candidate/owner+0x58の型、0x48F9E0実起点と援軍による名簿確定、0x492710との実順、3side初期並び、時刻/結果/dynamic Golden。実再開
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/outside_design1/reports/dev_lab/story/ONDISK/BATTLE_AI_ARCHITECTURE_20261025.md 行 41](../../research/recovered/outside_design1/reports/dev_lab/story/ONDISK/BATTLE_AI_ARCHITECTURE_20261025.md?plain=1#L41-L41) — - `0x514D60` primary（SimpleUnit、owner+0x48 vector）とfallback（SimpleStaticUnit、owner+0x58 vector）を別に走査。距離が同じなら通常は先に列挙された候補を保持。
+  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
 
 - [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 230](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L230-L230) — - battle owner/containerへの登録でも `+0x8D` がcollection splitに使われ、SimpleUnitは `owner+0x48` vector、SimpleStaticUnitは `owner+0x58` vectorへ入る。
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
@@ -405,14 +411,5 @@
 
 - [research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md 行 1187](../../research/recovered/handoff_scope1/reports/evidence/LANE_A_HANDOFF.md?plain=1#L1187-L1187) — [CONFIRMED-SAVED-NATIVE / A77 DELTA] A所有 `data/T014_GLOBAL_SAVE.md` A77節（668行へ追記・再読済）。`exe/T014_LOAD_CORE_DUMP.txt` 0x45E392..0x45E3B7 の第1wrapper経由 `0x45E1E0` r
   制約・訂正　Historical authored research/ops claims only; original READY/NOT READY, synthetic, native acceptance and Golden/MATCH states retained as author data; no new native/runtime/READY/DONE/Golden credit; linked payloads not acquired; all prior held scopes remain
-
-- [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 548](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L548-L548) — [CONFIRMED-SAVED-NATIVE] A所有`exe/T014_NORMAL_LOAD_PROBE.txt`のreaderは同一marker `0x65CD28` との文字列比較後、非markerの場合に群別construct枝へ進み、次レコードへ戻る。numeric: 0x45ED92→0x45F8A2(
-  制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
-
-<a id="field-310"></a>
-## owner + 0x310
-
-- [research/recovered/b_batch8/data/T013_CASE29_VARIABLE_LOOKUP_MISS_ZERO_NATIVE_20261025_13H.md 行 11](../../research/recovered/b_batch8/data/T013_CASE29_VARIABLE_LOOKUP_MISS_ZERO_NATIVE_20261025_13H.md?plain=1#L11-L11) — - 0x463D1E MOV ESI,[owner+0x310] は辞書end/sentinel候補。0x463D24 MOV EAX,[ESP+0x14] / 0x463D28 CMP EAX,ESI / 0x463D2A JE 0x463D4A は発見・未発見の分岐。
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

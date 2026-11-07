@@ -14,4 +14,15 @@ TempStatusWnd+0x84。表示中の印
 
 関係の個別採録は未実施です。
 
+## 研究文書での言及
+
+以下は文書内の言及（意味・動作の検証なし）です。文書の限界や訂正も併せて確認してください。
+
+- [回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1708-L1708) — research/recovered/outside_kb1/reports/knowledge/REF_STRUCTS.md。収録状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Currentroot1704 SHA/source-label lookup; historical content SHA not supplied。制約・訂正 Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+- [research/recovered/outside_kb1/reports/knowledge/REF_STRUCTS.md:102](../../research/recovered/outside_kb1/reports/knowledge/REF_STRUCTS.md?plain=1#L102-L102) — \| `+0x84` \| u8 \| `shown` \| 表示中の印（WarWnd+0x84 = 0x8BA5BC、TempStatusWnd+0x84 = 0x8BCDCC） \| 実機確認 \| C(§93), W \|
+- [回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1719-L1719) — research/recovered/outside_kb1/reports/knowledge_validation_20261030/REF_STRUCTS.md。収録状態 CONTENT_REVIEWED_EXACT。以前の収録状況 Currentroot1704 SHA/source-label lookup; historical content SHA not supplied。制約・訂正 Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+- [research/recovered/outside_kb1/reports/knowledge_validation_20261030/REF_STRUCTS.md:53](../../research/recovered/outside_kb1/reports/knowledge_validation_20261030/REF_STRUCTS.md?plain=1#L53-L53) — \| `+0x84` \| u8 \| `shown` \| 表示中の印（WarWnd+0x84 = 0x8BA5BC、TempStatusWnd+0x84 = 0x8BCDCC） \| 実機確認 \| C(§93), W \|
+- [回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L1752-L1752) — research/recovered/outside_dev1/reports/017_WORK_V4_REVIEW_LOCATION_CUSTOM_COLUMNS_20261029.md。収録状態 FULL_BODY_PRIVACY_VARIANT。以前の収録状況 NOT_IN_BASELINE_ACCEPTED_LEDGER。制約・訂正 Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Only personal profile prefix substitutions; byte spans and all unchanged gaps proven.
+- [research/recovered/outside_dev1/reports/017_WORK_V4_REVIEW_LOCATION_CUSTOM_COLUMNS_20261029.md:84](../../research/recovered/outside_dev1/reports/017_WORK_V4_REVIEW_LOCATION_CUSTOM_COLUMNS_20261029.md?plain=1#L84-L84) — 1. TempStatusWnd instance 0x8BCD48, vtable 0x639CD4, target self+0x1B8=0x8BCF00, visible self+0x84=0x8BCDCC. Existing adapter owns this exact instance/vtable/target/epoch, checks UI thread and reentrancy. Verified opening 0x55BAB0 ABI from saved assembly: EAX=display, ECX=y, EDX=x, stack=definition, RET 4. It calls 0x55BC60 with arg 0 and normal opening performs synchronous rendering; an early hide-only path exists. Hide 0x55B590 uses ECX=self, stack 0, RET 4. Do not transfer these contracts to another function merely because it opens details.
+
 [事典の入口](../README.md)

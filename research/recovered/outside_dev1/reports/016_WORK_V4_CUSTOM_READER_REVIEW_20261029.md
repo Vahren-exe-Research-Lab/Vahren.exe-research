@@ -1,0 +1,27 @@
+# Independent v4 custom numeric reader review — 2026-10-29
+Scope: read-only source review; no source edits, build, game/debugger operation or deployment. Root owns implementation and test execution.
+Reader SHA256: 80fe2e1168ef7772b865414b946895b6efb4b6c0c36d85d4ffe2791043f73423.
+Fixture SHA256: 2f57bc70961ad0496da0dd32062c53194e9f85db67443f323b745b31cc6880ec.
+Source hash/mtime inventory: WORK_V4_CUSTOM_READER_REVIEW_SOURCES.json; final readback: WORK_V4_CUSTOM_READER_REVIEW_AFTER.json.
+
+## Verdict
+No blocking defect found in the requested reserved-reference, output-alias, bounded-map, snapshot/stack and original-row mapping review. Suitable to proceed with scoped synthetic/runtime verification and a small ASCII-reference DAT trial. This is not an actual-game approval or an assertion all possible malformed memory is covered.
+
+## Checked contracts
+- **Reserved references:** both custom-list names and per-row numeric references pass wdu4_ref_ok; hk_ui_ is rejected before lookup. Values are names looked up exactly, never evaluated as DAT expressions. An expression-looking name such as a+b is not executed; it can only resolve if an actual map key of that spelling exists. Do not describe the grammar as strictly alphanumeric.
+- **Aliases:** all seven outputs must have distinct numeric-cell addresses. Every custom numeric cell must differ from every output cell, regardless of its map-key spelling. Duplicate custom references and distinct custom names sharing a read-only numeric cell are intentionally accepted. Source tests cover each output spelling/address alias, duplicate refs, reused lists, misalignment and overflow.
+- **Bounds:** rows1..512, columns0..8, up to4096 custom references plus7 outputs. The private collector rejects more than4103 requested keys and map maximum>16384; total<=maximum bounds allocations, hash fill and iterative traversal. Sentinel/header/root rereads, visited-node hash, exact node count and duplicate requested-key resolution prevent cycles/shared children/count mismatches. No recursive tree walk. Existing v3 collector limit remains unchanged.
+- **Read arithmetic:** wdus_read checks nonzero/range before the callback. Numeric record bounds/alignment are checked before cell access. A successful node-size read precedes its field arithmetic. Allocation failures free partial allocations and reject.
+- **Snapshots:** custom list names, row refs, resolved cell addresses and values are included in zero-initialized snapshots. Two matching heap captures plus full memcmp detect the tested ref/cell/value changes, even equal-value reference substitution. Failure leaves the caller's output unchanged. This is not atomicity/ABA protection; supported image, UI-thread and lifetime/open epochs remain caller obligations.
+- **Stack:** the two enlarged snapshots are heap allocations in wdu4_capture. Production v4_capture/v4_fresh and presentation buffers are static; collector's larger key/node/cell/stack/seen arrays are heap allocations. No new large automatic snapshot was found in the reviewed production path. External callers must preserve that pattern.
+- **Stable row mapping:** refs[col][row] and values[row][col] stay in original DAT candidate order. sort_column/descending are metadata only. Runtime packs values without moving candidate IDs; grid order[] stores source row IDs, preserves DAT order on equal values, and selected/finish callbacks return source row. v4_detail_show and wdu4_commit_plan use that source row. Final runtime capture compares full snapshot and writes original row index, anchor0, backend1 last. The reader does not write game memory itself.
+
+## Nonblocking compatibility finding
+wdu4_ref_ok rejects the byte0x40 ('@') anywhere. In CP932, 0x40 is also a valid trailing byte: small katakana A (U+30A1) encodes as83 40, so a reference/list name containing that character is rejected despite being a valid non-ASCII name. The comment that CP932 non-ASCII bytes remain accepted is therefore too broad. Initial ASCII references are unaffected. Either document restricted/ASCII protocol identifiers, or later validate CP932 character boundaries before rejecting standalone ASCII punctuation; do not silently expand identifier grammar in this review. Python codec conversion verified the byte example only; no C test was run.
+
+## Test interpretation and next bounded checks
+The custom reader fixture exercises reserved names/address aliases, values at INT32 extremes, duplicate references, same-valued identity mutation, malformed counts/pointers/cycle, maximum512x8 and one numeric-map traversal per pass. It checks sort metadata and unchanged ID order, not a real grid sort-to-native-commit round trip. It does not simulate every allocator failure, every header/root mutation or CP932 trail-byte case. These are coverage limits, not reported failures.
+
+Root's minimum integration checks should keep candidate IDs fixed while custom Bonus changes sort order; select the moved row and confirm the DAT original index/ID and one continuation. Repeat with duplicate numeric values, mixed built-in/custom columns, missing custom variable (reject/fallback), and custom value/ref mutation before confirmation (no stale commit). Run native/built-in v4 regressions to ensure the enlarged snapshot/collector did not change no-custom requests. Existing window input/hover ownership defects are outside this reader and remain governed by the separate hover review.
+
+All conclusions are STATIC_REVIEW. No source modified; no Golden/MATCH promotion.

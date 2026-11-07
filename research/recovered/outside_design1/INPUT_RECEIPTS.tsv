@@ -1,0 +1,3 @@
+role	path	sha256	bytes	notes
+APPROVED_SELECTION	private-approved-selection/hakushin-outside_design1-approved.tsv	f9662cd266e325007bc6ac01b8d57f332f24482ebd203231c7b83da1b15e923d	10671	42 literal paths; pins are size/mtime/path identity only, no historical body SHA
+BASELINE_AND_CURRENT_LEDGER	research/recovered/RECOVERY_LEDGER.tsv	2abf73206c7e4f5885df3143f2db9096b1a71eeb27003828f351f6a2d6bfbd95	1180880	1704 rows; current bytes equal fixed git baseline b347163cd3201b99f06ebdad0bb0882a4371f045

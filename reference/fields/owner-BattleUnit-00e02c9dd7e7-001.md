@@ -10,6 +10,12 @@
 - [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md 行 27](../../research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md?plain=1#L27-L27) — - 0x547A68はEAX=親BattleUnit+0x7C（経験値context）、0x547A6Bはcontext.actor=親EBP、0x547A6Dはcontext.skill=EBXを設定する。
   制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
 
+<a id="field-178"></a>
+## BattleUnit + 0x178
+
+- [research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/section96.md 行 9](../../research/recovered/outside_design1/reports/dev_lab/_work/summon_exp_20261103/section96.md?plain=1#L9-L9) — - **親→子: 親の BattleUnit +0x178/+0x17C/+0x180 が子の一覧（std::vector<BattleUnit*>）。**
+  制約・訂正　Authored archival claims/design/fiction only; no new implementation/native/runtime/READY/Golden credit; linked material not acquired; original statuses retained.
+
 <a id="field-1c8"></a>
 ## BattleUnit + 0x1C8
 

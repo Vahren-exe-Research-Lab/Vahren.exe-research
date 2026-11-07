@@ -7,6 +7,9 @@
 <a id="field-c"></a>
 ## holder + 0xC
 
+- [research/recovered/outside_kb1/reports/knowledge_validation_20261030/CATALOG.md 行 113](../../research/recovered/outside_kb1/reports/knowledge_validation_20261030/CATALOG.md?plain=1#L113-L113) — \| 2026-10-27 \| `data/T011_SUMMON_UNIT_HOLDER_INHERITANCE_NATIVE_20261027_13H.md` \| B-20261027-13H-T011-UNIT-HOLDER-CTOR-SUMMON-JOIN-01｜T011召喚Unitのholder+0xC生成元と
+  制約・訂正　Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+
 - [research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md 行 762](../../research/recovered/principal_models1/reports/data/T011_DATA_MODEL.md?plain=1#L762-L762) — ## B-20261027-13H-T011-UNIT-HOLDER-CTOR-SUMMON-JOIN-01｜T011召喚Unitのholder+0xC writer（STATIC / VERIFY / NOT READY）
   制約・訂正　Independent authored historical research; current REF priority; no native/runtime/ABI/READY promotion; linked evidence not fetched
 

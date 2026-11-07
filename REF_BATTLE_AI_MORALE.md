@@ -362,3 +362,16 @@ Status: CURATED_STATIC for permitted bounded ver0.67 original x86 only; no origi
 - B-20261027-01H-T028-ROUTE-CACHE-BOUNDED-PROMOTION-01: [pinned owner source](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/fbf539e528a172e8b8d5c74ecf93d0b886e7873d/research/intake/B/B-20261027-01H-T028-ROUTE-CACHE-BOUNDED-PROMOTION-01.md); original data/T028_ROUTE_CACHE_THRESHOLD_PROMOTION_NATIVE_20261027_01H.md SHA256 948B343D87621DEB9960E119A827DBBAA515ABD0F4BC67B05B415972FA5F8E36. Native 0x4EC411 compares cache count [EBP+0xB0] against 0x1F40 (8000), and 0x4EC41B JBE skips relinking at or below 8000. Above that threshold, if head key differs, calls 0x4EC434 -> 0x4EC680 and 0x4EC43D -> 0x4EC640 remove/reappend a key. At 0x4EC4D1 comparison against 0x2000 (8192), 0x4EC4DB JB bypasses post-insert eviction while count <8192. Universal LRU-on-every-hit is incorrect. Native 0x4EC1E0 935-byte and 0x4EC720 189-byte original windows SHA matched prior owner receipts; hash/key identity, abnormal memory state, actual pathfinding quality and gameplay are VERIFY.
 
 Dedup/errata: B-20261026-0816-T028-SIMPLESTATIC-SPATIAL-TREE-ERASE-01 already covers the separate tree removal; B-20261027-0013-T028-ROUTE-LIST-RANGE-ABI-CORRECTION-01 remains the preceding list ABI correction. They are not recounted as new studies. Only exact native function descriptions enter symbols.tsv, not speculative structures. Search by ID and VA here and in research/intake/README.md. Original-game Golden PASS=0, strict MATCH=0, newly READY=0, G4 NOT PASSED.
+
+
+## 保存済みTroop研究の関数入口を事典へ接続（2026-11-05）
+
+未コミット変更の関数キーを手掛かりに、既に固定保存した一次報告から辞書へ採録した。これは保存済み静的研究の整理であり、今回の原作・native・実機検証ではない。関数名は参照用の説明名で、ABI・正式型・実動作を確定しない。
+
+| 関数 | 保存済み根拠 | 採録範囲・未確認 |
+|---|---|---|
+| [TroopVirtualSlot4_PeriodicCandidateRoutine](reference/symbols/0056AB20.md) `0x56AB20` | [T013_TROOP_RTTI_HALF_RATIO_GATE_V9_20261023_1708.md:7-11](research/recovered/b_batch3/T013_TROOP_RTTI_HALF_RATIO_GATE_V9_20261023_1708.md?plain=1#L7-L11) | Troopのvtable+4に対応すると原報告が記録する候補処理。入口の条件を通ると局所カウンタを更新し、周期条件付きで0x569360を呼ぶ。実仮想CALL到達・士気や逃走との関係・ABIは未確認。 |
+| [TroopFirstEligiblePartnerRatioGate](reference/symbols/00569360.md) `0x569360` | [T013_TROOP_RTTI_HALF_RATIO_GATE_V9_20261023_1708.md:12-18](research/recovered/b_batch3/T013_TROOP_RTTI_HALF_RATIO_GATE_V9_20261023_1708.md?plain=1#L12-L18) | 最初の適格Unitをアンカーとして他の適格候補の近接比率を判定すると原報告が解析。通常有限値のモデルではM/N>=0.5、比較相手なし等は1。FPU特殊値・ABI・実動作は未確認。 |
+| [TroopPositionCandidateScratchProducer](reference/symbols/005699C0.md) `0x5699C0` | [T013_TROOP_POSITION_SCRATCH_MODE_V3_20261023_1915.md:5-14](research/recovered/b_batch10/data/T013_TROOP_POSITION_SCRATCH_MODE_V3_20261023_1915.md?plain=1#L5-L14) | 構成員候補を列挙し、局所mode別に配置候補pairを共有scratchへ積む処理候補。原報告は角度候補のowner+0x28保存と8byte単位のscratch再利用を記録。型・座標系・ABI・実出力は未確認。 |
+
+各行のSHA・確度は[採録表](research/recovered/intake_outside_map_20261105/SYMBOL_ADOPTIONS.tsv)へ固定した。局所記号owner/thisを正式な構造体型へ昇格させず、新しいフィールド・呼出関係・Golden/READYを機械的に増やしていない。

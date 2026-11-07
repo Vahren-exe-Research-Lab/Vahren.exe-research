@@ -40,6 +40,12 @@
 - [research/recovered/b_batch4/data/T011_B_REENTRY_LOCAL429_RECOVERY_20261021_0510.md 行 5](../../research/recovered/b_batch4/data/T011_B_REENTRY_LOCAL429_RECOVERY_20261021_0510.md?plain=1#L5-L5) — - 許可された独立作業: 添付済オフラインZIP34 entry CRC PASS、manifest-SQLite SHA一致、既保存Ghidra擬似CとCALL関係のみ静的照合。新規研究候補 `B-OFFLINE-20261021-0510-01`（T011 0x582D90 member→0x466F60→0x58
   制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
 
+<a id="field-1c4"></a>
+## flag + 0x1C4
+
+- [research/recovered/outside_dev1/reports/017_WORK_V4_REVIEW_LOCATION_CUSTOM_COLUMNS_20261029.md 行 94](../../research/recovered/outside_dev1/reports/017_WORK_V4_REVIEW_LOCATION_CUSTOM_COLUMNS_20261029.md?plain=1#L94-L94) — - Player detail followed 0x55D93A (employment flag +0x1C4), 0x55D99C (dismissal +0x1C6), 0x55D9BB, then 0x55D9FC. 0x55D9DD item construction was not taken. Rebu
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Only personal profile prefix substitutions; byte spans and all unchanged gaps proven.
+
 <a id="field-1867c"></a>
 ## flag + 0x1867C
 
@@ -57,5 +63,11 @@
 
 - [research/recovered/b_batch3/T028_BATTLE_MODE_CONFIG_PRODUCER_NATIVE_20261028_00H.md 行 11](../../research/recovered/b_batch3/T028_BATTLE_MODE_CONFIG_PRODUCER_NATIVE_20261028_00H.md?plain=1#L11-L11) — - したがってこのwriterの条件式は mode = NOT enemy_battle（AL==0 && manager.flag+0x1EED55==0）、それ以外は NOT player_battle。設定が未指定なら前者mode1、後者mode0の静的規則。ALの上流意味・flag+0x1EED55の名称はVE
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+<a id="field-1ef4be"></a>
+## flag + 0x1EF4BE
+
+- [research/recovered/outside_dev1/reports/017_WORK_V4_REVIEW_LOCATION_CUSTOM_COLUMNS_20261029.md 行 98](../../research/recovered/outside_dev1/reports/017_WORK_V4_REVIEW_LOCATION_CUSTOM_COLUMNS_20261029.md?plain=1#L98-L98) — Saved 0x55BC60 line 99 clears the DWORD at self+0x1C4, then final button paths draw via 0x455520 and set individual bytes. The four flags are +0x1C4 employment,
+  制約・訂正　Historical authored proposal/report/version; commands inert; referenced native/code/game/log/asset payloads unopened; no new runtime/native/Golden/READY validation or automatic core promotion. Only personal profile prefix substitutions; byte spans and all unchanged gaps proven.
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

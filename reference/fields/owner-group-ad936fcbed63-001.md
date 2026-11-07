@@ -106,6 +106,12 @@
 - [research/recovered/b_reports/T011_T013_GROUP1E_ALL25_CALLER_AL_POSTCALL_NATIVE_20261101_08H.md 行 1](../../research/recovered/b_reports/T011_T013_GROUP1E_ALL25_CALLER_AL_POSTCALL_NATIVE_20261101_08H.md?plain=1#L1-L1) — # 迫真戦記 ver0.67｜新B 2026-11-01 08H｜group+0x1E setter全25直接CALLのAL入力と直後の処理分類
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
+- [research/recovered/outside_kb1/reports/knowledge/CATALOG.md 行 101](../../research/recovered/outside_kb1/reports/knowledge/CATALOG.md?plain=1#L101-L101) — \| 2026-11-01 \| `data/T011_T013_GROUP1E_ALL25_CALLER_AL_POSTCALL_NATIVE_20261101_08H.md` \| 迫真戦記 ver0.67｜新B 2026-11-01 08H｜group+0x1E setter全25直接CALLのAL入力と直後の処理分類
+  制約・訂正　Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+
+- [research/recovered/outside_kb1/reports/knowledge/CATALOG.md 行 177](../../research/recovered/outside_kb1/reports/knowledge/CATALOG.md?plain=1#L177-L177) — \| 2026-11-01 \| `data/T011_T013_GROUP1E_ALL25_CALLER_AL_POSTCALL_NATIVE_20261101_08H.md` \| 迫真戦記 ver0.67｜新B 2026-11-01 08H｜group+0x1E setter全25直接CALLのAL入力と直後の処理分類
+  制約・訂正　Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+
 <a id="field-30"></a>
 ## group + 0x30
 
@@ -180,6 +186,18 @@
 
 - [research/recovered/b_reports/T011_T024_GROUP34_PROXIMITY_RATIO_100TICK_NATIVE_20261101_10H.sanitized.md 行 43](../../research/recovered/b_reports/T011_T024_GROUP34_PROXIMITY_RATIO_100TICK_NATIVE_20261101_10H.sanitized.md?plain=1#L43-L43) — 誤用を避けるため、前回09Hの `group+0x34` を「士気」「攻撃力」と断定しない。今回は**近接比率の距離閾値として使う**根拠を得たが、+0x228や+0x34のゲーム内名称はまだ未承認。グループ `+0x1C/+0x1D/+0x1E/+0x30/+0x34/+0x3C/+0x44` を別フィールドとして扱
   制約・訂正　Privacy derivative: one personal research-root prefix replaced with <research-root> plus explicit recovery annotation; full technical content retained; reversible byte reconstruction matches source SHA; historical STATIC/INFERRED/VERIFY only; no linked payload read or Golden/READY promotion
+
+- [research/recovered/outside_kb1/reports/knowledge/CATALOG.md 行 107](../../research/recovered/outside_kb1/reports/knowledge/CATALOG.md?plain=1#L107-L107) — \| 2026-11-01 \| `data/T011_T024_GROUP34_DUAL_BUCKET_ELIGIBILITY_NATIVE_20261101_11H.md` \| 迫真戦記 ver0.67｜B/T011・T024：group+0x34 の二系統集計と適格Unit判定（2026-11-01 11H JST）
+  制約・訂正　Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+
+- [research/recovered/outside_kb1/reports/knowledge/CATALOG.md 行 108](../../research/recovered/outside_kb1/reports/knowledge/CATALOG.md?plain=1#L108-L108) — \| 2026-11-01 \| `data/T011_T024_GROUP34_PROXIMITY_RATIO_100TICK_NATIVE_20261101_10H.md` \| 迫真戦記 ver0.67｜新B T011/T024：group+0x34 の空間的近接判定への使用と100tick再評価（2026-11-01
+  制約・訂正　Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+
+- [research/recovered/outside_kb1/reports/knowledge/CATALOG.md 行 325](../../research/recovered/outside_kb1/reports/knowledge/CATALOG.md?plain=1#L325-L325) — \| 2026-11-01 \| `data/T011_T024_GROUP34_DUAL_BUCKET_ELIGIBILITY_NATIVE_20261101_11H.md` \| 迫真戦記 ver0.67｜B/T011・T024：group+0x34 の二系統集計と適格Unit判定（2026-11-01 11H JST）
+  制約・訂正　Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
+
+- [research/recovered/outside_kb1/reports/knowledge/CATALOG.md 行 326](../../research/recovered/outside_kb1/reports/knowledge/CATALOG.md?plain=1#L326-L326) — \| 2026-11-01 \| `data/T011_T024_GROUP34_PROXIMITY_RATIO_100TICK_NATIVE_20261101_10H.md` \| 迫真戦記 ver0.67｜新B T011/T024：group+0x34 の空間的近接判定への使用と100tick再評価（2026-11-01
+  制約・訂正　Historical authored/compiled claims only; generated tables are not new studies; current curated REF/corrections prevail; no linked acquisition or command execution; no new semantic/type/ABI/native/runtime/READY/Golden adoption
 
 <a id="field-38"></a>
 ## group + 0x38
