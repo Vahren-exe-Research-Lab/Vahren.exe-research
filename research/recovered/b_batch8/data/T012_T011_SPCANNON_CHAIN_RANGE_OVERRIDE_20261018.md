@@ -1,0 +1,14 @@
+# B-20261018-1616-01｜T012主/T011参照・sp_cannon親技能の次段chain差替とrange/fkey明示@（限定原文STATIC）
+[OWNER/STATUS] 2026-10-18 16時台 JST。B限定独立原文比較。原本ZIP/EXEはread-only・実行なし。E正式統合は本件では未実施。
+[ORIGINAL PARENT] normalized a_default/script/30_スキル/F10_missile_砲撃リニューアル.dat L27-57 の skill b_cannon:sk_ms は range=800, range_min=200, gun_delay=cannon*4, pair_next=b_cannon_pr0, next3=b_cannon_nt1,b_cannon_nt2,b_cannon_pr1,b_cannon_pr2,b_cannon_nt_crit,b_cannon_nt_crit2,taiho_bom（字面7子）, next_last=on を直接指定。
+[ORIGINAL CHILD] normalized a_default/script/30_スキル/C_必殺_クラス専用.dat L2-32 の skill sp_cannon:b_cannon は check=800,range=750,range_min=@,far=off,special=on,gun_delay=cannon*6,fkey=@,wait_time=30 と、pair_next=sp_cannon_pr, next3=sp_cannon_nt,b_cannon_nt_crit,b_cannon_nt_crit2,taiho_bom（字面4子）を直接指定。
+[SECOND STAGE] 同 C_必殺_クラス専用.dat L33-40 skill sp_cannon_nt は parentを明示せず、rush=2,rush_interval=30,joint_skill=on,next3=b_cannon_nt1,b_cannon_nt2,b_cannon_pr1,b_cannon_pr2 を直接列挙。これはb_cannon root next3の一部と文字列IDを共有するが、同一生成回数や実行順を保証しない。
+[CLASS LINK] 既B-20261018-1328-01の原作class a0054:a005 は sp_cannon と b_cannon を同じdirect skill行に列挙。既B-20261018-1514-01の親Class a005/tuyo_cannon*3と共有delayは参照のみ、今回再計上0。
+[PRE-SAVED EXE XREF] target EXE SHA256 e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187（既保存値）。既T012§32 native loader VA0x59CDA3..0x59CDFB（str/ratio）ではなく、T012保存のrange/check/min parser・VA0x547096/0x5470A9 normal使用gate、T011既保存Skill+0x4C special producerを相互参照するだけ。今回新しいEXE命令抽出/逆解析0。
+[STATIC DELTA] 先行B-1214/1328/1418/1514のcannonキーとClass取得は再採番せず、今回は親から子への「root next3 7→直接4・pair_next変更・その子sp_cannon_ntの次段4・明示range_min=@/fkey=@・check800/range750」の特定宣言差分だけが新規。
+[VERIFY] 親技能継承と子のlist置換/加算、明示@のnative resolver、有効check/range/min・fkey、次段呼出順/個数、合法a0054所持、MP/使用条件・空間0x4E7ED0・投射0x580280・Unit+0x1E560/+0x18688・命中/HP/RNG/次tickは未証明。normal range gateをspecial=onの経路へ無断外挿しない。
+[REIMPLEMENT] Skill定義の parent, raw-next3, raw-pair_next, raw-range, raw-check, raw-range_min-null, raw-fkey-null, raw-special, raw-gun-delay を別表現し、compiler／parent resolver／runtime Skill／task emissionを出所別に分離。root direct list長を実射弾数へ変換しない。
+[GOLDEN] 合法な未改変原作でa0054→sp_cannonとb_cannon双方の保有・発射UIを可視確認した場合のみ、distance=199/200/749/750/751/800/801等を無理なく成立する組で、旧新の発動可否/可視弾段/MP・HP/次tick・待機を同EXE/DAT/SAVE/map/input/capture SHA/seed可能範囲で比較。外部実機0、DESIGNED_NOT_RUN、内部fieldだけならINELIGIBLE。
+[SAFETY/DEDUP] 安全拒否済B-0121/0228/0515/0911/1110とE側B0316/B1328/B1418は独立BLOCKED/未統合。拒否済VA0x5710C0..0x571500/0x58021E..0x580340の新規解析または別shell/tool/path/Remote迂回0。MASTER/T018/他レーン/rea_lab/dev_lab/Git/push/原本/設定/automation書込0。
+[READY GATE] 本詳細＋data/T012_BATTLE_CALC.md＋data/T011_DATA_MODEL.md＋evidence/LANE_B_HANDOFF.md の各独立readback同ID一致後だけB OWN LIMITED STATIC ORIGINAL SOURCE READY 1件。Eのみ正式統合。旧原作Gameplay PASS0、新旧strict MATCH0、Task DONE+0。
+[STATE] DETAIL WRITE CANDIDATE / OWNER+HANDOFF READBACK PENDING / READY PENDING.

@@ -55,8 +55,17 @@
 - [research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md 行 52](../../research/recovered/b_batch3/B_T012_T013_DUAL_POOL_RANGE_FANOUT_OFFLINE_20261023_0909.md?plain=1#L52-L52) — - `0x00547F10`：`actor+0xCC<0` では候補ごとに再度 `0x005B6EAB`、`0x005D1B80` を呼び `DAT_0065BD60` と比較。入力によって候補がスキップされる。RNG実装・消費回数の全容はVERIFY。
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+<a id="field-1c4"></a>
+## actor + 0x1C4
+
+- [research/recovered/b_batch8/data/T012_RUSH_VTABLE_SLOT2345_STATUS_GETTER_STATIC_20261021_1714.md 行 9](../../research/recovered/b_batch8/data/T012_RUSH_VTABLE_SLOT2345_STATUS_GETTER_STATIC_20261021_1714.md?plain=1#L9-L9) — [ASM JOIN] 保存済B owner exe/T013_RUSH_RECORD_54F990_NATIVE_20261013.txt。0x54F9C5: byte[Rush+0x210]=0；0x54F9DA actor byte+0x65==0なら0x54F9E2 CALL 54FD50後、0x54F9ED a
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 <a id="field-1c8"></a>
 ## actor + 0x1C8
+
+- [research/recovered/b_batch8/data/T012_RUSH_VTABLE_SLOT2345_STATUS_GETTER_STATIC_20261021_1714.md 行 10](../../research/recovered/b_batch8/data/T012_RUSH_VTABLE_SLOT2345_STATUS_GETTER_STATIC_20261021_1714.md?plain=1#L10-L10) — [ASM JOIN CONT] actor byte+0x65!=0なら0x54F9FB→0x54FA01: [actor+0x1C8]+0x1A8 byte→Rush+0x210（0x54FA07）。両枝は0x54FA0Dに合流。
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 4174](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L4174-L4174) — - EDI＝加算先 UnitData（＝actor+0x1C8）、EDX＝加算量、ESI＝context（[esi]＝actor の BattleUnit）。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification

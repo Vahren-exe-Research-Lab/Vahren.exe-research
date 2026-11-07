@@ -7,6 +7,9 @@
 <a id="field-18"></a>
 ## manager + 0x18
 
+- [research/recovered/b_batch8/data/T013_BTL_LIMIT_EFFECTIVE_DAT_AND_GETTER_CACHE_NATIVE_20261031_03H.md 行 18](../../research/recovered/b_batch8/data/T013_BTL_LIMIT_EFFECTIVE_DAT_AND_GETTER_CACHE_NATIVE_20261031_03H.md?plain=1#L18-L18) — - 原作Golden要件：無改変EXE+20倍化前DAT、同SAVE/MAP/input/RNG、context原作1300/1500・一時的なmissing/explicit0（合法fixture限定）、manager+0x98=10/11、groupflag=0/1、manager+0x18=0/非0、K=T-1/
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 - [research/recovered/e_reports/T020_E_T013_BTLLIMIT_CLOCK_ACCEPTANCE_20261031_02H.md 行 10](../../research/recovered/e_reports/T020_E_T013_BTLLIMIT_CLOCK_ACCEPTANCE_20261031_02H.md?plain=1#L10-L10) — - 224 synthetic cases span category {0,1,6,7}, manager+0x98 {10,11}, groupflag {0,1}, manager+0x18 {0,1}, and seven timer pairs including zero/zero, 99/100/101
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
 
@@ -57,6 +60,15 @@
 
 - [research/recovered/e_reports/T020_E_T013_MODE2_PRIMARY_ACCEPTANCE_20261030_14H.md 行 9](../../research/recovered/e_reports/T020_E_T013_MODE2_PRIMARY_ACCEPTANCE_20261030_14H.md?plain=1#L9-L9) — - On local stack scratch [ESP+0x68]==0, 0x44BDF5 tests nested flag [[manager+4]+0x1EF22C]; when nonzero 0x44BE0A writes 3 to manager+0x20. The next mode3 dispat
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
+
+<a id="field-24"></a>
+## manager + 0x24
+
+- [research/recovered/rea_batch8/reports/REA_20261026_05H_P0_OGG_EOF_CONSUMER_STATIC.md 行 14](../../research/recovered/rea_batch8/reports/REA_20261026_05H_P0_OGG_EOF_CONSUMER_STATIC.md?plain=1#L14-L14) — 7. 0x004BE220: 0x004BE29Dで0x004BF780をCALLしAL==0で0x004BE2AB cleanup、0x004BE2CAで曲インデックスを加算、0x004BE307で0x004BDE40をCALLし次曲処理へ。ほかのゲート(manager+0x24、backend+0x38、param
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+- [research/recovered/rea_batch8/reports/REA_20261026_06H_P0_AUDIO_TICK_GATE_STATIC.md 行 19](../../research/recovered/rea_batch8/reports/REA_20261026_06H_P0_AUDIO_TICK_GATE_STATIC.md?plain=1#L19-L19) — - 通常ルートでEOFが32ゲート通過直後に変化すれば、次の評価まで最大31回のカウンタ更新を待つ可能性。ただし切替条件にはstream+0x38 / manager+0x24 / 0x004BF6A0 / 再生位置判定があり、実時間の上限や実際の遅延は保証できない。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
 
 <a id="field-34"></a>
 ## manager + 0x34
@@ -187,6 +199,12 @@
 - [research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md 行 18](../../research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md?plain=1#L18-L18) — - 分岐側0x44C9B4..C3は [EBX+0x78] と[EBX+0x7C]のvector空チェック（同値→0x44CC23）、非空側0x44C9C9 manager+0x98・0x44C9E1 group+0x1EF244を評価し、0x44CA82 JMP [EDX*4+0x44CD4C] 9-wayへ。0x4
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+- [research/recovered/b_batch8/data/T013_BTL_LIMIT_EFFECTIVE_DAT_AND_GETTER_CACHE_NATIVE_20261031_03H.md 行 15](../../research/recovered/b_batch8/data/T013_BTL_LIMIT_EFFECTIVE_DAT_AND_GETTER_CACHE_NATIVE_20261031_03H.md?plain=1#L15-L15) — - manager+0x98>10かつ入力category1/7の場合：flag0はK<260で6、K>=260で入力保持。flag非0はK<300で一旦6、ただし既知0x4495BF..D7でmanager+0x18==0なら6→7、非0なら6維持。K>=300は入力保持。manager+0x98<=10の非0入力は
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/b_batch8/data/T013_BTL_LIMIT_EFFECTIVE_DAT_AND_GETTER_CACHE_NATIVE_20261031_03H.md 行 18](../../research/recovered/b_batch8/data/T013_BTL_LIMIT_EFFECTIVE_DAT_AND_GETTER_CACHE_NATIVE_20261031_03H.md?plain=1#L18-L18) — - 原作Golden要件：無改変EXE+20倍化前DAT、同SAVE/MAP/input/RNG、context原作1300/1500・一時的なmissing/explicit0（合法fixture限定）、manager+0x98=10/11、groupflag=0/1、manager+0x18=0/非0、K=T-1/
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 - [research/recovered/b_reports/T013_MODE2_CATEGORY_LABEL_AND_UNIT_WRITER_NATIVE_20261030_23H.md 行 12](../../research/recovered/b_reports/T013_MODE2_CATEGORY_LABEL_AND_UNIT_WRITER_NATIVE_20261030_23H.md?plain=1#L12-L12) — - vector非空かつ[manager+0x98]<=10の場合、0x44952D..39で入力2!=0→0x4495B7で内部category=6(advance)へ変更。その後、[manager+4]+0x1EF244!=0かつmanager+0x18==0なら0x4495D7でcategory=7(even)へ
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
@@ -213,6 +231,12 @@
 
 - [research/recovered/e_reports/T020_E_T013_MODE3_EBX_ACCEPTANCE_20261031_05H.md 行 17](../../research/recovered/e_reports/T020_E_T013_MODE3_EBX_ACCEPTANCE_20261031_05H.md?plain=1#L17-L17) — - vector長0/1/4 × manager+0x98=9/10/11 × groupflag0/1 × manager+0x18=0/1 × manager+0xA5=0/1 = 72件。合成出力はUnit書込なし24、category3=16、category6=24、category7=8件。72/72 PA
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
+
+<a id="field-a0"></a>
+## manager + 0xA0
+
+- [research/recovered/rea_batch8/reports/REA_20261026_05H_P0_OGG_EOF_CONSUMER_STATIC.md 行 13](../../research/recovered/rea_batch8/reports/REA_20261026_05H_P0_OGG_EOF_CONSUMER_STATIC.md?plain=1#L13-L13) — 6. 0x004BF780: manager+8==0・manager+9!=0のOGG分岐で[manager+0xA0]をESIへ置き、0x00502580をCALL。0x004BF7CD/CFはTEST AL / SETE AL。すなわちヘルパーAL=1で上位の継続判定はfalseになる。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
 
 <a id="field-a5"></a>
 ## manager + 0xA5

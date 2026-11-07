@@ -13,6 +13,9 @@
 <a id="field-c"></a>
 ## object + 0xC
 
+- [research/recovered/b_batch8/data/T012_T013_4C60F0_DUAL_CALLSITE_CONTEXT_20261019.md 行 7](../../research/recovered/b_batch8/data/T012_T013_4C60F0_DUAL_CALLSITE_CONTEXT_20261019.md?plain=1#L7-L7) — [STATIC DELTA] 保存済exe/*.txt全域の「4C60F0」literal検索でヒットしたVAは54DAD2・54E558の2箇所（別資料への重複収録あり）。原文をread-onlyで突合し「2系統で座標相当のECX/EAX＋[object+0xC]を渡す」構造を追加。0x4C5EF0は保存窓では54D
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 - [research/recovered/b_reports/T013_HEAL_FINISH_UNREGISTER_POOL_REUSE_NATIVE_20261027_10H.md 行 6](../../research/recovered/b_reports/T013_HEAL_FINISH_UNREGISTER_POOL_REUSE_NATIVE_20261027_10H.md?plain=1#L6-L6) — [OWNER REGISTRATION] 0x54E11A/0x54E11E→0x550980 factory。factory 0x550C53 virtual+0x18→0x455FA0、0x455FAB MOV [object+0xC],holder。0x54E2CC holder=[effect+0xC]、0x5
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 

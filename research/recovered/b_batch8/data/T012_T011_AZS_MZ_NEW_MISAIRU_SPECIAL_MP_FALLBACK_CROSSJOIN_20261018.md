@@ -1,0 +1,15 @@
+# B-20261018-0418-01｜T012/T011 AZS/MZ同Class系のmissile special差とMP不足時分岐（限定STATIC）
+[DATE/OWNER] 2026-10-18 04時台JST。T012主担当、T011取得・継承参照。原作DATとB保存nativeの条件付き照合。実機Gameplay Golden PASS0／新旧strict MATCH0／Task DONE増0。
+[TARGET] 保存済み原作対応EXE SHA256=e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187。今回EXEの実行・新規逆解析・改変なし。
+[RAW SOURCE/UNITS] normalized 10_ユニット/01_マリナーズ傭兵団.dat のunit azs:base3はclass=c_azs、skill2=new_misairu,b_all、leader_skillにもnew_misairu。05_ヴォイス・ドラマ革命企画.datのunit mz:base3はclass=c_mz、skill2=new_misairu_mz,b_monster_ballを直接宣言。
+[RAW SOURCE/CLASS] 上記c_azs:a018、c_mz:a018。normalized 20_クラス/01_03_マリナーズ_空手部_キモティカ.datのclass a018:baseはmp=200、mprec=15を直接宣言。これはruntime Unit+0x94/+0xB8の実効値の証明ではない。
+[RAW SOURCE/SKILL] normalized 30_スキル/C_必殺_クラス専用.datのnew_misairu:sk_ms はmp=165、special=on、range_min=200、check=800。31_ユニットスキル/U_1_5_マリナーズ～革命企画.datのnew_misairu_mz:new_misairu はspecial=@、gun_delay=new_misairu_mz*10を明示し当該子blockにはmp再宣言なし。実効継承はVERIFY。
+[SAVED PARSER VA] B既保存exe/T011_SKILL4C_DUAL_WRITER_59A30E_NATIVE_20261013.txt：0x59A372はSkill+0x4C=1 writer、0x59A390のgetter 0x4647D0後0x59A395..0x59A398はnode+0x20値をSkill+0x4Cへ格納。原文のon/@と実compiled +4Cの対応はresolver/builder経路次第でVERIFY。
+[SAVED T012 VA] 既保存B-20261014-2214-01の0x57EBE9/0x57EBF2 Unit+8C/+1F8と0x57EBFB Skill+4Cのmode0 early gate。両Unit flag=0かつSkill+4C<=0ならearly MP不足checkをskipし得る一方、+4C>0ならcost(+278)!=0かつcurrentMP(+94)<costで0x57EC11からAL0早期return。
+[SAVED LATE/OUTER] 既B-20261014-2111-01の0x57ED68..0x57ED99ではlate不足・Unit+135==0時AL=(Unit+B8>0)、AL1ならcaller 0x57E5EC→0x57E610→0x577600のpostselectへ進み得る。この局所early/late枝に射撃・HP損傷・MP debitの成功を含意しない。
+[NEW LIMITED CROSSJOIN] IF 実効AZS +4C>0 / MZ子+4C<=0、双方kind2 normal mode0、Unit+8C=Unit+1F8=0、実効mpcost>currentMP、MZの中間判定通過かつUnit+135=0・Unit+B8>0なら、同系統原文class由来でもAZSはearly AL0、MZはlate AL1→postselect候補に分かれる。両者の実効値・同条件合法性はいずれも未証明。raw a018 mprec15と先行ZNM raw mprec0の対照も条件付きに限る。
+[DEDUP] B-20261013-1856-02のAZS/MZ Skill/Class元宣言・special=@条件、B-20261014-2214-01のgeneric early/late CFG、B-20261014-2111-01のgeneric AL1 postselect、B-20261018-0316-01のZNM mprec0照合は再READY計上0。本件新単位は実名2Unit・同a018系列とstage別AL結果の限定クロス比較。
+[REIMPLEMENT] raw Unit skill2/class・Skill parent/special/@/mpを保持し、effective +4C/+278/Unit+94+B8+8C+1F8+135、handler mode、early/late path、AL、postselect、spatial/latch/debit、可視projectile/HP/MP/次tickを別receipt化。AL1を発射成功と見なさず、@を無条件zero/継承/falseに固定しない。
+[GOLDEN DESIGNED NOT RUN] 合法旧原作AZSとMZの技能所持/発動入口をまず確認。同一EXE/DAT/SAVE SHA、対応可能なseed/UI入力/出撃配置で、runtime cost-1/cost/cost+1とmprec実効値、可視射出・MP・HP・次行動/待機を比較。原作可視到達/キャプチャ欠如はDESIGNED_NOT_RUN、内部ALのみはINELIGIBLE。Gameplay actual PASS0／strict MATCH0。
+[OPEN/NEXT] 原文→effective Special/MP/MPREC、合法Unit+flagとmode0到達、Unit+1E560 latch/+18688方向、0x4E7ED0空間の実作用、0x580280攻撃結果、T013 target優先、T011 cross-kindをVERIFY維持。B-20261018-0121-01/0228-01等の安全拒否は別BLOCKED/NOT READY。
+[STATUS] DETAIL WRITTEN候補／T012・T011・B HANDOFF保存および4/4独立readback後のみB OWNER LIMITED STATIC CONDITIONAL READY／E MASTER正式統合待ち。

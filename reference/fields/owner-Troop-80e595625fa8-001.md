@@ -25,4 +25,10 @@
 - [research/recovered/b_batch3/T013_TROOP_RTTI_HALF_RATIO_GATE_V9_20261023_1708.md 行 23](../../research/recovered/b_batch3/T013_TROOP_RTTI_HALF_RATIO_GATE_V9_20261023_1708.md?plain=1#L23-L23) — GOLDEN DESIGNED/NOT RUN: 無改変同一EXE/DAT/SAVE/MAP/入力・RNGで適格Unit 0/1/2/3/4、+1867C/+1867E、座標距離が境界±1、Troop+0x44=0/1、+0x3C 99/100/101。可視命令/配置/移動・HP/MP・候補順/ターンを時系列照合。
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+<a id="field-1d0"></a>
+## Troop + 0x1D0
+
+- [research/recovered/b_batch8/data/T013_CASE8_LIVE_FILTER_TREE_ORDER_VECTOR_ABI_20261024_0110.md 行 17](../../research/recovered/b_batch8/data/T013_CASE8_LIVE_FILTER_TREE_ORDER_VECTOR_ABI_20261024_0110.md?plain=1#L17-L17) — [GOLDEN DESIGN] 無改変原作EXEと改変前DAT（2026-10-22 X20テストDAT混入を排除）、同SAVE/MAP/操作/RNGでalive/dead mixed、shared Troop+0x1D0、キー列挙順・複数Troopと同Troop重複、連続case8によるglobal vector再利
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

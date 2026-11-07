@@ -31,6 +31,9 @@
 - [research/recovered/b_batch6/data/T012_DAMAGE_CALLER_54DAE0_POSTCORE_GATES_20261019.md 行 8](../../research/recovered/b_batch6/data/T012_DAMAGE_CALLER_54DAE0_POSTCORE_GATES_20261019.md?plain=1#L8-L8) — [VERIFY] ESI object typeと+0x78 context layout、Skill+0x274/+0x26F/+0x1CC/+0x1C4の正確な意味、virtual+0x58の本体、+0xF8/+0x1A4の外部consumer、54DAFE context+0x0E setter・実Unit/Sk
   制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
 
+- [research/recovered/b_batch8/data/T012_T013_DAMAGE_CONTEXT_E_CALLER_FLAG_CROSSROUTE_20261019.md 行 13](../../research/recovered/b_batch8/data/T012_T013_DAMAGE_CONTEXT_E_CALLER_FLAG_CROSSROUTE_20261019.md?plain=1#L13-L13) — [COMMON CALLEE] 保存core VA0x55116Eでbyte[context+0x0E]を検査し0なら0x55119Bへskip。1かつSkill+0x248>0なら0x551196でCALL 0x576F10（局所分岐、到達時のみ）。
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 - [research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md 行 15](../../research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md?plain=1#L15-L15) — **今回の独立増分**は、上記二つを原作実バイトの命令順・直接CALL・Ghidra擬似Cの三者で結び、**one-shotは「技能一回」ではなく「配送候補ごとに再初期化されるhit context」単位になり得る**と確定した静的制御フローの横断関係である。さらに、同経路は context+0x0E=0 によって `
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
@@ -198,5 +201,11 @@
 
 - [research/recovered/rea_batch2/reports/REA_20261102_12H_P0_F720_EXCLUSION_TREE_RESET_WRITER_STATIC.md 行 8](../../research/recovered/rea_batch2/reports/REA_20261102_12H_P0_F720_EXCLUSION_TREE_RESET_WRITER_STATIC.md?plain=1#L8-L8) — - Clear end `0x4F8F01 MOV [EAX+4],EAX`, `0x4F8F07 MOV [EAX],EAX`, `0x4F8F0D MOV [EAX+8],EAX` sets the header links to itself; `0x4F8F10 MOV [EDI+8],0` sets cont
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
+
+<a id="field-1eed64"></a>
+## context + 0x1EED64
+
+- [research/recovered/b_batch8/data/T012_T013_DUAL_CACHE_ORIGIN_AND_V80_BRANCH_MATRIX_OFFLINE_20261019.md 行 14](../../research/recovered/b_batch8/data/T012_T013_DUAL_CACHE_ORIGIN_AND_V80_BRANCH_MATRIX_OFFLINE_20261019.md?plain=1#L14-L14) — **前回の別caller証拠からの条件付き交差照合**：`0x57D9F5..0x57DA1F`は`context+0x1EED64 <=100`（符号付き）かつ旧`Unit+0x1E580=null`の場合だけ`0x514D60`を呼ぶ。`0x57DA2C/0x57DA36/0x57DA3C`で戻りの距離・selec
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

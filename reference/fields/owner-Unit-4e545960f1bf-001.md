@@ -100,6 +100,18 @@
 - [research/recovered/b_batch7/data/T012_ILLUSION_POSTMP_DAMAGE_BRANCH_20261016.md 行 7](../../research/recovered/b_batch7/data/T012_ILLUSION_POSTMP_DAMAGE_BRANCH_20261016.md?plain=1#L7-L7) — [FACT-DAMAGE] 通常側0x57E7A5..0x57E7BAは[Unit+0x7C]一時contextを構築し、Skill+0x24C>=0かつSkill+0x27C!=0の場合だけ0x57E7E0 CALL0x550E70(context, Unit+0x1E570)を実行、0x57E7E5 JMP0x57
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
+- [research/recovered/b_batch8/data/T012_T013_DAMAGE_CONTEXT_E_CALLER_FLAG_CROSSROUTE_20261019.md 行 5](../../research/recovered/b_batch8/data/T012_T013_DAMAGE_CONTEXT_E_CALLER_FLAG_CROSSROUTE_20261019.md?plain=1#L5-L5) — [E=0 GROUP 1] VA0x546B1A..0x546B53：Unit+0x7C hit contextにUnit/Skillを書き、0x546B31でbyte[ctx+0x0E]=0、0x546B53で条件付きCALL 0x550E70。
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/b_batch8/data/T012_T013_DAMAGE_CONTEXT_E_CALLER_FLAG_CROSSROUTE_20261019.md 行 6](../../research/recovered/b_batch8/data/T012_T013_DAMAGE_CONTEXT_E_CALLER_FLAG_CROSSROUTE_20261019.md?plain=1#L6-L6) — [E=0 GROUP 2] VA0x546DA6..0x546DDF：Unit+0x7C contextを構築、0x546DC1でbyte[ctx+0x0E]=0、Skill+0x24C>=0かつ+0x27C!=0なら0x546DDFでCALL 0x550E70。
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/b_batch8/data/T012_T013_DAMAGE_CONTEXT_E_CALLER_FLAG_CROSSROUTE_20261019.md 行 9](../../research/recovered/b_batch8/data/T012_T013_DAMAGE_CONTEXT_E_CALLER_FLAG_CROSSROUTE_20261019.md?plain=1#L9-L9) — [E=1 GROUP 1] VA0x57E3FB..0x57E43A：Unit+0x7C contextを構築、0x57E416でbyte[ctx+0x0E]=1、Skill+0x24C/+0x27C条件成立時0x57E43AでCALL 0x550E70。
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/b_batch8/data/T012_T013_DAMAGE_CONTEXT_E_CALLER_FLAG_CROSSROUTE_20261019.md 行 10](../../research/recovered/b_batch8/data/T012_T013_DAMAGE_CONTEXT_E_CALLER_FLAG_CROSSROUTE_20261019.md?plain=1#L10-L10) — [E=1 GROUP 2] VA0x57E7A5..0x57E7E0：Unit+0x7C contextを構築、0x57E7BAでbyte[ctx+0x0E]=1、条件成立時0x57E7E0でCALL 0x550E70。
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 - [research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md 行 35](../../research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md?plain=1#L35-L35) — x86がlittle-endianであるため、最終的なcontext 3 byteは `[+0x0C,+0x0D,+0x0E] = [0,1,0]`。3個の書き込みは**候補ループの中**で毎回繰り返される。候補が2件なら両者とも独立に`+0x0C=0`から効果コアへ入る。構造体アドレス自体は同じ `Unit+0x7C
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
@@ -217,6 +229,9 @@
 - [research/recovered/b_batch7/data/T012_MODE0_LATE_MP_FALLBACK_POSTSELECT_CROSSJOIN_20261014.md 行 5](../../research/recovered/b_batch7/data/T012_MODE0_LATE_MP_FALLBACK_POSTSELECT_CROSSJOIN_20261014.md?plain=1#L5-L5) — [STEP2/FALLBACK GATE] 0x57ED56..0x57ED66のUnit+0x8C!=0またはUnit+0x1F8==0側が0x57ED68へ。0x57ED68 Skill+0x278(cost)!=0、0x57ED72 Unit+0x94(MP)<cost、0x57ED7A Unit+0x135==
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
+- [research/recovered/b_batch8/data/T012_T011_AZS_MZ_NEW_MISAIRU_SPECIAL_MP_FALLBACK_CROSSJOIN_20261018.md 行 5](../../research/recovered/b_batch8/data/T012_T011_AZS_MZ_NEW_MISAIRU_SPECIAL_MP_FALLBACK_CROSSJOIN_20261018.md?plain=1#L5-L5) — [RAW SOURCE/CLASS] 上記c_azs:a018、c_mz:a018。normalized 20_クラス/01_03_マリナーズ_空手部_キモティカ.datのclass a018:baseはmp=200、mprec=15を直接宣言。これはruntime Unit+0x94/+0xB8の実効値の証明ではない
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 - [research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md 行 13](../../research/recovered/b_reports/B_T012_T013_ALLFUNC_HITCTX_EXP_OFFLINE_20261023_1017.md?plain=1#L13-L13) — 前回09時台 `B-OFFLINE-20261023-0909-T012-T013-DUAL-POOL-RANGE-FANOUT-01` が `0x00547DB0` の「複数候補へ個別に `0x00550E70` を呼び、候補走査後に Unit+0x94 を一回減算」という経路を整理した。2026-10-21スナップ
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
@@ -232,6 +247,12 @@
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 571](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L571-L571) — [CONFIRMED-SAVED-NATIVE / A58 INCREMENT] A58の通常save load後Unit全件pass（`exe/T014_NORMAL_LOAD_PROBE.txt` 0x45EF74..0x45EFB7）で、Unit+0x94!=0時にUnit+0x84をkey化して呼ぶ`0x467
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
 
+<a id="field-a0"></a>
+## Unit + 0xA0
+
+- [research/recovered/b_batch8/data/T012_T011_COOKHEAL_MODE5_DOUBLE2_LITERAL_20261018.md 行 5](../../research/recovered/b_batch8/data/T012_T011_COOKHEAL_MODE5_DOUBLE2_LITERAL_20261018.md?plain=1#L5-L5) — [SAVED X86 XREF] B所有exe/T012_DAMAGE_CORE_DUMP.txt 0x550E31..0x550E63 のstr-helper mode5: 550E36 fld qword[0x63B0B0]、550E3C fsub [Skill+0x288]、550E42 fimul dword[
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 <a id="field-a8"></a>
 ## Unit + 0xA8
 
@@ -243,6 +264,9 @@
 
 <a id="field-ac"></a>
 ## Unit + 0xAC
+
+- [research/recovered/b_batch8/data/T012_T011_COOKHEAL_MODE5_DOUBLE2_LITERAL_20261018.md 行 5](../../research/recovered/b_batch8/data/T012_T011_COOKHEAL_MODE5_DOUBLE2_LITERAL_20261018.md?plain=1#L5-L5) — [SAVED X86 XREF] B所有exe/T012_DAMAGE_CORE_DUMP.txt 0x550E31..0x550E63 のstr-helper mode5: 550E36 fld qword[0x63B0B0]、550E3C fsub [Skill+0x288]、550E42 fimul dword[
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
 - [research/recovered/dev_reports/DEVLAB_HANDOFF_20261011_STATUS_DEXT.md 行 14](../../research/recovered/dev_reports/DEVLAB_HANDOFF_20261011_STATUS_DEXT.md?plain=1#L14-L14) — - 0x5513DEで0x5D1B80を呼んだ後、0x5513F9の別rand15、0x55140A..0x551426で target Unit+0xAC × hi=double[0x65BF10], lo=double[0x65BF08] の補正+0.5。
   制約・訂正　Historical STATIC/INFERRED/VERIFY and synthetic-test claims; no new native/runtime verification; referenced raw assets/probes/archives not recovered; no Golden/READY promotion
@@ -267,6 +291,15 @@
 
 - [research/recovered/b_batch7/data/T012_MODE0_LATE_MP_FALLBACK_POSTSELECT_CROSSJOIN_20261014.md 行 12](../../research/recovered/b_batch7/data/T012_MODE0_LATE_MP_FALLBACK_POSTSELECT_CROSSJOIN_20261014.md?plain=1#L12-L12) — [GOLDEN DESIGN/NOT RUN] 原作合法kind2 Skillでearly gateを避けlate不足branchに入れる条件を先に確認。cost−1/cost/cost+1 × Unit+0xB8=-1/0/+1 × Unit+0x135=0/1、同旧SAVE/SHA/seed/配置/入力の可視Ski
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/b_batch8/data/T012_T011_ZNM_MPREC0_LATE_MP_FALLBACK_CONDITIONAL_20261018.md 行 5](../../research/recovered/b_batch8/data/T012_T011_ZNM_MPREC0_LATE_MP_FALLBACK_CONDITIONAL_20261018.md?plain=1#L5-L5) — [ALREADY SAVED NATIVE] B保存exe/T013_SKILL_HANDLERS_BOUNDED_NATIVE_20261013.txt・B既detail data/T012_MODE0_LATE_MP_FALLBACK_POSTSELECT_CROSSJOIN_20261014.md：VA0x57E
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/b_batch8/data/T012_T011_ZNM_MPREC0_LATE_MP_FALLBACK_CONDITIONAL_20261018.md 行 6](../../research/recovered/b_batch8/data/T012_T011_ZNM_MPREC0_LATE_MP_FALLBACK_CONDITIONAL_20261018.md?plain=1#L6-L6) — [STATIC CONDITIONAL] Unit znm の effective/runtime Unit+0xB8 が原文mprec=0を保ち、compiled znm_boomが上記mode0 kind2のlate不足枝に合法到達するなら、比較0>0が偽なのでこの枝のAL=0（AL=1のmprec-positiv
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/b_batch8/data/T012_T011_ZNM_MPREC0_LATE_MP_FALLBACK_CONDITIONAL_20261018.md 行 9](../../research/recovered/b_batch8/data/T012_T011_ZNM_MPREC0_LATE_MP_FALLBACK_CONDITIONAL_20261018.md?plain=1#L9-L9) — [REIMPLEMENT] raw Unit mprec/raw Skill mp/親/所属と、effective Unit+0xB8・Skill+0x278・current MP+0x94・mode・kind・bow+0x135・branch return AL・outer nextPC・postselect/MP
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
 - [research/recovered/e_reports/T020_E_T013_PAIRWISE_DISTANCE_ACCEPTANCE_20261030_16H.md 行 12](../../research/recovered/e_reports/T020_E_T013_PAIRWISE_DISTANCE_ACCEPTANCE_20261030_16H.md?plain=1#L12-L12) — - Both temporary tree identities, group-to-Unit+0xB8 provenance, 0x44D1C0 equal-key handling, node lifetime, downstream 0x44C2D3+ result use, original gameplay
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
@@ -354,47 +387,5 @@
 
 - [research/recovered/b_batch6/data/T011_TOONO_DEATH_CLASS_UNIT_MP_GATE_20261014.md 行 7](../../research/recovered/b_batch6/data/T011_TOONO_DEATH_CLASS_UNIT_MP_GATE_20261014.md?plain=1#L7-L7) — [PRIOR MP NATIVE] B既存T011_SPECIAL_PROPERTY_SKILL4C_20261013.md/B-20261013-1740-01: Skill parser 0x59A30E..0x59A398はon→+0x4C=1 /その他 numeric getter→+0x4C。raw off
   制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
-
-- [research/recovered/b_batch7/data/T012_MODE0_LATE_MP_FALLBACK_POSTSELECT_CROSSJOIN_20261014.md 行 5](../../research/recovered/b_batch7/data/T012_MODE0_LATE_MP_FALLBACK_POSTSELECT_CROSSJOIN_20261014.md?plain=1#L5-L5) — [STEP2/FALLBACK GATE] 0x57ED56..0x57ED66のUnit+0x8C!=0またはUnit+0x1F8==0側が0x57ED68へ。0x57ED68 Skill+0x278(cost)!=0、0x57ED72 Unit+0x94(MP)<cost、0x57ED7A Unit+0x135==
-  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
-
-- [research/recovered/b_batch7/data/T012_MODE0_LATE_MP_FALLBACK_POSTSELECT_CROSSJOIN_20261014.md 行 12](../../research/recovered/b_batch7/data/T012_MODE0_LATE_MP_FALLBACK_POSTSELECT_CROSSJOIN_20261014.md?plain=1#L12-L12) — [GOLDEN DESIGN/NOT RUN] 原作合法kind2 Skillでearly gateを避けlate不足branchに入れる条件を先に確認。cost−1/cost/cost+1 × Unit+0xB8=-1/0/+1 × Unit+0x135=0/1、同旧SAVE/SHA/seed/配置/入力の可視Ski
-  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
-
-<a id="field-137"></a>
-## Unit + 0x137
-
-- [research/recovered/DEVLAB_NATIVE_SKILL_CAPABILITY_20261011.md 行 11](../../research/recovered/DEVLAB_NATIVE_SKILL_CAPABILITY_20261011.md?plain=1#L11-L11) — - kind3 → Unit+0x137=1（0x573A1E..2D）。kind4 → Unit+0x138=1（0x573A2F..38）。
-  制約・訂正　Historical author claims preserved; source hash verified; no new native or runtime validation; referenced local evidence not included
-
-- [research/recovered/b_batch6/data/T011_T012_T013_T024_T028_UNSYNCED_RECOVERY_REGISTER_20261020.md 行 40](../../research/recovered/b_batch6/data/T011_T012_T013_T024_T028_UNSYNCED_RECOVERY_REGISTER_20261020.md?plain=1#L40-L40) — \| `B-OFFLINE-20261020-0815-02` \| T013 \| 支援能力`Unit+0x137`等により再構築を通らない経路 \| 古い候補を最終使用するとは断定できない \|
-  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
-
-<a id="field-138"></a>
-## Unit + 0x138
-
-- [research/recovered/DEVLAB_NATIVE_SKILL_CAPABILITY_20261011.md 行 11](../../research/recovered/DEVLAB_NATIVE_SKILL_CAPABILITY_20261011.md?plain=1#L11-L11) — - kind3 → Unit+0x137=1（0x573A1E..2D）。kind4 → Unit+0x138=1（0x573A2F..38）。
-  制約・訂正　Historical author claims preserved; source hash verified; no new native or runtime validation; referenced local evidence not included
-
-<a id="field-139"></a>
-## Unit + 0x139
-
-- [research/recovered/b_batch5/data/T011_SKILL4C_DUAL_WRITER_MP_GATE_20261013.md 行 5](../../research/recovered/b_batch5/data/T011_SKILL4C_DUAL_WRITER_MP_GATE_20261013.md?plain=1#L5-L5) — [DISTINCT FIELDS] Skill+0x4C は先行T011 known Unit+0x139 capability writerや T012普通heal/normal missile MP gateに利用される整数/boolean field。Skill+0x278は実MP cost、Unit+0x94は
-  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
-
-<a id="field-13c"></a>
-## Unit + 0x13C
-
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 675](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L675-L675) — 4. それ以外（耐性名など）→ Unit+0x13C の map<string,int>（0x574493..0x574611）:
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
-
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 714](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L714-L714) — - **まだ接続できない**: 部隊に属する Unit の最終値。def+0xEC の技能リスト（0x58C0E0）、consti map の初期値（Unit+0x13C）、`@mode_sdown` / `notalent_down` / `unit_status_hp`（0x46F4C0 / 0x463CA0）が未
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
-
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 718](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L718-L718) — 2. 0x571B70 などでの Unit+0x13C（consti）と +0x168（summon_max）、+0x14C（movetype）の初期化。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
-
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 737](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L737-L737) — その後、0x571B70 が Unit+0x168 = summon_max、Unit+0x13C = def の consti のコピー（0x4C1340）、Unit+0x14C = def の movetype を設定し、最後に 0x573BD0 を呼ぶ（§22/§23）。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

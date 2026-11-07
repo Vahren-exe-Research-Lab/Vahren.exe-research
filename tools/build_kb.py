@@ -62,6 +62,20 @@ def read_tsv(p, ncol):
     return rows
 
 
+def write_ghidra_structs(path, sts):
+    """Write known-width fields only; unknown fields remain in other KB outputs."""
+    skipped = 0
+    with open(path, "w", encoding="utf-8", newline="\n") as f:
+        for _, (st, off, ty, nm, sm, cf, sc) in sts:
+            # ApplyKnowledge defaults unrecognized types to a four-byte field.
+            # An explicit unknown width must never acquire that invented layout.
+            if ty == "unknown":
+                skipped += 1
+                continue
+            f.write(f"{st}\t{int(off, 16)}\t{ty}\t{nm}\t{sm}［{cf}］\n")
+    return skipped
+
+
 def norm_va(s):
     return int(s, 16)
 
@@ -422,9 +436,9 @@ def main():
             if rng and k in v9names:
                 cm = "資料: " + " ; ".join(sorted(set(refs))[:8])
                 f.write(f"{k:08X}\tcomment_only\t-\t{cm}\n")
-    with open(gen / "ghidra/kb_structs.tsv", "w", encoding="utf-8", newline="\n") as f:
-        for _, (st, off, ty, nm, sm, cf, sc) in sts:
-            f.write(f"{st}\t{int(off, 16)}\t{ty}\t{nm}\t{sm}［{cf}］\n")
+    skipped_structs = write_ghidra_structs(gen / "ghidra/kb_structs.tsv", sts)
+    if skipped_structs:
+        print(f"Ghidra 構造体出力: 幅未確定の {skipped_structs} 行を除外（事典には保持）")
     with open(gen / "ghidra/kb_comments.tsv", "w", encoding="utf-8", newline="\n") as f:
         for v, c in lcomments:
             f.write(f"{v:08X}\t{c}\n")

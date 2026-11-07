@@ -172,6 +172,9 @@
 - [research/recovered/b_batch4/data/B_T012_T013_COLLISION_ATTRMAP_ORDER_OFFLINE_20261022_2113.md 行 36](../../research/recovered/b_batch4/data/B_T012_T013_COLLISION_ATTRMAP_ORDER_OFFLINE_20261022_2113.md?plain=1#L36-L36) — `0x00415460 → 0x00415E20` はtreeの候補位置を検索し、`0x004154A4 → 0x00402C40` で文字列バイト列と長さを比較する。未登録ならend/headを返す経路がある。従来既知の `0x0059A57A` 付近はDATの **`attr`** 属性（PE `.rdata` `
   制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
 
+- [research/recovered/b_batch8/data/T012_T013_ATTR_19_TABLE_CROSSWALK_20261013.md 行 4](../../research/recovered/b_batch8/data/T012_T013_ATTR_19_TABLE_CROSSWALK_20261013.md?plain=1#L4-L4) — [FACT-1] key table0x65BC60（Skill+0x110 raw attr stringから+A18/+A1Cを0x59FACE/0x59FADCで設定）とheal key table0x68D420（候補local nameを0x55170Bで比較、0x551738でattr index stor
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 <a id="field-12c"></a>
 ## Skill + 0x12C
 
@@ -352,6 +355,12 @@
 - [research/recovered/b_batch6/data/T012_ADDPER_SKILL230_SOURCE_20261013.md 行 4](../../research/recovered/b_batch6/data/T012_ADDPER_SKILL230_SOURCE_20261013.md?plain=1#L4-L4) — [NATIVE DEFAULT] 0x59BC39 MOV EAX,[Skill+0x230]→0x59BC3F TEST EAX,EAX→nonzero branch0x59BC48、zero branch0x59BC43 MOV EAX,0x64(100)→0x59BC48 MOV [Skill+230],EAX。
   制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
 
+- [research/recovered/b_batch8/data/T012_TOONO_BRANCH_PARENT_VFX_SPLIT_20261014.md 行 8](../../research/recovered/b_batch8/data/T012_TOONO_BRANCH_PARENT_VFX_SPLIT_20261014.md?plain=1#L8-L8) — [EXE XREF PRIOR ONLY] 0x59BBFC→Skill+0x230 add_per writer、0x5511C5/0x5511E6 postdamage chance比較、0x546FE2..0x546FF8 normal missile MP前段、0x5470BC..0x5470ED late f
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/b_batch8/data/T012_TOONO_GENERIC_SENYO_CHILD_STATUS_20261014.md 行 8](../../research/recovered/b_batch8/data/T012_TOONO_GENERIC_SENYO_CHILD_STATUS_20261014.md?plain=1#L8-L8) — [SAVED VA/XREF] 既B-20261013-1322-01：0x59BBCA add_per getter→0x59BBEF call 0x4647D0→0x59BBFC Skill+0x230 writer、0x59BC39..48 compiled zeroを100へ。原文字列15/80がそのchild
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 <a id="field-234"></a>
 ## Skill + 0x234
 
@@ -378,23 +387,5 @@
 
 - [research/recovered/dev_reports/DEVLAB_HANDOFF_20261011_PARALLEL_STATUS.md 行 13](../../research/recovered/dev_reports/DEVLAB_HANDOFF_20261011_PARALLEL_STATUS.md?plain=1#L13-L13) — - 0x55116E context+0xE & Skill+0x248>0なら0x576F10補助call→0x55119B Unit+0x8D suppress早期ret。補助callは早期retより先に到達し得る。callee副作用は不明。
   制約・訂正　Historical STATIC/INFERRED/VERIFY and synthetic-test claims; no new native/runtime verification; referenced raw assets/probes/archives not recovered; no Golden/READY promotion; historical ZIP SHA later changed as recorded in STATUS_DEXT; no archive opened
-
-<a id="field-24c"></a>
-## Skill + 0x24C
-
-- [research/recovered/b_batch7/data/T012_ILLUSION_POSTMP_DAMAGE_BRANCH_20261016.md 行 7](../../research/recovered/b_batch7/data/T012_ILLUSION_POSTMP_DAMAGE_BRANCH_20261016.md?plain=1#L7-L7) — [FACT-DAMAGE] 通常側0x57E7A5..0x57E7BAは[Unit+0x7C]一時contextを構築し、Skill+0x24C>=0かつSkill+0x27C!=0の場合だけ0x57E7E0 CALL0x550E70(context, Unit+0x1E570)を実行、0x57E7E5 JMP0x57
-  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
-
-<a id="field-250"></a>
-## Skill + 0x250
-
-- [research/recovered/dev_reports/DEVLAB_HANDOFF_20261011_MODE6_DISTANCE_233.md 行 13](../../research/recovered/dev_reports/DEVLAB_HANDOFF_20261011_MODE6_DISTANCE_233.md?plain=1#L13-L13) — 3. `exe/T012_DAMAGE_CORE_DUMP.txt` VA0x55103D..0x5510D7: Skill+0x250=0なら距離減衰をskips。非zeroはsource/target座標+0x214/+0x218のsigned32差・2×IMUL・ADD、0x5E3B70 sqrt、(Skill+
-  制約・訂正　Historical STATIC/INFERRED/VERIFY and synthetic-test claims; no new native/runtime verification; referenced raw assets/probes/archives not recovered; no Golden/READY promotion
-
-<a id="field-264"></a>
-## Skill + 0x264
-
-- [research/recovered/b_batch3/T012_UNIT_VIRTUAL80_579290_CONTRACT_20261013.md 行 6](../../research/recovered/b_batch3/T012_UNIT_VIRTUAL80_579290_CONTRACT_20261013.md?plain=1#L6-L6) — [STATE WRITERS] 0x5792A3 Unit+0x1E49C=[EBP+0x1C]、0x5792A9 Unit byte+0x186D0=1、0x5792B2/+BB Unit+0x1E4A4/+0x1E4A8=pointB X/Y、0x5792C4 Unit+0x186D4=0、0x5792D4 Uni
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

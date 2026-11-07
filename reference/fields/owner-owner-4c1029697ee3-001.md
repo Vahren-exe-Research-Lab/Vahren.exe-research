@@ -43,6 +43,18 @@
 - [research/recovered/b_batch4/data/B_T012_T013_PERSON_POOL_LIFECYCLE_OFFLINE_20261023_1215.md 行 44](../../research/recovered/b_batch4/data/B_T012_T013_PERSON_POOL_LIFECYCLE_OFFLINE_20261023_1215.md?plain=1#L44-L44) — **優先検索：** `callers/related 0x005149C0, 0x00514AA0`（一括クリアをいつ呼ぶか）、`callers 0x00514F10`、`function 0x00547DB0`の`owner+0x48/+0x4C`全writerと`+0x1D4`参照先のPerson同定、`0x005
   制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
 
+<a id="field-4c"></a>
+## owner + 0x4C
+
+- [research/recovered/b_batch8/data/T012_T013_4C60F0_DUAL_CALLSITE_CONTEXT_20261019.md 行 6](../../research/recovered/b_batch8/data/T012_T013_4C60F0_DUAL_CALLSITE_CONTEXT_20261019.md?plain=1#L6-L6) — [NEW CROSSSITE-B2] VA0x54E533で[ESI+0x9C]-=EDI。0x54E539..0x54E552でowner pointer [ESI+0x94]の+0x40/+0x48中点をECXに作り、EAX=[owner+0x4C]−[ESI+0x9C]を作る。0x54E554 PUSH [ESI
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+<a id="field-a0"></a>
+## owner + 0xA0
+
+- [research/recovered/rea_batch8/reports/REA_20261025_20H_P0_OGG_TEARDOWN_THREAD_STATIC.md 行 14](../../research/recovered/rea_batch8/reports/REA_20261025_20H_P0_OGG_TEARDOWN_THREAD_STATIC.md?plain=1#L14-L14) — - 0x004BF2F0～0x004BF32Fは[owner+9]!=0かつ[owner+0xA0]!=NULLを条件とするOgg/stream側経路。stream側+0x44が非0なら0x004BF318のvtable +0x48処理と0x004BF31C→0x00502330を経由。非0・ゼロいずれでも0x004B
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
 <a id="field-1b8"></a>
 ## owner + 0x1B8
 
@@ -91,8 +103,20 @@
 <a id="field-30c"></a>
 ## owner + 0x30C
 
+- [research/recovered/b_batch8/data/T013_CASE29_VARIABLE_LOOKUP_MISS_ZERO_NATIVE_20261025_13H.md 行 10](../../research/recovered/b_batch8/data/T013_CASE29_VARIABLE_LOOKUP_MISS_ZERO_NATIVE_20261025_13H.md?plain=1#L10-L10) — - 0x463CD9 EAX=ECX(name ptr), 0x463CDB ESI=EDX(owner), 0x463D0C EBX=owner+0x30C。0x463D19 CALL 0x4C1200 は検索結果iterator候補をcaller localへ書き込む（検索calleeはV3擬似C）。
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
+- [research/recovered/b_batch8/data/T013_CASE29_VARIABLE_LOOKUP_MISS_ZERO_NATIVE_20261025_13H.md 行 14](../../research/recovered/b_batch8/data/T013_CASE29_VARIABLE_LOOKUP_MISS_ZERO_NATIVE_20261025_13H.md?plain=1#L14-L14) — - 0x463D7E CALL 0x436560 は辞書候補（文字列キー＋格納値ポインタ）の構築。V3擬似Cの+0x1C=param_2->pointer と整合。0x463D9B CALL 0x4A69B0 は owner+0x30C の辞書へのinsert、0x463DCB MOV EAX,EDI は新32Bオブジ
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 548](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L548-L548) — [CONFIRMED-SAVED-NATIVE] A所有`exe/T014_NORMAL_LOAD_PROBE.txt`のreaderは同一marker `0x65CD28` との文字列比較後、非markerの場合に群別construct枝へ進み、次レコードへ戻る。numeric: 0x45ED92→0x45F8A2(
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation
+
+<a id="field-310"></a>
+## owner + 0x310
+
+- [research/recovered/b_batch8/data/T013_CASE29_VARIABLE_LOOKUP_MISS_ZERO_NATIVE_20261025_13H.md 行 11](../../research/recovered/b_batch8/data/T013_CASE29_VARIABLE_LOOKUP_MISS_ZERO_NATIVE_20261025_13H.md?plain=1#L11-L11) — - 0x463D1E MOV ESI,[owner+0x310] は辞書end/sentinel候補。0x463D24 MOV EAX,[ESP+0x14] / 0x463D28 CMP EAX,ESI / 0x463D2A JE 0x463D4A は発見・未発見の分岐。
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
 <a id="field-330"></a>
 ## owner + 0x330
@@ -126,6 +150,12 @@
 
 - [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 313](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L313-L313) — [CONFIRMED-SAVED-NATIVE / A56 INCREMENT] B所有read-only `exe/T013_POOL_SEMANTICS_PROBE.txt` VA0x48B9BB..0x48BA43に、+0x3CA0/+0x3CA4の別writerを発見。0x48B9C5で0x1C4 byte o
   制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
+
+<a id="field-1e8640"></a>
+## owner + 0x1E8640
+
+- [research/recovered/b_batch8/data/T013_CASE29_VECTOR_CLAMP_SAME_DEST_NATIVE_20261025_11H.md 行 10](../../research/recovered/b_batch8/data/T013_CASE29_VECTOR_CLAMP_SAME_DEST_NATIVE_20261025_11H.md?plain=1#L10-L10) — - 0x004B060E CALL 0x0049CB10：出力先 [EBP-0x1268] の3ポインタ様rangeを構築。対応Ghidraのcalleeは、探索iterが [owner+0x1E8640] に等しい時に3フィールドを0化、そうでなければ 0x0042E8E0 で28B要素vector候補を複製。元の配
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
 <a id="field-1eec5c"></a>
 ## owner + 0x1EEC5C

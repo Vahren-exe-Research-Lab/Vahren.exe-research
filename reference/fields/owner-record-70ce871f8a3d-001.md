@@ -163,4 +163,10 @@
 - [research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md 行 13](../../research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md?plain=1#L13-L13) — 2. `0x0054F990` 擬似Cで `record=param_3` とすると、**`record+0x1D0=1`（active候補）、`record+0x1D4=in_EAX`（定義候補）、`record+0x1F0=0`（試行番号）、`record+0x1F8=0`（リンク先候補）、`record+0x1F
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
+<a id="field-210"></a>
+## record + 0x210
+
+- [research/recovered/b_batch8/data/T012_RUSH_VTABLE_SLOT2345_STATUS_GETTER_STATIC_20261021_1714.md 行 7](../../research/recovered/b_batch8/data/T012_RUSH_VTABLE_SLOT2345_STATUS_GETTER_STATIC_20261021_1714.md?plain=1#L7-L7) — [NEW GHIDRA] search.py function 0x431910: size3, return 1、直接caller0。search.py function 0x54E0A0: size7, __fastcall record→return *(byte *)(record+0x210)、直接calle
+  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-0"></a>
+## stream + 0x0
+
+- [research/recovered/rea_batch8/reports/REA_20261026_03H_P0_DECODER_FILL_STATIC.md 行 9](../../research/recovered/rea_batch8/reports/REA_20261026_03H_P0_DECODER_FILL_STATIC.md?plain=1#L9-L9) — - 原作機械語 0x00502391～0x005023A0：ECX=[stream+0x00]（Decoder this）、EDX=decoder.vptr[+0x04]、CALL EDX。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
 <a id="field-8"></a>
 ## stream + 0x8
 
@@ -37,11 +43,23 @@
 - [research/recovered/rea_batch4/reports/REA_20261030_01H_P0_OGG_THREADFAIL_PLAY_STATIC.md 行 10](../../research/recovered/rea_batch4/reports/REA_20261030_01H_P0_OGG_THREADFAIL_PLAY_STATIC.md?plain=1#L10-L10) — 1. `0x005B7D90 CMP EAX,-1` →失敗時`0x005B7DAF OR EAX,0xFFFFFFFF`。直接CALL `0x00502300→0x005B7D14` の返値は `0x00502308` で `[stream+0x48]` に格納され、`0x0050230B/0E` で戻りAL=1と
   制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
 
+- [research/recovered/rea_batch8/reports/REA_20261025_21H_THREAD_HANDLE_STATIC.md 行 18](../../research/recovered/rea_batch8/reports/REA_20261025_21H_THREAD_HANDLE_STATIC.md?plain=1#L18-L18) — - 0x00502308: [stream+0x48]=EAX。直後0x0050230BでAL=1、0x0050230Eで[stream+0x44]=1。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
 <a id="field-48"></a>
 ## stream + 0x48
 
 - [research/recovered/rea_batch4/reports/REA_20261030_01H_P0_OGG_THREADFAIL_PLAY_STATIC.md 行 10](../../research/recovered/rea_batch4/reports/REA_20261030_01H_P0_OGG_THREADFAIL_PLAY_STATIC.md?plain=1#L10-L10) — 1. `0x005B7D90 CMP EAX,-1` →失敗時`0x005B7DAF OR EAX,0xFFFFFFFF`。直接CALL `0x00502300→0x005B7D14` の返値は `0x00502308` で `[stream+0x48]` に格納され、`0x0050230B/0E` で戻りAL=1と
   制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [research/recovered/rea_batch8/reports/REA_20261025_21H_THREAD_HANDLE_STATIC.md 行 18](../../research/recovered/rea_batch8/reports/REA_20261025_21H_THREAD_HANDLE_STATIC.md?plain=1#L18-L18) — - 0x00502308: [stream+0x48]=EAX。直後0x0050230BでAL=1、0x0050230Eで[stream+0x44]=1。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+<a id="field-50"></a>
+## stream + 0x50
+
+- [research/recovered/rea_batch8/reports/REA_20261026_04H_P0_OGG_WORKER_PINGPONG_STATIC.md 行 16](../../research/recovered/rea_batch8/reports/REA_20261026_04H_P0_OGG_WORKER_PINGPONG_STATIC.md?plain=1#L16-L16) — - 0x00502420：stream+0x50==1のみ通常動作。+0x50==3なら0x0050242Fで内部位相EDIを0へ戻す。それ以外は更新せずSleep(100)。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
 
 <a id="field-54"></a>
 ## stream + 0x54
@@ -60,6 +78,12 @@
 
 - [research/recovered/rea_batch4/reports/REA_20261030_10H_P0_ODD_RATE_SUBFRAME_REWIND_STATIC.md 行 21](../../research/recovered/rea_batch4/reports/REA_20261030_10H_P0_ODD_RATE_SUBFRAME_REWIND_STATIC.md?plain=1#L21-L21) — 10/26既存：`0x00502580`はEOF状態`stream+0x58`と再生カーソルを比較。呼出元は`0x004BF7C8`、さらに`0x004BE29D`から呼ばれ、32カウント等の条件成立時に次曲処理へ進む可能性がある。今回の**新規部分は小さなread要求→-131→累積減算・重複書込という奇数Hz固有の
   制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
+
+- [research/recovered/rea_batch8/reports/REA_20261026_04H_P0_WORKER_PINGPONG_READBACK.md 行 16](../../research/recovered/rea_batch8/reports/REA_20261026_04H_P0_WORKER_PINGPONG_READBACK.md?plain=1#L16-L16) — 次回位置：stream+0x58/+0x54のreaderを対象VA限定で逆引きし、EOF・停止遷移を立証。実機テストは別承認を要し現状NOT RUN。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+- [research/recovered/rea_batch8/reports/REA_20261026_06H_P0_AUDIO_TICK_GATE_STATIC.md 行 18](../../research/recovered/rea_batch8/reports/REA_20261026_06H_P0_AUDIO_TICK_GATE_STATIC.md?plain=1#L18-L18) — - EOF consumerは前回発見済みの0x00502580（stream+0x58/0x54）。今回はその読取が、メインタスクから条件付きでしか呼ばれない構造を解明した。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
 
 <a id="field-6c"></a>
 ## stream + 0x6C
@@ -92,6 +116,30 @@
 ## stream + 0x78
 
 - [research/recovered/rea_batch7/reports/REA_20261026_11H_P0_DMUSIC_COM_CONSTRUCTION_STATIC.md 行 19](../../research/recovered/rea_batch7/reports/REA_20261026_11H_P0_DMUSIC_COM_CONSTRUCTION_STATIC.md?plain=1#L19-L19) — - `0x004BE820`の`0x004BEF20/27/2F`は`stream+0x70`から要素を選び、`stream+0x78`へコピーする。10時台のGetDefaultAudioPath呼出オブジェクトに到達する。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+<a id="field-90"></a>
+## stream + 0x90
+
+- [research/recovered/rea_batch8/reports/REA_20261026_08H_P0_DSHOW_IID_CHAIN_STATIC.md 行 15](../../research/recovered/rea_batch8/reports/REA_20261026_08H_P0_DSHOW_IID_CHAIN_STATIC.md?plain=1#L15-L15) — \| 0x004BEDC6 \| 0x0060CD7C \| IMediaControl \| stream+0x90 \|
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+<a id="field-94"></a>
+## stream + 0x94
+
+- [research/recovered/rea_batch8/reports/REA_20261026_08H_P0_DSHOW_IID_CHAIN_STATIC.md 行 17](../../research/recovered/rea_batch8/reports/REA_20261026_08H_P0_DSHOW_IID_CHAIN_STATIC.md?plain=1#L17-L17) — \| 0x004BEE30 \| 0x0060CDAC \| IMediaSeeking \| stream+0x94 \|
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+<a id="field-98"></a>
+## stream + 0x98
+
+- [research/recovered/rea_batch8/reports/REA_20261026_08H_P0_DSHOW_IID_CHAIN_STATIC.md 行 16](../../research/recovered/rea_batch8/reports/REA_20261026_08H_P0_DSHOW_IID_CHAIN_STATIC.md?plain=1#L16-L16) — \| 0x004BEE17 \| 0x0060CD8C \| IMediaEvent \| stream+0x98 \|
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+<a id="field-9c"></a>
+## stream + 0x9C
+
+- [research/recovered/rea_batch8/reports/REA_20261026_08H_P0_DSHOW_IID_CHAIN_STATIC.md 行 18](../../research/recovered/rea_batch8/reports/REA_20261026_08H_P0_DSHOW_IID_CHAIN_STATIC.md?plain=1#L18-L18) — \| 0x004BEE49 \| 0x0060CD9C \| IBasicAudio \| stream+0x9C \|
   制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)
