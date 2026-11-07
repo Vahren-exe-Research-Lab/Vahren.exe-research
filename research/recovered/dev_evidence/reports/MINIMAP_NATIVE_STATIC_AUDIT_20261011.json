@@ -1,0 +1,157 @@
+{
+  "evidence_class": "SAVED_GHIDRA_STATIC_NOT_NATIVE_ASSEMBLY_OR_TARGET_GAMEPLAY",
+  "archive": "recovered_source/peer_script01_ghidra_named_decomp_20261011.zip",
+  "archive_sha256": "c167dc8b09e8cae6abaa14e23bac94e675585ae432595a1608fdbc1cc8249b9a",
+  "functions": {
+    "0x0048D6A0": {
+      "saved_decompile_group": "decomp_0048xxxx.c",
+      "pseudo_c_characters": 29131,
+      "pseudo_c_sha256": "e370377b369d6eae8fbedeaffb48752143285c041413086fe774bba8b0e0865f"
+    },
+    "0x004F0BE0": {
+      "saved_decompile_group": "decomp_004Fxxxx.c",
+      "pseudo_c_characters": 51174,
+      "pseudo_c_sha256": "c6a6bf660f48e6700c993d58e836a1defcd933a3677593e1eb6db1e4a17f6669"
+    },
+    "0x004DCDC0": {
+      "saved_decompile_group": "decomp_004Dxxxx.c",
+      "pseudo_c_characters": 8408,
+      "pseudo_c_sha256": "137cd632d431ed8363ddb054be57c40e0a67ace795a4ef876f75a10f309ab409"
+    },
+    "0x004DD8C0": {
+      "saved_decompile_group": "decomp_004Dxxxx.c",
+      "pseudo_c_characters": 5200,
+      "pseudo_c_sha256": "106fa9bc8632ef1cb742eb91ad385dd49a0f2e02c472107cadbf45cc26a14994"
+    },
+    "0x004DCB70": {
+      "saved_decompile_group": "decomp_004Dxxxx.c",
+      "pseudo_c_characters": 1348,
+      "pseudo_c_sha256": "c1b2b0098d61d274ecc2ba714e0817bdb6d90e79b2076d60e7b998d89e24a16e"
+    },
+    "0x004DCCB0": {
+      "saved_decompile_group": "decomp_004Dxxxx.c",
+      "pseudo_c_characters": 991,
+      "pseudo_c_sha256": "af105fbb2be602876e2fc712b407fadd35bdd0770987f3cee699def43703d292"
+    },
+    "0x004DE330": {
+      "saved_decompile_group": "decomp_004Dxxxx.c",
+      "pseudo_c_characters": 1214,
+      "pseudo_c_sha256": "da1c6afc77aea421b694f15445a76a6e87a95b39af2f1ca6109fb6ab550e4e6d"
+    },
+    "0x004DE410": {
+      "saved_decompile_group": "decomp_004Dxxxx.c",
+      "pseudo_c_characters": 2380,
+      "pseudo_c_sha256": "c9432550693aeddcf4d905e2a5987703fdc76473a44fe698353e648f7e718062"
+    },
+    "0x004DE690": {
+      "saved_decompile_group": "decomp_004Dxxxx.c",
+      "pseudo_c_characters": 211,
+      "pseudo_c_sha256": "3efea1812202009de7e06f4d5d9c826bbc0f690c3ae04a65407579019e538d1f"
+    },
+    "0x004DE920": {
+      "saved_decompile_group": "decomp_004Dxxxx.c",
+      "pseudo_c_characters": 3903,
+      "pseudo_c_sha256": "7be9a1ba02380bc0c76db6556366859287fb99baaf478f9d360d92692e3785a9"
+    },
+    "0x005B3F90": {
+      "saved_decompile_group": "decomp_005Bxxxx.c",
+      "pseudo_c_characters": 3830,
+      "pseudo_c_sha256": "e93734a4a6045ef4a2ea15fca1cfb68fd771f9364bdc658868f770652f30fa4b"
+    },
+    "0x005B4360": {
+      "saved_decompile_group": "decomp_005Bxxxx.c",
+      "pseudo_c_characters": 2115,
+      "pseudo_c_sha256": "0030acb6f1c80f3086f860eeb0807f45e6e52e4d4413b1d8f8b59b79f50648b3"
+    }
+  },
+  "crosscall_static_checks": {
+    "scene_setup_48d6a0_calls_stage_loader_4f0be0_before_raster_4dd8c0": true,
+    "stage_loader_4f0be0_calls_minimap_setup_4dcdc0": true,
+    "raster_reads_engine_offset_1ef6b4": true,
+    "raster_draws_colorref_with_setdcbrushcolor_and_fillrect": true,
+    "raster_calls_ceil_helper_5b6ed0": true,
+    "region_handler_5b3f90_updates_overlay_4de330": true,
+    "blind_tick_5b4360_updates_overlay_4de330": true,
+    "minimap_input_4de410_calls_scroll_core_520800": true,
+    "vf16_resets_two_fields_to_0x80000008": true,
+    "offset_0x1ef6b4_literal_references_in_four_group_sample": 1
+  },
+  "bounded_model": {
+    "source": "src/hakushin_compat/native_minimap_static_subset.py",
+    "tests": "tests/test_native_minimap_static_subset.py",
+    "test_count": 25,
+    "test_status": "PASS",
+    "test_exit_code": 0,
+    "raster_step": "ceil(abs(spanX)/column_count), ceil(abs(spanY)/row_count)",
+    "mask_index": "max(0,min(limit-1,trunc_toward_zero(native_transformed_coordinate/8)))",
+    "mask_color": "param3_nonzero ? 0 : (stored_alpha_byte << 24)",
+    "native_pixel_coordinates_verified": false,
+    "native_color_grid_producer_verified": false,
+    "fog_rule_verified": false,
+    "original_gameplay_golden_pass": 0,
+    "strict_new_engine_match": 0,
+    "source_sha256": "646af744bfcc36da2dac8bd438c5ea320a7d348011f36bd3b3eac2e418e69796",
+    "test_source_sha256": "bdfc6af843b585d3a4f76c0c5b7efae427ac0527db50eeb63a88586434eb1aa1"
+  },
+  "original_game_data_modified": false,
+  "native_executable_executed": false,
+  "new_decompiler_executed": false,
+  "other_owner_files_edited": false,
+  "direct_source_grid_provenance_audit": {
+    "source": "saved named Ghidra .c output",
+    "archive_entries": 48,
+    "saved_c_file_count": 35,
+    "literal": "0x1ef6b4",
+    "direct_literal_refs": {
+      "decomp_004Dxxxx.c": 1
+    },
+    "direct_writer_identified": false,
+    "indirect_pointer_alias_writers_excluded": false,
+    "no_writer_in_source_proven": false,
+    "related_engine_field_readers": {
+      "0x1eeee0": {
+        "direct_ref_count": 2,
+        "source_functions": [
+          "0x00407300 FUN_00407300",
+          "0x004DD8C0 FUN_004dd8c0"
+        ]
+      },
+      "0x1eee4c": {
+        "direct_ref_count": 1,
+        "source_functions": [
+          "0x004DD8C0 FUN_004dd8c0"
+        ]
+      }
+    },
+    "saved_exe_txt_excerpt_direct_match": 0,
+    "saved_exe_txt_excerpt_scan_count": 338,
+    "limitations": "Ghidra pseudocode may omit/fold register and pointer-alias based writes. No original EXE runtime observed."
+  },
+  "overlay_mesh_subset": {
+    "conditional_producer_va": "0x004DD8C0",
+    "conditional_engine_flag_offset": "0x1eeee0",
+    "source_color_grid_offset": "0x1ef6b4",
+    "overlay_subobject_address_offset": "0x1eee4c",
+    "layout_from": "saved Ghidra C; x86 re-check and game golden not run",
+    "grid_columns": "source_columns // 8 + 1",
+    "grid_rows": "source_rows // 8 + 1",
+    "vertex_slots": "2 * overlay_columns * overlay_rows",
+    "vertex_record_bytes": 24,
+    "even_row_first_slot": "2 * (row * overlay_columns + column)",
+    "odd_row_first_slot": "2 * (row * overlay_columns + overlay_columns - 1 - column)",
+    "sample_grid_shape": [
+      110,
+      110
+    ],
+    "sample_overlay_columns": 14,
+    "sample_overlay_rows": 14,
+    "sample_vertex_slot_count": 392,
+    "sample_is_synthetic": true,
+    "original_color_grid_producer_verified": false,
+    "scene_trigger_conditions_verified": false,
+    "fog_gameplay_semantics_verified": false,
+    "pixel_coordinates_verified": false,
+    "original_gameplay_golden_pass": 0,
+    "new_gameplay_strict_match": 0
+  }
+}

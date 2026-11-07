@@ -42,3 +42,13 @@ REAのQUEUE/PROGRESSは保存失敗で古い場合がある。次回はRUN_RESUL
 ## GitHubからの読み戻し確認
 
 2026年11月5日、[収録コミット8bde990](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/8bde99062f0ff497f1b1b9dd387f7ea8282c68d3)を新規クローンへ取得。8文書すべてが研究PC原本とバイト一致、マニフェスト709項目一致、生成493ページ一致、検索回帰14件成功を確認した。TempStatusWnd + 0x1C6 と未登録VA 0x5739E4から根拠本文へ到達した。対応する[PR #21](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/21)で変更範囲を追跡できる。全研究文書の回収は継続中。
+
+## 経験値・召喚と再現資料の追加回収
+
+[経験値・召喚の本文10件](exp/README.md) を追加回収し、既存辞書から参照されていた根拠本文を読めるようにした。[ミニマップ・技能能力の再現資料](dev_evidence/README.md) は作者作成のモデル・テスト・監査JSONの6ファイル。原作を必要としない範囲で実行できる。
+
+全体の未整理範囲は [本文収録状況](COVERAGE.md) と [行単位の対応表](COVERAGE.tsv) に示す。目録の採録時点のSHAと本文の一致を調べる検査であり、未解決の行にある知見が未研究という意味ではない。新しい資料や未索引の資料、スケジュールチャットとの全件照合は引き続き追跡する。
+
+## 第2回のGitHub読み戻し
+
+[収録コミット85ec911](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/85ec9117fd916d6de504b10a1a6a8f8e2a667381)を別クローンへ取得し、回収済み24ファイルすべてが研究PC原本とバイト一致すること、マニフェスト733項目、493ページ、目録1937行の照合表が一致することを確認した。検索15試験・収録範囲6試験・技能能力12試験は成功。ミニマップは22成功・原作ZIP依存3スキップ。TurnStateの読み書き逆引きと、0x55B010の検索結果に歴史的制約が表示されることを実データで確認した。[PR #22](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/22)に変更範囲を記録する。

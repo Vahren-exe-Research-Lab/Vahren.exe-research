@@ -1,0 +1,116 @@
+{
+  "classification": "SAVED_NATIVE_LOCAL_BRANCH_RECONSTRUCTION__NOT_GAMEPLAY_PARITY",
+  "target_exe_invoked": false,
+  "decompiler_reexecuted": false,
+  "source_evidence": {
+    "exe/T013_FIELD137_CONTEXT.txt": {
+      "sha256": "6d8a23459e3727175eb0fb3dc0bacd894b5387e8282634b062cf58370ff487f5",
+      "bytes": 4925
+    },
+    "exe/T013_SKILL_KIND_ENUM.txt": {
+      "sha256": "d328da2d6b14f3f01ed9a0f516d5d5bf13918851cc18994e2eb1c0a35c2df8d7",
+      "bytes": 9356
+    },
+    "data/T011_DATA_MODEL.md": {
+      "sha256": "84199fca911412aac1f03030af09a40ff2a2a699c4e626981dd2897660492a90",
+      "bytes": 31030
+    }
+  },
+  "skill_kind_flag_va": [
+    "0x5739E4",
+    "0x573A48"
+  ],
+  "action_dispatch_va": [
+    "0x577827",
+    "0x577997"
+  ],
+  "action_dispatch_preconditions": "Skill+0x40==8, Skill+0x120!=0, Unit capability byte!=0",
+  "one_skill_local_flag_examples": {
+    "kind=1,raw278=0,raw4c=0": {
+      "unit_byte_offsets_written_one": [
+        "0x134"
+      ],
+      "source_value_hypothetical": true
+    },
+    "kind=2,raw278=0,raw4c=0": {
+      "unit_byte_offsets_written_one": [
+        "0x135"
+      ],
+      "source_value_hypothetical": true
+    },
+    "kind=2,raw278=1,raw4c=0": {
+      "unit_byte_offsets_written_one": [
+        "0x136"
+      ],
+      "source_value_hypothetical": true
+    },
+    "kind=3,raw278=0,raw4c=1": {
+      "unit_byte_offsets_written_one": [
+        "0x137",
+        "0x139"
+      ],
+      "source_value_hypothetical": true
+    },
+    "kind=4,raw278=0,raw4c=0": {
+      "unit_byte_offsets_written_one": [
+        "0x138"
+      ],
+      "source_value_hypothetical": true
+    }
+  },
+  "actions_when_preconditions_satisfied": {
+    "sword": {
+      "required_unit_byte_offset": "0x134",
+      "stored_kind_value": 1,
+      "stored_subtype_value": 0,
+      "original_runtime_execution_observed": false
+    },
+    "bow": {
+      "required_unit_byte_offset": "0x135",
+      "stored_kind_value": 2,
+      "stored_subtype_value": 0,
+      "original_runtime_execution_observed": false
+    },
+    "magic": {
+      "required_unit_byte_offset": "0x136",
+      "stored_kind_value": 2,
+      "stored_subtype_value": 1,
+      "original_runtime_execution_observed": false
+    },
+    "heal": {
+      "required_unit_byte_offset": "0x137",
+      "stored_kind_value": 3,
+      "stored_subtype_value": 0,
+      "original_runtime_execution_observed": false
+    },
+    "care": {
+      "required_unit_byte_offset": "0x137",
+      "stored_kind_value": 3,
+      "stored_subtype_value": 1,
+      "original_runtime_execution_observed": false
+    },
+    "powerup": {
+      "required_unit_byte_offset": "0x137",
+      "stored_kind_value": 3,
+      "stored_subtype_value": 2,
+      "original_runtime_execution_observed": false
+    },
+    "summon": {
+      "required_unit_byte_offset": "0x138",
+      "stored_kind_value": 4,
+      "stored_subtype_value": 0,
+      "original_runtime_execution_observed": false
+    }
+  },
+  "not_reconstructed": [
+    "kind5_pointer_writer",
+    "kind6_skip",
+    "other_kind_fallback",
+    "failed_capability_fallthrough",
+    "resolved_skill_list",
+    "AI decision",
+    "skill execution effects"
+  ],
+  "original_gameplay_golden_pass": 0,
+  "new_native_strict_matches": 0
+}

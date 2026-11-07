@@ -692,6 +692,33 @@ FILES += (
     'tools/reference.py',
     'tools/test_reference.py',
 )
+# Reviewed second recovery batch.
+FILES += (
+    'research/recovered/COVERAGE.md',
+    'research/recovered/COVERAGE.tsv',
+    'research/recovered/dev_evidence/DEV_EVIDENCE_LEDGER.tsv',
+    'research/recovered/dev_evidence/README.md',
+    'research/recovered/dev_evidence/reports/MINIMAP_NATIVE_STATIC_AUDIT_20261011.json',
+    'research/recovered/dev_evidence/reports/NATIVE_SKILL_CAPABILITY_SUBSET_20261011.json',
+    'research/recovered/dev_evidence/src/hakushin_compat/native_minimap_static_subset.py',
+    'research/recovered/dev_evidence/src/hakushin_compat/native_skill_capability_subset.py',
+    'research/recovered/dev_evidence/tests/test_native_minimap_static_subset.py',
+    'research/recovered/dev_evidence/tests/test_native_skill_capability_subset.py',
+    'research/recovered/exp/EXP_CACHED_RECORD_LIFETIME_20261021.md',
+    'research/recovered/exp/EXP_CACHE_STRING_KEY_RECORD_ABI_20261021.md',
+    'research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md',
+    'research/recovered/exp/EXP_KIND4_DISPATCH_PRODUCERS_20261021.md',
+    'research/recovered/exp/EXP_RECOVERY_LEDGER.tsv',
+    'research/recovered/exp/EXP_SAVE_TREE_POINTER_VS_INLINE_20261021.md',
+    'research/recovered/exp/EXP_SIMPLEBATTLE_LIFECYCLE_20261022.md',
+    'research/recovered/exp/EXP_SUMMON_DESTRUCTOR_NORMAL_VTABLE_20261022.md',
+    'research/recovered/exp/EXP_SUMMON_OWNER_RESEARCH.md',
+    'research/recovered/exp/EXP_THREE_PRODUCER_CROSSJOIN_20261021.md',
+    'research/recovered/exp/EXP_TYPED_OFFSET_CENSUS_20261022.md',
+    'research/recovered/exp/README.md',
+    'tools/recovery_coverage.py',
+    'tools/test_recovery_coverage.py',
+)
 ALLOWED = set(FILES) | {MANIFEST}
 RESTRICTED = (
     re.compile(r"(?i)\b[A-Z]:[\\/]+Users[\\/]+[A-Za-z0-9._-]+"),
