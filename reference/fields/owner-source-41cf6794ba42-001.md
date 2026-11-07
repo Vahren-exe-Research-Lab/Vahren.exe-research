@@ -10,4 +10,28 @@
 - [research/recovered/b_batch2/T028_ROSTER_VECTOR_DUAL_SET_PRODUCER_NATIVE_20261028_10H.md 行 9](../../research/recovered/b_batch2/T028_ROSTER_VECTOR_DUAL_SET_PRODUCER_NATIVE_20261028_10H.md?plain=1#L9-L9) — - 0x493A95 LEA ECX,[ESP+0xFC] / 0x493A9C PUSH ECX / 0x493A9D PUSH EDI / 0x493A9E CALL 0x5882F0。既07H原作ASMで解明済みの0x5882F0は元オブジェクト自身を先頭seedし、source+0xD4..D8の0x1C幅名レ
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
 
+<a id="field-3cb0"></a>
+## source + 0x3CB0
+
+- [research/recovered/b_batch10/data/T013_SUPPORT_POSTCORE_RECT_4C3250_CONTRACT_20261013.md 行 5](../../research/recovered/b_batch10/data/T013_SUPPORT_POSTCORE_RECT_4C3250_CONTRACT_20261013.md?plain=1#L5-L5) — [FLAG SELECTION] 4C3250 `cmp byte[source+0x3CD1],0`：zero→copy4 DWORD source+0x3CB0/+B4/+B8/+BC into dest+0/+4/+8/+C→RET4C327C。nonzero→4C327D compare byte[source
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+<a id="field-3cc0"></a>
+## source + 0x3CC0
+
+- [research/recovered/b_batch10/data/T013_SUPPORT_POSTCORE_RECT_4C3250_CONTRACT_20261013.md 行 5](../../research/recovered/b_batch10/data/T013_SUPPORT_POSTCORE_RECT_4C3250_CONTRACT_20261013.md?plain=1#L5-L5) — [FLAG SELECTION] 4C3250 `cmp byte[source+0x3CD1],0`：zero→copy4 DWORD source+0x3CB0/+B4/+B8/+BC into dest+0/+4/+8/+C→RET4C327C。nonzero→4C327D compare byte[source
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+<a id="field-3cd0"></a>
+## source + 0x3CD0
+
+- [research/recovered/b_batch10/data/T013_SUPPORT_POSTCORE_RECT_4C3250_CONTRACT_20261013.md 行 5](../../research/recovered/b_batch10/data/T013_SUPPORT_POSTCORE_RECT_4C3250_CONTRACT_20261013.md?plain=1#L5-L5) — [FLAG SELECTION] 4C3250 `cmp byte[source+0x3CD1],0`：zero→copy4 DWORD source+0x3CB0/+B4/+B8/+BC into dest+0/+4/+8/+C→RET4C327C。nonzero→4C327D compare byte[source
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+<a id="field-3cd1"></a>
+## source + 0x3CD1
+
+- [research/recovered/b_batch10/data/T013_SUPPORT_POSTCORE_RECT_4C3250_CONTRACT_20261013.md 行 5](../../research/recovered/b_batch10/data/T013_SUPPORT_POSTCORE_RECT_4C3250_CONTRACT_20261013.md?plain=1#L5-L5) — [FLAG SELECTION] 4C3250 `cmp byte[source+0x3CD1],0`：zero→copy4 DWORD source+0x3CB0/+B4/+B8/+BC into dest+0/+4/+8/+C→RET4C327C。nonzero→4C327D compare byte[source
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

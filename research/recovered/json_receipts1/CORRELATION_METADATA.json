@@ -1,0 +1,470 @@
+{
+  "scope": "Reported IDs/filenames and declared metadata only. No linked artifacts opened. No canonical technical facts inferred.",
+  "receipts": [
+    {
+      "source_path": "data/B_OFFLINE_20261101_08H_READBACK_RECEIPT.json",
+      "reported_id": "B-OFFLINE-20261101-08H-T011-T013-GROUP1E-CALLSITES-AL-POSTCALL-01",
+      "container_field": "files",
+      "links": [
+        {
+          "reported_filename": "data/B_20261101_08H_GROUP1E_CALLSITE_READONLY_VERIFY.py",
+          "reported_fields": {
+            "relative_path": "data/B_20261101_08H_GROUP1E_CALLSITE_READONLY_VERIFY.py",
+            "bytes": 9160,
+            "sha256": "73903754587B679B19633975024632B5E504B151D05501AFBF8AF84C5D554418",
+            "readback": "PASS"
+          }
+        },
+        {
+          "reported_filename": "data/B_OFFLINE_20261101_08H_GROUP1E_CALLSITE_EVIDENCE.json",
+          "reported_fields": {
+            "relative_path": "data/B_OFFLINE_20261101_08H_GROUP1E_CALLSITE_EVIDENCE.json",
+            "bytes": 16668,
+            "sha256": "DA11DE92B73D127824D99A8D42E89C4747312D339C0F47B64981A2FEA066AAC3",
+            "readback": "PASS"
+          }
+        },
+        {
+          "reported_filename": "data/T011_T013_GROUP1E_ALL25_CALLER_AL_POSTCALL_NATIVE_20261101_08H.md",
+          "reported_fields": {
+            "relative_path": "data/T011_T013_GROUP1E_ALL25_CALLER_AL_POSTCALL_NATIVE_20261101_08H.md",
+            "bytes": 9664,
+            "sha256": "59384BB44C1A45A83223FE55FC399FCCB6372D1ECEE2DEC483B0361CDF8127F2",
+            "readback": "PASS"
+          }
+        },
+        {
+          "reported_filename": "evidence/LANE_B_HANDOFF_OFFLINE_DELTA_20261101_08H.md",
+          "reported_fields": {
+            "relative_path": "evidence/LANE_B_HANDOFF_OFFLINE_DELTA_20261101_08H.md",
+            "bytes": 2339,
+            "sha256": "55D21D6DA885BC457B39C03F5ADF2E97945421F27C9DA4666C1E22D05E3179BA",
+            "readback": "PASS"
+          }
+        }
+      ],
+      "scope": "metadata only; no linked file was opened or independently verified"
+    },
+    {
+      "source_path": "data/B_OFFLINE_20261101_09H_READBACK_RECEIPT.json",
+      "reported_id": "B-OFFLINE-20261101-09H-T011-T013-GROUP34-WEIGHTED-SQRT-01",
+      "container_field": "files",
+      "links": [
+        {
+          "reported_filename": "data/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md",
+          "reported_fields": {
+            "path": "data/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md",
+            "bytes": 7621,
+            "sha256": "196375A50098E099512A9DD7F6EFC62E02DC80CB308A87B3771F0C876EF34F3B",
+            "independent_readback": "PASS"
+          }
+        },
+        {
+          "reported_filename": "data/B_20261101_09H_GROUP34_WEIGHTED_SQRT_NATIVE_READONLY_VERIFY.py",
+          "reported_fields": {
+            "path": "data/B_20261101_09H_GROUP34_WEIGHTED_SQRT_NATIVE_READONLY_VERIFY.py",
+            "bytes": 7352,
+            "sha256": "E6FF2C50614FE7315A78570431466AB49E8C19D3DD92043ADC18263DBD43A85A",
+            "independent_readback": "PASS"
+          }
+        },
+        {
+          "reported_filename": "data/B_OFFLINE_20261101_09H_GROUP34_WEIGHTED_SQRT_EVIDENCE.json",
+          "reported_fields": {
+            "path": "data/B_OFFLINE_20261101_09H_GROUP34_WEIGHTED_SQRT_EVIDENCE.json",
+            "bytes": 15475,
+            "sha256": "6AF7899AA29F10ACF63BE9806D1A30C79644615DBCD717AF2F435017D678A1AC",
+            "independent_readback": "PASS"
+          }
+        },
+        {
+          "reported_filename": "evidence/LANE_B_HANDOFF_OFFLINE_DELTA_20261101_09H.md",
+          "reported_fields": {
+            "path": "evidence/LANE_B_HANDOFF_OFFLINE_DELTA_20261101_09H.md",
+            "bytes": 2646,
+            "sha256": "2229B2A6E62114FF988A112594A2A84301FA7AC6265FFC673879C2EA227B2073",
+            "independent_readback": "PASS"
+          }
+        }
+      ],
+      "scope": "metadata only; no linked file was opened or independently verified"
+    },
+    {
+      "source_path": "data/B_OFFLINE_20261101_10H_READBACK_RECEIPT.json",
+      "reported_id": "B-OFFLINE-20261101-10H-T011-T024-GROUP34-PROXIMITY-GATE-01",
+      "container_field": "files",
+      "links": [
+        {
+          "reported_filename": "data/T011_T024_GROUP34_PROXIMITY_RATIO_100TICK_NATIVE_20261101_10H.md",
+          "reported_fields": {
+            "path": "data/T011_T024_GROUP34_PROXIMITY_RATIO_100TICK_NATIVE_20261101_10H.md",
+            "size_bytes": 11366,
+            "sha256": "6b99f9f4a10c2498386fb12f7924621cfa07f9d656d484235f96b2845ae9e247",
+            "readback_sha256": "6b99f9f4a10c2498386fb12f7924621cfa07f9d656d484235f96b2845ae9e247",
+            "match": true
+          }
+        },
+        {
+          "reported_filename": "data/B_OFFLINE_20261101_10H_GROUP34_PROXIMITY_EVIDENCE.json",
+          "reported_fields": {
+            "path": "data/B_OFFLINE_20261101_10H_GROUP34_PROXIMITY_EVIDENCE.json",
+            "size_bytes": 16354,
+            "sha256": "562415c00b07730547e0bfc92f693503414cc742453c60f95bff8a7e2cb1ce9d",
+            "readback_sha256": "562415c00b07730547e0bfc92f693503414cc742453c60f95bff8a7e2cb1ce9d",
+            "match": true
+          }
+        },
+        {
+          "reported_filename": "data/B_20261101_10H_GROUP34_PROXIMITY_READONLY_VERIFY.py",
+          "reported_fields": {
+            "path": "data/B_20261101_10H_GROUP34_PROXIMITY_READONLY_VERIFY.py",
+            "size_bytes": 8088,
+            "sha256": "fbe6e4a2063ee7dc739be53bc8490da9e84ab773f5b4a699e8e6148f92db4334",
+            "readback_sha256": "fbe6e4a2063ee7dc739be53bc8490da9e84ab773f5b4a699e8e6148f92db4334",
+            "match": true
+          }
+        },
+        {
+          "reported_filename": "evidence/LANE_B_HANDOFF_OFFLINE_DELTA_20261101_10H.md",
+          "reported_fields": {
+            "path": "evidence/LANE_B_HANDOFF_OFFLINE_DELTA_20261101_10H.md",
+            "size_bytes": 3402,
+            "sha256": "0ac8ccafbfe7bd12439207d923d34a8480862dbcf4c1ad34bfba4fe6ec0a6f1c",
+            "readback_sha256": "0ac8ccafbfe7bd12439207d923d34a8480862dbcf4c1ad34bfba4fe6ec0a6f1c",
+            "match": true
+          }
+        }
+      ],
+      "scope": "metadata only; no linked file was opened or independently verified"
+    },
+    {
+      "source_path": "data/B_OFFLINE_20261101_11H_READBACK_RECEIPT.json",
+      "reported_id": "B-OFFLINE-20261101-11H-T011-T024-GROUP34-DUAL-BUCKET-GATE-01",
+      "container_field": "files",
+      "links": [
+        {
+          "reported_filename": "data/T011_T024_GROUP34_DUAL_BUCKET_ELIGIBILITY_NATIVE_20261101_11H.md",
+          "reported_fields": {
+            "relative_path": "data/T011_T024_GROUP34_DUAL_BUCKET_ELIGIBILITY_NATIVE_20261101_11H.md",
+            "bytes": 9122,
+            "sha256": "EA85732E2C7E52E93B58A53158E07C8E32E15A109EE343277A3EBF85D6F78984",
+            "independent_readback": true
+          }
+        },
+        {
+          "reported_filename": "data/B_20261101_11H_GROUP34_DUAL_BUCKET_READONLY_VERIFY.py",
+          "reported_fields": {
+            "relative_path": "data/B_20261101_11H_GROUP34_DUAL_BUCKET_READONLY_VERIFY.py",
+            "bytes": 5705,
+            "sha256": "F8DF5760E5CEC5757A37516E09BEFD05A342B16AB240182D4C25588C66E96483",
+            "independent_readback": true
+          }
+        },
+        {
+          "reported_filename": "data/B_OFFLINE_20261101_11H_GROUP34_DUAL_BUCKET_EVIDENCE.json",
+          "reported_fields": {
+            "relative_path": "data/B_OFFLINE_20261101_11H_GROUP34_DUAL_BUCKET_EVIDENCE.json",
+            "bytes": 14944,
+            "sha256": "C3E4C3E609E31622A0E4F3B41B2B55F1B0A100909F77B533905FB726D64EEC48",
+            "independent_readback": true
+          }
+        },
+        {
+          "reported_filename": "evidence/LANE_B_HANDOFF_OFFLINE_DELTA_20261101_11H.md",
+          "reported_fields": {
+            "relative_path": "evidence/LANE_B_HANDOFF_OFFLINE_DELTA_20261101_11H.md",
+            "bytes": 3586,
+            "sha256": "0BD9FDCFD0DA2BEAA136A29E4D25F70A266BE2A7398AB27045FF3B67E03FA2A2",
+            "independent_readback": true
+          }
+        }
+      ],
+      "scope": "metadata only; no linked file was opened or independently verified"
+    },
+    {
+      "source_path": "data/B_OFFLINE_20261101_12H_READBACK_RECEIPT.json",
+      "reported_id": "B-OFFLINE-20261101-12H-T011-T024-DUAL-LIST-MODE3-VECTOR-01",
+      "container_field": "files",
+      "links": [
+        {
+          "reported_filename": "data/T011_T024_DUAL_LIST_MODE3_VECTOR_NATIVE_20261101_12H.md",
+          "reported_fields": {
+            "file": "T011_T024_DUAL_LIST_MODE3_VECTOR_NATIVE_20261101_12H.md",
+            "relative_path": "data/T011_T024_DUAL_LIST_MODE3_VECTOR_NATIVE_20261101_12H.md",
+            "bytes": 9227,
+            "sha256": "8ED8FCFD43200DB30236A0E6D219E0E3440DBD3A90EE6C68F80C81A0708F7B88",
+            "local_readback": "PASS"
+          }
+        },
+        {
+          "reported_filename": "data/B_20261101_12H_MODE3_DUAL_LIST_READONLY_VERIFY.py",
+          "reported_fields": {
+            "file": "B_20261101_12H_MODE3_DUAL_LIST_READONLY_VERIFY.py",
+            "relative_path": "data/B_20261101_12H_MODE3_DUAL_LIST_READONLY_VERIFY.py",
+            "bytes": 7532,
+            "sha256": "73D340DAE893B8E11F87BFEED01E158A097FC4718F728537AD2381A4D0016E63",
+            "local_readback": "PASS"
+          }
+        },
+        {
+          "reported_filename": "data/B_OFFLINE_20261101_12H_MODE3_DUAL_LIST_EVIDENCE.json",
+          "reported_fields": {
+            "file": "B_OFFLINE_20261101_12H_MODE3_DUAL_LIST_EVIDENCE.json",
+            "relative_path": "data/B_OFFLINE_20261101_12H_MODE3_DUAL_LIST_EVIDENCE.json",
+            "bytes": 7905,
+            "sha256": "67BEC765D345A0B1023605517790B18E0EFD711EC39F95662A8FB96F56FE47FE",
+            "local_readback": "PASS"
+          }
+        },
+        {
+          "reported_filename": "evidence/LANE_B_HANDOFF_OFFLINE_DELTA_20261101_12H.md",
+          "reported_fields": {
+            "file": "LANE_B_HANDOFF_OFFLINE_DELTA_20261101_12H.md",
+            "relative_path": "evidence/LANE_B_HANDOFF_OFFLINE_DELTA_20261101_12H.md",
+            "bytes": 3013,
+            "sha256": "2911D69F32BD3FF7FDE8F45F52FAE1EC896CA456B905EDC9EE2284EF5FBFB64C",
+            "local_readback": "PASS"
+          }
+        }
+      ],
+      "scope": "metadata only; no linked file was opened or independently verified"
+    },
+    {
+      "source_path": "data/B_OFFLINE_20261101_13H_READBACK_RECEIPT.json",
+      "reported_id": "B-OFFLINE-20261101-13H-T011-T024-DISTANCE-SORT-MODE-GATE-01",
+      "container_field": "files",
+      "links": [
+        {
+          "reported_filename": "data/T011_T024_NONMODE3_DISTANCE_ORDER_AND_MODE3_MEMBER_GRID_NATIVE_20261101_13H.md",
+          "reported_fields": {
+            "sha256": "91C075A695E87CA039EE4DCE07281F56C0C893A4F6903AB83A02195C227E46B6",
+            "bytes": 11491
+          }
+        },
+        {
+          "reported_filename": "data/B_OFFLINE_20261101_13H_DISTANCE_SORT_EVIDENCE.json",
+          "reported_fields": {
+            "sha256": "1C2030F7A1D8EB12A5E97F51509C70FA1BA25ADD600C271A5DA23516939A0205",
+            "bytes": 10913
+          }
+        },
+        {
+          "reported_filename": "data/B_20261101_13H_DISTANCE_SORT_READONLY_VERIFY.py",
+          "reported_fields": {
+            "sha256": "4451B852B296DF12E714D829175FECFBF02E1EC754067450B41D1D49DD893CC6",
+            "bytes": 5904
+          }
+        },
+        {
+          "reported_filename": "evidence/LANE_B_HANDOFF_OFFLINE_DELTA_20261101_13H.md",
+          "reported_fields": {
+            "sha256": "DCA8895CDD94D328EAE027EC64C07FF672FCFE9CEDD90B854DAA16601AA772CF",
+            "bytes": 2713
+          }
+        }
+      ],
+      "scope": "metadata only; no linked file was opened or independently verified"
+    },
+    {
+      "source_path": "data/B_OFFLINE_20261101_14H_READBACK_RECEIPT.json",
+      "reported_id": "B-OFFLINE-20261101-14H-T011-T024-DISTANCE-COMPARE-BOUNDARY-01",
+      "container_field": "manifest",
+      "links": [
+        {
+          "reported_filename": "data/T011_T024_DISTANCE_COMPARATOR_BOUNDARY_CROSS_GATES_OFFLINE_20261101_14H.md",
+          "reported_fields": {
+            "path": "data/T011_T024_DISTANCE_COMPARATOR_BOUNDARY_CROSS_GATES_OFFLINE_20261101_14H.md",
+            "bytes": 9656,
+            "sha256": "2A6F516810D29B5B6E08AF683892CA8AD32300C7BDBF52C336E3D423064DAF63",
+            "readback": true,
+            "library_readback_sha256": "2A6F516810D29B5B6E08AF683892CA8AD32300C7BDBF52C336E3D423064DAF63",
+            "library_readback_ok": true
+          }
+        },
+        {
+          "reported_filename": "data/B_OFFLINE_20261101_14H_DISTANCE_BOUNDARY_EVIDENCE.json",
+          "reported_fields": {
+            "path": "data/B_OFFLINE_20261101_14H_DISTANCE_BOUNDARY_EVIDENCE.json",
+            "bytes": 3400,
+            "sha256": "9941DE16CB1EB58D894EDCDCA4846E058976EE4093C6D4C2A604512124EBB392",
+            "readback": true,
+            "library_readback_sha256": "9941DE16CB1EB58D894EDCDCA4846E058976EE4093C6D4C2A604512124EBB392",
+            "library_readback_ok": true
+          }
+        },
+        {
+          "reported_filename": "data/B_20261101_14H_DISTANCE_BOUNDARY_EVIDENCE_READONLY.py",
+          "reported_fields": {
+            "path": "data/B_20261101_14H_DISTANCE_BOUNDARY_EVIDENCE_READONLY.py",
+            "bytes": 3939,
+            "sha256": "DDDC83FB1DA665D1F78646699131B25BEE7978879549BCC752DA1544156F494B",
+            "readback": true,
+            "library_readback_sha256": "DDDC83FB1DA665D1F78646699131B25BEE7978879549BCC752DA1544156F494B",
+            "library_readback_ok": true
+          }
+        },
+        {
+          "reported_filename": "evidence/LANE_B_HANDOFF_OFFLINE_DELTA_20261101_14H.md",
+          "reported_fields": {
+            "path": "evidence/LANE_B_HANDOFF_OFFLINE_DELTA_20261101_14H.md",
+            "bytes": 2093,
+            "sha256": "41D463B73E72AF0BA720986443F98350F417AB06643A5B986921B90BC8EE553E",
+            "readback": true,
+            "library_readback_sha256": "41D463B73E72AF0BA720986443F98350F417AB06643A5B986921B90BC8EE553E",
+            "library_readback_ok": true
+          }
+        }
+      ],
+      "scope": "metadata only; no linked file was opened or independently verified"
+    },
+    {
+      "source_path": "data/B_OFFLINE_20261101_15H_READBACK_RECEIPT.json",
+      "reported_id": "B-OFFLINE-20261101-15H-T011-T024-NAN-COMPARATOR-TRANSITIVITY-01",
+      "container_field": "manifest",
+      "links": [
+        {
+          "reported_filename": "data/T011_T024_DISTANCE_NAN_COMPARATOR_NONTRANSITIVE_OFFLINE_20261101_15H.md",
+          "reported_fields": {
+            "path": "data/T011_T024_DISTANCE_NAN_COMPARATOR_NONTRANSITIVE_OFFLINE_20261101_15H.md",
+            "bytes": 9280,
+            "sha256": "F8709B82172978E67A3DE07AA5E994D8D4269BAAF294C5C43296F1764B90E952",
+            "local_readback": true,
+            "library_materialized_readback": true,
+            "library_materialized_sha256": "F8709B82172978E67A3DE07AA5E994D8D4269BAAF294C5C43296F1764B90E952"
+          }
+        },
+        {
+          "reported_filename": "data/B_OFFLINE_20261101_15H_NAN_COMPARATOR_ORDER_EVIDENCE.json",
+          "reported_fields": {
+            "path": "data/B_OFFLINE_20261101_15H_NAN_COMPARATOR_ORDER_EVIDENCE.json",
+            "bytes": 2488,
+            "sha256": "8C9924CEC3099C2E1F018CE9C227B679AADC6AE5C1AEBF33CEEB8758975CB1AA",
+            "local_readback": true,
+            "library_materialized_readback": true,
+            "library_materialized_sha256": "8C9924CEC3099C2E1F018CE9C227B679AADC6AE5C1AEBF33CEEB8758975CB1AA"
+          }
+        },
+        {
+          "reported_filename": "data/B_20261101_15H_NAN_COMPARATOR_ORDER_READONLY_VERIFY.py",
+          "reported_fields": {
+            "path": "data/B_20261101_15H_NAN_COMPARATOR_ORDER_READONLY_VERIFY.py",
+            "bytes": 5986,
+            "sha256": "EF06A46B5358E905B64B5C953B9CA82BE49C35E2043DBB2C395486508C7C427F",
+            "local_readback": true,
+            "library_materialized_readback": true,
+            "library_materialized_sha256": "EF06A46B5358E905B64B5C953B9CA82BE49C35E2043DBB2C395486508C7C427F"
+          }
+        },
+        {
+          "reported_filename": "evidence/LANE_B_HANDOFF_OFFLINE_DELTA_20261101_15H.md",
+          "reported_fields": {
+            "path": "evidence/LANE_B_HANDOFF_OFFLINE_DELTA_20261101_15H.md",
+            "bytes": 3121,
+            "sha256": "057E44DAC80C09D3402F5BBEC32E82C3A661034D38951B63AB8AABD69565C44B",
+            "local_readback": true,
+            "library_materialized_readback": true,
+            "library_materialized_sha256": "057E44DAC80C09D3402F5BBEC32E82C3A661034D38951B63AB8AABD69565C44B"
+          }
+        }
+      ],
+      "scope": "metadata only; no linked file was opened or independently verified"
+    },
+    {
+      "source_path": "data/B_OFFLINE_20261101_16H_READBACK_RECEIPT.json",
+      "reported_id": "B-OFFLINE-20261101-16H-T011-T024-MIDPOINT-SAR-ROUNDING-OVERFLOW-01",
+      "container_field": "manifest",
+      "links": [
+        {
+          "reported_filename": "data/T011_T024_NATIVE_MIDPOINT_SAR_ROUNDING_OVERFLOW_OFFLINE_20261101_16H.md",
+          "reported_fields": {
+            "path": "data/T011_T024_NATIVE_MIDPOINT_SAR_ROUNDING_OVERFLOW_OFFLINE_20261101_16H.md",
+            "bytes": 7766,
+            "sha256": "B111C5F2EE1DBC568E18F803288542AC120DF0EA4011D7B929AEB79DC29C01C6",
+            "local_readback": true,
+            "library_materialized_readback": false
+          }
+        },
+        {
+          "reported_filename": "data/B_OFFLINE_20261101_16H_MIDPOINT_SAR_EVIDENCE.json",
+          "reported_fields": {
+            "path": "data/B_OFFLINE_20261101_16H_MIDPOINT_SAR_EVIDENCE.json",
+            "bytes": 4894,
+            "sha256": "B5418108B0016A83A90DD0480E3A1CB5BF7694BF42FB9AD2AF31D87492290219",
+            "local_readback": true,
+            "library_materialized_readback": false
+          }
+        },
+        {
+          "reported_filename": "data/B_20261101_16H_MIDPOINT_SAR_NATIVE_READONLY_VERIFY.py",
+          "reported_fields": {
+            "path": "data/B_20261101_16H_MIDPOINT_SAR_NATIVE_READONLY_VERIFY.py",
+            "bytes": 4055,
+            "sha256": "9059364F43571349DFC3185480B1FBDFF09F4E923FDB9CF149526B278526D237",
+            "local_readback": true,
+            "library_materialized_readback": false
+          }
+        },
+        {
+          "reported_filename": "evidence/LANE_B_HANDOFF_OFFLINE_DELTA_20261101_16H.md",
+          "reported_fields": {
+            "path": "evidence/LANE_B_HANDOFF_OFFLINE_DELTA_20261101_16H.md",
+            "bytes": 2295,
+            "sha256": "152E29F2FA6DED84C828D2D4D551ACF37E243AFD15BCBC1A73E6A5C5D0C3A321",
+            "local_readback": true,
+            "library_materialized_readback": false
+          }
+        }
+      ],
+      "scope": "metadata only; no linked file was opened or independently verified"
+    },
+    {
+      "source_path": "data/B_OFFLINE_20261101_16H_READBACK_RECEIPT_CONVERSATION_FINAL.json",
+      "reported_id": "B-OFFLINE-20261101-16H-T011-T024-MIDPOINT-SAR-ROUNDING-OVERFLOW-01",
+      "container_field": "manifest",
+      "links": [
+        {
+          "reported_filename": "data/T011_T024_NATIVE_MIDPOINT_SAR_ROUNDING_OVERFLOW_OFFLINE_20261101_16H.md",
+          "reported_fields": {
+            "path": "data/T011_T024_NATIVE_MIDPOINT_SAR_ROUNDING_OVERFLOW_OFFLINE_20261101_16H.md",
+            "bytes": 7766,
+            "sha256": "B111C5F2EE1DBC568E18F803288542AC120DF0EA4011D7B929AEB79DC29C01C6",
+            "local_readback": true,
+            "library_materialized_readback": true
+          }
+        },
+        {
+          "reported_filename": "data/B_OFFLINE_20261101_16H_MIDPOINT_SAR_EVIDENCE.json",
+          "reported_fields": {
+            "path": "data/B_OFFLINE_20261101_16H_MIDPOINT_SAR_EVIDENCE.json",
+            "bytes": 4894,
+            "sha256": "B5418108B0016A83A90DD0480E3A1CB5BF7694BF42FB9AD2AF31D87492290219",
+            "local_readback": true,
+            "library_materialized_readback": true
+          }
+        },
+        {
+          "reported_filename": "data/B_20261101_16H_MIDPOINT_SAR_NATIVE_READONLY_VERIFY.py",
+          "reported_fields": {
+            "path": "data/B_20261101_16H_MIDPOINT_SAR_NATIVE_READONLY_VERIFY.py",
+            "bytes": 4055,
+            "sha256": "9059364F43571349DFC3185480B1FBDFF09F4E923FDB9CF149526B278526D237",
+            "local_readback": true,
+            "library_materialized_readback": true
+          }
+        },
+        {
+          "reported_filename": "evidence/LANE_B_HANDOFF_OFFLINE_DELTA_20261101_16H.md",
+          "reported_fields": {
+            "path": "evidence/LANE_B_HANDOFF_OFFLINE_DELTA_20261101_16H.md",
+            "bytes": 2295,
+            "sha256": "152E29F2FA6DED84C828D2D4D551ACF37E243AFD15BCBC1A73E6A5C5D0C3A321",
+            "local_readback": true,
+            "library_materialized_readback": true
+          }
+        }
+      ],
+      "scope": "metadata only; no linked file was opened or independently verified"
+    }
+  ],
+  "declared_digest_anomalies": []
+}

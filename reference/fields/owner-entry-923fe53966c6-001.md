@@ -31,6 +31,9 @@
 <a id="field-1c"></a>
 ## entry + 0x1C
 
+- [research/recovered/b_batch10/data/T013_TROOP_MODE_EXPR_RTTI_DEDUP_NATIVE_20261024_0015.md 行 10](../../research/recovered/b_batch10/data/T013_TROOP_MODE_EXPR_RTTI_DEDUP_NATIVE_20261024_0015.md?plain=1#L10-L10) — [MAP CAVEAT] 既Ghidra 0x463CA0はengine+0x30C/0x310 treeをlookupし、miss時0x20-byte entry+0x1c=0を生成して挿入する擬似Cを示す。missing variableの実副作用/例外/複数scopeはASM・実戦で要検証、現時点では0戻りの厳密
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 - [research/recovered/b_batch3/T028_BATTLE_MODE_CONFIG_PRODUCER_NATIVE_20261028_00H.md 行 8](../../research/recovered/b_batch3/T028_BATTLE_MODE_CONFIG_PRODUCER_NATIVE_20261028_00H.md?plain=1#L8-L8) — - 0x565B8B PUSH0x628E38 原作文字列 '@config@player_battle'→0x565B92 CALL0x402800→0x565B97 CALL0x428010。0x565BA4 設定欠落時 global byte[0x683748]=1、指定時0x565BB3 byte=([entr
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 

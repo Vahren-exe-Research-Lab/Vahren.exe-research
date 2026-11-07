@@ -4,8 +4,38 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-20c"></a>
+## Skill + 0x20C
+
+- [research/recovered/b_batch7/data/T012_POSTILLUSION_RUSH_POSTSKILL_STATE_CROSSJOIN_20261017.md 行 5](../../research/recovered/b_batch7/data/T012_POSTILLUSION_RUSH_POSTSKILL_STATE_CROSSJOIN_20261017.md?plain=1#L5-L5) — [FACT-POST-EARLY] 57BE30の入口ABIはECX=Skill候補、stack=Unit候補（呼出地点での完全なidentity一致はVERIFY）。VA57BE6E..57BE8Cではsigned Unit+0x1E54C<=Skill+0x208ならUnit+0x1E54C更新とSkill+0x2
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+<a id="field-210"></a>
+## Skill + 0x210
+
+- [research/recovered/b_batch5/data/T011_T012_BMP_FAROFF_SKRN_ACQUISITION_SOURCE_20261017.md 行 9](../../research/recovered/b_batch5/data/T011_T012_BMP_FAROFF_SKRN_ACQUISITION_SOURCE_20261017.md?plain=1#L9-L9) — [VA/XREF EXISTING ONLY] B保存済み0x59C1BA..0x59C253のSkill keyed loader候補、0x57BEC3→0x4C1200・Skill+0x210/+0x214／Unit+0x1E53Cは既証拠を参考にするのみ。b_mp_faroffのeffective fkey/de
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
+- [research/recovered/b_batch5/data/T011_T012_HEAL_DELAY_KEY_ALIAS_SOURCE_20261017.md 行 8](../../research/recovered/b_batch5/data/T011_T012_HEAL_DELAY_KEY_ALIAS_SOURCE_20261017.md?plain=1#L8-L8) — [EXE/XREF PREEXISTING ONLY] B保存native exe/T012_SKILL_POST_57BE30_NATIVE_20261013.txt VA0x57BEC3 call0x4C1200（Skill+0x210>0、key+0x214→Unit+0x1E53C map）、0x57BEDB
+  制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
+- [research/recovered/b_batch7/data/T012_POSTILLUSION_RUSH_POSTSKILL_STATE_CROSSJOIN_20261017.md 行 5](../../research/recovered/b_batch7/data/T012_POSTILLUSION_RUSH_POSTSKILL_STATE_CROSSJOIN_20261017.md?plain=1#L5-L5) — [FACT-POST-EARLY] 57BE30の入口ABIはECX=Skill候補、stack=Unit候補（呼出地点での完全なidentity一致はVERIFY）。VA57BE6E..57BE8Cではsigned Unit+0x1E54C<=Skill+0x208ならUnit+0x1E54C更新とSkill+0x2
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
 <a id="field-230"></a>
 ## Skill + 0x230
+
+- [research/recovered/b_batch10/data/T013_SUPPORT_RNG_EFFECT_CROSSJOIN_20261013.md 行 5](../../research/recovered/b_batch10/data/T013_SUPPORT_RNG_EFFECT_CROSSJOIN_20261013.md?plain=1#L5-L5) — [RNG ORDER] 54E1CC call0x5B6EAB（CRT rand）は54E317より前に直接1回。支援効果がこの函数の通常経路で551490へ到達すると、5514D7 cmp [Skill+0x230],100 (signed), 5514E2 jge551511 が成立すれば**chance用の直接C
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch10/data/T013_SUPPORT_RNG_EFFECT_CROSSJOIN_20261013.md 行 6](../../research/recovered/b_batch10/data/T013_SUPPORT_RNG_EFFECT_CROSSJOIN_20261013.md?plain=1#L6-L6) — [BOUNDED COUNT] サポート1回の54E0B0通常到達を仮定すると、現行2つの直接calleeコードで必ず通過するCRT命令siteは、1+(Skill+0x230<100 ? 1:0)回。ただし**この2siteだけの個数**であり、event前段・pool allocator/virtual、55149
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch6/data/T012_ADDPER_HEAL_POSTDAMAGE_RNG_SPLIT_20261013.md 行 4](../../research/recovered/b_batch6/data/T012_ADDPER_HEAL_POSTDAMAGE_RNG_SPLIT_20261013.md?plain=1#L4-L4) — [PRODUCER REUSE] 既READY B-20261013-1322-01のB exe/T012_PROB_FIELD_PROBE.txt VA59BBCA literal add_per→59BBEF 4647D0 getter→59BBFC Skill+0x230 store→59BC39 test0→5
+  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
+
+- [research/recovered/b_batch6/data/T012_ADDPER_HEAL_POSTDAMAGE_RNG_SPLIT_20261013.md 行 5](../../research/recovered/b_batch6/data/T012_ADDPER_HEAL_POSTDAMAGE_RNG_SPLIT_20261013.md?plain=1#L5-L5) — [HEAL CORE] B exe/T012_FUNCTION_BOUNDARIES.txt 5514D2..551511: context pointer EBX、5514D4 EAX=[ctx+8]=Skill、5514D7 CMP [Skill+0x230],0x64、5514E2 JGE551511 はsign
+  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
 
 - [research/recovered/b_batch6/data/T012_ADDPER_SKILL230_SOURCE_20261013.md 行 3](../../research/recovered/b_batch6/data/T012_ADDPER_SKILL230_SOURCE_20261013.md?plain=1#L3-L3) — [B PRIMARY] B保存 exe/T012_PROB_FIELD_PROBE.txt native VA0x599A91(+0x230=0初期化)、0x59BBBC..0x59BC48 parserからread-only照合。0x59BBCA MOV EDX,0x624CA0文字列add_per、0x59BBEF
   制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
@@ -73,6 +103,15 @@
 <a id="field-268"></a>
 ## Skill + 0x268
 
+- [research/recovered/b_batch10/data/T013_SUPPORT_POSTCORE_RANDOM_4B9F70_CONTRACT_20261013.md 行 7](../../research/recovered/b_batch10/data/T013_SUPPORT_POSTCORE_RANDOM_4B9F70_CONTRACT_20261013.md?plain=1#L7-L7) — [CALLEE ORDER] After wrapper ret caller0x54E334 condition Skill+0x268>0; positive→0x54E367 CALL4C3250 and global[0x609268] indirect callback; only return EAX==1
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch10/data/T013_SUPPORT_POSTCORE_RECT_4C3250_CONTRACT_20261013.md 行 4](../../research/recovered/b_batch10/data/T013_SUPPORT_POSTCORE_RECT_4C3250_CONTRACT_20261013.md?plain=1#L4-L4) — [ABI/CALLER] B saved `exe/T013_SUPPORT_EFFECT_54E0B0_NATIVE_20261013.txt`: heal core551490 return→54E31C Skill+30/+34 nonempty may call4B9F70 (B-1825)→54E334 Sk
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch10/data/T013_SUPPORT_THREE_VECTOR_RETURN_CHAIN_20261013.md 行 6](../../research/recovered/b_batch10/data/T013_SUPPORT_THREE_VECTOR_RETURN_CHAIN_20261013.md?plain=1#L6-L6) — [POSTCORE PHASE/NORMAL RET] 54E334 if Skill+0x268 signed<=0 skips 4C3250/global callback/4C3140→54E3D1. If positive, 54E367 call4C3250 (B-1831-01)→global callba
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 - [research/recovered/b_batch3/T013_SUPPORT_EFFECT_54E0B0_CONTRACT_20261013.md 行 9](../../research/recovered/b_batch3/T013_SUPPORT_EFFECT_54E0B0_CONTRACT_20261013.md?plain=1#L9-L9) — [POST CORE] 0x54E31C Skill+0x30/0x34 begin/end不一致なら0x54E32F call4B9F70。Skill+0x268 signed>0なら0x54E367 call4C3250→0x54E3B2 indirect global[0x609268]→返EAX==1時だけ0x
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
@@ -120,6 +159,9 @@
 
 - [research/recovered/DEVLAB_NATIVE_SKILL_CAPABILITY_20261011.md 行 10](../../research/recovered/DEVLAB_NATIVE_SKILL_CAPABILITY_20261011.md?plain=1#L10-L10) — - kind2 → Skill+0x278==0ならUnit+0x135=1、非zeroならUnit+0x136=1（VA0x5739FC..0x573A1C）。
   制約・訂正　Historical author claims preserved; source hash verified; no new native or runtime validation; referenced local evidence not included
+
+- [research/recovered/b_batch10/data/T013_SUPPORT_THREE_VECTOR_RETURN_CHAIN_20261013.md 行 8](../../research/recovered/b_batch10/data/T013_SUPPORT_THREE_VECTOR_RETURN_CHAIN_20261013.md?plain=1#L8-L8) — [CRITICAL AL/MP ORDER] Upper caller57F9E8 reads Skill+0x278 cost→57F9EE subtract Unit+0x94 **BEFORE** optional57FA8F Unit vtable+0x80 and57FA99 call54E0B0. On r
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
 - [research/recovered/b_batch5/data/T011_SPECIAL_PROPERTY_SKILL4C_20261013.md 行 8](../../research/recovered/b_batch5/data/T011_SPECIAL_PROPERTY_SKILL4C_20261013.md?plain=1#L8-L8) — [EXE MP GATE] 既T012 §54ほかの保存原作命令：normal missile0x546FE2..0x546FF8/normal heal0x545F86..0x545FA6は `Skill+0x4C >0 && Skill+0x278 MPcost>0 && Unit+0x94 MP<cost` なら
   制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence

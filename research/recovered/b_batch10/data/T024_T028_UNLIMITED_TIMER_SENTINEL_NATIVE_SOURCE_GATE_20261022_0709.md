@@ -1,0 +1,15 @@
+# B-20261022-0709-T024-T028-UNLIMITED-GATE-01｜無制限時間sentinelとAI時刻gateの分離
+[OWNER/WHEN] B T024主・T028従 / 2026-10-22 07:09 JST / STATIC-SOURCE×CACHED-NATIVE, INFERRED, VERIFY / 限定STATIC READY候補（正式E未統合、ゲーム挙動NOT READY）。
+[BASELINE] Local CompactでMASTER cp196/READY596(A115/B229/C136/D116)、ANALYSIS_LANES_PROTOCOL、LANE_B_HANDOFF、B担当・未同期復旧台帳、search_index README/BUILD_MANIFEST PASSを読取。以前の安全拒否（T024 03-05h、T011/12等、禁止VA）は未解除・再試行0。22件回収済み記録とオフライン未同期残を区別。
+[EXE PROVENANCE] 対象原作ver0.67 SHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187 はmanifest記録値（今回EXE byte再計算なし）。search.py function 0x565730, 0x565700で索引由来擬似Cを取得・出典確認。全体Ghidra/REA再実行なし。
+[STATIC] 0x565730 (23 bytes, codeSHA B214634D31D172459B4E6DDEBC5DCBE2DF120AA19EB7D33F938023A159BD5EDD): if *(int32*)0x67B938 == 0x80000008 return 0x7FFFFFFF; else return *(int32*)0x67B93C。直接CALL site 0x45190B（caller関数 0x44F470）。A所有T010_EVENT_SCHEDULER既保存解析で式getLimit opcode0x25B→同CALL/返値を先行確定（A成果をBの新規native発見として再計上しない）。
+[STATIC] 0x565700 (35 bytes, codeSHA CBEA1E782F32DA8C5A91E75D2CC1ED049FD833CA1B78E7A088E52FF6CB3D5B0C): 0x67B938がsentinelなら 0x67B93C +=1、非sentinelでcurrent>0ならcurrent -=1。直接CALL site 0x492E95（caller 0x492D80）。tick間隔は既A T010の10-tick cadenceを参照、新規countしない。
+[DAT PROVENANCE] normalized hakushin067_core/a_default/script/Ai戦闘制御_軍楽隊なし版.dat SHA256 48B1A62AB5B2D80645639100447797290FBD4481AD91F8A3CCCA79A4038456E6 （今回Get-FileHash再計算一致）。
+[DAT SOURCE] event form_inbattle_kanni 約L2136: if(getLimit()<500 && cpu_red==1) routine(form_gannnigeboushi)。event form_inbattle 約L2201: rif(getLimit()>=500 && (isInterval(345)==1 && getTime()>=1333 || isInterval(285)==1 && getTime()<1333))、約L2427: if(getLimit()>=500 && isDead(@general_r,@general_l,@general_c)==0)、約L3523: if(getLimit()<500 && cpu_red==1)。
+[NEW CROSSJOIN / CONDITIONAL] 正しいgetLimit式評価で無制限sentinelが成立する場合、返値はINT_MAX=2147483647であり、「>=500」2箇所はtrue、「<500」2箇所はfalse。current[0x67B93C]の実際の値やaddLimit量を読んでgateを切替えるべきではない。その他のisInterval/getTime/isDead/cpu_red/戦闘mode条件は別評価で、集合行動が必ず実行されることは示さない。
+[CORRECTION TO B-20261020-1015-02] ボス死亡addLimit(514)で残時間R<500→>=500へ反転しうるという旧条件付き解釈は、getLimitがcurrentを返す通常制限時間モードが前提。無制限sentinelモードではaddLimitがcurrentを書き換えてもgetLimitの返値はINT_MAXのため、少なくともこれらの時刻gateは変化しない。
+[DEDUP] 既A T010のgetLimit sentinel・10tick・addLimit native handler、既B T024 §22のisInterval(345→350/285→290)、B-20261020-1015-02の500比較、B-20261022-0614-T028-LIMIT-REGISTRY-01の命令・式別登録経路は全て旧成果。今回追加は無制限sentinel×本編T024時刻gate×ボス延長仮説の適用範囲訂正のみ。
+[UNKNOWN] 無制限sentinelが迫真戦記のどの合法battle modeで成立するか、Script expressionの呼出時phase、addLimit後のmode変化/再初期化、AI event実行周期、旧原作での可視集合/逃走防止挙動はVERIFY。
+[GOLDEN] 合法な無制限・時間制限ありの両戦闘（存在確認が先）×初期残時刻499/500×boss死亡addLimit(514)×full/kanni/cpu_red=0/1で旧原作UI/AI行動/getLimit観測を同一EXE・無改変DAT・SAVE・MAP・入力・RNG・capture SHAに紐づける。ユーザーの空手兵科x20改変DATはstrict対象外。実際の旧Gameplay Golden PASS0、新旧strict MATCH0。
+[RESULT] B限定STATIC-SOURCE CROSSJOIN READY候補、実gameplay NOT READY、Task DONE+0、正式MASTER統合0。Bだけへ記録、Eが所有権/重複/真正性を照合してから正式判断。
+[NEXT] 0x67B938 sentinelをセットする合法戦闘初期化条件と0x565730使用phaseを、既A済み証拠→B所有T024/T028 script実ケースの順でread-only照合。拒否済み範囲を再検索・迂回しない。

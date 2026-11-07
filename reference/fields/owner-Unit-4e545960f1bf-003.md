@@ -4,8 +4,47 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-800"></a>
+## Unit + 0x800
+
+- [research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md 行 4](../../research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md?plain=1#L4-L4) — [ABSTRACT INPUT] 既保存 `exe/T012_KNOCK_CORE_DUMP.txt` の0x578F8C/578FA3/578FBAはpush kind=4/0/6、push &Unit+0x800→call4E02A0。別caller0x578EF0はWork `native_heal_mutati
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md 行 11](../../research/recovered/b_batch7/data/T012_HEAL_REFRESH_REMOVE_4E02A0_CONTRACT_20261013.md?plain=1#L11-L11) — [REIMPLEMENT/STAGES] receiptにはUnit pointer、Unit+0x800 container ptr、kind index(5/1/3/2/4/0/6)、old&new Unit+878、+874 end cursor、+880 0x80000008 sentinel、`49ED30`
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md 行 5](../../research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md?plain=1#L5-L5) — [ENTRY/KEY] 4DFD80はEDI=Unit+0x800 container-like structure、stack arg1 status-index DWORD（RET4）。4DFD96 call565780 and4DFDA0 call479760の戻・byte initializeを経て4DFDA5
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/b_batch7/data/T012_REFRESH_TREE_RANGE_4E1FA0_CONTRACT_20261013.md 行 8](../../research/recovered/b_batch7/data/T012_REFRESH_TREE_RANGE_4E1FA0_CONTRACT_20261013.md?plain=1#L8-L8) — [WORK/REIMPLEMENT] Work `run_heal_refresh` active nonemptyでremove_entryが未完成。resume receiptは`Unit+0x800`, `header+0x70`, key[lookup], outPair before/after, candi
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+<a id="field-878"></a>
+## Unit + 0x878
+
+- [research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md 行 4](../../research/recovered/b_batch7/data/T012_REFRESH_SURVIVOR_4DFD80_CONTRACT_20261013.md?plain=1#L4-L4) — [INBOUND CALLS] B-20261013-2034-62の4E02A0はfound entryへ4E1FA0→510850後、container=Unit+0x800のDWORD+0x78（Unit+0x878）が非0なら4E036D call4DFD80(kind derived from contain
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+<a id="field-928"></a>
+## Unit + 0x928
+
+- [research/recovered/b_batch6/data/T012_EFFECT_LINK_RECORD_IDENTITY_CORRECTION_20261013.md 行 4](../../research/recovered/b_batch6/data/T012_EFFECT_LINK_RECORD_IDENTITY_CORRECTION_20261013.md?plain=1#L4-L4) — [TYPE R: EFFECT RECORD] 0x551CE6 `LEA EDI, [Unit+0x928 + 0x264*slot]` で生成/選択され、0x551CED call0x4DFBB0、関数中 EDI=R（可変容量2D/24B effect dataを持つvtable/座標のあるsubrecord）。`
+  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
+
+- [research/recovered/b_batch6/data/T012_FLASH_DAMAGE_HEAL_CALL_ORDER_20261013.md 行 6](../../research/recovered/b_batch6/data/T012_FLASH_DAMAGE_HEAL_CALL_ORDER_20261013.md?plain=1#L6-L6) — [HEAL DIFFERENCE] 同じ保存Skill+0x248を読むheal/status attr core0x551490内は、入口Skill+230 chance gate0x5514D7..55150B、対象選別/抵抗/値変更などの先行stage後、0x551C6A call551E50、0x551C7F
+  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
+
+- [research/recovered/b_batch6/data/T012_FLASH_DAMAGE_WRAPPER_576F10_CONTRACT_20261013.md 行 5](../../research/recovered/b_batch6/data/T012_FLASH_DAMAGE_WRAPPER_576F10_CONTRACT_20261013.md?plain=1#L5-L5) — [RING + LOWER-CALL] eligible Unitの場合0x576F24 Unit+185F8++、>=8時0x576F33 Unit+185F8=0、0x576F43 newIndex×0x264、0x576F50 EDI=Unit+0x928+newIndex*0x264 = R。0x576F3D
+  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
+
+- [research/recovered/b_batch7/data/T012_HEAL_POST_EFFECT_CALLER_551C7F_20261013.md 行 6](../../research/recovered/b_batch7/data/T012_HEAL_POST_EFFECT_CALLER_551C7F_20261013.md?plain=1#L6-L6) — [OPTIONAL-CHILD] ctx+E!=0、Skill+0x248 signed>0、Unit+0x1867C==0かつUnit+0x8D==0の場合、0x551CBEでUnit+0x185F8++、>=8なら0に戻し、0x551CD9で8×(? exact stride0x264) のslot pointer
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
 <a id="field-185f8"></a>
 ## Unit + 0x185F8
+
+- [research/recovered/b_batch6/data/T011_UNIT_EFFECT_RING_OWNER_4DFB00_20261013.md 行 7](../../research/recovered/b_batch6/data/T011_UNIT_EFFECT_RING_OWNER_4DFB00_20261013.md?plain=1#L7-L7) — [RING CURSOR] 0x5707F3 `[Unit+0x185F8]=0` direct initialized。既READY B-1350/1356のheal core条件でUnit+185F8を++し8以上なら0にしてR=Unit+928+0x264*slotを選び、4DFBB0再初期化へ渡す。**firs
+  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
 
 - [research/recovered/b_batch6/data/T012_FLASH_DAMAGE_HEAL_CALL_ORDER_20261013.md 行 6](../../research/recovered/b_batch6/data/T012_FLASH_DAMAGE_HEAL_CALL_ORDER_20261013.md?plain=1#L6-L6) — [HEAL DIFFERENCE] 同じ保存Skill+0x248を読むheal/status attr core0x551490内は、入口Skill+230 chance gate0x5514D7..55150B、対象選別/抵抗/値変更などの先行stage後、0x551C6A call551E50、0x551C7F
   制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
@@ -111,6 +150,18 @@
 
 <a id="field-1867c"></a>
 ## Unit + 0x1867C
+
+- [research/recovered/b_batch10/data/T013_TROOP_COORDINATE_OR_UNIT_DISPATCH_V3_20261023_18H.md 行 10](../../research/recovered/b_batch10/data/T013_TROOP_COORDINATE_OR_UNIT_DISPATCH_V3_20261023_18H.md?plain=1#L10-L10) — STATIC V3 Ghidra 0x00569730: Troop候補+0x0C/+0x10の4byte構成員ポインタvectorに生存候補(Unit+0x1867C==0)が無ければ早期return、条件成立時に0x5699C0で候補を作る経路。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch10/data/T013_TROOP_FORM_MODE_SETTER_FIRST_LIVE_V3_20261023_22H.md 行 7](../../research/recovered/b_batch10/data/T013_TROOP_FORM_MODE_SETTER_FIRST_LIVE_V3_20261023_22H.md?plain=1#L7-L7) — 【NEW 3 / FIRST LIVE】0x56954F～0x56957Dで登録順にUnit参照をたどり、Unit+0x1867C==0の最初の候補に限って、0x56957D→0x569730 E8直接CALLで配置処理を呼ぶ。呼出位置はUnit+0x214/+0x218を整数2つとしてPUSH、Troop+0x28の
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch10/data/T013_TROOP_POSITION_SCRATCH_MODE_V3_20261023_1915.md 行 7](../../research/recovered/b_batch10/data/T013_TROOP_POSITION_SCRATCH_MODE_V3_20261023_1915.md?plain=1#L7-L7) — NEW GATE: 0x5699C0はTroop候補+0x0C/+0x10の4-byte構成員vectorを走査、Unit+0x1867C==0と追加フラグ時Unit+0x1F9==0の候補を0x4C52D0を介して一時リンク構造に収める。後段は適格候補なしで生成処理をskip。既18時の同フィルタは再計上0。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+- [research/recovered/b_batch10/data/T024_TROOP_CLEANUP_GATES_INPUT_NATIVE_20261025_20H.md 行 24](../../research/recovered/b_batch10/data/T024_TROOP_CLEANUP_GATES_INPUT_NATIVE_20261025_20H.md?plain=1#L24-L24) — - Golden必要: 無改変旧EXE・20倍強化前DAT・同SAVE/MAP/input/RNGでTroop+0x1D(0/非0)×Unit+0x1867C(0/非0)×候補数0/1/複数×先頭Unit+0x8C/+0x1F8、別系でglobal+0x1EF148/PtInRect/arg0と+0x14を観測、+0x
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
 - [research/recovered/b_batch2/T028_RETREAT_OK_QUEUE_DRAIN_ELIGIBILITY_NATIVE_20261029_19H.md 行 14](../../research/recovered/b_batch2/T028_RETREAT_OK_QUEUE_DRAIN_ELIGIBILITY_NATIVE_20261029_19H.md?plain=1#L14-L14) — - 0x5694E0実ASMは入力EAXの+0x0C..+0x10内側Unit pointer配列を走査し、Unit+0x1867C==0かつ+0x1867E==0が一件でも存在する場合AL=0、存在しなければAL=1（空配列も1）。従って外側対象の一つが未処理eligible Unitを持てばstate4書込を抑止す
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
@@ -300,62 +351,5 @@
 
 - [research/recovered/b_batch8/data/T012_T011_TADORA_CHARGE_BMP_DELAY_CROSSFUNC_SOURCE_20261017.md 行 15](../../research/recovered/b_batch8/data/T012_T011_TADORA_CHARGE_BMP_DELAY_CROSSFUNC_SOURCE_20261017.md?plain=1#L15-L15) — [NEXT] 保存済み許可x86内gun_delay native field対応とキー単位管理を証拠がある範囲でのみ確認。次点T012射撃latch/Unit+0x18688/0x4E7ED0/攻撃HP、T013最終target/Skill+A18/A1C、T011実効親子。未判明ならVERIFY維持。
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/b_batch8/data/T012_T011_ZNM_MPREC0_LATE_MP_FALLBACK_CONDITIONAL_20261018.md 行 11](../../research/recovered/b_batch8/data/T012_T011_ZNM_MPREC0_LATE_MP_FALLBACK_CONDITIONAL_20261018.md?plain=1#L11-L11) — [VERIFY] raw→effective Unit mprec・Skill mp signed/cost/parent継承、合法znm出撃/取得、kind2 mode0 dispatch、早期MP gate回避、状態flag・ラッチ(Unit+0x1E560)・方向(Unit+0x18688)、0x4E7ED0最終
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3177](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3177-L3177) — \| R1 向きと MP \| T0 \| 標的の中心 x と下端 y \| Unit+0x18688 = 8方向（&7）。MP −= 0。Unit+0x1868C = 0。rush>1 の連撃予約はなし（root の rush=0） \| — \| vf31 \|
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
-
-<a id="field-1868c"></a>
-## Unit + 0x1868C
-
-- [research/recovered/b_batch8/data/T012_T013_DAMAGE_CONTEXT_E_CALLER_FLAG_CROSSROUTE_20261019.md 行 11](../../research/recovered/b_batch8/data/T012_T013_DAMAGE_CONTEXT_E_CALLER_FLAG_CROSSROUTE_20261019.md?plain=1#L11-L11) — [E=1 PRE] VA0x57E74D Unit+0x18688方向store→0x57E759 MP減算→0x57E75F Unit+0x1868C=0。+0x74>1では追加state書込の可能性。illusion gate時0x57E7EAへ逸れるため常時damage coreに到達しない。
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3177](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3177-L3177) — \| R1 向きと MP \| T0 \| 標的の中心 x と下端 y \| Unit+0x18688 = 8方向（&7）。MP −= 0。Unit+0x1868C = 0。rush>1 の連撃予約はなし（root の rush=0） \| — \| vf31 \|
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
-
-<a id="field-186a4"></a>
-## Unit + 0x186A4
-
-- [research/recovered/b_reports/T011_T013_GROUP1E_ALL25_CALLER_AL_POSTCALL_NATIVE_20261101_08H.md 行 20](../../research/recovered/b_reports/T011_T013_GROUP1E_ALL25_CALLER_AL_POSTCALL_NATIVE_20261101_08H.md?plain=1#L20-L20) — - **AL=0の残り3件**（`0x420269`、`0x528356`、`0x528416`）：直後は `ESI` に対象を設定し `E8->0x568460`。こちらは生存メンバーの `Unit+0x186A4` と `+0x186A8` に `0x80000008` を書き込む (`0x568487`,`0x5
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
-
-- [research/recovered/b_reports/T011_T013_GROUP1E_ALL25_CALLER_AL_POSTCALL_NATIVE_20261101_08H.md 行 59](../../research/recovered/b_reports/T011_T013_GROUP1E_ALL25_CALLER_AL_POSTCALL_NATIVE_20261101_08H.md?plain=1#L59-L59) — - **KB_CANDIDATE**：`0x5695B0`の明示的AL=0/1分布（旧索引内25 direct sites）、`0x568FB0`の`group+0x1D` gateと`Unit+0x1867D=0`、`0x568460`の`Unit+0x186A4/A8` sentinel clear、AL=1の条件
-  制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
-
-<a id="field-186b0"></a>
-## Unit + 0x186B0
-
-- [research/recovered/b_batch8/data/T013_22H_DOUBLE_RESET_CHAIN_NATIVE_20261031.md 行 13](../../research/recovered/b_batch8/data/T013_22H_DOUBLE_RESET_CHAIN_NATIVE_20261031.md?plain=1#L13-L13) — [KB_CANDIDATE] 新ID B-20261031-22H-T013-ALT-LIST-DRAIN-RESET-ORDER-01 / owner B/T013 / VA 0x57DEBB/0x57DECB/0x57DED8/0x576660/0x543DE0、CALL0x576693/0x5766BB→0x5B
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/e_reports/T020_E_T013_ALT_LIST_RESET_ACCEPTANCE_20261031_22H.md 行 7](../../research/recovered/e_reports/T020_E_T013_ALT_LIST_RESET_ACCEPTANCE_20261031_22H.md?plain=1#L7-L7) — [SCOPE CORRECTION] Unit+0x18650/+0x18654 primary candidate head/count (B20/B21) and Unit+0x186B0/+0x186B4 alternative list/count (B22) are separate. No alias or
-  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
-
-<a id="field-186b4"></a>
-## Unit + 0x186B4
-
-- [research/recovered/b_batch3/T013_MODE2_VECTOR_RANGE_INSERT_UNIT_GATE_NATIVE_20261030_18H.md 行 18](../../research/recovered/b_batch3/T013_MODE2_VECTOR_RANGE_INSERT_UNIT_GATE_NATIVE_20261030_18H.md?plain=1#L18-L18) — 0x56921B/21E/221/224でrecipient+0x58, +0x68(double), +0x60, +0x5Cへ更新。0x569264 Unit+0x186B4==0なら0x56926C recipient+0x58=0、また0x56926Fでflag==0なら同クリア。mode2両CALLのflag
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
-
-- [research/recovered/b_batch8/data/T013_22H_DOUBLE_RESET_CHAIN_NATIVE_20261031.md 行 7](../../research/recovered/b_batch8/data/T013_22H_DOUBLE_RESET_CHAIN_NATIVE_20261031.md?plain=1#L7-L7) — [NEW PARAM/SIDE EFFECT] 0x576661 CMP BYTE [ESP+8],0：入口PUSH ECX後の引数byte。非zero=本callのPUSH1なら0x576673でUnit+0x186B0 list headを空にし、0x57667Eで別件数 Unit+0x186B4=0、旧nodeを
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-<a id="field-186c8"></a>
-## Unit + 0x186C8
-
-- [research/recovered/b_batch2/T013_GLOBAL65BD9E_QUOTA_QUARTER_WRITERS_NATIVE_20261101_01H.md 行 13](../../research/recovered/b_batch2/T013_GLOBAL65BD9E_QUOTA_QUARTER_WRITERS_NATIVE_20261101_01H.md?plain=1#L13-L13) — [GOLDEN REQUIRED] 原作無改変EXE、変更前DAT、同SAVE/MAP/input/seed/RNG/tick、quota_viewとquarter_viewの組合せ、context+0xE4=0/1、global flag0/1、matrix identity/nonidentity、画面点と境界ma
-  制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
-
-- [research/recovered/b_batch9/data/T013_COORD_TRANSFORM_GATE_OUTPUT_ABI_NATIVE_20261101_00H.md 行 16](../../research/recovered/b_batch9/data/T013_COORD_TRANSFORM_GATE_OUTPUT_ABI_NATIVE_20261101_00H.md?plain=1#L16-L16) — [GOLDEN REQUIRED] 無改変原作と20倍化前DAT、同一SAVE/MAP/Unit/input/RNG/tickでglobal0x65BD9Eの0/1・context+0xE4の0/1、identity/nonidentity D3DX行列、負座標・rounding境界、margin100/200/400
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/e_reports/T020_E_T013_COORD_GATE_RECT_ACCEPTANCE_20261101_00H.md 行 9](../../research/recovered/e_reports/T020_E_T013_COORD_GATE_RECT_ACCEPTANCE_20261101_00H.md?plain=1#L9-L9) — [TRANSFORM PATH] 40/40 cases explicitly marked TRANSFORM_NOT_RUN with expected_point=null, rect_result=null, observed=null. No invented D3DX input matrix, scale
-  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
-
-- [research/recovered/e_reports/T020_E_T013_HEAD_SENTINEL_COORD_ACCEPTANCE_20261031_21H.md 行 9](../../research/recovered/e_reports/T020_E_T013_HEAD_SENTINEL_COORD_ACCEPTANCE_20261031_21H.md?plain=1#L9-L9) — - Alternative branch `0x57DE95` returning AL true instead stores ESI at Unit+0x186C8 then EBP at +0x186CC, calls 0x576660 and jumps 0x543DE0; AL false may reuse
-  制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

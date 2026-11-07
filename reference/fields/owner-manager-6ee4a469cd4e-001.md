@@ -160,6 +160,9 @@
 <a id="field-64"></a>
 ## manager + 0x64
 
+- [research/recovered/b_batch10/data/T013_TASK_PENDING_APPEND_4C2240_CONTRACT_20261013.md 行 5](../../research/recovered/b_batch10/data/T013_TASK_PENDING_APPEND_4C2240_CONTRACT_20261013.md?plain=1#L5-L5) — [PENDING VECTOR] 4C2243 EAX=[manager+0x68] end。4C224E ECX=[manager+0x64] begin、4C2261 capacity=[manager+0x6C]。入力のpointerslot&argが既存[begin,end)領域を指す場合4C2259..4C2
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 - [research/recovered/b_batch6/data/T012_DUAL_RUSH_BRANCH_SPECIFIC_REGISTRATION_CROSSJOIN_20261017.md 行 5](../../research/recovered/b_batch6/data/T012_DUAL_RUSH_BRANCH_SPECIFIC_REGISTRATION_CROSSJOIN_20261017.md?plain=1#L5-L5) — [REUSE REGISTRATION] 54F720 VA54F749→54F74Cのpool pointer+0x1D0==0なら54F7D0→54F7DD CALL54F990(init byte+1D0=1)、54F7EC CALL4C2240(manager+0x64/+0x68 pending vector
   制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
 
@@ -168,6 +171,9 @@
 
 <a id="field-68"></a>
 ## manager + 0x68
+
+- [research/recovered/b_batch10/data/T013_TASK_PENDING_APPEND_4C2240_CONTRACT_20261013.md 行 5](../../research/recovered/b_batch10/data/T013_TASK_PENDING_APPEND_4C2240_CONTRACT_20261013.md?plain=1#L5-L5) — [PENDING VECTOR] 4C2243 EAX=[manager+0x68] end。4C224E ECX=[manager+0x64] begin、4C2261 capacity=[manager+0x6C]。入力のpointerslot&argが既存[begin,end)領域を指す場合4C2259..4C2
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
 - [research/recovered/b_batch3/B_T011_T012_T013_OFFSET_TREES_OFFLINE_20261022_2310.md 行 75](../../research/recovered/b_batch3/B_T011_T012_T013_OFFSET_TREES_OFFLINE_20261022_2310.md?plain=1#L75-L75) — 独立成果は本Markdown、証拠JSON、読取専用検査Python。Library B担当`/迫真戦記再開発プロジェクト/data/`への保存と独立読み戻しは別途実結果で報告する。ローカル`/mnt/data`への書込みとPC正本への同期を混同しない。次回は`0x00515420`の全6直接callsite（Miss
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
@@ -192,6 +198,12 @@
 
 - [research/recovered/rea_batch9/reports/REA_20261025_01H_P0_ARMYCHIP_MANAGER_GATE_STATIC.md 行 17](../../research/recovered/rea_batch9/reports/REA_20261025_01H_P0_ARMYCHIP_MANAGER_GATE_STATIC.md?plain=1#L17-L17) — - `0x004C29C3`: 移送処理後、待機vector終端`manager+0x68`を更新。**生成直後のbuilderは主処理vectorに直接置かれるのではなく、別の待機vectorから処理側へ取り込まれる**静的経路がある。
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; held bodies not recovered
+
+<a id="field-6c"></a>
+## manager + 0x6C
+
+- [research/recovered/b_batch10/data/T013_TASK_PENDING_APPEND_4C2240_CONTRACT_20261013.md 行 5](../../research/recovered/b_batch10/data/T013_TASK_PENDING_APPEND_4C2240_CONTRACT_20261013.md?plain=1#L5-L5) — [PENDING VECTOR] 4C2243 EAX=[manager+0x68] end。4C224E ECX=[manager+0x64] begin、4C2261 capacity=[manager+0x6C]。入力のpointerslot&argが既存[begin,end)領域を指す場合4C2259..4C2
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
 <a id="field-6d"></a>
 ## manager + 0x6D
@@ -387,20 +399,5 @@
 
 - [research/recovered/b_batch6/data/T012_5501A0_MODE4_RESULT_LINK_ABI_VERIFY_OFFLINE_20261021_1015.md 行 11](../../research/recovered/b_batch6/data/T012_5501A0_MODE4_RESULT_LINK_ABI_VERIFY_OFFLINE_20261021_1015.md?plain=1#L11-L11) — 2. 定義 `def+0x1D0 != 0` の場合、`iVar3!=0 && manager+0x1F8!=0` のときだけ `new+0x194=oldHead` と `oldHead+0x198=new` を実行し、**その後の `manager+0x1F8=iVar3` 自体は毎回実行**する。従って擬似Cを字
   制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
-
-- [research/recovered/b_batch6/data/T012_5501A0_MODE4_RESULT_LINK_ABI_VERIFY_OFFLINE_20261021_1015.md 行 29](../../research/recovered/b_batch6/data/T012_5501A0_MODE4_RESULT_LINK_ABI_VERIFY_OFFLINE_20261021_1015.md?plain=1#L29-L29) — - 検証は合法的に発火させた同一旧原作 ver0.67 EXE SHA / DAT SHA / SAVE SHA / map /入力 /tick /可能ならseedと、新実装build SHAを分離して採る。mode=4/非4、def+0x1D0=0/1、既存 `manager+0x1F8` NULL/nonnull、
-  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
-
-<a id="field-248"></a>
-## manager + 0x248
-
-- [research/recovered/b_reports/B_T012_T013_BATTLEWND_ACTIVE_TREE_INSERT_OFFLINE_20261023_0417.sanitized.md 行 28](../../research/recovered/b_reports/B_T012_T013_BATTLEWND_ACTIVE_TREE_INSERT_OFFLINE_20261023_0417.sanitized.md?plain=1#L28-L28) — 前回03:16時点のP0「`0x0040E2F0`で検索・削除する`manager+0x248`の**登録元が分からない**」を、今回初めて静的に追跡した。
-  制約・訂正　Privacy derivative: one personal research-root prefix replaced with <research-root> plus explicit recovery annotation; full technical content retained; reversible byte reconstruction matches source SHA; historical STATIC/INFERRED/VERIFY only; no linked payload read or Golden/READY promotion
-
-<a id="field-348"></a>
-## manager + 0x348
-
-- [research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md 行 31](../../research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md?plain=1#L31-L31) — - `0x5282C0`では`group+0x1C==0` (`0x5282C5`) と先頭Unit `+0x1FA==0` (`0x5282DA`) が条件。`manager+0x348`のリンク集合で同一グループの既登録を避け、`0x528304→0x5299E0`の後 `0x52830A mov al,1`、`0
-  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

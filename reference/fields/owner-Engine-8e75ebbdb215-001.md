@@ -4,6 +4,15 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-1eed18"></a>
+## Engine + 0x1EED18
+
+- [research/recovered/rea_batch10/reports/REA_20261023_1537_P0_BTL_TIMER_MODE_SPLIT_STATIC.md 行 10](../../research/recovered/rea_batch10/reports/REA_20261023_1537_P0_BTL_TIMER_MODE_SPLIT_STATIC.md?plain=1#L10-L10) — - 0・Engine+0x1EED18!=0: 0x00492EB8 CMP [EBX+0x1EED18],0→0x00492EC3 CALL 0x0049B280 (E8 e8b8830000)。呼出直前0x00492EC1で EDI←EBX。0x0049B280内部は0x0049B2B1等のグローバル/状態ゲート成
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_batch10/reports/REA_20261023_1537_P0_BTL_TIMER_MODE_SPLIT_STATIC.md 行 11](../../research/recovered/rea_batch10/reports/REA_20261023_1537_P0_BTL_TIMER_MODE_SPLIT_STATIC.md?plain=1#L11-L11) — - 0・Engine+0x1EED18==0: 0x00492FA9 CALL 0x005656A0 (E8 e8f2260d00)。前段0x00492F85で+0x1EED64を増分し、IDIV 10の余り0で実行。さらに0x00492FDFの余り分岐で20の倍数なら0x00492FE1 CALL 0x0049D5B
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
 <a id="field-1eed6c"></a>
 ## Engine + 0x1EED6C
 

@@ -1,0 +1,62 @@
+[
+  {
+    "source_path": "data/B_OFFLINE_20261101_08H_READBACK_RECEIPT.json",
+    "id_field": "research_id",
+    "reported_id": "B-OFFLINE-20261101-08H-T011-T013-GROUP1E-CALLSITES-AL-POSTCALL-01",
+    "interpretation": "verbatim author identifier; no ownership or coverage promotion"
+  },
+  {
+    "source_path": "data/B_OFFLINE_20261101_09H_READBACK_RECEIPT.json",
+    "id_field": "research_id",
+    "reported_id": "B-OFFLINE-20261101-09H-T011-T013-GROUP34-WEIGHTED-SQRT-01",
+    "interpretation": "verbatim author identifier; no ownership or coverage promotion"
+  },
+  {
+    "source_path": "data/B_OFFLINE_20261101_10H_READBACK_RECEIPT.json",
+    "id_field": "research_id",
+    "reported_id": "B-OFFLINE-20261101-10H-T011-T024-GROUP34-PROXIMITY-GATE-01",
+    "interpretation": "verbatim author identifier; no ownership or coverage promotion"
+  },
+  {
+    "source_path": "data/B_OFFLINE_20261101_11H_READBACK_RECEIPT.json",
+    "id_field": "research_id",
+    "reported_id": "B-OFFLINE-20261101-11H-T011-T024-GROUP34-DUAL-BUCKET-GATE-01",
+    "interpretation": "verbatim author identifier; no ownership or coverage promotion"
+  },
+  {
+    "source_path": "data/B_OFFLINE_20261101_12H_READBACK_RECEIPT.json",
+    "id_field": "id",
+    "reported_id": "B-OFFLINE-20261101-12H-T011-T024-DUAL-LIST-MODE3-VECTOR-01",
+    "interpretation": "verbatim author identifier; no ownership or coverage promotion"
+  },
+  {
+    "source_path": "data/B_OFFLINE_20261101_13H_READBACK_RECEIPT.json",
+    "id_field": "run_id",
+    "reported_id": "B-OFFLINE-20261101-13H-T011-T024-DISTANCE-SORT-MODE-GATE-01",
+    "interpretation": "verbatim author identifier; no ownership or coverage promotion"
+  },
+  {
+    "source_path": "data/B_OFFLINE_20261101_14H_READBACK_RECEIPT.json",
+    "id_field": "research_id",
+    "reported_id": "B-OFFLINE-20261101-14H-T011-T024-DISTANCE-COMPARE-BOUNDARY-01",
+    "interpretation": "verbatim author identifier; no ownership or coverage promotion"
+  },
+  {
+    "source_path": "data/B_OFFLINE_20261101_15H_READBACK_RECEIPT.json",
+    "id_field": "research_id",
+    "reported_id": "B-OFFLINE-20261101-15H-T011-T024-NAN-COMPARATOR-TRANSITIVITY-01",
+    "interpretation": "verbatim author identifier; no ownership or coverage promotion"
+  },
+  {
+    "source_path": "data/B_OFFLINE_20261101_16H_READBACK_RECEIPT.json",
+    "id_field": "research_id",
+    "reported_id": "B-OFFLINE-20261101-16H-T011-T024-MIDPOINT-SAR-ROUNDING-OVERFLOW-01",
+    "interpretation": "verbatim author identifier; no ownership or coverage promotion"
+  },
+  {
+    "source_path": "data/B_OFFLINE_20261101_16H_READBACK_RECEIPT_CONVERSATION_FINAL.json",
+    "id_field": "research_id",
+    "reported_id": "B-OFFLINE-20261101-16H-T011-T024-MIDPOINT-SAR-ROUNDING-OVERFLOW-01",
+    "interpretation": "verbatim author identifier; no ownership or coverage promotion"
+  }
+]

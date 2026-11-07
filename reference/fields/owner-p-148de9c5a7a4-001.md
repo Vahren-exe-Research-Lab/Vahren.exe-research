@@ -55,4 +55,16 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 2768](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L2768-L2768) — 2. 0x593D50(p, player) で p+0x118[player] = turn + diplo_frd_peace(2) − 1。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+<a id="field-1c0"></a>
+## p + 0x1C0
+
+- [research/recovered/rea_batch10/reports/REA_20261020_0035_T013_T031_STEALTH_RNG_CARDINALITY_QC.md 行 9](../../research/recovered/rea_batch10/reports/REA_20261020_0035_T013_T031_STEALTH_RNG_CARDINALITY_QC.md?plain=1#L9-L9) — - [CHILD LOCAL COUNT / NORMAL VALID POINTERS] K=Σ_{p in firstPool}[byte(p+0x1867C)==0 ∧ p!=self ∧ dword(p+0x1C0)!=0]。Kは0..firstPoolCount。同じ候補集合・変化しない状態ならKの件数は順序
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+<a id="field-1867c"></a>
+## p + 0x1867C
+
+- [research/recovered/rea_batch10/reports/REA_20261020_0035_T013_T031_STEALTH_RNG_CARDINALITY_QC.md 行 9](../../research/recovered/rea_batch10/reports/REA_20261020_0035_T013_T031_STEALTH_RNG_CARDINALITY_QC.md?plain=1#L9-L9) — - [CHILD LOCAL COUNT / NORMAL VALID POINTERS] K=Σ_{p in firstPool}[byte(p+0x1867C)==0 ∧ p!=self ∧ dword(p+0x1C0)!=0]。Kは0..firstPoolCount。同じ候補集合・変化しない状態ならKの件数は順序
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

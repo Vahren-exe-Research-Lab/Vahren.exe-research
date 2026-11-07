@@ -10,11 +10,17 @@
 - [research/recovered/b_batch9/data/T013_GROUP_SPACING_569360_CALLBACK_GATE_V3_20261023_1618.md 行 7](../../research/recovered/b_batch9/data/T013_GROUP_SPACING_569360_CALLBACK_GATE_V3_20261023_1618.md?plain=1#L7-L7) — 今回増分1: 0x00569360 は同一Group候補 param_1+0x0C/+0x10 の構成員vectorを走査し、param_1+0x34（0x569280算出値）を実際に読み取る後段consumer。
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
+- [research/recovered/rea_batch10/reports/REA_20261021_2236_T014_STATE_MASK10_EPILOGUE_CROSSWALK_STATIC.md 行 8](../../research/recovered/rea_batch10/reports/REA_20261021_2236_T014_STATE_MASK10_EPILOGUE_CROSSWALK_STATIC.md?plain=1#L8-L8) — - `0x426E00`（code SHA 7BEBA43A38A9E3880B88EFBA64A11D7CE7087E53C03C0BCF4B846B3C828B1A43）疑似Cは、入力レジスタ値Sを `S & 0x17` にマスクし、ストリーム内のstate候補 `[param_1+0xC]` に代入。例外マスク候
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
 <a id="field-10"></a>
 ## param_1 + 0x10
 
 - [research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md 行 21](../../research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md?plain=1#L21-L21) — - 走査候補には `candidate+0x78!=0 \|\| candidate+0x94!=0` の入口条件があり、候補の `[+0xD4,+0xD8)` という0x1C strideの配列風領域から `+0x10` 相当の値を取り、元の `param_1+0x10` と `0x00402C40` comparato
   制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
+
+- [research/recovered/rea_batch10/reports/REA_20261021_2236_T014_STATE_MASK10_EPILOGUE_CROSSWALK_STATIC.md 行 8](../../research/recovered/rea_batch10/reports/REA_20261021_2236_T014_STATE_MASK10_EPILOGUE_CROSSWALK_STATIC.md?plain=1#L8-L8) — - `0x426E00`（code SHA 7BEBA43A38A9E3880B88EFBA64A11D7CE7087E53C03C0BCF4B846B3C828B1A43）疑似Cは、入力レジスタ値Sを `S & 0x17` にマスクし、ストリーム内のstate候補 `[param_1+0xC]` に代入。例外マスク候
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
 
 <a id="field-14"></a>
 ## param_1 + 0x14
@@ -27,6 +33,15 @@
 
 - [research/recovered/b_batch6/data/T011_VALUE_POINTER_NODE_ERASE_20261025_15H.md 行 16](../../research/recovered/b_batch6/data/T011_VALUE_POINTER_NODE_ERASE_20261025_15H.md?plain=1#L16-L16) — - Ghidra既存擬似C crosscheck: FUN_00436680の(pcVar1+0x28)=*(param_1+0x1c)、FUN_00510030とFUN_00463070のfreeはkey文字列とnodeに限定。戻り値/レジスタ推定はASM優先（STATIC-GHIDRAは補助）。
   制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
+
+- [research/recovered/rea_batch10/reports/REA_20261022_0843_T014_BYTE_WIRE4_PAIR_STATIC.md 行 15](../../research/recovered/rea_batch10/reports/REA_20261022_0843_T014_BYTE_WIRE4_PAIR_STATIC.md?plain=1#L15-L15) — - 読込親0x5964C0: 既存Ghidra擬似Cでは0x59650D CALL 0x4707D0に `param_1+0x1C`、0x59651D CALL 0x4707D0に `param_1+0x1D` を渡し、次の0x596529 CALL 0x470700には `param_1+0x5C` を渡す。後者のA
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+<a id="field-1d"></a>
+## param_1 + 0x1D
+
+- [research/recovered/rea_batch10/reports/REA_20261022_0843_T014_BYTE_WIRE4_PAIR_STATIC.md 行 15](../../research/recovered/rea_batch10/reports/REA_20261022_0843_T014_BYTE_WIRE4_PAIR_STATIC.md?plain=1#L15-L15) — - 読込親0x5964C0: 既存Ghidra擬似Cでは0x59650D CALL 0x4707D0に `param_1+0x1C`、0x59651D CALL 0x4707D0に `param_1+0x1D` を渡し、次の0x596529 CALL 0x470700には `param_1+0x5C` を渡す。後者のA
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
 
 <a id="field-34"></a>
 ## param_1 + 0x34
@@ -45,6 +60,12 @@
 
 - [research/recovered/b_batch4/data/B_T012_T013_PERSON_POOL_LIFECYCLE_OFFLINE_20261023_1215.md 行 19](../../research/recovered/b_batch4/data/B_T012_T013_PERSON_POOL_LIFECYCLE_OFFLINE_20261023_1215.md?plain=1#L19-L19) — \| `0x005149C0` \| `*(void **)(param_1+0x4C) = *(void **)(param_1+0x48)`、類似操作は`+0x38`群、`+0x58`群にも存在 \| **一括論理クリア：STATIC-GHIDRA**。要素毎の仮想デストラクタ呼出しはこの関数内に見えない。呼出site
   制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
+
+<a id="field-5c"></a>
+## param_1 + 0x5C
+
+- [research/recovered/rea_batch10/reports/REA_20261022_0843_T014_BYTE_WIRE4_PAIR_STATIC.md 行 15](../../research/recovered/rea_batch10/reports/REA_20261022_0843_T014_BYTE_WIRE4_PAIR_STATIC.md?plain=1#L15-L15) — - 読込親0x5964C0: 既存Ghidra擬似Cでは0x59650D CALL 0x4707D0に `param_1+0x1C`、0x59651D CALL 0x4707D0に `param_1+0x1D` を渡し、次の0x596529 CALL 0x470700には `param_1+0x5C` を渡す。後者のA
+  制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
 
 <a id="field-78"></a>
 ## param_1 + 0x78

@@ -1,0 +1,16 @@
+# REA-20261019-23H-T013-TRANSITIVE-CALL-GRAPH-CORRECTION-01｜支援候補更新の間接CALLを訂正
+- [OWNER/STATUS] 独立REA／T013 P1、T012関連。保存済みGhidra assembly・callers・calleesのread-only再照合。新規逆コンパイル・Ghidra・ゲーム起動・製品修正なし。STATIC LOCAL CROSSCHECK / VERIFY（実機効果）。
+- [SOURCE] 承認済みコピー hakushin067_Vahren.exe の保存run SHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187。今回現物hash再測定なし。
+- [PARENT] run 20261009T225741694Z、0x57B870 assembly ev_89e3a86b53663da35b8cadf02226f2163996275f1d24f93e37e8009fc50f048c。0x57BA53 CALL 0x57CFA0 と0x57BA97 CALL 0x57CFD0を別枝に保存。
+- [CHILD] run 20261011T153309850Z、0x57CFA0 assembly ev_65ab310aa388f22a6840b91176516ae019845155a3de0f0f739d125e7ad14789、callees ev_4322b0d609d2b48ca8311e8a1e55d2455a54cb30a7c331b8d67b020d1e3c3d39。
+- [CHILD2] 同run 0x57CFD0 assembly ev_08eb96aea33c3dbd4a1ae58fa08f3b20bfb31b8ccea4539a5bc0044cbb4887b5、callers 0x57B870/0x57CFA0、callees ev_2dc9297fab51c57cfc686ea99152528224402c6e4b39256935a1d5594e621958。
+- [EXACT TRANSITIVE FLOW] 0x57BA53→0x57CFA0→(0x57CFAA begin!=end時 0x57CFB0 CALL 0x5158A0→end書換)→0x57CFC7 CALL 0x57CFD0。従って0x57BA53側が0x5158A0/0x57CFD0を『経由しない』という2026-10-11旧メモの表現は誤り。
+- [OTHER BRANCH] 0x57BA7E begin/end比較→非空時0x57BA84 CALL 0x5158A0、0x57BA89 end書込→0x57BA97 CALL 0x57CFD0。こちらは0x57CFA0 wrapperを経由せず同2子処理へ直接進む。
+- [INPUT DIFFERENCE] 0x57BA36..0x57BA41 はUnit+1D4を取得してその+1Cから0x514F10へECX引渡。0x57BA5A..0x57BA62はUnit+1D4自体をECX引渡。共通子を使うがbuilder入力を一律同一とみなさない。
+- [DEDUP/CORRECTION] REA_T013_SUPPORT_CACHE_GUARD_MATRIX_20261011_0037.md の「0x5158A0と0x57CFD0は経由しない」、REA_T013_SUPPORT_VECTOR_REFRESH_GUARD_20261010_2336.md の直接CALL/間接CALL混同を限定訂正。REA_T013_EMPTY_RANGE_REPLACE_ABI_AUDIT_20261012_0536.mdの子内部CALLと同一既知証拠であり関数新規VERIFIED=0。元ファイルは編集しない。
+- [COMPAT TEST DESIGN/NOT RUN] cache begin=end / !=end、+137=0/!=0、+C8正負、乱数branch、0x514F10入力別に直接CALL・間接CALL・0x5158A0回数、0x57CFD0回数、Unit+1E584/588/58C、候補元・結果を独立receipt化。Ghidra静的callerは解決済みCALLのみ、間接関数ポインタの完全性は保証しない。
+- [LOAD] Desktop Commander Local接続成功。list_processesにVahren.exe PID26568が存在（他担当所有/原本か不明のため非介入）、CPU表示n/a、空きRAM未測定、Node/Chrome多数。Java/Ghidra名称を検出できないことは低負荷証明にならない。active.lockは直前のフォルダ一覧に未表示、原子的検査ではない。重いREA/Ghidra起動0秒。
+- [RUN/LIMIT] 最終保存run 20261011T153309850Zとsync 20261011T153958076Z。REA6.1.0・Ghidra12.1.4の既存証拠。README runner pinned6.4.0との差と既往EPERMのためrun/syncは未起動。単一MCP、最大4関数/回、Ghidra900000ms/request960000ms。軽量調査の総時間未計測。
+- [METRICS] Wave1 16/16, W2 10/10, W3 10/10, W4 12/12, W5 16/16、累計64/64 VERIFIED、今回+0（P0 29/29 / P1 35/35）。Wave6正式0/16、暫定P0 5/P1 11・未着手TODO12(P0 2/P1 10)・安全拒否BLOCKED4(P0 3/P1 1)・関数結果VERIFY0。QUEUE/PROGRESSは古いEPERM表示、正式改変しない。
+- [MASTER/GOLDEN] 研究MASTER最新確認checkpoint191・DONE9/34, IN_PROGRESS21, VERIFY4。旧EXE実機golden PASS0、strict MATCH0。ゲーム再実装率は測定していない。
+- [SAFETY/NEXT] REA所有新ファイルのみ保存、既存A-E/MASTER/T018/原本ZIP EXE/製品/Git push/設定/automation変更なし。禁止VA0x5710C0..0x571500と拒否済みREA extractor・Wave6 4VAは再試行/迂回しない。次回T010/T012/T013通常死亡の許可済みcallee副作用またはT013上記分岐のbuilder入力差を独立確認。

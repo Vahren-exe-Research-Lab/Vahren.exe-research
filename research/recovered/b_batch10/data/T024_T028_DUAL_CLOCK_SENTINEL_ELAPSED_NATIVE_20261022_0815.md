@@ -1,0 +1,27 @@
+# B-20261022-0815-T024-T028-DUAL-CLOCK-01｜無制限時間の二種類の読出しと戦闘更新経路
+- 日時：2026-10-22 08:15 JST。Owner B/T024 主、T028 参照。状態 STATIC / INFERRED / VERIFY / NOT READY。
+- 前提：Desktop Commander Local Compact 接続。MASTER 最終正式checkpoint196、READY596=A115/B229/C136/D116（今回の新規統合0）。解析規約、B HANDOFF、B担当5資料、既知安全拒否・未同期索引を先読。
+- 旧安全拒否（T024 03-05時台の検索/詳細/追記など、0x5710C0..0x571500ほか）は未解除。拒否済み本文・コマンドへの再試行/他経路迂回なし。以前の22ファイル回収とは別に全未同期成果の同期は未完。
+- EXE SHA256 は既マニフェスト E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187。今回原EXEを再ハッシュ・実行・変更せず。
+- 新しいE8 CALL照合：現行V3 SQLite HAKUSHIN067_CURRENT_CANONICAL_V3_20261022.sqlite を URI mode=ro で直接検索。実DB SHA256 0B057C43D30EAEC74588C84CF7E09AA7A488BD0FF170925591953EF578AFCB25 一致。
+- native_callsite：0x521CDF → 0x5263E0 (E8 fc460000)、0x526401 → 0x4498E0 (E8 da34f2ff)、0x44A09D → 0x565750 (E8 aeb61100)。3/3 independently_verified_target=1。Ghidra ref分類だけを無条件CALLと誤読しない。
+- 0x521A00 擬似C（code SHA256 410C8106FF93452A279B5A3B57062556F0B486CEEAEAEE70678E5DC2143EB384）：上流条件の下、iVar5==2かつ state +0x1EEC44!=0 のとき 0x521CDF→0x5263E0。その後の +0x42/+0x43 入力クリア→0x46FB00 は先行B-20261022-03H-T024-REFRESH-TRIGGER-02、再計数なし。
+- 0x5263E0 擬似C（code SHA256 11806565EE2E949156D0FF69B94520AB9A6C22314BFC7C4AE9C8C20E346B63BA）：参照先+0x20==0 && +0x14==0 のとき 0x526401→0x4498E0。引数/構造体の実型と同一場面の実到達はVERIFY。
+- 0x4498E0 擬似C（code SHA256 8B6FCCE797214F588AC2BF37C77EEBAE56E8651031F19D35931F23065C7EA473）：mode候補case0で 0x44A09D→0x565750 を呼ぶ。別の枝ではDAT_0067B938/3Cで「経過様の時刻」を直接計算してしきい値と比較するが、frame/Unit動作や戻り値使用はASM/原作挙動でVERIFY。
+- 0x565750 原作保存ASM（A-owned exe/T010_RUNTIME_PROBE.txt）と旧Ghidra擬似C（code SHA256 CBC2265EF4227DBAA3C73B7EB7F34BA317B991FE2A4EF67D1BAE88ED21573463）を照合。呼出元 0x44A09D の native E8 を上記V3で独立検証。
+- start=*(int32*)0x67B938, cur=*(int32*)0x67B93C とすると、0x565750戻り値候補：start==0 && cur==0 → 10000 (0x2710)、start==0x80000008 → cur、その他 → start-cur（32-bit演算）。「getTime」というDAT API名への同定は未実施。
+- 一方 0x565730（先行A T010 / B-20261022-0709）では start==0x80000008 → INT_MAX、その他 → cur。これは別の読出しであり、無制限時間でも全タイム依存ロジックが定数になるわけではない。
+- 既存A原作ASMで 0x49285A/0x492860 は初期値を+0x67B93Cと+0x67B938へ格納し、sentinel 時にcur=0とする。exe/T010_CLOCK_UPDATE_PROBE.txt SHA256 91F74B46809B6E1DAF51D9BD22B8CF95EF4E3CF094345C35BAE486EF68DF46F5。
+- A原作ASM 0x565700：sentinel 時 cur を increment、通常時は cur>0 の場合のみ decrement（0以下は局所的に減らさない）。別CALL 0x492E95→0x565700 はV3でE8_DIRECT_CALL検証済。0x492DC6では sentinel 時 cur+=ECX、通常時は cur>0 なら cur-=ECX の保存枝がある。呼出前提と各値の単位はVERIFY。
+- A保存 exe/T010_RUNTIME_PROBE.txt SHA256 5418226EC783A57CBED6DC591D4049CA8AB97B96AEEAFB25A7E99B0F363D50B1。原作の局所ASM、旧Ghidra擬似C、V3機械語CALL siteの3出典を区別。
+- A保存 exe/T010_LIMIT_HANDLER_PROBE.txt SHA256 7535BF8BBFE3F32997E3CF49E6799D9C58DFB10ACEEDF3F104E08B713FF88EE2 に raw cur+=入力候補（0x4B486B / 0x4B48D2）と負数clamp（0x4B48D8）がある。ただし登録命令addLimitとの最終dispatch対応・sub1000000分岐・引数変換は未確定。ここを断定しない。
+- 純粋な分岐モデル（実ゲーム測定ではない）：無制限start=0x80000008,cur=0なら getLimit相当0x565730=INT_MAX、0x565750=0；cur=499/500/1013でも前者はINT_MAX、後者は499/500/1013。
+- 通常start=1000,cur=499なら 0x565730=499 / 0x565750=501。start=cur=0なら 0x565730=0 / 0x565750=10000（例外値）。signed overflow / concurrent tick は別途検証。
+- 既B-20261022-0709の「無制限ではDAT getLimit>=500/<500の真偽が固定」は維持。一方 native 0x565750 を使う枝まで不変と一般化するのは誤り。仮にaddLimit(514)が実際に同じcurを増やす場合、無制限時はnative経過時間様の値が増える可能性があり、DATのgetLimit500境界とは別の評価になる（条件付きINFERRED）。
+- CALL chainの可到達を保証しない：0x521A00→0x5263E0→0x4498E0 の各guard、0x4498E0 内のcase0、スケジューラ起動、AIの可視結果、time getterのゲームAPI名、実イベント加算先、RNGなどはVERIFY。
+- 既存研究との重複検査：B HANDOFF/T024_HAKUSHIN_BATTLE_AI.md/T028_MORALE.md/MASTERで 0x565750・0x44A09D・0x005263E0 に一致0件（今回書込前）。A T010の時間関数・初期化と旧B-20261022-0709のgetLimit境界は参照のみで新規READY重複加算0。
+- Golden必要条件：合法な無改変原作戦闘で有限/無制限setupを分け、同一EXE/DAT/SAVE/MAP/input、開始時のstart/cur、0x565730と0x565750、tick、ボス死亡前後の加算、AI状態・可視行動とRNGを時刻付き記録。外部メモリを恣意的に書き換えず、同runで観測。現在の空手兵科x20テストDATのままでは無改変strict Golden不適格。
+- 未解明P0優先：① 0x565750のnative consumerでの戻り値利用（0x44A09D直後のASM）、②0x4498E0のmode0到達・パラメータ型、③0x4B4800付近とDAT addLimitの実ハンドラ束縛、④合法ゲームの無制限setup・ボス死亡、⑤T024との可視AI連結。
+- 安全/保存境界：独立した本B所有新規STATIC差分のみ。拒否済み0x599BD0追加検索/過去保存payloadは再試行0。原本EXE/DAT/SAVE/ZIP、MASTER/他lane/REA/dev_lab/Git/Work/設定/automation書込0。旧オフライン全件同期主張なし。
+- READYは NOT READY、今回新B READY0、E正式MASTER統合0、Task DONE0、原作Gameplay Golden PASS0、新旧strict MATCH0。
+- 復旧OTHER: 初回追記のCode Mode JavaScript文字列でSyntaxError（引用符の構文ミス）が発生したが、Local write_file自体は呼び出されておらずPCへの部分追記0。構文修正後の本操作が初回正式追記。

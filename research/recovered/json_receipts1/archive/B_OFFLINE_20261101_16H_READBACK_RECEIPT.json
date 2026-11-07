@@ -1,0 +1,61 @@
+{
+  "research_id": "B-OFFLINE-20261101-16H-T011-T024-MIDPOINT-SAR-ROUNDING-OVERFLOW-01",
+  "owner": "B",
+  "pc_connected": false,
+  "pc_synced": false,
+  "github_write": false,
+  "library_uploaded": false,
+  "time_local": "2026-11-01 16H JST",
+  "source": "PRIOR_CAPTURED_STATIC_13H + SYNTHETIC_MODEL",
+  "manifest": [
+    {
+      "path": "data/T011_T024_NATIVE_MIDPOINT_SAR_ROUNDING_OVERFLOW_OFFLINE_20261101_16H.md",
+      "bytes": 7766,
+      "sha256": "B111C5F2EE1DBC568E18F803288542AC120DF0EA4011D7B929AEB79DC29C01C6",
+      "local_readback": true,
+      "library_materialized_readback": false
+    },
+    {
+      "path": "data/B_OFFLINE_20261101_16H_MIDPOINT_SAR_EVIDENCE.json",
+      "bytes": 4894,
+      "sha256": "B5418108B0016A83A90DD0480E3A1CB5BF7694BF42FB9AD2AF31D87492290219",
+      "local_readback": true,
+      "library_materialized_readback": false
+    },
+    {
+      "path": "data/B_20261101_16H_MIDPOINT_SAR_NATIVE_READONLY_VERIFY.py",
+      "bytes": 4055,
+      "sha256": "9059364F43571349DFC3185480B1FBDFF09F4E923FDB9CF149526B278526D237",
+      "local_readback": true,
+      "library_materialized_readback": false
+    },
+    {
+      "path": "evidence/LANE_B_HANDOFF_OFFLINE_DELTA_20261101_16H.md",
+      "bytes": 2295,
+      "sha256": "152E29F2FA6DED84C828D2D4D551ACF37E243AFD15BCBC1A73E6A5C5D0C3A321",
+      "local_readback": true,
+      "library_materialized_readback": false
+    }
+  ],
+  "verified_assertions": 21,
+  "safe_grid_pairs": 263169,
+  "trunc0_divergent_pairs": 65792,
+  "prior_local_receipts": [
+    {
+      "hour": "14H",
+      "checked": 4,
+      "passed": 4
+    },
+    {
+      "hour": "15H",
+      "checked": 4,
+      "passed": 4
+    }
+  ],
+  "pc_03H_recovery": "UNVERIFIED",
+  "last_error": "UNAVAILABLE: MCP SSE probe returned 429 from openai.org",
+  "golden_pass": 0,
+  "strict_match": 0,
+  "ready": false,
+  "library_readback": "PENDING"
+}

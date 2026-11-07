@@ -1,0 +1,18 @@
+# REA-20261020-1033-T013-T031-ORDER-CURSOR-SYNTH-QC-01｜候補順序とrand cursorの独立静的検証設計
+- [OWNER/STATE] 独立REA、T013(P1)/T031(P0)。STATIC X86 + MATHEMATICAL SYNTHETIC EXPECTATION / NOT RUN。関数新規VERIFIED=0、Ghidra新規evidence=0。実ゲーム実行・動的golden実施なし。
+- [PRECHECK] Local CompactのみでMASTER checkpoint194、解析規約、REA README/QUEUE/PROGRESS、最新run 20261011T153309850Z、sync progress_sync_20261011T153958076Z、最新REA QCと保存exe/T013_TARGET_SELECTOR_PROBE.txtを読み戻した。
+- [SOURCE] 承認済コピー rea_lab/targets/hakushin067_Vahren.exeのread-only Get-FileHashはE8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187に一致。原本ZIP/EXEにはアクセス・変更・起動なし。
+- [EVIDENCE] 親0x57B870の保存Assembly ev_89e3a86b53663da35b8cadf02226f2163996275f1d24f93e37e8009fc50f048c、callees ev_5f69dc42c9b24ee6e1c0cf83c2fb4da210af2dda6c4e48b70cbf9ef185ea6203（run 20261009T225741694Z）。子0x514D60は保存exe/T013_TARGET_SELECTOR_PROBE.txtのASMであり5手法未揃い、子VERIFIEDへの昇格禁止。
+- [NATIVE ORDER] 第1候補loop：0x514DB1 disabled除外→0x514DBE self除外→0x514DC4 stealth !=0→0x514DCF CRT rand→0x514DE8 int変換→0x514DED signed CMP/0x514DF3 JG除外→0x514DF5以降の距離評価。乱数は距離・最終採用可否が決まる前に消費。
+- [SECONDARY] 0x514E48..0x514E72第1候補の成立状況等による早期帰還後、未帰還時は0x514E75から第2候補loopへ。第2loop直接CRT randなし。距離・fallbackの正式意味/到達ケースはVERIFY。
+- [SYNTHETIC INPUT] ラベルA stealth=30、B stealth=95、C stealth=0、D stealth=-1、E stealth=100かつdisabled=1、いずれもself以外、正常参照可。意図的rand15配列[0,32767,16384,32767]を固定し、実CRT seedや自然出力列とは主張しない。roll = [0,99,50,99]（正常有限整数変換前提）。
+- [CASE 1] 第1配列[A,B,C,D,E]：Aがrand0を使ってstealth除外、Bがrand32767を使って残存、Cはdraw0で残存、Dがrand16384を使って残存、Eはdisabled先除外。総direct draw=3、次rand index=3、stealth通過集合={B,C,D}。
+- [CASE 2] 第1配列[B,A,C,D,E]：Bがrand0を使って除外、Aがrand32767を使って残存、Cはdraw0、Dはrand16384で残存、Eはdisabled。総direct draw=3、次rand index=3、stealth通過集合={A,C,D}。
+- [CASE 3] Case1のCだけstealth=-1に変更：A/Bは同じdraw0/1、Cはrand16384を1回消費して除外されず、Dはrand32767を消費して除外されない。総direct draw=4、次rand index=4。Cのフィルタ可否は0と-1で一致するが、後続の乱数cursorは1進む。
+- [DERIVED INVARIANTS] 各候補状態/配列構成が走査中不変・正常終了という条件で、同一第1候補multisetの順序変更は当該子の直接draw数 K=Σ[enabled ∧ !=self ∧ stealth!=0] を変えない。一方、どの候補がどのrand値を受け取るか・stealth通過集合は変わり得る。続く距離選択・第2候補へのfallback・未来のAI更新結果はこの局所証拠だけでは確定できない。
+- [REIMPLEMENT TEST NOT RUN] (1) K/cursor一致とpass-set不一致の二独立アサーション、(2) stealth=0→-1でcursor+1、(3) enabledとselfをdraw前に除く、(4) 第2配列のみでは本局所direct draw=0、(5) 原作の合法到達/seed/Unit位置/選択結果/全callee消費を実観測するまではstrict MATCH扱い禁止。
+- [PROGRESS] 保存sync W1 16/16,W2 10/10,W3 10/10,W4 12/12,W5 16/16、合計64/64(P0 29/29,P1 35/35)。今回増加0。Wave6正式0/16、暫定P0 5/P1 11、未着手12(P0 2/P1 10)、拒否済みBLOCKED4(P0 3/P1 1)、関数結果VERIFY0。QUEUE/PROGRESSは既往EPERMで古い。最新MASTER cp194:研究DONE9/34,IN_PROGRESS21,VERIFY4。旧EXE実機golden PASS0、strict MATCH0、ゲーム再実装率は測定していない。
+- [PREFLIGHT] Local Compact実測CPU LoadPercentage12%、RAM空き16.68GiB/総30.78GiB、active.lock=False、list_processesでjava/ghidra名なし、Chrome/Node/Codex多数。単純な瞬間測定で全期間の低負荷証明ではない。
+- [RUN DECISION] 新規Ghidra/REA実行0秒。Wave6未正式登録、4候補既安全拒否、QUEUE/PROGRESS rename EPERMとREA6.1.0成功run/README pin6.4.0版差が未解決のため、今回run_decompile.ps1とsync_progress.mjsを起動しない。今回軽量解析の正味時間未計測。
+- [LIMIT/SAFETY] 単一MCP、最大4関数/回、Ghidra 900000ms、request 960000ms。0x5710C0..0x571500と既拒否REAテキスト抽出/Wave6拒否4VAを再試行・迂回しない。過去拒否renameも強制変更しない。原本/A-E/MASTER/T018/製品/QUEUE/PROGRESS/Git/push/MCP設定/automation無変更。
+- [NEXT] T013/T031：第1候補のstealth→距離→候補確定→fallbackの保存ASMを合法範囲で追加クロスチェック、親のR_parent+Kとは別に下位callee draw UNKNOWNを維持。T010/T012通常死亡帰還P0も独立優先、Wave6新規登録は安全な候補差替と正規キュー更新が成立したときだけ。

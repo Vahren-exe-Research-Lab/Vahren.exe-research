@@ -1,0 +1,16 @@
+# REA-20261021-0133-T014-255BYTE-CROSSCALL-01｜保存文字列 writer→reader 255byte境界
+- [STATE] REA専用独立静的監査、T014。新規Ghidra/REA取得0、原作実機NOT RUN、ゲーム再実装率未測定。過去の拒否済みT014 pointer-dedup保存本文の再試行ではなく別件。
+- [SOURCE] 既存Ghidra REA6.1.0/Ghidra12.1.4。writer 0x470830 run 20261009T220712454Z、reader 0x4705F0 run 20261011T144115307Z。両run記録のsource SHA=E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187。今回のEXE現物SHA再検証は未完了。
+- [EVIDENCE] writer 0x470830 assembly ev_1ffa032ec901cde47d6811b2e2941ff163adbcd1a68d9573bed5f6efe6b58d02、info ev_f5a8158a6b43e2506ce3d112878862b8be232e8a7c08fc0fe9ec860f3c4f13b7、pseudo ev_f4d406c9b915c36f64a7240ca52a5c0345099560a2e9dd81232283f7c17caeaa、callers ev_8fd58bea9f3f6285fa73f9136ed4579d386ca9d352795c38d35e05fede16f880、callees ev_4be1ac4fd6e4af83c86e6b6cb48154a8d4a875b9350ce5c5bec15ea9fa4e1845。
+- [EVIDENCE] reader 0x4705F0 assembly ev_119a86f44bb44e174c04ae524788b577d2b4085fbdba2dbac424cf906663f94d、pseudo ev_3851d07b1e0119564efeb2d7215b9c16ff9a63f274ce843c13ed100dfee38752。reader 5-method VERIFIEDはrun 20261011T144115307Zで既確認。
+- [WRITER X86] 0x470837 EDX=[ESI+0x10] length、0x47084F/0x470860で各byteのsigned許可範囲0x20..0x7Fを事前走査、0x47086B..0x47088Aで全length byteを0x4294B0へ渡す。255 byte上限はこの関数に存在せず、0x47088C..0x47088Fで末尾NULを1byte書く。
+- [READER X86] 0x470611が0x470980で1byte取得、0x470643..0x470645が読んだNULで終了。非NUL許容byteの場合0x470653でESI++、0x47065C CMP ESI,0xFF /0x470662 JL 0x470610で255未満のみ次byteを取得。255個目で返る経路0x470664以降に追加readはない。
+- [NEW DELTA 254/255] 非NUL合法ASCIIで不変stream・正常stream flags・連続する同reader呼出を前提とすると、len=254はreaderが255番目の終端NULを取得して停止するが、len=255は255個目取得時点で停止し、writerが書いた終端NULをstreamに未消費で残す。
+- [NEW DELTA 256] len=256の場合、初回readerは先頭255byteだけ取得し、後続readerは残る256番目のbyteから読み始める。いずれも単一reader呼出の通常終了時に元のwriter文字列境界と必ずしも整列しない。
+- [CONSEQUENCE] 255個の許可byte列に続く正常NULなら次の0x4705F0は空tokenを返し得る。上位のempty token/sentinel判定がレコード終端と解釈すれば項目ずれの可能性。ゲーム内で255byteの合法キーが生じるか、上位が追加読み飛ばし/長さ検査を行うかはVERIFY・旧実機NOT RUNであり原作バグとは断定しない。
+- [DEDUP] 既REA_SIGNED_BYTE_WRITER_AUDIT_20261010_1636はwriter高bit拒否・invalid時NULのみを既確定。既REA_T014_SAVE_TOKEN_SIGNED_BYTE_LENGTH_AUDIT_20261012_0637はreader 255上限・残りstream未解明を報告。今回はwriter無上限とreader 255境界の同一連結経路を比較して254/255/256具体的状態を追加。新VERIFIED/Evidence追加0。
+- [PROGRESS] 保存済み最新sync 20261011T153958076Z: W1 16/16、W2 10/10、W3 10/10、W4 12/12、W5 16/16 = 64/64(P0 29/29・P1 35/35)。Wave6暫定0/16 P0 5/P1 11、TODO12(P0 2/P1 10)・BLOCKED4(P0 3/P1 1)・関数VERIFY0、正式QUEUE未登録。QUEUE/PROGRESSはEPERM stale。
+- [MASTER/GOLDEN] MASTER現存末尾checkpoint195、研究DONE9/34・IN_PROGRESS21・VERIFY4。旧EXE実機golden PASS0、strict MATCH0。ゲーム再実装率は測定していない。
+- [LOAD/EXEC] Localで既存資料readのみ、Windows process一覧でJava/Ghidraなし、decomp_task一覧でactive.lockなし。FreePhysicalMemory=15934340KiB/TotalVisibleMemorySize=32274648KiB（約15.19/30.78GiB）。CPU使用率は未測定、承認済みEXE現物SHA今回未再取得。事前確認処理2.84秒、新Ghidra実行0秒、全軽量解析経過未計測。
+- [BLOCKERS] インストールREA6.4.0対指定6.1.0、安全拒否関数除外不完全、Wave6正式キュー未登録、既往QUEUE/PROGRESS EPERM。run_decompile.ps1/sync_progress.mjsは非実行、既拒否payload/抽出/禁VA0x5710C0..0x571500/Wave6拒否4関数の再提出・迂回なし。
+- [NEXT] T014でreader 0x4705F0 callerの境界/空token処理を既存証拠で確認し、長さ254/255/256を合成契約として設計（旧原作実機goldenに換算禁止）。次点T010/T012の0x575F71/0x575F91正常帰還。原本・A〜E・MASTER・T018・QUEUE/PROGRESS・他研究・Git/push/公開・MCP/automation変更なし。

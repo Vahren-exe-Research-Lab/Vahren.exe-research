@@ -4,6 +4,24 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-1f8"></a>
+## manager + 0x1F8
+
+- [research/recovered/b_batch6/data/T012_5501A0_MODE4_RESULT_LINK_ABI_VERIFY_OFFLINE_20261021_1015.md 行 29](../../research/recovered/b_batch6/data/T012_5501A0_MODE4_RESULT_LINK_ABI_VERIFY_OFFLINE_20261021_1015.md?plain=1#L29-L29) — - 検証は合法的に発火させた同一旧原作 ver0.67 EXE SHA / DAT SHA / SAVE SHA / map /入力 /tick /可能ならseedと、新実装build SHAを分離して採る。mode=4/非4、def+0x1D0=0/1、既存 `manager+0x1F8` NULL/nonnull、
+  制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
+
+<a id="field-248"></a>
+## manager + 0x248
+
+- [research/recovered/b_reports/B_T012_T013_BATTLEWND_ACTIVE_TREE_INSERT_OFFLINE_20261023_0417.sanitized.md 行 28](../../research/recovered/b_reports/B_T012_T013_BATTLEWND_ACTIVE_TREE_INSERT_OFFLINE_20261023_0417.sanitized.md?plain=1#L28-L28) — 前回03:16時点のP0「`0x0040E2F0`で検索・削除する`manager+0x248`の**登録元が分からない**」を、今回初めて静的に追跡した。
+  制約・訂正　Privacy derivative: one personal research-root prefix replaced with <research-root> plus explicit recovery annotation; full technical content retained; reversible byte reconstruction matches source SHA; historical STATIC/INFERRED/VERIFY only; no linked payload read or Golden/READY promotion
+
+<a id="field-348"></a>
+## manager + 0x348
+
+- [research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md 行 31](../../research/recovered/b_batch3/T011_T013_GROUP34_WEIGHTED_SQRT_AL1_NATIVE_20261101_09H.md?plain=1#L31-L31) — - `0x5282C0`では`group+0x1C==0` (`0x5282C5`) と先頭Unit `+0x1FA==0` (`0x5282DA`) が条件。`manager+0x348`のリンク集合で同一グループの既登録を避け、`0x528304→0x5299E0`の後 `0x52830A mov al,1`、`0
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 <a id="field-474"></a>
 ## manager + 0x474
 
@@ -21,6 +39,12 @@
 
 - [research/recovered/b_batch2/T028_WANDER_MERCENARY_TEMPLATE_DISPATCH_NATIVE_20261028_15H.md 行 22](../../research/recovered/b_batch2/T028_WANDER_MERCENARY_TEMPLATE_DISPATCH_NATIVE_20261028_15H.md?plain=1#L22-L22) — 無改変原作ver0.67 EXE、20倍改変前DAT、同SAVE/MAP/input/RNG、候補+0x75/+0x77/+0x74/+0x1B0・manager+0x1EEC3C・0x585E00/0x583A80戻値を合法runで分離し、放浪/傭兵の実UI、候補存否、忠誠度・士気、World帰還、再雇用の前後を原作
   制約・訂正　Historical STATIC/INFERRED/VERIFY/READY author claims preserved; no native/runtime revalidation; current REF corrections prevail; linked evidence not recovered; no Golden/READY promotion
+
+<a id="field-1eec94"></a>
+## manager + 0x1EEC94
+
+- [research/recovered/b_batch10/data/T028_ALTERNATE_VECTOR_FIRE_REGISTRATION_CROSSJOIN_V3_20261029_04H.md 行 9](../../research/recovered/b_batch10/data/T028_ALTERNATE_VECTOR_FIRE_REGISTRATION_CROSSJOIN_V3_20261029_04H.md?plain=1#L9-L9) — - Ghidra V3修復検索の0x48C880 pseudoc（旧Ghidra由来・ABI未検証）では、manager+0x1EEC94..98 と +0x1EECA4..A8 の28-byte要素vectorを個別に順走査し、範囲外時は前03H既知0x48D18D throw sinkを共有する。この既知範囲検査は
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
 <a id="field-1eed43"></a>
 ## manager + 0x1EED43

@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-c"></a>
+## inner + 0xC
+
+- [research/recovered/b_batch10/data/T024_MODE_PARAM_FILTER_TWO_CALLERS_NATIVE_20261026_03H.md 行 10](../../research/recovered/b_batch10/data/T024_MODE_PARAM_FILTER_TWO_CALLERS_NATIVE_20261026_03H.md?plain=1#L10-L10) — 通過後は0x41F043 [ECX+ESI*4] → 0x41F046/49 inner+0xC/+0x10 vector、空なら0x41F04E XOR EAX,EAX / 0x41F050 JMP 0x41F054。
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 <a id="field-68"></a>
 ## inner + 0x68
 

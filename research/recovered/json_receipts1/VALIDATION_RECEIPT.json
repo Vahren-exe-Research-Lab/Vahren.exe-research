@@ -1,0 +1,14 @@
+{
+  "source_count": 10,
+  "approved_hashes_match": 10,
+  "exact_bytes_verified": 10,
+  "valid_json_archives": 10,
+  "personal_root_tokens_detected": 0,
+  "privacy_variants": 0,
+  "aliases": 0,
+  "deferred": 0,
+  "held_payloads_read": 0,
+  "linked_artifacts_read": 0,
+  "promoted_runtime_or_ready_claims": 0,
+  "declared_digest_anomaly_count": 0
+}

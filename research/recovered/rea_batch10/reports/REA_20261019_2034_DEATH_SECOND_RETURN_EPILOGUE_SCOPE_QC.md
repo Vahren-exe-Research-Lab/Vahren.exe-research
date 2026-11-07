@@ -1,0 +1,15 @@
+# REA-20261019-2034-DEATH-SECOND-RETURN-EPILOGUE-SCOPE-01｜第二Troop帰還のepilogueとhost省略境界
+- [OWNER/CLASS] 独立REA、P0 T010/T012/T013。STATIC SAVED ASM x READ-ONLY HOST CROSSCHECK。新規Ghidra実行なし。関数VERIFIED追加なし。原本/他レーン/MASTER/既存正本は無変更。
+- [PRIMARY SAVED EVIDENCE] dev_lab/reports/CHATGPT_HEAL_MUTATION_20261012.log の既保存 unit_graph_disable_continuation_STATIC 575F30..5760C0（read_file line 8210..8294）、rea_lab/decomp_task/SOURCE_RECOVERY_DAMAGE_STATUS_20261011.md §ND-GRAPH-TAIL、logs/NORMAL_DEATH_CONTRACT_VERIFY_20261013.json（契約REA-ND-20261013-001、静的checks134 PASS、旧Gameplayではない）。
+- [BRANCH 1] 0x575F62はU+1D0をEDIへ読む。0x575F68 TEST／0x575F6A JE 0x575F71、非nullなら0x575F6C CALL 0x5684B0→0x575F71。第一CALLを無条件実行しない。
+- [BRANCH 2] 0x575F71 CMP BYTE [U+1867D],0、0x575F78 JE 0x575F91。非0の場合だけ0x575F7A..86でU+C→world+4→engine+1E8B34を再読、+358して0x575F8C CALL 0x5684B0→0x575F91。第一CALL後のflag再読が必須。
+- [NEW NARROW CROSSCHECK] 0x575F91 POP EDI／0x575F92 POP ESI／0x575F93 POP EBP／0x575F94 POP EBX／0x575F95 RET。第二CALL正常帰還PCからnative graph exitまでの可視命令は4つのregister restorationとRETのみで、新たなUnit/Troopメモリ書込・条件分岐はこの5命令に見えない。
+- [HOST BEHAVIOR] dev_lab/src/hakushin_compat/native_battle_session.py の continue_resolved_normal_disable_troops は第一CALL完了でframe.next_va=0x575F71を保つが、第二CALL完了では0x575F91を独立checkpointとして公開せず、直接0x575C54をpublishしてreturn。0x575F91..95の高水準compactionであり、これだけを製品の確定バグとみなさない。
+- [VERIFY BOUNDARY] High-levelでEpilogueを省略しても副作用差が無いという限定仮説は、outer return 0x575C54へのstack/register/呼出継続の一致をまだ証明しない。第二callee未帰還・未完了中は0x575C54へ進めない。Task/Spatial cleanup完了・caller return 575D0Dは別判定。0x575F91 stateをデバッグtraceで保持すべきかは互換性設計上のVERIFY。
+- [OWNERSHIP/DEDUP] 前REA-20261019-1835・1933はowner再束縛可否を扱う。本増分は第二callee後の純epilogue命令窓とhost checkpoint差だけ。既存静的証拠の再解釈であり新関数として二重加算しない。現在のowner変更や実際の原作UI到達は未確定。
+- [EVIDENCE IDS] 今回新規Ghidra info/pseudo/assembly/callers/callees evidence ID=0。保存契約ID=REA-ND-20261013-001。対象run source SHA256=E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187（現物再hashなし）。既往拒否0x5710C0..0x571500／Wave6拒否4VA／REA exporterは触らない。
+- [SYNC STATE] runs/20261011T153309850Z/RUN_RESULT.jsonとlogs/progress_sync_20261011T153958076Z.jsonはW1=16/16,W2=10/10,W3=10/10,W4=12/12,W5=16/16、計64/64(P0=29/29,P1=35/35)。Wave6正式0/16・暫定P0 5/P1 11、TODO12(P0 2/P1 10)、拒否BLOCKED4(P0 3/P1 1)、関数結果VERIFY0。既存QUEUE/PROGRESSはrename EPERMでstale。
+- [MASTER/GOLDEN] 最新読取checkpoint191、研究DONE9/34・IN_PROGRESS21・VERIFY4。旧EXE実機golden PASS0、新旧strict MATCH0。ゲーム再実装率は測定していない。
+- [LOAD/LIMIT] Local読取成功。list_directoryのactive.lock未表示（非原子的）。list_processesのCPU列n/a、空きRAM未測定、低負荷未確認。新規Ghidra時間0秒、軽量作業総時間未計測。保存成功runはREA6.1.0/Ghidra12.1.4、現runner6.4.0差・Wave6未登録・旧EPERM・安全拒否を維持。単一MCP、最大4関数/回、Ghidra900000ms/request960000ms。runner/syncは非起動。
+- [NEXT] 既存保存命令で0x41F850→0x56BA80→global virtual+C→0x401BE0の副作用範囲と元owner取得元を調査（証拠なければUNKNOWN）。第二CALL非完了中の0x575F91/575C54誤昇格を防ぐ契約設計。新run/正規Wave6登録は全安全条件と所有権を満たす時のみ。
+- [NO CHANGE] 原本ZIP/EXE/SAVE、A-E・MASTER/T018、dev_lab/Work、QUEUE/PROGRESS、Git/push、MCP設定・既存automationを変更しない。

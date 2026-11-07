@@ -22,6 +22,12 @@
 - [research/recovered/b_reports/T024_FALLBACK_FLAG_LATCH_FOURWAY_NATIVE_20261025_23H.md 行 8](../../research/recovered/b_reports/T024_FALLBACK_FLAG_LATCH_FOURWAY_NATIVE_20261025_23H.md?plain=1#L8-L8) — - +0x3C/3D（0x526AE8/0x526AF3）も消費して分岐。成立時はglobal 0x67B313等による別条件処理、0x526B59→0x4C21F0等へ。0のとき0x526B79 owner+0x14==0なら0x526B7E AL0→return（後続pair群未消費）。
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail; source addendum limits missing-call claim to legacy20261021 DB, not V3
 
+<a id="field-1c"></a>
+## owner + 0x1C
+
+- [research/recovered/b_batch10/data/T024_FIRST_ELIGIBLE_UI_COUNT_SPLIT_NATIVE_20261026_04H.md 行 17](../../research/recovered/b_batch10/data/T024_FIRST_ELIGIBLE_UI_COUNT_SPLIT_NATIVE_20261026_04H.md?plain=1#L17-L17) — Golden案: 無改変原作ver0.67（x20改変前DAT）、同SAVE/MAP/input/RNGでmode0/非0、owner複数、先頭eligible位置、inner長1/2/25以上、arg0/1、owner+0x1C、表示件数、次tickを比較。DESIGNED_NOT_RUN/Gameplay PASS
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 <a id="field-2c"></a>
 ## owner + 0x2C
 
@@ -55,8 +61,17 @@
 - [research/recovered/rea_batch8/reports/REA_20261025_20H_P0_OGG_TEARDOWN_THREAD_STATIC.md 行 14](../../research/recovered/rea_batch8/reports/REA_20261025_20H_P0_OGG_TEARDOWN_THREAD_STATIC.md?plain=1#L14-L14) — - 0x004BF2F0～0x004BF32Fは[owner+9]!=0かつ[owner+0xA0]!=NULLを条件とするOgg/stream側経路。stream側+0x44が非0なら0x004BF318のvtable +0x48処理と0x004BF31C→0x00502330を経由。非0・ゼロいずれでも0x004B
   制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
 
+<a id="field-1a8"></a>
+## owner + 0x1A8
+
+- [research/recovered/b_batch10/data/T024_TROOP_CLEANUP_GATES_INPUT_NATIVE_20261025_20H.md 行 24](../../research/recovered/b_batch10/data/T024_TROOP_CLEANUP_GATES_INPUT_NATIVE_20261025_20H.md?plain=1#L24-L24) — - Golden必要: 無改変旧EXE・20倍強化前DAT・同SAVE/MAP/input/RNGでTroop+0x1D(0/非0)×Unit+0x1867C(0/非0)×候補数0/1/複数×先頭Unit+0x8C/+0x1F8、別系でglobal+0x1EF148/PtInRect/arg0と+0x14を観測、+0x
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
 <a id="field-1b8"></a>
 ## owner + 0x1B8
+
+- [research/recovered/b_batch10/data/T013_TROOP_FORM_MODE_SETTER_FIRST_LIVE_V3_20261023_22H.md 行 11](../../research/recovered/b_batch10/data/T013_TROOP_FORM_MODE_SETTER_FIRST_LIVE_V3_20261023_22H.md?plain=1#L11-L11) — 【+0x38 / PRIOR】既0x568080が+0x38を`FUN_0046F4C0(owner+0x1B8,15)`で初期化、既0x568710はTroop+0x1D==0かつ最初の構成員追加の枝で`breast_width`を設定し、0なら同ヘルパーへfallbackする。既15H/19H研究との照合で、+0x
+  制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
 - [research/recovered/save_topic/T014_GLOBAL_SAVE.md 行 500](../../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L500-L500) — [EVIDENCE] `exe/T006_NUMVAR_WRITE_AFTER_LOOKUP.txt` 0x41EC63..0x41EC89,0x430B04..0x430B10,0x44DBC0..0x44DBDF,0x451161..0x451177；`exe/T032_VAR_DEFAULT_PROBE.txt`
   制約・訂正　Catalog original bytes not recovered; historical claims only; current REF_SAVE_FORMAT.md TurnState precedence; no linked evidence/runtime validation

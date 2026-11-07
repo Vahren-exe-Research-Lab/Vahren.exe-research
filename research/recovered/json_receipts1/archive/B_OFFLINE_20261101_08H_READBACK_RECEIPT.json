@@ -1,0 +1,36 @@
+{
+  "research_id": "B-OFFLINE-20261101-08H-T011-T013-GROUP1E-CALLSITES-AL-POSTCALL-01",
+  "status": "OFFLINE-UNSYNCED / NOT READY",
+  "source": "ChatGPT Library read-only originals",
+  "PC_saved": false,
+  "GitHub_saved": false,
+  "PC_connection_error": "UNAVAILABLE: MCP SSE probe returned 429 from openai.org",
+  "03H_PC_write": "UNKNOWN",
+  "files": [
+    {
+      "relative_path": "data/B_20261101_08H_GROUP1E_CALLSITE_READONLY_VERIFY.py",
+      "bytes": 9160,
+      "sha256": "73903754587B679B19633975024632B5E504B151D05501AFBF8AF84C5D554418",
+      "readback": "PASS"
+    },
+    {
+      "relative_path": "data/B_OFFLINE_20261101_08H_GROUP1E_CALLSITE_EVIDENCE.json",
+      "bytes": 16668,
+      "sha256": "DA11DE92B73D127824D99A8D42E89C4747312D339C0F47B64981A2FEA066AAC3",
+      "readback": "PASS"
+    },
+    {
+      "relative_path": "data/T011_T013_GROUP1E_ALL25_CALLER_AL_POSTCALL_NATIVE_20261101_08H.md",
+      "bytes": 9664,
+      "sha256": "59384BB44C1A45A83223FE55FC399FCCB6372D1ECEE2DEC483B0361CDF8127F2",
+      "readback": "PASS"
+    },
+    {
+      "relative_path": "evidence/LANE_B_HANDOFF_OFFLINE_DELTA_20261101_08H.md",
+      "bytes": 2339,
+      "sha256": "55D21D6DA885BC457B39C03F5ADF2E97945421F27C9DA4666C1E22D05E3179BA",
+      "readback": "PASS"
+    }
+  ],
+  "readback_pass": 4
+}

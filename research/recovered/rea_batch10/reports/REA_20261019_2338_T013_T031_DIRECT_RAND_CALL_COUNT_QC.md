@@ -1,0 +1,17 @@
+# REA-20261019-2338-T013-T031-DIRECT-RAND-CALL-COUNT-01｜支援候補更新における直呼出rand回数の条件式
+- [OWNER / CLASS] 独立REA、T013(P1)主・T031(P0)参照、保存済みASM×pseudo×callee局所照合。原作実機・新規Ghidra/REA・製品テスト NOT RUN。新VERIFIED関数0。
+- [TARGET] 承認済みhakushin067_Vahren.exeの保存run source SHA256=E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187（今回実体再hashなし）。
+- [EVIDENCE] runs/20261009T225741694Z/57B870_procedure_assembly.json ev_89e3a86b53663da35b8cadf02226f2163996275f1d24f93e37e8009fc50f048c。
+- [CROSSCHECK] 同run procedure_info ev_c4fcdda0f9486944ccdcfe1354a6d2e37f2b68761dfd2e47b7df9a11cd367612（entry0x57B870、0x57B870..0x57BB9B、812bytes）、pseudo ev_4767a901e9f4b9ad1fc38d59a2f36a6a4a1ef4cc22287abb8e74c97f094aa2dc、callees ev_5f69dc42c9b24ee6e1c0cf83c2fb4da210af2dda6c4e48b70cbf9ef185ea6203。callersも既存証拠を参照、新取得なし。
+- [DIRECT RAND SITES] 0x57B8FE CALL 0x5B6EAB：U+0x1E534 >= global[0x65BCAC]の再評価枝では無条件1回。0x57B940 CALL 0x5B6EAB：U+0x1E570==0かつsigned(U+0xC8)<0の場合だけ追加1回。0x57BA10 CALL 0x5B6EAB：U+0x137!=0かつsigned(U+0xC8)<0なら、候補vector分岐に先立ち追加1回。
+- [EARLY EXIT] 0x57B87Fのsigned CMPでU+0x1E534<global[0x65BCAC]なら0x57B887..0x57B8DB/0x57BB94から帰還。直CALL 0x5B6EABは0回で支援vector+0x1E584/588/58Cの本関数内更新も0。
+- [EXACT LOCAL FORMULA / NORMAL RETURN] C=(signed U+0x1E534>=signed global[0x65BCAC])。C falseならdirectRandCalls=0、trueなら 1 + int(U+0x1E570==0 && signed(U+0xC8)<0) + int(byte(U+0x137)!=0 && signed(U+0xC8)<0)。対象はこの関数本文に存在する0x5B6EABへの直接CALL回数のみ。下位calleeからの間接消費・異常終了は含めない。
+- [GATE VECTORS / STATIC DESIGNED NOT RUN] (counterBelow)→0、(counterReached, cachedTarget!=0, C8>=0)→1、(reached,cachedTarget!=0,C8<0,cap=0)→1、(reached,cachedTarget!=0,C8<0,cap!=0)→2、(reached,cachedTarget=0,C8>=0)→1、(reached,cachedTarget=0,C8<0,cap=0)→2、(reached,cachedTarget=0,C8<0,cap!=0)→3。
+- [IMPORTANT DISTINCTION] +0x137=0でもcounter到達なら0x57B8FE等でrand消費し得る。支援候補vector更新停止はPRNG不消費と同義でない。既存support cache早期return/能力gate記録とは別に「direct CRT RNG数」を今回式に限定した。
+- [LIMIT] target未キャッシュ時の0x514D60はSTEALTH判定で条件付きCRT乱数消費し得る（既存REA_T013_PRIMARY_SUPPORT_FILTERS_20261011_1733.md）。0x514D60/0x514F10の5種新規証拠なし。従って上式を全スレッドrand総消費回数や後続戦闘乱数列の一致へ拡張しない。実Unit条件とcaller/コール副作用はVERIFY。
+- [COMPAT TEST] 既存T013支援候補分岐fixtureへcounter/targetCached/C8/capの4次元を追記し、直CALL3地点とcallee内randを別計数するDESIGNED/NOT RUN検証を提示。既存A/B/E/T018/devコードは編集しない。
+- [STATUS] 保存run 20261011T153309850Z / sync progress_sync_20261011T153958076Z はW1 16/16、W2 10/10、W3 10/10、W4 12/12、W5 16/16、累計64/64 (P0 29/29,P1 35/35)。今回増加0。Wave6正式0/16・暫定P0 5/P1 11、未着手TODO12(P0 2/P1 10)、BLOCKED4(P0 3/P1 1)、関数結果VERIFY0。QUEUE/PROGRESSのEPERM staleはそのまま。
+- [MASTER/GOLDEN] 最新MASTER checkpoint191、研究DONE9/34・IN_PROGRESS21・VERIFY4。旧EXE実機golden PASS0、old-new strict MATCH0、ゲーム再実装率は測定していない。
+- [LOAD/PREFLIGHT] Desktop Commander Local Compact接続正常、process CPU:n/a、空きRAM未計測、Chrome/Node/Codex多数、Java/Ghidra名は一覧で未認識。root一覧にactive.lockなし（原子的確認ではない）。PC低負荷を証明できないためrun_decompile.ps1/sync_progress.mjs未起動、新Ghidra時間0秒。軽量調査総時間未計測。
+- [SAFETY] 単一MCP・最大4関数・Ghidra900000ms・request960000ms維持。REA6.1.0成功証拠とrunner pinned6.4.0差、QUEUE/PROGRESS EPERM未解消。安全拒否0x5710C0..0x571500／既拒否REA抽出・preflight・Wave6拒否4関数は再試行/迂回しない。原本ZIP/EXE、MASTER、A-E/T018、Git/push、MCP設定、automation、既存QUEUE/PROGRESS不変更。
+- [NEXT PRIORITY] T013/T031:0x514D60内STEALTH RNGの条件付き呼数を既存許可済み保存証拠と突合し、本直呼出式から分離したRNG連結を設計。T010/T012死亡処理の通常帰還・所有者変更は既存VERIFY継続。新Wave登録/重い解析は正規キュー更新・安全な負荷確認後のみ。

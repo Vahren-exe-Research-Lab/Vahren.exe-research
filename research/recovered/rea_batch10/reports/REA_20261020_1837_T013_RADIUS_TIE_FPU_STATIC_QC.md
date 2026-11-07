@@ -1,0 +1,14 @@
+# REA-20261020-1837-T013-RADIUS-TIE-FPU-STATIC-01｜候補距離同値と探索半径境界の独立照合
+- [OWNER/STATE] REA専用／T013 P1・T031参照。STATIC SAVED X86（分岐命令）／VERIFY（ゲーム中意味）。新Ghidra関数解析0、今回新VERIFIED0、旧EXE実機NOT RUN。
+- [SOURCE] rea_lab/targets/hakushin067_Vahren.exe はread-only SHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187一致。保存Ghidra run 20261009T225741694Zも同SHA。
+- [EVIDENCE] 親0x57B870 Assembly ev_89e3a86b53663da35b8cadf02226f2163996275f1d24f93e37e8009fc50f048c、info ev_c4fcdda0f9486944ccdcfe1354a6d2e37f2b68761dfd2e47b7df9a11cd367612、callees ev_5f69dc42c9b24ee6e1c0cf83c2fb4da210af2dda6c4e48b70cbf9ef185ea6203。子0x514D60は既存exe/T013_TARGET_SELECTOR_PROBE.txtの保存ASMで5方法未揃い、独立VERIFIEDには昇格不可。
+- [PRIMARY DISTANCE] 0x514E1E FLD保持最短距離→0x514E22 FCOM新候補距離→0x514E26 TEST AH,0x41→0x514E29 JNE skip。正常な有限値では保持距離<=候補距離で更新せず、厳密に近い場合だけ0x514E2D以降で更新する。同距離候補は既存の先着選択が残る。
+- [RADIUS EQUALITY] 0x514E48で主候補NULLならsecondaryへ。非NULL時、0x514E50 FILD主候補+0x18C、0x514E56 FCOMP保持距離、0x514E5A TEST AH,1→0x514E5D JNE secondary。正常有限値では半径<距離だけsecondaryへ進み、半径==距離も0x514E5F..0x514E72の早期帰還側となる（境界はinclusive）。
+- [SECONDARY TIE] early returnしない場合、0x514E75からsecondary。0x514ECA FCOM新候補距離→0x514ED2 TEST AH,0x41→0x514ED5 JNE skip。ここでもstrict closerのみ更新、主pool保持距離を明示リセットしない。主/副で同距離なら既存選択を維持する。
+- [TEST MATRIX / NOT RUN] A:主候補距離d・半径d はsecondary非走査。B:主距離d・半径d-1 はsecondary走査。C:secondary距離dなら更新なし。D:secondary距離d-ε（ε>0）なら更新対象。候補有効性・self/disabled/stealth・座標算術正常範囲を別fixture前提にする。
+- [LIMIT] x87 unordered/NaN、signed32平方和overflow、0x5E3B70の数値契約、実Unit属性意味、呼出元が候補をどう使うか、原作の可視target結果は未確定。x86局所テストを実ゲームGolden/MATCHに換算しない。
+- [DEDUP] 既存REA_T013_PRIMARY_SUPPORT_FILTERS_20261011_1733.mdの主pool range概要・前回未保存のdual-return記録は再保存・代理回収しない。今回独立増分はradius同値のinclusive判定と主/副pool同距離でのstrict tie policyの明示監査。
+- [PREFLIGHT] Local CPU LoadPercentage=8%、RAM空き18.22/総30.78GiB、java/ghidra processなし、active.lock=false。瞬間値のみ。
+- [RUN DECISION] Wave6は正式QUEUE未登録（候補16中TODO12/既拒否BLOCKED4）、QUEUE/PROGRESS既往rename EPERM、REA保存run6.1.0/runner記載pin6.4.0未調整につき重いrun_decompile.ps1/sync_progress.mjsは起動せず。Ghidra時間0秒・軽量作業全体時間未計測。単一MCP/4関数上限/900000ms/960000ms維持。
+- [COUNTS] sync 20261011T153958076Z W1=16/16,W2=10/10,W3=10/10,W4=12/12,W5=16/16、累計64/64(P0 29/29,P1 35/35)、今回増0、Wave6正式0/16(P0候補5/P1候補11、TODO P0 2/P1 10、BLOCKED P0 3/P1 1、結果VERIFY0)。MASTER最新cp195、研究DONE9/34、IN_PROGRESS21/VERIFY4。旧EXE実機golden PASS0、新旧strict MATCH0。ゲーム再実装率は測定していない。
+- [SAFETY/NEXT] 安全拒否0x5710C0..0x571500/既REA抽出/W6拒否4VAの再試行0、前回dual-return保存拒否操作の再提出・迂回0。原本ZIP/EXE、他lane、MASTER/T018、QUEUE/PROGRESS、Git/push、MCP設定、automationを変更しない。次回はT013親CALL後の保存状態の既存証拠をread-only検証する場合も未保存拒否内容は再作成せず、代わりにT010/T012 P0正常帰還・T014安全Wave6 xrefsを優先。

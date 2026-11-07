@@ -1,0 +1,5 @@
+role	input_path	sha256	bytes	interpretation
+approved_selection	hakushin-rea-batch10-approved.tsv	670844EC74A7D71E8107AC0A03DDADAE88077C954C459166253E501AD4875013	4954	Read-only metadata snapshot; blank approved hashes are not inferred from current measurements
+source_manifest	SOURCE_MANIFEST.tsv	F0B92C07581C82F02779C39CA5DF09474F16DE8376352A96F7FF67AAB2F06D99	313924	Read-only metadata snapshot; blank approved hashes are not inferred from current measurements
+source_catalog	RESEARCH_SOURCE_CATALOG.tsv	F14E3BD401A836039F678E9238C6490E2200385EFB0FBB602E62F626EC679CF4	350283	Read-only metadata snapshot; blank approved hashes are not inferred from current measurements
+recovery_ledger	research/recovered/RECOVERY_LEDGER.tsv	9BF85ACABD8659E676656036C96749DCE0D7B6EFCBBE6B124CC4613A4B9A059B	720316	Read-only metadata snapshot; blank approved hashes are not inferred from current measurements
