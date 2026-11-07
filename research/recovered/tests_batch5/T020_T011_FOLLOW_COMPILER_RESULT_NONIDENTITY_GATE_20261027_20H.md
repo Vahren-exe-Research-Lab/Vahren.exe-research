@@ -1,0 +1,16 @@
+# E-AUDIT-20261027-20H-T020-T011-FOLLOW-COMPILE-RESULT-NONIDENTITY-01
+[OWNER/CLASS] E/T020 (T018受入条件へ反映候補)。2026-10-27 20時台 JST。STATIC + SYNTHETIC EXECUTED / VERIFY / NOT READY。正式READY追加0、MASTER無変更。
+[PC/BASELINE] Desktop Commander Local Compact接続。MASTER TASK QUEUE、ANALYSIS_LANES_PROTOCOL、evidence/LANE_A-D_HANDOFF、REA decomp_task/PROGRESS、dev_lab IMPLEMENTATION_PLAN、E T018/T019、legacy search README/BUILD_MANIFESTを読取。EXE識別SHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187はB保存済み情報、E今回EXE原本再hashなし。
+[OWNER SOURCE] B-20261027-2013-T011-T012-FOLLOW-PARSER-RESULT-LINK-01、data/T011_FOLLOW_COMPILER_RUSH_RESULT_LINK_NATIVE_20261027_20H.md。B詳細現物期待SHA256 F2B968EF7B5E15583AF0883196EEFC314BACF9C09233DCD61BA98930ABFADCD8をE新テストでバイト再hash照合。
+[NEW T020 BOUNDARY] 原作VA0x59B928/0x59B962/0x59B999: raw follow「on」の比較真経路はcompiled Skill+0x1D0=1。その他はnative numeric getter経由。raw off、raw 0、raw 20/30/48をcompiler後の0/同数と機械的に扱わない。raw ON等の大小文字の意味も未確定。
+[RESULT LINK] VA0x55038F follow!=0 gateを経てもresult EBPがNULLなら有効なリンク先は得られない。非NULL時のRush+0x1F8、result+0x194、previous+0x198は条件付き効果オブジェクト参照であり、Unit召喚親ID、同一生成世代、EXP配分先の証拠にはならない。
+[SYNTHETIC CASES] unknown numeric getter、raw onを経ても結果NULL、旧結果なし、結果2件、負値pointer拒否、bool誤認、数値越境、Golden/親子誤昇格の合成負例を検証。E専用 tests/t020_t011_follow_compiler_result_nonidentity_20261027_20H.py 18/18 PASS (実ゲーム未実行)。これは静的解析に基づくモデルの動作テストで、原作との一致を示さない。
+[TEST LIMITS] helperに渡すsynthetic_numericはスタブ値であり原作numeric getterの出力実測ではない。memory pointer等価でも寿命・親子identityを保証しない。result+0x194等の名称は論理意味未確定。Skill+0x1D0の他consumer・原作getter・実戦闘効果はVERIFY。
+[T018 C-NB02] E_G0合法旧UIによる開戦Spot/入力、E_G1同一戦闘直前SAVE実バイトSHA+入力、E_G2同一runの実MAP・三陣営・ordered deployed Unit/Troop、E_G3戦闘結果、E_G4戦略World差分はいずれも未充足。戦闘途中生成のeffect/resultをE_G2初期Rosterへ入れない。新規旧原作DYNAMIC OBSERVED=0 / actual Golden PASS=0 / strict MATCH=0。
+[T019] 今回新規確定原作BUG/矛盾0。GameClear DAT13/TXT2字句検索scopeはSOURCE-SCOPE RESOLVEDのまま。script2同名勝者、phase flag、TXT runtime loader、後続gwrite再開はVERIFYを維持。
+[MASTER/COUNT] 最終既知正式checkpoint196、READY596=A115/B229/C136/D116、34 Task DONE9/IN_PROGRESS21/VERIFY4（先行19H確認値。今回全READY履歴とTASKを独立再集計していない）。B20HはSTATIC/VERIFY/NOT READYにつき統合0、READY IDなし。過去OFFLINE-UNSYNCED未統合を維持。
+[SAFETY] 既存E T018表境界/session-join/T019拒否XREF、C T026/T032、D T030 TSV、0x5710C0..0x571500、0x58021E..0x580340等は独立BLOCKEDのまま。拒否操作の別shell/tool/path/Remote/ZIPでの再試行0。ゲームEXE/ZIP/DAT/SAVE、A-D/REA/dev_lab、Git/push、Work、設定/automationを編集しない。
+[OTHER RECOVERY] E-RC-20261027-20H-LANE-HANDOFF-PATH-OTHER-01: 初回read_multiple_filesでroot直下LANE_A-D_HANDOFF.mdを誤指定し4件ENOENT。正本はevidence/LANE_A-D_HANDOFF.mdと確認し同認可Localでread_file成功。接続断・安全拒否ではなくOTHER/RECOVERED。保存資料未破損/影響無し。
+[SAVE/READBACK] 本E新検証コードとE報告のみtests/に新規保存。独立readbackおよびSHA256は別検証receiptで確認すること。MASTER追記/READY昇格は行わない。
+[NEXT] 最優先はC-NB02の合法同一run G0/G1/G2原作一次証拠。B follow numeric getterの実効値とRush effect resultの合法runtime型・寿命が独立証明された際にのみE T020 fixtureと1対1照合し、静的/合成値をGoldenへ昇格させない。
+[INDEPENDENT READBACK RECEIPT / 2026-10-27 20H] E所有コード97行および本報告15行を別read_fileで全文読み戻し成功。コードSHA256=385C5015821698B44FB11EE369C4889E65C3C4073F0E1F6E50F9402BC67DEA78。B詳細現物SHA256=F2B968EF7B5E15583AF0883196EEFC314BACF9C09233DCD61BA98930ABFADCD8をLocal独立Get-FileHashで一致確認。Python -B test 18/18 OK。MASTER TASK QUEUE今回34行をread-only独立抽出し、ID一意34、DONE9/IN_PROGRESS21/VERIFY4を確認。cp196/READY596は従来の正式値で全履歴再計算なし。本receipt追記前の報告SHA256=AFC958F49C850D249FB34163C04B5E3A17887E1F967DA70299D75BCF502543FD；追記後SHAは別計算。新拒否0、残未保存差分0、READY未統合。

@@ -1,0 +1,5 @@
+claim_type	claimed_reference	git_base	metadata_result	git_blob_or_commit	limit
+PR	ButaMonky/Hakushin067-Research-Knowledge/pull/17	d214fec648b3d15007bb9b81626a97ab34d2c641	PR number appears in selected chat; repository tree cannot establish PR state		No network/PR fetch; historical claim only
+filename	research/intake/E/E-VA-MENTION-INDEX-20261102.tsv	d214fec648b3d15007bb9b81626a97ab34d2c641	Exact path exists as regular blob	711d77d61f44c22e2cc37f764bf8a6bd92976601	Body not read; 193/89/549/804 claims not independently checked
+filename	research/intake/E/E-T020-REPRO-ASSET-RECEIPTS-20261102.tsv	d214fec648b3d15007bb9b81626a97ab34d2c641	Exact path exists as regular blob	4f69b39c05fef2efbf31883442a568f63d2dba48	Body not read; 340/337 claims not independently checked
+research_id	No explicit individual research ID in selected reply	d214fec648b3d15007bb9b81626a97ab34d2c641	No individual ID correlation attempted		193 is a historical count claim, not an individual ID

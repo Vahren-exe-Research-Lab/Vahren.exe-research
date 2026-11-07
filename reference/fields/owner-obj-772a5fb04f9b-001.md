@@ -4,6 +4,18 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-1c"></a>
+## obj + 0x1C
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1134_T014_PARTIAL_READ_OWNER_AUDIT.md 行 23](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1134_T014_PARTIAL_READ_OWNER_AUDIT.md?plain=1#L23-L23) — 0x59650D  call 0x4707D0          ; destination obj+0x1C
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+<a id="field-1d"></a>
+## obj + 0x1D
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1134_T014_PARTIAL_READ_OWNER_AUDIT.md 行 27](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261022_1134_T014_PARTIAL_READ_OWNER_AUDIT.md?plain=1#L27-L27) — 0x59651D  call 0x4707D0          ; destination obj+0x1D
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
 <a id="field-2c"></a>
 ## obj + 0x2C
 
@@ -33,6 +45,9 @@
 
 - [research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md 行 11](../../research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md?plain=1#L11-L11) — - 0x5150D7 CALL 0x5B6513 はsecurity cookie検査。native cookieの正常経路0x5B6513 CMP ECX,[0x65A220]→0x5B651B REPZ RETでEAXを変更しない。通常経路のEAXは 0x515076 で作った &obj+0x88 に保たれる。Gh
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/tests_batch5/T020_E_T013_SUM88_BRANCH_ACCEPTANCE_20261030_22H.md 行 9](../../research/recovered/tests_batch5/T020_E_T013_SUM88_BRANCH_ACCEPTANCE_20261030_22H.md?plain=1#L9-L9) — 0x515060 iterates obj vector and excludes Unit+0x1867C nonzero; UnitData+0x1C4 contributes to obj+0x88 and conditionally to +0x8C if Unit+0x1D0 nonzero. It is *
+  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
 
 <a id="field-c8"></a>
 ## obj + 0xC8

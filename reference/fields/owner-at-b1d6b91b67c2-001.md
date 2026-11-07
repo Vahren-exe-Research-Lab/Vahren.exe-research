@@ -52,4 +52,31 @@
 - [research/recovered/e_reports/T020_E_T013_HEAD_SENTINEL_COORD_ACCEPTANCE_20261031_21H.md 行 9](../../research/recovered/e_reports/T020_E_T013_HEAD_SENTINEL_COORD_ACCEPTANCE_20261031_21H.md?plain=1#L9-L9) — - Alternative branch `0x57DE95` returning AL true instead stores ESI at Unit+0x186C8 then EBP at +0x186CC, calls 0x576660 and jumps 0x543DE0; AL false may reuse
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
 
+<a id="field-1e8630"></a>
+## at + 0x1E8630
+
+- [research/recovered/rea_legacy1/reports/REA_EVENT_FLAG_SLOT_MATRIX_20261011_0236.md 行 14](../../research/recovered/rea_legacy1/reports/REA_EVENT_FLAG_SLOT_MATRIX_20261011_0236.md?plain=1#L14-L14) — \| 1 \| 0 \| value at +0x1E8634 \| value at +0x1E8630 \|
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_EVENT_FLAG_SLOT_MATRIX_20261011_0236.md 行 15](../../research/recovered/rea_legacy1/reports/REA_EVENT_FLAG_SLOT_MATRIX_20261011_0236.md?plain=1#L15-L15) — \| 0 \| 1 \| value at +0x1E8630 \| value at +0x1E8634 \|
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+<a id="field-1e8634"></a>
+## at + 0x1E8634
+
+- [research/recovered/rea_legacy1/reports/REA_EVENT_FLAG_SLOT_MATRIX_20261011_0236.md 行 13](../../research/recovered/rea_legacy1/reports/REA_EVENT_FLAG_SLOT_MATRIX_20261011_0236.md?plain=1#L13-L13) — \| 0 \| 0 \| value at +0x1E8634 \| value at +0x1E8638 \|
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_EVENT_FLAG_SLOT_MATRIX_20261011_0236.md 行 14](../../research/recovered/rea_legacy1/reports/REA_EVENT_FLAG_SLOT_MATRIX_20261011_0236.md?plain=1#L14-L14) — \| 1 \| 0 \| value at +0x1E8634 \| value at +0x1E8630 \|
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_EVENT_FLAG_SLOT_MATRIX_20261011_0236.md 行 15](../../research/recovered/rea_legacy1/reports/REA_EVENT_FLAG_SLOT_MATRIX_20261011_0236.md?plain=1#L15-L15) — \| 0 \| 1 \| value at +0x1E8630 \| value at +0x1E8634 \|
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+<a id="field-1e8638"></a>
+## at + 0x1E8638
+
+- [research/recovered/rea_legacy1/reports/REA_EVENT_FLAG_SLOT_MATRIX_20261011_0236.md 行 13](../../research/recovered/rea_legacy1/reports/REA_EVENT_FLAG_SLOT_MATRIX_20261011_0236.md?plain=1#L13-L13) — \| 0 \| 0 \| value at +0x1E8634 \| value at +0x1E8638 \|
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

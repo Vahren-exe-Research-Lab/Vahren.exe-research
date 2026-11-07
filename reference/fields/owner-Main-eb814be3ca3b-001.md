@@ -10,6 +10,9 @@
 - [research/recovered/b_batch3/T013_GAMEMANAGER_GLOBAL_BACKLINKS_NATIVE_20261027_12H.md 行 11](../../research/recovered/b_batch3/T013_GAMEMANAGER_GLOBAL_BACKLINKS_NATIVE_20261027_12H.md?plain=1#L11-L11) — [DEDUP] 0x4B79D6→0x48A5B0はB旧HANDOFFに一度CALL graphの言及あり（新規CALL単独として計数0）。旧11H Main+0xC、09H pending→tick、10H effect lifespanは再計数0。今回の差分は0x555E35の具体Main globalと 0x4B
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+- [research/recovered/tests_batch5/T020_T013_BACKLINK_NONUNIQUE_AUDIT_20261027_12H.md 行 4](../../research/recovered/tests_batch5/T020_T013_BACKLINK_NONUNIQUE_AUDIT_20261027_12H.md?plain=1#L4-L4) — [BASELINE] 11H Eテストは M_register=[H+4]+0xC、M_tick=Main+0xC なので [H+4]=Main を必要条件とした。これは登録元HがUnit様S+0xC由来であることや同じruntime instanceの証明ではない。
+  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
+
 <a id="field-504"></a>
 ## Main + 0x504
 

@@ -1,0 +1,14 @@
+# REA-20261015-1040-TICK-POSTCALL-TIMER-ORDER-01｜57AAFD以降のtimer ladderと副作用順序
+- [OWNER/REQUEST/CLASS] REA独立解析 / WRQ-20261013-REA-DEATH / T012主体、T013/T010参照。既存保存x86の新規crosswalkのみ。STATIC-DERIVED、callee帰還とゲーム実機到達はVERIFY。新規Ghidra 0、再解析0。
+- [SOURCE] exe/T012_STATUS_CORE_DUMP.txt lines 196-246付近（VA 0x57AAF8..0x57AB91）と既存REA-20261015-0940 / SOURCE_RECOVERY_DAMAGE_STATUS_20261011 ND-DETACH。現Work dev_lab/src/hakushin_compat/native_unit_tick.pyはread-only。approved SHA E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187を10:40 JST Localで再確認。
+- [ENTRY/RETURN] 0x57AAF8 CALL 0x57E180、正常帰還後の次PCは0x57AAFD。4E1950の副作用・正常帰還は別VERIFY。0x57AA00へrestartすると事前の+1E52C/+1E530/+1E534等を重複更新し得る（前回確認事項を再計上しない）。
+- [NEW ORDER A] 0x57AAFD..57AB08: Unit+1E55Cは>0時だけdecrement。次に0x57AB0E..57AB22: Unit+1E4F8は>0時だけdecrement、ちょうど0になった時だけ0x57AB22 CALL 0x57B380（stack PUSH Unit）。0以下で開始した場合はこのcallを起こさない。
+- [NEW ORDER B] 0x57AB27..57AB32: Unit+1E518は>0ならdecrement。次に0x57AB38..57AB68: Unit+185F4が>0ならdecrement、ちょうど0になった時に、Unit+1867C==0かつUnit+8C==0であれば0x57AB5D LEA Unit+6CC→0x57AB63 CALL 0x41E160。正常帰還した場合だけ0x57AB68でUnit+185F4=0を再storeする。
+- [CALLER DISTINCTION] 0x41E160はND-DETACH既存契約ではowner子window recordの最初の一致をinactive化・末尾交換し、条件付きwindow cleanup 4C5CC0へ進む。今回のtick caller 0x57AB63の戻り先は0x57AB68であり、死亡graph側の同helperを含む他callerのPCと混同しない。4C5CC0などの正常帰還は依然VERIFY。
+- [AFTER WINDOW] 0x57AB72でUnit+238を検査、非0時は0x57AB81/0x57AB8Cで2回CALL 0x5A8040。0x57AB91で+186D4特殊値0x80000008を比較し、異なれば+53C increment→0x5795E0→返AL非0時0x57B36E早期復帰。関連calleeの意味/returnは未解明。
+- [NEW PARTIAL-ORDER CONTRACT] 同tickに+1E4F8=1かつ+185F4=1の場合、57B380が必ず41E160より前のcallsite（ただし前段57E180正常帰還・合法継続・57B380正常帰還が条件）。57B380途中中断時は+1E518/+185F4を実行済み扱いしない。41E160途中中断なら57AB68以降を実行済み扱いしない。resumeは各calleeの本当のreturn PCから行い、57AA00再入で二重処理しない。
+- [WORK READ-ONLY] advance_unit_tickは4 timerの順序を持ち、57B380をValueError('57B380 expiry callback VERIFY')で停止、41E160の未完了はwindow_registry.pending/next_vaを保持する既存design。前者はstaged deepcopy未commitのため原作部分commitを厳密再現した証拠ではない。完成・バグ断定ではなく未実装境界の追跡条件。
+- [GOLDEN/TEST NOT RUN] +1E4F8/+185F4を各0/1/2、disabled/normal-static discriminatorを変え、callback順、前段counter、child registry、+1E518・overlay、翌tickを同一Unit identityでtrace。57B380/41E160の正常帰還/外側Task callback復帰を別receiptで確認。旧EXE実機golden PASS0、新旧strict MATCH0。
+- [STATUS] 保存済21runとsync_20261011T153958076ZはWave1～5 64/64静的VERIFIED（Wave5 16/16）。今回増0、P0 29/29・P1 35/35。Wave6正式0/16、候補P0 5/P1 11、正式未着手16・候補既往拒否4/未試行12、関数結果VERIFY0。最新読取MASTER cp151・研究DONE9/34（IN_PROGRESS21/VERIFY4）。ゲーム再実装率は測定していない。
+- [PREFLIGHT/LIMIT] 2026-10-15T10:40:15+09:00 Local CPU84% / 空きRAM9.94GiB / Java/Ghidra 0 / active.lock無 / approved copy SHA一致。高CPU負荷のためrun_decompile.ps1非実行、新規Ghidra実行0秒。単一MCP・最大4関数・Ghidra9e5ms/request9.6e5ms不変更。QUEUE/PROGRESS rename EPERM及びREA現pin6.4.0対保存run6.1.0は未解決。
+- [NEXT/NO TOUCH] 優先：保存済57B380本文・0x41E160正常returnと57AAFD後段のcaller連鎖の精密化。0x4E1950実体と元Task callbackの正常帰還はVERIFY。既拒否0x5710C0..571500/REA抽出/既拒否Wave6を再試行せず、原本ZIP/EXE、MASTER、A-E、T018、Work、WRQ、Git/push、MCP/automation不変更。

@@ -16,6 +16,18 @@
 - [research/recovered/b_batch3/B_T012_RENDER_ORDER_ROUTE_OFFLINE_20261022_1912.md 行 35](../../research/recovered/b_batch3/B_T012_RENDER_ORDER_ROUTE_OFFLINE_20261022_1912.md?plain=1#L35-L35) — `0x004C4850`は、対象のslot+0x48が0である場合だけslot+0x1Cを呼び出し、頂点バッファ候補へ出力する。Missile / SimpleMissile vslot+0x1C はどちらも`0x0054D480`（既存Ghidra本文には頂点座標計算が存在）である。つまり **`+0x48=0`は非
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0933_T014_EMPTY_SHEET_VSLOT20_AUDIT.md 行 82](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0933_T014_EMPTY_SHEET_VSLOT20_AUDIT.md?plain=1#L82-L82) — 0x00543428  call eax              ; vslot +0x1C
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+<a id="field-20"></a>
+## vslot + 0x20
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0647_T014_TIMING_VSLOT20_AUDIT.md 行 1](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0647_T014_TIMING_VSLOT20_AUDIT.md?plain=1#L1-L1) — # 迫真戦記 ver0.67｜REA T014 オフライン静的監査：GameManager vslot+0x20 と速度設定の共通フィールド
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0933_T014_EMPTY_SHEET_VSLOT20_AUDIT.md 行 36](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0933_T014_EMPTY_SHEET_VSLOT20_AUDIT.md?plain=1#L36-L36) — 0x004C26B8  mov eax,[edx+0x20]  ; vslot +0x20
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
 <a id="field-48"></a>
 ## vslot + 0x48
 

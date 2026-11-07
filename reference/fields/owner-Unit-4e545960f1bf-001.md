@@ -115,6 +115,15 @@
 - [research/recovered/b_batch11/data/T028_RETREAT_MODE1_CASCADE_DTOR_NATIVE_20261030_06H.md 行 23](../../research/recovered/b_batch11/data/T028_RETREAT_MODE1_CASCADE_DTOR_NATIVE_20261030_06H.md?plain=1#L23-L23) — - 次=0x467DE0のowner+0x1A4戻り副作用、0x463590で第2引数とvector候補が同一になる条件、mode1後0x5AC5ECのcleanup、Unit+0x75/+0x77設定元、T011/T012/T013/T024のP0。既拒否0x5710C0..0x571500等は再試行しない。
   制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
 
+- [research/recovered/tests_batch5/T020_E_T028_POSTRET_BUFFER_FREE_ACCEPTANCE_20261030_07H.md 行 11](../../research/recovered/tests_batch5/T020_E_T028_POSTRET_BUFFER_FREE_ACCEPTANCE_20261030_07H.md?plain=1#L11-L11) — 早期mode1: 0x5AC3AF Unit+0x77==0 かつ 0x5AC3B5 Unit+0x75==0 の局所gate→0x5AC3B9 JE0x5AC5E3→0x5AC5E7 CALL0x598450(mode1)。これは05/06H既知・二重計上しない。
+  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
+
+<a id="field-77"></a>
+## Unit + 0x77
+
+- [research/recovered/tests_batch5/T020_E_T028_POSTRET_BUFFER_FREE_ACCEPTANCE_20261030_07H.md 行 11](../../research/recovered/tests_batch5/T020_E_T028_POSTRET_BUFFER_FREE_ACCEPTANCE_20261030_07H.md?plain=1#L11-L11) — 早期mode1: 0x5AC3AF Unit+0x77==0 かつ 0x5AC3B5 Unit+0x75==0 の局所gate→0x5AC3B9 JE0x5AC5E3→0x5AC5E7 CALL0x598450(mode1)。これは05/06H既知・二重計上しない。
+  制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded
+
 <a id="field-7c"></a>
 ## Unit + 0x7C
 
@@ -228,6 +237,12 @@
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1130](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1130-L1130) — \| HP表示 \| itoa(Unit+0xDC) と itoa(Unit+0x90)（0x407300 内）→ 現在HP=Unit+0xDC、最大=Unit+0x90 \| STATIC-HIGH \|
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+- [research/recovered/rea_batch12/reports/REA_20261015_0435_REGEN_SENTINEL_INT32_EDGE.md 行 5](../../research/recovered/rea_batch12/reports/REA_20261015_0435_REGEN_SENTINEL_INT32_EDGE.md?plain=1#L5-L5) — - [EXACT SAVED INSTRUCTIONS] 5783D7 CMP firstArg,0xF4241; 5783E6 MOV [Unit+0x1E568],0; 5783F0 SUB DWORD PTR [Unit+0x90],EAX; 5783F6 CMP DWORD PTR [Unit+0x90],0;
+  制約・訂正　Historical STATIC/SAVED/DERIVED/SYNTHETIC/VERIFY and progress claims only; current curated REF priority; no new native/runtime/READY/Golden validation; linked payloads excluded
+
+- [research/recovered/rea_batch12/reports/REA_20261015_0540_REGEN_SENTINEL_AUX_GATE.md 行 5](../../research/recovered/rea_batch12/reports/REA_20261015_0540_REGEN_SENTINEL_AUX_GATE.md?plain=1#L5-L5) — - [SENTINEL VS ORDINARY] 0x5783D7 cmp amount,0xF4241（1,000,001）。一致時0x5783E6は[Unit+0x1E568]=0、非一致時0x5783DEは[Unit+0x1E568]-=amount（signed32 wrap）。両経路は0x5783F0の[Un
+  制約・訂正　Historical STATIC/SAVED/DERIVED/SYNTHETIC/VERIFY and progress claims only; current curated REF priority; no new native/runtime/READY/Golden validation; linked payloads excluded
 
 <a id="field-94"></a>
 ## Unit + 0x94
@@ -360,23 +375,5 @@
 
 - [research/recovered/rea_batch10/reports/REA_20261020_0035_T013_T031_STEALTH_RNG_CARDINALITY_QC.md 行 12](../../research/recovered/rea_batch10/reports/REA_20261020_0035_T013_T031_STEALTH_RNG_CARDINALITY_QC.md?plain=1#L12-L12) — - [COMBINED KNOWN DIRECT CALL COUNT] C=counterReached,T=(cachedTarget==0),N=(signed Unit+0xC8<0),S=(byte Unit+0x137!=0)。R_parent=C?(1+int(T&&N)+int(S&&N)):0（前回Q
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
-
-<a id="field-cc"></a>
-## Unit + 0xCC
-
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3178](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3178-L3178) — \| R2 混乱による外れ \| T0 \| Unit+0xCC<0 のときだけ \| 判定値 < DAT_0065bd60 なら標的点を乱数でずらし、R3 を飛ばす \| Rng_RangeInclusive 1回。外れたらさらに rand() 1回 \| vf31 0x57E79D/0x57E7FF。フィールド名は VERIF
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
-
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3266](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3266-L3266) — - Unit+0xCC / +0xC8 の正式名と閾値 DAT_0065bd60 / 0065bd64。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
-
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3293](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3293-L3293) — 5. Unit+0xCC / +0xC8、DAT_0065bd60 / 64、0x57BE30、対象+0x66。いずれも保存済み B / REA の該当 VA が必要。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
-
-<a id="field-d0"></a>
-## Unit + 0xD0
-
-- [research/recovered/b_batch4/data/B_T012_T024_VOICE_EXPIRY_ROUTING_OFFLINE_20261022_1210.md 行 15](../../research/recovered/b_batch4/data/B_T012_T024_VOICE_EXPIRY_ROUTING_OFFLINE_20261022_1210.md?plain=1#L15-L15) — 3. `FUN_0057B380` の外側の入場条件は単純な無条件実行ではない。少なくとも `Unit+0x1867E == 0`、32-bit符号付き `Unit+0xC0 >=0`、`Unit+0xD0 >=0` が必要で、さらに `+0x8C!=0`、`+0x1F8==0`、`+0x1F9!=0`、`+0x186
-  制約・訂正　Historical authored claims only; current/catalog SHA match; linked evidence not included or read; no new native/runtime/Golden/READY validation; REF and later corrections take precedence
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

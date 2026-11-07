@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-c"></a>
+## receiver + 0xC
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0647_T014_TIMING_VSLOT20_AUDIT.md 行 53](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0647_T014_TIMING_VSLOT20_AUDIT.md?plain=1#L53-L53) — `0x4C21F0`側は `0x4C2203 MOV [ECX+0x74],EAX`、`0x4C222C MOV [ECX+0x78],EDX`。従って呼出元が用意した **ECX=receiver+0x0C** を代入すると、実際の更新先は `receiver+0x80` と `receiver+0x84`。前節の2
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
 <a id="field-10"></a>
 ## receiver + 0x10
 
@@ -12,6 +18,15 @@
 
 - [research/recovered/rea_batch2/reports/REA_20261104_05H_P0_IOS_FLAGS_EXCEPTION_GATE_STATIC.md 行 11](../../research/recovered/rea_batch2/reports/REA_20261104_05H_P0_IOS_FLAGS_EXCEPTION_GATE_STATIC.md?plain=1#L11-L11) — 1. V9 function range `0x00426E00..0x00426EF5` (246 bytes); direct PE bytes SHA256 `7E2C7FE5AEF2A92D59A5A78B81D14825E58AB50EFEE9869DE7D71E7C56529080`. At `0x426E
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
+
+<a id="field-20"></a>
+## receiver + 0x20
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0545_T014_LATCH_LIFECYCLE_AUDIT.md 行 50](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0545_T014_LATCH_LIFECYCLE_AUDIT.md?plain=1#L50-L50) — - `0x513C82`は`+0x1EF148 != 0`、`[receiver+0x20]==0`かつ`+0x1EF150==0`という**3つの条件**を満たす場合だけ続く。
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0647_T014_TIMING_VSLOT20_AUDIT.md 行 41](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0647_T014_TIMING_VSLOT20_AUDIT.md?plain=1#L41-L41) — `0x513C60`ではグローバル `0x67B313!=0`、`receiver+0x1EF148!=0`、`[receiver+0x20]==0`、`receiver+0x1EF150==0`の4条件で早期RETを回避する。これらの条件自体の認識は05:45の旧成果であり二重計上しない。
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
 
 <a id="field-38"></a>
 ## receiver + 0x38
@@ -28,10 +43,46 @@
 - [research/recovered/rea_batch2/reports/REA_20261103_23H_P0_STREAMBUF_NESTED_PRODUCER_STATIC.md 行 9](../../research/recovered/rea_batch2/reports/REA_20261103_23H_P0_STREAMBUF_NESTED_PRODUCER_STATIC.md?plain=1#L9-L9) — - Link to 22H cleanup: `0x4296E5` reads `[receiver+0x38]` into EBX; when non-null reads `[EBX]` to EDI, decrements guarded `[EDI+4]`, then conditionally `0x4297
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
 
+<a id="field-74"></a>
+## receiver + 0x74
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0836_T014_PLAYER_GAMEWINDOW_OWNERCHAIN_AUDIT.md 行 65](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0836_T014_PLAYER_GAMEWINDOW_OWNERCHAIN_AUDIT.md?plain=1#L65-L65) — 0x004C21F0: [receiver+0x74] / [receiver+0x78] に速度・間隔を格納
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+<a id="field-78"></a>
+## receiver + 0x78
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0836_T014_PLAYER_GAMEWINDOW_OWNERCHAIN_AUDIT.md 行 65](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0836_T014_PLAYER_GAMEWINDOW_OWNERCHAIN_AUDIT.md?plain=1#L65-L65) — 0x004C21F0: [receiver+0x74] / [receiver+0x78] に速度・間隔を格納
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+<a id="field-80"></a>
+## receiver + 0x80
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0647_T014_TIMING_VSLOT20_AUDIT.md 行 53](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0647_T014_TIMING_VSLOT20_AUDIT.md?plain=1#L53-L53) — `0x4C21F0`側は `0x4C2203 MOV [ECX+0x74],EAX`、`0x4C222C MOV [ECX+0x78],EDX`。従って呼出元が用意した **ECX=receiver+0x0C** を代入すると、実際の更新先は `receiver+0x80` と `receiver+0x84`。前節の2
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+<a id="field-84"></a>
+## receiver + 0x84
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0647_T014_TIMING_VSLOT20_AUDIT.md 行 53](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0647_T014_TIMING_VSLOT20_AUDIT.md?plain=1#L53-L53) — `0x4C21F0`側は `0x4C2203 MOV [ECX+0x74],EAX`、`0x4C222C MOV [ECX+0x78],EDX`。従って呼出元が用意した **ECX=receiver+0x0C** を代入すると、実際の更新先は `receiver+0x80` と `receiver+0x84`。前節の2
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
 <a id="field-260"></a>
 ## receiver + 0x260
 
 - [research/recovered/b_batch11/data/T028_DUAL_VECTOR_ALFLAG_AND_DRAIN_NATIVE_V3_20261029_05H.md 行 12](../../research/recovered/b_batch11/data/T028_DUAL_VECTOR_ALFLAG_AND_DRAIN_NATIVE_V3_20261029_05H.md?plain=1#L12-L12) — - 04Hの二系統→0x5AA6E0 CALL先とspot_fire経路は既知で重複加算しない。新規は呼出時のAL=1/0差分、receiver+0x260、native保存位置+0x8C、AL依存追加処理。どちらが「火」か、+0x5A9CC0の実効果、対象object/vtable実体はVERIFY。
   制約・訂正　Complete authored historical body; no new native/runtime validation; linked evidence not opened or included; current repository REF and dated corrections take precedence.
+
+<a id="field-1ef148"></a>
+## receiver + 0x1EF148
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0647_T014_TIMING_VSLOT20_AUDIT.md 行 41](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0647_T014_TIMING_VSLOT20_AUDIT.md?plain=1#L41-L41) — `0x513C60`ではグローバル `0x67B313!=0`、`receiver+0x1EF148!=0`、`[receiver+0x20]==0`、`receiver+0x1EF150==0`の4条件で早期RETを回避する。これらの条件自体の認識は05:45の旧成果であり二重計上しない。
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+<a id="field-1ef150"></a>
+## receiver + 0x1EF150
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0647_T014_TIMING_VSLOT20_AUDIT.md 行 41](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0647_T014_TIMING_VSLOT20_AUDIT.md?plain=1#L41-L41) — `0x513C60`ではグローバル `0x67B313!=0`、`receiver+0x1EF148!=0`、`[receiver+0x20]==0`、`receiver+0x1EF150==0`の4条件で早期RETを回避する。これらの条件自体の認識は05:45の旧成果であり二重計上しない。
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

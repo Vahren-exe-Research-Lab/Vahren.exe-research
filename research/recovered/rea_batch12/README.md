@@ -1,0 +1,29 @@
+# REA batch12 bounded report recovery
+
+Checked 2026-11-05. Repository base `214fec6` is coordinator supplied and was not independently queried through Git. Exactly 16 literal approved Markdown paths from `hakushin-rea-batch12-approved.tsv` were reviewed within their complete authored bounds: 69,708 original bytes. Local Desktop Commander returned HTTP429; explicitly authorized built-in local fallback was used. Remote tools used: zero.
+
+Recovered: **14 complete byte-identical reports, 60,583 bytes**. Privacy-only derivatives: 0; baseline aliases: 0; within-batch aliases: 0; differing-body filename variants: 0. **Two whole dependent composites are deferred**, with blank destination and destination hash in the exact nine-column root-schema REPORT_LEDGER.tsv. There are 16 distinct historical research IDs. No independent-looking fragment of a held composite was copied or rewritten.
+
+All approved byte sizes match; all 16 paths are absent from the old catalog snapshot. Current hashes, byte sizes and timestamps supplement that snapshot; missing approved hashes remain NOT_SUPPLIED. Input receipts identify the exact selection, source manifest, source catalog and root recovery ledger snapshots. Baseline hash/name comparisons used only those metadata tables; no baseline report body was opened. Prior batch11 documentation and receipt schemas were consulted. No original, shared/root file, product code, synced project file or Git state was written.
+
+## Whole-body deferrals and boundary interpretation
+
+- REA_20261015_0732_AUX_TIMER_STICKY_ZERO.md includes substantive dual-caller postreturn comparison and names the historical0645 DualCall write refusal. The connection to that refused owner-write payload remains unresolved; the entire composite is held. This is not a claim that native acquisition of4E1950 was refused.
+- REA_20261015_0940_UNIT_TICK_CALLBACK_ORDER.md names historical0833 result-save refusal while presenting a tick-entry/timer composite. Its owner-write scope/dependency remains unresolved; the entire body is held. No partial or privacy-only derivative releases it.
+
+The1040/1140 reports retain only caller ordering and conditional4C5CC0 return VERIFY references; they recover no4C5CC0 helper internals or held payload. A callsite/reference does not authorize the helper body. The0034 report's4C28D0/4C5CC0 no-retry history remains opaque. All other listed boundaries remain metadata-only:5710C0..571500,58021E..580340,5769B0,downstream5767B0,wholeFUN00580280,rsc3/rsc4tables,T029postbattlecastle,4C28D0activelist,4BC9C0ArmyChip,429620,5BC860,547FC0saved-prefix and579290owner-writepayload. Acquisition refusals and owner-write refusals are distinct; no old refusal was bypassed and no NEXT instruction executed.
+
+Independent status/preflight/Wave6/exporter/dual-string refusal references are historical no-retry metadata. The1945 report's four-blocked/twelve-untried Wave6 candidate claim remains a dated author claim, including the prior batch11 caution that an older1034 appended correction did not substantiate four blocked candidates. No historical audit, count or refusal was newly reconciled. Formal registration0/16 and saved Wave1-5 64/64 do not provide new native validation.
+
+## Historical qualifications
+
+Current curated REF documents retain priority. STATIC,SAVED X86,DERIVED,SYNTHETIC,VERIFY and progress metrics are dated author claims. There is no new Ghidra evidence, formal VERIFIED increase, runtime observation, READY promotion, original EXE Golden PASS, strict MATCH or reimplementation-rate measurement. Proposed acceptance cases remain DESIGNED/NOT RUN. Linked native, scripts, JSON, logs, EXE, SQLite, HANDOFF and archive payloads were neither opened nor executed. No REA/Ghidra/game, historical audit or Git command ran.
+
+- Timer caller PCs and callee return PCs are distinct. Conditional normal returns are prerequisites; early-entry/restart is not completion. Existing Work deepcopy/commit statements are historical observations, not rerun tests or newly proved defects.
+- U+1E520 DEC32 wraps; missing57B7F4..FF predicates remain VERIFY. Its mutation/advance routes must not be merged with the separate positive-only U+1E540 loop. Xref presence does not prove unconditional helper execution, three inserts or RNG consumption.
+- The0240 virtual+70 ABI observations use push order; they do not prove callee cleanup, live target or death graph completion. The0345 appended pre-dispatch latch/call qualification narrows its earlier negative-HP chain. Its optional raw-vtable probe failed before file open; no pointer bytes were newly acquired.
+- The0435 integer vectors are synthetic signed32 derivations with legal reachability unresolved. The0540 sentinel path clears auxiliary state before its conditional lethal helper test; ordinary-amount sign and overflow can differ. No helper normal return is inferred.
+- The1640 live Unit field gate follows virtual+58 return. The1734 equality helper requires comparator success and equal lengths, while actual comparator byte/case rules and literal bytes remain VERIFY. Neither report supplies the blocked dual-string payload or downstream helper effects.
+- The0034 disabled flag, task unregister, object-map lifetime and outer callback return are separate conditions. Its early map deletion bug remains unproved; its preflight ParserError is not successful measurement.
+
+SELECTION_RECEIPTS.tsv covers all literal inputs. IDENTITY_RECEIPTS.tsv preserves historical identities and collision checks. TRANSFORM_RECEIPTS.tsv proves full byte identity and original line endings for14 retained reports; no trimming, normalization, rewrite or personal-path redaction occurred. CURRENT_SOURCE_METADATA.tsv is a current supplement. DEFERRED.tsv identifies both held source_path values plus generic blank-source boundary rows. VERIFICATION.md records the post-write checks.

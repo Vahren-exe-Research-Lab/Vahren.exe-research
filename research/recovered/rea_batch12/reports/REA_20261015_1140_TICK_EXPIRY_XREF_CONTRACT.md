@@ -1,0 +1,14 @@
+# REA-20261015-1140-TICK-EXPIRY-XREF-CONTRACT-01｜Unit周期期限切れcallbackの既存Ghidra xrefs
+- [OWNER/REQUEST] 独立REA / WRQ-20261013-REA-DEATH / T012 主、T013/T031 参照。独立の保存済み静的証拠crosswalkのみ。既存T012アセンブリ呼出・以前のREA-20261015-1040とは重複計上しない。
+- [TARGET/SHA] 対象は承認済み rea_lab/targets/hakushin067_Vahren.exe のみ。2026-10-15 11時台 JST Local preflight SHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187 一致。原本EXE/ZIP未実行・未変更。
+- [CALLSITE] exe/T012_ACTION_KNOCK_ORDER.txt lines 845前後と exe/T012_STATUS_CORE_DUMP.txt の0x57AB14..0x57AB27を照合。Unit+0x1E4F8が正で1減じた結果が0になったときのみ 0x57AB21 PUSH EBP → 0x57AB22 CALL 0x57B380。正常帰還した場合の再開位置は 0x57AB27（Unit+0x1E518更新）であり、次の+0x185F4 window処理より前。
+- [XREF-RNG] 保存run 20261009T194358486Z / 40ED80_procedure_callers.json: Ghidra12.1.4 が 0x57B380 を 0x40ED80 のresolved callers 37件の1件として報告。evidence_id=ev_fcaab3749388b92aabc79016efbbda7d48d5fb29ace7cc6bfc5d46d2dca4f6f3。0x40ED80は既存T031の乱数範囲選択helper（既存VERIFIED）。
+- [XREF-ATTR] 保存run 20261009T203528568Z / 4C1200_procedure_callers.json: 同じ 0x57B380 を 0x4C1200 のresolved callers 92件の1件として報告。evidence_id=ev_00c4f526dbb29cda9775fdebaca5010097da35a3f9661301d7a393ff98efe6b9。0x4C1200は既存T012の属性/耐性キー探索helper（既存VERIFIED）。両runのsubject source SHAは上記と一致。
+- [NEW RECONCILIATION] タイマー0到達だけで単純なtimer resetとは限らず、0x57B380 body内には乱数range helper・属性探索helperへの解決済み参照がある。したがって同tickの副作用評価/RNG位置は0x57B380完了境界より後へ勝手に進めない。ただし各helperを必ず呼ぶという証拠ではない。
+- [BODY LIMIT] 現在確認した保存済みT012_ACTION_KNOCK_ORDER.txtの0x57B380本文は0x57B380..0x57B39Fの不完全prefix（途中.byte解釈あり）。57B380自身のinfo/pseudo/assembly/callers/callees5方法、確実な関数境界、両helperの命令VA/分岐条件/呼出順/返値、実call/return、RNG消費・耐性実意味はすべてVERIFY。今回0x57B380をVERIFIEDへ昇格しない。
+- [POSTCALL CONTRACT] 呼出0x57AB22中に停止した場合+0x1E518・+0x185F4は未実施扱い、ただし0x57AB19のtimer減算は既に実施済み。Unit更新入口0x57AA00へ巻き戻した成功扱いは禁止。実帰還確認までは57AB27を予定return PCとしてのみ保持。
+- [GOLDEN/NOT RUN] Unit+1E4F8を1/2/0、+1E518と+185F4を1/0、同Unit identity・同SAVE/seedでold/newのcallback発火/行動/HP/RNG可視結果を分ける。内部乱数消費や0x4C1200は合法旧観測で証明できなければINELIGIBLE。旧EXE実機golden PASS0、strict MATCH0。
+- [STATUS] Wave1～5は保存済みRUN_RESULT+progress_sync_20261011T153958076Z.jsonで64/64 VERIFIED（Wave5 16/16）。今回増0。P0 29/29・P1 35/35。Wave6正式0/16、候補P0 5/P1 11、正式未着手16、候補未試行12・既往安全拒否4、Wave6結果VERIFY0。最新MASTER cp151 / 研究DONE9/34・IN_PROGRESS21/VERIFY4。ゲーム再実装率は測定していない。
+- [PC/LIMIT] Local preflight CPU45%、空きRAM14.07GiB、Java/Ghidra0、active.lock無、SHA一致、検査2.65秒。新規Ghidra実行0秒、軽量調査全体未計測。QUEUE/PROGRESS rename EPERMによりQUEUE Wave5 TODO表示と古いPROGRESS15/16はSTALE、同期ログ64/64が優先。REA現pin6.4.0対成功run6.1.0の相違・Wave6未登録のためrun_decompile.ps1非実行。
+- [NEXT] 保存済証拠だけで57B380の間接helper分岐/順序を追加照合できるか検討（今回は完整Ghidra5点無し）。0x41E160→4C5CC0の正常returnとUnit外側Task継続もVERIFY。新規正式Wave登録と安全条件が解決するまで重量runは開始しない。既拒否0x5710C0..571500/REA抽出/Wave6拒否操作を別shell/path/toolで迂回しない。
+- [NO TOUCH] 他A～Eレーン、MASTER_LEDGER、T018、Work/dev製品、共有WRQ、Git/push/公開、原本、MCP設定、既存automationを変更しない。今回新規Ghidra evidence ID=0、既存2件のevidence IDを再使用しただけ。

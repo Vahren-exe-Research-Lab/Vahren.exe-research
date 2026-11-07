@@ -1,0 +1,12 @@
+# REA-20261015-1340-TICK-EXPIRY-MAP-INSERT-XREF-01｜0x57B380保存済み中間呼出の照合
+- [OWNER] REA独立所有 / WRQ-20261013-REA-DEATH / T012主、T005/T013/T031参照。前回REA_20261015_1238の早期return確認からの新規crosswalk。原本/他owner書込なし。
+- [SOURCE] 保存済みexe/T005_REGISTRY_INSERT_CALLERS.txt 8130-8178行、exe/T012_STATUS_CORE_DUMP.txt 1175-1215行、data/T005_FORMAL_GRAMMAR.md 143-148行。すべてread-only。
+- [GHIDRA] 0x463280 callers evidence ev_cd55b9172146b1b73b06b54bbd571550221ca05419457de972262d896ecbf0b0（run 20261009T215200079Z、source SHA E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187）は呼出元0x57b380を明示。
+- [DIRECT CALLS] 保存済み原作命令: 0x57B559 CALL 0x463280 / 0x57B779 CALL 0x463280 / 0x57B7D8 CALL 0x463280。すべて既知0x57B380内部。0x57B559後は0x57B56B JMP 0x57B82Fもあるため、3回全てが無条件に実行されるという意味ではない。
+- [MAP SEMANTICS] T005所有資料は0x463280をRB-tree insert-if-absent（重複keyは先勝ち）と静的確認。ただし0x57B380の各callsiteが対象にするkey/container、重複時効果や実分岐はVERIFY。毎tickの3件新規登録とは断定しない。
+- [LOOP] 0x57B7DDでUnit+0x1E520を読み、0x57B7E3でhead、0x57B7E9でhead==sentinelなら0x57B822。非空側0x57B7F0でDEC DWORD [EAX+0x28]。別保存T012には0x57B800以降の0x510030/0x405440、0x57B81Aの同sentinel比較→0x57B7F0再分岐。node+28減算を含む走査が存在するとの局所静的照合。node意味、反復回数、分岐の副作用はVERIFY。
+- [KNOWN FIVE] 0x463280は既存Ghidra5点VERIFIED: info ev_07594e48bf10c7d3f1b65f21e2f1917b2e74e083f54f09e9659022e04f70ace9; pseudo ev_ee41eff345d68943cc2f8abf1bc46b58fc5d3a09b4a42f7a22b9925fe921e17f; asm ev_88bd0a7af01cc8756c1dc8c48f37e805a052303f37d706d5f50439825fdc7f97; callers上記; callees ev_fc25c4b7deaa83dad01c4ceddecfb21b3a21b01861f6bb2a68b03569187ba066。0x57B380本体は5点未取得でVERIFY。
+- [PROGRESS] Wave1-5=64/64、Wave5=16/16、今回新規VERIFIED0、P0=29/29、P1=35/35（既存21run＋20261011T153958076Z sync）。Wave6正式0/16、暫定候補P0=5/P1=11、正式未着手16/結果VERIFY0、候補の既往拒否4/未試行12。QUEUE/PROGRESS rename EPERM旧表示。
+- [MASTER] 最新checkpoint151、研究DONE9/34・IN_PROGRESS21/VERIFY4、旧EXE実機golden PASS0、新旧strict MATCH0。ゲーム再実装率は測定していない。
+- [PC/LIMIT] 2026-10-15 13:37:34 JST Local CPU2%、空きRAM17.10GiB、Java/Ghidraなし、active.lockなし、承認済コピーSHA一致、preflight1.83秒。新規Ghidra0秒/総時間未計測。Wave6未登録/rename EPERM/runner現6.4.0対保存成功6.1.0で重量runner非起動。単一MCP・最大4件/回・Ghidra900000ms/request960000ms。
+- [NEXT] 保存済み中間57B420..57B540および57B79B..57B7C5の有無、key/containerと分岐相互排他、0x1E520要素の寿命を精査。正常死亡returnは引き続きVERIFY。安全拒否0x5710C0..571500/拒否済REAテキスト抽出再試行なし、原本/他レーン/MASTER/T018/dev/Work/WRQ/Git/MCP/automationは変更しない。

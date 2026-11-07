@@ -4,6 +4,18 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-c"></a>
+## GameManager + 0xC
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0933_T014_EMPTY_SHEET_VSLOT20_AUDIT.md 行 47](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0933_T014_EMPTY_SHEET_VSLOT20_AUDIT.md?plain=1#L47-L47) — 0x004B996B  lea edi,[esi+0x0C]   ; S = GameManager + 0x0C
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+<a id="field-88"></a>
+## GameManager + 0x88
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0836_T014_PLAYER_GAMEWINDOW_OWNERCHAIN_AUDIT.md 行 31](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0836_T014_PLAYER_GAMEWINDOW_OWNERCHAIN_AUDIT.md?plain=1#L31-L31) — 5. `0x0051E388 MOV EAX,[EDI+4]`→`0x0051E38B LEA ECX,[EAX+0x88]`→**`0x0051E39E MOV [EDI+0x188],ECX`**。よって確認した正常構築経路で**`[Player+0x188]=GameManager+0x88`**。
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
 <a id="field-504"></a>
 ## GameManager + 0x504
 
@@ -15,6 +27,42 @@
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 3836](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3836-L3836) — - **タイトル画面**: base+0x6AD434（GameManager+0x1EF144）は場面番号。0＝タイトル（0x48AD30、'title_name'）、1＝ワールド、2＝戦闘・マップイベント、4＝シナリオ選択、5＝シナリオ開始、6＝ロード、7＝マップテスト。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0434_T014_SHEET_SELECTOR_LATCH_AUDIT.md 行 34](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0434_T014_SHEET_SELECTOR_LATCH_AUDIT.md?plain=1#L34-L34) — ## 3. 増分B：`GameManager+0x1EF144`が8分岐のセレクター
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+<a id="field-1ef148"></a>
+## GameManager + 0x1EF148
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0331_T014_VPTR_LIFECYCLE_FLAGGATE_AUDIT.md 行 6](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0331_T014_VPTR_LIFECYCLE_FLAGGATE_AUDIT.md?plain=1#L6-L6) — - **対象**: `0x00543428`（`0x005433D0`内）、GameManager vtable `0x00638DF0` +`0x1C`、基底vtable `0x00638E1C` +`0x1C`、状態バイト `GameManager+0x1EF148`
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0736_T014_UIOWNER_GATE_ALIAS_AUDIT.md 行 87](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0736_T014_UIOWNER_GATE_ALIAS_AUDIT.md?plain=1#L87-L87) — この件は今後の`GameManager+0x1EF148`のwriter探索にも教訓を与える。ただし前者がこの手法で発見できた事実は後者の書込存在や場所を証明しない。
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0836_T014_PLAYER_GAMEWINDOW_OWNERCHAIN_AUDIT.md 行 100](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0836_T014_PLAYER_GAMEWINDOW_OWNERCHAIN_AUDIT.md?plain=1#L100-L100) — 次のP0：`GameManager+0x1EF148`へのポインタ別名による書込元探索、その後`GameManager` vtable`+0x20`の実行時ディスパッチCALL site、およびPlayer仮想メソッド`0x0051EF80`の具体的な呼出元のXREF/ABI検証。既拒否Wave6・`0x5710C0.
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0933_T014_EMPTY_SHEET_VSLOT20_AUDIT.md 行 108](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0933_T014_EMPTY_SHEET_VSLOT20_AUDIT.md?plain=1#L108-L108) — \| 独立した未解決P0 \| `GameManager+0x1EF148` writer / 呼出時受信者生存性、依然**VERIFY** \|
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0933_T014_EMPTY_SHEET_VSLOT20_AUDIT.md 行 133](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0933_T014_EMPTY_SHEET_VSLOT20_AUDIT.md?plain=1#L133-L133) — **次のP0**：`GameManager+0x1EF148`の別名経由writerとメモリ初期化・ロード時の書換え経路。副次調査は`Player`仮想スロット`+0x0C（0x0051EF80）`の具体的CALL site。今回解決した`0x004C26BB`を未解決として再計上しない。製品EXE、原本ZIP/SAV
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1033_T014_SCRIPTBATTLE_PLAYER_VSLOT0C_AUDIT.md 行 122](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1033_T014_SCRIPTBATTLE_PLAYER_VSLOT0C_AUDIT.md?plain=1#L122-L122) — **P0 / VERIFY**: 呼出元`0x00492890`の後半で`[engine+8]+8+0x38`の代入が何を結び付けるのかを調べ、`0x00564160`等に渡す戦闘移行情報と、実際の戦闘実行ハンドオフを追跡する。同時に、`0x00433B40`真分岐到達条件（RTTI以外のスクリプトキュー条件）と`0x
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md 行 143](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md?plain=1#L143-L143) — 次回P0の優先順：① `0x00564160`から書かれる`0x0067B938`～`0x0067B94C`の**消費先と後続上書き**、② 分岐ゼロ側EDI（`event`/`FUN_00597A20`/フォールバック）の実体と`param_1`センチネル条件、③ NewGameModel+0x38のreaderと解
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+<a id="field-1ef150"></a>
+## GameManager + 0x1EF150
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0545_T014_LATCH_LIFECYCLE_AUDIT.md 行 1](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0545_T014_LATCH_LIFECYCLE_AUDIT.md?plain=1#L1-L1) — # 迫真戦記 ver0.67｜REA T014 局所静的証拠：`GameManager+0x1EF150`の解除経路と遮断先
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0545_T014_LATCH_LIFECYCLE_AUDIT.md 行 58](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0545_T014_LATCH_LIFECYCLE_AUDIT.md?plain=1#L58-L58) — 同一プロセス・同一Sheetインスタンスで、`0x543445`呼出前後の`GameManager+0x1EF150`、どの解除サイトを通ったか、解除前後の`+0x1B8/+0x1E0`、`"change"`callback入口、`0x54396D`による巻戻し、`+0x1EF148`と`+0x1EF144`の値、戦闘
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
 
 <a id="field-1ef4b4"></a>
 ## GameManager + 0x1EF4B4

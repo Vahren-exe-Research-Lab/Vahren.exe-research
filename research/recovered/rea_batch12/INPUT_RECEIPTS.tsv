@@ -1,0 +1,5 @@
+role	input_path	sha256	bytes	interpretation
+approved_selection	hakushin-rea-batch12-approved.tsv	D6F970575A3C0D49CABF4ABC8AEB5493C9E90992DE4F3529410FB1BC1FB3DDFE	1643	Read-only snapshot; blank approved SHA remains NOT_SUPPLIED; measured identity does not imply advance approval
+source_manifest	SOURCE_MANIFEST.tsv	8CC476EB0A1B20F8DED47927237BB85A08E4D1B62B818DCB47F236D13EAD8325	359468	Read-only snapshot; blank approved SHA remains NOT_SUPPLIED; measured identity does not imply advance approval
+source_catalog	RESEARCH_SOURCE_CATALOG.tsv	F14E3BD401A836039F678E9238C6490E2200385EFB0FBB602E62F626EC679CF4	350283	Read-only snapshot; blank approved SHA remains NOT_SUPPLIED; measured identity does not imply advance approval
+root_recovery_ledger	research/recovered/RECOVERY_LEDGER.tsv	A03AC552B3B9E7A38D8DD7867CF736B23E8736603AE32739101FCAB395339450	844260	Read-only snapshot; blank approved SHA remains NOT_SUPPLIED; measured identity does not imply advance approval

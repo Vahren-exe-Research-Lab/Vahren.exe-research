@@ -1,0 +1,15 @@
+# REA-20261015-1945-STATUS-GATE-01｜独立REAの更新前提と作業再開境界
+- OWNER/REQUEST: REA / WRQ-20261013-REA-DEATH。T012/T013最優先。Local Compactのみ。今回の新Ghidra取得なし。
+- SOURCE: 承認済コピー rea_lab/targets/hakushin067_Vahren.exe SHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187。2026-10-15 19:40:54 JSTにGet-FileHash一致。
+- START READ: MASTER_LEDGER、ANALYSIS_LANES_PROTOCOL、REA README/QUEUE/PROGRESS、21保存runs、最新RUN_RESULT、最新sync、既存REA証拠をLocal Compactで照合。
+- MASTER更新: checkpoint154、研究34Task DONE9/IN_PROGRESS21/VERIFY4、E正式READY累計543。REAの解析数とは混算しない。
+- VERIFIED: 最新保存sync logs/progress_sync_20261011T153958076Z.jsonはWave1-5=64/64（Wave5=16/16、P0=29/29、P1=35/35）。今回新規VERIFIED0、新規info/pseudo/assembly/callers/callees evidence ID0。
+- WAVE6: 正式0/16、候補P0=5/P1=11、未登録16、取得結果VERIFY0。うち4候補の既往安全拒否はBLOCKED（0x515750、0x515790、0x5159B0、0x57D180）、未試行12。形式上未登録16を全て未試行と誤記しない。
+- ORIGINAL TEST: 旧未改変EXE実ゲームgolden PASS0、新旧strict MATCH0。ゲーム再実装率は測定していない。
+- KNOWN BLOCKER: syncはqueueUpdate=STALE_RENAME_DENIED、humanReadableProgress=SKIPPED_QUEUE_STALE。QUEUE/PROGRESSの古い表示15/16/TODOを真の解析状態としない。既往rename/ACL回避・lock削除・runner開始をしない。
+- VERSION: 成功runのREA 6.1.0＋Ghidra12.1.4と現在のrunnerのREA6.4.0は別のprovenance。6.4.0での新規解析互換は未検証。
+- PRE-FLIGHT: 2026-10-15 19:40:54 JST CPU35%、空きRAM13.07GiB、Java/Ghidra/REA0、active.lockなし。重い解析0秒、軽量総所要未測定。
+- PREVIOUS RECOVERY: REA-RC-20261015-1840-DUALSTRING-WRITE-01の前回安全拒否は未解決。前回拒否payloadを別名/別path/tool/shellで再保存しない。本メモは別件の当回進捗前提のみ。
+- NEXT: T012/T013の保存済み死亡Task callback正常帰還・既存xrefsを重複せず点検。安全な正規Localサービス読取ハンドル解放とQUEUE同期が復旧し、競合・負荷・権限を確認するまでWave6新規解析は保留。
+- BOUNDARY: 原本ZIP/EXE実行・改変なし。他owner A-E/MASTER/T018/Work/WRQ、Git/push、MCP設定、automation変更なし。単一MCP、4関数/run、Ghidra900000ms、request960000msを維持。
+- WAVE6 ELIGIBILITY DECISION: 2026-10-12暫定16候補には既往安全拒否4VAが混在するため、その16件を無修正で正式登録しない。拒否4件を候補集合から除外し、正規キュー更新が可能になった後、保存済みGhidra xrefs／Task未解明／既存64関数の重複を点検して安全な補充候補を別途選定する。補充先VAは今回未選定、Wave6正式0/16を据置。

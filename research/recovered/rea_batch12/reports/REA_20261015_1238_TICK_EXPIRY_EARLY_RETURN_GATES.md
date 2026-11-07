@@ -1,0 +1,15 @@
+# REA-20261015-1238-TICK-EXPIRY-EARLY-RETURN-GATES-01｜0x57B380保存済み早期returnゲート
+- [OWNER/REQUEST] 独立REA / WRQ-20261013-REA-DEATH / T012主・T013/T031参照。REA_20261015_1140のxref接続後の未記載分岐を精密化。新規バイナリ読取・Ghidra・逆解析実行0。
+- [SOURCE] 保存済x86 exe/T013_1D0_GLOBAL_PROBE.txt lines4802-4829（VA 57B3AD..57B42A）、exe/T012_STATUS_CORE_DUMP.txt lines1207-1215（VA 57B834..57B864）、exe/T012_ACTION_KNOCK_ORDER.txt（VA 57AB19..57AB27）。他レーン原本はread-only。
+- [TARGET] 承認済コピー rea_lab/targets/hakushin067_Vahren.exe SHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187をLocal preflightで確認。
+- [PRECONDITION] 57AB19でUnit+1E4F8を1減らして0に到達すると57AB21 PUSH Unit→57AB22 CALL 57B380。callee最終57B864 RET 4、正常帰還PCは57AB27。期限切れ条件と次PC自体は既知、重複加算しない。
+- [PARENT-GATE] 57B3C2..57B409: Unit byte+8C==0、+1F8!=0、+1F9==0、dword+18684!=2の4条件が全部真の場合だけUnit+1D0 pointerを追加検査。いずれか偽なら57B409へ進み親pointer gateをskipするが、それだけでは関数returnと断定しない。
+- [PARENT-EARLY-RET] 4条件真かつUnit+1D0!=NULLなら、57B3F2で(parent+1E)!=0→57B83D。またparent+1E==0でも57B3FBでUnit+1867D!=0→57B83D。Unit+1D0==NULLは57B40Bへ直行。parent+1Eの実意味はVERIFY。
+- [LATE-EARLY-RET] 57B40BでUnit+1867E!=0→57B83D、57B418でsigned32(Unit+D0)<0→57B83D、57B424でsigned32(Unit+C0)<0→57B83D。3検査は親pointer gateを通過した場合もskipした場合も実施。
+- [EPILOGUE-PROOF] 保存済T012_STATUS_CORE_DUMPの57B83D以降はSEH fs:[0]復元・レジスタ復元・5B6513 cookie検査・57B864 RET 4。従って上述57B83D分岐は早期returnであり、返った場合caller57AB27以降のtimer処理へ続行。途中callee/例外・合法ゲーム到達はVERIFY。
+- [GHI-XREF-LIMIT] 既存40ED80 callers evidence ev_fcaab3749388b92aabc79016efbbda7d48d5fb29ace7cc6bfc5d46d2dca4f6f3、4C1200 callers evidence ev_00c4f526dbb29cda9775fdebaca5010097da35a3f9661301d7a393ff98efe6b9は57B380を関数単位で列挙。両helperの実callsite/順序/RNG消費は未確定。タイマー期限切れだけで常に両helper呼出とは扱わない。
+- [NOVELTY] 今回新規：57B380の4条件parent gate＋後段3条件＋既保存return epilogueとのcrosswalk。既知57AB22条件、57AB27再開、2件のxrefは再計上0。57B380自身は5種類のGhidra出力、確定関数境界、証拠ID未取得なのでVERIFIED禁止（VERIFY）。新規Ghidra evidence ID0。
+- [NEXT/TEST] 保存済みB42A..B800中間欠落、57B83Dへ至らないbranch、helper内部副作用と正常returnを優先。実機goldenは合法Unit+1E4F8=1の条件で+1867Eの0/非0、+D0/+C0 signed負/非負、parent有無を同一SAVE/seed・可視範囲だけ分ける。旧原作実機PASS0、新旧strict MATCH0。
+- [COUNTS] 保存21run＋progress_sync_20261011T153958076ZでW1-5合計64/64 VERIFIED（W5=16/16）、今回増0、P0=29/29、P1=35/35。W6正式0/16・候補P0=5/P1=11、正式未着手16・候補既往拒否4/未試行12・結果VERIFY0。MASTER最新cp151、研究DONE9/34・IN_PROGRESS21/VERIFY4。ゲーム再実装率は測定していない。
+- [PC/LIMIT] 2026-10-15T12:35:56+09:00 Local CPU43%、空きRAM8.59GiB、Java/Ghidra 0、active.lock無し、SHA一致。preflight 3.28秒、新規Ghidra 0秒、軽量調査全体未計測。QUEUE/PROGRESS rename EPERM、REA現runner6.4.0対成功run6.1.0、Wave6正式未登録のため重量runner非起動。単一MCP・最大4件/回・Ghidra900000ms/request960000ms維持。
+- [SAFETY/SCOPE] 禁止/拒否済0x5710C0..571500、REA抽出、W6四候補の別shell/tool/path再提出0。他A-E/MASTER/T018/dev/Work/WRQ/原本ZIP EXE/Git/MCP設定/既存automation変更0。REA所有この新資料のみ作成する。

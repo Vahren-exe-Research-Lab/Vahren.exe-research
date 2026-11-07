@@ -61,6 +61,36 @@
 - [research/recovered/rea_batch8/reports/REA_20261025_20H_P0_OGG_TEARDOWN_THREAD_STATIC.md 行 14](../../research/recovered/rea_batch8/reports/REA_20261025_20H_P0_OGG_TEARDOWN_THREAD_STATIC.md?plain=1#L14-L14) — - 0x004BF2F0～0x004BF32Fは[owner+9]!=0かつ[owner+0xA0]!=NULLを条件とするOgg/stream側経路。stream側+0x44が非0なら0x004BF318のvtable +0x48処理と0x004BF31C→0x00502330を経由。非0・ゼロいずれでも0x004B
   制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
 
+<a id="field-188"></a>
+## owner + 0x188
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0736_T014_UIOWNER_GATE_ALIAS_AUDIT.md 行 32](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0736_T014_UIOWNER_GATE_ALIAS_AUDIT.md?plain=1#L32-L32) — 0x51F02E  MOV ECX,[EDI+0x188]        ; inner = owner+0x188 の指すオブジェクト
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0736_T014_UIOWNER_GATE_ALIAS_AUDIT.md 行 62](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0736_T014_UIOWNER_GATE_ALIAS_AUDIT.md?plain=1#L62-L62) — \| **`0x0067B328`** \| `Window+0x98` \| **`[owner+0x188]`（innerポインタ）** \|
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0736_T014_UIOWNER_GATE_ALIAS_AUDIT.md 行 79](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0736_T014_UIOWNER_GATE_ALIAS_AUDIT.md?plain=1#L79-L79) — 今回、上記`EDX`がこの初期化経路では`[owner+0x188]`に由来することを確定できた。ゆえに対象候補は**`receiver = [[owner+0x188]+4]`**と具体化できる。`0x526B15/0x526B1B`にも同型の読み出しが存在する。
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0736_T014_UIOWNER_GATE_ALIAS_AUDIT.md 行 81](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0736_T014_UIOWNER_GATE_ALIAS_AUDIT.md?plain=1#L81-L81) — 一方、以前別のコンストラクタで確認済みの`0x008BE7F4+4 = 0x008BE2F0`（GameManagerグローバル）という経路が、このownerの`[owner+0x188]`へ必ず代入されるかは**まだ繋がっていない**。今回の静的証拠だけで`receiver == 0x008BE2F0`とは断定しない
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0736_T014_UIOWNER_GATE_ALIAS_AUDIT.md 行 99](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0736_T014_UIOWNER_GATE_ALIAS_AUDIT.md?plain=1#L99-L99) — 次のP0として、`[owner+0x188]`がどの条件で`0x008BE7F4`を指すかを`0x48A5B0`の登録元/`0x51EF80`の受信者作成経路から調べ、次いで`+0x1EF148`の別名writerを探索する。別件の`vtable+0x20`実行時CALL siteもVERIFYとして継続。全関数再抽出
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0736_T014_UIOWNER_GATE_ALIAS_AUDIT.md 行 103](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0736_T014_UIOWNER_GATE_ALIAS_AUDIT.md?plain=1#L103-L103) — Window初期化直前/直後に`[0x67B313]`、`[0x67B328]`、`[0x67B32C]`、`[owner+0x188]`、`[[owner+0x188]+4]`を読取り比較する。さらに候補受信者と`0x008BE2F0`の一致有無を実測し、`+0x1EF148`/`+0x1EF150`/`+0x20`
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0836_T014_PLAYER_GAMEWINDOW_OWNERCHAIN_AUDIT.md 行 5](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0836_T014_PLAYER_GAMEWINDOW_OWNERCHAIN_AUDIT.md?plain=1#L5-L5) — - 対象P0：従前未解決の`[owner+0x188]`の生成元、`0x0051EF80`の仮想呼出し経路、および`0x00513C60`が経由する受信者の所有関係。
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0836_T014_PLAYER_GAMEWINDOW_OWNERCHAIN_AUDIT.md 行 33](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0836_T014_PLAYER_GAMEWINDOW_OWNERCHAIN_AUDIT.md?plain=1#L33-L33) — この事実は前回07:36の`[owner+0x188]`が不明だった箇所を一段解決する。前回のWindow+0x98/+0x9C代入そのものは既知であり、新規実績に加算しない。
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0836_T014_PLAYER_GAMEWINDOW_OWNERCHAIN_AUDIT.md 行 69](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0836_T014_PLAYER_GAMEWINDOW_OWNERCHAIN_AUDIT.md?plain=1#L69-L69) — **前回は`[[owner+0x188]+4]`がGameManagerであるか未確定だったが、今回の初期化経路上ではGameManagerと静的に結び付いた。** ただし、イベント中のポインタ交換、破棄順、複数Playerインスタンス、後続書込の完全被覆は未検証なので、実機Goldenなしで全状態に一般化しない。
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
 <a id="field-1a8"></a>
 ## owner + 0x1A8
 

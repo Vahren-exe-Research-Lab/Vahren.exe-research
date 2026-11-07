@@ -1,0 +1,17 @@
+# REA-20261015-1734-POSTLETHAL-STRING-EQUALITY-01｜死亡後hit処理の文字列等価ゲート
+- OWNER/REQUEST: REA専用 WRQ-20261013-REA-DEATH。T012/T013（T006/T010参照）。従前REA-20261015-1640-LETHAL-POST-DISABLE-BRANCH-01に残した「0x40B200の等価規則VERIFY」のみを既存5証拠で精密化。原本・他owner変更なし。
+- SOURCE/SHA: 承認済みrea_lab/targets/hakushin067_Vahren.exeのみ。今回LocalでSHA256 E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187を再確認。既存run 20261011T133432356Z/40B200_procedure_*.json、exe/T012_STR_AFTERDEATH_PROBE.txt 0x5789F2..0x578A25。
+- EXISTING FIVE EVIDENCES 0x40B200: info ev_ec2dd487c7478081fb26ce910a9b854f47c123371b542f12e59e6bdf5534439f；pseudo ev_d3b60611f4e0570c118727b471bbd19bd10cd6c9f187e0812023914cb8ccef61；asm ev_80377536380b1f73406c409003776dc07da99b7a8d860e3f70dc06941a55541a；callers ev_35291b767472758d4d578ad386e03faa8202014e9f2b0cbe76deb646f1cbfb7b；callees ev_f5bba603bb289fe46001acbd2e9227eb0df15c0d4b88f12e77e1f47cd0125ca6。
+- ENTRY/BOUNDARY: 0x40B200..0x40B253、84 bytes、12 blocks、5種Ghidra証拠整合。ABIはECX=zero-terminated literal pointer、EDI=MSVC風stringオブジェクト（+0x10現在長、+0x14容量、容量<16はinline/>=16は先頭にheap ptr）。高水準命名自体は復元仮説。
+- EXACT BRANCH: 0x40B207..20Eでliteral strlenを算出。0x40B210で[EDI+0x10]を取得し、0x40B217..21Bでmin(string length,literal length)を比較長とする。0x40B21D..229で短文字列/heap先頭をEDXへ、0x40B229で0x402C40比較helperを呼ぶ。
+- RETURN CONTRACT: 比較helper非0ならAL=0。helperが0でもstring長<literal長ならAL=0、string長>literal長ならAL=0、同長のみAL=1（0x40B22E..253）。従ってAL=1条件は「0x402C40が一致を返し、保存長とliteral長も一致」。0x402C40の実byte比較/case規則は未独立5点証拠なのでVERIFY、単純strcmp確定と言わない。
+- CALLSITE: 0x5789F2でUnit+0x1862C==0なら0x578AFAへskip。非0なら0x5789FF EDI=&Unit+0x1861C、0x578A05 ECX=0x627DAC、0x578A0A CALL0x40B200→0x578A0F TEST ALで分岐。AL=1は0x578A1B 0x49CF20→0x578AFA、AL=0は0x578A25以降の0x49CD60×2→0x4321B0条件経路へ。
+- CRITICAL IMPACT: 0x40B200を一般的event flag存在判定やprefix一致で代用しない。Unit内stringの長さと内容の判定（comparison helper成功）があり、死亡解除とhit handlerの継続を区別。AL=0でもhit処理には残副作用、virtual+58だけでhit全体成功扱い不可。
+- VERIFY: 0x627DACの実文字列、0x402C40の厳密な照合規則、Unit+0x1861C/+0x1862Cの書込元、0x49CF20/0x49CD60/0x4321B0の全副作用、旧EXE合法到達、下位callee/Task callbackの正常帰還は未確定。これらの実処理やゲーム再実装の完了判定を推測しない。
+- STATUS/EVIDENCE: 既存0x40B200はVERIFIED済み、今回の新規Ghidra取得証拠ID0・新規VERIFIED+0。Wave1-5計64/64、Wave5 16/16、P0 29/29、P1 35/35。Wave6正式0/16（未着手16/VERIFY0）、暫定候補P0 5/P1 11、既往拒否4・未試行12。QUEUE/PROGRESS rename EPERMで古い表示。
+- MASTER: 今回読み直した最新研究E checkpoint152、34 Task DONE9/IN_PROGRESS21/VERIFY4。旧EXE実機golden PASS0、旧新strict MATCH0。ゲーム再実装率は測定していない。STATIC evidence!=gameplay verified。
+- PREFLIGHT: 2026-10-15 17時台JST Local Compact。CPU42%、RAM空き17.07GiB、Java/Ghidraプロセス確認なし、active.lockなし、source SHA一致。runner/Ghidra起動0、重量解析0秒、軽量照合全体時間未計測。
+- BLOCKERS: Wave6正式登録未了・QUEUE/PROGRESS rename EPERM・成功REA6.1.0と現在runnerの6.4.0不一致。単一MCP session、1回4関数、Ghidra 900000ms、request 960000msの既存制限維持。新規Ghidra実行なし。
+- RECOVERY REA-RC-20261015-1734-PREFLIGHT-PSPARSE-01: 最初のshell二重引用のPowerShell構文でpreflightコマンドが解析エラー、実測結果なし。安全拒否ではない。Local list_processesと別の正常な直接read-only事前検査でSHA/lock/RAM/CPUを取得し、部分結果から成功を偽装しない。未保存の逆解析結果なし。失敗した元コマンドの再試行なし。
+- NEXT: 既存許可済み証拠で0x402C40の比較規則と0x49CF20/0x49CD60/0x4321B0の戻り条件を確認。0x575A60→0x575DF0→0x5684B0およびhit終端からTask callbackへの正常帰還は独立VERIFY。重複解析・既拒否0x5710C0..0x571500/REA exporterの迂回なし。
+- BOUNDARY: rea_lab/decomp_taskのみ新規保存。A-E/MASTER/T018/Work/WRQ・原本EXE/ZIP/Git/push/設定/automationを変更しない。

@@ -4,6 +4,18 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-8"></a>
+## Engine + 0x8
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1134_T014_NEWMODEL_ENGINE_BACKREF_AUDIT.md 行 48](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1134_T014_NEWMODEL_ENGINE_BACKREF_AUDIT.md?plain=1#L48-L48) — └─ [Engine+0x08] = 0x008BE378  (GameWindow)
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+<a id="field-1eecfc"></a>
+## Engine + 0x1EECFC
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md 行 67](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md?plain=1#L67-L67) — **(A) `Engine+0x1EED28==0`：** `0x00492C7D`で`Engine+0x1EECFC`を取得し、`0x00492CA4`の`FUN_004647D0`（データ名`"event"`に対応する既存疑似C）を経由、戻り値の`+0x20`をEDIへ格納する。`0x00492CBF`以降で3スタ
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
 <a id="field-1eed18"></a>
 ## Engine + 0x1EED18
 
@@ -12,6 +24,54 @@
 
 - [research/recovered/rea_batch10/reports/REA_20261023_1537_P0_BTL_TIMER_MODE_SPLIT_STATIC.md 行 11](../../research/recovered/rea_batch10/reports/REA_20261023_1537_P0_BTL_TIMER_MODE_SPLIT_STATIC.md?plain=1#L11-L11) — - 0・Engine+0x1EED18==0: 0x00492FA9 CALL 0x005656A0 (E8 e8f2260d00)。前段0x00492F85で+0x1EED64を増分し、IDIV 10の余り0で実行。さらに0x00492FDFの余り分岐で20の倍数なら0x00492FE1 CALL 0x0049D5B
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md 行 32](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md?plain=1#L32-L32) — ## 3. 主な発見②：`Engine+0x1EED18`非ゼロ経路、完全な引数源
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md 行 63](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md?plain=1#L63-L63) — ## 4. 主な発見③：`Engine+0x1EED18`ゼロ経路、内部にさらに2分岐
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+<a id="field-1eed1c"></a>
+## Engine + 0x1EED1C
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md 行 57](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md?plain=1#L57-L57) — \| `param_3` \| スタック第1 \| `[Engine+0x1EED1C]` \|
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md 行 76](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md?plain=1#L76-L76) — 0x00492D45  PUSH ECX  ; [Engine+0x1EED1C]
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md 行 88](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md?plain=1#L88-L88) — \| `param_3` stack \| `[Engine+0x1EED1C]` \|
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+<a id="field-1eed28"></a>
+## Engine + 0x1EED28
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md 行 67](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md?plain=1#L67-L67) — **(A) `Engine+0x1EED28==0`：** `0x00492C7D`で`Engine+0x1EECFC`を取得し、`0x00492CA4`の`FUN_004647D0`（データ名`"event"`に対応する既存疑似C）を経由、戻り値の`+0x20`をEDIへ格納する。`0x00492CBF`以降で3スタ
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md 行 69](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md?plain=1#L69-L69) — **(B) `Engine+0x1EED28!=0`：** `0x00492CDF`の`FUN_00597A20`の戻り値`+0x20`からEDI取得。EDI==0なら`0x00492D30: CALL 0x0046F4C0`により別途値を取得する経路がある。`0x00492D37`以降で共通の3引数pushへ。
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+<a id="field-1eed44"></a>
+## Engine + 0x1EED44
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md 行 56](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md?plain=1#L56-L56) — \| `param_2` \| EDX \| `[Engine+0x1EED44]` \|
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md 行 87](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md?plain=1#L87-L87) — \| `param_2` EDX \| `[Engine+0x1EED44]` \|
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+<a id="field-1eed48"></a>
+## Engine + 0x1EED48
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md 行 58](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md?plain=1#L58-L58) — \| `param_4` \| スタック第2 \| `[Engine+0x1EED48]` \|
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md 行 75](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md?plain=1#L75-L75) — 0x00492D44  PUSH EAX  ; [Engine+0x1EED48]
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md 行 89](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md?plain=1#L89-L89) — \| `param_4` stack \| `[Engine+0x1EED48]` \|
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
 
 <a id="field-1eed6c"></a>
 ## Engine + 0x1EED6C
@@ -24,5 +84,17 @@
 
 - [research/recovered/rea_batch2/reports/REA_20261103_12H_P0_CLEANUP_VPTR_TARGET_AND_FLAG_ABI_STATIC.md 行 12](../../research/recovered/rea_batch2/reports/REA_20261103_12H_P0_CLEANUP_VPTR_TARGET_AND_FLAG_ABI_STATIC.md?plain=1#L12-L12) — 2. Distinct producer `0x542EF0` uses allocated pointer held in **ESI** (set by `0x4A2741`) and writes `[ESI] = 0x638CAC` at `0x542EF7`, then replaces it with **
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
+
+<a id="field-1eedf4"></a>
+## Engine + 0x1EEDF4
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md 行 59](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md?plain=1#L59-L59) — \| `param_5` \| スタック第3 \| `Engine+0x1EEDF4`の**アドレス** \|
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+<a id="field-1eee14"></a>
+## Engine + 0x1EEE14
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md 行 55](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_1233_P0_BATTLE_HANDOFF_ABI_AUDIT.md?plain=1#L55-L55) — \| `param_1` \| ECX \| `Engine+0x1EEE14`の値（signed >0の場合）、それ以外 `0x80000008` \|
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

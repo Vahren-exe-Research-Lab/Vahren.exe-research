@@ -4,6 +4,21 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-188"></a>
+## Player + 0x188
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0836_T014_PLAYER_GAMEWINDOW_OWNERCHAIN_AUDIT.md 行 31](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0836_T014_PLAYER_GAMEWINDOW_OWNERCHAIN_AUDIT.md?plain=1#L31-L31) — 5. `0x0051E388 MOV EAX,[EDI+4]`→`0x0051E38B LEA ECX,[EAX+0x88]`→**`0x0051E39E MOV [EDI+0x188],ECX`**。よって確認した正常構築経路で**`[Player+0x188]=GameManager+0x88`**。
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0836_T014_PLAYER_GAMEWINDOW_OWNERCHAIN_AUDIT.md 行 46](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0836_T014_PLAYER_GAMEWINDOW_OWNERCHAIN_AUDIT.md?plain=1#L46-L46) — Player成功構築後: *(Player + 0x188) = W
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0836_T014_PLAYER_GAMEWINDOW_OWNERCHAIN_AUDIT.md 行 75](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0836_T014_PLAYER_GAMEWINDOW_OWNERCHAIN_AUDIT.md?plain=1#L75-L75) — 07:36までに`0x0051EF80→0x00513A80→0x00453800`、速度UIの`+0x83/+0x98/+0x9C`、0x00513C60の読出し、0x004C21F0の出力先は確認済み。今回は**Player vtableスロットの同定、`Player+0x188`を生成する命令、GameWindo
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
+- [research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0836_T014_PLAYER_GAMEWINDOW_OWNERCHAIN_AUDIT.md 行 98](../../research/recovered/rea_legacy1/reports/REA_OFFLINE_20261023_0836_T014_PLAYER_GAMEWINDOW_OWNERCHAIN_AUDIT.md?plain=1#L98-L98) — 実機の安全な観測点は、(A)`0x00553B6E`直後の`[W+4]==0`、(B)`0x004B9F36`直後の`[W+4]==G`、(C)`0x0051E39E`直後の`[Player+0x188]==W`、(D)`0x00513A9A`後の`[0x67B328]==W`および`[0x67B32C]==Playe
+  制約・訂正　Historical authored STATIC/VERIFY claims only; no linked payload read or audit rerun; no new native/runtime/Golden/READY/VERIFIED conclusion
+
 <a id="field-194"></a>
 ## Player + 0x194
 
