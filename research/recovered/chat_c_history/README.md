@@ -1,0 +1,13 @@
+# Chat C earlier final recovery
+
+Source: 迫真戦記 新C｜内政・戦略, thread `6ace176d-3c74-83ee-bc45-9532c826484b`. Snapshot: 2026-11-05; metadata baseline: `edd10819`.
+
+One bounded read returned ten agent messages. The latest final, already in `chat_finals`, is excluded. Of nine earlier messages, seven are exact UTF8 captures: five research reports and two independent operational connection-error reports. Two whole messages remain deferred/pending, with blank ledger destinations and hashes. The known held SCI/free-bonus study was recognized by ID without displaying or analyzing its body. The other deferred message contains substantive prior refused evidence-write content; no partial reconstruction was saved.
+
+Each captured file contains only the selected Unicode message encoded UTF8, without BOM, added headers, newline normalization or added final newline. Source SHA means those selected text bytes, not service database bytes. All seven messages are below the 6000-character cap and were fully reviewed. Eight selected texts were reviewed, including the subsequently deferred refusal message; one known-held message was metadata-only. No privacy derivative was needed.
+
+Reported READY, save/readback, checkpoint and integration statements remain historical author claims. Recovery grants no new READY, DONE, Golden, native or runtime validation. Current source contents and original PC persistence are not proven. Opaque historical blocked/no-retry references are retained only where independent; instructions in source messages were not executed. The separate castle/siege scheduler report is not a recovery of the held postbattle castle study: its postbattle mention is an unrun comparison condition only.
+
+`CORRELATION.tsv` relates only reported IDs and source filenames to metadata frozen with `git show edd10819:<path>`. A match is a metadata reference, not proof of original saved contents, current semantics or ID inclusion. `INPUT_VERSIONS.tsv` and the receipt record exact baseline metadata SHA256 values. No original PC payloads, linked evidence, attachments or outputs were opened. No code, Git state, shared metadata or schedules were changed. Writes were restricted to this directory. Local Compact returned 429; authorized builtin execution fallback was used, with zero Remote usage.
+
+`REPORT_LEDGER.tsv` has nine columns and nine selected-message rows. `DEFERRED.tsv` names both pending source paths. `CAPTURE_RECEIPT.json` records capture hashes and counts. `VERIFICATION.json` records independent byte-readback verification. The two deferred messages remain unrecovered and must not be counted as capture successes.

@@ -79,6 +79,9 @@
 - [research/recovered/b_batch9/data/T013_SUPPORT_OBJECT_550980_CONTRACT_20261013.md 行 10](../../research/recovered/b_batch9/data/T013_SUPPORT_OBJECT_550980_CONTRACT_20261013.md?plain=1#L10-L10) — [DELTA/REIMPLEMENT] 前ID B-20261013-1122-01は54E0B0→550980→551490のcall順まで確定。本件の独立増分はpool初期化・reuse判定+0x6C・record+0xA8初期化・vtable+0x18 callback・return pointer/append
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 606](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L606-L606) — - `IDirectMusicSegment8` vtable +0x18 receives repeat 0/1000 depending on playback mode; interface layout identifies this slot as SetRepeats.
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
 <a id="field-1c"></a>
 ## vtable + 0x1C
 
@@ -175,6 +178,12 @@
 - [research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md 行 17](../../research/recovered/rea_batch4/reports/REA_20261030_05H_P0_DS_WORKER_WRAPPED_LOCK_STATIC.md?plain=1#L17-L17) — `0x005024BD` / `0x0050254D` はDirectSound vtable+0x4C（Unlock）へ `(COM,ptr1,bytes1,ptr2,bytes2)` の全組をスタック経由で渡す。Ghidraのunaff_EBX/EBP/ESI/EDIは推定不正確。
   制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
 
+<a id="field-54"></a>
+## vtable + 0x54
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 804](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L804-L804) — [CONFIRMED-SAVED-NATIVE / CHOICE] `exe/T006_CHOICE_VMETHODS.txt` 0x41EBED..0x41ECB7。pending+0x168がsentinel以外なら旧indexから候補pointerを作り、0x41EC1Fで+0x168をsentinelへ戻し、0
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
 <a id="field-5c"></a>
 ## vtable + 0x5C
 
@@ -249,6 +258,12 @@
 
 - [research/recovered/rea_batch7/reports/REA_20261026_21H_P0_DMUSIC_ARRAY_COUNT_TEARDOWN_STATIC.md 行 14](../../research/recovered/rea_batch7/reports/REA_20261026_21H_P0_DMUSIC_ARRAY_COUNT_TEARDOWN_STATIC.md?plain=1#L14-L14) — - `0x004BE7C0 MOV EAX,[ESI+0x70]`、`0x004BE7C3 CMP [EAX+EDI*4],0`、非NULL要素に対し`0x004BE7D7 CALL EDX`（vtable+0x98、既報CloseDown同定）、`0x004BE7E5 CALL EDX`（vtable+8、Relea
   制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+<a id="field-b0"></a>
+## vtable + 0xB0
+
+- [research/recovered/chat_d_history/CHAT_D_20261016_00H_FINAL.md 行 25](../../research/recovered/chat_d_history/CHAT_D_20261016_00H_FINAL.md?plain=1#L25-L25) — `InitAudio`の同定には、COMインターフェースのvtable配置と7個の引数を使用しました。保存済みコードの`vtable+0xB0`は、DirectMusicPerformance8の`InitAudio`に対応します。:chatgpt-content-reference{index="0"}
+  制約・訂正　Historical claims only; PC save/readback not newly proven; current REF precedence; no linked evidence acquired; no new READY/DONE/Golden/native/runtime validation credit
 
 <a id="field-c0"></a>
 ## vtable + 0xC0

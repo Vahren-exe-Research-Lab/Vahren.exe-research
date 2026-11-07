@@ -10,4 +10,10 @@
 - [research/recovered/b_reports/T024_FOURWAY_LOOKUP_TWOMODE_ABI_NATIVE_20261026_00H.md 行 15](../../research/recovered/b_reports/T024_FOURWAY_LOOKUP_TWOMODE_ABI_NATIVE_20261026_00H.md?plain=1#L15-L15) — 0x4C714D/0x4C71DE は下位CALL後に戻値でなく stack +0x1B を1にする。0x4C722Fにて同byteを判定、非0なら0x4C7241/46/4B vtable+0x24 に文字列 'change' と0を渡す。**通知条件はhelperを呼んだこと**であり、実際に登録変更が発生した証明
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
 
+<a id="field-1eed78"></a>
+## stack + 0x1EED78
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 957](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L957-L957) — [DELTA / GLOBAL FRAME READ] A所有の保存済命令 `exe/T010_FRAME_HELPER_PROBE.txt` 0x4339B1..0x4339F1。descriptor stack +0x1EED78/7C が非空なら、0x4339C3..0x4339DEで +0x1EED98/9C（
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

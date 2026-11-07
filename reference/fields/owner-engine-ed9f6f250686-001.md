@@ -4,6 +4,18 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-c"></a>
+## engine + 0xC
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 139](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L139-L139) — - opcode7 `save` (VA 0x4A17C8) は engine +0x0C を 0x45F960 へ渡して `AL=1` (Yield)。save codec/layout自体はT014で扱う。
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
+<a id="field-10"></a>
+## engine + 0x10
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 204](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L204-L204) — - engine-side state `[engine+0x10]` を helper 0x4740A0へ渡す。
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
 <a id="field-2c"></a>
 ## engine + 0x2C
 
@@ -88,6 +100,15 @@
 - [research/recovered/rea_batch2/reports/REA_20261103_08H_P0_TRIPLE_PLAYER_ALLOC_NULL_SIGNAL_GATES_STATIC.md 行 11](../../research/recovered/rea_batch2/reports/REA_20261103_08H_P0_TRIPLE_PLAYER_ALLOC_NULL_SIGNAL_GATES_STATIC.md?plain=1#L11-L11) — - Allocation 1: `0x48A934 cmp eax,ebx; 0x48A936 je 0x48A944` skips `0x48A93D -> 0x51E100` and sets EAX=0 at `0x48A944`; `0x48A952` stores result/NULL into `[eng
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
 
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 138](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L138-L138) — - opcode5 `win` (VA 0x4A174A) は engine +0x1E8630 に対し 0x52BFF0 を呼び、続けて +0x1EED1C/+0x1EED20 を用いて 0x493630 を呼んだ後、`AL=1` (Yield)。呼出先の論理副作用名は継続解析する。
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 168](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L168-L168) — - opcode5 `win` handler VA 0x4A174A は engine+0x1E8630 に対し 0x52BFF0 を呼び、続けてbattle/event stateを 0x493630 へ渡し、最後に `AL=1` (Yield) を返す。
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 266](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L266-L266) — - opcode27 `zoom` (VA 0x4A2892) はexecutionMode `+0x1EEC3C==1` のとき共通Continue tailへ飛んで書込をskipする。それ以外では第1引数integerをviewport object (`engine+0x1E8630`) `+0x46C`へsto
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
 <a id="field-1e8634"></a>
 ## engine + 0x1E8634
 
@@ -105,6 +126,12 @@
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 220](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L220-L220) — - **文字列の解決（0x49C450）**: `@名前` は文字列リスト変数（engine+0x1E863C）の先頭要素。存在しない、または空なら `""` で、変数は作られない。`@`で始まらない名前はその文字列自体。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+<a id="field-1eebcc"></a>
+## engine + 0x1EEBCC
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 332](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L332-L332) — - canonical keyが既にworld runtime map engine+0x1EEBCC にあれば既存object vfunc +0x54(arg0=0)を呼んで再表示し、新規objectを重複生成しない。無ければ0x240-byte route objectを生成してmapへinsertする。
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
 
 <a id="field-1eebec"></a>
 ## engine + 0x1EEBEC
@@ -124,11 +151,26 @@
 - [research/recovered/script_topics/T010_EVENT_SCHEDULER.md 行 375](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L375-L375) — [CONFIRMED-SAVED-NATIVE / NEW GATE] A所有 `exe/T006_FLOW_CONTROL_PROBE.txt` 0x4335E0..0x433621。`[engine+0x1EEC3C]`のmode分岐でmode1は0x433617を経て`0x4338D0`へ、mode6は0x433
   制約・訂正　Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
 
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 949](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L949-L949) — [CONFIRMED / SAVED ASM] A既存 `exe/T010_FRAME_HELPER_PROBE.txt` 0x433BFE..0x433C51（特に従前A76未収録の0x433C3C/0x433C4C）。ScriptIF分岐選択後、0x4C1290でengine +0x1EED78にchild des
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
 <a id="field-1eec44"></a>
 ## engine + 0x1EEC44
 
 - [research/recovered/script_topics/T010_EVENT_SCHEDULER.md 行 375](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L375-L375) — [CONFIRMED-SAVED-NATIVE / NEW GATE] A所有 `exe/T006_FLOW_CONTROL_PROBE.txt` 0x4335E0..0x433621。`[engine+0x1EEC3C]`のmode分岐でmode1は0x433617を経て`0x4338D0`へ、mode6は0x433
   制約・訂正　Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 169](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L169-L169) — - 0x493630 は `engine+0x1EEC44` battle-active byteを0へ戻し、+0x1EEC48、+0x1EED40/+0x1EED42をresetし、battleEvent active-root list `+0x1EEDB8` をclearする。executionMode==2では
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
+<a id="field-1eec71"></a>
+## engine + 0x1EEC71
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 292](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L292-L292) — - opcode40 `setWorldMusic` は副作用が `byte [engine+0x1EEC71]=1` のみ、opcode41 `resetWorldMusic` は同byte=0のみ。双方Continue。
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 571](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L571-L571) — - handler後はworldMusic flag `engine+0x1EEC71=0` とviewport-side byte `+0x4A4=0` をclearし、AL=0 Continue。
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
 
 <a id="field-1eed18"></a>
 ## engine + 0x1EED18
@@ -169,6 +211,24 @@
 - [research/recovered/script_topics/T010_EVENT_SCHEDULER.md 行 111](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L111-L111) — - isInterval(opcode 0x25C) handler VA 0x451915 は正の引数 n を 10 * ceil(n/10) へ量子化し、engine +0x1EED64 をそのdivisorで割った余りが0なら1を返す。0x63B058=10.0、0x5B6ED0は正値に対してceil相当、0x5
   制約・訂正　Historical author claims only; current REF_SCRIPT_VM_CONTEXT.md precedence; no new native/runtime validation or Golden/READY/DONE credit; referenced evidence excluded
 
+<a id="field-1eed6c"></a>
+## engine + 0x1EED6C
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 270](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L270-L270) — - opcode22 `darkness`: 0引数ならactive overlay `engine+0x1EED6C` をremove/freeして0化しContinue。引数ありでは既存overlayを置換し、色overlay objectを作る。handlerは最大5個までargument slotを読む構造で、
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
+<a id="field-1eed70"></a>
+## engine + 0x1EED70
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 271](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L271-L271) — - opcode23 `shadow`: 0引数ならactive object `engine+0x1EED70`をremove/freeして0化。引数ありでは既存objectを置換し、direction/color/alpha/density系6値を使って0x8C-byte shadow objectを生成・regi
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
+<a id="field-1eed8c"></a>
+## engine + 0x1EED8C
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 963](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L963-L963) — [LOOP REVISIT] pop前に局所[esp+0x10]へ保存したkindが2なら0x433A86..0x433A9Aで、残存PC vector末尾[engine+0x1EED8C-4]の値をdecし、0x4339B1へ戻る。これによりloop body自然完了後は親PCが1戻り、親側の該当nodeを再評価可能
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
 <a id="field-1eedb8"></a>
 ## engine + 0x1EEDB8
 
@@ -193,6 +253,15 @@
 - [research/recovered/DEVLAB_MINIMAP_NATIVE_CONTRACT_20261011.md 行 60](../../research/recovered/DEVLAB_MINIMAP_NATIVE_CONTRACT_20261011.md?plain=1#L60-L60) — - `0x4DD8C0` 内の追加条件は `*(engine+0x1EEEE0) != 0`。偽の場合は**この関数のメッシュ新規生成分岐をskip**。既存の別オーナーにあるoverlayを削除/消去したとまで断定しない。
   制約・訂正　Historical author claims preserved; source hash verified; no new native or runtime validation; referenced local evidence not included
 
+<a id="field-1eef80"></a>
+## engine + 0x1EEF80
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 85](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L85-L85) — - 通常command registry (+0x1EEF50)とは別に、battle-scene command registry が engine +0x1EEF80 に存在し、dispatcher VA 0x4B4710 が0x00..0x10をswitchする。
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 646](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L646-L646) — - 従前の「通常command +2 registry = 少なくとも3系列」は非網羅。さらに engine+0x1EEF80 の独立命令レジストリを確認。
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
 <a id="field-1ef140"></a>
 ## engine + 0x1EF140
 
@@ -213,6 +282,21 @@
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 445](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L445-L445) — - 同じ switch で、id 7 isNewTurn は engine+0x1EF4C1 のバイト、id 8 isWorldMusicStop は (engine+0x1EF175 == 0) を返す。どちらもエンジンの状態なので未実装。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
+
+<a id="field-1ef4b4"></a>
+## engine + 0x1EF4B4
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 254](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L254-L254) — - 近傍 `+0x1EF4B8..+0x1EF4C3` には +0x1EF4BD/+BF/+C0/+BC 等のbyte writerが存在するが、+BE writerは無い。さらに common base `engine+0x1EF4B4` を `lea/add` で作る33箇所について、その後の同register `
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
+<a id="field-1ef4be"></a>
+## engine + 0x1EF4BE
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 238](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L238-L238) — - condition registryでは `isGameClear` = condition opcode 0。evaluator VA 0x44F470 のcase0 VA 0x44F530は `engine+0x1EF4BE` のbyteをそのままbool結果として返す。flagのexact writer/tr
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 255](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L255-L255) — - 従って `setGameClear()` のshort helper直後に `engine+0x1EF4BE=1` を単純storeする実装はnative証拠が無い。writerはalias/helper/scene transition/serialized state更新のいずれかで、exact 0→1 tim
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
 
 <a id="field-1ef4c1"></a>
 ## engine + 0x1EF4C1

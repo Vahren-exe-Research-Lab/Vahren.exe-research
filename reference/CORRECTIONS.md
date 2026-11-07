@@ -64,4 +64,9 @@
   - → 現在の解釈　守備兵なし（NO_DEFENDER、0x491FFB）では 0x491870 から直接 0x40D0A0 へ進み、0x4922A0 を通らず fight フックも呼ばれない。
   - 確度　静的確認（元の辞書・報告の確認範囲。今回の原作再検証なし）。対象　迫真戦記 ver0.67 / Vahren.exe image base 0x400000。[訂正の根拠](../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L3675-L3678)
 
+- [Script_FetchCurrentFrame](symbols/004339B1.md) · `CORRECTION-VM-NATURAL-FRAME-COMPLETION` · `corrected`。明示的な後日訂正で、global VM frameの自然完了と範囲外を区別する。局所経路の静的報告であり、例外時整合や実機Goldenは未確認。
+  - 訂正済みの旧解釈（履歴）　global walkerでcount<=pcなら一律に0x433E40のinvalid vector subscript経路へ進むというA80の表現。
+  - → 現在の解釈　count==pcは前段で通常のframe終了・cleanup/popへ進む。その等値経路を除いた後段のunsigned count<=pcは、この場合count<pcを表し、invalid vector subscriptへ進む。global自然完了をinvalid-index扱いしない。
+  - 確度　静的確認（回収済み研究本文の明示的な訂正・接続。今回の原作再検証・実行なし）。対象　迫真戦記 ver0.67 / Vahren.exe image base 0x400000。[訂正の根拠](../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L962-L965)
+
 [事典の入口](README.md)

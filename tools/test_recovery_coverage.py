@@ -33,6 +33,31 @@ class CoverageTests(unittest.TestCase):
             for destination, digest in destinations:
                 writer.writerow(dict(source_path="local/report.md", source_sha256=source_sha or self.sha, destination=destination, destination_sha256=digest, review="Reviewed text", coverage_state=state))
 
+    def test_render_exposes_non_markdown_and_each_coverage_state(self):
+        cases = [("reports/a.MD", "EXACT_BODY_AVAILABLE"),
+                 ("reports/b.md", "PARTIAL_BODY_AVAILABLE"),
+                 ("evidence/run.json", "CATALOG_ONLY_UNRESOLVED"),
+                 ("native/window.txt", "SOURCE_REVISION_DIFFERS"),
+                 ("tables/fields.TSV", "RECOVERED_REVIEWED_VARIANT"),
+                 ("evidence/no_suffix", "CATALOG_ONLY_UNRESOLVED")]
+        rows = []
+        for path, state in cases:
+            row = dict.fromkeys(coverage.OUTPUT_COLUMNS, "")
+            row.update(path=path, coverage=state)
+            rows.append(row)
+        rendered = coverage.render(rows)
+        summary = rendered[coverage.OUTPUT_MD]
+        for expected in (
+                "| .md | 2 | 1 | 0 | 1 | 0 | 0 |",
+                "| .json | 1 | 0 | 0 | 0 | 0 | 1 |",
+                "| .txt | 1 | 0 | 0 | 0 | 1 | 0 |",
+                "| .tsv | 1 | 0 | 1 | 0 | 0 | 0 |",
+                "| (拡張子なし) | 1 | 0 | 0 | 0 | 0 | 1 |"):
+            self.assertIn(expected, summary)
+        import io
+        self.assertEqual(list(csv.DictReader(io.StringIO(rendered[coverage.OUTPUT_TSV]),
+                                             delimiter="\t")), rows)
+
     def test_hash_mention_does_not_count_as_body(self):
         (self.root / "summary.md").write_text("Source SHA: " + self.sha, encoding="utf-8")
         rows = coverage.inventory(self.root, ["summary.md"])

@@ -1,0 +1,15 @@
+{
+  "source_path": "exe/T006_TARGET_DISPATCH.md",
+  "sha256": "70d8b5d4ecda0362d21aba4dc9c2c203965f16eb9a0bb6e712ae8069901bdca9",
+  "bytes": 156050,
+  "lines": 976,
+  "byte_equal": true,
+  "dedup_metadata_no_match": true,
+  "report_ledger_columns": 9,
+  "deferred_count": 0,
+  "exact_count": 1,
+  "variant_count": 0,
+  "reviewed_full_authored_text": true,
+  "linked_evidence_reads": 0,
+  "writes_scope": "research/recovered/vm_dispatch_topic only"
+}

@@ -46,6 +46,9 @@
 - [research/recovered/rea_batch5/reports/REA_20261029_11H_P0_BITBOOK_SYMBOL_STATIC.md 行 13](../../research/recovered/rea_batch5/reports/REA_20261029_11H_P0_BITBOOK_SYMBOL_STATIC.md?plain=1#L13-L13) — - `0x005DA930` はまず `0x005DA94A` → `0x005E6CF0` で `entry+0x24` bitをpeek。非負のfast-table entry（`entry+0x20`）なら `0x005DA982` → `0x005E6DB0` で消費して **symbol内部index** を
   制約・訂正　Historical author STATIC/VERIFY claims and audit counts only; current REF_AUDIO_VORBIS precedence; no new native/runtime/ABI/READY validation; linked evidence excluded
 
+- [research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md 行 419](../../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L419-L419) — - ChoiceWnd vmethod 0x41EBE0 は現在選択index `+0x168` を取り、sentinel 0x80000008ならcommitせずreturn。valid selectionでは選択肢rectを再hit-test後、parent/runtime numeric-variable tab
+  制約・訂正　Historical authored STATIC/VERIFY/corrections retained; current REF_SCRIPT_VM_CONTEXT.md priority; no native/runtime corroboration or linked evidence read
+
 <a id="field-20"></a>
 ## entry + 0x20
 

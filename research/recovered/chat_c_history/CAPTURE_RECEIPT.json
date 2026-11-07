@@ -1,0 +1,216 @@
+{
+  "snapshot_date": "2026-11-05",
+  "base_commit": "edd10819",
+  "source_thread_id": "6ace176d-3c74-83ee-bc45-9532c826484b",
+  "source_chat_title": "迫真戦記 新C｜内政・戦略",
+  "source_turn_id": "d7da642e-c34e-4b29-84d8-0f1f17cd012e",
+  "request": {
+    "turnLimit": 1,
+    "includeOutputs": false,
+    "maxOutputCharsPerItem": 6000
+  },
+  "source_hash_definition": "SHA256 of selected Unicode agentMessage text encoded UTF8; not service DB bytes; no BOM, header, normalization or added newline",
+  "messages_returned": 10,
+  "selected_earlier_messages": 9,
+  "full_reviewed": 8,
+  "metadata_only_not_displayed_or_analyzed": 1,
+  "research_reports_captured": 5,
+  "operational_reports_captured": 2,
+  "exact_capture_count": 7,
+  "privacy_derivative_count": 0,
+  "deferred_count": 2,
+  "pending_count": 2,
+  "excluded_latest_message": "96b8045b-577d-46b1-904a-2ac794fdfc81",
+  "excluded_latest_reason": "Already archived in chat_finals; excluded from ledger",
+  "local_connector_error": "Local Compact read_file: MCP SSE probe returned 429; authorized builtin exec fallback; Remote usage zero",
+  "scope": "Selected bounded chat message texts and base-version repository metadata only; no attachments, outputs, linked payloads, original PC evidence, Git mutations, code or schedules",
+  "input_versions": [
+    {
+      "path": "SOURCE_MANIFEST.tsv",
+      "git_version": "edd10819",
+      "sha256": "7e8547c18834dd2b74b6666d7481628629147765f8add6b2db9cbdfc39ab7ef4",
+      "bytes": 306366
+    },
+    {
+      "path": "RESEARCH_SOURCE_CATALOG.tsv",
+      "git_version": "edd10819",
+      "sha256": "f14e3bd401a836039f678e9238c6490e2200385efb0fbb602e62f626ec679cf4",
+      "bytes": 350283
+    },
+    {
+      "path": "research/recovered/RECOVERY_LEDGER.tsv",
+      "git_version": "edd10819",
+      "sha256": "51aee499ecf3b0a000491eba323b6bb078942c76f9a5ed41b7686ba96bff1096",
+      "bytes": 711338
+    },
+    {
+      "path": "research/recovered/GITHUB_SOURCE_CATALOG.tsv",
+      "git_version": "edd10819",
+      "sha256": "d2910835c0d43e7d15ef8dda87a8887a7a9016061ed8054fa8e5633480aefefa",
+      "bytes": 275764
+    },
+    {
+      "path": "research/recovered/GITHUB_EXACT_BODY_LINKS.tsv",
+      "git_version": "edd10819",
+      "sha256": "fc8e7b2cfba4c26240a1bdf11402dfe61fab9cf7dd698f362bdf9eb2ce99e99c",
+      "bytes": 28119
+    }
+  ],
+  "records": [
+    {
+      "source_path": "chatgpt://6ace176d-3c74-83ee-bc45-9532c826484b/messages/d7da642e-c34e-4b29-84d8-0f1f17cd012e",
+      "message_id": "d7da642e-c34e-4b29-84d8-0f1f17cd012e",
+      "eligible": false,
+      "destination": "",
+      "source_sha256": "",
+      "state": "DEFERRED_WHOLE_MESSAGE_METADATA_ONLY",
+      "reason": "Known held study C-20261015-0824-01; metadata-only; body not displayed or analyzed"
+    },
+    {
+      "source_path": "chatgpt://6ace176d-3c74-83ee-bc45-9532c826484b/messages/4f5f3d0a-e026-4e92-b1c5-f1ecbd6504fe",
+      "message_id": "4f5f3d0a-e026-4e92-b1c5-f1ecbd6504fe",
+      "eligible": false,
+      "destination": "",
+      "source_sha256": "",
+      "state": "DEFERRED_WHOLE_MESSAGE_METADATA_ONLY",
+      "reason": "Substantive previously refused evidence-write body C-20261015-2026-01; whole message deferred"
+    },
+    {
+      "source_path": "chatgpt://6ace176d-3c74-83ee-bc45-9532c826484b/messages/0a88e3d8-0e70-4708-bf82-bcee524d9951",
+      "message_id": "0a88e3d8-0e70-4708-bf82-bcee524d9951",
+      "kind": "research_report",
+      "unicode_codepoints": 2292,
+      "utf16_code_units": 2292,
+      "bytes": 4768,
+      "source_sha256": "282b3f4ea28983a55eab941100d03f52ff27f1beb3b7c7a8f9e5871320a4c5e2",
+      "destination": "research/recovered/chat_c_history/CHAT_C_20261015_2124_FINAL.md",
+      "destination_sha256": "282b3f4ea28983a55eab941100d03f52ff27f1beb3b7c7a8f9e5871320a4c5e2",
+      "same_sha_baseline_aliases": [],
+      "transforms": [],
+      "eligible": true,
+      "privacy_review": "PASS; no personal absolute paths or sensitive tokens; no derivative needed",
+      "held_payload_review": "PASS; opaque historic blocked/no-retry metadata only; no substantive specified held body",
+      "reported_research_ids": [
+        "C-20261015-2124-01",
+        "C-20261015-2026-01"
+      ]
+    },
+    {
+      "source_path": "chatgpt://6ace176d-3c74-83ee-bc45-9532c826484b/messages/cdf8f542-c17a-48f0-83c1-b7bdb5f619b4",
+      "message_id": "cdf8f542-c17a-48f0-83c1-b7bdb5f619b4",
+      "kind": "research_report",
+      "unicode_codepoints": 2448,
+      "utf16_code_units": 2448,
+      "bytes": 5087,
+      "source_sha256": "2c7b6a87993bb2ea41146c7fa6fe8bae7b5598a236c622a242d5699376f4e85a",
+      "destination": "research/recovered/chat_c_history/CHAT_C_20261015_2240_FINAL.md",
+      "destination_sha256": "2c7b6a87993bb2ea41146c7fa6fe8bae7b5598a236c622a242d5699376f4e85a",
+      "same_sha_baseline_aliases": [],
+      "transforms": [],
+      "eligible": true,
+      "privacy_review": "PASS; no personal absolute paths or sensitive tokens; no derivative needed",
+      "held_payload_review": "PASS; opaque historic blocked/no-retry metadata only; no substantive specified held body",
+      "reported_research_ids": [
+        "C-20261015-2240-01",
+        "C-RC-20261015-2240-PATH-01"
+      ]
+    },
+    {
+      "source_path": "chatgpt://6ace176d-3c74-83ee-bc45-9532c826484b/messages/f2755732-f188-407e-8ab6-ae19b74caa5d",
+      "message_id": "f2755732-f188-407e-8ab6-ae19b74caa5d",
+      "kind": "research_report",
+      "unicode_codepoints": 2641,
+      "utf16_code_units": 2641,
+      "bytes": 5507,
+      "source_sha256": "898bfd35f2a1f6b7cf5c38e9a4ab52788e87253c6d63e43ac447b06ed892a92f",
+      "destination": "research/recovered/chat_c_history/CHAT_C_20261015_2328_FINAL.md",
+      "destination_sha256": "898bfd35f2a1f6b7cf5c38e9a4ab52788e87253c6d63e43ac447b06ed892a92f",
+      "same_sha_baseline_aliases": [],
+      "transforms": [],
+      "eligible": true,
+      "privacy_review": "PASS; no personal absolute paths or sensitive tokens; no derivative needed",
+      "held_payload_review": "PASS; opaque historic blocked/no-retry metadata only; no substantive specified held body",
+      "reported_research_ids": [
+        "C-20261015-2328-01",
+        "C-20261015-2026-01"
+      ]
+    },
+    {
+      "source_path": "chatgpt://6ace176d-3c74-83ee-bc45-9532c826484b/messages/ece76cd2-f25d-487c-95f3-78e98b9c241f",
+      "message_id": "ece76cd2-f25d-487c-95f3-78e98b9c241f",
+      "kind": "research_report",
+      "unicode_codepoints": 2371,
+      "utf16_code_units": 2371,
+      "bytes": 4834,
+      "source_sha256": "5bbeb6a20e7fedf31649a5e3ec4bfdf9a2a222d2b2397664af5b471c6c6d196d",
+      "destination": "research/recovered/chat_c_history/CHAT_C_20261016_0023_FINAL.md",
+      "destination_sha256": "5bbeb6a20e7fedf31649a5e3ec4bfdf9a2a222d2b2397664af5b471c6c6d196d",
+      "same_sha_baseline_aliases": [],
+      "transforms": [],
+      "eligible": true,
+      "privacy_review": "PASS; no personal absolute paths or sensitive tokens; no derivative needed",
+      "held_payload_review": "PASS; opaque historic blocked/no-retry metadata only; no substantive specified held body",
+      "reported_research_ids": [
+        "C-20261016-0023-01"
+      ]
+    },
+    {
+      "source_path": "chatgpt://6ace176d-3c74-83ee-bc45-9532c826484b/messages/316164ac-3e1c-4aa3-9769-a4a512bf1850",
+      "message_id": "316164ac-3e1c-4aa3-9769-a4a512bf1850",
+      "kind": "research_report",
+      "unicode_codepoints": 2899,
+      "utf16_code_units": 2899,
+      "bytes": 5850,
+      "source_sha256": "9cbbde5b652ff80d039d85ca272d2a4e5b56bf9fbf2cf62aa9b8de204a97492b",
+      "destination": "research/recovered/chat_c_history/CHAT_C_20261016_0122_FINAL.md",
+      "destination_sha256": "9cbbde5b652ff80d039d85ca272d2a4e5b56bf9fbf2cf62aa9b8de204a97492b",
+      "same_sha_baseline_aliases": [],
+      "transforms": [],
+      "eligible": true,
+      "privacy_review": "PASS; no personal absolute paths or sensitive tokens; no derivative needed",
+      "held_payload_review": "PASS; opaque historic blocked/no-retry metadata only; no substantive specified held body",
+      "reported_research_ids": [
+        "C-20261016-0122-01"
+      ]
+    },
+    {
+      "source_path": "chatgpt://6ace176d-3c74-83ee-bc45-9532c826484b/messages/7a9b67a4-1932-4308-b94b-1b2ed799d5a9",
+      "message_id": "7a9b67a4-1932-4308-b94b-1b2ed799d5a9",
+      "kind": "operational_report",
+      "unicode_codepoints": 1179,
+      "utf16_code_units": 1179,
+      "bytes": 2315,
+      "source_sha256": "e49d41a133ab58a06b9c523aff6ff42d105c6e465d1ba424752def177715e10e",
+      "destination": "research/recovered/chat_c_history/CHAT_C_20261016_0220_OPERATIONAL.md",
+      "destination_sha256": "e49d41a133ab58a06b9c523aff6ff42d105c6e465d1ba424752def177715e10e",
+      "same_sha_baseline_aliases": [],
+      "transforms": [],
+      "eligible": true,
+      "privacy_review": "PASS; no personal absolute paths or sensitive tokens; no derivative needed",
+      "held_payload_review": "PASS; opaque historic blocked/no-retry metadata only; no substantive specified held body",
+      "reported_research_ids": [
+        "C-RC-20261016-0220-LOCAL-01"
+      ]
+    },
+    {
+      "source_path": "chatgpt://6ace176d-3c74-83ee-bc45-9532c826484b/messages/b9cad11d-77d7-4e06-88d5-f0322fece377",
+      "message_id": "b9cad11d-77d7-4e06-88d5-f0322fece377",
+      "kind": "operational_report",
+      "unicode_codepoints": 865,
+      "utf16_code_units": 865,
+      "bytes": 1605,
+      "source_sha256": "855560e70a60542550b2061af68678b2fa2a0eca8d468276b37d6a4507b2aaf6",
+      "destination": "research/recovered/chat_c_history/CHAT_C_20261016_0322_OPERATIONAL.md",
+      "destination_sha256": "855560e70a60542550b2061af68678b2fa2a0eca8d468276b37d6a4507b2aaf6",
+      "same_sha_baseline_aliases": [],
+      "transforms": [],
+      "eligible": true,
+      "privacy_review": "PASS; no personal absolute paths or sensitive tokens; no derivative needed",
+      "held_payload_review": "PASS; opaque historic blocked/no-retry metadata only; no substantive specified held body",
+      "reported_research_ids": [
+        "C-RC-20261016-0322-LOCAL-02",
+        "C-RC-20261016-0220-LOCAL-01"
+      ]
+    }
+  ]
+}

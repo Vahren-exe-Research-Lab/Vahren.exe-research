@@ -1,0 +1,9 @@
+kind	registered_key	registered_name	direct_claim	source_lines_inclusive	boundary
+symbol	0x4A1250	Script_DispatchCommand	Registered function; normal command registry lookup and sentinel/missing behavior; direct call from global ScriptFunc path	26-34;99-105;935-937	STATIC author claims; no execution proof
+symbol	0x4C1200	Variable_FindTreeKey	Registered function; +0x1EEF80 dispatcher passes registry map to lookup helper, found node+0x28 opcode, missing sentinel	647-649	STATIC; no type/ABI additions
+symbol	0x4637A0	Variable_WriteNumericMap	Registered function; Dialog commit conditionally calls numeric writer with stage==1 boolean; distinct owner and scratch bases	738-743	STATIC; owner type/lifetime unconfirmed
+symbol	0x433B62	Script_ExecEntry_Field	Registered code site; calls 0x4A1250 after top PC advances; AL nonzero returns, zero continues	935-937	STATIC; count==PC natural completion correction at 962-965 takes priority
+field	ScriptEngine+0x1EED78	executionBlocks	Registered field; global ScriptIF appends child descriptor; natural completion cleanup and conditional end decrement	949-953;962-965	STATIC; helper ownership/atomicity VERIFY
+field	ScriptEngine+0x1EED88	executionPCs	Registered field; global ScriptIF appends PC=0; top end[-4] preincrement before dispatch; while completion decrements parent PC	925-930;935-937;949-953;962-965	STATIC; do not infer frameInstallMode equivalence
+field	ScriptEngine+0x1EED98	executionModes	Registered field; mode argument passed to third append; top value read and written to currentMode before child dispatch	949-953;957-959	STATIC; copy-versus-alias helper contract VERIFY
+field	ScriptEngine+0x1EEDA8	executionFrameKinds	Registered field; global append uses static kind If1/While2/Block0; top read precedes child dispatch; end popped at completion	949-953;957-959;962-965	STATIC; no new type inference

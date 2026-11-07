@@ -135,6 +135,22 @@ def render(rows):
              "recovered_source_sha256 は対応する回収元のSHA。SOURCE_REVISION_DIFFERSの場合は目録のsha256を保持したまま別の版を示す。部分回収の範囲は回収台帳のcoverage_stateとlimitationsで確認する。",
              "目録作成後に追加された研究や、目録に含まれないファイルの全件把握も別途必要になる。原作素材・保留原資料にはアクセスしない。", "",
              "再生成は `python tools/recovery_coverage.py build`、鮮度確認は `python tools/recovery_coverage.py check`。", ""]
+    by_format = collections.defaultdict(collections.Counter)
+    for row in rows:
+        extension = Path(row["path"]).suffix.lower() or "(拡張子なし)"
+        by_format[extension][row["coverage"]] += 1
+    states = ("EXACT_BODY_AVAILABLE", "RECOVERED_REVIEWED_VARIANT",
+              "PARTIAL_BODY_AVAILABLE", "SOURCE_REVISION_DIFFERS",
+              "CATALOG_ONLY_UNRESOLVED")
+    lines += ["## 形式別の収録範囲", "",
+              "旧目録の同じ行をファイル名の拡張子別に集計する。Markdown以外の証拠・記録も対象に含む。", "",
+              "| 形式 | 目録行 | 目録SHA一致 | 別版 | 部分 | 改版差 | 未照合 |",
+              "|---|---:|---:|---:|---:|---:|---:|"]
+    for extension, totals in sorted(by_format.items()):
+        values = [extension, str(sum(totals.values()))]
+        values += [str(totals[state]) for state in states]
+        lines.append("| " + " | ".join(values) + " |")
+    lines += ["", "拡張子は内容・採用可否・所有者の判定ではない。未照合は未保存や不要を意味せず、保留・別名・未取得の証拠を含み得る。原本の削除や本文の自動取得には使わない。", ""]
     return {OUTPUT_TSV: stream.getvalue(), OUTPUT_MD: "\n".join(lines)}
 
 

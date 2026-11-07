@@ -1,0 +1,136 @@
+{
+  "verified_date": "2026-11-05",
+  "base_commit": "edd10819f9b2755edb8c63693f49f3ea54052b68",
+  "checks": {
+    "capture_rows": 6,
+    "exact_readback_all": true,
+    "ledger_data_rows": 9,
+    "ledger_all_nine_columns": true,
+    "deferred_rows": 3,
+    "deferred_ledger_destinations_blank": true,
+    "correlation_data_rows": 47,
+    "all_selected_reviewed": true,
+    "pending_unreviewed": 0,
+    "excluded_latest_not_in_ledger": true,
+    "privacy_derivatives": 0,
+    "same_sha_baseline_aliases": 0
+  },
+  "captures": [
+    {
+      "message_id": "eeb0d4a4-0006-4a1c-9eb3-bfbbb3ee8f34",
+      "destination": "research/recovered/chat_d_history/CHAT_D_20261015_20H_FINAL.md",
+      "sha256": "647977c2827bb684a211dc7a2eb3961676737c3dd58bd58f5290c5efe54f3ed3",
+      "bytes": 5481,
+      "exact_selected_utf8": true,
+      "no_bom": true,
+      "same_sha_baseline_aliases": 0
+    },
+    {
+      "message_id": "4086da24-2127-4af4-a81c-c8fa64a492d3",
+      "destination": "research/recovered/chat_d_history/CHAT_D_20261016_00H_FINAL.md",
+      "sha256": "35d4768b11fdf85c478f097dc6c1e623c71dd5ffa2d60d491c873fc377f618ef",
+      "bytes": 7155,
+      "exact_selected_utf8": true,
+      "no_bom": true,
+      "same_sha_baseline_aliases": 0
+    },
+    {
+      "message_id": "d6004f7a-9125-4934-b799-a37fc42967bb",
+      "destination": "research/recovered/chat_d_history/CHAT_D_20261016_01H_FINAL.md",
+      "sha256": "bd44d3cfb982fd04758eb63b15207ba2a992cb765946b1790182b774149bd0fc",
+      "bytes": 5361,
+      "exact_selected_utf8": true,
+      "no_bom": true,
+      "same_sha_baseline_aliases": 0
+    },
+    {
+      "message_id": "e4c71887-49b5-4d90-ad3f-96e6ee57b5c4",
+      "destination": "research/recovered/chat_d_history/CHAT_D_20261016_02H_FINAL.md",
+      "sha256": "c8abb15bc6e820d659b0558a660e87435684b64588a9bcd5192e60372c80fa82",
+      "bytes": 2089,
+      "exact_selected_utf8": true,
+      "no_bom": true,
+      "same_sha_baseline_aliases": 0
+    },
+    {
+      "message_id": "d65ec850-079f-4bf5-bc5a-36e1ff3e36f5",
+      "destination": "research/recovered/chat_d_history/CHAT_D_20261016_03H_FINAL.md",
+      "sha256": "c88a8c14dc31f5c78e06619b1f6abdf95687bc1b99c8c00d24dd56c7218e3ab1",
+      "bytes": 2288,
+      "exact_selected_utf8": true,
+      "no_bom": true,
+      "same_sha_baseline_aliases": 0
+    },
+    {
+      "message_id": "b0f8cf83-dc52-4842-93b7-a3c2a90a0d84",
+      "destination": "research/recovered/chat_d_history/CHAT_D_20261016_04H_FINAL.md",
+      "sha256": "20d08e88009dcf022acaefe0cfda102bd529523d45355ce661a21a52cf7b8162",
+      "bytes": 2012,
+      "exact_selected_utf8": true,
+      "no_bom": true,
+      "same_sha_baseline_aliases": 0
+    }
+  ],
+  "artifact_inventory_excluding_this_file": [
+    {
+      "path": "CAPTURE_RECEIPT.json",
+      "bytes": 12528,
+      "sha256": "5c8b48333dcbc8abcb73c9b12547e52b027d3118c34b6b085d561f713a29b644"
+    },
+    {
+      "path": "CHAT_D_20261015_20H_FINAL.md",
+      "bytes": 5481,
+      "sha256": "647977c2827bb684a211dc7a2eb3961676737c3dd58bd58f5290c5efe54f3ed3"
+    },
+    {
+      "path": "CHAT_D_20261016_00H_FINAL.md",
+      "bytes": 7155,
+      "sha256": "35d4768b11fdf85c478f097dc6c1e623c71dd5ffa2d60d491c873fc377f618ef"
+    },
+    {
+      "path": "CHAT_D_20261016_01H_FINAL.md",
+      "bytes": 5361,
+      "sha256": "bd44d3cfb982fd04758eb63b15207ba2a992cb765946b1790182b774149bd0fc"
+    },
+    {
+      "path": "CHAT_D_20261016_02H_FINAL.md",
+      "bytes": 2089,
+      "sha256": "c8abb15bc6e820d659b0558a660e87435684b64588a9bcd5192e60372c80fa82"
+    },
+    {
+      "path": "CHAT_D_20261016_03H_FINAL.md",
+      "bytes": 2288,
+      "sha256": "c88a8c14dc31f5c78e06619b1f6abdf95687bc1b99c8c00d24dd56c7218e3ab1"
+    },
+    {
+      "path": "CHAT_D_20261016_04H_FINAL.md",
+      "bytes": 2012,
+      "sha256": "20d08e88009dcf022acaefe0cfda102bd529523d45355ce661a21a52cf7b8162"
+    },
+    {
+      "path": "CORRELATION.tsv",
+      "bytes": 23518,
+      "sha256": "8054af4a075ff38a8099c39901c8b70a116b9e9c7e306c49c627f15ccb869698"
+    },
+    {
+      "path": "DEFERRED.tsv",
+      "bytes": 1017,
+      "sha256": "e277a5399d3cbbdbdc8e93758cf97fe184dc9e4721e094122fee86aa3f25f1ac"
+    },
+    {
+      "path": "INPUT_VERSIONS.tsv",
+      "bytes": 613,
+      "sha256": "818122820fd0ea6fbf3550f55d460402e374d9a511f00ba4127dc28b61dec0fa"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3054,
+      "sha256": "06f0ff9fbcff7deb88126f5b7b42a64b5f3533f0b396e19c2e22a2aab41a5bb5"
+    },
+    {
+      "path": "REPORT_LEDGER.tsv",
+      "bytes": 5403,
+      "sha256": "5f582ceb3428185a342a1172b5bc0c12502c7cccca6dda8cc549a62d7031fb15"
+    }
+  ]
+}
