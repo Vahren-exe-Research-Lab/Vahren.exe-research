@@ -16,7 +16,7 @@
 - 出典 [F§58](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-58)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L95)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteSpotGroupRecord](../symbols/00598CE0.md) → `reads` → [Spot + 0x00 name](../structs/Spot.md#field-0)。通常セーブへ Spot.name を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L122-L127) · `MEM-SPOT-SERIALIZE-0`
 
 <a id="field-1c"></a>
 ## 0x1C units
@@ -30,7 +30,7 @@
 - 本文リンク未解決　S1101§5
 - [元の辞書行](../../structs.tsv#L96)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteSpotGroupRecord](../symbols/00598CE0.md) → `reads` → [Spot + 0x1C units](../structs/Spot.md#field-1c)。通常セーブへ Spot.units を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L122-L132) · `MEM-SPOT-SERIALIZE-1C`
 
 <a id="field-2c"></a>
 ## 0x2C map
@@ -43,7 +43,7 @@
 - 出典 [F§58](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-58)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L97)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteSpotGroupRecord](../symbols/00598CE0.md) → `reads` → [Spot + 0x2C map](../structs/Spot.md#field-2c)。通常セーブへ Spot.map を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L122-L128) · `MEM-SPOT-SERIALIZE-2C`
 
 <a id="field-48"></a>
 ## 0x48 dungeon
@@ -56,7 +56,7 @@
 - 出典 [F§58](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-58)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L98)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteSpotGroupRecord](../symbols/00598CE0.md) → `reads` → [Spot + 0x48 dungeon](../structs/Spot.md#field-48)。通常セーブへ Spot.dungeon を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L122-L136) · `MEM-SPOT-SERIALIZE-48`
 
 <a id="field-80"></a>
 ## 0x80 gain
@@ -69,7 +69,7 @@
 - 出典 [F§58](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-58)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L99)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteSpotGroupRecord](../symbols/00598CE0.md) → `reads` → [Spot + 0x80 gain](../structs/Spot.md#field-80)。通常セーブへ Spot.gain を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L122-L130) · `MEM-SPOT-SERIALIZE-80`
 
 <a id="field-84"></a>
 ## 0x84 castle
@@ -82,7 +82,7 @@
 - 出典 [F§58](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-58)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L100)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteSpotGroupRecord](../symbols/00598CE0.md) → `reads` → [Spot + 0x84 castle](../structs/Spot.md#field-84)。通常セーブへ Spot.castle を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L122-L131) · `MEM-SPOT-SERIALIZE-84`
 
 <a id="field-88"></a>
 ## 0x88 capacity
@@ -95,7 +95,8 @@
 - 出典 [F§58](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-58)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L101)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteSpotGroupRecord](../symbols/00598CE0.md) → `reads` → [Spot + 0x88 capacity](../structs/Spot.md#field-88)。通常セーブへ Spot.capacity を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L122-L133) · `MEM-SPOT-SERIALIZE-88`
+- [Spot_LoadRuntimeCapacity](../symbols/005972E0.md) → `writes` → [Spot + 0x88 capacity](../structs/Spot.md#field-88)。Spot 初期化で capacity を設定する。未指定の0なら文脈の既定値を代用し、その後上限24を適用する。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1379-L1382) · `MEM-SPOT-INIT-88`
 
 <a id="field-8c"></a>
 ## 0x8C castleBattle
@@ -108,7 +109,7 @@
 - 出典 [F§68.1](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-68)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L102)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteSpotGroupRecord](../symbols/00598CE0.md) → `reads` → [Spot + 0x8C castleBattle](../structs/Spot.md#field-8c)。通常セーブへ Spot.castleBattle を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L122-L134) · `MEM-SPOT-SERIALIZE-8C`
 
 <a id="field-90"></a>
 ## 0x90 value
@@ -121,7 +122,7 @@ value（セーブの札 fightvalue）
 - 出典 [F§58](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md#f-58)。自動スクリーニング済み部分回収。保留段落・個人パス段落・未確認の付録を除外。全体の手動確認は未完了。当時のCONFIRMED等を実機確認へ昇格しない。
 - [元の辞書行](../../structs.tsv#L103)
 
-読み手・書き手の個別採録は未実施です。
+- [Save_WriteSpotGroupRecord](../symbols/00598CE0.md) → `reads` → [Spot + 0x90 value](../structs/Spot.md#field-90)。通常セーブへ Spot.value を書き出すため、メモリ上の当該フィールドを読む。保存先への出力であり、このフィールドへの書込みを示さない。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_SAVE_FORMAT.md?plain=1#L122-L135) · `MEM-SPOT-SERIALIZE-90`
 
 <a id="field-b0"></a>
 ## 0xB0 ctx

@@ -42,6 +42,7 @@
 - 本文リンク未解決　R1101§1
 - [元の辞書行](../../structs.tsv#L94)
 
-読み手・書き手の個別採録は未実施です。
+- [GameTask_SetFps](../symbols/004C21F0.md) → `writes` → [GameTask + 0x78 frameMs](../structs/GameTask.md#field-78)。fps から round(1000/fps) で求める1コマの長さを設定する。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_UI_SYSTEM.md?plain=1#L56-L57) · `MEM-FRAME-PERIOD-78`
+- [Window_PumpGameLoop](../symbols/004C24B0.md) → `reads` → [GameTask + 0x78 frameMs](../structs/GameTask.md#field-78)。メインループで1コマの長さを参照する。 （静的確認（既存の公開済み記述の採録。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../REF_UI_SYSTEM.md?plain=1#L56-L57) · `MEM-FRAME-LOOP-78`
 
 [事典の入口](../README.md)

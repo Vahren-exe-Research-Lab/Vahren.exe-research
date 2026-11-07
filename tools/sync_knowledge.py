@@ -1213,6 +1213,21 @@ FILES += (
     'tools/export_static_calls.py',
     'tools/test_static_calls.py',
 )
+FILES += (
+    'reference/fields/owner-field-c0d2856b74d0-001.md',
+    'research/recovered/GITHUB_DISCOVERY_DIFF.tsv',
+    'research/recovered/MEMORY_RELATION_REVIEW.md',
+    'research/recovered/SCHEDULE_CHAT_CHECK.md',
+    'research/recovered/c_topics/DEFERRED.tsv',
+    'research/recovered/c_topics/README.md',
+    'research/recovered/c_topics/REPORT_LEDGER.tsv',
+    'research/recovered/c_topics/REVIEW_RECEIPT.tsv',
+    'research/recovered/c_topics/T026_EDUCATION_MATRIX.md',
+    'research/recovered/c_topics/T027_MERCHANT_PRICE_PURCHASE.md',
+    'research/recovered/random_events/README.md',
+    'research/recovered/random_events/REPORT_LEDGER.tsv',
+    'research/recovered/random_events/T032_RANDOM_EVENT_EFFECTS.md',
+)
 ALLOWED = set(FILES) | {MANIFEST}
 RESTRICTED = (
     re.compile(r"(?i)\b[A-Z]:[\\/]+Users[\\/]+[A-Za-z0-9._-]+"),

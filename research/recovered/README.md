@@ -76,3 +76,7 @@ REAのQUEUE/PROGRESSは保存失敗で古い場合がある。次回はRUN_RESUL
 [PR/Issueと研究本文の所在](GITHUB_SOURCES.md) は固定HEAD・blob識別子で追跡する。本文が複数PRにある場合の対応も、同一バイト列の検査として記録した。
 
 E資料の選別では、除外指定した3報告が一括読み取りに含まれる操作ミスがあった。対象3件を収録物・検証・抽出の対象から除外し、許可済み28パスだけでコピーと照合を行った。[操作監査](e_reports/SCOPE_AUDIT.md)に対象名と修正を記録する。
+
+## メモリ関係と研究チャットの照合
+
+[メモリの読み書き採録](MEMORY_RELATION_REVIEW.md)は既存の関数・フィールドに出典を付けて関係を追加する。[研究チャットの保存先照合](SCHEDULE_CHAT_CHECK.md)は直近B/E/REAの回答とPR HEADを比較し、保存済みと正式採録済みを分ける。[ランダムイベント効果の全文](random_events/README.md)と[C分野資料の回収範囲・保留](c_topics/README.md)も個々の出典・未確認点を保持する。
