@@ -13,7 +13,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parent.parent
 CATALOG_COLUMNS = ("path", "sha256", "bytes", "lines", "va_mentions", "owner", "tasks", "domain", "research_id")
-OUTPUT_COLUMNS = CATALOG_COLUMNS + ("coverage", "destinations")
+OUTPUT_COLUMNS = CATALOG_COLUMNS + ("coverage", "recovered_source_sha256", "destinations")
 LEDGERS = (
     "research/recovered/RECOVERY_LEDGER.tsv",
     "research/recovered/exp/EXP_RECOVERY_LEDGER.tsv",
@@ -43,6 +43,9 @@ def inventory(root, tracked_paths):
     catalog = records(root / "RESEARCH_SOURCE_CATALOG.tsv")
     bodies = collections.defaultdict(set)
     variants = collections.defaultdict(set)
+    partials = collections.defaultdict(set)
+    partial_destinations = set()
+    revisions = collections.defaultdict(lambda: collections.defaultdict(set))
     for relative in sorted(set(tracked_paths) - {OUTPUT_TSV, OUTPUT_MD}):
         path = repository_file(root, relative)
         payload = path.read_bytes()
@@ -69,9 +72,18 @@ def inventory(root, tracked_paths):
             if not row.get("review", "").strip():
                 raise ValueError(f"Missing source review: {destination}")
             source_digest = row["source_sha256"].lower()
-            bodies[digest].add(destination)
-            if digest != source_digest:
+            revisions[row["source_path"]][source_digest].add(destination)
+            if "PARTIAL" in row.get("coverage_state", "").upper():
+                partials[(row["source_path"], source_digest)].add(destination)
+                partial_destinations.add(destination)
+            else:
+                bodies[digest].add(destination)
+            if digest != source_digest and destination not in partial_destinations:
                 variants[(row["source_path"], source_digest)].add(destination)
+    for destinations in bodies.values():
+        destinations.difference_update(partial_destinations)
+    for destinations in variants.values():
+        destinations.difference_update(partial_destinations)
     result = []
     for row in catalog:
         if any(column not in row for column in CATALOG_COLUMNS):
@@ -79,12 +91,27 @@ def inventory(root, tracked_paths):
         digest = row["sha256"].lower()
         exact = bodies.get(digest, set())
         reviewed = variants.get((row["path"], digest), set())
+        partial = partials.get((row["path"], digest), set())
+        different_revisions = {sha: paths for sha, paths in revisions.get(row["path"], {}).items() if sha != digest}
         state = "CATALOG_ONLY_UNRESOLVED"
+        recovered_shas = set()
+        destinations = exact or reviewed or partial
         if exact:
             state = "EXACT_BODY_AVAILABLE"
+            recovered_shas.add(digest)
         elif reviewed:
             state = "RECOVERED_REVIEWED_VARIANT"
-        result.append({**row, "coverage": state, "destinations": ";".join(sorted(exact or reviewed))})
+            recovered_shas.add(digest)
+        elif partial:
+            state = "PARTIAL_BODY_AVAILABLE"
+            recovered_shas.add(digest)
+        elif different_revisions:
+            state = "SOURCE_REVISION_DIFFERS"
+            recovered_shas.update(different_revisions)
+            destinations = set().union(*different_revisions.values())
+        result.append({**row, "coverage": state,
+                       "recovered_source_sha256": ";".join(sorted(recovered_shas)),
+                       "destinations": ";".join(sorted(destinations))})
     return result
 
 
@@ -100,9 +127,12 @@ def render(rows):
              "| 状態 | 行数 | 意味 |", "|---|---:|---|",
              f"| EXACT_BODY_AVAILABLE | {counts['EXACT_BODY_AVAILABLE']} | 同じSHA256の本文をリポジトリ内で確認 |",
              f"| RECOVERED_REVIEWED_VARIANT | {counts['RECOVERED_REVIEWED_VARIANT']} | 元SHAと保存版SHAを持つレビュー済み別版を確認 |",
+             f"| PARTIAL_BODY_AVAILABLE | {counts['PARTIAL_BODY_AVAILABLE']} | レビュー済みの抜粋を確認。本文全体の回収は未完了 |",
+             f"| SOURCE_REVISION_DIFFERS | {counts['SOURCE_REVISION_DIFFERS']} | 同じ原本相対パスの別SHAに対応する回収記録を確認。目録版の本文や全文回収を証明しない |",
              f"| CATALOG_ONLY_UNRESOLVED | {counts['CATALOG_ONLY_UNRESOLVED']} | 同じ本文やレビュー済み別版の対応を、この検査では確認できていない |", "",
              f"対象は目録の {len(rows)} 行。未解決行にも別名の要約・訂正・出典参照が存在し得る。SHAの文字列が資料中に登場しただけでは本文収録と数えない。",
              "目録のSHAは採録時点の値。研究PCの現在の文書との一致、研究の確かさ、GitHubへの送信完了はこの表だけでは判定しない。",
+             "recovered_source_sha256 は対応する回収元のSHA。SOURCE_REVISION_DIFFERSの場合は目録のsha256を保持したまま別の版を示す。部分回収の範囲は回収台帳のcoverage_stateとlimitationsで確認する。",
              "目録作成後に追加された研究や、目録に含まれないファイルの全件把握も別途必要になる。原作素材・保留原資料にはアクセスしない。", "",
              "再生成は `python tools/recovery_coverage.py build`、鮮度確認は `python tools/recovery_coverage.py check`。", ""]
     return {OUTPUT_TSV: stream.getvalue(), OUTPUT_MD: "\n".join(lines)}

@@ -52,3 +52,7 @@ REAのQUEUE/PROGRESSは保存失敗で古い場合がある。次回はRUN_RESUL
 ## 第2回のGitHub読み戻し
 
 [収録コミット85ec911](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/commit/85ec9117fd916d6de504b10a1a6a8f8e2a667381)を別クローンへ取得し、回収済み24ファイルすべてが研究PC原本とバイト一致すること、マニフェスト733項目、493ページ、目録1937行の照合表が一致することを確認した。検索15試験・収録範囲6試験・技能能力12試験は成功。ミニマップは22成功・原作ZIP依存3スキップ。TurnStateの読み書き逆引きと、0x55B010の検索結果に歴史的制約が表示されることを実データで確認した。[PR #22](https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/22)に変更範囲を記録する。
+
+## 辞書から参照する主要解析記録
+
+[Claudeの主要解析記録](findings/README.md) の部分版を収録し、関数・フィールドの略記された出典から節へ移動できるようにした。原本の現在版と目録の版が異なること、559行の除外、全体の手動確認が継続中であることを原本SHA・範囲記録とともに示す。
