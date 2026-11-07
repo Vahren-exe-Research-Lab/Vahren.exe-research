@@ -4,6 +4,27 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-8"></a>
+## outer + 0x8
+
+- [research/recovered/rea_batch3/reports/REA_20261031_13H_P0_VORBIS_COUPLED_ARRAY_CLEANUP_STATIC.md 行 13](../../research/recovered/rea_batch3/reports/REA_20261031_13H_P0_VORBIS_COUPLED_ARRAY_CLEANUP_STATIC.md?plain=1#L13-L13) — - 初期化 `0x005D59BA: E8 -> 0x005B9BC8` の戻りは `0x005D59C2` で `outer+0x08`、別の `0x005D59CD: E8 -> 0x005B9BC8` は `0x005D59D5` で `outer+0x0C` にそれぞれ保存。どちらも独立の確保呼出である（STA
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [research/recovered/rea_batch3/reports/REA_20261031_13H_P0_VORBIS_COUPLED_ARRAY_CLEANUP_STATIC.md 行 31](../../research/recovered/rea_batch3/reports/REA_20261031_13H_P0_VORBIS_COUPLED_ARRAY_CLEANUP_STATIC.md?plain=1#L31-L31) — - 既存 `REF_AUDIO_VORBIS.md` の12Hまでの記載を先行根拠とし、重複しない「outer+0x08 / outer+0x0C cleanup条件依存」だけを統合専任へ候補として残す。新規symbols確定は行わない。
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+<a id="field-c"></a>
+## outer + 0xC
+
+- [research/recovered/rea_batch3/reports/REA_20261031_13H_P0_VORBIS_COUPLED_ARRAY_CLEANUP_STATIC.md 行 13](../../research/recovered/rea_batch3/reports/REA_20261031_13H_P0_VORBIS_COUPLED_ARRAY_CLEANUP_STATIC.md?plain=1#L13-L13) — - 初期化 `0x005D59BA: E8 -> 0x005B9BC8` の戻りは `0x005D59C2` で `outer+0x08`、別の `0x005D59CD: E8 -> 0x005B9BC8` は `0x005D59D5` で `outer+0x0C` にそれぞれ保存。どちらも独立の確保呼出である（STA
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [research/recovered/rea_batch3/reports/REA_20261031_13H_P0_VORBIS_COUPLED_ARRAY_CLEANUP_STATIC.md 行 15](../../research/recovered/rea_batch3/reports/REA_20261031_13H_P0_VORBIS_COUPLED_ARRAY_CLEANUP_STATIC.md?plain=1#L15-L15) — - 後続 `0x005D4D09..0x005D4D0E` は `memset(outer,0,0x70)` を実行する。したがって **`outer+8=NULL` かつ `outer+0xC!=NULL` という部分構築状態をcleanupに渡すと**、2つ目の確保領域をfreeせず参照をゼロ化して失う **条件付
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [research/recovered/rea_batch3/reports/REA_20261031_13H_P0_VORBIS_COUPLED_ARRAY_CLEANUP_STATIC.md 行 31](../../research/recovered/rea_batch3/reports/REA_20261031_13H_P0_VORBIS_COUPLED_ARRAY_CLEANUP_STATIC.md?plain=1#L31-L31) — - 既存 `REF_AUDIO_VORBIS.md` の12Hまでの記載を先行根拠とし、重複しない「outer+0x08 / outer+0x0C cleanup条件依存」だけを統合専任へ候補として残す。新規symbols確定は行わない。
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
 <a id="field-38"></a>
 ## outer + 0x38
 
@@ -19,6 +40,36 @@
 - [research/recovered/rea_batch2/reports/REA_20261103_22H_P0_EH3_STREAMBUF_FINALIZER_PROVENANCE_STATIC.md 行 17](../../research/recovered/rea_batch2/reports/REA_20261103_22H_P0_EH3_STREAMBUF_FINALIZER_PROVENANCE_STATIC.md?plain=1#L17-L17) — - Curator: compare outer+0x48 vs outer+0x3C and wrapper-specific destructor masks against A/T014 save-load, existing `REF_SAVE_PERSISTENCE` and `REF_SAVE_FORMAT
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
 
+<a id="field-40"></a>
+## outer + 0x40
+
+- [research/recovered/rea_batch3/reports/REA_20261102_01H_P0_GITHUB_INTAKE_RECEIPT.md 行 19](../../research/recovered/rea_batch3/reports/REA_20261102_01H_P0_GITHUB_INTAKE_RECEIPT.md?plain=1#L19-L19) — - 次カーソル **09H** `REA-OFFLINE-20261101-09H-P0-OGG-CACHED-HEADER-SERIAL-INDEX-PRODUCER-BRIDGE-STATIC-01`、`0x005D1490` producer／`outer+0x40/+0x48` serial record、in
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+<a id="field-44"></a>
+## outer + 0x44
+
+- [research/recovered/rea_batch3/reports/REA_20261031_18H_P0_VORBIS_BITBUFFER_TEARDOWN_STATIC.md 行 12](../../research/recovered/rea_batch3/reports/REA_20261031_18H_P0_VORBIS_BITBUFFER_TEARDOWN_STATIC.md?plain=1#L12-L12) — - `0x5D4A68`で管理構造体 `outer+0x68` をEBXへ読込み、`0x5D4A6C`にてリスト後処理 `0x5D49F0` を実行。`0x5D4A77/79`で `outer+0x44` が非NULLならfreeする。`0x5D4A84/86`では**配列親EBXのみ**NULL判定し、NULLなら全
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [research/recovered/rea_batch3/reports/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATIC.md 行 12](../../research/recovered/rea_batch3/reports/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATIC.md?plain=1#L12-L12) — - `0x005D4A23`は `outer+0x50`を取得、`0x005D4A26/28`で0か検査。**非0の場合のみ** `0x005D4A2A..0x005D4A34`で `realloc(outer+0x44, outer+0x4C + outer+0x50)` を呼ぶ（E8 `0x005D4A34→0x0
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [research/recovered/rea_batch3/reports/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATIC.md 行 15](../../research/recovered/rea_batch3/reports/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATIC.md?plain=1#L15-L15) — - `0x005D4A60` は `0x005D4A6C` で前記helperを呼んだ後、`0x005D4A77/79`で更新後の `outer+0x44` を検査し、非NULLならfreeする。従って要求サイズが正、旧所有ポインタ非NULL、realloc失敗、別所有者が無い条件では、旧バッファ参照を失いcleanu
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [research/recovered/rea_batch3/reports/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATIC.md 行 28](../../research/recovered/rea_batch3/reports/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATIC.md?plain=1#L28-L28) — - **KB_CANDIDATE**: `0x005D49F0`, `0x005C30BE`, `outer+0x44/+0x4C/+0x50/+0x54`。source原作SHA・3窓sha・8 CALLをEVIDENCEで提示。既存18Hと重複しないrealloc失敗時の所有ポインタ喪失候補だけを統合専任に委譲。k
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [research/recovered/rea_batch3/reports/REA_20261031_20H_P0_VORBIS_GROWTH_NODE_GATE_STATIC.md 行 13](../../research/recovered/rea_batch3/reports/REA_20261031_20H_P0_VORBIS_GROWTH_NODE_GATE_STATIC.md?plain=1#L13-L13) — - 容量不足かつ `outer+0x44 != NULL` なら `0x5D49A5` で `malloc(8)`。**この戻りEAXをNULL検査せず** `0x5D49B3 mov [eax+4],ecx`、`0x5D49B9 mov [eax],edx`へ進む。`0x5D49B0` で `outer+0x50 +
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [research/recovered/rea_batch3/reports/REA_20261031_20H_P0_VORBIS_GROWTH_NODE_GATE_STATIC.md 行 14](../../research/recovered/rea_batch3/reports/REA_20261031_20H_P0_VORBIS_GROWTH_NODE_GATE_STATIC.md?plain=1#L14-L14) — - さらに `0x5D49C2` で整列サイズの新バッファをmallocし、`0x5D49CA` で戻り値を `outer+0x44`へ未検査保存、`0x5D49CD`で使用量 `+0x48=0` に戻す。戻りアドレスは `outer+0x44 + (再初期化後の+0x48)`であり、grow前EBXの旧使用オフセット
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [research/recovered/rea_batch3/reports/REA_20261031_20H_P0_VORBIS_GROWTH_NODE_GATE_STATIC.md 行 20](../../research/recovered/rea_batch3/reports/REA_20261031_20H_P0_VORBIS_GROWTH_NODE_GATE_STATIC.md?plain=1#L20-L20) — - `KB_CANDIDATE`: `0x005D4980` / `0x005D49A5` / `0x005D49B3` / `0x005D49C2` / `outer+0x44/+0x48/+0x4C/+0x50/+0x54` の対応。source原PE SHA、関数窓SHAとE8一覧は `REA_20261031_
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
 <a id="field-48"></a>
 ## outer + 0x48
 
@@ -31,11 +82,53 @@
 - [research/recovered/rea_batch2/reports/REA_20261103_22H_P0_EH3_STREAMBUF_FINALIZER_PROVENANCE_STATIC.md 行 17](../../research/recovered/rea_batch2/reports/REA_20261103_22H_P0_EH3_STREAMBUF_FINALIZER_PROVENANCE_STATIC.md?plain=1#L17-L17) — - Curator: compare outer+0x48 vs outer+0x3C and wrapper-specific destructor masks against A/T014 save-load, existing `REF_SAVE_PERSISTENCE` and `REF_SAVE_FORMAT
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
 
+- [research/recovered/rea_batch3/reports/REA_20261031_20H_P0_VORBIS_GROWTH_NODE_GATE_STATIC.md 行 12](../../research/recovered/rea_batch3/reports/REA_20261031_20H_P0_VORBIS_GROWTH_NODE_GATE_STATIC.md?plain=1#L12-L12) — - `0x5D4988` は `outer+0x48` の旧使用バイト数をEBXへ取得。`0x5D498F/92` は要求を `(size+7)&~7` で8byte整列。`0x5D4995/98/9B` は旧使用量と整列サイズの加算値を `outer+0x4C` 容量と**signed JLE**比較し、収まれば再確
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+<a id="field-4c"></a>
+## outer + 0x4C
+
+- [research/recovered/rea_batch3/reports/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATIC.md 行 12](../../research/recovered/rea_batch3/reports/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATIC.md?plain=1#L12-L12) — - `0x005D4A23`は `outer+0x50`を取得、`0x005D4A26/28`で0か検査。**非0の場合のみ** `0x005D4A2A..0x005D4A34`で `realloc(outer+0x44, outer+0x4C + outer+0x50)` を呼ぶ（E8 `0x005D4A34→0x0
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [research/recovered/rea_batch3/reports/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATIC.md 行 13](../../research/recovered/rea_batch3/reports/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATIC.md?plain=1#L13-L13) — - `0x005D4A39 mov [edi+0x44],eax` は成功判定を介さず、**reallocの戻り値を旧所有ポインタに上書き**する。その後 `outer+0x4C`を加算し、`outer+0x50`をゼロにする。
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [research/recovered/rea_batch3/reports/REA_20261031_20H_P0_VORBIS_GROWTH_NODE_GATE_STATIC.md 行 12](../../research/recovered/rea_batch3/reports/REA_20261031_20H_P0_VORBIS_GROWTH_NODE_GATE_STATIC.md?plain=1#L12-L12) — - `0x5D4988` は `outer+0x48` の旧使用バイト数をEBXへ取得。`0x5D498F/92` は要求を `(size+7)&~7` で8byte整列。`0x5D4995/98/9B` は旧使用量と整列サイズの加算値を `outer+0x4C` 容量と**signed JLE**比較し、収まれば再確
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
 <a id="field-50"></a>
 ## outer + 0x50
 
 - [research/recovered/rea_batch2/reports/REA_20261104_01H_P0_STREAMBUF_POSTCALL_SAME_RECEIVER_STATIC.md 行 24](../../research/recovered/rea_batch2/reports/REA_20261104_01H_P0_STREAMBUF_POSTCALL_SAME_RECEIVER_STATIC.md?plain=1#L24-L24) — - Native .rdata at `0x6384E4` contains little-endian **0x50**, the adjustment read from `[outer vptr+4]` after `0x42A2DD mov [outer],0x6384E0`. Thus `0x42A4C0`
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
+
+- [research/recovered/rea_batch3/reports/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATIC.md 行 12](../../research/recovered/rea_batch3/reports/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATIC.md?plain=1#L12-L12) — - `0x005D4A23`は `outer+0x50`を取得、`0x005D4A26/28`で0か検査。**非0の場合のみ** `0x005D4A2A..0x005D4A34`で `realloc(outer+0x44, outer+0x4C + outer+0x50)` を呼ぶ（E8 `0x005D4A34→0x0
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [research/recovered/rea_batch3/reports/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATIC.md 行 13](../../research/recovered/rea_batch3/reports/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATIC.md?plain=1#L13-L13) — - `0x005D4A39 mov [edi+0x44],eax` は成功判定を介さず、**reallocの戻り値を旧所有ポインタに上書き**する。その後 `outer+0x4C`を加算し、`outer+0x50`をゼロにする。
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [research/recovered/rea_batch3/reports/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATIC.md 行 19](../../research/recovered/rea_batch3/reports/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATIC.md?plain=1#L19-L19) — - `0x005D4980`のV9疑似Cでは、容量不足時に旧バッファをリスト化し、旧使用サイズを `outer+0x50`へ加算し、新しい領域をmallocする。今回確認した `+0x50!=0` の値の由来として整合するが、同関数の全分岐・malloc失敗・ABIは**次回元ASM検証対象**である。未検証のままST
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [research/recovered/rea_batch3/reports/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATIC.md 行 29](../../research/recovered/rea_batch3/reports/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATIC.md?plain=1#L29-L29) — - **次**: `0x005D4980` のnative条件分岐・サイズ更新のproducer証拠を確認し、呼出元 `0x005D45E0/0x005D4780` の `outer+0x50` 再現可能条件、`0x005CFA10` のcleanup前状態を分けて検証する。原作Goldenは別工程。
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [research/recovered/rea_batch3/reports/REA_20261031_20H_P0_VORBIS_GROWTH_NODE_GATE_STATIC.md 行 13](../../research/recovered/rea_batch3/reports/REA_20261031_20H_P0_VORBIS_GROWTH_NODE_GATE_STATIC.md?plain=1#L13-L13) — - 容量不足かつ `outer+0x44 != NULL` なら `0x5D49A5` で `malloc(8)`。**この戻りEAXをNULL検査せず** `0x5D49B3 mov [eax+4],ecx`、`0x5D49B9 mov [eax],edx`へ進む。`0x5D49B0` で `outer+0x50 +
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [research/recovered/rea_batch3/reports/REA_20261031_20H_P0_VORBIS_GROWTH_NODE_GATE_STATIC.md 行 16](../../research/recovered/rea_batch3/reports/REA_20261031_20H_P0_VORBIS_GROWTH_NODE_GATE_STATIC.md?plain=1#L16-L16) — - 19H `0x5D49F0` の `outer+0x50 != 0` realloc条件のproducerは本関数で明確化：**+0x50へ加算するのは旧使用バイト数であり、確保容量とは別**。後続のrealloc上書きリーク候補自体は再発見扱いにしない。
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+<a id="field-54"></a>
+## outer + 0x54
+
+- [research/recovered/rea_batch3/reports/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATIC.md 行 11](../../research/recovered/rea_batch3/reports/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATIC.md?plain=1#L11-L11) — - `0x005D49F0..0x005D4A52` は `outer+0x54` の単方向リストを、各ノードの次ポインタ `node+4` を退避してからペイロード・ノード順にfreeし、`outer+0x54/+0x48`をNULLにする。
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [research/recovered/rea_batch3/reports/REA_20261031_20H_P0_VORBIS_GROWTH_NODE_GATE_STATIC.md 行 13](../../research/recovered/rea_batch3/reports/REA_20261031_20H_P0_VORBIS_GROWTH_NODE_GATE_STATIC.md?plain=1#L13-L13) — - 容量不足かつ `outer+0x44 != NULL` なら `0x5D49A5` で `malloc(8)`。**この戻りEAXをNULL検査せず** `0x5D49B3 mov [eax+4],ecx`、`0x5D49B9 mov [eax],edx`へ進む。`0x5D49B0` で `outer+0x50 +
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
 
 <a id="field-58"></a>
 ## outer + 0x58
@@ -46,16 +139,55 @@
 - [research/recovered/rea_batch2/reports/REA_20261102_01H_P0_OGG_STATE3_DUAL_ENTRY_STATIC.md 行 14](../../research/recovered/rea_batch2/reports/REA_20261102_01H_P0_OGG_STATE3_DUAL_ENTRY_STATIC.md?plain=1#L14-L14) — **KB_CANDIDATE:** REA/T015; semantic key `0x005D0B8A -> 0x005CF970` and `0x005D0D67 -> 0x005CF970`; offset `outer+0x58/+0x60/+0x48`; source SHA/windows SHAは上記。候
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
 
+- [research/recovered/rea_batch3/reports/REA_20261031_02H_P0_VORBIS_HEADER_ROUTER_STATIC.md 行 8](../../research/recovered/rea_batch3/reports/REA_20261031_02H_P0_VORBIS_HEADER_ROUTER_STATIC.md?plain=1#L8-L8) — - `0x005CF010` は先行判定成功の経路で `0x005CF160` に `[EDI+0x58]=3` を書き、その直後の `0x005CF167` からルータを呼ぶ。別の`0x005CF279` は後続パケット処理ループ内。ここで`outer+0x58`とルータが参照する`param_1+8`を同一フィール
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [research/recovered/rea_batch3/reports/REA_20261031_04H_P0_VORBIS_PARENT_ERROR_NORMALIZATION_STATIC.md 行 7](../../research/recovered/rea_batch3/reports/REA_20261031_04H_P0_VORBIS_PARENT_ERROR_NORMALIZATION_STATIC.md?plain=1#L7-L7) — - **第1呼出 `0x005CF167`：** 事前にVorbis type1署名を検査し、`0x005CF160`で`outer+0x58=3`に設定。返値が非0なら`0x005CF16F/171`のtest/jneで`0x005CF1E9`へ進み、**戻り値の種類を問わず-133へ正規化**してcleanupする
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [research/recovered/rea_batch3/reports/REA_20261031_04H_P0_VORBIS_PARENT_ERROR_NORMALIZATION_STATIC.md 行 9](../../research/recovered/rea_batch3/reports/REA_20261031_04H_P0_VORBIS_PARENT_ERROR_NORMALIZATION_STATIC.md?plain=1#L9-L9) — - 両エラー経路とも`0x005CF1F2`（`0x005D3DE0`）と`0x005CF1FB`（`0x005D3D00`）でヘッダ構造をcleanupし、`0x005CF20A`で`outer+0x58=2`へ戻して終了する。
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [research/recovered/rea_batch3/reports/REA_20261031_15H_P0_VORBIS_POSTINIT_RETURN_STATIC.md 行 16](../../research/recovered/rea_batch3/reports/REA_20261031_15H_P0_VORBIS_POSTINIT_RETURN_STATIC.md?plain=1#L16-L16) — - 親 `0x005CF970` は `0x005CF9A1`、`0x005CFA10` は `0x005CFA45` でwrapperを呼び、その戻り値のみ検査してから `0x005D4900` を呼び、`outer+0x58=4` へ進める。新規post-init戻り値検査はこの2つの局所経路では確認できない。
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [research/recovered/rea_batch3/reports/REA_20261031_16H_P0_VORBIS_POSTINIT_CALLERS_STATIC.md 行 13](../../research/recovered/rea_batch3/reports/REA_20261031_16H_P0_VORBIS_POSTINIT_CALLERS_STATIC.md?plain=1#L13-L13) — - `0x005D0020`（関数body V9: 0x5D0020..0x5D04DD）は、状態 `outer+0x58>=2` と `outer+4!=NULL`、目標位置などの前提検査後、`0x5D00E3 -> 0x5D4D20` を実行する。続く `0x5D00E8` ではpost-init返値EAXを判定せ
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [research/recovered/rea_batch3/reports/REA_20261031_16H_P0_VORBIS_POSTINIT_CALLERS_STATIC.md 行 14](../../research/recovered/rea_batch3/reports/REA_20261031_16H_P0_VORBIS_POSTINIT_CALLERS_STATIC.md?plain=1#L14-L14) — - `0x005D04E0`（body V9: 0x5D04E0..0x5D0B57）は `0x5D092C cmp edi,[esi+0x60]`／`0x5D092F je 0x5D094B` で選択streamの一致を検査。一致時だけ `0x5D0952 -> 0x5D4D20` を実行し、直後 `add esp,
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
 <a id="field-60"></a>
 ## outer + 0x60
 
 - [research/recovered/rea_batch2/reports/REA_20261102_01H_P0_OGG_STATE3_DUAL_ENTRY_STATIC.md 行 6](../../research/recovered/rea_batch2/reports/REA_20261102_01H_P0_OGG_STATE3_DUAL_ENTRY_STATIC.md?plain=1#L6-L6) — 2. V9と一致する同じcalleeへの後段 `0x005D0D67 E804ECFFFF CALL 0x005CF970` は既存08H調査済み。前段で`0x005D0D48`に既知serial indexを`outer+0x60`へ、`0x005D0D4B`にstate=3を`outer+0x58`へ格納後に呼ぶ経
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification
 
+<a id="field-68"></a>
+## outer + 0x68
+
+- [research/recovered/rea_batch3/reports/REA_20261031_15H_P0_VORBIS_POSTINIT_RETURN_STATIC.md 行 14](../../research/recovered/rea_batch3/reports/REA_20261031_15H_P0_VORBIS_POSTINIT_RETURN_STATIC.md?plain=1#L14-L14) — - `0x005D4D20` は入力outerの `+0x68`（`0x5D4D2A..2F`）、`+0x04`（`0x5D4D37..39`）、`[outer+4]+0x1C`（`0x5D4D3B..40`）の順にNULLを検査し、いずれか欠損なら `0x005D4D31` から **-1** で早期returnする
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [research/recovered/rea_batch3/reports/REA_20261031_15H_P0_VORBIS_POSTINIT_RETURN_STATIC.md 行 19](../../research/recovered/rea_batch3/reports/REA_20261031_15H_P0_VORBIS_POSTINIT_RETURN_STATIC.md?plain=1#L19-L19) — - 上流 `0x005D57C0` は `0x005D57CA..0x005D57D8` でソース `+0x1C` を先に検査し、NULLならouter memset前に1を返す。非NULLならouter 0x70バイトを初期化、`0x005D57F8` calloc戻りを `0x005D5802` で outer+0
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [research/recovered/rea_batch3/reports/REA_20261031_18H_P0_VORBIS_BITBUFFER_TEARDOWN_STATIC.md 行 12](../../research/recovered/rea_batch3/reports/REA_20261031_18H_P0_VORBIS_BITBUFFER_TEARDOWN_STATIC.md?plain=1#L12-L12) — - `0x5D4A68`で管理構造体 `outer+0x68` をEBXへ読込み、`0x5D4A6C`にてリスト後処理 `0x5D49F0` を実行。`0x5D4A77/79`で `outer+0x44` が非NULLならfreeする。`0x5D4A84/86`では**配列親EBXのみ**NULL判定し、NULLなら全
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
 <a id="field-88"></a>
 ## outer + 0x88
 
 - [research/recovered/rea_batch2/reports/REA_20261104_01H_P0_STREAMBUF_POSTCALL_SAME_RECEIVER_STATIC.md 行 24](../../research/recovered/rea_batch2/reports/REA_20261104_01H_P0_STREAMBUF_POSTCALL_SAME_RECEIVER_STATIC.md?plain=1#L24-L24) — - Native .rdata at `0x6384E4` contains little-endian **0x50**, the adjustment read from `[outer vptr+4]` after `0x42A2DD mov [outer],0x6384E0`. Thus `0x42A4C0`
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
+
+<a id="field-1e0"></a>
+## outer + 0x1E0
+
+- [research/recovered/rea_batch3/reports/REA_20261031_14H_P0_VORBIS_WRAPPER_DOUBLE_CLEANUP_STATIC.md 行 35](../../research/recovered/rea_batch3/reports/REA_20261031_14H_P0_VORBIS_WRAPPER_DOUBLE_CLEANUP_STATIC.md?plain=1#L35-L35) — - **次回P0**：`0x005CF970`/`0x005CFA10` の `outer+0x1E0` 初期値・再初期化所有権と `0x005D4D20` の後処理失敗条件を独立追跡。未実測のNULL/例外・OOM/実ゲーム到達性はVERIFY。
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [research/recovered/rea_batch3/reports/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATIC.md 行 21](../../research/recovered/rea_batch3/reports/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATIC.md?plain=1#L21-L21) — - `0x5CF9E0` は `outer+0x1E0/+0x250` の解放と状態2への変更を行うが、Ghidraの `unaff_ESI` はABI未確定。通常ゲーム経路が条件付きリーク前提を満たすかは未証明。
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

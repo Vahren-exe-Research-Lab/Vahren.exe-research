@@ -4,6 +4,12 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-24"></a>
+## state + 0x24
+
+- [research/recovered/rea_batch3/reports/REA_20261031_23H_P0_VORBIS_GROWTH_TAIL_BOUNDARY_STATIC.md 行 15](../../research/recovered/rea_batch3/reports/REA_20261031_23H_P0_VORBIS_GROWTH_TAIL_BOUNDARY_STATIC.md?plain=1#L15-L15) — - `0x5E0CF0`: `state+0x24` を符号付き半分にして入力数 `[EBP+0x1C]` と掛け、4バイト単位の要求を `0x5E0D1A -> 0x5D4980` に渡す。入力数>0の検査 `0x5E0D25/27` は**growの後**。
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
 <a id="field-52"></a>
 ## state + 0x52
 

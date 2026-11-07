@@ -39,9 +39,13 @@
 | 0x431BE0 | [ResultFlag_GatedStackALWrapper](symbols/00431BE0.md) | func | Bounded original x86 tests vtable+0x64 predicate then reloads AL from stack argument, passes receiver+0x260 to 0x5AA6E0; dynamic result VERIFY |
 | 0x431FB0 | [FastSim_PreselectorRangeGate](symbols/00431FB0.md) | func | Original x86 checks two index/begin/end ranges and 0x80000008 sentinels through implicit EAX; caller 0x40E25E branches on AL. Full ABI, field meaning and runtime reachability VERIFY. |
 | 0x432EE0 | [Script_FireGameHook](symbols/00432EE0.md) | func | ゲーム側からイベントを起動する仕組み（world/fight/politics フック） |
+| 0x433203 | [Event_InstallPhaseFrames](symbols/00433203.md) | code | phase dispatcher 内のフレーム設定位置。4本の並列 VM vector に追加または先頭挿入する。 |
 | 0x4335E0 | [Event_RunExecutionMode](symbols/004335E0.md) | func | スクリプト実行の現在モード engine+0x1EEC3C によって mode1/2/6 などを分岐する実行経路。 |
+| 0x4335FA | [Event_TestBattleActiveGate](symbols/004335FA.md) | code | mode2 の内部分岐。engine+0x1EEC44 の byte を読み、戦闘更新後も再検査して VM runner を分岐する。 |
 | 0x433754 | [Script_ExecEntry_Other](symbols/00433754.md) | code | 0x4A1250 への 3 つ目の CALL。2026-11-03 の記録では通らなかった。 |
 | 0x4338D0 | [Script_RunPass](symbols/004338D0.md) | func | スクリプトの主インタプリタ（1 パス分を実行） |
+| 0x4339B1 | [Script_FetchCurrentFrame](symbols/004339B1.md) | code | インタプリタ内部で4本の並列 VM vector の末尾要素を現在フレームとして読む位置。 |
+| 0x433A2A | [Script_PopCompletedFrame](symbols/00433A2A.md) | code | フレーム終了処理 0x433A2A..0x433A80 の内部位置。4本の vector の end pointer を各4バイト戻す。 |
 | 0x433B62 | [Script_ExecEntry_Field](symbols/00433B62.md) | code | 命令の実行本体 0x4A1250 への CALL。戦闘外の DAT 命令はここを通る（汎用一覧の入口）。 |
 | 0x433E80 | [Event_ExecuteMode6Branch](symbols/00433E80.md) | func | 実行モード6で通常のスクリプト実行ループから tail-jump される処理。 |
 | 0x435550 | [Save_ReadWorldGraphState](symbols/00435550.md) | func | 通常ロードの後半に世界側+0x504の状態を復元する。0x435C10 の書込経路と対応する。 |
@@ -495,7 +499,7 @@
 
 ## 構造体・フィールド
 
-[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 1855 件。型や意味の正式登録前の局所表記も検索できます。
+[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 1939 件。型や意味の正式登録前の局所表記も検索できます。
 
 - [Ctx](structs/Ctx.md)
 - [FrameWnd](structs/FrameWnd.md)
@@ -503,17 +507,18 @@
 - [GameTask](structs/GameTask.md)
 - [Player](structs/Player.md)
 - [Power](structs/Power.md)
+- [ScriptEngine](structs/ScriptEngine.md)
 - [Spot](structs/Spot.md)
 - [StatusWnd](structs/StatusWnd.md)
 - [TurnState](structs/TurnState.md)
 - [UnitDef](structs/UnitDef.md)
 
-辞書項目 482 件、フィールド 107 件、根拠付き関係 114 件。
+辞書項目 486 件、フィールド 113 件、根拠付き関係 132 件。
 
-回収済み文書のVA言及・取得記録 19599 件を検索対象に含みます。辞書未登録のVAも検索できます。
+回収済み文書のVA言及・取得記録 21067 件を検索対象に含みます。辞書未登録のVAも検索できます。
 
 [登録関数間の直接CALL採録条件](static_calls_source.json) — 2373箇所。各関数ページで呼び出し元・先を参照でき、`callers VA --json` / `callees VA --json` でも検索できます。
 
 [訂正履歴](CORRECTIONS.md) — 11 件。訂正済みの旧解釈と現在の解釈を出典行付きで確認できます。
 
-[回収済み研究文書の題名・本文](DOCUMENTS.md) — 340 文書。題名・ファイル名・研究ID・本文の通常文字列を検索できます。
+[回収済み研究文書の題名・本文](DOCUMENTS.md) — 425 文書。題名・ファイル名・研究ID・本文の通常文字列を検索できます。

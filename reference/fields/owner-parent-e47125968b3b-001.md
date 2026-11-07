@@ -4,6 +4,18 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-4"></a>
+## parent + 0x4
+
+- [research/recovered/rea_batch3/reports/REA_20261031_17H_P0_VORBIS_BITBUFFER_INIT_STATIC.md 行 11](../../research/recovered/rea_batch3/reports/REA_20261031_17H_P0_VORBIS_BITBUFFER_INIT_STATIC.md?plain=1#L11-L11) — - 元x86 `0x5D4900` は非ゼロ入力時に親0x48バイトをcallocし、`ESI=0..14` の計15スロットを構築する。 `0x5D4941 cmp esi,7`、`0x5D4944 jne` により**index 7だけ**親の埋込 `parent+0x04` を `parent+0x28` へ渡し
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+<a id="field-28"></a>
+## parent + 0x28
+
+- [research/recovered/rea_batch3/reports/REA_20261031_17H_P0_VORBIS_BITBUFFER_INIT_STATIC.md 行 11](../../research/recovered/rea_batch3/reports/REA_20261031_17H_P0_VORBIS_BITBUFFER_INIT_STATIC.md?plain=1#L11-L11) — - 元x86 `0x5D4900` は非ゼロ入力時に親0x48バイトをcallocし、`ESI=0..14` の計15スロットを構築する。 `0x5D4941 cmp esi,7`、`0x5D4944 jne` により**index 7だけ**親の埋込 `parent+0x04` を `parent+0x28` へ渡し
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
 <a id="field-1e4b4"></a>
 ## parent + 0x1E4B4
 

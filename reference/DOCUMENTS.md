@@ -1028,4 +1028,259 @@
 - [T006 DirectMusic MIDI backend evidence (2026-10-07)](../research/recovered/rng_audio/T006_MIDI_BACKEND.md?plain=1#L1-L1) — `research/recovered/rng_audio/T006_MIDI_BACKEND.md`
   回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 CATALOG_ONLY_UNRESOLVED。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L370-L370)。制約・訂正 Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
 
+- [迫真戦記 新E｜dialog登録前の式文字列解決・Golden同一run拘束](../research/recovered/e_batch2/reports/tests/E_OFFLINE_SYNC_20261029/T020_DIALOG_PREDISPATCH_GOLDEN_RUN_ID_AUDIT_20261028_1849.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/E_OFFLINE_SYNC_20261029/T020_DIALOG_PREDISPATCH_GOLDEN_RUN_ID_AUDIT_20261028_1849.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L371-L371)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [迫真戦記 新E｜T020 dialog 登録・文字列既定値の分岐境界（独立調査）](../research/recovered/e_batch2/reports/tests/E_OFFLINE_SYNC_20261029/T020_DIALOG_REGISTRY_FALLBACK_BRANCH_AUDIT_20261028_1745.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/E_OFFLINE_SYNC_20261029/T020_DIALOG_REGISTRY_FALLBACK_BRANCH_AUDIT_20261028_1745.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L372-L372)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [迫真戦記 新E｜dialog呼出wrapperの5経路別指紋とT018 Golden証拠系譜ゲート](../research/recovered/e_batch2/reports/tests/E_OFFLINE_SYNC_20261029/T020_DIALOG_WRAPPER_FINGERPRINT_GOLDEN_LINEAGE_AUDIT_20261028_1949.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/E_OFFLINE_SYNC_20261029/T020_DIALOG_WRAPPER_FINGERPRINT_GOLDEN_LINEAGE_AUDIT_20261028_1949.md`
+  回収状態 CONTENT_REVIEWED_VARIANT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L373-L373)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success. Complete privacy-only path substitution; see TRANSFORM_RECEIPTS.tsv.
+
+- [迫真戦記 新E｜T018/T020 合成Golden captureの意味情報バインディング監査](../research/recovered/e_batch2/reports/tests/E_OFFLINE_SYNC_20261029/T020_GOLDEN_CAPTURE_SEMANTIC_BINDING_AUDIT_20261028_2149.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/E_OFFLINE_SYNC_20261029/T020_GOLDEN_CAPTURE_SEMANTIC_BINDING_AUDIT_20261028_2149.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L374-L374)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [迫真戦記 新E｜T018/T020 Golden受入証拠の実バイト結合・順序ゲート監査](../research/recovered/e_batch2/reports/tests/E_OFFLINE_SYNC_20261029/T020_GOLDEN_LINEAGE_CONTENT_BOUND_AUDIT_20261028_2045.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/E_OFFLINE_SYNC_20261029/T020_GOLDEN_LINEAGE_CONTENT_BOUND_AUDIT_20261028_2045.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L375-L375)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [T018｜原票と監査出力の投影整合性（2026-10-20 16:51 JST）](../research/recovered/e_batch2/reports/tests/T018_AUDIT_REPORT_BINDING_20261020.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/T018_AUDIT_REPORT_BINDING_20261020.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L381-L381)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [E T018/T020 C-NB02｜Golden段階の名称衝突と入口/配置区別（2026-10-21 19:53 JST）](../research/recovered/e_batch2/reports/tests/T018_CNB02_BRIDGE_STAGE_CROSSWALK_20261021_1953.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/T018_CNB02_BRIDGE_STAGE_CROSSWALK_20261021_1953.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L382-L382)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [T018 C-NB02｜NOT_RUN条件値混入の独立監査（2026-10-20 22時台）](../research/recovered/e_batch2/reports/tests/T018_CNB02_EVIDENCE_CLASS_BOUNDARY_20261020_2244.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/T018_CNB02_EVIDENCE_CLASS_BOUNDARY_20261020_2244.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L383-L383)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [研究E：C-NB02 G0/G1/G2同一run・時系列整合ゲート（2026-10-21 00:50 JST）](../research/recovered/e_batch2/reports/tests/T018_CNB02_G0G1G2_CHRONOLOGY_20261021_0050.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/T018_CNB02_G0G1G2_CHRONOLOGY_20261021_0050.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L384-L384)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [E T018 C-NB02 G0通常UI入口の独立トリアージ（2026-10-20 23時台）](../research/recovered/e_batch2/reports/tests/T018_CNB02_G0_UI_ROUTE_TRIAGE_20261020_2348.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/T018_CNB02_G0_UI_ROUTE_TRIAGE_20261020_2348.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L385-L385)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [E-CNB02-SOURCE-GATE-20261020-2044｜独立3値静的受入・死亡フック分離](../research/recovered/e_batch2/reports/tests/T018_CNB02_SOURCE_GATE_20261020_2044.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/T018_CNB02_SOURCE_GATE_20261020_2044.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L386-L386)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [T018 C-NB02 読取時点別 SOURCE gate｜2026-10-20 21時台](../research/recovered/e_batch2/reports/tests/T018_CNB02_TEMPORAL_SCOPE_20261020_2153.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/T018_CNB02_TEMPORAL_SCOPE_20261020_2153.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L387-L387)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [T018｜監査原票の独立バイトSHA固定照合（2026-10-20 17:44 JST）](../research/recovered/e_batch2/reports/tests/T018_INDEPENDENT_DIGEST_PIN_20261020.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/T018_INDEPENDENT_DIGEST_PIN_20261020.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L388-L388)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [E-AUDIT-20261027-1350-T020-11H-GOLDEN-HELPER-BYTE-ATTEST-01](../research/recovered/e_batch2/reports/tests/T020_11H_GOLDEN_HELPER_BYTE_PROOF_AUDIT_20261027_1350.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/T020_11H_GOLDEN_HELPER_BYTE_PROOF_AUDIT_20261027_1350.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L389-L389)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [E-AUDIT-20261024-22H-ARCHIVE-DAT-SOURCE-DRIFT-01](../research/recovered/e_batch2/reports/tests/T020_ARCHIVE_DAT_EXTRA_SCENARIO_PROVENANCE_20261024_22H.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/T020_ARCHIVE_DAT_EXTRA_SCENARIO_PROVENANCE_20261024_22H.md`
+  回収状態 CONTENT_REVIEWED_VARIANT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L390-L390)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success. Complete privacy-only path substitution; see TRANSFORM_RECEIPTS.tsv.
+
+- [T020｜auto.sav同名・同サイズ・異SHAの保存資料照合（2026-10-22 04時台）](../research/recovered/e_batch2/reports/tests/T020_AUTO_SAVE_BYTE_IDENTITY_CROSSWALK_20261022_0450.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/T020_AUTO_SAVE_BYTE_IDENTITY_CROSSWALK_20261022_0450.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L391-L391)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [E T018/T020｜戦闘要求と初期化・ScriptBattle実行・active化の混同防止（2026-10-23 15時台）](../research/recovered/e_batch2/reports/tests/T020_BATTLE_REQUEST_ACTIVATION_PHASE_SPLIT_20261023_15H.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/T020_BATTLE_REQUEST_ACTIVATION_PHASE_SPLIT_20261023_15H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L392-L392)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [E T018/T020｜C-NB02 戦闘終了→戦略復帰の証拠・二重反映防止ゲート](../research/recovered/e_batch2/reports/tests/T020_BATTLE_RETURN_COMMIT_GATE_20261021_2147.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/T020_BATTLE_RETURN_COMMIT_GATE_20261021_2147.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L393-L393)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [E-AUDIT-20261026-1946-T018-T020-CAPTURE-EXCEPTION-CLASS-EPOCH-01](../research/recovered/e_batch2/reports/tests/T020_CNB02_CAPTURE_EXCEPTION_CLASS_EPOCH_AUDIT_20261026_1946.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/T020_CNB02_CAPTURE_EXCEPTION_CLASS_EPOCH_AUDIT_20261026_1946.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L394-L394)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [E-AUDIT-20261026-1849-T018-T020-CAPTURE-GAP-TEMPORAL-COVERAGE-01](../research/recovered/e_batch2/reports/tests/T020_CNB02_CAPTURE_GAP_TEMPORAL_COVERAGE_20261026_1849.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/T020_CNB02_CAPTURE_GAP_TEMPORAL_COVERAGE_20261026_1849.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L395-L395)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [E-AUDIT-20261024-21H-T018-T020-DAT-RESTORE-LINEAGE-01](../research/recovered/e_batch2/reports/tests/T020_CNB02_DAT_BASELINE_RESTORATION_AUDIT_20261024_21H.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/T020_CNB02_DAT_BASELINE_RESTORATION_AUDIT_20261024_21H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L396-L396)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [E-AUDIT-20261025-21H-T018-T020-DUAL-WATCH-COUNTER-PHASE-01](../research/recovered/e_batch2/reports/tests/T020_CNB02_DUAL_WATCH_COUNTER_PHASE_20261025_21H.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/T020_CNB02_DUAL_WATCH_COUNTER_PHASE_20261025_21H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L397-L397)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [E-AUDIT-20261027-0552-T018-T020-G0-ATTACK-COUNT-NONIDENTITY-01](../research/recovered/e_batch2/reports/tests/T020_CNB02_G0_ATTACK_COUNT_NONIDENTITY_AUDIT_20261027_05H.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/T020_CNB02_G0_ATTACK_COUNT_NONIDENTITY_AUDIT_20261027_05H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L398-L398)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [E-AUDIT-20261027-0449-T018-T020-G0-SAVE-CLOCK-B04-RECEIPT-01](../research/recovered/e_batch2/reports/tests/T020_CNB02_G0_SAVED_PRESTATE_CLOCK_AND_B04_CACHE_RECEIPTS_20261027_04H.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/T020_CNB02_G0_SAVED_PRESTATE_CLOCK_AND_B04_CACHE_RECEIPTS_20261027_04H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L399-L399)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [E-AUDIT-20261025-15H-T018-T020-G1-CLICK-SAVE-ORDER-RECONCILIATION-01](../research/recovered/e_batch2/reports/tests/T020_CNB02_G1_CLICK_SAVE_ORDER_RECONCILIATION_20261025_15H.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/T020_CNB02_G1_CLICK_SAVE_ORDER_RECONCILIATION_20261025_15H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L400-L400)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [E-AUDIT-20261025-16H-T018-T020-G1-PHASE-CONTRACT-EXEC-01](../research/recovered/e_batch2/reports/tests/T020_CNB02_G1_PHASE_CONTRACT_EXECUTABLE_REGRESSION_20261025_16H.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/T020_CNB02_G1_PHASE_CONTRACT_EXECUTABLE_REGRESSION_20261025_16H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L401-L401)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [E-AUDIT-20261025-17H-T018-T020-G2-ACTIVE-WINDOW-OVERLAY-01](../research/recovered/e_batch2/reports/tests/T020_CNB02_G2_ACTIVE_WINDOW_SCHEMA_REVIEW_20261025_17H.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/T020_CNB02_G2_ACTIVE_WINDOW_SCHEMA_REVIEW_20261025_17H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L402-L402)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [E-AUDIT-20261026-10H-T018-T020-G2-SEMANTIC-PARITY-01](../research/recovered/e_batch2/reports/tests/T020_CNB02_G2_CROSS_GENERATION_PARITY_GATE_20261026_10H.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/T020_CNB02_G2_CROSS_GENERATION_PARITY_GATE_20261026_10H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L403-L403)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [E-AUDIT-20261026-1158-T018-T020-CROSSROLE-IDENTITY-ALIAS-01](../research/recovered/e_batch2/reports/tests/T020_CNB02_G2_CROSS_ROLE_VISIBLE_ALIAS_DIAGNOSTIC_20261026_1158.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/T020_CNB02_G2_CROSS_ROLE_VISIBLE_ALIAS_DIAGNOSTIC_20261026_1158.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L404-L404)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [E-AUDIT-20261026-1350-T018-T020-G2-PLACEHOLDER-IDENTITY-01](../research/recovered/e_batch2/reports/tests/T020_CNB02_G2_PLACEHOLDER_IDENTITY_REVIEW_20261026_13H.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/T020_CNB02_G2_PLACEHOLDER_IDENTITY_REVIEW_20261026_13H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L405-L405)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [E-AUDIT-20261026-09H-T018-T020-G2-ROSTER-PRESENCE-REGRESSION-01](../research/recovered/e_batch2/reports/tests/T020_CNB02_G2_ROSTER_ROLE_COVERAGE_REGRESSION_20261026_09H.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/T020_CNB02_G2_ROSTER_ROLE_COVERAGE_REGRESSION_20261026_09H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L406-L406)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [E-AUDIT-20261025-10H-T018-T020-G2-ROSTER-SEMANTIC-CHECK-01](../research/recovered/e_batch2/reports/tests/T020_CNB02_G2_ROSTER_SEMANTIC_GAP_READONLY_20261025_10H.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/T020_CNB02_G2_ROSTER_SEMANTIC_GAP_READONLY_20261025_10H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L407-L407)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [E-AUDIT-20261026-08H-T018-T020-G2-ROSTER-SHAPE-NEGATIVE-EXEC-01](../research/recovered/e_batch2/reports/tests/T020_CNB02_G2_ROSTER_SHAPE_NEGATIVE_EXEC_20261026_08H.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/T020_CNB02_G2_ROSTER_SHAPE_NEGATIVE_EXEC_20261026_08H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L408-L408)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [E-AUDIT-20261025-11H-T018-T020-G2-SEMANTIC-REVIEW-RUNNER-01](../research/recovered/e_batch2/reports/tests/T020_CNB02_G2_SEMANTIC_REVIEW_RUNNER_20261025_11H.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/T020_CNB02_G2_SEMANTIC_REVIEW_RUNNER_20261025_11H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L409-L409)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [E-AUDIT-20261026-1253-T018-T020-SUPPORT-PRESENCE-DEPL-REVIEW-01](../research/recovered/e_batch2/reports/tests/T020_CNB02_G2_SUPPORT_PARTICIPATION_DEPLOYMENT_REVIEW_20261026_1253.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/T020_CNB02_G2_SUPPORT_PARTICIPATION_DEPLOYMENT_REVIEW_20261026_1253.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L410-L410)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [E-AUDIT-20261025-07H-T018-T019-T020-INYUME-DEATH-SELECT-PROVENANCE-01](../research/recovered/e_batch2/reports/tests/T020_CNB02_INYUME_DEATH_SELECT_PROVENANCE_GATE_20261025_07H.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/T020_CNB02_INYUME_DEATH_SELECT_PROVENANCE_GATE_20261025_07H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L411-L411)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [E-AUDIT-20261025-18H-T018-T020-MODE2-PREACTIVE-PHASE-BOUNDARY-01](../research/recovered/e_batch2/reports/tests/T020_CNB02_MODE2_PREACTIVE_PHASE_BOUNDARY_20261025_18H.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/T020_CNB02_MODE2_PREACTIVE_PHASE_BOUNDARY_20261025_18H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L412-L412)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [E-AUDIT-20261025-06H-T018-T020-PO2-CANCEL-AUDIO-VISUAL-GATE-01](../research/recovered/e_batch2/reports/tests/T020_CNB02_PO2_OPTIONAL_EVENT_CANCEL_AUDIO_VISUAL_GATE_20261025_06H.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/T020_CNB02_PO2_OPTIONAL_EVENT_CANCEL_AUDIO_VISUAL_GATE_20261025_06H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L413-L413)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [E-AUDIT-20261026-1755-T018-T020-PTR-EPOCH-OVERLAP-01](../research/recovered/e_batch2/reports/tests/T020_CNB02_POINTER_IDENTITY_EPOCH_OVERLAP_20261026_1755.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/T020_CNB02_POINTER_IDENTITY_EPOCH_OVERLAP_20261026_1755.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L414-L414)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [E-AUDIT-20261025-12H-T018-T020-POSTBATTLE-WARTREE-PHASE-GATE-01](../research/recovered/e_batch2/reports/tests/T020_CNB02_POSTBATTLE_WAR_TREE_VS_DEPLOYED_G2_PHASE_GATE_20261025_12H.md?plain=1#L1-L1) — `research/recovered/e_batch2/reports/tests/T020_CNB02_POSTBATTLE_WAR_TREE_VS_DEPLOYED_G2_PHASE_GATE_20261025_12H.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 No SHA match in baseline SOURCE_MANIFEST metadata; new independent authored body.。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L415-L415)。制約・訂正 Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
+- [REA 2026-11-02 01H｜P0原本静的根拠・旧研究3件回収・GitHub readback](../research/recovered/rea_batch3/reports/REA_20261102_01H_P0_GITHUB_INTAKE_RECEIPT.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261102_01H_P0_GITHUB_INTAKE_RECEIPT.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L416-L416)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [REA 2026-11-02 00H｜原本x86独立監査・PRIVATE GitHub入庫・3件旧研究回収](../research/recovered/rea_batch3/reports/REA_20261102_00H_P0_GITHUB_INTAKE_RECEIPT.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261102_00H_P0_GITHUB_INTAKE_RECEIPT.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L417-L417)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [REA 2026-11-02 00H P0｜CRT FILE lockのindex境界とpointer境界](../research/recovered/rea_batch3/reports/REA_20261102_00H_P0_FILE2_LOCK_BRANCH_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261102_00H_P0_FILE2_LOCK_BRANCH_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L418-L418)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [REA 2026-11-01 23H｜新規P0解析と過去3IDのPRIVATE GitHub入庫・独立読戻し](../research/recovered/rea_batch3/reports/REA_20261101_23H_P0_GITHUB_INTAKE_RECEIPT.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261101_23H_P0_GITHUB_INTAKE_RECEIPT.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L419-L419)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [迫真戦記 REA 2026-11-01 23H P0｜__getstream 二層ロックとFILE*所有権（原本x86）](../research/recovered/rea_batch3/reports/REA_20261101_23H_P0_GETSTREAM_LOCK_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261101_23H_P0_GETSTREAM_LOCK_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L420-L420)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [REA 2026-11-01 22H｜GitHub PRIVATE intake / 原本x86 P0研究保存・読み戻しreceipt](../research/recovered/rea_batch3/reports/REA_20261101_22H_P0_GITHUB_INTAKE_RECEIPT.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261101_22H_P0_GITHUB_INTAKE_RECEIPT.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L421-L421)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [迫真戦記 REA 2026-11-01 22H P0 \| __fsopen 空filenameとEH4後始末（原本x86）](../research/recovered/rea_batch3/reports/REA_20261101_22H_P0_FSOPEN_EMPTY_NAME_UNWIND_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261101_22H_P0_FSOPEN_EMPTY_NAME_UNWIND_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L422-L422)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [REA 2026-11-01 21H P0｜__local_unwind4 を呼ぶ4経路と NLG/trampoline](../research/recovered/rea_batch3/reports/REA_20261101_21H_P0_UNWIND_CALLERS_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261101_21H_P0_UNWIND_CALLERS_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L423-L423)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [REA 2026-11-01 20H P0｜ftell SEH4 の検索フェーズと unwind cleanup の区別](../research/rea/REA_20261101_20H_P0_EH4_DISPATCH_PHASE_STATIC.md?plain=1#L1-L1) — `research/rea/REA_20261101_20H_P0_EH4_DISPATCH_PHASE_STATIC.md`
+  回収状態 ALREADY_PRESENT_EXACT_ALIAS。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L424-L424)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [REA 2026-11-01 19H P0｜CRT ftell の SEH4 scope table と unlock cleanup](../research/rea/REA_20261101_19H_P0_FTELL_SEH4_SCOPE_STATIC.md?plain=1#L1-L1) — `research/rea/REA_20261101_19H_P0_FTELL_SEH4_SCOPE_STATIC.md`
+  回収状態 ALREADY_PRESENT_EXACT_ALIAS。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L425-L425)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [迫真戦記 REA｜2026-11-01 17時台｜Ogg tellのSEH共有フレーム・NULL異常系の独立静的検証](../research/rea/REA_20261101_17H_P0_FTELL_FRAME_STATIC.md?plain=1#L1-L1) — `research/rea/REA_20261101_17H_P0_FTELL_FRAME_STATIC.md`
+  回収状態 ALREADY_PRESENT_EXACT_ALIAS。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L426-L426)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [2026-11-01 02H REA P0 二除数検証・独立読戻し受領](../research/recovered/rea_batch3/reports/REA_20261101_02H_RESIDUE_TWO_DIVISORS_READBACK_RECEIPT.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261101_02H_RESIDUE_TWO_DIVISORS_READBACK_RECEIPT.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L427-L427)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [REA｜2026-11-01 02時台 追加差分：residue2 の第2除数をparser→book初期化まで追跡](../research/recovered/rea_batch3/reports/REA_20261101_02H_P0_VORBIS_RESIDUE_SECOND_DIVISOR_COMPILED_BOOK_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261101_02H_P0_VORBIS_RESIDUE_SECOND_DIVISOR_COMPILED_BOOK_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L428-L428)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [REA｜2026-11-01 02時台 P0：residue2第1除数のパーサ正常終了条件を再評価](../research/recovered/rea_batch3/reports/REA_20261101_02H_P0_VORBIS_RESIDUE_FIRST_DIVISOR_EOF_LATCH_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261101_02H_P0_VORBIS_RESIDUE_FIRST_DIVISOR_EOF_LATCH_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L429-L429)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [REA｜2026-11-01 01時台：Vorbis residue type 2 の入力ゲートと実行経路](../research/recovered/rea_batch3/reports/REA_20261101_01H_P0_VORBIS_RESIDUE_TYPE2_PARSER_GATE_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261101_01H_P0_VORBIS_RESIDUE_TYPE2_PARSER_GATE_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L430-L430)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [REA 2026-11-01 00H｜Vorbis 間接CALL分岐と3つのgrow呼出元の接続（P0）](../research/recovered/rea_batch3/reports/REA_20261101_00H_P0_VORBIS_INDIRECT_CALLBACK_DISPATCH_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261101_00H_P0_VORBIS_INDIRECT_CALLBACK_DISPATCH_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L431-L431)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [REA 2026-10-31 23H｜Vorbis grow残余callersの境界・NULL使用・除算前提（P0）](../research/recovered/rea_batch3/reports/REA_20261031_23H_P0_VORBIS_GROWTH_TAIL_BOUNDARY_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261031_23H_P0_VORBIS_GROWTH_TAIL_BOUNDARY_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L432-L432)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [REA 2026-10-31 22H｜Vorbis grow複数呼出元の二重確保・分母制約（P0）](../research/recovered/rea_batch3/reports/REA_20261031_22H_P0_VORBIS_GROWTH_CALLER_PAIR_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261031_22H_P0_VORBIS_GROWTH_CALLER_PAIR_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L433-L433)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [REA 2026-10-31 21H｜Vorbis grow呼出元の確保ポインタ利用条件（P0）](../research/recovered/rea_batch3/reports/REA_20261031_21H_P0_VORBIS_ALLOC_CALLER_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261031_21H_P0_VORBIS_ALLOC_CALLER_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L434-L434)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [REA 2026-10-31 20H｜Vorbis確保容量のgrowと退避ノードのNULL境界（P0）](../research/recovered/rea_batch3/reports/REA_20261031_20H_P0_VORBIS_GROWTH_NODE_GATE_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261031_20H_P0_VORBIS_GROWTH_NODE_GATE_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L435-L435)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [REA 20H｜保存後の最終受領記録（2026-10-31）](../research/recovered/rea_batch3/reports/REA_20261031_20H_P0_BUFFER_GROWTH_FINAL_RECEIPT.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261031_20H_P0_BUFFER_GROWTH_FINAL_RECEIPT.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L436-L436)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [REA 2026-10-31 19H｜Vorbis list-maintenance realloc失敗時の所有参照喪失（P0）](../research/recovered/rea_batch3/reports/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261031_19H_P0_VORBIS_REALLOC_OWNER_LOSS_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L437-L437)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [REA 2026-10-31 18H｜Vorbis bitbuffer解放・NULLスロット境界（P0）](../research/recovered/rea_batch3/reports/REA_20261031_18H_P0_VORBIS_BITBUFFER_TEARDOWN_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261031_18H_P0_VORBIS_BITBUFFER_TEARDOWN_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L438-L438)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [REA 2026-10-31 17H｜Vorbis bitbuffer初期化・二段階の確保失敗条件（P0）](../research/recovered/rea_batch3/reports/REA_20261031_17H_P0_VORBIS_BITBUFFER_INIT_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261031_17H_P0_VORBIS_BITBUFFER_INIT_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L439-L439)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [REA｜2026-10-31 16H｜Vorbis post-init残り2呼出元と別初期化callocの条件付きNULL経路（P0）](../research/recovered/rea_batch3/reports/REA_20261031_16H_P0_VORBIS_POSTINIT_CALLERS_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261031_16H_P0_VORBIS_POSTINIT_CALLERS_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L440-L440)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [REA｜2026-10-31 15H｜Vorbis post-initialize の戻り値破棄と正常初期化の前提（P0）](../research/recovered/rea_batch3/reports/REA_20261031_15H_P0_VORBIS_POSTINIT_RETURN_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261031_15H_P0_VORBIS_POSTINIT_RETURN_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L441-L441)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [REA｜2026-10-31 14H｜Vorbis初期化ラッパーの重複cleanup・戻り値伝播（P0）](../research/recovered/rea_batch3/reports/REA_20261031_14H_P0_VORBIS_WRAPPER_DOUBLE_CLEANUP_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261031_14H_P0_VORBIS_WRAPPER_DOUBLE_CLEANUP_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L442-L442)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [REA｜2026-10-31 13H｜Vorbis外側配列の独立確保・cleanupの条件付き解放漏れ（P0）](../research/recovered/rea_batch3/reports/REA_20261031_13H_P0_VORBIS_COUPLED_ARRAY_CLEANUP_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261031_13H_P0_VORBIS_COUPLED_ARRAY_CLEANUP_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L443-L443)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [REA｜2026-10-31 12H｜Vorbis look配列の2モードcallocと親構造体のNULLガード差（P0）](../research/recovered/rea_batch3/reports/REA_20261031_12H_P0_VORBIS_LOOK_ARRAY_CALLOC_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261031_12H_P0_VORBIS_LOOK_ARRAY_CALLOC_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L444-L444)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [REA 2026-10-31 11H｜V9横断補助CLIの配置差異復旧記録](../research/recovered/rea_batch3/reports/REA_20261031_11H_V9_INSPECT_PATH_RECOVERY.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261031_11H_V9_INSPECT_PATH_RECOVERY.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L445-L445)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [REA｜2026-10-31 11H｜Vorbis codebook look変換・借用参照消去・確保失敗分岐（P0）](../research/recovered/rea_batch3/reports/REA_20261031_11H_P0_VORBIS_LOOK_CONVERSION_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261031_11H_P0_VORBIS_LOOK_CONVERSION_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L446-L446)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [REA｜2026-10-31 10H｜Vorbis codebook所有権・解放順と借用ポインタ（P0）](../research/recovered/rea_batch3/reports/REA_20261031_10H_P0_VORBIS_CODEBOOK_OWNER_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261031_10H_P0_VORBIS_CODEBOOK_OWNER_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L447-L447)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [REA09H read-only integrated V9 cross-reference supplement](../research/recovered/rea_batch3/reports/REA_20261031_09H_V9_COVERAGE_INSPECT.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261031_09H_V9_COVERAGE_INSPECT.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L448-L448)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [REA09H readback path recovery](../research/recovered/rea_batch3/reports/REA_20261031_09H_READBACK_PATH_RECOVERY.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261031_09H_READBACK_PATH_RECOVERY.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L449-L449)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [REA｜2026-10-31 09H｜Vorbis codebook配列確保失敗とcleanup（P0）](../research/recovered/rea_batch3/reports/REA_20261031_09H_P0_VORBIS_CODEBOOK_MALLOC_CLEANUP_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261031_09H_P0_VORBIS_CODEBOOK_MALLOC_CLEANUP_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L450-L450)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [REA 08H lightweight read-only probe recovery](../research/recovered/rea_batch3/reports/REA_20261031_08H_PROBE_QUOTING_RECOVERY.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261031_08H_PROBE_QUOTING_RECOVERY.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L451-L451)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [REA｜2026-10-31 08H｜Vorbis bitreader初期化とcodebook長さ・積算上限（P0）](../research/recovered/rea_batch3/reports/REA_20261031_08H_P0_VORBIS_CODEBOOK_WIDTH_GUARD_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261031_08H_P0_VORBIS_CODEBOOK_WIDTH_GUARD_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L452-L452)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [迫真戦記 REA｜2026-10-31 07H｜Vorbis bitreader EOF・vendor長境界の独立静的照合（P0）](../research/recovered/rea_batch3/reports/REA_20261031_07H_P0_VORBIS_BITREADER_EOF_BOUNDS_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261031_07H_P0_VORBIS_BITREADER_EOF_BOUNDS_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L453-L453)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [迫真戦記 REA｜2026-10-31 06H｜Vorbisコメント配列の終端と途中失敗cleanup（P0）](../research/recovered/rea_batch3/reports/REA_20261031_06H_P0_VORBIS_COMMENT_SENTINEL_TEARDOWN_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261031_06H_P0_VORBIS_COMMENT_SENTINEL_TEARDOWN_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L454-L454)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [迫真戦記 REA｜2026-10-31 05H｜Vorbis type3 calloc失敗時のNULLガード（P0）](../research/recovered/rea_batch3/reports/REA_20261031_05H_P0_VORBIS_CALLOC_NULL_GUARD_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261031_05H_P0_VORBIS_CALLOC_NULL_GUARD_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L455-L455)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [REA 2026-10-31 05H｜KB CLIの引数エンコード不整合（復旧記録）](../research/recovered/rea_batch3/reports/REA_20261031_05H_KB_CANDIDATES_ENCODING_RECOVERY.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261031_05H_KB_CANDIDATES_ENCODING_RECOVERY.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L456-L456)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [迫真戦記 REA｜2026-10-31 04H｜Vorbisヘッダエラーの親関数による非対称な伝播（P0）](../research/recovered/rea_batch3/reports/REA_20261031_04H_P0_VORBIS_PARENT_ERROR_NORMALIZATION_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261031_04H_P0_VORBIS_PARENT_ERROR_NORMALIZATION_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L457-L457)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [REA 04H｜検索索引の指定名と実在ファイル名の差異（非停止の復旧記録）](../research/recovered/rea_batch3/reports/REA_20261031_04H_P0_INDEX_PATH_RECOVERY.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261031_04H_P0_INDEX_PATH_RECOVERY.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L458-L458)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [迫真戦記 REA｜2026-10-31 03H｜Vorbis type1→type3→type5状態遷移と未検証の確保失敗（P0）](../research/recovered/rea_batch3/reports/REA_20261031_03H_P0_VORBIS_HEADER_TRANSITION_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261031_03H_P0_VORBIS_HEADER_TRANSITION_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L459-L459)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
+- [迫真戦記 REA｜2026-10-31 02H｜Vorbisヘッダ種別ルータとセットアップ入口（P0）](../research/recovered/rea_batch3/reports/REA_20261031_02H_P0_VORBIS_HEADER_ROUTER_STATIC.md?plain=1#L1-L1) — `research/recovered/rea_batch3/reports/REA_20261031_02H_P0_VORBIS_HEADER_ROUTER_STATIC.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 NOT_IN_OLD_CATALOG_CURRENT_METADATA。[回収台帳](../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L460-L460)。制約・訂正 HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
 [事典の入口](README.md)

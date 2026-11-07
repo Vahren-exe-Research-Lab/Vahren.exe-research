@@ -10,6 +10,12 @@
 - [research/recovered/other_reports/T009_CONTEXT_MODEL.md 行 195](../../research/recovered/other_reports/T009_CONTEXT_MODEL.md?plain=1#L195-L195) — - Spot instance loader VA 0x5973AF..0x597412では、spot固有 `capacity` が0ならscenario `spot_capacity` (`owner+0x0C`) をfallbackに採用し、その後Spot runtime `+0x88`をさらに `min(valu
   制約・訂正　Historical authored static claims only; no new native/runtime validation; referenced evidence omitted; Golden/READY unchanged
 
+<a id="field-10"></a>
+## owner + 0x10
+
+- [research/recovered/rea_batch3/reports/REA_20261031_23H_P0_VORBIS_GROWTH_TAIL_BOUNDARY_STATIC.md 行 18](../../research/recovered/rea_batch3/reports/REA_20261031_23H_P0_VORBIS_GROWTH_TAIL_BOUNDARY_STATIC.md?plain=1#L18-L18) — - `0x5E0DC0`: ストリーム範囲差が正であることを `0x5E0DF5/F7` で確認後、`0x5E0DFE` で `[EBP-0x0C]`（入力構造のstride）で除算し、`0x5E0E0C` で別の `[EBP-0x14]`（`[owner+0x10]` が指す値）を除数として再度除算する。**この2除
+  制約・訂正　HISTORICAL_REPORT_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_PRECEDENCE; NO_FORMAL_OR_RUNTIME_PROMOTION
+
 <a id="field-14"></a>
 ## owner + 0x14
 

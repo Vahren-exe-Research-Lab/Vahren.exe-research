@@ -107,3 +107,9 @@ TurnState	0x0A	u8	gameClear	ゲームクリア（isGameClear が読む。0 で�
 TurnState	0x14	i32	turn	経過ターン（0x472714 で +1）。セーブ見出しの 4 番目にも書く	静的確認	F§62.1, S1101§2
 TurnState	0x18	vec	order	手番順の勢力（Power*）。セーブは名前で書き、ロードで引き直す	静的確認	F§59, T014§normal save tail
 TurnState	0x38	i32	phase	段階。2 以上なら現在の勢力＝order[phase−2]	静的確認	F§59, §69.2, §76.2
+ScriptEngine	0x1EED60	i32	resettableElapsed	getTime が返す int32 の経過カウンタ。resetTime はこの値だけを0に戻す。絶対時計の位相とは別。	静的確認	data/T010_EVENT_SCHEDULER.md lines108-133; F§82.1
+ScriptEngine	0x1EED78	vec	executionBlocks	VM の並列フレーム・ブロック列。現在フレームは末尾要素。frameInstallMode=0 では末尾に追加。	静的確認	data/T010_EVENT_SCHEDULER.md lines229-259,344; F§82.1
+ScriptEngine	0x1EED88	vec	executionPCs	VM の並列 PC 列。現在フレームは末尾要素。frameInstallMode=0 では先頭に0を挿入。	静的確認	data/T010_EVENT_SCHEDULER.md lines229-259,344; F§82.1
+ScriptEngine	0x1EED98	vec	executionModes	VM の並列実行モード列。現在フレームは末尾要素。シナリオの phase identity とは独立。	静的確認	data/T010_EVENT_SCHEDULER.md lines229-259,344; F§82.1
+ScriptEngine	0x1EEDA8	vec	executionFrameKinds	VM の並列フレーム種別列。現在フレームは末尾要素。frameInstallMode=0 では先頭に0を挿入。	静的確認	data/T010_EVENT_SCHEDULER.md lines229-259,344; F§82.1
+ScriptEngine	0x1EEC44	u8	battleActive	mode2 で戦闘更新の前後に読む byte のゲート。合法な状態遷移の全体は未確認。	静的確認	data/T010_EVENT_SCHEDULER.md lines375-376; F§82.1

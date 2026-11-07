@@ -92,3 +92,7 @@ E資料の選別では、除外指定した3報告が一括読み取りに含ま
 ## 旧目録外のREAと次の追加回収
 
 [REAの現在版45報告](rea_batch2/README.md)、[戦闘・AIの追加44報告](b_batch5/README.md)、[乱数イベント選択・音声の主要3文書](rng_audio/README.md)を回収した。REAの[補足目録](rea_batch2/RESEARCH_SOURCE_CATALOG_SUPPLEMENT.tsv)は旧目録1937件を変更せず、旧目録外の45現在版のSHAを記録する。[ID重複などの意味的保留](rea_batch2/DEFERRED.md)も確認する。[回収済み全文書](../../reference/DOCUMENTS.md)は、題名・研究ID・本文の通常文字列検索の入口になる。
+
+## VMの型付き項目とE/REAの対応
+
+[VMメモリの採録範囲](VM_MEMORY_REVIEW.md)と[ScriptEngine事典](../../reference/structs/ScriptEngine.md)に、型の根拠がある6項目・18関係を追加した。[E追加報告](e_batch2/README.md)と[REA追加報告](rea_batch3/README.md)は90原本パスを82件の新しい本文と8件の別名対応に整理し、本文の重複コピーを避けた。合成検証・過去の保留・現在の正式REFとの違いは各台帳の制約を確認する。

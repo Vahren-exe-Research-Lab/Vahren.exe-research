@@ -221,3 +221,5 @@ python -B knowledge\tools\research_index.py --check
 **追加研究本文と現在の所在（2026-11-05）:** [回収本文の入口](research/recovered/README.md)に戦闘・AI38報告と文法・イベント・防衛の主要3文書を追加。[現在の文書所在](research/recovered/current_inventory/README.md)は旧目録にない場所も示す。本文未確認の所在を新発見や保存済みとは数えない。
 
 **題名・研究ID・本文の検索（2026-11-05）:** [回収済み研究文書](reference/DOCUMENTS.md)は、アドレスを含まない報告も検索できる。本文の一致を確定知識と区別し、出典行と回収制約を付けて表示する。追加92件の本文も収録し、REAの研究ID重複は出典ごとの保留として保持した。
+
+**VMの型付きメモリと追加回収（2026-11-05）:** [ScriptEngine事典](reference/structs/ScriptEngine.md)に6項目・18関係を採録。型が不明な時計は未登録のまま区別した。[E/REAの追加回収](research/recovered/README.md)は新しい本文82件と別名対応8件を記録した。

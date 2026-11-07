@@ -40,6 +40,9 @@
 - [research/recovered/dev_reports/DEVLAB_WORLD_SCENE_BRIDGE_20261011.md 行 23](../../research/recovered/dev_reports/DEVLAB_WORLD_SCENE_BRIDGE_20261011.md?plain=1#L23-L23) — - Spot→Unit tree登録とUnit+0x84の別Spot名、Power+0x68/0x24とUnit vector0を勝手に「駐屯・領有・指揮官・戦闘参加者」と断定しない。
   制約・訂正　Historical STATIC/INFERRED/VERIFY and synthetic-test claims; no new native/runtime verification; referenced raw assets/probes/archives not recovered; no Golden/READY promotion; old Diplomacy label ->TurnState in current REF_SAVE_FORMAT; byte agreement does not prove runtime object rebinding
 
+- [research/recovered/e_batch2/reports/tests/T020_BATTLE_RETURN_COMMIT_GATE_20261021_2147.md 行 12](../../research/recovered/e_batch2/reports/tests/T020_BATTLE_RETURN_COMMIT_GATE_20261021_2147.md?plain=1#L12-L12) — 6. Spot.member、Power+0x68、Unit+0x84等の保存参照は出撃/退却先/生存world rosterの実変化と別列。開始/終了で一対一のUnit instance対応を観測せずに数値だけから同一性を決めない。
+  制約・訂正　Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
 <a id="field-74"></a>
 ## Power + 0x74
 

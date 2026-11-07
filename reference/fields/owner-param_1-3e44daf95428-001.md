@@ -10,6 +10,12 @@
 - [research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md 行 21](../../research/recovered/b_batch5/data/T011_OWNER_TREE_HEADER_AND_BACKLINK_OFFLINE_20261021_0716.md?plain=1#L21-L21) — - 走査候補には `candidate+0x78!=0 \|\| candidate+0x94!=0` の入口条件があり、候補の `[+0xD4,+0xD8)` という0x1C strideの配列風領域から `+0x10` 相当の値を取り、元の `param_1+0x10` と `0x00402C40` comparato
   制約・訂正　Historical authored claims only; linked payloads not acquired; no new native/runtime validation, Golden PASS, strict MATCH, READY or DONE; later corrections and curated REF take precedence
 
+<a id="field-14"></a>
+## param_1 + 0x14
+
+- [research/recovered/e_batch2/reports/tests/E_OFFLINE_SYNC_20261029/T020_DIALOG_PREDISPATCH_GOLDEN_RUN_ID_AUDIT_20261028_1849.md 行 17](../../research/recovered/e_batch2/reports/tests/E_OFFLINE_SYNC_20261029/T020_DIALOG_PREDISPATCH_GOLDEN_RUN_ID_AUDIT_20261028_1849.md?plain=1#L17-L17) — - `0x0049C450` は `param_1+0x14` の非0を見て、`0x0042F860`判定に失敗した場合に`0x0049ECA0`へ進む経路を持つ。次の`local_34`が特殊値か、対象の`+0x28/+0x2C`が空区間であれば`DAT_0068B3A8`を選ぶ。そうでなければ`local_34+0
+  制約・訂正　Authored historical report only; no linked payload read or execution; no new native/runtime/actual Golden/strict MATCH/READY; synthetic/history is not original success.
+
 <a id="field-48"></a>
 ## param_1 + 0x48
 

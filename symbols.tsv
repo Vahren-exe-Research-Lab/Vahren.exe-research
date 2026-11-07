@@ -546,3 +546,7 @@
 0x551C6A	code	StatusSkill_ExpAwardCall	0x551490 内の 0x551E50(receiver, amount, …) 呼び出し。補助スキルが 1 体に効くごとに通る。	実機確認	REF_UNIT_EXP_SUMMON §11
 0x5479F0	code	Summon_LinkChildCall_Simple	簡易戦闘の召喚 0x547490（ECX=スキル）内の 0x5774A0 呼び出し。スキルは呼び出し元 [esp+0x18]（呼ばれた側 [esp+0x24]）。	実機確認	REF_UNIT_EXP_SUMMON §11
 0x5537BF	code	Summon_LinkChildCall_Missile	簡易戦闘のミサイル経由の召喚 0x553390（ECX=スキル、親=ミサイル+0x78）内の 0x5774A0 呼び出し。スキルは呼び出し元 [esp+0x2c]（呼ばれた側 [esp+0x38]）。	実機確認	REF_UNIT_EXP_SUMMON §11
+0x433203	code	Event_InstallPhaseFrames	phase dispatcher 内のフレーム設定位置。4本の並列 VM vector に追加または先頭挿入する。	静的確認	data/T010_EVENT_SCHEDULER.md lines229-259
+0x4339B1	code	Script_FetchCurrentFrame	インタプリタ内部で4本の並列 VM vector の末尾要素を現在フレームとして読む位置。	静的確認	data/T010_EVENT_SCHEDULER.md lines249-256
+0x433A2A	code	Script_PopCompletedFrame	フレーム終了処理 0x433A2A..0x433A80 の内部位置。4本の vector の end pointer を各4バイト戻す。	静的確認	data/T010_EVENT_SCHEDULER.md line344
+0x4335FA	code	Event_TestBattleActiveGate	mode2 の内部分岐。engine+0x1EEC44 の byte を読み、戦闘更新後も再検査して VM runner を分岐する。	静的確認	data/T010_EVENT_SCHEDULER.md lines375-376
