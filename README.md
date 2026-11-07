@@ -1,5 +1,9 @@
 # 研究知識ベース（knowledge）
 
+## 関数・メモリ事典
+
+[アドレス・構造体索引](reference/README.md) はGitHub上で読める。ローカルDBなしでも python tools/reference.py search 解雇 で検索できる。構造体とオフセットを空白で区切った検索、JSON出力にも対応。既存辞書の確度と出典を保持し、本文のSHA・行番号付きの読み書き関係を追加した。[追加・訂正手順](reference/UPDATING.md)、[回収した研究本文](research/recovered/README.md) を参照。
+
 迫真戦記 ver0.67 の解析で**分かったこと**を、作業日誌とは別に、引ける形でまとめたもの。2026-10-29 Claude が作成。
 
 ## AI向け最短導線（新旧レーンの重複研究防止）
