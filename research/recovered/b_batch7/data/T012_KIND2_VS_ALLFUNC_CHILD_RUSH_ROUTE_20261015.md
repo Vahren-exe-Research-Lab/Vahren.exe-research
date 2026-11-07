@@ -1,0 +1,14 @@
+# B-20261015-1120-01｜T012/T011 同一 Skill+0x74（raw rush）の子技能二callerでの分岐意味の差（限定STATIC）
+[OWNER/DATE/STATUS] 2026-10-15 11時台JST。T012 primary / T011 raw producer参照。BOUNDED STATIC CROSSCALL CANDIDATE。旧原作Gameplay PASS0、新旧strict MATCH0、Task DONE+0。
+[TARGET] 旧Vahren.exe SHA256 e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187。保存済みB-owned exe/T012_ALLFUNC_FLOW_PROBE.txt、exe/T013_SKILL_HANDLERS_BOUNDED_NATIVE_20261013.txt、data/T011_RUSH_PROPERTY_FIELDS_20261013.md のread-only照合のみ。
+[PRODUCER PRIOR] 既B-20261013-1930-01 / B-20261013-1920-02 は raw rush → 0x59C747 compiled Skill+0x74 writer（generic getter node+0x20）を確認済み。本IDではsetter名とwriterを再READY計上しない。親/@/missingのruntime effective値はVERIFY。
+[CALLER A / ALLFUNC] 0x5472E7..0x547350 は Skill+0x100/+0x104 の0x1C-stride子recordを0x402710経由でコピーし、Unit+0x1DC をECXとして 0x4678A0 を呼ぶ。0x547357 で returned Skill+0x74 をEAXへ取得。
+[CALLER A / COUNT] 0x54735A で反復上限を1に設定し、0x547362..0x547366 で +0x74 非zero時だけ当該signed DWORDへ置換。0x54736C..0x547370 は signed <=0 なら当該子の 0x547FC0 ループをskip。0x54741E CALL0x547FC0→0x547423 INC EDI→0x547427/2B signed JLで反復。したがって局所正常経路では rush=0→反復1、正n→n、負→0（overflow/異常calleeは別VERIFY）。
+[CALLER B / KIND2] 0x57EFDE..0x57F011 は同じ +0x100/+0x104 子recordを0x402710→ECX=Unit+0x1DC→0x4678A0で解決。0x57F011 の +0x74==0 は 0x57F02E/0x57F045 の 0x580280 branch、非zeroは 0x57F06F の 0x54F720 branchを選ぶ。+0x74の数値をこのcaller自身の子反復回数には使用しない（+0x100/+0x104の別ordinal反復は既B-0709）。
+[DELTA/DEDUP] 新増分は同raw producer/同resolver返値+0x74の「allfunc側の符号付き子反復上限」と「kind2側のzero/nonzero実行関数選択」のcrosscaller非同型。T012既存allfunc §と B-20261015-0611-01/0709-01/1011-01 の個々の命令・vector/reloader/resolverを再採番しない。
+[STATIC/VERIFY] 比較・分岐・loop命令の限定STATICのみCONFIRMED。0x547FC0/0x580280/0x54F720の内部作用、0x4678A0の失敗契約、実child effective rushの原作DAT/継承、例外、合法射撃到達、実弾数/HP/MP/RNGはVERIFY。各CALL成功/実命中を捏造しない。
+[REIMPLEMENT] 同一 Skill+0x74を一律の「発射回数」として共通化しない。allfunc子側は signed max(0, raw==0?1:raw) の局所反復契約（異常値は保留）、kind2子側は raw==0 / raw!=0 によるfactory route契約。子数0と1、rootと追加+F4は別receipt、callee未確定時はSessionGap。
+[GOLDEN] 合法 old battleでこの両calleeに到達する所持技能・resolved rush 0/1/2/-1を個別に確認後、旧SAVE/SHA・seed・操作/時刻を揃え、子の可視投射/効果、HP/MP、次tick・後続RNGをnew側と比較。DESIGNED_NOT_RUN、旧Gameplay PASS0／strict MATCH0。内部反復レジスタだけはINELIGIBLE。
+[NEXT] 既許可B-owned Skill+0x100/+0x104 compiled producer・Unit+0x1DC resolver 0x4678A0 context・合法原作属性と所持者の特定を優先。T012 final damage/MP fallback/latch/4E7ED0、T013 target priority、T011 cross-kind継承は独立VERIFY。
+[SAFETY/OWNERSHIP] 原本ZIP/EXE/SAVE起動/改変無し、REA/Ghidra新起動無し、禁止0x5710C0..0x571500・0x58021E..0x580340その他拒否済操作の代替shell/tool/path/Remote迂回無し。MASTER/T018/他owner/REA/dev_lab/Work/WRQ/Git/push/設定/automation変更無し。Eのみ正式統合。
+[READY GATE] 本detail、data/T012_BATTLE_CALC.md、data/T011_DATA_MODEL.md、evidence/LANE_B_HANDOFF.mdを独立readbackし、同ID/限定事実/VERIFY・Golden0を確認してからB OWN BOUNDED STATIC READYとする。

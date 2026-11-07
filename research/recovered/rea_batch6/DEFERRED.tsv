@@ -1,0 +1,8 @@
+scope	record_type	state	approved_body_count	reason	action
+5710C0..571500	EXCLUDED_BOUNDARY_METADATA_ONLY	NOT_OPENED_NOT_RETRIED	0	Held owner/body range	Preserve existing hold; no body reconstructed; independent historical no-retry notes allowed
+58021E..580340	EXCLUDED_BOUNDARY_METADATA_ONLY	NOT_OPENED_NOT_RETRIED	0	Held owner/body range	Preserve existing hold; no body reconstructed; independent historical no-retry notes allowed
+5769B0	EXCLUDED_BOUNDARY_METADATA_ONLY	NOT_OPENED_NOT_RETRIED	0	Held owner/body	Preserve existing hold; no body reconstructed; independent historical no-retry notes allowed
+5767B0	EXCLUDED_BOUNDARY_METADATA_ONLY	NOT_OPENED_NOT_RETRIED	0	Held downstream dependency	Preserve existing hold; no body reconstructed; independent historical no-retry notes allowed
+whole FUN00580280 including later offsets	EXCLUDED_BOUNDARY_METADATA_ONLY	NOT_OPENED_NOT_RETRIED	0	Held composite owner; later offsets do not bypass owner hold	Preserve existing hold; no body reconstructed; independent historical no-retry notes allowed
+refused rsc3/rsc4 property tables	EXCLUDED_BOUNDARY_METADATA_ONLY	NOT_OPENED_NOT_RETRIED	0	Held property-table payload	Preserve existing hold; no body reconstructed; independent historical no-retry notes allowed
+T029 postbattle castle	EXCLUDED_BOUNDARY_METADATA_ONLY	NOT_OPENED_NOT_RETRIED	0	Held prior dependency	Preserve existing hold; no body reconstructed; independent historical no-retry notes allowed

@@ -61,4 +61,37 @@
 - [research/recovered/rea_batch4/reports/REA_20261030_10H_P0_ODD_RATE_SUBFRAME_REWIND_STATIC.md 行 21](../../research/recovered/rea_batch4/reports/REA_20261030_10H_P0_ODD_RATE_SUBFRAME_REWIND_STATIC.md?plain=1#L21-L21) — 10/26既存：`0x00502580`はEOF状態`stream+0x58`と再生カーソルを比較。呼出元は`0x004BF7C8`、さらに`0x004BE29D`から呼ばれ、32カウント等の条件成立時に次曲処理へ進む可能性がある。今回の**新規部分は小さなread要求→-131→累積減算・重複書込という奇数Hz固有の
   制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
 
+<a id="field-6c"></a>
+## stream + 0x6C
+
+- [research/recovered/rea_batch7/reports/REA_20261026_11H_P0_DMUSIC_COM_CONSTRUCTION_STATIC.md 行 15](../../research/recovered/rea_batch7/reports/REA_20261026_11H_P0_DMUSIC_COM_CONSTRUCTION_STATIC.md?plain=1#L15-L15) — - `0x004BE582`: `CoCreateInstance(CLSID_DirectMusicLoader, NULL, 3, IID_IDirectMusicLoader8, &stream+0x6C)`、HRESULTは`0x004BE588/8A`で検査。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+<a id="field-70"></a>
+## stream + 0x70
+
+- [research/recovered/rea_batch7/reports/REA_20261026_11H_P0_DMUSIC_COM_CONSTRUCTION_STATIC.md 行 14](../../research/recovered/rea_batch7/reports/REA_20261026_11H_P0_DMUSIC_COM_CONSTRUCTION_STATIC.md?plain=1#L14-L14) — - `0x004BE4E0`はサイズ=`count*4`のテーブル領域確保、`0x004BE4EB`で`stream+0x70`へ保存、`0x004BE4F7/FA`で各スロットをゼロ初期化。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+- [research/recovered/rea_batch7/reports/REA_20261026_11H_P0_DMUSIC_COM_CONSTRUCTION_STATIC.md 行 19](../../research/recovered/rea_batch7/reports/REA_20261026_11H_P0_DMUSIC_COM_CONSTRUCTION_STATIC.md?plain=1#L19-L19) — - `0x004BE820`の`0x004BEF20/27/2F`は`stream+0x70`から要素を選び、`stream+0x78`へコピーする。10時台のGetDefaultAudioPath呼出オブジェクトに到達する。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+- [research/recovered/rea_batch7/reports/REA_20261026_11H_P0_DMUSIC_COM_CONSTRUCTION_STATIC.md 行 45](../../research/recovered/rea_batch7/reports/REA_20261026_11H_P0_DMUSIC_COM_CONSTRUCTION_STATIC.md?plain=1#L45-L45) — - P0: `0x004BE6B0`の`+0x98`の厳密同定と、`stream+0x70`配列領域を最終的に解放する経路を限定xrefs・ASMで追跡。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+- [research/recovered/rea_batch7/reports/REA_20261026_11H_P0_DMUSIC_INIT_READBACK.md 行 17](../../research/recovered/rea_batch7/reports/REA_20261026_11H_P0_DMUSIC_INIT_READBACK.md?plain=1#L17-L17) — - 次: `0x004BE6B0`のPerformance8 vtable+0x98と`stream+0x70`領域所有権を調査。保存済証拠の二重登録は禁止。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+- [research/recovered/rea_batch7/reports/REA_20261026_14H_P0_DMUSIC_NEW_TAILJMP_STATIC.md 行 21](../../research/recovered/rea_batch7/reports/REA_20261026_14H_P0_DMUSIC_NEW_TAILJMP_STATIC.md?plain=1#L21-L21) — - 10/25 10時台の独立成果では通常CRT初期化後のhandlerはNULL、new-modeは0と整理済み。これが実際の状態なら `-1` はbad_alloc経路へ進み、`stream+0x70`への正常保存以前に制御を外れる（上位catch/終了処理は未検証）。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+- [research/recovered/rea_batch7/reports/REA_20261026_14H_P0_DMUSIC_NEW_TAILJMP_STATIC.md 行 32](../../research/recovered/rea_batch7/reports/REA_20261026_14H_P0_DMUSIC_NEW_TAILJMP_STATIC.md?plain=1#L32-L32) — まず `0x004BE480` のC++ EH unwinderおよび上位 `0x004BD2A0` のcatch/終了経路を限定調査し、bad_alloc時に`stream+0x70`やloader COM状態をどう破棄するか区別する。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
+<a id="field-78"></a>
+## stream + 0x78
+
+- [research/recovered/rea_batch7/reports/REA_20261026_11H_P0_DMUSIC_COM_CONSTRUCTION_STATIC.md 行 19](../../research/recovered/rea_batch7/reports/REA_20261026_11H_P0_DMUSIC_COM_CONSTRUCTION_STATIC.md?plain=1#L19-L19) — - `0x004BE820`の`0x004BEF20/27/2F`は`stream+0x70`から要素を選び、`stream+0x78`へコピーする。10時台のGetDefaultAudioPath呼出オブジェクトに到達する。
+  制約・訂正　Historical author STATIC/SYNTHETIC/VERIFY and audit claims only; current REF precedence; no new native/runtime/ABI/READY/Golden validation; linked evidence excluded; no held-body dependency
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

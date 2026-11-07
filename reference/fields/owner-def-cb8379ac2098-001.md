@@ -49,6 +49,9 @@
 - [research/recovered/b_batch6/data/T012_5501A0_QUOTA_EDGE_AND_INDIRECT_COVERAGE_OFFLINE_20261021_1215.md 行 14](../../research/recovered/b_batch6/data/T012_5501A0_QUOTA_EDGE_AND_INDIRECT_COVERAGE_OFFLINE_20261021_1215.md?plain=1#L14-L14) — - 呼出 site `0x00550219 → FUN_0054E7B0`: `def+0x40 == 4` の場合に選択。0x54E7B0側の保存済み擬似C条件 `Skill+0x14C == 0 && Skill+0x158 == Skill+0x15C` はeffect生成に進まずcleanupへ分岐すると先行研
   制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
 
+- [research/recovered/b_batch7/data/T012_MODE4_EMPTY_CANDIDATE_QUOTA_CROSSGATE_OFFLINE_20261021_1110.md 行 12](../../research/recovered/b_batch7/data/T012_MODE4_EMPTY_CANDIDATE_QUOTA_CROSSGATE_OFFLINE_20261021_1110.md?plain=1#L12-L12) — - `0x5501A0`：`manager+0x1F4`を先に+1し、`def=*(manager+0x1D4)` の `def+0x78` 以下なら初期化して生成loopへ。`def+0x40 == 4` のとき **site `0x550219 → 0x54E7B0`**、それ以外は `0x55037F → 0x5
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
 <a id="field-54"></a>
 ## def + 0x54
 
@@ -90,6 +93,9 @@
 
 - [research/recovered/b_batch6/data/T012_5501A0_QUOTA_EDGE_AND_INDIRECT_COVERAGE_OFFLINE_20261021_1215.md 行 15](../../research/recovered/b_batch6/data/T012_5501A0_QUOTA_EDGE_AND_INDIRECT_COVERAGE_OFFLINE_20261021_1215.md?plain=1#L15-L15) — - 下位から戻った上位では、保存済み擬似C上、**生成成功をチェックする前に**`manager+0x1F0`を加算し、`def+0x74`上限と比較する。達したら site `0x005503F9 → FUN_004C22B0(manager,0)`後`manager+0x1D0`byteを0にする。**生成成功数で
   制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
+
+- [research/recovered/b_batch7/data/T012_MODE4_EMPTY_CANDIDATE_QUOTA_CROSSGATE_OFFLINE_20261021_1110.md 行 14](../../research/recovered/b_batch7/data/T012_MODE4_EMPTY_CANDIDATE_QUOTA_CROSSGATE_OFFLINE_20261021_1110.md?plain=1#L14-L14) — - calleeから正常復帰した上位`0x5501A0`は、戻り値/生成個体確認の分岐を挟まずに `manager+0x1F0` を+1し、`def+0x74` 上限と比較する。**calleeが上記の空候補短絡でeffect生成を行わなくても、上位が試行枠を消費する条件付き経路と整合**する（STATIC-PSEUD
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1262](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1262-L1262) — - def+0x74 ≠ 0 → 対象外。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
@@ -138,6 +144,15 @@
 
 - [research/recovered/b_batch6/data/T012_5501A0_QUOTA_EDGE_AND_INDIRECT_COVERAGE_OFFLINE_20261021_1215.md 行 16](../../research/recovered/b_batch6/data/T012_5501A0_QUOTA_EDGE_AND_INDIRECT_COVERAGE_OFFLINE_20261021_1215.md?plain=1#L16-L16) — - 今回新たに境界を分離: `def+0x78 == 0` で上限未達時に同一関数内で反復する保存済み擬似Cから、初期attempt=0・limit=3・候補空なら **同じtickの試行3回/可視生成0候補/解除**、limit=0なら**比較前に1回はdispatchされ得る**、既にattempt>=limitで
   制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
+
+- [research/recovered/b_batch7/data/T012_MODE4_EMPTY_CANDIDATE_QUOTA_CROSSGATE_OFFLINE_20261021_1110.md 行 12](../../research/recovered/b_batch7/data/T012_MODE4_EMPTY_CANDIDATE_QUOTA_CROSSGATE_OFFLINE_20261021_1110.md?plain=1#L12-L12) — - `0x5501A0`：`manager+0x1F4`を先に+1し、`def=*(manager+0x1D4)` の `def+0x78` 以下なら初期化して生成loopへ。`def+0x40 == 4` のとき **site `0x550219 → 0x54E7B0`**、それ以外は `0x55037F → 0x5
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/b_batch7/data/T012_MODE4_EMPTY_CANDIDATE_QUOTA_CROSSGATE_OFFLINE_20261021_1110.md 行 15](../../research/recovered/b_batch7/data/T012_MODE4_EMPTY_CANDIDATE_QUOTA_CROSSGATE_OFFLINE_20261021_1110.md?plain=1#L15-L15) — - 新カウンタが上限に達すれば **site `0x5503F9 → 0x4C22B0(manager,0)`** の後 `manager+0x1D0` byteを0へ。上限未達なら `def+0x78 != 0` で今回return、`==0` なら同一呼出内でもう1回loopに進む（STATIC-PSEUDOC）。
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
+- [research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md 行 14](../../research/recovered/b_batch7/data/T012_RUSH_RESET_FIRST_TICK_CROSSJOIN_OFFLINE_20261021_1412.md?plain=1#L14-L14) — 3. `0x005501A0` 擬似C：引数 `manager+0x1F4` を先に1加算し、`def=*(manager+0x1D4)`・`def+0x78 <= manager+0x1F4` のゲート成立時にカウンタ `+0x1F4=0`、dispatch、`manager+0x1F0` を+1。kind4は **
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 597](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L597-L597) — - **C**（演算部分）notalent: 係数 f = `0x46F4C0("notalent_down",100)×0.01`。f ≠ 1 で、def+0x78 == 0、def+0x94 == 0、かつ 0x585CA0 が両 def で偽のとき、attack/defense/magic/magdef/dext
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
@@ -341,24 +356,6 @@
 ## def + 0xE8
 
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 2244](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L2244-L2244) — ## §70 勢力 AI の配置換え 0x47A1A0 と def+0xE8（STATIC、実装済み）
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
-
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 2267](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L2267-L2267) — 4. L = A0, B0, A1, B1, …（A = def+0xE8 が立っている def、B = それ以外）。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
-
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 2291](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L2291-L2291) — ### 70.3 def+0xE8（前線フラグ、CONFIRMED）
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
-
-<a id="field-ec"></a>
-## def + 0xEC
-
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 645](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L645-L645) — - 未解明のまま残るのは**入力側**だけ: 各 def の技能リスト def+0xEC を作る 0x58C0E0（skill/skill2・skillset 展開・乱数を含む）、`@mode_sdown`、`notalent_down`、`unit_status_hp`、consti map の初期値、レベル補正の
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
-
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 662](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L662-L662) — - 集合と vector は周ごとに空にする（0x573EA4..0x573F0A）。そのため周2の順序は**文字列昇順で重複なし**（std::less = バイト比較 0x402C40）。周0/1 は def+0xEC の順序。
-  制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
-
-- [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 704](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L704-L704) — - **tnok（仮の入力・静的予測）**: def+0xEC = DAT の unit `skill` リスト（ファイル順）、リーダー自身、配下なし、consti は空と**仮定**した場合:
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

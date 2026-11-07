@@ -1,0 +1,12 @@
+# B-20261015-0821-01｜T012 kind2通常射撃の空子vector正常skipと初回subscript例外guardの局所到達性
+[OWNER/STATUS] 2026-10-15 08:21 JST。T012主/T013参照。保存済み命令のみの限定STATIC CFG候補。実原作Gameplay PASS0、旧新strict MATCH0、Task DONE+0。
+[ORIGINAL] 迫真ver0.67同梱Vahren.exe SHA256=e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187。既存B exe/T013_SKILL_HANDLERS_BOUNDED_NATIVE_20261013.txtの0x57EFA9..0x57F121。原本起動/変更/新逆解析なし。
+[FACT-A] 0x57EFC8 XOR EDI,EDIで初回ordinal=0、0x57EFCA ADD EAX,EDXで要素count相当値を計算、0x57EFCC JE 0x57F0A6はEAX=0なら子要素呼出を飛ばしoptional Skill+F4/+E4段階へ進む。子0件を例外として扱う分岐ではない。
+[FACT-B] JE不成立ならEAX!=0。0x57EFD2 MOV [ESP+3C],EDIはEAX/EDIを書換えず、0x57EFD6 CMP EAX,EDI と0x57EFD8 unsigned JBE 0x57F121を実行する。EDI=0、EAX!=0のこの直通CFGでは unsigned EAX>0なのでJBEは成立せず、初回子要素処理0x57EFDEへ進む。signed負値のbitpatternでもunsigned >0で同じ。割込み/別入口/異常control flow全般の不在は証明しない。
+[ERROR JOIN] 0x57F121 PUSH 0x637E04 / 0x57F126 CALL 0x5B5BBA。別B保存exe/T012_HEAL_VECTOR_ERROR_5B5BBA_NATIVE_20261013.txtは文字列 invalid vector<T> subscript・0x5B5BE9 INT3・helper通常RET無しを確定。既存B-20261013-1953-01のheal scratch 0x551DEBで0件時に同helperを呼ぶ挙動は参照のみ。kind2子vector空とheal scratch空は同じ扱いではない。
+[DELTA/DEDUP] B-20261015-0611-01は全post-debit段階と57F121の異常call存在、B-20261015-0709-01は各反復後のbegin/end再読を既知。本IDの新規性は初回count=0のJEと直後JBEのレジスタ・符号条件による限定到達性、および既確定例外helperとの対照のみ。57F121の全可能な入口や例外catchまで無条件に到達不能と宣言しない。
+[IMPLEMENT] child_count==0では子factoryを呼ばず、追加+F4と57BE30側へ通常CFGを継続（各callee正常帰還を仮定）。子0件を即AL0/例外へ変換しない。初回ordinal guardに人工的な成功fallbackを挿入しない。前回確定の子ごとの再ロード、MP已消費、root stage、方向/ラッチは別状態として保持。
+[VERIFY] Skill+100/+104のraw DAT setter/key、child vector破損/再配置、他の57F121入口/上位C++ exception処理、合法kind2所持、真の投射・命中・HP/MP/RNG・最終targetはUNKNOWN。saved x86の局所直通以外の例外伝播・ゲーム内到達は未実測。
+[GOLDEN DESIGNED/NOT RUN] 合法未改変旧原作で子0/1/2の技能、+F4 0/非0、MP閾値・同旧SAVE SHA/seed/inputを揃え、可視子発射/効果/HP/MP/次tickを新実装と比較。内部の子count/AL/exception helperだけでは適格でない。旧Gameplay PASS0、new-old strict MATCH0。
+[INTEGRATION] 本detail、data/T012_BATTLE_CALC.md、data/T013_AI.md、evidence/LANE_B_HANDOFF.mdの4点を個別readback後のみ限定B OWNER STATIC READY。EのみMASTER/T018統合。cp151正式536/B187とE cp152拒否をBで修正・加算しない。
+[SAFETY/NEXT] 禁止0x5710C0..571500、0x58021E..580340、0x4E13F0の新解析や拒否writeの別経路再提出なし。原本ZIP/EXE/SAVE・他owner/MASTER/T018/REA/dev_lab/Work/WRQ/Git/設定/automation変更なし。次は許可済みparserの具体的Skill+100/+104 producer資料（現保存で未同定）、MP fallback/標的+A18/+A1C/最終攻撃結果。

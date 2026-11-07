@@ -1,0 +1,11 @@
+# B-20261013-1953-01｜WRQ-B-SKILL/B-MT-02：5B5BBA例外入口と空候補551DEBの接続
+[OWNER/DATE/STATUS] 2026-10-13 19:53 JST、T012 primary。READY-STATIC-EXCEPTION-BOUNDARY（保存x86 48B/16命令と原作エラーメッセージに限定）。original actual Gameplay PASS0、新strict MATCH0、Task DONE+0。
+[PRIMARY] B-owned exe/T012_HEAL_VECTOR_ERROR_5B5BBA_NATIVE_20261013.txt readback SUCCESS。元隔離EXE SHA256 e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187、VA0x5B5BBA..0x5B5BEA exclusive、48 bytes/16 instr、window SHA256 f1dda59e2535124292873d0e72bfb038aa95644149e81f6bbfbab810f557a781。bounded function末尾0x5B5BE9 INT3、通常RETなし。原本未実行・未変更。
+[ERROR LITERAL] 原作静的bytes VA0x637E04 (PE .rdata VA→raw VA-0x400C00)=ASCII `invalid vector<T> subscript`。同helperはcaller stack argの文字列アドレスを0x5B5BCF call5B65BBへ渡し、exception-like local vptr0x6097E8とtype descriptor0x641A34を設定して0x5B5BE4 call5B864E→0x5B5BE9 INT3へ。これはAL1/AL0で正常帰還する通常候補ルートの証拠ではない。
+[CALLER ZERO] B前READY B-20261013-1814-01：0x551653がglobal scratch0xB0AAE8/0xB0AAECから28B candidate countを計算し、zeroなら551DEB push0x637E04→551DF0 call5B5BBA。通常attr効果551738以降を経由しない。候補0を成功0件のnormal returnと同義視しない。
+[CALLER TAIL] B-20261013-1918-99：551D40先行count判定→SSO local cleanup→fresh global scratch countを再度計算→551DE5 unsigned JA next551690 else551DEB same helper。二検査間で実際にベクターが短縮する合法writerの有無はVERIFY。通常551E4A ret4とは明確な別境界。
+[EXCEPTION LIMIT] 5B864Eの詳細なC++ throw/handler、上位catch/unwind、ゲームUI/終了挙動を今回の局所x86だけで確定しない。通常RETが保存窓に無いこととINT3自体はCONFIRMED。プロセスが必ず落ちるという結論にはしない。実ゲームで当該例外が合法な入力で起こるかも不明。
+[WORK HANDOFF] Work ownerへ `candidate_count=0/second_count<=ordinal`→invalid-vector-exception/VERIFY gap、MP/chance/RNG/EXP/Skill pointer/Unit/scratch generation/returnPc/SSO stateを含むreceiptを渡す。5B65BB/5B864E returnをno-op成功で偽装せず、上位Unit帰還を自動追加しない。
+[GOLDEN/DESIGNED NOT RUN] 原作合法候補0/1/2、attr不一致、scratch再入・短縮が発生する合法場面があれば、ゲームの表示・HP/MP/次tick・RNG・例外ログをsame seed比較する。ただし元ゲーム実機PASS0/strict MATCH0、内部pointerだけではINELIGIBLE。
+[VERIFY/NEXT] 上位catch、5B864Eの正式例外契約・runtime effect・合法reach、native SessionGapのハンドリング、0x551E4A→54E31C上位通常帰還。以前拒否された415530/415460/4E13F0/579A20/4C28D0/4C5CC0等は別tool/path/shell/Remoteで再試行しない。MASTER/T018/他owner/REA/dev_lab/Work/queue/Git/原本/schedules無変更。
+[STATUS] READY（exception entry only; normal gameplay unresolved）

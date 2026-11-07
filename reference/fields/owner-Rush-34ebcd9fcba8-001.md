@@ -31,6 +31,9 @@
 - [research/recovered/b_batch6/data/T012_DUAL_RUSH_BRANCH_SPECIFIC_REGISTRATION_CROSSJOIN_20261017.md 行 7](../../research/recovered/b_batch6/data/T012_DUAL_RUSH_BRANCH_SPECIFIC_REGISTRATION_CROSSJOIN_20261017.md?plain=1#L7-L7) — [OLDER RESET PRODUCER] 別保存caller VA5503BE Rush+0x1F0++→5503D0 Skill+0x74閾値比較、到達時5503F9 CALL4C22B0後5503FE Rush byte+0x1D0=0 writer。これはstage-A/B間に必ず動くという根拠ではない。正常
   制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
 
+- [research/recovered/b_batch7/data/T012_RUSH_COMPILED_INTERVAL_ATTEMPT_LINK_NATIVE_20261027_19H.md 行 8](../../research/recovered/b_batch7/data/T012_RUSH_COMPILED_INTERVAL_ATTEMPT_LINK_NATIVE_20261027_19H.md?plain=1#L8-L8) — [NEW ATTEMPT ACCOUNTING] 原作ASM 0x5501D4 XOR EBP,EBP; summon type==4時 0x550219 CALL0x54E7B0→0x55021E JMP0x550386。別効果種では0x55037F CALL (callee領域は既拒否のため未解析)→0x55038
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
 <a id="field-1f4"></a>
 ## Rush + 0x1F4
 
@@ -48,6 +51,9 @@
 
 - [research/recovered/b_batch3/T011_FOLLOW_COMPILER_RUSH_RESULT_LINK_NATIVE_20261027_20H.md 行 16](../../research/recovered/b_batch3/T011_FOLLOW_COMPILER_RUSH_RESULT_LINK_NATIVE_20261027_20H.md?plain=1#L16-L16) — [GOLDEN] 無改変旧EXE＋KARATE_X20前DAT、同一SAVE/MAP/input/RNGで合法follow=on/off/0/20/30/48 skill使用を採取。compiled +0x1D0、0x55038F分岐、Rush+0x1F8、結果+0x194/+0x198、visible effect/
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
+- [research/recovered/b_batch7/data/T012_RUSH_COMPILED_INTERVAL_ATTEMPT_LINK_NATIVE_20261027_19H.md 行 10](../../research/recovered/b_batch7/data/T012_RUSH_COMPILED_INTERVAL_ATTEMPT_LINK_NATIVE_20261027_19H.md?plain=1#L10-L10) — [NEW OPTIONAL LINKAGE] 0x55038F CMP DWORD[Skill+0x1D0],0、非0時0x550398 EBP(result)の非NULLを確認し、Rush+0x1F8 old非NULLなら0x5503A6 [result+0x194]=old、0x5503B2 [old+0x198]
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
 <a id="field-210"></a>
 ## Rush + 0x210

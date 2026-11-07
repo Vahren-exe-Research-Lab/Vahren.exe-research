@@ -10,4 +10,10 @@
 - [research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md 行 202](../../research/recovered/exp/EXP_ENDTRANSFER_AND_SUMMON_GATES_20261022.md?plain=1#L202-L202) — - HP処理は0x551151 PUSH ECX→0x551154 virtual+0x70。SimpleUnitの同slotは0x544790で、0x5447F7 SUB [target+0x90],ECXがHPを減らす。これは先行のvtable型対応と結合した限定経路。
   制約・訂正　Historical STATIC/INFERRED/VERIFY claims; no new native/runtime validation; referenced JSON/scripts not recovered; no Golden/READY promotion; see current REF_UNIT_EXP_SUMMON.md; internal corrections CP06->CP09/12 and CP20->CP21 preserved; wiki held remainder excluded
 
+<a id="field-a18"></a>
+## target + 0xA18
+
+- [research/recovered/b_batch7/data/T012_MODE0_LATE_MP_FALLBACK_POSTSELECT_CROSSJOIN_20261014.md 行 13](../../research/recovered/b_batch7/data/T012_MODE0_LATE_MP_FALLBACK_POSTSELECT_CROSSJOIN_20261014.md?plain=1#L13-L13) — [NEXT] 既保存証拠だけでearly MP gateとouter実Skill dispatchの合法reach、Unit+1863C次Skillのidentity、post+18654条件を検証。T013 target+0xA18/+A1C優先とT011 cross-kind継承、MP最終結果はOPEN。EのみMA
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

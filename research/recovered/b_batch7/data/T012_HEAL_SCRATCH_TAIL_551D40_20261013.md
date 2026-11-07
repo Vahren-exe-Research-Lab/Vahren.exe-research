@@ -1,0 +1,14 @@
+# B-20261013-1918-99｜T012 heal候補末尾の二段count判定・SSO開放・RET4（保存証拠限定）
+
+[OWNER/STATUS] 研究B T012 primary/T013 consumer、2026-10-13 19:18 JST。READY-STATIC-SAVED-X86-BOUNDED／WRQ-20261013-B-SKILL P0 PARTIAL、B-MT-02 OPEN。原作Gameplay Golden PASS0・new strict MATCH0、Task DONE増0。原本EXE/ZIP再取得・実行・書込なし。
+[PRIMARY/XREF] B所有の既保存 `exe/T012_HEAL_ATTR_PROBE.txt`（対象Vahren ver0.67既証拠SHA256 e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187）の0x551653..0x551E4Aを read-only 再照合。オリジナルDAT固有値はこの局所で未使用。先行B-20261013-1814-01/1350-01とT012§44で入口候補count、+1C progression、負抵抗551DF5終端、dext fail551D40継続はREADY済であり再採番しない。
+[PROVEN A / 第一count] 551D40 global[B0AAEC]=end・[B0AAE8]=beginを読む→551D50 local record offset+=0x1C、551D55 local aux+=8、551D6F ordinal++。end-beginをsigned magic0x92492493/shift補正で28B件数に換算し、551D76 CMP ordinal,count、551D78 JGE551E09なら共通cleanupへ直行。
+[PROVEN B / 要素SSO cleanup] まだ候補がある場合551D7E local EH state=-1、551D89で local SSO capacity[esp+15C]>=0x10 を判定。heapなら551D93..551D9Bで[esp+148] pointerを0x5B6BBBへ渡し解放、inlineなら解放せず通過。551DC4..551DDBでcapacity=0x0F,length=0,buffer[0]=0にリセットする。native child5B6BBB例外/heap所有権や1候補の属性適用成功はここでは証明しない。
+[PROVEN C / 第二count] SSO cleanup後、551DA0..551DC2で**現在の**global scratch begin/endから件数を再計算し、551DE3 CMP freshCount, ordinal、551DE5 **unsigned JA**551690で次候補へ。freshCount<=ordinalなら551DEB PUSH 0x637E04→551DF0 CALL0x5B5BBA後551DF5 cleanupへ。0x5B5BBA本体の効果・必ず正常returnかはVERIFYで、成功/no-op/abortと命名しない。
+[NEW NON-DUP DIFFERENCE] 従前の「551D40は1回のloop countで次候補へ」説明を限定精密化。551D78第一count<判定後にも、SSO解放後の**第二fresh count判定**がある。グローバルベクトルが2判定間で短くなる合法経路があれば、最初は継続候補ありでも第二では551DEBの特殊callへ落ち得る。ただし実際に長さが変化するwriter/xref・合法到達は未確定であり、発生したと断定しない。
+[PROVEN D / normal epilogue] 551DF5と551E09はいずれもlocal SSO capacity>=0x10時だけ5B6BBBで解放→551E23へ合流。551E23 FS:[0]復元、551E31..551E35保存レジスタ復元、551E36..551E3F stack cookie 0x5B6513確認、551E44 stack修復、551E4A RET 4。551DEB→5B5BBAが正常に戻る条件、5B6513失敗時、上位callerの54E31C効果/Unit正常帰還は別VERIFY。
+[STAGED IMPLEMENTATION] Workはcaller→coreのMP/chance/RNG/EXP既消費状態を保持し、(1)第一count/ordinal、(2)local SSO解放完了、(3)第二count/nextPC、(4)5B5BBA待ち/return、(5)FS・cookie正常epilogue、(6)54E31C caller continuationを独立receiptとする。短縮分岐を無条件「完了0件」に偽装しない。繰返しMP課金/先行rand消費を禁止。Work製品はB所有外なので編集しない。
+[GOLDEN/DESIGNED NOT RUN] 合法原作allfunc healで候補0/1/2、前段dext fail／負抵抗fail／通常適用、候補名不一致、事後global scratch長変化が実際に合法ならその場面、可視HP/状態/次技能・MP/後続random・正常アクション帰還を旧/new同入力で比較。内部end pointerのみはINELIGIBLE。原作実機PASS0/strict MATCH0。
+[VERIFY/NEXT] 5B5BBA実意味・正常return、between-checksのscratch resize producer、5B6BBB失敗/SEH・stack cookie、候補name mismatchの合法入力、上位54E31C..3E1以降の実return。既に保存済み0x4DFBB0/0x577100/0x4B9F70/0x4C3250/0x4C3140を再解析しない。過去安全拒否の415530/415460/4E13F0/579A20/4C28D0/4C5CC0等を他tool/path/shell/Remoteで迂回しない。
+[SCOPE] 書込先は本B data/、T012_BATTLE_CALC.md、evidence/LANE_B_HANDOFF.mdのみ。EがMASTER/T018公式統合、Workが実装/試験を担当。REA・dev_lab・他lane・原本・Git・スケジュール不変更。
+[STATUS] READY-STATIC-CLEANUP-AND-DUAL-COUNT（合法runtime / 5B5BBA effect VERIFY）

@@ -10,6 +10,12 @@
 - [research/recovered/e_reports/T020_E_T011_CACHE_LIFECYCLE_ACCEPTANCE_20261031_08H.md 行 17](../../research/recovered/e_reports/T020_E_T011_CACHE_LIFECYCLE_ACCEPTANCE_20261031_08H.md?plain=1#L17-L17) — - KB_CANDIDATE: ID above; owner E/T020, linked B-20261031-08H-T011-TRAINING-CACHE-LIFECYCLE-01 B/T011; VA 0x472091/0x49ED90/0x4726C1/0x4DEF40/0x4726D9/0x474B09/
   制約・訂正　Historical authored STATIC/SYNTHETIC/VERIFY claims only; no native/runtime revalidation; linked payloads omitted; Golden/READY unchanged
 
+<a id="field-11"></a>
+## flag + 0x11
+
+- [research/recovered/b_batch7/data/T012_REFRESH_TREE_RANGE_4E1FA0_CONTRACT_20261013.md 行 8](../../research/recovered/b_batch7/data/T012_REFRESH_TREE_RANGE_4E1FA0_CONTRACT_20261013.md?plain=1#L8-L8) — [WORK/REIMPLEMENT] Work `run_heal_refresh` active nonemptyでremove_entryが未完成。resume receiptは`Unit+0x800`, `header+0x70`, key[lookup], outPair before/after, candi
+  制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
+
 <a id="field-14"></a>
 ## flag + 0x14
 

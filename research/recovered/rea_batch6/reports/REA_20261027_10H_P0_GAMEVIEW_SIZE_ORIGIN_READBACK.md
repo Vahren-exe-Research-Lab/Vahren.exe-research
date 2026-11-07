@@ -1,0 +1,17 @@
+# REA 2026-10-27 10H 独立保存・読み戻し記録
+
+研究ID: `REA-LOCAL-20261027-10H-P0-GAMEVIEW-SIZE-LINEAGE-STATIC-01`
+読戻し時刻: 2026-10-27 10:45:26 JST
+状態: PC-SAVED / STATIC / VERIFY / NOT READY。
+監査スクリプトを別Pythonプロセスで再実行：**42/42 PASS、失敗0件**。
+新規正式VERIFIED 0件。既存REA 64/64は再加算なし。正式TODO/VERIFY/BLOCKED更新差分 0/0/0。原作Golden実測0、strict MATCHと完全複製率は未測定。
+owner active.lockなし。REA・Ghidra・原作ゲーム・Workの新規実行なし。
+対象EXE SHA256: `E8DAC301050C8E630D7E0CE93AEEFD95E641207D9C0576017F62BA46A8767187`
+
+保存済み3ファイルを独立に読み取り、存在・内容・研究ID・SHA256・対象ASMの再監査を確認：
+- `REA_20261027_10H_P0_GAMEVIEW_SIZE_ORIGIN_AUDIT.py` SHA256: `5EB4B6FC62126AC87172292C21BE2F1576320AF8602D325C6D757ADE782C4C0F`
+- `REA_20261027_10H_P0_GAMEVIEW_SIZE_ORIGIN_EVIDENCE.json` SHA256: `AA66C9C9B7BD76404C27480139EB51BCBAAE8835EDF65336E884D7DD818877CD`
+- `REA_20261027_10H_P0_GAMEVIEW_SIZE_ORIGIN_STATIC.md` SHA256: `BA35DCAB19BDDBCA21950DCCFEE265729E16FD152D85184378D59E90D5B4FFF3`
+
+**復旧記録:** 最初の読取専用調査で標準入力に含む日本語絶対パスが`????`へ化けてWinError123。作業ディレクトリから相対パスへ変更して成功。読戻し検査の初回試行では監査スクリプトが標準出力に出さない`native_sites`を参照しKeyError。既存JSONの正規キーの照合と監査スクリプト再実行に修正して成功。さらに読戻し記録の日本語が標準入力の文字コード問題で`?`に化けたため、この記録のみ同じownerで再記述。いずれも安全拒否ではない。
+CPU負荷・研究全体の所要時間：不明。保存・readback以外、MASTER、QUEUE/PROGRESS、旧runs、原本、他レーン、Git、スケジュールは変更なし。

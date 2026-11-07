@@ -1,0 +1,13 @@
+# B-20261015-1410-01｜mode0 kind2 MPREC AL1は同handlerの57BE30 post-skill処理を通らない
+[TASK/STATE] T012 primary/T013 reference。14時台JST。限定SAVED-X86 STATIC CFG CROSSJOIN。HANDOFF+owner+detailの3点読戻し成功までCANDIDATE。旧原作Gameplay PASS0/new strict MATCH0、Task DONE+0。
+[IDENTITY] 迫真0.67同梱Vahren.exe対応SHA256=e8dac301050c8e630d7e0ce93aeefd95e641207d9c0576017f62ba46a8767187。B保存exe/T013_SKILL_HANDLERS_BOUNDED_NATIVE_20261013.txt とexe/T012_SKILL_POST_57BE30_NATIVE_20261013.txtをread-onlyで直接照合。原本EXEの実行・変更・新逆解析なし。
+[EARLY RETURN/VA] mode0通常kind2のlate gate 57ED68 Skill+278 cost>0 / 57ED72 Unit+94<cost / 57ED7A Unit+135==0 を通過したとき、57ED87 xor eax,eax→57ED89 cmp Unit+B8,0→57ED8F SETG AL→57ED99 RET8。+B8>0ならAL1。中間にcall57BE30は存在しない。
+[NORMAL AL1 CONTRAST] 同じ57EB40通常kind2のMP減算57EEDA以降、root/child/+F4の各後続正常returnでは57F110/57F13A/57F16B CALL57BE30→57F115/57F13F/57F170 MOV AL,1→RET8。従って同じhandler AL1でも、early MPREC returnとpost-debit pathのpost-skill call履歴は別。
+[POSTSKILL SIDE EFFECT BOUNDARY] 保存57BE30本体の57BE6E..92 Skill+208/+200→Unit+1E54C/+1E550、57BE92..A3 +20C→Unit+1E538、57BEC3..57BF3D +210/+214 keyed Unit+1E53C node、57BFC2以降linked message、57C0FC 49EB50後+1E518=75、57C131 optional+26Cが当該fallbackの直呼出元からは到達しない。各下位calleeと別経路writerは未評価。
+[OUTER CONDITIONAL] 既B-20261014-2111-01に従い、mode0 caller57E5D3からAL1が戻れば57E5EC→57E610/618 CALL577600の後選択を通る可能性がある。57BE30を通った証拠ではない。577600自身/他経路で似たnode, message, timerを更新しない保証はない。
+[INDEPENDENT DELTA/DEDUP] 既B-20261014-2111-01はlate MPREC AL1→outer postselect、既B-20261015-0611-01はpostdebit各call→57BE30、既B-20261013-1110-01は57BE30内部作用を個別確定。本IDの新範囲は双方がAL1となる二経路間のpostskill到達可否と、その条件付きwriter差分のcrossjoinのみ。旧命令/他拒否元の再READYなし。
+[WORK IMPACT] AL1のみからMP-debit/cooldown/message/57BE30完了をセットしない。receiptにmode0, cost/MP, Unit+135/+B8, returnedAL, MPDebited, postskillCalled, outerPostselectCalled, old/newSkill identity, timers, keyed node, visible msg, RNGを分離する。postskillCalled=falseは本直通路限定。
+[GOLDEN DESIGNED/NOT RUN] 合法な原作kind2 mode0でlate不足到達の実Skillを特定した場合に限り、MP=cost-1/cost、B8=0/正、+135=0/1、+210/+214の実効値、msg@の有無を揃え、旧未改変SAVE SHA/seed/inputで可視投射/HP/MP/発話・再使用間隔・次tickと新側を比較。内部fieldだけはINELIGIBLE。実機PASS0、strict MATCH0。
+[VERIFY] 合法Skill・mode0到達、前置gate、同一Unit/Skill identity、callee/outer副作用、別writer、timing/RNG、実射出/命中/HP/MP、原作での可視作用はいずれも未確定。AL1=射撃成功とは解釈しない。
+[NEXT/SAFETY] T012 +A18/+A1C,Unit+1E560/+18688,4E7ED0, MP fallbackと最終攻撃結果、T013 final target優先、T011 cross-kindを継続。MASTER/T018/他lane/REA/dev_lab/Work/WRQ/Git/設定/automation変更禁止。拒否済VA0x5710C0..571500/0x58021E..340などと旧安全拒否payloadの別tool/path/shell/Remote迂回なし。
+[READY GATE] detail、data/T012_BATTLE_CALC.md、evidence/LANE_B_HANDOFF.mdの保存+個別読み戻し3/3完了時だけ B OWNER BOUNDED STATIC CFG READY、正式MASTER統合はE担当。
