@@ -1,0 +1,4 @@
+# va	kind	name	summary	confidence	source
+0x492960	code	Event_SetBattleExecutionMode_ReportedSite	回収済みT010報告が戦闘setupとして示す位置。engine+0x1EEC3Cに2を設定すると記載。関数入口ではなく、命令位置・境界の原作再検証なし。	静的確認	data/T010_EVENT_SCHEDULER.md lines227-232; REF_SCRIPT_VM_CONTEXT.md lines3-4
+0x467F40	func	Power_FindByName	保存済み報告ではCtxのPower表を名前検索し、返却Power+0xE0にCtxを設定する。旧Spot名はF§49の未確定な解釈。完全ABI・実機動作は未検証。	静的確認（回収済み著述資料の記述。今回の原作再検証・実行なし）	F§49 (old inferred name retained as correction history); dev_lab/docs/PEER_SCRIPT01_FINDINGS_20261011.md F§79.3/F§79.8; data/T014_GLOBAL_SAVE.md line142; REF_SAVE_FORMAT.md line10
+0x467E90	func	Spot_FindByName	保存済み報告が独立したSpot名前解決関数として示す。CtxのSpot表を検索し、見つかったSpot+0xB0にCtxを設定して返す。未発見はnull。今回の原作再検証なし。	静的確認（回収済み著述資料の記述。今回の原作再検証・実行なし）	data/T014_GLOBAL_SAVE.md lines571-572; dev_lab/docs/PEER_SCRIPT01_FINDINGS_20261011.md F§49/F§79.3; REF_SAVE_FORMAT.md line10

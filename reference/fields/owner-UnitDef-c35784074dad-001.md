@@ -10,6 +10,9 @@
 - [REF_SAVE_FORMAT.md 行 195](../../REF_SAVE_FORMAT.md?plain=1#L195-L195) — \| knowledge structs UnitDef+0x1C \| 「ユニット ID（例 a030+0）。定義表のキー」 \| DAT の unit タグ。定義表のキーは +0x00 \| KB 修正案 \|
   制約・訂正　Existing full body linked; catalog revision differs
 
+- [research/recovered/remaining_md1/reports/dev_lab/docs/CHATGPT_CURRENT_HANDOFF.md 行 120](../../research/recovered/remaining_md1/reports/dev_lab/docs/CHATGPT_CURRENT_HANDOFF.md?plain=1#L120-L120) — - 既存研究の訂正（2026-11-01夜、Claude）：T014 の「外交状態」はターン進行オブジェクト（+0x14 経過ターン、+0x38 phase、手番順の勢力列）、「第5コンテナ」+0x32C は放浪集合、Unit+0x94 は放浪先の文字列長。T014 冒頭に訂正一覧を追記。knowledge の Uni
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+
 <a id="field-74"></a>
 ## UnitDef + 0x74
 

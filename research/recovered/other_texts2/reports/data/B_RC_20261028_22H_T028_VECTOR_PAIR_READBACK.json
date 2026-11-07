@@ -1,0 +1,30 @@
+{
+  "id": "B-RC-20261028-22H-LIBRARY-READBACK-01",
+  "research_id": "B-OFFLINE-20261028-22H-T028-ALTERNATE-RESULT-VECTOR-PAIR-01",
+  "checks": [
+    {
+      "name": "B_T028_ALTERNATE_RESULT_VECTOR_PAIR_OFFLINE_20261028_22H.md",
+      "size": 6670,
+      "sha256": "626E7F979F35DE0824EAB08AD68CCAFF7C98B9DEAB28977C445609472CB3B51E",
+      "library_readback_matched": true
+    },
+    {
+      "name": "B_T028_ALTERNATE_RESULT_VECTOR_PAIR_EVIDENCE_20261028_22H.json",
+      "size": 7557,
+      "sha256": "B45D7BC12A3E00150B85D772AACFF3CD38E10BDD9325E024BEA2D536D70BBFFB",
+      "library_readback_matched": true
+    },
+    {
+      "name": "B_T028_ALTERNATE_MESSAGE_VECTOR_SINK_VERIFY_20261028_22H.py",
+      "size": 4310,
+      "sha256": "A1157614DF5B7B0CFE77062FADDF8EDB8B9D5D9D098F163F76129FE449E4B82C",
+      "library_readback_matched": true
+    }
+  ],
+  "library_readback_pass": 3,
+  "native_readback_verifier_returncode": 0,
+  "strict_match": 0,
+  "gameplay_golden_pass": 0,
+  "pc_sync": false,
+  "local_error": "INVALID_ARGUMENT: McpServerError: Session terminated"
+}

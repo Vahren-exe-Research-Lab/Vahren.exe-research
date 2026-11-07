@@ -34,6 +34,12 @@
 - [research/recovered/rea_batch4/reports/REA_20261030_08H_P0_OGG_FIXED16_PRODUCER_STATIC.md 行 32](../../research/recovered/rea_batch4/reports/REA_20261030_08H_P0_OGG_FIXED16_PRODUCER_STATIC.md?plain=1#L32-L32) — 独立Golden試験案：11,025Hz mono16/stereo16の有効Oggと44,100Hz stereo16対照を用意し、Lock HRESULT/返却領域サイズ、OvRead返却byte数、Unlock成否、PCM境界、state+0x54/+0x58、停止時刻を採取する。今回実ゲーム観測は0件。
   制約・訂正　HISTORICAL_AUTHOR_CLAIMS_ONLY; LINKED_PAYLOADS_UNREAD; CURRENT_REF_AUDIO_VORBIS_AND_BATTLE_PRECEDENCE; NO_NATIVE_RUNTIME_READY_OR_FORMAL_PROMOTION; HISTORICAL_NO_RETRY_REMAINS
 
+<a id="field-90"></a>
+## state + 0x90
+
+- [research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md 行 214](../../research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md?plain=1#L214-L214) — - STATIC: EH state1 local-pointer address into 0x42AA00; 0x5B61F2 -> 0x5B9EDB predicate at state +0x90 controls optional 0x42AA80; indirect nested vptr+0x34 and
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+
 <a id="field-190"></a>
 ## state + 0x190
 

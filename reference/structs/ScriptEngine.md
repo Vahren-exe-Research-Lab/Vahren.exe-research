@@ -18,6 +18,8 @@
 - [元の辞書行](../../structs.tsv#L122)
 
 - [Event_RunExecutionMode](../symbols/004335E0.md) → `reads` → [ScriptEngine + 0x1EEC3C currentExecutionMode](../structs/ScriptEngine.md#field-1eec3c)。実行ループが現在の実行モードを読み、mode1・2・6を別経路に分岐する。phaseの識別値とは区別する。 （静的確認（回収済み研究の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L227-L235) · `MEM2-VM-DISPATCH-READ-MODE`
+- [Event_SetBattleExecutionMode_ReportedSite](../symbols/00492960.md) → `writes` → [ScriptEngine + 0x1EEC3C currentExecutionMode](../structs/ScriptEngine.md#field-1eec3c)。報告上の戦闘setup位置0x492960で、現在の実行モードに2を設定する。新しい関数入口とはせず、厳密な命令位置・関数境界の原作再検証はない。 （静的確認（回収済み報告の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L232-L232) · `MEM3-VM-SETUP-WRITE-MODE`
+- [Script_Op_Wait](../symbols/004A17D8.md) → `reads` → [ScriptEngine + 0x1EEC3C currentExecutionMode](../structs/ScriptEngine.md#field-1eec3c)。wait命令の既存位置で、現在の実行モードが2かを戦闘専用分岐の条件として調べる。命令位置とopcode9の結び付きは同報告99行による。幅・宣言enum型・合法遷移の全体は不明のまま。 （静的確認（回収済み報告の記述。今回の原作再検証・実行なし）、迫真戦記 ver0.67 / Vahren.exe image base 0x400000）。[根拠](../../research/recovered/script_topics/T010_EVENT_SCHEDULER.md?plain=1#L232-L232) · `MEM3-VM-WAIT-READ-MODE`
 
 <a id="field-1eec44"></a>
 ## 0x1EEC44 battleActive

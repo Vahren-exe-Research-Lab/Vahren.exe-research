@@ -69,4 +69,9 @@
   - → 現在の解釈　count==pcは前段で通常のframe終了・cleanup/popへ進む。その等値経路を除いた後段のunsigned count<=pcは、この場合count<pcを表し、invalid vector subscriptへ進む。global自然完了をinvalid-index扱いしない。
   - 確度　静的確認（回収済み研究本文の明示的な訂正・接続。今回の原作再検証・実行なし）。対象　迫真戦記 ver0.67 / Vahren.exe image base 0x400000。[訂正の根拠](../research/recovered/vm_dispatch_topic/T006_TARGET_DISPATCH.md?plain=1#L962-L965)
 
+- [Power_FindByName](symbols/00467F40.md) · `CORRECTION-POWER-NAME-RESOLVER` · `corrected`。F§49/F§52では型VERIFYだった旧推定名を、後のF§79.3/79.8とT014の明示的なPower表・逆参照の記述で訂正する。元の推定出典を残し、関数境界・全ABI・原作実機の再検証は主張しない。
+  - 訂正済みの旧解釈（履歴）　Spot_FindByName。スポット（領地）を名前で引くというF§49段階の推定名。
+  - → 現在の解釈　Power_FindByName。CtxのPower表を名前検索し、返却Powerの+0xE0にCtxを設定する。Spotの名前解決は別関数0x467E90。
+  - 確度　静的確認（回収済み著述資料の記述。今回の原作再検証・実行なし）。対象　迫真戦記 ver0.67 / Vahren.exe image base 0x400000。[訂正の根拠](../research/recovered/save_topic/T014_GLOBAL_SAVE.md?plain=1#L142-L142)
+
 [事典の入口](README.md)

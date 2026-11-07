@@ -10,6 +10,12 @@
 - [research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md 行 34](../../research/recovered/rea_batch14/reports/STATIC_UNIT_SPOT_POWER_WIRE_LAYOUT_20261010.md?plain=1#L34-L34) — - prefixはstring +0、bytes +0x1C/+0x1D、dword +0x5C、strings +0x24/+0x40、dwords +0x20/+0x60、string +0x74。RB-tree +0x68 names/empty終端、28-byte vector +0x90/+0x94 name
   制約・訂正　Historical authored STATIC/VERIFY/recovery/audit/Work/Library claims only; no newnative/runtime/Golden/READY/formalVERIFIED; linked payloads excluded
 
+<a id="field-24"></a>
+## bytes + 0x24
+
+- [research/recovered/remaining_md1/reports/dev_lab/docs/DAT_GENERIC_UI_SPIKE_PLAN_20261026.md 行 135](../../research/recovered/remaining_md1/reports/dev_lab/docs/DAT_GENERIC_UI_SPIKE_PLAN_20261026.md?plain=1#L135-L135) — - Held state is persistent: mouse press/release at 0x4BD037..0x4BD0A5 updates bytes +0x24/+0x26/+0x28; poll clears edge bytes but does not clear all held bytes.
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+
 <a id="field-fe"></a>
 ## bytes + 0xFE
 

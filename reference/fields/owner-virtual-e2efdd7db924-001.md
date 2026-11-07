@@ -28,6 +28,9 @@
 - [research/recovered/rea_batch10/reports/REA_20261022_0535_T014_CATCH_RETHROW_MASK_CONTRAST_STATIC.md 行 12](../../research/recovered/rea_batch10/reports/REA_20261022_0535_T014_CATCH_RETHROW_MASK_CONTRAST_STATIC.md?plain=1#L12-L12) — - 前回0443の通常EOF経路（sentry成功→virtual +0x18 が EAX=-1）: 0x470A25 LEA ESI,[EAX+4] => ESI=3、0x470AB7..0x470AC5で oldstate\|3（buffer==nullなら更に\|4）を作り、PUSH 0で0x426E00。excep
   制約・訂正　Historical STATIC/DERIVED/SYNTHETIC/VERIFY/NOT READY and audit claims only; current curated REF priority; no new native/runtime/ABI/READY/Golden validation; linked payloads excluded; refused helpers opaque
 
+- [research/recovered/remaining_md1/reports/data/T012_T013_WRQ_SKILL_INTEGRATION_BRIDGE_20261013.md 行 32](../../research/recovered/remaining_md1/reports/data/T012_T013_WRQ_SKILL_INTEGRATION_BRIDGE_20261013.md?plain=1#L32-L32) — [OPEN VA] 0x550980/550580 virtual+0x18; 0x54F990/0x550410; 0x56F6F0/0x567EE0; 0x551490 caller-local status success; 0x4C1290; 0x54E7B0 legality and 0x57F190 nor
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+
 <a id="field-20"></a>
 ## virtual + 0x20
 

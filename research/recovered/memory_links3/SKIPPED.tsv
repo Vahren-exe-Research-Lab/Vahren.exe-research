@@ -1,0 +1,11 @@
+candidate	reason
+Spot+0xB8 read/INC/DEC	Source22H line16 callsSpot identity provisional; reservation meaning alsoINFERRED. Do not add to establishedSpot layout merely because+88/+B8match.
+Resolved candidate byte+0x78	Source23H18 explicitly leaves resolved object state/typeVERIFY; resolver name/offset not enough forUnitDef alias.
+Unit byte+0x75/+0x77 retreat gates	No compatible concrete owner mapping toUnitDef orUnitRuntime established; no blanketUnit alias.
+18H prepass begin/end/mode→ScriptEngine	One caller provesESI=[EBX+4]+504;[EBX+4]GameManageridentity unproven. No newptrfields orScriptEngineedges through offsets alone.
+4338D0 currentmodecopy	T010230 says433900family; noindependententry/rangeproof toanchor at4338D0; omitted ratherthanforceinferrededge.
+467E90→Spot+B0	Initially held for entry scope; parent independently reviewedT014571-572 explicitly calling separate resolver functions and authorized newfunc proposal with historical-source limits; now proposed,not canonically applied.
+467F40→Power+E0	Parent independently reviewedoldF uncertainty andlaterF/T014Powerproof; explicit correction13 nowproposed withPoweredge,not silentcanonicalrename.
+Existing elapsed/absolute setupwrites andframevectoraccess	Already present among155baseline relations; no duplicateedges.
+All held/refused helper/erase/E/castle/rsc scopes	Excluded; no original/native/script/JSONevidence/log/EXE/DB/archive/networkread or execution; no alternateacquisition.
+New field widths/enum/class identities	No fields proposed; existingScriptEngine modeunknown andUnitRuntime fourHPunknown retained.

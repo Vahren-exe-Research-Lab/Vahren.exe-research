@@ -361,4 +361,7 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 2334](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L2334-L2334) — - GM+0x1EF4EC は turnproc+0x38（phase）と確定（turnproc = GM+0x1EF4B4）。
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+- [research/recovered/remaining_md1/reports/dev_lab/docs/CHATGPT_CURRENT_HANDOFF.md 行 120](../../research/recovered/remaining_md1/reports/dev_lab/docs/CHATGPT_CURRENT_HANDOFF.md?plain=1#L120-L120) — - 既存研究の訂正（2026-11-01夜、Claude）：T014 の「外交状態」はターン進行オブジェクト（+0x14 経過ターン、+0x38 phase、手番順の勢力列）、「第5コンテナ」+0x32C は放浪集合、Unit+0x94 は放浪先の文字列長。T014 冒頭に訂正一覧を追記。knowledge の Uni
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

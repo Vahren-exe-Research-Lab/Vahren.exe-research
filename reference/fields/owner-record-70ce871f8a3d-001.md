@@ -19,11 +19,17 @@
 - [research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md 行 1077](../../research/recovered/findings/PEER_SCRIPT01_FINDINGS_20261011.md?plain=1#L1077-L1077) — \| 停止条件 \| skill+0x2A8 == −123456.0（exp_per=off）、Unit+0x1D0==NULL、Unit+0x18614≠0、record+0xC≠0（付与後1にする） \| CONFIRMED \|
   制約・訂正　Screened partial derivative; omitted paragraphs and appendix documented in SCREENING.json; full manual semantics/privacy review pending; no fresh native/runtime verification
 
+- [research/recovered/remaining_md1/reports/data/T012_T013_B_RESEARCH_TASKBOARD_20261013.md 行 137](../../research/recovered/remaining_md1/reports/data/T012_T013_B_RESEARCH_TASKBOARD_20261013.md?plain=1#L137-L137) — [CONTROL CONTRACT] Only if Work's existing`run_heal_refresh` preconditions permit and Unit+878 is nonempty: outer4E02A0 lookup49ED30 (UNKNOWN SAFETY_REFUSAL), i
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+
 <a id="field-1c"></a>
 ## record + 0x1C
 
 - [research/recovered/chat_a_history/CHAT_A_20261014_02H_FINAL.md 行 61](../../research/recovered/chat_a_history/CHAT_A_20261014_02H_FINAL.md?plain=1#L61-L61) — [record + 0x1C] = EAX
   制約・訂正　Historical claims; PC save/readback not newly proven; no linked evidence read; no new READY/DONE/Golden/runtime credit
+
+- [research/recovered/remaining_md1/reports/data/T024_HAKUSHIN_BATTLE_AI.md 行 162](../../research/recovered/remaining_md1/reports/data/T024_HAKUSHIN_BATTLE_AI.md?plain=1#L162-L162) — [VERIFY/P0] battle entry→numeric map resetの可否、set(op5) handler→record +0x1C writer/lookup接続、world/save/reloadをはさむ変数寿命の3点は未確定。現段階では「砲兵flagが必ず次戦へ残る」という結果をCONFIRME
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
 
 - [research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md 行 426](../../research/recovered/rng_audio/T031_RANDOM_EVENT_SCHEDULER.md?plain=1#L426-L426) — [VERIFY / IMPLEMENT] [esp+0x94] の実引数origin・符号、ESIの型と初期化、record lifecycle／tree+0x32Cとの所属関係、overflow policy、読出callee、合法シーン・save/load・RNGは未確定。`record+0x1C = clock
   制約・訂正　Historical authored report only; source/native claims not independently revalidated; runtime and Golden remain unobserved; no READY promotion; current REF precedence
@@ -105,6 +111,18 @@
 
 - [research/recovered/rea_batch2/reports/REA_20261104_05H_P0_IOS_FLAGS_EXCEPTION_GATE_STATIC.md 行 37](../../research/recovered/rea_batch2/reports/REA_20261104_05H_P0_IOS_FLAGS_EXCEPTION_GATE_STATIC.md?plain=1#L37-L37) — - **STATIC**: native field writes, intersection, control-flow, three literal strings, 10 direct E8 receipts and `RET 4`. **INFERRED**: iostream error-state sema
   制約・訂正　Authored STATIC/INFERRED/VERIFY only; linked PE/SQLite/probe/HANDOFF/scripts/logs not read; historical no-retry holds unchanged; no new native/runtime/Golden/READY or remote-publication verification; HOLD_FOR_ID_RECONCILIATION / cross-domain same-ID lineage
+
+- [research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md 行 226](../../research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md?plain=1#L226-L226) — - Read-only original PE `E8DAC301…767187` / unified V9 `2629CB2F…00EDE` SHA matched, V9 `quick_check=ok`. Original x86/Capstone to V9 newly selected 6 direct E8
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+
+- [research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md 行 228](../../research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md?plain=1#L228-L228) — - Next lawful cursor: targeted `0x426E00` gated downstream mutation and allowed read-only V9 writers/xrefs to CRT record+0x90; **curator priority** resolve cros
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+
+- [research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md 行 236](../../research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md?plain=1#L236-L236) — - Next lawful cursor: targeted V9/native CRT TLS record +0x90 writer provenance or 0x42AAF9 callsite-specific flags, independent curator cross-domain ID reconci
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+
+- [research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md 行 239](../../research/recovered/remaining_md1/reports/rea_lab/decomp_task/PROGRESS.md?plain=1#L239-L239) — - A second safe bounded native investigation located CRT TLS record +0x90 writers: 0x5B9D3C at 0x5B9D68 INC, 0x5B9CED at 0x5B9D13 CLEAR and 0x5B9D32 guarded DEC
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
 
 <a id="field-94"></a>
 ## record + 0x94

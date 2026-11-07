@@ -1,0 +1,17 @@
+{
+  "selected": 26,
+  "accepted": 23,
+  "held": 3,
+  "exact_bodies": 16,
+  "privacy_bodies": 7,
+  "aliases": 0,
+  "privacy_token_edits": 20,
+  "full_reviews": 24,
+  "partial_scope_reviews": 2,
+  "unopened_preholds": 0,
+  "current_source_bytes": 874085,
+  "baseline_ledger_rows": 1545,
+  "catalog_matches": 15,
+  "catalog_current_version_differences": 3,
+  "catalog_unpinned": 8
+}

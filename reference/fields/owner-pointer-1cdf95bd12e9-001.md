@@ -16,4 +16,10 @@
 - [research/recovered/b_batch6/data/T012_DUAL_RUSH_BRANCH_SPECIFIC_REGISTRATION_CROSSJOIN_20261017.md 行 5](../../research/recovered/b_batch6/data/T012_DUAL_RUSH_BRANCH_SPECIFIC_REGISTRATION_CROSSJOIN_20261017.md?plain=1#L5-L5) — [REUSE REGISTRATION] 54F720 VA54F749→54F74Cのpool pointer+0x1D0==0なら54F7D0→54F7DD CALL54F990(init byte+1D0=1)、54F7EC CALL4C2240(manager+0x64/+0x68 pending vector
   制約・訂正　Historical authored report; STATIC/INFERRED/VERIFY/READY scope unchanged; referenced payload not fetched; runtime/Golden/strict NOT RUN; private links remain provenance only
 
+<a id="field-185f8"></a>
+## pointer + 0x185F8
+
+- [research/recovered/remaining_md1/reports/data/T012_T013_WRQ_SKILL_INTEGRATION_BRIDGE_20261013.md 行 53](../../research/recovered/remaining_md1/reports/data/T012_T013_WRQ_SKILL_INTEGRATION_BRIDGE_20261013.md?plain=1#L53-L53) — [INTEGRATION RECEIPT] Distinct fields: Unit pointer+0x185F8 ring cursor; Rptr, R.vtable,+54 writer order,+6C Unit self source; Lptr, L.active, L+4 Rptr, L globa
+  制約・訂正　Historical author research/ops/implementation/test claims; no new native/runtime/READY/DONE/Golden; current REF and prior scope limits remain; linked evidence not acquired
+
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)
