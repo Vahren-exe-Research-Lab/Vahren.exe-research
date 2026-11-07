@@ -390,4 +390,34 @@
   本文 SHA256 `382d275171883ab1f0564674ce55766a49b98bfcd202a69764107cb03615dfe3`
   元パス <code>chatgpt://6aea0916-3ee4-83ec-b05f-2b3afe2d3f5d/messages/062cb02a-444c-4650-86d3-076b906a3620</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2423-L2423)。
 
+- [t020_e21_source_projection_binding_erratum_20261105.py](../../research/recovered/practical_pr15/reports/t020_e21_source_projection_binding_erratum_20261105.py?plain=1#L1-L1) — `research/recovered/practical_pr15/reports/t020_e21_source_projection_binding_erratum_20261105.py`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 EXTERNAL_PINNED_GITHUB_BLOB_NOT_PREVIOUSLY_CAPTURED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2424-L2424)。制約・訂正 Authored synthetic code only; no execution/tests/fixture/native proof or READY/Golden promotion. Exact base64-decoded raw Git blob UTF-8 bytes; independent expected hash provenance remains external.
+  本文 SHA256 `d6cf6a116c0b7c0ef542766fd805e2b207a069f41bc25173833709cfd1b84147`
+  元パス <code>https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/6abaaa51956e6915a9964e3fefb779222927bdd1/research/intake/E/repro/t020_e21_source_projection_binding_erratum_20261105.py</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2424-L2424)。
+
+- [t020_v9_static_provenance_synthetic_review_20261105.py](../../research/recovered/practical_pr15/reports/t020_v9_static_provenance_synthetic_review_20261105.py?plain=1#L1-L1) — `research/recovered/practical_pr15/reports/t020_v9_static_provenance_synthetic_review_20261105.py`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 EXTERNAL_PINNED_GITHUB_BLOB_NOT_PREVIOUSLY_CAPTURED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2425-L2425)。制約・訂正 Authored synthetic code only; no execution/tests/fixture/native proof or READY/Golden promotion. Exact base64-decoded raw Git blob UTF-8 bytes; independent expected hash provenance remains external.
+  本文 SHA256 `401695be4b091f2204cb0479098c3049bbf43d100215bcf383f29f750daa7cff`
+  元パス <code>https://github.com/ButaMonky/Hakushin067-Research-Knowledge/blob/6abaaa51956e6915a9964e3fefb779222927bdd1/research/intake/E/repro/t020_v9_static_provenance_synthetic_review_20261105.py</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2425-L2425)。
+
+- [2026-11-05 02H JST \| curator incremental: E21 synthetic nonfinite admission defect; B/T013 old-ID correction; REA INDEX-only delta](../../research/recovered/practical_comments103/comments/comment_6636971190.md?plain=1#L2-L2) — `research/recovered/practical_comments103/comments/comment_6636971190.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 EXTERNAL_COMMENT_NOT_PREVIOUSLY_CAPTURED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2426-L2426)。制約・訂正 Captured GitHub connector body Unicode encoded UTF-8, not HTTP/service database raw bytes. Dated author claims only; no linked original/native/code/Library acquisition or execution. No current correctness/ABI/type/Golden/READY/semantic adoption. API current body has no returned created/updated timestamp; prior audit timestamps are independent metadata.
+  本文 SHA256 `bdcec6c390e6dd08a1bc265176c397f17d609fc56fb49f365f0a4c26e2ff0b1c`
+  元パス <code>https://github.com/ButaMonky/Hakushin067-Research-Knowledge/issues/4#issuecomment-6636971190</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2426-L2426)。
+
+- [Curator native erratum — FastSim post-tail **same-address alias**, 2026-11-02 JST](../../research/recovered/practical_comments103/comments/comment_6573466153.md?plain=1#L1-L1) — `research/recovered/practical_comments103/comments/comment_6573466153.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 EXTERNAL_COMMENT_NOT_PREVIOUSLY_CAPTURED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2427-L2427)。制約・訂正 Captured GitHub connector body Unicode encoded UTF-8, not HTTP/service database raw bytes. Dated author claims only; no linked original/native/code/Library acquisition or execution. No current correctness/ABI/type/Golden/READY/semantic adoption. Mutable API comment; capture window and returned timestamps are pinned separately.
+  本文 SHA256 `e2d87f5640318e5988a059556fe646442a93de3de2dc29bef14f2d4fefe00dc9`
+  元パス <code>https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/17#issuecomment-6573466153</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2427-L2427)。
+
+- [KB curator 2026-11-03 22:51 JST — E 2026-10-30 12–15H original-ID crosswalk + corrected 15H fixture identity (READ-ONLY; NOT CURATED)](../../research/recovered/practical_comments103/comments/comment_6605693130.md?plain=1#L2-L2) — `research/recovered/practical_comments103/comments/comment_6605693130.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 EXTERNAL_COMMENT_NOT_PREVIOUSLY_CAPTURED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2428-L2428)。制約・訂正 Captured GitHub connector body Unicode encoded UTF-8, not HTTP/service database raw bytes. Dated author claims only; no linked original/native/code/Library acquisition or execution. No current correctness/ABI/type/Golden/READY/semantic adoption. Mutable API comment; capture window and returned timestamps are pinned separately.
+  本文 SHA256 `9006b08dee352d18932387f42fa3298693afbbb05addb7958573712d89801468`
+  元パス <code>https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/17#issuecomment-6605693130</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2428-L2428)。
+
+- [Curator one-batch E/B T013 provenance and errata triage — 2026-11-03, 16H–23H historic sources (NOT CURATED)](../../research/recovered/practical_comments103/comments/comment_6606124364.md?plain=1#L2-L2) — `research/recovered/practical_comments103/comments/comment_6606124364.md`
+  回収状態 CONTENT_REVIEWED_EXACT。以前の収録状況 EXTERNAL_COMMENT_NOT_PREVIOUSLY_CAPTURED。[回収台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2429-L2429)。制約・訂正 Captured GitHub connector body Unicode encoded UTF-8, not HTTP/service database raw bytes. Dated author claims only; no linked original/native/code/Library acquisition or execution. No current correctness/ABI/type/Golden/READY/semantic adoption. Mutable API comment; capture window and returned timestamps are pinned separately.
+  本文 SHA256 `f82a9b7ac3b6ff18d036a162ca0510e3e67479677c058d3265a32cb7b58f62b5`
+  元パス <code>https://github.com/ButaMonky/Hakushin067-Research-Knowledge/pull/17#issuecomment-6606124364</code>。[対応する台帳](../../research/recovered/RECOVERY_LEDGER.tsv?plain=1#L2429-L2429)。
+
 [前のページ](page-023.md) · [文書一覧](../DOCUMENTS.md) · [事典の入口](../README.md)

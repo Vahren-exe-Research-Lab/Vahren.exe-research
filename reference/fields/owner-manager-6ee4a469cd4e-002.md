@@ -7,6 +7,9 @@
 <a id="field-88"></a>
 ## manager + 0x88
 
+- [research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md 行 14](../../research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md?plain=1#L14-L14) — - 0x44C6CC ECX=[ESI]（元のmanager+0x88合計）、0x44C6CE [EBX+0xB0]=ECXで **正規化前raw値** を保持。0x44C6D4..DF はこのECXがゼロの時だけ1に変更し[ESI]（manager+0x88）へ書き戻す。負値の0 clampではない。
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 - [research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md 行 15](../../research/recovered/b_batch3/T013_MODE2_DOUBLE_UNIT_SUM_RATIO_BRANCH_NATIVE_20261030_22H.md?plain=1#L15-L15) — - 0x44C6E1..F0 FILD manager+0x88(正規化済) / FILD group+0x88 / FDIV ST(1) / FILD group+0x8C / FDIVRP ST(2)。二つの集計比を作り、0x44C6F2 FLD [manager+0xD0]→0x44C6F8 FCOMP ST(2
   制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
 
@@ -126,6 +129,12 @@
 
 - [research/recovered/b_reports/T013_MODE2_POSTREFILL_SCORE_DISPATCH_NATIVE_20261030_21H.md 行 12](../../research/recovered/b_reports/T013_MODE2_POSTREFILL_SCORE_DISPATCH_NATIVE_20261030_21H.md?plain=1#L12-L12) — - 非0経路は0x44C624へ進み、0x44C633 CALL0x591570、0x44C650/679/A0 CALL0x46F4C0で属性値を集め、0x44C6BD/0x44C6C7 CALL0x515060で二参照を取得、0x44C6CE [manager+0xB0]=結果側値に保存。0x44C6D6値0なら1
   制約・訂正　Historical authored STATIC/INFERRED/VERIFY claims; no native/runtime revalidation; linked native/JSON/script/DB/archive payloads not recovered; no Golden/READY promotion; current REF corrections prevail
+
+- [research/recovered/practical_comments103/comments/comment_6606124364.md 行 15](../../research/recovered/practical_comments103/comments/comment_6606124364.md?plain=1#L15-L15) — \| 21H \| `B-20261030-21H-T013-MODE2-POSTREFILL-SCORE-DISPATCH-01` → `E-AUDIT-20261030-21H-T020-T013-POSTREFILL-UNIT-GATE-01` \| `686d274b96c798dc67229c90717a49d2a
+  制約・訂正　Captured GitHub connector body Unicode encoded UTF-8, not HTTP/service database raw bytes. Dated author claims only; no linked original/native/code/Library acquisition or execution. No current correctness/ABI/type/Golden/READY/semantic adoption. Mutable API comment; capture window and returned timestamps are pinned separately.
+
+- [research/recovered/practical_comments103/comments/comment_6606124364.md 行 16](../../research/recovered/practical_comments103/comments/comment_6606124364.md?plain=1#L16-L16) — \| 22H \| `B-20261030-22H-T013-SUM88-AH41-01` → `E-AUDIT-20261030-22H-T020-T013-SUM88-FPU-DISPATCH-01` \| `f83c19a40ade58445df2d9e7744b0894b722b174` / `cf302b6a819
+  制約・訂正　Captured GitHub connector body Unicode encoded UTF-8, not HTTP/service database raw bytes. Dated author claims only; no linked original/native/code/Library acquisition or execution. No current correctness/ABI/type/Golden/READY/semantic adoption. Mutable API comment; capture window and returned timestamps are pinned separately.
 
 - [research/recovered/tests_batch5/T020_E_T013_SUM88_BRANCH_ACCEPTANCE_20261030_22H.md 行 10](../../research/recovered/tests_batch5/T020_E_T013_SUM88_BRANCH_ACCEPTANCE_20261030_22H.md?plain=1#L10-L10) — After manager and group are separately accumulated, manager raw +0x88 is copied to manager+0xB0 **before** manager+0x88 is changed from 0 to 1 when zero. This z
   制約・訂正　Historical author STATIC/SYNTHETIC/PASS/READY/Golden and REF claims retained as historical claims; no new native/runtime/Golden/READY validation; referenced evidence excluded

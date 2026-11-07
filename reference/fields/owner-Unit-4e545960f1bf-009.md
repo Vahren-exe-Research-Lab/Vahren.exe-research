@@ -4,6 +4,21 @@
 
 型や意味を確定した構造体辞書とは区別しています。各報告書の文脈と制約を確認してください。
 
+<a id="field-186cc"></a>
+## Unit + 0x186CC
+
+- [research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md 行 184](../../research/recovered/dirty_docs1/reports/knowledge/.worktrees/kb-curate-b-skillpost-20261102/REF_BATTLE_AI_MORALE.md?plain=1#L184-L184) — - In `0x57DD10`, `Unit+0x18654 == 0` returns locally. With a nonempty list, the head node's candidate is inspected. Candidate `+0x40==1` **or** byte `+0x26D!=0`
+  制約・訂正　Historical dirty-worktree authored snapshot only; CURATED/UNMERGED/BLOCKED/native/test/publication claims remain dated author claims; current canonical REF/corrections and independently adopted six keys prevail; no new semantic/type/ABI/native/runtime/READY/Golden adoption; linked targets not fetched
+
+- [research/recovered/knowledge_history1/reports/knowledge/REF_BATTLE_AI_MORALE.md 行 121](../../research/recovered/knowledge_history1/reports/knowledge/REF_BATTLE_AI_MORALE.md?plain=1#L121-L121) — - In `0x57DD10`, `Unit+0x18654 == 0` returns locally. With a nonempty list, the head node's candidate is inspected. Candidate `+0x40==1` **or** byte `+0x26D!=0`
+  制約・訂正　Complete old authored version; current canonical REF priority; historical claims/instructions inert; no new native/runtime/type/READY/Golden validation
+
+<a id="field-186d0"></a>
+## Unit + 0x186D0
+
+- [research/recovered/b_batch3/T028_FALLBACK_GLOBAL_PAIR_RETABI_NATIVE_20261026_13H.md 行 9](../../research/recovered/b_batch3/T028_FALLBACK_GLOBAL_PAIR_RETABI_NATIVE_20261026_13H.md?plain=1#L9-L9) — - NEW 4 [STATIC ASM]: 0x5795E0の移動中間処理では0x579654/65B [Unit+0x186D0]!=0、0x579661..672 [Unit+0x186D4]==trunc([Unit+0x186D8]/2)の成立時にのみ特殊分岐へ進む。0x57978F [Unit+0x1E4AC
+  制約・訂正　Historical author claims only; STATIC/INFERRED/VERIFY and historical READY preserved; no new native/runtime/Golden/READY validation; referenced payloads omitted
+
 <a id="field-186d4"></a>
 ## Unit + 0x186D4
 
@@ -365,15 +380,6 @@
   制約・訂正　Historical authored text only; native/script/JSON/log/EXE/SQLite/HANDOFF dependencies not opened; no new runtime/Golden/READY; current REF precedence retained
 
 - [research/recovered/b_batch8/data/T012_T011_PUDDING_CANNON_RAW_GUNDELAY_CROSSKIND_20261018.md 行 14](../../research/recovered/b_batch8/data/T012_T011_PUDDING_CANNON_RAW_GUNDELAY_CROSSKIND_20261018.md?plain=1#L14-L14) — [NEXT] 許可済み保存nativeのproducer/consumer契約と原文技能取得の照合、最優先T012 0x4E7ED0/0x580280/Unit+0x1E560/+0x18688・MP fallback/最終HP、T013最終target、T011継承。拒否済みVA/bodyは再試行しない。
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/b_batch8/data/T012_T011_SPCANNON_CHAIN_RANGE_OVERRIDE_20261018.md 行 9](../../research/recovered/b_batch8/data/T012_T011_SPCANNON_CHAIN_RANGE_OVERRIDE_20261018.md?plain=1#L9-L9) — [VERIFY] 親技能継承と子のlist置換/加算、明示@のnative resolver、有効check/range/min・fkey、次段呼出順/個数、合法a0054所持、MP/使用条件・空間0x4E7ED0・投射0x580280・Unit+0x1E560/+0x18688・命中/HP/RNG/次tickは未証明
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/b_batch8/data/T012_T011_ZNM_BOOM_NEXT_INTERVAL_NEXTLAST_BRANCH_20261017.md 行 12](../../research/recovered/b_batch8/data/T012_T011_ZNM_BOOM_NEXT_INTERVAL_NEXTLAST_BRANCH_20261017.md?plain=1#L12-L12) — [OPEN/NEXT] T012最終攻撃HP/射撃Unit+0x1E560 latch・+0x18688方向・0x4E7ED0・MP fallback、T013 target priority、T011親解決とraw next_last producer。禁止0x5710C0..0x571500/0x58021E..0
-  制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
-
-- [research/recovered/b_batch8/data/T012_T011_ZNM_MPREC0_LATE_MP_FALLBACK_CONDITIONAL_20261018.md 行 11](../../research/recovered/b_batch8/data/T012_T011_ZNM_MPREC0_LATE_MP_FALLBACK_CONDITIONAL_20261018.md?plain=1#L11-L11) — [VERIFY] raw→effective Unit mprec・Skill mp signed/cost/parent継承、合法znm出撃/取得、kind2 mode0 dispatch、早期MP gate回避、状態flag・ラッチ(Unit+0x1E560)・方向(Unit+0x18688)、0x4E7ED0最終
   制約・訂正　Historical authored claims only; STATIC/SYNTHETIC/Golden0/NOT READY and corrections preserved; current REF takes precedence; no new native/runtime/READY claims; linked evidence not recovered
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

@@ -319,6 +319,9 @@
 - [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 1785](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L1785-L1785) — "before": "*(undefined1 *)(param_1 + 0x1eec71) = 0;",
   制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
 
+- [research/recovered/practical_comments103/comments/comment_6573466153.md 行 3](../../research/recovered/practical_comments103/comments/comment_6573466153.md?plain=1#L3-L3) — **New correction, independent static proof (read-only, safe VA):** The older E 20:52/21:53 descriptions treated `iVar1+0x1EF175` (outer gate) and `param_1+0x1EE
+  制約・訂正　Captured GitHub connector body Unicode encoded UTF-8, not HTTP/service database raw bytes. Dated author claims only; no linked original/native/code/Library acquisition or execution. No current correctness/ABI/type/Golden/READY/semantic adoption. Mutable API comment; capture window and returned timestamps are pinned separately.
+
 <a id="field-1eed18"></a>
 ## param_1 + 0x1EED18
 
@@ -326,9 +329,6 @@
   制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
 
 - [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 1922](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L1922-L1922) — "before": "*(int *)(param_1 + 0x1eed18) = param_1 + 0x14;",
-  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
-
-- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json 行 2153](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_BRIDGE_FIELD_XREFS_20261021.json?plain=1#L2153-L2153) — "before": "*(int *)(param_1 + 0x1eed18) = param_1 + 0x14;",
   制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
 
 [所有者＋オフセット索引](../FIELD_MENTIONS.md)

@@ -84,4 +84,9 @@
   - → 現在の解釈　helper0x514C80は適格候補が見つかればAL0、なければAL1。AL1後のisAllDead命令の局所returnはmode別のraw DWORDゼロ判定に依存する。通常setup後・後続writerなし・mode2・対象outer解決成功・helper AL1ならbool1となる条件例があり、emptyなら常にfalseともtrueとも一般化しない。AL0/outer未解決時の共通tail最終bool、実2v2勝敗は未確認。
   - 確度　静的確認（保存済み著述報告の範囲。今回の原作再検証・実行なし）。対象　迫真戦記 ver0.67 / Vahren.exe image base 0x400000。[訂正の根拠](../research/recovered/principal_models1/reports/data/T030_RTS_MODE.md?plain=1#L633-L640)
 
+- [Vector32_Append_4C2240](symbols/004C2240.md) · `CORRECTION-4C2240-NOT-RNG-SPECIFIC` · `corrected`。scene乱数reset後のcaller文脈に由来した旧機能名を、保存済み局所報告の4B要素vector追加という中立な説明へ訂正する。旧T031の呼出し記録自体は否定しない。
+  - 訂正済みの旧解釈（履歴）　Random_ContinueMapSeedSetup: シーンの乱数リセット後に呼び出される補助。フェーズ5/6などの設定に応じた乱数経路の一部。
+  - → 現在の解釈　Vector32_Append_4C2240: 保存済み局所解析では、owner+0x64/+0x68/+0x6Cで管理する4B要素vectorへ値を追加する補助。Bの呼出し箇所はTask待機列の文脈。旧T031のscene乱数reset後の呼出し記録を、callee自体の乱数専用処理とは一般化しない。全caller型・実機動作は未確認。
+  - 確度　推定（保存済み著者の局所静的報告。今回の原作再検証・実機実行なし）。対象　迫真戦記 ver0.67 / Vahren.exe image base 0x400000。[訂正の根拠](../research/recovered/b_batch10/data/T013_TASK_PENDING_APPEND_4C2240_CONTRACT_20261013.md?plain=1#L3-L5)
+
 [事典の入口](README.md)

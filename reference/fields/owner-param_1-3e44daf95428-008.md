@@ -7,6 +7,9 @@
 <a id="field-1eed55"></a>
 ## param_1 + 0x1EED55
 
+- [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json 行 353](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json?plain=1#L353-L353) — "context_after": "if (*(char *)(param_1 + 0x1eed55) != '\\0') {"
+  制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
+
 - [research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json 行 367](../../research/recovered/json_rea1/reports/rea_lab/headless_analysis/search_index/BATTLE_WARRECORD_PROVENANCE_20261021.json?plain=1#L367-L367) — "code": "((*(char *)(param_1 + 0x1eed54) != '\\0' \|\| (*(char *)(param_1 + 0x1eed55) != '\\0')))) {",
   制約・訂正　Historical authored scope only; no new native/runtime/ABI/type/Golden/READY/correctness/core adoption. No linked acquisition; current REF/corrections prevail; raw pointers/widths source-scoped.
 

@@ -1,0 +1,9 @@
+# 4C2240 — practical naming correction candidate
+
+No core edit has been made. Current symbol LF285 is `Random_ContinueMapSeedSetup`, kind func, confidence 推定, source T031 A51/§17. That wording turns the old scene/RNG caller context into an apparent RNG-specific callee purpose. The two contexts may call the same helper; neither caller context proves the complete callee meaning. Do not discard the T031 record or claim it was disproved.
+
+The already accepted primary author report is `research/recovered/b_batch10/data/T013_TASK_PENDING_APPEND_4C2240_CONTRACT_20261013.md`, SHA256 `5c5230f15ad15770caccc1e299c12b43e40d9d2e26512750ac06161639855abf`. Its LF3-5 describes a bounded104B/40-instruction saved-native report: EAX owner, one stack DWORD/ret4, owner+0x64/+0x68/+0x6C begin/end/capacity, alias/growth branches, pointer append/end advance. LF4/6-7 places the helper in B Task-pending callers; that does not prove all callers share a concrete Task owner type or tick has executed. Direct rand0 in that bounded report does not prove growth-helper side effects absent. No native body or T031 source was fetched here.
+
+Suggested neutral name: `PointerVector_AppendAliased` (or `PointerVector_Append_4C2240`). Keep kind func and current confidence 推定 pending cross-context validation. Suggested meaning: “B保存静的報告ではowner+0x64/+0x68/+0x6Cのpointer-vector末尾追加とalias/grow分岐。B callerではTask pending用。旧T031はscene乱数reset後の呼出し文脈を記録するが、callee自体の乱数専用処理は未確定。具体owner型・全caller・grow helper副作用・Task実行完了は未確認。”
+
+Retain old name/T031 source in an explicit correction history rather than erasing its caller evidence. The unresolved discrepancy is already captured in `research/recovered/chat_additional14/reports/443829f5-52b4-433e-a6a3-b7fbd35dca67.md` LF3-9; the new B1407 PR addendum reiterates it and is not recopied as a new discovery. Parent alone decides whether to apply the candidate.

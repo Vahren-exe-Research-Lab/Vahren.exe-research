@@ -187,7 +187,7 @@
 | 0x4C1200 | [Variable_FindTreeKey](symbols/004C1200.md) | func | 汎用木のキー検索に用いられる関数。文字列比較を通じて候補nodeと番兵を判別する。 |
 | 0x4C1FC0 | [Random_InitializeMapSeed](symbols/004C1FC0.md) | func | マップの乱数初期化の経路。内部から CRT srand を呼び、別のマップ初期化ステップにも接続する。 |
 | 0x4C21F0 | [GameTask_SetFps](symbols/004C21F0.md) | func | thiscall、引数 fps。GameTask+0x74=fps、+0x78=round(1000/fps)。0x48AA00は25、0x513C60・0x526A40は25と100を切り替え |
-| 0x4C2240 | [Random_ContinueMapSeedSetup](symbols/004C2240.md) | func | シーンの乱数リセット後に呼び出される補助。フェーズ5/6などの設定に応じた乱数経路の一部。 |
+| 0x4C2240 | [Vector32_Append_4C2240](symbols/004C2240.md) | func | 保存済み局所解析では、owner+0x64/+0x68/+0x6Cで管理する4B要素vectorへ値を追加する補助。Bの呼出し箇所はTask待機列の文脈。旧T031のscene乱数reset後の呼出し記録を、callee自体の乱数専用処理とは一般化しない。全caller型・実機動作は未確認。 |
 | 0x4C24B0 | [Window_PumpGameLoop](symbols/004C24B0.md) | func | ゲームのメインループ。未処理メッセージを全部処理してから1コマ進める。1コマ：timeGetTime→GameTask+0x78との差だけSleep→0xAC0918へ時刻→更新→描画0x4C3EB0→Present。非アクティブ時は10msのSleepだけ |
 | 0x4C5800 | [List_SpliceWithCapacityGuard](symbols/004C5800.md) | func | 異なるlist間でnodeを移して双方の+4 countを更新、0x3FFFFFFE超過条件で別処理へ分岐。Unit上限ではない。 |
 | 0x4C7040 | [Ai_ApplyFourwayPairState](symbols/004C7040.md) | func | 四方向用の +0x48/+0x4A/+0x4C/+0x4E の各ペアを番号0〜3で処理する。実際のゲーム効果の意味は未確定。 |
@@ -516,7 +516,7 @@
 
 ## 構造体・フィールド
 
-[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 7776 件。型や意味の正式登録前の局所表記も検索できます。
+[研究文書の所有者＋オフセット表記](FIELD_MENTIONS.md) — 7788 件。型や意味の正式登録前の局所表記も検索できます。
 
 - [Ctx](structs/Ctx.md)
 - [FrameWnd](structs/FrameWnd.md)
@@ -535,10 +535,10 @@
 
 辞書項目 503 件、フィールド 122 件、根拠付き関係 165 件。
 
-回収済み文書のVA言及・取得記録 74815 件を検索対象に含みます。辞書未登録のVAも検索できます。
+回収済み文書のVA言及・取得記録 74855 件を検索対象に含みます。辞書未登録のVAも検索できます。
 
 [登録関数間の直接CALL採録条件](static_calls_source.json) — 2373箇所。各関数ページで呼び出し元・先を参照でき、`callers VA --json` / `callees VA --json` でも検索できます。
 
-[訂正履歴](CORRECTIONS.md) — 15 件。訂正済みの旧解釈と現在の解釈を出典行付きで確認できます。
+[訂正履歴](CORRECTIONS.md) — 16 件。訂正済みの旧解釈と現在の解釈を出典行付きで確認できます。
 
-[回収済み研究文書の題名・本文](DOCUMENTS.md) — 2376 文書。題名・ファイル名・研究ID・本文の通常文字列を検索できます。
+[回収済み研究文書の題名・本文](DOCUMENTS.md) — 2382 文書。題名・ファイル名・研究ID・本文の通常文字列を検索できます。
